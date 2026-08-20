@@ -1,4 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { IELTS_SPEAKING_BUCKET } from '@/lib/ielts/mock4-submission'
 import JoseDashboard from './JoseDashboard'
 import type { StudentRow } from './StudentList'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
@@ -22,6 +24,9 @@ export interface ExamSubmission {
   writing_task1_answer?: string | null
   writing_task2_answer?: string | null
   speaking_answers?: Record<string, string> | null
+  speaking_audio_paths?: Record<string, string> | null
+  speaking_audio_files?: { questionId: string; signedUrl: string }[]
+  submission_status?: 'uploading' | 'submitted'
   reading_band?: number | null
   listening_band?: number | null
   writing_band?: number | null
@@ -92,10 +97,27 @@ export default async function JoseDashboardServer() {
   const { data: submissions } = await supabase
     .from('exam_submissions')
     .select('*')
+    .eq('submission_status', 'submitted')
     .order('created_at', { ascending: false })
     .limit(100)
 
-  const rows: ExamSubmission[] = submissions ?? []
+  const storageAdmin = createAdminClient()
+  const rows: ExamSubmission[] = await Promise.all(((submissions ?? []) as ExamSubmission[]).map(async submission => {
+    const audioPaths = submission.speaking_audio_paths && typeof submission.speaking_audio_paths === 'object'
+      ? Object.entries(submission.speaking_audio_paths)
+      : []
+    if (audioPaths.length === 0) return submission
+
+    const signedAudio = await Promise.all(audioPaths.map(async ([questionId, path]) => {
+      const { data, error } = await storageAdmin.storage.from(IELTS_SPEAKING_BUCKET).createSignedUrl(path, 60 * 60)
+      if (error || !data?.signedUrl) return null
+      return { questionId, signedUrl: data.signedUrl }
+    }))
+    return {
+      ...submission,
+      speaking_audio_files: signedAudio.filter((audio): audio is { questionId: string; signedUrl: string } => audio !== null),
+    }
+  }))
 
   const now = new Date()
   const startOfThisWeek = new Date(now)

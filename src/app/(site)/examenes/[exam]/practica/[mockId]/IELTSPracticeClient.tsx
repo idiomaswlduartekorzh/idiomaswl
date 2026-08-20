@@ -1,22 +1,28 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { IELTSSummaryReport } from '@/components/labs/IELTSSummaryReport';
 import { IELTSWritingReportPanel } from '@/components/labs/IELTSWritingReportPanel';
+import { IELTSMock4Submission } from '@/components/exam-runner/IELTSMock4Submission';
+import {
+  IELTSSpeakingRecorder,
+  type IeltsSpeakingRecording,
+} from '@/components/exam-runner/IELTSSpeakingRecorder';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { isFreeIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
+import { IELTS_MOCK4_ID } from '@/lib/ielts/mock4-submission';
 import {
   Timer, AudioPlayer, SkillTabs,
-  countWords, norm, isCorrect, blankKey,
+  countWords, isCorrect, blankKey,
 } from '@/components/exam-runner/primitives';
 import type { Exam } from '@/data/exams';
 import type {
   MockExam, Question, MockSection,
-  MCQQuestion, FillQuestion, WriteQuestion, SpeakQuestion,
+  MCQQuestion, WriteQuestion, SpeakQuestion,
   FormGroupQuestion, TableGroupQuestion, TableCell,
   MultiSelectQuestion, MatchingGroupQuestion,
 } from '@/data/mocks/types';
@@ -57,7 +63,7 @@ type MSMap     = Record<string, string[]>;  // questionId -> selected letters[]
 type MatchMap  = Record<string, string>;    // `${groupId}-${num}` -> letter
 type WriteMap  = Record<string, string>;    // questionId -> text
 type SpeakMap  = Record<string, string>;    // questionId -> notes
-type BandMap   = Record<string, number>;    // questionId -> band
+type SpeakAudioMap = Record<string, IeltsSpeakingRecording>;
 
 // ── Form-group question renderer ──────────────────────────────────────────────
 
@@ -86,10 +92,13 @@ function renderFormTemplate(
               <span className="ielts-form__blank-num">{num}</span>
               <input
                 type="text"
+                name={`${groupId}_${num}`}
+                aria-label={`Question ${num}`}
+                autoComplete="off"
                 className="ielts-form__input"
                 value={fills[key] ?? ''}
                 onChange={e => onChange(key, e.target.value)}
-                placeholder="..."
+                placeholder="Answer…"
                 style={{ width: `${Math.max(6, (blank?.maxWords ?? 1) * 3.5)}ch` }}
               />
             </span>
@@ -164,10 +173,13 @@ function TableGroupView({
                       <span className="ielts-form__blank-num">{c.num}</span>
                       <input
                         type="text"
+                        name={`${q.id}_${c.num}`}
+                        aria-label={`Question ${c.num}`}
+                        autoComplete="off"
                         className="ielts-form__input"
                         value={fills[key] ?? ''}
                         onChange={e => onChange(key, e.target.value)}
-                        placeholder="..."
+                        placeholder="Answer…"
                         style={{ width: `${Math.max(6, (c.maxWords ?? 1) * 3.5)}ch` }}
                       />
                     </td>
@@ -284,10 +296,12 @@ function MatchingView({
               <p className="ielts-matching__stem">{item.stem}</p>
               <select
                 className="ielts-matching__select"
+                name={`${q.id}_${item.num}`}
+                aria-label={`Question ${item.num}: choose a matching letter`}
                 value={val}
                 onChange={e => onChange(key, e.target.value)}
               >
-                <option value="">-- choose --</option>
+                <option value="">Choose…</option>
                 {q.endings.map(e => (
                   <option key={e.letter} value={e.letter}>{e.letter}</option>
                 ))}
@@ -345,10 +359,12 @@ function WriteView({
       </div>
 
       <textarea
+        name={`writing_task_${q.taskNumber}`}
+        aria-label={`Writing Task ${q.taskNumber} response`}
         className="ielts-write__textarea"
         value={value}
         onChange={e => onChange(e.target.value)}
-        placeholder="Write your response here..."
+        placeholder="Write your response here…"
         rows={18}
       />
       <div className={`ielts-write__wordcount${ok?' ielts-write__wordcount--ok':''}`}>
@@ -361,9 +377,15 @@ function WriteView({
 // ── Speak renderer ────────────────────────────────────────────────────────────
 
 function SpeakView({
-  q, notes, onNotes,
-}: { q: SpeakQuestion; notes: string; onNotes: (v: string) => void }) {
-  const [recState, setRecState] = useState<'idle'|'recording'|'done'>('idle');
+  q, notes, audio, onNotes, onAudio, onRecordingStateChange,
+}: {
+  q: SpeakQuestion;
+  notes: string;
+  audio?: IeltsSpeakingRecording;
+  onNotes: (v: string) => void;
+  onAudio: (recording: IeltsSpeakingRecording | undefined) => void;
+  onRecordingStateChange: (recording: boolean) => void;
+}) {
   return (
     <div className="ielts-speak">
       <div className="ielts-write__header">
@@ -383,27 +405,25 @@ function SpeakView({
         </div>
       )}
 
-      {/* Record button — UI placeholder, assessment coming soon */}
-      <div className="ielts-speak__record-row">
-        <button
-          className={`ielts-speak__rec-btn ielts-speak__rec-btn--${recState}`}
-          onClick={() => setRecState(s => s === 'idle' ? 'recording' : s === 'recording' ? 'done' : 'idle')}
-        >
-          {recState === 'idle' && <><span className="ielts-speak__rec-dot" />Record response</>}
-          {recState === 'recording' && <><span className="ielts-speak__rec-dot ielts-speak__rec-dot--live" />Stop recording</>}
-          {recState === 'done' && <><span className="ielts-speak__rec-dot ielts-speak__rec-dot--done" />Re-record</>}
-        </button>
-        {recState === 'done' && (
-          <span className="ielts-speak__rec-status">Response recorded — examiner assessment coming soon</span>
-        )}
-        {recState === 'idle' && (
-          <span className="ielts-speak__rec-hint">Audio assessment coming soon</span>
-        )}
-      </div>
+      <IELTSSpeakingRecorder
+        questionId={q.id}
+        recording={audio}
+        maxSeconds={q.partNumber === 3 ? 180 : 150}
+        onChange={onAudio}
+        onRecordingStateChange={onRecordingStateChange}
+      />
 
       <div className="ielts-speak__notes">
-        <p className="ielts-speak__notes-label">Preparation notes (optional):</p>
-        <textarea className="ielts-write__textarea" rows={4} value={notes} onChange={e=>onNotes(e.target.value)} placeholder="Jot down key ideas..." />
+        <label className="ielts-speak__notes-label" htmlFor={`${q.id}-notes`}>Preparation notes (optional):</label>
+        <textarea
+          id={`${q.id}-notes`}
+          name={`${q.id}_notes`}
+          className="ielts-write__textarea"
+          rows={4}
+          value={notes}
+          onChange={e=>onNotes(e.target.value)}
+          placeholder="Jot down key ideas…"
+        />
       </div>
     </div>
   );
@@ -420,6 +440,7 @@ function renderQuestion(
   q: Question,
   idx: number,
   ans: AllAnswers,
+  recordings: SpeakAudioMap,
   handlers: {
     onFill: (k:string,v:string)=>void;
     onMCQ: (id:string,i:number)=>void;
@@ -427,6 +448,8 @@ function renderQuestion(
     onMatch: (k:string,v:string)=>void;
     onWrite: (id:string,v:string)=>void;
     onSpeak: (id:string,v:string)=>void;
+    onSpeakAudio: (id:string,recording:IeltsSpeakingRecording|undefined)=>void;
+    onRecordingState: (id:string,recording:boolean)=>void;
   },
 ) {
   switch (q.type) {
@@ -444,18 +467,29 @@ function renderQuestion(
     case 'write':
       return <WriteView key={q.id} q={q as WriteQuestion} value={ans.write[q.id]??''} onChange={v=>handlers.onWrite(q.id,v)} />;
     case 'speak':
-      return <SpeakView key={q.id} q={q as SpeakQuestion} notes={ans.speak[q.id]??''} onNotes={v=>handlers.onSpeak(q.id,v)} />;
+      return (
+        <SpeakView
+          key={q.id}
+          q={q as SpeakQuestion}
+          notes={ans.speak[q.id]??''}
+          audio={recordings[q.id]}
+          onNotes={v=>handlers.onSpeak(q.id,v)}
+          onAudio={recording=>handlers.onSpeakAudio(q.id,recording)}
+          onRecordingStateChange={recording=>handlers.onRecordingState(q.id,recording)}
+        />
+      );
     default:
       return null;
   }
 }
 
 function SectionPanel({
-  section, ans, handlers,
+  section, ans, recordings, handlers,
 }: {
   section: MockSection;
   ans: AllAnswers;
-  handlers: Parameters<typeof renderQuestion>[3];
+  recordings: SpeakAudioMap;
+  handlers: Parameters<typeof renderQuestion>[4];
 }) {
   const hasPassage = !!section.passage;
 
@@ -467,7 +501,7 @@ function SectionPanel({
       {section.questions.map(q => {
         let idx = 0;
         if (q.type === 'mcq' || q.type === 'dialog') { idx = mcqCounter; mcqCounter++; }
-        return renderQuestion(q, idx, ans, handlers);
+        return renderQuestion(q, idx, ans, recordings, handlers);
       })}
     </div>
   );
@@ -568,7 +602,7 @@ function scoreSection(section: MockSection, ans: AllAnswers): number {
 function IELTSResults({ mock, exam, ans, onRetry }: {
   mock: MockExam; exam: Exam; ans: AllAnswers; onRetry: ()=>void;
 }) {
-  const [saved, setSaved] = useState(false);
+  const savedRef = useRef(false);
   // Lazy init (no useEffect): esta vista solo se monta tras terminar el
   // examen (transición de estado del lado del cliente), nunca en SSR.
   const [leadCaptured, setLeadCaptured] = useState(() => {
@@ -667,8 +701,11 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
   };
 
   useEffect(() => {
-    if (saved) return;
-    setSaved(true);
+    // Mock 4 is persisted by the verified contact/audio delivery flow before
+    // this screen mounts. Saving again here would create an anonymous duplicate.
+    if (mock.id === IELTS_MOCK4_ID) return;
+    if (savedRef.current) return;
+    savedRef.current = true;
     saveExamResult(reportData, {
       reading_band: rBand,
       listening_band: lBand,
@@ -699,7 +736,7 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
               {writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? 'Writing y Speaking' : 'Speaking'} — Pendiente de corrección
             </p>
             <p className="ielts-pending-notice__sub">
-              Tus respuestas han sido enviadas al profesor. Recibirás tus bandas
+              {mock.id === IELTS_MOCK4_ID ? 'Tus textos y audios han sido enviados al profesor.' : 'Tus respuestas han sido enviadas al profesor.'} Recibirás tus bandas
               {writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? ' de Writing y Speaking' : ' de Speaking'}
               {' '}en tu dashboard cuando estén corregidas.
             </p>
@@ -901,7 +938,7 @@ function IELTSResults({ mock, exam, ans, onRetry }: {
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-type Phase = 'intro'|'exam'|'results';
+type Phase = 'intro'|'exam'|'submit'|'results';
 
 export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
@@ -917,6 +954,9 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   const [ans, setAns] = useState<AllAnswers>({
     fills:{}, mcq:{}, ms:{}, match:{}, write:{}, speak:{},
   });
+  const [recordings, setRecordings] = useState<SpeakAudioMap>({});
+  const [recordingIds, setRecordingIds] = useState<Set<string>>(new Set());
+  const [finishError, setFinishError] = useState('');
 
   const skills = SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
 
@@ -931,25 +971,56 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     onMatch:useCallback((k:string,v:string)=>setAns(p=>({...p,match:{...p.match,[k]:v}})),[]),
     onWrite:useCallback((id:string,v:string)=>setAns(p=>({...p,write:{...p.write,[id]:v}})),[]),
     onSpeak:useCallback((id:string,v:string)=>setAns(p=>({...p,speak:{...p.speak,[id]:v}})),[]),
+    onSpeakAudio:useCallback((id:string,recording:IeltsSpeakingRecording|undefined)=>setRecordings(previous=>{
+      if (recording) return {...previous,[id]:recording};
+      const next={...previous}; delete next[id]; return next;
+    }),[]),
+    onRecordingState:useCallback((id:string,recording:boolean)=>setRecordingIds(previous=>{
+      const next=new Set(previous);
+      if (recording) next.add(id); else next.delete(id);
+      return next;
+    }),[]),
   };
 
   const progressMap = Object.fromEntries(skills.map(sk=>{
     if (comingSoonSkills.has(sk)) return [sk,{done:0,total:0}];
     const sections=getSkillSections(mock,sk);
+    if (mock.id===IELTS_MOCK4_ID && sk==='speaking') {
+      const speakingIds=sections.flatMap(section=>section.questions).filter(question=>question.type==='speak').map(question=>question.id);
+      return [sk,{done:speakingIds.filter(id=>recordings[id]).length,total:speakingIds.length}];
+    }
     let done=0,total=0;
     for (const s of sections) { const p=countGroupAnswers(s,ans); done+=p.done; total+=p.total; }
     return [sk,{done,total}];
   }));
 
   const handleSubmit = useCallback(()=>{
-    setPhase('results');
-  },[]);
+    if (recordingIds.size>0) {
+      setFinishError('Detén la grabación activa antes de terminar el examen.');
+      return;
+    }
+    setFinishError('');
+    setPhase(mock.id===IELTS_MOCK4_ID?'submit':'results');
+  },[mock.id,recordingIds]);
 
   const handleRetry = useCallback(()=>{
     setAns({fills:{},mcq:{},ms:{},match:{},write:{},speak:{}});
+    setRecordings({});
+    setRecordingIds(new Set());
+    setFinishError('');
     setActiveSkill(firstActiveSkill); setPhase('intro');
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[firstActiveSkill]);
+
+  useEffect(()=>{
+    if (phase!=='exam'&&phase!=='submit') return;
+    const warnBeforeLeaving=(event:BeforeUnloadEvent)=>{ event.preventDefault(); event.returnValue=''; };
+    window.addEventListener('beforeunload',warnBeforeLeaving);
+    return ()=>window.removeEventListener('beforeunload',warnBeforeLeaving);
+  },[phase]);
+
+  useEffect(()=>{
+    window.scrollTo({top:0,left:0,behavior:'auto'});
+  },[phase]);
 
   if (phase==='results') {
     return (
@@ -959,9 +1030,37 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     );
   }
 
+  if (phase==='submit') {
+    const listeningSections=getSkillSections(mock,'listening').filter(section=>!section.comingSoon);
+    const readingSections=getSkillSections(mock,'reading');
+    const listeningCorrect=listeningSections.reduce((total,section)=>total+scoreSection(section,ans),0);
+    const readingCorrect=readingSections.reduce((total,section)=>total+scoreSection(section,ans),0);
+    const writingQuestions=getSkillSections(mock,'writing').flatMap(section=>section.questions) as WriteQuestion[];
+    const task1=writingQuestions.find(question=>question.taskNumber===1);
+    const task2=writingQuestions.find(question=>question.taskNumber===2);
+    const speakingQuestions=getSkillSections(mock,'speaking').flatMap(section=>section.questions) as SpeakQuestion[];
+
+    return (
+      <div className="prac-shell">
+        <IELTSMock4Submission
+          readingBand={rawToBand(readingCorrect,R_BAND)}
+          listeningBand={listeningSections.length>0?rawToBand(listeningCorrect,L_BAND):null}
+          writingTask1={task1?ans.write[task1.id]??'':''}
+          writingTask2={task2?ans.write[task2.id]??'':''}
+          speakingNotes={Object.fromEntries(speakingQuestions.map(question=>[question.id,ans.speak[question.id]??'']))}
+          recordings={recordings}
+          onBack={()=>setPhase('exam')}
+          onSuccess={()=>setPhase('results')}
+        />
+      </div>
+    );
+  }
+
   // Intro
   if (phase==='intro') {
-    const totalQ=mock.sections.filter(s=>!s.comingSoon).flatMap(s=>s.questions).length;
+    const totalQ=mock.sections
+      .filter(section=>!section.comingSoon)
+      .reduce((total,section)=>total+countGroupAnswers(section,ans).total,0);
     return (
       <div className="prac-shell prac-shell--intro">
         <div className="prac-intro" style={{'--exam-color':exam.color} as React.CSSProperties}>
@@ -970,7 +1069,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           <p className="prac-intro__sub">{mock.subtitle}</p>
           <div className="prac-intro__stats">
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{skills.filter(sk=>!comingSoonSkills.has(sk)).length}</span><span className="prac-intro__stat-lbl">Secciones activas</span></div>
-            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{totalQ}</span><span className="prac-intro__stat-lbl">Preguntas</span></div>
+            <div className="prac-intro__stat"><span className="prac-intro__stat-val">{totalQ}</span><span className="prac-intro__stat-lbl">Respuestas</span></div>
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{mock.timeMinutes}</span><span className="prac-intro__stat-lbl">Minutos</span></div>
           </div>
           <div className="prac-intro__sections">
@@ -1026,10 +1125,11 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           </div>
         )}
         {activeSections.map(sec=>(
-          <SectionPanel key={sec.part} section={sec} ans={ans} handlers={handlers} />
+          <SectionPanel key={sec.part} section={sec} ans={ans} recordings={recordings} handlers={handlers} />
         ))}
 
         <div className="ielts-exam-footer">
+          <p className="ielts-exam-footer__error" role="alert" aria-live="assertive">{finishError}</p>
           <div className="ielts-skill-nav__row">
             {skills.filter(sk=>!comingSoonSkills.has(sk)).map((sk,i,arr)=>{
               if (sk!==activeSkill) return null;
