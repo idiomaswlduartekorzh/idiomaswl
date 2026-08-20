@@ -47,3 +47,8 @@ export const IELTS_REVIEW_BLUEPRINTS: Record<string, IeltsReviewBlueprint> = {
 export function getIeltsReviewBlueprint(mockId: string): IeltsReviewBlueprint | null {
   return IELTS_REVIEW_BLUEPRINTS[mockId] ?? null;
 }
+
+export function getIeltsReviewBlueprintByTitle(mockTitle: string | null): IeltsReviewBlueprint | null {
+  if (!mockTitle) return null;
+  return Object.values(IELTS_REVIEW_BLUEPRINTS).find(blueprint => blueprint.mockTitle === mockTitle) ?? null;
+}

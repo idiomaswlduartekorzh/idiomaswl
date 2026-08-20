@@ -11,7 +11,7 @@
  * EXAMS['ielts']). Ver GOAL: Motor de corrección personalizado por examen.
  */
 
-import type { MockExam, WriteQuestion } from '@/data/mocks/types';
+import type { MockExam, SpeakQuestion, WriteQuestion } from '@/data/mocks/types';
 
 export interface IeltsWritingAssignment {
   /** Consigna completa tal como la ve el estudiante en el examen real. */
@@ -27,6 +27,14 @@ const SET_LOADERS: Record<string, () => Promise<{ default: MockExam }>> = {
   'set-3': () => import('@/data/mocks/ielts-set-3'),
   'set-4': () => import('@/data/mocks/ielts-set-4'),
 };
+
+export interface IeltsSpeakingAssignmentItem {
+  questionId: string;
+  partNumber: number;
+  prompt: string;
+  cueCard?: string;
+  followUp?: string[];
+}
 
 export function isFreeIeltsMock(mockId: string): boolean {
   return mockId in SET_LOADERS;
@@ -44,6 +52,30 @@ async function findWriteQuestion(mockId: string, taskNumber: 1 | 2): Promise<Wri
     }
   }
   return null;
+}
+
+function isSpeakQuestion(question: MockExam['sections'][number]['questions'][number]): question is SpeakQuestion {
+  return question.type === 'speak';
+}
+
+export async function getIeltsSpeakingAssignment(mockId: string): Promise<IeltsSpeakingAssignmentItem[] | null> {
+  const loader = SET_LOADERS[mockId];
+  if (!loader) return null;
+
+  const { default: mock } = await loader();
+  const speaking = mock.sections
+    .filter(section => section.skill === 'speaking')
+    .flatMap(section => section.questions)
+    .filter(isSpeakQuestion)
+    .map(question => ({
+      questionId: question.id,
+      partNumber: question.partNumber,
+      prompt: question.text,
+      cueCard: question.cueCard,
+      followUp: question.followUp,
+    }));
+
+  return speaking.length > 0 ? speaking : null;
 }
 
 /**

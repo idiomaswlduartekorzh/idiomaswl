@@ -6,6 +6,10 @@ import {
   calculateIeltsWritingBand,
   normalizeIeltsBand,
 } from '../src/lib/ielts/scoring.ts'
+import {
+  IELTS_OFFICIAL_RUBRICS,
+  validateIeltsDelegatedReviewInput,
+} from '../src/lib/ielts/delegated-review.ts'
 
 test('Task 2 counts twice when calculating the IELTS Writing band', () => {
   assert.equal(calculateIeltsWritingBand(6, 7), 6.5)
@@ -37,4 +41,40 @@ test('band normalization rejects invalid values and keeps official half bands', 
   assert.equal(normalizeIeltsBand('7'), null)
   assert.equal(normalizeIeltsBand(7.24), 7)
   assert.equal(normalizeIeltsBand(7.26), 7.5)
+})
+
+test('delegated calls use the task-specific official IELTS criteria', () => {
+  assert.deepEqual(
+    IELTS_OFFICIAL_RUBRICS.writing_task_1.criteria.map(item => item.key),
+    ['taskAchievement', 'coherenceCohesion', 'lexicalResource', 'grammaticalRange'],
+  )
+  assert.deepEqual(
+    IELTS_OFFICIAL_RUBRICS.writing_task_2.criteria.map(item => item.key),
+    ['taskResponse', 'coherenceCohesion', 'lexicalResource', 'grammaticalRange'],
+  )
+  assert.deepEqual(
+    IELTS_OFFICIAL_RUBRICS.speaking.criteria.map(item => item.key),
+    ['fluencyCoherence', 'lexicalResource', 'grammaticalRangeAccuracy', 'pronunciation'],
+  )
+})
+
+test('delegated review validation accepts a complete report and rejects rubric drift', () => {
+  const valid = {
+    evaluatorName: 'Claude',
+    evaluatorModel: 'Sonnet test',
+    overallBand: 6.5,
+    criteria: IELTS_OFFICIAL_RUBRICS.writing_task_2.criteria.map(item => ({
+      criterion: item.key,
+      band: 6.5,
+      reason: `Evidence-based explanation for ${item.label}.`,
+    })),
+    summary: 'The response addresses the prompt but needs more specific development and language control.',
+    strengths: ['Clear position'],
+    priorities: ['Develop examples'],
+  }
+
+  assert.equal(validateIeltsDelegatedReviewInput('writing_task_2', valid).ok, true)
+  assert.equal(validateIeltsDelegatedReviewInput('writing_task_1', valid).ok, false)
+  assert.equal(validateIeltsDelegatedReviewInput('writing_task_2', { ...valid, overallBand: 6.25 }).ok, false)
+  assert.equal(validateIeltsDelegatedReviewInput('writing_task_2', { ...valid, overallBand: 7 }).ok, false)
 })

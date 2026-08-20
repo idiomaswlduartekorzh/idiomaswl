@@ -12,6 +12,24 @@ Este blueprint conecta un simulacro IELTS con una sola ficha por estudiante. La 
 6. El panel admin muestra L/R/W/S, los textos, los dos reportes y los audios. La banda de Writing de IA es una sugerencia; el profesor confirma Writing, asigna Speaking y cierra la revisión.
 7. Al cerrar, el Overall se recalcula con las cuatro habilidades disponibles y la ficha pasa al historial de revisadas sin desaparecer.
 
+## Llamados delegados para ChatGPT, Claude o un evaluador externo
+
+El panel puede crear tres llamados independientes por entrega: `Writing Task 1`, `Writing Task 2` y `Speaking completo`. No se comparte una cuenta de administrador. Cada llamado crea una capacidad limitada con estas propiedades:
+
+- código único del llamado y UUID exacto del intento;
+- tarea inmutable y consigna exacta del mock;
+- respuesta escrita o audios privados con URL firmada de una hora;
+- referencia y enlace a los descriptores públicos oficiales de IELTS;
+- token aleatorio de 256 bits almacenado únicamente como SHA-256;
+- caducidad de 24 horas, un solo uso y revocación automática al regenerar;
+- sin correo de la estudiante, sin listado de entregas y sin acceso a otras rutas admin.
+
+La página `/evaluacion-ielts/[token]` sirve para revisión visual. El endpoint `/api/ielts/delegated-reviews/[token]` permite que un agente haga `GET` para leer el contrato y `POST` para entregar JSON estructurado. El servidor valida los cuatro criterios específicos de la tarea, bandas de 0 a 9 en pasos de 0.5, justificaciones, fortalezas y prioridades.
+
+Los reportes delegados de Task 1 y Task 2 se guardan en columnas separadas de los reportes automáticos, para conservar ambos. Al calcular Writing se prefiere el reporte delegado de cada tarea cuando existe y se mantiene el peso Task 1 × 1, Task 2 × 2. Speaking guarda su reporte y banda. Cada entrega válida recompone el consolidado con Listening, Reading, Writing y Speaking sin marcar por sí sola la aprobación humana final.
+
+La rúbrica enlazada es oficial; la banda producida por ChatGPT, Claude u otro agente se presenta siempre como estimación pedagógica, no como resultado oficial de IELTS.
+
 ## Incorporar otro mock IELTS
 
 1. Crear o reutilizar su endpoint de entrega con el mismo contrato `prepare → upload → complete`.
@@ -30,3 +48,7 @@ No se necesita crear otro motor de evaluación, otra fórmula de bandas, nuevas 
 - Los audios permanecen en un bucket privado; el admin recibe enlaces temporales de una hora.
 - Las columnas de reportes son aditivas y aceptan `NULL`, por lo que las entregas antiguas siguen funcionando.
 - La revisión humana no reemplaza Listening/Reading: recompone el resumen completo L/R/W/S.
+- La evaluación final del administrador siempre gana: al cerrarla se revocan los llamados sin usar y cualquier escritura delegada concurrente queda bloqueada.
+- La tabla `ielts_delegated_review_invites` tiene RLS sin políticas para `anon` o `authenticated`; solo el servicio del servidor accede a ella.
+- Las páginas y respuestas delegadas llevan `no-store`, `noindex` y `Referrer-Policy: no-referrer` para reducir exposición del token.
+- Los descriptores oficiales no se copian al repositorio: se versiona su referencia y se enlaza la fuente de IELTS.

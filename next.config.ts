@@ -141,6 +141,16 @@ const nextConfig: NextConfig = {
         source: '/(.*)',
         headers: securityHeaders,
       },
+      {
+        // Delegated IELTS links are short-lived bearer capabilities. Never
+        // cache, index or forward their token in a Referer header.
+        source: '/evaluacion-ielts/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'no-store, max-age=0' },
+          { key: 'Referrer-Policy', value: 'no-referrer' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
+        ],
+      },
     ];
   },
 

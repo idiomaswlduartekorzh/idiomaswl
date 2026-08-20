@@ -6,7 +6,9 @@ import { ClipboardCheck } from 'lucide-react'
 import { scoreSubmission } from '@/lib/actions/scoreSubmission'
 import { calculateIeltsWritingBand } from '@/lib/ielts/scoring'
 import type { FullAssessment } from '@/lib/labs/types'
+import type { IeltsDelegatedReviewMetadata, IeltsSpeakingAssessment } from '@/lib/ielts/delegated-review'
 import type { ExamSubmission } from './JoseDashboardServer'
+import IELTSDelegatedReviewCallout from './IELTSDelegatedReviewCallout'
 
 const A = '#c87941'
 const BG = '#f5f0eb'
@@ -67,15 +69,31 @@ function AssessmentReport({ title, report }: { title: string; report?: FullAsses
     )
   }
 
+  const delegated = (report as FullAssessment & { delegatedReview?: IeltsDelegatedReviewMetadata }).delegatedReview
+
   return (
     <section style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 10, padding: 12 }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
         <div>
           <h4 style={{ margin: 0, fontSize: 12, color: TEXT }}>{title}</h4>
-          <p style={{ margin: '2px 0 0', fontSize: 10, color: MUTED }}>{report.wordCount} palabras · motor {report.engineUsed ?? 'IA'}</p>
+          <p style={{ margin: '2px 0 0', fontSize: 10, color: MUTED }}>
+            {report.wordCount} palabras · {delegated ? `${delegated.evaluatorName} · ${delegated.evaluatorModel}` : `motor ${report.engineUsed ?? 'IA'}`}
+          </p>
         </div>
         <strong style={{ color: A, fontSize: 20 }}>Band {report.overallBand}</strong>
       </div>
+
+      {delegated && (
+        <div style={{ marginTop: 10, padding: 10, borderRadius: 8, background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
+          <p style={{ margin: 0, color: '#166534', fontSize: 10, fontWeight: 850 }}>Evaluación delegada · {delegated.callCode}</p>
+          <p style={{ margin: '5px 0 0', color: TEXT, fontSize: 10, lineHeight: 1.45 }}>{delegated.summary}</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 8, marginTop: 8 }}>
+            <div><strong style={{ fontSize: 10, color: '#166534' }}>Fortalezas</strong><ul style={{ margin: '4px 0 0', paddingLeft: 16, fontSize: 10, color: MUTED }}>{delegated.strengths.map(item => <li key={item}>{item}</li>)}</ul></div>
+            <div><strong style={{ fontSize: 10, color: '#9a3412' }}>Prioridades</strong><ul style={{ margin: '4px 0 0', paddingLeft: 16, fontSize: 10, color: MUTED }}>{delegated.priorities.map(item => <li key={item}>{item}</li>)}</ul></div>
+          </div>
+          <a href={delegated.officialRubricUrl} target="_blank" rel="noreferrer" style={{ display: 'inline-block', marginTop: 7, color: A, fontSize: 9, fontWeight: 750 }}>Rúbrica oficial · {delegated.officialRubricVersion} ↗</a>
+        </div>
+      )}
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(145px, 1fr))', gap: 6, marginTop: 10 }}>
         {report.criteria.map(criterion => (
@@ -106,6 +124,34 @@ function AssessmentReport({ title, report }: { title: string; report?: FullAsses
           <p style={{ margin: '7px 0 0', whiteSpace: 'pre-wrap', fontSize: 11, color: MUTED, lineHeight: 1.5 }}>{report.rewritten}</p>
         </details>
       )}
+    </section>
+  )
+}
+
+function SpeakingAssessmentReport({ report }: { report?: IeltsSpeakingAssessment | null }) {
+  if (!report) return null
+  return (
+    <section style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 10, padding: 12 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
+        <div>
+          <h4 style={{ margin: 0, fontSize: 12, color: TEXT }}>Reporte delegado · Speaking</h4>
+          <p style={{ margin: '2px 0 0', fontSize: 10, color: MUTED }}>{report.delegatedReview.evaluatorName} · {report.delegatedReview.evaluatorModel}</p>
+        </div>
+        <strong style={{ color: A, fontSize: 20 }}>Band {report.overallBand}</strong>
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(145px, 1fr))', gap: 6, marginTop: 10 }}>
+        {report.criteria.map(criterion => (
+          <div key={criterion.criterion} style={{ background: BG, borderRadius: 8, padding: 8 }}>
+            <p style={{ margin: 0, color: TEXT, fontSize: 10, fontWeight: 800 }}>{criterion.criterion} · {criterion.band}</p>
+            <p style={{ margin: '3px 0 0', color: MUTED, fontSize: 10, lineHeight: 1.35 }}>{criterion.reason}</p>
+          </div>
+        ))}
+      </div>
+      <p style={{ margin: '10px 0 0', color: TEXT, fontSize: 10, lineHeight: 1.45 }}>{report.delegatedReview.summary}</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 8, marginTop: 8 }}>
+        <div><strong style={{ fontSize: 10, color: '#166534' }}>Fortalezas</strong><ul style={{ margin: '4px 0 0', paddingLeft: 16, fontSize: 10, color: MUTED }}>{report.delegatedReview.strengths.map(item => <li key={item}>{item}</li>)}</ul></div>
+        <div><strong style={{ fontSize: 10, color: '#9a3412' }}>Prioridades</strong><ul style={{ margin: '4px 0 0', paddingLeft: 16, fontSize: 10, color: MUTED }}>{report.delegatedReview.priorities.map(item => <li key={item}>{item}</li>)}</ul></div>
+      </div>
     </section>
   )
 }
@@ -257,14 +303,16 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(125px, 1fr))', gap: 7 }}>
                 <Score label="Listening" value={active.listening_band} source="Resultado automático" />
                 <Score label="Reading" value={active.reading_band} source="Resultado automático" />
-                <Score label="Writing" value={active.writing_band} source={active.reviewed_at ? 'Banda final del profesor' : active.writing_band != null ? 'Sugerencia de IA' : undefined} />
-                <Score label="Speaking" value={active.speaking_band} source={active.reviewed_at ? 'Banda final del profesor' : undefined} />
+                <Score label="Writing" value={active.writing_band} source={active.reviewed_at ? 'Banda final del profesor' : active.writing_task1_delegated_assessment || active.writing_task2_delegated_assessment ? 'Evaluación delegada' : active.writing_band != null ? 'Sugerencia de IA' : undefined} />
+                <Score label="Speaking" value={active.speaking_band} source={active.reviewed_at ? 'Banda final del profesor' : active.speaking_assessment ? 'Evaluación delegada' : undefined} />
               </div>
 
               <Essay title="Writing Task 1" value={active.writing_task1_answer} />
               <AssessmentReport title="Reporte IA · Task 1" report={active.writing_task1_assessment} />
+              {active.writing_task1_delegated_assessment && <AssessmentReport title="Reporte delegado · Task 1" report={active.writing_task1_delegated_assessment} />}
               <Essay title="Writing Task 2" value={active.writing_task2_answer} />
               <AssessmentReport title="Reporte IA · Task 2" report={active.writing_task2_assessment} />
+              {active.writing_task2_delegated_assessment && <AssessmentReport title="Reporte delegado · Task 2" report={active.writing_task2_delegated_assessment} />}
 
               {active.speaking_answers && Object.values(active.speaking_answers).some(Boolean) && (
                 <section>
@@ -291,6 +339,10 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
                   <p style={{ margin: '5px 0 0', fontSize: 10, color: MUTED }}>Enlaces privados válidos durante 1 hora.</p>
                 </section>
               )}
+
+              <SpeakingAssessmentReport report={active.speaking_assessment} />
+
+              <IELTSDelegatedReviewCallout key={active.id} submission={active} />
 
               <section style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 12 }}>
                 <p style={{ margin: '0 0 10px', fontSize: 11, color: MUTED }}>La IA sugiere Writing; el profesor confirma Writing y asigna Speaking. Al guardar se recalcula el Overall con L/R/W/S.</p>

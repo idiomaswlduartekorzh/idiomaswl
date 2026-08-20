@@ -7,6 +7,7 @@ import type { StudentPlan } from '@/lib/actions/assignPlan'
 import type { StudentSubject } from '@/lib/actions/inviteStudent'
 import { EXAMS } from '@/data/exams'
 import type { FullAssessment } from '@/lib/labs/types'
+import type { IeltsSpeakingAssessment } from '@/lib/ielts/delegated-review'
 
 export interface ExamSubmission {
   id: string
@@ -34,6 +35,9 @@ export interface ExamSubmission {
   speaking_band?: number | null
   writing_task1_assessment?: FullAssessment | null
   writing_task2_assessment?: FullAssessment | null
+  writing_task1_delegated_assessment?: FullAssessment | null
+  writing_task2_delegated_assessment?: FullAssessment | null
+  speaking_assessment?: IeltsSpeakingAssessment | null
   reviewed_at?: string | null
   reviewed_by?: string | null
 }
