@@ -18,13 +18,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Salt marshes look bare from a distance, but few habitats produce more life. Twice a day the tide floods the grass with seawater and leaves behind mud full of decaying plants. That mud feeds crabs, worms, and snails, which in turn feed fish and wading birds. A single hectare of marsh ______ thousands of these animals, far more than the same area of open, sandy coast. In one plot no larger than a classroom, biologists counted sixty species.',
-    text: 'Which choice completes the text with the most logical and precise word?',
+      'Salt marshes look bare from a distance, but few habitats produce more life. Twice a day the tide floods the grass with seawater and leaves behind mud full of decaying plants. That mud feeds crabs, worms, and snails, which in turn feed fish and wading birds. A single hectare of marsh supports thousands of these animals, far more than the same area of open, sandy coast. In one plot no larger than a classroom, biologists counted sixty species.',
+    text: 'As used in the text, what does the word "supports" most nearly mean?',
     options: [
-      'shelters',
-      'sustains',
-      'attracts',
-      'tolerates',
+      'Bolsters',
+      'Nourishes',
+      'Endorses',
+      'Withstands',
     ],
     answer: 1,
   },
@@ -33,11 +33,11 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'The bakery ______ at the top of the hill. From its door Rosalía could see the whole town. Each morning at six she rang the brass bell above the counter, though the bell was not really needed. Then she leaned out and called that the first loaves were ready. Her voice carried farther than the bell did. Families in the lanes below could not see the bakery, but they heard her, and one by one they started up the hill.',
+      'The bakery ______ at the top of the hill. From its door Rosalía could see the whole town, roof by roof, down to the river. Each morning at six she rang the brass bell above the counter, though the bell was not really needed. Then she leaned out and called that the first loaves were ready. Her voice carried farther than the bell did. Families in the lanes below could not see the bakery, but they heard her, and one by one they started up the hill.',
     text: 'Which choice completes the text with the most logical and precise word?',
     options: [
       'loomed',
-      'sprawled',
+      'waited',
       'huddled',
       'perched',
     ],
@@ -53,8 +53,8 @@ export const items: MCQQuestion[] = [
     options: [
       'murky',
       'brackish',
-      'tepid',
-      'overcast',
+      'stagnant',
+      'hard',
     ],
     answer: 0,
   },
@@ -144,13 +144,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Es la opción que más se parece a lo que hace una marisma en la cabeza de cualquiera: dar cobijo. El texto, sin embargo, no menciona ni una vez refugio, escondite ni protección. Todo lo que describe es una cadena de comida —el barro «full of decaying plants» alimenta a cangrejos, gusanos y caracoles, y estos a peces y aves—, y es esa cadena la que sostiene la comparación con la costa arenosa.',
+        'Lee support por su sinónimo más frecuente de tesauro, el de reforzar lo que ya se sostiene: bolster apuntala una moneda, un argumento o una población que flaquea, y da por supuesto un antes y un después que aquí no existe. La marisma no refuerza a esos animales: es de donde salen.',
       B:
-        'Correcta: las dos oraciones previas encadenan «That mud feeds crabs, worms, and snails, which in turn feed fish and wading birds», de modo que lo que la hectárea pone es comida. Sustain nombra exactamente eso —mantener con alimento a lo que ya vive allí— y es lo único que explica por qué la marisma da «far more than the same area of open, sandy coast».',
+        'Correcta: las dos oraciones previas encadenan «That mud feeds crabs, worms, and snails, which in turn feed fish and wading birds», de modo que lo que la hectárea pone es comida y por eso sostiene «far more than the same area of open, sandy coast».',
       C:
-        'Atraer supone que los animales vienen de otro sitio, y el pasaje nunca los mueve: los cuenta donde están. Además la comparación es de densidad —una hectárea de marisma frente a una de arena—, no de atractivo; en una parcela «no larger than a classroom» los biólogos «counted sixty species», que es censo, no llamada.',
+        'Acepción de respaldar una opinión o una propuesta. Pide como complemento algo suscribible —un plan, una candidatura—, y en el pasaje no hay nadie que opine ni nada que aprobar: solo marea, barro y una cadena alimentaria.',
       D:
-        'Tolerar convierte a los animales en una carga que la marisma aguanta, y eso invierte la dirección del párrafo: aquí la marisma no soporta nada a su pesar, produce el barro del que todo lo demás come. La mera tolerancia tampoco explicaría la cifra, porque la costa arenosa también los toleraría y sostiene muchos menos.',
+        'Aplica la acepción de aguantar o resistir, support como bear: la marisma soportaría a esos animales como quien soporta una carga. Invierte la dirección del pasaje, donde los animales no pesan sobre la marisma sino que viven de lo que ella produce.',
     },
     fuenteHecho:
       'Hecho libre de ecología general (productividad de las marismas salobres); cifras y redacción originales.',
@@ -163,13 +163,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Loom es aparecer grande y amenazante ante quien mira, y el texto cierra esa puerta en la última línea: «Families in the lanes below could not see the bakery». Lo que no se ve no puede cernerse sobre nadie. Es la opción de quien lee «at the top of the hill», se imagina la escena desde abajo y no comprueba qué ve el de abajo.',
+        'Loom es alzarse grande y amenazante ante quien mira, y el texto lo refuta en la última línea: «Families in the lanes below could not see the bakery». Lo que no se ve no puede cernerse sobre nadie. Cae quien lee «at the top of the hill» y se imagina la escena desde abajo sin comprobar qué ve el de abajo.',
       B:
-        'Sprawl pide extensión: algo que se desparrama por el terreno. La panadería del pasaje es un local de una puerta y un mostrador con una campana de latón encima, y ocupa un punto —«at the top»—, no una superficie. Nada en el texto le da tamaño; lo único que se extiende es la voz de Rosalía, que «carried farther than the bell did».',
+        'Cae quien lee el párrafo entero como una espera —la campana, la voz, las familias que suben— y le da a la panadería el papel de quien aguarda. Pero en el texto la panadería no hace nada: todas las acciones son de Rosalía, que toca la campana, se asoma y llama. El edificio solo está donde está.',
       C:
-        'Huddle es apretarse junto a otros, y el texto coloca a la panadería sola y por encima de todo lo demás: desde su puerta se ve «the whole town», y el pueblo queda «below», en unas callejuelas por las que hay que subir. Un edificio arracimado con otros no tendría esa vista ni obligaría a nadie a empezar la cuesta.',
+        'Huddle es apretarse junto a otros o agazaparse buscando abrigo, y cae quien lee la invisibilidad desde abajo como señal de un edificio bajo y escondido. Lo impide la frase anterior: desde su puerta se ve el pueblo entero «roof by roof, down to the river», y eso es una posición que domina, no una que se esconde.',
       D:
-        'Correcta: perch nombra algo pequeño asentado en una altura, y es lo único que sostiene a la vez las tres cosas que dice el texto —que desde su puerta se ve el pueblo entero, que el pueblo queda «below», y que desde abajo no se la ve—. La altura es del cerro y la panadería está encima: eso es estar encaramada.',
+        'Correcta: perch nombra algo pequeño asentado en una altura desde la que se domina lo de abajo, y es lo único que sostiene a la vez las dos cosas que dice el texto — que desde la puerta se ve el pueblo entero tejado a tejado hasta el río, y que desde las callejuelas no se ve la panadería.',
     },
     fuenteHecho:
       'Ficción original; ningún hecho real implicado.',
@@ -182,13 +182,13 @@ export const meta: SatItemMeta[] = [
     tema: 'historia',
     razones: {
       A:
-        'Correcta: lo que hay que quitar del agua se retira con «beds of sand», y esos lechos «would clog within a year». Lo que atasca un lecho de arena es materia sólida en suspensión, y agua con materia en suspensión es agua turbia. Por eso mismo los ingenieros exigen «a settling basin upstream»: primero se decanta lo que enturbia, y luego se filtra lo que queda.',
+        'Correcta: la evidencia es interna y doble. Lo que la arena retira es lo mismo que la atasca —«those beds would clog within a year»— y contra eso los ingenieros exigen «a settling basin upstream». Un decantador solo sirve para sólidos en suspensión, y agua con sólidos en suspensión es agua turbia.',
       B:
-        'Brackish es salobre, y la sal no es sólido en suspensión: atraviesa un lecho de arena sin dejar nada y sin atascarlo, así que no explicaría la advertencia del párrafo. El texto además sitúa el puerto en un río, y no menciona mar, marea ni estuario en ninguna línea.',
+        'Es el distractor bueno del ítem y cae mucha gente: suena técnico, y un puerto fluvial invita a pensar en agua salobre por la marea. Pero la sal va disuelta, atraviesa un lecho de arena sin dejar nada y sin atascarlo, y una balsa de decantación no la retira. Ninguna de las dos advertencias del párrafo tendría sentido.',
       C:
-        'Tepid es una temperatura. Ningún lecho de arena calienta ni enfría el agua que lo cruza, de modo que la opción no encaja con el único mecanismo que el párrafo describe. Es la elección de quien busca un adjetivo que suene a agua sin comprobar qué hace con él la máquina que el texto está discutiendo.',
+        'Cae quien piensa en agua quieta y sucia, la imagen habitual del agua que hay que tratar. El texto lo desmiente por partida doble: es «the river water» de un puerto fluvial, agua que corre, y además un lecho de arena no mueve el agua ni arregla que esté estancada.',
       D:
-        'Overcast describe un cielo, no un líquido, y llega aquí por el camino más corto: es la traducción de manual de «nublado». El adjetivo del hueco cuelga de «the river water», y en todo el pasaje no hay tiempo atmosférico de ninguna clase — hay un concejo, tres ingenieros, un presupuesto y un río.',
+        'Es la trampa para el estudiante que sabe algo de tratamiento de aguas: la dureza es el problema clásico del agua potable. Pero la dureza es mineral disuelto, cruza la arena sin quedarse y no colmata nada, y una balsa de decantación aguas arriba no le hace absolutamente nada.',
     },
     fuenteHecho:
       'Hecho libre de historia de la ingeniería sanitaria (filtros lentos de arena, siglo XIX); ciudad, fecha e informe inventados.',

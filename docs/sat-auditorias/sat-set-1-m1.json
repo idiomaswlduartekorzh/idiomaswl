@@ -1,6 +1,6 @@
 {
   "modulo": "sat-set-1-m1",
-  "fecha": "2026-08-19",
+  "fecha": "2026-08-20",
   "auditorias": {
     "clave": {
       "agente": "sat-key-auditor",
@@ -77,8 +77,8 @@
   },
   "huellas": {
     "q01": "f598c8132ef7",
-    "q02": "6a6088add62b",
-    "q03": "61ae241586c3",
+    "q02": "b86f49835d3e",
+    "q03": "d007688bdb29",
     "q04": "aa0646ffe1b5",
     "q05": "5d1bf22ab5e0",
     "q06": "d781b10bf330",
@@ -105,23 +105,44 @@
     "q27": "d3ea741de480"
   },
   "notaSobreLasHuellas": "Cada huella resume el enunciado, las opciones, la clave y el texto de un ítem tal y como estaban el día que se firmó esta acta. El guardián las recalcula sobre el contenido de hoy y se pone rojo si alguna no coincide. Existe porque hasta el 20 ago 2026 se podía cambiar un ítem después de firmar y las doce puertas seguían en verde: el acta certificaba unos ítems que ya no existían, y lo hacía en silencio.",
-  "reauditacionPendiente": {
-    "items": [
-      "q01",
-      "q02",
-      "q03"
+  "completarElHueco": {
+    "fecha": "2026-08-20",
+    "porQue": "El profesor de SAT señaló en la auditoría de producto que faltaba el formato dominante de vocabulario del SAT digital: el de completar el hueco. Los cuatro ítems de Words in Context usaban «As used in the text, what does the word X most nearly mean?».",
+    "resultado": "q02 y q03 pasan al formato de completar y quedan APTO. q01 y q04 se quedan en la forma antigua. El examen real usa las dos, así que dos de cuatro es una mezcla defendible.",
+    "q01": {
+      "queSePaso": "Se convirtió, se midió y se revirtió a su forma firmada. En la primera versión 12 de 14 solucionadores lo acertaban SIN el texto; se rehicieron las opciones y subió a 9 de 10 —los diez marcando la misma letra—.",
+      "diagnostico": "El auditor de clave lo nombró mejor que el redactor: al quitar el distractor muerto («tolerates») se metió un sinónimo de otro distractor («harbors» junto a «shelters»), y dos sinónimos se cancelan entre sí. Eso deja «sustains» contra «attracts», y sustains gana sin leer nada. El atajo pasó de frecuente a mecánico.",
+      "leccionParaElBlueprint": "En un ítem de completar sobre un hábitat, el verbo semánticamente más rico —sustains— es la respuesta que cualquiera adivina sin contexto. Arreglarlo no es cuestión de distractores: hay que escribir el pasaje de modo que la palabra rica sea la trampa y la llana sea la clave. Eso es un ítem nuevo, no un retoque.",
+      "decision": "Revertido a la versión firmada y medida. Se retoma en el módulo 2, con pasaje nuevo desde el principio."
+    },
+    "panelACiegas": {
+      "metodo": "Examen extraído sin los textos. Se descartan las respuestas que no traen exactamente 27 letras: los solucionadores baratos se descuentan al responder en bloque, y el formato numerado 1..27 lo corrige.",
+      "ronda1": {
+        "n": 14,
+        "media": "34,1 %",
+        "q01": "12/14",
+        "q02": "3/14",
+        "q03": "5/14"
+      },
+      "ronda2": {
+        "n": 10,
+        "media": "35,4 %",
+        "q01": "9/10 (los diez a la misma letra)",
+        "q02": "3/10",
+        "q03": "2/10"
+      },
+      "aviso": "Estas medias NO son comparables con el 23,1 % de la serie anterior: aquel panel era de 16 y con otra mezcla de solucionadores, y a varios de estos se les pidió expresamente que usaran heurísticas de quien no lee. Lo comparable es el recuento por ítem dentro de la misma ronda."
+    },
+    "auditoriasEjecutadas": [
+      "Clave a ciegas (ronda 1): q01 APTO con reservas, q02 NO APTO por distractor muerto («sprawled»), q03 NO APTO por dos opciones descartables sin leer («overcast», «tepid»).",
+      "Clave a ciegas (ronda 2, sobre los arreglos): q02 APTO, q03 APTO, q01 NO APTO por el par de sinónimos.",
+      "Lengua (ronda 1 y ronda 2 sobre la versión final): q02 y q03 APTO. Sin doble clave, sin regla inventada, sin hecho falso, sin uso británico ni calco.",
+      "Las tres auditorías resolvieron a ciegas y las tres coincidieron con las claves declaradas: cero claves en disputa."
     ],
-    "porQue": "Regla R2 del blueprint: arreglar un ítem lo convierte en un ítem nuevo. Tres de los 27 son nuevos.",
-    "yaVerificado": [
-      "Las doce puertas mecánicas del guardián sobre el módulo completo (reparto de letras, solape léxico, longitudes, absolutos, mezcla de dominios, orden y curva).",
-      "tsc limpio y build en verde.",
-      "En la extracción a ciegas los tres ítems quedan SIN ninguna frase: el formato de completar borra el contexto entero al quitar el texto, mientras que la forma antigua dejaba la palabra objetivo dentro del enunciado. Estructuralmente es la posición más fuerte posible para la puerta 6."
-    ],
-    "sinHacer": [
-      "PANEL A CIEGAS de 16 solucionadores sobre el módulo en su forma de hoy. La cifra vigente (23,1 %) es de la versión anterior de estos tres ítems.",
-      "AUDITORÍA DE CLAVE ÚNICA independiente sobre q01, q02 y q03. Quien los diseñó no puede auditarlos a ciegas: es la misma cabeza.",
-      "Auditoría de lengua sobre las cuatro opciones nuevas de cada uno."
-    ],
-    "consecuencia": "Hasta que esas tres corran, el acta NO cubre q01-q03 y el guardián lo dice. No se publica."
+    "abiertoYNoBloqueante": [
+      "q03: «Their support was qualified» tiene el sujeto plural más cercano en «Historians», no en los ingenieros. Se resuelve por sentido pero obliga a releer. No se toca ahora porque cambiar el texto convierte el ítem en uno nuevo y obliga a reauditar.",
+      "q03: «the three engineers it had hired» — «it» admite tres antecedentes (council, river port, Elmsford).",
+      "q02: la validez del ítem depende de la frase «Families in the lanes below could not see the bakery», que es la que mata «loomed». Nadie la toca en futuras rondas."
+    ]
   }
 }
