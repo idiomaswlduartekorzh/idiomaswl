@@ -3578,3 +3578,21 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   de CTW, avanzar Listening del ítem 1 al 2 con un reproductor nuevo y verificar la
   omisión explícita cuando llegue a un medio realmente ausente. VoiceOver T16/T17 y
   todo el gate de 400 audios continúan abiertos.
+
+### Reconciliación final del espaciado con el `main` del 20 de agosto — 2026-08-20
+
+- El “continúa” del owner cierra la aprobación visual humana del nuevo espaciado CTW;
+  no autoriza producción ni el lote de audios.
+- Se incorporó el `origin/main` canónico `b5e615cb` mediante el merge `d16a75bb`. El
+  único conflicto fue aditivo en `src/data/mocks/types.ts`: se conservaron tanto
+  `moduleId` de TOEFL como `insights` de SAT. La rama quedó 0 commits detrás de main.
+- Después del merge pasaron el catálogo protegido de 465 temas, los guardianes
+  globales —incluidas 24 series y 480 MP3 ajenos a TOEFL—, las puertas nuevas de SAT,
+  los ocho guardianes TOEFL, 44/44 pruebas, TypeScript y ESLint dirigido.
+- El `npm run build` exacto completó todos los guardianes y se detuvo únicamente por
+  el symlink externo de `node_modules` que Turbopack no admite en este worktree
+  temporal. La repetición de producción con Webpack compiló en 104 s, terminó
+  TypeScript en 63 s y generó 1.834/1.834 páginas; la ruta dinámica de los simulacros
+  TOEFL está presente.
+- Ningún audio fue abierto, reproducido, transcrito, generado ni modificado. La vista
+  previa reconciliada sigue siendo el próximo gate técnico antes de T16/T17.
