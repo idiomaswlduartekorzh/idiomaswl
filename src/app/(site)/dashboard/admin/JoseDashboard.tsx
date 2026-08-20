@@ -139,6 +139,11 @@ function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').E
                 <p style={{ margin: '0 0 2px', fontSize: 12, fontWeight: 700, color: TEXT }}>
                   {item.user_name ?? item.user_email ?? 'Anónimo'}
                 </p>
+                {item.user_email && (
+                  <p style={{ margin: '0 0 2px', fontSize: 11, color: MUTED, overflowWrap: 'anywhere' }}>
+                    {item.user_email}
+                  </p>
+                )}
                 <p style={{ margin: 0, fontSize: 11, color: MUTED }}>
                   {item.exam_name} · {item.mock_title} · {formatDate(item.created_at)}
                 </p>
@@ -169,6 +174,28 @@ function IELTSPendingPanel({ items }: { items: import('./JoseDashboardServer').E
                       <p key={k} style={{ margin: '0 0 4px' }}><strong>{k}:</strong> {v}</p>
                     ) : null)}
                   </div>
+                </div>
+              )}
+              {active.speaking_audio_files && active.speaking_audio_files.length > 0 && (
+                <div>
+                  <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: MUTED, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Speaking — audios privados</p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                    {active.speaking_audio_files.map(audio => (
+                      <div key={audio.questionId} style={{ background: CARD, borderRadius: 8, padding: 10, border: `1px solid ${BORDER}` }}>
+                        <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 700, color: TEXT }}>
+                          {audio.questionId.toUpperCase()}
+                        </p>
+                        <audio
+                          controls
+                          preload="metadata"
+                          src={audio.signedUrl}
+                          aria-label={`Escuchar respuesta ${audio.questionId.toUpperCase()} de ${active.user_name ?? active.user_email ?? 'la estudiante'}`}
+                          style={{ width: '100%' }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  <p style={{ margin: '6px 0 0', fontSize: 10, color: MUTED }}>Los enlaces de audio vencen en 1 hora; recarga el panel para renovarlos.</p>
                 </div>
               )}
               {/* Band inputs */}
