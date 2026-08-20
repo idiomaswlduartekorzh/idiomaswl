@@ -1,5 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { BLOG_POSTS } from '@/data/blog';
+import { EXAMS } from '@/data/exams';
+import { SAT_GUIDE_SLUGS } from '@/data/satGuides';
 import { grammarRegistry } from '@/data/grammar/registry';
 import { EXAM_PRACTICE_ROUTES } from '@/data/practica-exams/seo-catalog';
 import { publishedReadingExercises } from '@/lib/reading/catalog';
@@ -25,7 +27,10 @@ const PRACTICE_LANGUAGES = Object.keys(grammarRegistry);
 
 const PUBLISHED_DAYS = [1, 2, 3, 4, 6, 7];
 
-const EXAM_SLUGS = ['ielts', 'toefl', 'icfes', 'topik', 'goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2'];
+// Se deriva de EXAMS, no se escribe a mano. Esta lista era manual y se quedó sin
+// `sat` cuando se publicó el examen: el hub existía, compilaba y se veía, pero
+// Google no lo tenía en el sitemap. Un catálogo con dos fuentes acaba siempre así.
+const EXAM_SLUGS = Object.keys(EXAMS).filter((slug) => EXAMS[slug].available);
 
 const PUBLISHED_EXAM_PRACTICE_ROUTES = EXAM_PRACTICE_ROUTES.filter((route) => route.status === 'published');
 
@@ -80,6 +85,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.75,
+    })),
+    // Espinazo del superhub de SAT — ver docs/sat-superhub-plan.md
+    ...SAT_GUIDE_SLUGS.map((slug) => ({
+      url: `${BASE}/examenes/sat/guia/${slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
     })),
 
     // ── Blog ───────────────────────────────────────────────────────────────────

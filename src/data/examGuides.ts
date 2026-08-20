@@ -182,6 +182,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
     ],
     related: [
       { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · Reading and Writing', note: 'Un módulo de verdad: 27 de las 54 preguntas de la sección, cronometrado en 32 minutos.' },
+      { href: '/examenes/sat/guia/reading-and-writing', label: 'La sección de Reading and Writing, por dentro', note: 'Los cuatro dominios, en qué orden llegan y las cuatro preguntas que no puntúan.' },
       { href: '/clases-de-ingles', label: 'Clases de inglés con preparación de exámenes', note: 'El SAT premia precisión de lectura; se entrena.' },
       { href: '/examenes/toefl', label: 'TOEFL iBT', note: 'El examen de idioma que muchas universidades piden además del SAT.' },
       { href: '/examenes/ielts', label: 'IELTS', note: 'La alternativa al TOEFL, aceptada por la mayoría de universidades de EE. UU.' },
