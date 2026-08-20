@@ -1,7 +1,9 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { ALL_ADMIN_EMAILS } from '@/lib/config/admins'
+import { buildIeltsScoreSummary, normalizeIeltsBand } from '@/lib/ielts/scoring'
 
 export async function scoreSubmission(
   submissionId: string,
@@ -22,19 +24,44 @@ export async function scoreSubmission(
     if (profile?.role !== 'admin') throw new Error('Unauthorized')
   }
 
-  const overall = Math.round(((writingBand + speakingBand) / 2) * 2) / 2
+  const safeWritingBand = normalizeIeltsBand(writingBand)
+  const safeSpeakingBand = normalizeIeltsBand(speakingBand)
+  if (safeWritingBand == null || safeSpeakingBand == null) throw new Error('Las bandas deben estar entre 0 y 9.')
 
-  const { error } = await supabase
+  const admin = createAdminClient()
+  const { data: submission, error: readError } = await admin
+    .from('exam_submissions')
+    .select('id, listening_band, reading_band')
+    .eq('id', submissionId)
+    .eq('exam_slug', 'ielts')
+    .eq('submission_status', 'submitted')
+    .maybeSingle()
+
+  if (readError) throw readError
+  if (!submission) throw new Error('No encontramos una entrega IELTS válida.')
+
+  const summary = buildIeltsScoreSummary({
+    listening: submission.listening_band,
+    reading: submission.reading_band,
+    writing: safeWritingBand,
+    speaking: safeSpeakingBand,
+  })
+
+  const { error } = await admin
     .from('exam_submissions')
     .update({
-      writing_band: writingBand,
-      speaking_band: speakingBand,
+      writing_band: safeWritingBand,
+      speaking_band: safeSpeakingBand,
       reviewed_at: new Date().toISOString(),
       reviewed_by: user?.email ?? 'admin',
-      total_label: `Writing Band ${writingBand} · Speaking Band ${speakingBand}`,
+      skills: summary.skills,
+      total_score: summary.totalScore,
+      total_max: 9,
+      total_label: summary.totalLabel,
     })
     .eq('id', submissionId)
+    .eq('exam_slug', 'ielts')
 
   if (error) throw error
-  return { ok: true, overall }
+  return { ok: true, overall: summary.totalScore }
 }
