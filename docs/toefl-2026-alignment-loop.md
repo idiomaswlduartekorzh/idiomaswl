@@ -3564,6 +3564,12 @@ alineación, y cantidad de archivos no es fidelidad de examen**.
   contiene `examenes/[exam]/practica/[mockId]`. El alias protegido de la rama apunta
   al nuevo preview; una petición anónima a Set 1 recibe 302 al SSO de Vercel y la
   comprobación autenticada del CLI responde HTTP 200.
+- La revisión visual posterior confirmó que el patrón concentrado de diez huecos es
+  el C-test oficial, pero descubrió una falla de presentación: cada input heredaba el
+  interlineado alto del párrafo. Se corrigió sólo la superficie visual para mostrar
+  huecos compactos dentro de la oración, sin mover palabras ni respuestas. Chromium
+  midió 26 px de alto en escritorio y 24 px en móvil; Tab avanzó 1→2, no hubo errores
+  de consola y la vista 390 px quedó sin overflow. El checker CTW cubre la regresión.
 - Estado: gate técnico del preview cerrado. Pendiente del owner: confirmar el espaciado
   de CTW, avanzar Listening del ítem 1 al 2 con un reproductor nuevo y verificar la
   omisión explícita cuando llegue a un medio realmente ausente. VoiceOver T16/T17 y

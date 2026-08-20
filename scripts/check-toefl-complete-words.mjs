@@ -144,4 +144,10 @@ for (const path of srcFiles) {
   assert.doesNotMatch(source, /@\/server\/toefl|complete-words-set-1\.server/, `${path} does not import the private key`);
 }
 
+const fixedRunnerSource = await read('src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx');
+const compactInputCss = fixedRunnerSource.match(/\.t26-word__input \{([^}]*)\}/s)?.[1] ?? '';
+assert.match(compactInputCss, /line-height:1\.1/, 'Fixed runner keeps CTW inputs compact instead of inheriting paragraph line-height');
+assert.match(compactInputCss, /min-height:0/, 'Fixed runner neutralizes generic input height for inline CTW gaps');
+assert.doesNotMatch(compactInputCss, /font:inherit/, 'Fixed runner does not reintroduce inherited CTW line-height through the font shorthand');
+
 console.log('✓ TOEFL Complete the Words: Sets 1–20 identity, format, security boundary, and preserved sources');

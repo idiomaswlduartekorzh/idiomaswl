@@ -169,6 +169,12 @@ se conservan como evidencia.
   la rama fue asignado al nuevo preview y conserva SSO: Set 1 responde 302 al login
   cuando se solicita sin sesión y HTTP 200 mediante la comprobación autenticada del
   CLI;
+- la revisión visual del owner detectó que los campos de Complete the Words heredaban
+  el `line-height` alto del párrafo y parecían tarjetas verticales. Se conservaron sin
+  cambios las 10 posiciones oficiales y el scoring, pero los campos pasaron a huecos
+  subrayados compactos: 26 px de alto en 1.440 px y 24 px en 390 px. Chromium verificó
+  foco visible, Tab 1→2, consola sin errores y móvil sin overflow (390/390); el checker
+  CTW impide reintroducir `font: inherit` y la altura genérica del input;
 - ningún audio fue abierto, reproducido, transcrito, generado ni modificado.
 
 ## Gates para declarar “producto terminado”
