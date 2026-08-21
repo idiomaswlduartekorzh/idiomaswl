@@ -49,9 +49,10 @@ assert.deepEqual(
   'the Repeat release gate exactly matches the fixed expansion',
 );
 
-const [fixedFormSource, clientSource] = await Promise.all([
+const [fixedFormSource, clientSource, recorderSource] = await Promise.all([
   read('src/data/mocks/toefl-fixed-form.ts'),
   read('src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx'),
+  read('src/components/exam-runner/IELTSSpeakingRecorder.tsx'),
 ]);
 assert.match(fixedFormSource, /withToefl2026FixedSpeaking/, 'the fixed form composes Speaking');
 assert.match(fixedFormSource, /repeats\.slice\(0, 5\)/, 'the composer preserves five existing Repeat items');
@@ -60,6 +61,7 @@ assert.match(fixedFormSource, /speaking-interview-\$\{interview\.partNumber\}/, 
 assert.match(clientSource, /question\.type === 'toefl-listening-single' \|\| question\.type === 'repeat' \|\| question\.type === 'speak'/, 'the preview counts blocked Listening, Repeat and Interview media');
 assert.match(clientSource, /currentForwardBlocked[\s\S]*script-ready-audio-blocked/, 'blocked Repeat and Interview items advance without entering evaluation');
 assert.doesNotMatch(clientSource, /SelfAssessModal|speakBands/, 'Speaking cannot become a self-awarded score');
-assert.match(clientSource, /new MediaRecorder\(stream\)/, 'ready Speaking items capture a real local response');
+assert.match(clientSource, /<IELTSSpeakingRecorder/, 'ready Speaking items use the hardened recorder');
+assert.match(recorderSource, /new MediaRecorder\(stream/, 'ready Speaking items capture a real local response');
 
 console.log('✓ TOEFL fixed Speaking Sets 1–20: 7 Repeat + 4 Interview and 120 released new media');

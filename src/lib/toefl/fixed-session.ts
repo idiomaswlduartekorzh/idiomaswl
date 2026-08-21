@@ -115,7 +115,7 @@ export function buildToeflFixedStages(mock: MockExam): ToeflFixedStage[] {
         (question) => question.type === 'write' && question.taskNumber === 1,
       ).map((section) => ({
         ...section,
-        sectionNote: 'Reloj de 7 minutos aplicado en esta sesión. El texto se guarda, pero permanece not_evaluated.',
+        sectionNote: 'Reloj de 7 minutos aplicado en esta sesión. El texto puede enviarse al corrector privado al finalizar.',
       })),
     },
     {
@@ -132,7 +132,7 @@ export function buildToeflFixedStages(mock: MockExam): ToeflFixedStage[] {
         (question) => question.type === 'write' && question.taskNumber === 2,
       ).map((section) => ({
         ...section,
-        sectionNote: 'Reloj de 10 minutos aplicado en esta sesión. El texto se guarda, pero permanece not_evaluated.',
+        sectionNote: 'Reloj de 10 minutos aplicado en esta sesión. El texto puede enviarse al corrector privado al finalizar.',
       })),
     },
     {

@@ -1,15 +1,17 @@
-# TOEFL 2026 — acta consolidada de Sets 1–20 para preview
+# TOEFL 2026 — acta consolidada de Sets 1–20
 
 Fecha: 14 de agosto de 2026
 
-Revalidación de rama y preview: 20 de agosto de 2026
+Revalidación de producto: 21 de agosto de 2026
 
 Owner y firma de derechos: José David Duarte Silva
 
-Dictamen actualizado: **gates no-audio cerrados y versión pre-audio autorizada para
-producción por José David Duarte Silva el 20 de agosto de 2026**. La publicación no
-convierte el producto en “terminado”: las 400 piezas nuevas de audio siguen pendientes
-y la interfaz debe mantener visibles sus bloqueos y la omisión explícita.
+Dictamen actualizado: **los 20 sets tienen contenido, navegación, 400/400 audios y
+captura real de respuestas construidas cerrados**. La entrega privada vuelve a corregir
+Reading, Listening y Build en el servidor, conserva Email/Discussion y sube las 11
+grabaciones de Speaking antes de mostrar resultados. Writing recibe una estimación
+pedagógica entera 0–5 por tarea y Speaking queda para revisión humana 0–5 por familia.
+No se calcula banda 1–6, overall ETS ni equivalencia `/120`.
 
 Los reportes detallados e inventarios intermedios se retiraron de la rama operativa
 después de crear el respaldo remoto
@@ -103,19 +105,18 @@ medio y disclosure de ruta fija visibles en el HTML inicial.
 | **Total** | **20 rutas** | **800** | **680** | **240** | **220** | **400** | **20/20** |
 
 Los 97 ítems están escritos en cada set. “Audio nuevo” cuenta archivos, no preguntas:
-14 Listening, 2 Repeat y 4 Interview por set. Como algunos estímulos de Listening se
-comparten entre preguntas, los 20 archivos pendientes bloquean 25 interacciones por
-set: 19 Listening y 6 Speaking.
+14 Listening, 2 Repeat y 4 Interview por set. Los 400 archivos fueron liberados el
+21 de agosto de 2026 y el guardián comprueba ruta, tamaño y hash antes de cada build.
 
 ## Auditoría de contenido y scoring
 
 | Superficie | Estado comprobado | Resultado que puede mostrarse |
 |---|---|---|
-| Reading 40 | Los dos módulos, render, respuestas e IDs privados pasan guardianes en Sets 1–20. | Aciertos brutos locales. |
-| Listening 34 | 15 interacciones por set reutilizan medios; 19 quedan bloqueadas. Las 680 claves viven sólo en servidor. | Aciertos brutos sólo sobre ítems presentados; bloqueos nunca son errores. |
-| Build a Sentence 10 | Orden, IDs, renderer y claves privadas pasan guardianes en Sets 1–20. | Aciertos brutos locales. |
-| Email + Discussion 2 | Prompts originales presentes y relojes de 7/10 minutos aplicados. | `not_evaluated`; sin banda automática. |
-| Repeat 7 + Interview 4 | Composición completa; 5 Repeat reutilizables y 6 prompts bloqueados por set. Captura real local disponible cuando el estímulo esté listo. | `not_evaluated`; sin autoevaluación 1–6. |
+| Reading 40 | Los dos módulos, render, respuestas e IDs privados pasan guardianes en Sets 1–20. La entrega se recalifica en servidor. | Aciertos brutos de práctica; no score ETS. |
+| Listening 34 | Los 34 ítems tienen medio liberado y las 680 claves viven sólo en servidor. La entrega se recalifica en servidor. | Aciertos brutos de práctica; no score ETS. |
+| Build a Sentence 10 | Orden, IDs, renderer y claves privadas pasan guardianes en Sets 1–20. La entrega se recalifica en servidor. | Aciertos brutos de práctica; no score ETS. |
+| Email + Discussion 2 | Prompts originales presentes, relojes de 7/10 minutos, persistencia privada y rúbricas separadas. | Estimación pedagógica entera 0–5 por tarea; sin conversión 1–6. |
+| Repeat 7 + Interview 4 | Los 11 estímulos tienen audio y cada avance exige una grabación real que se conserva hasta confirmar la entrega privada. | Revisión humana entera 0–5 por familia; sin conversión 1–6. |
 
 La revisión de segunda persona fue dispensada expresamente por el owner. El acta no
 afirma independencia editorial. La firma de derechos declara autoría propia del banco;
@@ -131,8 +132,10 @@ se conservan como evidencia.
 - deadline absoluto tras recarga para los relojes publicados o declarados;
 - no se inventan segundos por respuesta de Listening o Speaking;
 - audio listo de una sola reproducción; respuesta bloqueada hasta que termine;
-- medio faltante visible y excluido del scoring;
-- captura de Speaking temporal en la pestaña, sin carga a servidor y sin nota;
+- cualquier medio faltante futuro queda visible y excluido del scoring;
+- 11 grabaciones de Speaking sobreviven el avance y se confirman por tamaño en un bucket privado;
+- los dos textos quedan guardados incluso si el motor automático está ocupado;
+- panel administrador con textos, reportes, audios temporales y cierre humano de Speaking;
 - resultado sin overall parcial, sin banda aproximada y sin conversión `/120`;
 - persistencia probada al recargar y vista 320×900 sin overflow horizontal;
 - VoiceOver T13, T16 y T17 aprobados por el owner.
@@ -231,11 +234,12 @@ se conservan como evidencia.
 | Rama contra `origin/main` | CERRADO | `origin/main` `a6707877` está incorporado en `50d1ba6f`; 0 commits detrás, catálogo, TypeScript, build y guardianes TOEFL PASS. |
 | Build del preview Vercel | CERRADO | `dpl_Ch1VKomZPfWwTLSk8xCa75RNLaD2`, commit `1dd7b7e`, está `READY`; 1.834/1.834 páginas y Set 1 autenticado 200. El alias protegido apunta al artefacto. |
 | Revisión funcional y accesible del preview | CERRADO | Espaciado CTW y VoiceOver T16/T17 aprobados por el owner. Playwright confirmó Listening 1→2, reproductor reiniciado y omisión explícita 6→7 sin reproducir audio. La protección SSO no se debilitó. |
-| Aprobación de audio | ABIERTO | Manifiesto/costo listos y diez voces 1× propuestas: 400 archivos, 68.890 caracteres; piloto 10 archivos/2.845 créditos cabe. La cuenta sólo tiene 30.171 créditos y reinicia 2026-09-05 18:13 COT, por lo que el lote completo no cabe todavía. Falta autorización explícita del piloto. |
-| Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
-| Producción pre-audio | AUTORIZADA | El owner autorizó integrar y publicar antes de generar los audios; los bloqueos de medio deben seguir siendo explícitos. |
+| Audio y QA | CERRADO | 400/400 archivos, 34.140.872 bytes, normalización -18 LUFS y contraste de guion con Whisper; hash de release `9235dd4…21741`. |
+| Captura y corrección | CERRADO | Entrega firmada, subida privada, scoring objetivo servidor, dos reportes de Writing y revisión humana de Speaking. |
+| Seguridad de datos | CERRADO | Bucket privado, URLs firmadas, service role sólo servidor, rate limit durable y comprobante HMAC de 2 horas. |
+| Producción final | EN CURSO | Integrar este cierre en `main`, desplegar y repetir smoke de las 20 rutas y 400 medios. |
 
-Conclusión: los 20 simulacros y el arreglo tienen **los gates no-audio cerrados** y el
-owner autorizó su despliegue como versión pre-audio. No deben venderse ni rotularse
-como producto terminado: falta el gate separado de manifiesto, voces, muestra, costo,
-generación y QA de los 400 audios.
+Conclusión: los 20 simulacros cumplen el alcance declarado de **simulacro alineado no
+adaptativo de ruta fija** y tienen cerrados los gates locales de contenido, audio,
+navegación, captura y corrección. “Terminado” describe ese producto WeLearn; no significa
+examen oficial, réplica adaptativa ni equivalencia psicométrica con ETS.

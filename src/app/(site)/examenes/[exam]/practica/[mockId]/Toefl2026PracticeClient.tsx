@@ -17,6 +17,12 @@ import type { ToeflBuildSentenceScoreResult } from '@/lib/toefl/build-sentence-c
 import type { ToeflListeningScoreResult } from '@/lib/toefl/listening-contract';
 import BuildSentenceItem from '@/components/toefl/BuildSentenceItem';
 import { ReadingMultiChoiceGroup, ReadingSingleChoiceGroup } from '@/components/toefl/ReadingChoiceGroup';
+import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
+import { TOEFLSubmission } from '@/components/exam-runner/TOEFLSubmission';
+import { TOEFLWritingReportPanel } from '@/components/labs/TOEFLWritingReportPanel';
+import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
+import type { ToeflSubmissionReceipt } from '@/lib/toefl/review-blueprint';
+import type { ToeflObjectiveAnswers, ToeflSpeakingPromptRef } from '@/lib/toefl/submission';
 import {
   buildToeflFixedStages,
   countStageInteractions,
@@ -294,9 +300,16 @@ function WriteView({ q, value, onChange }: { q: WriteQuestion; value: string; on
       </div>
       <div className="ielts-write__stimulus">{q.stimulus.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}</div>
       <p className="ielts-write__prompt">{q.text}</p>
-      {q.timeLimitSeconds && <p className="t26-section-note">Referencia de esta tarea: {q.timeLimitSeconds / 60} minutos. {q.evaluationDisclosure}</p>}
+      {q.timeLimitSeconds && (
+        <p className="t26-section-note">
+          Referencia de esta tarea: {q.timeLimitSeconds / 60} minutos. La respuesta se guarda
+          para corrección privada; cualquier 0–5 mostrado es una estimación pedagógica por tarea.
+        </p>
+      )}
       <textarea
         className="ielts-write__area"
+        name={`toefl-writing-task-${q.taskNumber}`}
+        aria-label={`Respuesta de ${q.stimulusLabel ?? `Writing Task ${q.taskNumber}`}`}
         value={value}
         onChange={e => onChange(e.target.value)}
         placeholder="Escribe tu respuesta aquí…"
@@ -341,7 +354,7 @@ function RepeatView({ q, audio }: { q: RepeatQuestion; audio?: AudioLifecycle })
       )}
       <p className="t26-repeat__instruction">Escucha la oración y repítela en voz alta con la misma pronunciación, ritmo y entonación.</p>
       {!blocked && !audio?.completed && <p className="t26-section-note" role="status">Escucha la oración completa. Después repítela inmediatamente en voz alta.</p>}
-      {audio?.completed && <p className="t26-section-note" role="status">Audio completado. Repite ahora la oración; este preview todavía no asigna una puntuación oral.</p>}
+      {audio?.completed && <p className="t26-section-note" role="status">Audio completado. Repite ahora la oración y grábala para la revisión privada.</p>}
       {blocked && (
         <>
           <button className="btn btn-ghost btn-sm" onClick={() => setRevealed(r => !r)}>
@@ -379,96 +392,7 @@ function InterviewView({ q, audio }: { q: SpeakQuestion; audio?: AudioLifecycle 
         </p>
       )}
       {q.text.split('\n\n').map((p, i) => <p key={i} className="ielts-speak__prompt">{p}</p>)}
-      {!blocked && <p className="t26-section-note">Responde inmediatamente y sin tiempo de preparación. La respuesta oral queda <strong>not_evaluated</strong> hasta integrar una captura y un evaluador válidos.</p>}
-    </div>
-  );
-}
-
-function SpeakingRecorder({ questionId, captured, skipped, onCaptured, onSkip }: {
-  questionId: string;
-  captured: boolean;
-  skipped: boolean;
-  onCaptured: (questionId: string) => void;
-  onSkip: (questionId: string) => void;
-}) {
-  const recorderRef = useRef<MediaRecorder | null>(null);
-  const streamRef = useRef<MediaStream | null>(null);
-  const chunksRef = useRef<Blob[]>([]);
-  const previewUrlRef = useRef('');
-  const [status, setStatus] = useState<'idle' | 'requesting' | 'recording' | 'captured' | 'error'>(captured ? 'captured' : 'idle');
-  const [previewUrl, setPreviewUrl] = useState('');
-
-  useEffect(() => () => {
-    if (recorderRef.current?.state === 'recording') recorderRef.current.stop();
-    streamRef.current?.getTracks().forEach((track) => track.stop());
-    if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
-  }, []);
-
-  const start = async () => {
-    if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === 'undefined') {
-      setStatus('error');
-      return;
-    }
-    setStatus('requesting');
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const recorder = new MediaRecorder(stream);
-      streamRef.current = stream;
-      recorderRef.current = recorder;
-      chunksRef.current = [];
-      recorder.ondataavailable = (event) => {
-        if (event.data.size > 0) chunksRef.current.push(event.data);
-      };
-      recorder.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: recorder.mimeType || 'audio/webm' });
-        if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
-        const nextUrl = URL.createObjectURL(blob);
-        previewUrlRef.current = nextUrl;
-        setPreviewUrl(nextUrl);
-        stream.getTracks().forEach((track) => track.stop());
-        setStatus('captured');
-        onCaptured(questionId);
-      };
-      recorder.start();
-      setStatus('recording');
-    } catch {
-      streamRef.current?.getTracks().forEach((track) => track.stop());
-      setStatus('error');
-    }
-  };
-
-  const stop = () => {
-    if (recorderRef.current?.state === 'recording') recorderRef.current.stop();
-  };
-
-  if (skipped) {
-    return <p className="t26-section-note" role="status">Respuesta oral omitida por fallback · not_evaluated.</p>;
-  }
-
-  return (
-    <div className="t26-recorder" aria-labelledby={`recorder-${questionId}`}>
-      <h3 id={`recorder-${questionId}`}>Graba tu respuesta oral</h3>
-      <p>La grabación permanece temporalmente en esta pestaña. No se sube, no se guarda al recargar y no recibe una nota.</p>
-      <div className="t26-recorder__actions">
-        {(status === 'idle' || status === 'requesting') && (
-          <button type="button" className="btn btn-sm" onClick={() => { void start(); }} disabled={status === 'requesting'}>
-            {status === 'requesting' ? 'Solicitando micrófono…' : 'Iniciar grabación'}
-          </button>
-        )}
-        {status === 'recording' && <button type="button" className="btn btn-sm" onClick={stop}>Detener y guardar temporalmente</button>}
-        {status === 'captured' && <strong role="status">Respuesta capturada · not_evaluated</strong>}
-      </div>
-      {status === 'recording' && <p className="t26-recorder__live" role="status" aria-live="assertive">● Grabando. Responde ahora.</p>}
-      {status === 'error' && (
-        <div className="t26-audio-blocked" role="alert">
-          <p>No fue posible usar el micrófono. Puedes habilitarlo en el navegador y reintentar, o continuar dejando esta respuesta como no evaluada.</p>
-          <div className="t26-recorder__actions">
-            <button type="button" className="btn btn-sm" onClick={() => { void start(); }}>Reintentar micrófono</button>
-            <button type="button" className="btn btn-ghost btn-sm" onClick={() => onSkip(questionId)}>Continuar sin grabación</button>
-          </div>
-        </div>
-      )}
-      {previewUrl && <audio controls src={previewUrl} aria-label="Revisar tu respuesta oral temporal" />}
+      {!blocked && <p className="t26-section-note">Responde inmediatamente y sin tiempo de preparación. La grabación quedará pendiente de escucha y revisión; no se inventa una nota oral.</p>}
     </div>
   );
 }
@@ -582,10 +506,8 @@ function ForwardItemPanel({
   ans,
   handlers,
   audio,
-  speakingCaptured,
-  speakingSkipped,
-  onSpeakingCaptured,
-  onSpeakingSkipped,
+  speakingRecording,
+  onSpeakingRecordingChange,
 }: {
   stage: ToeflFixedStage;
   section: MockSection;
@@ -595,10 +517,8 @@ function ForwardItemPanel({
   ans: Answers;
   handlers: Handlers;
   audio?: AudioLifecycle;
-  speakingCaptured: boolean;
-  speakingSkipped: boolean;
-  onSpeakingCaptured: (questionId: string) => void;
-  onSpeakingSkipped: (questionId: string) => void;
+  speakingRecording?: IeltsSpeakingRecording;
+  onSpeakingRecordingChange: (recording: IeltsSpeakingRecording | undefined) => void;
 }) {
   const sharedListeningAudio = question.type === 'toefl-listening-single'
     && question.task !== 'choose-response'
@@ -640,14 +560,17 @@ function ForwardItemPanel({
       {question.type === 'repeat' && <RepeatView q={question} audio={audio} />}
       {question.type === 'speak' && <InterviewView q={question} audio={audio} />}
       {(question.type === 'repeat' || question.type === 'speak') && !blocked && audio?.completed && (
-        <SpeakingRecorder
-          key={question.id}
-          questionId={question.id}
-          captured={speakingCaptured}
-          skipped={speakingSkipped}
-          onCaptured={onSpeakingCaptured}
-          onSkip={onSpeakingSkipped}
-        />
+        <div className="t26-recorder" aria-labelledby={`recorder-${question.id}`}>
+          <h3 id={`recorder-${question.id}`}>Graba tu respuesta oral</h3>
+          <p>El audio permanece en esta pestaña hasta que envíes el simulacro. Al enviarlo se guarda en almacenamiento privado para corrección.</p>
+          <IELTSSpeakingRecorder
+            key={question.id}
+            questionId={question.id}
+            recording={speakingRecording}
+            maxSeconds={180}
+            onChange={onSpeakingRecordingChange}
+          />
+        </div>
       )}
       {blocked && (
         <p className="t26-audio-blocked" role="status">
@@ -714,7 +637,7 @@ function computeReadingListening(
   return { correct, total };
 }
 
-function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, buildScore, capturedSpeakingCount, skippedSpeakingCount, onRetry }: {
+function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, buildScore, capturedSpeakingCount, receipt, onRetry }: {
   mock: MockExam;
   exam: Exam;
   ans: Answers;
@@ -723,7 +646,7 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
   listeningScore?: ToeflListeningScoreResult;
   buildScore?: ToeflBuildSentenceScoreResult;
   capturedSpeakingCount: number;
-  skippedSpeakingCount: number;
+  receipt: ToeflSubmissionReceipt;
   onRetry: () => void;
 }) {
   const r = computeReadingListening(mock, 'reading', ans, wordScores, readingScore);
@@ -745,13 +668,17 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
   }
   const constructedWriting = getSkillSections(mock, 'writing').flatMap(s => s.questions).filter(q => q.type === 'write');
   const savedWriting = constructedWriting.filter((question) => (ans.write[question.id] ?? '').trim()).length;
+  const emailQuestion = constructedWriting.find(question => question.type === 'write' && question.taskNumber === 1) as WriteQuestion | undefined;
+  const discussionQuestion = constructedWriting.find(question => question.type === 'write' && question.taskNumber === 2) as WriteQuestion | undefined;
+  const emailAssessment = useWritingAssessment('toefl', mock.id, 1, emailQuestion ? ans.write[emailQuestion.id] ?? '' : '', receipt);
+  const discussionAssessment = useWritingAssessment('toefl', mock.id, 2, discussionQuestion ? ans.write[discussionQuestion.id] ?? '' : '', receipt);
 
   return (
     <main className="t26-results" style={{ '--exam-color': exam.color } as React.CSSProperties}>
       <p className="prac-intro__eyebrow">{exam.flag} {exam.name} · resultado de práctica fija</p>
       <h1>{mock.title}</h1>
       <p className="t26-results__disclosure" role="status">
-        No se calculó banda 1–6, overall ni equivalencia /120. La conversión oficial de ETS no es pública y Writing/Speaking no tienen un evaluador válido en este preview.
+        La entrega quedó guardada. No se calculó banda 1–6, overall ni equivalencia /120: la conversión oficial de ETS no es pública. Los puntajes 0–5 de Writing son estimaciones pedagógicas por tarea.
       </p>
       <div className="t26-results__grid">
         <section>
@@ -767,14 +694,19 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
         <section>
           <h2>Writing</h2>
           <p className="t26-results__raw">Build {buildScore ? `${bCorrect}/${bTotal}` : 'sin corrección'}</p>
-          <p>Email y Discussion guardados: {savedWriting}/{constructedWriting.length} · <strong>not_evaluated</strong>.</p>
+          <p>Email y Discussion guardados: {savedWriting}/{constructedWriting.length}. Los reportes por tarea aparecen debajo.</p>
         </section>
         <section>
           <h2>Speaking</h2>
-          <p className="t26-results__raw">not_evaluated</p>
-          <p>{capturedSpeakingCount} respuestas capturadas temporalmente; {skippedSpeakingCount} omitidas por fallback; {blockedSpeaking} prompts sin audio. No se inventó una nota oral.</p>
+          <p className="t26-results__raw">En revisión</p>
+          <p>{capturedSpeakingCount} respuestas privadas enviadas; {blockedSpeaking} prompts bloqueados. El profesor debe escuchar la evidencia antes de emitir una estimación.</p>
         </section>
       </div>
+      <section className="t26-results__writing" aria-labelledby="t26-writing-results-title">
+        <h2 id="t26-writing-results-title">Corrección de Writing</h2>
+        <TOEFLWritingReportPanel taskLabel="Write an Email" state={emailAssessment.state} result={emailAssessment.result} />
+        <TOEFLWritingReportPanel taskLabel="Academic Discussion" state={discussionAssessment.state} result={discussionAssessment.result} />
+      </section>
       <p className="t26-results__date">Cerrado el {new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}.</p>
       <div className="t26-results__actions">
         <button type="button" className="btn" onClick={onRetry}>Reiniciar práctica</button>
@@ -803,7 +735,7 @@ interface Handlers {
 
 // ── Main component ────────────────────────────────────────────────────────────────
 
-type Phase = 'intro' | 'exam' | 'results';
+type Phase = 'intro' | 'exam' | 'submit' | 'results';
 
 function createClientId(prefix: string) {
   const value = typeof crypto !== 'undefined' && 'randomUUID' in crypto
@@ -821,8 +753,8 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const [startedMediaIds, setStartedMediaIds] = useState<string[]>([]);
   const [completedMediaIds, setCompletedMediaIds] = useState<string[]>([]);
   const [currentPlayingMediaId, setCurrentPlayingMediaId] = useState('');
-  const [capturedSpeakingIds, setCapturedSpeakingIds] = useState<string[]>([]);
-  const [skippedSpeakingIds, setSkippedSpeakingIds] = useState<string[]>([]);
+  const [recordings, setRecordings] = useState<Record<string, IeltsSpeakingRecording>>({});
+  const [receipt, setReceipt] = useState<ToeflSubmissionReceipt | null>(null);
   const [ans, setAns] = useState<Answers>(EMPTY);
   const [wordScores, setWordScores] = useState<WordScoreMap>({});
   const [readingScore, setReadingScore] = useState<ToeflReadingScoreResult>();
@@ -839,6 +771,16 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const [listeningScoringError, setListeningScoringError] = useState(false);
   const [buildScoringError, setBuildScoringError] = useState(false);
   const storageKey = `wl:toefl:mock:${mock.id}:attempt:v1`;
+
+  useEffect(() => {
+    if ((phase !== 'exam' && phase !== 'submit') || Object.keys(recordings).length === 0) return;
+    const warnBeforeUnload = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    window.addEventListener('beforeunload', warnBeforeUnload);
+    return () => window.removeEventListener('beforeunload', warnBeforeUnload);
+  }, [phase, recordings]);
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
@@ -882,7 +824,12 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
               : Math.max(0, stages.findIndex((stage) => stage.skill === saved.activeSkill));
             const restoredStage = stages[restoredStageIndex];
             setStageIndex(restoredStageIndex);
-            setForwardItemIndex(saved.version === 4 ? Math.max(0, saved.forwardItemIndex ?? 0) : 0);
+            // Browser storage cannot safely serialize microphone Blobs. A reload
+            // during Speaking therefore restarts that block so no prior response
+            // is silently presented as captured.
+            setForwardItemIndex(restoredStage?.skill === 'speaking'
+              ? 0
+              : saved.version === 4 ? Math.max(0, saved.forwardItemIndex ?? 0) : 0);
             const restoredStarted = saved.startedMediaIds ?? [];
             setStartedMediaIds(restoredStarted);
             // If a tab closed during playback, the one-play stimulus stays consumed,
@@ -966,6 +913,28 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const blockedAudioItems = mock.sections.flatMap((section) => section.questions)
     .filter((question) => (question.type === 'toefl-listening-single' || question.type === 'repeat' || question.type === 'speak')
       && question.mediaStatus === 'script-ready-audio-blocked').length;
+  const writingQuestions = getSkillSections(mock, 'writing').flatMap(section => section.questions)
+    .filter((question): question is WriteQuestion => question.type === 'write');
+  const emailQuestion = writingQuestions.find(question => question.taskNumber === 1);
+  const discussionQuestion = writingQuestions.find(question => question.taskNumber === 2);
+  const speakingPrompts: ToeflSpeakingPromptRef[] = getSkillSections(mock, 'speaking')
+    .flatMap(section => section.questions)
+    .flatMap<ToeflSpeakingPromptRef>(question => question.type === 'repeat' ? [{
+      questionId: question.id,
+      taskType: 'repeat' as const,
+      label: `Listen and Repeat ${question.itemNumber}`,
+    }] : question.type === 'speak' ? [{
+      questionId: question.id,
+      taskType: 'interview' as const,
+      label: `Take an Interview ${question.partNumber}`,
+    }] : []);
+  const objectiveAnswers: ToeflObjectiveAnswers = {
+    word: ans.word,
+    single: ans.single,
+    multi: ans.multi,
+    listening: ans.listening,
+    build: ans.buildV2,
+  };
 
   const goSubmit = useCallback(async () => {
     if (scoringWords) return;
@@ -1111,7 +1080,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
         nextBuildScore = await response.json() as ToeflBuildSentenceScoreResult;
         setBuildScore(nextBuildScore);
       }
-      setPhase('results');
+      setPhase('submit');
     } catch {
       if (failureSkill === 'writing') setBuildScoringError(true);
       setPhase('exam');
@@ -1123,7 +1092,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   const handleRetry = useCallback(() => {
     setAns(EMPTY);
     setWordScores({}); setReadingScore(undefined); setListeningScore(undefined); setBuildScore(undefined); setAttemptId(createClientId('attempt')); setLastWordFocusId(''); setLastReadingFocusId(''); setLastBuildFocusId('');
-    setStageIndex(0); setForwardItemIndex(0); setStageDeadlineAt(null); setStartedMediaIds([]); setCompletedMediaIds([]); setCurrentPlayingMediaId(''); setCapturedSpeakingIds([]); setSkippedSpeakingIds([]);
+    setStageIndex(0); setForwardItemIndex(0); setStageDeadlineAt(null); setStartedMediaIds([]); setCompletedMediaIds([]); setCurrentPlayingMediaId(''); setRecordings({}); setReceipt(null);
     setWordScoringError(false); setReadingScoringError(false); setListeningScoringError(false); setBuildScoringError(false);
     try { window.localStorage.removeItem(storageKey); } catch { /* local-only reset */ }
     setPhase('intro');
@@ -1190,7 +1159,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     && (currentQuestion.type === 'toefl-listening-single' || currentQuestion.type === 'repeat' || currentQuestion.type === 'speak')
     && currentQuestion.mediaStatus === 'script-ready-audio-blocked');
   const currentSpeakingComplete = currentQuestion && (currentQuestion.type === 'repeat' || currentQuestion.type === 'speak')
-    ? capturedSpeakingIds.includes(currentQuestion.id) || skippedSpeakingIds.includes(currentQuestion.id)
+    ? Boolean(recordings[currentQuestion.id])
     : true;
   const forwardCanAdvance = currentForwardBlocked || (currentMediaCompleted && currentSpeakingComplete);
 
@@ -1204,10 +1173,33 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     void closeStage(false);
   };
 
-  if (phase === 'results') {
+  if (phase === 'submit') {
     return (
       <div className="prac-shell"><style>{T26_CSS}</style>
-        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={capturedSpeakingIds.length} skippedSpeakingCount={skippedSpeakingIds.length} onRetry={handleRetry} />
+        <TOEFLSubmission
+          mockId={mock.id}
+          mockTitle={mock.title}
+          attemptId={attemptId}
+          objectiveAnswers={objectiveAnswers}
+          writingEmail={emailQuestion ? ans.write[emailQuestion.id] ?? '' : ''}
+          writingDiscussion={discussionQuestion ? ans.write[discussionQuestion.id] ?? '' : ''}
+          speakingPrompts={speakingPrompts}
+          recordings={recordings}
+          onBack={() => setPhase('exam')}
+          onSuccess={(nextReceipt) => {
+            setReceipt(nextReceipt);
+            try { window.localStorage.removeItem(storageKey); } catch { /* receipt remains in memory */ }
+            setPhase('results');
+          }}
+        />
+      </div>
+    );
+  }
+
+  if (phase === 'results' && receipt) {
+    return (
+      <div className="prac-shell"><style>{T26_CSS}</style>
+        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} onRetry={handleRetry} />
       </div>
     );
   }
@@ -1233,7 +1225,11 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
               <li>Writing: Build a Sentence, Write an Email, Write for an Academic Discussion.</li>
               <li>Speaking: Listen and Repeat y Take an Interview, sin preparación.</li>
             </ul>
-            <p>WeLearn usa la forma fija de práctica publicada para garantizar 97 interacciones reproducibles. No afirma replicar el enrutamiento adaptativo de ETS. Los ítems sin medio se muestran sólo para revisión y no se califican.</p>
+            <p>
+              WeLearn usa la forma fija de práctica publicada para garantizar 97 interacciones reproducibles.
+              No afirma replicar el enrutamiento adaptativo de ETS.
+              {blockedAudioItems > 0 && ' Los ítems sin medio se muestran sólo para revisión y no se califican.'}
+            </p>
           </div>
           <button className="btn prac-intro__start" onClick={beginExam}>Empezar práctica fija</button>
           <Link href={`/examenes/${exam.slug}`} className="prac-intro__back">Volver a {exam.name}</Link>
@@ -1311,10 +1307,18 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
             ans={ans}
             handlers={handlers}
             audio={currentAudio}
-            speakingCaptured={Boolean(currentQuestion && capturedSpeakingIds.includes(currentQuestion.id))}
-            speakingSkipped={Boolean(currentQuestion && skippedSpeakingIds.includes(currentQuestion.id))}
-            onSpeakingCaptured={(questionId) => setCapturedSpeakingIds((previous) => previous.includes(questionId) ? previous : [...previous, questionId])}
-            onSpeakingSkipped={(questionId) => setSkippedSpeakingIds((previous) => previous.includes(questionId) ? previous : [...previous, questionId])}
+            speakingRecording={currentQuestion ? recordings[currentQuestion.id] : undefined}
+            onSpeakingRecordingChange={(recording) => {
+              if (!currentQuestion) return;
+              setRecordings(previous => {
+                if (!recording) {
+                  const next = { ...previous };
+                  delete next[currentQuestion.id];
+                  return next;
+                }
+                return { ...previous, [currentQuestion.id]: recording };
+              });
+            }}
           />
         )}
         <div className="ielts-exam-footer">
@@ -1400,6 +1404,19 @@ const T26_CSS = `
   .t26-results__grid h2 { margin:0 0 .45rem; font-size:1.05rem; }
   .t26-results__grid p { margin:.35rem 0; line-height:1.5; }
   .t26-results__raw { color:var(--exam-color,#0a56c4); font-size:1.35rem; font-weight:800; }
+  .t26-results__writing { margin:1.5rem 0; }
+  .t26-results__writing > h2 { margin:0 0 .75rem; }
+  .t26-writing-report { max-width:none; background:var(--surface,#fff); }
+  .t26-writing-report h3 { margin:0; font-size:1.05rem; }
+  .t26-writing-report__head { display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; }
+  .t26-writing-report__head strong { color:var(--exam-color,#0a56c4); font-size:1.7rem; }
+  .t26-writing-report__notice { padding:.7rem; border-left:3px solid #b7791f; background:rgba(183,121,31,.08); font-size:.84rem; }
+  .t26-writing-report__criteria { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:.65rem; margin:1rem 0; }
+  .t26-writing-report__criteria > div { padding:.7rem; border:1px solid var(--line-soft,#d9dee6); border-radius:8px; }
+  .t26-writing-report details { margin-top:.75rem; }
+  .t26-writing-report summary { cursor:pointer; font-weight:750; }
+  .t26-writing-report li { margin:.5rem 0; line-height:1.5; }
+  .t26-writing-report__rewrite { white-space:pre-wrap; }
   .t26-results__date { color:var(--muted,#687386); }
   .t26-results__actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1rem; }
   @media (max-width:640px) {

@@ -37,6 +37,8 @@ export interface ExamSubmission {
   writing_task1_delegated_assessment?: FullAssessment | null
   writing_task2_delegated_assessment?: FullAssessment | null
   speaking_assessment?: IeltsSpeakingAssessment | null
+  toefl_speaking_repeat_assessment?: { score: number; evidenceNotes: string; reviewedAt?: string; reviewedBy?: string } | null
+  toefl_speaking_interview_assessment?: { score: number; evidenceNotes: string; reviewedAt?: string; reviewedBy?: string } | null
   reviewed_at?: string | null
   reviewed_by?: string | null
 }
@@ -64,6 +66,7 @@ export interface DashboardData {
   recentSubmissions: ExamSubmission[]
   topUsers: { user_email: string; count: number }[]
   ieltsReviews: ExamSubmission[]
+  toeflReviews: ExamSubmission[]
   students: StudentRow[]
   /** Leads de TODOS los simulacros (ICFES, SAT, IELTS, TOPIK...), no solo ICFES. */
   leads: LeadRow[]
@@ -100,25 +103,37 @@ function leadExamLabel(examSlug: string | null, source: string | null): string |
 export default async function JoseDashboardServer() {
   const supabase = await createClient()
 
-  const { data: submissions } = await supabase
-    .from('exam_submissions')
-    .select('*')
-    .eq('submission_status', 'submitted')
-    .order('created_at', { ascending: false })
-    .limit(100)
+  // IELTS and TOEFL own independent queues so general exam traffic cannot push
+  // valid attempts out of the admin panel. Audio links are generated lazily only
+  // for the selected attempt.
+  const [
+    { data: submissions },
+    { data: ieltsSubmissionRows },
+    { data: toeflSubmissionRows },
+  ] = await Promise.all([
+    supabase
+      .from('exam_submissions')
+      .select('*')
+      .eq('submission_status', 'submitted')
+      .order('created_at', { ascending: false })
+      .limit(100),
+    supabase
+      .from('exam_submissions')
+      .select('*')
+      .eq('exam_slug', 'ielts')
+      .eq('submission_status', 'submitted')
+      .order('created_at', { ascending: false })
+      .limit(500),
+    supabase
+      .from('exam_submissions')
+      .select('id, user_id, user_email, user_name, exam_slug, exam_name, mock_id, mock_title, total_score, total_max, total_label, created_at, writing_task1_answer, writing_task2_answer, speaking_audio_paths, writing_task1_assessment, writing_task2_assessment, toefl_speaking_repeat_assessment, toefl_speaking_interview_assessment, reviewed_at, reviewed_by, submission_status')
+      .eq('exam_slug', 'toefl')
+      .eq('submission_status', 'submitted')
+      .order('created_at', { ascending: false })
+      .limit(500),
+  ])
 
   const rows = (submissions ?? []) as ExamSubmission[]
-
-  // IELTS owns an independent queue so general exam traffic cannot push valid
-  // attempts out of the admin panel. Audio links are generated lazily only for
-  // the selected attempt.
-  const { data: ieltsSubmissionRows } = await supabase
-    .from('exam_submissions')
-    .select('*')
-    .eq('exam_slug', 'ielts')
-    .eq('submission_status', 'submitted')
-    .order('created_at', { ascending: false })
-    .limit(500)
 
   const now = new Date()
   const startOfThisWeek = new Date(now)
@@ -163,6 +178,9 @@ export default async function JoseDashboardServer() {
   // the Pending/Reviewed filter, so an evaluated student never disappears.
   const ieltsReviews = ((ieltsSubmissionRows ?? []) as ExamSubmission[]).filter(r =>
     Boolean(r.writing_task1_answer || r.writing_task2_answer || r.speaking_answers || r.speaking_audio_paths)
+  )
+  const toeflReviews = ((toeflSubmissionRows ?? []) as ExamSubmission[]).filter(r =>
+    Boolean(r.writing_task1_answer || r.writing_task2_answer || r.speaking_audio_paths)
   )
 
   // ── Students list ────────────────────────────────────────────────────────────
@@ -229,6 +247,7 @@ export default async function JoseDashboardServer() {
     recentSubmissions: rows.slice(0, 10),
     topUsers,
     ieltsReviews,
+    toeflReviews,
     students,
     leads,
   }

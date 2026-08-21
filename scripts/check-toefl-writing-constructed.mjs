@@ -32,8 +32,9 @@ assert.match(discussionPage, /TimedWritingTask/, 'Discussion route must expose t
 assert.ok(!mock.includes('80–120'), 'Email must not invent an official 80–120 word target.');
 assert.match(mock, /timeLimitSeconds/, 'Set 1 data must retain task deadlines.');
 assert.doesNotMatch(client, /SelfAssessModal|speakBands|wBand/, 'Constructed Writing must not become a self-awarded band.');
-assert.match(client, /No se calculó banda 1–6/, 'The final report must disclose that no Writing band was calculated.');
-assert.match(client, /not_evaluated/, 'Constructed Writing must report its honest outcome.');
+assert.match(client, /No se calculó banda 1–6/, 'The final report must disclose that no official section band was calculated.');
+assert.match(client, /useWritingAssessment\('toefl'/, 'Constructed Writing enters the verified correction pipeline.');
+assert.match(client, /estimaciones pedagógicas por tarea/, 'Task feedback stays distinct from an official ETS score.');
 
 for (let setNumber = 2; setNumber <= 20; setNumber += 1) {
   const source = await read(`src/data/mocks/toefl-set-${setNumber}.ts`);
@@ -55,4 +56,4 @@ for (let setNumber = 2; setNumber <= 20; setNumber += 1) {
   assert.match(setDiscussion, /minimumWordsPolicy:\s*'recommended-100'/);
 }
 
-console.log('✓ TOEFL 2026 Writing T17+: all 20 sets use 7/10-minute references, honest word policies and no invented Writing band.');
+console.log('✓ TOEFL 2026 Writing: all 20 sets use honest clocks/word policies and task-only pedagogical correction.');

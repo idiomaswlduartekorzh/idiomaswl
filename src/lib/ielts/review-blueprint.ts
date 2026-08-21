@@ -1,9 +1,8 @@
 export type IeltsWritingTaskNumber = 1 | 2;
 
-export interface IeltsSubmissionReceipt {
-  submissionId: string;
-  completionToken: string;
-}
+import type { ExamSubmissionReceipt } from '@/lib/exam-review/submission-receipt';
+
+export type IeltsSubmissionReceipt = ExamSubmissionReceipt;
 
 export interface IeltsWritingTaskBlueprint {
   answerColumn: 'writing_task1_answer' | 'writing_task2_answer';

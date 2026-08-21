@@ -3,10 +3,12 @@ import { readFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
-const [client, session, composer] = await Promise.all([
+const [client, session, composer, recorder, submission] = await Promise.all([
   read('src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx'),
   read('src/lib/toefl/fixed-session.ts'),
   read('src/data/mocks/toefl-fixed-form.ts'),
+  read('src/components/exam-runner/IELTSSpeakingRecorder.tsx'),
+  read('src/components/exam-runner/TOEFLSubmission.tsx'),
 ]);
 
 assert.doesNotMatch(client, /<SkillTabs\b/, 'the fixed runner has no free skill tabs');
@@ -15,8 +17,10 @@ assert.doesNotMatch(client, /Notas de preparación|Apunta ideas/, 'Interview has
 assert.match(client, /version:\s*4/, 'the irreversible stage state is persisted');
 assert.match(client, /startedMediaIds/, 'one-play media starts are persisted');
 assert.match(client, /completedMediaIds/, 'completed media is persisted');
-assert.match(client, /new MediaRecorder\(stream\)/, 'Speaking captures a real local microphone response');
-assert.match(client, /No se sube, no se guarda al recargar y no recibe una nota/, 'Speaking capture privacy and evaluation limits are explicit');
+assert.match(client, /<IELTSSpeakingRecorder/, 'Speaking uses the hardened microphone recorder');
+assert.match(recorder, /new MediaRecorder\(stream/, 'Speaking captures a real local microphone response');
+assert.match(submission, /toefl-speaking-audio|TOEFL_SPEAKING_BUCKET/, 'Speaking responses enter private storage through the submission flow');
+assert.match(client, /almacenamiento privado para corrección/, 'Speaking capture privacy and review destination are explicit');
 assert.match(client, /Cerrar .*no podrás volver|no podrás volver a este bloque/, 'module closure is explicit');
 assert.match(session, /'reading-1'[\s\S]*'reading-2'[\s\S]*'listening-1'[\s\S]*'listening-2'[\s\S]*'writing-build'[\s\S]*'writing-email'[\s\S]*'writing-discussion'[\s\S]*'speaking'/, 'all eight stages are ordered');
 assert.match(session, /not-public-per-item/, 'unpublished per-item clocks stay undisclosed');

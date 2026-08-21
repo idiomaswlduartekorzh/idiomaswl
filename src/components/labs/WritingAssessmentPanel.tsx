@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * Panel de corrección de Writing para las páginas de examen REALES
+ * Panel de corrección de Writing para los simulacros de WeLearn
  * (IELTS/TOEFL/Cambridge). Llama a /api/labs/exam-writing-assess con el
  * ensayo que ya escribió el estudiante — la consigna la resuelve el
  * servidor, este componente no la conoce.

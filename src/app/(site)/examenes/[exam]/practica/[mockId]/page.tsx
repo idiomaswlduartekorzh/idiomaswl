@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   if (!exam || !mock) return {};
   return {
     title: `${mock.title} — ${exam.name}`,
-    description: `Simulacro completo de ${exam.name}: ${mock.subtitle ?? mock.title}. Practica con preguntas reales y obtén feedback inmediato.`,
+    description: `Simulacro de ${exam.name}: ${mock.subtitle ?? mock.title}. Practica con contenido original alineado al formato y recibe feedback pedagógico.`,
     robots: { index: false, follow: false }, // practice sessions are not indexable
   };
 }
@@ -31,8 +31,7 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
 
   if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={mock} />;
   if (slug === 'toefl') {
-    // Mocks in the current official blueprint use the 2026 client; sets 1–4 (legacy
-    // pre-2026 format) keep the old client until migrated.
+    // All twenty public TOEFL sets use the audited fixed-form 2026 runner.
     return mock.format === 'toefl-2026'
       ? <Toefl2026PracticeClient exam={exam} mock={mock} />
       : <TOEFLPracticeClient exam={exam} mock={mock} />;

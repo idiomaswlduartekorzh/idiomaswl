@@ -9,7 +9,7 @@
 
 import { useEffect, useState } from 'react';
 import type { FullAssessment } from '../types';
-import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
+import type { ExamSubmissionReceipt } from '@/lib/exam-review/submission-receipt';
 
 export type AssessmentState = 'loading' | 'success' | 'saturated' | 'unavailable';
 
@@ -25,7 +25,7 @@ export function useWritingAssessment(
   mockId:     string,
   taskNumber: 1 | 2 | 3 | 4,
   essay:      string,
-  receipt?:   IeltsSubmissionReceipt | null,
+  receipt?:   ExamSubmissionReceipt | null,
 ): UseWritingAssessmentResult {
   const [state, setState] = useState<AssessmentState>(() => (essay.trim() ? 'loading' : 'unavailable'));
   const [result, setResult] = useState<FullAssessment | null>(null);

@@ -12,7 +12,14 @@ import {
   persistIeltsWritingAssessment,
   type AuthorizedWritingAssessment,
 } from '@/lib/ielts/writing-assessment.server';
-import type { IeltsSubmissionReceipt, IeltsWritingTaskNumber } from '@/lib/ielts/review-blueprint';
+import type { IeltsWritingTaskNumber } from '@/lib/ielts/review-blueprint';
+import type { ExamSubmissionReceipt } from '@/lib/exam-review/submission-receipt';
+import {
+  authorizeToeflWritingAssessment,
+  persistToeflWritingAssessment,
+  type AuthorizedToeflWritingAssessment,
+} from '@/lib/toefl/writing-assessment.server';
+import type { ToeflWritingTaskNumber } from '@/lib/toefl/review-blueprint';
 
 type Engine = 'gemini' | 'groq' | 'nvidia' | 'anthropic';
 
@@ -73,13 +80,15 @@ import { celpeBrasWritingRubric } from '@/lib/labs/rubrics/celpe-bras-writing';
  * /api/labs/writing-assess (el prototipo, donde el cliente manda la consigna
  * libremente), aquí el cliente solo manda examSlug + mockId + taskNumber +
  * su ensayo. La consigna real (y la imagen del gráfico si aplica) la resuelve
- * el servidor desde los mocks oficiales — el estudiante no puede alterarla.
+ * el servidor desde los bancos versionados de WeLearn — el estudiante no puede
+ * alterarla. Una consigna puede estar alineada a una familia oficial sin ser un
+ * ítem oficial ni estar afiliada a la entidad examinadora.
  *
  * Contrato uniforme para todas las familias: taskNumber es 1..4 desde el
  * cliente (la mayoría usa solo 1|2; CELPE-Bras usa las 4 — sus 4 tareas de
  * Writing son reales, ver exam-bridge/celpe-bras.ts). Cada adaptador lo
  * traduce a su propio task id semántico (IELTS: task1-academic/task2 ·
- * TOEFL: integrated/academic-discussion · Cambridge: essay/part2) y aporta
+ * TOEFL: write-email/academic-discussion · Cambridge: essay/part2) y aporta
  * su propia rúbrica — nunca se comparten. Si un adaptador no tiene esa
  * tarea, su getAssignment() devuelve null ANTES de que se llame
  * taskIdFor() — no hace falta validar cuántas tareas soporta cada uno acá.
@@ -109,9 +118,9 @@ const ADAPTERS: Record<string, ExamAdapter> = {
   },
   toefl: {
     isFreeMock: isFreeToeflMock,
-    getAssignment: (mockId, n) => getToeflWritingAssignment(mockId, n === 1 ? 'integrated' : 'academic-discussion'),
+    getAssignment: (mockId, n) => getToeflWritingAssignment(mockId, n === 1 ? 'write-email' : 'academic-discussion'),
     rubric: toeflWritingRubric,
-    taskIdFor: (n) => (n === 1 ? 'integrated' : 'academic-discussion'),
+    taskIdFor: (n) => (n === 1 ? 'write-email' : 'academic-discussion'),
   },
   'cambridge-b2': {
     isFreeMock: isFreeCambridgeMock,
@@ -177,7 +186,7 @@ export async function POST(req: Request) {
   const receipt = receiptCandidate && typeof receiptCandidate === 'object' && !Array.isArray(receiptCandidate)
     && typeof (receiptCandidate as Record<string, unknown>).submissionId === 'string'
     && typeof (receiptCandidate as Record<string, unknown>).completionToken === 'string'
-      ? receiptCandidate as IeltsSubmissionReceipt
+      ? receiptCandidate as ExamSubmissionReceipt
       : null;
 
   if (receiptCandidate !== undefined && !receipt) {
@@ -222,43 +231,46 @@ export async function POST(req: Request) {
   }
 
   let persistenceContext: AuthorizedWritingAssessment | null = null;
+  let toeflPersistenceContext: AuthorizedToeflWritingAssessment | null = null;
   if (receipt) {
-    if (examSlug !== 'ielts' || (taskNumber !== 1 && taskNumber !== 2)) {
+    if ((examSlug !== 'ielts' && examSlug !== 'toefl') || (taskNumber !== 1 && taskNumber !== 2)) {
       return NextResponse.json(
-        { code: 'invalid_input', message: 'Este comprobante solo se puede usar con una tarea IELTS compatible.' },
+        { code: 'invalid_input', message: 'Este comprobante no corresponde a una tarea compatible.' },
         { status: 400 },
       );
     }
-    const authorization = await authorizeIeltsWritingAssessment({
-      mockId,
-      taskNumber: taskNumber as IeltsWritingTaskNumber,
-      essay,
-      receipt,
-    });
+    const authorization = examSlug === 'ielts'
+      ? await authorizeIeltsWritingAssessment({ mockId, taskNumber: taskNumber as IeltsWritingTaskNumber, essay, receipt })
+      : await authorizeToeflWritingAssessment({ mockId, taskNumber: taskNumber as ToeflWritingTaskNumber, essay, receipt });
     if (!authorization.ok) {
       return NextResponse.json(
         { code: 'invalid_input', message: authorization.message },
         { status: authorization.status },
       );
     }
-    persistenceContext = authorization.context;
-    if (persistenceContext.cachedAssessment) {
-      const healed = await persistIeltsWritingAssessment(persistenceContext, persistenceContext.cachedAssessment);
+    if (examSlug === 'ielts') persistenceContext = authorization.context as AuthorizedWritingAssessment;
+    else toeflPersistenceContext = authorization.context as AuthorizedToeflWritingAssessment;
+    const cachedAssessment = persistenceContext?.cachedAssessment ?? toeflPersistenceContext?.cachedAssessment;
+    if (cachedAssessment) {
+      const healed = persistenceContext
+        ? await persistIeltsWritingAssessment(persistenceContext, cachedAssessment)
+        : await persistToeflWritingAssessment(toeflPersistenceContext!, cachedAssessment);
       if (!healed.ok) {
         return NextResponse.json(
           { code: 'provider_error', message: healed.message },
           { status: 503 },
         );
       }
-      return NextResponse.json(persistenceContext.cachedAssessment);
+      return NextResponse.json(cachedAssessment);
     }
   }
 
   // A classroom can put many students behind one public IP. Verified IELTS
   // submissions therefore receive an isolated quota per UUID; anonymous lab
   // traffic keeps the existing per-IP protection.
-  const rateLimitKey = persistenceContext
-    ? `ielts-submission:${persistenceContext.submission.id}`
+  const verifiedSubmissionId = persistenceContext?.submission.id ?? toeflPersistenceContext?.submission.id;
+  const rateLimitKey = verifiedSubmissionId
+    ? `${examSlug}-submission:${verifiedSubmissionId}`
     : ip;
   if (!checkRateLimit(rateLimitKey, WRITING_RULE)) {
     return NextResponse.json(
@@ -309,7 +321,17 @@ export async function POST(req: Request) {
     return NextResponse.json(result, { status });
   }
 
-  const completedAssessment: FullAssessment = { ...result, engineUsed };
+  const normalizeScore = (value: number) => {
+    const { min, max, step } = adapter.rubric.scoreScale;
+    const bounded = Math.min(max, Math.max(min, value));
+    return Math.round((bounded - min) / step) * step + min;
+  };
+  const completedAssessment: FullAssessment = {
+    ...result,
+    overallBand: normalizeScore(result.overallBand),
+    criteria: result.criteria.map(criterion => ({ ...criterion, band: normalizeScore(criterion.band) })),
+    engineUsed,
+  };
   if (persistenceContext) {
     const persisted = await persistIeltsWritingAssessment(persistenceContext, completedAssessment);
     if (!persisted.ok) {
@@ -317,6 +339,11 @@ export async function POST(req: Request) {
         { code: 'provider_error', message: persisted.message },
         { status: 503 },
       );
+    }
+  } else if (toeflPersistenceContext) {
+    const persisted = await persistToeflWritingAssessment(toeflPersistenceContext, completedAssessment);
+    if (!persisted.ok) {
+      return NextResponse.json({ code: 'provider_error', message: persisted.message }, { status: 503 });
     }
   }
 

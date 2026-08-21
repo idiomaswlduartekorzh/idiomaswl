@@ -17,6 +17,7 @@ import { motion } from 'framer-motion'
 import type { DashboardData, LeadRow } from './JoseDashboardServer'
 import StudentList from './StudentList'
 import IELTSReviewPanel from './IELTSReviewPanel'
+import TOEFLReviewPanel from './TOEFLReviewPanel'
 
 // ─── Palette ─────────────────────────────────────────────────────────────────
 const A  = '#c87941'   // accent orange
@@ -507,6 +508,9 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
           {/* IELTS review queue + reviewed history */}
           {data.ieltsReviews.length > 0 && (
             <IELTSReviewPanel items={data.ieltsReviews} />
+          )}
+          {data.toeflReviews.length > 0 && (
+            <TOEFLReviewPanel items={data.toeflReviews} />
           )}
 
           {/* Row 3: Recent submissions + Top users */}
