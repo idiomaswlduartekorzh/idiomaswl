@@ -51,8 +51,8 @@ import type { SatItemMeta } from '../module-types'
  *   30 %). Tampoco es la más corta en más de dos, para que no se acierte por el otro lado.
  * - Puerta 3 · la clave no es la que más repite palabras del texto en ninguno, ni la que
  *   menos en ninguno (0 % y 0 %, máximo 40 % por cada cara). Los solapes por ítem, en orden
- *   A-D: q09 7/6/5/4, q10 3/7/4/5, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
- *   q15 7/2/6/6. La clave queda siempre en el medio, nunca en un extremo.
+ *   A-D: q09 7/6/5/4, q10 5/7/6/6, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
+ *   q15 11/9/10/7. La clave queda siempre en el medio, nunca en un extremo.
  *
  * DOS ÍTEMS QUE MERECEN NOTA, porque es donde el módulo 1 se cayó tres veces:
  *
@@ -110,6 +110,56 @@ import type { SatItemMeta } from '../module-types'
  *   los de las líneas. La opción A dice ahora «eighteen of its lines».
  * - q12 escribía `plough`, grafía británica, en un examen que evalúa norma estadounidense
  *   y que es americano en todo lo demás: `plow`.
+ *
+ * TERCERA PASADA (21 ago 2026). El panel volvió a medir el bloque y devolvió dos ítems por
+ * encima del umbral SIN el texto: q10 siete de diez —bajó de ocho, pero no lo bastante— y
+ * q15 siete de diez, que antes no filtraba y lo empeoró la corrección anterior. Se
+ * rehicieron con R13 (blueprint §4 bis), que corrige a R12: igualar la forma no cierra la
+ * fuga, porque lo que filtra es el sentido.
+ *
+ * - q10 · la fuga era literaria. El molde único de la segunda pasada hizo lo que se le
+ *   pidió —las cuatro empiezan por «Irina came to», misma coda literal, cuatro caracteres
+ *   de diferencia— y el ítem siguió filtrando, porque entre cuatro afirmaciones sobre lo
+ *   que le pasa a un personaje se adivina la que suena a idea central de un cuento bien
+ *   hecho, y los cuentos bien hechos son predecibles. La clave daba una asimetría —el
+ *   pueblo la conocía menos de lo que ella lo conocía— y las otras tres eran versiones más
+ *   planas de esta misma historia; una de ellas, que le gustaba más el turno de noche, no
+ *   es idea central de ningún relato, así que estaba muerta y además señalaba. Ahora cada
+ *   distractor es la idea central impecable de un relato distinto: el precio de callar lo
+ *   que se oye (A), la vida oída que acaba prefiriéndose a la vivida (B), el pueblo que
+ *   devuelve en atenciones lo que recibe (C). Las cuatro llevan la misma asimetría
+ *   comparativa y el mismo grado de generalidad, y solo el texto dice cuál de los cuatro
+ *   cuentos es este: A muere en «stopped thinking of it as keeping a secret», B en «She
+ *   had not chosen the shift», C en «did not know her at all by daylight».
+ *
+ * - q15 · la fuga era la opción sin compromisos. De las cuatro reconstrucciones, tres
+ *   cargaban un dato que sin el pasaje no hay cómo comprobar —dieciocho líneas cortadas,
+ *   once ejemplares con la hoja metida, un solo juego de tipos con la e— y la clave era la
+ *   única limpia: una afirmación de orden y nada más. La opción que no se compromete con
+ *   ningún detalle raro es la apuesta segura del que no ha leído; es la misma «opción más
+ *   general» que R13 describe en estructura y función. Ahora las cuatro nombran las dos
+ *   versiones y los dos recuentos, y se reparten en un 2x2: A y C son la misma frase con el
+ *   orden invertido —recomponer el molde para acortar o para alargar— y B y D son las dos
+ *   operaciones aparte, la segunda prensa y la hoja pegada. Cada valor de cada factor sale
+ *   dos veces, así que contar no delata nada. El orden lo decide la e fechada; el
+ *   mecanismo, la prensa única y el pliego sin cortar. A y C solo se distinguen por el
+ *   primero, B y C solo por el segundo.
+ *
+ * - En el mismo ítem se invirtió el reparto de ejemplares: la escena larga está ahora en
+ *   veintinueve copias y la corta en once, antes al revés. Con once largas, la versión que
+ *   salió primero era también la mayoritaria, y «el estado que llevan más ejemplares es el
+ *   que se imprimió antes» es una corazonada de bibliófilo que se tiene sin leer una línea
+ *   y que apuntaba justo a la clave. Invertido el reparto, esa corazonada y la de que en
+ *   una imprenta los textos se acortan llevan las dos a A. El razonamiento físico no
+ *   cambia: la e sigue fechando el orden y las dieciocho líneas siguen cabiendo en el
+ *   pliego recompuesto.
+ *
+ * - Lo que NO se tocó: las claves del plan (q10 D, q15 C), los dos enunciados, los tres
+ *   datos de q15 —la e fechada, la prensa única, el pliego entero— y el texto de q10
+ *   entero. Las puertas de conjunto siguen dentro: q10 longitudes 145/149/146/147 con la
+ *   clave tercera, solapes 5/7/6/6 con la clave entre el mayor y el menor; q15 longitudes
+ *   146/145/144/146 y solapes 11/9/10/7, misma posición. Los cinco ítems restantes del
+ *   bloque no se tocaron.
  */
 
 export const items: MCQQuestion[] = [
@@ -136,10 +186,10 @@ export const items: MCQQuestion[] = [
       'For nine years Irina worked the night board at the telephone exchange. She had not chosen the shift; it was the one the exchange had open the year her mother died, and she stayed on it. She learned which houses called the doctor and at what hour, whose son telephoned from the capital and whose did not, which marriages were conducted entirely in the two minutes before midnight. In the market she was a woman who counted her change and said little. The same voices that had wept into her ear at three in the morning asked her at noon whether the plums were ripe. She never repeated any of it, and after a time she stopped thinking of it as keeping a secret. It was simply the shape of her days: the town talked to her all night and did not know her at all by daylight.',
     text: 'Which choice best states the main idea of the text?',
     options: [
-      "Irina came to be handed more of the town's bad nights than she could hold, and in time she took it for the ordinary shape of a life.",
-      'Irina came to like the night board better than any day shift the exchange had, and in time she took it for the ordinary shape of a life.',
-      'Irina came to be repaid at noon in more small kindnesses than she looked for, and in time she took it for the ordinary shape of a life.',
-      'Irina came to know the town a great deal more closely than it ever knew her, and in time she took it for the ordinary shape of a life.',
+      'Irina came to be bound to the town by a silence that cost more than the night work did, and in time she took it for the ordinary shape of a life.',
+      'Irina came to prefer a town of voices in the dark to the one she met in the market at noon, and in time she took it for the ordinary shape of a life.',
+      'Irina came to be repaid at noon in more kindnesses than she had ever asked the town for, and in time she took it for the ordinary shape of a life.',
+      'Irina came to know the town a great deal more closely than the town itself ever knew her, and in time she took it for the ordinary shape of a life.',
     ],
     answer: 3,
   },
@@ -208,13 +258,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Forty copies survive of the 1612 printing of The Ferryman's Daughter. In eleven of them the third act carries a scene of thirty lines; in the other twenty-nine the same scene runs to twelve. Printers of the period altered type while the sheets were still going through the press, so copies of one book can differ, and the shop that printed it worked a single press. Its type had one flaw that can be dated: a lowercase e with a crooked crossbar, which entered the shop's stock in March 1612 and marks every sheet it printed afterward. The crooked e runs all through the long version of the scene and appears nowhere in the short one. In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
+      "Forty copies survive of the 1612 printing of The Ferryman's Daughter. In twenty-nine of them the third act carries a scene of thirty lines; in the other eleven the same scene runs to twelve. Printers of the period altered type while the sheets were still going through the press, so copies of one book can differ, and the shop that printed it worked a single press. Its type had one flaw that can be dated: a lowercase e with a crooked crossbar, which entered the shop's stock in March 1612 and marks every sheet it printed afterward. The crooked e runs all through the long version of the scene and appears nowhere in the short one. In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
     text: 'Which choice most logically completes the text?',
     options: [
-      'the thirty-line scene was the version the shop set up first, and that eighteen of its lines were cut away partway through the run.',
-      'the two versions were set up at the same time and printed side by side, and that only one of the two settings drew on the crooked e.',
-      'the twelve-line scene came off the press first, and that the thirty-line version was set into the type after the run had begun.',
-      'the thirty-line scene was printed after the rest of the book was finished, and that it was slipped into eleven copies already made up.',
+      'the thirty-line scene was set up first and printed for twenty-nine copies, and that the shop then cut it back to twelve lines for the last eleven.',
+      'the twelve-line scene was set up first and run for eleven copies, and that a second press took the thirty-line version for the other twenty-nine.',
+      'the twelve-line scene was set up first and printed for eleven copies, and that the shop then reset it at thirty lines for the other twenty-nine.',
+      'the thirty-line scene was set up after the whole run was over, and that its page was pasted over the twelve-line one in twenty-nine of the copies.',
     ],
     answer: 2,
   },
@@ -248,13 +298,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Convierte los nueve años en una acumulación que la desborda, y la penúltima frase dice lo contrario: «after a time she stopped thinking of it as keeping a secret». Lo que le confían deja de pesarle en vez de amontonársele por encima de lo que puede sostener. Es la lectura literaria de manual —quien guarda lo que oye acaba doblado por ello—, y la marca quien decide por lo que suele significar una historia así en vez de por lo que esta dice.',
+        'Convierte la discreción en un precio que se paga, y la penúltima frase lo desmonta: «after a time she stopped thinking of it as keeping a secret». Si el silencio dejó de existir como silencio, no puede estar costándole más que las noches de trabajo. Como idea central es impecable —la de otro cuento, el de lo que cuesta callar lo que se oye—, y aquí la marca quien decide por lo que suele significar una historia de secretos ajenos en vez de por lo que esta dice.',
       B:
-        'Le atribuye una preferencia que el texto le quita en su segunda frase: «She had not chosen the shift; it was the one the exchange had open the year her mother died». No hay comparación con los turnos de día porque nunca hubo dos turnos entre los que escoger: se quedó en el único que había. Es el error de quien supone que quien trabaja de noche eligió la noche.',
+        'Le atribuye una preferencia que el texto le quita en su segunda frase: «She had not chosen the shift; it was the one the exchange had open the year her mother died». Si nunca hubo dos turnos entre los que escoger, tampoco hay un pueblo elegido frente a otro: se quedó en el único que había. Sería la idea central de otro cuento —el de quien acaba encontrando más suya la vida oída que la vivida— y aquí la elige quien supone que quien trabaja de noche eligió la noche.',
       C:
-        'Inventa una reciprocidad que la escena del mediodía desmiente. A las tres de la mañana le lloran al oído y a mediodía le preguntan si están maduras las ciruelas; en el mercado es «a woman who counted her change and said little», y «the town talked to her all night and did not know her at all by daylight». No hay devolución, ni pequeña ni grande. Lo elige quien da por hecho que en un pueblo pequeño esas deudas se pagan.',
+        'Inventa una devolución que la escena del mediodía desmiente. A las tres de la mañana le lloran al oído y a mediodía le preguntan si están maduras las ciruelas; en el mercado es «a woman who counted her change and said little», y el cierre dice que el pueblo «did not know her at all by daylight». Como idea central vale tanto como la clave —el pueblo pequeño que paga sus deudas en atenciones—, solo que es la de otro cuento: aquí la elige quien da por hecho que esas deudas se pagan.',
       D:
-        'Correcta: es lo que enuncia el cierre del texto. «the town talked to her all night and did not know her at all by daylight» da la desigualdad —ella llega a conocer el pueblo de cerca y el pueblo no la conoce a ella—, y «It was simply the shape of her days», junto con «after a time she stopped thinking of it as keeping a secret», es lo que la vuelve ordinaria en vez de dramática.',
+        'Correcta: es lo que enuncia el cierre del texto. «the town talked to her all night and did not know her at all by daylight» da la desigualdad —ella llega a conocer el pueblo de cerca y el pueblo no la conoce a ella—, y «It was simply the shape of her days», junto con «after a time she stopped thinking of it as keeping a secret», es lo que la vuelve ordinaria en vez de dramática. Lo que la separa de las otras tres no es ser la lectura más fina: las tres son ideas centrales igual de defendibles de tres cuentos que este no es.',
     },
     fuenteHecho:
       'Ficción original. La centralita manual atendida de noche por una operadora es tecnología documentada de la primera mitad del siglo XX; el pueblo, Irina y todo lo demás están inventados.',
@@ -342,15 +392,15 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Invierte el orden que fija la letra estropeada. La e torcida entra en la imprenta en marzo de 1612 y marca todo lo que sale de ella a partir de entonces; está en la versión de treinta líneas y no aparece en ninguna de doce, de modo que la larga se compuso después, no primero. Es el error de quien da por hecho que un texto impreso se acorta y nunca se alarga, que es lo corriente en una imprenta y no lo que pasó aquí.',
+        'Invierte el orden que fija la letra estropeada. La e torcida entra en la imprenta en marzo de 1612 y marca todo lo que sale de ella a partir de entonces; corre por toda la versión de treinta líneas y no aparece en ninguna de doce, de modo que la larga se compuso después y no primero. Es además la reconstrucción a la que llevan las dos corazonadas razonables que el ítem deja en pie: que en una imprenta un texto se recorta para que quepa, y que el estado que llevan más ejemplares —aquí los veintinueve largos— es el que salió antes. Ninguna de las dos manda sobre la letra fechada, y esta opción es exactamente la que sale si se les hace caso.',
       B:
-        'Necesita dos composiciones tirando a la vez, y el texto lo impide: «the shop that printed it worked a single press». Con una sola prensa no hay dos versiones simultáneas, y además la e torcida marca «every sheet it printed» desde marzo, así que no puede faltar en la mitad de una tirada posterior a esa fecha. Es la explicación que más suena a saber de imprentas, y por eso la marca quien elige la lectura más experta de las cuatro.',
+        'Necesita dos composiciones tirando a la vez, y el texto lo impide: «the shop that printed it worked a single press». La e torcida lo remata, porque marca «every sheet it printed» desde marzo y dos tiradas simultáneas la llevarían las dos o ninguna, no una sí y otra no. El orden que propone es el correcto —las once cortas primero—, así que la opción se sostiene hasta la coma y falla solo en el mecanismo: es la única de las cuatro que muere por el número de prensas.',
       C:
-        'Correcta: es lo único que cuadra con las tres cosas que el texto da. La e torcida entra en marzo de 1612 y marca cuanto se imprime después; está en toda la versión de treinta líneas y en ninguna de doce, luego las veintinueve cortas salieron antes; y como esas páginas salen de una sola hoja sin nada cortado ni pegado en los cuarenta ejemplares, la versión larga tuvo que componerse de nuevo con la tirada ya en marcha, absorbiendo dieciocho líneas de más en el mismo pliego.',
+        'Correcta: es lo único que cuadra con los tres datos a la vez. La e torcida entra en marzo de 1612 y marca cuanto se imprime después; está en toda la versión de treinta líneas y en ninguna de doce, luego las once cortas salieron primero y la larga se compuso con la tirada ya en marcha. Y como en los cuarenta ejemplares esas páginas salen de una sola hoja «with none cut out and none pasted in», las dieciocho líneas de más tuvieron que caber recomponiendo el mismo pliego, que es lo que dice «reset it at thirty lines». Se distingue de A solo por el orden, que fija la letra, y de B solo por el mecanismo, que fija la prensa única.',
       D:
-        'Hace de la escena larga una hoja añadida más tarde, y la última línea lo descarta: «In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in». Encuadernar una hoja de sustitución era práctica corriente de la época, y por eso esta explicación le suena verosímil a quien sabe algo de libros antiguos; en estos ejemplares no hay nada cortado ni pegado.',
+        'Hace de la escena larga una hoja añadida al final, y la última línea lo descarta: «In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in». Acierta en el orden —la versión larga es la posterior, como dice la letra— y por eso no se cae sola; lo que no resiste es el pegado. Encuadernar una hoja de sustitución era práctica corriente de la época, así que le suena verosímil a quien sabe algo de libros antiguos.',
     },
     fuenteHecho:
-      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define.',
+      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define. El reparto de ejemplares es 29 largos y 11 cortos, y ese sentido importa: con 11 largos, el estado mayoritario era el primero y la corazonada de que lo mayoritario salió antes apuntaba a la clave. Invertido, apunta a A.',
   },
 ]
