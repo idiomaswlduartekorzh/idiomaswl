@@ -272,10 +272,24 @@ mitad del ejercicio.
 **El riesgo que introduce, y cómo se cierra.** Con la ficha en español era físicamente imposible
 leerla en voz alta. En inglés, se puede — y si se puede, se hace. Por eso:
 
-> La ficha se escribe **en notas, no en frases**. `Exam: Saturday 12, 8:00 a.m.` sí.
-> `I'm taking the exam on Saturday at eight.` no, jamás, ni en los datos ni en la situación ni
-> en los objetivos. Las frases decibles viven **solo** en la tabla de exponentes, que es donde
-> el estudiante sabe que va a buscarlas.
+> **En las tablas** —datos duros, vocabulario, la carta— se escribe en notas, no en frases.
+> `Exam: Saturday 12, 8:00 a.m.` sí. `I'm taking the exam on Saturday at eight.` no, jamás.
+> Las frases decibles viven **solo** en la tabla de exponentes, que es donde el estudiante sabe
+> que va a buscarlas.
+>
+> **En la prosa** —situación, objetivo, restricciones, dato oculto, lo que se pierde— se escribe
+> en **inglés A2 legible**: oraciones cortas y completas, no telegramas. Y ninguna de esas
+> oraciones puede ser algo que el jugador diría: se escriben *sobre* él, no *por* él.
+
+Ese reparto lo corrige la auditoría de equidad del 21 de agosto de 2026, y corrige una regla
+mía. Aplicar el telegrama a la prosa hizo aparecer líneas como `if nobody goes: her news,
+tonight` o `then the boy: thirty minutes alone at the daycare door`. Un lector A2 **no
+reconstruye** esa oración: en su lengua la adivinaría, en L2 no. La regla existía para que no se
+pudiera calcar la ficha, y al llevarla a la prosa consiguió que no se pudiera leer, que es peor.
+
+La prueba de calcabilidad sigue en pie y no se relaja: `You need someone to open on Saturday`
+es prosa legible y no se puede decir tal cual —habla de él en segunda persona—; `I need someone
+to open on Saturday` sí se podría, y por eso no se escribe.
 
 Prueba para el redactor: si una línea de tu ficha se puede decir tal cual en la conversación y
 el turno avanza, esa línea está mal escrita. Reescríbela como dato.
