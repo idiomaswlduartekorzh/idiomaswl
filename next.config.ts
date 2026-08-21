@@ -60,15 +60,15 @@ const securityHeaders = [
       // Nota honesta sobre lo que esto protege: si unpkg responde con una redirección, el
       // navegador deja de comparar la ruta y solo mira el host. Así que esto no es una
       // garantía, es reducir mucho la superficie frente a poner `https://unpkg.com` a secas.
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net https://static.cloudflareinsights.com https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://checkout.wompi.co https://www.googletagmanager.com https://ssl.google-analytics.com https://connect.facebook.net https://static.cloudflareinsights.com https://unpkg.com/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com data:",
       // Supabase project URL for storage, auth and realtime + GA4 + Meta Pixel + Cloudflare Web Analytics
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net https://cloudflareinsights.com",
+      "connect-src 'self' https://api.wompi.co https://api-sandbox.wompi.co https://sandbox.wompi.co https://production.wompi.co https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.facebook.com https://connect.facebook.net https://cloudflareinsights.com",
       // Images: own domain + Supabase storage + data URIs + blob (canvas) + GA4 + Meta Pixel
       "img-src 'self' data: blob: https://*.supabase.co https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com",
       // GTM noscript iframe
-      "frame-src 'self' https://www.googletagmanager.com https://www.youtube.com",
+      "frame-src 'self' https://checkout.wompi.co https://www.googletagmanager.com https://www.youtube.com",
       // Audio/video from own server + Supabase storage + blob (MediaRecorder)
       "media-src 'self' blob: https://*.supabase.co",
       // Worker scripts (Next.js service worker / audio worklets)

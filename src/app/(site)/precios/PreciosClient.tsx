@@ -3,6 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+import type { WompiLanguageSlug } from '@/lib/wompi/catalog';
+
+import { WompiCheckoutButton, WompiCheckoutProvider } from './WompiCheckout';
+
 const WA = '573005004253';
 function waLink(plan: string, langName: string) {
   const msg = plan === 'intensivo'
@@ -11,7 +15,15 @@ function waLink(plan: string, langName: string) {
   return `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 }
 
-const LANGUAGES = [
+type PricingLanguage = {
+  slug: WompiLanguageSlug;
+  flag: string;
+  name: string;
+  exams: string[];
+  landing: string;
+};
+
+const LANGUAGES: PricingLanguage[] = [
   { slug: 'ingles',    flag: '🇬🇧', name: 'Inglés',    exams: ['IELTS', 'TOEFL iBT', 'ICFES'],          landing: '/clases-de-ingles' },
   { slug: 'coreano',   flag: '🇰🇷', name: 'Coreano',   exams: ['TOPIK I', 'TOPIK II'],                   landing: '/clases-de-coreano' },
   { slug: 'frances',   flag: '🇫🇷', name: 'Francés',   exams: ['DELF A1–B2', 'DALF C1–C2'],              landing: '/clases-de-frances' },
@@ -80,14 +92,17 @@ export default function PreciosClient() {
   const [sessions, setSessions] = useState<2 | 4>(2);
   const [annual, setAnnual] = useState(false);
 
-  const multiply = annual ? 10 : 12;
   const priceFor = (monthly: number) =>
     annual
       ? Math.round((monthly * 10) / 12)
       : monthly;
 
+  const billingPeriod = annual ? 'annual' : 'monthly';
+  const checkoutLabel = annual ? 'Pagar plan anual' : 'Pagar 1 mes';
+
   return (
-    <main className="wlp-page">
+    <WompiCheckoutProvider>
+      <main className="wlp-page">
       <div className="wrap">
 
         {/* ── Header ── */}
@@ -175,8 +190,15 @@ export default function PreciosClient() {
               <li className="is-excluded">Material educativo</li>
               <li className="is-excluded">Sesiones en vivo con tutor</li>
             </ul>
-            <a href={waLink('Autodidacta', lang.name)} target="_blank" rel="noopener noreferrer" className="btn btn-ghost wlp-plan-card__cta">
-              Empezar ahora
+            <WompiCheckoutButton
+              planId="autodidacta"
+              language={lang.slug}
+              billingPeriod={billingPeriod}
+              label={checkoutLabel}
+              className="btn btn-ghost wlp-plan-card__cta"
+            />
+            <a href={waLink('Autodidacta', lang.name)} target="_blank" rel="noopener noreferrer" className="wlp-plan-card__help">
+              ¿Necesitas ayuda? Escríbenos
             </a>
           </div>
 
@@ -207,8 +229,15 @@ export default function PreciosClient() {
               <li className="is-excluded">Sesiones en vivo con tutor</li>
               <li className="is-excluded">Plan de estudio personalizado</li>
             </ul>
-            <a href={waLink('Preparación', lang.name)} target="_blank" rel="noopener noreferrer" className="btn wlp-plan-card__cta">
-              Empezar ahora
+            <WompiCheckoutButton
+              planId="preparacion"
+              language={lang.slug}
+              billingPeriod={billingPeriod}
+              label={checkoutLabel}
+              className="btn wlp-plan-card__cta"
+            />
+            <a href={waLink('Preparación', lang.name)} target="_blank" rel="noopener noreferrer" className="wlp-plan-card__help">
+              ¿Necesitas ayuda? Escríbenos
             </a>
           </div>
 
@@ -258,8 +287,15 @@ export default function PreciosClient() {
               <li className="is-included">Tutor asignado para {lang.name}</li>
               <li className="is-included wlp-feature--limited">Cupos limitados · Inicio próxima semana</li>
             </ul>
-            <a href={waLink('intensivo', lang.name)} target="_blank" rel="noopener noreferrer" className="btn btn-ghost wlp-plan-card__cta">
-              Reservar cupo
+            <WompiCheckoutButton
+              planId={sessions === 2 ? 'intensivo2' : 'intensivo4'}
+              language={lang.slug}
+              billingPeriod={billingPeriod}
+              label={annual ? 'Pagar plan anual' : 'Pagar y reservar cupo'}
+              className="btn btn-ghost wlp-plan-card__cta"
+            />
+            <a href={waLink('intensivo', lang.name)} target="_blank" rel="noopener noreferrer" className="wlp-plan-card__help">
+              ¿Tienes dudas sobre el horario? Escríbenos
             </a>
           </div>
 
@@ -267,11 +303,11 @@ export default function PreciosClient() {
 
         {/* ── Footer note ── */}
         <p className="wlp-footer-note">
-          Todos los planes incluyen <strong>3 días de prueba gratis</strong> · Sin tarjeta de crédito · Cancela cuando quieras
+          Pago seguro procesado por <strong>Wompi</strong> · El plan mensual compra un mes sin cobro automático · El anual se paga una sola vez
         </p>
 
         {/* ── Comparison table ── */}
-        <CompareTable lang={lang.name} exam={lang.exams[0]} sessions={sessions} annual={annual} />
+        <CompareTable exam={lang.exams[0]} sessions={sessions} annual={annual} />
 
         {/* ── Blog resources (dynamic by language) ── */}
         <div style={{ marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid var(--line-soft)' }}>
@@ -288,11 +324,12 @@ export default function PreciosClient() {
         </div>
 
       </div>
-    </main>
+      </main>
+    </WompiCheckoutProvider>
   );
 }
 
-function CompareTable({ lang, exam, sessions, annual }: { lang: string; exam: string; sessions: 2 | 4; annual: boolean }) {
+function CompareTable({ exam, sessions, annual }: { exam: string; sessions: 2 | 4; annual: boolean }) {
   const [open, setOpen] = useState(false);
   const p = (n: number) => annual ? Math.round(n * 10 / 12) : n;
 

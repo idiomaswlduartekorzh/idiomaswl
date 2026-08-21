@@ -13,6 +13,8 @@
     "lint": "eslint",
     "check:wompi-env": "node --experimental-strip-types --no-warnings scripts/check-wompi-env.mjs",
     "test:wompi-config": "node --experimental-strip-types --no-warnings --test tests/wompi-config.test.mjs",
+    "test:wompi-checkout": "node --experimental-strip-types --no-warnings --test tests/wompi-checkout.test.mjs",
+    "test:wompi": "npm run test:wompi-config && npm run test:wompi-checkout",
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
     "check:seo-snippets": "node --experimental-strip-types --no-warnings scripts/check-seo-snippets.mjs",
     "check:fonetica": "node --experimental-strip-types --no-warnings scripts/check-fonetica.mjs",

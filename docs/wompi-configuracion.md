@@ -1,6 +1,6 @@
 # Configuracion de Wompi
 
-Esta base deja listas las credenciales para integrar Wompi Colombia sin activar aun cobros ni webhooks.
+El checkout de Idiomas WeLearn usa el Widget oficial de Wompi Colombia y empieza siempre en Sandbox. Los montos, referencias y firmas se generan en el servidor; el navegador nunca recibe secretos.
 
 ## Variables requeridas
 
@@ -43,6 +43,45 @@ Marca como sensibles `WOMPI_PRIVATE_KEY`, `WOMPI_INTEGRITY_SECRET` y `WOMPI_EVEN
 
 El modulo de servidor usa `server-only` para impedir que las tres credenciales privadas entren por accidente en codigo del navegador. La validacion ocurre al pedir la configuracion, de modo que el sitio puede compilar antes de cargar las llaves, pero cualquier flujo de pago falla de forma explicita si falta una variable o si los ambientes no coinciden.
 
-## Siguiente fase
+## Flujo implementado
 
-Despues de cargar y validar las credenciales se puede implementar el checkout, la firma de integridad y el endpoint de eventos. Hasta entonces no se procesa dinero ni se registra una URL de webhook.
+1. La pagina `/precios` envia solamente plan, idioma y periodo a `POST /api/wompi/checkout`.
+2. El servidor busca el precio en `src/lib/wompi/catalog.ts`, crea una referencia unica y firma referencia + monto + COP con el secreto de integridad.
+3. El Widget de Wompi recoge los datos del pagador y del medio de pago dentro de la interfaz de Wompi.
+4. `/pagos/resultado?id=...` consulta el ID directamente en la API de Wompi y solo muestra transacciones cuya referencia y monto coinciden con el catalogo.
+5. `POST /api/wompi/events` verifica dinamicamente las propiedades firmadas del evento y actualiza el ledger privado.
+
+El plan mensual es una compra unica de un mes; no es una suscripcion ni genera debitos automaticos. El plan anual se cobra en un unico pago equivalente a diez mensualidades.
+
+## Ledger de pagos
+
+La migracion `supabase/migrations/20260821150000_wompi_transactions.sql` crea `public.wompi_transactions` con RLS habilitado y acceso exclusivo para `service_role`. No guarda correo, documento, direccion ni datos de tarjeta.
+
+- En Sandbox, el checkout puede probarse sin Supabase en Preview; Wompi conserva la transaccion y la pagina de resultado la consulta directamente.
+- En Produccion, el checkout se bloquea si el ledger no esta disponible. Antes de activar llaves reales se debe aplicar y verificar la migracion.
+
+## URL de eventos Sandbox
+
+Despues de desplegar el Preview, configura en el Dashboard de Wompi la URL HTTPS exacta del despliegue:
+
+```text
+https://<preview>.vercel.app/api/wompi/events
+```
+
+Sandbox y Produccion deben tener URLs de eventos independientes. No apuntes Sandbox al dominio productivo ni uses el secreto de eventos de Produccion en Preview.
+
+## Verificacion
+
+```bash
+npm run check:wompi-env
+npm run test:wompi
+npx tsc --noEmit
+```
+
+Antes de pasar a dinero real:
+
+1. Completa una transaccion aprobada, una rechazada y una pendiente en Sandbox.
+2. Confirma que Wompi recibe HTTP 200 del webhook y que el estado coincide con la consulta activa.
+3. Aplica y verifica la migracion del ledger en la base de Produccion.
+4. Carga las cuatro credenciales de Produccion con alcance exclusivo **Production** en Vercel.
+5. Configura `https://www.idiomaswl.com/api/wompi/events` como URL de eventos de Produccion.
