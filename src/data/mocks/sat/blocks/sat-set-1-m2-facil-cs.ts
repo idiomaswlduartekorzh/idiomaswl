@@ -95,6 +95,90 @@ import type { SatItemMeta } from '../module-types'
  * Las claves siguen siendo las del plan —q05 → B, q06 → C— y por **R2** los dos vuelven
  * enteros a la cola de auditoría: la prueba a ciegas hay que repetirla sobre estas
  * opciones, no sobre las anteriores.
+ *
+ * ── Cuarta versión: q08 (distractor muerto) y la familia q01/q03/q04 ───────
+ *
+ * La ciega del módulo bajó a 15,9 % y ninguno de los ocho filtra. Lo que quedaba no se ve
+ * ítem a ítem.
+ *
+ * **q08 — dos distractores, un solo error.** B y D fallaban por el mismo camino: los dos
+ * pedían **inventar** un dato que el texto 2 no da —B una limpieza posterior, D que el
+ * modo de trabajar valiera solo para esos años—. Dos distractores con un error cuentan
+ * como uno, y de D no se podía escribir «el estudiante que elige esta es el que…»: nadie
+ * llega ahí leyendo mal, hay que traerlo de fuera. D se rehace **sobre un dato que el
+ * texto 2 sí trae**, «exhibited two of the three»: el tercero, nunca expuesto, sería la
+ * excepción. Ahora el fallo es una mala lectura, y encima tiene apoyo real, porque el
+ * principio del texto 2 nombra tres actos —«prices, varnishes, and sells»— y al tercer
+ * lienzo solo le consta el barniz. Para que siga siendo mala lectura y no segunda clave,
+ * el texto 2 cierra alcanzando a los dos grupos por su nombre: «— not in the two that hung
+ * on a wall, and not in the one that never did». **Esa cláusula es la que sostiene la
+ * clave única: no se recorta.** B se queda como estaba y solo se reescribe su razón, que
+ * ahora nombra a su estudiante —el que explica los contornos por pintura perdida después,
+ * no por pintura que nunca se puso—, un error distinto del de D.
+ *
+ * **q01, q03 y q04 eran el mismo ítem tres veces.** Cambiaban de tema, de léxico y de
+ * opciones, pero los tres se resolvían con el mismo algoritmo: una concesión que garantiza
+ * que la forma sobrevive intacta —«unchanged in depth… on its own fixed cycle», «on time
+ * and in the place the form requires», «leaves any trace at all»—, un hueco que pide el
+ * verbo de pérdida cualitativa y un abanico con un intensificador y un positivo. Quien
+ * aprende «tras una concesión del tipo *sigue ahí, pero*, elige el verbo de pérdida que no
+ * toca la forma» contestaba tres de los cuatro de vocabulario sin leer el tema. Solo q02
+ * se salía.
+ *
+ * Se rompe por **q04**, el más barato de mover. Texto nuevo —historia industrial— y otra
+ * relación: la pregunta ya no es qué pierde un registro, sino **en qué orden ocurrieron
+ * dos cosas**. No hay concesión, el hueco va en la primera oración y la clave no es un
+ * verbo de pérdida. De paso desaparece una duplicación de tema que nadie había mirado: el
+ * q04 viejo (un libro de préstamos que no dice lo que se le pide) hacía pareja con el q16
+ * de SEC, cuyos libros del salinar «say less about the salt trade than about the men who
+ * kept them». La clave sigue en **A**, la del plan.
+ *
+ * Con esto los cuatro `words-in-context` piden cuatro cosas distintas: q01, una señal que
+ * se conserva entera y deja de distinguirse del fondo; q02, un adjetivo de manera deducido
+ * de tres conductas; q03, qué se conserva y qué se pierde en una traducción; q04, la
+ * dirección del tiempo entre dos edificios que se parecen.
+ *
+ * **Frases que no se pueden recortar.** Son las únicas que impiden una segunda clave y
+ * parecen relleno de estilo. Quien acorte un texto por longitud, que empiece por otra:
+ *
+ * - q01 · «unchanged in depth» — sin ella, `reverses` y `amplifies` se defienden.
+ * - q03 · «on time and in the place the form requires» — sin ella, `displaces` se defiende.
+ * - q04 · «The resemblance is exact; the order is not» (cierra `imitates`) y «nothing links
+ *   it to them, no drawing, no letter, no recorded visit» (cierra `inspires`, que es el
+ *   distractor fino: acepta la fecha y da el paso de más, de «fue antes» a «de ahí
+ *   salieron»).
+ * - q08 · «not in the two that hung on a wall, and not in the one that never did» — sin
+ *   ella, la D nueva es defendible y el ítem tiene dos claves.
+ *
+ * **Molde compartido en q05, q06 y q08 (aviso, no defecto).** Los tres llevan la misma
+ * premisa en las cuatro opciones y solo la cola en disputa, y tres de ocho enseñan a leer
+ * solo el final. Se deja, y por qué: en q05 y q06 el molde **es** el arreglo que cerró su
+ * fuga (tercera versión), y en q08 la concesión compartida es lo que obliga a las cuatro
+ * opciones a discutir el mismo objeto —los pasajes desnudos—; si cada una concede una cosa
+ * distinta, el solucionador a ciegas vuelve a tener dónde agarrarse: elige la que suena
+ * más «respondona», que es la fuga clásica de `cross-text-connections`. Cambiar la
+ * redacción de la premisa sin cambiar su contenido es cosmético: la cola sigue siendo lo
+ * único que decide.
+ *
+ * **Dos arreglos de equidad, de la revisión hecha con un estudiante colombiano delante.**
+ * Los dos están en la **entrada** del texto, que es donde un término opaco no cuesta un
+ * matiz sino el pasaje entero:
+ *
+ * - **q06** · «across the landing» → «across the hall». `landing` (rellano) es de baja
+ *   frecuencia y el escenario no se recupera hasta dos frases después, así que el
+ *   estudiante empezaba a leer sin saber dónde estaba.
+ * - **q07** · «gut strings» → «strings of gut instead of steel». Eran cuatro tecnicismos de
+ *   música sin glosar en una sola cláusula; la tarea no depende de ninguno, pero son la
+ *   puerta del texto. Se abre el primero y los otros tres se dejan estar: glosarlos todos
+ *   convertiría la cláusula en un diccionario.
+ *
+ * Ninguno de los dos toca las opciones ni el reparto de longitudes —q06 sigue en 128-133
+ * con la clave en 130, q07 en 79-83— y las palabras añadidas no aparecen en ninguna
+ * opción, así que no se crea pista léxica. Longitud de texto: q06 89 «palabras de 6», q07
+ * 101; las dos dentro de 25-150.
+ *
+ * Por **R2**, q04 y q08 vuelven enteros a la cola de auditoría y la ciega se repite sobre
+ * estas opciones. Claves del plan intactas: B, C, C, A, B, C, A, A.
  */
 
 export const items: MCQQuestion[] = [
@@ -148,13 +232,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "The ledgers of a library that readers paid a yearly fee to borrow from are one of the few places where the reading of ordinary people leaves any trace at all. The clerk wrote down the title, the date, and the borrower's number, and nothing else. What the ledgers ______ is the reading itself: a book carried home on a Tuesday and returned the following Tuesday may have been read twice, opened on the first night and abandoned, or never opened at all. The clerk had no way of knowing which, and the ledger does not pretend to say.",
+      'The warehouse that Thomas Ward put up beside the Leeds canal in 1836 ______ the great spinning mills it is usually said to copy. Everything those mills are admired for is already in it: an iron frame carrying the floors, windows the width of the bay on every level, outer walls that hold up nothing at all. The resemblance is exact; the order is not. Ward\'s building was standing, and insured, eighteen years before the first of the mills was drawn — and nothing links it to them, no drawing, no letter, no recorded visit.',
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
-      'omit',
-      'exaggerate',
-      'date',
-      'preserve',
+      'anticipates',
+      'imitates',
+      'outlasts',
+      'inspires',
     ],
     answer: 0,
   },
@@ -178,7 +262,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "The new tenant across the landing was a man of about fifty who wore the same gray coat every day that winter. Within a week Sofía had decided he was a widower. He carried his groceries up in a net bag and never brought more than a day's worth; he came home at the same hour; and once, through the door, she heard him say good night to a room she was fairly sure was empty. She was seventeen and had read a great many novels. When the man's wife arrived in March with two suitcases and a cold, Sofía was less embarrassed than disappointed.",
+      "The new tenant across the hall was a man of about fifty who wore the same gray coat every day that winter. Within a week Sofía had decided he was a widower. He carried his groceries up in a net bag and never brought more than a day's worth; he came home at the same hour; and once, through the door, she heard him say good night to a room she was fairly sure was empty. She was seventeen and had read a great many novels. When the man's wife arrived in March with two suitcases and a cold, Sofía was less embarrassed than disappointed.",
     text: 'Which choice best describes the function of the sentence "She was seventeen and had read a great many novels." in the text as a whole?',
     options: [
       "It pauses on Sofía's age and her reading to introduce her to the reader before the conclusion she draws about the tenant is reported.",
@@ -193,7 +277,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Recordings of a Baroque concerto made in 1955 and in 1995 hardly sound like the same piece, and the later ones are usually called more authentic: gut strings, smaller groups, little vibrato, tempos taken from treatises written at the time. What that word hides is that the treatises were written to correct players, not to describe them. A manual that tells organists to keep strict time is evidence that organists were not keeping strict time. A performance built on such advice may be reproducing what one irritated writer wished he heard, and not what anyone in 1720 actually played.',
+      'Recordings of a Baroque concerto made in 1955 and in 1995 hardly sound like the same piece, and the later ones are usually called more authentic: strings of gut instead of steel, smaller groups, little vibrato, tempos taken from treatises written at the time. What that word hides is that the treatises were written to correct players, not to describe them. A manual that tells organists to keep strict time is evidence that organists were not keeping strict time. A performance built on such advice may be reproducing what one irritated writer wished he heard, and not what anyone in 1720 actually played.',
     text: 'Which choice best states the main purpose of the text?',
     options: [
       'To question what written rules can prove about the practice they were meant to fix.',
@@ -208,13 +292,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Text 1\n\nThe three late canvases left in Aurelio Vasco's studio are filed as unfinished, and they are the best evidence we have of how he worked. The under-drawing shows through; the sky is laid in and the figures are not; whole passages stop at the outline. Read side by side they show a painter building a picture from the back forward, and they let us watch a method the finished works, sealed under varnish, hide completely.\n\nText 2\n\nVasco exhibited two of the three in his lifetime, priced them, and sold one. He varnished all three himself. Whatever we are looking at, it is not work interrupted: a painter who prices, varnishes, and sells a canvas has declared it done. The bare outlines in the lower half are not a stage on the way to something else.",
+      "Text 1\n\nThe three late canvases left in Aurelio Vasco's studio are filed as unfinished, and they are the best evidence we have of how he worked. The under-drawing shows through; the sky is laid in and the figures are not; whole passages stop at the outline. Read side by side they show a painter building a picture from the back forward, and they let us watch a method the finished works, sealed under varnish, hide completely.\n\nText 2\n\nVasco exhibited two of the three in his lifetime, priced them, and sold one. He varnished all three himself. Whatever we are looking at, it is not work interrupted: a painter who prices, varnishes, and sells a canvas has declared it done. The bare outlines in the lower half are not a stage on the way to something else — not in the two that hung on a wall, and not in the one that never did.",
     text: "Based on the texts, how would the author of Text 2 most likely respond to Text 1's account of the three late canvases?",
     options: [
       'By granting that the canvases are bare in places but arguing that Vasco let them go in that state on purpose.',
       'By granting that the canvases are bare in places but arguing that a later cleaning, not Vasco, stripped them.',
       'By granting that the canvases are bare in places but arguing that the varnished works show the same sequence.',
-      'By granting that the canvases are bare in places but arguing that Vasco worked that way only in those years.',
+      'By granting that the canvases are bare in places but arguing that only the third, never exhibited, is unfinished.',
     ],
     answer: 0,
   },
@@ -285,16 +369,16 @@ export const meta: SatItemMeta[] = [
     tema: 'historia',
     razones: {
       A:
-        'Correcta: el texto enumera lo que el registro contiene —«the title, the date, and the borrower\'s number, and nothing else»— y a continuación enumera lo que no distingue: leído dos veces, abandonado la primera noche o «never opened at all». La frase final lo remata, «The clerk had no way of knowing which, and the ledger does not pretend to say». Lo que falta en el libro de préstamos es la lectura.',
+        'Correcta: el texto trae las dos piezas que la palabra necesita y las trae en este orden. El parecido no se discute —«Everything those mills are admired for is already in it»— y la fecha lo coloca: el almacén estaba en pie, y asegurado, «eighteen years before the first of the mills was drawn». Hacer antes, y sin deberlo a nadie, lo que otros harán después es anticiparlo. Es además lo único que el pasaje sostiene: adelanta una fecha y no reclama descendencia.',
       B:
-        'Cae quien lee el cierre como una denuncia de cifras infladas: si prestar no es leer, el registro estaría hinchando la lectura. Para exagerar algo hay que afirmarlo, y el texto dice que el libro «does not pretend to say» nada sobre eso. Quien infla, si acaso, es el historiador que suma préstamos; el registro calla.',
+        'El estudiante que elige esta es el que se queda con la descripción heredada, que el propio texto le pone delante: del almacén se dice que «is usually said to copy» las hilanderías. Copiar exige que el modelo sea anterior, y el texto fecha lo contrario dos líneas más abajo, primero en seco —«The resemblance is exact; the order is not»— y luego con la cifra: dieciocho años antes de que la primera de ellas llegara siquiera al papel. Ha leído el parecido y no ha leído el reloj.',
       C:
-        'Es la trampa para quien empareja palabras: «the date» aparece literalmente dos líneas antes, en la lista de lo que anotaba el empleado. Pero lo que ese apunte fecha es el préstamo —el martes en que el libro sale y el martes siguiente en que vuelve—, y el resto del párrafo se dedica a decir que entre esas dos fechas puede no haber ocurrido ninguna lectura.',
+        'El estudiante que elige esta lee «was standing, and insured» como una frase sobre lo que el edificio duró y no sobre cuándo empezó a existir. «Standing … before the first of the mills was drawn» fija un nacimiento, no una muerte: el texto no dice qué fue de ninguno de estos edificios ni si alguno sigue hoy en pie. Sobrevivir a las hilanderías es una afirmación que el pasaje no puede sostener en ninguna de sus cuatro frases.',
       D:
-        'Se apoya en la primera oración, «one of the few places where the reading of ordinary people leaves any trace at all», y confunde el rastro con la cosa. Esa frase introduce un registro escaso, no completo: lo que se conserva son títulos, fechas y números de lector, que es la huella que la lectura dejó y no la lectura.',
+        'El camino más fino de los tres, y por eso el que decide el ítem: quien lo toma acepta la fecha —el almacén es anterior— y da un paso de más, de «fue antes» a «de ahí salieron». La última frase cierra esa puerta: «nothing links it to them, no drawing, no letter, no recorded visit». Anticipar no exige contacto; inspirar sí, y aquí no consta ninguno. Esa frase final es lo único que separa esta opción de la clave: si alguien la recorta por longitud, el ítem pasa a tener dos respuestas.',
     },
     fuenteHecho:
-      'Hecho libre de historia del libro: los registros de préstamo de las bibliotecas de suscripción como fuente para la historia de la lectura, y la distancia entre prestar y leer. Biblioteca, empleado y casos inventados. La institución no se nombra con un término que haya que saberse: el texto la describe —«a library that readers paid a yearly fee to borrow from»— porque «subscription library» daba por sabido lo que el ítem no examina.',
+      'Ficción sobre un hecho libre de historia industrial: rasgos que luego se dieron por característicos de una generación de fábricas —armazón de hierro, ventanas de vano completo, muros exteriores que no cargan— aparecieron antes en edificios menores y utilitarios, y las pólizas de incendios son una de las pocas fuentes que los fechan. Thomas Ward, el almacén, la fecha de 1836 y los dieciocho años son inventados; no se nombra ninguna fábrica real ni se atribuye a nadie la primera vez.',
   },
   {
     id: 'q05',
@@ -360,13 +444,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Correcta: el texto 2 concede lo que se ve —«The bare outlines in the lower half»— y le cambia el estatuto con hechos del propio cuadro: Vasco expuso dos, les puso precio, vendió uno y barnizó los tres. «A painter who prices, varnishes, and sells a canvas has declared it done», así que esos contornos «are not a stage on the way to something else». Un lienzo dado por terminado no registra el proceso: registra hasta dónde quiso llegar.',
+        'Correcta: el texto 2 concede lo que se ve —«The bare outlines in the lower half»— y le cambia el estatuto con hechos del propio cuadro: Vasco expuso dos, les puso precio, vendió uno y barnizó los tres. «A painter who prices, varnishes, and sells a canvas has declared it done», así que esos contornos «are not a stage on the way to something else», y la frase se cierra alcanzando a los tres, «not in the two that hung on a wall, and not in the one that never did». Un lienzo dado por terminado no registra el proceso: registra hasta dónde quiso llegar.',
       B:
-        'Trae de fuera una historia de restauración que el texto 2 no cuenta: el único tratamiento de superficie que menciona lo hizo el pintor, «He varnished all three himself». Y esa hipótesis le costaría el argumento, porque su objeción vive precisamente en que las decisiones sobre esos lienzos son de Vasco y de nadie más.',
+        'El estudiante que elige esta es el que explica lo que ve por algo que le pasó al cuadro después: contornos desnudos y dibujo subyacente a la vista son, para él, pintura perdida —una limpieza dura, un restaurador con demasiado disolvente— y no pintura que nunca llegó a ponerse. Es el reflejo corriente ante un cuadro incompleto, y por eso la opción tiene quien la elija. El texto 2 la desmiente por dos sitios: el único tratamiento de superficie que menciona lo hizo el pintor, «He varnished all three himself», y esa hipótesis le costaría el argumento entero, que vive de que las decisiones sobre estos lienzos sean de Vasco y de nadie más.',
       C:
         'Le atribuye al texto 2 una afirmación sobre las obras acabadas, que es de lo que habla el texto 1 cuando dice que están «sealed under varnish». El texto 2 no dice nada de lo que se ve o se deja de ver bajo el barniz de las demás; su discusión no es si los tres lienzos aportan poco, sino qué clase de cosa son.',
       D:
-        'Es el movimiento de conceder el hallazgo y recortarle el alcance: el método sería real, pero solo de esos años. Exige aceptar antes que los lienzos muestran un método, y eso es justo lo que el texto 2 niega, porque para él no hay «work interrupted» que mirar. Además el texto 2 no hace ninguna afirmación cronológica: sus datos son de exposición, precio, venta y barniz.',
+        'El estudiante que elige esta es el que cuenta: el texto 2 dice «exhibited two of the three», de modo que uno se quedó en el estudio sin colgarse nunca, y él le devuelve a ese tercero el estatuto que el texto 1 daba a los tres. Es una mala lectura y no una invención —la cuenta está escrita—, y además tienta porque el principio del texto 2 nombra tres actos, «prices, varnishes, and sells», y al tercer lienzo solo le consta el segundo. Lo que la deshace es que el texto 2 no reparte: barnizó «all three himself» y cierra nombrando los dos grupos, «not in the two that hung on a wall, and not in the one that never did». La única excepción concebible queda excluida con su nombre, y esa cláusula final es la que impide que el ítem tenga dos claves.',
     },
     fuenteHecho:
       'Ficción original: Aurelio Vasco no existe. El argumento —firmar, barnizar y vender como declaración de obra acabada— está construido para el ítem sobre una discusión corriente en historia del arte, sin seguir ningún caso concreto.',

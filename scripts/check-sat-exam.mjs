@@ -75,9 +75,23 @@ function loadTs(file) {
   const resolved = path.resolve(file)
   if (cache.has(resolved)) return cache.get(resolved)
 
-  const out = ts.transpileModule(fs.readFileSync(resolved, 'utf8'), {
+  // `transpileModule` **no** informa de errores de sintaxis por su cuenta: los traga y
+  // devuelve código igualmente. Un bloque al que le falte un `}` se cargaba entonces con
+  // los ítems que quedaran, y el guardián decía «27 ítems» sobre un fichero que no
+  // compila. Hay que pedirle los diagnósticos y pararse en ellos.
+  const transpiled = ts.transpileModule(fs.readFileSync(resolved, 'utf8'), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
-  }).outputText
+    reportDiagnostics: true,
+  })
+  const sintaxis = (transpiled.diagnostics || []).filter((d) => d.category === ts.DiagnosticCategory.Error)
+  if (sintaxis.length) {
+    const primero = ts.flattenDiagnosticMessageText(sintaxis[0].messageText, ' ')
+    const linea = sintaxis[0].file && sintaxis[0].start != null
+      ? sintaxis[0].file.getLineAndCharacterOfPosition(sintaxis[0].start).line + 1
+      : '?'
+    throw new Error(`${path.basename(resolved)}:${linea} no compila — ${primero}`)
+  }
+  const out = transpiled.outputText
 
   const localRequire = (spec) => {
     if (!spec.startsWith('.')) return require(spec)
