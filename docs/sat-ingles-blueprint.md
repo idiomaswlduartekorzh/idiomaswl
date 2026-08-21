@@ -395,6 +395,43 @@ arregla— **las cuatro con la misma forma sintáctica**: si la clave lleva clá
 las cuatro la llevan. Lo que separa a la clave no puede ser la forma, tiene que ser si
 cumple el objetivo.
 
+### R13 · Igualar la forma no sirve: lo que filtra es el sentido
+
+Esta corrige a R12, que se quedó corta. Tras rehacer los ítems de síntesis con las cuatro
+opciones en un molde único —misma palabra inicial, misma sintaxis, siete caracteres de
+diferencia entre la más larga y la más corta— **el panel a ciegas siguió acertándolos 10
+de 10**. La forma estaba igualada y no cambió nada, porque la fuga nunca fue la forma.
+
+**En síntesis retórica, el objetivo viene escrito en el enunciado.** «El estudiante quiere
+explicar por qué algunos oyentes no entienden un mensaje silbado». El solucionador lee eso
+y busca la única opción que habla de alguien que no entiende un silbido. Las otras tres
+hablaban de un grito, de una escuela y del origen de la práctica: son verdaderas según las
+notas y **ajenas al objetivo**, y esa ajenidad se ve sin las notas.
+
+Diseñar «las cuatro verdaderas, una sola relevante» produce ítems que se contestan sin
+leer. Lo que hay que hacer es lo contrario:
+
+> **Las cuatro opciones tienen que ser relevantes al objetivo. Solo las notas deben decidir
+> cuál está sostenida.** Tres explicaciones plausibles de lo que el enunciado pide, que las
+> notas no respaldan o contradicen, y una que sí.
+
+**En estructura y función pasa lo mismo por el otro lado: gana la opción más general.** En
+un ítem de estructura, la clave decía «cierra diciendo qué cambia el registro nuevo y qué
+no», y las tres distractoras nombraban contenidos concretos. Una descripción que encaja en
+casi cualquier texto de esa forma es siempre la apuesta segura del que no ha leído. Lo
+mismo con función: de cuatro funciones posibles, la que describe un texto **bien hecho**
+se adivina, porque los textos bien hechos son predecibles.
+
+> **Todas las opciones al mismo grado de concreción, y cada distractor tiene que ser una
+> descripción impecable de un texto ligeramente distinto** — no una descripción torpe del
+> texto que hay.
+
+Lo que sí funcionó a la primera, y conviene recordar por qué: en convenciones, rediseñar
+las opciones para que fueran **la misma palabra con distinto signo** bajó tres ítems de
+10/10 a por debajo del umbral. Ahí la fuga sí era formal —la opción bien formada se
+reconocía sola— y por eso el arreglo formal la cerró. La lección no es «la forma da igual»,
+es **medir cuál de las dos fugas tiene cada ítem antes de arreglarlo**.
+
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 
 Las tres versiones de q02 pasaron cada una por auditoría, y cada arreglo introdujo un
