@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import process from 'node:process';
@@ -250,15 +250,25 @@ function ffmpegAssemble(segmentPaths, targetPath) {
     assert.equal(probe.status, 0, `ffprobe failed for ${segmentPath}: ${probe.stderr}`);
     return total + Number(probe.stdout.trim());
   }, 0);
-  const speechCompression = durationSeconds <= 7
-    ? 'acompressor=threshold=-30dB:ratio=4:attack=5:release=80:makeup=12dB,'
+  const speechCompression = durationSeconds <= 12
+    ? 'acompressor=threshold=-30dB:ratio=8:attack=0.1:release=80:makeup=12dB'
     : segmentPaths.length > 1
-      ? 'acompressor=threshold=-28dB:ratio=3:attack=10:release=120:makeup=8dB,'
-      : '';
-  const loudnessFilter = `${speechCompression}loudnorm=I=${casting.target.integrated_loudness_lufs}:LRA=7:TP=${casting.target.max_true_peak_dbfs}`;
-  const commonOutput = ['-vn', '-ar', String(casting.target.final_sample_rate_hz), '-ac', String(casting.target.final_channels), '-b:a', casting.target.final_bitrate, targetPath];
+      ? 'acompressor=threshold=-28dB:ratio=3:attack=0.5:release=120:makeup=8dB'
+      : durationSeconds <= 45
+        ? 'acompressor=threshold=-24dB:ratio=2.5:attack=2:release=150:makeup=6dB'
+        : '';
+  const assembledPath = `${targetPath}.assembly.wav`;
+  const normalizedPath = `${targetPath}.normalized.mp3`;
+  const assemblyOutput = [
+    '-vn', '-ar', String(casting.target.final_sample_rate_hz),
+    '-ac', String(casting.target.final_channels), '-c:a', 'pcm_s16le', assembledPath,
+  ];
   const command = segmentPaths.length === 1
-    ? ['-y', '-hide_banner', '-loglevel', 'error', '-i', segmentPaths[0], '-af', loudnessFilter, ...commonOutput]
+    ? [
+        '-y', '-hide_banner', '-loglevel', 'error', '-i', segmentPaths[0],
+        ...(speechCompression ? ['-af', speechCompression] : []),
+        ...assemblyOutput,
+      ]
     : (() => {
         const inputArgs = [];
         const labels = [];
@@ -273,10 +283,54 @@ function ffmpegAssemble(segmentPaths, targetPath) {
             inputIndex += 1;
           }
         });
-        return ['-y', '-hide_banner', '-loglevel', 'error', ...inputArgs, '-filter_complex', `${labels.join('')}concat=n=${labels.length}:v=0:a=1[joined];[joined]${loudnessFilter}[out]`, '-map', '[out]', ...commonOutput];
+        const filter = `${labels.join('')}concat=n=${labels.length}:v=0:a=1[joined]${speechCompression ? `;[joined]${speechCompression}[out]` : ''}`;
+        return [
+          '-y', '-hide_banner', '-loglevel', 'error', ...inputArgs,
+          '-filter_complex', filter,
+          '-map', speechCompression ? '[out]' : '[joined]',
+          ...assemblyOutput,
+        ];
       })();
   const result = spawnSync('ffmpeg', command, { encoding: 'utf8' });
   if (result.status !== 0) throw new Error(`ffmpeg failed for ${targetPath}: ${result.stderr}`);
+
+  try {
+    const targetI = casting.target.integrated_loudness_lufs;
+    const targetTp = casting.target.max_true_peak_dbfs;
+    const analysis = spawnSync('ffmpeg', [
+      '-hide_banner', '-nostats', '-i', assembledPath,
+      '-af', `loudnorm=I=${targetI}:LRA=7:TP=${targetTp}:print_format=json`,
+      '-f', 'null', '-',
+    ], { encoding: 'utf8' });
+    if (analysis.status !== 0) throw new Error(`loudness analysis failed for ${targetPath}: ${analysis.stderr}`);
+    const measurements = [...analysis.stderr.matchAll(/\{\s*"input_i"[\s\S]*?\}/g)].at(-1)?.[0];
+    assert.ok(measurements, `loudness analysis returned no measurements for ${targetPath}`);
+    const measured = JSON.parse(measurements);
+    const loudnessFilter = [
+      `loudnorm=I=${targetI}`,
+      'LRA=7',
+      `TP=${targetTp}`,
+      `measured_I=${measured.input_i}`,
+      `measured_LRA=${measured.input_lra}`,
+      `measured_TP=${measured.input_tp}`,
+      `measured_thresh=${measured.input_thresh}`,
+      `offset=${measured.target_offset}`,
+      'linear=true',
+      'print_format=summary',
+    ].join(':');
+    const normalization = spawnSync('ffmpeg', [
+      '-y', '-hide_banner', '-loglevel', 'error', '-i', assembledPath,
+      '-af', loudnessFilter,
+      '-vn', '-ar', String(casting.target.final_sample_rate_hz),
+      '-ac', String(casting.target.final_channels), '-b:a', casting.target.final_bitrate,
+      normalizedPath,
+    ], { encoding: 'utf8' });
+    if (normalization.status !== 0) throw new Error(`two-pass normalization failed for ${targetPath}: ${normalization.stderr}`);
+    renameSync(normalizedPath, targetPath);
+  } finally {
+    if (existsSync(assembledPath)) unlinkSync(assembledPath);
+    if (existsSync(normalizedPath)) unlinkSync(normalizedPath);
+  }
 }
 
 async function generate(rows) {
@@ -356,15 +410,20 @@ async function generate(rows) {
   console.log(JSON.stringify({ outputDirectory: root, files: generated.length, qaStatus: 'pending_no_public_release' }, null, 2));
 }
 
-if (listVoices || accountStatus) {
-  await showReadOnlyAccountData();
-} else if (doGenerate) {
-  await generate(selectedRows);
-} else {
-  console.log(JSON.stringify({
-    sample: invoice(sampleRows, 'pilot'),
-    full: invoice(TOEFL_MISSING_AUDIO_ROWS, 'full'),
-    ...(selectedSetNumbers.length > 0 ? { selected: invoice(selectedRows, scopeLabel()) } : {}),
-    note: 'Dry run only. No API call, secret read, file generation, or audio write occurred.',
-  }, null, 2));
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMain) {
+  if (listVoices || accountStatus) {
+    await showReadOnlyAccountData();
+  } else if (doGenerate) {
+    await generate(selectedRows);
+  } else {
+    console.log(JSON.stringify({
+      sample: invoice(sampleRows, 'pilot'),
+      full: invoice(TOEFL_MISSING_AUDIO_ROWS, 'full'),
+      ...(selectedSetNumbers.length > 0 ? { selected: invoice(selectedRows, scopeLabel()) } : {}),
+      note: 'Dry run only. No API call, secret read, file generation, or audio write occurred.',
+    }, null, 2));
+  }
 }
+
+export { ffmpegAssemble };
