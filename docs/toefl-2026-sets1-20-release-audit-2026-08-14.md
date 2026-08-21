@@ -6,8 +6,15 @@ Revalidación de rama y preview: 20 de agosto de 2026
 
 Owner y firma de derechos: José David Duarte Silva
 
-Dictamen actualizado: **preview técnico pre-audio listo para revisión humana; no apto
-todavía para producción ni para venderse como producto terminado**.
+Dictamen actualizado: **gates no-audio cerrados y versión pre-audio autorizada para
+producción por José David Duarte Silva el 20 de agosto de 2026**. La publicación no
+convierte el producto en “terminado”: las 400 piezas nuevas de audio siguen pendientes
+y la interfaz debe mantener visibles sus bloqueos y la omisión explícita.
+
+Los reportes detallados e inventarios intermedios se retiraron de la rama operativa
+después de crear el respaldo remoto
+`archive/toefl-2026-full-audit-20260820`. Aquí se conserva el dictamen consolidado;
+producto, pruebas, guardianes, manifiesto y paquete de audio permanecen versionados.
 
 ## Qué significa el dictamen
 
@@ -226,9 +233,9 @@ se conservan como evidencia.
 | Revisión funcional y accesible del preview | CERRADO | Espaciado CTW y VoiceOver T16/T17 aprobados por el owner. Playwright confirmó Listening 1→2, reproductor reiniciado y omisión explícita 6→7 sin reproducir audio. La protección SSO no se debilitó. |
 | Aprobación de audio | ABIERTO | Manifiesto/costo listos y diez voces 1× propuestas: 400 archivos, 68.890 caracteres; piloto 10 archivos/2.845 créditos cabe. La cuenta sólo tiene 30.171 créditos y reinicia 2026-09-05 18:13 COT, por lo que el lote completo no cabe todavía. Falta autorización explícita del piloto. |
 | Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
-| Producción | BLOQUEADO | Requiere cierre de todos los gates anteriores y autorización separada. |
+| Producción pre-audio | AUTORIZADA | El owner autorizó integrar y publicar antes de generar los audios; los bloqueos de medio deben seguir siendo explícitos. |
 
-Conclusión: los 20 simulacros y el arreglo están **desplegados en un preview técnico
-pre-audio `READY` con los gates no-audio cerrados**. Aún no están listos para venderse
-o desplegarse en producción como producto terminado: falta el gate separado de
-manifiesto, voces, muestra, costo, generación y QA de los 400 audios.
+Conclusión: los 20 simulacros y el arreglo tienen **los gates no-audio cerrados** y el
+owner autorizó su despliegue como versión pre-audio. No deben venderse ni rotularse
+como producto terminado: falta el gate separado de manifiesto, voces, muestra, costo,
+generación y QA de los 400 audios.

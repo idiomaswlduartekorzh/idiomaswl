@@ -1,5 +1,17 @@
 # TOEFL iBT 2026 — documento maestro de alineación, expansión y cierre
 
+> Actualización operativa — 20 de agosto de 2026: los gates no-audio están cerrados,
+> VoiceOver fue aprobado por José David Duarte Silva y el owner autorizó integrar y
+> publicar la versión pre-audio. El próximo trabajo de contenido es exclusivamente el
+> piloto de audio descrito en
+> `docs/toefl-2026-missing-audio-release-plan-2026-08-20.md`; sigue prohibido consumir
+> créditos sin la aprobación separada allí exigida.
+>
+> Limpieza: los reportes y TSV intermedios mencionados en el historial inferior ya no
+> viven en la rama operativa. Se conservan íntegros y recuperables en
+> `archive/toefl-2026-full-audit-20260820`. La rama operativa mantiene producto,
+> guardianes, pruebas, contratos vigentes, manifiesto y plan de audio.
+
 > Estado: especificación operativa para ejecutar por iteraciones pequeñas.
 >
 > Alcance de esta primera versión: auditoría y plan. Crear este documento no
