@@ -1,0 +1,39 @@
+.page { min-height: 100vh; padding: clamp(24px, 4vw, 54px); color: #142333; background: #f4f7fb; }
+.header { width: min(1120px, 100%); margin: 0 auto 28px; display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.header h1 { max-width: 720px; margin: 5px 0 8px; font-size: clamp(35px, 6vw, 64px); line-height: .98; letter-spacing: -.055em; }
+.header p:not(.kicker) { max-width: 660px; margin: 0; color: #657386; line-height: 1.6; }
+.header > a { flex: 0 0 auto; padding: 11px 16px; color: #1d57d8; background: #fff; border: 1px solid #ccd6e3; font-weight: 800; }
+.kicker { margin: 0; color: #e65f6c; font-size: 11px; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; }
+.pilot, .message { width: min(1120px, 100%); margin: 0 auto 14px; padding: 14px 18px; display: flex; gap: 10px; color: #714029; background: #fff7ed; border-left: 4px solid #f97316; }
+.pilot span { color: #855843; }
+.message { color: #174b38; background: #ecfdf5; border-left-color: #10b981; }
+.switcher { width: min(1120px, 100%); margin: 26px auto 0; display: grid; grid-template-columns: 1fr 1fr; background: #dce4ef; border: 4px solid #dce4ef; }
+.switch, .switchActive { min-height: 50px; color: #5e6c7e; background: transparent; border: 0; font-weight: 900; cursor: pointer; }
+.switchActive { color: #142333; background: #fff; box-shadow: 0 4px 15px rgba(20, 35, 51, .1); }
+.catalog, .orders { width: min(1120px, 100%); margin: 18px auto 0; padding: clamp(22px, 4vw, 38px); background: #fff; border: 1px solid #d8e0ea; }
+.sectionHeading { margin-bottom: 22px; display: flex; align-items: end; justify-content: space-between; gap: 20px; padding-bottom: 15px; border-bottom: 2px solid #142333; }
+.sectionHeading span { color: #e65f6c; font-size: 10px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.sectionHeading h2 { margin: 4px 0 0; font-size: 28px; letter-spacing: -.035em; }
+.sectionHeading p { margin: 0; color: #6f7d8e; font-size: 12px; }
+.sectionHeading button { padding: 9px 13px; color: #1d57d8; background: #eef3ff; border: 0; font-weight: 800; cursor: pointer; }
+.productGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.product, .productIntent { min-height: 300px; padding: 22px; display: flex; flex-direction: column; border: 1px solid #dce3ec; }
+.productIntent { border-color: #1d57d8; box-shadow: inset 0 4px #1d57d8; }
+.productTop { min-height: 28px; display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: 5px; }
+.productTop > span { color: #e65f6c; font-size: 10px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.productTop em { padding: 3px 6px; color: #1d57d8; background: #eef3ff; font-size: 9px; font-style: normal; font-weight: 900; text-transform: uppercase; }
+.product h3 { margin: 10px 0 7px; font-size: 21px; }
+.productIntent h3 { margin: 10px 0 7px; font-size: 21px; }
+.product > p, .productIntent > p { min-height: 60px; margin: 0 0 20px; color: #687689; font-size: 13px; line-height: 1.5; }
+.product > strong, .productIntent > strong { margin-top: auto; color: #1d57d8; font-size: 27px; letter-spacing: -.03em; }
+.product > small, .productIntent > small { margin: 4px 0 17px; color: #748194; }
+.product > button, .productIntent > button { min-height: 44px; padding: 9px 12px; color: #fff; background: #142333; border: 0; font-weight: 850; cursor: pointer; }
+.product > button:disabled, .productIntent > button:disabled { cursor: not-allowed; opacity: .64; }
+.empty { margin: 0; padding: 24px; color: #6a788a; background: #f7f9fc; text-align: center; }
+.orderList { display: grid; gap: 10px; }
+.orderList article { padding: 15px; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 16px; border: 1px solid #dde4ec; }
+.orderList article > div { display: grid; gap: 4px; }
+.orderList span { color: #718095; font-size: 12px; }
+.switch:focus-visible, .switchActive:focus-visible, .product button:focus-visible, .productIntent button:focus-visible, .header a:focus-visible { outline: 3px solid #e65f6c; outline-offset: 3px; }
+@media (max-width: 850px) { .productGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .orderList article { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .page { padding: 18px 10px 40px; } .header { align-items: start; flex-direction: column; } .header h1 { font-size: 42px; } .switcher { grid-template-columns: 1fr; } .productGrid { grid-template-columns: 1fr; } .sectionHeading { align-items: start; flex-direction: column; } .orderList article { grid-template-columns: 1fr; } }

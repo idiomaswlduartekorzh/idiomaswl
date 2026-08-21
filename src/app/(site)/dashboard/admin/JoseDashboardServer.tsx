@@ -6,6 +6,8 @@ import type { StudentSubject } from '@/lib/actions/inviteStudent'
 import { EXAMS } from '@/data/exams'
 import type { FullAssessment } from '@/lib/labs/types'
 import type { IeltsSpeakingAssessment } from '@/lib/ielts/delegated-review'
+import { isToeflReportPaywallEnabled } from '@/lib/toefl/report-payment-config.server'
+import { listApprovedToeflSubmissionIdsForReview } from '@/lib/toefl/report-payment.server'
 
 export interface ExamSubmission {
   id: string
@@ -102,6 +104,7 @@ function leadExamLabel(examSlug: string | null, source: string | null): string |
 
 export default async function JoseDashboardServer() {
   const supabase = await createClient()
+  const paidToeflReviewOnly = isToeflReportPaywallEnabled()
 
   // IELTS and TOEFL own independent queues so general exam traffic cannot push
   // valid attempts out of the admin panel. Audio links are generated lazily only
@@ -110,6 +113,7 @@ export default async function JoseDashboardServer() {
     { data: submissions },
     { data: ieltsSubmissionRows },
     { data: toeflSubmissionRows },
+    paidToeflSubmissionIds,
   ] = await Promise.all([
     supabase
       .from('exam_submissions')
@@ -131,6 +135,9 @@ export default async function JoseDashboardServer() {
       .eq('submission_status', 'submitted')
       .order('created_at', { ascending: false })
       .limit(500),
+    paidToeflReviewOnly
+      ? listApprovedToeflSubmissionIdsForReview()
+      : Promise.resolve(new Set<string>()),
   ])
 
   const rows = (submissions ?? []) as ExamSubmission[]
@@ -180,7 +187,8 @@ export default async function JoseDashboardServer() {
     Boolean(r.writing_task1_answer || r.writing_task2_answer || r.speaking_answers || r.speaking_audio_paths)
   )
   const toeflReviews = ((toeflSubmissionRows ?? []) as ExamSubmission[]).filter(r =>
-    Boolean(r.writing_task1_answer || r.writing_task2_answer || r.speaking_audio_paths)
+    (!paidToeflReviewOnly || paidToeflSubmissionIds.has(r.id))
+    && Boolean(r.writing_task1_answer || r.writing_task2_answer || r.speaking_audio_paths)
   )
 
   // ── Students list ────────────────────────────────────────────────────────────

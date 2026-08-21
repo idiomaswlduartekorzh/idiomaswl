@@ -63,3 +63,21 @@ export function isToeflReportPaywallEnabled(): boolean {
     return false;
   }
 }
+
+export function getToeflReportOffer(): Readonly<{
+  enabled: boolean;
+  priceCop: number;
+  speakingReviewSlaHours: number;
+}> {
+  const parsedPrice = Number(process.env.TOEFL_REPORT_PRICE_COP ?? 10_000);
+  const parsedSla = Number(process.env.TOEFL_SPEAKING_REVIEW_SLA_HOURS ?? 48);
+  return Object.freeze({
+    enabled: isToeflReportPaywallEnabled(),
+    priceCop: Number.isSafeInteger(parsedPrice) && parsedPrice >= 1_000 && parsedPrice <= 2_000_000
+      ? parsedPrice
+      : 10_000,
+    speakingReviewSlaHours: Number.isSafeInteger(parsedSla) && parsedSla >= 1 && parsedSla <= 168
+      ? parsedSla
+      : 48,
+  });
+}

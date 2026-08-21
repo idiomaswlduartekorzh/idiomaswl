@@ -15,10 +15,18 @@ export function ToeflReportCheckout({
   submissionId,
   mockTitle,
   receipt,
+  embedded = false,
+  pilotEnabled = true,
+  displayPriceCop = 10_000,
+  displaySpeakingSlaHours = 48,
 }: {
   submissionId: string;
   mockTitle: string;
   receipt?: ExamSubmissionReceipt;
+  embedded?: boolean;
+  pilotEnabled?: boolean;
+  displayPriceCop?: number;
+  displaySpeakingSlaHours?: number;
 }) {
   const [checkout, setCheckout] = useState<ToeflCheckoutResponse | null>(null);
   const [loading, setLoading] = useState(false);
@@ -44,11 +52,12 @@ export function ToeflReportCheckout({
     }
   }
 
-  return (
-    <main className={styles.shell}>
+  const content = (
       <section className={styles.card} aria-labelledby="toefl-report-checkout-title">
         <p className={styles.eyebrow}>{mockTitle} · entrega guardada</p>
-        <h1 id="toefl-report-checkout-title" className={styles.title}>Tu examen terminó. El informe detallado es opcional.</h1>
+        {embedded
+          ? <h2 id="toefl-report-checkout-title" className={styles.title}>Tu examen terminó. El informe detallado es opcional.</h2>
+          : <h1 id="toefl-report-checkout-title" className={styles.title}>Tu examen terminó. El informe detallado es opcional.</h1>}
         <p className={styles.lead}>El simulacro se hizo sin costo. Un único pago desbloquea la corrección privada que ya quedó vinculada a esta entrega.</p>
         <div className={styles.included} aria-label="Contenido del informe">
           <div><strong>Reading y Listening</strong><span>Aciertos brutos verificados en el servidor, sin fabricar una banda ETS.</span></div>
@@ -56,24 +65,32 @@ export function ToeflReportCheckout({
           <div><strong>Speaking</strong><span>Escucha humana de las grabaciones y observaciones basadas en evidencia.</span></div>
         </div>
 
-        {checkout && (
-          <div className={styles.price}>
-            <span>Pago único</span>
-            <strong>{formatCop(checkout.amountInCents)}</strong>
-            <span>Speaking se revisa dentro de un máximo de {checkout.speakingReviewSlaHours} horas.</span>
-          </div>
-        )}
+        <div className={styles.price}>
+          <span>Pago único</span>
+          <strong>{formatCop(checkout?.amountInCents ?? displayPriceCop * 100)}</strong>
+          <span>Aproximadamente USD 3. Speaking se revisa dentro de un máximo de {checkout?.speakingReviewSlaHours ?? displaySpeakingSlaHours} horas.</span>
+        </div>
 
         <div className={styles.actions}>
-          {!checkout && <button type="button" className={styles.primary} onClick={prepareCheckout} disabled={loading}>{loading ? 'Preparando…' : 'Consultar precio y continuar'}</button>}
+          {!checkout && <button type="button" className={styles.primary} onClick={prepareCheckout} disabled={loading || !pilotEnabled}>{loading ? 'Preparando…' : pilotEnabled ? 'Desbloquear informe' : 'Piloto listo · cobro apagado'}</button>}
           {checkout?.checkoutUrl && <a className={styles.primary} href={checkout.checkoutUrl}>Pagar de forma segura con Wompi</a>}
           {checkout && <button type="button" className={styles.secondary} onClick={prepareCheckout} disabled={loading}>{loading ? 'Verificando…' : 'Ya pagué: verificar'}</button>}
           <Link className={styles.secondary} href="/examenes/toefl">Volver a los simulacros</Link>
         </div>
         {loading && <p className={styles.status} role="status">Consultando la referencia segura…</p>}
         {error && <p className={styles.error} role="alert">{error}</p>}
-        <p className={styles.finePrint}>Wompi procesa el pago. El informe se habilita únicamente cuando nuestro servidor recibe y verifica el evento firmado de aprobación; la pantalla de regreso no basta.</p>
+        <p className={styles.finePrint}>{pilotEnabled
+          ? 'Wompi procesa el pago. El informe se habilita únicamente cuando nuestro servidor recibe y verifica el evento firmado de aprobación; la pantalla de regreso no basta.'
+          : 'El flujo está preparado para el piloto, pero este ambiente no puede iniciar cobros.'}</p>
       </section>
+  );
+
+  if (embedded) {
+    return <section className={`${styles.shell} ${styles.embedded}`}>{content}</section>;
+  }
+  return (
+    <main className={styles.shell}>
+      {content}
     </main>
   );
 }

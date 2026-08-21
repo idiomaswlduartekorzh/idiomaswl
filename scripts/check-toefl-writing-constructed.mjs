@@ -21,6 +21,7 @@ const emailPage = await read('src/app/(site)/practica/toefl/writing/write-an-ema
 const discussionPage = await read('src/app/(site)/practica/toefl/writing/academic-discussion/page.tsx');
 const mock = await read('src/data/mocks/toefl-set-1.ts');
 const client = await read('src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx');
+const paidReport = await read('src/app/(site)/examenes/toefl/resultado/[submissionId]/ToeflPaidReportClient.tsx');
 
 assert.match(component, /localStorage/, 'Timed tasks must persist locally.');
 assert.match(component, /deadlineMs/, 'Timed tasks need a durable deadline.');
@@ -33,7 +34,9 @@ assert.ok(!mock.includes('80–120'), 'Email must not invent an official 80–12
 assert.match(mock, /timeLimitSeconds/, 'Set 1 data must retain task deadlines.');
 assert.doesNotMatch(client, /SelfAssessModal|speakBands|wBand/, 'Constructed Writing must not become a self-awarded band.');
 assert.match(client, /No se calculó banda 1–6/, 'The final report must disclose that no official section band was calculated.');
-assert.match(client, /useWritingAssessment\('toefl'/, 'Constructed Writing enters the verified correction pipeline.');
+assert.doesNotMatch(client, /useWritingAssessment\('toefl'/, 'Free results must not execute detailed correction.');
+assert.match(client, /ToeflReportCheckout/, 'Free results must offer the optional detailed report.');
+assert.match(paidReport, /useWritingAssessment\('toefl'/, 'Paid Constructed Writing enters the verified correction pipeline.');
 assert.match(client, /estimaciones pedagógicas por tarea/, 'Task feedback stays distinct from an official ETS score.');
 
 for (let setNumber = 2; setNumber <= 20; setNumber += 1) {

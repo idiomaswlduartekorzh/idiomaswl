@@ -19,8 +19,7 @@ import BuildSentenceItem from '@/components/toefl/BuildSentenceItem';
 import { ReadingMultiChoiceGroup, ReadingSingleChoiceGroup } from '@/components/toefl/ReadingChoiceGroup';
 import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import { TOEFLSubmission } from '@/components/exam-runner/TOEFLSubmission';
-import { TOEFLWritingReportPanel } from '@/components/labs/TOEFLWritingReportPanel';
-import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
+import { ToeflReportCheckout } from '@/components/toefl/ToeflReportCheckout';
 import type { ToeflSubmissionReceipt } from '@/lib/toefl/review-blueprint';
 import type { ToeflObjectiveAnswers, ToeflSpeakingPromptRef } from '@/lib/toefl/submission';
 import {
@@ -637,7 +636,7 @@ function computeReadingListening(
   return { correct, total };
 }
 
-function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, buildScore, capturedSpeakingCount, receipt, onRetry }: {
+function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, buildScore, capturedSpeakingCount, receipt, reportOffer, onRetry }: {
   mock: MockExam;
   exam: Exam;
   ans: Answers;
@@ -647,6 +646,7 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
   buildScore?: ToeflBuildSentenceScoreResult;
   capturedSpeakingCount: number;
   receipt: ToeflSubmissionReceipt;
+  reportOffer: Readonly<{ enabled: boolean; priceCop: number; speakingReviewSlaHours: number }>;
   onRetry: () => void;
 }) {
   const r = computeReadingListening(mock, 'reading', ans, wordScores, readingScore);
@@ -668,10 +668,6 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
   }
   const constructedWriting = getSkillSections(mock, 'writing').flatMap(s => s.questions).filter(q => q.type === 'write');
   const savedWriting = constructedWriting.filter((question) => (ans.write[question.id] ?? '').trim()).length;
-  const emailQuestion = constructedWriting.find(question => question.type === 'write' && question.taskNumber === 1) as WriteQuestion | undefined;
-  const discussionQuestion = constructedWriting.find(question => question.type === 'write' && question.taskNumber === 2) as WriteQuestion | undefined;
-  const emailAssessment = useWritingAssessment('toefl', mock.id, 1, emailQuestion ? ans.write[emailQuestion.id] ?? '' : '', receipt);
-  const discussionAssessment = useWritingAssessment('toefl', mock.id, 2, discussionQuestion ? ans.write[discussionQuestion.id] ?? '' : '', receipt);
 
   return (
     <main className="t26-results" style={{ '--exam-color': exam.color } as React.CSSProperties}>
@@ -694,19 +690,23 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
         <section>
           <h2>Writing</h2>
           <p className="t26-results__raw">Build {buildScore ? `${bCorrect}/${bTotal}` : 'sin corrección'}</p>
-          <p>Email y Discussion guardados: {savedWriting}/{constructedWriting.length}. Los reportes por tarea aparecen debajo.</p>
+          <p>Email y Discussion guardados: {savedWriting}/{constructedWriting.length}. La retroalimentación detallada se desbloquea abajo.</p>
         </section>
         <section>
           <h2>Speaking</h2>
-          <p className="t26-results__raw">En revisión</p>
-          <p>{capturedSpeakingCount} respuestas privadas enviadas; {blockedSpeaking} prompts bloqueados. El profesor debe escuchar la evidencia antes de emitir una estimación.</p>
+          <p className="t26-results__raw">Guardado</p>
+          <p>{capturedSpeakingCount} respuestas privadas enviadas; {blockedSpeaking} prompts bloqueados. La revisión humana comienza al desbloquear el informe.</p>
         </section>
       </div>
-      <section className="t26-results__writing" aria-labelledby="t26-writing-results-title">
-        <h2 id="t26-writing-results-title">Corrección de Writing</h2>
-        <TOEFLWritingReportPanel taskLabel="Write an Email" state={emailAssessment.state} result={emailAssessment.result} />
-        <TOEFLWritingReportPanel taskLabel="Academic Discussion" state={discussionAssessment.state} result={discussionAssessment.result} />
-      </section>
+      <ToeflReportCheckout
+        submissionId={receipt.submissionId}
+        mockTitle={mock.title}
+        receipt={receipt}
+        embedded
+        pilotEnabled={reportOffer.enabled}
+        displayPriceCop={reportOffer.priceCop}
+        displaySpeakingSlaHours={reportOffer.speakingReviewSlaHours}
+      />
       <p className="t26-results__date">Cerrado el {new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}.</p>
       <div className="t26-results__actions">
         <button type="button" className="btn" onClick={onRetry}>Reiniciar práctica</button>
@@ -744,7 +744,15 @@ function createClientId(prefix: string) {
   return `${prefix}:${value}`;
 }
 
-export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
+export default function Toefl2026PracticeClient({
+  exam,
+  mock,
+  reportOffer,
+}: {
+  exam: Exam;
+  mock: MockExam;
+  reportOffer: Readonly<{ enabled: boolean; priceCop: number; speakingReviewSlaHours: number }>;
+}) {
   const [phase, setPhase] = useState<Phase>('intro');
   const stages = useMemo(() => buildToeflFixedStages(mock), [mock]);
   const [stageIndex, setStageIndex] = useState(0);
@@ -1199,7 +1207,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   if (phase === 'results' && receipt) {
     return (
       <div className="prac-shell"><style>{T26_CSS}</style>
-        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} onRetry={handleRetry} />
+        <Results mock={mock} exam={exam} ans={ans} wordScores={wordScores} readingScore={readingScore} listeningScore={listeningScore} buildScore={buildScore} capturedSpeakingCount={Object.keys(recordings).length} receipt={receipt} reportOffer={reportOffer} onRetry={handleRetry} />
       </div>
     );
   }

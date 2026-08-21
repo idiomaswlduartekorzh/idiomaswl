@@ -222,3 +222,17 @@ export async function readToeflReport(submissionId: string, accessToken: string)
     },
   };
 }
+
+export async function listApprovedToeflSubmissionIdsForReview(): Promise<Set<string>> {
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL?.trim() || !process.env.SUPABASE_SERVICE_ROLE_KEY?.trim()) {
+    return new Set();
+  }
+  const { data, error } = await createAdminClient()
+    .from('toefl_report_orders')
+    .select('submission_id')
+    .eq('status', 'APPROVED')
+    .order('paid_at', { ascending: true })
+    .limit(500);
+  if (error || !data) return new Set();
+  return new Set(data.map((row) => String(row.submission_id)));
+}

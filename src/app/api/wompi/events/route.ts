@@ -1,5 +1,6 @@
 import { persistVerifiedWompiTransaction } from '@/lib/wompi/persistence';
 import { persistVerifiedToeflReportTransaction } from '@/lib/toefl/report-payment-events.server';
+import { persistVerifiedRegistrationTransaction } from '@/lib/registration/payment-events.server';
 import { parseWompiWebhookEvent, verifyWompiEventChecksum } from '@/lib/wompi/security';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { parseAndVerifyWompiTransaction } from '@/lib/wompi/transactions';
@@ -63,7 +64,18 @@ export async function POST(request: Request): Promise<Response> {
       if (toeflPersistence === 'failed') {
         return json({ received: false, code: 'persistence_unavailable' }, 503);
       }
-      return json({ received: true, ignored: toeflPersistence === 'ignored' }, 200);
+      if (toeflPersistence === 'saved') {
+        return json({ received: true, ignored: false }, 200);
+      }
+
+      const registrationPersistence = await persistVerifiedRegistrationTransaction({
+        transaction: event.data.transaction,
+        environment: config.environment,
+      });
+      if (registrationPersistence === 'failed') {
+        return json({ received: false, code: 'persistence_unavailable' }, 503);
+      }
+      return json({ received: true, ignored: registrationPersistence === 'ignored' }, 200);
     }
 
     const persistence = await persistVerifiedWompiTransaction({

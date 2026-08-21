@@ -42,6 +42,15 @@ requireText('src/app/(site)/examenes/toefl/resultado/[submissionId]/page.tsx', [
   'noarchive: true',
   'nosnippet: true',
 ]);
+const freeRunner = requireText('src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx', [
+  'ToeflReportCheckout',
+  'La revisión humana comienza al desbloquear el informe.',
+  'displayPriceCop={reportOffer.priceCop}',
+]);
+requireText('src/app/(site)/dashboard/admin/JoseDashboardServer.tsx', [
+  'listApprovedToeflSubmissionIdsForReview',
+  'paidToeflSubmissionIds.has(r.id)',
+]);
 const config = requireText('src/lib/toefl/report-payment-config.server.ts', [
   "process.env.TOEFL_REPORT_PAYWALL_ENABLED !== 'true'",
   'getWompiServerConfig',
@@ -56,6 +65,9 @@ requireText('src/lib/toefl/report-payment-events.server.ts', [
 ]);
 if (/process\.env\.(?:WOMPI|NEXT_PUBLIC_WOMPI)/.test(config)) {
   errors.push('TOEFL debe reutilizar la configuración Wompi central, no leer otra copia de sus llaves.');
+}
+if (freeRunner.includes('useWritingAssessment')) {
+  errors.push('El resultado gratuito TOEFL no debe ejecutar la retroalimentación detallada de Writing.');
 }
 if (fs.existsSync(path.join(root, 'src/app/api/payments/wompi/events/route.ts'))) {
   errors.push('No puede existir un segundo webhook Wompi para TOEFL.');

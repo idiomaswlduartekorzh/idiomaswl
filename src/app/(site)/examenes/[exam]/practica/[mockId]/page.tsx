@@ -7,6 +7,7 @@ import TOEFLPracticeClient from './TOEFLPracticeClient';
 import Toefl2026PracticeClient from './Toefl2026PracticeClient';
 import LanguagePracticeClient from './LanguagePracticeClient';
 import TOPIKPracticeClient from './TOPIKPracticeClient';
+import { getToeflReportOffer } from '@/lib/toefl/report-payment-config.server';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -32,8 +33,9 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
   if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={mock} />;
   if (slug === 'toefl') {
     // All twenty public TOEFL sets use the audited fixed-form 2026 runner.
+    const reportOffer = getToeflReportOffer();
     return mock.format === 'toefl-2026'
-      ? <Toefl2026PracticeClient exam={exam} mock={mock} />
+      ? <Toefl2026PracticeClient exam={exam} mock={mock} reportOffer={reportOffer} />
       : <TOEFLPracticeClient exam={exam} mock={mock} />;
   }
   // TOPIK: set-1 es el diagnóstico-gancho de leads (UI propia, sin timer);
