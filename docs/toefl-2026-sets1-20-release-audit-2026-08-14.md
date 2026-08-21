@@ -237,7 +237,7 @@ se conservan como evidencia.
 | Audio y QA | CERRADO | 400/400 archivos, 34.140.872 bytes, normalización -18 LUFS y contraste de guion con Whisper; hash de release `9235dd4…21741`. |
 | Captura y corrección | CERRADO | Entrega firmada, subida privada, scoring objetivo servidor, dos reportes de Writing y revisión humana de Speaking. |
 | Seguridad de datos | CERRADO | Bucket privado, URLs firmadas, service role sólo servidor, rate limit durable y comprobante HMAC de 2 horas. |
-| Producción final | EN CURSO | Integrar este cierre en `main`, desplegar y repetir smoke de las 20 rutas y 400 medios. |
+| Producción final | CERRADO | Commit `a821cde3` integrado en `main`; deployment Vercel `dpl_CxuR1H2KPUUbHUpQVJ2uYFH2sG8k` `READY` y activo en `www.idiomaswl.com`. Smoke productivo: 20/20 rutas, 400/400 audios, API privada y recorrido E2E con 11/11 grabaciones PASS. |
 
 Conclusión: los 20 simulacros cumplen el alcance declarado de **simulacro alineado no
 adaptativo de ruta fija** y tienen cerrados los gates locales de contenido, audio,
