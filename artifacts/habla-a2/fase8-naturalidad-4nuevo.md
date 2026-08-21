@@ -1,226 +1,145 @@
-# 4 (nuevo) · `the-pot-is-already-on` — naturalidad y vocabulario
+# Auditoría de naturalidad y vocabulario — escenario 4 (nuevo) · `the-pot-is-already-on`
 
-Auditoría de `artifacts/habla-a2/fase8-fichas-4nuevo.md` contra su diseño
-(`fase8-escenario-4nuevo.md`), la caja común (`caja-de-herramientas-a2.md`), el molde
-(`fase7-modelo-ficha-en.md`) y §3, §10 y §11 del blueprint. Comparación de voz contra las
-otras siete fichas del set.
+Sobre `artifacts/habla-a2/fase8-fichas-4nuevo.md`, contra `fase8-escenario-4nuevo.md`,
+`docs/habla-acompanado-blueprint.md` §11, `fase7-modelo-ficha-en.md` y
+`caja-de-herramientas-a2.md`. Comparado con las otras siete fichas del set.
 
-**Veredicto: suena a gente el motor, suena a libro el andamiaje. Vuelve a `habla-fichas-de-rol`.**
+## Veredicto
 
-El escenario está vivo y es el mejor construido del set en tres cosas que nadie más tiene: nadie
-puede contestar «sí, claro» en el primer turno, la trama entera **es** una autocorrección (Duván
-tiene que desdecirse de lo que dijo a las diez), y el cierre obliga al callado a producir. Eso no
-se toca. Lo que falla está entero en la ficha: **la tabla de exponentes volvió a ser un guion**, y
-**los dos bloques de la caja que este escenario más necesita están denegados justo a quien los
-necesita**. Dos graves, cinco medias, seis leves.
+**SUENA A LIBRO.** Vuelve a `habla-fichas-de-rol`.
 
----
-
-# A · NATURALIDAD
-
-## A.0 · Lo que suena a persona y no hay que tocar
-
-- **B no puede responder la pregunta de A.** «Duván no puede dar el número. Dice lo que sí
-  puede.» Es la cura directa de la señal 1 del olor a libro —todo el mundo responde exactamente
-  a lo que le preguntan— y es el único escenario del set donde está escrita en el motor.
-- **La autocorrección es la trama.** No es un adorno de reparación: el mensaje de las 11:11 y lo
-  que Duván dijo a las diez son el nudo. Señal 2, resuelta por diseño.
-- **`This pot doesn't leave the fire.`** — una negativa física, no personal. La glosa de la ficha
-  («a physical no, not a no to him») es la lectura correcta.
-- **`I got here at nine, and I didn't change the plan.`** — la queja sin reproche, en A2, sin
-  ironía. Bien calibrada.
-- **`raw` como «tu primer no en una palabra»** y **`empty-handed` como «one word for your first
-  no»**: dos celdas que enseñan a negarse con un sustantivo. Es lo mejor del vocabulario.
-- **La voz, sí: pasa.** Verificado contra las siete fichas: ninguna de las siete fórmulas de
-  encabezado sobrevive, y cada rol trae un bloque propio (el reloj de la olla, el reloj de la
-  moto) que once de las dieciséis fichas anteriores no tienen. Esto está conseguido de verdad y
-  no es cosmética: los dos relojes son lo que hace que `insistir` sea cortés.
-
-## A.1 · GRAVE 1 — Los 18 exponentes son oraciones cerradas. Cero troncos.
-
-Medido sobre el carácter `…` en las tablas de exponentes:
-
-| ficha | troncos |
-|---|---|
-| fichas 1, 2, 5, 6, 7, 8 | 18 · 18 · 27 · 25 · 24 · 28 |
-| **modelo** (`fase7-modelo-ficha-en.md`) | **13** |
-| **fase8-fichas-4nuevo** | **0** |
-
-Las dieciocho filas son frases completas, con todos los datos dentro y punto final:
-`How many are coming at one?` · `The cassava goes in at twelve, and it's ready at one.` ·
-`I'm heading out at eleven forty. Édgar takes one person.` · `Nothing big fits on that bike.`
-
-Esto es la señal 4 del olor a libro en su forma pura, y es **una regresión contra el propio
-molde**, que se corrigió en la segunda pasada del 21 de agosto precisamente por esto («la tabla
-de exponentes deja de ser un guion… con troncos donde había oraciones enteras», acta punto 9).
-Un exponente cerrado no se adapta: se lee. Y aquí se puede leer, porque no le falta ningún dato.
-
-**Y la tabla, leída de arriba abajo, es la conversación.** El orden de A reproduce el mapa de
-turnos del diseño (1 · 3 · 3 · 5 · 9 · 13 · 7 · 15 · 17) y el de B casi (2 · 2 · 4 · 14 · 6 · 8 ·
-— · 10 · 18). Peor: la columna `function` **numera los insistir en orden** —«again, with a clock»
-→ «again, with a reason» → «again, with a condition»—, que es un guion de tres turnos con su
-secuencia escrita al lado. Puerta 4 del §6, la mitad que dice «la tabla leída en orden tampoco
-puede ser la conversación».
-
-**Qué falta, concretamente:** troncos, y desordenar por función alfabética como hace el molde.
-`How many …?` · `The cassava goes in at …, and it's ready at …` · `I have to know before …,
-because …` · `If you don't …, I'll cook for …` · `Two rounds: some at … and the rest at …` ·
-`… can go, but only if …` en A. `I'm heading out at …` · `Nothing big fits on …` · `I can't show
-up empty-handed, so …` · `I'll bring back …, but only if …` en B.
-
-## A.2 · GRAVE 2 — Los dos bloques que el escenario necesita están denegados a quien los necesita
-
-**A no tiene el bloque 7** («saying no without saying no», marcado `[grants]` en la caja). A es el
-`[grants]` de esta escena entera —la casa, el fuego, la nevera y la comida son suyos— y tiene que
-negarse tres veces como mínimo: a apagar, a que salga la olla, a soltar el tarro antes de tener un
-número. Su única forma de negarse es `This pot doesn't leave the fire.`, de frente. La ficha lo
-razona con «the no comes from the fire», y ahí está el error: **la razón física es el contenido de
-la negativa, no su forma**. Lo que dice un amigo en un patio es `The thing about that is…` + el
-fuego, o `I want to help, but…`. Sin el bloque 7, el que manda se niega a golpes y el estudiante
-aprende que tener la razón exime de atenuar.
-
-**B no tiene el bloque 4** («saying your own thing again»). Y la pieza que B tiene que producir
-—la que da nombre a la primera pregunta del debrief— es **desdecirse de lo que dijo a las diez**.
-La forma exacta para eso es `Not …, but …` y `What I mean is…`, que viven en el bloque 4. El
-debrief pregunta «¿en qué turno lo corrigió?» sobre un movimiento para el que la ficha no le da
-ni una forma. Como mínimo, B necesita la fila `Not …, but …`.
-
-**Qué falta:** bloque 7 a A (y quitar la línea «Not 3, not 7»); bloque 4 a B, o su fila `Not …,
-but …` declarada aparte.
-
-## A.3 · MEDIA — La apertura está invertida
-
-A habla primero y le toca el bloque 1 en su variante `[grants]`, cuyas dos formas son
-`Good morning. How can I help you?` (mostrador) y `Come in. What's going on?` (tú lo llamaste).
-Ninguna de las dos existe en un patio donde el otro lleva ayudando desde las nueve. La forma
-informal entre gente que se ve todos los domingos —`Hi — can we talk for a second?`— está marcada
-`[asks]`, o sea asignada a **B, que no abre**.
-
-Y el primer exponente de A es `How many are coming at one?`, con el diseño confirmándolo
-(«A1 — Fabián: la gallina entra a las doce. ¿Cuántos son a la una? Y saca la mesa grande»). Eso es
-entrar a saco. Entre dos amigos, lo que abre es reconocer que el otro lleva tres horas ahí.
-
-**Qué falta:** una forma de apertura informal para A que no sea de mostrador. En este patio es
-literalmente `Have you eaten anything?` o `You've been here since nine — sit down a second.` Y con
-eso se activa de paso el dato oculto muerto de A.4.
-
-## A.4 — MEDIA — A no puede pedir que le repitan un número, y su objetivo es un número
-
-A tiene denegado el bloque 3. El bloque 3 contiene `Sorry — was that five or nine?`, escrito para
-números, y el objetivo entero de A es **arrancarle un número a B**: cuántos y antes de qué hora.
-B le va a decir «eleven forty», «one thirty», «six of them», «four o'clock» seguidos. El personaje
-cuyo único objetivo es capturar una cifra hablada no tiene la forma para confirmarla.
-
-El reparto de fondo es correcto —A `[jargon]` con bloque 4, B `[receives]` con bloque 3, que es la
-lectura buena del §10 y de las mejores del set—. Lo que sobra es el «Not 3» absoluto.
-
-**Qué falta:** el bloque 3 a A, aunque sea acotado a la fila del número y a `So, you're saying…?`.
-
-## A.5 · MEDIA — El cierre prohíbe las palabras del cierre
-
-La pantalla común dice: **«Nobody nods. *Sure*, *okay* and *fine* are none of the six lines.»** La
-intención es buena —asentir no cuenta como una de tus tres frases— pero está escrita como
-prohibición de las palabras. `Sure` y `okay` son exactamente lo que dos amigos dicen doce veces en
-un patio. Tal como está, el estudiante lee «no digas okay».
-
-Y ni una de las dos listas de criterios (`The lunch happened if` / `You rode off right if`) pide
-un cierre social: se puede «aprobar» el escenario terminando en el trato seco. Los dos apuntan al
-bloque 2 de la caja y ninguno lo exige.
-
-**Qué falta:** reescribir la regla como «asentir no cuenta como una de tus tres frases» en vez de
-prohibir la palabra, y meter el agradecimiento/confirmación en las dos listas de criterios.
-
-## A.6 · MEDIA — El dato humano de A está muerto
-
-«You got up at six, you haven't eaten, and you haven't said so.» Es lo más humano de las dos
-fichas. No está en ningún exponente, en ningún criterio de cierre y en ninguna pregunta del
-debrief. Y la ironía del set: **`to be starving` está en el vocabulario de B, para los seis del
-río; el que de verdad está en ayunas es A, y no tiene la palabra.**
-
-## A.7 · MEDIA — El debrief pregunta por un registro que la ficha no da
-
-Pregunta 3: «¿Qué le tocó hacer a la lengua aquí que en un mostrador lo habría hecho el
-uniforme?» Los dieciocho exponentes están en el mismo registro plano; nada en la ficha de A marca
-que manda, salvo los hechos. Con el bloque 7 puesto (A.2), la pregunta pasa a tener respuesta.
-Sin él, no.
-
-## A.8 · Leves
-
-1. La cabecera de B dice «No boss here — **but the house, the fire and the food are his**»; la de A
-   solo dice «No boss here». A no se entera por su ficha de que manda.
-2. `a lid` está en el vocabulario de A glosado como «the small thing **he'll** tell you to do», y
-   **B no tiene ni la palabra ni el exponente**: el suyo es `You should turn the fire down and come
-   with me.` El diseño (§9, turno 4) sí dice «tápela». A espera un movimiento que la otra ficha no
-   trae.
-3. `broth` aparece dos veces en la prosa y el reloj de A, sin glosar, sosteniendo su argumento
-   central (lo que hay a las 11:40 no es almuerzo).
-4. `cassava` y `plantain` aparecen cuatro veces sin glosar. Puerta 10: conocimiento que la ficha
-   no da. `cassava` no es A2.
-5. `a round` se usa en un exponente de A (`Two rounds, then: …`) y en el cierre común («the time of
-   the second round») y no está glosado en ninguno de los dos roles, en un sentido contable que un
-   A2 no tiene.
-6. `to save someone a plate` está glosado como unidad y el exponente usa otra forma
-   (`a plate for them`). Mínimo, pero es la única entrada cuya forma no reaparece.
+No por el escenario —el motor es el mejor del set y la voz es de verdad distinta—, sino porque
+las dos tablas de exponentes son nueve movimientos de avance seguidos, sin una sola pieza de
+apertura, de duda, de rectificación, de negativa blanda ni de cierre social; y porque el circuito
+de reparación solo funciona en una dirección. La pieza que el diseño declara obligatoria —que
+Duván se desdiga de lo que dijo a las diez— no tiene forma en ninguna de las dos pantallas.
 
 ---
 
-# B · VOCABULARIO
+## 1 · La voz: esto sí está resuelto
 
-## B.0 · Lo que pasa limpio
+Verificado sobre el set: las 16 fichas anteriores comparten literalmente ocho encabezados
+(`Where you are` 16/16, `You want` 16/16, `If you walk away with nothing` 16/16, `Facts`,
+`Words you need here`, `Your toolkit`, `Say it here…`, `You did it if`). **La ficha nueva no
+conserva ninguno.** Los dos relojes propios —`What the fire is doing while you talk` y
+`The bike, and what fits`— son bloques que ninguna otra ficha tiene, y son distintos entre roles.
+Esto suena a su patio y no a la plantilla. No es lo que se devuelve.
 
-**Ninguna de las veinte definiciones es más difícil que su palabra.** Comprobadas una a una: la
-más larga es `to keep an eye on something | to look at it every few minutes`, y todas usan léxico
-por debajo de la entrada. Es la mejor pasada de glosas del set.
+## 2 · Las señales de libro que sí aparecen
 
-**Ninguna celda `here` es calcable.** Cero comillas, cero ejemplos, cero celda que empiece por
-pronombre + verbo conjugado. Las veinte son nota de propósito. §11 avisa de que ésa es «la columna
-más calcable de la ficha entera»; aquí no lo es.
+**Señal 2 — nadie repite, se corrige ni se queda a medias.** Ni un exponente de los dieciocho es
+una vacilación, una autocorrección o una frase cortada. El set ya tiene el molde:
+`Wait — when?` (6A), `Sorry — I said yes before…` (6A), `That's not true anymore.` (6B),
+`Wait — that's not what we said.` (7A), `OK — I'll say it like this: …` (7B). Aquí, nada.
+Y la ficha además **prohíbe los únicos tokens de duda** que quedaban («Nobody nods. *Sure*,
+*okay* and *fine*…»). El bloque 8 de la caja se señala en los dos roles, pero sin forma propia
+de escena, en un escenario donde ambos tienen que pensar antes de ceder.
 
-**Y los campos son nuevos de verdad:** cocina y fuego en A, transporte y cuerpo en B, los cuatro
-con cero entradas en las 158 del set.
+**Señal 3 — los dos hablan con el mismo registro pese a que uno manda; y aquí, invertido.**
+Duván suena a persona: *I'm heading out at eleven forty*, *swing by*, *empty-handed*,
+*I got here at nine, and I didn't change the plan*. Fabián suena a aviso pegado en la pared:
+*The cassava goes in at twelve, and it's ready at one*, *The second chicken came out of the
+fridge at seven*, *This pot doesn't leave the fire*. **El que manda es el que menos suena a
+alguien**, que es lo contrario de lo que pasa en un patio propio. Fabián no tiene ni una forma
+de dirigirse a Duván, ni un marcador de arranque, ni una sola línea con cuerpo dentro.
 
-## B.1 · GRAVE de vocabulario — falta la palabra del cierre de B, y la del vehículo
+**Señal 5 — el escenario avanza en línea recta.** La tabla de A es, en orden: número / dato /
+dato / otra vez / otra vez / otra vez / consejo / salida / sí condicionado. Nueve casillas y
+ninguna que no empuje.
 
-**`a ride` / `a passenger`.** La segunda de las tres frases que **solo B puede decir** es «cómo
-llegan, sin el carro de Marcela». No tiene la palabra. El diseño (§10) aparta `to give someone a
-ride` por no repetir el escenario 7 — pero la prueba del §11 no es «¿se repite?», es **«¿puede
-este rol llegar al cierre sin esta palabra?»**, y aquí la respuesta es no. Solución sin repetir:
-**`a passenger`**, que ya está dos veces en sus datos duros sin glosar.
+## 3 · Lo que falta, pieza por pieza
 
-**`a motorcycle`.** En toda la ficha de B el vehículo se llama `bike`. En el escenario 1 del mismo
-set, `bike` es una bicicleta —engranajes, llanta trasera, candado, `road bike`—. Aquí un A2 lee
-«bike · one passenger · 15 minutes to the river · nothing big between your feet» y **la lectura
-bicicleta encaja entera**, así que el malentendido no se corrige nunca. La moto es el eje del rol
-B y la palabra no está dicha ni una vez.
+### Apertura — no hay, y el puntero a la caja no la da
+A abre con `How many are coming at one?`. Es entrar a saco. La caja se le señala como
+**1 `[grants]`**, cuyas dos formas son `Good morning. How can I help you?` (mostrador) y
+`Come in. What's going on?` (yo te llamé): **ninguna de las dos existe en un patio donde el otro
+lleva ahí desde las nueve**. El set ya resolvió este caso exacto y la ficha nueva no lo usa:
+6A escribe *«Block 1 has no form for this: yours is the first row of your table.»* Y la ficha 1
+lleva fila `opening` en los dos roles.
+**Falta:** una fila `opening` propia en cada rol. En A, el encuadre antes de la petición
+(*Listen — before you head out…* / *Come here a second.*). En B, la entrada al tema
+(*About the river…*).
 
-## B.2 · Las tres entradas que sobran (§11: si llega al cierre sin ella, fuera)
+### Atenuación y negativa indirecta — A las tiene prohibidas, y A es el que niega
+A dice que no tres veces como mínimo: la olla, el tarro y la hora. Su puntero dice
+**«Not 3, not 7: the no comes from the fire»**, y ese `Not 3, not 7` es **copiado tal cual del
+molde**, donde A era el que pedía y no tenía poder. Aquí A es el que concede y el que niega, en
+su propia casa, a un amigo que lleva ayudando desde las nueve: es el turno con más riesgo de cara
+de toda la ficha. Lo que le queda son un no físico (`This pot doesn't leave the fire.`) y una
+amenaza (`If you don't tell me a number, I'll cook for four.`).
+**Falta:** bloque 7 para A, o formas propias equivalentes —el set las tiene: `I'm not saying no,
+but…` (6B), `I'm not angry, but…` (7A), `I hear you, but that's not going to…` (1B)—. La razón
+«el no viene del fuego» explica el no a la olla; no explica el no al tarro, que es personal.
 
-| entrada | por qué sobra |
-|---|---|
-| **`to swing by`** (B) | La celda dice «the shape of the plan you want from him» — ¿de Fabián? Fabián no puede salir del patio y no pasa por ningún sitio. La palabra no está en ningún exponente ni en el mapa de turnos. La más floja de las veinte. |
-| **`to pick someone up`** (B) | Glosada «to take someone in **your car**». El carro es justo lo que no hay, y el único que recoge a alguien lo hace **en moto**. La glosa deja la palabra inservible para los dos viajes que sí existen. O se corrige a «to go and get someone and take them somewhere», o fuera. |
-| **`to stir`** (A) | Redundante con `to keep an eye on something`, que ya hace el trabajo de atar un cuerpo al patio. Y lo que A tiene que producir a la una no es remover: es el portón. |
+### Reparación — solo funciona en un sentido
+A lleva 4 `[jargon]`, B lleva 3 `[receives]`. La mitad A→B queda cerrada: A suelta *simmer*, B
+pregunta, A reformula. **La mitad B→A no existe:** A no tiene el bloque 3 y B no tiene el 4. Si A
+no entiende un número, una hora o `swing by`, no tiene con qué pedirlo otra vez, y B no tiene con
+qué decirlo de otra manera. Y el objetivo entero de A **es un número dicho de viva voz**: la forma
+que le hace falta es literalmente `Sorry — was that five or nine?`, que está en el bloque que le
+niegan. El set no respalda esta exclusión: 8B (la del mostrador, la poderosa) lleva el 3 como
+suyo, y 6A lleva la caja entera.
+**Falta:** bloque 3 en A —o su fila propia de reparación por números— y una salida de reformulación
+para B.
 
-**Con esas tres fuera caben las tres que faltan:** `a passenger` y `a motorcycle` en B, y en A la
-palabra del portón —`to let someone in` o `the gate`—, que es literalmente la tercera frase que
-**solo A puede decir** («qué necesita a la una que no puede hacer con el fuego prendido») y que la
-carta le crea en el turno 5 sin traerle ni una palabra con ella.
+### Rectificación — la pieza que el propio diseño exige, y no está
+§5 del diseño y el debrief 1 («¿En qué turno lo corrigió?») hacen obligatorio que Duván se
+desdiga de lo que dijo a las diez. **Ni una de las dieciocho formas sirve para desdecirse.** La
+ficha 6B tiene la forma exacta para esto: `That's not true anymore.`
+**Falta:** una fila en B, tipo *taking it back*, y el permiso explícito de decirla tarde.
+
+### Cierre social — cortado por una de las tres reglas
+Las dos tablas terminan en el sí condicionado. El bloque 2 se señala, pero la regla «nadie repite
+la línea del otro» + «nadie anota ni lee nada» se lleva por delante `So, we're clear then.` y
+`Is that OK for you?`, que es la comprobación natural de un acuerdo que solo existe hablado. Y no
+hay nada del tipo `We're good, right?` (7B) en un escenario cuya propia prosa cierra con *«the
+same people come back to this patio next Sunday»*.
+**Falta:** excepción escrita a la regla —*confirmar con tus palabras cuenta; decir las tres
+frases del otro por él, no*— y una fila de cierre social por rol.
 
 ---
 
-# C · Qué se devuelve
+## 4 · Vocabulario
 
-| # | qué | dónde |
-|---|---|---|
-| **G1** | Troncos con `…` en los 18 exponentes; reordenar por función, no por turno; quitar «again, with a clock / reason / condition» como secuencia | las dos tablas de exponentes |
-| **G2** | Bloque **7** a A · bloque **4** (o su fila `Not …, but …`) a B | las dos cajas |
-| **G3** | `a passenger` + `a motorcycle` en B · palabra del portón en A · fuera `to swing by`, `to stir` y `to pick someone up` (o su glosa corregida) | los dos vocabularios |
-| M1 | Apertura informal para A que no sea de mostrador | caja + exponentes de A |
-| M2 | Bloque **3** a A, al menos la fila del número | caja de A |
-| M3 | «Nobody nods» reescrito como «asentir no cuenta»; cierre social en las dos listas de criterios | pantalla común + criterios |
-| M4 | El hambre de A, en un exponente o en un criterio | ficha de A |
-| L1-L6 | Cabecera de poder en A · `a lid` sin contraparte en B · glosar `broth`, `cassava`, `plantain`, `a round` · forma de `to save someone a plate` | ambas |
+**Lo que está bien, y conviene no tocarlo.** Las veinte glosas son más simples que la palabra que
+definen. La columna `here` es nota de propósito en las veinte: ni una comilla, ni un ejemplo, ni
+un pronombre con verbo conjugado al principio — §11 cumplido, y es donde el set falla más.
+Verificado por grep: **ninguna de las veinte se repite** en las otras siete fichas ni en el molde.
+Los campos son los que el set no tocaba.
 
-**No se toca el motor.** Las tres salidas, la carta, la asimetría, el reparto de las seis líneas y
-los dos relojes están bien y son lo mejor que ha entrado al set. Lo que hay que reescribir es el
-andamiaje, que es donde este escenario se volvió libro.
+**Cuatro fallos concretos:**
+
+1. **`a lid` está en el rol equivocado.** Se glosa como *«the small thing he'll tell you to do»* —
+   o sea, A solo la oye. Pero el mapa de turnos (#4) hace que **B** recomiende «bájele, tápela», y
+   la lista de B no tiene ni una palabra de olla, y su exponente de ese turno
+   (`You should turn the fire down and come with me.`) esquiva la tapa. **B tiene que aconsejar
+   sobre una olla que no puede nombrar.** Pásala a B, o ponla en los dos.
+2. **B no puede aceptar la salida 2.** En esa salida Duván se queda cuidando el fuego. No tiene
+   `to stir` ni `to keep an eye on something`, que son de A. Una de las tres salidas de la zona de
+   acuerdo es inalcanzable en la lengua que se le da a B.
+3. **Faltan dos palabras que el cierre obliga a decir.** El cierre conjunto es literalmente
+   *«the time of the second round, and who's at the gate»*.
+   - `a round` (tanda) no está glosada en ninguna parte y aparece cruda en un exponente de A
+     (`Two rounds, then: …`). No es transparente en A2 y no está en la caja.
+   - `the gate` está en los datos duros de A y en el cierre, sin glosa. El set ya se quemó con esta
+     palabra exacta: la auditoría del escenario 7 corrigió haberla glosado con `door`.
+   Sitio de donde sacarlas, aplicando la prueba de §11 («¿puede llegar al cierre sin ella?»):
+   **`firewood`** en A (decorativa; `to keep an eye on something` ya hace ese trabajo) y
+   **`to cool off`** en B (el calor lo sostiene `the shade`).
+4. **`to pick someone up` tiene dos problemas.** La glosa —*«to take someone in your car»*— excluye
+   la moto de Édgar, que es el único vehículo disponible y el uso que B necesita; y la entrada,
+   tal como está escrita, es un phrasal separable con el pronombre en medio, que es la estructura
+   que la cabecera de la caja declara fuera de A2. Reglosar (*to go and get someone and take them
+   with you*) y pasar la forma a `habla-calibrador-nivel`.
+
+**Fuga menor:** *«the small thing he'll tell you to do»* le adelanta a A el turno 4 de B.
+
+---
+
+## 5 · Lo que no es mío y se deriva
+
+- **Presupuesto de tablas.** §11 fija «datos ≤ 10 filas». Cada rol tiene sus 10 **más** el reloj
+  propio (5 filas). El bloque nuevo es lo mejor de la ficha, pero excede la cuenta declarada:
+  que lo dictamine el guardián, no yo.
+- **Forma de `to pick someone up`** → `habla-calibrador-nivel`.
+- **6-9 o 6-10 exponentes** → sigue abierto en el acta, la ficha escribe 9 y no toma partido.

@@ -1,309 +1,306 @@
-# Calibración de nivel — escenario 4 (nuevo) · `the-pot-is-already-on`
+# Calibración de nivel — inglés A2 · escenario 4 (nuevo) · `the-pot-is-already-on`
 
-Auditor: `habla-calibrador-nivel`. Fuentes: `docs/habla-acompanado-blueprint.md` §2, §4, §6, §9,
-§10, §11 · `artifacts/habla-a2/fase8-fichas-4nuevo.md` · `artifacts/habla-a2/fase8-escenario-4nuevo.md`
-· `artifacts/habla-a2/fase7-modelo-ficha-en.md` · `artifacts/habla-a2/caja-de-herramientas-a2.md`
-· `src/data/grammar/registry.ts` (`getTopicBySlug('ingles','a2',…)`).
+Auditoría de `habla-calibrador-nivel` sobre `artifacts/habla-a2/fase8-fichas-4nuevo.md`
+(diseño: `fase8-escenario-4nuevo.md`). Norma: §4, §10 y §11 de
+`docs/habla-acompanado-blueprint.md`. Anclas verificadas slug a slug contra
+`src/data/grammar/registry.ts` → `src/data/grammar/ingles/a2/`.
 
-**Veredicto: CABE CON CAMBIOS.** El motor es A2 y la ruta mínima se escribe entera con lengua de
-A2 (§4 de este informe). Lo que no está en nivel es **la prosa de lectura del rol B, la carta y
-seis exponentes**, más dos anclas de gramática que faltan. Ninguno de los defectos obliga a
-subir el escenario de nivel: todos se arreglan cambiando la línea.
+**Veredicto: CABE CON CAMBIOS.** El motor es A2 y la ruta mínima existe, pero **solo después
+de tocar 6 exponentes**: hoy hay dos turnos del rol B que un A2 no puede producir, y con ellos
+dentro la ruta mínima se rompe. Nada de esto exige cambiar el escenario ni subirlo de nivel.
 
-**Yo no reescribo la ficha.** Cada cambio va nombrado —qué sale, qué entra— y vuelve a
-`habla-fichas-de-rol`.
+No reescribo las fichas. Nombro el cambio y vuelve a `habla-fichas-de-rol`.
 
 ---
 
 ## 1 · El acto de habla existe en el nivel (§4)
 
-| acto declarado | §4 dice | veredicto |
+| acto declarado | §4 hoy | veredicto |
 |---|---|---|
-| `recomendar` | no está en ninguna de las tres filas por nombre | **cabe**: se produce entero con `should` + verbo base, que es A2 (`should-advice`). Los tres turnos aconsejan **sobre el lado del otro**, nunca sobre el propio, y eso lo mantiene fuera del consejo indirecto de B1 |
-| `conceder-con-condicion` | A2 literal: «conceder poniendo una condición simple» | **cabe** |
-| `insistir` | **B1** | **cabe solo con la enmienda de §4 que el propio diseño propone** (§0 de `fase8-escenario-4nuevo.md`) |
+| `recomendar` | **no aparece en ninguna fila** de §4 | material A2 — `should-advice` es tema publicado de A2. §4 tiene un hueco, no el escenario |
+| `insistir` | fila **B1** | sostenido **solo si** §4 acepta la versión A2 del diseño (§0) |
+| `conceder-con-condición` | fila **A2** («conceder poniendo una condición simple») | ✔ |
 
-**El bloqueo, dicho sin adornos.** Hoy §4 pone `insistir` en B1 y el escenario produce **cuatro**
-turnos de `insistir` (globales 5, 9, 10, 13). Leída la enmienda propuesta —volver a pedir lo mismo
-con **razón nueva** y **condición simple**, con `because/so/but`, `have to` y primer condicional, y
-sin atenuador largo, sin reproche indirecto y sin ironía—, **las cuatro realizaciones escritas caen
-dentro de ella**: turno 5 `have to` + razón nueva, 9 razón nueva sola, 10 razón + condición,
-13 razón + condición. Ninguna usa una estructura fuera de A2.
+Los seis actos que además **produce** el mapa de 18 turnos —`pedir-aclaración`, `dar-dato/razón`,
+`quejarse`, `proponer-alternativa`, `rechazar`, `conceder`— están todos en A2 o por debajo.
 
-Es decir: el escenario **no** empuja `insistir` hacia B1 por la lengua; el problema es de
-etiqueta, y es de `habla-blueprint`, no de esta ficha. **Dependencia declarada:** si §4 no se
-enmienda, este escenario publica un acto que el blueprint prohíbe en A2 y la puerta 8 lo tumba.
-No se arregla en la ficha.
+**Sobre `insistir`.** La definición operativa del diseño (volver a pedir con **razón nueva** +
+**condición simple**, sin atenuador largo, sin reproche indirecto, sin ironía) es producible
+enteramente con `connectors-a2`, `have-to-must` y `first-conditional`, los tres de A2. Los cuatro
+turnos de `insistir` de este escenario (5, 9, 10, 13) no piden nada más. **Confirmo el nivel del
+acto tal como lo define §0 del diseño.** Escribir esa fila en §4 es de `habla-blueprint`, no mío:
+mientras no esté, este escenario declara un acto que la norma sitúa un nivel más arriba.
 
-## 2 · Exponente por exponente
+**Y confirmo la regla de dosis**, porque aquí se ve: `insistir` cuatro veces sin reloj físico es
+grosería. Con la olla y la moto corriendo, cada repetición tiene un porqué nuevo que no es la
+terquedad del hablante. El escenario cumple su propia regla.
 
-Dieciocho filas (9 + 9). **Doce están en nivel sin tocarlas. Seis salen o se reescriben.**
+---
+
+## 2 · Cada exponente, uno por uno
 
 ### ROLE A — Fabián
 
-| # | forma | veredicto |
+| # | exponente | veredicto |
 |---|---|---|
-| 1 | `How many are coming at one?` | **A2** · pregunta directa con *how many* + presente continuo de futuro |
-| 2 | `The cassava goes in at twelve, and it's ready at one.` | **A2** · presente simple de horario + *and* |
-| 3 | `This pot doesn't leave the fire.` | **A2** · presente simple negativo |
-| 4 | `I have to know before twelve, because the chicken goes in then.` | **A2** · `have to` + *because* |
-| 5 | `The second chicken came out of the fridge at seven.` | **A2** · pasado simple + *out of* |
-| 6 | `If you don't tell me a number, I'll cook for four.` | **A2** · primer condicional |
-| 7 | `You should tell them to leave the water at one thirty.` | **FUERA** |
-| 8 | `Two rounds, then: some at one and the rest at three.` | **A2 con reserva** |
-| 9 | `The container can go, but only if you come back at three.` | **A2** · `can` + *only if* |
+| 1 | `How many are coming at one?` | ✔ present continuous futuro + *how many* |
+| 2 | `The cassava goes in at twelve, and it's ready at one.` | ✔ presente de horario. **Pero `cassava` no está glosada** (ver §5) |
+| 3 | `This pot doesn't leave the fire.` | ✔ presente negativo |
+| 4 | `I have to know before twelve, because the chicken goes in then.` | ✔ `have to` + `because` |
+| 5 | `The second chicken came out of the fridge at seven.` | ✔ pasado irregular |
+| 6 | `If you don't tell me a number, I'll cook for four.` | ✔ primer condicional |
+| 7 | `You should tell them to leave the water at one thirty.` | **CAMBIA** |
+| 8 | `Two rounds, then: some at one and the rest at three.` | **CAMBIA** |
+| 9 | `The container can go, but only if you come back at three.` | ✔ `can` + `but` + `only if` + presente |
 
-**7 sale.** `tell + objeto + to + infinitivo` es orden indirecto: subordinada de infinitivo con
-sujeto propio, y §4 deja fuera del A2 el discurso indirecto. Y `leave the water` se lee como
-«dejar el agua», no como «salir del agua».
-**Entra:** `You should call them. They have to leave at one thirty.` — `should` + `have to`, dos
-oraciones, las dos anclables.
+**A7 sale, entra:** `You should tell them: get out of the water at one thirty.`
+Dos motivos. `tell + objeto + to-infinitivo` es complemento directivo, no A2. Y *leave the
+water* es ambiguo para un A2 leído: se parsea antes como «deja el agua ahí» que como «sal del
+río». Ancla: `should-advice` + imperativo (A1).
 
-**8, reserva.** Es una elipsis sin verbo (`Two rounds, then:`). Se sostiene como habla real, pero
-el A2 que la lee no sabe reproducirla. **Mejor:** `We can do two rounds: some at one, the rest at
-three.` — le devuelve el verbo y no le quita nada al acto.
+**A8 sale, entra:** `We can do it in two rounds: some at one, and the rest at three.`
+Es el **único** exponente de `proponer-alternativa` que tiene A (turno 15) y hoy es una frase
+sin verbo. §10 avisa exactamente de esto: un escenario cuyo acto es proponer alternativas y no
+tiene ninguna forma de proponer una. Ancla: `can-ability` (A1) + `quantifiers` (*some / the rest*).
 
 ### ROLE B — Duván
 
-| # | forma | veredicto |
+| # | exponente | veredicto |
 |---|---|---|
-| 1 | `They left at ten because of the heat.` | **A2** · pasado simple + *because of* |
-| 2 | `I'm heading out at eleven forty. Édgar takes one person.` | **A2** · presente continuo de futuro |
-| 3 | `You should turn the fire down and come with me.` | **A2** · `should` + phrasal separado por **sustantivo**, no por pronombre: la prohibición de la caja no aplica |
-| 4 | `They can eat at three, and you cook once.` | **A2 con reserva** |
-| 5 | `I got here at nine, and I didn't change the plan.` | **A2** · pasado simple afirmativo y negativo |
-| 6 | `What's ready right now, and what stays good cold?` | **FUERA** |
-| 7 | `Nothing big fits on that bike.` | **FUERA** |
-| 8 | `I can't show up empty-handed, so I'm not leaving with nothing.` | **FUERA** |
-| 9 | `I'll bring back the ones I can, but only if there's a plate for them.` | **FUERA** |
+| 1 | `They left at ten because of the heat.` | **CAMBIA** |
+| 2 | `I'm heading out at eleven forty. Édgar takes one person.` | ✔ |
+| 3 | `You should turn the fire down and come with me.` | ✔ separable con sustantivo en medio, permitido |
+| 4 | `They can eat at three, and you cook once.` | ✔ |
+| 5 | `I got here at nine, and I didn't change the plan.` | ✔ |
+| 6 | `What's ready right now, and what stays good cold?` | **CAMBIA** |
+| 7 | `Nothing big fits on that bike.` | ✔ límite, pero pide glosar `to fit` (ver §5) |
+| 8 | `I can't show up empty-handed, so I'm not leaving with nothing.` | **CAMBIA** |
+| 9 | `I'll bring back the ones I can, but only if there's a plate for them.` | **CAMBIA** |
 
-**4, reserva.** `you cook once` significa «cocinas **una sola** vez» y sin *only* se lee «cocinas
-una vez». **Entra:** `They can eat at three, and you only cook once.`
+**B1 sale, entra:** `They left at ten because it was hot.`
+`connectors-a2` enseña `because` + oración. `because of` + sustantivo no está en el tema y es
+justo la forma que el hispanohablante calca mal. Ancla: `connectors-a2` + `past-simple-be`.
 
-**6 sale.** `stay good cold` es verbo copulativo resultativo + adjetivo depictivo: dos capas que
-no existen en A2, y encima es **la** pregunta abierta que cura el ping-pong (§3.3). Si esa
-pregunta no se puede decir, el escenario pierde su cura.
-**Entra:** `What is ready now, and what doesn't need the fire?` — sigue siendo abierta, sigue sin
-poderse contestar con sí o no, y es presente simple afirmativo + negativo.
+**B6 sale, entra:** `What is ready now? And what can I take cold?`
+*stays good cold* es idiomatismo nativo (verbo copulativo + dos adjetivos apilados): un A2 lo
+entiende y no lo produce, y este es el turno del dato que **solo sale preguntando abierto**
+(§3.3). Si el exponente no es producible, la cura del ping-pong no ocurre.
 
-**7 sale.** `nothing big` (indefinido + adjetivo pospuesto) es A2 alto/B1 y es el **no rotundo**
-del rol.
-**Entra:** `Big things don't fit on that bike.`
+**B8 sale, entra:** `I can't show up empty-handed, so I need something before I go.`
+`I'm not leaving with nothing` es concordancia negativa: lógicamente dice lo contrario de lo que
+quiere decir, y es la trampa exacta del hispanohablante. Ancla: `connectors-a2` (*so*).
 
-**8 sale.** Dos negaciones en una oración (`can't` … `not leaving with nothing`). El A2 la
-desarma mal y puede entenderla al revés, que es lo peor que le puede pasar a un turno de insistir.
-**Entra:** `I can't show up empty-handed. If there's nothing, I don't go.` — misma insistencia,
-misma condición, primer condicional.
+**B9 sale, entra:** `I'll bring some of them back, but only if there's a plate for them.`
+*the ones I can* elide el complemento del modal detrás de un relativo sin pronombre. Es B1+, y
+es la **concesión con condición de B**, o sea la línea que cierra el escenario por su lado.
+Ancla: `will-future` + `first-conditional` + `quantifiers`.
 
-**9 sale.** `the ones I can` es relativa de objeto sin pronombre **y** con elipsis del verbo tras
-el modal. Es la concesión con condición del rol: la pieza que cierra el escenario no puede ser la
-más difícil de la ficha.
-**Entra:** `I can bring some people back, but only if there's food for them.`
+Con los seis cambios, los 18 exponentes quedan dentro de A2 hablado. **Cero** `could` de
+cortesía, `would rather`, pasiva, pregunta incrustada o condicional hipotético.
 
-**Cuenta tras los cambios:** 9 exponentes por rol, dentro del 6-9 de §11.
+---
 
-## 3 · Lo que hay que LEER — prosa A2 legible (§11)
+## 3 · Lo que hay que LEER: prosa A2 legible (§11)
 
-§11 permite que el A2 **leído** aguante más que el hablado. Aun así hay doce líneas que un A2 no
-reconstruye, y tres de ellas son exactamente el telegrama que §11 prohibió el 21 de agosto.
+La ficha declara «prosa legible, no telegrama». Se cumple en la mayor parte, y falla en once
+líneas. Cinco son telegramas y seis son idiomatismo por encima del nivel.
 
-### Telegramas en prosa (§11: la prosa va en oraciones cortas y **completas**)
+**Rol A — telegrama, la falta grave:**
 
-| dónde | está escrito | entra |
-|---|---|---|
-| A · dato oculto | `In before twelve, it feeds twelve. Not in, it goes bad tonight.` | `If it goes in before twelve, it feeds twelve. If it doesn't, it goes bad tonight.` |
-| A · lo que se pierde | `Twelve plates and nobody at the table.` | `There are twelve plates and nobody at the table.` |
-| B · lo que se pierde | `Six people at a river with no food, no store, no car until four…` · `Behind you, lunch for twelve and one man alone at the fire.` | dos oraciones con verbo: `Six people are at the river…` · `Here, there is lunch for twelve and one man alone at the fire.` |
-| B · bloque propio | `Nothing big rides between your feet. A cooler does. A pot never will.` | `Only small things ride between your feet. A cooler fits. A pot never fits.` (la elipsis con pro-verbo `does`/`will` es B1 de lectura) |
+- `In before twelve, it feeds twelve. Not in, it goes bad tonight.` → es literalmente el patrón
+  que §11 prohíbe (`if nobody goes: her news, tonight`). Entra: *If it goes in before twelve, it
+  feeds twelve. If it doesn't go in, it goes bad tonight.*
+- `Twelve plates and nobody at the table.` → *There are twelve plates and nobody at the table.*
 
-### Léxico y estructura por encima del nivel
+**Rol A — por encima del nivel:**
 
-| dónde | está escrito | entra |
-|---|---|---|
-| A · restricción 1 | `…are the reason, not stubbornness.` | `…are the reason. It is not that you don't want to.` (*stubbornness* no es A2) |
-| A · restricción 2 | `You don't say the group did wrong.` | `You don't say the group made a mistake.` |
-| A · dato oculto | `…and you haven't said so.` | `…and you haven't told him.` (el pro-forma `say so` no es A2) |
-| A · encabezado | `If he rides off with nothing settled` | `If he leaves and nothing is decided` → mejor sin pasiva: `If he leaves with no plan` |
-| A · bloque propio | `That's firewood, not habit.` | `A wood fire needs this. It is not a habit.` |
-| A · caja | `…the reason is nobody's.` | `…and the reason is not yours or his.` |
-| B · situación | `The heat took six of your friends down to the river at ten.` | `It was very hot, so six of your friends went down to the river at ten.` |
-| B · restricción 3 | `Only what fits between your feet goes on that bike.` | `On that bike you can only carry small things. They go between your feet.` (relativa libre en posición de sujeto) |
-| B · dato oculto | `That card is your strongest and it cuts both ways: play it early, and he answers that they should walk back.` | `This is your best card, but it is dangerous. If you say it early, he says they should walk back.` (*cut both ways* es idioma opaco; el imperativo+`and` como condicional es B1) |
+- `before the fire gets to twelve` → *before twelve o'clock*. El fuego no llega a las doce.
+- `not stubbornness` → fuera la palabra. *Raw cassava and hot water are the reason.*
+- `You don't say the group did wrong.` → inglés torcido. *You don't say the group made a mistake.*
+- `Put two ways on the table before the yes.` → *You put two options on the table before he says yes.*
+- `That's firewood, not habit.` → metáfora indescifrable en L2. *It's a wood fire. It needs you.*
+- `If he rides off with nothing settled` → *If he rides off and you have no answer*.
+- `you haven't said so` → *you haven't told him*.
 
-### Discurso indirecto con retroceso de tiempo — los tres únicos casos del archivo
+**Rol B — el más cargado, y con el único `would` del set:**
 
-Grep completo: **cero `could` de cortesía, cero pasiva, cero `would rather`, cero present perfect
-de duración con *for/since* en prosa** (los tres `since` viven en tablas, como notas: correcto).
-Quedan tres retrocesos, todos en el rol B y la carta:
+- `You told him at ten that everybody would be here at one` → **`would`.** Es futuro
+  desplazado, no condicional hipotético, pero no hay ningún tema de A2 que lo sostenga.
+  Entra: *At ten you told him one thing: everybody back here at one.*
+- `at 11:11 she wrote that she stays there until four` → concordancia de tiempos rota en el
+  propio inglés. *Her message came at 11:11: she stays there until four.*
+- `That card is your strongest and it cuts both ways: play it early, and he answers that they
+  should walk back.` → modismo B2 + imperativo condicional + subordinada reportada, todo en una
+  línea. *That card is your best one, and it can also hurt you. If you play it early, he says
+  the easy thing: they can walk back.*
+- `Only what fits between your feet goes on that bike.` → relativa libre en sujeto.
+  *On that bike you can only carry something small, between your feet.*
+- `Nothing big rides between your feet. A cooler does. A pot never will.` → dos elipsis con
+  proverbo. *Nothing big rides between your feet. A cooler fits. A pot never fits.*
+- `The heat took six of your friends down to the river at ten.` → causativo figurado.
+  *Six of your friends went down to the river at ten, because it was very hot.*
+- `Six people at a river with no food, no store, no car until four — and your message sent them
+  there.` → sin verbo principal. *Six people are at a river with no food, no store and no car
+  until four. Your message sent them there.*
+- `Behind you, lunch for twelve and one man alone at the fire.` → *Behind you there is lunch for
+  twelve, and one man alone at the fire.*
 
-1. `You wrote in the chat that lunch was coming.` → `You wrote in the chat: lunch is coming.`
-2. `at 11:11 she wrote that she stays there until four` → **además está mal en inglés** (retroceso a
-   medias). Entra: `at 11:11 she wrote in the chat: she is there until four.`
-3. `You told him at ten that everybody would be here at one, and you haven't shown him.` → `would`
-   es la forma que §4 deja fuera, y `you haven't shown him` se queda sin objeto. Entra:
-   `At ten you told him everybody comes back at one. You have not shown him the new message.`
+Ninguna de las sustituciones se puede decir tal cual en la conversación: todas siguen hablando
+**de** él en segunda persona. La prueba de calcabilidad no se relaja. Verificarla otra vez es de
+`habla-calcable`; aquí solo garantizo que lo propuesto no la empeora.
 
-## 4 · La ruta mínima — la prueba que decide
+---
 
-Escrita **solo** con lengua A2 y con los exponentes ya corregidos. Nueve turnos, se llega al
-cierre con las seis líneas obligatorias y la carta dentro.
+## 4 · Los datos duros, y la trampa del `since`
 
-> **1 · A** — `The chicken goes in at twelve. How many are coming at one?`
-> **2 · B** — `They left at ten because of the heat. I'm heading out at eleven forty.`
-> **3 · A** — `The cassava goes in at twelve, and it's ready at one. This pot doesn't leave the fire.`
-> **4 · B** — `You should turn the fire down and come with me.`
-> **5 · A** *(carta)* — `My mom is coming at one with four more people. I have to know before twelve, because the chicken goes in then.`
-> **6 · B** — `I got here at nine, and I didn't change the plan. What is ready now, and what doesn't need the fire?`
-> **7 · A** — `You should call them. They have to leave at one thirty. We can do two rounds: some at one, the rest at three.`
-> **8 · B** — `Big things don't fit on that bike. I can't show up empty-handed. If there's nothing, I don't go.`
-> **9 · A** — `There's rice and chicken in the fridge. The container can go, but only if you come back at three.`
-> **9 · B** — `I can bring some people back, but only if there's food for them. I'll tell them at twelve.`
+Horas (11:20, 11:40, 12:00, 12:40, 1:00, 1:30, 3:00, 4:00, 11:11), fecha (*Sunday, September 20*)
+y numerales (six, twelve, sixteen) son todos decibles en A2: `telling-time` y las fechas son A1.
+**Ningún dato hay que cambiarlo por indecible.** Pero tres notas empujan solas a la estructura
+prohibida:
 
-**Se escribe.** Presente simple, presente continuo de futuro, pasado simple, `have to`, `should`,
-`can`, primer condicional, `because`/`so`/`but`, *how many*. Nada más. **El escenario es A2.**
+| ficha | nota de hoy | entra | por qué |
+|---|---|---|---|
+| A · datos | `on since 9:00` | `lit at 9:00` | *on since nine* se rinde como `It's been on since nine` — present perfect de duración, prohibido |
+| A · datos | `out of the fridge since 7:00` | `cut at 7:00 · out of the fridge` | igual |
+| B · datos | `six people since 10:00` | `six people · they went at 10:00` | igual |
 
-Y de paso: la ruta mínima **no cierra** con menos de nueve turnos por rol, porque las seis líneas
-del cierre están repartidas tres y tres. Puerta 11 (nadie lo resuelve en menos de 6 turnos) la
-pasa por diseño, no por suerte.
+La ficha se defiende diciendo que *since* «vive en la tabla, donde es una nota». Es cierto para
+la puerta de calcabilidad y falso para la de nivel: la nota es el molde del que sale la frase, y
+esta nota solo tiene un molde, y es B1. Con `lit at 9:00` la frase que sale es `I lit the fire at
+nine` — pasado simple, A2, y además es la que ya está en la prosa.
 
-## 5 · Los datos duros son decibles
+---
 
-| dato | cómo se dice | veredicto |
-|---|---|---|
-| horas en punto y con minutos | *at nine · at twelve · at one · at three · eleven forty · one thirty* | **A2** (`telling-time`, A1) |
-| números hasta doce y dieciséis | *twelve servings · four more people* | **A2** |
-| fecha completa | domingo 20 de septiembre | **nunca hace falta decirla**: vive en la tabla y no entra en ninguna de las seis líneas del cierre. Correcto |
-| 11:11 | no se dice: es la hora de un mensaje que B enseña o no enseña | correcto |
-| ~12:40 | el `~` no se pronuncia. Si B tiene que decirlo, dice *about twelve forty* | **entra en la caja de datos como nota**, ya lo está |
+## 5 · El bloque de vocabulario
 
-Ningún dato obliga a una estructura fuera de nivel. **No hay que cambiar ningún dato.**
+**Las 20 glosas son más simples que la palabra que definen, con dos excepciones y dos bajas.**
 
-## 6 · El bloque de vocabulario — la definición más simple que la palabra
+**Rewrite (glosa más pesada que la entrada):**
 
-Veinte entradas, diez por rol: dentro del 8-10 de §11. Ninguna glosa pasa de una línea, ninguna
-lleva comillas, y **ninguna de las veinte celdas `here` empieza por pronombre + verbo conjugado**
-—la trampa que §11 marca como la más calcable de la ficha—. Comprobado una a una.
+- `to go bad — to stop being safe to eat` → `to become bad, so you can't eat it`.
+  *stop + gerundio + adjetivo + infinitivo* es más gramática que la que enseña la entrada.
 
-**Dieciséis entradas pasan tal cual.** Tres observaciones y una corrección obligatoria:
+**Baja 1 — `a lid` (rol A) sale.** Falla la prueba de §11 («¿puede este rol llegar al cierre sin
+esta palabra?»): no aparece en ningún dato duro de A, en ningún exponente de A, y **tampoco en
+ninguno de B**, así que no es de las «que le va a soltar el otro». Su columna `here` —*the small
+thing he'll tell you to do*— promete un turno que no existe en el mapa de 18.
 
-1. **`to go bad — to stop being safe to eat`.** La glosa usa `stop + -ing` y un adjetivo con
-   infinitivo: es más difícil que la palabra que define. **Entra:** `to become old and not good to
-   eat`.
-2. **`to pick someone up` ya existe en el set.** El escenario 1 (`the-bike-in-the-parking-lot`,
-   ficha B) trae `to pick something up — to go somewhere later and take it`. Es el mismo phrasal
-   con otro sentido, y el encargo del diseño (§10) pedía cero repeticiones: mandó comprobar
-   `to give someone a ride`, `a spot` y `to be short`, y se le escapó éste. **No es de nivel, es de
-   conjunto:** o se cambia por `a ride` (que no está en el set: comprobado) o se acepta la
-   repetición a sabiendas. Lo devuelvo nombrado; decide `habla-conjunto`.
-3. **`a lid` está en la ficha equivocada.** §11 admite meter en el vocabulario «las que le va a
-   soltar el otro» — pero *el otro tiene que poder soltarlas*. `a lid` está en **A**, y su columna
-   `here` dice «the small thing he'll tell you to do»: se lo tiene que decir **B**, y B no tiene
-   `lid` ni en su vocabulario ni en sus exponentes (el suyo es `turn the fire down`). O `a lid`
-   pasa a B, o la celda `here` de A deja de prometer que B lo va a decir.
-4. **`to cool off` es la entrada más floja de las veinte.** Prueba de §11: ¿llega B al cierre sin
-   ella? Sí — no aparece en ninguna de sus tres líneas obligatorias; solo explica por qué se
-   fueron a las diez. Es la candidata natural a ceder el sitio si entra `a lid` en B.
+**Entra en su sitio:** `cassava and plantain — a white root and a green banana, cooked in water`.
+Están en la prosa de A, en la tabla del fuego, en la tabla de datos y **dentro del exponente A2**,
+y hoy no se glosan en ninguna parte. Un A2 no colombiano no las tiene, y son la razón física del
+«no» de todo el escenario.
 
-Los otros dieciocho pares palabra/glosa son correctos y **más simples que la palabra**:
-*simmer/cook slowly in hot water*, *firewood/wood you burn to make a fire*, *raw/not cooked yet*,
-*a serving/the food for one person*, *leftovers/food from an earlier meal*, *to be starving/very,
-very hungry*, *a cooler/a box that keeps food cold*, *empty-handed/with nothing in your hands*,
-*the shade/a place out of the sun*. Y los campos son los que el set no tenía: cocina, fuego,
-transporte, cuerpo.
+**Baja 2 — `to pick someone up` (rol B) sale.** El propio diseño (§10) mandaba comprobarlo, y
+choca: el escenario 7 ya publica `to give someone a ride — to take a person somewhere in your
+car`, y aquí se glosa `to take someone in your car`. Misma definición, mismo campo, dos entradas.
+Además no aparece en ningún exponente de B.
 
-## 7 · Dos cosas que no son de nivel y tumbarían la ficha igual
+**Entra en su sitio:** `to fit — to be small enough for a space`. Está en el encabezado del
+bloque propio de B (*The bike, and what fits*), en la fila `nothing big` de los datos, y **es el
+verbo del «no» rotundo de B** (`Nothing big fits on that bike.`). Es la palabra que hoy se usa
+tres veces sin definirse.
 
-Se dicen aquí porque se ven leyendo los exponentes, y vuelven con lo demás a `habla-fichas-de-rol`.
+Las 18 restantes pasan. La columna `here` es nota de propósito en las veinte: ni una comilla, ni
+un ejemplo, ni una celda que empiece por pronombre y verbo conjugado.
 
-**a · La carta es calcable, y es el único sitio del archivo donde eso pasa.** El párrafo del turno
-5 está en oraciones de tercera persona que se dicen tal cual y hacen avanzar el turno: `She's
-coming at one with four more people.` · `They're not bringing anything.` · `They already left the
-house.` Los siete escenarios del set entregan la carta **en tabla de notas** con comentario no
-decible encima (comprobado en 1, 2, 4, 5, 6, 7 y 8, y en el molde). **Cambio:** el párrafo pasa
-entero a la tabla de notas que ya está debajo —`Mother · 1:00 · +4 (aunt + 3 from church) ·
-already left · brings nothing`— y en prosa se deja solo comentario que no se puede pronunciar, al
-modo del molde. Además, `Somebody told her there was lunch here` es el cuarto retroceso de tiempo
-del archivo: pasa a nota.
+---
 
-**b · El disparador no está en turnos globales, y §6 avisa de esto por su nombre.** La carta dice
-`Turn 5.` y nada más. A arranca, así que **su** turno 5 es el global 9 —fuera de la ventana 3-6—.
-Los siete escenarios del set lo escriben explícito («global turn 5 · A's third turn, because A
-starts: A, B, A, B, **A**»). **Cambio:** `Global turn 5 — your third turn, because you start:
-A, B, A, B, **A**.`
+## 6 · La ruta mínima — la prueba que decide
 
-**c · Menor.** La cabecera dice `9 turns · 7 minutes` en los dos roles; el molde dice `7 turns
-each`. El acta del guardián (punto 7) pidió la unidad escrita. **Entra:** `9 turns each`.
+Doce turnos, solo lengua de A2, con los seis exponentes ya corregidos. Cierra las tres líneas de
+cada rol, la conjunta y la que queda abierta con nombre y hora.
 
-**Lo que sí está bien y no se toca:** prosa medida con el contador canónico —**A 432 · B 441**,
-reproducido por mí con las reglas de `prosa-canonica.mjs`, los dos bajo 450—; diez filas de datos
-duros por rol; el reparto de bloques de la caja (A sin 3 y sin 7, B sin 4) es coherente con quién
-tiene la jerga; y las nueve piezas de §2 están las nueve en cada rol.
+> **F1** — The chicken goes in at twelve. How many are coming at one?
+> **D1** — They left at ten because it was hot. And I'm heading out at eleven forty.
+> **F2** — This pot doesn't leave the fire. The cassava goes in at twelve, and it's ready at one. `[A-1]`
+> **D2** — You should turn the fire down and come with me.
+> **F3** — I have to know before twelve, because the second chicken goes in then. My mother comes at one with four more. I need somebody at the gate, and I can't leave the fire. `[carta + A-3]`
+> **D3** — I got here at nine, and I didn't change the plan. What is ready now? And what can I take cold?
+> **F4** — There's rice and chicken in the fridge, from Saturday. That's my lunch on Monday and Tuesday. `[A-2]`
+> **D4** — I can't show up empty-handed, so I need something before I go. Marcela's car stays there until four. Six come back: Édgar takes two, and the rest walk. `[B-1 + B-2]`
+> **F5** — We can do it in two rounds: some at one, and the rest at three.
+> **D5** — I'll tell them before one: out of the water at one thirty. `[B-3]`
+> **F6** — The container can go, but only if you come back at three. And you're at the gate when my mother comes. `[conceder + conjunta]`
+> **D6** — Three o'clock, and I'm at the gate. I'll bring some of them back, but only if there's a plate for them. My aunt eats in the second round — I tell her myself. `[conceder + lo abierto]`
 
-## 8 · `grammarReferences` — anclado slug a slug contra el registro
+**Escrita sin los cambios, la ruta se rompe en D3 y en D6**: `What stays good cold?` y `I'll
+bring back the ones I can` son las dos únicas piezas que un A2 no puede producir, y son
+justamente el dato de pregunta abierta y la concesión final de B. Ese es el argumento de peso
+para que los seis cambios entren, y también la prueba de que el escenario es A2 **con** ellos:
+todo lo demás de la ruta ya está en el nivel.
 
-Comprobado con `src/data/grammar/registry.ts` y `src/data/grammar/ingles/a2/`. **Ojo con la trampa
-del sufijo: el nombre del archivo no es el slug.** `connectors.ts` declara `connectors-a2`, y
-`getTopicBySlug('ingles','a2','connectors')` devuelve **null**. Lo mismo con
-`present-continuous-future-a2`, `past-continuous-a2`, `relative-clauses-a2`,
-`prepositions-movement-a2` y `used-to-a2`.
+Doce turnos > 6 (puerta 11 ✔) y ≤ 18 (§4: 9 por rol ✔). Siete minutos aguantan.
 
-Los cinco del diseño existen. **Falta corregir un título y faltan dos anclas**: dos exponentes de
-la ruta mínima (`I'm heading out at eleven forty`, `How many are coming at one?` y `I'll cook for
-four`, `I'll bring back…`) no tenían tema que los sostuviera.
+---
+
+## 7 · `grammarReferences` — anclado slug a slug
+
+Verificado contra `src/data/grammar/ingles/a2/`. **Los cinco del diseño existen**; el título de
+`connectors-a2` estaba abreviado y aquí va el literal. **Faltaban dos** que los exponentes usan y
+nadie ancló: el present continuous de futuro (`How many are coming at one?`, `I'm heading out at
+eleven forty`) y el pasado irregular (`came out`, `got here`, `left at ten`). Listo para pegar:
 
 ```ts
 grammarReferences: [
-  { slug: 'first-conditional',
+  {
+    slug: 'first-conditional',
     title: 'El Primer Condicional en Inglés A2',
-    rationale: 'Las dos concesiones con condición y los dos insistir con condición: If you don\'t tell me a number, I\'ll cook for four.' },
-  { slug: 'have-to-must',
+    rationale: 'Las dos concesiones con condición y el tercer «insistir»: If you don\'t tell me a number, I\'ll cook for four.',
+  },
+  {
+    slug: 'have-to-must',
     title: 'Have to y Must en Inglés A2',
-    rationale: 'La obligación física de los dos relojes: I have to know before twelve · They have to leave at one thirty.' },
-  { slug: 'connectors-a2',
+    rationale: 'La obligación física del que manda: hay que quedarse con el fuego, y hay que saber el número antes de las doce.',
+  },
+  {
+    slug: 'connectors-a2',
     title: 'Conectores en Inglés A2: because, so, although, however, but',
-    rationale: 'La razón nueva que convierte repetir en insistir: because, so, but.' },
-  { slug: 'should-advice',
+    rationale: 'La razón nueva de cada «insistir» y el contraste de cada concesión: because, so, but.',
+  },
+  {
+    slug: 'should-advice',
     title: 'Should y Shouldn\'t en Inglés A2',
-    rationale: 'Los tres recomendar, y en las dos direcciones: cada uno aconseja sobre el lado del otro.' },
-  { slug: 'quantifiers',
-    title: 'Cuantificadores en Inglés A2',
-    rationale: 'El número que decide la segunda gallina: how many, enough, some, the rest.' },
-  { slug: 'present-continuous-future-a2',
+    rationale: 'Los tres «recomendar», y en las dos direcciones: cada uno aconseja sobre el lado del otro.',
+  },
+  {
+    slug: 'present-continuous-future-a2',
     title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
-    rationale: 'Las dos horas que chocan, dichas como plan cerrado: How many are coming at one? · I\'m heading out at eleven forty.' },
-  { slug: 'will-future',
-    title: 'El Futuro con Will en Inglés A2',
-    rationale: 'La consecuencia y la promesa del cierre: I\'ll cook for four · I\'ll bring back…' },
+    rationale: 'Los dos relojes puestos uno al lado del otro: How many are coming at one? / I\'m heading out at eleven forty.',
+  },
+  {
+    slug: 'past-simple-irregular',
+    title: 'Past Simple Verbos Irregulares en Inglés A2',
+    rationale: 'Lo que ya pasó y nadie puede cambiar: se fueron a las diez, la gallina salió a las siete, él llegó a las nueve.',
+  },
+  {
+    slug: 'quantifiers',
+    title: 'Cuantificadores en Inglés A2',
+    rationale: 'El número que decide la gallina y el reparto de las dos tandas: how many, some, the rest, nothing.',
+  },
 ]
 ```
 
-**Lo que NO se debe añadir**, aunque sostenga lengua de la ficha: `can-ability` y `telling-time`
-son de **A1**. Con `getTopicBySlug('ingles','a2', …)` devuelven `null` igual que un slug
-inventado. Si algún día hace falta enlazar A1 desde una ficha A2, eso es producto nuevo y va a
-`habla-integracion`.
+**Corrección al diseño:** la justificación de `quantifiers` decía «*how many, enough, too much*».
+El tema publica *much, many, a lot of, few, little, some, any*: `enough` y `too much` no están en
+él y no pueden citarse como ancla. La versión de arriba ya lo corrige.
 
-## 9 · Resumen de cambios, para `habla-fichas-de-rol`
+**Comprobado que no se cuela ninguno sin sufijo.** El diseño usa `connectors-a2`, que es el slug
+real. Los que devolverían `null` y no aparecen: `connectors`, `past-continuous`, `used-to`,
+`relative-clauses`, `prepositions-movement`, `present-continuous-future`. `can-ability`,
+`wh-questions`, `imperative` y `telling-time` sostienen exponentes de este escenario pero son de
+**A1**: se usan, no se citan, porque §4 ancla al registro **del nivel**.
 
-| # | qué | dónde |
-|---|---|---|
-| 1 | sale `You should tell them to leave the water at one thirty.` · entra `You should call them. They have to leave at one thirty.` | exponentes A, fila 7 |
-| 2 | `Two rounds, then: …` → `We can do two rounds: some at one, the rest at three.` | exponentes A, fila 8 |
-| 3 | `…and you cook once.` → `…and you only cook once.` | exponentes B, fila 4 |
-| 4 | sale `What's ready right now, and what stays good cold?` · entra `What is ready now, and what doesn't need the fire?` | exponentes B, fila 6 |
-| 5 | sale `Nothing big fits on that bike.` · entra `Big things don't fit on that bike.` | exponentes B, fila 7 |
-| 6 | sale `I can't show up empty-handed, so I'm not leaving with nothing.` · entra `I can't show up empty-handed. If there's nothing, I don't go.` | exponentes B, fila 8 |
-| 7 | sale `I'll bring back the ones I can…` · entra `I can bring some people back, but only if there's a plate for them.` | exponentes B, fila 9 |
-| 8 | cuatro telegramas de prosa a oraciones completas | A: dato oculto y pérdida · B: pérdida y bloque propio |
-| 9 | nueve líneas de léxico/estructura fuera de nivel (§3 de este informe) | prosa de A y de B |
-| 10 | tres retrocesos de tiempo (`was coming`, `she stays`, `would be`) a estilo directo | prosa de B |
-| 11 | `to go bad` cambia de glosa | vocabulario A |
-| 12 | `a lid`: o pasa a B (cediendo `to cool off`), o su celda `here` deja de prometer que B lo dice | vocabulario A y B |
-| 13 | `to pick someone up` repite phrasal del escenario 1 — decisión de conjunto | vocabulario B |
-| 14 | la carta pasa de párrafo decible a tabla de notas | pantalla de la carta |
-| 15 | `Turn 5.` → `Global turn 5 — your third turn (A, B, A, B, **A**).` | pantalla de la carta |
-| 16 | `9 turns` → `9 turns each` | cabecera de los dos roles |
-| 17 | `grammarReferences`: se corrige el título de `connectors-a2` y entran `present-continuous-future-a2` y `will-future` | datos del escenario |
+---
 
-**Fuera de mi alcance y bloqueante:** la enmienda de §4 que declara `insistir` en A2. Es de
-`habla-blueprint`. Sin ella, la puerta 8 no la pasa este escenario ni la pasan `poner-limite` y
-`negociar` en los siete que ya están publicados.
+## 8 · Lo que no es mío
+
+- **Que §4 recoja `recomendar` y la versión A2 de `insistir`.** Confirmo que los dos son A2 con
+  el material publicado; escribir las filas es de `habla-blueprint`. Sin ellas, este escenario
+  declara dos actos que la norma no le concede.
+- **La puerta 4 en el conjunto de la tabla.** Los nueve exponentes de A, leídos en orden, son casi
+  el arco de sus nueve turnos (1, 3, 3, 5, 9, 13, 7, 15, 17). Fila a fila no resuelve nada; la
+  tabla entera se acerca a la conversación. Es de `habla-calcable`, y se lo paso nombrado.
+- **El recuento de prosa.** Las sustituciones de §3 alargan la prosa: `In before twelve…` pasa de
+  10 a 16 palabras, y B suma unas 25. A partía de 432 y B de 441 sobre un techo de 450. **B se
+  pasa con estos cambios.** Hay que recortar en otra parte, y el sitio barato es el bloque `What
+  you haven't said yet` de B, hoy el más retórico. Medirlo es del contador canónico, no mío.

@@ -16,6 +16,11 @@ frases van a propósito; la cabecera en español (1-19); el bloque `After` (224-
 todo el metadato del redactor a partir de la línea 232 (recuento de prosa y las cinco notas de
 «lo que se hizo distinto»), que no llega a pantalla.
 
+**Segunda pasada, 21 de agosto.** La ficha no se ha tocado desde la primera —se comprobó
+línea por línea: 26, 28, 31, 33, 36, 38, 41, 45, 53, 68, 112, 114, 122, 130, 136, 138, 145, 147,
+149, 196 y 202 siguen literales—. Las 26 anteriores se recorrieron una a una y **se confirman las
+26**. Aparece **una más**, en la tabla de la carta, que la primera pasada dejó en riesgo: la nº 27.
+
 ## Cómo se marcó cada línea
 
 - **FALLA** — la línea, o una cláusula autónoma donde el ojo puede parar, es un enunciado inglés
@@ -39,18 +44,18 @@ Tres reglas de lectura heredadas de las auditorías del set y aplicadas igual aq
 
 ## Veredicto
 
-**NO PASA. Vuelve a `habla-fichas-de-rol`.** No hay que rehacer ninguna sección: son **26
+**NO PASA. Vuelve a `habla-fichas-de-rol`.** No hay que rehacer ninguna sección: son **27
 reescrituras de línea**. Pero el volumen es de otro orden que el del resto del set —la peor ficha
-auditada hasta hoy, el escenario 8, tenía 7 fallas en 108 unidades (6,5 %)— y tres de las 26
+auditada hasta hoy, el escenario 8, tenía 7 fallas en 108 unidades (6,5 %)— y tres de las 27
 entregan, ya montada en inglés, una de las **seis frases obligatorias del cierre**, que es
 justamente lo que el §11 del diseño dice que ningún jugador puede recibir hecho.
 
 | | |
 |---|---|
 | Unidades auditadas (sin exponentes) | **146** |
-| **Frases decibles (FALLA)** | **26 · 17,8 %** |
-| Reparto | **ROLE A 13 · ROLE B 8 · la carta 5** |
-| De ellas, **filas de tabla** | **8** |
+| **Frases decibles (FALLA)** | **27 · 18,5 %** |
+| Reparto | **ROLE A 13 · ROLE B 8 · la carta 6** |
+| De ellas, **filas de tabla** | **9** |
 | De ellas, **blandas** (necesitan contexto previo) | 5 |
 | A un pronombre (RIESGO) | 41 |
 | **Pantallas limpias enteras** | **vocabulario `here` (20/20)** · vocabulario `what it is` (20/20) · `Both screens — how it ends` (8/8) |
@@ -64,7 +69,7 @@ con sujeto y predicado. Lo que el redactor dice en su nota 4 es verdad y se veri
 
 **El problema está donde el redactor no miró: en las tres cosas nuevas de esta ficha.**
 
-- **La carta es la peor pantalla del archivo**: 5 fallas en 9 unidades (55 %). En el escenario 8
+- **La carta es la peor pantalla del archivo**: 6 fallas en 9 unidades (67 %). En el escenario 8
   la carta estaba limpia y en el molde es un correo en notas (`Speaking · Saturday the 12th,
   afternoon`). Aquí son cinco oraciones seguidas en presente, en tercera persona y apuntando bien,
   **y es la única pantalla que se lee con el otro delante y se habla tres segundos después**.
@@ -83,7 +88,7 @@ con sujeto y predicado. Lo que el redactor dice en su nota 4 es verdad y se veri
 
 | sección | unidades | FALLA | riesgo | estado |
 |---|---|---|---|---|
-| **La carta** (5 prosa + 4 filas) | 9 | **5** | 3 | **la peor densidad del archivo: 55 %** |
+| **La carta** (5 prosa + 4 filas) | 9 | **6** | 2 | **la peor densidad del archivo: 67 %** |
 | **`Nobody out there knows this` / `What you haven't said yet`** (8 + 7) | 15 | **3** | 12 | el dato oculto, servido en dos ocasiones |
 | **A · restricciones + objetivo + situación** (10) | 10 | **6** | 3 | la apertura entera de A |
 | **Tablas de datos duros** (10 + 10) | 20 | **4** | 2 | en el 8 estaban limpias las 20 |
@@ -96,7 +101,7 @@ con sujeto y predicado. Lo que el redactor dice en su nota 4 es verdad y se veri
 | Caja de herramientas (1 + 1) | 2 | 0 | 2 | meta |
 | Criterios de cierre (1 + 1) | 2 | 0 | 0 | meta |
 | **`Both screens — how it ends`** (8) | 8 | **0** | 0 | **limpia**: preguntas indirectas, nada decible |
-| **total** | **146** | **26** | **41** | |
+| **total** | **146** | **27** | **40** | |
 
 ---
 
@@ -197,18 +202,21 @@ Segunda entrega en tabla del mismo dato oculto.
 
 ---
 
-## La carta · las 5
+## La carta · las 6
 
 La carta se lee **en mitad de la conversación** y se habla inmediatamente después. Es la pantalla
 donde una frase hecha se calca con más probabilidad que en ninguna otra, y es la única del archivo
-escrita entera en oraciones.
+escrita entera en oraciones. La cabecera avisa —*don't read it out loud*, línea 194—, y ese aviso
+es lo único que separa hoy al jugador de leerla: el §11 no pide un aviso, pide que no haya nada
+que leer.
 
-**Citada tal cual (líneas 196 y 203):**
+**Citada tal cual (líneas 196, 202 y 203):**
 
 > `Your mother is on the phone. She's coming at one with four more people — your aunt and three
 > from the church. They already left the house. They're not bringing anything. Somebody told her
 > there was lunch here.`
 >
+> `| Twelve servings | now feed seven of the group, or none |`
 > `| The gate at 1:00 | somebody has to be there, and it can't be you |`
 
 - **22** `She's coming at one with four more people` — *blanda*: necesita nombrar antes a la mamá.
@@ -216,6 +224,11 @@ escrita entera en oraciones.
 - **24** `They're not bringing anything.` — dura.
 - **25** `Somebody told her there was lunch here.` — dura.
 - **26** `somebody has to be there` — dura, y es **la tercera frase obligatoria de A**.
+- **27** `| Twelve servings | now feed seven of the group, or none |` — leída de corrido, *Twelve
+  servings now feed seven of the group, or none*: verbo conjugado, presente, y es la cuenta que la
+  carta obliga a rehacer en voz alta en el turno 5. La primera pasada la dejó en riesgo; no lo es,
+  porque no hay pronombre que girar. Ya va resuelta en la reescritura de abajo
+  (`| Twelve servings | seven of the group, or none |`).
 
 **Reescritura, en la forma del molde** (el correo del escenario 3 es la referencia):
 
@@ -242,7 +255,7 @@ da una tarea, no un argumento):
 ## Lo que está bien y conviene no tocar al corregir
 
 - **Las 20 celdas `here` y las 20 `what it is`.** Es el mejor resultado del set en la columna que
-  el §11 señala como la más peligrosa. Ninguna de las 26 correcciones debe tocarlas.
+  el §11 señala como la más peligrosa. Ninguna de las 27 correcciones debe tocarlas.
 - **`Both screens — how it ends`.** Las seis obligaciones están escritas como preguntas indirectas
   (*what goes in the pot at twelve, and for how many*), que es la forma que no se puede leer en
   voz alta. Aquí el redactor acertó, y por eso duele más que las mismas seis frases estén servidas
@@ -256,5 +269,5 @@ Ninguna reescritura toca el motor: no cambia un dato, ni una hora, ni un acto de
 turnos. En prosa, once de las trece de A y tres de las de B se arreglan **girando la oración a
 segunda persona**, que es lo que la propia ficha ya hace bien en otros sitios; ocho son filas de
 tabla y se arreglan quitando el verbo. La carta se rehace entera, y al pasarla a tabla **baja**
-el recuento de prosa. Ninguna de las 26 sube palabras por encima del techo de 450: A queda cerca
+el recuento de prosa. Ninguna de las 27 sube palabras por encima del techo de 450: A queda cerca
 de 440 y B por debajo de 445, y si se apura la reescritura 7 se compensa sola.

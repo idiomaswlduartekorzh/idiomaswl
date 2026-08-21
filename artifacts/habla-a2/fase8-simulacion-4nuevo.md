@@ -17,8 +17,9 @@ carga: no es un perfil, es un modo de hacer trampa.
 
 Cada jugador ve **solo su ficha**. Si un jugador usa un dato del otro lado sin que se lo hayan
 dicho en voz alta, va marcado **⚠ FILTRACIÓN**. En esta ronda hubo **cero filtraciones por
-descuido** y **una filtración estructural**, producida por la pantalla de cierre, que aparece en
-tres de las seis conversaciones y está diagnosticada en el §D0.
+descuido** y **una filtración estructural**, producida por la pantalla de cierre compartida:
+está disponible en las seis conversaciones desde antes del turno 1, y se ve morder en la
+pareja 4. Diagnosticada en el §D0.
 
 ### Marcas de turno
 
@@ -228,8 +229,8 @@ Cierre: 6 de 8.
 tres.
 
 **Y una cosa que no se esperaba: con el handicap en el motor, la conversación no se alarga, se
-encoge.** 5:29 de habla contra 6:25 de la pareja sólida, con el mismo número de turnos. El flojo
-no tarda más: dice menos. Quien lo compensa es el sólido del otro lado, que sube su turno medio.
+encoge.** 4:20 de habla contra 5:37 de la pareja sólida, con el mismo número de turnos (19). El
+flojo no tarda más: dice menos —162 palabras contra las 300 del sólido en el mismo asiento—. Quien lo compensa es el sólido del otro lado, que sube su turno medio.
 
 ---
 
@@ -543,3 +544,255 @@ tampoco es simétrico: con el callado en A se pierde **la pieza de la carta**, q
 no se puede contestar con un número.
 
 ---
+
+## D · LOS DIAGNÓSTICOS, MEDIDOS
+
+Todo lo de aquí abajo sale de `artifacts/habla-a2/fase8-scripts/carga.mjs` corriendo sobre este
+mismo archivo. Una línea:
+
+```
+node artifacts/habla-a2/fase8-scripts/carga.mjs
+```
+
+### D0 · La filtración estructural: la pantalla de cierre le cuenta a A el lado de B
+
+No es un descuido de ningún jugador. La ficha trae, **visible para los dos**, esto:
+
+> **Only B can say:** how many really come back, and before what time · **how they get here
+> without Marcela's car** · what B tells the six at the river, and before what hour.
+
+De ahí A sabe, **antes del turno 1 y sin que nadie hable**: que existe una tal Marcela, que
+Marcela tiene carro, y que ese carro es un problema. Es exactamente el dato oculto nº 1 de Duván
+—«el carro de Marcela no vuelve»— reducido a su titular y regalado al otro lado.
+
+Se ve morder en la **pareja 4**, turno F11: A pregunta *«And the others? Marcela's car?»* a un
+jugador que no ha dicho la palabra *Marcela* en toda la conversación. En las parejas 1, 5 y 6 no
+llega a marcarse porque el jugador de A tenía material propio de sobra; **la disponibilidad, sin
+embargo, es la misma en las seis**.
+
+Y no es un descuido del redactor: la **puerta 7** exige que el cierre esté escrito **idéntico en
+las dos fichas**, y la **puerta 1** exige que cada ficha tenga un dato que la otra no. Un cierre
+idéntico que nombra el contenido de las líneas rompe la puerta 1 por construcción. El escenario 4
+nuevo es el primero del set donde las líneas del cierre llevan **nombres propios y hechos**
+dentro, y por eso es el primero donde se nota. No se arregla aquí; se nombra.
+
+### D1 · Palabras por rol, contadas — el 40 % de la puerta 5
+
+Contador único, criterio bruto, declarado arriba. **La puerta se juzga solo sobre las dos parejas
+de perfil parejo.**
+
+| conversación | A · Fabián | B · Duván | reparto | turnos | ¿puerta 5? |
+|---|---|---|---|---|---|
+| **1 · sólido + sólido** | **300** | **226** | **57,0 / 43,0** | 10+9 | **pasa** |
+| **3 · flojo + flojo** | **101** | **61** | **62,3 / 37,7** | 10+9 | **FALLA — B en 37,7 %** |
+| 2 · flojo (A) + sólido (B) | 162 | 180 | 47,4 / 52,6 | 10+9 | *no se juzga* |
+| 4 · el callado (B) | 201 | 21 | 90,5 / 9,5 | 10+10 | *no se juzga — §D3* |
+| 5 · el atajista (B) | 118 | 107 | 52,4 / 47,6 | 6+6 | *no se juzga* |
+| 6 · el lector (A) | 90 | 90 | 50,0 / 50,0 | 8+8 | *no se juzga* |
+| C · contraprueba, callado en A | 11 | 76 | 12,6 / 87,4 | 4+4 | *no se juzga* |
+
+**Veredicto de la puerta 5: 1 de 2. No pasa.** La pareja sólida cae dentro con margen (43,0 %); la
+floja deja a Duván en **37,7 %**, dos puntos y tres décimas por debajo del suelo.
+
+**Y la causa no es el perfil, es el reparto de piezas.** Las tres líneas de Duván son **datos**:
+un número, un medio de transporte y un encargo con hora. Cabe todo en quince palabras. Las tres de
+Fabián son **explicaciones** —qué entra a la olla y para cuántos, qué sale del patio y qué no, qué
+necesita a la una— y ninguna se dice en menos de diez. Con los dos jugadores fuertes, Fabián
+compensa hablando de más y el reparto aguanta; en cuanto los dos son flojos, **lo que se cae
+primero es el relleno de B, porque el contenido de B nunca lo necesitó**. El escenario reparte
+turnos 9/9 y contenido 60/40.
+
+### D2 · Dónde se muere, y por qué
+
+| pareja | ¿muere? | turno | causa |
+|---|---|---|---|
+| 1 · sólido + sólido | no | — | llega al cierre con 8 de 8 piezas y un turno de más |
+| 2 · flojo (A) + sólido (B) | no | — | el sólido de B sostiene; A pierde A1 y la pieza abierta. **6 de 8** |
+| **3 · flojo + flojo** | **sí** | **global 12** | se acaban las razones nuevas para el 4.º y 5.º `insistir` |
+| 4 · el callado (B) | no | — | llega, pero lo lleva A entero. **§D3** |
+| 5 · el atajista (B) | no | — | **cierra antes de tiempo, y eso es peor. §D4** |
+| 6 · el lector (A) | no | — | suena bien quince turnos y cierra 2 de 8. **§D5** |
+
+**El turno 12 de la pareja floja, entero:** `D12 — … OK.` Dos palabras, y una de ellas está
+prohibida por la tercera regla del cierre (*Nobody nods. Sure, okay and fine are none of the six
+lines*). Lo que se agotó ahí no es la voluntad: es el material. `insistir` en su versión A2 exige
+**una razón nueva cada vez**, y el escenario le da a Fabián cuatro razones distintas (la yuca, la
+mamá, la gallina de las siete, el tarro) pero a Duván **dos** (el hambre de los seis y la moto de
+Édgar). En el turno 10 Duván ya gastó las dos. A partir de ahí solo le queda asentir o pasarse al
+español, y hace las dos cosas.
+
+Después del 12 la conversación **sigue andando cuarenta segundos en español** con las fichas en
+inglés encima, y los dos únicos momentos en que se acerca a una pieza son lecturas en voz alta
+(F9 lee la fila `Servings at 1:00 | twelve`; F17 lee la pantalla de cierre para saber qué falta).
+Es peor que un colapso limpio: **produce cinco minutos con sensación de haber jugado y dos
+compromisos de ocho**.
+
+### D3 · Del callado no se miden palabras: se mide qué produjo
+
+Handicap en **B (Duván)** — el lado que concede y el que trae los datos. Las 21 palabras de la
+tabla D1 no significan nada; su perfil dice literalmente que produce de una a tres palabras por
+turno. Lo que sí significa algo:
+
+| pieza que **solo** él tiene | ¿la produjo? | con qué |
+|---|---|---|
+| **B1** cuántos vuelven y **antes de qué hora** | **a medias** | `Six` (×2). La hora nunca: el «antes de las tres» lo montó A en F13 y B lo firmó con `Deal` |
+| **B2** cómo llegan sin el carro de Marcela | **a medias** | `Édgar takes one` · `Until four` · `Wilmer` — nueve palabras sueltas que ensambló A |
+| **B3** qué les dice a los seis y antes de qué hora | **sí, entera** | `At twelve. Food at three.` |
+| dato oculto 1 · el carro no vuelve | solo preguntado | y la pregunta salió de la filtración del §D0, no de la conversación |
+| dato oculto 3 · los seis sin comer desde las siete | **no** | su carta más fuerte no se juega nunca |
+| su condición (`only if…`) | **no** | la condición la puso A y B la aceptó |
+
+**El defecto, nombrado: el callado consigue su objetivo asintiendo, casi.** Sale a las 11:40 con
+el tarro en las manos, que es todo lo que quería, y en el turno 13 —donde A ya se lo concede—
+lleva **doce palabras dichas**. La restricción que el escenario puso para proteger la nevera es
+*«Nothing leaves the fridge before you have a number and a name»*, y **se satisface con `Six` y
+`Wilmer`: dos palabras**.
+
+**Peor:** *Wilmer* **no existe en ninguna de las dos fichas**. Los seis del río no tienen nombre en
+ningún sitio —solo Édgar, Marcela y la mamá, y ninguno de los tres sirve para el portón—, así que
+el «nombre» que exige la restricción de A es necesariamente inventado y por tanto
+**incomprobable**. La condición no puede fallar.
+
+**Y hay una causa de diseño, no de jugador: la lista de cierre de A no le pide dos de las tres
+líneas de B.** *«He told you how many come back, and before what hour»* está en *The lunch
+happened if*; **cómo llegan sin el carro** y **qué les dice a los seis**, no. Si A sigue su propia
+ficha —que es lo que hará— B se va habiendo dicho un número. Lo que obligó a B a producir B3 fue
+que A leyó la pantalla compartida, y ésa es la misma que filtra a Marcela. **La única defensa del
+callado y la única filtración del escenario son el mismo párrafo.**
+
+La promesa del §11.3 del diseño —«un jugador callado no consigue su objetivo asintiendo»— **se
+cumple a medias**: es verdad que `OK` y `Deal` no le abren la nevera, pero las tres líneas de B
+son datos y un dato cabe en tres palabras. **Producir no es hablar, y este cierre solo exige lo
+primero.**
+
+### D4 · El atajista gana
+
+**Sí, gana.** Sale a las 11:40 con comida en las manos, sin corregir lo que dijo a las diez, sin
+soltar el carro de Marcela y sin usar sus exponentes.
+
+| | pareja 1 (sólidos) | pareja 5 (atajista) |
+|---|---|---|
+| Turnos | 10+9 = 19 | **6+6 = 12** |
+| Habla | 5:37 | **2:39** |
+| Palabras | 300 / 226 | 118 / 107 |
+| Sale con el tarro | sí | **sí** |
+| Da «un número y un nombre» | sí | **sí** (`Six`, `Wilmer`) |
+| Corrige lo de las diez | sí, turno 12 | **nunca** |
+| Sale el carro de Marcela | sí | **no** |
+| Piezas del cierre | **8 de 8** | **3 de 8** (A2 · A3 parcial · J) |
+| Exponentes propios usados | A 9/9 · B 8/9 | **B 1 de 9** |
+
+**Dónde está la grieta, literal.** Restricción 2 de Duván: *«You don't correct the ten o'clock
+message until something is in your hands.»* El disparador para decir la verdad es **el instante
+exacto en que ya no necesita seguir hablando**. Cumplirla al pie de la letra y montarse en la moto
+es legal: no rompe ninguna de sus tres líneas rojas. Y las restricciones de A tampoco lo frenan,
+porque `Six` + `Wilmer` las satisfacen (§D3). **El atajista no gana rompiendo el escenario: gana
+obedeciéndolo.**
+
+**La puerta 11 no lo ve.** Dice *«nadie lo resuelve en menos de 6 turnos»* y él usó exactamente 6
+por rol. Pasa el suelo literal con el 47 % del presupuesto de turnos y el 37 % de las piezas.
+
+**Lo que sí pierde está fuera de la ventana del ejercicio**, y por eso el ejercicio no se lo puede
+cobrar: a las tres, Fabián tiene comida para dieciséis y no tiene gente, porque el carro no viene,
+la caminata son cuarenta minutos sin sombra a las dos de la tarde y nadie del río ha oído una
+hora. Eso ocurre a las 15:00; el juego se acabó a las 11:43.
+
+**El atajista del otro lado sí lo para el escenario.** Contraprobado en tres turnos: A dice *«One
+o'clock or nothing»* y se da la vuelta. B se va vacío y A se queda con doce platos, la segunda
+gallina dañada, la mamá y cuatro personas a la una y **nadie en el portón** — es decir, **A no
+consigue su objetivo declarado**. Por ese lado el reverso del §3.1 del blueprint aguanta.
+**La asimetría es real y es física: la salida rápida le funciona a quien se lleva un objeto, y no
+le funciona a quien solo se lleva silencio.**
+
+### D5 · El lector, y lo que dice de la puerta 4
+
+Ocho de los nueve turnos del lector están en su tabla, **y el orden de la tabla es casi el orden
+del mapa de los 18 turnos**: filas 1·2·3·4·5·6·7·8·9 → turnos 1·3·3·5·9·13·7·15·17. Un solo salto.
+Leída de arriba abajo, la tabla de Fabián produce quince turnos que suenan bien. La de Duván está
+menos ordenada (dos desplazamientos), así que **un lector del lado B suena más raro que uno del
+lado A** — que es lo contrario de lo que conviene, porque el lado A es el motor.
+
+**Lo que salva al escenario no es la puerta 4: es el cierre.** El lector no dice **A1** (ninguna
+fila trae un número de raciones) ni **A3** (el portón solo existe en la carta, y la carta no tiene
+fila). Del otro lado no salen B1, B2 ni B3, porque **ninguna fila de la tabla de Duván contiene un
+número de personas, una hora de regreso ni el encargo a los seis**. Cierre del lector: **2 de 8**.
+
+Es una defensa real y es la única. La puerta 4 dice que *«la tabla leída en orden tampoco puede
+ser la conversación»*; aquí **sí lo es durante quince turnos**, y lo que la desmiente llega al
+final.
+
+### D6 · Dónde se pasarían al español — el punto exacto que hay que andamiar
+
+Marcas `[ES]`: **ninguna** en la pareja 1, **tres** en la 2, **once** en la 3, **ninguna** en la 4,
+la 5 y el lector. Y no caen donde sea: caen en tres sitios, siempre los mismos.
+
+| # | Momento | Quién | Qué le falta |
+|---|---|---|---|
+| **1** | **Decir qué pierdo yo** — `el arroz del sábado… es mi almuerzo del lunes y el martes` (F9 de la 2), `la segunda gallina se daña` (F11 de la 3) | A | Lo predice el bloque **5** de la caja, que ya avisa de que es «el punto exacto donde las parejas se pasaron al español en las ocho simulaciones». Fabián tiene `leftovers` y `to go bad` en su vocabulario y **no los usa**: lo que no tiene es cómo decir *mis almuerzos de la semana* |
+| **2** | **Preguntar el cómo** — `¿y entonces cómo vuelven?` (F13 de la 2), `¿y entonces qué hacemos?` (F13 de la 3) | **A, siempre** | **Aquí no hay andamiaje de ninguna clase.** Las nueve filas de Fabián son afirmaciones y una sola pregunta, la del número. **B2 —cómo llegan sin el carro— solo sale si alguien la pregunta, y el único que puede preguntarla es A, que no tiene con qué.** Duván sí tiene su pregunta abierta (*What's ready right now, and what stays good cold?*); Fabián no tiene la suya |
+| **3** | **El encargo que trae la carta** — `y alguien en el portón a la una…` (F17 de la 2) | A | La carta le pone **una obligación nueva en el turno 5** y no le da una sola forma para nombrarla. **A3 no tiene fila**, y por eso no la dice ni el lector ni el flojo ni el callado de la contraprueba |
+
+Los tres son del lado **A**. Los dos últimos son del mismo tipo: **el escenario le pide a Fabián
+dos cosas que su tabla no cubre** —preguntar abierto y encargar una tarea—, y las dos aparecen
+después del turno 5, cuando ya no queda margen.
+
+### D7 · Minutos, contra los 7 previstos
+
+Modelo declarado: turno de sólido 8–24 s · turno de flojo con consulta 10–22 s · monosilábico
+1–5 s · turno leído 6–18 s · pausa entre turnos 3 s con un sólido en la pareja y 4 s en la floja ·
+lectura de la carta en silencio 10 s · silencios largos y vueltas al fuego, sumados aparte y
+declarados aquí.
+
+| conversación | habla | +pausas | +carta | +silencios | **total** | vs. 7:00 |
+|---|---|---|---|---|---|---|
+| 1 · sólido + sólido | 5:37 | 6:31 | 6:41 | +0:20 | **7:01** | **clavado, sin margen** |
+| 2 · flojo (A) + sólido (B) | 4:20 | 5:14 | 5:24 | +0:45 | **6:09** | dentro |
+| 3 · flojo + flojo | 2:31 | 3:25 | 3:35 | +1:40 | **5:15** | **corto** |
+| 4 · el callado (B) | 2:48 | 3:45 | 3:55 | +0:35 | **4:30** | corto |
+| 5 · el atajista (B) | 2:39 | 3:12 | 3:22 | +0:05 | **3:27** | **la mitad** |
+| 6 · el lector (A) | 2:15 | 3:00 | 3:10 | +0:10 | **3:20** | la mitad |
+
+**El riesgo de este escenario no es pasarse, es quedarse corto.** Solo la pareja sólida gasta los
+siete minutos, y los gasta enteros: **no le sobra ni un turno**, y de hecho necesitó 19 (uno más
+que los 18 del mapa). Todas las demás terminan entre el 47 % y el 88 % del presupuesto. La floja
+llega a 5:15 con **dos** compromisos, que es el peor sitio donde puede caer un ejercicio: dura lo
+suficiente para parecer que pasó algo.
+
+### D8 · El otro contador — declarado, y no usado para juzgar
+
+Lo exige §5: un solo contador. Éste es el que se usó (bruto). Se deja escrito lo que daría el
+contrario —**descontar lo que el jugador lee en voz alta de su ficha**, las marcas `[L]`— para que
+nadie tenga que adivinarlo:
+
+| conversación | bruto (el que vale) | descontando lo leído |
+|---|---|---|
+| 1 · sólido + sólido | 57,0 / 43,0 | 57,0 / 43,0 *(no hay `[L]`)* |
+| **3 · flojo + flojo** | **62,3 / 37,7 — falla** | **52,0 / 48,0 — pasaría** |
+| 2 · flojo + sólido | 47,4 / 52,6 | 43,0 / 57,0 |
+| 6 · el lector | 50,0 / 50,0 | **0,0 / 100,0** |
+
+**Es exactamente el aviso del blueprint, reproducido en un solo archivo:** la misma conversación
+falla la puerta con un criterio y la pasa con el otro. Se juzga con el bruto, y se juzga con el
+bruto en las cinco parejas, en el lector, en la contraprueba y —cuando se rehagan— en los ocho
+escenarios.
+
+---
+
+## E · RESUMEN PARA EL GUARDIÁN
+
+| puerta | qué dice | aquí |
+|---|---|---|
+| **1 · Asimetría** | cada ficha con un dato que la otra no | **rota en un punto** — la pantalla de cierre le da a A el titular del dato oculto nº 1 de B (§D0) |
+| **4 · Andamiaje** | la tabla leída en orden no puede ser la conversación | **rota** — la de A es el mapa en orden, 15 turnos seguidos; lo que la detiene es el cierre, no la tabla (§D5) |
+| **5 · Carga** | ningún rol bajo el 40 % en las parejas parejas | **rota** — sólidos 57,0/43,0 pasa · flojos **62,3/37,7** falla (§D1) |
+| **5b · El callado produce** | no consigue el objetivo asintiendo | **rota a medias** — sale con el tarro tras 12 palabras; `Six` + un nombre inventado satisfacen la condición que protege la nevera (§D3) |
+| **11 · Simulación** | la sólida llega · la floja llega con andamiaje · nadie resuelve en menos de 6 turnos | **la sólida llega 8/8 · la floja muere en el turno 12 con 2/8 · el atajista cierra en 6 por rol y pasa el suelo literal** (§D2, §D4) |
+| 2 · Zona de acuerdo | existe y no es obvia | **aguanta** — las tres salidas aparecen solas en la pareja sólida; la obvia (apagar y llevar) la tumba la física en el turno 3 de las seis conversaciones |
+| 6 · Complicación | turno global 3–6, a un solo rol | **aguanta** — entra al terminar el global 4, a A, en las seis |
+| 3 · Cero frase calcable | — | **fuera de este informe**: es de `fase8-calcable-4nuevo.md`. Lo que sí se vio: **dos jugadores flojos leyeron la carta en voz alta** pese al *don't read it out loud*, y uno leyó la pantalla de cierre para saber qué le faltaba |
+
+**El motor está vivo** —nadie cierra en tres turnos, los dos pierden si se van, y la pareja sólida
+produce ocho piezas de ocho en siete minutos justos—. **Lo que no está en su sitio es el reparto
+del contenido:** las tres líneas de Duván son datos de tres palabras y las tres de Fabián son
+explicaciones de quince, y de ahí salen a la vez el 37,7 % de la puerta 5, el callado que gana
+asintiendo y el atajista que gana obedeciendo.
