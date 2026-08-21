@@ -1,4 +1,5 @@
 import { persistVerifiedWompiTransaction } from '@/lib/wompi/persistence';
+import { persistVerifiedToeflReportTransaction } from '@/lib/toefl/report-payment-events.server';
 import { parseWompiWebhookEvent, verifyWompiEventChecksum } from '@/lib/wompi/security';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { parseAndVerifyWompiTransaction } from '@/lib/wompi/transactions';
@@ -18,9 +19,17 @@ export async function POST(request: Request): Promise<Response> {
     return json({ received: false, code: 'payload_too_large' }, 413);
   }
 
+  let raw: string;
+  try {
+    raw = await request.text();
+  } catch {
+    return json({ received: false, code: 'invalid_json' }, 400);
+  }
+  if (raw.length > 128_000) return json({ received: false, code: 'payload_too_large' }, 413);
+
   let body: unknown;
   try {
-    body = await request.json();
+    body = JSON.parse(raw);
   } catch {
     return json({ received: false, code: 'invalid_json' }, 400);
   }
@@ -47,8 +56,14 @@ export async function POST(request: Request): Promise<Response> {
 
     const transaction = parseAndVerifyWompiTransaction(event.data.transaction);
     if (!transaction) {
-      // Es un evento auténtico de la cuenta, pero no pertenece al catálogo de este checkout.
-      return json({ received: true, ignored: true }, 200);
+      const toeflPersistence = await persistVerifiedToeflReportTransaction({
+        transaction: event.data.transaction,
+        environment: config.environment,
+      });
+      if (toeflPersistence === 'failed') {
+        return json({ received: false, code: 'persistence_unavailable' }, 503);
+      }
+      return json({ received: true, ignored: toeflPersistence === 'ignored' }, 200);
     }
 
     const persistence = await persistVerifiedWompiTransaction({

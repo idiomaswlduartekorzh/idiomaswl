@@ -138,7 +138,7 @@ El navegador nunca decide que un informe está pagado. La redirección de Wompi 
 3. El estudiante ve la confirmación de entrega y el botón «Desbloquear mi informe».
 4. `POST /api/toefl/reports/checkout` valida la entrega, crea una referencia única, toma el precio desde configuración del servidor y genera la firma SHA-256 de integridad.
 5. Wompi procesa el pago en Checkout Web o Widget.
-6. `POST /api/payments/wompi/events` verifica el checksum con el secreto de eventos y procesa el evento de forma idempotente.
+6. El webhook compartido `POST /api/wompi/events` verifica el checksum con el secreto de eventos y dirige cada transacción al ledger del producto correspondiente.
 7. Solo si referencia, precio, moneda, ambiente y estado coinciden, la orden queda `paid`.
 8. La página privada consulta el estado. Si está pagado, el servidor entrega el informe; si está pendiente, muestra espera; si fue rechazado, permite reintentar con una referencia nueva.
 
@@ -150,7 +150,7 @@ Tabla `toefl_report_orders`:
 - `submission_id`, con una sola orden pendiente y una sola aprobada como máximo;
 - `reference` única;
 - `amount_in_cents` y `currency`;
-- `payer_email`;
+- `access_token_hash`, sin guardar el token original;
 - `status` (`PENDING`, `APPROVED`, `DECLINED`, `VOIDED`, `ERROR`);
 - `wompi_transaction_id` único cuando exista;
 - `environment` (`sandbox` o `production`); el webhook además comprueba los valores `test` o `prod` enviados por Wompi;
@@ -158,17 +158,17 @@ Tabla `toefl_report_orders`:
 
 El acceso al informe necesita además un token aleatorio durable guardado como hash o una sesión autenticada. El recibo HMAC actual de dos horas no alcanza para una revisión humana que puede terminar después.
 
-### Variables de servidor
+### Configuración de servidor
 
-- `WOMPI_PUBLIC_KEY`
-- `WOMPI_INTEGRITY_SECRET`
-- `WOMPI_EVENTS_SECRET`
-- `WOMPI_ENVIRONMENT=sandbox|production`
+TOEFL reutiliza la configuración Wompi central documentada en `docs/wompi-configuracion.md`; no mantiene una segunda copia de llaves ni otro webhook. Agrega solamente estas decisiones del producto:
+
+- `TOEFL_REPORT_PRICE_COP`
 - `TOEFL_SPEAKING_REVIEW_SLA_HOURS`
 - `TOEFL_REPORT_PAYWALL_ENABLED=true` solo después de completar Sandbox y aprobar la salida
-- `TOEFL_REPORT_PRICE_COP`
 
-No se necesita exponer los secretos con prefijo `NEXT_PUBLIC_`. Sandbox y producción deben usar llaves, endpoints y URL de eventos separados.
+`TOEFL_REPORT_ORIGIN` es opcional para previews. El ambiente se deduce de la llave pública central y el servidor rechaza cualquier mezcla de credenciales Sandbox/Production.
+
+Los secretos siguen sin exponerse al navegador. Sandbox y producción usan credenciales y URL de eventos separadas, pero cada ambiente conserva un único endpoint `/api/wompi/events` para todos los productos.
 
 ### Casos que deben pasar antes de dinero real
 
@@ -192,8 +192,8 @@ No se necesita exponer los secretos con prefijo `NEXT_PUBLIC_`. Sandbox y produc
 
 1. Publicar y validar la base SEO.
 2. Solicitar reindexación de `/examenes/toefl`, `/practica/toefl`, `/practica/toefl/listening` y `/practica/toefl/speaking`.
-3. Configurar Wompi Sandbox y migración de órdenes.
+3. Aplicar la migración de órdenes TOEFL y usar la configuración Wompi Sandbox ya centralizada.
 4. Probar todos los estados y el acceso privado en preview.
 5. Definir precio y promesa de Speaking.
-6. Cambiar a llaves de producción, configurar el webhook de producción y hacer una compra real de bajo valor controlada.
+6. Confirmar que el webhook compartido de producción está configurado y hacer una compra real de bajo valor controlada.
 7. Publicar el paywall y medir el embudo completo.

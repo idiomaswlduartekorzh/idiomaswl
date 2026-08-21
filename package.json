@@ -61,7 +61,7 @@
     "check:toefl-review-blueprint": "node --experimental-strip-types --no-warnings scripts/check-toefl-review-blueprint.mjs",
     "check:toefl-editorial": "node scripts/check-toefl-editorial-2026.mjs",
     "check:toefl-payments": "node scripts/check-toefl-payment-pipeline.mjs && npm run test:toefl-payments",
-    "test:toefl-payments": "node --experimental-strip-types --no-warnings --test tests/wompi-signatures.test.mjs",
+    "test:toefl-payments": "node --experimental-strip-types --no-warnings --test tests/toefl-report-payment.test.mjs",
     "test:toefl-review": "node --experimental-strip-types --no-warnings --test tests/toefl-review-pipeline.test.mjs",
     "audio:toefl-2026": "node --experimental-strip-types --no-warnings scripts/generate-toefl-2026-audio.mjs",
     "check:toefl-build-sentence": "node --experimental-strip-types --no-warnings scripts/check-toefl-build-sentence.mjs",

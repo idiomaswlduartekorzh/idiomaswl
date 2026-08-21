@@ -1,6 +1,6 @@
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
-import { isToeflReportPaywallEnabled } from '@/lib/wompi/config.server';
+import { isToeflReportPaywallEnabled } from '@/lib/toefl/report-payment-config.server';
 import { readToeflReport } from '@/lib/toefl/report-payment.server';
 import { toeflReportCookieName } from '@/lib/toefl/report-payment';
 import { TOEFL_SUBMISSION_ID_PATTERN } from '@/lib/toefl/submission-token.server';

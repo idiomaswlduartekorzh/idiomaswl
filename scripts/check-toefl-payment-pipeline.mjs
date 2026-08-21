@@ -32,27 +32,33 @@ requireText('src/app/api/toefl/reports/[submissionId]/route.ts', [
   'toeflReportCookieName',
   "'cache-control': 'private, no-store, max-age=0'",
 ]);
-requireText('src/app/api/payments/wompi/events/route.ts', [
-  'signature.properties',
-  'buildWompiEventChecksum',
-  'amount_in_cents',
-  'order.environment !== config.environment',
-  "order.status === 'APPROVED' ? 'APPROVED' : status",
+requireText('src/app/api/wompi/events/route.ts', [
+  'verifyWompiEventChecksum',
+  'persistVerifiedToeflReportTransaction',
+  "toeflPersistence === 'failed'",
 ]);
 requireText('src/app/(site)/examenes/toefl/resultado/[submissionId]/page.tsx', [
   'index: false',
   'noarchive: true',
   'nosnippet: true',
 ]);
-const config = requireText('src/lib/wompi/config.server.ts', [
+const config = requireText('src/lib/toefl/report-payment-config.server.ts', [
   "process.env.TOEFL_REPORT_PAYWALL_ENABLED !== 'true'",
-  "required('WOMPI_INTEGRITY_SECRET')",
-  "required('WOMPI_EVENTS_SECRET')",
+  'getWompiServerConfig',
   "positiveInteger('TOEFL_REPORT_PRICE_COP'",
   "positiveInteger('TOEFL_SPEAKING_REVIEW_SLA_HOURS'",
 ]);
-if (/NEXT_PUBLIC_(?:WOMPI|TOEFL_REPORT_PRICE|TOEFL_SPEAKING)/.test(config)) {
-  errors.push('Los secretos o decisiones comerciales Wompi no pueden usar NEXT_PUBLIC_.');
+requireText('src/lib/toefl/report-payment-events.server.ts', [
+  'parseToeflWompiTransaction',
+  'order.environment !== input.environment',
+  "order.status === 'APPROVED' ? 'APPROVED' : transaction.status",
+  "return 'failed'",
+]);
+if (/process\.env\.(?:WOMPI|NEXT_PUBLIC_WOMPI)/.test(config)) {
+  errors.push('TOEFL debe reutilizar la configuración Wompi central, no leer otra copia de sus llaves.');
+}
+if (fs.existsSync(path.join(root, 'src/app/api/payments/wompi/events/route.ts'))) {
+  errors.push('No puede existir un segundo webhook Wompi para TOEFL.');
 }
 
 if (errors.length) {

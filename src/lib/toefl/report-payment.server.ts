@@ -1,9 +1,9 @@
 import 'server-only';
 
-import { randomBytes, randomUUID } from 'node:crypto';
+import { createHash, randomBytes, randomUUID } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
-import { getToeflReportPaymentConfig } from '@/lib/wompi/config.server';
-import { buildWompiCheckoutIntegrity, sha256Hex } from '@/lib/wompi/signatures';
+import { createWompiIntegritySignature } from '@/lib/wompi/security';
+import { getToeflReportPaymentConfig } from './report-payment-config.server';
 import { createToeflSubmissionToken } from './submission-token.server';
 import {
   toeflReportCookieName,
@@ -19,7 +19,6 @@ interface OrderRow {
   reference: string;
   amount_in_cents: number;
   currency: 'COP';
-  payer_email: string;
   status: ToeflReportPaymentStatus;
   environment: 'sandbox' | 'production';
   paid_at: string | null;
@@ -35,24 +34,28 @@ function newAccessToken(): string {
   return randomBytes(32).toString('base64url');
 }
 
+function sha256Hex(value: string): string {
+  return createHash('sha256').update(value, 'utf8').digest('hex');
+}
+
 function reportUrl(origin: string, submissionId: string): string {
   return `${origin}/examenes/toefl/resultado/${submissionId}`;
 }
 
-function checkoutUrl(order: OrderRow, config: ReturnType<typeof getToeflReportPaymentConfig>): string {
+function checkoutUrl(order: OrderRow, payerEmail: string, config: ReturnType<typeof getToeflReportPaymentConfig>): string {
   const url = new URL('https://checkout.wompi.co/p/');
   url.searchParams.set('public-key', config.publicKey);
   url.searchParams.set('currency', order.currency);
   url.searchParams.set('amount-in-cents', String(order.amount_in_cents));
   url.searchParams.set('reference', order.reference);
-  url.searchParams.set('signature:integrity', buildWompiCheckoutIntegrity({
+  url.searchParams.set('signature:integrity', createWompiIntegritySignature({
     reference: order.reference,
     amountInCents: order.amount_in_cents,
     currency: order.currency,
     integritySecret: config.integritySecret,
   }));
   url.searchParams.set('redirect-url', reportUrl(config.origin, order.submission_id));
-  url.searchParams.set('customer-data:email', order.payer_email);
+  url.searchParams.set('customer-data:email', payerEmail);
   return url.toString();
 }
 
@@ -74,7 +77,7 @@ async function rotateAccess(order: OrderRow, accessTokenHash: string): Promise<O
     .from('toefl_report_orders')
     .update({ access_token_hash: accessTokenHash, updated_at: new Date().toISOString() })
     .eq('id', order.id)
-    .select('id, submission_id, reference, amount_in_cents, currency, payer_email, status, environment, paid_at')
+    .select('id, submission_id, reference, amount_in_cents, currency, status, environment, paid_at')
     .single();
   if (error || !data) throw new Error('No pudimos proteger el acceso al reporte.');
   return data as OrderRow;
@@ -94,7 +97,7 @@ export async function createToeflCheckoutSession(submissionId: string): Promise<
 
   const accessToken = newAccessToken();
   const accessTokenHash = sha256Hex(accessToken);
-  const select = 'id, submission_id, reference, amount_in_cents, currency, payer_email, status, environment, paid_at';
+  const select = 'id, submission_id, reference, amount_in_cents, currency, status, environment, paid_at';
   const { data: approved, error: approvedError } = await admin
     .from('toefl_report_orders')
     .select(select)
@@ -135,7 +138,6 @@ export async function createToeflCheckoutSession(submissionId: string): Promise<
         reference,
         amount_in_cents: config.amountInCents,
         currency: config.currency,
-        payer_email: submission.user_email,
         status: 'PENDING',
         environment: config.environment,
         access_token_hash: accessTokenHash,
@@ -157,7 +159,7 @@ export async function createToeflCheckoutSession(submissionId: string): Promise<
   }
 
   return {
-    response: toCheckoutResponse(order, checkoutUrl(order, config)),
+    response: toCheckoutResponse(order, checkoutUrl(order, submission.user_email, config)),
     cookieName: toeflReportCookieName(submissionId),
     accessToken,
   };

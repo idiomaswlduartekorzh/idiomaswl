@@ -7,13 +7,11 @@ CREATE TABLE IF NOT EXISTS public.toefl_report_orders (
   reference text NOT NULL UNIQUE,
   amount_in_cents bigint NOT NULL CHECK (amount_in_cents > 0),
   currency text NOT NULL DEFAULT 'COP' CHECK (currency = 'COP'),
-  payer_email text NOT NULL,
   status text NOT NULL DEFAULT 'PENDING'
     CHECK (status IN ('PENDING', 'APPROVED', 'DECLINED', 'VOIDED', 'ERROR')),
   environment text NOT NULL CHECK (environment IN ('sandbox', 'production')),
   access_token_hash text NOT NULL CHECK (access_token_hash ~ '^[0-9a-f]{64}$'),
   wompi_transaction_id text UNIQUE,
-  wompi_event jsonb,
   paid_at timestamptz,
   created_at timestamptz NOT NULL DEFAULT now(),
   updated_at timestamptz NOT NULL DEFAULT now()
@@ -32,7 +30,7 @@ CREATE INDEX IF NOT EXISTS toefl_report_orders_status_created_idx
 
 ALTER TABLE public.toefl_report_orders ENABLE ROW LEVEL SECURITY;
 
-REVOKE ALL ON TABLE public.toefl_report_orders FROM anon, authenticated;
+REVOKE ALL ON TABLE public.toefl_report_orders FROM anon, authenticated, service_role;
 GRANT SELECT, INSERT, UPDATE ON TABLE public.toefl_report_orders TO service_role;
 
 COMMENT ON TABLE public.toefl_report_orders IS

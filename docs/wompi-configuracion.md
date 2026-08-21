@@ -36,6 +36,13 @@ En **Project Settings > Environment Variables**, crea las mismas cuatro variable
 
 Marca como sensibles `WOMPI_PRIVATE_KEY`, `WOMPI_INTEGRITY_SECRET` y `WOMPI_EVENTS_SECRET`. La llave `NEXT_PUBLIC_WOMPI_PUBLIC_KEY` es publica por diseno y Next.js la incorpora al bundle durante el build, por lo que cualquier cambio requiere un nuevo despliegue.
 
+El informe TOEFL reutiliza esas mismas llaves y agrega cuatro variables propias. Debe permanecer apagado hasta completar la prueba Sandbox:
+
+- `TOEFL_REPORT_PAYWALL_ENABLED=false`
+- `TOEFL_REPORT_PRICE_COP` con el precio entero en pesos, sin puntos ni centavos
+- `TOEFL_SPEAKING_REVIEW_SLA_HOURS` con la promesa aprobada de revision
+- `TOEFL_REPORT_ORIGIN` solo cuando un Preview necesite regresar a su propio dominio; en produccion puede omitirse
+
 ## Uso desde codigo
 
 - Cliente/Widget: `getWompiPublicConfig()` desde `@/lib/wompi/client`.
@@ -51,13 +58,18 @@ El modulo de servidor usa `server-only` para impedir que las tres credenciales p
 4. `/pagos/resultado?id=...` consulta el ID directamente en la API de Wompi y solo muestra transacciones cuya referencia y monto coinciden con el catalogo.
 5. `POST /api/wompi/events` verifica dinamicamente las propiedades firmadas del evento y actualiza el ledger privado.
 
+El mismo webhook reconoce las referencias de informes TOEFL y las dirige a su ledger propio. No configures una segunda URL de eventos para TOEFL.
+
 El plan mensual es una compra unica de un mes; no es una suscripcion ni genera debitos automaticos. El plan anual se cobra en un unico pago equivalente a diez mensualidades.
 
 ## Ledger de pagos
 
 La migracion `supabase/migrations/20260821150000_wompi_transactions.sql` crea `public.wompi_transactions` con RLS habilitado y acceso exclusivo para `service_role`. No guarda correo, documento, direccion ni datos de tarjeta.
 
-- En Sandbox, el checkout puede probarse sin Supabase en Preview; Wompi conserva la transaccion y la pagina de resultado la consulta directamente.
+La migracion `supabase/migrations/20260821190614_toefl_report_payments.sql` crea el ledger que enlaza una transaccion aprobada con una entrega TOEFL. Tambien usa RLS y acceso exclusivo de `service_role`; guarda solo referencia, monto, estado y el hash del acceso privado, no el evento crudo de Wompi.
+
+- En Sandbox, el checkout general de planes puede probarse sin Supabase en Preview; Wompi conserva la transaccion y la pagina de resultado la consulta directamente.
+- El informe TOEFL siempre necesita Supabase y su migracion, también en Sandbox, porque debe enlazar el pago con una entrega concreta y conservar el acceso durante la revisión humana.
 - En Produccion, el checkout se bloquea si el ledger no esta disponible. Antes de activar llaves reales se debe aplicar y verificar la migracion.
 
 ## URL de eventos Sandbox
