@@ -7,7 +7,7 @@ import type { SatItemMeta } from '../module-types'
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 1-8). Textos originales de WeLearn;
  * ni un pasaje ni una pregunta salen de material de College Board (blueprint §5).
  *
- * Las claves son las del plan y no se negocian ítem a ítem: B, C, C, A, B, C, A, A.
+ * Las claves son las del plan y no se negocian ítem a ítem: B, C, D, A, B, C, A, D.
  * El reparto de letras se defiende a nivel de módulo: mover una sola aquí rompe la
  * puerta 1 en el otro extremo del examen, donde ya nadie la va a mirar.
  *
@@ -101,7 +101,9 @@ import type { SatItemMeta } from '../module-types'
  * La ciega del módulo bajó a 15,9 % y ninguno de los ocho filtra. Lo que quedaba no se ve
  * ítem a ítem.
  *
- * **q08 — dos distractores, un solo error.** B y D fallaban por el mismo camino: los dos
+ * **q08 — dos distractores, un solo error.** (Las letras de este párrafo son las de
+ * entonces; la quinta versión permutó el ítem y la opción del tercero nunca expuesto es
+ * hoy la **A**.) B y D fallaban por el mismo camino: los dos
  * pedían **inventar** un dato que el texto 2 no da —B una limpieza posterior, D que el
  * modo de trabajar valiera solo para esos años—. Dos distractores con un error cuentan
  * como uno, y de D no se podía escribir «el estudiante que elige esta es el que…»: nadie
@@ -148,7 +150,8 @@ import type { SatItemMeta } from '../module-types'
  *   distractor fino: acepta la fecha y da el paso de más, de «fue antes» a «de ahí
  *   salieron»).
  * - q08 · «not in the two that hung on a wall, and not in the one that never did» — sin
- *   ella, la D nueva es defendible y el ítem tiene dos claves.
+ *   ella, la opción del tercero nunca expuesto (hoy la A) es defendible y el ítem tiene
+ *   dos claves.
  *
  * **Molde compartido en q05, q06 y q08 (aviso, no defecto).** Los tres llevan la misma
  * premisa en las cuatro opciones y solo la cola en disputa, y tres de ocho enseñan a leer
@@ -178,7 +181,30 @@ import type { SatItemMeta } from '../module-types'
  * 101; las dos dentro de 25-150.
  *
  * Por **R2**, q04 y q08 vuelven enteros a la cola de auditoría y la ciega se repite sobre
- * estas opciones. Claves del plan intactas: B, C, C, A, B, C, A, A.
+ * estas opciones. Claves del plan de entonces: B, C, C, A, B, C, A, A.
+ *
+ * ── Quinta versión: reparto de letras dentro del bloque ────────────────────
+ *
+ * El auditor de sesgo de conjunto midió el módulo entero (A7 B7 C7 D6, correcto) y luego
+ * bloque a bloque: aquí, de ocho ítems, la clave **no estaba en la D en ninguno**. Quien
+ * lo nota descuenta la última opción y sube del 25 % al 33 % sin leer nada. Es el defecto
+ * que no se ve revisando ítem a ítem, solo contando.
+ *
+ * Cambio **puramente mecánico**: ni una palabra nueva en textos, enunciados ni opciones.
+ * Se permutan las cuatro opciones de dos ítems y viajan con ellas sus cuatro razones.
+ *
+ * - **q03** · clave C → **D**. Permutación: `sharpens` y `flattens` intercambian sitio;
+ *   `restores` y `displaces` se quedan. Las cuatro son de 8-9 caracteres, así que la
+ *   posición no crea pista de longitud, y ninguna de las cuatro aparece en el pasaje.
+ * - **q08** · clave A → **D**. Permutación: la clave y la opción del tercero nunca
+ *   expuesto intercambian sitio; las de la limpieza posterior y las obras barnizadas se
+ *   quedan. Las cuatro comparten premisa y solo discuten la cola: tres cuerdas de 109
+ *   caracteres y una de 113, con la clave en 109 —ni la más larga ni sola en la más
+ *   corta—. Solape léxico de la cola con los dos textos: 2/5 en la clave, entre 1/4 y 3/5
+ *   en las otras tres; la clave sigue sin ser ningún extremo.
+ *
+ * Reparto del bloque después del cambio: **A×2 B×2 C×2 D×2**. Claves vigentes, y son las
+ * únicas que valen de aquí en adelante: **B, C, D, A, B, C, A, D**.
  */
 
 export const items: MCQQuestion[] = [
@@ -222,10 +248,10 @@ export const items: MCQQuestion[] = [
     options: [
       'restores',
       'displaces',
-      'flattens',
       'sharpens',
+      'flattens',
     ],
-    answer: 2,
+    answer: 3,
   },
   {
     id: 'q04',
@@ -295,12 +321,12 @@ export const items: MCQQuestion[] = [
       "Text 1\n\nThe three late canvases left in Aurelio Vasco's studio are filed as unfinished, and they are the best evidence we have of how he worked. The under-drawing shows through; the sky is laid in and the figures are not; whole passages stop at the outline. Read side by side they show a painter building a picture from the back forward, and they let us watch a method the finished works, sealed under varnish, hide completely.\n\nText 2\n\nVasco exhibited two of the three in his lifetime, priced them, and sold one. He varnished all three himself. Whatever we are looking at, it is not work interrupted: a painter who prices, varnishes, and sells a canvas has declared it done. The bare outlines in the lower half are not a stage on the way to something else — not in the two that hung on a wall, and not in the one that never did.",
     text: "Based on the texts, how would the author of Text 2 most likely respond to Text 1's account of the three late canvases?",
     options: [
-      'By granting that the canvases are bare in places but arguing that Vasco let them go in that state on purpose.',
+      'By granting that the canvases are bare in places but arguing that only the third, never exhibited, is unfinished.',
       'By granting that the canvases are bare in places but arguing that a later cleaning, not Vasco, stripped them.',
       'By granting that the canvases are bare in places but arguing that the varnished works show the same sequence.',
-      'By granting that the canvases are bare in places but arguing that only the third, never exhibited, is unfinished.',
+      'By granting that the canvases are bare in places but arguing that Vasco let them go in that state on purpose.',
     ],
-    answer: 0,
+    answer: 3,
   },
 ]
 
@@ -354,9 +380,9 @@ export const meta: SatItemMeta[] = [
       B:
         'Da por supuesto que un molde persa no cabe en inglés y que, si algo se pierde, será el sitio del estribillo: llegará tarde, o en mitad del pareado, o donde se pueda. El texto lo desmiente antes del hueco y con detalle —«at the close of every couplet, on time and in the place the form requires»—. La posición se conserva entera; lo que cambia es lo que se dice desde ella.',
       C:
-        'Correcta: las dos piezas de la respuesta están arriba, no en la oración del hueco. Se conserva el retorno —cada pareado, puntual, en el lugar que la forma pide— y se pierde el movimiento: la palabra persa «moves as the poem goes» y de esos giros sale «much of the poem\'s motion», mientras que la inglesa vuelve «saying each time exactly what it said before». Un relieve que se repite sin variar queda aplanado: el dibujo sigue, el desnivel no.',
-      D:
         'Toma la reducción por una ganancia: una sola palabra repetida golpearía más fuerte que una que cambia de sentido en cada pareado. Sería una lectura defendible de otro poema, no de este. El texto ha dicho antes de dónde viene aquí el trabajo del estribillo —de que la palabra se mueva mientras el poema avanza—, así que fijarla en un sentido le quita la función, no se la afila.',
+      D:
+        'Correcta: las dos piezas de la respuesta están arriba, no en la oración del hueco. Se conserva el retorno —cada pareado, puntual, en el lugar que la forma pide— y se pierde el movimiento: la palabra persa «moves as the poem goes» y de esos giros sale «much of the poem\'s motion», mientras que la inglesa vuelve «saying each time exactly what it said before». Un relieve que se repite sin variar queda aplanado: el dibujo sigue, el desnivel no.',
     },
     fuenteHecho:
       'Hecho real de métrica persa: el gazal cierra cada pareado con una palabra o sintagma fijo, y su polisemia es un problema conocido de traducción. La forma se explica dentro del texto —«two-line couplet», porque «couplet» no es cognado del español—; sentidos, ejemplo y redacción son originales.',
@@ -444,13 +470,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Correcta: el texto 2 concede lo que se ve —«The bare outlines in the lower half»— y le cambia el estatuto con hechos del propio cuadro: Vasco expuso dos, les puso precio, vendió uno y barnizó los tres. «A painter who prices, varnishes, and sells a canvas has declared it done», así que esos contornos «are not a stage on the way to something else», y la frase se cierra alcanzando a los tres, «not in the two that hung on a wall, and not in the one that never did». Un lienzo dado por terminado no registra el proceso: registra hasta dónde quiso llegar.',
+        'El estudiante que elige esta es el que cuenta: el texto 2 dice «exhibited two of the three», de modo que uno se quedó en el estudio sin colgarse nunca, y él le devuelve a ese tercero el estatuto que el texto 1 daba a los tres. Es una mala lectura y no una invención —la cuenta está escrita—, y además tienta porque el principio del texto 2 nombra tres actos, «prices, varnishes, and sells», y al tercer lienzo solo le consta el segundo. Lo que la deshace es que el texto 2 no reparte: barnizó «all three himself» y cierra nombrando los dos grupos, «not in the two that hung on a wall, and not in the one that never did». La única excepción concebible queda excluida con su nombre, y esa cláusula final es la que impide que el ítem tenga dos claves.',
       B:
         'El estudiante que elige esta es el que explica lo que ve por algo que le pasó al cuadro después: contornos desnudos y dibujo subyacente a la vista son, para él, pintura perdida —una limpieza dura, un restaurador con demasiado disolvente— y no pintura que nunca llegó a ponerse. Es el reflejo corriente ante un cuadro incompleto, y por eso la opción tiene quien la elija. El texto 2 la desmiente por dos sitios: el único tratamiento de superficie que menciona lo hizo el pintor, «He varnished all three himself», y esa hipótesis le costaría el argumento entero, que vive de que las decisiones sobre estos lienzos sean de Vasco y de nadie más.',
       C:
         'Le atribuye al texto 2 una afirmación sobre las obras acabadas, que es de lo que habla el texto 1 cuando dice que están «sealed under varnish». El texto 2 no dice nada de lo que se ve o se deja de ver bajo el barniz de las demás; su discusión no es si los tres lienzos aportan poco, sino qué clase de cosa son.',
       D:
-        'El estudiante que elige esta es el que cuenta: el texto 2 dice «exhibited two of the three», de modo que uno se quedó en el estudio sin colgarse nunca, y él le devuelve a ese tercero el estatuto que el texto 1 daba a los tres. Es una mala lectura y no una invención —la cuenta está escrita—, y además tienta porque el principio del texto 2 nombra tres actos, «prices, varnishes, and sells», y al tercer lienzo solo le consta el segundo. Lo que la deshace es que el texto 2 no reparte: barnizó «all three himself» y cierra nombrando los dos grupos, «not in the two that hung on a wall, and not in the one that never did». La única excepción concebible queda excluida con su nombre, y esa cláusula final es la que impide que el ítem tenga dos claves.',
+        'Correcta: el texto 2 concede lo que se ve —«The bare outlines in the lower half»— y le cambia el estatuto con hechos del propio cuadro: Vasco expuso dos, les puso precio, vendió uno y barnizó los tres. «A painter who prices, varnishes, and sells a canvas has declared it done», así que esos contornos «are not a stage on the way to something else», y la frase se cierra alcanzando a los tres, «not in the two that hung on a wall, and not in the one that never did». Un lienzo dado por terminado no registra el proceso: registra hasta dónde quiso llegar.',
     },
     fuenteHecho:
       'Ficción original: Aurelio Vasco no existe. El argumento —firmar, barnizar y vender como declaración de obra acabada— está construido para el ítem sobre una discusión corriente en historia del arte, sin seguir ningún caso concreto.',

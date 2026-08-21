@@ -4,8 +4,9 @@ import type { SatItemMeta } from '../module-types'
 /**
  * Bloque Expression of Ideas del módulo `sat-set-1-m2-facil` — ítems q23 a q27.
  *
- * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 23-27). Claves del plan, que no se
- * negocian ítem a ítem: **B, A, B, C, A**. Dificultades 1, 2, 1, 2, 3 y temas humanidades,
+ * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 23-27). Claves vigentes, que no se
+ * negocian ítem a ítem: **D, A, D, C, B** (el plan asignaba B, A, B, C, A; ver «REPARTO DE
+ * LETRAS» al final de este comentario). Dificultades 1, 2, 1, 2, 3 y temas humanidades,
  * historia, ciencia, literatura, humanidades. Todo el contenido es original (§5 del
  * blueprint); de College Board solo se reproducen los dos enunciados canónicos.
  *
@@ -39,9 +40,9 @@ import type { SatItemMeta } from '../module-types'
  *   la distancia lo desgasta; la nota 2 dice que una frase silbada se distingue a cinco
  *   kilómetros cruzando un valle o una cumbre. **C**: el silbo es un código de señales que
  *   hay que haber aprendido; la nota 1 dice que lleva las vocales y consonantes de las
- *   palabras y no es un código. **D**: se adquiere de niño junto con la lengua hablada y
+ *   palabras y no es un código. **B**: se adquiere de niño junto con la lengua hablada y
  *   ya no después; la nota 6 dice que los adultos que se instalan allí siguen los mensajes
- *   silbados en una temporada. Solo **B** queda en pie, y la sostienen tres notas: la 3 (muchas palabras
+ *   silbados en una temporada. Solo **D** queda en pie, y la sostienen tres notas: la 3 (muchas palabras
  *   dan el mismo silbo), la 4 (lo ambiguo se resuelve por lo que el trabajo del día hace
  *   probable) y la 5 (silbadores de toda la vida perdieron las frases sobre asuntos de los
  *   que nadie silba).
@@ -130,7 +131,7 @@ import type { SatItemMeta } from '../module-types'
  *   25-150. q23 y q24 crecieron: cada distractor necesita ahora en el cuaderno el hecho que
  *   lo desmiente.
  * - **2 longitud de la clave**: la clave no es la opción más larga en ninguno de los cinco.
- *   En q23 y q24 tampoco es la más corta (q23: 157 · 155 · 149 · 150 caracteres; q24: 165 ·
+ *   En q23 y q24 tampoco es la más corta (q23: 157 · 150 · 149 · 155 caracteres; q24: 165 ·
  *   168 · 163 · 167).
  * - **3 solape léxico**: en q23 la clave repite 8 palabras del texto contra 9, 5 y 5 de los
  *   distractores, y en q24 repite 11 contra 11, 10 y 12: en los dos queda estrictamente por
@@ -143,6 +144,40 @@ import type { SatItemMeta } from '../module-types'
  * ciegas hay que repetirla sobre ellos. El módulo todavía no tiene acta en
  * `docs/sat-auditorias/`, de modo que no hay ninguna huella firmada que estos cambios dejen
  * caducada.
+ *
+ * ## REPARTO DE LETRAS POR BLOQUE (21 ago 2026) — permutación pura, sin contenido nuevo
+ *
+ * El auditor de sesgo de conjunto midió el módulo entero y lo encontró bien repartido
+ * (A7 B7 C7 D6) y apilado dentro de cada bloque: aquí no había ni una D en cinco ítems, y
+ * en el bloque de lectura ninguna en ocho. Un estudiante que cuente letras sube del 25 %
+ * al 33 % sin leer, que es exactamente la avería que en otro producto dejó cinco series
+ * publicadas con la clave en A el 100 % de las veces —invisible ítem a ítem, evidente
+ * contando—. Se movieron de sitio tres claves de este bloque: **q23 B → D**, **q25 B → D**
+ * y **q27 A → B**. Reparto resultante: **A ×1, B ×1, C ×1, D ×2**.
+ *
+ * Lo que se hizo en los tres es reordenar las cuatro opciones y arrastrar con cada una su
+ * razón de distractor; ni una opción se reescribió, ni una razón cambió de opción. Cómo
+ * quedó cada permutación y por qué esa y no otra:
+ *
+ * - **q23** — se intercambian B y D. La clave (155 caracteres) queda entre la más larga
+ *   (157, A) y la más corta (149, C), y su solape con las notas sigue por debajo del máximo
+ *   y por encima del mínimo: la permutación no toca ninguna de las dos puertas.
+ * - **q25** — se intercambian B y D, así que el juego queda «For instance,» · «Meanwhile,» ·
+ *   «As a result,» · «In fact,». La clave sigue siendo la opción más corta del ítem, y eso
+ *   una permutación no lo arregla: es la longitud de la palabra, no su posición. Sigue
+ *   valiendo lo que ya decía este comentario —«elige el conector más corto» acierta 1 de 3
+ *   en el bloque, no 2 de 3—.
+ * - **q27** — ciclo de tres: «Likewise,» pasa a A, la clave «To be sure,» a B y
+ *   «Consequently,» a D. Se descartó el intercambio simple A↔B porque dejaba el conector de
+ *   consecuencia en A en dos de los tres ítems de transiciones (con «Hence,» en q26). Así
+ *   los tres consecutivos caen en posiciones distintas —q25 C, q26 A, q27 D— y las tres
+ *   claves de transiciones también: **D, C, B**. La clave (11 caracteres) no es ni la más
+ *   larga (13) ni la más corta (9).
+ *
+ * Queda desalineado a propósito y hay que arreglarlo fuera de este archivo: la fila de
+ * claves de `docs/sat-planes/sat-set-1-m2-facil.md` sigue diciendo B, A, B, C, A. El reparto
+ * de claves se defiende a nivel de módulo, así que quien actualice el plan que copie de aquí
+ * y no al revés.
  */
 
 export const items: MCQQuestion[] = [
@@ -155,11 +190,11 @@ export const items: MCQQuestion[] = [
     text: 'The student wants to explain why some listeners cannot understand a whistled message. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
       'Because a whistled sentence has to cross a whole valley or a ridge to arrive, a listener five kilometers off makes nothing of a whistle worn thin on the way.',
-      "Because many words of the language sound alike once whistled, a listener makes nothing of a message about matters that the day's work does not make likely.",
-      'Because a whistled message keeps the melody of a sentence and not its words, a listener makes nothing of it without having learned the signal for it.',
       'Because whistling is acquired in childhood with the spoken language, a listener who came to the valleys as an adult makes nothing of what is whistled.',
+      'Because a whistled message keeps the melody of a sentence and not its words, a listener makes nothing of it without having learned the signal for it.',
+      "Because many words of the language sound alike once whistled, a listener makes nothing of a message about matters that the day's work does not make likely.",
     ],
-    answer: 1,
+    answer: 3,
   },
   {
     id: 'q24',
@@ -185,11 +220,11 @@ export const items: MCQQuestion[] = [
     text: 'Which choice completes the text with the most logical transition?',
     options: [
       'For instance,',
-      'In fact,',
-      'As a result,',
       'Meanwhile,',
+      'As a result,',
+      'In fact,',
     ],
-    answer: 1,
+    answer: 3,
   },
   {
     id: 'q26',
@@ -214,12 +249,12 @@ export const items: MCQQuestion[] = [
       'Translators often say that a translation ages faster than the book it translates. The claim is easy to state and hard to test. A novel published in 1890 goes on being read in the language it was written in, while the versions made of it elsewhere are replaced every generation or two, and the replacement is justified by saying that the old version now sounds dated. ______ the sentence a translator writes belongs to the moment of its writing in a way the original does not: it answers a question about how a foreign book should sound in this language now, and every generation asks that question again. The difficulty is that originals sound dated too, and readers forgive them for it. What ages may be less the translation than our patience with it.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
-      'To be sure,',
-      'Consequently,',
-      'For instance,',
       'Likewise,',
+      'To be sure,',
+      'For instance,',
+      'Consequently,',
     ],
-    answer: 0,
+    answer: 1,
   },
 ]
 
@@ -234,11 +269,11 @@ export const meta: SatItemMeta[] = [
       A:
         'Falsa por la nota 2: una frase silbada se distingue a cinco kilómetros, cruzando un valle o pasando una cumbre, y lo que se apaga en unos cientos de metros es el grito. Explica exactamente lo que pide el enunciado —por qué un oyente no saca nada de un mensaje silbado— pero apoyada en un hecho que el cuaderno niega. Es el camino de quien busca el obstáculo en la distancia, que es el único dato de las notas con forma de cifra, y confunde no oír con no entender.',
       B:
-        'Correcta: es la única de las cuatro causas que las notas afirman. Muchas palabras salen como el mismo silbo (nota 3), así que el oyente completa lo que falta con lo que el trabajo del día hace probable (nota 4); por eso, en la prueba de la nota 5, silbadores de toda la vida perdieron las frases sobre asuntos de los que nadie silba, aunque cada palabra fuera corriente. Las otras tres explican lo mismo por causas que el cuaderno desmiente una a una.',
+        'Falsa por la nota 6: el silbo se da en la escuela media hora a la semana, y los adultos que se instalan en los valles siguen los mensajes silbados en una temporada. Es el camino de quien traslada al silbo el período crítico de la adquisición de lenguas: suena a explicación experta, que es justo lo que la hace peligrosa, y el cuaderno la desmiente en la misma nota que habla de la escuela.',
       C:
         'Falsa por la nota 1: el silbo lleva las vocales y consonantes de las palabras y no es un código de señales fijas, de modo que no hay una señal aprendida para cada mensaje. Es la idea popular del silbo como morse de montaña, y por eso es la trampa del ítem: suena a explicación completa y no la sostiene ninguna nota. Quien la marca ha dado por supuesto justo lo que la primera nota corrige.',
       D:
-        'Falsa por la nota 6: el silbo se da en la escuela media hora a la semana, y los adultos que se instalan en los valles siguen los mensajes silbados en una temporada. Es el camino de quien traslada al silbo el período crítico de la adquisición de lenguas: suena a explicación experta, que es justo lo que la hace peligrosa, y el cuaderno la desmiente en la misma nota que habla de la escuela.',
+        'Correcta: es la única de las cuatro causas que las notas afirman. Muchas palabras salen como el mismo silbo (nota 3), así que el oyente completa lo que falta con lo que el trabajo del día hace probable (nota 4); por eso, en la prueba de la nota 5, silbadores de toda la vida perdieron las frases sobre asuntos de los que nadie silba, aunque cada palabra fuera corriente. Las otras tres explican lo mismo por causas que el cuaderno desmiente una a una.',
     },
     fuenteHecho:
       'Hecho libre de lingüística: el habla silbada reproduce las vocales y consonantes de una lengua hablada —no es un código de señales—, se distingue a varios kilómetros y depende del contexto, porque muchas palabras dan el mismo silbo y el oyente las resuelve por lo previsible del mensaje. Donde se enseña en la escuela lo hace como asignatura obligatoria de media hora semanal. Los valles Ferrin, la prueba de la nota 5 y las cifras son inventados: así los tres distractores afirman cosas falsas sobre un lugar que no existe y ninguno enseña un hecho falso del mundo.',
@@ -272,11 +307,11 @@ export const meta: SatItemMeta[] = [
       A:
         'Lee la oración del hueco como un ejemplo de la anterior, y «some of these plants» invita a ello. Pero un ejemplo tendría que ser un caso de lo que se acaba de afirmar —una planta pasando un día de sol con los poros cerrados— y lo que la oración describe va más allá: semanas sin nada que absorber y el mismo carbono aprovechado una y otra vez dentro de la hoja. Es el camino de quien ve un cuantificador y oye «por ejemplo».',
       B:
-        'Correcta: la oración del hueco dice lo mismo que la anterior, llevado al extremo. La anterior afirma que el mecanismo saca a la planta de un día entero de sol; la del hueco, que a algunas las saca de semanas de sequía. Mismo sujeto, misma maquinaria, misma dirección y más fuerza: eso es lo que marca «In fact». El párrafo no cambia de relación al cerrar, sube la apuesta.',
+        'Sigue el reloj del texto en vez de su argumento: hay día, hay noche y hay «the next morning», y de ahí a leer el cierre como algo que ocurre a la vez hay un paso. Pero en el hueco no hay dos procesos simultáneos ni dos sujetos: son las mismas plantas y la misma maquinaria, medidas en semanas en lugar de en un día.',
       C:
         'Encadena por consecuencia dos oraciones que dicen lo mismo con distinta intensidad. Aguantar semanas de sequía no se sigue de aguantar un día de sol: es la misma capacidad enunciada en su límite. Y la consecuencia del mecanismo ya está dicha en la oración anterior —«carries the plant through a whole sunlit day»—, así que ponerla otra vez en el hueco repite el eslabón. Es lo que elige quien encuentra un mecanismo descrito y da por hecho que el final del párrafo es su efecto; es, con diferencia, la apuesta segura del que no lee.',
       D:
-        'Sigue el reloj del texto en vez de su argumento: hay día, hay noche y hay «the next morning», y de ahí a leer el cierre como algo que ocurre a la vez hay un paso. Pero en el hueco no hay dos procesos simultáneos ni dos sujetos: son las mismas plantas y la misma maquinaria, medidas en semanas en lugar de en un día.',
+        'Correcta: la oración del hueco dice lo mismo que la anterior, llevado al extremo. La anterior afirma que el mecanismo saca a la planta de un día entero de sol; la del hueco, que a algunas las saca de semanas de sequía. Mismo sujeto, misma maquinaria, misma dirección y más fuerza: eso es lo que marca «In fact». El párrafo no cambia de relación al cerrar, sube la apuesta.',
     },
     fuenteHecho:
       'Hecho libre de fisiología vegetal: apertura estomática nocturna, fijación del CO2 en la hoja hasta la mañana siguiente y, en sequía prolongada, ciclo cerrado con los poros sin abrir y el carbono respirado reaprovechado dentro de la hoja. Sin especie, desierto ni estudio concretos.',
@@ -308,13 +343,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Correcta: el texto ha puesto la afirmación de los traductores en cuarentena —«easy to state and hard to test»— y en el hueco la concede en su forma más fuerte para volverse contra ella dos oraciones después, con «The difficulty is that…». «To be sure» es esa concesión previa al giro. El cierre confirma la dirección: lo concedido se matiza, no se abandona.',
+        'Suma la oración como una segunda observación paralela, porque también enfrenta traducción y original. El párrafo no está apilando observaciones: está concediendo terreno a la tesis que venía poniendo en duda, y en la oración siguiente le da la vuelta. Quien elige este conector no ve que el texto tiene un giro.',
       B:
-        'Invierte la flecha causal. Presenta la dependencia del momento de escritura como efecto de la costumbre de sustituir versiones, cuando el texto la ofrece como su razón: se sustituyen porque la frase del traductor pertenece a su momento. Es el camino de quien encadena por consecuencia dos oraciones que hablan de lo mismo sin comprobar cuál sostiene a cuál.',
+        'Correcta: el texto ha puesto la afirmación de los traductores en cuarentena —«easy to state and hard to test»— y en el hueco la concede en su forma más fuerte para volverse contra ella dos oraciones después, con «The difficulty is that…». «To be sure» es esa concesión previa al giro. El cierre confirma la dirección: lo concedido se matiza, no se abandona.',
       C:
         'Toma lo que sigue por un caso de lo anterior. No hay caso: la oración del hueco no nombra ninguna traducción ni ningún traductor concreto y es más general que la que la precede, porque dice qué le pasa a cualquier frase traducida. Es lo que elige quien ve una observación amplia seguida de otra y supone que la segunda ilustra a la primera.',
       D:
-        'Suma la oración como una segunda observación paralela, porque también enfrenta traducción y original. El párrafo no está apilando observaciones: está concediendo terreno a la tesis que venía poniendo en duda, y en la oración siguiente le da la vuelta. Quien elige este conector no ve que el texto tiene un giro.',
+        'Invierte la flecha causal. Presenta la dependencia del momento de escritura como efecto de la costumbre de sustituir versiones, cuando el texto la ofrece como su razón: se sustituyen porque la frase del traductor pertenece a su momento. Es el camino de quien encadena por consecuencia dos oraciones que hablan de lo mismo sin comprobar cuál sostiene a cuál.',
     },
     fuenteHecho:
       'Lugar común real de la teoría de la traducción —las traducciones se rehacen cada generación y los originales no— discutido con argumentación propia. Ningún traductor, teórico, novela ni traducción reales; 1890 solo fecha un ejemplo inventado.',

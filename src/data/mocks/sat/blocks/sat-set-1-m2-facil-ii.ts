@@ -52,7 +52,7 @@ import type { SatItemMeta } from '../module-types'
  *   30 %). Tampoco es la más corta en más de dos, para que no se acierte por el otro lado.
  * - Puerta 3 · la clave no es la que más repite palabras del texto en ninguno, ni la que
  *   menos en ninguno (0 % y 0 %, máximo 40 % por cada cara). Los solapes por ítem, en orden
- *   A-D: q09 7/6/5/4, q10 6/7/4/5, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
+ *   A-D: q09 7/6/5/4, q10 6/5/4/7, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
  *   q15 12/12/12/12. La clave queda siempre en el medio, nunca en un extremo; en q15 las
  *   cuatro empatan, que es el caso que el guardián trata como «no hay pista que explotar».
  *
@@ -67,8 +67,8 @@ import type { SatItemMeta } from '../module-types'
  *   «la prueba más fuerte» (salto de cresta más ancho, valle más plano) apunta a D.
  * - q10 es el único `central-ideas-details` de los dos que usa el enunciado de idea
  *   central, y desde la cuarta pasada es un ítem distinto (ver más abajo). Las cuatro
- *   opciones localizan el mismo giro en cuatro sitios —la frase, el asunto, la crítica, la
- *   editorial— con la misma plantilla, dos dentro del libro y dos fuera de él. La clave no
+ *   opciones localizan el mismo giro en cuatro sitios —en orden: la frase, la editorial, la
+ *   crítica, el asunto— con la misma plantilla, dos dentro del libro y dos fuera de él. La clave no
  *   es la lectura más fina: es la única que no choca con una línea del pasaje.
  *
  * SEGUNDA PASADA (21 ago 2026). El auditor de clave dio APTO a los siete y resolvió los
@@ -197,9 +197,9 @@ import type { SatItemMeta } from '../module-types'
  *   lectura previsible del escenario. El pasaje reparte la responsabilidad de un cambio de
  *   estilo entre cuatro candidatos —la frase, el asunto, la crítica y la editorial— y los tres
  *   primeros los desmiente con una línea cada uno: los cuadernos de los años cincuenta (mata
- *   A), «the same three she had been writing about since her first book» (mata B) y la misma
+ *   A), «the same three she had been writing about since her first book» (mata D) y la misma
  *   objeción en 1958 y en 1972 (mata C). Las cuatro opciones usan la misma plantilla, dos
- *   ponen el cambio dentro del libro y dos fuera de él, y la pareja más cercana —C y D— se
+ *   ponen el cambio dentro del libro y dos fuera de él, y la pareja más cercana —B y C— se
  *   distingue solo en cuál de las dos instituciones se movió, que es lo único que hay que ir
  *   a buscar al texto. El camino del sentido común lleva a A, el «estilo tardío» de manual.
  *
@@ -262,6 +262,33 @@ import type { SatItemMeta } from '../module-types'
  *   los siete. Condición de mantenimiento que pide el auditor de clave: la clave de q11 gana
  *   a su distractor C porque conserva las TRES piezas (no son estudios / ocupación aparte /
  *   sin público). No se recorta ninguna.
+ *
+ * REPARTO DE LETRAS POR BLOQUE (21 ago 2026) — permutación pura, sin contenido nuevo.
+ *
+ * El auditor de sesgo de conjunto midió el módulo entero: bien repartido en total
+ * (A7 B7 C7 D6) y apilado por bloque. Aquí la clave era D en tres de siete y A en dos, y en
+ * el bloque de gramática D en cuatro de siete sin una sola A. Quien cuente letras sube del
+ * 25 % al 33 % sin leer nada; es la avería que en otro producto dejó cinco series publicadas
+ * con la clave en A el 100 % de las veces, invisible revisando ítem a ítem y evidente
+ * contando. En este bloque se movió **una sola clave: q10 D → B**. Reparto resultante:
+ * **B B D C A A C** — A ×2, B ×2, C ×2, D ×1.
+ *
+ * - q10 · se intercambian las opciones B y D, y cada razón de distractor viaja con su
+ *   opción: la editorial (clave) pasa de D a B y los pueblos, de B a D. Ni una opción se
+ *   reescribió. Las dos parejas quedan contiguas —A y D son el par espejo frase/pueblos, B y
+ *   C son las dos instituciones con la misma coleta «rather than in what she wrote»—, así que
+ *   la clave no se distingue por forma de su vecina, que es la que hay que ir a descartar al
+ *   texto. Longitudes 107/107/108/105 con la clave empatada en el medio (ni la más larga ni
+ *   la más corta) y solapes 6/5/4/7 con la clave entre el mayor y el menor: las dos puertas
+ *   de conjunto siguen dentro. El camino del sentido común —el «estilo tardío»— sigue
+ *   llevando a A.
+ * - Efecto que esto deja y que se asume: los dos `central-ideas-details` del bloque (q09 y
+ *   q10) tienen ahora la clave en B. Con dos ítems no hay patrón explotable, y el reparto de
+ *   letras se defiende a nivel de módulo, no de tipo de ítem.
+ *
+ * Queda desalineado a propósito y se arregla fuera de este archivo: la fila 10 de
+ * `docs/sat-planes/sat-set-1-m2-facil.md` sigue diciendo clave D, y este comentario lo repite
+ * más arriba cada vez que cuenta una pasada anterior. Lo que está en el archivo es B.
  */
 
 export const items: MCQQuestion[] = [
@@ -289,11 +316,11 @@ export const items: MCQQuestion[] = [
     text: 'Which choice best states the main idea of the text?',
     options: [
       "The turn critics date to 1970 was a change in Lascano's sentences rather than in the towns she wrote about.",
-      "The turn critics date to 1970 was a change in the towns Lascano wrote about rather than in her sentences.",
-      "The turn critics date to 1970 was a change in what her reviewers would accept rather than in what she wrote.",
       "The turn critics date to 1970 was a change in what her publisher would print rather than in what she wrote.",
+      "The turn critics date to 1970 was a change in what her reviewers would accept rather than in what she wrote.",
+      "The turn critics date to 1970 was a change in the towns Lascano wrote about rather than in her sentences.",
     ],
-    answer: 3,
+    answer: 1,
   },
   {
     id: 'q11',
@@ -402,11 +429,11 @@ export const meta: SatItemMeta[] = [
       A:
         'Deja el cambio dentro de la prosa de Lascano, y los cuadernos lo desmienten: «The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away». Si la frase corta ya estaba veinte años antes, no puede ser lo que se movió después de 1970. Es la lectura de manual —el estilo tardío de quien se va despojando con la edad— y la marca quien reconoce la historia habitual antes de comprobar cuál cuenta esta.',
       B:
-        'Mueve el cambio del cómo al qué, y el texto cierra esa puerta con la misma limpieza: los tres pueblos «are the same three she had been writing about since her first book». Después de 1970 no hay terreno nuevo. La elige quien lee la lista de la primera frase —frases cortas, pueblos pequeños, finales sin explicar— como inventario de novedades, sin ver que el pasaje la desmonta entrada por entrada.',
+        'Correcta: junta las dos mitades del pasaje. Los cuadernos quitan el cambio de la escritura —frase corta, finales sin explicar y los mismos tres pueblos, todo anterior a 1970— y la última frase dice qué sí cambió: «What was new after 1970 was her publisher», con un editor que en 1958 exigía «a proper ending» y otro, tras la venta de la casa, que no exigió nada. El giro que la crítica fecha en 1970 está en lo que la editorial imprimía, no en lo que Lascano escribía. No es la lectura más fina de las cuatro: es la única que no choca con una línea del texto.',
       C:
         'Saca el cambio de la escritora, que es el paso correcto, y lo pone en la institución equivocada. El pasaje fecha la respuesta de la crítica: «The reviews that greeted the late novels in 1972 raised just the objection the reviews of 1958 had raised». Con catorce años de por medio y la misma objeción, nadie se acostumbró a nada. Es la distractora más cercana a la clave, y la marca quien acierta el diagnóstico general y no lee las dos frases que separan a la crítica del editor.',
       D:
-        'Correcta: junta las dos mitades del pasaje. Los cuadernos quitan el cambio de la escritura —frase corta, finales sin explicar y los mismos tres pueblos, todo anterior a 1970— y la última frase dice qué sí cambió: «What was new after 1970 was her publisher», con un editor que en 1958 exigía «a proper ending» y otro, tras la venta de la casa, que no exigió nada. El giro que la crítica fecha en 1970 está en lo que la editorial imprimía, no en lo que Lascano escribía. No es la lectura más fina de las cuatro: es la única que no choca con una línea del texto.',
+        'Mueve el cambio del cómo al qué, y el texto cierra esa puerta con la misma limpieza: los tres pueblos «are the same three she had been writing about since her first book». Después de 1970 no hay terreno nuevo. La elige quien lee la lista de la primera frase —frases cortas, pueblos pequeños, finales sin explicar— como inventario de novedades, sin ver que el pasaje la desmonta entrada por entrada.',
     },
     fuenteHecho:
       'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato. Los cuadernos se catalogan en 1996 y no en 2019, y quien los abre es una biblioteca universitaria y no la familia: q11, que va justo detrás, también tenía papeles privados de una creadora abiertos en 2019, y dos ítems seguidos con el mismo armazón —creadora, papeles privados, fecha reciente, lectura revisionista— se leen como uno repetido. La deducción del ítem no depende de la fecha: depende de que los cuadernos son de los años cincuenta.',
