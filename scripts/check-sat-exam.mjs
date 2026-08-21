@@ -318,6 +318,20 @@ function checkModule(mod) {
     }
   }
 
+  // ── El id de cada ítem tiene que coincidir con su posición ───────────────
+  //
+  // Sin esto, dos ítems podían quedar cruzados —q20 en la posición 19 y q19 en la 20—
+  // y ninguna puerta lo veía, porque el reparto, el orden por dominio y la curva de
+  // dificultad seguían siendo correctos. El daño no es para el estudiante: es que un
+  // informe de auditoría que habla de «q19» describe la pregunta que en pantalla es la
+  // 20, y la siguiente corrección aterriza en el ítem equivocado.
+  items.forEach((q, i) => {
+    const esperado = `q${String(i + 1).padStart(2, '0')}`
+    if (q.id !== esperado) {
+      fail(id, 'ids', `en la posición ${i + 1} está «${q.id}»; debería ser «${esperado}». Un id que no coincide con su sitio hace que la próxima corrección caiga en otro ítem`)
+    }
+  })
+
   // ── 4, 6, 10, 11 · las que no son mecánicas: se exige el acta ──
   const acta = path.join(actasDir, `${id}.json`)
   if (!fs.existsSync(acta)) {

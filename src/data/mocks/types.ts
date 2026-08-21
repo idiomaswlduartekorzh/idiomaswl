@@ -330,6 +330,32 @@ export interface MockSection {
   exampleOptions?: string[]; // A/B/C options shown in the example scene
 }
 
+/**
+ * Enrutado adaptativo por etapas. Hoy solo lo usa el SAT.
+ *
+ * El motor sirve secciones lineales: las pinta todas, una detrás de otra. Con esto, en
+ * cambio, el estudiante hace el módulo de `routeAfterPart`, lo **entrega sin poder
+ * volver**, y según cuántas acertó se le sirve `lowPart` o `highPart`. Las otras partes
+ * no existen para él: ni las ve, ni cuentan, ni aparecen en la revisión.
+ *
+ * `correctToRouteHigh` es **convención de WeLearn, no de College Board**: el punto de
+ * corte real del SAT no se publica. La pantalla lo dice; no se presenta como oficial.
+ *
+ * Un examen sin este campo se comporta exactamente como antes.
+ */
+export interface AdaptiveRouting {
+  /** Parte que todo el mundo hace primero y que decide el enrutado. */
+  routeAfterPart: number;
+  /** Aciertos necesarios en esa parte para ir al módulo exigente. */
+  correctToRouteHigh: number;
+  /** Parte que se sirve por debajo del corte. */
+  lowPart: number;
+  /** Parte que se sirve a partir del corte. */
+  highPart: number;
+  /** Minutos por módulo. El cronómetro se reinicia en cada uno, como en el examen real. */
+  minutesPerModule: number;
+}
+
 export interface MockExam {
   id: string;
   examSlug: string;
@@ -337,6 +363,8 @@ export interface MockExam {
   subtitle: string;
   timeMinutes: number;
   sections: MockSection[];
+  /** Ver AdaptiveRouting. Ausente = examen lineal de toda la vida. */
+  adaptive?: AdaptiveRouting;
   // Marks a mock that follows a specific official blueprint. 'toefl-2026' selects
   // the 1–6 section scoring and the new-format task renderers; absent = legacy.
   format?: 'toefl-2026';

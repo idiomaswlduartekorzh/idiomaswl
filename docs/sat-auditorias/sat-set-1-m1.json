@@ -49,7 +49,9 @@
     "Dos ítems (q06, q14) siguen por encima del umbral por ítem en la última medición, con la media muy por debajo. Anotados para una pasada futura.",
     "El motor no hace adaptatividad entre módulos ni conversión a escala 200-800. El hub lo declara por escrito, pero la PANTALLA DE RESULTADOS NO: muestra un porcentaje con el rótulo «sobre 100 puntos», que es la escala del ICFES y no la del SAT. La versión anterior de esta acta afirmaba que la pantalla lo decía; era falso y se afirmó sin comprobarlo. Lo detectaron dos auditores de producto independientes el 19 ago 2026. Bloquea la publicación.",
     "Auditoría de producto (19 ago 2026): el contenido es APTO pero el PRODUCTO no es publicable. Dos bloqueantes técnicos —los leads del SAT se guardan como leads de ICFES y son invisibles en el panel; y en móvil los 27 textos se recortan a 340 px, ocultando el hueco de la pregunta en cinco ítems—. Informe en docs/sat-auditorias/informes/.",
-    "CONVERSIÓN AL FORMATO DE COMPLETAR (20 ago 2026). q01, q02 y q03 se reescribieron: pasan de «As used in the text, what does the word X most nearly mean?» a «Which choice completes the text with the most logical and precise word?», que es el formato dominante de vocabulario en el SAT digital y del que el módulo carecía por completo — lo señaló el profesor de SAT en la auditoría de producto. Se conservan los tres textos, las tres claves y las tres letras (B, D, A), así que ni el reparto de letras ni la curva de dificultad se mueven. q04 se deja en la forma antigua a propósito: el examen real usa las dos, y forzar la cuarta conversión abría una segunda clave defendible (belabor / render), que es puerta eliminatoria."
+    "CONVERSIÓN AL FORMATO DE COMPLETAR (20 ago 2026). q01, q02 y q03 se reescribieron: pasan de «As used in the text, what does the word X most nearly mean?» a «Which choice completes the text with the most logical and precise word?», que es el formato dominante de vocabulario en el SAT digital y del que el módulo carecía por completo — lo señaló el profesor de SAT en la auditoría de producto. Se conservan los tres textos, las tres claves y las tres letras (B, D, A), así que ni el reparto de letras ni la curva de dificultad se mueven. q04 se deja en la forma antigua a propósito: el examen real usa las dos, y forzar la cuarta conversión abría una segunda clave defendible (belabor / render), que es puerta eliminatoria.",
+    "IDS CRUZADOS, corregido el 20 ago 2026: en las posiciones 19 y 20 estaban q20 y q19. La dificultad no se alteraba —ambos del mismo nivel—, por eso ninguna puerta lo veía. El daño era de mantenimiento: un informe que hablaba de «q19» describía la pregunta que el estudiante ve como la 20. Puerta nueva en el guardián: el id tiene que coincidir con la posición.",
+    "q11: la afirmación del enunciado tiene dos mitades («sigue intentándolo a solas» y «nunca deja que el tío lo vea») y las citas se las reparten. La clave cubre la mitad sustantiva; el auditor propone dejar la afirmación en una sola cláusula para que el distractor pierda tirón. No bloqueante."
   ],
   "publicable": true,
   "bloqueantesDeProducto": [],
@@ -77,16 +79,16 @@
   },
   "huellas": {
     "q01": "f598c8132ef7",
-    "q02": "b86f49835d3e",
-    "q03": "d007688bdb29",
+    "q02": "904362daa528",
+    "q03": "dee789ab0005",
     "q04": "aa0646ffe1b5",
-    "q05": "5d1bf22ab5e0",
+    "q05": "dafc5f02dc53",
     "q06": "d781b10bf330",
-    "q07": "1ac6fb072203",
+    "q07": "34537a856045",
     "q08": "1babd5d1d488",
     "q09": "fb3e863f5432",
     "q10": "e252fe99df39",
-    "q11": "0847ac74c03e",
+    "q11": "f6c2b1ea7996",
     "q12": "55c7a00a756e",
     "q13": "6f877127d3f4",
     "q14": "cf19539d7765",
@@ -144,5 +146,23 @@
       "q03: «the three engineers it had hired» — «it» admite tres antecedentes (council, river port, Elmsford).",
       "q02: la validez del ítem depende de la frase «Families in the lanes below could not see the bakery», que es la que mata «loomed». Nadie la toca en futuras rondas."
     ]
+  },
+  "alineacionConElOficial": {
+    "fecha": "2026-08-20",
+    "fuente": "Examen oficial de práctica del SAT digital publicado por College Board (versión en papel para quien no puede presentarlo en computador). Se usó SOLO para contrastar cómo se redacta cada tipo de enunciado: ni un texto ni una pregunta salen de ahí.",
+    "aviso": "Esa versión trae otras cifras que las del examen digital adaptativo — 33 preguntas por módulo en 39 minutos, no 27 en 32. Las cifras que publicamos NO salen de ese PDF.",
+    "resultado": "22 de los 27 enunciados coinciden ya con la redacción oficial. Se realinearon cinco.",
+    "realineados": {
+      "q02 y q03": "«…most logical and precise word?» → «…word or phrase?». El oficial dice «word or phrase» en las doce apariciones del tipo.",
+      "q05": "«best states the function of the sentence \"…\" in the text?» → «best describes the function … in the text as a whole?».",
+      "q07": "«…function of the final sentence of the text?» → «…in the overall structure of the text?».",
+      "q11": "«Which quotation from the text best illustrates that claim?» → «…most effectively illustrates that claim?»."
+    },
+    "auditoriaDelCambio": "Auditor de lengua sobre los cinco: APTO los cinco. Comprueba que las opciones siguen respondiendo al enunciado, que el marco nuevo no exige nada que las opciones no den, y que no se abre una segunda clave.",
+    "loQueSigueSinAlinear": {
+      "q01 y q04": "Usan «As used in the text, what does the word X most nearly mean?», que aparece CERO veces en el examen oficial: es el formato del SAT de papel, anterior al digital. Convertirlos exige pasajes nuevos —se intentó con q01 y se devolvió—, así que se rehacen en el módulo 2.",
+      "q14 y q15": "Usan «Based on the text, what can most reasonably be inferred about…?». El oficial resuelve las inferencias con «Which choice most logically completes the text?», que exige un texto que termine a mitad de idea. Cambio de contenido, no de redacción.",
+      "q13": "Pide describir el dato del estudio; el oficial pide completar el texto con el dato de la tabla o la gráfica."
+    }
   }
 }

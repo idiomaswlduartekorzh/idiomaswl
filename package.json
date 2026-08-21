@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano && npm run check:fonetica-frances && npm run check:pdf-fonts && npm run check:sat && npm run check:sat-superhub",
+    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano && npm run check:fonetica-frances && npm run check:pdf-fonts && npm run check:sat && npm run check:sat-superhub && npm run check:sat-adaptive",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -67,7 +67,8 @@
     "check:historias": "node scripts/check-historias.mjs",
     "audit:historias-tts": "node scripts/audit-historias-tts.mjs",
     "audio:historias": "node scripts/generate-historias-audio.mjs",
-    "check:pdf-fonts": "node --experimental-strip-types --no-warnings scripts/check-pdf-fonts.mjs"
+    "check:pdf-fonts": "node --experimental-strip-types --no-warnings scripts/check-pdf-fonts.mjs",
+    "check:sat-adaptive": "node scripts/check-sat-adaptive.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.1",

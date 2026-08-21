@@ -34,7 +34,7 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'The bakery ______ at the top of the hill. From its door Rosalía could see the whole town, roof by roof, down to the river. Each morning at six she rang the brass bell above the counter, though the bell was not really needed. Then she leaned out and called that the first loaves were ready. Her voice carried farther than the bell did. Families in the lanes below could not see the bakery, but they heard her, and one by one they started up the hill.',
-    text: 'Which choice completes the text with the most logical and precise word?',
+    text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'loomed',
       'waited',
@@ -49,7 +49,7 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       "When the council of the river port of Elmsford met in 1889 to consider a filtration plant, the three engineers it had hired did not simply approve the design. They agreed that beds of sand would remove most of what made the river water ______, but they warned that those beds would clog within a year unless the town also built a settling basin upstream, and they declined to sign until the basin appeared in the budget. Historians who read the engineers' report as an endorsement therefore miss its tone. Their support was qualified, and the council knew it.",
-    text: 'Which choice completes the text with the most logical and precise word?',
+    text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'murky',
       'brackish',
@@ -79,7 +79,7 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'Amara had planned the walk to the lighthouse the way she planned everything, on paper and well in advance. She knew the distance, the hours of the tide, and the time the keeper unlocked the door for visitors. She had even packed a second pair of socks. Then the path ended at a stream that no map of hers showed. For a long minute she stood on the bank with the tide table in her hand, and the paper told her nothing at all. She put it away and looked, for the first time that morning, at the land itself.',
-    text: 'Which choice best states the function of the sentence "She had even packed a second pair of socks." in the text?',
+    text: 'Which choice best describes the function of the sentence "She had even packed a second pair of socks." in the text as a whole?',
     options: [
       "It adds to Amara's preparations one she packed rather than looked up.",
       'It shows Amara providing in advance for the crossing that lay ahead.',
@@ -109,7 +109,7 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'The spread of reading in the northern provinces during the eighteenth century has usually been credited to the schools: parish records show that the number of village schoolmasters tripled between 1720 and 1790, and literacy, measured by signatures on marriage contracts, rose along with it. A second group of historians has questioned the direction of that relationship. The villages that gained schools, they note, were also the villages where merchants began keeping written accounts and where paper first became cheap; the schools may therefore record a demand for reading rather than create it. The objection is a fair one, but narrower than its authors allow: it fits the market towns their evidence comes from, and it says little about the upland parishes, where schools arrived long before commerce did.',
-    text: 'Which choice best describes the function of the final sentence of the text?',
+    text: 'Which choice best describes the function of the final sentence in the overall structure of the text?',
     options: [
       'It accepts the objection as sound and extends it to the upland parishes its authors left out.',
       'It accepts the objection as sound and drops the schools explanation it was aimed at.',

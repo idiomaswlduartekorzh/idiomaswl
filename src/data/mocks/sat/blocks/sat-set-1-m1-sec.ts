@@ -133,22 +133,6 @@ export const items: MCQQuestion[] = [
     answer: 0,
   },
   {
-    id: 'q20',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      "Painters working in Europe in the 1830s are often described as heirs to a long tradition of craft, and in one narrow sense they were. A conservator who opens a paint box from any workshop of that decade finds ______ an earth or a mineral ground to powder for color, an oil pressed from seeds to bind it, and a tree resin thinned into varnish to give the dried surface its gloss. What changed after 1840 was not the recipe but who prepared it. Once color could be bought sealed in a metal tube, the apprentice who had spent his mornings at the grinding slab was no longer needed. Painters carried their work outdoors.",
-    text:
-      "Which choice completes the text so that it conforms to the conventions of Standard English?",
-    options: [
-      "the same recipe;",
-      "the same recipe",
-      "the same recipe,",
-      "the same recipe:",
-    ],
-    answer: 3,
-  },
-  {
     id: 'q19',
     type: 'mcq',
     part: 1,
@@ -163,6 +147,22 @@ export const items: MCQQuestion[] = [
       "grew",
     ],
     answer: 2,
+  },
+  {
+    id: 'q20',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      "Painters working in Europe in the 1830s are often described as heirs to a long tradition of craft, and in one narrow sense they were. A conservator who opens a paint box from any workshop of that decade finds ______ an earth or a mineral ground to powder for color, an oil pressed from seeds to bind it, and a tree resin thinned into varnish to give the dried surface its gloss. What changed after 1840 was not the recipe but who prepared it. Once color could be bought sealed in a metal tube, the apprentice who had spent his mornings at the grinding slab was no longer needed. Painters carried their work outdoors.",
+    text:
+      "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    options: [
+      "the same recipe;",
+      "the same recipe",
+      "the same recipe,",
+      "the same recipe:",
+    ],
+    answer: 3,
   },
   {
     id: 'q21',
@@ -263,27 +263,6 @@ export const meta: SatItemMeta[] = [
       "Ecología marina de manual: la nutria marina como especie clave de los bosques de kelp del Pacífico norte. Comparación de peso propia, sin cifras, sin unidades imperiales y sin nombres propios.",
   },
   {
-    id: 'q20',
-    domain: 'SEC',
-    tipo: 'boundaries',
-    dificultad: 2,
-    tema: 'humanidades',
-    regla:
-      "Dos puntos tras oración completa para introducir una enumeración explicativa.",
-    razones: {
-      A:
-        "El punto y coma pide oración independiente a los dos lados y a su derecha solo hay tres sintagmas nominales —«an earth…», «an oil…», «and a tree resin…»—, que no forman oración. Es el error de quien usa el punto y coma como una coma reforzada para anunciar una lista.",
-      B:
-        "Deja el complemento y su enumeración pegados sin signo: «finds the same recipe an earth or a mineral ground to powder for color» obliga a leer dos sintagmas nominales seguidos sin frontera entre lo que se anuncia y lo que se detalla. Es el error de quien da por hecho que, si el sentido se entiende, el signo sobra.",
-      C:
-        "La enumeración que sigue ya separa sus tres miembros con comas —«…for color, an oil…, and a tree resin…»—, así que una coma delante de «an earth» no anuncia nada: mete «the same recipe» dentro de la serie y el lector cuenta cuatro cosas donde el texto nombra una y la desglosa en tres. La coma no puede a la vez presentar la lista y separar sus miembros.",
-      D:
-        "Correcta: «A conservator who opens a paint box from any workshop of that decade finds the same recipe» es oración completa, que es lo único que los dos puntos exigen delante, y lo que sigue es la enumeración que desarrolla esa receta. El párrafo la retoma dos líneas después con «What changed after 1840 was not the recipe but who prepared it».",
-    },
-    fuenteHecho:
-      "Historia material de la pintura, hecho libre: pigmento molido, aceite y resina en el taller hasta que el tubo metálico permitió comprar el color hecho. Sin taller, pintor ni patente concretos.",
-  },
-  {
     id: 'q19',
     domain: 'SEC',
     tipo: 'form-structure-sense',
@@ -303,6 +282,27 @@ export const meta: SatItemMeta[] = [
     },
     fuenteHecho:
       "Historia económica argentina, hecho libre: las colonias del litoral ya sembraban trigo décadas antes del ferrocarril. Distrito, 1883, la caída de costo y el precio de la tierra son invención propia.",
+  },
+  {
+    id: 'q20',
+    domain: 'SEC',
+    tipo: 'boundaries',
+    dificultad: 2,
+    tema: 'humanidades',
+    regla:
+      "Dos puntos tras oración completa para introducir una enumeración explicativa.",
+    razones: {
+      A:
+        "El punto y coma pide oración independiente a los dos lados y a su derecha solo hay tres sintagmas nominales —«an earth…», «an oil…», «and a tree resin…»—, que no forman oración. Es el error de quien usa el punto y coma como una coma reforzada para anunciar una lista.",
+      B:
+        "Deja el complemento y su enumeración pegados sin signo: «finds the same recipe an earth or a mineral ground to powder for color» obliga a leer dos sintagmas nominales seguidos sin frontera entre lo que se anuncia y lo que se detalla. Es el error de quien da por hecho que, si el sentido se entiende, el signo sobra.",
+      C:
+        "La enumeración que sigue ya separa sus tres miembros con comas —«…for color, an oil…, and a tree resin…»—, así que una coma delante de «an earth» no anuncia nada: mete «the same recipe» dentro de la serie y el lector cuenta cuatro cosas donde el texto nombra una y la desglosa en tres. La coma no puede a la vez presentar la lista y separar sus miembros.",
+      D:
+        "Correcta: «A conservator who opens a paint box from any workshop of that decade finds the same recipe» es oración completa, que es lo único que los dos puntos exigen delante, y lo que sigue es la enumeración que desarrolla esa receta. El párrafo la retoma dos líneas después con «What changed after 1840 was not the recipe but who prepared it».",
+    },
+    fuenteHecho:
+      "Historia material de la pintura, hecho libre: pigmento molido, aceite y resina en el taller hasta que el tubo metálico permitió comprar el color hecho. Sin taller, pintor ni patente concretos.",
   },
   {
     id: 'q21',
