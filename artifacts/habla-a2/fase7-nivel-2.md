@@ -1,304 +1,319 @@
-# Nivel — escenario 2 · `no-appointment-until-thursday` (ficha en inglés)
+# Escenario 2 · `no-appointment-until-thursday` — auditoría de NIVEL (versión en inglés)
 
-Auditado: `artifacts/habla-a2/fase7-fichas-2-no-appointment-until-thursday.md`
-Contra: `.claude/agents/habla-calibrador-nivel.md`, §11 del blueprint, `fase7-modelo-ficha-en.md`
-y `src/data/grammar/registry.ts` (`ingles/a1`, `ingles/a2`).
+Auditado: `artifacts/habla-a2/fase7-fichas-2-no-appointment-until-thursday.md`.
+Contra: §4 y §11 de `docs/habla-acompanado-blueprint.md`, el molde
+`artifacts/habla-a2/fase7-modelo-ficha-en.md`, la caja `caja-de-herramientas-a2.md`, y
+`src/data/grammar/ingles/{a1,a2,b1}` para los slugs.
 
-**Veredicto: cabe en A2 con cambios.**
+La ficha está entera en inglés, así que se auditan **dos niveles distintos**: el inglés que el
+estudiante tiene que **decir** (A2 hablado, con lista de prohibidas) y el que tiene que **leer**
+(A2 leído, que aguanta un poco más). Y una pieza nueva que antes no existía: las **20
+definiciones** del bloque de vocabulario, que se comprueban una a una.
 
-Lo que se **habla** es A2 y la ruta mínima existe: hay dos formas B1 que hay que cambiar y con
-eso queda limpio. Lo que se **lee** es otra historia. Al pasar la ficha al inglés, la prosa
-española comprimida se tradujo palabra por palabra en vez de reescribirse, y el resultado es
-una ficha cuyo andamiaje está en A2 pero cuyas *instrucciones sobre el andamiaje* están en B2.
-La columna «what it does here» —la que explica por qué usar cada frase— es la peor del archivo:
-si el estudiante no la puede leer, los nueve exponentes son decoración.
-
----
-
-## 1. Lo que hay que DECIR — A2 hablado
-
-### 1.1 La ruta mínima (la prueba que decide)
-
-Escrita entera con lengua A2, 12 turnos globales, arranca B, cierra en acuerdo:
-
-| # | quién | lo que se dice |
-|---|---|---|
-| 1 | B | Good afternoon. Can you help me, please? My tooth hurts. I don't have an appointment. |
-| 2 | A | What happened? |
-| 3 | B | On Sunday a piece of my back tooth broke. The edge cuts my tongue. It's worse than yesterday, and it hurts more with something cold. |
-| 4 | A | I'm sorry. We are full today and tomorrow. The first free time is Thursday at seven. You have to come ten minutes early, for the forms and an X-ray. |
-| 5 | B | I can't come at seven, because I open the warehouse in Girón. On Thursdays the truck arrives at six thirty and I have the key. What days do you have after eight thirty? I don't work on Saturdays, and today I can wait here until seven. |
-| 6 | A | *(carta)* The dentist can see one more patient today, at six fifteen. Can you come back at six fifteen? |
-| 7 | B | Yes. I can come at six fifteen. |
-| 8 | A | Then you are a patient of this clinic, and Saturday the twelfth at nine is free for the treatment. Your plan pays for it here, and only here. |
-| 9 | B | Saturday at nine is good for me. Do I pay something today? |
-| 10 | A | No. The plan covers it. Can you say your cell number, one digit at a time? |
-| 11 | B | That's my sister's number. Mine is three-one-zero… |
-| 12 | A | Let me repeat it: … Tonight, put something cold on your face for ten minutes. Don't chew on that side. If the pain goes to your ear, go to the emergency room tonight. |
-
-La ruta existe y no toca nada por encima de A2: presente simple, pasado simple, `can`, `have to`,
-`should`, comparativos, primer condicional, imperativo, horas. **El escenario cabe.** Y el diseño
-funciona: la cita de las 6:15 es lo que convierte a B en «patient seen here before» y desbloquea
-el sábado. Nadie tiene que negociar; A concede con condición y B propone alternativas, que es
-exactamente lo que un A2 hace.
-
-### 1.2 Lo que se sale del A2 hablado
-
-Solo dos cosas, y las dos son sustituibles sin perder nada:
-
-1. **`may` de posibilidad** (B1). `Something may open up later, but I can't promise anything.`
-   Es el único exponente que tiene A para dejar la puerta abierta sin nombrar a nadie —el bloque
-   6 entero cuelga de él—. Está en A2 la idea, no la forma.
-   → `Sometimes a patient doesn't come. I can't promise anything.`
-   (o `Maybe something opens up later, but I can't promise anything.`)
-
-2. **`to be seen`** — pasiva, y está en el **título del rol B** y en su **`You want`**: *«ROLE B —
-   You need to be seen today»*, *«To be seen **today**»*. La pasiva está fuera por escrito, y esta
-   es la línea que nombra el objetivo: es lo primero que el estudiante lee y lo que va a intentar
-   decir. Un A2 dice `I need to see a dentist today`.
-   → título: `ROLE B — You need to see a dentist today` · `**You want** · To see a dentist **today**.`
-
-3. **`How much gets paid, and when`** (cierre, punto 2) — pasiva, y es un punto del checklist que
-   los dos tienen que decir en voz alta.
-   → `How much you pay, and when` (o «nothing — the plan covers it»).
-
-Lo demás está bien y algunas decisiones son buenas de verdad: `It's worse than yesterday` /
-`It hurts more with something cold` es la manera correcta de que un A2 describa dolor (comparando),
-y `I can't come at seven, because I open the warehouse` cierra una hora con la razón pegada, que es
-justo lo que el nivel permite. No hay present perfect de duración, ni `could` de cortesía, ni
-condicional hipotético, ni `would rather`, ni modal + infinitivo perfecto.
-
-### 1.3 Un exponente que falta y uno que sobra en la cabecera
-
-- **`I'm afraid…`** aparece en la línea de registro de A —*«The distance lives in `I'm afraid…`,
-  `Let me…`»*— y **no aparece en ningún exponente**. Es un atenuador B1 y se le presenta al
-  estudiante como el sitio donde vive el registro, sin darle nunca la frase. O entra en la tabla
-  de exponentes (`I'm afraid the first free time is Thursday.`) o sale de la cabecera.
-- **`to be fully booked`** está en el vocabulario de los dos roles. A lee que es «your bad news,
-  in three words» y B lee que es «the first thing you're going to hear» — pero **ningún exponente
-  de A la usa**: su mala noticia es `The first free time is Thursday at seven`. O se añade
-  `We're fully booked today and tomorrow.` a la tabla de A, o las dos glosas mienten.
+**Veredicto: PASA CON CAMBIOS.** La mitad hablada está limpia —lo verifiqué con grep, no a
+ojo—. Los fallos se concentran en las dos piezas nuevas: la prosa que hay que leer y el bloque
+de vocabulario.
 
 ---
 
-## 2. Lo que hay que LEER — A2 leído
+## 0. Lo que pasa limpio (y conviene no romper)
 
-Aquí está el problema del archivo. La regla que aplico: si la instrucción no cabe en A2 leído, la
-instrucción es demasiado complicada. Va la versión corta al lado.
+**Estructuras prohibidas: cero.** Buscadas por patrón sobre el archivo entero, no leídas por
+encima:
 
-### 2.1 La columna «what it does here» — defecto de conjunto
+| prohibida | ocurrencias |
+|---|---|
+| present perfect de duración con `for` / `since` | **0** |
+| `could` de cortesía | **0** |
+| `would` / `would rather` / `would prefer` | **0** |
+| modal + infinitivo perfecto (`must have been`…) | **0** |
+| condicional hipotético (2.º condicional) | **0** |
 
-**13 de las 18 celdas** están por encima de A2 leído. No es un caso suelto: es cómo se escribió la
-columna. Metáfora, participio pasivo reducido y metalenguaje del ejercicio.
+El único present perfect del documento es `a patient who has missed twice` (línea 37) — de
+experiencia, A2, y además está en la información oculta del rol A, que tiene prohibido decirla.
 
-| rol | como está | versión A2 |
-|---|---|---|
-| A | a door left open without naming anyone | you leave a door open. You don't say who. |
-| A | **open question** — without it, the fact that turns the scenario never comes out | an **open question**. Without it, they never tell you about the broken piece. |
-| A | one road, with its hour on it | one place, and the time it closes |
-| A | what they lose by leaving, without telling them to stay | say what they lose. Don't tell them to stay. |
-| A | make them dictate it digit by digit | they say one digit, then the next |
-| A | bad news with the fact in front, not with a no | the fact first, not the word «no» |
-| A | the fourth point of the close | you need this for point four |
-| B | describe by comparing, which is how pain gets described | you compare. That's how people talk about pain. |
-| B | the detail that gets you taken seriously | this detail makes them listen |
-| B | close an hour with the reason attached, not with a wish | say no to an hour, and say why |
-| B | your time on the table — the one thing you have today | today you have time. That's your card. |
-| B | open a day of yours they don't know you have | they don't know you have Saturdays. Tell them. |
-| B | your money as your option, not as a complaint | your money is an option, not a complaint |
-| B | **open question**, with your limit already inside it | an **open question**, with your hour inside it |
+**Los exponentes hablados: 16 de 18 son A2 de manual.** Comparativos irregulares (`It's worse
+than yesterday`), `can` / `can't` con razón detrás, presente simple, pregunta en pasado simple
+en forma directa, `should`, primer condicional con imperativo en la principal. Nada que un A2 no
+haya visto.
 
-Las cinco que ya están bien: `a fixed plan, with a time` no es de este escenario, pero de aquí
-sirven `why people come ten minutes early`, `read back what you wrote, so they confirm it`,
-`a concrete instruction instead of general advice` y `fix the wrong contact, when it comes up`.
+**Los 11 `grammarReferences` existen los 11, y los 11 títulos coinciden carácter por carácter**
+con el registro. El sufijo `-a2` está bien manejado: `connectors-a2` lo lleva porque el registro
+lo lleva; `should-advice`, `first-conditional`, `past-simple-questions`, `have-to-must`,
+`quantifiers`, `comparatives` y `present-perfect-ever-never` correctamente **no** lo llevan. Los
+tres de A1 (`imperative`, `can-ability`, `telling-time`) están en `ingles/a1` y van marcados
+`// a1`. Detalle en §4.
 
-### 2.2 Prosa por encima de A2 leído — línea a línea
+**Presupuesto de §11: cumplido en las dos fichas.** Prosa 330 (A) y 337 (B) según mi cuenta —la
+ficha se autodeclara 346 y 350; las dos cuentas caben bajo el tope de 350—. Datos 10 filas,
+vocabulario 10 entradas, exponentes 9. Todo dentro.
 
-| dónde | como está | versión A2 |
-|---|---|---|
-| A · registro | The distance lives in `I'm afraid…`, `Let me…`, not in the pronoun. | Use `I'm afraid…` and `Let me…`. In English the distance is in the words, not in the pronoun. |
-| A · You want | That person out with three things: a date in the book, a verified cell number, something for tonight. | They leave with three things: a date, the correct cell number, and something for tonight. |
-| A · You can't 1 | she's mid-consultation | she is with a patient |
-| A · Only you know | Every empty chair counts against reception — a patient sent elsewhere too. | The clinic counts every empty chair. A patient who goes to another clinic counts too. |
-| A · Only you know | for a broken tooth she doesn't say no. The key here. | for a broken tooth she says yes. This is your key. |
-| A · nada | a plan patient lost to the office on the corner. Both on your name. | a patient with the plan goes to the clinic on the corner. Both are your fault. |
-| A · toolkit | nobody else in the set does this for a living | you are the only person here who does this every day |
-| A · toolkit | 6 is your answer when they push | use 6 when they ask again |
-| A · Facts | Saturdays: only patients seen here before | Saturdays: only for patients who came here before |
-| A · Facts | something cold outside, 10 minutes | put ice on your face, 10 minutes |
-| B · You want | On the table, only what's yours — time, a day, your pocket. | You can offer three things: your time, a free day, your money. |
-| B · You can't 1 | storeroom key yours, nobody else's | you have the key, nobody else |
-| B · You can't 2 | Come back another day for the same line. | You can't come back another day and wait again. |
-| B · Only you know | Out it comes if they ask something open. | You say it if they ask an open question. |
-| B · Only you know | the pain is what matters, the piece looks like a detail | for you the pain is the problem. The broken piece looks small. |
-| B · Only you know | Hence no reminder, ever. | So the clinic never called you. |
-| B · nada | anywhere else the treatment is out of pocket | in another clinic you pay everything |
-| B · toolkit | not your ground, not your words, and it hurts | this is not your place, these are not your words, and it hurts |
-| cierre | say the whole plan out loud and check that it matches | Say the whole plan out loud, both of you. Check that the two plans are the same. |
-| cierre 3 | The cell number, said out loud and confirmed one digit at a time. | Say the cell number out loud. Check every digit. |
-| cierre | One of the four missing and it isn't finished. | If one of the four is missing, it isn't finished. |
-| cierre | If both of you say the four and they match, it closed. | If you both say the four things and they are the same, it's done. |
-
-### 2.3 `hour` no es «hora»
-
-`Day, hour and branch` aparece en el **punto 1 del cierre** y en el **«You did it if» de A**. En
-inglés `hour` es la duración de sesenta minutos; la hora del reloj es `time`. Es un calco del
-español y está en la línea que los dos estudiantes recitan al final.
-→ `Day, time and clinic`, las dos veces.
-
-### 2.4 Tres nombres para la misma operación
-
-El número de celular es el único dato del cierre que se puede decir mal sin que nadie se entere
-—lo dice el propio debrief—, y se llama de tres maneras distintas y ninguna está glosada:
-
-- B · Facts: `one number at a time`
-- A · exponente: `Can you say the number one by one?`
-- cierre y «You did it if»: `one digit at a time` / `digit by digit`
-
-Además `say the number one by one` no es inglés natural. Unificar en **`digit`**, meter `digit` en
-las dos listas de vocabulario, y el exponente de A pasa a `Can you say your number, one digit at a time?`
-
-### 2.5 Una contradicción que solo se ve leyendo en A2
-
-A · Facts, «For tonight»: `something cold outside, 10 minutes · … soft food, nothing hot, nothing
-cold`. Frío sí y frío no en la misma fila. Se entiende que uno es en la cara y el otro es comida,
-pero eso hay que escribirlo: `put ice on your face for 10 minutes · don't chew on that side · eat
-soft food · don't eat or drink anything hot or cold`.
-
-### 2.6 Preguntas incrustadas en las instrucciones de B
-
-La columna «here» del vocabulario de B enseña tres veces el patrón que está prohibido producir:
-`ask what it's for`, `ask how long`, `ask what yours covers, and where`. Un A2 que lee eso escribe
-`Can you tell me what it is for?`. Se arregla dando la pregunta directa entre comillas:
-`ask: What is this paper for?` · `ask: How long is it?` · `ask: What does my plan cover? Where?`
+**Variedad americana: sostenida.** `cell`, `front desk`, `emergency room`, `X-ray`. Ningún
+britanismo.
 
 ---
 
-## 3. El vocabulario, una por una
+## 1. GRAVE — cuatro cosas que rompen el nivel
 
-Criterio: **la definición tiene que estar en inglés más sencillo que la palabra que define**.
-Diez filas por rol, con seis definiciones compartidas.
+### G1 · El título del rol B es una pasiva, y es lo primero que B va a decir
 
-### ROLE A
+> Línea 95: `## ROLE B — You need to be seen today`
+> Línea 102: `**You want** · To be seen **today**.`
 
-| # | palabra | definición actual | veredicto |
+La pasiva está en la lista de prohibidas, vive en `passive-voice-b1`, y aquí no está escondida
+en una nota: está en el **título del rol** y en el **objetivo**, las dos líneas que el estudiante
+lee antes que ninguna otra. El objetivo del rol es exactamente la frase que abre la
+conversación —arranca B—, así que esta pasiva no se queda en la lectura: se dice.
+
+**Versión corta:**
+
+- Título → `ROLE B — You need to see the dentist today`
+- Objetivo → `**You want** · To see the dentist **today**.`
+
+Y de paso desaparece la tercera pasiva de la ficha (ver G3).
+
+### G2 · `the book` es la palabra que sostiene el escenario y no está definida en ninguna parte
+
+Aparece **11 veces** (líneas 29, 34, 48, 64, 69, 80, 81, 136…) y ninguna de las dos tablas de
+vocabulario la recoge. Es la agenda de citas, no un libro — y para un lector hispanohablante
+`book` significa *libro* y punto. Es el peor tipo de hueco: transparente en falso.
+
+Peor en el rol B: la definición de `slot` es `one free time in the book`, y **B no ve la palabra
+`book` en ningún otro sitio de su ficha**. Recibe una definición apoyada en un término que su
+ficha no le da.
+
+**Dos salidas, la segunda mejor:**
+
+1. Añadir fila en las dos tablas: `the book | the list of all the appointments for the day | it
+   is full today and tomorrow`. Pero eso mete a 11 el vocabulario de A, y el tope es 10.
+2. **Cambiar `book` por `calendar` en las 11 líneas.** Es cognado (*calendario*), se entiende
+   sin definirlo, y libera la fila. `to be fully booked` puede quedarse: su definición (`no free
+   times left at all`) no depende de `book` y ya está bien.
+
+### G3 · Tres relativas de pasiva reducida en la parte que hay que leer
+
+Pasiva **más** elipsis del relativo: por encima de B1, y las tres están en zonas que el
+estudiante sí lee entero (información oculta, qué pierdes, datos duros).
+
+| línea | como está | versión corta |
+|---|---|---|
+| 39 | `Every empty chair counts against reception — a patient sent elsewhere too.` | `Every empty chair is bad for the front desk. A patient who goes to another clinic is bad too.` |
+| 41 | `A fourth empty chair, a plan patient lost to the office on the corner. Both on your name.` | `A fourth empty chair. And a patient with the plan goes to the clinic on the corner. Both are your fault.` |
+| 52 | `Saturdays: only patients seen here before` | `Saturdays: only for patients who came here before` |
+
+En la 41 hay además `plan patient`, un compuesto opaco, y `Both on your name`, que ni siquiera
+es inglés correcto (*on you* / *your fault*).
+
+### G4 · El cierre —la única pantalla que leen los dos— está hecho de preguntas incrustadas
+
+Líneas 186-193. Las preguntas incrustadas están en la lista de prohibidas, y este bloque tiene
+cuatro, más una pasiva con `get`. Es además el texto que los dos jugadores leen **despacio y al
+final**, comprobando punto por punto: es donde menos se puede tropezar.
+
+| línea | como está | versión corta |
+|---|---|---|
+| 186 | `You finish when the two of you say the whole plan out loud and check that it matches, with these four things:` | `You finish when you both say the plan out loud. Then check: are the two plans the same? The plan has four parts:` |
+| 188 | `Day, hour and branch of the appointment, and what time you have to be there.` | `Day, time and branch of the appointment. And the time you have to arrive.` |
+| 189 | `How much gets paid, and when` | `Who pays, how much, and when` |
+| 191 | `What happens with the pain until then, and when not to wait.` | `What to do about the pain until then. And when to go to the emergency room.` |
+| 193 | `One of the four missing and it isn't finished.` | `If one of the four is missing, it is not finished.` |
+
+La 193 es además una absoluta sin verbo — construcción de prensa, no de A2.
+
+---
+
+## 2. MEDIO — siete
+
+### M1 · `may` de posibilidad (2 veces, una es exponente que A tiene que decir)
+
+> Línea 81 (exponente A): `Something may open up later, but I can't promise anything.`
+> Línea 37 (lectura): `You can say something may open up.`
+
+`may` epistémico es B1 en el English Vocabulary Profile, no hay tema de A2 que lo cubra en
+`src/data/grammar/ingles/a2`, y **la propia lista de `grammarReferences` lo delata**: los 11
+refs anclan todo lo demás y a `may` no lo ancla ninguno. Cuando el andamiaje gramatical no puede
+apuntar a una estructura, la estructura sobra.
+
+**Versión corta:** `Maybe I have something later today, but I can't promise.` — `maybe` es A1,
+mantiene la puerta entreabierta y no nombra a nadie, que es lo que la fila tenía que hacer.
+
+### M2 · Prosa de lectura que no cabe en A2 leído
+
+Todas se leen, ninguna se dice. Ordenadas por línea:
+
+| línea | como está | por qué no cabe | versión corta |
 |---|---|---|---|
-| 1 | appointment | a time the clinic keeps for one patient | **cambia** · `patient` no es más fácil que `appointment`, y *keep a time* no se dice → `a time the clinic saves for one person` |
-| 2 | walk-in | a patient who comes with no appointment | **casi** · encadena bien con la fila 1; `patient` → `person` |
-| 3 | slot | one free time in the book | **cambia** · `the book` no se define en ninguna parte y en A2 se lee «libro» → `one free time in the day` |
-| 4 | to be fully booked | no free times left at all | **cambia** · `left` (=que queda) y `at all` son B1; *free times* no es plural natural → `the clinic has no free time` |
-| 5 | referral note | a paper that says what's wrong, for another clinic | **cambia** · orden invertido y pregunta incrustada → `a paper you take to another clinic. It explains your problem.` |
-| 6 | emergency check | a short visit for pain, no appointment needed | **cambia** · `needed` es participio pasivo → `a short visit when you have pain. You don't need an appointment.` |
-| 7 | X-ray | a photo of the inside of a tooth | **OK** · la mejor de las veinte |
-| 8 | to squeeze someone in | to put a patient between two appointments | **OK** · usa `appointment`, ya definida arriba |
-| 9 | no-show | a patient who doesn't come and doesn't call | **OK** |
-| 10 | to cover | when the plan pays for the treatment | **cambia (grave)** · define con `treatment` (B1, sin glosa en toda la ficha) y con `the plan` (jerga, sin glosa) → `the plan pays, and you pay nothing` |
+| 24 | `The distance lives in I'm afraid…, Let me…, not in the pronoun.` | metáfora + metalengua sobre pronombres | `In English there is no formal *you*. The formal tone is in the words: I'm afraid…, Let me…` |
+| 29 | `That person out with three things:` | sin verbo | `The person leaves with three things:` |
+| 32 | `she's mid-consultation` | compuesto que no es A2 | `she is with a patient` |
+| 38 | `The key here.` | fragmento | `This is the key.` |
+| 74 | `nobody else in the set does this for a living` | `in the set` es meta (el estudiante no sabe qué es «el conjunto») + modismo | `You are the only one here who works at a counter.` |
+| 97 | `Somebody else's counter, nobody you know. Distance even when it hurts` | sin verbo + abstracto | `This is not your place, and you don't know these people. Be polite, even when it hurts.` |
+| 105 | `storeroom key yours, nobody else's` | telegráfico sin verbo | `you have the key` |
+| 106 | `Come back another day for the same line.` | `line` opaco fuera de contexto | `You can't come back another day and wait again.` |
+| 109 | `Out it comes if they ask something open.` | inversión + metalengua | `Say it if they ask an open question.` |
+| 110 | `Hence no reminder, ever.` | **`hence` es C1** | `So the clinic never calls you.` |
+| 112 | `anywhere else the treatment is out of pocket` | modismo + adverbial antepuesto | `In any other clinic you pay for everything.` |
+| 145 | `the shortest in the set on purpose: not your ground, not your words` / `coming at you` / `hurting isn't enough` | meta + tres modismos + gerundio sujeto | `The shortest list on purpose: this is not your place and these are not your words.` / `they will say these words to you` / `pain is not enough` |
+| 162 | `A date you can really make` | `to make a date` = poder ir, modismo | `A date you can really come to` |
+| 162 | `what you pay, or that you don't` | elíptico | `how much you pay — or that you pay nothing` |
 
-### ROLE B
+### M3 · Una contradicción que el lector A2 no puede resolver, y que A tiene que decir en voz alta
 
-| # | palabra | definición actual | veredicto |
-|---|---|---|---|
-| 11 | appointment | *(igual que 1)* | mismo cambio |
-| 12 | walk-in | *(igual que 2)* | mismo cambio |
-| 13 | to be fully booked | *(igual que 4)* | mismo cambio |
-| 14 | slot | *(igual que 3)* | mismo cambio |
-| 15 | emergency check | *(igual que 6)* | mismo cambio |
-| 16 | referral | a paper for another clinic that says what's wrong | **cambia** · el titular tiene que ser `referral note`: así lo llama A y así lo llama el propio toolkit de B tres líneas más abajo |
-| 17 | to squeeze someone in | to put a patient between two appointments | **OK** |
-| 18 | to cover | *(igual que 10)* | mismo cambio, grave |
-| 19 | waiting list | people who wait in case somebody doesn't come | **cambia** · `in case` es conector B1 → `a list of people. The clinic calls you if a patient doesn't come.` |
-| 20 | chipped | when a small piece breaks off | **cambia (grave)** · `breaks off` es phrasal B1 — pero el problema real es cuál es la palabra. B tiene que decir *«the edge cuts my tongue»*, y ni `edge` ni `sharp` están en la lista: la fila se la come `chipped`, que B no necesita decir nunca. → `edge \| the side of the broken tooth \| yours is **sharp** and it cuts your tongue` |
+> Línea 55: `For tonight | something cold outside, 10 minutes · no chewing on that side · soft
+> food, nothing hot, nothing cold`
 
-### Las cinco palabras que sostienen el escenario y no están glosadas
+`something cold` y `nothing cold` en la misma celda. La distinción real es *fuera de la boca* vs
+*bebida*, pero `outside` no la hace: un A2 lee una contradicción y elige una de las dos al azar.
+Y el punto 4 del cierre exige decir esto.
 
-| palabra | dónde aparece | por qué importa |
+**Versión corta:** `put something cold on the face, 10 minutes · don't chew on that side · soft
+food · no hot drinks, no cold drinks`
+
+### M4 · El mismo acto tiene tres nombres, y uno de ellos se lee mal
+
+| línea | | |
 |---|---|---|
-| `treatment` | Facts de A, Facts de B, «If you walk away» de B, la carta | es lo que se negocia, y es la palabra con la que se define `to cover` |
-| `the book` | Facts de A, «You can't» 3, `slot`, `to squeeze someone in` | cuatro usos como jerga del mostrador; en A2 se lee «libro» |
-| `branch` | Facts de A, `here` de B, cierre punto 1 | está en el checklist final |
-| `digit` | cierre punto 3, «You did it if» de A | el dato que el debrief llama el único que se puede decir mal sin que nadie se entere |
-| `edge` / `sharp` | «Only you know» de B, Facts de B | es lo que B tiene que describir para que le tomen en serio |
+| 85 | exponente de A | `Can you say the number one by one?` |
+| 127 | datos de B | `one number at a time` |
+| 190 | cierre común | `one digit at a time` |
+| 91 / 162 | criterios de éxito | `digit by digit` |
 
-Las diez filas por rol son un presupuesto, no un mínimo sagrado: **`treatment` y `the book` en la
-lista de A, `edge` y `digit` en la de B** valen más que `no-show` y `chipped`.
+`the number one by one` se lee como *el número uno por uno*. Y `number` y `digit` van
+alternándose para la misma cosa en un cierre que obliga a comprobar precisamente eso.
 
-### Un término suelto
+**Versión corta:** `digit` en los cuatro sitios. Exponente → `Can you say it digit by digit?`
 
-`first consultation` aparece en el toolkit de B —«*emergency check*, *referral note*, *first
-consultation* coming at you»— y no está ni en el vocabulario, ni en los Facts, ni en los
-exponentes de A. O A tiene de dónde decirlo, o sale de la lista.
+### M5 · Seis definiciones que no son más sencillas que la palabra que definen
+
+Comprobadas las 20, una a una. **Cinco son modélicas** y no se tocan: `walk-in`, `to be fully
+booked`, `X-ray` (*a photo of the inside of a tooth*), `to squeeze someone in`, `no-show` (*a
+patient who doesn't come and doesn't call*). Nueve más pasan sin nota. Estas seis fallan:
+
+| palabra | definición actual | qué falla | versión corta |
+|---|---|---|---|
+| `waiting list` | `people who wait in case somebody doesn't come` | **`in case` es B1**. La palabra es más transparente que su definición: define hacia arriba | `a list. If a patient doesn't come, the clinic calls you` |
+| `appointment` (A y B) | `a time the clinic keeps for one patient` | `keep` = *reservar* no es el sentido A1/A2 de `keep`; se lee «el clínica guarda un tiempo» | `a day and a time for one patient only` |
+| `emergency check` (A y B) | `a short visit for pain, no appointment needed` | `no appointment needed` es pasiva reducida | `a short visit for pain. You don't need an appointment` |
+| `referral note` (A) | `a paper that says what's wrong, for another clinic` | pregunta incrustada + sintagma colgando al final | `a paper for another clinic. It says what the problem is` |
+| `to cover` (A y B) | `when the plan pays for the treatment` | define un verbo con una oración de `when`, y se apoya en `treatment`, sin definir | `the plan pays, so you pay nothing` |
+| `chipped` (B) | `when a small piece breaks off` | `break off` es phrasal, más difícil que `break`. Y la celda `here` pone en negrita **sharp**, palabra que no se define en ningún sitio y que B tiene que decir (`sharp edge on my tongue`, línea 119) | `when a small piece of a tooth breaks`. Y o se define `sharp`, o se le quita la negrita y que lo cargue la fila de datos |
+
+### M6 · El bloque 3 está muerto para B, y el 4 para A
+
+El toolkit de A (línea 74) dice: *«referral note, emergency check, X-ray are yours, not
+theirs»*. El de B (línea 145) dice: *«emergency check, referral note, first consultation coming
+at you: ask»* — bloque 3 `[receives]`, el de pedir que te repitan.
+
+Pero **la tabla de vocabulario de B ya define `emergency check`, `referral`, `to squeeze someone
+in` y `to cover`**, con la misma glosa que la de A. B no tiene ninguna razón para preguntar qué
+significan: ya lo sabe antes de empezar. El ejercicio de reparación que las dos líneas de toolkit
+prometen está resuelto por la pieza que va justo encima.
+
+De las 10 palabras por rol, **8 son compartidas** y la columna `what it is` es idéntica en 6.
+La asimetría que la cabecera del archivo reivindica («comparten término y no comparten glosa»)
+vive solo en la tercera columna. Eso está bien para el `here`, pero deja el reclamo de la
+cabecera sin respaldo.
+
+**Salida:** a `emergency check` y `referral note` en la ficha de **B**, dejarles la columna `here`
+y vaciar la columna `what it is` con una nota del tipo `they will say this — ask what it means`.
+Dos entradas, no las ocho. Con eso el bloque 3 vuelve a tener trabajo y el 4 de A también.
+
+### M7 · `first consultation` se le anuncia a B y A no la tiene
+
+Aparece **una sola vez en todo el documento**, en el toolkit de B (línea 145), como uno de los
+términos que le van a caer encima. No está en los datos de A, ni en su vocabulario, ni en sus
+exponentes, ni en su toolkit. B queda avisado de una palabra que A no va a decir nunca.
+
+**Salida:** o se quita de la línea 145, o se mete donde encaja sola — la fila `The book` de A
+(línea 48) ya describe exactamente eso: `first free slot: Thursday 10, 7:00 a.m. · 10 minutes
+early — forms and an X-ray`. Bastaría con nombrarlo: `first consultation: Thursday 10, 7:00
+a.m.`
 
 ---
 
-## 4. `grammarReferences` — verificados contra el registro
+## 3. LEVE — cinco
 
-Comprobados slug a slug contra `src/data/grammar/ingles/a1` y `.../a2` (los slugs se leen del campo
-`slug:` de cada archivo, no del nombre del archivo).
+**L1 · `present-perfect-ever-never` se justifica con una frase que no está en el archivo.** El
+rationale (línea 220) cita `I've never gotten a text from this clinic`; `gotten` no aparece en
+ninguna otra línea. El único present perfect real es el de la línea 37, que es de A y A no puede
+decirlo. La fila de datos que lo motiva (`no text from this clinic, ever`, línea 127) se dice en
+A2 con presente simple: `I never get texts from this clinic`. O se añade el exponente a la tabla
+de B, o se reescribe el rationale con lo que la ficha sí pide. El razonamiento sobre
+duración-con-`for`/`since` que lleva dentro es correcto y merece quedarse.
 
-| # | slug | existe | nivel | título en la ficha == título en el registro |
+**L2 · Dos exponentes sin ancla, dos anclas de A1 sin usar.** `What days do you have after eight
+thirty?` es wh-question en presente simple (`wh-questions` o `present-simple-questions`, ambos en
+`ingles/a1`, ninguno referenciado). `That's my sister's number. Mine is …` es genitivo sajón más
+posesivo (`possessive-s`, A1, no referenciado). Con 11 refs ya se está en la parte alta; no pido
+añadir, pido que si algo se recorta se recorte antes que estos.
+
+**L3 · `I have … with me, if that helps.`** Subordinada condicional, pero funciona como bloque
+léxico fijo y es el único de B. Pasa. Lo anoto para que nadie lo «arregle» quitándolo.
+
+**L4 · `hour` donde el inglés pide `time`.** `Day, hour and branch` (líneas 91 y 188), `one road,
+with its hour on it` (83), `close an hour with the reason` (153), `name an hour yourself` (156).
+Es calco de *hora*. Cuenta como nivel y no solo como naturalidad porque `day, hour and branch`
+se lee como una duración, no como una hora del reloj. (Solapa con `fase7-naturalidad-2.md`; lo
+señalo una vez y no insisto.)
+
+**L5 · Fuera de mi carril, una línea.** La carta va fechada a las 4:52 p.m.; la escena empieza a
+las 4:20 y dura 6 minutos. La carta llega media hora después de que la conversación haya
+terminado. No es un problema de nivel — es para quien audite coherencia.
+
+**L6 · Regla del `here` en §11** (ninguna celda empieza por pronombre + verbo conjugado): rota en
+5 celdas. Ya está itemizado como R11-R15 en `fase7-calcable-2.md`. No duplico.
+
+---
+
+## 4. `grammarReferences`, slug a slug
+
+Contrastado contra `src/data/grammar/ingles/{a1,a2}` leyendo el campo `slug` de cada archivo, no
+el nombre del archivo — y en un caso no coinciden: el tema vive en `a2/connectors.ts` pero su
+slug es `connectors-a2`. La ficha usa el slug, que es lo correcto.
+
+| # | slug en la ficha | ¿existe? | dónde | título: ¿coincide? |
 |---|---|---|---|---|
-| 1 | `should-advice` | sí | a2 | sí — *Should y Shouldn't en Inglés A2* |
-| 2 | `first-conditional` | sí | a2 | sí — *El Primer Condicional en Inglés A2* |
-| 3 | `past-simple-questions` | sí | a2 | sí — *Preguntas y Negativos en Past Simple A2* |
-| 4 | `have-to-must` | sí | a2 | sí — *Have to y Must en Inglés A2* |
-| 5 | `quantifiers` | sí | a2 | sí — *Cuantificadores en Inglés A2* |
-| 6 | `comparatives` | sí | a2 | sí — *Comparativos en Inglés A2* |
-| 7 | `connectors-a2` | sí | a2 | sí — *Conectores en Inglés A2: because, so, although, however, but* |
-| 8 | `present-perfect-ever-never` | sí | a2 | sí — *Present Perfect con Ever, Never, Already y Yet* |
-| 9 | `imperative` | sí | a1 | sí — *El imperativo en inglés A1* |
-| 10 | `can-ability` | sí | a1 | sí — *Can para habilidad en inglés A1* |
-| 11 | `telling-time` | sí | a1 | sí — *Decir la hora en inglés A1* |
+| 1 | `should-advice` | sí | `ingles/a2/should-advice.ts` | exacto |
+| 2 | `first-conditional` | sí | `ingles/a2/first-conditional.ts` | exacto |
+| 3 | `past-simple-questions` | sí | `ingles/a2/past-simple-questions.ts` | exacto |
+| 4 | `have-to-must` | sí | `ingles/a2/have-to-must.ts` | exacto |
+| 5 | `quantifiers` | sí | `ingles/a2/quantifiers.ts` | exacto |
+| 6 | `comparatives` | sí | `ingles/a2/comparatives.ts` | exacto |
+| 7 | `connectors-a2` | sí | `ingles/a2/connectors.ts` | exacto |
+| 8 | `present-perfect-ever-never` | sí | `ingles/a2/present-perfect-ever-never.ts` | exacto |
+| 9 | `imperative` | sí | `ingles/a1/imperative.ts` | exacto |
+| 10 | `can-ability` | sí | `ingles/a1/can-ability.ts` | exacto |
+| 11 | `telling-time` | sí | `ingles/a1/telling-time.ts` | exacto |
 
-**11 de 11 resuelven. Ninguno devuelve null.** La trampa del sufijo está bien esquivada:
-`connectors-a2` es el único de la lista cuyo slug lleva `-a2` y está escrito con el sufijo. Los
-otros cinco slugs del registro que solo existen con sufijo —`past-continuous-a2`,
-`prepositions-movement-a2`, `present-continuous-future-a2`, `relative-clauses-a2`, `used-to-a2`—
-no se usan aquí, así que no hay riesgo. El archivo `connectors.ts` se llama sin sufijo pero su
-campo `slug` es `connectors-a2`: correcto.
+**11 de 11 resuelven. 11 de 11 títulos coinciden carácter por carácter.**
 
-Los `rationale` son honestos, y el de `present-perfect-ever-never` hace algo que hay que
-conservar: dice por qué el present perfect de experiencia sí y el de duración con `for`/`since`
-no. Dos peros pequeños:
+Sobre el sufijo `-a2`, que es donde se rompe esto normalmente: de los ocho temas de A2
+referenciados, **solo uno lo lleva** (`connectors-a2`), y lo lleva porque el registro lo lleva.
+Los otros siete están bien **sin** sufijo. Nadie lo ha «normalizado» por simetría, que es el
+error que devolvería `null` desde `getTopicBySlug`. Comprobado también al revés: en `ingles/a2`
+sí llevan sufijo `past-continuous-a2`, `prepositions-movement-a2`, `present-continuous-future-a2`,
+`relative-clauses-a2` y `used-to-a2` — ninguno está referenciado aquí, así que no hay riesgo de
+cruce.
 
-- El de `quantifiers` cita `about an hour`, que no existe en este escenario (lo que hay es
-  *forty minutes from this clinic*). Cambiar la cita.
-- El de `present-perfect-ever-never` cita `I've never gotten a text from this clinic` y esa frase
-  no está en ningún exponente ni en ningún Facts. Si es la frase que justifica el tema, tiene que
-  estar en la tabla de B: `I've never gotten a text from you.`
-- El de `have-to-must` cita `I have to be in Girón at seven`; lo que tiene B es
-  `I can't come at seven, because I open the warehouse`. Vale igual, pero si `have to` es la
-  justificación conviene que haya un exponente con `have to` — el candidato natural es el de A:
-  `You have to come ten minutes early.`
+Los tres de A1 van marcados `// a1` en el comentario de línea, distintos de los ocho `// a2`. La
+distinción está bien puesta.
 
 ---
 
-## 5. Presupuesto de prosa
+## 5. Orden de arreglo
 
-Recontado (misma regla: de `## ROLE X` al final de «You did it if», sin filas de tabla):
-**A = 343**, **B = 347**. La ficha declara 346 y 350. La diferencia es de tokenización y no
-cambia nada: los dos están **bajo el techo de 350**.
+Si solo hay tiempo para una tanda, esta:
 
-Aviso para quien aplique estos cambios: casi todas las versiones cortas de la §2 son **más largas
-en palabras** que el original comprimido. Ese es el precio de que se puedan leer. El margen que
-queda es de 7 y 3 palabras. Si el arreglo no cabe, lo que sobra no es la instrucción legible: es
-alguna línea de «Only you know» que ya está dicha en los Facts.
+1. **G1** — quitar la pasiva del título y del objetivo de B. Una línea y media, y es la frase que
+   abre la conversación.
+2. **G2** — `book` → `calendar`, 11 sustituciones.
+3. **G4** — reescribir el cierre común. Lo leen los dos y lo leen despacio.
+4. **M5** — las seis definiciones. Es la pieza nueva; si falla, la pieza no sirve para lo que se
+   metió.
+5. **G3**, **M1**, **M3**, **M4**, **M6**, **M7**.
+6. **M2** y los leves.
 
----
-
-## 6. Qué hay que tocar, por orden
-
-1. `to be seen` → `to see a dentist` (título de B, `You want`) y `How much gets paid` →
-   `How much you pay` (cierre 2). Es la pasiva, que está prohibida por escrito.
-2. `hour` → `time` en el cierre y en el «You did it if» de A.
-3. Reescribir las 13 celdas de «what it does here» de la §2.1.
-4. Glosar `treatment` y `the book` en A; meter `edge` y `digit` en B, sacando `chipped`.
-5. Rehacer las siete definiciones marcadas «cambia» en la §3.
-6. `may` → `Sometimes a patient doesn't come.`
-7. Las líneas de prosa de la §2.2, empezando por las de B, que son las peores.
-8. Unificar `digit`; arreglar la contradicción del frío; `referral note` en las dos listas.
-9. Decidir qué se hace con `I'm afraid…`, con `fully booked` y con `first consultation`: o tienen
-   exponente, o salen.
-10. Los tres `rationale` de la §4.
-
-Nada de esto toca el motor, ni el reparto de turnos, ni la carta, ni el desenlace. El escenario
-es A2; la ficha todavía no.
+Nada de esto obliga a tocar el motor: el jueves a las 7:00 sigue siendo el imposible con dos
+números detrás, las dos salidas siguen viviendo en los datos ocultos de A, y la carta sigue
+asignando una tarea con hora. Lo que falla es cómo está escrito, no qué está escrito.

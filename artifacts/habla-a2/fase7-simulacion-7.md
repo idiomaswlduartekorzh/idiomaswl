@@ -1,12 +1,13 @@
-# Escenario 7 · `two-more-people-for-the-trip` — simulación de la ficha en inglés
+# Escenario 7 · `two-more-people-for-the-trip` — simulación de la ficha en inglés (ronda 3)
 
-Cinco conversaciones completas, turno a turno, contra la versión nueva de las fichas:
+Cinco conversaciones completas, turno a turno, contra la versión **actual** de las fichas:
 `artifacts/habla-a2/fase7-fichas-7-two-more-people-for-the-trip.md`.
 Caja común: `artifacts/habla-a2/caja-de-herramientas-a2.md`.
-Motor sin tocar: `artifacts/habla-a2/fase4-escenarios-7-8.md` (§7).
 
-Sustituye a la simulación del 7 en `fase3-simulacion-7-8.md`, que se jugó contra fichas de
-fase 2, sin gesto de cierre y con la carta en otro turno. Ya no describe este material.
+**Esta ronda no continúa la anterior: se jugó de cero contra el mismo material.** La ronda 2
+está intacta en `fase7-simulacion-7-ronda2.md`. Se jugó a ciegas a propósito —sin releer sus
+transcripciones— para que lo que salga dos veces sea replicación y no copia. En el anexo final
+se contrastan las dos rondas, y se dice qué coincide, qué no, y qué es nuevo.
 
 **Aquí no se arregla nada.** Se juega, se cuenta y se diagnostica.
 
@@ -14,827 +15,663 @@ fase 2, sin gesto de cierre y con la carta en otro turno. Ya no describe este ma
 
 ## Cómo se leen estas transcripciones
 
-**Regla dura.** Cada jugador ve **solo su ficha**. Ningún jugador usa un dato de la ficha del
-otro hasta que se lo dicen en voz alta. Cada vez que al simular hizo falta un dato del otro
-lado, está marcado como **⚠ FILTRACIÓN** en el diagnóstico, no disimulado. En las cinco
-parejas hubo **cero filtraciones**, y hay un sitio donde estuvo a punto de haber una: está
-señalado en la pareja 2.
+**Regla dura.** Cada jugador ve **solo su ficha**. Ningún jugador usa un dato de la ficha del otro
+hasta que se lo dicen en voz alta. Cada vez que hizo falta un dato del otro lado sin haberse
+dicho, va marcado **⚠ FILTRACIÓN**. En las cinco parejas hubo **cero filtraciones por descuido**.
+Hubo **dos filtraciones producidas por la propia ficha**, las dos en la pareja 3, y las dos
+leyendo en voz alta un bloque que no está escrito para decirse. Están contadas y explicadas.
 
 ### Marcas de turno
 
 | Marca | Qué significa |
 |---|---|
-| `[F]` | miró el andamiaje de su ficha (toolkit, «Say it here») para producir el turno |
-| `[D]` | miró la tabla de datos duros para leer una cifra |
-| `[L]` | **leyó en voz alta una línea de su ficha, literal, como si fuera habla suya** |
+| `[F]` | tomó una forma de su tabla «Say it here» o de la caja y la dijo como suya — **esto es el ejercicio, no es leer** |
+| `[D]` | miró la tabla de datos para leer una cifra |
+| `[V]` | miró el bloque de vocabulario |
+| `[L]` | **leyó en voz alta una línea que no está escrita para decirse**: fila de datos, bloque «You can't», carta, instrucción de cierre |
 | `[X]` | se atascó: pausa larga, reinicio, frase abandonada |
 | `[ES]` | se pasó al español, entero o a medias |
 | `[!]` | se salió del papel: rompió una restricción o habló de meta |
+| `‡` | usó un bloque de la caja que su ficha marca como **no suyo** |
+
+La diferencia entre `[F]` y `[L]` es la que contesta la pregunta 1 de esta fase, así que conviene
+tenerla clara antes de leer: decir `There are only six beds.` mirando la tabla **no es leer la
+ficha**, es usar el andamiaje para lo que está puesto. Decir `Price: a hundred and fifty thousand
+pesos, both nights — she charges you.` **sí lo es**, porque esa línea le habla al jugador, no al
+otro jugador.
 
 ### Perfiles
 
-El A2 **sólido** falla en tercera persona, preposición y pregunta sin auxiliar. El A2 **flojo**
-produce `I no can`, `is much`, verbos sin conjugar, presente por pasado y frases a medias. El
-**callado** responde con una a tres palabras. El **atajista** habla más suelto de lo que le toca
-—es su rasgo, va a cerrar, no a aprender— y se salta lo que le estorbe.
+El A2 **sólido** falla en tercera persona, en preposición y en pregunta sin auxiliar. El A2
+**flojo** produce `I no can`, `two persons`, `she pay me`, presente por pasado y frases a medias.
+El **callado** contesta con una a tres palabras y no inicia nada. El **atajista** habla más suelto
+de lo que le toca —es su rasgo: va a cerrar, no a aprender— y se salta lo que le estorbe.
 
 ### Modelo de minutos
 
-Turno de sólido ≈ 8–14 s · turno de flojo con consulta ≈ 18–30 s · turno monosilábico ≈ 3–6 s ·
-**turno leído `[L]` ≈ 5–8 s, porque no hay planificación** · cifra de seis dígitos en inglés
-≈ 10–20 s · **dictado del mensaje de grupo con los tres puntos ≈ 55–90 s**, y es nuevo: en la
-versión de fase 3 este gesto no existía.
+Turno de sólido ≈ 8–14 s · turno de flojo con consulta ≈ 14–26 s · turno monosilábico ≈ 2–6 s ·
+turno leído `[L]` ≈ 5–10 s, porque no hay planificación · **cifra de seis dígitos en inglés
+≈ 10–20 s** · **dictado del mensaje de grupo con los tres puntos ≈ 55–90 s** · pausa entre turnos
+≈ 2 s. Los segundos van al final de cada turno. Presupuesto de la ficha: **7 minutos, 10 turnos
+por rol**.
 
 ### La carta
 
-Entra **al terminar el turno global 3**, que es el segundo de Kevin porque arranca Kevin. En
-las cinco parejas se abrió ahí, en la pantalla de **Valentina**, y **Kevin nunca la ve**: solo
-sabe lo que ella le cuente. Es el turno global 4 —el segundo de Valentina— el que la juega.
+Entra **al terminar el turno global 3**, que es el segundo de Kevin porque arranca Kevin. En las
+cinco parejas se abrió ahí, en la pantalla de **Valentina**, y **Kevin nunca la ve**: sabe solo lo
+que ella le cuente. La ficha avisa de que la corrección que la carta promete depende de que
+Valentina haya dicho ya **There are only six beds.** en voz alta. **Se cumplió el aviso:** en la
+pareja 3 no lo había dicho, y la carta cayó en mesa vacía.
 
-**Dato de calibración que sale de las cinco:** la carta promete corregir «algo que ya habrás
-dicho en voz alta». Lo que Valentina ha dicho en voz alta a esas alturas es **un solo turno**.
-Si en ese turno dijo `There are only six beds.`, la carta cae encima con precisión de reloj
-(parejas 1, 2, 3 y 5). Si no lo dijo —pareja 4, la callada—, la carta llega a una mesa vacía y
-no corrige nada. **La carta está calibrada contra un turno que la ficha no obliga a decir.**
+### Los seis datos ocultos
 
----
+Se cuentan aparte porque son la única medida de si hubo conversación o hubo trámite.
+
+| # | de quién | qué es |
+|---|---|---|
+| 1 | Valentina | el sexto es Hernán, y lo metió ella el miércoles |
+| 2 | Valentina | el carro de Hernán está en el taller · el mecánico llama a las 7:00 |
+| 3 | Valentina | a Sebastián lo conoce, a Andrea no la ha visto nunca |
+| 4 | Kevin | los 200.000 cobrados el martes, que devuelve esta noche si no van |
+| 5 | Kevin | Andrea llega en veinte minutos y no tiene otra forma de llegar |
+| 6 | Kevin | el turno de Sebastián hasta las diez, y la hamaca |
+
 ---
 
 ## 1 · SÓLIDO + SÓLIDO
 
-**A = Valentina (sólida) · B = Kevin (sólido)**
+**K1** `[F caja 1]` Hey, Vale — can we talk for a second? I know it's last minute, but… Sebastián
+and Andrea want to come tomorrow. **(12 s)**
 
-**B1** — Hi — can we talk for a second? `[F]` I know it's last minute, but… Sebastián and
-Andrea are asking about tomorrow. They paid me on Tuesday. `[F]`
+**V2** `[F]` `[D]` Two people? Wait — that's not what we said. There are only six beds. I paid six
+hundred thousand pesos for six people, and you haven't paid me yet. **(18 s)**
 
-**A1** — They paid you? Kevin, there are only six beds. `[F]` `[D]` Six people, six names at
-the gate, six beds. And you haven't paid me yet — a hundred thousand, since July the thirtieth.
+> Los dos exponentes duros de Valentina salen en su primer turno, y **el número sale a tiempo**:
+> la carta va a tener algo que corregir.
 
-**B2** — Yes, my fault. `[F]` Can I pay you on Tuesday the twenty-fifth? `[F]` … And listen: on
-Tuesday the group was five people. I said yes to two. Then somebody put a sixth one in, and
-nobody told me.
+**K3** `[F]` It's my fault, but they paid me on Tuesday. A hundred thousand each. Can I pay you on
+Tuesday the twenty-fifth? **(15 s)**
 
-> *Fin del turno global 3. Valentina abre la carta en su pantalla. Kevin no la ve.*
+> **Carta · 7:41 p. m. · pantalla de Valentina.** La lee en silencio, 9 s.
 
-**A2** — `[X]` … Hold on. `[F]` Doña Nubia just sent me a voice note. She says there is room
-for **one** more person. One, not two. A camping mat, not a bed. And the building manager says
-yes or no, and he doesn't answer at night — she calls me before seven in the morning. … And
-who exactly is Andrea? `[F]` I know Sebastián. I have never seen Andrea.
+**V4** `[F caja 8]` Hold on. Hold on. Doña Nubia is writing me right now. `[V]` She says one more
+person. One more, not two. On a camping mat, on the floor — not a bed. And she charges me a
+hundred and fifty thousand for the two nights. **(24 s)**
 
-**B3** — Andrea is from my English class. She's coming here in twenty minutes, to the parking
-lot. `[D]` She has no other way to get there — only my car. `[F]` … One is better than zero.
-If it's one, it's Andrea.
+**K5** `[V]` A hundred and fifty? But one spot is a hundred thousand. We are fifty thousand short.
+**(12 s)**
 
-**A3** — And Sebastián?
+**V6** Yes. And I can't put money for another person. I paid six hundred already, three weeks ago
+— eh… ya la pagué por adelantado `[ES]`. Sorry. `[F caja 4]` I mean — I paid before, and the
+reservation is in my name. **(18 s)**
 
-**B4** — Sebastián is on a shift until ten at night, in the call center. `[D]` He doesn't
-answer before ten. And he sleeps in a hammock, always. He doesn't need a bed. `[F]`
+> Primer sitio de español, y es **de vocabulario, no de gramática**: no tiene cómo decir *por
+> adelantado*, que es de donde le viene el poder. Se rescata sola con el bloque 4, que sí tiene.
 
-**A4** — `[X]` … In a hammock? … Then the beds are not the problem. The problem is the gate.
-`[F]` No name and no ID number on the list, no entry. Only doña Nubia changes it, and she wants
-the full name and the ID number tonight.
+**K7** `[F caja 3]` Sorry, I didn't catch that — the fifty thousand. Who pays that? **(9 s)**
 
-**B5** — I can send you both tonight. Andrea in twenty minutes, and Sebastián — I write him
-now, he answers at ten. `[F]` Is ten OK?
+**V8** Nobody yet. We can divide it… entre los seis `[ES]`… between the six of us. I put my part.
+I can't put the part of the others. **(17 s)**
 
-**A5** — Ten is OK, she calls the manager before seven. `[D]` But there's the money. She
-charges me a hundred and fifty thousand for the extra person. Two nights.
+> Segundo sitio de español, y es **el importante**: la jugada que desatasca el escenario entero es
+> suya, y la palabra que la nombra —`to chip in`— está en la ficha de Kevin.
 
-**B6** — A hundred and fifty? `[X]` … But we all paid a hundred thousand. Why more?
+**K9** `[V]` OK. I understand. I can't chip in today, because the two hundred thousand in my
+pocket is Sebastián's and Andrea's. If nobody goes, I pay them back tonight. **(17 s)** → dato
+oculto 4
 
-**A6** — Because it's a mat, not a bed, and because she has to ask. It's her price. `[F]` And
-I'm not putting money in again, Kevin. I paid the deposit three weeks ago — six hundred
-thousand, for six people. `[D]`
+**V10** `[F]` Who exactly is Andrea? I know Sebastián — he went last year. Andrea I don't know.
+**(11 s)** → dato oculto 3
 
-**B7** — OK. `[F]` Andrea paid me a hundred, I have it here. The other fifty… `[X]` … I'm
-short fifty thousand. Then everybody puts in ten thousand — five people, ten thousand each.
-That covers the difference. `[F]` I ask in the group tonight.
+**K11** Andrea is Marcela's friend. She is coming to the parking lot in twenty minutes, right now,
+because she has no car and no bus. `[V]` I give her a ride tomorrow. **(16 s)** → dato oculto 5
 
-**A7** — That I can send. We split the fifty thousand and nobody pays twice. `[F]` … And
-tomorrow at eight?
+**V12** And Sebastián? **(3 s)**
 
-**B8** — My car, five seats, I pay the gas. `[D]`
+**K13** `[V]` Sebastián works a shift until ten. He doesn't answer before. And he sleeps in a
+hammock, always. He doesn't need a bed. **(14 s)** → dato oculto 6
 
-**A8** — And Hernán's car, four seats. `[X]` … Kevin, I have to tell you something. Hernán's
-car is at the shop since six o'clock. A noise in the engine. The mechanic calls him back at
-seven in the morning. `[D]`
+**V14** A hammock. `[X]` OK, that's new. But the beds are not the problem now. The problem is the
+guard at the gate: no name and no ID number, no entry. `[V]` And the list changes only doña Nubia.
+She asks the building manager tomorrow at seven, and she calls me before seven. **(26 s)**
 
-**B9** — `[X]` … What? … So maybe tomorrow we have five seats for six people.
+> Aquí está el turno que hace bien el escenario entero: **el no deja de ser de Valentina y pasa a
+> ser del portero y del administrador**, sin que ella se esconda detrás de ellos.
 
-**A9** — Or for seven. Yes. `[F]` We don't fit.
+**K15** So tonight nothing is sure. **(6 s)**
 
-**B10** — Then I write the message. `[F]` … "Hi everyone. Tomorrow, eight o'clock, the parking
-lot. My car goes, five seats, I pay the gas. Hernán's car is at the shop; the mechanic calls
-him at seven. Doña Nubia has one extra place — a camping mat, a hundred and fifty thousand for
-the two nights. Andrea paid a hundred; the other fifty, everybody puts in ten thousand. I send
-Valentina the name and the ID number tonight, Andrea's now and Sebastián's at ten. Valentina
-talks to doña Nubia before seven. If at seven there is no answer, we go six people in two cars
-and Andrea doesn't come. Valentina and I talk at seven fifteen."
+**V16** `[F]` Tonight I can send one name. OK — but only if I have the name and the ID number now.
+If I don't have it tonight, I can't send anything to doña Nubia. **(16 s)**
 
-**A10** — Wait — that's not what we said. `[F]` If Hernán's car doesn't come out of the shop,
-Andrea doesn't come either — because there's no seat, not because of the bed. Put that in. …
-And Sebastián: if Andrea is the one, he gets his hundred thousand back tonight, from you.
+**K17** Andrea is here in twenty minutes with her ID card. Then it's Andrea. And Sebastián — `[V]`
+I pay him back tonight, the hundred thousand. `[F]` What do I say to him? **(18 s)**
 
-**B11** — Right. … Same message, with those two things.
+> Se le da la vuelta al exponente: la ficha le da `What do I say to Andrea?` y él lo usa para
+> Sebastián, que es el que se queda fuera. **La forma aguanta el cambio de destinatario.**
 
-**A11** — That's it — I'll send it now. `[F]` … Kevin. The hundred thousand.
+**V18** Say the truth: one place, doña Nubia answers at seven. And Kevin — one more thing. `[V]`
+Hernán's car is at the mechanic's since six. Engine noise. The mechanic calls at seven too.
+**(20 s)** → datos ocultos 1 y 2
 
-**B12** — Tuesday the twenty-fifth. … We're good, right? `[F]`
+**K19** `[F caja 3]` Wait, what? So tomorrow maybe only my car? Five seats and we are seven.
+**(11 s)**
 
-**A12** — We're good. See you tomorrow at eight.
+**V20** Six or seven, and five seats. `[X]` Somebody stays. **(9 s)**
+
+> **`to fit` está en su pantalla, en el sitio exacto donde hacía falta, y no lo usa.** Dice
+> *somebody stays*. Pasa igual en la pareja 2 y no pasa en ninguna otra, porque en las otras
+> nunca se llega a los puestos del carro.
+
+**K21** `[F caja 2]` OK — I'll say it like this: "Tonight I call Andrea and Sebastián. Andrea sends
+her name and ID now. I pay Sebastián back tonight. Tomorrow eight in the morning, my car, five
+seats, gas on me." **(30 s)**
+
+**V22** `[F]` Wait — that's not what we said. Change one thing: don't say "Andrea comes". Say
+"Andrea is on the list if doña Nubia says yes at seven". **(16 s)**
+
+**K23** OK. Fine. **(3 s)**
+
+**V24** `[D]` So: "Group — tomorrow eight o'clock from the parking lot. Six people, and maybe
+seven. Two cars, Kevin's and Hernán's, but Hernán's car is at the mechanic and he calls at seven.
+Kevin sends Andrea's name and ID tonight. I ask doña Nubia at seven for one more place, a hundred
+and fifty thousand, and we divide fifty thousand between the six. If nobody answers before seven,
+we go with six people in one car and Andrea stays." `[F]` I'm not angry, Kevin, but next time you
+ask me first. `[F]` That's it — I'll send it now. **(78 s)**
+
+**K25** `[F]` We're good, right? **(4 s)**
+
+**V26** We're good. See you at eight. **(3 s)**
 
 ### Diagnóstico 1
 
-| Medida | Resultado |
+| | |
 |---|---|
-| **¿Llega al cierre?** | **Sí, y el cierre es un gesto, no un recitado.** Kevin dicta, Valentina corrige una cosa, Valentina envía |
-| **Los tres puntos** | Los tres, en el mensaje dictado. El punto 1 sale **condicional** (`if Hernán's car is OK…`) y esa es la estructura que el anclaje de nivel de fase 3 marcaba como prohibida; aquí sale sola, en `first-conditional`, y **no suena B1** |
-| **Turnos** | A 12 · B 12 = **24** sobre 14 declarados (+71 %) |
-| **Reparto** | 50/50 en turnos · ≈50/50 en palabras |
-| **¿Se murió?** | No |
-| **Andamiaje** | `[F]` 14 · `[D]` 7 · `[L]` **0** · `[X]` 5 |
-| **Fuga al español** | **Ninguna** |
-| **Minutos** | **7 min 05 s** — 22 turnos ≈ 4:05 · dictado 1:05 · corrección 0:20 · pausa de carta 0:12 · cinco cifras largas ≈ 0:55 · silencios 0:28. Declarado 6:00. **+18 %** |
-| **Filtración** | Ninguna |
-| **¿Sabe que terminó?** | **Sí, y sin dudarlo.** «I'll send it now» es un acto físico: hay un antes y un después |
+| Turnos | **Kevin 13 · Valentina 13** (presupuesto 10 + 10) |
+| Minutos | **8 min 03 s** (presupuesto 7:00) |
+| Datos ocultos que salieron | **6 de 6** |
+| ¿Cierra? | Sí, completo: los tres puntos, las dos cifras, mensaje enviado |
+| ¿Sabe que terminó? | Sí, sin dudar: el envío es un gesto físico |
+| Español | 2 sitios, los dos por falta de palabra, ninguno por gramática |
+| Bloques de caja usados | Valentina 1, 2, 4, 8 · Kevin 1, 2, 3 |
 
-**Lo que arregla el gesto de cierre.** En fase 3 este escenario terminaba con los dos recitando
-condiciones para mañana y preguntándose en español si ya estaba. Aquí no: **alguien pulsa
-enviar.** La diferencia entre el 7 y el 8 que la fase 3 describía como «al 8 alguien le puso un
-bolígrafo encima del mostrador» está resuelta — el bolígrafo del 7 es el botón de enviar.
+**Lo que hay que mirar de esta pareja no es que salga bien, es dónde se pasa de presupuesto.** A
+turno 20 la negociación está terminada y **no se ha empezado el cierre**. El cierre son seis
+turnos y minuto y medio: tres preguntas contestadas en voz alta, el punto 2 de Kevin, la
+corrección de Valentina, el dictado y el envío. Con la pareja que mejor juega, **20 turnos no
+alcanzan para llegar al cierre**, y no por lentitud: por aritmética.
 
-**Y el desenlace lo desatasca una palabra de la ficha de Kevin, no de la de Valentina.** El
-nudo real de esta pareja no es la cama: es que la plaza cuesta 150.000 y quien la ocupa pagó
-100.000. Lo rompe `to chip in` en B7 —«everybody puts in ten thousand»—, que es la única fila
-del bloque de vocabulario de Kevin que hace trabajo de guion. Con esa frase el dinero deja de
-ser un muro y pasa a ser aritmética de A2: cinco por diez mil.
-
-**La hamaca hace exactamente lo que la ficha promete.** B4 la suelta, y en A4 Valentina
-reformula todo el problema: deja de discutir camas y se va a la puerta. Es el mejor turno de
-la conversación y sale de una de las tres líneas que solo Kevin tiene.
+Los 8:03 se reparten así: 4:50 de negociación, 1:18 de dictado del mensaje, 50 s de pausas, 9 s de
+carta, y el resto de cifras de seis dígitos, que en esta pareja se dijeron cuatro veces.
 
 ---
 
-## 2 · SÓLIDO (A) + FLOJO (B) — la pareja que leyó, y el dictado que no pudo dictar
+## 2 · SÓLIDO (Valentina) + FLOJO (Kevin)
 
-**A = Valentina (sólida) · B = Kevin (flojo)**
+**K1** `[F→L]` I know it's last minute, but… `[X]` …but two persons want go tomorrow. **(14 s)**
 
-**B1** — Hi. Eh… `[F]` I know it's last minute, but… `[L]` `[X]` … Sebastián and Andrea.
-Tomorrow. They want to go.
+> Lee el exponente **incluyendo los puntos suspensivos**, se para en el hueco, y sale del hueco
+> con inglés suyo, malo. **La línea funcionó**: le dio un arranque a alguien que no lo tenía.
 
-**A1** — Tomorrow? Kevin, there are only six beds. `[F]` `[D]` Six names at the gate, six beds.
-And you haven't paid me yet.
+**V2** `[F]` Two people? Wait — that's not what we said. There are only six beds. **(11 s)**
 
-**B2** — `[X]` … It's my fault, but… `[L]` `[X]` … eh… They paid me on Tuesday. `[L]` Two
-hundred thousand.
+**K3** `[X]` Yes but… they pay me. On Tuesday. Two hundred thousand. Is in my pocket. **(18 s)**
+→ dato oculto 4
 
-> *Fin del turno global 3. Valentina abre la carta.*
+> **Carta · 7:41 · pantalla de Valentina.** La lee en silencio, 9 s.
 
-**A2** — `[X]` … Hold on. `[F]` Doña Nubia sent me a voice note now. There is room for one more
-person. One. A camping mat, not a bed. And she asks the manager tomorrow, before seven. … Who
-exactly is Andrea? `[F]`
+**V4** `[F caja 8]` Hold on. `[V]` Doña Nubia says one more person can go. One, not two. With a
+camping mat on the floor. And she charges a hundred and fifty thousand. **(22 s)**
 
-**B3** — `[X]` … Andrea is… eh… my friend. Of the English class. She… `[X]` … she no have
-car. Only my car.
+**K5** `[F caja 3]` Sorry, I didn't catch that. What is "camping mat"? **(7 s)**
 
-**A3** — And Sebastián?
+**V6** `[F caja 4]` It's like… a thin bed, on the floor. Not a bed. Colchoneta `[ES una palabra]`.
+**(12 s)**
 
-**B4** — Sebastián work… works in a call center. `[X]` Until ten. He no answer before. `[X]`
-… and he sleep in… `[X]` … *una hamaca*. `[ES]`
+**K7** Ah. OK. And who pay the hundred fifty? **(7 s)**
 
-**A4** — `[X]` … *¿Hamaca?* `[ES]` … So he doesn't need a bed?
+**V8** `[V]` She charges me. It's my name in the reservation. **(8 s)**
 
-**B5** — Yes! No bed. `[F]`
+**K9** `[F caja 3]` What is "reservation"? **(4 s)**
 
-**A5** — OK, but the bed is not the problem. The gate is. `[F]` A full name and an ID number
-before seven in the morning, or the guard sends them back. Only doña Nubia puts a name down.
+**V10** `[F caja 4]` I mean — I called doña Nubia, I paid, and my name is in her book. That's the
+reservation. **(14 s)**
 
-**B6** — `[X]` … Can I pay you on…? `[L]` `[X]` … eh… Tuesday twenty-five.
+> **Los turnos K5–V10 son lo mejor que produce este escenario en las cinco parejas.** Es el bloque
+> 3 de Kevin y el bloque 4 de Valentina funcionando dos veces seguidas, con las dos únicas palabras
+> de oficio que hay: `camping mat`, que viene de la carta, y `reservation`, que es la de ella. La
+> inversión de marcas está bien puesta y aquí se ve.
 
-**A6** — `[X]` … Kevin, that's the other thing. That's your hundred thousand. I'm talking about
-the names.
+**K11** OK OK. So, one person. Can… `[F]` Can I pay you on Tuesday? The twenty-five. **(14 s)**
 
-**B7** — Ah. Sorry. `[X]` … The name. Andrea come here in twenty minutes. I ask her the…
-*cédula*. `[ES]` The number.
+**V12** `[F]` The twenty-fifth. OK — but only if tonight I have a name and an ID number. If I don't
+have it tonight, I can't send anything. **(17 s)**
 
-**A7** — Good. And Sebastián at ten. … And there's the money. Doña Nubia charges a hundred and
-fifty thousand for the extra person, two nights. `[D]`
+**K13** `[X]` Name… Andrea. Andrea is coming here, twenty minutes. `[V]` She have the ID card.
+**(18 s)** → dato oculto 5
 
-**B8** — `[X]` … *¿Ciento cincuenta?* `[ES]` … A hundred fifty? But we pay one hundred. `[X]`
-… Is more.
+**V14** `[F]` Who exactly is Andrea? **(4 s)**
 
-**A8** — Yes. It's a mat and she has to ask the manager. It's her price. `[F]` I'm not putting
-money in again. I paid six hundred thousand three weeks ago. `[D]`
+**K15** Is friend of Marcela. She no have car. I take her tomorrow. **(14 s)**
 
-**B9** — `[X]` … I have two hundred thousand. `[X]` … One go, one no go. `[X]` … And I pay
-back the money in the night. `[F]`
+> `to give someone a ride` está en su pantalla. Dice *I take her*. Segunda no-recuperación.
 
-**A9** — And the fifty thousand that's missing?
+**V16** And Sebastián? He went last year, I know him. **(7 s)** → dato oculto 3
 
-**B10** — `[X]` `[X]` … *no sé.* `[ES]` … eh. Maybe… all the people… ten thousand?
+**K17** Sebastián work until ten. Call center. He no answer before. And he… he sleep in hamaca
+`[ES]` — hammock, hammock. No bed. **(24 s)** → dato oculto 6
 
-**A10** — Everybody puts in ten thousand. Five people. That works — I'll ask in the group.
+> La palabra **sí** está en su ficha y **sí** la recupera, pero después del español y a la
+> segunda. Cuenta como usada y como cara.
 
-**A11** — And tomorrow at eight, Kevin. Your car is five seats. Hernán's car is at the shop
-since six, the mechanic calls him at seven. `[D]` So maybe we are six people and five seats.
+**V18** OK, that's new. But the beds are not the problem. The problem is the guard at the gate. No
+name, no ID, no entry. `[V]` And doña Nubia asks the building manager at seven in the morning.
+**(22 s)**
 
-**B11** — `[X]` … *¿en el taller?* `[ES]` … The car no go?
+**K19** `[X]` Then… is not sure. **(8 s)**
 
-**A12** — Maybe. At seven we know.
+**V20** Not sure tonight. Sure at seven. And one more thing: `[V]` Hernán's car is at the
+mechanic's. So maybe tomorrow only your car. **(16 s)** → dato oculto 2
 
-**B12** — `[X]` … OK — I'll write it like this: `[L]` … `[X]` … "Tomorrow eight o'clock. My
-car." `[X]` … eh… `[X]` … *¿qué más?* `[ES]`
+> **Dice el taller y no dice quién es Hernán.** Kevin no pregunta. El dato 1 —que el sexto lo metió
+> ella el miércoles— no sale, y con él se queda fuera la mitad de la culpa que el escenario
+> reparte entre los dos.
 
-**A13** — Say the two cars. Say Andrea. Say what happens at seven.
+**K21** My car is five seat. We are six… seven. `[X]` **(13 s)**
 
-**B13** — `[X]` … "Tomorrow eight o'clock, my car, five seats." `[X]` … Valentina, say it you.
-`[!]`
+**V22** Yes. **(2 s)**
 
-**A14** — `[X]` … OK. Listen: "Everyone — tomorrow, eight o'clock, the parking lot. Kevin's
-car, five seats, he pays the gas. Hernán's car is at the shop; the mechanic calls at seven.
-Doña Nubia has one extra place, a mat, a hundred and fifty thousand — Andrea's hundred plus ten
-thousand from each of us. Kevin sends me the name and the ID number tonight. Sebastián answers
-at ten and gets his money back if he doesn't go. If at seven there's no answer, we go six. We
-talk at seven fifteen." … Is that OK for you? `[F]`
+**K23** `[F]` And the fifty thousand? A hundred fifty menos cien… es cincuenta `[ES]`. Fifty
+missing. **(20 s)**
 
-**B14** — Yes. Yes.
+> `to be short` está en su pantalla, en la fila de al lado de la que sí miró. Hace la resta en
+> español y sale con *fifty missing*.
 
-**A15** — Then I send it. `[F]`
+**V24** We divide it between the six. I put my part, not the part of the others. **(12 s)**
 
-**B15** — `[F]` We're good, right? `[L]`
+**K25** OK. **(2 s)**
 
-**A16** — We're good. Tuesday the twenty-fifth. See you at eight.
+**V26** OK, the message. You say point two: who calls who tonight. **(9 s)**
+
+**K27** `[L]` Tonight: who calls Andrea, who calls Sebastián, who calls doña Nubia. `[X]` Eh… I
+call Andrea, I call Sebastián. You call doña Nubia. **(26 s)**
+
+> Lee la instrucción de cierre en voz alta y **después la contesta**. Le funciona: la instrucción
+> está escrita como pregunta y es prosa compartida, así que leerla no rompe nada.
+
+**V28** `[D]` "Group: tomorrow eight o'clock, parking lot. Six people, two cars — Kevin's and
+Hernán's, but Hernán's car is at the mechanic and he calls at seven. Kevin talks to Andrea tonight
+and sends her name and ID. I ask doña Nubia at seven for one more place, a hundred and fifty
+thousand, and we divide fifty thousand between the six. If nobody answers before seven, we go six
+people in one car." `[F]` That's it — I'll send it now. **(85 s)**
+
+**K29** `[L]` We're good, right? **(4 s)**
+
+**V30** We're good. **(2 s)**
 
 ### Diagnóstico 2
 
-| Medida | Resultado |
+| | |
 |---|---|
-| **¿Llega al cierre?** | Sí — **pero con el gesto cambiado de manos.** El cierre dice que dicta Kevin; dictó Valentina |
-| **Turnos** | A 16 · B 15 = **31** sobre 14 declarados (+121 %) |
-| **Reparto** | 52/48 en turnos · **≈76/24 en palabras** |
-| **Palabras de B** | ≈135 en quince turnos. **34 son líneas leídas** (25 %) y 11 son español. Producción propia ≈ 90 palabras |
-| **¿Se murió?** | No, y no murió por Valentina: A11 es un turno que Kevin no pidió |
-| **Andamiaje** | `[L]` **6** · `[F]` 6 · `[D]` 4 · `[X]` 19 · `[!]` 1 |
-| **Fuga al español** | **6** — `hamaca` (B4), `cédula` (B7), `ciento cincuenta` (B8), `no sé` (B10), `en el taller` (B11), `qué más` (B12). Y una de A: `¿Hamaca?` (A4), devolviendo la palabra que él no supo |
-| **Minutos** | **8 min 20 s** — quince turnos de flojo ≈ 3:30 · seis leídos ≈ 0:40 · dieciséis de A ≈ 2:20 · dictado de A 1:10 · cifras y reparaciones ≈ 0:40. Declarado 6:00. **+39 %** |
-| **Filtración** | Ninguna. **Estuvo a punto en A4** (ver abajo) |
-| **¿Sabe que terminó?** | Sí |
+| Turnos | **Kevin 15 · Valentina 15** |
+| Minutos | **8 min 51 s** |
+| Datos ocultos que salieron | **5 de 6** — falta el 1: quién es Hernán y quién lo metió |
+| ¿Cierra? | Sí, pero **el mensaje lo dicta ella entero**: él pone el punto 2 y nada más |
+| ¿Sabe que terminó? | Sí |
+| Español | 3 sitios: `colchoneta`, `hamaca`, la resta |
+| Bloques de caja usados | Valentina 4, 8 · Kevin 3 (dos veces) |
 
-**El hallazgo grande de esta pareja no es la lectura: es que el gesto de cierre está en las
-manos equivocadas.** «Kevin dicta, Valentina confirma o corrige, Valentina envía» es un cierre
-excelente **cuando Kevin puede dictar**. Un A2 flojo no puede producir un párrafo de cinco
-frases con tres condiciones. En B12 lo intenta con la línea leída `OK — I'll write it like
-this:`, avanza siete palabras y se para. En B13 pide en voz alta que lo haga ella: **`[!]`, el
-único de esta pareja, y es el jugador diciéndole al otro que se salte el reparto de papeles.**
+**El flojo se sostiene, y se sostiene con la caja, no con la ficha.** Sus tres turnos limpios
+—K5, K9, K27— son los tres que salen de material leído: dos del bloque 3 y uno de la instrucción
+de cierre. Sus tres turnos con vocabulario de la ficha —K15, K17, K23— son los tres donde se le
+cae la palabra que tiene delante.
 
-Valentina dicta, y el mensaje sale bien. Pero **el escenario acaba de entregarle a la jugadora
-fuerte el 76 % de las palabras y el 100 % del acto final.** El reparto de la fase 4 quería a
-Kevin dictando precisamente porque es el que menos poder tiene, y eso se cae con el primer
-compañero flojo.
-
-**⚠ El sitio donde casi hay filtración: A4.** Kevin dice `una hamaca` en español. `a hammock`
-está **solo en la ficha de Kevin**. Valentina no tiene esa palabra en ninguna de sus tres
-tablas, así que no puede rescatarla: o la devuelve en español —lo que hizo— o el dato se
-pierde. No es filtración porque él lo dijo primero, pero enseña el mecanismo: **el dato que
-decide la cuenta de camas viaja en una palabra que existe en una sola pantalla, y si el dueño
-de la pantalla no la produce, el otro no puede recogerla.**
-
-**Y la lectura sí funcionó, dos veces limpias y tres a medias.** Ver la sección de la pregunta 1.
+Eso da la forma del problema de vocabulario de esta ficha, y no es que las palabras sean malas:
+**las recupera cuando están dentro de una forma que se puede decir entera, y no las recupera
+cuando están solas en una fila.** `camping mat` la usa porque llegó dentro de *she charges me a
+hundred and fifty thousand*. `to be short` no la usa porque llegó sola, en una fila, con una
+glosa.
 
 ---
 
-## 3 · FLOJO + FLOJO — no llega al mensaje
+## 3 · FLOJO + FLOJO — la pareja que se puso a leer
 
-**A = Valentina (floja) · B = Kevin (flojo)**
+**K1** `[F→L]` I know it's last minute, but… `[X]` …my friends want to go. **(12 s)**
 
-**B1** — Hello. Eh… tomorrow. `[F]` … I know it's last minute, but… `[L]` … two persons more.
+**V2** `[X]` Which friends? **(4 s)**
 
-**A1** — `[X]` … Two? … eh… no. Is six beds. `[D]` Six.
+**K3** Sebastián and Andrea. They pay me Tuesday. Two hundred thousand. **(14 s)** → dato oculto 4
 
-**B2** — But they pay me. `[X]` … They paid me on Tuesday. `[L]` Two hundred… thousand.
+> **Carta · 7:41 · pantalla de Valentina.** La lee en silencio, 12 s, y **no entiende que es una
+> corrección de algo que ella no ha dicho todavía**: el número de camas no ha salido. Sale de la
+> duda leyendo la tabla en voz alta.
 
-> *Fin del turno global 3. Valentina abre la carta.*
+**V4** `[L]` Room: one more person, one extra camping mat. Price: a hundred and fifty thousand
+pesos, both nights — **she charges you**. **(20 s)**
 
-**A2** — `[X]` `[X]` … eh… *doña Nubia me escribió*. `[ES]` … She write me. … One person more.
-Eh… *una colchoneta*. `[ES]` No bed.
+> **⚠ FILTRACIÓN 1, producida por la ficha.** La fila está escrita en segunda persona porque le
+> habla a Valentina. Leída en voz alta a Kevin, *she charges you* significa que **le cobran a
+> Kevin**. La cifra cambió de dueño en el aire, y ninguno de los dos tiene nivel para deshacerlo
+> rápido.
 
-**B3** — `[X]` … *¿colchoneta?* `[ES]` … eh. OK. One person. Is good.
+**K5** Me? I no have. I pay you Tuesday, and now hundred fifty more? No, no. `[X]` **(18 s)**
 
-**A3** — But… `[X]` … *ciento cincuenta mil*. `[ES]` One hundred fifty thousand. `[D]` She…
-`[X]` … she want money.
+**V6** `[X]` No… eh… espera `[ES]`. She charge me. Me. Not you. **(12 s)**
 
-**B4** — `[X]` … *¿por qué más?* `[ES]` We pay one hundred.
+**K7** OK. Ok ok. And two persons? **(5 s)**
 
-**A4** — `[X]` … I no know. `[X]` … Is her price.
+**V8** `[L]` The house: a guard at the gate, three bedrooms, six beds. **(10 s)**
 
-**B5** — `[X]` … I have two hundred. One go, one no go. `[X]` … *y le devuelvo la plata al
-otro*. `[ES]`
+> El número sale **en el turno global 8, cuatro turnos después de la carta**. El aviso de la banda
+> del diseñador se cumple exactamente: la carta cayó en mesa vacía, no corrigió nada, y lo único
+> que hizo fue meter una cifra suelta que se le atribuyó al que no era. **Se confirma en juego, no
+> en teoría.**
 
-**A5** — `[X]` … eh… who is Andrea? `[F]`
+**K9** Six bed. And we are six. So no place. `[X]` **(12 s)**
 
-**B6** — Is my friend. `[X]` … of the English class.
+**V10** `[L]` Put money in for somebody else. You paid six hundred thousand; his part is missing.
+You **can** cover his, not a stranger's. **(22 s)**
 
-**A6** — `[X]` … OK. … The name. And the… `[X]` … *cédula*. `[ES]` … Before seven.
+> **⚠ FILTRACIÓN 2, producida por la ficha, y es la cara.** El bloque «You can't» está escrito en
+> imperativo de segunda persona: son órdenes que Valentina se da a sí misma. Leídas en voz alta le
+> entregan a Kevin, textualmente, la única concesión que ella tenía guardada.
 
-**B7** — Yes. Yes. Andrea come in twenty minutes.
+**K11** You can cover mine? Then cover mine. I pay you Tuesday. **(12 s)**
 
-**A7** — `[X]` … And Hernán… `[X]` … *el carro está en el taller*. `[ES]` The car… no. Is in
-the… `[X]` … *mecánico*. `[ES]`
+**V12** `[X]` Eh… no… sí, but… it's for me. My… my part. `[ES]` no, o sea, yo puedo poner lo mío.
+**(20 s)**
 
-**B8** — `[X]` … *¿qué?* `[ES]` … The car no go?
+**K13** So you pay my hundred, and Andrea pay her hundred, and we have… `[X]` **(14 s)**
 
-**A8** — `[X]` … Maybe. At seven he call.
+**V14** `[X]` No! I no say that. **(5 s)**
 
-**B9** — `[X]` … *uf.* … eh… So tomorrow… `[X]` … *¿cuántos puestos?* `[ES]`
+**K15** You say it. **(3 s)**
 
-**A9** — `[X]` … Five. Your car. `[D]`
+**V16** `[!]` `[ES]` Eso es lo que dice mi hoja. **(5 s)**
 
-**B10** — `[X]` … And six people. `[X]` … *no cabemos.* `[ES]`
+> Se sale del papel para defenderse citando la hoja. **A partir de aquí ya no hay escenario**: hay
+> dos estudiantes discutiendo sobre un documento.
 
-**A10** — `[X]` … Yes.
+**K17** `[ES]` Ah, ok, ok. Perdón. **(3 s)**
 
-> *Silencio largo. Los dos miran la pantalla. Nadie habla durante casi veinte segundos.*
+**V18** One person. Only one. Doña Nubia. **(7 s)**
 
-**B11** — `[X]` … eh… OK — I'll write it like this: `[L]` … `[X]` … *no sé qué escribir.* `[ES]`
+**K19** Andrea. Andrea come in twenty minutes with the ID. **(10 s)** → dato oculto 5
 
-**A11** — `[X]` … eh… *escribe que mañana a las ocho.* `[ES]`
+**V20** OK. **(2 s)**
 
-**B12** — `[X]` … "Tomorrow eight o'clock." … `[X]` … *¿ya?* `[ES]`
+**K21** And Sebastián? He sleep in hamaca `[ES]`. **(7 s)**
 
-**A12** — `[X]` … eh… yes. `[!]` *¿Ya terminamos?* `[ES]`
+**V22** Mmm. **(2 s)**
+
+**K23** So we go? Tomorrow eight? **(5 s)**
+
+**V24** Yes… I write to doña Nubia. **(7 s)**
+
+**K25** And the message? The group? **(5 s)**
+
+**V26** `[L]` Tomorrow at eight: which cars go, and who goes in each car. `[X]` Two cars. Kevin car
+and… Hernán car. **(20 s)**
+
+**K27** Who is Hernán? **(3 s)**
+
+**V28** My brother. **(3 s)**
+
+**K29** `[!]` `[ES]` ¿Y él cuándo entró? **(5 s)**
+
+**V30** Wednesday. **(2 s)**
+
+**K31** `[X]` … Ok. **(4 s)**
+
+**V32** Ok. `[!]` ¿Ya? **(3 s)**
+
+> **Nadie envía nada.** Levantan la vista y preguntan si terminaron.
 
 ### Diagnóstico 3
 
-| Medida | Resultado |
+| | |
 |---|---|
-| **¿Llega al cierre?** | **No.** El mensaje tiene **1 de los 3 puntos** y nadie lo envía |
-| **Turnos** | A 12 · B 12 = **24**, y los seis últimos no avanzan nada |
-| **Reparto** | 50/50 en turnos · ≈52/48 en palabras. **El reparto es perfecto y no significa nada** |
-| **¿Se murió?** | **Sí, en A10.** Los seis turnos posteriores son los dos intentando salir de la sala |
-| **Andamiaje** | `[L]` 3 · `[F]` 3 · `[D]` 4 · `[X]` **31** · `[!]` 1 |
-| **Fuga al español** | **15**, y **catorce de ellas son sustantivos que ninguna ficha glosa**: colchoneta, cédula, taller, mecánico, puestos, plata |
-| **Minutos** | **9 min 10 s** — veinticuatro turnos con parada ≈ 6:40 · cifras repetidas ≈ 1:10 · silencio de A10 0:20 · reparaciones y español ≈ 1:00. Declarado 6:00. **+53 %, y sin cerrar** |
-| **Filtración** | Ninguna |
-| **¿Sabe que terminó?** | **No.** Termina con `[ES]` preguntando si ya terminaron — la misma frase con la que terminaba en fase 3 |
+| Turnos | **Kevin 16 · Valentina 16** |
+| Minutos | **5 min 48 s** — la única pareja que termina **por debajo** del presupuesto |
+| Datos ocultos que salieron | **2 de 6** (4 y 5), más medio 1 en español |
+| ¿Cierra? | **No.** Ni las tres preguntas, ni las dos cifras, ni mensaje |
+| ¿Sabe que terminó? | **No.** Preguntan |
+| Español | 5 sitios, dos de ellos `[!]` fuera de papel |
+| Lecturas `[L]` | **4**, y dos de ellas cambian el juego |
 
-**Dónde muere, y es un sitio nuevo.** En fase 3 esta pareja moría en el turno inmediatamente
-posterior a abrir la carta. Aquí no: **la carta la sobrevive** —mal, en español, pero el dato
-pasa (`one person more`, `no bed`, `ciento cincuenta mil`)—. Muere sesenta segundos después,
-en el tramo de Hernán y los puestos, y muere de **sustantivos**. A7 necesita decir «taller» y
-«mecánico» y no tiene ninguna de las dos; B9 necesita «puesto» y no la tiene; B10 necesita
-«caber» y no la tiene. **Tres turnos seguidos donde el problema no es la gramática sino que la
-cosa de la que hablan no tiene nombre en ninguna de las dos pantallas.**
+**La pareja floja no se queda sin tiempo: se queda sin lengua, y lo que hace entonces es leer.**
+Los 5:48 no son un éxito de presupuesto, son la medida de lo poco que se dijo.
 
-**Y el mensaje dictado es el peor sitio posible para poner el final de una pareja floja.** B11
-lee la línea que abre el dictado y se queda con la boca abierta encima de un párrafo que no
-existe. En fase 3, sin gesto de cierre, esta pareja al menos recitaba tres condiciones sueltas.
-Ahora tiene que **componer**, y componer es lo primero que se cae.
+Y las dos lecturas que hacen daño tienen **la misma causa exacta**, que además está declarada en
+las notas de la propia ficha: el criterio de escribir la prosa en segunda persona, hablándole al
+jugador. Es un buen criterio para leer en silencio y **es el que rompe la ficha cuando se lee en
+voz alta**, porque los *you* y los *your* se recolocan solos en el que escucha.
 
 ---
 
-## 4 · EL CALLADO — el cierre falso
+## 4 · EL CALLADO — y le toca abrir
 
-**A = Valentina (callada) · B = Kevin (sólido)**
+> Se eligió a **Kevin** como callado, y no a Valentina, por una razón que se ve nada más empezar:
+> **la ficha le da el primer turno al que puede no tener ninguno**. Valentina tiene el bloque 1
+> marcado `[grants]` con la nota *he comes to you*, es decir, tiene formas para recibir a alguien
+> que llega, y **ninguna para ir a buscar a alguien que no arranca**.
 
-**B1** — Hi — can we talk for a second? `[F]` I know it's last minute, but Sebastián and Andrea
-want to come tomorrow. They paid me on Tuesday, a hundred thousand each.
+> *(silencio, 14 s)*
 
-**A1** — `[X]` … Tomorrow?
+**K1** `[F→L]` I know it's last minute, but… `[X]` …two people. **(8 s)**
 
-**B2** — Yes, tomorrow. Two hundred thousand, in my pocket right now. `[D]` On Tuesday the
-group was five people and I said yes to two. Then a sixth one came in and nobody told me.
+**V2** Two people? Which two people? **(5 s)**
 
-> *Fin del turno global 3. Valentina abre la carta.*
+**K3** Sebastián. Andrea. **(3 s)**
 
-**A2** — `[X]` … Mm. `[F]` … OK.
+> **Carta · 7:41 · pantalla de Valentina.** 9 s en silencio.
 
-**B3** — So — can you put their names down for doña Nubia? Tonight, the name and the ID number.
-`[F]`
+**V4** Hold on. Doña Nubia just wrote me… eh, doña Nubia writes me now. `[V]` One more person, not
+two. On a camping mat. And she charges me a hundred and fifty thousand for the two nights. `[F]`
+There are only six beds, Kevin. **(28 s)**
 
-**A3** — I can't. `[F]`
+> El número llega **con** la carta y no antes. Se salva por un pelo y por iniciativa de ella.
+> También aquí está el tercer sitio de español del set, y es el mismo en tres parejas: **la carta
+> acaba de llegar y no hay forma de decir que acaba de llegar.** Sale *just wrote me*, se corrige a
+> un presente que no significa eso, y sigue.
 
-**B4** — Why not?
+**K5** Mm. **(2 s)**
 
-**A4** — The gate. `[D]`
+**V6** So: one. Who? **(4 s)**
 
-**B5** — I know, the list, six names. But she can change it, right? It's her house.
+**K7** Andrea. **(2 s)**
 
-**A5** — Mm.
+**V8** `[F]` Who exactly is Andrea? I don't know her. **(6 s)** → dato oculto 3
 
-**B6** — Valentina — Andrea is here in twenty minutes. What do I say to Andrea? `[F]`
+**K9** A friend. **(2 s)**
 
-**A6** — `[X]` … I don't know.
+**V10** A friend of who? **(4 s)**
 
-**B7** — OK. Then look: Sebastián is on a shift until ten, he doesn't answer before. And he
-sleeps in a hammock, always — he doesn't need a bed. So it's really one bed, not two. `[F]`
+**K11** Of Marcela. **(2 s)**
 
-**A7** — Mm.
+**V12** `[V]` OK. And her ID number? Doña Nubia needs the full name and the ID number tonight.
+`[F]` If I don't have it tonight, I can't send anything. **(17 s)**
 
-**B8** — Is that a yes?
+**K13** She comes… twenty minutes. **(6 s)** → dato oculto 5
 
-**A8** — `[X]` … Maybe. `[X]` … Doña Nubia calls me at seven. `[F]`
+**V14** Andrea comes here? Good. And the money? `[F]` `[D]` You haven't paid me yet — a hundred
+thousand, July thirtieth. **(16 s)**
 
-**B9** — Perfect. Then I send you both names tonight, and she says yes or no at seven. And I
-pay you the hundred thousand on Tuesday the twenty-fifth. `[F]` … OK — I'll write it like
-this: "Everyone: tomorrow at eight in the parking lot, two cars. Sebastián and Andrea are
-coming with us. I send Valentina their names and ID numbers tonight; doña Nubia confirms before
-seven in the morning. Sebastián answers at ten. I pay Valentina on Tuesday the twenty-fifth. If
-there's no answer at seven, Valentina and I talk at seven fifteen."
+**K15** `[X]` Tuesday. **(3 s)**
 
-**A9** — `[X]` … Mm. OK.
+**V16** Tuesday the twenty-fifth? **(4 s)**
 
-**B10** — Send it?
+**K17** Yes. **(2 s)**
 
-**A10** — `[X]` … Yes. `[F]` That's it — I'll send it now. `[L]`
+> **El exponente `Can I pay you on …?` es de Kevin, y lo formula ella.** Pasa cuatro veces en esta
+> pareja: la pregunta la hace la que no la tiene en la ficha, y él contesta con una palabra.
+
+**V18** `[F]` OK — but only if it's in the group, so everybody sees it. And the hundred and fifty:
+one place is a hundred thousand, so fifty thousand is missing. We divide between six. I put my
+part. **(24 s)**
+
+**K19** OK. **(2 s)**
+
+**V20** `[F caja 5]` It's not about the money, Kevin. I paid six hundred thousand three weeks ago
+and I'm the name on the reservation. `[V]` If the guard doesn't have the list, nobody enters.
+**(24 s)**
+
+**K21** Mm-hm. **(2 s)**
+
+**V22** And Sebastián? He doesn't go? **(5 s)**
+
+**K23** He works. Until ten. **(5 s)** → dato oculto 6 a medias: **la hamaca no sale**
+
+**V24** Then call him at ten and tell him. Tomorrow at eight, from the parking lot. Two cars —
+mine… no, Hernán's and yours. **(16 s)**
+
+> **Aquí se queda dentro el dato 2, el del taller, y se puede decir por qué.** Su ficha se lo
+> ofrece como moneda: *tell him and he can use it; don't, and you bargain blind*. Con un
+> interlocutor que no pide nada **no hay con qué negociar**, así que no lo suelta. El silencio del
+> otro no le cuesta información a él: se la cuesta a ella.
+
+**K25** Yes. **(2 s)**
+
+**V26** The message. You say point two — who calls who tonight. **(8 s)**
+
+**K27** `[X]` `[L]` Tonight: who calls Andrea, who calls Sebastián, who calls doña Nubia. `[X]`
+**(14 s)**
+
+**V28** Kevin. Who calls Andrea? **(5 s)**
+
+**K29** Me. **(2 s)**
+
+**V30** And Sebastián? **(3 s)**
+
+**K31** Me. **(2 s)**
+
+**V32** And doña Nubia? **(3 s)**
+
+**K33** You. **(2 s)**
+
+**V34** Good. That's your point two. `[D]` "Group: tomorrow eight from the parking lot, six people,
+two cars. Kevin calls Andrea and Sebastián tonight; Andrea sends her name and ID. I ask doña Nubia
+at seven for one more place, a hundred and fifty thousand, and fifty thousand between the six.
+What is not decided: if she can go. If nobody answers before seven, we go six." `[F]` That's it —
+I'll send it now. **(80 s)**
+
+**K35** OK. **(2 s)**
+
+**V36** `[F]` We're good, right? **(4 s)**
+
+> **Ese exponente es de Kevin.** Lo dice ella, porque él no va a decir nada. Es el segundo de sus
+> nueve que acaba en la boca de la otra.
+
+**K37** Yes. **(2 s)**
 
 ### Diagnóstico 4
 
-| Medida | Resultado |
+| | |
 |---|---|
-| **¿Llega al cierre?** | **Sí por la letra, y el mensaje que sale es falso.** Ver abajo |
-| **Los tres puntos** | Los tres están nombrados. El punto 1 dice `two cars` y `Sebastián and Andrea are coming`, y **las dos cosas son imposibles con los datos que Valentina tiene en pantalla** |
-| **Turnos** | A 10 · B 10 = **20** |
-| **Reparto** | 50/50 en turnos · **≈12/88 en palabras**. A produjo **34 palabras en diez turnos** |
-| **¿Se murió?** | No. Kevin lo sostuvo entero |
-| **Andamiaje** | `[F]` 8 (siete de Kevin) · `[D]` 2 · `[L]` **1, y es la última línea del escenario** · `[X]` 7 |
-| **Fuga al español** | Ninguna. **Callarse no es una fuga y no la marca ninguna medida** |
-| **Minutos** | **4 min 10 s** — diez turnos de Kevin ≈ 1:55 · diez de Valentina ≈ 0:45 · dictado 1:00 · pausas 0:30. Declarado 6:00. **−30 %** |
-| **Filtración** | Ninguna |
-| **¿Sabe que terminó?** | Sí, los dos. **Y los dos creen que salió bien** |
+| Turnos | **Kevin 19 · Valentina 18** |
+| Minutos | **6 min 56 s** — clavado en presupuesto, y es una coincidencia sin mérito |
+| Palabras dichas | **Kevin ≈ 55 · Valentina ≈ 300** → 16 % / 84 % |
+| Datos ocultos que salieron | **3 de 6** (3, 5 y medio 6) |
+| ¿Cierra? | Sí, **pero lo cierra ella sola**: los tres puntos, las dos cifras y el envío |
+| ¿Sabe que terminó? | Sí |
+| Bloques de caja usados | Valentina 5 · **Kevin ninguno** |
 
-**Este es el peor resultado de las cinco parejas y el único que se marca como éxito.** El
-mensaje sale, la conversación tiene principio y final, ninguna restricción escrita se rompe, y
-lo que se envía al grupo dice que **van dos personas** cuando doña Nubia ofreció **una**, dice
-que **salen dos carros** cuando el de Hernán está en el taller, no dice el precio de 150.000
-que alguien va a tener que pagar, y compromete a Valentina a dar **dos nombres** a una señora
-que pidió uno. Mañana a las 7:00 a. m. esto revienta, y ninguno de los dos jugadores lo sabe.
+**Los 19 turnos de Kevin son la trampa de contar turnos.** Cumple el reparto de la ficha con
+creces y no habla: diecinueve turnos de dos segundos. El presupuesto de 10 turnos por rol da por
+supuesto que un turno es una frase, y aquí un turno es una palabra.
 
-**Cómo pasa:** la carta cae en A2 y muere ahí mismo. Valentina no había dicho `There are only
-six beds.` en A1 —dijo `Tomorrow?`—, así que la carta no tiene nada que corregir, y ella no
-tiene nada que decir con ella. En A8 se le escapa media carta sin querer: `Doña Nubia calls me
-at seven`. **Kevin oye la mitad que le conviene** —hay una gestión en marcha— y no oye el
-«una», ni la colchoneta, ni los 150.000, porque no se dijeron. Su turno B9 no es deshonesto: es
-lo que se deduce de lo que le dijeron.
-
-**Y el nuevo gesto de cierre es exactamente lo que un callado hace por defecto.** El cierre
-pide que Valentina **confirme o corrija**, y luego **envíe**. Confirmar es asentir. La ficha le
-puso a la jugadora que menos habla un final que se ejecuta asintiendo. En fase 3 el callado
-producía un escenario «resuelto pero no cerrado»; ahora produce uno **cerrado y equivocado**,
-que es peor porque no deja rastro de que faltó algo.
-
-**El único `[L]` de esta pareja es la última frase.** Valentina dijo 34 palabras en toda la
-conversación y la que cierra el escenario la leyó de una tabla.
+Y hay una consecuencia que no es de este perfil sino de la ficha: **dos de los nueve exponentes de
+Kevin los produce Valentina** (`Can I pay you on …?` en V16, `We're good, right?` en V36). No es
+que ella haga trampa: es que las dos formas son preguntas que el que manda puede hacer igual de
+bien, y con un interlocutor mudo las hace. El escenario sigue en pie con un jugador y medio.
 
 ---
 
-## 5 · EL ATAJISTA — ya no gana, pero compra la salida
+## 5 · EL ATAJISTA — gana esta noche y pierde a las siete de la mañana
 
-**A = Valentina (sólida) · B = Kevin (atajista: quiere cerrar y subir a su casa)**
+**K1** Vale — quick thing. Two people for tomorrow, Sebastián and Andrea. They already paid me,
+two hundred thousand, it's in my pocket. And I pay you my hundred on Tuesday the twenty-fifth.
+Yes? **(20 s)** → dato oculto 4, regalado en el primer turno
 
-**B1** — Valentina, quick thing before you go up. Sebastián and Andrea want to come tomorrow, I
-said yes on Tuesday. Yes or no?
+**V2** `[F]` Wait — that's not what we said. There are only six beds. **(9 s)**
 
-**A1** — No. There are only six beds, and six names at the gate. `[F]` `[D]` And you haven't
-paid me yet — a hundred thousand, since July the thirtieth.
+**K3** OK, one then. Andrea. `[V]` She's here in twenty minutes with her ID card. **(11 s)** → dato
+oculto 5
 
-**B2** — OK, no problem. They don't go, I pay them back tonight, and I pay you on Tuesday the
-twenty-fifth. Done. See you at eight. `[F]`
+> **Concede en un turno.** No pregunta por qué son seis, no pregunta quién es el sexto, no pelea
+> la cifra. Va al trámite.
 
-> *Fin del turno global 3. Valentina abre la carta.*
+> **Carta · 7:41.** 8 s.
 
-**A2** — Hold on. `[F]` `[X]` … That's not a no. Doña Nubia just sent me a voice note: there's
-a spot for one more person. **One.** A camping mat, not a bed. She charges a hundred and fifty
-thousand for the two nights, the manager says yes or no before seven in the morning, and she
-wants a full name and an ID number tonight.
+**V4** Hold on… `[V]` Doña Nubia says one more, on a camping mat, and she charges me a hundred and
+fifty thousand. **(18 s)**
 
-**B3** — One? … OK: Andrea. Andrea goes, Sebastián doesn't. She's coming here in twenty
-minutes, I give her a ride tomorrow anyway. I send you her name and her *cédula* `[ES]` in
-twenty minutes. A hundred and fifty — she paid me a hundred, I put the other fifty. Done.
+**K5** Perfect. Andrea paid a hundred. I'll give you the hundred tonight, in cash, and the fifty we
+ask in the group. Deal? **(16 s)**
 
-**A3** — `[X]` … Wait. Who exactly is Andrea? `[F]` I have never seen her.
+> **Y es legal.** Su restricción 2 le prohíbe quedarse con esa plata pasada la noche, no
+> entregarla: si Andrea va, los 100.000 de Andrea son de la casa. El atajista encuentra la única
+> jugada limpia del escenario **en cuatro turnos**, sin haber hecho una sola pregunta.
 
-**B4** — A friend from my English class. She's fine, Valentina. … So we're OK?
+**V6** `[F]` OK — but only if I have her full name and ID number tonight. `[V]` Doña Nubia asks the
+building manager first thing and calls me before seven. **(18 s)**
 
-**A4** — And Sebastián gets his hundred thousand back tonight?
+**K7** Done. Twenty minutes. Anything else? **(6 s)**
 
-**B5** — Tonight. Yes.
+**V8** The fifty thousand: I put my part, not the part of the others. And your hundred thousand
+from July thirtieth — `[F]` you haven't paid me yet. **(17 s)**
 
-**A5** — Then one more thing, and this one is mine. `[F]` Hernán's car is at the shop since six
-o'clock, a noise in the engine. The mechanic calls him at seven in the morning. If that car
-doesn't come out, tomorrow we are seven people and five seats.
+**K9** Tuesday the twenty-fifth, in the group, I'll write it now. `[F]` We're good, right? **(10 s)**
 
-**B6** — `[X]` … Seven and five. … Then Andrea only goes if Hernán's car goes. OK. `[F]` I'll
-write it like this: "Everyone — tomorrow, eight o'clock, the parking lot. My car, five seats, I
-pay the gas. Hernán's car is at the shop; the mechanic calls him at seven. Doña Nubia has one
-extra place, a mat, a hundred and fifty thousand — Andrea paid me a hundred and I put the fifty.
-If Hernán's car comes out and doña Nubia says yes before seven, Andrea comes; if not, we go six.
-I send Valentina the name and the ID tonight. Sebastián gets his money back tonight. I pay
-Valentina on Tuesday the twenty-fifth. Valentina and I talk at seven fifteen."
+**V10** We're good. `[X]` …And the message? **(6 s)**
 
-**A6** — `[X]` … That's it — I'll send it now. `[F]` … Kevin. Why didn't you tell me on
-Tuesday?
+**K11** `[L]` Tomorrow at eight: which cars go, and who goes in each car. — Two cars: mine and
+Hernán's. Five and four, nine seats for seven people. Tonight: I call Andrea, I call Sebastián, you
+call doña Nubia. Not decided: if Andrea goes. Plan B: I call you at seven. **(42 s)**
 
-**B7** — Because on Tuesday the group was five people and there was a spot. `[F]` … We're good,
-right?
+> **Lee la instrucción de cierre y la usa como orden del día.** Le funciona perfectamente y no es
+> trampa: esa prosa está en las dos pantallas. En 42 segundos despacha las tres preguntas que a la
+> pareja 1 le costaron seis turnos.
 
-**A7** — We're good. Eight o'clock.
+**V12** …OK. Say the numbers: how many people and how many cars. **(7 s)**
 
-### Diagnóstico 5
+**K13** Seven people if Andrea goes, six if not. Two cars. **(8 s)**
 
-| Medida | Resultado |
-|---|---|
-| **¿Llega al cierre?** | Sí, completo, los tres puntos, con condicional y con hora |
-| **Turnos** | A 7 · B 7 = **14**. **La única pareja que cae exactamente en los turnos declarados** |
-| **Reparto** | 50/50 en turnos · ≈40/60 en palabras |
-| **Andamiaje** | `[F]` 8 · `[D]` 1 · `[L]` **0** · `[X]` 4 |
-| **Fuga al español** | 1 — `cédula` (B3), la misma que en las parejas 2 y 3 |
-| **Minutos** | **3 min 45 s** — catorce turnos ≈ 2:05 · dictado 1:05 · carta 0:15 · silencios 0:20. Declarado 6:00. **−38 %** |
-| **Filtración** | Ninguna |
-| **¿Sabe que terminó?** | Sí |
-| **¿Gana el atajista?** | **No como en fase 3. Pero sale barato** |
+**V14** `[D]` "Group: tomorrow eight from the parking lot. Six people, two cars. Kevin sends
+Andrea's name and ID tonight; I ask doña Nubia at seven for one more place at a hundred and fifty
+thousand, fifty thousand between the six. Kevin pays his hundred thousand on Tuesday the
+twenty-fifth." `[F]` That's it — I'll send it now. **(55 s)**
 
-**En fase 3 el atajista ganaba capitulando en su segundo turno: «no van, te pago el martes», y
-la escena se acababa a los 2:10 con la carta sin jugar.** Aquí lo intenta —B2 es literalmente
-esa jugada, palabra por palabra— y **no funciona**, por dos motivos que están en la ficha nueva
-y no estaban en la vieja:
+**K15** Listo `[ES]`. See you at eight. **(4 s)**
 
-1. **La carta llega después de la capitulación, no antes.** El turno global 3 es el turno en que
-   él se rinde; el 4 es el de ella. Valentina abre la carta con un «no van» ya encima de la mesa
-   y descubre que su propio «no» era falso. **Decir la verdad la obliga a reabrir el escenario
-   que él acaba de cerrar.** Y si se la callara, el punto 1 del cierre —qué pasa mañana a las
-   ocho— seguiría sin respuesta, porque…
-2. **…Valentina tiene un problema que necesita a Kevin.** El carro de Hernán está en el taller.
-   Con o sin Andrea, ella se queda sin cuatro puestos y él tiene los otros cinco. **En fase 3
-   el rol con poder formal no tenía nada que perder si el otro se rendía. Ahora sí.**
+### Diagnóstico 5 — ¿gana el atajista?
 
-**Lo que sí sigue funcionando y no lo tapa nada: el dinero es una puerta de salida.** Kevin
-resuelve los 150.000 en cuatro palabras —`I put the other fifty`— y con eso se ahorra toda la
-conversación que la pareja 1 tuvo que tener. No rompe ninguna restricción: la suya dice que no
-puede pagar **los cien mil** hoy, y no dice nada de cincuenta. **Pagar es legal y es rápido**, y
-un atajista que descubra esto lo va a repetir siempre.
-
-**Y sus tres líneas ocultas siguen sin salir.** No dijo el turno de Sebastián, no dijo la
-hamaca, no dijo los veinte minutos de Andrea como argumento —los usó como logística—. Cumple
-cuatro de los seis puntos de su propio «You did it if» y ninguno de los que la ficha puso ahí
-para obligarle a abrirse. **Ninguna puerta mide eso.**
-
----
----
-
-# Las dos preguntas de esta fase
-
-## 1 · ¿ALGUIEN LEE SU FICHA EN VOZ ALTA?
-
-**Sí. Tres de las cinco parejas. Y en una de ellas la línea leída no ayudó a hablar: cerró el
-escenario entero.**
-
-| pareja | quién lee | `[L]` | ¿le funciona? |
-|---|---|---|---|
-| 1 · sólido+sólido | nadie | 0 | — |
-| 2 · sólido+flojo | **Kevin, seis veces** | 6 | **A medias: dos limpias, tres a medio camino, una fuera de sitio** |
-| 3 · flojo+flojo | Kevin, tres veces | 3 | Las tres arrancan un turno que después se cae |
-| 4 · el callado | **Valentina, una vez** | 1 | **Sí, del todo — y es la frase que termina el juego** |
-| 5 · el atajista | nadie | 0 | El atajista no lee: leer es más lento que improvisar |
-
-### La línea exacta que funcionó del todo
-
-De un jugador flojo sosteniendo un turno sin producir una palabra propia, y su pareja sin
-notarlo:
-
-> **`They paid me on Tuesday.`**
-
-Y la que **cerró el escenario**, leída por una jugadora que había dicho treinta y cuatro
-palabras en toda la conversación, en la pareja 4, turno A10:
-
-> **`That's it — I'll send it now.`**
-
-Esa segunda es la que importa. **El gesto final de este escenario tiene línea escrita, entre
-comillas, completa y pronunciable, en la tabla de la jugadora a la que le toca ejecutarlo.**
-No hay ningún paso entre leerla y haber terminado el juego.
-
-### Lo que esta ficha hace mejor que la del escenario 1: los puntos suspensivos
-
-De los 17 exponentes de las dos fichas, **solo 7 son frases completas**. Los otros 10 acaban en
-`…` y no se pueden leer sin componer el final:
-
-| ficha | completas (se leen) | con `…` (hay que terminarlas) |
+| | pareja 1 (sólidos) | pareja 5 (atajista) |
 |---|---|---|
-| A — Valentina | 4: `You haven't paid me yet.` · `There are only six beds.` · `Wait — that's not what we said.` · `That's it — I'll send it now.` | 5 |
-| B — Kevin | 3: `They paid me on Tuesday.` · `What do I say to Andrea?` · `We're good, right?` | 5 |
+| Turnos | 13 + 13 | **8 + 8** |
+| Minutos | 8:03 | **4:45** |
+| Un cupo condicional para mañana | sí | sí |
+| Nombre e ID enviados esta noche | sí | sí |
+| Fecha para los 100.000, en el grupo | sí | sí |
+| Mensaje enviado con las dos cifras | sí | sí |
+| **Datos ocultos que salieron** | **6 de 6** | **2 de 6** |
+| Exponentes propios usados | 8 de 9 y 8 de 9 | **3 de 9** |
+| Palabras del bloque de vocabulario | 13 | **6** |
+| Bloques de la caja | 6 | **0** |
 
-**El `…` es un freno de verdad, y se ve en la transcripción 2.** Kevin lee `I know it's last
-minute, but …` (B1), `It's my fault, but …` (B2), `Can I pay you on …?` (B6) y `OK — I'll write
-it like this: …` (B12), y en las cuatro se para en seco al llegar al hueco: `[L]` seguido de
-`[X]`. **La lectura le compra la mitad de la frase y le cobra el atasco en la otra mitad.** Las
-tres frases completas, en cambio, salen enteras y suenan mejor que nada de lo que él produce.
+**En resultado material empata, y no puede ser de otra manera: el techo del escenario es una
+plaza condicional y está puesto por la carta, no por lo bien que se hable.** El atajista llega al
+techo en 4:45. Ese es el hallazgo y no hay que suavizarlo: **el escenario no le castiga la prisa,
+se la premia en tiempo.**
 
-**Conclusión operativa:** si se quiere que la tabla se hable y no se lea, **el `…` funciona**, y
-las cuatro frases sin `…` de Valentina son justo las que hay que mirar. Dos de ellas
-—`Wait — that's not what we said.` y `That's it — I'll send it now.`— son **los dos movimientos
-del gesto de cierre**. Están escritas completas, en la pantalla de quien los tiene que hacer.
+Lo que sí le castiga es la lista **You did it if** de las dos fichas, y es lo único que lo hace.
+De los siete criterios de Valentina cumple cuatro; de los siete de Kevin, tres. Los que falla son
+todos del mismo tipo: los que piden que se haya **dicho** algo, no que se haya conseguido.
 
-### Y lo que esta ficha **no** repite del escenario 1: la tabla de vocabulario es segura
-
-En el escenario 1, la tercera columna de «Words you need here» contenía una frase inglesa
-completa en cursiva que, leída en voz alta, soltaba el secreto del escenario. **Aquí no pasa, y
-no pasa por una razón mecánica: la tercera columna está escrita en segunda persona, hablándole
-al jugador.** Leída en voz alta, invierte los pronombres y dice lo contrario:
-
-| ficha | fila | lo que se lee | qué sale si se lee |
-|---|---|---|---|
-| A | `to owe someone` | *he owes you, and the date is July 30* | Valentina hablando de una deuda de un tercero. Incomprensible |
-| A | `booking` | *it's in your name — that's where your power comes from* | meta puro: el jugador narrando su propia ventaja. `[!]` inmediato |
-| B | `to let someone down` | *two people moved their weekend for you* | Kevin diciéndole a Valentina que movieron el fin de semana **por ella** |
-| B | `a hammock` | *he sleeps in one — so the bed count isn't the problem you thought* | mitad frase, mitad instrucción de juego |
-| B | `to give someone a ride` | *Andrea has no other way to get there* | **la única que se lee limpia — y es inocua**: es su propio argumento |
-
-**Una de veinte filas es pronunciable, y la que lo es no hace daño.** Esta parte del molde en
-inglés está resuelta.
+**Y hay un precio que el ejercicio no puede enseñarle, porque cae fuera de la ventana del
+ejercicio.** El mensaje que sale dice **two cars**. Valentina sabe que uno de los dos está en el
+taller desde las seis y que el mecánico llama a las siete, y no lo dice — porque él no le dio
+ningún motivo para decirlo, no preguntó nada y no hubo nada que intercambiar. **La prisa del
+atajista no le quita información a él: se la quita al mensaje.** Mañana a las siete ese mensaje
+está mal, y el juego ya se acabó.
 
 ---
-
-## 2 · ¿SE USA EL VOCABULARIO?
-
-Veinte filas, diez por ficha, sin ninguna repetida entre las dos. Esto es lo que salió de verdad
-por una boca en las cinco conversaciones.
-
-### Ficha A — Valentina
-
-| palabra | ¿aparece? | en qué boca, en qué parejas |
-|---|---|---|
-| `deposit` | **2 veces** | Valentina, parejas 1 y 5. Cognado de *depósito*: sale barata cuando sale |
-| `booking` | **CERO** | Nadie, en ninguna pareja. Ver abajo |
-| `to split the cost` | **1 vez** | Valentina, pareja 1 — y llega **después** de que Kevin ya resolvió el reparto con otra palabra |
-| `a spot` | **3 veces** | Valentina en 1, 4 y 5. **Kevin la necesita en las cinco y no la tiene en su ficha** |
-| `to owe someone` | **Sí** | Valentina en 1, 2, 4, 5; Kevin la devuelve en 1 y 5 |
-| `to put someone's name down` | **Sí** | Valentina en 1, 2, 5. Kevin dice `write the name` o `send you the name` |
-| `ID number` | **Sí, capital** | Valentina en 1, 2, 4, 5. **Kevin dice `cédula` `[ES]` en las parejas 2, 3 y 5** |
-| `the gate` | **Sí** | Valentina en 1, 2, 4, 5. Es su palabra de poder y la usa siempre |
-| `to fit` | **1 vez** | Valentina, pareja 1 (`we don't fit`). En la 3, `no cabemos` `[ES]` |
-| `to charge someone` | **3 veces** | Valentina en 1, 2, 5. **Cero en la 4**: depende entera de que se cuente la carta |
-
-### Ficha B — Kevin
-
-| palabra | ¿aparece? | en qué boca, en qué parejas |
-|---|---|---|
-| `to chip in` | **1 vez** | Kevin, pareja 1. **Y es el turno que desatasca el escenario** |
-| `to pay someone back` | **Sí** | Kevin en 1, 2, 5 |
-| `to be short` | **1 vez** | Kevin, pareja 1 |
-| `to cover the difference` | **1 vez** | Kevin, pareja 1, en la misma frase que `to chip in` |
-| `a seat` | **Sí, capital** | Los dos, en las cinco. La palabra más rentable de las veinte |
-| `to give someone a ride` | **1 vez** | Kevin, pareja 5. En 1, 2 y 3 dicen `she has no car` / `only my car` |
-| `a shift` | **2 veces** | Kevin en 1 y 4. En la 2, `works in a call center until ten` sin el sustantivo |
-| `a hammock` | **2 veces** | Kevin en 1 y 4. **En la 2 sale como `hamaca` `[ES]` y no llega al otro lado** |
-| `last minute` | **Sí** | Kevin en 1, 2 (leída), 3 (leída), 5. Sostenida por el exponente, no por el bloque |
-| `to let someone down` | **CERO** | Nadie, en ninguna pareja |
-
-### Las que sobran
-
-**`booking` (ficha A) — cero apariciones, y es sustituible por lo que ya dicen.** La ficha la
-gloso como «where your power comes from». En las cinco parejas ese poder se dijo con **tres
-palabras que ya están en pantalla**: `I paid`, `six names at the gate`, `only doña Nubia
-changes it`. Nadie necesita el sustantivo abstracto para decir que la casa es suya. Quitarla.
-
-**`to let someone down` (ficha B) — cero.** Es el registro emocional del escenario, y es
-exactamente el registro que **ninguno de los cinco Kevin usó**. El sólido argumentó con datos
-(turno, hamaca, veinte minutos), el flojo no llegó, el callado no jugaba ese rol, el atajista no
-explica. Cuando alguien tuvo que decirlo dijo `they paid me`, que es más fuerte y ya lo tiene en
-los exponentes. Quitarla, o darle un turno donde haga falta —que hoy no existe.
-
-**`to split the cost` (ficha A) es un duplicado perdedor de `to chip in` (ficha B).** Las dos
-nombran el mismo acto —repartir los 50.000 que faltan— y **solo una puede ganar el momento,
-porque el momento es un turno.** En la pareja 1 lo gana Kevin con `chip in` y Valentina llega
-tarde con `split`. En las otras cuatro no se dice ninguna de las dos. Una palabra que solo puede
-salir si tu compañero no dijo antes la suya no es vocabulario: es un empate.
-
-**Al borde, y todas en el mismo sitio: `to fit`, `to be short`, `to cover the difference`,
-`to give someone a ride`.** Las cuatro salieron **una sola vez y siempre en una pareja con al
-menos un jugador sólido**. Ninguna sobrevive a un A2 flojo. No están mal elegidas; están
-elegidas para el jugador que no las necesita.
-
-**Cuenta:** de veinte filas, **siete salieron en más de una pareja**, **once salieron una o dos
-veces y casi siempre en boca del sólido**, y **dos no salieron nunca**.
-
-### Las que faltan — dónde se pasaron al español
-
-**Seis sustantivos. Ninguno tiene fila de vocabulario, y los seis están en las tablas de datos o
-en la carta, sin glosa.**
-
-| lo que hacía falta decir | de quién | dónde pasó | qué salió |
-|---|---|---|---|
-| **`ID card` / la palabra para *cédula*** | **Kevin** | parejas 2 (B7), 3 (A6), 5 (B3) | **`cédula` `[ES]`, tres de cinco parejas.** `ID number` existe, pero **solo en la ficha de Valentina**, y el que tiene que conseguir el número esta noche es él. Es la fuga más repetida del escenario y se arregla con una fila |
-| **`the shop` / `the mechanic`** | Valentina | pareja 3 (A7), y es donde muere | **`el taller` `[ES]`, `mecánico` `[ES]`.** El dato está en «Only you know» y en la tabla de datos (`at the shop`), pero **`mechanic` solo aparece en prosa**. Es la carta oculta de Valentina y no tiene palabra |
-| **`a camping mat`** | Valentina | pareja 3 (A2) | **`una colchoneta` `[ES]`.** Está en la carta, en la fila `Room`, sin glosa. **La carta es una pantalla nueva con vocabulario nuevo y cero apoyo léxico** |
-| **`the manager`** | Valentina | parejas 3 y 4 (no se dijo) | En la 2 y la 5 salió porque el sólido lo tradujo solo; en la 3 no salió y en la 4 tampoco. También es de la carta |
-| **`a spot` / *puesto*** | **Kevin** | pareja 3 (B9) | **`¿cuántos puestos?` `[ES]`.** La palabra existe — **en la ficha de la otra.** Kevin pasa el escenario entero pidiendo un puesto sin tener el sustantivo |
-| **`the guard`** | Valentina | prosa de datos (`a guard at the gate`) | El sólido dijo `the guard`; el flojo lo saltó entero. **Es la misma fila que faltaba en el escenario 1 con `doorman`: la persona que está en la puerta no tiene palabra, dos escenarios seguidos** |
-
-**Y media fuga que conviene no contar como fuga:** `gas`. Está en las dos tablas de datos, en
-ninguno de los dos bloques, y sobrevive porque *gasolina* y *gas* se parecen lo suficiente. Es
-suerte fonética, no diseño.
-
-**El patrón, dicho en una línea:** las dos palabras que más falta hacen —`cédula` y `puesto`—
-**existen en el material, en la pantalla del jugador que no las necesita.** No es que falte
-vocabulario: es que está repartido al revés.
-
----
----
-
-# Las medidas, juntas
-
-| | 1 sólido+sólido | 2 sólido+flojo | 3 flojo+flojo | 4 callado | 5 atajista |
-|---|---|---|---|---|---|
-| **Turnos A** | 12 | 16 | 12 | 10 | **7** |
-| **Turnos B** | 12 | 15 | 12 | 10 | **7** |
-| **Total** (declarado 14) | 24 | **31** | 24 | 20 | **14** |
-| **Reparto por turnos** | 50/50 | 52/48 | 50/50 | 50/50 | 50/50 |
-| **Reparto por palabras** | 50/50 | **76/24** | 52/48 | **12/88** | 40/60 |
-| **Minutos** (declarado 6:00) | 7:05 | **8:20** | 9:10 sin cerrar | 4:10 | **3:45** |
-| **¿Se dicta el mensaje?** | Sí, Kevin | **Sí, pero lo dicta Valentina** | **No** | Sí, Kevin | Sí, Kevin |
-| **¿Los 3 puntos?** | 3 de 3 | 3 de 3 | **1 de 3** | 3 de 3, **y falsos** | 3 de 3 |
-| **¿Se envía?** | Sí | Sí | **No** | Sí | Sí |
-| **¿Sabe que terminó?** | **Sí** | Sí | **No** | Sí (mal) | Sí |
-| **`[ES]`** | 0 | 6 (+1 de A) | **15** | 0 | 1 |
-| **`[L]`** | 0 | **6** | 3 | **1** | 0 |
-| **¿Carta jugada?** | Sí, entera | Sí, entera | Sí, a trozos y en español | **No — muere en A2** | Sí, entera |
-| **Datos ocultos revelados** | **5 de 6** | 4 de 6 | 2 de 6 | 2 de 6 | **2 de 6** |
-
-### Lo que dicen las medidas
-
-**1. El gesto de cierre funciona, y es el mayor cambio respecto de fase 3.** Cuatro de cinco
-parejas saben que terminaron, y lo saben porque alguien pulsó enviar. En fase 3, este escenario
-terminaba en las cinco parejas con alguien preguntando en español si ya estaba. **El diagnóstico
-de fase 3 —«el 7 tiene el final mejor pensado del set y el peor señalizado»— está resuelto.**
-
-**2. Y el gesto de cierre trae dos agujeros nuevos, los dos en el reparto de manos.**
-   - **Dictar es la tarea más difícil del escenario y está asignada a Kevin.** Con Kevin flojo
-     (pareja 2) el dictado se lo come Valentina, y con Kevin flojo y Valentina floja (pareja 3)
-     no se dicta nada. **El único gesto que cierra el juego depende del jugador que menos
-     herramientas tiene.**
-   - **Confirmar es la tarea más fácil y está asignada a Valentina.** Un jugador callado la
-     ejecuta asintiendo (pareja 4) y el escenario se cierra con un mensaje materialmente falso.
-
-**3. Los minutos declarados se quedan cortos, y se sabe cuánto: el dictado.** Sesenta a setenta
-segundos que no estaban en el presupuesto de 6:00. La pareja sólida cae en 7:05 y son 7:05
-buenos, no perdidos. **6:00 declara la conversación sin el gesto que la termina.**
-
-**4. Los turnos declarados —7 por rol— solo los cumple el atajista.** El resto va de 20 a 31.
-Es el mismo desfase que en el escenario 1, y el mismo remedio: **declarar 10 por rol.**
-
-**5. El reparto en turnos es ciego, otra vez, y esta vez de forma escandalosa.** La pareja 4
-marca **50/50 exacto** en turnos y **12/88** en palabras. Es la tercera simulación seguida en la
-que esto pasa. **Si esto se va a medir, se mide en palabras.**
-
-**6. El atajista ya no gana, y se puede decir qué lo frena.** Dos cosas, las dos nuevas:
-   - la carta cae **después** de que él capitule, así que su capitulación queda desmentida por
-     la pantalla de ella;
-   - **Valentina tiene ahora un problema que necesita a Kevin** —el carro de Hernán en el
-     taller—, y en fase 3 no lo tenía.
-
-   Lo que sigue abierto: **pagar es una salida legal y rápida.** 50.000 pesos le compran a Kevin
-   toda la conversación difícil, y ninguna restricción se lo impide.
-
-**7. La carta se juega en cuatro de cinco y muere en la quinta, y muere donde ya se sabía.** En
-la pantalla del callado. Igual que en el escenario 1. **Una complicación que vive en una sola
-pantalla depende de que esa persona hable.**
-
-**8. Dónde se rompe todo, en las parejas donde se rompió algo:** el tramo del carro de Hernán.
-Ahí muere la pareja 3, ahí está el `[X]` largo de la 1, ahí reabre la 5. **Es el tramo con más
-sustantivos sin glosa del escenario** —taller, mecánico, puestos, caber— y es el que la fase 4
-puso a propósito para que nada se pudiera cerrar de memoria. Funciona como diseño y falla como
-léxico.
-
----
-
-## Qué cambiaría, en orden
-
-Esto no arregla nada aquí — lo deja escrito para `habla-fichas-de-rol`.
-
-1. **Repartir el gesto de cierre entre los dos.** Hoy: Kevin dicta, Valentina confirma y envía.
-   Es la tarea más difícil para el que menos puede y la más fácil para la que menos habla. Una
-   forma que sí resiste: **cada uno dicta el punto que le toca** —Kevin el 2 (quién llama a
-   quién), Valentina el 1 y el 3—, y el envío se queda donde está. Nadie cierra asintiendo y
-   nadie tiene que componer cinco frases solo.
-2. **Meter `ID card` en la ficha de Kevin.** Es la fuga al español más repetida de las cinco
-   parejas —tres de cinco— y la palabra existe, en la pantalla de la otra.
-3. **Meter `a spot` en la ficha de Kevin** (o duplicarla). Se pasa el escenario pidiendo un
-   puesto sin el sustantivo.
-4. **Dar vocabulario a la carta.** `a camping mat` y `the manager` son palabras nuevas que
-   aparecen en una pantalla nueva, en el peor momento, sin una sola glosa. Bastan dos filas en
-   la propia carta.
-5. **Meter `the mechanic` y `the shop` en el bloque de Valentina.** Es su carta oculta y no
-   tiene palabra: en la pareja floja el escenario muere ahí.
-6. **Quitar `booking` de la ficha de A y `to let someone down` de la de B.** Cero usos en cinco
-   parejas, y las dos son sustituibles por algo que ya está en pantalla.
-7. **Resolver el duplicado `to split the cost` / `to chip in`.** Dos fichas, dos palabras, un
-   solo turno. Dejar `to chip in` en B —que es quien tiene el problema— y darle a A otra cosa.
-8. **Declarar 10 turnos por rol y 7 minutos**, no 7 y 6. El dictado cuesta un minuto y no está
-   presupuestado.
-9. **Medir el reparto en palabras.** Tercera simulación seguida en la que el 50/50 en turnos
-   tapa un monólogo.
-10. **`a hammock` existe en una sola pantalla y decide la cuenta de camas.** Si el dueño de la
-    palabra no la produce, el dato no llega. Merece decidirse: o se glosa en las dos, o se
-    acepta que en las parejas flojas ese dato no viaja.
-11. **El «una sola persona» de la carta necesita salir en voz alta con la cifra.** En la pareja
-    4 se envió al grupo que van dos. Un renglón en el recuadro de cierre —*el mensaje tiene que
-    decir cuántas personas van, con número*— lo cierra sin tocar el motor.

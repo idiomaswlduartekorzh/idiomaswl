@@ -784,6 +784,35 @@ la carta pretende inyectar no existe: en las cinco parejas nadie miró el reloj 
 escenario cuyo cierre exige decir horas en voz alta —4:20, 5:20, 6:15, 6:30, 7:00, 8:30, 8:00—
 la única hora que no encaja es la de la propia complicación.
 
+### El secreto de A no se aprieta nunca
+
+**La restricción 2 de A —«ni una palabra de la cita de otro paciente: ni de quién, ni por
+qué»— no se puso a prueba en ninguna de las cinco parejas.** A dijo la frase de la puerta
+entornada —`Something may open up later, but I can't promise anything.`— en tres de las cinco
+(2, 3 y 5), y en las tres el rol B contestó con un `I can wait here`, un `OK. I wait.` o un
+cambio de tema. **Nadie preguntó nunca «¿por qué puede que se libere?» ni «¿de quién es esa
+cita?».** Consecuencias, las tres comprobables sobre las transcripciones:
+
+1. **El criterio de éxito de A «nothing said about another patient» se aprueba sin hacer
+   nada.** Se cumple por omisión en las cinco parejas, incluidas las dos que no llegaron al
+   cierre. Un criterio que no se puede fallar no mide.
+2. **El bloque 6 de la caja —«guardar algo sin mentir»— tuvo cero usos en toda la
+   simulación**, y es el único bloque que la ficha de A señala con una instrucción propia:
+   *«an appointment you can't name: 6 is your answer when they push»*. Nadie apretó, así que
+   el bloque nunca se abrió.
+3. **Y si alguien hubiera apretado, las formas del bloque 6 no le sirven a A.** De las cinco,
+   `It's personal.`, `It's a family thing.` y `I just can't do that day.` son formas de vida
+   privada, no de mostrador: un recepcionista que dice *it's a family thing* sobre la cita de
+   otro paciente suena a que está hablando de la suya. Le sirve una de cinco —`I can't say
+   why, sorry.`— y a medias `Can we leave it there?`.
+
+**Por qué pasa, y es de diseño, no de jugador.** Para que B pregunte por la cita ajena, la
+frase de A tiene que sonar a promesa, y está escrita para no sonar a promesa: *may* + *I can't
+promise anything* en la misma línea. B oye un no blando y sigue. La zona de acuerdo 3 del motor
+—la lista de espera de hoy, con la paciente de las 5:20 detrás— **es la única de las tres que
+en cinco conversaciones no se jugó hasta el final ni una vez**: se pidió dos veces desde el
+bloque de vocabulario de B (parejas 3 y 5) y las dos veces A la cerró.
+
 ---
 
 ## Qué cambiaría, en orden
@@ -822,3 +851,8 @@ Esto no arregla nada aquí — lo deja escrito para `habla-fichas-de-rol`.
 12. **Medir el reparto en palabras, no en turnos**, y **comprobar el celular contra lo escrito**:
     es el único de los cuatro datos del cierre que puede quedar mal sin que nadie en la sala se
     entere, y en la pareja 4 quedó mal.
+13. **O se le da a A una forma para negarse a nombrar la cita ajena, o se quita el criterio.**
+    Hoy la ficha manda a A al bloque 6 de la caja y cuatro de sus cinco formas son de vida
+    privada (`It's personal.`, `It's a family thing.`). Y el criterio *«nothing said about
+    another patient»* se aprobó en las cinco parejas sin que nadie preguntara: se cumple por
+    omisión, incluso en las dos que no cerraron.

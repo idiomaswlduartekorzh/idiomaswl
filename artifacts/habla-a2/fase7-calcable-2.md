@@ -17,6 +17,26 @@ exponentes y ahí las frases van a propósito; la nota de diseño de la carta (1
 *After* (197-199), que están en español; y `grammarReferences` (204-227), que es metadato de
 código y no llega a pantalla.
 
+## Cómo se marcó cada línea
+
+Tres marcas, y la frontera entre las dos primeras es lo único discutible del informe, así que va
+escrita:
+
+- **FALLA** — la línea, o una cláusula autónoma donde el ojo puede parar, es un enunciado inglés
+  bien formado que ese rol le puede decir al otro y el turno avanza.
+- **RIESGO** — es oración, pero dicha *tal cual* apunta mal: hace falta un cambio (un pronombre,
+  un posesivo) para que funcione en la boca. No falla la prueba literal; la sostiene un pronombre.
+- **ENTREGA** — no se dice tal cual, pero pone la frase hecha en la mano fuera de la tabla de
+  exponentes. Va contada dentro de FALLA cuando lo entregado es el dato oculto.
+
+**Las filas de tabla se leen de corrido, etiqueta incluida.** Un `| etiqueta | celda |` se lee
+como una sola línea, así que si la etiqueta pone el sujeto y la celda el predicado, la fila es una
+oración aunque ninguna de las dos mitades lo sea por separado. Por eso la fila 124
+(`| Today I can stay | until seven |`) está en FALLA. Las filas 53, 54 y 126 hacen lo mismo con
+etiqueta nominal (`| The plan | pays for… |`) y se quedan en RIESGO por un pelo: la etiqueta ahí
+es un rótulo de columna, no un sujeto, y el estudiante que consulta la tabla lee el dato sin
+arrastrar el rótulo. Es un pelo, no un principio — las tres se reescriben igual.
+
 ---
 
 ## Veredicto
@@ -150,7 +170,7 @@ Y otra vez el arreglo ya está escrito en la misma ficha: la fila 119 lo dice en
 
 ## Las otras 15 que fallan
 
-### ROLE A (6 más)
+### ROLE A (8 más)
 
 **4 · Línea 32**, `You can't` 1:
 > `1. Ask Dr. Restrepo anything before 5:00 — she's mid-consultation. She writes to you; you don't call her.`
@@ -206,7 +226,7 @@ Segunda aparición de la misma oración dentro de la misma ficha.
 `It only covers here.` es oración, es jugada, y duplica el exponente 84.
 **Reescritura:** `| to cover | when the plan pays for the treatment | your best argument — here, and nowhere else |`
 
-### ROLE B (4 más)
+### ROLE B (5 más)
 
 **12 · Línea 97**, nota de registro:
 > `> **Formal.** Somebody else's counter, nobody you know. Distance even when it hurts: \`Can you help me, please?\`. **You start.** 6 turns · 6 minutes.`
@@ -312,10 +332,14 @@ accidental, no un diseño: la sostiene un pronombre.
 ## Aparte 1: la tabla de datos ya no es la sección segura
 
 En el escenario 1 las 20 filas de datos pasaron limpias, con un solo roce. Aquí fallan 4 y rozan
-3. El defecto no es aleatorio: **las 10 filas de A están escritas sin sujeto y las de B con
-sujeto**.
+3. El defecto tiene forma, aunque no sea el corte limpio que parece: **de las veinte filas, cuatro
+llevan verbo conjugado y fallan —dos por lado— y otras tres lo rozan: 53 y 54 en A, 126 en B**.
+Las dos de A son justificaciones ya montadas —`the plan does not pay for it` (50), `Centro takes nobody without
+one` (51)—; las dos de B son el personaje hablando de sí mismo —`I have the key` (123),
+`nobody is waiting for me` (124)—. El sesgo es de motivo, no de bando: **A mete oración cuando
+explica; B, cuando se describe.**
 
-| ROLE A — nota | ROLE B — oración |
+| ROLE A — las que sí quedaron en nota | ROLE B — las que salieron oración |
 |---|---|
 | `full today and tomorrow · first free slot: Thursday 10, 7:00 a.m.` | `the delivery truck arrives at 6:30 a.m. — I have the key` |
 | `9:00 a.m. free · Saturdays: only patients seen here before` | `until seven · nobody is waiting for me` |
