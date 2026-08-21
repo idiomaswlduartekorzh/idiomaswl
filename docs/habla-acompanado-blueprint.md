@@ -135,8 +135,24 @@ El guardián no publica un set que falle una sola.
    conversación**.
 5. **Carga** — ningún rol por debajo del 40 % de la conversación, medido en **palabras**, no
    en turnos. Un «Mm» cuenta como turno: hubo simulaciones con el 50 % de los turnos y el
-   10 % de las palabras que pasaban esta puerta con las dos manos atadas. Se cuenta sobre la
-   simulación, no sobre el previsto.
+   10 % de las palabras que pasaban esta puerta con las dos manos atadas.
+
+   **Se mide sobre las parejas de perfil parejo** —sólido+sólido y flojo+flojo—, y solo sobre
+   ellas. Esto lo corrige el diagnóstico del 21 de agosto de 2026: la puerta se estaba midiendo
+   sobre la pareja del **callado**, cuyo perfil dice literalmente «responde con una a tres
+   palabras». Ahí el 80/20 no es un resultado, es el enunciado, y la puerta es insatisfacible:
+   para que el otro no pasara del 60 % tendría que ser mudo también. Medido donde toca, el
+   mismo set pasaba 14 de 14 con un peor caso de 62/38.
+
+   **Al callado se le mide otra cosa**, porque medirle palabras no dice nada: **¿produjo las
+   piezas que solo él tiene?** El dato oculto, la condición, su parte del cierre. Un callado que
+   consigue su objetivo asintiendo es un defecto del escenario —el objetivo tiene que exigir
+   producir algo—, y ese sí va a `habla-escenarios`.
+
+   Y una condición de la medida: **un solo contador, y declarado**. En la ronda que destapó
+   esto, dos escenarios contaban «palabras propias» descontando lo leído, cuatro contaban en
+   bruto y uno midió una sola de sus cinco parejas: el 79/21 de uno de ellos era 64/36 con el
+   otro criterio, y pasaba.
 6. **Complicación colocada** — entra entre el turno **global** 3 y 6, y va a un solo rol.
    Cuidado con el enunciado: «ábrela al terminar tu cuarto turno» suena a lo mismo y no lo
    es —el cuarto turno de un rol es el turno global 7 u 8, o sea después del final útil—.
