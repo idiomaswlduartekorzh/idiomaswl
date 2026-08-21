@@ -16,7 +16,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join, basename } from 'node:path';
 
 const DIR = new URL('..', import.meta.url).pathname;
-const TECHO = 350;
+const TECHO = 450;   // §11: medido, no deseado. Ver la nota del blueprint.
 
 const prosa = (t) =>
   t.split('\n')

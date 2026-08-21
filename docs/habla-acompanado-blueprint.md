@@ -305,13 +305,26 @@ parezca incumplido cuando no lo está.
 
 | Nivel | Prosa | Tablas |
 |---|---|---|
-| **A1-A2** | **≤ 350 palabras** | datos ≤ 10 filas · vocabulario 8-10 · exponentes 6-9 |
+| **A1-A2** | **≤ 450 palabras**, apuntando a 400 | datos ≤ 10 filas · vocabulario 8-10 · exponentes 6-9 |
 | **B1-B2** | ≤ 600 | datos ≤ 14 · vocabulario 10-12 · exponentes 8-10 |
 | **C1-C2** | sin tope fijo | ahí la ficha puede ser un documento de verdad — un contrato, un informe |
 
 Medido sobre el escenario 3: la ficha en español gastaba **798 palabras de prosa**; la misma
-ficha en inglés, con el bloque de vocabulario añadido, gasta **343** — un 57 % menos, y con una
-pieza más dentro. Se corta prosa, no piezas:
+ficha en inglés, con el bloque de vocabulario añadido, gasta **346**. El corte es real y es lo
+que se buscaba.
+
+**El techo de 450 sale de medir, no de desear.** La primera versión de esta tabla puso 350, y
+ese número salió de contar a mano una sola ficha —la del molde— con un contador improvisado.
+Medidas las dieciséis con el contador canónico
+(`artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`), la media es **425** y solo una baja de
+350: la ficha B del propio molde se va a 376. Cuando el molde no cumple su propio techo, el
+techo está mal, no el molde. El juego de piezas obligatorio —situación, objetivo, dos o tres
+restricciones, el dato oculto, lo que se pierde, la caja, los criterios y el cierre— cuesta unas
+425 palabras, y bajar de ahí obliga a quitar una pieza. **Se corta prosa, nunca una pieza.**
+
+El contador es uno y está en el repo por un motivo: las ocho fichas de esa ronda declaraban
+cumplir con **seis contadores distintos**, y dos auditorías dieron 9 y 15 fichas fuera de techo
+sobre el mismo contenido. Un umbral sin un contador único no es un umbral. Se corta prosa, no piezas:
 la situación pasa de párrafo a dos líneas, el objetivo de explicación a frase, y lo que cabe en
 una tabla no se cuenta en un texto.
 
