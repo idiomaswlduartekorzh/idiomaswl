@@ -3,7 +3,7 @@ import type { MockExam } from './types';
 const mock: MockExam = {
   id: 'set-3',
   examSlug: 'ielts',
-  title: 'IELTS Academic · Set 3',
+  title: 'IELTS Academic Set 3',
   subtitle: 'The Silk Road · Ocean Plastic Pollution · Artificial Intelligence in Medicine',
   timeMinutes: 164,
   sections: [

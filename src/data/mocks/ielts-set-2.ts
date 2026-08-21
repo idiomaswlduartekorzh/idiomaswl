@@ -3,7 +3,7 @@ import type { MockExam } from './types';
 const mock: MockExam = {
   id: 'set-2',
   examSlug: 'ielts',
-  title: 'IELTS Academic · Set 2',
+  title: 'IELTS Academic Set 2',
   subtitle: 'The History of Glass · Bees and Pollination · The Psychology of Decision Making',
   timeMinutes: 164,
   sections: [
@@ -706,10 +706,10 @@ The idea of {{33}} involves designing choice environments to promote better deci
           id: 'w1',
           part: 8,
           taskNumber: 1,
-          stimulusLabel: 'The bar chart below shows the expenditure on consumer goods in two countries in 2010.',
+          stimulusLabel: 'The bar chart below shows global sales of four different kinds of digital games between 2000 and 2006.',
           stimulus: '',
           imageUrl: '/ielts/images/writing-set2-task1-games.png',
-          imageAlt: 'Bar chart: expenditure on consumer goods (mobile phone games, online games, console games, handheld games) 2000–2006',
+          imageAlt: 'Bar chart of global sales in billions of dollars for mobile phone, online, console and handheld games from 2000 to 2006',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.',
           minWords: 150,
         },

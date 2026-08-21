@@ -10,6 +10,7 @@ export type IeltsDelegatedReviewTask = (typeof IELTS_DELEGATED_REVIEW_TASKS)[num
 
 export interface IeltsOfficialRubricReference {
   version: string;
+  verifiedAt: string;
   title: string;
   sourceUrl: string;
   criteria: { key: string; label: string }[];
@@ -30,6 +31,7 @@ export interface IeltsDelegatedReviewInput {
   summary: string;
   strengths: string[];
   priorities: string[];
+  audioEvidenceAttested?: boolean;
 }
 
 export interface IeltsDelegatedReviewMetadata {
@@ -82,10 +84,11 @@ export interface IeltsDelegatedSpeakingAssignment {
     expected: number;
     complete: boolean;
   };
+  evidenceLabel: string;
 }
 
 export interface IeltsDelegatedAgentWorkflow {
-  version: 'welearn-ielts-delegated-review-v1';
+  version: 'welearn-ielts-delegated-review-v2';
   steps: string[];
   evidenceRequirements: string[];
 }
@@ -110,12 +113,14 @@ export interface IeltsDelegatedReviewCase {
     summary: string;
     strengths: string;
     priorities: string;
+    audioEvidenceAttested?: string;
   };
 }
 
 const WRITING_SOURCE = 'https://ielts.org/cdn/ielts-guides/ielts-writing-band-descriptors.pdf';
 const SPEAKING_SOURCE = 'https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf';
-const PUBLIC_DESCRIPTOR_VERSION = 'IELTS public band descriptors · Updated May 2023';
+const WRITING_DESCRIPTOR_VERSION = 'IELTS Writing public band descriptors · Updated May 2023';
+const SPEAKING_DESCRIPTOR_VERSION = 'IELTS Speaking public band descriptors · verified 2026-08-20';
 
 const SHARED_WRITING_CRITERIA = [
   { key: 'coherenceCohesion', label: 'Coherence and Cohesion' },
@@ -125,7 +130,8 @@ const SHARED_WRITING_CRITERIA = [
 
 export const IELTS_OFFICIAL_RUBRICS: Record<IeltsDelegatedReviewTask, IeltsOfficialRubricReference> = {
   writing_task_1: {
-    version: PUBLIC_DESCRIPTOR_VERSION,
+    version: WRITING_DESCRIPTOR_VERSION,
+    verifiedAt: '2026-08-20',
     title: 'IELTS Writing Task 1 Band Descriptors',
     sourceUrl: WRITING_SOURCE,
     criteria: [
@@ -135,7 +141,8 @@ export const IELTS_OFFICIAL_RUBRICS: Record<IeltsDelegatedReviewTask, IeltsOffic
     notice: 'La rúbrica enlazada es oficial. La banda producida por un agente es una estimación y no un resultado oficial de IELTS.',
   },
   writing_task_2: {
-    version: PUBLIC_DESCRIPTOR_VERSION,
+    version: WRITING_DESCRIPTOR_VERSION,
+    verifiedAt: '2026-08-20',
     title: 'IELTS Writing Task 2 Band Descriptors',
     sourceUrl: WRITING_SOURCE,
     criteria: [
@@ -145,7 +152,8 @@ export const IELTS_OFFICIAL_RUBRICS: Record<IeltsDelegatedReviewTask, IeltsOffic
     notice: 'La rúbrica enlazada es oficial. La banda producida por un agente es una estimación y no un resultado oficial de IELTS.',
   },
   speaking: {
-    version: PUBLIC_DESCRIPTOR_VERSION,
+    version: SPEAKING_DESCRIPTOR_VERSION,
+    verifiedAt: '2026-08-20',
     title: 'IELTS Speaking Band Descriptors',
     sourceUrl: SPEAKING_SOURCE,
     criteria: [
@@ -165,7 +173,7 @@ export function isIeltsDelegatedReviewTask(value: unknown): value is IeltsDelega
 export function taskLabel(task: IeltsDelegatedReviewTask): string {
   if (task === 'writing_task_1') return 'Writing Task 1';
   if (task === 'writing_task_2') return 'Writing Task 2';
-  return 'Speaking completo';
+  return 'Speaking · diagnóstico del simulacro';
 }
 
 export function taskShortCode(task: IeltsDelegatedReviewTask): string {
@@ -194,7 +202,7 @@ export function buildIeltsDelegatedAgentWorkflow(task: IeltsDelegatedReviewTask)
 
   if (task !== 'speaking') {
     return {
-      version: 'welearn-ielts-delegated-review-v1',
+      version: 'welearn-ielts-delegated-review-v2',
       steps: sharedSteps,
       evidenceRequirements: [
         'Cita rasgos verificables del texto de la estudiante; no inventes intención, contenido ni errores que no aparezcan en la respuesta.',
@@ -204,7 +212,7 @@ export function buildIeltsDelegatedAgentWorkflow(task: IeltsDelegatedReviewTask)
   }
 
   return {
-    version: 'welearn-ielts-delegated-review-v1',
+    version: 'welearn-ielts-delegated-review-v2',
     steps: [
       sharedSteps[0],
       'Escucha todas las grabaciones en orden y compara cada respuesta con su pregunta, cue card y preguntas de seguimiento.',
@@ -219,6 +227,7 @@ export function buildIeltsDelegatedAgentWorkflow(task: IeltsDelegatedReviewTask)
       'Para Lexical Resource y Grammatical Range and Accuracy cita elecciones lingüísticas audibles y su efecto en la comunicación.',
       'Para Pronunciation considera inteligibilidad, sonidos, acento léxico, ritmo, entonación y connected speech; no penalices un acento solo por no ser nativo.',
       'Si una grabación requerida no se reproduce o no contiene voz evaluable, no inventes una banda: solicita al administrador un llamado nuevo.',
+      'La banda es una estimación diagnóstica de estas muestras y no equivale a una entrevista oficial IELTS de 11–14 minutos.',
     ],
   };
 }
@@ -266,6 +275,9 @@ export function validateIeltsDelegatedReviewInput(
   if (overallBand == null) return { ok: false, message: 'La banda general debe ir de 0 a 9 en pasos de 0.5.' };
   if (summary.length < 40) return { ok: false, message: 'Incluye un resumen sustentado de al menos 40 caracteres.' };
   if (!strengths || !priorities) return { ok: false, message: 'Incluye entre 1 y 8 fortalezas y prioridades concretas.' };
+  if (task === 'speaking' && candidate.audioEvidenceAttested !== true) {
+    return { ok: false, message: 'Confirma que escuchaste todas las grabaciones y que contienen voz evaluable antes de emitir la banda.' };
+  }
 
   const rubric = IELTS_OFFICIAL_RUBRICS[task];
   if (!Array.isArray(candidate.criteria) || candidate.criteria.length !== rubric.criteria.length) {
@@ -312,6 +324,7 @@ export function validateIeltsDelegatedReviewInput(
       summary,
       strengths,
       priorities,
+      audioEvidenceAttested: task === 'speaking' ? true : undefined,
     },
   };
 }

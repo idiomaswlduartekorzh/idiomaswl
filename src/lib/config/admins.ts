@@ -4,9 +4,8 @@
  * Keep a single source of truth here so access-control checks across
  * Server Actions, API routes, and page-level redirects stay in sync.
  *
- * NOTE: Long-term these checks should be replaced entirely by reading
- * the `role` column on the `profiles` table (which Supabase RLS can also
- * enforce), so that adding a new admin does not require a code change.
+ * This server-owned allowlist is the authorization source of truth. Never
+ * accept the user-editable `profiles.role` field as a substitute.
  */
 
 /** José — platform owner / head admin */

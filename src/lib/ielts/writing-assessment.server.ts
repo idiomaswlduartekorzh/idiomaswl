@@ -2,7 +2,7 @@ import 'server-only';
 
 import { createAdminClient } from '@/lib/supabase/admin';
 import type { FullAssessment } from '@/lib/labs/types';
-import { buildIeltsScoreSummary, calculateIeltsWritingBand } from './scoring';
+import { recomputeIeltsSubmissionScore } from './recompute-score.server';
 import {
   getIeltsReviewBlueprint,
   type IeltsSubmissionReceipt,
@@ -143,57 +143,14 @@ async function persistIeltsWritingAssessmentInColumn(input: {
       : 'La evaluación se generó, pero no pudimos guardarla en la entrega.' };
   }
 
-  // Re-read after the independent task update. When Task 1 and Task 2 run in
-  // parallel, the last request to finish sees both committed reports and writes
-  // the weighted Writing band without overwriting the other task's JSON.
-  const { data, error: readError } = await admin
-    .from('exam_submissions')
-    .select('writing_task1_assessment, writing_task2_assessment, writing_task1_delegated_assessment, writing_task2_delegated_assessment, listening_band, reading_band, speaking_band, reviewed_at')
-    .eq('id', input.submissionId)
-    .eq('exam_slug', 'ielts')
-    .maybeSingle();
-
-  if (readError || !data) {
-    console.error('[ielts-writing] Could not recompute score summary:', readError?.message);
+  try {
+    const consolidated = await recomputeIeltsSubmissionScore(input.submissionId);
+    if (input.requireUnreviewed && consolidated.final) {
+      return { ok: false, message: 'La entrega ya tiene una evaluación final y no admite cambios delegados.' };
+    }
+    return { ok: true, writingBand: consolidated.writingBand };
+  } catch (error) {
+    console.error('[ielts-writing] Could not recompute Writing band:', error);
     return { ok: false, message: 'Guardamos el reporte, pero no pudimos actualizar la banda de Writing.' };
   }
-  if (input.requireUnreviewed && data.reviewed_at) {
-    return { ok: false, message: 'La entrega ya tiene una evaluación final y no admite cambios delegados.' };
-  }
-
-  const task1 = (data.writing_task1_delegated_assessment ?? data.writing_task1_assessment) as FullAssessment | null;
-  const task2 = (data.writing_task2_delegated_assessment ?? data.writing_task2_assessment) as FullAssessment | null;
-  const writingBand = task1 && task2
-    ? calculateIeltsWritingBand(task1.overallBand, task2.overallBand)
-    : null;
-
-  if (writingBand == null) return { ok: true, writingBand: null };
-
-  const summary = buildIeltsScoreSummary({
-    listening: data.listening_band,
-    reading: data.reading_band,
-    writing: writingBand,
-    speaking: data.speaking_band,
-  });
-  const scoreUpdate = admin
-    .from('exam_submissions')
-    .update({
-      writing_band: writingBand,
-      skills: summary.skills,
-      total_score: summary.totalScore,
-      total_max: 9,
-      total_label: summary.totalLabel,
-    })
-    .eq('id', input.submissionId)
-    .eq('exam_slug', 'ielts');
-  const { data: updatedScore, error: scoreUpdateError } = input.requireUnreviewed
-    ? await scoreUpdate.is('reviewed_at', null).select('id').maybeSingle()
-    : await scoreUpdate.select('id').maybeSingle();
-
-  if (scoreUpdateError || !updatedScore) {
-    console.error('[ielts-writing] Could not persist Writing band:', scoreUpdateError?.message ?? 'Submission was finalized concurrently');
-    return { ok: false, message: 'Guardamos el reporte, pero no pudimos actualizar la banda de Writing.' };
-  }
-
-  return { ok: true, writingBand };
 }

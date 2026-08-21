@@ -25,16 +25,15 @@ function sanitizeText(v: unknown, maxLen = 32_000): string | null {
 }
 
 export async function saveExamResult(data: ExamReportData, ielts?: IELTSAnswers) {
+  if (data.examSlug === 'ielts' || ielts) {
+    throw new Error('IELTS debe guardarse mediante el flujo verificable de entrega, no mediante saveExamResult.')
+  }
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
   // Validate score fields — totalMax anchors the allowed range
   const safeMax   = typeof data.totalMax   === 'number' && data.totalMax   > 0 ? data.totalMax   : 100;
   const safeScore = clampScore(data.totalScore, safeMax) ?? 0;
-
-  // Validate IELTS band scores (0–9 scale, half-band increments)
-  const safeWritingBand  = ielts?.reading_band   != null ? clampScore(ielts.reading_band,   9) : undefined;
-  const safeListeningBand = ielts?.listening_band != null ? clampScore(ielts.listening_band, 9) : undefined;
 
   await supabase.from('exam_submissions').insert({
     user_id: user?.id ?? null,
@@ -47,12 +46,5 @@ export async function saveExamResult(data: ExamReportData, ielts?: IELTSAnswers)
     total_max: safeMax,
     total_label: sanitizeText(data.totalLabel, 256),
     skills: Array.isArray(data.skills) ? data.skills : null,
-    ...(ielts ? {
-      writing_task1_answer: sanitizeText(ielts.writing_task1_answer ?? null),
-      writing_task2_answer: sanitizeText(ielts.writing_task2_answer ?? null),
-      speaking_answers: ielts.speaking_answers && typeof ielts.speaking_answers === 'object' ? ielts.speaking_answers : null,
-      reading_band: safeWritingBand ?? null,
-      listening_band: safeListeningBand ?? null,
-    } : {}),
   })
 }

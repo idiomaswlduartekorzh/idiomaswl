@@ -1,23 +1,15 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { requireAdmin } from '@/lib/auth/require-admin.server'
 export type { StudentSubject } from './inviteStudent'
 import type { StudentSubject } from './inviteStudent'
 
 export async function assignSubject(userId: string, subject: StudentSubject): Promise<void> {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) throw new Error('No autenticado')
+  await requireAdmin()
+  const admin = createAdminClient()
 
-  const { data: caller } = await supabase
-    .from('profiles')
-    .select('role')
-    .eq('id', user.id)
-    .single()
-
-  if (caller?.role !== 'admin') throw new Error('Sin permisos de administrador')
-
-  const { error } = await supabase
+  const { error } = await admin
     .from('profiles')
     .update({ subject })
     .eq('id', userId)

@@ -1,16 +1,18 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Bot, Copy, Link2, ShieldCheck, XCircle } from 'lucide-react'
 import {
   createIeltsDelegatedReviewInvite,
+  getIeltsDelegatedReviewInviteHistory,
   revokeIeltsDelegatedReviewInvite,
   type CreateIeltsDelegatedReviewResult,
+  type IeltsDelegatedReviewInviteHistoryItem,
 } from '@/lib/actions/ieltsDelegatedReview'
-import type { IeltsDelegatedReviewTask } from '@/lib/ielts/delegated-review'
+import { taskLabel, type IeltsDelegatedReviewTask } from '@/lib/ielts/delegated-review'
 import type { ExamSubmission } from './JoseDashboardServer'
 
-const A = '#c87941'
+const A = '#8f461f'
 const TEXT = '#1a1a2e'
 const MUTED = '#6b7280'
 const BORDER = '#e8ddd4'
@@ -23,6 +25,19 @@ export default function IELTSDelegatedReviewCallout({ submission }: { submission
   const [message, setMessage] = useState('')
   const [error, setError] = useState('')
   const [copied, setCopied] = useState(false)
+  const [history, setHistory] = useState<IeltsDelegatedReviewInviteHistoryItem[] | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    getIeltsDelegatedReviewInviteHistory(submission.id).then(result => {
+      if (cancelled) return
+      if (result.ok) setHistory(result.items)
+      else setError(result.error)
+    }).catch(() => {
+      if (!cancelled) setError('No pudimos cargar el historial de llamados.')
+    })
+    return () => { cancelled = true }
+  }, [submission.id])
 
   const available: Record<IeltsDelegatedReviewTask, boolean> = {
     writing_task_1: Boolean(submission.writing_task1_answer?.trim()),
@@ -51,6 +66,8 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
   }, [fullUrl, invite, submission.id])
 
   async function create(task: IeltsDelegatedReviewTask) {
+    const activeForTask = history?.some(item => item.task === task && item.status === 'active')
+    if (activeForTask && !window.confirm(`Ya existe un llamado activo para ${taskLabel(task)}. Regenerarlo revocará el enlace anterior. ¿Continuar?`)) return
     setCreating(task)
     setInvite(null)
     setMessage('')
@@ -59,6 +76,21 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
     const result = await createIeltsDelegatedReviewInvite(submission.id, task)
     if (result.ok) {
       setInvite(result)
+      const now = new Date().toISOString()
+      setHistory(current => [{
+        id: result.inviteId,
+        task: result.task,
+        callCode: result.callCode,
+        createdAt: now,
+        expiresAt: result.expiresAt,
+        usedAt: null,
+        revokedAt: null,
+        evaluatorName: null,
+        evaluatorModel: null,
+        status: 'active',
+      }, ...(current ?? []).map(item => item.task === task && item.status === 'active'
+        ? { ...item, revokedAt: now, status: 'revoked' as const }
+        : item)])
       setMessage('Llamado creado. Si generas otro para la misma tarea, este se revoca automáticamente.')
     } else {
       setError(result.error)
@@ -78,8 +110,11 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
 
   async function revoke() {
     if (!invite) return
+    if (!window.confirm(`Revocar ${invite.callCode}? El enlace dejará de funcionar inmediatamente.`)) return
     const result = await revokeIeltsDelegatedReviewInvite(invite.inviteId)
     if (result.ok) {
+      const revokedAt = new Date().toISOString()
+      setHistory(current => current?.map(item => item.id === invite.inviteId ? { ...item, revokedAt, status: 'revoked' as const } : item) ?? null)
       setInvite(null)
       setMessage('Llamado revocado. El enlace ya no permite evaluar.')
       setCopied(false)
@@ -109,7 +144,7 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
             key={task}
             disabled={!available[task] || creating !== null}
             onClick={() => create(task)}
-            style={{ border: `1px solid ${BORDER}`, borderRadius: 8, background: creating === task ? `${A}18` : '#fff', color: available[task] ? TEXT : MUTED, padding: '7px 9px', fontSize: 10, fontWeight: 750, cursor: available[task] && !creating ? 'pointer' : 'not-allowed', opacity: available[task] ? 1 : 0.55 }}
+            style={{ minHeight: 44, border: `1px solid ${BORDER}`, borderRadius: 8, background: creating === task ? `${A}18` : '#fff', color: available[task] ? TEXT : MUTED, padding: '8px 10px', fontSize: 11, fontWeight: 750, cursor: available[task] && !creating ? 'pointer' : 'not-allowed', opacity: available[task] ? 1 : 0.55 }}
           >
             {creating === task ? 'Creando…' : label}
           </button>
@@ -130,12 +165,34 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
           </div>
           <textarea readOnly value={prompt} aria-label="Llamado listo para copiar" style={{ boxSizing: 'border-box', width: '100%', minHeight: 205, marginTop: 8, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 9, resize: 'vertical', color: TEXT, background: '#fff', fontSize: 10, lineHeight: 1.5 }} />
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 7 }}>
-            <button type="button" onClick={copyPrompt} style={{ display: 'inline-flex', alignItems: 'center', gap: 5, border: 0, borderRadius: 8, padding: '7px 9px', background: A, color: '#fff', fontSize: 10, fontWeight: 800, cursor: 'pointer' }}><Copy size={13} /> {copied ? 'Copiado' : 'Copiar llamado'}</button>
-            <a href={invite.path} target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, border: `1px solid ${BORDER}`, borderRadius: 8, padding: '7px 9px', color: TEXT, textDecoration: 'none', fontSize: 10, fontWeight: 750 }}><Link2 size={13} /> Probar enlace</a>
-            <button type="button" onClick={revoke} style={{ display: 'inline-flex', alignItems: 'center', gap: 5, border: 0, background: 'transparent', color: '#b91c1c', fontSize: 10, fontWeight: 750, cursor: 'pointer' }}><XCircle size={13} /> Revocar</button>
+            <button type="button" onClick={copyPrompt} style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', gap: 5, border: 0, borderRadius: 8, padding: '8px 10px', background: A, color: '#fff', fontSize: 11, fontWeight: 800, cursor: 'pointer' }}><Copy size={13} /> {copied ? 'Copiado' : 'Copiar llamado'}</button>
+            <a href={invite.path} target="_blank" rel="noreferrer" style={{ minHeight: 44, boxSizing: 'border-box', display: 'inline-flex', alignItems: 'center', gap: 5, border: `1px solid ${BORDER}`, borderRadius: 8, padding: '8px 10px', color: TEXT, textDecoration: 'none', fontSize: 11, fontWeight: 750 }}><Link2 size={13} /> Probar enlace</a>
+            <button type="button" onClick={revoke} style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', gap: 5, border: 0, background: 'transparent', color: '#b91c1c', fontSize: 11, fontWeight: 750, cursor: 'pointer' }}><XCircle size={13} /> Revocar</button>
           </div>
         </div>
       )}
+
+      <div style={{ marginTop: 10, borderTop: `1px solid ${BORDER}`, paddingTop: 9 }}>
+        <p style={{ margin: 0, color: TEXT, fontSize: 10, fontWeight: 800 }}>Historial de llamados</p>
+        {history === null ? (
+          <p style={{ margin: '5px 0 0', color: MUTED, fontSize: 9 }}>Cargando historial…</p>
+        ) : history.length === 0 ? (
+          <p style={{ margin: '5px 0 0', color: MUTED, fontSize: 9 }}>Todavía no hay llamados para este intento.</p>
+        ) : (
+          <ul style={{ listStyle: 'none', padding: 0, margin: '6px 0 0', display: 'grid', gap: 5 }}>
+            {history.slice(0, 6).map(item => {
+              const status = item.status === 'active' ? 'Activo' : item.status === 'used' ? 'Usado' : item.status === 'revoked' ? 'Revocado' : 'Vencido'
+              return (
+                <li key={item.id} style={{ display: 'flex', justifyContent: 'space-between', gap: 8, padding: '7px 8px', borderRadius: 7, background: '#f8f4f0', color: MUTED, fontSize: 9 }}>
+                  <span><strong style={{ color: TEXT }}>{taskLabel(item.task)}</strong> · {item.callCode}</span>
+                  <span style={{ color: status === 'Activo' ? '#166534' : status === 'Usado' ? '#1d4ed8' : MUTED, fontWeight: 800 }}>{status}</span>
+                </li>
+              )
+            })}
+          </ul>
+        )}
+        <p style={{ margin: '5px 0 0', color: MUTED, fontSize: 9 }}>Por seguridad, el enlace secreto solo se muestra al crearlo. El historial conserva código y estado, nunca el token.</p>
+      </div>
 
       <p role="status" aria-live="polite" style={{ minHeight: 15, margin: '7px 0 0', color: error ? '#b91c1c' : message ? '#166534' : MUTED, fontSize: 10 }}>{error || message}</p>
     </section>

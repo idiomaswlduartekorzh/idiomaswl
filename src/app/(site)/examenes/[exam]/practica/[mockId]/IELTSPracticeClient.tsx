@@ -1,20 +1,18 @@
 'use client';
 
-import { useState, useCallback, useEffect, useRef } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { IELTSSummaryReport } from '@/components/labs/IELTSSummaryReport';
 import { IELTSWritingReportPanel } from '@/components/labs/IELTSWritingReportPanel';
-import { IELTSMock4Submission } from '@/components/exam-runner/IELTSMock4Submission';
+import { IELTSSubmission } from '@/components/exam-runner/IELTSSubmission';
 import {
   IELTSSpeakingRecorder,
   type IeltsSpeakingRecording,
 } from '@/components/exam-runner/IELTSSpeakingRecorder';
-import { saveExamResult } from '@/lib/actions/saveExamResult';
-import { isFreeIeltsMock } from '@/lib/labs/exam-bridge/ielts';
+import { isFreeIeltsMock, isReviewableIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
-import { IELTS_MOCK4_ID } from '@/lib/ielts/mock4-submission';
 import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 import {
   Timer, AudioPlayer, SkillTabs,
@@ -43,10 +41,6 @@ function rawToBand(raw: number, table: [number, number][]): number {
   for (const [min, band] of table) if (raw >= min) return band;
   return 1;
 }
-function overallBand(bands: number[]): number {
-  return Math.round((bands.reduce((a,b)=>a+b,0)/bands.length)*2)/2;
-}
-
 const SKILL_ORDER = ['listening','reading','writing','speaking'];
 const SKILL_LABEL: Record<string,string> = {
   listening:'Listening', reading:'Reading', writing:'Writing', speaking:'Speaking',
@@ -603,7 +597,6 @@ function scoreSection(section: MockSection, ans: AllAnswers): number {
 function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
   mock: MockExam; exam: Exam; ans: AllAnswers; receipt: IeltsSubmissionReceipt | null; onRetry: ()=>void;
 }) {
-  const savedRef = useRef(false);
   // Lazy init (no useEffect): esta vista solo se monta tras terminar el
   // examen (transición de estado del lado del cliente), nunca en SSR.
   const [leadCaptured, setLeadCaptured] = useState(() => {
@@ -639,7 +632,6 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
   const speakQs = getSkillSections(mock,'speaking').flatMap(s=>s.questions) as SpeakQuestion[];
   const task1 = writeQs.find(q=>q.taskNumber===1);
   const task2 = writeQs.find(q=>q.taskNumber===2);
-  const speakingAnswers = Object.fromEntries(speakQs.map(q=>[q.id, ans.speak[q.id]??'']));
 
   // Motor automático solo en los sets gratuitos (set-1..4); el resto sigue
   // con revisión manual. Se llama SIEMPRE (reglas de hooks) con essay=''
@@ -681,17 +673,12 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
     ...(speakQs.length > 0 ? [{ skill:'Speaking', score:'pending' as const, max:9 }] : []),
   ];
 
-  // La banda general de portada solo promedia lo que ya está listo — L/R
-  // aparecen al instante, Writing se suma en cuanto el motor responde (unos
-  // segundos), sin bloquear la vista del resumen.
-  const readyBands = [lBand, rBand, writingBand].filter((b): b is number => b !== null);
-  const partialBand = overallBand(readyBands);
-
   const reportData = {
     examName: exam.name,
     examSlug: exam.slug,
     mockTitle: mock.title,
-    totalScore: partialBand,
+    // IELTS Overall only exists after L/R/W/S are all available.
+    totalScore: null,
     totalMax: 9,
     totalLabel: hasListening
       ? `Listening Band ${lBand} · Reading Band ${rBand}`
@@ -701,22 +688,6 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
     skills: autoSkills,
   };
 
-  useEffect(() => {
-    // Mock 4 is persisted by the verified contact/audio delivery flow before
-    // this screen mounts. Saving again here would create an anonymous duplicate.
-    if (mock.id === IELTS_MOCK4_ID) return;
-    if (savedRef.current) return;
-    savedRef.current = true;
-    saveExamResult(reportData, {
-      reading_band: rBand,
-      listening_band: lBand,
-      writing_task1_answer: task1 ? (ans.write[task1.id]??'') : undefined,
-      writing_task2_answer: task2 ? (ans.write[task2.id]??'') : undefined,
-      speaking_answers: speakingAnswers,
-    }).catch(()=>{/* silently ignore */});
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   const hasDetailContent = writingEnabled || (mock.sections.some(s=>(s.skill==='listening'||s.skill==='reading')&&!s.comingSoon));
 
   return (
@@ -725,7 +696,7 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
         mockTitle={mock.title}
         date={reportData.date}
         skills={summarySkills}
-        overallBand={readyBands.length > 0 ? partialBand : null}
+        overallBand={null}
       />
 
       {/* Writing & Speaking — pending review notice (sets sin motor propio, o Speaking siempre) */}
@@ -737,7 +708,7 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
               {writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? 'Writing y Speaking' : 'Speaking'} — Pendiente de corrección
             </p>
             <p className="ielts-pending-notice__sub">
-              {mock.id === IELTS_MOCK4_ID ? 'Tus textos y audios han sido enviados al profesor.' : 'Tus respuestas han sido enviadas al profesor.'} Recibirás tus bandas
+              Tus textos y audios han sido enviados al profesor. Recibirás tus bandas
               {writeQs.length > 0 && !isFreeIeltsMock(mock.id) ? ' de Writing y Speaking' : ' de Speaking'}
               {' '}en tu dashboard cuando estén corregidas.
             </p>
@@ -987,7 +958,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   const progressMap = Object.fromEntries(skills.map(sk=>{
     if (comingSoonSkills.has(sk)) return [sk,{done:0,total:0}];
     const sections=getSkillSections(mock,sk);
-    if (mock.id===IELTS_MOCK4_ID && sk==='speaking') {
+    if (sk==='speaking') {
       const speakingIds=sections.flatMap(section=>section.questions).filter(question=>question.type==='speak').map(question=>question.id);
       return [sk,{done:speakingIds.filter(id=>recordings[id]).length,total:speakingIds.length}];
     }
@@ -1002,7 +973,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
       return;
     }
     setFinishError('');
-    setPhase(mock.id===IELTS_MOCK4_ID?'submit':'results');
+    setPhase(isReviewableIeltsMock(mock.id)?'submit':'results');
   },[mock.id,recordingIds]);
 
   const handleRetry = useCallback(()=>{
@@ -1034,10 +1005,6 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   }
 
   if (phase==='submit') {
-    const listeningSections=getSkillSections(mock,'listening').filter(section=>!section.comingSoon);
-    const readingSections=getSkillSections(mock,'reading');
-    const listeningCorrect=listeningSections.reduce((total,section)=>total+scoreSection(section,ans),0);
-    const readingCorrect=readingSections.reduce((total,section)=>total+scoreSection(section,ans),0);
     const writingQuestions=getSkillSections(mock,'writing').flatMap(section=>section.questions) as WriteQuestion[];
     const task1=writingQuestions.find(question=>question.taskNumber===1);
     const task2=writingQuestions.find(question=>question.taskNumber===2);
@@ -1045,12 +1012,14 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
 
     return (
       <div className="prac-shell">
-        <IELTSMock4Submission
-          readingBand={rawToBand(readingCorrect,R_BAND)}
-          listeningBand={listeningSections.length>0?rawToBand(listeningCorrect,L_BAND):null}
+        <IELTSSubmission
+          mockId={mock.id}
+          mockTitle={mock.title}
+          objectiveAnswers={{ fills: ans.fills, mcq: ans.mcq, ms: ans.ms, match: ans.match }}
           writingTask1={task1?ans.write[task1.id]??'':''}
           writingTask2={task2?ans.write[task2.id]??'':''}
           speakingNotes={Object.fromEntries(speakingQuestions.map(question=>[question.id,ans.speak[question.id]??'']))}
+          speakingPrompts={speakingQuestions.map(question=>({ questionId: question.id, partNumber: question.partNumber }))}
           recordings={recordings}
           onBack={()=>setPhase('exam')}
           onSuccess={(receipt)=>{

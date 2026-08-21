@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SAT_GUIDES, SAT_GUIDE_GROUPS } from '@/data/satGuides';
+import { SAT_MARCA } from '@/data/sat-marca';
 
 /**
  * El índice del superhub, en el hub.
@@ -59,6 +60,10 @@ export default function ExamCluster({ accent }: { accent: string }) {
             </div>
           );
         })}
+
+        <p style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.55, marginTop: '0.5rem', opacity: 0.85 }}>
+          {SAT_MARCA}
+        </p>
       </div>
     </section>
   );

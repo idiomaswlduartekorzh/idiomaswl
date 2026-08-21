@@ -9,6 +9,7 @@ import type { MockExam, MCQQuestion, MockSection, QuestionInsight } from '@/data
 import { hasGuidedMock } from '@/data/icfes/guided-registry';
 import { SAT_DOMAIN_GUIDE_SLUG } from '@/data/mocks/sat/module-types';
 import { elegirRamaModulo2, partesServidas } from '@/data/mocks/sat/routing';
+import { SAT_MARCA } from '@/data/sat-marca';
 import type { SatDomain } from '@/data/mocks/sat/module-types';
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
@@ -941,6 +942,11 @@ function ResultsView({
                   completa son 54 preguntas.</>}
           </p>
         )}
+        {isSat && (
+          <p style={{ maxWidth: 580, margin: '0.7rem auto 0', fontSize: '0.76rem', lineHeight: 1.5, opacity: 0.62 }}>
+            {SAT_MARCA}
+          </p>
+        )}
       </div>
 
       <div className="prac-results__sections">
@@ -1416,6 +1422,11 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '.7rem', flexWrap: 'wrap' }}>
             <button onClick={() => setPhase('exam')} className="btn" style={{ fontSize: '1.1rem', padding: '0.9rem 2.5rem' }}>{exam.slug === 'icfes' ? 'Empezar modo examen →' : 'Empezar examen →'}</button>
+            {exam.slug === 'sat' && (
+              <p style={{ maxWidth: 560, margin: '1.4rem auto 0', fontSize: '0.76rem', lineHeight: 1.5, opacity: 0.62 }}>
+                {SAT_MARCA}
+              </p>
+            )}
             {hasGuidedMode && <Link href={`/examenes/icfes/practica/${mock.id}/guiado`} className="btn btn-ghost" style={{ fontSize: '1rem', padding: '0.9rem 1.5rem' }}>Aprender en modo guiado</Link>}
           </div>
 

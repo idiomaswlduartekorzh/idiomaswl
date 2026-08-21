@@ -1,6 +1,7 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { requireAdmin } from '@/lib/auth/require-admin.server'
 
 export type StudentPlan = 'autodidacta' | 'preparacion' | 'intensivo'
 
@@ -9,19 +10,10 @@ export type StudentPlan = 'autodidacta' | 'preparacion' | 'intensivo'
  * Called from the admin dashboard StudentList.
  */
 export async function assignPlan(userId: string, plan: StudentPlan): Promise<void> {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) throw new Error('No autenticado')
+  await requireAdmin()
+  const admin = createAdminClient()
 
-  const { data: caller } = await supabase
-    .from('profiles')
-    .select('role')
-    .eq('id', user.id)
-    .single()
-
-  if (caller?.role !== 'admin') throw new Error('Sin permisos de administrador')
-
-  const { error } = await supabase
+  const { error } = await admin
     .from('profiles')
     .update({ plan })
     .eq('id', userId)

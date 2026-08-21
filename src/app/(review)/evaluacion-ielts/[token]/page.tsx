@@ -41,6 +41,7 @@ export default async function IeltsDelegatedReviewPage({ params }: { params: Pro
     summary: 'Resumen sustentado de la evaluación.',
     strengths: ['Fortaleza concreta'],
     priorities: ['Mejora prioritaria'],
+    ...(review.taskType === 'speaking' ? { audioEvidenceAttested: true } : {}),
   }
 
   return (
@@ -90,8 +91,9 @@ export default async function IeltsDelegatedReviewPage({ params }: { params: Pro
         ) : (
           <section className={styles.assignment}>
             <p className={styles.eyebrow}>Grabaciones y consignas exactas</p>
-            <h2>Speaking completo</h2>
-            <p className={styles.coverage}>Cobertura verificada: <strong>{review.assignment.recordingCoverage.available} de {review.assignment.recordingCoverage.expected} grabaciones</strong></p>
+            <h2>Speaking · muestra diagnóstica</h2>
+            <p className={styles.coverage}>Archivos verificados: <strong>{review.assignment.recordingCoverage.available} de {review.assignment.recordingCoverage.expected} grabaciones</strong></p>
+            <p className={styles.disclaimer}>{review.assignment.evidenceLabel}</p>
             <div className={styles.speakingGrid}>
               {review.assignment.prompts.map(prompt => (
                 <article className={styles.speakingCard} key={prompt.questionId}>

@@ -1,22 +1,23 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { ClipboardCheck } from 'lucide-react'
 import { scoreSubmission } from '@/lib/actions/scoreSubmission'
+import { getIeltsSubmissionAudio } from '@/lib/actions/getIeltsSubmissionAudio'
 import { calculateIeltsWritingBand } from '@/lib/ielts/scoring'
 import type { FullAssessment } from '@/lib/labs/types'
 import type { IeltsDelegatedReviewMetadata, IeltsSpeakingAssessment } from '@/lib/ielts/delegated-review'
 import type { ExamSubmission } from './JoseDashboardServer'
 import IELTSDelegatedReviewCallout from './IELTSDelegatedReviewCallout'
 
-const A = '#c87941'
+const A = '#8f461f'
 const BG = '#f5f0eb'
 const CARD = '#ffffff'
 const TEXT = '#1a1a2e'
 const MUTED = '#6b7280'
 const BORDER = '#e8ddd4'
-const BAND_OPTIONS = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9] as const
+const BAND_OPTIONS = Array.from({ length: 19 }, (_, index) => index / 2)
 
 type Filter = 'pending' | 'reviewed' | 'all'
 
@@ -156,7 +157,7 @@ function SpeakingAssessmentReport({ report }: { report?: IeltsSpeakingAssessment
   )
 }
 
-function BandPicker({ label, value, onChange }: { label: string; value: number; onChange: (band: number) => void }) {
+function BandPicker({ label, value, onChange }: { label: string; value: number | null; onChange: (band: number) => void }) {
   return (
     <div>
       <p style={{ margin: '0 0 6px', fontSize: 11, fontWeight: 800, color: TEXT }}>{label}</p>
@@ -167,7 +168,7 @@ function BandPicker({ label, value, onChange }: { label: string; value: number; 
             key={band}
             onClick={() => onChange(band)}
             aria-pressed={value === band}
-            style={{ padding: '4px 8px', borderRadius: 6, border: `1px solid ${value === band ? A : BORDER}`, background: value === band ? A : 'transparent', color: value === band ? '#fff' : TEXT, fontSize: 11, fontWeight: 700, cursor: 'pointer' }}
+            style={{ minWidth: 44, minHeight: 44, padding: '8px 10px', borderRadius: 7, border: `1px solid ${value === band ? A : BORDER}`, background: value === band ? A : 'transparent', color: value === band ? '#fff' : TEXT, fontSize: 12, fontWeight: 700, cursor: 'pointer' }}
           >
             {band}
           </button>
@@ -177,7 +178,7 @@ function BandPicker({ label, value, onChange }: { label: string; value: number; 
   )
 }
 
-function suggestedWritingBand(item: ExamSubmission): number {
+function suggestedWritingBand(item: ExamSubmission): number | null {
   if (item.writing_band != null) return item.writing_band
   if (item.writing_task1_assessment && item.writing_task2_assessment) {
     return calculateIeltsWritingBand(
@@ -185,31 +186,66 @@ function suggestedWritingBand(item: ExamSubmission): number {
       item.writing_task2_assessment.overallBand,
     )
   }
-  return 5.5
+  return null
 }
 
 export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] }) {
   const router = useRouter()
   const initialItem = items.find(item => !item.reviewed_at) ?? items[0]
   const [filter, setFilter] = useState<Filter>('pending')
+  const [search, setSearch] = useState('')
+  const [mockFilter, setMockFilter] = useState('all')
   const [selected, setSelected] = useState<string | null>(initialItem?.id ?? null)
-  const [writingBand, setWritingBand] = useState(() => initialItem ? suggestedWritingBand(initialItem) : 5.5)
-  const [speakingBand, setSpeakingBand] = useState(() => initialItem?.speaking_band ?? 5.5)
+  const [writingBand, setWritingBand] = useState<number | null>(() => initialItem ? suggestedWritingBand(initialItem) : null)
+  const [speakingBand, setSpeakingBand] = useState<number | null>(() => initialItem?.speaking_band ?? null)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState('')
   const [error, setError] = useState('')
+  const [audioResult, setAudioResult] = useState<{
+    submissionId: string
+    files: { questionId: string; signedUrl: string }[]
+    error: string
+  } | null>(null)
 
+  const mockOptions = useMemo(() => [...new Set(items.map(item => item.mock_title).filter(Boolean) as string[])].sort(), [items])
   const visibleItems = useMemo(() => items.filter(item => {
-    if (filter === 'pending') return !item.reviewed_at
-    if (filter === 'reviewed') return Boolean(item.reviewed_at)
+    if (filter === 'pending' && item.reviewed_at) return false
+    if (filter === 'reviewed' && !item.reviewed_at) return false
+    if (mockFilter !== 'all' && item.mock_title !== mockFilter) return false
+    const query = search.trim().toLowerCase()
+    if (query && ![item.id, item.user_name, item.user_email, item.mock_title].some(value => value?.toLowerCase().includes(query))) return false
     return true
-  }), [filter, items])
+  }), [filter, items, mockFilter, search])
   const active = visibleItems.find(item => item.id === selected) ?? visibleItems[0] ?? null
+  const activeId = active?.id ?? null
+  const activeAudioSignature = Object.keys(active?.speaking_audio_paths ?? {}).sort().join('|')
+
+  useEffect(() => {
+    let cancelled = false
+    if (!activeId || !activeAudioSignature) return
+    getIeltsSubmissionAudio(activeId).then(result => {
+      if (cancelled) return
+      setAudioResult({
+        submissionId: activeId,
+        files: result.ok ? result.files : [],
+        error: result.ok ? '' : result.error,
+      })
+    }).catch(() => {
+      if (!cancelled) {
+        setAudioResult({ submissionId: activeId, files: [], error: 'No fue posible preparar los audios privados.' })
+      }
+    })
+    return () => { cancelled = true }
+  }, [activeAudioSignature, activeId])
+
+  const activeAudioResult = audioResult?.submissionId === activeId ? audioResult : null
+  const audioFiles = activeAudioResult?.files ?? []
+  const audioLoading = Boolean(activeAudioSignature && !activeAudioResult)
 
   function selectItem(item: ExamSubmission) {
     setSelected(item.id)
     setWritingBand(suggestedWritingBand(item))
-    setSpeakingBand(item.speaking_band ?? 5.5)
+    setSpeakingBand(item.speaking_band ?? null)
     setMessage('')
     setError('')
   }
@@ -227,6 +263,15 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
 
   async function handleSave() {
     if (!active) return
+    if (writingBand == null || speakingBand == null) {
+      setError('Selecciona explícitamente las bandas finales de Writing y Speaking.')
+      return
+    }
+    if (active.reviewed_at) {
+      setError('Esta entrega ya tiene una evaluación final y no se puede sobrescribir desde esta acción.')
+      return
+    }
+    if (!window.confirm(`Confirmar evaluación final de ${active.user_name ?? 'la estudiante'}: Writing ${writingBand}, Speaking ${speakingBand}. Esta acción cierra los llamados pendientes.`)) return
     setSaving(true)
     setMessage('')
     setError('')
@@ -269,6 +314,22 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
         </div>
       </div>
 
+      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(220px, 1fr) minmax(180px, 260px)', gap: 8, marginBottom: 14 }}>
+        <label style={{ color: TEXT, fontSize: 11, fontWeight: 700 }}>
+          Buscar estudiante, correo, UUID o mock
+          <input type="search" name="ielts_review_search" value={search} onChange={event => setSearch(event.target.value)}
+            placeholder="Buscar…" style={{ width: '100%', minHeight: 44, marginTop: 4, border: `1px solid ${BORDER}`, borderRadius: 8, padding: '8px 10px', background: CARD, color: TEXT }} />
+        </label>
+        <label style={{ color: TEXT, fontSize: 11, fontWeight: 700 }}>
+          Simulacro
+          <select name="ielts_mock_filter" value={mockFilter} onChange={event => setMockFilter(event.target.value)}
+            style={{ width: '100%', minHeight: 44, marginTop: 4, border: `1px solid ${BORDER}`, borderRadius: 8, padding: '8px 10px', background: CARD, color: TEXT }}>
+            <option value="all">Todos los sets</option>
+            {mockOptions.map(title => <option key={title} value={title}>{title}</option>)}
+          </select>
+        </label>
+      </div>
+
       {visibleItems.length === 0 ? (
         <p style={{ color: MUTED, fontSize: 13, margin: 0 }}>No hay evaluaciones en este estado.</p>
       ) : (
@@ -277,8 +338,8 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
             {visibleItems.map(item => {
               const status = statusFor(item)
               return (
-                <button type="button" key={item.id} onClick={() => selectItem(item)}
-                  style={{ textAlign: 'left', padding: '11px 13px', borderRadius: 10, border: `1px solid ${selected === item.id ? A : BORDER}`, background: selected === item.id ? `${A}14` : CARD, cursor: 'pointer' }}>
+                <button type="button" key={item.id} onClick={() => selectItem(item)} aria-pressed={active?.id === item.id}
+                  style={{ textAlign: 'left', padding: '11px 13px', borderRadius: 10, border: `1px solid ${active?.id === item.id ? A : BORDER}`, background: active?.id === item.id ? `${A}14` : CARD, cursor: 'pointer' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
                     <p style={{ margin: 0, fontSize: 12, fontWeight: 800, color: TEXT }}>{item.user_name ?? item.user_email ?? 'Anónimo'}</p>
                     <span style={{ borderRadius: 999, padding: '2px 6px', color: status.color, background: status.background, fontSize: 9, fontWeight: 800, whiteSpace: 'nowrap' }}>{status.label}</span>
@@ -325,18 +386,20 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
                 </section>
               )}
 
-              {active.speaking_audio_files && active.speaking_audio_files.length > 0 && (
+              {active.speaking_audio_paths && Object.keys(active.speaking_audio_paths).length > 0 && (
                 <section>
                   <h4 style={{ margin: '0 0 6px', fontSize: 11, color: TEXT, textTransform: 'uppercase' }}>Speaking · audios privados</h4>
+                  {audioLoading && <p style={{ color: MUTED, fontSize: 11 }}>Preparando enlaces privados…</p>}
+                  {activeAudioResult?.error && <p role="alert" style={{ color: '#b91c1c', fontSize: 11 }}>{activeAudioResult.error}</p>}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 8 }}>
-                    {active.speaking_audio_files.map(audio => (
+                    {audioFiles.map(audio => (
                       <div key={audio.questionId} style={{ background: CARD, borderRadius: 8, padding: 10, border: `1px solid ${BORDER}` }}>
                         <p style={{ margin: '0 0 5px', fontSize: 10, fontWeight: 800, color: TEXT }}>{audio.questionId.toUpperCase()}</p>
                         <audio controls preload="metadata" src={audio.signedUrl} aria-label={`Respuesta ${audio.questionId.toUpperCase()} de ${active.user_name ?? 'la estudiante'}`} style={{ width: '100%' }} />
                       </div>
                     ))}
                   </div>
-                  <p style={{ margin: '5px 0 0', fontSize: 10, color: MUTED }}>Enlaces privados válidos durante 1 hora.</p>
+                  <p style={{ margin: '5px 0 0', fontSize: 10, color: MUTED }}>Enlaces privados válidos durante 5 minutos; se renuevan al volver a abrir el intento.</p>
                 </section>
               )}
 
@@ -350,9 +413,9 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
                   <BandPicker label="Writing Band final" value={writingBand} onChange={setWritingBand} />
                   <BandPicker label="Speaking Band final" value={speakingBand} onChange={setSpeakingBand} />
                 </div>
-                <button type="button" onClick={handleSave} disabled={saving}
+                <button type="button" onClick={handleSave} disabled={saving || writingBand == null || speakingBand == null || Boolean(active.reviewed_at)}
                   style={{ width: '100%', marginTop: 12, padding: '10px 12px', borderRadius: 9, border: 'none', background: A, color: '#fff', fontSize: 12, fontWeight: 800, cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.7 : 1 }}>
-                  {saving ? 'Guardando revisión…' : `Guardar revisión · W ${writingBand} · S ${speakingBand}`}
+                  {saving ? 'Guardando revisión…' : writingBand == null || speakingBand == null ? 'Selecciona W y S para cerrar' : `Guardar revisión final · W ${writingBand} · S ${speakingBand}`}
                 </button>
                 <p role="status" aria-live="polite" style={{ minHeight: 18, margin: '7px 0 0', color: message ? '#166534' : error ? '#b91c1c' : MUTED, fontSize: 11 }}>
                   {message || error}

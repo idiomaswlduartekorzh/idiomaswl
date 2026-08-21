@@ -121,6 +121,32 @@ for (const [dominio, slug] of Object.entries(mapaDominios ?? {})) {
   }
 }
 
+// ── Puerta 4 · el aviso de marca, en las tres superficies ────────────────────
+//
+// Nuestras páginas reproducen los enunciados literales de College Board porque
+// replicar el formato exige replicar la instrucción. Eso no es problema de derechos
+// —son frases funcionales cortas— sino de marca: un simulacro que imita el examen sin
+// decir de quién es la marca puede leerse como que College Board nos avala.
+//
+// El aviso vive en `src/data/sat-marca.ts` y tiene que aparecer donde el estudiante
+// esté: las guías, el índice del hub y el simulacro. Se comprueba que las tres lo
+// importen, no que exista el fichero: un aviso que nadie pinta no avisa a nadie.
+const SUPERFICIES = [
+  ['src/data/sat-marca.ts', 'la fuente única del aviso'],
+  ['src/app/(site)/examenes/[exam]/guia/[slug]/page.tsx', 'las páginas de guía'],
+  ['src/app/(site)/examenes/[exam]/ExamCluster.tsx', 'el índice del hub'],
+  ['src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx', 'el simulacro'],
+]
+for (const [rel, quien] of SUPERFICIES) {
+  const abs = path.join(ROOT, rel)
+  if (!fs.existsSync(abs)) { fail('—', 'marca', `falta ${rel} (${quien})`); continue }
+  const txt = fs.readFileSync(abs, 'utf8')
+  const buscado = rel.endsWith('sat-marca.ts') ? 'College Board' : 'SAT_MARCA'
+  if (!txt.includes(buscado)) {
+    fail('—', 'marca', `${quien} no lleva el aviso de marca: el simulacro imita el examen sin decir de quién es la marca`)
+  }
+}
+
 // ── Puerta 4 · cada página está completa ─────────────────────────────────────
 for (const g of guias) {
   const s = g.slug
@@ -191,4 +217,4 @@ if (fallos.length) {
   console.log(`\n❌ ${fallos.length} fallo(s). El clúster no se publica así.\n`)
   process.exit(1)
 }
-console.log('\n✅ Las siete puertas del clúster, superadas.\n')
+console.log('\n✅ Las ocho puertas del clúster, superadas.\n')
