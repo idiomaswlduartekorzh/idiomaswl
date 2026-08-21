@@ -26,8 +26,8 @@ const QUIZES = [
     flag: '🇮🇹',
     name: 'Italiano',
     tagline:
-      'Una historia gramatical en seis niveles: reconoce, conjuga, corrige errores y reconstruye una narración completa.',
-    detail: '11 formas · 39 retos',
+      'Elige los tiempos y recorre seis niveles: reconoce, conjuga, corrige errores y reconstruye una narración.',
+    detail: '11 tiempos · 41 retos',
     color: '#009246',
   },
 ]

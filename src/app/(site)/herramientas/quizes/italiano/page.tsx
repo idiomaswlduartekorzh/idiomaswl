@@ -8,11 +8,11 @@ const URL = 'https://www.idiomaswl.com/herramientas/quizes/italiano'
 export const metadata: Metadata = {
   title: 'Quiz de tiempos verbales en italiano — 6 niveles',
   description:
-    'Ejercicio acumulativo de italiano con seis niveles: presente, pasados, trapassato remoto, futuro, condicional e imperativo, sin subjuntivo.',
+    'Elige los tiempos verbales de italiano que quieres practicar y completa seis niveles con resultados al final de cada nivel.',
   alternates: { canonical: URL },
   openGraph: {
     title: 'La macchina del tempo — Quiz de italiano',
-    description: 'Seis niveles autocorregibles para dominar los tiempos verbales italianos.',
+    description: 'Elige los tiempos y completa seis niveles autocorregibles de italiano.',
     url: URL,
     type: 'website',
     siteName: 'Idiomas WeLearn',
@@ -25,7 +25,7 @@ export default function QuizItalianoPage() {
     <>
       <GrammarLessonSchema
         course={{ name: 'Quizes de Italiano', url: 'https://www.idiomaswl.com/herramientas/quizes' }}
-        description="Quiz acumulativo de seis niveles para practicar todos los tiempos principales del italiano, incluido el trapassato remoto, sin formas del subjuntivo."
+        description="Quiz configurable de seis niveles para practicar los tiempos principales del italiano, incluido el trapassato remoto, sin formas del subjuntivo."
         educationalLevel="A2, B1, B2"
         inLanguage="it"
         keywords={['tiempos verbales italiano', 'trapassato remoto', 'passato prossimo', 'condizionale italiano', 'quiz italiano']}
@@ -33,7 +33,7 @@ export default function QuizItalianoPage() {
         url={URL}
       />
       <QuizSchema
-        description="Seis niveles autocorregibles de tiempos verbales italianos, desde opción múltiple hasta reconstrucción narrativa."
+        description="Quiz configurable de tiempos verbales italianos, desde opción múltiple hasta reconstrucción narrativa, con resultados por nivel."
         name="La macchina del tempo"
         url={URL}
       />
