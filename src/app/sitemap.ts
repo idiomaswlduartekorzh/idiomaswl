@@ -52,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Los idiomas salen del registro, no de una lista a mano: así añadir uno no puede
     // dejarlo fuera del sitemap.
     { url: `${BASE}/herramientas`,                        lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/herramientas/quizes`,                 lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/herramientas/quizes/italiano`,        lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
     { url: `${BASE}/herramientas/transcripcion-fonetica`, lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
     ...IDIOMAS_PUBLICADOS.map((idioma) => ({
       url: `${BASE}/herramientas/transcripcion-fonetica/${idioma.slug}`,

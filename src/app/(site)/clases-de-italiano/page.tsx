@@ -567,7 +567,7 @@ export default function ClasesDeItalianoPage() {
             { href: '/practica/italiano/a1/lectura', title: 'Comprensión lectora', desc: 'Textos auténticos con preguntas al estilo del examen, para entrenar lectura rápida y detalle.' },
             { href: '/practica/italiano/a1/escritura', title: 'Escritura integrada', desc: 'Lee, prepara vocabulario y escribe una respuesta real — con modelo de nivel para comparar la tuya.' },
             { href: '/practica/italiano/a1/habla', title: 'Expresión oral', desc: 'Frases y estructuras para hablar desde el primer día. Clave para la prueba oral del B1 de ciudadanía.' },
-            { href: '/practica/italiano/tiempos-verbales', title: 'Tiempos verbales', desc: 'Passato prossimo, imperfetto, congiuntivo y condizionale explicados desde el español, con práctica.' },
+            { href: '/herramientas/quizes/italiano', title: 'Quiz de tiempos verbales', desc: 'Seis niveles acumulativos de presente, pasados, futuro y condicional, con corrección inmediata y sin subjuntivo.' },
             { href: '/practica/italiano/b1', title: 'Nivel B1 completo', desc: 'El nivel exacto que exige el Estado italiano para la ciudadanía: gramática, escucha, lectura y escritura.' },
             { href: '/examenes/cils-celi', title: 'Simulacros CILS y CELI', desc: 'Practica con el formato real del examen y recibe un informe con tu desempeño por sección.' },
             { href: '/nivel-radar', title: 'Descubre tu nivel real', desc: 'Si no sabes por dónde empezar, el diagnóstico de nivel te ubica en el MCER antes de la primera clase.' },

@@ -56,15 +56,6 @@ export default function ItalianoPage() {
         accent="#009246"
         levels={NIVELES}
         beforeLevels={<HistoriasCard lang="italiano" />}
-        tools={[
-          {
-            name: 'La macchina del tempo',
-            desc: 'Acumulativo autocorregible: 11 formas verbales, 39 retos y seis niveles sin subjuntivo.',
-            href: '/practica/italiano/tiempos-verbales',
-            tag: '6 niveles',
-          },
-        ]}
-        toolsEyebrow="Laboratorio de gramática"
       />
     </>
   );

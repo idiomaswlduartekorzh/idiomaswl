@@ -47,6 +47,16 @@ interface Tool {
 
 const TOOLS: Tool[] = [
   {
+    slug: 'quizes',
+    href: '/herramientas/quizes',
+    flag: '🧠',
+    name: 'Quizes por idioma',
+    tagline:
+      'Entrena gramática y uso real con recorridos autocorregibles, niveles progresivos y resultados inmediatos.',
+    detail: 'Italiano · 6 niveles',
+    color: SKILL_ACCENT.gramatica.light,
+  },
+  {
     slug: 'fonetica-ingles',
     href: '/herramientas/transcripcion-fonetica',
     flag: '🔤',

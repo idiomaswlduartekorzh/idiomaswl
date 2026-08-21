@@ -476,11 +476,11 @@ export default function ItalianTenseQuest() {
     <main className="wlp-page" style={{ '--wlp-accent': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
       <div className="wlp-shell">
         <nav aria-label="Migas de pan" className="wlp-breadcrumb">
-          <Link href="/practica">Práctica</Link>
+          <Link href="/herramientas">Herramientas</Link>
           <span aria-hidden="true">/</span>
-          <Link href="/practica/italiano">Italiano</Link>
+          <Link href="/herramientas/quizes">Quizes</Link>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">Tiempos verbales</span>
+          <span aria-current="page">Italiano</span>
         </nav>
 
         <header className={`wlp-hero wlp-hero--compact ${s.hero}`}>
@@ -574,7 +574,7 @@ export default function ItalianTenseQuest() {
                       Siguiente nivel <ArrowRight size={16} />
                     </button>
                   ) : (
-                    <Link className="wlp-btn" href="/practica/italiano">Volver a Italiano</Link>
+                    <Link className="wlp-btn" href="/herramientas/quizes">Volver a Quizes</Link>
                   )}
                 </div>
               </div>
@@ -631,7 +631,7 @@ export default function ItalianTenseQuest() {
         <nav aria-label="Siguiente práctica" className="wlp-next">
           <Link href="/practica/italiano/a2/gramatica">Repasar gramática A2</Link>
           <Link href="/practica/italiano/b1/gramatica">Profundizar en B1</Link>
-          <Link href="/practica/italiano">Ver todo Italiano</Link>
+          <Link href="/herramientas/quizes">Ver más quizes</Link>
         </nav>
       </div>
     </main>
