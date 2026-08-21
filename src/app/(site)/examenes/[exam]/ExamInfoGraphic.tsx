@@ -1,28 +1,7 @@
 'use client';
 
-import { motion, useInView, type Variants } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
+import { motion, type Variants } from 'framer-motion';
 import type { Exam } from '@/data/exams';
-
-function Counter({ to, duration = 1.4 }: { to: number; duration?: number }) {
-  const [val, setVal] = useState(0);
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: '-60px' });
-
-  useEffect(() => {
-    if (!inView) return;
-    const start = performance.now();
-    const tick = (now: number) => {
-      const t = Math.min((now - start) / (duration * 1000), 1);
-      const ease = 1 - Math.pow(1 - t, 3);
-      setVal(Math.round(ease * to));
-      if (t < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  }, [inView, to, duration]);
-
-  return <span ref={ref}>{val}</span>;
-}
 
 function SectionArc({ pct, color, size = 72 }: { pct: number; color: string; size?: number }) {
   const r = size / 2 - 6;
@@ -60,7 +39,7 @@ export default function ExamInfoGraphic({ exam }: Props) {
   const scoreMax = scoreMaxPart.trim().match(/^[\d.]+/)?.[0] ?? scoreMaxPart.trim();
 
   return (
-    <div>
+    <div className="wl-exam-info-graphic">
       {/* ── Hero dark header ── */}
       <div
         className="wl-exam-hero"

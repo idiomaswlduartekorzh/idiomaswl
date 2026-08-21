@@ -218,6 +218,84 @@
   padding-block: 1.3rem;
 }
 
+.iosSection {
+  background: #f2f2f7;
+  padding-block: clamp(2.25rem, 6vw, 4.75rem);
+}
+
+.ios {
+  backdrop-filter: blur(28px) saturate(140%);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.94);
+  border-radius: 30px;
+  box-shadow: 0 24px 65px rgba(36, 52, 82, 0.11);
+  color: #1d1d1f;
+  overflow: hidden;
+}
+
+.ios::after {
+  background: radial-gradient(circle, rgba(0, 122, 255, 0.2) 1px, transparent 1px);
+  background-size: 18px 18px;
+  border: 0;
+  border-radius: 0;
+  height: 210px;
+  mask-image: linear-gradient(135deg, transparent, #000);
+  opacity: 0.42;
+  right: 0;
+  top: 0;
+  width: 280px;
+}
+
+.ios .eyebrow {
+  color: #0569d8;
+}
+
+.ios .header h2,
+.ios .editorialNote h3 {
+  color: #1d1d1f;
+}
+
+.ios .header > div > p:last-child {
+  color: #636366;
+}
+
+.ios .duration {
+  background: rgba(118, 118, 128, 0.1);
+  border: 0;
+  border-radius: 999px;
+  color: #3a3a3c;
+}
+
+.ios .playerShell {
+  background: rgba(242, 242, 247, 0.92);
+  border: 1px solid rgba(60, 60, 67, 0.12);
+  border-radius: 18px;
+}
+
+.ios .body {
+  background: transparent;
+  gap: 1px;
+  margin-top: 1.35rem;
+}
+
+.ios .episodeMap {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.ios .editorialNote {
+  background: rgba(0, 122, 255, 0.07);
+  border-left-color: rgba(0, 122, 255, 0.13);
+}
+
+.ios .editorialNote p:last-child {
+  color: #52525a;
+}
+
+.ios :global(details) {
+  border-radius: 0 0 24px 24px;
+  overflow: hidden;
+}
+
 @media (max-width: 760px) {
   .header {
     grid-template-columns: 1fr;
@@ -247,6 +325,15 @@
   }
 
   .playerShell {
+    margin-inline: 1rem;
+  }
+
+  .ios {
+    border-radius: 24px;
+    margin-inline: 0.75rem;
+  }
+
+  .ios .playerShell {
     margin-inline: 1rem;
   }
 }

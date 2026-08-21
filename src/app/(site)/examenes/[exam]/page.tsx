@@ -9,6 +9,7 @@ import ExamCluster from './ExamCluster';
 import { EXAM_GUIDES } from '@/data/examGuides';
 import PodcastFeature from '@/components/practica/PodcastFeature';
 import { TOEFL_STRATEGY_MAP_PODCAST } from '@/data/practica/podcasts/your-2026-toefl-ibt-strategy-map';
+import toeflStyles from './toefl-ios.module.css';
 
 export async function generateStaticParams() {
   return Object.keys(EXAMS).map(slug => ({ exam: slug }));
@@ -47,12 +48,12 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   if (!exam) notFound();
   const guide = EXAM_GUIDES[slug];
 
-  return (
+  const content = (
     <>
       <ExamJsonLd exam={exam} guide={guide} />
 
       {/* Breadcrumb */}
-      <div style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--line-soft)', padding: '0.6rem 0' }}>
+      <div className={slug === 'toefl' ? toeflStyles.breadcrumbBar : undefined} style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--line-soft)', padding: '0.6rem 0' }}>
         <div className="wrap" style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
           <Link href="/examenes" style={{ color: 'var(--muted)' }}>Exámenes</Link>
           <span>›</span>
@@ -67,6 +68,7 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
         <PodcastFeature
           {...TOEFL_STRATEGY_MAP_PODCAST}
           compact
+          variant="ios"
           links={[
             { href: '/practica/toefl#toefl-strategy-map', label: 'Episode notes and study map' },
             { href: '/practica/toefl/reading', label: 'Practise Reading' },
@@ -87,4 +89,6 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
       {guide && <ExamGuideBlock guide={guide} examName={exam.name} accent={exam.color} />}
     </>
   );
+
+  return slug === 'toefl' ? <div className={toeflStyles.page}>{content}</div> : content;
 }

@@ -23,6 +23,7 @@ type PodcastFeatureProps = {
   notes?: EpisodeSection[];
   compact?: boolean;
   accent?: string;
+  variant?: 'default' | 'ios';
 };
 
 export default function PodcastFeature({
@@ -38,6 +39,7 @@ export default function PodcastFeature({
   notes,
   compact = false,
   accent = '#2563eb',
+  variant = 'default',
 }: PodcastFeatureProps) {
   const tone = {
     '--podcast-accent': accent,
@@ -46,12 +48,12 @@ export default function PodcastFeature({
   return (
     <section
       id={id}
-      className={`${styles.section}${compact ? ` ${styles.compactSection}` : ''}`}
+      className={`${styles.section}${compact ? ` ${styles.compactSection}` : ''}${variant === 'ios' ? ` ${styles.iosSection}` : ''}`}
       aria-labelledby={`${id}-heading`}
       style={tone}
     >
       <div className="wrap">
-        <div className={`${styles.panel}${compact ? ` ${styles.compact}` : ''}`}>
+        <div className={`${styles.panel}${compact ? ` ${styles.compact}` : ''}${variant === 'ios' ? ` ${styles.ios}` : ''}`}>
           <div className={styles.header}>
             <div>
               <p className={styles.eyebrow}>

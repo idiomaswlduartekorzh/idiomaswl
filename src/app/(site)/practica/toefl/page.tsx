@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, BookOpenText, Headphones, Mic2, PenLine } from 'lucide-react';
+import { ArrowRight, BookOpenText, Check, Headphones, Mic2, PenLine } from 'lucide-react';
 
 import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import PodcastFeature from '@/components/practica/PodcastFeature';
 import toeflStrategyMapNotes, { TOEFL_STRATEGY_MAP_PODCAST } from '@/data/practica/podcasts/your-2026-toefl-ibt-strategy-map';
 
-import styles from './page.module.css';
+import styles from './ios.module.css';
 
 export const metadata: Metadata = {
   title: 'Práctica TOEFL 2026: 4 secciones y 20 simulacros',
@@ -67,9 +67,35 @@ export default function TOEFLPage() {
           <nav className={styles.breadcrumb} aria-label="Breadcrumb">
             <Link href="/practica">Práctica</Link><span>›</span><span>TOEFL iBT</span>
           </nav>
-          <p className={styles.kicker}>TOEFL iBT · formato posterior al 21 de enero de 2026</p>
-          <h1>Práctica TOEFL 2026 para las cuatro secciones</h1>
-          <p className={styles.lead}>Entrena Reading, Listening, Writing y Speaking por tarea y después comprueba la transferencia en 20 simulacros originales de WeLearn. El TOEFL oficial adapta Reading y Listening; nuestros recorridos son fijos y no oficiales para que puedas comparar intentos.</p>
+          <div className={styles.heroPanel}>
+            <div className={styles.heroCopy}>
+              <p className={styles.kicker}>TOEFL iBT · formato posterior al 21 de enero de 2026</p>
+              <h1>Práctica TOEFL 2026 para las cuatro secciones</h1>
+              <p className={styles.lead}>Entrena Reading, Listening, Writing y Speaking por tarea y después comprueba la transferencia en 20 simulacros originales de WeLearn. El TOEFL oficial adapta Reading y Listening; nuestros recorridos son fijos y no oficiales para que puedas comparar intentos.</p>
+              <div className={styles.heroActions}>
+                <Link href="/examenes/toefl#simulacros" className={styles.primaryAction}>Ver los 20 simulacros <ArrowRight size={17} aria-hidden="true" /></Link>
+                <a href="#toefl-strategy-map" className={styles.secondaryAction}>Escuchar la guía</a>
+              </div>
+            </div>
+
+            <aside className={styles.studySheet} aria-label="Recorrido recomendado de práctica TOEFL">
+              <div className={styles.sheetHandle} aria-hidden="true" />
+              <div className={styles.sheetHeader}>
+                <div><span>Plan de estudio</span><strong>Tu recorrido TOEFL</strong></div>
+                <span className={styles.readyBadge}><Check size={14} aria-hidden="true" /> Listo</span>
+              </div>
+              <ol className={styles.sheetSteps}>
+                {routes.map(({ title, Icon }, index) => (
+                  <li key={title}>
+                    <span className={styles.stepIcon}><Icon size={18} aria-hidden="true" /></span>
+                    <span><small>Paso {index + 1}</small><strong>{title}</strong></span>
+                    <span className={styles.stepCheck}><Check size={14} aria-hidden="true" /></span>
+                  </li>
+                ))}
+              </ol>
+              <p className={styles.sheetNote}>Practica una tarea, identifica el error y confirma la mejora en un simulacro completo.</p>
+            </aside>
+          </div>
           <div className={styles.facts} aria-label="TOEFL iBT 2026 at a glance">
             <div><strong>≈ 2 h</strong><span>incluyendo instrucciones</span></div>
             <div><strong>1–6</strong><span>bandas de medio punto</span></div>
@@ -82,6 +108,7 @@ export default function TOEFLPage() {
       <PodcastFeature
         {...TOEFL_STRATEGY_MAP_PODCAST}
         notes={toeflStrategyMapNotes}
+        variant="ios"
         links={[
           { href: '/practica/toefl/reading', label: 'Reading route' },
           { href: '/practica/toefl/listening', label: 'Listening route' },
