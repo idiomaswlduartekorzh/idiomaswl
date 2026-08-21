@@ -11,6 +11,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check:wompi-env": "node --experimental-strip-types --no-warnings scripts/check-wompi-env.mjs",
+    "test:wompi-config": "node --experimental-strip-types --no-warnings --test tests/wompi-config.test.mjs",
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
     "check:seo-snippets": "node --experimental-strip-types --no-warnings scripts/check-seo-snippets.mjs",
     "check:fonetica": "node --experimental-strip-types --no-warnings scripts/check-fonetica.mjs",
