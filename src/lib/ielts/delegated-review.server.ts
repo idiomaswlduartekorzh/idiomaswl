@@ -5,7 +5,9 @@ import { createAdminClient } from '@/lib/supabase/admin';
 import { IELTS_SPEAKING_BUCKET } from './mock4-submission';
 import { buildIeltsScoreSummary } from './scoring';
 import {
+  buildIeltsDelegatedAgentWorkflow,
   buildDelegatedReviewMetadata,
+  findMissingIeltsSpeakingAudioIds,
   IELTS_OFFICIAL_RUBRICS,
   type IeltsDelegatedReviewCase,
   type IeltsDelegatedReviewInput,
@@ -186,6 +188,7 @@ async function buildReviewCase(
           minWords: assignment.minWords,
           imageUrl: assignment.imageUrl,
         },
+        agentWorkflow: buildIeltsDelegatedAgentWorkflow(context.task),
         submissionEndpoint,
         responseContract: responseContract(context.task),
       },
@@ -199,6 +202,15 @@ async function buildReviewCase(
 
   const audioPaths = context.submission.speaking_audio_paths ?? {};
   const notes = context.submission.speaking_answers ?? {};
+  const missingAudioIds = findMissingIeltsSpeakingAudioIds(speakingAssignment, audioPaths);
+  if (missingAudioIds.length > 0) {
+    return {
+      ok: false,
+      status: 409,
+      message: `Faltan ${missingAudioIds.length} grabaciones requeridas de Speaking (${missingAudioIds.join(', ')}). No se puede emitir una banda completa sin escucharlas.`,
+    };
+  }
+
   const admin = createAdminClient();
   const prompts: IeltsDelegatedSpeakingPrompt[] = await Promise.all(speakingAssignment.map(async prompt => {
     const audioPath = audioPaths[prompt.questionId];
@@ -214,8 +226,8 @@ async function buildReviewCase(
     };
   }));
 
-  if (!prompts.some(prompt => prompt.audioUrl || prompt.notes)) {
-    return { ok: false, status: 409, message: 'La entrega no contiene audios ni notas de Speaking.' };
+  if (prompts.some(prompt => !prompt.audioUrl)) {
+    return { ok: false, status: 409, message: 'No pudimos preparar todas las grabaciones privadas. Solicita un llamado nuevo.' };
   }
 
   return {
@@ -229,7 +241,16 @@ async function buildReviewCase(
       taskLabel: taskLabel(context.task),
       expiresAt: context.invite.expires_at,
       rubric,
-      assignment: { kind: 'speaking', prompts },
+      assignment: {
+        kind: 'speaking',
+        prompts,
+        recordingCoverage: {
+          available: prompts.length,
+          expected: speakingAssignment.length,
+          complete: true,
+        },
+      },
+      agentWorkflow: buildIeltsDelegatedAgentWorkflow(context.task),
       submissionEndpoint,
       responseContract: responseContract(context.task),
     },

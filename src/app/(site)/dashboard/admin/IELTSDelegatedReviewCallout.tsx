@@ -27,15 +27,16 @@ export default function IELTSDelegatedReviewCallout({ submission }: { submission
   const available: Record<IeltsDelegatedReviewTask, boolean> = {
     writing_task_1: Boolean(submission.writing_task1_answer?.trim()),
     writing_task_2: Boolean(submission.writing_task2_answer?.trim()),
-    speaking: Boolean(
-      (submission.speaking_audio_paths && Object.keys(submission.speaking_audio_paths).length > 0)
-      || (submission.speaking_answers && Object.values(submission.speaking_answers).some(Boolean)),
-    ),
+    speaking: Boolean(submission.speaking_audio_paths && Object.keys(submission.speaking_audio_paths).length > 0),
   }
+  const speakingAudioCount = submission.speaking_audio_paths ? Object.keys(submission.speaking_audio_paths).length : 0
 
   const fullUrl = invite?.url ?? ''
   const prompt = useMemo(() => {
     if (!invite || !fullUrl) return ''
+    const speakingProtocol = invite.task === 'speaking'
+      ? `\nProtocolo auditivo obligatorio: escucha todas las grabaciones antes de puntuar. Evalúa Fluency and Coherence, Lexical Resource, Grammatical Range and Accuracy y Pronunciation. Para pronunciación usa únicamente evidencia audible: inteligibilidad, sonidos, acento léxico, ritmo, entonación y connected speech. No deduzcas pronunciación desde notas o transcripciones y no penalices un acento solo por no ser nativo. Si algún audio no se reproduce o no contiene voz evaluable, no envíes una banda y avísame.`
+      : ''
     return `Necesito que evalúes una tarea IELTS mediante un llamado delegado de WeLearn.
 
 Código del llamado: ${invite.callCode}
@@ -44,6 +45,7 @@ Tarea: ${invite.taskLabel}
 Rúbrica: ${invite.rubricVersion}
 Fuente oficial: ${invite.rubricUrl}
 Enlace privado de un solo uso: ${fullUrl}
+${speakingProtocol}
 
 Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los descriptores oficiales enlazados. Evalúa los cuatro criterios, justifica cada banda con evidencia, registra fortalezas y prioridades y envía el reporte desde la misma página. No solicites credenciales de administrador y no intentes acceder a otros estudiantes. La banda es una estimación pedagógica, no un resultado oficial de IELTS.`
   }, [fullUrl, invite, submission.id])
@@ -113,6 +115,9 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
           </button>
         ))}
       </div>
+      <p style={{ margin: '7px 0 0', color: MUTED, fontSize: 9 }}>
+        Speaking: {speakingAudioCount > 0 ? `${speakingAudioCount} audios detectados; se validarán contra todas las consignas antes de crear el llamado.` : 'sin grabaciones disponibles.'}
+      </p>
 
       {invite && (
         <div style={{ marginTop: 11, padding: 11, borderRadius: 10, background: '#f8f4f0' }}>

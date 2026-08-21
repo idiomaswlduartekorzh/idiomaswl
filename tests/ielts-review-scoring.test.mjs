@@ -7,6 +7,8 @@ import {
   normalizeIeltsBand,
 } from '../src/lib/ielts/scoring.ts'
 import {
+  buildIeltsDelegatedAgentWorkflow,
+  findMissingIeltsSpeakingAudioIds,
   IELTS_OFFICIAL_RUBRICS,
   validateIeltsDelegatedReviewInput,
 } from '../src/lib/ielts/delegated-review.ts'
@@ -77,4 +79,18 @@ test('delegated review validation accepts a complete report and rejects rubric d
   assert.equal(validateIeltsDelegatedReviewInput('writing_task_1', valid).ok, false)
   assert.equal(validateIeltsDelegatedReviewInput('writing_task_2', { ...valid, overallBand: 6.25 }).ok, false)
   assert.equal(validateIeltsDelegatedReviewInput('writing_task_2', { ...valid, overallBand: 7 }).ok, false)
+})
+
+test('Speaking delegated calls require every assigned recording', () => {
+  const prompts = [{ questionId: 'sp1' }, { questionId: 'sp2' }, { questionId: 'sp3' }]
+  assert.deepEqual(findMissingIeltsSpeakingAudioIds(prompts, { sp1: 'one.webm', sp3: 'three.webm' }), ['sp2'])
+  assert.deepEqual(findMissingIeltsSpeakingAudioIds(prompts, { sp1: 'one.webm', sp2: 'two.webm', sp3: 'three.webm' }), [])
+})
+
+test('Speaking workflow requires audible pronunciation evidence and one-use submission', () => {
+  const workflow = buildIeltsDelegatedAgentWorkflow('speaking')
+  assert.equal(workflow.version, 'welearn-ielts-delegated-review-v1')
+  assert.equal(workflow.steps.some(step => step.includes('todas las grabaciones')), true)
+  assert.equal(workflow.evidenceRequirements.some(item => item.includes('evidencia audible')), true)
+  assert.equal(workflow.evidenceRequirements.some(item => item.includes('acento solo por no ser nativo')), true)
 })

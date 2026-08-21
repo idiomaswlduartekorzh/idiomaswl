@@ -77,6 +77,17 @@ export interface IeltsDelegatedSpeakingPrompt {
 export interface IeltsDelegatedSpeakingAssignment {
   kind: 'speaking';
   prompts: IeltsDelegatedSpeakingPrompt[];
+  recordingCoverage: {
+    available: number;
+    expected: number;
+    complete: boolean;
+  };
+}
+
+export interface IeltsDelegatedAgentWorkflow {
+  version: 'welearn-ielts-delegated-review-v1';
+  steps: string[];
+  evidenceRequirements: string[];
 }
 
 export interface IeltsDelegatedReviewCase {
@@ -89,6 +100,7 @@ export interface IeltsDelegatedReviewCase {
   expiresAt: string;
   rubric: IeltsOfficialRubricReference;
   assignment: IeltsDelegatedWritingAssignment | IeltsDelegatedSpeakingAssignment;
+  agentWorkflow: IeltsDelegatedAgentWorkflow;
   submissionEndpoint: string;
   responseContract: {
     evaluatorName: string;
@@ -160,6 +172,55 @@ export function taskShortCode(task: IeltsDelegatedReviewTask): string {
   if (task === 'writing_task_1') return 'W1';
   if (task === 'writing_task_2') return 'W2';
   return 'SP';
+}
+
+export function findMissingIeltsSpeakingAudioIds(
+  prompts: readonly { questionId: string }[],
+  audioPaths: Record<string, string> | null | undefined,
+): string[] {
+  return prompts
+    .map(prompt => prompt.questionId)
+    .filter(questionId => !audioPaths?.[questionId]?.trim());
+}
+
+export function buildIeltsDelegatedAgentWorkflow(task: IeltsDelegatedReviewTask): IeltsDelegatedAgentWorkflow {
+  const sharedSteps = [
+    'Verifica el código del llamado, el UUID del intento, la tarea y la versión de la rúbrica antes de evaluar.',
+    'Contrasta la evidencia entregada con la consigna exacta y con los descriptores oficiales enlazados.',
+    'Asigna una banda de 0 a 9, en pasos de 0.5, a cada uno de los cuatro criterios y justifica cada decisión.',
+    'Calcula la banda de la tarea como el promedio de los cuatro criterios, redondeado al medio punto más cercano.',
+    'Envía el reporte completo una sola vez al submissionEndpoint; una entrega válida cierra el llamado.',
+  ];
+
+  if (task !== 'speaking') {
+    return {
+      version: 'welearn-ielts-delegated-review-v1',
+      steps: sharedSteps,
+      evidenceRequirements: [
+        'Cita rasgos verificables del texto de la estudiante; no inventes intención, contenido ni errores que no aparezcan en la respuesta.',
+        'Distingue el cumplimiento de la tarea, la organización, el léxico y la gramática según la tarea de Writing asignada.',
+      ],
+    };
+  }
+
+  return {
+    version: 'welearn-ielts-delegated-review-v1',
+    steps: [
+      sharedSteps[0],
+      'Escucha todas las grabaciones en orden y compara cada respuesta con su pregunta, cue card y preguntas de seguimiento.',
+      sharedSteps[1],
+      sharedSteps[2],
+      sharedSteps[3],
+      sharedSteps[4],
+    ],
+    evidenceRequirements: [
+      'No infieras pronunciación desde notas o transcripciones: sustenta Pronunciation únicamente en evidencia audible.',
+      'Para Fluency and Coherence observa continuidad, pausas, autocorrecciones, desarrollo y conexión de ideas.',
+      'Para Lexical Resource y Grammatical Range and Accuracy cita elecciones lingüísticas audibles y su efecto en la comunicación.',
+      'Para Pronunciation considera inteligibilidad, sonidos, acento léxico, ritmo, entonación y connected speech; no penalices un acento solo por no ser nativo.',
+      'Si una grabación requerida no se reproduce o no contiene voz evaluable, no inventes una banda: solicita al administrador un llamado nuevo.',
+    ],
+  };
 }
 
 export function normalizeIeltsHalfBand(value: unknown): number | null {

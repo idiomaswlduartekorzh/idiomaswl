@@ -18,6 +18,7 @@
 .rubricCard,
 .assignment,
 .evaluation,
+.workflowCard,
 .agentContract,
 .expired {
   background: #fff;
@@ -60,7 +61,8 @@
 .disclaimer { grid-column: 1 / -1; margin: 0; font-size: 0.75rem; }
 
 .assignment,
-.evaluation { padding: 26px; }
+.evaluation,
+.workflowCard { padding: 26px; }
 .prompt { white-space: pre-wrap; line-height: 1.65; color: #343447; }
 .chart { margin: 18px 0; border-radius: 14px; overflow: hidden; border: 1px solid #e8ddd4; background: #fafafa; }
 .chart img { width: 100%; height: auto; display: block; }
@@ -76,6 +78,12 @@
 .speakingCard pre { white-space: pre-wrap; font: inherit; padding: 12px; background: #fff; border-radius: 9px; }
 .speakingCard audio { width: 100%; margin-top: 8px; }
 .missing { color: #9f1239; }
+.coverage { display: inline-flex; margin: 0 0 16px; padding: 7px 10px; border-radius: 999px; background: #ecfdf5; color: #166534; font-size: 0.78rem; }
+.workflowCard h2 { margin: 4px 0 14px; }
+.workflowCard h3 { margin: 18px 0 8px; font-size: 0.95rem; }
+.workflowCard ol,
+.workflowCard ul { margin: 0; padding-left: 1.25rem; color: #343447; }
+.workflowCard li { margin: 7px 0; line-height: 1.55; font-size: 0.86rem; }
 
 .agentContract { padding: 16px 20px; }
 .agentContract summary { cursor: pointer; font-weight: 800; }
@@ -125,7 +133,8 @@
   .speakingGrid { grid-template-columns: 1fr; }
   .hero,
   .assignment,
-  .evaluation { padding: 20px; }
+  .evaluation,
+  .workflowCard { padding: 20px; }
   .rubricCard a { justify-self: start; }
   .answerHeader { flex-direction: column; }
 }

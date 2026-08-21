@@ -24,6 +24,15 @@ El panel puede crear tres llamados independientes por entrega: `Writing Task 1`,
 - caducidad de 24 horas, un solo uso y revocación automática al regenerar;
 - sin correo de la estudiante, sin listado de entregas y sin acceso a otras rutas admin.
 
+### Flujo operativo de Speaking para agentes
+
+1. El administrador crea `Llamado · Speaking` desde la ficha del intento y copia el mensaje en ChatGPT, Claude o el evaluador elegido.
+2. Antes de crear el llamado, el servidor compara las grabaciones con todas las consignas de Speaking del mock. Si falta una, no permite emitir una banda completa y muestra los IDs faltantes.
+3. El agente abre el enlace limitado o hace `GET` al endpoint incluido. Recibe el código del llamado, UUID, consignas exactas, cuatro URLs firmadas de audio, rúbrica, protocolo y contrato de respuesta; nunca recibe nombre ni correo.
+4. El agente escucha todas las grabaciones y puntúa `Fluency and Coherence`, `Lexical Resource`, `Grammatical Range and Accuracy` y `Pronunciation`. Pronunciation debe sustentarse en evidencia audible, no en notas o transcripciones.
+5. Si un audio no se reproduce o no contiene voz evaluable, el agente no debe inventar una banda: informa al administrador para regenerar el llamado o corregir la entrega.
+6. El agente envía una sola evaluación con banda por criterio, razones, resumen, fortalezas y prioridades. El servidor valida el promedio, reclama atómicamente el llamado y añade Speaking al consolidado L/R/W/S.
+
 La página `/evaluacion-ielts/[token]` sirve para revisión visual. El endpoint `/api/ielts/delegated-reviews/[token]` permite que un agente haga `GET` para leer el contrato y `POST` para entregar JSON estructurado. El servidor valida los cuatro criterios específicos de la tarea, bandas de 0 a 9 en pasos de 0.5, justificaciones, fortalezas y prioridades.
 
 Los reportes delegados de Task 1 y Task 2 se guardan en columnas separadas de los reportes automáticos, para conservar ambos. Al calcular Writing se prefiere el reporte delegado de cada tarea cuando existe y se mantiene el peso Task 1 × 1, Task 2 × 2. Speaking guarda su reporte y banda. Cada entrega válida recompone el consolidado con Listening, Reading, Writing y Speaking sin marcar por sí sola la aprobación humana final.

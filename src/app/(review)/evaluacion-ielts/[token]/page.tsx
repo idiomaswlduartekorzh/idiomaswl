@@ -91,6 +91,7 @@ export default async function IeltsDelegatedReviewPage({ params }: { params: Pro
           <section className={styles.assignment}>
             <p className={styles.eyebrow}>Grabaciones y consignas exactas</p>
             <h2>Speaking completo</h2>
+            <p className={styles.coverage}>Cobertura verificada: <strong>{review.assignment.recordingCoverage.available} de {review.assignment.recordingCoverage.expected} grabaciones</strong></p>
             <div className={styles.speakingGrid}>
               {review.assignment.prompts.map(prompt => (
                 <article className={styles.speakingCard} key={prompt.questionId}>
@@ -105,6 +106,14 @@ export default async function IeltsDelegatedReviewPage({ params }: { params: Pro
             </div>
           </section>
         )}
+
+        <section className={styles.workflowCard} aria-labelledby="agent-workflow-title">
+          <p className={styles.eyebrow}>Protocolo del evaluador</p>
+          <h2 id="agent-workflow-title">Flujo de trabajo obligatorio</h2>
+          <ol>{review.agentWorkflow.steps.map(step => <li key={step}>{step}</li>)}</ol>
+          <h3>Evidencia mínima</h3>
+          <ul>{review.agentWorkflow.evidenceRequirements.map(requirement => <li key={requirement}>{requirement}</li>)}</ul>
+        </section>
 
         <details className={styles.agentContract}>
           <summary>Contrato API para ChatGPT, Claude u otro agente</summary>

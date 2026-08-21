@@ -6,12 +6,14 @@ import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { ALL_ADMIN_EMAILS } from '@/lib/config/admins'
 import {
+  findMissingIeltsSpeakingAudioIds,
   IELTS_OFFICIAL_RUBRICS,
   isIeltsDelegatedReviewTask,
   taskLabel,
   taskShortCode,
   type IeltsDelegatedReviewTask,
 } from '@/lib/ielts/delegated-review'
+import { getIeltsSpeakingAssignment } from '@/lib/labs/exam-bridge/ielts'
 import { getIeltsReviewBlueprintByTitle } from '@/lib/ielts/review-blueprint'
 import { IELTS_SUBMISSION_ID_PATTERN } from '@/lib/ielts/submission-token.server'
 
@@ -82,16 +84,24 @@ export async function createIeltsDelegatedReviewInvite(
     const blueprint = getIeltsReviewBlueprintByTitle(submission.mock_title)
     if (!blueprint) return { ok: false, error: 'Este simulacro todavía no está conectado al blueprint de revisión.' }
 
-    const hasArtifact = taskValue === 'writing_task_1'
-      ? Boolean(submission.writing_task1_answer?.trim())
-      : taskValue === 'writing_task_2'
-        ? Boolean(submission.writing_task2_answer?.trim())
-        : Boolean(
-          (submission.speaking_audio_paths && Object.keys(submission.speaking_audio_paths).length > 0)
-          || (submission.speaking_answers && Object.values(submission.speaking_answers).some(Boolean)),
-        )
+    if (taskValue === 'writing_task_1' && !submission.writing_task1_answer?.trim()) {
+      return { ok: false, error: `La entrega no contiene material para ${taskLabel(taskValue)}.` }
+    }
+    if (taskValue === 'writing_task_2' && !submission.writing_task2_answer?.trim()) {
+      return { ok: false, error: `La entrega no contiene material para ${taskLabel(taskValue)}.` }
+    }
+    if (taskValue === 'speaking') {
+      const speakingAssignment = await getIeltsSpeakingAssignment(blueprint.mockId)
+      if (!speakingAssignment) return { ok: false, error: 'Este simulacro no tiene consignas de Speaking conectadas.' }
 
-    if (!hasArtifact) return { ok: false, error: `La entrega no contiene material para ${taskLabel(taskValue)}.` }
+      const missingAudioIds = findMissingIeltsSpeakingAudioIds(speakingAssignment, submission.speaking_audio_paths)
+      if (missingAudioIds.length > 0) {
+        return {
+          ok: false,
+          error: `Speaking necesita ${speakingAssignment.length} grabaciones completas. Faltan: ${missingAudioIds.join(', ')}.`,
+        }
+      }
+    }
 
     const now = new Date()
     const expiresAt = new Date(now.getTime() + INVITATION_TTL_MS).toISOString()
