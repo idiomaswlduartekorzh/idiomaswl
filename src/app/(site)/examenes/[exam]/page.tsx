@@ -9,6 +9,10 @@ import ExamCluster from './ExamCluster';
 import { EXAM_GUIDES } from '@/data/examGuides';
 import PodcastFeature from '@/components/practica/PodcastFeature';
 import { TOEFL_STRATEGY_MAP_PODCAST } from '@/data/practica/podcasts/your-2026-toefl-ibt-strategy-map';
+import {
+  ICFES_SEVEN_PARTS_NOTES,
+  ICFES_SEVEN_PARTS_PODCAST,
+} from '@/data/practica/podcasts/estrategias-para-las-7-partes-del-icfes';
 import toeflStyles from './toefl-ios.module.css';
 
 export async function generateStaticParams() {
@@ -75,6 +79,21 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
             { href: '/practica/toefl/listening', label: 'Practise Listening' },
             { href: '/practica/toefl/writing', label: 'Practise Writing' },
             { href: '/practica/toefl/speaking', label: 'Practise Speaking' },
+          ]}
+        />
+      )}
+
+      {slug === 'icfes' && (
+        <PodcastFeature
+          {...ICFES_SEVEN_PARTS_PODCAST}
+          accent={exam.color}
+          notes={ICFES_SEVEN_PARTS_NOTES}
+          links={[
+            { href: '/practica/icfes-saber-11', label: 'Abrir la ruta de las 7 partes' },
+            { href: '/practica/icfes-saber-11/diagnostico', label: 'Hacer el diagnóstico' },
+            { href: '/practica/icfes-saber-11/simulacro-guiado', label: 'Practicar con guía' },
+            { href: '/practica/icfes-saber-11/repaso-errores', label: 'Revisar errores' },
+            { href: '/practica/icfes-saber-11/plan-de-estudio', label: 'Crear un plan' },
           ]}
         />
       )}

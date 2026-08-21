@@ -23,7 +23,25 @@ type EpisodeNotesTone = {
 type EpisodeNotesProps = {
   sections: EpisodeSection[];
   tone?: EpisodeNotesTone;
+  locale?: 'en' | 'es';
 };
+
+const COPY = {
+  en: {
+    title: 'What this episode explains, in writing',
+    meta: (sections: number, minutes: number) =>
+      `${sections} sections · about ${minutes} minutes to read`,
+    intro:
+      'The same ground the audio covers, written out: read it instead of listening, follow along while it plays, or search it for the one rule you came back for.',
+  },
+  es: {
+    title: 'Lo que este episodio explica por escrito',
+    meta: (sections: number, minutes: number) =>
+      `${sections} secciones · ${minutes} min de lectura aprox.`,
+    intro:
+      'El mismo recorrido del audio, resumido por escrito: puedes leerlo en lugar de escuchar, seguirlo mientras suena o volver directamente a la regla que necesitas.',
+  },
+} as const;
 
 /**
  * The written companion to an audio guide, collapsed by default.
@@ -37,7 +55,7 @@ type EpisodeNotesProps = {
  * without "Oh yeah, right, exactly" between them — and unlike the audio, it can
  * state the official format correctly from the first line.
  */
-export default function EpisodeNotes({ sections, tone }: EpisodeNotesProps) {
+export default function EpisodeNotes({ sections, tone, locale = 'en' }: EpisodeNotesProps) {
   if (sections.length === 0) return null;
 
   const words = sections.reduce(
@@ -56,25 +74,23 @@ export default function EpisodeNotes({ sections, tone }: EpisodeNotesProps) {
     ...(tone?.muted ? { '--en-muted': tone.muted } : {}),
     ...(tone?.line ? { '--en-line': tone.line } : {}),
   } as CSSProperties;
+  const copy = COPY[locale];
+  const readingMinutes = Math.max(1, Math.round(words / 200));
 
   return (
     <details className={styles.wrapper} style={toneVars}>
       <summary className={styles.summary}>
         <span className={styles.summaryLabel}>
-          <strong>What this episode explains, in writing</strong>
+          <strong>{copy.title}</strong>
           <span className={styles.summaryMeta}>
-            {sections.length} sections · about {Math.max(1, Math.round(words / 200))} minutes to
-            read
+            {copy.meta(sections.length, readingMinutes)}
           </span>
         </span>
         <ChevronDown className={styles.chevron} size={22} aria-hidden="true" />
       </summary>
 
       <div className={styles.body}>
-        <p className={styles.intro}>
-          The same ground the audio covers, written out: read it instead of listening, follow
-          along while it plays, or search it for the one rule you came back for.
-        </p>
+        <p className={styles.intro}>{copy.intro}</p>
 
         {sections.map((section) => (
           <section key={section.heading} className={styles.section}>

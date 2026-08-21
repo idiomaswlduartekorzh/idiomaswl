@@ -24,7 +24,37 @@ type PodcastFeatureProps = {
   compact?: boolean;
   accent?: string;
   variant?: 'default' | 'ios';
+  locale?: 'en' | 'es';
 };
+
+const COPY = {
+  en: {
+    eyebrow: 'Start here · Audio guide',
+    duration: 'Episode length',
+    orientation: 'Orientation episode · English',
+    noAutoplay: 'No autoplay',
+    play: 'Play',
+    fallback: 'Your browser does not support the audio player.',
+    download: 'Download the episode',
+    outcomes: 'By the end, you should be able to',
+    links: 'Continue from the audio guide',
+    editorialAria: 'Editorial accuracy note',
+    editorial: 'Editorially reviewed',
+  },
+  es: {
+    eyebrow: 'Empieza aquí · Guía en audio',
+    duration: 'Duración del episodio',
+    orientation: 'Episodio de orientación · Español',
+    noAutoplay: 'Sin reproducción automática',
+    play: 'Reproducir',
+    fallback: 'Tu navegador no admite el reproductor de audio.',
+    download: 'Descargar el episodio',
+    outcomes: 'Al terminar, podrás',
+    links: 'Continúa desde la guía en audio',
+    editorialAria: 'Nota de precisión editorial',
+    editorial: 'Revisión editorial',
+  },
+} as const;
 
 export default function PodcastFeature({
   id,
@@ -40,10 +70,12 @@ export default function PodcastFeature({
   compact = false,
   accent = '#2563eb',
   variant = 'default',
+  locale = 'en',
 }: PodcastFeatureProps) {
   const tone = {
     '--podcast-accent': accent,
   } as CSSProperties;
+  const copy = COPY[locale];
 
   return (
     <section
@@ -57,12 +89,12 @@ export default function PodcastFeature({
           <div className={styles.header}>
             <div>
               <p className={styles.eyebrow}>
-                <Headphones size={16} aria-hidden="true" /> Start here · Audio guide
+                <Headphones size={16} aria-hidden="true" /> {copy.eyebrow}
               </p>
               <h2 id={`${id}-heading`}>{title}</h2>
               <p>{description}</p>
             </div>
-            <div className={styles.duration} aria-label={`Episode length: ${duration}`}>
+            <div className={styles.duration} aria-label={`${copy.duration}: ${duration}`}>
               <Clock3 size={18} aria-hidden="true" />
               <span>{duration}</span>
             </div>
@@ -70,23 +102,23 @@ export default function PodcastFeature({
 
           <div className={styles.playerShell}>
             <div className={styles.nowPlaying}>
-              <span>Orientation episode · English</span>
-              <strong>No autoplay</strong>
+              <span>{copy.orientation}</span>
+              <strong>{copy.noAutoplay}</strong>
             </div>
-            <audio className={styles.audioPlayer} controls preload="metadata" aria-label={`Play ${title}`}>
+            <audio className={styles.audioPlayer} controls preload="metadata" aria-label={`${copy.play} ${title}`}>
               <source src={audioSrc} type="audio/mpeg" />
-              Your browser does not support the audio player. <a href={audioSrc}>Download the episode</a>.
+              {copy.fallback} <a href={audioSrc}>{copy.download}</a>.
             </audio>
           </div>
 
           <div className={styles.body}>
             <div className={styles.episodeMap}>
-              <p className={styles.label}>By the end, you should be able to</p>
+              <p className={styles.label}>{copy.outcomes}</p>
               <ul>
                 {outcomes.map((outcome) => <li key={outcome}>{outcome}</li>)}
               </ul>
               {links.length > 0 && (
-                <nav className={styles.links} aria-label="Continue from the audio guide">
+                <nav className={styles.links} aria-label={copy.links}>
                   {links.map((link) => (
                     <Link key={link.href} href={link.href}>
                       {link.label} <ArrowRight size={15} aria-hidden="true" />
@@ -96,10 +128,10 @@ export default function PodcastFeature({
               )}
             </div>
 
-            <aside className={styles.editorialNote} aria-label="Editorial accuracy note">
+            <aside className={styles.editorialNote} aria-label={copy.editorialAria}>
               <ShieldCheck size={22} aria-hidden="true" />
               <div>
-                <p className={styles.label}>Editorially reviewed</p>
+                <p className={styles.label}>{copy.editorial}</p>
                 <h3>{editorialTitle}</h3>
                 <p>{editorialBody}</p>
               </div>
@@ -109,6 +141,7 @@ export default function PodcastFeature({
           {!compact && notes && (
             <EpisodeNotes
               sections={notes}
+              locale={locale}
               tone={{
                 accent,
                 ink: '#14324a',
