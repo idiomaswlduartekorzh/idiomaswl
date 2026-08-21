@@ -323,67 +323,61 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'toefl-ibt-preparacion-guia-completa',
     title: 'TOEFL iBT: guía de preparación desde cero para colombianos',
     description:
-      'Todo lo que necesitas saber sobre el TOEFL iBT: estructura del examen, puntaje mínimo para cada objetivo, diferencias con el IELTS y plan de estudio de 10 semanas.',
+      'Guía del TOEFL iBT vigente desde enero de 2026: tareas, escala de 1 a 6, diferencias con IELTS y plan de estudio de diez semanas.',
     metaTitle: 'TOEFL iBT: guía de preparación desde cero',
     metaDescription:
-      'Estructura del examen, qué puntaje pide cada objetivo, en qué se diferencia del IELTS y un plan de estudio de diez semanas.',
+      'Estructura TOEFL 2026, escala de 1 a 6, diferencias con IELTS y un plan de estudio de diez semanas para las cuatro secciones.',
     date: '2026-05-20',
-    updatedDate: '2026-05-30',
+    updatedDate: '2026-08-21',
     readTime: 8,
     category: 'TOEFL',
     tags: ['TOEFL iBT', 'inglés', 'exámenes internacionales', 'Estados Unidos', 'universidad', 'preparación'],
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
+<p><strong>Actualización del 21 de agosto de 2026.</strong> Esta guía ya refleja el TOEFL iBT vigente desde el 21 de enero de 2026: nuevas tareas, Reading y Listening adaptativos y escala principal de 1 a 6. Durante la transición, ETS también reporta un equivalente total de 0 a 120.</p>
 <h2>¿Qué es el TOEFL iBT y para qué sirve?</h2>
-<p>El TOEFL iBT (Test of English as a Foreign Language, Internet-Based Test) es el examen de inglés más reconocido para admisión a universidades de Estados Unidos y Canadá. A diferencia del IELTS, que nació en el Reino Unido con foco académico y migratorio, el TOEFL fue diseñado específicamente para entornos universitarios norteamericanos.</p>
+<p>El TOEFL iBT (Test of English as a Foreign Language, Internet-Based Test) es una prueba de inglés académico utilizada por instituciones educativas de numerosos países. Su aceptación y el resultado exigido dependen de cada universidad, facultad y programa.</p>
 <p>Las principales razones para tomar el TOEFL:</p>
 <ul>
-  <li><strong>Universidades en EE.UU. y Canadá</strong>: más del 85% de las universidades norteamericanas lo aceptan. Muchas lo prefieren sobre el IELTS.</li>
-  <li><strong>Becas Fulbright y otras becas federales</strong>: suelen requerir TOEFL específicamente.</li>
-  <li><strong>Programas de máster y doctorado</strong>: puntaje mínimo entre 80 y 100 según la institución y el programa.</li>
-  <li><strong>Visas y residencia en ciertos países</strong>: aunque el IELTS domina en este campo, algunas jurisdicciones aceptan TOEFL.</li>
+  <li><strong>Admisión universitaria</strong>: muchas instituciones aceptan TOEFL, pero debes confirmar la versión, la banda total y cualquier mínimo por sección.</li>
+  <li><strong>Becas y programas de intercambio</strong>: la convocatoria determina qué examen y qué resultado acepta.</li>
+  <li><strong>Másteres y doctorados</strong>: un mismo campus puede fijar requisitos distintos por facultad.</li>
+  <li><strong>Objetivos profesionales</strong>: algunos empleadores o entidades lo aceptan como evidencia de inglés; no debe asumirse que sirve para un trámite migratorio.</li>
 </ul>
 
-<h2>Estructura del TOEFL iBT</h2>
-<p>El TOEFL iBT dura aproximadamente <strong>3 horas</strong> y tiene 4 secciones:</p>
+<h2>Estructura del TOEFL iBT desde enero de 2026</h2>
+<p>El TOEFL iBT tarda aproximadamente <strong>dos horas incluyendo instrucciones</strong> y mantiene cuatro secciones en orden fijo:</p>
 <ul>
-  <li><strong>Reading (54-72 minutos)</strong> — 3-4 pasajes académicos de 700 palabras cada uno. 10 preguntas por pasaje. Enfocado en vocabulario académico y comprensión de argumentos complejos.</li>
-  <li><strong>Listening (41-57 minutos)</strong> — 3-4 conversaciones universitarias + 3-4 conferencias académicas. Las conferencias simulan clases universitarias reales con múltiples hablantes.</li>
-  <li><strong>Speaking (17 minutos)</strong> — 4 tareas: 1 opinión personal, 1 basada en lectura, 2 basadas en lectura+escucha. Las respuestas se graban.</li>
-  <li><strong>Writing (50 minutos)</strong> — 2 tareas: una integrada (leer + escuchar + escribir) y una discusión académica en un foro online.</li>
+  <li><strong>Reading (30 minutos base, 50 ítems)</strong> — Complete the Words, Read in Daily Life y Read an Academic Passage. Es adaptativo por módulos.</li>
+  <li><strong>Listening (29 minutos base, 47 ítems)</strong> — Choose a Response, Conversation, Announcement y Academic Talk. También es adaptativo.</li>
+  <li><strong>Writing (23 minutos, 12 ítems)</strong> — Build a Sentence, Write an Email y Write for an Academic Discussion.</li>
+  <li><strong>Speaking (8 minutos, 11 ítems)</strong> — Listen and Repeat y Take an Interview. Las respuestas se graban.</li>
 </ul>
-<p>Puntaje total: 0 a 120. Cada sección vale 30 puntos.</p>
+<p>El puntaje principal es una banda de 1 a 6 para cada sección y para el resultado global. Reading y Listening pueden variar en tiempo e ítems porque el examen se adapta; las cifras anteriores son la estructura base publicada por ETS.</p>
 
-<h2>¿Qué puntaje necesitas?</h2>
-<ul>
-  <li><strong>60-79 (Basic)</strong>: mínimo para algunos programas de pregrado y comunidades universitarias.</li>
-  <li><strong>80-93 (Fair)</strong>: rango competitivo para universidades estatales de EE.UU. en programas de humanidades y ciencias sociales.</li>
-  <li><strong>94-101 (Good)</strong>: mínimo para universidades de alta exigencia como las del sistema UC o Big Ten en programas de ingeniería y ciencias.</li>
-  <li><strong>102-110 (Very Good)</strong>: rango competitivo para la Ivy League y programas de posgrado top.</li>
-  <li><strong>111-120 (Excellent)</strong>: rango de asistentes de enseñanza (Teaching Assistants) y becas por mérito pleno.</li>
-</ul>
+<h2>¿Qué resultado necesitas?</h2>
+<p>No existe un mínimo universal. ETS informa el resultado principal en una escala de <strong>1 a 6</strong> y, durante la transición, añade un equivalente global de 0 a 120. Consulta la página oficial del programa y revisa cuatro datos: banda total, mínimos por sección, versión aceptada y fecha máxima de validez. Si el requisito aún está publicado sobre 120, usa la tabla de equivalencia de ETS y confirma por escrito con admisiones.</p>
 
 <h2>TOEFL vs IELTS: ¿cuál elegir?</h2>
 <p>Esta es la pregunta que más recibe David en WeLearn. La respuesta honesta: depende de tu destino y tu perfil.</p>
 <ul>
-  <li><strong>Elige TOEFL si</strong>: tu objetivo es una universidad en EE.UU. o Canadá, presentarás becas Fulbright o LASPAU, o te sientes más cómodo con tecnología (todo se hace en computador).</li>
-  <li><strong>Elige IELTS si</strong>: tu objetivo es Europa (especialmente UK), Australia o Nueva Zelanda, o prefieres el examen de Speaking cara a cara con un examinador humano.</li>
-  <li><strong>Presentas los dos si</strong>: aplicas a universidades en múltiples países o quieres tener opciones abiertas.</li>
+  <li><strong>Considera TOEFL</strong> si tu institución lo acepta y te sientes cómodo con una experiencia digital y Speaking grabado.</li>
+  <li><strong>Considera IELTS</strong> si tu institución lo acepta y prefieres el Speaking con examinador humano.</li>
+  <li><strong>Antes de pagar</strong>: confirma prueba, versión, resultado, modalidad y vigencia en la página oficial de tu programa.</li>
 </ul>
 <p>Diferencia clave de formato: en el TOEFL, Speaking se hace frente a un micrófono en solitario; en el IELTS, es una entrevista en vivo. Para algunos hispanohablantes, hablar solo a una pantalla resulta más difícil que con un interlocutor real.</p>
 
 <h2>Los 3 errores más comunes en el TOEFL</h2>
 <h3>Error 1: subestimar la sección de Listening</h3>
-<p>El Listening del TOEFL es diferente al de otros exámenes: las grabaciones simulan clases universitarias con interrupciones, digresiones y vocabulario técnico académico. No es inglés cotidiano. Los hablantes tienen acentos norteamericanos pero con variantes regionales.</p>
-<p>La solución: escuchar podcasts y conferencias académicas en inglés desde el comienzo de la preparación. MIT OpenCourseWare, TED Academic y NPR Science Friday son buenas fuentes.</p>
+<p>Listening ya no es una colección de conferencias largas. Mezcla intervenciones muy breves con conversaciones, anuncios y charlas académicas. Auditar la sección mirando solo el primer clip lleva a una conclusión falsa sobre su dificultad.</p>
+<p>La solución: entrena cada familia por separado. En Choose a Response practica intención y pragmática; en Conversation, Announcement y Academic Talk registra idea principal, cambios y ejemplos.</p>
 
 <h3>Error 2: no practicar Speaking en voz alta</h3>
-<p>El mayor problema de los hispanohablantes en Speaking no es la gramática ni el vocabulario: es la velocidad y la organización. El TOEFL te da 15-30 segundos para preparar y 45-60 segundos para responder. Quien no practica cronometrado no puede entregar una respuesta completa y coherente.</p>
+<p>El mayor problema de muchos hispanohablantes en Speaking es intentar usar la estrategia del formato anterior. Listen and Repeat exige conservar con precisión un mensaje oído; Take an Interview exige responder con claridad y desarrollo espontáneo. Las plantillas para las antiguas tareas integradas ya no son la ruta principal.</p>
 
-<h3>Error 3: confundir la tarea de Writing integrada</h3>
-<p>La Writing Task 1 del TOEFL (Integrated Writing) no es un ensayo de opinión: es un resumen que reconcilia lo que leíste con lo que escuchaste. Muchos estudiantes escriben su opinión en lugar de analizar la relación entre el texto y la conferencia, y pierden entre 4 y 8 puntos por esto.</p>
+<h3>Error 3: preparar las tareas anteriores de Writing</h3>
+<p>Integrated Writing dejó de ser una tarea principal del TOEFL actualizado. La sección vigente combina reconstrucción gramatical, un email situado y una discusión académica. Practicar síntesis sigue siendo útil, pero no debe desplazar las tres tareas actuales.</p>
 
-<h2>Plan de estudio de 10 semanas para 90+ puntos</h2>
+<h2>Plan de estudio de 10 semanas para tu banda objetivo</h2>
 <h3>Semanas 1-2: diagnóstico y estructura</h3>
 <ul>
   <li>Simulacro completo oficial (ETS ofrece uno gratuito en toefl.org).</li>
@@ -392,10 +386,10 @@ export const BLOG_POSTS: BlogPost[] = [
 </ul>
 <h3>Semanas 3-5: ataque por sección</h3>
 <ul>
-  <li>Reading: un pasaje completo por día con análisis de errores. Enfócate en vocabulario académico (Academic Word List) y preguntas de inferencia.</li>
-  <li>Listening: practica con grabaciones oficiales del TOEFL. No con cualquier podcast — el estilo del TOEFL es específico.</li>
-  <li>Speaking: graba 2 respuestas por día. Escucha. Analiza la fluidez, la organización y si respondiste lo que preguntaron.</li>
-  <li>Writing: escribe la tarea integrada completa tres veces por semana, variando el tema académico.</li>
+  <li>Reading: alterna Complete the Words, textos de vida diaria y pasajes académicos. Clasifica cada error por tarea.</li>
+  <li>Listening: practica clips breves y audios desarrollados; no uses una sola estrategia de notas para los cuatro tipos.</li>
+  <li>Speaking: combina repetición exacta y respuestas de entrevista. Escucha cada grabación y escoge un solo objetivo de mejora.</li>
+  <li>Writing: rota Build a Sentence, Write an Email y Academic Discussion dentro del tiempo actual.</li>
 </ul>
 <h3>Semanas 6-9: simulacros completos</h3>
 <ul>
@@ -412,9 +406,9 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Recursos gratuitos recomendados</h2>
 <ul>
   <li><strong>ETS.org</strong>: simulacros y materiales oficiales. La fuente más confiable.</li>
-  <li><strong>Magoosh TOEFL Blog</strong>: explicaciones de cada tipo de pregunta en inglés.</li>
-  <li><strong>NoteFull YouTube</strong>: plantillas y estrategias de Speaking y Writing.</li>
-  <li><strong><a href="/examenes/toefl">Simulacros WeLearn</a></strong>: banco de preguntas estilo TOEFL con retroalimentación automática por sección.</li>
+  <li><strong>TOEFL TestReady</strong>: un examen oficial gratuito con puntuación y feedback automatizado.</li>
+  <li><strong><a href="/practica/toefl">Mapa TOEFL 2026 de WeLearn</a></strong>: práctica por tarea para las cuatro secciones.</li>
+  <li><strong><a href="/examenes/toefl">20 simulacros WeLearn</a></strong>: recorridos originales de formato fijo para comparar tus intentos; no son pruebas oficiales ni adaptativas.</li>
 </ul>
 <p>Si buscas preparación guiada con tutor 1:1, puedes revisar cómo funciona nuestro programa de <a href="/clases-de-ingles">preparación para exámenes internacionales de inglés</a>.</p>
 <p>Lee también: <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL en Colombia: ¿cuál es mejor para tu objetivo?</a> y <a href="/blog/toefl-ibt-estrategias-por-seccion">TOEFL iBT: estrategias por sección para subir el puntaje</a>.</p>
@@ -528,12 +522,12 @@ export const BLOG_POSTS: BlogPost[] = [
     description:
       'Comparación completa entre IELTS y TOEFL iBT: diferencias de formato, puntajes, reconocimiento en universidades y cuál elegir según tu meta (migración, maestría o trabajo).',
     date: '2026-05-26',
-    updatedDate: '2026-05-30',
+    updatedDate: '2026-08-21',
     readTime: 8,
     category: 'IELTS',
     tags: ['IELTS', 'TOEFL', 'inglés', 'exámenes internacionales', 'migración', 'Colombia', 'comparación'],
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
+<p><strong>Actualización del 21 de agosto de 2026.</strong> La comparación ya usa el TOEFL vigente desde enero de 2026: Reading y Listening adaptativos, nuevas tareas de Speaking y Writing y escala principal de 1 a 6.</p>
 <h2>La pregunta que todos hacen primero</h2>
 <p>Cada semana, decenas de colombianos buscan la misma respuesta: "¿IELTS o TOEFL?". Ambos exámenes certifican competencia en inglés para contextos académicos y profesionales. Pero no son intercambiables: su formato, su costo, su reconocimiento y sus exigencias técnicas son significativamente diferentes.</p>
 <p>Esta guía te da la respuesta directa según tu objetivo específico.</p>
@@ -551,7 +545,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Duración total</td>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 h 45 min</td>
-      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~3 horas</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~2 horas con instrucciones</td>
     </tr>
     <tr>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Speaking</td>
@@ -561,7 +555,7 @@ export const BLOG_POSTS: BlogPost[] = [
     <tr>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Escala de puntaje</td>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">0–9 (bandas)</td>
-      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">0–120 puntos</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">1–6; equivalente 0–120 en transición</td>
     </tr>
     <tr>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Validez</td>
@@ -570,35 +564,35 @@ export const BLOG_POSTS: BlogPost[] = [
     </tr>
     <tr>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Costo aproximado en Colombia</td>
-      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$750.000–$850.000 COP</td>
-      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$800.000–$900.000 COP</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Consultar tarifa oficial al reservar</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">ETS muestra la tarifa al elegir Colombia</td>
     </tr>
     <tr>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Sede en Colombia</td>
       <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Bogotá, Medellín, Cali, Barranquilla, Bucaramanga</td>
-      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Bogotá, Medellín, Cali (menos opciones)</td>
+      <td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">La agenda ETS muestra sedes y fechas disponibles</td>
     </tr>
   </tbody>
 </table>
 
 <h2>¿Cuál elegir según tu objetivo?</h2>
 <h3>Si quieres emigrar a Canadá, Australia o UK</h3>
-<p><strong>IELTS General Training</strong> es la opción estándar. Los programas migratorios de estos países (Express Entry, Skilled Worker, etc.) aceptan o prefieren IELTS. El TOEFL también se acepta en muchos casos, pero IELTS tiene mayor reconocimiento en organismos migratorios.</p>
+<p>No elijas por popularidad. Cada programa migratorio publica una lista cerrada de pruebas, versiones y resultados aceptados, y esa lista puede cambiar. Abre primero el sitio oficial del gobierno correspondiente y confirma si necesitas IELTS General Training u otra prueba específica; una aceptación universitaria del TOEFL no implica aceptación migratoria.</p>
 
 <h3>Si quieres hacer una maestría en EE.UU. o Canadá</h3>
-<p><strong>TOEFL iBT</strong> es la opción natural. Las universidades norteamericanas, especialmente en EE.UU., lo desarrollaron y lo conocen mejor. También es requisito para la mayoría de becas Fulbright. Si la universidad destino acepta ambos (muchas lo hacen), revisa sus conversiones de puntaje antes de decidir.</p>
+<p>Revisa la página oficial del programa. Si acepta TOEFL iBT e IELTS Academic, compara el formato y el resultado requerido antes de decidir. Una beca puede fijar condiciones diferentes a las de la universidad.</p>
 
 <h3>Si quieres hacer una maestría en Europa o Australia</h3>
-<p><strong>IELTS Academic</strong>. Las universidades europeas y australianas conocen mejor la escala IELTS y muchas la prefieren o requieren explícitamente.</p>
+<p>Comprueba qué prueba y modalidad acepta el programa. IELTS Academic aparece con frecuencia, pero no debe asumirse sin revisar la convocatoria concreta.</p>
 
 <h3>Si vas a trabajar en una empresa multinacional en Colombia</h3>
-<p>Ambos funcionan. Sin embargo, IELTS tiende a ser más reconocido en empresas con operaciones en Europa, y TOEFL en empresas con sede en EE.UU. Si el HR de tu empresa no tiene preferencia, elige el que te sea más cómodo en formato.</p>
+<p>Pregunta primero a recursos humanos si realmente exige una certificación y cuál. Si acepta ambas, elige según el formato y la disponibilidad; muchas empresas evalúan el inglés directamente en la entrevista.</p>
 
 <h2>La gran diferencia práctica: el Speaking</h2>
 <p>Aquí está la diferencia que cambia el desempeño de la mayoría de candidatos:</p>
 <ul>
   <li><strong>IELTS Speaking</strong>: entrevista de 11-14 minutos con un examinador humano en persona. Más natural para personas que se sienten cómodas conversando. Muchos lo encuentran menos intimidante porque es como una conversación.</li>
-  <li><strong>TOEFL Speaking</strong>: 4 tareas grabadas frente a la pantalla. Sin contacto humano. Requiere hablar solo hacia un micrófono, a veces integrando lectura y audio en el mismo ejercicio. Muchos colombianos lo encuentran más difícil porque no hay retroalimentación visual del interlocutor.</li>
+  <li><strong>TOEFL Speaking</strong>: 11 intervenciones en unos 8 minutos, repartidas entre Listen and Repeat y Take an Interview. Hablas hacia un micrófono y las respuestas se graban.</li>
 </ul>
 <p><strong>Si hablar en inglés con personas te resulta más fácil que hablar solo:</strong> elige IELTS.<br />
 <strong>Si el nerviosismo frente a un humano te bloquea:</strong> elige TOEFL.</p>
@@ -606,23 +600,23 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>¿Cuál es más difícil?</h2>
 <p>No hay un consenso absoluto. Depende de tus fortalezas:</p>
 <ul>
-  <li>El Reading del TOEFL es más largo y con textos más académicos que el IELTS en algunos sets.</li>
+  <li>Reading y Listening del TOEFL son adaptativos; en IELTS todos reciben el mismo recorrido de una versión determinada.</li>
   <li>El Writing del IELTS Task 1 (describir un gráfico) no tiene equivalente en el TOEFL y puede sorprender a quienes no se preparan para él.</li>
-  <li>El Listening del TOEFL integra lectura + audio (Listening + Reading integrado), lo cual es más complejo que las tareas separadas del IELTS.</li>
+  <li>El TOEFL 2026 mezcla tareas breves y situadas —palabras incompletas, mensajes, respuestas pragmáticas, emails y entrevistas— que no deben prepararse con el mapa anterior.</li>
 </ul>
 
-<h2>Puntajes de referencia para las metas más comunes</h2>
+<h2>Los cinco datos que debes confirmar</h2>
 <ul>
-  <li><strong>Maestría en universidades top EE.UU.</strong>: TOEFL 100–110 / IELTS 7.0–7.5</li>
-  <li><strong>Residencia permanente Canadá (Express Entry)</strong>: IELTS 6.0 general (mayor puntaje = más puntos CRS)</li>
-  <li><strong>Visa de trabajo UK (Skilled Worker)</strong>: IELTS 4.0–5.5 según ocupación</li>
-  <li><strong>Maestría en Europa</strong>: IELTS 6.5–7.0 según programa</li>
-  <li><strong>Becas Fulbright Colombia</strong>: TOEFL 80+ / IELTS 6.5+</li>
+  <li>Nombre y versión exacta de la prueba aceptada.</li>
+  <li>Resultado total y cualquier mínimo por sección.</li>
+  <li>Modalidad permitida: centro, computador o desde casa.</li>
+  <li>Vigencia máxima y fecha límite de envío.</li>
+  <li>Si la beca, visa y universidad aplican requisitos distintos.</li>
 </ul>
 
 <h2>Mi recomendación final</h2>
 <p>Si tienes un objetivo específico: sigue al destino, no al examen. Revisa los requisitos de la universidad o el programa migratorio al que aplicas y usa el puntaje que piden.</p>
-<p>Si no tienes un objetivo definido aún y quieres "tener el examen listo": <strong>IELTS Academic</strong> tiene mayor reconocimiento global y más opciones de sede en Colombia. Es la apuesta más segura si no sabes todavía a dónde vas.</p>
+<p>Si todavía no tienes un destino definido, espera antes de pagar un examen oficial. Empieza por un diagnóstico, reduce tu lista de destinos y presenta la prueba que acepten todos o la mayoría de tus programas reales.</p>
 <p>En cualquier caso, la preparación estructurada hace la diferencia. Puedes ver cómo abordamos ambos exámenes en nuestro programa de <a href="/clases-de-ingles">preparación para certificaciones de inglés</a>, o hacer un <a href="/examenes">simulacro gratuito de IELTS o TOEFL</a> para saber dónde estás ahora.</p>
 <p>Lee también: <a href="/blog/como-sacar-band-7-en-ielts">Cómo sacar Band 7 en el IELTS: guía práctica para hispanohablantes</a> y <a href="/blog/cuanto-cuesta-el-ielts-en-colombia-2026">¿Cuánto cuesta el IELTS en Colombia en 2026?</a>.</p>
     `,
@@ -1491,24 +1485,25 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
   },
   {
     slug: 'toefl-ibt-estrategias-por-seccion',
-    title: 'TOEFL iBT: estrategias específicas para cada sección y cómo llegar a 100 puntos',
+    title: 'TOEFL iBT 2026: estrategias para las cuatro secciones',
     description:
-      'Guía práctica de estrategias para las cuatro secciones del TOEFL iBT: Reading, Listening, Speaking y Writing. Los errores más caros y cómo evitarlos para alcanzar 100+ puntos.',
-    metaTitle: 'TOEFL iBT: estrategias sección por sección',
+      'Estrategias actuales para Reading, Listening, Writing y Speaking del TOEFL iBT 2026. Qué hacer en cada tarea y qué técnicas del formato anterior descartar.',
+    metaTitle: 'TOEFL iBT 2026: estrategias por sección',
     metaDescription:
-      'Qué hacer en Reading, Listening, Speaking y Writing del TOEFL iBT, los errores que más puntos cuestan y cómo apuntar a los 100.',
+      'Qué hacer en las tareas actuales de Reading, Listening, Writing y Speaking, y qué estrategias del TOEFL anterior ya no debes usar.',
     date: '2026-05-30',
+    updatedDate: '2026-08-21',
     readTime: 9,
     category: 'TOEFL',
     tags: ['TOEFL iBT', 'estrategias TOEFL', 'TOEFL 100', 'TOEFL Colombia', 'TOEFL Speaking', 'TOEFL Writing'],
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
+<p><strong>Revisión editorial del 21 de agosto de 2026.</strong> Esta página se reescribió para el examen posterior al 21 de enero de 2026. Si encuentras una estrategia basada en dos pasajes de 700 palabras, cuatro tareas integradas de Speaking o Integrated Writing como tarea vigente, estás leyendo el formato anterior.</p>
 <h2>Por qué el TOEFL tiene fama de ser "diferente" al IELTS</h2>
 <p>Muchos colombianos que preparan el IELTS y el TOEFL al mismo tiempo describen el TOEFL como "más difícil de ganar estrategias" y "más mecánico". Tienen razón en ambas cosas.</p>
-<p>El TOEFL es un examen diseñado, administrado y calificado de forma completamente computarizada (excepto Speaking y Writing que evalúa inteligencia artificial + revisores humanos). El formato es rígido, los tipos de pregunta son predecibles y, como consecuencia, las estrategias son muy específicas — y muy efectivas si se conocen bien.</p>
+<p>El TOEFL se administra por computador. Reading y Listening cambian de dificultad mediante módulos adaptativos; Writing y Speaking mantienen una estructura fija. Speaking y Writing combinan puntuación automatizada y revisión de calificadores certificados por ETS.</p>
 
 <h2>Panorama del examen</h2>
-<p>El TOEFL iBT (Internet-Based Test) dura aproximadamente 2 horas con la versión actual (desde julio 2023 ETS lo redujo de 3 a 2 horas). Tiene cuatro secciones:</p>
+<p>El TOEFL iBT tarda aproximadamente dos horas con instrucciones. La estructura base publicada por ETS es:</p>
 <table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
   <thead>
     <tr style="background: rgba(0,0,0,0.04);">
@@ -1519,63 +1514,48 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
     </tr>
   </thead>
   <tbody>
-    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Reading</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">35 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">20 preguntas (2 textos)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td></tr>
-    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Listening</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">36 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">28 preguntas</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td></tr>
-    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Speaking</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">16 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">4 tareas</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td></tr>
-    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Writing</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">29 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 tareas</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Reading</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">30 min base</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">50 ítems base · adaptativo</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">1–6</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Listening</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">29 min base</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">47 ítems base · adaptativo</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">1–6</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Writing</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">23 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">12 ítems</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">1–6</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Speaking</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">8 min</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">11 ítems</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">1–6</td></tr>
   </tbody>
 </table>
-<p>El puntaje total va de 0 a 120. Para la mayoría de universidades norteamericanas se requiere 80–100. Para programas selectivos o becas, 100–110.</p>
+<p>El resultado principal va de 1 a 6. ETS mantiene temporalmente un equivalente global 0–120; cada institución define su propio requisito.</p>
 
-<h2>Reading: la sección donde más se gana con estrategia</h2>
-<p>El TOEFL Reading tiene 2 textos académicos (~700 palabras cada uno) y 10 preguntas por texto. Las preguntas siguen una tipología fija:</p>
+<h2>Reading: tres tareas, no dos pasajes largos</h2>
 <ul>
-  <li>Vocabulary (significado de una palabra en contexto)</li>
-  <li>Reference (a qué se refiere un pronombre o frase)</li>
-  <li>Factual Information (información explícita en el texto)</li>
-  <li>Negative Factual (qué NO aparece en el texto)</li>
-  <li>Inference (qué se puede deducir)</li>
-  <li>Sentence Simplification (parafrasear una oración)</li>
-  <li>Insert Text (dónde añadir una oración)</li>
-  <li>Prose Summary (3 ideas principales de 6 opciones)</li>
+  <li><strong>Complete the Words</strong>: reconstruye palabras parcialmente ocultas usando vocabulario, gramática y contexto. Lee el párrafo completo antes de cerrar cada hueco.</li>
+  <li><strong>Read in Daily Life</strong>: trabaja con mensajes, anuncios y textos breves. Define primero quién escribe, para quién y con qué propósito.</li>
+  <li><strong>Read an Academic Passage</strong>: identifica idea central, detalles y vocabulario importante sin depender de conocimiento previo.</li>
 </ul>
-<p><strong>Estrategia por tipo</strong>: Las preguntas de Vocabulary, Reference y Factual se responden volviendo directamente al párrafo señalado. Las de Inference y Prose Summary requieren comprensión de la estructura completa del argumento. La pregunta de Insert Text requiere verificar coherencia lógica en cada posición.</p>
-<p><strong>Orden de ataque recomendado</strong>: Lee el primer párrafo completo (introduce el tema y la estructura del texto). Para los párrafos siguientes: lee la primera oración (idea principal) y luego responde las preguntas de ese párrafo sin leer el párrafo completo a menos que la pregunta lo requiera. Ahorra 8–10 minutos que puedes usar en Prose Summary.</p>
+<p><strong>Estrategia:</strong> clasifica tus errores por familia. Si completas palabras por intuición sin comprobar la oración, fallas por forma; si lees cada aviso como un ensayo, pierdes tiempo; si buscas una palabra idéntica en el pasaje, caes en paráfrasis.</p>
 
-<h2>Listening: notas que deciden el puntaje</h2>
-<p>El TOEFL Listening tiene 3 conversaciones (diálogos entre 2 personas en contexto universitario) y 3 lectures (conferencias académicas). Cada audio dura 3–6 minutos. Solo puedes escuchar cada audio una vez.</p>
-<p><strong>La clave: tomar notas efectivas</strong>. El TOEFL provee papel y lápiz para notas. La diferencia entre 20 y 27 puntos en Listening es casi siempre la calidad de las notas. Los mejores tomadores de notas en TOEFL no transcriben — identifican: el tema principal, la posición del hablante, los detalles clave con sus conexiones lógicas (causa-efecto, contraste, ejemplos).</p>
-<p><strong>Tipos de pregunta críticos</strong>:</p>
+<h2>Listening: una estrategia distinta para cada longitud</h2>
 <ul>
-  <li><em>Function questions</em>: "Why does the professor say X?" — estas preguntas sobre el propósito del enunciado son las más complicadas. La respuesta rara vez es el significado literal; es el propósito comunicativo.</li>
-  <li><em>Attitude questions</em>: "How does the student feel about X?" — escucha el tono, no solo el contenido.</li>
-  <li><em>Organization questions</em>: "How does the professor organize the information?" — requiere entender la macroestructura de la lecture.</li>
+  <li><strong>Listen and Choose a Response</strong>: no tomes notas; identifica intención y relación entre hablantes.</li>
+  <li><strong>Listen to a Conversation</strong>: registra el problema, la decisión y cualquier cambio de postura.</li>
+  <li><strong>Listen to an Announcement</strong>: captura propósito, fechas, condiciones y próxima acción.</li>
+  <li><strong>Listen to an Academic Talk</strong>: anota tesis, organización, contrastes y ejemplos; no transcribas.</li>
 </ul>
+<p>Un clip de pocos segundos es correcto para Choose a Response, pero no representa toda la sección. La habilidad es cambiar de estrategia según el tipo de audio.</p>
 
-<h2>Speaking: la sección más mecánica y la más mejorable con estrategia</h2>
-<p>El TOEFL Speaking tiene 4 tareas. La primera es Independent (hablas sobre tu opinión o experiencia). Las otras 3 son Integrated (lees/escuchas y luego hablas resumiendo o sintetizando):</p>
+<h2>Writing: precisión breve y producción situada</h2>
 <ul>
-  <li><strong>Task 1 (Independent)</strong>: 15 segundos de preparación, 45 segundos de respuesta. Da una opinión clara y desarrolla exactamente 2 razones con un ejemplo cada una.</li>
-  <li><strong>Task 2 (Campus announcement)</strong>: Lees un anuncio universitario (45 seg), escuchas a dos estudiantes opinar sobre él, luego describes el problema o cambio y la opinión del estudiante.</li>
-  <li><strong>Task 3 (Academic reading + lecture)</strong>: Lees una definición académica, escuchas al profesor ilustrarla con ejemplos, luego explicas el concepto usando los ejemplos de la lecture.</li>
-  <li><strong>Task 4 (Academic lecture)</strong>: Solo escuchas. El profesor explica un concepto con dos ejemplos. Tú resumes el concepto y los ejemplos.</li>
+  <li><strong>Build a Sentence</strong>: localiza sujeto, verbo, complementos y conectores antes de ordenar. Relee la oración completa, no solo la secuencia de bloques.</li>
+  <li><strong>Write an Email</strong>: responde todos los puntos, ajusta el tono a la relación con el destinatario y deja clara la acción esperada.</li>
+  <li><strong>Academic Discussion</strong>: toma posición, aporta una razón propia y conecta con el intercambio sin limitarte a repetir a los otros participantes.</li>
 </ul>
-<p><strong>La estructura que funciona en las 4 tareas</strong>: Topic sentence (qué vas a decir) → 1er punto (detail + example) → 2do punto (detail + example) → Cierre (1 oración). Esta estructura predecible maximiza los puntos en Delivery, Language Use y Topic Development — los 3 criterios de calificación.</p>
-<p><strong>Error más común</strong>: hablar sin estructura clara, llegar al final del tiempo sin concluir, o usar silencio de más de 2 segundos. El software de calificación penaliza pausas largas y respuestas incompletas.</p>
+<p>Integrated Writing sigue siendo una habilidad útil de síntesis, pero pertenece al formato anterior y no debe ocupar el tiempo reservado para estas tres tareas actuales.</p>
 
-<h2>Writing: dos tareas muy diferentes</h2>
-<h3>Integrated Writing (20 minutos)</h3>
-<p>Lees un pasaje académico (3 minutos), escuchas una lecture que presenta argumentos contrarios o matices al pasaje, y luego escribes 150–225 palabras explicando cómo la lecture responde al pasaje.</p>
-<p>Error fatal: dar tu opinión personal o resumir solo el pasaje. La tarea es específicamente mostrar cómo la lecture contradice, matiza o complica los argumentos del pasaje. Sin eso: 3 puntos máximo de 5.</p>
-<p>Estructura óptima: 1 párrafo intro (el pasaje argue X; la lecture contesta), 3 párrafos de contraste (punto del pasaje → punto contrario de la lecture), sin conclusión necesaria.</p>
+<h2>Speaking: memoria oral y respuesta espontánea</h2>
+<ul>
+  <li><strong>Listen and Repeat</strong>: escucha por grupos de sentido. Conserva primero el contenido y la inteligibilidad; imitar un acento no compensa omitir palabras.</li>
+  <li><strong>Take an Interview</strong>: contesta la pregunta en la primera frase, desarrolla una razón y añade un ejemplo concreto. No memorices un discurso universal.</li>
+</ul>
+<p>Graba tus respuestas y revisa un criterio cada vez: precisión, claridad, ritmo o desarrollo. Intentar corregirlo todo en una sola repetición no produce una señal útil.</p>
 
-<h3>Writing for an Academic Discussion (10 minutos)</h3>
-<p>Esta tarea reemplazó al Independent Essay en julio 2023. Te muestran la publicación de un foro académico de un profesor con una pregunta, y dos respuestas de compañeros de clase. Debes escribir tu propia respuesta (mínimo 100 palabras, idealmente 150–200) que agregue algo nuevo — no que resuma lo que dijeron los compañeros.</p>
-<p>Las respuestas con mayor puntaje: tienen una posición clara, usan evidencia o razonamiento propio (no solo "estoy de acuerdo con X"), incorporan al menos una referencia a las ideas de los compañeros para mostrar engagement con la discusión, y usan vocabulario académico preciso.</p>
-
-<h2>Puntaje 100: qué implica en la práctica</h2>
-<p>100 puntos en el TOEFL equivale aproximadamente a IELTS 7.0. Para alcanzarlo desde nivel B1–B2, necesitas entre 12 y 20 semanas de preparación estructurada dependiendo de tu punto de partida.</p>
-<p>La sección que más fácilmente puede subir con estrategia es Reading (+5–8 puntos con 4 semanas de práctica intensiva). La que más tarda en mejorar es Speaking (requiere fluidez real, no solo estrategia).</p>
+<h2>Cómo usar la escala sin perseguir un número vacío</h2>
+<p>Define el requisito exacto de tu institución y mira tanto la banda 1–6 como el equivalente 0–120 que ETS reporta durante la transición. El plan de estudio debe partir de una entrega diagnóstica por sección, no de una promesa genérica de «100 puntos».</p>
 <p>Si quieres prepararte para el TOEFL con una ruta específica por sección, puedes <a href="/clases-de-ingles">conocer el programa de preparación de WeLearn</a> — las clases son 1:1 con tutor y se adaptan a las secciones donde más necesitas mejorar. También puedes <a href="/examenes/toefl">hacer el simulacro de TOEFL gratis</a> para tener una línea base antes de empezar.</p>
 <p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía de preparación desde cero para colombianos</a> y <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL en Colombia: ¿cuál es mejor para tu objetivo?</a>.</p>
     `,
@@ -2060,49 +2040,50 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
   },
   {
     slug: 'cuanto-cuesta-el-toefl-en-colombia-2026',
-    title: 'Cuánto cuesta el TOEFL iBT en Colombia 2026: precio, sedes y qué incluye',
+    title: 'Precio TOEFL Colombia 2026: tarifa, cargos y sedes',
     description:
-      'Precio actualizado del TOEFL iBT en Colombia para 2026, centros de examinación en Bogotá, Medellín, Cali y Bucaramanga, qué incluye el precio y cómo inscribirse.',
+      'Cómo consultar el precio oficial del TOEFL iBT en Colombia, qué cargos adicionales publica ETS y cómo verificar sedes y fechas sin usar listas desactualizadas.',
     date: '2026-05-31',
+    updatedDate: '2026-08-21',
     readTime: 6,
     category: 'TOEFL',
     tags: ['costo TOEFL Colombia', 'precio TOEFL 2026', 'TOEFL Bogotá', 'TOEFL Medellín', 'TOEFL Bucaramanga', 'ETS Colombia'],
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
+<p><strong>Verificado el 21 de agosto de 2026.</strong> ETS no publica una cifra fija de Colombia dentro del texto estático de su página: pide seleccionar el lugar del examen para mostrar la tarifa de registro y advierte que en Colombia los impuestos aplicables se añaden al pedido. Por eso una cifra en pesos copiada en un artículo puede quedar vieja aunque la fecha diga 2026.</p>
 <h2>El precio del TOEFL iBT en Colombia 2026</h2>
-<p>El TOEFL iBT (Internet-Based Test) es administrado en Colombia por ETS (Educational Testing Service) a través de centros de examinación Prometric y en algunas instituciones académicas autorizadas. El precio en 2026 es:</p>
+<p>Para conocer el total vigente, entra en la <a href="https://www.ets.org/toefl/test-takers/ibt/register/fees.html" target="_blank" rel="noopener noreferrer">página oficial de tarifas de ETS</a>, selecciona Colombia y continúa hasta que el sistema muestre tarifa, impuestos y cualquier cargo opcional antes de pagar.</p>
 <table style="width: 100%; border-collapse: collapse; margin: 1.25rem 0;">
   <thead>
     <tr style="background: rgba(0,0,0,0.04);">
       <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Examen</th>
-      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Precio aprox. 2026</th>
+      <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Cómo verificar el precio</th>
       <th style="padding: 10px 14px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.88rem;">Validez</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">TOEFL iBT (en centro Prometric)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$235 USD (~$950.000 – $1.000.000 COP)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 años</td></tr>
-    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">TOEFL iBT Home Edition</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">~$235 USD (mismo precio)</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 años</td></tr>
+    <tr><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">TOEFL iBT en centro</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Selecciona Colombia y una fecha en tu cuenta ETS</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 años</td></tr>
+    <tr style="background: rgba(0,0,0,0.02);"><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">TOEFL iBT Home Edition</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">Comprueba la opción y el total en la agenda ETS</td><td style="padding: 9px 14px; border: 1px solid #e5e7eb; font-size: 0.86rem;">2 años</td></tr>
   </tbody>
 </table>
-<p><em>Nota: el precio del TOEFL está denominado en dólares. El precio en pesos colombianos fluctúa con la tasa de cambio. Verifica el precio exacto al momento de inscribirte en ets.org/toefl.</em></p>
-<p>El TOEFL es consistentemente más caro que el IELTS en Colombia. Esta diferencia de precio (~$50–100 USD más que el IELTS) es uno de los factores que los candidatos consideran al elegir entre ambos exámenes.</p>
+<p><em>No conviertas una cifra en dólares usando una tasa de cambio de otro día ni presupuestes solo la tarifa base: usa el total final que ETS muestra antes de confirmar.</em></p>
 
 <h2>¿Qué incluye el precio del TOEFL?</h2>
 <ul>
   <li>Las cuatro secciones del examen: Reading, Listening, Speaking y Writing.</li>
   <li>El Score Report oficial, disponible digitalmente en tu cuenta ETS.</li>
   <li>Envío gratuito de resultados a hasta 4 instituciones designadas antes del examen.</li>
-  <li>Acceso a My Best Scores (Score Select) — puedes decidir qué resultados envías a las instituciones.</li>
+  <li>MyBest Scores, que combina tus mejores resultados de sección de exámenes válidos dentro de los últimos dos años; cada institución decide si los acepta.</li>
 </ul>
 <p>Cargos adicionales:</p>
 <ul>
-  <li>Envío de resultados adicionales (más de 4 o después del examen): ~$20 USD por institución.</li>
-  <li>Remarking (Score Review): disponible solo para Speaking y Writing, ~$80 USD por sección.</li>
-  <li>Cambio de fecha o centro: varía según cuántos días antes del examen se solicite.</li>
+  <li>Registro exprés dentro de los siete días previos: US$49 según la tabla oficial consultada.</li>
+  <li>Reprogramación: US$69.</li>
+  <li>Informes adicionales: US$29 por institución o agencia.</li>
+  <li>Revisión de Speaking o Writing: US$80 por sección; ambas, US$160.</li>
 </ul>
 
 <h2>TOEFL iBT Home Edition: ¿es igual al examen en centro?</h2>
-<p>El TOEFL Home Edition es la versión del examen que se presenta desde casa con supervisión remota. Los puntajes tienen exactamente la misma validez que el examen en centro. La mayoría de universidades y programas migratorios los aceptan por igual.</p>
+<p>El TOEFL Home Edition se presenta desde casa con supervisión remota. ETS lo ofrece como opción oficial, pero la institución receptora conserva la decisión de aceptar una modalidad concreta. Confirma el requisito del programa antes de reservar.</p>
 <p>Las diferencias prácticas:</p>
 <ul>
   <li>Debes tener un computador con cámara y micrófono, conexión estable a internet, y un ambiente sin interrupciones.</li>
@@ -2113,18 +2094,11 @@ El CEC es para quienes ya tienen experiencia de trabajo en Canadá — no aplica
 <p>Si no tienes acceso cómodo a un centro Prometric o prefieres la flexibilidad horaria, el Home Edition es una alternativa perfectamente válida.</p>
 
 <h2>Sedes del TOEFL en Colombia</h2>
-<p>Los centros Prometric autorizados para el TOEFL en Colombia incluyen ubicaciones en:</p>
-<ul>
-  <li><strong>Bogotá</strong>: mayor disponibilidad, varias sedes, fechas semanales.</li>
-  <li><strong>Medellín</strong>: disponible, consultar disponibilidad en ets.org/toefl.</li>
-  <li><strong>Cali</strong>: disponible con menor frecuencia.</li>
-  <li><strong>Bucaramanga</strong>: disponible, verificar disponibilidad específica en el portal ETS.</li>
-  <li><strong>Barranquilla</strong>: disponible en algunos centros.</li>
-</ul>
-<p>Para verificar sedes actualizadas y fechas disponibles en tu ciudad: <em>ets.org/toefl → Find a Test Center → Colombia</em>.</p>
+<p>Colombia aparece en la lista oficial de países donde se ofrece el TOEFL iBT, pero ETS dirige a su agenda para conocer centros y fechas. Esa disponibilidad cambia. No damos por vigente una lista fija de ciudades —incluida Bucaramanga— si no aparece en el flujo de reserva para la fecha que necesitas.</p>
+<p>Verifica así: crea o abre tu cuenta ETS, entra a Schedule, elige Colombia, busca tu ciudad y revisa fechas. Si una ciudad no aparece, compara desplazamiento con Home Edition antes de pagar.</p>
 
 <h2>TOEFL vs IELTS: ¿cuál es más barato en total?</h2>
-<p>Considerando solo el precio del examen, el IELTS es más barato (~$870.000–$920.000 COP vs ~$950.000–$1.000.000 COP para el TOEFL). Sin embargo, el costo total de "obtener el puntaje que necesitas" puede ser diferente según cuántas veces necesites presentarlo.</p>
+<p>No compares cifras de dos artículos publicados en fechas distintas. Abre en paralelo el total oficial de IELTS para Colombia y el total final de ETS, suma impuestos, desplazamiento y reportes adicionales, y decide con valores del mismo día.</p>
 <p>Si tu objetivo es específicamente universidades norteamericanas o el sistema de salud americano, el TOEFL tiene más reconocimiento histórico en EE.UU. Para migración, IELTS es preferido en la mayoría de procesos. Para más detalles sobre cuál elegir, revisa nuestra guía <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL: cuál tomar en Colombia</a>.</p>
 <p>Si quieres prepararte para el TOEFL iBT con simulacros y clases 1:1, puedes <a href="/clases-de-ingles">agendar tu clase de diagnóstico gratis en WeLearn</a> — en esa sesión evaluamos tu nivel, te orientamos sobre el examen correcto para tu objetivo y diseñamos el plan.</p>
 <p>Lee también: <a href="/blog/cuanto-cuesta-el-ielts-en-colombia-2026">¿Cuánto cuesta el IELTS en Colombia en 2026?</a> y <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía de preparación desde cero para colombianos</a>.</p>
@@ -4400,11 +4374,12 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     metaDescription:
       'Qué mide cada versión del TOEFL, qué universidades y empleadores aceptan cada una, cuánto cuestan y cuál es más fácil según tu perfil.',
     date: '2026-05-30',
+    updatedDate: '2026-08-21',
     readTime: 6,
     category: 'TOEFL',
     tags: ['TOEFL iBT vs TOEFL Essentials diferencias', 'TOEFL Essentials Colombia 2026', 'cuál TOEFL tomar Colombia', 'TOEFL para visa USA', 'TOEFL para universidad EE.UU. Colombia'],
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
+<p><strong>Revisión editorial del 21 de agosto de 2026.</strong> El TOEFL iBT vigente usa una escala principal de 1 a 6 y tareas nuevas desde enero de 2026. TOEFL Essentials conserva su propia escala de 1 a 12. No son el mismo examen y la institución debe confirmar cuál acepta.</p>
 <h2>¿Por qué hay dos TOEFL ahora?</h2>
 <p>ETS (Educational Testing Service), la organización que administra el TOEFL, lanzó el <strong>TOEFL Essentials</strong> en 2021 como una alternativa más accesible y flexible al TOEFL iBT. El objetivo fue ampliar el acceso al mercado de pruebas de inglés, especialmente en países donde el TOEFL iBT era difícil de tomar (centros limitados, costos altos, esperas largas). Para los colombianos, esto ha creado una pregunta legítima: ¿cuál tomo?</p>
 
@@ -4415,11 +4390,11 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Duración</td><td>~2 horas (versión actual reducida)</td><td>~1,5 horas</td></tr>
     <tr><td>Modalidad</td><td>Centro de pruebas o en casa (At-Home)</td><td>Solo en casa (online supervisado)</td></tr>
     <tr><td>Secciones</td><td>Reading, Listening, Speaking, Writing</td><td>Reading, Listening, Speaking, Writing (más corto)</td></tr>
-    <tr><td>Escala de puntuación</td><td>0–120 (suma de 4 secciones 0–30)</td><td>1–12 (escala propia)</td></tr>
-    <tr><td>Costo (Colombia)</td><td>US$230–$250</td><td>US$135–$145</td></tr>
-    <tr><td>Resultados</td><td>6 días hábiles</td><td>6 días hábiles</td></tr>
+    <tr><td>Escala de puntuación</td><td>1–6; equivalente global 0–120 durante la transición</td><td>1–12 (escala propia)</td></tr>
+    <tr><td>Costo</td><td>Varía por país, fecha, impuestos y servicios</td><td>US$199 antes de impuestos aplicables, según ETS</td></tr>
+    <tr><td>Resultados</td><td>Consulta el plazo vigente al registrarte</td><td>Normalmente 5–6 días, según ETS</td></tr>
     <tr><td>Validez</td><td>2 años</td><td>2 años</td></tr>
-    <tr><td>Reconocimiento universitario</td><td>+11.000 instituciones worldwide</td><td>Menor (especialmente para posgrado de élite)</td></tr>
+    <tr><td>Aceptación</td><td>Amplia, pero debe comprobarse por programa</td><td>En crecimiento; debe comprobarse explícitamente</td></tr>
   </tbody>
 </table>
 
@@ -4428,22 +4403,21 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <ul>
   <li>Universidades de EE.UU. (Ivy League, grandes universidades públicas)</li>
   <li>Universidades de Canadá, Australia, Nueva Zelanda</li>
-  <li>Programas de visa de EE.UU. (visa F-1 de estudiante)</li>
+  <li>Procesos de admisión que lo incluyan expresamente</li>
   <li>Employers internacionales que piden evidencia de nivel avanzado</li>
   <li>Programas de maestría y doctorado en general</li>
 </ul>
 <p><strong>TOEFL Essentials</strong>: es aceptado por:</p>
 <ul>
-  <li>Más de 1.300 instituciones (principalmente de pregrado o programas de inglés de admisión condicional)</li>
-  <li>Algunos programas de posgrado, pero no todos</li>
+  <li>Instituciones que lo incluyan en su página oficial de requisitos</li>
+  <li>Algunos programas de pregrado y posgrado, pero no todos</li>
   <li>Programas de transferencia de crédito y cursos intensivos de idioma</li>
   <li>Empleadores que no tienen requisitos específicos de versión</li>
 </ul>
-<p>⚠️ Antes de tomar el TOEFL Essentials, verifica explícitamente con la universidad o programa de destino si lo aceptan. Las grandes universidades de investigación en EE.UU. (MIT, Stanford, Harvard, Michigan, UCLA, etc.) aceptan el iBT pero muchas no tienen el Essentials en su lista oficial.</p>
+<p><strong>Antes de pagar TOEFL Essentials</strong>, verifica explícitamente con la universidad y el programa de destino si lo aceptan, qué banda exigen y si admiten la modalidad desde casa. La ausencia de Essentials en la lista oficial debe tratarse como “no confirmado”, no como aceptación.</p>
 
 <h2>¿Cuál es más difícil?</h2>
-<p>El TOEFL iBT es más exigente en términos de nivel académico requerido — usa textos de nivel universitario, argumentación abstracta y vocabulario académico. El TOEFL Essentials usa contenido más cotidiano y es más corto. Sin embargo, el Essentials no es significativamente "fácil" — sigue siendo un examen de nivel B2–C1.</p>
-<p>Para un candidato que está preparado para el TOEFL iBT, el Essentials no presenta dificultad adicional.</p>
+<p>TOEFL iBT se concentra en el uso del inglés en contextos académicos. Essentials mezcla situaciones académicas y cotidianas, usa tareas más cortas y dura menos. Eso cambia la experiencia, pero no permite prometer que será más fácil para una persona concreta.</p>
 
 <h2>¿Cuál tomar? — La decisión según tu objetivo</h2>
 <table>
@@ -4452,14 +4426,14 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     <tr><td>Maestría/doctorado en EE.UU. o Canadá</td><td>✅ TOEFL iBT</td></tr>
     <tr><td>Pregrado en EE.UU. (top 100)</td><td>✅ TOEFL iBT</td></tr>
     <tr><td>Pregrado en EE.UU. (universidades regionales)</td><td>Verificar — posiblemente Essentials</td></tr>
-    <tr><td>Certificación para empleo (no visa)</td><td>✅ TOEFL Essentials (más barato)</td></tr>
+    <tr><td>Certificación para empleo (no visa)</td><td>El que confirme el empleador</td></tr>
     <tr><td>Programa intensivo de inglés en USA</td><td>Cualquiera — verificar con el programa</td></tr>
     <tr><td>Visa de trabajo en EE.UU. (H-1B) con empleador</td><td>Depende del empleador — ninguno obligatorio por visa</td></tr>
   </tbody>
 </table>
 
 <h2>Preparación para el TOEFL desde Colombia</h2>
-<p>En WeLearn preparamos para el TOEFL iBT con tutores especializados. El proceso incluye diagnóstico de nivel, plan por sección y simulacros de examen. La primera sesión es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TOEFL%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20las%20clases%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/clases-de-ingles">nuestra página de inglés</a>.</p>
+<p>En WeLearn la práctica disponible está enfocada en el <strong>TOEFL iBT vigente</strong>. Incluye un <a href="/practica/toefl">mapa por tarea</a> y <a href="/examenes/toefl">20 simulacros originales de formato fijo</a>; no son pruebas oficiales ni adaptativas.</p>
 <p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía de preparación completa para colombianos</a> y <a href="/blog/ielts-vs-toefl-cual-tomar-en-colombia">IELTS vs TOEFL: ¿cuál tomar en Colombia?</a>.</p>
     `,
   },
@@ -5941,89 +5915,88 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   // ── ARTICLE 79 ──────────────────────────────────────────────────────────
   {
     slug: 'toefl-speaking-integrated-tasks-como-responder',
-    title: 'TOEFL Speaking: cómo responder las Integrated Tasks para sacar 24+',
-    description: 'Estrategia completa para las preguntas integradas del TOEFL Speaking: estructura, notas, vocabulario de enlace y cómo practicar para 24+ puntos.',
+    title: 'TOEFL Speaking 2026: Listen and Repeat e Interview',
+    description: 'Guía actual de TOEFL Speaking: cómo practicar Listen and Repeat y Take an Interview, qué mide cada tarea y cómo revisar tus grabaciones.',
     category: 'TOEFL',
-    tags: ['TOEFL Speaking', 'integrated tasks TOEFL', 'puntaje TOEFL Speaking', 'TOEFL preparación'],
-    metaTitle: 'TOEFL Speaking: cómo responder las Integrated Tasks',
+    tags: ['TOEFL Speaking', 'Listen and Repeat TOEFL', 'Take an Interview TOEFL', 'TOEFL 2026'],
+    metaTitle: 'TOEFL Speaking 2026: tareas y estrategia',
     metaDescription:
-      'Estructura de respuesta, cómo tomar notas, vocabulario de enlace y cómo practicar las tareas integradas para pasar de los 24 puntos.',
+      'Cómo practicar Listen and Repeat y Take an Interview, qué mide cada tarea y cómo revisar tus grabaciones sin usar el formato anterior.',
     date: '2026-05-29',
+    updatedDate: '2026-08-21',
     readTime: 8,
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
-<p>El TOEFL Speaking tiene 4 preguntas (desde la nueva versión iBT de 2019) — 1 independiente y 3 integradas. Las tareas integradas (Integrated Tasks) son las que más diferencian al TOEFL del IELTS, y también las que más confunden a los estudiantes colombianos. Esta guía te enseña exactamente cómo manejarlas.</p>
+<p><strong>Actualización del 21 de agosto de 2026.</strong> La URL conserva su nombre antiguo para no romper enlaces, pero el contenido ya no enseña Integrated Tasks como formato vigente. Desde el 21 de enero de 2026, TOEFL Speaking usa <strong>Listen and Repeat</strong> y <strong>Take an Interview</strong>.</p>
+<p>ETS publica 11 ítems y unos 8 minutos para Speaking. La sección no es adaptativa: grabas respuestas breves y enfocadas en situaciones académicas o de campus.</p>
 
-<h2>Estructura del TOEFL Speaking (versión actual)</h2>
+<h2>Estructura actual de TOEFL Speaking</h2>
 <table>
-  <thead><tr><th>Tarea</th><th>Tipo</th><th>Tiempo para hablar</th><th>Fuente</th></tr></thead>
+  <thead><tr><th>Tarea</th><th>Qué haces</th><th>Qué mide</th></tr></thead>
   <tbody>
-    <tr><td>Task 1</td><td>Independent</td><td>45 segundos</td><td>Solo tu opinión personal</td></tr>
-    <tr><td>Task 2</td><td>Integrated (Campus)</td><td>60 segundos</td><td>Lectura (45s) + Audio (conversación)</td></tr>
-    <tr><td>Task 3</td><td>Integrated (Academic)</td><td>60 segundos</td><td>Lectura (45s) + Audio (conferencia)</td></tr>
-    <tr><td>Task 4</td><td>Integrated (Academic)</td><td>60 segundos</td><td>Solo Audio (conferencia larga)</td></tr>
+    <tr><td>Listen and Repeat</td><td>Escuchas oraciones breves y las repites</td><td>Procesamiento oral, precisión e inteligibilidad</td></tr>
+    <tr><td>Take an Interview</td><td>Respondes preguntas de una entrevista simulada</td><td>Claridad, ritmo, vocabulario, gramática y desarrollo</td></tr>
   </tbody>
 </table>
-<p>El puntaje del Speaking va de 0 a 30. Un puntaje de 24+ es el nivel "Good" — suficiente para la mayoría de universidades estadounidenses.</p>
+<p>El resultado de sección se reporta en la escala 1–6. Durante la transición ETS también muestra equivalencias con la escala anterior; cada universidad fija su requisito.</p>
 
-<h2>Task 2: Integrated Campus</h2>
-<p>Leerás un aviso o carta del campus (un cambio de política, una propuesta de estudiante). Luego escucharás a dos estudiantes discutirlo. Uno expresa opinión positiva o negativa. Debes resumir la posición de ese estudiante.</p>
-<p><strong>Estructura de respuesta (60 segundos):</strong></p>
+<h2>Listen and Repeat: conservar el mensaje</h2>
+<p>Escuchas una oración breve y la repites exactamente. No debes opinar ni resumir. La dificultad crece cuando la oración contiene grupos de sentido, palabras funcionales poco acentuadas o una estructura que no alcanzas a procesar como unidad.</p>
+<p><strong>Proceso recomendado:</strong></p>
 <ol>
-  <li>(5–7 seg) Introducción: "The reading describes [la propuesta/cambio]. The man/woman [agrees/disagrees] with it."</li>
-  <li>(20–25 seg) Razón 1: "First, he/she argues that..." + detalle del audio.</li>
-  <li>(20–25 seg) Razón 2: "Second, he/she points out that..." + detalle del audio.</li>
-  <li>(5 seg) Cierre opcional: "For these reasons, he/she believes the proposal is [good/problematic]."</li>
+  <li>Escucha por bloques de significado, no palabra por palabra.</li>
+  <li>Conserva sujeto, verbo y contenido antes de intentar copiar todos los matices de acento.</li>
+  <li>Empieza a hablar con decisión. Una pausa larga al inicio borra la memoria de trabajo.</li>
+  <li>Termina la oración aunque notes un error; detenerte para corregir puede costar más contenido.</li>
 </ol>
 
-<h2>Task 3: Integrated Academic</h2>
-<p>Leerás una definición o concepto académico. Luego un profesor explica ese concepto con uno o dos ejemplos. Debes resumir el concepto y explicar cómo el ejemplo lo ilustra.</p>
-<p><strong>Estructura de respuesta (60 segundos):</strong></p>
+<h2>Take an Interview: responder y desarrollar</h2>
+<p>Participas en una entrevista simulada sobre experiencias u opiniones dentro de situaciones académicas o de campus. La respuesta debe sonar espontánea, pero no desordenada.</p>
+<p><strong>Estructura flexible:</strong></p>
 <ol>
-  <li>(5–7 seg) Concepto: "The reading introduces the concept of [X], which refers to..."</li>
-  <li>(25–30 seg) Ejemplo 1 del audio: "The professor illustrates this with the example of..."</li>
-  <li>(15–20 seg) Ejemplo 2 (si hay): "A second example is..."</li>
+  <li>Responde la pregunta en la primera frase.</li>
+  <li>Explica una razón concreta.</li>
+  <li>Añade un ejemplo personal o una consecuencia relevante.</li>
+  <li>Cierra cuando la idea esté completa; no rellenes con frases memorizadas.</li>
 </ol>
 
-<h2>Task 4: Integrated Lecture (solo audio)</h2>
-<p>Escucharás una conferencia académica de unos 90 segundos. No hay texto de lectura. Debes resumir los puntos principales.</p>
-<p><strong>Estructura de respuesta (60 segundos):</strong></p>
-<ol>
-  <li>(5–7 seg) Tema general: "The professor discusses [tema]."</li>
-  <li>(25–30 seg) Punto 1 con detalle del audio.</li>
-  <li>(20–25 seg) Punto 2 con detalle del audio.</li>
-</ol>
-
-<h2>Tomar notas eficientemente</h2>
-<p>En las Integrated Tasks tienes 15–30 segundos para preparar antes de hablar. Las notas son clave. Usa estas estrategias:</p>
+<h2>Cómo revisar una grabación</h2>
+<p>No te limites a preguntar «¿soné bien?». Revisa una sola dimensión por intento:</p>
 <ul>
-  <li><strong>Divide tu papel en dos columnas</strong>: Lectura | Audio. Captura solo palabras clave, no frases completas.</li>
-  <li><strong>Símbolos rápidos</strong>: ↑ (aumenta/mejora), ↓ (disminuye/empeora), = (es), → (causa/resultado), ✓ (positivo), ✗ (negativo).</li>
-  <li><strong>Nombres propios y números</strong>: captúralos exactamente. "The professor mentions that X company saved $2M" es detalle que sube el puntaje.</li>
+  <li><strong>Precisión</strong>: ¿conservaste las palabras y la relación entre ideas?</li>
+  <li><strong>Inteligibilidad</strong>: ¿se entiende cada grupo de sentido sin esfuerzo?</li>
+  <li><strong>Ritmo</strong>: ¿hay pausas que rompen la idea o velocidad que borra sonidos?</li>
+  <li><strong>Desarrollo</strong>: en Interview, ¿respondiste, explicaste y ejemplificaste?</li>
 </ul>
 
-<h2>Vocabulary de conectores para tareas integradas</h2>
+<h2>Memoria oral y preparación eficiente</h2>
+<p>Listen and Repeat no se resuelve transcribiendo. Entrena la capacidad de conservar bloques breves de habla:</p>
+<ul>
+  <li>Repite primero grupos de tres a cinco palabras y aumenta la longitud gradualmente.</li>
+  <li>Marca mentalmente la palabra principal de cada grupo.</li>
+  <li>Compara tu versión con el guion después de grabar, no mientras escuchas.</li>
+</ul>
+
+<h2>Lenguaje útil para Take an Interview</h2>
 <table>
   <thead><tr><th>Función</th><th>Frases útiles</th></tr></thead>
   <tbody>
-    <tr><td>Introducir concepto</td><td>"According to the reading...", "The passage describes..."</td></tr>
-    <tr><td>Introducir audio</td><td>"The professor explains...", "The speaker argues...", "The man/woman mentions..."</td></tr>
-    <tr><td>Conectar lectura y audio</td><td>"This illustrates the concept by...", "This is an example of..."</td></tr>
-    <tr><td>Agregar punto</td><td>"Additionally...", "Furthermore...", "A second point is..."</td></tr>
-    <tr><td>Concluir</td><td>"These examples show that...", "In this way, the professor demonstrates..."</td></tr>
+    <tr><td>Responder directamente</td><td>"I would choose...", "The main reason is..."</td></tr>
+    <tr><td>Explicar</td><td>"This matters because...", "What makes it useful is..."</td></tr>
+    <tr><td>Ejemplificar</td><td>"For example...", "A situation that shows this is..."</td></tr>
+    <tr><td>Matizar</td><td>"Although that can be true...", "It depends on..."</td></tr>
   </tbody>
 </table>
 
-<h2>Errores comunes en TOEFL Speaking integrado</h2>
+<h2>Errores comunes en TOEFL Speaking 2026</h2>
 <ul>
-  <li><strong>Resumir solo la lectura e ignorar el audio</strong>: el audio tiene el peso mayor en Tasks 2 y 3. Si no mencionas los ejemplos o la posición del estudiante/profesor, el puntaje cae.</li>
-  <li><strong>Hablar demasiado lento por miedo a los errores</strong>: en el TOEFL, la fluidez pesa tanto como la precisión. Es mejor hablar con confianza y algún error menor que hablar perfectamente lento.</li>
-  <li><strong>No usar el tiempo de preparación</strong>: los 15–30 segundos de prep no son opcionales — es cuando organizas tus notas para la respuesta.</li>
-  <li><strong>Memorizar respuestas</strong>: los evaluadores del TOEFL están entrenados para detectar respuestas memorizadas. Practica la estructura, no el guion.</li>
+  <li><strong>Usar plantillas del formato anterior</strong>: una respuesta integrada no prepara Listen and Repeat.</li>
+  <li><strong>Imitar el acento y perder palabras</strong>: la fidelidad del mensaje y la inteligibilidad importan más que sonar nativo.</li>
+  <li><strong>No contestar la pregunta</strong>: en Interview, una introducción larga consume tiempo sin demostrar desarrollo.</li>
+  <li><strong>Corregir todo a la vez</strong>: escoge un criterio por grabación para que el siguiente intento tenga un objetivo verificable.</li>
 </ul>
 
 <h2>WeLearn y el TOEFL Speaking</h2>
-<p>En WeLearn hacemos simulacros de TOEFL con retroalimentación en tiempo real. Si el Speaking es tu módulo más débil, 6–8 sesiones de práctica enfocada pueden subirte 3–5 puntos. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20TOEFL%20Speaking%20con%20WeLearn.%20%C2%BFTienen%20clases%20especializadas%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
+<p>Los 20 simulacros WeLearn incluyen grabación privada para Listen and Repeat y Take an Interview. Son recorridos originales y fijos: no son preguntas oficiales ni una réplica del sistema de puntuación ETS. Puedes empezar en la <a href="/practica/toefl/speaking">ruta TOEFL Speaking 2026</a>.</p>
 <p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía completa para colombianos</a> y <a href="/blog/toefl-ibt-vs-toefl-essentials-cual-elegir-2026">TOEFL iBT vs TOEFL Essentials: cuál elegir en 2026</a>.</p>
     `,
   },
@@ -6669,28 +6642,33 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
   // ── ARTICLE 89 ──────────────────────────────────────────────────────────
   {
     slug: 'toefl-reading-preguntas-inferencia-y-detalle',
-    title: 'TOEFL Reading: cómo responder preguntas de inferencia, propósito y vocabulario',
-    description: 'Estrategia para los tipos de preguntas más difíciles del TOEFL Reading: inferencia, purpose, vocabulary in context y reference. Con ejemplos resueltos.',
+    title: 'TOEFL Reading 2026: inferencia, detalle y vocabulario',
+    description: 'Practica inferencia, detalle, propósito y vocabulario dentro de las tareas vigentes del TOEFL Reading 2026, con ejemplos y estrategia.',
     category: 'TOEFL',
     tags: ['TOEFL Reading', 'inferencia TOEFL', 'preguntas TOEFL Reading', 'puntaje TOEFL'],
-    metaTitle: 'TOEFL Reading: inferencia, propósito y vocabulario',
+    metaTitle: 'TOEFL Reading 2026: inferencia y vocabulario',
     metaDescription:
-      'Estrategia para los tipos de pregunta más difíciles del TOEFL Reading, con ejemplos resueltos de inference, purpose y reference.',
+      'Cómo practicar inferencia, detalle, propósito y vocabulario dentro de las tareas vigentes del TOEFL Reading 2026.',
     date: '2026-05-31',
+    updatedDate: '2026-08-21',
     readTime: 8,
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
-<p>El TOEFL Reading tiene 10 tipos diferentes de preguntas. Algunas son directas (Factual Information: ¿qué dice el texto exactamente?). Otras son más complejas — inferencia, propósito del autor, vocabulario en contexto, referencia de pronombres. Esta guía te enseña a resolver cada tipo difícil con estrategia.</p>
+<p><strong>Revisión editorial del 21 de agosto de 2026.</strong> Esta guía refleja el TOEFL iBT vigente desde el 21 de enero de 2026. Reading combina <strong>Complete the Words</strong>, <strong>Read in Daily Life</strong> y <strong>Read an Academic Passage</strong>; además, se adapta por módulos. Las etiquetas inferencia, detalle o vocabulario describen habilidades útiles dentro de esas tareas, no diez familias oficiales del examen actual.</p>
 
-<h2>Estructura del TOEFL Reading</h2>
-<p>El TOEFL iBT Reading tiene 2 textos académicos de ~700 palabras cada uno, con 10 preguntas cada uno. Tiempo total: 35 minutos. Cada texto viene de un área académica (biología, geología, historia, sociología, etc.) y asume que no tienes conocimiento previo del tema.</p>
+<h2>Cómo encajan estas habilidades en Reading 2026</h2>
+<ul>
+  <li><strong>Complete the Words</strong>: usa gramática, morfología y sentido global para reconstruir letras faltantes distribuidas en un texto.</li>
+  <li><strong>Read in Daily Life</strong>: localiza propósito, condiciones y detalles en avisos, mensajes y textos funcionales.</li>
+  <li><strong>Read an Academic Passage</strong>: relaciona ideas, reconoce evidencia, interpreta vocabulario en contexto y formula inferencias prudentes.</li>
+</ul>
+<p>ETS publica una estructura base de 50 ítems y 30 minutos. Al ser adaptativa, la experiencia puede variar; por eso no conviene imponer la antigua regla de dos pasajes ni repartir el reloj como si todas las preguntas pesaran igual.</p>
 
-<h2>Tipo 1: Factual Information (más fácil)</h2>
+<h2>Detalle explícito</h2>
 <p>Pregunta: "According to paragraph X, which of the following is true about Y?"</p>
 <p>Estrategia: localiza el párrafo, escanea por palabras clave relacionadas con la pregunta. La respuesta siempre está literalmente en el texto — no hay inferencia.</p>
 <p>Error típico: elegir la respuesta que "parece" correcta por conocimiento general en vez de buscar en el texto.</p>
 
-<h2>Tipo 2: Inference (el más difícil)</h2>
+<h2>Inferencia</h2>
 <p>Pregunta: "What can be inferred from paragraph X about Y?" / "The author implies that..."</p>
 <p>Estrategia: la respuesta NO está literalmente en el texto. Es una conclusión lógica que se puede sacar de lo que el texto dice. La inferencia válida:</p>
 <ul>
@@ -6700,37 +6678,33 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 <p><strong>Ejemplo:</strong> Si el texto dice "Species A disappeared from the fossil record approximately 65 million years ago, the same time as the major asteroid impact," la inferencia válida es que "A's extinction may be related to the asteroid impact" — NO que "A was definitely killed by the asteroid" (eso es más de lo que el texto dice).</p>
 <p>Busca palabras de probabilidad en las opciones: "likely," "probably," "may have" → más probable que sea correcto. "Definitely," "always," "never" → probablemente incorrecto (el texto raramente dice absolutos).</p>
 
-<h2>Tipo 3: Vocabulary in Context</h2>
+<h2>Vocabulario en contexto</h2>
 <p>Pregunta: "The word [X] in paragraph Y is closest in meaning to..."</p>
 <p>Estrategia: NO uses el significado que conoces de la palabra fuera de contexto. Lee la oración completa y las 1–2 oraciones alrededor. Pregúntate: "¿Qué idea está tratando de expresar el autor en este punto?"</p>
 <p><strong>Ejemplo:</strong> La palabra "acute" en "the economic situation became acute in 2008" no significa "agudo" (en el sentido de ángulo) sino "grave/serio." El contexto te dice que la situación económica empeoró.</p>
 <p>Truco: reemplaza la palabra del texto con cada opción. La que encaja mejor en el sentido de la oración es la respuesta.</p>
 
-<h2>Tipo 4: Reference</h2>
+<h2>Referencia</h2>
 <p>Pregunta: "The word 'they' in paragraph X refers to..."</p>
 <p>Estrategia: encuentra el pronombre en el texto. Busca el sustantivo plural más reciente antes del pronombre que tenga sentido gramatical y lógico. Reemplaza el pronombre con la opción y lee la oración completa.</p>
 <p>Error típico: elegir el sustantivo más cercano al pronombre cuando el más cercano no tiene sentido lógico.</p>
 
-<h2>Tipo 5: Sentence Simplification</h2>
-<p>Pregunta: "Which of the following best expresses the essential information in the highlighted sentence?"</p>
-<p>Estrategia: identifica la idea central de la oración (sujeto + predicado principal). Las respuestas incorrectas cambian el significado, omiten información esencial, o añaden información que no estaba.</p>
-<p>La respuesta correcta puede omitir detalles secundarios, pero no puede cambiar la idea principal ni el tono (positivo/negativo).</p>
-
-<h2>Tipo 6: Purpose</h2>
+<h2>Propósito</h2>
 <p>Pregunta: "Why does the author mention [X] in paragraph Y?"</p>
 <p>Estrategia: el autor menciona algo por una razón: dar ejemplo, contrastar, apoyar un argumento, presentar evidencia, introducir una excepción. Lee el párrafo con esta pregunta: "¿Por qué incluyó el autor este dato aquí?"</p>
 
-<h2>Gestión del tiempo</h2>
-<p>35 minutos para 20 preguntas = 1:45 por pregunta. En la práctica:</p>
+<h2>Gestión del tiempo en el formato adaptativo</h2>
+<p>Usa el contador del módulo y toma decisiones según la tarea:</p>
 <ul>
-  <li>Preguntas factual information: 60–90 segundos.</li>
-  <li>Preguntas de inferencia y vocabulary: hasta 2:30.</li>
-  <li>La última pregunta (prose summary o table completion) toma 3–4 minutos: es la más pesada en puntuación.</li>
+  <li>En Complete the Words, lee primero la oración completa y evita resolver cada fragmento de forma aislada.</li>
+  <li>En Daily Life, identifica remitente, propósito, fecha y condiciones antes de entrar en los detalles.</li>
+  <li>En Academic Passage, vuelve al fragmento que sostiene la respuesta; no releas todo el texto por cada ítem.</li>
+  <li>Si una opción exige una conclusión más fuerte que la evidencia, descártala.</li>
 </ul>
 
 <h2>WeLearn y el TOEFL Reading</h2>
-<p>Preparamos el TOEFL Reading con simulacros completos y análisis de cada tipo de pregunta. Si tu Reading está por debajo de 22/30, hay estrategias específicas que pueden subirlo en 4–6 semanas de práctica intensa. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20mejorar%20mi%20puntaje%20en%20el%20TOEFL%20Reading.%20%C2%BFTienen%20preparaci%C3%B3n%20especializada%3F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>.</p>
-<p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía completa para colombianos</a> y <a href="/blog/toefl-speaking-integrated-tasks-como-responder">TOEFL Speaking: cómo responder las Integrated Tasks</a>.</p>
+<p>En <a href="/practica/toefl/reading">la práctica TOEFL Reading 2026</a> puedes entrenar las tareas vigentes y luego aplicar las mismas habilidades dentro de nuestros <a href="/examenes/toefl">20 simulacros originales</a>. Son recorridos de formato fijo para practicar y comparar intentos; no son pruebas oficiales ni adaptativas.</p>
+<p>Lee también: <a href="/blog/toefl-ibt-preparacion-guia-completa">TOEFL iBT: guía completa para colombianos</a> y <a href="/blog/toefl-speaking-integrated-tasks-como-responder">TOEFL Speaking 2026: tareas y práctica</a>.</p>
     `,
   },
 
@@ -7514,122 +7488,67 @@ Esta diferencia puede generar malentendidos culturales.</p>
   {
     slug: 'toefl-ibt-estructura-completa-y-estrategia-2026',
     title: 'TOEFL iBT 2026: estructura completa, puntajes y estrategia por sección',
-    description: 'Guía actualizada del TOEFL iBT 2026 después del rediseño. Conoce la nueva duración, el Academic Discussion Task y la estrategia óptima para cada sección.',
+    description: 'Guía del TOEFL iBT vigente desde enero de 2026: Reading y Listening adaptativos, tareas de las cuatro secciones y escala de 1 a 6.',
     metaTitle: 'TOEFL iBT 2026: estructura, puntajes y estrategia',
     metaDescription:
-      'Guía actualizada tras el rediseño: la nueva duración, el Academic Discussion Task y qué hacer en cada sección para rendir mejor.',
+      'Estructura TOEFL iBT vigente desde enero de 2026: tareas, tiempos base, adaptación y escala principal de 1 a 6.',
     date: '2026-05-31',
+    updatedDate: '2026-08-21',
     readTime: 12,
     category: 'TOEFL',
     tags: ['TOEFL', 'iBT', 'estructura', 'estrategia', 'puntaje', '2026'],
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
-<h2>El TOEFL iBT en 2026 — qué cambió</h2>
-<p>ETS rediseñó el TOEFL iBT en agosto de 2023 con el objetivo de reducir la duración y hacer el examen más eficiente. El formato vigente en 2026:</p>
-<ul>
-  <li>Duración total: <strong>~2 horas</strong> (antes 3 horas)</li>
-  <li>Se eliminó la sección independiente de Writing (Opinion Essay) y se reemplazó por el <strong>Academic Discussion Task</strong></li>
-  <li>Se redujo el número de pasajes de Reading (de 3–4 a 2)</li>
-  <li>Listening se redujo proporcionalmente</li>
-</ul>
+<p><strong>Revisión editorial del 21 de agosto de 2026.</strong> Esta página refleja el TOEFL iBT vigente desde el 21 de enero de 2026. El rediseño cambió las tareas, volvió adaptativas Reading y Listening y estableció una escala principal de 1 a 6.</p>
 
-<h2>Estructura del TOEFL iBT 2026</h2>
+<h2>Estructura del TOEFL iBT vigente</h2>
 <table>
-  <thead><tr><th>Sección</th><th>Duración</th><th>Preguntas</th><th>Puntaje</th></tr></thead>
+  <thead><tr><th>Sección</th><th>Base publicada</th><th>Tareas</th></tr></thead>
   <tbody>
-    <tr><td>Reading</td><td>35 minutos</td><td>20 preguntas (2 pasajes)</td><td>0–30</td></tr>
-    <tr><td>Listening</td><td>36 minutos</td><td>28 preguntas (2 lecturas + 3 conferencias)</td><td>0–30</td></tr>
-    <tr><td>Speaking</td><td>16 minutos</td><td>4 tareas</td><td>0–30</td></tr>
-    <tr><td>Writing</td><td>29 minutos</td><td>2 tareas</td><td>0–30</td></tr>
-    <tr><td><strong>Total</strong></td><td><strong>~2 horas</strong></td><td>—</td><td><strong>0–120</strong></td></tr>
+    <tr><td>Reading</td><td>30 minutos · 50 ítems</td><td>Complete the Words; Read in Daily Life; Read an Academic Passage</td></tr>
+    <tr><td>Listening</td><td>29 minutos · 47 ítems</td><td>Listen and Choose a Response; Conversation; Announcement; Academic Talk</td></tr>
+    <tr><td>Writing</td><td>23 minutos · 12 ítems</td><td>Build a Sentence; Write an Email; Write for an Academic Discussion</td></tr>
+    <tr><td>Speaking</td><td>8 minutos · 11 ítems</td><td>Listen and Repeat; Take an Interview</td></tr>
   </tbody>
 </table>
+<p>El examen completo tarda cerca de dos horas incluyendo instrucciones. Reading y Listening son adaptativos, de modo que su duración o número de ítems puede variar respecto de la base. El resultado principal se informa de 1 a 6; ETS mantiene un equivalente global de 0 a 120 durante la transición.</p>
 
-<h2>Reading: estrategia para los 2 pasajes</h2>
-<p>Dos pasajes académicos de 700–800 palabras cada uno. 10 preguntas por pasaje. Temas: ciencias naturales, historia, ciencias sociales, artes.</p>
-<h3>Tipos de pregunta</h3>
+<h2>Reading: tres tareas, dos ritmos</h2>
 <ul>
-  <li>Factual Information: "According to paragraph 2, what is..."</li>
-  <li>Negative Factual: "Which of the following is NOT mentioned..."</li>
-  <li>Inference: "What can be inferred about..."</li>
-  <li>Vocabulary in Context: "The word X in paragraph 3 is closest in meaning to..."</li>
-  <li>Prose Summary / Category Chart: ordenar ideas principales o clasificarlas — valen 2–3 puntos cada una</li>
+  <li><strong>Complete the Words</strong>: reconstruye letras usando gramática y sentido global. Lee la oración completa antes de llenar un espacio.</li>
+  <li><strong>Read in Daily Life</strong>: busca propósito, condiciones y datos en mensajes o avisos funcionales.</li>
+  <li><strong>Read an Academic Passage</strong>: separa idea central, evidencia e inferencia. Vuelve al fragmento que justifica la opción.</li>
 </ul>
-<h3>Estrategia</h3>
-<ol>
-  <li>Lee la pregunta antes de leer el párrafo correspondiente</li>
-  <li>Para Vocabulary in Context: usa el contexto, no memorices palabras aisladas</li>
-  <li>Para Prose Summary: identifica las 3 ideas más importantes del texto — las opciones incorrectas son detalles menores o contradicen el texto</li>
-  <li>Manejo del tiempo: 17 minutos por pasaje máximo</li>
-</ol>
+<p>No estudies Reading como dos pasajes fijos del formato anterior. Entrena por tarea y compara precisión y tiempo dentro de cada módulo.</p>
 
-<h2>Listening: conferencias y conversaciones</h2>
-<p>El Listening tiene dos partes: 2 conversaciones campus-related (estudiante + administrador) y 3 conferencias académicas. 28 preguntas totales.</p>
-<h3>Lo que evalúan</h3>
+<h2>Listening: de una respuesta breve a una charla académica</h2>
 <ul>
-  <li>Comprensión de la idea principal</li>
-  <li>Propósito de la conversación</li>
-  <li>Detalles específicos (fechas, cifras, nombres)</li>
-  <li>Actitud del hablante e inferencia sobre su posición</li>
-  <li>Organización del discurso</li>
+  <li><strong>Choose a Response</strong>: identifica intención y respuesta pragmáticamente adecuada; no necesitas tomar notas.</li>
+  <li><strong>Conversation y Announcement</strong>: registra propósito, cambio, fecha o acción requerida.</li>
+  <li><strong>Academic Talk</strong>: anota tema, dos o tres relaciones y ejemplos, sin intentar transcribir.</li>
 </ul>
-<h3>Estrategia</h3>
+<p>El audio corto no es una anomalía: es una familia oficial. La dificultad de la sección solo se aprecia al revisar el conjunto de las cuatro tareas.</p>
+
+<h2>Writing: precisión, email y discusión</h2>
 <ul>
-  <li>Toma notas activamente — el examen te proporciona papel borrador</li>
-  <li>Para conferencias: anota el tema principal, los 2–3 puntos de apoyo y los ejemplos</li>
-  <li>Para conversaciones: identifica el problema del estudiante y la solución propuesta</li>
-  <li>No te pierdas por una palabra desconocida — sigue el flujo del audio</li>
+  <li><strong>Build a Sentence</strong>: conserva el significado y corrige el orden gramatical.</li>
+  <li><strong>Write an Email</strong>: responde a la situación, incluye cada propósito y ajusta el registro al destinatario.</li>
+  <li><strong>Academic Discussion</strong>: toma posición, da una razón desarrollada y conéctala con la conversación.</li>
 </ul>
+<p>Integrated Writing pertenece al formato anterior. Puede servir como práctica de síntesis, pero no sustituye ninguna de las tres tareas vigentes.</p>
 
-<h2>Speaking: 4 tareas en 16 minutos</h2>
-<table>
-  <thead><tr><th>Tarea</th><th>Tipo</th><th>Prep</th><th>Respuesta</th></tr></thead>
-  <tbody>
-    <tr><td>Task 1 (Independent)</td><td>Opinión personal</td><td>15 seg</td><td>45 seg</td></tr>
-    <tr><td>Task 2 (Integrated)</td><td>Leer + escuchar + hablar</td><td>30 seg</td><td>60 seg</td></tr>
-    <tr><td>Task 3 (Integrated)</td><td>Leer + escuchar + hablar</td><td>30 seg</td><td>60 seg</td></tr>
-    <tr><td>Task 4 (Integrated)</td><td>Escuchar (conferencia) + hablar</td><td>20 seg</td><td>60 seg</td></tr>
-  </tbody>
-</table>
-<p>Las tareas integradas requieren resumir y sintetizar información de múltiples fuentes — no dar tu opinión, sino reportar.</p>
-<h3>Estrategia Speaking</h3>
+<h2>Speaking: memoria oral e interacción simulada</h2>
 <ul>
-  <li>Task 1: 3 partes — posición + razón 1 + razón 2 (o posición + razón + ejemplo)</li>
-  <li>Tasks 2–4: parafrasea las ideas principales del texto/audio. No inventes. Usa conectores: "According to the reading...", "The professor explains that..."</li>
-  <li>Habla a ritmo natural — no muy rápido (pierde claridad) ni muy lento (pierdes contenido)</li>
+  <li><strong>Listen and Repeat</strong>: conserva significado, palabras funcionales y entonación sin añadir ideas.</li>
+  <li><strong>Take an Interview</strong>: responde directamente, desarrolla una razón y agrega un ejemplo concreto cuando el tiempo lo permita.</li>
 </ul>
+<p>Las antiguas cuatro tareas independientes e integradas ya no son el formato principal. Practica con micrófono y escucha la grabación para detectar omisiones, pausas y pérdida de claridad.</p>
 
-<h2>Writing: Integrated Task + Academic Discussion Task</h2>
-<h3>Writing Task 1 — Integrated (20 min)</h3>
-<p>Lees un pasaje de 300 palabras (3 minutos), escuchas una conferencia que cuestiona o desarrolla el texto, y escribes 150–225 palabras resumiendo cómo la conferencia se relaciona con el pasaje. No das tu opinión.</p>
-<p>Estructura: introducción → punto 1 de la conferencia vs. el pasaje → punto 2 → punto 3 → conclusión opcional.</p>
+<h2>Cómo definir tu objetivo de resultado</h2>
+<p>No existe un mínimo universal por universidad o país. Consulta la página del programa y confirma banda total, mínimo por sección, versión aceptada y vigencia. Si el requisito aún aparece sobre 120, usa la equivalencia de ETS y pide confirmación a admisiones; no extrapoles el requisito de otra facultad.</p>
 
-<h3>Writing Task 2 — Academic Discussion (10 min)</h3>
-<p>El nuevo formato desde 2023. Lees una discusión online de una clase universitaria: el profesor da un tema y dos estudiantes opinan. Tienes que contribuir con tu propia posición original en al menos 100 palabras.</p>
-<p>Estrategia:</p>
-<ul>
-  <li>Lee rápido las 2 opiniones de los estudiantes — 1 minuto</li>
-  <li>Escoge una posición clara (puede ser de acuerdo con uno, desacuerdo, o una posición matizada propia)</li>
-  <li>Estructura: tu posición → razón + ejemplo → si el tiempo lo permite, referencia una de las opiniones de los compañeros</li>
-  <li>Escribe 120–150 palabras mínimo, 200 como máximo</li>
-  <li>ETS evalúa: relevancia al tema, coherencia, gramática y vocabulario</li>
-</ul>
-
-<h2>Puntajes por universidad — referencia rápida</h2>
-<table>
-  <thead><tr><th>Institución</th><th>TOEFL mínimo (posgrado)</th></tr></thead>
-  <tbody>
-    <tr><td>Harvard, MIT, Stanford</td><td>100–105</td></tr>
-    <tr><td>State universities USA</td><td>80–90</td></tr>
-    <tr><td>Universidades de Canadá</td><td>86–100</td></tr>
-    <tr><td>Universidades de Australia</td><td>79–90</td></tr>
-    <tr><td>Universidades de Reino Unido</td><td>87–100 (muchas prefieren IELTS)</td></tr>
-  </tbody>
-</table>
-
-<h2>WeLearn y la preparación TOEFL</h2>
-<p>Preparamos TOEFL con instructores que conocen el formato actualizado de 2023–2026. Especial énfasis en el Academic Discussion Task (el nuevo Writing) y en el Speaking integrado — las secciones que más impactan el puntaje. <a href="https://wa.me/573005004253?text=Hola%2C%20me%20quiero%20preparar%20para%20el%20TOEFL%20iBT.%20%C2%BFTienen%20clases%20disponibles%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos con un simulacro diagnóstico</a>.</p>
-<p>Lee también: <a href="/blog/toefl-ibt-vs-toefl-essentials-cual-elegir-2026">TOEFL iBT vs. TOEFL Essentials: cuál elegir</a> y <a href="/blog/toefl-speaking-integrated-tasks-como-responder">TOEFL Speaking: cómo responder las tareas integradas</a>.</p>
+<h2>Práctica TOEFL 2026 en WeLearn</h2>
+<p>Empieza por el <a href="/practica/toefl">mapa de las cuatro secciones</a> y luego haz uno de nuestros <a href="/examenes/toefl">20 simulacros originales</a>. Los simulacros siguen las familias de tareas actuales y sirven para comparar intentos, pero tienen formato fijo: no son pruebas oficiales ni reproducen el algoritmo adaptativo de ETS.</p>
+<p>Lee también: <a href="/blog/toefl-ibt-vs-toefl-essentials-cual-elegir-2026">TOEFL iBT vs TOEFL Essentials</a> y <a href="/blog/toefl-speaking-integrated-tasks-como-responder">TOEFL Speaking 2026: tareas y práctica</a>.</p>
     `,
   },
 
@@ -8296,77 +8215,50 @@ And explain whether you would recommend it to others.</em>
   // ── Article 108 ──────────────────────────────────────────────────────────────
   {
     slug: 'toefl-ibt-puntaje-minimo-canada-universidades',
-    title: 'TOEFL iBT para Canadá: puntaje mínimo por universidad y provincia',
-    description: 'Cada universidad canadiense tiene sus propios requisitos de TOEFL. Guía con los puntajes mínimos de las principales universidades de Canadá y consejos para alcanzarlos.',
-    metaTitle: 'TOEFL iBT para Canadá: puntaje mínimo por universidad',
+    title: 'TOEFL para Canadá: cómo verificar el requisito de tu universidad',
+    description: 'Cómo confirmar el requisito TOEFL de una universidad canadiense por programa, interpretar la escala 1 a 6 y evitar datos desactualizados.',
+    metaTitle: 'TOEFL para Canadá: verifica el requisito correcto',
     metaDescription:
-      'Los puntajes de TOEFL que pide cada universidad canadiense, provincia por provincia, y cuánto margen conviene dejar sobre el mínimo.',
+      'Cómo verificar el requisito TOEFL de cada programa canadiense, interpretar la escala 1 a 6 y evitar mínimos desactualizados.',
     date: '2026-05-31',
+    updatedDate: '2026-08-21',
     readTime: 9,
     category: 'TOEFL',
     tags: ['TOEFL', 'Canadá', 'universidades', 'puntaje', 'admisión', 'estudiantes'],
     body: `
-<p><strong>Actualización de agosto de 2026.</strong> Desde el 21 de enero de 2026 el TOEFL iBT se puntúa en <strong>bandas de 1 a 6</strong>, no sobre 120. Los puntajes que se mencionan más abajo siguen siendo válidos: las universidades continúan publicando sus requisitos en la escala de 120 y ETS la sigue reportando como equivalente hasta enero de 2028. Si necesitas convertir tu banda, la <a href="/examenes/toefl">tabla de equivalencias oficial está aquí</a> — por ejemplo, «TOEFL 100» equivale a banda 5.</p>
-<h2>TOEFL en Canadá: lo que debes saber primero</h2>
-<p>Canadá acepta tanto IELTS como TOEFL para admisión universitaria y para la visa de estudiante (Study Permit). A diferencia del Reino Unido (donde el IELTS domina) o Estados Unidos (donde el TOEFL es más tradicional), en Canadá ambos exámenes tienen igual reconocimiento. La elección depende de tus fortalezas y de los requisitos específicos de tu programa.</p>
-<p>Sin embargo, para la visa de estudiante canadiense (IRCC), el inglés mínimo requerido también puede demostrarse con IELTS o TOEFL — pero IELTS tiende a ser más usado en las embajadas canadienses.</p>
+<p><strong>Revisión editorial del 21 de agosto de 2026.</strong> Esta guía eliminó una tabla de mínimos que podía quedar desactualizada. En Canadá el requisito de inglés lo publica cada institución y puede variar por facultad, programa, nivel de estudio, modalidad y convocatoria.</p>
 
-<h2>Puntajes mínimos TOEFL iBT por universidad canadiense</h2>
-<table>
-  <thead><tr><th>Universidad</th><th>Provincia</th><th>TOEFL iBT mínimo (posgrado)</th><th>TOEFL iBT mínimo (pregrado)</th></tr></thead>
-  <tbody>
-    <tr><td>University of Toronto</td><td>Ontario</td><td>93–100</td><td>80–89</td></tr>
-    <tr><td>University of British Columbia (UBC)</td><td>BC</td><td>90–100</td><td>90</td></tr>
-    <tr><td>McGill University</td><td>Quebec</td><td>86–102</td><td>86</td></tr>
-    <tr><td>University of Waterloo</td><td>Ontario</td><td>90</td><td>86</td></tr>
-    <tr><td>University of Alberta</td><td>Alberta</td><td>90</td><td>86</td></tr>
-    <tr><td>Simon Fraser University (SFU)</td><td>BC</td><td>93</td><td>80</td></tr>
-    <tr><td>York University</td><td>Ontario</td><td>79–88</td><td>79</td></tr>
-    <tr><td>Ryerson / Toronto Metropolitan</td><td>Ontario</td><td>79–88</td><td>79</td></tr>
-    <tr><td>University of Ottawa</td><td>Ontario</td><td>86</td><td>79</td></tr>
-    <tr><td>Dalhousie University</td><td>Nova Scotia</td><td>80</td><td>77</td></tr>
-  </tbody>
-</table>
-<p>Nota: los puntajes pueden variar por facultad o programa. Siempre verifica directamente en la web del programa al que aplicas.</p>
+<h2>Admisión y Study Permit no son el mismo requisito</h2>
+<p>La universidad decide qué evidencia de inglés exige para admitirte. El proceso del permiso de estudios es independiente y parte, entre otros documentos, de una carta de aceptación válida. No presentes el TOEFL suponiendo que por sí solo cumple un requisito migratorio: verifica por separado la admisión académica y la documentación vigente de IRCC.</p>
 
-<h2>TOEFL vs. IELTS para Canadá — recomendación</h2>
-<p>Elige TOEFL si:</p>
+<h2>Cómo verificar el TOEFL correcto para tu programa</h2>
+<ol>
+  <li>Entra al sitio oficial de la universidad y abre la página exacta del programa, no una tabla de terceros.</li>
+  <li>Busca “English language proficiency” o “language requirements”.</li>
+  <li>Confirma que acepte <strong>TOEFL iBT</strong> y revisa si excluye alguna modalidad.</li>
+  <li>Anota el resultado total y cualquier mínimo por Reading, Listening, Writing o Speaking.</li>
+  <li>Revisa la antigüedad máxima del resultado y la fecha límite para enviarlo.</li>
+  <li>Si la página conserva la escala 0–120, usa la equivalencia publicada por ETS y pide confirmación escrita a admisiones.</li>
+</ol>
+
+<h2>Escala vigente desde enero de 2026</h2>
+<p>ETS informa el TOEFL iBT en una escala principal de <strong>1 a 6</strong>. Durante la transición también reporta un equivalente global de 0 a 120. No conviertas por tu cuenta los mínimos de cada sección ni asumas que una banda aceptada por un programa sirve para otro.</p>
+
+<h2>Qué guardar antes de pagar el examen</h2>
 <ul>
-  <li>Tu fortaleza es el Reading y el Listening — el TOEFL los evalúa bien</li>
-  <li>Te sientes cómodo escribiendo ensayos en computador</li>
-  <li>Prefieres el formato 100% digital sin componente escrito a mano</li>
-</ul>
-<p>Elige IELTS si:</p>
-<ul>
-  <li>Tu fortaleza es el Speaking conversacional (la Parte 3 del IELTS es más abierta)</li>
-  <li>También necesitas el examen para visa de trabajo o inmigración posterior</li>
-  <li>Tu universidad objetivo lo requiere explícitamente</li>
+  <li>URL oficial del requisito y fecha en que la consultaste.</li>
+  <li>Nombre exacto del programa, campus y ciclo de ingreso.</li>
+  <li>Resultado total y mínimos por sección.</li>
+  <li>Versión y modalidad aceptadas.</li>
+  <li>Respuesta de admisiones si existe cualquier ambigüedad.</li>
 </ul>
 
-<h2>Sub-scores que más pesan en programas canadienses</h2>
-<p>Muchos programas de posgrado en Canadá tienen requisitos de sub-score mínimos, no solo el total:</p>
-<ul>
-  <li><strong>Writing</strong>: MBA, derecho, ciencias sociales — típicamente 22–25 mínimo</li>
-  <li><strong>Speaking</strong>: educación, trabajo social, psicología — 22–24 mínimo</li>
-  <li><strong>Reading y Listening</strong>: ciencias, ingeniería, tecnología — no siempre tienen sub-score mínimo pero afectan el total</li>
-</ul>
-<p>Estrategia: identifica qué sub-scores exige tu programa antes de empezar a prepararte — así puedes enfocar el tiempo de estudio.</p>
+<h2>TOEFL o IELTS para una universidad canadiense</h2>
+<p>Elige solamente entre las pruebas que tu programa confirme. TOEFL puede convenirte si prefieres una experiencia digital con Speaking grabado; IELTS puede convenirte si prefieres una entrevista oral con examinador. La comodidad personal importa después de comprobar aceptación, resultado y fecha.</p>
 
-<h2>Timeline de preparación para llegar a 90+</h2>
-<p>Si estás en nivel B1 de inglés y necesitas TOEFL 90:</p>
-<ul>
-  <li>B1 → B2: 4–5 meses (8 h/semana de estudio)</li>
-  <li>B2 → TOEFL 90: 2–3 meses de preparación específica para el examen</li>
-  <li><strong>Total</strong>: 6–8 meses</li>
-</ul>
-<p>Si ya estás en B2 sólido: 2–3 meses de preparación específica son suficientes para la mayoría.</p>
-
-<h2>El TOEFL y la visa de estudiante canadiense</h2>
-<p>Para el Study Permit (visa de estudiante), Immigration Canada no exige un puntaje específico de TOEFL — exige que la universidad te haya admitido, y la universidad ya verificó el inglés. Sin embargo, en 2024–2026, Canada ha agregado controles adicionales de admisión genuina. Tener un TOEFL alto ayuda a demostrar que eres un estudiante legítimo con capacidad lingüística real.</p>
-
-<h2>WeLearn y la preparación TOEFL para Canadá</h2>
-<p>Preparamos candidatos para TOEFL con objetivos específicos de admisión universitaria canadiense. El plan de estudio se ajusta al puntaje que necesitas y a las sub-secciones más críticas de tu programa. <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20prepararme%20para%20el%20TOEFL%20para%20aplicar%20a%20universidades%20de%20Canada.%20%C2%BFTienen%20clases%3F" target="_blank" rel="noopener noreferrer">Escríbenos y empezamos con el diagnóstico</a>.</p>
-<p>Lee también: <a href="/blog/toefl-ibt-estructura-completa-y-estrategia-2026">TOEFL iBT 2026: estructura completa y estrategia</a> y <a href="/blog/ingles-para-canada-express-entry-requisitos-2026">Inglés para Canadá Express Entry</a>.</p>
+<h2>Preparación con un objetivo verificable</h2>
+<p>Empieza con el requisito oficial, haz un diagnóstico por sección y deja margen para repetir la prueba si tu calendario lo permite. Puedes revisar la <a href="/blog/toefl-ibt-estructura-completa-y-estrategia-2026">estructura TOEFL 2026</a>, practicar por tarea en el <a href="/practica/toefl">mapa de WeLearn</a> y medir un recorrido completo en nuestros <a href="/examenes/toefl">20 simulacros originales</a>.</p>
+<p>Los simulacros de WeLearn no sustituyen una calificación oficial ni garantizan admisión. Sirven para detectar errores y ordenar la preparación según la meta que confirmó tu institución.</p>
     `,
   },
 

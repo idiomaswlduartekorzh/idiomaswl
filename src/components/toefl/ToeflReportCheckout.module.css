@@ -1,0 +1,153 @@
+.shell {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(24px, 6vw, 72px) 18px;
+  background: radial-gradient(circle at 50% 0%, #e8f1ff 0, #f7f9fd 48%, #fff 100%);
+}
+
+.card {
+  width: min(720px, 100%);
+  border: 1px solid #cbd8ee;
+  border-radius: 24px;
+  padding: clamp(24px, 5vw, 48px);
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 24px 70px rgba(24, 53, 105, .13);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #2857a4;
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: #112456;
+  font-size: clamp(1.8rem, 5vw, 3.1rem);
+  line-height: 1.04;
+  letter-spacing: -.04em;
+}
+
+.lead {
+  margin: 16px 0 0;
+  color: #465676;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.65;
+}
+
+.included {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.included div {
+  min-height: 110px;
+  padding: 15px;
+  border: 1px solid #d7e0f0;
+  border-radius: 14px;
+  background: #f7f9fd;
+}
+
+.included strong,
+.included span {
+  display: block;
+}
+
+.included strong {
+  color: #172c61;
+}
+
+.included span {
+  margin-top: 6px;
+  color: #5c6982;
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
+.price {
+  margin: 20px 0;
+  padding: 18px;
+  border: 1px solid #b9cbea;
+  border-radius: 16px;
+  background: #edf4ff;
+  color: #173d80;
+  text-align: center;
+}
+
+.price strong {
+  display: block;
+  font-size: 1.8rem;
+}
+
+.price span {
+  font-size: .86rem;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primary,
+.secondary {
+  min-height: 48px;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primary {
+  border: 1px solid #1f57b3;
+  background: #1f57b3;
+  color: #fff;
+}
+
+.secondary {
+  border: 1px solid #b8c5dc;
+  background: #fff;
+  color: #21345e;
+  text-decoration: none;
+}
+
+.primary:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+.finePrint,
+.status,
+.error {
+  font-size: .82rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.finePrint {
+  margin: 18px 0 0;
+  color: #667085;
+}
+
+.status {
+  color: #2857a4;
+}
+
+.error {
+  color: #b42318;
+}
+
+@media (max-width: 620px) {
+  .included { grid-template-columns: 1fr; }
+  .included div { min-height: 0; }
+  .primary, .secondary { width: 100%; text-align: center; }
+}

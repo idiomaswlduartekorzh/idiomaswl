@@ -43,7 +43,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
     : [{ id: 'all', title: 'Simulacros disponibles', description: '', mocks: exam.mocks }];
 
   return (
-    <section className="wl-section">
+    <section className="wl-section" id={exam.slug === 'toefl' ? 'simulacros' : undefined}>
       <div className="wrap">
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem' }}>
           <div>
@@ -53,7 +53,9 @@ export default function MockGrid({ exam }: { exam: Exam }) {
             </h2>
           </div>
           <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: 0 }}>
-            {freeMocks.length} gratis · {paidMocks.length} con suscripción
+            {exam.slug === 'toefl'
+              ? `${exam.mocks.length} simulacros · Reading, Listening, Writing y Speaking`
+              : `${freeMocks.length} gratis · ${paidMocks.length} con suscripción`}
           </p>
         </div>
 

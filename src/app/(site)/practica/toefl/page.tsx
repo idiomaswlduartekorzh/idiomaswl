@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, BookOpenText, Headphones, Mic2, PenLine } from 'lucide-react';
 
+import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import PodcastFeature from '@/components/practica/PodcastFeature';
 import toeflStrategyMapNotes, { TOEFL_STRATEGY_MAP_PODCAST } from '@/data/practica/podcasts/your-2026-toefl-ibt-strategy-map';
 
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Práctica TOEFL iBT 2026 — Reading y Writing',
-  description: 'Entiende el formato TOEFL iBT vigente desde enero de 2026 y practica Reading y Writing por tarea, con una ruta diagnóstica y un podcast guía en inglés.',
+  title: 'Práctica TOEFL 2026: 4 secciones y 20 simulacros',
+  description: 'Practica las cuatro secciones del TOEFL 2026 por tarea y comprueba tu progreso con 20 simulacros originales de WeLearn. No son oficiales ni adaptativos.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/toefl' },
 };
 
@@ -23,9 +24,9 @@ const routes = [
   },
   {
     title: 'Listening',
-    eyebrow: 'Próximamente',
+    eyebrow: 'Ruta activa',
     description: 'Respuesta pragmática, conversaciones, anuncios y charlas académicas con notas selectivas.',
-    href: null,
+    href: '/practica/toefl/listening',
     Icon: Headphones,
   },
   {
@@ -37,24 +38,38 @@ const routes = [
   },
   {
     title: 'Speaking',
-    eyebrow: 'Próximamente',
+    eyebrow: 'Ruta activa',
     description: 'Listen and Repeat y Take an Interview: claridad, procesamiento, ritmo e inteligibilidad.',
-    href: null,
+    href: '/practica/toefl/speaking',
     Icon: Mic2,
   },
 ] as const;
 
 export default function TOEFLPage() {
   return (
-    <main className={styles.page}>
+    <>
+      <LearningResourceJsonLd
+        name="Práctica TOEFL 2026"
+        url="https://www.idiomaswl.com/practica/toefl"
+        description="Mapa de práctica para Reading, Listening, Writing y Speaking con acceso a 20 simulacros originales de WeLearn."
+        teaches={['TOEFL Reading', 'TOEFL Listening', 'TOEFL Writing', 'TOEFL Speaking']}
+        isPartOf={{ name: 'Simulacros TOEFL 2026', url: 'https://www.idiomaswl.com/examenes/toefl' }}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'TOEFL', url: 'https://www.idiomaswl.com/practica/toefl' },
+        ]}
+      />
+      <main className={styles.page}>
       <section className={styles.hero}>
         <div className="wrap">
           <nav className={styles.breadcrumb} aria-label="Breadcrumb">
             <Link href="/practica">Práctica</Link><span>›</span><span>TOEFL iBT</span>
           </nav>
           <p className={styles.kicker}>TOEFL iBT · formato posterior al 21 de enero de 2026</p>
-          <h1>Entiende el mapa. Practica el punto exacto que te frena.</h1>
-          <p className={styles.lead}>El TOEFL actual evalúa comunicación académica real mediante Reading, Listening, Writing y Speaking. Reading y Listening son adaptativos por módulos; Writing y Speaking son fijos.</p>
+          <h1>Práctica TOEFL 2026 para las cuatro secciones</h1>
+          <p className={styles.lead}>Entrena Reading, Listening, Writing y Speaking por tarea y después comprueba la transferencia en 20 simulacros originales de WeLearn. El TOEFL oficial adapta Reading y Listening; nuestros recorridos son fijos y no oficiales para que puedas comparar intentos.</p>
           <div className={styles.facts} aria-label="TOEFL iBT 2026 at a glance">
             <div><strong>≈ 2 h</strong><span>incluyendo instrucciones</span></div>
             <div><strong>1–6</strong><span>bandas de medio punto</span></div>
@@ -69,7 +84,9 @@ export default function TOEFLPage() {
         notes={toeflStrategyMapNotes}
         links={[
           { href: '/practica/toefl/reading', label: 'Reading route' },
+          { href: '/practica/toefl/listening', label: 'Listening route' },
           { href: '/practica/toefl/writing', label: 'Writing route' },
+          { href: '/practica/toefl/speaking', label: 'Speaking route' },
           { href: '/examenes/toefl', label: 'Full mock tests' },
         ]}
       />
@@ -101,6 +118,7 @@ export default function TOEFLPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

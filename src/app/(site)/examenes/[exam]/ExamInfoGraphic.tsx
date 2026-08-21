@@ -77,7 +77,7 @@ export default function ExamInfoGraphic({ exam }: Props) {
             className="wl-exam-hero__title"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.1 }}
           >
-            {exam.name}
+            {exam.slug === 'toefl' ? 'Simulacros TOEFL iBT 2026' : exam.name}
           </motion.h1>
           <motion.p
             className="wl-exam-hero__sub"
@@ -91,6 +91,15 @@ export default function ExamInfoGraphic({ exam }: Props) {
           >
             {exam.description}
           </motion.p>
+
+          {exam.slug === 'toefl' ? (
+            <motion.p
+              initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.32 }}
+              style={{ margin: '1.25rem 0 0' }}
+            >
+              <a href="#simulacros" className="btn">Elegir uno de los 20 simulacros →</a>
+            </motion.p>
+          ) : null}
 
           {/* Key stat pills */}
           <motion.div

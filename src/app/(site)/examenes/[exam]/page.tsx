@@ -70,7 +70,9 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
           links={[
             { href: '/practica/toefl#toefl-strategy-map', label: 'Episode notes and study map' },
             { href: '/practica/toefl/reading', label: 'Practise Reading' },
+            { href: '/practica/toefl/listening', label: 'Practise Listening' },
             { href: '/practica/toefl/writing', label: 'Practise Writing' },
+            { href: '/practica/toefl/speaking', label: 'Practise Speaking' },
           ]}
         />
       )}

@@ -12,14 +12,15 @@ import {
 const ROUTE = TOEFL_READING_TYPES.find((item) => item.slug === 'factual-information')!;
 const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
 const ACCENT = '#1a4fcc';
+const META_DESCRIPTION = 'Practica Factual Information en TOEFL Reading: localiza detalles, reconoce paráfrasis y descarta opciones que mezclan información del texto.';
 
 export const metadata: Metadata = {
   title: 'TOEFL Factual Information: ejercicios y estrategia',
-  description: ROUTE.description,
+  description: META_DESCRIPTION,
   keywords: ROUTE.keywords,
   openGraph: {
     title: 'TOEFL Factual Information: ejercicios y estrategia',
-    description: ROUTE.description,
+    description: META_DESCRIPTION,
     url: URL,
     type: 'website',
     locale: 'es_CO',

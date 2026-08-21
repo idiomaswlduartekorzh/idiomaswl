@@ -12,14 +12,15 @@ import {
 const ROUTE = TOEFL_WRITING_TASKS.find((item) => item.slug === 'integrated-writing')!;
 const URL = `${PRACTICE_BASE_URL}${ROUTE.path}`;
 const ACCENT = '#1a4fcc';
+const META_DESCRIPTION = 'Practica síntesis de lectura y clase en el formato anterior de TOEFL Integrated Writing, con organización, notas y ejercicios originales.';
 
 export const metadata: Metadata = {
   title: 'TOEFL Integrated Writing: síntesis lectura y clase',
-  description: ROUTE.description,
+  description: META_DESCRIPTION,
   keywords: ROUTE.keywords,
   openGraph: {
     title: 'TOEFL Integrated Writing: síntesis lectura y clase',
-    description: ROUTE.description,
+    description: META_DESCRIPTION,
     url: URL,
     type: 'website',
     locale: 'es_CO',

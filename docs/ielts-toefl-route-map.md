@@ -19,6 +19,7 @@ Status: canonical planning map
 | `/practica/ielts` | live | IELTS practice hub |
 | `/practica/ielts/academic` | live | IELTS Academic hub |
 | `/practica/ielts/general-training` | live | IELTS General Training hub |
+| `/examenes/toefl` | live | Primary Spanish landing for simulacro/examen TOEFL intent and the 20 four-section mocks |
 | `/practica/toefl` | live | TOEFL practice hub |
 
 ## 3. IELTS Academic Reading
@@ -194,7 +195,17 @@ Note: `/practica/toefl/reading/tipos-de-preguntas/*` routes are compatible skill
 | `/practica/toefl/reading/habilidades/text-organisation` | live | WeLearn skill |
 | `/practica/toefl/reading/habilidades/time-management` | live | WeLearn skill |
 
-## 7. TOEFL Writing
+## 7. TOEFL Listening
+
+### Current-format hub
+
+| Route | Status | Official mapping |
+| --- | --- | --- |
+| `/practica/toefl/listening` | live | Listen and Choose a Response, Listen to a Conversation, Listen to an Announcement and Listen to an Academic Talk |
+
+Note: the hub links to the 20 fixed WeLearn mocks and states visibly that the official Reading and Listening sections are adaptive while WeLearn's mocks are not. Do not create thin child routes until each task has enough original audio practice to justify a separate searchable page.
+
+## 8. TOEFL Writing
 
 ### Hubs and current tasks
 
@@ -221,7 +232,17 @@ Note: `/practica/toefl/reading/tipos-de-preguntas/*` routes are compatible skill
 | `/practica/toefl/writing/academic-discussion/banco-de-prompts` | live |
 | `/practica/toefl/writing/write-an-email/banco-de-prompts` | live |
 
-## 8. Redirect/canonical notes
+## 9. TOEFL Speaking
+
+### Current-format hub
+
+| Route | Status | Official mapping |
+| --- | --- | --- |
+| `/practica/toefl/speaking` | live | Listen and Repeat and Take an Interview |
+
+Note: speaking recordings stay private inside the submission workflow. The indexable hub explains the task families but never exposes a candidate recording or result.
+
+## 10. Redirect/canonical notes
 
 - Uppercase variants such as `/practica/IELTS` and `/practica/TOEFL` should redirect to lowercase if they can be reached externally.
 - Do not canonicalize skill pages to question-type pages; link them as supporting resources.

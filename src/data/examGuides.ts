@@ -466,10 +466,10 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
   },
 
   toefl: {
-    title: 'Simulacro TOEFL gratis y la nueva escala 1–6: guía 2026',
-    description: 'Simulacros del TOEFL iBT gratis con formato real. Desde enero de 2026 se puntúa en bandas de 1 a 6, no sobre 120: qué cambió y qué piden.',
+    title: 'Simulacro TOEFL 2026: 20 exámenes de las 4 secciones',
+    description: 'Haz un simulacro TOEFL 2026 de las cuatro secciones. Tienes 20 exámenes originales de WeLearn, de formato fijo y no oficiales, para practicar en línea.',
     lead:
-      'Antes de nada, lo que casi nadie te ha dicho: <strong>desde el 21 de enero de 2026 el TOEFL iBT ya no se puntúa sobre 120</strong>. El puntaje principal es ahora una <strong>banda de 1 a 6</strong>, con medios puntos, igual que el IELTS. El 0–120 se sigue reportando como equivalente, pero solo durante una transición de dos años.',
+      'Aquí puedes hacer <strong>20 simulacros TOEFL iBT 2026 de WeLearn</strong> con Reading, Listening, Writing y Speaking. Son recorridos originales de formato fijo, alineados con las tareas publicadas por ETS: <strong>no son pruebas oficiales ni reproducen el motor adaptativo</strong>. Desde el 21 de enero de 2026, el puntaje principal del TOEFL es una banda de 1 a 6; el equivalente 0–120 se mantiene durante una transición de dos años.',
     sections: [
       {
         h: 'Qué cambió exactamente y qué significa para ti',
@@ -524,7 +524,7 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { q: '¿Cuánto tiempo son válidos los resultados del TOEFL?', a: 'Dos años desde la fecha del examen. Pasado ese plazo ETS no reporta ni envía los puntajes.' },
       { q: '¿Se puede presentar el TOEFL iBT en Bucaramanga?', a: 'No. El TOEFL iBT no se aplica en Bucaramanga, hay que desplazarse a otra ciudad. Si necesitas un examen internacional que sí se aplique aquí, el IELTS se presenta en la UNAB como sede avalada por el British Council.' },
       { q: '¿El TOEFL ITP sirve igual que el iBT?', a: 'No, son exámenes distintos. El ITP se usa para clasificación interna de instituciones y no reemplaza al iBT donde te piden el iBT. Es un error frecuente y caro: confirma cuál te están exigiendo antes de inscribirte.' },
-      { q: '¿Los simulacros de esta página son gratis?', a: 'Sí. Reproducen el formato de las cuatro secciones y te dan un informe por sección para que veas dónde estás perdiendo puntos, que es para lo que sirve de verdad un simulacro.' },
+      { q: '¿Los simulacros de esta página son gratis?', a: 'Sí. Puedes completar los 20 recorridos de las cuatro secciones sin pagar. Son simulacros originales de WeLearn, de formato fijo y no oficiales; no reproducen el motor adaptativo de ETS.' },
       { q: '¿Qué sección del TOEFL es la más difícil?', a: 'Depende de tu perfil, pero la expresión oral es la que más se atraganta a los hispanohablantes: se graba, hay muy poco tiempo de preparación y no se puede corregir sobre la marcha. Es la que más mejora con práctica en voz alta.' },
       { q: '¿TOEFL o IELTS?', a: 'Si tu institución acepta los dos, pesa lo práctico: el IELTS se aplica en Bucaramanga y el TOEFL iBT no. Si te piden uno por nombre, no hay decisión que tomar. Y verifica siempre el requisito exacto antes de pagar.' },
     ],
@@ -533,10 +533,11 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { label: 'ETS — Contenido y secciones del TOEFL iBT', url: 'https://www.ets.org/toefl/test-takers/ibt/about/content.html' },
     ],
     related: [
+      { href: '/practica/toefl', label: 'Mapa de práctica TOEFL 2026', note: 'Elige Reading, Listening, Writing o Speaking y entrena la tarea concreta que te frena.' },
+      { href: '/practica/toefl/listening', label: 'TOEFL Listening 2026', note: 'Las cuatro tareas actuales, qué mide cada una y cómo transferirlas al simulacro.' },
+      { href: '/practica/toefl/speaking', label: 'TOEFL Speaking 2026', note: 'Listen and Repeat y Take an Interview con práctica de grabación.' },
       { href: '/examenes/ielts', label: 'Simulacros de IELTS', note: 'El examen que sí se aplica en Bucaramanga, por si te sirven los dos.' },
       { href: '/blog/ielts-vs-toefl-cual-tomar-en-colombia', label: 'IELTS o TOEFL en Colombia', note: 'La comparación completa, con lo que pesa de verdad al elegir.' },
-      { href: '/practica/ingles/b1/escritura', label: 'Escritura guiada', note: 'Produce textos y compáralos con un modelo del nivel.' },
-      { href: '/practica/ingles/b1/habla', label: 'Expresión oral', note: 'La sección que más se atraganta, y la que más mejora practicando en voz alta.' },
       { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Cómo preparamos el TOEFL en WeLearn, presencial u online.' },
     ],
     checked: 'agosto de 2026',
