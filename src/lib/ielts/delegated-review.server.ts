@@ -2,8 +2,12 @@ import 'server-only';
 
 import { createHash } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
-import { IELTS_SPEAKING_BUCKET } from './mock4-submission';
-import { buildIeltsScoreSummary } from './scoring';
+import {
+  IELTS_SPEAKING_BUCKET,
+  ieltsSpeakingEvidenceIssues,
+  type IeltsAudioDescriptor,
+} from './submission';
+import { recomputeIeltsSubmissionScore } from './recompute-score.server';
 import {
   buildIeltsDelegatedAgentWorkflow,
   buildDelegatedReviewMetadata,
@@ -21,7 +25,12 @@ import {
 } from './delegated-review';
 import { getIeltsReviewBlueprint } from './review-blueprint';
 import { persistIeltsDelegatedWritingAssessmentForSubmission } from './writing-assessment.server';
-import { getIeltsSpeakingAssignment, getIeltsWritingAssignment } from '@/lib/labs/exam-bridge/ielts';
+import {
+  getIeltsSpeakingAssignment,
+  getIeltsWritingAssignment,
+  type IeltsSpeakingAssignmentItem,
+  type IeltsWritingAssignment,
+} from '@/lib/labs/exam-bridge/ielts';
 
 const REVIEW_TOKEN_PATTERN = /^[A-Za-z0-9_-]{43}$/;
 
@@ -39,11 +48,18 @@ interface DelegatedInviteRow {
 
 interface DelegatedSubmissionRow {
   id: string;
+  mock_id: string | null;
   mock_title: string | null;
+  content_version: string | null;
+  assignment_snapshot: {
+    writing?: { task1?: IeltsWritingAssignment; task2?: IeltsWritingAssignment };
+    speaking?: IeltsSpeakingAssignmentItem[];
+  } | null;
   writing_task1_answer: string | null;
   writing_task2_answer: string | null;
   speaking_answers: Record<string, string> | null;
   speaking_audio_paths: Record<string, string> | null;
+  speaking_audio_metadata: Record<string, IeltsAudioDescriptor> | null;
   listening_band: number | null;
   reading_band: number | null;
   writing_band: number | null;
@@ -108,9 +124,10 @@ async function authorizeDelegatedReview(token: string): Promise<
 
   const { data: submissionData, error: submissionError } = await admin
     .from('exam_submissions')
-    .select('id, mock_title, writing_task1_answer, writing_task2_answer, speaking_answers, speaking_audio_paths, listening_band, reading_band, writing_band, speaking_band, reviewed_at')
+    .select('id, mock_id, mock_title, content_version, assignment_snapshot, writing_task1_answer, writing_task2_answer, speaking_answers, speaking_audio_paths, speaking_audio_metadata, listening_band, reading_band, writing_band, speaking_band, reviewed_at')
     .eq('id', invite.submission_id)
     .eq('exam_slug', 'ielts')
+    .eq('mock_id', blueprint.mockId)
     .eq('mock_title', blueprint.mockTitle)
     .eq('submission_status', 'submitted')
     .maybeSingle();
@@ -120,6 +137,9 @@ async function authorizeDelegatedReview(token: string): Promise<
     return { ok: false, status: 409, message: 'No pudimos abrir la entrega vinculada.' };
   }
   if (!submissionData) return { ok: false, status: 404, message: 'La entrega vinculada ya no está disponible.' };
+  if (submissionData.content_version !== blueprint.contentVersion) {
+    return { ok: false, status: 409, message: 'La versión de contenido de la entrega no coincide con el llamado.' };
+  }
   if (submissionData.reviewed_at) {
     return { ok: false, status: 409, message: 'La entrega ya tiene una evaluación final del administrador.' };
   }
@@ -147,6 +167,9 @@ function responseContract(task: IeltsDelegatedReviewTask): IeltsDelegatedReviewC
     summary: 'Resumen sustentado en la respuesta de la estudiante',
     strengths: 'Lista JSON de 1 a 8 fortalezas concretas',
     priorities: 'Lista JSON de 1 a 8 mejoras prioritarias',
+    ...(task === 'speaking' ? {
+      audioEvidenceAttested: 'Boolean true: confirma que escuchaste todos los audios y contienen voz evaluable',
+    } : {}),
   };
 }
 
@@ -163,7 +186,8 @@ async function buildReviewCase(
     const answer = taskNumber === 1
       ? context.submission.writing_task1_answer
       : context.submission.writing_task2_answer;
-    const assignment = await getIeltsWritingAssignment(context.invite.mock_id, taskNumber);
+    const assignment = context.submission.assignment_snapshot?.writing?.[`task${taskNumber}`]
+      ?? await getIeltsWritingAssignment(context.invite.mock_id, taskNumber);
 
     if (!assignment || !answer?.trim()) {
       return { ok: false, status: 409, message: 'La tarea asignada no contiene una respuesta evaluable.' };
@@ -195,7 +219,8 @@ async function buildReviewCase(
     };
   }
 
-  const speakingAssignment = await getIeltsSpeakingAssignment(context.invite.mock_id);
+  const speakingAssignment = context.submission.assignment_snapshot?.speaking
+    ?? await getIeltsSpeakingAssignment(context.invite.mock_id);
   if (!speakingAssignment) {
     return { ok: false, status: 409, message: 'El simulacro no tiene tareas de Speaking evaluables.' };
   }
@@ -210,13 +235,20 @@ async function buildReviewCase(
       message: `Faltan ${missingAudioIds.length} grabaciones requeridas de Speaking (${missingAudioIds.join(', ')}). No se puede emitir una banda completa sin escucharlas.`,
     };
   }
+  const evidenceIssues = ieltsSpeakingEvidenceIssues(
+    speakingAssignment,
+    Object.values(context.submission.speaking_audio_metadata ?? {}),
+  );
+  if (evidenceIssues.length > 0) {
+    return { ok: false, status: 409, message: evidenceIssues[0] };
+  }
 
   const admin = createAdminClient();
   const prompts: IeltsDelegatedSpeakingPrompt[] = await Promise.all(speakingAssignment.map(async prompt => {
     const audioPath = audioPaths[prompt.questionId];
     let audioUrl: string | undefined;
     if (audioPath) {
-      const { data } = await admin.storage.from(IELTS_SPEAKING_BUCKET).createSignedUrl(audioPath, 60 * 60);
+      const { data } = await admin.storage.from(IELTS_SPEAKING_BUCKET).createSignedUrl(audioPath, 5 * 60);
       audioUrl = data?.signedUrl;
     }
     return {
@@ -249,6 +281,7 @@ async function buildReviewCase(
           expected: speakingAssignment.length,
           complete: true,
         },
+        evidenceLabel: 'Muestra diagnóstica con cobertura de las tres partes; no es una entrevista oficial completa.',
       },
       agentWorkflow: buildIeltsDelegatedAgentWorkflow(context.task),
       submissionEndpoint,
@@ -370,21 +403,11 @@ export async function submitIeltsDelegatedReview(
     });
     if (!result.ok) persistenceError = result.message;
   } else {
-    const scoreSummary = buildIeltsScoreSummary({
-      listening: context.submission.listening_band,
-      reading: context.submission.reading_band,
-      writing: context.submission.writing_band,
-      speaking: validation.assessment.overallBand,
-    });
     const { data: updatedSpeaking, error } = await admin
       .from('exam_submissions')
       .update({
         speaking_assessment: storedAssessment,
         speaking_band: validation.assessment.overallBand,
-        skills: scoreSummary.skills,
-        total_score: scoreSummary.totalScore,
-        total_max: 9,
-        total_label: scoreSummary.totalLabel,
       })
       .eq('id', context.submission.id)
       .eq('exam_slug', 'ielts')
@@ -395,6 +418,13 @@ export async function submitIeltsDelegatedReview(
     if (error || !updatedSpeaking) {
       console.error('[ielts-delegated-review] Could not persist Speaking report:', error?.message ?? 'Submission was finalized concurrently');
       persistenceError = 'No pudimos añadir el reporte de Speaking: la entrega pudo haber sido finalizada por el administrador.';
+    } else {
+      try {
+        await recomputeIeltsSubmissionScore(context.submission.id);
+      } catch (recomputeError) {
+        console.error('[ielts-delegated-review] Could not consolidate Speaking report:', recomputeError);
+        persistenceError = 'Guardamos el reporte de Speaking, pero no pudimos consolidar las cuatro bandas.';
+      }
     }
   }
 

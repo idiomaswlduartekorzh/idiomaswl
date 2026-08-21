@@ -13,18 +13,20 @@ function lines(value: string): string[] {
 export default function ReviewSubmissionForm({ review }: { review: IeltsDelegatedReviewCase }) {
   const [evaluatorName, setEvaluatorName] = useState('')
   const [evaluatorModel, setEvaluatorModel] = useState('')
-  const [bands, setBands] = useState<Record<string, number>>(() => Object.fromEntries(review.rubric.criteria.map(item => [item.key, 6])))
+  const [bands, setBands] = useState<Record<string, number | null>>(() => Object.fromEntries(review.rubric.criteria.map(item => [item.key, null])))
   const [reasons, setReasons] = useState<Record<string, string>>(() => Object.fromEntries(review.rubric.criteria.map(item => [item.key, ''])))
   const [summary, setSummary] = useState('')
   const [strengths, setStrengths] = useState('')
   const [priorities, setPriorities] = useState('')
+  const [audioEvidenceAttested, setAudioEvidenceAttested] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
   const [result, setResult] = useState<{ listeningBand: number | null; readingBand: number | null; writingBand: number | null; speakingBand: number | null; overallBand: number | null } | null>(null)
 
   const overallBand = useMemo(() => {
     const scores = review.rubric.criteria.map(criterion => bands[criterion.key])
-    return Math.round((scores.reduce((sum, score) => sum + score, 0) / scores.length) * 2) / 2
+    if (scores.some((score): score is null => score == null)) return null
+    return Math.round((scores.reduce<number>((sum, score) => sum + Number(score), 0) / scores.length) * 2) / 2
   }, [bands, review.rubric.criteria])
 
   const payload = useMemo(() => ({
@@ -39,7 +41,8 @@ export default function ReviewSubmissionForm({ review }: { review: IeltsDelegate
     summary,
     strengths: lines(strengths),
     priorities: lines(priorities),
-  }), [bands, evaluatorModel, evaluatorName, overallBand, priorities, reasons, review.rubric.criteria, strengths, summary])
+    ...(review.taskType === 'speaking' ? { audioEvidenceAttested } : {}),
+  }), [audioEvidenceAttested, bands, evaluatorModel, evaluatorName, overallBand, priorities, reasons, review.rubric.criteria, review.taskType, strengths, summary])
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -83,11 +86,11 @@ export default function ReviewSubmissionForm({ review }: { review: IeltsDelegate
       <div className={styles.twoColumns}>
         <label>
           Evaluador
-          <input required minLength={2} maxLength={120} value={evaluatorName} onChange={event => setEvaluatorName(event.target.value)} placeholder="ChatGPT, Claude o nombre humano" />
+          <input name="evaluator_name" autoComplete="off" required minLength={2} maxLength={120} value={evaluatorName} onChange={event => setEvaluatorName(event.target.value)} placeholder="ChatGPT, Claude o nombre humano…" />
         </label>
         <label>
           Modelo y versión
-          <input required minLength={2} maxLength={120} value={evaluatorModel} onChange={event => setEvaluatorModel(event.target.value)} placeholder="Ej. Claude Sonnet 4.5" />
+          <input name="evaluator_model" autoComplete="off" required minLength={2} maxLength={120} value={evaluatorModel} onChange={event => setEvaluatorModel(event.target.value)} placeholder="Ej.: Claude Sonnet 4.5…" />
         </label>
       </div>
 
@@ -100,14 +103,15 @@ export default function ReviewSubmissionForm({ review }: { review: IeltsDelegate
                 <strong>{criterion.label}</strong>
                 <label>
                   Band
-                  <select value={bands[criterion.key]} onChange={event => setBands(current => ({ ...current, [criterion.key]: Number(event.target.value) }))}>
+                  <select name={`band_${criterion.key}`} required value={bands[criterion.key] ?? ''} onChange={event => setBands(current => ({ ...current, [criterion.key]: event.target.value === '' ? null : Number(event.target.value) }))}>
+                    <option value="">Seleccionar…</option>
                     {BAND_OPTIONS.map(band => <option value={band} key={band}>{band}</option>)}
                   </select>
                 </label>
               </div>
               <label>
                 Justificación basada en evidencia
-                <textarea required minLength={20} maxLength={1500} rows={4} value={reasons[criterion.key]} onChange={event => setReasons(current => ({ ...current, [criterion.key]: event.target.value }))} />
+                <textarea name={`reason_${criterion.key}`} required minLength={20} maxLength={1500} rows={4} value={reasons[criterion.key]} onChange={event => setReasons(current => ({ ...current, [criterion.key]: event.target.value }))} />
               </label>
             </div>
           ))}
@@ -116,24 +120,32 @@ export default function ReviewSubmissionForm({ review }: { review: IeltsDelegate
 
       <div className={styles.bandLabel}>
         <span>Banda estimada de la tarea</span>
-        <strong>{overallBand}</strong>
+        <strong>{overallBand ?? 'Pendiente'}</strong>
         <small>Promedio automático de los cuatro criterios.</small>
       </div>
 
       <label>
         Resumen de evaluación
-        <textarea required minLength={40} maxLength={3000} rows={5} value={summary} onChange={event => setSummary(event.target.value)} placeholder="Explica la banda y cita evidencia de la respuesta." />
+        <textarea name="summary" required minLength={40} maxLength={3000} rows={5} value={summary} onChange={event => setSummary(event.target.value)} placeholder="Explica la banda y cita evidencia de la respuesta…" />
       </label>
       <div className={styles.twoColumns}>
         <label>
           Fortalezas · una por línea
-          <textarea required rows={5} value={strengths} onChange={event => setStrengths(event.target.value)} />
+          <textarea name="strengths" required rows={5} value={strengths} onChange={event => setStrengths(event.target.value)} />
         </label>
         <label>
           Prioridades · una por línea
-          <textarea required rows={5} value={priorities} onChange={event => setPriorities(event.target.value)} />
+          <textarea name="priorities" required rows={5} value={priorities} onChange={event => setPriorities(event.target.value)} />
         </label>
       </div>
+
+      {review.taskType === 'speaking' && (
+        <label>
+          <input type="checkbox" name="audio_evidence_attested" required checked={audioEvidenceAttested}
+            onChange={event => setAudioEvidenceAttested(event.target.checked)} />
+          Escuché todas las grabaciones, confirmé que contienen voz evaluable y basé Pronunciation únicamente en evidencia audible.
+        </label>
+      )}
 
       <button className={styles.submit} type="submit" disabled={submitting}>
         {submitting ? 'Guardando evaluación…' : 'Añadir evaluación al reporte consolidado'}

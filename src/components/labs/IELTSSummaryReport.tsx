@@ -31,7 +31,7 @@ interface Props {
 const WA_NUMBER = '573005004253';
 const waLink = (msg: string) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
 
-/** Mapeo estándar banda IELTS → nivel CEFR (British Council). */
+/** Orientación aproximada: IELTS advierte que no existe equivalencia 1:1. */
 function bandToCEFR(band: number): string {
   if (band >= 8.5) return 'C2';
   if (band >= 7.0) return 'C1';
@@ -108,14 +108,20 @@ export function IELTSSummaryReport({ mockTitle, date, studentName, skills, overa
         ))}
         <ScoreBox
           label="Overall Band"
-          value={overallBand !== null ? overallBand.toFixed(1) : '…'}
+          value={overallBand !== null ? overallBand.toFixed(1) : 'Pendiente'}
           accent
         />
         <ScoreBox
-          label="CEFR"
-          value={overallBand !== null ? bandToCEFR(overallBand) : '…'}
+          label="CEFR orientativo"
+          value={overallBand !== null ? bandToCEFR(overallBand) : '—'}
         />
       </div>
+
+      {overallBand === null && (
+        <p className="mt-3 text-xs text-[var(--muted)]">
+          Overall y CEFR se mostrarán cuando Listening, Reading, Writing y Speaking tengan banda.
+        </p>
+      )}
 
       {saturatedSkill && (
         <div className="mt-4 rounded-lg border border-amber-400/30 bg-amber-400/10 p-3 text-xs text-amber-200">

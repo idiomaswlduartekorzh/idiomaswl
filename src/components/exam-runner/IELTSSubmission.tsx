@@ -3,31 +3,33 @@
 import { useRef, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import {
-  IELTS_MOCK4_SPEAKING_IDS,
   IELTS_SPEAKING_BUCKET,
-  type IeltsMock4CompleteResponse,
-  type IeltsMock4PrepareResponse,
-  type IeltsMock4SubmissionPayload,
-} from '@/lib/ielts/mock4-submission';
+  IELTS_SUBMISSION_CONSENT_VERSION,
+  countEssayWords,
+  ieltsSpeakingEvidenceIssues,
+  type IeltsCompleteResponse,
+  type IeltsObjectiveAnswers,
+  type IeltsPrepareResponse,
+  type IeltsSubmissionPayload,
+  type IeltsSpeakingPromptRef,
+} from '@/lib/ielts/submission';
 import type { IeltsSpeakingRecording } from './IELTSSpeakingRecorder';
 import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 
 interface Props {
-  readingBand: number;
-  listeningBand: number | null;
+  mockId: string;
+  mockTitle: string;
+  objectiveAnswers: IeltsObjectiveAnswers;
   writingTask1: string;
   writingTask2: string;
   speakingNotes: Record<string, string>;
+  speakingPrompts: IeltsSpeakingPromptRef[];
   recordings: Record<string, IeltsSpeakingRecording>;
   onBack: () => void;
   onSuccess: (receipt: IeltsSubmissionReceipt) => void;
 }
 
 type SubmitState = 'idle' | 'preparing' | 'uploading' | 'confirming';
-
-function countWords(value: string): number {
-  return value.trim() ? value.trim().split(/\s+/).length : 0;
-}
 
 function formatDuration(seconds: number): string {
   const minutes = Math.floor(seconds / 60);
@@ -47,12 +49,14 @@ async function readResponse<T>(response: Response): Promise<T & { ok?: boolean; 
   }
 }
 
-export function IELTSMock4Submission({
-  readingBand,
-  listeningBand,
+export function IELTSSubmission({
+  mockId,
+  mockTitle,
+  objectiveAnswers,
   writingTask1,
   writingTask2,
   speakingNotes,
+  speakingPrompts,
   recordings,
   onBack,
   onSuccess,
@@ -65,20 +69,32 @@ export function IELTSMock4Submission({
   const [error, setError] = useState('');
   const errorRef = useRef<HTMLParagraphElement>(null);
 
-  const task1Words = countWords(writingTask1);
-  const task2Words = countWords(writingTask2);
-  const recordedEntries = IELTS_MOCK4_SPEAKING_IDS.flatMap(questionId => {
-    const recording = recordings[questionId];
-    return recording ? [{ questionId, recording }] : [];
+  const task1Words = countEssayWords(writingTask1);
+  const task2Words = countEssayWords(writingTask2);
+  const recordedEntries = speakingPrompts.flatMap(prompt => {
+    const recording = recordings[prompt.questionId];
+    return recording ? [{ prompt, recording }] : [];
   });
+  const audioDescriptors = recordedEntries.map(({ prompt, recording }) => ({
+    questionId: prompt.questionId,
+    mimeType: recording.mimeType,
+    size: recording.blob.size,
+    durationSeconds: recording.durationSeconds,
+  }));
+  const speakingIssues = ieltsSpeakingEvidenceIssues(speakingPrompts, audioDescriptors);
   const isSubmitting = state !== 'idle';
   const statusText = state === 'preparing'
-    ? 'Preparando tu entrega privada…'
+    ? 'Verificando respuestas y preparando tu entrega privada…'
     : state === 'uploading'
       ? `Subiendo audio ${uploadProgress.current} de ${uploadProgress.total}…`
       : state === 'confirming'
-        ? 'Confirmando que todo llegó correctamente…'
+        ? 'Confirmando que textos y audios llegaron completos…'
         : '';
+
+  function showError(message: string) {
+    setError(message);
+    requestAnimationFrame(() => errorRef.current?.focus());
+  }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -86,60 +102,43 @@ export function IELTSMock4Submission({
 
     const trimmedName = name.trim();
     const trimmedEmail = email.trim().toLowerCase();
-    if (trimmedName.length < 2) {
-      setError('Escribe el nombre completo de la estudiante.');
-      requestAnimationFrame(() => errorRef.current?.focus());
-      return;
-    }
-    if (!/^\S+@\S+\.\S+$/.test(trimmedEmail)) {
-      setError('Escribe un correo válido, por ejemplo estudiante@correo.com.');
-      requestAnimationFrame(() => errorRef.current?.focus());
-      return;
-    }
-    if (!consent) {
-      setError('Debes autorizar el envío de los textos y audios para evaluación.');
-      requestAnimationFrame(() => errorRef.current?.focus());
-      return;
-    }
+    if (trimmedName.length < 2) return showError('Escribe el nombre completo de la estudiante.');
+    if (!/^\S+@\S+\.\S+$/.test(trimmedEmail)) return showError('Escribe un correo válido, por ejemplo estudiante@correo.com.');
+    if (task1Words < 150) return showError('Writing Task 1 necesita al menos 150 palabras. Vuelve al examen para completarlo.');
+    if (task2Words < 250) return showError('Writing Task 2 necesita al menos 250 palabras. Vuelve al examen para completarlo.');
+    if (speakingIssues.length > 0) return showError(speakingIssues[0]);
+    if (!consent) return showError('Debes autorizar el envío académico y la posible evaluación externa.');
 
-    const payload: IeltsMock4SubmissionPayload = {
+    const payload: IeltsSubmissionPayload = {
       name: trimmedName,
       email: trimmedEmail,
-      readingBand,
-      listeningBand,
+      consentVersion: IELTS_SUBMISSION_CONSENT_VERSION,
+      objectiveAnswers,
       writingTask1,
       writingTask2,
       speakingNotes,
-      audio: recordedEntries.map(({ questionId, recording }) => ({
-        questionId,
-        mimeType: recording.mimeType,
-        size: recording.blob.size,
-        durationSeconds: recording.durationSeconds,
-      })),
+      audio: audioDescriptors,
     };
+    const endpoint = `/api/ielts/${encodeURIComponent(mockId)}/submissions`;
 
     try {
       setState('preparing');
-      const prepareResponse = await fetch('/api/ielts/mock-4/submissions', {
+      const prepareResponse = await fetch(endpoint, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ action: 'prepare', payload }),
       });
-      const prepared = await readResponse<IeltsMock4PrepareResponse>(prepareResponse);
-      if (!prepareResponse.ok || !prepared.ok) {
-        throw new Error(prepared.error || 'No pudimos preparar la entrega. Inténtalo otra vez.');
-      }
+      const prepared = await readResponse<IeltsPrepareResponse>(prepareResponse);
+      if (!prepareResponse.ok || !prepared.ok) throw new Error(prepared.error || 'No pudimos preparar la entrega. Inténtalo otra vez.');
 
       const supabase = createClient();
       if (!supabase) throw new Error('La conexión segura de archivos no está configurada.');
-
       setState('uploading');
       setUploadProgress({ current: 0, total: prepared.uploads.length });
       for (let index = 0; index < prepared.uploads.length; index += 1) {
         const upload = prepared.uploads[index];
         const recording = recordings[upload.questionId];
         if (!recording) throw new Error(`Falta la grabación ${upload.questionId}. Vuelve al examen y grábala otra vez.`);
-
         setUploadProgress({ current: index + 1, total: prepared.uploads.length });
         const { error: uploadError } = await supabase.storage
           .from(IELTS_SPEAKING_BUCKET)
@@ -151,7 +150,7 @@ export function IELTSMock4Submission({
       }
 
       setState('confirming');
-      const completeResponse = await fetch('/api/ielts/mock-4/submissions', {
+      const completeResponse = await fetch(endpoint, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
@@ -160,117 +159,92 @@ export function IELTSMock4Submission({
           completionToken: prepared.completionToken,
         }),
       });
-      const completed = await readResponse<IeltsMock4CompleteResponse>(completeResponse);
-      if (!completeResponse.ok || !completed.ok) {
-        throw new Error(completed.error || 'Los archivos subieron, pero no pudimos confirmar la entrega. Inténtalo otra vez.');
-      }
+      const completed = await readResponse<IeltsCompleteResponse>(completeResponse);
+      if (!completeResponse.ok || !completed.ok) throw new Error(completed.error || 'Los archivos subieron, pero no pudimos confirmar la entrega. Inténtalo otra vez.');
 
       try {
         localStorage.setItem('wl_lead_captured', '1');
         window.dataLayer?.push({
-          event: 'ielts_mock4_submission',
+          event: 'ielts_submission',
           exam_slug: 'ielts',
-          mock_id: 'set-4',
+          mock_id: mockId,
           audio_count: recordedEntries.length,
         });
       } catch {}
-      onSuccess({
-        submissionId: prepared.submissionId,
-        completionToken: prepared.completionToken,
-      });
+      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken });
     } catch (caught) {
       setState('idle');
-      setError(errorMessage(caught));
-      requestAnimationFrame(() => errorRef.current?.focus());
+      showError(errorMessage(caught));
     }
   }
 
   return (
     <div className="ielts-submit">
       <section className="ielts-submit__card" aria-labelledby="ielts-submit-title">
-        <div className="ielts-submit__eyebrow">IELTS Academic · Mock 4</div>
+        <div className="ielts-submit__eyebrow">{mockTitle}</div>
         <h1 id="ielts-submit-title">Envía tu simulacro para evaluación</h1>
         <p className="ielts-submit__intro">
-          Escribe los datos de la estudiante. Sus textos y grabaciones llegarán juntos al panel privado del profesor.
+          Identifica a la estudiante y confirma que sus dos textos y todas sus muestras de Speaking llegarán juntas al panel privado.
         </p>
 
         <div className="ielts-submit__summary" aria-label="Resumen de la entrega">
           <div className={task1Words >= 150 ? 'ielts-submit__summary-item is-ready' : 'ielts-submit__summary-item is-missing'}>
             <strong>Writing Task 1</strong>
-            <span>{task1Words} palabras {task1Words >= 150 ? '· Lista' : '· Mínimo recomendado: 150'}</span>
+            <span>{task1Words} palabras {task1Words >= 150 ? '· Lista' : '· Faltan palabras (mínimo 150)'}</span>
           </div>
           <div className={task2Words >= 250 ? 'ielts-submit__summary-item is-ready' : 'ielts-submit__summary-item is-missing'}>
             <strong>Writing Task 2</strong>
-            <span>{task2Words} palabras {task2Words >= 250 ? '· Lista' : '· Mínimo recomendado: 250'}</span>
+            <span>{task2Words} palabras {task2Words >= 250 ? '· Lista' : '· Faltan palabras (mínimo 250)'}</span>
           </div>
-          <div className={recordedEntries.length === IELTS_MOCK4_SPEAKING_IDS.length ? 'ielts-submit__summary-item is-ready' : 'ielts-submit__summary-item is-missing'}>
+          <div className={speakingIssues.length === 0 ? 'ielts-submit__summary-item is-ready' : 'ielts-submit__summary-item is-missing'}>
             <strong>Speaking</strong>
-            <span>{recordedEntries.length} de {IELTS_MOCK4_SPEAKING_IDS.length} audios listos</span>
+            <span>{recordedEntries.length} de {speakingPrompts.length} audios · {speakingIssues.length === 0 ? 'Muestra lista' : speakingIssues[0]}</span>
           </div>
         </div>
 
         {recordedEntries.length > 0 && (
           <ul className="ielts-submit__audio-list" aria-label="Audios incluidos">
-            {recordedEntries.map(({ questionId, recording }) => (
-              <li key={questionId}>
-                <span>{questionId.toUpperCase()}</span>
+            {recordedEntries.map(({ prompt, recording }) => (
+              <li key={prompt.questionId}>
+                <span>Part {prompt.partNumber} · {prompt.questionId.toUpperCase()}</span>
                 <span>{formatDuration(recording.durationSeconds)}</span>
               </li>
             ))}
           </ul>
         )}
+        <p className="ielts-submit__privacy">
+          Estas grabaciones permiten una estimación pedagógica de Speaking; no sustituyen la entrevista oficial IELTS de 11–14 minutos.
+        </p>
 
         <form className="ielts-submit__form" onSubmit={handleSubmit} noValidate>
           <div className="ielts-submit__field">
             <label htmlFor="ielts-student-name">Nombre completo</label>
-            <input
-              id="ielts-student-name"
-              name="student_name"
-              type="text"
-              autoComplete="name"
-              value={name}
-              onChange={event => setName(event.target.value)}
-              placeholder="Ej.: Ana García…"
-              maxLength={120}
-              required
-            />
+            <input id="ielts-student-name" name="student_name" type="text" autoComplete="name" value={name}
+              onChange={event => setName(event.target.value)} placeholder="Ej.: Ana García…" maxLength={120} required />
           </div>
           <div className="ielts-submit__field">
             <label htmlFor="ielts-student-email">Correo electrónico</label>
-            <input
-              id="ielts-student-email"
-              name="student_email"
-              type="email"
-              inputMode="email"
-              autoComplete="email"
-              spellCheck={false}
-              value={email}
-              onChange={event => setEmail(event.target.value)}
-              placeholder="Ej.: estudiante@correo.com…"
-              maxLength={254}
-              required
-            />
+            <input id="ielts-student-email" name="student_email" type="email" inputMode="email" autoComplete="email"
+              spellCheck={false} value={email} onChange={event => setEmail(event.target.value)}
+              placeholder="Ej.: estudiante@correo.com…" maxLength={254} required />
           </div>
 
           <label className="ielts-submit__consent">
-            <input type="checkbox" name="evaluation_consent" checked={consent} onChange={event => setConsent(event.target.checked)} required />
-            <span>Autorizo el envío y almacenamiento privado de estos textos y audios para su evaluación académica.</span>
+            <input type="checkbox" name="evaluation_consent" checked={consent}
+              onChange={event => setConsent(event.target.checked)} required />
+            <span>
+              Autorizo el almacenamiento privado para evaluación académica. El profesor puede delegar una tarea a ChatGPT, Claude u otro evaluador externo mediante un enlace temporal que no revela mi nombre ni correo.
+            </span>
           </label>
-
           <p className="ielts-submit__privacy">
-            Los audios no serán públicos. Solo se habilitan mediante enlaces temporales dentro del panel admin.
+            Textos y audios no son públicos; se conservan mientras exista el intento y puedes solicitar su eliminación al administrador.
           </p>
 
-          <p ref={errorRef} className="ielts-submit__error" role="alert" tabIndex={-1} aria-live="assertive">
-            {error}
-          </p>
+          <p ref={errorRef} className="ielts-submit__error" role="alert" tabIndex={-1} aria-live="assertive">{error}</p>
           <p className="ielts-submit__status" role="status" aria-live="polite">{statusText}</p>
-
           <div className="ielts-submit__actions">
             <button type="button" className="btn btn-ghost" onClick={onBack} disabled={isSubmitting}>Volver al examen</button>
-            <button type="submit" className="btn" disabled={isSubmitting}>
-              {isSubmitting ? 'Enviando…' : 'Enviar a evaluación'}
-            </button>
+            <button type="submit" className="btn" disabled={isSubmitting}>{isSubmitting ? 'Enviando…' : 'Enviar a evaluación'}</button>
           </div>
         </form>
       </section>
@@ -279,7 +253,5 @@ export function IELTSMock4Submission({
 }
 
 declare global {
-  interface Window {
-    dataLayer?: Record<string, unknown>[];
-  }
+  interface Window { dataLayer?: Record<string, unknown>[] }
 }

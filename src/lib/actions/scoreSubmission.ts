@@ -1,8 +1,7 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { ALL_ADMIN_EMAILS } from '@/lib/config/admins'
+import { requireAdmin } from '@/lib/auth/require-admin.server'
 import { buildIeltsScoreSummary, normalizeIeltsBand } from '@/lib/ielts/scoring'
 
 export async function scoreSubmission(
@@ -10,19 +9,7 @@ export async function scoreSubmission(
   writingBand: number,
   speakingBand: number,
 ) {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-
-  // Primary check: DB role column (authoritative, no code change needed to add admins)
-  // Fallback: hard-coded email list for legacy compatibility
-  if (!user?.email || !ALL_ADMIN_EMAILS.includes(user.email)) {
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', user?.id ?? '')
-      .single()
-    if (profile?.role !== 'admin') throw new Error('Unauthorized')
-  }
+  const adminUser = await requireAdmin()
 
   const safeWritingBand = normalizeIeltsBand(writingBand)
   const safeSpeakingBand = normalizeIeltsBand(speakingBand)
@@ -31,7 +18,7 @@ export async function scoreSubmission(
   const admin = createAdminClient()
   const { data: submission, error: readError } = await admin
     .from('exam_submissions')
-    .select('id, listening_band, reading_band')
+    .select('id, listening_band, reading_band, reviewed_at')
     .eq('id', submissionId)
     .eq('exam_slug', 'ielts')
     .eq('submission_status', 'submitted')
@@ -39,6 +26,7 @@ export async function scoreSubmission(
 
   if (readError) throw readError
   if (!submission) throw new Error('No encontramos una entrega IELTS válida.')
+  if (submission.reviewed_at) throw new Error('Esta entrega ya tiene una evaluación final. No se sobrescribió.')
 
   const summary = buildIeltsScoreSummary({
     listening: submission.listening_band,
@@ -47,13 +35,13 @@ export async function scoreSubmission(
     speaking: safeSpeakingBand,
   })
 
-  const { error } = await admin
+  const { data: updated, error } = await admin
     .from('exam_submissions')
     .update({
       writing_band: safeWritingBand,
       speaking_band: safeSpeakingBand,
       reviewed_at: new Date().toISOString(),
-      reviewed_by: user?.email ?? 'admin',
+      reviewed_by: adminUser.email,
       skills: summary.skills,
       total_score: summary.totalScore,
       total_max: 9,
@@ -61,7 +49,11 @@ export async function scoreSubmission(
     })
     .eq('id', submissionId)
     .eq('exam_slug', 'ielts')
+    .is('reviewed_at', null)
+    .select('id')
+    .maybeSingle()
 
   if (error) throw error
+  if (!updated) throw new Error('La entrega fue evaluada por otra persona. Actualiza el panel para ver el resultado final.')
   return { ok: true, overall: summary.totalScore }
 }

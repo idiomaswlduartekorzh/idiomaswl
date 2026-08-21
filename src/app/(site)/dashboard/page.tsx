@@ -26,9 +26,7 @@ export default async function DashboardPage() {
 
   const role = profile?.role as string | undefined
 
-  if (role === 'admin') {
-    redirect('/dashboard/admin')
-  } else if (role === 'welearn_student') {
+  if (role === 'welearn_student') {
     redirect('/dashboard/welearn')
   } else {
     redirect('/dashboard/student')

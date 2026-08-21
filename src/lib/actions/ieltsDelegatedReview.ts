@@ -1,10 +1,8 @@
 'use server'
 
 import { createHash, randomBytes } from 'node:crypto'
-import { headers } from 'next/headers'
-import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { ALL_ADMIN_EMAILS } from '@/lib/config/admins'
+import { requireAdmin } from '@/lib/auth/require-admin.server'
 import {
   findMissingIeltsSpeakingAudioIds,
   IELTS_OFFICIAL_RUBRICS,
@@ -14,30 +12,14 @@ import {
   type IeltsDelegatedReviewTask,
 } from '@/lib/ielts/delegated-review'
 import { getIeltsSpeakingAssignment } from '@/lib/labs/exam-bridge/ielts'
-import { getIeltsReviewBlueprintByTitle } from '@/lib/ielts/review-blueprint'
+import { getIeltsReviewBlueprint, getIeltsReviewBlueprintByTitle } from '@/lib/ielts/review-blueprint'
+import { ieltsSpeakingEvidenceIssues, type IeltsAudioDescriptor } from '@/lib/ielts/submission'
 import { IELTS_SUBMISSION_ID_PATTERN } from '@/lib/ielts/submission-token.server'
 
 const INVITATION_TTL_MS = 24 * 60 * 60 * 1000
 
 function hashReviewToken(token: string): string {
   return createHash('sha256').update(token).digest('hex')
-}
-
-async function requireAdmin(): Promise<{ id: string }> {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user?.email) throw new Error('Debes iniciar sesión como administrador.')
-
-  if (!ALL_ADMIN_EMAILS.includes(user.email)) {
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', user.id)
-      .maybeSingle()
-    if (profile?.role !== 'admin') throw new Error('No tienes permisos para crear llamados de evaluación.')
-  }
-
-  return { id: user.id }
 }
 
 export type CreateIeltsDelegatedReviewResult =
@@ -55,6 +37,60 @@ export type CreateIeltsDelegatedReviewResult =
   }
   | { ok: false; error: string }
 
+export interface IeltsDelegatedReviewInviteHistoryItem {
+  id: string
+  task: IeltsDelegatedReviewTask
+  callCode: string
+  createdAt: string
+  expiresAt: string
+  usedAt: string | null
+  revokedAt: string | null
+  evaluatorName: string | null
+  evaluatorModel: string | null
+  status: 'active' | 'used' | 'revoked' | 'expired'
+}
+
+export async function getIeltsDelegatedReviewInviteHistory(
+  submissionId: string,
+): Promise<{ ok: true; items: IeltsDelegatedReviewInviteHistoryItem[] } | { ok: false; error: string }> {
+  try {
+    await requireAdmin()
+    if (!IELTS_SUBMISSION_ID_PATTERN.test(submissionId)) return { ok: false, error: 'La entrega no es válida.' }
+
+    const { data, error } = await createAdminClient()
+      .from('ielts_delegated_review_invites')
+      .select('id, task_type, call_code, created_at, expires_at, used_at, revoked_at, evaluator_name, evaluator_model')
+      .eq('submission_id', submissionId)
+      .order('created_at', { ascending: false })
+      .limit(20)
+    if (error) throw error
+
+    return {
+      ok: true,
+      items: (data ?? []).flatMap(item => isIeltsDelegatedReviewTask(item.task_type) ? [{
+        id: item.id,
+        task: item.task_type,
+        callCode: item.call_code,
+        createdAt: item.created_at,
+        expiresAt: item.expires_at,
+        usedAt: item.used_at,
+        revokedAt: item.revoked_at,
+        evaluatorName: item.evaluator_name,
+        evaluatorModel: item.evaluator_model,
+        status: item.used_at
+          ? 'used'
+          : item.revoked_at
+            ? 'revoked'
+            : Date.parse(item.expires_at) <= Date.now()
+              ? 'expired'
+              : 'active',
+      }] : []),
+    }
+  } catch {
+    return { ok: false, error: 'No pudimos cargar el historial de llamados.' }
+  }
+}
+
 export async function createIeltsDelegatedReviewInvite(
   submissionId: string,
   taskValue: string,
@@ -71,7 +107,7 @@ export async function createIeltsDelegatedReviewInvite(
     const admin = createAdminClient()
     const { data: submission, error: submissionError } = await admin
       .from('exam_submissions')
-      .select('id, mock_title, writing_task1_answer, writing_task2_answer, speaking_answers, speaking_audio_paths, reviewed_at')
+      .select('id, mock_id, mock_title, content_version, assignment_snapshot, writing_task1_answer, writing_task2_answer, speaking_answers, speaking_audio_paths, speaking_audio_metadata, reviewed_at')
       .eq('id', submissionId)
       .eq('exam_slug', 'ielts')
       .eq('submission_status', 'submitted')
@@ -81,8 +117,12 @@ export async function createIeltsDelegatedReviewInvite(
     if (!submission) return { ok: false, error: 'No encontramos una entrega IELTS confirmada.' }
     if (submission.reviewed_at) return { ok: false, error: 'Esta entrega ya tiene una evaluación final del administrador.' }
 
-    const blueprint = getIeltsReviewBlueprintByTitle(submission.mock_title)
+    const blueprint = getIeltsReviewBlueprint(submission.mock_id ?? '')
+      ?? getIeltsReviewBlueprintByTitle(submission.mock_title)
     if (!blueprint) return { ok: false, error: 'Este simulacro todavía no está conectado al blueprint de revisión.' }
+    if (submission.content_version && submission.content_version !== blueprint.contentVersion) {
+      return { ok: false, error: 'La versión del contenido no coincide con el blueprint actual. Conserva la entrega y revisa su snapshot antes de crear el llamado.' }
+    }
 
     if (taskValue === 'writing_task_1' && !submission.writing_task1_answer?.trim()) {
       return { ok: false, error: `La entrega no contiene material para ${taskLabel(taskValue)}.` }
@@ -91,7 +131,8 @@ export async function createIeltsDelegatedReviewInvite(
       return { ok: false, error: `La entrega no contiene material para ${taskLabel(taskValue)}.` }
     }
     if (taskValue === 'speaking') {
-      const speakingAssignment = await getIeltsSpeakingAssignment(blueprint.mockId)
+      const snapshot = submission.assignment_snapshot as { speaking?: Awaited<ReturnType<typeof getIeltsSpeakingAssignment>> } | null
+      const speakingAssignment = snapshot?.speaking ?? await getIeltsSpeakingAssignment(blueprint.mockId)
       if (!speakingAssignment) return { ok: false, error: 'Este simulacro no tiene consignas de Speaking conectadas.' }
 
       const missingAudioIds = findMissingIeltsSpeakingAudioIds(speakingAssignment, submission.speaking_audio_paths)
@@ -101,6 +142,9 @@ export async function createIeltsDelegatedReviewInvite(
           error: `Speaking necesita ${speakingAssignment.length} grabaciones completas. Faltan: ${missingAudioIds.join(', ')}.`,
         }
       }
+      const audioMetadata = Object.values((submission.speaking_audio_metadata ?? {}) as Record<string, IeltsAudioDescriptor>)
+      const evidenceIssues = ieltsSpeakingEvidenceIssues(speakingAssignment, audioMetadata)
+      if (evidenceIssues.length > 0) return { ok: false, error: evidenceIssues[0] }
     }
 
     const now = new Date()
@@ -137,9 +181,7 @@ export async function createIeltsDelegatedReviewInvite(
 
     if (insertError || !invite) throw insertError ?? new Error('No se creó la invitación.')
 
-    const requestHeaders = await headers()
-    const origin = requestHeaders.get('origin')
-      ?? `${requestHeaders.get('x-forwarded-proto') ?? 'https'}://${requestHeaders.get('x-forwarded-host') ?? requestHeaders.get('host') ?? 'www.idiomaswl.com'}`
+    const origin = process.env.IELTS_REVIEW_ORIGIN ?? 'https://www.idiomaswl.com'
     const path = `/evaluacion-ielts/${token}`
 
     return {

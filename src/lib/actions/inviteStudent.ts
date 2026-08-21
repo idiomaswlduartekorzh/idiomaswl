@@ -1,7 +1,7 @@
 'use server'
 
 import { createAdminClient } from '@/lib/supabase/admin'
-import { createClient } from '@/lib/supabase/server'
+import { requireAdmin } from '@/lib/auth/require-admin.server'
 import type { StudentPlan } from './assignPlan'
 
 export type StudentSubject =
@@ -39,17 +39,11 @@ export async function inviteStudent(
   subject: StudentSubject,
   plan: StudentPlan
 ): Promise<{ ok: true } | { ok: false; error: string }> {
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return { ok: false, error: 'No autenticado' }
-
-  const { data: caller } = await supabase
-    .from('profiles')
-    .select('role')
-    .eq('id', user.id)
-    .single()
-
-  if (caller?.role !== 'admin') return { ok: false, error: 'Sin permisos de administrador' }
+  try {
+    await requireAdmin()
+  } catch {
+    return { ok: false, error: 'Sin permisos de administrador' }
+  }
 
   const admin = createAdminClient()
 

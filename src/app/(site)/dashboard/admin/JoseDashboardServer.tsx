@@ -1,6 +1,4 @@
 import { createClient } from '@/lib/supabase/server'
-import { createAdminClient } from '@/lib/supabase/admin'
-import { IELTS_SPEAKING_BUCKET } from '@/lib/ielts/mock4-submission'
 import JoseDashboard from './JoseDashboard'
 import type { StudentRow } from './StudentList'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
@@ -17,6 +15,7 @@ export interface ExamSubmission {
   exam_slug: string
   exam_name: string
   mock_title: string | null
+  mock_id?: string | null
   total_score: number | null
   total_max: number | null
   total_label: string | null
@@ -108,23 +107,18 @@ export default async function JoseDashboardServer() {
     .order('created_at', { ascending: false })
     .limit(100)
 
-  const storageAdmin = createAdminClient()
-  const rows: ExamSubmission[] = await Promise.all(((submissions ?? []) as ExamSubmission[]).map(async submission => {
-    const audioPaths = submission.speaking_audio_paths && typeof submission.speaking_audio_paths === 'object'
-      ? Object.entries(submission.speaking_audio_paths)
-      : []
-    if (audioPaths.length === 0) return submission
+  const rows = (submissions ?? []) as ExamSubmission[]
 
-    const signedAudio = await Promise.all(audioPaths.map(async ([questionId, path]) => {
-      const { data, error } = await storageAdmin.storage.from(IELTS_SPEAKING_BUCKET).createSignedUrl(path, 60 * 60)
-      if (error || !data?.signedUrl) return null
-      return { questionId, signedUrl: data.signedUrl }
-    }))
-    return {
-      ...submission,
-      speaking_audio_files: signedAudio.filter((audio): audio is { questionId: string; signedUrl: string } => audio !== null),
-    }
-  }))
+  // IELTS owns an independent queue so general exam traffic cannot push valid
+  // attempts out of the admin panel. Audio links are generated lazily only for
+  // the selected attempt.
+  const { data: ieltsSubmissionRows } = await supabase
+    .from('exam_submissions')
+    .select('*')
+    .eq('exam_slug', 'ielts')
+    .eq('submission_status', 'submitted')
+    .order('created_at', { ascending: false })
+    .limit(500)
 
   const now = new Date()
   const startOfThisWeek = new Date(now)
@@ -167,8 +161,7 @@ export default async function JoseDashboardServer() {
 
   // IELTS review history stays visible after correction. The client panel owns
   // the Pending/Reviewed filter, so an evaluated student never disappears.
-  const ieltsReviews = rows.filter(r =>
-    r.exam_slug === 'ielts' &&
+  const ieltsReviews = ((ieltsSubmissionRows ?? []) as ExamSubmission[]).filter(r =>
     Boolean(r.writing_task1_answer || r.writing_task2_answer || r.speaking_answers || r.speaking_audio_paths)
   )
 
