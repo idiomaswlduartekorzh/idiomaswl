@@ -359,6 +359,42 @@ Dos soluciones que funcionaron, y que valen como patrón:
   conocimiento general. Reformulada, quien razona desde el mundo aterriza ahora en una
   opción falsa.
 
+### R11 · En convenciones, las cuatro opciones tienen que ser correctas por separado
+
+Descubierta midiendo el módulo 2 estándar: **cuatro de sus siete ítems de Standard
+English Conventions los acertaban 7, 10, 10 y 10 solucionadores de 10 sin ver el texto.**
+No era mala redacción. Era el diseño.
+
+Si de las cuatro opciones solo una está bien formada aisladamente —`children's` frente a
+`childrens'`, `childrens` y `children`— no hace falta la frase: se ve cuál es correcta
+mirando solo las opciones. Lo mismo con los pares de comas, donde la opción «equilibrada»
+se reconoce sola, y con la ausencia de coma, que es la apuesta segura de quien no lee.
+
+La regla: **las cuatro opciones deben ser gramaticales en abstracto, y solo la oración
+debe decidir cuál encaja.** `is` y `are` son las dos palabras correctas del inglés; el
+sujeto decide. `childrens'` no es una palabra, así que ese ítem no mide lectura.
+
+Consecuencia práctica: se examinan preferentemente concordancia con sujeto interpuesto,
+tiempo verbal fijado por el contexto, referencia de pronombre y elección de conector
+—donde las cuatro formas existen— antes que ortografía de posesivos o formas inventadas.
+
+### R12 · En síntesis retórica, gana la opción que parece más completa
+
+Misma medición: los dos ítems de síntesis de notas los acertaron **10 de 10 sin leer las
+notas**, y en el módulo 1 el equivalente iba 13 de 14. Es el patrón más consistente que
+ha dado la prueba a ciegas.
+
+Sin las notas, el solucionador elige la frase que suena más redonda: la que enlaza dos
+ideas con una cláusula causal, la que menciona más elementos, la que tiene forma de
+conclusión. Y esa suele ser la clave, porque cumplir el objetivo del enunciado empuja al
+redactor a escribirla más completa que las otras tres.
+
+La regla: **las cuatro opciones tienen que parecer igual de completas**. Mismo número de
+elementos de las notas, misma longitud aproximada, y —esto es lo que de verdad lo
+arregla— **las cuatro con la misma forma sintáctica**: si la clave lleva cláusula causal,
+las cuatro la llevan. Lo que separa a la clave no puede ser la forma, tiene que ser si
+cumple el objetivo.
+
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 
 Las tres versiones de q02 pasaron cada una por auditoría, y cada arreglo introdujo un
