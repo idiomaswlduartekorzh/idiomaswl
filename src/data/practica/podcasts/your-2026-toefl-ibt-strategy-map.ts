@@ -13,7 +13,7 @@ export const TOEFL_STRATEGY_MAP_PODCAST = {
     'set an institution-specific target, diagnose one precise weakness and build a current-format practice loop.',
   ],
   editorialTitle: 'Checked against the current ETS format',
-  editorialBody: 'Reviewed in August 2026. The counts and times in the episode are ETS base figures and can vary as the test adapts. Score targets mentioned in conversation are illustrative: every candidate must verify both overall and section requirements with each institution.',
+  editorialBody: 'Reviewed on 20 August 2026. The counts and times in the episode are ETS base figures and can vary as the test adapts. Score targets mentioned in conversation are illustrative: every candidate must verify both overall and section requirements with each institution.',
 } as const;
 
 const sections: EpisodeSection[] = [
