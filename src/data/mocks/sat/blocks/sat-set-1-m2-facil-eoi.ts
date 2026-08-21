@@ -87,13 +87,46 @@ import type { SatItemMeta } from '../module-types'
  *
  * Efecto de conjunto que esto deja, y que se asume a conciencia: en los tres ítems de
  * transiciones del bloque **la clave nunca es el conector de consecuencia** —«As a result,»,
- * «Accordingly,» y «Consequently,» son los tres distractores—. Con tres ítems no es un
+ * «Hence,» y «Consequently,» son los tres distractores—. Con tres ítems no es un
  * patrón explotable, y la alternativa, poner de clave el conector que se adivina, es
  * exactamente lo que filtraba.
  *
+ * ### q26: la misma fuga, un piso más abajo (R14)
+ *
+ * Con q25 arreglado, **q26 se quedó en 7 de 10 a ciegas** y el juego era «Accordingly,» ·
+ * «Moreover,» · «Instead,» · «For instance,». Tres relaciones de flujo —consecuencia,
+ * adición, ejemplo, las tres que llevan un párrafo expositivo hacia delante— y **una sola de
+ * giro**. Un solucionador que no ve el texto no necesita saber nada del texto: un ítem de
+ * transiciones suele examinar el giro, así que apuesta al único que gira. Es la fuga de
+ * frecuencia de **R14**, y aquí la marca no es de estilo sino de relación: «Instead,» no
+ * llamaba por rara, llamaba por ser la única sustitución entre tres conectores de flujo.
+ *
+ * R14 dice también cuál es el arreglo que no vale: mover la clave a un conector corriente
+ * deja la arquitectura «tres contra uno» en pie y la apuesta cae sobre un distractor. Así
+ * que se arregló **el juego**, no la clave, y el reparto de relaciones pasó de 3+1 a **2+2**:
+ *
+ * - «Hence,» — consecuencia (flujo). Camino real: quien encadena por causa dos hechos porque
+ *   van seguidos, y a quien el tono formal del conector se lo pone fácil.
+ * - «On the contrary,» — refutación (giro). Es ahora **la opción más vistosa del juego** y es
+ *   falsa: desmiente algo afirmado, y el texto no afirma nada sobre el estado de la casa,
+ *   solo dice para qué venía preparada Mara —que vino preparada es verdad y nadie lo niega—.
+ * - «Instead,» — sustitución (giro). La clave del plan, que no se mueve.
+ * - «What is more,» — adición (flujo). Camino real: el paralelismo de las dos listas.
+ *
+ * Con dos giros en el juego, «apuesta al que gira» baja de 100 % a 50 %; y como el giro
+ * vistoso es el falso, «apuesta al llamativo» pasa a valer 0. Para que los dos giros no se
+ * cancelen entre sí —regla 2 del plan, dos sinónimos regalan el ítem— se separan por una
+ * regla enseñable, no por matiz: **«on the contrary» contradice lo dicho; «instead» sustituye
+ * lo esperado.** Y el texto se reescribió para que la sustitución sea término a término y en
+ * el mismo orden —puerta, estufa, mesa, primero como Mara las temía y luego como estaban—,
+ * que es lo que licencia «instead» y lo que deja sin apoyo a cualquier lectura concesiva o
+ * refutativa. También se comprobaron dos pistas de forma: la clave no es ni la opción más
+ * larga (16 caracteres «On the contrary,») ni la más corta (6, «Hence,»), y en q25 sí era la
+ * más corta, así que «elige el conector más corto» deja de valer 2 de 3 en el bloque.
+ *
  * Puertas medidas sobre el bloque después de rehacerlo, no heredadas de la versión anterior:
  *
- * - **7 longitud**: 144,3 · 146,2 · 124,7 · 83,0 · 125,3 palabras-SAT. Las cinco dentro de
+ * - **7 longitud**: 144,3 · 146,2 · 124,7 · 83,5 · 125,3 palabras-SAT. Las cinco dentro de
  *   25-150. q23 y q24 crecieron: cada distractor necesita ahora en el cuaderno el hecho que
  *   lo desmiente.
  * - **2 longitud de la clave**: la clave no es la opción más larga en ninguno de los cinco.
@@ -105,8 +138,8 @@ import type { SatItemMeta } from '../module-types'
  *   caras de la puerta. En los tres de transiciones el solape es 0 en las cuatro opciones.
  * - **12 variedad temática**: humanidades ×2, historia, ciencia y literatura, uno cada uno.
  *
- * Lo que este bloque **no** trae: q23, q24 y q25 son ítems nuevos por R2 —cambiaron el texto
- * y no solo las opciones—, así que vuelven enteros a la cola de auditoría y la prueba a
+ * Lo que este bloque **no** trae: q23, q24, q25 y q26 son ítems nuevos por R2 —cambiaron el
+ * texto y no solo las opciones—, así que vuelven enteros a la cola de auditoría y la prueba a
  * ciegas hay que repetirla sobre ellos. El módulo todavía no tiene acta en
  * `docs/sat-auditorias/`, de modo que no hay ninguna huella firmada que estos cambios dejen
  * caducada.
@@ -163,13 +196,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'The house had stood empty for nine winters, and the track up to it had gone back to grass. Mara had come prepared for the worst of it: a roof open to the weather, floorboards lifted by frost, the kitchen given over to whatever lived in the hedge. ______ the door swung when she pushed it, the stove still held a scoop of dry coal, and on the table stood a jar of pears sealed under wax. She waited in the doorway a long while before she went in, listening to a house that somebody had been keeping.',
+      'The house had stood empty for nine winters, and the track up to it had gone back to grass. Mara had come prepared for the worst of it: a door swollen shut in its frame, a stove packed with nine years of cold ash, a table buried under fallen plaster. ______ the door swung when she pushed it, the stove still held a scoop of dry coal, and on the table stood a jar of pears sealed under wax. She waited in the doorway a long while before she went in, listening to a house that somebody had been keeping.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
-      'Accordingly,',
-      'Moreover,',
+      'Hence,',
+      'On the contrary,',
       'Instead,',
-      'For instance,',
+      'What is more,',
     ],
     answer: 2,
   },
@@ -256,13 +289,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Hace de lo que Mara encuentra la consecuencia de los nueve inviernos vacíos. Una casa cuidada no se sigue del abandono; lo que se seguiría de él es justo lo que ella esperaba y no encontró. Es el camino de quien enlaza por causa dos hechos solo porque van seguidos en el párrafo.',
+        'Hace de lo que Mara encuentra la consecuencia de los nueve inviernos vacíos: la casa lleva tanto tiempo sola que —de ahí— la puerta gira y el carbón sigue seco. Una casa cuidada no se sigue del abandono; del abandono se seguiría justo lo que ella traía en la cabeza y no estaba. Es el camino de quien enlaza por causa dos hechos solo porque van seguidos en el párrafo, y el tono formal del conector se lo pone fácil.',
       B:
-        'Es la trampa del ítem. La oración del hueco enumera tres cosas —puerta, estufa, mesa— con el mismo ritmo con que la anterior enumeraba otras tres —tejado, suelo, cocina—, y el paralelismo invita a sumar. Pero la primera lista es lo que Mara temía y la segunda lo que se encontró: la segunda no se añade a la primera, la sustituye.',
+        'Es la trampa del ítem y la opción más vistosa de las cuatro: también marca un giro, de modo que quien busque «el conector que da la vuelta» tiene aquí dos donde elegir y no le sirve de nada. «On the contrary» desmiente algo que se acaba de afirmar, y pide que lo afirmado sea negativo: «la casa no estaba en ruinas; on the contrary, …». El texto no afirma nada sobre el estado de la casa; afirma que Mara vino preparada para lo peor, y eso la oración del hueco no lo desmiente, porque preparada vino. Lo que falla no es lo dicho, es lo esperado, y una expectativa no se contradice: se sustituye.',
       C:
-        'Correcta: la oración anterior dice para qué venía preparada Mara —tejado abierto al tiempo, suelo levantado por la helada, cocina tomada por los bichos— y la del hueco dice, punto por punto, lo que había en su lugar. «Instead» marca exactamente esa sustitución de una expectativa por un hallazgo, y el cierre lo confirma: alguien había estado cuidando la casa.',
+        'Correcta: la oración anterior enumera para qué venía preparada Mara —una puerta hinchada en el marco, una estufa con nueve años de ceniza fría, una mesa sepultada bajo el yeso caído— y la del hueco pone, término a término y en el mismo orden, lo que había en su lugar: la puerta gira al empujarla, la estufa guarda una palada de carbón seco, sobre la mesa hay peras selladas bajo cera. «Instead» marca esa sustitución de lo esperado por lo encontrado, y el cierre lo confirma: alguien había estado cuidando la casa.',
       D:
-        'Lee la segunda lista como ejemplos concretos de la primera, que es general. Para eso tendrían que ser casos de ruina, y una puerta que gira, un carbón seco y unas peras selladas bajo cera no ilustran un tejado abierto ni un suelo levantado: lo desmienten uno a uno.',
+        'Suma la segunda lista a la primera, y el paralelismo invita a ello: tres cosas —puerta, estufa, mesa— con el mismo ritmo y en el mismo orden que la anterior. Pero la segunda no se añade a la primera, la reemplaza objeto por objeto: no hay dos puertas ni dos estufas, hay una que Mara esperaba encontrar de un modo y encontró del contrario. Es el camino de quien sigue el ritmo del párrafo sin comprobar qué dice cada elemento y da por hecho que el inventario de la casa sigue creciendo.',
     },
     fuenteHecho:
       'Prosa narrativa original de registro literario, escrita para este ítem. Ni personaje, ni casa, ni obra de referencia: no hay fuente externa.',

@@ -32,10 +32,10 @@ import type { SatItemMeta } from '../module-types'
  * 1. En los siete ítems, el camino del sentido común lleva a un distractor, no a la clave.
  *    Es el error característico de este dominio, usado a propósito: la opción que es verdad
  *    en el mundo pero que el texto no sostiene. Un lago hondo se hiela más tarde (q09A);
- *    quien trabaja de noche eligió la noche (q10B); esconder la obra a medias es de artista
- *    (q11B); el hambre explica la patata (q12A); la prueba más fuerte es el mayor contraste
- *    (q13D); a quien no ve se le reconoce por la voz (q14B); en una imprenta los textos se
- *    acortan, y las hojas de sustitución se encuadernan (q15A, q15D).
+ *    un estilo tardío es cosa del autor que envejece (q10A); esconder la obra a medias es de
+ *    artista (q11B); el hambre explica la patata (q12A); la prueba más fuerte es el mayor
+ *    contraste (q13D); a quien no ve se le reconoce por la voz (q14B); en una imprenta los
+ *    textos se acortan (q15A y q15B) y el estado mayoritario es el que salió antes (ídem).
  * 2. Ninguna opción es falsa por una marca visible sin el texto (R6): no hay absolutos
  *    sueltos, ni una sola opción con conector causal, ni una sola que compare cuando las
  *    demás no comparan. Cada distractor lo tumba una línea distinta del pasaje, y ninguna
@@ -45,14 +45,15 @@ import type { SatItemMeta } from '../module-types'
  * MEDIDO SOBRE LOS SIETE (contador del guardián: caracteres, y solape de palabras de
  * contenido con el `stimulus`):
  *
- * - Puerta 7 · longitud del texto: 107, 128, 83, 97, 132, 128 y 133 palabras-SAT. Dentro
- *   de 25-150 con margen por arriba en el más largo.
+ * - Puerta 7 · longitud del texto: 107, 122, 83, 97, 133, 128 y 133 palabras-SAT. Dentro
+ *   de 25-150 con margen por arriba en los dos más largos.
  * - Puerta 2 · la clave no es la opción más larga en ninguno de los siete (0 %, máximo
  *   30 %). Tampoco es la más corta en más de dos, para que no se acierte por el otro lado.
  * - Puerta 3 · la clave no es la que más repite palabras del texto en ninguno, ni la que
  *   menos en ninguno (0 % y 0 %, máximo 40 % por cada cara). Los solapes por ítem, en orden
- *   A-D: q09 7/6/5/4, q10 5/7/6/6, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
- *   q15 11/9/10/7. La clave queda siempre en el medio, nunca en un extremo.
+ *   A-D: q09 7/6/5/4, q10 6/7/4/5, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
+ *   q15 9/9/9/9. La clave queda siempre en el medio, nunca en un extremo; en q15 las cuatro
+ *   empatan, que es el caso que el guardián trata como «no hay pista que explotar».
  *
  * DOS ÍTEMS QUE MERECEN NOTA, porque es donde el módulo 1 se cayó tres veces:
  *
@@ -64,10 +65,10 @@ import type { SatItemMeta } from '../module-types'
  *   mueve—, así que la lógica no poda ninguna: solo la tabla decide. Y la heurística de
  *   «la prueba más fuerte» (salto de cresta más ancho, valle más plano) apunta a D.
  * - q10 es el único `central-ideas-details` de los dos que usa el enunciado de idea
- *   central. Las cuatro opciones son lecturas literarias igual de redondas y tres de ellas
- *   —el peso del secreto, la reciprocidad del pueblo, la noche elegida— son las que una
- *   historia así suele traer. La clave no es la más bonita; es la única que el cierre del
- *   texto enuncia palabra por palabra.
+ *   central, y desde la cuarta pasada es un ítem distinto (ver más abajo). Las cuatro
+ *   opciones localizan el mismo giro en cuatro sitios —la frase, el asunto, la crítica, la
+ *   editorial— con la misma plantilla, dos dentro del libro y dos fuera de él. La clave no
+ *   es la lectura más fina: es la única que no choca con una línea del pasaje.
  *
  * SEGUNDA PASADA (21 ago 2026). El auditor de clave dio APTO a los siete y resolvió los
  * siete a ciegas coincidiendo con las claves del plan, pero el panel acertó q10 ocho veces
@@ -160,6 +161,51 @@ import type { SatItemMeta } from '../module-types'
  *   clave tercera, solapes 5/7/6/6 con la clave entre el mayor y el menor; q15 longitudes
  *   146/145/144/146 y solapes 11/9/10/7, misma posición. Los cinco ítems restantes del
  *   bloque no se tocaron.
+ *
+ * CUARTA PASADA (21 ago 2026). El módulo entero bajó a 21,5 % a ciegas (techo 35 %, azar
+ * 25 %), pero q15 subió a 10/10 y q10 se quedó en 7/10. Los dos casos son la misma familia
+ * de fuga por dos caminos distintos, y se cerraron de dos maneras distintas.
+ *
+ * - q15 · la misma fuga otra vez, por debajo del arreglo. El 2×2 de la pasada anterior era
+ *   correcto como diseño y falso como juego de opciones: cada distractor cargaba un elemento
+ *   exótico —una segunda prensa, una hoja pegada encima, un texto recortado a la mitad— y la
+ *   clave era el único procedimiento de taller sin rareza. Quien no ha leído descarta las
+ *   tres rarezas y acierta sin abrir el pasaje. Ahora las cuatro llevan un mecanismo igual de
+ *   concreto y de corriente, y ninguna nombra nada que las otras no nombren: dos recomponen
+ *   la plana en el mismo pliego («set again at N lines») y dos encuadernan una hoja compuesta
+ *   aparte («a page set at N lines was bound into…»), cruzado con los dos órdenes posibles.
+ *   Cada valor de cada factor sale dos veces. Lo que decide es la letra fechada —la e torcida
+ *   entra en marzo de 1612, corre por la versión larga y falta en la corta, luego las once
+ *   cortas son las primeras— y el pliego sin cortar, que descarta el papel añadido. La prensa
+ *   única ya no mata a ninguna opción: ahora sostiene el «primero… y luego» que las cuatro
+ *   comparten, porque con una sola prensa los dos estados no pudieron correr a la vez.
+ * - Ninguna de las cuatro se puede descartar por sonar rara, y las dos corazonadas de
+ *   imprenta que el ítem deja en pie —el texto se recorta, el estado mayoritario salió
+ *   antes— apuntan las dos a A y a B, nunca a la clave.
+ *
+ * - q10 · retirado y sustituido, en vez de parcheado por cuarta vez. Tres versiones (la
+ *   lectura fina, la plantilla única de R12, los cuatro cuentos distintos de R13) bajaron el
+ *   ítem de 8/10 a 7/10 y ahí se quedó, porque la fuga no estaba en ninguna opción: estaba en
+ *   el pasaje. La idea central del texto de Irina era la premisa misma del relato —conoce al
+ *   pueblo entero de noche y el pueblo no la conoce de día—, y como las cuatro opciones
+ *   tienen que revelar el escenario para ser relevantes (R13), revelan también el desenlace
+ *   obvio de ese escenario. Ese ítem no se desfuga sin cambiar el texto, y cambiar el texto
+ *   ya es escribir otro ítem (R2): se escribió otro directamente.
+ * - El sustituto respeta lo que fija el plan —fila 10: `central-ideas-details`, literatura,
+ *   dificultad 1, clave D— y cambia el defecto de fábrica: aquí la idea central NO es la
+ *   lectura previsible del escenario. El pasaje reparte la responsabilidad de un cambio de
+ *   estilo entre cuatro candidatos —la frase, el asunto, la crítica y la editorial— y los tres
+ *   primeros los desmiente con una línea cada uno: los cuadernos de los años cincuenta (mata
+ *   A), «the same three she had been writing about since her first book» (mata B) y la misma
+ *   objeción en 1958 y en 1972 (mata C). Las cuatro opciones usan la misma plantilla, dos
+ *   ponen el cambio dentro del libro y dos fuera de él, y la pareja más cercana —C y D— se
+ *   distingue solo en cuál de las dos instituciones se movió, que es lo único que hay que ir
+ *   a buscar al texto. El camino del sentido común lleva a A, el «estilo tardío» de manual.
+ *
+ * - Lo que NO se tocó en esta pasada: las claves del plan (q10 D, q15 C), los dos enunciados,
+ *   el texto de q15 entero con sus tres datos, y los cinco ítems restantes del bloque. Todo
+ *   lo que este comentario dice más arriba sobre Irina y la centralita es la historia de un
+ *   ítem retirado, no del que está en el archivo.
  */
 
 export const items: MCQQuestion[] = [
@@ -183,13 +229,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'For nine years Irina worked the night board at the telephone exchange. She had not chosen the shift; it was the one the exchange had open the year her mother died, and she stayed on it. She learned which houses called the doctor and at what hour, whose son telephoned from the capital and whose did not, which marriages were conducted entirely in the two minutes before midnight. In the market she was a woman who counted her change and said little. The same voices that had wept into her ear at three in the morning asked her at noon whether the plums were ripe. She never repeated any of it, and after a time she stopped thinking of it as keeping a secret. It was simply the shape of her days: the town talked to her all night and did not know her at all by daylight.',
+      'Critics have long treated the four novels Amparo Lascano published after 1970 as a late turn in her work: the short sentences, the three small towns, the endings that explain nothing. Her working notebooks, opened to readers in 2019, complicate that account. The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away. So are the towns, which are the same three she had been writing about since her first book. The reviews that greeted the late novels in 1972 raised just the objection the reviews of 1958 had raised. What was new after 1970 was her publisher: the editor who had demanded "a proper ending" in 1958 had sold the firm, and the editor who bought it demanded nothing.',
     text: 'Which choice best states the main idea of the text?',
     options: [
-      'Irina came to be bound to the town by a silence that cost more than the night work did, and in time she took it for the ordinary shape of a life.',
-      'Irina came to prefer a town of voices in the dark to the one she met in the market at noon, and in time she took it for the ordinary shape of a life.',
-      'Irina came to be repaid at noon in more kindnesses than she had ever asked the town for, and in time she took it for the ordinary shape of a life.',
-      'Irina came to know the town a great deal more closely than the town itself ever knew her, and in time she took it for the ordinary shape of a life.',
+      "The turn critics date to 1970 was a change in Lascano's sentences rather than in the towns she wrote about.",
+      "The turn critics date to 1970 was a change in the towns Lascano wrote about rather than in her sentences.",
+      "The turn critics date to 1970 was a change in what her reviewers would accept rather than in what she wrote.",
+      "The turn critics date to 1970 was a change in what her publisher would print rather than in what she wrote.",
     ],
     answer: 3,
   },
@@ -261,10 +307,10 @@ export const items: MCQQuestion[] = [
       "Forty copies survive of the 1612 printing of The Ferryman's Daughter. In twenty-nine of them the third act carries a scene of thirty lines; in the other eleven the same scene runs to twelve. Printers of the period altered type while the sheets were still going through the press, so copies of one book can differ, and the shop that printed it worked a single press. Its type had one flaw that can be dated: a lowercase e with a crooked crossbar, which entered the shop's stock in March 1612 and marks every sheet it printed afterward. The crooked e runs all through the long version of the scene and appears nowhere in the short one. In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
     text: 'Which choice most logically completes the text?',
     options: [
-      'the thirty-line scene was set up first and printed for twenty-nine copies, and that the shop then cut it back to twelve lines for the last eleven.',
-      'the twelve-line scene was set up first and run for eleven copies, and that a second press took the thirty-line version for the other twenty-nine.',
-      'the twelve-line scene was set up first and printed for eleven copies, and that the shop then reset it at thirty lines for the other twenty-nine.',
-      'the thirty-line scene was set up after the whole run was over, and that its page was pasted over the twelve-line one in twenty-nine of the copies.',
+      'the thirty-line scene was set first and printed for twenty-nine copies, and that its page was then set again at twelve lines for the remaining eleven.',
+      'the thirty-line scene was set first and printed for twenty-nine copies, and that a page set at twelve lines was bound into the remaining eleven.',
+      'the twelve-line scene was set first and printed for eleven copies, and that its page was then set again at thirty lines for the other twenty-nine.',
+      'the twelve-line scene was set first and printed for eleven copies, and that a page set at thirty lines was bound into the other twenty-nine.',
     ],
     answer: 2,
   },
@@ -298,16 +344,16 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Convierte la discreción en un precio que se paga, y la penúltima frase lo desmonta: «after a time she stopped thinking of it as keeping a secret». Si el silencio dejó de existir como silencio, no puede estar costándole más que las noches de trabajo. Como idea central es impecable —la de otro cuento, el de lo que cuesta callar lo que se oye—, y aquí la marca quien decide por lo que suele significar una historia de secretos ajenos en vez de por lo que esta dice.',
+        'Deja el cambio dentro de la prosa de Lascano, y los cuadernos lo desmienten: «The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away». Si la frase corta ya estaba veinte años antes, no puede ser lo que se movió después de 1970. Es la lectura de manual —el estilo tardío de quien se va despojando con la edad— y la marca quien reconoce la historia habitual antes de comprobar cuál cuenta esta.',
       B:
-        'Le atribuye una preferencia que el texto le quita en su segunda frase: «She had not chosen the shift; it was the one the exchange had open the year her mother died». Si nunca hubo dos turnos entre los que escoger, tampoco hay un pueblo elegido frente a otro: se quedó en el único que había. Sería la idea central de otro cuento —el de quien acaba encontrando más suya la vida oída que la vivida— y aquí la elige quien supone que quien trabaja de noche eligió la noche.',
+        'Mueve el cambio del cómo al qué, y el texto cierra esa puerta con la misma limpieza: los tres pueblos «are the same three she had been writing about since her first book». Después de 1970 no hay terreno nuevo. La elige quien lee la lista de la primera frase —frases cortas, pueblos pequeños, finales sin explicar— como inventario de novedades, sin ver que el pasaje la desmonta entrada por entrada.',
       C:
-        'Inventa una devolución que la escena del mediodía desmiente. A las tres de la mañana le lloran al oído y a mediodía le preguntan si están maduras las ciruelas; en el mercado es «a woman who counted her change and said little», y el cierre dice que el pueblo «did not know her at all by daylight». Como idea central vale tanto como la clave —el pueblo pequeño que paga sus deudas en atenciones—, solo que es la de otro cuento: aquí la elige quien da por hecho que esas deudas se pagan.',
+        'Saca el cambio de la escritora, que es el paso correcto, y lo pone en la institución equivocada. El pasaje fecha la respuesta de la crítica: «The reviews that greeted the late novels in 1972 raised just the objection the reviews of 1958 had raised». Con catorce años de por medio y la misma objeción, nadie se acostumbró a nada. Es la distractora más cercana a la clave, y la marca quien acierta el diagnóstico general y no lee las dos frases que separan a la crítica del editor.',
       D:
-        'Correcta: es lo que enuncia el cierre del texto. «the town talked to her all night and did not know her at all by daylight» da la desigualdad —ella llega a conocer el pueblo de cerca y el pueblo no la conoce a ella—, y «It was simply the shape of her days», junto con «after a time she stopped thinking of it as keeping a secret», es lo que la vuelve ordinaria en vez de dramática. Lo que la separa de las otras tres no es ser la lectura más fina: las tres son ideas centrales igual de defendibles de tres cuentos que este no es.',
+        'Correcta: junta las dos mitades del pasaje. Los cuadernos quitan el cambio de la escritura —frase corta, finales sin explicar y los mismos tres pueblos, todo anterior a 1970— y la última frase dice qué sí cambió: «What was new after 1970 was her publisher», con un editor que en 1958 exigía «a proper ending» y otro, tras la venta de la casa, que no exigió nada. El giro que la crítica fecha en 1970 está en lo que la editorial imprimía, no en lo que Lascano escribía. No es la lectura más fina de las cuatro: es la única que no choca con una línea del texto.',
     },
     fuenteHecho:
-      'Ficción original. La centralita manual atendida de noche por una operadora es tecnología documentada de la primera mitad del siglo XX; el pueblo, Irina y todo lo demás están inventados.',
+      'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato.',
   },
   {
     id: 'q11',
@@ -392,15 +438,15 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Invierte el orden que fija la letra estropeada. La e torcida entra en la imprenta en marzo de 1612 y marca todo lo que sale de ella a partir de entonces; corre por toda la versión de treinta líneas y no aparece en ninguna de doce, de modo que la larga se compuso después y no primero. Es además la reconstrucción a la que llevan las dos corazonadas razonables que el ítem deja en pie: que en una imprenta un texto se recorta para que quepa, y que el estado que llevan más ejemplares —aquí los veintinueve largos— es el que salió antes. Ninguna de las dos manda sobre la letra fechada, y esta opción es exactamente la que sale si se les hace caso.',
+        'Invierte el orden que fija la letra estropeada. La e torcida entra en la imprenta en marzo de 1612 y marca todo lo que sale de ella a partir de entonces; corre por toda la versión de treinta líneas y no aparece en ninguna de doce, de modo que la larga se compuso después y no primero. El mecanismo que describe es el de la clave —recomponer la plana dentro del mismo pliego— y es el correcto: esta opción falla solo en el orden, y por eso es la más cercana a C. Es además adonde llevan las dos corazonadas que el ítem deja en pie: que en una imprenta un texto se recorta para que quepa, y que el estado que llevan más ejemplares —aquí los veintinueve largos— es el que salió antes.',
       B:
-        'Necesita dos composiciones tirando a la vez, y el texto lo impide: «the shop that printed it worked a single press». La e torcida lo remata, porque marca «every sheet it printed» desde marzo y dos tiradas simultáneas la llevarían las dos o ninguna, no una sí y otra no. El orden que propone es el correcto —las once cortas primero—, así que la opción se sostiene hasta la coma y falla solo en el mecanismo: es la única de las cuatro que muere por el número de prensas.',
+        'Falla en los dos factores a la vez. Pone la versión larga primero, contra la fecha que da la e torcida, y compone el texto nuevo en una hoja aparte, contra la última línea del pasaje: en los cuarenta ejemplares esas páginas están «folded from one sheet of paper, with none cut out and none pasted in», y una hoja encuadernada sería papel distinto del pliego. La elige quien reconstruye la escena entera desde las dos corazonadas de imprenta —el texto se acorta, las hojas de sustitución se encuadernan— sin contrastar ninguna con el pasaje.',
       C:
-        'Correcta: es lo único que cuadra con los tres datos a la vez. La e torcida entra en marzo de 1612 y marca cuanto se imprime después; está en toda la versión de treinta líneas y en ninguna de doce, luego las once cortas salieron primero y la larga se compuso con la tirada ya en marcha. Y como en los cuarenta ejemplares esas páginas salen de una sola hoja «with none cut out and none pasted in», las dieciocho líneas de más tuvieron que caber recomponiendo el mismo pliego, que es lo que dice «reset it at thirty lines». Se distingue de A solo por el orden, que fija la letra, y de B solo por el mecanismo, que fija la prensa única.',
+        'Correcta: es la única que cuadra con los tres datos a la vez. La e torcida entra en marzo de 1612 y marca cuanto se imprime después; está en toda la versión de treinta líneas y en ninguna de doce, luego las once cortas salieron primero y la larga se compuso con la tirada ya en marcha. La prensa única es lo que permite hablar de un antes y un después: con una sola prensa los dos estados no pudieron correr a la vez. Y como en los cuarenta ejemplares esas páginas salen de una sola hoja «with none cut out and none pasted in», las dieciocho líneas de más tuvieron que caber recomponiendo el mismo pliego, que es lo que dice «set again at thirty lines». Se separa de A solo por el orden, que fija la letra, y de D solo por el mecanismo, que fija el pliego.',
       D:
-        'Hace de la escena larga una hoja añadida al final, y la última línea lo descarta: «In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in». Acierta en el orden —la versión larga es la posterior, como dice la letra— y por eso no se cae sola; lo que no resiste es el pegado. Encuadernar una hoja de sustitución era práctica corriente de la época, así que le suena verosímil a quien sabe algo de libros antiguos.',
+        'Acierta el orden —la versión corta salió antes, como fecha la e torcida— y falla en el mecanismo. Encuadernar una hoja compuesta aparte era práctica corriente de la época, así que la reconstrucción se sostiene sola; lo que la descarta es la última línea del pasaje, que dice de los cuarenta ejemplares que esas páginas están «folded from one sheet of paper, with none cut out and none pasted in». Si no hay papel añadido, las dieciocho líneas de más solo caben recomponiendo el pliego. La marca quien resuelve el orden y da por bueno el primer procedimiento verosímil que se le ocurre para el resto.',
     },
     fuenteHecho:
-      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define. El reparto de ejemplares es 29 largos y 11 cortos, y ese sentido importa: con 11 largos, el estado mayoritario era el primero y la corazonada de que lo mayoritario salió antes apuntaba a la clave. Invertido, apunta a A.',
+      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define. El reparto de ejemplares es 29 largos y 11 cortos, y ese sentido importa: con 11 largos, el estado mayoritario era el primero y la corazonada de que lo mayoritario salió antes apuntaba a la clave. Invertido, apunta a A. Las cuatro opciones nombran las dos versiones, los dos recuentos y un procedimiento de taller igual de corriente —recomponer la plana o encuadernar una hoja compuesta aparte—, de modo que ninguna se puede descartar por rareza.',
   },
 ]

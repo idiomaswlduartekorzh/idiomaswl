@@ -23,7 +23,7 @@ import type { SatItemMeta } from '../module-types'
  *    buscarlo al texto.
  * 3. **La opción sin signo nunca es la clave.** «Cuando dudes, no pongas coma» es la apuesta
  *    segura de quien no lee, y en los cuatro ítems de fronteras esa apuesta falla:
- *    q16 coma · q18 coma · q20 punto y coma · q22 punto y coma.
+ *    q16 coma · q18 dos puntos · q20 punto y coma · q22 punto y coma.
  * 4. **Ni un solo periodo o punto y coma se ofrece junto a otro signo que también valdría.**
  *    Con dos oraciones independientes, punto y punto y coma son las dos correctas: por eso
  *    en q20 no aparece el punto. Es la puerta 4 (clave única) aplicada al reverso.
@@ -48,6 +48,26 @@ import type { SatItemMeta } from '../module-types'
  *    contraste que más le sirve a un hispanohablante, y renunciar a él para esquivar la fuga
  *    habría costado más de lo que arreglaba.
  *
+ * 6. **La frecuencia también se cuenta entre ítems, no solo dentro de uno.** R14 dice que un
+ *    juego de opciones no puede tener un solo miembro marcado; el reverso es que **el signo más
+ *    frecuente del inglés escrito no puede ser la clave de dos ítems de fronteras del mismo
+ *    bloque**. En la versión anterior q16 y q18 tenían los dos la coma de clave, y un panel que
+ *    juegue «siempre coma» sin leer nada sacaba 2 de los 4 ítems de fronteras: q18 se quedó en
+ *    6 de 10 a ciegas por eso, y no por la forma de sus opciones, que ya era correcta.
+ *
+ *    q18 se rehízo entero para que el signo correcto **no** fuera la coma: la relativa
+ *    explicativa con «which» se sustituyó por una oración completa que anuncia un motivo y un
+ *    sintagma nominal que lo dice, de modo que la clave son ahora los dos puntos. El arreglo no
+ *    fue mover la letra —la clave sigue siendo D, como manda el plan—, fue mover la regla.
+ *
+ *    Reparto de signos-clave resultante: **q16 coma · q18 dos puntos · q20 punto y coma ·
+ *    q22 punto y coma**. La coma y los dos puntos aparecen una sola vez. El punto y coma sale
+ *    dos veces y no se puede evitar sin romper otra cosa: la regla de q20 (adverbio conjuntivo
+ *    entre dos independientes) y la de q22 (serie con comas internas) exigen las dos ese signo,
+ *    y ninguna de las dos admite otro. Lo que las separa es la forma de la opción —q20 es punto
+ *    y coma a secas, q22 es punto y coma delante de «and»—, así que «siempre punto y coma» no
+ *    es una apuesta que un solucionador a ciegas pueda formular sobre las cuatro a la vez.
+ *
  * **El array va en el orden del plan (q16 → q22) y eso ya cumple la puerta 9.** SEC es la
  * excepción verificada de College Board: de menos a más difícil **sin agrupar por tipo**, y
  * las etiquetas del plan salen 1 · 1 · 1 · 2 · 2 · 2 · 3, no decrecientes, con `boundaries` y
@@ -58,9 +78,17 @@ import type { SatItemMeta } from '../module-types'
  * signos, dos puntos ante enumeración, modificador inicial y pluscuamperfecto continuo):
  *
  *   q16 coma tras subordinada antepuesta · q17 concordancia pronombre-antecedente ·
- *   q18 coma ante relativa explicativa con «which» · q19 presente perfecto fijado por «since» ·
+ *   q18 dos puntos ante el elemento anunciado por una oración completa ·
+ *   q19 presente perfecto fijado por «since» ·
  *   q20 punto y coma ante adverbio conjuntivo · q21 concordancia con frase interpuesta ·
  *   q22 punto y coma como separador de serie con comas internas
+ *
+ * Ninguna de las siete se repite dentro del bloque. q18 comparte **signo** con el q20 del
+ * módulo 1 («the same recipe:»), pero no la discriminación: allí los dos puntos se deciden
+ * frente al punto y coma por lo que viene detrás —tres sintagmas que no son oración—, y aquí
+ * se deciden frente a la coma por lo que viene delante —un adjetivo, que no puede hospedar
+ * ninguna aposición—. Es la única coincidencia de signo entre los dos bloques y está medida:
+ * un estudiante que resolviera el q20 del módulo 1 de memoria no acertaría este.
  *
  * Condiciones de clave única que hay que vigilar al editar:
  *
@@ -72,10 +100,13 @@ import type { SatItemMeta } from '../module-types'
  *   en plural, y no puede aparecer cerca ningún singular al que se le puedan atribuir raíces.
  *   El «its own small store of food» de más arriba cuelga de «Each seed» y por eso es legal:
  *   si se pluraliza esa frase, el ítem pierde el contraste que lo sostiene.
- * - q18: la relativa tiene que ser **imposible de leer como especificativa**. Lo garantizan dos
- *   cosas: el antecedente es una medida definida («forty-eight years»), que no admite que se
- *   la especifique más, y la relativa comenta el hecho entero. Si alguien pone ahí un
- *   antecedente contable e indeterminado, la opción sin coma se vuelve defendible.
+ * - q18: tres condiciones, y las tres protegen la misma cosa —que la coma siga siendo falsa—.
+ *   Una: **a la derecha del hueco no puede haber una oración independiente**; con sujeto y
+ *   verbo propios, el punto y coma sería tan correcto como los dos puntos, exactamente como el
+ *   punto lo sería en q20. Dos: **el hueco tiene que ir detrás de un adjetivo**, «simple», y
+ *   nunca detrás de un sustantivo; en cuanto haya un sustantivo contiguo, el sintagma de la
+ *   derecha se puede leer como aposición suya y la coma queda salvada. Tres: ese sintagma tiene
+ *   que abrir con determinante —«the order…»—, que es lo que hace ilegible la opción sin signo.
  * - q19: lo que fija el presente perfecto son **dos** anclas de la misma oración, «Since the
  *   1840s» y el «it now has» del final. Quitando cualquiera de las dos, el pasado o el
  *   pluscuamperfecto pasan a ser defendibles y el ítem tiene dos claves. Desde la tercera
@@ -135,14 +166,14 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A gallery can make an argument without writing one down. In one city museum the same eleven pictures have hung in the same order since 1978. Five of them were painted before the valley below was flooded for a reservoir, a photograph of the dam under construction hangs at the center, and the last five were painted after. Visitors who walk the room from left to right reach the final canvas expecting a ruin and find a lake instead. Three curators have come and gone without moving a frame, and the room has made the same argument for forty-eight ______ which is longer than any of the three curators lasted.",
+      "A gallery can make an argument without writing one down. In one city museum the same eleven pictures have hung in the same order since 1978. Five of them were painted before the valley below was flooded for a reservoir, a photograph of the dam under construction hangs at the center, and the last five were painted after. Visitors who walk the room from left to right reach the final canvas expecting a ruin and find a lake instead. Three curators have come and gone without moving a frame, and in forty-eight years no one has hung a label longer than a title. The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "years;",
-      "years",
-      "years:",
-      "years,",
+      "simple,",
+      "simple;",
+      "simple",
+      "simple:",
     ],
     answer: 3,
   },
@@ -262,19 +293,19 @@ export const meta: SatItemMeta[] = [
     dificultad: 1,
     tema: 'humanidades',
     regla:
-      "Coma ante relativa explicativa con «which»: la cláusula que comenta lo ya dicho —y no lo especifica— se separa con coma. Un antecedente que es una medida definida («forty-eight years») no admite lectura especificativa, así que la coma no es opcional. Ni el punto y coma ni los dos puntos pueden preceder a una relativa: lo que va detrás no es una oración independiente ni una enumeración.",
+      "Dos puntos que introducen el elemento anunciado por una oración completa: a la izquierda del hueco hay una oración con sujeto y verbo —«The reason the room can argue without a word of explanation is simple»— que anuncia algo sin decirlo, y a la derecha el sintagma nominal que lo dice. Los dos puntos son el único signo que la norma escrita estadounidense autoriza en esa unión.\n\nCondición de clave única, escrita aquí porque es lo primero que se rompe al editar la frase: (1) **a la derecha no puede haber una oración independiente**, porque entonces el punto y coma sería tan correcto como los dos puntos y el ítem tendría dos claves —es la misma precaución que en q20, donde no se ofrece el punto—; (2) **a la izquierda el hueco tiene que ir detrás de un adjetivo, nunca de un sustantivo**: una coma puede introducir una aposición solo si hay un sustantivo contiguo al que renombrar, y en cuanto lo haya («the reason is one thing, the order in which…») la coma pasa a ser defendible y vuelven las dos claves; (3) el sintagma de la derecha tiene que empezar por determinante —«the order…»—, que es lo que hace ilegible la opción sin signo, porque un adjetivo no puede quedar delante de un determinante. Con esas tres condiciones no hay excepción de manual que salve a ninguna de las otras tres opciones.",
     razones: {
       A:
-        "El punto y coma pide una oración independiente a cada lado, y a su derecha solo hay una relativa —«which is longer than any of the three curators lasted»— que no se sostiene sola: quitado el resto de la frase, no es una oración. Es el error de quien mide el peso del período y no su estructura, y sube de coma a punto y coma cuando la frase se le hace larga.",
+        "La coma es el signo más frecuente del inglés escrito y por eso es la apuesta de quien no lee la frase, pero aquí nada la autoriza: una coma introduce una aposición solo cuando tiene delante un sustantivo al que renombrar, y lo que tiene delante es el adjetivo «simple». «…is simple, the order in which the eleven pictures hang» deja el sintagma colgado, sin función en la oración y sin nada a lo que referirse.",
       B:
-        "Sin ningún signo, «which is longer than…» queda pegado a «forty-eight years» como si sirviera para decir de qué años se habla. Una cantidad ya determinada no se puede especificar más, así que el lector arrastra la relativa dentro de la medida y solo al final descubre que era un comentario. Es la apuesta segura de quien no ha leído la frase: en la duda, ninguna coma.",
+        "El punto y coma exige oración independiente a cada lado, y a su derecha solo hay un sintagma nominal, «the order in which the eleven pictures hang», que no tiene verbo propio y no se sostiene solo. Es el error de quien reserva el punto y coma para «las pausas importantes» y elige por el peso de lo que anuncia, no por lo que hay a cada lado del signo.",
       C:
-        "Los dos puntos anuncian lo que viene después de una oración completa —una enumeración, una explicación, una aposición—, pero nunca una relativa: «which» ya trae consigo el enlace con lo anterior, y los dos puntos lo duplican. Es el error de quien ha aprendido que los dos puntos «presentan» algo y los coloca ante cualquier ampliación.",
+        "Sin ningún signo, «is simple the order in which the eleven pictures hang» no llega a leerse: un adjetivo no puede quedar delante de un determinante, así que «simple» y «the order» no forman nada, ni siquiera algo discutible. Es la apuesta segura de quien no ha leído la frase —en la duda, ningún signo— y aquí no produce una oración peor, produce una oración imposible.",
       D:
-        "Correcta: la relativa no dice de qué años se habla, sino que comenta el hecho entero que se acaba de enunciar, y una relativa explicativa va precedida de coma. La prueba está en el texto: la duración es una sola y definida, la que va de 1978 a hoy, de modo que nada queda por especificar.",
+        "Correcta: a la izquierda hay una oración completa que anuncia un motivo sin decirlo todavía y a la derecha el sintagma nominal que lo dice, y los dos puntos son el signo que la norma escrita estadounidense destina a esa unión. Es además el único de los cuatro que la admite: el punto y coma pediría oración a los dos lados, la coma pediría un sustantivo al que renombrar y la ausencia de signo no deja leer la frase.",
     },
     fuenteHecho:
-      "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. Los cuarenta y ocho años son la cuenta desde 1978 hasta el año en curso.",
+      "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. Los cuarenta y ocho años son la cuenta desde 1978 hasta el año en curso.",
   },
   {
     id: 'q19',
