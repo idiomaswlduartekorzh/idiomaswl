@@ -432,6 +432,35 @@ las opciones para que fueran **la misma palabra con distinto signo** bajó tres 
 reconocía sola— y por eso el arreglo formal la cerró. La lección no es «la forma da igual»,
 es **medir cuál de las dos fugas tiene cada ítem antes de arreglarlo**.
 
+### R14 · La tercera fuga es la frecuencia: ningún conjunto con un solo miembro marcado
+
+R11 describe la fuga **formal** —solo una opción está bien formada— y R13 la fuga de
+**sentido** —una opción es la más general, o la única relevante al objetivo—. Falta una
+tercera, que apareció en un ítem de tiempo verbal cuyas cuatro opciones eran gramaticales
+y ninguna «sonaba mejor», y aun así lo acertaban 7 de 10 a ciegas.
+
+Las opciones eran `grows` · `has grown` · `grew` · `had grown`. Tres tiempos corrientes de
+la prosa y **uno marcado**. En un ítem de examen, el marcado es la apuesta: es el que
+parece la respuesta de una pregunta, porque es el que un ítem de gramática suele estar
+examinando. No hace falta leer la frase.
+
+> **Un juego de opciones no puede tener un solo miembro marcado.** Si tres son las formas
+> por defecto y una es la llamativa, la llamativa se elige sin leer.
+
+Y ojo con el arreglo que parece obvio y no lo es: **reescribir la frase para que la clave
+sea un tiempo corriente no cierra la fuga, la invierte.** La arquitectura «tres contra uno»
+sigue en pie, y la apuesta del que no lee pasa a caer sobre un distractor — con lo que el
+ítem se sigue resolviendo sin leerlo, al revés, y contra alguien que ya sabe que este
+examen castiga la opción vistosa vuelve a filtrar. El arreglo es al **conjunto**: las
+cuatro al mismo grado de marcación. En el caso citado, las cuatro pasaron a formas
+compuestas —`have grown` · `has grown` · `was growing` · `had grown`—, con lo que «elegir
+el perfecto» dejó de discriminar.
+
+Regla de bolsillo para los tres casos: **antes de arreglar un ítem que filtra, decide cuál
+de las tres fugas tiene** —forma, sentido o frecuencia—. Aplicar el arreglo de una a la
+otra no hace nada, y ya nos costó una vuelta entera: igualar la forma de los ítems de
+síntesis los dejó exactamente igual de adivinables.
+
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 
 Las tres versiones de q02 pasaron cada una por auditoría, y cada arreglo introdujo un

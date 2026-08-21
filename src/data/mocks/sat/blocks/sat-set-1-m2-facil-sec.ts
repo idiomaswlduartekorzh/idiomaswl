@@ -27,6 +27,26 @@ import type { SatItemMeta } from '../module-types'
  * 4. **Ni un solo periodo o punto y coma se ofrece junto a otro signo que también valdría.**
  *    Con dos oraciones independientes, punto y punto y coma son las dos correctas: por eso
  *    en q20 no aparece el punto. Es la puerta 4 (clave única) aplicada al reverso.
+ * 5. **La marcación filtra, y es una tercera clase de fuga.** R13 manda medir, antes de
+ *    arreglar, si un ítem se filtra por la forma (R11) o por el sentido. En la tercera vuelta
+ *    q19 lo acertaban **7 de 10 sin ver el texto** y no era ninguna de las dos: sus cuatro
+ *    opciones —`grows` · `has grown` · `grew` · `had grown`— eran gramaticales por separado,
+ *    así que la fuga no era formal, y no había nada que «sonara mejor», así que tampoco era
+ *    de sentido. Era de **frecuencia**: tres tiempos corrientes de la prosa contra uno
+ *    marcado, y el marcado es el que parece la respuesta de una pregunta, porque es el que un
+ *    ítem de gramática suele estar examinando.
+ *
+ *    El arreglo **no** es mover la clave a otro tiempo. Eso deja la arquitectura intacta
+ *    —tres corrientes contra uno marcado— y solo pone la apuesta del que no lee encima de un
+ *    distractor: el ítem se sigue resolviendo sin leerlo, al revés. El arreglo es **igualar el
+ *    grado de marcación**: las cuatro opciones de q19 son ahora formas compuestas
+ *    (`have grown` · `has grown` · `was growing` · `had grown`), ninguna es presente ni pasado
+ *    simple, y tres de las cuatro son perfectos. «Elegir el perfecto» ya no señala nada, y
+ *    quedarse con él sin leer el sujeto lleva a A.
+ *
+ *    Se mantiene el presente perfecto como clave a propósito: «since» + perfecto es el
+ *    contraste que más le sirve a un hispanohablante, y renunciar a él para esquivar la fuga
+ *    habría costado más de lo que arreglaba.
  *
  * **El array va en el orden del plan (q16 → q22) y eso ya cumple la puerta 9.** SEC es la
  * excepción verificada de College Board: de menos a más difícil **sin agrupar por tipo**, y
@@ -57,8 +77,14 @@ import type { SatItemMeta } from '../module-types'
  *   la especifique más, y la relativa comenta el hecho entero. Si alguien pone ahí un
  *   antecedente contable e indeterminado, la opción sin coma se vuelve defendible.
  * - q19: lo que fija el presente perfecto son **dos** anclas de la misma oración, «Since the
- *   1840s» y el «it now has» del final. Quitando cualquiera de las dos, el pasado simple o el
- *   pluscuamperfecto pasan a ser defendibles y el ítem tiene dos claves.
+ *   1840s» y el «it now has» del final. Quitando cualquiera de las dos, el pasado o el
+ *   pluscuamperfecto pasan a ser defendibles y el ítem tiene dos claves. Desde la tercera
+ *   vuelta hay dos condiciones más. Una: el núcleo del sujeto, «the shelf», tiene que seguir
+ *   en singular y con su bloque interpuesto en plural —«of books for young readers…»—, porque
+ *   de ahí vive A; el ítem sigue midiendo tiempo y no número, el número solo mata a A. Dos:
+ *   **no se puede ofrecer ninguna forma continua en presente perfecto**: «has been growing»
+ *   sería tan correcta como la clave y el ítem tendría dos. «was growing» sí cabe porque lo
+ *   que la tumba no es el continuo, es el pasado.
  * - q20: a la derecha de «however» tiene que haber una oración con sujeto y verbo propios; si
  *   se queda en un complemento, el punto y coma muere. Y **no se puede ofrecer el punto**: con
  *   dos independientes, «messages. However,» es tan correcto como el punto y coma.
@@ -129,9 +155,9 @@ export const items: MCQQuestion[] = [
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "grows",
+      "have grown",
       "has grown",
-      "grew",
+      "was growing",
       "had grown",
     ],
     answer: 1,
@@ -257,16 +283,16 @@ export const meta: SatItemMeta[] = [
     dificultad: 2,
     tema: 'humanidades',
     regla:
-      "Tiempo verbal fijado por el contexto: «since» con un punto de partida en el pasado y una situación que sigue vigente —el «it now has» de la misma oración— exige presente perfecto. Las cuatro opciones son formas corrientes del verbo «grow»; lo que las descarta no es su forma, sino las dos anclas temporales de la frase.",
+      "Tiempo verbal fijado por el contexto: «since» con un punto de partida en el pasado y una situación que sigue vigente —el «it now has» de la misma oración— exige presente perfecto. Las cuatro opciones son formas compuestas y corrientes del verbo «grow», del mismo grado de marcación: no aparece el presente ni el pasado simple, y tres de las cuatro son perfectos, de modo que quedarse con «el tiempo que parece de examen» no lleva a la clave sino a A. Lo que descarta a cada distractor son las dos anclas temporales de la frase y, en el caso de A, el número del núcleo del sujeto.",
     razones: {
       A:
-        "Presente simple: describe lo que ocurre habitualmente, sin ligarlo a ningún origen, y aquí el origen está escrito, «Since the 1840s». Es el error del hispanohablante que traduce «crece desde la década de 1840» tal cual, porque en español el presente sí admite ese «desde» y en inglés no.",
+        "Acierta el tiempo y falla el número, que es justamente lo que impide resolver el ítem quedándose con «el perfecto»: el verbo concuerda con el núcleo del sujeto, «the shelf», que es singular, y no con los plurales del bloque interpuesto, «of books for young readers». El «it now has» del final de la misma oración vuelve a nombrar ese sujeto en singular. Es el error de quien busca dentro del sujeto el primer sustantivo en plural y concuerda con él.",
       B:
-        "Correcta: el presente perfecto es la forma que une un comienzo situado en el pasado con un estado que sigue siendo verdad al escribir, y la oración marca las dos puntas —«Since the 1840s» al principio y «it now has its own writers» al final—.",
+        "Correcta: el presente perfecto es la forma que une un comienzo situado en el pasado con un estado que sigue siendo verdad al escribir, y la oración marca las dos puntas —«Since the 1840s» al principio y «it now has its own writers» al final—. Concuerda además con el núcleo singular del sujeto, «the shelf».",
       C:
-        "Pasado simple: cierra el crecimiento dentro del pasado y deja fuera el presente, que es justo lo que el resto de la oración afirma con «now». Es el error de quien concuerda el verbo con el tiempo del párrafo —el resto va en pasado— en vez de con el marcador de su propia oración.",
+        "Pasado continuo: encierra el crecimiento dentro del pasado, y «since» no admite pasado en inglés ni el «now» del final deja cerrar nada. Es el calco del hispanohablante que traduce «desde la década de 1840 crecía de forma constante», porque en español el imperfecto sí acepta ese «desde» y en inglés hay que ir al perfecto; lo refuerza el párrafo, que viene entero en pasado.",
       D:
-        "Pluscuamperfecto: sitúa el crecimiento antes de otro momento pasado, y esa referencia anterior no existe en la frase; el punto de observación es el presente. Es el error de quien elige el tiempo que más «histórico» suena en un texto que habla del siglo XIX.",
+        "Pluscuamperfecto: sitúa el crecimiento antes de otro momento pasado, y esa referencia anterior no existe en la frase; el punto de observación es el presente, escrito con «now». Es el error de quien lee «Since the 1840s» como una fecha más del relato decimonónico y elige el tiempo que suena más «histórico» de los cuatro.",
     },
     fuenteHecho:
       "Historia editorial, hecho libre: la literatura infantil deja de ser una versión abreviada de la de adultos y se convierte en un sector propio, con ilustración integrada en la página, a lo largo del siglo XIX. El impresor y su ciudad son invención propia. «Bookstore», y no «bookshop», porque el examen mide la norma escrita estadounidense.",

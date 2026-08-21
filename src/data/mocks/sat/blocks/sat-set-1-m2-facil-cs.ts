@@ -24,16 +24,12 @@ import type { SatItemMeta } from '../module-types'
  * más completa o más «de examen», y esa era la clave en los dos.
  *
  * - **q05** ya compartía el arranque en las cuatro opciones; lo que las separaba era el
- *   cierre, y solo la clave tenía la forma matizada «lo que sí y lo que no». Ahora las
- *   cuatro terminan en «closes by saying X and Y», las cuatro con esa misma balanza de
- *   dos miembros y las cuatro dentro de ocho caracteres de longitud. Lo único que las
- *   separa es qué par de cosas dice de verdad el último tramo del texto.
+ *   cierre, y solo la clave tenía la forma matizada «lo que sí y lo que no». Se igualó la
+ *   forma: las cuatro en «closes by saying X and Y», dentro de ocho caracteres.
  * - **q06** iba en cuatro moldes distintos («It excuses…», «It fixes…», «It gives…»,
- *   «It marks…»), y solo el de la clave nombraba un método. Ahora las cuatro son
- *   «It points to Sofía's <mitad de la frase> as the <papel> …», dentro de dos
- *   caracteres. La fuga de segundo orden estaba en cuál mitad de la frase examinada se
- *   citaba: la clave vive de las novelas, así que si hubiera sido la única en nombrarlas
- *   se señalaría sola. Van dos y dos —A y B por la edad, C y D por la lectura—.
+ *   «It marks…»), y solo el de la clave nombraba un método. Se igualó también, a
+ *   «It points to Sofía's <mitad de la frase> as the <papel> …», y se repartió dos y dos
+ *   la mitad de la frase citada para que las novelas no señalaran solas a la clave.
  *
  * **q03** volvió del auditor de clave por gemelo de q01: los dos eran «X ______ Y: sigue
  * ahí / vuelve en su sitio, **pero**…» y los dos se contestaban con «conserva la forma,
@@ -55,6 +51,50 @@ import type { SatItemMeta } from '../module-types'
  *
  * Por **R2**, los siete ítems tocados vuelven enteros a la cola de auditoría y la prueba
  * a ciegas hay que repetirla sobre estas opciones.
+ *
+ * ── Tercera versión: q05 y q06, otra vez ───────────────────────────────────
+ *
+ * Igualar la forma no solo no arregló estos dos: los **empeoró**. El panel a ciegas pasó
+ * de 9/10 a **10 de 10 en los dos**. Es el caso que motivó **R13** (blueprint §4 bis): en
+ * estructura y función la fuga no es la forma, es el sentido.
+ *
+ * - **q05.** Con las cuatro opciones en el mismo molde, la clave era la **más general**:
+ *   «qué cambia el registro nuevo y qué no» encaja en casi cualquier texto con esa forma,
+ *   mientras que las otras tres nombraban contenidos concretos que podían estar o no. Lo
+ *   genérico es la apuesta segura de quien no ha leído. Encima C decía casi lo mismo que
+ *   B con otras palabras, y dos opciones que se solapan se cancelan entre ellas.
+ * - **q06.** La misma fuga por el otro lado: de las cuatro funciones ofrecidas, la clave
+ *   era la única que describía un texto **bien hecho**. Las otras tres —una excusa del
+ *   narrador, una distancia de edades que no se usa, una duda que el personaje no tiene—
+ *   eran funciones que ningún escritor competente le daría a esa frase. Los textos bien
+ *   hechos son predecibles, así que se adivinan.
+ *
+ * Rehechos según R13: **las cuatro opciones al mismo grado de concreción, y cada
+ * distractora es la descripción impecable de un texto ligeramente distinto**, no una
+ * descripción torpe del texto que hay.
+ *
+ * - **q05** conserva el arranque común —el límite del barco y el ciclo del flotador, que
+ *   el texto sostiene— y cambia los cuatro cierres. Los cuatro son ahora igual de
+ *   concretos, los cuatro nombran dos miembros y tres de los cuatro son concesivos
+ *   («granting», «admitting», «conceding»), para que la forma de concesión deje de marcar
+ *   a la clave. Cada uno es un final creíble para un texto sobre este mismo tema:
+ *   comparar cantidades de lecturas, conceder que la serie no es más larga, reconocer una
+ *   laguna todavía abierta, pedir más años. Solo el pasaje dice cuál ocurre.
+ * - **q06** deja de partir la frase en mitades: las cuatro opciones arrancan en «It pauses
+ *   on Sofía's age and her reading to …», de modo que la pista de segundo orden —qué
+ *   mitad se cita— desaparece del todo. Las cuatro funciones son de las que un buen
+ *   escritor querría para un inciso así: presentar al personaje antes de que juzgue,
+ *   apartarse por una vez de su punto de vista, explicar de dónde sale su interpretación
+ *   y enfrentar dos edades. Tres se caen con el texto delante, y por un hecho comprobable
+ *   cada una: el orden de las frases, un punto de vista que nunca estuvo dentro y un
+ *   contraste que no vuelve a usarse.
+ *
+ * Longitudes medidas, no estimadas: q05 va de 221 a 229 caracteres (clave, 224) y q06 de
+ * 128 a 133 (clave, 130). En ninguno de los dos la clave es la opción más larga.
+ *
+ * Las claves siguen siendo las del plan —q05 → B, q06 → C— y por **R2** los dos vuelven
+ * enteros a la cola de auditoría: la prueba a ciegas hay que repetirla sobre estas
+ * opciones, no sobre las anteriores.
  */
 
 export const items: MCQQuestion[] = [
@@ -126,10 +166,10 @@ export const items: MCQQuestion[] = [
       'For most of the twentieth century the temperature of the ocean below the surface was measured from ships, which meant it was measured where ships go, in the seasons when the weather lets them. Since 2000 most of the work has been done by drifting floats. A float sinks to about a kilometer and drifts there for nine days; on the tenth it sinks to two kilometers and then rises to the surface, taking readings on the way up, and radios them to a satellite before sinking again. Several thousand are now at sea, and they report from stretches of the Southern Ocean that no research vessel visits in winter. The record they have built is not longer than the old one. It is more evenly spread.',
     text: 'Which choice best describes the overall structure of the text?',
     options: [
-      'It reports a limitation of an older method, describes the device that replaced it, and closes by saying how much of the ocean each record covers and which seasons it misses.',
-      'It reports a limitation of an older method, describes the device that replaced it, and closes by saying what the new record changes about the old one and what it does not.',
-      'It reports a limitation of an older method, describes the device that replaced it, and closes by saying which half of the old limitation the new record removes and which it keeps.',
-      'It reports a limitation of an older method, describes the device that replaced it, and closes by saying what a longer series will show in time and what it cannot show just yet.',
+      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by comparing how many readings each of the two methods has produced and how deep each one reached.',
+      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by granting that the float record covers no more years than the old one and calling it better spread.',
+      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by admitting that both methods leave the same waters unmeasured and that winter is when the gap widens.',
+      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by conceding that the float record is still too short to show a trend and saying how much longer it needs.',
     ],
     answer: 1,
   },
@@ -141,10 +181,10 @@ export const items: MCQQuestion[] = [
       "The new tenant across the landing was a man of about fifty who wore the same gray coat every day that winter. Within a week Sofía had decided he was a widower. He carried his groceries up in a net bag and never brought more than a day's worth; he came home at the same hour; and once, through the door, she heard him say good night to a room she was fairly sure was empty. She was seventeen and had read a great many novels. When the man's wife arrived in March with two suitcases and a cold, Sofía was less embarrassed than disappointed.",
     text: 'Which choice best describes the function of the sentence "She was seventeen and had read a great many novels." in the text as a whole?',
     options: [
-      "It points to Sofía's age as the excuse the narrator offers for the mistake she makes.",
-      "It points to Sofía's age as the distance between her and the man across the landing.",
-      "It points to Sofía's reading as the source of the story she builds about the tenant.",
-      "It points to Sofía's reading as the first sign that she has begun to doubt herself.",
+      "It pauses on Sofía's age and her reading to introduce her to the reader before the conclusion she draws about the tenant is reported.",
+      "It pauses on Sofía's age and her reading to step outside her own account of that winter for the only moment the story allows it.",
+      "It pauses on Sofía's age and her reading to explain where the story she has spent the winter building about the tenant comes from.",
+      "It pauses on Sofía's age and her reading to set her against the tenant, the contrast on which the last sentence of the text turns.",
     ],
     answer: 2,
   },
@@ -264,13 +304,13 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Lee el cierre como un recuento de cobertura: cuánto océano ha medido cada uno de los dos y qué se le escapa a cada uno. El texto no compara volúmenes, compara reparto —«not longer than the old one» y, en la línea siguiente, «It is more evenly spread»—, y la única magnitud que llega a comparar es la duración de la serie, para decir que no ha cambiado. De las estaciones que el registro nuevo se pierde no se dice nada.',
+        'Es un cierre perfectamente posible —echar cuentas: tantas mediciones de un método, tantas del otro, y hasta dónde llegó cada uno— pero no es el de este texto. Aquí no hay una sola cifra de mediciones: «several thousand» cuenta flotadores en el mar, no lecturas tomadas. Y la única profundidad que aparece es la del flotador, un kilómetro y dos kilómetros; del barco no se dice cuánto medía hacia abajo, de modo que no hay dos profundidades que comparar. Las dos frases finales comparan otra cosa: cuántos años cubre cada registro y cómo se reparten.',
       B:
-        'Correcta: el texto va en tres movimientos. Primero el límite del método antiguo, que se medía «where ships go, in the seasons when the weather lets them». Después el aparato que lo sustituyó, descrito paso a paso: deriva nueve días a un kilómetro, al décimo baja a dos, sube midiendo hasta la superficie y transmite por satélite. Y cierra separando lo que no cambió de lo que sí: la serie no es más larga, está mejor repartida.',
+        'Correcta: el texto va en tres movimientos y el tercero está en las dos últimas frases. Primero por qué el barco solo medía en parte del mar y en parte del año —«where ships go, in the seasons when the weather lets them»—. Después un flotador entero, paso a paso: nueve días a un kilómetro, al décimo baja a dos, sube midiendo y transmite por satélite. Y cierra concediendo la comparación que pierde —«The record they have built is not longer than the old one»— para quedarse con la que gana: «It is more evenly spread».',
       C:
-        'Cae quien ve «no research vessel visits in winter» y lo lee como un hueco que sigue abierto. La frase dice lo contrario de lo que parece suelta: los flotadores «report from stretches of the Southern Ocean that no research vessel visits in winter», o sea que informan justo de donde el barco no llegaba. El límite se nombra ahí para decir que ya no lo es, y el cierre no lo parte en una mitad resuelta y otra pendiente.',
+        'Es un cierre impecable para otro texto —el que termina reconociendo que la laguna sigue abierta para los dos métodos y que en invierno se ensancha— y este texto lo dice justo al revés. La frase que lo tienta está entera dos líneas antes: los flotadores «report from stretches of the Southern Ocean that no research vessel visits in winter», es decir, informan justo de donde el barco no iba. El invierno se nombra como el hueco que se cerró, no como uno compartido, y en el cierre no vuelve a aparecer ninguna agua sin medir.',
       D:
-        'Convierte «not longer than the old one» en una promesa de futuro: cuando la serie acumule años, dirá tal cosa. El texto usa esa frase en presente y para conceder algo, no para anunciar nada, y en todo el párrafo no hay ninguna predicción, ningún resultado esperado ni ninguna fecha por delante.',
+        'Un texto que cerrara diciendo que la serie es todavía corta y cuántos años le faltan estaría bien cerrado; este no cierra así. «The record they have built is not longer than the old one» no denuncia una carencia: concede algo para poder afirmar lo siguiente, «It is more evenly spread», que es la frase con la que el párrafo se queda. En todo el texto no hay un solo plazo, umbral ni tiempo verbal de futuro.',
     },
     fuenteHecho:
       'Hecho real y público: la red internacional de flotadores perfiladores funciona desde 2000 con ciclos de unos diez días —deriva a unos 1.000 m durante nueve días, descenso a 2.000 m y perfil tomado durante el ascenso—, transmite por satélite y son varios miles. La primera versión de este texto decía que el flotador «sinks to about two kilometers, drifts there for ten days» y que lo medido era «the deep ocean»: las dos cosas son falsas —la cobertura es la de los 2.000 m superiores— y un simulacro no puede enseñar un dato falso ni de paso. El programa no se nombra; la redacción es original.',
@@ -283,13 +323,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Lee la edad como atenuante y al narrador como quien la ofrece: a los diecisiete se perdona equivocarse. Pero el narrador no disculpa nada —pone la edad al lado de las novelas y no comenta ninguna de las dos—, y el final tampoco trata el error como una falta que necesite excusa: Sofía queda «less embarrassed than disappointed», que es lo que se siente cuando se cae una historia, no cuando se paga una culpa.',
+        'La función es de las que se usan a menudo y bien —presentar a quien va a juzgar antes de que juzgue—, pero pide una frase colocada en otro sitio. Aquí el juicio ya está dado cuatro líneas antes, en la segunda oración del texto: «Within a week Sofía had decided he was a widower». La frase examinada llega después de esa conclusión y después de las tres pruebas con que se sostiene, así que no presenta a nadie a tiempo de nada: llega cuando el lector ya sabe qué decidió Sofía y necesita saber por qué.',
       B:
-        'Es la lectura de quien empareja cifras: «about fifty» arriba, «seventeen» abajo, luego la frase estará ahí para fijar la diferencia. Esa distancia no vuelve a usarse en ninguna línea del texto —no explica la conclusión, ni las tres pruebas, ni la decepción de marzo—, y la mitad de la frase que sí explica todo eso es la otra.',
+        'Sería exacta en un relato contado desde dentro de Sofía, donde este inciso fuera la única vez que la voz se aparta y la mira desde fuera. Este no lo es en ninguna línea. La narración va por fuera desde el principio —«Sofía had decided», «a room she was fairly sure was empty»— y sigue por fuera después, hasta el juicio final sobre lo que sintió. Si el punto de vista nunca estuvo dentro, esta frase no puede ser la salida.',
       C:
-        'Correcta: la frase llega justo después de la conclusión y de las tres pruebas con que Sofía la sostiene —la bolsa de red, la hora fija, las buenas noches a un cuarto que ella cree vacío— y dice de dónde salió el procedimiento. Haber leído «a great many novels» es lo que convierte tres detalles sueltos en una historia sobre el vecino. Por eso el final la deja «less embarrassed than disappointed»: lo que se estropea en marzo es el relato.',
+        'Correcta: la frase llega justo después de la conclusión y de las tres pruebas con que Sofía la sostiene —la bolsa de red, la hora fija, las buenas noches a un cuarto que ella cree vacío— y dice de dónde salió el procedimiento. Tener diecisiete años y haber leído «a great many novels» es lo que convierte tres detalles sueltos en la historia de un viudo. Por eso lo que se rompe en marzo es un relato y no una cuenta: Sofía queda «less embarrassed than disappointed».',
       D:
-        'Toma el inciso del narrador por el momento en que Sofía empieza a desconfiar de lo suyo. En el texto Sofía no duda en ningún momento: decide en una semana, reúne pruebas y sigue instalada en su conclusión hasta que la mujer llega en marzo con dos maletas. Quien mira la escena desde fuera es el narrador que la cuenta después, no la chica que la vive.',
+        'Ese contraste se monta así en muchos textos: dos edades enfrentadas y un final que descansa en la distancia entre ellas. Para que fuera este, la diferencia tendría que volver a usarse, y no vuelve. Los cincuenta años y el abrigo gris del vecino no se cruzan con los diecisiete de Sofía en ninguna línea posterior, y la última frase no gira sobre la edad de nadie: gira sobre lo que le pasa a su historia cuando la mujer llega en marzo con dos maletas.',
     },
     fuenteHecho: 'Ficción original; ningún hecho real implicado.',
   },
