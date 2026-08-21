@@ -45,13 +45,13 @@ import type { SatItemMeta } from '../module-types'
  * MEDIDO SOBRE LOS SIETE (contador del guardián: caracteres, y solape de palabras de
  * contenido con el `stimulus`):
  *
- * - Puerta 7 · longitud del texto: 107, 128, 83, 98, 132, 128 y 134 palabras-SAT. Dentro
+ * - Puerta 7 · longitud del texto: 107, 128, 83, 97, 132, 128 y 133 palabras-SAT. Dentro
  *   de 25-150 con margen por arriba en el más largo.
  * - Puerta 2 · la clave no es la opción más larga en ninguno de los siete (0 %, máximo
  *   30 %). Tampoco es la más corta en más de dos, para que no se acierte por el otro lado.
  * - Puerta 3 · la clave no es la que más repite palabras del texto en ninguno, ni la que
  *   menos en ninguno (0 % y 0 %, máximo 40 % por cada cara). Los solapes por ítem, en orden
- *   A-D: q09 7/6/5/3, q10 6/5/2/5, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
+ *   A-D: q09 7/6/5/4, q10 3/7/4/5, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
  *   q15 7/2/6/6. La clave queda siempre en el medio, nunca en un extremo.
  *
  * DOS ÍTEMS QUE MERECEN NOTA, porque es donde el módulo 1 se cayó tres veces:
@@ -68,6 +68,48 @@ import type { SatItemMeta } from '../module-types'
  *   —el peso del secreto, la reciprocidad del pueblo, la noche elegida— son las que una
  *   historia así suele traer. La clave no es la más bonita; es la única que el cierre del
  *   texto enuncia palabra por palabra.
+ *
+ * SEGUNDA PASADA (21 ago 2026). El auditor de clave dio APTO a los siete y resolvió los
+ * siete a ciegas coincidiendo con las claves del plan, pero el panel acertó q10 ocho veces
+ * de diez SIN el texto. Lo que fallaba no era ninguna opción, sino la forma del juego: la
+ * clave era la lectura más fina de las cuatro y se reconocía por el aspecto. Rehecho con
+ * R12 (blueprint §4 bis), que es la regla que arregló lo mismo en el bloque de expresión:
+ *
+ * 1. Plantilla única. Las cuatro empiezan por las mismas tres palabras («Irina came to»),
+ *    las cuatro llevan un comparativo «more/better … than» y las cuatro cierran con la
+ *    misma coda literal —«and in time she took it for the ordinary shape of a life»—, que
+ *    era lo que antes solo tenía la clave. La aceptación del final ya no distingue nada:
+ *    lo único que separa a las cuatro es la mitad de en medio, y eso solo lo decide el
+ *    texto. Longitudes 132/136/135/134 caracteres, dentro de una palabra.
+ * 2. Asimetría de segundo orden reparcelada dos y dos. La clave era además la única en voz
+ *    activa con Irina como sujeto que sabe; ahora A y C van en pasiva (le entregan, le
+ *    devuelven) y B y D en activa (ella prefiere, ella conoce). El segundo término de la
+ *    comparación tampoco delata: en dos opciones es Irina y en dos, la institución —el
+ *    turno de la centralita y el pueblo—.
+ * 3. Cada distractor sigue muriendo por una línea distinta: A por «stopped thinking of it
+ *    as keeping a secret», B por «She had not chosen the shift», C por «did not know her
+ *    at all by daylight». Ninguno es verdad a medias.
+ *
+ * En la misma pasada, cuatro cabos sueltos que señalaron los auditores y que se cerraron
+ * sin tocar ninguna clave ni ninguna cadena de deducción:
+ *
+ * - q09 D decía «the low February sun» y en el texto no hay febrero: es enero y «three
+ *   weeks after». Regalaba una eliminación por la razón equivocada. Ahora dice enero.
+ * - q14 B tenía «never sounded the same depth since», el único absoluto del ítem y en una
+ *   opción falsa: premiaba descartar por regla de examen. Suavizado a «had settled at
+ *   different depths since». La opción sigue muriendo por lo mismo: Elvira los nombra
+ *   «before either of them had said a word».
+ * - q15 usaba `quarto`, `gathering` y `leaves`, vocabulario de bibliografía analítica que
+ *   el texto no define y que en un módulo estándar cuesta tiempo y confianza. Ahora dice
+ *   «the 1612 printing of» y «the pages of that section are folded from one sheet of
+ *   paper». La e torcida, la prensa única y el pliego sin cortar siguen igual.
+ * - q15 pedía además creer que setenta líneas cabían de más en el mismo pliego «sin cortar
+ *   ni pegar nada», y una plana de cuarto lleva 35-40: eran casi dos planas. La diferencia
+ *   baja a treinta líneas frente a doce —dieciocho, que se absorben recomponiendo el
+ *   pliego— y los ejemplares pasan de 12/28 a 11/29 para que ningún numeral se repita con
+ *   los de las líneas. La opción A dice ahora «eighteen of its lines».
+ * - q12 escribía `plough`, grafía británica, en un examen que evalúa norma estadounidense
+ *   y que es americano en todo lo demás: `plow`.
  */
 
 export const items: MCQQuestion[] = [
@@ -82,7 +124,7 @@ export const items: MCQQuestion[] = [
       "Its basin sits deeper than the southern lake, and its water takes in enough summer heat to hold the surface open three weeks into January.",
       'It is fed from below by a spring whose water leaves the gravel no colder in the middle of January than at midsummer.',
       'Its surface is kept moving all winter by the wind that funnels down the valley, and water that keeps moving freezes later.',
-      'Its water carries more peat than the southern basin does, and a darker pond takes in more of the low February sun.',
+      'Its water carries more peat than the southern basin does, and a darker pond takes in more of the low January sun.',
     ],
     answer: 1,
   },
@@ -94,10 +136,10 @@ export const items: MCQQuestion[] = [
       'For nine years Irina worked the night board at the telephone exchange. She had not chosen the shift; it was the one the exchange had open the year her mother died, and she stayed on it. She learned which houses called the doctor and at what hour, whose son telephoned from the capital and whose did not, which marriages were conducted entirely in the two minutes before midnight. In the market she was a woman who counted her change and said little. The same voices that had wept into her ear at three in the morning asked her at noon whether the plums were ripe. She never repeated any of it, and after a time she stopped thinking of it as keeping a secret. It was simply the shape of her days: the town talked to her all night and did not know her at all by daylight.',
     text: 'Which choice best states the main idea of the text?',
     options: [
-      "Irina's nine years at the night board left her carrying more of those voices than any one woman could set down.",
-      'Irina stayed on the night board for the quiet of it, and the quiet turned out to cost her more of the market than she had meant to pay.',
-      "Irina's neighbors handed her the worst of their nights and, at noon in the market, paid her back for it in small ways.",
-      'Irina came to know the town far better than it knew her, and in time she took that lopsidedness for the ordinary shape of a life.',
+      "Irina came to be handed more of the town's bad nights than she could hold, and in time she took it for the ordinary shape of a life.",
+      'Irina came to like the night board better than any day shift the exchange had, and in time she took it for the ordinary shape of a life.',
+      'Irina came to be repaid at noon in more small kindnesses than she looked for, and in time she took it for the ordinary shape of a life.',
+      'Irina came to know the town a great deal more closely than it ever knew her, and in time she took it for the ordinary shape of a life.',
     ],
     answer: 3,
   },
@@ -121,7 +163,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Between 1838 and 1852 the fields around Valmar went over from wheat to potatoes. The parish records give the reason plainly: three bad harvests in a row had left the wheat land exhausted, and the potato fed more people from less ground. Historian Emile Rojas is not persuaded that exhaustion is the whole of it. The tithe in that district, he points out, was collected in grain and had been for four centuries, while a field of potatoes owed the church nothing at all. What moved the plough, in his account, was the tax, and the failing harvests only made the arithmetic easier to see.',
+      'Between 1838 and 1852 the fields around Valmar went over from wheat to potatoes. The parish records give the reason plainly: three bad harvests in a row had left the wheat land exhausted, and the potato fed more people from less ground. Historian Emile Rojas is not persuaded that exhaustion is the whole of it. The tithe in that district, he points out, was collected in grain and had been for four centuries, while a field of potatoes owed the church nothing at all. What moved the plow, in his account, was the tax, and the failing harvests only made the arithmetic easier to see.',
     text: "Which finding, if true, would most directly support Rojas's argument?",
     options: [
       'In the parishes where the three bad harvests left the wheat land most exhausted, the ground given over to potatoes grew fastest over the decade that followed.',
@@ -155,7 +197,7 @@ export const items: MCQQuestion[] = [
     text: 'Which choice most logically completes the text?',
     options: [
       'the steps at the door, which Rafael went up in a bound while Pablo put a foot down on each one.',
-      'the two voices, which had broken a full year apart and had never sounded the same depth since.',
+      'the two voices, which had broken a full year apart and had settled at different depths since.',
       'the hour, since the bakery let Rafael off the ovens a good twenty minutes before it let Pablo go.',
       'the smell of the ovens, which would have hung about Rafael at the end of a shift and not about Pablo.',
     ],
@@ -166,13 +208,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Forty copies survive of the 1612 quarto of The Ferryman's Daughter. In twelve of them the third act carries a scene of ninety lines; in the other twenty-eight the same scene runs to twenty. Printers of the period altered type while the sheets were still going through the press, so copies of one book can differ, and the shop that printed this quarto worked a single press. Its type had one flaw that can be dated: a lowercase e with a crooked crossbar, which entered the shop's stock in March 1612 and marks every sheet it printed afterward. The crooked e runs all through the long version of the scene and appears nowhere in the short one. In all forty copies the leaves of that gathering are folded from a single sheet, with none cut out and none pasted in. Taken together, these details indicate that…",
+      "Forty copies survive of the 1612 printing of The Ferryman's Daughter. In eleven of them the third act carries a scene of thirty lines; in the other twenty-nine the same scene runs to twelve. Printers of the period altered type while the sheets were still going through the press, so copies of one book can differ, and the shop that printed it worked a single press. Its type had one flaw that can be dated: a lowercase e with a crooked crossbar, which entered the shop's stock in March 1612 and marks every sheet it printed afterward. The crooked e runs all through the long version of the scene and appears nowhere in the short one. In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
     text: 'Which choice most logically completes the text?',
     options: [
-      'the ninety-line scene was the version the shop set up first, and that seventy of its lines were cut away partway through the run.',
+      'the thirty-line scene was the version the shop set up first, and that eighteen of its lines were cut away partway through the run.',
       'the two versions were set up at the same time and printed side by side, and that only one of the two settings drew on the crooked e.',
-      'the twenty-line scene came off the press first, and that the ninety-line version was set into the type after the run had begun.',
-      'the ninety-line scene was printed after the rest of the book was finished, and that it was slipped into twelve copies already made up.',
+      'the twelve-line scene came off the press first, and that the thirty-line version was set into the type after the run had begun.',
+      'the thirty-line scene was printed after the rest of the book was finished, and that it was slipped into eleven copies already made up.',
     ],
     answer: 2,
   },
@@ -206,13 +248,13 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Convierte el trabajo en un peso, y la penúltima frase dice lo contrario: «after a time she stopped thinking of it as keeping a secret». Lo que carga con ella deja de pesarle y se le vuelve rutina. Es la lectura literaria de manual —quien guarda secretos los arrastra—, y por eso la marca quien decide por lo que suele significar una historia así en vez de por lo que esta dice.',
+        'Convierte los nueve años en una acumulación que la desborda, y la penúltima frase dice lo contrario: «after a time she stopped thinking of it as keeping a secret». Lo que le confían deja de pesarle en vez de amontonársele por encima de lo que puede sostener. Es la lectura literaria de manual —quien guarda lo que oye acaba doblado por ello—, y la marca quien decide por lo que suele significar una historia así en vez de por lo que esta dice.',
       B:
-        'Le atribuye una elección que el texto le quita en su segunda frase: «She had not chosen the shift; it was the one the exchange had open the year her mother died». No hubo preferencia por la noche, ni un cálculo que le saliera caro. Es el error de quien supone que quien trabaja de noche eligió la noche.',
+        'Le atribuye una preferencia que el texto le quita en su segunda frase: «She had not chosen the shift; it was the one the exchange had open the year her mother died». No hay comparación con los turnos de día porque nunca hubo dos turnos entre los que escoger: se quedó en el único que había. Es el error de quien supone que quien trabaja de noche eligió la noche.',
       C:
-        'Inventa una reciprocidad que la escena del mediodía desmiente. A las tres de la mañana le lloran al oído y a mediodía le preguntan si están maduras las ciruelas: el pueblo ni le devuelve nada ni sabe que le debe algo, porque «the town talked to her all night and did not know her at all by daylight». Lo elige quien da por hecho que en un pueblo pequeño esas deudas se pagan.',
+        'Inventa una reciprocidad que la escena del mediodía desmiente. A las tres de la mañana le lloran al oído y a mediodía le preguntan si están maduras las ciruelas; en el mercado es «a woman who counted her change and said little», y «the town talked to her all night and did not know her at all by daylight». No hay devolución, ni pequeña ni grande. Lo elige quien da por hecho que en un pueblo pequeño esas deudas se pagan.',
       D:
-        'Correcta: es lo que enuncia el cierre del texto. «It was simply the shape of her days: the town talked to her all night and did not know her at all by daylight» da la desigualdad, y «after a time she stopped thinking of it as keeping a secret» es lo que la vuelve ordinaria en vez de dramática.',
+        'Correcta: es lo que enuncia el cierre del texto. «the town talked to her all night and did not know her at all by daylight» da la desigualdad —ella llega a conocer el pueblo de cerca y el pueblo no la conoce a ella—, y «It was simply the shape of her days», junto con «after a time she stopped thinking of it as keeping a secret», es lo que la vuelve ordinaria en vez de dramática.',
     },
     fuenteHecho:
       'Ficción original. La centralita manual atendida de noche por una operadora es tecnología documentada de la primera mitad del siglo XX; el pueblo, Irina y todo lo demás están inventados.',
@@ -300,15 +342,15 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Invierte el orden que fija la letra estropeada. La e torcida entra en la imprenta en marzo de 1612 y marca todo lo que sale de ella a partir de entonces; está en la versión larga y no aparece en ninguna corta, de modo que la larga se compuso después, no primero. Es el error de quien da por hecho que un texto impreso se acorta y nunca se alarga, que es lo corriente en una imprenta y no lo que pasó aquí.',
+        'Invierte el orden que fija la letra estropeada. La e torcida entra en la imprenta en marzo de 1612 y marca todo lo que sale de ella a partir de entonces; está en la versión de treinta líneas y no aparece en ninguna de doce, de modo que la larga se compuso después, no primero. Es el error de quien da por hecho que un texto impreso se acorta y nunca se alarga, que es lo corriente en una imprenta y no lo que pasó aquí.',
       B:
-        'Necesita dos composiciones tirando a la vez, y el texto lo impide: «the shop that printed this quarto worked a single press». Con una sola prensa no hay dos versiones simultáneas, y además la e torcida marca «every sheet it printed» desde marzo, así que no puede faltar en la mitad de una tirada posterior a esa fecha. Es la explicación que más suena a saber de imprentas, y por eso la marca quien elige la lectura más experta de las cuatro.',
+        'Necesita dos composiciones tirando a la vez, y el texto lo impide: «the shop that printed it worked a single press». Con una sola prensa no hay dos versiones simultáneas, y además la e torcida marca «every sheet it printed» desde marzo, así que no puede faltar en la mitad de una tirada posterior a esa fecha. Es la explicación que más suena a saber de imprentas, y por eso la marca quien elige la lectura más experta de las cuatro.',
       C:
-        'Correcta: es lo único que cuadra con las tres cosas que el texto da. La e torcida entra en marzo de 1612 y marca cuanto se imprime después; está en toda la versión larga y en ninguna corta, luego las veintiocho cortas salieron antes; y como el pliego está entero en los cuarenta ejemplares, la versión larga tuvo que componerse de nuevo con la tirada ya en marcha.',
+        'Correcta: es lo único que cuadra con las tres cosas que el texto da. La e torcida entra en marzo de 1612 y marca cuanto se imprime después; está en toda la versión de treinta líneas y en ninguna de doce, luego las veintinueve cortas salieron antes; y como esas páginas salen de una sola hoja sin nada cortado ni pegado en los cuarenta ejemplares, la versión larga tuvo que componerse de nuevo con la tirada ya en marcha, absorbiendo dieciocho líneas de más en el mismo pliego.',
       D:
-        'Hace de la escena larga una hoja añadida más tarde, y la última línea lo descarta: «In all forty copies the leaves of that gathering are folded from a single sheet, with none cut out and none pasted in». Encuadernar una hoja de sustitución era práctica corriente de la época, y por eso esta explicación le suena verosímil a quien sabe algo de libros antiguos; en estos ejemplares no hay nada cortado ni pegado.',
+        'Hace de la escena larga una hoja añadida más tarde, y la última línea lo descarta: «In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in». Encuadernar una hoja de sustitución era práctica corriente de la época, y por eso esta explicación le suena verosímil a quien sabe algo de libros antiguos; en estos ejemplares no hay nada cortado ni pegado.',
     },
     fuenteHecho:
-      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados.',
+      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define.',
   },
 ]

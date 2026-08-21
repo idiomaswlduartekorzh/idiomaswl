@@ -19,32 +19,70 @@ import type { SatItemMeta } from '../module-types'
  *   medir en su tramo fácil.
  *
  *   El precio de esa regla es que la clave se puede buscar por el objetivo, así que las
- *   cuatro opciones se diseñaron antes de decidir cuál lo cumplía (R8) y comparten molde:
- *   en q23 las cuatro son afirmaciones sobre lo que el silbo hace o exige, y en q24 las
- *   cuatro llevan cláusula causal o final («having received», «Because», «since», «So
- *   that»), de modo que ninguna es la única con forma de explicación (R5). En q24, además,
- *   dos opciones nombran la revocación de 1851 —la clave y su rival más cercana—, para que
- *   el objetivo no señale a una sola sin leer las notas.
+ *   cuatro opciones se diseñaron antes de decidir cuál lo cumplía (R8). La primera versión
+ *   del bloque cumplía eso y aun así **la acertaron 10 de 10 sin ver las notas**, igual que
+ *   su equivalente del módulo 1 (13 de 14). La causa está en **R12**: sin las notas se elige
+ *   la frase que suena más redonda —la que enlaza dos ideas con una causal, la que menciona
+ *   más elementos, la que tiene forma de conclusión—, y esa suele ser la clave porque
+ *   cumplir el objetivo empuja al redactor a escribirla más completa.
+ *
+ *   Los dos juegos de opciones se rehicieron con un **molde único**, el mismo para las
+ *   cuatro: `Because <hecho de las notas>, <consecuencia>`. Las cuatro empiezan por
+ *   «Because», las cuatro llevan cláusula causal, las cuatro gastan dos elementos de las
+ *   notas y las cuatro caben en la misma línea (7 caracteres de diferencia entre la más
+ *   larga y la más corta en los dos ítems, poco más de una palabra). Lo único que separa a
+ *   la clave es si su consecuencia contesta al objetivo del enunciado.
+ *
+ *   Dos fugas concretas que el molde solo no tapa, y que se taparon a mano:
+ *
+ *   - **q23**: el objetivo habla de un oyente que no entiende, así que si la clave fuera la
+ *     única con un oyente que falla, se señalaría sola. La A también termina en un oyente
+ *     que no saca nada —de un grito, no de un silbo—, y C y D terminan en un oyente que sí
+ *     lo saca: dos y dos.
+ *   - **q24**: el objetivo nombra la revocación de 1851, así que la clave no puede ser la
+ *     única que la nombre ni la única que la ponga en la oración principal. La B también la
+ *     nombra y también la lleva de sujeto —y explica lo que vino después, no lo que la
+ *     causó—; el concejo y su voto aparecen en las cuatro.
+ *
+ *   Se conserva lo que ya estaba bien: **las cuatro opciones siguen siendo verdaderas según
+ *   las notas** en los dos ítems. El defecto era de forma, no de verdad.
+ *
+ *   La nota 6 de q23 decía que una escuela enseña el habla silbada «tantas horas a la semana
+ *   como la lengua hablada». Es falso fuera del ítem —donde esto existe es asignatura
+ *   obligatoria de primaria, media hora larga a la semana— y un simulacro no puede enseñar
+ *   un dato falso ni dentro de un distractor. Ahora dice «required subject, half an hour a
+ *   week», que funciona igual como distractor irrelevante.
  *
  * - **transitions** (q25-q27). Los cuatro conectores pertenecen a **cuatro relaciones
- *   distintas** —ejemplo, consecuencia, contraste, concesión, adición—, nunca dos de la
- *   misma familia: dos sinónimos se cancelan y el ítem se resuelve por descarte sin leer
- *   (regla 2 del plan). El hueco precede siempre a una oración independiente completa, así
+ *   distintas** —ejemplo, consecuencia, contraste, simultaneidad, concesión, adición,
+ *   sustitución—, nunca dos de la misma familia: dos sinónimos se cancelan y el ítem se
+ *   resuelve por descarte sin leer (regla 2 del plan). q25 llevaba «In contrast» y
+ *   «Nevertheless», las dos adversativas: quien diagnostica «aquí no hay contraste» se
+ *   llevaba dos de un golpe y el ítem bajaba a tres opciones. «Nevertheless» pasó a
+ *   «Meanwhile», que es temporal y tiene su propio camino —el texto habla de la noche y de
+ *   la mañana siguiente—. El hueco precede siempre a una oración independiente completa, así
  *   que los cuatro caben sin romper la sintaxis y ninguno se poda por gramática.
  *
  * Puertas medidas sobre el bloque antes de entregarlo:
  *
- * - **7 longitud**: 114,5 · 128,3 · 100,2 · 83,0 · 125,3 palabras-SAT. Las cinco dentro de
+ * - **7 longitud**: 113,0 · 128,3 · 100,2 · 83,0 · 125,3 palabras-SAT. Las cinco dentro de
  *   25-150.
  * - **2 longitud de la clave**: la clave no es la opción más larga en ninguno de los cinco.
- * - **3 solape léxico**: en q23 la clave repite 11 palabras del texto contra 13, 9 y 9 de
- *   los distractores, y en q24 repite 13 contra 15, 11 y 11: en los dos queda estrictamente
- *   entre el máximo y el mínimo, así que ninguno cuenta para ninguna de las dos caras de la
- *   puerta. En los tres de transiciones el solape es 0 en las cuatro opciones. La clave de
- *   q24 llegó al 13 a propósito —decía «reversed the vote» y ahora «reversed its 1848 vote
- *   on local time»—: con la redacción anterior empataba en el mínimo y el ítem premiaba
- *   descartar lo que más se parece a las notas.
+ *   En q23 y q24 tampoco es la más corta: las cuatro miden lo mismo con un margen de siete
+ *   caracteres.
+ * - **3 solape léxico**: en q23 la clave repite 12 palabras del texto contra 13, 13 y 11 de
+ *   los distractores, y en q24 repite 15 contra 11, 15 y 16: en los dos queda estrictamente
+ *   por debajo del máximo y por encima del mínimo, así que ninguno cuenta para ninguna de
+ *   las dos caras de la puerta. En los tres de transiciones el solape es 0 en las cuatro
+ *   opciones. Las cifras se movieron al rehacer las opciones y se volvieron a medir; no se
+ *   heredan de la versión anterior.
  * - **12 variedad temática**: humanidades ×2, historia, ciencia y literatura, uno cada uno.
+ *
+ * Lo que este bloque **no** trae: q23, q24 y q25 cambiaron después de escribirse, así que
+ * por R2 vuelven enteros a la cola de auditoría —no se revisa «solo lo que cambió»— y la
+ * prueba a ciegas hay que repetirla sobre estas opciones. El módulo todavía no tiene acta en
+ * `docs/sat-auditorias/`, de modo que no hay ninguna huella firmada que estos cambios dejen
+ * caducada.
  */
 
 export const items: MCQQuestion[] = [
@@ -53,13 +91,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "While researching a topic, a student has taken the following notes:\n\n• Whistled speech carries an ordinary spoken language across a valley: the whistler whistles the words of a sentence.\n• It is not a code of its own. Whistlers reproduce the vowels and consonants of words they already speak.\n• Herders in several mountain regions arrived at the practice independently of one another.\n• A whistled phrase can be made out five kilometers away; a shout fades within a few hundred meters.\n• A listener who does not speak the underlying language hears whistling and understands none of it.\n• In one valley a school now teaches whistled speech for as many hours a week as the spoken language.",
+      "While researching a topic, a student has taken the following notes:\n\n• Whistled speech carries an ordinary spoken language across a valley: the whistler whistles the words of a sentence.\n• It is not a code of its own. Whistlers reproduce the vowels and consonants of words they already speak.\n• Herders in several mountain regions arrived at the practice independently of one another.\n• A whistled phrase can be made out five kilometers away; a shout fades within a few hundred meters.\n• A listener who does not speak the underlying language hears whistling and understands none of it.\n• In one valley a school teaches whistled speech as a required subject, half an hour a week.",
     text: 'The student wants to explain why some listeners cannot understand a whistled message. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
-      'Whistled speech reaches listeners a shout cannot reach: a whistled phrase can be made out five kilometers away, a shouted one within a few hundred meters.',
-      'Whistlers reproduce the vowels and consonants of ordinary words instead of using a code of their own, so a listener must already speak the language.',
-      'In one valley a school now devotes as many hours a week to whistled speech as it devotes to the spoken language the children grew up with.',
-      'Herders in several mountain regions arrived at whistled speech on their own, without borrowing the practice from the herders of any other range.',
+      'Because a shout fades within a few hundred meters while a whistled phrase carries five kilometers, a listener at the far side of a valley makes out nothing that is shouted.',
+      'Because whistlers reproduce the vowels and consonants of ordinary words instead of a code of their own, a listener who does not speak the language makes out nothing but whistling.',
+      'Because a school in one valley now teaches whistled speech as a required subject, a listener schooled there makes out whistled sentences after half an hour of lessons a week.',
+      'Because herders in several mountain regions arrived at whistled speech independently, a listener in one of those ranges makes out whistling that nobody brought there from outside.',
     ],
     answer: 1,
   },
@@ -71,10 +109,10 @@ export const items: MCQQuestion[] = [
       "While researching a topic, a student has taken the following notes:\n\n• Until the 1840s every town in the district set its clocks by local noon, so towns forty kilometers apart differed by several minutes.\n• The railway company printed one timetable for the whole line and kept the time of the district capital at every station.\n• Station clocks in six towns were fitted with a second minute hand so that local time and railway time could be read at once.\n• In 1848 the council of Brantwood voted to keep local time on the town's public clocks.\n• In 1851 the same council reversed the vote; its minutes record dozens of petitions from travelers who had reached the platform after their train had left.\n• The newspapers of the district stopped printing local time in 1855.",
     text: "The student wants to explain why the council of Brantwood reversed its 1848 vote. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     options: [
-      'In 1851 the council reversed its 1848 vote on local time, after dozens of petitions from travelers who had reached the platform with their train already gone.',
-      "Because the railway ran the whole line by the capital's time, the town's public clocks disagreed with the station's from 1848 until the vote was reversed.",
-      'Until the 1840s the towns of the district differed from one another by several minutes, since each of them read its clocks off its own local noon.',
-      'So that both local time and railway time could be read at once, the station clocks of six towns in the district were fitted with a second minute hand of their own.',
+      "Because dozens of travelers had reached the platform with their train already gone, in 1851 the council reversed the 1848 vote that kept local time on the town's clocks.",
+      "Because the district's newspapers went on printing local time until 1855, the reversal the council voted in 1851 changed the town's clocks four years before its papers did.",
+      "Because the railway kept the time of the district capital at every station, the local time the council voted for in 1848 disagreed with the time on the town's own platform.",
+      'Because the local time the council kept had to be read beside railway time, the station clocks of six towns in the district were fitted with a second minute hand of their own.',
     ],
     answer: 0,
   },
@@ -89,7 +127,7 @@ export const items: MCQQuestion[] = [
       'For instance,',
       'As a result,',
       'In contrast,',
-      'Nevertheless,',
+      'Meanwhile,',
     ],
     answer: 1,
   },
@@ -134,16 +172,16 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Cierta (nota 4) y contesta otra pregunta. Dice hasta dónde llega el sonido, no por qué quien lo recibe se queda sin entenderlo: según la nota 5, el que no habla la lengua de debajo no entiende nada aunque esté al lado del silbador. Es el camino de quien confunde oír con entender y busca en las notas el único obstáculo con forma de cifra.',
+        'Cierta (nota 4) y cambia el mensaje. Explica por qué no se entiende un grito al otro lado del valle, no por qué no se entiende un silbo, que es lo que pide el enunciado: el grito se apaga en unos cientos de metros y el silbo llega a cinco kilómetros. Es el camino de quien confunde oír con entender y busca el obstáculo en la distancia, el único dato de las notas con forma de cifra. Según la nota 5, el oyente que no habla la lengua tampoco entiende al silbador que tiene al lado.',
       B:
-        'Correcta: junta las dos notas que responden a la pregunta. Como el silbo no es un código aparte sino los vocales y consonantes de palabras corrientes (nota 2), entenderlo es entender la lengua; por eso el oyente que no la habla solo oye silbidos (nota 5). Es la única opción que dice qué le falta al que no entiende.',
+        'Correcta: junta las dos notas que responden a la pregunta. Como el silbo no es un código aparte sino los vocales y consonantes de palabras corrientes (nota 2), entenderlo es entender la lengua de debajo; por eso el oyente que no la habla solo oye silbidos (nota 5). De las cuatro es la única que nombra lo que le falta al que no entiende —la lengua— y no la distancia, la escuela ni el origen de la práctica.',
       C:
-        'Cierta (nota 6) y desviada al aula. Es lo que elige quien da por hecho que lo que no se entiende es lo que no se ha estudiado, y toma la escuela del valle por la condición de acceso. Las notas apuntan a lo contrario: debajo del silbo está la lengua que el oyente ya habla o no habla, no una asignatura que haya que cursar.',
+        'Cierta (nota 6) y desviada al aula. Es lo que elige quien da por hecho que lo que no se entiende es lo que no se ha estudiado, y toma la media hora semanal de la escuela del valle por la condición de acceso. Las notas apuntan a lo contrario: debajo del silbo está la lengua que el oyente ya habla o no habla, no una asignatura que haya que cursar.',
       D:
-        'Cierta (nota 3) y explica una incomprensión que las notas no registran. Es el camino de quien lee «independently» y concluye que cada montaña silba una cosa distinta, de manera que unos silbadores no se entenderían con otros. Las notas no comparan regiones entre sí: el único oyente que se queda fuera (nota 5) es el que no habla la lengua hablada.',
+        'Cierta (nota 3) y contesta por el origen. Que cada región llegara al silbo por su cuenta dice de dónde salió la práctica, no qué le pasa a quien la oye. Es el camino de quien lee «independently» y concluye que cada montaña silba una cosa distinta, de manera que unos silbadores no se entenderían con otros. Las notas no comparan regiones entre sí: el único oyente que se queda fuera (nota 5) es el que no habla la lengua hablada.',
     },
     fuenteHecho:
-      'Hecho libre de lingüística: el habla silbada reproduce la fonética de una lengua hablada, se ha desarrollado de forma independiente en varias zonas de montaña y alcanza varios kilómetros. Redacción original; sin nombrar ninguna lengua, valle ni comunidad reales.',
+      'Hecho libre de lingüística: el habla silbada reproduce la fonética de una lengua hablada, se ha desarrollado de forma independiente en varias zonas de montaña y alcanza varios kilómetros. Donde se enseña en la escuela lo hace como asignatura obligatoria de media hora semanal, y así lo dice la nota 6: la versión anterior decía «tantas horas a la semana como la lengua hablada», que es falso, y un dato falso no se sostiene ni dentro de un distractor. Redacción original; sin nombrar ninguna lengua, valle ni comunidad reales.',
   },
   {
     id: 'q24',
@@ -153,11 +191,11 @@ export const meta: SatItemMeta[] = [
     tema: 'historia',
     razones: {
       A:
-        'Correcta: la nota 5 pone la razón junto al cambio de voto —en 1851 el mismo concejo revoca el acuerdo y sus actas recogen decenas de peticiones de viajeros que llegaron al andén con el tren ya salido—. Es la única opción que enlaza la revocación con algo que la precede y que cambió entre 1848 y 1851. Las otras tres son verdaderas y explican otra cosa.',
+        'Correcta: la nota 5 pone la razón junto al cambio de voto —en 1851 el mismo concejo revoca el acuerdo y sus actas recogen decenas de peticiones de viajeros que llegaron al andén con el tren ya salido—. De las cuatro es la única cuya cláusula causal nombra algo que ocurrió entre los dos votos y que presionó al concejo; las otras tres arrancan igual, son igual de ciertas y explican otra cosa.',
       B:
-        'Cierta y con forma de causa, pero explica el desacuerdo, no el cambio. Que el ferrocarril llevara toda la línea con la hora de la capital (nota 2) es lo que hizo que los relojes del pueblo y los de la estación marcaran cosas distintas; eso era igual el día del primer voto y el día de la revocación, así que no puede ser lo que movió al concejo. Es el camino de quien contesta por qué había dos horas en vez de por qué se abandonó una.',
+        'Cierta (notas 5 y 6) y llega tarde. Los relojes del pueblo cambian en 1851 y los periódicos del distrito siguen imprimiendo la hora local hasta 1855: los cuatro años de diferencia son exactos, pero son posteriores a la votación. Es el camino de quien busca la nota más cercana en el tiempo a la revocación y toma por causa lo que vino detrás; lo que pasó en 1855 no pudo mover un voto de 1851.',
       C:
-        'Cierta (nota 1) y remonta demasiado atrás. Explica el origen del asunto entero —cada pueblo ponía sus relojes por su mediodía y de ahí los minutos de diferencia entre pueblos—, que es la pregunta general de la que este ítem no habla. Quien la elige contesta por qué hacía falta unificar la hora, no por qué este concejo cedió tres años después de haberse negado.',
+        'Cierta (notas 2 y 4) y explica el desacuerdo, no el cambio. Que el ferrocarril llevara toda la línea con la hora de la capital es lo que hizo que el reloj del pueblo y el del andén marcaran cosas distintas; eso era igual el día del primer voto y el día de la revocación, así que no puede ser lo que movió al concejo. Es el camino de quien contesta por qué había dos horas en vez de por qué se abandonó una.',
       D:
         'Cierta (nota 3) y confunde el arreglo con el motivo. La segunda aguja fue la manera de convivir con las dos horas, no la razón por la que el concejo dejó de defender una de ellas; un reloj que da las dos horas a la vez quita urgencia al cambio en lugar de provocarlo. Es lo que elige quien busca en las notas la solución técnica y la da por respuesta a una pregunta sobre una votación.',
     },
@@ -178,7 +216,7 @@ export const meta: SatItemMeta[] = [
       C:
         'Traslada al hueco la oposición con la que abre el texto —plantas que abren los poros de día y pierden agua— dos oraciones después de que el texto ya la haya resuelto. En el hueco no hay dos cosas enfrentadas: hay una sola planta, la del desierto, y lo que consigue gracias al horario invertido que se acaba de explicar.',
       D:
-        'Marca lo que sigue como algo que ocurre pese al mecanismo descrito, y para eso los poros cerrados tendrían que ser un obstáculo. El texto dice lo contrario: cerrarlos de día es justamente lo que permite trabajar sin perder agua. Es el error de quien asocia «poros cerrados» con «planta impedida» y necesita un «aun así» para lo que viene.',
+        'Lee el hueco como un segundo proceso que corre a la vez que el anterior, y el texto le da pie: el dióxido de carbono entra de noche y se gasta a la mañana siguiente, así que hay dos momentos en juego. Pero la oración del hueco no ocurre «mientras tanto»: es lo que el mecanismo consigue una vez completo, y el día de sol del que habla es el mismo en el que se gasta lo guardado. Es el camino de quien sigue el reloj del texto en vez de su argumento.',
     },
     fuenteHecho:
       'Hecho libre de fisiología vegetal: apertura estomática nocturna y fijación del CO2 hasta la mañana siguiente en plantas de zonas áridas. Sin especie, desierto ni estudio concretos.',
