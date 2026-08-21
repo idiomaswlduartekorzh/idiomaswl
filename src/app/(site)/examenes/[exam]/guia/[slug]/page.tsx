@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { EXAMS } from '@/data/exams';
 import { SAT_GUIDES, getSatGuide, resolveRelatedGuides } from '@/data/satGuides';
+import { SAT_MARCA } from '@/data/sat-marca';
 
 const BASE = 'https://www.idiomaswl.com';
 
@@ -194,6 +195,9 @@ export default async function SatGuidePage({ params }: { params: Promise<{ exam:
               ))}{' '}
               College Board rehace el calendario y las tarifas cada año escolar: esas dos cosas se
               consultan siempre en su sitio, nunca aquí.
+            </p>
+            <p style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.55, marginTop: '0.9rem', opacity: 0.85 }}>
+              {SAT_MARCA}
             </p>
           </div>
 
