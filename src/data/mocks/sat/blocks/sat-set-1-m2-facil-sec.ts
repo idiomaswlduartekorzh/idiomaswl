@@ -21,15 +21,74 @@ import type { SatItemMeta } from '../module-types'
  *    signo.** Nada del dibujo de la opción delata la clave: el par de comas «equilibrado»
  *    se reconoce solo, así que no se ofrecen pares; el signo que falta hay que ir a
  *    buscarlo al texto.
- * 3. **La opción sin signo nunca es la clave.** «Cuando dudes, no pongas coma» es la apuesta
- *    segura de quien no lee, y en los cuatro ítems de fronteras esa apuesta falla:
- *    q16 coma · q18 dos puntos · q20 punto y coma · q22 punto y coma.
+ * 3. **La opción sin signo es la clave en uno de los cuatro ítems de fronteras, y ese ítem es
+ *    q18.** Hasta la sexta vuelta la política era la contraria —«la opción sin signo nunca es la
+ *    clave»— y nació bien motivada: «cuando dudes, no pongas coma» es la apuesta que trae de casa
+ *    quien no lee, y si esa apuesta paga una vez, se juega en los cuatro ítems. Lo que pasó es lo
+ *    que describe **R14**: la defensa se aplicó uniformemente a las cuatro y se convirtió ella
+ *    misma en el patrón aprendible del que protegía.
  *
- *    Esto es una metarregla del bloque, y una metarregla se puede aprender: quien la deduzca
- *    puede jugar «la opción sin signo nunca» y ganar un cuarto de probabilidad. Se midió en la
- *    cuarta vuelta metiendo en el panel a ciegas un solucionador con instrucción expresa de
- *    buscar esa clase de pista, y sacó **4 de 27**, por debajo del azar. No se materializa, y
- *    el motivo es que la metarregla descarta una opción pero no elige entre las otras tres.
+ *    **Lo que costaba, medido.** Con el bloque entero por debajo del azar (17,4 % a ciegas, techo
+ *    35 %), q18 seguía cayendo **7 de 10 sin ver el texto**, dos vueltas seguidas y siendo el
+ *    único ítem del módulo que aún filtraba. La primera vez su clave era la coma y lo tumbaba «en
+ *    la duda, coma» (punto 6). Se movió la regla para que la clave fueran los dos puntos y la
+ *    pista se mudó de signo con ella: con «sin signo nunca» descartando una opción y «la coma es
+ *    la trampa» descartando otra, quedaba un 50/50 entre `;` y `:`; y de esos dos, los dos puntos
+ *    son el **signo marcado** del juego —el que parece la respuesta de una pregunta de puntuación,
+ *    exactamente como el perfecto en q19—. Los dos caminos apuntaban al mismo sitio, y el sitio
+ *    era «cualquier opción menos la que no lleva signo». Dos intentos en el mismo ítem no son un
+ *    defecto de redacción: son el suelo que impone la política.
+ *
+ *    **Por eso q18 se rehízo con una regla que exige la ausencia de signo**, no con una en la que
+ *    el signo simplemente no haga falta: sujeto y verbo no se separan con nada. Ahí poner coma,
+ *    punto y coma o dos puntos es un error de norma, no una opción menos elegante, así que la
+ *    clave se defiende con el texto delante igual que las otras tres.
+ *
+ *    **Reparto de signos-clave de los cuatro ítems de fronteras**, comprobado sobre el array:
+ *
+ *      q16 → coma · q18 → sin signo · q20 → punto y coma · q22 → punto y coma (delante de «and»)
+ *
+ *    Ninguna forma es clave más de dos veces. De las cuatro apuestas de un solo signo —jugar
+ *    siempre la misma forma sin leer— «siempre coma» saca 1 de 4, «siempre sin signo» 1 de 4 y
+ *    «siempre dos puntos» **0 de 4**; la única que pasa del azar es «siempre punto y coma», 2 de
+ *    4, y es la que el punto 6 justifica y acota: los dos ítems que la pagan ofrecen ese signo
+ *    con dibujos distintos —`;` a secas en q20 y `; and` en q22—, de modo que no es una sola
+ *    apuesta formulable sobre los cuatro a la vez.
+ *
+ *    **Lo que este reparto no arregla, escrito para que nadie lo descubra creyendo que se
+ *    ocultó.** Con cuatro ítems, cuatro formas de opción y dos ítems obligados al punto y coma
+ *    (punto 6), alguna forma tiene que quedarse sin ser clave nunca. Antes era la ausencia de
+ *    signo; ahora son los dos puntos. Para un solucionador que juegue **dos** eliminaciones
+ *    globales sobre los cuatro ítems, el peor caso no baja: cambia de dueño.
+ *
+ *      «sin signo nunca» + «la coma es la trampa» → antes 1,5 de 4 (37,5 %) · ahora 1,0 (25 %)
+ *      «dos puntos nunca» + «la coma es la trampa» → antes 1,0 de 4 (25 %) · ahora 1,5 (37,5 %)
+ *
+ *    El cambio se hace igual, y no por aritmética sino por qué heurística existe de verdad:
+ *
+ *    a) «Menos signos es más seguro» no hay que aprenderla aquí: se trae de fuera, y la trae
+ *       también el estudiante real. «No elijas nunca los dos puntos» hay que inducirla de estos
+ *       cuatro ítems y **contra** el prejuicio contrario, que es que el signo raro es el que se
+ *       está examinando. Una sale gratis; la otra cuesta cuatro observaciones y va a
+ *       contracorriente.
+ *    b) La heurística contraria no es hipotética: es la que está disparando ahora. Quien no lee
+ *       q18 elige los dos puntos. Con los dos puntos de distractor, ese solucionador pasa de
+ *       acertar 1 de los 4 ítems de fronteras a acertar 0.
+ *    c) «Los dos puntos nunca son la clave» es falsa un módulo antes: en el bloque SEC del módulo
+ *       1 la clave de q20 es «the same recipe:». El estudiante que hace los dos módulos —que es la
+ *       entrega real— ve pagar los dos puntos. La ausencia de signo, en cambio, no era clave en
+ *       ninguno de los dos bloques, y en el módulo 1 lo más cerca que estuvo fue el q22, donde la
+ *       clave es la que **no** pone comas alrededor del modificador esencial.
+ *
+ *    La metarregla que quede sigue siendo eso, una metarregla, y descarta una opción sin elegir
+ *    entre las otras tres. Se midió en la cuarta vuelta metiendo en el panel a ciegas un
+ *    solucionador con instrucción expresa de buscar esa clase de pista: sacó **4 de 27**, por
+ *    debajo del azar.
+ *
+ *    **No repongas la política vieja «por coherencia».** Volver a poner un signo en la clave de
+ *    q18 devuelve al bloque el patrón uniforme y con él la fuga de 7 de 10. Lo que hay que
+ *    vigilar al editar no es que las cuatro claves lleven signo, sino que ninguna forma de opción
+ *    sea clave más de dos veces.
  * 4. **Ni un solo periodo o punto y coma se ofrece junto a otro signo que también valdría.**
  *    Con dos oraciones independientes, punto y punto y coma son las dos correctas: por eso
  *    en q20 no aparece el punto. Es la puerta 4 (clave única) aplicada al reverso.
@@ -93,17 +152,21 @@ import type { SatItemMeta } from '../module-types'
  *    6 de 10 a ciegas por eso, y no por la forma de sus opciones, que ya era correcta.
  *
  *    q18 se rehízo entero para que el signo correcto **no** fuera la coma: la relativa
- *    explicativa con «which» se sustituyó por una oración completa que anuncia un motivo y un
- *    sintagma nominal que lo dice, de modo que la clave son ahora los dos puntos. El arreglo no
- *    fue mover la letra —la clave sigue siendo D, como manda el plan—, fue mover la regla.
+ *    explicativa con «which» se sustituyó por una oración que anunciaba un motivo y un sintagma
+ *    nominal que lo decía, de modo que la clave pasaron a ser los dos puntos. El arreglo no fue
+ *    mover la letra —la clave sigue siendo D, como manda el plan—, fue mover la regla. **Esa
+ *    versión duró dos mediciones**: los dos puntos resultaron ser la otra mitad del mismo
+ *    problema y q18 se volvió a rehacer, ahora con la ausencia de signo como clave. El porqué,
+ *    la aritmética y el reparto vigente están en el punto 3.
  *
- *    Reparto de signos-clave resultante: **q16 coma · q18 dos puntos · q20 punto y coma ·
- *    q22 punto y coma**. La coma y los dos puntos aparecen una sola vez. El punto y coma sale
- *    dos veces y no se puede evitar sin romper otra cosa: la regla de q20 (adverbio conjuntivo
- *    entre dos independientes) y la de q22 (serie con comas internas) exigen las dos ese signo,
- *    y ninguna de las dos admite otro. Lo que las separa es la forma de la opción —q20 es punto
- *    y coma a secas, q22 es punto y coma delante de «and»—, así que «siempre punto y coma» no
- *    es una apuesta que un solucionador a ciegas pueda formular sobre las cuatro a la vez.
+ *    Lo que de aquel diagnóstico sigue en pie: el punto y coma sale **dos veces** entre las
+ *    cuatro claves y no se puede evitar sin romper otra cosa, porque la regla de q20 (adverbio
+ *    conjuntivo entre dos independientes) y la de q22 (serie con comas internas) exigen las dos
+ *    ese signo y ninguna admite otro. Lo que las separa es la forma de la opción —q20 es punto y
+ *    coma a secas, q22 es punto y coma delante de «and»—, así que «siempre punto y coma» no es
+ *    una apuesta que un solucionador a ciegas pueda formular sobre las cuatro a la vez. Es esa
+ *    doble obligación la que fuerza que alguna de las cuatro formas se quede sin ser clave
+ *    nunca, y la que convierte la elección de **cuál** en la única decisión disponible.
  *
  * 7. **Pasada de equidad y veracidad (no de calidad de ítem).** Con el bloque ya cerrado a
  *    ciegas —15,9 % frente a un azar del 25 %— se revisó otra cosa: si un estudiante puede
@@ -141,18 +204,20 @@ import type { SatItemMeta } from '../module-types'
  * signos, dos puntos ante enumeración, modificador inicial y pluscuamperfecto continuo):
  *
  *   q16 coma tras subordinada antepuesta · q17 concordancia pronombre-antecedente ·
- *   q18 dos puntos ante el elemento anunciado por una oración completa ·
+ *   q18 ausencia de signo entre el sujeto y su verbo ·
  *   q19 pasado simple fijado por un complemento de tiempo definido, con la continua vedada
  *   por tratarse de un verbo de estado ·
  *   q20 punto y coma ante adverbio conjuntivo · q21 concordancia con frase interpuesta ·
  *   q22 punto y coma como separador de serie con comas internas
  *
- * Ninguna de las siete se repite dentro del bloque. q18 comparte **signo** con el q20 del
- * módulo 1 («the same recipe:»), pero no la discriminación: allí los dos puntos se deciden
- * frente al punto y coma por lo que viene detrás —tres sintagmas que no son oración—, y aquí
- * se deciden frente a la coma por lo que viene delante —un adjetivo, que no puede hospedar
- * ninguna aposición—. Es la única coincidencia de signo entre los dos bloques y está medida:
- * un estudiante que resolviera el q20 del módulo 1 de memoria no acertaría este.
+ * Ninguna de las siete se repite dentro del bloque, y desde que q18 dejó los dos puntos **no
+ * queda ninguna coincidencia de signo-clave con el bloque SEC del módulo 1** (allí la clave de
+ * q20 es «the same recipe:»). Lo que q18 sí toca de refilón es el q18 del módulo 1, el de la
+ * nutria, y lo toca al revés: allí la clave es una **coma justo delante del verbo**, porque el
+ * sujeto venía interrumpido por un inciso que había que cerrar —«The sea otter, an animal lighter
+ * than most adult humans, eats…»—; aquí la clave es **no poner nada delante del verbo**, porque
+ * no hay ningún inciso abierto. La discriminación entre los dos es una sola pregunta —¿se abrió
+ * una coma antes?— y un estudiante que resolviera aquel de memoria fallaría este.
  *
  * Condiciones de clave única que hay que vigilar al editar:
  *
@@ -164,13 +229,18 @@ import type { SatItemMeta } from '../module-types'
  *   en plural, y no puede aparecer cerca ningún singular al que se le puedan atribuir raíces.
  *   El «its own small store of food» de más arriba cuelga de «Each seed» y por eso es legal:
  *   si se pluraliza esa frase, el ítem pierde el contraste que lo sostiene.
- * - q18: tres condiciones, y las tres protegen la misma cosa —que la coma siga siendo falsa—.
- *   Una: **a la derecha del hueco no puede haber una oración independiente**; con sujeto y
- *   verbo propios, el punto y coma sería tan correcto como los dos puntos, exactamente como el
- *   punto lo sería en q20. Dos: **el hueco tiene que ir detrás de un adjetivo**, «simple», y
- *   nunca detrás de un sustantivo; en cuanto haya un sustantivo contiguo, el sintagma de la
- *   derecha se puede leer como aposición suya y la coma queda salvada. Tres: ese sintagma tiene
- *   que abrir con determinante —«the order…»—, que es lo que hace ilegible la opción sin signo.
+ * - q18: el hueco tiene que quedar **entre un sujeto y su verbo, y nada más**. Una: a la
+ *   izquierda no puede cerrarse una oración independiente —a la izquierda hay un sintagma
+ *   nominal, «The order in which the eleven pictures were arranged»—; si alguien la convierte en
+ *   oración, los dos puntos y el punto y coma pasan a ser defendibles y aparecen tres claves.
+ *   Dos: a la derecha tiene que empezar el verbo de ese sujeto, «tells»; con un sintagma nominal
+ *   a la derecha vuelve la aposición y con ella la coma, y con una oración independiente vuelve
+ *   el punto y coma. Tres: **ninguna coma abierta antes del hueco**; si el sujeto se interrumpe
+ *   con un inciso, la coma que lo cierra se vuelve obligatoria y la clave se invierte. Cuatro,
+ *   que no es de clave única sino de que el ítem tenga cuatro opciones vivas: el sujeto lleva
+ *   dentro un verbo finito, «were arranged», y es lo único que hace pensable el punto y coma.
+ *   Y una condición de conjunto, en el punto 3: **este es el ítem que sostiene la única clave sin
+ *   signo del bloque**, así que no se le puede devolver un signo sin dárselo a otro.
  * - q19: lo que fija el pasado simple son **dos** condiciones a la vez, y las dos viven en la
  *   oración del hueco. Una: el complemento de tiempo definido «In 1846», que hace ilegal el
  *   presente; si se sustituye por un adverbio vago —«once», «early on»— o desaparece, el
@@ -232,14 +302,14 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A gallery can make an argument without writing one down. In one city museum the same eleven pictures have hung in the same order since 1978. Five of them were painted before the valley below was flooded for a reservoir, a photograph of the dam under construction hangs at the center, and the last five were painted after. Visitors who walk the room from left to right reach the final canvas expecting a ruin and find a lake instead. Three curators have come and gone without moving a frame, and in nearly fifty years no one has hung a label longer than a title. The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang.",
+      "A gallery can make an argument without writing one down. In one city museum the same eleven pictures have hung in the same order since 1978. Five of them were painted before the valley below was flooded for a reservoir, a photograph of the dam under construction hangs at the center, and the last five were painted after. Visitors who walk the room from left to right reach the final canvas expecting a ruin and find a lake instead. Three curators have come and gone without moving a frame, and in nearly fifty years no one has hung a label longer than a title. The order in which the eleven pictures were arranged ______ tells a visitor what no label in the room is long enough to say.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "simple,",
-      "simple;",
-      "simple",
-      "simple:",
+      "arranged,",
+      "arranged:",
+      "arranged;",
+      "arranged",
     ],
     answer: 3,
   },
@@ -359,19 +429,19 @@ export const meta: SatItemMeta[] = [
     dificultad: 1,
     tema: 'humanidades',
     regla:
-      "Dos puntos que introducen el elemento anunciado por una oración completa: a la izquierda del hueco hay una oración con sujeto y verbo —«The reason the room can argue without a word of explanation is simple»— que anuncia algo sin decirlo, y a la derecha el sintagma nominal que lo dice. Los dos puntos son el único signo que la norma escrita estadounidense autoriza en esa unión.\n\nCondición de clave única, escrita aquí porque es lo primero que se rompe al editar la frase: (1) **a la derecha no puede haber una oración independiente**, porque entonces el punto y coma sería tan correcto como los dos puntos y el ítem tendría dos claves —es la misma precaución que en q20, donde no se ofrece el punto—; (2) **a la izquierda el hueco tiene que ir detrás de un adjetivo, nunca de un sustantivo**: una coma puede introducir una aposición solo si hay un sustantivo contiguo al que renombrar, y en cuanto lo haya («the reason is one thing, the order in which…») la coma pasa a ser defendible y vuelven las dos claves; (3) el sintagma de la derecha tiene que empezar por determinante —«the order…»—, que es lo que hace ilegible la opción sin signo, porque un adjetivo no puede quedar delante de un determinante. Con esas tres condiciones no hay excepción de manual que salve a ninguna de las otras tres opciones.",
+      "Entre el sujeto y su verbo no va ningún signo. A la izquierda del hueco está el sujeto de la oración, el sintagma nominal «The order in which the eleven pictures were arranged», y a la derecha su verbo, «tells». La norma escrita estadounidense no autoriza ahí ni coma, ni punto y coma, ni dos puntos: no es que el signo no haga falta, es que **cualquiera de los tres es un error**, y por eso la respuesta correcta es la opción que no lleva ninguno. Los dos signos fuertes fallan además por una segunda vía —los dos puntos piden oración completa a su izquierda y el punto y coma a los dos lados, y aquí no hay ninguna—.\n\nEste es el único ítem de fronteras del bloque cuya clave es la ausencia de signo, y existe para eso: ver punto 3 de la cabecera antes de tocarlo.\n\nCondición de clave única, escrita aquí porque es lo primero que se rompe al editar la frase: (1) **a la izquierda del hueco no puede cerrarse una oración independiente**; en cuanto la haya, los dos puntos y el punto y coma pasan a ser defendibles y el ítem tiene tres claves; (2) **a la derecha tiene que empezar el verbo del sujeto, y nada más**: con un sintagma nominal a la derecha vuelve la aposición y con ella la coma, y con una oración independiente vuelve el punto y coma; (3) **el hueco no puede llevar delante ninguna coma abierta**: si el sujeto se interrumpe con un inciso —«The order, arranged in 1978, ______ tells…»—, la coma que cierra el par se vuelve obligatoria y la clave se invierte, que es justamente el ítem de la nutria del bloque SEC del módulo 1; (4) **el sujeto tiene que llevar dentro un verbo finito** —«were arranged», dentro de la relativa—, porque es lo que sostiene a los dos distractores fuertes: sin él nadie pondría un punto y coma ahí y el ítem se quedaría de hecho en tres opciones.",
     razones: {
       A:
-        "La coma es el signo más frecuente del inglés escrito y por eso es la apuesta de quien no lee la frase, pero aquí nada la autoriza: una coma introduce una aposición solo cuando tiene delante un sustantivo al que renombrar, y lo que tiene delante es el adjetivo «simple». «…is simple, the order in which the eleven pictures hang» deja el sintagma colgado, sin función en la oración y sin nada a lo que referirse.",
+        "Coma entre el sujeto y su verbo. Es la apuesta de quien puntúa por respiración: el sujeto es largo, al leerlo en voz alta se hace una pausa donde termina, y esa pausa se escribe. El inglés escrito no la admite —el sujeto entrega el verbo sin signo por larga que sea la distancia—, y aquí la coma además parte en dos la única oración del párrafo que dice qué hace el orden de los cuadros.",
       B:
-        "El punto y coma exige oración independiente a cada lado, y a su derecha solo hay un sintagma nominal, «the order in which the eleven pictures hang», que no tiene verbo propio y no se sostiene solo. Es el error de quien reserva el punto y coma para «las pausas importantes» y elige por el peso de lo que anuncia, no por lo que hay a cada lado del signo.",
+        "Los dos puntos son el signo marcado del juego, el que parece la respuesta de una pregunta de puntuación, y por eso es la elección de quien decide sin leer la frase. Lo que los tumba es lo que tienen a la izquierda: exigen una oración completa, y ahí solo hay un sintagma nominal. Es también el error de quien oye en la frase un anuncio —«el orden de los cuadros: esto es lo que hace»— y coloca los dos puntos por el tono, no por la unidad que los precede.",
       C:
-        "Sin ningún signo, «is simple the order in which the eleven pictures hang» no llega a leerse: un adjetivo no puede quedar delante de un determinante, así que «simple» y «the order» no forman nada, ni siquiera algo discutible. Es la apuesta segura de quien no ha leído la frase —en la duda, ningún signo— y aquí no produce una oración peor, produce una oración imposible.",
+        "El punto y coma exige oración independiente a los dos lados y aquí no la tiene en ninguno: a su izquierda un sintagma nominal y a su derecha un predicado sin sujeto propio, «tells a visitor what no label in the room is long enough to say». Es el error de quien toma «were arranged» por el verbo de la oración —es el de la relativa, «in which the eleven pictures were arranged»— y da por cerrada una oración que todavía no ha empezado.",
       D:
-        "Correcta: a la izquierda hay una oración completa que anuncia un motivo sin decirlo todavía y a la derecha el sintagma nominal que lo dice, y los dos puntos son el signo que la norma escrita estadounidense destina a esa unión. Es además el único de los cuatro que la admite: el punto y coma pediría oración a los dos lados, la coma pediría un sustantivo al que renombrar y la ausencia de signo no deja leer la frase.",
+        "Correcta: lo que hay a cada lado del hueco es un sujeto y su verbo, y entre un sujeto y su verbo la norma escrita estadounidense no pone nada. La ausencia de signo no es aquí la opción prudente ni la menos mala: es la única forma correcta de la frase, y las otras tres son errores de puntuación, no versiones peores de la misma oración.",
     },
     fuenteHecho:
-      "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. La cuenta desde 1978 se escribe **«in nearly fifty years» y no una cifra exacta**: «forty-eight years» era correcto solo durante 2026 y pasaba a ser falso en enero de 2027, y un banco de ítems no se revisa cada enero. Toda cifra del examen que se mida contra «hoy» tiene que estar redondeada o acotada.",
+      "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. La cuenta desde 1978 se escribe **«in nearly fifty years» y no una cifra exacta**: «forty-eight years» era correcto solo durante 2026 y pasaba a ser falso en enero de 2027, y un banco de ítems no se revisa cada enero. Toda cifra del examen que se mida contra «hoy» tiene que estar redondeada o acotada.\n\nEl pasaje no ha cambiado; sí la oración del hueco, que es la última. Decía «The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang» y examinaba los dos puntos; dice ahora «The order in which the eleven pictures were arranged ______ tells a visitor what no label in the room is long enough to say» y examina que sujeto y verbo no se separan. El motivo del cambio de regla no es de contenido —la sala sigue argumentando por su orden de colgado— sino de conjunto, y está en el punto 3 de la cabecera.",
   },
   {
     id: 'q19',

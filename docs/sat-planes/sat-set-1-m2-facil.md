@@ -38,31 +38,46 @@ Contrastado el 20 ago 2026 con un examen oficial de práctica de College Board. 
 |---|---|---|---|---|---|---|
 | 1 | `q01` | CS | `words-in-context` | ciencia | 1 | **B** |
 | 2 | `q02` | CS | `words-in-context` | literatura | 1 | **C** |
-| 3 | `q03` | CS | `words-in-context` | humanidades | 2 | **C** |
+| 3 | `q03` | CS | `words-in-context` | humanidades | 2 | **D** |
 | 4 | `q04` | CS | `words-in-context` | historia | 2 | **A** |
 | 5 | `q05` | CS | `text-structure-purpose` | ciencia | 1 | **B** |
 | 6 | `q06` | CS | `text-structure-purpose` | literatura | 1 | **C** |
 | 7 | `q07` | CS | `text-structure-purpose` | humanidades | 2 | **A** |
-| 8 | `q08` | CS | `cross-text-connections` | humanidades | 3 | **A** |
+| 8 | `q08` | CS | `cross-text-connections` | humanidades | 3 | **D** |
 | 9 | `q09` | II | `central-ideas-details` | ciencia | 1 | **B** |
-| 10 | `q10` | II | `central-ideas-details` | literatura | 1 | **D** |
+| 10 | `q10` | II | `central-ideas-details` | literatura | 1 | **B** |
 | 11 | `q11` | II | `command-of-evidence-textual` | humanidades | 1 | **D** |
 | 12 | `q12` | II | `command-of-evidence-textual` | historia | 2 | **C** |
 | 13 | `q13` | II | `command-of-evidence-quantitative` | ciencia | 2 | **A** |
 | 14 | `q14` | II | `inferences` | literatura | 1 | **A** |
 | 15 | `q15` | II | `inferences` | humanidades | 2 | **C** |
-| 16 | `q16` | SEC | `boundaries` | historia | 1 | **D** |
+| 16 | `q16` | SEC | `boundaries` | historia | 1 | **A** |
 | 17 | `q17` | SEC | `form-structure-sense` | ciencia | 1 | **C** |
-| 18 | `q18` | SEC | `boundaries` | humanidades | 1 | **D** |
+| 18 | `q18` | SEC | `boundaries` | humanidades | 1 | **A** |
 | 19 | `q19` | SEC | `form-structure-sense` | humanidades | 2 | **B** |
-| 20 | `q20` | SEC | `boundaries` | historia | 2 | **D** |
+| 20 | `q20` | SEC | `boundaries` | historia | 2 | **C** |
 | 21 | `q21` | SEC | `form-structure-sense` | ciencia | 2 | **D** |
 | 22 | `q22` | SEC | `boundaries` | humanidades | 3 | **B** |
-| 23 | `q23` | EOI | `rhetorical-synthesis` | humanidades | 1 | **B** |
+| 23 | `q23` | EOI | `rhetorical-synthesis` | humanidades | 1 | **D** |
 | 24 | `q24` | EOI | `rhetorical-synthesis` | historia | 2 | **A** |
-| 25 | `q25` | EOI | `transitions` | ciencia | 1 | **B** |
+| 25 | `q25` | EOI | `transitions` | ciencia | 1 | **D** |
 | 26 | `q26` | EOI | `transitions` | literatura | 2 | **C** |
-| 27 | `q27` | EOI | `transitions` | humanidades | 3 | **A** |
+| 27 | `q27` | EOI | `transitions` | humanidades | 3 | **B** |
+
+> **Las claves de esta tabla se rebarajaron el 21 ago 2026, y hay que copiarlas del código
+> hacia aquí, nunca al revés.** El reparto original estaba bien en el módulo entero
+> —A7 B7 C7 D6— y **apilado dentro de cada bloque**: convenciones tenía la D de clave en
+> cuatro de siete y la A en ninguna, y lectura no tenía ni una D en ocho ítems. Marcando
+> siempre D se sacaba un 57 % del bloque de gramática sin leer nada, y quien conociera solo
+> ese sesgo sacaba un 35,8 % del examen entero.
+>
+> Lo que enseñó el arreglo: **el reparto se recalcula de una vez sobre los 27, nunca bloque
+> a bloque.** Al equilibrar lectura por su cuenta, la D del módulo saltó de 6 a 9 y quedó a
+> un ítem de romper el límite por el otro extremo. Cambiar una clave es reordenar las
+> opciones de su ítem —y sus razones, que viajan con la opción—, no reescribir nada.
+>
+> El guardián ya cuenta por dominio desde `df7bac77`: ninguna letra puede faltar en un
+> bloque de cuatro ítems o más, ni pasar del 40 %.
 
 ## Reparto de claves
 
