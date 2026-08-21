@@ -48,6 +48,19 @@ import type { SatItemMeta } from '../module-types'
  *
  *      q16 → coma · q18 → sin signo · q20 → punto y coma · q22 → punto y coma (delante de «and»)
  *
+ *    Y **en qué letra vive cada uno**, porque el reparto de letras se decidió a nivel de módulo y
+ *    llegó aquí como permutación: q16 → A · q18 → A · q20 → C · q22 → B. Las letras del bloque
+ *    entero son `A C A B C D B`. Signo y letra son independientes a propósito: la clave sin signo
+ *    y la clave con coma comparten letra (las dos en A), y las dos claves de punto y coma están
+ *    en letras distintas (C y B), de modo que ninguna apuesta de letra reproduce una apuesta de
+ *    signo.
+ *
+ *    **Residuo conocido de q18, que ninguna permutación arregla**: su clave es la opción sin
+ *    signo y por eso es un carácter más corta que las otras tres, esté en la letra que esté. No
+ *    es una pista de longitud creada al reordenar —la diferencia es la regla misma— y es
+ *    inseparable de tener una clave sin signo, que es lo que el punto 3 exige. Cuente como
+ *    aceptado, no como pendiente.
+ *
  *    Ninguna forma es clave más de dos veces. De las cuatro apuestas de un solo signo —jugar
  *    siempre la misma forma sin leer— «siempre coma» saca 1 de 4, «siempre sin signo» 1 de 4 y
  *    «siempre dos puntos» **0 de 4**; la única que pasa del azar es «siempre punto y coma», 2 de
@@ -154,7 +167,9 @@ import type { SatItemMeta } from '../module-types'
  *    q18 se rehízo entero para que el signo correcto **no** fuera la coma: la relativa
  *    explicativa con «which» se sustituyó por una oración que anunciaba un motivo y un sintagma
  *    nominal que lo decía, de modo que la clave pasaron a ser los dos puntos. El arreglo no fue
- *    mover la letra —la clave sigue siendo D, como manda el plan—, fue mover la regla. **Esa
+ *    mover la letra —entonces el plan fijaba **D** para q18 y la clave se quedó en D—, fue mover
+ *    la regla. La letra sí se movió después, y por otro motivo: el plan vigente fija **A** y la
+ *    permutación de la última pasada la puso ahí sin tocar ni una palabra de las opciones. **Esa
  *    versión duró dos mediciones**: los dos puntos resultaron ser la otra mitad del mismo
  *    problema y q18 se volvió a rehacer, ahora con la ausencia de signo como clave. El porqué,
  *    la aritmética y el reparto vigente están en el punto 3.
@@ -274,12 +289,12 @@ export const items: MCQQuestion[] = [
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "one:",
+      "one,",
       "one;",
       "one",
-      "one,",
+      "one:",
     ],
-    answer: 3,
+    answer: 0,
   },
   {
     id: 'q17',
@@ -306,12 +321,12 @@ export const items: MCQQuestion[] = [
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "arranged,",
+      "arranged",
       "arranged:",
       "arranged;",
-      "arranged",
+      "arranged,",
     ],
-    answer: 3,
+    answer: 0,
   },
   {
     id: 'q19',
@@ -340,10 +355,10 @@ export const items: MCQQuestion[] = [
     options: [
       "messages,",
       "messages",
-      "messages:",
       "messages;",
+      "messages:",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     id: 'q21',
@@ -390,13 +405,13 @@ export const meta: SatItemMeta[] = [
       "Coma que cierra una subordinada antepuesta: cuando la oración abre con una cláusula subordinada («Because…»), una coma la separa de la principal. Los signos que exigen oración completa a su izquierda —punto y coma y dos puntos— no pueden aparecer ahí, y suprimir la marca deja pegadas dos cláusulas.",
     razones: {
       A:
-        "Los dos puntos exigen a su izquierda una oración completa, y a la izquierda del hueco solo hay «Because a clerk earned more from a long entry than from a short one», que es una subordinada. Es el error de quien lee lo que sigue como una explicación —y lo es— y da por hecho que eso basta para poner dos puntos, sin comprobar qué clase de unidad los precede.",
+        "Correcta: la oración abre con una cláusula subordinada introducida por «Because», y la norma pide una coma entre esa subordinada antepuesta y la principal que la sigue. La coma marca además dónde termina lo que explica y dónde empieza el sujeto de la oración, «the same shipment».",
       B:
         "El punto y coma pide oración independiente a los dos lados y a su izquierda solo encuentra la subordinada que abre con «Because». Es el error de quien usa el punto y coma como una coma reforzada cuando la primera parte del período le resulta larga.",
       C:
         "Deja la subordinada antepuesta pegada a la principal: «…than from a short one the same shipment often appears spread over three lines» obliga a leer «one» y «the same shipment» seguidos y sin frontera, y el lector empieza la principal dos o tres palabras después de donde empieza de verdad. Es el error de quien puntúa solo donde el sentido se le rompe.",
       D:
-        "Correcta: la oración abre con una cláusula subordinada introducida por «Because», y la norma pide una coma entre esa subordinada antepuesta y la principal que la sigue. La coma marca además dónde termina lo que explica y dónde empieza el sujeto de la oración, «the same shipment».",
+        "Los dos puntos exigen a su izquierda una oración completa, y a la izquierda del hueco solo hay «Because a clerk earned more from a long entry than from a short one», que es una subordinada. Es el error de quien lee lo que sigue como una explicación —y lo es— y da por hecho que eso basta para poner dos puntos, sin comprobar qué clase de unidad los precede.",
     },
     fuenteHecho:
       "Historia administrativa, hecho libre: el pago a los escribientes por página y su efecto sobre la forma de los libros de cuentas es un lugar común de la crítica de fuentes. Las salinas, los dos siglos y el desglose en tres líneas son invención propia; no describen ningún archivo concreto.",
@@ -432,13 +447,13 @@ export const meta: SatItemMeta[] = [
       "Entre el sujeto y su verbo no va ningún signo. A la izquierda del hueco está el sujeto de la oración, el sintagma nominal «The order in which the eleven pictures were arranged», y a la derecha su verbo, «tells». La norma escrita estadounidense no autoriza ahí ni coma, ni punto y coma, ni dos puntos: no es que el signo no haga falta, es que **cualquiera de los tres es un error**, y por eso la respuesta correcta es la opción que no lleva ninguno. Los dos signos fuertes fallan además por una segunda vía —los dos puntos piden oración completa a su izquierda y el punto y coma a los dos lados, y aquí no hay ninguna—.\n\nEste es el único ítem de fronteras del bloque cuya clave es la ausencia de signo, y existe para eso: ver punto 3 de la cabecera antes de tocarlo.\n\nCondición de clave única, escrita aquí porque es lo primero que se rompe al editar la frase: (1) **a la izquierda del hueco no puede cerrarse una oración independiente**; en cuanto la haya, los dos puntos y el punto y coma pasan a ser defendibles y el ítem tiene tres claves; (2) **a la derecha tiene que empezar el verbo del sujeto, y nada más**: con un sintagma nominal a la derecha vuelve la aposición y con ella la coma, y con una oración independiente vuelve el punto y coma; (3) **el hueco no puede llevar delante ninguna coma abierta**: si el sujeto se interrumpe con un inciso —«The order, arranged in 1978, ______ tells…»—, la coma que cierra el par se vuelve obligatoria y la clave se invierte, que es justamente el ítem de la nutria del bloque SEC del módulo 1; (4) **el sujeto tiene que llevar dentro un verbo finito** —«were arranged», dentro de la relativa—, porque es lo que sostiene a los dos distractores fuertes: sin él nadie pondría un punto y coma ahí y el ítem se quedaría de hecho en tres opciones.",
     razones: {
       A:
-        "Coma entre el sujeto y su verbo. Es la apuesta de quien puntúa por respiración: el sujeto es largo, al leerlo en voz alta se hace una pausa donde termina, y esa pausa se escribe. El inglés escrito no la admite —el sujeto entrega el verbo sin signo por larga que sea la distancia—, y aquí la coma además parte en dos la única oración del párrafo que dice qué hace el orden de los cuadros.",
+        "Correcta: lo que hay a cada lado del hueco es un sujeto y su verbo, y entre un sujeto y su verbo la norma escrita estadounidense no pone nada. La ausencia de signo no es aquí la opción prudente ni la menos mala: es la única forma correcta de la frase, y las otras tres son errores de puntuación, no versiones peores de la misma oración.",
       B:
         "Los dos puntos son el signo marcado del juego, el que parece la respuesta de una pregunta de puntuación, y por eso es la elección de quien decide sin leer la frase. Lo que los tumba es lo que tienen a la izquierda: exigen una oración completa, y ahí solo hay un sintagma nominal. Es también el error de quien oye en la frase un anuncio —«el orden de los cuadros: esto es lo que hace»— y coloca los dos puntos por el tono, no por la unidad que los precede.",
       C:
         "El punto y coma exige oración independiente a los dos lados y aquí no la tiene en ninguno: a su izquierda un sintagma nominal y a su derecha un predicado sin sujeto propio, «tells a visitor what no label in the room is long enough to say». Es el error de quien toma «were arranged» por el verbo de la oración —es el de la relativa, «in which the eleven pictures were arranged»— y da por cerrada una oración que todavía no ha empezado.",
       D:
-        "Correcta: lo que hay a cada lado del hueco es un sujeto y su verbo, y entre un sujeto y su verbo la norma escrita estadounidense no pone nada. La ausencia de signo no es aquí la opción prudente ni la menos mala: es la única forma correcta de la frase, y las otras tres son errores de puntuación, no versiones peores de la misma oración.",
+        "Coma entre el sujeto y su verbo. Es la apuesta de quien puntúa por respiración: el sujeto es largo, al leerlo en voz alta se hace una pausa donde termina, y esa pausa se escribe. El inglés escrito no la admite —el sujeto entrega el verbo sin signo por larga que sea la distancia—, y aquí la coma además parte en dos la única oración del párrafo que dice qué hace el orden de los cuadros.",
     },
     fuenteHecho:
       "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. La cuenta desde 1978 se escribe **«in nearly fifty years» y no una cifra exacta**: «forty-eight years» era correcto solo durante 2026 y pasaba a ser falso en enero de 2027, y un banco de ítems no se revisa cada enero. Toda cifra del examen que se mida contra «hoy» tiene que estar redondeada o acotada.\n\nEl pasaje no ha cambiado; sí la oración del hueco, que es la última. Decía «The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang» y examinaba los dos puntos; dice ahora «The order in which the eleven pictures were arranged ______ tells a visitor what no label in the room is long enough to say» y examina que sujeto y verbo no se separan. El motivo del cambio de regla no es de contenido —la sala sigue argumentando por su orden de colgado— sino de conjunto, y está en el punto 3 de la cabecera.",
@@ -478,9 +493,9 @@ export const meta: SatItemMeta[] = [
       B:
         "Sin ningún signo quedan dos oraciones seguidas sin frontera, y el lector arrastra «however» al final de la primera —«fewer than two hundred official messages however»— hasta que el segundo verbo lo obliga a volver atrás. Es la apuesta segura de quien no lee la frase entera: en la duda, ningún signo.",
       C:
-        "Los dos puntos anuncian que lo que sigue desarrolla, ilustra o cumple lo que se acaba de decir, y aquí lo que sigue lo contradice: «however» avisa de un contraste, no de una ampliación. Es el error de quien ve dos hechos relacionados y coloca los dos puntos como si cualquier relación fuera explicación.",
-      D:
         "Correcta: el punto y coma separa dos oraciones independientes que no van unidas por conjunción coordinante, que es exactamente lo que hay aquí; «however» es un adverbio conjuntivo, señala el contraste y va seguido de su propia coma, pero no puede sostener él solo la unión.",
+      D:
+        "Los dos puntos anuncian que lo que sigue desarrolla, ilustra o cumple lo que se acaba de decir, y aquí lo que sigue lo contradice: «however» avisa de un contraste, no de una ampliación. Es el error de quien ve dos hechos relacionados y coloca los dos puntos como si cualquier relación fuera explicación.",
     },
     fuenteHecho:
       "Historia de las telecomunicaciones, hecho libre: las líneas telegráficas se justificaron ante la opinión pública como instrumento de gobierno y se sostuvieron con tráfico comercial. La línea, el paso de montaña, 1868, la guarnición y el mercado de la lana son invención propia. Distancias en kilómetros, como el resto del examen: ninguna medida imperial obliga al estudiante a convertir bajo cronómetro. Por la misma razón el plazo es «two weeks» y no «fortnight»: la palabra es británica, queda fuera del currículo escolar de inglés en Colombia y en casi toda Latinoamérica, y aquí **no es adorno** —es la mitad del contraste «una hora en vez de…» que hace inteligible la promesa con la que se vendió la línea—, de modo que quien no la conociera perdía la premisa del párrafo entero.",
