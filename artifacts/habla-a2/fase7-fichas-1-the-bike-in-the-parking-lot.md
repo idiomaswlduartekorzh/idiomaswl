@@ -7,7 +7,15 @@ Reescritura al formato de §11 del blueprint, contra el molde
 
 **Corregido el 20 ago 2026** con los 58 hallazgos de las cuatro auditorías de fase 7
 (`fase7-calcable-1.md`, `fase7-nivel-1.md`, `fase7-naturalidad-1.md`, `fase7-simulacion-1.md`).
-Lo que no se aplicó, y por qué, está al final del archivo.
+
+**Segunda pasada, 21 ago 2026**, con el acta del guardián (`fase7-veredicto.md`) y la auditoría de
+equidad sobre el inglés (`fase8-equidad-en.md`), y con las dos correcciones de §11 de ese mismo
+día: la regla de «notas, no frases» vale **solo para las tablas** —la prosa se escribe en oraciones
+cortas y completas— y el techo de prosa pasa de 350 a **450**, medido con
+`fase7-scripts/prosa-canonica.mjs`. Lo que cambió aquí: prosa legible en las cinco piezas de texto,
+la tabla de exponentes deja de leerse como la conversación (agrupada por función y en orden
+alfabético, con troncos en vez de oraciones enteras), el objetivo de A baja de 196 a 124 caracteres
+y dos glosas de vocabulario se simplifican. Lo que no se aplicó, y por qué, está al final del archivo.
 
 `rechazar` + `conceder-con-condicion` · poder **a>b** · arranca **B** · desenlace **acuerdo**
 · **6 min** · A 8 turnos · B 8 turnos (16 globales)
@@ -26,22 +34,22 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 > **Polite, two strangers.** A deal in a lobby — nobody raises their voice. In English there is one *you*: the distance is in the words you choose. **They start.** About 8 turns · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · Saturday, 10:15 a.m., lobby of your building in Cabecera. You put the bike on Marketplace three weeks ago. You carried it down four times.
+**Where you are** · You are in the lobby of your building in Cabecera, next to the bike. You put it on Marketplace three weeks ago, and you carried it down four floors four times.
 
-**You want** · The bike out of here **today**, and **all the money today** — not in parts. **Your lowest price: 390,000** with the new gears on · lower only against something else in the deal.
+**You want** · You have to get the bike out today, and you want all of the money today. Your lowest price is 390,000 with the new gears on.
 
 **You can't**
-1. Sell under **390,000** with the new gears on. A number, not a preference.
+1. Sell it for less than 390,000 with the new gears on.
 2. Leave the bike in the lobby after today. The doorman told you twice.
-3. Take the gears off here. Shop work · shop closed from 1:00.
+3. Take the gears off here. You need the shop for that, and you need it before one.
 
 **Only you know**
-- The new gear set — **right size for the road bike you want next**. With the old gears back on, your lowest price is **330,000** and you lose nothing. Say it in turn one and you give it away.
-- Why 390,000: the road bike costs 750,000 and you have 360,000.
-- **Lock** and **lights** — not in the ad, and nobody has talked about them.
-- Fourth buyer in three weeks · the other three, same speech about the tire.
+- The new gear set is exactly the size you need for the road bike you want next. With the old gears back on, your lowest price is 330,000 and you lose nothing. Say that in your first turn and you give the deal away.
+- You want 390,000 because the road bike costs 750,000 and you have 360,000.
+- You never put the lock or the lights in the ad, and nobody has asked about them.
+- You have met three buyers before this one, and all three gave you the same speech about the tire.
 
-**If you walk away with nothing** · You carry it up four floors again. You lose another Saturday with a fifth buyer and the same speech. And the road bike stays in the shop.
+**If you walk away with nothing** · You carry it up four floors again. You lose another Saturday to a fifth buyer with the same speech, and the road bike stays in the shop.
 
 ### Facts
 
@@ -62,37 +70,41 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 
 | word | what it is | what it's for here — **not a line to say** |
 |---|---|---|
-| gear set | the parts that make the bike easy or hard to pedal | the new one, on the bike · your card |
 | brake pads | the parts that press the wheel to stop it | part of the 95,000 you put in |
-| cable | the thin metal line that makes the gears move | your word, not theirs · block 4 |
-| worn out | used so much it doesn't work well | the rear tire · they say it before you do |
-| receipt | the paper the shop gives you with the price | your proof · in your pocket |
-| deal | everything the two of you agree: the price and all the other things | the price is only one part of it |
-| to include | to put it in the price without asking for more money | the lock, the lights · instead of cutting the number |
-| lock | the thing you put on a bike so nobody takes it | 45,000 that costs you nothing to give |
-| the doorman | the man who works at the door of a building | he told you twice · your hurry is his rule, not your idea |
+| cable | the thin metal line that moves the gears | your word, not theirs · block 4 |
+| deal | the price and everything else you agree on | your second variable, not just the number |
+| gear set | the parts that make the bike easy or hard to pedal | the new one, on the bike · your card |
 | in cash | in paper money, not by phone or card | one payment, today |
+| lock | the thing you put on a bike so nobody takes it | 45,000 that costs you nothing to give |
+| receipt | the paper the shop gives you with the price | your proof · in your pocket |
+| the doorman | the person who works at the door of a building | he told you twice · his rule, not your idea |
+| to include | to put something in the price for free | the lock, the lights · instead of cutting the number |
+| worn out | used so much it doesn't work well | the rear tire · they say it before you do |
 
 ### Your toolkit
-Blocks **1** `[grants]` — they come to you — **2**, **4** `[jargon]`: *gear set*, *brake pads* and *cable* are your words, and they came by bus. **3** `[receives]` for the numbers and for the check at the end. **5**: your reason is a receipt, and four floors. **6**: offer the old gears back and they will ask why. **7** `[grants]` and **8**.
+Yours: **1** `[grants]`, **2**, **3** `[receives]`, **4** `[jargon]`, **5**, **6**, **7** `[grants]`, **8**.
+*Gear set*, *brake pads* and *cable* are your words, not theirs. Your reason is a receipt and four
+floors. Block **6** is for the *why*, and they are going to ask it.
 
-### Say it here — use it or don't · **don't read it out loud**
+### Say it here — grouped by job, not in order · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| opening | `Hi — are you here for the bike?` | you know who they are · open before you talk price |
-| how it's paid | `Cash, or part by Nequi?` | you put the two ways to pay on the table first |
-| the price | `I paid … for it, and I have the receipt.` | show the paper. The number is real. |
-| the price | `With the new gears, I can't go under …` | say your number. Keep talking. |
-| why today | `If it doesn't go today, I carry it up four floors again.` | say why you need it today. Don't ask them to feel sorry. |
-| today's clock | `The shop closes at one.` | the clock is a problem for both of you. Say it. |
-| the parts | `I can put the old gears on again.` · `The lock and the lights are not in the ad. I can include them.` | take out the piece that is worth something to you, or add one that isn't |
-| the question you can't answer | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
+| asking about theirs | `How are you going to …?` · later: `Is that still …?` | open question · transport is half the deal, and their answer can change in the middle of it |
+| closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
+| money | `Cash, or part by …?` | you put the two ways to pay on the table first |
 | moving the deal | `If you …, I can …` | the price moves only when something else moves |
-| asking about theirs | `How are you going to take it home?` · later: `Is that still on?` | open question · transport is half the deal, and their answer can change in the middle of it |
+| opening | `Hi — are you here for …?` | you know who they are · open before you talk price |
+| the clock | `The shop closes at …` | the clock is a problem for both of you. Say it |
+| the parts | `I can put the old gears …` · `Not in the ad — I can include …` | take out the piece that is worth something to you, or add one that isn't |
+| the price | `I paid … for it, and I have the …` · `With the new gears, I can't go under …` | show the paper, then say your number · keep talking |
+| why today | `If it doesn't go today, I …` | say why you need it today · don't ask them to feel sorry |
 
 ### You did it if
-Bike out of the lobby today, with a time and a name said out loud · you said the price and the way to pay, out loud · they said out loud that the rear tire is worn out · the price went down only when something else changed · you asked an open question and got a new fact · they never found out about the old gear set.
+The bike left the lobby today, and you both said a time and a name out loud. You said your price
+and the way to pay. They said the rear tire was worn out before you did. The price went down only
+when something else changed. You asked an open question and learned something new. They never
+found out about the old gear set.
 
 ---
 
@@ -101,21 +113,21 @@ Bike out of the lobby today, with a time and a name said out loud · you said th
 > **Polite, two strangers.** A deal in a lobby — nobody raises their voice. In English there is one *you*: the distance is in the words you choose. **You start.** About 8 turns · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · Saturday, 10:15 a.m., lobby of a building in Cabecera. You wrote last night and came by bus. Look at the rear tire for half a minute. Then say hello.
+**Where you are** · You are in the lobby of a building in Cabecera. You wrote last night and you came here by bus. Look at the rear tire for half a minute before you say hello.
 
-**You want** · The bike — or a day and a time to pick it up. And who moves it, said out loud. Your limit: **350,000 in cash**, for the bike only.
+**You want** · You leave today with the bike, or with a day and a time to pick it up. Your limit is 350,000 in cash, for the bike alone.
 
 **You can't**
-1. Pay over **350,000 in cash for the bike alone**. A number, not a feeling.
-2. Move the 70,000 in Nequi for nothing. Use it only if you get something more in the deal — and **moving the bike counts**.
-3. Say that this is the only bike that works for you. Say it and nothing moves.
+1. Pay more than 350,000 in cash for the bike alone.
+2. Move the 70,000 in Nequi for nothing. You move that money only when you get something more in the deal, and moving the bike counts.
+3. Show that no other bike works for you. After that, nothing moves.
 
 **Only you know**
-- Three weeks looking. You saw four bikes. Only one in your size, only one with a receipt.
-- Brother-in-law through Cabecera **today, 6:00 p.m., with a truck** — confirmed last night. Without it, moving the bike costs money you counted for the tire.
-- The Nequi money is already counted: tire, seat, lock. Not for the price.
+- You looked for three weeks and you saw four bikes. Only one was your size, and only one had a receipt.
+- You are counting on your brother-in-law's truck at six. Without it, moving the bike costs money you counted for the tire.
+- You already counted the Nequi money for the tire, the seat and the lock, and not for the price.
 
-**If you walk away with nothing** · Three weeks of looking, and you start again. The only bike in your size with a receipt stays here. And you take the bus every day.
+**If you walk away with nothing** · You start your three weeks of looking again. The only bike in your size with a receipt stays here, and you keep taking the bus every day.
 
 ### Facts
 
@@ -136,37 +148,41 @@ Bike out of the lobby today, with a time and a name said out loud · you said th
 
 | word | what it is | what it's for here — **not a line to say** |
 |---|---|---|
-| worn out | used so much it doesn't work well | the rear tire · your first argument, and early |
-| torn | with a cut or a hole in it | the seat, on one corner |
 | a scratch | a thin line with no paint | small, but you count it |
-| deal | everything the two of you agree: the price and all the other things | the price is only one part of it |
-| to come with | to go with the bike, with no extra money | the lock, the lights · how you add instead of asking for less |
-| lock | the thing you put on a bike so nobody takes it | 45,000 you can ask for, and it costs them nothing |
+| brother-in-law | your sister's husband, or your partner's brother | the one with the truck · the name at the end of the message |
+| deal | the price and everything else you agree on | your way in when the price stops moving |
 | in cash | in paper money, not by phone or card | the 350,000 in your pocket · your number |
+| lock | the thing you put on a bike so nobody takes it | 45,000 you can ask for, and it costs them nothing |
+| to come with | to go with the bike, with no extra money | the lock, the lights · how you add instead of asking for less |
+| to pick something up | to go somewhere later and take it | your other close, if the bike stays here today |
+| torn | with a cut or a hole in it | the seat, on one corner |
 | truck | a big car for carrying things | your way of getting the bike out of here · at 6:00 p.m. |
-| brother-in-law | your wife's brother, or your sister's husband | the one with the truck · the name at the end of the message |
-| to pick something up | to go somewhere later and take it | if the bike doesn't leave now, you need a day and a time |
+| worn out | used so much it doesn't work well | the rear tire · your first argument, and early |
 
 ### Your toolkit
-Blocks **1** `[asks]`, **2**, **3** `[receives]`: they will say *gear set*, *brake pads*, *cable*. You don't have to know those words — ask. **5**: your reason has a number, the bus. **6**: you have something you can't say. **8**: use it before you accept a price. Not 4, not 7.
+Yours: **1** `[asks]`, **2**, **3** `[receives]`, **5**, **6**, **8**. Not 4, not 7.
+They will say *gear set*, *brake pads*, *cable*: you don't have to know those words, you have to
+ask. Your reason has a number: the bus.
 
-### Say it here — use it or don't · **don't read it out loud**
+### Say it here — grouped by job, not in order · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| opening | `Good morning. Thanks for coming down with it.` | you asked for this meeting · open before you talk about the tire |
-| how you pay | `I have … in cash, right now.` · `The Nequi money is for the tire and the seat.` | your number as a fact, not an offer — and the other money has a job already |
-| the bike | `The rear tire is worn out.` · `A new tire and a new seat — that's about …` | name the fault, then put a number on it |
-| the price | `That's more than I can pay today.` | turn the number down without starting to bargain |
-| saying no again | `I hear you, but that's not going to work for me today.` | your second and third no, so it doesn't sound like the first one |
-| the question you can't answer | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
-| moving the deal | `Maybe we can …` | offer another way when the price stops moving |
-| moving the deal | `Does the lock come with it?` | ask for something more inside the deal instead of asking for less |
+| asking about theirs | `Why are you …?` · `What did you change …?` | open questions · they bring out what is not in the ad |
+| asking for more | `Does the lock come …?` | ask for something more inside the deal instead of asking for less |
+| closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
 | if it can't leave now | `Can you keep it for me until …?` | a day and a time is also a close |
-| asking about theirs | `Why are you selling it?` · `What did you change on it?` | open questions · they bring out what is not in the ad |
+| money | `I have … in cash, right …` · `The Nequi money is for …` | your number as a fact, not an offer — and the other money has a job already |
+| moving the deal | `Maybe we can …` | offer another way when the price stops moving |
+| opening | `Good morning — thanks for …` | you asked for this meeting · open before you talk about the tire |
+| saying no | `That's more than I can …` · `I hear you, but that's not going to …` | turn the number down without bargaining · and make the second no sound different from the first |
+| the bike | `The rear tire is …` · `A new tire and a new seat — that's about …` | name the fault, then put a number on it |
 
 ### You did it if
-You leave with the bike, or with a day and a time to pick it up, and you said who moves it · you paid 350,000 or less in cash, for the bike only · the Nequi money moved only for something in the deal, and you said that · you said out loud that the rear tire is worn out · you asked an open question and got a new fact · they never found out this is the only bike for you.
+You left with the bike, or with a day, a time and a name. You paid 350,000 or less in cash for the
+bike alone. The Nequi money moved only for something else in the deal, and you said so. You said
+the rear tire was worn out before they did. You asked an open question and learned something new.
+They never found out that no other bike works for you.
 
 ---
 
@@ -254,45 +270,67 @@ El consumidor existente `getGrammarReferences` (`src/data/practica/writing-integ
 
 ---
 
+## Segunda pasada (21 ago 2026) — qué se tocó
+
+| qué | dónde | de dónde sale |
+|---|---|---|
+| **Prosa en oraciones completas** en situación, objetivo, restricciones, dato oculto y «lo que se pierde». Nada de `Saturday, 10:15 a.m., lobby of your building` ni de `Fourth buyer in three weeks · the other three, same speech`. La regla del telegrama se queda **solo en las tablas**, donde la etiqueta de la izquierda hace de verbo | las dos fichas | §11 corregido · `fase8-equidad-en` §A |
+| **La tabla de exponentes deja de ser un guion.** Agrupada por función y ordenada alfabéticamente por función —así la apertura de A cae en la fila 5 y la primera jugada de B en la última—, con troncos (`The rear tire is …`) donde había oraciones enteras. De 10 filas a 9 en las dos | las dos fichas | acta del guardián, punto 9 · `fase7-simulacion-1` §1 |
+| **Objetivo de A**, de 196 a **124 caracteres**. La condición del `conceder-con-condicion` no se enuncia en el objetivo: vive donde se pronuncia, en el exponente `If you …, I can …` | ROLE A | `fase8-equidad-en` §B |
+| **Dos glosas de vocabulario.** `brother-in-law` deja de dar por hecho que quien juega tiene esposa (`your sister's husband, or your partner's brother`) y `the doorman` deja de definir un oficio por el sexo de quien lo hace (`the person who works at the door of a building`). El portero del escenario sigue siendo un hombre: eso está en la columna `here`, que es donde va | las dos fichas | `fase8-equidad-en`, fila 1 |
+| **Una entrada por fila y definición de una línea**, ninguna por encima de 50 caracteres · `deal` pasa de una definición de 68 a `the price and everything else you agree on` | las dos fichas | `fase8-equidad-en` §C |
+| **`here` sin oraciones sayables.** Caía una: `deal · the price is only one part of it` | ROLE A | regla de §11 sobre la columna `here` |
+| **Prosa dentro de techo** con el contador canónico, cortando `Your toolkit` y `You did it if`, sin quitar ninguna pieza | las dos fichas | §11, techo 450 |
+
+**Lo que ya estaba bien y no se tocó:** los minutos (6, y el techo A2 es 8) y la unidad de turnos
+—«8 turnos» es **por rol** en las dos pantallas y en la cabecera del archivo—, que son los dos
+hallazgos de §4 del acta (puntos 7 y 8) para los que esta ficha no era el problema.
+
 ## Presupuesto de prosa (§11) — sin tablas
 
-**Cambio de contabilidad (hallazgo 4).** La cita de cabecera (43 palabras por rol) es
-**idéntica en los dos roles** —solo cambia «They start.» / «You start.»— y presumiblemente en
-los ocho escenarios: es plantilla, como la caja de herramientas, que ya vive fuera y una sola
-vez. Deja de contarse contra el tope de la ficha. Sin ese cambio, un A2 legible y 350 palabras
-son incompatibles: la versión anterior clavaba 344 y 349 justamente porque estaba escrita en
-fragmentos sin verbo.
+**Contador canónico y ninguno más.** `node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`,
+tope **450** (§11, 21 ago 2026). La contabilidad propia de la versión anterior —que descontaba a
+mano la cita de cabecera para caber en 350— queda derogada: el techo cambió porque se midieron las
+dieciséis fichas, no porque esta necesitara sitio.
 
-| ficha | prosa, sin tablas ni cita de cabecera | tope |
+| ficha | prosa, sin tablas | tope |
 |---|---|---|
-| ROLE A | **338 palabras** | 350 |
-| ROLE B | **337 palabras** | 350 |
+| ROLE A | **442 palabras** | 450 |
+| ROLE B | **419 palabras** | 450 |
 
-Medido con el criterio más estricto: cuenta todo lo que no es tabla, título ni cita de
-cabecera —incluidas las etiquetas en negrita y los números de las listas—. La cita de cabecera
-son **43 palabras** en cada rol, palabra por palabra las mismas salvo «They start.» / «You start.»
-
----
+Las dos subieron respecto a la medida anterior (444 y 439 con el mismo contador, antes de esta
+pasada) y a la vez la prosa es más legible: pasar los fragmentos a oraciones completas cuesta
+palabras, y se pagaron cortando el bloque `Your toolkit` —78 y 50 palabras de subordinación de
+tres niveles, el defecto que señaló `fase7-calcable-1` §Aparte 2— y comprimiendo `You did it if`.
+**No se quitó ninguna pieza.**
 
 ## Lo que no se aplicó, y por qué
 
 **Hallazgo 26 — el inglés en primera persona de la carta.** No se toca, tal como recomienda el
 propio hallazgo: es un documento citado de un tercero, en notas sería falso, y se protege solo.
 
-**Hallazgo 49 (lectura en voz alta) y 52 (medir el reparto en palabras).** No son defectos de
-esta ficha, son decisiones de protocolo del conjunto. Lo que sí se hizo aquí: el rótulo de la
-tabla de exponentes ahora dice **don't read it out loud** en el sitio donde se lee, no solo en
-la cabecera. La decisión de fondo —si la lectura se acepta como andamiaje legítimo del A2
-flojo, o si la tabla cambia de forma— es del conjunto y va a fase 8. El reparto en palabras ya
-está exigido por la puerta 5 del blueprint («medido en **palabras**, no en turnos»); si el
-script de fase 5 lo cuenta en turnos, el defecto está en el script.
+**Hallazgo 49 (lectura en voz alta) y 52 (medir el reparto en palabras).** El 49 **ya no está sin
+aplicar**: el punto 9 del acta del guardián —«la tabla *Say it here* leída en orden sigue siendo la
+conversación […] en el B de la 1»— se resuelve aquí por las dos vías que el acta daba como
+alternativas, y se aplican las dos. La tabla deja de ser una lista de oraciones completas (ahora son
+troncos con puntos suspensivos, salvo las dos respuestas vagas del bloque 6, que son fórmulas fijas)
+**y** deja de ir en el orden de la conversación (agrupada por función, alfabética). Las cinco líneas
+que B leyó seguidas en `fase7-simulacion-1` —`The rear tire is worn out.`, `A new tire and a new seat
+— that's about seventy thousand.`, `That's more than I can pay today.`, `I have three hundred and
+fifty thousand in cash, right now.`, `Does the lock come with it?`— ya no se pueden levantar: ninguna
+está entera, y la primera jugada de B es ahora la última fila de su tabla. De paso, las dos tablas
+bajan de 10 filas a 9, dentro del 6-9 de §11.
 
-**Hallazgo 12, la comparativa de cláusula.** Se aplicaron las dos reescrituras baratas
-(«With the new gears, I can't go under …», «I can put the old gears on again.») pero se
-**conserva** `That's more than I can pay today.`: es el eje del rechazo sin regateo y no hay
-sustituto A2 con la misma fuerza — «That's too much for me today» rechaza el precio, no la
-distancia entre los dos números. Se asume como bloque memorizado y el rationale de
-`comparatives` ya no la usa como prueba de cobertura del tema.
+El 52 sigue siendo decisión de conjunto: el reparto en palabras ya lo exige la puerta 5 del
+blueprint («medido en **palabras**, no en turnos»); si el script de fase 5 lo cuenta en turnos, el
+defecto está en el script.
+
+**Hallazgo 12, la comparativa de cláusula.** Se conserva la comparativa —es el eje del rechazo sin
+regateo y no hay sustituto A2 con la misma fuerza: «That's too much for me today» rechaza el precio,
+no la distancia entre los dos números—, pero desde esta pasada vive como tronco:
+`That's more than I can …`. Se acabó el bloque memorizado que B leía en voz alta en la simulación 2:
+el estudiante tiene que cerrar la comparativa él. El rationale de `comparatives` ya no la usa como
+prueba de cobertura del tema.
 
 **Hallazgos 17, 45 y 47 — la fila `to fit` de ROLE A.** Tres auditorías distintas señalaron la
 misma fila y las tres propusieron reescribir la columna `here`. Se hizo algo más fuerte: la

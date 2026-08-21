@@ -6,8 +6,9 @@ Reescritura al formato de §11 del blueprint, contra el molde vivo
 otras dos salidas viven en los datos ocultos de A, y la carta asigna una tarea con hora—.
 
 **Corregido el 20 ago 2026** con los 78 hallazgos de las cuatro auditorías de fase 7
-(`fase7-calcable-2.md`, `fase7-nivel-2.md`, `fase7-naturalidad-2.md`, `fase7-simulacion-2.md`).
-Lo que no se aplicó, y por qué, está al final del archivo.
+(`fase7-calcable-2.md`, `fase7-nivel-2.md`, `fase7-naturalidad-2.md`, `fase7-simulacion-2.md`), y
+**el 21 ago 2026** con el acta del guardián (`fase7-veredicto.md`) y la auditoría de equidad sobre
+la versión en inglés (`fase8-equidad-en.md`). Lo que no se aplicó, y por qué, está al final.
 
 **El vocabulario de este escenario es asimétrico y esa es la gracia.** `appointment`, `opening`,
 `referral note`, `emergency check`, `branch` son palabras del mostrador: en la ficha de A entran
@@ -19,30 +20,30 @@ Caja común: `artifacts/habla-a2/caja-de-herramientas-a2.md`. Inglés americano.
 Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 
 `dar-mala-noticia` + `recomendar` · poder **a>b** · arranca **B** · desenlace **acuerdo** ·
-**6 min** · A 10 turnos · B 10 turnos (20 globales)
+**6 min** · **9 turnos por rol** (18 globales)
 
 ---
 
 ## ROLE A — You have no appointment to give
 
-> **Formal.** A clinic front desk: distance and calm, also for a no. In English there is no formal *you*. The formal tone is in the words: `I'm afraid…`, `Let me…`. **They start.** About 10 turns · 6 minutes.
+> **Formal.** You work behind a clinic counter: distance and calm, also for a no. English has no formal *you* — the tone is in the words, `I'm afraid…`, `Let me…`. **They start.** About 9 turns each · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · Tuesday, 4:20 p.m., front desk of a dental clinic in Cabecera. No appointment, a hand on the side of the face.
+**Where you are** · It is Tuesday, 4:20 p.m., and you are at the front desk of a dental clinic in Cabecera. Somebody walks in with no appointment, a hand on the side of the face.
 
-**You want** · Three things before that person leaves: a date in the calendar, a cell number you checked, something for tonight.
+**You want** · You need three things before that person leaves: a date, a checked cell number, and something for tonight.
 
 **You can't**
-1. Ask Dr. Restrepo anything before 5:00 — in consultation until then · in writing only, never a call.
-2. Say a word about another patient's appointment. Not whose, not why.
-3. Send anyone away without a written date **and** something for tonight. Calendar checked by the administrator at closing.
+1. You can't ask Dr. Restrepo anything before 5:00, and you ask her in writing — you never call.
+2. You can't say a word about another patient's appointment: not whose it is, and not why.
+3. You can't send anyone away without a written date **and** something for tonight. At closing the administrator reads your calendar.
 
 **Only you know**
-- The 5:20 today · a patient who has missed twice · a door you can leave open, never a name, never a reason.
-- Dr. Restrepo · out at 6:30 · stayed late Monday · no favors from you — but a broken tooth, never a no from her. The key here.
-- Three empty chairs this week · every one against reception · same for every patient who leaves for another clinic.
+- You have a 5:20 today, and that patient has missed twice already. You can leave that door open, but never with a name or a reason.
+- You never ask Dr. Restrepo for favors, but today you want to: you think she will say yes to this one. That is your key.
+- Three chairs were empty this week, and each one lands on you — like every patient who leaves for the corner clinic.
 
-**If you walk away with nothing** · A fourth empty chair · one more patient with the plan gone to the clinic on the corner · both against your name.
+**If you walk away with nothing** · You get a fourth empty chair, and one more patient with the plan walks to the corner clinic. Both go against your name.
 
 ### Facts
 
@@ -54,7 +55,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | To send someone there | a referral note with the exact problem · no note, no patient at Centro |
 | Saturday 12 | 9:00 a.m. free · only for patients who came here before · yours to hold |
 | The plan | full treatment paid · in this clinic only |
-| Dr. Restrepo | out at 6:30 p.m. · in writing only, never a call |
+| Dr. Restrepo | out at 6:30 p.m. · in writing only, never a call · late on Monday · a broken tooth, never a no from her |
 | Reminders | a text the day before · only with the right number · in the file now: 310 218 44 71, maybe not theirs |
 | For tonight | something cold on the face, 10 minutes · no chewing on that side (**to chew** = to break food with your teeth) · soft food · no hot drinks, no cold drinks |
 | When it can't wait | pain moving to the ear or the eye → hospital emergency room, tonight |
@@ -67,60 +68,61 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | opening | a free time in the calendar | one only: Thursday, 7:00 a.m. · never promise a second one |
 | to be fully booked | no free times left at all | your bad news, in three words |
 | branch | one of the places where the same clinic works | the other one, Centro — where you send them |
-| referral note | a paper for another clinic. It says what the problem is | your only key to Centro |
-| emergency check | a short visit for pain. You don't need an appointment | the way out that costs 40,000 · not the emergency room — that one is the hospital |
+| referral note | a paper for another clinic with the problem written on it | your only key to Centro |
+| emergency check | a short visit for pain, with no appointment | the way out that costs 40,000 · not the hospital emergency room |
 | X-ray | a photo of the inside of a tooth | the reason for the ten minutes early |
 | chipped | when a small piece of a tooth breaks | what they'll describe without the word — say it back with it |
 | to cover | the plan pays, so you pay nothing | your best argument — here, and nowhere else |
 | to hold something for someone | to keep a time for one person, so nobody else takes it | Saturday at nine, while they decide |
 
 ### Your toolkit
-All eight blocks — the only one here who works at a counter. **1** `[grants]` — not *Good morning*: it's 4:20 p.m., **Good afternoon** — **2**, **3**, **4** `[jargon]`: *referral note*, *emergency check*, *X-ray* are yours, not theirs. **5**, **6** — another patient's appointment: your answer when they push — **7** `[grants]`, **8**.
+All eight blocks — you are the only one behind a counter. **1** `[grants]`, but not *Good morning* — at 4:20 p.m. it is **Good afternoon**. **2**, **3**. **4** `[jargon]`: *referral note*, *emergency check*, *X-ray*, yours not theirs. **5**. **6** for when they push about another patient. **7** `[grants]`, **8**.
 
-### Say it here — use it or don't · **don't read it out loud**
+### Say it here — grouped by job, not in order · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| bad news | `We're fully booked today and tomorrow.` · `The first opening is Thursday at seven.` | the fact in front, not the no |
-| the appointment you can't name | `Maybe I have something later today, but I can't promise.` · `That's another patient's time. I can't tell you about it.` | leave one door open · close the other one without a reason |
-| their side | `What happened?` | **open question** — without it, the fact that turns the scenario never comes out |
-| Thursday, in full | `Come ten minutes early — there are forms and an X-ray.` | the second number of that appointment, said as a time |
-| the other branch | `You should go to our Centro branch, on Calle 36 — before eight.` | one road, with its own name and its own time |
-| the money | `The plan covers it here, and only here.` · `At Centro you pay the 40,000 yourself.` | what they lose by leaving, with the number on it |
+| another patient's time | `That's another patient's time. I can't tell you about it.` · `Maybe I have something later today, but…` | close one door without a reason · leave the other one open |
+| bad news | `We're fully booked today and tomorrow.` · `The first opening is…` | the fact in front, not the no |
+| money | `The plan covers it here, and only here.` · `At Centro you pay… yourself.` | what they lose by leaving, with the number on it |
+| sending them across town | `You should go to our… branch, on… — before…` | one road, with its own name and its own time |
 | the number | `Can you say it one at a time?` · `Let me repeat it: …` | make them dictate · then read back what you wrote |
+| their side | `What happened?` | **open question** — without it, the fact that turns the scenario never comes out |
+| Thursday, in full | `Come ten minutes early — there are…` | the second number of that appointment, said as a time |
 | tonight | `Put something cold on your face for ten minutes.` · `Don't chew on that side.` | concrete instructions instead of general advice |
 | when not to wait | `If the pain goes to your ear, go to the emergency room tonight.` | the fourth point of the close |
 
 ### You did it if
-**Day, time and branch** out loud — plus the **treatment date here** if you sent them elsewhere · **who pays, how much, and when** · the cell number **one digit at a time**, read back and checked against your screen · one thing for tonight, said back in their words · **one open question before you proposed anything** · **when not to wait**, out loud · nothing said about another patient.
+They said the **day, time and branch** back to you, and you checked them on screen · the **treatment date here**, if you sent them elsewhere · you said **who pays, how much, and when** · you took the cell number **one digit at a time** and read it back · they said what they will do tonight, in their words · **one open question before you proposed anything** · **when not to wait** · nothing said about another patient.
 
 ---
 
 ## ROLE B — You need to see the dentist today
 
-> **Formal.** Somebody else's counter, nobody you know. Distance even when it hurts: `Can you…?`, never `Hey`. **You start.** About 10 turns · 6 minutes.
+> **Formal.** Somebody else's counter, and you know nobody. Keep the distance even when it hurts: `Can you…?`, never `Hey`. **You start.** About 9 turns each · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · Tuesday, 4:20 p.m., a dental clinic in Cabecera. Off work in Girón at 3:30, no appointment, your hand on your face.
+**Where you are** · It is Tuesday, 4:20 p.m. You left work in Girón at 3:30 and you are now in a dental clinic in Cabecera, with no appointment and your hand on your face.
 
-**You want** · To see the dentist **today**. If not: a day that works with your job, plus something for tonight. On the table, only what's yours — your time, your days, your pocket.
+**You want** · You want to see the dentist **today**. If you can't, you want a day that fits your job and something for tonight.
 
 **You can't**
-1. Take a weekday appointment before **8:30 a.m.** Girón warehouse at 7:00 · Thursdays, the truck at 6:30 — storeroom key yours.
-2. Come back another day and wait in line again. This is your free afternoon.
+1. You can't take a weekday appointment before **8:30 a.m.** Your work in Girón starts too early, and Thursday earlier still.
+2. You can't come back another day and wait in line again: this is your only free afternoon.
+3. You can't put anything on the table that is not yours: your time, your free days, your money.
 
 **Only you know**
-- Sunday · a small piece of the lower back tooth, broken · the edge, sharp on the tongue. Nobody told you to hide it — the pain is what matters, the piece looks small. Say it if they ask something open.
-- Last time, your sister's number in the file. That's why the clinic never texts you. You don't remember doing it.
+- On Sunday you broke a small piece of your lower back tooth, and you feel the sharp edge on your tongue when you talk. You are not hiding it — the pain just matters more than the piece. You say it if they ask something open.
+- The number in their file is your sister's. You don't remember giving it, and that is why their messages never reach you.
 
-**If you walk away with nothing** · The pain, no date, nothing for tonight · and the whole treatment from your own pocket in any other clinic — the plan, only here.
+**If you walk away with nothing** · You go home with the pain, no date and nothing for tonight. And anywhere else you pay the whole treatment yourself: your plan works only here.
 
 ### Facts
 
 | | |
 |---|---|
 | Now | Tuesday, September 8, 4:20 p.m. |
-| What happened | Sunday — a piece of my lower back tooth, broken · sharp edge on my tongue when I talk |
+| What happened | Sunday — a piece of my lower back tooth, broken · the edge **sharp** (= able to cut) on my tongue when I talk |
 | The pain today | worse than yesterday · worse with cold drinks |
 | Painkillers | two a day (**painkiller** = a pill for pain) · the first one Sunday night |
 | Work | warehouse in Girón · 7:00 a.m.–3:30 p.m., Monday to Friday · Saturdays off · forty minutes from this clinic |
@@ -137,33 +139,33 @@ All eight blocks — the only one here who works at a counter. **1** `[grants]` 
 | appointment | a day and a time for one patient only | the thing you don't have |
 | to be fully booked | no free times left at all | the first thing you're going to hear |
 | opening | a free time in the calendar | their word for a time that appears later |
-| branch | one of the places where the same clinic works | ask which one — the appointment and the treatment can be in different ones |
-| emergency check | a short visit for pain. You don't need an appointment | one of their words — ask what it costs · not the emergency room, that one is the hospital |
+| branch | one of the places where the same clinic works | ask which one — appointment and treatment can be in different ones |
+| emergency check | a short visit for pain, with no appointment | one of their words — ask what it costs · not the hospital emergency room |
 | referral note | — they'll say it; ask what it means | a paper that comes with a condition — find out which one |
 | to cover | the plan pays, so you pay nothing | their word for your plan — ask where it works |
-| chipped | when a small piece of a tooth breaks | your **back tooth**, in one word · and **sharp** (= able to cut) for the edge |
+| chipped | when a small piece of a tooth breaks | your **back tooth**, in one word — the word they will give you |
 | tongue | the soft part in your mouth that moves when you talk | where the sharp edge cuts |
 | warehouse | a big building where a company keeps the things it sells | where you work · the reason for the seven o'clock |
 
 ### Your toolkit
-Six blocks. **1** `[asks]` — no appointment, and it hurts — **2**, **3** `[receives]` — *emergency check*, *referral note*, *first consultation* coming at you: ask — **4** `[jargon]`, half of it (`I mean…`, `It's like…`) — the tooth is yours, nobody else can describe it — **5** — hurting isn't enough, say what **you** lose — **7** — you grant nothing, but the no to what they offer is yours — **8**. Not 6: nothing hidden.
+Six blocks. **1** `[asks]`: no appointment, and it hurts. **2**. **3** `[receives]`: *emergency check*, *referral note*, *first consultation* — ask. **4** `[jargon]`, half of it: the tooth is yours, nobody else can describe it. **5**: hurting is not enough, say what **you** lose. **7**: the no to what they offer is yours. **8**. Not 6, you hide nothing.
 
-### Say it here — use it or don't · **don't read it out loud**
+### Say it here — grouped by job, not in order · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| opening | `I don't have an appointment. Can you help me, please?` | say what you are before they ask |
-| what happened | `A piece of my tooth broke on Sunday, and the edge cuts my tongue.` | what you don't tell on your own — it comes out if they ask something open |
-| what it's like | `It's worse than yesterday.` · `It hurts more when I drink something cold.` | describe by comparing, which is how pain gets described |
-| what you can't do | `I can't come at seven, because I open the warehouse.` | close a time with the reason attached, not with a wish |
-| asking about theirs | `Is there any other day?` · `What days do you have after eight thirty?` | **open questions**, with your limit already inside · one of them again if they hint at something later today |
-| what you can offer | `I can wait here.` · `I don't work on Saturdays.` | your time on the table · a day of yours they don't know about |
-| what you can offer | `Can I come back at six?` · `I have … with me, if that helps.` | name a time yourself · your money as an option, not as a complaint |
-| your number | `That's my sister's number. Mine is …` | fix the wrong contact when they read it out |
-| what you still need | `What time do I have to be there?` · `Does my plan cover it here?` | the two things you leave without if nobody asks |
+| asking for another day | `Is there any other day?` · `What days do you have after eight thirty?` | **open questions**, with your limit already inside · one of them again if they hint at something later today |
+| before you leave | `What time do I have to be there?` · `Does my plan cover it here?` | the two things you leave without if nobody asks |
+| how you come in | `I don't have an appointment. Can you help me, please?` | say what you are before they ask |
+| the number | `That's my sister's number. Mine is…` | fix the wrong contact when they read it out |
+| the pain | `It's worse than yesterday.` · `It hurts more when…` | describe by comparing, which is how pain gets described |
+| the tooth | `A piece of my tooth broke on Sunday, and…` | what you don't tell on your own — it comes out if they ask something open |
+| your money | `I have… with me, if that helps.` | your money as an option, not as a complaint |
+| your seven o'clock | `I can't come at…, because I open the warehouse.` | close a time with the reason attached, not with a wish |
+| your time | `I can wait here.` · `I don't work on Saturdays.` · `Can I come back at…?` | your time on the table · a day of yours they don't know about |
 
 ### You did it if
-A day that **really** works with your job, said with your schedule in hand · **two things of yours** on the table — waiting, a free day, money — before anyone asked · your number, **one digit at a time**, read back and checked · what to do tonight, and **when not to wait** · **what the pain is like**, not only that it hurts · what you pay, or that you don't.
+A day that **really** works with your job, said with your schedule in hand · **two things of yours** on the table — waiting, a free day, money — before anyone asked · at the end **you** said the day, the time and the branch, and **your number from memory**, one digit at a time · **what the pain is like**, not only that it hurts · what you will do tonight · what you pay, or that you don't.
 
 ---
 
@@ -190,20 +192,20 @@ gasta. El dato pivote aparece cuando hay conversación, no cuando hay prisa.
 > **Nota de integración:** este cierre es común, pero la puerta 7 del blueprint exige que vaya
 > **dentro de las dos fichas**. Quien lo porte a `.ts` lo duplica, idéntico, en A y en B.
 
-**You finish when you both say the plan out loud. Then check: are the two plans the same? The plan has four parts:**
+**You finish when the two of you say the plan out loud — and each of you says a different part of it. Then check: are the two versions the same?**
 
-1. **Day, time and branch** of the appointment. And the time you have to arrive.
-2. **Who pays, how much, and when** (or: nothing, covered).
-3. **The cell number**, one digit at a time — one of you reads it from what you wrote, the other says it from memory.
-4. **What to do about the pain until then.** And when to go to the emergency room.
+1. **The patient says the day, the time and the branch**, and the time to arrive. **The front desk checks it** on the screen.
+2. **The front desk says who pays, how much, and when** (or: nothing, covered). **The patient says the amount back.**
+3. **The patient says the cell number from memory**, one digit at a time. **The front desk reads it back** from what they wrote down.
+4. **The patient says what they will do about the pain tonight. The front desk says when not to wait**, and where to go.
 
-**If one of the four is missing, it is not finished.**
+**If one of the four is missing, it is not finished. And if one of you said all four, it is not finished either.**
 
 ## After — both screens, in Spanish
 
 1. Hubo un momento en que la conversación cambió de prioridad. ¿Cuál fue **la pregunta** que lo provocó? ¿Era abierta o era de sí o no?
 2. El jueves a las 7:00 no era un capricho: era un imposible con dos números detrás. ¿Los dos entendieron cuáles eran esos dos números? Díganlos ahora.
-3. El celular es el único dato del cierre que se puede decir mal sin que nadie se entere. Uno lo lee de lo que quedó anotado, el otro lo dice de cabeza, dígito a dígito, y comprueben si coincide.
+3. El celular es el único dato del cierre que se puede decir mal sin que nadie se entere. El paciente lo dice de cabeza, dígito a dígito; el mostrador lo lee de lo que anotó. Comprueben si coincide, y si no, quién de los dos lo tenía mal.
 
 ## `grammarReferences` — escenario 2
 
@@ -238,15 +240,15 @@ grammarReferences: [
 
 ## Cuenta de prosa (sin tablas)
 
-Regla de conteo usada aquí, mientras §11 no la fije (hallazgo 62): se cuenta desde `## ROLE X`
-hasta el final de «You did it if», **descontando todas las filas de tabla y las líneas de
-encabezado `###`**, y **contando** la cita de registro y el bloque de toolkit, que se leen
-enteros. Presupuesto A2: **≤ 350 palabras**.
+Se mide con el contador canónico del repo, y con ninguno más:
+`node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`. Techo de §11: **≤ 450 palabras**
+(el 350 de la primera versión quedó derogado el 21 ago 2026, medido contra las dieciséis fichas).
+El hallazgo 62 queda cerrado: ya no hay regla de conteo propia de esta ficha.
 
-| ficha | prosa | presupuesto | datos | vocabulario | exponentes |
+| ficha | prosa | techo | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A | **347** | ≤ 350 | 10 filas | 10 | 9 |
-| ROLE B | **348** | ≤ 350 | 10 filas | 10 | 9 |
+| ROLE A | **448** | ≤ 450 | 10 filas | 10 | 9 |
+| ROLE B | **447** | ≤ 450 | 10 filas | 10 | 9 |
 
 ---
 
@@ -270,7 +272,7 @@ dos que el hallazgo quería liberar (`walk-in`, `slot`) ya se fueron a `tongue` 
 son las dos que se dijeron en español en la simulación. `X-ray` la produce A —tiene fila propia y
 exponente— y B tiene el bloque 3 para preguntarla, que es exactamente el trabajo que el hallazgo
 10 le devuelve. `forms`, `to chew` y `painkiller` se glosan dentro de la fila de datos donde ya
-vivían, como `sharp` dentro de `chipped` — el hallazgo 70 pedía `painkillers` como fila propia de
+vivían, y `sharp` con ellas desde el 21 ago — el hallazgo 70 pedía `painkillers` como fila propia de
 B, y las diez ya están dadas a `tongue` y `warehouse`, que son las que se dijeron en español.
 `jaw` desaparece: no estaba glosada en ningún sitio y «hand on the side of the face» dice lo
 mismo con palabras que las dos fichas ya usan.
@@ -281,8 +283,8 @@ B1 y sin ancla en el registro. La celda dice `one of their words — ask what it
 mismo trabajo receptivo con vocabulario A1.
 
 **Hallazgo 74, aplicado por las dos mitades.** A recibe la forma de mostrador en su tabla de
-exponentes, y B recibe el motivo para apretar sin gastar prosa: la glosa de su fila `asking about
-theirs` le dice que vuelva a preguntar **si le insinúan algo para hoy**, que es exactamente lo que
+exponentes, y B recibe el motivo para apretar sin gastar prosa: la glosa de su fila `asking for
+another day` le dice que vuelva a preguntar **si le insinúan algo para hoy**, que es exactamente lo que
 produce el exponente `Maybe I have something later today…` de A. El criterio de éxito «nothing
 said about another patient» se queda, porque ahora hay quien lo ponga a prueba.
 
@@ -307,10 +309,53 @@ Se escribe arriba la regla concreta con la que se midió esta pareja, para que l
 comparar contra algo. Todas las correcciones de esta pasada fueron a tablas o sustituyeron prosa
 por prosa más corta: las dos fichas bajaron, no subieron.
 
-**Hallazgo 76, medir el reparto en palabras.** Los turnos declarados suben a 10 por rol, que es
-lo medible desde aquí. Que el reparto se mida en palabras y no en turnos ya lo exige la puerta 5
-del blueprint; si el script de fase 5 lo cuenta en turnos, el defecto está en el script, no en
-esta ficha.
+**Hallazgo 76, medir el reparto en palabras.** Los turnos bajan a **9 por rol**, que es el techo
+de A2 en §4; los 10 de la pasada anterior se salían de la tabla. La unidad es la misma en las dos
+cabeceras y en la línea de motor: por rol, nunca globales. Que el reparto se mida en palabras y no
+en turnos ya lo exige la puerta 5 del blueprint; el reparto propiamente dicho se corrige en el
+cierre (ver abajo), no en el número de turnos.
+
+---
+
+## Pasada del 21 ago 2026 — acta del guardián y equidad en inglés
+
+Siete arreglos, ninguno de motor. El jueves a las 7:00 sigue siendo el mismo imposible, la carta
+llega en el mismo turno y el desenlace sigue siendo acuerdo.
+
+1. **Prosa legible (§11, corregido hoy).** La regla «notas, no frases» valía solo para las tablas
+   y esta ficha la había aplicado también a la prosa. Situación, objetivo, restricciones, dato
+   oculto y «lo que se pierde» vuelven a ser oraciones cortas y completas en inglés A2. Se escriben
+   **sobre** el jugador —`You have a 5:20 today`, `On Sunday you broke a small piece…`—, nunca por
+   él: en segunda persona no se pueden decir tal cual, que es lo que la puerta 3 pide. Las tablas
+   de datos siguen telegráficas, porque ahí la etiqueta de la izquierda hace de verbo.
+2. **Objetivo de B, de 184 a 113 caracteres** (el molde usa 111). El objetivo dice qué se lleva y
+   nada más. La tercera oración —lo que puede poner sobre la mesa— **no se borra**: baja a la
+   restricción 3, que es donde vivía su trabajo.
+3. **El cierre reparte quién dice qué.** Era el agujero real de este escenario: la simulación 4
+   midió **86/14 en palabras con 50/50 en turnos**, y el callado cerró los cuatro puntos diciendo
+   `Yes`. Ahora cada punto tiene dueño y el paciente produce en tres de los cuatro —día, hora y
+   sede; el número de memoria; lo de esta noche— mientras el mostrador comprueba. Y se añade la
+   condición que faltaba: **si uno de los dos dijo los cuatro, no está terminado**. Los criterios
+   de éxito de los dos roles se reescriben para que digan lo mismo.
+4. **Las dos tablas de exponentes se ordenan por función, alfabéticamente**, y ya no se leen de
+   arriba abajo como la conversación. Donde había oración entera queda tronco con puntos
+   suspensivos (`The first opening is…`, `I can't come at…, because I open the warehouse.`). Se
+   conservan enteras las cuatro que son molde y no jugada: el condicional del punto 4 del cierre,
+   las dos instrucciones de esta noche, la fórmula de la otra cita y la reparación del número.
+5. **Vocabulario.** Ninguna fila lleva ya dos entradas: `sharp` sale de la columna `here` de
+   `chipped` en B y se glosa en la fila de datos donde la palabra ya vivía, igual que `painkiller`
+   y `forms`. Las definiciones de `referral note` y `emergency check` pasan de dos oraciones a una
+   línea. Ninguna glosa es más larga que la palabra que define.
+6. **Turnos y minutos.** 9 por rol (§4 da 6-9 al A2; los 10 anteriores se pasaban) y 6 minutos, que
+   ya estaban por debajo del techo de 8. Misma unidad en las dos cabeceras.
+7. **Presupuesto.** Medido **solo** con `node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`:
+   **A 449 · B 447**, techo 450. Los arreglos 1 y 3 añaden palabras; se compensó recortando el
+   bloque de toolkit, la nota de registro y los criterios de éxito. **No se quitó ninguna pieza.**
+
+**Lo que no se tocó, a propósito.** La asimetría del vocabulario —A produce las palabras del
+mostrador, B las recibe— y `referral note` sin definición en la ficha de B: es lo que le da trabajo
+a su bloque 3. Y el reparto de género, que aquí no se decide: el acta manda esa pasada a la ficha
+5 o a la 8, no a esta.
 
 ---
 
