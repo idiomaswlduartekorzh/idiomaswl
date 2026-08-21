@@ -1844,18 +1844,18 @@ export const TOEFL_READING_CURRENT_FORMAT: PracticeRoute[] = [
   {
     exam: 'toefl',
     slug: 'complete-the-words',
-    title: 'TOEFL Reading Complete the Words',
+    title: 'TOEFL Reading Complete the Words: letras faltantes',
     description:
-      'Practica Complete the Words para TOEFL Reading con pistas de contexto, elección de palabras, explicación y trampas frecuentes.',
+      'Practica Complete the Words para TOEFL Reading reconstruyendo diez palabras parciales dentro de un texto breve y escribiendo solo las letras faltantes.',
     path: '/practica/toefl/reading/formato-2026/complete-the-words',
     parentPath: '/practica/toefl/reading/formato-2026',
     skill: 'reading',
     searchIntent: 'Practicar Complete the Words para TOEFL Reading actual.',
-    teaches: ['TOEFL Reading', 'Complete the Words', 'context clues', 'word choice'],
+    teaches: ['TOEFL Reading', 'Complete the Words', 'missing letters', 'context clues'],
     keywords: [
       'TOEFL complete the words',
-      'TOEFL vocabulary completion',
-      'TOEFL reading words',
+      'TOEFL missing letters',
+      'TOEFL reading palabras incompletas',
       'TOEFL complete words practice',
     ],
     priority: 0.74,
@@ -1863,22 +1863,22 @@ export const TOEFL_READING_CURRENT_FORMAT: PracticeRoute[] = [
     status: 'published',
     currentExam: true,
     note:
-      'Current TOEFL Reading task family listed by ETS; WeLearn practice focuses on context clues and word-form control.',
+      'Current TOEFL Reading task family listed by ETS; this fixed WeLearn sample practices missing-letter reconstruction and does not reproduce adaptation or official scoring.',
     faqs: [
       {
         question: '¿Qué es Complete the Words en TOEFL Reading?',
         answer:
-          'Es una familia de tarea actual de Reading listada por ETS. En WeLearn la practicamos como selección de palabra por contexto, forma gramatical y coherencia local.',
+          'Es una familia de tarea actual de Reading listada por ETS: aparecen palabras parcialmente incompletas dentro de un texto y debes reconstruirlas usando las letras visibles y el contexto.',
       },
       {
         question: '¿Cómo se resuelve Complete the Words?',
         answer:
-          'Lee la oración completa, identifica qué parte gramatical falta, usa pistas antes y después del espacio, y descarta opciones que encajan como traducción pero rompen la lógica.',
+          'Lee el texto completo, conserva las letras visibles y escribe únicamente las letras que faltan. Comprueba que la palabra reconstruida encaje en significado y gramática.',
       },
       {
-        question: '¿Qué habilidad compatible ayuda más?',
+        question: '¿La puntuación de esta página es oficial?',
         answer:
-          'Vocabulary in Context ayuda mucho, porque ambas prácticas dependen de entender cómo una palabra funciona dentro de una oración específica.',
+          'No. El resultado x/10 corresponde a una muestra fija y parcial creada por WeLearn; no equivale a una escala, banda ni puntuación oficial del TOEFL.',
       },
     ],
   },

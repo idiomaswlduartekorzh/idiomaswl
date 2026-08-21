@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET6_V2 } from '@/data/toefl/complete-the-words-sets-6-10';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET6_V2 } from '@/data/toefl/reading-sets-6-10';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET6_V2 } from '@/data/toefl/build-sentence-sets-6-10';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -19,40 +25,7 @@ const mock: MockExam = {
       skill: 'reading',
       title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete',
-          id: 't6-r-cw1',
-          part: 1,
-          qRange: [1, 6],
-          instructions: 'A student is writing to the housing office.',
-          template: `Dear Housing Office,\n\nI would like to {{1}} a problem with the heating in my room. It stopped working two days {{2}}, and the room is now very {{3}}. I have tried adjusting the controls, but {{4}} happens. Could someone please come to {{5}} it as soon as possible? I am usually free in the {{6}}, after my classes finish.\n\nThank you,\nLuis`,
-          blanks: [
-            { num: 1, prefix: 're', answer: 'report' },
-            { num: 2, prefix: 'a', answer: 'ago' },
-            { num: 3, prefix: 'c', answer: 'cold' },
-            { num: 4, prefix: 'no', answer: 'nothing' },
-            { num: 5, prefix: 'f', answer: 'fix' },
-            { num: 6, prefix: 'aft', answer: 'afternoon' },
-          ],
-        },
-        {
-          type: 'wordcomplete',
-          id: 't6-r-cw2',
-          part: 1,
-          qRange: [7, 12],
-          instructions: 'The following is from an article about bees.',
-          template: `Bees play a vital role in {{1}}, the process by which plants reproduce. As a bee moves from flower to flower collecting {{2}}, it carries pollen with it, allowing plants to produce seeds and {{3}}. Without bees and other pollinators, many of the crops we depend on would {{4}} sharply. In recent years, scientists have {{5}} a worrying decline in bee populations, and many are working to {{6}} the causes.`,
-          blanks: [
-            { num: 1, prefix: 'poll', answer: 'pollination' },
-            { num: 2, prefix: 'ne', answer: 'nectar' },
-            { num: 3, prefix: 'fr', answer: 'fruit' },
-            { num: 4, prefix: 'de', answer: 'decline' },
-            { num: 5, prefix: 'obs', answer: 'observed' },
-            { num: 6, prefix: 'und', answer: 'understand' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET6_V2, 1)],
     },
     {
       part: 2,
@@ -113,62 +86,13 @@ const mock: MockExam = {
       part: 4,
       skill: 'reading',
       title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `The invention of writing ranks among the most transformative developments in human history, yet it was not invented for literature, philosophy, or record-keeping of grand events. The earliest known writing system, cuneiform, emerged in ancient Mesopotamia around 3200 BCE, and its first use was strikingly practical: accounting. Temple administrators needed a reliable way to track goods—quantities of grain, livestock, and textiles—as economies grew too complex to manage by memory alone.\n\nCuneiform began not as abstract symbols but as pictures. A simple drawing of an ox head stood for an ox; a stylized ear of barley meant grain. Over centuries, these pictures were simplified into wedge-shaped marks pressed into wet clay with a reed stylus—the word "cuneiform" itself derives from the Latin for "wedge." This simplification made writing faster to produce, though it also made the symbols less recognizable as pictures of the things they represented.\n\nA crucial breakthrough came when scribes began using signs to represent sounds rather than objects. This is known as the rebus principle: a sign for a word could stand for any word that sounded the same, much as a picture of an eye might represent the word "I" in English. This shift freed writing from the limitation of depicting only concrete objects and allowed it to record abstract ideas, names, and grammatical relationships—everything spoken language could express.\n\nWriting systems arose independently in at least three other places: Egypt, China, and Mesoamerica. The fact that this invention occurred more than once suggests it was not a fluke but a response to shared pressures—particularly the administrative demands of large, settled societies. Once established, writing became far more than an accounting tool. It preserved laws, epics, and scientific observations across generations, enabling the accumulation of knowledge that no single human memory could hold.`,
-      passageTitle: 'The Origins of Writing',
-      questions: [
-        {
-          type: 'mcq', id: 't6-r-ap1', part: 4,
-          text: 'According to the passage, what was the earliest use of cuneiform writing?',
-          options: ['Accounting and tracking goods', 'Writing religious laws', 'Sending letters between cities', 'Recording epic poetry'],
-          answer: 0,
-        },
-        {
-          type: 'mcq', id: 't6-r-ap2', part: 4,
-          text: 'According to paragraph 2, why did cuneiform symbols become less recognizable as pictures?',
-          options: [
-            'Scribes deliberately hid their meaning.',
-            'The symbols were simplified into wedge-shaped marks to write faster.',
-            'The clay tablets wore down over time.',
-            'Different cities used different symbols.',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq', id: 't6-r-ap3', part: 4,
-          text: 'The "rebus principle" described in paragraph 3 refers to',
-          options: ['translating one language into another', 'using a sign to represent a sound rather than an object', 'pressing symbols into wet clay', 'drawing pictures of concrete objects'],
-          answer: 1,
-        },
-        {
-          type: 'mcq', id: 't6-r-ap4', part: 4,
-          text: 'Why does the author mention that writing arose independently in several places?',
-          options: ['To prove that cuneiform was the most advanced system', 'To explain why writing was later abandoned', 'To argue that Mesopotamia copied other cultures', 'To suggest that writing was a response to shared pressures rather than a fluke'],
-          answer: 3,
-        },
-        {
-          type: 'mcq', id: 't6-r-ap5', part: 4,
-          text: 'According to the final paragraph, what did writing make possible once established?',
-          options: ['The accumulation of knowledge across generations', 'The decline of large societies', 'The invention of the wheel', 'The end of spoken language'],
-          answer: 0,
-        },
-        {
-          type: 'multiselect', id: 't6-r-ap6', part: 4,
-          qRange: [6, 6],
-          text: 'Select the TWO statements supported by the passage.',
-          options: [
-            { letter: 'A', text: 'Cuneiform was first used for writing poetry and philosophy.' },
-            { letter: 'B', text: 'The rebus principle allowed writing to record abstract ideas and names.' },
-            { letter: 'C', text: 'Writing systems developed independently in more than one region.' },
-            { letter: 'D', text: 'Cuneiform symbols always remained clear pictures of objects.' },
-          ],
-          selectCount: 2,
-          answers: ['B', 'C'],
-        },
-      ],
+      instructions: TOEFL_READING_SET6_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET6_V2.academic.text,
+      passageTitle: TOEFL_READING_SET6_V2.academic.title,
+      questions: TOEFL_READING_SET6_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET6_V2.objectId, item, 4)),
     },
-
-    // ═══════════════════════ LISTENING ══════════════════════════════════════════
     {
       part: 5,
       skill: 'listening',
@@ -330,15 +254,10 @@ const mock: MockExam = {
       part: 9,
       skill: 'writing',
       title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't6-w-bs1', part: 9, tiles: ['My brother', 'works', 'in', 'a hospital', 'downtown'], answer: ['My brother', 'works', 'in', 'a hospital', 'downtown'] },
-        { type: 'sentencebuild', id: 't6-w-bs2', part: 9, tiles: ['the door', 'you', 'Could', 'please', 'close'], answer: ['Could', 'you', 'please', 'close', 'the door'] },
-        { type: 'sentencebuild', id: 't6-w-bs3', part: 9, tiles: ['have', 'never', 'I', 'to Japan', 'been'], answer: ['I', 'have', 'never', 'been', 'to Japan'] },
-        { type: 'sentencebuild', id: 't6-w-bs4', part: 9, tiles: ['it', 'Because', 'was', 'raining,', 'the game', 'cancelled', 'was'], answer: ['Because', 'it', 'was', 'raining,', 'the game', 'was', 'cancelled'] },
-        { type: 'sentencebuild', id: 't6-w-bs5', part: 9, tiles: ['is', 'the tallest', 'This', 'building', 'in the city'], answer: ['This', 'is', 'the tallest', 'building', 'in the city'] },
-        { type: 'sentencebuild', id: 't6-w-bs6', part: 9, tiles: ['she', 'the harder', 'The more', 'practised,', 'became', 'confident'], answer: ['The more', 'she', 'practised,', 'the harder', 'confident', 'became'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET6_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET6_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET6_V2.objectId, item, 9)),
     },
     {
       part: 10,
@@ -350,8 +269,8 @@ const mock: MockExam = {
           type: 'write', id: 't6-w-email', part: 10, taskNumber: 1,
           stimulusLabel: 'Write an Email',
           stimulus: `Situation: You ordered a textbook from an online store two weeks ago, but it still has not arrived, and your course has already started. You want to ask the store to check the status of your order and, if it cannot arrive within a few days, to give you a refund.\n\nWrite an email to the store's customer service team.`,
-          text: 'In your email: explain the problem, make your request clearly, and use a polite, appropriate tone. Write approximately 80–120 words.',
-          minWords: 80,
+          text: 'In your email: explain the problem, make your request clearly, and use a polite, appropriate tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.',
         },
       ],
     },
@@ -366,7 +285,7 @@ const mock: MockExam = {
           stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on urban planning. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Ortega: Many cities are deciding how to spend limited transportation budgets. Some argue the money should go to expanding public transit like buses and trains; others say it should improve roads for cars. In your view, which should a growing city prioritize, and why?\n\nStudent (Kofi): I think public transit should come first. It reduces traffic and pollution and helps people who cannot afford cars get to work. For example, cities that expanded their metro systems have seen traffic congestion drop significantly within just a few years.\n\nStudent (Lena): I understand that, but many people already depend on cars, and poor roads cause accidents and waste time. Improving roads helps everyone right now. For example, poorly maintained roads in my city cause frequent accidents, and drivers waste hours stuck in traffic every single day.`,
           text: 'Write a response of at least 100 words. State your own position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100,
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.',
         },
       ],
     },

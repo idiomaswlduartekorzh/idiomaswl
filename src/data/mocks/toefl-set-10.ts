@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET10_V2 } from '@/data/toefl/complete-the-words-sets-6-10';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET10_V2 } from '@/data/toefl/reading-sets-6-10';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET10_V2 } from '@/data/toefl/build-sentence-sets-6-10';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -15,34 +21,7 @@ const mock: MockExam = {
     {
       part: 1, skill: 'reading', title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't10-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing a review of a restaurant.',
-          template: `I had dinner at Green Table last night and I would {{1}} it to anyone. The service was {{2}} — our food arrived quickly and the waiter was very friendly. The vegetable curry was {{3}}, full of flavor, and not too expensive. My only {{4}} is that the restaurant was quite {{5}}, so it was a little hard to talk. Still, I will definitely {{6}} again.`,
-          blanks: [
-            { num: 1, prefix: 'rec', answer: 'recommend' },
-            { num: 2, prefix: 'exc', answer: 'excellent' },
-            { num: 3, prefix: 'del', answer: 'delicious' },
-            { num: 4, prefix: 'compl', answer: 'complaint' },
-            { num: 5, prefix: 'no', answer: 'noisy' },
-            { num: 6, prefix: 'ret', answer: 'return' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't10-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about rivers.',
-          template: `A river is a natural stream of water that flows toward an ocean, lake, or another river. Rivers begin in high ground, often from rain or melting {{1}}, and gradually flow {{2}}. Along the way, they shape the {{3}}, carving valleys and carrying soil. For thousands of years, humans have settled near rivers because they provide fresh water, {{4}} for crops, and a route for {{5}}. Today, however, many rivers are threatened by {{6}} from factories and farms.`,
-          blanks: [
-            { num: 1, prefix: 'sn', answer: 'snow' },
-            { num: 2, prefix: 'dow', answer: 'downhill' },
-            { num: 3, prefix: 'lan', answer: 'landscape' },
-            { num: 4, prefix: 'irr', answer: 'irrigation' },
-            { num: 5, prefix: 'tra', answer: 'transport' },
-            { num: 6, prefix: 'poll', answer: 'pollution' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET10_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Course notice)',
@@ -66,23 +45,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Photosynthesis is the process by which plants, algae, and certain bacteria convert light energy into chemical energy, and it is arguably the most important chemical reaction on Earth. Nearly all life depends on it, either directly or indirectly, because it is the ultimate source of the food we eat and the oxygen we breathe.\n\nIn simple terms, photosynthesis takes carbon dioxide from the air and water from the soil and, using energy captured from sunlight, transforms them into glucose—a sugar the plant uses for energy and growth—while releasing oxygen as a by-product. The green pigment that captures light, chlorophyll, is what gives most plants their color and is essential to the process.\n\nWhat makes photosynthesis so significant is its role in two global cycles. First, it is the foundation of nearly every food chain. Plants, as producers, convert sunlight into energy that herbivores consume, and that energy passes up the chain to predators. Without photosynthesis, these food chains would collapse. Second, photosynthesis is central to the carbon cycle. By absorbing carbon dioxide, plants help regulate the amount of this heat-trapping gas in the atmosphere. This is one reason forests are so important in discussions of climate change: they act as carbon "sinks," storing carbon that would otherwise contribute to warming.\n\nInterestingly, the oxygen-rich atmosphere we depend on is itself a product of photosynthesis. Billions of years ago, the Earth's atmosphere contained almost no free oxygen. It was early photosynthetic bacteria that gradually filled the air with oxygen, an event so transformative that scientists call it the Great Oxidation. In a very real sense, the air we breathe was manufactured by living organisms over an immense span of time—and continues to be renewed by them today.`,
-      passageTitle: 'Photosynthesis',
-      questions: [
-        { type: 'mcq', id: 't10-r-ap1', part: 4, text: 'According to the passage, why is photosynthesis so important?', options: ['It only occurs in the ocean.', 'It produces carbon dioxide.', 'It is a rare chemical reaction.', 'It is the ultimate source of our food and oxygen.'], answer: 3 },
-        { type: 'mcq', id: 't10-r-ap2', part: 4, text: 'What does photosynthesis produce, according to paragraph 2?', options: ['Glucose, with oxygen released as a by-product', 'Only carbon dioxide', 'Chlorophyll', 'Only oxygen'], answer: 0 },
-        { type: 'mcq', id: 't10-r-ap3', part: 4, text: 'Why are forests described as carbon "sinks"?', options: ['They release large amounts of carbon dioxide.', 'They absorb and store carbon that would otherwise contribute to warming.', 'They produce no oxygen.', 'They block sunlight.'], answer: 1 },
-        { type: 'mcq', id: 't10-r-ap4', part: 4, text: 'What was the "Great Oxidation"?', options: ['A period when oxygen disappeared', 'A mass extinction of plants', 'The gradual filling of the atmosphere with oxygen by early photosynthetic bacteria', 'The invention of photosynthesis by humans'], answer: 2 },
-        { type: 'mcq', id: 't10-r-ap5', part: 4, text: 'What is the main point of the final paragraph?', options: ['Photosynthesis stopped billions of years ago.', 'Bacteria cannot perform photosynthesis.', 'Oxygen has always been abundant.', 'The oxygen we breathe was produced by living organisms over a long time and is still renewed by them.'], answer: 3 },
-        { type: 'multiselect', id: 't10-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Photosynthesis is the foundation of nearly every food chain.' },
-          { letter: 'B', text: 'Plants release carbon dioxide during photosynthesis and absorb oxygen.' },
-          { letter: 'C', text: 'Early photosynthetic bacteria helped create the oxygen-rich atmosphere.' },
-          { letter: 'D', text: 'Chlorophyll blocks sunlight from reaching plants.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET10_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET10_V2.academic.text,
+      passageTitle: TOEFL_READING_SET10_V2.academic.title,
+      questions: TOEFL_READING_SET10_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET10_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +103,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't10-w-bs1', part: 9, tiles: ['He', 'plays', 'the guitar', 'in', 'a local band'], answer: ['He', 'plays', 'the guitar', 'in', 'a local band'] },
-        { type: 'sentencebuild', id: 't10-w-bs2', part: 9, tiles: ['the window', 'Could', 'open', 'you', 'please'], answer: ['Could', 'you', 'please', 'open', 'the window'] },
-        { type: 'sentencebuild', id: 't10-w-bs3', part: 9, tiles: ['visited', 'The city', 'we', 'was', 'beautiful', 'that'], answer: ['The city', 'that', 'we', 'visited', 'was', 'beautiful'] },
-        { type: 'sentencebuild', id: 't10-w-bs4', part: 9, tiles: ['arrive', 'we', 'As soon as', 'you', 'call', 'will', 'I'], answer: ['As soon as', 'we', 'arrive', 'I', 'will', 'call', 'you'] },
-        { type: 'sentencebuild', id: 't10-w-bs5', part: 9, tiles: ['is', 'The winter', 'here', 'colder', 'than', 'in my country'], answer: ['The winter', 'here', 'is', 'colder', 'than', 'in my country'] },
-        { type: 'sentencebuild', id: 't10-w-bs6', part: 9, tiles: ['the exam,', 'Not knowing', 'she', 'the answer,', 'left', 'blank'], answer: ['Not knowing', 'the answer,', 'she', 'left', 'the exam,', 'blank'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET10_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET10_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET10_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +117,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't10-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: Your neighbor has been playing loud music late at night, making it hard for you to sleep before your morning classes. You want to politely explain the problem and ask them to lower the volume after 10 p.m.\n\nWrite an email to your neighbor.`,
-          text: 'In your email: explain the problem, make your request clearly, and keep a polite, friendly tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the problem, make your request clearly, and keep a polite, friendly tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +128,7 @@ const mock: MockExam = {
         { type: 'write', id: 't10-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on work and society. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Weber: Many companies now allow employees to work from home some or all of the time. Do you think working from home is better or worse than working in an office? Why?\n\nStudent (Aisha): I think working from home is better. It saves commuting time, reduces stress, and lets people focus without office distractions. For example, without a daily commute, I have more time to exercise in the morning and start work feeling more energized.\n\nStudent (Tomás): I see the appeal, but I think the office is better for teamwork. It's easier to solve problems face to face, and people can feel isolated working alone at home. For example, my last group project moved much faster once we could sketch ideas together on a whiteboard instead of explaining them over video calls.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

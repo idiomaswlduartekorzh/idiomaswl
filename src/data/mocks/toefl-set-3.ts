@@ -1,4 +1,9 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET3_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
+import { TOEFL_READING_SET3_V2 } from '@/data/toefl/reading-sets-2-5';
+import { TOEFL_BUILD_SENTENCE_SET3_V2 } from '@/data/toefl/build-sentence-sets-2-5';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -17,30 +22,14 @@ const mock: MockExam = {
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
       questions: [
         {
-          type: 'wordcomplete', id: 't3-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a language school.',
-          template: `Dear Sir or Madam,\n\nI am interested in taking a Spanish {{1}} at your school this summer. I am a complete {{2}} and have never studied the language before. Could you tell me how many {{3}} there are each week and how long the {{4}} lasts? I would also like to know the {{5}} of the course and whether textbooks are {{6}} in the price.\n\nThank you,\nHelen`,
-          blanks: [
-            { num: 1, prefix: 'cou', answer: 'course' },
-            { num: 2, prefix: 'beg', answer: 'beginner' },
-            { num: 3, prefix: 'les', answer: 'lessons' },
-            { num: 4, prefix: 'ter', answer: 'term' },
-            { num: 5, prefix: 'co', answer: 'cost' },
-            { num: 6, prefix: 'inc', answer: 'included' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't3-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about the brain.',
-          template: `The human brain is one of the most complex {{1}} in the known universe. It contains billions of nerve cells, or {{2}}, that send signals to one another. These signals allow us to think, feel, move, and {{3}} information. The brain also controls processes we are not aware of, such as our {{4}} and heartbeat. Scientists still do not fully {{5}} how the brain produces thoughts and consciousness, making it one of the great {{6}} of science.`,
-          blanks: [
-            { num: 1, prefix: 'org', answer: 'organs' },
-            { num: 2, prefix: 'neu', answer: 'neurons' },
-            { num: 3, prefix: 'rem', answer: 'remember' },
-            { num: 4, prefix: 'brea', answer: 'breathing' },
-            { num: 5, prefix: 'und', answer: 'understand' },
-            { num: 6, prefix: 'mys', answer: 'mysteries' },
-          ],
+          type: 'wordcomplete', id: TOEFL_CTW_SET3_V2.id, part: 1, qRange: [1, 10],
+          objectId: TOEFL_CTW_SET3_V2.objectId,
+          contentVersion: String(TOEFL_CTW_SET3_V2.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
+          instructions: TOEFL_CTW_SET3_V2.instructions,
+          template: TOEFL_CTW_SET3_V2.template,
+          blanks: TOEFL_CTW_SET3_V2.blanks.map((blank) => ({ ...blank })),
         },
       ],
     },
@@ -67,22 +56,12 @@ const mock: MockExam = {
     },
     {
       part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Among the many remarkable abilities of the animal kingdom, few are as striking as echolocation—the use of sound to "see" the world. Animals that echolocate, most famously bats and dolphins, emit sounds and then listen to the echoes that bounce back from objects around them. From these echoes, they construct a detailed picture of their surroundings, allowing them to navigate and hunt even in complete darkness or murky water.\n\nThe basic principle is elegant. An echolocating animal produces a sound—often a high-pitched click or call—that travels outward until it strikes an object and reflects back. By measuring the time it takes for the echo to return, the animal can judge how far away the object is: a quick echo means a nearby object, a delayed echo a distant one. The direction of the returning sound reveals the object's location, and subtle features of the echo can reveal an object's size, shape, and even texture.\n\nWhat is astonishing is the precision this system can achieve. Bats hunting insects can detect a target as fine as a human hair in total darkness, adjusting their flight in a fraction of a second. Dolphins can use echolocation to distinguish between objects of slightly different materials, and even to detect fish hidden beneath the sand of the seafloor. To process this flood of acoustic information, these animals have highly specialized brains, and much of their neural machinery is devoted to interpreting sound.\n\nEcholocation is a beautiful example of "convergent evolution"—the process by which unrelated species independently evolve similar solutions to similar problems. Bats and dolphins are not closely related; one is a flying mammal and the other lives in the sea. Yet both faced the challenge of sensing their environment where vision fails, and both arrived at strikingly similar solutions. Studying these systems has also inspired human technology: sonar, used by ships and submarines, and even navigation aids for people who are blind, draw on the same fundamental principle that evolution discovered long before us.`,
-      passageTitle: 'Echolocation',
-      questions: [
-        { type: 'mcq', id: 't3-r-ap1', part: 4, text: 'What is echolocation?', options: ['A way of smelling prey', 'A method of flying', 'The use of light to see', 'The use of sound and its echoes to perceive surroundings'], answer: 3 },
-        { type: 'mcq', id: 't3-r-ap2', part: 4, text: 'How does an echolocating animal judge how far away an object is?', options: ['By measuring the time it takes for the echo to return', 'By its smell', 'By touching it', 'By its color'], answer: 0 },
-        { type: 'mcq', id: 't3-r-ap3', part: 4, text: 'What example shows the precision of bat echolocation?', options: ['Bats can fly during the day.', 'Bats can detect a target as fine as a human hair in total darkness.', 'Bats can sing loudly.', 'Bats never miss their prey.'], answer: 1 },
-        { type: 'mcq', id: 't3-r-ap4', part: 4, text: 'What is "convergent evolution," as illustrated by bats and dolphins?', options: ['Species that always live together', 'Two species becoming one', 'Unrelated species independently evolving similar solutions to similar problems', 'Animals losing an ability'], answer: 2 },
-        { type: 'mcq', id: 't3-r-ap5', part: 4, text: 'How has echolocation inspired human technology?', options: ['It led to the invention of light bulbs.', 'It made radios possible.', 'It has not.', 'It inspired sonar and navigation aids for blind people, based on the same principle.'], answer: 3 },
-        { type: 'multiselect', id: 't3-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Bats and dolphins both use echolocation despite not being closely related.' },
-          { letter: 'B', text: 'Echolocation relies on light rather than sound.' },
-          { letter: 'C', text: 'The time an echo takes to return helps an animal judge distance.' },
-          { letter: 'D', text: 'Echolocating animals have simple brains with little sound processing.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      instructions: TOEFL_READING_SET3_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 forman Academic Passage. La selección múltiple final es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET3_V2.academic.text,
+      passageTitle: TOEFL_READING_SET3_V2.academic.title,
+      questions: TOEFL_READING_SET3_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET3_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -133,15 +112,10 @@ const mock: MockExam = {
     },
     {
       part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't3-w-bs1', part: 9, tiles: ['We', 'are', 'hosting', 'a dinner', 'on Saturday'], answer: ['We', 'are', 'hosting', 'a dinner', 'on Saturday'] },
-        { type: 'sentencebuild', id: 't3-w-bs2', part: 9, tiles: ['the door', 'you', 'unlock', 'Could', 'for me'], answer: ['Could', 'you', 'unlock', 'the door', 'for me'] },
-        { type: 'sentencebuild', id: 't3-w-bs3', part: 9, tiles: ['suggested', 'The route', 'you', 'was', 'much faster'], answer: ['The route', 'you', 'suggested', 'was', 'much faster'] },
-        { type: 'sentencebuild', id: 't3-w-bs4', part: 9, tiles: ['stops,', 'the music', 'When', 'we\'ll', 'go home'], answer: ['When', 'the music', 'stops,', 'we\'ll', 'go home'] },
-        { type: 'sentencebuild', id: 't3-w-bs5', part: 9, tiles: ['is', 'This job', 'my last one', 'than', 'harder'], answer: ['This job', 'is', 'harder', 'than', 'my last one'] },
-        { type: 'sentencebuild', id: 't3-w-bs6', part: 9, tiles: ['the letter,', 'Reading', 'he', 'the phone', 'reached for'], answer: ['Reading', 'the letter,', 'he', 'reached for', 'the phone'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET3_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET3_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET3_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +123,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't3-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You attended a training course, but you did not receive the certificate you were promised at the end. You want to ask when you will receive it and how it will be sent.\n\nWrite an email to the course administrator.`,
-          text: 'In your email: explain the situation, ask your questions clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the situation, ask your questions clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +134,7 @@ const mock: MockExam = {
         { type: 'write', id: 't3-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on the environment. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Haruki: Some people believe that protecting the environment is mainly the responsibility of governments, while others believe individuals must change their own behavior. Which do you think matters more, and why?\n\nStudent (Lucia): I think individual action matters most. If millions of people reduce waste, save energy, and use less water, the combined effect is huge. For example, when my neighborhood started a recycling initiative, participation grew simply because people saw their neighbors doing it.\n\nStudent (Ben): I disagree. Individuals can only do so much; real change requires governments to pass laws and control big polluters. For example, no amount of individual recycling can offset the emissions of a single large factory that ignores environmental regulations.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

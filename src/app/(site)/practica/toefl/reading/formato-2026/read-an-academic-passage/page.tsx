@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle2, FileText, SearchCheck } from 'lucide-react';
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import ReadingSet1Practice from '@/components/toefl/ReadingSet1Practice';
 import {
   PRACTICE_BASE_URL,
   TOEFL_ACADEMIC_PASSAGES,
@@ -84,6 +85,8 @@ export default function Page() {
               Fuente oficial revisada: <a href={ETS_TEST_CONTENT_URL} style={{ color: ACCENT, fontWeight: 800 }}>ETS TOEFL iBT Test Content and Structure</a>.
             </p>
           </section>
+
+          <ReadingSet1Practice scope="academic" />
 
           <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16, marginBottom: '1.2rem' }}>
             <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Pasaje original</p>

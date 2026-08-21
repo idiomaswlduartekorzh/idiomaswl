@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Brain, MessageSquareText, Target } from 'lucide-react';
 import AcademicDiscussionWorkbench from '@/components/exam-practice/AcademicDiscussionWorkbench';
+import TimedWritingTask from '@/components/toefl/TimedWritingTask';
+import { getToeflWritingConstructedTask } from '@/data/toefl/writing-constructed-set-1';
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import {
   PRACTICE_BASE_URL,
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const timedTask = getToeflWritingConstructedTask('academic-discussion');
   return (
     <>
       <LearningResourceJsonLd
@@ -151,6 +154,12 @@ export default function Page() {
             </div>
           </section>
 
+          <TimedWritingTask task={timedTask} />
+
+          <section className="wl-card" style={{ padding: '1rem', borderRadius: 16, margin: '1rem 0' }}>
+            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Suplemento WeLearn sin reloj</p>
+            <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.6 }}>El banco siguiente ofrece frases y checklist durante la escritura. Es práctica guiada adicional y no simula las condiciones cerradas del examen.</p>
+          </section>
           <AcademicDiscussionWorkbench prompts={TOEFL_ACADEMIC_DISCUSSION_PROMPTS} accent={ACCENT} />
 
           <section className="wl-card" style={{ padding: '1.15rem', borderRadius: 16, marginTop: '1rem' }}>

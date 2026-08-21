@@ -1,4 +1,9 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET2_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
+import { TOEFL_READING_SET2_V2 } from '@/data/toefl/reading-sets-2-5';
+import { TOEFL_BUILD_SENTENCE_SET2_V2 } from '@/data/toefl/build-sentence-sets-2-5';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -17,30 +22,14 @@ const mock: MockExam = {
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
       questions: [
         {
-          type: 'wordcomplete', id: 't2-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a professor to ask for a reference.',
-          template: `Dear Professor Blake,\n\nI am applying for a summer {{1}} at a local research lab, and the application requires a {{2}} from a teacher. As I really enjoyed your biology {{3}} and did well in it, I was hoping you might be willing to {{4}} me. The {{5}} for the application is the end of the month. Please let me know if you would be {{6}} to help.\n\nThank you very much,\nRafael`,
-          blanks: [
-            { num: 1, prefix: 'intern', answer: 'internship' },
-            { num: 2, prefix: 'ref', answer: 'reference' },
-            { num: 3, prefix: 'cou', answer: 'course' },
-            { num: 4, prefix: 'rec', answer: 'recommend' },
-            { num: 5, prefix: 'dead', answer: 'deadline' },
-            { num: 6, prefix: 'wil', answer: 'willing' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't2-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about penguins.',
-          template: `Penguins are birds that cannot {{1}}, but they are excellent swimmers. Their wings have become {{2}} that help them move quickly through the water in search of fish. Most penguins live in the southern half of the world, and some survive in extremely {{3}} conditions. To keep warm, they have a thick layer of {{4}} under their skin and huddle together in large {{5}}. Sadly, climate change is now threatening the {{6}} where many penguins live.`,
-          blanks: [
-            { num: 1, prefix: 'fl', answer: 'fly' },
-            { num: 2, prefix: 'fli', answer: 'flippers' },
-            { num: 3, prefix: 'co', answer: 'cold' },
-            { num: 4, prefix: 'fa', answer: 'fat' },
-            { num: 5, prefix: 'gro', answer: 'groups' },
-            { num: 6, prefix: 'hab', answer: 'habitats' },
-          ],
+          type: 'wordcomplete', id: TOEFL_CTW_SET2_V2.id, part: 1, qRange: [1, 10],
+          objectId: TOEFL_CTW_SET2_V2.objectId,
+          contentVersion: String(TOEFL_CTW_SET2_V2.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
+          instructions: TOEFL_CTW_SET2_V2.instructions,
+          template: TOEFL_CTW_SET2_V2.template,
+          blanks: TOEFL_CTW_SET2_V2.blanks.map((blank) => ({ ...blank })),
         },
       ],
     },
@@ -67,22 +56,12 @@ const mock: MockExam = {
     },
     {
       part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Few objects in daily life seem as simple as a mirror, yet the story of how humans learned to make good mirrors is a surprisingly long and revealing one. For most of history, seeing a clear reflection of oneself was a rare experience. Early humans could glimpse themselves only in still water or in polished stones, and these reflections were dim and distorted.\n\nThe first manufactured mirrors, made thousands of years ago, were sheets of polished metal such as bronze, copper, or silver. These could produce a recognizable reflection, but they had serious drawbacks: the images were dark, the metal tarnished and needed constant polishing, and large mirrors were extremely expensive. For much of human history, therefore, a good mirror was a luxury owned only by the wealthy.\n\nThe breakthrough came with glass. Glassmakers discovered that a thin layer of reflective metal applied to the back of a sheet of glass produced a far brighter and clearer image than polished metal alone, while the glass protected the metal from tarnishing. In the sixteenth century, Venetian craftsmen perfected a method using a coating of tin and mercury, and Venice became famous—and rich—for its mirrors. These were still costly, and the process was dangerous, since mercury is highly toxic. But the quality was unprecedented.\n\nThe true democratization of the mirror came in the nineteenth century, when a German chemist developed a process for coating glass with a thin layer of silver using relatively safe chemicals. This method was cheaper, safer, and produced excellent mirrors that could be manufactured on a large scale. For the first time, ordinary people could own a clear mirror. Historians have noted that the spread of affordable mirrors may have subtly changed human self-perception: when people could easily and regularly see themselves as others see them, it likely affected everything from fashion to the very sense of individual identity. A humble object, it turns out, quietly reshaped how humans understand themselves.`,
-      passageTitle: 'A Short History of the Mirror',
-      questions: [
-        { type: 'mcq', id: 't2-r-ap1', part: 4, text: 'How did early humans see their reflections?', options: ['In manufactured glass mirrors', 'Only in still water or polished stones, dimly and with distortion', 'In photographs', 'They could not see reflections at all.'], answer: 1 },
-        { type: 'mcq', id: 't2-r-ap2', part: 4, text: 'What were the drawbacks of early metal mirrors?', options: ['They were too cheap to be valued.', 'They were too light.', 'The images were dark, the metal tarnished, and large ones were very expensive.', 'They broke too easily.'], answer: 2 },
-        { type: 'mcq', id: 't2-r-ap3', part: 4, text: 'Why did glass produce a better mirror than polished metal alone?', options: ['Glass never breaks.', 'Glass is a metal.', 'Glass is heavier.', 'A thin layer of reflective metal behind glass gave a brighter, clearer image, and the glass protected the metal from tarnishing.'], answer: 3 },
-        { type: 'mcq', id: 't2-r-ap4', part: 4, text: 'What made mirrors affordable to ordinary people in the nineteenth century?', options: ['A German chemist\'s process for coating glass with silver using relatively safe chemicals', 'Polished bronze', 'Cheaper water', 'Venetian tin-and-mercury coating'], answer: 0 },
-        { type: 'mcq', id: 't2-r-ap5', part: 4, text: 'What broader effect did affordable mirrors have, according to the passage?', options: ['They had no effect on people.', 'They may have changed human self-perception, affecting fashion and the sense of individual identity.', 'They made people dislike their appearance.', 'They ended the use of glass.'], answer: 1 },
-        { type: 'multiselect', id: 't2-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Early manufactured mirrors were made of polished metal such as bronze or silver.' },
-          { letter: 'B', text: 'Good mirrors were cheap and common throughout history.' },
-          { letter: 'C', text: 'A nineteenth-century silvering process made clear mirrors affordable for ordinary people.' },
-          { letter: 'D', text: 'Glass mirrors were invented before metal mirrors.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      instructions: TOEFL_READING_SET2_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 forman Academic Passage. La selección múltiple final es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET2_V2.academic.text,
+      passageTitle: TOEFL_READING_SET2_V2.academic.title,
+      questions: TOEFL_READING_SET2_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET2_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -133,15 +112,10 @@ const mock: MockExam = {
     },
     {
       part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't2-w-bs1', part: 9, tiles: ['She', 'volunteers', 'at', 'a shelter', 'on weekends'], answer: ['She', 'volunteers', 'at', 'a shelter', 'on weekends'] },
-        { type: 'sentencebuild', id: 't2-w-bs2', part: 9, tiles: ['the window', 'you', 'open', 'Could', 'a little'], answer: ['Could', 'you', 'open', 'the window', 'a little'] },
-        { type: 'sentencebuild', id: 't2-w-bs3', part: 9, tiles: ['gave', 'The advice', 'you', 'me', 'was', 'helpful'], answer: ['The advice', 'you', 'gave', 'me', 'was', 'helpful'] },
-        { type: 'sentencebuild', id: 't2-w-bs4', part: 9, tiles: ['ready,', 'is', 'When', 'we\'ll', 'the taxi', 'leave'], answer: ['When', 'the taxi', 'is', 'ready,', 'we\'ll', 'leave'] },
-        { type: 'sentencebuild', id: 't2-w-bs5', part: 9, tiles: ['is', 'This model', 'the older one', 'than', 'lighter'], answer: ['This model', 'is', 'lighter', 'than', 'the older one'] },
-        { type: 'sentencebuild', id: 't2-w-bs6', part: 9, tiles: ['the phone,', 'Answering', 'she', 'the good news', 'heard'], answer: ['Answering', 'the phone,', 'she', 'heard', 'the good news'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET2_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET2_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET2_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +123,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't2-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You ordered a birthday cake from a bakery for this Saturday, but you now need it for Friday instead. You want to ask whether the date can be changed and confirm the details of your order.\n\nWrite an email to the bakery.`,
-          text: 'In your email: explain the change you need, confirm your order details, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the change you need, confirm your order details, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +134,7 @@ const mock: MockExam = {
         { type: 'write', id: 't2-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on society. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Owens: Some people think that volunteering should be a required part of every student's education, while others believe it should remain a personal choice. What is your view, and why?\n\nStudent (Amara): I think it should be required. Volunteering builds empathy, teaches responsibility, and connects students with their communities. For example, when my class volunteered at a local shelter, several students who had never considered social work discovered a genuine interest in it.\n\nStudent (Kenji): I disagree. Volunteering only has real value when it comes from genuine willingness. If it is forced, students may do it half-heartedly, and it loses its meaning. For example, a friend of mine was required to volunteer at a nursing home and resented every visit, which likely did more harm than good.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

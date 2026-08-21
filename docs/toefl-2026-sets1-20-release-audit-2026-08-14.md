@@ -1,0 +1,241 @@
+# TOEFL 2026 — acta consolidada de Sets 1–20 para preview
+
+Fecha: 14 de agosto de 2026
+
+Revalidación de rama y preview: 20 de agosto de 2026
+
+Owner y firma de derechos: José David Duarte Silva
+
+Dictamen actualizado: **gates no-audio cerrados y versión pre-audio autorizada para
+producción por José David Duarte Silva el 20 de agosto de 2026**. La publicación no
+convierte el producto en “terminado”: las 400 piezas nuevas de audio siguen pendientes
+y la interfaz debe mantener visibles sus bloqueos y la omisión explícita.
+
+Los reportes detallados e inventarios intermedios se retiraron de la rama operativa
+después de crear el respaldo remoto
+`archive/toefl-2026-full-audit-20260820`. Aquí se conserva el dictamen consolidado;
+producto, pruebas, guardianes, manifiesto y paquete de audio permanecen versionados.
+
+## Qué significa el dictamen
+
+Los veinte sets ya tienen contenido escrito, composición, navegación y resultados para
+una práctica fija alineada con las familias de tarea TOEFL iBT vigentes desde el 21 de
+enero de 2026. La forma reproduce el volumen de la práctica oficial publicada por ETS:
+40 Reading, 34 Listening, 12 Writing y 11 Speaking, para 97 interacciones.
+
+El examen operacional publicado por ETS usa una base aproximada de 50 Reading y 47
+Listening y cambia según la ruta adaptativa. Por eso el producto se presenta como
+**simulacro alineado no adaptativo de ruta fija**, no como réplica adaptativa, examen
+oficial ni equivalencia psicométrica. Writing y Speaking construidos tampoco reciben
+una banda inventada.
+
+Fuentes oficiales revalidadas el 14 de agosto de 2026:
+
+- [ETS — Test Content and Structure](https://www.ets.org/content/ets-org/language-master/in/home/toefl/institutions/ibt/about/content-structure.html);
+- [ETS — 2026 Test Blueprint and Specifications](https://www.ets.org/content/dam/ets-india/pdfs/toefl/toefl-ibt-test-specifications-2026.pdf);
+- [ETS — Full-length Practice Test 1](https://www.ets.org/content/dam/ets-org/pdfs/toefl/toefl-ibt-full-length-practice-test-1.pdf).
+
+ETS advierte que su práctica alineada está adaptada para práctica y no es una réplica
+exacta. WeLearn conserva esa misma limitación de forma visible.
+
+## Revisión manual del owner sobre Reading Set 1 — 20 de agosto de 2026
+
+José David Duarte Silva reportó que los textos parecían demasiado cortos, que los
+huecos de Complete the Words se veían muy juntos y que Listening se detenía al pasar
+del primer al segundo ítem. La comparación se repitió contra el blueprint y el Full-length
+Practice Test 1 vigente de ETS.
+
+ETS admite textos sencillos de aproximadamente 15–50 palabras y textos complejos de
+hasta 200; Read in Daily Life aparece en sets de 2 o 3 preguntas y el pasaje académico
+de la práctica publicada lleva 5. Complete the Words se presenta como un párrafo con
+10 palabras incompletas: después de una primera oración intacta, se oculta la segunda
+mitad de cada segunda palabra. Por tanto, la concentración de huecos es parte de la
+mecánica; la interfaz sólo debe mantener el párrafo legible.
+
+| Bloque observado | Palabras | Preguntas/huecos | Dictamen |
+|---|---:|---:|---|
+| M1 Complete the Words — The Sun | 76 | 10 | Conforme; párrafo continuo y patrón alternado. |
+| M1 Bookshop notice | 57 | 3 | Conforme con Daily Life de 3 ítems. |
+| M1 Delivery messages | 75 | 2 | Conforme; `DELIVERY APP` identifica turnos, no copias del texto. |
+| M1 The Green Sahara | 187 | 5 | Conforme con pasaje académico cercano a 200 palabras. |
+| M2 Complete the Words — Kelp Forests | 84 | 10 | Conforme; párrafo continuo y patrón alternado. |
+| M2 Campus bicycle repair station | 63 | 2 | Conforme con Daily Life de 2 ítems. |
+| M2 Study-room reservation confirmation | 72 | 3 | Conforme con Daily Life de 3 ítems. |
+| M2 Mangrove Forests | 188 | 5 | Conforme con pasaje académico cercano a 200 palabras. |
+
+No se expandieron esos textos porque hacerlo los alejaría de la forma oficial. Se
+mejoró únicamente el espaciado, ancho de lectura, interlineado y contraste de los
+huecos. El bloqueo de Listening sí era un defecto: React conservaba el estado interno
+de reproducción terminada del reproductor al sustituir el ítem 1 por el 2. El segundo MP3 existía,
+pero su botón quedaba inerte mientras la navegación esperaba que terminara. El commit
+`155f8828` asigna identidad por medio a cada panel, remonta el reproductor al cambiar
+de audio y etiqueta los medios realmente pendientes con una acción explícita de
+omisión. Ningún MP3 fue abierto ni modificado.
+
+## Inventario verificado por set
+
+Cada ruta fue solicitada de forma independiente contra el build de producción local.
+`PASS` significa HTTP 200, título correcto, 97 interacciones, 8 etapas, 25 bloqueos por
+medio y disclosure de ruta fija visibles en el HTML inicial.
+
+| Set | Ruta | Reading | Listening | Writing | Speaking | Audio nuevo | Runtime |
+|---:|---|---:|---:|---:|---:|---:|---|
+| 1 | `set-1` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 2 | `set-2` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 3 | `set-3` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 4 | `set-4` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 5 | `set-5` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 6 | `set-6` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 7 | `set-7` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 8 | `set-8` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 9 | `set-9` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 10 | `set-10` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 11 | `set-11` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 12 | `set-12` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 13 | `set-13` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 14 | `set-14` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 15 | `set-15` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 16 | `set-16` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 17 | `set-17` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 18 | `set-18` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 19 | `set-19` | 40 | 34 | 12 | 11 | 20 | PASS |
+| 20 | `set-20` | 40 | 34 | 12 | 11 | 20 | PASS |
+| **Total** | **20 rutas** | **800** | **680** | **240** | **220** | **400** | **20/20** |
+
+Los 97 ítems están escritos en cada set. “Audio nuevo” cuenta archivos, no preguntas:
+14 Listening, 2 Repeat y 4 Interview por set. Como algunos estímulos de Listening se
+comparten entre preguntas, los 20 archivos pendientes bloquean 25 interacciones por
+set: 19 Listening y 6 Speaking.
+
+## Auditoría de contenido y scoring
+
+| Superficie | Estado comprobado | Resultado que puede mostrarse |
+|---|---|---|
+| Reading 40 | Los dos módulos, render, respuestas e IDs privados pasan guardianes en Sets 1–20. | Aciertos brutos locales. |
+| Listening 34 | 15 interacciones por set reutilizan medios; 19 quedan bloqueadas. Las 680 claves viven sólo en servidor. | Aciertos brutos sólo sobre ítems presentados; bloqueos nunca son errores. |
+| Build a Sentence 10 | Orden, IDs, renderer y claves privadas pasan guardianes en Sets 1–20. | Aciertos brutos locales. |
+| Email + Discussion 2 | Prompts originales presentes y relojes de 7/10 minutos aplicados. | `not_evaluated`; sin banda automática. |
+| Repeat 7 + Interview 4 | Composición completa; 5 Repeat reutilizables y 6 prompts bloqueados por set. Captura real local disponible cuando el estímulo esté listo. | `not_evaluated`; sin autoevaluación 1–6. |
+
+La revisión de segunda persona fue dispensada expresamente por el owner. El acta no
+afirma independencia editorial. La firma de derechos declara autoría propia del banco;
+no convierte el material en contenido oficial ETS. Las revisiones factuales, de
+unicidad, paridad datos→render→scoring y procedencia registradas en los lotes anteriores
+se conservan como evidencia.
+
+## Experiencia comprobada
+
+- ocho etapas en orden irreversible;
+- Reading editable dentro del módulo activo;
+- Listening y Speaking avanzan un ítem a la vez, sin volver atrás;
+- deadline absoluto tras recarga para los relojes publicados o declarados;
+- no se inventan segundos por respuesta de Listening o Speaking;
+- audio listo de una sola reproducción; respuesta bloqueada hasta que termine;
+- medio faltante visible y excluido del scoring;
+- captura de Speaking temporal en la pestaña, sin carga a servidor y sin nota;
+- resultado sin overall parcial, sin banda aproximada y sin conversión `/120`;
+- persistencia probada al recargar y vista 320×900 sin overflow horizontal;
+- VoiceOver T13, T16 y T17 aprobados por el owner.
+
+## Evidencia automática
+
+- Reading fijo: checker PASS y unit 3/3;
+- Listening fijo: checker PASS y unit 3/3;
+- Speaking fijo: checker PASS y unit 2/2;
+- sesión fija: checker PASS y unit 3/3;
+- CTW 8/8, Reading 8/8, Build 9/9 y Writing 8/8;
+- TypeScript PASS, ESLint dirigido PASS y diff dirigido TOEFL sin errores;
+- build Webpack de producción PASS, 1.365/1.365 rutas. El `npm run build` exacto
+  ejecutó primero todos los guardianes y después Turbopack rechazó únicamente el
+  symlink externo de `node_modules` propio de este worktree temporal; no reportó una
+  falla de aplicación. La repetición oficial con `--webpack` compiló completa;
+- smoke HTML del build: 20/20 rutas PASS;
+- guardianes globales PASS: catálogo 465, escritura 480, 24 series y 480 MP3 de
+  práctica auditiva ajenos a TOEFL preservados;
+- después de incorporar `origin/main` `16b80b03`, los ocho guardianes TOEFL y sus 44
+  pruebas unitarias volvieron a pasar. Los guardianes de inmutabilidad de audio se
+  limitaron correctamente a `public/audio/toefl/`: siguen bloqueando cualquier cambio
+  de audio TOEFL, pero no confunden un MP3 nuevo de otro producto traído por `main` con
+  una regresión TOEFL;
+- el preview Vercel del merge `b32d25da` ejecutó el `npm run build` exacto con
+  Turbopack y Node 24: guardianes PASS, compilación PASS, TypeScript PASS y
+  1.822/1.822 páginas estáticas generadas. El despliegue
+  `dpl_DhWVcV8HmU2uBUVcbevP92mTEbjy` quedó `READY` y asociado al alias protegido de
+  la rama. Su manifiesto de outputs contiene la ruta
+  `examenes/[exam]/practica/[mockId]` usada por los veinte sets;
+- el despliegue Git posterior `dpl_7pkH2W2xTbV2DqSyh56Chf8zjkuN`, correspondiente
+  al arreglo `155f8828`, no llegó a publicarse: la clonación consumió 39:13 y Vercel
+  lo cerró con `BUILD_EXCEEDED_MAXIMUM_TIME` al alcanzar el límite total de 45
+  minutos. Antes del corte sí pasó guardianes, compilación, TypeScript y generación
+  de rutas. El siguiente intento debe evitar esa clonación lenta y permanecer como
+  preview protegido, nunca producción;
+- el despliegue directo desde el commit limpio `50ec7ed6` evitó esa clonación. El
+  preview `dpl_CC274qEYiqZWye8rWZMEXqBPy29a` quedó `READY`: catálogo protegido PASS,
+  compilación PASS, TypeScript PASS, 1.822/1.822 páginas y ruta
+  `examenes/[exam]/practica/[mockId]` presente en el manifiesto. El alias estable de
+  la rama fue asignado al nuevo preview y conserva SSO: Set 1 responde 302 al login
+  cuando se solicita sin sesión y HTTP 200 mediante la comprobación autenticada del
+  CLI;
+- la revisión visual del owner detectó que los campos de Complete the Words heredaban
+  el `line-height` alto del párrafo y parecían tarjetas verticales. Se conservaron sin
+  cambios las 10 posiciones oficiales y el scoring, pero los campos pasaron a huecos
+  subrayados compactos: 26 px de alto en 1.440 px y 24 px en 390 px. Chromium verificó
+  foco visible, Tab 1→2, consola sin errores y móvil sin overflow (390/390); el checker
+  CTW impide reintroducir `font: inherit` y la altura genérica del input;
+- el commit limpio `ecf0b591` se publicó sólo como preview directo. El despliegue
+  `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q` quedó `READY`: catálogo protegido PASS,
+  compilación Turbopack PASS en 2,2 minutos, TypeScript PASS, 1.822/1.822 páginas y
+  ruta `examenes/[exam]/practica/[mockId]` presente. El alias protegido estable apunta
+  a este artefacto y una petición anónima a Set 1 continúa recibiendo 302 al SSO;
+- el owner indicó “continúa” después de revisar el arreglo, por lo que el gate humano
+  específico del espaciado CTW queda aprobado. Esto no aprueba producción ni audios;
+- se incorporó después el `origin/main` `b5e615cb` mediante `d16a75bb`, sin perder lo
+  añadido por SAT/IELTS/Habla. El único conflicto fue aditivo en los tipos compartidos:
+  quedaron `moduleId` para TOEFL e `insights` para SAT. La rama quedó 0 commits detrás;
+- tras esa reconciliación volvieron a pasar catálogo 465, guardianes globales, SAT,
+  los ocho guardianes TOEFL, 44/44 pruebas, TypeScript y ESLint dirigido. El build de
+  producción con Webpack compiló en 104 s, terminó TypeScript en 63 s y generó
+  1.834/1.834 páginas, incluida la ruta dinámica de los simulacros;
+- `main` avanzó otra vez durante la cola de Vercel. `a6707877` se incorporó sin
+  conflictos en `50d1ba6f`; la rama quedó nuevamente 0 commits detrás. Los ocho
+  guardianes TOEFL, 44/44 pruebas, TypeScript, catálogo, guardianes globales, IELTS,
+  SAT y el build Webpack de 1.834/1.834 páginas volvieron a pasar;
+- Vercel retiró antes de compilar los intentos reconciliados Git
+  `dpl_BFxacEDNESe67QAprZwGnJw6K8KD` y directo
+  `dpl_13NNLoLdYLag9e9g44TUyBjigi2p` al entrar una producción y dos previews IELTS.
+  No existe un fallo de aplicación asociado. El alias estable TOEFL sigue sirviendo
+  el preview anterior aprobado `dpl_3HHzkaRN4rjaPAPyQ7B4WrVA5s6q` como `READY`;
+- el intento posterior `dpl_Ch1VKomZPfWwTLSk8xCa75RNLaD2`, commit `1dd7b7e`, terminó
+  `READY`: catálogo 465, compilación, TypeScript, 1.834/1.834 páginas y ruta dinámica
+  de simulacro PASS. El alias protegido se movió a este artefacto; Set 1 responde 200
+  con bypass autenticado y 302/SSO sin sesión;
+- José David Duarte Silva declaró **“voiceover ok”** el 2026-08-20 después de recibir
+  los checklists T16 y T17. Ambas matrices quedan cerradas y sin pendiente humano;
+- Chromium/Playwright restauró Set 1 directamente en Listening Módulo 1 sin reproducir
+  audio. El ítem 1/18, marcado localmente como reproducción ya consumida, avanzó al
+  2/18; el segundo ítem montó un reproductor nuevo, volvió a desactivar respuestas y
+  avance, y conservó el aviso de escucha completa. En el ítem 6/18, primer medio
+  ausente, la UI mostró el estado bloqueado, desactivó sus opciones y el control
+  `Omitir ítem sin audio y continuar` avanzó al 7/18. Consola: cero errores; únicamente
+  avisos no bloqueantes de `preload` CSS;
+- ningún audio fue reproducido, escuchado, transcrito, generado ni modificado.
+
+## Gates para declarar “producto terminado”
+
+| Gate | Estado | Qué falta |
+|---|---|---|
+| Contenido escrito y composición | CERRADO | 20×97 presentes y auditados. |
+| Runner, clocks y resultados honestos | CERRADO | Pruebas y build pasan. |
+| Producción local de las 20 rutas | CERRADO | Smoke 20/20 pasa. |
+| VoiceOver T16/T17 | CERRADO | José David Duarte Silva aprobó ambos checklists con “voiceover ok” el 2026-08-20. |
+| Rama contra `origin/main` | CERRADO | `origin/main` `a6707877` está incorporado en `50d1ba6f`; 0 commits detrás, catálogo, TypeScript, build y guardianes TOEFL PASS. |
+| Build del preview Vercel | CERRADO | `dpl_Ch1VKomZPfWwTLSk8xCa75RNLaD2`, commit `1dd7b7e`, está `READY`; 1.834/1.834 páginas y Set 1 autenticado 200. El alias protegido apunta al artefacto. |
+| Revisión funcional y accesible del preview | CERRADO | Espaciado CTW y VoiceOver T16/T17 aprobados por el owner. Playwright confirmó Listening 1→2, reproductor reiniciado y omisión explícita 6→7 sin reproducir audio. La protección SSO no se debilitó. |
+| Aprobación de audio | ABIERTO | Manifiesto/costo listos y diez voces 1× propuestas: 400 archivos, 68.890 caracteres; piloto 10 archivos/2.845 créditos cabe. La cuenta sólo tiene 30.171 créditos y reinicia 2026-09-05 18:13 COT, por lo que el lote completo no cabe todavía. Falta autorización explícita del piloto. |
+| Generación y QA de audio | BLOQUEADO | Crear sólo el lote aprobado y luego revisar técnica, texto/voz y experiencia. |
+| Producción pre-audio | AUTORIZADA | El owner autorizó integrar y publicar antes de generar los audios; los bloqueos de medio deben seguir siendo explícitos. |
+
+Conclusión: los 20 simulacros y el arreglo tienen **los gates no-audio cerrados** y el
+owner autorizó su despliegue como versión pre-audio. No deben venderse ni rotularse
+como producto terminado: falta el gate separado de manifiesto, voces, muestra, costo,
+generación y QA de los 400 audios.

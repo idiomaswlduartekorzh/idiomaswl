@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET7_V2 } from '@/data/toefl/complete-the-words-sets-6-10';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET7_V2 } from '@/data/toefl/reading-sets-6-10';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET7_V2 } from '@/data/toefl/build-sentence-sets-6-10';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -15,34 +21,7 @@ const mock: MockExam = {
     {
       part: 1, skill: 'reading', title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't7-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a study-abroad advisor.',
-          template: `Dear Ms. Carter,\n\nI am interested in {{1}} for the exchange program in Japan next year. Could you tell me what {{2}} I need to submit and the {{3}} for the application? I am also worried about the {{4}} of living there. Are there any {{5}} available for students? I would be grateful for any {{6}} you can give me.\n\nBest wishes,\nElena`,
-          blanks: [
-            { num: 1, prefix: 'ap', answer: 'applying' },
-            { num: 2, prefix: 'doc', answer: 'documents' },
-            { num: 3, prefix: 'dea', answer: 'deadline' },
-            { num: 4, prefix: 'c', answer: 'cost' },
-            { num: 5, prefix: 'schol', answer: 'scholarships' },
-            { num: 6, prefix: 'adv', answer: 'advice' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't7-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about recycling.',
-          template: `Recycling helps reduce the amount of {{1}} that ends up in landfills. When materials such as glass, paper, and {{2}} are collected and processed, they can be turned into new products, saving {{3}} and energy. However, recycling only works if items are sorted {{4}}. Putting the wrong materials in a recycling bin can {{5}} an entire batch. For this reason, many cities provide clear {{6}} about what can and cannot be recycled.`,
-          blanks: [
-            { num: 1, prefix: 'wa', answer: 'waste' },
-            { num: 2, prefix: 'pl', answer: 'plastic' },
-            { num: 3, prefix: 'reso', answer: 'resources' },
-            { num: 4, prefix: 'corr', answer: 'correctly' },
-            { num: 5, prefix: 'ru', answer: 'ruin' },
-            { num: 6, prefix: 'inst', answer: 'instructions' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET7_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Gym notice)',
@@ -66,23 +45,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Coral reefs are often called the "rainforests of the sea," and the comparison is apt. Though they cover less than one percent of the ocean floor, they support roughly a quarter of all marine species. This extraordinary biodiversity rests on an unlikely foundation: a partnership between tiny animals called coral polyps and even tinier algae that live inside their tissues.\n\nThe algae, known as zooxanthellae, carry out photosynthesis, converting sunlight into energy. They share this energy with the coral, which in return provides the algae with shelter and the compounds they need. This mutually beneficial relationship, called symbiosis, is what allows corals to build the massive calcium-carbonate structures we recognize as reefs. It also explains the corals' brilliant colors, which come largely from the algae.\n\nBut this partnership is fragile. When water temperatures rise even slightly above normal for a sustained period, the coral expels its algae in a stress response. Without the algae, the coral loses both its color and its main energy source—a phenomenon known as coral bleaching. A bleached coral is not dead, but it is starving, and if normal conditions do not return quickly, it will die.\n\nThe threat is not only heat. Ocean acidification, caused by seawater absorbing carbon dioxide from the atmosphere, makes it harder for corals to build their skeletons. Combined with pollution and overfishing, these pressures have led scientists to warn that many of the world's reefs could disappear within decades. Yet there is cause for cautious hope: some coral populations show signs of adapting to warmer water, and restoration projects have successfully regrown damaged reefs in several regions.`,
-      passageTitle: 'Coral Reefs',
-      questions: [
-        { type: 'mcq', id: 't7-r-ap1', part: 4, text: 'Why are coral reefs compared to rainforests?', options: ['They are both made of calcium carbonate.', 'They grow at the same rate.', 'They are found in the same regions.', 'They cover a small area but support very high biodiversity.'], answer: 3 },
-        { type: 'mcq', id: 't7-r-ap2', part: 4, text: 'According to paragraph 2, what do the zooxanthellae provide to the coral?', options: ['Energy from photosynthesis', 'Protection from predators', 'Calcium carbonate', 'Shelter'], answer: 0 },
-        { type: 'mcq', id: 't7-r-ap3', part: 4, text: 'What is coral bleaching, as described in paragraph 3?', options: ['The coral turning a brighter color', 'The coral expelling its algae under heat stress, losing color and its energy source', 'A disease that spreads between reefs', 'The natural death of old coral'], answer: 1 },
-        { type: 'mcq', id: 't7-r-ap4', part: 4, text: 'According to paragraph 4, how does ocean acidification harm corals?', options: ['It blocks sunlight from reaching the algae.', 'It raises water temperatures.', 'It makes it harder for corals to build their skeletons.', 'It increases the number of predators.'], answer: 2 },
-        { type: 'mcq', id: 't7-r-ap5', part: 4, text: 'What "cause for cautious hope" does the author mention?', options: ['Acidification has stopped.', 'Fishing has been banned worldwide.', 'Reefs are no longer threatened.', 'Some corals show signs of adapting, and restoration projects have regrown damaged reefs.'], answer: 3 },
-        { type: 'multiselect', id: 't7-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Coral reefs cover most of the ocean floor.' },
-          { letter: 'B', text: 'The relationship between coral and algae is a form of symbiosis.' },
-          { letter: 'C', text: 'A bleached coral is immediately dead.' },
-          { letter: 'D', text: 'Rising water temperatures can cause coral to expel its algae.' },
-        ], selectCount: 2, answers: ['B', 'D'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET7_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET7_V2.academic.text,
+      passageTitle: TOEFL_READING_SET7_V2.academic.title,
+      questions: TOEFL_READING_SET7_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET7_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +103,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't7-w-bs1', part: 9, tiles: ['They', 'are', 'building', 'a new bridge', 'across the river'], answer: ['They', 'are', 'building', 'a new bridge', 'across the river'] },
-        { type: 'sentencebuild', id: 't7-w-bs2', part: 9, tiles: ['your passport', 'Don\'t', 'to bring', 'forget'], answer: ['Don\'t', 'forget', 'to bring', 'your passport'] },
-        { type: 'sentencebuild', id: 't7-w-bs3', part: 9, tiles: ['who', 'The woman', 'us', 'helped', 'was very kind'], answer: ['The woman', 'who', 'helped', 'us', 'was very kind'] },
-        { type: 'sentencebuild', id: 't7-w-bs4', part: 9, tiles: ['harder', 'If', 'had studied', 'she', 'passed', 'she would have'], answer: ['If', 'she', 'had studied', 'harder', 'she would have', 'passed'] },
-        { type: 'sentencebuild', id: 't7-w-bs5', part: 9, tiles: ['is', 'than', 'This exam', 'the last one', 'easier'], answer: ['This exam', 'is', 'easier', 'than', 'the last one'] },
-        { type: 'sentencebuild', id: 't7-w-bs6', part: 9, tiles: ['the lights', 'leaving,', 'Before', 'off', 'turn', 'please'], answer: ['Before', 'leaving,', 'please', 'turn', 'off', 'the lights'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET7_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET7_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET7_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +117,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't7-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You are a member of a university club. The club is planning its end-of-year trip, but the proposed date is during your final exams. You want to suggest a different date and offer to help organize the trip.\n\nWrite an email to the club president.`,
-          text: 'In your email: explain the problem with the date, make your suggestion clearly, and offer your help, using a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the problem with the date, make your suggestion clearly, and offer your help, using a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +128,7 @@ const mock: MockExam = {
         { type: 'write', id: 't7-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on education. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Bello: Some universities are considering whether to make attendance at lectures optional, since recordings are available online. Do you think lecture attendance should be required? Why or why not?\n\nStudent (Mei): I think attendance should be optional. Students learn in different ways, and some concentrate better watching recordings at their own pace. For example, I focus much better watching a recorded lecture at double speed late at night than sitting in a crowded hall in the morning.\n\nStudent (Diego): I disagree. Being physically present keeps students engaged and allows them to ask questions and interact with classmates, which recordings cannot replace. For example, in my seminar, the best discussions happen when a classmate asks an unexpected question that the recording could never anticipate.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

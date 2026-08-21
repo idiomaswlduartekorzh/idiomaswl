@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET11_V2 } from '@/data/toefl/complete-the-words-sets-11-15';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET11_V2 } from '@/data/toefl/reading-sets-11-15';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET11_V2 } from '@/data/toefl/build-sentence-sets-11-15';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't11-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a club organizer.',
-          template: `Hi Daniel,\n\nI saw the poster for the photography {{1}} and I would love to {{2}}. I am a complete {{3}}, though — I have never used a professional camera. Is that okay, or do I need {{4}}? Also, could you tell me how much the {{5}} fee is and whether equipment is {{6}}? Thanks a lot.\n\nBest,\nPriya`,
-          blanks: [
-            { num: 1, prefix: 'cl', answer: 'club' },
-            { num: 2, prefix: 'j', answer: 'join' },
-            { num: 3, prefix: 'beg', answer: 'beginner' },
-            { num: 4, prefix: 'exp', answer: 'experience' },
-            { num: 5, prefix: 'membe', answer: 'membership' },
-            { num: 6, prefix: 'prov', answer: 'provided' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't11-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about deserts.',
-          template: `Deserts are regions that receive very little {{1}}, usually less than 250 millimeters a year. Despite the harsh conditions, many plants and animals have {{2}} to survive there. Cacti, for example, store water in their thick {{3}}, while some animals stay underground during the day to avoid the {{4}}. Deserts are not always hot; some, like those near the poles, are extremely {{5}}. Scientists worry that human activity is causing some fertile land to turn into desert, a process called {{6}}.`,
-          blanks: [
-            { num: 1, prefix: 'rai', answer: 'rainfall' },
-            { num: 2, prefix: 'ada', answer: 'adapted' },
-            { num: 3, prefix: 'st', answer: 'stems' },
-            { num: 4, prefix: 'he', answer: 'heat' },
-            { num: 5, prefix: 'co', answer: 'cold' },
-            { num: 6, prefix: 'desert', answer: 'desertification' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET11_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Recycling flyer)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Antibiotics are among the most important discoveries in the history of medicine. Before their widespread use, a simple infection from a cut or a common illness such as pneumonia could easily be fatal. The introduction of penicillin in the 1940s transformed medicine, turning once-deadly infections into treatable conditions and making complex surgeries far safer. Yet the very success of antibiotics has created a serious and growing problem: antibiotic resistance.\n\nAntibiotics work by killing bacteria or stopping them from reproducing. However, bacteria reproduce rapidly, and through random genetic mutation, some individuals may happen to survive exposure to a drug. These survivors pass on their resistance to the next generation. Over time, as we use more and more antibiotics, we unintentionally select for bacteria that the drugs can no longer kill. This is evolution by natural selection, playing out in a matter of days rather than millennia.\n\nSeveral human behaviors accelerate this process. Taking antibiotics when they are not needed—for instance, for viral infections like the common cold, which antibiotics cannot treat—exposes bacteria to drugs unnecessarily. Failing to complete a prescribed course can leave behind the hardier bacteria. The heavy use of antibiotics in agriculture, where they are often given to healthy livestock to promote growth, adds further pressure. As a result, "superbugs" resistant to multiple antibiotics have emerged, and infections that were once easily cured are becoming difficult or impossible to treat.\n\nScientists are responding on several fronts: searching for new antibiotics, developing rapid tests so doctors prescribe them only when necessary, and promoting more careful use worldwide. But developing new antibiotics is slow and expensive, and bacteria continue to evolve. Many experts warn that without coordinated global action, we could enter a "post-antibiotic era" in which common infections once again become life-threatening—a sobering reminder that a medical triumph, if used carelessly, can be undermined by the very organisms it was designed to defeat.`,
-      passageTitle: 'Antibiotic Resistance',
-      questions: [
-        { type: 'mcq', id: 't11-r-ap1', part: 4, text: 'According to paragraph 1, how did the introduction of penicillin change medicine?', options: ['It replaced all other medicines.', 'It made surgeries more dangerous.', 'It turned once-deadly infections into treatable conditions.', 'It caused antibiotic resistance immediately.'], answer: 2 },
-        { type: 'mcq', id: 't11-r-ap2', part: 4, text: 'How does antibiotic resistance develop, according to paragraph 2?', options: ['Antibiotics create new bacteria.', 'Resistance only develops over thousands of years.', 'Bacteria decide to resist the drugs.', 'Some bacteria survive due to random mutation and pass on their resistance.'], answer: 3 },
-        { type: 'mcq', id: 't11-r-ap3', part: 4, text: 'Which behavior does the passage identify as accelerating resistance?', options: ['Taking antibiotics for viral infections they cannot treat', 'Avoiding antibiotics entirely', 'Using antibiotics only in hospitals', 'Completing a full course of antibiotics'], answer: 0 },
-        { type: 'mcq', id: 't11-r-ap4', part: 4, text: 'What are "superbugs," as described in the passage?', options: ['Very large bacteria', 'Bacteria resistant to multiple antibiotics', 'A new type of antibiotic', 'Harmless bacteria'], answer: 1 },
-        { type: 'mcq', id: 't11-r-ap5', part: 4, text: 'What does the author mean by a "post-antibiotic era"?', options: ['A time when new antibiotics are discovered daily', 'A time when antibiotics are cheap and plentiful', 'A time when common infections could once again become life-threatening because antibiotics no longer work', 'A time when no one gets sick'], answer: 2 },
-        { type: 'multiselect', id: 't11-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Antibiotic resistance is a form of evolution by natural selection.' },
-          { letter: 'B', text: 'Antibiotics are effective against viral infections like the common cold.' },
-          { letter: 'C', text: 'The use of antibiotics in agriculture adds pressure that promotes resistance.' },
-          { letter: 'D', text: 'Developing new antibiotics is fast and inexpensive.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET11_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET11_V2.academic.text,
+      passageTitle: TOEFL_READING_SET11_V2.academic.title,
+      questions: TOEFL_READING_SET11_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET11_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't11-w-bs1', part: 9, tiles: ['They', 'moved', 'to', 'a new city', 'last year'], answer: ['They', 'moved', 'to', 'a new city', 'last year'] },
-        { type: 'sentencebuild', id: 't11-w-bs2', part: 9, tiles: ['closing', 'you', 'the window', 'Would', 'mind'], answer: ['Would', 'you', 'mind', 'closing', 'the window'] },
-        { type: 'sentencebuild', id: 't11-w-bs3', part: 9, tiles: ['met', 'The man', 'we', 'yesterday', 'is', 'a famous writer'], answer: ['The man', 'we', 'met', 'yesterday', 'is', 'a famous writer'] },
-        { type: 'sentencebuild', id: 't11-w-bs4', part: 9, tiles: ['harder,', 'you', 'If', 'work', 'succeed', 'you will'], answer: ['If', 'you', 'work', 'harder,', 'you will', 'succeed'] },
-        { type: 'sentencebuild', id: 't11-w-bs5', part: 9, tiles: ['is', 'This phone', 'the old one', 'than', 'better', 'much'], answer: ['This phone', 'is', 'much', 'better', 'than', 'the old one'] },
-        { type: 'sentencebuild', id: 't11-w-bs6', part: 9, tiles: ['the door,', 'Opening', 'a large parcel', 'she', 'found'], answer: ['Opening', 'the door,', 'she', 'found', 'a large parcel'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET11_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET11_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET11_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +119,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't11-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You applied for a part-time job at the campus library and were invited to an interview, but the proposed time clashes with a class you cannot miss. You want to ask whether the interview could be moved to another time.\n\nWrite an email to the library hiring manager.`,
-          text: 'In your email: explain the conflict, request an alternative time, and keep a polite, professional tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the conflict, request an alternative time, and keep a polite, professional tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +130,7 @@ const mock: MockExam = {
         { type: 'write', id: 't11-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on media. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Silva: Some people think social media has mostly a positive effect on society, while others think it is mostly harmful. What is your view, and why?\n\nStudent (Nadia): I think it's mostly positive. Social media helps people stay connected, share information quickly, and organize for good causes. For example, during a recent natural disaster, social media was one of the fastest ways for volunteers to organize donations and support.\n\nStudent (Ben): I disagree. It spreads misinformation, harms mental health, and often replaces real face-to-face relationships. For example, I've seen false health information spread quickly online, and some people believed it simply because many others had shared it.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

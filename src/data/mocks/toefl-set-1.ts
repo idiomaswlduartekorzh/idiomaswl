@@ -1,8 +1,92 @@
-import type { MockExam } from './types';
+import type {
+  MockExam,
+  ToeflBuildSentenceQuestion,
+  ToeflReadingMultiQuestion,
+  ToeflReadingSingleQuestion,
+} from './types';
+import { TOEFL_CTW_SET1_V3 } from '@/data/toefl/complete-the-words-set-1';
+import { TOEFL_BUILD_SENTENCE_SET1, type ToeflBuildSentenceItem } from '@/data/toefl/build-sentence-set-1';
+import {
+  TOEFL_WRITING_CONSTRUCTED_SET1,
+  type ToeflConstructedWritingTask,
+} from '@/data/toefl/writing-constructed-set-1';
+import {
+  TOEFL_READING_SET1,
+  type ToeflReadingMultiItem,
+  type ToeflReadingSingleItem,
+} from '@/data/toefl/reading-set-1';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
 // Migrado del formato antiguo (0–120) al formato 2026. Audios bajo /audio/toefl/set-1/.
+
+const [bookshopBlock, deliveryBlock] = TOEFL_READING_SET1.blocks.filter((block) => block.scope === 'daily-life');
+const academicBlock = TOEFL_READING_SET1.blocks.find((block) => block.scope === 'academic')!;
+
+function toSingleQuestion(item: ToeflReadingSingleItem, part: number): ToeflReadingSingleQuestion {
+  return {
+    type: 'toefl-reading-single',
+    id: item.id,
+    sourceItemId: item.legacyId,
+    objectId: TOEFL_READING_SET1.objectId,
+    contentVersion: item.contentVersion,
+    serverScoring: 'toefl-reading',
+    alignment: item.alignment,
+    part,
+    text: item.prompt,
+    options: item.options,
+  };
+}
+
+function toMultiQuestion(item: ToeflReadingMultiItem, part: number): ToeflReadingMultiQuestion {
+  return {
+    type: 'toefl-reading-multi',
+    id: item.id,
+    sourceItemId: item.legacyId,
+    objectId: TOEFL_READING_SET1.objectId,
+    contentVersion: item.contentVersion,
+    serverScoring: 'toefl-reading',
+    alignment: item.alignment,
+    part,
+    text: item.prompt,
+    options: item.options,
+    selectCount: item.selectCount,
+  };
+}
+
+function toBuildSentenceQuestion(item: ToeflBuildSentenceItem, part: number): ToeflBuildSentenceQuestion {
+  return {
+    type: 'toefl-build-sentence',
+    id: item.id,
+    sourceItemId: item.legacyId,
+    objectId: TOEFL_BUILD_SENTENCE_SET1.objectId,
+    contentVersion: item.contentVersion,
+    serverScoring: 'toefl-build-sentence',
+    alignment: item.alignment,
+    part,
+    context: item.context,
+    replyPrefix: item.replyPrefix,
+    replySuffix: item.replySuffix,
+    tiles: item.tiles,
+    blankCount: item.blankCount,
+  };
+}
+
+function toConstructedWritingQuestion(task: ToeflConstructedWritingTask, part: number, taskNumber: 1 | 2) {
+  return {
+    type: 'write' as const,
+    id: task.id,
+    part,
+    taskNumber,
+    stimulusLabel: task.title,
+    stimulus: task.stimulus,
+    text: task.prompt,
+    minWords: task.recommendedMinimumWords ?? 0,
+    timeLimitSeconds: task.timeLimitSeconds,
+    minimumWordsPolicy: task.recommendedMinimumWords ? 'recommended-100' as const : 'none-published' as const,
+    evaluationDisclosure: TOEFL_WRITING_CONSTRUCTED_SET1.disclosure,
+  };
+}
 
 const mock: MockExam = {
   id: 'set-1',
@@ -30,58 +114,49 @@ const mock: MockExam = {
           ],
         },
         {
-          type: 'wordcomplete', id: 't1-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about the sun.',
-          template: `The sun is a giant ball of hot {{1}} at the center of our solar system. It provides the {{2}} and heat that make life on Earth possible. Deep inside the sun, a process called nuclear {{3}} releases enormous amounts of energy. This energy travels through space and reaches Earth in about eight {{4}}. Without the sun, our planet would be far too {{5}} for anything to live. Scientists study the sun to understand how it affects our {{6}}.`,
-          blanks: [
-            { num: 1, prefix: 'ga', answer: 'gas' },
-            { num: 2, prefix: 'li', answer: 'light' },
-            { num: 3, prefix: 'fu', answer: 'fusion' },
-            { num: 4, prefix: 'min', answer: 'minutes' },
-            { num: 5, prefix: 'co', answer: 'cold' },
-            { num: 6, prefix: 'cli', answer: 'climate' },
-          ],
+          type: 'wordcomplete', id: TOEFL_CTW_SET1_V3.id, part: 1, qRange: [7, 16],
+          objectId: TOEFL_CTW_SET1_V3.objectId,
+          contentVersion: String(TOEFL_CTW_SET1_V3.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
+          instructions: TOEFL_CTW_SET1_V3.instructions,
+          template: TOEFL_CTW_SET1_V3.template,
+          blanks: TOEFL_CTW_SET1_V3.blanks.map((blank) => ({
+            id: blank.id,
+            num: blank.num,
+            prefix: blank.prefix,
+            missingLength: blank.missingLength,
+          })),
         },
       ],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Bookshop notice)',
-      instructions: 'Read the notice and answer the questions.',
-      passage: `CORNER BOOKSHOP — SUMMER SALE\n\n• All fiction: buy two, get one free (cheapest book free).\n• Children's books: 25% off.\n• Members receive an extra 10% off all purchases.\n• The sale runs from July 1 to July 31.\n• Special orders and gift cards are not included in the sale.\n\nNot a member yet? Ask at the counter — joining is free and takes a minute.`,
-      passageTitle: 'Bookshop notice',
-      questions: [
-        { type: 'mcq', id: 't1-r-dl1', part: 2, text: 'What is the offer on fiction?', options: ['Half price', 'A free gift card', '25% off', 'Buy two, get one free'], answer: 3 },
-        { type: 'mcq', id: 't1-r-dl2', part: 2, text: 'What extra benefit do members receive?', options: ['An extra 10% off all purchases', 'A free book every month', 'Double points', 'Free delivery'], answer: 0 },
-        { type: 'mcq', id: 't1-r-dl3', part: 2, text: 'What is NOT included in the sale?', options: ['Fiction', 'Children\'s books', 'Special orders and gift cards', 'Nothing is excluded.'], answer: 2 },
-      ],
+      instructions: bookshopBlock.instructions,
+      passage: bookshopBlock.text,
+      passageTitle: bookshopBlock.title,
+      questions: bookshopBlock.items.map((item) => toSingleQuestion(item as ToeflReadingSingleItem, 2)),
     },
     {
       part: 3, skill: 'reading', title: 'Reading — Read in Daily Life (Delivery message)',
-      instructions: 'Read the messages and answer the questions.',
-      passage: `DELIVERY APP: Your parcel will arrive today between 3 and 5 p.m. A signature is required.\n\nYOU: I won't be home until 6. Can it be left with a neighbor?\n\nDELIVERY APP: Yes. Reply with the house number of a neighbor who can accept it, or choose "deliver tomorrow" in the app.\n\nYOU: Please leave it at number 14. Thank you.\n\nDELIVERY APP: Confirmed. Your parcel will be delivered to number 14 and a photo will be sent as proof.`,
-      passageTitle: 'Delivery messages',
-      questions: [
-        { type: 'mcq', id: 't1-r-dl4', part: 3, text: 'Why can\'t the person accept the parcel themselves?', options: ['They did not order anything.', 'They are on holiday.', 'They won\'t be home until 6 p.m.', 'They moved house.'], answer: 2 },
-        { type: 'mcq', id: 't1-r-dl5', part: 3, text: 'What will happen after the parcel is delivered to number 14?', options: ['The parcel will be returned.', 'A fee will be charged.', 'A signature will be collected from the person.', 'A photo will be sent as proof.'], answer: 3 },
-      ],
+      instructions: deliveryBlock.instructions,
+      passage: deliveryBlock.text,
+      passageTitle: deliveryBlock.title,
+      questions: deliveryBlock.items.map((item) => toSingleQuestion(item as ToeflReadingSingleItem, 3)),
     },
     {
       part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `The Sahara Desert, the largest hot desert on Earth, is often imagined as a timeless sea of sand. Yet the geological and archaeological record tells a startling story: the Sahara has not always been a desert. In fact, over the past several hundred thousand years, it has repeatedly transformed between a lush, green landscape and the arid expanse we know today. Scientists refer to the green phases as the "African Humid Periods."\n\nDuring these humid periods, the Sahara was dotted with lakes, rivers, and grasslands. Rock paintings found deep in the desert depict people herding cattle, swimming, and hunting animals such as giraffes and hippos—creatures that could never survive in today's climate. The bones of fish and crocodiles have been found buried beneath the sand, silent evidence of a once-watery world.\n\nWhat causes these dramatic transformations? The answer lies not on Earth but in space. The Earth's orbit and the tilt of its axis change slowly over cycles lasting tens of thousands of years. These changes alter the amount of sunlight the Northern Hemisphere receives in summer, which in turn strengthens or weakens the seasonal rains, known as the monsoon, that reach into North Africa. When the tilt and orbit align to bring stronger monsoon rains, the Sahara greens; when they shift, the rains retreat and the desert returns. The most recent green Sahara ended around five thousand years ago, drying out over a relatively short period.\n\nThis history carries a powerful lesson. It shows that even the most seemingly permanent features of our planet are, on long timescales, in constant flux, driven by subtle astronomical rhythms. It also has human significance: some researchers believe that the drying of the Sahara pushed early human populations toward the Nile Valley, contributing to the rise of ancient Egyptian civilization. The desert we see today, then, is not a fixed backdrop to history but an active, changing force that has helped shape where and how humans have lived.`,
-      passageTitle: 'The Green Sahara',
+      instructions: academicBlock.instructions,
+      sectionNote: 'Las preguntas 1–5 forman el piloto de la familia Academic Passage. La selección múltiple final se conserva como práctica complementaria WeLearn y no se presenta como una sexta pregunta oficial.',
+      passage: academicBlock.text,
+      passageTitle: academicBlock.title,
       questions: [
-        { type: 'mcq', id: 't1-r-ap1', part: 4, text: 'What surprising fact does the passage present about the Sahara?', options: ['It has repeatedly transformed between a green landscape and a desert.', 'It is shrinking rapidly.', 'It has no plant or animal life.', 'It has always been a desert.'], answer: 0 },
-        { type: 'mcq', id: 't1-r-ap2', part: 4, text: 'What evidence shows the Sahara was once green?', options: ['Modern satellite photos', 'Rock paintings of cattle and animals, and buried fish and crocodile bones', 'Written records from ancient Egypt', 'The current climate'], answer: 1 },
-        { type: 'mcq', id: 't1-r-ap3', part: 4, text: 'According to the passage, what causes the Sahara\'s transformations?', options: ['Ocean currents', 'Human activity', 'Slow changes in the Earth\'s orbit and tilt that alter monsoon rains', 'Volcanic eruptions'], answer: 2 },
-        { type: 'mcq', id: 't1-r-ap4', part: 4, text: 'When did the most recent green Sahara end?', options: ['It has not ended.', 'Around one million years ago', 'Around five thousand years ago', 'Around five hundred years ago'], answer: 2 },
-        { type: 'mcq', id: 't1-r-ap5', part: 4, text: 'What human significance does the passage suggest?', options: ['The drying of the Sahara may have pushed early humans toward the Nile Valley, contributing to ancient Egyptian civilization.', 'Humans caused the Sahara to form.', 'People have always avoided the region.', 'The Sahara has no effect on humans.'], answer: 0 },
-        { type: 'multiselect', id: 't1-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'The Sahara has gone through "African Humid Periods" when it was green.' },
-          { letter: 'B', text: 'The Sahara has always looked exactly as it does today.' },
-          { letter: 'C', text: 'Changes in the Earth\'s orbit and tilt influence the Sahara\'s climate.' },
-          { letter: 'D', text: 'The green Sahara was caused by human farming.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
+        ...academicBlock.items
+          .filter((item): item is ToeflReadingSingleItem => item.type === 'single-select')
+          .map((item) => toSingleQuestion(item, 4)),
+        ...academicBlock.items
+          .filter((item): item is ToeflReadingMultiItem => item.type === 'multi-select')
+          .map((item) => toMultiQuestion(item, 4)),
       ],
     },
     {
@@ -133,35 +208,21 @@ const mock: MockExam = {
     },
     {
       part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't1-w-bs1', part: 9, tiles: ['They', 'are', 'renovating', 'the old theatre', 'downtown'], answer: ['They', 'are', 'renovating', 'the old theatre', 'downtown'] },
-        { type: 'sentencebuild', id: 't1-w-bs2', part: 9, tiles: ['the report', 'you', 'review', 'Could', 'before Friday'], answer: ['Could', 'you', 'review', 'the report', 'before Friday'] },
-        { type: 'sentencebuild', id: 't1-w-bs3', part: 9, tiles: ['recommended', 'The book', 'you', 'was', 'fascinating'], answer: ['The book', 'you', 'recommended', 'was', 'fascinating'] },
-        { type: 'sentencebuild', id: 't1-w-bs4', part: 9, tiles: ['finish,', 'you', 'When', 'me', 'call', 'please'], answer: ['When', 'you', 'finish,', 'please', 'call', 'me'] },
-        { type: 'sentencebuild', id: 't1-w-bs5', part: 9, tiles: ['is', 'This city', 'my hometown', 'than', 'bigger', 'much'], answer: ['This city', 'is', 'much', 'bigger', 'than', 'my hometown'] },
-        { type: 'sentencebuild', id: 't1-w-bs6', part: 9, tiles: ['the news,', 'Hearing', 'they', 'to celebrate', 'decided'], answer: ['Hearing', 'the news,', 'they', 'decided', 'to celebrate'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET1.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET1.items.map((item) => toBuildSentenceQuestion(item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
-      instructions: 'Read the situation and write an appropriate email.',
-      questions: [
-        { type: 'write', id: 't1-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
-          stimulus: `Situation: You booked a hotel room for a weekend trip, but you now need to arrive a day earlier. You want to ask whether you can change your booking to include an extra night and how much more it will cost.\n\nWrite an email to the hotel.`,
-          text: 'In your email: explain what you need, ask your questions clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
-      ],
+      instructions: 'Read the situation and write an appropriate email. Official task limit: 7 minutes.',
+      sectionNote: 'The standalone T17 pilot enforces the 7-minute deadline. This fixed mock preserves the draft but does not yet claim Level C composition until T23.',
+      questions: [toConstructedWritingQuestion(TOEFL_WRITING_CONSTRUCTED_SET1.tasks[0], 10, 1)],
     },
     {
       part: 11, skill: 'writing', title: 'Writing — Write for an Academic Discussion',
-      instructions: 'Read the discussion and contribute your own response.',
-      questions: [
-        { type: 'write', id: 't1-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
-          stimulus: `Your professor is teaching a class on technology and daily life. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Reed: Many people now use their phones to do almost everything — banking, shopping, studying, and staying in touch. Do you think our growing reliance on smartphones is mostly positive or mostly negative? Why?\n\nStudent (Hana): I think it's mostly positive. Smartphones save time, keep us connected, and put a huge amount of information and useful tools in one place. For example, I use my phone to check bus schedules, complete assignments, and video call my family who live in another country.\n\nStudent (Diego): I'm more cautious. People spend hours staring at screens, get distracted easily, and can feel anxious without their phones. The convenience comes at a cost — for example, I sometimes reach for my phone the moment I wake up, before I've even had breakfast.`,
-          text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
-      ],
+      instructions: 'Read the discussion and contribute your own response. Official task limit: 10 minutes.',
+      sectionNote: 'The standalone T17 pilot enforces the 10-minute deadline. The recommended minimum is 100 words; feedback remains WeLearn, not an ETS score.',
+      questions: [toConstructedWritingQuestion(TOEFL_WRITING_CONSTRUCTED_SET1.tasks[1], 11, 2)],
     },
     {
       part: 12, skill: 'speaking', title: 'Speaking — Listen and Repeat',

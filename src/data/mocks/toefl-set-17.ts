@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET17_V2 } from '@/data/toefl/complete-the-words-sets-16-20';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET17_V2 } from '@/data/toefl/reading-sets-16-20';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET17_V2 } from '@/data/toefl/build-sentence-sets-16-20';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
-      instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't17-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a bank.',
-          template: `Dear Sir or Madam,\n\nI am a university student and I would like to open a {{1}} account with your bank. Could you please tell me what {{2}} I need to bring, such as identification and proof of {{3}}? I am also interested in whether there is a monthly {{4}} for students. Finally, does the account come with a debit {{5}}? I look forward to your {{6}}.\n\nYours faithfully,\nDavid Park`,
-          blanks: [
-            { num: 1, prefix: 'ba', answer: 'bank' },
-            { num: 2, prefix: 'doc', answer: 'documents' },
-            { num: 3, prefix: 'add', answer: 'address' },
-            { num: 4, prefix: 'f', answer: 'fee' },
-            { num: 5, prefix: 'ca', answer: 'card' },
-            { num: 6, prefix: 'rep', answer: 'reply' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't17-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about spiders.',
-          template: `Spiders are often feared, but most are completely {{1}} to humans and are in fact very useful. They help control the number of {{2}} such as flies and mosquitoes. Most spiders build {{3}} from silk they produce in their bodies, using them to catch {{4}}. The silk is remarkably {{5}} — some kinds are stronger than steel of the same thickness. Scientists are studying spider silk in the hope of creating new {{6}} for medicine and industry.`,
-          blanks: [
-            { num: 1, prefix: 'harm', answer: 'harmless' },
-            { num: 2, prefix: 'ins', answer: 'insects' },
-            { num: 3, prefix: 'we', answer: 'webs' },
-            { num: 4, prefix: 'pr', answer: 'prey' },
-            { num: 5, prefix: 'str', answer: 'strong' },
-            { num: 6, prefix: 'mat', answer: 'materials' },
-          ],
-        },
-      ],
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
+      instructions: TOEFL_CTW_SET17_V2.instructions,
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET17_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Laundry notice)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `The concept of "flow" describes a mental state in which a person is fully immersed in an activity, feeling energized, focused, and deeply engaged. First studied systematically by the psychologist Mihaly Csikszentmihalyi in the 1970s, flow has become one of the most influential ideas in the psychology of motivation and well-being. People often describe it informally as being "in the zone."\n\nWhat distinguishes flow from ordinary concentration is its intensity and quality. In a flow state, people report losing track of time, forgetting about themselves and their worries, and performing at their best almost effortlessly. Athletes, musicians, surgeons, and chess players all describe strikingly similar experiences, despite the very different nature of their activities. This consistency across domains suggests that flow reflects a general feature of how the human mind works when deeply engaged.\n\nCsikszentmihalyi identified the conditions that tend to produce flow. Perhaps the most important is a balance between challenge and skill. If a task is too easy relative to a person's ability, they become bored; if it is too difficult, they become anxious. Flow occurs in the narrow band where the challenge stretches a person's skills without overwhelming them. Other conditions include clear goals and immediate feedback, which allow a person to adjust their actions moment by moment without stopping to second-guess themselves.\n\nThe practical implications are significant. Research suggests that people who experience flow more often report greater life satisfaction, and that flow is associated with better learning and performance. This has led educators to design lessons that keep challenge and skill in balance, and workplaces to structure tasks so that employees can enter flow more readily. Yet flow cannot simply be commanded into existence; it arises indirectly, as a by-product of the right conditions. The lesson many draw from the research is not to chase happiness directly, but to seek out activities that are challenging, meaningful, and matched to one's abilities—and to let the deep satisfaction of flow follow naturally.`,
-      passageTitle: 'The Psychology of Flow',
-      questions: [
-        { type: 'mcq', id: 't17-r-ap1', part: 4, text: 'What is "flow," as described in the passage?', options: ['A mental state of full immersion and deep engagement in an activity', 'A method of relaxation', 'A feeling of boredom', 'A type of physical exercise'], answer: 0 },
-        { type: 'mcq', id: 't17-r-ap2', part: 4, text: 'What do people commonly report during a flow state?', options: ['Feeling bored and distracted', 'Losing track of time and performing at their best almost effortlessly', 'Feeling anxious and overwhelmed', 'Falling asleep'], answer: 1 },
-        { type: 'mcq', id: 't17-r-ap3', part: 4, text: 'According to the passage, what is perhaps the most important condition for flow?', options: ['A quiet environment', 'Being alone', 'A balance between challenge and skill', 'Having no goals'], answer: 2 },
-        { type: 'mcq', id: 't17-r-ap4', part: 4, text: 'What happens if a task is too difficult relative to a person\'s skill?', options: ['They enter flow immediately.', 'They fall asleep.', 'They become bored.', 'They become anxious.'], answer: 3 },
-        { type: 'mcq', id: 't17-r-ap5', part: 4, text: 'What lesson do many draw from flow research, according to the final paragraph?', options: ['Seek out challenging, meaningful activities matched to your abilities and let flow follow naturally.', 'Avoid all difficult tasks.', 'Flow can be commanded at will.', 'Chase happiness directly.'], answer: 0 },
-        { type: 'multiselect', id: 't17-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Athletes, musicians, and chess players describe strikingly similar flow experiences.' },
-          { letter: 'B', text: 'Flow occurs mainly when a task is far too easy.' },
-          { letter: 'C', text: 'People who experience flow more often report greater life satisfaction.' },
-          { letter: 'D', text: 'Flow can be produced simply by commanding it.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET17_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET17_V2.academic.text,
+      passageTitle: TOEFL_READING_SET17_V2.academic.title,
+      questions: TOEFL_READING_SET17_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET17_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't17-w-bs1', part: 9, tiles: ['She', 'works', 'as', 'a nurse', 'in a hospital'], answer: ['She', 'works', 'as', 'a nurse', 'in a hospital'] },
-        { type: 'sentencebuild', id: 't17-w-bs2', part: 9, tiles: ['the door', 'lock', 'Please', 'when you leave'], answer: ['Please', 'lock', 'the door', 'when you leave'] },
-        { type: 'sentencebuild', id: 't17-w-bs3', part: 9, tiles: ['ordered', 'The meal', 'we', 'was', 'delicious'], answer: ['The meal', 'we', 'ordered', 'was', 'delicious'] },
-        { type: 'sentencebuild', id: 't17-w-bs4', part: 9, tiles: ['home,', 'get', 'I', 'When', 'call you', 'I\'ll'], answer: ['When', 'I', 'get', 'home,', 'I\'ll', 'call you'] },
-        { type: 'sentencebuild', id: 't17-w-bs5', part: 9, tiles: ['is', 'This chair', 'that one', 'than', 'comfortable', 'more'], answer: ['This chair', 'is', 'more', 'comfortable', 'than', 'that one'] },
-        { type: 'sentencebuild', id: 't17-w-bs6', part: 9, tiles: ['a noise,', 'Hearing', 'she', 'the window', 'looked out of'], answer: ['Hearing', 'a noise,', 'she', 'looked out of', 'the window'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET17_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET17_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET17_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +119,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't17-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You booked a table at a restaurant for a group of six to celebrate a friend's birthday, but two more people now want to come. You want to ask if the booking can be changed to eight people.\n\nWrite an email to the restaurant.`,
-          text: 'In your email: explain the situation, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain the situation, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +130,7 @@ const mock: MockExam = {
         { type: 'write', id: 't17-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on the arts. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Meyer: Some governments spend public money to support the arts, such as museums, theatres, and concerts. Others argue this money should be spent on things like healthcare and education instead. Should governments fund the arts? Why or why not?\n\nStudent (Sofia): I think governments should fund the arts. They enrich people's lives, preserve culture, and attract tourists who bring money to the economy. For example, a free public museum in my city introduced thousands of children to art who would otherwise never have had the chance to visit one.\n\nStudent (Ahmed): I disagree. With limited budgets, essentials like hospitals and schools should come first. The arts can be supported by private donations. For example, a hospital in my region recently had to postpone equipment upgrades, which makes funding a theater instead hard to justify.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

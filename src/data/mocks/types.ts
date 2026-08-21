@@ -11,7 +11,10 @@ export type QuestionType =
   // TOEFL iBT 2026 task types
   | 'wordcomplete'
   | 'sentencebuild'
-  | 'repeat';
+  | 'repeat'
+  | 'toefl-reading-single'
+  | 'toefl-reading-multi'
+  | 'toefl-listening-single';
 
 // ── Existing types ────────────────────────────────────────────────────────────
 
@@ -52,6 +55,9 @@ export interface WriteQuestion {
   imageAlt?: string;
   text: string;
   minWords: number;
+  timeLimitSeconds?: 420 | 600;
+  minimumWordsPolicy?: 'none-published' | 'recommended-100';
+  evaluationDisclosure?: string;
 }
 
 export interface SpeakQuestion {
@@ -60,6 +66,9 @@ export interface SpeakQuestion {
   part: number;
   partNumber: 1 | 2 | 3 | 4;
   text: string;
+  audioUrl?: string;
+  mediaId?: string;
+  mediaStatus?: 'ready-existing' | 'script-ready-audio-blocked';
   cueCard?: string;
   followUp?: string[];
   imageUrls?: string[];
@@ -115,6 +124,52 @@ export interface MultiSelectQuestion {
   answers: string[];   // correct letters, e.g. ['A', 'C']
 }
 
+export interface ToeflReadingSingleQuestion {
+  type: 'toefl-reading-single';
+  id: string;
+  sourceItemId: string;
+  objectId: string;
+  contentVersion: string;
+  serverScoring: 'toefl-reading';
+  alignment: 'official-family-pilot';
+  part: number;
+  text: string;
+  options: { id: string; label: string; text: string }[];
+}
+
+export interface ToeflReadingMultiQuestion {
+  type: 'toefl-reading-multi';
+  id: string;
+  sourceItemId: string;
+  objectId: string;
+  contentVersion: string;
+  serverScoring: 'toefl-reading';
+  alignment: 'welearn-supplementary';
+  part: number;
+  text: string;
+  options: { id: string; label: string; text: string }[];
+  selectCount: number;
+}
+
+// TOEFL iBT 2026 Listening item. The answer key is intentionally absent from
+// the public mock payload and is resolved by the server-only scoring registry.
+export interface ToeflListeningSingleQuestion {
+  type: 'toefl-listening-single';
+  id: string;
+  sourceItemId: string;
+  objectId: string;
+  contentVersion: string;
+  serverScoring: 'toefl-listening';
+  alignment: 'official-family-pilot';
+  task: 'choose-response' | 'conversation' | 'announcement' | 'academic-talk';
+  part: number;
+  text: string;
+  options: Array<{ id: string; label: string; text: string }>;
+  mediaId: string;
+  mediaStatus: 'ready-existing' | 'script-ready-audio-blocked';
+  audioUrl?: string;
+}
+
 // Each item has a question number and matches to one of the lettered endings.
 export interface MatchingItem {
   num: number;
@@ -137,15 +192,21 @@ export interface MatchingGroupQuestion {
 // Complete the Words (Reading). A short text/sentence with word gaps that already
 // show some given letters; the test-taker completes each word. Machine scored.
 export interface WordCompleteBlank {
+  id?: string;       // stable response identity; required for server-scored assessment items
   num: number;
   prefix?: string;   // letters shown before the gap, e.g. "lib" for "library"
   suffix?: string;   // letters shown after the gap (rare)
-  answer: string;    // the full word (case-insensitive exact match)
+  missingLength?: number; // number of letters the learner must enter
+  answer?: string;   // legacy local-practice key; omit from server-scored assessment payloads
 }
 
 export interface WordCompleteQuestion {
   type: 'wordcomplete';
   id: string;
+  objectId?: string; // stable assessment object; required when serverScoring is enabled
+  contentVersion?: string;
+  serverScoring?: 'toefl-complete-words';
+  alignment?: 'official-family-pilot' | 'welearn-supplementary';
   part: number;
   qRange?: [number, number];
   instructions?: string;
@@ -164,6 +225,24 @@ export interface SentenceBuildQuestion {
   answer: string[];  // correct ordering (a permutation of tiles)
 }
 
+// TOEFL iBT 2026 Build a Sentence. The public payload contains stable tile IDs,
+// context and fixed reply text, but never the answer key.
+export interface ToeflBuildSentenceQuestion {
+  type: 'toefl-build-sentence';
+  id: string;
+  sourceItemId?: string;
+  objectId: string;
+  contentVersion: string;
+  serverScoring: 'toefl-build-sentence';
+  alignment: 'official-family-pilot';
+  part: number;
+  context: string;
+  replyPrefix: string;
+  replySuffix: string;
+  tiles: Array<{ id: string; text: string }>;
+  blankCount: number;
+}
+
 // Listen and Repeat (Speaking). An audio-prompt of a sentence the test-taker
 // must repeat aloud. AI scored in the real exam; self-assessed here.
 export interface RepeatQuestion {
@@ -172,6 +251,8 @@ export interface RepeatQuestion {
   part: number;
   itemNumber: number;
   audioUrl?: string;      // audio of the sentence to repeat (may not exist yet)
+  mediaId?: string;
+  mediaStatus?: 'ready-existing' | 'script-ready-audio-blocked';
   targetSentence: string; // the sentence to repeat (also the audio script)
 }
 
@@ -186,7 +267,11 @@ export type Question =
   | MatchingGroupQuestion
   | WordCompleteQuestion
   | SentenceBuildQuestion
-  | RepeatQuestion;
+  | ToeflBuildSentenceQuestion
+  | RepeatQuestion
+  | ToeflReadingSingleQuestion
+  | ToeflReadingMultiQuestion
+  | ToeflListeningSingleQuestion;
 
 // ── Section & exam ────────────────────────────────────────────────────────────
 
@@ -220,8 +305,13 @@ export interface MockSection {
   sectionNote?: string;    // e.g. word bank shown above Part 2 questions
   transcript?: string;
   audioUrl?: string;       // URL to audio file (if available)
+  mediaId?: string;        // stable Listening stimulus identity
+  mediaStatus?: 'ready-existing' | 'script-ready-audio-blocked';
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
+  // TOEFL 2026 fixed-route practice metadata. The official test is adaptive;
+  // WeLearn intentionally models the published two-module practice-test shape.
+  moduleId?: 'reading-1' | 'reading-2' | 'listening-1' | 'listening-2' | 'writing' | 'speaking';
   /**
    * Explicaciones y dominio por ítem, indexado por `Question['id']`. Opcional: una
    * sección sin esto se revisa como siempre (clave marcada en verde y nada más).
@@ -250,4 +340,24 @@ export interface MockExam {
   // Marks a mock that follows a specific official blueprint. 'toefl-2026' selects
   // the 1–6 section scoring and the new-format task renderers; absent = legacy.
   format?: 'toefl-2026';
+  toefl2026Blueprint?: {
+    delivery: 'fixed-official-practice-shape';
+    adaptive: false;
+    disclosure: string;
+    sourceAsOf: '2026-08-14';
+    targetInteractions: {
+      reading: 40;
+      listening: 34;
+      writing: 12;
+      speaking: 11;
+    };
+    modules: readonly {
+      id: 'reading-1' | 'reading-2' | 'listening-1' | 'listening-2' | 'writing-build' | 'writing-email' | 'writing-discussion' | 'speaking';
+      skill: 'reading' | 'listening' | 'writing' | 'speaking';
+      interactionCount: number;
+      timeLimitSeconds?: number;
+      timingSource: 'official-practice-clock' | 'official-task-clock' | 'welearn-derived-clock' | 'not-public-per-item';
+      navigation: 'within-module' | 'forward-only';
+    }[];
+  };
 }

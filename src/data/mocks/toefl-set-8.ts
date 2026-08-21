@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET8_V2 } from '@/data/toefl/complete-the-words-sets-6-10';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET8_V2 } from '@/data/toefl/reading-sets-6-10';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET8_V2 } from '@/data/toefl/build-sentence-sets-6-10';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -15,34 +21,7 @@ const mock: MockExam = {
     {
       part: 1, skill: 'reading', title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't8-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is leaving a note for a roommate.',
-          template: `Hi Sam,\n\nI've gone to the {{1}} to buy some food for dinner. Could you please do the {{2}} while I'm out? The basket is full. Also, the landlord called about the broken {{3}} in the bathroom — he'll come to {{4}} it on Thursday, so we need to be {{5}}. I'll be back around six. Call me if you need {{6}}.\n\nThanks,\nJo`,
-          blanks: [
-            { num: 1, prefix: 'sup', answer: 'supermarket' },
-            { num: 2, prefix: 'dis', answer: 'dishes' },
-            { num: 3, prefix: 'ta', answer: 'tap' },
-            { num: 4, prefix: 'rep', answer: 'repair' },
-            { num: 5, prefix: 'ho', answer: 'home' },
-            { num: 6, prefix: 'anyth', answer: 'anything' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't8-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about volcanoes.',
-          template: `A volcano is an opening in the Earth's {{1}} through which molten rock, ash, and gases can {{2}}. Beneath the surface, this molten rock is called magma; once it {{3}} onto the surface, it is known as lava. Volcanic eruptions can be extremely {{4}}, destroying nearby towns, but they also create rich, fertile {{5}} that is excellent for farming. Scientists closely {{6}} active volcanoes to warn people before an eruption.`,
-          blanks: [
-            { num: 1, prefix: 'cr', answer: 'crust' },
-            { num: 2, prefix: 'es', answer: 'escape' },
-            { num: 3, prefix: 'rea', answer: 'reaches' },
-            { num: 4, prefix: 'dang', answer: 'dangerous' },
-            { num: 5, prefix: 'so', answer: 'soil' },
-            { num: 6, prefix: 'mon', answer: 'monitor' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET8_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Bus schedule notice)',
@@ -66,23 +45,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `For centuries, people believed that the continents had always sat exactly where they are today. In the early twentieth century, a German scientist named Alfred Wegener proposed a radical alternative: that the continents had once been joined in a single landmass, which he called Pangaea, and had slowly drifted apart over millions of years. His idea, known as continental drift, was initially met with ridicule.\n\nWegener assembled an impressive collection of evidence. He noticed that the coastlines of South America and Africa seemed to fit together like puzzle pieces. He pointed to matching rock formations and mountain ranges on continents now separated by oceans. Most strikingly, he found identical fossils of plants and animals on continents thousands of kilometers apart—organisms that could not possibly have swum across an ocean.\n\nDespite this evidence, most geologists rejected Wegener's theory for one simple reason: he could not explain what force could possibly move entire continents. Without a mechanism, the idea seemed like a fantasy, however neatly the puzzle pieces fit.\n\nThe answer arrived decades later, after Wegener's death, when scientists mapped the ocean floor. They discovered vast underwater mountain ranges where molten rock rises from within the Earth, cools, and pushes the seafloor outward on either side. This process, called seafloor spreading, provided the missing mechanism. The continents do not plow through the ocean, as Wegener had imagined; rather, they ride atop enormous rigid plates that move as the seafloor spreads. This unified theory, known as plate tectonics, now underlies virtually all of modern geology and explains earthquakes, volcanoes, and the shape of the world itself.`,
-      passageTitle: 'Continental Drift',
-      questions: [
-        { type: 'mcq', id: 't8-r-ap1', part: 4, text: 'What did Alfred Wegener propose?', options: ['That earthquakes were caused by the moon', 'That the continents had always been fixed in place', 'That the continents were once joined and slowly drifted apart', 'That the oceans were shrinking'], answer: 2 },
-        { type: 'mcq', id: 't8-r-ap2', part: 4, text: 'Which of the following was NOT mentioned as evidence Wegener used?', options: ['Written records from ancient sailors', 'Identical fossils on distant continents', 'Coastlines that seemed to fit together', 'Matching rock formations on separated continents'], answer: 0 },
-        { type: 'mcq', id: 't8-r-ap3', part: 4, text: 'Why did most geologists reject Wegener\'s theory?', options: ['He could not explain what force could move the continents.', 'The fossils he found were fake.', 'The continents clearly did not fit together.', 'His evidence was proven false.'], answer: 0 },
-        { type: 'mcq', id: 't8-r-ap4', part: 4, text: 'What discovery finally provided the missing mechanism?', options: ['Ancient maps of Pangaea', 'Seafloor spreading, discovered by mapping the ocean floor', 'A new type of fossil', 'Measurements of the moon\'s gravity'], answer: 1 },
-        { type: 'mcq', id: 't8-r-ap5', part: 4, text: 'According to the passage, how do continents actually move?', options: ['They are pushed by ocean currents.', 'They plow through the ocean as Wegener imagined.', 'They ride atop rigid plates that move as the seafloor spreads.', 'They float freely on water.'], answer: 2 },
-        { type: 'multiselect', id: 't8-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'Wegener\'s theory was immediately accepted by geologists.' },
-          { letter: 'B', text: 'Wegener found identical fossils on continents now separated by oceans.' },
-          { letter: 'C', text: 'Plate tectonics now underlies most of modern geology.' },
-          { letter: 'D', text: 'Seafloor spreading was discovered during Wegener\'s lifetime.' },
-        ], selectCount: 2, answers: ['B', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET8_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET8_V2.academic.text,
+      passageTitle: TOEFL_READING_SET8_V2.academic.title,
+      questions: TOEFL_READING_SET8_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET8_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +103,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't8-w-bs1', part: 9, tiles: ['We', 'are going', 'to visit', 'my grandparents', 'this weekend'], answer: ['We', 'are going', 'to visit', 'my grandparents', 'this weekend'] },
-        { type: 'sentencebuild', id: 't8-w-bs2', part: 9, tiles: ['the salt', 'you', 'pass', 'Can', 'me', 'please'], answer: ['Can', 'you', 'please', 'pass', 'me', 'the salt'] },
-        { type: 'sentencebuild', id: 't8-w-bs3', part: 9, tiles: ['that', 'The car', 'bought', 'he', 'is very fast'], answer: ['The car', 'that', 'he', 'bought', 'is very fast'] },
-        { type: 'sentencebuild', id: 't8-w-bs4', part: 9, tiles: ['rains,', 'When', 'stay', 'we', 'inside', 'it'], answer: ['When', 'it', 'rains,', 'we', 'stay', 'inside'] },
-        { type: 'sentencebuild', id: 't8-w-bs5', part: 9, tiles: ['is', 'This restaurant', 'in town', 'than', 'more expensive', 'the others'], answer: ['This restaurant', 'is', 'more expensive', 'than', 'the others', 'in town'] },
-        { type: 'sentencebuild', id: 't8-w-bs6', part: 9, tiles: ['the report,', 'Having', 'she', 'finished', 'went home'], answer: ['Having', 'finished', 'the report,', 'she', 'went home'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET8_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET8_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET8_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +117,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't8-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You borrowed a book from a friend, but you have accidentally spilled coffee on it and damaged some pages. You want to apologize and offer to replace it with a new copy.\n\nWrite an email to your friend.`,
-          text: 'In your email: explain what happened, apologize, and make your offer clearly, using an appropriate tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain what happened, apologize, and make your offer clearly, using an appropriate tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +128,7 @@ const mock: MockExam = {
         { type: 'write', id: 't8-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on public health. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Nakamura: Some cities have introduced a tax on sugary drinks to reduce their consumption and improve public health. Do you think such a tax is a good idea? Why or why not?\n\nStudent (Sara): I support the tax. Drinking too much sugar causes serious health problems, and a higher price encourages people to choose healthier options. For example, after a similar tax was introduced in another country, sales of sugary drinks dropped noticeably within the first year.\n\nStudent (Omar): I'm not sure it's fair. The tax affects lower-income people the most, and people should be free to decide what they drink. For example, a family already struggling financially ends up paying more for the same drink, while wealthier people barely notice the extra cost.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

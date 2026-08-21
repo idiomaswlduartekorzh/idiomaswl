@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET12_V2 } from '@/data/toefl/complete-the-words-sets-11-15';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET12_V2 } from '@/data/toefl/reading-sets-11-15';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET12_V2 } from '@/data/toefl/build-sentence-sets-11-15';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't12-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing a thank-you message.',
-          template: `Dear Aunt Rosa,\n\nThank you so much for the {{1}} you sent for my birthday. It was so {{2}} of you to remember. I have already used the money to buy a new {{3}} for my studies. I am doing well at university, though the courses keep me very {{4}}. I hope to {{5}} you during the summer holidays. Please give my {{6}} to Uncle Pedro.\n\nWith love,\nCarla`,
-          blanks: [
-            { num: 1, prefix: 'g', answer: 'gift' },
-            { num: 2, prefix: 'ki', answer: 'kind' },
-            { num: 3, prefix: 'lap', answer: 'laptop' },
-            { num: 4, prefix: 'bu', answer: 'busy' },
-            { num: 5, prefix: 'vi', answer: 'visit' },
-            { num: 6, prefix: 'reg', answer: 'regards' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't12-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about the Moon.',
-          template: `The Moon is the Earth's only natural {{1}}. It has no atmosphere and no liquid water on its {{2}}, which is covered in craters formed by ancient {{3}}. The Moon's gravity is much weaker than the Earth's, which is why astronauts can {{4}} so high. The pull of the Moon's gravity also causes the ocean {{5}} on Earth. Scientists believe the Moon {{6}} billions of years ago when a huge object struck the young Earth.`,
-          blanks: [
-            { num: 1, prefix: 'sat', answer: 'satellite' },
-            { num: 2, prefix: 'sur', answer: 'surface' },
-            { num: 3, prefix: 'imp', answer: 'impacts' },
-            { num: 4, prefix: 'ju', answer: 'jump' },
-            { num: 5, prefix: 'ti', answer: 'tides' },
-            { num: 6, prefix: 'for', answer: 'formed' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET12_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Park sign)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `The Great Barrier Reef, stretching more than 2,300 kilometers along the northeast coast of Australia, is the largest living structure on Earth—so large it can be seen from space. Yet it is built by animals barely a few millimeters across: coral polyps. Understanding how such a colossal structure arises from such tiny builders reveals a great deal about how complex natural systems can emerge from simple, repeated actions.\n\nEach coral polyp secretes a hard skeleton of calcium carbonate. When a polyp dies, its skeleton remains, and new polyps grow on top. Over thousands of years, generation upon generation of these skeletons accumulate into the massive reef structures we see today. In this way, the reef is less a single organism than a vast city, continuously built up by countless small inhabitants, most of whom are long dead.\n\nThe reef is far more than rock, however. It is one of the most biologically diverse ecosystems on the planet, home to thousands of species of fish, mollusks, and other marine life. This diversity is not accidental. The complex, three-dimensional structure of the reef creates an enormous variety of habitats—crevices, overhangs, and channels—each suited to different organisms. Ecologists describe corals as "ecosystem engineers" because, by building physical structure, they create the conditions that allow many other species to thrive.\n\nBut this achievement is fragile. Because reef-building corals depend on the delicate partnership with their algae, they are highly sensitive to changes in water temperature and chemistry. In recent decades, rising sea temperatures have caused repeated mass bleaching events, and ocean acidification threatens the corals' ability to build their skeletons. The paradox is striking: a structure that took millions of years and countless generations to build could be severely damaged within a human lifetime. Protecting it, scientists argue, requires addressing the global causes of ocean warming, not just local threats.`,
-      passageTitle: 'The Great Barrier Reef',
-      questions: [
-        { type: 'mcq', id: 't12-r-ap1', part: 4, text: 'What point does the author emphasize in paragraph 1?', options: ['The reef is entirely made of rock.', 'A colossal structure is built by tiny animals through simple, repeated actions.', 'The reef is smaller than it appears.', 'The reef is a single large organism.'], answer: 1 },
-        { type: 'mcq', id: 't12-r-ap2', part: 4, text: 'According to paragraph 2, how does the reef grow over time?', options: ['Fish build the structure.', 'A single polyp grows larger and larger.', 'New polyps grow on top of the skeletons left by dead ones, accumulating over thousands of years.', 'Rocks are washed in by the tide.'], answer: 2 },
-        { type: 'mcq', id: 't12-r-ap3', part: 4, text: 'Why are corals called "ecosystem engineers"?', options: ['They control the temperature of the water.', 'They eat other species.', 'They design machines.', 'By building physical structure, they create habitats that allow many other species to thrive.'], answer: 3 },
-        { type: 'mcq', id: 't12-r-ap4', part: 4, text: 'Why is the reef described as fragile in paragraph 4?', options: ['Reef-building corals are highly sensitive to changes in water temperature and chemistry.', 'It is too far from land.', 'Too many tourists visit it.', 'It is made of soft material.'], answer: 0 },
-        { type: 'mcq', id: 't12-r-ap5', part: 4, text: 'What is the "striking paradox" the author describes?', options: ['The reef is both alive and dead.', 'A structure that took millions of years to build could be severely damaged within a human lifetime.', 'The reef is visible from space but hard to find.', 'Corals are animals but look like plants.'], answer: 1 },
-        { type: 'multiselect', id: 't12-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'The reef\'s three-dimensional structure creates many different habitats.' },
-          { letter: 'B', text: 'The Great Barrier Reef is a single large organism.' },
-          { letter: 'C', text: 'Protecting the reef requires addressing the global causes of ocean warming.' },
-          { letter: 'D', text: 'Corals are unaffected by changes in water temperature.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET12_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET12_V2.academic.text,
+      passageTitle: TOEFL_READING_SET12_V2.academic.title,
+      questions: TOEFL_READING_SET12_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET12_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't12-w-bs1', part: 9, tiles: ['We', 'watched', 'the sunset', 'from', 'the balcony'], answer: ['We', 'watched', 'the sunset', 'from', 'the balcony'] },
-        { type: 'sentencebuild', id: 't12-w-bs2', part: 9, tiles: ['me', 'you', 'could', 'help', 'I wonder', 'if'], answer: ['I wonder', 'if', 'you', 'could', 'help', 'me'] },
-        { type: 'sentencebuild', id: 't12-w-bs3', part: 9, tiles: ['bought', 'The bike', 'she', 'has', 'a flat tire'], answer: ['The bike', 'she', 'bought', 'has', 'a flat tire'] },
-        { type: 'sentencebuild', id: 't12-w-bs4', part: 9, tiles: ['it', 'gets', 'Before', 'let\'s', 'leave', 'dark,'], answer: ['Before', 'it', 'gets', 'dark,', 'let\'s', 'leave'] },
-        { type: 'sentencebuild', id: 't12-w-bs5', part: 9, tiles: ['is', 'Today', 'yesterday', 'warmer', 'than'], answer: ['Today', 'is', 'warmer', 'than', 'yesterday'] },
-        { type: 'sentencebuild', id: 't12-w-bs6', part: 9, tiles: ['tired,', 'Feeling', 'early', 'he', 'to bed', 'went'], answer: ['Feeling', 'tired,', 'he', 'went', 'to bed', 'early'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET12_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET12_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET12_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +119,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't12-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You reserved a study room at the library for a group project, but when you arrived, another group was using it and would not leave. You want to report what happened and ask the library to confirm your reservation for next week.\n\nWrite an email to the library front desk.`,
-          text: 'In your email: explain what happened, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain what happened, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +130,7 @@ const mock: MockExam = {
         { type: 'write', id: 't12-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on society and technology. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Haddad: Some schools have started teaching computer programming to all students from a young age. Do you think programming should be a required subject for all children? Why or why not?\n\nStudent (Yuki): I think it should be required. Technology is part of every job now, and learning to code teaches logical thinking. For example, even students who study biology or art benefit from coding when they need to organize data or build a simple project website.\n\nStudent (Pablo): I'm not so sure. Not everyone will work in technology, and schools already have a full timetable. Maybe it should be optional. For example, my school already struggles to fit in music and art classes, so adding another required subject could push those out entirely.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

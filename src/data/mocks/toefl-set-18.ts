@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET18_V2 } from '@/data/toefl/complete-the-words-sets-16-20';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET18_V2 } from '@/data/toefl/reading-sets-16-20';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET18_V2 } from '@/data/toefl/build-sentence-sets-16-20';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
-      instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't18-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing a message to a group of friends.',
-          template: `Hi everyone,\n\nI'm organizing a small {{1}} for Ana's birthday next Saturday. I've booked a table at the Italian {{2}} on Green Street for eight o'clock. Please let me know if you can {{3}} so I can confirm the numbers. It's meant to be a {{4}}, so don't tell Ana! We're each paying for our own {{5}}, and I'll collect a little extra for a shared {{6}}. Hope to see you all there!\n\nMax`,
-          blanks: [
-            { num: 1, prefix: 'par', answer: 'party' },
-            { num: 2, prefix: 'rest', answer: 'restaurant' },
-            { num: 3, prefix: 'com', answer: 'come' },
-            { num: 4, prefix: 'sur', answer: 'surprise' },
-            { num: 5, prefix: 'me', answer: 'meal' },
-            { num: 6, prefix: 'gi', answer: 'gift' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't18-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about the water cycle.',
-          template: `The water cycle describes how water moves around our planet. Heat from the sun causes water in oceans and lakes to {{1}}, turning into vapor that rises into the air. As the vapor cools, it {{2}} to form clouds. Eventually the water falls back to Earth as rain or {{3}}. Some of this water soaks into the {{4}}, while some flows into rivers that carry it back to the {{5}}. This continuous cycle provides the fresh water that all living things {{6}} to survive.`,
-          blanks: [
-            { num: 1, prefix: 'eva', answer: 'evaporate' },
-            { num: 2, prefix: 'cond', answer: 'condenses' },
-            { num: 3, prefix: 'sn', answer: 'snow' },
-            { num: 4, prefix: 'gro', answer: 'ground' },
-            { num: 5, prefix: 'oc', answer: 'ocean' },
-            { num: 6, prefix: 'ne', answer: 'need' },
-          ],
-        },
-      ],
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
+      instructions: TOEFL_CTW_SET18_V2.instructions,
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET18_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Cinema notice)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Vaccines are one of the greatest achievements in the history of public health, responsible for saving millions of lives and eliminating or controlling diseases that once killed or disabled vast numbers of people. To understand why they are so powerful, it helps to understand the elegant biological principle on which they rely: training the immune system without causing the disease itself.\n\nThe human immune system has a remarkable ability to remember. When it encounters a harmful microbe—a virus or bacterium—for the first time, it mounts a defense, and afterward it retains a "memory" of that microbe. If the same microbe appears again, the immune system recognizes it and responds far more quickly and powerfully, often stopping the infection before it causes illness. A vaccine takes advantage of this memory. By exposing the body to a harmless version or piece of a microbe—too weak or incomplete to cause disease—a vaccine teaches the immune system to recognize the real threat in advance.\n\nBeyond protecting the individual who receives it, vaccination offers a benefit to the whole community, known as herd immunity. When a large enough proportion of a population is immune to a disease, the microbe can no longer spread easily from person to person, because it keeps encountering people who cannot pass it on. This indirectly protects those who cannot be vaccinated, such as newborn babies or people with certain medical conditions. Herd immunity is why some diseases can be pushed to very low levels, or even eliminated, when vaccination rates are high.\n\nThe dramatic success of vaccines has, paradoxically, contributed to complacency in some places. Because vaccines have made once-common diseases rare, many people have never witnessed how devastating those diseases can be, and some underestimate the importance of vaccination. When vaccination rates fall, however, diseases that were nearly eliminated can return. The history of public health offers a clear lesson: the protection vaccines provide is powerful but not permanent at the population level. It must be maintained, generation after generation, through continued vaccination.`,
-      passageTitle: 'How Vaccines Work',
-      questions: [
-        { type: 'mcq', id: 't18-r-ap1', part: 4, text: 'What biological principle do vaccines rely on?', options: ['Killing all bacteria in the body', 'Replacing the immune system', 'Making the body immune to all diseases at once', 'Training the immune system to recognize a threat without causing the disease itself'], answer: 3 },
-        { type: 'mcq', id: 't18-r-ap2', part: 4, text: 'What "remarkable ability" of the immune system do vaccines take advantage of?', options: ['Its ability to remember microbes it has encountered', 'Its ability to produce vaccines', 'Its ability to change the body\'s temperature', 'Its ability to grow'], answer: 0 },
-        { type: 'mcq', id: 't18-r-ap3', part: 4, text: 'What is "herd immunity"?', options: ['Immunity found only in animals', 'When enough of a population is immune that the microbe can no longer spread easily', 'A vaccine given to large groups at once', 'A disease that spreads among herds'], answer: 1 },
-        { type: 'mcq', id: 't18-r-ap4', part: 4, text: 'Who does herd immunity indirectly protect?', options: ['No one', 'Only those who are vaccinated', 'Those who cannot be vaccinated, such as newborns or people with certain conditions', 'Only adults'], answer: 2 },
-        { type: 'mcq', id: 't18-r-ap5', part: 4, text: 'What lesson does the final paragraph offer?', options: ['Diseases can never return.', 'Vaccines cause diseases.', 'Vaccines are no longer needed.', 'The protection vaccines provide must be maintained through continued vaccination, generation after generation.'], answer: 3 },
-        { type: 'multiselect', id: 't18-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'A vaccine exposes the body to a harmless version or piece of a microbe.' },
-          { letter: 'B', text: 'Herd immunity offers no benefit to unvaccinated people.' },
-          { letter: 'C', text: 'When vaccination rates fall, nearly eliminated diseases can return.' },
-          { letter: 'D', text: 'The immune system cannot remember microbes it has met.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET18_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET18_V2.academic.text,
+      passageTitle: TOEFL_READING_SET18_V2.academic.title,
+      questions: TOEFL_READING_SET18_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET18_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't18-w-bs1', part: 9, tiles: ['They', 'opened', 'a new café', 'near', 'the station'], answer: ['They', 'opened', 'a new café', 'near', 'the station'] },
-        { type: 'sentencebuild', id: 't18-w-bs2', part: 9, tiles: ['the report', 'you', 'check', 'Could', 'for me'], answer: ['Could', 'you', 'check', 'the report', 'for me'] },
-        { type: 'sentencebuild', id: 't18-w-bs3', part: 9, tiles: ['took', 'The photos', 'she', 'were', 'beautiful'], answer: ['The photos', 'she', 'took', 'were', 'beautiful'] },
-        { type: 'sentencebuild', id: 't18-w-bs4', part: 9, tiles: ['ready,', 'is', 'the food', 'we\'ll', 'When', 'eat'], answer: ['When', 'the food', 'is', 'ready,', 'we\'ll', 'eat'] },
-        { type: 'sentencebuild', id: 't18-w-bs5', part: 9, tiles: ['is', 'This bag', 'that one', 'than', 'lighter'], answer: ['This bag', 'is', 'lighter', 'than', 'that one'] },
-        { type: 'sentencebuild', id: 't18-w-bs6', part: 9, tiles: ['the message,', 'Reading', 'she', 'at once', 'replied'], answer: ['Reading', 'the message,', 'she', 'replied', 'at once'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET18_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET18_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET18_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +119,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't18-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You joined an online course, but the videos keep stopping and you cannot complete the lessons. You have already tried a different device and a different internet connection. You want to report the problem and ask for help.\n\nWrite an email to the course's technical support team.`,
-          text: 'In your email: describe the problem and what you have already tried, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: describe the problem and what you have already tried, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +130,7 @@ const mock: MockExam = {
         { type: 'write', id: 't18-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on education. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Tanaka: Some people believe that students learn best when they study a wide range of subjects, while others believe they should specialize early in one area. Which approach do you think is better, and why?\n\nStudent (Marco): I think a broad education is better. It helps students discover their interests and become well-rounded thinkers who can connect ideas across fields. For example, I only discovered my interest in economics after taking an elective class that had nothing to do with my intended major.\n\nStudent (Fatima): I disagree. Specializing early lets students go deeper and become truly skilled in one area, which employers often value. For example, a friend who focused entirely on engineering from an early age was able to start advanced research long before classmates with broader schedules.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

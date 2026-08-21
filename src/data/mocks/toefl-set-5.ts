@@ -1,4 +1,9 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET5_V2 } from '@/data/toefl/complete-the-words-sets-2-5';
+import { TOEFL_READING_SET5_V2 } from '@/data/toefl/reading-sets-2-5';
+import { TOEFL_BUILD_SENTENCE_SET5_V2 } from '@/data/toefl/build-sentence-sets-2-5';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
 
 // TOEFL iBT — formato oficial vigente (actualización 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md (verificado contra ETS 2026).
@@ -26,35 +31,16 @@ const mock: MockExam = {
       questions: [
         {
           type: 'wordcomplete',
-          id: 't5-r-cw1',
+          id: TOEFL_CTW_SET5_V2.id,
           part: 1,
-          qRange: [1, 6],
-          instructions: 'A student is writing a short message to a classmate.',
-          template: `Hi Mara,\n\nThanks for lending me your notes from Tuesday's {{1}}. I was {{2}} because I had a doctor's appointment, so I really appreciate it. I've {{3}} them and I think I understand the main points now. Could we {{4}} at the library tomorrow to compare answers before the {{5}} on Friday? I'm free after two o'clock. Let me {{6}} what time works for you.\n\nSee you soon,\nDan`,
-          blanks: [
-            { num: 1, prefix: 'lec', answer: 'lecture' },
-            { num: 2, prefix: 'ab', answer: 'absent' },
-            { num: 3, prefix: 're', answer: 'read' },
-            { num: 4, prefix: 'm', answer: 'meet' },
-            { num: 5, prefix: 'q', answer: 'quiz' },
-            { num: 6, prefix: 'kn', answer: 'know' },
-          ],
-        },
-        {
-          type: 'wordcomplete',
-          id: 't5-r-cw2',
-          part: 1,
-          qRange: [7, 12],
-          instructions: 'The following is from an article about sleep.',
-          template: `Most adults need between seven and nine hours of sleep each {{1}}. During sleep, the brain does not simply shut down; it stays {{2}}, processing memories and clearing waste products. People who regularly sleep too {{3}} may find it harder to concentrate and are more likely to make {{4}}. Researchers {{5}} that keeping a regular schedule — going to bed and waking up at the same time — is one of the most {{6}} ways to improve sleep quality.`,
-          blanks: [
-            { num: 1, prefix: 'ni', answer: 'night' },
-            { num: 2, prefix: 'ac', answer: 'active' },
-            { num: 3, prefix: 'li', answer: 'little' },
-            { num: 4, prefix: 'mis', answer: 'mistakes' },
-            { num: 5, prefix: 'sugg', answer: 'suggest' },
-            { num: 6, prefix: 'eff', answer: 'effective' },
-          ],
+          qRange: [1, 10],
+          objectId: TOEFL_CTW_SET5_V2.objectId,
+          contentVersion: String(TOEFL_CTW_SET5_V2.version),
+          serverScoring: 'toefl-complete-words',
+          alignment: 'official-family-pilot',
+          instructions: TOEFL_CTW_SET5_V2.instructions,
+          template: TOEFL_CTW_SET5_V2.template,
+          blanks: TOEFL_CTW_SET5_V2.blanks.map((blank) => ({ ...blank })),
         },
       ],
     },
@@ -116,64 +102,12 @@ const mock: MockExam = {
       part: 4,
       skill: 'reading',
       title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `The domestication of the horse transformed human societies more profoundly than almost any other animal. While dogs were domesticated far earlier, horses offered something different: a dramatic extension of human mobility and physical power. Archaeological evidence suggests that horses were first domesticated on the grasslands of Central Asia around 3500 BCE, initially raised for their meat and milk before their potential for transport was recognized.\n\nThe key evidence for early domestication comes from several sources. Changes in horse tooth wear indicate the use of bits, the metal or bone mouthpieces used to control a ridden animal. Settlement sites show a sudden increase in horse bones relative to other animals, suggesting managed herds rather than occasional hunting. Perhaps most tellingly, the geographic spread of certain horse-related vocabulary across ancient languages tracks closely with the movement of peoples who are thought to have relied on horses.\n\nOnce horses could be ridden and, later, harnessed to wheeled vehicles, the consequences rippled across every domain of life. Herders could manage far larger territories. Trade goods moved faster and over greater distances. Most dramatically, mounted warriors gained a decisive military advantage over foot soldiers, reshaping the balance of power between societies. Some historians argue that the spread of entire language families across Eurasia was accelerated by populations whose mobility depended on the horse.\n\nYet the relationship was not simply one of human mastery. Horses required pasture, water, and care, tying their owners to particular patterns of movement and settlement. In this sense, domestication was a mutual adaptation: humans shaped horses through selective breeding, and horses, in turn, shaped the rhythms of human life.`,
-      passageTitle: 'The Domestication of the Horse',
-      questions: [
-        {
-          type: 'mcq', id: 't5-r-ap1', part: 4,
-          text: 'According to the passage, how were horses first used after domestication?',
-          options: [
-            'As riding animals for warfare',
-            'For their meat and milk',
-            'To pull wheeled vehicles',
-            'As status symbols for rulers',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'mcq', id: 't5-r-ap2', part: 4,
-          text: 'The word "bits" in paragraph 2 refers to',
-          options: ['units used to measure distance', 'small pieces of food given to horses', 'mouthpieces used to control a ridden horse', 'fragments of ancient pottery'],
-          answer: 2,
-        },
-        {
-          type: 'mcq', id: 't5-r-ap3', part: 4,
-          text: 'Which of the following is mentioned as evidence of early domestication?',
-          options: ['Written records kept by herders', 'The discovery of ancient saddles', 'Cave paintings depicting mounted riders', 'A sudden increase in horse bones at settlement sites'],
-          answer: 3,
-        },
-        {
-          type: 'mcq', id: 't5-r-ap4', part: 4,
-          text: 'According to paragraph 3, what was the most dramatic consequence of riding horses?',
-          options: ['A military advantage for mounted warriors over foot soldiers', 'The invention of the wheel', 'A decline in trade between distant regions', 'Faster communication by written letter'],
-          answer: 0,
-        },
-        {
-          type: 'mcq', id: 't5-r-ap5', part: 4,
-          text: 'What does the author mean by describing domestication as a "mutual adaptation" in the final paragraph?',
-          options: [
-            'Humans and horses evolved into a single species',
-            'Both humans and horses changed each other: humans bred horses, and horses shaped human patterns of life',
-            'Horses eventually learned to live without human care',
-            'The process happened at the same time in many regions',
-          ],
-          answer: 1,
-        },
-        {
-          type: 'multiselect', id: 't5-r-ap6', part: 4,
-          qRange: [6, 6],
-          text: 'Select the TWO statements that are supported by the passage.',
-          options: [
-            { letter: 'A', text: 'Horses were domesticated before dogs.' },
-            { letter: 'B', text: 'Horse domestication likely began on the grasslands of Central Asia around 3500 BCE.' },
-            { letter: 'C', text: 'The spread of horse-related vocabulary tracks the movement of certain peoples.' },
-            { letter: 'D', text: 'Horses were never used for transport in the ancient world.' },
-          ],
-          selectCount: 2,
-          answers: ['B', 'C'],
-        },
-      ],
+      instructions: TOEFL_READING_SET5_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 forman Academic Passage. La selección múltiple final es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET5_V2.academic.text,
+      passageTitle: TOEFL_READING_SET5_V2.academic.title,
+      questions: TOEFL_READING_SET5_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET5_V2.objectId, item, 4)),
     },
 
     // ═══════════════════════ LISTENING (≈18 min) ════════════════════════════════
@@ -358,15 +292,10 @@ const mock: MockExam = {
       part: 9,
       skill: 'writing',
       title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't5-w-bs1', part: 9, tiles: ['She', 'has', 'lived', 'in', 'Madrid', 'for', 'five years'], answer: ['She', 'has', 'lived', 'in', 'Madrid', 'for', 'five years'] },
-        { type: 'sentencebuild', id: 't5-w-bs2', part: 9, tiles: ['the report', 'before', 'Please', 'the meeting', 'send', 'me'], answer: ['Please', 'send', 'me', 'the report', 'before', 'the meeting'] },
-        { type: 'sentencebuild', id: 't5-w-bs3', part: 9, tiles: ['is', 'the book', 'that', 'I', 'This', 'recommended'], answer: ['This', 'is', 'the book', 'that', 'I', 'recommended'] },
-        { type: 'sentencebuild', id: 't5-w-bs4', part: 9, tiles: ['we', 'If', 'leave', 'now,', 'catch', 'we can', 'the train'], answer: ['If', 'we', 'leave', 'now,', 'we can', 'catch', 'the train'] },
-        { type: 'sentencebuild', id: 't5-w-bs5', part: 9, tiles: ['was', 'The museum', 'than', 'more crowded', 'expected', 'we had'], answer: ['The museum', 'was', 'more crowded', 'than', 'we had', 'expected'] },
-        { type: 'sentencebuild', id: 't5-w-bs6', part: 9, tiles: ['finishing', 'she', 'After', 'her degree,', 'a job', 'found', 'abroad'], answer: ['After', 'finishing', 'her degree,', 'she', 'found', 'a job', 'abroad'] },
-      ],
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET5_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET5_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET5_V2.objectId, item, 9)),
     },
 
     // ── Write an Email ──────────────────────────────────────────────────────────
@@ -380,8 +309,8 @@ const mock: MockExam = {
           type: 'write', id: 't5-w-email', part: 10, taskNumber: 1,
           stimulusLabel: 'Write an Email',
           stimulus: `Situation: You signed up for a two-day weekend workshop on campus, but you have just found out that you must attend a family event and can no longer go. You want to ask whether you can transfer to the same workshop next month and whether your payment can be moved to the new date.\n\nWrite an email to the workshop coordinator, Ms. Reyes.`,
-          text: 'In your email: explain why you cannot attend, make your request clearly, and use a polite, appropriate tone. Write approximately 80–120 words.',
-          minWords: 80,
+          text: 'In your email: explain why you cannot attend, make your request clearly, and use a polite, appropriate tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.',
         },
       ],
     },
@@ -398,7 +327,7 @@ const mock: MockExam = {
           stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on technology and society. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Lin: Many schools are debating whether students should be allowed to use smartphones in the classroom. Some argue phones are useful learning tools; others say they are a distraction. In your view, should smartphones be allowed in class? Why or why not?\n\nStudent (Ana): I think phones should be allowed because they give quick access to dictionaries, research, and educational apps that make lessons more interactive. For example, in my last class, we used a phone app to look up unfamiliar vocabulary instantly instead of waiting to ask the teacher.\n\nStudent (Tom): I disagree. Even when phones are meant for learning, students end up checking messages and social media. The distraction outweighs the benefits. For example, I've seen classmates scrolling through social media during a lecture, completely missing what the professor explained.`,
           text: 'Write a response of at least 100 words. State your own position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100,
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.',
         },
       ],
     },

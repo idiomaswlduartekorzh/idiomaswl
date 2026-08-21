@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Braces, GitBranch, PenLine } from 'lucide-react';
 import SentenceBuildWorkbench from '@/components/exam-practice/SentenceBuildWorkbench';
+import BuildSentenceSet1Practice from '@/components/toefl/BuildSentenceSet1Practice';
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import {
   PRACTICE_BASE_URL,
@@ -100,7 +101,7 @@ export default function Page() {
           <section className="wl-card" style={{ padding: '1rem 1.1rem', borderRadius: 16, marginBottom: '1.2rem' }}>
             <h2 style={{ margin: '0 0 0.55rem', fontSize: '1rem' }}>Formato oficial vs estrategia WeLearn</h2>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.9rem' }}>
-              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> ETS lista Build a Sentence como una de las tareas actuales de TOEFL iBT Writing, junto con Write an Email y Write for an Academic Discussion.
+              <strong style={{ color: 'var(--ink)' }}>Formato oficial:</strong> la especificación ETS 2026 asigna 10 ítems a Build a Sentence dentro de una sección Writing de 12 unidades. Cada ítem presenta contexto y una respuesta que debe reconstruirse con fragmentos.
             </p>
             <p style={{ margin: '0 0 0.65rem', color: 'var(--muted)', lineHeight: 1.65, fontSize: '0.9rem' }}>
               <strong style={{ color: 'var(--ink)' }}>Estrategia WeLearn:</strong> usamos microestructuras como causa, contraste, condición, relativo, concesión y propósito para que el estudiante produzca oraciones completas y transferibles a emails y discusiones académicas.
@@ -156,6 +157,16 @@ export default function Page() {
                 </p>
               ))}
             </div>
+          </section>
+
+          <BuildSentenceSet1Practice />
+
+          <section className="wl-card" style={{ padding: '1rem', borderRadius: 16, marginTop: '1.2rem', marginBottom: '1rem' }}>
+            <p className="eyebrow" style={{ margin: '0 0 0.45rem' }}>Suplemento WeLearn</p>
+            <h2 style={{ margin: '0 0 0.55rem', fontSize: '1.2rem' }}>Laboratorio guiado de transferencia</h2>
+            <p style={{ margin: 0, color: 'var(--muted)', lineHeight: 1.65 }}>
+              El siguiente ejercicio permite escribir y recibir una pista. Es práctica pedagógica adicional; no cuenta como parte del simulacro oficial de 10 ítems.
+            </p>
           </section>
 
           <SentenceBuildWorkbench items={TOEFL_SENTENCE_BUILD_ITEMS} accent={ACCENT} />

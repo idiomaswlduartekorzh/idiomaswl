@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET13_V2 } from '@/data/toefl/complete-the-words-sets-11-15';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET13_V2 } from '@/data/toefl/reading-sets-11-15';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET13_V2 } from '@/data/toefl/build-sentence-sets-11-15';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
       instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't13-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A customer is writing an online review of a hotel.',
-          template: `We stayed at the Bay Hotel for three nights and had a wonderful {{1}}. The room was clean and the staff were extremely {{2}}, always ready to help. Breakfast was {{3}} in the price and offered plenty of choice. The location was {{4}}, just a short walk from the beach. The only small {{5}} was that the Wi-Fi was slow. Overall, I would happily {{6}} this hotel to friends.`,
-          blanks: [
-            { num: 1, prefix: 'st', answer: 'stay' },
-            { num: 2, prefix: 'hel', answer: 'helpful' },
-            { num: 3, prefix: 'inc', answer: 'included' },
-            { num: 4, prefix: 'conv', answer: 'convenient' },
-            { num: 5, prefix: 'dow', answer: 'downside' },
-            { num: 6, prefix: 'rec', answer: 'recommend' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't13-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about rainforests.',
-          template: `Rainforests are among the most {{1}} ecosystems on Earth, home to more than half of all plant and animal {{2}}. The tall trees form a thick {{3}} that blocks most sunlight from reaching the ground. Rainforests also play a key role in the {{4}} cycle, releasing huge amounts of water vapor into the air. Unfortunately, large areas are cut down every year, a process called {{5}}, which threatens countless species and contributes to climate {{6}}.`,
-          blanks: [
-            { num: 1, prefix: 'div', answer: 'diverse' },
-            { num: 2, prefix: 'sp', answer: 'species' },
-            { num: 3, prefix: 'can', answer: 'canopy' },
-            { num: 4, prefix: 'wa', answer: 'water' },
-            { num: 5, prefix: 'defo', answer: 'deforestation' },
-            { num: 6, prefix: 'ch', answer: 'change' },
-          ],
-        },
-      ],
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET13_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Pharmacy label)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `For thousands of years, humans navigated using the stars, the sun, and familiar landmarks. But over the past few decades, a technology has quietly transformed how we find our way: the Global Positioning System, or GPS. Today, GPS guides everything from smartphones and cars to ships, aircraft, and even farm equipment. Yet few people understand the elegant science that makes it work.\n\nGPS relies on a network of satellites orbiting the Earth, each continuously broadcasting a signal that includes the exact time the signal was sent and the satellite's position. A GPS receiver—in your phone, for example—listens for these signals. Because radio waves travel at a known speed, the receiver can calculate how far away each satellite is by measuring how long the signal took to arrive. With the distance to one satellite, you could be anywhere on a sphere around it. But with signals from four or more satellites, the receiver can pinpoint its exact location on the Earth's surface, a process called trilateration.\n\nWhat is remarkable is the precision required. The satellites carry extremely accurate atomic clocks, because even a tiny timing error—a millionth of a second—would translate into a position error of hundreds of meters. In fact, the system is so sensitive to time that it must account for effects predicted by Einstein's theory of relativity: clocks on the fast-moving satellites, high above the Earth, tick at a slightly different rate than clocks on the ground. If engineers ignored this, GPS would quickly become useless.\n\nGPS was originally developed for military purposes, but it was later made available for civilian use, unleashing a wave of innovation no one fully anticipated. It has reshaped transportation, agriculture, emergency response, and countless everyday activities. It is a striking example of how fundamental physics—precise timekeeping and relativity—can quietly underpin a technology billions of people now depend on without a second thought.`,
-      passageTitle: 'How GPS Works',
-      questions: [
-        { type: 'mcq', id: 't13-r-ap1', part: 4, text: 'How does a GPS receiver calculate its distance from a satellite?', options: ['By measuring how long the signal took to arrive, since radio waves travel at a known speed', 'By counting the number of satellites', 'By using a compass', 'By measuring the satellite\'s brightness'], answer: 0 },
-        { type: 'mcq', id: 't13-r-ap2', part: 4, text: 'What is "trilateration," as described in the passage?', options: ['Using one satellite to find a location', 'Using signals from four or more satellites to pinpoint an exact location', 'Measuring the temperature of satellites', 'Sending signals back to satellites'], answer: 1 },
-        { type: 'mcq', id: 't13-r-ap3', part: 4, text: 'Why must GPS satellites carry extremely accurate atomic clocks?', options: ['To save energy', 'To keep the satellites warm', 'Because even a tiny timing error would cause a large position error', 'To communicate with other satellites'], answer: 2 },
-        { type: 'mcq', id: 't13-r-ap4', part: 4, text: 'Why must GPS account for Einstein\'s theory of relativity?', options: ['Because signals travel faster in space', 'Because the Earth is round', 'Because satellites are very heavy', 'Because clocks on the fast-moving satellites tick at a slightly different rate than clocks on the ground'], answer: 3 },
-        { type: 'mcq', id: 't13-r-ap5', part: 4, text: 'What is the main idea of the final paragraph?', options: ['GPS shows how fundamental physics can quietly underpin a widely used technology.', 'GPS is no longer useful.', 'GPS was invented by Einstein.', 'GPS is only used by the military.'], answer: 0 },
-        { type: 'multiselect', id: 't13-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'GPS requires signals from at least four satellites to pinpoint an exact location.' },
-          { letter: 'B', text: 'GPS was originally developed for civilian shopping apps.' },
-          { letter: 'C', text: 'A tiny timing error in GPS would cause a large error in position.' },
-          { letter: 'D', text: 'GPS satellites do not need accurate clocks.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET13_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET13_V2.academic.text,
+      passageTitle: TOEFL_READING_SET13_V2.academic.title,
+      questions: TOEFL_READING_SET13_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET13_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't13-w-bs1', part: 9, tiles: ['She', 'sent', 'me', 'a postcard', 'from Rome'], answer: ['She', 'sent', 'me', 'a postcard', 'from Rome'] },
-        { type: 'sentencebuild', id: 't13-w-bs2', part: 9, tiles: ['the report', 'to finish', 'me', 'help', 'Can', 'you'], answer: ['Can', 'you', 'help', 'me', 'to finish', 'the report'] },
-        { type: 'sentencebuild', id: 't13-w-bs3', part: 9, tiles: ['recommended', 'The doctor', 'I', 'rest', 'more', 'that'], answer: ['The doctor', 'recommended', 'that', 'I', 'rest', 'more'] },
-        { type: 'sentencebuild', id: 't13-w-bs4', part: 9, tiles: ['ready,', 'is', 'When', 'we\'ll', 'dinner', 'eat'], answer: ['When', 'dinner', 'is', 'ready,', 'we\'ll', 'eat'] },
-        { type: 'sentencebuild', id: 't13-w-bs5', part: 9, tiles: ['is', 'The new library', 'the old one', 'bigger', 'than', 'much'], answer: ['The new library', 'is', 'much', 'bigger', 'than', 'the old one'] },
-        { type: 'sentencebuild', id: 't13-w-bs6', part: 9, tiles: ['the letter,', 'Having', 'she', 'read', 'smiled'], answer: ['Having', 'read', 'the letter,', 'she', 'smiled'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET13_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET13_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET13_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +119,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't13-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You bought a pair of headphones online, but when they arrived, one side did not work. You want to explain the problem and ask for either a replacement or a refund.\n\nWrite an email to the online store's customer service.`,
-          text: 'In your email: describe the problem, make your request clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: describe the problem, make your request clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +130,7 @@ const mock: MockExam = {
         { type: 'write', id: 't13-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on tourism. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Costa: Tourism brings money and jobs to many places, but it can also damage the environment and local culture. In your view, does tourism do more good or more harm? Why?\n\nStudent (Ella): I think it does more good. Tourism creates jobs, supports small businesses, and encourages countries to protect their heritage sites. For example, a small coastal town near where I live now thrives economically because visitors come specifically to see its restored historic center.\n\nStudent (Rashid): I disagree. Mass tourism often pollutes natural areas, raises local prices, and turns unique cultures into performances for visitors. For example, a beach near my hometown has become so crowded with tourists that local fishermen can barely use it anymore.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

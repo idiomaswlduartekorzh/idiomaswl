@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import { TOEFL_CTW_SET19_V2 } from '@/data/toefl/complete-the-words-sets-16-20';
+import { toToeflCompleteWordsQuestion } from './toefl-complete-words-adapter';
+import { TOEFL_READING_SET19_V2 } from '@/data/toefl/reading-sets-16-20';
+import { toToeflReadingQuestion } from './toefl-reading-adapter';
+import { TOEFL_BUILD_SENTENCE_SET19_V2 } from '@/data/toefl/build-sentence-sets-16-20';
+import { toToeflBuildSentenceQuestion } from './toefl-build-sentence-adapter';
 
 // TOEFL iBT — formato oficial vigente (act. 21 enero 2026).
 // Blueprint: docs/toefl-ibt-2026-official-format.md. Escala 1–6.
@@ -13,36 +19,11 @@ const mock: MockExam = {
   timeMinutes: 86,
   sections: [
     {
-      part: 1, skill: 'reading', title: 'Reading — Complete the Words',
-      instructions: 'Complete each word so the text makes sense. Some letters are given.',
-      questions: [
-        {
-          type: 'wordcomplete', id: 't19-r-cw1', part: 1, qRange: [1, 6],
-          instructions: 'A student is writing to a museum about a school visit.',
-          template: `Dear Education Team,\n\nI am a teacher planning a class {{1}} to your museum next month. I would like to bring a {{2}} of thirty students, aged twelve. Could you tell me whether we need to {{3}} in advance and what the {{4}} price is for schools? We would also be interested in a guided {{5}} if one is available. Finally, is there a space where the students can eat their {{6}}?\n\nThank you,\nMs. Flores`,
-          blanks: [
-            { num: 1, prefix: 'vi', answer: 'visit' },
-            { num: 2, prefix: 'gr', answer: 'group' },
-            { num: 3, prefix: 'bo', answer: 'book' },
-            { num: 4, prefix: 'ti', answer: 'ticket' },
-            { num: 5, prefix: 'to', answer: 'tour' },
-            { num: 6, prefix: 'lu', answer: 'lunch' },
-          ],
-        },
-        {
-          type: 'wordcomplete', id: 't19-r-cw2', part: 1, qRange: [7, 12],
-          instructions: 'The following is from an article about the human eye.',
-          template: `The human eye is an amazing organ that allows us to {{1}} the world around us. Light enters through the {{2}} at the front of the eye and is focused by the lens onto the {{3}} at the back. There, special cells turn the light into {{4}} that travel along the optic nerve to the {{5}}, which creates the images we see. Many people need glasses because their eyes cannot focus light {{6}}.`,
-          blanks: [
-            { num: 1, prefix: 'se', answer: 'see' },
-            { num: 2, prefix: 'pu', answer: 'pupil' },
-            { num: 3, prefix: 'ret', answer: 'retina' },
-            { num: 4, prefix: 'sig', answer: 'signals' },
-            { num: 5, prefix: 'br', answer: 'brain' },
-            { num: 6, prefix: 'corr', answer: 'correctly' },
-          ],
-        },
-      ],
+      part: 1,
+      skill: 'reading',
+      title: 'Reading — Complete the Words',
+      instructions: TOEFL_CTW_SET19_V2.instructions,
+      questions: [toToeflCompleteWordsQuestion(TOEFL_CTW_SET19_V2, 1)],
     },
     {
       part: 2, skill: 'reading', title: 'Reading — Read in Daily Life (Recycling center hours)',
@@ -66,23 +47,15 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 4, skill: 'reading', title: 'Reading — Read an Academic Passage',
-      instructions: 'Read the passage and answer questions.',
-      passage: `Why do we dream? Despite being one of the most universal human experiences, dreaming remains among the least understood. Everyone dreams, whether or not they remember it, and dreams have fascinated people for thousands of years. Modern science has offered several theories, but no single explanation has won universal agreement—which itself tells us something about how difficult the question is.\n\nOne influential idea comes from the field of neuroscience and is sometimes called the "activation-synthesis" theory. According to this view, during a stage of sleep called REM sleep, the brain becomes highly active, generating bursts of electrical signals. The higher, thinking parts of the brain then try to make sense of this random internal activity by weaving it into a story. On this account, dreams are, in part, the brain's attempt to impose meaning on essentially random signals—which might explain why dreams are often so strange and disjointed.\n\nA very different family of theories emphasizes function—the idea that dreaming does something useful. Some researchers propose that dreams help process emotions, allowing us to work through fears and difficult experiences in a safe, imaginary space. Others suggest that dreaming plays a role in memory, helping the brain sort through and consolidate the day's experiences, strengthening important memories and discarding trivial ones. A related idea is that dreams act as a kind of rehearsal, letting us practice responses to threats or challenges without real-world consequences.\n\nIt is quite possible that more than one of these theories is partly correct, and that dreaming serves several functions at once. What is clear is that sleep and dreaming are far from passive states; the sleeping brain is doing significant work. And the very difficulty of studying dreams—the fact that they are private, fleeting, and hard to recall accurately—reminds us that even the most ordinary parts of human experience can contain deep and unresolved scientific mysteries.`,
-      passageTitle: 'Why Do We Dream?',
-      questions: [
-        { type: 'mcq', id: 't19-r-ap1', part: 4, text: 'What does the passage say about explanations for dreaming?', options: ['Only children dream.', 'One theory has been proven correct.', 'No single explanation has won universal agreement.', 'Scientists agree dreams have no purpose.'], answer: 2 },
-        { type: 'mcq', id: 't19-r-ap2', part: 4, text: 'According to the "activation-synthesis" theory, what are dreams?', options: ['Memories replayed exactly', 'A sign of illness', 'Messages from the future', 'The brain\'s attempt to make sense of random internal activity during REM sleep'], answer: 3 },
-        { type: 'mcq', id: 't19-r-ap3', part: 4, text: 'What is one "function" theory of dreaming mentioned in the passage?', options: ['Dreams help process emotions in a safe, imaginary space.', 'Dreams have no effect on the brain.', 'Dreams cause memory loss.', 'Dreams predict the weather.'], answer: 0 },
-        { type: 'mcq', id: 't19-r-ap4', part: 4, text: 'How might dreaming relate to memory, according to the passage?', options: ['It erases all memories.', 'It helps the brain sort through and consolidate the day\'s experiences.', 'It prevents learning.', 'It has no connection to memory.'], answer: 1 },
-        { type: 'mcq', id: 't19-r-ap5', part: 4, text: 'What is the main conclusion of the final paragraph?', options: ['Dreaming is fully understood.', 'Dreams are meaningless.', 'Sleep and dreaming are far from passive; the sleeping brain does significant work, and dreams remain a deep mystery.', 'Only one theory can be true.'], answer: 2 },
-        { type: 'multiselect', id: 't19-r-ap6', part: 4, qRange: [6, 6], text: 'Select the TWO statements supported by the passage.', options: [
-          { letter: 'A', text: 'The activation-synthesis theory links dreaming to brain activity during REM sleep.' },
-          { letter: 'B', text: 'Scientists have fully explained why we dream.' },
-          { letter: 'C', text: 'Some theories propose that dreaming serves useful functions such as processing emotions.' },
-          { letter: 'D', text: 'Only people who remember their dreams actually dream.' },
-        ], selectCount: 2, answers: ['A', 'C'] },
-      ],
+      part: 4,
+      skill: 'reading',
+      title: 'Reading — Read an Academic Passage',
+      instructions: TOEFL_READING_SET19_V2.academic.instructions,
+      sectionNote: 'Las preguntas 1–5 reproducen familias oficiales de selección única. La pregunta 6 es práctica complementaria WeLearn.',
+      passage: TOEFL_READING_SET19_V2.academic.text,
+      passageTitle: TOEFL_READING_SET19_V2.academic.title,
+      questions: TOEFL_READING_SET19_V2.academic.items.map((item) =>
+        toToeflReadingQuestion(TOEFL_READING_SET19_V2.objectId, item, 4)),
     },
     {
       part: 5, skill: 'listening', title: 'Listening — Listen and Choose a Response',
@@ -132,16 +105,13 @@ const mock: MockExam = {
       ],
     },
     {
-      part: 9, skill: 'writing', title: 'Writing — Build a Sentence',
-      instructions: 'Put the words in the correct order to make a grammatical sentence.',
-      questions: [
-        { type: 'sentencebuild', id: 't19-w-bs1', part: 9, tiles: ['We', 'are', 'meeting', 'our friends', 'tonight'], answer: ['We', 'are', 'meeting', 'our friends', 'tonight'] },
-        { type: 'sentencebuild', id: 't19-w-bs2', part: 9, tiles: ['the report', 'you', 'print', 'Could', 'for me'], answer: ['Could', 'you', 'print', 'the report', 'for me'] },
-        { type: 'sentencebuild', id: 't19-w-bs3', part: 9, tiles: ['built', 'The house', 'they', 'is', 'very modern'], answer: ['The house', 'they', 'built', 'is', 'very modern'] },
-        { type: 'sentencebuild', id: 't19-w-bs4', part: 9, tiles: ['arrive,', 'we', 'As soon as', 'we\'ll', 'let you know'], answer: ['As soon as', 'we', 'arrive,', 'we\'ll', 'let you know'] },
-        { type: 'sentencebuild', id: 't19-w-bs5', part: 9, tiles: ['is', 'This route', 'the other one', 'than', 'shorter'], answer: ['This route', 'is', 'shorter', 'than', 'the other one'] },
-        { type: 'sentencebuild', id: 't19-w-bs6', part: 9, tiles: ['the exam,', 'Having', 'they', 'celebrated', 'passed'], answer: ['Having', 'passed', 'the exam,', 'they', 'celebrated'] },
-      ],
+      part: 9,
+      skill: 'writing',
+      title: 'Writing — Build a Sentence',
+      instructions: 'Read the first speaker. Arrange the fragments to make a grammatical and contextually appropriate reply. One fragment is not used.',
+      sectionNote: TOEFL_BUILD_SENTENCE_SET19_V2.interactionDisclosure,
+      questions: TOEFL_BUILD_SENTENCE_SET19_V2.items.map((item) =>
+        toToeflBuildSentenceQuestion(TOEFL_BUILD_SENTENCE_SET19_V2.objectId, item, 9)),
     },
     {
       part: 10, skill: 'writing', title: 'Writing — Write an Email',
@@ -149,8 +119,8 @@ const mock: MockExam = {
       questions: [
         { type: 'write', id: 't19-w-email', part: 10, taskNumber: 1, stimulusLabel: 'Write an Email',
           stimulus: `Situation: You signed up for a weekend cooking class, but you have realized you are allergic to nuts. You want to check whether the recipes will contain nuts and ask what options you have.\n\nWrite an email to the cooking-class organizer.`,
-          text: 'In your email: explain your situation, ask your questions clearly, and keep a polite tone. Write approximately 80–120 words.',
-          minWords: 80 },
+          text: 'In your email: explain your situation, ask your questions clearly, and keep a polite tone. Write as much as you can in complete sentences.',
+          minWords: 0, timeLimitSeconds: 420, minimumWordsPolicy: 'none-published', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {
@@ -160,7 +130,7 @@ const mock: MockExam = {
         { type: 'write', id: 't19-w-disc', part: 11, taskNumber: 2, stimulusLabel: 'Write for an Academic Discussion',
           stimulus: `Your professor is teaching a class on communication. Write a post responding to the professor's question. Contribute your own opinion and reasons, and add to the discussion.\n\nProfessor Novak: Some people believe that learning a second language should be required for all university students, while others think it should be optional. What is your view, and why?\n\nStudent (Yuki): I think it should be required. Knowing another language broadens your thinking, improves job prospects, and helps you understand other cultures. For example, learning Spanish completely changed how I understood a documentary about Latin America that I had watched years earlier in translation.\n\nStudent (Sam): I disagree. Students already have heavy workloads, and not everyone needs a second language for their career. It should be a personal choice. For example, a friend studying computer science barely has time for his major classes, let alone an additional language requirement.`,
           text: 'Write a response of at least 100 words. State your position clearly, give reasons and an example, and refer to a classmate\'s point where relevant.',
-          minWords: 100 },
+          minWords: 100, timeLimitSeconds: 600, minimumWordsPolicy: 'recommended-100', evaluationDisclosure: 'Feedback local WeLearn; la respuesta se guarda como not_evaluated y no produce banda ni score ETS.' },
       ],
     },
     {

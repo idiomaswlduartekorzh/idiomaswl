@@ -33,7 +33,9 @@ export function blankKey(groupId: string, num: number) {
 export function Timer({ totalSecs, onExpire }: { totalSecs: number; onExpire: () => void }) {
   const [secs, setSecs] = useState(totalSecs);
   const ref = useRef(onExpire);
-  ref.current = onExpire;
+  useEffect(() => {
+    ref.current = onExpire;
+  }, [onExpire]);
   useEffect(() => {
     const id = setInterval(() => setSecs(p => {
       if (p <= 1) { clearInterval(id); ref.current(); return 0; }
@@ -55,7 +57,21 @@ export function Timer({ totalSecs, onExpire }: { totalSecs: number; onExpire: ()
 
 // ── Audio player ──────────────────────────────────────────────────────────────
 
-export function AudioPlayer({ src, label = 'Listening' }: { src?: string; label?: string }) {
+export function AudioPlayer({
+  src,
+  label = 'Listening',
+  alreadyPlayed = false,
+  onPlaybackStart,
+  onEnded,
+  onPlaybackError,
+}: {
+  src?: string;
+  label?: string;
+  alreadyPlayed?: boolean;
+  onPlaybackStart?: () => void;
+  onEnded?: () => void;
+  onPlaybackError?: () => void;
+}) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [started, setStarted] = useState(false);
   const [done, setDone] = useState(false);
@@ -63,14 +79,31 @@ export function AudioPlayer({ src, label = 'Listening' }: { src?: string; label?
   const [duration, setDuration] = useState(0);
 
   function play() {
-    if (!audioRef.current || started) return;
-    audioRef.current.play();
-    setStarted(true);
+    if (!audioRef.current || started || alreadyPlayed) return;
+    void audioRef.current.play().then(() => {
+      setStarted(true);
+      onPlaybackStart?.();
+    }).catch(() => {
+      onPlaybackError?.();
+    });
   }
 
   const pct = duration > 0 ? (current / duration) * 100 : 0;
 
   if (!src) return null;
+
+  if (alreadyPlayed && !started) {
+    return (
+      <div className="ielts-audio" role="status">
+        <div className="ielts-audio__player">
+          <span className="ielts-audio__btn ielts-audio__btn--done" aria-hidden="true">✓</span>
+          <div className="ielts-audio__info">
+            <span className="ielts-audio__label">{label} — reproducción única completada</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="ielts-audio">
@@ -79,14 +112,18 @@ export function AudioPlayer({ src, label = 'Listening' }: { src?: string; label?
         src={resolveAudioUrl(src)}
         onTimeUpdate={() => setCurrent(audioRef.current?.currentTime ?? 0)}
         onLoadedMetadata={() => setDuration(audioRef.current?.duration ?? 0)}
-        onEnded={() => setDone(true)}
+        onEnded={() => {
+          setDone(true);
+          onEnded?.();
+        }}
+        onError={onPlaybackError}
       />
       <div className="ielts-audio__player">
         <button
           className={`ielts-audio__btn${started ? ' ielts-audio__btn--done' : ''}`}
           onClick={play}
           aria-label="Play"
-          disabled={started}
+          disabled={started || alreadyPlayed}
         >
           {done ? '✓' : '▶'}
         </button>
