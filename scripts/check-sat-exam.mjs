@@ -184,6 +184,26 @@ function checkModule(mod) {
     const p = pct(letterCount[l], items.length)
     if (p < 20 || p > 30) fail(id, '1 reparto de clave', `${l} sale ${letterCount[l]} veces (${fmt(p)} %), fuera de 20-30 %`)
   }
+
+  // El reparto del módulo entero puede estar perfecto y aun así estar **apilado por
+  // bloques**: en este mismo módulo llegó a haber ocho ítems de lectura sin una sola D, y
+  // siete de convenciones con la D de clave en cuatro y la A en ninguna. Marcando siempre
+  // D se sacaba un 57 % de ese bloque. No se ve leyendo ítem por ítem: solo contando, y
+  // solo si se cuenta por dominio. (Es el mismo defecto de conjunto que ya mordió en las
+  // series de práctica, con la respuesta en la A el 100 % de las veces.)
+  for (const dom of [...new Set(metas.map((m) => m.domain))]) {
+    const delDominio = items.filter((q, i) => metas[i].domain === dom)
+    if (delDominio.length < 4) continue
+    const cuenta = { A: 0, B: 0, C: 0, D: 0 }
+    for (const q of delDominio) cuenta[LETTERS[q.answer]]++
+    for (const l of LETTERS) {
+      if (cuenta[l] === 0) {
+        fail(id, '1 reparto de clave', `dominio ${dom}: la ${l} no es la correcta ni una vez en ${delDominio.length} ítems — descartarla sale gratis`)
+      } else if (pct(cuenta[l], delDominio.length) > 40) {
+        fail(id, '1 reparto de clave', `dominio ${dom}: la ${l} es la correcta ${cuenta[l]} de ${delDominio.length} veces (${fmt(pct(cuenta[l], delDominio.length))} %), máximo 40 % — marcarla siempre rinde de más`)
+      }
+    }
+  }
   let racha = 1
   for (let i = 1; i < items.length; i++) {
     racha = items[i].answer === items[i - 1].answer ? racha + 1 : 1
