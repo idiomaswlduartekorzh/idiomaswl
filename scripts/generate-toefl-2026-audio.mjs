@@ -23,6 +23,7 @@ const doGenerate = has('--generate');
 const sampleOnly = has('--sample');
 const fullBatch = has('--all');
 const requestedSets = value('--sets');
+const requestedMediaIds = value('--media-ids');
 const listVoices = has('--list-voices');
 const accountStatus = has('--account');
 const manifestHash = TOEFL_MISSING_AUDIO_SUMMARY.manifestSha256;
@@ -34,6 +35,8 @@ function setNumber(row) {
 }
 
 function profileKey(row, segment) {
+  const mediaOverride = casting.media_profile_overrides?.[row.media_id];
+  if (mediaOverride) return mediaOverride;
   const odd = setNumber(row) % 2 === 1;
   if (segment.profile === 'woman') return odd ? 'woman_a' : 'woman_b';
   if (segment.profile === 'man') return odd ? 'man_a' : 'man_b';
@@ -50,11 +53,12 @@ const FLASH_NUMBER_PRONUNCIATIONS = [
   [/\bRoom 205\b/g, 'Room two oh five'],
 ];
 
-function ttsText(text) {
-  if (casting.model_id !== 'eleven_flash_v2_5') return text;
+function ttsText(text, mediaId) {
+  const sourceText = casting.media_text_overrides?.[mediaId] ?? text;
+  if (casting.model_id !== 'eleven_flash_v2_5') return sourceText;
   return FLASH_NUMBER_PRONUNCIATIONS.reduce(
     (normalized, [pattern, replacement]) => normalized.replace(pattern, replacement),
-    text,
+    sourceText,
   );
 }
 
@@ -69,7 +73,7 @@ function publicCost(rows) {
       assert.ok(configured, `missing casting profile ${key}`);
       const multiplier = Number(configured.credit_multiplier);
       if (!Number.isFinite(multiplier) || multiplier < 1) unresolvedMultipliers.add(key);
-      charactersWithMultipliers += ttsText(segment.text).length * (Number.isFinite(multiplier) && multiplier >= 1 ? multiplier : 1);
+      charactersWithMultipliers += ttsText(segment.text, row.media_id).length * (Number.isFinite(multiplier) && multiplier >= 1 ? multiplier : 1);
     }
   }
   return {
@@ -87,11 +91,11 @@ function invoice(rows, label) {
     manifestSha256: manifestHash,
     files: rows.length,
     billableCharacters: rows.reduce(
-      (total, row) => total + row._segments.reduce((rowTotal, segment) => rowTotal + ttsText(segment.text).length, 0),
+      (total, row) => total + row._segments.reduce((rowTotal, segment) => rowTotal + ttsText(segment.text, row.media_id).length, 0),
       0,
     ),
     estimatedCredits: Math.ceil(rows.reduce(
-      (total, row) => total + row._segments.reduce((rowTotal, segment) => rowTotal + ttsText(segment.text).length, 0),
+      (total, row) => total + row._segments.reduce((rowTotal, segment) => rowTotal + ttsText(segment.text, row.media_id).length, 0),
       0,
     ) * Number(casting.credits_per_character)),
     requestSegments: rows.reduce((total, row) => total + row.request_segments, 0),
@@ -123,6 +127,17 @@ function parseSetSelection(selection) {
 }
 
 const selectedSetNumbers = parseSetSelection(requestedSets);
+const selectedMediaIds = requestedMediaIds
+  ? [...new Set(requestedMediaIds.split(',').map((mediaId) => mediaId.trim()).filter(Boolean))]
+  : [];
+if (selectedMediaIds.length > 0) {
+  const knownMediaIds = new Set(TOEFL_MISSING_AUDIO_ROWS.map((row) => row.media_id));
+  assert.deepEqual(
+    selectedMediaIds.filter((mediaId) => !knownMediaIds.has(mediaId)),
+    [],
+    '--media-ids contains an unknown media ID',
+  );
+}
 const excludedMediaIds = new Set();
 for (const logPath of args.flatMap((argument, index) => argument === '--exclude-log' ? [args[index + 1]] : [])) {
   assert.ok(logPath, '--exclude-log requires a generation log path');
@@ -135,6 +150,8 @@ const selectedRows = (sampleOnly
   ? sampleRows
   : fullBatch
     ? TOEFL_MISSING_AUDIO_ROWS
+    : selectedMediaIds.length > 0
+      ? TOEFL_MISSING_AUDIO_ROWS.filter((row) => selectedMediaIds.includes(row.media_id))
     : selectedSetNumbers.length > 0
       ? TOEFL_MISSING_AUDIO_ROWS.filter((row) => selectedSetNumbers.includes(setNumber(row)))
       : [])
@@ -175,15 +192,19 @@ async function showReadOnlyAccountData() {
 function scopeLabel() {
   if (sampleOnly) return 'pilot';
   if (fullBatch) return 'full';
+  if (selectedMediaIds.length > 0) {
+    return `retry-${createHash('sha256').update(selectedMediaIds.join('\n')).digest('hex').slice(0, 12)}`;
+  }
   return `sets-${selectedSetNumbers.join('-')}`;
 }
 
 async function ensureGenerationGate(rows) {
-  const scopeCount = [sampleOnly, fullBatch, selectedSetNumbers.length > 0].filter(Boolean).length;
-  assert.equal(scopeCount, 1, 'choose exactly one generation scope: --sample, --all, or --sets');
+  const scopeCount = [sampleOnly, fullBatch, selectedSetNumbers.length > 0, selectedMediaIds.length > 0].filter(Boolean).length;
+  assert.equal(scopeCount, 1, 'choose exactly one generation scope: --sample, --all, --sets, or --media-ids');
   assert.ok(rows.length > 0, 'generation scope is empty');
   assert.equal(value('--approve-manifest'), manifestHash, `pass --approve-manifest ${manifestHash}`);
   if (fullBatch) assert.equal(value('--approve-full-batch'), '400', 'full generation also requires --approve-full-batch 400');
+  if (selectedMediaIds.length > 0) assert.ok(value('--seed-salt'), 'targeted retries require a non-empty --seed-salt');
   const cap = Number(value('--max-usd'));
   assert.ok(Number.isFinite(cap) && cap > 0, 'pass a positive --max-usd owner-approved ceiling');
   const bill = invoice(rows, scopeLabel());
@@ -218,7 +239,7 @@ function outputDirectory(scope) {
 }
 
 function seedFor(mediaId, segmentIndex) {
-  return Number.parseInt(createHash('sha256').update(`${mediaId}:${segmentIndex}`).digest('hex').slice(0, 8), 16);
+  return Number.parseInt(createHash('sha256').update(`${mediaId}:${segmentIndex}:${value('--seed-salt') ?? ''}`).digest('hex').slice(0, 8), 16);
 }
 
 async function synthesize({ apiKey, voiceId, text, previousText, nextText, mediaId, segmentIndex }) {
@@ -387,9 +408,9 @@ async function generate(rows) {
       const bytes = await synthesize({
         apiKey,
         voiceId: casting.profiles[key].voice_id,
-        text: ttsText(segment.text),
-        previousText: row._segments[segmentIndex - 1] ? ttsText(row._segments[segmentIndex - 1].text) : undefined,
-        nextText: row._segments[segmentIndex + 1] ? ttsText(row._segments[segmentIndex + 1].text) : undefined,
+        text: ttsText(segment.text, row.media_id),
+        previousText: row._segments[segmentIndex - 1] ? ttsText(row._segments[segmentIndex - 1].text, row.media_id) : undefined,
+        nextText: row._segments[segmentIndex + 1] ? ttsText(row._segments[segmentIndex + 1].text, row.media_id) : undefined,
         mediaId: row.media_id,
         segmentIndex,
       });
@@ -401,7 +422,7 @@ async function generate(rows) {
     generated.push({
       media_id: row.media_id,
       path: targetPath,
-      billable_characters: row._segments.reduce((total, segment) => total + ttsText(segment.text).length, 0),
+      billable_characters: row._segments.reduce((total, segment) => total + ttsText(segment.text, row.media_id).length, 0),
     });
     writeLog('in_progress');
     console.log(`[${rowIndex + 1}/${pendingRows.length}] ${row.media_id}`);
@@ -420,7 +441,9 @@ if (isMain) {
     console.log(JSON.stringify({
       sample: invoice(sampleRows, 'pilot'),
       full: invoice(TOEFL_MISSING_AUDIO_ROWS, 'full'),
-      ...(selectedSetNumbers.length > 0 ? { selected: invoice(selectedRows, scopeLabel()) } : {}),
+      ...(selectedSetNumbers.length > 0 || selectedMediaIds.length > 0
+        ? { selected: invoice(selectedRows, scopeLabel()) }
+        : {}),
       note: 'Dry run only. No API call, secret read, file generation, or audio write occurred.',
     }, null, 2));
   }

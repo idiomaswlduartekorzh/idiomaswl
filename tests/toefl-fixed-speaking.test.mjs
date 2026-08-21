@@ -7,7 +7,7 @@ import {
   TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS,
 } from '../src/data/toefl/speaking-fixed-repeat.ts';
 
-test('Sets 1–20 expose exactly Repeat items 6 and 7 as blocked media', () => {
+test('Sets 1–20 expose exactly Repeat items 6 and 7 through the audited release gate', () => {
   for (let setNumber = 1; setNumber <= 20; setNumber++) {
     const entries = TOEFL_FIXED_REPEAT_BY_SET[setNumber];
     assert.equal(entries.length, 2);
@@ -15,8 +15,12 @@ test('Sets 1–20 expose exactly Repeat items 6 and 7 as blocked media', () => {
     assert.ok(entries.every((entry) => entry.mediaStatus === 'script-ready-audio-blocked'));
   }
   assert.equal(TOEFL_FIXED_REPEAT_EXPANSIONS.length, 40);
-  assert.equal(TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS.size, 0);
-  assert.equal(TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS.size, 0);
+  assert.equal(TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS.size, 40);
+  assert.equal(TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS.size, 80);
+  assert.deepEqual(
+    [...TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS].sort(),
+    TOEFL_FIXED_REPEAT_EXPANSIONS.map((entry) => entry.mediaId).sort(),
+  );
 });
 
 test('planned Repeat IDs, media and scripts are unique', () => {

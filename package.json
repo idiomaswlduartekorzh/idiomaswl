@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:ielts-review-blueprint && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano && npm run check:fonetica-frances && npm run check:pdf-fonts && npm run check:sat && npm run check:sat-superhub",
+    "prebuild": "npm run check:practica-catalog && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:ielts-review-blueprint && npm run check:toefl-audio-release && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano && npm run check:fonetica-frances && npm run check:pdf-fonts && npm run check:sat && npm run check:sat-superhub",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -53,6 +53,7 @@
     "test:toefl-fixed-session": "node --experimental-strip-types --no-warnings --test tests/toefl-fixed-session.test.mjs",
     "check:toefl-fixed-preview": "node scripts/check-toefl-fixed-preview.mjs",
     "check:toefl-audio-manifest": "node --experimental-strip-types --no-warnings scripts/build-toefl-missing-audio-manifest.mjs",
+    "check:toefl-audio-release": "node --experimental-strip-types --no-warnings scripts/check-toefl-audio-release.mjs",
     "audio:toefl-2026": "node --experimental-strip-types --no-warnings scripts/generate-toefl-2026-audio.mjs",
     "check:toefl-build-sentence": "node --experimental-strip-types --no-warnings scripts/check-toefl-build-sentence.mjs",
     "test:toefl-build-sentence": "node --experimental-strip-types --no-warnings --test tests/toefl-build-sentence.test.mjs",

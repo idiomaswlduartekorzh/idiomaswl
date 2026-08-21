@@ -1,5 +1,4 @@
 import assert from 'node:assert/strict';
-import { execFileSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 import {
   TOEFL_FIXED_REPEAT_BY_SET,
@@ -13,8 +12,8 @@ const read = (path) => readFile(new URL(path, root), 'utf8');
 const words = (text) => text.match(/[A-Za-z]+(?:[’'][A-Za-z]+)?/g) ?? [];
 
 assert.equal(TOEFL_FIXED_REPEAT_EXPANSIONS.length, 40, 'twenty sets have two new Repeat scripts each');
-assert.equal(TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS.size, 0, 'no new Repeat media is released before owner approval');
-assert.equal(TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS.size, 0, 'no Interview prompt media is released before owner approval');
+assert.equal(TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS.size, 40, 'all 40 audited Repeat media IDs are released');
+assert.equal(TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS.size, 80, 'all 80 audited Interview prompt IDs are released');
 
 const ids = [];
 const mediaIds = [];
@@ -44,6 +43,11 @@ assert.equal(new Set(ids).size, 40, 'new Repeat IDs are globally unique');
 assert.equal(new Set(mediaIds).size, 40, 'new Repeat media IDs are globally unique');
 assert.equal(new Set(urls).size, 40, 'new Repeat URLs are globally unique');
 assert.equal(new Set(scripts).size, 40, 'new Repeat scripts are globally unique');
+assert.deepEqual(
+  [...TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS].sort(),
+  [...mediaIds].sort(),
+  'the Repeat release gate exactly matches the fixed expansion',
+);
 
 const [fixedFormSource, clientSource] = await Promise.all([
   read('src/data/mocks/toefl-fixed-form.ts'),
@@ -58,12 +62,4 @@ assert.match(clientSource, /currentForwardBlocked[\s\S]*script-ready-audio-block
 assert.doesNotMatch(clientSource, /SelfAssessModal|speakBands/, 'Speaking cannot become a self-awarded score');
 assert.match(clientSource, /new MediaRecorder\(stream\)/, 'ready Speaking items capture a real local response');
 
-const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untracked-files=all'], {
-  cwd: new URL('.', root), encoding: 'utf8',
-}).trim().split('\n').filter(Boolean).flatMap((entry) => {
-  const path = entry.slice(3).replace(/^"|"$/g, '');
-  return path.includes(' -> ') ? path.split(' -> ') : [path];
-});
-assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/toefl/')), 'Repeat expansion changes no TOEFL audio asset');
-
-console.log('✓ TOEFL fixed Speaking Sets 1–20: 7 Repeat + 4 Interview, 120 blocked new media, no audio changes');
+console.log('✓ TOEFL fixed Speaking Sets 1–20: 7 Repeat + 4 Interview and 120 released new media');

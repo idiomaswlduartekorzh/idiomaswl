@@ -18,6 +18,14 @@
     "style": 0.1,
     "use_speaker_boost": true
   },
+  "media_profile_overrides": {
+    "media:toefl:set-13:listening-m2-choose-2": "woman_b",
+    "media:toefl:set-17:speaking-repeat-6": "woman_b",
+    "media:toefl:set-20:listening-m2-choose-8": "woman_a"
+  },
+  "media_text_overrides": {
+    "media:toefl:set-20:listening-m2-choose-8": "How WAS the accommodation near the research station?"
+  },
   "profiles": {
     "woman_a": {
       "voice_id": "cgSgspJ2msm6clMCkdW9",

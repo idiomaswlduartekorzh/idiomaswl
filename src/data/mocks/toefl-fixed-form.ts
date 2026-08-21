@@ -236,7 +236,7 @@ function fixedListeningSections(mock: MockExam): MockSection[] | null {
     moduleId: 'listening-1',
     title: 'Listening Módulo 1 — Listen and Choose a Response',
     instructions: 'Listen to each short exchange once. Choose the best response.',
-    sectionNote: 'Cinco MP3 existentes se conservan. Los tres guiones añadidos muestran su estado real hasta que el lote de audio sea aprobado.',
+    sectionNote: 'Cinco MP3 originales se conservan y los tres audios añadidos pertenecen al lote fijo auditado.',
     questions: [
       ...legacyListeningQuestions(chooseSection).slice(0, 5).map((question) => legacyListeningQuestion(
         question,
@@ -319,7 +319,7 @@ function fixedListeningSections(mock: MockExam): MockSection[] | null {
     moduleId: 'listening-2',
     title: 'Listening Módulo 2 — Listen and Choose a Response',
     instructions: 'Listen to each short exchange once. Choose the best response.',
-    sectionNote: 'Vista previa editorial: ocho guiones y preguntas listos; sus MP3 siguen bloqueados hasta aprobación del owner.',
+    sectionNote: 'Los ocho audios y sus preguntas pertenecen al lote fijo auditado.',
     questions: expansion.module2.choose.map((entry) => expansionListeningQuestion(
       entry.item,
       objectId,
@@ -344,7 +344,7 @@ function fixedListeningSections(mock: MockExam): MockSection[] | null {
 
 /**
  * Builds the fixed 18 + 16 Listening composition while preserving every source
- * item and existing MP3. Missing media remains explicitly blocked in preview.
+ * item and existing MP3. The runtime still fails closed if media is absent.
  */
 export function withToefl2026FixedListening(mock: MockExam): MockExam {
   const listening = fixedListeningSections(mock);
@@ -389,7 +389,7 @@ export function withToefl2026FixedSpeaking(mock: MockExam): MockExam {
         ...section,
         moduleId: 'speaking',
         instructions: 'Listen to each interviewer question once and answer immediately in English. There is no preparation time.',
-        sectionNote: 'Las cuatro preguntas forman Take an Interview. Sus guiones se conservan, pero los prompts de audio siguen bloqueados hasta aprobación del owner.',
+        sectionNote: 'Las cuatro preguntas forman Take an Interview y usan prompts del lote fijo auditado.',
         questions: section.questions.map((question): Question => {
           if (question.type !== 'speak') return question;
           const interview = question as SpeakQuestion;
@@ -426,7 +426,7 @@ export function withToefl2026FixedSpeaking(mock: MockExam): MockExam {
     return {
       ...section,
       moduleId: 'speaking',
-      sectionNote: 'Siete Listen and Repeat forman la práctica fija. Los dos guiones añadidos permanecen bloqueados hasta que el owner apruebe y valide sus audios.',
+      sectionNote: 'Siete Listen and Repeat forman la práctica fija; los dos audios añadidos pertenecen al lote auditado.',
       questions: [...existing, ...expanded],
     };
   });

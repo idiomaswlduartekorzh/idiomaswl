@@ -7,6 +7,7 @@ import { TOEFL_MISSING_AUDIO_ROWS } from './build-toefl-missing-audio-manifest.m
 const root = path.resolve(process.argv[2] ?? '');
 assert.ok(process.argv[2], 'usage: audit-toefl-whisper.mjs <generation-directory> [transcript-directory]');
 const transcriptRoot = path.resolve(process.argv[3] ?? path.join(root, 'whisper-small'));
+const whisperModel = process.argv[4] ?? 'small';
 const generationLog = JSON.parse(readFileSync(path.join(root, 'generation-log.json'), 'utf8'));
 const rowsByMediaId = new Map(TOEFL_MISSING_AUDIO_ROWS.map((row) => [row.media_id, row]));
 
@@ -16,16 +17,33 @@ const NUMBER_WORDS = new Map([
   ['ten', '10'], ['eleven', '11'], ['twelve', '12'], ['thirteen', '13'],
   ['fourteen', '14'], ['fifteen', '15'], ['sixteen', '16'], ['seventeen', '17'],
   ['eighteen', '18'], ['nineteen', '19'], ['twenty', '20'],
+  ['advisor', 'adviser'], ['theatre', 'theater'], ['centre', 'center'],
 ]);
 
+const CONTRACTIONS = [
+  [/\bi[’']m\b/g, 'i am'], [/\bi[’']ve\b/g, 'i have'], [/\bi[’']ll\b/g, 'i will'],
+  [/\bwe[’']re\b/g, 'we are'], [/\bwe[’']ve\b/g, 'we have'], [/\bwe[’']ll\b/g, 'we will'],
+  [/\byou[’']re\b/g, 'you are'], [/\byou[’']ve\b/g, 'you have'], [/\byou[’']ll\b/g, 'you will'],
+  [/\bthey[’']re\b/g, 'they are'], [/\bthey[’']ve\b/g, 'they have'], [/\bthey[’']ll\b/g, 'they will'],
+  [/\bit[’']s\b/g, 'it is'], [/\bthat[’']s\b/g, 'that is'], [/\bthere[’']s\b/g, 'there is'],
+  [/\bcan[’']t\b/g, 'cannot'], [/\bwon[’']t\b/g, 'will not'], [/\bdon[’']t\b/g, 'do not'],
+  [/\bdoesn[’']t\b/g, 'does not'], [/\bdidn[’']t\b/g, 'did not'], [/\bisn[’']t\b/g, 'is not'],
+  [/\baren[’']t\b/g, 'are not'], [/\bwasn[’']t\b/g, 'was not'], [/\bweren[’']t\b/g, 'were not'],
+  [/\bhasn[’']t\b/g, 'has not'], [/\bhaven[’']t\b/g, 'have not'], [/\bhadn[’']t\b/g, 'had not'],
+  [/\bshouldn[’']t\b/g, 'should not'], [/\bwouldn[’']t\b/g, 'would not'], [/\bcouldn[’']t\b/g, 'could not'],
+];
+
 function words(text) {
-  return text
+  const normalized = text
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
+    .replace(/\b([ap])\s*\.\s*m\s*\./g, '$1m');
+  return CONTRACTIONS.reduce((result, [pattern, replacement]) => result.replace(pattern, replacement), normalized)
     .replace(/[’']/g, '')
     .replace(/-/g, ' ')
     .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/(\d)([a-z])/g, '$1 $2')
     .split(/\s+/)
     .filter(Boolean)
     .map((word) => NUMBER_WORDS.get(word) ?? word);
@@ -67,6 +85,7 @@ const files = generationLog.files.map((entry) => {
 
   return {
     mediaId: entry.media_id,
+    audioPath: entry.path,
     transcriptPath,
     expectedText,
     actualText,
@@ -84,7 +103,7 @@ const failures = files.filter((file) => !file.pass);
 const overallWordErrorRate = expectedWords === 0 ? 0 : wordEdits / expectedWords;
 const report = {
   auditedAt: new Date().toISOString(),
-  whisperModel: 'small.en',
+  whisperModel,
   acceptance: {
     maximumPerFileWordErrorRate: 0.05,
     note: 'Punctuation, capitalization, accents, hyphenation, apostrophes, and zero-to-twenty digit formatting are normalized.',

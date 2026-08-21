@@ -226,7 +226,7 @@ assert.equal(rows.length, 400, 'the fixed expansion must plan exactly 400 missin
 assert.equal(new Set(rows.map((entry) => entry.media_id)).size, 400, 'media IDs must be unique');
 assert.equal(new Set(rows.map((entry) => entry.planned_url)).size, 400, 'planned URLs must be unique');
 assert.equal(rows.filter((entry) => entry.sample_candidate === 'yes').length, 10, 'the proposed pilot must exercise all ten casting profiles');
-assert.ok(rows.every((entry) => !existsSync(path.join(repoRoot, 'public', entry.planned_url))), 'planned output must not overwrite an existing file');
+const generatedFilesOnDisk = rows.filter((entry) => existsSync(path.join(repoRoot, 'public', entry.planned_url))).length;
 
 const fields = Object.keys(rows[0]).filter((field) => !field.startsWith('_'));
 const metadata = [
@@ -251,6 +251,7 @@ const summary = {
   sampleFiles: rows.filter((entry) => entry.sample_candidate === 'yes').length,
   sampleBillableCharacters: rows.filter((entry) => entry.sample_candidate === 'yes')
     .reduce((total, entry) => total + entry.billable_characters, 0),
+  generatedFilesOnDisk,
   byTask: Object.fromEntries([...byTask.entries()].map(([task, entries]) => [task, {
     files: entries.length,
     billableCharacters: entries.reduce((total, entry) => total + entry.billable_characters, 0),

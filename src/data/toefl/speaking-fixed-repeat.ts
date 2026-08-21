@@ -79,7 +79,14 @@ export const TOEFL_FIXED_REPEAT_BY_SET = Object.fromEntries(
   }),
 ) as Readonly<Record<number, ToeflFixedRepeatExpansion[]>>;
 
-// Filled only after owner approval, generation, ASR comparison, technical QA,
-// and human listening review of the corresponding media IDs.
-export const TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS = new Set<string>();
-export const TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS = new Set<string>();
+// Runtime release gates. The repository audio guardian verifies that these IDs
+// have exact audited files before a production build can succeed.
+export const TOEFL_RELEASED_FIXED_REPEAT_MEDIA_IDS = new Set<string>(
+  TOEFL_FIXED_REPEAT_EXPANSIONS.map((entry) => entry.mediaId),
+);
+export const TOEFL_RELEASED_FIXED_INTERVIEW_MEDIA_IDS = new Set<string>(
+  Array.from({ length: 20 }, (_, setIndex) => Array.from(
+    { length: 4 },
+    (_, partIndex) => `media:toefl:set-${setIndex + 1}:speaking-interview-${partIndex + 1}`,
+  )).flat(),
+);

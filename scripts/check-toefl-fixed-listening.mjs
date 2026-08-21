@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
-import { execFileSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 import { TOEFL_FIXED_LISTENING_SETS_1_TO_5 } from '../src/data/toefl/listening-fixed-sets-1-5.ts';
 import { TOEFL_FIXED_LISTENING_SETS_6_TO_10 } from '../src/data/toefl/listening-fixed-sets-6-10.ts';
 import { TOEFL_FIXED_LISTENING_SETS_11_TO_15 } from '../src/data/toefl/listening-fixed-sets-11-15.ts';
 import { TOEFL_FIXED_LISTENING_SETS_16_TO_20 } from '../src/data/toefl/listening-fixed-sets-16-20.ts';
+import { TOEFL_RELEASED_FIXED_LISTENING_MEDIA_IDS } from '../src/data/toefl/listening-fixed-registry.ts';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
@@ -129,6 +129,12 @@ for (const set of fixedListeningSets) {
 assert.equal(new Set(itemIds).size, itemIds.length, 'new fixed Listening item ids are globally unique');
 assert.equal(new Set(mediaIds).size, mediaIds.length, 'new fixed Listening media ids are globally unique');
 assert.equal(new Set(plannedUrls).size, plannedUrls.length, 'new fixed Listening planned URLs are globally unique');
+assert.equal(TOEFL_RELEASED_FIXED_LISTENING_MEDIA_IDS.size, 280, 'all 280 audited Listening media IDs are released');
+assert.deepEqual(
+  [...TOEFL_RELEASED_FIXED_LISTENING_MEDIA_IDS].sort(),
+  [...mediaIds].sort(),
+  'the Listening release gate exactly matches the fixed expansion',
+);
 assert.deepEqual(lengthClues, [], `correct options must not reveal themselves through a large length advantage: ${lengthClues.join(', ')}`);
 const allScripts = fixedListeningSets.flatMap((set) => [
   ...set.module1ChooseAdditions,
@@ -139,12 +145,4 @@ const allScripts = fixedListeningSets.flatMap((set) => [
 ]).map((entry) => entry.script.trim().toLowerCase());
 assert.equal(new Set(allScripts).size, allScripts.length, 'all planned scripts in the batch are distinct');
 
-const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untracked-files=all'], {
-  cwd: new URL('.', root), encoding: 'utf8',
-}).trim().split('\n').filter(Boolean).flatMap((entry) => {
-  const path = entry.slice(3).replace(/^"|"$/g, '');
-  return path.includes(' -> ') ? path.split(' -> ') : [path];
-});
-assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/toefl/')), 'Listening script work changes no TOEFL audio asset');
-
-console.log('✓ TOEFL fixed Listening scripts Sets 1–20: 19 new items/set, 14 blocked media/set, private keys, and no audio changes');
+console.log('✓ TOEFL fixed Listening Sets 1–20: 19 new items/set, 280 released media IDs, and private keys');

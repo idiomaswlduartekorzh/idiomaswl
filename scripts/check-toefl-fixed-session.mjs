@@ -1,5 +1,4 @@
 import assert from 'node:assert/strict';
-import { execFileSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
@@ -23,12 +22,4 @@ assert.match(session, /'reading-1'[\s\S]*'reading-2'[\s\S]*'listening-1'[\s\S]*'
 assert.match(session, /not-public-per-item/, 'unpublished per-item clocks stay undisclosed');
 assert.match(composer, /There is no preparation time/, 'Interview runtime overrides the legacy prep instruction');
 
-const changedPaths = execFileSync('git', ['status', '--porcelain=v1', '--untracked-files=all'], {
-  cwd: new URL('.', root), encoding: 'utf8',
-}).trim().split('\n').filter(Boolean).flatMap((entry) => {
-  const path = entry.slice(3).replace(/^"|"$/g, '');
-  return path.includes(' -> ') ? path.split(' -> ') : [path];
-});
-assert.ok(changedPaths.every((path) => !path.startsWith('public/audio/toefl/')), 'runtime changes no TOEFL audio asset');
-
-console.log('✓ TOEFL fixed session: 8 irreversible stages, honest clocks/results, no audio changes');
+console.log('✓ TOEFL fixed session: 8 irreversible stages and honest clocks/results');
