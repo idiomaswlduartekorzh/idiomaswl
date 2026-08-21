@@ -60,27 +60,68 @@ const asSection = (mod: SatModule, part: number, title: string): MockSection => 
   insights: asInsights(mod),
 })
 
+/** Minutos por módulo. College Board, verificado el 18 ago 2026. */
+const MINUTOS_POR_MODULO = 32
+
+/**
+ * Aciertos del módulo 1 a partir de los cuales se sirve el módulo exigente.
+ *
+ * **Es convención de WeLearn, no de College Board**: el punto de corte real del SAT no
+ * se publica. 16 de 27 son un 59 %, algo por encima de la mitad, que es donde cae la
+ * frontera en las descripciones públicas del enrutado por etapas. Se deja en una
+ * constante con nombre y no incrustado, para que el día que haya un dato mejor se
+ * cambie en un sitio y se sepa qué se está cambiando.
+ */
+const CORTE_MODULO_EXIGENTE = 16
+
 export function buildSatMock(args: {
   id: string
   title: string
   subtitle: string
   m1: SatModule
-  m2?: SatModule
+  /** Las dos ramas del módulo 2. O se pasan las dos, o ninguna: media adaptación no es adaptación. */
+  m2Facil?: SatModule
+  m2Dificil?: SatModule
 }): MockExam {
-  const { id, title, subtitle, m1, m2 } = args
-  const sections = [asSection(m1, 1, 'Módulo 1 — Reading and Writing')]
-  if (m2) {
-    sections.push(
-      asSection(m2, 2, `Módulo 2 — Reading and Writing (${m2.variant === 'M2-dificil' ? 'exigente' : 'estándar'})`),
+  const { id, title, subtitle, m1, m2Facil, m2Dificil } = args
+
+  if (Boolean(m2Facil) !== Boolean(m2Dificil)) {
+    throw new Error(
+      'buildSatMock: el módulo 2 va en dos ramas, fácil y difícil. Con una sola no hay enrutado ' +
+      'que hacer, y servirla a todo el mundo sería llamar «adaptativo» a un examen lineal.',
     )
   }
+
+  const sections = [asSection(m1, 1, 'Módulo 1 — Reading and Writing')]
+
+  if (m2Facil && m2Dificil) {
+    // Las dos ramas viven en el examen; el motor sirve solo una. Ver `adaptive` en
+    // src/data/mocks/types.ts y el enrutado en PracticeClient.
+    sections.push(asSection(m2Facil, 2, 'Módulo 2 — Reading and Writing (estándar)'))
+    sections.push(asSection(m2Dificil, 3, 'Módulo 2 — Reading and Writing (exigente)'))
+  }
+
+  const adaptativo = Boolean(m2Facil && m2Dificil)
+
   return {
     id,
     examSlug: 'sat',
     title,
     subtitle,
-    // 32 min por módulo (College Board, verificado 18 ago 2026).
-    timeMinutes: 32 * sections.length,
+    // El estudiante hace SIEMPRE dos módulos cuando hay enrutado, aunque el examen
+    // lleve escritas tres partes. Contar las secciones daría 96 minutos y sería falso.
+    timeMinutes: MINUTOS_POR_MODULO * (adaptativo ? 2 : 1),
+    ...(adaptativo
+      ? {
+          adaptive: {
+            routeAfterPart: 1,
+            correctToRouteHigh: CORTE_MODULO_EXIGENTE,
+            lowPart: 2,
+            highPart: 3,
+            minutesPerModule: MINUTOS_POR_MODULO,
+          },
+        }
+      : {}),
     sections,
   }
 }

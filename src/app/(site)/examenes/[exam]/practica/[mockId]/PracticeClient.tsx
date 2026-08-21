@@ -9,6 +9,7 @@ import type { MockExam, MCQQuestion, MockSection, QuestionInsight } from '@/data
 import { hasGuidedMock } from '@/data/icfes/guided-registry';
 import { SAT_DOMAIN_GUIDE_SLUG } from '@/data/mocks/sat/module-types';
 import { SAT_MARCA } from '@/data/sat-marca';
+import { elegirRamaModulo2, partesServidas } from '@/data/mocks/sat/routing';
 import type { SatDomain } from '@/data/mocks/sat/module-types';
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
@@ -886,11 +887,14 @@ function ResultsView({
   exam,
   answers,
   onRetry,
+  routedTo = null,
 }: {
   mock: MockExam;
   exam: Exam;
   answers: Record<string, number>;
   onRetry: () => void;
+  /** Solo en exámenes adaptativos: a qué módulo 2 fue enrutado el estudiante. */
+  routedTo?: 'low' | 'high' | null;
 }) {
   const results = calcResults(mock, answers);
   const allQuestions = getAllQuestions(mock) as MCQQuestion[];
@@ -930,8 +934,12 @@ function ResultsView({
           <p style={{ maxWidth: 580, margin: '0.8rem auto 0', lineHeight: 1.55, opacity: 0.82 }}>
             Esto <strong>no es un puntaje de 200 a 800</strong>. La escala oficial del SAT sale de una tabla
             de conversión que cambia en cada examen, así que aquí ves aciertos sobre el total, que es lo
-            honesto. Y es el <strong>módulo 1 de los 2</strong> que tiene Reading and Writing: la sección
-            completa son 54 preguntas.
+            honesto.{' '}
+            {routedTo
+              ? <>Hiciste <strong>la sección de Reading and Writing completa</strong>: el módulo 1 y, según
+                  cómo te fue en él, el módulo 2 <strong>{routedTo === 'high' ? 'exigente' : 'estándar'}</strong>.</>
+              : <>Y es el <strong>módulo 1 de los 2</strong> que tiene Reading and Writing: la sección
+                  completa son 54 preguntas.</>}
           </p>
         )}
         {isSat && (
@@ -1063,7 +1071,7 @@ function ResultsView({
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-type Phase = 'intro' | 'exam' | 'lead' | 'results';
+type Phase = 'intro' | 'exam' | 'module-break' | 'lead' | 'results';
 
 // ── Lead gate (shown after exam, before results) ───────────────────────────────
 function LeadGateView({
@@ -1160,10 +1168,25 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   // Holds computed score while user fills the lead gate
   const pendingResultRef = useRef<{ correct: number; total: number; score: number } | null>(null);
 
-  const allQuestions = getAllQuestions(mock) as MCQQuestion[];
+  // ── Enrutado adaptativo por etapas (hoy solo el SAT) ───────────────────────
+  //
+  // El examen trae las tres partes escritas —módulo 1, módulo 2 estándar y módulo 2
+  // exigente— pero al estudiante solo se le sirven DOS. Hasta que entrega el módulo 1
+  // no existe la segunda, y la que no le toca no existe nunca: ni la ve, ni cuenta en
+  // el resultado, ni sale en la revisión. Por eso todo lo que mide o pinta trabaja
+  // sobre `servedMock` y no sobre `mock`.
+  const routing = mock.adaptive;
+  const [servedParts, setServedParts] = useState<number[]>(() => (routing ? [routing.routeAfterPart] : []));
+  const [routedTo, setRoutedTo] = useState<'low' | 'high' | null>(null);
+
+  const servedMock: MockExam = routing
+    ? { ...mock, sections: mock.sections.filter(sec => servedParts.includes(sec.part)) }
+    : mock;
+
+  const allQuestions = getAllQuestions(servedMock) as MCQQuestion[];
   const currentQuestion = allQuestions[currentIdx];
   const currentPart = currentQuestion?.part ?? 1;
-  const currentSection = mock.sections.find(s => s.part === currentPart);
+  const currentSection = servedMock.sections.find(s => s.part === currentPart);
 
   const handleAnswer = useCallback((optIdx: number) => {
     if (!currentQuestion) return;
@@ -1183,6 +1206,32 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     pendingResultRef.current = { correct, total: qs.length, score };
     setPhase('lead');
   }, [allQuestions, answers]);
+
+  // Entrega del módulo 1: se puntúa SOLO ese módulo, se decide la rama y ya no se
+  // puede volver — igual que en el examen real.
+  const handleRoute = useCallback(() => {
+    if (!routing) return;
+    const primeras = (getAllQuestions(mock) as MCQQuestion[]).filter(q => q.part === routing.routeAfterPart);
+    const aciertos = primeras.filter(q => answers[q.id] === q.answer).length;
+    const rama = elegirRamaModulo2(aciertos, routing);
+    setRoutedTo(rama);
+    setServedParts(partesServidas(rama, routing));
+    setPhase('module-break');
+  }, [routing, mock, answers]);
+
+  // Un solo sitio decide qué significa «he terminado»: enrutar si queda módulo por
+  // servir, entregar si no. Lo usan el botón, la barra lateral y el cronómetro, para
+  // que ninguno de los tres pueda quedarse desincronizado de los otros dos.
+  const finishStage = useCallback(() => {
+    if (routing && servedParts.length === 1) handleRoute();
+    else handleSubmit();
+  }, [routing, servedParts, handleRoute, handleSubmit]);
+
+  const handleStartSecondModule = useCallback(() => {
+    const primeras = (getAllQuestions(mock) as MCQQuestion[]).filter(q => q.part === routing?.routeAfterPart).length;
+    setCurrentIdx(primeras);
+    setPhase('exam');
+  }, [mock, routing]);
 
   // Jump to first question of the section after current
   const handleNextSection = useCallback(() => {
@@ -1243,7 +1292,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
         totalScore: exam.slug === 'sat' ? correct : score,
         totalMax: exam.slug === 'sat' ? total : 100,
         totalLabel: `${correct}/${total} correctas`,
-        skills: mock.sections.map(sec => {
+        skills: servedMock.sections.map(sec => {
           const sqs = sec.questions.filter(q => q.type === 'mcq') as MCQQuestion[];
           const sc = sqs.filter(q => answers[q.id] === q.answer).length;
           return { skill: sec.title, score: sqs.length ? Math.round(sc / sqs.length * 100) : 0, max: 100, label: `${sc}/${sqs.length}` };
@@ -1280,7 +1329,49 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   if (phase === 'results') {
     return (
       <div className="prac-shell">
-        <ResultsView mock={mock} exam={exam} answers={answers} onRetry={handleRetry} />
+        <ResultsView mock={servedMock} exam={exam} answers={answers} onRetry={handleRetry} routedTo={routedTo} />
+      </div>
+    );
+  }
+
+  // ── Corte entre módulos ────────────────────────────────────────────────────
+  //
+  // No se enseña cuántas acertó, a propósito: el examen real tampoco lo dice, y saberlo
+  // antes del segundo módulo cambiaría cómo lo afronta. Sí se dice, sin rodeos, que ya
+  // no puede volver — que es lo que más sorprende a quien no ha visto el formato.
+  if (phase === 'module-break') {
+    const segunda = servedParts[1];
+    const seccion = mock.sections.find(sec => sec.part === segunda);
+    const cuantas = (getAllQuestions(mock) as MCQQuestion[]).filter(q => q.part === segunda).length;
+    return (
+      <div className="prac-shell prac-shell--intro">
+        <div className="prac-intro" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+          <p className="prac-intro__eyebrow">{exam.flag} {exam.name}</p>
+          <h1 className="prac-intro__title">Módulo 1 entregado</h1>
+          <p className="prac-intro__sub">
+            A partir de aquí <strong>no puedes volver al módulo 1</strong>, igual que en el examen real.
+          </p>
+          <div style={{ maxWidth: 620, margin: '1.5rem auto 0', lineHeight: 1.6, textAlign: 'left' }}>
+            <p style={{ marginBottom: '0.8rem' }}>
+              El SAT se adapta por etapas: según cómo te fue en el módulo 1, el segundo llega con una
+              dificultad media más alta o más baja. <strong>No te decimos cuál te tocó ni cuántas
+              acertaste</strong> — el examen real tampoco lo hace, y saberlo ahora cambiaría cómo
+              afrontas lo que viene. Lo verás al terminar.
+            </p>
+            <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>
+              Te quedan <strong>{cuantas} preguntas en {routing?.minutesPerModule} minutos</strong>. El
+              cronómetro empieza de cero cuando pulses.{' '}
+              {seccion ? 'Los cuatro dominios llegan en el mismo orden que en el módulo anterior.' : ''}
+            </p>
+          </div>
+          <button
+            onClick={handleStartSecondModule}
+            className="btn"
+            style={{ fontSize: '1.1rem', padding: '0.9rem 2.5rem', marginTop: '1.6rem' }}
+          >
+            Empezar módulo 2 →
+          </button>
+        </div>
       </div>
     );
   }
@@ -1359,7 +1450,11 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
           <Link href={`/examenes/${exam.slug}`} className="prac-topbar__back">← {exam.name}</Link>
           <span className="prac-topbar__title">{mock.title}</span>
         </div>
-        <Timer totalSecs={mock.timeMinutes * 60} onExpire={handleSubmit} />
+        <Timer
+          key={servedParts.length}
+          totalSecs={(routing ? routing.minutesPerModule : mock.timeMinutes) * 60}
+          onExpire={finishStage}
+        />
       </header>
 
       {/* Section tabs */}
@@ -1420,7 +1515,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
                 if (unanswered > 0) {
                   if (!confirm(`Tienes ${unanswered} pregunta${unanswered !== 1 ? 's' : ''} sin responder. ¿Seguro que quieres finalizar?`)) return;
                 }
-                handleSubmit();
+                finishStage();
               }}
             />
             );
@@ -1446,12 +1541,12 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
                 if (unanswered > 0) {
                   if (!confirm(`Tienes ${unanswered} pregunta${unanswered !== 1 ? 's' : ''} sin responder. ¿Seguro que quieres finalizar?`)) return;
                 }
-                handleSubmit();
+                finishStage();
               }}
               className="btn"
               style={{ width: '100%' }}
             >
-              Finalizar examen
+              {routing && servedParts.length === 1 ? 'Entregar módulo 1' : 'Finalizar examen'}
             </button>
           </div>
         </aside>

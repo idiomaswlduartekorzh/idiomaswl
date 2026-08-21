@@ -241,7 +241,7 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'My uncle Teodoro mended fishing nets on the dock, and for three summers I sat beside him and did nothing useful. He never once asked me to help. He would hold a torn section up against the light, find where the line had given way, and close it so evenly that afterward I could not say where the damage had been. At home I tied his knots with a length of cord of my own and never got a single one right. The afternoon he held out the wooden needle to me, I said the light was going, which was not true, and he put it back in the box without a word. I kept the cord.',
-    text: "The narrator keeps trying his uncle's craft when he is alone, but he never lets his uncle see him attempt it. Which quotation from the text best illustrates that claim?",
+    text: "The narrator keeps trying his uncle's craft when he is alone, but he never lets his uncle see him attempt it. Which quotation from the text most effectively illustrates that claim?",
     options: [
       '"for three summers I sat beside him and did nothing useful. He never once asked me to help."',
       '"At home I tied his knots with a length of cord of my own and never got a single one right"',
