@@ -274,8 +274,8 @@ node artifacts/habla-a2/fase5-scripts/prosa.mjs <ficha> --con-h3
 
 | ficha | prosa | con `###` | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Liliana | PROSA_A | PROSA_A_H3 | 10 filas | 10 | 9 |
-| ROLE B — doña Amparo | PROSA_B | PROSA_B_H3 | 10 filas | 10 | 9 |
+| ROLE A — Liliana | 396 | 396 | 10 filas | 10 | 9 |
+| ROLE B — doña Amparo | 480 | 480 | 10 filas | 10 | 9 |
 
 Tope de §11 para A1-A2: **350**. Las cuatro tablas están en el tope exacto (10 datos, 10
 palabras, 9 exponentes): nada entra sin que salga otra cosa. La ficha de B entraba en esta ronda

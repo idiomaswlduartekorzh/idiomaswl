@@ -260,8 +260,8 @@ menos una letra** — así `8:20` y `402` no cuentan y el número es reproducibl
 
 | ficha | prosa (sin tablas) | tope | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| **ROLE A — Dani** | **PROSA_A** | 350 | 10 filas (≤10) | 9 (8-10) | 10 (6-10) |
-| **ROLE B — Cris** | **PROSA_B** | 350 | 10 filas (≤10) | 10 (8-10) | 10 (6-10) |
+| **ROLE A — Dani** | 427 | 350 | 10 filas (≤10) | 9 (8-10) | 10 (6-10) |
+| **ROLE B — Cris** | 450 | 350 | 10 filas (≤10) | 10 (8-10) | 10 (6-10) |
 
 El rango de exponentes pasa de 6-9 a **6-10**, que es lo que dice §2 del blueprint (hallazgo 51).
 A baja a **9 filas de vocabulario** a propósito (hallazgo 33): el hueco es la reserva que evita

@@ -104,9 +104,16 @@ por etiquetas, el set salió variado; contado por turnos escritos, `rechazar` y
 `proponer-alternativa` aparecían en **8 de 8**. La etiqueta dice de qué va el escenario; el
 reparto se calcula sobre los turnos que la pareja tiene que producir para llegar al cierre.
 
+**Y se mide en cuota de turnos, no en «en cuántos escenarios aparece».** Esto lo corrige la
+auditoría del 21 de agosto de 2026, que encontró la frase anterior contradiciéndose consigo
+misma: pedir que ningún acto salga en más del 40 % de los escenarios es inalcanzable en cuanto
+cuentas turnos, porque toda conversación de adultos contiene una negativa y una alternativa —el
+umbral exigía menos de cinco actos distintos por escenario y el molde tiene cinco—. Lo que sí
+dice algo es **qué porcentaje de los turnos del set entero pide cada acto**.
+
 | Reparto | Regla |
 |---|---|
-| **Actos de habla** | Ningún acto en más del 40 % de los escenarios, **contando turnos producidos, no etiquetas** |
+| **Actos de habla** | Ningún acto por encima del **30 % de los turnos** del set, y **ninguno de los declarados por debajo del 3 %**. Lo primero evita el nivel monotema; lo segundo caza el acto de adorno —medido: `insistir` salía en 1 turno de 145 y `recomendar` en 4, los cuatro del mismo escenario— |
 | **Poder** | El estudiante manda en al menos 3 de cada 8. Si siempre pide permiso, nunca aprende a concederlo |
 | **Quién arranca** | Entre 40 % y 60 % para cada rol a lo largo del set |
 | **Desenlace** | Al menos un «sin acuerdo» y un «acuerdo parcial» por cada 8. No todo termina bien |
