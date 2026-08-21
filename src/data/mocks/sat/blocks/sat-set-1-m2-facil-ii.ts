@@ -45,15 +45,16 @@ import type { SatItemMeta } from '../module-types'
  * MEDIDO SOBRE LOS SIETE (contador del guardián: caracteres, y solape de palabras de
  * contenido con el `stimulus`):
  *
- * - Puerta 7 · longitud del texto: 107, 122, 83, 97, 133, 128 y 133 palabras-SAT. Dentro
- *   de 25-150 con margen por arriba en los dos más largos.
+ * - Puerta 7 · longitud del texto: 107, 125, 83, 97, 133, 128 y 146,5 palabras-SAT. Dentro
+ *   de 25-150. El único ajustado es q15, que se lleva 3,5 palabras de margen desde que se
+ *   glosó `set`: cualquier frase que se le añada exige quitar otra.
  * - Puerta 2 · la clave no es la opción más larga en ninguno de los siete (0 %, máximo
  *   30 %). Tampoco es la más corta en más de dos, para que no se acierte por el otro lado.
  * - Puerta 3 · la clave no es la que más repite palabras del texto en ninguno, ni la que
  *   menos en ninguno (0 % y 0 %, máximo 40 % por cada cara). Los solapes por ítem, en orden
  *   A-D: q09 7/6/5/4, q10 6/7/4/5, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
- *   q15 9/9/9/9. La clave queda siempre en el medio, nunca en un extremo; en q15 las cuatro
- *   empatan, que es el caso que el guardián trata como «no hay pista que explotar».
+ *   q15 12/12/12/12. La clave queda siempre en el medio, nunca en un extremo; en q15 las
+ *   cuatro empatan, que es el caso que el guardián trata como «no hay pista que explotar».
  *
  * DOS ÍTEMS QUE MERECEN NOTA, porque es donde el módulo 1 se cayó tres veces:
  *
@@ -206,6 +207,61 @@ import type { SatItemMeta } from '../module-types'
  *   el texto de q15 entero con sus tres datos, y los cinco ítems restantes del bloque. Todo
  *   lo que este comentario dice más arriba sobre Irina y la centralita es la historia de un
  *   ítem retirado, no del que está en el archivo.
+ *
+ * QUINTA PASADA (21 ago 2026) — EQUIDAD Y HECHOS, no calidad de ítem. El auditor de clave
+ * dio APTO a los siete y resolvió los siete a ciegas coincidiendo con el plan, y el panel
+ * bajó a 15,9 % (azar 25 %). Lo que quedaba lo vio la revisión hecha pensando en un
+ * estudiante colombiano: dos bloqueantes de equidad y dos cargas gratuitas.
+ *
+ * - q09 · la clave exigía saber en qué hemisferio pasa la escena. Decía «no colder in the
+ *   middle of January than at midsummer», o sea que traducía a «midsummer» el «July» del
+ *   texto. En el Cono Sur pleno verano es enero, así que para un lector del sur la clave
+ *   era falsa; para uno del trópico, sin estaciones marcadas, era una inferencia cultural
+ *   que el pasaje no pide. Y era además la única opción con comparativo negativo («no
+ *   colder … than»): toda la densidad sintáctica del ítem estaba dentro de la respuesta
+ *   correcta, lo que mide paciencia con el inglés y no comprensión. Ahora dice «at the same
+ *   temperature in January as it does in July»: las mismas dos cifras del texto, ninguna
+ *   estación, ningún comparativo negativo. Solape sin cambio (6, ni el mayor ni el menor);
+ *   la clave pasa a ser la más corta de las cuatro por tres caracteres, y con q12 son dos de
+ *   siete, el tope que este bloque se puso por esa cara.
+ *
+ * - q15 · el ítem se decidía con un verbo que el pasaje no introducía. Todo se juega entre
+ *   «set again» (recomponer los tipos) y «bound into» (encuadernar una hoja aparte), y
+ *   `set` en su acepción tipográfica solo aparecía en las opciones: el texto explicaba
+ *   `type` y `press` y se quedaba a medio camino. Glosado dentro del pasaje, en el sitio
+ *   donde empieza la mecánica de imprenta: «A page had to be set, its letters assembled one
+ *   by one, before it could be printed». Es glosa, no pista: define el verbo igual para las
+ *   cuatro opciones y no toca ninguno de los tres datos que resuelven el ítem.
+ *
+ * - q15 · el título tenía dueño, dos veces. «The Ferryman's Daughter» son dos novelas
+ *   publicadas (Juliet Greenwood, 2020; Yasmin Angoe, 2026). Los títulos no tienen derecho
+ *   de autor, pero la norma del proyecto es que ningún nombre del examen sea de alguien.
+ *   Renombrada a «A Wager at Marlbeck», comprobado en buscador ANTES de fijarlo: sin
+ *   resultados como título de obra, y «Marlbeck» solo aparece como casa de huéspedes y como
+ *   mina en Inglaterra, nunca como obra. Quien lo vuelva a cambiar, que repita la búsqueda.
+ *
+ * - q11 · la clave llevaba «and would if I stopped painting»: elipsis verbal más condicional
+ *   contrafáctico, y era la única opción con el verbo elidido. Carga gratuita en la respuesta
+ *   correcta. Ahora dice «and would go on doing it if I stopped painting». Eso la alargaba
+ *   quince caracteres y la dejaba como la más larga del ítem —la pista que este bloque tenía
+ *   a cero—, así que se igualaron las cuatro con una coleta cada una: 142/138/142/142, tres
+ *   empatadas arriba y ninguna máxima en solitario. Los solapes no se movieron (2/1/3/2) y
+ *   las tres razones de distractor siguen siendo las mismas líneas del pasaje.
+ *
+ * - q13 · «a small annual» usaba *annual* como sustantivo (planta de ciclo anual) sin
+ *   definirlo. Ahora «a small annual plant».
+ *
+ * - q10 · los cuadernos se catalogan en 1996 y los abre una biblioteca universitaria, no la
+ *   familia en 2019. q10 y q11 son consecutivos y compartían armazón —creadora, papeles
+ *   privados abiertos en 2019, lectura revisionista—: dos ítems seguidos así se leen como uno
+ *   repetido. Cambia la fecha y quién abre el archivo; no cambia nada de la deducción, que
+ *   depende de que los cuadernos sean de los años cincuenta.
+ *
+ * - Lo que NO se tocó: las claves del plan, los siete enunciados, los tres datos de q15 —la e
+ *   fechada, la prensa única, el pliego entero—, el 2×2 de q13 y las cadenas de deducción de
+ *   los siete. Condición de mantenimiento que pide el auditor de clave: la clave de q11 gana
+ *   a su distractor C porque conserva las TRES piezas (no son estudios / ocupación aparte /
+ *   sin público). No se recorta ninguna.
  */
 
 export const items: MCQQuestion[] = [
@@ -218,7 +274,7 @@ export const items: MCQQuestion[] = [
     text: 'According to the text, why does the northern lake freeze later than the southern one?',
     options: [
       "Its basin sits deeper than the southern lake, and its water takes in enough summer heat to hold the surface open three weeks into January.",
-      'It is fed from below by a spring whose water leaves the gravel no colder in the middle of January than at midsummer.',
+      'It is fed from below by a spring that leaves the gravel at the same temperature in January as it does in July.',
       'Its surface is kept moving all winter by the wind that funnels down the valley, and water that keeps moving freezes later.',
       'Its water carries more peat than the southern basin does, and a darker pond takes in more of the low January sun.',
     ],
@@ -229,7 +285,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Critics have long treated the four novels Amparo Lascano published after 1970 as a late turn in her work: the short sentences, the three small towns, the endings that explain nothing. Her working notebooks, opened to readers in 2019, complicate that account. The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away. So are the towns, which are the same three she had been writing about since her first book. The reviews that greeted the late novels in 1972 raised just the objection the reviews of 1958 had raised. What was new after 1970 was her publisher: the editor who had demanded "a proper ending" in 1958 had sold the firm, and the editor who bought it demanded nothing.',
+      'Critics have long treated the four novels Amparo Lascano published after 1970 as a late turn in her work: the short sentences, the three small towns, the endings that explain nothing. Her working notebooks, catalogued by a university library in 1996, complicate that account. The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away. So are the towns, which are the same three she had been writing about since her first book. The reviews that greeted the late novels in 1972 raised just the objection the reviews of 1958 had raised. What was new after 1970 was her publisher: the editor who had demanded "a proper ending" in 1958 had sold the firm, and the editor who bought it demanded nothing.',
     text: 'Which choice best states the main idea of the text?',
     options: [
       "The turn critics date to 1970 was a change in Lascano's sentences rather than in the towns she wrote about.",
@@ -247,10 +303,10 @@ export const items: MCQQuestion[] = [
       "In an essay on the painter Ilse Marchetti, the critic Halima Rueda takes up the six sketchbooks Marchetti filled between 1948 and 1961. Museums have always hung them beside the canvases as studies for them. Rueda's claim is that they were nothing of the kind: drawing in the books was a separate occupation, carried on for its own sake, and Marchetti never expected anyone to look at it. Rueda draws her evidence from the letters Marchetti wrote to her sister, which the family made public in 2019.",
     text: "Which quotation from Marchetti's letters most effectively illustrates Rueda's claim?",
     options: [
-      '"Nothing goes onto a canvas of mine that I have not drawn four or five times over in the books first, and usually a good deal more."',
-      '"I asked that the unfinished canvases be turned to face the wall before any visitor at all was let up the stairs to the studio."',
-      '"In the books it is always the market and the ferry; in the paintings, from first to last, there has never once been a person."',
-      '"The books are not for the canvases and not for anybody; I draw in them as I walk to the river, and would if I stopped painting."',
+      '"Nothing goes onto a canvas of mine that I have not drawn four or five times over in the books first, and usually a good deal more than that."',
+      '"I asked that the unfinished canvases be turned to face the wall before any visitor at all was allowed up the stairs and into the studio."',
+      '"In the books it is always the market and the ferry; in the paintings of those years, from first to last, there has never once been a person."',
+      '"The books are not for the canvases and not for anybody; I draw in them walking to the river, and would go on doing it if I stopped painting."',
     ],
     answer: 3,
   },
@@ -274,7 +330,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Population · germinated in deep shade · germinated in full sun\nCape Ridge · 7% · 74%\nNorth Ridge · 9% · 71%\nElm Valley · 64% · 68%\nPine Valley · 57% · 60%\n\nA seed that sprouts in deep shade may spend itself before it ever reaches the light, and many plants of open ground carry a chemical switch that holds the seed dormant until light falls on it. Botanist Runa Hallden sowed two hundred seeds from each of four populations of a small annual, half in deep shade and half in full sun, and counted the share that came up within thirty days. She argues that the two ridge populations, which grow where nothing shades them, still carry the switch, and that the two valley populations, under forest for many generations, have lost it. The figures for North Ridge and Elm Valley fit her account:',
+      'Population · germinated in deep shade · germinated in full sun\nCape Ridge · 7% · 74%\nNorth Ridge · 9% · 71%\nElm Valley · 64% · 68%\nPine Valley · 57% · 60%\n\nA seed that sprouts in deep shade may spend itself before it ever reaches the light, and many plants of open ground carry a chemical switch that holds the seed dormant until light falls on it. Botanist Runa Hallden sowed two hundred seeds from each of four populations of a small annual plant, half in deep shade and half in full sun, and counted the share that came up within thirty days. She argues that the two ridge populations, which grow where nothing shades them, still carry the switch, and that the two valley populations, under forest for many generations, have lost it. The figures for North Ridge and Elm Valley fit her account:',
     text: 'Which choice most effectively uses data from the table to complete the text?',
     options: [
       'in deep shade only 9% of the North Ridge seeds came up, against 71% in full sun; the Elm Valley seeds went from 64% to 68%.',
@@ -304,7 +360,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Forty copies survive of the 1612 printing of The Ferryman's Daughter. In twenty-nine of them the third act carries a scene of thirty lines; in the other eleven the same scene runs to twelve. Printers of the period altered type while the sheets were still going through the press, so copies of one book can differ, and the shop that printed it worked a single press. Its type had one flaw that can be dated: a lowercase e with a crooked crossbar, which entered the shop's stock in March 1612 and marks every sheet it printed afterward. The crooked e runs all through the long version of the scene and appears nowhere in the short one. In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
+      "Forty copies survive of the 1612 printing of A Wager at Marlbeck. In twenty-nine of them the third act carries a scene of thirty lines; in the other eleven the same scene runs to twelve. A page had to be set, its letters assembled one by one, before it could be printed, and printers of the period altered type while the sheets were still going through the press, so copies of one book can differ. The shop that printed it worked a single press, and its type had one flaw that can be dated: a lowercase e with a crooked crossbar, which entered the shop's stock in March 1612 and marks every sheet printed afterward. The crooked e runs all through the long version of the scene and appears nowhere in the short one. In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
     text: 'Which choice most logically completes the text?',
     options: [
       'the thirty-line scene was set first and printed for twenty-nine copies, and that its page was then set again at twelve lines for the remaining eleven.',
@@ -327,7 +383,7 @@ export const meta: SatItemMeta[] = [
       A:
         'Da por buena la diferencia que el texto niega en su segunda línea: «Soundings put the two basins at the same depth». Que un lago hondo aguante más sin helarse es cierto fuera de este pasaje, y por eso es lo primero que se le ocurre a cualquiera que se pregunte por qué uno se hiela antes que otro; aquí no hay diferencia de fondo que explique el retraso. Es el error de quien contesta con lo que sabe de lagos en vez de con lo que se midió en estos dos.',
       B:
-        'Correcta: es la única diferencia que el texto deja en pie, y la nombra él mismo. «What differs is where the water comes from»: el lago del sur se llena de deshielo, y el del norte «is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January». El agua que le entra en enero no llega a cero grados.',
+        'Correcta: es la única diferencia que el texto deja en pie, y la nombra él mismo. «What differs is where the water comes from»: el lago del sur se llena de deshielo, y el del norte «is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January». El agua que le entra en enero no llega a cero grados. La opción devuelve las dos cifras como igualdad —la misma temperatura en enero que en julio— y no nombra ninguna estación: decir «midsummer» por julio obligaba a saber en qué hemisferio ocurre la escena, y en el hemisferio sur pleno verano es enero.',
       C:
         'Convierte una frase sobre el abrigo del viento en una diferencia de viento. El texto pone los dos lagos bajo la misma cresta —«The ridge that shelters the southern lake shelters the northern one as well»— y añade que en una mañana quieta de enero ninguna de las dos superficies se mueve. Que el agua en movimiento tarde más en helarse es verdad; lo que no hay aquí es una que se mueva y otra que no. Lo elige quien lee «shelters» y deduce que el viento separa a un lago del otro.',
       D:
@@ -353,7 +409,7 @@ export const meta: SatItemMeta[] = [
         'Correcta: junta las dos mitades del pasaje. Los cuadernos quitan el cambio de la escritura —frase corta, finales sin explicar y los mismos tres pueblos, todo anterior a 1970— y la última frase dice qué sí cambió: «What was new after 1970 was her publisher», con un editor que en 1958 exigía «a proper ending» y otro, tras la venta de la casa, que no exigió nada. El giro que la crítica fecha en 1970 está en lo que la editorial imprimía, no en lo que Lascano escribía. No es la lectura más fina de las cuatro: es la única que no choca con una línea del texto.',
     },
     fuenteHecho:
-      'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato.',
+      'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato. Los cuadernos se catalogan en 1996 y no en 2019, y quien los abre es una biblioteca universitaria y no la familia: q11, que va justo detrás, también tenía papeles privados de una creadora abiertos en 2019, y dos ítems seguidos con el mismo armazón —creadora, papeles privados, fecha reciente, lectura revisionista— se leen como uno repetido. La deducción del ítem no depende de la fecha: depende de que los cuadernos son de los años cincuenta.',
   },
   {
     id: 'q11',
@@ -369,7 +425,7 @@ export const meta: SatItemMeta[] = [
       C:
         'Sostiene que los cuadernos y los cuadros no tratan de lo mismo, que es una diferencia de asunto y no de función: unos apuntes del mercado pueden seguir siendo material para un cuadro sin figuras. Y no dice nada de quién podía verlos, que es la otra mitad de la afirmación. Lo elige quien toma la diferencia de motivo por diferencia de oficio.',
       D:
-        'Correcta: cubre las dos mitades de la afirmación de Rueda en una frase. «Not for the canvases» niega que sean preparación, «not for anybody» niega el público, y compararlo con ir andando al río los describe como ocupación aparte, que seguiría existiendo aunque dejara de pintar.',
+        'Correcta: cubre las dos mitades de la afirmación de Rueda en una frase. «Not for the canvases» niega que sean preparación, «not for anybody» niega el público, y dibujar de camino al río, con el verbo entero al final —«would go on doing it if I stopped painting»—, los describe como ocupación aparte que seguiría existiendo aunque dejara de pintar. MANTENIMIENTO: la ventaja sobre C está en tener las TRES piezas —no son estudios, ocupación aparte, sin público—. Si una corrección futura recorta cualquiera de las tres, C deja de ser peor y el ítem pasa a tener dos claves.',
     },
     fuenteHecho:
       'Ficción académica original: ni la pintora, ni la crítica, ni el ensayo, ni las cartas existen. La práctica de exponer cuadernos de apuntes junto a los cuadros como estudios preparatorios sí es habitual en museos.',
@@ -410,7 +466,7 @@ export const meta: SatItemMeta[] = [
         'Junta la primera fila de la tabla con la última: 7 % y 74 % son de Cape Ridge, y 57 % y 60 % de Pine Valley. Son además las dos filas que mejor parecen probar lo que sostiene la botánica —el salto de sombra a sol más ancho de los cuatro y el valle más plano—, así que es la opción de quien busca la prueba más fuerte en vez de la fila que el texto nombra.',
     },
     fuenteHecho:
-      'Fotoblastismo real: muchas semillas de plantas de terreno abierto necesitan luz para germinar, y las poblaciones de sotobosque tienden a perder ese requisito. La botánica, las cuatro poblaciones y los ocho porcentajes están inventados; las especies van sin nombre científico.',
+      'Fotoblastismo real: muchas semillas de plantas de terreno abierto necesitan luz para germinar, y las poblaciones de sotobosque tienden a perder ese requisito. La botánica, las cuatro poblaciones y los ocho porcentajes están inventados; las especies van sin nombre científico. El texto dice «a small annual plant» y no «a small annual» a secas: *annual* como sustantivo (planta de ciclo anual) es vocabulario de jardinería que el pasaje no define, y sin el sustantivo detrás se lee como adjetivo suelto.',
   },
   {
     id: 'q14',
@@ -447,6 +503,6 @@ export const meta: SatItemMeta[] = [
         'Acierta el orden —la versión corta salió antes, como fecha la e torcida— y falla en el mecanismo. Encuadernar una hoja compuesta aparte era práctica corriente de la época, así que la reconstrucción se sostiene sola; lo que la descarta es la última línea del pasaje, que dice de los cuarenta ejemplares que esas páginas están «folded from one sheet of paper, with none cut out and none pasted in». Si no hay papel añadido, las dieciocho líneas de más solo caben recomponiendo el pliego. La marca quien resuelve el orden y da por bueno el primer procedimiento verosímil que se le ocurre para el resto.',
     },
     fuenteHecho:
-      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define. El reparto de ejemplares es 29 largos y 11 cortos, y ese sentido importa: con 11 largos, el estado mayoritario era el primero y la corazonada de que lo mayoritario salió antes apuntaba a la clave. Invertido, apunta a A. Las cuatro opciones nombran las dos versiones, los dos recuentos y un procedimiento de taller igual de corriente —recomponer la plana o encuadernar una hoja compuesta aparte—, de modo que ninguna se puede descartar por rareza.',
+      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define. El reparto de ejemplares es 29 largos y 11 cortos, y ese sentido importa: con 11 largos, el estado mayoritario era el primero y la corazonada de que lo mayoritario salió antes apuntaba a la clave. Invertido, apunta a A. Las cuatro opciones nombran las dos versiones, los dos recuentos y un procedimiento de taller igual de corriente —recomponer la plana o encuadernar una hoja compuesta aparte—, de modo que ninguna se puede descartar por rareza. TÍTULO: la obra se llamaba «The Ferryman’s Daughter» y se renombró a «A Wager at Marlbeck» en la quinta pasada. El anterior es el título de dos novelas publicadas —Juliet Greenwood (2020) y Yasmin Angoe (2026)—: los títulos no tienen derecho de autor, pero la norma del proyecto es que ningún nombre del examen tenga dueño. El nuevo se comprobó en buscador antes de fijarlo (sin resultados como título de obra, ni el título entero ni «Marlbeck» asociado a una obra) y hay que volver a comprobarlo si alguien lo cambia. VOCABULARIO: la frase «A page had to be set, its letters assembled one by one, before it could be printed» está en el pasaje porque las cuatro opciones se deciden con *set* en su acepción tipográfica, y ese verbo solo aparecía en las opciones: el texto explicaba *type* y *press* y se quedaba a medio camino.',
   },
 ]
