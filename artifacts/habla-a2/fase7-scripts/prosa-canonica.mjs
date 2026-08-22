@@ -34,9 +34,20 @@ function fichas(texto) {
   return out;
 }
 
-const archivos = readdirSync(DIR)
-  .filter((f) => /^fase7-(fichas-.*|modelo-ficha-en)\.md$/.test(f))
-  .sort();
+// Los ocho vivos, nombrados uno a uno. Antes esto era un regex sobre fase7-fichas-*.md y
+// medía el escenario RETIRADO (el reclamo de la factura) mientras dejaba fuera al que lo
+// sustituyó, que vive en fase8-. El guardián lo cazó el 22 ago 2026: un contador que mide lo
+// que no se publica y no mide lo que sí, mintiendo en las dos direcciones a la vez.
+const archivos = [
+  'fase7-fichas-1-the-bike-in-the-parking-lot.md',
+  'fase7-fichas-2-no-appointment-until-thursday.md',
+  'fase7-modelo-ficha-en.md',                        // escenario 3, el molde
+  'fase8-fichas-4nuevo.md',                          // escenario 4, el que sustituyó al retirado
+  'fase7-fichas-5-late-again-on-monday.md',
+  'fase7-fichas-6-the-cousin-on-the-sofa.md',
+  'fase7-fichas-7-two-more-people-for-the-trip.md',
+  'fase7-fichas-8-cancel-the-gym-i-am-leaving.md',
+];
 
 let total = 0, pasan = 0;
 const cifras = [];
