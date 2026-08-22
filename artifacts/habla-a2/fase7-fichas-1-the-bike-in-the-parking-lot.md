@@ -41,7 +41,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 > **Polite, two strangers.** A deal in a lobby — nobody raises their voice. In English there is one *you*: the distance is in the words you choose. **They start.** About 8 turns · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · You are in the lobby of your building in Cabecera, next to the bike. You put it on Marketplace, and you carried it down four floors four times.
+**Where you are** · You are in the lobby of your building in Cabecera, next to the bike. You posted it on Marketplace, and you carried it down four floors four times.
 
 **You want** · You have to get the bike out today, and you want all of the money today. You will not sell it for less than 390,000 with the new gears on.
 
@@ -51,12 +51,12 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 3. Take the gears off here. Your shop does that, and it closes at one.
 
 **Only you know**
-- The new gear set is exactly the size you need for the road bike you want next. You would sell it for 330,000 with the old gears back on, and lose nothing. If you say that early, you lose the deal.
+- The new gear set is exactly the size you need for the road bike you want next. With the old gears back on, 330,000 is enough, and you lose nothing. If you say that early, you'll lose the deal.
 - You want 390,000 because the road bike costs 750,000 and you have 360,000.
 - You never put the lock or the lights in the ad, and no buyer has asked.
 - You heard the same speech about the tire from all three buyers before.
 
-**If you walk away with nothing** · You carry it up four floors again. You lose another Saturday with a fifth buyer, and the road bike stays in the shop.
+**If you walk away with nothing** · You'll carry it up four floors again. You'll lose another Saturday with a fifth buyer, and the road bike stays in the shop.
 
 ### Facts
 
@@ -99,12 +99,12 @@ floors. Block **6** is for when they ask why.
 |---|---|---|
 | asking about theirs | `How are you going to …?` · `Is that still …?` | open question · transport is half the deal, and their answer can change in the middle of it |
 | closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
-| money | `Cash, or part by …?` | you put the two ways to pay on the table first |
+| money | `Do you have it in cash, or …?` | you put the two ways to pay on the table first |
 | moving the deal | `If you …, I can …` | your only way down · the condition goes in the same turn, out loud |
 | opening | `Hi — are you here for …?` | you know who they are · open before you talk price |
-| the clock | `The shop closes at …` · `If it doesn't go today, I …` | a problem for both of you · say why today, don't ask for pity |
+| the clock | `The shop closes at …` · `If it doesn't go today, I …` · `I'll take it there before …` | a problem for both of you · say why today, not why you need it |
 | the parts | `I can put the old gears …` · `Not in the ad — I can include …` | take out the piece that is worth something to you, or add one that isn't |
-| the price | `I paid … for it, and I have the …` · `With the new gears, I can't go under …` | show the paper, then say your number · keep talking |
+| the price | `I paid … for it, and I have the …` · `With the new gears, I can't take less than …` | show the paper, then say your number · keep talking |
 
 ### You did it if
 The bike left the lobby today, and you both said a time and a name out loud. You said your price
@@ -125,7 +125,7 @@ something new. They never found out about the old gear set.
 
 **You can't**
 1. Pay more than 350,000 in cash for the bike alone.
-2. Move the 70,000 in Nequi for nothing. That money moves only when you get something more in the deal, and you say the condition out loud, in the same turn — moving the bike counts.
+2. Move the 70,000 in Nequi for nothing. That money moves only when you get something more in the deal — transport counts too. Say the condition out loud, in the same turn.
 3. Say that this is the only bike for you. After that, nothing moves.
 
 **Only you know**
@@ -133,7 +133,7 @@ something new. They never found out about the old gear set.
 - Your brother-in-law is bringing his truck at six. Without it, you have to pay to move the bike, and you need that money for the tire.
 - You already gave the Nequi money a job: the tire, the seat and the lock. Not the price.
 
-**If you walk away with nothing** · You start your three weeks of looking again. The only bike in your size with a receipt stays here, and you keep taking the bus every day.
+**If you walk away with nothing** · You start your three weeks of looking again. The only bike in your size with a receipt will stay here, and you keep taking the bus every day.
 
 ### Facts
 
@@ -177,7 +177,7 @@ ask. Your reason has a number: the bus.
 | asking about theirs | `Why are you …?` · `What did you change …?` | open questions · they bring out what is not in the ad |
 | closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
 | greeting | `Good morning — thanks for …` | you asked for this meeting · open before you talk about the tire |
-| if it can't leave now | `Can you keep it for me until …?` | a day and a time is also a close |
+| if it can't leave now | `Can you keep it for me until …?` · `I'll pick it up at …` | a day and a time is also a close |
 | money | `I have … in cash, right …` · `The Nequi money is for …` | your number as a fact, not an offer — and the other money has a job already |
 | moving the deal | `Does the lock come …?` · `If you …, I can …` · `Maybe we can …` | ask for more inside the deal instead of less · the extra money moves only with a condition said out loud |
 | saying no | `That's more than I can …` · `I hear you, but that's not going to …` | turn the number down without bargaining · and make the second no sound different from the first |
@@ -240,29 +240,45 @@ nivel clavado (`src/app/(site)/practica/ingles/a2/gramatica/[slug]/page.tsx`, `c
 ```ts
 grammarReferences: [
   { slug: 'first-conditional', level: 'a2', title: 'El Primer Condicional en Inglés A2',
-    rationale: 'El acto conceder-con-condicion vive aquí, y es lo más alto del escenario: "If you take the old gear set, I can do 340,000". El tema autoriza can y have to dentro de la cláusula if.' },
+    rationale: 'El acto conceder-con-condicion vive aquí y es lo más alto del escenario: "If you take the old gear set, I can do 340,000". El tema ancla la prótasis (if + presente simple, nunca will). Ojo: el can de la apódosis NO lo modela este tema —solo autoriza can/must/have to dentro de la cláusula if—, lo sostiene can-ability (a1). También cubre "If it doesn\'t go today, I\'ll…" y los tres condicionales de la prosa, que deben llevar will en el resultado como pide el propio tema.' }, // 🔁
   { slug: 'comparatives', level: 'a2', title: 'Comparativos en Inglés A2',
-    rationale: 'El precio se rechaza comparando, no regateando. Ojo: "that\'s more than I can pay today" es comparativa de cláusula y en la ficha va como bloque memorizado; lo que el tema cubre y aquí se usa es la comparación de sintagmas: "the bus is more expensive than the app", "the small gears are more difficult".' },
+    rationale: 'El precio se rechaza comparando, no regateando: "That\'s more than I can pay today". El tema SÍ modela than + cláusula ("than I expected", "than I was in school"), así que el tronco está anclado entero y el estudiante puede cerrarlo él. Sostiene además "less than 390,000", "350,000 or less" y "I can\'t take less than…".' }, // 🔁
   { slug: 'quantifiers', level: 'a2', title: 'Cuantificadores en Inglés A2',
-    rationale: 'Los dos topes y lo que entra o sale del trato se dicen con cuantificadores: "I only have 350,000 in cash", "a bit more", "everything today".' },
+    rationale: 'La pantalla de cierre obliga a repartir el pago: "how much in cash and how much by Nequi", que es el How much…? del propio tema con incontable. Es el ancla viva del escenario; only, everything y all of the no los enseña este tema y no se citan como si lo hiciera.' }, // 🔁
   { slug: 'have-to-must', level: 'a2', title: 'Have to y Must en Inglés A2',
-    rationale: 'La razón por la que la bicicleta no se queda aquí es una obligación, no un capricho: "it has to leave today", "I have to carry it up four floors".' },
+    rationale: 'La prisa de A es obligación externa, no capricho: "You have to get the bike out today", "you have to pay to move the bike". Y el toolkit de B usa la otra mitad del tema, la que distingue prohibición de innecesidad: "you don\'t have to know those words, you have to ask".' }, // 🔁
   { slug: 'will-future', level: 'a2', title: 'El Futuro con Will en Inglés A2',
-    rationale: 'El reparto de la tarde se compromete en will: "I\'ll take it to the shop before one", "I\'ll pick it up at three".' },
+    rationale: 'El cierre exige comprometer la tarde: "I\'ll take it to the shop before one", "I\'ll pick it up at three". Hoy ningún exponente lo da: hay que añadir el tronco a la fila the clock (A) y a if it can\'t leave now (B), o el tema queda referenciado sin nada que lo sostenga en producción.' }, // 🔁
   { slug: 'past-simple-regular', level: 'a2', title: 'Past Simple Verbos Regulares en Inglés A2',
-    rationale: 'La historia de la bicicleta se cuenta con past simple y ago: "I paid 95,000 last month", "I bought it sixteen months ago". Con ago, nunca con since: since de duración es B1.' },
+    rationale: 'La historia se cuenta en pasado simple con ago, nunca con since (since de duración es B1): "you carried it down four floors", "you looked for three weeks", "you posted it on Marketplace", "no buyer has asked". Nota: paid y bought son irregulares y no prueban este tema.' }, // 🔁
+  { slug: 'past-simple-irregular', level: 'a2', title: 'Past Simple Verbos Irregulares en Inglés A2',
+    rationale: 'Es el tiempo con más presencia de las dos fichas y no estaba anclado: put, told, heard, wrote, came, left, said, gave, paid, bought. Y put es invariable: sin este tema el estudiante no tiene dónde comprobar que "You posted it on Marketplace" y "You put it on…" son la misma línea temporal.' }, // ➕
   { slug: 'past-simple-questions', level: 'a2', title: 'Preguntas y Negativos en Past Simple A2',
-    rationale: 'La pregunta abierta de B, que es la que hace salir lo que no está en el anuncio: "What did you change on it?". En directa, nunca incrustada.' },
+    rationale: 'La pregunta abierta obligatoria de B, la que hace salir lo que no está en el anuncio: "What did you change on it?". En directa, nunca incrustada.' },
+  { slug: 'present-continuous-future-a2', level: 'a2', title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
+    rationale: 'El dato de transporte que decide el desenlace de B es un presente continuo de futuro: "My brother-in-law is bringing his truck at six". Y la carta que lo tumba también: "I\'m going to Barrancabermeja". Sin este tema, la segunda variable del trato no está anclada en ninguna parte.' }, // ➕
+  { slug: 'present-perfect-basic', level: 'a2', title: 'Present Perfect Básico en Inglés A2',
+    rationale: 'Una línea del dato oculto de A lo usa y ninguna otra cosa lo ancla: "no buyer has asked". Es perfecto de resultado, no de duración (el de for/since queda fuera del nivel). Si se prefiere mantener la prosa en presente y pasado simple, como declara §11, la alternativa es reescribir esa línea y quitar esta referencia.' }, // ➕
+  { slug: 'relative-clauses-a2', level: 'a2', title: 'Cláusulas de relativo en Inglés A2: who, which, that',
+    rationale: 'El bloque de vocabulario entero está escrito en relativas —"the parts that press the wheel", "the person who works at the door of a building"— y la prosa usa la omisión del relativo objeto, que es el cuarto outcome del tema: "the size you need for the road bike you want next".' }, // ➕
   { slug: 'connectors-a2', level: 'a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
-    rationale: 'El dato que decide el trato se dice con but y hay que decirlo en voz alta: "they work, but the two small gears are difficult to use".' },
+    rationale: 'El dato que decide el trato se dice con but: "they work, but the two small gears are difficult to use". Y el segundo no de B se construye igual: "I hear you, but that\'s not going to work". La razón de A va con because: "you want 390,000 because the road bike costs 750,000".' }, // 🔁
   { slug: 'prepositions-movement-a2', level: 'a2', title: 'Preposiciones de movimiento en Inglés A2: into, out of, past, through, along',
-    rationale: 'El transporte es la segunda variable del trato y fue donde las parejas flojas se pasaron al español: "take it to the shop", "ride it to Floridablanca", "it goes into the truck".' },
+    rationale: 'El transporte es la segunda variable del trato y fue donde las parejas flojas se pasaron al español: "get the bike out today", "getting it out of here", "it goes into the truck". Son into y out of, que son los dos primeros outcomes del tema.' }, // 🔁
   { slug: 'can-ability', level: 'a1', title: 'Can para habilidad en inglés A1',
-    rationale: 'Sostiene todas las peticiones de los dos lados ("Can I…?", "Maybe we can…", "Can you keep it for me until…?") y sustituye a los Could I…? que el registro no ancla.' },
+    rationale: 'Sostiene siete de las 28 formas del escenario: "I can put the old gears back on", "I can include…", "I can\'t take less than…", "Maybe we can…", "Can you keep it for me until…?", el "…I can…" de los dos condicionales y el "than I can" de la comparativa. Sustituye a los Could I…? de cortesía, que el registro no ancla y la caja prohíbe.' }, // 🔁
+  { slug: 'present-simple-affirmative', level: 'a1', title: 'Present simple afirmativo en inglés A1',
+    rationale: 'Los datos que no cambian se dicen en presente: "The shop closes at one", "I have 350,000 in cash", "I have a reason". Es la mitad de la prosa de las dos fichas y no estaba anclado.' }, // ➕
+  { slug: 'present-simple-questions', level: 'a1', title: 'Present simple interrogativo en inglés A1',
+    rationale: 'La única pregunta del escenario con do-support en presente, y es la que abre la vía de salida de B: "Does the lock come with it?". Sin ella, B solo sabe preguntar con to be y con can.' }, // ➕
+  { slug: 'verb-to-be', level: 'a1', title: 'Verb to be en inglés A1',
+    rationale: 'Cinco de las 28 formas son to be y son las que abren y las que describen: "Hi — are you here for…?", "Is that still…?", "The rear tire is…", "The Nequi money is for…", "That\'s not important right now".' }, // ➕
+  { slug: 'wh-questions', level: 'a1', title: 'Preguntas con WH en inglés A1',
+    rationale: 'Las dos preguntas abiertas obligatorias empiezan aquí (How…?, Why…?, What…?) y la pantalla de cierre pide además la distancia: "how far", que es uno de los outcomes del tema.' }, // ➕
   { slug: 'telling-time', level: 'a1', title: 'Decir la hora en inglés A1',
-    rationale: 'El cierre exige a qué hora se mueve la bicicleta, y el taller cierra a la una: sin la hora no hay cierre.' },
+    rationale: 'El cierre exige a qué hora se mueve la bicicleta, y el taller cierra a la una: sin la hora no hay cierre. Cubre también el until del "Can you keep it for me until six?", que prepositions-time no enseña.' }, // 🔁
   { slug: 'going-to', level: 'a1', title: 'Going to en inglés A1',
-    rationale: 'La pregunta abierta obligatoria de A es un going to: "How are you going to take it home?". Sin el tema, la pregunta que abre el transporte no está anclada en ningún sitio.' },
+    rationale: 'La pregunta abierta obligatoria de A es un going to: "How are you going to take it home?" — el tema modela "What are you going to do?" y aquí solo cambia el WH. Y el segundo no de B usa su negativa: "that\'s not going to work".' }, // 🔁
   { slug: 'present-continuous', level: 'a1', title: 'Present Continuous en Inglés A1',
     rationale: 'La pregunta abierta obligatoria de B es un presente continuo: "Why are you selling it?". Es la que hace salir lo que no está en el anuncio.' },
 ]
@@ -433,7 +449,7 @@ ROLE A **443** · ROLE B **436** *(cifras de aquel día; las vivas son 446 / 442
 | línea | dónde | qué entró |
 |---|---|---|
 | 46 | A · `You want` | `You will not sell it for less than 390,000 with the new gears on.` |
-| 54 | A · `Only you know` 1 (el dato oculto, hallazgo grave) | `You would sell it for 330,000 with the old gears back on, and lose nothing.` |
+| 54 | A · `Only you know` 1 (el dato oculto, hallazgo grave) | `With the old gears back on, 330,000 is enough, and you lose nothing.` |
 | 56 | A · `Only you know` 3 | `You never put the lock or the lights in the ad, and no buyer has asked.` |
 | 57 | A · `Only you know` 4 | `You heard the same speech about the tire from all three buyers before.` |
 | 51 | A · `You can't` 3 | `You need the shop for that, before one.` |
@@ -451,7 +467,7 @@ ROLE A **443** · ROLE B **436** *(cifras de aquel día; las vivas son 446 / 442
 | 135 | B · `Only you know` 3 (L2) | `You already gave the Nequi money a job: the tire, the seat and the lock. Not the price.` |
 | 112 | A · `You did it if` (L3) | `They named the rear tire before you did.` |
 | 191 | B · `You did it if` (L3) | `You named the rear tire before they did.` |
-| 54 | A · `Only you know` 1 (L4) | `If you say that early, you lose the deal.` |
+| 54 | A · `Only you know` 1 (L4) | `If you say that early, you'll lose the deal.` |
 | 113 · 190 | A y B · `You did it if` (L5) | `…and they said yes.` (dos veces) |
 | 222 | pantalla compartida (L6) | `Say all four. If you both say the same, it's closed.` |
 | 94 | A · `Your toolkit` (L7) | `Block **6** is for when they ask why.` |
@@ -508,10 +524,36 @@ Contador corrido después: **ROLE A 446 · ROLE B 442**, techo 450.
 | 2 | B · exponentes, filas `asking for more` y `moving the deal` | fundidas en `moving the deal` | sus dos notas ya decían lo mismo con otras palabras. 9 filas → 8. `if it can't leave now` se queda en fila propia: es el salvavidas de después de la carta |
 | 3 | B · exponentes, `opening` → `greeting` | renombrada | las dos mitades del arranque de B eran las filas 7 y 9, con una sola en medio; por alfabético la fila baja al 3 y la cola pasa a terminar en el turno 1 |
 | 4 | A · exponentes, `asking about theirs` | fuera `later:` de la columna `form` | era el único sitio de las dos tablas que decía **cuándo** soltar algo: instrucción de orden metida en la columna de formas |
-| 5 | A · exponentes, nota de `the clock` | `the clock is a problem for both of you. Say it` → `a problem for both of you · say why today, don't ask for pity` | era la única celda de nota con oración cerrada y un imperativo detrás. Muere con la fusión |
+| 5 | A · exponentes, nota de `the clock` | `the clock is a problem for both of you. Say it` → `a problem for both of you · say why today, not why you need it` | era la única celda de nota con oración cerrada y un imperativo detrás. Muere con la fusión |
 | 6 | B · `You can't` 2 | `…in the same turn. Moving the bike counts.` → `…in the same turn — moving the bike counts.` | era la única de las 73 oraciones de prosa sin deixis que se invierta, y avanzaba justo por la bisagra del escenario |
 | 7 | cabeceras de las dos tablas | `· use it or don't ·` añadido | requisito de §10-§11, y es lo que baja la presión de leer la tabla como guion. Cuesta +5 por rol; se pagó en A con `You put it on Marketplace three weeks ago` → `You put it on Marketplace` (la antigüedad del anuncio está en la fila `Ad price`) |
 
 **Queda abierto, fuera de este archivo:** el motor (`fase4-escenarios-1-3.md` §1) sigue diciendo
 **6 turnos por rol** donde la ficha dice 8. Con 6, incluso 8 filas serían demasiadas. Esa
 discrepancia se resuelve en el diseño, no aquí.
+
+
+---
+
+## Pasada de nivel (22 ago 2026) — `fase13-nivel-1.md`
+
+Tres de los siete cambios de la pasada de calcabilidad de hoy **subieron el nivel al comprimir**, y
+eso es el hallazgo de método: recortar no es neutro. Contador después: **ROLE A 444 · ROLE B 440**.
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | A · dato oculto | `You would sell it for 330,000 with the old gears back on, and lose nothing.` → `With the old gears back on, 330,000 is enough, and you lose nothing.` | era el **único `would` de las dos fichas**, y el registro A2 no tiene segundo condicional ni tema de `would`. Cayó en la línea más cara: la que hay que entender bien para no soltarla |
+| 2 | A · `Where you are` | `You put it on Marketplace,` → `You posted it on Marketplace,` | el recorte de hoy quitó `three weeks ago` y `put` es invariable: la mitad izquierda de la oración quedó sin marca de pasado y la derecha (`you carried`) sí la tenía. `posted` ya es palabra de la ficha, en la fila `Ad price` |
+| 3 | A · nota de `the clock` | `don't ask for pity` → `not why you need it` | `pity` es B1, y entró hoy al fundir las dos filas |
+| 4 | A y B · exponentes | `I'll take it there before …` en `the clock` · `I'll pick it up at …` en `if it can't leave now` | el cierre obliga a comprometer hora y transporte, y **ninguna de las 28 formas llevaba `will`**: el tema estaba en `grammarReferences` sostenido solo por dos frases de narración que el estudiante lee y no dice. Siguen 8 filas para 8 turnos |
+| 5 | A · `the price` | `I can't go under …` → `I can't take less than …` | `under` ante cifra es idiomático; así ancla directo en `comparatives` |
+| 6 | A · `money` | `Cash, or part by …?` → `Do you have it in cash, or …?` | fragmento sin verbo que ningún tema sostenía, y la cola obligaba a `part of`, que `quantifiers` no enseña |
+| 7 | B · `You can't` 2 | partida en dos, y `moving the bike counts` → `transport counts too` | gerundio en función de sujeto (B1) dentro de la oración más larga de las dos fichas: 28 palabras, cuando la media es 12. La longitud la produjo el arreglo de calcabilidad de esta misma mañana |
+| 8 | prosa, tres condicionales | resultado con `will` en los tres | `first-conditional` enseña *if + presente → **will*** y marca con ❌ el resultado en presente: la prosa hacía justo lo que su tema ancla señala como error. Y de paso es lo único que le da al estudiante un `will` **leído en su propia ficha** |
+
+`grammarReferences`: se conservan los 13, entran **8** y se reescriben nueve *rationales* que
+describían algo que la ficha ya no tiene o que el tema no enseña — entre ellos el de
+`past-simple-regular`, que probaba el tema con dos verbos irregulares (`paid`, `bought`).
+
+**Fuera de este archivo:** el registro de inglés no tiene ningún tema de números en A1 ni A2, y este
+escenario obliga a decir precios de seis cifras en voz alta. No está anclado en ninguna parte.
