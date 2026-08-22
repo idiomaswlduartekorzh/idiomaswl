@@ -96,7 +96,7 @@ Block 6: Saturday mornings are the one thing you don't explain.
 2. You said sorry once, then gave the whole reason: daycare, road work, bus, with times.
 3. You said what you want.
 4. You said no to Saturday mornings, and not why.
-5. Somebody can check the WHAT CHANGES line next Monday: a time, a bus, a name — not a promise.
+5. You put a time, a bus and a name on the WHAT CHANGES line — not a promise.
 6. You can name the paper and say who reads it.
 7. You said what it costs you, and you asked what it costs her.
 
@@ -166,14 +166,14 @@ Block 6 matters most: one question you don't answer.
 | function | form | what it does here |
 |---|---|---|
 | asking, and then waiting | `What happened this morning?` · `And what can you…?` | two open questions: one about this morning, one about next Monday. Then wait |
-| he thinks you're angry | `I'm not angry.` | he thinks you are angry — show him you are not |
+| granting it | `If you write this line today, I can…` | in one sentence: what you need, and what you give |
+| he thinks you're angry | `I'm not angry.` | show him you are not |
 | naming your price | `That helps, but I need…` → `I need… mornings on…, and I…` | say it falls short, then the number, the day and who teaches |
 | one more door | `What if we…?` · `Maybe we can…` | put a third door on the table before either of you shuts one |
-| the rule, not the fight | `I have to write…` | it is the rule, not your decision |
+| the rule, not the fight | `I have to write…` | an obligation, not your decision |
 | the two things on the desk | `Have a seat, Camilo.` · `You fill out this line, not me.` | say why you called him. Then point at the line |
 | what it costs each of you | `Nobody pays me for…` · `That costs you…` | your price, and his |
-| why him | `You know this warehouse better than…` | finish it with the store, not with a name · this is about the warehouse, not about the three Mondays |
-| yes, with a condition | `If you write this line today, I can…` | in one sentence: what you need, and what you give |
+| why him | `You know this warehouse better than…` | finish it with the store, not with a name · the warehouse, not the three Mondays |
 
 ### You did it if
 1. The keys and the sheet were on the desk before you spoke.
@@ -181,7 +181,7 @@ Block 6 matters most: one question you don't answer.
 3. You said why you are asking him.
 4. He wrote the WHAT CHANGES line in his own words, and somebody can check it Monday.
 5. You said when the keys change hands, and what you get.
-6. You gave a training day you can keep and said what it costs you. If it costs you nothing, say why.
+6. You gave a training day you can keep and said what it costs you — or why it costs you nothing.
 7. You promised nothing you can't give, and you didn't lie about the two Mondays.
 
 ---
@@ -198,7 +198,7 @@ Block 6 matters most: one question you don't answer.
 > | What they are saying outside | the four of them · this morning, out loud in the store |
 > | The question one of them asked | the other two Mondays · not in the incident form |
 >
-> - A secret deal does not work now.
+> - No room now for a quiet deal.
 > - Nothing you give him now stays between the two of you. So he gives something back, and they see that too.
 > - You decide how much you tell him.
 
@@ -215,7 +215,7 @@ palabras. Se caen la guardería, la obra y el bus, que son justo lo que había q
 2. **What changes next Monday, exactly:** the start time, and how it works — who takes Matías, which bus, who opens the store — and the review date.
 3. **When and where the training happens, and what it costs.** Then each of you says: "This costs you ___."
 
-**And to really finish:** you sign the commitment sheet on the desk. If the line does not say what happens next Monday before seven, you are not finished.
+**And to really finish:** you both sign the commitment sheet on the desk. No time before seven on that line, no close.
 
 **Three, or it isn't closed.** Point 2: you cannot close with a promise. Point 3: you cannot close without the price.
 
@@ -285,7 +285,7 @@ node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs
 
 | ficha | prosa | tope §11 | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Camilo | **448** | 450 | 10 filas | 10 | 9 |
+| ROLE A — Camilo | **447** | 450 | 10 filas | 10 | 9 |
 | ROLE B — doña Amparo | **445** | 450 | 10 filas | 9 | 9 |
 
 El techo de §11 para A1-A2 es **450** desde la corrección del 21 de agosto: los 350 anteriores
@@ -532,3 +532,28 @@ inversión: `…and the warehouse job and the keys go too.`
 - Las dos tablas `Say it here` salvo las dos celdas nombradas, el resto de `Facts`, el resto del
   vocabulario, `Your toolkit`, `Only you know` de A, la carta salvo su línea 202 y el bloque en
   español del final.
+
+
+---
+
+## Pasada de calcabilidad (22 ago 2026) — `fase13-calcable-5.md`
+
+La prosa está limpia: **0 decibles de 62 oraciones de rol y 0 de 39 filas de datos y vocabulario**.
+Las seis que devolvieron el escenario están todas en las piezas que hasta hoy no se cepillaban —la
+pantalla compartida, los criterios de cierre, la carta y las notas de las tablas—. Contador después:
+**ROLE A 447 · ROLE B 445**, techo 450.
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | cierre · `And to really finish` | `…you sign… If the line does not say what happens next Monday before seven, you are not finished.` → `…you both sign… No time before seven on that line, no close.` | **en la pantalla compartida la segunda persona no protege**: leen los dos, así que basta con que el predicado se sostenga en una dirección. Lo único que sujeta ese bloque es la palabra `both`, y esta línea se había quedado sin ella |
+| 2 | B · `You did it if` 6 | `…what it costs you. If it costs you nothing, say why.` → `…what it costs you — or why it costs you nothing.` | `fase9-nivel-5.md` §3.5 cambió `If it cost you nothing` por `costs`: el subjuntivo era lo único que marcaba la línea como hipótesis de pantalla. **Un arreglo de nivel creó una decible** |
+| 3 | A · `You did it if` 5 | `Somebody can check the WHAT CHANGES line next Monday: a time, a bus, a name…` → `You put a time, a bus and a name on the WHAT CHANGES line…` | dejaba escrita, en orden, la línea que hay que producir |
+| 4 | carta | `A secret deal does not work now.` → `No room now for a quiet deal.` | tercera persona sin deixis, y es el dato que convierte la carta en obligación |
+| 5 | B · notas de exponentes | `this is about the warehouse, not about the three Mondays` → `the warehouse, not the three Mondays` · `it is the rule, not your decision` → `an obligation, not your decision` | eran las dos únicas celdas de nota con oración cerrada |
+| 6 | B · exponentes, `yes, with a condition` → `granting it` | renombrada, tabla reordenada | el otorgamiento —el movimiento que decide el desenlace— estaba en la última fila. Mismo defecto que el molde ya corrigió. Pasa a la fila 2. De paso, `he thinks you're angry` dejaba de repetir su propia etiqueta en la nota |
+
+**Queda abierto para el guardián:** las dos tablas tienen **9 filas** y la banda declarada es
+`6-9 turns each`. Nueve filas para nueve turnos cumple la regla de §11 al límite, pero una pareja
+que juegue el suelo de la banda —seis turnos— tendría más filas que turnos. La regla dice «no más
+filas que turnos» sin decir contra qué extremo de la banda se mide, y eso hay que fijarlo en el
+blueprint, no aquí.
