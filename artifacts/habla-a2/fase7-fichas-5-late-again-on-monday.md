@@ -285,8 +285,8 @@ node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs
 
 | ficha | prosa | tope §11 | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Camilo | **450** | 450 | 10 filas | 10 | 9 |
-| ROLE B — doña Amparo | **448** | 450 | 10 filas | 9 | 9 |
+| ROLE A — Camilo | **448** | 450 | 10 filas | 10 | 9 |
+| ROLE B — doña Amparo | **445** | 450 | 10 filas | 9 | 9 |
 
 El techo de §11 para A1-A2 es **450** desde la corrección del 21 de agosto: los 350 anteriores
 salían de contar a mano una sola ficha y ni el propio molde los cumplía. La ficha de B venía de
@@ -297,7 +297,7 @@ caracteres a una frase. **Se cortó prosa, no piezas.**
 
 En la pasada anterior B bajó de 450 a 439 y A de 449 a 448 sin perder ninguna pieza. En la pasada
 quirúrgica del 22 de agosto —sobre `fase9-calcable-5.md` y `fase9-nivel-5.md`, solo las líneas
-citadas— A sube a **450** y B a **448**, corridos con el contador canónico: lo que engorda son las
+citadas— A subió a **450** y B a **448**, corridos con el contador canónico: lo que engorda son las
 dos reescrituras que cambian persona gramatical (`Where you are` de B y `You want` de A) y el
 `what will change, and how it will work` que pide el nivel. Ninguna ficha se pasa, pero **A queda
 clavada en el techo**: la próxima línea que crezca en su prosa tiene que salir de otra.
@@ -455,7 +455,7 @@ reescribió entera, ni cambió un dato, un nombre o el motor. Los números de l�
 después de la pasada.
 
 **Prosa, contador canónico (`node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`,
-corrido después de aplicar): ROLE A 450 · ROLE B 448**, techo 450. Las dos dentro; A clavada en el
+corrido después de aplicar): ROLE A 448 · ROLE B 445**, techo 450. Las dos dentro, con dos palabras de aire en el
 techo.
 
 ### De `fase9-calcable-5.md` — las 12 decibles y los 4 defectos de forma (16 de 16 aplicados)
