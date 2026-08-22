@@ -116,18 +116,18 @@ concordancia sobre ninguno de los dos en ninguna de las dos fichas ni en la cart
 ### Your toolkit
 Blocks **1** `[asks]`, **2**, **3** `[receives]`, **4**, **5**, **6** (it matters · reason locked), **7** (you can say no too) and **8**. The whole box today. *unload* is theirs: ask for it.
 
-### Say it here — use it or don't · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| asking back | `What's wrong with…?` · `Why not…?` | you ask for the reason instead of repeating your idea |
-| giving the news | `He's coming on…` · `He's going to sleep…` | a plan that doesn't move, and then the hard part with nothing added |
-| holding the line | `Not a hostel — not in this family.` · `He's out all day — he has…` | the hostel and the paid room get the same answer · the second one only when they ask |
-| offering | `He can sleep… There's a mattress.` · `What about…?` | you say where he sleeps and you don't decide it |
+| a second bed | `He can sleep… There's a mattress.` · `What about…?` | you say where he sleeps and you don't decide it |
+| asking why | `What's wrong with…?` · `Why not…?` | you ask for the reason instead of repeating your idea |
+| not a hostel | `Not a hostel — not in this family.` · `He's out all day — he has…` | the hostel and the paid room get the same answer · the second one only when they ask |
 | owning it | `Sorry — I said yes before…` | you name what you did, once, and you move on |
 | parking it | `Let's leave [what] for…` | you park one thing on a day, instead of losing it |
-| reacting | `Wait — when?` | you stop and you get the date before you answer |
-| your aunt | `I have to call… tonight.` · `So: he's coming on…, and he's sleeping…, right?` | your real deadline, and then the message she gets |
+| stopping to get the date | `Wait — when?` | you stop and you get the date before you answer |
+| the call to your aunt | `I have to call… tonight.` · `So: he's coming on…, and he's sleeping…, right?` | your real deadline, and then the message she gets |
+| the news itself | `He's coming on…` · `He's going to sleep…` | a plan that doesn't move, and then the hard part with nothing added |
 
 ### You did it if
 The whole thing in your first turn — day, nights, the couch · you said it matters and you didn't say why · after a no you asked why, and you learned a reason you did not know · you said out loud what Iván does all day · **two** options, and nobody pays for a bed · you never said the problem is them, and breakfast tomorrow still works.
@@ -188,19 +188,19 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 ### Your toolkit
 Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload* are yours, not theirs — **5**, **6**, **7** `[grants]`, **8**. Block **1** is not yours today: they start, so you never open. Block **6**: only for the living room, until they ask.
 
-### Say it here — use it or don't · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| another way | `Can we do it another way?` | you say no to the plan and not to the visit |
-| granting with a condition | `If…, I'm OK with it.` | a yes with a day and an hour inside it |
-| not closing the door | `I'm not saying no, but…` | you say yes to the cousin and you put your own thing in the same sentence |
-| one at a time | `My mom is arriving on…` · `And one more thing.` | your second thing as a closed plan — and the marker that opens the third |
-| parking it | `Let's leave [what] for…` | you park one thing on a day, instead of losing it |
-| putting yours down | `I need the living room on…` · `I'll finish at eleven.` | you book your hours with a day, and you close them with a time |
+| a third door | `Can we do it another way?` | you say no to the plan and not to the visit |
+| leaving something for later | `Let's leave [what] for…` | you park one thing on a day, instead of losing it |
+| saying yes to the cousin | `I'm not saying no, but…` | you say yes to the cousin and you put your own thing in the same sentence |
 | taking it back | `That's not true anymore.` | you break a fact you put on the table yourself |
-| the reason, if they ask | `The wifi drops next to the window.` | why the living room and not your room — all of it |
-| what you're missing | `How many nights?` · `What's he going to do all day?` | first the number, then the fact that decides your Monday |
+| the lease, last | `My mom is arriving on…` · `And one more thing: the lease, before…` | your second thing as a closed plan — and the marker with the third one already inside it |
+| the reason, if they ask | `The wifi drops next to…` | why the living room and not your room — all of it |
+| what you still don't know | `How many nights?` · `What's he going to do all day?` | first the number, then the fact that decides your Monday |
+| yes, with a condition | `If…, I'm OK with it.` | a yes with a day and an hour inside it |
+| your Monday morning | `I need the living room on…, from… to…` · `I'll finish at…` | you book your hours with a day and two times, and you close them with the last one |
 
 ### You did it if
 **One at a time**, your order, lease last · never a no to the visit, and Monday the 24th, 8:00 to 11:00, yours · the living-room reason only **when they asked**, and then all of it · you asked an **open question** about Iván's days · you said what you lose · you never said the problem is them, and breakfast tomorrow still works.
@@ -228,17 +228,26 @@ Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload*
 
 ## Both screens — how it ends
 
-**You finish when you both say these three things out loud. Then check: same thing, in both mouths?**
+**Each of you says three things out loud. Six in total. Nobody says the other person's three.**
 
-1. **Where Iván sleeps on Thursday the 20th**, and who sleeps where that night.
-2. **Who has the living room on Monday the 24th** — and from what time to what time.
-3. **What you did not decide today, and when you talk about it** — Sunday the 23rd, in the kitchen, after lunch.
+**Only Dani can say:** where Iván sleeps on Thursday the 20th, and who sleeps where that night ·
+the second bed, and that nobody pays for it · the message for the aunt, out loud, in front of Cris.
 
-**And to really finish:** Dani says the message for the aunt out loud, in front of Cris. Then Cris
-confirms it, or corrects it. If Cris corrects one word, you did not agree on the same thing.
+**Only Cris can say:** from what time to what time the living room is Cris's on Monday the 24th ·
+the lease, and the day it has to carry the two names · what you did not decide today, and when you
+talk about it — Sunday the 23rd, in the kitchen, after lunch.
 
-**Point 3 is important.** Without it: a conversation that stops. With it: half an agreement. If you
-skip it, the game did not finish.
+**Together, once:** Cris says yes to the aunt's message, or changes one word in it. If Cris changes
+one word, you did not agree on the same thing.
+
+**Four rules:**
+- Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again.
+- Checking with your own words does count. *So, we're clear then* is not one of the six lines, and it isn't cheating either.
+- Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are none of the six lines.
+- Nothing is given away for free. Say what you give, and say what you get for it, in the same turn.
+
+**Six lines, or it isn't closed.** The one that gets skipped is Cris's third. Without it the
+conversation stopped; it did not end.
 
 ## After — both screens, in Spanish
 
@@ -500,3 +509,24 @@ la pasada: **ROLE A 444 · ROLE B 448** (techo 450).
 `If…, I'm OK with it.`, el `rationale` de `imperative` y las dos referencias que faltan) y el bloque
 de `grammarReferences` de su §7. Son anclajes de gramática, no estructura fuera de A2 ni
 vocabulario, y quedaban fuera del encargo de esta pasada. **Siguen pendientes.**
+
+---
+
+## Pasada de carga (22 ago 2026) — el cierre pasa a repartir
+
+Sale de `fase11-veredicto.md` (puerta 5) y de `fase11-simulacion-6.md` (pareja floja **64/36**,
+muerte en el turno global 12, y «B consigue la mitad de su objetivo asintiendo»). Diagnóstico en
+`fase12-carga.md`. **El motor no se toca:** `dar-mala-noticia` + `proponer-alternativa`, poder
+igual, arranca A, desenlace acuerdo-parcial, datos, carta, nombres y neutralidad de género están
+intactos. Prosa después: **A 444 · B 448**, sin cambios — todo lo tocado vive fuera de las dos
+fichas o dentro de una tabla.
+
+| # | Dónde | Qué se cambió | Por qué |
+|---|---|---|---|
+| 1 | cierre · `Both screens — how it ends` | de **tres puntos que decían los dos** a **tres líneas de Dani y tres de Cris, y ninguno dice las del otro**. Las tres de Cris son las tres que solo él tiene: las dos horas del lunes 24, el contrato con su fecha, y lo que queda sin decidir con su día | era uno de los cuatro cierres del set que no repartían. Con él, un jugador callado llegaba al final sin abrir la boca, y de hecho llegó: en la simulación la franja de la mañana **se la regaló A** y a Cris le bastó `Yeah. That works.` La franja ahora no está ganada hasta que Cris dice las dos horas |
+| 2 | cierre · reglas | cuatro reglas nuevas, tomadas del molde del escenario 4: no repetir la línea del otro, confirmar con palabras propias sí vale, **nada de asentir** (*Yeah*, *sure*, *okay*, *fine*, *that works*) y **nada se regala**: quien da algo dice qué recibe por ello, en el mismo turno | la regla del regalo es la que impide que A compre la paz cediendo la mañana, que es exactamente lo que su criterio de éxito («dos opciones, y nadie paga cama») le empujaba a hacer |
+| 3 | B · exponentes, fila `one at a time` | `And one more thing.` → `And one more thing: the lease, before…` | el marcador se podía decir vacío, y se dijo vacío: `And one more thing. No. Nothing.` Un marcador que se puede decir sin la cosa detrás es un marcador que miente. Ahora arrastra el contrato y su fecha |
+| 4 | B · exponentes, fila `putting yours down` | `I need the living room on…` → `I need the living room on…, from… to…` | la primera línea del cierre de Cris pide **dos horas**, y la ficha solo le daba forma para el día |
+
+**Lo que esto NO arregla:** las nueve formas cerradas que `fase11-naturalidad` le cuenta a esta
+ficha (puerta 4) y el andamiaje de la reacción a la carta. No son carga, y no son de escenarios.

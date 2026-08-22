@@ -78,19 +78,19 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 ### Your toolkit
 All eight blocks — you are the only one behind a counter. **1** `[grants]`, but not *Good morning* — at 4:20 p.m. it is **Good afternoon**. **2**, **3**. **4** `[jargon]`: *referral note*, *emergency check*, *X-ray*, yours not theirs. **5**. **6** for when they push about another patient. **7** `[grants]`, **8**.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| another patient's time | `That's another patient's time. I can't tell you about it.` · `Maybe I have something later today, but…` | close one door without a reason · leave the other one open |
-| bad news | `We're fully booked today and tomorrow.` · `The first opening is…` | the fact in front, not the no |
-| money | `The plan covers it here, and only here.` · `At Centro you pay… yourself.` | what they lose by leaving, with the number on it |
-| sending them across town | `You should go to our… branch, on… — before…` | one road, with its own name and its own time |
-| the number | `Can you say it one at a time?` · `Let me repeat it: …` | ask for the number slowly · then read back what you wrote |
-| their side | `What happened?` | **open question** — without it, the fact that turns the scenario never comes out |
-| Thursday, in full | `Come ten minutes early — there are…` | the second number of that appointment, said as a time |
-| tonight | `Put something cold on your face for ten minutes.` · `Don't chew on that side.` | concrete instructions instead of general advice |
-| the sign for the hospital | `If the pain goes to your ear, go to the emergency room tonight.` | the fourth point of the close |
+| asking, not guessing | `What happened?` | **open question** — without it, the fact that turns the scenario never comes out |
+| checking a number | `Can you say it one at a time?` · `Let me repeat it: …` | ask for the number slowly · then read back what you wrote |
+| danger | `If the pain goes to…, go to the emergency room tonight.` | one sign, and the one place tonight that is not this clinic |
+| giving a time to arrive | `Come… minutes early — there are…` | the second number of that appointment, said as a time |
+| keeping one door shut | `That's another patient's time. I can't tell you about it.` · `Maybe I have something later today, but…` | close one door without a reason · leave the other one open |
+| naming the other branch | `You should go to our… branch, on… — before…` | one road, with its own name and its own time |
+| saying what is not there | `We're fully booked…` · `The first opening is…` | the fact in front, not the no |
+| the pain tonight | `Put something cold on your face for… minutes.` · `Don't chew on…` | concrete instructions instead of general advice |
+| who pays, and where | `The plan covers it only…` · `At… you pay… yourself.` | what they lose by leaving, with the number on it |
 
 ### You did it if
 They said the **day, time and branch** back to you, and you checked them on screen · the **treatment date here**, if you sent them elsewhere · you said **who pays, how much, and when** · you took the cell number **one digit at a time** and read it back · they said what they will do tonight, in their words · **one open question before you proposed anything** · **the sign for the hospital** · nothing said about another patient.
@@ -115,7 +115,7 @@ They said the **day, time and branch** back to you, and you checked them on scre
 - On Sunday you broke a small piece of your lower back tooth, and you feel the sharp edge on your tongue when you talk. You are not hiding it — the pain worries you more than the piece. You say it if they ask an open question.
 - The number in their file is your sister's. You never gave them that number, so their messages never reach you.
 
-**If you walk away with nothing** · You go home with the pain, no date and nothing for tonight. And anywhere else you pay the whole treatment yourself: your plan works only here.
+**If you walk away with nothing** · You go home with the pain and no date. Tonight you have your 70,000. Anywhere else you pay the whole treatment yourself: your plan works only here.
 
 ### Facts
 
@@ -150,19 +150,19 @@ They said the **day, time and branch** back to you, and you checked them on scre
 ### Your toolkit
 Six blocks. **1** `[asks]`: no appointment, and it hurts. **2**. **3** `[receives]`: *emergency check*, *referral note*, *first consultation* — ask. **4** `[jargon]`, half of it: the tooth is yours, nobody else can describe it. **5**: hurting is not enough, say what **you** lose. **7**: saying no to their offer is your job. **8**. Not 6, you hide nothing.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| asking for another day | `Is there any other day?` · `What days do you have after eight thirty?` | **open questions**, with your limit already inside · one of them again if they hint at something later today |
-| before you leave | `What time do I have to be there?` · `Does my plan cover it here?` | the two things you leave without if nobody asks |
-| how you come in | `I don't have an appointment. Can you help me, please?` | say what you are before they ask |
-| the number | `That's my sister's number. Mine is…` | fix the wrong contact when they read it out |
-| the pain | `It's worse than yesterday.` · `It hurts more when…` | describe by comparing, which is how pain gets described |
-| the tooth | `A piece of my tooth broke on Sunday, and…` | what you don't tell on your own — it comes out if they ask something open |
-| your money | `I have… with me, if that helps.` | your money as an option, not as a complaint |
-| your seven o'clock | `I can't come at…, because I open the warehouse.` | close a time with the reason attached, not with a wish |
-| your time | `I can wait here.` · `I don't work on Saturdays.` · `Can I come back at…?` | your time on the table · a day of yours they don't know about |
+| asking for another day | `Is there any other day?` · `What days do you have after…?` | **open questions**, with your limit already inside · one of them again if they hint at something later today |
+| comparing the pain | `It's worse than…` · `It hurts more when…` | describe by comparing, which is how pain gets described |
+| fixing the number | `That's my sister's number. Mine is…` | fix the wrong contact when they read it out |
+| how you walk in | `I don't have an appointment. Can you help me, please?` | say what you are before they ask |
+| putting your money in | `I have… with me, if that helps.` | your money as an option, not as a complaint |
+| putting your time in | `I can wait here.` · `I don't work on…` · `Can I come back at…?` | your time on the table · a day of yours they don't know about |
+| the two questions before you leave | `What time do I have to be there?` · `Does my plan cover it…?` | the two things you leave without if nobody asks |
+| what broke, and when | `A piece of my tooth broke on…, and…` | what you don't tell on your own — it comes out if they ask something open |
+| why seven doesn't work | `I can't come at…, because I open…` | close a time with the reason attached, not with a wish |
 
 ### You did it if
 A day that **really** works with your job, said with your schedule in hand · **two things of yours** on the table — waiting, a free day, money — before anyone asked · at the end **you** said the day, the time and the branch, and **your number from memory**, one digit at a time · **what the pain is like**, not only that it hurts · what you will do tonight · what you pay, or that you don't.

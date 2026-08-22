@@ -91,6 +91,8 @@ Blocks **1** `[asks]` at the worst hour · **2** · **3** `[receives]`, **yours*
 
 | function | form | what it does here |
 |---|---|---|
+| asking again, about the hour | `I can only come at…, so can we…?` | the same question again, this time against the clock and not against the rule |
+| asking again, with a new reason | `I know, but I still need…` · `I have to ask you again: can you…?` | after his first no, come back with a reason he has not heard yet · say out loud that this is the second time, and ask anyway |
 | asking for a way out | `Is there another way?` · `What will happen if…?` | ask for a way nobody has offered you · put the 5th and the 12th in one question |
 | checking what you heard | `So I have to…?` · `So it's …, on the …?` | hand the obligation back out loud · give the number and the date back before you keep them |
 | copying it down | `Let me copy…` | buy the seconds your hands need |
@@ -162,11 +164,12 @@ Blocks **1** `[grants]` · **2** · **3**, **yours**: an ID and a reason, by ear
 
 | function | form | what it does here |
 |---|---|---|
+| asking again for the reason | `I don't need to know where — I need…` · `Any reason works, but I can't write…` | she keeps the country and you keep the form · ask a second time for the one line the case needs |
 | asking her for something | `Can you sign here, next to…?` · `Has this person ever been a member…?` | what opens the case and ends the visit · the one question that opens or closes that way |
 | buying yourself a turn | `Let me check that. One moment…` | slow it down without sending her away — and it is what the card takes from you |
 | dictating a number | `Write this down, please: …` | the case number and the date, for her to copy |
-| offering a way | `There is another way, but…` · `If you bring…, I can…` | one way at a time, and the second one only when the first one dies · the condition in the same sentence as the way, so the yes is not bigger than it is |
-| saying no with a door open | `I can't do that, but I can…` · `I have to be careful, because…` | the no and the yes in one sentence · your reason, not the rulebook's |
+| offering another way | `There is another way, but…` · `You can also…, and it costs…` | one way at a time, and the second one only when the first one dies · put the way she did not come for on the table with its price on it, before she asks for it |
+| saying no with a door open | `I can't do that, but I can…` · `If you bring…, I can…` · `I have to be careful, because…` | the no and the yes in one sentence · the condition in the same breath as the yes, so the yes is not bigger than it is · your reason, not the rulebook's |
 | talking about the paper | `I need a paper that says…` · `That's not enough — it doesn't say…` | describe it by what it has to say, not by its name · point at the missing date, not at the whole paper |
 | taking her side | `I know, and I'm sorry about…` | make it clear this isn't aimed at her |
 
@@ -265,8 +268,8 @@ quedan fuera porque no están dentro de ninguna ficha de rol.
 
 | ficha | palabras de prosa | techo §11 | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Tatiana | **449** | ≤ 450 | 10 filas | 10 | 9 formas en 6 filas |
-| ROLE B — Mauricio | **450** | ≤ 450 | 10 filas | 10 | 11 formas en 7 filas |
+| ROLE A — Tatiana | **449** | ≤ 450 | 10 filas | 10 | 12 formas en 8 filas |
+| ROLE B — Mauricio | **450** | ≤ 450 | 10 filas | 10 | 14 formas en 8 filas |
 
 Medido el 22 de agosto de 2026 sobre este archivo, después de la pasada quirúrgica de fase 9.
 Venía de 445 y 444 (21 de agosto), y de 453 y 476 antes de la ronda de la tarde.
@@ -274,6 +277,43 @@ Venía de 445 y 444 (21 de agosto), y de 453 y 476 antes de la ronda de la tarde
 ---
 
 ## Notas de la corrección
+
+### Pasada del 22 de agosto — `insistir` y el tercer acto, otra vez
+
+Sale de `fase11-veredicto.md` puerta 12 y accionable nº 7: **`insistir` medía 1,5 %** del set con
+suelo del 3 %, y este escenario **declaraba `proponer-alternativa` sin producirlo**. Detalle y
+mediciones, en `fase12-cuota-registro.md`. **El motor no se toca:** actos declarados, poder, quién
+arranca, desenlace, minutos, turnos, datos, carta, cierre y `grammarReferences` están intactos.
+Solo se mueven filas de la tabla de exponentes, así que **la prosa no se mueve: 449 y 450**.
+
+**Por qué aquí y no en otro escenario.** Insistir es volver a pedir lo mismo de otra manera
+después de un no, y este es el único `sin-acuerdo` del set: Tatiana recibe tres noes seguidos
+—la permanencia, la prueba y el horario— y no tenía una sola fila para volver a la carga. Lo
+hacía con `Is there another way?`, que es pedir un favor por primera vez, no insistir. En los
+otros siete el no llega tarde o no llega.
+
+| # | Dónde | Qué se cambió | Por qué |
+|---|---|---|---|
+| 1 | A · exponentes | fila nueva `asking again, with a new reason`: `I know, but I still need…` · `I have to ask you again: can you…?` | el segundo intento, con una razón que él no ha oído · anclado en `have-to-must` y `can-ability`, los dos ya en la lista |
+| 2 | A · exponentes | fila nueva `asking again, about the hour`: `I can only come at…, so can we…?` | el tercer no es de calendario —Édison no está el jueves y ella solo tiene de 12 a 1—, y contra el reloj hay que preguntar otra vez, no rendirse |
+| 3 | B · exponentes | fila nueva `asking again for the reason`: `I don't need to know where — I need…` · `Any reason works, but I can't write…` | choque diseñado: el permiso de ella dice que nunca tiene que decir a dónde va, y la restricción 3 de él le exige una razón para el caso. Sin esta fila, él pedía una vez y se quedaba sin caso |
+| 4 | B · exponentes | `offering a way` pasa a **`offering another way`** y cambia su segunda forma: sale `If you bring…, I can…`, entra `You can also…, and it costs…` | la fila entera se clasificaba como **conceder-con-condición**, porque su segunda forma era una condición y no una propuesta. Ahora las dos formas proponen, y el acto declarado se produce en pantalla |
+| 5 | B · exponentes | `If you bring…, I can…` se muda a `saying no with a door open`, que pasa a tres formas | es exactamente eso: un no que se vuelve sí si ella trae algo. No se pierde ninguna forma del andamiaje |
+
+**Lo que esto le cuesta al conjunto, medido con `fase11-scripts/actos-cuota.mjs`:** el set pasa de
+132 a **135 turnos-materia**; `insistir` de 2 a **5 (3,7 %)**, y ya vive en dos escenarios y no en
+uno; `proponer-alternativa` sube a 15 (11,1 %) y `conceder-con-condición` baja a 8 (5,9 %), las dos
+holgadas. Ningún acto pasa del techo del 30 % y **ningún acto declarado queda bajo el suelo**.
+Tatiana pasa de 6 a 8 filas y Mauricio de 7 a 8: las dos dentro del 6-9 de §11, y el escenario deja
+de ser el más flaco del set.
+
+**Ojo con la aritmética, que ya mordió una vez.** Añadir filas sube el denominador: dos filas
+nuevas de `insistir` habrían dado 4/134 = **2,99 %** y habrían fallado el suelo igual que hoy —el
+mismo cálculo que hizo retirar una fila el 21 de agosto—. Por eso son tres, no dos.
+
+**El mapa del script se actualizó con la ficha.** `fase11-scripts/actos-cuota.mjs` clasifica a mano,
+fila por fila: `8A` y `8B` se reescribieron enteros para que midan la tabla que existe. No se tocó
+ninguna otra entrada del mapa ni ninguna regla del script.
 
 ### Pasada del 21 de agosto (noche) — el tercer acto, que se declaraba y no se pedía
 

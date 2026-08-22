@@ -17,7 +17,7 @@ anteriores se escribieron sin ellas. Qué se tocó y por qué, al final del arch
 
 ## ROLE A — Fabián, and the pot is yours
 
-> **No boss here.** You cook. She came at nine to help. **You speak first.** 9 turns · 7 minutes.
+> **Informal. No boss here.** You cook. She came at nine to help. **You speak first.** 9 turns · 7 minutes.
 > **One screen, one player.** Don't read from it.
 
 **The patio, 11:20 a.m.** · Sunday, September 20, in Girón. You lit the fire at nine, for Friday's plan: everybody here at one.
@@ -82,26 +82,26 @@ Blocks **2**, **3** (numbers only), **4** `[jargon]` — *simmer*, *raw* and *se
 
 ### Out loud, in this patio — grouped by job · **don't read it out loud**
 
-| function | form | what it does here |
-|---|---|---|
-| advice, about her side | `You should tell them: get out of the water at …` | advise about her side of this, never about yours |
-| asking again, with a new reason | `I have to know before …, because …` · `If you don't tell me a number, I'll cook for …` | a new reason every time · then a price on the wait |
-| asking how they get back | `And how do you all get back from …?` | the one question she can't answer with yes or no |
-| opening | `Come here a second, before you …` | you speak first, and you don't open with the question |
-| the gate, at one | `Somebody has to be at the gate at …, and it can't be …` | the job the phone call just handed you |
-| the pot, and how many | `The cassava goes in at …, and it's ready at …` · `That's twelve servings, and the pot doesn't leave …` | two hours, so the wait stops being an opinion · a physical no, not a no to her |
-| two rounds | `We can do it in two rounds: some at …, and the rest at …` | stop asking, start offering |
-| what it costs you | `There's rice and chicken in there from …, and that's my lunch on …` | the exact point where pairs switch to Spanish: say what you lose |
-| yes, with a string | `The container can go, but only if …` | give the thing away and keep the hour |
+| function | form | what it does here | register |
+|---|---|---|---|
+| advice, about her side | `You should tell them: get out of the water at …` | advise about her side of this, never about yours | informal |
+| asking again, with a new reason | `I have to know before …, because …` · `If you don't tell me a number, I'll cook for …` | a new reason every time · then a price on the wait | neutral |
+| asking how many, and how they get back | `How many are coming back at …?` · `And how do you all get back from …?` | the number you came down here for, asked in one question · the one question she can't answer with yes or no | neutral |
+| opening | `Come here a second, before you …` | you speak first, and you don't open with the question | informal |
+| the gate, at one | `Somebody has to be at the gate at …, and it can't be …` | the job the phone call just handed you | informal |
+| the pot, and how many | `The cassava goes in at …, and it's ready at …` · `That's twelve servings, and the pot doesn't leave …` | two hours, so the wait stops being an opinion · a physical no, not a no to her | neutral |
+| two rounds | `We can do it in two rounds: some at …, and the rest at …` | stop asking, start offering | neutral |
+| what it costs you | `There's rice and chicken in there from …, and that's my lunch on …` | the exact point where pairs switch to Spanish: say what you lose | informal |
+| yes, with a string | `The container can go, but only if …` | give the thing away and keep the hour | neutral |
 
 ### The lunch happened if
-She told you how many come back, before what hour, and who rides and who walks. The chicken went in at twelve for a real number. You said what leaves and what stays. You asked for help at one o'clock. What is open has a name and an hour, and you never blamed the group.
+You said what you lose tonight if that number comes late, and what Monday and Tuesday cost you. The chicken went in at twelve for a real number. You said what leaves and what stays. You asked for help at one o'clock. What is open has a name and an hour, and you never blamed the group.
 
 ---
 
 ## ROLE B — Astrid, and the bike leaves at 11:40
 
-> **No boss here — the house, the fire and the food are his.** You came at nine and stayed. **He speaks first.** 9 turns · 7 minutes.
+> **Informal. No boss here — the house, the fire and the food are his.** You came at nine and stayed. **He speaks first.** 9 turns · 7 minutes.
 > **One screen, one player.** Don't read from it.
 
 **The patio, and one foot outside it** · Sunday, September 20, 11:20 a.m., in Girón. You came at nine to help him, and at eleven twenty you are still the only one. You stayed.
@@ -115,7 +115,7 @@ She told you how many come back, before what hour, and who rides and who walks. 
 
 **What you haven't said yet**
 - You read Édgar's message at eleven eleven: no car back before four. You have not said a word about it.
-- At ten you gave him a number for one o'clock. Today you know it is wrong. He doesn't know. You leave at eleven forty, and he thinks you stay.
+- At ten you gave Fabián a number for one o'clock. Today you know it is wrong. He doesn't know. You leave at eleven forty, and he thinks you stay.
 - You hold two facts he doesn't: last food at seven, and nothing open there on a Sunday. It is your best card and it can also hurt you. If you play it early, he answers that they walk back, and you lose the card.
 
 **If you leave at eleven forty with nothing** · You leave six people at a river with no food and no way home until four, and your message sent them there. And you leave behind lunch for twelve and one man at the fire.
@@ -165,17 +165,17 @@ Blocks **2**, **3** `[receives]` — *simmer* and *raw* will come at you: ask �
 
 ### Out loud, before the bike — grouped by job · **don't read it out loud**
 
-| function | form | what it does here |
-|---|---|---|
-| advice, about his side | `You should turn the fire down and …` · `Put a lid on it and …` | advise about his side of this, never about yours |
-| asking what's ready | `What is ready now?` · `And what can I take cold?` | the one question he can't answer with yes or no |
-| complaining | `I got here at nine, and I didn't …` | say the unfair part without blaming him |
-| insisting, with a new reason | `They ate at seven, and nothing is open …` · `I can't show up empty-handed, so I need something before I …` | a new reason every time · then hang a price on it |
-| opening, and what happened | `About the river …` · `They left at ten because it was …` | you come in second · give what you can give, not the number |
-| saying no to the bike | `Nothing big fits on …` | close the door his idea keeps opening |
-| taking it back | `At ten I told you …. That's not true now.` | the sentence this whole scene is waiting for. Late is fine; never is not |
-| who rides and who walks | `Marcela can take …, and the rest walk from …` · `They can be out of the water at …` | the plan in people and minutes, not in one number |
-| yes, with a string | `I'll bring some of them back, but only if …` | concede the trip, keep the plate |
+| function | form | what it does here | register |
+|---|---|---|---|
+| advice, about his side | `You should turn the fire down and …` · `Put a lid on it and …` | advise about his side of this, never about yours | informal |
+| asking what's ready | `What is ready now?` · `And what can I take cold?` | the one question he can't answer with yes or no | neutral |
+| complaining | `I got here at nine, and I didn't …` | say the unfair part without blaming him | informal |
+| insisting, with a new reason | `They ate at seven, and nothing is open …` · `I can't show up empty-handed, so I need something before I …` | a new reason every time · then hang a price on it | neutral |
+| opening, and what happened | `About the river …` · `They left at ten because it was …` | you come in second · give what you can give, not the number | informal |
+| saying no to the bike | `Nothing big fits on …` | close the door his idea keeps opening | neutral |
+| taking it back | `At ten I told you …. That's not true now.` | the sentence this whole scene is waiting for. Late is fine; never is not | informal |
+| who rides and who walks | `Marcela can take …, and the rest walk from …` · `They can be out of the water at …` | the plan in people and minutes, not in one number | neutral |
+| yes, with a string | `I'll bring some of them back, but only if …` | concede the trip, keep the plate | neutral |
 
 ### You rode off right if
 You said how many really come back and before what hour — not what you said at ten. You said who rides, who walks and how long the walk takes. You said what you tell the six and when. You held one condition, and what is open has a name and an hour.
@@ -190,7 +190,7 @@ You said how many really come back and before what hour — not what you said at
 
 | | |
 |---|---|
-| Coming at 1:00 | her, your aunt, three from the church |
+| Coming at 1:00 | her, your uncle and aunt, and two from the church |
 | Already | on the road |
 | Bringing | nothing |
 | Where she heard it | word from somebody · lunch here |
@@ -206,7 +206,7 @@ You said how many really come back and before what hour — not what you said at
 
 **Each of you says three things out loud. Six in total. Nobody says the other person's three.**
 
-**Only A can say:** what goes in the pot at twelve, and for how many · what leaves this patio now, and what stays · what A needs at one o'clock and can't do with the fire on.
+**Only A can say:** what goes in the pot at twelve, for how many, and what is lost tonight if that number comes late · what leaves this patio now, what stays, and what that costs on Monday and Tuesday · what A needs at one o'clock and can't do with the fire on.
 
 **Only B can say:** how many really come back, and before what time · who rides and who walks, and how long that walk takes · what B tells the six at the river, and before what hour.
 
@@ -214,10 +214,11 @@ You said how many really come back and before what hour — not what you said at
 
 **And one thing stays open on purpose:** who doesn't eat with the others, and who fixes it. Say it with a name and a time.
 
-**Four rules, and they're what make this one different from the other seven:**
+**Five rules:**
 - Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again.
 - Checking with your own words does count. *So, we're clear then* is not one of the six lines, and it isn't cheating either.
-- Nobody nods their way through. *Sure*, *okay* and *fine* are none of the six lines.
+- Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are none of the six lines.
+- A number with no hour on it is not a line. And nothing leaves this patio for free: say what you give, and say what you get for it.
 - Nobody writes anything down and nobody reads anything out. This is a patio. There's no number to confirm and nothing to sign.
 
 ## After — both screens, in Spanish
@@ -289,7 +290,7 @@ mueven nombres y las concordancias que arrastran.
 |---|---|---|
 | **`B = Duván` → `B = Astrid`.** Las diez terceras personas de la ficha de A pasan a *she/her*: cabecera, restricciones 2 y 3, «lo que se pierde», tres celdas de exponentes, la lista de cierre y el turno de la carta | ficha A, cabecera y carta | CAUSA y CUIDA, que estaban 3-0 y 3-0 a favor de los hombres en las dieciséis fichas |
 | **Édgar y Marcela se intercambian el vehículo.** La moto de las 11:40 —el recurso— es de Marcela; el carro que no vuelve —el estorbo— es de Édgar | datos de A, reloj y datos de B, un exponente de B | cierra el **pendiente 2** de la pasada anterior («las dos mujeres nombradas fuera de escena son los dos estorbos y el único hombre nombrado es el único recurso») sin tocar §2, §5 ni §10 del motor: un carro sigue siendo un carro |
-| **El dato oculto nº 1 de B se reescribe** para no dejar dos «he» seguidos con dueño distinto: *«His eleven eleven message is on your phone, and you have not said a word about it.»* | ficha B | legibilidad · +1 palabra de prosa (448 → 449) |
+| ~~**El dato oculto nº 1 de B se reescribe**~~ — **declarado y NO aplicado; ver `fase12-equidad-aplicada.md` §0.** La frase declarada borraba el dato «no car back before four». El choque de terceras personas se cerró el 22 ago 2026 en el dato oculto **nº 2**: `him` → `Fabián` | ficha B | legibilidad · 0 palabras de prosa |
 | **Las dos reglas del cierre dejan de tener género:** *Say the other one's line…* y *Nobody nods their way through* | cierre común | valen para las ocho parejas, no solo para esta |
 
 **El pendiente 1 de la pasada anterior —«el cuidado… se cierra donde es barato: rol A de la nº 5 en
@@ -352,9 +353,55 @@ la pasada: **ROLE A 444 · ROLE B 449**, techo 450.
 - **Cambio 1 del informe de nivel** (la carta dice *«her fourth turn ends — global turn 5»*, y
   con A hablando primero el cuarto turno de ella es el global 8). No es banda fuera de §4 —7 min
   y 9 turnos por rol están dentro— ni estructura fuera de A2 ni vocabulario. **Sin tocar.**
-- **Cambio 2 del informe de nivel** (falta `How many are coming back at …?` en la fila `the pot,
-  and how many`, y sin él el ancla `present-continuous-future-a2` queda sin exponente).
-  Es andamiaje, no nivel. **Sin tocar.**
+- ~~**Cambio 2 del informe de nivel** (falta `How many are coming back at …?`).~~ **APLICADO en la
+  sexta pasada, abajo.** Se dejó sin tocar dos veces, y las dos simulaciones siguientes lo cazaron:
+  es el hueco que mata a la pareja floja en el turno 17.
 - **Las once sustituciones léxicas de §3 del informe de nivel** (nº 4, 6, 8, 9, 11, 12, 14, 16,
   17, 18, 20): modismos, metáforas y un `the jar` que no existe en ninguna ficha. Son legibilidad,
   no estructura fuera de A2. **Sin tocar.**
+
+---
+
+## Sexta pasada (22 ago 2026) — carga y muerte en el turno 17
+
+Sale de `fase11-veredicto.md` (puertas 5 y 11, accionables 1, 3 y 4) y de `fase11-simulacion-4.md`
+(§D1 36,5 % · §D2 muere en el 17 · §D3 el callado gana con cinco palabras). Diagnóstico en
+`fase12-carga.md`. **El motor no se toca:** acto de habla, poder, quién arranca, desenlace, datos,
+carta y género están intactos. Prosa después: **A 445 · B 449**, techo 450.
+
+| # | Dónde | Qué se cambió | Por qué |
+|---|---|---|---|
+| 1 | A · exponentes, fila `asking how they get back` | pasa a `asking how many, and how they get back` y **gana la forma que faltaba**: `How many are coming back at …?` | §D2: A no tenía forma para preguntar **su propio objetivo**. Preguntaba dos veces en español (turnos 13 y 15) y en el 17 se salía del papel. Nueve filas siguen siendo nueve |
+| 2 | A · `The lunch happened if`, oración 1 | `She told you how many come back, before what hour, and who rides and who walks.` → `You said what you lose tonight if that number comes late, and what Monday and Tuesday cost you.` | §D3: el criterio de éxito de A era **recepción**. Un callado lo cumplía con tres preguntas cortas. Ahora empieza por algo que solo puede producir él |
+| 3 | cierre · `Only A can say` | las tres líneas de A dejan de ser datos y llevan dentro **lo que cuestan**: la segunda gallina que se pierde esta noche, y el almuerzo del lunes y el martes | §D3: «la única pieza a prueba de callado es la que viene de la carta, porque es una obligación y no un dato». Un dato cabe en tres palabras; un precio, no |
+| 4 | cierre · reglas | de cuatro a **cinco**. Entra *Yeah* en la lista de asentimientos prohibidos —con él se firmaba A3 en la simulación— y entra `That works`. Regla nueva: **un número sin hora no es una línea, y nada sale de este patio gratis** | §D3: `Yeah` no estaba en la lista · §D4: el atajista cumplía la restricción 3 con dos datos falsos porque nadie le pedía precio |
+| 5 | cierre · encabezado de las reglas | fuera *«and they're what make this one different from the other seven»* | ya no es cierto: los escenarios 6 y 7 reparten el cierre igual desde hoy |
+
+**Lo que esto NO arregla, y se deja escrito:** el atajista sigue ganando con dos datos falsos
+(puerta 2, reserva del acta), y la carta sigue diciendo *«her fourth turn ends — global turn 5»*
+cuando el cuarto turno de ella es el global 8. Ninguna de las dos es carga.
+
+---
+
+## Séptima pasada (22 ago 2026) — el registro, que no estaba escrito
+
+Sale de `fase11-veredicto.md` puerta 9 y accionable nº 9: **este era el único de los ocho que no
+decía su registro en ninguno de sus dos roles**. Detalle en `fase12-cuota-registro.md`. **El motor
+no se toca:** actos, poder, quién arranca, desenlace, minutos, turnos, datos, carta, vocabulario,
+cierre y las formas de los exponentes están intactos. Prosa después: **A 446 · B 450**, techo 450.
+
+| # | Dónde | Qué se cambió | Por qué |
+|---|---|---|---|
+| 1 | cabecera de A | `**No boss here.**` → `**Informal. No boss here.**` | los otros siete abren con la palabra del registro en negrita —*Polite*, *Formal*, *Informal*, *Counter, formal*— y este abría con el poder, que es otra cosa. Cuesta **una** palabra de prosa: 445 → 446 |
+| 2 | cabecera de B | `**No boss here — …**` → `**Informal. No boss here — …**` | igual, y con el mismo coste: 449 → 450, que es el techo exacto. Este rol **se queda sin margen**: la próxima palabra que entre en su prosa tiene que salir de otro sitio |
+| 3 | exponentes de los dos roles | columna **`register`** al final de las 18 filas: `informal` para lo que solo se le dice a un amigo —consejo, queja, apertura, lo que te cuesta— y `neutral` para lo que se diría igual en un mostrador —el no físico, el número, la condición, la propuesta— | §2 del blueprint pide el andamiaje «con su uso y su registro», y el modelo de datos lo escribe: `exponents: { form, use, register }`. La columna `what it does here` era el `use`; el `register` no estaba |
+
+**Aviso de conjunto, y no es de este escenario.** El acta dice que este es «la única ficha cuya
+tabla de exponentes no lleva columna `register`». **Es al revés: no la llevaba ninguna de las
+dieciséis** —las ocho abren su tabla con `| function | form | what it does here |`, verificado por
+búsqueda literal—. Lo que este escenario tenía de único era no declarar el registro en la cabecera.
+Con esta pasada es el **primero** que cumple el modelo de datos, y quedan **catorce fichas sin la
+columna**: eso es un pendiente del conjunto, no un arreglo de aquí, y se deja escrito para que
+nadie lo dé por cobrado. La columna va **al final** a propósito: `fase11-scripts/extraer-conjunto.mjs`
+lee `what it does here` por posición, y meterla en medio le habría cambiado el dato a todo el que
+mide sobre ese extracto.

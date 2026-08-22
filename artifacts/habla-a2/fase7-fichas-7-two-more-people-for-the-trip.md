@@ -82,22 +82,22 @@ fichas la señalan y ninguna la copia.
 ### Your toolkit
 Blocks **1** `[grants]`: he came down to you. **2**, because tomorrow you share a car. **4** `[jargon]`: the reservation words are **yours**. **5**, the 600,000, three weeks ago. **6**, not Hernán's car. **7** `[grants]`. **8**, for your own rule. Not 3.
 
-### Say it here — use it or don't
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| asking | `Who exactly is …?` | open up a person you have never met |
-| asking | `Why didn't you tell me …?` | ask about a decision taken without you |
-| conditions | `If I don't have it tonight, I'll …` | say what happens when the name comes late |
-| conditions | `OK — but only if …` | say yes, and put a price on it |
-| refusing | `There are only six …` | refuse with the number in front, not your opinion |
+| asking about the people | `Who exactly is …?` | open up a person you have never met |
+| asking about the plan | `Why didn't you tell me …?` | ask about a decision taken without you |
+| changing one thing | `Wait — we didn't say that.` | stop it there, change one thing |
+| keeping the friendship | `I'm not angry, but …` | complain and still travel together tomorrow |
+| putting a price on a yes | `OK — but only if …` | say yes, and put a price on it |
+| saying what happens if | `If I don't have it on …, I'll …` | say what happens when the day comes and the thing isn't there — the name tonight, the money on his day |
+| six beds, six names | `There are only six …` | refuse with the number in front, not your opinion |
 | the debt | `You haven't paid me yet.` | say it once, and don't fight about it |
-| the friendship | `I'm not angry, but …` | complain and still travel together tomorrow |
-| the message | `That's it — I'll send …` | say his part is fine, and send it |
-| the message | `Wait — we didn't say that.` | stop it there, change one thing |
+| the message you send | `That's it — I'll send …` | say his part is fine, and send it |
 
 ### You did it if
-Kevin heard the beds and the gate list, with figures · the 100,000 has a date · you left with a fact you didn't have at 7:20 · the no was yours, not doña Nubia's · what is still open was said, with a name and a time · you talked about money, and tomorrow you still travel together.
+Kevin heard the beds and the gate list, with figures · the 100,000 has a date with a price on it · you each left with a fact you didn't have at 7:20 · the no was yours, not doña Nubia's · what is still open was said, with a name and a time · you talked about money, and tomorrow you still travel together.
 
 ---
 
@@ -110,7 +110,7 @@ Kevin heard the beds and the gate list, with figures · the 100,000 has a date �
 
 **You want** · You came down to get a spot for Sebastián and Andrea — both of them, or one. And you need more time for the 100,000: Tuesday the 25th.
 
-**And a reason you can repeat** · Your twenty minutes with Andrea start now. If nobody goes, you tell her tonight, to her face. And the reason has to be yours: "Valentina said no" is not enough: then Andrea asks why, and she calls Valentina.
+**And a reason you can repeat** · Andrea gets here in twenty minutes. If nobody goes, you tell her tonight, with your own reason — not with Valentina's.
 
 **You can't**
 1. Pay the 100,000 today. The 200,000 in your pocket are Sebastián's and Andrea's.
@@ -157,19 +157,19 @@ Kevin heard the beds and the gate list, with figures · the 100,000 has a date �
 ### Your toolkit
 Blocks **1** `[asks]`, because you open, and you open with something uncomfortable. **2**. **3** `[receives]`: reservations, ID numbers and gate lists are **her** words, not yours, so ask. **5**, two weekends moved because of you. **7**, no money tonight, and three things to offer instead. **8**. Not 4, not 6.
 
-### Say it here — use it or don't
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| asking | `What do I say to …?` | get an answer you can repeat outside |
-| asking | `When did that change?` | open the half of the mess that isn't yours |
-| conditions | `If you …, I'll …` | something for something, in one sentence |
-| owning it | `I know it's last minute, but …` | put the lateness in front before she does |
-| owning it | `It's my fault, but …` | own your half, and keep what you came for |
-| the date | `Can I pay you on …?` | ask for one exact day, not "soon" |
-| the facts | `They paid me on …` | a fact with its day on it |
-| the friendship | `We're good, right?` | make sure tomorrow's car is not silent |
-| the message | `OK — I'll say it like this: …` | say your part of the message out loud, whole |
+| asking what changed | `When did that change?` | open the half of the mess that isn't yours |
+| keeping the friendship | `We're good, right?` | make sure tomorrow's car is not silent |
+| owning the lateness | `I know it's last minute, but …` | put the lateness in front before she does |
+| owning your half | `It's my fault, but …` | own your half, and keep what you came for |
+| saying your part out loud | `OK — I'll say it like this: …` | say your part of the message out loud, whole |
+| something for something | `If you …, I'll …` | something for something, in one sentence |
+| the day you pay | `Can I pay you on …?` | ask for one exact day, not "soon" |
+| the words for outside | `What do I say to …?` | get an answer you can repeat outside |
+| when they paid you | `They paid me on …` | a fact with its day on it |
 
 ### You did it if
 Valentina heard what tonight costs you, with a figure and a day · the 100,000 has one exact date, said in the group · one of your three came out, because it fitted · you know which car leaves at 8:00 and who rides in it · you have a reason for Andrea · what is still open was said, with a name and a time · you talked about money, and tomorrow you still travel together.
@@ -186,7 +186,7 @@ Valentina heard what tonight costs you, with a figure and a day · the 100,000 h
 |---|---|
 | Room | **1 more person** · one extra camping mat |
 | Price | **150,000 pesos** *(a hundred and fifty thousand)* · both nights · **on your reservation, not on his** |
-| Who says yes | the building manager · no answer at night |
+| Who says yes | the person in charge of the house · no answer at night |
 | When you find out | her question to him early tomorrow · her call to you **before 7:00 a.m.** |
 | What she wants now | **full name + ID number**, to have it ready |
 
@@ -195,7 +195,7 @@ Valentina heard what tonight costs you, with a figure and a day · the 100,000 h
 | word | what it is | here |
 |---|---|---|
 | a camping mat | a thin bed you put on the floor | the seventh person, if there is one · not a bed |
-| the building manager | the person who says yes or no about the building | why nothing closes tonight |
+| the person in charge of the house | the one who says yes or no about the house | why nothing closes tonight |
 
 > **Nothing here helps you if you open it early.** It only gives you more work: the money, and a name for doña Nubia tonight. And you have to change something you already said out loud. Kevin learns only what you tell him. You decide how much.
 
@@ -203,13 +203,26 @@ Valentina heard what tonight costs you, with a figure and a day · the 100,000 h
 
 ## Both screens — how it ends
 
-**It ends like this: each of you says your part of the message for the WhatsApp group out loud. Kevin says point 2. Valentina says points 1 and 3. Valentina says yes to Kevin's part, or changes one thing in it. Then Valentina sends the message.** First, you both have to answer these three things out loud:
+**Each of you says three things out loud. Six in total. Nobody says the other person's three. Then Valentina sends the message to the WhatsApp group.**
 
-1. Tomorrow at 8:00: which cars go, and who goes in each car.
-2. Tonight: who calls Andrea, who calls Sebastián, who calls doña Nubia.
-3. What is not decided yet, your next call tomorrow, and your plan B if nobody answers before 7:00 a.m.
+**Only Valentina can say:** how many beds there are, how many names and ID numbers the gate list
+carries, and who can change it · the 150,000, and whose reservation the extra person goes on ·
+what is not decided yet, the 7:00 a.m. call, and the plan B if nobody answers before it.
 
-**The message has to say all three things. It also has to say two numbers: how many people go, and how many cars leave.** When Valentina sends it, it's over.
+**Only Kevin can say:** the full name and the ID number he sends tonight, and who he gets them
+from · the exact day he pays the 100,000, and what he does if the money is not there that day ·
+what he tells Sebastián and what he tells Andrea tonight, and before what hour.
+
+**Together, once:** which cars leave at 8:00, and who rides in each one. Then Valentina says yes to
+Kevin's three, or changes one thing in them, and sends the message.
+
+**Four rules:**
+- Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again.
+- A day is not closed until the other one says what happens if it slips. The 100,000 needs two mouths, not one.
+- The message says two numbers — how many people go, and how many cars leave — and the two have to be the ones you just said out loud. If they aren't, say them again.
+- Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are none of the six lines.
+
+**Six lines, or the message doesn't go.** This one does not close tonight, and that is the plan: it closes with the two calls tomorrow, before 7:00 a.m.
 
 ## After — both screens, in Spanish
 
@@ -236,9 +249,9 @@ grammarReferences: [
   { level: 'a2', slug: 'past-simple-irregular', title: 'Past Simple Verbos Irregulares en Inglés A2',
     rationale: 'Sostiene «They paid me on…» pay→paid no está entre los 30 verbos que lista el tema, pero el tema sí lo usa: al enseñar la pronunciación de said avisa de que /sɛd/ rima con bed y NO con paid. El martes es el hecho consumado con el que Kevin defiende su posición sin poder deshacerlo, y el día lo pone él, no la tabla.' },
   { level: 'a2', slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
-    rationale: 'Sostiene «If you…, I\'ll…» de Kevin y «If I don\'t have it tonight, I\'ll…» de Valentina: los dos son if + presente en la condición y will en el resultado, que es la regla de oro del tema. El de Valentina llevaba can\'t en el resultado, donde el tema solo autoriza can/must/have to dentro de la cláusula if; con I\'ll el anclaje deja de mentir. Sin la forma plena, conceder poniendo una condición se resuelve regateando, y regatear es B1.' },
+    rationale: 'Sostiene «If you…, I\'ll…» de Kevin y «If I don\'t have it on …, I\'ll…» de Valentina: los dos son if + presente en la condición y will en el resultado, que es la regla de oro del tema. El de Valentina llevaba can\'t en el resultado, donde el tema solo autoriza can/must/have to dentro de la cláusula if; con I\'ll el anclaje deja de mentir. Sin la forma plena, conceder poniendo una condición se resuelve regateando, y regatear es B1.' },
   { level: 'a2', slug: 'will-future', title: 'El Futuro con Will en Inglés A2',
-    rationale: 'Sostiene «That\'s it — I\'ll send…» y el reparto de quién llama a quién esta noche, que es el punto 2 del cierre. El uso «promesa» y el «decisión espontánea» del tema son exactamente el registro de ese turno.' },
+    rationale: 'Sostiene «That\'s it — I\'ll send…» y el reparto de quién llama a quién esta noche, que es la tercera línea de Kevin en el cierre. El uso «promesa» y el «decisión espontánea» del tema son exactamente el registro de ese turno.' },
   { level: 'a2', slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
     rationale: 'Sostiene los cuatro exponentes con conector que quedan en las dos fichas, y los cuatro son con but: «I know it\'s last minute, but…», «It\'s my fault, but…», «I\'m not angry, but…» y «OK — but only if…». But es lo que impide que el no cierre la conversación. §4 lista «dar una razón» entre lo que se le puede pedir a un A2, y esa razón la da because, que no vive en las tablas de exponentes de este escenario: vive en el bloque 5 de la caja de herramientas («It\'s important for me because…», «I need it because…»), que los dos roles tienen asignado. so no está en la caja como conector causal, y por eso no se le reclama.' },
   { level: 'a1', slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
@@ -386,3 +399,26 @@ devuelve a la ficha una oración de tercera persona sobre un ausente, que es exa
 que esta pasada quita. Los dos anclajes que faltan (`verb-to-be`, `telling-time`, nivel §6) no
 entran aquí: este encargo era quirúrgico sobre líneas decibles, nivel y vocabulario, y añadir
 entradas a `grammarReferences` no es ninguna de las tres.
+
+---
+
+## Pasada de carga (22 ago 2026) — el cierre reparte por coste, no por cuenta
+
+Sale de `fase11-veredicto.md` (puerta 5) y de `fase11-simulacion-7.md` (pareja floja **35/65**,
+muerte en el turno global 12, y «Kevin consigue su fecha asintiendo ella»). Diagnóstico en
+`fase12-carga.md`. **El motor no se toca:** `quejarse` + `rechazar`, poder a>b, arranca Kevin,
+desenlace **aplazado**, datos, carta, nombres y género están intactos. Prosa después:
+**A 449 · B 442**, techo 450.
+
+| # | Dónde | Qué se cambió | Por qué |
+|---|---|---|---|
+| 1 | cierre | el reparto pasa de **«Kevin dice el punto 2, Valentina los puntos 1 y 3»** a **tres líneas cada uno**. Las tres de Kevin dejan de ser baratas: nombre y cédula **con de quién los saca**, el día del pago **con lo que hace si ese día no está la plata**, y qué le dice a Sebastián y qué a Andrea, cada una con su hora | el cierre repartía por número de puntos y no por coste: todo lo de ella eran seis cifras, una lista de portería y una carta de cinco filas; todo lo de él, dos nombres y una fecha. Con jugadores flojos ese reparto se convierte en silencio del lado de ella — 35 % — y en un `OK` que le regala a él la mitad de su objetivo |
+| 2 | cierre · regla nueva | **«un día no está cerrado hasta que el otro dice qué pasa si se corre. Los 100.000 necesitan dos bocas, no una.»** | la deuda entera del escenario se resolvía sin que la acreedora la mencionara **una sola vez**: `You haven't paid me yet.` estaba impreso y no se produjo nunca. Ahora la fecha de Kevin no cuenta hasta que ella le pone precio |
+| 3 | cierre · regla nueva | **las dos cifras del mensaje tienen que ser las que los dos acaban de decir en voz alta** | en la simulación el mensaje salió con dos cifras **falsas** —siete personas contadas como seis, y un carro que está en el taller— y nada en las dos fichas lo atrapaba. El cierre pedía dos números, no pedía que fueran los suyos |
+| 4 | cierre · reglas | entra la prohibición de asentir (*Yeah*, *sure*, *okay*, *fine*, *that works*) y la de decir la línea del otro | el `OK. Andrea. Is OK.` del turno 12 es el turno en el que la conversación se muere: concede el cupo sin cobrar nada |
+| 5 | A · exponentes, fila `conditions` | `If I don't have it tonight, I'll …` → `If I don't have it on …, I'll …` | la forma solo servía para esta noche, y lo que hay que poner a precio es **el día de él**, el martes 25. Con `on …` la misma forma cubre el nombre de esta noche y la plata del martes. El *rationale* de `first-conditional` se ha sincronizado |
+| 6 | A · `You did it if` | `the 100,000 has a date` → `the 100,000 has a date with a price on it`; `you left with a fact you didn't have at 7:20` → `you each left…` | el primero, para que su criterio de éxito no se cumpla asintiendo. El segundo, porque el criterio se cumplía **del revés**: el que se llevaba hechos nuevos era él |
+
+**Lo que esto NO arregla:** el andamiaje para reaccionar a una cifra de seis dígitos (la fuga al
+español nº 1) y el bloque denso de 241 caracteres de la puerta 10. No son carga, y no son de
+escenarios.

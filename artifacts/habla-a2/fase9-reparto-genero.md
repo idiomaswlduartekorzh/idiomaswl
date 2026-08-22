@@ -153,6 +153,11 @@ pero sin ellos el rol queda incoherente):
   *«His eleven eleven message is on your phone, and you have not said a word about it.»* Es la única
   frase del set que cambia de forma, y cuesta **+1 palabra** de prosa: ROLE B pasa de 448 a **449**,
   dentro del techo de 450 de §11, medido con el contador canónico.
+  **⚠ Corrección (22 ago 2026): esta reescritura NUNCA se aplicó a la ficha.** Se declaró aquí y en
+  la bitácora del propio archivo, y no estaba en el cuerpo de ROLE B. Además no era aplicable tal
+  cual: borra el dato duro «no car back before four» y abre un `His` sin dueño. El defecto que
+  perseguía (dos terceras personas seguidas con dueño distinto) se cerró de otra forma —`him` →
+  `Fabián` en el dato oculto nº 2— en `fase12-equidad-aplicada.md` §0 y §1.3.
 - `fase8-fichas-4nuevo.md`, dos de las cuatro reglas del cierre común llevaban género masculino
   genérico: *«Say his line for him… he says it again»* y *«Nobody nods his way through»*. Pasan a
   `the other one's line … they say it again` y `Nobody nods their way through`. Valen para las ocho
@@ -304,8 +309,9 @@ escenario, y de eso ya se han hecho dos pasadas de más.
 
 ## Archivos tocados
 
-- `artifacts/habla-a2/fase8-fichas-4nuevo.md` — Duván → **Astrid**; Édgar ↔ Marcela; dato oculto 1
-  de B; dos reglas del cierre sin género; prosa de ROLE B 448 → **449**; adenda al final.
+- `artifacts/habla-a2/fase8-fichas-4nuevo.md` — Duván → **Astrid**; Édgar ↔ Marcela; ~~dato oculto 1
+  de B~~ (**no se aplicó**, ver la corrección de §3); dos reglas del cierre sin género; adenda al
+  final.
 - `artifacts/habla-a2/fase7-fichas-8-cancel-the-gym-i-am-leaving.md` — Milena → **Mauricio**; cuatro
   pronombres de la ficha de Tatiana; tres concordancias en español; adenda al final.
 - `artifacts/habla-a2/fase7-fichas-5-late-again-on-monday.md` — el vecino del 3 → **la vecina del

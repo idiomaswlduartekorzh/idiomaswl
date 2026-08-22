@@ -77,19 +77,19 @@ Block 3: three papers, and one name is not on your screen.
 Block 4: *road work*, *daycare*, *delivery note* are yours.
 Block 6: Saturday mornings are the one thing you don't explain.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| apologizing | `I'm sorry about…` | one apology, with the fact in front of you, then stop |
-| asking about the papers | `Which paper is that, and who…?` | the three papers sound the same. They are not the same |
-| asking what is on the desk | `What are the keys for, doña Amparo?` | ask about the two things on the desk before you talk about yourself |
-| offering what you can do | `The neighbor in 3 can take…` | the one thing that moves an hour that does not move |
-| promising next Monday | `I can start at five to seven.` → `I'll start at… from next Monday.` | with `can` you offer it · with `will` somebody can check it · the same time in both halves |
-| saying what cannot move | `I have to leave Matías at the daycare at…` | an hour with a reason, not a complaint |
-| saying what changed | `My bus used to arrive at ten to seven — now…` · `The road work started on…` | two times and a date. People understand times |
-| saying what it costs | `Then I pick up her two boys on…` · `And what does this cost…?` | say what you pay, and ask what she pays — that's point 3 of the close |
-| saying what you want | `I'd like that job.` | say it once, in clear words. Nobody guesses it |
+| an hour that cannot move | `I have to leave Matías at the daycare at…` | an hour with a reason, not a complaint |
+| asking what the keys are for | `What are the keys for, doña Amparo?` | ask about the two things on the desk before you talk about yourself |
+| naming the paper | `Which paper is that, and who…?` | the three papers sound the same. They are not the same |
+| one apology | `I'm sorry about…` | one apology, with the fact in front of you, then stop |
+| putting a name on the table | `The neighbor in… can take…` | the one thing that moves an hour that does not move |
+| saying the job out loud | `I'd like…` | say it once, in clear words. Nobody guesses it |
+| the price, both ways | `Then I pick up her two boys on…` · `And what does this cost…?` | say what you pay, and ask what she pays |
+| what changed in August | `My bus used to arrive at… — now…` · `The road work started on…` | two times and a date. People understand times |
+| what you can start | `I can start at…` → `I'll start at…, from…` | with `can` you offer it · with `will` somebody can check it · the same time in both halves |
 
 ### You did it if
 1. Your first question was open, about the two things on the desk.
@@ -161,19 +161,19 @@ Block 4 `[jargon]`: five of your words are not on his screen.
 Block 7 `[grants]`: for what you can't give.
 Block 6 matters most: one question you don't answer.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| asking the whole story | `What happened this morning?` · `And what can you…?` | two open questions: one about this morning, one about next Monday. Then wait |
-| clearing the air | `I'm not angry.` | he thinks you are angry — show him you are not |
-| giving the rule, not the fight | `I have to write…` | it is the rule, not your decision |
-| offering, with a condition | `If you write this line today, I can…` | in one sentence: what you need, and what you give |
-| putting the two things on the desk | `Have a seat, Camilo.` · `You fill out this line, not me.` | say why you called him. Then point at the line |
-| saying it is not enough, and your price | `That helps, but I need…` → `Two mornings, Saturdays, eight to twelve, and I…` | say it falls short, then the number, the day and who teaches |
-| saying what it costs | `Nobody pays me for those two nights.` · `That costs you…` | your price, and his — that's point 3 of the close |
-| saying why him | `You know this warehouse better than…` | finish it with the store, not with a name · this is about the warehouse, not about the three Mondays |
-| trying another way | `What if we…?` · `Maybe we can…` | put a third door on the table before either of you shuts one |
+| asking, and then waiting | `What happened this morning?` · `And what can you…?` | two open questions: one about this morning, one about next Monday. Then wait |
+| he thinks you're angry | `I'm not angry.` | he thinks you are angry — show him you are not |
+| naming your price | `That helps, but I need…` → `I need… mornings on…, and I…` | say it falls short, then the number, the day and who teaches |
+| one more door | `What if we…?` · `Maybe we can…` | put a third door on the table before either of you shuts one |
+| the rule, not the fight | `I have to write…` | it is the rule, not your decision |
+| the two things on the desk | `Have a seat, Camilo.` · `You fill out this line, not me.` | say why you called him. Then point at the line |
+| what it costs each of you | `Nobody pays me for…` · `That costs you…` | your price, and his |
+| why him | `You know this warehouse better than…` | finish it with the store, not with a name · this is about the warehouse, not about the three Mondays |
+| yes, with a condition | `If you write this line today, I can…` | in one sentence: what you need, and what you give |
 
 ### You did it if
 1. The keys and the sheet were on the desk before you spoke.

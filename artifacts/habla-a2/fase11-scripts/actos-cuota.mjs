@@ -17,8 +17,11 @@ const M={
 '6B.1':'proponer-alternativa','6B.2':'conceder-con-condicion','6B.3':'rechazar','6B.4':'dar-dato/razon','6B.5':'proponer-alternativa','6B.6':'poner-limite','6B.7':'dar-mala-noticia','6B.8':'dar-dato/razon','6B.9':'pedir-aclaracion',
 '7A.1':'pedir-aclaracion','7A.2':'quejarse','7A.3':'poner-limite','7A.4':'conceder-con-condicion','7A.5':'rechazar','7A.6':'quejarse','7A.7':'quejarse','7A.8':'cierre-ritual','7A.9':'rechazar',
 '7B.1':'pedir-aclaracion','7B.2':'pedir-aclaracion','7B.3':'negociar','7B.4':'disculparse','7B.5':'disculparse','7B.6':'pedir-favor','7B.7':'dar-dato/razon','7B.8':'cierre-ritual','7B.9':'cierre-ritual',
-'8A.1':'pedir-favor','8A.2':'pedir-aclaracion','8A.3':'pedir-aclaracion','8A.4':'quejarse','8A.5':'poner-limite','8A.6':'dar-dato/razon',
-'8B.1':'pedir-favor','8B.2':'pedir-aclaracion','8B.3':'dar-dato/razon','8B.4':'conceder-con-condicion','8B.5':'rechazar','8B.6':'poner-limite','8B.7':'disculparse',
+// esc 8, 22 ago: A gana dos filas de `asking again` (insistir) — ver fase12-cuota-registro.md
+'8A.1':'insistir','8A.2':'insistir','8A.3':'pedir-favor','8A.4':'pedir-aclaracion','8A.5':'pedir-aclaracion','8A.6':'quejarse','8A.7':'poner-limite','8A.8':'dar-dato/razon',
+// esc 8, 22 ago: B gana `asking again for the reason` (insistir) y `offering another way` deja de ser
+// una concesión condicionada — la condición se mudó a la fila del no, y la fila propone de verdad.
+'8B.1':'insistir','8B.2':'pedir-favor','8B.3':'pedir-aclaracion','8B.4':'dar-dato/razon','8B.5':'proponer-alternativa','8B.6':'rechazar','8B.7':'poner-limite','8B.8':'disculparse',
 };
 const CAT=['pedir-favor','rechazar','negociar','disculparse','quejarse','proponer-alternativa','dar-mala-noticia','insistir','poner-limite','pedir-aclaracion','conceder-con-condicion','recomendar'];
 const DECL={1:['rechazar','conceder-con-condicion'],2:['dar-mala-noticia','recomendar'],3:['pedir-favor','conceder-con-condicion'],4:['recomendar','insistir','conceder-con-condicion'],5:['disculparse','conceder-con-condicion'],6:['dar-mala-noticia','proponer-alternativa'],7:['quejarse','rechazar'],8:['pedir-favor','rechazar','proponer-alternativa']};
