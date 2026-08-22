@@ -221,6 +221,22 @@ function checkModule(mod) {
     fail(id, '2 longitud de la clave', `la correcta es la más larga en ${masLarga}/${items.length} (${fmt(stats.masLargaPct)} %), máximo 30 %`)
   }
 
+  // La cara que faltaba: **la clave como la más corta en solitario**. La puerta 2 solo
+  // miraba el extremo largo, así que un ítem cuya respuesta correcta era la única opción
+  // breve —`masks` de 5 letras frente a 8, 8 y 9— pasaba sin que nada se quejara. La
+  // heurística «elige la más corta» es tan barata como «elige la más larga», y en ítems de
+  // palabra suelta es la única que hay. Lo que no se mide, vuelve.
+  let masCorta = 0
+  for (const q of items) {
+    const lens = (q.options || []).map((o) => (o || '').length)
+    const min = Math.min(...lens)
+    if (lens[q.answer] === min && lens.filter((l) => l === min).length === 1) masCorta++
+  }
+  stats.masCortaPct = pct(masCorta, items.length)
+  if (stats.masCortaPct > 30) {
+    fail(id, '2 longitud de la clave', `la correcta es la más corta en ${masCorta}/${items.length} (${fmt(stats.masCortaPct)} %), máximo 30 %`)
+  }
+
   // ── 3 · solape léxico con el texto, POR LAS DOS CARAS ──
   //
   // La segunda cara la enseñó el bloque Information and Ideas del primer módulo. Al
@@ -452,7 +468,7 @@ for (const mod of modules) {
   const errs = failures.filter((f) => f.mod === mod.id)
   console.log(`${errs.length ? '❌' : '✅'} ${mod.id} · ${mod.variant} · ${mod.items.length} ítems`)
   if (verbose && s.letras) {
-    console.log(`   claves ${LETTERS.map((l) => `${l}:${s.letras[l]}`).join(' ')} · clave más larga ${fmt(s.masLargaPct)} % · solape alto ${fmt(s.solapePct)} % · solape bajo ${fmt(s.solapeBajoPct)} %`)
+    console.log(`   claves ${LETTERS.map((l) => `${l}:${s.letras[l]}`).join(' ')} · clave más larga ${fmt(s.masLargaPct)} % · más corta ${fmt(s.masCortaPct)} % · solape alto ${fmt(s.solapePct)} % · solape bajo ${fmt(s.solapeBajoPct)} %`)
     console.log(`   dominios ${DOMAIN_ORDER.map((d) => `${d}:${s.dominios?.[d] ?? 0}`).join(' ')} · temas ${Object.entries(s.temas || {}).map(([t, n]) => `${t}:${n}`).join(' ')}`)
   }
   for (const e of errs) console.log(`   · [${e.gate}] ${e.msg}`)

@@ -144,7 +144,12 @@ import type { SatItemMeta } from '../module-types'
  * parecen relleno de estilo. Quien acorte un texto por longitud, que empiece por otra:
  *
  * - q01 · «unchanged in depth» — sin ella, `reverses` y `amplifies` se defienden.
- * - q03 · «on time and in the place the form requires» — sin ella, `displaces` se defiende.
+ * - q03 · «saying each time exactly what it said before» (cierra `generalizes` y
+ *   `overloads`) y «one word closes every two-line couplet» (cierra `exhausts`: la
+ *   repetición es de la forma y el persa la cumple igual). «on time and in the place the
+ *   form requires» sostiene la premisa común de las cuatro opciones —todas son pérdidas
+ *   que dejan intacto el retorno—. Actualizado en la sexta versión: hasta entonces esta
+ *   línea cerraba `displaces`, opción que ya no existe.
  * - q04 · «The resemblance is exact; the order is not» (cierra `imitates`) y «nothing links
  *   it to them, no drawing, no letter, no recorded visit» (cierra `inspires`, que es el
  *   distractor fino: acepta la fecha y da el paso de más, de «fue antes» a «de ahí
@@ -194,8 +199,10 @@ import type { SatItemMeta } from '../module-types'
  * Se permutan las cuatro opciones de dos ítems y viajan con ellas sus cuatro razones.
  *
  * - **q03** · clave C → **D**. Permutación: `sharpens` y `flattens` intercambian sitio;
- *   `restores` y `displaces` se quedan. Las cuatro son de 8-9 caracteres, así que la
- *   posición no crea pista de longitud, y ninguna de las cuatro aparece en el pasaje.
+ *   `restores` y `displaces` se quedan. (Historia: la sexta versión cambió las cuatro
+ *   opciones de q03; de este párrafo solo sigue vigente la clave, **D**.) Las cuatro eran
+ *   de 8-9 caracteres, así que la posición no creaba pista de longitud, y ninguna de las
+ *   cuatro aparecía en el pasaje.
  * - **q08** · clave A → **D**. Permutación: la clave y la opción del tercero nunca
  *   expuesto intercambian sitio; las de la limpieza posterior y las obras barnizadas se
  *   quedan. Las cuatro comparten premisa y solo discuten la cola: tres cuerdas de 109
@@ -205,6 +212,124 @@ import type { SatItemMeta } from '../module-types'
  *
  * Reparto del bloque después del cambio: **A×2 B×2 C×2 D×2**. Claves vigentes, y son las
  * únicas que valen de aquí en adelante: **B, C, D, A, B, C, A, D**.
+ *
+ * ── Sexta versión: el abanico de q03 (defecto de conjunto q01/q03) ─────────
+ *
+ * Romper la familia de tres por q04 (cuarta versión) dejó un **par**, y el par seguía
+ * entero. q01 y q03 tenían las mismas cuatro ranuras y la clave en la misma:
+ *
+ *     ranura                                  q01         q03 (quinta versión)
+ *     pérdida que no toca la forma → CLAVE    masks       flattens
+ *     intensificador                          amplifies   sharpens
+ *     positivo                                explains    restores
+ *     niega la forma conservada               reverses    displaces
+ *
+ * En el mismo bloque y con dos ítems de por medio, quien resuelve q01 contesta q03 en diez
+ * segundos sin volver al texto: un ítem regalado y setenta segundos de propina. Y q02
+ * (`automatic`) paga la misma intuición en otro traje, así que **tres de los cuatro
+ * `words-in-context` premiaban «la forma se conserva, la sustancia se pierde»**.
+ *
+ * El texto no se toca: está bien y su evidencia ya vive entera por encima del hueco
+ * (tercera versión). Se rehace **el abanico**, con otro principio: **las cuatro opciones
+ * son pérdidas y las cuatro dejan intacto el retorno** —cada pareado, puntual, en el lugar
+ * que la forma pide—. La pregunta deja de ser «¿cuál de las cuatro es la pérdida que no
+ * toca la forma?» —que se contesta descartando el positivo, el intensificador y el que
+ * niega la forma, sin leer el tema— y pasa a ser «¿cuál de estas cuatro pérdidas nombra el
+ * texto?», que solo se contesta comparando lo que hace la palabra persa («moves as the
+ * poem goes») con lo que hace la inglesa («exactly what it said before»).
+ *
+ * Abanico nuevo: `generalizes` · `overloads` · `exhausts` · `flattens` (clave, **D**, la
+ * del plan). Ninguna es positiva, ninguna intensifica y ninguna mueve el estribillo de
+ * sitio: las tres ranuras que q01 enseña a descartar no existen aquí, de modo que el
+ * algoritmo de q01 no elimina ni una opción. Cada distractora es un camino real y cae por
+ * una cláusula distinta:
+ *
+ * - `generalizes` — quien supone que se busca una palabra ancha donde quepan las tres
+ *   acepciones. La versión hace lo contrario: «settles on one», «exactly what it said
+ *   before».
+ * - `overloads` — quien supone justo lo inverso, que esa única palabra carga con las tres
+ *   a la vez. Cae por la misma frase leída del otro lado: nunca dice más de lo que dijo.
+ * - `exhausts` — quien oye el defecto en la repetición y no en el sentido. La repetición
+ *   no la añade el inglés: es de la forma, y el persa la cumple igual —«one word closes
+ *   every two-line couplet»—.
+ *
+ * Longitudes: 11, 9, 8 y 8 caracteres, con la clave en 8 y acompañada por `exhausts`; ni
+ * la más larga ni sola en la más corta. Ninguna de las cuatro aparece en el pasaje. Dos
+ * son transparentes para un hispanohablante (`generalizes`, `exhausts`) y dos no
+ * (`overloads`, `flattens`), así que el parecido con el español tampoco señala a la clave.
+ *
+ * Lo que piden ahora los cuatro `words-in-context`: q01, una señal que se conserva entera
+ * y deja de distinguirse del fondo; q02, un adjetivo de manera deducido de tres conductas;
+ * q03, **cuál de cuatro pérdidas posibles es la que el texto nombra**; q04, la dirección
+ * del tiempo entre dos edificios que se parecen.
+ *
+ * Por **R2**, q03 vuelve entero a la cola de auditoría y su ciega se repite sobre estas
+ * cuatro opciones, no sobre las de la quinta versión. Clave sin cambios: **D**.
+ *
+ * ── q08 y el racimo de pintores: por qué NO se ha tocado ───────────────────
+ *
+ * El auditor de conjunto midió un racimo real: q08 y q11 comparten `painter`, `canvases`,
+ * `studio` y `unfinished`, el distractor B de q11 nombra literalmente el objeto de q08
+ * («the unfinished canvases … into the studio»), y con q18 son tres ítems del módulo en un
+ * museo. Se estudió mover q08 y se decidió **no moverlo**. Las razones, para que nadie lo
+ * intente sin leerlas:
+ *
+ * 1. Mover q08 no es cambiar palabras: es cambiar de oficio, y con el oficio se rehacen
+ *    los dos textos, las cuatro opciones, las cuatro razones y la ficha de hecho. La clave
+ *    única de este ítem cuelga de una cadena de cuatro cláusulas que habría que
+ *    reconstruir entera en el oficio nuevo: «exhibited two of the three», «He varnished
+ *    all three himself», «a painter who prices, varnishes, and sells a canvas has declared
+ *    it done» y «not in the two that hung on a wall, and not in the one that never did».
+ *    Ese es el arreglo de la cuarta versión, y es lo que se pone en juego.
+ * 2. La distractora B exige un oficio donde **algo pueda perderse después** —una limpieza
+ *    que se lleva pintura—. Los oficios que lo permiten (pintura, tapiz, manuscrito) son
+ *    los que devuelven el ítem al museo; los que no (ebanistería, relojería) dejan a B sin
+ *    camino y el ítem recupera el distractor muerto que la cuarta versión cerró.
+ * 3. Los dos oficios ajenos al museo que sí sostendrían las cuatro opciones chocan con
+ *    vecinos de este mismo bloque: un astillero, con los barcos de q05; un taller de
+ *    instrumentos, con la música de q07. Se cambiaría un racimo por otro.
+ *
+ * El cambio barato —`canvases` → `wood panels`, `studio` → `workshop`, `unfinished` →
+ * `incomplete`— quita las palabras compartidas y la colisión literal, pero deja en pie lo
+ * que de verdad emparenta los dos ítems: **obra de un pintor que una institución clasificó
+ * mal**. Por medio arreglo no compensa pagar otra vuelta a la cola de auditoría (R2) sobre
+ * el `cross-text-connections` más frágil del bloque. Recomendación: deshacer el racimo en
+ * **q11**, que no vive en este archivo y cuyo oficio no sostiene ninguna cadena de clave
+ * única.
+ *
+ * ── Séptima versión: la clave más corta de q01 ─────────────────────────────
+ *
+ * Medidas las cuatro opciones de cada ítem, q01 salía con la clave sola en el extremo
+ * corto: `reverses` 8, **`masks` 5**, `explains` 8, `amplifies` 9. Es una pista fina —una
+ * palabra suelta y tres caracteres— pero es de la misma familia que las que se han cerrado
+ * toda esta ronda, y **el guardián no la ve**: su puerta 2 solo comprueba si la clave es la
+ * opción **más larga**, nunca si es la más corta en solitario. Lo que no se mide, se
+ * repite.
+ *
+ * Se cambia una sola palabra: `masks` → **`obscures`**. Es la que menos mueve el sentido de
+ * las cuatro, porque es la que el propio ítem ya defendía: lo que le pasa al bache es que
+ * deja de distinguirse del fondo —«it no longer stands out from everything else the star is
+ * doing»—, y eso es exactamente oscurecer una señal, no alterarla. Ni el texto, ni el
+ * enunciado, ni las otras tres opciones, ni la clave (**B**, la del plan) se tocan; solo se
+ * reescribe la razón de la clave, que decía «está enmascarada».
+ *
+ * Comprobado después del cambio, contando letras: `reverses` 8, `obscures` 8, `explains` 8,
+ * `amplifies` 9. Tres de las cuatro miden lo mismo y la clave es una de esas tres, así que
+ * **no es la más larga ni la más corta en solitario**: ya no hay ningún extremo ocupado por
+ * una sola opción salvo el largo, que es de una distractora. Ninguna de las cuatro
+ * aparece en el pasaje —el texto dice «dimming», «wandering», «stands out», y ninguna de
+ * esas raíces está en las opciones—, y las cuatro siguen siendo transparentes para un
+ * hispanohablante, de modo que el parecido con el español no señala a ninguna. La metáfora
+ * de tapar tampoco choca con nada: q03 dejó de tener opciones de ocultar en la sexta
+ * versión.
+ *
+ * (En la tabla de la sexta versión, la ranura de la clave de q01 sigue escrita como `masks`
+ * porque así se midió el defecto de conjunto. Hoy esa ranura la ocupa `obscures`, con el
+ * mismo sentido.)
+ *
+ * Por **R2**, q01 vuelve a la cola de auditoría. La ciega de q01 puede reaprovecharse con
+ * cautela: cambia una palabra por un sinónimo, no el camino de ninguna de las cuatro
+ * opciones ni la razón por la que cada distractora falla.
  */
 
 export const items: MCQQuestion[] = [
@@ -217,7 +342,7 @@ export const items: MCQQuestion[] = [
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'reverses',
-      'masks',
+      'obscures',
       'explains',
       'amplifies',
     ],
@@ -246,9 +371,9 @@ export const items: MCQQuestion[] = [
       "Every translator of the Persian ghazal meets the same knot. The form turns on a refrain: one word closes every two-line couplet, and in the Persian that word moves as the poem goes — a door at the end of one couplet, a decision at the end of another, a departure at the end of the last. Much of the poem's motion comes from those turns. No single English word holds all three senses, so the translator settles on one and repeats it at the close of every couplet, on time and in the place the form requires, saying each time exactly what it said before. Whatever else such a version gets right, it ______ the refrain.",
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
-      'restores',
-      'displaces',
-      'sharpens',
+      'generalizes',
+      'overloads',
+      'exhausts',
       'flattens',
     ],
     answer: 3,
@@ -341,7 +466,7 @@ export const meta: SatItemMeta[] = [
       A:
         'El estudiante que elige esta lee «dimming it by as much or more» y entiende que la variación de la estrella le da la vuelta al bache: si las manchas oscurecen tanto o más, la señal quedaría anulada o invertida. El texto lo desmiente dentro de la misma oración del hueco, donde el bache sigue «unchanged in depth». Lo que cambia no es el tránsito, es lo que hay alrededor.',
       B:
-        'Correcta: la oración del hueco lo dice por partes. El bache «is still there in the record, unchanged in depth and still arriving on its own fixed cycle» —nada lo altera ni lo suprime— «but it no longer stands out from everything else the star is doing». Una señal que se conserva entera y deja de distinguirse del fondo está enmascarada, no tocada.',
+        'Correcta: la oración del hueco lo dice por partes. El bache «is still there in the record, unchanged in depth and still arriving on its own fixed cycle» —nada lo altera ni lo suprime— «but it no longer stands out from everything else the star is doing». Una señal que se conserva entera y deja de distinguirse del fondo queda oscurecida —tapada por lo que la estrella hace por su cuenta—, no alterada: el verbo describe lo que le pasa a la vista del bache, no al bache.',
       C:
         'Toma las manchas por una explicación alternativa del bache: si la estrella se apaga sola, el planeta sobra. El camino existe —las manchas imitan tránsitos de verdad—, pero el texto mantiene las dos cosas separadas y con relojes distintos: las manchas van «on a schedule of their own» y el tránsito sigue llegando «on its own fixed cycle». Ninguna da cuenta de la otra.',
       D:
@@ -376,13 +501,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Se queda en la mitad complaciente de lo que el texto acaba de decir —el traductor repite su palabra «at the close of every couplet, on time and in the place the form requires»— y concluye que la versión inglesa devuelve intacto lo que había. La misma oración sigue, y sigue por el otro lado: vuelve «saying each time exactly what it said before». Devolver una de las tres cosas no es devolverlas.',
+        'El estudiante que elige esta llega con una idea razonable de cómo se traduce una palabra de varias acepciones: si ninguna inglesa sirve para las tres, se busca una lo bastante ancha para que quepan todas. El texto dice que el traductor hace lo contrario, y lo dice dos veces en la misma oración: «No single English word holds all three senses, so the translator settles on one» —se queda con una y renuncia a dos— y esa palabra vuelve «saying each time exactly what it said before», que es lo contrario de vaga. La versión estrecha el estribillo; generalizarlo es la dirección opuesta.',
       B:
-        'Da por supuesto que un molde persa no cabe en inglés y que, si algo se pierde, será el sitio del estribillo: llegará tarde, o en mitad del pareado, o donde se pueda. El texto lo desmiente antes del hueco y con detalle —«at the close of every couplet, on time and in the place the form requires»—. La posición se conserva entera; lo que cambia es lo que se dice desde ella.',
+        'Es la lectura de quien se queda con el nudo del principio —«No single English word holds all three senses»— y supone que el traductor obliga igualmente a su palabra a cargar con las tres a la vez: una puerta, una decisión y una partida metidas en un solo término que revienta por el peso. La misma oración lo desmiente: el traductor «settles on one», y lo que la palabra hace cada vez que vuelve es decir «exactly what it said before». Nunca dice más de lo que dijo la primera vez, así que no está sobrecargada: está fija.',
       C:
-        'Toma la reducción por una ganancia: una sola palabra repetida golpearía más fuerte que una que cambia de sentido en cada pareado. Sería una lectura defendible de otro poema, no de este. El texto ha dicho antes de dónde viene aquí el trabajo del estribillo —de que la palabra se mueva mientras el poema avanza—, así que fijarla en un sentido le quita la función, no se la afila.',
+        'El estudiante que elige esta oye el defecto donde se oye casi siempre, en la repetición: la misma palabra al final de cada pareado, una vez y otra, acaba gastada. Pero la repetición no la añade el inglés. Es de la forma, y el persa la cumple igual —«one word closes every two-line couplet»— sin que allí el estribillo se agote, porque lo que vuelve cambia de sentido. Y el texto no habla en ningún momento de fuerza que se pierda al volver: dice que la palabra vuelve diciendo lo mismo, que es una afirmación sobre el sentido, no sobre el desgaste.',
       D:
-        'Correcta: las dos piezas de la respuesta están arriba, no en la oración del hueco. Se conserva el retorno —cada pareado, puntual, en el lugar que la forma pide— y se pierde el movimiento: la palabra persa «moves as the poem goes» y de esos giros sale «much of the poem\'s motion», mientras que la inglesa vuelve «saying each time exactly what it said before». Un relieve que se repite sin variar queda aplanado: el dibujo sigue, el desnivel no.',
+        'Correcta: las dos piezas de la respuesta están arriba, no en la oración del hueco. Se conserva el retorno —cada pareado, puntual, en el lugar que la forma pide— y se pierde el movimiento: la palabra persa «moves as the poem goes» y de esos giros sale «much of the poem\'s motion», mientras que la inglesa vuelve «saying each time exactly what it said before». Un relieve que se repite sin variar queda aplanado: el dibujo sigue, el desnivel no. Las otras tres también son pérdidas y también dejan intacto el retorno; lo que las descarta no es que suenen peor, es que el texto nombra una sola pérdida y es esta.',
     },
     fuenteHecho:
       'Hecho real de métrica persa: el gazal cierra cada pareado con una palabra o sintagma fijo, y su polisemia es un problema conocido de traducción. La forma se explica dentro del texto —«two-line couplet», porque «couplet» no es cognado del español—; sentidos, ejemplo y redacción son originales.',
