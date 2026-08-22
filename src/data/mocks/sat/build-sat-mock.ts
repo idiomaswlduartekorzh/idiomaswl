@@ -31,14 +31,31 @@ const DOMAIN_LABEL: Record<SatDomain, string> = {
   EOI: 'Expression of Ideas',
 }
 
-const asInsights = (mod: SatModule): Record<string, QuestionInsight> => {
+/**
+ * Prefijo de la parte para los `id` de los ítems.
+ *
+ * **Los bloques numeran q01…q27 en los tres módulos**, porque cada uno se escribe y se
+ * audita por separado y su plan habla de «q05» sin más. Pero el motor de simulacros
+ * guarda las respuestas del estudiante en un diccionario indexado por `id`, así que dos
+ * ítems con el mismo nombre en el mismo examen **son el mismo casillero**: contestar el
+ * módulo 1 rellenaba solo el módulo 2, y cada respuesta del 2 reescribía hacia atrás la
+ * del 1. Medido sobre un estudiante simulado: 27 de 27 en el módulo 1 y ni una del
+ * módulo 2 daba **33/54**, con las 54 marcadas como respondidas.
+ *
+ * Nadie lo vio porque el módulo 2 todavía no está enchufado. Se arregla aquí, en el
+ * compositor, y no renumerando los bloques: los planes, las actas y las auditorías
+ * hablan de q01…q27 y tienen que seguir hablando de eso.
+ */
+const conParte = (part: number, id: string) => `p${part}-${id}`
+
+const asInsights = (mod: SatModule, part: number): Record<string, QuestionInsight> => {
   const out: Record<string, QuestionInsight> = {}
   for (const m of mod.meta) {
     // Se copia letra a letra en vez de pasar `m.razones` tal cual: así el día que un
     // ítem tenga cinco opciones esto sigue funcionando sin tocar nada.
     const rationales: Record<string, string> = {}
     for (const [letter, why] of Object.entries(m.razones)) rationales[letter] = why
-    out[m.id] = {
+    out[conParte(part, m.id)] = {
       domain: m.domain,
       domainLabel: DOMAIN_LABEL[m.domain] ?? m.domain,
       rationales,
@@ -50,14 +67,20 @@ const asInsights = (mod: SatModule): Record<string, QuestionInsight> => {
 const asSection = (mod: SatModule, part: number, title: string): MockSection => ({
   part,
   title,
+  variant: mod.variant,
   skill: 'reading',
   instructions:
     'Cada pregunta trae su propio texto. Lee el texto y elige la opción que mejor responde. ' +
     'Puedes moverte libremente entre las preguntas de este módulo.',
   questions: mod.items.map(
-    (q): MCQQuestion => ({ ...q, part, stimulusStyle: q.stimulusStyle ?? 'passage' }),
+    (q): MCQQuestion => ({
+      ...q,
+      id: conParte(part, q.id),
+      part,
+      stimulusStyle: q.stimulusStyle ?? 'passage',
+    }),
   ),
-  insights: asInsights(mod),
+  insights: asInsights(mod, part),
 })
 
 /** Minutos por módulo. College Board, verificado el 18 ago 2026. */

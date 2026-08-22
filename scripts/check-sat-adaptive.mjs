@@ -26,9 +26,18 @@ const cache = new Map()
 function loadTs(file) {
   const r = path.resolve(file)
   if (cache.has(r)) return cache.get(r)
+  // `transpileModule` no informa de errores por su cuenta: hay que pedírselos. Sin esto,
+  // un fichero con un error de tipos se transpila a JS válido y el guardián lo aprueba.
+  // Es el mismo agujero que tenía `check-sat-exam.mjs`.
   const out = ts.transpileModule(fs.readFileSync(r, 'utf8'), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
-  }).outputText
+    reportDiagnostics: true,
+  })
+  const rotos = (out.diagnostics || []).filter((d) => d.category === ts.DiagnosticCategory.Error)
+  if (rotos.length) {
+    throw new Error(`${path.basename(r)} no compila — ${ts.flattenDiagnosticMessageText(rotos[0].messageText, ' ')}`)
+  }
+  const texto = out.outputText
   const localRequire = (spec) => {
     if (!spec.startsWith('.')) return require(spec)
     const b = path.resolve(path.dirname(r), spec)
@@ -39,7 +48,7 @@ function loadTs(file) {
   }
   const sb = { exports: {}, module: { exports: {} }, require: localRequire, console }
   sb.module.exports = sb.exports
-  vm.runInNewContext(out, sb, { filename: r })
+  vm.runInNewContext(texto, sb, { filename: r })
   cache.set(r, sb.exports)
   return sb.exports
 }
@@ -72,7 +81,15 @@ if (lineal.sections.length !== 1) fail(`un examen de un solo módulo trae ${line
 if (lineal.timeMinutes !== 32) fail(`un módulo son 32 minutos, no ${lineal.timeMinutes}`)
 
 // Con las dos ramas: tres partes escritas, dos servidas, 64 minutos.
-const adap = buildSatMock({ id: 'x', title: 't', subtitle: 's', m1, m2Facil: m1, m2Dificil: m1 })
+// El examen de laboratorio reutiliza el módulo 1 como las dos ramas —lo que se prueba
+// aquí es la decisión, no el contenido— pero cada rama tiene que declarar la suya, o la
+// comprobación de «ramas intercambiadas» se dispara sobre el propio andamio.
+const comoRama = (mod, variant) => ({ ...mod, variant })
+const adap = buildSatMock({
+  id: 'x', title: 't', subtitle: 's', m1,
+  m2Facil: comoRama(m1, 'M2-facil'),
+  m2Dificil: comoRama(m1, 'M2-dificil'),
+})
 if (!adap.adaptive) fail('con las dos ramas el examen no declara enrutado')
 if (adap.sections.length !== 3) fail(`deberían escribirse 3 partes, hay ${adap.sections.length}`)
 if (adap.timeMinutes !== 64) fail(`el estudiante hace 2 módulos: 64 minutos, no ${adap.timeMinutes}`)
@@ -103,6 +120,66 @@ if (adap.adaptive) {
   if (R.correctToRouteHigh <= 0 || R.correctToRouteHigh > total) {
     fail(`el corte (${R.correctToRouteHigh}) cae fuera de los aciertos posibles (0-${total})`)
   }
+}
+
+// ── Cordura de la configuración ──────────────────────────────────────────────
+//
+// Lo anterior comprueba que la DECISIÓN es correcta dada una configuración. Esto
+// comprueba que la configuración lo sea. La auditoría del 22 ago 2026 pasó en verde,
+// con el guardián de entonces, un corte de 1, un corte de 27, las dos ramas
+// intercambiadas y una rama que apuntaba a una parte inexistente —esta última deja al
+// estudiante con la pantalla en blanco—.
+function cordura(mock, quien) {
+  const R = mock.adaptive
+  if (!R) return
+  const porParte = new Map(mock.sections.map((sec) => [sec.part, sec]))
+  const enrutadora = porParte.get(R.routeAfterPart)
+  const total = enrutadora ? enrutadora.questions.length : 0
+
+  for (const [nombre, parte] of [['routeAfterPart', R.routeAfterPart], ['lowPart', R.lowPart], ['highPart', R.highPart]]) {
+    if (!porParte.has(parte)) fail(`${quien}: ${nombre} apunta a la parte ${parte}, que no existe — el estudiante se queda sin preguntas`)
+  }
+  if (R.lowPart === R.highPart) fail(`${quien}: las dos ramas son la misma parte (${R.lowPart})`)
+
+  // Un corte en el extremo convierte el examen en lineal sin que nada falle.
+  if (R.correctToRouteHigh <= 1 || R.correctToRouteHigh >= total) {
+    fail(`${quien}: con un corte de ${R.correctToRouteHigh} sobre ${total}, prácticamente todo el mundo cae en la misma rama — eso no es adaptativo`)
+  }
+  if (!(R.minutesPerModule > 0)) fail(`${quien}: minutesPerModule es ${R.minutesPerModule}`)
+
+  // Las dos ramas tienen que medir lo mismo, o el denominador de la nota depende de
+  // qué rama tocó y dos estudiantes no son comparables ni de lejos.
+  const baja = porParte.get(R.lowPart)
+  const alta = porParte.get(R.highPart)
+  if (baja && alta && baja.questions.length !== alta.questions.length) {
+    fail(`${quien}: las ramas miden ${baja.questions.length} y ${alta.questions.length} ítems — el denominador de la nota dependería de la rama`)
+  }
+
+  // Ramas intercambiadas: al que va bien se le sirve la fácil y la pantalla le dice que
+  // hizo la difícil. Solo se puede detectar desde que la sección declara su `variant`.
+  if (baja?.variant && baja.variant !== 'M2-facil') fail(`${quien}: lowPart sirve «${baja.variant}» — al que NO llega al corte se le da la rama equivocada`)
+  if (alta?.variant && alta.variant !== 'M2-dificil') fail(`${quien}: highPart sirve «${alta.variant}» — al que SÍ llega al corte se le da la rama equivocada`)
+
+  // Ids repetidos entre módulos: el motor guarda las respuestas indexadas por id, así que
+  // dos ítems con el mismo nombre son el mismo casillero. Contestar el módulo 1 rellenaba
+  // solo el módulo 2. Medido: 27 de 27 y nada del módulo 2 daba 33/54.
+  const ids = mock.sections.flatMap((sec) => sec.questions.map((q) => q.id))
+  const repes = [...new Set(ids.filter((x, i) => ids.indexOf(x) !== i))]
+  if (repes.length) {
+    fail(`${quien}: ${repes.length} id(s) repetidos entre partes (${repes.slice(0, 3).join(', ')}…) — las respuestas de un módulo se copian al otro`)
+  }
+}
+
+cordura(adap, 'examen adaptativo de prueba')
+
+// Y sobre los sets de verdad, no solo sobre el de laboratorio: el guardián decía
+// «enrutado correcto» habiendo probado únicamente un examen que se construye aquí mismo.
+try {
+  for (const m of Object.values(loadTs('src/data/mocks/sat/index.ts') || {})) {
+    if (m && Array.isArray(m.sections) && m.adaptive) cordura(m, m.id)
+  }
+} catch {
+  // Si no hay índice todavía, la comprobación de laboratorio sigue valiendo.
 }
 
 console.log(`\n🔀 SAT — enrutado adaptativo\n`)
