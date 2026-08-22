@@ -610,6 +610,65 @@ import type { SatItemMeta } from '../module-types'
  * PENDIENTE, y sigue bloqueando el APTO: el `stimulus` de q09 ha vuelto a cambiar, así que la
  * huella del guardián sobre ese ítem cambia con él y el acta pendiente desde la octava pasada
  * sigue pendiente. El auditor de clave tiene que volver a resolver q09 sobre este texto.
+ *
+ * DÉCIMA PASADA (22 ago 2026) — q13: SE PARTE EL PASAJE MÁS DENSO DEL MÓDULO, Y LA ETIQUETA
+ * DEJA DE MENTIR. Un solo ítem, y de ese ítem solo el `stimulus`.
+ *
+ * Medido antes sobre los veintisiete pasajes del módulo: q13 encabezaba la lista con **28,5
+ * palabras por oración** (27,8 en la medición del calibrador; la diferencia es de contador, no
+ * de texto), cuatro oraciones, tres de ellas de 36, 36 y 31. El segundo era q20 del bloque SEC,
+ * con 24,0. No era un pasaje denso más: era el único fuera de la banda 17-24 en la que cabe el
+ * resto del módulo.
+ *
+ * **Partirlo es gratis aquí y no lo sería en otro ítem**, y conviene decir por qué antes de que
+ * alguien copie la operación: q13 es cuantitativo, el pasaje es andamio y no objeto —lo que
+ * decide son las cifras de la tabla—, y las cuatro razones no citan del pasaje más que los dos
+ * nombres de fila y sus números. No hay ninguna cita del texto que un corte pueda romper. En
+ * q09, q12 o q15 no vale el mismo argumento: ahí las razones citan cláusulas enteras.
+ *
+ * Queda en **16,6 de media y 26 la más larga**, siete oraciones. Con eso **T (complejidad del
+ * texto) baja de 3 a 2 y el ítem pasa de 13 a 12**. Sigue en banda difícil (12-15), así que
+ * **q13 pasa de declarado 2 a declarado 3**: la etiqueta era falsa antes del corte —13 contra
+ * 2— y lo seguiría siendo después. El desglose, para que se pueda discutir eje por eje:
+ * T 2 · L 3 · D 3 · A 2 · E 2.
+ *
+ * DÓNDE ESTÁ LA DUDA, dicha entera: la regla del eje T da 1 «si la media < 18 **y** el léxico es
+ * frecuente **y** el tema concreto». La media ahora es 16,6, y las otras dos condiciones no se
+ * cumplen —«dormant», «germinated», «populations», «chemical switch», «annual plant» no son
+ * léxico frecuente, y lo que el pasaje explica es un mecanismo de latencia, no una escena—, así
+ * que lo mido en 2 y no en 1. Si un calibrador lo lee como T=1, el ítem cae a 11 y con él la
+ * etiqueta a 2; queda escrito para que esa discusión se tenga sobre la regla y no sobre el
+ * número. Lo que no cambia en ninguna de las dos lecturas: declarar 2 con el texto viejo era
+ * falso, y hoy lo declarado se corresponde con lo medido.
+ *
+ * Puerta 9: q13 es el único `command-of-evidence-quantitative` del bloque, así que subir su
+ * etiqueta no puede romper ninguna curva de grupo (`central-ideas-details` q09 2 → q10 2;
+ * `command-of-evidence-textual` q11 2 → q12 3; `inferences` q14 2 → q15 3). Mezcla declarada
+ * del módulo: de 8/12/7 a 8/11/8.
+ *
+ * LO QUE EL CORTE NO TOCA, y es lo único que hace difícil este ítem: **el 2×2 de la tabla**
+ * —dos crestas y dos valles, cada uno con sus dos cifras— sigue intacto, y con él la única
+ * razón por la que q13 no se puede resolver sin mirar la tabla. Tampoco se tocan las cuatro
+ * opciones ni las cuatro razones, ni las dos filas que el pasaje nombra: North Ridge y Elm
+ * Valley siguen nombradas en la última oración y en ninguna otra, que es lo que sostiene las
+ * razones de B, C y D.
+ *
+ * ATRIBUCIÓN, que es lo que un corte mal hecho se lleva por delante: la tesis iba en una sola
+ * oración («She argues that… and that…») y ahora va en dos, así que la segunda mitad lleva su
+ * propia marca —«The two valley populations, **she argues**, have lost it…»—. Sin ella, la
+ * pérdida del interruptor en los valles pasaría a afirmarla el texto, y la razón de D —quien
+ * elige las dos filas que mejor **parecen probar lo que sostiene la botánica**— se quedaría sin
+ * sujeto a quien atribuir nada.
+ *
+ * MEDIDO tras el cambio, con el contador del guardián: puerta 3, el solape léxico de las cuatro
+ * opciones sigue en **11/12/10/10** —ni un tipo léxico entra ni sale del pasaje; lo que se va
+ * son tres «and» y lo que entra son «She», «of each half», «she» y «after», más un «argues»
+ * repetido: todas vacías para el guardián, y «argues» y «half» ya estaban—. Puerta 7, el pasaje pasa de 132,7 a 134,8 palabras-SAT, dentro de 25-150.
+ * Puerta 2, longitudes de opción intactas: 123/135/117/119. La prueba a ciegas no puede haberse
+ * movido: el extractor manda enunciado y opciones, y no manda el `stimulus`.
+ *
+ * PENDIENTE: por R2, q13 ha cambiado de texto y vuelve a la cola de auditoría; su huella en el
+ * guardián cambia con él. Se suma al acta pendiente por q09.
  */
 
 export const items: MCQQuestion[] = [
@@ -678,7 +737,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Population · germinated in deep shade · germinated in full sun\nCape Ridge · 7% · 74%\nNorth Ridge · 9% · 71%\nElm Valley · 64% · 68%\nPine Valley · 57% · 60%\n\nA seed that sprouts in deep shade may spend itself before it ever reaches the light, and many plants of open ground carry a chemical switch that holds the seed dormant until light falls on it. Botanist Runa Hallden sowed two hundred seeds from each of four populations of a small annual plant, half in deep shade and half in full sun, and counted the share that came up within thirty days. She argues that the two ridge populations, which grow where nothing shades them, still carry the switch, and that the two valley populations, under forest for many generations, have lost it. The figures for North Ridge and Elm Valley fit her account:',
+      'Population · germinated in deep shade · germinated in full sun\nCape Ridge · 7% · 74%\nNorth Ridge · 9% · 71%\nElm Valley · 64% · 68%\nPine Valley · 57% · 60%\n\nA seed that sprouts in deep shade may spend itself before it ever reaches the light. Many plants of open ground carry a chemical switch that holds the seed dormant until light falls on it. Botanist Runa Hallden sowed two hundred seeds from each of four populations of a small annual plant, half in deep shade and half in full sun. She counted the share of each half that came up within thirty days. She argues that the two ridge populations, which grow where nothing shades them, still carry the switch. The two valley populations, she argues, have lost it after many generations under forest. The figures for North Ridge and Elm Valley fit her account:',
     text: 'Which choice most effectively uses data from the table to complete the text?',
     options: [
       'in deep shade only 9% of the North Ridge seeds came up, against 71% in full sun; the Elm Valley seeds went from 64% to 68%.',
@@ -801,7 +860,7 @@ export const meta: SatItemMeta[] = [
     id: 'q13',
     domain: 'II',
     tipo: 'command-of-evidence-quantitative',
-    dificultad: 2,
+    dificultad: 3,
     tema: 'ciencia',
     razones: {
       A:
@@ -814,7 +873,7 @@ export const meta: SatItemMeta[] = [
         'Junta la primera fila de la tabla con la última: 7 % y 74 % son de Cape Ridge, y 57 % y 60 % de Pine Valley. Son además las dos filas que mejor parecen probar lo que sostiene la botánica —el salto de sombra a sol más ancho de los cuatro y el valle más plano—, así que es la opción de quien busca la prueba más fuerte en vez de la fila que el texto nombra.',
     },
     fuenteHecho:
-      'Fotoblastismo real: muchas semillas de plantas de terreno abierto necesitan luz para germinar, y las poblaciones de sotobosque tienden a perder ese requisito. La botánica, las cuatro poblaciones y los ocho porcentajes están inventados; las especies van sin nombre científico. El texto dice «a small annual plant» y no «a small annual» a secas: *annual* como sustantivo (planta de ciclo anual) es vocabulario de jardinería que el pasaje no define, y sin el sustantivo detrás se lee como adjetivo suelto.',
+      'Fotoblastismo real: muchas semillas de plantas de terreno abierto necesitan luz para germinar, y las poblaciones de sotobosque tienden a perder ese requisito. La botánica, las cuatro poblaciones y los ocho porcentajes están inventados; las especies van sin nombre científico. El texto dice «a small annual plant» y no «a small annual» a secas: *annual* como sustantivo (planta de ciclo anual) es vocabulario de jardinería que el pasaje no define, y sin el sustantivo detrás se lee como adjetivo suelto.\n\n**El pasaje se partió por oraciones el 22 ago 2026 y no cambió de contenido.** Era el más denso del módulo —27,8 palabras por oración según el calibrador, 28,5 con el contador de este repositorio, y tres oraciones de 36, 36 y 31— y queda en 16,6 de media y 26 la más larga, con siete oraciones en vez de cuatro. Los tres cortes: la premisa se separa del mecanismo («…before it ever reaches the light. Many plants of open ground carry a chemical switch…»), el sembrado se separa del recuento («…half in full sun. She counted the share of each half that came up within thirty days.») y las dos mitades de la tesis van una por oración («…still carry the switch. The two valley populations, she argues, have lost it after many generations under forest.»). LO QUE NO CAMBIA, y es lo único que hace este ítem: la tabla, entera, con su 2×2 de fila y factor; las cuatro opciones, ni un carácter; las cuatro razones; y las dos filas que el pasaje nombra —North Ridge y Elm Valley—, que siguen nombradas en la última oración y en ninguna otra. Las dos mitades de la tesis siguen atribuidas a la botánica («She argues that…», «…, she argues, …»): sin atribución, la razón de D —quien busca la prueba más fuerte en vez de la fila que el texto nombra— se queda sin sujeto. Contado sobre el texto: ni un tipo léxico entra ni sale, así que el solape con las cuatro opciones sigue en 11/12/10/10 y la puerta 3 no se mueve; el pasaje pasa de 132,7 a 134,8 palabras-SAT, dentro de 25-150.',
   },
   {
     id: 'q14',

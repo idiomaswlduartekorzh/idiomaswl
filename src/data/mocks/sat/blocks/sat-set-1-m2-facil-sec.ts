@@ -385,6 +385,56 @@ import type { SatItemMeta } from '../module-types'
  *
  * Por R2, q19 cambió de texto y vuelve a la cola de auditoría. q20 no cambió ni un carácter:
  * solo de sitio y de etiqueta.
+ *
+ * ## SEGUNDO CORTE DE q19 (22 ago 2026) — el punto se saca por T, porque por L está cerrado
+ *
+ * El encargo era bajar q19 de 10 a 9 por el eje **L (localización)**, «juntando» «in 1893» con
+ * el trasfondo en pluscuamperfecto, que el calibrador ve separados. **Ese camino no está
+ * disponible, y conviene que quede escrito antes de que alguien vuelva a intentarlo:**
+ *
+ * - Los dos indicios ya están en la MISMA oración y pegados por el borde de cláusula:
+ *   «…year after year **when, in 1893,** it ______ …». Lo único que los aleja son las 17
+ *   palabras del trasfondo, y ese trasfondo está citado **entero y literal** en la `regla` del
+ *   ítem y a medias en `razones.B` («had worked its way through… year after year»). Acortarlo
+ *   es escribir en una razón, que es justo lo prohibido esta ronda.
+ * - Cualquier reordenación que pegue «in 1893» al verbo «had worked» exige quitar el «when», y
+ *   `razones.B` lo cita: «"When, in 1893," fija el momento de esa interrupción».
+ * - Y la reordenación que a primera vista parece elegante —trasfondo a oración propia y la del
+ *   hueco abriendo con «When, in 1893, it ______ …, the house sold out for eleven nights»—
+ *   **devuelve las dos claves**: deja un hecho pasado posterior dentro de la oración del hueco,
+ *   y con él «had staged» vuelve a ser defendible. Es exactamente la condición 2 de la `regla`.
+ *
+ * Así que el punto se saca por **T (complejidad del texto)**, que sí está libre porque no vive
+ * en la oración del hueco. Se parten dos oraciones, **ninguna de ellas la del hueco**: la
+ * primera del pasaje y la del éxito de taquilla. **De 21,8 a 15,3 palabras por oración**, de
+ * cinco oraciones a siete. La más larga sigue siendo la del hueco (31 palabras) porque esa no
+ * se toca: «in 1893», el pluscuamperfecto y el «when» siguen letra por letra donde estaban, de
+ * modo que las tres condiciones de clave única no es que «sigan cumplidas» —es que no han sido
+ * tocadas—.
+ *
+ * **Medida, y con la duda dicha.** T pasa de 2 a 1: la media queda en 15,3 (< 18), el léxico es
+ * frecuente —teatro, pueblo, obras, público, maestro de escuela, funciones— y el tema es una
+ * sucesión concreta de hechos, que son las tres condiciones que la regla del eje exige juntas.
+ * Con eso **q19 mide 9** (T 1 · L 2 · D 3 · A 2 · E 1) y la curva de lectura del bloque pasa de
+ * `7 · 7 · 7 · 7 · 10 · 10 · 10` a **`7 · 7 · 7 · 7 · 9 · 10 · 10`**: se acabó el peldaño de
+ * cuatro fáciles a tres medios de golpe. La etiqueta **no se mueve**: 9 sigue en banda media
+ * (8-11) y q19 sigue declarado 2, así que el bloque sigue etiquetando 1 · 1 · 1 · 1 · 2 · 2 · 2
+ * y la puerta 9 no se toca.
+ *
+ * La otra lectura, por si el calibrador venía midiendo sobre `.aud/textos-f6.md` (que es de
+ * antes del primer corte y todavía lleva la oración de 38 palabras): entonces su T era 3, el
+ * ítem ya medía 9 antes de esta pasada y con este corte mide 8. Da igual para lo que importa:
+ * 8 y 9 están los dos en banda media, los dos tapan el agujero de la curva y ninguno de los dos
+ * mueve la etiqueta. Lo que NO habría dado igual es no medir y suponer.
+ *
+ * Ni una opción ni una razón se tocaron, otra vez. Los dos verbos en pasado que `razones.A`
+ * necesita —«sold out», «printed»— siguen en el pasaje, en oraciones distintas; el «has opened
+ * / every season since» que sostiene `razones.D` está intacto; el solape léxico con las cuatro
+ * opciones era 0/0/0/0 y sigue igual, porque ninguna forma de *stage* aparece en el texto. El
+ * pasaje pasa de 101,0 a 99,7 palabras-SAT.
+ *
+ * Por R2, q19 vuelve otra vez a la cola de auditoría: es el segundo cambio de texto del mismo
+ * día sobre el mismo ítem, y su huella en el guardián cambia con él.
  */
 
 export const items: MCQQuestion[] = [
@@ -457,7 +507,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A theatre in a river town spent its first three decades on plays translated from other languages, and its audience came to expect an evening that sounded like somewhere else. The company had worked its way through the same handful of foreign comedies year after year when, in 1893, it ______ a piece written in the speech of the market square. Its author was a schoolteacher who had never published a line. The house sold out for eleven nights, and the company printed the text at its own expense. Every season since, the theatre has opened its year with a play in the language its audience speaks at home.",
+      "A theatre in a river town spent its first three decades on plays translated from other languages. Its audience came to expect an evening that sounded like somewhere else. The company had worked its way through the same handful of foreign comedies year after year when, in 1893, it ______ a piece written in the speech of the market square. Its author was a schoolteacher who had never published a line. The house sold out for eleven nights. The company printed the text at its own expense. Every season since, the theatre has opened its year with a play in the language its audience speaks at home.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -606,7 +656,7 @@ export const meta: SatItemMeta[] = [
         "Presente perfecto con complemento de tiempo pasado definido: el inglés escrito no admite «in 1893 it has staged». Es el error de quien arrastra el «has opened» del cierre sin ver que aquel es correcto por su propio complemento —«every season since» abre un período que llega hasta hoy— y este no, porque «in 1893» cierra el suyo. Es además la opción donde se cruzan las dos apuestas de quien decide sin leer la frase: la forma perfecta, que es la que un examen de gramática parece estar examinando, y la marca de singular, que es el número por defecto cuando no se ve el sujeto. Que las dos caigan aquí y no en la clave es a propósito.",
     },
     fuenteHecho:
-      "Historia del teatro, hecho libre: las compañías de provincias vivieron durante el siglo XIX de repertorio traducido y de refritos extranjeros, y el paso a obra escrita en la lengua o el habla del público fue un episodio corriente y tardío en muchas de ellas. El pueblo, la compañía, el maestro de escuela, la fecha de 1893 y las once funciones son invención propia: el pasaje no atribuye ninguna primicia a nadie ni describe ningún teatro real. Sin país, sin moneda y sin medidas, como el resto del módulo.\n\n**Este ítem sustituye al de historia editorial que ocupaba esta fila** (impresor de provincias, «In 1846», el verbo «contain»), retirado por R11 en la quinta vuelta; el porqué está en el punto 5 ter de la cabecera. Las dos correcciones de equidad y veracidad que aquel arrastraba se conservan como criterio y no como texto: no se afirma ninguna primicia histórica que no se pueda sostener —era el error de un siglo del pasaje de 1846— y no hay ninguna referencia nacional que no aporte nada al ítem, que era lo que se le quitó al «ordinary American bookstore» de aquel cierre.\n\n**El pasaje se partió por oraciones el 22 ago 2026 y no cambió de contenido.** La oración del hueco era la más larga del módulo después de la de q25 —38 palabras— y se corta detrás de «in the speech of the market square»: quien escribió la pieza pasa a oración propia, «Its author was a schoolteacher who had never published a line». El pasaje baja de 26,3 a 21,4 palabras por oración de media y de 38 a 30 la más larga. Las tres condiciones de clave única siguen cumplidas —la fecha dentro de la oración del hueco, el trasfondo en pluscuamperfecto unido por «when» y ningún hecho pasado posterior al que el estreno preceda—, y ni una opción ni una razón se tocaron. El detalle está en la sección «CALIBRACIÓN» de la cabecera.",
+      "Historia del teatro, hecho libre: las compañías de provincias vivieron durante el siglo XIX de repertorio traducido y de refritos extranjeros, y el paso a obra escrita en la lengua o el habla del público fue un episodio corriente y tardío en muchas de ellas. El pueblo, la compañía, el maestro de escuela, la fecha de 1893 y las once funciones son invención propia: el pasaje no atribuye ninguna primicia a nadie ni describe ningún teatro real. Sin país, sin moneda y sin medidas, como el resto del módulo.\n\n**Este ítem sustituye al de historia editorial que ocupaba esta fila** (impresor de provincias, «In 1846», el verbo «contain»), retirado por R11 en la quinta vuelta; el porqué está en el punto 5 ter de la cabecera. Las dos correcciones de equidad y veracidad que aquel arrastraba se conservan como criterio y no como texto: no se afirma ninguna primicia histórica que no se pueda sostener —era el error de un siglo del pasaje de 1846— y no hay ninguna referencia nacional que no aporte nada al ítem, que era lo que se le quitó al «ordinary American bookstore» de aquel cierre.\n\n**El pasaje se partió por oraciones el 22 ago 2026 y no cambió de contenido.** La oración del hueco era la más larga del módulo después de la de q25 —38 palabras— y se corta detrás de «in the speech of the market square»: quien escribió la pieza pasa a oración propia, «Its author was a schoolteacher who had never published a line». El pasaje baja de 26,3 a 21,4 palabras por oración de media y de 38 a 30 la más larga. Las tres condiciones de clave única siguen cumplidas —la fecha dentro de la oración del hueco, el trasfondo en pluscuamperfecto unido por «when» y ningún hecho pasado posterior al que el estreno preceda—, y ni una opción ni una razón se tocaron. El detalle está en la sección «CALIBRACIÓN» de la cabecera.\n\n**Segundo corte, el mismo día: dos oraciones más, y ninguna de ellas es la del hueco.** Se parten la primera —«…plays translated from other languages. Its audience came to expect an evening that sounded like somewhere else.»— y la del éxito —«The house sold out for eleven nights. The company printed the text at its own expense.»—. El pasaje pasa de 21,8 a 15,3 palabras por oración y de cinco oraciones a siete; la más larga sigue siendo la del hueco, con 31, porque **esa oración no se toca en absoluto**: «in 1893», el trasfondo en pluscuamperfecto y el «when» que los une siguen exactamente donde estaban, letra por letra. Los verbos que la razón de A necesita en pasado —«sold out», «printed»— siguen los dos en el pasaje, solo que en oraciones distintas, y el «has opened / every season since» que sostiene la razón de D no se ha tocado. Ni un tipo léxico entra o sale del pasaje: el solape con las cuatro opciones era 0/0/0/0 y sigue siéndolo, porque ninguna forma de *stage* aparece en el texto. Longitud: de 101,0 a 99,7 palabras-SAT.",
   },
   {
     id: 'q21',

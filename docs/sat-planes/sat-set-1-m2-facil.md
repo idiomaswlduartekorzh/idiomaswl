@@ -2,7 +2,9 @@
 
 **Variante: M2-fácil.** Es la rama **estándar** del módulo 2: la que se sirve a quien no llega al corte del módulo 1.
 
-Dificultad: **12 fáciles, 10 medios, 5 difíciles** según las etiquetas que hay hoy en el código (era 13 · 11 · 3 antes de la calibración del 22 ago 2026). Lo que distingue a las dos ramas es la **media**, no la ausencia de los otros niveles: un M2-difícil de 27 ítems difíciles no reproduce el examen, y un M2-fácil sin ningún ítem difícil deja de medir a quien va bien (blueprint §2, «Módulo 1 vs módulo 2»).
+Dificultad: objetivo **6 fáciles, 16 medios, 5 difíciles**, con media medida ≤ 9,3 en la escala de cinco ejes del calibrador. Esas cifras salen de una medición, no de un deseo: el 13 · 11 · 3 original era **inalcanzable con este reparto de tipos** —once ítems de 27 no pueden bajar de la banda media sin acercar las opciones, que es justo lo que reabre la prueba a ciegas, y tres no pueden bajar de difícil—, así que pedir trece fáciles obligaba a clavar en su mínimo a catorce ítems de quince. Lo que distingue a las dos ramas es la **media**, no la ausencia de los otros niveles: un M2-difícil de 27 ítems difíciles no reproduce el examen, y un M2-fácil sin ningún ítem difícil deja de medir a quien va bien (blueprint §2).
+
+**Y la lección que costó tres calibraciones:** un módulo fácil se escribe fácil desde el primer día. Ablandar ítems ya endurecidos contra la prueba a ciegas no funciona —el margen por texto se agota en tres o cuatro puntos— y aflojar las opciones deshace el trabajo. Si falta banda fácil, se escriben ítems nuevos diseñados para eso.
 
 > ⚠️ **Ese 12 · 10 · 5 está pendiente de re-medición y se espera que vuelva a 12 · 12 · 3.** El
 > calibrador midió `q23` y `q24` en 14 —el techo de los dos módulos— y por eso llevan etiqueta 3;
