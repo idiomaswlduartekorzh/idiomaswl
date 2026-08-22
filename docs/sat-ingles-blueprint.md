@@ -482,6 +482,29 @@ medición lo confirma.** Hasta entonces es una hipótesis, y en este módulo dos
 razonadas —igualar la forma de las opciones de síntesis, dar causa permanente a las cuatro
 opciones del ítem de los lagos— resultaron falsas al medirlas.
 
+### R16 · No reordenes por números que tu propio commit está invalidando
+
+R15 dice que se mide después de cada ronda. Esta es su gemela y es más fina, porque el
+error no se ve al leer el diff.
+
+El grupo de estructura del módulo 2 estándar iba `14 · 13 · 12` —al revés de lo que exige
+la curva— y se invirtió a `12 · 13 · 14`. En **el mismo commit** se bajó el texto del ítem
+que medía 14, que pasó a 12. Resultado: el grupo quedó `14 · 12 · 12`, con el ítem más
+caro del examen entero **en cabeza**. Exactamente el defecto que el reordenamiento venía a
+corregir, con los papeles cambiados.
+
+Nadie hizo nada mal: el reordenamiento era correcto para las medidas con las que se
+calculó, y la rebaja del texto era correcta por su cuenta. Lo que falló es juntarlas.
+
+> **Un reordenamiento se calcula con las medidas del árbol tal y como va a quedar.** Si la
+> misma ronda toca los textos de los ítems que se reordenan, primero se reescribe, luego se
+> vuelve a medir, y solo entonces se reordena. Nunca a la vez.
+
+Corolario para el guardián: **compara etiquetas de banda, no puntuaciones**, así que una
+curva que baja dentro de la misma banda —de 14 a 12, las dos «difícil»— le pasa por delante
+sin que se entere. Mientras eso siga así, la curva la valida el calibrador y no el script,
+y conviene no confundir un `check:sat` en verde con una curva correcta.
+
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 
 Las tres versiones de q02 pasaron cada una por auditoría, y cada arreglo introdujo un
