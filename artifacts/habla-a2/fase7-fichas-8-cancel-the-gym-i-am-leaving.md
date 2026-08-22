@@ -41,13 +41,13 @@ los datos de Mauricio—, no con la misma fila repetida.
 
 **You can't**
 1. You can't leave the embassy email, or send a photo of it. It has your passport number, your address and your case number — you can show the screen, nothing more.
-2. You can't come back in office hours. You work all day, and your only free hour is **Thursday the 27th, 12:00 to 1:00**.
+2. You can't come back during office hours. You work all day, and your only free hour is **Thursday the 27th, 12:00 to 1:00**.
 3. You can't ask for your money back, or argue about the price.
 
 **You can, but you don't have to** · You never have to say where you are going, or why. He cannot ask for more than your dates.
 
 **Only you know**
-- You already know the September 5 charge will bounce: your card expires first, and the new one arrives too late. Say it too early and it sounds like a plan to stop paying.
+- You already know the September 5 charge will bounce: your card expires first, and the new one arrives too late. You choose the moment: say it too early and it sounds like a plan to stop paying.
 - **Wilmer** sold you the plan and promised you out loud that they cancel for people who leave the country. You never got that promise on paper, and he is gone.
 - **Yurany**, from work, asked you about this gym two weeks ago, and the price stopped her. You see her Wednesday night.
 - You still have no return date, and nobody can give you one yet.
@@ -62,7 +62,7 @@ los datos de Mauricio—, no con la misma fila repetida.
 | Your plan | 12 months · **92,000 pesos a month** *(ninety-two thousand)* · signed **July 13** |
 | What you signed | a **3-month minimum**, in writing · 92,000 instead of **135,000** *(a hundred and thirty-five thousand)* |
 | The charge | the **5th** of every month, on your card |
-| Your card | expiry: **August 31** · a new one: **8 business days** |
+| Your card | expiration: **August 31** · a new one: **8 business days** |
 | If the charge bounces | a transfer from anywhere, before the 12th · nothing else after that |
 | Your day in Bogotá | **September 3** · moved from November 14 · passport after it: **10 to 15 business days** |
 | Your flight | **August 30**, out of Bucaramanga · ticket bought, in your name, **one-way** |
@@ -115,7 +115,7 @@ With the screen face down: what he writes today and what he doesn't · **one** w
 **You want** · You want to help her without crossing your line. She has to leave with a way she can use, and you have to leave with her signature.
 
 **You can't**
-1. A cancellation inside the minimum term is not yours to give. That answer comes from retention, in writing, and not from you.
+1. A cancellation inside the minimum term is not your decision. That answer comes from retention, in writing, and not from you.
 2. You can't file a change when her paper does not have both dates. Today you can open a case, and she will think a case is a cancellation.
 3. You can't ask her where she is going, why, or what her plan B is. You can ask when she comes back. You can ask her for a reason, and never a destination.
 
@@ -123,7 +123,7 @@ With the screen face down: what he writes today and what he doesn't · **one** w
 - You can open a case today, and she keeps today's date even if Édison answers late. Without that number she misses the cut-off and pays **92,000** more. You have nothing else behind this counter today.
 - Your second way is a transfer, and she does not know about it. You don't offer it first: it means paperwork and a wait. If you never say it, she never knows.
 - Last month you gave a freeze with no proof. You got a written warning for helping too much.
-- Wilmer promised three or four members a cancellation, he is gone, and the others still work with you.
+- Wilmer promised a cancellation to three or four members, he is gone, and the other sellers still work with you.
 
 **If you walk away with nothing** · She leaves with no signature and no reason, and the next complaint has your name on it.
 
@@ -167,14 +167,14 @@ Blocks **1** `[grants]` · **2** · **3**, **yours**: an ID and a reason, by ear
 | asking again for the reason | `I don't need to know where — I need…` · `Any reason works, but I can't write…` | she keeps the country and you keep the form · ask a second time for the one line the case needs |
 | asking her for something | `Can you sign here, next to…?` · `Has this person ever been a member…?` | what opens the case and ends the visit · the one question that opens or closes that way |
 | buying yourself a turn | `Let me check that. One moment…` | slow it down without sending her away — and it is what the card takes from you |
-| dictating a number | `Write this down, please: …` | the case number and the date, for her to copy |
+| dictating a number | `Please write the number: …` | the case number and the date, for her to copy |
 | offering another way | `There is another way, but…` · `You can also…, and it costs…` | one way at a time, and the second one only when the first one dies · put the way she did not come for on the table with its price on it, before she asks for it |
 | saying no with a door open | `I can't do that, but I can…` · `If you bring…, I can…` · `I have to be careful, because…` | the no and the yes in one sentence · the condition in the same breath as the yes, so the yes is not bigger than it is · your reason, not the rulebook's |
 | taking her side | `I know, and I'm sorry about…` | make it clear this isn't aimed at her |
 | talking about the paper | `I need a paper that says…` · `That's not enough — it doesn't say…` | describe it by what it has to say, not by its name · point at the missing date, not at the whole paper |
 
 ### You did it if
-In her own words: what you write today and what you don't · **one** way and what it needs · Édison's floor, days and hours · the 5th, the 12th and the last hour that counts. You gave the no **and** the yes — two ways she didn't bring in — and the log is signed.
+In her own words: what you write today and what you don't · **one** way and what it needs · Édison's floor, days and hours · the 5th, the 12th and the last hour that counts. You gave the no **and** the yes — two ways she did not know — and she signed the log.
 
 ---
 
@@ -212,7 +212,7 @@ When Tatiana has the number and the date, and she says them back, it's over. **T
 
 ---
 
-## `grammarReferences` — 8
+## `grammarReferences` — 11
 
 **Slugs y títulos, sin tocar una letra:** son los doce anclajes de fase 6 (los diez de fase 4 más
 `present-continuous-future-a2` y `there-is-there-are`), verificados uno a uno contra el registro
@@ -246,6 +246,12 @@ grammarReferences: [
     rationale: 'VUELVE en fase 6, y ya no es decorativo. Sostiene «I\'m leaving on…», el exponente nuevo de Tatiana. Toda la escena depende de que ella diga cuándo se va, es lo primero que tiene que decir y en fase 4 no tenía ni una forma para decirlo. El tema es exactamente esto: plan cerrado con fecha, tiquete comprado a su nombre, que no se discute.' },
   { level: 'a1', slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
     rationale: 'NUEVO en fase 6. Sostiene «Is there another way?» —con «another» y no con «any other», que es el patrón que el tema sí enseña—. proponer-alternativa es el tercer acto de habla de este escenario y en fase 4 Tatiana se quedó sin ninguna forma de pedir una: dependía entera de que Mauricio soltara la cesión por su cuenta, y la ficha de Mauricio dice que la cesión no es lo primero que ofrece. El tema trae la interrogativa con there is/are.' },
+  { level: 'a2', slug: 'will-future', title: 'El Futuro con Will en Inglés A2',
+    rationale: 'Sostiene la mitad interrogativa de «What will happen if…?». first-conditional cubre la cláusula con if, pero no imprime ni una wh- con will; este tema sí: «Pregunta Wh-: What will you do this weekend?». Y sostiene el «will bounce» del dato oculto 1 de Tatiana, que es el secreto entero del escenario: sin will, ella no puede decir en voz alta lo único que sabe y él no.' },
+  { level: 'a1', slug: 'present-simple-affirmative', title: 'Present simple afirmativo en inglés A1',
+    rationale: 'Sostiene «Any reason works, but I can\'t write…» y «You can also…, and it costs…» de Mauricio, y el «I still need» de Tatiana. Es la tercera persona -s, que en este mostrador decide si la frase suena a regla de la casa o a error: el registro trae la negativa y la interrogativa, y la afirmativa faltaba.' },
+  { level: 'a1', slug: 'prepositions-place', title: 'Prepositions of Place en Inglés A1',
+    rationale: 'Sostiene «Can you sign here, next to…?» y el punto 3 del cierre, que obliga a decir dónde está Édison: «second floor». El tema enseña las dos cosas —next to, y on + piso de un edificio— y era el único dato del cierre sin tema detrás: prepositions-time cubre el calendario, no el edificio.' },
 ]
 ```
 
@@ -604,3 +610,30 @@ el 21 de agosto.
 Al filo y no contado, con la razón escrita en el informe: las filas 3-4-5 de la tabla de A son las
 tres del desenlace, pero en orden interno invertido; las 2→4 de B son el cierre en orden, con una
 fila intercalada. Ninguna de las dos secuencias resuelve el escenario sin escuchar al otro.
+
+
+---
+
+## Pasada de nivel (22 ago 2026) — `fase13-nivel-8.md`
+
+La ruta mínima se escribe entera en A2 y las 26 formas se anclan a temas reales del registro. Lo
+que devuelve es **una restricción que el recorte de esta mañana se llevó creyéndola redundancia**.
+Contador después: **ROLE A 449 · ROLE B 448**, techo 450.
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | A · `Only you know` 1 | `Say it too early y…` → `You choose the moment: say it too early y…` | el recorte dejó solo la prohibición de decirlo pronto. Se perdieron las dos mitades que importan: que **el momento es suyo** y que **puede callárselo** — y esa segunda la mide la pregunta 3 del debrief. Se estaba midiendo una decisión que la ficha ya no entregaba |
+| 2 | B · `Only you know` 4 | `promised three or four members a cancellation … and the others` → `promised a cancellation to three or four members … and the other sellers` | `the others` no tenía antecedente: el único plural anterior es `three or four members`, así que un A2 lee «los otros socios trabajan contigo». Y el doble objeto se malparsea como «prometió tres o cuatro socios» |
+| 3 | B · `You did it if` | `two ways she didn't bring in — and the log is signed` → `two ways she did not know — and she signed the log` | pasiva viva en el criterio de cierre, más un phrasal colgado y opaco |
+| 4 | B · `You can't` 1 | `is not yours to give` → `is not your decision` | giro idiomático B2 de lectura que un A2 no desarma. Sigue sin ser decible: en su boca el `your` apunta mal |
+| 5 | B · exponentes, `dictating a number` | `Write this down, please: …` → `Please write the number: …` | phrasal separable con pronombre en medio, que la caja prohíbe por escrito |
+| 6 | datos de A y restricción 2 | `expiry` → `expiration` · `in office hours` → `during office hours` | americano |
+
+`grammarReferences` pasa de 8 a 11: entran `will-future` —ningún otro tema del registro imprime una
+wh- con `will`, y `What will happen if…?` la necesita—, `present-simple-affirmative` (la tercera
+persona `-s` de `Any reason works` / `it costs`) y `prepositions-place`, que era el único dato del
+cierre sin tema detrás.
+
+**Fuera de este archivo:** las tres filas de `insistir` que se añadieron hoy imprimen formas A2, así
+que la ficha no se sale de nivel — pero `insistir` está en la **fila B1** de §4. La cuota de §5 está
+empujando un set A2 a producir un acto de B1. Eso se decide en el mapa de actos, no aquí.
