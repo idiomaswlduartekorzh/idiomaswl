@@ -33,7 +33,7 @@ los datos de Mauricio—, no con la misma fila repetida.
 > **Counter, formal.** *Please*, *sorry*, *thank you*. If you shout, he signs nothing. **You start.** 8 turns each · 8 minutes.
 > **Your screen only.** Don't show it, don't read from it.
 
-**Where you are** · Tuesday, 6:40 p.m. You are at the front desk of a gym in Cabecera. You come straight from work.
+**Where you are** · You are at the front desk of a gym in Cabecera, straight from work.
 
 **You want** · You want to end the plan today, with no charge on September 5.
 
@@ -47,7 +47,7 @@ los datos de Mauricio—, no con la misma fila repetida.
 **You can, but you don't have to** · You never have to say where you are going, or why. He cannot ask for more than your dates.
 
 **Only you know**
-- You already know the September 5 charge will bounce: your card expires first, and the new one arrives too late. Say it too early and it sounds like a plan to stop paying. You choose the moment.
+- You already know the September 5 charge will bounce: your card expires first, and the new one arrives too late. Say it too early and it sounds like a plan to stop paying.
 - **Wilmer** sold you the plan and promised you out loud that they cancel for people who leave the country. You never got that promise on paper, and he is gone.
 - **Yurany**, from work, asked you about this gym two weeks ago, and the price stopped her. You see her Wednesday night.
 - You still have no return date, and nobody can give you one yet.
@@ -87,7 +87,7 @@ los datos de Mauricio—, no con la misma fila repetida.
 ### Your toolkit
 Blocks **1** `[asks]` at the worst hour · **2** · **3** `[receives]`, **yours**: contract words, a number by ear · **5** · **6**, your destination stays yours · **8**. Not 4, not 7.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
@@ -123,7 +123,7 @@ With the screen face down: what he writes today and what he doesn't · **one** w
 - You can open a case today, and she keeps today's date even if Édison answers late. Without that number she misses the cut-off and pays **92,000** more. You have nothing else behind this counter today.
 - Your second way is a transfer, and she does not know about it. You don't offer it first: it means paperwork and a wait. If you never say it, she never knows.
 - Last month you gave a freeze with no proof. You got a written warning for helping too much.
-- You know why Wilmer is gone: he promised three or four members a cancellation, and could not give it. You know he wasn't the only one.
+- Wilmer promised three or four members a cancellation, he is gone, and the others still work with you.
 
 **If you walk away with nothing** · She leaves with no signature and no reason, and the next complaint has your name on it.
 
@@ -160,7 +160,7 @@ With the screen face down: what he writes today and what he doesn't · **one** w
 ### Your toolkit
 Blocks **1** `[grants]` · **2** · **3**, **yours**: an ID and a reason, by ear · **4** `[jargon]`, **also yours**: freeze, transfer, minimum, case, cut-off, collections, retention · **5** · **7** `[grants]`. Not 6, not 8.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
@@ -170,8 +170,8 @@ Blocks **1** `[grants]` · **2** · **3**, **yours**: an ID and a reason, by ear
 | dictating a number | `Write this down, please: …` | the case number and the date, for her to copy |
 | offering another way | `There is another way, but…` · `You can also…, and it costs…` | one way at a time, and the second one only when the first one dies · put the way she did not come for on the table with its price on it, before she asks for it |
 | saying no with a door open | `I can't do that, but I can…` · `If you bring…, I can…` · `I have to be careful, because…` | the no and the yes in one sentence · the condition in the same breath as the yes, so the yes is not bigger than it is · your reason, not the rulebook's |
-| talking about the paper | `I need a paper that says…` · `That's not enough — it doesn't say…` | describe it by what it has to say, not by its name · point at the missing date, not at the whole paper |
 | taking her side | `I know, and I'm sorry about…` | make it clear this isn't aimed at her |
+| talking about the paper | `I need a paper that says…` · `That's not enough — it doesn't say…` | describe it by what it has to say, not by its name · point at the missing date, not at the whole paper |
 
 ### You did it if
 In her own words: what you write today and what you don't · **one** way and what it needs · Édison's floor, days and hours · the 5th, the 12th and the last hour that counts. You gave the no **and** the yes — two ways she didn't bring in — and the log is signed.
@@ -187,7 +187,7 @@ In her own words: what you write today and what you don't · **one** way and wha
 | Cancellations for travel | **none authorized · not one** |
 |---|---|
 | A freeze | **yes** · up to 60 days · **only with the two dates** |
-| The charge on the 5th, bounced | **collections on the 12th** · the system, on its own · a transfer before the 12th stops it |
+| The charge on the 5th, bounced | **collections on the 12th** · the system, on its own · only a transfer before the 12th |
 | When you can find him | **not Thursday — inventory count** · **Wednesday, 9 to 5, second floor** |
 
 > **Don't open this card early.** It brings one thing you have to tell her anyway — the 12th — and one office day: yours may be the wrong one. She only learns what you tell her. **From now on, no more checking with anyone. The no is yours.**
@@ -268,8 +268,8 @@ quedan fuera porque no están dentro de ninguna ficha de rol.
 
 | ficha | palabras de prosa | techo §11 | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Tatiana | **449** | ≤ 450 | 10 filas | 10 | 12 formas en 8 filas |
-| ROLE B — Mauricio | **450** | ≤ 450 | 10 filas | 10 | 14 formas en 8 filas |
+| ROLE A — Tatiana | **445** | ≤ 450 | 10 filas | 10 | 12 formas en 8 filas |
+| ROLE B — Mauricio | **447** | ≤ 450 | 10 filas | 10 | 14 formas en 8 filas |
 
 Medido el 22 de agosto de 2026 sobre este archivo, después de la pasada quirúrgica de fase 9.
 Venía de 445 y 444 (21 de agosto), y de 453 y 476 antes de la ronda de la tarde.
@@ -525,7 +525,7 @@ escenario 7 —Kevin no consigue los dos cupos— y en el 4, donde Astrid sí sa
 Solo las líneas que citan `fase9-calcable-8.md` y `fase9-nivel-8.md`. **Ninguna otra línea, tabla,
 dato, nombre ni pieza del motor se tocó**, y no se reescribió ningún bloque entero: cada cambio es
 la edición mínima que quita el defecto señalado. Prosa después de la pasada, con
-`prosa-canonica.mjs`: **A 449 · B 450** (techo 450).
+`prosa-canonica.mjs`: **A 449 · B 450** (techo 450) *— cifra de aquel día; la viva es A 445 · B 447, ver la pasada del 22 ago al final*.
 
 **Calcabilidad — las siete decibles y los dos defectos de forma (`fase9-calcable-8.md`):**
 
@@ -583,3 +583,24 @@ no el texto vigente.
 **Bandas de §4:** 8 minutos y 8 turnos por rol, dentro de 5-8 y 6-9. El informe de nivel las mide
 en regla, así que no se movieron. **Vocabulario:** las veinte filas ya tienen una entrada y una
 definición más simple que la palabra; el único cambio del bloque es el N12.
+
+
+---
+
+## Pasada de calcabilidad (22 ago 2026) — `fase13-calcable-8.md`
+
+Primera vez que las dos tablas `Say it here` de este escenario se auditan como objeto: hasta hoy
+solo se habían mirado las de los escenarios 2, 3, 5, 6 y 7. Cuatro arreglos, contador corrido
+después: **ROLE A 445 · ROLE B 447**, techo 450 — con aire en los dos roles por primera vez desde
+el 21 de agosto.
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | carta, fila `The charge on the 5th, bounced` | `…· a transfer before the 12th stops it` → `…· only a transfer before the 12th` | era la única oración conjugada de la tabla: Mauricio la lee y entrega el dato entero |
+| 2 | B · `Only you know` 4 | `You know why Wilmer is gone: …could not give it. You know he wasn't the only one.` → `Wilmer promised three or four members a cancellation, he is gone, and the others still work with you.` | `You know why…` es giro retórico, no anclaje: en cuanto Tatiana nombra a Wilmer, el secreto sale entero. El `you` final la tumba |
+| 3 | B · exponentes, filas `taking her side` / `talking about the paper` | intercambiadas | la tabla no estaba en orden alfabético (`taking` &lt; `talking`) |
+| 4 | cabeceras de las dos tablas | `· use it or don't ·` añadido | faltaba en este escenario y está en los otros ocho. Cuesta prosa, y se pagó en A: fuera `Tuesday, 6:40 p.m.` de `Where you are` (repite la fila `Now` de sus datos) y fuera `You choose the moment.` (lo dice ya la frase anterior) |
+
+Al filo y no contado, con la razón escrita en el informe: las filas 3-4-5 de la tabla de A son las
+tres del desenlace, pero en orden interno invertido; las 2→4 de B son el cierre en orden, con una
+fila intercalada. Ninguna de las dos secuencias resuelve el escenario sin escuchar al otro.
