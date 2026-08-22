@@ -48,7 +48,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 **You can't**
 1. Sell it for less than 390,000 with the new gears on. A smaller number needs a condition, and you say the condition out loud, in the same turn.
 2. Leave the bike in the lobby after today. The doorman told you twice.
-3. Take the gears off here. You need the shop for that, before one.
+3. Take the gears off here. Your shop does that, and it closes at one.
 
 **Only you know**
 - The new gear set is exactly the size you need for the road bike you want next. You would sell it for 330,000 with the old gears back on, and lose nothing. If you say that early, you lose the deal.

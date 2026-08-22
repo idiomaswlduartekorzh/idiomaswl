@@ -20,7 +20,7 @@ anteriores se escribieron sin ellas. Qué se tocó y por qué, al final del arch
 > **No boss here.** You cook. She came at nine to help. **You speak first.** 9 turns · 7 minutes.
 > **One screen, one player.** Don't read from it.
 
-**The patio, 11:20 a.m.** · Sunday, September 20, in Girón. You lit the fire at nine. The group agreed to this plan on Friday.
+**The patio, 11:20 a.m.** · Sunday, September 20, in Girón. You lit the fire at nine, for Friday's plan: everybody here at one.
 
 **What you're after** · One number, before twelve o'clock: how many plates at one. You are cooking for one o'clock, not for a river trip.
 

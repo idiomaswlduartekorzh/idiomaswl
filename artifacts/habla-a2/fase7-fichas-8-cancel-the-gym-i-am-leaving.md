@@ -115,7 +115,7 @@ With the screen face down: what he writes today and what he doesn't · **one** w
 **You can't**
 1. A cancellation inside the minimum term is not yours to give. That answer comes from retention, in writing, and not from you.
 2. You can't file a change when her paper does not have both dates. Today you can open a case, and she will think a case is a cancellation.
-3. You can't ask her where she is going, why, or what her plan B is. You can ask when she comes back. Édison reads a reason on that form, and never a destination.
+3. You can't ask her where she is going, why, or what her plan B is. You can ask when she comes back. You can ask her for a reason, and never a destination.
 
 **Only you know**
 - You can open a case today, and she keeps today's date even if Édison answers late. Without that number she misses the cut-off and pays **92,000** more. You have nothing else behind this counter today.

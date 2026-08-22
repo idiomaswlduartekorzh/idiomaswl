@@ -40,7 +40,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 > **Informal.** Same rank, same shifts, you see each other every day. **You start.** About 7 turns each · 7 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday and you are in the back room of the café. It is 3:40 in the afternoon, the machine is off, and Nayibe, the manager, is at the other café. You waited half an hour for the right moment, and Saturday is in four days.
+**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are in the back room of the café, with the machine off and Nayibe at the other one. You waited half an hour for the right moment, and Saturday is in four days.
 
 **You want** · You need someone to open on Saturday the 12th, and it has to be written in the café group today.
 
@@ -195,8 +195,8 @@ name and an hour. You never once said that the problem is theirs.
 > `Confirm now`
 
 > **On your screen, under the email:** from three to six on Saturday you can't promise an hour.
-> You can promise that you will be there. Maybe you agreed that you come in after the exam.
-> That plan does not work now. Say it before you close: it is in your **You did it if**.
+> You can promise that you will be there. Maybe you agreed that you come in after the exam,
+> and now you can't. Say it before you close: it is in your **You did it if**.
 
 **Si se lee antes de tiempo** (nota de diseño, no va en pantalla): no se gana nada y se pierde
 turno. El agujero de 3:00 a 6:00 existe igual y ningún reparto de la tarde lo esquiva. Lo único
@@ -214,7 +214,7 @@ dónde ir.
 1. Who opens on Saturday 12, and at what time.
 2. How long that person stays, and who comes in after.
 3. Which shift gets paid back, and on what exact day.
-4. Who asked for the swap. The message says the name.
+4. Who asked for the swap — the name, written in the message.
 5. What's still open, who fixes it, and before what time today.
 
 **Five points, or it isn't closed.** It closes **partial**. That is the plan.

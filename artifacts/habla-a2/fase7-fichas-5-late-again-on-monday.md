@@ -27,7 +27,7 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 
 **Where you are** · It is Monday, August 17, 7:35 a.m. The auto parts store is still shut. She called you into the office and closed the door. Two things are on the desk.
 
-**You want** · You want to walk out with no warning about you on paper. You also want the second set of keys.
+**You want** · You want your August bonus safe from that paper, and you want the second set of keys.
 
 **You can't**
 1. You can't say why your Saturday mornings are busy. You don't want the store to know about them. Say no to the day, and nothing else about it.

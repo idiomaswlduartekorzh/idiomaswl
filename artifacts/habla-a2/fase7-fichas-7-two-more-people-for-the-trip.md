@@ -36,7 +36,7 @@ fichas la señalan y ninguna la copia.
 
 **You want** · Kevin has to pay the 100,000, or give you a date for it tonight. And his car leaves at 8:00 with yours.
 
-**Your own rule** · Don't say yes before you have a name and a reason.
+**Your own rule** · No yes without a name and a reason.
 
 **You can't**
 1. Put money in for somebody else. You paid 600,000, and Kevin's part is missing. You can pay his part, not somebody else's. If the six pay again, you put in your part and nobody else's.
