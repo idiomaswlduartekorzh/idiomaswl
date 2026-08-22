@@ -8,8 +8,9 @@ import type { SatItemMeta } from '../module-types'
  * negocian ítem a ítem: **D, A, C, D, B** (el plan asignaba B, A, B, C, A; ver «REPARTO DE
  * LETRAS» al final de este comentario). El orden de los cinco es **q23 · q24 · q26 · q25 ·
  * q27** —q25 y q26 se intercambiaron enteros, ver «CALIBRACIÓN» al final—, con dificultades
- * **3, 3, 2, 2, 3** —la de q26 volvió de 1 a 2 en la segunda pasada de calibración, ver el
- * final— y temas humanidades, historia, literatura, ciencia, humanidades. Todo el
+ * **3, 3, 2, 2, 2** —la de q26 volvió de 1 a 2 en la segunda pasada de calibración y la de
+ * q27 bajó de 3 a 2 al reescribirlo entero, ver el final— y temas humanidades, historia,
+ * literatura, ciencia, humanidades. Todo el
  * contenido es original (§5 del blueprint); de College Board solo se reproducen los dos
  * enunciados canónicos.
  *
@@ -98,7 +99,8 @@ import type { SatItemMeta } from '../module-types'
  *
  * Efecto de conjunto que esto deja, y que se asume a conciencia: en los tres ítems de
  * transiciones del bloque **la clave nunca es el conector de consecuencia** —«As a result,»,
- * «Hence,» y «Consequently,» son los tres distractores—. Con tres ítems no es un
+ * «Hence,» y «Thus,» son los tres distractores; el tercero era «Consequently,» hasta que q27
+ * se reescribió entero, ver la cuarta pasada—. Con tres ítems no es un
  * patrón explotable, y la alternativa, poner de clave el conector que se adivina, es
  * exactamente lo que filtraba.
  *
@@ -136,6 +138,13 @@ import type { SatItemMeta } from '../module-types'
  * más corta, así que «elige el conector más corto» deja de valer 2 de 3 en el bloque.
  *
  * ### q27: la fuga que q26 dejó anunciada, y que llegó donde se dijo
+ *
+ * ⚠️ **Esta sección describe un ítem que ya no existe.** El pasaje de la traducción y el juego
+ * «Even so,» · «To be sure,» · «For instance,» · «Consequently,» se retiraron enteros en la
+ * cuarta pasada de calibración (última sección de esta cabecera). Lo vigente de aquí es el
+ * razonamiento de R14 —cómo se equilibra un juego de cuatro conectores en sus dos ejes,
+ * marcación y relación—, que es lo que se ha vuelto a aplicar al juego nuevo. Caduca todo lo
+ * demás: texto, opciones, longitudes y comprobaciones.
  *
  * Al entregar q26 este comentario dejó escrito que «q27 tiene hoy la arquitectura que q26 acaba
  * de perder; si la próxima ciega deja algo por encima del umbral en transiciones, es ahí donde va
@@ -178,7 +187,7 @@ import type { SatItemMeta } from '../module-types'
  * (13) ni la más corta (8), de modo que «elige el conector más corto» sigue valiendo 1 de 3 en el
  * bloque y no 2 de 3. Y se mantiene lo que ya decía este comentario: **la clave nunca es el
  * conector de consecuencia** en los tres ítems de transiciones —«As a result,», «Hence,» y
- * «Consequently,» son los tres distractores—.
+ * «Consequently,» son los tres distractores— (el tercero es hoy «Thus,»).
  *
  * Puertas medidas sobre el bloque después de rehacerlo, no heredadas de la versión anterior:
  *
@@ -424,7 +433,7 @@ import type { SatItemMeta } from '../module-types'
  * tocó, así que el arreglo de R13 —el que bajó estos dos de 10/10 a ciegas— está intacto.
  *
  * **Lo que esto sustituye de la lista de la puerta 7**: las cinco longitudes pasan a ser
- * **123,0 · 115,5 · 75,3 · 124,8 · 112,3** palabras-SAT en el orden en que van (q23 · q24 ·
+ * **123,0 · 115,5 · 75,3 · 124,8 · 68,0** palabras-SAT en el orden en que van (q23 · q24 ·
  * q26 · q25 · q27). Las cinco siguen dentro de 25-150; q25 no se tocó en esta pasada.
  *
  * Las puertas mecánicas se corrieron antes y después (`node scripts/check-sat-exam.mjs
@@ -512,13 +521,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Translators often say that a translation ages faster than the book it translates, and the practice of publishers bears them out. A novel published in 1890 is still read in its own language. The versions made of it elsewhere are replaced every generation or two, each time because the old one sounds dated. ______ the sentence a translator writes belongs to the moment of its writing as the original does not: it answers a question about how a foreign book should sound in this language now, and every generation asks it again. The difficulty is that originals sound dated too, and readers forgive them for it. What ages may be less the translation than our patience with it.',
+      'The art school in Verel keeps one room of plaster casts. Each cast is a copy of a Greek statue, poured in a mold in 1880. The school stopped teaching from casts in 1962 and has not gone back. A sign by the door tells every visitor that nothing inside is original. ______ the room is full on Monday mornings, when students come to draw the casts. What they want is a face that will hold still for three hours.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
+      'Instead,',
       'Even so,',
-      'To be sure,',
       'For instance,',
-      'Consequently,',
+      'Thus,',
     ],
     answer: 1,
   },
@@ -605,19 +614,19 @@ export const meta: SatItemMeta[] = [
     id: 'q27',
     domain: 'EOI',
     tipo: 'transitions',
-    dificultad: 3,
+    dificultad: 2,
     tema: 'humanidades',
     razones: {
       A:
-        'Pone el giro del párrafo una oración antes de donde está. «Even so» mantiene lo dicho **a pesar** de lo que se acaba de decir, y para eso necesita una oposición: aquí la oración del hueco no se opone a la anterior, la explica —las versiones se sustituyen porque la frase del traductor pertenece a su momento—. El giro de este texto existe, pero llega dos oraciones más tarde, con «The difficulty is that…». Es el camino de quien reconoce que el párrafo va a girar y coloca el conector adversativo en el primer hueco que encuentra, sin comprobar qué contradice a qué. Es además la trampa del ítem: comparte con la clave el ser un conector de giro y no de flujo, de modo que «elige el que da la vuelta» deja aquí dos opciones y no sirve de nada.',
+        'Sustituye lo esperado por lo ocurrido, y el texto ofrece dónde agarrarse: dos oraciones antes se dice que la escuela dejó de enseñar con vaciados en 1962 y no ha vuelto, así que el hueco parece anunciar lo que se hace en la sala en lugar de aquellas clases. Falla por dos sitios. «Instead» opera sobre la oración que tiene delante, y esa —el cartel, todo son copias— sigue siendo verdad después del hueco: no se sustituye nada. Y lo que hacen los estudiantes del lunes es exactamente lo que hacían aquellas clases, dibujar los vaciados: eso es continuidad, no reemplazo. Es el camino de quien busca la expectativa fallida más atrás en el párrafo y no comprueba qué frase toca el conector.',
       B:
-        'Correcta: en el hueco el texto concede la tesis de los traductores en su forma más fuerte —la frase del traductor pertenece al momento en que se escribió como no le pasa al original— para volverse contra ella dos oraciones después, con «The difficulty is that…». «To be sure» es exactamente esa concesión previa al giro: admite el punto que se va a matizar, no lo matiza todavía. El cierre confirma la dirección: lo concedido se matiza, no se abandona.',
+        'Correcta: la oración anterior al hueco es la razón para esperar una sala vacía —un cartel avisa a cada visitante de que ahí dentro no hay nada original—, y la del hueco dice lo contrario, que los lunes está llena de gente dibujando esos mismos vaciados. Las dos siguen siendo verdad a la vez: los vaciados no dejan de ser copias porque vengan estudiantes. Eso es lo que marca «Even so», que concede el hecho y va contra lo que ese hecho hace esperar. El cierre lo confirma: lo que buscan es una cara que aguante quieta tres horas, de modo que ser copias no les estorba.',
       C:
-        'Toma lo que sigue por un caso de lo anterior. No hay caso: la oración del hueco no nombra ninguna traducción ni ningún traductor concreto y es más general que la que la precede, porque dice qué le pasa a cualquier frase traducida. Es lo que elige quien ve una observación amplia seguida de otra y supone que la segunda ilustra a la primera.',
+        'Toma la oración del hueco por un caso de la anterior, y la forma invita: «every visitor» es un plural general y lo que sigue son datos concretos —los lunes por la mañana, estudiantes, dibujar—, que es la silueta de un ejemplo. Pero un ejemplo tiene que ser un caso de lo que se acaba de afirmar, y lo afirmado es qué dice el cartel. Una sala llena no ilustra que un cartel avise de nada; va contra lo que ese aviso hace esperar. Es el camino de quien ve concreción detrás de una frase general y oye «por ejemplo».',
       D:
-        'Invierte la flecha causal. Presenta la dependencia del momento de escritura como efecto de la costumbre de sustituir versiones, cuando el texto la ofrece como su razón: se sustituyen porque la frase del traductor pertenece a su momento. Es el camino de quien encadena por consecuencia dos oraciones que hablan de lo mismo sin comprobar cuál sostiene a cuál.',
+        'Encadena por causa dos hechos solo porque van seguidos. Que un cartel avise de que nada es original no produce una sala llena: si algo hace esperar, es la sala vacía, y ese desajuste es justo lo que el conector correcto marca. Quien elige aquí ha leído las dos oraciones como eslabones de una cadena sin preguntarse en qué dirección va la flecha, y el tono breve y formal del conector se lo pone fácil.',
     },
     fuenteHecho:
-      'Lugar común real de la teoría de la traducción —las traducciones se rehacen cada generación y los originales no— discutido con argumentación propia. Ningún traductor, teórico, novela ni traducción reales; 1890 solo fecha un ejemplo inventado. La segunda mitad de la primera oración —«and the practice of publishers bears them out»— sustituye a «The claim is easy to state and hard to test» y describe la misma costumbre editorial que el párrafo ya explicaba, sin atribuirla a ninguna casa ni a ningún país: no añade ningún hecho que haya que sostener con una fuente. El motivo del cambio no es de contenido sino de clave única, y está en la sección «q27» de la cabecera. El 22 ago 2026 se partió en dos la segunda oración (33 palabras): «…is still read in its own language. The versions made of it elsewhere are replaced every generation or two, each time because the old one sounds dated.» Baja de 23,8 a 19,7 palabras por oración de media. La oración del hueco (39) no se parte, porque sus dos mitades son lo que citan las razones de A y de D. Se pierde el «while» que unía las dos mitades de la segunda —el mismo trato que la pasada anterior dio a «which» y a «and» en q25—, y con él no se pierde ninguna oposición junto al hueco: el contraste entre el original y sus versiones sigue ahí por yuxtaposición, y la oposición que el ítem examina llega, como antes, dos oraciones después, en «The difficulty is that…».',
+      'Patrón libre de la enseñanza del arte: las academias reunieron en el siglo XIX colecciones de vaciados en yeso de estatuas antiguas, el dibujo del yeso salió de los planes de estudio a mediados del XX y muchas salas de vaciados sobrevivieron y volvieron a usarse para dibujar del natural. La escuela de Verel, las fechas de 1880 y 1962, el cartel y los lunes por la mañana son inventados: ni escuela, ni colección, ni estatua reales, y ninguna afirmación del pasaje enseña un hecho falso sobre un sitio que exista. Pasaje escrito de cero el 22 ago 2026 para la banda fácil: 80 palabras, 68,0 palabras-SAT, 13,3 palabras por oración de media y 15 la más larga, con las dos oraciones que el conector une contiguas —el cartel y la sala llena— y el cierre confirmando la concesión.',
   },
 ]

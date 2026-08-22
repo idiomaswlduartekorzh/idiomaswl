@@ -179,13 +179,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'The chapel at Aldrec stands white on the point, where the village ends. A widow built it in 1712, after the sea took her sons. The door is unlocked one day a year. Two fishermen paint the wall facing the water every spring, and the white shows up far out. Coming home, a boat lines the wall up with the pier and steers in on that line. For the men who fish here, the building is less a church than a ______.',
+      "The chapel at Aldrec stands white on the point. A widow built it in 1712, after the sea took her sons. The door is unlocked one day a year. Two fishermen repaint the seaward wall every spring, and the white shows up far out. Coming home, a boat lines that wall up with the pier and steers in on that line. The men who fish here keep the paint fresh for that line. None of them could tell you the widow's name. For them it is a piece of ______.",
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
-      'refuge',
-      'monument',
-      'boundary',
-      'landmark',
+      'history',
+      'property',
+      'scenery',
+      'equipment',
     ],
     answer: 3,
   },
@@ -308,13 +308,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'El estudiante que elige esta es el que llega con lo que el mundo le ha enseñado sobre las capillas de la costa: un edificio en la punta, hombres que salen al mar y un temporal que obliga a meterse en alguna parte. El texto no le da ninguna de las dos cosas que ese camino necesita —ni una tormenta ni una puerta abierta—, y cierra la segunda en una línea: «The door is unlocked one day a year». Un edificio cerrado los otros trescientos sesenta y cuatro días no ampara a nadie, y lo único que el texto cuenta que se hace con él se hace desde el agua, sin bajarse del barco.',
+        'El estudiante que elige esta es el que se queda con la segunda oración —«A widow built it in 1712, after the sea took her sons»— y toma la edad del edificio y la desgracia que hay detrás por lo que el edificio es para quien pesca. El camino es de los buenos: tres siglos y un naufragio detrás son justo lo que convierte un edificio en un pedazo de historia. El texto lo cierra en una línea y sin discutirlo: «None of them could tell you the widow\'s name». De la viuda no les queda el nombre; lo que sí saben es para qué sirve la pared blanca. Un edificio del que se conserva el uso y no la memoria de quien lo levantó no es, para esa gente, un pedazo de historia.',
       B:
-        'El estudiante que elige esta es el que lee la segunda oración —«A widow built it in 1712, after the sea took her sons»— y toma el motivo por el que se levantó el edificio por lo que el edificio es. El texto separa las dos cosas, y la oración del hueco lo dice con todas sus palabras: «For the men who fish here». De esos hombres no consta una visita, ni una ofrenda, ni un nombre leído; consta que dos de ellos pintan la pared cada primavera y que un barco se alinea con ella para entrar. Recordar a tres ahogados es lo que hizo la viuda hace tres siglos, no lo que el edificio hace hoy por quien pesca.',
+        'El estudiante que elige esta lee quién lo cuida —«Two fishermen repaint the seaward wall every spring» y «The men who fish here keep the paint fresh»— y da el paso que se da todos los días fuera del examen: lo que uno mantiene, uno lo tiene. En el texto no hay título de nadie: no se dice que sea del pueblo, ni de los dos pintores, ni de la iglesia, y la única persona de la que consta que hizo algo con él como suyo es la viuda de 1712. Y el motivo del mantenimiento está escrito, y no es la posesión: «keep the paint fresh for that line». Se cuida lo que se usa; usarlo no es tenerlo.',
       C:
-        'El estudiante que elige esta es el que se agarra a la única indicación de sitio que da el texto —«where the village ends»— y la convierte en la función. El camino es real: una capilla en el extremo de un pueblo marca de hecho dónde acaba. Pero el texto no divide nada con ella ni mide nada desde ella —no hay dos lados, ni término, ni nadie a quien le importe el límite—, y lo que sí pone delante es una pared blanca que se ve desde lejos y un barco que entra alineándola con el muelle. Para entrar por esa línea da exactamente igual dónde termine el pueblo.',
+        'El estudiante que elige esta se queda con la estampa: un edificio blanco en la punta y una pared que se vuelve a pintar de blanco cada primavera. El camino es real —lo primero que hace el texto es poner el color en el paisaje— y la pintura anual parece cuidado de lo bonito. Lo que el texto hace con esa blancura es lo contrario de mirarla: «the white shows up far out», y lo que se hace con ella se hace a millas y desde el agua, alineándola con el muelle para entrar. En todo el pasaje nadie se para delante del edificio ni dice que sea hermoso. El blanco no está puesto para ser visto de cerca, sino para ser reconocido de lejos.',
       D:
-        'Correcta: la oración anterior al hueco lo dice sin figuras. «Coming home, a boat lines the wall up with the pier and steers in on that line»: la pared es el punto con el que se toma la línea de entrada, y la oración de antes explica por qué sirve —«the white shows up far out»— y por qué la repintan cada primavera. Un edificio que se usa desde lejos para saber dónde se está y por dónde se entra es un punto de referencia, no un culto ni un recuerdo. El estudiante que elige esta es el que ha leído las dos oraciones anteriores al hueco y no ha necesitado ninguna otra. Frase que no se puede recortar: «For the men who fish here», que es la que reduce la pregunta al uso y deja fuera el motivo de 1712; sin ella, `monument` se defiende y el ítem tiene dos claves.',
+        'Correcta: las tres oraciones anteriores al hueco describen un objeto de trabajo y no otra cosa. Se le da servicio en fecha fija —«Two fishermen repaint the seaward wall every spring»—, se le da servicio por un motivo declarado —«The men who fish here keep the paint fresh for that line»— y ese motivo es una maniobra concreta: «Coming home, a boat lines that wall up with the pier and steers in on that line». Algo que se revisa cada temporada para que siga sirviendo a una faena es, para quien lo revisa, un pedazo de su equipo, aunque esté hecho de piedra y tenga altar dentro. El estudiante que elige esta ha leído las tres oraciones anteriores al hueco y no ha necesitado ninguna otra. Frase que no se puede recortar: «for that line», que es la que ata el mantenimiento al uso; sin ella, la pintura anual vuelve a poder leerse como aseo o como cuidado de lo propio y `scenery` y `property` se defienden.',
     },
     fuenteHecho:
       'Ficción original sobre un hecho libre y corriente de la navegación costera: una construcción blanqueada en tierra sirve de marca de día, y alinear dos marcas da la línea con la que se entra a un puerto. Aldrec, la viuda, la fecha de 1712, los dos pintores y el muelle son inventados; no describen ningún pueblo ni ninguna capilla reales, y no se nombra ningún país ni ninguna costa. Nombre comprobado en buscador antes de fijarlo: «Aldrec» no aparece como topónimo. Quien lo cambie, que repita la búsqueda.',
