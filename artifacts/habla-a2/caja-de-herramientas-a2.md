@@ -24,7 +24,7 @@ conoce. Sin marca = para los dos.
 | `Sorry to bother you.` `[asks]` | you know this is a bad moment | formal |
 | `Hi — can we talk for a second?` `[asks]` | someone you see every day | informal |
 | `Good morning. How can I help you?` `[grants]` | you're the one behind the counter | formal |
-| `Come in. What's going on?` `[grants]` | you called them, not the other way round | neutral |
+| `Come in. What's going on?` `[grants]` | you called them, not the other way around | neutral |
 | `I'm here about…` | say what this is about without saying everything | neutral |
 
 Nobody walks straight into their problem. Skipping this sounds rude in English even when you aren't.

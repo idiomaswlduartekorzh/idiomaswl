@@ -40,19 +40,19 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 > **Informal.** Same rank, same shifts, you see each other every day. **You start.** About 7 turns each · 7 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are in the back room of the café, with the machine off and Nayibe at the other one. You waited half an hour for the right moment, and Saturday is in four days.
+**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are in the back room. The machine is off, and Nayibe is at the other café. You waited half an hour for the right moment, and Saturday is in four days.
 
-**You want** · You need someone to open on Saturday the 12th, and it has to be written in the café group today.
+**You want** · You need someone to open on Saturday the 12th, and the message has to go to the café group today.
 
 **You can't**
-1. You can't offer money, because Nayibe said in front of everybody that nobody pays anybody for a shift.
+1. You can't offer money. Nayibe said in front of everybody that nobody pays for a shift here.
 2. You can't ask for the whole Saturday. You have to offer two ways to split the shift before they say yes.
 3. You can't call Nayibe now, because she is at the Autopista café until six.
 
 **Only you know**
-- You already asked Katherine and Elkin, and both said no. This person is your last option, and if they learn that, the favor costs you more.
+- You already asked Katherine and Elkin, and both said no. This person is your last option, and if they learn that, the favor will cost you more.
 - Your Speaking test is on Sunday the 13th, for now. So Saturday after 1:30 is free for you, and you have not said that yet.
-- You can pay the favor back with a date: Friday the 18th at night, Saturday the 19th, or the stock count on Monday the 14th.
+- You can pay the favor back with a date: Friday the 18th at night, Saturday the 19th, or the inventory on Monday the 14th.
 
 **If you walk away with nothing** · You lose the exam and the money you paid for it, or you lose the shift. And you work next to this person again tomorrow.
 
@@ -65,7 +65,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | Your exam | IELTS, Saturday 12, 8:00 a.m. · exam center in Floridablanca |
 | What it cost | more than a million pesos · no new date, no money back |
 | Out of the exam | about 1:30 p.m. · Floridablanca to the café: 40 minutes |
-| You can pay back | Friday 18 night · Saturday 19 · stock count Monday 14 |
+| You can pay back | Friday 18 night · Saturday 19 · inventory Monday 14 |
 | Off the table | money |
 | The channel | the café group on WhatsApp |
 
@@ -75,7 +75,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 |---|---|---|
 | non-refundable | money you pay and never get back | the exam in one word · your hardest number |
 | shift | the hours you work in one day | one Saturday shift · the only thing you need from them |
-| stock count | the day you count everything in the store | the ugly job you can put on the table |
+| inventory | the day you count everything in the store | the ugly job you can put on the table |
 | the closing | the last shift of the day | the other half of Saturday the 12th |
 | the opening | the first shift of the day | yours, and the one you can't be at |
 | to be off | to have the day free, with no work | your free days, for when you offer them back |
@@ -85,8 +85,9 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | to swap | to change one thing for another one | what you put back on the table |
 
 ### Your toolkit
-Yours: **1** `[asks]`, **2**, **4** `[jargon]` — *IELTS*, *Speaking* and *exam center* are your
-words and nobody else's in that back room — **5**, **6** and **8**. Not 3, not 7. Block **6** is
+Yours: **1** `[asks]`, **2**, **3** `[receives]`, **4** `[jargon]` — *IELTS*, *Speaking* and
+*exam center* are your words. Nobody else in that back room uses them — **5**, **6** and **8**.
+Not 7. Block **6** is
 for the question you can't answer — they are going to ask this: who else did you ask?
 
 ### Say it here — grouped by job, not in order · **don't read it out loud**
@@ -96,15 +97,15 @@ for the question you can't answer — they are going to ask this: who else did y
 | asking about theirs | `What are you doing on …?` · `How does … work for you?` | open question · their Saturday is a thing you don't know yet, and you're about to ask them for it |
 | asking for it | `Can I ask you a …?` · `Can we write it in … today?` | open the door before you walk in · ask for it where shifts become real |
 | bad news | `There's a problem: …` | break something you already said |
-| paying it back | `I can take your shift on …` · `I'll do the stock count on …` | an exact date, never "sometime" · put something of yours on the table |
+| paying it back | `I can take your shift on …` · `I'll do the inventory on …` | an exact date, never "sometime" · put something of yours on the table |
 | splitting it | `We can do it two ways: … or …` · `I can be here at …` | two options instead of the whole block · the hour that makes a split possible |
 | the exam | `I'm taking the IELTS on …` · `I paid … and there's no …` | a fixed plan with an hour on it · what you lose, as a number |
 
 ### You did it if
-Someone opens on the 12th, and you both said who and at what time. You put two ways to split it on
-the table before they said yes. You gave an exact date to pay it back. You brought up the change in
-your own Saturday yourself, before closing. You said out loud what is still open, with a name and
-an hour. Nobody found out who else you asked.
+Someone opens on the 12th, and you both said the name and the hour. You offered two ways to split
+it before they said yes. You gave an exact date to pay it back. You told them about the change in
+your own Saturday before you closed. You said out loud what is still open, with a name and
+an hour. Nobody knows about Katherine and Elkin.
 
 ---
 
@@ -113,17 +114,17 @@ an hour. Nobody found out who else you asked.
 > **Informal.** Same rank, same shifts, you see each other every day. **They start.** About 7 turns each · 7 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are in the back room tying your apron, with your shift twenty minutes away and Nayibe at the other café until six.
+**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are tying your apron in the back room. Your shift starts in twenty minutes, and Nayibe is at the other café until six.
 
-**You want** · You want to help. But not by working sixteen hours, and not if this counts as your third swap.
+**You want** · You want to help. But you don't want to work sixteen hours, and this can't be your third swap.
 
 **You can't**
-1. You can't say yes to anything Nayibe can count as swap number three. Your one condition is the way to be safe, and you don't negotiate it: today, in writing, the café group says that they asked you for it.
-2. You can't stay after 8:00 p.m. on Saturday. Your bus to San Gil leaves at 5:00 on Sunday morning and the ticket is paid.
+1. You can't say yes to anything Nayibe can count as swap number three. You have one condition and you never change it: today they have to ask you for it in the café group, in writing.
+2. You can't stay after 8:00 p.m. on Saturday. Your bus to San Gil leaves at 5:00 on Sunday morning and you already paid for it.
 
 **Only you know**
 - You read in the group on Friday that forty people are coming for a company breakfast at nine on Saturday the 12th. That opening is the worst shift of the month, and they don't know it — they joined the group late.
-- You already swapped twice this month. Nayibe said in front of everybody that the third one puts you on the back-up list, with no more fixed weekends. Your fixed weekends are the days that pay you in tips.
+- You already swapped twice this month. Nayibe said in front of everybody that the third one puts you on the backup list, with no more fixed weekends. Your fixed weekends are the days that pay you in tips.
 - You work a wedding for sixty people on Saturday the 19th. You can say this one out loud: it is just numbers.
 
 **If you walk away with nothing** · You work with this person every day, and you are going to need exactly this favor next month.
@@ -137,7 +138,7 @@ an hour. Nobody found out who else you asked.
 | That day | a reservation for forty people at 9:00 a.m. — a company breakfast |
 | Announced | in the café group, on Friday |
 | Your swaps this month | two: the 28th and the 4th |
-| What Nayibe said | third swap → the back-up list, no more fixed weekends |
+| What Nayibe said | third swap → the backup list, no more fixed weekends |
 | Your Sunday | bus at 5:00 a.m. to San Gil · ticket paid |
 | Your limit | nothing after 8:00 p.m. on Saturday |
 | A normal Saturday | about 45,000 pesos in tips |
@@ -152,7 +153,7 @@ an hour. Nobody found out who else you asked.
 | a swap | when two people change days | swap number three · the thing you can't say yes to |
 | fixed weekends | the weekend days that are always yours | the days with tips · the real cost |
 | in a row | one after another, with no break | the words for sixteen hours with no break |
-| the back-up list | people who work only when somebody is missing | what swap number three costs you |
+| the backup list | people who work only when somebody is missing | what swap number three costs you |
 | tips | extra money the customers leave you | 45,000 on a normal Saturday · a number to put on the table |
 | to be short-staffed | to not have enough people at work | why forty people at nine is a problem |
 | to cover | to work someone else's hours | what they are asking you for |
@@ -161,8 +162,8 @@ an hour. Nobody found out who else you asked.
 ### Your toolkit
 Yours: **1** (you don't open — they stop you), **2**, **3** `[receives]` — they are going to throw
 *IELTS*, *Speaking* and *exam center* at you, and you don't have to know them: ask — **5**
-(yours has numbers in it), **7** `[grants]` and **8**. Not 4, not 6: you hide nothing.
-You have a card to drop, and what you choose is when.
+(your reason has numbers in it), **7** `[grants]` and **8**. Not 4, not 6: you hide nothing.
+You have a card to drop, and you choose the moment.
 
 ### Say it here — grouped by job, not in order · **don't read it out loud**
 
@@ -177,8 +178,8 @@ You have a card to drop, and what you choose is when.
 
 ### You did it if
 You dropped the forty-people breakfast when you wanted, not before. You said your condition
-once. You never changed it. You are out by 8:00 p.m. You said out loud what is still open, with a
-name and an hour. You never once said that the problem is theirs.
+once. You never changed it. You leave before 8:00 p.m. You said out loud what is still open, with a
+name and an hour. You never said that this is their problem.
 
 ---
 
@@ -209,12 +210,12 @@ dónde ir.
 
 ## Both screens — how it ends
 
-**You finish when the two of you say out loud, together, the message that goes to the café group today:**
+**Today a message goes to the café group. You finish when the two of you say it out loud, together:**
 
-1. Who opens on Saturday 12, and at what time.
+1. Who opens on Saturday the 12th, and at what time.
 2. How long that person stays, and who comes in after.
-3. Which shift gets paid back, and on what exact day.
-4. Who asked for the swap — the name, written in the message.
+3. Which shift pays the favor back, and on what exact day.
+4. Who asked for the swap — the name, in the message.
 5. What's still open, who fixes it, and before what time today.
 
 **Five points, or it isn't closed.** It closes **partial**. That is the plan.
@@ -276,7 +277,7 @@ Medido después con el contador canónico: ROLE A **436**, ROLE B **443**, techo
 | 13 | A · `Where you are`, oración 3 | `You have been waiting` → `You waited` | nivel R1 |
 | 14 | Carta · nota bajo el email | `Anything you two agreed with you coming in…` → `Maybe you agreed that you come in after the exam. That plan does not work now.` | nivel R2 |
 | 15 | A · `You can't` 2, oración 2 | `put two ways … on the table before you get a yes` → `offer two ways to split the shift before they say yes` | nivel R3 |
-| 16 | A · `Only you know` 1, final | `if that comes out, the favor gets more expensive` → `if they learn that, the favor costs you more` | nivel R5 |
+| 16 | A · `Only you know` 1, final | `if that comes out, the favor gets more expensive` → `if they learn that, the favor will cost you more` | nivel R5 |
 | 17 | B · `You did it if`, oraciones 1 y 2 | `when it suited you` → `when you wanted`; `Your condition was said once, and never negotiated` → `You said your condition once. You never changed it.` | nivel R6 |
 | 18 | A · `Your toolkit`, última oración | `they are going to ask who else you asked` → `they are going to ask this: who else did you ask?` (y el primer `:` pasa a raya, para no encadenar dos) | nivel §3, menor |
 | 19 | `how it ends`, cierre | `— that's how it was built to close` → `. That is the plan.` | nivel §3, menor |
@@ -290,6 +291,77 @@ Medido después con el contador canónico: ROLE A **436**, ROLE B **443**, techo
 **Lo que no se tocó, y por qué:** las bandas de la cabecera (7 minutos y 7 turnos por rol están
 dentro del 5-8 y del 6-9 de §4: el informe de nivel las da por buenas), el motor, los datos duros,
 el reparto de bloques de la caja, la carta salvo su nota, y las 55 oraciones de prosa que el
-informe de calcabilidad declara sanas. El bloque `grammarReferences` de §8 del informe de nivel
-**no** se pegó: es una pieza nueva, no una línea citada, y queda fuera de una pasada quirúrgica.
+informe de calcabilidad declara sanas. El bloque `grammarReferences` **quedó pendiente cuatro
+pasadas** por ser pieza nueva y no línea citada; está pegado más abajo, al final del archivo.
 
+
+
+---
+
+## `grammarReferences` — 17 entradas, verificadas slug a slug
+
+`How about …?` y la acepción de `work` en `How does … work for you?` se quedan como **fórmulas
+memorizadas, no como formas productivas**: ninguna tiene tema en ningún nivel del registro, y
+ninguna exige estructura nueva.
+
+```ts
+grammarReferences: [
+  { slug: 'first-conditional', level: 'a2', title: 'El Primer Condicional en Inglés A2',
+    rationale: 'El acto de B es conceder-con-condicion y se pronuncia aquí: "I can do it, but only if you ask me in the group today". El tema autoriza literalmente can dentro de la cláusula if ("If you can come, please let me know"), que es lo que hace decible la condición sin discurso indirecto. También sostiene "What if you …?", el tronco con que B propone en vez de negar.' },
+  { slug: 'have-to-must', level: 'a2', title: 'Have to y Must en Inglés A2',
+    rationale: 'Los dos límites duros del escenario son obligaciones, no gustos: "I have to be free from three to six" (A, después de la carta) y "I have to leave at eight" (B, por el bus). El tema también trae "don\'t have to" (no es necesario), que es como B usa el bloque 3 de la caja sin quedar mal.' },
+  { slug: 'will-future', level: 'a2', title: 'El Futuro con Will en Inglés A2',
+    rationale: 'El pago del favor se compromete en will y con fecha exacta: "I\'ll do the inventory on Monday the 14th", "I\'ll write it in the group now". El tema separa este uso —decisión que se toma en el momento— del going to, que es lo que distingue una promesa de un plan.' },
+  { slug: 'present-continuous-future-a2', level: 'a2', title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
+    rationale: 'El plan fijo de A es un presente continuo con expresión de tiempo, que el tema declara esencial: "I\'m taking the IELTS on Saturday the 12th". Y la interrogativa del propio tema ("Are you working next Saturday?") es la que sostiene el exponente con que A abre por el lado del otro: "What are you doing on Saturday?".' },
+  { slug: 'past-simple-irregular', level: 'a2', title: 'Past Simple Verbos Irregulares en Inglés A2',
+    rationale: 'Los cuatro verbos que cargan el pasado del escenario son irregulares: paid ("I paid more than a million pesos"), did ("I did two swaps this month"), said ("Nayibe said the third swap puts me on the backup list") y el del punto 4 del cierre: "I asked you for the swap" — que solo es decible en activa.' },
+  { slug: 'past-simple-questions', level: 'a2', title: 'Preguntas y Negativos en Past Simple A2',
+    rationale: 'La pregunta que A no puede contestar y que su propia ficha le anuncia —"Who else did you ask?"— es past simple directo, con did y sin inversión rara. Es la razón de ser del bloque 6 de la caja.' },
+  { slug: 'present-perfect-ever-never', level: 'a2', title: 'Present Perfect con Ever, Never, Already y Yet',
+    rationale: 'Lo que queda pendiente —el punto 5 del cierre— se dice con already y yet: "I haven\'t talked to Nayibe yet", "Have you already written it in the group?". Es present perfect de experiencia y de balance, sin for ni since: la duración se queda fuera de A2.' },
+  { slug: 'quantifiers', level: 'a2', title: 'Cuantificadores en Inglés A2',
+    rationale: 'El tamaño del favor se discute contando: "How many people are coming?" — "Forty", "There aren\'t many people on Saturday morning", "I don\'t have much time", "a lot of tips". El escenario entero se juega en cuántos, y sin estos el estudiante dice números sueltos sin marco.' },
+  { slug: 'comparatives', level: 'a2', title: 'Comparativos en Inglés A2',
+    rationale: 'B defiende su coste comparando: "the wedding is bigger than a normal Saturday", "110,000 is more than 45,000". Y A cifra lo que pierde con la misma estructura: "more than a million pesos". Sin comparativo, el coste de cada lado se dice como queja, no como dato.' },
+  { slug: 'connectors-a2', level: 'a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
+    rationale: 'La columna vertebral de dar razones, que es el acto A2 del escenario: "I want to help, but sixteen hours is too much", "my bus leaves at five, so I can\'t stay after eight", "because there\'s no new date". El but es además lo que sujeta el exponente de concesión de B.' },
+  { slug: 'relative-clauses-a2', level: 'a2', title: 'Cláusulas de relativo en Inglés A2: who, which, that',
+    rationale: 'Sostiene lo que se dice y lo que se lee. Se dice: "the person who opens", "the shift that pays it back", "the days that pay me in tips". Y se lee: la ficha usa dos relativas de contacto ("the money you paid for it", "anything Nayibe can call swap number three") y este tema es el que enseña que el relativo se omite cuando es objeto.' },
+  { slug: 'superlatives', level: 'a2', title: 'Superlativos en Inglés A2',
+    rationale: 'La carta grande de B es un superlativo: "That is the worst shift of the month". Es la frase que cambia el tamaño del favor, y sin el tema se dice "that shift is very bad", que no obliga a A a mover nada.' },
+  { slug: 'can-ability', level: 'a1', title: 'Can para habilidad en inglés A1',
+    rationale: 'Sostiene la petición, la propuesta y la concesión de los dos lados: "Can I ask you a favor?", "Can we write it in the group today?", "We can do it two ways", "I can be here at six thirty", "I can do it, but only if…". El tema cubre explícitamente permiso y petición, y sustituye a los "Could I…?" de cortesía que el registro no ancla en ningún nivel.' },
+  { slug: 'telling-time', level: 'a1', title: 'Decir la hora en inglés A1',
+    rationale: 'El punto 1 del cierre exige quién abre y a qué hora, y el escenario entero son horas: 7:00, 3:00, 8:00, 1:30, 6:30. El tema autoriza la forma digital (three forty, six thirty), que es la única que hace decibles 3:40 y 6:30 sin quarter past ni half past.' },
+  { slug: 'prepositions-time', level: 'a1', title: 'Preposiciones de tiempo en inglés A1',
+    rationale: 'La fecha exacta con que se paga el favor no vale sin la preposición: "on Saturday the 12th", "on Friday the 18th", "at eight", "in the afternoon". El tema trae on + día y on + fecha con ordinal, que es exactamente el formato de los datos duros.' },
+  { slug: 'there-is-there-are', level: 'a1', title: 'There is / There are en inglés A1',
+    rationale: 'Las dos malas noticias del escenario entran con there is: "There\'s a problem: …" (A, cuando llega la carta) y "There\'s a reservation for forty people at nine" (B, su carta grande). Y la pérdida de A se dice en negativa: "there\'s no new date", forma que el tema acepta.' },
+  { slug: 'present-simple-questions', level: 'a1', title: 'Present simple interrogativo en inglés A1',
+    rationale: 'Las dos preguntas abiertas obligatorias son present simple con do/does: "What exactly do you need — the opening or the closing?" (B, antes de contestar nada) y "How does Saturday work for you?" (A). La primera es la que impide que B conceda a ciegas.' },
+]
+```
+
+---
+
+## Pasada de nivel (22 ago 2026) — `fase13-nivel-3.md`
+
+Veintidós renglones, ninguno de motor. Contador después: **ROLE A 431 · ROLE B 439** — los dos
+bajan, no hubo que comprar aire en ningún sitio.
+
+**El hallazgo de método es una regresión.** El commit `ae708726`, que era una pasada de
+*calcabilidad*, deshizo un arreglo del informe de nivel anterior: la pasiva del punto 4 del cierre
+volvió con otra cara (`— the name, written in the message`, participio pasivo reducido, que es peor
+que la pasiva plena que se había quitado). Pasó porque **el veredicto de nivel nunca se pegó en el
+archivo como bloque cerrado**, así que el siguiente auditor no tenía cómo saber que estaba pisando
+un arreglo. De ahí que este bloque se escriba aquí y no solo en el informe.
+
+| grupo | qué se arregló |
+|---|---|
+| **N1-N5** | cinco pasivas: la regresión del punto 4, una pasiva con `get` en el punto 3 que **nunca miró nadie**, el objeto desplazado de la entradilla del cierre, la de la línea del objetivo de A y la de `You can't` 2 de B |
+| **R1-R2** | las dos oraciones fundidas por calcabilidad. La de B eran 31 palabras con dos absolutas con `with`; la de A tenía `the other one` sin antecedente claro —el más cercano era `the machine`, así que se leía «Nayibe en la otra máquina», que contradice su propia restricción 3. Fallo de comprensión, no de estilo |
+| **R3** | **la condición de B, la pieza que decide el desenlace**, obligaba a una completiva de reporte (`the café group says that they asked you for it`) que solo existe en B1. Reescrita, el turno hablado sale entero con primer condicional: `I can do it, but only if you ask me in the group today.` |
+| **R4-R16** | trece renglones más: fragmento sin verbo, posesivos pronominales sin tema (`theirs`, `yours`, `nobody else's`), condicional cero donde el tema ancla enseña `will`, pseudo-hendida, `by` de plazo, y **el modismo `put … on the table` que la ronda anterior sacó de la restricción y sobrevivió en el criterio que comprueba esa misma restricción** |
+| **T1** | ROLE A no tenía el bloque 3 `[receives]`, y el vocabulario de B trae cuatro palabras que A nunca ve glosadas y B le va a decir. El argot va en las dos direcciones. **El escenario 1 sí se lo da a los dos roles: el molde era el que se salía**, y el molde es el que se copia |
+| **V1-V4** | `stock count` → `inventory` (británico, y además cognado de *inventario*), `back-up` → `backup`, `Saturday 12` → `Saturday the 12th`. Y en la **caja común**, que leen los dieciséis roles: `the other way round` → `the other way around` |
