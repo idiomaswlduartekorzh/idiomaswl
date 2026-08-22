@@ -669,6 +669,97 @@ import type { SatItemMeta } from '../module-types'
  *
  * PENDIENTE: por R2, q13 ha cambiado de texto y vuelve a la cola de auditoría; su huella en el
  * guardián cambia con él. Se suma al acta pendiente por q09.
+ *
+ * UNDÉCIMA PASADA (22 ago 2026) — q10 Y q15 SE REESCRIBEN ENTEROS, DISEÑADOS FÁCILES. No se
+ * ablandaron: no queda una palabra del pasaje, de las opciones ni de las razones anteriores.
+ *
+ * ⚠️ **Todo lo que este encabezado dice más arriba sobre q10 y q15 es historia.** Amparo
+ * Lascano y su editor, «A Wager at Marlbeck», la e de travesaño torcido, la prensa única, el
+ * pliego sin hojas añadidas, el 2×2 de q15 y sus tres datos: nada de eso existe ya en el
+ * archivo. Se deja escrito porque explica por qué se llegó hasta aquí, no lo que hay hoy. Lo
+ * vigente de estos dos ítems es esta sección y sus `razones`.
+ *
+ * POR QUÉ. El calibrador midió los dos en **13**, el máximo del módulo, y este bloque un punto
+ * entero por encima del bloque equivalente del módulo 1 —el que decide quién recibe la rama
+ * fácil—. El margen de bajar texto estaba gastado desde la novena pasada, y lo único que ha
+ * movido una banda en cuatro rondas es reescribir el ítem entero desde el pasaje (bloque CS,
+ * q03 y q04). Sus tipos admiten banda baja: `central-ideas-details` tiene suelo 6-8 e
+ * `inferences` suelo 8, porque su eje A vale 3 por definición. Estaban arriba por cómo se
+ * escribieron, no por su tipo.
+ *
+ * SE CONSERVÓ de cada uno: tipo, dominio, tema, **clave del plan** (q10 B, q15 C) y posición.
+ * Todo lo demás es nuevo.
+ *
+ * MEDIDO, eje por eje, con la escala del calibrador (5-7 fácil · 8-11 medio · 12-15 difícil, y
+ * el corte del proyecto: 7 → etiqueta 1, 8 → etiqueta 2):
+ *
+ * - **q10 · de 13 a 8.** T 1 · L 2 · D 2 · A 2 · E 1. Pasaje de 88 palabras, siete oraciones,
+ *   media 12,6 y máxima 18; escena concreta, léxico frecuente, una sola línea argumental. L
+ *   baja de 3 a 2 porque la clave se decide juntando dos frases y no tres puntos del texto;
+ *   A se queda en 2 porque idea central es paráfrasis, y ahí no hay margen sin cambiar el
+ *   enunciado del plan. Etiqueta honrada: **2**.
+ * - **q15 · de 13 a 9.** T 1 · L 2 · D 2 · A 3 · E 1. Pasaje de 86 palabras, siete oraciones,
+ *   media 12,3 y máxima 15. A vale 3 por ser inferencia y no baja; E vale 1 porque el
+ *   enunciado es la fórmula fija del SAT digital, sin metalenguaje. Etiqueta honrada: **2**.
+ *
+ * Puerta 9: las dos etiquetas nuevas son 2 y **ninguna curva de grupo se rompe**
+ * —`central-ideas-details` q09 2 → q10 2; `inferences` q14 2 → q15 2—. Mezcla declarada del
+ * módulo: de 8/11/8 a **8/12/7**.
+ *
+ * LAS OPCIONES NO SE AFLOJARON, que es la mitad del encargo. D se queda en 2 en los dos: cada
+ * distractor cae por un **hecho comprobable del texto**, no por un matiz y no por forma.
+ *
+ * **q10 · Ada Roiz (clave B).** Lo que sostiene cada muerte, y no se puede recortar:
+ * - «who wrote it down and changed nothing» — sin eso, A (la hermana dio forma) se defiende.
+ * - «never went back over a sentence», en la primera línea y referido a las nueve novelas —
+ *   sin eso, C (el ritmo se lima) se defiende.
+ * - «The last four are set in the same three streets as the first five» — es el **control**
+ *   del ítem: lo que no cambió no explica lo que sí cambió, y sin esa línea D (el habla de la
+ *   calle) queda viva. Parece una frase de ambiente y es la cláusula asesina de D.
+ * - La clave vive en «spoke each sentence to her sister» más la última oración entera.
+ * - Dos de las cuatro opciones hacen venir la prosa de una voz (B y D), a propósito: así
+ *   «elegir la que habla de hablar» no resuelve nada sin el pasaje.
+ *
+ * **q15 · el panel de 1640 (clave C).** Un anclaje por distractora y ninguno compartido:
+ * - «one layer of paint, with no break between them» → mata A (repinte posterior).
+ * - «The varnish was taken off in 1998, and the green stayed» → mata B (barniz).
+ * - «as thick as the green, with the same brush marks» → mata D (desgaste hasta la capa de
+ *   abajo).
+ * - «That blue strip is the one piece of sky the sun never reached», última oración antes del
+ *   cierre, es la clave entera: misma materia, distinta exposición.
+ * - Las cuatro explican por qué la franja del marco se ve distinta. Ese cruce es lo que
+ *   impide contestar con lo que uno sepa de museos, y es el trabajo del ítem: no se toca.
+ *
+ * PRUEBA A CIEGAS, comprobada por construcción antes de guardar —el criterio, escrito para que
+ * se pueda discutir—: para cada abanico se preguntó **cuál sería la mejor apuesta de quien ve
+ * solo el enunciado y las opciones**, con cuatro sondas: (1) longitud, (2) miembro marcado o
+ * llamativo, (3) opción que suena más a tesis o a conclusión de examen, (4) opción que un
+ * adulto culto daría por más probable en el mundo sin pasaje. En los dos ítems la mejor
+ * apuesta **cae en una distractora**: en q10 es C —«el ritmo se trabaja» es lo que más se cree
+ * de cualquier prosa admirada— y en q15 es B —el barniz amarillo sobre un azul es el caso de
+ * museo más famoso que hay—. Las sondas mecánicas: longitudes q10 135/139/144/140 y q15
+ * 90/104/96/100, con la clave ni la más larga ni la más corta en los dos; solapes léxicos con
+ * el pasaje q10 5/6/5/7 y q15 4/8/6/7, con la clave estrictamente entre el mayor y el menor,
+ * de modo que ni «elegir la que más repite» ni «elegir la que menos repite» discrimina. Ojo:
+ * esto es una comprobación de diseño, **no sustituye a la medición** — ver PENDIENTE.
+ *
+ * PUERTA 7: q10 pasa a 77,3 palabras-SAT y q15 a 70,0, los dos pasajes más cortos del bloque y
+ * dentro de 25-150.
+ *
+ * NOMBRES: «Ada Roiz» se comprobó en buscador antes de fijarlo y no es ninguna escritora
+ * publicada. q15 no nombra obra, autor ni pueblo, que es la forma barata de no repetir el
+ * problema del título con dueño que ya costó una pasada en este mismo ítem.
+ *
+ * Lo que NO se tocó: los cinco ítems restantes (q09, q11, q12, q13, q14) —ni un carácter—, las
+ * siete claves del plan, los siete enunciados y las posiciones.
+ *
+ * PENDIENTE, y bloquea el APTO: por R2, q10 y q15 son ítems nuevos enteros y vuelven a la cola
+ * de auditoría. Hay que **medirlos a ciegas de verdad** (`scripts/sat-blind-test.mjs`, que
+ * manda enunciado y opciones y no manda el `stimulus`) y hacerles auditoría de clave única y
+ * de equidad; su huella cambia, así que el acta pendiente desde la octava pasada sigue
+ * pendiente y ahora incluye a estos dos. Y el calibrador tiene que confirmar el 8 y el 9: aquí
+ * están medidos por el redactor, con el desglose por eje escrito arriba para que la discusión
+ * sea sobre la regla y no sobre el número.
  */
 
 export const items: MCQQuestion[] = [
@@ -692,13 +783,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Critics have long treated the four novels Amparo Lascano published after 1970 as a late turn in her work: the short sentences, the three small towns, the endings that explain nothing. Her working notebooks complicate that account. The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away. So are the towns, which are the same three she had been writing about since her first book. The reviews of the late novels raised the very objection her earliest reviews had raised. What was new after 1970 was her publisher: the editor who had demanded "a proper ending" had sold the firm, and the editor who bought it demanded nothing.',
+      'Ada Roiz wrote nine novels and never went back over a sentence. She wrote the first five by hand, at a desk. From the sixth on, she spoke each sentence to her sister, who wrote it down and changed nothing. The last four are set in the same three streets as the first five. What is new in those four is the prose: long, rolling sentences critics call musical. The notebooks explain the change. No sentence in them runs longer than what Roiz could say in one breath.',
     text: 'Which choice best states the main idea of the text?',
     options: [
-      "The turn critics date to 1970 was a change in Lascano's sentences rather than in the towns she wrote about.",
-      "The turn critics date to 1970 was a change in what her publisher would print rather than in what she wrote.",
-      "The turn critics date to 1970 was a change in what her reviewers would accept rather than in what she wrote.",
-      "The turn critics date to 1970 was a change in the towns Lascano wrote about rather than in her sentences.",
+      "The prose readers admire in Roiz's last four novels is the sister's as much as hers, since no sentence reached the page as it was said.",
+      "The prose readers admire in Roiz's last four novels is spoken language, since its sentences are the length of the breath that carried them.",
+      "The prose readers admire in Roiz's last four novels is the fruit of long labor, since a rhythm that even is reached only by working a line over.",
+      "The prose readers admire in Roiz's last four novels is the speech of the three streets she wrote about, since she had heard it all her life.",
     ],
     answer: 1,
   },
@@ -767,13 +858,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Forty copies survive of the 1612 printing of A Wager at Marlbeck. In twenty-nine of them one scene runs to thirty lines; in the other eleven the same scene runs to twelve. To print a page, a worker first had to set it: put its letters in place one at a time. The shop had a single press, so it could not print two versions of a page at the same time; one had to come first. Its type had one flaw that can be dated: a lowercase e with a bent crossbar, which arrived in March 1612 and marks every sheet printed after that. The bent e runs all through the thirty-line scene and appears nowhere in the twelve-line one. In all forty copies the pages of that scene are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
+      'A panel painted in 1640 hangs in the museum, and its sky is green. Last year the frame came off, and the strip beneath it is blue. The blue and the green are one layer of paint, with no break between them. The blue is as thick as the green, with the same brush marks. The varnish was taken off in 1998, and the green stayed. That blue strip is the one piece of sky the sun never reached. What all this points to is that…',
     text: 'Which choice most logically completes the text?',
     options: [
-      'the thirty-line scene was set first and printed for twenty-nine copies, and that its page was then set again at twelve lines for the remaining eleven.',
-      'the thirty-line scene was set first and printed for twenty-nine copies, and that a page set at twelve lines was bound into the remaining eleven.',
-      'the twelve-line scene was set first and printed for eleven copies, and that its page was then set again at thirty lines for the other twenty-nine.',
-      'the twelve-line scene was set first and printed for eleven copies, and that a page set at thirty lines was bound into the other twenty-nine.',
+      'a later hand went over this sky in green, and the strip the frame hid kept its first coat.',
+      'the green lies in a varnish the frame kept off that blue strip, and a cleaning would take the green off.',
+      'the whole sky was painted blue, and the sun has turned it green wherever the frame left it bare.',
+      'the sky was painted green, and the blue is a lower layer the frame has rubbed bare along that strip.',
     ],
     answer: 2,
   },
@@ -807,16 +898,16 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Deja el cambio dentro de la prosa de Lascano, y los cuadernos lo desmienten: «The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away». Si la frase corta ya estaba veinte años antes, no puede ser lo que se movió después de 1970. Es la lectura de manual —el estilo tardío de quien se va despojando con la edad— y la marca quien reconoce la historia habitual antes de comprobar cuál cuenta esta.',
+        'El estudiante que elige esta es el que da por hecho que un texto dictado lo escriben dos personas, y no vuelve sobre la línea que lo niega: la hermana «wrote it down and changed nothing». Si entre la boca y el papel no se mueve nada, la prosa no puede ser de la hermana «as much as hers». Es el camino más razonable de los tres falsos —quien toma un dictado suele arreglar sobre la marcha— y por eso la cláusula que lo mata va dentro de la misma oración que presenta a la hermana: hay que leerla entera, no hasta la coma.',
       B:
-        'Correcta: junta las dos mitades del pasaje. Los cuadernos quitan el cambio de la escritura —frase corta, finales sin explicar y los mismos tres pueblos, todo anterior a 1970— y la última frase dice qué sí cambió: «What was new after 1970 was her publisher», con un editor que exigía «a proper ending» y otro, tras la venta de la casa, que no exigió nada. El giro que la crítica fecha en 1970 está en lo que la editorial imprimía, no en lo que Lascano escribía. No es la lectura más fina de las cuatro: es la única que no choca con una línea del texto.',
+        'Correcta. El estudiante que elige esta es el que junta las dos únicas cosas que el pasaje dice del cambio: desde el sexto libro Roiz «spoke each sentence to her sister», y los cuadernos enseñan que «no sentence in them runs longer than what Roiz could say in one breath». Una frase compuesta en voz alta se acaba donde se acaba el aire, y eso es lo que los críticos oyen como música. Un solo paso, y no es la lectura más fina de las cuatro: es la única que no choca con ninguna línea del texto.',
       C:
-        'Saca el cambio de la escritora, que es el paso correcto, y lo pone en la institución equivocada. El pasaje cierra esa puerta en una línea: «The reviews of the late novels raised the very objection her earliest reviews had raised». Si la objeción de los últimos libros es la misma que la de los primeros, la crítica no llegó a aceptar nada que antes rechazara. Es la distractora más cercana a la clave, y la marca quien acierta el diagnóstico general y no lee las dos frases que separan a la crítica del editor.',
+        'El estudiante que elige esta es el que contesta con lo que sabe de cómo se escribe bien —el ritmo se lima, no aparece— sin comprobar si esta escritora lo hacía. La primera línea lo cierra sin margen: Roiz «never went back over a sentence», y eso vale para las nueve novelas, no solo para las cinco primeras. Es la única de las cuatro que no atribuye la prosa a algo de fuera, y también la apuesta de quien contesta con el manual antes que con el pasaje.',
       D:
-        'Mueve el cambio del cómo al qué, y el texto cierra esa puerta con la misma limpieza: los tres pueblos «are the same three she had been writing about since her first book». Después de 1970 no hay terreno nuevo. La elige quien lee la lista de la primera frase —frases cortas, pueblos pequeños, finales sin explicar— como inventario de novedades, sin ver que el pasaje la desmonta entrada por entrada.',
+        'El estudiante que elige esta es el que ve una voz en el texto y la engancha a lo primero que suena a habla, sin preguntarse si eso separa a los cuatro últimos libros de los cinco primeros. El pasaje pone el control justo delante: «The last four are set in the same three streets as the first five». Lo que no cambió no puede explicar lo que sí cambió. Es la distractora más cercana a la clave —las dos hacen venir la prosa de una voz— y se separa de ella por un hecho comprobable, no por un matiz.',
     },
     fuenteHecho:
-      'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato. Los cuadernos ya no llevan fecha de catalogación ni custodio: en la octava pasada se cayó «catalogued by a university library in 1996», que era un dato más que sostener y que no entra en ninguna deducción. Esa fecha y esa biblioteca venían del primer intento de deshacer la pareja con q11, que va justo detrás y llevaba el mismo armazón —creadora, papeles privados, fecha de apertura del archivo, lectura que da la vuelta al relato recibido—; no bastó, y en la sexta pasada se cambió el escenario de q11 entero, así que ya no hay pareja que romper y la fecha sobraba. La deducción no depende de ninguna fecha de archivo: depende de que los cuadernos son de los años cincuenta.',
+      'Ficción original: Ada Roiz, sus nueve novelas, la hermana, los cuadernos y las tres calles están inventados. El nombre se comprobó en buscador antes de fijarlo —no corresponde a ninguna escritora publicada— y el ítem no nombra ni un título de obra, que es donde este bloque ya se quemó una vez (ver q15). El fenómeno de fondo sí es corriente en historia literaria: la prosa compuesta en voz alta y tomada al dictado tiene otra prosodia que la escrita a mano, y la frase dictada tiende a la unidad de respiración. Por eso el ítem se sostiene como lectura y no como dato: nada de lo que hay que deducir depende de saberlo. Sustituye al q10 anterior (Amparo Lascano y el editor que exigía «a proper ending»), retirado en la undécima pasada por dificultad y no por defecto: medía 13, el techo del módulo, con la evidencia repartida en tres puntos del pasaje. Las cuatro opciones atribuyen la prosa a cuatro fuentes que la crítica literaria usa de verdad —el amanuense, la voz, el trabajo de corrección y el habla del lugar—: ninguna es un absurdo, y las tres falsas caen por una cláusula del texto, no por inverosímiles.',
   },
   {
     id: 'q11',
@@ -897,19 +988,19 @@ export const meta: SatItemMeta[] = [
     id: 'q15',
     domain: 'II',
     tipo: 'inferences',
-    dificultad: 3,
+    dificultad: 2,
     tema: 'humanidades',
     razones: {
       A:
-        'Invierte el orden que fija la letra estropeada. La e torcida entra en la imprenta en marzo de 1612 y marca todo lo que sale de ella a partir de entonces; corre por toda la versión de treinta líneas y no aparece en ninguna de doce, de modo que la larga se compuso después y no primero. El mecanismo que describe es el de la clave —recomponer la plana dentro del mismo pliego— y es el correcto: esta opción falla solo en el orden, y por eso es la más cercana a C. Es además adonde llevan las dos corazonadas que el ítem deja en pie: que en una imprenta un texto se recorta para que quepa, y que el estado que llevan más ejemplares —aquí los veintinueve largos— es el que salió antes.',
+        'El estudiante que elige esta es el que sabe que los repintes de restaurador se paran en el borde del marco —es verdad, y es lo primero que mira un conservador— y se queda ahí sin comprobar el corte. La tercera línea lo cierra: «The blue and the green are one layer of paint, with no break between them». Una mano posterior deja dos capas y una junta; aquí hay una sola capa que sigue de un color al otro, así que el verde no se pintó encima de nada.',
       B:
-        'Falla en los dos factores a la vez. Pone la versión larga primero, contra la fecha que da la e torcida, y compone el texto nuevo en una hoja aparte, contra la última línea del pasaje: en los cuarenta ejemplares esas páginas están «folded from one sheet of paper, with none cut out and none pasted in», y una hoja encuadernada sería papel distinto del pliego. La elige quien reconstruye la escena entera desde las dos corazonadas de imprenta —el texto se acorta, las hojas de sustitución se encuadernan— sin contrastar ninguna con el pasaje.',
+        'El estudiante que elige esta es el que recuerda el caso famoso —el barniz que amarillea sobre un azul y lo deja verde, y la limpieza que devuelve el color— y lo aplica sin buscar la prueba que el pasaje ya trae hecha. «The varnish was taken off in 1998, and the green stayed»: la limpieza ya se hizo, el barniz ya no está y el verde sigue ahí, luego el verde no está en el barniz. Es la única de las tres falsas que el texto refuta con un experimento ya realizado y no con una descripción, y también la que más elegiría quien resuelva de memoria y sin pasaje.',
       C:
-        'Correcta: es la única que cuadra con los tres datos a la vez. La e torcida entra en marzo de 1612 y marca cuanto se imprime después; está en toda la versión de treinta líneas y en ninguna de doce, luego las once cortas salieron primero y la larga se compuso con la tirada ya en marcha. La prensa única es lo que permite hablar de un antes y un después: con una sola prensa los dos estados no pudieron correr a la vez. Y como en los cuarenta ejemplares esas páginas salen de una sola hoja «with none cut out and none pasted in», las dieciocho líneas de más tuvieron que caber recomponiendo el mismo pliego, que es lo que dice «set again at thirty lines». Se separa de A solo por el orden, que fija la letra, y de D solo por el mecanismo, que fija el pliego.',
+        'Correcta. El estudiante que elige esta es el que lee la última línea como lo que es, un contraste de exposición: «That blue strip is the one piece of sky the sun never reached». Lo único que separa a la franja del resto del cielo es la luz que le ha tocado, porque las otras tres líneas dicen que la materia es la misma —una capa, el mismo grosor, las mismas marcas de pincel—. Misma pintura y distinta exposición: lo que cambió el color fue el sol. Un solo paso, y el texto no deja otra causa en pie.',
       D:
-        'Acierta el orden —la versión corta salió antes, como fecha la e torcida— y falla en el mecanismo. Encuadernar una hoja compuesta aparte era práctica corriente de la época, así que la reconstrucción se sostiene sola; lo que la descarta es la última línea del pasaje, que dice de los cuarenta ejemplares que esas páginas están «folded from one sheet of paper, with none cut out and none pasted in». Si no hay papel añadido, las dieciocho líneas de más solo caben recomponiendo el pliego. La marca quien resuelve el orden y da por bueno el primer procedimiento verosímil que se le ocurre para el resto.',
+        'El estudiante que elige esta es el que le da la vuelta a la escena —el azul como capa de debajo y el marco como lija— y no la contrasta con la cuarta línea: «The blue is as thick as the green, with the same brush marks». Un desgaste deja la pintura más delgada y se lleva por delante la marca del pincel; en esa franja no falta ni espesor ni marca. El roce del marco es real y ocurre en los museos, así que la opción no se cae sola: se cae por un dato medido sobre el panel.',
     },
     fuenteHecho:
-      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define. El reparto de ejemplares es 29 largos y 11 cortos, y ese sentido importa: con 11 largos, el estado mayoritario era el primero y la corazonada de que lo mayoritario salió antes apuntaba a la clave. Invertido, apunta a A. Las cuatro opciones nombran las dos versiones, los dos recuentos y un procedimiento de taller igual de corriente —recomponer la plana o encuadernar una hoja compuesta aparte—, de modo que ninguna se puede descartar por rareza. TÍTULO: la obra se llamaba «The Ferryman’s Daughter» y se renombró a «A Wager at Marlbeck» en la quinta pasada. El anterior es el título de dos novelas publicadas —Juliet Greenwood (2020) y Yasmin Angoe (2026)—: los títulos no tienen derecho de autor, pero la norma del proyecto es que ningún nombre del examen tenga dueño. El nuevo se comprobó en buscador antes de fijarlo (sin resultados como título de obra, ni el título entero ni «Marlbeck» asociado a una obra) y hay que volver a comprobarlo si alguien lo cambia. VOCABULARIO: la frase «To print a page, a worker first had to set it: put its letters in place one at a time» está en el pasaje porque las cuatro opciones se deciden con *set* en su acepción tipográfica, y ese verbo solo aparecía en las opciones: el texto explicaba *type* y *press* y se quedaba a medio camino. En la octava pasada se reescribió más corta y más llana —«put its letters in place one at a time» en vez de «its letters assembled one by one»—, sin tocar lo que define.',
+      'Conservación de pintura, de dominio público. Las CUATRO opciones nombran mecanismos reales y corrientes en un museo, y las cuatro explican por qué la franja que tapaba el marco se ve distinta del resto: el repinte posterior que se detiene en el borde de la moldura (A), el barniz alterado que la moldura no llegó a cubrir (B), el cambio de color de un pigmento por la luz, que la moldura frenó (C) y el desgaste del marco que deja a la vista una capa inferior (D). Que los cuatro sean de primera fila es deliberado y es lo que impide resolver el ítem con lo que uno sepa de museos: decide el pasaje, no el mundo. El panel, el museo, las dos fechas y la limpieza de 1998 están inventados, y a propósito no se nombra ni obra ni autor —así no hay título que pueda tener dueño, que es lo que ya costó una pasada en este mismo ítem—. Sustituye al q15 anterior (los cuarenta ejemplares de «A Wager at Marlbeck» y la e de travesaño torcido), retirado en la undécima pasada por dificultad: medía 13 porque obligaba a cruzar tres datos —la letra fechada, la prensa única y el pliego sin hojas añadidas— y a sostener a la vez el orden de las tiradas y el procedimiento de taller.',
   },
 ]
