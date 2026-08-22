@@ -29,21 +29,21 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 > **Formal.** You work behind a clinic counter: distance and calm, also for a no. English has no formal *you* — the tone is in the words, `I'm afraid…`, `Let me…`. **They start.** About 9 turns each · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 4:20 p.m., and you are at the front desk of a dental clinic in Cabecera. Somebody walks in with no appointment, a hand on the side of the face.
+**Where you are** · It is Tuesday, 4:20 p.m., and you are at the front desk of a dental clinic in Cabecera. Somebody walks in with no appointment. That person has a hand on the face.
 
 **You want** · You need three things before that person leaves: a date, a checked cell number, and something for tonight.
 
 **You can't**
 1. You can't ask Dr. Restrepo anything before 5:00, and you ask her in writing — you never call.
-2. You can't say a word about another patient's appointment: not whose it is, and not why.
+2. You can't say a word about another patient's appointment: not the name, and not the reason.
 3. You can't send anyone away without a written date **and** something for tonight. At closing the administrator reads your calendar.
 
 **Only you know**
-- You have a 5:20 today, and that patient has missed twice already. You can leave that door open, but never with a name or a reason.
-- You never ask Dr. Restrepo for favors, but today you want to: you think she will say yes to this one. That is your key.
-- Three chairs were empty this week, and each one lands on you — like every patient who leaves for the corner clinic.
+- You have an appointment at 5:20 today, with a patient who missed twice already. You can leave that door open, but never with a name or a reason.
+- You never ask Dr. Restrepo for favors, but today you want to ask her: you think she will say yes. That is your key.
+- Three chairs were empty this week, and the clinic counts them against you, like every patient who leaves for the corner clinic.
 
-**If you walk away with nothing** · You get a fourth empty chair, and one more patient with the plan walks to the corner clinic. Both go against your name.
+**If you walk away with nothing** · You get a fourth empty chair, and one more patient with the plan walks to the corner clinic. Both count against you.
 
 ### Facts
 
@@ -67,12 +67,12 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | appointment | a day and a time for one patient only | the thing you don't have today |
 | opening | a free time in the calendar | one only: Thursday, 7:00 a.m. · never promise a second one |
 | to be fully booked | no free times left at all | your bad news, in three words |
-| branch | one of the places where the same clinic works | the other one, Centro — where you send them |
-| referral note | a paper for another clinic with the problem written on it | your only key to Centro |
+| branch | one of the two places of the same clinic | the other one, Centro — where you send them |
+| referral note | a paper for another clinic with the problem on it | your only key to Centro |
 | emergency check | a short visit for pain, with no appointment | the way out that costs 40,000 · not the hospital emergency room |
 | X-ray | a photo of the inside of a tooth | the reason for the ten minutes early |
-| chipped | when a small piece of a tooth breaks | what they'll describe without the word — say it back with it |
-| to cover | the plan pays, so you pay nothing | your best argument — here, and nowhere else |
+| chipped | a tooth that lost a small piece | what they'll describe without the word — give them the word |
+| to cover | when the plan pays and the patient pays nothing | your best argument — here, and nowhere else |
 | to hold something for someone | to keep a time for one person, so nobody else takes it | Saturday at nine, while they decide |
 
 ### Your toolkit
@@ -86,14 +86,14 @@ All eight blocks — you are the only one behind a counter. **1** `[grants]`, bu
 | bad news | `We're fully booked today and tomorrow.` · `The first opening is…` | the fact in front, not the no |
 | money | `The plan covers it here, and only here.` · `At Centro you pay… yourself.` | what they lose by leaving, with the number on it |
 | sending them across town | `You should go to our… branch, on… — before…` | one road, with its own name and its own time |
-| the number | `Can you say it one at a time?` · `Let me repeat it: …` | make them dictate · then read back what you wrote |
+| the number | `Can you say it one at a time?` · `Let me repeat it: …` | ask for the number slowly · then read back what you wrote |
 | their side | `What happened?` | **open question** — without it, the fact that turns the scenario never comes out |
 | Thursday, in full | `Come ten minutes early — there are…` | the second number of that appointment, said as a time |
 | tonight | `Put something cold on your face for ten minutes.` · `Don't chew on that side.` | concrete instructions instead of general advice |
-| when not to wait | `If the pain goes to your ear, go to the emergency room tonight.` | the fourth point of the close |
+| the sign for the hospital | `If the pain goes to your ear, go to the emergency room tonight.` | the fourth point of the close |
 
 ### You did it if
-They said the **day, time and branch** back to you, and you checked them on screen · the **treatment date here**, if you sent them elsewhere · you said **who pays, how much, and when** · you took the cell number **one digit at a time** and read it back · they said what they will do tonight, in their words · **one open question before you proposed anything** · **when not to wait** · nothing said about another patient.
+They said the **day, time and branch** back to you, and you checked them on screen · the **treatment date here**, if you sent them elsewhere · you said **who pays, how much, and when** · you took the cell number **one digit at a time** and read it back · they said what they will do tonight, in their words · **one open question before you proposed anything** · **the sign for the hospital** · nothing said about another patient.
 
 ---
 
@@ -107,13 +107,13 @@ They said the **day, time and branch** back to you, and you checked them on scre
 **You want** · You want to see the dentist **today**. If you can't, you want a day that fits your job and something for tonight.
 
 **You can't**
-1. You can't take a weekday appointment before **8:30 a.m.** Your work in Girón starts too early, and Thursday earlier still.
+1. You can't take a weekday appointment before **8:30 a.m.** Your work in Girón starts too early, and on Thursday you start even earlier.
 2. You can't come back another day and wait in line again: this is your only free afternoon.
-3. You can't put anything on the table that is not yours: your time, your free days, your money.
+3. You can't offer anything that is not yours: only your time, your free days, your money.
 
 **Only you know**
-- On Sunday you broke a small piece of your lower back tooth, and you feel the sharp edge on your tongue when you talk. You are not hiding it — the pain just matters more than the piece. You say it if they ask something open.
-- The number in their file is your sister's. You don't remember giving it, and that is why their messages never reach you.
+- On Sunday you broke a small piece of your lower back tooth, and you feel the sharp edge on your tongue when you talk. You are not hiding it — the pain worries you more than the piece. You say it if they ask an open question.
+- The number in their file is your sister's. You never gave them that number, so their messages never reach you.
 
 **If you walk away with nothing** · You go home with the pain, no date and nothing for tonight. And anywhere else you pay the whole treatment yourself: your plan works only here.
 
@@ -139,16 +139,16 @@ They said the **day, time and branch** back to you, and you checked them on scre
 | appointment | a day and a time for one patient only | the thing you don't have |
 | to be fully booked | no free times left at all | the first thing you're going to hear |
 | opening | a free time in the calendar | their word for a time that appears later |
-| branch | one of the places where the same clinic works | ask which one — appointment and treatment can be in different ones |
+| branch | one of the two places of the same clinic | ask which one — appointment and treatment can be in different ones |
 | emergency check | a short visit for pain, with no appointment | one of their words — ask what it costs · not the hospital emergency room |
 | referral note | — they'll say it; ask what it means | a paper that comes with a condition — find out which one |
-| to cover | the plan pays, so you pay nothing | their word for your plan — ask where it works |
-| chipped | when a small piece of a tooth breaks | your **back tooth**, in one word — the word they will give you |
+| to cover | when the plan pays and the patient pays nothing | their word for your plan — ask where it works |
+| chipped | a tooth that lost a small piece | your **back tooth**, in one word — the word they will give you |
 | tongue | the soft part in your mouth that moves when you talk | where the sharp edge cuts |
 | warehouse | a big building where a company keeps the things it sells | where you work · the reason for the seven o'clock |
 
 ### Your toolkit
-Six blocks. **1** `[asks]`: no appointment, and it hurts. **2**. **3** `[receives]`: *emergency check*, *referral note*, *first consultation* — ask. **4** `[jargon]`, half of it: the tooth is yours, nobody else can describe it. **5**: hurting is not enough, say what **you** lose. **7**: the no to what they offer is yours. **8**. Not 6, you hide nothing.
+Six blocks. **1** `[asks]`: no appointment, and it hurts. **2**. **3** `[receives]`: *emergency check*, *referral note*, *first consultation* — ask. **4** `[jargon]`, half of it: the tooth is yours, nobody else can describe it. **5**: hurting is not enough, say what **you** lose. **7**: saying no to their offer is your job. **8**. Not 6, you hide nothing.
 
 ### Say it here — grouped by job, not in order · **don't read it out loud**
 
@@ -177,7 +177,7 @@ A day that **really** works with your job, said with your schedule in hand · **
 
 > **Dr. Restrepo · 4:24 p.m.**
 >
-> | Today | one more patient, 6:15 p.m., between two appointments — fifteen minutes to **file the edge down** (= to make a sharp edge smooth) |
+> | Today | one more patient, 6:15 p.m., between two appointments — fifteen minutes to **file the edge down** (= to make the sharp part flat) |
 > |---|---|
 > | Before that, two things | the exact problem + the date for the full treatment |
 > | Deadline | your answer on this same screen, before 4:45 p.m. |
@@ -195,9 +195,9 @@ gasta. El dato pivote aparece cuando hay conversación, no cuando hay prisa.
 **You finish when the two of you say the plan out loud — and each of you says a different part of it. Then check: are the two versions the same?**
 
 1. **The patient says the day, the time and the branch**, and the time to arrive. **The front desk checks it** on the screen.
-2. **The front desk says who pays, how much, and when** (or: nothing, covered). **The patient says the amount back.**
+2. **The front desk says the price, and who pays it** (or: nothing, covered). **The patient says the price back.**
 3. **The patient says the cell number from memory**, one digit at a time. **The front desk reads it back** from what they wrote down.
-4. **The patient says what they will do about the pain tonight. The front desk says when not to wait**, and where to go.
+4. **The patient says what they will do about the pain tonight. The front desk says the sign that means hospital tonight**, and where to go.
 
 **If one of the four is missing, it is not finished. And if one of you said all four, it is not finished either.**
 
@@ -247,8 +247,8 @@ El hallazgo 62 queda cerrado: ya no hay regla de conteo propia de esta ficha.
 
 | ficha | prosa | techo | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A | **448** | ≤ 450 | 10 filas | 10 | 9 |
-| ROLE B | **447** | ≤ 450 | 10 filas | 10 | 9 |
+| ROLE A | **450** | ≤ 450 | 10 filas | 10 | 9 |
+| ROLE B | **448** | ≤ 450 | 10 filas | 10 | 9 |
 
 ---
 
@@ -349,7 +349,7 @@ llega en el mismo turno y el desenlace sigue siendo acuerdo.
 6. **Turnos y minutos.** 9 por rol (§4 da 6-9 al A2; los 10 anteriores se pasaban) y 6 minutos, que
    ya estaban por debajo del techo de 8. Misma unidad en las dos cabeceras.
 7. **Presupuesto.** Medido **solo** con `node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`:
-   **A 449 · B 447**, techo 450. Los arreglos 1 y 3 añaden palabras; se compensó recortando el
+   **A 450 · B 448**, techo 450. Los arreglos 1 y 3 añaden palabras; se compensó recortando el
    bloque de toolkit, la nota de registro y los criterios de éxito. **No se quitó ninguna pieza.**
 
 **Lo que no se tocó, a propósito.** La asimetría del vocabulario —A produce las palabras del
@@ -377,3 +377,78 @@ corrección buena es la de la pieza común y sirve a los ocho escenarios:
 4. **Blueprint §11 (hallazgo 62, leve).** Falta la regla de conteo de prosa: si cuentan los
    encabezados `###`, la cita de registro y la línea de toolkit. Sin ella, tres personas miden
    tres números distintos sobre la misma ficha y ninguno se puede auditar.
+
+---
+
+## Pasada quirúrgica del 22 ago 2026 — qué líneas se tocaron
+
+Solo las líneas citadas por `fase9-calcable-2.md` y las nombradas por `fase9-nivel-2.md`
+(estructura fuera de A2, bloque de vocabulario, cifras declaradas). Ninguna otra línea, ninguna
+sección reordenada, ningún dato ni motor cambiado.
+
+**ROLE A · prosa (cuenta para el techo)**
+
+| dónde | antes → ahora |
+|---|---|
+| `Where you are` | `…, a hand on the side of the face.` → `. That person has a hand on the face.` (A-1) |
+| `You can't` 2 | `not whose it is, and not why` → `not the name, and not the reason` (A-2) |
+| `Only you know` 1 | `You have a 5:20 today, and that patient has missed twice already.` → `You have an appointment at 5:20 today, with a patient who missed twice already.` (calcable 3 + A-3) |
+| `Only you know` 2 | `but today you want to: … yes to this one.` → `but today you want to ask her: … yes.` (A-4) |
+| `Only you know` 3 | `and each one lands on you —` → `and the clinic counts them against you,` (A-5) |
+| `If you walk away with nothing` | `Both go against your name.` → `Both count against you.` (A-6) |
+| `You did it if` | `**when not to wait**` → `**the sign for the hospital**` |
+
+**ROLE A · tablas (sin coste)**
+
+| dónde | antes → ahora |
+|---|---|
+| vocab `branch` | `one of the places where the same clinic works` → `one of the two places of the same clinic` |
+| vocab `referral note` | `…with the problem written on it` → `…with the problem on it` |
+| vocab `chipped` | `when a small piece of a tooth breaks` → `a tooth that lost a small piece`; columna `here`: `say it back with it` → `give them the word` (A-7) |
+| vocab `to cover` | `the plan pays, so you pay nothing` → `when the plan pays and the patient pays nothing` (calcable 1) |
+| exponentes, `the number` | `make them dictate` → `ask for the number slowly` (A-8) |
+| exponentes, etiqueta | `when not to wait` → `the sign for the hospital` |
+
+**ROLE B · prosa (cuenta para el techo)**
+
+| dónde | antes → ahora |
+|---|---|
+| `You can't` 1 | `y Thursday earlier still.` → `and on Thursday you start even earlier.` (B-1) |
+| `You can't` 3 | `put anything on the table that is not yours: your time…` → `offer anything that is not yours: only your time…` (B-2) |
+| `Only you know` 1 | `the pain just matters more than the piece` → `the pain worries you more than the piece` (calcable 4 + B-4) |
+| `Only you know` 1 | `if they ask something open` → `if they ask an open question` (B-5) |
+| `Only you know` 2 | `You don't remember giving it, and that is why…` → `You never gave them that number, so…` (B-3) |
+| toolkit | `**7**: the no to what they offer is yours.` → `**7**: saying no to their offer is your job.` (B-6) |
+
+**ROLE B · tablas (sin coste)**
+
+| dónde | antes → ahora |
+|---|---|
+| vocab `branch` | `one of the places where the same clinic works` → `one of the two places of the same clinic` |
+| vocab `to cover` | `the plan pays, so you pay nothing` → `when the plan pays and the patient pays nothing` (calcable 2) |
+| vocab `chipped` | `when a small piece of a tooth breaks` → `a tooth that lost a small piece` |
+
+**Fuera de las dos fichas (no cuenta para el techo)**
+
+| dónde | antes → ahora |
+|---|---|
+| carta de Dr. Restrepo | `(= to make a sharp edge smooth)` → `(= to make the sharp part flat)` |
+| cierre común, punto 2 | `says who pays, how much, and when` → `says the price, and who pays it`; `says the amount back` → `says the price back` |
+| cierre común, punto 4 | `says when not to wait` → `says the sign that means hospital tonight` |
+| tabla de cuenta de prosa | `448 / 447` → `450 / 448` |
+| pasada del 21, punto 7 | `A 449 · B 447` → `A 450 · B 448` |
+
+**Dos propuestas de los informes no se aplicaron literales, y por qué**
+
+1. `fase9-nivel-2.md` A-7 proponía `they will describe it without this word — give them the word`.
+   La mitad izquierda es una oración con verbo conjugado dentro de una tabla, que es justo lo que
+   §11 prohíbe ahí. Se conserva el sintagma `what they'll describe without the word` y se corrige
+   solo el defecto nombrado —los dos `it` con referentes distintos— en la mitad derecha.
+2. `fase9-nivel-2.md` §7 proponía para `to cover` una definición distinta en cada ficha, y la de B
+   (`when the plan pays and you pay nothing`) conserva el `you pay nothing` que `fase9-calcable-2.md`
+   señala como decible. Entra la de calcabilidad, idéntica en las dos fichas.
+
+**Medición canónica después de la pasada** (`node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`):
+**ROLE A 450 · ROLE B 448**, techo 450. A queda **al filo, sin margen**: la subida es de la etiqueta
+`the sign for the hospital`, que `fase9-nivel-2.md` daba por «de la misma longitud» y cuesta
+una palabra más que `when not to wait`. Las 14 sustituciones de prosa restantes suman cero.

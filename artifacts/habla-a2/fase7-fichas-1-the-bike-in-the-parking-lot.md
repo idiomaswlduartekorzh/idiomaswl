@@ -43,20 +43,20 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 
 **Where you are** · You are in the lobby of your building in Cabecera, next to the bike. You put it on Marketplace three weeks ago, and you carried it down four floors four times.
 
-**You want** · You have to get the bike out today, and you want all of the money today. Your lowest price is 390,000 with the new gears on.
+**You want** · You have to get the bike out today, and you want all of the money today. You will not sell it for less than 390,000 with the new gears on.
 
 **You can't**
 1. Sell it for less than 390,000 with the new gears on. A smaller number needs a condition, and you say the condition out loud, in the same turn.
 2. Leave the bike in the lobby after today. The doorman told you twice.
-3. Take the gears off here. That needs the shop, before one.
+3. Take the gears off here. You need the shop for that, before one.
 
 **Only you know**
-- The new gear set is exactly the size you need for the road bike you want next. With the old gears back on, your lowest price is 330,000 and you lose nothing. Say that early and you give the deal away.
+- The new gear set is exactly the size you need for the road bike you want next. You would sell it for 330,000 with the old gears back on, and lose nothing. If you say that early, you lose the deal.
 - You want 390,000 because the road bike costs 750,000 and you have 360,000.
-- The lock and the lights were never in the ad, and nobody has asked.
-- Three buyers came before this one, and all three gave the same speech about the tire.
+- You never put the lock or the lights in the ad, and no buyer has asked.
+- You heard the same speech about the tire from all three buyers before.
 
-**If you walk away with nothing** · You carry it up four floors again. You lose another Saturday to a fifth buyer, and the road bike stays in the shop.
+**If you walk away with nothing** · You carry it up four floors again. You lose another Saturday with a fifth buyer, and the road bike stays in the shop.
 
 ### Facts
 
@@ -66,7 +66,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | Ad price | 420,000 pesos · posted three weeks ago |
 | What it cost you | 680,000 pesos, sixteen months ago · receipt at home |
 | At the shop last month | new gear set, brake pads, cable — 95,000 pesos · receipt in your pocket |
-| The old gear set | still works · the two small gears are difficult to use |
+| The old gear set | still works · the two small gears, hard to use |
 | The bike today | rear tire worn out · seat torn on one corner · scratch on the frame |
 | Not in the ad | lock with two keys, 45,000 · front and rear lights, 35,000 |
 | La Bici Roja, two blocks | new rear tire: 38,000 · putting the old gear set back on: 15,000 · closes 1:00 p.m. · pick-up around 3:00 |
@@ -86,12 +86,12 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | receipt | the paper the shop gives you with the price | your proof · in your pocket |
 | the doorman | the person who works at the door of a building | where your deadline comes from · a rule, not your idea |
 | to include | to put something in the price for free | the lock, the lights · instead of cutting the number |
-| worn out | used so much it doesn't work well | the rear tire · they say it before you do |
+| worn out | used so much it doesn't work well | the rear tire · their argument, not yours |
 
 ### Your toolkit
 Yours: **1** `[grants]`, **2**, **3** `[receives]`, **4** `[jargon]`, **5**, **6**, **7** `[grants]`, **8**.
 *Gear set*, *brake pads* and *cable* are your words, not theirs. Your reason is a receipt and four
-floors. Block **6** is for the *why* they will ask.
+floors. Block **6** is for when they ask why.
 
 ### Say it here — grouped by job, not in order · **don't read it out loud**
 
@@ -109,8 +109,8 @@ floors. Block **6** is for the *why* they will ask.
 
 ### You did it if
 The bike left the lobby today, and you both said a time and a name out loud. You said your price
-and the way to pay. They said the rear tire was worn out before you did. Your number went down only
-after you said a condition out loud, and they took it. You asked an open question and learned
+and the way to pay. They named the rear tire before you did. Your number went down only
+after you said a condition out loud, and they said yes. You asked an open question and learned
 something new. They never found out about the old gear set.
 
 ---
@@ -122,17 +122,17 @@ something new. They never found out about the old gear set.
 
 **Where you are** · You are in the lobby of a building in Cabecera. You wrote last night and you came here by bus. Look at the rear tire for half a minute before you say hello.
 
-**You want** · You leave today with the bike, or with a day and a time to pick it up. Your limit is 350,000 in cash, for the bike alone.
+**You want** · You leave today with the bike, or with a day and a time to pick it up. You cannot pay more than 350,000 in cash, and only for the bike alone.
 
 **You can't**
 1. Pay more than 350,000 in cash for the bike alone.
 2. Move the 70,000 in Nequi for nothing. That money moves only when you get something more in the deal, and you say the condition out loud, in the same turn. Moving the bike counts.
-3. Show that no other bike works for you. After that, nothing moves.
+3. Say that this is the only bike for you. After that, nothing moves.
 
 **Only you know**
 - You looked for three weeks and you saw four bikes. Only one was your size, and only one had a receipt.
-- You are counting on your brother-in-law's truck at six. Without it, moving the bike costs money you counted for the tire.
-- You already counted the Nequi money for the tire, the seat and the lock, and not for the price.
+- Your brother-in-law is bringing his truck at six. Without it, you have to pay to move the bike, and you need that money for the tire.
+- You already gave the Nequi money a job: the tire, the seat and the lock. Not the price.
 
 **If you walk away with nothing** · You start your three weeks of looking again. The only bike in your size with a receipt stays here, and you keep taking the bus every day.
 
@@ -160,7 +160,7 @@ something new. They never found out about the old gear set.
 | deal | the price and everything else you agree on | your way in when the price stops moving |
 | in cash | in paper money, not by phone or card | the 350,000 in your pocket · your number |
 | lock | the thing you put on a bike so nobody takes it | 45,000 you can ask for, and it costs them nothing |
-| to come with | to go with the bike, with no extra money | the lock, the lights · how you add instead of asking for less |
+| to come with | inside the price, with no extra money | the lock, the lights · how you add instead of asking for less |
 | to pick something up | to go somewhere later and take it | your other close, if the bike stays here today |
 | torn | with a cut or a hole in it | the seat, on one corner |
 | truck | a big car for carrying things | your way of getting the bike out of here · at 6:00 p.m. |
@@ -187,9 +187,9 @@ ask. Your reason has a number: the bus.
 
 ### You did it if
 You left with the bike, or with a day, a time and a name. You paid 350,000 or less in cash for the
-bike alone. The Nequi money moved only after you said a condition out loud, and they took it.
-You said the rear tire was worn out before they did. You asked an open question and learned something new.
-They never found out that no other bike works for you.
+bike alone. The Nequi money moved only after you said a condition out loud, and they said yes.
+You named the rear tire before they did. You asked an open question and learned something new.
+They never found out that this is the only bike for you.
 
 ---
 
@@ -219,7 +219,7 @@ Las alternativas cuestan lo mismo leídas antes o después.
 3. **Who moves it, at what time, and how far.**
 4. **The rear tire:** who fixes it, where, and who pays.
 
-**If one of the four is missing, you are not done.** Say all four and match, and it's closed.
+**If one of the four is missing, you are not done.** Say all four. If you both say the same, it's closed.
 When you agree, say it: `That works for me.` · `OK — deal.` · `Let's do that, then.`
 
 ## After — both screens, in Spanish
@@ -416,3 +416,76 @@ escenarios:
    columna `here`. Es el patrón exacto que produjo el defecto de este escenario. El molde
    necesita esa línea arreglada y una regla explícita: **en la columna `here` no va nunca una
    frase entrecomillada ni en cursiva; para eso está la tabla de exponentes.**
+
+---
+
+## Cuarta pasada, 22 ago 2026 — qué líneas se tocaron
+
+Pasada **quirúrgica**, no reescritura: se editaron solo las líneas citadas por
+`artifacts/habla-a2/fase9-calcable-1.md` y `artifacts/habla-a2/fase9-nivel-1.md`. Ninguna otra
+línea del archivo cambió, ni una coma. No se movió ninguna sección, ninguna tabla entera, ningún
+dato, ningún nombre y ninguna pieza del motor. El número de líneas del archivo no cambió, así que
+las referencias de línea de los dos informes siguen siendo válidas.
+
+**Prosa tras la pasada** (`node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`, techo 450):
+ROLE A **443** · ROLE B **436**.
+
+### De `fase9-calcable-1` — 7 líneas decibles + 1 defecto de forma (8/8 aplicadas)
+
+| línea | dónde | qué entró |
+|---|---|---|
+| 46 | A · `You want` | `You will not sell it for less than 390,000 with the new gears on.` |
+| 54 | A · `Only you know` 1 (el dato oculto, hallazgo grave) | `You would sell it for 330,000 with the old gears back on, and lose nothing.` |
+| 56 | A · `Only you know` 3 | `You never put the lock or the lights in the ad, and no buyer has asked.` |
+| 57 | A · `Only you know` 4 | `You heard the same speech about the tire from all three buyers before.` |
+| 51 | A · `You can't` 3 | `You need the shop for that, before one.` |
+| 69 | A · tabla `Facts`, fila `The old gear set` | `still works · the two small gears, hard to use` |
+| 125 | B · `You want` | `You cannot pay more than 350,000 in cash, and only for the bike alone.` |
+| 89 | A · vocabulario `worn out`, columna `here` (defecto de forma) | `the rear tire · their argument, not yours` |
+
+### De `fase9-nivel-1` — las 8 líneas de lectura fuera de A2 (11 sustituciones)
+
+| línea | dónde | qué entró |
+|---|---|---|
+| 130 | B · `You can't` 3 (L1) | `Say that this is the only bike for you.` |
+| 192 | B · `You did it if` (L1, arrastre) | `They never found out that this is the only bike for you.` |
+| 134 | B · `Only you know` 2 (L2) | `Your brother-in-law is bringing his truck at six. Without it, you have to pay to move the bike, and you need that money for the tire.` |
+| 135 | B · `Only you know` 3 (L2) | `You already gave the Nequi money a job: the tire, the seat and the lock. Not the price.` |
+| 112 | A · `You did it if` (L3) | `They named the rear tire before you did.` |
+| 191 | B · `You did it if` (L3) | `You named the rear tire before they did.` |
+| 54 | A · `Only you know` 1 (L4) | `If you say that early, you lose the deal.` |
+| 113 · 190 | A y B · `You did it if` (L5) | `…and they said yes.` (dos veces) |
+| 222 | pantalla compartida (L6) | `Say all four. If you both say the same, it's closed.` |
+| 94 | A · `Your toolkit` (L7) | `Block **6** is for when they ask why.` |
+| 59 | A · `If you walk away with nothing` (L8) | `You lose another Saturday with a fifth buyer` |
+
+### Del bloque de vocabulario — 1 corrección
+
+| línea | dónde | qué entró |
+|---|---|---|
+| 163 | B · `to come with`, columna `what it is` | `inside the price, with no extra money` (dejaba de definirse con otro verbo frasal) |
+
+### Bandas de cabecera — sin cambio, y por qué
+
+`fase9-nivel-1` da la puerta de §4 por **cumplida**: 6 minutos (techo 8) y 8 turnos por rol (banda
+6-9), con la misma unidad en la cabecera y en las dos pantallas. No hay nada que bajar, así que la
+línea 28 queda intacta.
+
+### Lo que estos dos informes piden y **no** se hizo aquí
+
+No es desacuerdo: queda fuera del encargo de una pasada quirúrgica, que solo toca líneas citadas.
+
+1. **`grammarReferences`** (items 15 y 16 de la lista de `fase9-nivel-1`): entran cuatro temas
+   —`past-simple-irregular`, `present-simple-questions`, `verb-to-be`,
+   `present-simple-affirmative`— y el `rationale` de `past-simple-regular` deja de usar `bought`
+   como prueba. Es contenido nuevo, no una línea señalada como decible o fuera de nivel.
+2. **Fila `the clock` de los exponentes de A** (item 12, línea 105): añadir el tronco
+   `I'll take it there before …` para que `will-future` tenga con qué. Añade una forma, no corrige
+   una línea.
+3. **`here` de `asking about theirs`** (item 14, línea 100): el propio informe la lista en «al
+   filo, señaladas y **no contadas**».
+4. **`before 1:00 p.m.` en la línea 51**: mejora de lectura sugerida al margen, sobre una línea
+   que ya se corrigió por calcabilidad. Cambiarla dos veces en la misma pasada es justo lo que
+   introduce defectos nuevos.
+5. **La regla que falta en §11** (segunda persona que no protege sola) y **la línea 66 del molde**
+   `fase7-modelo-ficha-en.md`: viven en otros archivos.

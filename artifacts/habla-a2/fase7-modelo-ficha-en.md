@@ -40,17 +40,17 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 > **Informal.** Same rank, same shifts, you see each other every day. **You start.** About 7 turns each · 7 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday and you are in the back room of the café. It is 3:40 in the afternoon, the machine is off, and Nayibe, the manager, is at the other café. You have been waiting half an hour for the right moment, and Saturday is in four days.
+**Where you are** · It is Tuesday and you are in the back room of the café. It is 3:40 in the afternoon, the machine is off, and Nayibe, the manager, is at the other café. You waited half an hour for the right moment, and Saturday is in four days.
 
 **You want** · You need someone to open on Saturday the 12th, and it has to be written in the café group today.
 
 **You can't**
-1. You can't offer money. Nayibe said it in front of everybody: nobody pays anybody for a shift.
-2. You can't ask for the whole Saturday. You have to put two ways to split it on the table before you get a yes.
-3. You can't call Nayibe now. She is at the Autopista café until six.
+1. You can't offer money, because Nayibe said in front of everybody that nobody pays anybody for a shift.
+2. You can't ask for the whole Saturday. You have to offer two ways to split the shift before they say yes.
+3. You can't call Nayibe now, because she is at the Autopista café until six.
 
 **Only you know**
-- You already asked Katherine and Elkin, and both said no. This person is your last option, and if that comes out, the favor gets more expensive.
+- You already asked Katherine and Elkin, and both said no. This person is your last option, and if they learn that, the favor costs you more.
 - Your Speaking test is on Sunday the 13th, for now. So Saturday after 1:30 is free for you, and you have not said that yet.
 - You can pay the favor back with a date: Friday the 18th at night, Saturday the 19th, or the stock count on Monday the 14th.
 
@@ -73,8 +73,8 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 
 | word | what it is | what it's for here — **not a line to say** |
 |---|---|---|
-| non-refundable | you pay it and nobody gives it back | the exam in one word · your hardest number |
-| shift | the hours you work in one day | one Saturday shift, and everything turns on it |
+| non-refundable | money you pay and never get back | the exam in one word · your hardest number |
+| shift | the hours you work in one day | one Saturday shift · the only thing you need from them |
 | stock count | the day you count everything in the store | the ugly job you can put on the table |
 | the closing | the last shift of the day | the other half of Saturday the 12th |
 | the opening | the first shift of the day | yours, and the one you can't be at |
@@ -87,13 +87,13 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 ### Your toolkit
 Yours: **1** `[asks]`, **2**, **4** `[jargon]` — *IELTS*, *Speaking* and *exam center* are your
 words and nobody else's in that back room — **5**, **6** and **8**. Not 3, not 7. Block **6** is
-for the question you can't answer: they are going to ask who else you asked.
+for the question you can't answer — they are going to ask this: who else did you ask?
 
 ### Say it here — grouped by job, not in order · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| asking about theirs | `What have you got on …?` · `How does … work for you?` | open question · their Saturday is a thing you don't know yet, and you're about to ask them for it |
+| asking about theirs | `What are you doing on …?` · `How does … work for you?` | open question · their Saturday is a thing you don't know yet, and you're about to ask them for it |
 | asking for it | `Can I ask you a …?` · `Can we write it in … today?` | open the door before you walk in · ask for it where shifts become real |
 | bad news | `There's a problem: …` | break something you already said |
 | paying it back | `I can take your shift on …` · `I'll do the stock count on …` | an exact date, never "sometime" · put something of yours on the table |
@@ -113,18 +113,18 @@ an hour. Nobody found out who else you asked.
 > **Informal.** Same rank, same shifts, you see each other every day. **They start.** About 7 turns each · 7 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 3:40 in the afternoon. You are in the back room, tying your apron, and your shift starts in twenty minutes. Nayibe, the manager, is at the other café until six.
+**Where you are** · It is Tuesday, 3:40 in the afternoon. You are in the back room, tying your apron, and your shift starts in twenty minutes, with Nayibe at the other café until six.
 
 **You want** · You want to help. But not by working sixteen hours, and not if this counts as your third swap.
 
 **You can't**
-1. You can't say yes to anything Nayibe can count as swap number three. Your one condition is the way around it: today, in writing, the café group says that they asked you for it. You don't negotiate that one.
+1. You can't say yes to anything Nayibe can count as swap number three. Your one condition is the way to be safe, and you don't negotiate it: today, in writing, the café group says that they asked you for it.
 2. You can't stay after 8:00 p.m. on Saturday. Your bus to San Gil leaves at 5:00 on Sunday morning and the ticket is paid.
 
 **Only you know**
-- On Saturday the 12th there is a company breakfast: forty people at nine in the morning, announced in the group on Friday. That opening is the worst shift of the month, and they don't know it — they joined the group late.
-- You already swapped twice this month. Nayibe said in front of everybody that the third one puts you on the back-up list, with no more fixed weekends. The fixed weekends are the days with tips.
-- On Saturday the 19th there is a wedding for sixty people. You can say this one out loud: it is not a condition, it is arithmetic.
+- You read in the group on Friday that forty people are coming for a company breakfast at nine on Saturday the 12th. That opening is the worst shift of the month, and they don't know it — they joined the group late.
+- You already swapped twice this month. Nayibe said in front of everybody that the third one puts you on the back-up list, with no more fixed weekends. Your fixed weekends are the days that pay you in tips.
+- You work a wedding for sixty people on Saturday the 19th. You can say this one out loud: it is just numbers.
 
 **If you walk away with nothing** · You work with this person every day, and you are going to need exactly this favor next month.
 
@@ -147,11 +147,11 @@ an hour. Nobody found out who else you asked.
 
 | word | what it is | what it's for here — **not a line to say** |
 |---|---|---|
-| a reservation | a table kept for people who called first | forty people at nine · your big card |
+| a reservation | a table you save for people who call first | forty people at nine · your big card |
 | a rush | a short time when everything is very busy | what that opening really is |
+| a swap | when two people change days | swap number three · the thing you can't say yes to |
 | fixed weekends | the weekend days that are always yours | the days with tips · the real cost |
 | in a row | one after another, with no break | the words for sixteen hours with no break |
-| on condition that | only if this other thing happens too | your one condition, and it doesn't move |
 | the back-up list | people who work only when somebody is missing | what swap number three costs you |
 | tips | extra money the customers leave you | 45,000 on a normal Saturday · a number to put on the table |
 | to be short-staffed | to not have enough people at work | why forty people at nine is a problem |
@@ -176,8 +176,8 @@ You have a card to drop, and what you choose is when.
 | your condition | `I can do it, but only if …` | grant it with **one** condition, and hold it |
 
 ### You did it if
-You dropped the forty-people breakfast when it suited you, not before. Your condition was said
-once, and never negotiated. You are out by 8:00 p.m. You said out loud what is still open, with a
+You dropped the forty-people breakfast when you wanted, not before. You said your condition
+once. You never changed it. You are out by 8:00 p.m. You said out loud what is still open, with a
 name and an hour. You never once said that the problem is theirs.
 
 ---
@@ -195,8 +195,8 @@ name and an hour. You never once said that the problem is theirs.
 > `Confirm now`
 
 > **On your screen, under the email:** from three to six on Saturday you can't promise an hour.
-> You can promise that you will be there. Anything you two agreed with you coming in after the
-> exam has just lost its time. Say it before you close: it is in your **You did it if**.
+> You can promise that you will be there. Maybe you agreed that you come in after the exam.
+> That plan does not work now. Say it before you close: it is in your **You did it if**.
 
 **Si se lee antes de tiempo** (nota de diseño, no va en pantalla): no se gana nada y se pierde
 turno. El agujero de 3:00 a 6:00 existe igual y ningún reparto de la tarde lo esquiva. Lo único
@@ -214,10 +214,10 @@ dónde ir.
 1. Who opens on Saturday 12, and at what time.
 2. How long that person stays, and who comes in after.
 3. Which shift gets paid back, and on what exact day.
-4. That the swap was asked for by the person who asked — the line that protects whoever says yes.
+4. Who asked for the swap. The message says the name.
 5. What's still open, who fixes it, and before what time today.
 
-**Five points, or it isn't closed.** It closes **partial** — that's how it was built to close.
+**Five points, or it isn't closed.** It closes **partial**. That is the plan.
 
 ## After — both screens, in Spanish
 
@@ -251,4 +251,42 @@ tope **450** (§11, 21 ago 2026).
 | ficha | prosa, sin tablas | tope |
 |---|---|---|
 | ROLE A | **441 palabras** | 450 |
-| ROLE B | **445 palabras** | 450 |
+| ROLE B | **443 palabras** | 450 |
+
+## Pasada quirúrgica (22 ago 2026) — qué líneas se tocaron
+
+Solo las líneas citadas por `fase9-calcable-3.md` y `fase9-nivel-3.md`. Ninguna otra: ni prosa
+reescrita, ni secciones reordenadas, ni datos, nombres o motor tocados. Medido después con el
+contador canónico: ROLE A **441**, ROLE B **443**, techo 450.
+
+| # | dónde | qué se cambió | de dónde sale |
+|---|---|---|---|
+| 1 | B · `Only you know` 1, oración 1 | `On Saturday the 12th there is a company breakfast: …` → `You read in the group on Friday that forty people are coming …` | calcable 1 |
+| 2 | B · `Only you know` 2, oración 3 | `The fixed weekends are the days with tips.` → `Your fixed weekends are the days that pay you in tips.` | calcable 2 |
+| 3 | B · `Only you know` 3, oración 1 | `On Saturday the 19th there is a wedding …` → `You work a wedding for sixty people on Saturday the 19th.` | calcable 3 |
+| 4 | B · `Only you know` 3, oración 2 | `it is not a condition, it is arithmetic` → `it is just numbers` | nivel R4 |
+| 5 | B · `Where you are`, oraciones 2 y 3 | fundidas: `…, with Nayibe at the other café until six.` (fuera la aposición `the manager`) | calcable 4 |
+| 6 | A · `You can't` 1 | dos oraciones fundidas con `because …that…` | calcable 5 |
+| 7 | A · `You can't` 3 | dos oraciones fundidas con `because` | calcable 6 |
+| 8 | A · vocabulario, fila `non-refundable`, col. `what it is` | `you pay it and nobody gives it back` → `money you pay and never get back` | calcable 7 |
+| 9 | A · vocabulario, fila `shift`, col. `here` | `one Saturday shift, and everything turns on it` → `one Saturday shift · the only thing you need from them` | calcable 8 · nivel V3 |
+| 10 | B · `You can't` 1, oraciones 2 y 3 | fundidas y sin modismo: `Your one condition is the way to be safe, and you don't negotiate it: …` | calcable 9 · nivel R4 |
+| 11 | `how it ends`, punto 4 | fuera la pasiva: `Who asked for the swap. The message says the name.` | nivel N1 |
+| 12 | A · exponentes, fila `asking about theirs` | `What have you got on …?` → `What are you doing on …?` | nivel N2 |
+| 13 | A · `Where you are`, oración 3 | `You have been waiting` → `You waited` | nivel R1 |
+| 14 | Carta · nota bajo el email | `Anything you two agreed with you coming in…` → `Maybe you agreed that you come in after the exam. That plan does not work now.` | nivel R2 |
+| 15 | A · `You can't` 2, oración 2 | `put two ways … on the table before you get a yes` → `offer two ways to split the shift before they say yes` | nivel R3 |
+| 16 | A · `Only you know` 1, final | `if that comes out, the favor gets more expensive` → `if they learn that, the favor costs you more` | nivel R5 |
+| 17 | B · `You did it if`, oraciones 1 y 2 | `when it suited you` → `when you wanted`; `Your condition was said once, and never negotiated` → `You said your condition once. You never changed it.` | nivel R6 |
+| 18 | A · `Your toolkit`, última oración | `they are going to ask who else you asked` → `they are going to ask this: who else did you ask?` (y el primer `:` pasa a raya, para no encadenar dos) | nivel §3, menor |
+| 19 | `how it ends`, cierre | `— that's how it was built to close` → `. That is the plan.` | nivel §3, menor |
+| 20 | B · vocabulario, fila `a reservation` | `a table kept for people who called first` → `a table you save for people who call first` | nivel V2 |
+| 21 | B · vocabulario | fuera la fila `on condition that`; entra `a swap` · `when two people change days`, en orden alfabético. Siguen siendo 10 | nivel V1 |
+| 22 | tabla de presupuesto, fila ROLE B | 445 → **443** | recuento posterior |
+
+**Lo que no se tocó, y por qué:** las bandas de la cabecera (7 minutos y 7 turnos por rol están
+dentro del 5-8 y del 6-9 de §4: el informe de nivel las da por buenas), el motor, los datos duros,
+el reparto de bloques de la caja, la carta salvo su nota, y las 55 oraciones de prosa que el
+informe de calcabilidad declara sanas. El bloque `grammarReferences` de §8 del informe de nivel
+**no** se pegó: es una pieza nueva, no una línea citada, y queda fuera de una pasada quirúrgica.
+

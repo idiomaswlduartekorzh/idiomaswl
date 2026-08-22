@@ -20,25 +20,25 @@ anteriores se escribieron sin ellas. Qué se tocó y por qué, al final del arch
 > **No boss here.** You cook. She came at nine to help. **You speak first.** 9 turns · 7 minutes.
 > **One screen, one player.** Don't read from it.
 
-**The patio, 11:20 a.m.** · Sunday, September 20, in Girón. You lit the fire at nine, for a plan the whole group agreed to on Friday.
+**The patio, 11:20 a.m.** · Sunday, September 20, in Girón. You lit the fire at nine. The group agreed to this plan on Friday.
 
-**What you're after** · One number, before twelve o'clock: how many plates you fill at one. You want the river after lunch, not instead of it.
+**What you're after** · One number, before twelve o'clock: how many plates at one. You are cooking for one o'clock, not for a river trip.
 
 **Three things you won't do**
-1. You keep the pot on the fire, because it is raw cassava in twenty liters of hot water.
+1. You keep the pot on the fire, because you have raw cassava in twenty liters of hot water.
 2. You don't say that the group made a mistake. You need them here at one, and she is the one who asks them.
 3. You don't open the fridge until she gives you three things: how many, before what hour, and how they get back. You put two ways on the table before she says yes.
 
 **Nobody out there knows this**
 - You put the cassava and the plantain in at twelve, so at eleven forty you only have broth.
-- You took the second chicken out at seven and cut it. If it goes in before twelve, you feed twelve. If it doesn't, you lose it tonight.
+- You took the second chicken out at seven and cut it. If you put it in before twelve, you feed twelve. If you don't, you lose it tonight.
 - You can't put it back: you have Saturday's rice and chicken in there, in the one container that is your Monday and Tuesday lunch.
 
-**If she rides off and you have no answer** · You have twelve plates and nobody at the table. You lose the chicken tonight, and you see these same people here next Sunday.
+**If she rides off and you have no answer** · You have twelve plates and nobody at the table. You lose the chicken tonight, and next Sunday they are back in your patio.
 
 ### What the fire is doing while you talk
 
-You look at it every twenty minutes, because that is what a wood fire costs.
+You look at it every twenty minutes, because you cook on wood and not on gas.
 
 | time | the pot |
 |---|---|
@@ -66,7 +66,7 @@ You look at it every twenty minutes, because that is what a wood fire costs.
 
 | word | what it is | here — **not a line to say** |
 |---|---|---|
-| a round | one time that everybody is served | the second one is half of your way out |
+| a round | one time when everybody gets food | half of your way out — the second one |
 | a serving | the food for one person | the unit of the number you keep asking for |
 | cassava | a white root you boil and eat, like a potato | yuca — the physical reason the pot can't move |
 | leftovers | food from an earlier meal | the name of what's in your fridge |
@@ -95,7 +95,7 @@ Blocks **2**, **3** (numbers only), **4** `[jargon]` — *simmer*, *raw* and *se
 | yes, with a string | `The container can go, but only if …` | give the thing away and keep the hour |
 
 ### The lunch happened if
-She told you how many come back, before what hour, and who rides and who walks. The chicken went in at twelve for a real number. You said what leaves and what stays. You asked for what one o'clock needs. What is open has a name and an hour, and you never blamed the group.
+She told you how many come back, before what hour, and who rides and who walks. The chicken went in at twelve for a real number. You said what leaves and what stays. You asked for help at one o'clock. What is open has a name and an hour, and you never blamed the group.
 
 ---
 
@@ -104,7 +104,7 @@ She told you how many come back, before what hour, and who rides and who walks. 
 > **No boss here — the house, the fire and the food are his.** You came at nine and stayed. **He speaks first.** 9 turns · 7 minutes.
 > **One screen, one player.** Don't read from it.
 
-**The patio, and one foot outside it** · Sunday, September 20, 11:20 a.m., in Girón. You watched six of them leave for the river at ten in the heat. You stayed.
+**The patio, and one foot outside it** · Sunday, September 20, 11:20 a.m., in Girón. You came at nine to help him, and at eleven twenty you are still the only one. You stayed.
 
 **What you need before you go** · To be on Marcela's bike at eleven forty, with food in your hands.
 
@@ -114,9 +114,9 @@ She told you how many come back, before what hour, and who rides and who walks. 
 3. On that bike you carry only what fits between your feet.
 
 **What you haven't said yet**
-- You know Édgar's car is not coming back. His eleven eleven message is on your phone, and you have not said a word about it.
-- At ten you gave him a number for one o'clock. Today you know it is wrong and he doesn't. You leave at eleven forty, and he thinks you stay.
-- You know they ate at seven and that nothing is open there on a Sunday. It is your best card and it can also hurt you. If you play it early, he answers that they walk back, and you lose the card.
+- You read Édgar's message at eleven eleven: no car back before four. You have not said a word about it.
+- At ten you gave him a number for one o'clock. Today you know it is wrong. He doesn't know. You leave at eleven forty, and he thinks you stay.
+- You hold two facts he doesn't: last food at seven, and nothing open there on a Sunday. It is your best card and it can also hurt you. If you play it early, he answers that they walk back, and you lose the card.
 
 **If you leave at eleven forty with nothing** · You leave six people at a river with no food and no way home until four, and your message sent them there. And you leave behind lunch for twelve and one man at the fire.
 
@@ -126,7 +126,7 @@ Between your feet you can carry a cooler, and nothing bigger.
 
 | time | the road |
 |---|---|
-| 11:40 | Marcela passes · one passenger |
+| 11:40 | Marcela's bike by the gate · one passenger |
 | 11:55 | at the river |
 | ~12:40 | Marcela back this way |
 | 1:30 | out of the water · 40 min on foot, no shade |
@@ -138,7 +138,7 @@ Between your feet you can carry a cooler, and nothing bigger.
 | | |
 |---|---|
 | Now | Sunday, September 20, 11:20 a.m. |
-| At the river | six people · they went at 10:00 · last food 7:00 |
+| At the river | six people · there from 10:00 · last food 7:00 |
 | Sunday there | no store, no stand, nothing open |
 | Your day off | Sundays only · the next one in a week |
 | What you said at ten | everybody back here at one |
@@ -156,7 +156,7 @@ Between your feet you can carry a cooler, and nothing bigger.
 | the shade | a place out of the sun | the argument against a two o'clock walk |
 | to be starving | to be very, very hungry | the state of the six, and your best card |
 | to fit | to be small enough for a space | the verb of your flat no |
-| to hang out | to spend easy time with friends | what the six are doing, and why one o'clock is hard |
+| to hang out | to spend free time with friends, doing nothing special | what the six are doing, and why one o'clock is hard |
 | to head out | to leave for another place | your eleven forty, and the whole problem |
 | to show up | to arrive where people are waiting | what one o'clock is really about |
 
@@ -193,7 +193,7 @@ You said how many really come back and before what hour — not what you said at
 | Coming at 1:00 | her, your aunt, three from the church |
 | Already | on the road |
 | Bringing | nothing |
-| Where she heard it | somebody told her, lunch here |
+| Where she heard it | word from somebody · lunch here |
 | At 1:00 | five more people |
 | Twelve servings | seven of the group, or none |
 | The gate at 1:00 | somebody there · not you · the fire |
@@ -204,7 +204,7 @@ You said how many really come back and before what hour — not what you said at
 
 ## Both screens — how it ends
 
-**Six things get said out loud, three by each of you. Nobody says the other person's three.**
+**Each of you says three things out loud. Six in total. Nobody says the other person's three.**
 
 **Only A can say:** what goes in the pot at twelve, and for how many · what leaves this patio now, and what stays · what A needs at one o'clock and can't do with the fire on.
 
@@ -242,7 +242,7 @@ cp artifacts/habla-a2/fase8-fichas-4nuevo.md artifacts/habla-a2/fase7-fichas-4nu
 
 | ficha | prosa | techo §11 |
 |---|---|---|
-| **ROLE A — Fabián** | **445** | 450 ✔ |
+| **ROLE A — Fabián** | **444** | 450 ✔ |
 | **ROLE B — Astrid** | **449** | 450 ✔ |
 
 **Se cortó prosa; no se quitó ninguna pieza.** Las ocho obligatorias siguen en los dos roles:
@@ -300,3 +300,61 @@ mujer** en escena y **2 y 3** contando a la vecina del 3 y a la Dra. Restrepo.
 
 **Sin sincronizar:** `fase8-escenario-4nuevo.md` y las cinco auditorías de fase 8 siguen diciendo
 *Duván*, *Édgar's bike* y *Marcela's car*. Son registro de pasadas anteriores; la ficha manda.
+
+---
+
+## Quinta pasada (22 ago 2026) — pasada quirúrgica de calcabilidad y nivel
+
+**No es una reescritura.** Se tocaron **solo** las líneas que citan `fase9-calcable-4.md` y
+`fase9-nivel-4.md`. Ninguna otra línea, ni una tabla entera, ni una sección reordenada. Ni un
+dato, ni una hora, ni un nombre, ni un motor. Prosa medida con el contador canónico después de
+la pasada: **ROLE A 444 · ROLE B 449**, techo 450.
+
+### Las líneas que se tocaron
+
+| línea | de dónde | qué se cambió |
+|---|---|---|
+| 23 | nivel §3 nº 3 | relativa sin pronombre + preposición al final → dos oraciones |
+| 25 | nivel §3 nº 5 · calcable A1 | pregunta incrustada fuera (`plates you fill` → `plates`) · `You want the river…` → `You are cooking for one o'clock, not for a river trip.` |
+| 28 | calcable A2 | `because it is raw cassava…` → `because you have raw cassava…` |
+| 34 | calcable A3 | `If it goes in…` / `If it doesn't…` → `If you put it in…` / `If you don't…` |
+| 37 | calcable A4 | `…you see these same people here next Sunday.` → `…next Sunday they are back in your patio.` |
+| 41 | calcable A5 (cubre nivel §3 nº 7) | `…because that is what a wood fire costs.` → `…because you cook on wood and not on gas.` |
+| 69 | nivel cambio 3 · calcable D1 | pasiva fuera (`is served` → `gets food`) · celda `here` a sintagma nominal |
+| 98 | nivel §3 nº 10 | relativa libre fuera: `what one o'clock needs` → `help at one o'clock` |
+| 107 | calcable B5 (cubre nivel §3 nº 13) | `You watched six of them leave…` → `You came at nine to help him, and at eleven twenty you are still the only one.` |
+| 117 | calcable B1 (GRAVE) | el dato oculto deja de ser frase: `Édgar's car is not coming back.` → nota tras dos puntos |
+| 118 | nivel §3 nº 15 | elipsis verbal sobre `know` partida en dos oraciones |
+| 119 | calcable B2 (GRAVE) | el exponente con la elipsis ya rellenada → lista de notas |
+| 129 | calcable B3 | verbo conjugado fuera de la fila: `Marcela passes` → `Marcela's bike by the gate` |
+| 141 | calcable B4, **con enmienda** | `they went at 10:00` → `there from 10:00` |
+| 159 | nivel cambio 4 | `to spend easy time with friends` → `to spend free time with friends, doing nothing special` |
+| 196 | calcable D2 | verbo conjugado fuera de la fila: `somebody told her` → `word from somebody` |
+| 207 | nivel §3 nº 19 | pasiva fuera: `Six things get said out loud` → `Each of you says three things out loud. Six in total.` |
+| 245 | recuento | el declarado de A pasa de 445 a 444, que es lo medido |
+
+### Las dos enmiendas, y por qué
+
+1. **Fila 141.** La reescritura literal del informe de calcabilidad era `six people · there
+   since 10:00`. **No se usó `since`.** El informe de nivel (§4) verifica por búsqueda literal
+   que no queda un solo `since` en el archivo y explica por qué: de `on since 9:00` salía
+   present perfect de duración, que no es A2. Meter `since 10:00` reabría esa trampa en la misma
+   pasada que la otra auditoría la da por cerrada. Se escribió `there from 10:00`: quita el
+   verbo conjugado igual, sin reabrir nada.
+2. **Línea 107.** La reescritura literal era `…you are still the only one who did.` Con ella
+   medido, ROLE B daba **451**, por encima del techo: el informe declaraba +3 y son +5. Se
+   quitaron las dos palabras de la elipsis (`who did`), que era además la misma estructura que
+   el informe de nivel manda quitar dos líneas más abajo. B queda en **449**, que es la cifra
+   que el propio informe se había puesto de objetivo.
+
+### Lo que este encargo NO manda aplicar, y por eso sigue abierto
+
+- **Cambio 1 del informe de nivel** (la carta dice *«her fourth turn ends — global turn 5»*, y
+  con A hablando primero el cuarto turno de ella es el global 8). No es banda fuera de §4 —7 min
+  y 9 turnos por rol están dentro— ni estructura fuera de A2 ni vocabulario. **Sin tocar.**
+- **Cambio 2 del informe de nivel** (falta `How many are coming back at …?` en la fila `the pot,
+  and how many`, y sin él el ancla `present-continuous-future-a2` queda sin exponente).
+  Es andamiaje, no nivel. **Sin tocar.**
+- **Las once sustituciones léxicas de §3 del informe de nivel** (nº 4, 6, 8, 9, 11, 12, 14, 16,
+  17, 18, 20): modismos, metáforas y un `the jar` que no existe en ninguna ficha. Son legibilidad,
+  no estructura fuera de A2. **Sin tocar.**

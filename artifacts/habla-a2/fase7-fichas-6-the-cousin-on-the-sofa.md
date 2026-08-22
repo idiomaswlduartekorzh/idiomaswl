@@ -74,15 +74,15 @@ concordancia sobre ninguno de los dos en ninguna de las dos fichas ni en la cart
 
 **You can't**
 1. You can't say why Iván is coming. Your family agreed to say nothing until there is an answer. Outside the family you give the same version: ten days of vacation.
-2. You can't send him to a hostel or to a paid room. In your family that is an insult, and tonight your aunt will hear about it.
-3. Your other aunt in Floridablanca is out: you asked her already and the answer was no.
+2. Your family would never accept a hostel or a paid room: for them it is an insult, and tonight your aunt will hear about it.
+3. You asked your other aunt in Floridablanca already. She said no.
 
 **Only you know**
-- You said yes to your aunt on Sunday. So tonight you are giving news, not asking for a favor.
-- You know why Iván is coming: the notary, on Friday the 21st, for his mom's papers. The answer comes on the 26th, and after that day he does not need a bed here. So the nights you can give back are the last ones, never the first.
+- You said yes to your aunt on Sunday. So you come into this kitchen with news, not with a favor to ask.
+- You know why Iván is coming: the notary, on Friday the 21st, for his mom's papers. You also know the answer comes on the 26th, so for you the nights that can go back are the last ones, never the first.
 - You have one more option, and you should not offer it yet. Nelson, in 402, owes you a favor: one call tonight, and he can still say no.
 
-**If you walk away with nothing** · Iván arrives on Thursday anyway — the ticket is bought — and nobody agreed where he sleeps. You call your aunt tonight with no plan. Tomorrow you have breakfast here, with the same person.
+**If you walk away with nothing** · You still have Iván on a bus on Thursday — he already has the ticket — and no plan for that night. You call your aunt tonight with no plan. Tomorrow you have breakfast here, with the same person.
 
 ### Facts
 
@@ -108,7 +108,7 @@ concordancia sobre ninguno de los dos en ninguna de las dos fichas ni en la cart
 | the couch | the long soft seat in the living room | where Iván sleeps in your plan — and the only one in the house |
 | a mattress | the flat soft thing you sleep on | your second way out — a bedroom floor, not the couch |
 | to be out all day | to be away from home from morning to night | Iván, from Friday on |
-| to owe someone a favor | something you must do for them later | Nelson, apartment 402 |
+| to owe someone a favor | to have to help someone later because they helped you first | Nelson, apartment 402 |
 | the lease | the paper that says you can live in this apartment | their word, not yours — and the cue to change the subject |
 | to sign | to write your name on a paper to say yes to it | the one you say yourself, at the end |
 | to drop | *(about the wifi)* to stop for a moment and then come back | their word, about the wifi — not about falling |
@@ -141,19 +141,19 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 
 **Where you are** · It is Tuesday, August 18, 8:20 p.m. You are working at the living room table, laptop open. Dani just got off the phone and walked into the kitchen.
 
-**You want** · You want the whole morning of Monday the 24th at that table, and Dani's signature on the lease before September 1.
+**You want** · You want the whole morning of Monday the 24th at that table, and you want Dani to sign the lease before September 1.
 
 **You can't**
-1. You can't do the interview in your room. Don't explain why unless they ask. From outside it only sounds like an excuse. It is the living room or nothing.
-2. You can't say no to the visit. The visit is never the problem, and a no costs you the bad guy at breakfast.
-3. You can't put everything on the table at once. One thing per turn, and the lease last, with a plan already there. Early, it sounds like payment for the visit.
+1. You can't do the interview in your room. Don't explain why unless they ask. From outside it only sounds like an excuse. You need that table or you lose the call.
+2. You can't say no to the visit. You never make the visit the problem, and if you say no, you are the bad guy at breakfast.
+3. You can't put everything on the table at once. One thing per turn, and the lease last. Say it early and it sounds like payment for the visit.
 
 **Only you know**
 - Dani does not know three things yet. One per turn, lease last: your interview on Monday the 24th, your mom's ticket for Saturday the 29th, and the lease.
 - Dani thinks you work in your room.
-- You have three reasons for the living room, and you don't give them first. The wifi is weak by the window. The street under it is full of bars, and at nine in the morning they unload a truck there. If they ask, tell all of it.
+- You have three reasons for the living room, and you don't give them first. You know two things about that window: a weak signal, and, from the bars downstairs, a truck unloading at nine in the morning. If they ask, tell all of it.
 
-**If you walk away with nothing** · On Monday the 24th the living room is taken and your video call is gone. Nobody signs before September 1, and you both spend two weeks looking for another apartment.
+**If you walk away with nothing** · On Monday the 24th Dani has the living room and your video call is gone. Nobody signs before September 1, and you both spend two weeks looking for another apartment.
 
 ### Facts
 
@@ -176,10 +176,10 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 |---|---|---|
 | to put someone up (*put him up*) | to let someone sleep in your home for a few days | what they are about to ask you for |
 | the couch | the long soft seat in the living room | one object, three claims on it |
-| a mattress | the flat soft thing you sleep on | already in the house — you can offer it too |
-| a hostel | a cheap place to sleep, in a room with other people | the obvious cheap idea. Ask, don't assume |
+| a mattress | the flat soft thing you sleep on | already in the house — your second bed to offer |
+| a hostel | a cheap place to sleep, in a room with other people | the obvious cheap idea — to ask about, never to assume |
 | to be out all day | to be away from home from morning to night | their words, not yours — reception, and the cue you have to catch |
-| to owe someone a favor | something you must do for them later | a bed that depends on somebody else |
+| to owe someone a favor | to have to help someone later because they helped you first | a bed that depends on somebody else |
 | the lease | the paper that says you can live in this apartment | your third thing, and the last one you bring out |
 | to sign | to write your name on a paper to say yes to it | the exact thing you need from them |
 | to drop | *(about the wifi)* to stop for a moment and then come back | your reason — not the first thing you give |
@@ -218,11 +218,11 @@ Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload*
 > |---|---|
 > | The ticket | changed · Thursday the 20th, afternoon |
 > | How long | until Tuesday the 25th |
-> | Why she moved it | Monday |
+> | Why | she wants to be here on Monday |
 
 **One line of your Facts, changed.** Saturday the 29th: gone. New day: Thursday the 20th, same day as Iván. Monday the 24th: in the apartment.
 
-**Your old plan is gone: fewer nights, and everyone out before the 29th. Don't open this card early** — open it early and you never say the 29th out loud.
+**This card takes your old plan away: fewer nights, and everyone out before the 29th. Don't open this card early** — open it early and you never say the 29th out loud.
 
 ---
 
@@ -270,7 +270,7 @@ grammarReferences: [
   { slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
     rationale: 'La segunda salida de Dani se ofrece con there is, y por eso suena a inventario y no a exigencia: "He can sleep… There\'s a mattress".' }, // a1
   { slug: 'prepositions-time', title: 'Preposiciones de tiempo en inglés A1',
-    rationale: 'El reparto se dice con on/at: "He\'s coming on…", "at nine in the morning". Nunca con by de tiempo, que no está en el registro; el by que sí aparece es locativo ("by the window"). (from…to, before y until se usan como léxico: el tema no los cubre.)' }, // a1
+    rationale: 'El reparto se dice con on/at: "He\'s coming on…", "at nine in the morning". Nunca con by de tiempo, que no está en el registro. (from…to, before y until se usan como léxico: el tema no los cubre.)' }, // a1
   { slug: 'imperative', title: 'El imperativo en inglés A1',
     rationale: 'Frenar al otro a mitad de una noticia es un imperativo, y aquí ocurre tres veces: "Wait — when?", "Let\'s leave [what] for…", y los dos de la caja del nivel ("Hold on.", "Let me say that again.").' }, // a1
   { slug: 'can-ability', title: 'Can para habilidad en inglés A1',
@@ -289,10 +289,10 @@ Aquí no se declara ninguna cifra a mano: la de abajo sale del script.
 
 | ficha | prosa (script) | tope | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| **ROLE A — Dani** | 449 | 450 | 10 filas (≤10) | 9 (8-10) | 8 (6-9) |
-| **ROLE B — Cris** | 446 | 450 | 10 filas (≤10) | 10 (8-10) | 9 (6-9) |
+| **ROLE A — Dani** | 444 | 450 | 10 filas (≤10) | 9 (8-10) | 8 (6-9) |
+| **ROLE B — Cris** | 448 | 450 | 10 filas (≤10) | 10 (8-10) | 9 (6-9) |
 
-A queda pegada al techo, y era inevitable: §11 dejó de pedir telegramas fuera de las tablas
+A quedó pegada al techo en la cuarta ronda, y era inevitable: §11 dejó de pedir telegramas fuera de las tablas
 y las cinco piezas de prosa se reescribieron como oraciones completas. Lo que las mantiene bajo
 techo es que **se cortó prosa, nunca una pieza**: se fue `, no door out` de las dos cabeceras
 (idioma inventado, y `Breakfast here tomorrow` ya dice lo mismo), la metáfora `apartment hunting`
@@ -447,3 +447,56 @@ Y tres del blueprint y del molde:
   donde está; mientras diga un número absoluto, también. Se queda en el 6 por las dos vías.
 - **Renderizado: el bloque de cierre tiene que imprimirse entero dentro de las dos pantallas**
   (hallazgo 53, y el mismo del escenario 2). En este documento vive una sola vez, a propósito.
+
+---
+
+## Pasada quirúrgica del 22 ago 2026 — qué líneas se tocaron
+
+Solo se editaron las líneas que `fase9-calcable-6.md` cita como decibles y las que
+`fase9-nivel-6.md` marca fuera de A2 o mal glosadas. **Ninguna otra línea se tocó**: ni el motor,
+ni la carta, ni el cierre, ni un dato, ni el orden de ninguna tabla. Cifras del script después de
+la pasada: **ROLE A 444 · ROLE B 448** (techo 450).
+
+| # | dónde | qué era | de dónde sale |
+|---|---|---|---|
+| 1 | ROLE A · `You can't` 2 | `You can't send him to a hostel or to a paid room. In your family that is an insult…` | calcable 1 |
+| 2 | ROLE A · `You can't` 3 | `Your other aunt in Floridablanca is out: you asked her already…` | nivel N5 |
+| 3 | ROLE A · `Only you know` viñeta 1 | `So tonight you are giving news, not asking for a favor.` | calcable 4 |
+| 4 | ROLE A · `Only you know` viñeta 2 | `The answer comes on the 26th…` + `So the nights you can give back…` (fundidas en una) | calcable 2 + nivel N6 |
+| 5 | ROLE A · `If you walk away with nothing` | `Iván arrives on Thursday anyway — the ticket is bought — and nobody agreed where he sleeps.` | calcable 3 + nivel N1 |
+| 6 | ROLE A · vocabulario, `to owe someone a favor` | definición `something you must do for them later` | nivel V1 |
+| 7 | ROLE B · `You want` | `and Dani's signature on the lease before September 1.` | nivel N7 |
+| 8 | ROLE B · `You can't` 1 | `It is the living room or nothing.` | calcable 5 |
+| 9 | ROLE B · `You can't` 2 | `The visit is never the problem, and a no costs you the bad guy at breakfast.` | calcable 6 + nivel N3 |
+| 10 | ROLE B · `You can't` 3 | `…and the lease last, with a plan already there. Early, it sounds like payment…` | nivel N4 + el donante de prosa de §8 |
+| 11 | ROLE B · `Only you know` viñeta 3 | `The wifi is weak by the window.` + `The street under it is full of bars…` (fundidas en una) | calcable 7-8 |
+| 12 | ROLE B · `If you walk away with nothing` | `the living room is taken` | nivel N2 |
+| 13 | ROLE B · vocabulario, `to owe someone a favor` | definición `something you must do for them later` | nivel V1 |
+| 14 | ROLE B · vocabulario, `here` de `a mattress` | `already in the house — you can offer it too` | calcable, defecto de forma 1 |
+| 15 | ROLE B · vocabulario, `here` de `a hostel` | `the obvious cheap idea. Ask, don't assume` | calcable, defecto de forma 2 |
+| 16 | Carta · fila de la tabla | `| Why she moved it | Monday |` | nivel N8 |
+| 17 | Carta · línea de cierre | `Your old plan is gone: fewer nights…` | calcable 9 |
+| 18 | `grammarReferences`, `prepositions-time` | el paréntesis `el by que sí aparece es locativo ("by the window")` | consecuencia de la 11: ese `by` ya no existe en ninguna ficha |
+| 19 | Cuenta de prosa | las dos cifras declaradas (449/446) y el «A queda pegada al techo» | consecuencia de las anteriores |
+
+**Tres decisiones de redacción, y por qué:**
+
+1. **Calcable 2** proponía `the answer lands on the 26th`. `to land` con ese sentido no es A2 —es
+   justo lo que §4 del informe de nivel manda quitar en otras líneas—, así que se conservó el verbo
+   `comes` del original y todo lo demás de la reescritura propuesta (`You also know…, so for you…`,
+   y el relativo explícito `that`, que es lo que N6 pedía).
+2. **Calcable 3** y **N1** chocaban en la misma línea: la reescritura de calcabilidad conservaba
+   `about where he sleeps` (interrogativa incrustada) y la pasiva `the ticket is bought`, que es
+   exactamente lo que N1 manda quitar. Se aplicaron las dos: el anclaje de calcabilidad
+   (`You still have Iván on a bus…`) con la lengua de N1 (`he already has the ticket`, `no plan for
+   that night`).
+3. **V1** proponía `they helped you, so later you have to help them`. **Se rechaza esa redacción**:
+   arrastra el mismo error de dirección que el propio informe diagnostica —en la ficha es Nelson
+   quien le debe a Dani, no al revés— y sigue sin ser una definición de forma verbal para una
+   entrada que empieza por `to`. Entra `to have to help someone later because they helped you
+   first`, que sí es verbal y que, leída sobre `Nelson owes you a favor`, deja a Nelson de deudor.
+
+**Lo que este editor NO tocó, a propósito:** A1, A2 y A3 del informe de nivel (el exponente
+`If…, I'm OK with it.`, el `rationale` de `imperative` y las dos referencias que faltan) y el bloque
+de `grammarReferences` de su §7. Son anclajes de gramática, no estructura fuera de A2 ni
+vocabulario, y quedaban fuera del encargo de esta pasada. **Siguen pendientes.**

@@ -6,7 +6,7 @@ carta, cierre y desenlace son los de `fase4-escenarios-4-6.md`. Lo que cambia es
 ficha, el bloque de vocabulario y el presupuesto de prosa.
 
 `disculparse` + `conceder-con-condicion` · poder **b>a** · arranca **B** · desenlace **acuerdo** ·
-**9-10 min** · A 16-23 turnos por rol · B 16-23 turnos por rol (mediana medida: 19) ·
+**8 min** · A 6-9 turnos por rol · B 6-9 turnos por rol ·
 **A = Camilo**, **B = doña Amparo**.
 
 **Registro, y cómo sobrevive al inglés.** En español ella lo tutea y Camilo la trata de usted. El
@@ -22,23 +22,23 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 
 ## ROLE A — Camilo, warehouse assistant
 
-> **Formal.** She is your supervisor. Two years together. You say *doña Amparo*; she uses your first name. **She starts.** 16-23 turns each · 9-10 minutes.
+> **Formal.** She is your supervisor. Two years together. You say *doña Amparo*; she uses your first name. **She starts.** 6-9 turns each · 8 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
 **Where you are** · It is Monday, August 17, 7:35 a.m. The auto parts store is still shut. She called you into the office and closed the door. Two things are on the desk.
 
-**You want** · You don't want a written warning in your file. You also want the second set of keys.
+**You want** · You want to walk out with no warning about you on paper. You also want the second set of keys.
 
 **You can't**
-1. You can't say why your Saturday mornings are taken. You don't want the store deciding what those hours are worth. Say no to the day, and nothing else about it.
+1. You can't say why your Saturday mornings are busy. You don't want the store to know about them. Say no to the day, and nothing else about it.
 2. You can't invent an excuse, and you can't blame anybody else.
-3. You can't close this with a promise. You have promised twice. This time she needs to hear what changes, and how.
+3. You can't close this with a promise. You have promised twice. This time she needs to hear what will change, and how it will work.
 
 **Only you know**
 - You coach a kids' football school on Saturdays, from 8:00 to 12:00. Forty children, no money, and no second coach after June. You said it out loud once, two years ago, and the store talked about it for a month.
 - Your neighbor in apartment 3 goes to the same daycare every morning. She is the only reason your mornings can change. You have never asked her.
 
-**If you walk away with nothing** · She writes the warning, because it is the only paper she can still write. The bonus goes with it, the warehouse job goes to somebody else, and so do the keys.
+**If you walk away with nothing** · She writes the warning, because it is the only paper she can still write. Your bonus goes with it, and the warehouse job and the keys go too.
 
 ### Facts
 
@@ -49,10 +49,10 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 | Matías | daycare in Girón · in at 6:40, not before and not after |
 | Your bus | before: ten to seven · now: a quarter past seven · without the daycare: the 6:00, here at five to seven |
 | The road work | carrera 15 · start date August 1 · twenty-five minutes more |
-| The 5:50 bus | at the store 6:45 · but the daycare takes Matías at 6:40, never before |
+| The 5:50 bus | at the store 6:45 · daycare, never before 6:40 |
 | The neighbor in 3 | same daycare, every morning · never asked · her price: her two boys, Wednesdays at five |
 | August bonus | 80,000 pesos · gone with a written warning in your file · automatic · nobody's decision |
-| The warehouse job | nobody in that job from April · the keys and the delivery note go together |
+| The warehouse job | nobody in that job from April · keys and delivery note, always together |
 | The commitment sheet | start time · start date · review date · **and one line: WHAT CHANGES** |
 
 ### Words you need here
@@ -60,10 +60,10 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 | word | what it is | what it's for here — **not a line to say** |
 |---|---|---|
 | a set of keys | all the keys for one place, in one group | the second set · one of the two things on the desk |
-| a written warning | a paper about a mistake that goes in your file | don't leave with this one |
+| a written warning | a paper about a mistake that goes in your file | not this one, not today |
 | commitment sheet | a paper where the worker writes what will change | still blank · one line on it for your words |
 | daycare | the place where somebody looks after your child while you work | at 6:40, not before and not after |
-| delivery note | the paper that says what comes on the truck | signed by the person who opens the store · the reason the keys matter |
+| delivery note | the paper that says what comes on the truck | one signature, from the person who opens the store · the reason the keys matter |
 | road work | workers fixing the street, so the cars go slowly | twenty-five minutes more on the bus |
 | to fill out | to write the words in the empty space | the WHAT CHANGES line · your words, not hers |
 | to pick up | to go and get somebody and take them home | her two boys, Wednesdays at five · the price of your mornings |
@@ -104,24 +104,24 @@ Block 6: Saturday mornings are the one thing you don't explain.
 
 ## ROLE B — doña Amparo, supervisor
 
-> **Formal from him, direct from you.** You call him Camilo; he says *doña Amparo*. **You start.** 16-23 turns each · 9-10 minutes.
+> **Formal from him, direct from you.** You call him Camilo; he says *doña Amparo*. **You start.** 6-9 turns each · 8 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
 **Before you speak** · Put the keys and the commitment sheet on the desk, then talk. Without them, this is a complaint.
 
-**Where you are** · It is 7:35 and the store is still shut. The truck comes at ten past seven, and you have opened alone three Mondays.
+**Where you are** · The store you open is still shut at 7:35. You are alone at the door when the truck comes at ten past seven, and you have opened alone three Mondays.
 
-**You want** · You want to give him the keys today. First you need the WHAT CHANGES line and two mornings of training.
+**You want** · You want to give him the keys today. He gives you the WHAT CHANGES line and two mornings of training first.
 
 **You can't**
 1. You can't fire him, cut his pay or pay extra hours. None of that is in your hands, and you don't want it.
-2. You can't give the keys with nothing in writing: the other four would see it.
+2. You can't give the keys with nothing in writing, not with the other four watching.
 3. You can't write the WHAT CHANGES line for him. It has to be in his words.
 
 **Only you know**
 - You never put the first two Mondays on the incident form. If you write one today, he can ask about them.
-- You have Alba, from the counter, asking for the keys too. Nobody taught her the truck.
-- You can give the training on two Thursdays after closing, 6:30 to 8:30. Nobody pays those two nights. You don't want to offer it.
+- You have Alba, from the counter, asking for the keys too. You never taught her the truck.
+- You can give the training on two Thursdays after closing, 6:30 to 8:30, in your own unpaid time. You don't want to offer it.
 
 **If you walk away with nothing** · You open the store alone for two more years, and you get a warning of your own, with two Mondays to explain.
 
@@ -138,17 +138,17 @@ Block 6: Saturday mornings are the one thing you don't explain.
 | The warehouse, quiet | Saturdays, 8:00 to 12:00 |
 | Review date | Monday, September 14 |
 | The second set of keys | one signature on the delivery note · from the person who opens |
-| The others | four people in the store · they see everything |
+| The others | four people in the store · eyes on everything |
 
 ### Words you need here
 
 | word | what it is | what it's for here — **not a line to say** |
 |---|---|---|
 | commitment sheet | a paper where the worker writes what will change | the only safe signature of the three |
-| delivery note | the paper that says what comes on the truck | the boxes are checked with it · two people, always |
+| delivery note | the paper that says what comes on the truck | checked against the boxes · two people, always |
 | incident form | the company paper for the days somebody arrives late | today's paper · a question he can ask |
-| review date | the day you look at it again: did it work? | September 14 · the day somebody can see if it is true |
-| store folder | the papers that the store keeps about the store, not about one person | the middle paper · it never reaches his file |
+| review date | the day you look at it again and see if it worked | September 14 · the day somebody can see if it is true |
+| store folder | the papers that the store keeps about the store, not about one person | the middle paper · never in his file |
 | training | hours when somebody teaches you the job | two mornings · your price for the keys · nobody else to teach them |
 | warehouse | the big room where the store keeps the boxes | the reason you are asking him · not the three Mondays |
 | written warning | a paper about a mistake that goes in your file | the heaviest of the three · expensive for you too |
@@ -169,11 +169,11 @@ Block 6 matters most: one question you don't answer.
 | clearing the air | `I'm not angry.` | he thinks you are angry — show him you are not |
 | giving the rule, not the fight | `I have to write…` | it is the rule, not your decision |
 | offering, with a condition | `If you write this line today, I can…` | in one sentence: what you need, and what you give |
-| putting the two things on the desk | `Have a seat, Camilo.` · `This line is for you to…` | say why you called him. Then point at the line |
+| putting the two things on the desk | `Have a seat, Camilo.` · `You fill out this line, not me.` | say why you called him. Then point at the line |
 | saying it is not enough, and your price | `That helps, but I need…` → `Two mornings, Saturdays, eight to twelve, and I…` | say it falls short, then the number, the day and who teaches |
 | saying what it costs | `Nobody pays me for those two nights.` · `That costs you…` | your price, and his — that's point 3 of the close |
 | saying why him | `You know this warehouse better than…` | finish it with the store, not with a name · this is about the warehouse, not about the three Mondays |
-| trying another way | `What if we…?` | put a third door on the table before either of you shuts one |
+| trying another way | `What if we…?` · `Maybe we can…` | put a third door on the table before either of you shuts one |
 
 ### You did it if
 1. The keys and the sheet were on the desk before you spoke.
@@ -181,7 +181,7 @@ Block 6 matters most: one question you don't answer.
 3. You said why you are asking him.
 4. He wrote the WHAT CHANGES line in his own words, and somebody can check it Monday.
 5. You said when the keys change hands, and what you get.
-6. You gave a training day you can keep and said what it costs you. If it cost you nothing, say why.
+6. You gave a training day you can keep and said what it costs you. If it costs you nothing, say why.
 7. You promised nothing you can't give, and you didn't lie about the two Mondays.
 
 ---
@@ -199,7 +199,7 @@ Block 6 matters most: one question you don't answer.
 > | The question one of them asked | the other two Mondays · not in the incident form |
 >
 > - A secret deal does not work now.
-> - The other four can see any change. So he gives something back, and they see that too.
+> - Nothing you give him now stays between the two of you. So he gives something back, and they see that too.
 > - You decide how much you tell him.
 
 <!-- METADATO DE PRODUCCIÓN — no va a pantalla -->
@@ -213,9 +213,9 @@ palabras. Se caen la guardería, la obra y el bus, que son justo lo que había q
 
 1. **The paper you write, and where it goes:** a written warning in his file · a note in the store folder · the commitment sheet and nothing else.
 2. **What changes next Monday, exactly:** the start time, and how it works — who takes Matías, which bus, who opens the store — and the review date.
-3. **When and where the training happens, and what it costs.** Then each of you says: "This costs you ___." The other one says yes, or corrects it. And then one more question, out loud: **"And who else pays for this?"** — with a name.
+3. **When and where the training happens, and what it costs.** Then each of you says: "This costs you ___."
 
-**And to really finish:** you sign the commitment sheet on the desk. Then doña Amparo reads the WHAT CHANGES line out loud, with the same words, and asks: "Tell me again: who takes Matías, and what time do you get here?" If the line does not say what happens next Monday at seven, you are not finished.
+**And to really finish:** you sign the commitment sheet on the desk. If the line does not say what happens next Monday before seven, you are not finished.
 
 **Three, or it isn't closed.** Point 2: you cannot close with a promise. Point 3: you cannot close without the price.
 
@@ -285,8 +285,8 @@ node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs
 
 | ficha | prosa | tope §11 | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Camilo | **448** | 450 | 10 filas | 10 | 9 |
-| ROLE B — doña Amparo | **439** | 450 | 10 filas | 9 | 9 |
+| ROLE A — Camilo | **450** | 450 | 10 filas | 10 | 9 |
+| ROLE B — doña Amparo | **448** | 450 | 10 filas | 9 | 9 |
 
 El techo de §11 para A1-A2 es **450** desde la corrección del 21 de agosto: los 350 anteriores
 salían de contar a mano una sola ficha y ni el propio molde los cumplía. La ficha de B venía de
@@ -295,9 +295,12 @@ salían de contar a mano una sola ficha y ni el propio molde los cumplía. La fi
 de Amparo deja de ser una oferta ya construida, la cabecera se acorta y el objetivo baja de 145
 caracteres a una frase. **Se cortó prosa, no piezas.**
 
-En esta pasada B baja de 450 a 439 y A de 449 a 448, y no sale ninguna pieza: lo que se corta es
-media oración del segundo secreto de Amparo (la comparación con Alba, abajo) y una palabra de cada
-cabecera al pasar de `About 17 turns each` a la banda medida.
+En la pasada anterior B bajó de 450 a 439 y A de 449 a 448 sin perder ninguna pieza. En la pasada
+quirúrgica del 22 de agosto —sobre `fase9-calcable-5.md` y `fase9-nivel-5.md`, solo las líneas
+citadas— A sube a **450** y B a **448**, corridos con el contador canónico: lo que engorda son las
+dos reescrituras que cambian persona gramatical (`Where you are` de B y `You want` de A) y el
+`what will change, and how it will work` que pide el nivel. Ninguna ficha se pasa, pero **A queda
+clavada en el techo**: la próxima línea que crezca en su prosa tiene que salir de otra.
 
 **Los nueve exponentes son nueve funciones, no nueve frases**, y desde esta ronda tampoco son
 nueve oraciones: van **ordenados alfabéticamente por función** y la mayoría son **troncos con
@@ -346,18 +349,19 @@ Tres cosas que no son de estilo. Las tres salen del acta del guardián
    guardería a las 6:40 mueve las tres medidas a la vez y no invierte el sesgo, que es lo que
    pasó la primera vez que se corrigió. **La vecina del 3 pasa a vecino, con sus dos niños**, por
    lo mismo y por dos palabras. El inglés no tiene concordancia: no se toca nada más.
-3. **La banda declarada dice ahora lo que se midió: `16-23 turns each · 9-10 minutes`.** La
-   ronda anterior bajó la cabecera de 9 minutos a 8 y dejó «About 17 turns each» para arrimarse
-   al 5-8 / 6-9 de §4. Eso era mentir dos veces. La simulación de las cinco parejas
-   (`fase7-simulacion-5.md`) midió A 19 · B 19 en 9:25 · A 21 · B 20 en 10:20 · A 16 · B 17 en
-   9:40 · A 23 · B 23 en 8:20; la única pareja por debajo —12 y 13 turnos en 4:20— es la del
-   atajista, que es un modo de fallo, no un objetivo. Mediana por rol: **19**. §4 dice en su
-   propia nota que «los minutos salen de la simulación, no del deseo» y que «si un escenario dura
-   más de lo que dice, se corrige el número». Se corrige el número, y las dos cabeceras llevan
-   **la misma cadena y la misma unidad** —turnos **por rol**, nunca globales—. Lo que queda
-   abierto no es de la ficha: **este escenario no cabe en la fila A2 de §4** (6-9 turnos, 5-8
-   minutos), y eso se cierra actualizando §4 con lo medido en los ocho o rediseñando el
-   escenario. Aquí no se rediseña nada.
+3. **La banda declarada vuelve a la fila A2 de §4: `6-9 turns each · 8 minutes`.** La ronda
+   anterior la había subido a `16-23 turns each · 9-10 minutes` porque era lo medido: la
+   simulación de las cinco parejas (`fase7-simulacion-5.md`) dio A 19 · B 19 en 9:25 · A 21 ·
+   B 20 en 10:20 · A 16 · B 17 en 9:40 · A 23 · B 23 en 8:20, mediana por rol **19**. Pero
+   declarar lo medido no arregla que **ese tamaño no sea de ninguna fila de §4** (A2: 6-9 turnos,
+   5-8 minutos; B1: 8-12 turnos, 6-9 minutos). Lo que empujaba los turnos era el cierre, no el
+   inglés, así que baja la banda y sale del cierre la carga B1 que la inflaba: la pregunta extra
+   del punto 3 («And who else pays for this?»), el espejo doble de precio («the other one says
+   yes, or corrects it») y la relectura en voz alta del renglón. Se queda la firma, que no cuesta
+   ningún turno, y las dos cabeceras siguen llevando **la misma cadena y la misma unidad**
+   —turnos **por rol**, nunca globales—. **Queda pendiente de otra pasada** lo que no es
+   quirúrgico y sí toca datos y criterios: bajar los tres papeles a dos y el `You did it if` de
+   siete renglones a cinco por rol.
 4. **`why him, and not Alba` sale del cierre.** El renglón 3 del `You did it if` de Amparo
    obligaba a decir en voz alta una comparación con **alguien que Camilo no conoce**: el nombre
    de Alba no está en la ficha de A, no lo pronuncia nadie antes y no vuelve a aparecer. Y la
@@ -412,7 +416,7 @@ Tres cosas que no son de estilo. Las tres salen del acta del guardián
 7. **El niño esperando solo en la puerta de la guardería.** Fuera. Era el precio del bus de las
    5:50 y es la única imagen del set que un padre no lee como fricción. El bus sigue siendo
    inviable por el mismo motivo, dicho con el dato en vez de con la imagen: `at the store 6:45 ·
-   but the daycare takes Matías at 6:40, never before`.
+   daycare, never before 6:40`.
 8. **El camión de las 7:10 fuera de la tabla de Camilo.** No es una pérdida: si lo tiene delante,
    no ofrece entrar a las 7:30 y la trampa del turno 3 no se arma. No restaurar.
 9. **`Not 4` en la ficha del rol A.** Se quita. Él produce la cadena causal más larga del set
@@ -440,3 +444,91 @@ cinco sigue siendo Camilo.
 **Camilo no se toca.** El rol A sigue en masculino: es la mitad que sí había que corregir y la que
 sostiene el conjunto. Doña Amparo tampoco: es uno de los dos mandos femeninos en escena del set, y
 el equilibrio del mando se arregló en el escenario 8, no aquí.
+
+---
+
+## Pasada quirúrgica del 22 ago 2026 — qué líneas se tocaron
+
+Solo las líneas citadas por `fase9-calcable-5.md` y `fase9-nivel-5.md`. **Ninguna otra línea se
+tocó**: ni para acortarla, ni para mejorarla. Ni una sección se reordenó, ni una tabla se
+reescribió entera, ni cambió un dato, un nombre o el motor. Los números de línea son los de
+después de la pasada.
+
+**Prosa, contador canónico (`node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`,
+corrido después de aplicar): ROLE A 450 · ROLE B 448**, techo 450. Las dos dentro; A clavada en el
+techo.
+
+### De `fase9-calcable-5.md` — las 12 decibles y los 4 defectos de forma (16 de 16 aplicados)
+
+| # | línea | qué cambió |
+|---|---|---|
+| 1 | 114 | `First you need the WHAT CHANGES line…` → `He gives you the WHAT CHANGES line and two mornings of training first.` |
+| 2 | 123 | `Nobody taught her the truck.` → `You never taught her the truck.` |
+| 3 | 124 | `…6:30 to 8:30. Nobody pays those two nights.` → `…6:30 to 8:30, in your own unpaid time.` |
+| 4-5 | 112 | `It is 7:35 and the store is still shut. The truck comes…` → `The store you open is still shut at 7:35. You are alone at the door when the truck comes…` |
+| 6 | 118 | `: the other four would see it.` → `, not with the other four watching.` |
+| 7 | 141 | `they see everything` → `eyes on everything` |
+| 8 | 202 | `The other four can see any change.` → `Nothing you give him now stays between the two of you.` |
+| 9 | 30 | `You don't want a written warning in your file.` → `You want to walk out with no warning about you on paper.` |
+| 10 | 41 | `The bonus goes with it, the warehouse job goes to somebody else, and so do the keys.` → `Your bonus goes with it, and the warehouse job and the keys go too.` |
+| 11 | 52 | `but the daycare takes Matías at 6:40, never before` → `daycare, never before 6:40` |
+| 12 | 55 | `the keys and the delivery note go together` → `keys and delivery note, always together` |
+| F1 | 63 | `don't leave with this one` → `not this one, not today` |
+| F2 | 148 | `the boxes are checked with it` → `checked against the boxes` |
+| F3 | 151 | `it never reaches his file` → `never in his file` |
+| F4 | 150 | `the day you look at it again: did it work?` → `the day you look at it again and see if it worked` |
+
+**Una reescritura se aplicó modificada, y por qué.** La 10. El informe de calcabilidad proponía
+`Your bonus goes with it, and so do the warehouse job and the keys.`, y el informe de nivel marca
+en esa misma línea (§3.1) la inversión `so do` + auxiliar como B1 leído. Se toma el `Your bonus`
+—que es lo que quita la calcabilidad, porque dicho a Amparo es falso— y se cierra sin la
+inversión: `…and the warehouse job and the keys go too.`
+
+### De `fase9-nivel-5.md` — estructuras fuera de A2, vocabulario y bandas
+
+| origen | línea | qué cambió |
+|---|---|---|
+| §3.2 | 33 | `your Saturday mornings are taken` (pasiva) → `are busy` · `You don't want the store deciding what those hours are worth.` (gerundio con sujeto + pregunta incrustada) → `You don't want the store to know about them.` |
+| §3.3 | 35 | `she needs to hear what changes, and how.` → `…what will change, and how it will work.` |
+| §3.4 | 118 | el condicional hipotético `would see it` desaparece dentro de la reescritura 6 |
+| §3.5 | 184 | `If it cost you nothing` → `If it costs you nothing` |
+| §3.1 | 41 | inversión `so do` fuera, dentro de la reescritura 10 |
+| §3 menor | 124 | `Nobody pays those two nights.` sin preposición: sale dentro de la reescritura 3 |
+| §3 menor | 218 | `what happens next Monday at seven` → `before seven` (contradecía la hora pactada) |
+| §2 SALE | 172 | `This line is for you to…` (`for` + objeto + infinitivo, sin tema en el registro) → `You fill out this line, not me.` |
+| §2 REVISAR | 176 | `What if we…?` se conserva como chunk y se le añade el par anclado `Maybe we can…` (can-ability) |
+| §4 | 66 | A · `delivery note`: `signed by the person who opens the store` → `one signature, from the person who opens the store` |
+| §4 | 148 | B · `delivery note`: la pasiva sale con F2 (`checked against the boxes`) |
+| §1 | 9, 25, 107 | banda: `9-10 min` y `16-23 turnos por rol` → **`8 min`** y **`6-9 turnos por rol`**, que es la fila A2 de §4 |
+| §1 recorte 1 | 216 | sale del punto 3 del cierre la pregunta extra `"And who else pays for this?" — with a name` |
+| §1 recorte 2 | 216 | sale el espejo doble de precio: `The other one says yes, or corrects it.` |
+| §1 recorte 3 | 218 | sale la relectura en voz alta del renglón y `Tell me again: who takes Matías…`; **se queda la firma** |
+
+**Dos correcciones del informe de nivel se rechazan, con motivo.**
+
+1. **§4, celdas `here` de `delivery note`.** El informe propone `the person who opens the store
+   signs it` (A) y `two people check the boxes with it · always` (B). Las dos quitan la pasiva y
+   las dos **meten una oración conjugada en una columna de notas**, que es justo lo que §11
+   prohíbe en tablas y lo que `fase9-calcable-5.md` marca como defecto de forma F2 en esa misma
+   celda. Se toma la versión de la calcabilidad para B (`checked against the boxes`) y se escribe
+   la equivalente para A (`one signature, from the person who opens the store`): sin pasiva
+   conjugada y sin frase.
+2. **§3.2, segunda y tercera oración de `You can't` 1 de A.** El informe propone `The store does
+   not need to know. Say no to the day, and nothing else.` La primera es tercera persona, presente
+   simple y deixis cero: Camilo la dice tal cual delante de Amparo y el turno avanza — sería una
+   decible nueva, que es exactamente el defecto que estas rondas reintroducen al reescribir. Se
+   conserva la segunda persona, que aquí sí protege (`You don't want the store to know about
+   them.`), y la tercera oración no se toca porque no tenía defecto de nivel.
+
+### Lo que NO se tocó, y hay que saberlo
+
+- **§1, recortes 4 y 5** (los tres papeles a dos y `You did it if` de 7 a 5 por rol): no son
+  quirúrgicos —tocan datos, tabla de Facts, cierre y criterios, y el recorte 5 se contradice a sí
+  mismo (dice cinco y lista cuatro para B)—. La banda ya declara 6-9 turnos; **estos dos recortes
+  siguen pendientes** y están anotados como tales en el punto 3 de «Lo que cambió en esta ronda».
+- **§5 del informe de nivel** (el `rationale` de `first-conditional` y los dos slugs que faltan,
+  `wh-questions` y `prepositions-time`): fuera del encargo de esta pasada. `grammarReferences`
+  queda como estaba.
+- Las dos tablas `Say it here` salvo las dos celdas nombradas, el resto de `Facts`, el resto del
+  vocabulario, `Your toolkit`, `Only you know` de A, la carta salvo su línea 202 y el bloque en
+  español del final.

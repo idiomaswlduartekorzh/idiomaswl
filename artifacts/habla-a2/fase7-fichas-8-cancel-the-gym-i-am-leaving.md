@@ -30,26 +30,26 @@ los datos de Mauricio—, no con la misma fila repetida.
 
 ## ROLE A — You're leaving, and still paying
 
-> **Counter, formal.** *Please*, *sorry*, *thank you*. Shouting buys nothing: he signs nothing. **You start.** 8 turns each · 8 minutes.
+> **Counter, formal.** *Please*, *sorry*, *thank you*. If you shout, he signs nothing. **You start.** 8 turns each · 8 minutes.
 > **Your screen only.** Don't show it, don't read from it.
 
-**Where you are** · Tuesday, 6:40 p.m. You are at the front desk of a gym in Cabecera, straight from work, four people behind you.
+**Where you are** · Tuesday, 6:40 p.m. You are at the front desk of a gym in Cabecera. You come straight from work.
 
-**You want** · You want the plan closed today, with no charge on September 5.
+**You want** · You want to end the plan today, with no charge on September 5.
 
-**Not about money** · The problem is not the 92,000 pesos, but two months of a gym you cannot use.
+**Not about money** · The problem is not the 92,000 pesos: you pay for two months, and you cannot go.
 
 **You can't**
-1. You can't leave the embassy email, or send a photo of it. It carries your passport number, your address and your case number — you can show the screen, nothing more.
+1. You can't leave the embassy email, or send a photo of it. It has your passport number, your address and your case number — you can show the screen, nothing more.
 2. You can't come back in office hours. You work all day, and your only free hour is **Thursday the 27th, 12:00 to 1:00**.
 3. You can't ask for your money back, or argue about the price.
 
-**You can, but you don't have to** · You never have to say where you are going, or why. The dates are enough.
+**You can, but you don't have to** · You never have to say where you are going, or why. He cannot ask for more than your dates.
 
 **Only you know**
 - You already know the September 5 charge will bounce: your card expires first, and the new one arrives too late. Say it too early and it sounds like a plan to stop paying. You choose the moment.
-- **Wilmer** sold you the plan and promised you out loud: you leave the country, they cancel it. He never wrote it down, he is gone, and you have no paper.
-- **Yurany**, from work, asked you about this gym two weeks ago. The price stopped her. You see her Wednesday night.
+- **Wilmer** sold you the plan and promised you out loud that they cancel for people who leave the country. You never got that promise on paper, and he is gone.
+- **Yurany**, from work, asked you about this gym two weeks ago, and the price stopped her. You see her Wednesday night.
 - You still have no return date, and nobody can give you one yet.
 
 **If you walk away with nothing** · Thursday is your last day here, and after that nobody at this counter can help you. You fly on the 30th, and you keep paying.
@@ -108,20 +108,20 @@ With the screen face down: what he writes today and what he doesn't · **one** w
 > **Counter, formal.** *Please*, *sorry*, *thank you* — also for the no. **She starts.** 8 turns each · 8 minutes.
 > **Your screen only.** Don't show it, don't read from it.
 
-**Where you are** · Tuesday, 6:40 p.m., the front desk in Cabecera. You are alone, and the member at the counter is not here to train.
+**Where you are** · You are alone at the front desk in Cabecera, and the member at the counter is not here to train.
 
 **You want** · You want to help her without crossing your line. She has to leave with a way she can use, and you have to leave with her signature.
 
 **You can't**
-1. You can't cancel a plan inside its minimum term. That answer belongs to retention, in writing, and not to you.
-2. You can't file a change when her paper does not carry both dates. Today you can open a case, and she will hear the two words as one.
-3. You can't ask her where she is going, why, or what her plan B is. You can ask when she comes back. On the form you write a reason, not a destination.
+1. A cancellation inside the minimum term is not yours to give. That answer comes from retention, in writing, and not from you.
+2. You can't file a change when her paper does not have both dates. Today you can open a case, and she will think a case is a cancellation.
+3. You can't ask her where she is going, why, or what her plan B is. You can ask when she comes back. Édison reads a reason on that form, and never a destination.
 
 **Only you know**
-- You can open a case today, and she keeps today's date even if Édison answers late. Without that number she misses the cut-off and pays **92,000** more. Today you have nothing else.
-- Your second way is a transfer, and she cannot see it. You don't offer it first: it means paperwork and a wait. If you never say it, she never knows.
-- Last month you got a written warning: a freeze with no proof, for helping too much. It's hard to say out loud.
-- Wilmer is gone because he promised three or four members what he could not give. You know he wasn't the only one.
+- You can open a case today, and she keeps today's date even if Édison answers late. Without that number she misses the cut-off and pays **92,000** more. You have nothing else behind this counter today.
+- Your second way is a transfer, and she does not know about it. You don't offer it first: it means paperwork and a wait. If you never say it, she never knows.
+- Last month you gave a freeze with no proof. You got a written warning for helping too much.
+- You know why Wilmer is gone: he promised three or four members a cancellation, and could not give it. You know he wasn't the only one.
 
 **If you walk away with nothing** · She leaves with no signature and no reason, and the next complaint has your name on it.
 
@@ -147,13 +147,13 @@ With the screen face down: what he writes today and what he doesn't · **one** w
 | a cancellation | the end of a plan — it does not come back | the word she came for · the one you can't say yes to |
 | a cut-off | the last moment to make a change for this month | Thursday, 6:00 p.m. |
 | collections | the part of a company that calls you when you do not pay | the 12th, if nobody pays the charge |
-| proof | a paper that shows something is true | your whole no · what her email has not got |
+| proof | a paper that shows something is true | your whole no · what her email does not have |
 | the minimum | the shortest time a member has to stay after signing | July 13 to October 13 · the line you can't cross |
 | the visit log | the book with every visit to the counter, with a name and a signature | her name, her ID, her signature · no log, no case |
 | to file a change | to put the change in the computer, so it is official | not today: no proof, no Édison |
-| to freeze a membership | to stop the payments for some weeks and keep the plan | way one · to her, it sounds like a cancellation |
+| to freeze a membership | to stop the payments for some weeks and keep the plan | way one · in her ears, the same word as a cancellation |
 | to open a case | to write down a visit, and give it a number and a date | the only thing you can hand her today |
-| to transfer a plan | to put a plan in another person's name | way two · she does not know it exists |
+| to transfer a plan | to put a plan in another person's name | way two · not on her screen |
 
 ### Your toolkit
 Blocks **1** `[grants]` · **2** · **3**, **yours**: an ID and a reason, by ear · **4** `[jargon]`, **also yours**: freeze, transfer, minimum, case, cut-off, collections, retention · **5** · **7** `[grants]`. Not 6, not 8.
@@ -234,7 +234,7 @@ grammarReferences: [
   { level: 'a1', slug: 'present-simple-questions', title: 'Present simple interrogativo en inglés A1',
     rationale: 'Sostiene «What does "…" mean?». Es la reparación que este escenario pide más que ningún otro del set, porque Mauricio habla en palabras de contrato: freeze, transfer, cut-off, collections, retention.' },
   { level: 'a1', slug: 'present-simple-negative', title: 'Present simple negativo en inglés A1',
-    rationale: 'Sostiene «I don\'t want to pay for…», que es donde Tatiana dice por qué le importa en vez de repetir lo que dice el contrato. Y es la estructura con la que Mauricio tiene que construir en voz alta la diferencia entre congelar y cancelar: la ficha se la da como nota de propósito en el vocabulario («way one · to her, it sounds like a cancellation»), nunca como frase hecha, para que la frase la ponga ella.' },
+    rationale: 'Sostiene «I don\'t want to pay for…», que es donde Tatiana dice por qué le importa en vez de repetir lo que dice el contrato. Y es la estructura con la que Mauricio tiene que construir en voz alta la diferencia entre congelar y cancelar: la ficha se la da como nota de propósito en el vocabulario («way one · in her ears, the same word as a cancellation»), nunca como frase hecha, para que la frase la ponga ella.' },
   { level: 'a1', slug: 'imperative', title: 'El imperativo en inglés A1',
     rationale: 'Sostiene «Let me say that again.» (caja, bloque 4), «Let me check that. One moment…» de Mauricio y «Let me copy…» de Tatiana. Es la mitad de la reparación que faltaba entera: hasta ahora ella podía preguntar qué significa algo y Mauricio no tenía con qué contestarle, y ahí es donde la pareja se pasaba al español.' },
   { level: 'a1', slug: 'prepositions-time', title: 'Preposiciones de tiempo en inglés A1',
@@ -265,11 +265,11 @@ quedan fuera porque no están dentro de ninguna ficha de rol.
 
 | ficha | palabras de prosa | techo §11 | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Tatiana | **445** | ≤ 450 | 10 filas | 10 | 9 formas en 6 filas |
-| ROLE B — Mauricio | **444** | ≤ 450 | 10 filas | 10 | 11 formas en 7 filas |
+| ROLE A — Tatiana | **449** | ≤ 450 | 10 filas | 10 | 9 formas en 6 filas |
+| ROLE B — Mauricio | **450** | ≤ 450 | 10 filas | 10 | 11 formas en 7 filas |
 
-Medido el 21 de agosto de 2026 sobre este archivo, después de la pasada de
-`proponer-alternativa`. Venía de 453 y 476, y de 445 y 439 antes de esta pasada.
+Medido el 22 de agosto de 2026 sobre este archivo, después de la pasada quirúrgica de fase 9.
+Venía de 445 y 444 (21 de agosto), y de 453 y 476 antes de la ronda de la tarde.
 
 ---
 
@@ -420,7 +420,7 @@ escrita del §11 o con la frontera del archivo.
    diagnóstico es correcto: `payable` es vocabulario jurídico B2. Pero el recambio propuesto es
    una oración en primera persona que Tatiana puede leer tal cual y hacer avanzar el turno, que es
    exactamente lo que prohíbe la prueba escrita del §11. Queda en tercera persona y sin `payable`:
-   «The problem is not the 92,000 pesos, but two months of a gym you cannot use.»
+   «The problem is not the 92,000 pesos: you pay for two months, and you cannot go.»
 2. **H38 — `to bounce` → `to be declined`.** *Aplicado salvo esa palabra.* Sí se americanizó todo
    lo demás: `direct debit` sale de la ficha, `working days` → `business days` (×3),
    `a return ticket` → `a round-trip ticket`, `gym reception` → `the front desk`. Pero
@@ -477,3 +477,69 @@ es la que tiene las dos vías», «es ella quien produce la palabra»— pasan a
 cancelación, porque el desenlace `sin acuerdo` es del diseño. Lo que sí queda anotado para el
 conjunto: es la única mujer del set que sale con menos de lo que traía, y el contrapeso está en el
 escenario 7 —Kevin no consigue los dos cupos— y en el 4, donde Astrid sí saca concesiones.
+
+---
+
+## Pasada quirúrgica de fase 9 (22 ago 2026) — qué líneas se tocaron
+
+Solo las líneas que citan `fase9-calcable-8.md` y `fase9-nivel-8.md`. **Ninguna otra línea, tabla,
+dato, nombre ni pieza del motor se tocó**, y no se reescribió ningún bloque entero: cada cambio es
+la edición mínima que quita el defecto señalado. Prosa después de la pasada, con
+`prosa-canonica.mjs`: **A 449 · B 450** (techo 450).
+
+**Calcabilidad — las siete decibles y los dos defectos de forma (`fase9-calcable-8.md`):**
+
+| dónde | antes | ahora |
+|---|---|---|
+| A · `You can, but you don't have to` | `The dates are enough.` | `He cannot ask for more than your dates.` |
+| A · `Only you know` 2 | `…promised you out loud: you leave the country, they cancel it. He never wrote it down, he is gone, and you have no paper.` | `…promised you out loud that they cancel for people who leave the country. You never got that promise on paper, and he is gone.` |
+| A · `Only you know` 3 | `…two weeks ago. The price stopped her.` | `…two weeks ago, and the price stopped her.` (deja de ser unidad autónoma) |
+| B · `You can't` 1 | `You can't cancel a plan inside its minimum term.` | `A cancellation inside the minimum term is not yours to give.` |
+| B · `You can't` 3 | `On the form you write a reason, not a destination.` | `Édison reads a reason on that form, and never a destination.` |
+| B · `Only you know` 1 | `Today you have nothing else.` | `You have nothing else behind this counter today.` |
+| B · `Only you know` 4 | `Wilmer is gone because he promised three or four members what he could not give.` | `You know why Wilmer is gone: he promised three or four members a cancellation, and could not give it.` |
+| B · vocabulario, `to freeze a membership` | `way one · to her, it sounds like a cancellation` | `way one · in her ears, the same word as a cancellation` |
+| B · vocabulario, `to transfer a plan` | `way two · she does not know it exists` | `way two · not on her screen` |
+
+**Nivel — las doce líneas fuera de A2 (`fase9-nivel-8.md`, N1-N12):**
+
+| n.º | dónde | antes | ahora |
+|---|---|---|---|
+| N1 | A · `You want` | `You want the plan closed today,…` | `You want to end the plan today,…` |
+| N2 | A · `Only you know` 2 | condicional sin `if` tras dos puntos | absorbido por la reescritura de calcabilidad: la yuxtaposición desaparece entera |
+| N3 | B · `You can't` 2 | `…and she will hear the two words as one.` | `…and she will think a case is a cancellation.` |
+| N4 | B · `Only you know` 3 | `Last month you got a written warning: a freeze with no proof, for helping too much.` | `Last month you gave a freeze with no proof. You got a written warning for helping too much.` |
+| N5 | B · `Only you know` 4 | relativa libre con `what` | resuelta dentro de la reescritura de calcabilidad: `…a cancellation, and could not give it.` |
+| N6 | A · cabecera | `Shouting buys nothing: he signs nothing.` | `If you shout, he signs nothing.` |
+| N7 | A · `Where you are` | `…in Cabecera, straight from work, four people behind you.` | `…in Cabecera. You come straight from work.` |
+| N8 | A · `Not about money` | `…, but two months of a gym you cannot use.` | `…: you pay for two months, and you cannot go.` |
+| N9 | B · `You can't` 1 | `That answer belongs to retention, in writing, and not to you.` | `That answer comes from retention, in writing, and not from you.` |
+| N10 | B · `Only you know` 2 | `…and she cannot see it.` | `…and she does not know about it.` |
+| N11 | A · `You can't` 1 y B · `You can't` 2 | `It carries your passport number…` · `does not carry both dates` | `It has your passport number…` · `does not have both dates` |
+| N12 | B · vocabulario, `proof` | `what her email has not got` | `what her email does not have` |
+
+**Tres recambios propuestos se escribieron de otra forma, y por qué.** Los tres partían una oración
+en dos y dejaban la primera mitad decible, que es el defecto que esta pasada viene a quitar:
+
+- **N3.** `Today you can open a case. She will think a case is a cancellation.` deja
+  `Today you can open a case.` como oferta suelta que Mauricio lee y el turno avanza. Se mantiene la
+  coordinación con `she`, que es lo que protege la línea, y se cambia solo la elipsis.
+- **N5 y calcabilidad n.º 7 chocaban en la misma línea** —uno pedía anclarla, el otro quitarle el
+  `what` de relativa libre—. La línea de arriba hace las dos cosas a la vez.
+- **N8.** `The problem is not the 92,000 pesos. You pay for two months, and you cannot go.` deja
+  `The problem is not the 92,000 pesos.` decible y es el argumento de Tatiana. Se resuelve con dos
+  puntos, sin elipsis con `but` y sin la relativa de contacto `a gym you cannot use`.
+- **N9.** `That answer is not yours. It comes from retention, in writing.` deja
+  `It comes from retention, in writing.` decible, y además repite el `not yours` que ya entra en la
+  frase anterior por la reescritura de calcabilidad. Se sustituye `belongs to` por `comes from` y se
+  conserva el `not from you` final, que apunta al hablante.
+
+**Citas internas arrastradas.** Dos notas de este mismo archivo citaban literal una línea que ha
+cambiado y se actualizaron con ella: el `rationale` de `present-simple-negative` (celda `here` de
+`to freeze a membership`) y el punto 1 de «Lo que no se aplicó tal cual» (la frase del H7). Las
+notas históricas que cuentan lo que hizo *la ronda anterior* no se tocan: describen aquel cambio,
+no el texto vigente.
+
+**Bandas de §4:** 8 minutos y 8 turnos por rol, dentro de 5-8 y 6-9. El informe de nivel las mide
+en regla, así que no se movieron. **Vocabulario:** las veinte filas ya tienen una entrada y una
+definición más simple que la palabra; el único cambio del bloque es el N12.
