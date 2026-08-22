@@ -294,6 +294,17 @@ to open on Saturday` sí se podría, y por eso no se escribe.
 Prueba para el redactor: si una línea de tu ficha se puede decir tal cual en la conversación y
 el turno avanza, esa línea está mal escrita. Reescríbela como dato.
 
+**Y la tabla de exponentes entra en la prueba, aunque sus frases sean decibles a propósito.**
+Durante cinco rondas se declaró «fuera de alcance» —yo la dejé fuera— y por eso nadie la miró
+nunca. Ahí estaba escondido el defecto que se perseguía: en un escenario, **la cola de la tabla
+era el cierre entero, en orden**. Con leerla de arriba abajo se resolvía la conversación.
+
+Lo que se audita en ella no es si sus frases se pueden decir —claro que sí—, sino **si la tabla
+leída en orden es la conversación**: que esté agrupada por función y ordenada alfabéticamente
+por función, que no haya más filas que turnos, y que ninguna secuencia de filas reproduzca el
+cierre ni el arranque. Una tabla que se puede seguir como un guion no es andamiaje: es el
+ejercicio ya hecho.
+
 El inglés de la ficha es **A2 leído**, que aguanta un poco más que el A2 hablado: frases cortas,
 presente y pasado simple, cero subordinación larga. Si una instrucción no cabe en A2, es que la
 instrucción es demasiado complicada.
