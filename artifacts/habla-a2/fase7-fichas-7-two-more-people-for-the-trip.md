@@ -48,7 +48,7 @@ fichas la señalan y ninguna la copia.
 - The sixth place was yours. On Wednesday you gave it to Hernán, with his car and gas, and you never told Kevin.
 - You have met Sebastián — he was on last year's trip. **You have never met Andrea.**
 
-**If you walk away with nothing** · Tomorrow six people go and five seats leave, and all five are his. And Kevin still hasn't paid.
+**If you walk away with nothing** · Tomorrow six people go and five seats leave, and all five are his. And his 100,000 is missing.
 
 ### Facts
 
@@ -89,12 +89,12 @@ Blocks **1** `[grants]`: he came down to you. **2**: tomorrow you share a car. *
 | asking about the people | `Who exactly is …?` | open up a person you have never met |
 | asking about the plan | `Why didn't you tell me …?` | ask about a decision taken without you |
 | changing one thing | `Wait — we didn't say that.` | stop it there, change one thing |
+| group message | `That's it — I'll send …` | say his part is fine, and send it |
 | keeping the friendship | `I'm not angry, but …` | complain and still travel together tomorrow |
 | putting a price on a yes | `OK — but only if …` | say yes, and put a price on it |
 | saying what happens if | `If I don't have it on …, I'll …` | say what happens when the day comes and the thing isn't there — the name tonight, the money on his day |
 | six beds, six names | `There are only six …` | refuse with the number in front, not your opinion |
 | the debt | `You haven't paid me yet.` | say it once, and don't fight about it |
-| the message you send | `That's it — I'll send …` | say his part is fine, and send it |
 
 ### You did it if
 Kevin heard the beds and the gate list, with figures · the 100,000 has a date with a price on it · you each left with a fact you didn't have at 7:20 · the no was yours, not doña Nubia's · what is still open was said, with a name and a time · you talked about money, and tomorrow you still travel together.
@@ -110,7 +110,7 @@ Kevin heard the beds and the gate list, with figures · the 100,000 has a date w
 
 **You want** · You came down to get a spot for Sebastián and Andrea — both of them, or one. And you need more time for the 100,000: Tuesday the 25th.
 
-**And a reason you can repeat** · Andrea gets here in twenty minutes. If nobody goes, you tell her tonight, with your own reason — not with Valentina's.
+**And a reason you can repeat** · You have twenty minutes with Andrea. If nobody goes, you tell her tonight, with your own reason — not with Valentina's.
 
 **You can't**
 1. Pay the 100,000 today. The 200,000 in your pocket are Sebastián's and Andrea's.
@@ -161,6 +161,7 @@ Blocks **1** `[asks]`, because you open, and you open with something uncomfortab
 
 | function | form | what it does here |
 |---|---|---|
+| Andrea and Sebastián | `What do I say to …?` | get an answer you can repeat outside |
 | asking what changed | `When did that change?` | open the half of the mess that isn't yours |
 | keeping the friendship | `We're good, right?` | make sure tomorrow's car is not silent |
 | owning the lateness | `I know it's last minute, but …` | put the lateness in front before she does |
@@ -168,7 +169,6 @@ Blocks **1** `[asks]`, because you open, and you open with something uncomfortab
 | saying your part out loud | `OK — I'll say it like this: …` | say your part of the message out loud, whole |
 | something for something | `If you …, I'll …` | something for something, in one sentence |
 | the day you pay | `Can I pay you on …?` | ask for one exact day, not "soon" |
-| the words for outside | `What do I say to …?` | get an answer you can repeat outside |
 | when they paid you | `They paid me on …` | a fact with its day on it |
 
 ### You did it if
@@ -206,7 +206,7 @@ Valentina heard what tonight costs you, with a figure and a day · the 100,000 h
 **Each of you says three things out loud. Six in total. Nobody says the other person's three. Then Valentina sends the message to the WhatsApp group.**
 
 **Only Valentina can say:** how many beds there are, how many names and ID numbers the gate list
-carries, and who can change it · the 150,000, and whose reservation the extra person goes on ·
+carries, and who can change it · what an extra person costs, and on whose reservation ·
 what is not decided yet, the 7:00 a.m. call, and the plan B if nobody answers before it.
 
 **Only Kevin can say:** the full name and the ID number he sends tonight, and who he gets them
@@ -222,7 +222,7 @@ Kevin's three, or changes one thing in them, and sends the message.
 - The message says two numbers — how many people go, and how many cars leave — and the two have to be the ones you just said out loud. If they aren't, say them again.
 - Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are none of the six lines.
 
-**Six lines, or the message doesn't go.** This one does not close tonight, and that is the plan: it closes with the two calls tomorrow, before 7:00 a.m.
+**Six lines, or the message doesn't go.** This one does not close tonight, and that is the plan.
 
 ## After — both screens, in Spanish
 
@@ -451,3 +451,23 @@ a. m. es a ella**— y de paso pone la llamada en `will`, que ya era anclaje de 
 **Medido después, con `node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`: ROLE A 449 ·
 ROLE B 438** (techo 450). Las cifras que declaran las pasadas anteriores en este archivo son las
 de su día, no las de hoy: la única cifra viva es la que imprime el contador.
+
+---
+
+## Pasada de calcabilidad (22 ago 2026) — `fase13-calcable-7.md`
+
+Lo que devolvió este escenario está **en la ficha que las dos bitácoras declaran no tocada**: la
+pasada de carga reescribió una línea de ROLE B y revirtió, sin verlo, el hallazgo B-2 de la fase 9.
+Los seis arreglos cuestan cero palabras: **A 449 · B 438**, techo 450.
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | B · `And a reason you can repeat` | `Andrea gets here in twenty minutes.` → `You have twenty minutes with Andrea.` | tercera persona sobre una ausente, sin `you` que voltear: peor que la forma que la fase 9 ya había tumbado. Y la propia ficha declara ese dato «new to her · say it only if she asks», o sea imprimía como frase pronunciable lo que manda dosificar. La nueva es falsa al decirse: la ficha dice `You have never met Andrea` |
+| 2 | A · `If you walk away with nothing` | `And Kevin still hasn't paid.` → `And his 100,000 is missing.` | sin `you`, verdadera, y es la queja central: en boca hispana nombrar al otro en tercera persona delante de él es idiomático, así que el calco entra entero. Duplicaba el exponente `You haven't paid me yet.`, que es justo el que la carga quiere producido |
+| 3 | cierre, pantalla compartida | fuera `: it closes with the two calls tomorrow, before 7:00 a.m.` | ninguna deixis protege en la pantalla compartida, y eran dos tercios de la tercera línea de Valentina servida. La ficha de Kevin no menciona ninguna llamada ni las 7:00 a. m. |
+| 4 | cierre, punto 2 | `the 150,000, and whose reservation the extra person goes on` → `what an extra person costs, and on whose reservation` | imprimía en pantalla compartida una cifra de la carta, que dice de sí misma `Kevin never sees this screen`. Los otros dos puntos nombran la pregunta; este nombraba la respuesta |
+| 5 | A · exponentes, `the message you send` → `group message` | renombrada | el gesto final del escenario estaba en la fila 9 de 9; pasa a la 4 |
+| 6 | B · exponentes, `the words for outside` → `Andrea and Sebastián` | renombrada | con `the day you pay` encima eran la segunda y la tercera línea de cierre de Kevin, en orden y adyacentes |
+
+**Contabilidad, para que no se repita:** la pasada de carga declaró «la ficha de B no se tocó» y B
+pasó de 442 a 438 en ese mismo commit. Si el contador se mueve en un rol, ese rol se tocó.
