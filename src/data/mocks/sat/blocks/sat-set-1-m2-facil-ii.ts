@@ -5,7 +5,7 @@ import type { SatItemMeta } from '../module-types'
  * Bloque Information and Ideas del módulo `sat-set-1-m2-facil` — ítems q09 a q15.
  *
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 9-15). Las claves son las del plan y
- * no se negocian ítem a ítem: B, D, D, C, A, A, C. Cuando un ítem «pedía» otra letra se
+ * no se negocian ítem a ítem: B, B, D, C, A, A, C. Cuando un ítem «pedía» otra letra se
  * movió el contenido entre opciones, nunca la clave; el reparto se defiende a nivel de
  * módulo y aquí solo se ve un cuarto del examen.
  *
@@ -32,8 +32,8 @@ import type { SatItemMeta } from '../module-types'
  * 1. En los siete ítems, el camino del sentido común lleva a un distractor, no a la clave.
  *    Es el error característico de este dominio, usado a propósito: la opción que es verdad
  *    en el mundo pero que el texto no sostiene. Un lago hondo se hiela más tarde (q09A);
- *    un estilo tardío es cosa del autor que envejece (q10A); esconder la obra a medias es de
- *    artista (q11B); el hambre explica la patata (q12A); la prueba más fuerte es el mayor
+ *    un estilo tardío es cosa del autor que envejece (q10A); callar el precio de compra es de
+ *    comerciante (q11B); el hambre explica la patata (q12A); la prueba más fuerte es el mayor
  *    contraste (q13D); a quien no ve se le reconoce por la voz (q14B); en una imprenta los
  *    textos se acortan (q15A y q15B) y el estado mayoritario es el que salió antes (ídem).
  * 2. Ninguna opción es falsa por una marca visible sin el texto (R6): no hay absolutos
@@ -45,14 +45,17 @@ import type { SatItemMeta } from '../module-types'
  * MEDIDO SOBRE LOS SIETE (contador del guardián: caracteres, y solape de palabras de
  * contenido con el `stimulus`):
  *
- * - Puerta 7 · longitud del texto: 107, 125, 83, 97, 133, 128 y 146,5 palabras-SAT. Dentro
+ * - Puerta 7 · longitud del texto: 107, 125, 90, 97, 133, 128 y 146,5 palabras-SAT. Dentro
  *   de 25-150. El único ajustado es q15, que se lleva 3,5 palabras de margen desde que se
  *   glosó `set`: cualquier frase que se le añada exige quitar otra.
  * - Puerta 2 · la clave no es la opción más larga en ninguno de los siete (0 %, máximo
- *   30 %). Tampoco es la más corta en más de dos, para que no se acierte por el otro lado.
+ *   30 %), y desde la sexta pasada tampoco es la más corta en ninguno (0 %), para que no se
+ *   acierte por el otro lado. Longitudes por ítem, en orden A-D: q09 153/155/156/158,
+ *   q10 107/107/108/105, q11 153/149/149/151, q12 146/156/154/150, q13 123/135/117/119,
+ *   q14 95/93/97/101, q15 150/144/146/140.
  * - Puerta 3 · la clave no es la que más repite palabras del texto en ninguno, ni la que
  *   menos en ninguno (0 % y 0 %, máximo 40 % por cada cara). Los solapes por ítem, en orden
- *   A-D: q09 7/6/5/4, q10 6/5/4/7, q11 2/1/3/2, q12 9/5/6/5, q13 11/12/10/10, q14 5/2/6/5,
+ *   A-D: q09 7/6/7/5, q10 6/5/4/7, q11 4/2/2/3, q12 11/4/7/6, q13 11/12/10/10, q14 5/2/6/5,
  *   q15 12/12/12/12. La clave queda siempre en el medio, nunca en un extremo; en q15 las
  *   cuatro empatan, que es el caso que el guardián trata como «no hay pista que explotar».
  *
@@ -286,9 +289,71 @@ import type { SatItemMeta } from '../module-types'
  *   q10) tienen ahora la clave en B. Con dos ítems no hay patrón explotable, y el reparto de
  *   letras se defiende a nivel de módulo, no de tipo de ítem.
  *
- * Queda desalineado a propósito y se arregla fuera de este archivo: la fila 10 de
- * `docs/sat-planes/sat-set-1-m2-facil.md` sigue diciendo clave D, y este comentario lo repite
- * más arriba cada vez que cuenta una pasada anterior. Lo que está en el archivo es B.
+ * La fila 10 de `docs/sat-planes/sat-set-1-m2-facil.md` ya dice clave B, así que plan y
+ * archivo vuelven a coincidir. Las pasadas que se cuentan más arriba siguen hablando de
+ * «q10 D» porque cuentan lo que era verdad entonces; lo vigente es esta línea.
+ *
+ * SEXTA PASADA (21 ago 2026) — TRES DEFECTOS DE CONJUNTO. El auditor de sesgo resolvió el
+ * bloque a ciegas y devolvió, por escrito, cómo había acertado tres ítems sin leer un solo
+ * pasaje. Ninguno de los tres se veía revisando el ítem por separado: dos son parejas y el
+ * tercero es la forma del juego de opciones.
+ *
+ * - q11 · escenario cambiado entero. Con q10 formaba pareja y los dos van seguidos: creadora,
+ *   papeles privados, fecha en que se abre el archivo, crítica que da la vuelta al relato
+ *   recibido, los dos del mismo dominio y los dos fáciles. La quinta pasada solo había movido
+ *   la fecha y el custodio de q10 (1996, biblioteca universitaria, en vez de 2019 y la
+ *   familia) y no bastó, porque el armazón seguía entero en los dos. Además q11 compartía
+ *   racimo léxico con q08 del bloque CS —`painter`, `canvases`, `studio`, `unfinished`—, que
+ *   va también de lienzos mal catalogados. Se quitaron las tres piezas de la pareja a la vez:
+ *   ahora los hablantes son un gremio y no una creadora, la prueba es habla y no papel, y no
+ *   hay archivo ni fecha de apertura. De las cuatro palabras del racimo no queda ninguna.
+ * - Lo que se conservó de q11, pieza por pieza, porque es lo que lo hacía funcionar: tipo,
+ *   dominio, tema, dificultad y clave (D); el enunciado de cita; la tesis de TRES piezas; la
+ *   clave como única opción que cubre las tres; y los tres caminos de error, uno por
+ *   distractor —afirmar lo contrario de la primera pieza (A), probar reserva sobre el objeto
+ *   equivocado (B), tomar una circunstancia por la finalidad (C)—. La condición de
+ *   mantenimiento que pidió el auditor de clave sigue escrita en `razones.D`, ya con las
+ *   piezas nuevas y con cuál de las tres es la frágil.
+ * - Escenario urbano a propósito. q12 va justo detrás y es rural (parroquias, trigo, patatas,
+ *   diezmo), así que un q11 de campo —muros de piedra, pastores, cuadrillas— habría cambiado
+ *   la pareja q10/q11 por una pareja q11/q12. Se descartó también cualquier escenario de
+ *   música: q07, en el bloque CS, ya va de práctica interpretativa barroca.
+ *
+ * - q09 · el auditor lo acertó a ciegas y escribió por qué: la clave era «la única opción que
+ *   nombra una fuente de calor permanente», y las otras tres anexaban una ley general que las
+ *   delataba como razonamiento de distractor. Eran dos pistas, no una, y las dos estaban en la
+ *   forma. Ahora las cuatro proponen una causa que dura todo el invierno y las cuatro cierran
+ *   con una ley general: agua de fondo a temperatura fija todo el año (A), manantial a la
+ *   misma temperatura en enero que en julio (B, la clave), superficie en movimiento (C) y
+ *   punto de congelación rebajado por la turba (D). Las cuatro leyes son ciertas fuera del
+ *   pasaje, así que ninguna se descarta por sonar inventada. A es ahora el espejo de la clave
+ *   —también una reserva permanente, también desde abajo, también «los mismos grados en enero
+ *   que en julio»— y solo la mata la línea de las sondas: «Soundings put the two basins at the
+ *   same depth». El camino del sentido común (lago hondo, hielo tardío) sigue llevando a A.
+ *
+ * - q12 · el auditor lo acertó a ciegas contando: tres de las cuatro opciones nombraban el
+ *   diezmo, luego el argumento iba del diezmo; de esas tres, una era la explicación rival y
+ *   otra tenía forma de refutación de manual —se levantó el diezmo y no pasó nada—, así que
+ *   solo quedaba una con forma canónica de prueba de apoyo. Se corrigieron las dos cosas.
+ *   Ahora las CUATRO nombran el diezmo, las cuatro abren con la misma fórmula —«In the
+ *   parishes where the church …»— y ninguna es un resultado nulo: el antiguo D se sustituyó
+ *   por un hallazgo positivo que apunta al revés (la iglesia dobla el diezmo del grano y el
+ *   sembrado de patata se reduce a la mitad), que va contra Rojas por el signo y no por la
+ *   forma. C y D quedan como gemelas: misma intervención sobre el diezmo, mismo desenlace
+ *   medido, mismo control sobre el estado de la tierra, y se separan solo en si el cambio
+ *   quitó o aumentó la ventaja fiscal de la patata. B repite la intervención de la clave y
+ *   cambia el desenlace que mide, de modo que «prefiere la opción que interviene sobre la
+ *   variable causal» tampoco decide nada: esa heurística deja tres opciones en pie, no una.
+ * - Lo que queda a ciegas en q12, medido y asumido: con dos descartes razonados —el hallazgo
+ *   tiene que hablar de un cambio en el diezmo, y tiene que medir superficie sembrada y no
+ *   alimentación— se llega a C y D, y ahí se acaba. Elegir entre las dos exige saber en qué
+ *   dirección empuja la tesis de Rojas, y eso solo está en el pasaje. Techo a ciegas: 50 %.
+ *   Antes era 100 % en un vistazo, que es lo que el auditor documentó.
+ *
+ * - Lo que NO se tocó en esta pasada: las siete claves del plan, los siete enunciados, los
+ *   textos de q09, q10, q12, q13, q14 y q15 —ni una palabra—, el 2×2 de q13, los tres datos de
+ *   q15 y las cadenas de deducción de los siete. Solo se reescribieron opciones y razones de
+ *   q09 y q12, y el ítem q11 entero.
  */
 
 export const items: MCQQuestion[] = [
@@ -300,10 +365,10 @@ export const items: MCQQuestion[] = [
       'Two lakes lie a kilometer apart in the same valley, and every winter the northern one freezes about three weeks after the southern one. Soundings put the two basins at the same depth, and both waters run the same tea color from the peat in the ground around them. The ridge that shelters the southern lake shelters the northern one as well; on a still January morning neither surface moves. What differs is where the water comes from. The southern lake fills each spring with snowmelt off the slopes. The northern one is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January.',
     text: 'According to the text, why does the northern lake freeze later than the southern one?',
     options: [
-      "Its basin sits deeper than the southern lake, and its water takes in enough summer heat to hold the surface open three weeks into January.",
-      'It is fed from below by a spring that leaves the gravel at the same temperature in January as it does in July.',
-      'Its surface is kept moving all winter by the wind that funnels down the valley, and water that keeps moving freezes later.',
-      'Its water carries more peat than the southern basin does, and a darker pond takes in more of the low January sun.',
+      'It is a deeper lake than the southern one, and the water lying at the bottom of a deep lake sits at the same few degrees in January that it does in July.',
+      'It is fed from below by a spring that reaches it at the same temperature in January as it does in July, and water arriving that warm will hold off the ice.',
+      'Its surface is kept moving all winter by the wind that funnels down the valley, and a lake whose water keeps moving cannot set into ice as still water does.',
+      'Its water carries more peat than the southern basin does, and peaty water has to fall a good deal further below zero than a clear pond does before it freezes.',
     ],
     answer: 1,
   },
@@ -327,13 +392,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "In an essay on the painter Ilse Marchetti, the critic Halima Rueda takes up the six sketchbooks Marchetti filled between 1948 and 1961. Museums have always hung them beside the canvases as studies for them. Rueda's claim is that they were nothing of the kind: drawing in the books was a separate occupation, carried on for its own sake, and Marchetti never expected anyone to look at it. Rueda draws her evidence from the letters Marchetti wrote to her sister, which the family made public in 2019.",
-    text: "Which quotation from Marchetti's letters most effectively illustrates Rueda's claim?",
+      'The porters of the Trestona market speak among themselves a jargon of some four hundred words, and it has always been explained the same way: a code for settling prices where the customer cannot follow. The linguist Nieves Barcala, who spent two years working the barrows, says it does nothing of the kind. Buyers pick the jargon up in a season, she points out; speaking it is an occupation of its own, kept up for its own sake, and the porters do not use it to shut anybody out. Barcala takes her evidence from what the porters told her.',
+    text: "Which quotation from the porters most effectively illustrates Barcala's claim?",
     options: [
-      '"Nothing goes onto a canvas of mine that I have not drawn four or five times over in the books first, and usually a good deal more than that."',
-      '"I asked that the unfinished canvases be turned to face the wall before any visitor at all was allowed up the stairs and into the studio."',
-      '"In the books it is always the market and the ferry; in the paintings of those years, from first to last, there has never once been a person."',
-      '"The books are not for the canvases and not for anybody; I draw in them walking to the river, and would go on doing it if I stopped painting."',
+      '"We settle all the prices of the day in it, and we settle them with the customer standing right there; that is the use of the thing and always has been."',
+      '"What we pay the growers stays inside this hall; no porter from the north side has ever been told the figure, and none of them ever will be told it."',
+      '"Nobody is paid a cent for it and nobody sits down to teach it; a boy has it off the barrows in his first winter, the way the rest of us came to it."',
+      '"It is not for the prices and not for shutting anyone out; we talk it going home on the bus, and would go on talking it if the market closed tomorrow."',
     ],
     answer: 3,
   },
@@ -345,10 +410,10 @@ export const items: MCQQuestion[] = [
       'Between 1838 and 1852 the fields around Valmar went over from wheat to potatoes. The parish records give the reason plainly: three bad harvests in a row had left the wheat land exhausted, and the potato fed more people from less ground. Historian Emile Rojas is not persuaded that exhaustion is the whole of it. The tithe in that district, he points out, was collected in grain and had been for four centuries, while a field of potatoes owed the church nothing at all. What moved the plow, in his account, was the tax, and the failing harvests only made the arithmetic easier to see.',
     text: "Which finding, if true, would most directly support Rojas's argument?",
     options: [
-      'In the parishes where the three bad harvests left the wheat land most exhausted, the ground given over to potatoes grew fastest over the decade that followed.',
-      'In the parishes where the tithe was collected in grain, the families that planted potatoes came through the winter of 1846 better fed than their neighbors.',
-      'In the parishes where the church began taking its tithe in potatoes too, the potato ground shrank within two seasons, though the land was as poor as ever.',
-      'In the parishes where the tithe on grain was lifted altogether in 1844, the ground given over to potatoes went on growing at exactly the pace it had before.',
+      'In the parishes where the church left the grain tithe alone, the potato ground grew fastest on the wheat land the bad harvests had worn out worst.',
+      'In the parishes where the church began tithing potatoes too, the families who grew potatoes came through the winter of 1846 better fed than their neighbors.',
+      'In the parishes where the church began tithing potatoes too, the potato ground shrank within two seasons on land no less worn out than it had been before.',
+      'In the parishes where the church doubled the tithe it took in grain, the potato ground shrank by half within ten years, with the land as poor as ever.',
     ],
     answer: 2,
   },
@@ -408,16 +473,16 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Da por buena la diferencia que el texto niega en su segunda línea: «Soundings put the two basins at the same depth». Que un lago hondo aguante más sin helarse es cierto fuera de este pasaje, y por eso es lo primero que se le ocurre a cualquiera que se pregunte por qué uno se hiela antes que otro; aquí no hay diferencia de fondo que explique el retraso. Es el error de quien contesta con lo que sabe de lagos en vez de con lo que se midió en estos dos.',
+        'Da por buena la diferencia que el texto niega en su segunda línea: «Soundings put the two basins at the same depth». Sin esa diferencia de fondo, el mecanismo que describe no tiene dónde apoyarse. Y el mecanismo es de verdad: el agua honda de un lago profundo sí se queda en unos pocos grados fijos todo el año, de modo que esta opción ofrece exactamente lo mismo que la clave —una reserva de calor permanente, a la misma temperatura en enero que en julio— y no se puede descartar por sonar menos física. Solo la descarta la línea de las sondas. Es además el camino del sentido común: «lago hondo, se hiela más tarde» es lo primero que se le ocurre a cualquiera, y por eso el ítem lo pone aquí y no en la clave.',
       B:
-        'Correcta: es la única diferencia que el texto deja en pie, y la nombra él mismo. «What differs is where the water comes from»: el lago del sur se llena de deshielo, y el del norte «is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January». El agua que le entra en enero no llega a cero grados. La opción devuelve las dos cifras como igualdad —la misma temperatura en enero que en julio— y no nombra ninguna estación: decir «midsummer» por julio obligaba a saber en qué hemisferio ocurre la escena, y en el hemisferio sur pleno verano es enero.',
+        'Correcta: es la única diferencia que el texto deja en pie, y la nombra él mismo. «What differs is where the water comes from»: el lago del sur se llena de deshielo, y el del norte «is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January». El agua que le entra en enero no llega a cero grados. La opción devuelve las dos cifras como igualdad —la misma temperatura en enero que en julio— y no nombra ninguna estación: decir «midsummer» por julio obligaba a saber en qué hemisferio ocurre la escena, y en el hemisferio sur pleno verano es enero. Lo que la separa de A no es la clase de causa —las dos son permanentes y las dos vienen de abajo— sino cuál de las dos sobrevive a las líneas del pasaje.',
       C:
-        'Convierte una frase sobre el abrigo del viento en una diferencia de viento. El texto pone los dos lagos bajo la misma cresta —«The ridge that shelters the southern lake shelters the northern one as well»— y añade que en una mañana quieta de enero ninguna de las dos superficies se mueve. Que el agua en movimiento tarde más en helarse es verdad; lo que no hay aquí es una que se mueva y otra que no. Lo elige quien lee «shelters» y deduce que el viento separa a un lago del otro.',
+        'Convierte una frase sobre el abrigo del viento en una diferencia de viento. El texto pone los dos lagos bajo la misma cresta —«The ridge that shelters the southern lake shelters the northern one as well»— y añade que en una mañana quieta de enero ninguna de las dos superficies se mueve. La causa que propone dura todo el invierno, igual que la de la clave, y la ley que invoca es cierta; lo que no hay aquí es un lago que se mueva y otro que no. Lo elige quien lee «shelters» y deduce que el viento separa a un lago del otro.',
       D:
-        'Hace diferencia de un rasgo que el texto atribuye a los dos por igual: «both waters run the same tea color from the peat in the ground around them». Si la turba oscurece las dos aguas, no puede explicar por qué una se hiela tres semanas antes. Es el error de quien retiene el detalle más visual del pasaje y lo usa como si fuera un contraste.',
+        'Hace diferencia de un rasgo que el texto atribuye a los dos por igual: «both waters run the same tea color from the peat in the ground around them». La propiedad que invoca es permanente y no estacional —el agua cargada de turba congela algo por debajo de cero, y eso vale en enero y en julio—, así que tampoco esta se descarta por proponer una causa de temporada; lo que la mata es que la turba oscurece las dos aguas y no puede explicar por qué una se hiela tres semanas antes. Es el error de quien retiene el detalle más visual del pasaje y lo usa como si fuera un contraste.',
     },
     fuenteHecho:
-      'Limnología de dominio público (un lago alimentado por manantial freático recibe agua a temperatura constante y se enfría más despacio que uno alimentado por deshielo); valle, lagos, distancias y cifras inventados.',
+      'Limnología de dominio público (un lago alimentado por manantial freático recibe agua a temperatura constante y se enfría más despacio que uno alimentado por deshielo); valle, lagos, distancias y cifras inventados. Los tres distractores usan también hechos reales: el hipolimnion de un lago profundo se mantiene en unos pocos grados todo el año, el agua en movimiento tarda más en cuajar y la materia orgánica disuelta baja algo el punto de congelación. Ninguno es un absurdo, y ninguno propone una causa de temporada: eso es deliberado (ver la sexta pasada en la cabecera).',
   },
   {
     id: 'q10',
@@ -436,7 +501,7 @@ export const meta: SatItemMeta[] = [
         'Mueve el cambio del cómo al qué, y el texto cierra esa puerta con la misma limpieza: los tres pueblos «are the same three she had been writing about since her first book». Después de 1970 no hay terreno nuevo. La elige quien lee la lista de la primera frase —frases cortas, pueblos pequeños, finales sin explicar— como inventario de novedades, sin ver que el pasaje la desmonta entrada por entrada.',
     },
     fuenteHecho:
-      'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato. Los cuadernos se catalogan en 1996 y no en 2019, y quien los abre es una biblioteca universitaria y no la familia: q11, que va justo detrás, también tenía papeles privados de una creadora abiertos en 2019, y dos ítems seguidos con el mismo armazón —creadora, papeles privados, fecha reciente, lectura revisionista— se leen como uno repetido. La deducción del ítem no depende de la fecha: depende de que los cuadernos son de los años cincuenta.',
+      'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato. Los cuadernos se catalogan en 1996 y no en 2019, y quien los abre es una biblioteca universitaria y no la familia. Eso fue el primer intento de deshacer la pareja con q11, que va justo detrás y llevaba el mismo armazón —creadora, papeles privados, fecha de apertura del archivo, lectura que da la vuelta al relato recibido—; cambiar la fecha y el custodio no bastó, porque el armazón seguía completo en los dos. En la sexta pasada se cambió el escenario de q11 entero y este ítem se quedó como está: es el único de los dos que conserva creadora y papeles, así que ya no hay pareja que romper. La deducción no depende de la fecha, depende de que los cuadernos son de los años cincuenta.',
   },
   {
     id: 'q11',
@@ -446,16 +511,16 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Dice justo lo contrario de la primera mitad de la afirmación. Si nada llega al lienzo sin haberse dibujado antes cuatro o cinco veces en los cuadernos, los cuadernos son preparación: exactamente la lectura de los museos que Rueda quiere desmontar. Es el error de quien busca la cita en la que aparecen las dos cosas —cuadernos y lienzos— sin comprobar en qué relación las pone.',
+        'Dice justo lo contrario de la primera pieza de la afirmación. Si en la jerga se cierran todos los precios del día, y además delante del cliente, la jerga es el código de precios que el mercado siempre creyó: exactamente la lectura que Barcala quiere desmontar. Es el error de quien busca la cita donde aparecen las dos cosas —la jerga y los precios— sin comprobar en qué relación las pone.',
       B:
-        'Prueba reserva, pero sobre el objeto equivocado. Lo que se vuelve contra la pared son los lienzos sin terminar; de los cuadernos no dice una palabra, y esconder la obra a medias lo hace media profesión. Es el error de quien retiene «never expected anyone to look at it» y lo engancha a la primera cita que hable de visitas.',
+        'Prueba reserva, pero sobre el objeto equivocado. Lo que se guarda es lo que se paga al productor; de la jerga no dice una palabra, y callar el precio de compra lo hace media profesión. Es el error de quien retiene «do not use it to shut anybody out» y lo engancha a la primera cita que hable de secreto.',
       C:
-        'Sostiene que los cuadernos y los cuadros no tratan de lo mismo, que es una diferencia de asunto y no de función: unos apuntes del mercado pueden seguir siendo material para un cuadro sin figuras. Y no dice nada de quién podía verlos, que es la otra mitad de la afirmación. Lo elige quien toma la diferencia de motivo por diferencia de oficio.',
+        'Describe cómo se transmite la jerga —sin paga y sin maestro, aprendida en las carretillas el primer invierno—, y eso es una cuestión de aprendizaje, no de finalidad: media docena de destrezas del oficio se aprenden así y siguen sirviendo para trabajar. Una jerga que nadie cobra ni enseña puede seguir tapándole el precio al cliente. Y no dice nada de a quién se dejaba fuera, que es la tercera pieza de la afirmación. Es la distractora más cercana a la clave, porque «nadie cobra por ello» suena a «por su propio gusto»: la elige quien toma el modo de aprenderse por el motivo de hacerse.',
       D:
-        'Correcta: cubre las dos mitades de la afirmación de Rueda en una frase. «Not for the canvases» niega que sean preparación, «not for anybody» niega el público, y dibujar de camino al río, con el verbo entero al final —«would go on doing it if I stopped painting»—, los describe como ocupación aparte que seguiría existiendo aunque dejara de pintar. MANTENIMIENTO: la ventaja sobre C está en tener las TRES piezas —no son estudios, ocupación aparte, sin público—. Si una corrección futura recorta cualquiera de las tres, C deja de ser peor y el ítem pasa a tener dos claves.',
+        'Correcta: cubre las tres piezas de la afirmación de Barcala en una frase. «Not for the prices» niega el código de precios, «not for shutting anyone out» niega que sirva para dejar fuera a nadie, y hablarla volviendo a casa en el autobús, con el verbo entero al final —«would go on talking it if the market closed tomorrow»—, la describe como ocupación aparte que seguiría existiendo aunque se acabara el oficio. MANTENIMIENTO: la ventaja sobre C está en tener las TRES piezas —no es código de precios, ocupación aparte por sí misma, no sirve para dejar fuera a nadie—. La más frágil es la tercera: si una corrección futura quita el «would go on talking it», C se queda como la única que roza «por su propio gusto» y el ítem pasa a tener dos claves. No se recorta ninguna.',
     },
     fuenteHecho:
-      'Ficción académica original: ni la pintora, ni la crítica, ni el ensayo, ni las cartas existen. La práctica de exponer cuadernos de apuntes junto a los cuadros como estudios preparatorios sí es habitual en museos.',
+      'Ficción original: ni el mercado de Trestona, ni los porteadores, ni la lingüista, ni el estudio existen. El fenómeno de fondo sí está documentado en sociolingüística: las jergas de oficio se explican casi siempre como códigos crípticos frente al cliente, y el trabajo de campo suele encontrar que la función críptica es débil y que la variedad se mantiene por identidad y por gusto. Sustituye al q11 anterior (la pintora Ilse Marchetti y sus cuadernos), retirado en la sexta pasada por dos defectos de conjunto y no por nada del propio ítem: (1) con q10 formaba pareja —creadora, papeles privados, fecha de apertura del archivo, lectura que da la vuelta al relato recibido— y los dos ítems van seguidos; (2) compartía racimo léxico con q08 del bloque CS (`painter`, `canvases`, `studio`, `unfinished`), que además va de lienzos mal catalogados. Aquí no hay creadora individual, no hay papeles, no hay archivo ni fecha de apertura, y no queda una sola de esas cuatro palabras. La estructura lógica se conservó entera: tesis de tres piezas, clave que las cubre las tres, distractor C que roza una sola y por el motivo equivocado. Escenario urbano a propósito: q12 va justo detrás y es rural (parroquias, trigo, patatas), así que un q11 de campo habría cambiado una pareja por otra. Nombres comprobados en buscador antes de fijarlos: «Trestona» no aparece como localidad ni como mercado y «Nieves Barcala» no corresponde a ninguna persona. Quien los cambie, que repita la búsqueda.',
   },
   {
     id: 'q12',
@@ -465,16 +530,16 @@ export const meta: SatItemMeta[] = [
     tema: 'historia',
     razones: {
       A:
-        'Apoya la explicación rival, no la de Rojas. Si donde la tierra quedó más agotada es donde antes y más deprisa se pasó a la patata, las tres malas cosechas bastan para contar el cambio y el diezmo sobra. Es el error de quien reconoce las dos variables correctas y no comprueba hacia dónde apuntan.',
+        'Apoya la explicación rival, no la de Rojas. El diezmo se queda como estaba —la iglesia no toca nada— y aun así la patata avanza más deprisa justo donde las tres malas cosechas hicieron más daño: con el impuesto constante, lo que explica la diferencia es el agotamiento. Es el error de quien reconoce las dos variables correctas y no comprueba hacia dónde apuntan.',
       B:
-        'Cambia una consecuencia por una causa. Que las familias con patatas pasaran mejor el invierno de 1846 dice qué se ganaba comiéndolas, no por qué se sembraron, y convive sin problema con que se sembraran por el agotamiento del suelo: no separa las dos explicaciones, que es lo único que el hallazgo tiene que hacer. Atrae a quien ve «tithe … collected in grain» y da por bueno cualquier hallazgo que nombre el diezmo.',
+        'Cambia una consecuencia por una causa. Es el mismo cambio que la clave —la iglesia empieza a diezmar también la patata—, pero mira el desenlace equivocado: que las familias patateras siguieran comiendo mejor en 1846 dice qué se ganaba con la patata, no por qué se sembró, y convive sin problema con que se sembrara por el agotamiento del suelo. No separa las dos explicaciones, que es lo único que el hallazgo tiene que hacer. La elige quien reconoce la intervención correcta y no comprueba sobre qué se mide el efecto.',
       C:
-        'Correcta: quita la ventaja fiscal y deja intacta la explicación rival. Donde la iglesia empieza a cobrar el diezmo también en patatas, el sembrado retrocede en dos temporadas aunque la tierra siga igual de pobre. El agotamiento no ha cambiado y la decisión sí, así que lo que movía el arado era el impuesto, que es la tesis de Rojas.',
+        'Correcta: quita la ventaja fiscal y deja intacta la explicación rival. Donde la iglesia empieza a diezmar también la patata, el sembrado retrocede en dos temporadas sobre una tierra «no less worn out than it had been before». El agotamiento no ha cambiado y la decisión sí, así que lo que movía el arado era el impuesto, que es la tesis de Rojas. Es lo único que hace el hallazgo y que ningún otro hace: separar las dos explicaciones moviendo una sola de ellas.',
       D:
-        'Va contra Rojas y parece ir a su favor porque habla de diezmos. Si allí donde se levantó el diezmo del grano la patata siguió ganando terreno al mismo ritmo, entonces la ventaja fiscal no era lo que la empujaba. Es el error de quien comprueba el tema del hallazgo y no su sentido.',
+        'Acierta la variable y se equivoca de signo. Si la iglesia dobla lo que cobra sobre el grano, la ventaja fiscal de la patata crece, y con la tesis de Rojas el sembrado tendría que ensancharse; el hallazgo dice que se redujo a la mitad. Es la distractora gemela de la clave —misma intervención de la iglesia sobre el diezmo, mismo desenlace medido, mismo control sobre el estado de la tierra— y solo se separa de ella en si el cambio quitó o aumentó la ventaja de la patata. La marca quien comprueba de qué habla el hallazgo y no en qué dirección empuja.',
     },
     fuenteHecho:
-      'Hecho documentado de historia agraria europea: el diezmo se cobraba en grano y en varias regiones la patata quedó fuera de él, lo que le dio una ventaja fiscal frente al trigo. Valmar, Rojas, las fechas y los cuatro hallazgos están inventados.',
+      'Hecho documentado de historia agraria europea: el diezmo se cobraba en grano y en varias regiones la patata quedó fuera de él, lo que le dio una ventaja fiscal frente al trigo. Valmar, Rojas, las fechas y los cuatro hallazgos están inventados. Los cuatro hallazgos se rehicieron en la sexta pasada: los cuatro nombran ahora el diezmo, los cuatro abren igual («In the parishes where the church…»), los cuatro miden un desenlace positivo y ninguno es un resultado nulo. El anterior D —levantado el diezmo, la patata siguió creciendo igual— tenía forma de refutación de manual («se quitó la causa y no pasó nada») y se reconocía como distractor sin leer el pasaje. Lo que queda a ciegas, medido y asumido: dos descartes razonados —el hallazgo tiene que hablar de un cambio en el diezmo (cae A) y tiene que medir superficie sembrada y no alimentación (cae B)— dejan a C y D en pie, y separarlas exige saber en qué dirección empuja la tesis de Rojas, que solo está en el pasaje. El techo a ciegas del ítem es 50 %, no 100 %.',
   },
   {
     id: 'q13',

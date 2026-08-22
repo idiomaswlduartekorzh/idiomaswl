@@ -210,6 +210,20 @@ function checkModule(mod) {
     if (racha >= 3) fail(id, '1 reparto de clave', `tres claves ${LETTERS[items[i].answer]} seguidas en ${items[i].id}`)
   }
 
+  // La palabra que va justo antes del hueco no puede repetirse dentro de las opciones: el
+  // hueco **sustituye** a esa palabra, no la sigue. Un ítem lo tuvo y en pantalla salía
+  // «were arranged arranged tells». No lo vio ningún auditor releyendo el ítem —se ve
+  // montando la frase, que es lo que hace el estudiante y no hace quien revisa el código—.
+  for (const q of items) {
+    const antes = (q.stimulus || '').split('______')[0].trim().split(/\s+/)
+    const ultima = (antes[antes.length - 1] || '').replace(/[.,;:"“”'’]+$/g, '').toLowerCase()
+    if (!ultima) continue
+    const choca = (q.options || []).some((o) => (o || '').replace(/[.,;:]+$/g, '').trim().toLowerCase() === ultima)
+    if (choca) {
+      fail(id, '2 longitud de la clave', `${q.id}: «${ultima}» está delante del hueco y también dentro de las opciones — al estudiante le sale la palabra dos veces`)
+    }
+  }
+
   // ── 2 · la clave como opción más larga ──
   let masLarga = 0
   for (const q of items) {

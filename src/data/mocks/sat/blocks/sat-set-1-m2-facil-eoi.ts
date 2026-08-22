@@ -125,11 +125,56 @@ import type { SatItemMeta } from '../module-types'
  * larga (16 caracteres «On the contrary,») ni la más corta (6, «Hence,»), y en q25 sí era la
  * más corta, así que «elige el conector más corto» deja de valer 2 de 3 en el bloque.
  *
+ * ### q27: la fuga que q26 dejó anunciada, y que llegó donde se dijo
+ *
+ * Al entregar q26 este comentario dejó escrito que «q27 tiene hoy la arquitectura que q26 acaba
+ * de perder; si la próxima ciega deja algo por encima del umbral en transiciones, es ahí donde va
+ * a estar». Estaba. El juego era «Likewise,» · «To be sure,» · «For instance,» · «Consequently,»:
+ * tres conectores de lista de manual y **uno solo raro**, y el raro era la clave. Es la fuga de
+ * frecuencia de **R14** en su forma más pura —el marcado es el que parece la respuesta de una
+ * pregunta de examen— y venía con la de q26 encima: tres relaciones de flujo (adición, ejemplo,
+ * consecuencia) y **un solo giro**, que también era la clave. Las dos apuestas que un solucionador
+ * sin texto puede formular sobre cuatro conectores señalaban la misma opción.
+ *
+ * R14 dice cuál es el arreglo que no vale, y aquí valía doble: mover la clave a un conector
+ * corriente y de flujo deja las dos arquitecturas «tres contra uno» en pie y solo cambia de dueño
+ * la apuesta. Se arregló **el juego**, como en q26, y en los dos ejes a la vez:
+ *
+ * - «Even so,» — giro, conector de prosa y no de lista. Sustituye a «Likewise,».
+ * - «To be sure,» — concesión previa al giro. La clave del plan, que no se mueve.
+ * - «For instance,» — ejemplo, conector de lista.
+ * - «Consequently,» — consecuencia, conector de lista.
+ *
+ * Los dos ejes quedan **alineados a propósito**: los dos conectores de prosa son los dos giros y
+ * los dos de lista son los dos de flujo. Alineados y no cruzados, porque cruzarlos deja la clave
+ * como la única casilla «rara y de giro» a la vez, y esa conjunción de dos heurísticas vuelve a
+ * identificarla. Así, «elige el raro» reparte 50/50, «elige el que gira» reparte el mismo 50/50 y
+ * las dos juntas no añaden nada.
+ *
+ * Para que los dos giros no se cancelen entre sí —regla 2 del plan— se separan por una regla
+ * enseñable y no por matiz: **«to be sure» concede lo que se va a matizar después; «even so»
+ * es ya el matiz, y se apoya en una oposición que tiene delante.** En este párrafo el giro existe
+ * pero llega dos oraciones más tarde, con «The difficulty is that…», así que quien lo adelanta al
+ * hueco elige «Even so,».
+ *
+ * **Lo que hubo que tocar del texto, y por qué no bastaba con las opciones.** La segunda oración
+ * decía «The claim is easy to state and hard to test», y esa duda previa era una oposición
+ * disponible: con ella delante, «Even so,» se podía defender como «pese a que no se puede
+ * comprobar, …», y el ítem tenía dos claves. Se sustituyó por «and the practice of publishers
+ * bears them out», que va en la misma dirección que el resto del párrafo. La concesión de «To be
+ * sure,» no la licenciaba aquella duda sino el giro del final, que sigue en su sitio.
+ *
+ * Comprobaciones de forma sobre el juego nuevo: la clave (11 caracteres) no es ni la más larga
+ * (13) ni la más corta (8), de modo que «elige el conector más corto» sigue valiendo 1 de 3 en el
+ * bloque y no 2 de 3. Y se mantiene lo que ya decía este comentario: **la clave nunca es el
+ * conector de consecuencia** en los tres ítems de transiciones —«As a result,», «Hence,» y
+ * «Consequently,» son los tres distractores—.
+ *
  * Puertas medidas sobre el bloque después de rehacerlo, no heredadas de la versión anterior:
  *
- * - **7 longitud**: 144,3 · 146,2 · 124,7 · 83,5 · 125,3 palabras-SAT. Las cinco dentro de
+ * - **7 longitud**: 144,3 · 146,2 · 124,7 · 83,5 · 125,7 palabras-SAT. Las cinco dentro de
  *   25-150. q23 y q24 crecieron: cada distractor necesita ahora en el cuaderno el hecho que
- *   lo desmiente.
+ *   lo desmiente, y q27 subió de 125,3 al cambiar la segunda mitad de su primera oración.
  * - **2 longitud de la clave**: la clave no es la opción más larga en ninguno de los cinco.
  *   En q23 y q24 tampoco es la más corta (q23: 157 · 150 · 149 · 155 caracteres; q24: 165 ·
  *   168 · 163 · 167).
@@ -139,8 +184,8 @@ import type { SatItemMeta } from '../module-types'
  *   caras de la puerta. En los tres de transiciones el solape es 0 en las cuatro opciones.
  * - **12 variedad temática**: humanidades ×2, historia, ciencia y literatura, uno cada uno.
  *
- * Lo que este bloque **no** trae: q23, q24, q25 y q26 son ítems nuevos por R2 —cambiaron el
- * texto y no solo las opciones—, así que vuelven enteros a la cola de auditoría y la prueba a
+ * Lo que este bloque **no** trae: q23, q24, q25, q26 y q27 son ítems nuevos por R2 —los cinco
+ * cambiaron el texto y no solo las opciones—, así que vuelven enteros a la cola de auditoría y la prueba a
  * ciegas hay que repetirla sobre ellos. El módulo todavía no tiene acta en
  * `docs/sat-auditorias/`, de modo que no hay ninguna huella firmada que estos cambios dejen
  * caducada.
@@ -171,13 +216,20 @@ import type { SatItemMeta } from '../module-types'
  *   «Consequently,» a D. Se descartó el intercambio simple A↔B porque dejaba el conector de
  *   consecuencia en A en dos de los tres ítems de transiciones (con «Hence,» en q26). Así
  *   los tres consecutivos caen en posiciones distintas —q25 C, q26 A, q27 D— y las tres
- *   claves de transiciones también: **D, C, B**. La clave (11 caracteres) no es ni la más
- *   larga (13) ni la más corta (9).
+ *   claves de transiciones también: **D, C, B**.
  *
- * Queda desalineado a propósito y hay que arreglarlo fuera de este archivo: la fila de
- * claves de `docs/sat-planes/sat-set-1-m2-facil.md` sigue diciendo B, A, B, C, A. El reparto
- * de claves se defiende a nivel de módulo, así que quien actualice el plan que copie de aquí
- * y no al revés.
+ *   **Posterior a esta permutación**, y sin tocar ninguna letra: «Likewise,» dejó de ser una de
+ *   las cuatro opciones —lo sustituye «Even so,» en la misma A— por la fuga de frecuencia que
+ *   describe la sección «q27» de más arriba. Todo lo que este párrafo dice sobre posiciones sigue
+ *   vigente; lo que caduca es la comprobación de longitud, que ahora se lee así: la clave (11
+ *   caracteres) no es ni la más larga (13) ni la más corta (8).
+ *
+ * Aquel desajuste ya está cerrado: `docs/sat-planes/sat-set-1-m2-facil.md` decía B, A, B, C, A
+ * y hoy dice **D, A, D, C, B**, que es lo que hay en este array. Se copió del código al plan y
+ * no al revés, que es el orden que manda: el reparto de claves se defiende a nivel de módulo.
+ * Lo que sigue en pie es la regla de siempre —si un ítem «pide» otra letra se mueve el ítem, no
+ * el reparto—, y por eso la sustitución de «Likewise,» por «Even so,» en q27 no tocó ni una
+ * letra: la clave siguió en B.
  */
 
 export const items: MCQQuestion[] = [
@@ -246,10 +298,10 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Translators often say that a translation ages faster than the book it translates. The claim is easy to state and hard to test. A novel published in 1890 goes on being read in the language it was written in, while the versions made of it elsewhere are replaced every generation or two, and the replacement is justified by saying that the old version now sounds dated. ______ the sentence a translator writes belongs to the moment of its writing in a way the original does not: it answers a question about how a foreign book should sound in this language now, and every generation asks that question again. The difficulty is that originals sound dated too, and readers forgive them for it. What ages may be less the translation than our patience with it.',
+      'Translators often say that a translation ages faster than the book it translates, and the practice of publishers bears them out. A novel published in 1890 goes on being read in the language it was written in, while the versions made of it elsewhere are replaced every generation or two, and the replacement is justified by saying that the old version now sounds dated. ______ the sentence a translator writes belongs to the moment of its writing in a way the original does not: it answers a question about how a foreign book should sound in this language now, and every generation asks that question again. The difficulty is that originals sound dated too, and readers forgive them for it. What ages may be less the translation than our patience with it.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
-      'Likewise,',
+      'Even so,',
       'To be sure,',
       'For instance,',
       'Consequently,',
@@ -343,15 +395,15 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'Suma la oración como una segunda observación paralela, porque también enfrenta traducción y original. El párrafo no está apilando observaciones: está concediendo terreno a la tesis que venía poniendo en duda, y en la oración siguiente le da la vuelta. Quien elige este conector no ve que el texto tiene un giro.',
+        'Pone el giro del párrafo una oración antes de donde está. «Even so» mantiene lo dicho **a pesar** de lo que se acaba de decir, y para eso necesita una oposición: aquí la oración del hueco no se opone a la anterior, la explica —las versiones se sustituyen porque la frase del traductor pertenece a su momento—. El giro de este texto existe, pero llega dos oraciones más tarde, con «The difficulty is that…». Es el camino de quien reconoce que el párrafo va a girar y coloca el conector adversativo en el primer hueco que encuentra, sin comprobar qué contradice a qué. Es además la trampa del ítem: comparte con la clave el ser un conector de giro y no de flujo, de modo que «elige el que da la vuelta» deja aquí dos opciones y no sirve de nada.',
       B:
-        'Correcta: el texto ha puesto la afirmación de los traductores en cuarentena —«easy to state and hard to test»— y en el hueco la concede en su forma más fuerte para volverse contra ella dos oraciones después, con «The difficulty is that…». «To be sure» es esa concesión previa al giro. El cierre confirma la dirección: lo concedido se matiza, no se abandona.',
+        'Correcta: en el hueco el texto concede la tesis de los traductores en su forma más fuerte —la frase del traductor pertenece al momento en que se escribió como no le pasa al original— para volverse contra ella dos oraciones después, con «The difficulty is that…». «To be sure» es exactamente esa concesión previa al giro: admite el punto que se va a matizar, no lo matiza todavía. El cierre confirma la dirección: lo concedido se matiza, no se abandona.',
       C:
         'Toma lo que sigue por un caso de lo anterior. No hay caso: la oración del hueco no nombra ninguna traducción ni ningún traductor concreto y es más general que la que la precede, porque dice qué le pasa a cualquier frase traducida. Es lo que elige quien ve una observación amplia seguida de otra y supone que la segunda ilustra a la primera.',
       D:
         'Invierte la flecha causal. Presenta la dependencia del momento de escritura como efecto de la costumbre de sustituir versiones, cuando el texto la ofrece como su razón: se sustituyen porque la frase del traductor pertenece a su momento. Es el camino de quien encadena por consecuencia dos oraciones que hablan de lo mismo sin comprobar cuál sostiene a cuál.',
     },
     fuenteHecho:
-      'Lugar común real de la teoría de la traducción —las traducciones se rehacen cada generación y los originales no— discutido con argumentación propia. Ningún traductor, teórico, novela ni traducción reales; 1890 solo fecha un ejemplo inventado.',
+      'Lugar común real de la teoría de la traducción —las traducciones se rehacen cada generación y los originales no— discutido con argumentación propia. Ningún traductor, teórico, novela ni traducción reales; 1890 solo fecha un ejemplo inventado. La segunda mitad de la primera oración —«and the practice of publishers bears them out»— sustituye a «The claim is easy to state and hard to test» y describe la misma costumbre editorial que el párrafo ya explicaba, sin atribuirla a ninguna casa ni a ningún país: no añade ningún hecho que haya que sostener con una fuente. El motivo del cambio no es de contenido sino de clave única, y está en la sección «q27» de la cabecera.',
   },
 ]
