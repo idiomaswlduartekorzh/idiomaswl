@@ -16,7 +16,8 @@ que es donde se produce: `Have a seat, Camilo.` y `What are the keys for, doña 
 
 **Nivel (A2):** `used-to-a2`, `first-conditional`, `have-to-must`, `past-simple-regular`,
 `will-future`, `connectors-a2`, `comparatives`, `can-ability`, `telling-time`, `imperative`.
-Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `could` de cortesía.
+Fuera preguntas incrustadas **con inversión o con do/did**, `since` de duración, condicional
+hipotético y `could` de cortesía.
 
 ---
 
@@ -25,9 +26,9 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 > **Formal.** She is your supervisor. Two years together. You say *doña Amparo*; she uses your first name. **She starts.** 6-9 turns each · 8 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Monday, August 17, 7:35 a.m. The auto parts store is still shut. She called you into the office and closed the door. Two things are on the desk.
+**Where you are** · It is Monday, August 17, 7:35 a.m. The auto parts store is still closed. She called you into the office and closed the door. Two things are on the desk.
 
-**You want** · You want your August bonus safe from that paper, and the second set of keys.
+**You want** · You want your August bonus, and the second set of keys. Both go with that paper.
 
 **You can't**
 1. You can't say why your Saturday mornings are busy. You don't want the store to know about them. Say no to the day, and nothing else about it.
@@ -35,7 +36,7 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 3. You can't close this with a promise. You have promised twice. This time she needs to hear what will change, and how it will work.
 
 **Only you know**
-- You coach a kids' football school on Saturdays, from 8:00 to 12:00. Forty children, no money, and no second coach after June. You said it once, two years ago, and the store talked about it for a month.
+- You coach a kids' soccer school on Saturdays, from 8:00 to 12:00. Forty children, no money, and no second coach after June. You said it once, two years ago, and the store talked about it for a month.
 - Your neighbor in apartment 3 goes to the same daycare every morning. She is the only reason your mornings can change. You have never asked her.
 
 **If you walk away with nothing** · She writes the warning, because it is the only paper she can still write. Your bonus goes with it, and the warehouse job and the keys go too.
@@ -97,7 +98,7 @@ Block 6: Saturday mornings are the one thing you don't explain.
 3. You said what you want.
 4. You said no to Saturday mornings, and not why.
 5. You put a time, a bus and a name on the WHAT CHANGES line — not a promise.
-6. You can name the paper and say who reads it.
+6. You said which paper it is, and who reads it.
 7. You said what it costs you, and you asked what it costs her.
 
 ---
@@ -109,18 +110,18 @@ Block 6: Saturday mornings are the one thing you don't explain.
 
 **Before you speak** · Put the keys and the commitment sheet on the desk. Without them, this is a complaint.
 
-**Where you are** · The store you open is still shut at 7:35. You are alone at the door when the truck comes, and you have opened alone three Mondays.
+**Where you are** · The store you open is still closed at 7:35. You are alone at the door when the truck comes, and you have opened alone three times.
 
 **You want** · You want to give him the keys today. He gives you the WHAT CHANGES line and two mornings of training first.
 
 **You can't**
 1. You can't fire him, cut his pay or pay extra hours. None of that is in your hands, and you don't want it.
-2. You can't give the keys with nothing in writing, not with the other four watching.
+2. You can't give the keys with nothing in writing, not in front of the other four.
 3. You can't write the WHAT CHANGES line for him. It has to be in his words.
 
 **Only you know**
 - You never put the first two Mondays on the incident form. If you write one today, he can ask about them.
-- You have Alba, from the counter, asking for the keys too. You never taught her the truck.
+- Alba, from the counter, asks you for the keys too. You never taught her the truck.
 - You can give the training on two Thursdays after closing, 6:30 to 8:30, in your own unpaid time. You don't want to offer it.
 
 **If you walk away with nothing** · You open the store alone for two more years, and you get your own warning, with two Mondays to explain.
@@ -147,7 +148,7 @@ Block 6: Saturday mornings are the one thing you don't explain.
 | commitment sheet | a paper where the worker writes what will change | the only safe signature of the three |
 | delivery note | the paper that says what comes on the truck | checked against the boxes · two people, always |
 | incident form | the company paper for the days somebody arrives late | today's paper · a question he can ask |
-| review date | the day you look at it again and see if it worked | September 14 · the day somebody can see if it is true |
+| review date | the day you look at it again and see the result | September 14 · the day somebody checks it |
 | store folder | the papers that the store keeps about the store, not about one person | the middle paper · never in his file |
 | training | hours when somebody teaches you the job | two mornings · your price for the keys · nobody else to teach them |
 | warehouse | the big room where the store keeps the boxes | the reason you are asking him · not the three Mondays |
@@ -198,7 +199,7 @@ Block 6 matters most: one question you don't answer.
 > | What they are saying outside | the four of them · this morning, out loud in the store |
 > | The question one of them asked | the other two Mondays · not in the incident form |
 >
-> - No room now for a quiet deal.
+> - No room now for a secret deal.
 > - Nothing you give him now stays between the two of you. So he gives something back, and they see that too.
 > - You decide how much you tell him.
 
@@ -245,7 +246,7 @@ grammarReferences: [
   { slug: 'used-to-a2', level: 'a2', title: 'Used to en Inglés A2: hábitos y estados del pasado',
     rationale: 'El corazón de la explicación de Camilo y el mejor anclaje del set: "My bus used to arrive at ten to seven — now…". El contraste pasado/presente es el tema entero.' },
   { slug: 'first-conditional', level: 'a2', title: 'El Primer Condicional en Inglés A2',
-    rationale: 'El acto conceder-con-condicion de la supervisora: "If you write this line today, I can…" — presente simple en la cláusula if y can de permiso en el resultado, que es la forma que el tema enseña.' },
+    rationale: 'El acto conceder-con-condicion de la supervisora: "If you write this line today, I can…" — el tema ancla la cláusula if, que es donde está la regla dura (presente simple, nunca will). El modal del resultado va anclado aparte, en can-ability.' },
   { slug: 'have-to-must', level: 'a2', title: 'Have to y Must en Inglés A2',
     rationale: 'Ella no regaña, se ampara en una obligación: "I have to write…"; y él explica la suya: "I have to leave Matías at the daycare at…".' },
   { slug: 'past-simple-regular', level: 'a2', title: 'Past Simple Verbos Regulares en Inglés A2',
@@ -262,6 +263,12 @@ grammarReferences: [
     rationale: 'Él abre las dos puertas que sí puede abrir: "I can start at five to seven." y "The neighbor in 3 can take…"; y la supervisora ata su sí a lo que está en su mano: "If you write this line today, I can…".' },
   { slug: 'telling-time', level: 'a1', title: 'Decir la hora en inglés A1',
     rationale: 'El escenario entero son horas —7:00, 7:10, 7:35, 6:40, 5:50— y el cierre exige decir la hora de entrada en voz alta. Las horas se dicen completas en los exponentes: "a quarter past seven", "five to seven".' },
+  { slug: 'wh-questions', level: 'a1', title: 'Preguntas con WH en inglés A1',
+    rationale: 'Las preguntas abiertas que el escenario exige por criterio: "What are the keys for, doña Amparo?" y "Which paper is that, and who…?" de él, "And what can you…?" de ella. Las tres son la forma que el tema enseña: WH + is/are/can + sujeto.' },
+  { slug: 'prepositions-time', level: 'a1', title: 'Preposiciones de tiempo en inglés A1',
+    rationale: 'Cuatro exponentes son huecos de at y on, y el renglón WHAT CHANGES se escribe con ellos: "I have to leave Matías at the daycare at…", "The road work started on…", "Then I pick up her two boys on…", "I need… mornings on…". El tema enseña at + hora y on + día o fecha.' },
+  { slug: 'present-simple-questions', level: 'a1', title: 'Present simple interrogativo en inglés A1',
+    rationale: 'La mitad que Camilo pregunta del punto 3 del cierre: "And what does this cost…?" — Wh- + does + sujeto + verbo base, la fila literal del tema. Sin él, el único exponente de la ficha con do-support se queda sin anclaje.' },
 ],
 ```
 
@@ -557,3 +564,43 @@ pantalla compartida, los criterios de cierre, la carta y las notas de las tablas
 que juegue el suelo de la banda —seis turnos— tendría más filas que turnos. La regla dice «no más
 filas que turnos» sin decir contra qué extremo de la banda se mide, y eso hay que fijarlo en el
 blueprint, no aquí.
+
+
+---
+
+## Pasada de nivel (22 ago 2026) — `fase13-nivel-5.md`
+
+**El nivel del escenario es A2 y no hay que moverlo.** La ruta mínima cierra en cinco turnos por rol
+dentro de la banda declarada, y los 25 exponentes están todos dentro de nivel: cero `would/could/
+might`, cero pasiva, cero `since` de duración en las pantallas de rol. Contador después:
+**ROLE A 448 · ROLE B 445**.
+
+**La cuenta pendiente queda saldada:** `— or why it costs you nothing.` es A2, y es **más** A2 que lo
+que sustituye. Pierde el primer condicional y el imperativo del resultado, vuelve al pasado como los
+otros seis criterios de B, y sus dos piezas duras están ancladas.
+
+**El hallazgo que no se esperaba: el cruce entre lentes ha pasado cuatro veces, y tres iban al
+revés del que ya conocíamos.**
+
+| dónde | qué pasó |
+|---|---|
+| criterio 6 de B | un arreglo de **nivel** creó una línea decible — el que ya conocíamos |
+| restricción 2 de B | una pasada de **calcabilidad** metió `with` + objeto + `-ing`, sin tema en el registro. Y lo metió `d672a01c`, **el mismo commit** que sacaba el gerundio con sujeto de la ficha de A |
+| objetivo de A | `ae708726` dejó `want` + objeto + adjetivo, sin tema |
+| fila `review date` | una pasada cambió la pregunta directa `did it work?` por `see if it worked`: interrogativa indirecta, justo lo que la ficha declara fuera |
+
+| # | dónde | por qué |
+|---|---|---|
+| H1 | B · restricción 2 · `not with the other four watching` → `not in front of the other four` | `with` + objeto + `-ing` no tiene tema en A1 ni A2. Sigue siendo fragmento sin verbo: no se levanta como turno |
+| H2 | B · dato oculto · `You have Alba… asking for the keys` → `Alba… asks you for the keys too` | causativa B1. El `you` protege: dicho a Camilo es falso, tendría que decir `asks me` |
+| H3-H7 | cinco menores | pregunta incrustada con `if` dos veces en la misma fila, `want` + objeto + adjetivo, presente perfecto con sintagma pelado, `to name` metalingüístico, y `a quiet deal` → `a secret deal`, que era de hoy |
+| H9 | la declaración de nivel de la cabecera | decía `Fuera preguntas incrustadas` y la ficha tiene **doce**, todas legales. Lo que sobraba era la declaración, no las líneas: si no se acota, el próximo auditor «arregla» el criterio 6 que acabamos de dejar bien |
+
+Americano: `football` → `soccer`, `shut` → `closed` (chocaba con `store`). **`delivery note` aparece
+once veces y en americano corriente es `packing slip`: se nombra y no se cambia aquí — es decisión
+de conjunto para los ocho escenarios.**
+
+En `grammarReferences`: entran `wh-questions`, `prepositions-time` y `present-simple-questions`, y
+sale media frase falsa del *rationale* de `first-conditional`, que decía que el tema enseña `can` en
+el resultado. Enseña `will`, y marca con ❌ el resultado sin `will`: la estudiante que pulsara el
+enlace desde su propio exponente lo vería en la lista de errores del tema.
