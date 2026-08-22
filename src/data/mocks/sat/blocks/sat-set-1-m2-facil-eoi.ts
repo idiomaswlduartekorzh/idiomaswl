@@ -5,10 +5,12 @@ import type { SatItemMeta } from '../module-types'
  * Bloque Expression of Ideas del módulo `sat-set-1-m2-facil` — ítems q23 a q27.
  *
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 23-27). Claves vigentes, que no se
- * negocian ítem a ítem: **D, A, D, C, B** (el plan asignaba B, A, B, C, A; ver «REPARTO DE
- * LETRAS» al final de este comentario). Dificultades 1, 2, 1, 2, 3 y temas humanidades,
- * historia, ciencia, literatura, humanidades. Todo el contenido es original (§5 del
- * blueprint); de College Board solo se reproducen los dos enunciados canónicos.
+ * negocian ítem a ítem: **D, A, C, D, B** (el plan asignaba B, A, B, C, A; ver «REPARTO DE
+ * LETRAS» al final de este comentario). El orden de los cinco es **q23 · q24 · q26 · q25 ·
+ * q27** —q25 y q26 se intercambiaron enteros, ver «CALIBRACIÓN» al final—, con dificultades
+ * **3, 3, 1, 2, 3** y temas humanidades, historia, literatura, ciencia, humanidades. Todo el
+ * contenido es original (§5 del blueprint); de College Board solo se reproducen los dos
+ * enunciados canónicos.
  *
  * ## rhetorical-synthesis (q23-q24): tercera versión, y con la regla del revés
  *
@@ -36,24 +38,30 @@ import type { SatItemMeta } from '../module-types'
  * la clave, **un hecho que mate a cada distractor**. Sin ese hecho el ítem tendría dos
  * claves, que es la avería que R13 provoca si se aplica a medias.
  *
- * - **q23** — las cuatro explican por qué un oyente no entiende un mensaje silbado. **A**:
- *   la distancia lo desgasta; la nota 2 dice que una frase silbada se distingue a cinco
- *   kilómetros cruzando un valle o una cumbre. **C**: el silbo es un código de señales que
- *   hay que haber aprendido; la nota 1 dice que lleva las vocales y consonantes de las
- *   palabras y no es un código. **B**: se adquiere de niño junto con la lengua hablada y
- *   ya no después; la nota 6 dice que los adultos que se instalan allí siguen los mensajes
- *   silbados en una temporada. Solo **D** queda en pie, y la sostienen tres notas: la 3 (muchas palabras
- *   dan el mismo silbo), la 4 (lo ambiguo se resuelve por lo que el trabajo del día hace
- *   probable) y la 5 (silbadores de toda la vida perdieron las frases sobre asuntos de los
- *   que nadie silba).
+ * - **q23** — las cuatro explican por qué un oyente no entiende un mensaje silbado. **C**:
+ *   el silbo es un código de señales que hay que haber aprendido; la nota 1 dice que lleva
+ *   las vocales y consonantes de las palabras y no es un código. **A**: la distancia lo
+ *   desgasta; la nota 2 dice que una frase silbada se distingue a cinco kilómetros cruzando
+ *   un valle o una cumbre. **B**: se adquiere de niño junto con la lengua hablada y ya no
+ *   después; la nota 3 dice que los adultos que se instalan allí siguen los mensajes
+ *   silbados en una temporada. Solo **D** queda en pie, y la sostienen dos notas: la 4
+ *   (muchas palabras dan el mismo silbo, y lo ambiguo se resuelve por lo que el trabajo del
+ *   día hace probable) y la 5 (silbadores de toda la vida perdieron las frases sobre asuntos
+ *   de los que nadie silba).
  * - **q24** — las cuatro explican por qué el concejo revocó el voto de 1848. **B**: la
  *   compañía amenazó con parar solo donde se llevara su hora; la nota 2 dice que no pedía
  *   nada a los relojes de los pueblos ni hacía depender de ellos ninguna parada. **C**:
- *   entró un concejo nuevo; la nota 4 dice que los once elegidos en 1847 siguieron sin
- *   elección hasta 1853, y la 5 que quien revoca es «el mismo concejo». **D**: el telégrafo
- *   trajo la hora de la capital; la nota 6 lo fecha en 1858, siete años tarde. Solo **A**
- *   queda en pie, con la nota 5: las peticiones de los viajeros que llegaron al andén con
+ *   entró un concejo nuevo; la nota 3 dice que los once elegidos en 1847 siguieron sin
+ *   elección hasta 1853, y la 4 que quien revoca es «el mismo concejo». **D**: el telégrafo
+ *   trajo la hora de la capital; la nota 5 lo fecha en 1858, siete años tarde. Solo **A**
+ *   queda en pie, con la nota 4: las peticiones de los viajeros que llegaron al andén con
  *   el tren ya salido están en las actas de la sesión que revocó el voto.
+ *
+ *   **El orden de las viñetas no es libre**: en los dos cuadernos los tres hechos que matan
+ *   a los tres distractores van en las viñetas de arriba —q23: 1 mata a C, 2 mata a A, 3
+ *   mata a B— y las de abajo son el apoyo de la clave. El cuaderno se lee una vez y de
+ *   arriba abajo, sin volver. Antes el hecho que mata a **B** en q23 estaba en la sexta y
+ *   última viñeta, y quien no llegaba a ella se quedaba con dos candidatas en pie.
  *
  * Los tres distractores de cada ítem son ahora **falsos dentro del cuaderno**, no
  * verdaderos-pero-ajenos. Por eso las dos situaciones son inventadas y llevan nombre propio
@@ -66,7 +74,7 @@ import type { SatItemMeta } from '../module-types'
  * gastan dos elementos del cuaderno— porque no estorba: no bastaba, pero cierra la fuga
  * formal que R12 describe.
  *
- * ## transitions (q25-q27): lo que ve el panel a ciegas son cuatro conectores
+ * ## transitions (q26 · q25 · q27, en ese orden): lo que ve el panel a ciegas son cuatro conectores
  *
  * El examen a ciegas de `scripts/sat-blind-test.mjs` imprime el enunciado y las opciones sin
  * el texto. En un ítem de transiciones eso deja al solucionador **cuatro conectores y nada
@@ -172,16 +180,20 @@ import type { SatItemMeta } from '../module-types'
  *
  * Puertas medidas sobre el bloque después de rehacerlo, no heredadas de la versión anterior:
  *
- * - **7 longitud**: 144,3 · 146,2 · 124,7 · 83,5 · 125,7 palabras-SAT. Las cinco dentro de
- *   25-150. q23 y q24 crecieron: cada distractor necesita ahora en el cuaderno el hecho que
- *   lo desmiente, y q27 subió de 125,3 al cambiar la segunda mitad de su primera oración.
+ * - **7 longitud**: 122,7 · 115,8 · 83,5 · 124,7 · 113,3 palabras-SAT, en el orden en que
+ *   van (q23 · q24 · q26 · q25 · q27). Las cinco dentro de 25-150. Vienen de 144,3 · 146,2
+ *   · 83,5 · 124,7 · 125,7: los tres que bajaron lo hacen por la calibración de más abajo,
+ *   y los dos que no se tocaron no se movieron ni un decimal.
  * - **2 longitud de la clave**: la clave no es la opción más larga en ninguno de los cinco.
  *   En q23 y q24 tampoco es la más corta (q23: 157 · 150 · 149 · 155 caracteres; q24: 165 ·
- *   168 · 163 · 167).
- * - **3 solape léxico**: en q23 la clave repite 8 palabras del texto contra 9, 5 y 5 de los
+ *   168 · 163 · 167). Ninguna opción se tocó al calibrar, así que esta puerta se lee igual
+ *   que antes.
+ * - **3 solape léxico**: en q23 la clave repite 8 palabras del texto contra 9, 6 y 4 de los
  *   distractores, y en q24 repite 11 contra 11, 10 y 12: en los dos queda estrictamente por
  *   debajo del máximo y por encima del mínimo, así que no cuenta por ninguna de las dos
  *   caras de la puerta. En los tres de transiciones el solape es 0 en las cuatro opciones.
+ *   Los recortes del cuaderno movieron dos cifras de q23 —B de 5 a 6, C de 5 a 4— y ninguna
+ *   de q24; la clave sigue sin ser ni el máximo ni el mínimo, que es lo que mide la puerta.
  * - **12 variedad temática**: humanidades ×2, historia, ciencia y literatura, uno cada uno.
  *
  * Lo que este bloque **no** trae: q23, q24, q25, q26 y q27 son ítems nuevos por R2 —los cinco
@@ -230,6 +242,76 @@ import type { SatItemMeta } from '../module-types'
  * Lo que sigue en pie es la regla de siempre —si un ítem «pide» otra letra se mueve el ítem, no
  * el reparto—, y por eso la sustitución de «Likewise,» por «Even so,» en q27 no tocó ni una
  * letra: la clave siguió en B.
+ *
+ * ## CALIBRACIÓN (22 ago 2026) — el precio de siete rondas cerrando fugas
+ *
+ * El calibrador midió los dos módulos y encontró la avería de conjunto que ninguna ronda de
+ * fugas podía ver: **la rama estándar del módulo 2 salía más difícil que el módulo 1** (10,48
+ * contra 10,07), de modo que la adaptación castigaba a quien va peor. Este bloque era el peor
+ * de los ocho escritos: **12,00 de media, +1,40 sobre su equivalente del módulo 1**, con q23 y
+ * q24 empatados en el techo (**14** los dos) y colocados en los puestos 23 y 24 de 27, o sea
+ * hacia el minuto 27 de 32.
+ *
+ * La causa es lo que se venía haciendo: **cerrar una fuga sube la distancia entre opciones, y
+ * eso sube la dificultad**. Siete rondas de eso sin medir el precio dejan un bloque que
+ * discrimina muy bien y agota. Así que la calibración se hizo **sin tocar ni una opción ni una
+ * razón**: el margen estaba en la complejidad del texto y en la carga de lectura, no en la
+ * lógica del ítem. En q23 en particular, que las cuatro opciones sean relevantes al objetivo y
+ * que solo las notas decidan **es** el arreglo que lo bajó de 10/10 a ciegas, y se queda.
+ *
+ * Lo que bajó, y por qué baja la carga sin volver el ítem más adivinable:
+ *
+ * - **q23** — el cuaderno pasa de **seis viñetas a cinco** y de 144,3 a **122,7** palabras-SAT.
+ *   Se fusionan las dos notas que sostienen la clave (la ambigüedad del silbo y cómo la
+ *   resuelve el trabajo del día) en una sola, y se cae la lista de ejemplos —animal
+ *   descarriado, cambio de pasto, alguien subiendo— que no desmentía ni sostenía nada. Y las
+ *   tres notas que matan a los tres distractores suben a las viñetas **1, 2 y 3**: antes la
+ *   que mata a B era la sexta. El estudiante lee el cuaderno una vez, de arriba abajo, y no
+ *   vuelve.
+ * - **q24** — de **seis viñetas a cinco** y de 146,2 a **115,8**. Se cae entera la nota de los
+ *   relojes de estación con doble aguja, que era ambiente, y la fecha de 1855 en que los
+ *   periódicos dejaron de imprimir la hora local, que no desmentía ninguna opción. De las seis
+ *   fechas que había que cruzar quedan las que trabajan, y el cruce se acorta: 1847 y 1853
+ *   viven ahora dentro de la misma viñeta que 1848, y la nota del telégrafo dice ella misma
+ *   «seven years after the reversal» en lugar de dejar la resta al estudiante.
+ * - **q27** — de 125,7 a **113,3**. El texto sobre traducción era el más denso de los tres de
+ *   transiciones: se acortan la segunda y la tercera oración sin quitar ninguna de las tres
+ *   piezas que el ítem necesita —«and the practice of publishers bears them out», que es lo que
+ *   impide la segunda clave; la concesión del hueco en su forma fuerte; y «The difficulty is
+ *   that…» dos oraciones después—. **El juego de conectores no se toca**: siguen dos de prosa y
+ *   dos de lista, con los dos giros alineados con los dos de prosa.
+ *
+ * **Ninguna de las tres rebajas toca lo que hay que razonar.** Los tres distractores de q23 y
+ * q24 siguen muriendo por el mismo hecho del cuaderno que los mataba antes —el mismo hecho, con
+ * el mismo texto, en otra viñeta—, y las razones solo cambiaron el número de la nota que citan.
+ * Lo que se quitó es trabajo de barrido: viñetas que no desmienten nada, ejemplos, una fecha
+ * suelta y una resta. Un ítem no se vuelve adivinable porque el cuaderno sea más corto; se
+ * vuelve adivinable si el enunciado o la forma de las opciones señalan la clave, y eso está
+ * intacto porque las opciones están intactas.
+ *
+ * **El intercambio de q25 y q26.** El grupo de transiciones medía 11 · 8 · 13 en su orden
+ * anterior, o sea que empezaba por encima de su segundo ítem. Intercambiados los dos objetos
+ * enteros —sin renumerar ni cambiar ids— queda **8 · 11 · 13**, creciente, que es lo que pide el
+ * plan dentro de cada tipo. La puerta 9 del guardián mide la curva **por grupo de tipo**, no por
+ * dominio, así que el bloque puede ir 3 · 3 · 1 · 2 · 3 sin romperla: síntesis retórica va 3 · 3
+ * y transiciones 1 · 2 · 3.
+ *
+ * **Las etiquetas de dificultad, y lo que aún no se puede afirmar.** Se reetiquetan según lo
+ * medido: q23 → **3**, q24 → **3**, q25 → **2**, q26 → **1** (medía 8, el suelo del bloque, y
+ * estaba en 2; con esto las tres transiciones quedan 1 · 2 · 3, que es exactamente su medida).
+ * q27 sigue en 3.
+ *
+ * ⚠️ **q23 y q24 llevan la etiqueta de antes de la rebaja.** El 14 se midió sobre los
+ * cuadernos de seis viñetas. A ojo, con 122,7 y 115,8 palabras-SAT y los distractores muriendo
+ * en las tres primeras viñetas, los dos deberían caer a la banda de 12 y pasar a **2** — pero
+ * eso hay que medirlo, no estimarlo, y quien escribe esto no tiene la fórmula del calibrador.
+ * Se deja el 3, que es el número que hay firmado, y **se pide re-medición**: si caen por debajo
+ * de 13, la etiqueta honrada es 2 y la mezcla del módulo vuelve a 12 fáciles · 12 medios · 3
+ * difíciles, en vez del 12 · 10 · 5 que deja esta entrega.
+ *
+ * Por R2 los tres ítems con texto nuevo —q23, q24, q27— vuelven a la cola de auditoría y la
+ * prueba a ciegas hay que repetirla sobre ellos. q25 y q26 no cambiaron ni un carácter: solo
+ * cambiaron de sitio.
  */
 
 export const items: MCQQuestion[] = [
@@ -238,7 +320,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "While researching a topic, a student has taken the following notes:\n\n• In the Ferrin valleys herders whistle the words of the language everyone there speaks; the whistle carries their vowels and consonants, not a code of fixed signals.\n• A whistled sentence is made out five kilometers off, across a valley or over a ridge; a shout fades in a few hundred meters.\n• Whistling keeps fewer distinctions than the voice: many words come out as the same whistle.\n• Herders settle an unclear whistle by what the day's work makes likely: a strayed animal, a change of pasture, someone coming up the track.\n• In a test there, herders who had whistled all their lives missed sentences about matters nobody whistles about, though every word was ordinary.\n• Children take whistling at school half an hour a week; adults who settle there follow whistled messages within a season.",
+      "While researching a topic, a student has taken the following notes:\n\n• In the Ferrin valleys herders whistle the words of the language spoken there; the whistle carries their vowels and consonants, not a code of fixed signals.\n• A whistled sentence is made out five kilometers off, across a valley or over a ridge; a shout fades in a few hundred meters.\n• Children take whistling at school half an hour a week; adults who settle there follow whistled messages within a season.\n• Many words come out as the same whistle, and herders settle an unclear one by what the day's work makes likely.\n• In a test there, herders who had whistled all their lives missed sentences about matters nobody whistles about, though every word was ordinary.",
     text: 'The student wants to explain why some listeners cannot understand a whistled message. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
       'Because a whistled sentence has to cross a whole valley or a ridge to arrive, a listener five kilometers off makes nothing of a whistle worn thin on the way.',
@@ -253,7 +335,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "While researching a topic, a student has taken the following notes:\n\n• Until the 1840s every town set its clocks by local noon; towns forty kilometers apart differed by minutes.\n• The railway company printed one timetable for the whole line and kept the capital's time at every station; it asked nothing of the towns' clocks and made no stop depend on them.\n• Station clocks in six towns were given a second minute hand, so local and railway time could be read at once.\n• In 1848 the council of Brantwood voted to keep local time on the town's clocks; the eleven men elected in 1847 sat on with no new election until 1853.\n• In 1851 the same council reversed the vote; its minutes record dozens of petitions from travelers who had reached the platform after their train had left.\n• The telegraph reached the district in 1858; the newspapers stopped printing local time in 1855.",
+      "While researching a topic, a student has taken the following notes:\n\n• Until the 1840s every town set its clocks by local noon.\n• The railway company printed one timetable for the whole line and kept the capital's time at every station; it asked nothing of the towns' clocks and made no stop depend on them.\n• In 1848 the council of Brantwood voted to keep local time on the town's clocks; the eleven men elected in 1847 sat on with no new election until 1853.\n• In 1851 the same council reversed the vote; its minutes record dozens of petitions from travelers who had reached the platform after their train had left.\n• The telegraph reached the district in 1858, seven years after the reversal.",
     text: 'The student wants to explain why the council of Brantwood reversed its 1848 vote. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
       'Because travelers from the town were reaching the platform to find their train already gone, the council gave up in 1851 the local time it had voted to keep in 1848.',
@@ -262,21 +344,6 @@ export const items: MCQQuestion[] = [
       "Because a telegraph line had begun to bring the capital's time into the district each morning, the council gave up in 1851 the local time it had voted to keep in 1848.",
     ],
     answer: 0,
-  },
-  {
-    id: 'q25',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      'Most plants open the pores of their leaves by day, when sunlight drives photosynthesis, and every hour those pores stay open the leaf loses water. In a desert at midday the air pulls water out of a leaf faster than the roots can replace it, so many desert plants keep their pores shut through the heat and open them after dark, when the air is cool and still. The carbon dioxide taken in at night is stored in the leaf and spent the next morning behind closed pores, which carries the plant through a whole sunlit day without opening its leaves to the dry air. ______ the same machinery carries some of these plants through weeks of drought, when the roots find nothing to take up and the leaf works again and again on the carbon already inside it.',
-    text: 'Which choice completes the text with the most logical transition?',
-    options: [
-      'For instance,',
-      'Meanwhile,',
-      'As a result,',
-      'In fact,',
-    ],
-    answer: 3,
   },
   {
     id: 'q26',
@@ -294,11 +361,26 @@ export const items: MCQQuestion[] = [
     answer: 2,
   },
   {
+    id: 'q25',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      'Most plants open the pores of their leaves by day, when sunlight drives photosynthesis, and every hour those pores stay open the leaf loses water. In a desert at midday the air pulls water out of a leaf faster than the roots can replace it, so many desert plants keep their pores shut through the heat and open them after dark, when the air is cool and still. The carbon dioxide taken in at night is stored in the leaf and spent the next morning behind closed pores, which carries the plant through a whole sunlit day without opening its leaves to the dry air. ______ the same machinery carries some of these plants through weeks of drought, when the roots find nothing to take up and the leaf works again and again on the carbon already inside it.',
+    text: 'Which choice completes the text with the most logical transition?',
+    options: [
+      'For instance,',
+      'Meanwhile,',
+      'As a result,',
+      'In fact,',
+    ],
+    answer: 3,
+  },
+  {
     id: 'q27',
     type: 'mcq',
     part: 1,
     stimulus:
-      'Translators often say that a translation ages faster than the book it translates, and the practice of publishers bears them out. A novel published in 1890 goes on being read in the language it was written in, while the versions made of it elsewhere are replaced every generation or two, and the replacement is justified by saying that the old version now sounds dated. ______ the sentence a translator writes belongs to the moment of its writing in a way the original does not: it answers a question about how a foreign book should sound in this language now, and every generation asks that question again. The difficulty is that originals sound dated too, and readers forgive them for it. What ages may be less the translation than our patience with it.',
+      'Translators often say that a translation ages faster than the book it translates, and the practice of publishers bears them out. A novel published in 1890 is still read in its own language, while the versions made of it elsewhere are replaced every generation or two, each time because the old one sounds dated. ______ the sentence a translator writes belongs to the moment of its writing as the original does not: it answers a question about how a foreign book should sound in this language now, and every generation asks it again. The difficulty is that originals sound dated too, and readers forgive them for it. What ages may be less the translation than our patience with it.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
       'Even so,',
@@ -315,17 +397,17 @@ export const meta: SatItemMeta[] = [
     id: 'q23',
     domain: 'EOI',
     tipo: 'rhetorical-synthesis',
-    dificultad: 1,
+    dificultad: 3,
     tema: 'humanidades',
     razones: {
       A:
         'Falsa por la nota 2: una frase silbada se distingue a cinco kilómetros, cruzando un valle o pasando una cumbre, y lo que se apaga en unos cientos de metros es el grito. Explica exactamente lo que pide el enunciado —por qué un oyente no saca nada de un mensaje silbado— pero apoyada en un hecho que el cuaderno niega. Es el camino de quien busca el obstáculo en la distancia, que es el único dato de las notas con forma de cifra, y confunde no oír con no entender.',
       B:
-        'Falsa por la nota 6: el silbo se da en la escuela media hora a la semana, y los adultos que se instalan en los valles siguen los mensajes silbados en una temporada. Es el camino de quien traslada al silbo el período crítico de la adquisición de lenguas: suena a explicación experta, que es justo lo que la hace peligrosa, y el cuaderno la desmiente en la misma nota que habla de la escuela.',
+        'Falsa por la nota 3: el silbo se da en la escuela media hora a la semana, y los adultos que se instalan en los valles siguen los mensajes silbados en una temporada. Es el camino de quien traslada al silbo el período crítico de la adquisición de lenguas: suena a explicación experta, que es justo lo que la hace peligrosa, y el cuaderno la desmiente en la misma nota que habla de la escuela.',
       C:
         'Falsa por la nota 1: el silbo lleva las vocales y consonantes de las palabras y no es un código de señales fijas, de modo que no hay una señal aprendida para cada mensaje. Es la idea popular del silbo como morse de montaña, y por eso es la trampa del ítem: suena a explicación completa y no la sostiene ninguna nota. Quien la marca ha dado por supuesto justo lo que la primera nota corrige.',
       D:
-        'Correcta: es la única de las cuatro causas que las notas afirman. Muchas palabras salen como el mismo silbo (nota 3), así que el oyente completa lo que falta con lo que el trabajo del día hace probable (nota 4); por eso, en la prueba de la nota 5, silbadores de toda la vida perdieron las frases sobre asuntos de los que nadie silba, aunque cada palabra fuera corriente. Las otras tres explican lo mismo por causas que el cuaderno desmiente una a una.',
+        'Correcta: es la única de las cuatro causas que las notas afirman. Muchas palabras salen como el mismo silbo, así que el oyente completa lo que falta con lo que el trabajo del día hace probable: las dos cosas están en la nota 4. Por eso, en la prueba de la nota 5, silbadores de toda la vida perdieron las frases sobre asuntos de los que nadie silba, aunque cada palabra fuera corriente. Las otras tres explican lo mismo por causas que el cuaderno desmiente una a una.',
     },
     fuenteHecho:
       'Hecho libre de lingüística: el habla silbada reproduce las vocales y consonantes de una lengua hablada —no es un código de señales—, se distingue a varios kilómetros y depende del contexto, porque muchas palabras dan el mismo silbo y el oyente las resuelve por lo previsible del mensaje. Donde se enseña en la escuela lo hace como asignatura obligatoria de media hora semanal. Los valles Ferrin, la prueba de la nota 5 y las cifras son inventados: así los tres distractores afirman cosas falsas sobre un lugar que no existe y ninguno enseña un hecho falso del mundo.',
@@ -334,45 +416,26 @@ export const meta: SatItemMeta[] = [
     id: 'q24',
     domain: 'EOI',
     tipo: 'rhetorical-synthesis',
-    dificultad: 2,
+    dificultad: 3,
     tema: 'historia',
     razones: {
       A:
-        'Correcta: es la única causa que el cuaderno sitúa entre los dos votos. Las actas de la sesión de 1851 recogen decenas de peticiones de viajeros que llegaron al andén con el tren ya salido (nota 5): la presión existe, es anterior a la revocación y sale del propio pueblo. Las otras tres son motivos igual de razonables para que un concejo se desdiga, y las notas los desmienten uno a uno.',
+        'Correcta: es la única causa que el cuaderno sitúa entre los dos votos. Las actas de la sesión de 1851 recogen decenas de peticiones de viajeros que llegaron al andén con el tren ya salido (nota 4): la presión existe, es anterior a la revocación y sale del propio pueblo. Las otras tres son motivos igual de razonables para que un concejo se desdiga, y las notas los desmienten uno a uno.',
       B:
         'Falsa por la nota 2: la compañía imprimía un solo horario con la hora de la capital, no pedía nada a los relojes de los pueblos y no hacía depender de ellos ninguna parada. Es el motivo que primero se le ocurre a cualquiera —el fuerte aprieta al débil— y por eso se lleva los votos de quien razona con el mundo en lugar de con el cuaderno. En las notas no hay ninguna amenaza de la compañía.',
       C:
-        'Falsa por las notas 4 y 5: los once hombres elegidos en 1847 siguieron en el cargo sin elección nueva hasta 1853, y quien revoca en 1851 es «el mismo concejo». Es el camino de quien explica un cambio de voto por un cambio de votantes, que es como se deshacen la mayoría de los acuerdos municipales. Aquí no cambió nadie: cambiaron de opinión los mismos once.',
+        'Falsa por las notas 3 y 4: los once hombres elegidos en 1847 siguieron en el cargo sin elección nueva hasta 1853, y quien revoca en 1851 es «el mismo concejo». Es el camino de quien explica un cambio de voto por un cambio de votantes, que es como se deshacen la mayoría de los acuerdos municipales. Aquí no cambió nadie: cambiaron de opinión los mismos once.',
       D:
-        'Falsa por la nota 6: el telégrafo llegó al distrito en 1858, siete años después de la revocación. Es el camino de quien sabe cómo acabó la historia de la hora única —señal horaria repartida por telégrafo— y la adelanta hasta la fecha que le hace falta. Con las notas delante, para descartarla basta mirar el año, y el año la descarta solo.',
+        'Falsa por la nota 5: el telégrafo llegó al distrito en 1858, siete años después de la revocación. Es el camino de quien sabe cómo acabó la historia de la hora única —señal horaria repartida por telégrafo— y la adelanta hasta la fecha que le hace falta. Con las notas delante, para descartarla basta mirar el año, y esa nota dice ella sola cuántos años sobran.',
     },
     fuenteHecho:
-      'Patrón histórico libre: hora local por mediodía solar en cada población, horarios de ferrocarril impuestos desde una sola ciudad, relojes de estación con doble aguja durante la transición y señal horaria por telégrafo, que en la vida real llegó más tarde. Brantwood, el distrito, las fechas y las cifras son inventados. Los tres distractores atribuyen a ese pueblo inventado motivos que en otros sitios sí se dieron —la presión de la compañía, el relevo del concejo, el telégrafo—, de modo que ninguno enseña un hecho falso.',
-  },
-  {
-    id: 'q25',
-    domain: 'EOI',
-    tipo: 'transitions',
-    dificultad: 1,
-    tema: 'ciencia',
-    razones: {
-      A:
-        'Lee la oración del hueco como un ejemplo de la anterior, y «some of these plants» invita a ello. Pero un ejemplo tendría que ser un caso de lo que se acaba de afirmar —una planta pasando un día de sol con los poros cerrados— y lo que la oración describe va más allá: semanas sin nada que absorber y el mismo carbono aprovechado una y otra vez dentro de la hoja. Es el camino de quien ve un cuantificador y oye «por ejemplo».',
-      B:
-        'Sigue el reloj del texto en vez de su argumento: hay día, hay noche y hay «the next morning», y de ahí a leer el cierre como algo que ocurre a la vez hay un paso. Pero en el hueco no hay dos procesos simultáneos ni dos sujetos: son las mismas plantas y la misma maquinaria, medidas en semanas en lugar de en un día.',
-      C:
-        'Encadena por consecuencia dos oraciones que dicen lo mismo con distinta intensidad. Aguantar semanas de sequía no se sigue de aguantar un día de sol: es la misma capacidad enunciada en su límite. Y la consecuencia del mecanismo ya está dicha en la oración anterior —«carries the plant through a whole sunlit day»—, así que ponerla otra vez en el hueco repite el eslabón. Es lo que elige quien encuentra un mecanismo descrito y da por hecho que el final del párrafo es su efecto; es, con diferencia, la apuesta segura del que no lee.',
-      D:
-        'Correcta: la oración del hueco dice lo mismo que la anterior, llevado al extremo. La anterior afirma que el mecanismo saca a la planta de un día entero de sol; la del hueco, que a algunas las saca de semanas de sequía. Mismo sujeto, misma maquinaria, misma dirección y más fuerza: eso es lo que marca «In fact». El párrafo no cambia de relación al cerrar, sube la apuesta.',
-    },
-    fuenteHecho:
-      'Hecho libre de fisiología vegetal: apertura estomática nocturna, fijación del CO2 en la hoja hasta la mañana siguiente y, en sequía prolongada, ciclo cerrado con los poros sin abrir y el carbono respirado reaprovechado dentro de la hoja. Sin especie, desierto ni estudio concretos.',
+      'Patrón histórico libre: hora local por mediodía solar en cada población, horarios de ferrocarril impuestos desde una sola ciudad y señal horaria por telégrafo, que en la vida real llegó más tarde. Brantwood, el distrito, las fechas y las cifras son inventados. Los tres distractores atribuyen a ese pueblo inventado motivos que en otros sitios sí se dieron —la presión de la compañía, el relevo del concejo, el telégrafo—, de modo que ninguno enseña un hecho falso.',
   },
   {
     id: 'q26',
     domain: 'EOI',
     tipo: 'transitions',
-    dificultad: 2,
+    dificultad: 1,
     tema: 'literatura',
     razones: {
       A:
@@ -386,6 +449,25 @@ export const meta: SatItemMeta[] = [
     },
     fuenteHecho:
       'Prosa narrativa original de registro literario, escrita para este ítem. Ni personaje, ni casa, ni obra de referencia: no hay fuente externa.',
+  },
+  {
+    id: 'q25',
+    domain: 'EOI',
+    tipo: 'transitions',
+    dificultad: 2,
+    tema: 'ciencia',
+    razones: {
+      A:
+        'Lee la oración del hueco como un ejemplo de la anterior, y «some of these plants» invita a ello. Pero un ejemplo tendría que ser un caso de lo que se acaba de afirmar —una planta pasando un día de sol con los poros cerrados— y lo que la oración describe va más allá: semanas sin nada que absorber y el mismo carbono aprovechado una y otra vez dentro de la hoja. Es el camino de quien ve un cuantificador y oye «por ejemplo».',
+      B:
+        'Sigue el reloj del texto en vez de su argumento: hay día, hay noche y hay «the next morning», y de ahí a leer el cierre como algo que ocurre a la vez hay un paso. Pero en el hueco no hay dos procesos simultáneos ni dos sujetos: son las mismas plantas y la misma maquinaria, medidas en semanas en lugar de en un día.',
+      C:
+        'Encadena por consecuencia dos oraciones que dicen lo mismo con distinta intensidad. Aguantar semanas de sequía no se sigue de aguantar un día de sol: es la misma capacidad enunciada en su límite. Y la consecuencia del mecanismo ya está dicha en la oración anterior —«carries the plant through a whole sunlit day»—, así que ponerla otra vez en el hueco repite el eslabón. Es lo que elige quien encuentra un mecanismo descrito y da por hecho que el final del párrafo es su efecto; es, con diferencia, la apuesta segura del que no lee.',
+      D:
+        'Correcta: la oración del hueco dice lo mismo que la anterior, llevado al extremo. La anterior afirma que el mecanismo saca a la planta de un día entero de sol; la del hueco, que a algunas las saca de semanas de sequía. Mismo sujeto, misma maquinaria, misma dirección y más fuerza: eso es lo que marca «In fact». El párrafo no cambia de relación al cerrar, sube la apuesta.',
+    },
+    fuenteHecho:
+      'Hecho libre de fisiología vegetal: apertura estomática nocturna, fijación del CO2 en la hoja hasta la mañana siguiente y, en sequía prolongada, ciclo cerrado con los poros sin abrir y el carbono respirado reaprovechado dentro de la hoja. Sin especie, desierto ni estudio concretos.',
   },
   {
     id: 'q27',

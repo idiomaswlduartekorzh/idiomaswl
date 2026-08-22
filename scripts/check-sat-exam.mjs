@@ -389,12 +389,25 @@ function checkModule(mod) {
   // dificultad seguían siendo correctos. El daño no es para el estudiante: es que un
   // informe de auditoría que habla de «q19» describe la pregunta que en pantalla es la
   // 20, y la siguiente corrección aterriza en el ítem equivocado.
-  items.forEach((q, i) => {
-    const esperado = `q${String(i + 1).padStart(2, '0')}`
-    if (q.id !== esperado) {
-      fail(id, 'ids', `en la posición ${i + 1} está «${q.id}»; debería ser «${esperado}». Un id que no coincide con su sitio hace que la próxima corrección caiga en otro ítem`)
+  //
+  // **Se exigía `q05` en la quinta posición, y eso resultó ser demasiado.** El calibrador
+  // de dificultad encontró que dos grupos de tipo tenían la curva al revés —el ítem más
+  // caro primero— y el arreglo es reordenarlos. Con la regla vieja, reordenar obligaba a
+  // renumerar, y el plan, el acta y las siete rondas de auditoría hablan de «q05»: la
+  // renumeración movería el nombre de todos los informes a otra pregunta, que es justo el
+  // daño que esta puerta existe para evitar.
+  //
+  // Así que el id es un **nombre**, no una posición. Lo que se exige es que sea único, que
+  // tenga metadatos y que no haya huérfanos — eso ya lo cubre el bloque de estructura de
+  // arriba —, y aquí solo que nadie invente un formato nuevo a mitad de un bloque.
+  const vistos = new Set()
+  for (const [i, q] of items.entries()) {
+    if (!/^q\d{2}$/.test(q.id)) {
+      fail(id, 'ids', `«${q.id}» (posición ${i + 1}) no tiene el formato qNN — los planes y las actas se escriben con ese nombre`)
     }
-  })
+    if (vistos.has(q.id)) fail(id, 'ids', `«${q.id}» aparece dos veces: un informe que lo nombre no dice de cuál habla`)
+    vistos.add(q.id)
+  }
 
   // ── 4, 6, 10, 11 · las que no son mecánicas: se exige el acta ──
   const acta = path.join(actasDir, `${id}.json`)

@@ -418,7 +418,123 @@ import type { SatItemMeta } from '../module-types'
  * el pasaje. Techo a ciegas 50 %, y de las dos que quedan la famosa es C, no la clave.
  *
  * Lo que NO se tocó: la clave del plan (q09 B), el enunciado, la fila del plan entera —II,
- * `central-ideas-details`, ciencia, dificultad 1— y los otros seis ítems del bloque.
+ * `central-ideas-details`, ciencia, dificultad 1— y los otros seis ítems del bloque. La
+ * dificultad de esa fila la corrige la octava pasada, aquí abajo.
+ *
+ * OCTAVA PASADA (22 ago 2026) — BAJAR EL PRECIO, NO CERRAR OTRA FUGA. Es la primera pasada
+ * de este bloque que no viene de un auditor de sesgo, sino del calibrador, y lo que trae es
+ * la factura de las siete anteriores.
+ *
+ * EL DIAGNÓSTICO, que es lo importante y no cabe en un ítem. La rama estándar del módulo 2
+ * mide 10,48 de media y el módulo 1 mide 10,07: quien NO llega al corte recibe un módulo más
+ * difícil que el que acaba de fallar, así que la adaptación empuja al revés. El plan pedía
+ * 13 fáciles / 11 medios / 3 difíciles y lo medido fue 6 / 8 / 13, con UN solo ítem de
+ * lectura en banda fácil de los veinte que hay. La causa no es un descuido: es exactamente
+ * lo que llevamos siete pasadas haciendo. Cada arreglo contra la prueba a ciegas acerca las
+ * cuatro opciones entre sí, y «distancia entre opciones» es uno de los cinco ejes del
+ * calibrador. Subimos ese eje siete veces y nadie midió el precio.
+ *
+ * DE DÓNDE SE SACA LA REBAJA. La distancia entre opciones NO se toca: ahí vive todo el
+ * trabajo contra la fuga, y devolverla resucita las siete pasadas. Quedan los otros dos ejes
+ * que este bloque puede mover sin tocar una sola cadena de deducción: **T**, complejidad del
+ * pasaje, y **L**, cuántas partes hay que cruzar. Los dos son del texto, no de las opciones.
+ *
+ * - q09 · pasaje intacto; las cuatro opciones recortadas sin quitarles nada. Medían
+ *   149/152/155/153 y miden 132/128/132/121: 609 caracteres de opción bajan a 513, un 16 %
+ *   menos de lectura por ítem. Sobrevive entero el diseño de la séptima pasada —los cuatro
+ *   términos del balance de calor, el cruce dos y dos por clase (agua que llega: B y C) y por
+ *   notoriedad (primer reflejo: A y C), y la ley general al final de las cuatro—. Lo que se
+ *   fue son perífrasis: «a great deal more» → «far more», «water that keeps traveling» →
+ *   «water traveling», «the way water standing in one does» → «as standing water does»,
+ *   «a lake that goes on taking sun in through the winter» → «a lake taking in sun all
+ *   winter». Solapes 3/5/6/6 → 4/5/6/7, con la clave estrictamente entre el mayor y el menor,
+ *   y la clave sigue sin ser la más larga ni la más corta.
+ * - OJO al recortar más este ítem: la clave NO puede volver a la elipsis. Un borrador de esta
+ *   misma pasada dejó «and water that warm keeps the ice away» —cuatro caracteres menos— y eso
+ *   es exactamente la carga sintáctica gratuita en la respuesta correcta que quitó la quinta
+ *   pasada. Vale «water arriving that warm», con el participio puesto. Lo mismo con la
+ *   longitud: quitar esos cuatro caracteres dejaba a la clave como la más corta en solitario.
+ *
+ * - q11 · igual, y con un encargo extra del calibrador: la clave repetía palabra por palabra
+ *   las dos negaciones del pasaje («settling prices», «shut anybody out»), que roza la puerta
+ *   de solape léxico. Una de las dos está ahora parafraseada: «not for shutting anyone out» →
+ *   «it locks nobody out». Las opciones bajan de 153/149/149/151 a 144/130/134/137, un 9,5 %.
+ *   El recorte es menor que en q09 y el motivo es estructural, no descuido: la clave tiene que
+ *   cargar TRES piezas y las otras tres opciones tienen que quedarse a su lado para que no sea
+ *   la más larga, así que el suelo del ítem son unos 130 caracteres por opción. Las tres piezas
+ *   siguen enteras y el verbo del final sigue sin elidir —la condición de mantenimiento que
+ *   escribió el auditor de clave se respeta y está anotada en `razones.D`—. Solapes 4/2/2/3 →
+ *   4/1/2/3, clave interior.
+ *
+ * - q10 · el pasaje. Llevaba CINCO fechas (1970, 1996, los años cincuenta, 1958, 1972) y
+ *   obligaba a sostener cuatro sitios a la vez, y de esas cinco solo dos entran en alguna
+ *   deducción. Se caen tres. «Catalogued by a university library in 1996» era un resto del
+ *   primer intento de deshacer la pareja con q11 —pareja que ya no existe desde que la sexta
+ *   pasada cambió q11 entero—, así que sobraba: los cuadernos entran ahora sin fecha ni
+ *   custodio. Y la línea que mata a C exigía además aritmética: «the reviews … in 1972 raised
+ *   just the objection the reviews of 1958 had raised» pedía colocar dos años a un lado y a
+ *   otro de 1970 para ver que la crítica no se había movido. Ahora lo dice con palabras —«The
+ *   reviews of the late novels raised the very objection her earliest reviews had raised»—, que
+ *   es el mismo hecho sin cuentas. Pasaje 124,7 → 113,0 palabras-SAT.
+ * - Lo que NO se hizo en q10, y es la tentación obvia: fundir en una sola línea las dos que
+ *   matan a A y a D. Habría quitado un salto más, pero rompe la propiedad de que cada
+ *   distractor muere por una línea distinta, que es lo que impide que un descarte valga por
+ *   dos. Se prefirió pagar el salto. Las cuatro opciones no se tocaron: siguen 107/107/108/105
+ *   y los solapes salen idénticos, 6/5/4/7.
+ *
+ * - q15 · el pasaje más caro del módulo entero y el que estaba a 3,5 palabras del tope de la
+ *   puerta 7. Baja de 146,5 a 129,5 palabras-SAT (879 → 777 caracteres) y, sobre todo, baja de
+ *   registro. Se cae la frase de bibliografía material —«printers of the period altered type
+ *   while the sheets were still going through the press, so copies of one book can differ»—,
+ *   que era la más subordinada del pasaje y que ya no hace falta: las dos primeras frases dan
+ *   el hecho (veintinueve ejemplares dicen una cosa y once dicen otra) y la prensa única da la
+ *   secuencia. Se cae «the third act», que no lo usa ninguna opción. La glosa de *set* se
+ *   reescribe más llana: «To print a page, a worker first had to set it: put its letters in
+ *   place one at a time». «Crooked» pasa a «bent» y «entered the shop's stock» a «arrived»,
+ *   que es el mismo dato en palabras corrientes. Y «long version / short one» pasa a
+ *   «thirty-line scene / twelve-line one», que ahorra al lector tener que recordar cuál era
+ *   cuál.
+ * - En q15 se ACLARÓ algo a propósito, que es lo contrario de recortar: la prensa única
+ *   dice ahora en el texto lo que hasta hoy solo estaba en `razones.C` —«so it could not print
+ *   two versions of a page at the same time; one had to come first»—. Es gratis en términos de
+ *   adivinanza: el «primero… y luego» lo comparten las CUATRO opciones, así que explicitarlo
+ *   no separa a ninguna de ninguna. Solo ahorra el paso de deducirlo. Los dos datos que sí
+ *   deciden —la e fechada (orden) y el pliego sin cortar (mecanismo)— siguen dichos y sin
+ *   comentar, y la frase que citan tres razones sigue literal: «folded from one sheet of paper,
+ *   with none cut out and none pasted in». Las cuatro opciones, intactas; sus solapes siguen
+ *   empatados entre sí, que es el caso que el guardián lee como «no hay pista que explotar».
+ *
+ * REETIQUETADO. La dificultad declarada era la del plan y no la medida. Queda: q09 2, q10 2,
+ * q11 2, q12 3, q13 2, q14 3, q15 3. De esas, cinco son la medición del calibrador tal cual;
+ * dos las remido aquí porque el pasaje ha cambiado debajo:
+ *
+ * - q10 · medía 12 (difícil). Con el pasaje nuevo bajan dos ejes —complejidad del texto y
+ *   número de partes que cruzar— y lo mido en 10: **medio**, no difícil. No baja a fácil, y no
+ *   puede: para eso habría que acercar la clave a los distractores, que es justo lo prohibido.
+ * - q15 · medía 14, el más alto del bloque. Bajo T y lo mido en 13: sigue **difícil**. Que el
+ *   pasaje se lea más fácil no cambia que haya que cruzar tres datos y cerrar una inferencia;
+ *   ese ítem no sale de la banda 3 sin tocar sus opciones. Queda dicho para que nadie lo
+ *   reetiquete a la baja sin haberlo rehecho.
+ *
+ * El calibrador dio sumas, no el desglose por eje; el desglose de estos dos párrafos es mío y
+ * se puede discutir eje por eje, que es para lo que está la tabla del blueprint.
+ *
+ * EFECTO EN EL MÓDULO, dicho sin adornos: la mezcla declarada pasa de 12/10/5 a 8/11/8. Va a
+ * peor sobre el papel, y es lo correcto: antes decía 12 fáciles porque nadie había medido.
+ * Tres de los ocho difíciles están en este bloque (q12, q14, q15) y el plan pedía tres en el
+ * módulo ENTERO. Esto no se arregla reetiquetando ni recortando más aquí: hace falta que los
+ * otros tres bloques bajen, o ítems fáciles nuevos. Es una decisión de módulo, no de bloque.
+ *
+ * Lo que NO se tocó en esta pasada: las siete claves del plan, los siete enunciados, las
+ * opciones de q10, q12, q13, q14 y q15 —ni un carácter—, la lógica y el reparto de las
+ * veintiocho opciones del bloque, las razones de distractor de los siete (solo se actualizaron
+ * las citas que el texto movió, y en q11 la paráfrasis pedida), el 2×2 de q13, el 2×2 de q15,
+ * los tres datos de q15 y las cadenas de deducción de los siete.
+ *
+ * PENDIENTE, y bloquea el APTO: q09, q10, q11 y q15 han cambiado, así que el módulo necesita
+ * volver a pasar por el auditor de clave y por la prueba a ciegas antes de firmar acta. La
+ * huella del guardián cubre enunciado, opciones, clave y `stimulus`: un acta firmada antes de
+ * hoy ya no describe este archivo.
  */
 
 export const items: MCQQuestion[] = [
@@ -430,10 +546,10 @@ export const items: MCQQuestion[] = [
       'Two lakes lie a kilometer apart in the same valley, and every winter the northern one freezes about three weeks after the southern one. Soundings put the two basins at the same depth. The same ridge stands over both, and neither shore loses an hour of the low winter sun to it. Neither lake has a stream running into it or out of it the year round. What differs is where the water comes from. The southern lake fills in the thaw with snowmelt off the slopes. The northern one is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January.',
     text: 'According to the text, why does the northern lake freeze later than the southern one?',
     options: [
-      "Its basin goes down to a greater depth, and the water in a deep lake has a great deal more of the summer's heat to give up before it can freeze over.",
-      'It is fed from below by a spring that arrives at the same temperature in January as it does in July, and water reaching it that warm keeps the ice away.',
-      'It has a stream running through it the year round, and water that keeps traveling through a basin will not set into ice the way water standing in one does.',
-      'It lies open to the low winter sun all day, and a lake that goes on taking sun in through the winter has more heat to lose before its surface can freeze.',
+      "Its basin goes down to a greater depth, and the water in a deep lake has far more of the summer's heat to give up before it freezes.",
+      'It is fed from below by a spring at the same temperature in January as in July, and water arriving that warm keeps the ice away.',
+      'It has a stream running through it the year round, and water traveling through a basin will not set into ice as standing water does.',
+      'It lies open to the low winter sun, and a lake taking in sun all winter has more heat to lose before its surface freezes.',
     ],
     answer: 1,
   },
@@ -442,7 +558,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Critics have long treated the four novels Amparo Lascano published after 1970 as a late turn in her work: the short sentences, the three small towns, the endings that explain nothing. Her working notebooks, catalogued by a university library in 1996, complicate that account. The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away. So are the towns, which are the same three she had been writing about since her first book. The reviews that greeted the late novels in 1972 raised just the objection the reviews of 1958 had raised. What was new after 1970 was her publisher: the editor who had demanded "a proper ending" in 1958 had sold the firm, and the editor who bought it demanded nothing.',
+      'Critics have long treated the four novels Amparo Lascano published after 1970 as a late turn in her work: the short sentences, the three small towns, the endings that explain nothing. Her working notebooks complicate that account. The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away. So are the towns, which are the same three she had been writing about since her first book. The reviews of the late novels raised the very objection her earliest reviews had raised. What was new after 1970 was her publisher: the editor who had demanded "a proper ending" had sold the firm, and the editor who bought it demanded nothing.',
     text: 'Which choice best states the main idea of the text?',
     options: [
       "The turn critics date to 1970 was a change in Lascano's sentences rather than in the towns she wrote about.",
@@ -460,10 +576,10 @@ export const items: MCQQuestion[] = [
       'The porters of the Trestona market speak among themselves a jargon of some four hundred words, and it has always been explained the same way: a code for settling prices where the customer cannot follow. The linguist Nieves Barcala, who spent two years working the barrows, says it does nothing of the kind. Buyers pick the jargon up in a season, she points out; speaking it is an occupation of its own, kept up for its own sake, and the porters do not use it to shut anybody out. Barcala takes her evidence from what the porters told her.',
     text: "Which quotation from the porters most effectively illustrates Barcala's claim?",
     options: [
-      '"We settle all the prices of the day in it, and we settle them with the customer standing right there; that is the use of the thing and always has been."',
-      '"What we pay the growers stays inside this hall; no porter from the north side has ever been told the figure, and none of them ever will be told it."',
-      '"Nobody is paid a cent for it and nobody sits down to teach it; a boy has it off the barrows in his first winter, the way the rest of us came to it."',
-      '"It is not for the prices and not for shutting anyone out; we talk it going home on the bus, and would go on talking it if the market closed tomorrow."',
+      '"We settle all the prices of the day in it, and we settle them with the customer right there; that is the use of the thing and always has been."',
+      '"What we pay the growers stays inside this hall; no porter from the north side has ever been told the figure, and none ever will."',
+      '"Nobody is paid a cent for it and nobody sits down to teach it; a boy has it off the barrows in his first winter, the way we all did."',
+      '"It is not for the prices and it locks nobody out; we talk it on the bus home, and would go on talking it if the market closed tomorrow."',
     ],
     answer: 3,
   },
@@ -517,7 +633,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Forty copies survive of the 1612 printing of A Wager at Marlbeck. In twenty-nine of them the third act carries a scene of thirty lines; in the other eleven the same scene runs to twelve. A page had to be set, its letters assembled one by one, before it could be printed, and printers of the period altered type while the sheets were still going through the press, so copies of one book can differ. The shop that printed it worked a single press, and its type had one flaw that can be dated: a lowercase e with a crooked crossbar, which entered the shop's stock in March 1612 and marks every sheet printed afterward. The crooked e runs all through the long version of the scene and appears nowhere in the short one. In all forty copies the pages of that section are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
+      "Forty copies survive of the 1612 printing of A Wager at Marlbeck. In twenty-nine of them one scene runs to thirty lines; in the other eleven the same scene runs to twelve. To print a page, a worker first had to set it: put its letters in place one at a time. The shop had a single press, so it could not print two versions of a page at the same time; one had to come first. Its type had one flaw that can be dated: a lowercase e with a bent crossbar, which arrived in March 1612 and marks every sheet printed after that. The bent e runs all through the thirty-line scene and appears nowhere in the twelve-line one. In all forty copies the pages of that scene are folded from one sheet of paper, with none cut out and none pasted in. Taken together, these details indicate that…",
     text: 'Which choice most logically completes the text?',
     options: [
       'the thirty-line scene was set first and printed for twenty-nine copies, and that its page was then set again at twelve lines for the remaining eleven.',
@@ -534,7 +650,7 @@ export const meta: SatItemMeta[] = [
     id: 'q09',
     domain: 'II',
     tipo: 'central-ideas-details',
-    dificultad: 1,
+    dificultad: 2,
     tema: 'ciencia',
     razones: {
       A:
@@ -553,26 +669,26 @@ export const meta: SatItemMeta[] = [
     id: 'q10',
     domain: 'II',
     tipo: 'central-ideas-details',
-    dificultad: 1,
+    dificultad: 2,
     tema: 'literatura',
     razones: {
       A:
         'Deja el cambio dentro de la prosa de Lascano, y los cuadernos lo desmienten: «The short sentences and the unexplained endings are already in the drafts she wrote in the 1950s and put away». Si la frase corta ya estaba veinte años antes, no puede ser lo que se movió después de 1970. Es la lectura de manual —el estilo tardío de quien se va despojando con la edad— y la marca quien reconoce la historia habitual antes de comprobar cuál cuenta esta.',
       B:
-        'Correcta: junta las dos mitades del pasaje. Los cuadernos quitan el cambio de la escritura —frase corta, finales sin explicar y los mismos tres pueblos, todo anterior a 1970— y la última frase dice qué sí cambió: «What was new after 1970 was her publisher», con un editor que en 1958 exigía «a proper ending» y otro, tras la venta de la casa, que no exigió nada. El giro que la crítica fecha en 1970 está en lo que la editorial imprimía, no en lo que Lascano escribía. No es la lectura más fina de las cuatro: es la única que no choca con una línea del texto.',
+        'Correcta: junta las dos mitades del pasaje. Los cuadernos quitan el cambio de la escritura —frase corta, finales sin explicar y los mismos tres pueblos, todo anterior a 1970— y la última frase dice qué sí cambió: «What was new after 1970 was her publisher», con un editor que exigía «a proper ending» y otro, tras la venta de la casa, que no exigió nada. El giro que la crítica fecha en 1970 está en lo que la editorial imprimía, no en lo que Lascano escribía. No es la lectura más fina de las cuatro: es la única que no choca con una línea del texto.',
       C:
-        'Saca el cambio de la escritora, que es el paso correcto, y lo pone en la institución equivocada. El pasaje fecha la respuesta de la crítica: «The reviews that greeted the late novels in 1972 raised just the objection the reviews of 1958 had raised». Con catorce años de por medio y la misma objeción, nadie se acostumbró a nada. Es la distractora más cercana a la clave, y la marca quien acierta el diagnóstico general y no lee las dos frases que separan a la crítica del editor.',
+        'Saca el cambio de la escritora, que es el paso correcto, y lo pone en la institución equivocada. El pasaje cierra esa puerta en una línea: «The reviews of the late novels raised the very objection her earliest reviews had raised». Si la objeción de los últimos libros es la misma que la de los primeros, la crítica no llegó a aceptar nada que antes rechazara. Es la distractora más cercana a la clave, y la marca quien acierta el diagnóstico general y no lee las dos frases que separan a la crítica del editor.',
       D:
         'Mueve el cambio del cómo al qué, y el texto cierra esa puerta con la misma limpieza: los tres pueblos «are the same three she had been writing about since her first book». Después de 1970 no hay terreno nuevo. La elige quien lee la lista de la primera frase —frases cortas, pueblos pequeños, finales sin explicar— como inventario de novedades, sin ver que el pasaje la desmonta entrada por entrada.',
     },
     fuenteHecho:
-      'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato. Los cuadernos se catalogan en 1996 y no en 2019, y quien los abre es una biblioteca universitaria y no la familia. Eso fue el primer intento de deshacer la pareja con q11, que va justo detrás y llevaba el mismo armazón —creadora, papeles privados, fecha de apertura del archivo, lectura que da la vuelta al relato recibido—; cambiar la fecha y el custodio no bastó, porque el armazón seguía completo en los dos. En la sexta pasada se cambió el escenario de q11 entero y este ítem se quedó como está: es el único de los dos que conserva creadora y papeles, así que ya no hay pareja que romper. La deducción no depende de la fecha, depende de que los cuadernos son de los años cincuenta.',
+      'Ficción original: Amparo Lascano, sus novelas, sus cuadernos, la casa editorial y todas las fechas están inventados. El fenómeno de fondo sí es corriente en historia editorial —un cambio de estilo atribuido al autor puede deberse a un cambio en lo que su editor aceptaba imprimir—, y por eso el ítem se sostiene como lectura y no como dato. Sustituye al q10 anterior (Irina y la centralita), retirado en la cuarta pasada por fuga estructural: su idea central era la premisa misma del relato. Los cuadernos ya no llevan fecha de catalogación ni custodio: en la octava pasada se cayó «catalogued by a university library in 1996», que era un dato más que sostener y que no entra en ninguna deducción. Esa fecha y esa biblioteca venían del primer intento de deshacer la pareja con q11, que va justo detrás y llevaba el mismo armazón —creadora, papeles privados, fecha de apertura del archivo, lectura que da la vuelta al relato recibido—; no bastó, y en la sexta pasada se cambió el escenario de q11 entero, así que ya no hay pareja que romper y la fecha sobraba. La deducción no depende de ninguna fecha de archivo: depende de que los cuadernos son de los años cincuenta.',
   },
   {
     id: 'q11',
     domain: 'II',
     tipo: 'command-of-evidence-textual',
-    dificultad: 1,
+    dificultad: 2,
     tema: 'humanidades',
     razones: {
       A:
@@ -582,7 +698,7 @@ export const meta: SatItemMeta[] = [
       C:
         'Describe cómo se transmite la jerga —sin paga y sin maestro, aprendida en las carretillas el primer invierno—, y eso es una cuestión de aprendizaje, no de finalidad: media docena de destrezas del oficio se aprenden así y siguen sirviendo para trabajar. Una jerga que nadie cobra ni enseña puede seguir tapándole el precio al cliente. Y no dice nada de a quién se dejaba fuera, que es la tercera pieza de la afirmación. Es la distractora más cercana a la clave, porque «nadie cobra por ello» suena a «por su propio gusto»: la elige quien toma el modo de aprenderse por el motivo de hacerse.',
       D:
-        'Correcta: cubre las tres piezas de la afirmación de Barcala en una frase. «Not for the prices» niega el código de precios, «not for shutting anyone out» niega que sirva para dejar fuera a nadie, y hablarla volviendo a casa en el autobús, con el verbo entero al final —«would go on talking it if the market closed tomorrow»—, la describe como ocupación aparte que seguiría existiendo aunque se acabara el oficio. MANTENIMIENTO: la ventaja sobre C está en tener las TRES piezas —no es código de precios, ocupación aparte por sí misma, no sirve para dejar fuera a nadie—. La más frágil es la tercera: si una corrección futura quita el «would go on talking it», C se queda como la única que roza «por su propio gusto» y el ítem pasa a tener dos claves. No se recorta ninguna.',
+        'Correcta: cubre las tres piezas de la afirmación de Barcala en una frase. «Not for the prices» niega el código de precios, «it locks nobody out» niega que sirva para dejar fuera a nadie, y hablarla en el autobús de vuelta a casa, con el verbo entero al final —«would go on talking it if the market closed tomorrow»—, la describe como ocupación aparte que seguiría existiendo aunque se acabara el oficio. MANTENIMIENTO: la ventaja sobre C está en tener las TRES piezas —no es código de precios, ocupación aparte por sí misma, no sirve para dejar fuera a nadie—. La más frágil es la tercera: si una corrección futura quita el «would go on talking it», C se queda como la única que roza «por su propio gusto» y el ítem pasa a tener dos claves. No se recorta ninguna. En la octava pasada la opción bajó de 151 a 137 caracteres y la segunda negación se parafraseó —«not for shutting anyone out» → «it locks nobody out»—, porque repetía palabra por palabra el «shut anybody out» del pasaje; las tres piezas siguen enteras y el verbo del final, sin elidir.',
     },
     fuenteHecho:
       'Ficción original: ni el mercado de Trestona, ni los porteadores, ni la lingüista, ni el estudio existen. El fenómeno de fondo sí está documentado en sociolingüística: las jergas de oficio se explican casi siempre como códigos crípticos frente al cliente, y el trabajo de campo suele encontrar que la función críptica es débil y que la variedad se mantiene por identidad y por gusto. Sustituye al q11 anterior (la pintora Ilse Marchetti y sus cuadernos), retirado en la sexta pasada por dos defectos de conjunto y no por nada del propio ítem: (1) con q10 formaba pareja —creadora, papeles privados, fecha de apertura del archivo, lectura que da la vuelta al relato recibido— y los dos ítems van seguidos; (2) compartía racimo léxico con q08 del bloque CS (`painter`, `canvases`, `studio`, `unfinished`), que además va de lienzos mal catalogados. Aquí no hay creadora individual, no hay papeles, no hay archivo ni fecha de apertura, y no queda una sola de esas cuatro palabras. La estructura lógica se conservó entera: tesis de tres piezas, clave que las cubre las tres, distractor C que roza una sola y por el motivo equivocado. Escenario urbano a propósito: q12 va justo detrás y es rural (parroquias, trigo, patatas), así que un q11 de campo habría cambiado una pareja por otra. Nombres comprobados en buscador antes de fijarlos: «Trestona» no aparece como localidad ni como mercado y «Nieves Barcala» no corresponde a ninguna persona. Quien los cambie, que repita la búsqueda.',
@@ -591,7 +707,7 @@ export const meta: SatItemMeta[] = [
     id: 'q12',
     domain: 'II',
     tipo: 'command-of-evidence-textual',
-    dificultad: 2,
+    dificultad: 3,
     tema: 'historia',
     razones: {
       A:
@@ -629,7 +745,7 @@ export const meta: SatItemMeta[] = [
     id: 'q14',
     domain: 'II',
     tipo: 'inferences',
-    dificultad: 1,
+    dificultad: 3,
     tema: 'literatura',
     razones: {
       A:
@@ -647,7 +763,7 @@ export const meta: SatItemMeta[] = [
     id: 'q15',
     domain: 'II',
     tipo: 'inferences',
-    dificultad: 2,
+    dificultad: 3,
     tema: 'humanidades',
     razones: {
       A:
@@ -660,6 +776,6 @@ export const meta: SatItemMeta[] = [
         'Acierta el orden —la versión corta salió antes, como fecha la e torcida— y falla en el mecanismo. Encuadernar una hoja compuesta aparte era práctica corriente de la época, así que la reconstrucción se sostiene sola; lo que la descarta es la última línea del pasaje, que dice de los cuarenta ejemplares que esas páginas están «folded from one sheet of paper, with none cut out and none pasted in». Si no hay papel añadido, las dieciocho líneas de más solo caben recomponiendo el pliego. La marca quien resuelve el orden y da por bueno el primer procedimiento verosímil que se le ocurre para el resto.',
     },
     fuenteHecho:
-      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define. El reparto de ejemplares es 29 largos y 11 cortos, y ese sentido importa: con 11 largos, el estado mayoritario era el primero y la corazonada de que lo mayoritario salió antes apuntaba a la clave. Invertido, apunta a A. Las cuatro opciones nombran las dos versiones, los dos recuentos y un procedimiento de taller igual de corriente —recomponer la plana o encuadernar una hoja compuesta aparte—, de modo que ninguna se puede descartar por rareza. TÍTULO: la obra se llamaba «The Ferryman’s Daughter» y se renombró a «A Wager at Marlbeck» en la quinta pasada. El anterior es el título de dos novelas publicadas —Juliet Greenwood (2020) y Yasmin Angoe (2026)—: los títulos no tienen derecho de autor, pero la norma del proyecto es que ningún nombre del examen tenga dueño. El nuevo se comprobó en buscador antes de fijarlo (sin resultados como título de obra, ni el título entero ni «Marlbeck» asociado a una obra) y hay que volver a comprobarlo si alguien lo cambia. VOCABULARIO: la frase «A page had to be set, its letters assembled one by one, before it could be printed» está en el pasaje porque las cuatro opciones se deciden con *set* en su acepción tipográfica, y ese verbo solo aparecía en las opciones: el texto explicaba *type* y *press* y se quedaba a medio camino.',
+      'Bibliografía analítica real: las correcciones en prensa (stop-press) producen ejemplares distintos dentro de una misma edición, y un tipo dañado y fechado permite ordenar las tiradas. La obra, la imprenta, la letra concreta y los cuarenta ejemplares están inventados. La diferencia entre las dos versiones se dejó en dieciocho líneas —treinta frente a doce— porque una plana de este formato lleva 35-40 y solo así el pliego admite el texto de más sin hoja añadida; el vocabulario técnico (quarto, gathering, leaf) se evitó a propósito, porque el texto no lo define. El reparto de ejemplares es 29 largos y 11 cortos, y ese sentido importa: con 11 largos, el estado mayoritario era el primero y la corazonada de que lo mayoritario salió antes apuntaba a la clave. Invertido, apunta a A. Las cuatro opciones nombran las dos versiones, los dos recuentos y un procedimiento de taller igual de corriente —recomponer la plana o encuadernar una hoja compuesta aparte—, de modo que ninguna se puede descartar por rareza. TÍTULO: la obra se llamaba «The Ferryman’s Daughter» y se renombró a «A Wager at Marlbeck» en la quinta pasada. El anterior es el título de dos novelas publicadas —Juliet Greenwood (2020) y Yasmin Angoe (2026)—: los títulos no tienen derecho de autor, pero la norma del proyecto es que ningún nombre del examen tenga dueño. El nuevo se comprobó en buscador antes de fijarlo (sin resultados como título de obra, ni el título entero ni «Marlbeck» asociado a una obra) y hay que volver a comprobarlo si alguien lo cambia. VOCABULARIO: la frase «To print a page, a worker first had to set it: put its letters in place one at a time» está en el pasaje porque las cuatro opciones se deciden con *set* en su acepción tipográfica, y ese verbo solo aparecía en las opciones: el texto explicaba *type* y *press* y se quedaba a medio camino. En la octava pasada se reescribió más corta y más llana —«put its letters in place one at a time» en vez de «its letters assembled one by one»—, sin tocar lo que define.',
   },
 ]

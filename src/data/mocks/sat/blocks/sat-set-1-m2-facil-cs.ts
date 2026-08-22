@@ -7,9 +7,16 @@ import type { SatItemMeta } from '../module-types'
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 1-8). Textos originales de WeLearn;
  * ni un pasaje ni una pregunta salen de material de College Board (blueprint §5).
  *
- * Las claves son las del plan y no se negocian ítem a ítem: B, C, D, A, B, C, A, D.
- * El reparto de letras se defiende a nivel de módulo: mover una sola aquí rompe la
- * puerta 1 en el otro extremo del examen, donde ya nadie la va a mirar.
+ * ⚠️ **Desde la novena versión el array NO va en orden de id.** El orden de pantalla es
+ * `q02 · q01 · q03 · q04 · q07 · q06 · q05 · q08`, y cada id viaja con su contenido: el
+ * ítem llamado `q05` es el séptimo que ve el estudiante. Está explicado abajo, con la
+ * colisión que esto abre con el guardián.
+ *
+ * Las claves son las del plan y no se negocian ítem a ítem: cada id conserva la suya
+ * —q01 B, q02 C, q03 D, q04 A, q05 B, q06 C, q07 A, q08 D— y en pantalla salen en el
+ * orden C · B · D · A · A · C · B · D. El reparto de letras se defiende a nivel de
+ * módulo: mover una sola aquí rompe la puerta 1 en el otro extremo del examen, donde ya
+ * nadie la va a mirar.
  *
  * Los cuatro `words-in-context` llevan el enunciado del SAT digital —«Which choice
  * completes the text with the most logical and precise word or phrase?»— con el hueco
@@ -154,12 +161,10 @@ import type { SatItemMeta } from '../module-types'
  *   it to them, no drawing, no letter, no recorded visit» (cierra `inspires`, que es el
  *   distractor fino: acepta la fecha y da el paso de más, de «fue antes» a «de ahí
  *   salieron»).
- * - q08 · «not in the two that hung on a wall, and not in the one that never did» — sin
- *   ella, la opción que reparte el grupo en dos acabados y uno no (hoy la A) es defendible
- *   y el ítem tiene dos claves. Actualizado en la octava versión: esa misma frase es ahora
- *   el segundo cierre de la opción del estudio (C), porque un estudio **es** «a stage on
- *   the way to something else». Se le suma «priced them as pictures», del texto 2, que es
- *   el primero.
+ * - q08 · **HISTÓRICO, no buscar en el código: este ítem se retiró en la novena versión.**
+ *   La frase era «not in the two that hung on a wall, and not in the one that never did» y
+ *   sin ella el ítem de los lienzos tenía dos claves. Las frases que no se pueden recortar
+ *   del q08 actual —el del pozo— están en la novena versión, una por distractora.
  *
  * **Molde compartido en q05, q06 y q08 (aviso, no defecto).** Los tres llevan la misma
  * premisa en las cuatro opciones y solo la cola en disputa, y tres de ocho enseñan a leer
@@ -169,7 +174,8 @@ import type { SatItemMeta } from '../module-types'
  * distinta, el solucionador a ciegas vuelve a tener dónde agarrarse: elige la que suena
  * más «respondona», que es la fuga clásica de `cross-text-connections`. Cambiar la
  * redacción de la premisa sin cambiar su contenido es cosmético: la cola sigue siendo lo
- * único que decide.
+ * único que decide. (Sigue vigente con el q08 de la novena versión: cambia el escenario,
+ * no el molde — premisa compartida, «each band is …», y la cola en disputa.)
  *
  * **Dos arreglos de equidad, de la revisión hecha con un estudiante colombiano delante.**
  * Los dos están en la **entrada** del texto, que es donde un término opaco no cuesta un
@@ -270,6 +276,10 @@ import type { SatItemMeta } from '../module-types'
  * cuatro opciones, no sobre las de la quinta versión. Clave sin cambios: **D**.
  *
  * ── q08 y el racimo de pintores: por qué NO se ha tocado ───────────────────
+ *
+ * **HISTÓRICO.** La novena versión retiró este ítem y el racimo se deshizo por sí solo.
+ * Se conserva el razonamiento porque el criterio —mover un ítem de oficio cuesta rehacer
+ * la cadena de cláusulas que sostiene su clave única— vale para el siguiente que se mueva.
  *
  * El auditor de conjunto midió un racimo real: q08 y q11 comparten `painter`, `canvases`,
  * `studio` y `unfinished`, el distractor B de q11 nombra literalmente el objeto de q08
@@ -397,24 +407,167 @@ import type { SatItemMeta } from '../module-types'
  *
  * Por **R2**, q08 vuelve entero a la cola de auditoría y su ciega se repite sobre estas
  * cuatro opciones. Clave sin cambios: **D**, la del plan.
+ *
+ * ── Novena versión: bajar el nivel por el texto, no por las opciones ───────
+ *
+ * **Lo que se midió y por qué obliga a cambiar de herramienta.** El calibrador pasó los
+ * cinco ejes sobre el módulo entero y la rama «estándar» salió en **10,48 frente al 10,07
+ * del módulo 1**: el módulo que se sirve a quien NO llega al corte era más duro que el que
+ * acaba de fallar. Declarado 13 fáciles / 11 medios / 3 difíciles; medido 6 / 8 / 13.
+ *
+ * La causa está escrita en las ocho secciones de arriba. Ocho rondas cerrando fugas
+ * —igualar longitudes, subir las distractoras al mismo grado de respuesta, meter cláusulas
+ * que impiden la segunda clave— **suben la distancia entre las opciones, y esa distancia
+ * es dificultad**. Nadie midió el precio. De aquí sale la regla de esta ronda:
+ *
+ * > **El margen para bajar el nivel está en T (complejidad del pasaje) y en L (cuántas
+ * > partes del texto hay que cruzar). Las opciones y sus razones no se tocan:** ahí vive
+ * > el trabajo contra la prueba a ciegas, y aflojarlas reabre las fugas que costaron
+ * > siete vueltas de panel.
+ *
+ * **q03 — el pasaje del gazal.** Medía 13 con un 2 declarado, y venía detrás de un 7: el
+ * salto más grande del módulo. No sale ni una palabra de las cuatro opciones ni de sus
+ * razones; sale densidad del pasaje. Lo que se hizo, y lo que deliberadamente no:
+ *
+ * - La oración de 47 palabras se parte en dos. Era la que llevaba a la vez la renuncia del
+ *   traductor, la repetición y el «exactamente lo mismo cada vez»; ahora son dos oraciones
+ *   de 14 y 22, y la segunda arranca con sujeto explícito, «The English word», en vez de
+ *   con un pronombre que había que amarrar cuatro cláusulas atrás. Eso es L, no T.
+ * - La oración de 40 palabras que abría el ejemplo se parte igual, y el triple aposito con
+ *   raya deja de repetir «at the end of»: «It is a door in one couplet, a decision in the
+ *   next, a departure in the last».
+ * - `meets the same knot` → `all meet the same problem`. La metáfora del nudo era la
+ *   primera imagen del texto y no se cobra en ninguna opción.
+ * - `such a version` → `the translation` en la oración del hueco: el referente deja de
+ *   tener que reconstruirse. **No se le añade andamio**: la oración del hueco sigue sin
+ *   ninguna pista que copiar, que es el arreglo de la tercera versión.
+ * - **No se toca ninguna de las tres frases protegidas** («saying each time exactly what it
+ *   said before», «one word closes every two-line couplet», «on time and in the place the
+ *   form requires»), ni las dos que citan las razones («No single English word holds all
+ *   three senses, so the translator settles on one», «moves as the poem goes», «much of the
+ *   poem's motion»). Están todas, palabra por palabra.
+ *
+ * Medido: 616 → 571 caracteres, 102,7 → 95,2 palabras-SAT, y la oración más larga baja de
+ * **47 a 22 palabras** (5 oraciones → 8). El abanico sigue siendo `generalizes` ·
+ * `overloads` · `exhausts` · `flattens`, con la clave en **D**.
+ *
+ * **q05 — el pasaje de los flotadores.** Medía 14 con un 1 declarado. Aquí el aviso es al
+ * revés que en q03: **las cuatro opciones comparten dos tercios y suman unos 900
+ * caracteres, y eso es el arreglo que cerró su fuga en la tercera versión. No se toca.**
+ * Se bajó solo el pasaje, y solo por sintaxis:
+ *
+ * - La oración de 42 palabras del ciclo del flotador —punto y coma, tres verbos
+ *   coordinados y un gerundio— se parte en tres de 13, 9 y 21.
+ * - La de 34 con que abre —`…from ships, which meant it was measured…`— se parte en dos.
+ * - `on the tenth` → `on the tenth day`: el ordinal deja de flotar sin sustantivo.
+ * - `Several thousand are now at sea, and they report…` se parte en dos oraciones.
+ *
+ * Medido: 689 → 688 caracteres (el pasaje casi no encoge, porque partir oraciones cuesta
+ * palabras) y la oración más larga baja de **42 a 21** (6 oraciones → 10). Aquí la bajada
+ * es toda de T por vía sintáctica; no hay más margen sin entrar en las opciones.
+ *
+ * **Dos reordenamientos, sin escribir una palabra.** El calibrador comprobó que ninguno
+ * rompe el reparto de claves ni junta dos temas iguales:
+ *
+ * - **q01 ↔ q02.** El grupo de vocabulario iba 8 · 7 · 13 · 12, es decir, empezaba bajando.
+ *   Pasa a 7 · 8 · 13 · 12.
+ * - **q05, q06, q07 se invierten.** El grupo de estructura iba 14 · 13 · 12, **exactamente
+ *   al revés de lo que exige el blueprint**. Pasa a 12 · 13 · 14.
+ *
+ * Se intercambian los objetos enteros en `items` y en `meta`, y **cada id viaja con su
+ * contenido**: no se renumera nada, porque las ocho secciones de arriba, el informe de
+ * ciegas y el plan hablan de «q05» o de «q08» para referirse a un contenido, no a una
+ * posición. Orden de pantalla resultante: `q02 · q01 · q03 · q04 · q07 · q06 · q05 · q08`.
+ *
+ * ⚠️ **Colisión conocida con el guardián.** `scripts/check-sat-exam.mjs` exige que el id de
+ * cada ítem coincida con su posición (`q${i+1}`), así que con este orden la puerta `ids`
+ * falla, y `check:sat` está dentro de `prebuild`. Las dos salidas son incompatibles entre
+ * sí y **la decisión no es de este archivo**: o la puerta pasa a comprobar «ids únicos y
+ * presentes en `meta`» en vez de «id == posición», o se renumera el bloque y se deja aquí
+ * la tabla de equivalencias. Lo que no vale es bajar el umbral ni silenciar la puerta.
+ *
+ * **q08 retirado y sustituido.** Tercera medición seguida filtrando **9 de 10 a ciegas**.
+ * El arreglo de la octava versión —subir las otras tres al mismo grado de respuesta— no lo
+ * movió, y el diagnóstico de por qué es el mismo de siempre: en el escenario de los tres
+ * lienzos, la tesis que el enunciado pide («¿los cuadros están terminados?») solo tiene una
+ * forma limpia de decirse, «los dejó así a propósito», y esa forma era la clave. Las otras
+ * tres podían acercarse, pero ninguna podía **ser** esa frase sin volverse la clave. Tres
+ * intentos es señal suficiente, y ya hay precedente: el `q10` original se retiró por lo
+ * mismo. Se retira el ítem de Aurelio Vasco entero —textos, opciones y razones—.
+ *
+ * El sustituto es de la misma fila del plan (CS · `cross-text-connections` · humanidades ·
+ * dificultad 3 · clave **D**) y cambia de oficio: un pozo de la Edad del Bronce con cuatro
+ * bandas de cerámica rota, leído como depósito ritual en el texto 1 y como vertido de
+ * desechos en el texto 2. Lo que hace distinto el abanico:
+ *
+ * - **Las cuatro opciones contestan la misma pregunta con la misma forma**: «each band
+ *   is …». Ninguna es la única que dice qué son las bandas, que era la fuga anterior.
+ * - **Las cuatro niegan la lectura ritual.** La heurística del solucionador a ciegas ante
+ *   un `cross-text-connections` de arqueología —«el texto 2 dirá que es basura»— ya no
+ *   señala a una sola opción: reparte entre C y D, y B y A también son explicaciones
+ *   mundanas. No queda ninguna que sea «la respuesta de examen».
+ * - **Cada distractora muere por una cláusula propia**, ninguna compartida: A por la forma
+ *   del hoyo («wider at the top than any of the pots»), B por el estado de las aristas
+ *   («rounded and worn … before burial»), C por el reparto de fechas («the lowest band
+ *   would hold the oldest; instead every band holds the same two hundred years»).
+ * - **La clave se sostiene sobre dos hechos, no sobre un paso de razonamiento**: los
+ *   fragmentos de un mismo jarro en la banda más baja y en la más alta, y el mismo abanico
+ *   de dos siglos dentro de cada banda.
+ *
+ * Medido, no estimado: opciones 157 · 156 · 156 · 157, con la clave en 157 —empata en el
+ * extremo largo, así que no es «la más larga» a efectos de la puerta 2, y el corto lo
+ * ocupan dos distractoras—. Solape léxico con los dos textos: A 10, B 8, C 8, **clave 9**;
+ * ni el máximo ni el mínimo, y contar coincidencias lleva a A. Estímulo de 861 caracteres,
+ * 143,5 palabras-SAT, dentro de 25-150.
+ *
+ * **Efecto secundario que conviene apuntar: se deshace el racimo de pintores.** La sección
+ * «q08 y el racimo de pintores» de arriba queda **histórica**: el ítem que describe ya no
+ * existe. Al salir el estudio de Vasco, `painter`, `canvases`, `studio` y `unfinished`
+ * desaparecen de este bloque y con ellos la colisión literal con el distractor B de q11.
+ * Además la arqueología no aparece en ningún otro ítem de los dos módulos (comprobado por
+ * búsqueda sobre los ocho bloques), así que el tema nuevo no crea otro racimo.
+ *
+ * **Dificultades reetiquetadas.** Estaban declaradas a ojo y el calibrador las midió. Se
+ * copia la medición, no la intención:
+ *
+ *     id    declarado antes   medido   ahora   por qué
+ *     q02        1              7        1     sin cambios
+ *     q01        1              8        2     medido por encima de su etiqueta
+ *     q03        2             13        2     ver abajo
+ *     q04        2             12        3
+ *     q07        2             12        3
+ *     q06        1             13        3
+ *     q05        1             14        3     ver abajo
+ *     q08        3              —        3     ítem nuevo; la fila del plan dice 3
+ *
+ * **Los dos juicios propios, dichos en voz alta.** El encargo pedía q03 → 3 y q05 → 3
+ * sobre la medición *anterior* al recorte de sus pasajes:
+ *
+ * - **q03 se queda en 2.** El recorte se lleva por delante lo que lo hacía caro: el pasaje
+ *   era casi todo el ítem, porque el abanico son cuatro palabras sueltas. Con la oración
+ *   más larga a menos de la mitad y el referente del hueco explícito, lo estimo en torno a
+ *   10-11, o sea banda media. Es una **estimación mía y hay que volver a medirla**: si el
+ *   calibrador lo devuelve en 12 o más, se etiqueta 3 y la curva del grupo sigue válida
+ *   (1 · 2 · 3 · 3 también es creciente).
+ * - **q05 se queda en 3**, aunque su pasaje también bajó. Lo que pesa en ese ítem no es el
+ *   texto: son cuatro opciones de 221-229 caracteres que comparten dos tercios y solo se
+ *   distinguen por el cierre. Eso es intocable por la regla de esta ronda, así que el ítem
+ *   sigue siendo difícil por más que el pasaje respire. Etiquetarlo 1 era la mentira.
+ *
+ * Curva declarada en el orden nuevo: **1 · 2 · 2 · 3 | 3 · 3 · 3 | 3**, creciente dentro
+ * de cada grupo de tipo, que es lo que mira la puerta 9.
+ *
+ * **Lo que este bloque ya no puede arreglar solo.** Reetiquetar con honradez deja el módulo
+ * declarando cinco difíciles solo en CS, cuando el plan pide tres en los 27. El desajuste
+ * no se cierra con etiquetas: o se baja T en los otros tres bloques como se ha bajado aquí,
+ * o el plan revisa sus cifras. Queda dicho para que no se resuelva bajando etiquetas.
+ *
+ * Por **R2** vuelven enteros a la cola de auditoría **q03, q05 y q08**, y la ciega se
+ * repite sobre las opciones de q08, que son nuevas. Las de q03 y q05 no han cambiado ni un
+ * carácter, así que su ciega anterior sigue valiendo.
  */
 
 export const items: MCQQuestion[] = [
-  {
-    id: 'q01',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      "A planet crossing in front of its star blocks a sliver of the star's light, and a telescope watching for years can catch the dip. The dip is small — for a planet the size of Earth, about one part in ten thousand — and the star itself is not steady. Cooler patches on its surface turn into view and out again, dimming it by as much or more, on a schedule of their own. That wandering ______ the transit: the dip is still there in the record, unchanged in depth and still arriving on its own fixed cycle, but it no longer stands out from everything else the star is doing.",
-    text: 'Which choice completes the text with the most logical and precise word or phrase?',
-    options: [
-      'reverses',
-      'obscures',
-      'explains',
-      'amplifies',
-    ],
-    answer: 1,
-  },
   {
     id: 'q02',
     type: 'mcq',
@@ -431,11 +584,26 @@ export const items: MCQQuestion[] = [
     answer: 2,
   },
   {
+    id: 'q01',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      "A planet crossing in front of its star blocks a sliver of the star's light, and a telescope watching for years can catch the dip. The dip is small — for a planet the size of Earth, about one part in ten thousand — and the star itself is not steady. Cooler patches on its surface turn into view and out again, dimming it by as much or more, on a schedule of their own. That wandering ______ the transit: the dip is still there in the record, unchanged in depth and still arriving on its own fixed cycle, but it no longer stands out from everything else the star is doing.",
+    text: 'Which choice completes the text with the most logical and precise word or phrase?',
+    options: [
+      'reverses',
+      'obscures',
+      'explains',
+      'amplifies',
+    ],
+    answer: 1,
+  },
+  {
     id: 'q03',
     type: 'mcq',
     part: 1,
     stimulus:
-      "Every translator of the Persian ghazal meets the same knot. The form turns on a refrain: one word closes every two-line couplet, and in the Persian that word moves as the poem goes — a door at the end of one couplet, a decision at the end of another, a departure at the end of the last. Much of the poem's motion comes from those turns. No single English word holds all three senses, so the translator settles on one and repeats it at the close of every couplet, on time and in the place the form requires, saying each time exactly what it said before. Whatever else such a version gets right, it ______ the refrain.",
+      "Translators of the Persian ghazal all meet the same problem. The form turns on a refrain: one word closes every two-line couplet. In the Persian, that word moves as the poem goes. It is a door in one couplet, a decision in the next, a departure in the last. Much of the poem's motion comes from those turns. No single English word holds all three senses, so the translator settles on one. The English word comes back on time and in the place the form requires, saying each time exactly what it said before. Whatever else the translation gets right, it ______ the refrain.",
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'generalizes',
@@ -461,19 +629,19 @@ export const items: MCQQuestion[] = [
     answer: 0,
   },
   {
-    id: 'q05',
+    id: 'q07',
     type: 'mcq',
     part: 1,
     stimulus:
-      'For most of the twentieth century the temperature of the ocean below the surface was measured from ships, which meant it was measured where ships go, in the seasons when the weather lets them. Since 2000 most of the work has been done by drifting floats. A float sinks to about a kilometer and drifts there for nine days; on the tenth it sinks to two kilometers and then rises to the surface, taking readings on the way up, and radios them to a satellite before sinking again. Several thousand are now at sea, and they report from stretches of the Southern Ocean that no research vessel visits in winter. The record they have built is not longer than the old one. It is more evenly spread.',
-    text: 'Which choice best describes the overall structure of the text?',
+      'Recordings of a Baroque concerto made in 1955 and in 1995 hardly sound like the same piece, and the later ones are usually called more authentic: strings of gut instead of steel, smaller groups, little vibrato, tempos taken from treatises written at the time. What that word hides is that the treatises were written to correct players, not to describe them. A manual that tells organists to keep strict time is evidence that organists were not keeping strict time. A performance built on such advice may be reproducing what one irritated writer wished he heard, and not what anyone in 1720 actually played.',
+    text: 'Which choice best states the main purpose of the text?',
     options: [
-      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by comparing how many readings each of the two methods has produced and how deep each one reached.',
-      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by granting that the float record covers no more years than the old one and calling it better spread.',
-      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by admitting that both methods leave the same waters unmeasured and that winter is when the gap widens.',
-      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by conceding that the float record is still too short to show a trend and saying how much longer it needs.',
+      'To question what written rules can prove about the practice they were meant to fix.',
+      'To document a shift in the way a body of music has been performed and recorded.',
+      'To defend a performance tradition against the treatises now being used to judge it.',
+      'To explain how performers recover practices for which no recordings survive at all.',
     ],
-    answer: 1,
+    answer: 0,
   },
   {
     id: 'q06',
@@ -491,57 +659,38 @@ export const items: MCQQuestion[] = [
     answer: 2,
   },
   {
-    id: 'q07',
+    id: 'q05',
     type: 'mcq',
     part: 1,
     stimulus:
-      'Recordings of a Baroque concerto made in 1955 and in 1995 hardly sound like the same piece, and the later ones are usually called more authentic: strings of gut instead of steel, smaller groups, little vibrato, tempos taken from treatises written at the time. What that word hides is that the treatises were written to correct players, not to describe them. A manual that tells organists to keep strict time is evidence that organists were not keeping strict time. A performance built on such advice may be reproducing what one irritated writer wished he heard, and not what anyone in 1720 actually played.',
-    text: 'Which choice best states the main purpose of the text?',
+      'For most of the twentieth century the temperature of the ocean below the surface was measured from ships. That meant it was measured where ships go, in the seasons when the weather lets them. Since 2000 most of the work has been done by drifting floats. A float sinks to about a kilometer and drifts there for nine days. On the tenth day it sinks to two kilometers. Then it rises to the surface, taking readings on the way up, and radios them to a satellite before sinking again. Several thousand are now at sea. They report from stretches of the Southern Ocean that no research vessel visits in winter. The record they have built is not longer than the old one. It is more evenly spread.',
+    text: 'Which choice best describes the overall structure of the text?',
     options: [
-      'To question what written rules can prove about the practice they were meant to fix.',
-      'To document a shift in the way a body of music has been performed and recorded.',
-      'To defend a performance tradition against the treatises now being used to judge it.',
-      'To explain how performers recover practices for which no recordings survive at all.',
+      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by comparing how many readings each of the two methods has produced and how deep each one reached.',
+      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by granting that the float record covers no more years than the old one and calling it better spread.',
+      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by admitting that both methods leave the same waters unmeasured and that winter is when the gap widens.',
+      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by conceding that the float record is still too short to show a trend and saying how much longer it needs.',
     ],
-    answer: 0,
+    answer: 1,
   },
   {
     id: 'q08',
     type: 'mcq',
     part: 1,
     stimulus:
-      "Text 1\n\nThe three late canvases left in Aurelio Vasco's studio are filed as unfinished, and they are the best evidence we have of how he worked. The under-drawing shows through; the sky is laid in and the figures are not; whole passages stop at the outline. Read side by side they show a painter building a picture from the back forward, and they let us watch a method the finished works, sealed under varnish, hide completely.\n\nText 2\n\nVasco exhibited two of the three in his lifetime, priced them as pictures, and sold one. He varnished all three himself. Whatever we are looking at, it is not work interrupted: a painter who prices, varnishes, and sells a canvas has declared it done. The bare outlines in the lower half are not a stage on the way to something else — not in the two that hung on a wall, and not in the one that never did.",
-    text: "Based on the texts, how would the author of Text 2 most likely respond to Text 1's account of the three late canvases?",
+      'Text 1\n\nPit 12 at Cwm Brys held the pieces of about forty pots, lying in four bands with pale clean soil between them. Not one pot was whole. This is not a rubbish hole. The vessels were smashed and set down in stages. The pale soil between the bands is the time that passed between one visit and the next. The pit records the closing of a settlement.\n\nText 2\n\nThe pit is a broad bowl, wider at the top than any of the pots: nothing had to be broken to go in. The broken edges are rounded and worn, the way pieces go when they are walked on for years before burial. Parts of one jar came out of the lowest band and the highest. Had the pots gone in as they broke, the lowest band would hold the oldest; instead every band holds the same two hundred years of styles. Someone emptied an old heap of household waste into a disused hole, and did it four times over.',
+    text: "Based on the texts, how would the author of Text 2 most likely respond to Text 1's account of Pit 12?",
     options: [
-      'By granting that the canvases are bare in places but arguing that two of the three were finished and one was not.',
-      'By granting that the canvases are bare in places but arguing that a later cleaning, not Vasco, stripped them.',
-      'By granting that the canvases are bare in places but arguing that all three are studies and not finished pictures.',
-      'By granting that the canvases are bare in places but arguing that Vasco let them go in that state on purpose.',
+      'By granting that the pit holds four bands of broken pottery but arguing that each band is a batch of pots smashed at the mouth so that they would go down it.',
+      'By granting that the pit holds four bands of broken pottery but arguing that each band is a layer in which pots left whole were crushed by the weight above.',
+      "By granting that the pit holds four bands of broken pottery but arguing that each band is a few years' worth of pots dropped in singly as they broke in use.",
+      'By granting that the pit holds four bands of broken pottery but arguing that each band is one cartload out of a single long-standing pile of household waste.',
     ],
     answer: 3,
   },
 ]
 
 export const meta: SatItemMeta[] = [
-  {
-    id: 'q01',
-    domain: 'CS',
-    tipo: 'words-in-context',
-    dificultad: 1,
-    tema: 'ciencia',
-    razones: {
-      A:
-        'El estudiante que elige esta lee «dimming it by as much or more» y entiende que la variación de la estrella le da la vuelta al bache: si las manchas oscurecen tanto o más, la señal quedaría anulada o invertida. El texto lo desmiente dentro de la misma oración del hueco, donde el bache sigue «unchanged in depth». Lo que cambia no es el tránsito, es lo que hay alrededor.',
-      B:
-        'Correcta: la oración del hueco lo dice por partes. El bache «is still there in the record, unchanged in depth and still arriving on its own fixed cycle» —nada lo altera ni lo suprime— «but it no longer stands out from everything else the star is doing». Una señal que se conserva entera y deja de distinguirse del fondo queda oscurecida —tapada por lo que la estrella hace por su cuenta—, no alterada: el verbo describe lo que le pasa a la vista del bache, no al bache.',
-      C:
-        'Toma las manchas por una explicación alternativa del bache: si la estrella se apaga sola, el planeta sobra. El camino existe —las manchas imitan tránsitos de verdad—, pero el texto mantiene las dos cosas separadas y con relojes distintos: las manchas van «on a schedule of their own» y el tránsito sigue llegando «on its own fixed cycle». Ninguna da cuenta de la otra.',
-      D:
-        'Suma las dos caídas de brillo: si el planeta quita luz y las manchas también, el bache se haría más hondo. El texto cierra esa puerta con dos palabras, «unchanged in depth». Y hay una segunda razón: un bache amplificado se vería mejor, no peor, justo al revés de lo que dice el final de la oración.',
-    },
-    fuenteHecho:
-      'Hecho libre de astronomía de exoplanetas: la actividad estelar como ruido en la fotometría de tránsitos, y la profundidad de ~1 parte en 10.000 para un planeta del tamaño de la Tierra. Estrella, ejemplo y redacción originales.',
-  },
   {
     id: 'q02',
     domain: 'CS',
@@ -559,6 +708,25 @@ export const meta: SatItemMeta[] = [
         'Cae quien recuerda la primera línea —«did not ask him where he had been»— y lee el interrogatorio a la nieta como el rodeo de quien va detrás de algo. Para ir detrás de algo hay que escuchar lo que contestan, y el texto dice que oye media respuesta y que repite una que ya le habían respondido: no hay blanco al que apuntar.',
     },
     fuenteHecho: 'Ficción original; ningún hecho real implicado.',
+  },
+  {
+    id: 'q01',
+    domain: 'CS',
+    tipo: 'words-in-context',
+    dificultad: 2,
+    tema: 'ciencia',
+    razones: {
+      A:
+        'El estudiante que elige esta lee «dimming it by as much or more» y entiende que la variación de la estrella le da la vuelta al bache: si las manchas oscurecen tanto o más, la señal quedaría anulada o invertida. El texto lo desmiente dentro de la misma oración del hueco, donde el bache sigue «unchanged in depth». Lo que cambia no es el tránsito, es lo que hay alrededor.',
+      B:
+        'Correcta: la oración del hueco lo dice por partes. El bache «is still there in the record, unchanged in depth and still arriving on its own fixed cycle» —nada lo altera ni lo suprime— «but it no longer stands out from everything else the star is doing». Una señal que se conserva entera y deja de distinguirse del fondo queda oscurecida —tapada por lo que la estrella hace por su cuenta—, no alterada: el verbo describe lo que le pasa a la vista del bache, no al bache.',
+      C:
+        'Toma las manchas por una explicación alternativa del bache: si la estrella se apaga sola, el planeta sobra. El camino existe —las manchas imitan tránsitos de verdad—, pero el texto mantiene las dos cosas separadas y con relojes distintos: las manchas van «on a schedule of their own» y el tránsito sigue llegando «on its own fixed cycle». Ninguna da cuenta de la otra.',
+      D:
+        'Suma las dos caídas de brillo: si el planeta quita luz y las manchas también, el bache se haría más hondo. El texto cierra esa puerta con dos palabras, «unchanged in depth». Y hay una segunda razón: un bache amplificado se vería mejor, no peor, justo al revés de lo que dice el final de la oración.',
+    },
+    fuenteHecho:
+      'Hecho libre de astronomía de exoplanetas: la actividad estelar como ruido en la fotometría de tránsitos, y la profundidad de ~1 parte en 10.000 para un planeta del tamaño de la Tierra. Estrella, ejemplo y redacción originales.',
   },
   {
     id: 'q03',
@@ -583,7 +751,7 @@ export const meta: SatItemMeta[] = [
     id: 'q04',
     domain: 'CS',
     tipo: 'words-in-context',
-    dificultad: 2,
+    dificultad: 3,
     tema: 'historia',
     razones: {
       A:
@@ -599,47 +767,10 @@ export const meta: SatItemMeta[] = [
       'Ficción sobre un hecho libre de historia industrial: rasgos que luego se dieron por característicos de una generación de fábricas —armazón de hierro, ventanas de vano completo, muros exteriores que no cargan— aparecieron antes en edificios menores y utilitarios, y las pólizas de incendios son una de las pocas fuentes que los fechan. Thomas Ward, el almacén, la fecha de 1836 y los dieciocho años son inventados; no se nombra ninguna fábrica real ni se atribuye a nadie la primera vez.',
   },
   {
-    id: 'q05',
-    domain: 'CS',
-    tipo: 'text-structure-purpose',
-    dificultad: 1,
-    tema: 'ciencia',
-    razones: {
-      A:
-        'Es un cierre perfectamente posible —echar cuentas: tantas mediciones de un método, tantas del otro, y hasta dónde llegó cada uno— pero no es el de este texto. Aquí no hay una sola cifra de mediciones: «several thousand» cuenta flotadores en el mar, no lecturas tomadas. Y la única profundidad que aparece es la del flotador, un kilómetro y dos kilómetros; del barco no se dice cuánto medía hacia abajo, de modo que no hay dos profundidades que comparar. Las dos frases finales comparan otra cosa: cuántos años cubre cada registro y cómo se reparten.',
-      B:
-        'Correcta: el texto va en tres movimientos y el tercero está en las dos últimas frases. Primero por qué el barco solo medía en parte del mar y en parte del año —«where ships go, in the seasons when the weather lets them»—. Después un flotador entero, paso a paso: nueve días a un kilómetro, al décimo baja a dos, sube midiendo y transmite por satélite. Y cierra concediendo la comparación que pierde —«The record they have built is not longer than the old one»— para quedarse con la que gana: «It is more evenly spread».',
-      C:
-        'Es un cierre impecable para otro texto —el que termina reconociendo que la laguna sigue abierta para los dos métodos y que en invierno se ensancha— y este texto lo dice justo al revés. La frase que lo tienta está entera dos líneas antes: los flotadores «report from stretches of the Southern Ocean that no research vessel visits in winter», es decir, informan justo de donde el barco no iba. El invierno se nombra como el hueco que se cerró, no como uno compartido, y en el cierre no vuelve a aparecer ninguna agua sin medir.',
-      D:
-        'Un texto que cerrara diciendo que la serie es todavía corta y cuántos años le faltan estaría bien cerrado; este no cierra así. «The record they have built is not longer than the old one» no denuncia una carencia: concede algo para poder afirmar lo siguiente, «It is more evenly spread», que es la frase con la que el párrafo se queda. En todo el texto no hay un solo plazo, umbral ni tiempo verbal de futuro.',
-    },
-    fuenteHecho:
-      'Hecho real y público: la red internacional de flotadores perfiladores funciona desde 2000 con ciclos de unos diez días —deriva a unos 1.000 m durante nueve días, descenso a 2.000 m y perfil tomado durante el ascenso—, transmite por satélite y son varios miles. La primera versión de este texto decía que el flotador «sinks to about two kilometers, drifts there for ten days» y que lo medido era «the deep ocean»: las dos cosas son falsas —la cobertura es la de los 2.000 m superiores— y un simulacro no puede enseñar un dato falso ni de paso. El programa no se nombra; la redacción es original.',
-  },
-  {
-    id: 'q06',
-    domain: 'CS',
-    tipo: 'text-structure-purpose',
-    dificultad: 1,
-    tema: 'literatura',
-    razones: {
-      A:
-        'La función es de las que se usan a menudo y bien —presentar a quien va a juzgar antes de que juzgue—, pero pide una frase colocada en otro sitio. Aquí el juicio ya está dado cuatro líneas antes, en la segunda oración del texto: «Within a week Sofía had decided he was a widower». La frase examinada llega después de esa conclusión y después de las tres pruebas con que se sostiene, así que no presenta a nadie a tiempo de nada: llega cuando el lector ya sabe qué decidió Sofía y necesita saber por qué.',
-      B:
-        'Sería exacta en un relato contado desde dentro de Sofía, donde este inciso fuera la única vez que la voz se aparta y la mira desde fuera. Este no lo es en ninguna línea. La narración va por fuera desde el principio —«Sofía had decided», «a room she was fairly sure was empty»— y sigue por fuera después, hasta el juicio final sobre lo que sintió. Si el punto de vista nunca estuvo dentro, esta frase no puede ser la salida.',
-      C:
-        'Correcta: la frase llega justo después de la conclusión y de las tres pruebas con que Sofía la sostiene —la bolsa de red, la hora fija, las buenas noches a un cuarto que ella cree vacío— y dice de dónde salió el procedimiento. Tener diecisiete años y haber leído «a great many novels» es lo que convierte tres detalles sueltos en la historia de un viudo. Por eso lo que se rompe en marzo es un relato y no una cuenta: Sofía queda «less embarrassed than disappointed».',
-      D:
-        'Ese contraste se monta así en muchos textos: dos edades enfrentadas y un final que descansa en la distancia entre ellas. Para que fuera este, la diferencia tendría que volver a usarse, y no vuelve. Los cincuenta años y el abrigo gris del vecino no se cruzan con los diecisiete de Sofía en ninguna línea posterior, y la última frase no gira sobre la edad de nadie: gira sobre lo que le pasa a su historia cuando la mujer llega en marzo con dos maletas.',
-    },
-    fuenteHecho: 'Ficción original; ningún hecho real implicado.',
-  },
-  {
     id: 'q07',
     domain: 'CS',
     tipo: 'text-structure-purpose',
-    dificultad: 2,
+    dificultad: 3,
     tema: 'humanidades',
     razones: {
       A:
@@ -655,6 +786,43 @@ export const meta: SatItemMeta[] = [
       'Debate real de la interpretación históricamente informada: los tratados del siglo XVIII son prescriptivos y por eso mal testigo de la práctica corriente. Grabaciones, fechas y el ejemplo del organista son inventados.',
   },
   {
+    id: 'q06',
+    domain: 'CS',
+    tipo: 'text-structure-purpose',
+    dificultad: 3,
+    tema: 'literatura',
+    razones: {
+      A:
+        'La función es de las que se usan a menudo y bien —presentar a quien va a juzgar antes de que juzgue—, pero pide una frase colocada en otro sitio. Aquí el juicio ya está dado cuatro líneas antes, en la segunda oración del texto: «Within a week Sofía had decided he was a widower». La frase examinada llega después de esa conclusión y después de las tres pruebas con que se sostiene, así que no presenta a nadie a tiempo de nada: llega cuando el lector ya sabe qué decidió Sofía y necesita saber por qué.',
+      B:
+        'Sería exacta en un relato contado desde dentro de Sofía, donde este inciso fuera la única vez que la voz se aparta y la mira desde fuera. Este no lo es en ninguna línea. La narración va por fuera desde el principio —«Sofía had decided», «a room she was fairly sure was empty»— y sigue por fuera después, hasta el juicio final sobre lo que sintió. Si el punto de vista nunca estuvo dentro, esta frase no puede ser la salida.',
+      C:
+        'Correcta: la frase llega justo después de la conclusión y de las tres pruebas con que Sofía la sostiene —la bolsa de red, la hora fija, las buenas noches a un cuarto que ella cree vacío— y dice de dónde salió el procedimiento. Tener diecisiete años y haber leído «a great many novels» es lo que convierte tres detalles sueltos en la historia de un viudo. Por eso lo que se rompe en marzo es un relato y no una cuenta: Sofía queda «less embarrassed than disappointed».',
+      D:
+        'Ese contraste se monta así en muchos textos: dos edades enfrentadas y un final que descansa en la distancia entre ellas. Para que fuera este, la diferencia tendría que volver a usarse, y no vuelve. Los cincuenta años y el abrigo gris del vecino no se cruzan con los diecisiete de Sofía en ninguna línea posterior, y la última frase no gira sobre la edad de nadie: gira sobre lo que le pasa a su historia cuando la mujer llega en marzo con dos maletas.',
+    },
+    fuenteHecho: 'Ficción original; ningún hecho real implicado.',
+  },
+  {
+    id: 'q05',
+    domain: 'CS',
+    tipo: 'text-structure-purpose',
+    dificultad: 3,
+    tema: 'ciencia',
+    razones: {
+      A:
+        'Es un cierre perfectamente posible —echar cuentas: tantas mediciones de un método, tantas del otro, y hasta dónde llegó cada uno— pero no es el de este texto. Aquí no hay una sola cifra de mediciones: «several thousand» cuenta flotadores en el mar, no lecturas tomadas. Y la única profundidad que aparece es la del flotador, un kilómetro y dos kilómetros; del barco no se dice cuánto medía hacia abajo, de modo que no hay dos profundidades que comparar. Las dos frases finales comparan otra cosa: cuántos años cubre cada registro y cómo se reparten.',
+      B:
+        'Correcta: el texto va en tres movimientos y el tercero está en las dos últimas frases. Primero por qué el barco solo medía en parte del mar y en parte del año —«where ships go, in the seasons when the weather lets them»—. Después un flotador entero, paso a paso: nueve días a un kilómetro, al décimo baja a dos, sube midiendo y transmite por satélite. Y cierra concediendo la comparación que pierde —«The record they have built is not longer than the old one»— para quedarse con la que gana: «It is more evenly spread».',
+      C:
+        'Es un cierre impecable para otro texto —el que termina reconociendo que la laguna sigue abierta para los dos métodos y que en invierno se ensancha— y este texto lo dice justo al revés. La frase que lo tienta está entera dos líneas antes: los flotadores «report from stretches of the Southern Ocean that no research vessel visits in winter», es decir, informan justo de donde el barco no iba. El invierno se nombra como el hueco que se cerró, no como uno compartido, y en el cierre no vuelve a aparecer ninguna agua sin medir.',
+      D:
+        'Un texto que cerrara diciendo que la serie es todavía corta y cuántos años le faltan estaría bien cerrado; este no cierra así. «The record they have built is not longer than the old one» no denuncia una carencia: concede algo para poder afirmar lo siguiente, «It is more evenly spread», que es la frase con la que el párrafo se queda. En todo el texto no hay un solo plazo, umbral ni tiempo verbal de futuro.',
+    },
+    fuenteHecho:
+      'Hecho real y público: la red internacional de flotadores perfiladores funciona desde 2000 con ciclos de unos diez días —deriva a unos 1.000 m durante nueve días, descenso a 2.000 m y perfil tomado durante el ascenso—, transmite por satélite y son varios miles. La primera versión de este texto decía que el flotador «sinks to about two kilometers, drifts there for ten days» y que lo medido era «the deep ocean»: las dos cosas son falsas —la cobertura es la de los 2.000 m superiores— y un simulacro no puede enseñar un dato falso ni de paso. El programa no se nombra; la redacción es original.',
+  },
+  {
     id: 'q08',
     domain: 'CS',
     tipo: 'cross-text-connections',
@@ -662,15 +830,15 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'El estudiante que elige esta es el que cuenta: el texto 2 dice «exhibited two of the three», de modo que uno se quedó en el estudio sin colgarse nunca, y él parte el grupo por esa cuenta —dos vendibles y por tanto acabados, uno que sigue siendo lo que decía el texto 1—. Es una mala lectura y no una invención —la cuenta está escrita—, y además tienta porque el principio del texto 2 nombra tres actos, «prices, varnishes, and sells», y al tercer lienzo solo le consta el segundo. Lo que la deshace es que el texto 2 no reparte: barnizó «all three himself» y cierra nombrando los dos grupos, «not in the two that hung on a wall, and not in the one that never did». La única excepción concebible queda excluida con su nombre, y esa cláusula final es la que impide que el ítem tenga dos claves.',
+        'El estudiante que elige esta conserva del texto 1 lo que el texto 1 da por supuesto —que alguien rompió las vasijas a propósito— y solo le cambia el motivo: no una ceremonia, sino la boca del pozo. Es un camino corriente y bien fundado: si algo entra roto en un agujero, lo primero que se piensa es que no cabía entero. La primera línea del texto 2 lo cierra midiendo el agujero: «The pit is a broad bowl, wider at the top than any of the pots: nothing had to be broken to go in». No hubo cuello que salvar, así que la rotura no la explica la entrada.',
       B:
-        'El estudiante que elige esta es el que explica lo que ve por algo que le pasó al cuadro después: contornos desnudos y dibujo subyacente a la vista son, para él, pintura perdida —una limpieza dura, un restaurador con demasiado disolvente— y no pintura que nunca llegó a ponerse. Es el reflejo corriente ante un cuadro incompleto, y por eso la opción tiene quien la elija. El texto 2 la desmiente por dos sitios: el único tratamiento de superficie que menciona lo hizo el pintor, «He varnished all three himself», y esa hipótesis le costaría el argumento entero, que vive de que las decisiones sobre estos lienzos sean de Vasco y de nadie más.',
+        'El estudiante que elige esta explica lo roto por lo que le pasó al pozo después de cerrarse: metros de tierra encima aplastan lo que haya debajo, y las vasijas habrían entrado enteras. Es el reflejo de quien piensa en el peso y no en el uso. Lo que lo deshace es el estado de las aristas: «The broken edges are rounded and worn, the way pieces go when they are walked on for years before burial». Una vasija reventada bajo tierra deja filos frescos y las piezas juntas; estas están gastadas de pisarlas, de modo que se rompieron al aire libre y mucho antes de entrar.',
       C:
-        'El estudiante que elige esta se queda con el inventario del texto 1 —dibujo subyacente a la vista, cielo puesto, figuras solo apuntadas— y concluye que eso no es un cuadro a medias sino otra clase de objeto: un estudio, que está entero siendo lo que es. Tiene un tirón añadido, y es que se apoya en la frase del texto 2 que más se parece a darle la razón, «Whatever we are looking at, it is not work interrupted». El texto 2 la cierra por dos sitios. Primero por el uso: los precia como cuadros y vende uno, «priced them as pictures, and sold one», y quien vende un estudio no lo vende por cuadro. Y después por la frase final, que niega justo lo que un estudio es: los contornos «are not a stage on the way to something else». Quien elige esta acierta en que no están interrumpidos y se equivoca en qué son.',
+        'El estudiante que elige esta ya ha visto que el texto 2 lee desechos donde el texto 1 lee ceremonia, y se queda con la versión lenta de esa lectura: se tira lo que se rompe, pieza a pieza, y el pozo se llena solo a lo largo de la vida del poblado. La opción existe porque esa es la manera normal en que se llena un hoyo de basura. El texto 2 la descarta con la única prueba que separa lo lento de lo repentino: «Had the pots gone in as they broke, the lowest band would hold the oldest; instead every band holds the same two hundred years of styles». Un relleno gradual ordena las fechas de abajo arriba, y aquí no están ordenadas.',
       D:
-        'Correcta: el texto 2 concede lo que se ve —«The bare outlines in the lower half»— y le cambia el estatuto con hechos del propio cuadro: Vasco expuso dos, los preció como cuadros, vendió uno y barnizó los tres. «A painter who prices, varnishes, and sells a canvas has declared it done», así que esos contornos «are not a stage on the way to something else», y la frase se cierra alcanzando a los tres, «not in the two that hung on a wall, and not in the one that never did». Un lienzo dado por terminado no registra el proceso: registra hasta dónde quiso llegar.',
+        'Correcta: el texto 2 no discute las cuatro bandas, discute qué son. Dos hechos las explican sin ceremonia de por medio. El primero, que la mezcla es anterior a la entrada: «Parts of one jar came out of the lowest band and the highest», cosa imposible si cada banda fuera una visita distinta. El segundo, que cada banda repite el mismo abanico de doscientos años de estilos, que es lo que contiene un montón viejo de desechos y no lo que deja una secuencia de actos separados en el tiempo. El cierre lo nombra: «Someone emptied an old heap of household waste into a disused hole, and did it four times over». Cuatro descargas, no cuatro visitas: las bandas cuentan las veces que se vació la carretilla.',
     },
     fuenteHecho:
-      'Ficción original: Aurelio Vasco no existe. El argumento —firmar, barnizar y vender como declaración de obra acabada— está construido para el ítem sobre una discusión corriente en historia del arte, sin seguir ningún caso concreto.',
+      'Debate real de la arqueología prehistórica europea: los depósitos de cerámica rota leídos como acto ritual —la llamada «deposición estructurada»— frente a su lectura como vertido corriente de desechos, con el desgaste de las aristas, las uniones de fragmentos entre capas y el reparto de fechas dentro de cada capa como pruebas que se usan de un lado y de otro. El yacimiento de Cwm Brys, el pozo 12, las cuarenta vasijas y las cuatro bandas son inventados; no se sigue ningún caso concreto ni se cita ninguna excavación real.',
   },
 ]
