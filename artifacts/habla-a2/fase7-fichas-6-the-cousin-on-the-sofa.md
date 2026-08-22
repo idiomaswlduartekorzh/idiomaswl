@@ -70,7 +70,7 @@ concordancia sobre ninguno de los dos en ninguna de las dos fichas ni en la cart
 
 **Where you are** · It is Tuesday, August 18, 8:20 p.m. You are in the kitchen. Cris is at the living room table, working. You just finished the call with your aunt.
 
-**You want** · You need a bed for Iván for ten nights, and you need a plan tonight, before you call your aunt back.
+**You want** · You need a bed for Iván for ten nights, and a plan tonight, before you call your aunt back.
 
 **You can't**
 1. You can't say why Iván is coming. Your family agreed to say nothing until there is an answer. Outside the family you give the same version: ten days of vacation.
@@ -144,12 +144,12 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 **You want** · You want the whole morning of Monday the 24th at that table, and you want Dani to sign the lease before September 1.
 
 **You can't**
-1. You can't do the interview in your room. Don't explain why unless they ask. From outside it only sounds like an excuse. You need that table or you lose the call.
+1. You can't do the interview in your room. Don't explain why unless they ask. From outside it sounds like an excuse. You need that table or you lose the call.
 2. You can't say no to the visit. You never make the visit the problem, and if you say no, you are the bad guy at breakfast.
 3. You can't put everything on the table at once. One thing per turn, and the lease last. Say it early and it sounds like payment for the visit.
 
 **Only you know**
-- Dani does not know three things yet. One per turn, lease last: your interview on Monday the 24th, your mom's ticket for Saturday the 29th, and the lease.
+- Dani does not know three things yet: your interview on Monday the 24th, your mom's ticket for Saturday the 29th, and the lease.
 - Dani thinks you work in your room.
 - You have three reasons for the living room, and you don't give them first. You know two things about that window: a weak signal, and, from the bars downstairs, a truck unloading at nine in the morning. If they ask, tell all of it.
 
@@ -298,8 +298,8 @@ Aquí no se declara ninguna cifra a mano: la de abajo sale del script.
 
 | ficha | prosa (script) | tope | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| **ROLE A — Dani** | 444 | 450 | 10 filas (≤10) | 9 (8-10) | 8 (6-9) |
-| **ROLE B — Cris** | 448 | 450 | 10 filas (≤10) | 10 (8-10) | 9 (6-9) |
+| **ROLE A — Dani** | 449 | 450 | 10 filas (≤10) | 9 (8-10) | 8 (6-9) |
+| **ROLE B — Cris** | 449 | 450 | 10 filas (≤10) | 10 (8-10) | 9 (6-9) |
 
 A quedó pegada al techo en la cuarta ronda, y era inevitable: §11 dejó de pedir telegramas fuera de las tablas
 y las cinco piezas de prosa se reescribieron como oraciones completas. Lo que las mantiene bajo
@@ -530,3 +530,24 @@ fichas o dentro de una tabla.
 
 **Lo que esto NO arregla:** las nueve formas cerradas que `fase11-naturalidad` le cuenta a esta
 ficha (puerta 4) y el andamiaje de la reacción a la carta. No son carga, y no son de escenarios.
+
+---
+
+## Recorte de prosa (22 ago 2026) — bajar del techo de §11
+
+El contador canónico medía **A 451 · B 455** contra el techo de 450: las cifras que este archivo
+declaraba (444/448) venían de antes de la pasada de carga y estaban desfasadas. Se recortó
+**solo prosa redundante**, en tres frases. No se tocó ningún dato, restricción, dato oculto,
+criterio de cierre, fila de tabla, la carta ni el cierre repartido de la pasada de carga.
+Después del recorte: **A 449 · B 449**.
+
+| # | dónde | antes | después |
+|---|---|---|---|
+| 1 | ROLE A · `You want` | `…for ten nights, and you need a plan tonight, before…` | `…for ten nights, and a plan tonight, before…` |
+| 2 | ROLE B · `Only you know` viñeta 1 | `Dani does not know three things yet. One per turn, lease last: your interview…` | `Dani does not know three things yet: your interview…` |
+| 3 | ROLE B · `You can't` 1 | `From outside it only sounds like an excuse.` | `From outside it sounds like an excuse.` |
+
+El 2 es el único recorte con volumen (5 palabras) y es redundancia literal: `One thing per turn, and
+the lease last` ya está escrito en la restricción 3 de la misma ficha, tres líneas más arriba. El
+orden y la posición del contrato siguen mandados, y la viñeta conserva las tres cosas que Dani no
+sabe con sus tres fechas.

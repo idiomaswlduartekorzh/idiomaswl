@@ -27,7 +27,7 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 
 **Where you are** · It is Monday, August 17, 7:35 a.m. The auto parts store is still shut. She called you into the office and closed the door. Two things are on the desk.
 
-**You want** · You want your August bonus safe from that paper, and you want the second set of keys.
+**You want** · You want your August bonus safe from that paper, and the second set of keys.
 
 **You can't**
 1. You can't say why your Saturday mornings are busy. You don't want the store to know about them. Say no to the day, and nothing else about it.
@@ -35,7 +35,7 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 3. You can't close this with a promise. You have promised twice. This time she needs to hear what will change, and how it will work.
 
 **Only you know**
-- You coach a kids' football school on Saturdays, from 8:00 to 12:00. Forty children, no money, and no second coach after June. You said it out loud once, two years ago, and the store talked about it for a month.
+- You coach a kids' football school on Saturdays, from 8:00 to 12:00. Forty children, no money, and no second coach after June. You said it once, two years ago, and the store talked about it for a month.
 - Your neighbor in apartment 3 goes to the same daycare every morning. She is the only reason your mornings can change. You have never asked her.
 
 **If you walk away with nothing** · She writes the warning, because it is the only paper she can still write. Your bonus goes with it, and the warehouse job and the keys go too.
@@ -107,9 +107,9 @@ Block 6: Saturday mornings are the one thing you don't explain.
 > **Formal from him, direct from you.** You call him Camilo; he says *doña Amparo*. **You start.** 6-9 turns each · 8 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Before you speak** · Put the keys and the commitment sheet on the desk, then talk. Without them, this is a complaint.
+**Before you speak** · Put the keys and the commitment sheet on the desk. Without them, this is a complaint.
 
-**Where you are** · The store you open is still shut at 7:35. You are alone at the door when the truck comes at ten past seven, and you have opened alone three Mondays.
+**Where you are** · The store you open is still shut at 7:35. You are alone at the door when the truck comes, and you have opened alone three Mondays.
 
 **You want** · You want to give him the keys today. He gives you the WHAT CHANGES line and two mornings of training first.
 
@@ -123,7 +123,7 @@ Block 6: Saturday mornings are the one thing you don't explain.
 - You have Alba, from the counter, asking for the keys too. You never taught her the truck.
 - You can give the training on two Thursdays after closing, 6:30 to 8:30, in your own unpaid time. You don't want to offer it.
 
-**If you walk away with nothing** · You open the store alone for two more years, and you get a warning of your own, with two Mondays to explain.
+**If you walk away with nothing** · You open the store alone for two more years, and you get your own warning, with two Mondays to explain.
 
 ### Facts
 

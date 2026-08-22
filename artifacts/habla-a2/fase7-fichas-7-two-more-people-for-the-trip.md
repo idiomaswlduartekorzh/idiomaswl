@@ -34,18 +34,18 @@ fichas la señalan y ninguna la copia.
 
 **Where you are** · It is Friday, 7:20 p.m. You are in the parking lot with the bags. Kevin comes down with his bag.
 
-**You want** · Kevin has to pay the 100,000, or give you a date for it tonight. And his car leaves at 8:00 with yours.
+**You want** · Kevin has to pay the 100,000, or give you a date tonight. And his car leaves at 8:00 with yours.
 
 **Your own rule** · No yes without a name and a reason.
 
 **You can't**
-1. Put money in for somebody else. You paid 600,000, and Kevin's part is missing. You can pay his part, not somebody else's. If the six pay again, you put in your part and nobody else's.
-2. Get anyone in without the list. Your reservation has six names and six ID numbers on it, and only doña Nubia can change your list.
+1. Put money in for somebody else. You paid 600,000, and Kevin's part is missing. You can pay his part, nobody else's. If the six pay again, you put in your part and nobody else's.
+2. Get anyone in without the list. Your reservation has six names and six ID numbers, and only doña Nubia can change your list.
 3. Drop Hernán to free a spot. You gave him the sixth place for his car, and taking it back costs you his four seats.
 
 **Only you know**
-- At 6:00 p.m. you watched Hernán leave his car at the mechanic's with a strange noise, and you are the one waiting for the mechanic's call at 7:00 a.m. If you tell Kevin, his car is the only car. If you say nothing, maybe you promise seats you don't have.
-- The sixth place was yours. On Wednesday you gave it to Hernán, with his car and his gas, and you never said that to Kevin.
+- At 6:00 p.m. you watched Hernán leave his car at the mechanic's with a strange noise, and the mechanic will call you at 7:00 a.m. If you tell Kevin, his car is the only car. If you say nothing, maybe you promise seats you don't have.
+- The sixth place was yours. On Wednesday you gave it to Hernán, with his car and gas, and you never told Kevin.
 - You have met Sebastián — he was on last year's trip. **You have never met Andrea.**
 
 **If you walk away with nothing** · Tomorrow six people go and five seats leave, and all five are his. And Kevin still hasn't paid.
@@ -80,7 +80,7 @@ fichas la señalan y ninguna la copia.
 | reservation | a house that is yours for two nights, because you paid | where your power comes from |
 
 ### Your toolkit
-Blocks **1** `[grants]`: he came down to you. **2**, because tomorrow you share a car. **4** `[jargon]`: the reservation words are **yours**. **5**, the 600,000, three weeks ago. **6**, not Hernán's car. **7** `[grants]`. **8**, for your own rule. Not 3.
+Blocks **1** `[grants]`: he came down to you. **2**: tomorrow you share a car. **4** `[jargon]`: the reservation words are **yours**. **5**, the 600,000, three weeks ago. **6**, not Hernán's car. **7** `[grants]`. **8**, for your own rule. Not 3.
 
 ### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
@@ -422,3 +422,32 @@ desenlace **aplazado**, datos, carta, nombres y género están intactos. Prosa d
 **Lo que esto NO arregla:** el andamiaje para reaccionar a una cifra de seis dígitos (la fuga al
 español nº 1) y el bloque denso de 241 caracteres de la puerta 10. No son carga, y no son de
 escenarios.
+
+
+---
+
+## Recorte de prosa (22 ago 2026) — solo prosa de ROLE A, y solo redundancia
+
+La pasada de carga dejó a **A en 462** con el contador canónico, 12 por encima del techo de §11.
+No se deshizo nada de esa pasada: el cierre sigue repartiendo tres líneas por cabeza, con el
+precio dentro y la prohibición de asentir. Se recortó redundancia en seis frases de la prosa de
+Valentina. **Ninguna pieza salió** —situación, objetivo, regla propia, las tres restricciones, el
+dato oculto entero, lo que se pierde y los criterios están donde estaban— y **ROLE B no se tocó**.
+Tablas, carta, exponentes y `grammarReferences` tampoco.
+
+| línea | antes | después | −palabras |
+|---|---|---|---|
+| 37 | `or give you a date for it tonight.` | `or give you a date tonight.` | 2 |
+| 42 | `You can pay his part, not somebody else's.` | `You can pay his part, nobody else's.` | 1 |
+| 43 | `…six names and six ID numbers on it, and…` | `…six names and six ID numbers, and…` | 2 |
+| 47 | `and you are the one waiting for the mechanic's call at 7:00 a.m.` | `and the mechanic will call you at 7:00 a.m.` | 4 |
+| 48 | `with his car and his gas, and you never said that to Kevin.` | `with his car and gas, and you never told Kevin.` | 3 |
+| 83 | `**2**, because tomorrow you share a car.` | `**2**: tomorrow you share a car.` | 1 |
+
+La línea 47 mantiene los dos hechos ocultos —el carro en el taller y que **la llamada de las 7:00
+a. m. es a ella**— y de paso pone la llamada en `will`, que ya era anclaje de la ficha
+(`will-future`). La 48 conserva miércoles, carro, gasolina y que Kevin nunca lo supo.
+
+**Medido después, con `node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`: ROLE A 449 ·
+ROLE B 438** (techo 450). Las cifras que declaran las pasadas anteriores en este archivo son las
+de su día, no las de hoy: la única cifra viva es la que imprime el contador.

@@ -113,7 +113,7 @@ an hour. Nobody found out who else you asked.
 > **Informal.** Same rank, same shifts, you see each other every day. **They start.** About 7 turns each · 7 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 3:40 in the afternoon. You are in the back room, tying your apron, and your shift starts in twenty minutes, with Nayibe at the other café until six.
+**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are in the back room tying your apron, with your shift twenty minutes away and Nayibe at the other café until six.
 
 **You want** · You want to help. But not by working sixteen hours, and not if this counts as your third swap.
 
@@ -170,10 +170,10 @@ You have a card to drop, and what you choose is when.
 |---|---|---|
 | another way | `How about …?` · `What if you …?` | put your own option on the table instead of saying no again |
 | asking what they need | `What exactly do you need — the … or the …?` | make them name the hours before you answer |
+| granting it | `I can do it, but only if …` | grant it with **one** condition, and hold it |
+| the bus on Sunday | `My bus leaves at …` | the hard limit, said once, with the hour in it |
 | the nine o'clock reservation | `There's a reservation for …` · `That shift is not a …` | drop the card that changes the size of the favor · warn them it weighs more than they think |
 | what saying yes costs you | `I did two swaps …` · `After the third one, no more …` | why this isn't free for you · what it actually costs |
-| what you can't move | `My bus leaves at …` | the hard limit, said once, with the hour in it |
-| your condition | `I can do it, but only if …` | grant it with **one** condition, and hold it |
 
 ### You did it if
 You dropped the forty-people breakfast when you wanted, not before. You said your condition
@@ -250,14 +250,14 @@ tope **450** (§11, 21 ago 2026).
 
 | ficha | prosa, sin tablas | tope |
 |---|---|---|
-| ROLE A | **441 palabras** | 450 |
+| ROLE A | **436 palabras** | 450 |
 | ROLE B | **443 palabras** | 450 |
 
 ## Pasada quirúrgica (22 ago 2026) — qué líneas se tocaron
 
 Solo las líneas citadas por `fase9-calcable-3.md` y `fase9-nivel-3.md`. Ninguna otra: ni prosa
 reescrita, ni secciones reordenadas, ni datos, nombres o motor tocados. Medido después con el
-contador canónico: ROLE A **441**, ROLE B **443**, techo 450.
+contador canónico: ROLE A **436**, ROLE B **443**, techo 450.
 
 | # | dónde | qué se cambió | de dónde sale |
 |---|---|---|---|

@@ -34,12 +34,12 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 **You want** · You need three things before that person leaves: a date, a checked cell number, and something for tonight.
 
 **You can't**
-1. You can't ask Dr. Restrepo anything before 5:00, and you ask her in writing — you never call.
-2. You can't say a word about another patient's appointment: not the name, and not the reason.
+1. You can't ask Dr. Restrepo anything before 5:00, and never by phone: only in writing.
+2. You can't say a word about another patient's appointment: not the name, not the reason.
 3. You can't send anyone away without a written date **and** something for tonight. At closing the administrator reads your calendar.
 
 **Only you know**
-- You have an appointment at 5:20 today, with a patient who missed twice already. You can leave that door open, but never with a name or a reason.
+- You have an appointment at 5:20 today, with a patient who missed twice. You can leave that door open, but never with a name or a reason.
 - You never ask Dr. Restrepo for favors, but today you want to ask her: you think she will say yes. That is your key.
 - Three chairs were empty this week, and the clinic counts them against you, like every patient who leaves for the corner clinic.
 
@@ -76,7 +76,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | to hold something for someone | to keep a time for one person, so nobody else takes it | Saturday at nine, while they decide |
 
 ### Your toolkit
-All eight blocks — you are the only one behind a counter. **1** `[grants]`, but not *Good morning* — at 4:20 p.m. it is **Good afternoon**. **2**, **3**. **4** `[jargon]`: *referral note*, *emergency check*, *X-ray*, yours not theirs. **5**. **6** for when they push about another patient. **7** `[grants]`, **8**.
+All eight blocks — you are the only one behind a counter. **1** `[grants]`, but not *Good morning* — at 4:20 p.m. it is **Good afternoon**. **2**, **3**. **4** `[jargon]`: *referral note*, *emergency check*, *X-ray*, yours not theirs. **5**. **6** when they push about another patient. **7** `[grants]`, **8**.
 
 ### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
@@ -102,17 +102,17 @@ They said the **day, time and branch** back to you, and you checked them on scre
 > **Formal.** Somebody else's counter, and you know nobody. Keep the distance even when it hurts: `Can you…?`, never `Hey`. **You start.** About 9 turns each · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 4:20 p.m. You left work in Girón at 3:30 and you are now in a dental clinic in Cabecera, with no appointment and your hand on your face.
+**Where you are** · It is Tuesday, 4:20 p.m. You left work in Girón at 3:30 and you are in a dental clinic in Cabecera, with no appointment and your hand on your face.
 
 **You want** · You want to see the dentist **today**. If you can't, you want a day that fits your job and something for tonight.
 
 **You can't**
-1. You can't take a weekday appointment before **8:30 a.m.** Your work in Girón starts too early, and on Thursday you start even earlier.
+1. You can't take a weekday appointment before **8:30 a.m.** Your work starts too early, and on Thursday you start even earlier.
 2. You can't come back another day and wait in line again: this is your only free afternoon.
 3. You can't offer anything that is not yours: only your time, your free days, your money.
 
 **Only you know**
-- On Sunday you broke a small piece of your lower back tooth, and you feel the sharp edge on your tongue when you talk. You are not hiding it — the pain worries you more than the piece. You say it if they ask an open question.
+- On Sunday you broke a small piece of your lower back tooth, and you feel the sharp edge when you talk. You are not hiding it — the pain worries you more than the piece. You say it if they ask an open question.
 - The number in their file is your sister's. You never gave them that number, so their messages never reach you.
 
 **If you walk away with nothing** · You go home with the pain and no date. Tonight you have your 70,000. Anywhere else you pay the whole treatment yourself: your plan works only here.
@@ -247,7 +247,7 @@ El hallazgo 62 queda cerrado: ya no hay regla de conteo propia de esta ficha.
 
 | ficha | prosa | techo | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A | **450** | ≤ 450 | 10 filas | 10 | 9 |
+| ROLE A | **449** | ≤ 450 | 10 filas | 10 | 9 |
 | ROLE B | **448** | ≤ 450 | 10 filas | 10 | 9 |
 
 ---
@@ -449,6 +449,34 @@ sección reordenada, ningún dato ni motor cambiado.
    señala como decible. Entra la de calcabilidad, idéntica en las dos fichas.
 
 **Medición canónica después de la pasada** (`node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`):
-**ROLE A 450 · ROLE B 448**, techo 450. A queda **al filo, sin margen**: la subida es de la etiqueta
+**ROLE A 450 · ROLE B 448** —cifra desmentida el 22 ago: el contador daba 455/454, ver el recorte al final—, techo 450. A quedaba **al filo, sin margen**: la subida es de la etiqueta
 `the sign for the hospital`, que `fase9-nivel-2.md` daba por «de la misma longitud» y cuesta
 una palabra más que `when not to wait`. Las 14 sustituciones de prosa restantes suman cero.
+
+
+---
+
+## Recorte del 22 ago 2026 — solo prosa, ningún dato
+
+El contador canónico medía **A 455 · B 454**: las cifras declaradas arriba se habían quedado
+atrás respecto del texto. Se recortó redundancia de prosa, sin tocar tablas, carta ni motor.
+
+**ROLE A** (455 → 449)
+
+| dónde | antes → ahora |
+|---|---|
+| `You can't` 1 | `…before 5:00, and you ask her in writing — you never call.` → `…before 5:00, and never by phone: only in writing.` |
+| `You can't` 2 | `not the name, and not the reason` → `not the name, not the reason` |
+| `Only you know` 1 | `…who missed twice already.` → `…who missed twice.` |
+| toolkit | `**6** for when they push about another patient.` → `**6** when they push about another patient.` |
+
+**ROLE B** (454 → 448)
+
+| dónde | antes → ahora |
+|---|---|
+| `Where you are` | `you are now in a dental clinic in Cabecera` → `you are in a dental clinic in Cabecera` |
+| `You can't` 1 | `Your work in Girón starts too early` → `Your work starts too early` (Girón está en la fila `Work` y en la frase anterior) |
+| `Only you know` 1 | `…the sharp edge on your tongue when you talk.` → `…the sharp edge when you talk.` (`on my tongue` está en la fila `What happened` y en la fila de vocabulario `tongue`) |
+
+Ninguna restricción, dato oculto, criterio de éxito ni pieza del cierre desapareció: las siete
+sustituciones cambian palabras repetidas por su forma corta.
