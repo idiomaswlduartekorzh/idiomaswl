@@ -34,21 +34,21 @@ fichas la señalan y ninguna la copia.
 
 **Where you are** · It is Friday, 7:20 p.m. You are in the parking lot with the bags. Kevin comes down with his bag.
 
-**You want** · Kevin has to pay the 100,000, or give you a date tonight. And his car leaves at 8:00 with yours.
+**You want** · Kevin has to pay the 100,000, or give you a date tonight. And his car leaves at 8:00 with your car.
 
-**Your own rule** · No yes without a name and a reason.
+**Your own rule** · Don't say yes without a name and a reason.
 
 **You can't**
-1. Put money in for somebody else. You paid 600,000, and Kevin's part is missing. You can pay his part, nobody else's. If the six pay again, you put in your part and nobody else's.
+1. Put money in for somebody else. You paid 600,000, and Kevin's part is missing. You can pay only his part. If the six pay again, you put in only your part.
 2. Get anyone in without the list. Your reservation has six names and six ID numbers, and only doña Nubia can change your list.
-3. Drop Hernán to free a spot. You gave him the sixth place for his car, and taking it back costs you his four seats.
+3. Drop Hernán to free a spot. You gave him the sixth place for his car, and that costs you his four seats.
 
 **Only you know**
-- At 6:00 p.m. you watched Hernán leave his car at the mechanic's with a strange noise, and the mechanic will call you at 7:00 a.m. If you tell Kevin, his car is the only car. If you say nothing, maybe you promise seats you don't have.
+- At 6:00 p.m. you saw Hernán's car at the mechanic's with a strange noise, and the mechanic will call you at 7:00 a.m. If you tell Kevin, his car is the only car. If you say nothing, maybe you promise seats you don't have.
 - The sixth place was yours. On Wednesday you gave it to Hernán, with his car and gas, and you never told Kevin.
-- You have met Sebastián — he was on last year's trip. **You have never met Andrea.**
+- You have met Sebastián — he came last year. **You have never met Andrea.**
 
-**If you walk away with nothing** · Tomorrow six people go and five seats leave, and all five are his. And his 100,000 is missing.
+**If you walk away with nothing** · Tomorrow six people go and five seats leave, and all five are his. And his 100,000 pesos are missing.
 
 ### Facts
 
@@ -69,9 +69,9 @@ fichas la señalan y ninguna la copia.
 
 | word | what it is | here |
 |---|---|---|
-| a spot | one free place for one person | none left in the house — the whole fight |
+| a spot | one free place that one person takes | none left in the house — the whole fight |
 | the guard at the gate | the person who checks the names before people go in | no name on the list, no entry |
-| ID number | the number that says who you are | no number, no name at the gate |
+| ID number | your personal number on your ID card | no number, no name at the gate |
 | the mechanic | the person who fixes cars | Hernán's car · and your 7:00 a.m. |
 | to charge someone | to ask a person for money | the money question, said out loud |
 | to chip in | to give your part when a group pays together | your part if the six pay again · not anybody else's |
@@ -87,11 +87,11 @@ Blocks **1** `[grants]`: he came down to you. **2**: tomorrow you share a car. *
 | function | form | what it does here |
 |---|---|---|
 | asking about the people | `Who exactly is …?` | open up a person you have never met |
-| asking about the plan | `Why didn't you tell me …?` | ask about a decision taken without you |
+| asking about the plan | `Why didn't you tell me …?` | ask about a decision he made without you |
 | changing one thing | `Wait — we didn't say that.` | stop it there, change one thing |
 | group message | `That's it — I'll send …` | say his part is fine, and send it |
 | keeping the friendship | `I'm not angry, but …` | complain and still travel together tomorrow |
-| putting a price on a yes | `OK — but only if …` | say yes, and put a price on it |
+| putting a price on a yes | `Only if … — then yes.` | say yes, and put a price on it |
 | saying what happens if | `If I don't have it on …, I'll …` | say what happens when the day comes and the thing isn't there — the name tonight, the money on his day |
 | six beds, six names | `There are only six …` | refuse with the number in front, not your opinion |
 | the debt | `You haven't paid me yet.` | say it once, and don't fight about it |
@@ -110,12 +110,12 @@ Kevin heard the beds and the gate list, with figures · the 100,000 has a date w
 
 **You want** · You came down to get a spot for Sebastián and Andrea — both of them, or one. And you need more time for the 100,000: Tuesday the 25th.
 
-**And a reason you can repeat** · You have twenty minutes with Andrea. If nobody goes, you tell her tonight, with your own reason — not with Valentina's.
+**And a reason you can repeat** · You have twenty minutes before Andrea comes. If nobody goes, you tell her tonight, with your own reason — not with Valentina's.
 
 **You can't**
 1. Pay the 100,000 today. The 200,000 in your pocket are Sebastián's and Andrea's.
 2. Keep that money after tonight. If there is no trip, you give it back tonight.
-3. Bring them yourself. You have never seen that gate list, and Valentina has.
+3. Bring them yourself. You have never seen that gate list, and Valentina knows it.
 
 **Only you know**
 - On Tuesday each of them gave you 100,000. If nobody goes, you give the 200,000 back tonight and two friends stay at home.
@@ -130,8 +130,8 @@ Kevin heard the beds and the gate list, with figures · the 100,000 has a date w
 |---|---|
 | Now | Friday, August 21, 7:20 p.m. |
 | Leaving | Saturday, 8:00 a.m., from the parking lot · 1 hour 30 to Mesa de los Santos |
-| Your car | 5 seats · gas on you |
-| The group | 6 people · 2 cars, one yours |
+| Payday | Friday the 28th |
+| The group | 6 people · 2 cars · yours: 5 seats, gas on you |
 | Tuesday, in the group | five people · your yes to two |
 | Owed to Valentina | **100,000 pesos** *(a hundred thousand)* · July 30 |
 | Tuesday, in your pocket | 100,000 × 2 = **200,000 pesos** *(two hundred thousand)* — Sebastián, Andrea |
@@ -143,13 +143,13 @@ Kevin heard the beds and the gate list, with figures · the 100,000 has a date w
 
 | word | what it is | here |
 |---|---|---|
-| a hammock | a bed you hang between two trees | Sebastián's bed · one less bed to find |
-| a shift | the hours you work in one day | Sebastián's, until ten |
-| a spot | one free place for one person | two of them — the reason you came down |
+| a hammock | a bed that you hang between two trees | Sebastián's bed · one less bed to find |
+| a shift | the hours that you work in one day | Sebastián's, until ten |
+| a spot | one free place that one person takes | two of them — the reason you came down |
 | ID card | the card with your photo and your number | their two cards tonight · the number, not just the name |
 | last minute | very late, just before something happens | how your ask looks to her · say it first |
 | the guard at the gate | the person who checks the names before people go in | no list, no way in |
-| to be 50,000 short | to not have all the money you need | the money that is missing, when you say the numbers |
+| to be 50,000 short | to not have all the money that you need | the money that is missing, when you say the numbers |
 | to give someone a ride | to take a person somewhere in your car | Andrea's only way there |
 | to owe someone | to still have to pay money to a person | your side of it · day: July 30 |
 | to pay someone back | to give money back to the person who gave it | tonight, if there is no trip |
@@ -166,7 +166,7 @@ Blocks **1** `[asks]`, because you open, and you open with something uncomfortab
 | keeping the friendship | `We're good, right?` | make sure tomorrow's car is not silent |
 | owning the lateness | `I know it's last minute, but …` | put the lateness in front before she does |
 | owning your half | `It's my fault, but …` | own your half, and keep what you came for |
-| saying your part out loud | `OK — I'll say it like this: …` | say your part of the message out loud, whole |
+| saying your part out loud | `I'll say it like this: …` | say your part of the message out loud, whole |
 | something for something | `If you …, I'll …` | something for something, in one sentence |
 | the day you pay | `Can I pay you on …?` | ask for one exact day, not "soon" |
 | when they paid you | `They paid me on …` | a fact with its day on it |
@@ -185,7 +185,7 @@ Valentina heard what tonight costs you, with a figure and a day · the 100,000 h
 | | |
 |---|---|
 | Room | **1 more person** · one extra camping mat |
-| Price | **150,000 pesos** *(a hundred and fifty thousand)* · both nights · **on your reservation, not on his** |
+| Price | **150,000 pesos** *(a hundred fifty thousand)* · both nights · **on your reservation, not on his** |
 | Who says yes | the person in charge of the house · no answer at night |
 | When you find out | her question to him early tomorrow · her call to you **before 7:00 a.m.** |
 | What she wants now | **full name + ID number**, to have it ready |
@@ -194,7 +194,7 @@ Valentina heard what tonight costs you, with a figure and a day · the 100,000 h
 
 | word | what it is | here |
 |---|---|---|
-| a camping mat | a thin bed you put on the floor | the seventh person, if there is one · not a bed |
+| a camping mat | a thin bed that you put on the floor | the seventh person, if there is one · not a bed |
 | the person in charge of the house | the one who says yes or no about the house | why nothing closes tonight |
 
 > **Nothing here helps you if you open it early.** It only gives you more work: the money, and a name for doña Nubia tonight. And you have to change something you already said out loud. Kevin learns only what you tell him. You decide how much.
@@ -203,24 +203,24 @@ Valentina heard what tonight costs you, with a figure and a day · the 100,000 h
 
 ## Both screens — how it ends
 
-**Each of you says three things out loud. Six in total. Nobody says the other person's three. Then Valentina sends the message to the WhatsApp group.**
+**Each of you says three things out loud. Six in total. Nobody says the other person's three lines. Then Valentina sends the message to the WhatsApp group.**
 
-**Only Valentina can say:** how many beds there are, how many names and ID numbers the gate list
-carries, and who can change it · what an extra person costs, and on whose reservation ·
-what is not decided yet, the 7:00 a.m. call, and the plan B if nobody answers before it.
+**Only Valentina can say:** how many beds there are, how many names and ID numbers are on the gate
+list, and who can change it · what an extra person costs, and on whose reservation ·
+the 7:00 a.m. call, and what she does if nobody answers before it.
 
-**Only Kevin can say:** the full name and the ID number he sends tonight, and who he gets them
-from · the exact day he pays the 100,000, and what he does if the money is not there that day ·
-what he tells Sebastián and what he tells Andrea tonight, and before what hour.
+**Only Kevin can say:** the full name and the ID number he sends tonight, and who gives them
+to him · the exact day he pays the 100,000, and what he does if the money is not there that day ·
+what he tells Sebastián and what he tells Andrea tonight, and by what time.
 
 **Together, once:** which cars leave at 8:00, and who rides in each one. Then Valentina says yes to
 Kevin's three, or changes one thing in them, and sends the message.
 
 **Four rules:**
 - Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again.
-- A day is not closed until the other one says what happens if it slips. The 100,000 needs two mouths, not one.
+- A day is not a date until the other one says what happens if he pays late. The 100,000 needs two mouths, not one.
 - The message says two numbers — how many people go, and how many cars leave — and the two have to be the ones you just said out loud. If they aren't, say them again.
-- Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are none of the six lines.
+- Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are not lines by themselves.
 
 **Six lines, or the message doesn't go.** This one does not close tonight, and that is the plan.
 
@@ -264,6 +264,14 @@ grammarReferences: [
     rationale: 'Sostiene «Can I pay you on…?» y «They paid me on…», y las horas y fechas de los dos bloques de datos: Saturday, 8:00 a.m. · July 30 · before 7:00 a.m. Sin at/on/in no se pronuncian ni la salida, ni el plazo, ni la deuda.' },
   { level: 'a1', slug: 'imperative', title: 'El imperativo en inglés A1',
     rationale: 'Sostiene «Wait — we didn\'t say that.», que hace dos trabajos: interrumpir —las dos cabeceras prometen que se pueden interrumpir— y corregir la parte del mensaje que dicta Kevin, que es la mitad del gesto de cierre. El tema trae el imperativo afirmativo de una palabra («Listen!», «Repeat!») y el negativo con don\'t.' },
+  { level: 'a1', slug: 'verb-to-be', title: 'Verb to be en inglés A1',
+    rationale: 'Sostiene cinco de los dieciocho exponentes y hasta ahora ninguno lo declaraba: «We\'re good, right?», «I\'m not angry, but…», «It\'s my fault, but…», «I know it\'s last minute, but…» y «That\'s it — I\'ll send…». connectors-a2 solo cubría el but de tres de ellos y will-future solo la segunda mitad del quinto. El tema trae afirmativo, negativo e interrogativo y las contracciones I\'m / it\'s / we\'re, que es la forma que suena en un parqueadero entre amigos: sin contracción, la queja de Valentina se oye como acusación.' },
+  { level: 'a1', slug: 'demonstratives', title: 'Demostrativos en inglés A1',
+    rationale: 'Sostiene «Wait — we didn\'t say that.», «When did that change?», «That\'s it — I\'ll send…» y el «like this» de «OK — I\'ll say it like this:…». Los cuatro apuntan a algo que se acaba de decir en la mesa, que es el uso anafórico que el tema enseña, y son los cuatro momentos en que un jugador corrige o retoma la línea del otro — el gesto que el cierre exige y prohíbe asentir en su lugar.' },
+  { level: 'a1', slug: 'object-pronouns', title: 'Pronombres objeto en inglés A1',
+    rationale: 'Sostiene el me de «You haven\'t paid me yet.», «They paid me on…» y «Why didn\'t you tell me…?», y el it de «I\'ll say it like this» y «If I don\'t have it on…». Es el tema que separa I de me, y aquí toda la queja de Valentina se dice con me: sin él, el reclamo por la deuda no tiene forma. El tema avisa además del error de posponer el pronombre al phrasal, que la caja prohíbe.' },
+  { level: 'a1', slug: 'telling-time', title: 'Decir la hora en inglés A1',
+    rationale: 'Sostiene las horas que hay que pronunciar, no solo leer: la salida a las 8:00 a. m., el ahora de las 7:20 p. m., el turno de Sebastián hasta las 10:00 p. m., el plazo de doña Nubia antes de las 7:00 a. m. y la nota de voz de las 7:41 p. m. de la carta. La tercera línea del cierre de Kevin pide literalmente la hora a la que llama a cada uno. prepositions-time da el at/on/in pero no da cómo se lee un reloj, y sin eso el dato más repetido del escenario no se puede decir en voz alta.' },
 ]
 ```
 
@@ -367,7 +375,7 @@ ninguna línea, así que los números son los mismos de antes).
 | 97 | nivel §3 | exponente: `Wait — that's not what we said.` → `Wait — we didn't say that.` (relativa libre `what`, sin tema que la sostenga) |
 | 111 | calcable B-1 | `Sebastián and Andrea need a spot` → `You came down to get a spot for Sebastián and Andrea` |
 | 113 | calcable B-2 (+ nivel §7) | `You see Andrea here in 20 minutes.` → `Your twenty minutes with Andrea start now.`; `if you only say that Valentina said no…` → `"Valentina said no" is not enough: then…` |
-| 118 | calcable B-3 (+ nivel §7) | `Take them in yourself. The guard wants…` → `Bring them yourself. You have never seen that gate list, and Valentina has.` |
+| 118 | calcable B-3 (+ nivel §7) | `Take them in yourself. The guard wants…` → `Bring them yourself. You have never seen that gate list, and Valentina knows it.` |
 | 122 | calcable B-4/B-5 | `On Tuesday the group was five people…` → `You said yes to two people on Tuesday, when the group was still five, and you heard about the sixth from somebody else.` |
 | 125 | nivel §7 | `you face two friends` → `you say no to two friends` |
 | 146 | calcable, defecto de forma 1 | columna `here`: `it moves the bed count` (pronombre + verbo conjugado) → `one less bed to find` |
@@ -387,7 +395,7 @@ ninguna línea, así que los números son los mismos de antes).
    que señalaba nivel §7.
 2. **calcable B-3**, `Whatever the guard asks for at that gate…`: mismo motivo, `whatever` es la
    misma relativa libre y más marcada. Queda la mitad que hace el trabajo:
-   `You have never seen that gate list, and Valentina has.` — falsa en boca de Valentina, así que
+   `You have never seen that gate list, and Valentina knows it.` — falsa en boca de Valentina, así que
    no se puede decir, y deja intacto el encargo del toolkit de Kevin («pregunta»).
 3. **calcable B-4/B-5**, `…from somebody else, days later`: `days later` inventa un dato. El sexto
    entró el miércoles (línea 48), un día después del martes. Se corta el complemento en vez de
@@ -438,7 +446,7 @@ Tablas, carta, exponentes y `grammarReferences` tampoco.
 | línea | antes | después | −palabras |
 |---|---|---|---|
 | 37 | `or give you a date for it tonight.` | `or give you a date tonight.` | 2 |
-| 42 | `You can pay his part, not somebody else's.` | `You can pay his part, nobody else's.` | 1 |
+| 42 | `You can pay his part, not somebody else's.` | `You can pay only his part.` | 1 |
 | 43 | `…six names and six ID numbers on it, and…` | `…six names and six ID numbers, and…` | 2 |
 | 47 | `and you are the one waiting for the mechanic's call at 7:00 a.m.` | `and the mechanic will call you at 7:00 a.m.` | 4 |
 | 48 | `with his car and his gas, and you never said that to Kevin.` | `with his car and gas, and you never told Kevin.` | 3 |
@@ -462,8 +470,8 @@ Los seis arreglos cuestan cero palabras: **A 449 · B 438**, techo 450.
 
 | # | dónde | antes → ahora | por qué |
 |---|---|---|---|
-| 1 | B · `And a reason you can repeat` | `Andrea gets here in twenty minutes.` → `You have twenty minutes with Andrea.` | tercera persona sobre una ausente, sin `you` que voltear: peor que la forma que la fase 9 ya había tumbado. Y la propia ficha declara ese dato «new to her · say it only if she asks», o sea imprimía como frase pronunciable lo que manda dosificar. La nueva es falsa al decirse: la ficha dice `You have never met Andrea` |
-| 2 | A · `If you walk away with nothing` | `And Kevin still hasn't paid.` → `And his 100,000 is missing.` | sin `you`, verdadera, y es la queja central: en boca hispana nombrar al otro en tercera persona delante de él es idiomático, así que el calco entra entero. Duplicaba el exponente `You haven't paid me yet.`, que es justo el que la carga quiere producido |
+| 1 | B · `And a reason you can repeat` | `Andrea gets here in twenty minutes.` → `You have twenty minutes before Andrea comes.` | tercera persona sobre una ausente, sin `you` que voltear: peor que la forma que la fase 9 ya había tumbado. Y la propia ficha declara ese dato «new to her · say it only if she asks», o sea imprimía como frase pronunciable lo que manda dosificar. La nueva es falsa al decirse: la ficha dice `You have never met Andrea` |
+| 2 | A · `If you walk away with nothing` | `And Kevin still hasn't paid.` → `And his 100,000 pesos are missing.` | sin `you`, verdadera, y es la queja central: en boca hispana nombrar al otro en tercera persona delante de él es idiomático, así que el calco entra entero. Duplicaba el exponente `You haven't paid me yet.`, que es justo el que la carga quiere producido |
 | 3 | cierre, pantalla compartida | fuera `: it closes with the two calls tomorrow, before 7:00 a.m.` | ninguna deixis protege en la pantalla compartida, y eran dos tercios de la tercera línea de Valentina servida. La ficha de Kevin no menciona ninguna llamada ni las 7:00 a. m. |
 | 4 | cierre, punto 2 | `the 150,000, and whose reservation the extra person goes on` → `what an extra person costs, and on whose reservation` | imprimía en pantalla compartida una cifra de la carta, que dice de sí misma `Kevin never sees this screen`. Los otros dos puntos nombran la pregunta; este nombraba la respuesta |
 | 5 | A · exponentes, `the message you send` → `group message` | renombrada | el gesto final del escenario estaba en la fila 9 de 9; pasa a la 4 |
@@ -471,3 +479,35 @@ Los seis arreglos cuestan cero palabras: **A 449 · B 438**, techo 450.
 
 **Contabilidad, para que no se repita:** la pasada de carga declaró «la ficha de B no se tocó» y B
 pasó de 442 a 438 en ese mismo commit. Si el contador se mueve en un rol, ese rol se tocó.
+
+
+---
+
+## Pasada de nivel (22 ago 2026) — `fase13-nivel-7.md`
+
+El escenario sigue siendo A2 después de las tres pasadas de hoy, y **la ruta mínima del cierre nuevo
+se escribe entera con lengua del nivel**. Contador después: **ROLE A 443 · ROLE B 440**, techo 450.
+
+**De las ocho frases que se recortaron o reescribieron hoy, dos subieron de nivel:**
+
+- `nobody else's`, dos veces. El recorte de la mañana quitó el `not`, y lo que quedó es aposición
+  contrastiva sin marca negativa sobre un genitivo con el núcleo elidido. `possessive-s` dice
+  literalmente que solo se usa con personas, animales y grupos. Y es **la restricción que mantiene
+  el escenario en A2**: si se lee mal, la mesa se vuelve B1. Entra `only his part` / `only your part`.
+- `And his 100,000 is missing.` — la reescritura de calcabilidad acertó en lo suyo (sin `you`,
+  verdadera, deja de duplicar el exponente), pero dejó un numeral como núcleo nominal, y **no hay
+  ningún tema de numerales, ordinales ni fechas en el inglés A1/A2 del registro**. Entra
+  `his 100,000 pesos are missing`.
+
+| # | dónde | por qué |
+|---|---|---|
+| N-1 | cierre · `what is not decided yet` → `what she does if nobody answers before it` | la pasiva está prohibida por la caja y ningún tema la sostiene: el que calca la instrucción produce `*it is not decided*` |
+| N-2 | datos de B · entra `Payday \| Friday the 28th`, fundiendo dos filas | el cierre exige «el día exacto que paga **y qué hace si ese día no está la plata**» y los diez datos de Kevin no traían ningún día de cobro. La lengua estaba impresa; el hecho había que inventarlo, y **inventar un hecho en L2 es donde se cambia al español** |
+| N-3 | cierre · `who he gets them from` → `who gives them to him` | pregunta incrustada con preposición colgada, dos cosas de la lista negra en la instrucción que se lee justo antes de hablar |
+| N-4 | dos exponentes · fuera el `OK —` inicial | **la prohibición de asentir descalificaba las dos líneas que la ficha imprime para cumplirla**: las dos empezaban por una de las cinco palabras prohibidas |
+| N-7 | B · `You have twenty minutes with Andrea.` → `…before Andrea comes.` | la reescritura de calcabilidad era A2 legible, pero contradecía su propia tabla de datos (`Andrea \| at the parking lot in 20 minutes`) |
+| N-8..m-10 | quince renglones más | elipsis de auxiliar, verbo de percepción + infinitivo, gerundio en sujeto, seis relativas de contacto sin `that`, `carries` metafórico, `before what hour` (calco de «antes de qué hora»), y el `and` británico de `a hundred and fifty thousand` |
+
+**Aviso que no es defecto:** la ruta mínima pasó de 8 turnos a **9 de 9**. Sigue dentro de §4, pero
+con margen cero: cualquier reparación de la caja empuja fuera de banda. Es la factura de la pasada
+de carga, y la cobra la simulación.
