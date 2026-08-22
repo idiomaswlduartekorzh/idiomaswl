@@ -535,6 +535,81 @@ import type { SatItemMeta } from '../module-types'
  * volver a pasar por el auditor de clave y por la prueba a ciegas antes de firmar acta. La
  * huella del guardián cubre enunciado, opciones, clave y `stimulus`: un acta firmada antes de
  * hoy ya no describe este archivo.
+ *
+ * NOVENA PASADA (22 ago 2026) — q09: UNA COMA, Y LO QUE NO SE HIZO PARA GANARLA. Un solo
+ * cambio en el bloque, más una etiqueta. La octava pasada bajó T (complejidad del pasaje) y
+ * el calibrador confirmó las dos cosas que importaban: el texto bajó y la distancia entre
+ * opciones no se movió ni una décima. La prueba a ciegas se quedó en 19,8 % (techo 35, azar
+ * 25). Queda el otro eje del texto, **L**: cuántas partes del pasaje hay que cruzar.
+ *
+ * q09 medía 9 y el calibrador dijo por qué: niega tres causas rivales en tres oraciones
+ * separadas. Ahora dos de esas tres van en la misma oración —«Soundings put the two basins at
+ * the same depth, and neither lake has a stream running into it or out of it the year round»—
+ * y el pasaje pasa de cuatro paradas (profundidad · sol · caudal · manantial) a tres. **Lo
+ * mido en 8**: L baja un punto, T no se toca (no se ha quitado ni añadido una idea; la única
+ * palabra nueva del pasaje es «and») y la distancia entre opciones no se toca en absoluto.
+ *
+ * LA TENSIÓN, resuelta y dicha: ¿comparten asesino ahora dos distractores? No, y la línea
+ * que separo es entre PROPOSICIÓN y ORACIÓN. Lo que protege al ítem es que ninguna
+ * proposición mate a dos opciones: quien tiene el dato de la profundidad puede descartar A y
+ * nada más; quien tiene el del caudal descarta C y nada más. Ninguno de los dos implica al
+ * otro, así que ningún descarte vale por dos. Lo que se ahorra es un salto de vista, no un
+ * paso de razonamiento. La prueba de que esa es la lectura buena está dentro del propio
+ * ítem: D muere por una oración que ya lleva dos cláusulas coordinadas («The same ridge
+ * stands over both, and neither shore loses an hour of the low winter sun to it») y nunca se
+ * ha contado como una cláusula matando dos cosas.
+ *
+ * Lo que por eso mismo NO se hizo, y es donde la tensión sí muerde:
+ *
+ * - **No se fundieron A y D**, que era la pareja de oraciones contiguas más fácil de juntar.
+ *   Las dos son «los dos lagos son iguales en X» —misma profundidad, mismo sol—, y una junto
+ *   a la otra dentro de una oración se leen como una sola afirmación («son idénticos»)
+ *   aunque no lo diga ninguna palabra. Ahí sí un descarte valdría por dos. A (una medida que
+ *   sale igual) y C (un rasgo que no tiene ninguno de los dos) tienen forma distinta y
+ *   coordinan sin fundirse.
+ * - **No se escribió ninguna fórmula que generalice**: nada de «the two basins are alike in
+ *   depth and in exposure» ni «the lakes differ in nothing but the water». Eso es una sola
+ *   proposición cubriendo dos o tres opciones, y es exactamente el atajo que la octava pasada
+ *   se negó a tomar en q10.
+ * - **El orden de las tres primeras oraciones no es libre.** `razones.A` dice «la diferencia
+ *   que el texto niega en la segunda línea», así que el dato de la profundidad tiene que
+ *   seguir en la segunda oración. Por eso la que se mueve al tercer puesto es la del sol, no
+ *   la de las sondas. Quien reordene esto sin leer las razones rompe una cita.
+ *
+ * DIVERGENCIA DE UNA LETRA, a propósito y anotada. Esta ronda prohíbe tocar las opciones y
+ * sus razones, y `razones.C` cita «Neither lake has a stream running into it or out of it the
+ * year round» con la N mayúscula que tenía cuando era oración entera. En el texto esa cláusula
+ * ya no abre oración y va en minúscula. La cita no se ha modificado porque no se podía: es una
+ * diferencia de un carácter, el resto es literal y localiza igual. Que la arregle la primera
+ * pasada que tenga permiso para escribir en las razones.
+ *
+ * BANDA, sin adornar: 8 NO es fácil en la escala de este proyecto. Los reetiquetados del
+ * bloque CS fijaron el corte —q02 midió 7 y quedó en 1; q01 midió 8 y quedó en 2—, así que
+ * **q09 sigue declarado 2**, ahora en el suelo de la banda media. Lo que baja es el suelo del
+ * bloque, de 9 a 8. El módulo sigue con **cero ítems de lectura en banda fácil**, y este
+ * cambio no lo arregla: para eso hace falta un ítem de lectura nuevo o bajar alguno acercando
+ * sus opciones, que es lo que sigue prohibido. Queda dicho para que nadie lea esta pasada
+ * como el cierre de ese número.
+ *
+ * ETIQUETA: **q14 pasa de 3 a 2**. Mide 11 y estaba declarado 3; 11 es banda media por el
+ * mismo corte de arriba. El ítem no se toca —ni pasaje, ni enunciado, ni opciones, ni
+ * razones—: solo se corrige lo declarado. Puerta 9: el grupo `inferences` queda q14 2 → q15 3,
+ * que sigue siendo creciente. Mezcla declarada del módulo: de 8/11/8 a 8/12/7.
+ *
+ * MEDIDO tras el cambio: puerta 7, el pasaje de q09 pasa de 99,7 a 100,3 palabras-SAT (602
+ * caracteres, dentro de 25-150). Puerta 3, solapes idénticos —4/5/6/7, clave interior—: era
+ * lo esperado, porque «and» es palabra vacía para el guardián y no entra ni sale ninguna otra
+ * palabra del pasaje. Puerta 2, longitudes intactas: 132/128/132/121, clave ni la más larga ni
+ * la más corta. La prueba a ciegas no puede haberse movido por construcción: el extractor
+ * manda enunciado y opciones y NO manda el `stimulus`, que es lo único que ha cambiado hoy.
+ *
+ * Lo que NO se tocó: las siete claves, los siete enunciados, las veintiocho opciones, las
+ * veintiocho razones, los pasajes de q10 a q15 —ni un carácter—, y las cadenas de deducción
+ * de los siete.
+ *
+ * PENDIENTE, y sigue bloqueando el APTO: el `stimulus` de q09 ha vuelto a cambiar, así que la
+ * huella del guardián sobre ese ítem cambia con él y el acta pendiente desde la octava pasada
+ * sigue pendiente. El auditor de clave tiene que volver a resolver q09 sobre este texto.
  */
 
 export const items: MCQQuestion[] = [
@@ -543,7 +618,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Two lakes lie a kilometer apart in the same valley, and every winter the northern one freezes about three weeks after the southern one. Soundings put the two basins at the same depth. The same ridge stands over both, and neither shore loses an hour of the low winter sun to it. Neither lake has a stream running into it or out of it the year round. What differs is where the water comes from. The southern lake fills in the thaw with snowmelt off the slopes. The northern one is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January.',
+      'Two lakes lie a kilometer apart in the same valley, and every winter the northern one freezes about three weeks after the southern one. Soundings put the two basins at the same depth, and neither lake has a stream running into it or out of it the year round. The same ridge stands over both, and neither shore loses an hour of the low winter sun to it. What differs is where the water comes from. The southern lake fills in the thaw with snowmelt off the slopes. The northern one is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January.',
     text: 'According to the text, why does the northern lake freeze later than the southern one?',
     options: [
       "Its basin goes down to a greater depth, and the water in a deep lake has far more of the summer's heat to give up before it freezes.",
@@ -745,7 +820,7 @@ export const meta: SatItemMeta[] = [
     id: 'q14',
     domain: 'II',
     tipo: 'inferences',
-    dificultad: 3,
+    dificultad: 2,
     tema: 'literatura',
     razones: {
       A:

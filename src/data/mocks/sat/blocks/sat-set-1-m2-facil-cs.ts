@@ -192,7 +192,8 @@ import type { SatItemMeta } from '../module-types'
  * Ninguno de los dos toca las opciones ni el reparto de longitudes —q06 sigue en 128-133
  * con la clave en 130, q07 en 79-83— y las palabras añadidas no aparecen en ninguna
  * opción, así que no se crea pista léxica. Longitud de texto: q06 89 «palabras de 6», q07
- * 101; las dos dentro de 25-150.
+ * 101; las dos dentro de 25-150. (La cifra de q07 es de entonces: desde la décima versión
+ * son 113,2, y sigue dentro de 25-150.)
  *
  * Por **R2**, q04 y q08 vuelven enteros a la cola de auditoría y la ciega se repite sobre
  * estas opciones. Claves del plan de entonces: B, C, C, A, B, C, A, A.
@@ -565,6 +566,98 @@ import type { SatItemMeta } from '../module-types'
  * Por **R2** vuelven enteros a la cola de auditoría **q03, q05 y q08**, y la ciega se
  * repite sobre las opciones de q08, que son nuevas. Las de q03 y q05 no han cambiado ni un
  * carácter, así que su ciega anterior sigue valiendo.
+ *
+ * ── Décima versión: la otra mitad de T, en los pasajes densos ──────────────
+ *
+ * La novena ronda fue por el eje bueno —el calibrador midió que la complejidad del texto
+ * bajó 0,19, que **la distancia entre opciones no se movió ni una décima** y que la ciega
+ * se quedó en 19,8 % (techo 35, azar 25)—, pero recortó los pasajes que ya tenían las
+ * oraciones cortas. Los densos seguían intactos. Aquí se acaba el trabajo, con la misma
+ * regla: **no se toca ni una opción ni una razón; todo el margen sale de T.**
+ *
+ * Medido antes y después, con el mismo contador (oraciones separadas por punto, media de
+ * palabras por oración, oración más larga):
+ *
+ *     id    caracteres   oraciones   media   más larga
+ *     q07   606 → 679      4 → 8    25,8 → 14,8   44 → 24
+ *     q01   570 → 573      4 → 7    27,2 → 15,7   36 → 36  (ver abajo)
+ *     q02   480 → 479      4 → 8    23,8 → 11,9   33 → 18
+ *
+ * Partir oraciones cuesta palabras: q07 sube de 103 a 118 y de 101 a 113,2 «palabras de
+ * 6», dentro de 25-150. q01 y q02 no se mueven de tamaño; solo de puntuación.
+ *
+ * **q07 — el concierto barroco, el ítem más caro del examen (14).** Todo el problema estaba
+ * en la apertura: 44 palabras con los cuatro tecnicismos musicales seguidos detrás de dos
+ * puntos. Se reparte en cuatro oraciones cortas —una por rasgo o dos— y la etiqueta
+ * «authentic», que era el principio de la primera, pasa a cerrar la serie, **justo delante
+ * de «What that word hides…»**: el referente de «that word» deja de estar a veintisiete
+ * palabras dentro de la misma oración y queda pegado. Eso es L además de T. Se conservan
+ * palabra por palabra las cuatro cosas que citan las razones: la primera línea con 1955 y
+ * 1995 y sin un elogio a lo antiguo (razón C), «strings of gut instead of steel» (el
+ * arreglo de equidad de la cuarta versión), «the treatises were written to correct players,
+ * not to describe them» (razones A y D) y **las dos últimas oraciones enteras**, que son la
+ * objeción y que la razón D nombra como tales. Ninguna palabra nueva —players, groups,
+ * vibrato, tempos, recordings— aparece en la clave: la clave A dice «written rules»,
+ * «practice» y «fix», y ninguna de las tres entra en el texto.
+ *
+ * **q01 — los tránsitos (media de 27,3, la más larga de las 36 del bloque).** Se parten las
+ * tres primeras oraciones, que llevaban dos incisos con raya y una coordinación cada una.
+ * **La oración del hueco no se parte, y es una decisión, no un olvido**: la razón de la
+ * clave está escrita como «la oración del hueco lo dice por partes» y cita sus dos mitades
+ * —«unchanged in depth… on its own fixed cycle» y «but it no longer stands out…»—. Partirla
+ * dejaría esa razón describiendo algo que ya no existe, y las razones no se tocan. Por eso
+ * la más larga sigue en 36: la media baja de 27,2 a 15,7 y la oración cara queda sola, con
+ * seis oraciones cortas delante en vez de tres largas. Se conservan «dimming it by as much
+ * or more» (razones A y D) y «on a schedule of their own» (razón C), que ahora cierra una
+ * oración propia.
+ *
+ * **q02 — el único de lectura que podía llegar a banda fácil.** El bloque tenía **cero de
+ * veinte** ítems en banda fácil y su suelo estaba en 8, que es lo que medía este. Se parten
+ * las dos oraciones largas (26 y 33) y también el cierre, y el hueco se queda solo en una
+ * oración de cinco palabras —«Her questions were ______ that evening.»—, con las tres
+ * conductas justo detrás, que es como la razón de la clave las describe: «las tres cosas
+ * que el texto pone **justo después del hueco**». Detalle deliberado y feo a la vista: la
+ * sexta oración empieza por «And». Es la única forma de partir ahí sin cambiarle la
+ * mayúscula a «twice she came back to a question I had already answered», que la razón de
+ * la clave cita literal. Prosa de narrador en primera persona lo admite; alterar una cita
+ * de una razón, no.
+ *
+ * **Reordenamiento del grupo de estructura: medido, y no hay nada que mover.** El grupo iba
+ * `q07 (14) · q06 (12) · q05 (12)`, con el ítem más caro en cabeza. Rebajado q07, los tres
+ * quedan en el mismo escalón del calibrador, así que el orden lo decide una medida más
+ * fina. La que se usa aquí es la **carga total de lectura** —caracteres del pasaje más los
+ * de las cuatro opciones, que es todo lo que el estudiante tiene que leer para contestar—:
+ *
+ *     id    pasaje   opción media   compartido   en disputa   carga total
+ *     q07     679         82             3           79          1.007
+ *     q06     535        130            44           86          1.056
+ *     q05     688        225           126           99          1.588
+ *
+ * Sale **creciente en el orden que ya está en pantalla**, así que el array no se toca. El
+ * cruce importa: por pasaje suelto q05 es el más ligero del bloque (media de 12,7), pero
+ * sus cuatro opciones comparten 126 caracteres que hay que releer cuatro veces, y eso es lo
+ * que lo mantiene en cola. Es el mismo diagnóstico de la novena versión —«lo que pesa en
+ * ese ítem no es el texto»— medido en caracteres. Si el calibrador rompe el empate al
+ * revés, el único cambio posible es intercambiar q06 y q05; q07 va primero con las dos
+ * medidas.
+ *
+ * **Etiquetas.** q04 pasa de 3 a **2**, que es lo que mide. q02 se queda en **1**: la
+ * corrección del calibrador era «→2, o →1 si al bajarlo lo dejas en 7», y ahí es donde se
+ * ha dejado. Curva declarada en el orden de pantalla: **1 · 2 · 2 · 2 | 3 · 3 · 3 | 3**, no
+ * decreciente dentro de cada grupo de tipo, que es lo que mira la puerta 9. El bloque baja
+ * de cinco difíciles declarados a cuatro.
+ *
+ * **Lo que queda por bajar en este bloque, para quien siga.** La oración más larga que
+ * sobrevive es la de **q06**, de 44 palabras —las tres pruebas de Sofía con dos puntos y
+ * coma—, y ese ítem no entraba en esta ronda. Es el próximo candidato barato, y partirla no
+ * roza ninguna razón: las tres pruebas se citan por separado en la razón de la clave. En
+ * q04 quedan dos de 33 y 29, pero la segunda contiene «nothing links it to them, no
+ * drawing, no letter, no recorded visit», que es frase protegida: se puede partir antes de
+ * la raya, nunca dentro.
+ *
+ * Por **R2** vuelven a la cola de auditoría **q07, q01 y q02**. Sus opciones y sus razones
+ * no han cambiado ni un carácter, así que **la ciega anterior de los tres sigue valiendo**:
+ * lo que se ha movido es el pasaje, que en la prueba a ciegas está tapado.
  */
 
 export const items: MCQQuestion[] = [
@@ -573,7 +666,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'When Mr. Ferreira came in from the yard, my grandmother did not ask him where he had been. She set a bowl in front of him and another in front of me, and asked me about the arithmetic I had been given at school. Her questions were ______ that evening: she asked one, heard half the answer, and asked the next as if I had finished, and twice she came back to a question I had already answered. All the while her eyes went to the window, where the last light was going off the yard.',
+      'When Mr. Ferreira came in from the yard, my grandmother did not ask him where he had been. She set a bowl in front of him and another in front of me. Then she asked me about the arithmetic I had been given at school. Her questions were ______ that evening. She asked one, heard half the answer, and asked the next as if I had finished. And twice she came back to a question I had already answered. All the while her eyes went to the window. The last light was going off the yard.',
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'hurried',
@@ -588,7 +681,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A planet crossing in front of its star blocks a sliver of the star's light, and a telescope watching for years can catch the dip. The dip is small — for a planet the size of Earth, about one part in ten thousand — and the star itself is not steady. Cooler patches on its surface turn into view and out again, dimming it by as much or more, on a schedule of their own. That wandering ______ the transit: the dip is still there in the record, unchanged in depth and still arriving on its own fixed cycle, but it no longer stands out from everything else the star is doing.",
+      "A planet crossing in front of its star blocks a sliver of the star's light. A telescope watching for years can catch the dip. The dip is small: for a planet the size of Earth, about one part in ten thousand. The star itself is not steady. Cooler patches on its surface turn into view and out again, dimming it by as much or more. They do this on a schedule of their own. That wandering ______ the transit: the dip is still there in the record, unchanged in depth and still arriving on its own fixed cycle, but it no longer stands out from everything else the star is doing.",
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'reverses',
@@ -633,7 +726,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Recordings of a Baroque concerto made in 1955 and in 1995 hardly sound like the same piece, and the later ones are usually called more authentic: strings of gut instead of steel, smaller groups, little vibrato, tempos taken from treatises written at the time. What that word hides is that the treatises were written to correct players, not to describe them. A manual that tells organists to keep strict time is evidence that organists were not keeping strict time. A performance built on such advice may be reproducing what one irritated writer wished he heard, and not what anyone in 1720 actually played.',
+      'Recordings of a Baroque concerto made in 1955 and in 1995 hardly sound like the same piece. In the later ones the players use strings of gut instead of steel. They work in smaller groups and use little vibrato. Their tempos come from treatises written at the time. That is why the newer recordings are usually called more authentic. What that word hides is that the treatises were written to correct players, not to describe them. A manual that tells organists to keep strict time is evidence that organists were not keeping strict time. A performance built on such advice may be reproducing what one irritated writer wished he heard, and not what anyone in 1720 actually played.',
     text: 'Which choice best states the main purpose of the text?',
     options: [
       'To question what written rules can prove about the practice they were meant to fix.',
@@ -751,7 +844,7 @@ export const meta: SatItemMeta[] = [
     id: 'q04',
     domain: 'CS',
     tipo: 'words-in-context',
-    dificultad: 3,
+    dificultad: 2,
     tema: 'historia',
     razones: {
       A:

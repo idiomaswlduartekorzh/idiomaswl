@@ -73,13 +73,13 @@ Contrastado el 20 ago 2026 con un examen oficial de práctica de College Board. 
 | 16 | `q16` | SEC | `boundaries` | historia | 1 | **A** |
 | 17 | `q17` | SEC | `form-structure-sense` | ciencia | 1 | **C** |
 | 18 | `q18` | SEC | `boundaries` | humanidades | 1 | **A** |
-| 19 | `q19` | SEC | `form-structure-sense` | humanidades | 2 | **B** |
-| 20 | `q20` | SEC | `boundaries` | historia | 2 | **C** |
+| 19 | `q20` | SEC | `boundaries` | historia | 1 | **C** |
+| 20 | `q19` | SEC | `form-structure-sense` | humanidades | 2 | **B** |
 | 21 | `q21` | SEC | `form-structure-sense` | ciencia | 2 | **D** |
-| 22 | `q22` | SEC | `boundaries` | humanidades | 3 | **B** |
+| 22 | `q22` | SEC | `boundaries` | humanidades | 2 | **B** |
 | 23 | `q23` | EOI | `rhetorical-synthesis` | humanidades | 3 | **D** |
 | 24 | `q24` | EOI | `rhetorical-synthesis` | historia | 3 | **A** |
-| 25 | `q26` | EOI | `transitions` | literatura | 1 | **C** |
+| 25 | `q26` | EOI | `transitions` | literatura | 2 | **C** |
 | 26 | `q25` | EOI | `transitions` | ciencia | 2 | **D** |
 | 27 | `q27` | EOI | `transitions` | humanidades | 3 | **B** |
 

@@ -266,10 +266,13 @@ import type { SatItemMeta } from '../module-types'
  *      narrador sin poder sostenerla → se devuelve a quien ya la sostenía en el texto,
  *      «which the director says is…».
  *
- * **El array va en el orden del plan (q16 → q22) y eso ya cumple la puerta 9.** SEC es la
- * excepción verificada de College Board: de menos a más difícil **sin agrupar por tipo**, y
- * las etiquetas del plan salen 1 · 1 · 1 · 2 · 2 · 2 · 3, no decrecientes, con `boundaries` y
- * `form-structure-sense` alternando. No hay nada que reordenar, a diferencia del módulo 1.
+ * **El array ya no va en el orden del plan: va q16 · q17 · q18 · q20 · q19 · q21 · q22.** SEC
+ * es la excepción verificada de College Board —de menos a más difícil **sin agrupar por
+ * tipo**— y es esa exigencia la que obligó a mover un ítem de sitio: ver «CALIBRACIÓN» al
+ * final de esta cabecera, que dice qué medía cada uno, por qué se intercambian q19 y q20 y por
+ * qué eso hay que hacerlo **antes** de corregir la etiqueta de q20. `boundaries` y
+ * `form-structure-sense` siguen alternando, y las etiquetas, en el orden en que se leen, salen
+ * 1 · 1 · 1 · 1 · 2 · 2 · 2: no decrecientes, que es lo que mide la puerta 9.
  *
  * Las siete reglas, repartidas a propósito para que no salgan siete de concordancia, y
  * elegidas además para no repetir ninguna del bloque SEC del módulo 1 (que ya examina par de
@@ -336,6 +339,52 @@ import type { SatItemMeta } from '../module-types'
  *   explicativas— y el primer separador (el punto y coma entre el tesorero y el bibliotecario)
  *   tiene que seguir en el texto. Si se quitan las relativas, la serie vuelve a ser simple y
  *   la coma de A se convierte en la respuesta correcta.
+ *
+ * ## CALIBRACIÓN (22 ago 2026) — la curva del bloque y el pasaje que nadie había tocado
+ *
+ * Este era **el único de los cuatro bloques del módulo que la ronda de dificultad no tocó**, y
+ * traía dos averías que no se ven ítem a ítem: hay que medir el bloque entero.
+ *
+ * **1 · La curva iba mal.** En el orden en que se leía —q16 → q22— el bloque medía
+ * `7 · 7 · 7 · 10 · 7 · 10 · 10`. Un q19 en 10 seguido de un q20 en 7 no es un escalón: es una
+ * caída de tres puntos y un cambio de banda en mitad del bloque, y en SEC, que se ordena de
+ * menos a más **sin agrupar por tipo**, eso rompe la puerta 9. Se arregla **intercambiando q19
+ * y q20** —objetos enteros en `items` y en `meta`, cada id con su contenido, **sin
+ * renumerar**—, y el orden de lectura pasa a `7 · 7 · 7 · 7 · 10 · 10 · 10`.
+ *
+ * Que el ítem que hoy se lee en quinto lugar siga llamándose `q19` es deliberado, y es legal
+ * desde que se cambió la puerta del guardián que exigía que el número de orden coincidiera con
+ * el id. Renumerar es lo caro: `q19` está en la fila del plan, en este comentario y en todas
+ * las actas de auditoría, y renumerar no movería el ítem, movería **el nombre a otra
+ * pregunta**.
+ *
+ * **2 · Las etiquetas no decían lo medido.** q20 estaba en 2 midiendo 7 y q22 en 3 midiendo
+ * 10: quedan **q20 → 1** y **q22 → 2**, y el bloque etiqueta 1 · 1 · 1 · 1 · 2 · 2 · 2 en el
+ * orden en que va. **El orden de las dos operaciones importa**: corregir q20 a 1 sin haber
+ * intercambiado antes deja `1 · 1 · 1 · 2 · 1 · 2 · 2` y rompe la puerta 9 por la etiqueta, no
+ * por la medida. Van juntas o no van.
+ *
+ * **3 · q19 era el segundo pasaje más denso del módulo**: **26,3 palabras por oración de
+ * media y una oración de 38**, la más larga de las cinco. Se parte esa oración en dos y no se
+ * toca ninguna otra: el hueco y su complemento se quedan donde estaban, y lo que sale a
+ * oración aparte es quién escribió la pieza —«…it ______ a piece written in the speech of the
+ * market square. Its author was a schoolteacher who had never published a line.»—. El pasaje
+ * queda en **21,4 de media y 30 la más larga**, con una palabra más que antes (107).
+ *
+ * **Las tres condiciones de clave única de q19 siguen cumplidas después del corte**, y hay que
+ * comprobarlo cada vez que se parta una oración cerca de un hueco: «in 1893» sigue dentro de
+ * la oración del hueco, el trasfondo sigue en pluscuamperfecto y unido por «when», y lo que se
+ * separa —«Its author was a schoolteacher who had never published a line»— **no es un hecho
+ * pasado al que el estreno preceda**, sino un estado anterior a él, de modo que el
+ * pluscuamperfecto de C sigue sin tener a qué anteponerse. La forma verbal del hueco no cambia
+ * de razón por el corte.
+ *
+ * **Ni una opción ni una razón de distractor se tocaron.** La densidad del pasaje es carga de
+ * lectura; la distancia entre las cuatro opciones es lo que discrimina, y es donde vive el
+ * trabajo de las rondas contra la prueba a ciegas. Bajar dificultad por ahí sería deshacerlo.
+ *
+ * Por R2, q19 cambió de texto y vuelve a la cola de auditoría. q20 no cambió ni un carácter:
+ * solo de sitio y de etiqueta.
  */
 
 export const items: MCQQuestion[] = [
@@ -388,22 +437,6 @@ export const items: MCQQuestion[] = [
     answer: 0,
   },
   {
-    id: 'q19',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      "A theatre in a river town spent its first three decades on plays translated from other languages, and its audience came to expect an evening that sounded like somewhere else. The company had worked its way through the same handful of foreign comedies year after year when, in 1893, it ______ a piece written in the speech of the market square by a schoolteacher who had never published a line. The house sold out for eleven nights, and the company printed the text at its own expense. Every season since, the theatre has opened its year with a play in the language its audience speaks at home.",
-    text:
-      "Which choice completes the text so that it conforms to the conventions of Standard English?",
-    options: [
-      "stages",
-      "staged",
-      "had staged",
-      "has staged",
-    ],
-    answer: 1,
-  },
-  {
     id: 'q20',
     type: 'mcq',
     part: 1,
@@ -418,6 +451,22 @@ export const items: MCQQuestion[] = [
       "messages:",
     ],
     answer: 2,
+  },
+  {
+    id: 'q19',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      "A theatre in a river town spent its first three decades on plays translated from other languages, and its audience came to expect an evening that sounded like somewhere else. The company had worked its way through the same handful of foreign comedies year after year when, in 1893, it ______ a piece written in the speech of the market square. Its author was a schoolteacher who had never published a line. The house sold out for eleven nights, and the company printed the text at its own expense. Every season since, the theatre has opened its year with a play in the language its audience speaks at home.",
+    text:
+      "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    options: [
+      "stages",
+      "staged",
+      "had staged",
+      "has staged",
+    ],
+    answer: 1,
   },
   {
     id: 'q21',
@@ -518,6 +567,27 @@ export const meta: SatItemMeta[] = [
       "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. La cuenta desde 1978 se escribe **«in nearly fifty years» y no una cifra exacta**: «forty-eight years» era correcto solo durante 2026 y pasaba a ser falso en enero de 2027, y un banco de ítems no se revisa cada enero. Toda cifra del examen que se mida contra «hoy» tiene que estar redondeada o acotada.\n\nEl pasaje no ha cambiado; sí la oración del hueco, que es la última. Decía «The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang» y examinaba los dos puntos; dice ahora «The order in which the eleven pictures were ______ tells a visitor what no label in the room is long enough to say» y examina que sujeto y verbo no se separan. El motivo del cambio de regla no es de contenido —la sala sigue argumentando por su orden de colgado— sino de conjunto, y está en el punto 3 de la cabecera.",
   },
   {
+    id: 'q20',
+    domain: 'SEC',
+    tipo: 'boundaries',
+    dificultad: 1,
+    tema: 'historia',
+    regla:
+      "Frontera entre dos oraciones independientes cuando la segunda empieza por un adverbio conjuntivo: «however» enlaza el sentido pero no une sintácticamente, de modo que hace falta un punto y coma. La coma sola produce empalme (comma splice) y la ausencia de signo, una oración seguida.",
+    razones: {
+      A:
+        "Empalme de comas: a los dos lados del hueco hay oraciones con sujeto y verbo propios —«the company sent…» y «the fees… covered…»— y una coma no basta para separarlas. Es el error de quien trata «however» como si fuera «but»: «but» sí es conjunción coordinante y admitiría la coma, «however» no lo es.",
+      B:
+        "Sin ningún signo quedan dos oraciones seguidas sin frontera, y el lector arrastra «however» al final de la primera —«fewer than two hundred official messages however»— hasta que el segundo verbo lo obliga a volver atrás. Es la apuesta segura de quien no lee la frase entera: en la duda, ningún signo.",
+      C:
+        "Correcta: el punto y coma separa dos oraciones independientes que no van unidas por conjunción coordinante, que es exactamente lo que hay aquí; «however» es un adverbio conjuntivo, señala el contraste y va seguido de su propia coma, pero no puede sostener él solo la unión.",
+      D:
+        "Los dos puntos anuncian que lo que sigue desarrolla, ilustra o cumple lo que se acaba de decir, y aquí lo que sigue lo contradice: «however» avisa de un contraste, no de una ampliación. Es el error de quien ve dos hechos relacionados y coloca los dos puntos como si cualquier relación fuera explicación.",
+    },
+    fuenteHecho:
+      "Historia de las telecomunicaciones, hecho libre: las líneas telegráficas se justificaron ante la opinión pública como instrumento de gobierno y se sostuvieron con tráfico comercial. La línea, el paso de montaña, 1868, la guarnición y el mercado de la lana son invención propia. Distancias en kilómetros, como el resto del examen: ninguna medida imperial obliga al estudiante a convertir bajo cronómetro. Por la misma razón el plazo es «two weeks» y no «fortnight»: la palabra es británica, queda fuera del currículo escolar de inglés en Colombia y en casi toda Latinoamérica, y aquí **no es adorno** —es la mitad del contraste «una hora en vez de…» que hace inteligible la promesa con la que se vendió la línea—, de modo que quien no la conociera perdía la premisa del párrafo entero.",
+  },
+  {
     id: 'q19',
     domain: 'SEC',
     tipo: 'form-structure-sense',
@@ -536,28 +606,7 @@ export const meta: SatItemMeta[] = [
         "Presente perfecto con complemento de tiempo pasado definido: el inglés escrito no admite «in 1893 it has staged». Es el error de quien arrastra el «has opened» del cierre sin ver que aquel es correcto por su propio complemento —«every season since» abre un período que llega hasta hoy— y este no, porque «in 1893» cierra el suyo. Es además la opción donde se cruzan las dos apuestas de quien decide sin leer la frase: la forma perfecta, que es la que un examen de gramática parece estar examinando, y la marca de singular, que es el número por defecto cuando no se ve el sujeto. Que las dos caigan aquí y no en la clave es a propósito.",
     },
     fuenteHecho:
-      "Historia del teatro, hecho libre: las compañías de provincias vivieron durante el siglo XIX de repertorio traducido y de refritos extranjeros, y el paso a obra escrita en la lengua o el habla del público fue un episodio corriente y tardío en muchas de ellas. El pueblo, la compañía, el maestro de escuela, la fecha de 1893 y las once funciones son invención propia: el pasaje no atribuye ninguna primicia a nadie ni describe ningún teatro real. Sin país, sin moneda y sin medidas, como el resto del módulo.\n\n**Este ítem sustituye al de historia editorial que ocupaba esta fila** (impresor de provincias, «In 1846», el verbo «contain»), retirado por R11 en la quinta vuelta; el porqué está en el punto 5 ter de la cabecera. Las dos correcciones de equidad y veracidad que aquel arrastraba se conservan como criterio y no como texto: no se afirma ninguna primicia histórica que no se pueda sostener —era el error de un siglo del pasaje de 1846— y no hay ninguna referencia nacional que no aporte nada al ítem, que era lo que se le quitó al «ordinary American bookstore» de aquel cierre.",
-  },
-  {
-    id: 'q20',
-    domain: 'SEC',
-    tipo: 'boundaries',
-    dificultad: 2,
-    tema: 'historia',
-    regla:
-      "Frontera entre dos oraciones independientes cuando la segunda empieza por un adverbio conjuntivo: «however» enlaza el sentido pero no une sintácticamente, de modo que hace falta un punto y coma. La coma sola produce empalme (comma splice) y la ausencia de signo, una oración seguida.",
-    razones: {
-      A:
-        "Empalme de comas: a los dos lados del hueco hay oraciones con sujeto y verbo propios —«the company sent…» y «the fees… covered…»— y una coma no basta para separarlas. Es el error de quien trata «however» como si fuera «but»: «but» sí es conjunción coordinante y admitiría la coma, «however» no lo es.",
-      B:
-        "Sin ningún signo quedan dos oraciones seguidas sin frontera, y el lector arrastra «however» al final de la primera —«fewer than two hundred official messages however»— hasta que el segundo verbo lo obliga a volver atrás. Es la apuesta segura de quien no lee la frase entera: en la duda, ningún signo.",
-      C:
-        "Correcta: el punto y coma separa dos oraciones independientes que no van unidas por conjunción coordinante, que es exactamente lo que hay aquí; «however» es un adverbio conjuntivo, señala el contraste y va seguido de su propia coma, pero no puede sostener él solo la unión.",
-      D:
-        "Los dos puntos anuncian que lo que sigue desarrolla, ilustra o cumple lo que se acaba de decir, y aquí lo que sigue lo contradice: «however» avisa de un contraste, no de una ampliación. Es el error de quien ve dos hechos relacionados y coloca los dos puntos como si cualquier relación fuera explicación.",
-    },
-    fuenteHecho:
-      "Historia de las telecomunicaciones, hecho libre: las líneas telegráficas se justificaron ante la opinión pública como instrumento de gobierno y se sostuvieron con tráfico comercial. La línea, el paso de montaña, 1868, la guarnición y el mercado de la lana son invención propia. Distancias en kilómetros, como el resto del examen: ninguna medida imperial obliga al estudiante a convertir bajo cronómetro. Por la misma razón el plazo es «two weeks» y no «fortnight»: la palabra es británica, queda fuera del currículo escolar de inglés en Colombia y en casi toda Latinoamérica, y aquí **no es adorno** —es la mitad del contraste «una hora en vez de…» que hace inteligible la promesa con la que se vendió la línea—, de modo que quien no la conociera perdía la premisa del párrafo entero.",
+      "Historia del teatro, hecho libre: las compañías de provincias vivieron durante el siglo XIX de repertorio traducido y de refritos extranjeros, y el paso a obra escrita en la lengua o el habla del público fue un episodio corriente y tardío en muchas de ellas. El pueblo, la compañía, el maestro de escuela, la fecha de 1893 y las once funciones son invención propia: el pasaje no atribuye ninguna primicia a nadie ni describe ningún teatro real. Sin país, sin moneda y sin medidas, como el resto del módulo.\n\n**Este ítem sustituye al de historia editorial que ocupaba esta fila** (impresor de provincias, «In 1846», el verbo «contain»), retirado por R11 en la quinta vuelta; el porqué está en el punto 5 ter de la cabecera. Las dos correcciones de equidad y veracidad que aquel arrastraba se conservan como criterio y no como texto: no se afirma ninguna primicia histórica que no se pueda sostener —era el error de un siglo del pasaje de 1846— y no hay ninguna referencia nacional que no aporte nada al ítem, que era lo que se le quitó al «ordinary American bookstore» de aquel cierre.\n\n**El pasaje se partió por oraciones el 22 ago 2026 y no cambió de contenido.** La oración del hueco era la más larga del módulo después de la de q25 —38 palabras— y se corta detrás de «in the speech of the market square»: quien escribió la pieza pasa a oración propia, «Its author was a schoolteacher who had never published a line». El pasaje baja de 26,3 a 21,4 palabras por oración de media y de 38 a 30 la más larga. Las tres condiciones de clave única siguen cumplidas —la fecha dentro de la oración del hueco, el trasfondo en pluscuamperfecto unido por «when» y ningún hecho pasado posterior al que el estreno preceda—, y ni una opción ni una razón se tocaron. El detalle está en la sección «CALIBRACIÓN» de la cabecera.",
   },
   {
     id: 'q21',
@@ -584,7 +633,7 @@ export const meta: SatItemMeta[] = [
     id: 'q22',
     domain: 'SEC',
     tipo: 'boundaries',
-    dificultad: 3,
+    dificultad: 2,
     tema: 'humanidades',
     regla:
       "Punto y coma como separador de serie: cuando los miembros de una enumeración llevan comas dentro —aquí, tres relativas explicativas—, los miembros se separan con punto y coma, y también el último, el que va precedido de «and». Mezclar los dos niveles de separación deja la serie sin jerarquía.",
