@@ -2,662 +2,160 @@ import type { MCQQuestion } from '../../types'
 import type { SatItemMeta } from '../module-types'
 
 /**
- * Bloque Craft and Structure del módulo `sat-set-1-m2-facil` — ítems q01 a q08.
+ * Bloque Craft and Structure del módulo `sat-set-1-m2-facil` — ocho ítems, q01 a q08.
  *
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 1-8). Textos originales de WeLearn;
  * ni un pasaje ni una pregunta salen de material de College Board (blueprint §5).
  *
- * ⚠️ **Desde la novena versión el array NO va en orden de id.** El orden de pantalla es
- * `q02 · q01 · q03 · q04 · q07 · q06 · q05 · q08`, y cada id viaja con su contenido: el
- * ítem llamado `q05` es el séptimo que ve el estudiante. Está explicado abajo, con la
- * colisión que esto abre con el guardián.
+ * ⚠️ **El array NO va en orden de id.** El orden de pantalla es
+ * `q02 · q03 · q04 · q01 · q07 · q06 · q05 · q08`, y **cada id viaja con su contenido**: el
+ * ítem llamado `q01` es el cuarto que ve el estudiante. El id es un nombre, no una posición
+ * —el guardián lo admite así desde que su puerta `ids` pasó a comprobar formato y unicidad
+ * en vez de «id == posición»—, y ese nombre está en el plan, en el acta y en once informes
+ * de auditoría: renumerar movería cada nombre a otra pregunta, que es justo el daño que la
+ * puerta existía para evitar.
  *
- * Las claves son las del plan y no se negocian ítem a ítem: cada id conserva la suya
- * —q01 B, q02 C, q03 D, q04 A, q05 B, q06 C, q07 A, q08 D— y en pantalla salen en el
- * orden C · B · D · A · A · C · B · D. El reparto de letras se defiende a nivel de
- * módulo: mover una sola aquí rompe la puerta 1 en el otro extremo del examen, donde ya
- * nadie la va a mirar.
+ * **Claves, las del plan, y no se negocian ítem a ítem:** q01 B · q02 C · q03 D · q04 A ·
+ * q05 B · q06 C · q07 A · q08 D. En pantalla salen **C · D · A · B · A · C · B · D**:
+ * reparto A×2 B×2 C×2 D×2, sin tres letras iguales seguidas ni dentro del bloque ni en la
+ * costura con el bloque siguiente, que abre en B. Mover una sola clave aquí rompe la puerta
+ * 1 en el otro extremo del examen, donde ya nadie la va a mirar.
  *
- * Los cuatro `words-in-context` llevan el enunciado del SAT digital —«Which choice
- * completes the text with the most logical and precise word or phrase?»— con el hueco
- * marcado en el texto. «As used in the text… most nearly mean?» es del SAT de papel y
- * aquí no aparece (plan, tabla de enunciados).
+ * **Dificultad declarada**, medida con los cinco ejes del calibrador y no puesta a ojo:
+ * **1 · 1 · 1 · 2 | 3 · 3 · 3 | 3** en el orden de pantalla, creciente dentro de cada grupo
+ * de tipo, que es lo que mira la puerta 9. Los dos ítems más ligeros abren el bloque.
  *
- * ── Segunda versión, después de medir con panel ─────────────────────────────
+ * Los cuatro `words-in-context` llevan el enunciado del SAT digital —«Which choice completes
+ * the text with the most logical and precise word or phrase?»— con el hueco marcado en el
+ * texto. «As used in the text… most nearly mean?» es del SAT de papel y aquí no aparece
+ * (plan, tabla de enunciados).
  *
- * El panel de diez solucionadores sin los textos dejó el módulo en 44 % con el techo en
- * 35 %. De este bloque, **q05 y q06 los acertaron 9 de 10 sin leer**: los dos de
- * estructura y propósito. La causa es **R9/R12**: sin el texto gana la opción que suena
- * más completa o más «de examen», y esa era la clave en los dos.
+ * ══════════════════════════════════════════════════════════════════════════════
+ * LO QUE NO SE PUEDE TOCAR
+ * ══════════════════════════════════════════════════════════════════════════════
  *
- * - **q05** ya compartía el arranque en las cuatro opciones; lo que las separaba era el
- *   cierre, y solo la clave tenía la forma matizada «lo que sí y lo que no». Se igualó la
- *   forma: las cuatro en «closes by saying X and Y», dentro de ocho caracteres.
- * - **q06** iba en cuatro moldes distintos («It excuses…», «It fixes…», «It gives…»,
- *   «It marks…»), y solo el de la clave nombraba un método. Se igualó también, a
- *   «It points to Sofía's <mitad de la frase> as the <papel> …», y se repartió dos y dos
- *   la mitad de la frase citada para que las novelas no señalaran solas a la clave.
+ * Cada línea de aquí abajo es una frase, un molde o un cruce de opciones que sostiene la
+ * clave única de un ítem o el trabajo contra la prueba a ciegas. Todas parecen relleno de
+ * estilo y ninguna lo es: quien recorte una, deja el ítem con dos respuestas o lo devuelve a
+ * ser adivinable sin leer. **Quien tenga que acortar un texto, que empiece por otra frase.**
  *
- * **q03** volvió del auditor de clave por gemelo de q01: los dos eran «X ______ Y: sigue
- * ahí / vuelve en su sitio, **pero**…» y los dos se contestaban con «conserva la forma,
- * pierde la sustancia», de modo que quien resolvía q01 contestaba q03 sin leer. Encima
- * `buries` repetía la metáfora de ocultar de la clave de q01, `masks`. Rehecho: toda la
- * evidencia va **antes** del hueco y la oración del hueco —«Whatever else such a version
- * gets right, it ______ the refrain»— no lleva ningún andamio que copiar; hay que volver
- * arriba. `buries` sale y entra `displaces`, que niega algo que el texto afirma dos
- * líneas más arriba (el estribillo vuelve en su sitio) y no comparte metáfora con q01.
+ * **Regla que gobierna cualquier bajada de nivel.** El margen está en **T** (complejidad del
+ * pasaje) y en **L** (cuántas partes del texto hay que cruzar): partir oraciones largas,
+ * hacer explícitos los referentes, glosar el término opaco de la entrada. **Las opciones y
+ * sus razones no se tocan:** ahí vive lo que costó siete vueltas de panel, y aflojarlas
+ * reabre las fugas. Corolario que dejó la undécima versión: **un ítem fácil se escribe fácil
+ * desde el pasaje**; ablandar uno ya endurecido no funciona, y aflojarle las opciones
+ * deshace el trabajo.
  *
- * Correcciones menores de la misma ronda: q02 dejó de sostener `hurried` con el texto
- * («started the next before I had finished» → «asked the next as if I had finished») y
- * `well meant`, única opción de dos palabras, pasó a `considerate`; q03 define `couplet`
- * como `two-line couplet`; q04 explica la institución en vez de nombrarla y fecha la
- * devolución («returned the following Tuesday», que antes era `returned the next` y se
- * leía «al día siguiente»); q05 corrige un **dato falso** sobre el ciclo del flotador
- * (ver `fuenteHecho` de q05); q07 simplifica la sintaxis de la clave sin cambiar lo que
- * dice; y q08 iguala la coma de Oxford al resto del examen.
+ * **q01 · los tránsitos (clave B, `obscures`).**
+ * - «unchanged in depth» — sin ella, `reverses` y `amplifies` se defienden.
+ * - «dimming it by as much or more» (razones A y D) y «on a schedule of their own» (razón C).
+ * - **La oración del hueco no se parte**, por larga que sea (36 palabras): la razón de la
+ *   clave está escrita como «lo dice por partes» y cita sus dos mitades.
+ * - Longitudes 8 · 8 · 8 · 9 con la clave en 8: ni la más larga ni la más corta en solitario.
+ *   `masks`, de 5, fue el caso que obligó a añadir la cara corta a la puerta 2.
  *
- * Por **R2**, los siete ítems tocados vuelven enteros a la cola de auditoría y la prueba
- * a ciegas hay que repetirla sobre estas opciones.
+ * **q02 · la abuela (clave C, `automatic`).**
+ * - Las tres conductas van **justo después del hueco** y la razón de la clave las cita
+ *   literales: «heard half the answer», «asked the next as if I had finished» y «twice she
+ *   came back to a question I had already answered», más el cierre «her eyes went to the
+ *   window».
+ * - La sexta oración empieza por «And», y es deliberado: es la única forma de partir ahí sin
+ *   cambiarle la mayúscula a una cita literal de una razón.
+ * - El texto ya **no** sostiene `hurried` —«started the next before I had finished» se
+ *   cambió a propósito—. Quien lo reponga, resucita una segunda clave.
  *
- * ── Tercera versión: q05 y q06, otra vez ───────────────────────────────────
+ * **q03 · la capilla de Aldrec (clave D, `landmark`).**
+ * - «For the men who fish here» — reduce la pregunta al uso y deja fuera el motivo de 1712.
+ *   Sin ella, `monument` se defiende y el ítem tiene dos claves.
+ * - Un anclaje por distractora, cada una con su cláusula: `refuge` ← lo que el mundo sabe de
+ *   las capillas de la costa, y cae por «The door is unlocked one day a year»; `monument` ←
+ *   la viuda de 1712; `boundary` ← «where the village ends».
+ * - La clave vive en las dos oraciones anteriores al hueco: «the white shows up far out» y
+ *   «lines the wall up with the pier and steers in on that line».
  *
- * Igualar la forma no solo no arregló estos dos: los **empeoró**. El panel a ciegas pasó
- * de 9/10 a **10 de 10 en los dos**. Es el caso que motivó **R13** (blueprint §4 bis): en
- * estructura y función la fuga no es la forma, es el sentido.
+ * **q04 · el monte de la abadía (clave A, `license`).**
+ * - «for the right to cut» — impide leer el cobro como multa o como precio de la madera, que
+ *   es lo único que separa la clave de una segunda lectura.
+ * - Anclajes: `prohibit` ← «cutting a standing tree was theft»; `register` ← «counted them,
+ *   wrote down the number»; `ignore` ← «went to no court». La clave la cierran «four coins a
+ *   year» y «collected with the rent, like any other due»: periódico y ordinario.
  *
- * - **q05.** Con las cuatro opciones en el mismo molde, la clave era la **más general**:
- *   «qué cambia el registro nuevo y qué no» encaja en casi cualquier texto con esa forma,
- *   mientras que las otras tres nombraban contenidos concretos que podían estar o no. Lo
- *   genérico es la apuesta segura de quien no ha leído. Encima C decía casi lo mismo que
- *   B con otras palabras, y dos opciones que se solapan se cancelan entre ellas.
- * - **q06.** La misma fuga por el otro lado: de las cuatro funciones ofrecidas, la clave
- *   era la única que describía un texto **bien hecho**. Las otras tres —una excusa del
- *   narrador, una distancia de edades que no se usa, una duda que el personaje no tiene—
- *   eran funciones que ningún escritor competente le daría a esa frase. Los textos bien
- *   hechos son predecibles, así que se adivinan.
+ * **q05 · los flotadores (clave B).**
+ * - **Las cuatro opciones comparten dos tercios —221-229 caracteres— y solo se distinguen
+ *   por el cierre: ese molde ES el arreglo que cerró su fuga.** No se acorta, no se iguala
+ *   más y no se reparte de otro modo.
+ * - El ciclo tiene que seguir siendo el real —nueve días a un kilómetro, al décimo día a
+ *   dos, perfil tomado en el ascenso—: la primera versión enseñaba un dato falso, y un
+ *   simulacro no puede enseñar un dato falso ni de paso.
+ * - «report from stretches of the Southern Ocean that no research vessel visits in winter»
+ *   (razón C) y el cierre entero: «not longer than the old one» / «It is more evenly spread».
  *
- * Rehechos según R13: **las cuatro opciones al mismo grado de concreción, y cada
- * distractora es la descripción impecable de un texto ligeramente distinto**, no una
- * descripción torpe del texto que hay.
+ * **q06 · Sofía y el vecino (clave C).**
+ * - Las cuatro opciones arrancan igual, «It pauses on Sofía's age and her reading to …»: el
+ *   molde común es el arreglo que cerró su fuga de sentido; partir la frase en mitades
+ *   devuelve la pista de segundo orden —qué mitad se cita—.
+ * - Sostienen las razones: «Within a week Sofía had decided he was a widower» (A, el juicio
+ *   ya está dado antes), la narración externa de principio a fin (B), las tres pruebas de
+ *   Sofía (C) y que la edad del vecino no vuelve a cruzarse con la suya (D).
+ * - «across the hall», no «landing»: arreglo de equidad, y está en la puerta del texto.
+ * - Candidato barato para quien siga bajando T: la oración de 44 palabras con las tres
+ *   pruebas es la más larga del bloque, y partirla no roza ninguna razón.
  *
- * - **q05** conserva el arranque común —el límite del barco y el ciclo del flotador, que
- *   el texto sostiene— y cambia los cuatro cierres. Los cuatro son ahora igual de
- *   concretos, los cuatro nombran dos miembros y tres de los cuatro son concesivos
- *   («granting», «admitting», «conceding»), para que la forma de concesión deje de marcar
- *   a la clave. Cada uno es un final creíble para un texto sobre este mismo tema:
- *   comparar cantidades de lecturas, conceder que la serie no es más larga, reconocer una
- *   laguna todavía abierta, pedir más años. Solo el pasaje dice cuál ocurre.
- * - **q06** deja de partir la frase en mitades: las cuatro opciones arrancan en «It pauses
- *   on Sofía's age and her reading to …», de modo que la pista de segundo orden —qué
- *   mitad se cita— desaparece del todo. Las cuatro funciones son de las que un buen
- *   escritor querría para un inciso así: presentar al personaje antes de que juzgue,
- *   apartarse por una vez de su punto de vista, explicar de dónde sale su interpretación
- *   y enfrentar dos edades. Tres se caen con el texto delante, y por un hecho comprobable
- *   cada una: el orden de las frases, un punto de vista que nunca estuvo dentro y un
- *   contraste que no vuelve a usarse.
+ * **q07 · el concierto barroco (clave A).**
+ * - «strings of gut instead of steel» (equidad), «the treatises were written to correct
+ *   players, not to describe them» (razones A y D), la primera línea con 1955 y 1995 y sin
+ *   un elogio a lo antiguo (razón C) y **las dos últimas oraciones enteras**, que son la
+ *   objeción y que la razón D nombra como tales.
+ * - «authentic» cierra la serie de rasgos justo delante de «What that word hides…»: el
+ *   referente de «that word» tiene que quedar pegado.
+ * - Ninguna palabra del pasaje entra en la clave, que dice «written rules», «practice» y
+ *   «fix».
  *
- * Longitudes medidas, no estimadas: q05 va de 221 a 229 caracteres (clave, 224) y q06 de
- * 128 a 133 (clave, 130). En ninguno de los dos la clave es la opción más larga.
+ * **q08 · el pozo de Cwm Brys (clave D).**
+ * - Las cuatro opciones contestan con la misma forma —«each band is …»— y **las cuatro
+ *   niegan la lectura ritual**, de modo que ninguna es «la respuesta de examen».
+ * - Una cláusula por distractora y ninguna compartida: «wider at the top than any of the
+ *   pots» (A), «rounded and worn … before burial» (B), «the lowest band would hold the
+ *   oldest; instead every band holds the same two hundred years» (C).
+ * - La clave se sostiene sobre dos hechos y no sobre un paso de razonamiento: «Parts of one
+ *   jar came out of the lowest band and the highest» y el mismo abanico de dos siglos dentro
+ *   de cada banda, más el cierre «did it four times over».
  *
- * Las claves siguen siendo las del plan —q05 → B, q06 → C— y por **R2** los dos vuelven
- * enteros a la cola de auditoría: la prueba a ciegas hay que repetirla sobre estas
- * opciones, no sobre las anteriores.
- *
- * ── Cuarta versión: q08 (distractor muerto) y la familia q01/q03/q04 ───────
- *
- * La ciega del módulo bajó a 15,9 % y ninguno de los ocho filtra. Lo que quedaba no se ve
- * ítem a ítem.
- *
- * **q08 — dos distractores, un solo error.** (Las letras de este párrafo son las de
- * entonces; la quinta versión permutó el ítem y la opción del tercero nunca expuesto es
- * hoy la **A**.) B y D fallaban por el mismo camino: los dos
- * pedían **inventar** un dato que el texto 2 no da —B una limpieza posterior, D que el
- * modo de trabajar valiera solo para esos años—. Dos distractores con un error cuentan
- * como uno, y de D no se podía escribir «el estudiante que elige esta es el que…»: nadie
- * llega ahí leyendo mal, hay que traerlo de fuera. D se rehace **sobre un dato que el
- * texto 2 sí trae**, «exhibited two of the three»: el tercero, nunca expuesto, sería la
- * excepción. Ahora el fallo es una mala lectura, y encima tiene apoyo real, porque el
- * principio del texto 2 nombra tres actos —«prices, varnishes, and sells»— y al tercer
- * lienzo solo le consta el barniz. Para que siga siendo mala lectura y no segunda clave,
- * el texto 2 cierra alcanzando a los dos grupos por su nombre: «— not in the two that hung
- * on a wall, and not in the one that never did». **Esa cláusula es la que sostiene la
- * clave única: no se recorta.** B se queda como estaba y solo se reescribe su razón, que
- * ahora nombra a su estudiante —el que explica los contornos por pintura perdida después,
- * no por pintura que nunca se puso—, un error distinto del de D.
- *
- * **q01, q03 y q04 eran el mismo ítem tres veces.** Cambiaban de tema, de léxico y de
- * opciones, pero los tres se resolvían con el mismo algoritmo: una concesión que garantiza
- * que la forma sobrevive intacta —«unchanged in depth… on its own fixed cycle», «on time
- * and in the place the form requires», «leaves any trace at all»—, un hueco que pide el
- * verbo de pérdida cualitativa y un abanico con un intensificador y un positivo. Quien
- * aprende «tras una concesión del tipo *sigue ahí, pero*, elige el verbo de pérdida que no
- * toca la forma» contestaba tres de los cuatro de vocabulario sin leer el tema. Solo q02
- * se salía.
- *
- * Se rompe por **q04**, el más barato de mover. Texto nuevo —historia industrial— y otra
- * relación: la pregunta ya no es qué pierde un registro, sino **en qué orden ocurrieron
- * dos cosas**. No hay concesión, el hueco va en la primera oración y la clave no es un
- * verbo de pérdida. De paso desaparece una duplicación de tema que nadie había mirado: el
- * q04 viejo (un libro de préstamos que no dice lo que se le pide) hacía pareja con el q16
- * de SEC, cuyos libros del salinar «say less about the salt trade than about the men who
- * kept them». La clave sigue en **A**, la del plan.
- *
- * Con esto los cuatro `words-in-context` piden cuatro cosas distintas: q01, una señal que
- * se conserva entera y deja de distinguirse del fondo; q02, un adjetivo de manera deducido
- * de tres conductas; q03, qué se conserva y qué se pierde en una traducción; q04, la
- * dirección del tiempo entre dos edificios que se parecen.
- *
- * **Frases que no se pueden recortar.** Son las únicas que impiden una segunda clave y
- * parecen relleno de estilo. Quien acorte un texto por longitud, que empiece por otra:
- *
- * - q01 · «unchanged in depth» — sin ella, `reverses` y `amplifies` se defienden.
- * - q03 · «saying each time exactly what it said before» (cierra `generalizes` y
- *   `overloads`) y «one word closes every two-line couplet» (cierra `exhausts`: la
- *   repetición es de la forma y el persa la cumple igual). «on time and in the place the
- *   form requires» sostiene la premisa común de las cuatro opciones —todas son pérdidas
- *   que dejan intacto el retorno—. Actualizado en la sexta versión: hasta entonces esta
- *   línea cerraba `displaces`, opción que ya no existe.
- * - q04 · «The resemblance is exact; the order is not» (cierra `imitates`) y «nothing links
- *   it to them, no drawing, no letter, no recorded visit» (cierra `inspires`, que es el
- *   distractor fino: acepta la fecha y da el paso de más, de «fue antes» a «de ahí
- *   salieron»).
- * - q08 · **HISTÓRICO, no buscar en el código: este ítem se retiró en la novena versión.**
- *   La frase era «not in the two that hung on a wall, and not in the one that never did» y
- *   sin ella el ítem de los lienzos tenía dos claves. Las frases que no se pueden recortar
- *   del q08 actual —el del pozo— están en la novena versión, una por distractora.
- *
- * **Molde compartido en q05, q06 y q08 (aviso, no defecto).** Los tres llevan la misma
- * premisa en las cuatro opciones y solo la cola en disputa, y tres de ocho enseñan a leer
- * solo el final. Se deja, y por qué: en q05 y q06 el molde **es** el arreglo que cerró su
- * fuga (tercera versión), y en q08 la concesión compartida es lo que obliga a las cuatro
- * opciones a discutir el mismo objeto —los pasajes desnudos—; si cada una concede una cosa
- * distinta, el solucionador a ciegas vuelve a tener dónde agarrarse: elige la que suena
- * más «respondona», que es la fuga clásica de `cross-text-connections`. Cambiar la
+ * **Molde compartido en q05, q06 y q08 — aviso, no defecto.** Tres de ocho llevan la misma
+ * premisa en las cuatro opciones y solo la cola en disputa, y eso enseña a leer solo el
+ * final. Se deja porque en los tres el molde **es** el arreglo que cerró su fuga. Cambiar la
  * redacción de la premisa sin cambiar su contenido es cosmético: la cola sigue siendo lo
- * único que decide. (Sigue vigente con el q08 de la novena versión: cambia el escenario,
- * no el molde — premisa compartida, «each band is …», y la cola en disputa.)
- *
- * **Dos arreglos de equidad, de la revisión hecha con un estudiante colombiano delante.**
- * Los dos están en la **entrada** del texto, que es donde un término opaco no cuesta un
- * matiz sino el pasaje entero:
- *
- * - **q06** · «across the landing» → «across the hall». `landing` (rellano) es de baja
- *   frecuencia y el escenario no se recupera hasta dos frases después, así que el
- *   estudiante empezaba a leer sin saber dónde estaba.
- * - **q07** · «gut strings» → «strings of gut instead of steel». Eran cuatro tecnicismos de
- *   música sin glosar en una sola cláusula; la tarea no depende de ninguno, pero son la
- *   puerta del texto. Se abre el primero y los otros tres se dejan estar: glosarlos todos
- *   convertiría la cláusula en un diccionario.
- *
- * Ninguno de los dos toca las opciones ni el reparto de longitudes —q06 sigue en 128-133
- * con la clave en 130, q07 en 79-83— y las palabras añadidas no aparecen en ninguna
- * opción, así que no se crea pista léxica. Longitud de texto: q06 89 «palabras de 6», q07
- * 101; las dos dentro de 25-150. (La cifra de q07 es de entonces: desde la décima versión
- * son 113,2, y sigue dentro de 25-150.)
- *
- * Por **R2**, q04 y q08 vuelven enteros a la cola de auditoría y la ciega se repite sobre
- * estas opciones. Claves del plan de entonces: B, C, C, A, B, C, A, A.
- *
- * ── Quinta versión: reparto de letras dentro del bloque ────────────────────
- *
- * El auditor de sesgo de conjunto midió el módulo entero (A7 B7 C7 D6, correcto) y luego
- * bloque a bloque: aquí, de ocho ítems, la clave **no estaba en la D en ninguno**. Quien
- * lo nota descuenta la última opción y sube del 25 % al 33 % sin leer nada. Es el defecto
- * que no se ve revisando ítem a ítem, solo contando.
- *
- * Cambio **puramente mecánico**: ni una palabra nueva en textos, enunciados ni opciones.
- * Se permutan las cuatro opciones de dos ítems y viajan con ellas sus cuatro razones.
- *
- * - **q03** · clave C → **D**. Permutación: `sharpens` y `flattens` intercambian sitio;
- *   `restores` y `displaces` se quedan. (Historia: la sexta versión cambió las cuatro
- *   opciones de q03; de este párrafo solo sigue vigente la clave, **D**.) Las cuatro eran
- *   de 8-9 caracteres, así que la posición no creaba pista de longitud, y ninguna de las
- *   cuatro aparecía en el pasaje.
- * - **q08** · clave A → **D**. Permutación: la clave y la opción del tercero nunca
- *   expuesto intercambian sitio; las de la limpieza posterior y las obras barnizadas se
- *   quedan. Las cuatro comparten premisa y solo discuten la cola: tres cuerdas de 109
- *   caracteres y una de 113, con la clave en 109 —ni la más larga ni sola en la más
- *   corta—. Solape léxico de la cola con los dos textos: 2/5 en la clave, entre 1/4 y 3/5
- *   en las otras tres; la clave sigue sin ser ningún extremo.
- *
- * Reparto del bloque después del cambio: **A×2 B×2 C×2 D×2**. Claves vigentes, y son las
- * únicas que valen de aquí en adelante: **B, C, D, A, B, C, A, D**.
- *
- * ── Sexta versión: el abanico de q03 (defecto de conjunto q01/q03) ─────────
- *
- * Romper la familia de tres por q04 (cuarta versión) dejó un **par**, y el par seguía
- * entero. q01 y q03 tenían las mismas cuatro ranuras y la clave en la misma:
- *
- *     ranura                                  q01         q03 (quinta versión)
- *     pérdida que no toca la forma → CLAVE    masks       flattens
- *     intensificador                          amplifies   sharpens
- *     positivo                                explains    restores
- *     niega la forma conservada               reverses    displaces
- *
- * En el mismo bloque y con dos ítems de por medio, quien resuelve q01 contesta q03 en diez
- * segundos sin volver al texto: un ítem regalado y setenta segundos de propina. Y q02
- * (`automatic`) paga la misma intuición en otro traje, así que **tres de los cuatro
- * `words-in-context` premiaban «la forma se conserva, la sustancia se pierde»**.
- *
- * El texto no se toca: está bien y su evidencia ya vive entera por encima del hueco
- * (tercera versión). Se rehace **el abanico**, con otro principio: **las cuatro opciones
- * son pérdidas y las cuatro dejan intacto el retorno** —cada pareado, puntual, en el lugar
- * que la forma pide—. La pregunta deja de ser «¿cuál de las cuatro es la pérdida que no
- * toca la forma?» —que se contesta descartando el positivo, el intensificador y el que
- * niega la forma, sin leer el tema— y pasa a ser «¿cuál de estas cuatro pérdidas nombra el
- * texto?», que solo se contesta comparando lo que hace la palabra persa («moves as the
- * poem goes») con lo que hace la inglesa («exactly what it said before»).
- *
- * Abanico nuevo: `generalizes` · `overloads` · `exhausts` · `flattens` (clave, **D**, la
- * del plan). Ninguna es positiva, ninguna intensifica y ninguna mueve el estribillo de
- * sitio: las tres ranuras que q01 enseña a descartar no existen aquí, de modo que el
- * algoritmo de q01 no elimina ni una opción. Cada distractora es un camino real y cae por
- * una cláusula distinta:
- *
- * - `generalizes` — quien supone que se busca una palabra ancha donde quepan las tres
- *   acepciones. La versión hace lo contrario: «settles on one», «exactly what it said
- *   before».
- * - `overloads` — quien supone justo lo inverso, que esa única palabra carga con las tres
- *   a la vez. Cae por la misma frase leída del otro lado: nunca dice más de lo que dijo.
- * - `exhausts` — quien oye el defecto en la repetición y no en el sentido. La repetición
- *   no la añade el inglés: es de la forma, y el persa la cumple igual —«one word closes
- *   every two-line couplet»—.
- *
- * Longitudes: 11, 9, 8 y 8 caracteres, con la clave en 8 y acompañada por `exhausts`; ni
- * la más larga ni sola en la más corta. Ninguna de las cuatro aparece en el pasaje. Dos
- * son transparentes para un hispanohablante (`generalizes`, `exhausts`) y dos no
- * (`overloads`, `flattens`), así que el parecido con el español tampoco señala a la clave.
- *
- * Lo que piden ahora los cuatro `words-in-context`: q01, una señal que se conserva entera
- * y deja de distinguirse del fondo; q02, un adjetivo de manera deducido de tres conductas;
- * q03, **cuál de cuatro pérdidas posibles es la que el texto nombra**; q04, la dirección
- * del tiempo entre dos edificios que se parecen.
- *
- * Por **R2**, q03 vuelve entero a la cola de auditoría y su ciega se repite sobre estas
- * cuatro opciones, no sobre las de la quinta versión. Clave sin cambios: **D**.
- *
- * ── q08 y el racimo de pintores: por qué NO se ha tocado ───────────────────
- *
- * **HISTÓRICO.** La novena versión retiró este ítem y el racimo se deshizo por sí solo.
- * Se conserva el razonamiento porque el criterio —mover un ítem de oficio cuesta rehacer
- * la cadena de cláusulas que sostiene su clave única— vale para el siguiente que se mueva.
- *
- * El auditor de conjunto midió un racimo real: q08 y q11 comparten `painter`, `canvases`,
- * `studio` y `unfinished`, el distractor B de q11 nombra literalmente el objeto de q08
- * («the unfinished canvases … into the studio»), y con q18 son tres ítems del módulo en un
- * museo. Se estudió mover q08 y se decidió **no moverlo**. Las razones, para que nadie lo
- * intente sin leerlas:
- *
- * 1. Mover q08 no es cambiar palabras: es cambiar de oficio, y con el oficio se rehacen
- *    los dos textos, las cuatro opciones, las cuatro razones y la ficha de hecho. La clave
- *    única de este ítem cuelga de una cadena de cuatro cláusulas que habría que
- *    reconstruir entera en el oficio nuevo: «exhibited two of the three», «He varnished
- *    all three himself», «a painter who prices, varnishes, and sells a canvas has declared
- *    it done» y «not in the two that hung on a wall, and not in the one that never did».
- *    Ese es el arreglo de la cuarta versión, y es lo que se pone en juego.
- * 2. La distractora B exige un oficio donde **algo pueda perderse después** —una limpieza
- *    que se lleva pintura—. Los oficios que lo permiten (pintura, tapiz, manuscrito) son
- *    los que devuelven el ítem al museo; los que no (ebanistería, relojería) dejan a B sin
- *    camino y el ítem recupera el distractor muerto que la cuarta versión cerró.
- * 3. Los dos oficios ajenos al museo que sí sostendrían las cuatro opciones chocan con
- *    vecinos de este mismo bloque: un astillero, con los barcos de q05; un taller de
- *    instrumentos, con la música de q07. Se cambiaría un racimo por otro.
- *
- * El cambio barato —`canvases` → `wood panels`, `studio` → `workshop`, `unfinished` →
- * `incomplete`— quita las palabras compartidas y la colisión literal, pero deja en pie lo
- * que de verdad emparenta los dos ítems: **obra de un pintor que una institución clasificó
- * mal**. Por medio arreglo no compensa pagar otra vuelta a la cola de auditoría (R2) sobre
- * el `cross-text-connections` más frágil del bloque. Recomendación: deshacer el racimo en
- * **q11**, que no vive en este archivo y cuyo oficio no sostiene ninguna cadena de clave
- * única.
- *
- * ── Séptima versión: la clave más corta de q01 ─────────────────────────────
- *
- * Medidas las cuatro opciones de cada ítem, q01 salía con la clave sola en el extremo
- * corto: `reverses` 8, **`masks` 5**, `explains` 8, `amplifies` 9. Es una pista fina —una
- * palabra suelta y tres caracteres— pero es de la misma familia que las que se han cerrado
- * toda esta ronda, y **el guardián no la ve**: su puerta 2 solo comprueba si la clave es la
- * opción **más larga**, nunca si es la más corta en solitario. Lo que no se mide, se
- * repite.
- *
- * Se cambia una sola palabra: `masks` → **`obscures`**. Es la que menos mueve el sentido de
- * las cuatro, porque es la que el propio ítem ya defendía: lo que le pasa al bache es que
- * deja de distinguirse del fondo —«it no longer stands out from everything else the star is
- * doing»—, y eso es exactamente oscurecer una señal, no alterarla. Ni el texto, ni el
- * enunciado, ni las otras tres opciones, ni la clave (**B**, la del plan) se tocan; solo se
- * reescribe la razón de la clave, que decía «está enmascarada».
- *
- * Comprobado después del cambio, contando letras: `reverses` 8, `obscures` 8, `explains` 8,
- * `amplifies` 9. Tres de las cuatro miden lo mismo y la clave es una de esas tres, así que
- * **no es la más larga ni la más corta en solitario**: ya no hay ningún extremo ocupado por
- * una sola opción salvo el largo, que es de una distractora. Ninguna de las cuatro
- * aparece en el pasaje —el texto dice «dimming», «wandering», «stands out», y ninguna de
- * esas raíces está en las opciones—, y las cuatro siguen siendo transparentes para un
- * hispanohablante, de modo que el parecido con el español no señala a ninguna. La metáfora
- * de tapar tampoco choca con nada: q03 dejó de tener opciones de ocultar en la sexta
- * versión.
- *
- * (En la tabla de la sexta versión, la ranura de la clave de q01 sigue escrita como `masks`
- * porque así se midió el defecto de conjunto. Hoy esa ranura la ocupa `obscures`, con el
- * mismo sentido.)
- *
- * Por **R2**, q01 vuelve a la cola de auditoría. La ciega de q01 puede reaprovecharse con
- * cautela: cambia una palabra por un sinónimo, no el camino de ninguna de las cuatro
- * opciones ni la razón por la que cada distractora falla.
- *
- * ── Octava versión: q08, la fuga que la permutación destapó ────────────────
- *
- * Medido otra vez a ciegas, **q08 lo aciertan 9 de 10 sin los textos**. Antes no filtraba,
- * y entre una medición y otra lo único que cambió fue la permutación de la quinta versión
- * —clave de A a D, sin una palabra nueva—. Conclusión: la fuga llevaba ahí desde el
- * principio y solo estaba tapada por la posición. Una permutación no arregla ni rompe un
- * ítem; lo que hace es cambiar de sitio lo que ya fallaba.
- *
- * **El diagnóstico, R13 en su forma más limpia.** El enunciado dice cómo respondería el
- * autor del texto 2 al relato del texto 1 sobre los tres lienzos. Quien no ha leído nada
- * deduce del enunciado que el texto 2 sostiene que los cuadros están terminados —es lo que
- * pide la palabra «respond» en un `cross-text-connections`— y busca esa tesis entre las
- * cuatro colas. Estaba escrita en una sola:
- *
- *     clave  · «Vasco let them go in that state on purpose.»      ← la tesis, en limpio
- *     resto  · «a later cleaning … stripped them»                 ← la tesis + un dato
- *              «only the third, never exhibited, is unfinished»   ← la tesis + un dato
- *              «the varnished works show the same sequence»       ← la tesis + un dato
- *
- * Tres colas traían equipaje —una limpieza posterior, un tercer lienzo nunca expuesto, una
- * secuencia visible en las obras barnizadas— y la clave no traía ninguno. **La asimetría
- * no es de longitud ni de sintaxis: es que solo una contesta a secas lo que el enunciado
- * pregunta**, y eso se ve con los dos textos tapados. Es la misma fuga de q05 y q06 en la
- * tercera versión, y se arregla igual: no igualando la forma, sino subiendo las otras tres
- * al mismo grado de respuesta.
- *
- * > Las cuatro tienen que ser respuestas igual de limpias a lo que pide el enunciado. Tres
- * > posturas defendibles que el texto 2 no defiende, y una que sí.
- *
- * **Lo que se cambia.** El escenario no se toca —está argumentado arriba por qué no se
- * mueve este ítem de oficio— y la clave se queda en **D**, con su cola intacta. Se rehace
- * el abanico: las cuatro colas son ahora cuatro relatos rivales de lo mismo, qué son esos
- * contornos desnudos, cada uno en una cláusula y sin apéndices:
- *
- * - **A** · «two of the three were finished and one was not» — reparte el grupo. Pierde el
- *   inciso «never exhibited», que era el equipaje: el camino sigue entero, porque la cuenta
- *   que lo alimenta —«exhibited two of the three»— está en el texto 2 y no en la opción.
- * - **B** · sin cambios. Ya era una cola de una cláusula y su camino —explicar lo desnudo
- *   por pintura perdida después— es distinto del de las otras tres.
- * - **C** · entra el estudio, sale la secuencia de las obras barnizadas. La vieja C hablaba
- *   de otros cuadros; la nueva habla de los tres, que es de lo que va el enunciado. Y su
- *   camino es de verdad tentador: se apoya en «Whatever we are looking at, it is not work
- *   interrupted», la frase del texto 2 que parece darle la razón.
- * - **D** · la clave, palabra por palabra como estaba.
- *
- * **La cláusula que mata a la nueva.** Con el texto 2 anterior, C se defendía a medias: un
- * estudio también puede estar «declarado hecho», así que la frase final lo cerraba solo si
- * uno acepta que un estudio es «a stage on the way to something else» —lo es, pero es un
- * paso de razonamiento y una clave única no se sostiene sobre un paso de razonamiento—. Se
- * añaden dos palabras al texto 2, y solo dos: «priced them» → **«priced them as pictures»**.
- * Ahora C muere por el uso antes que por la definición: quien vende un estudio no lo vende
- * por cuadro. Es la única modificación de los textos en esta versión.
- *
- * **Medido después del cambio, no estimado.** Longitudes 113 · 109 · 114 · 109, con la
- * clave en 109: **ni la más larga ni sola en la más corta** —empata con B en el extremo
- * corto y el largo lo ocupa una distractora—. Solape léxico de cada opción con los dos
- * textos: A 4, B 3, C 6, **clave 4**, así que la clave no es la que más repite ni la que
- * menos, y contar coincidencias lleva a C. El estímulo pasa de 829 a 841 caracteres, 140,2
- * palabras-SAT, dentro de 25-150. Las cuatro razones son distintas entre sí y cada
- * distractora nombra a su estudiante.
- *
- * Por **R2**, q08 vuelve entero a la cola de auditoría y su ciega se repite sobre estas
- * cuatro opciones. Clave sin cambios: **D**, la del plan.
- *
- * ── Novena versión: bajar el nivel por el texto, no por las opciones ───────
- *
- * **Lo que se midió y por qué obliga a cambiar de herramienta.** El calibrador pasó los
- * cinco ejes sobre el módulo entero y la rama «estándar» salió en **10,48 frente al 10,07
- * del módulo 1**: el módulo que se sirve a quien NO llega al corte era más duro que el que
- * acaba de fallar. Declarado 13 fáciles / 11 medios / 3 difíciles; medido 6 / 8 / 13.
- *
- * La causa está escrita en las ocho secciones de arriba. Ocho rondas cerrando fugas
- * —igualar longitudes, subir las distractoras al mismo grado de respuesta, meter cláusulas
- * que impiden la segunda clave— **suben la distancia entre las opciones, y esa distancia
- * es dificultad**. Nadie midió el precio. De aquí sale la regla de esta ronda:
- *
- * > **El margen para bajar el nivel está en T (complejidad del pasaje) y en L (cuántas
- * > partes del texto hay que cruzar). Las opciones y sus razones no se tocan:** ahí vive
- * > el trabajo contra la prueba a ciegas, y aflojarlas reabre las fugas que costaron
- * > siete vueltas de panel.
- *
- * **q03 — el pasaje del gazal.** Medía 13 con un 2 declarado, y venía detrás de un 7: el
- * salto más grande del módulo. No sale ni una palabra de las cuatro opciones ni de sus
- * razones; sale densidad del pasaje. Lo que se hizo, y lo que deliberadamente no:
- *
- * - La oración de 47 palabras se parte en dos. Era la que llevaba a la vez la renuncia del
- *   traductor, la repetición y el «exactamente lo mismo cada vez»; ahora son dos oraciones
- *   de 14 y 22, y la segunda arranca con sujeto explícito, «The English word», en vez de
- *   con un pronombre que había que amarrar cuatro cláusulas atrás. Eso es L, no T.
- * - La oración de 40 palabras que abría el ejemplo se parte igual, y el triple aposito con
- *   raya deja de repetir «at the end of»: «It is a door in one couplet, a decision in the
- *   next, a departure in the last».
- * - `meets the same knot` → `all meet the same problem`. La metáfora del nudo era la
- *   primera imagen del texto y no se cobra en ninguna opción.
- * - `such a version` → `the translation` en la oración del hueco: el referente deja de
- *   tener que reconstruirse. **No se le añade andamio**: la oración del hueco sigue sin
- *   ninguna pista que copiar, que es el arreglo de la tercera versión.
- * - **No se toca ninguna de las tres frases protegidas** («saying each time exactly what it
- *   said before», «one word closes every two-line couplet», «on time and in the place the
- *   form requires»), ni las dos que citan las razones («No single English word holds all
- *   three senses, so the translator settles on one», «moves as the poem goes», «much of the
- *   poem's motion»). Están todas, palabra por palabra.
- *
- * Medido: 616 → 571 caracteres, 102,7 → 95,2 palabras-SAT, y la oración más larga baja de
- * **47 a 22 palabras** (5 oraciones → 8). El abanico sigue siendo `generalizes` ·
- * `overloads` · `exhausts` · `flattens`, con la clave en **D**.
- *
- * **q05 — el pasaje de los flotadores.** Medía 14 con un 1 declarado. Aquí el aviso es al
- * revés que en q03: **las cuatro opciones comparten dos tercios y suman unos 900
- * caracteres, y eso es el arreglo que cerró su fuga en la tercera versión. No se toca.**
- * Se bajó solo el pasaje, y solo por sintaxis:
- *
- * - La oración de 42 palabras del ciclo del flotador —punto y coma, tres verbos
- *   coordinados y un gerundio— se parte en tres de 13, 9 y 21.
- * - La de 34 con que abre —`…from ships, which meant it was measured…`— se parte en dos.
- * - `on the tenth` → `on the tenth day`: el ordinal deja de flotar sin sustantivo.
- * - `Several thousand are now at sea, and they report…` se parte en dos oraciones.
- *
- * Medido: 689 → 688 caracteres (el pasaje casi no encoge, porque partir oraciones cuesta
- * palabras) y la oración más larga baja de **42 a 21** (6 oraciones → 10). Aquí la bajada
- * es toda de T por vía sintáctica; no hay más margen sin entrar en las opciones.
- *
- * **Dos reordenamientos, sin escribir una palabra.** El calibrador comprobó que ninguno
- * rompe el reparto de claves ni junta dos temas iguales:
- *
- * - **q01 ↔ q02.** El grupo de vocabulario iba 8 · 7 · 13 · 12, es decir, empezaba bajando.
- *   Pasa a 7 · 8 · 13 · 12.
- * - **q05, q06, q07 se invierten.** El grupo de estructura iba 14 · 13 · 12, **exactamente
- *   al revés de lo que exige el blueprint**. Pasa a 12 · 13 · 14.
- *
- * Se intercambian los objetos enteros en `items` y en `meta`, y **cada id viaja con su
- * contenido**: no se renumera nada, porque las ocho secciones de arriba, el informe de
- * ciegas y el plan hablan de «q05» o de «q08» para referirse a un contenido, no a una
- * posición. Orden de pantalla resultante: `q02 · q01 · q03 · q04 · q07 · q06 · q05 · q08`.
- *
- * ⚠️ **Colisión conocida con el guardián.** `scripts/check-sat-exam.mjs` exige que el id de
- * cada ítem coincida con su posición (`q${i+1}`), así que con este orden la puerta `ids`
- * falla, y `check:sat` está dentro de `prebuild`. Las dos salidas son incompatibles entre
- * sí y **la decisión no es de este archivo**: o la puerta pasa a comprobar «ids únicos y
- * presentes en `meta`» en vez de «id == posición», o se renumera el bloque y se deja aquí
- * la tabla de equivalencias. Lo que no vale es bajar el umbral ni silenciar la puerta.
- *
- * **q08 retirado y sustituido.** Tercera medición seguida filtrando **9 de 10 a ciegas**.
- * El arreglo de la octava versión —subir las otras tres al mismo grado de respuesta— no lo
- * movió, y el diagnóstico de por qué es el mismo de siempre: en el escenario de los tres
- * lienzos, la tesis que el enunciado pide («¿los cuadros están terminados?») solo tiene una
- * forma limpia de decirse, «los dejó así a propósito», y esa forma era la clave. Las otras
- * tres podían acercarse, pero ninguna podía **ser** esa frase sin volverse la clave. Tres
- * intentos es señal suficiente, y ya hay precedente: el `q10` original se retiró por lo
- * mismo. Se retira el ítem de Aurelio Vasco entero —textos, opciones y razones—.
- *
- * El sustituto es de la misma fila del plan (CS · `cross-text-connections` · humanidades ·
- * dificultad 3 · clave **D**) y cambia de oficio: un pozo de la Edad del Bronce con cuatro
- * bandas de cerámica rota, leído como depósito ritual en el texto 1 y como vertido de
- * desechos en el texto 2. Lo que hace distinto el abanico:
- *
- * - **Las cuatro opciones contestan la misma pregunta con la misma forma**: «each band
- *   is …». Ninguna es la única que dice qué son las bandas, que era la fuga anterior.
- * - **Las cuatro niegan la lectura ritual.** La heurística del solucionador a ciegas ante
- *   un `cross-text-connections` de arqueología —«el texto 2 dirá que es basura»— ya no
- *   señala a una sola opción: reparte entre C y D, y B y A también son explicaciones
- *   mundanas. No queda ninguna que sea «la respuesta de examen».
- * - **Cada distractora muere por una cláusula propia**, ninguna compartida: A por la forma
- *   del hoyo («wider at the top than any of the pots»), B por el estado de las aristas
- *   («rounded and worn … before burial»), C por el reparto de fechas («the lowest band
- *   would hold the oldest; instead every band holds the same two hundred years»).
- * - **La clave se sostiene sobre dos hechos, no sobre un paso de razonamiento**: los
- *   fragmentos de un mismo jarro en la banda más baja y en la más alta, y el mismo abanico
- *   de dos siglos dentro de cada banda.
- *
- * Medido, no estimado: opciones 157 · 156 · 156 · 157, con la clave en 157 —empata en el
- * extremo largo, así que no es «la más larga» a efectos de la puerta 2, y el corto lo
- * ocupan dos distractoras—. Solape léxico con los dos textos: A 10, B 8, C 8, **clave 9**;
- * ni el máximo ni el mínimo, y contar coincidencias lleva a A. Estímulo de 861 caracteres,
- * 143,5 palabras-SAT, dentro de 25-150.
- *
- * **Efecto secundario que conviene apuntar: se deshace el racimo de pintores.** La sección
- * «q08 y el racimo de pintores» de arriba queda **histórica**: el ítem que describe ya no
- * existe. Al salir el estudio de Vasco, `painter`, `canvases`, `studio` y `unfinished`
- * desaparecen de este bloque y con ellos la colisión literal con el distractor B de q11.
- * Además la arqueología no aparece en ningún otro ítem de los dos módulos (comprobado por
- * búsqueda sobre los ocho bloques), así que el tema nuevo no crea otro racimo.
- *
- * **Dificultades reetiquetadas.** Estaban declaradas a ojo y el calibrador las midió. Se
- * copia la medición, no la intención:
- *
- *     id    declarado antes   medido   ahora   por qué
- *     q02        1              7        1     sin cambios
- *     q01        1              8        2     medido por encima de su etiqueta
- *     q03        2             13        2     ver abajo
- *     q04        2             12        3
- *     q07        2             12        3
- *     q06        1             13        3
- *     q05        1             14        3     ver abajo
- *     q08        3              —        3     ítem nuevo; la fila del plan dice 3
- *
- * **Los dos juicios propios, dichos en voz alta.** El encargo pedía q03 → 3 y q05 → 3
- * sobre la medición *anterior* al recorte de sus pasajes:
- *
- * - **q03 se queda en 2.** El recorte se lleva por delante lo que lo hacía caro: el pasaje
- *   era casi todo el ítem, porque el abanico son cuatro palabras sueltas. Con la oración
- *   más larga a menos de la mitad y el referente del hueco explícito, lo estimo en torno a
- *   10-11, o sea banda media. Es una **estimación mía y hay que volver a medirla**: si el
- *   calibrador lo devuelve en 12 o más, se etiqueta 3 y la curva del grupo sigue válida
- *   (1 · 2 · 3 · 3 también es creciente).
- * - **q05 se queda en 3**, aunque su pasaje también bajó. Lo que pesa en ese ítem no es el
- *   texto: son cuatro opciones de 221-229 caracteres que comparten dos tercios y solo se
- *   distinguen por el cierre. Eso es intocable por la regla de esta ronda, así que el ítem
- *   sigue siendo difícil por más que el pasaje respire. Etiquetarlo 1 era la mentira.
- *
- * Curva declarada en el orden nuevo: **1 · 2 · 2 · 3 | 3 · 3 · 3 | 3**, creciente dentro
- * de cada grupo de tipo, que es lo que mira la puerta 9.
- *
- * **Lo que este bloque ya no puede arreglar solo.** Reetiquetar con honradez deja el módulo
- * declarando cinco difíciles solo en CS, cuando el plan pide tres en los 27. El desajuste
- * no se cierra con etiquetas: o se baja T en los otros tres bloques como se ha bajado aquí,
- * o el plan revisa sus cifras. Queda dicho para que no se resuelva bajando etiquetas.
- *
- * Por **R2** vuelven enteros a la cola de auditoría **q03, q05 y q08**, y la ciega se
- * repite sobre las opciones de q08, que son nuevas. Las de q03 y q05 no han cambiado ni un
- * carácter, así que su ciega anterior sigue valiendo.
- *
- * ── Décima versión: la otra mitad de T, en los pasajes densos ──────────────
- *
- * La novena ronda fue por el eje bueno —el calibrador midió que la complejidad del texto
- * bajó 0,19, que **la distancia entre opciones no se movió ni una décima** y que la ciega
- * se quedó en 19,8 % (techo 35, azar 25)—, pero recortó los pasajes que ya tenían las
- * oraciones cortas. Los densos seguían intactos. Aquí se acaba el trabajo, con la misma
- * regla: **no se toca ni una opción ni una razón; todo el margen sale de T.**
- *
- * Medido antes y después, con el mismo contador (oraciones separadas por punto, media de
- * palabras por oración, oración más larga):
- *
- *     id    caracteres   oraciones   media   más larga
- *     q07   606 → 679      4 → 8    25,8 → 14,8   44 → 24
- *     q01   570 → 573      4 → 7    27,2 → 15,7   36 → 36  (ver abajo)
- *     q02   480 → 479      4 → 8    23,8 → 11,9   33 → 18
- *
- * Partir oraciones cuesta palabras: q07 sube de 103 a 118 y de 101 a 113,2 «palabras de
- * 6», dentro de 25-150. q01 y q02 no se mueven de tamaño; solo de puntuación.
- *
- * **q07 — el concierto barroco, el ítem más caro del examen (14).** Todo el problema estaba
- * en la apertura: 44 palabras con los cuatro tecnicismos musicales seguidos detrás de dos
- * puntos. Se reparte en cuatro oraciones cortas —una por rasgo o dos— y la etiqueta
- * «authentic», que era el principio de la primera, pasa a cerrar la serie, **justo delante
- * de «What that word hides…»**: el referente de «that word» deja de estar a veintisiete
- * palabras dentro de la misma oración y queda pegado. Eso es L además de T. Se conservan
- * palabra por palabra las cuatro cosas que citan las razones: la primera línea con 1955 y
- * 1995 y sin un elogio a lo antiguo (razón C), «strings of gut instead of steel» (el
- * arreglo de equidad de la cuarta versión), «the treatises were written to correct players,
- * not to describe them» (razones A y D) y **las dos últimas oraciones enteras**, que son la
- * objeción y que la razón D nombra como tales. Ninguna palabra nueva —players, groups,
- * vibrato, tempos, recordings— aparece en la clave: la clave A dice «written rules»,
- * «practice» y «fix», y ninguna de las tres entra en el texto.
- *
- * **q01 — los tránsitos (media de 27,3, la más larga de las 36 del bloque).** Se parten las
- * tres primeras oraciones, que llevaban dos incisos con raya y una coordinación cada una.
- * **La oración del hueco no se parte, y es una decisión, no un olvido**: la razón de la
- * clave está escrita como «la oración del hueco lo dice por partes» y cita sus dos mitades
- * —«unchanged in depth… on its own fixed cycle» y «but it no longer stands out…»—. Partirla
- * dejaría esa razón describiendo algo que ya no existe, y las razones no se tocan. Por eso
- * la más larga sigue en 36: la media baja de 27,2 a 15,7 y la oración cara queda sola, con
- * seis oraciones cortas delante en vez de tres largas. Se conservan «dimming it by as much
- * or more» (razones A y D) y «on a schedule of their own» (razón C), que ahora cierra una
- * oración propia.
- *
- * **q02 — el único de lectura que podía llegar a banda fácil.** El bloque tenía **cero de
- * veinte** ítems en banda fácil y su suelo estaba en 8, que es lo que medía este. Se parten
- * las dos oraciones largas (26 y 33) y también el cierre, y el hueco se queda solo en una
- * oración de cinco palabras —«Her questions were ______ that evening.»—, con las tres
- * conductas justo detrás, que es como la razón de la clave las describe: «las tres cosas
- * que el texto pone **justo después del hueco**». Detalle deliberado y feo a la vista: la
- * sexta oración empieza por «And». Es la única forma de partir ahí sin cambiarle la
- * mayúscula a «twice she came back to a question I had already answered», que la razón de
- * la clave cita literal. Prosa de narrador en primera persona lo admite; alterar una cita
- * de una razón, no.
- *
- * **Reordenamiento del grupo de estructura: medido, y no hay nada que mover.** El grupo iba
- * `q07 (14) · q06 (12) · q05 (12)`, con el ítem más caro en cabeza. Rebajado q07, los tres
- * quedan en el mismo escalón del calibrador, así que el orden lo decide una medida más
- * fina. La que se usa aquí es la **carga total de lectura** —caracteres del pasaje más los
- * de las cuatro opciones, que es todo lo que el estudiante tiene que leer para contestar—:
- *
- *     id    pasaje   opción media   compartido   en disputa   carga total
- *     q07     679         82             3           79          1.007
- *     q06     535        130            44           86          1.056
- *     q05     688        225           126           99          1.588
- *
- * Sale **creciente en el orden que ya está en pantalla**, así que el array no se toca. El
- * cruce importa: por pasaje suelto q05 es el más ligero del bloque (media de 12,7), pero
- * sus cuatro opciones comparten 126 caracteres que hay que releer cuatro veces, y eso es lo
- * que lo mantiene en cola. Es el mismo diagnóstico de la novena versión —«lo que pesa en
- * ese ítem no es el texto»— medido en caracteres. Si el calibrador rompe el empate al
- * revés, el único cambio posible es intercambiar q06 y q05; q07 va primero con las dos
- * medidas.
- *
- * **Etiquetas.** q04 pasa de 3 a **2**, que es lo que mide. q02 se queda en **1**: la
- * corrección del calibrador era «→2, o →1 si al bajarlo lo dejas en 7», y ahí es donde se
- * ha dejado. Curva declarada en el orden de pantalla: **1 · 2 · 2 · 2 | 3 · 3 · 3 | 3**, no
- * decreciente dentro de cada grupo de tipo, que es lo que mira la puerta 9. El bloque baja
- * de cinco difíciles declarados a cuatro.
- *
- * **Lo que queda por bajar en este bloque, para quien siga.** La oración más larga que
- * sobrevive es la de **q06**, de 44 palabras —las tres pruebas de Sofía con dos puntos y
- * coma—, y ese ítem no entraba en esta ronda. Es el próximo candidato barato, y partirla no
- * roza ninguna razón: las tres pruebas se citan por separado en la razón de la clave. En
- * q04 quedan dos de 33 y 29, pero la segunda contiene «nothing links it to them, no
- * drawing, no letter, no recorded visit», que es frase protegida: se puede partir antes de
- * la raya, nunca dentro.
- *
- * Por **R2** vuelven a la cola de auditoría **q07, q01 y q02**. Sus opciones y sus razones
- * no han cambiado ni un carácter, así que **la ciega anterior de los tres sigue valiendo**:
- * lo que se ha movido es el pasaje, que en la prueba a ciegas está tapado.
+ * único que decide.
+ *
+ * ══════════════════════════════════════════════════════════════════════════════
+ * CÓMO SE LLEGÓ AQUÍ, en un párrafo
+ * ══════════════════════════════════════════════════════════════════════════════
+ *
+ * Once versiones contra el mismo enemigo: **lo que se acierta sin leer el texto**. Arreglar
+ * los ítems de uno en uno apenas movió la aguja; lo que la movió fue cambiar el método
+ * —diseñar las cuatro opciones antes de decidir la clave (R8), igualar el registro
+ * intelectual de las cuatro (R9) y quitar lo que se deduce sin el pasaje (R10)— y después
+ * distinguir las tres fugas antes de tocar nada: la formal (R11), la de sentido (R13) y la
+ * de frecuencia (R14). Por el camino se retiró entero el ítem de los tres lienzos de Vasco,
+ * que filtraba 9 de 10 en tres mediciones seguidas, y entró el pozo; y se rompió tres veces
+ * la **familia** que se había formado entre los `words-in-context`, que se contestaban con
+ * la misma receta sin mirar el tema. Con la ciega ya en 15,9 % apareció la factura que nadie
+ * había medido: cerrar fugas sube la distancia entre las opciones, y esa distancia es
+ * dificultad, así que la rama «fácil» salió **más dura que el módulo 1**. Las versiones
+ * novena y décima bajaron T y L sin tocar una sola opción —partir oraciones, referentes
+ * explícitos, glosar la palabra opaca de la entrada—, con lo que el módulo dejó de
+ * perjudicar pero seguía sin ayudar: de veinte ítems de lectura, uno solo en banda fácil. La
+ * undécima cambió de herramienta: **q03 y q04 se reescribieron enteros, diseñados fáciles
+ * desde el pasaje** —60-80 palabras, ninguna oración de más de veinte, la evidencia pegada
+ * al hueco— y con el abanico igual de exigente que siempre; `q01` pasó al final de su grupo
+ * para que la curva volviera a subir. El diario completo está en el historial de git y en
+ * `docs/sat-auditorias/`; lo que había que conservar de él está arriba, en forma de
+ * invariantes.
+ *
+ * **R2, que sigue vigente:** tocar un ítem lo devuelve entero a la cola de auditoría, y si
+ * lo tocado son sus opciones o sus razones, la prueba a ciegas se repite sobre las nuevas.
+ * La de **q03 y q04 está pendiente**: no queda una palabra de sus abanicos anteriores.
  */
 
 export const items: MCQQuestion[] = [
@@ -677,6 +175,36 @@ export const items: MCQQuestion[] = [
     answer: 2,
   },
   {
+    id: 'q03',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      'The chapel at Aldrec stands white on the point, where the village ends. A widow built it in 1712, after the sea took her sons. The door is unlocked one day a year. Two fishermen paint the wall facing the water every spring, and the white shows up far out. Coming home, a boat lines the wall up with the pier and steers in on that line. For the men who fish here, the building is less a church than a ______.',
+    text: 'Which choice completes the text with the most logical and precise word or phrase?',
+    options: [
+      'refuge',
+      'monument',
+      'boundary',
+      'landmark',
+    ],
+    answer: 3,
+  },
+  {
+    id: 'q04',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      'The woods above the village belonged to the abbey. Tenants could gather fallen branches, but cutting a standing tree was theft. By 1690 there were fresh stumps on every slope. The steward counted them, wrote down the number, and went to no court. He set a price instead: four coins a year for the right to cut. The four coins were collected with the rent, like any other due. What the steward had done, in effect, was to ______ the cutting.',
+    text: 'Which choice completes the text with the most logical and precise word or phrase?',
+    options: [
+      'license',
+      'prohibit',
+      'register',
+      'ignore',
+    ],
+    answer: 0,
+  },
+  {
     id: 'q01',
     type: 'mcq',
     part: 1,
@@ -690,36 +218,6 @@ export const items: MCQQuestion[] = [
       'amplifies',
     ],
     answer: 1,
-  },
-  {
-    id: 'q03',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      "Translators of the Persian ghazal all meet the same problem. The form turns on a refrain: one word closes every two-line couplet. In the Persian, that word moves as the poem goes. It is a door in one couplet, a decision in the next, a departure in the last. Much of the poem's motion comes from those turns. No single English word holds all three senses, so the translator settles on one. The English word comes back on time and in the place the form requires, saying each time exactly what it said before. Whatever else the translation gets right, it ______ the refrain.",
-    text: 'Which choice completes the text with the most logical and precise word or phrase?',
-    options: [
-      'generalizes',
-      'overloads',
-      'exhausts',
-      'flattens',
-    ],
-    answer: 3,
-  },
-  {
-    id: 'q04',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      'The warehouse that Thomas Ward put up beside the Leeds canal in 1836 ______ the great spinning mills it is usually said to copy. Everything those mills are admired for is already in it: an iron frame carrying the floors, windows the width of the bay on every level, outer walls that hold up nothing at all. The resemblance is exact; the order is not. Ward\'s building was standing, and insured, eighteen years before the first of the mills was drawn — and nothing links it to them, no drawing, no letter, no recorded visit.',
-    text: 'Which choice completes the text with the most logical and precise word or phrase?',
-    options: [
-      'anticipates',
-      'imitates',
-      'outlasts',
-      'inspires',
-    ],
-    answer: 0,
   },
   {
     id: 'q07',
@@ -803,6 +301,44 @@ export const meta: SatItemMeta[] = [
     fuenteHecho: 'Ficción original; ningún hecho real implicado.',
   },
   {
+    id: 'q03',
+    domain: 'CS',
+    tipo: 'words-in-context',
+    dificultad: 1,
+    tema: 'humanidades',
+    razones: {
+      A:
+        'El estudiante que elige esta es el que llega con lo que el mundo le ha enseñado sobre las capillas de la costa: un edificio en la punta, hombres que salen al mar y un temporal que obliga a meterse en alguna parte. El texto no le da ninguna de las dos cosas que ese camino necesita —ni una tormenta ni una puerta abierta—, y cierra la segunda en una línea: «The door is unlocked one day a year». Un edificio cerrado los otros trescientos sesenta y cuatro días no ampara a nadie, y lo único que el texto cuenta que se hace con él se hace desde el agua, sin bajarse del barco.',
+      B:
+        'El estudiante que elige esta es el que lee la segunda oración —«A widow built it in 1712, after the sea took her sons»— y toma el motivo por el que se levantó el edificio por lo que el edificio es. El texto separa las dos cosas, y la oración del hueco lo dice con todas sus palabras: «For the men who fish here». De esos hombres no consta una visita, ni una ofrenda, ni un nombre leído; consta que dos de ellos pintan la pared cada primavera y que un barco se alinea con ella para entrar. Recordar a tres ahogados es lo que hizo la viuda hace tres siglos, no lo que el edificio hace hoy por quien pesca.',
+      C:
+        'El estudiante que elige esta es el que se agarra a la única indicación de sitio que da el texto —«where the village ends»— y la convierte en la función. El camino es real: una capilla en el extremo de un pueblo marca de hecho dónde acaba. Pero el texto no divide nada con ella ni mide nada desde ella —no hay dos lados, ni término, ni nadie a quien le importe el límite—, y lo que sí pone delante es una pared blanca que se ve desde lejos y un barco que entra alineándola con el muelle. Para entrar por esa línea da exactamente igual dónde termine el pueblo.',
+      D:
+        'Correcta: la oración anterior al hueco lo dice sin figuras. «Coming home, a boat lines the wall up with the pier and steers in on that line»: la pared es el punto con el que se toma la línea de entrada, y la oración de antes explica por qué sirve —«the white shows up far out»— y por qué la repintan cada primavera. Un edificio que se usa desde lejos para saber dónde se está y por dónde se entra es un punto de referencia, no un culto ni un recuerdo. El estudiante que elige esta es el que ha leído las dos oraciones anteriores al hueco y no ha necesitado ninguna otra. Frase que no se puede recortar: «For the men who fish here», que es la que reduce la pregunta al uso y deja fuera el motivo de 1712; sin ella, `monument` se defiende y el ítem tiene dos claves.',
+    },
+    fuenteHecho:
+      'Ficción original sobre un hecho libre y corriente de la navegación costera: una construcción blanqueada en tierra sirve de marca de día, y alinear dos marcas da la línea con la que se entra a un puerto. Aldrec, la viuda, la fecha de 1712, los dos pintores y el muelle son inventados; no describen ningún pueblo ni ninguna capilla reales, y no se nombra ningún país ni ninguna costa. Nombre comprobado en buscador antes de fijarlo: «Aldrec» no aparece como topónimo. Quien lo cambie, que repita la búsqueda.',
+  },
+  {
+    id: 'q04',
+    domain: 'CS',
+    tipo: 'words-in-context',
+    dificultad: 1,
+    tema: 'historia',
+    razones: {
+      A:
+        'Correcta: las dos oraciones anteriores al hueco describen el acto entero y en llano. «He set a price instead: four coins a year for the right to cut» —lo que se pone en venta es el derecho a hacerlo, no la madera ni el perdón de lo ya hecho— y «The four coins were collected with the rent, like any other due», es decir, todos los años y por la vía ordinaria. Cobrar una cantidad fija y periódica a cambio del permiso para hacer algo que estaba prohibido es darle licencia. El estudiante que elige esta es el que ha leído esas dos oraciones y no ha tenido que volver más arriba. Frase que no se puede recortar: «for the right to cut», que es la que impide leer el cobro como una multa o como el precio de la madera.',
+      B:
+        'El estudiante que elige esta es el que lee la segunda oración —«cutting a standing tree was theft»— y los tocones de la tercera, y espera lo que suele venir después: que la regla se repita más alto. El texto va en la dirección contraria y lo dice en dos sitios, «went to no court» y «four coins a year for the right to cut». Prohibir es quitar el derecho; aquí el derecho se pone en venta y se cobra con la renta un año tras otro. Después de 1690 el texto no vuelve a llamar robo a nada.',
+      C:
+        'El estudiante que elige esta es el que se queda con lo primero que hace el mayordomo —«counted them, wrote down the number»— y toma la cuenta por la respuesta. El camino tiene apoyo: anotar el número es exactamente lo que hace quien va a llevar un registro. Pero esa cuenta es de tocones ya hechos, se hace una sola vez y sirve para poner el precio que llega en la oración siguiente. De registro no hay nada más en el pasaje: ni lista de quién corta, ni de cuántos árboles, ni revisión. Lo que se repite todos los años es el cobro, no el papel.',
+      D:
+        'El estudiante que elige esta es el que lee «went to no court» y entiende que el mayordomo decidió no darse por enterado. La mitad del camino es buena —pleito no hubo—, y la otra mitad la desmienten la misma oración y las dos siguientes: contó los tocones, anotó el número, puso precio y cobró cuatro monedas al año con la renta. Mirar para otro lado no da trabajo ni produce ingresos, y esto dio las dos cosas. Ha leído lo que el mayordomo no hizo y no lo que hizo.',
+    },
+    fuenteHecho:
+      'Hecho libre de historia rural: los aprovechamientos de monte de un señorío se defendían por la vía penal, y también, muy a menudo, convirtiendo la infracción en un derecho de pago anual que terminaba cobrándose junto con las demás rentas —la multa que se vuelve canon—. La abadía, el mayordomo, los tocones, la fecha de 1690 y las cuatro monedas son inventados; no se nombra ningún lugar, ningún monasterio ni ningún pleito reales, y el pasaje no atribuye a nadie la primera vez que esto se hizo. Sin país, sin moneda con nombre y sin medidas, como el resto del módulo.',
+  },
+  {
     id: 'q01',
     domain: 'CS',
     tipo: 'words-in-context',
@@ -820,44 +356,6 @@ export const meta: SatItemMeta[] = [
     },
     fuenteHecho:
       'Hecho libre de astronomía de exoplanetas: la actividad estelar como ruido en la fotometría de tránsitos, y la profundidad de ~1 parte en 10.000 para un planeta del tamaño de la Tierra. Estrella, ejemplo y redacción originales.',
-  },
-  {
-    id: 'q03',
-    domain: 'CS',
-    tipo: 'words-in-context',
-    dificultad: 2,
-    tema: 'humanidades',
-    razones: {
-      A:
-        'El estudiante que elige esta llega con una idea razonable de cómo se traduce una palabra de varias acepciones: si ninguna inglesa sirve para las tres, se busca una lo bastante ancha para que quepan todas. El texto dice que el traductor hace lo contrario, y lo dice dos veces en la misma oración: «No single English word holds all three senses, so the translator settles on one» —se queda con una y renuncia a dos— y esa palabra vuelve «saying each time exactly what it said before», que es lo contrario de vaga. La versión estrecha el estribillo; generalizarlo es la dirección opuesta.',
-      B:
-        'Es la lectura de quien se queda con el nudo del principio —«No single English word holds all three senses»— y supone que el traductor obliga igualmente a su palabra a cargar con las tres a la vez: una puerta, una decisión y una partida metidas en un solo término que revienta por el peso. La misma oración lo desmiente: el traductor «settles on one», y lo que la palabra hace cada vez que vuelve es decir «exactly what it said before». Nunca dice más de lo que dijo la primera vez, así que no está sobrecargada: está fija.',
-      C:
-        'El estudiante que elige esta oye el defecto donde se oye casi siempre, en la repetición: la misma palabra al final de cada pareado, una vez y otra, acaba gastada. Pero la repetición no la añade el inglés. Es de la forma, y el persa la cumple igual —«one word closes every two-line couplet»— sin que allí el estribillo se agote, porque lo que vuelve cambia de sentido. Y el texto no habla en ningún momento de fuerza que se pierda al volver: dice que la palabra vuelve diciendo lo mismo, que es una afirmación sobre el sentido, no sobre el desgaste.',
-      D:
-        'Correcta: las dos piezas de la respuesta están arriba, no en la oración del hueco. Se conserva el retorno —cada pareado, puntual, en el lugar que la forma pide— y se pierde el movimiento: la palabra persa «moves as the poem goes» y de esos giros sale «much of the poem\'s motion», mientras que la inglesa vuelve «saying each time exactly what it said before». Un relieve que se repite sin variar queda aplanado: el dibujo sigue, el desnivel no. Las otras tres también son pérdidas y también dejan intacto el retorno; lo que las descarta no es que suenen peor, es que el texto nombra una sola pérdida y es esta.',
-    },
-    fuenteHecho:
-      'Hecho real de métrica persa: el gazal cierra cada pareado con una palabra o sintagma fijo, y su polisemia es un problema conocido de traducción. La forma se explica dentro del texto —«two-line couplet», porque «couplet» no es cognado del español—; sentidos, ejemplo y redacción son originales.',
-  },
-  {
-    id: 'q04',
-    domain: 'CS',
-    tipo: 'words-in-context',
-    dificultad: 2,
-    tema: 'historia',
-    razones: {
-      A:
-        'Correcta: el texto trae las dos piezas que la palabra necesita y las trae en este orden. El parecido no se discute —«Everything those mills are admired for is already in it»— y la fecha lo coloca: el almacén estaba en pie, y asegurado, «eighteen years before the first of the mills was drawn». Hacer antes, y sin deberlo a nadie, lo que otros harán después es anticiparlo. Es además lo único que el pasaje sostiene: adelanta una fecha y no reclama descendencia.',
-      B:
-        'El estudiante que elige esta es el que se queda con la descripción heredada, que el propio texto le pone delante: del almacén se dice que «is usually said to copy» las hilanderías. Copiar exige que el modelo sea anterior, y el texto fecha lo contrario dos líneas más abajo, primero en seco —«The resemblance is exact; the order is not»— y luego con la cifra: dieciocho años antes de que la primera de ellas llegara siquiera al papel. Ha leído el parecido y no ha leído el reloj.',
-      C:
-        'El estudiante que elige esta lee «was standing, and insured» como una frase sobre lo que el edificio duró y no sobre cuándo empezó a existir. «Standing … before the first of the mills was drawn» fija un nacimiento, no una muerte: el texto no dice qué fue de ninguno de estos edificios ni si alguno sigue hoy en pie. Sobrevivir a las hilanderías es una afirmación que el pasaje no puede sostener en ninguna de sus cuatro frases.',
-      D:
-        'El camino más fino de los tres, y por eso el que decide el ítem: quien lo toma acepta la fecha —el almacén es anterior— y da un paso de más, de «fue antes» a «de ahí salieron». La última frase cierra esa puerta: «nothing links it to them, no drawing, no letter, no recorded visit». Anticipar no exige contacto; inspirar sí, y aquí no consta ninguno. Esa frase final es lo único que separa esta opción de la clave: si alguien la recorta por longitud, el ítem pasa a tener dos respuestas.',
-    },
-    fuenteHecho:
-      'Ficción sobre un hecho libre de historia industrial: rasgos que luego se dieron por característicos de una generación de fábricas —armazón de hierro, ventanas de vano completo, muros exteriores que no cargan— aparecieron antes en edificios menores y utilitarios, y las pólizas de incendios son una de las pocas fuentes que los fechan. Thomas Ward, el almacén, la fecha de 1836 y los dieciocho años son inventados; no se nombra ninguna fábrica real ni se atribuye a nadie la primera vez.',
   },
   {
     id: 'q07',
