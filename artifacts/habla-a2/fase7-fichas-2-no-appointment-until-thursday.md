@@ -26,20 +26,20 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 
 ## ROLE A — You have no appointment to give
 
-> **Formal.** You work behind a clinic counter: distance and calm, also for a no. English has no formal *you* — the tone is in the words, `I'm afraid…`, `Let me…`. **They start.** About 9 turns each · 6 minutes.
+> **Formal.** You work behind a clinic counter: distance and calm, also when you say no. English has no formal *you* — the tone is in the words, `I'm afraid…`, `Let me…`. **They start.** About 9 turns each · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 4:20 p.m., and you are at the front desk of a dental clinic in Cabecera. Somebody walks in with no appointment. That person has a hand on the face.
+**Where you are** · It is Tuesday, 4:20 p.m., and you are at the front desk of a dental clinic in Cabecera. Somebody walks in with no appointment. That person has a hand on their face.
 
 **You want** · You need three things before that person leaves: a date, a checked cell number, and something for tonight.
 
 **You can't**
-1. You can't ask Dr. Restrepo anything before 5:00: you write to her, you never call.
-2. You can't say a word about another patient's appointment: not the name, not the reason.
-3. You can't send anyone away without a written date **and** something for tonight. At closing the administrator reads your calendar.
+1. You can't ask Dr. Restrepo anything before 5:00: you write to her, but you never call.
+2. You can't say a word about another patient's appointment: not the name, and not the reason.
+3. You can't let anyone leave without a written date **and** something for tonight. At closing the administrator reads your calendar.
 
 **Only you know**
-- At 5:20 today you see a patient who missed twice. You can leave that door open, but never with a name or a reason.
+- At 5:20 today you are seeing a patient who missed twice. You can leave that door open, but never with a name or a reason.
 - You never ask Dr. Restrepo for favors, but today you want to ask her: you think she will say yes. That is your key.
 - Three chairs were empty this week, and the clinic counts them against you, like every patient who leaves for the corner clinic.
 
@@ -76,13 +76,13 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | to hold something for someone | to keep a time for one person, so nobody else takes it | Saturday at nine, while they decide |
 
 ### Your toolkit
-All eight blocks — you are the only one behind a counter. **1** `[grants]`, but not *Good morning* — at 4:20 p.m. it is **Good afternoon**. **2**, **3**. **4** `[jargon]`: *referral note*, *emergency check*, *X-ray*, yours not theirs. **5**. **6** when they push about another patient. **7** `[grants]`, **8**.
+All eight blocks — you are the only one behind a counter. **1** `[grants]`, but not *Good morning* — at 4:20 it is **Good afternoon**. **2**, **3**. **4** `[jargon]`: *referral note*, *emergency check*, *X-ray*, yours not theirs. **5**. **6** when they push about another patient. **7** `[grants]`, **8**.
 
 ### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| asking, not guessing | `What happened?` | **open question** — without it, the fact that turns the scenario never comes out |
+| asking, not guessing | `What happened?` · `When did the pain start?` | **open question** — without it, the fact that turns the scenario never comes out |
 | checking a number | `Can you say it one at a time?` · `Let me repeat it: …` | ask for the number slowly · then read back what you wrote |
 | danger | `If the pain goes to…, go to the emergency room tonight.` | one sign, and the one place tonight that is not this clinic |
 | giving a time to arrive | `Come… minutes early — there are…` | the second number of that appointment, said as a time |
@@ -93,7 +93,7 @@ All eight blocks — you are the only one behind a counter. **1** `[grants]`, bu
 | who pays, and where | `The plan covers it only…` · `At… you pay… yourself.` | what they lose by leaving, with the number on it |
 
 ### You did it if
-They said the **day, time and branch** back to you, and you checked them on screen · the **treatment date here**, if you sent them elsewhere · you said **who pays, how much, and when** · you took the cell number **one digit at a time** and read it back · they said what they will do tonight, in their words · **one open question before you proposed anything** · **the sign for the hospital** · nothing said about another patient.
+They said the **day, time and branch** back to you, and you checked them on screen · the **treatment date here**, if you sent them elsewhere · you said **the price, and who pays it** · you took the cell number **one digit at a time** and read it back · they said what they will do tonight, in their words · **one open question before you proposed anything** · **the sign for the hospital** · nothing said about another patient.
 
 ---
 
@@ -126,7 +126,7 @@ They said the **day, time and branch** back to you, and you checked them on scre
 | The pain today | worse than yesterday · worse with cold drinks |
 | Painkillers | two a day (**painkiller** = a pill for pain) · the first one Sunday night |
 | Work | warehouse in Girón · 7:00 a.m.–3:30 p.m., Monday to Friday · Saturdays off · forty minutes from this clinic |
-| Thursdays | delivery truck, 6:30 a.m. · storeroom key mine |
+| Thursdays | delivery truck, 6:30 a.m. · stockroom key mine |
 | This afternoon | free until seven · nobody waiting for me at home |
 | In my pocket | 70,000 pesos |
 | My plan | full treatment paid · in this clinic only |
@@ -148,16 +148,16 @@ They said the **day, time and branch** back to you, and you checked them on scre
 | warehouse | a big building where a company keeps the things it sells | where you work · the reason for the seven o'clock |
 
 ### Your toolkit
-Six blocks. **1** `[asks]`: no appointment, and it hurts. **2**. **3** `[receives]`: *emergency check*, *referral note*, *first consultation* — ask. **4** `[jargon]`, half of it: the tooth is yours, nobody else can describe it. **5**: hurting is not enough, say what **you** lose. **7**: saying no to their offer is your job. **8**. Not 6, you hide nothing.
+Six blocks. **1** `[asks]`: no appointment, and it hurts. **2**. **3** `[receives]`: *emergency check*, *referral note*, *first consultation* — ask. **4** `[jargon]`, half of it: the tooth is yours, nobody else can describe it. **5**: pain is not enough, say what **you** lose. **7**: saying no to their offer is your job. **8**. Not 6, you hide nothing.
 
 ### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
 | asking for another day | `Is there any other day?` · `What days do you have after…?` | **open questions**, with your limit already inside · one of them again if they hint at something later today |
-| checking cost and arrival time | `What time do I have to be there?` · `Does my plan cover it…?` | the two things nobody tells you unless you ask |
+| checking cost and arrival time | `What time do I have to be there?` · `Does my plan cover it…?` | the two things nobody tells you if you don't ask |
 | comparing the pain | `It's worse than…` · `It hurts more when…` | describe by comparing, which is how pain gets described |
-| fixing the number | `That's my sister's number. Mine is…` | fix the wrong contact when they read it out |
+| fixing the number | `That's my sister's number. My number is…` | fix the wrong contact when they read it out |
 | putting your money in | `I have… with me, if that helps.` | your money as an option, not as a complaint |
 | putting your time in | `I can wait here.` · `I don't work on…` · `Can I come back at…?` | your time on the table · a day of yours they don't know about |
 | saying what you need | `I don't have an appointment. Can you help me, please?` | say what you are before they ask |
@@ -231,6 +231,40 @@ grammarReferences: [
     rationale: 'Todo lo que hay que hacer esta noche se dice en imperativo, y también la reparación del mostrador: "Put something cold on your face", "Don\'t chew on that side", "Let me repeat it".' }, // a1
   { slug: 'can-ability', title: 'Can para habilidad en inglés A1',
     rationale: 'Es el verbo del escenario entero, en los dos lados del mostrador: "Can you say it one at a time?", "Can I come back at six?", "I can wait here", "I can\'t come at seven".' }, // a1
+  { slug: 'telling-time', title: 'Decir la hora en inglés A1',
+    rationale: 'El escenario entero son horas —4:20, 4:45, 6:15, 7:00, 8:30— y el cierre exige la de la cita y la de llegada.' }, // a1,
+  { slug: 'should-advice', title: 'Should y Shouldn\'t en Inglés A2',
+    rationale: 'Ancla el acto recomendar en las dos direcciones: "What should I do tonight?" desde el paciente y "You should go to our Centro branch" desde el mostrador.' }, // a2
+  { slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
+    rationale: 'El cuarto punto del cierre es un condicional: "If the pain goes to your ear, go to the emergency room tonight".' }, // a2
+  { slug: 'past-simple-questions', title: 'Preguntas y Negativos en Past Simple A2',
+    rationale: 'La pregunta abierta que saca el dato pivote se construye con did: "When did the pain start?". "What happened?" convive con ella como bloque léxico, porque la pregunta de sujeto sin auxiliar no la enseña ningún tema del nivel.' }, // a2
+  { slug: 'past-simple-irregular', title: 'Past Simple Verbos Irregulares en Inglés A2',
+    rationale: 'El dato que da vuelta al escenario es un pasado irregular afirmativo, no una pregunta: "A piece of my tooth broke on Sunday", "I left work at three thirty".' }, // a2
+  { slug: 'have-to-must', title: 'Have to y Must en Inglés A2',
+    rationale: 'La hora de llegada del jueves se pregunta y se contesta con have to: "What time do I have to be there?", y el cierre exige decirla en voz alta.' }, // a2
+  { slug: 'will-future', title: 'El Futuro con Will en Inglés A2',
+    rationale: 'El cuarto punto del cierre obliga al paciente a decir qué hará esta noche, y el criterio de éxito lo pide con esas palabras: "Tonight I will put something cold on my face", "I will come back at six fifteen".' }, // a2
+  { slug: 'quantifiers', title: 'Cuantificadores en Inglés A2',
+    rationale: 'Dosis, dinero y tiempo se dicen en cantidades: "two painkillers a day", "ten minutes early", "I have seventy thousand". Y el any de "Is there any other day?".' }, // a2
+  { slug: 'comparatives', title: 'Comparativos en Inglés A2',
+    rationale: 'El paciente describe cómo está comparando, que es como se describe un dolor: "it\'s worse than yesterday", "it hurts more when I drink something cold".' }, // a2
+  { slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
+    rationale: 'Los dos movimientos que sostienen el escenario son un because y un but, y los dos están en la tabla propia de cada rol: "I can\'t come at seven, because I open the warehouse", "Maybe I have something later today, but I can\'t promise".' }, // a2
+  { slug: 'imperative', title: 'El imperativo en inglés A1',
+    rationale: 'Todo lo que hay que hacer esta noche se dice en imperativo, y también la reparación del mostrador: "Put something cold on your face", "Don\'t chew on that side", "Let me repeat it".' }, // a1
+  { slug: 'can-ability', title: 'Can para habilidad en inglés A1',
+    rationale: 'Es el verbo del escenario entero, en los dos lados del mostrador: "Can you say it one at a time?", "Can I come back at six?", "I can wait here", "I can\'t come at seven".' }, // a1
+  { slug: 'present-simple-questions', title: 'Present simple interrogativo en inglés A1',
+    rationale: 'Las dos preguntas sin las que el paciente se va sin saber lo que necesita son de presente con do/does: "Does my plan cover it here?", "What days do you have after eight thirty?".' }, // a1
+  { slug: 'present-simple-negative', title: 'Present simple negativo en inglés A1',
+    rationale: 'El paciente se presenta y pone su tiempo sobre la mesa en negativo: "I don\'t have an appointment", "I don\'t work on Saturdays".' }, // a1
+  { slug: 'possessive-s', title: 'El genitivo sajón en inglés A1',
+    rationale: 'Dos movimientos del escenario son genitivos: la reparación del contacto, "That\'s my sister\'s number", y la puerta que el mostrador cierra sin dar razones, "That\'s another patient\'s time".' }, // a1
+  { slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
+    rationale: 'Con there empieza la negociación por los dos lados: "Is there any other day?" desde el paciente y "there are forms and an X-ray" desde el mostrador.' }, // a1
+  { slug: 'adverbs-frequency', title: 'Adverbios de frecuencia en inglés A1',
+    rationale: 'Lo que nunca pasa es la mitad de los datos ocultos y se dice en presente simple con never: "The clinic never texts me", "I never ask her for favors", "in writing only, never a call".' }, // a1
   { slug: 'telling-time', title: 'Decir la hora en inglés A1',
     rationale: 'El escenario entero son horas —4:20, 4:45, 6:15, 7:00, 8:30— y el cierre exige la de la cita y la de llegada.' }, // a1
 ]
@@ -390,7 +424,7 @@ sección reordenada, ningún dato ni motor cambiado.
 
 | dónde | antes → ahora |
 |---|---|
-| `Where you are` | `…, a hand on the side of the face.` → `. That person has a hand on the face.` (A-1) |
+| `Where you are` | `…, a hand on the side of the face.` → `. That person has a hand on their face.` (A-1) |
 | `You can't` 2 | `not whose it is, and not why` → `not the name, and not the reason` (A-2) |
 | `Only you know` 1 | `You have a 5:20 today, and that patient has missed twice already.` → `You have an appointment at 5:20 today, with a patient who missed twice already.` (calcable 3 + A-3) |
 | `Only you know` 2 | `but today you want to: … yes to this one.` → `but today you want to ask her: … yes.` (A-4) |
@@ -492,10 +526,46 @@ arreglos, con el contador corrido después (**ROLE A 446 · ROLE B 448**, techo 
 
 | # | dónde | antes → ahora | por qué |
 |---|---|---|---|
-| 1 | A · `You can't` 1 | `…before 5:00, and never by phone: only in writing.` → `…before 5:00: you write to her, you never call.` | el recorte se llevó el ancla en segunda persona y dejó una regla de mostrador que suena igual en las dos bocas |
-| 2 | A · `Only you know` 1 | `You have an appointment at 5:20 today, with a patient who missed twice.` → `At 5:20 today you see a patient who missed twice.` | dicha en voz alta era la oferta que la restricción 2 prohíbe, y cerraba el escenario en el turno 1 |
+| 1 | A · `You can't` 1 | `…before 5:00, and never by phone: only in writing.` → `…before 5:00: you write to her, but you never call.` | el recorte se llevó el ancla en segunda persona y dejó una regla de mostrador que suena igual en las dos bocas |
+| 2 | A · `Only you know` 1 | `You have an appointment at 5:20 today, with a patient who missed twice.` → `At 5:20 today you are seeing a patient who missed twice.` | dicha en voz alta era la oferta que la restricción 2 prohíbe, y cerraba el escenario en el turno 1 |
 | 3 | B · fila `What happened` | `the edge **sharp** (= able to cut) on my tongue…` → `a **sharp** (= able to cut) edge on my tongue…` | sintagma, no una oración a un `is` de ser turno |
 | 4 | B · exponentes, columna `function` | `how you walk in` → `saying what you need` · `the two questions before you leave` → `checking cost and arrival time`, y la tabla reordenada | las dos etiquetas nombraban **cuándo**, no qué función, y le devolvían al estudiante el orden que el alfabeto acababa de romper. Con el orden nuevo el arranque cae en la fila 7 y el cierre en la 2 |
 
 La glosa de la fila 4 pierde «before you leave» y dice qué se pregunta, no cuándo: *the two things
 nobody tells you unless you ask*. Ninguna forma de la columna `form` se tocó.
+
+
+---
+
+## Pasada de nivel (22 ago 2026) — `fase13-nivel-2.md`
+
+La ruta mínima cierra los cuatro puntos en **seis turnos por rol** sobre los nueve declarados, solo
+con lengua A2. Contador después: **ROLE A 449 · ROLE B 448**, techo 450.
+
+**Lo grave no era nuevo: era que nunca se había aplicado.** La ficha seguía con once
+`grammarReferences` mientras la ruta mínima usa doce estructuras, seis de ellas sin tema citado —el
+pasado irregular afirmativo, que es el dato pivote; `will`, que es el punto 4 del cierre; la
+interrogativa de presente con `do/does`, que son las dos preguntas de B; `there is`; el genitivo
+sajón; y el negativo de presente.
+
+**Y el hallazgo peor, que sí es nuevo:** `What happened?` —el exponente del que depende el escenario
+entero— estaba citado bajo `past-simple-questions`, y **ese tema enseña la regla contraria**: `Did +
+sujeto + verbo base`, con «¡no -ed, no irregular!» repetido, y `wh-questions` avisa expresamente
+contra omitir el auxiliar. Un alumno que aplique el tema citado produce `*What did happen?`. Se
+conserva como bloque léxico y entra en la misma celda `When did the pain start?`, que sí sale del
+tema y hace el mismo trabajo. Igual de comprobado: `mine` aparece tres veces en todo el registro
+a1/a2 y **en ninguna se enseña** —en `object-pronouns` es un distractor marcado como incorrecto—,
+así que `Mine is…` pasa a `My number is…`.
+
+**De la pasada de esta mañana salen tres líneas que subían el nivel de lectura:** las dos
+restricciones de A quedaron con el contraste implícito por yuxtaposición (`you write to her, you
+never call` · `not the name, not the reason`), el dato oculto pasó a presente simple con valor de
+futuro programado (`At 5:20 today you see a patient…`), que ningún tema de A1/A2 sostiene, y la
+glosa reescrita en la tabla de B estrenó un **`unless`** que no está en `connectors-a2` ni en ningún
+otro tema del nivel.
+
+Con ellas: `send anyone away` (phrasal separable con indefinido en medio, prohibido por la caja),
+`hurting` como sujeto gerundio, `a no` sustantivado, `the face` sin poseedor —que dejó el arreglo de
+esta mañana al quitar el absoluto nominal—, y la cadena `who pays, how much, and when`, que la fase 9
+corrigió en el cierre común y **se olvidó aquí**: hoy los dos sitios que deben decir lo mismo decían
+cosas distintas.
