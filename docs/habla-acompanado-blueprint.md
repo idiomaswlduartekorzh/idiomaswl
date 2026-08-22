@@ -305,6 +305,25 @@ por función, que no haya más filas que turnos, y que ninguna secuencia de fila
 cierre ni el arranque. Una tabla que se puede seguir como un guion no es andamiaje: es el
 ejercicio ya hecho.
 
+**Contra qué extremo de la banda se cuentan las filas.** Casi todas las fichas declaran una banda
+(`6-9 turnos por rol`), así que «no más filas que turnos» era ambiguo, y en un escenario esa
+ambigüedad tapó nueve filas para ocho turnos. Se mide **contra el número que la ficha declara**, y
+si declara banda, **contra su techo**. No contra el suelo: una pareja que resuelva en seis turnos
+usa un subconjunto de la tabla, que es exactamente lo que `use it or don't` autoriza. Quien impide
+que la tabla sea un guion no es el recuento de filas, son las otras tres pruebas — y la cuarta que
+falta:
+
+**La fila que concede se mira aparte.** Medir solo secuencias deja pasar el caso peor: la fila del
+otorgamiento —`granting it`— sola, en la última posición, le dice al estudiante *cuándo* soltar la
+condición que decide el desenlace. Apareció en cinco de los ocho escenarios y en ninguno lo cazó la
+prueba de secuencia. Etiquétese por función (`granting it`, nunca `yes, with a condition` ni
+`your condition`) y compruébese que el alfabético no la deja ni primera ni última.
+
+**Una etiqueta no puede nombrar un momento.** `how you walk in`, `the two questions before you
+leave`, `the message you send`: el alfabético baraja las filas y una etiqueta que dice *cuándo*
+—o que lleva dentro las palabras literales del cierre— le devuelve el orden al estudiante. Las
+etiquetas nombran función, no posición.
+
 El inglés de la ficha es **A2 leído**, que aguanta un poco más que el A2 hablado: frases cortas,
 presente y pasado simple, cero subordinación larga. Si una instrucción no cabe en A2, es que la
 instrucción es demasiado complicada.
