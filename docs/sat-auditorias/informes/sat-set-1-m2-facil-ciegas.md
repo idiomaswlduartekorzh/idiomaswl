@@ -13,6 +13,7 @@ blueprint: si se puede acertar sin leer, el examen no mide lectura. Techo 35 %, 
 | 6 | 25,9 % | 3 | tres rondas encadenadas sin medir → **R15** |
 | 7 | **18,5 %** | 1 | las dos fugas que destapó la vuelta 6 |
 | 8 | **19,8 %** | 4 | bajar los textos por el eje T (dificultad, no fugas) |
+| 9 | **17,0 %** | 2 | segunda bajada: los cinco pasajes más densos, que la 8 no tocó |
 
 **Lo que enseñó cada subida.** La vuelta 2 casi no movió la aguja porque igualar la forma
 de las opciones no cierra una fuga de sentido. La vuelta 6 subió ocho puntos porque
