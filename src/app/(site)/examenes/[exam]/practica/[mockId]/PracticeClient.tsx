@@ -942,6 +942,20 @@ function ResultsView({
                   completa son 54 preguntas.</>}
           </p>
         )}
+        {isSat && routedTo && (
+          /* Sin esto, dos estudiantes con el mismo bruto en ramas distintas veían el mismo
+             número, el mismo rótulo y la misma barra, y solo una frase en prosa los
+             separaba. En el examen real esos dos brutos dan puntajes muy distintos, porque
+             la rama exigente tiene el techo más alto. Haber quitado la escala falsa arregló
+             la mitad del problema y le dejó a la otra mitad mejor cara. */
+          <p style={{ maxWidth: 580, margin: '0.7rem auto 0', lineHeight: 1.55, opacity: 0.82 }}>
+            Y ojo con comparar: estos aciertos <strong>solo se comparan con los de la misma rama</strong>.
+            El módulo {routedTo === 'high' ? 'exigente' : 'estándar'} tiene preguntas
+            {routedTo === 'high' ? ' más duras' : ' más asequibles'} que el otro, así que un
+            mismo número de aciertos no vale lo mismo en los dos. Para medir tu progreso,
+            compárate contigo en la misma rama.
+          </p>
+        )}
         {isSat && (
           <p style={{ maxWidth: 580, margin: '0.7rem auto 0', fontSize: '0.76rem', lineHeight: 1.5, opacity: 0.62 }}>
             {SAT_MARCA}
@@ -1291,7 +1305,12 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
         // examen es peor que no tener ninguna.
         totalScore: exam.slug === 'sat' ? correct : score,
         totalMax: exam.slug === 'sat' ? total : 100,
-        totalLabel: `${correct}/${total} correctas`,
+        // La rama viaja dentro del rótulo porque es el campo que el panel del estudiante
+        // pinta en su historial. Sin ella, dos intentos en ramas distintas se dibujaban
+        // como comparables entre sí y una «mejora» podía ser solo un cambio de rama.
+        totalLabel: routedTo
+          ? `${correct}/${total} correctas · módulo 2 ${routedTo === 'high' ? 'exigente' : 'estándar'}`
+          : `${correct}/${total} correctas`,
         skills: servedMock.sections.map(sec => {
           const sqs = sec.questions.filter(q => q.type === 'mcq') as MCQQuestion[];
           const sc = sqs.filter(q => answers[q.id] === q.answer).length;
@@ -1300,14 +1319,18 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
       }),
     ]);
     setPhase('results');
-  }, [allQuestions, answers, exam, mock]);
+  }, [allQuestions, answers, exam, mock, routedTo, servedMock]);
 
   const handleRetry = useCallback(() => {
     setAnswers({});
     setFlagged(new Set());
     setCurrentIdx(0);
+    // Sin esto, el reintento de un examen con enrutado servía las DOS ramas seguidas
+    // como examen lineal de 54 preguntas, sin corte y con los minutos de un solo módulo.
+    setServedParts(routing ? [routing.routeAfterPart] : []);
+    setRoutedTo(null);
     setPhase('intro');
-  }, []);
+  }, [routing]);
 
   if (phase === 'lead') {
     // Se promete el desglose que la pantalla de resultados va a enseñar de verdad. Con
@@ -1458,8 +1481,12 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
       </header>
 
       {/* Section tabs */}
+      {/* `servedMock`, no `mock`. Con el examen completo se pintaban las tres pestañas: el
+          estudiante veía «Módulo 2 (exigente)» activa y ya sabía qué rama le tocó —justo lo
+          contrario de lo que la pantalla de corte le acaba de prometer— y además podía volver
+          al módulo 1, que esa misma pantalla dice que está cerrado. */}
       <SectionTabs
-        sections={mock.sections}
+        sections={servedMock.sections}
         currentPart={currentPart}
         answers={answers}
         questions={allQuestions}
