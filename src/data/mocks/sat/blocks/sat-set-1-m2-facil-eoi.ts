@@ -8,7 +8,8 @@ import type { SatItemMeta } from '../module-types'
  * negocian ítem a ítem: **D, A, C, D, B** (el plan asignaba B, A, B, C, A; ver «REPARTO DE
  * LETRAS» al final de este comentario). El orden de los cinco es **q23 · q24 · q26 · q25 ·
  * q27** —q25 y q26 se intercambiaron enteros, ver «CALIBRACIÓN» al final—, con dificultades
- * **3, 3, 1, 2, 3** y temas humanidades, historia, literatura, ciencia, humanidades. Todo el
+ * **3, 3, 2, 2, 3** —la de q26 volvió de 1 a 2 en la segunda pasada de calibración, ver el
+ * final— y temas humanidades, historia, literatura, ciencia, humanidades. Todo el
  * contenido es original (§5 del blueprint); de College Board solo se reproducen los dos
  * enunciados canónicos.
  *
@@ -312,6 +313,63 @@ import type { SatItemMeta } from '../module-types'
  * Por R2 los tres ítems con texto nuevo —q23, q24, q27— vuelven a la cola de auditoría y la
  * prueba a ciegas hay que repetirla sobre ellos. q25 y q26 no cambiaron ni un carácter: solo
  * cambiaron de sitio.
+ *
+ * ## CALIBRACIÓN, segunda pasada (22 ago 2026) — los dos pasajes que la primera dejó intactos
+ *
+ * La primera pasada bajó por el eje correcto —bajó la complejidad del texto y **no movió la
+ * distancia entre opciones**, y la ciega se quedó en 19,8 %—, pero dejó sin tocar los pasajes
+ * más densos, y dos de ellos son de este bloque. La rama estándar del módulo 2 seguía saliendo
+ * más difícil que el módulo 1 (10,52 contra 10,26), que es lo que hace que la adaptación
+ * castigue precisamente a quien va peor.
+ *
+ * Se corta **por oraciones**, y no se toca ni un conector: ni los cuatro de cada juego ni los
+ * del texto. Lo que baja es la carga de lectura por oración; qué relación pide el hueco, que
+ * es lo que el ítem mide, queda intacto.
+ *
+ * - **q25 (las plantas del desierto)** era **el pasaje más denso de todo el módulo**: 34,5
+ *   palabras por oración de media y una oración de 43. Se parten dos oraciones y ninguna es la
+ *   del hueco: la del mecanismo diurno queda «…keep their pores shut through the heat. They
+ *   open them after dark, when the air is cool and still.», y la del CO₂ nocturno queda
+ *   «…behind closed pores. That carries the plant through a whole sunlit day…». Baja a **23,0
+ *   de media y 33 la más larga**, con **exactamente las mismas 138 palabras** —«which» pasa a
+ *   «That» y «and» a «They»—, así que la puerta 7 se lee igual que antes.
+ *
+ *   Las dos piezas que sostienen la clave única siguen donde estaban. «carries the plant
+ *   through a whole sunlit day» sigue siendo **la oración inmediatamente anterior al hueco**,
+ *   que es lo que mata a «As a result,»: la consecuencia ya está dicha antes del hueco. Y **la
+ *   oración del hueco no se parte**, porque sus dos mitades —semanas sin nada que absorber y
+ *   el mismo carbono trabajado una y otra vez— son lo que la razón de A cita para negar que
+ *   sea un ejemplo de la anterior; separarlas dejaría esa razón describiendo una oración que
+ *   ya no existe.
+ * - **q26 (la casa vacía)** medía 24,8 de media y 31 la más larga. Se parten dos oraciones, y
+ *   tampoco es ninguna la del hueco: el arranque queda «…empty for nine winters. The track up
+ *   to it had gone back to grass.» y el anuncio de la lista queda «Mara had come prepared for
+ *   the worst of it. She expected a door swollen shut in its frame, …». Baja a **16,7 de media
+ *   y 28 la más larga**, con una palabra más que antes (100 contra 99).
+ *
+ *   El segundo corte es el que había que pensar dos veces. La enumeración de tres —puerta,
+ *   estufa, mesa— tiene que seguir **entera y en la oración inmediatamente anterior al
+ *   hueco**, porque la razón de C la empareja término a término con la del hueco y la de D se
+ *   apoya en su ritmo: sigue entera, solo cambia de sujeto de anuncio. Y «She expected…» **no
+ *   le da apoyo a «On the contrary,»**: lo que el texto afirma sigue siendo una expectativa de
+ *   Mara y no el estado de la casa, que es exactamente el argumento con el que la razón de B
+ *   tumba esa opción —una expectativa no se contradice, se sustituye—.
+ *
+ * **La etiqueta de q26 vuelve a 2.** La primera pasada la bajó a 1 con un 8 medido; la
+ * re-medición da **9**, que es banda 2, y se escribe lo medido aunque el corte de arriba lo
+ * vaya a bajar otra vez. Las tres transiciones quedan **2 · 2 · 3** en el orden en que van
+ * (q26 · q25 · q27), no decrecientes, y como la puerta 9 mide la curva por grupo de tipo, el
+ * bloque puede seguir yendo 3 · 3 · 2 · 2 · 3.
+ *
+ * q26 es además **uno de los tres candidatos a banda fácil** que señala el calibrador, y esa
+ * es la cifra que abrió toda esta ronda: hoy hay **cero ítems de lectura en banda fácil de
+ * veinte**. Si tras el corte cae a 7, la etiqueta honrada pasa a ser 1 — pero eso se mide, no
+ * se estima, que es el mismo aviso que dejó la primera pasada sobre q23 y q24.
+ *
+ * Por R2, q25 y q26 cambiaron de texto y vuelven los dos a la cola de auditoría: la ciega hay
+ * que repetirla sobre ellos. **Ninguna opción y ninguna razón se tocaron**, aquí ni en q25: la
+ * dificultad se baja por la carga de lectura, nunca por la distancia entre opciones, que es
+ * donde vive el trabajo de ocho rondas contra la prueba a ciegas.
  */
 
 export const items: MCQQuestion[] = [
@@ -350,7 +408,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'The house had stood empty for nine winters, and the track up to it had gone back to grass. Mara had come prepared for the worst of it: a door swollen shut in its frame, a stove packed with nine years of cold ash, a table buried under fallen plaster. ______ the door swung when she pushed it, the stove still held a scoop of dry coal, and on the table stood a jar of pears sealed under wax. She waited in the doorway a long while before she went in, listening to a house that somebody had been keeping.',
+      'The house had stood empty for nine winters. The track up to it had gone back to grass. Mara had come prepared for the worst of it. She expected a door swollen shut in its frame, a stove packed with nine years of cold ash, a table buried under fallen plaster. ______ the door swung when she pushed it, the stove still held a scoop of dry coal, and on the table stood a jar of pears sealed under wax. She waited in the doorway a long while before she went in, listening to a house that somebody had been keeping.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
       'Hence,',
@@ -365,7 +423,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Most plants open the pores of their leaves by day, when sunlight drives photosynthesis, and every hour those pores stay open the leaf loses water. In a desert at midday the air pulls water out of a leaf faster than the roots can replace it, so many desert plants keep their pores shut through the heat and open them after dark, when the air is cool and still. The carbon dioxide taken in at night is stored in the leaf and spent the next morning behind closed pores, which carries the plant through a whole sunlit day without opening its leaves to the dry air. ______ the same machinery carries some of these plants through weeks of drought, when the roots find nothing to take up and the leaf works again and again on the carbon already inside it.',
+      'Most plants open the pores of their leaves by day, when sunlight drives photosynthesis, and every hour those pores stay open the leaf loses water. In a desert at midday the air pulls water out of a leaf faster than the roots can replace it, so many desert plants keep their pores shut through the heat. They open them after dark, when the air is cool and still. The carbon dioxide taken in at night is stored in the leaf and spent the next morning behind closed pores. That carries the plant through a whole sunlit day without opening its leaves to the dry air. ______ the same machinery carries some of these plants through weeks of drought, when the roots find nothing to take up and the leaf works again and again on the carbon already inside it.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
       'For instance,',
@@ -435,7 +493,7 @@ export const meta: SatItemMeta[] = [
     id: 'q26',
     domain: 'EOI',
     tipo: 'transitions',
-    dificultad: 1,
+    dificultad: 2,
     tema: 'literatura',
     razones: {
       A:
@@ -448,7 +506,7 @@ export const meta: SatItemMeta[] = [
         'Suma la segunda lista a la primera, y el paralelismo invita a ello: tres cosas —puerta, estufa, mesa— con el mismo ritmo y en el mismo orden que la anterior. Pero la segunda no se añade a la primera, la reemplaza objeto por objeto: no hay dos puertas ni dos estufas, hay una que Mara esperaba encontrar de un modo y encontró del contrario. Es el camino de quien sigue el ritmo del párrafo sin comprobar qué dice cada elemento y da por hecho que el inventario de la casa sigue creciendo.',
     },
     fuenteHecho:
-      'Prosa narrativa original de registro literario, escrita para este ítem. Ni personaje, ni casa, ni obra de referencia: no hay fuente externa.',
+      'Prosa narrativa original de registro literario, escrita para este ítem. Ni personaje, ni casa, ni obra de referencia: no hay fuente externa. El 22 ago 2026 el pasaje se partió por oraciones sin cambiar de contenido —el arranque y el anuncio de la lista pasan a dos oraciones cada uno—: baja de 24,8 a 16,7 palabras por oración de media y de 31 a 28 la más larga. La enumeración de tres sigue entera en la oración anterior al hueco, que es lo que emparejan las razones de C y de D, y ninguna opción se tocó.',
   },
   {
     id: 'q25',
@@ -467,7 +525,7 @@ export const meta: SatItemMeta[] = [
         'Correcta: la oración del hueco dice lo mismo que la anterior, llevado al extremo. La anterior afirma que el mecanismo saca a la planta de un día entero de sol; la del hueco, que a algunas las saca de semanas de sequía. Mismo sujeto, misma maquinaria, misma dirección y más fuerza: eso es lo que marca «In fact». El párrafo no cambia de relación al cerrar, sube la apuesta.',
     },
     fuenteHecho:
-      'Hecho libre de fisiología vegetal: apertura estomática nocturna, fijación del CO2 en la hoja hasta la mañana siguiente y, en sequía prolongada, ciclo cerrado con los poros sin abrir y el carbono respirado reaprovechado dentro de la hoja. Sin especie, desierto ni estudio concretos.',
+      'Hecho libre de fisiología vegetal: apertura estomática nocturna, fijación del CO2 en la hoja hasta la mañana siguiente y, en sequía prolongada, ciclo cerrado con los poros sin abrir y el carbono respirado reaprovechado dentro de la hoja. Sin especie, desierto ni estudio concretos. El 22 ago 2026 el pasaje —el más denso del módulo— se partió por oraciones sin cambiar de contenido ni de número de palabras: baja de 34,5 a 23,0 palabras por oración de media y de 43 a 33 la más larga. La oración del hueco no se parte y «carries the plant through a whole sunlit day» sigue siendo la inmediatamente anterior, que es lo que mantiene falsa a C; los conectores, del texto y del juego, están intactos.',
   },
   {
     id: 'q27',
