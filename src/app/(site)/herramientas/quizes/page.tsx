@@ -7,7 +7,7 @@ const PAGE_URL = 'https://www.idiomaswl.com/herramientas/quizes'
 export const metadata: Metadata = {
   title: 'Quizes de idiomas — ejercicios gratuitos y autocorregibles',
   description:
-    'Quizes gratuitos por idioma con niveles progresivos y corrección inmediata. Empieza con el acumulativo de tiempos verbales en italiano.',
+    'Quizes gratuitos por idioma con niveles progresivos y resultados al terminar cada nivel. Practica tiempos verbales en italiano e inglés.',
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Quizes de idiomas — Idiomas WeLearn',
@@ -21,13 +21,22 @@ export const metadata: Metadata = {
 
 const QUIZES = [
   {
+    slug: 'ingles',
+    href: '/herramientas/quizes/ingles',
+    flag: '🇺🇸',
+    name: 'Inglés',
+    tagline: 'Contrasta tiempos, aspectos y condicionales en seis niveles que se adaptan a tu selección.',
+    detail: '19 formas · 210 retos',
+    color: '#3c5fb8',
+  },
+  {
     slug: 'italiano',
     href: '/herramientas/quizes/italiano',
     flag: '🇮🇹',
     name: 'Italiano',
     tagline:
       'Elige los tiempos y recorre seis niveles: reconoce, conjuga, corrige errores y reconstruye una narración.',
-    detail: '11 tiempos · 41 retos',
+    detail: '11 tiempos · 44 retos',
     color: '#009246',
   },
 ]

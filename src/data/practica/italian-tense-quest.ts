@@ -382,6 +382,18 @@ export const LONG_STORIES: GapChallenge[] = [
 
 export const ERROR_CHALLENGES: ErrorChallenge[] = [
   {
+    tense: 'passato-prossimo',
+    title: 'Il ritorno di Laura', focus: 'Concordancia con essere',
+    instruction: 'El auxiliar es correcto, pero el participio no concuerda con el sujeto.',
+    chunks: [
+      { before: 'Ieri Laura ', id: 'e0a', form: 'è tornato' },
+      { before: ' tardi, ', id: 'e0b', form: 'ha cenato' },
+      { before: ' e poi ', id: 'e0c', form: 'ha telefonato' },
+    ],
+    after: ' a sua madre.', wrongId: 'e0a', answers: ['è tornata'],
+    explanation: 'Con Laura y el auxiliar essere, el participio concuerda en femenino singular: “è tornata”.',
+  },
+  {
     tense: 'imperfetto',
     title: 'La telefonata', focus: 'Elección del tiempo',
     instruction: 'Una acción en curso fue interrumpida. Selecciona el verbo que rompe la lógica.',
@@ -442,6 +454,18 @@ export const ERROR_CHALLENGES: ErrorChallenge[] = [
     explanation: 'En italiano la primera persona del futuro lleva acento grave: avrò, no avró.',
   },
   {
+    tense: 'futuro-semplice',
+    title: 'Il viaggio di domani', focus: 'Persona del futuro',
+    instruction: 'El sujeto es noi. Corrige la forma que está conjugada para otra persona.',
+    chunks: [
+      { before: 'Domani noi ', id: 'e5da', form: 'visiterà' },
+      { before: ' il museo, poi ', id: 'e5db', form: 'pranzeremo' },
+      { before: ' e infine ', id: 'e5dc', form: 'torneremo' },
+    ],
+    after: ' in albergo.', wrongId: 'e5da', answers: ['visiteremo'],
+    explanation: 'La primera persona plural del futuro semplice es “visiteremo”.',
+  },
+  {
     tense: 'condizionale-passato',
     title: 'La promessa', focus: 'Futuro nel passato',
     instruction: 'El punto de referencia es pasado; corrige la proyección posterior.',
@@ -452,6 +476,18 @@ export const ERROR_CHALLENGES: ErrorChallenge[] = [
     ],
     after: ' il nostro indirizzo.', wrongId: 'e6b', answers: ['avrebbe chiamato'],
     explanation: 'Desde “disse”, la llamada futura se expresa con condizionale passato: avrebbe chiamato.',
+  },
+  {
+    tense: 'condizionale-presente',
+    title: 'Un consiglio', focus: 'Consejo hipotético',
+    instruction: 'La frase da un consejo, no anuncia una decisión futura.',
+    chunks: [
+      { before: 'Al tuo posto io ', id: 'e6da', form: 'chiederò' },
+      { before: ' un preventivo, ', id: 'e6db', form: 'confronterei' },
+      { before: ' i prezzi e poi ', id: 'e6dc', form: 'deciderei' },
+    ],
+    after: ' con calma.', wrongId: 'e6da', answers: ['chiederei'],
+    explanation: '“Al tuo posto” introduce un consejo hipotético: chiederei, como confronterei y deciderei.',
   },
   {
     tense: 'presente',

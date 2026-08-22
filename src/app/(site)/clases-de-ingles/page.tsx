@@ -622,6 +622,7 @@ export default function ClasesDeInglesPage() {
           { href: '/practica/ingles/b1/lectura', title: 'Comprensión lectora', desc: 'Textos auténticos con preguntas al estilo del examen, para entrenar lectura rápida y detalle.' },
           { href: '/practica/ingles/b1/escritura', title: 'Escritura integrada', desc: 'Lee, prepara vocabulario y escribe una respuesta real, con modelo de nivel para comparar.' },
           { href: '/practica/ingles/b1/habla', title: 'Expresión oral', desc: 'La sección que más pesa y la que menos se practica sola. Estructuras y pronunciación modelo.' },
+          { href: '/herramientas/quizes/ingles', title: 'Quiz de tiempos verbales', desc: 'Elige entre 19 tiempos y estructuras y recorre seis niveles con resultados diferidos.' },
           { href: '/examenes/ielts', title: 'Simulacros IELTS', desc: 'Listening, Reading y Writing con formato real e informe de desempeño por sección.' },
           { href: '/examenes/toefl', title: 'Simulacros TOEFL', desc: 'Reading, Listening, Speaking y Writing al estilo del iBT, con retroalimentación.' },
           { href: '/examenes/icfes', title: 'Simulacro ICFES', desc: 'La sección de inglés del Saber 11, con el nivel estimado según la escala del examen.' },
