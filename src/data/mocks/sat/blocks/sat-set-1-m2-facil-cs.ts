@@ -155,8 +155,11 @@ import type { SatItemMeta } from '../module-types'
  *   distractor fino: acepta la fecha y da el paso de más, de «fue antes» a «de ahí
  *   salieron»).
  * - q08 · «not in the two that hung on a wall, and not in the one that never did» — sin
- *   ella, la opción del tercero nunca expuesto (hoy la A) es defendible y el ítem tiene
- *   dos claves.
+ *   ella, la opción que reparte el grupo en dos acabados y uno no (hoy la A) es defendible
+ *   y el ítem tiene dos claves. Actualizado en la octava versión: esa misma frase es ahora
+ *   el segundo cierre de la opción del estudio (C), porque un estudio **es** «a stage on
+ *   the way to something else». Se le suma «priced them as pictures», del texto 2, que es
+ *   el primero.
  *
  * **Molde compartido en q05, q06 y q08 (aviso, no defecto).** Los tres llevan la misma
  * premisa en las cuatro opciones y solo la cola en disputa, y tres de ocho enseñan a leer
@@ -330,6 +333,70 @@ import type { SatItemMeta } from '../module-types'
  * Por **R2**, q01 vuelve a la cola de auditoría. La ciega de q01 puede reaprovecharse con
  * cautela: cambia una palabra por un sinónimo, no el camino de ninguna de las cuatro
  * opciones ni la razón por la que cada distractora falla.
+ *
+ * ── Octava versión: q08, la fuga que la permutación destapó ────────────────
+ *
+ * Medido otra vez a ciegas, **q08 lo aciertan 9 de 10 sin los textos**. Antes no filtraba,
+ * y entre una medición y otra lo único que cambió fue la permutación de la quinta versión
+ * —clave de A a D, sin una palabra nueva—. Conclusión: la fuga llevaba ahí desde el
+ * principio y solo estaba tapada por la posición. Una permutación no arregla ni rompe un
+ * ítem; lo que hace es cambiar de sitio lo que ya fallaba.
+ *
+ * **El diagnóstico, R13 en su forma más limpia.** El enunciado dice cómo respondería el
+ * autor del texto 2 al relato del texto 1 sobre los tres lienzos. Quien no ha leído nada
+ * deduce del enunciado que el texto 2 sostiene que los cuadros están terminados —es lo que
+ * pide la palabra «respond» en un `cross-text-connections`— y busca esa tesis entre las
+ * cuatro colas. Estaba escrita en una sola:
+ *
+ *     clave  · «Vasco let them go in that state on purpose.»      ← la tesis, en limpio
+ *     resto  · «a later cleaning … stripped them»                 ← la tesis + un dato
+ *              «only the third, never exhibited, is unfinished»   ← la tesis + un dato
+ *              «the varnished works show the same sequence»       ← la tesis + un dato
+ *
+ * Tres colas traían equipaje —una limpieza posterior, un tercer lienzo nunca expuesto, una
+ * secuencia visible en las obras barnizadas— y la clave no traía ninguno. **La asimetría
+ * no es de longitud ni de sintaxis: es que solo una contesta a secas lo que el enunciado
+ * pregunta**, y eso se ve con los dos textos tapados. Es la misma fuga de q05 y q06 en la
+ * tercera versión, y se arregla igual: no igualando la forma, sino subiendo las otras tres
+ * al mismo grado de respuesta.
+ *
+ * > Las cuatro tienen que ser respuestas igual de limpias a lo que pide el enunciado. Tres
+ * > posturas defendibles que el texto 2 no defiende, y una que sí.
+ *
+ * **Lo que se cambia.** El escenario no se toca —está argumentado arriba por qué no se
+ * mueve este ítem de oficio— y la clave se queda en **D**, con su cola intacta. Se rehace
+ * el abanico: las cuatro colas son ahora cuatro relatos rivales de lo mismo, qué son esos
+ * contornos desnudos, cada uno en una cláusula y sin apéndices:
+ *
+ * - **A** · «two of the three were finished and one was not» — reparte el grupo. Pierde el
+ *   inciso «never exhibited», que era el equipaje: el camino sigue entero, porque la cuenta
+ *   que lo alimenta —«exhibited two of the three»— está en el texto 2 y no en la opción.
+ * - **B** · sin cambios. Ya era una cola de una cláusula y su camino —explicar lo desnudo
+ *   por pintura perdida después— es distinto del de las otras tres.
+ * - **C** · entra el estudio, sale la secuencia de las obras barnizadas. La vieja C hablaba
+ *   de otros cuadros; la nueva habla de los tres, que es de lo que va el enunciado. Y su
+ *   camino es de verdad tentador: se apoya en «Whatever we are looking at, it is not work
+ *   interrupted», la frase del texto 2 que parece darle la razón.
+ * - **D** · la clave, palabra por palabra como estaba.
+ *
+ * **La cláusula que mata a la nueva.** Con el texto 2 anterior, C se defendía a medias: un
+ * estudio también puede estar «declarado hecho», así que la frase final lo cerraba solo si
+ * uno acepta que un estudio es «a stage on the way to something else» —lo es, pero es un
+ * paso de razonamiento y una clave única no se sostiene sobre un paso de razonamiento—. Se
+ * añaden dos palabras al texto 2, y solo dos: «priced them» → **«priced them as pictures»**.
+ * Ahora C muere por el uso antes que por la definición: quien vende un estudio no lo vende
+ * por cuadro. Es la única modificación de los textos en esta versión.
+ *
+ * **Medido después del cambio, no estimado.** Longitudes 113 · 109 · 114 · 109, con la
+ * clave en 109: **ni la más larga ni sola en la más corta** —empata con B en el extremo
+ * corto y el largo lo ocupa una distractora—. Solape léxico de cada opción con los dos
+ * textos: A 4, B 3, C 6, **clave 4**, así que la clave no es la que más repite ni la que
+ * menos, y contar coincidencias lleva a C. El estímulo pasa de 829 a 841 caracteres, 140,2
+ * palabras-SAT, dentro de 25-150. Las cuatro razones son distintas entre sí y cada
+ * distractora nombra a su estudiante.
+ *
+ * Por **R2**, q08 vuelve entero a la cola de auditoría y su ciega se repite sobre estas
+ * cuatro opciones. Clave sin cambios: **D**, la del plan.
  */
 
 export const items: MCQQuestion[] = [
@@ -443,12 +510,12 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Text 1\n\nThe three late canvases left in Aurelio Vasco's studio are filed as unfinished, and they are the best evidence we have of how he worked. The under-drawing shows through; the sky is laid in and the figures are not; whole passages stop at the outline. Read side by side they show a painter building a picture from the back forward, and they let us watch a method the finished works, sealed under varnish, hide completely.\n\nText 2\n\nVasco exhibited two of the three in his lifetime, priced them, and sold one. He varnished all three himself. Whatever we are looking at, it is not work interrupted: a painter who prices, varnishes, and sells a canvas has declared it done. The bare outlines in the lower half are not a stage on the way to something else — not in the two that hung on a wall, and not in the one that never did.",
+      "Text 1\n\nThe three late canvases left in Aurelio Vasco's studio are filed as unfinished, and they are the best evidence we have of how he worked. The under-drawing shows through; the sky is laid in and the figures are not; whole passages stop at the outline. Read side by side they show a painter building a picture from the back forward, and they let us watch a method the finished works, sealed under varnish, hide completely.\n\nText 2\n\nVasco exhibited two of the three in his lifetime, priced them as pictures, and sold one. He varnished all three himself. Whatever we are looking at, it is not work interrupted: a painter who prices, varnishes, and sells a canvas has declared it done. The bare outlines in the lower half are not a stage on the way to something else — not in the two that hung on a wall, and not in the one that never did.",
     text: "Based on the texts, how would the author of Text 2 most likely respond to Text 1's account of the three late canvases?",
     options: [
-      'By granting that the canvases are bare in places but arguing that only the third, never exhibited, is unfinished.',
+      'By granting that the canvases are bare in places but arguing that two of the three were finished and one was not.',
       'By granting that the canvases are bare in places but arguing that a later cleaning, not Vasco, stripped them.',
-      'By granting that the canvases are bare in places but arguing that the varnished works show the same sequence.',
+      'By granting that the canvases are bare in places but arguing that all three are studies and not finished pictures.',
       'By granting that the canvases are bare in places but arguing that Vasco let them go in that state on purpose.',
     ],
     answer: 3,
@@ -595,13 +662,13 @@ export const meta: SatItemMeta[] = [
     tema: 'humanidades',
     razones: {
       A:
-        'El estudiante que elige esta es el que cuenta: el texto 2 dice «exhibited two of the three», de modo que uno se quedó en el estudio sin colgarse nunca, y él le devuelve a ese tercero el estatuto que el texto 1 daba a los tres. Es una mala lectura y no una invención —la cuenta está escrita—, y además tienta porque el principio del texto 2 nombra tres actos, «prices, varnishes, and sells», y al tercer lienzo solo le consta el segundo. Lo que la deshace es que el texto 2 no reparte: barnizó «all three himself» y cierra nombrando los dos grupos, «not in the two that hung on a wall, and not in the one that never did». La única excepción concebible queda excluida con su nombre, y esa cláusula final es la que impide que el ítem tenga dos claves.',
+        'El estudiante que elige esta es el que cuenta: el texto 2 dice «exhibited two of the three», de modo que uno se quedó en el estudio sin colgarse nunca, y él parte el grupo por esa cuenta —dos vendibles y por tanto acabados, uno que sigue siendo lo que decía el texto 1—. Es una mala lectura y no una invención —la cuenta está escrita—, y además tienta porque el principio del texto 2 nombra tres actos, «prices, varnishes, and sells», y al tercer lienzo solo le consta el segundo. Lo que la deshace es que el texto 2 no reparte: barnizó «all three himself» y cierra nombrando los dos grupos, «not in the two that hung on a wall, and not in the one that never did». La única excepción concebible queda excluida con su nombre, y esa cláusula final es la que impide que el ítem tenga dos claves.',
       B:
         'El estudiante que elige esta es el que explica lo que ve por algo que le pasó al cuadro después: contornos desnudos y dibujo subyacente a la vista son, para él, pintura perdida —una limpieza dura, un restaurador con demasiado disolvente— y no pintura que nunca llegó a ponerse. Es el reflejo corriente ante un cuadro incompleto, y por eso la opción tiene quien la elija. El texto 2 la desmiente por dos sitios: el único tratamiento de superficie que menciona lo hizo el pintor, «He varnished all three himself», y esa hipótesis le costaría el argumento entero, que vive de que las decisiones sobre estos lienzos sean de Vasco y de nadie más.',
       C:
-        'Le atribuye al texto 2 una afirmación sobre las obras acabadas, que es de lo que habla el texto 1 cuando dice que están «sealed under varnish». El texto 2 no dice nada de lo que se ve o se deja de ver bajo el barniz de las demás; su discusión no es si los tres lienzos aportan poco, sino qué clase de cosa son.',
+        'El estudiante que elige esta se queda con el inventario del texto 1 —dibujo subyacente a la vista, cielo puesto, figuras solo apuntadas— y concluye que eso no es un cuadro a medias sino otra clase de objeto: un estudio, que está entero siendo lo que es. Tiene un tirón añadido, y es que se apoya en la frase del texto 2 que más se parece a darle la razón, «Whatever we are looking at, it is not work interrupted». El texto 2 la cierra por dos sitios. Primero por el uso: los precia como cuadros y vende uno, «priced them as pictures, and sold one», y quien vende un estudio no lo vende por cuadro. Y después por la frase final, que niega justo lo que un estudio es: los contornos «are not a stage on the way to something else». Quien elige esta acierta en que no están interrumpidos y se equivoca en qué son.',
       D:
-        'Correcta: el texto 2 concede lo que se ve —«The bare outlines in the lower half»— y le cambia el estatuto con hechos del propio cuadro: Vasco expuso dos, les puso precio, vendió uno y barnizó los tres. «A painter who prices, varnishes, and sells a canvas has declared it done», así que esos contornos «are not a stage on the way to something else», y la frase se cierra alcanzando a los tres, «not in the two that hung on a wall, and not in the one that never did». Un lienzo dado por terminado no registra el proceso: registra hasta dónde quiso llegar.',
+        'Correcta: el texto 2 concede lo que se ve —«The bare outlines in the lower half»— y le cambia el estatuto con hechos del propio cuadro: Vasco expuso dos, los preció como cuadros, vendió uno y barnizó los tres. «A painter who prices, varnishes, and sells a canvas has declared it done», así que esos contornos «are not a stage on the way to something else», y la frase se cierra alcanzando a los tres, «not in the two that hung on a wall, and not in the one that never did». Un lienzo dado por terminado no registra el proceso: registra hasta dónde quiso llegar.',
     },
     fuenteHecho:
       'Ficción original: Aurelio Vasco no existe. El argumento —firmar, barnizar y vender como declaración de obra acabada— está construido para el ítem sobre una discusión corriente en historia del arte, sin seguir ningún caso concreto.',
