@@ -22,15 +22,15 @@ anteriores se escribieron sin ellas. Qué se tocó y por qué, al final del arch
 
 **The patio, 11:20 a.m.** · Sunday, September 20, in Girón. You lit the fire at nine, for Friday's plan: everybody here at one.
 
-**What you're after** · One number, before twelve o'clock: how many plates at one. You are cooking for one o'clock, not for a river trip.
+**What you want** · One number, before twelve o'clock: how many plates at one. You are cooking for one o'clock, not for a river trip.
 
 **Three things you won't do**
 1. You keep the pot on the fire, because you have raw cassava in twenty liters of hot water.
 2. You don't say that the group made a mistake. You need them here at one, and she is the one who asks them.
-3. You don't open the fridge until she gives you three things: how many, before what hour, and how they get back. You put two ways on the table before she says yes.
+3. You don't open the fridge until she gives you three things: how many, before what hour, and how they get back. You offer two options before she says yes.
 
 **Nobody out there knows this**
-- You put the cassava and the plantain in at twelve, so at eleven forty you only have broth.
+- You put in the cassava and the plantain at twelve, so at eleven forty you only have broth.
 - You took the second chicken out at seven and cut it. If you put it in before twelve, you feed twelve. If you don't, you lose it tonight.
 - You can't put it back: you have Saturday's rice and chicken in there, in the one container that is your Monday and Tuesday lunch.
 
@@ -78,7 +78,7 @@ You look at it every twenty minutes, because you cook on wood and not on gas.
 | to stir | to move food with a big spoon | the job that ties a body to the patio |
 
 ### What to take from the toolkit
-Blocks **2**, **3** (numbers only), **4** `[jargon]` — *simmer*, *raw* and *serving* are yours — **5**, **6**, **7** `[grants]` (the fire explains the pot, not the jar) and **8**. **Block 1 has no form for this patio**: your opening is in your own table.
+Blocks **2**, **3** (numbers only), **4** `[jargon]` — *simmer*, *raw* and *serving* are yours — **5**, **6**, **7** `[grants]` (the fire explains the pot) and **8**. **Block 1 has no form for this patio**: your opening is in your own table.
 
 ### Out loud, in this patio — by job, not in order · **don't read it out loud**
 
@@ -90,12 +90,12 @@ Blocks **2**, **3** (numbers only), **4** `[jargon]` — *simmer*, *raw* and *se
 | granting it, with a string | `The container can go, but only if …` | give the thing away and keep the hour | neutral |
 | opening | `Come here a second, before you …` | you speak first, and you don't open with the question | informal |
 | the gate, at one | `Somebody has to be at the gate at …, and it can't be …` | the job the phone call just handed you | informal |
-| the pot, and how many | `The cassava goes in at …, and it's ready at …` · `That's twelve servings, and the pot doesn't leave …` | two hours, so the wait stops being an opinion · a physical no, not a no to her | neutral |
+| the pot, and what it makes | `The cassava goes in at …, and it's ready at …` · `That's twelve servings, and the pot doesn't leave …` | two hours, so the wait stops being an opinion · a physical no, not a no to her | neutral |
 | two rounds | `We can do it in two rounds: some at …, and the rest at …` | stop asking, start offering | neutral |
 | what it costs you | `There's rice and chicken in there from …, and that's my lunch on …` | the exact point where pairs switch to Spanish: say what you lose | informal |
 
 ### The lunch happened if
-You said what you lose tonight if that number comes late, and what Monday and Tuesday cost you. The chicken went in at twelve for a real number. You said what leaves and what stays. You asked for help at one o'clock. What is open has a name and an hour, and you never blamed the group.
+You said what you lose tonight if that number comes late, and what Monday and Tuesday cost you. You had a real number, and the chicken went in at twelve. You said what leaves and what stays. You asked for help at one o'clock. The open question has a name and an hour, and you never blamed the group.
 
 ---
 
@@ -104,19 +104,19 @@ You said what you lose tonight if that number comes late, and what Monday and Tu
 > **Informal. No boss here — the house, the fire and the food are his.** You came at nine and stayed. **He speaks first.** 9 turns · 7 minutes.
 > **One screen, one player.** Don't read from it.
 
-**The patio, and one foot outside it** · Sunday, September 20, 11:20 a.m., in Girón. You came at nine to help him, and at eleven twenty you are still the only one. You stayed.
+**The patio, and the road** · Sunday, September 20, 11:20 a.m., in Girón. You came at nine to help him, and at eleven twenty you are still the only one. You stayed.
 
 **What you need before you go** · To be on Marcela's bike at eleven forty, with food in your hands.
 
-**Three lines you don't cross**
+**Three things you won't do**
 1. You don't show up empty-handed: you wrote in the chat that lunch was coming.
-2. You don't correct the ten o'clock message until something is in your hands. You give it once, and you choose when.
+2. You don't correct the ten o'clock message until something is in your hands. You correct it once, and you choose when.
 3. On that bike, only what fits between your feet.
 
 **What you haven't said yet**
-- You read Édgar's message at eleven eleven: no car back before four. You have not said a word about it.
-- At ten you gave Fabián a number for one o'clock. Today you know it is wrong. He doesn't know. You leave at eleven forty, and he thinks you stay.
-- You hold two facts he doesn't: last food at seven, and nothing open there on a Sunday. It is your best card and it can also hurt you. If you play it early, he answers that they walk back, and you lose the card.
+- You read Édgar's message at 11:11: no car back before four. You have not said a word about it.
+- At ten you gave Fabián a number for one o'clock. Today you know it is wrong. He doesn't know. You leave at eleven forty, and he thinks you're staying.
+- Only you know two things: last food at seven, and nothing open there on a Sunday. It is your best card and it can also hurt you. If you play it early, he says they walk back, and you lose the card.
 
 **If you leave at eleven forty with nothing** · You leave six people at a river with no food and no way home until four, and your message sent them there. And you leave behind lunch for twelve and one man at the fire.
 
@@ -168,17 +168,17 @@ Blocks **2**, **3** `[receives]` — *simmer* and *raw* will come at you: ask �
 | function | form | what it does here | register |
 |---|---|---|---|
 | advice, about his side | `You should turn the fire down and …` · `Put a lid on it and …` | advise about his side of this, never about yours | informal |
-| asking what's ready | `What is ready now?` · `And what can I take cold?` | the one question he can't answer with yes or no | neutral |
+| asking what's ready | `What is ready now?` · `And what can I take? It has to be cold.` | the one question he can't answer with yes or no | neutral |
 | bikes and feet | `Marcela can take …, and the rest walk from …` · `They can be out of the water at …` | the plan in people and minutes, not in one number | neutral |
 | complaining | `I got here at nine, and I didn't …` | say the unfair part without blaming him | informal |
 | granting it, with a string | `I'll bring some of them back, but only if …` | concede the trip, keep the plate | neutral |
-| insisting, with a new reason | `They ate at seven, and nothing is open …` · `I can't show up empty-handed, so I need something before I …` | a new reason every time · then hang a price on it | neutral |
+| insisting, with a new reason | `They ate at seven, and nothing is open …` · `I can't show up empty-handed, so I need something before I …` | a new reason every time · then say what the wait costs you | neutral |
 | opening, and what happened | `About the river …` · `They left at ten because it was …` | you come in second · give what you can give, not the number | informal |
 | saying no to the bike | `Nothing big fits on …` | close the door his idea keeps opening | neutral |
-| taking it back | `At ten I told you …. That's not true now.` | late is fine, never is not | informal |
+| taking it back | `At ten I told you …. That's not true now.` | a number, not a sentence · late is fine, never is not | informal |
 
 ### You rode off right if
-You said how many really come back and before what hour — not what you said at ten. You said who rides, who walks and how long the walk takes. You said what you tell the six and when. You held one condition, and what is open has a name and an hour.
+You gave the real number and the hour — not the number from ten o'clock. You said who rides, who walks and how long the walk takes. You said what you tell the six and when. You kept one condition, and what is open has a name and an hour.
 
 ---
 
@@ -206,7 +206,7 @@ You said how many really come back and before what hour — not what you said at
 
 **Each of you says three things out loud. Six in total. Nobody says the other person's three.**
 
-**Only A can say:** what goes in the pot at twelve, for how many, and what is lost tonight if that number comes late · what leaves this patio now, what stays, and what that costs on Monday and Tuesday · what A needs at one o'clock and can't do with the fire on.
+**Only A can say:** what goes in the pot at twelve, for how many, and what you lose tonight if that number comes late · what leaves this patio now, what stays, and what that costs on Monday and Tuesday · what A needs at one o'clock and can't do with the fire on.
 
 **Only B can say:** how many really come back, and before what time · who rides and who walks, and how long that walk takes · what B tells the six at the river, and before what hour.
 
@@ -216,8 +216,8 @@ You said how many really come back and before what hour — not what you said at
 
 **Five rules:**
 - Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again.
-- Checking with your own words does count. *So, we're clear then* is not one of the six lines, and it isn't cheating either.
-- Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are none of the six lines.
+- It counts if you check with your own words. *So, we're clear then* is not one of the six lines, and it isn't cheating either.
+- Nobody just says yes. *Yeah*, *sure*, *okay*, *fine* and *that works* are none of the six lines.
 - A number with no hour on it is not a line. And nothing leaves this patio for free: say what you give, and say what you get for it.
 - Nobody writes anything down and nobody reads anything out. This is a patio. There's no number to confirm and nothing to sign.
 
@@ -427,3 +427,57 @@ ROLE B 450**, techo 450 (B, sin un solo hueco).
 | 7 | carta | `When her fourth turn ends — global turn 5` → `her second turn` | contaba mal el turno en que se abre |
 
 No se añade `use it or don't` a estas cabeceras: cuesta 5 palabras por rol y B no tiene ninguna.
+
+
+---
+
+## `grammarReferences` — verificado slug a slug contra `src/data/grammar/ingles/a2/`
+
+Los ocho existen con ese slug exacto. Los que devolverían `null` y por eso **no** están:
+`connectors`, `present-continuous-future`, `relative-clauses`, `past-continuous`, `used-to`,
+`prepositions-movement` — los seis reales llevan sufijo `-a2`.
+
+```ts
+grammarReferences: [
+  {
+    slug: 'should-advice',
+    title: 'Should y Shouldn\'t en Inglés A2',
+    rationale: 'Los dos «recomendar», y en las dos direcciones: cada uno aconseja sobre el lado del otro, nunca sobre el propio.',
+  },
+  {
+    slug: 'have-to-must',
+    title: 'Have to y Must en Inglés A2',
+    rationale: 'La obligación física del que manda: hay que saber el número antes de las doce, y alguien tiene que estar en el portón a la una.',
+  },
+  {
+    slug: 'connectors-a2',
+    title: 'Conectores en Inglés A2: because, so, although, however, but',
+    rationale: 'La razón nueva de cada «insistir», el contraste de cada concesión y el reloj de las dos fichas: because, so, but, before.',
+  },
+  {
+    slug: 'first-conditional',
+    title: 'El Primer Condicional en Inglés A2',
+    rationale: 'Las dos concesiones con condición y el precio de la espera: If you don\'t tell me a number, I\'ll cook for… / but only if…',
+  },
+  {
+    slug: 'past-simple-irregular',
+    title: 'Past Simple Verbos Irregulares en Inglés A2',
+    rationale: 'Lo que ya pasó y nadie puede cambiar: se fueron a las diez, comieron a las siete, ella llegó a las nueve, y lo que dijo a las diez.',
+  },
+  {
+    slug: 'quantifiers',
+    title: 'Cuantificadores en Inglés A2',
+    rationale: 'El número que decide la segunda gallina y el reparto de las dos tandas: how many, some, the rest, nothing, something.',
+  },
+  {
+    slug: 'present-continuous-future-a2',
+    title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
+    rationale: 'Los dos relojes puestos uno al lado del otro: How many are coming back at one? / I\'m on Marcela\'s bike at eleven forty.',
+  },
+  {
+    slug: 'prepositions-movement-a2',
+    title: 'Preposiciones de movimiento en Inglés A2: into, out of, past, through, along',
+    rationale: 'Todo el escenario es entrar y salir a una hora: sacar a seis del agua a la una y media, meter la yuca a las doce, salir del patio a las once y cuarenta.',
+  },
+]
+```
