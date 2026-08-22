@@ -25,6 +25,16 @@ Dificultad: objetivo **6 fáciles, 16 medios, 5 difíciles**, con media medida �
 > exige acercar las opciones entre sí y ahí es donde vive el trabajo contra la prueba a ciegas.
 > Es una decisión de módulo.
 
+> ⚠️ **q10 y q15 se reescribieron enteros el 22 ago 2026 y sus filas vuelven a decir la medida.**
+> No se ablandaron: pasaje, opciones y razones son nuevos, y de cada uno solo se conservaron
+> tipo, dominio, tema, **clave** y posición. Medían 13 los dos —el máximo del módulo— y miden
+> **8** (q10) y **9** (q15), así que los dos quedan declarados **2**. La fila 15 baja de 3 a 2;
+> la 10 ya estaba en 2. Desglose por eje en la cabecera del bloque, «UNDÉCIMA PASADA». Puerta 9
+> intacta: `central-ideas-details` q09 2 → q10 2 e `inferences` q14 2 → q15 2. Con eso la cuenta
+> declarada del módulo pasa de 8 · 11 · 8 a **8 · 12 · 7**, y en II quedan dos difíciles (q12 y
+> q13) en vez de tres. **Los dos ítems vuelven a la cola de auditoría por R2**: la prueba a
+> ciegas y la clave única hay que medirlas sobre los abanicos nuevos.
+
 ## Lo que este plan fija y no se negocia ítem a ítem
 
 - **27 ítems, todos puntuables.** Reparto 8 · 7 · 7 · 5, el único que suma 27 dejando los cuatro dominios a menos de dos puntos de su peso oficial.
@@ -71,7 +81,7 @@ Contrastado el 20 ago 2026 con un examen oficial de práctica de College Board. 
 | 12 | `q12` | II | `command-of-evidence-textual` | historia | 3 | **C** |
 | 13 | `q13` | II | `command-of-evidence-quantitative` | ciencia | 2 | **A** |
 | 14 | `q14` | II | `inferences` | literatura | 3 | **A** |
-| 15 | `q15` | II | `inferences` | humanidades | 3 | **C** |
+| 15 | `q15` | II | `inferences` | humanidades | 2 | **C** |
 | 16 | `q16` | SEC | `boundaries` | historia | 1 | **A** |
 | 17 | `q17` | SEC | `form-structure-sense` | ciencia | 1 | **C** |
 | 18 | `q18` | SEC | `boundaries` | humanidades | 1 | **A** |
