@@ -35,7 +35,8 @@ import type { SatItemMeta } from '../module-types'
  *    pista se mudó de signo con ella: con «sin signo nunca» descartando una opción y «la coma es
  *    la trampa» descartando otra, quedaba un 50/50 entre `;` y `:`; y de esos dos, los dos puntos
  *    son el **signo marcado** del juego —el que parece la respuesta de una pregunta de puntuación,
- *    exactamente como el perfecto en q19—. Los dos caminos apuntaban al mismo sitio, y el sitio
+ *    exactamente como el perfecto en un juego de tiempos verbales (es lo que tumbó dos versiones
+ *    de q19, punto 5)—. Los dos caminos apuntaban al mismo sitio, y el sitio
  *    era «cualquier opción menos la que no lleva signo». Dos intentos en el mismo ítem no son un
  *    defecto de redacción: son el suelo que impone la política.
  *
@@ -157,6 +158,56 @@ import type { SatItemMeta } from '../module-types'
  *    fecha y **la continua es justo lo imposible**. Quien resolviera aquel de memoria fallaría
  *    este.
  *
+ * 5 ter. **Aquel «suelo» no era un suelo: era R11 incumplida, y por eso q19 se sustituyó otra
+ *    vez.** El párrafo anterior daba por aceptado que quien no lee puede tirar `is containing` y
+ *    `was containing` —un verbo de estado no admite continuas— y jugarse una moneda entre las dos
+ *    simples. Eso es exactamente lo que R11 prohíbe en convenciones: **las cuatro opciones tienen
+ *    que ser correctas por separado y solo la oración debe decidir**. Dos formas progresivas de un
+ *    verbo estativo no se caen por lo que dice el pasaje, se caen de oído, así que el ítem de
+ *    cuatro opciones era en realidad de dos y regalaba veinticinco puntos de probabilidad. El
+ *    auditor de sesgo lo acertó a ciegas por ese camino y lo escribió con esas palabras: «`is
+ *    containing` y `was containing` son continuas de un verbo estativo: se caen sin leer. Quedan
+ *    dos, 50 %».
+ *
+ *    La regla de aquella versión no admitía arreglo: **su única defensa contra la continua era el
+ *    carácter estativo del verbo**, que es visible en la opción y no en el texto. Con un verbo
+ *    dinámico, «was …ing» pasa a ser gramatical en la frase y el ítem tiene dos claves; con uno
+ *    estativo, las dos continuas están muertas antes de abrir el pasaje. No hay tercera salida, y
+ *    retirar el ítem es una salida legítima: se sustituye entero, sobre la misma fila del plan
+ *    (SEC · form-structure-sense · humanidades · dificultad 2 · clave B).
+ *
+ *    **La quinta versión no examina el aspecto, examina la secuencia.** El pasaje —una compañía de
+ *    teatro de provincias, tema humanidades— deja el trasfondo en pluscuamperfecto y abre con
+ *    «when, in 1893,» la oración del hueco: lo que va ahí es el hecho que interrumpe, y ese hecho
+ *    va en pasado simple. Las opciones son `stages` · `staged` · `had staged` · `has staged`:
+ *    cuatro formas corrientes, ninguna inventada, ninguna podable sin el texto. Cada una muere por
+ *    algo que está escrito en la oración —el presente por la fecha y por los verbos vecinos, el
+ *    presente perfecto porque esa fecha es un complemento de tiempo pasado definido y el presente
+ *    perfecto no lo admite, y el pluscuamperfecto porque el hueco **es** el punto del pasado al
+ *    que tendría que anteponerse— y no por su propio dibujo.
+ *
+ *    **Cómo queda el conjunto, que es lo que R14 obliga a mirar:** dos formas simples y dos
+ *    perfectas, y en cada par una con marca de singular (`stages`, `has staged`) y una neutra
+ *    (`staged`, `had staged`). Las dos apuestas que este ítem ya pagó dos veces dejan de pagar:
+ *    «elige el perfecto» reparte 50/50 entre **dos distractores**, y «singular + perfecto» —la que
+ *    tumbó la cuarta versión— cae limpiamente en D. La forma que un examen de gramática parece
+ *    estar examinando, el pluscuamperfecto, es C.
+ *
+ *    **El residuo, escrito para que nadie lo descubra creyendo que se ocultó.** Queda una apuesta
+ *    que paga: «la forma llana, el pasado simple», que es la que haría un solucionador que ya sabe
+ *    que este examen castiga la opción vistosa. No es la heurística que este repositorio ha medido
+ *    —lo medido dos veces es la contraria, el perfecto— y con cuatro celdas no existe ninguna
+ *    posición que no responda a alguna heurística formulable; lo que sí se puede exigir, y se
+ *    cumple, es que **las dos apuestas documentadas caigan sobre distractores**. La diferencia con
+ *    la versión anterior no es de grado: allí dos opciones estaban muertas antes de leer, aquí las
+ *    cuatro exigen el texto.
+ *
+ *    Y sigue valiendo lo que el punto anterior anotaba sobre el módulo 1: aquel ítem de tiempo
+ *    verbal conjuga «grow» y su clave es una forma continua anclada en un punto anterior del
+ *    pasado; este conjuga «stage» y su clave es el pasado simple del hecho que interrumpe un
+ *    pluscuamperfecto. Ni el verbo ni la regla se repiten, y quien resolviera aquel de memoria
+ *    fallaría este.
+ *
  * 6. **La frecuencia también se cuenta entre ítems, no solo dentro de uno.** R14 dice que un
  *    juego de opciones no puede tener un solo miembro marcado; el reverso es que **el signo más
  *    frecuente del inglés escrito no puede ser la clave de dos ítems de fronteras del mismo
@@ -188,7 +239,13 @@ import type { SatItemMeta } from '../module-types'
  *    perder un ítem por algo que no es la regla examinada, y si algún dato del pasaje es
  *    falso. Salieron cuatro cosas y ninguna tocó una clave:
  *
- *    - **q19, error histórico de un siglo.** El pasaje databa en 1846 el nacimiento del libro
+ *    Aviso de lectura: **las dos que hablan de q19 se aplicaron al pasaje de historia editorial
+ *    que ese ítem ya no tiene** (punto 5 ter). Se conservan porque son el criterio, no el texto:
+ *    ninguna primicia histórica que no se pueda sostener, y ninguna referencia nacional que no
+ *    aporte nada al ítem. El pasaje de teatro que ocupa hoy la fila cumple las dos por
+ *    construcción, y así está escrito en su `fuenteHecho`.
+ *
+ *    - **q19 (pasaje retirado), error histórico de un siglo.** El pasaje databa en 1846 el nacimiento del libro
  *      escrito para niños. Es categoría comercial establecida desde los años 1740 (Newbery,
  *      1744), y entre 1780 y 1840 el género ya lo dominaba la obra original. De las dos
  *      salidas posibles —correr la cronología un siglo o rebajar la afirmación— se eligió
@@ -203,7 +260,7 @@ import type { SatItemMeta } from '../module-types'
  *    - **q18, cifra que caduca.** «in forty-eight years» es correcto solo durante 2026. → «in
  *      nearly fifty years». Regla general: ninguna cifra que se mida contra «hoy» se escribe
  *      exacta.
- *    - **q19 y q22, dos retoques de contexto.** «an ordinary American bookstore» era la única
+ *    - **q19 (pasaje retirado) y q22, dos retoques de contexto.** «an ordinary American bookstore» era la única
  *      referencia a Estados Unidos de los 27 ítems del módulo y no aportaba nada al ítem →
  *      «an ordinary bookstore». Y la comparación con el conservatorio de q22 la afirmaba el
  *      narrador sin poder sostenerla → se devuelve a quien ya la sostenía en el texto,
@@ -220,8 +277,7 @@ import type { SatItemMeta } from '../module-types'
  *
  *   q16 coma tras subordinada antepuesta · q17 concordancia pronombre-antecedente ·
  *   q18 ausencia de signo entre el sujeto y su verbo ·
- *   q19 pasado simple fijado por un complemento de tiempo definido, con la continua vedada
- *   por tratarse de un verbo de estado ·
+ *   q19 pasado simple del hecho que interrumpe un trasfondo en pluscuamperfecto ·
  *   q20 punto y coma ante adverbio conjuntivo · q21 concordancia con frase interpuesta ·
  *   q22 punto y coma como separador de serie con comas internas
  *
@@ -256,17 +312,20 @@ import type { SatItemMeta } from '../module-types'
  *   dentro un verbo finito, «were arranged», y es lo único que hace pensable el punto y coma.
  *   Y una condición de conjunto, en el punto 3: **este es el ítem que sostiene la única clave sin
  *   signo del bloque**, así que no se le puede devolver un signo sin dárselo a otro.
- * - q19: lo que fija el pasado simple son **dos** condiciones a la vez, y las dos viven en la
- *   oración del hueco. Una: el complemento de tiempo definido «In 1846», que hace ilegal el
- *   presente; si se sustituye por un adverbio vago —«once», «early on»— o desaparece, el
- *   presente vuelve a ser defendible y el ítem tiene dos claves. Dos: «contain» tiene que
- *   seguir significando tener algo dentro y llevar complemento de cantidad, porque es lo único
- *   que hace ilegal la continua; con un verbo dinámico en su lugar —grow, fill, sell—,
- *   «was …ing» pasa a ser correcta y vuelven las dos claves. Y una condición de conjunto, que
- *   no es de clave única sino de fuga: **entre las cuatro opciones no puede aparecer ninguna
- *   forma perfecta ni ninguna forma plural**. Este ítem se rehízo tres veces por eso —el
- *   perfecto es lo que elige quien no lee, y el singular es su número por defecto— y la cuarta
- *   versión existe justamente para que ninguna de las dos apuestas pague.
+ * - q19: lo que fija el pasado simple son **tres** condiciones, y las tres viven en la oración
+ *   del hueco o en la inmediatamente anterior. Una: la fecha «in 1893» tiene que quedar dentro de
+ *   la oración del hueco; sin ella el presente perfecto pasa a ser defendible y el ítem tiene dos
+ *   claves. Dos: el trasfondo tiene que seguir en pluscuamperfecto y unido por «when» —«had worked
+ *   its way through… when, in 1893, it ______»—, porque es lo que convierte al hueco en el punto
+ *   de la interrupción. Tres: **detrás del hueco no puede aparecer ningún otro hecho pasado al que
+ *   este preceda**; en cuanto lo haya, el pluscuamperfecto se vuelve correcto y vuelven las dos
+ *   claves. Y una condición de conjunto, que no es de clave única sino de fuga: **las cuatro
+ *   opciones son dos simples y dos perfectas, con una forma de singular en cada par**, de modo que
+ *   ni «elige el perfecto» ni «elige el singular» descartan nada y la combinación de las dos cae
+ *   sobre un distractor. Este ítem se rehízo cuatro veces por esa clase de fuga —dos por el
+ *   perfecto, una por el singular y la última porque sus dos continuas se caían sin leer el texto,
+ *   que es R11 incumplida—; la quinta versión existe para que ninguna de esas apuestas pague y
+ *   para que las cuatro opciones exijan el pasaje.
  * - q20: a la derecha de «however» tiene que haber una oración con sujeto y verbo propios; si
  *   se queda en un complemento, el punto y coma muere. Y **no se puede ofrecer el punto**: con
  *   dos independientes, «messages. However,» es tan correcto como el punto y coma.
@@ -317,7 +376,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A gallery can make an argument without writing one down. In one city museum the same eleven pictures have hung in the same order since 1978. Five of them were painted before the valley below was flooded for a reservoir, a photograph of the dam under construction hangs at the center, and the last five were painted after. Visitors who walk the room from left to right reach the final canvas expecting a ruin and find a lake instead. Three curators have come and gone without moving a frame, and in nearly fifty years no one has hung a label longer than a title. The order in which the eleven pictures were arranged ______ tells a visitor what no label in the room is long enough to say.",
+      "A gallery can make an argument without writing one down. In one city museum the same eleven pictures have hung in the same order since 1978. Five of them were painted before the valley below was flooded for a reservoir, a photograph of the dam under construction hangs at the center, and the last five were painted after. Visitors who walk the room from left to right reach the final canvas expecting a ruin and find a lake instead. Three curators have come and gone without moving a frame, and in nearly fifty years no one has hung a label longer than a title. The order in which the eleven pictures were ______ tells a visitor what no label in the room is long enough to say.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -333,14 +392,14 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Well into the nineteenth century much of what was put into the hands of the young was adapted from books written for adults, with the difficult passages cut and a moral fastened to the end. One printer in a provincial town stocked his shelf for the young differently, commissioning stories for which no adult version existed and having them illustrated on the same page as the words. Buyers noticed, and other printers copied him. In 1846 the shelf that the printer kept for young readers ______ fewer than a dozen titles, and the equivalent shelf in an ordinary bookstore today has its own writers, its own illustrators, and its own prices.",
+      "A theatre in a river town spent its first three decades on plays translated from other languages, and its audience came to expect an evening that sounded like somewhere else. The company had worked its way through the same handful of foreign comedies year after year when, in 1893, it ______ a piece written in the speech of the market square by a schoolteacher who had never published a line. The house sold out for eleven nights, and the company printed the text at its own expense. Every season since, the theatre has opened its year with a play in the language its audience speaks at home.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "contains",
-      "contained",
-      "is containing",
-      "was containing",
+      "stages",
+      "staged",
+      "had staged",
+      "has staged",
     ],
     answer: 1,
   },
@@ -456,7 +515,7 @@ export const meta: SatItemMeta[] = [
         "Coma entre el sujeto y su verbo. Es la apuesta de quien puntúa por respiración: el sujeto es largo, al leerlo en voz alta se hace una pausa donde termina, y esa pausa se escribe. El inglés escrito no la admite —el sujeto entrega el verbo sin signo por larga que sea la distancia—, y aquí la coma además parte en dos la única oración del párrafo que dice qué hace el orden de los cuadros.",
     },
     fuenteHecho:
-      "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. La cuenta desde 1978 se escribe **«in nearly fifty years» y no una cifra exacta**: «forty-eight years» era correcto solo durante 2026 y pasaba a ser falso en enero de 2027, y un banco de ítems no se revisa cada enero. Toda cifra del examen que se mida contra «hoy» tiene que estar redondeada o acotada.\n\nEl pasaje no ha cambiado; sí la oración del hueco, que es la última. Decía «The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang» y examinaba los dos puntos; dice ahora «The order in which the eleven pictures were arranged ______ tells a visitor what no label in the room is long enough to say» y examina que sujeto y verbo no se separan. El motivo del cambio de regla no es de contenido —la sala sigue argumentando por su orden de colgado— sino de conjunto, y está en el punto 3 de la cabecera.",
+      "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. La cuenta desde 1978 se escribe **«in nearly fifty years» y no una cifra exacta**: «forty-eight years» era correcto solo durante 2026 y pasaba a ser falso en enero de 2027, y un banco de ítems no se revisa cada enero. Toda cifra del examen que se mida contra «hoy» tiene que estar redondeada o acotada.\n\nEl pasaje no ha cambiado; sí la oración del hueco, que es la última. Decía «The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang» y examinaba los dos puntos; dice ahora «The order in which the eleven pictures were ______ tells a visitor what no label in the room is long enough to say» y examina que sujeto y verbo no se separan. El motivo del cambio de regla no es de contenido —la sala sigue argumentando por su orden de colgado— sino de conjunto, y está en el punto 3 de la cabecera.",
   },
   {
     id: 'q19',
@@ -465,19 +524,19 @@ export const meta: SatItemMeta[] = [
     dificultad: 2,
     tema: 'humanidades',
     regla:
-      "Dos condiciones sobre la misma forma verbal, y solo el pasado simple cumple las dos. **Tiempo**: «In 1846» es un complemento de tiempo pasado y definido, y la norma escrita estadounidense no admite presente con un complemento así; el «today» de la segunda mitad de la oración marca por contraste que ese momento está cerrado. **Aspecto**: «contain» en el sentido de tener algo dentro es un verbo de estado y no forma continuas —la continua solo existe para el sentido dinámico, «crews were containing the fire», que aquí no cabe porque el sujeto es un estante y el complemento una cantidad de títulos—.\n\nCondición de clave única, escrita aquí porque es lo primero que se rompe al editar la frase: (1) **el complemento de tiempo definido tiene que quedar en la misma oración del hueco**; sin «In 1846», el estante vuelve a ser un objeto con contenido y el presente pasa a ser defendible, con lo que el ítem tiene dos claves; (2) **el verbo tiene que seguir siendo estativo y con complemento de cantidad**: en cuanto se sustituya por uno dinámico —grow, fill, sell—, el pasado continuo se vuelve gramatical y vuelven las dos claves; (3) **no se puede ofrecer ninguna forma perfecta ni ninguna forma plural**, y esto no es clave única sino la fuga que este ítem ya tuvo tres veces (ver punto 5 de la cabecera): el perfecto es la apuesta del que no lee y el singular es su número por defecto.",
+      "Pasado simple para el hecho que interrumpe un estado de cosas anterior. El texto deja el trasfondo en pluscuamperfecto —«The company had worked its way through the same handful of foreign comedies year after year»— y abre con «when, in 1893,» la oración del hueco: lo que va ahí es el acontecimiento que corta ese trasfondo, y en la norma escrita estadounidense ese acontecimiento va en pasado simple.\n\nLas cuatro opciones son formas corrientes y bien formadas del verbo, y las tres falsas lo son por lo que dice la oración, no por su dibujo: (1) el presente no cabe en una oración fechada en 1893 dentro de una narración cuyos verbos vecinos —«had worked», «sold out», «printed»— van todos en pasado; (2) el presente perfecto no admite complemento de tiempo pasado definido, y «in 1893» lo es; (3) el pluscuamperfecto sitúa un hecho antes de un punto del pasado, y aquí el hecho del hueco **es** ese punto: no hay ningún momento posterior al que anteponerlo, y el trasfondo al que precedería ya está escrito en pluscuamperfecto en la oración misma.\n\nCondición de clave única, escrita aquí porque es lo primero que se rompe al editar la frase: (1) **«in 1893» tiene que quedar dentro de la oración del hueco**; sin fecha, el presente perfecto pasa a ser defendible y el ítem tiene dos claves; (2) **la oración del hueco tiene que ser el último hecho pasado de su secuencia**: si se añade detrás otro acontecimiento en pasado al que este preceda —«…before the company lost its hall»—, el pluscuamperfecto se vuelve correcto y vuelven las dos claves; (3) **el trasfondo tiene que seguir en pluscuamperfecto y unido por «when»**, porque es lo que hace del hueco el punto de la interrupción y no un hecho suelto.\n\nY una condición de conjunto, que no es de clave única sino de fuga, y que es la razón de que este ítem exista (punto 5 ter de la cabecera): **las cuatro opciones son dos simples y dos perfectas, y una de cada par lleva marca de singular**. Ni «elige el perfecto» ni «elige la forma de singular» descartan nada, y la combinación de las dos —«singular + perfecto», que es la apuesta que tumbó dos versiones anteriores de este ítem— cae sobre D. No se puede sustituir una perfecta por otra simple sin devolver al juego un solo miembro marcado.",
     razones: {
       A:
-        "Presente con un complemento de tiempo pasado definido: la oración abre con «In 1846», y ahí el inglés escrito no admite un presente por muy vigente que siga el hecho. Es el error de quien trata el contenido de un estante como una propiedad permanente del objeto —lo que tiene dentro es lo que tiene dentro— y se apoya además en el «today has its own writers» del final, sin ver que ese presente pertenece a la otra mitad del contraste y no a la mitad fechada en 1846.",
+        "Presente en una oración fechada —«in 1893»— y dentro de un relato cuyos demás verbos van en pasado. Es el error de quien escribe la historia de un teatro como una cronología de programa de mano, «1893: la compañía estrena…»: el presente histórico existe, pero pide un texto entero escrito así, y este empieza en pasado y sigue en pasado dos oraciones después. Quien la marca ha leído la fecha como una entrada de catálogo y no como el momento de una oración.",
       B:
-        "Correcta: es la única de las cuatro que cumple a la vez las dos condiciones de la oración. «In 1846» cierra el momento y obliga al pasado —el «today» de la segunda mitad lo confirma por contraste—, y el pasado simple es la forma de pasado que un verbo de estado como «contain» admite, porque la continua le está vedada.",
+        "Correcta: el hueco es el acontecimiento que corta el trasfondo, y el trasfondo ya está en pluscuamperfecto —«had worked its way through… year after year»— precisamente para dejarle sitio. «When, in 1893,» fija el momento de esa interrupción, y un momento pasado y cerrado pide pasado simple: ni presente, que la fecha no admite, ni perfecto, que colocaría el estreno antes de un punto del pasado que aquí no existe.",
       C:
-        "Falla las dos cosas a la vez: presente contra «In 1846» y continua sobre un verbo que no la admite en este sentido. Es el camino de quien lee el párrafo entero como el relato de una expansión todavía en marcha —el estante que se va llenando— y elige la forma que expresa proceso, tomando además el presente del final de la oración como el tiempo del conjunto.",
+        "Pluscuamperfecto para el hecho que interrumpe. Es el error de quien copia la forma que tiene delante —«had worked», dos líneas antes— y da por hecho que todo lo que ocurrió hace mucho se cuenta igual. El pluscuamperfecto es una forma relativa: necesita un punto posterior del pasado al que anteponerse, y en este párrafo el punto posterior es justamente el estreno del hueco. Ponerlo ahí obliga a leer que la compañía estrenó la pieza **antes** de las tres décadas que la pieza vino a interrumpir.",
       D:
-        "Acierta el momento y falla el aspecto: «contain» significa aquí tener algo dentro, y en ese sentido es un verbo de estado que no forma continuas, así que «the shelf was containing fewer than a dozen titles» no es inglés escrito. Es el calco más frecuente del hispanohablante en este punto: el imperfecto «el estante contenía» se aprende emparejado con el pasado continuo, y con un verbo de estado ese emparejamiento falla siempre.",
+        "Presente perfecto con complemento de tiempo pasado definido: el inglés escrito no admite «in 1893 it has staged». Es el error de quien arrastra el «has opened» del cierre sin ver que aquel es correcto por su propio complemento —«every season since» abre un período que llega hasta hoy— y este no, porque «in 1893» cierra el suyo. Es además la opción donde se cruzan las dos apuestas de quien decide sin leer la frase: la forma perfecta, que es la que un examen de gramática parece estar examinando, y la marca de singular, que es el número por defecto cuando no se ve el sujeto. Que las dos caigan aquí y no en la clave es a propósito.",
     },
     fuenteHecho:
-      "Historia editorial, y rebajada a propósito después de un error de un siglo. **Lo que el pasaje afirma ahora**: que bien entrado el siglo XIX **buena parte** —«much», no «most»— de lo que se ponía en manos de los niños eran adaptaciones abreviadas y moralizadas de obra escrita para adultos. Eso es sostenible: Robinson Crusoe, El progreso del peregrino y Los viajes de Gulliver circularon así durante todo el siglo, en pliegos de cordel y en ediciones infantiles que recortaban lo difícil y añadían una moraleja.\n\n**Lo que ya no afirma, porque era falso con cien años de desfase**: la versión anterior abría con «Until the middle of the nineteenth century, most books…» y presentaba a un impresor de 1846 encargando por primera vez relatos sin versión adulta. El libro escrito expresamente para niños es categoría comercial establecida desde los años 1740 —John Newbery publica A Little Pretty Pocket-Book en 1744 y Goody Two-Shoes en 1765, y funda la primera casa dedicada a literatura infantil—, y entre 1780 y 1840 el género ya lo domina la obra original: Edgeworth, Trimmer, Sherwood. Tampoco se presenta ya como novedad ilustrar en la misma página que el texto en vez de en lámina aparte, que es muy anterior a 1846: se retiró el contraste «rather than in a plate bound at the back» y la ilustración queda como rasgo de los libros de ese impresor, no como invento suyo.\n\nSe conservó la fecha de 1846 en vez de correr la cronología al siglo XVIII porque **«In 1846» es la mitad de la regla del ítem**: es el complemento de tiempo definido que cierra el paso al presente. Mover la fecha obligaba a reconstruir el ancla del hueco; rebajar la afirmación no toca nada de la oración examinada. El impresor, su ciudad y la fecha son invención propia, y la cifra —«fewer than a dozen titles»— describe el estante de ese impresor inventado, no un dato de mercado que haya que sostener con una fuente. «Bookstore», y no «bookshop», porque el examen mide la norma escrita estadounidense; en cambio se quitó «American» del cierre —era la única referencia a Estados Unidos de los 27 ítems del módulo y no aportaba nada al ítem—.",
+      "Historia del teatro, hecho libre: las compañías de provincias vivieron durante el siglo XIX de repertorio traducido y de refritos extranjeros, y el paso a obra escrita en la lengua o el habla del público fue un episodio corriente y tardío en muchas de ellas. El pueblo, la compañía, el maestro de escuela, la fecha de 1893 y las once funciones son invención propia: el pasaje no atribuye ninguna primicia a nadie ni describe ningún teatro real. Sin país, sin moneda y sin medidas, como el resto del módulo.\n\n**Este ítem sustituye al de historia editorial que ocupaba esta fila** (impresor de provincias, «In 1846», el verbo «contain»), retirado por R11 en la quinta vuelta; el porqué está en el punto 5 ter de la cabecera. Las dos correcciones de equidad y veracidad que aquel arrastraba se conservan como criterio y no como texto: no se afirma ninguna primicia histórica que no se pueda sostener —era el error de un siglo del pasaje de 1846— y no hay ninguna referencia nacional que no aporte nada al ítem, que era lo que se le quitó al «ordinary American bookstore» de aquel cierre.",
   },
   {
     id: 'q20',
