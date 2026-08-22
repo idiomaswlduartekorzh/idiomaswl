@@ -313,6 +313,13 @@ export interface MockSection {
   // WeLearn intentionally models the published two-module practice-test shape.
   moduleId?: 'reading-1' | 'reading-2' | 'listening-1' | 'listening-2' | 'writing' | 'speaking';
   /**
+   * Rama de un examen por etapas. Sin esto, el único vínculo entre «parte 3» y «módulo
+   * exigente» era una cadena de texto en el título, así que un guardián no podía detectar
+   * que alguien hubiera intercambiado las dos ramas: al que va bien se le servía la fácil
+   * y la pantalla le decía que había hecho la difícil, y todo pasaba en verde.
+   */
+  variant?: 'M1' | 'M2-facil' | 'M2-dificil';
+  /**
    * Explicaciones y dominio por ítem, indexado por `Question['id']`. Opcional: una
    * sección sin esto se revisa como siempre (clave marcada en verde y nada más).
    */
