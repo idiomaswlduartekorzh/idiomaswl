@@ -21,7 +21,7 @@ const M={
 '7A.1':'pedir-aclaracion','7A.2':'quejarse','7A.3':'poner-limite','7A.4':'conceder-con-condicion','7A.5':'rechazar','7A.6':'quejarse','7A.7':'quejarse','7A.8':'cierre-ritual','7A.9':'rechazar',
 '7B.1':'pedir-aclaracion','7B.2':'pedir-aclaracion','7B.3':'negociar','7B.4':'disculparse','7B.5':'disculparse','7B.6':'pedir-favor','7B.7':'dar-dato/razon','7B.8':'cierre-ritual','7B.9':'cierre-ritual',
 '8A.1':'pedir-favor','8A.2':'pedir-aclaracion','8A.3':'pedir-aclaracion','8A.4':'quejarse','8A.5':'poner-limite','8A.6':'dar-dato/razon',
-'8B.1':'pedir-favor','8B.2':'dar-dato/razon','8B.3':'dar-dato/razon','8B.4':'rechazar','8B.5':'poner-limite','8B.6':'disculparse',
+'8B.1':'pedir-favor','8B.2':'dar-dato/razon','8B.3':'dar-dato/razon','8B.4':'proponer-alternativa','8B.5':'rechazar','8B.6':'poner-limite','8B.7':'disculparse',
 };
 // Lo que cada escenario DECLARA en su banda de diseñador (campo speechActs).
 const DECL={1:['rechazar','conceder-con-condicion'],2:['dar-mala-noticia','recomendar'],3:['pedir-favor','conceder-con-condicion'],

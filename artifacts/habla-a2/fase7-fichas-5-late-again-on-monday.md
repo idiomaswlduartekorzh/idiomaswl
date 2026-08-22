@@ -6,7 +6,7 @@ carta, cierre y desenlace son los de `fase4-escenarios-4-6.md`. Lo que cambia es
 ficha, el bloque de vocabulario y el presupuesto de prosa.
 
 `disculparse` + `conceder-con-condicion` · poder **b>a** · arranca **B** · desenlace **acuerdo** ·
-**8 min** · A 12-18 turnos por rol · B 12-18 turnos por rol (mediana medida: 17) ·
+**9-10 min** · A 16-23 turnos por rol · B 16-23 turnos por rol (mediana medida: 19) ·
 **A = Camilo**, **B = doña Amparo**.
 
 **Registro, y cómo sobrevive al inglés.** En español ella lo tutea y Camilo la trata de usted. El
@@ -22,7 +22,7 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 
 ## ROLE A — Camilo, warehouse assistant
 
-> **Formal.** She is your supervisor. Two years together. You say *doña Amparo*; she uses your first name. **She starts.** About 17 turns each · 8 minutes.
+> **Formal.** She is your supervisor. Two years together. You say *doña Amparo*; she uses your first name. **She starts.** 16-23 turns each · 9-10 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
 **Where you are** · It is Monday, August 17, 7:35 a.m. The auto parts store is still shut. She called you into the office and closed the door. Two things are on the desk.
@@ -36,7 +36,7 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 
 **Only you know**
 - You coach a kids' football school on Saturdays, from 8:00 to 12:00. Forty children, no money, and no second coach after June. You said it out loud once, two years ago, and the store talked about it for a month.
-- Your neighbor in apartment 3 goes to the same daycare every morning. He is the only reason your mornings can change. You have never asked him.
+- Your neighbor in apartment 3 goes to the same daycare every morning. She is the only reason your mornings can change. You have never asked her.
 
 **If you walk away with nothing** · She writes the warning, because it is the only paper she can still write. The bonus goes with it, the warehouse job goes to somebody else, and so do the keys.
 
@@ -50,7 +50,7 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 | Your bus | before: ten to seven · now: a quarter past seven · without the daycare: the 6:00, here at five to seven |
 | The road work | carrera 15 · start date August 1 · twenty-five minutes more |
 | The 5:50 bus | at the store 6:45 · but the daycare takes Matías at 6:40, never before |
-| The neighbor in 3 | same daycare, every morning · never asked · his price: his two boys, Wednesdays at five |
+| The neighbor in 3 | same daycare, every morning · never asked · her price: her two boys, Wednesdays at five |
 | August bonus | 80,000 pesos · gone with a written warning in your file · automatic · nobody's decision |
 | The warehouse job | nobody in that job from April · the keys and the delivery note go together |
 | The commitment sheet | start time · start date · review date · **and one line: WHAT CHANGES** |
@@ -61,12 +61,12 @@ Fuera preguntas incrustadas, `since` de duración, condicional hipotético y `co
 |---|---|---|
 | a set of keys | all the keys for one place, in one group | the second set · one of the two things on the desk |
 | a written warning | a paper about a mistake that goes in your file | don't leave with this one |
-| commitment sheet | a paper where the worker writes what will change | it is blank · one line on it is yours |
+| commitment sheet | a paper where the worker writes what will change | still blank · one line on it for your words |
 | daycare | the place where somebody looks after your child while you work | at 6:40, not before and not after |
 | delivery note | the paper that says what comes on the truck | signed by the person who opens the store · the reason the keys matter |
 | road work | workers fixing the street, so the cars go slowly | twenty-five minutes more on the bus |
 | to fill out | to write the words in the empty space | the WHAT CHANGES line · your words, not hers |
-| to pick up | to go and get somebody and take them home | his two boys, Wednesdays at five · the price of your mornings |
+| to pick up | to go and get somebody and take them home | her two boys, Wednesdays at five · the price of your mornings |
 | warehouse | the big room where the store keeps the boxes | the job you want · and the room you know best |
 | your file | the papers about you that the company keeps | one warning in it · bonus gone, job gone |
 
@@ -88,7 +88,7 @@ Block 6: Saturday mornings are the one thing you don't explain.
 | promising next Monday | `I can start at five to seven.` → `I'll start at… from next Monday.` | with `can` you offer it · with `will` somebody can check it · the same time in both halves |
 | saying what cannot move | `I have to leave Matías at the daycare at…` | an hour with a reason, not a complaint |
 | saying what changed | `My bus used to arrive at ten to seven — now…` · `The road work started on…` | two times and a date. People understand times |
-| saying what it costs | `Then I pick up his two boys on…` · `And what does this cost…?` | say what you pay, and ask what she pays — that's point 3 of the close |
+| saying what it costs | `Then I pick up her two boys on…` · `And what does this cost…?` | say what you pay, and ask what she pays — that's point 3 of the close |
 | saying what you want | `I'd like that job.` | say it once, in clear words. Nobody guesses it |
 
 ### You did it if
@@ -104,7 +104,7 @@ Block 6: Saturday mornings are the one thing you don't explain.
 
 ## ROLE B — doña Amparo, supervisor
 
-> **Formal from him, direct from you.** You call him Camilo; he says *doña Amparo*. **You start.** About 17 turns each · 8 minutes.
+> **Formal from him, direct from you.** You call him Camilo; he says *doña Amparo*. **You start.** 16-23 turns each · 9-10 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
 **Before you speak** · Put the keys and the commitment sheet on the desk, then talk. Without them, this is a complaint.
@@ -120,7 +120,7 @@ Block 6: Saturday mornings are the one thing you don't explain.
 
 **Only you know**
 - You never put the first two Mondays on the incident form. If you write one today, he can ask about them.
-- You have Alba, from the counter, asking for the keys too. She is never late and lives three blocks away, but nobody taught her the truck.
+- You have Alba, from the counter, asking for the keys too. Nobody taught her the truck.
 - You can give the training on two Thursdays after closing, 6:30 to 8:30. Nobody pays those two nights. You don't want to offer it.
 
 **If you walk away with nothing** · You open the store alone for two more years, and you get a warning of your own, with two Mondays to explain.
@@ -150,7 +150,7 @@ Block 6: Saturday mornings are the one thing you don't explain.
 | review date | the day you look at it again: did it work? | September 14 · the day somebody can see if it is true |
 | store folder | the papers that the store keeps about the store, not about one person | the middle paper · it never reaches his file |
 | training | hours when somebody teaches you the job | two mornings · your price for the keys · nobody else to teach them |
-| warehouse | the big room where the store keeps the boxes | the reason for him, and not Alba |
+| warehouse | the big room where the store keeps the boxes | the reason you are asking him · not the three Mondays |
 | written warning | a paper about a mistake that goes in your file | the heaviest of the three · expensive for you too |
 | your file | the papers about you that the company keeps | where a written warning goes · his today · and one of your own |
 
@@ -172,13 +172,13 @@ Block 6 matters most: one question you don't answer.
 | putting the two things on the desk | `Have a seat, Camilo.` · `This line is for you to…` | say why you called him. Then point at the line |
 | saying it is not enough, and your price | `That helps, but I need…` → `Two mornings, Saturdays, eight to twelve, and I…` | say it falls short, then the number, the day and who teaches |
 | saying what it costs | `Nobody pays me for those two nights.` · `That costs you…` | your price, and his — that's point 3 of the close |
-| saying why him | `You know this warehouse better than…` | say why you're asking him and not somebody else |
+| saying why him | `You know this warehouse better than…` | finish it with the store, not with a name · this is about the warehouse, not about the three Mondays |
 | trying another way | `What if we…?` | put a third door on the table before either of you shuts one |
 
 ### You did it if
 1. The keys and the sheet were on the desk before you spoke.
 2. You asked two open questions and waited.
-3. You said why him, and not Alba.
+3. You said why you are asking him.
 4. He wrote the WHAT CHANGES line in his own words, and somebody can check it Monday.
 5. You said when the keys change hands, and what you get.
 6. You gave a training day you can keep and said what it costs you. If it cost you nothing, say why.
@@ -255,7 +255,7 @@ grammarReferences: [
   { slug: 'connectors-a2', level: 'a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
     rationale: 'El contraste con el que se dice que algo se queda corto sin echar a nadie por tierra: "That helps, but I need…".' },
   { slug: 'comparatives', level: 'a2', title: 'Comparativos en Inglés A2',
-    rationale: 'La razón por la que lo elige a él y no a Alba se dice comparando: "You know this warehouse better than…". El tema enseña la forma irregular better; aquí va de adverbio, así que el enlace cubre la forma, no el uso.' },
+    rationale: 'La razón por la que le pide a él el almacén se dice comparando, y el hueco se cierra con la tienda, no con un nombre: "You know this warehouse better than…". El tema enseña la forma irregular better; aquí va de adverbio, así que el enlace cubre la forma, no el uso.' },
   { slug: 'imperative', level: 'a1', title: 'El imperativo en inglés A1',
     rationale: 'El primer turno de la supervisora no es una frase, es un objeto sobre la mesa y un imperativo: "Have a seat, Camilo." Sin este tema, el turno que sostiene el escenario entero no está anclado.' },
   { slug: 'can-ability', level: 'a1', title: 'Can para habilidad en inglés A1',
@@ -285,8 +285,8 @@ node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs
 
 | ficha | prosa | tope §11 | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Camilo | **449** | 450 | 10 filas | 10 | 9 |
-| ROLE B — doña Amparo | **450** | 450 | 10 filas | 9 | 9 |
+| ROLE A — Camilo | **448** | 450 | 10 filas | 10 | 9 |
+| ROLE B — doña Amparo | **439** | 450 | 10 filas | 9 | 9 |
 
 El techo de §11 para A1-A2 es **450** desde la corrección del 21 de agosto: los 350 anteriores
 salían de contar a mano una sola ficha y ni el propio molde los cumplía. La ficha de B venía de
@@ -294,6 +294,10 @@ salían de contar a mano una sola ficha y ni el propio molde los cumplía. La fi
 `Your toolkit` pasan de una oración de sesenta palabras a una línea por bloque, el tercer secreto
 de Amparo deja de ser una oferta ya construida, la cabecera se acorta y el objetivo baja de 145
 caracteres a una frase. **Se cortó prosa, no piezas.**
+
+En esta pasada B baja de 450 a 439 y A de 449 a 448, y no sale ninguna pieza: lo que se corta es
+media oración del segundo secreto de Amparo (la comparación con Alba, abajo) y una palabra de cada
+cabecera al pasar de `About 17 turns each` a la banda medida.
 
 **Los nueve exponentes son nueve funciones, no nueve frases**, y desde esta ronda tampoco son
 nueve oraciones: van **ordenados alfabéticamente por función** y la mayoría son **troncos con
@@ -342,11 +346,35 @@ Tres cosas que no son de estilo. Las tres salen del acta del guardián
    guardería a las 6:40 mueve las tres medidas a la vez y no invierte el sesgo, que es lo que
    pasó la primera vez que se corrigió. **La vecina del 3 pasa a vecino, con sus dos niños**, por
    lo mismo y por dos palabras. El inglés no tiene concordancia: no se toca nada más.
-3. **De 9 minutos a 8.** §4 fija 5-8 para A2 y la cabecera declaraba 9 en las dos pantallas: era
-   el fallo de la puerta 8 del acta. Los turnos se declaran **por rol** en las dos fichas y con
-   la misma unidad (17 cada uno, rango 12-18). Queda escalado, como ya estaba: la simulación mide
-   más turnos de los que §4 permite, y eso se cierra actualizando §4 con lo medido en los ocho o
-   rediseñando los escenarios, no aquí.
+3. **La banda declarada dice ahora lo que se midió: `16-23 turns each · 9-10 minutes`.** La
+   ronda anterior bajó la cabecera de 9 minutos a 8 y dejó «About 17 turns each» para arrimarse
+   al 5-8 / 6-9 de §4. Eso era mentir dos veces. La simulación de las cinco parejas
+   (`fase7-simulacion-5.md`) midió A 19 · B 19 en 9:25 · A 21 · B 20 en 10:20 · A 16 · B 17 en
+   9:40 · A 23 · B 23 en 8:20; la única pareja por debajo —12 y 13 turnos en 4:20— es la del
+   atajista, que es un modo de fallo, no un objetivo. Mediana por rol: **19**. §4 dice en su
+   propia nota que «los minutos salen de la simulación, no del deseo» y que «si un escenario dura
+   más de lo que dice, se corrige el número». Se corrige el número, y las dos cabeceras llevan
+   **la misma cadena y la misma unidad** —turnos **por rol**, nunca globales—. Lo que queda
+   abierto no es de la ficha: **este escenario no cabe en la fila A2 de §4** (6-9 turnos, 5-8
+   minutos), y eso se cierra actualizando §4 con lo medido en los ocho o rediseñando el
+   escenario. Aquí no se rediseña nada.
+4. **`why him, and not Alba` sale del cierre.** El renglón 3 del `You did it if` de Amparo
+   obligaba a decir en voz alta una comparación con **alguien que Camilo no conoce**: el nombre
+   de Alba no está en la ficha de A, no lo pronuncia nadie antes y no vuelve a aparecer. Y la
+   comparación no hacía falta: el escenario pide que ella diga por qué le pide esto **a él**, no
+   por qué no se lo pide a otra. El criterio queda en `You said why you are asking him.`, y el
+   comparativo del exponente (`You know this warehouse better than…`) se cierra con **la tienda,
+   no con un nombre** —así lo dice ahora su tercera columna—. Alba se queda donde sí tiene
+   sentido y donde solo la ve B: en «Only you know» y en la carta. **Se cae de ahí «she is never
+   late and lives three blocks away»**, que era la otra mitad de lo que el guardián marcó en la
+   puerta 10 —una supervisora explicando que las llaves son del que llegó tarde tres lunes y no
+   de la compañera puntual—. Lo que sostiene a Alba como alternativa real es que nadie le enseñó
+   el camión, no su puntualidad.
+5. **La celda `here` de `commitment sheet` en 5A.** Decía `it is blank · one line on it is
+   yours`: pronombre más verbo conjugado, la forma que §11 prohíbe expresamente en esa columna y
+   una de las dos que el acta cita literales (puerta A del formato). Ahora es nota de propósito:
+   `still blank · one line on it for your words`. Comprobado con `fase8-scripts/vocab8.mjs` tras
+   regenerar el extracto: la celda ya no aparece en la lista.
 
 ## Hallazgos no aplicados, y por qué
 
@@ -394,3 +422,21 @@ Tres cosas que no son de estilo. Las tres salen del acta del guardián
 10. **El encabezado `You can't` leído como imperativo.** Cada punto empieza ahora por `You can't`
     en oración completa, que es lo que pide la regla de prosa. El titular es del molde de los
     ocho y no se toca desde aquí.
+
+---
+
+## Pasada de reparto de género del conjunto (21 ago 2026)
+
+Sale de `artifacts/habla-a2/fase9-reparto-genero.md`. **Cuatro palabras, y ninguna del motor.**
+
+**La vecina del 3 vuelve a ser vecina**, con sus dos niños: `She is the only reason your mornings
+can change` · `her price: her two boys` · `Then I pick up her two boys on…`. La ronda anterior la
+pasó a vecino con este argumento escrito: «en los ocho escenarios ningún hombre cuida de nadie».
+Eso se corrigió —y de más: medido sobre los dieciséis roles, el cuidado quedó **3 de 3 en hombres**
+y ninguna de las cuatro mujeres con nombre cuidaba de nadie. Con la vecina, el recorrido de la
+guardería lo hacen un hombre y una mujer, y quien recoge a los dos niños de ella los miércoles a las
+cinco sigue siendo Camilo.
+
+**Camilo no se toca.** El rol A sigue en masculino: es la mitad que sí había que corregir y la que
+sostiene el conjunto. Doña Amparo tampoco: es uno de los dos mandos femeninos en escena del set, y
+el equilibrio del mando se arregló en el escenario 8, no aquí.

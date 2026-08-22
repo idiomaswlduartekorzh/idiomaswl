@@ -5,12 +5,26 @@ Reescritura de las dos fichas del escenario 6 al formato de **§11 del blueprint
 de `fase4-escenarios-4-6.md`. Lo que cambia es la lengua, la forma y —en esta ronda— **el turno en
 el que entra la carta**.
 
-**Corregido el 21 ago 2026, tercera ronda**, con el acta del guardián (`fase7-veredicto.md`), la
+**Corregido el 21 ago 2026, tercera y cuarta rondas**, con el acta del guardián (`fase7-veredicto.md`), la
 auditoría de equidad sobre las fichas en inglés (`fase8-equidad-en.md`) y las cuatro auditorías de
 fase 7 (`fase7-calcable-6.md`, `fase7-nivel-6.md`, `fase7-naturalidad-6.md`,
 `fase7-simulacion-6.md`). Lo que no se aplicó, y por qué, está al final del archivo.
 
-**Los tres arreglos propios de esta ronda:**
+**Cuarta ronda, 21 ago 2026 — dos arreglos de ficha del acta del guardián**
+(`fase8-veredicto.md`, pendientes 11 y 12). **El escenario no se rediseña**: motor, carta, cierre,
+datos y desenlace están intactos.
+
+1. **Los turnos por rol bajan de 12 a 9** (pendiente 11). El acta lo cazó en la cabecera: §4 pone el
+   techo del A2 en 6-9 turnos por rol y esta ficha declaraba 12, que es techo de B1. Cambian las tres
+   declaraciones —la cabecera del documento y las dos de rol— y con ellas los globales, de 24 a 18. Los
+   8 minutos se quedan: §4 da 5-8 al A2, y 18 turnos en 8 minutos son ~27 segundos por turno. **La
+   carta no se mueve:** con 18 globales, el turno 6 sigue dentro de la ventana 3-6 de §6 y además cae
+   ahora en el primer tercio, que es donde la ventana quería que cayera.
+2. **B baja de 10 exponentes a 9** (pendiente 12), que es el techo de §11. Sale la fila que menos
+   trabaja, no la más larga: `picking up — Yeah? What's up?`. El razonamiento entero está en la cuenta
+   de prosa, y el apaño de la caja que sostenía esa fila se reescribe en el pendiente 3 de abajo.
+
+**Los tres arreglos de la ronda anterior:**
 
 1. **La carta pasa del turno global 8 al 6** (puerta 6 de §6: la ventana es 3-6). El turno 6 es el
    tercero de Cris, y es el primero en el que sus dos primeras cosas —la entrevista y el pasaje de
@@ -39,7 +53,7 @@ Caja común: `artifacts/habla-a2/caja-de-herramientas-a2.md`. Inglés americano.
 Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 
 `dar-mala-noticia` + `proponer-alternativa` · poder **igual** · arranca **A** · desenlace
-**acuerdo-parcial** · **8 min** · **12 turnos por rol** en las dos fichas (24 globales) ·
+**acuerdo-parcial** · **8 min** · **9 turnos por rol** en las dos fichas (18 globales) ·
 **A = Dani**, **B = Cris**. Los turnos alternan y se reparten 50/50: la asimetría de este escenario
 está en las palabras, no en los turnos.
 
@@ -51,7 +65,7 @@ concordancia sobre ninguno de los dos en ninguna de las dos fichas ni en la cart
 
 ## ROLE A — Your cousin arrives Thursday
 
-> **Informal.** Eight months sharing this apartment. Breakfast here tomorrow. No boss here. **You start.** About 12 turns each · 8 minutes.
+> **Informal.** Eight months sharing this apartment. Breakfast here tomorrow. No boss here. **You start.** About 9 turns each · 8 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
 **Where you are** · It is Tuesday, August 18, 8:20 p.m. You are in the kitchen. Cris is at the living room table, working. You just finished the call with your aunt.
@@ -122,7 +136,7 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 
 ## ROLE B — Monday morning is yours
 
-> **Informal.** Eight months sharing this apartment. Breakfast here tomorrow. No boss here. **They start.** About 12 turns each · 8 minutes.
+> **Informal.** Eight months sharing this apartment. Breakfast here tomorrow. No boss here. **They start.** About 9 turns each · 8 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
 **Where you are** · It is Tuesday, August 18, 8:20 p.m. You are working at the living room table, laptop open. Dani just got off the phone and walked into the kitchen.
@@ -172,7 +186,7 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 | to unload | to take boxes out of a truck | nine in the morning, under that window |
 
 ### Your toolkit
-Blocks **1**, **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload* are yours, not theirs — **5**, **6**, **7** `[grants]`, **8**. Block **1** has no form for this: yours is the first row of your table. Block **6**: only for the living room, until they ask.
+Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload* are yours, not theirs — **5**, **6**, **7** `[grants]`, **8**. Block **1** is not yours today: they start, so you never open. Block **6**: only for the living room, until they ask.
 
 ### Say it here — use it or don't · **don't read it out loud**
 
@@ -183,7 +197,6 @@ Blocks **1**, **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *
 | not closing the door | `I'm not saying no, but…` | you say yes to the cousin and you put your own thing in the same sentence |
 | one at a time | `My mom is arriving on…` · `And one more thing.` | your second thing as a closed plan — and the marker that opens the third |
 | parking it | `Let's leave [what] for…` | you park one thing on a day, instead of losing it |
-| picking up | `Yeah? What's up?` | you answer without opening anything |
 | putting yours down | `I need the living room on…` · `I'll finish at eleven.` | you book your hours with a day, and you close them with a time |
 | taking it back | `That's not true anymore.` | you break a fact you put on the table yourself |
 | the reason, if they ask | `The wifi drops next to the window.` | why the living room and not your room — all of it |
@@ -276,10 +289,10 @@ Aquí no se declara ninguna cifra a mano: la de abajo sale del script.
 
 | ficha | prosa (script) | tope | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| **ROLE A — Dani** | 449 | 450 | 10 filas (≤10) | 9 (8-10) | 8 (6-10) |
-| **ROLE B — Cris** | 450 | 450 | 10 filas (≤10) | 10 (8-10) | 10 (6-10) |
+| **ROLE A — Dani** | 449 | 450 | 10 filas (≤10) | 9 (8-10) | 8 (6-9) |
+| **ROLE B — Cris** | 446 | 450 | 10 filas (≤10) | 10 (8-10) | 9 (6-9) |
 
-Las dos quedan pegadas al techo, y era inevitable: §11 dejó de pedir telegramas fuera de las tablas
+A queda pegada al techo, y era inevitable: §11 dejó de pedir telegramas fuera de las tablas
 y las cinco piezas de prosa se reescribieron como oraciones completas. Lo que las mantiene bajo
 techo es que **se cortó prosa, nunca una pieza**: se fue `, no door out` de las dos cabeceras
 (idioma inventado, y `Breakfast here tomorrow` ya dice lo mismo), la metáfora `apartment hunting`
@@ -288,6 +301,21 @@ exponente más largo de Dani.
 
 A baja a **8 filas de exponentes** por el agrupamiento por función, no por recorte: las diez de
 antes eran diez filas para ocho funciones, con `the news` y `holding the line` repetidas.
+
+**B baja de 10 a 9, y esta vez sí es recorte.** §11 fija el rango en 6-9 y B estaba en 10, así que
+salía una. Se fue la que menos trabajaba, no la más larga: `picking up — Yeah? What's up?`. Era la
+única fila que no la pide ningún criterio de cierre, ninguna de las tres piezas del final y ninguna
+de las diez referencias de gramática; cubría media frase del primer turno de B, que es recepción
+pura y que el bloque 3 de la caja ya sostiene. Las otras nueve producen turno: `taking it back`
+existe solo por la carta, `the reason, if they ask` la exige el criterio «only when they asked», y
+`another way`, `not closing the door`, `one at a time`, `putting yours down`, `what you're missing`,
+`granting with a condition` y `parking it` están citadas una a una en los `grammarReferences`.
+
+Su salida deja **4 palabras de prosa** en la línea de toolkit de B, que es de donde sale el 446: la
+línea decía que el bloque 1 «no tiene forma para esto» y remitía a la primera fila de la tabla —que
+desde el ordenamiento alfabético no era `Yeah? What's up?` sino `Can we do it another way?`, o sea
+que remitía mal—. Ahora dice lo que de verdad pasa: **arranca A, así que B no abre**, y el bloque 1
+no es suyo hoy. Se cortó prosa, no una pieza.
 
 La **carta** va aparte: es otra pantalla y no se lee al preparar la ficha. El bloque de cierre y
 el debrief también quedan fuera de la cuenta por rol — son comunes a las dos pantallas, y
@@ -380,9 +408,11 @@ corrección buena es la de la pieza común y sirve a los ocho escenarios:
    limpio.
 3. **Caja, bloque 1, forma informal `[grants]` (hallazgos 35 y 24, medio).** Las dos formas que
    conceden son de mostrador o de quien llamó, y aquí a B lo paran en su propia cocina a las
-   8:20 p. m. Falta `Yeah? What's up?` Mientras no esté, vive **como fila de exponentes de B**, no
-   en la línea de toolkit: §11 dice que las frases decibles viven solo en esa tabla. Es un apaño
-   hasta que la caja la tenga, no una decisión.
+   8:20 p. m. Falta `Yeah? What's up?` **El apaño de la ronda anterior —meterla como fila de
+   exponentes de B— se ha caído**, porque era la décima fila contra el techo de 9 de §11 y era
+   además la que menos trabajaba. Hoy B no la necesita: arranca A, y el bloque 1 sale de la línea
+   de toolkit de B. La falta sigue siendo de la caja, y el día que exista, B no gasta exponente en
+   ella.
 4. **Caja, bloque 2, reparar la relación y marcar de rol (hallazgos 48 y 63, medio).** El bloque
    cierra la conversación y comprueba el contenido, pero no repara el vínculo, que es lo que piden
    los criterios de las dos fichas —«breakfast tomorrow still works», en las dos—. Falta
@@ -402,15 +432,18 @@ Y tres del blueprint y del molde:
   consultada. **Esta ronda las multiplica a propósito** —la tabla de A pasó a ser casi toda
   troncos—, así que el molde ya no puede aplazarlo: tiene que decir cómo se cuentan.
 - **§11, el rango de exponentes (hallazgo 51/13, leve).** §2 y §10 dicen «6 a 10» y §11 dice
-  «6-9». Aquí se usó 6-10, que es el número de §2 y de §10; §11 tiene que decir el mismo. La regla
+  «6-9». **Esta ronda aplica el 6-9 de §11**, que es el que manda mientras la contradicción siga
+  abierta, y por eso B perdió una fila. La contradicción no se cierra desde aquí: §2, §10 y §11
+  tienen que decir el mismo número, y si el bueno acaba siendo 10, la fila de B vuelve. La regla
   de conteo de prosa ya está cerrada: es el script, y este archivo ya no declara ninguna cifra a
   mano.
 - **§6, la ventana de la carta (hallazgo 55, leve).** **Resuelto por el lado de la ficha**: la
   carta se movió al turno global 6 y ya está dentro de la ventana 3-6 en número, no solo en
   proporción. Queda la cuestión de fondo, que es del blueprint y no de esta ficha: §6 escribió el
-  «3 a 6» cuando los roles tenían 7 turnos (14 globales), y con 12 y 12 la mitad útil de la
-  conversación cae mucho más tarde. Si §6 pasa a decir «entre el primer cuarto y la mitad de los
-  turnos globales», esta carta podría volver a moverse; mientras diga un número absoluto, se queda
-  en el 6.
+  «3 a 6» cuando los roles tenían 7 turnos (14 globales). **Con los 9 y 9 de esta ronda (18
+  globales) la tensión se deshace sola**: el turno 6 es el primer tercio de la conversación, que es
+  la zona para la que se escribió la ventana. Queda la cuestión de fondo, que es del blueprint: si
+  §6 pasa a decir «entre el primer cuarto y la mitad de los turnos globales», la carta seguiría
+  donde está; mientras diga un número absoluto, también. Se queda en el 6 por las dos vías.
 - **Renderizado: el bloque de cierre tiene que imprimirse entero dentro de las dos pantallas**
   (hallazgo 53, y el mismo del escenario 2). En este documento vive una sola vez, a propósito.

@@ -15,7 +15,14 @@ cortas y completas— y el techo de prosa pasa de 350 a **450**, medido con
 `fase7-scripts/prosa-canonica.mjs`. Lo que cambió aquí: prosa legible en las cinco piezas de texto,
 la tabla de exponentes deja de leerse como la conversación (agrupada por función y en orden
 alfabético, con troncos en vez de oraciones enteras), el objetivo de A baja de 196 a 124 caracteres
-y dos glosas de vocabulario se simplifican. Lo que no se aplicó, y por qué, está al final del archivo.
+y dos glosas de vocabulario se simplifican.
+
+**Tercera pasada, 21 ago 2026**, con el acta del guardián de fase 8 (`fase8-veredicto.md`): la banda
+`conceder-con-condicion` deja de estar solo declarada —ahora hay que pronunciar la condición para
+que el número se mueva, en los dos roles— y la celda `here` de `the doorman` pasa a nota de
+propósito. Sin tocar el escenario. El detalle está al final del archivo.
+
+Lo que no se aplicó, y por qué, está también al final del archivo.
 
 `rechazar` + `conceder-con-condicion` · poder **a>b** · arranca **B** · desenlace **acuerdo**
 · **6 min** · A 8 turnos · B 8 turnos (16 globales)
@@ -39,17 +46,17 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 **You want** · You have to get the bike out today, and you want all of the money today. Your lowest price is 390,000 with the new gears on.
 
 **You can't**
-1. Sell it for less than 390,000 with the new gears on.
+1. Sell it for less than 390,000 with the new gears on. A smaller number needs a condition, and you say the condition out loud, in the same turn.
 2. Leave the bike in the lobby after today. The doorman told you twice.
-3. Take the gears off here. You need the shop for that, and you need it before one.
+3. Take the gears off here. That needs the shop, before one.
 
 **Only you know**
-- The new gear set is exactly the size you need for the road bike you want next. With the old gears back on, your lowest price is 330,000 and you lose nothing. Say that in your first turn and you give the deal away.
+- The new gear set is exactly the size you need for the road bike you want next. With the old gears back on, your lowest price is 330,000 and you lose nothing. Say that early and you give the deal away.
 - You want 390,000 because the road bike costs 750,000 and you have 360,000.
-- You never put the lock or the lights in the ad, and nobody has asked about them.
-- You have met three buyers before this one, and all three gave you the same speech about the tire.
+- The lock and the lights were never in the ad, and nobody has asked.
+- Three buyers came before this one, and all three gave the same speech about the tire.
 
-**If you walk away with nothing** · You carry it up four floors again. You lose another Saturday to a fifth buyer with the same speech, and the road bike stays in the shop.
+**If you walk away with nothing** · You carry it up four floors again. You lose another Saturday to a fifth buyer, and the road bike stays in the shop.
 
 ### Facts
 
@@ -77,14 +84,14 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | in cash | in paper money, not by phone or card | one payment, today |
 | lock | the thing you put on a bike so nobody takes it | 45,000 that costs you nothing to give |
 | receipt | the paper the shop gives you with the price | your proof · in your pocket |
-| the doorman | the person who works at the door of a building | he told you twice · his rule, not your idea |
+| the doorman | the person who works at the door of a building | where your deadline comes from · a rule, not your idea |
 | to include | to put something in the price for free | the lock, the lights · instead of cutting the number |
 | worn out | used so much it doesn't work well | the rear tire · they say it before you do |
 
 ### Your toolkit
 Yours: **1** `[grants]`, **2**, **3** `[receives]`, **4** `[jargon]`, **5**, **6**, **7** `[grants]`, **8**.
 *Gear set*, *brake pads* and *cable* are your words, not theirs. Your reason is a receipt and four
-floors. Block **6** is for the *why*, and they are going to ask it.
+floors. Block **6** is for the *why* they will ask.
 
 ### Say it here — grouped by job, not in order · **don't read it out loud**
 
@@ -93,7 +100,7 @@ floors. Block **6** is for the *why*, and they are going to ask it.
 | asking about theirs | `How are you going to …?` · later: `Is that still …?` | open question · transport is half the deal, and their answer can change in the middle of it |
 | closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
 | money | `Cash, or part by …?` | you put the two ways to pay on the table first |
-| moving the deal | `If you …, I can …` | the price moves only when something else moves |
+| moving the deal | `If you …, I can …` | your only way down · the condition goes in the same turn, out loud |
 | opening | `Hi — are you here for …?` | you know who they are · open before you talk price |
 | the clock | `The shop closes at …` | the clock is a problem for both of you. Say it |
 | the parts | `I can put the old gears …` · `Not in the ad — I can include …` | take out the piece that is worth something to you, or add one that isn't |
@@ -102,9 +109,9 @@ floors. Block **6** is for the *why*, and they are going to ask it.
 
 ### You did it if
 The bike left the lobby today, and you both said a time and a name out loud. You said your price
-and the way to pay. They said the rear tire was worn out before you did. The price went down only
-when something else changed. You asked an open question and learned something new. They never
-found out about the old gear set.
+and the way to pay. They said the rear tire was worn out before you did. Your number went down only
+after you said a condition out loud, and they took it. You asked an open question and learned
+something new. They never found out about the old gear set.
 
 ---
 
@@ -119,7 +126,7 @@ found out about the old gear set.
 
 **You can't**
 1. Pay more than 350,000 in cash for the bike alone.
-2. Move the 70,000 in Nequi for nothing. You move that money only when you get something more in the deal, and moving the bike counts.
+2. Move the 70,000 in Nequi for nothing. That money moves only when you get something more in the deal, and you say the condition out loud, in the same turn. Moving the bike counts.
 3. Show that no other bike works for you. After that, nothing moves.
 
 **Only you know**
@@ -173,15 +180,15 @@ ask. Your reason has a number: the bus.
 | closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
 | if it can't leave now | `Can you keep it for me until …?` | a day and a time is also a close |
 | money | `I have … in cash, right …` · `The Nequi money is for …` | your number as a fact, not an offer — and the other money has a job already |
-| moving the deal | `Maybe we can …` | offer another way when the price stops moving |
+| moving the deal | `If you …, I can …` · `Maybe we can …` | the extra money moves only with a condition you say out loud · offer another way when the price stops moving |
 | opening | `Good morning — thanks for …` | you asked for this meeting · open before you talk about the tire |
 | saying no | `That's more than I can …` · `I hear you, but that's not going to …` | turn the number down without bargaining · and make the second no sound different from the first |
 | the bike | `The rear tire is …` · `A new tire and a new seat — that's about …` | name the fault, then put a number on it |
 
 ### You did it if
 You left with the bike, or with a day, a time and a name. You paid 350,000 or less in cash for the
-bike alone. The Nequi money moved only for something else in the deal, and you said so. You said
-the rear tire was worn out before they did. You asked an open question and learned something new.
+bike alone. The Nequi money moved only after you said a condition out loud, and they took it.
+You said the rear tire was worn out before they did. You asked an open question and learned something new.
 They never found out that no other bike works for you.
 
 ---
@@ -296,13 +303,49 @@ dieciséis fichas, no porque esta necesitara sitio.
 | ficha | prosa, sin tablas | tope |
 |---|---|---|
 | ROLE A | **442 palabras** | 450 |
-| ROLE B | **419 palabras** | 450 |
+| ROLE B | **429 palabras** | 450 |
 
 Las dos subieron respecto a la medida anterior (444 y 439 con el mismo contador, antes de esta
 pasada) y a la vez la prosa es más legible: pasar los fragmentos a oraciones completas cuesta
 palabras, y se pagaron cortando el bloque `Your toolkit` —78 y 50 palabras de subordinación de
 tres niveles, el defecto que señaló `fase7-calcable-1` §Aparte 2— y comprimiendo `You did it if`.
 **No se quitó ninguna pieza.**
+
+## Tercera pasada (21 ago 2026) — el acto declarado y la celda `here`
+
+Dos arreglos de ficha del acta del guardián (`fase8-veredicto.md`). **El escenario no se rediseña:**
+el motor, los dos números, el reparto de turnos y el cierre compartido quedan como estaban.
+
+**1. `conceder-con-condicion` (punto 14 del acta): la banda declarada decía la verdad a medias.**
+El acto estaba en la etiqueta y en el exponente `If you …, I can …`, pero nada de la ficha
+**obligaba** a pronunciarlo: A podía bajar el número a secas y el turno seguía. Se hace real por el
+lado de la ficha, que es lo que cuesta cero diseño, y en las dos direcciones:
+
+- **A, restricción 1:** cualquier número por debajo de 390.000 **necesita una condición dicha en voz
+  alta, en el mismo turno**. Y como el tope de B son 350.000, la única salida del escenario pasa por
+  ahí: *«If you take the old gear set, I can do 340,000»*. El acto ya no es opcional, es el puente.
+- **B, restricción 2:** los 70.000 de Nequi se mueven **diciendo** qué entra a cambio, en el mismo
+  turno. El acto deja de ser exclusivo de A, que era la otra forma de que no apareciera.
+- **Criterios de logro**, los dos: el número se movió *después* de una condición dicha y aceptada.
+  Si el precio bajó sin condición, no está hecho.
+- **Exponentes:** la columna `here` de `moving the deal` dice ahora que la condición va en el mismo
+  turno, y B recibe la forma condicional junto a `Maybe we can …` (sigue en 9 filas, dentro del 6-9).
+
+Quitarlo de la etiqueta era la otra salida y **no se tomó**: el acto está al 3,1 % del conjunto y
+sacarlo de aquí lo hunde bajo el suelo del 3 %.
+
+**2. La celda `here` de `the doorman` (punto 2 del acta, línea 80).** Empezaba por pronombre y verbo
+conjugado —`he told you twice · his rule, not your idea`—, que es la forma exacta que §11 prohíbe en
+esa columna. Pasa a nota de propósito: `where your deadline comes from · a rule, not your idea`. El
+dato de las dos veces que se lo dijo el portero no se pierde: vive en la restricción 2, que es prosa.
+
+**Lo que se cortó para pagarlo, sin quitar ninguna pieza** (§11: se corta prosa, nunca una pieza).
+En ROLE A, cinco recortes de prosa: la restricción 3 (`You need the shop for that, and you need it
+before one` → `That needs the shop, before one`), `Say that in your first turn` → `Say that early`,
+la línea del anuncio, la de los tres compradores anteriores, el «mismo discurso» del quinto y el
+cierre del bloque `Your toolkit`. ROLE A queda igual que antes (442) y ROLE B sube de 419 a 429.
+
+---
 
 ## Lo que no se aplicó, y por qué
 

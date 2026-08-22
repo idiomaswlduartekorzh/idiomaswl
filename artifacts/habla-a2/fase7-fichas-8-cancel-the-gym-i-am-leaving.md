@@ -14,23 +14,23 @@ de prosa es **450 palabras**, medidas solo con `prosa-canonica.mjs`. Qué se toc
 poder **b>a** · arranca **A** · desenlace **sin acuerdo** · **8 min** (techo A2 de §4) · **8 turnos por rol**, la misma unidad en las dos fichas ·
 carta **`afterTurn: 3`** (global), a **B**.
 
-**A = Tatiana** · **B = Milena** · Fuera de escena: **Wilmer** (el vendedor que ya no trabaja
+**A = Tatiana** · **B = Mauricio** · Fuera de escena: **Wilmer** (el vendedor que ya no trabaja
 ahí), **Édison** (retención), **Yurany** (compañera de trabajo de Tatiana).
 
 **Caja de herramientas del nivel:** `artifacts/habla-a2/caja-de-herramientas-a2.md`. Las dos
 fichas la señalan y ninguna la copia.
 
-**Nota de redacción — el léxico del trámite es medio escenario.** Milena lleva las palabras del
+**Nota de redacción — el léxico del trámite es medio escenario.** Mauricio lleva las palabras del
 oficio y **tiene que poder glosarlas** (bloque 4 de la caja); Tatiana lleva las de su propio
-calendario; las del oficio las tiene que preguntar. Cuando las dos necesitan el mismo objeto,
-cada una lo lleva **desde su lado** —`a one-way ticket` en la de Tatiana, `a round-trip ticket` en
-los datos de Milena—, no con la misma fila repetida.
+calendario; las del oficio las tiene que preguntar. Cuando los dos necesitan el mismo objeto,
+cada quien lo lleva **desde su lado** —`a one-way ticket` en la de Tatiana, `a round-trip ticket` en
+los datos de Mauricio—, no con la misma fila repetida.
 
 ---
 
 ## ROLE A — You're leaving, and still paying
 
-> **Counter, formal.** *Please*, *sorry*, *thank you*. Shouting buys nothing: she signs nothing. **You start.** 8 turns each · 8 minutes.
+> **Counter, formal.** *Please*, *sorry*, *thank you*. Shouting buys nothing: he signs nothing. **You start.** 8 turns each · 8 minutes.
 > **Your screen only.** Don't show it, don't read from it.
 
 **Where you are** · Tuesday, 6:40 p.m. You are at the front desk of a gym in Cabecera, straight from work, four people behind you.
@@ -76,9 +76,9 @@ los datos de Milena—, no con la misma fila repetida.
 | a charge | money a company takes from you for something | the 5th of every month, and what it pays for |
 | a one-way ticket | a ticket that takes you there and not back | yours, and already paid |
 | business days | days when offices are open — not Saturday, not Sunday | 8 for the card, 10 to 15 for the passport |
-| ID | the card with your name and your number on it | what she asks for · and the number, out loud |
+| ID | the card with your name and your number on it | what he asks for · and the number, out loud |
 | in writing | on paper, not only said out loud | what Wilmer never gave you · what you want today |
-| the minimum | the shortest time you have to stay after you sign | July 13 to October 13 · the reason she says no |
+| the minimum | the shortest time you have to stay after you sign | July 13 to October 13 · the reason he says no |
 | to bounce | when the bank says no, and the money does not leave your card | the September 5 charge · why it can't work |
 | to cancel a plan | to end it, so you stop paying and you stop going | what you came for — careful: in Spanish *cancelar* can mean *to pay* |
 | to expire | to stop working after a date | your card, August 31 · where the whole problem starts |
@@ -99,7 +99,7 @@ Blocks **1** `[asks]` at the worst hour · **2** · **3** `[receives]`, **yours*
 | your date | `I'm leaving on…` | a bought ticket, not an opinion |
 
 ### You did it if
-With the screen face down: what she writes today and what she doesn't · **one** way and what it needs · who, where and what time · the 5th, the 12th and the last hour that counts · which paper works and why yours doesn't.
+With the screen face down: what he writes today and what he doesn't · **one** way and what it needs · who, where and what time · the 5th, the 12th and the last hour that counts · which paper works and why yours doesn't.
 
 ---
 
@@ -108,9 +108,9 @@ With the screen face down: what she writes today and what she doesn't · **one**
 > **Counter, formal.** *Please*, *sorry*, *thank you* — also for the no. **She starts.** 8 turns each · 8 minutes.
 > **Your screen only.** Don't show it, don't read from it.
 
-**Where you are** · Tuesday, 6:40 p.m., the front desk in Cabecera. You are alone, four people are in line, and the member at the counter is not here to train.
+**Where you are** · Tuesday, 6:40 p.m., the front desk in Cabecera. You are alone, and the member at the counter is not here to train.
 
-**You want** · You want to help her without crossing your line, and to close the visit with her signature.
+**You want** · You want to help her without crossing your line. She has to leave with a way she can use, and you have to leave with her signature.
 
 **You can't**
 1. You can't cancel a plan inside its minimum term. That answer belongs to retention, in writing, and not to you.
@@ -165,6 +165,7 @@ Blocks **1** `[grants]` · **2** · **3**, **yours**: an ID and a reason, by ear
 | asking her for something | `Can you sign here, next to…?` · `Has this person ever been a member…?` | what opens the case and ends the visit · the one question that opens or closes that way |
 | buying yourself a turn | `Let me check that. One moment…` | slow it down without sending her away — and it is what the card takes from you |
 | dictating a number | `Write this down, please: …` | the case number and the date, for her to copy |
+| offering a way | `There is another way, but…` · `If you bring…, I can…` | one way at a time, and the second one only when the first one dies · the condition in the same sentence as the way, so the yes is not bigger than it is |
 | saying no with a door open | `I can't do that, but I can…` · `I have to be careful, because…` | the no and the yes in one sentence · your reason, not the rulebook's |
 | talking about the paper | `I need a paper that says…` · `That's not enough — it doesn't say…` | describe it by what it has to say, not by its name · point at the missing date, not at the whole paper |
 | taking her side | `I know, and I'm sorry about…` | make it clear this isn't aimed at her |
@@ -174,7 +175,7 @@ In her own words: what you write today and what you don't · **one** way and wha
 
 ---
 
-## The card — Milena's screen only · opens after **GLOBAL turn 3**
+## The card — Mauricio's screen only · opens after **GLOBAL turn 3**
 
 > **Global turn 3 = the third turn of the conversation**, not your third one. Tatiana opens the conversation, so turn 3 is her second one and you play the card on turn 4. She never sees this screen.
 
@@ -192,9 +193,9 @@ In her own words: what you write today and what you don't · **one** way and wha
 
 ## Both screens — how it ends
 
-**Three things end it. Tatiana signs the visit log. Milena says the case number and the date out loud. Tatiana says them back.** Before she signs, you two have to answer out loud:
+**Three things end it. Tatiana signs the visit log. Mauricio says the case number and the date out loud. Tatiana says them back.** Before she signs, you two have to answer out loud:
 
-1. **What Milena writes today, and what she doesn't.** Tatiana says it, in her own words.
+1. **What Mauricio writes today, and what he doesn't.** Tatiana says it, in her own words.
 2. **Her first choice, and what she has to bring.** One way, not two.
 3. **Who with, where and at what time — and what happens on September 5 and on the 12th if she does nothing.**
 
@@ -202,8 +203,8 @@ When Tatiana has the number and the date, and she says them back, it's over. **T
 
 ## After — both screens, in Spanish
 
-1. **Hoy nadie consigue la cancelación**, y eso estaba decidido por el escenario antes de que hablaran: no depende de cómo lo hicieron y no es fallar el ejercicio. Lo que se medía es otra cosa: si Tatiana salió con más de lo que traía, y si Milena dijo que no **y** dijo qué sí.
-2. ¿Cuáles de los «no» de Milena eran suyos y cuáles eran de otro? Al oírlos, ¿se notaba la diferencia?
+1. **Hoy nadie consigue la cancelación**, y eso estaba decidido por el escenario antes de que hablaran: no depende de cómo lo hicieron y no es fallar el ejercicio. Lo que se medía es otra cosa: si Tatiana salió con más de lo que traía, y si Mauricio dijo que no **y** dijo qué sí.
+2. ¿Cuáles de los «no» de Mauricio eran suyos y cuáles eran de otro? Al oírlos, ¿se notaba la diferencia?
 3. Tatiana sabía desde el primer turno que el cobro del 5 iba a rebotar. ¿Lo contó? ¿En qué turno? ¿Le sirvió de algo callárselo?
 
 ---
@@ -219,29 +220,29 @@ pantalla. La cobertura de la reparación no se mueve —sigue puesta por la caja
 ```ts
 grammarReferences: [
   { level: 'a2', slug: 'have-to-must', title: 'Have to y Must en Inglés A2',
-    rationale: 'Sostiene «So I have to…?» —el exponente con el que Tatiana comprueba en voz alta lo que le acaban de decir, que es literalmente el punto 1 del cierre— y «I have to be careful, because…» de Milena. El tema separa obligación externa de interna, y aquí toda la obligación viene de fuera.' },
+    rationale: 'Sostiene «So I have to…?» —el exponente con el que Tatiana comprueba en voz alta lo que le acaban de decir, que es literalmente el punto 1 del cierre— y «I have to be careful, because…» de Mauricio. El tema separa obligación externa de interna, y aquí toda la obligación viene de fuera.' },
   { level: 'a2', slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
     rationale: 'Sostiene «What will happen if…?». Es la estructura del punto 3 del cierre: qué pasa el 5 y el 12 de septiembre si no hace nada, y también la forma en que las dos fichas escriben sus condiciones en prosa («Too early, and it sounds like…», «If you never say it, she never knows.»). La forma que se descarta, «What happens if…?», desalinea el exponente de su propio anclaje justo ahí: aquí manda el anclaje, y si el anclaje cambia, la fila cambia con él.' },
   { level: 'a2', slug: 'relative-clauses-a2', title: 'Cláusulas de relativo en Inglés A2: who, which, that',
-    rationale: 'Sostiene «The person who can do that is…» (caja, bloque 7) y «I need a paper that says…». Es lo que le permite a Milena pasar el asunto a quien decide sin discurso indirecto, que en A2 está prohibido.' },
+    rationale: 'Sostiene «The person who can do that is…» (caja, bloque 7) y «I need a paper that says…». Es lo que le permite a Mauricio pasar el asunto a quien decide sin discurso indirecto, que en A2 está prohibido.' },
   { level: 'a2', slug: 'present-perfect-ever-never', title: 'Present Perfect con Ever, Never, Already y Yet',
-    rationale: 'Sostiene «Has this person ever been a member…?» Es el recast en nivel de la cláusula de la cesión, que estaba escrita como modal + infinitivo perfecto (B1+) y Milena tenía que decirla en voz alta. Va con «this person» y no con «she» a propósito: sirva o no sirva el orden en que salga Yurany, la pregunta no presupone a nadie y se puede leer en cualquier turno.' },
+    rationale: 'Sostiene «Has this person ever been a member…?» Es el recast en nivel de la cláusula de la cesión, que estaba escrita como modal + infinitivo perfecto (B1+) y Mauricio tenía que decirla en voz alta. Va con «this person» y no con «she» a propósito: sirva o no sirva el orden en que salga Yurany, la pregunta no presupone a nadie y se puede leer en cualquier turno.' },
   { level: 'a2', slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
-    rationale: 'Sostiene «I need it because…», «I know it\'s not your fault, but…», «I can\'t do that, but I can…», «I can show you, but I can\'t leave it.» y «That\'s why I\'m here today.» Ese but es el eje del escenario: es lo que convierte un no en una alternativa, y es lo único que separa a Milena de ser un mostrador que dice no ocho veces.' },
+    rationale: 'Sostiene «I need it because…», «I know it\'s not your fault, but…», «I can\'t do that, but I can…», «I can show you, but I can\'t leave it.» y «That\'s why I\'m here today.» Ese but es el eje del escenario: es lo que convierte un no en una alternativa, y es lo único que separa a Mauricio de ser un mostrador que dice no ocho veces.' },
   { level: 'a1', slug: 'can-ability', title: 'Can para habilidad en inglés A1',
-    rationale: 'Sostiene «Can you sign here, next to…?» de Milena y «I can show you, but I can\'t…» de Tatiana, que es la única forma que tiene ella de enseñar el correo de la embajada sin dejarlo. El tema enseña can como permiso y petición; could de cortesía no existe en A1 ni en A2 y sale de las dos fichas. En este mostrador la cortesía la ponen please, sorry y thank you.' },
+    rationale: 'Sostiene «Can you sign here, next to…?» de Mauricio y «I can show you, but I can\'t…» de Tatiana, que es la única forma que tiene ella de enseñar el correo de la embajada sin dejarlo. El tema enseña can como permiso y petición; could de cortesía no existe en A1 ni en A2 y sale de las dos fichas. En este mostrador la cortesía la ponen please, sorry y thank you.' },
   { level: 'a1', slug: 'present-simple-questions', title: 'Present simple interrogativo en inglés A1',
-    rationale: 'Sostiene «What does "…" mean?». Es la reparación que este escenario pide más que ningún otro del set, porque Milena habla en palabras de contrato: freeze, transfer, cut-off, collections, retention.' },
+    rationale: 'Sostiene «What does "…" mean?». Es la reparación que este escenario pide más que ningún otro del set, porque Mauricio habla en palabras de contrato: freeze, transfer, cut-off, collections, retention.' },
   { level: 'a1', slug: 'present-simple-negative', title: 'Present simple negativo en inglés A1',
-    rationale: 'Sostiene «I don\'t want to pay for…», que es donde Tatiana dice por qué le importa en vez de repetir lo que dice el contrato. Y es la estructura con la que Milena tiene que construir en voz alta la diferencia entre congelar y cancelar: la ficha se la da como nota de propósito en el vocabulario («way one · to her, it sounds like a cancellation»), nunca como frase hecha, para que la frase la ponga ella.' },
+    rationale: 'Sostiene «I don\'t want to pay for…», que es donde Tatiana dice por qué le importa en vez de repetir lo que dice el contrato. Y es la estructura con la que Mauricio tiene que construir en voz alta la diferencia entre congelar y cancelar: la ficha se la da como nota de propósito en el vocabulario («way one · to her, it sounds like a cancellation»), nunca como frase hecha, para que la frase la ponga ella.' },
   { level: 'a1', slug: 'imperative', title: 'El imperativo en inglés A1',
-    rationale: 'Sostiene «Let me say that again.» (caja, bloque 4), «Let me check that. One moment…» de Milena y «Let me copy…» de Tatiana. Es la mitad de la reparación que faltaba entera: hasta ahora ella podía preguntar qué significa algo y Milena no tenía con qué contestarle, y ahí es donde la pareja se pasaba al español.' },
+    rationale: 'Sostiene «Let me say that again.» (caja, bloque 4), «Let me check that. One moment…» de Mauricio y «Let me copy…» de Tatiana. Es la mitad de la reparación que faltaba entera: hasta ahora ella podía preguntar qué significa algo y Mauricio no tenía con qué contestarle, y ahí es donde la pareja se pasaba al español.' },
   { level: 'a1', slug: 'prepositions-time', title: 'Preposiciones de tiempo en inglés A1',
     rationale: 'No sostiene ningún exponente: sostiene la preposición que el alumno tiene que **poner él**. Este escenario es un calendario —nueve de sus datos duros son fechas u horas— y las tablas se las dan desnudas a propósito («signed July 13», «September 3, Bogotá», «9:00 a.m.–5:00 p.m.»), de modo que decirlas en voz alta obliga a elegir at/on/in. Es el único de los doce que se ancla a una omisión de la ficha, y está escrito así aposta.' },
   { level: 'a2', slug: 'present-continuous-future-a2', title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
     rationale: 'VUELVE en fase 6, y ya no es decorativo. Sostiene «I\'m leaving on…», el exponente nuevo de Tatiana. Toda la escena depende de que ella diga cuándo se va, es lo primero que tiene que decir y en fase 4 no tenía ni una forma para decirlo. El tema es exactamente esto: plan cerrado con fecha, tiquete comprado a su nombre, que no se discute.' },
   { level: 'a1', slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
-    rationale: 'NUEVO en fase 6. Sostiene «Is there another way?» —con «another» y no con «any other», que es el patrón que el tema sí enseña—. proponer-alternativa es el tercer acto de habla de este escenario y en fase 4 Tatiana se quedó sin ninguna forma de pedir una: dependía entera de que Milena soltara la cesión por su cuenta, y la ficha de Milena dice que la cesión no es lo primero que ofrece. El tema trae la interrogativa con there is/are.' },
+    rationale: 'NUEVO en fase 6. Sostiene «Is there another way?» —con «another» y no con «any other», que es el patrón que el tema sí enseña—. proponer-alternativa es el tercer acto de habla de este escenario y en fase 4 Tatiana se quedó sin ninguna forma de pedir una: dependía entera de que Mauricio soltara la cesión por su cuenta, y la ficha de Mauricio dice que la cesión no es lo primero que ofrece. El tema trae la interrogativa con there is/are.' },
 ]
 ```
 
@@ -264,14 +265,62 @@ quedan fuera porque no están dentro de ninguna ficha de rol.
 
 | ficha | palabras de prosa | techo §11 | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A — Tatiana | **442** | ≤ 450 | 10 filas | 10 | 9 formas en 6 filas |
-| ROLE B — Milena | **440** | ≤ 450 | 10 filas | 10 | 9 formas en 6 filas |
+| ROLE A — Tatiana | **445** | ≤ 450 | 10 filas | 10 | 9 formas en 6 filas |
+| ROLE B — Mauricio | **444** | ≤ 450 | 10 filas | 10 | 11 formas en 7 filas |
 
-Medido el 21 de agosto de 2026 sobre este archivo. Venía de 453 y 476.
+Medido el 21 de agosto de 2026 sobre este archivo, después de la pasada de
+`proponer-alternativa`. Venía de 453 y 476, y de 445 y 439 antes de esta pasada.
 
 ---
 
 ## Notas de la corrección
+
+### Pasada del 21 de agosto (noche) — el tercer acto, que se declaraba y no se pedía
+
+`fase8-veredicto.md` (hallazgo 14) y `fase8-conjunto.md` §1.1: la banda de este escenario declara
+`pedir-favor` + `rechazar` + **`proponer-alternativa`**, y **ninguna de sus 12 filas de exponentes
+pedía la tercera**. Mauricio tenía `I can't do that, but I can…`, que es un no con puerta y se
+clasifica como `rechazar`; Tatiana solo tenía cómo **pedir** una vía (`Is there another way?`), que
+es `pedir-favor`. El acto que sostiene el escenario entero vivía en la etiqueta y no en la
+pantalla, y las dos vías de Mauricio —congelar y ceder— dependían de que se le ocurriera ofrecerlas
+sin una sola forma para hacerlo.
+
+Dos cambios, ninguno en el motor:
+
+1. **Mauricio, fila nueva de exponentes** — `offering a way`: `There is another way, but…` ·
+   `If you bring…, I can…`. El acto va en su boca, que es donde lo pone el diseño: es quien
+   tiene las dos vías y quien decide en qué orden las suelta. Las dos formas ya estaban ancladas
+   —`there-is-there-are` y `first-conditional`, dos de los doce `grammarReferences`— y ninguna es
+   una frase del cierre servida hecha: son troncos con puntos suspensivos, como el resto de la
+   tabla. Mauricio pasa de 6 a **7 filas**, dentro del 6-9 de §11.
+2. **El objetivo de Mauricio nombra la vía**, no solo la firma: «She has to leave with a way she can
+   use, and you have to leave with her signature.» Antes, su ficha se podía cumplir entera diciendo
+   que no y consiguiendo una firma; su propio «You did it if» le pedía las dos vías y el objetivo
+   no las mencionaba.
+
+**Tatiana no recibe fila.** Se probó darle `offering a way of your own` —proponer su hora libre del
+jueves— y **se retiró midiendo**: dos filas nuevas suben el set de 132 a 134 turnos-materia, y con
+ese denominador `insistir` cae de 3,0 % a 2,99 % y rompe el suelo de §5, exactamente como avisaba
+`fase8-conjunto.md` §1. Con una sola fila el set queda en 133: `proponer-alternativa` **15 · 11,3 %**
+(techo 30 % holgado) e `insistir` **4 · 3,0 %**, intacto. Además el reparto es más fiel: en la banda,
+lo de Tatiana es `pedir-favor` y lo de Mauricio, ofrecer caminos.
+
+**El desenlace no se toca, y esto no lo ablanda.** Sigue sin haber cancelación hoy: es el único
+`sin-acuerdo` del set y sostiene solo esa casilla del reparto. La fila nueva no da una salida: da la
+forma de decir en voz alta una vía que **no es** lo que Tatiana vino a buscar, con su condición en la
+misma frase. Congelar exige las dos fechas, que ella no tiene; ceder exige a alguien que nunca haya
+sido socio, y son 30.000 pesos con las dos presentes. Se va con un número de caso y una fecha, que
+es exactamente con lo que se iba antes.
+
+**Presupuesto:** 445 (A, sin tocar) y 444 (B), medidos solo con `prosa-canonica.mjs`. La fila de
+exponentes no cuesta prosa; las ocho palabras del objetivo de Mauricio sí, y se pagaron cortando
+prosa y no una pieza: de su «Where you are» sale `four people are in line`, que repetía literalmente
+la fila `Now` de su propia tabla de datos. B venía de 439.
+
+**Fuera de la ficha:** `fase8-scripts/actos8.mjs` traía la clasificación a mano de las 12 filas del
+nº8 y ahora son 13. Se actualizó **solo** el mapa de `8B` —`8B.4` pasa a `proponer-alternativa` y
+las tres siguientes corren una posición— para que el conjunto mida la ficha que existe. Nada más de
+ese script se tocó.
 
 ### Ronda del 21 de agosto (tarde) — prosa legible, líneas decibles y presupuesto
 
@@ -304,10 +353,10 @@ inglés (`fase8-equidad-en.md`) y las **dos correcciones de §11 de ese mismo d�
    titula ya como en el molde —*what it's for here — **not a line to say***— y sigue siendo nota
    de propósito, sin nada entrecomillado.
 5. **`retention / to authorize` fuera, `proof` dentro** (G6 de `fase7-nivel-8.md`). `proof`
-   aparece ocho veces y en cuatro filas de datos de Milena y no estaba glosada; `retention` es
-   jerga que **ella produce** y que puede glosar con el bloque 4 de la caja, y sigue viva en sus
+   aparece ocho veces y en cuatro filas de datos de Mauricio y no estaba glosada; `retention` es
+   jerga que **produce él** y que puede glosar con el bloque 4 de la caja, y sigue viva en sus
    datos y en su línea de caja. De paso desaparece la única fila con dos entradas.
-6. **El objetivo de Milena deja de tener cuatro puntos numerados.** Eran veintiuna cosas antes de
+6. **El objetivo de Mauricio deja de tener cuatro puntos numerados.** Eran veintiuna cosas antes de
    abrir la boca. Queda en una frase; nada se pierde, porque la prueba, la firma, la cédula y la
    razón están enteras en su tabla de datos («Open a case today») y la fecha de vuelta está en la
    restricción 3.
@@ -320,7 +369,7 @@ inglés (`fase8-equidad-en.md`) y las **dos correcciones de §11 de ese mismo d�
 8. **Unidades (§4).** 8 minutos —el techo A2, no 9— y **8 turnos por rol** dicho con la misma
    fórmula en las dos cabeceras: `8 turns each · 8 minutes`.
 9. **La hora de corte, en las dos listas de éxito.** Estaba solo en la de Tatiana, que es la
-   única que no puede saberla: vivía en los datos de Milena. Ahora las dos piden «the last hour
+   única que no puede saberla: vivía en los datos de Mauricio. Ahora las dos piden «the last hour
    that counts».
 
 ### El reporte a cobranzas — el arreglo que se había caído, aplicado
@@ -332,7 +381,7 @@ señala `fase8-equidad-en.md`. Se aplica aquí, en tres sitios y sin tocar el mo
 
 - **Datos de Tatiana**, fila nueva: `| If the charge bounces | a transfer from anywhere, before
   the 12th · nothing else after that |`.
-- **Vocabulario de Milena**, celda `here` de `collections`: «the 12th, **if nobody pays the
+- **Vocabulario de Mauricio**, celda `here` de `collections`: «the 12th, **if nobody pays the
   charge**», en vez de «then out of your hands».
 - **La carta de Édison**: «collections on the 12th · the system, on its own · **a transfer before
   the 12th stops it**», en vez de «after that: nobody here».
@@ -345,15 +394,15 @@ que deja de ser un callejón.
 
 Lo que le impide cancelar es **la permanencia**, y esa expresión aparecía dos veces en la ficha de
 Tatiana (`What you signed`, y antes en su dato oculto) **sin estar en su vocabulario ni en la
-lista de jerga que Milena tiene que glosar**. Tal cual estaba, el escenario medía si el alumno ya
+lista de jerga que Mauricio tiene que glosar**. Tal cual estaba, el escenario medía si el alumno ya
 sabía qué es una permanencia en inglés. Dos cambios:
 
 - Fila nueva en el vocabulario de **Tatiana**: `the minimum | the shortest time you have to stay
   after you sign | July 13 to October 13 · the reason she says no`. Entra sin subir el tope de 10:
   sale `an appointment`, que no hace falta para llegar a ninguno de los tres puntos del cierre, y
   la etiqueta de sus datos pasa a `Your day in Bogotá` para no dejar la palabra suelta.
-- *minimum* entra en la lista del bloque 4 de **Milena**: `freeze, transfer, minimum, case,
-  cut-off, collections, retention`. Es ella quien produce la palabra, así que es ella quien tiene
+- *minimum* entra en la lista del bloque 4 de **Mauricio**: `freeze, transfer, minimum, case,
+  cut-off, collections, retention`. Es él quien produce la palabra, así que es él quien tiene
   que poder decirla en fácil.
 
 Es el mismo reparto que ya funciona en el escenario 4, donde `minimum term` sí está en la ficha
@@ -380,7 +429,7 @@ escrita del §11 o con la frontera del archivo.
    sostiene la carta, el punto 3 del cierre y la pregunta 3 del debrief en español. Se queda.
 3. **H8 — «Ask where she's going…» → tres preguntas directas en la ficha.** *Aplicado con otra
    forma.* La pregunta incrustada sale. Pero el recambio imprimía `where are you going?` y
-   `what for?` decibles tal cual, y son justo las cosas que Milena tiene prohibido preguntar:
+   `what for?` decibles tal cual, y son justo las cosas que Mauricio tiene prohibido preguntar:
    sería imprimir la infracción. Queda como restricción en segunda persona, que no es decible
    apuntando a nadie: «You can't ask her where she is going, why, or what her plan B is.»
 4. **H58 — la carta llega sin nada que corregir.** *Aplicada la segunda de las dos salidas.*
@@ -402,3 +451,29 @@ escrita del §11 o con la frontera del archivo.
 - **Género del conjunto.** `fase8-equidad-en.md` pide una sola pasada, y la pide en el escenario
   **5** (rol A a masculino), no aquí. Si se decidiera mover el mando masculino a este escenario,
   se toca la ficha 8; hoy no.
+
+---
+
+## Pasada de reparto de género del conjunto (21 ago 2026)
+
+Sale de `artifacts/habla-a2/fase9-reparto-genero.md`, que mide los ocho escenarios a la vez. La
+última línea de la nota anterior decía: «Si se decidiera mover el mando masculino a este escenario,
+se toca la ficha 8; hoy no». **Hoy sí.**
+
+**`B = Milena` → `B = Mauricio`.** Medido sobre los dieciséis roles, quien **manda en escena**
+era mujer en 3 de 4 escenarios con mando con nombre, y quien **gana**, también en 3 de 4 — el mismo
+75 % que tenía el sesgo contrario antes de la primera corrección. Este es el mostrador más barato de
+girar del set: el motor es un reglamento y una firma, y no depende de quién los sostiene.
+
+Qué se tocó, y nada más: el nombre en las dos pantallas, la carta, el cierre y las notas; los cuatro
+*she* de la ficha de **Tatiana** que se referían al mostrador (`he signs nothing` · `what he asks
+for` · `the reason he says no` · `what he writes today and what he doesn't`) y el `what he doesn't`
+del punto 1 del cierre. **En la ficha de Mauricio no se tocó ni un pronombre**: las 36 apariciones de
+*she/her* son Tatiana, y siguen siendo Tatiana. Tres concordancias en español que daban por hecho
+que los dos roles eran mujeres —«cuando las dos necesitan el mismo objeto, cada una lo lleva», «ella
+es la que tiene las dos vías», «es ella quien produce la palabra»— pasan a mixto.
+
+**Tatiana no se toca.** Sigue siendo ella quien se va del país y quien no consigue hoy la
+cancelación, porque el desenlace `sin acuerdo` es del diseño. Lo que sí queda anotado para el
+conjunto: es la única mujer del set que sale con menos de lo que traía, y el contrapeso está en el
+escenario 7 —Kevin no consigue los dos cupos— y en el 4, donde Astrid sí saca concesiones.
