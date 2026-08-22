@@ -80,19 +80,19 @@ You look at it every twenty minutes, because you cook on wood and not on gas.
 ### What to take from the toolkit
 Blocks **2**, **3** (numbers only), **4** `[jargon]` — *simmer*, *raw* and *serving* are yours — **5**, **6**, **7** `[grants]` (the fire explains the pot, not the jar) and **8**. **Block 1 has no form for this patio**: your opening is in your own table.
 
-### Out loud, in this patio — grouped by job · **don't read it out loud**
+### Out loud, in this patio — by job, not in order · **don't read it out loud**
 
 | function | form | what it does here | register |
 |---|---|---|---|
 | advice, about her side | `You should tell them: get out of the water at …` | advise about her side of this, never about yours | informal |
 | asking again, with a new reason | `I have to know before …, because …` · `If you don't tell me a number, I'll cook for …` | a new reason every time · then a price on the wait | neutral |
 | asking how many, and how they get back | `How many are coming back at …?` · `And how do you all get back from …?` | the number you came down here for, asked in one question · the one question she can't answer with yes or no | neutral |
+| granting it, with a string | `The container can go, but only if …` | give the thing away and keep the hour | neutral |
 | opening | `Come here a second, before you …` | you speak first, and you don't open with the question | informal |
 | the gate, at one | `Somebody has to be at the gate at …, and it can't be …` | the job the phone call just handed you | informal |
 | the pot, and how many | `The cassava goes in at …, and it's ready at …` · `That's twelve servings, and the pot doesn't leave …` | two hours, so the wait stops being an opinion · a physical no, not a no to her | neutral |
 | two rounds | `We can do it in two rounds: some at …, and the rest at …` | stop asking, start offering | neutral |
 | what it costs you | `There's rice and chicken in there from …, and that's my lunch on …` | the exact point where pairs switch to Spanish: say what you lose | informal |
-| yes, with a string | `The container can go, but only if …` | give the thing away and keep the hour | neutral |
 
 ### The lunch happened if
 You said what you lose tonight if that number comes late, and what Monday and Tuesday cost you. The chicken went in at twelve for a real number. You said what leaves and what stays. You asked for help at one o'clock. What is open has a name and an hour, and you never blamed the group.
@@ -111,7 +111,7 @@ You said what you lose tonight if that number comes late, and what Monday and Tu
 **Three lines you don't cross**
 1. You don't show up empty-handed: you wrote in the chat that lunch was coming.
 2. You don't correct the ten o'clock message until something is in your hands. You give it once, and you choose when.
-3. On that bike you carry only what fits between your feet.
+3. On that bike, only what fits between your feet.
 
 **What you haven't said yet**
 - You read Édgar's message at eleven eleven: no car back before four. You have not said a word about it.
@@ -163,19 +163,19 @@ Between your feet you can carry a cooler, and nothing bigger.
 ### What to take from the toolkit
 Blocks **2**, **3** `[receives]` — *simmer* and *raw* will come at you: ask — **4**, **5**, **6** (holding that message is not lying), **7** `[grants]` and **8**. **Not 1:** he speaks first; your opening is in your table.
 
-### Out loud, before the bike — grouped by job · **don't read it out loud**
+### Out loud, before the bike — by job, not in order · **don't read it out loud**
 
 | function | form | what it does here | register |
 |---|---|---|---|
 | advice, about his side | `You should turn the fire down and …` · `Put a lid on it and …` | advise about his side of this, never about yours | informal |
 | asking what's ready | `What is ready now?` · `And what can I take cold?` | the one question he can't answer with yes or no | neutral |
+| bikes and feet | `Marcela can take …, and the rest walk from …` · `They can be out of the water at …` | the plan in people and minutes, not in one number | neutral |
 | complaining | `I got here at nine, and I didn't …` | say the unfair part without blaming him | informal |
+| granting it, with a string | `I'll bring some of them back, but only if …` | concede the trip, keep the plate | neutral |
 | insisting, with a new reason | `They ate at seven, and nothing is open …` · `I can't show up empty-handed, so I need something before I …` | a new reason every time · then hang a price on it | neutral |
 | opening, and what happened | `About the river …` · `They left at ten because it was …` | you come in second · give what you can give, not the number | informal |
 | saying no to the bike | `Nothing big fits on …` | close the door his idea keeps opening | neutral |
-| taking it back | `At ten I told you …. That's not true now.` | the sentence this whole scene is waiting for. Late is fine; never is not | informal |
-| who rides and who walks | `Marcela can take …, and the rest walk from …` · `They can be out of the water at …` | the plan in people and minutes, not in one number | neutral |
-| yes, with a string | `I'll bring some of them back, but only if …` | concede the trip, keep the plate | neutral |
+| taking it back | `At ten I told you …. That's not true now.` | late is fine, never is not | informal |
 
 ### You rode off right if
 You said how many really come back and before what hour — not what you said at ten. You said who rides, who walks and how long the walk takes. You said what you tell the six and when. You held one condition, and what is open has a name and an hour.
@@ -184,7 +184,7 @@ You said how many really come back and before what hour — not what you said at
 
 ## The card — separate screen · ROLE A only
 
-**When her fourth turn ends — global turn 5, and it's yours. Read it, then keep talking. Don't show it, and don't read it out loud.**
+**When her second turn ends — global turn 5, and it's yours. Read it, then keep talking. Don't show it, and don't read it out loud.**
 
 **Phone · your mother · 11:2x**
 
@@ -243,8 +243,8 @@ cp artifacts/habla-a2/fase8-fichas-4nuevo.md artifacts/habla-a2/fase7-fichas-4nu
 
 | ficha | prosa | techo §11 |
 |---|---|---|
-| **ROLE A — Fabián** | **444** | 450 ✔ |
-| **ROLE B — Astrid** | **449** | 450 ✔ |
+| **ROLE A — Fabián** | **448** | 450 ✔ |
+| **ROLE B — Astrid** | **450** | 450 ✔ |
 
 **Se cortó prosa; no se quitó ninguna pieza.** Las ocho obligatorias siguen en los dos roles:
 situación, objetivo, tres restricciones, dato oculto, lo que se pierde, caja, exponentes y
@@ -405,3 +405,25 @@ columna**: eso es un pendiente del conjunto, no un arreglo de aquí, y se deja e
 nadie lo dé por cobrado. La columna va **al final** a propósito: `fase11-scripts/extraer-conjunto.mjs`
 lee `what it does here` por posición, y meterla en medio le habría cambiado el dato a todo el que
 mide sobre ese extracto.
+
+
+---
+
+## Pasada de calcabilidad (22 ago 2026) — `fase13-calcable-4.md`
+
+Lo que devolvió este escenario **no es una frase de prosa: es la tabla de ROLE B**. Sus tres últimas
+filas, leídas de arriba abajo, eran sus tres líneas del cierre y su turno final, en orden y sin nada
+intercalado — el mismo defecto que el molde ya había corregido. Contador después: **ROLE A 448 ·
+ROLE B 450**, techo 450 (B, sin un solo hueco).
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | B · exponentes, `who rides and who walks` → `bikes and feet` | renombrada | la etiqueta llevaba **las palabras literales de la segunda línea del cierre** dentro |
+| 2 | B · exponentes, `yes, with a string` → `granting it, with a string` | renombrada | era su turno 18, y la última posición le decía además *cuándo* soltar la condición |
+| 3 | A · exponentes, `yes, with a string` → `granting it, with a string` | renombrada | el otorgamiento también estaba en la última fila. Y **la pasada de carga había empeorado esta tabla**: al meter `How many are coming back at …?` en la fila 3, esa fila pasó del turno 13 al turno 1 y quedó pegada encima de `opening` |
+| 4 | B · nota de `taking it back` | `the sentence this whole scene is waiting for. Late is fine; never is not` → `late is fine, never is not` | única oración cerrada de las 18 glosas, y encima hablaba de «this whole scene» |
+| 5 | B · restricción 3 | `On that bike you carry only what fits between your feet.` → `On that bike, only what fits between your feet.` | `you` impersonal: no se invierte al decirse, y es su no en seco. Misma estructura que la fase 9 arregló **en el rol A**; en B no se había citado nunca |
+| 6 | las dos cabeceras | `grouped by job` → `by job, not in order` | eran **las dos únicas de las 16 del set sin el aviso antiguion**, justo en la ficha cuya cola era un guion. Cuesta +2 por rol y en B se pagó con el arreglo 5 |
+| 7 | carta | `When her fourth turn ends — global turn 5` → `her second turn` | contaba mal el turno en que se abre |
+
+No se añade `use it or don't` a estas cabeceras: cuesta 5 palabras por rol y B no tiene ninguna.
