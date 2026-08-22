@@ -11,7 +11,8 @@ import { items as eoi, meta as eoiMeta } from './blocks/sat-set-1-m2-facil-eoi'
  * la ausencia de los otros niveles: un módulo sin ningún ítem difícil deja de medir a quien
  * va bien, y el examen real tampoco lo hace (blueprint §2, «Módulo 1 vs módulo 2»).
  *
- * Etiquetas de hoy: **12 fáciles, 10 medios y 5 difíciles**, que vienen de 13 · 11 · 3. Las
+ * Objetivo: **6 fáciles, 16 medios y 5 difíciles**, media ≤ 9,3. El 13 · 11 · 3 original era
+ * inalcanzable con este reparto de tipos, medido, no opinado. Las
  * movió la calibración del 22 ago 2026, y está a medias a propósito: el calibrador encontró
  * que esta rama salía **más difícil que el módulo 1** (10,48 contra 10,07), lo que hace que
  * la adaptación castigue a quien va peor. Se rebajaron los textos del bloque EOI, que era el
