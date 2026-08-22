@@ -45,17 +45,17 @@ import type { SatItemMeta } from '../module-types'
  * MEDIDO SOBRE LOS SIETE (contador del guardián: caracteres, y solape de palabras de
  * contenido con el `stimulus`):
  *
- * - Puerta 7 · longitud del texto: 107, 125, 90, 97, 133, 128 y 146,5 palabras-SAT. Dentro
+ * - Puerta 7 · longitud del texto: 99,7, 125, 90, 97, 133, 128 y 146,5 palabras-SAT. Dentro
  *   de 25-150. El único ajustado es q15, que se lleva 3,5 palabras de margen desde que se
  *   glosó `set`: cualquier frase que se le añada exige quitar otra.
  * - Puerta 2 · la clave no es la opción más larga en ninguno de los siete (0 %, máximo
  *   30 %), y desde la sexta pasada tampoco es la más corta en ninguno (0 %), para que no se
- *   acierte por el otro lado. Longitudes por ítem, en orden A-D: q09 153/155/156/158,
+ *   acierte por el otro lado. Longitudes por ítem, en orden A-D: q09 149/152/155/153,
  *   q10 107/107/108/105, q11 153/149/149/151, q12 146/156/154/150, q13 123/135/117/119,
  *   q14 95/93/97/101, q15 150/144/146/140.
  * - Puerta 3 · la clave no es la que más repite palabras del texto en ninguno, ni la que
  *   menos en ninguno (0 % y 0 %, máximo 40 % por cada cara). Los solapes por ítem, en orden
- *   A-D: q09 7/6/7/5, q10 6/5/4/7, q11 4/2/2/3, q12 11/4/7/6, q13 11/12/10/10, q14 5/2/6/5,
+ *   A-D: q09 3/5/6/6, q10 6/5/4/7, q11 4/2/2/3, q12 11/4/7/6, q13 11/12/10/10, q14 5/2/6/5,
  *   q15 12/12/12/12. La clave queda siempre en el medio, nunca en un extremo; en q15 las
  *   cuatro empatan, que es el caso que el guardián trata como «no hay pista que explotar».
  *
@@ -330,6 +330,9 @@ import type { SatItemMeta } from '../module-types'
  *   —también una reserva permanente, también desde abajo, también «los mismos grados en enero
  *   que en julio»— y solo la mata la línea de las sondas: «Soundings put the two basins at the
  *   same depth». El camino del sentido común (lago hondo, hielo tardío) sigue llevando a A.
+ * - OJO: este arreglo NO cerró la fuga —el ítem volvió a filtrar nueve de diez— y lo que
+ *   describe este párrafo (el viento del valle, la turba, la mañana de enero) es un juego de
+ *   opciones retirado. Lo vigente es la séptima pasada, al final de esta cabecera.
  *
  * - q12 · el auditor lo acertó a ciegas contando: tres de las cuatro opciones nombraban el
  *   diezmo, luego el argumento iba del diezmo; de esas tres, una era la explicación rival y
@@ -354,6 +357,68 @@ import type { SatItemMeta } from '../module-types'
  *   textos de q09, q10, q12, q13, q14 y q15 —ni una palabra—, el 2×2 de q13, los tres datos de
  *   q15 y las cadenas de deducción de los siete. Solo se reescribieron opciones y razones de
  *   q09 y q12, y el ítem q11 entero.
+ *
+ * SÉPTIMA PASADA (22 ago 2026) — q09, TERCER INTENTO, Y EL PRIMERO QUE TOCA EL PASAJE. La
+ * sexta pasada igualó la FORMA de las cuatro opciones —causa que dura todo el invierno, ley
+ * general al final, ninguna estacional— y el ítem siguió filtrando nueve de diez a ciegas,
+ * exactamente igual que antes. Es R13 en su enunciado literal: lo que filtra es el sentido,
+ * no la forma. Con las cuatro leyes ciertas pero de fuerza desigual, quien sabe algo de
+ * física elige sin leer, porque de los cuatro mecanismos había uno que explicaba de verdad
+ * un retraso de tres semanas —un aporte continuo de agua templada— y tres que como física
+ * general son ciertos y como explicación de ESTE efecto son flojos: el agua del fondo de un
+ * lago hondo no tiene nada que ver con cuándo se hiela la superficie, el viento del valle es
+ * marginal y la turba baja el punto de congelación una cantidad despreciable. La clave era
+ * la única causa suficiente. Igualar la forma no podía arreglar eso.
+ *
+ * El arreglo es de contenido y cambia el pasaje, que es lo que las dos pasadas anteriores
+ * no se habían permitido. Las cuatro opciones son ahora los cuatro términos del balance de
+ * calor invernal de un lago, y los cuatro explican retrasos de congelación medidos en la
+ * literatura real:
+ *
+ * - A · calor almacenado según la profundidad. Es el primer predictor de la fecha de hielo
+ *   en cualquier estudio de fenología lacustre, y el camino del sentido común sigue aquí.
+ * - B · aporte freático continuo a temperatura constante. LA CLAVE, y a propósito la menos
+ *   famosa de las cuatro: es la que un lector que ordene los mecanismos por potencia deja
+ *   para el final, no la que marca sin leer.
+ * - C · corriente de un caudal que atraviesa el vaso. El hecho más conocido de los cuatro
+ *   —el agua que corre no se hiela—, puesto en un distractor.
+ * - D · radiación solar de invierno. Un lago a la sombra de una loma se hiela antes.
+ *
+ * Dos ejes cruzados dos y dos, para que ninguno aísle a la clave. Por CLASE: dos hablan del
+ * agua que le llega al lago (B y C) y dos, del vaso y su emplazamiento (A y D). Ese eje era
+ * la fuga de fondo de la versión anterior, donde la clave era la ÚNICA opción sobre el
+ * origen del agua frente a tres sobre el lago mismo, y la premisa —dos lagos a un kilómetro
+ * en el mismo valle— hace poco creíble que difieran en el emplazamiento: sin leer una línea,
+ * el origen del agua ya era la apuesta. Por NOTORIEDAD: dos son el primer reflejo de
+ * cualquiera (A hondo, C corriente) y dos hay que pensarlas (B manantial, D sol). La clave
+ * comparte clase con C y notoriedad con D, y no queda sola en ninguno de los dos.
+ *
+ * El pasaje pasa de tres líneas que igualan a tres que igualan otras cosas, una por
+ * distractor y ninguna sirve para dos: las sondas dan la misma profundidad (mata A), «Neither
+ * lake has a stream running into it or out of it the year round» (mata C) y «neither shore
+ * loses an hour of the low winter sun to it» (mata D). Las dos primeras niegan; la tercera
+ * iguala, que es una forma distinta de matar y la más difícil de ver. Se cayó la línea de la
+ * turba y el color a té, que ya no hace falta, y se cayó «on a still January morning», con lo
+ * que en el pasaje no queda un solo mes atado a una estación: enero y julio solo aparecen
+ * como las dos temperaturas del manantial, y el ítem se lee igual en los dos hemisferios.
+ * Eso completa por el lado del texto lo que la quinta pasada había arreglado solo en la
+ * opción.
+ *
+ * Medido de nuevo: puerta 7, el texto baja de 107 a 99,7 palabras-SAT (dentro de 25-150).
+ * Puerta 2, longitudes 149/152/155/153, cinco caracteres entre la mayor y la menor y la
+ * clave ni la más larga ni la más corta —desde la quinta pasada era la más corta, así que
+ * el bloque baja de dos a uno de siete por esa cara, el que queda es q12—. Puerta 3, solapes
+ * 3/5/6/6: la clave estrictamente entre el máximo y el mínimo, y a un punto del mejor
+ * distractor (el fallo duro salta a partir de tres).
+ *
+ * Lo que queda a ciegas, medido y asumido, en la línea de q12: la premisa —dos lagos a un
+ * kilómetro en el mismo valle— sigue haciendo algo más creíble que la diferencia esté en el
+ * agua que llega y no en el emplazamiento, y eso deja en pie a B y a C. Ahí se acaba: elegir
+ * entre las dos exige saber si este lago tiene un caudal que lo atraviesa, y eso solo está en
+ * el pasaje. Techo a ciegas 50 %, y de las dos que quedan la famosa es C, no la clave.
+ *
+ * Lo que NO se tocó: la clave del plan (q09 B), el enunciado, la fila del plan entera —II,
+ * `central-ideas-details`, ciencia, dificultad 1— y los otros seis ítems del bloque.
  */
 
 export const items: MCQQuestion[] = [
@@ -362,13 +427,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Two lakes lie a kilometer apart in the same valley, and every winter the northern one freezes about three weeks after the southern one. Soundings put the two basins at the same depth, and both waters run the same tea color from the peat in the ground around them. The ridge that shelters the southern lake shelters the northern one as well; on a still January morning neither surface moves. What differs is where the water comes from. The southern lake fills each spring with snowmelt off the slopes. The northern one is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January.',
+      'Two lakes lie a kilometer apart in the same valley, and every winter the northern one freezes about three weeks after the southern one. Soundings put the two basins at the same depth. The same ridge stands over both, and neither shore loses an hour of the low winter sun to it. Neither lake has a stream running into it or out of it the year round. What differs is where the water comes from. The southern lake fills in the thaw with snowmelt off the slopes. The northern one is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January.',
     text: 'According to the text, why does the northern lake freeze later than the southern one?',
     options: [
-      'It is a deeper lake than the southern one, and the water lying at the bottom of a deep lake sits at the same few degrees in January that it does in July.',
-      'It is fed from below by a spring that reaches it at the same temperature in January as it does in July, and water arriving that warm will hold off the ice.',
-      'Its surface is kept moving all winter by the wind that funnels down the valley, and a lake whose water keeps moving cannot set into ice as still water does.',
-      'Its water carries more peat than the southern basin does, and peaty water has to fall a good deal further below zero than a clear pond does before it freezes.',
+      "Its basin goes down to a greater depth, and the water in a deep lake has a great deal more of the summer's heat to give up before it can freeze over.",
+      'It is fed from below by a spring that arrives at the same temperature in January as it does in July, and water reaching it that warm keeps the ice away.',
+      'It has a stream running through it the year round, and water that keeps traveling through a basin will not set into ice the way water standing in one does.',
+      'It lies open to the low winter sun all day, and a lake that goes on taking sun in through the winter has more heat to lose before its surface can freeze.',
     ],
     answer: 1,
   },
@@ -473,16 +538,16 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Da por buena la diferencia que el texto niega en su segunda línea: «Soundings put the two basins at the same depth». Sin esa diferencia de fondo, el mecanismo que describe no tiene dónde apoyarse. Y el mecanismo es de verdad: el agua honda de un lago profundo sí se queda en unos pocos grados fijos todo el año, de modo que esta opción ofrece exactamente lo mismo que la clave —una reserva de calor permanente, a la misma temperatura en enero que en julio— y no se puede descartar por sonar menos física. Solo la descarta la línea de las sondas. Es además el camino del sentido común: «lago hondo, se hiela más tarde» es lo primero que se le ocurre a cualquiera, y por eso el ítem lo pone aquí y no en la clave.',
+        'Da por buena la diferencia que el texto niega en la segunda línea: «Soundings put the two basins at the same depth». El mecanismo que invoca es el más fuerte de los cuatro fuera del pasaje —el calor que un lago guarda es proporcional al agua que tiene, y la profundidad es el primer predictor de la fecha de congelación en cualquier estudio de hielo lacustre—, así que esta opción no se descarta por flojo: se descarta porque las sondas dan la misma profundidad. Es además el camino del sentido común: «lago hondo, se hiela más tarde» es lo primero que se le ocurre a cualquiera, y por eso el ítem lo pone aquí y no en la clave.',
       B:
-        'Correcta: es la única diferencia que el texto deja en pie, y la nombra él mismo. «What differs is where the water comes from»: el lago del sur se llena de deshielo, y el del norte «is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January». El agua que le entra en enero no llega a cero grados. La opción devuelve las dos cifras como igualdad —la misma temperatura en enero que en julio— y no nombra ninguna estación: decir «midsummer» por julio obligaba a saber en qué hemisferio ocurre la escena, y en el hemisferio sur pleno verano es enero. Lo que la separa de A no es la clase de causa —las dos son permanentes y las dos vienen de abajo— sino cuál de las dos sobrevive a las líneas del pasaje.',
+        'Correcta: es la única de las cuatro causas que el pasaje deja en pie, y él mismo señala dónde mirar. «What differs is where the water comes from»: el lago del sur se llena solo en el deshielo, con nieve derretida, y el del norte «is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January». Un aporte continuo a nueve grados hay que enfriarlo antes de que la superficie llegue a cero. La opción no nombra ninguna estación —dice enero y julio, las dos cifras del texto— para que no dependa del hemisferio del lector. No es la causa más convincente de las cuatro: es la única que el pasaje no desmiente.',
       C:
-        'Convierte una frase sobre el abrigo del viento en una diferencia de viento. El texto pone los dos lagos bajo la misma cresta —«The ridge that shelters the southern lake shelters the northern one as well»— y añade que en una mañana quieta de enero ninguna de las dos superficies se mueve. La causa que propone dura todo el invierno, igual que la de la clave, y la ley que invoca es cierta; lo que no hay aquí es un lago que se mueva y otro que no. Lo elige quien lee «shelters» y deduce que el viento separa a un lago del otro.',
+        'Propone la causa más famosa de las cuatro —el agua que corre no se hiela— y el texto la cierra de una línea: «Neither lake has a stream running into it or out of it the year round». Sin corriente que atraviese el vaso, no hay nada que distinga a un lago del otro por ahí. La ley es cierta y el mecanismo está documentado (las entradas y salidas de los lagos son lo último que se hiela), así que la opción no se cae sola: hay que ir a buscar la frase que la niega. La elige quien reconoce el hecho de manual y no comprueba si este lago lo tiene.',
       D:
-        'Hace diferencia de un rasgo que el texto atribuye a los dos por igual: «both waters run the same tea color from the peat in the ground around them». La propiedad que invoca es permanente y no estacional —el agua cargada de turba congela algo por debajo de cero, y eso vale en enero y en julio—, así que tampoco esta se descarta por proponer una causa de temporada; lo que la mata es que la turba oscurece las dos aguas y no puede explicar por qué una se hiela tres semanas antes. Es el error de quien retiene el detalle más visual del pasaje y lo usa como si fuera un contraste.',
+        'Invoca una propiedad que el texto atribuye a los dos por igual: «The same ridge stands over both, and neither shore loses an hour of the low winter sun to it». El sol de invierno es un término real del balance de calor de un lago —el que pasa el invierno a la sombra de una loma se hiela antes—, y la opción es verdad del lago del norte; lo que no es, es una diferencia. Es el error de tomar por contraste un rasgo que el pasaje reparte entre los dos, y el más difícil de ver de los tres, porque la línea que lo mata no niega nada: iguala.',
     },
     fuenteHecho:
-      'Limnología de dominio público (un lago alimentado por manantial freático recibe agua a temperatura constante y se enfría más despacio que uno alimentado por deshielo); valle, lagos, distancias y cifras inventados. Los tres distractores usan también hechos reales: el hipolimnion de un lago profundo se mantiene en unos pocos grados todo el año, el agua en movimiento tarda más en cuajar y la materia orgánica disuelta baja algo el punto de congelación. Ninguno es un absurdo, y ninguno propone una causa de temporada: eso es deliberado (ver la sexta pasada en la cabecera).',
+      'Limnología de dominio público. Las CUATRO opciones son términos reales del balance de calor invernal de un lago y las cuatro explican retrasos de congelación medidos en la literatura: el calor almacenado según la profundidad (A), el aporte continuo de agua freática a temperatura constante (B), la corriente de un caudal que atraviesa el vaso (C) y la radiación solar que entra cada día de invierno (D). Valle, lagos, distancia, cresta y cifras inventados. Que los cuatro mecanismos sean de primera fila es el arreglo de la séptima pasada y no un adorno: ver la cabecera.',
   },
   {
     id: 'q10',
