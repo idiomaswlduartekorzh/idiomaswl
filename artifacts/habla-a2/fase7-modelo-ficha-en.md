@@ -255,9 +255,9 @@ tope **450** (§11, 21 ago 2026).
 
 ## Pasada quirúrgica (22 ago 2026) — qué líneas se tocaron
 
-Solo las líneas citadas por `fase9-calcable-3.md` y `fase9-nivel-3.md`. Ninguna otra: ni prosa
-reescrita, ni secciones reordenadas, ni datos, nombres o motor tocados. Medido después con el
-contador canónico: ROLE A **436**, ROLE B **443**, techo 450.
+Solo las líneas citadas por `fase9-calcable-3.md`, `fase9-nivel-3.md` y `fase12-calcable-3.md`.
+Ninguna otra: ni prosa reescrita, ni secciones reordenadas, ni datos, nombres o motor tocados.
+Medido después con el contador canónico: ROLE A **436**, ROLE B **443**, techo 450.
 
 | # | dónde | qué se cambió | de dónde sale |
 |---|---|---|---|
@@ -265,7 +265,7 @@ contador canónico: ROLE A **436**, ROLE B **443**, techo 450.
 | 2 | B · `Only you know` 2, oración 3 | `The fixed weekends are the days with tips.` → `Your fixed weekends are the days that pay you in tips.` | calcable 2 |
 | 3 | B · `Only you know` 3, oración 1 | `On Saturday the 19th there is a wedding …` → `You work a wedding for sixty people on Saturday the 19th.` | calcable 3 |
 | 4 | B · `Only you know` 3, oración 2 | `it is not a condition, it is arithmetic` → `it is just numbers` | nivel R4 |
-| 5 | B · `Where you are`, oraciones 2 y 3 | fundidas: `…, with Nayibe at the other café until six.` (fuera la aposición `the manager`) | calcable 4 |
+| 5 | B · `Where you are`, oraciones 2 y 3 | fundidas: `…, with Nayibe at the other café until six.` (fuera la aposición `the manager`) · **la oración 1 se les unió después, en la fila 25** | calcable 4 |
 | 6 | A · `You can't` 1 | dos oraciones fundidas con `because …that…` | calcable 5 |
 | 7 | A · `You can't` 3 | dos oraciones fundidas con `because` | calcable 6 |
 | 8 | A · vocabulario, fila `non-refundable`, col. `what it is` | `you pay it and nobody gives it back` → `money you pay and never get back` | calcable 7 |
@@ -283,6 +283,9 @@ contador canónico: ROLE A **436**, ROLE B **443**, techo 450.
 | 20 | B · vocabulario, fila `a reservation` | `a table kept for people who called first` → `a table you save for people who call first` | nivel V2 |
 | 21 | B · vocabulario | fuera la fila `on condition that`; entra `a swap` · `when two people change days`, en orden alfabético. Siguen siendo 10 | nivel V1 |
 | 22 | tabla de presupuesto, fila ROLE B | 445 → **443** | recuento posterior |
+| 23 | B · exponentes, columna `function` | `your condition` → `granting it` y `what you can't move` → `the bus on Sunday`, con la tabla reordenada alfabéticamente | calcable 12 |
+| 24 | tabla de presupuesto, fila ROLE A | 441 → **436** | calcable 12 · recuento posterior |
+| 25 | B · `Where you are`, oración 1 | fundida con las otras dos: `…, and you are in the back room tying your apron, with your shift twenty minutes away…` | calcable 12 |
 
 **Lo que no se tocó, y por qué:** las bandas de la cabecera (7 minutos y 7 turnos por rol están
 dentro del 5-8 y del 6-9 de §4: el informe de nivel las da por buenas), el motor, los datos duros,

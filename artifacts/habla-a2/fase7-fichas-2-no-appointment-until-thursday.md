@@ -34,12 +34,12 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 **You want** · You need three things before that person leaves: a date, a checked cell number, and something for tonight.
 
 **You can't**
-1. You can't ask Dr. Restrepo anything before 5:00, and never by phone: only in writing.
+1. You can't ask Dr. Restrepo anything before 5:00: you write to her, you never call.
 2. You can't say a word about another patient's appointment: not the name, not the reason.
 3. You can't send anyone away without a written date **and** something for tonight. At closing the administrator reads your calendar.
 
 **Only you know**
-- You have an appointment at 5:20 today, with a patient who missed twice. You can leave that door open, but never with a name or a reason.
+- At 5:20 today you see a patient who missed twice. You can leave that door open, but never with a name or a reason.
 - You never ask Dr. Restrepo for favors, but today you want to ask her: you think she will say yes. That is your key.
 - Three chairs were empty this week, and the clinic counts them against you, like every patient who leaves for the corner clinic.
 
@@ -122,7 +122,7 @@ They said the **day, time and branch** back to you, and you checked them on scre
 | | |
 |---|---|
 | Now | Tuesday, September 8, 4:20 p.m. |
-| What happened | Sunday — a piece of my lower back tooth, broken · the edge **sharp** (= able to cut) on my tongue when I talk |
+| What happened | Sunday — a piece of my lower back tooth, broken · a **sharp** (= able to cut) edge on my tongue when I talk |
 | The pain today | worse than yesterday · worse with cold drinks |
 | Painkillers | two a day (**painkiller** = a pill for pain) · the first one Sunday night |
 | Work | warehouse in Girón · 7:00 a.m.–3:30 p.m., Monday to Friday · Saturdays off · forty minutes from this clinic |
@@ -155,12 +155,12 @@ Six blocks. **1** `[asks]`: no appointment, and it hurts. **2**. **3** `[receive
 | function | form | what it does here |
 |---|---|---|
 | asking for another day | `Is there any other day?` · `What days do you have after…?` | **open questions**, with your limit already inside · one of them again if they hint at something later today |
+| checking cost and arrival time | `What time do I have to be there?` · `Does my plan cover it…?` | the two things nobody tells you unless you ask |
 | comparing the pain | `It's worse than…` · `It hurts more when…` | describe by comparing, which is how pain gets described |
 | fixing the number | `That's my sister's number. Mine is…` | fix the wrong contact when they read it out |
-| how you walk in | `I don't have an appointment. Can you help me, please?` | say what you are before they ask |
 | putting your money in | `I have… with me, if that helps.` | your money as an option, not as a complaint |
 | putting your time in | `I can wait here.` · `I don't work on…` · `Can I come back at…?` | your time on the table · a day of yours they don't know about |
-| the two questions before you leave | `What time do I have to be there?` · `Does my plan cover it…?` | the two things you leave without if nobody asks |
+| saying what you need | `I don't have an appointment. Can you help me, please?` | say what you are before they ask |
 | what broke, and when | `A piece of my tooth broke on…, and…` | what you don't tell on your own — it comes out if they ask something open |
 | why seven doesn't work | `I can't come at…, because I open…` | close a time with the reason attached, not with a wish |
 
@@ -247,7 +247,7 @@ El hallazgo 62 queda cerrado: ya no hay regla de conteo propia de esta ficha.
 
 | ficha | prosa | techo | datos | vocabulario | exponentes |
 |---|---|---|---|---|---|
-| ROLE A | **449** | ≤ 450 | 10 filas | 10 | 9 |
+| ROLE A | **446** | ≤ 450 | 10 filas | 10 | 9 |
 | ROLE B | **448** | ≤ 450 | 10 filas | 10 | 9 |
 
 ---
@@ -349,7 +349,7 @@ llega en el mismo turno y el desenlace sigue siendo acuerdo.
 6. **Turnos y minutos.** 9 por rol (§4 da 6-9 al A2; los 10 anteriores se pasaban) y 6 minutos, que
    ya estaban por debajo del techo de 8. Misma unidad en las dos cabeceras.
 7. **Presupuesto.** Medido **solo** con `node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`:
-   **A 450 · B 448**, techo 450. Los arreglos 1 y 3 añaden palabras; se compensó recortando el
+   **A 450 · B 448** *(cifra desmentida: el recorte del 22 ago la dejó en A 449 · B 448)*, techo 450. Los arreglos 1 y 3 añaden palabras; se compensó recortando el
    bloque de toolkit, la nota de registro y los criterios de éxito. **No se quitó ninguna pieza.**
 
 **Lo que no se tocó, a propósito.** La asimetría del vocabulario —A produce las palabras del
@@ -480,3 +480,22 @@ atrás respecto del texto. Se recortó redundancia de prosa, sin tocar tablas, c
 
 Ninguna restricción, dato oculto, criterio de éxito ni pieza del cierre desapareció: las siete
 sustituciones cambian palabras repetidas por su forma corta.
+
+
+---
+
+## Pasada de calcabilidad (22 ago 2026, tarde) — `fase13-calcable-2.md`
+
+El recorte de la mañana declaró «solo prosa» y por eso **no aplicó** los dos renombres de tabla que
+`fase12-calcable-2.md` había pedido; además dejó dos frases que sí se levantan enteras. Los cuatro
+arreglos, con el contador corrido después (**ROLE A 446 · ROLE B 448**, techo 450):
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | A · `You can't` 1 | `…before 5:00, and never by phone: only in writing.` → `…before 5:00: you write to her, you never call.` | el recorte se llevó el ancla en segunda persona y dejó una regla de mostrador que suena igual en las dos bocas |
+| 2 | A · `Only you know` 1 | `You have an appointment at 5:20 today, with a patient who missed twice.` → `At 5:20 today you see a patient who missed twice.` | dicha en voz alta era la oferta que la restricción 2 prohíbe, y cerraba el escenario en el turno 1 |
+| 3 | B · fila `What happened` | `the edge **sharp** (= able to cut) on my tongue…` → `a **sharp** (= able to cut) edge on my tongue…` | sintagma, no una oración a un `is` de ser turno |
+| 4 | B · exponentes, columna `function` | `how you walk in` → `saying what you need` · `the two questions before you leave` → `checking cost and arrival time`, y la tabla reordenada | las dos etiquetas nombraban **cuándo**, no qué función, y le devolvían al estudiante el orden que el alfabeto acababa de romper. Con el orden nuevo el arranque cae en la fila 7 y el cierre en la 2 |
+
+La glosa de la fila 4 pierde «before you leave» y dice qué se pregunta, no cuándo: *the two things
+nobody tells you unless you ask*. Ninguna forma de la columna `form` se tocó.
