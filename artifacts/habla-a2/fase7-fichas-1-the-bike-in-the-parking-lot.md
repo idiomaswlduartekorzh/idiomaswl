@@ -41,7 +41,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 > **Polite, two strangers.** A deal in a lobby — nobody raises their voice. In English there is one *you*: the distance is in the words you choose. **They start.** About 8 turns · 6 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · You are in the lobby of your building in Cabecera, next to the bike. You put it on Marketplace three weeks ago, and you carried it down four floors four times.
+**Where you are** · You are in the lobby of your building in Cabecera, next to the bike. You put it on Marketplace, and you carried it down four floors four times.
 
 **You want** · You have to get the bike out today, and you want all of the money today. You will not sell it for less than 390,000 with the new gears on.
 
@@ -93,19 +93,18 @@ Yours: **1** `[grants]`, **2**, **3** `[receives]`, **4** `[jargon]`, **5**, **6
 *Gear set*, *brake pads* and *cable* are your words, not theirs. Your reason is a receipt and four
 floors. Block **6** is for when they ask why.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
-| asking about theirs | `How are you going to …?` · later: `Is that still …?` | open question · transport is half the deal, and their answer can change in the middle of it |
+| asking about theirs | `How are you going to …?` · `Is that still …?` | open question · transport is half the deal, and their answer can change in the middle of it |
 | closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
 | money | `Cash, or part by …?` | you put the two ways to pay on the table first |
 | moving the deal | `If you …, I can …` | your only way down · the condition goes in the same turn, out loud |
 | opening | `Hi — are you here for …?` | you know who they are · open before you talk price |
-| the clock | `The shop closes at …` | the clock is a problem for both of you. Say it |
+| the clock | `The shop closes at …` · `If it doesn't go today, I …` | a problem for both of you · say why today, don't ask for pity |
 | the parts | `I can put the old gears …` · `Not in the ad — I can include …` | take out the piece that is worth something to you, or add one that isn't |
 | the price | `I paid … for it, and I have the …` · `With the new gears, I can't go under …` | show the paper, then say your number · keep talking |
-| why today | `If it doesn't go today, I …` | say why you need it today · don't ask them to feel sorry |
 
 ### You did it if
 The bike left the lobby today, and you both said a time and a name out loud. You said your price
@@ -126,7 +125,7 @@ something new. They never found out about the old gear set.
 
 **You can't**
 1. Pay more than 350,000 in cash for the bike alone.
-2. Move the 70,000 in Nequi for nothing. That money moves only when you get something more in the deal, and you say the condition out loud, in the same turn. Moving the bike counts.
+2. Move the 70,000 in Nequi for nothing. That money moves only when you get something more in the deal, and you say the condition out loud, in the same turn — moving the bike counts.
 3. Say that this is the only bike for you. After that, nothing moves.
 
 **Only you know**
@@ -171,17 +170,16 @@ Yours: **1** `[asks]`, **2**, **3** `[receives]`, **5**, **6**, **8**. Not 4, no
 They will say *gear set*, *brake pads*, *cable*: you don't have to know those words, you have to
 ask. Your reason has a number: the bus.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
 | asking about theirs | `Why are you …?` · `What did you change …?` | open questions · they bring out what is not in the ad |
-| asking for more | `Does the lock come …?` | ask for something more inside the deal instead of asking for less |
 | closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
+| greeting | `Good morning — thanks for …` | you asked for this meeting · open before you talk about the tire |
 | if it can't leave now | `Can you keep it for me until …?` | a day and a time is also a close |
 | money | `I have … in cash, right …` · `The Nequi money is for …` | your number as a fact, not an offer — and the other money has a job already |
-| moving the deal | `If you …, I can …` · `Maybe we can …` | the extra money moves only with a condition you say out loud · offer another way when the price stops moving |
-| opening | `Good morning — thanks for …` | you asked for this meeting · open before you talk about the tire |
+| moving the deal | `Does the lock come …?` · `If you …, I can …` · `Maybe we can …` | ask for more inside the deal instead of less · the extra money moves only with a condition said out loud |
 | saying no | `That's more than I can …` · `I hear you, but that's not going to …` | turn the number down without bargaining · and make the second no sound different from the first |
 | the bike | `The rear tire is …` · `A new tire and a new seat — that's about …` | name the fault, then put a number on it |
 
@@ -302,8 +300,8 @@ dieciséis fichas, no porque esta necesitara sitio.
 
 | ficha | prosa, sin tablas | tope |
 |---|---|---|
-| ROLE A | **442 palabras** | 450 |
-| ROLE B | **429 palabras** | 450 |
+| ROLE A | **446 palabras** | 450 |
+| ROLE B | **442 palabras** | 450 |
 
 Las dos subieron respecto a la medida anterior (444 y 439 con el mismo contador, antes de esta
 pasada) y a la vez la prosa es más legible: pasar los fragmentos a oraciones completas cuesta
@@ -428,7 +426,7 @@ dato, ningún nombre y ninguna pieza del motor. El número de líneas del archiv
 las referencias de línea de los dos informes siguen siendo válidas.
 
 **Prosa tras la pasada** (`node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`, techo 450):
-ROLE A **443** · ROLE B **436**.
+ROLE A **443** · ROLE B **436** *(cifras de aquel día; las vivas son 446 / 442, ver la pasada del 22 ago al final)*.
 
 ### De `fase9-calcable-1` — 7 líneas decibles + 1 defecto de forma (8/8 aplicadas)
 
@@ -489,3 +487,31 @@ No es desacuerdo: queda fuera del encargo de una pasada quirúrgica, que solo to
    introduce defectos nuevos.
 5. **La regla que falta en §11** (segunda persona que no protege sola) y **la línea 66 del molde**
    `fase7-modelo-ficha-en.md`: viven en otros archivos.
+
+
+---
+
+## Pasada de calcabilidad (22 ago 2026) — `fase13-calcable-1.md`
+
+Las dos tablas `Say it here` se auditan aquí **por primera vez como objeto**. El defecto duro es
+viejo y nadie lo vio porque la ficha solo se había comprobado contra la banda 6-9 de §11 (lo dice
+ella misma más arriba: *«sigue en 9 filas, dentro del 6-9»*), que es la otra prueba, no esta: §11
+pide además **que no haya más filas que turnos**, y este escenario declara 8 turnos por rol con 9
+filas en cada tabla. Una tabla con más filas que turnos deja de ser andamiaje y le promete al
+estudiante una jugada escrita por turno.
+
+Contador corrido después: **ROLE A 446 · ROLE B 442**, techo 450.
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | A · exponentes, filas `the clock` y `why today` | fundidas en `the clock`, con las dos formas y la nota en dos tramos | las dos son el reloj: una lo pone y la otra lo convierte en razón. 9 filas → 8 |
+| 2 | B · exponentes, filas `asking for more` y `moving the deal` | fundidas en `moving the deal` | sus dos notas ya decían lo mismo con otras palabras. 9 filas → 8. `if it can't leave now` se queda en fila propia: es el salvavidas de después de la carta |
+| 3 | B · exponentes, `opening` → `greeting` | renombrada | las dos mitades del arranque de B eran las filas 7 y 9, con una sola en medio; por alfabético la fila baja al 3 y la cola pasa a terminar en el turno 1 |
+| 4 | A · exponentes, `asking about theirs` | fuera `later:` de la columna `form` | era el único sitio de las dos tablas que decía **cuándo** soltar algo: instrucción de orden metida en la columna de formas |
+| 5 | A · exponentes, nota de `the clock` | `the clock is a problem for both of you. Say it` → `a problem for both of you · say why today, don't ask for pity` | era la única celda de nota con oración cerrada y un imperativo detrás. Muere con la fusión |
+| 6 | B · `You can't` 2 | `…in the same turn. Moving the bike counts.` → `…in the same turn — moving the bike counts.` | era la única de las 73 oraciones de prosa sin deixis que se invierta, y avanzaba justo por la bisagra del escenario |
+| 7 | cabeceras de las dos tablas | `· use it or don't ·` añadido | requisito de §10-§11, y es lo que baja la presión de leer la tabla como guion. Cuesta +5 por rol; se pagó en A con `You put it on Marketplace three weeks ago` → `You put it on Marketplace` (la antigüedad del anuncio está en la fila `Ad price`) |
+
+**Queda abierto, fuera de este archivo:** el motor (`fase4-escenarios-1-3.md` §1) sigue diciendo
+**6 turnos por rol** donde la ficha dice 8. Con 6, incluso 8 filas serían demasiadas. Esa
+discrepancia se resuelve en el diseño, no aquí.
