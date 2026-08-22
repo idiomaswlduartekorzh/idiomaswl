@@ -73,13 +73,13 @@ concordancia sobre ninguno de los dos en ninguna de las dos fichas ni en la cart
 **You want** · You need a bed for Iván for ten nights, and a plan tonight, before you call your aunt back.
 
 **You can't**
-1. You can't say why Iván is coming. Your family agreed to say nothing until there is an answer. Outside the family you give the same version: ten days of vacation.
-2. Your family would never accept a hostel or a paid room: for them it is an insult, and tonight your aunt will hear about it.
+1. You can't give Iván's reason for coming. Your family agreed to say nothing until there is an answer. Outside the family you give the same version: ten days of vacation.
+2. In your family a hostel or a paid room is an insult. You can't do that, and tonight your aunt will hear about it.
 3. You asked your other aunt in Floridablanca already. She said no.
 
 **Only you know**
 - You said yes to your aunt on Sunday. So you come into this kitchen with news, not with a favor to ask.
-- You know why Iván is coming: the notary, on Friday the 21st, for his mom's papers. You also know the answer comes on the 26th, so for you the nights that can go back are the last ones, never the first.
+- You know Iván's reason: the notary, on Friday the 21st, for his mom's papers. You also know the answer comes on the 26th, so Iván needs the first nights, not the last ones.
 - You have one more option, and you should not offer it yet. Nelson, in 402, owes you a favor: one call tonight, and he can still say no.
 
 **If you walk away with nothing** · You still have Iván on a bus on Thursday — he already has the ticket — and no plan for that night. You call your aunt tonight with no plan. Tomorrow you have breakfast here, with the same person.
@@ -144,9 +144,9 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 **You want** · You want the whole morning of Monday the 24th at that table, and you want Dani to sign the lease before September 1.
 
 **You can't**
-1. You can't do the interview in your room. Don't explain why unless they ask. From outside it sounds like an excuse. You need that table or you lose the call.
+1. You can't do the interview in your room. Don't explain why unless they ask. It just sounds like an excuse. You need that table or you lose the call.
 2. You can't say no to the visit. You never make the visit the problem, and if you say no, you are the bad guy at breakfast.
-3. You can't put everything on the table at once. One thing per turn, and the lease last. Say it early and it sounds like payment for the visit.
+3. You can't say all three things at once. One thing per turn, and the lease last. Say it early and it sounds like payment for the visit.
 
 **Only you know**
 - Dani does not know three things yet: your interview on Monday the 24th, your mom's ticket for Saturday the 29th, and the lease.
@@ -166,7 +166,7 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 | The mattress | one single mattress at home · place for it: a bedroom floor |
 | Iván | Dani's cousin, from Cúcuta · never met |
 | Your mom | arriving Saturday the 29th, staying the weekend · ticket bought · her bed on other visits: the couch |
-| The lease | both signatures before September 1 |
+| The lease | you both sign, before September 1 |
 | If nobody signs | two weeks to find another apartment, the two of you |
 | Sunday the 23rd | kitchen, after lunch · the day for the things you did not decide today |
 
@@ -194,7 +194,7 @@ Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload*
 |---|---|---|
 | a third door | `Can we do it another way?` | you say no to the plan and not to the visit |
 | booking the table | `I need the living room on…, from… to…` · `I'll finish at…` | you book your hours with a day and two times, and you close them with the last one |
-| granting it | `If…, I'm OK with it.` | a yes with a day and an hour inside it |
+| granting it | `If…, I'll say yes.` | a yes with a day and an hour inside it |
 | leaving something for later | `Let's leave [what] for…` | you park one thing on a day, instead of losing it |
 | saying yes to the cousin | `I'm not saying no, but…` | you say yes to the cousin and you put your own thing in the same sentence |
 | taking it back | `That's not true anymore.` | you break a fact you put on the table yourself |
@@ -228,7 +228,7 @@ Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload*
 
 ## Both screens — how it ends
 
-**Each of you says three things out loud. Six in total. Nobody says the other person's three.**
+**Each of you says three things out loud. Six in total. Nobody says the other person's three lines.**
 
 **Dani's screen · your three:** where Iván sleeps on Thursday the 20th, and who sleeps where that night ·
 the second bed, and that nobody pays for it · the message for the aunt, out loud, in front of Cris.
@@ -238,16 +238,16 @@ the lease, and the day it has to carry the two names · what you did not decide 
 talk about it — Sunday the 23rd, in the kitchen, after lunch.
 
 **Together, once:** Cris says yes to the aunt's message, or changes one word in it. If Cris changes
-one word, you did not agree on the same thing.
+one word, the two of you agreed on different things.
 
 **Four rules:**
-- Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again.
-- Checking with your own words does count. *So, we're clear then* is not one of the six lines, and it isn't cheating either.
-- Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are none of the six lines.
-- Nothing is given away for free. Say what you give, and say what you get for it, in the same turn.
+- Your three lines are yours. If the other one says one of them, it doesn't count — say it again yourself.
+- You can check with your own words. *So, we're clear then* is not one of the six lines, and it isn't cheating either.
+- Saying yes is not a line. *Yeah*, *sure*, *okay*, *fine* and *that works* are not lines by themselves.
+- Nothing goes one way. In the same turn, say what you give and what you get.
 
-**Six lines, or it isn't closed.** The one that gets skipped is Cris's third. Without it the
-conversation stopped; it did not end.
+**Six lines, or it isn't closed.** The easy one to forget is the third one. Skip it and the
+conversation just stops. It doesn't end.
 
 ## After — both screens, in Spanish
 
@@ -545,7 +545,7 @@ Después del recorte: **A 449 · B 449**.
 |---|---|---|---|
 | 1 | ROLE A · `You want` | `…for ten nights, and you need a plan tonight, before…` | `…for ten nights, and a plan tonight, before…` |
 | 2 | ROLE B · `Only you know` viñeta 1 | `Dani does not know three things yet. One per turn, lease last: your interview…` | `Dani does not know three things yet: your interview…` |
-| 3 | ROLE B · `You can't` 1 | `From outside it only sounds like an excuse.` | `From outside it sounds like an excuse.` |
+| 3 | ROLE B · `You can't` 1 | `From outside it only sounds like an excuse.` | `It just sounds like an excuse.` |
 
 El 2 es el único recorte con volumen (5 palabras) y es redundancia literal: `One thing per turn, and
 the lease last` ya está escrito en la restricción 3 de la misma ficha, tres líneas más arriba. El
@@ -569,3 +569,38 @@ tablas están fuera del contador): sigue en **A 449 · B 449**, techo 450.
 `fase12-tablas` midió bien los tres puntos del cierre en la tabla de Cris (filas 9, 5 y 2, en orden
 inverso) pero no miró la fila del otorgamiento, que es la bisagra. De ahí la regla nueva: **en una
 tabla de exponentes, la fila que concede se mira aparte**, no solo la secuencia.
+
+
+---
+
+## Pasada de nivel (22 ago 2026) — `fase13-nivel-6.md`
+
+**El escenario cabe en A2 y no hay motivo para bajarlo**: la ruta mínima llega a las seis líneas
+repartidas y a las cuatro reglas en cinco turnos por rol, sobre nueve declarados, solo con lengua
+del nivel. Lo que devolvió es **cómo estaba escrito el cierre**: la prosa de las fichas, con cuatro
+rondas encima, falla en 2 de 60 unidades; **el cierre, escrito hoy y sin calibrar, en 8 de 14**.
+Contador después: **ROLE A 440 · ROLE B 447**.
+
+Y conviene dejar dicho por qué **la regla 4 no sube el escenario a B1**, antes de que alguien lo
+«arregle»: dice `in the same turn`, no `in the same sentence`, así que se cumple yuxtaponiendo dos
+oraciones de presente simple, o con la condicional simple que §4 le concede al A2. Sería B1 si
+pidiera el intercambio en una sola oración o encadenar contraofertas.
+
+| # | dónde | por qué |
+|---|---|---|
+| C1 | regla 4 · `Nothing is given away for free…` → `Nothing goes one way. In the same turn, say what you give and what you get.` | pasiva |
+| C2 | remate · `The one that gets skipped…; it did not end.` → `The easy one to forget…` | `get`-pasiva **y** pasado contrafáctico, los dos en dos líneas |
+| C3 | regla 3 · `Nobody nods their way through.` → `Saying yes is not a line.` | modismo nativo con `way`. Sigue sin género, que es lo que la ronda anterior vino a arreglar |
+| C4 | regla 2 · `Checking with your own words does count.` → `You can check with your own words.` | gerundio en sujeto + `do` enfático |
+| C5 | regla 1 · reescrita desde una sola pantalla | **pedía reconocer las tres líneas del otro, que es justo lo que la pasada de calcabilidad de esta mañana quitó de la pantalla.** No es defecto de lengua: la regla era incumplible tal como quedó el cierre |
+| C6, C8 | las seis líneas y el remate del `Together` | interrogativas incrustadas y numeral como núcleo nominal |
+| P1 | A · restricción 2 | **`would` en prosa escrita hoy**: no hay segundo condicional ni tema de `would` en A2 |
+| P2 | A · dato oculto | `the nights that can go back` — relativa con modal, también escrita hoy |
+| P3-P5 | tres leves | modismo `put everything on the table`, adverbial antepuesto, dos interrogativas incrustadas |
+| D1 | datos de B | `both signatures before September 1` → `you both sign, before September 1` |
+| A1 | exponentes · `If…, I'm OK with it.` → `If…, I'll say yes.` | **la bisagra del escenario se quedaba sin tema**: `first-conditional` marca con ❌ el resultado sin `will`. Llevaba dos informes pedido, y la pasada de calcabilidad tocó esa misma fila esta mañana sin arreglarlo |
+
+Faltan cuatro anclajes que los exponentes sí ejercitan —`past-simple-irregular`, `have-to-must`,
+`prepositions-place` (el cierre reparte tres cuerpos en tres sitios y las preposiciones de lugar se
+quedaron sin anclaje) y `verb-to-be`—, y `Let's`, `Why not` y `What about` salen **cero veces** en
+todo `src/data/grammar/ingles/`.
