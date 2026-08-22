@@ -461,6 +461,27 @@ de las tres fugas tiene** —forma, sentido o frecuencia—. Aplicar el arreglo 
 otra no hace nada, y ya nos costó una vuelta entera: igualar la forma de los ítems de
 síntesis los dejó exactamente igual de adivinables.
 
+### R15 · Se mide después de cada ronda, no después de tres
+
+La prueba a ciegas del módulo 2 estándar fue: 44,1 → 35,6 → 21,5 → 15,9 → 17,4 → **25,9 %**.
+Sube al final, y la causa no es el contenido: es que **encadené tres rondas de cambios
+antes de volver a medir** —arreglos de conjunto, rebarajado de claves y correcciones de
+equidad—, así que cuando el número subió ya no se podía saber cuál de las tres lo había
+movido.
+
+Peor aún: un ítem que se rediseñó **expresamente** para cerrar su fuga pasó de no filtrar a
+filtrar 9 de 10, y estuvo así dos rondas sin que nadie lo supiera. El arreglo lo empeoró y
+la medición que lo habría dicho llegó dos cambios tarde.
+
+> **Cada ronda de cambios se mide antes de empezar la siguiente.** Diez solucionadores y
+> cinco minutos: es la parte barata del proceso. Encadenar arreglos ahorra una medición y
+> cuesta una ronda entera de diagnóstico a ciegas.
+
+Corolario, que es el que de verdad duele: **un arreglo no es un arreglo hasta que la
+medición lo confirma.** Hasta entonces es una hipótesis, y en este módulo dos hipótesis
+razonadas —igualar la forma de las opciones de síntesis, dar causa permanente a las cuatro
+opciones del ítem de los lagos— resultaron falsas al medirlas.
+
 ### R2 · Arreglar un ítem lo convierte en un ítem nuevo
 
 Las tres versiones de q02 pasaron cada una por auditoría, y cada arreglo introdujo un
