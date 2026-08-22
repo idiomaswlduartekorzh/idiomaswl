@@ -79,19 +79,35 @@ El mismo criterio en las **cinco parejas**. No se descuenta lo leído: descontar
 pareja 3 —la que más lee— en la más equilibrada del set, que es justo la mentira que este contador
 existe para evitar.
 
-Medido con `python3` sobre las líneas de turno de este archivo, no a ojo.
+Medido con `artifacts/habla-a2/fase11-scripts/contar-palabras-6.py`, que lee **este** archivo y
+cuenta solo las líneas de turno `**A n**` / `**B n**` de las cinco parejas (la sección 5-bis queda
+fuera: son sondeos, no una conversación). **Decisión de token declarada:** el compuesto con guion
+(`twenty-fourth`) cuenta como **una** palabra. Se corrió también la variante que lo parte en dos y
+**los cinco repartos salen idénticos**, así que ninguna conclusión de este documento depende de esa
+decisión.
 
 ---
 
-## Modelo de minutos
+## Modelo de minutos — derivado del conteo, no de la impresión
 
-Turno de sólido ≈ 8–14 s · turno de flojo con consulta ≈ 18–30 s · turno monosilábico ≈ 2–5 s ·
-turno leído `[L]`/`[C]` ≈ 5–8 s · **apertura de la carta ≈ 20–25 s** · fuga al español y su
-reparación ≈ 10–15 s.
+Los minutos **salen del contador**, con estas tasas declaradas y las mismas en las cinco parejas:
+
+- **habla:** sólido **68** palabras/min · flojo **38** · atajista **85** · callado **68** (dice
+  poco, no habla despacio: su handicap es el volumen, no la velocidad).
+- **sobrecostes marcados, y solo los marcados:** pausa entre turnos **2 s** · apertura de la carta
+  **20-22 s** (+10 s si la relee, que es lo que hacen el flojo y el callado) · cada `[X]` **+6 s** ·
+  cada `[ES]` con su reparación **+10 s** · relectura del bloque de cierre **15 s** donde ocurre.
+
+La titubeo normal dentro del turno ya está dentro de la tasa: solo se suma lo que lleva marca en la
+transcripción. Así, el minutaje de cada pareja es reproducible desde su fila de palabras y su fila
+de andamiaje.
 
 **La ficha declara 8 minutos y 18 turnos globales, y hace la cuenta en voz alta:** *«18 turnos en
-8 minutos son ~27 segundos por turno»*. Ese número es el que se pone a prueba abajo. Adelanto: **el
-turno de A2 sólido no dura 27 segundos**, y por eso la pareja 1 termina antes de tiempo.
+8 minutos son ~27 segundos por turno»*. **La cuenta de la ficha es correcta y el presupuesto es
+corto.** El turno medio de la pareja 1 tiene **33 palabras**, que a 68 palabras/min son **29 s** —
+dos segundos por encima de lo que la ficha se concede— y multiplicado por 18 se sale del
+presupuesto antes de contar la carta. **Los 8 minutos solo los cumple una conversación que no
+llega al cierre.**
 
 ---
 ---
@@ -142,11 +158,11 @@ turno de A2 sólido no dura 27 segundos**, y por eso la pareja 1 termina antes d
 |---|---|
 | **¿Llega al cierre?** | **Sí, los tres puntos**, dichos por los dos, más el ritual del mensaje a la tía **con corrección de Cris en B8 y repetición de Dani en A9** |
 | **Turnos** | A 9 · B 9 = **18** sobre 18 declarados. **Desvío 0 %** |
-| **Palabras** | **A ⟪P1A⟫ · B ⟪P1B⟫ · total ⟪P1T⟫ · reparto ⟪P1R⟫** |
+| **Palabras** | **A 305 · B 288 · total 593 · reparto **51 / 49**** |
 | **¿Se muere?** | No |
-| **Andamiaje** | `[F]` 17 · `[D]` 8 · `[C]` 1 · **`[L]` 0** · `[X]` 3 |
+| **Andamiaje** | `[F]` 16 · `[D]` 8 · `[C]` 1 · **`[L]` 0** · `[X]` 3 |
 | **Fuga al español** | **Ninguna.** El punto de riesgo se ve y no se cruza: **A3**, decir que importa sin decir por qué. El bloque 6 de la caja lo sostiene entero |
-| **Minutos** | **≈ 6:05** — ⟪P1T⟫ palabras a ritmo de A2 sólido ≈ 4:45 · carta 22 s · tres silencios 30 s · relectura del bloque de cierre 15 s. **Declarado 8 · −24 %** |
+| **Minutos** | **≈ 10:12** — 593 palabras a 68/min = 8:43 · 17 pausas 34 s · carta 22 s · 3 `[X]` 18 s · relectura del bloque de cierre 15 s. **Declarado 8 · +28 %.** Es la pareja que **más** se pasa, y por producir bien |
 | **¿Saben que terminaron?** | **Sí, y por el ritual.** B8 corrige una palabra, A9 la repite: la pareja sabe que hasta B8 no habían acordado lo mismo |
 | **Vocabulario producido** | 9 de 10 · faltó `to put someone up` |
 
@@ -155,9 +171,13 @@ B2**, y B2 existe **solo porque A tenía impresa `What's wrong with…?`**. Es l
 cinco que dice `to unload`. La condición de B (`If…, I'm OK with it.`) sale entera en B5 y es la
 única vez en cinco parejas que el primer condicional se produce como condicional y no como ruego.
 
-**El desvío de minutos es nuevo, y lo trajo la cuarta ronda.** Con 12 turnos por rol esta misma
-pareja daba 7:40 sobre 8 declarados. Con 9, da 6:05. La aritmética de la cabecera —27 s por
-turno— describe a un flojo, no a un sólido: **el turno medio de este sólido dura 16 s**.
+**Y el desvío de minutos: es la única pareja que se pasa, y se pasa por hacerlo bien.** 593
+palabras en 18 turnos son **33 palabras por turno**, que a 68 palabras/min son **29 s** cada uno,
+dos por encima de los 27 s que la propia cabecera se concede. La aritmética de la ficha no está
+mal: **está calculada sobre el turno que este escenario necesita, y ese turno no cabe en 8
+minutos.** Bajar de 12 a 9 turnos por rol en la cuarta ronda no acortó la conversación —acortó el
+número de turnos y **alargó cada uno**, porque las piezas obligatorias son las mismas. La única
+pareja que cabe holgada en los 8 minutos es la que no llega al cierre.
 
 ---
 ---
@@ -218,11 +238,11 @@ usó: el jugador no supo meter la subordinada delante.)*
 |---|---|
 | **¿Llega al cierre?** | **Sí, los tres puntos.** El ritual de la tía sale en A8 y B8 lo confirma sin corregir |
 | **Turnos** | A 9 · B 9 = **18** sobre 18. **Desvío 0 %** |
-| **Palabras** | **A ⟪P2A⟫ · B ⟪P2B⟫ · total ⟪P2T⟫ · reparto ⟪P2R⟫** |
+| **Palabras** | **A 231 · B 124 · total 355 · reparto **65 / 35**** |
 | **¿Se muere?** | No, pero **se desangra en B3**: la pregunta abierta de A3 se queda sin respuesta cuatro turnos |
-| **Andamiaje** | `[F]` 14 · `[D]` 7 · `[C]` 1 · **`[L]` 0** · `[X]` 11 |
+| **Andamiaje** | `[F]` 14 · `[D]` 6 · `[C]` 1 · **`[L]` 0** · `[X]` 10 |
 | **Fuga al español** | **Una, en B3**, y es exactamente donde se predijo: al abrir la carta. `«Espera—»` es el arranque en frío de un turno que hay que reconstruir entero. Reparada sola en el mismo turno |
-| **Minutos** | **≈ 8:20** — ⟪P2T⟫ palabras ≈ 4:00 · once atascos 2:40 · carta 28 s · lectura del bloque de la carta 20 s · fuga y reparación 12 s · silencios 40 s. **Declarado 8 · +4 %. Cuadra** |
+| **Minutos** | **≈ 8:52** — A 231 a 68/min = 3:24 · B 124 a 38/min = 3:16 · 17 pausas 34 s · carta 22 s + relectura 6 s · 10 `[X]` 60 s · 1 `[ES]` 10 s. **Declarado 8 · +11 %.** Es la que **más cerca** queda del presupuesto |
 | **¿Saben que terminaron?** | **Sí**, pero por A: los dos marcadores de cierre (`So, we're clear then.`, `Thanks — really.`) los pone A o los copia B |
 | **Vocabulario producido** | 7 de 10 · faltan `to unload`, `a hostel`, `to put someone up` |
 
@@ -295,10 +315,10 @@ el marcador y **no pudo llenarlo**. La tercera pieza de B no existe en esta conv
 | **¿Llega al cierre?** | **No.** Punto 1 sí (dónde duerme Iván el jueves). Punto 2 a medias: la franja sale en B6 y **A no la repite nunca**. **Punto 3 no existe**: ni «qué queda sin decidir» ni «el domingo». Sin punto 3, la ficha dice que el juego no terminó |
 | **Turno en que se muere** | **Global 12 (A6)**, y por qué: A concede el lunes sin pedir nada a cambio, y con eso desaparece la única moneda que le quedaba. Segunda muerte, la del contrato, en **B7** |
 | **Turnos** | A 9 · B 9 = **18** sobre 18 en número · **12 útiles** |
-| **Palabras** | **A ⟪P3A⟫ · B ⟪P3B⟫ · total ⟪P3T⟫ · reparto ⟪P3R⟫** |
-| **Andamiaje** | `[F]` 11 · `[D]` 4 · `[C]` 1 · **`[L]` 0** · `[X]` 18 |
+| **Palabras** | **A 79 · B 44 · total 123 · reparto **64 / 36**** |
+| **Andamiaje** | `[F]` 9 · `[D]` 4 · `[C]` 1 · **`[L]` 0** · `[X]` 18 |
 | **Fuga al español** | **Cuatro**, y ninguna reparada: **A1** (`mi primo`, léxico), **A4** (`¿Los dos el jueves?`, la reacción a la carta), **A7** (`Ya, ¿ya está?`, el cierre) y **B7** (`Creo que sí.`). **A4 y A7 son los dos puntos que hay que dotar de andamiaje** |
-| **Minutos** | **≈ 9:40** — ⟪P3T⟫ palabras ≈ 2:05 · dieciocho atascos 3:40 · carta 32 s + tres relecturas 30 s · cuatro fugas y sus no-reparaciones 1:00 · silencios 1:50. **Declarado 8 · +21 %** |
+| **Minutos** | **≈ 6:48** — 123 palabras a 38/min = 3:14 · 17 pausas 34 s · carta 22 s + tres relecturas 10 s · 18 `[X]` 1:48 · 4 `[ES]` 40 s. **Declarado 8 · −15 %.** No se pasa: **se queda corta, y eso es el síntoma.** Dieciocho turnos en menos tiempo del previsto significa que el aire lo llenó el silencio, no la lengua |
 | **¿Saben que terminaron?** | **No.** Se levantan porque se les acabó la ficha. La prueba es `«Ya, ¿ya está?»` en A7: el jugador pregunta en español si terminaron, que es exactamente la fuga que el pendiente 4 de la caja predijo |
 | **Vocabulario producido** | 3 de 10 · `a mattress`, `the lease` (no, se abandonó), `the couch`. `to owe someone a favor`, `to be out all day` (media), `to drop`, `to unload`, `a hostel`, `to sign`, `to put someone up`: no |
 
@@ -365,10 +385,10 @@ Lo que no pasa es la **retractación**: el 29 nunca se dijo, así que no hay nad
 |---|---|
 | **¿Llega al cierre?** | **Sí, los tres puntos**, con el ritual de la tía en A8 y confirmación seca en B8 |
 | **Turnos** | A 9 · B 9 = **18** sobre 18 |
-| **Palabras** | **A ⟪P4A⟫ · B ⟪P4B⟫ · total ⟪P4T⟫ · reparto ⟪P4R⟫ — y esta cifra NO se juzga.** El perfil de B es producir tres palabras por turno; medirlo por reparto es medir el perfil, no el escenario |
-| **Andamiaje** | `[F]` 9 · `[D]` 5 · `[C]` 1 · **`[L]` 0** · `[X]` 2 |
+| **Palabras** | **A 238 · B 39 · total 277 · reparto **86 / 14** — y esta cifra NO se juzga.** El perfil de B es producir tres palabras por turno; medirlo por reparto es medir el perfil, no el escenario |
+| **Andamiaje** | `[F]` 8 · `[D]` 5 · `[C]` 1 · **`[L]` 0** · `[X]` 2 |
 | **Fuga al español** | Ninguna. A lleva la conversación sin bloquearse: **`What's wrong with…?` y `Why not…?` están impresas en su ficha y las usa cuatro veces** |
-| **Minutos** | **≈ 5:20** — ⟪P4T⟫ palabras ≈ 3:10 · carta 18 s · nueve pausas cortas de B 40 s · dos silencios de A 25 s · relectura del cierre 15 s. **Declarado 8 · −33 %** |
+| **Minutos** | **≈ 5:35** — 277 palabras a 68/min = 4:04 · 17 pausas 34 s · carta 18 s · 2 `[X]` 12 s · nueve esperas cortas ante B 27 s. **Declarado 8 · −30 %** |
 | **¿Saben que terminaron?** | **Sí**, pero lo sabe A: los tres puntos y el ritual los enuncia él y B los ratifica |
 
 ### Al callado se le mide otra cosa: ¿produjo lo que solo él tiene?
@@ -461,10 +481,10 @@ de construir, y lo hace un turno después de construirla.)*
 | **¿Gana el atajista?** | **No.** Tres intentos de cierre —globales 3, 5 y 9— y tres bloqueos distintos |
 | **¿Llega al cierre?** | **Sí, los tres puntos**, en el turno global 16 |
 | **Turnos** | A 8 · B 8 = **16** sobre 18. **Desvío −11 %** |
-| **Palabras** | **A ⟪P5A⟫ · B ⟪P5B⟫ · total ⟪P5T⟫ · reparto ⟪P5R⟫** |
-| **Andamiaje** | `[F]` 12 · `[D]` 7 · `[C]` 1 · **`[L]` 0** · `[X]` 2 |
+| **Palabras** | **A 159 · B 169 · total 328 · reparto **48 / 52**** |
+| **Andamiaje** | `[F]` 12 · `[D]` 6 · `[C]` 1 · **`[L]` 0** · `[X]` 2 |
 | **Fuga al español** | Ninguna. El atajista no se pasa al español: se pasa a la brevedad |
-| **Minutos** | **≈ 4:35** — ⟪P5T⟫ palabras a ritmo suelto ≈ 3:05 · carta 20 s · tres silencios 30 s · relectura 20 s. **Declarado 8 · −43 %** |
+| **Minutos** | **≈ 5:23** — A 159 a 85/min = 1:52 · B 169 a 68/min = 2:29 · 15 pausas 30 s · carta 20 s · 2 `[X]` 12 s. **Declarado 8 · −33 %** |
 | **¿Saben que terminaron?** | **Sí, y lo sabe B.** El punto 3 lo produce **B7 entero**; A solo lo repite (`Sure. Sunday.`) |
 | **Restricciones rotas** | **Ninguna dura.** No dice el motivo de Iván, no ofrece pagar, no manda a nadie a un hostal |
 
@@ -556,9 +576,9 @@ tercera salida del motor, entregada leyendo.**
 | **¿Llega al cierre?** | **Sí, 3/3** | **Sí, 3/3** | **No, 1,5/3** | **Sí, 3/3** | **Sí, 3/3** |
 | **Turno en que se muere** | — | — | **global 12** | — | — |
 | **Turnos** | 18 | 18 | 18 (12 útiles) | 18 | 16 |
-| **Palabras A · B** | ⟪P1A⟫ · ⟪P1B⟫ | ⟪P2A⟫ · ⟪P2B⟫ | ⟪P3A⟫ · ⟪P3B⟫ | ⟪P4A⟫ · ⟪P4B⟫ | ⟪P5A⟫ · ⟪P5B⟫ |
-| **Reparto** | ⟪P1R⟫ | ⟪P2R⟫ | ⟪P3R⟫ | ⟪P4R⟫ *(no se juzga)* | ⟪P5R⟫ |
-| **Minutos (decl. 8)** | 6:05 | 8:20 | 9:40 | 5:20 | 4:35 |
+| **Palabras A · B** | 305 · 288 | 231 · 124 | 79 · 44 | 238 · 39 | 159 · 169 |
+| **Reparto** | **51 / 49** | **65 / 35** | **64 / 36** | **86 / 14** *(no se juzga)* | **48 / 52** |
+| **Minutos (decl. 8)** | **10:12** *(+28 %)* | 8:52 *(+11 %)* | 6:48 *(−15 %)* | 5:35 *(−30 %)* | 5:23 *(−33 %)* |
 | **Fugas al español** | 0 | 1 | **4** | 0 | 0 |
 | **`[L]` en juego limpio** | 0 | 0 | 0 | 0 | 0 |
 | **¿Saben que terminaron?** | **Sí** | Sí | **No** | Sí | Sí |
@@ -573,12 +593,32 @@ debajo del 40 %**.
 
 | pareja de perfil parejo | A | B | ¿pasa? |
 |---|---|---|---|
-| 1 · sólido + sólido | ⟪P1PA⟫ | ⟪P1PB⟫ | ⟪P1V⟫ |
-| 3 · flojo + flojo | ⟪P3PA⟫ | ⟪P3PB⟫ | ⟪P3V⟫ |
+| 1 · sólido + sólido | **51 %** | **49 %** | **SÍ** |
+| 3 · flojo + flojo | **64 %** | **36 %** | **NO — B se queda 4 puntos por debajo** |
 
-⟪VEREDICTO⟫
+**VEREDICTO: la puerta 5 se PASA en la pareja 1 y se FALLA en la pareja 3.** Una de dos, así que
+**el escenario no pasa la puerta 5**: el umbral se aplica a las dos parejas de perfil parejo, no a
+la mejor.
 
-**Nota sobre la pareja 4, para que nadie la meta en esta cuenta.** Su cifra —⟪P4R⟫— no dice nada
+**La 1 sale casi partida por la mitad — 305 / 288 — y es el mejor reparto de las cinco.** Lo
+produce la estructura, no la suerte: A trae una noticia larga y B tiene tres cosas obligatorias
+más una retractación, así que los dos lados tienen materia que producir sin que nadie se la pida.
+
+**La 3 falla, y falla del lado de B: 79 / 44, un 36 %.** No falla por handicap —los dos son
+flojos— sino porque **las tres piezas de B son piezas de construcción y las de A son piezas de
+recitado**. A abre con la noticia, que es un bloque cerrado que se suelta de una: día, noches,
+sofá. Las de B —entrevista con hora y franja, el pasaje de la mamá con su retractación, y el
+contrato con su fecha y con lo que se pierde si nadie firma— exigen **montar una oración entera
+cada vez, con un dato dentro**. El flojo abandona a mitad: `And one more thing. No. Nothing.`
+(B7) es una pieza obligatoria que se anuncia y no se dice, y son 30 palabras que no salieron.
+
+**Y el reparto es robusto al criterio de conteo, que es justo lo que la regla 2 pedía comprobar.**
+Contando `twenty-fourth` como una palabra sale 64/36; contándolo como dos sale 64/36 también. Las
+cifras absolutas se mueven (123 → 123 en la 3, 593 → 601 en la 1) y **los porcentajes no se
+mueven en ninguna de las cinco parejas**. El 64/36 de la pareja 3 no es un artefacto del contador:
+es la conversación.
+
+**Nota sobre la pareja 4, para que nadie la meta en esta cuenta.** Su cifra —**86 / 14**— no dice nada
 del escenario: dice que el perfil de B era producir tres palabras por turno. Lo que sí dice algo
 está arriba, en la tabla de piezas: **6 de 8 producidas, 2 perdidas** (la condición y la
 retractación), **y la mitad del objetivo ganada asintiendo**.

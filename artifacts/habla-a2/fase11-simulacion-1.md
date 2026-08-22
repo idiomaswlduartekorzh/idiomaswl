@@ -63,9 +63,11 @@ compensa con la contraprueba del §C.
 
 **Se cuenta en bruto todo lo que sale por la boca**: inglés, español, muletillas, repeticiones,
 nombres y números, y **también lo que el jugador lee en voz alta de su ficha** (`[L]`). **No se
-cuenta**: la etiqueta del turno, las marcas entre corchetes, el cronómetro, las líneas de
-comentario que empiezan por `>`, las tablas ni los diagnósticos. **El mismo criterio en las cinco
-parejas, en el lector y en la contraprueba** — y es el mismo de `fase8-scripts/carga.mjs`.
+cuenta**: la etiqueta del turno, las marcas entre corchetes, el cronómetro, las acotaciones entre
+paréntesis —que son escena, no habla—, las líneas de comentario que empiezan por `>`, las tablas
+ni los diagnósticos. **El mismo criterio en las cinco parejas, en el lector y en la contraprueba.**
+Implementado en `artifacts/habla-a2/fase11-scripts/carga-1.mjs`, hermano del
+`fase8-scripts/carga.mjs`, y las cifras de D1 salen de correrlo sobre este archivo.
 
 ### Modelo de minutos
 
@@ -357,6 +359,8 @@ B va a cerrar en tres turnos: efectivo encima, camioneta a las seis, y a otra co
 > un trato legal**: 390.000, un solo pago, candado y luces dentro, y la bicicleta fuera hoy. Los
 > topes no lo pararon. Lo para lo que viene.
 
+**A6** `[F]` `[D]` … It's here. Three ninety, all of it. Thanks — really. **(7 s)**
+
 **B7** `[X]` `[!]` Wait. Wait — no. My brother-in-law is not coming, he goes to Barrancabermeja. There's no truck today. … Can you keep it here until Monday? **(16 s)**
 
 **A8** `[F]` `[D]` I'm afraid I can't. The doorman told me two times: no bikes in the lobby after today. And I'm on the fourth floor, no elevator. It has to go today. **(16 s)**
@@ -375,8 +379,8 @@ B va a cerrar en tres turnos: efectivo encima, camioneta a las seis, y a otra co
 
 > **Saben que terminó.** 14 turnos globales, no 3.
 
-**Minutos:** 3 min 36 s de habla · 13 pausas × 3 s = 39 s · carta 10 s. **Total ≈ 4 min 25 s** frente
-a 6. **−26 %**: el atajista no alarga, acorta.
+**Minutos:** 3 min 43 s de habla · 13 pausas × 3 s = 39 s · carta 10 s. **Total ≈ 4 min 32 s** frente
+a 6. **−24 %**: el atajista no alarga, acorta.
 
 **¿Gana el atajista?** **Gana el trato y pierde el ejercicio, y lo que lo frena no son las
 restricciones: es la carta.**
@@ -444,6 +448,8 @@ va a `You can't` y a `Only you know`.
 
 **B9** `[L]` `[X]` "Money. I have… in cash, right…" — eh… `[D]` Three hundred fifty thousand in cash. Right now. **(12 s)**
 
+**A10** `[F]` `[D]` With the new gears I can't go under three hundred and ninety. But if you take the old gear set, I can do three hundred and forty. **(13 s)**
+
 **B11** `[L]` `[X]` `[!]` "Moving the bike counts." **(3 s)**
 
 **A12** `[X]` … What counts? **(2 s)**
@@ -489,15 +495,39 @@ salvo los números, que es donde debe.
 
 ### D1 · Reparto de palabras — un solo contador, el declarado arriba
 
-| pareja | handicap | A pal. | B pal. | A % | B % | ¿puerta 5? |
-|---|---|---|---|---|---|---|
-| 1 · sólido + sólido | ninguno | — | — | — | — | **cuenta** |
-| 2 · sólido + flojo | A | — | — | — | — | no cuenta |
-| 3 · flojo + flojo | los dos | — | — | — | — | **cuenta** |
-| 4 · el callado | A | — | — | — | — | no cuenta — se le mide otra cosa |
-| 5 · el atajista | B | — | — | — | — | no cuenta |
+Medido con `node artifacts/habla-a2/fase11-scripts/carga-1.mjs` sobre este mismo archivo, con
+el contador declarado arriba y **ninguno más**: bruto, incluida la lectura en voz alta.
 
-> Las cifras van en la tabla de abajo, medidas con el script sobre este mismo archivo.
+| pareja | handicap | turnos A/B | A pal. | B pal. | total | A % | B % | ¿puerta 5? |
+|---|---|---|---|---|---|---|---|---|
+| 1 · sólido + sólido | ninguno | 8/8 | **263** | **277** | 540 | **48,7** | **51,3** | **cuenta · PASA** |
+| 2 · sólido + flojo | **A** (el que concede) | 8/8 | 143 | 258 | 401 | 35,7 | 64,3 | no cuenta |
+| 3 · flojo + flojo | los dos | 8/8 | **135** | **119** | 254 | **53,1** | **46,9** | **cuenta · PASA** |
+| 4 · el callado | **A** (el que concede) | 8/8 | 46 | 265 | 311 | 14,8 | 85,2 | no cuenta — se le mide otra cosa |
+| 5 · el atajista | **B** (el que pide) | 7/7 | 180 | 217 | 397 | 45,3 | 54,7 | no cuenta |
+| §C · contraprueba, atajista en A | **A** (el que concede) | 2/2 | 70 | 27 | 97 | 72,2 | 27,8 | no cuenta |
+| §L · el lector | B lector | 6/6 | 84 | 50 | 134 | 62,7 | 37,3 | no cuenta |
+
+**Veredicto de la puerta del 40 %, solo sobre las dos parejas de perfil parejo: PASA.**
+48,7/51,3 en la sólida y 53,1/46,9 en la floja. Y **pasa con los dos contadores**, que es lo que
+protege la cifra de la trampa del criterio mezclado: si en vez del bruto se descuenta lo que se
+lee de la ficha, la sólida no se mueve (nadie leyó nada: 0 y 0) y la floja pasa de 53,1/46,9 a
+**48,1/51,9** —A lee 45 de sus 135 palabras y B 22 de sus 119, casi todo en la pantalla de
+cierre—. Las dos siguen dentro con margen por los dos caminos.
+
+**Lo que enseña el reparto fuera de la puerta**, y por eso se alterna el handicap:
+
+- El flojo **en el lado que concede** (pareja 2) produce **143 palabras, el 35,7 %**. En la ronda
+  anterior de este escenario el flojo era B, el que pide, y el reparto se hundía por debajo del 30 %
+  porque amordazado el motor la conversación entera se encoge. Aquí el que arranca, pregunta y trae
+  la carta está intacto, así que el total no cae (401 palabras, cerca de las 540 de la sólida) y el
+  flojo se sostiene: **produce sus cinco piezas exclusivas**. El 35,7 % es su handicap, no el
+  escenario.
+- El callado en el lado que concede da **14,8 %** — la cifra no significa nada, y por eso no cuenta.
+  Lo que sí significa está en D3.
+- La contraprueba §C es el espejo: con el atajista en A, A se lleva el **72,2 %** en dos turnos.
+  Quien lleva el handicap arrastra el reparto entre 15 y 35 puntos, en cualquiera de los dos lados.
+  **De ahí que la puerta se juzgue solo donde los dos perfiles son iguales.**
 
 ### D2 · El turno donde se muere
 
@@ -535,7 +565,7 @@ preposiciones.
 | 2 · sólido + flojo | **6:56** | +16 % |
 | 3 · flojo + flojo | **8:51** (2:10 de arranque en frío incluidos) | **+47 %** |
 | 4 · el callado | **5:01** | −16 % |
-| 5 · el atajista | **4:25** | −26 % |
+| 5 · el atajista | **4:32** | −24 % |
 
 Los 6 minutos declarados **son honestos para la pareja sólida** —que es la referencia que fijó
 fase 4— y se quedan cortos para la floja por una razón que no es la conversación: **los 2:10 que
@@ -551,3 +581,40 @@ de la 3 y B15 de la 4). Los cuatro datos salen; la pregunta no la construye nadi
 «filtración estructural» que ya se diagnosticó en la pareja 4 del escenario 4 nuevo: la pantalla de
 cierre está disponible desde el turno 1 y es la única prosa del set que las dos partes pueden leer
 en voz alta sin que se note.
+
+### D7 · ¿Gana el atajista?
+
+**Gana el trato y pierde el ejercicio — y no lo paran las restricciones, lo para la carta.** En
+cinco turnos globales cerró 390.000 (350 de contado + 40 por Nequi, con la condición dicha en voz
+alta), candado y luces dentro, bicicleta fuera hoy: **legal por las dos fichas**. Sin la carta, el
+escenario se acaba en 85 segundos.
+
+Y ahí está el agujero, con nombre: **la restricción del precio solo muerde hacia abajo.** La
+restricción 1 de A obliga a pronunciar una condición para bajar de 390.000; nada obliga a nada para
+quedarse arriba. El camino corto del escenario es **pagar el número alto y no negociar**, y ese
+camino no exige ni la pregunta abierta, ni el taller, ni los cambios viejos, ni la hora. El
+atajista falla **uno solo** de sus seis criterios de éxito (`You asked an open question and learned
+something new`) y lo falla sin consecuencia dentro del juego.
+
+**Lo que sí está bien escrito** lo demuestra la contraprueba §C: el atajista **en A** se rompe en el
+turno 4, sin carta y sin ayuda de nadie, porque su propio atajo (340.000 con los cambios viejos)
+exige taller, hora de cierre y hora de recogida. `Your shop does that, and it closes at one` es el
+único freno estructural del escenario a una salida rápida.
+
+### D8 · El lector — la línea que sí se levanta
+
+No cierra: llega al turno 12 sin precio acordado, sin haber nombrado la llanta —su primer
+argumento— y sin haber abierto la carta, y produce **50 palabras, el 100 % de ellas leídas**. Con
+A sólido poniéndole el trato entero en la mano (A10, `if you take the old gear set, I can do three
+hundred and forty`), el lector contesta leyendo otra fila. La tabla de exponentes reordenada y
+troncada de la segunda pasada **aguanta**.
+
+**La única línea de la ficha final que se levanta entera y no delata nada** es de `You can't`, no de
+los exponentes. Literal, línea 129 de `fase7-fichas-1-the-bike-in-the-parking-lot.md`:
+
+> `Moving the bike counts.`
+
+Cuatro palabras, tercera persona, sin deixis que la voltee, y es la segunda palanca entera de B.
+Dicha a A es gramatical. **Medio defecto, no defecto entero:** fuera de su párrafo no dice para qué
+cuenta, y A contesta `What counts?`, así que se pronuncia y no se aprovecha. Es el punto exacto
+que hay que reescribir si esta ronda se arregla — y aquí no se arregla nada.
