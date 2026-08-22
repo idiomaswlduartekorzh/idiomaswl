@@ -193,14 +193,14 @@ Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload*
 | function | form | what it does here |
 |---|---|---|
 | a third door | `Can we do it another way?` | you say no to the plan and not to the visit |
+| booking the table | `I need the living room on…, from… to…` · `I'll finish at…` | you book your hours with a day and two times, and you close them with the last one |
+| granting it | `If…, I'm OK with it.` | a yes with a day and an hour inside it |
 | leaving something for later | `Let's leave [what] for…` | you park one thing on a day, instead of losing it |
 | saying yes to the cousin | `I'm not saying no, but…` | you say yes to the cousin and you put your own thing in the same sentence |
 | taking it back | `That's not true anymore.` | you break a fact you put on the table yourself |
 | the lease, last | `My mom is arriving on…` · `And one more thing: the lease, before…` | your second thing as a closed plan — and the marker with the third one already inside it |
 | the reason, if they ask | `The wifi drops next to…` | why the living room and not your room — all of it |
 | what you still don't know | `How many nights?` · `What's he going to do all day?` | first the number, then the fact that decides your Monday |
-| yes, with a condition | `If…, I'm OK with it.` | a yes with a day and an hour inside it |
-| your Monday morning | `I need the living room on…, from… to…` · `I'll finish at…` | you book your hours with a day and two times, and you close them with the last one |
 
 ### You did it if
 **One at a time**, your order, lease last · never a no to the visit, and Monday the 24th, 8:00 to 11:00, yours · the living-room reason only **when they asked**, and then all of it · you asked an **open question** about Iván's days · you said what you lose · you never said the problem is them, and breakfast tomorrow still works.
@@ -218,7 +218,7 @@ Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload*
 > |---|---|
 > | The ticket | changed · Thursday the 20th, afternoon |
 > | How long | until Tuesday the 25th |
-> | Why | she wants to be here on Monday |
+> | Why | to be here on Monday |
 
 **One line of your Facts, changed.** Saturday the 29th: gone. New day: Thursday the 20th, same day as Iván. Monday the 24th: in the apartment.
 
@@ -230,10 +230,10 @@ Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload*
 
 **Each of you says three things out loud. Six in total. Nobody says the other person's three.**
 
-**Only Dani can say:** where Iván sleeps on Thursday the 20th, and who sleeps where that night ·
+**Dani's screen · your three:** where Iván sleeps on Thursday the 20th, and who sleeps where that night ·
 the second bed, and that nobody pays for it · the message for the aunt, out loud, in front of Cris.
 
-**Only Cris can say:** from what time to what time the living room is Cris's on Monday the 24th ·
+**Cris's screen · your three:** from what time to what time the living room is yours on Monday the 24th ·
 the lease, and the day it has to carry the two names · what you did not decide today, and when you
 talk about it — Sunday the 23rd, in the kitchen, after lunch.
 
@@ -551,3 +551,21 @@ El 2 es el único recorte con volumen (5 palabras) y es redundancia literal: `On
 the lease last` ya está escrito en la restricción 3 de la misma ficha, tres líneas más arriba. El
 orden y la posición del contrato siguen mandados, y la viñeta conserva las tres cosas que Dani no
 sabe con sus tres fechas.
+
+---
+
+## Pasada de calcabilidad (22 ago 2026) — `fase13-calcable-6.md`
+
+Los dos defectos que devolvieron el escenario están **en el texto escrito hoy mismo**: el cierre que
+repartió la carga y la tabla de Cris. Ninguno de los tres arreglos cuesta prosa (carta, cierre y
+tablas están fuera del contador): sigue en **A 449 · B 449**, techo 450.
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | cierre · `Both screens — how it ends` | `**Only Dani can say:**` / `**Only Cris can say:**` → `**Dani's screen · your three:**` / `**Cris's screen · your three:**`, cada lista en su pantalla | el cierre viejo decía `Who has the living room on Monday the 24th` —abierto—. El nuevo lo cierra y, impreso entero en las dos fichas, le dice a Dani **antes del turno 1** que va a perder el lunes. Y mete el contrato, que es la tercera cosa que Dani no sabe y que todo el diseño de B guarda para el final. Las reglas, el `Together` y `the one that gets skipped is Cris's third` siguen en las dos pantallas |
+| 2 | B · exponentes, `yes, with a condition` → `granting it` y `your Monday morning` → `booking the table`, tabla reordenada | las filas 8 y 9 leídas seguidas eran concedo-con-condición → reservo la franja con día y dos horas → la cierro: su final de partida en orden. Y la fila 9 llevaba justo la forma que la pasada de carga alargó para que Cris no pudiera ganar asintiendo: la ficha la protege en el cierre y la regalaba en la última fila |
+| 3 | carta, fila `Why` | `she wants to be here on Monday` → `to be here on Monday` | única de las 23 celdas de datos y carta con sujeto y verbo conjugado, y sobre alguien que **no juega**: sobre un tercero, la tercera persona no se invierte al decirse. `fase10-calcable-6` la dio por buena y se equivocó |
+
+`fase12-tablas` midió bien los tres puntos del cierre en la tabla de Cris (filas 9, 5 y 2, en orden
+inverso) pero no miró la fila del otorgamiento, que es la bisagra. De ahí la regla nueva: **en una
+tabla de exponentes, la fila que concede se mira aparte**, no solo la secuencia.
