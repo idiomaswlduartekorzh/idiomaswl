@@ -423,42 +423,42 @@ Los ocho existen con ese slug exacto. Los que devolverían `null` y por eso **no
 ```ts
 grammarReferences: [
   {
-    slug: 'should-advice',
+    level: 'a2', slug: 'should-advice',
     title: 'Should y Shouldn\'t en Inglés A2',
     rationale: 'Los dos «recomendar», y en las dos direcciones: cada uno aconseja sobre el lado del otro, nunca sobre el propio.',
   },
   {
-    slug: 'have-to-must',
+    level: 'a2', slug: 'have-to-must',
     title: 'Have to y Must en Inglés A2',
     rationale: 'La obligación física del que manda: hay que saber el número antes de las doce, y alguien tiene que estar en el portón a la una.',
   },
   {
-    slug: 'connectors-a2',
+    level: 'a2', slug: 'connectors-a2',
     title: 'Conectores en Inglés A2: because, so, although, however, but',
     rationale: 'La razón nueva de cada «insistir», el contraste de cada concesión y el reloj de las dos fichas: because, so, but, before.',
   },
   {
-    slug: 'first-conditional',
+    level: 'a2', slug: 'first-conditional',
     title: 'El Primer Condicional en Inglés A2',
     rationale: 'Las dos concesiones con condición y el precio de la espera: If you don\'t tell me a number, I\'ll cook for… / but only if…',
   },
   {
-    slug: 'past-simple-irregular',
+    level: 'a2', slug: 'past-simple-irregular',
     title: 'Past Simple Verbos Irregulares en Inglés A2',
     rationale: 'Lo que ya pasó y nadie puede cambiar: se fueron a las diez, comieron a las siete, ella llegó a las nueve, y lo que dijo a las diez.',
   },
   {
-    slug: 'quantifiers',
+    level: 'a2', slug: 'quantifiers',
     title: 'Cuantificadores en Inglés A2',
     rationale: 'El número que decide la segunda gallina y el reparto de las dos tandas: how many, some, the rest, nothing, something.',
   },
   {
-    slug: 'present-continuous-future-a2',
+    level: 'a2', slug: 'present-continuous-future-a2',
     title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
     rationale: 'Los dos relojes puestos uno al lado del otro: How many are coming back at one? / I\'m on Marcela\'s bike at eleven forty.',
   },
   {
-    slug: 'prepositions-movement-a2',
+    level: 'a2', slug: 'prepositions-movement-a2',
     title: 'Preposiciones de movimiento en Inglés A2: into, out of, past, through, along',
     rationale: 'Todo el escenario es entrar y salir a una hora: sacar a seis del agua a la una y media, meter la yuca a las doce, salir del patio a las once y cuarenta.',
   },

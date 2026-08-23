@@ -214,39 +214,39 @@ gasta. El dato pivote aparece cuando hay conversación, no cuando hay prisa.
 
 ```ts
 grammarReferences: [
-  { slug: 'should-advice', title: 'Should y Shouldn\'t en Inglés A2',
+  { level: 'a2', slug: 'should-advice', title: 'Should y Shouldn\'t en Inglés A2',
     rationale: 'Ancla el acto recomendar en las dos direcciones: "What should I do tonight?" desde el paciente y "You should go to our Centro branch" desde el mostrador.' }, // a2
-  { slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
+  { level: 'a2', slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
     rationale: 'El cuarto punto del cierre es un condicional: "If the pain goes to your ear, go to the emergency room tonight".' }, // a2
-  { slug: 'past-simple-questions', title: 'Preguntas y Negativos en Past Simple A2',
+  { level: 'a2', slug: 'past-simple-questions', title: 'Preguntas y Negativos en Past Simple A2',
     rationale: 'La pregunta abierta que saca el dato pivote se construye con did: "When did the pain start?". "What happened?" convive con ella como bloque léxico, porque la pregunta de sujeto sin auxiliar no la enseña ningún tema del nivel.' }, // a2
-  { slug: 'past-simple-irregular', title: 'Past Simple Verbos Irregulares en Inglés A2',
+  { level: 'a2', slug: 'past-simple-irregular', title: 'Past Simple Verbos Irregulares en Inglés A2',
     rationale: 'El dato que da vuelta al escenario es un pasado irregular afirmativo, no una pregunta: "A piece of my tooth broke on Sunday", "I left work at three thirty".' }, // a2
-  { slug: 'have-to-must', title: 'Have to y Must en Inglés A2',
+  { level: 'a2', slug: 'have-to-must', title: 'Have to y Must en Inglés A2',
     rationale: 'La hora de llegada del jueves se pregunta y se contesta con have to: "What time do I have to be there?", y el cierre exige decirla en voz alta.' }, // a2
-  { slug: 'will-future', title: 'El Futuro con Will en Inglés A2',
+  { level: 'a2', slug: 'will-future', title: 'El Futuro con Will en Inglés A2',
     rationale: 'El cuarto punto del cierre obliga al paciente a decir qué hará esta noche, y el criterio de éxito lo pide con esas palabras: "Tonight I will put something cold on my face", "I will come back at six fifteen".' }, // a2
-  { slug: 'quantifiers', title: 'Cuantificadores en Inglés A2',
+  { level: 'a2', slug: 'quantifiers', title: 'Cuantificadores en Inglés A2',
     rationale: 'Dosis, dinero y tiempo se dicen en cantidades: "two painkillers a day", "ten minutes early", "I have seventy thousand". Y el any de "Is there any other day?".' }, // a2
-  { slug: 'comparatives', title: 'Comparativos en Inglés A2',
+  { level: 'a2', slug: 'comparatives', title: 'Comparativos en Inglés A2',
     rationale: 'El paciente describe cómo está comparando, que es como se describe un dolor: "it\'s worse than yesterday", "it hurts more when I drink something cold".' }, // a2
-  { slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
+  { level: 'a2', slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
     rationale: 'Los dos movimientos que sostienen el escenario son un because y un but, y los dos están en la tabla propia de cada rol: "I can\'t come at seven, because I open the warehouse", "Maybe I have something later today, but I can\'t promise".' }, // a2
-  { slug: 'imperative', title: 'El imperativo en inglés A1',
+  { level: 'a1', slug: 'imperative', title: 'El imperativo en inglés A1',
     rationale: 'Todo lo que hay que hacer esta noche se dice en imperativo, y también la reparación del mostrador: "Put something cold on your face", "Don\'t chew on that side", "Let me repeat it".' }, // a1
-  { slug: 'can-ability', title: 'Can para habilidad en inglés A1',
+  { level: 'a1', slug: 'can-ability', title: 'Can para habilidad en inglés A1',
     rationale: 'Es el verbo del escenario entero, en los dos lados del mostrador: "Can you say it one at a time?", "Can I come back at six?", "I can wait here", "I can\'t come at seven".' }, // a1
-  { slug: 'present-simple-questions', title: 'Present simple interrogativo en inglés A1',
+  { level: 'a1', slug: 'present-simple-questions', title: 'Present simple interrogativo en inglés A1',
     rationale: 'Las dos preguntas sin las que el paciente se va sin saber lo que necesita son de presente con do/does: "Does my plan cover it here?", "What days do you have after eight thirty?".' }, // a1
-  { slug: 'present-simple-negative', title: 'Present simple negativo en inglés A1',
+  { level: 'a1', slug: 'present-simple-negative', title: 'Present simple negativo en inglés A1',
     rationale: 'El paciente se presenta y pone su tiempo sobre la mesa en negativo: "I don\'t have an appointment", "I don\'t work on Saturdays".' }, // a1
-  { slug: 'possessive-s', title: 'El genitivo sajón en inglés A1',
+  { level: 'a1', slug: 'possessive-s', title: 'El genitivo sajón en inglés A1',
     rationale: 'Dos movimientos del escenario son genitivos: la reparación del contacto, "That\'s my sister\'s number", y la puerta que el mostrador cierra sin dar razones, "That\'s another patient\'s time".' }, // a1
-  { slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
+  { level: 'a1', slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
     rationale: 'Con there empieza la negociación por los dos lados: "Is there any other day?" desde el paciente y "there are forms and an X-ray" desde el mostrador.' }, // a1
-  { slug: 'adverbs-frequency', title: 'Adverbios de frecuencia en inglés A1',
+  { level: 'a1', slug: 'adverbs-frequency', title: 'Adverbios de frecuencia en inglés A1',
     rationale: 'Lo que nunca pasa es la mitad de los datos ocultos y se dice en presente simple con never: "The clinic never texts me", "I never ask her for favors", "in writing only, never a call".' }, // a1
-  { slug: 'telling-time', title: 'Decir la hora en inglés A1',
+  { level: 'a1', slug: 'telling-time', title: 'Decir la hora en inglés A1',
     rationale: 'El escenario entero son horas —4:20, 4:45, 6:15, 7:00, 8:30— y el cierre exige la de la cita y la de llegada.' }, // a1
 ]
 ```

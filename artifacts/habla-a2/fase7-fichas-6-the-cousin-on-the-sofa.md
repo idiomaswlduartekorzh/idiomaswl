@@ -265,25 +265,25 @@ conversation just stops. It doesn't end.
 ```ts
 // 6 · the-cousin-on-the-sofa
 grammarReferences: [
-  { slug: 'present-continuous-future-a2', title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
+  { level: 'a2', slug: 'present-continuous-future-a2', title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
     rationale: 'Las dos noticias del escenario son planes cerrados con pasaje comprado: "He\'s coming on…" y "My mom is arriving on…", que es además la frase que la carta obliga a retirar. Y es el tiempo del mensaje que A tiene que decirle a la tía en el cierre: "So: he\'s coming on…, and he\'s sleeping…, right?".' }, // a2
-  { slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
+  { level: 'a2', slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
     rationale: 'La condición que desbloquea el acuerdo: "If…, I\'m OK with it".' }, // a2
-  { slug: 'will-future', title: 'El Futuro con Will en Inglés A2',
+  { level: 'a2', slug: 'will-future', title: 'El Futuro con Will en Inglés A2',
     rationale: 'Solo hay un will escrito, y es el que cierra la franja de la mañana: "I\'ll finish at eleven". El de la firma no está escrito en ninguna ficha: sale solo en cuanto alguien le pone fecha al papel.' }, // a2
-  { slug: 'quantifiers', title: 'Cuantificadores en Inglés A2',
+  { level: 'a2', slug: 'quantifiers', title: 'Cuantificadores en Inglés A2',
     rationale: 'Lo que se reparte no es dinero, es un número de noches y una franja de horas: "How many nights?", y la respuesta —diez— contra "the whole morning".' }, // a2
-  { slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
+  { level: 'a2', slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
     rationale: 'Nadie cierra la puerta y todos ponen lo suyo con el mismo but: "I\'m not saying no, but…".' }, // a2
-  { slug: 'going-to', title: 'Going to en inglés A1',
+  { level: 'a1', slug: 'going-to', title: 'Going to en inglés A1',
     rationale: 'La mala noticia se da en futuro planeado, y eso es lo que la hace sonar a hecho consumado: "He\'s going to sleep…"; y la pregunta que la desmonta: "What\'s he going to do all day?".' }, // a1
-  { slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
+  { level: 'a1', slug: 'there-is-there-are', title: 'There is / There are en inglés A1',
     rationale: 'La segunda salida de Dani se ofrece con there is, y por eso suena a inventario y no a exigencia: "He can sleep… There\'s a mattress".' }, // a1
-  { slug: 'prepositions-time', title: 'Preposiciones de tiempo en inglés A1',
+  { level: 'a1', slug: 'prepositions-time', title: 'Preposiciones de tiempo en inglés A1',
     rationale: 'El reparto se dice con on/at: "He\'s coming on…", "at nine in the morning". Nunca con by de tiempo, que no está en el registro. (from…to, before y until se usan como léxico: el tema no los cubre.)' }, // a1
-  { slug: 'imperative', title: 'El imperativo en inglés A1',
+  { level: 'a1', slug: 'imperative', title: 'El imperativo en inglés A1',
     rationale: 'Frenar al otro a mitad de una noticia es un imperativo, y aquí ocurre tres veces: "Wait — when?", "Let\'s leave [what] for…", y los dos de la caja del nivel ("Hold on.", "Let me say that again.").' }, // a1
-  { slug: 'can-ability', title: 'Can para habilidad en inglés A1',
+  { level: 'a1', slug: 'can-ability', title: 'Can para habilidad en inglés A1',
     rationale: 'Dani propone dónde duerme y Cris pide otra salida: "He can sleep…", "Can we do it another way?".' }, // a1
 ],
 ```

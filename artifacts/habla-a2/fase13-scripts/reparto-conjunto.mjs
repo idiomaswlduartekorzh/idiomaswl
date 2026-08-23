@@ -41,7 +41,7 @@ function arranqueRoles(e) {
 // CODIFICACIÓN A MANO, con la línea del disco que la sostiene
 const CULPA = {
   1: { quien: 'nadie', nota: 'el hueco entre 390.000 y 350.000 · «Entre los dos números hay $40.000 que no se cierran con dinero»' },
-  2: { quien: 'nadie', nota: 'un diente roto el domingo + agenda llena · «You broke a small piece of your lower back tooth»' },
+  2: { quien: 'manda', nota: 'el mostrador apuntó mal el teléfono · «in the file now: 310 218 44 71, taken here by phone in March» — GRAVE 4, aplicado el 23 ago 2026' },
   3: { quien: 'A', nota: 'A se examina el sábado que le toca abrir · «Your exam: IELTS, Saturday 12, 8:00 a.m.»' },
   4: { quien: 'B', nota: 'Astrid dio a las diez un número que hoy es falso · «At ten I told you …. That\'s not true now.»' },
   5: { quien: 'A', nota: 'Camilo lleva tres lunes tarde · «You have promised twice»' },
