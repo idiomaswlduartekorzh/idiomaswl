@@ -760,6 +760,119 @@ import type { SatItemMeta } from '../module-types'
  * pendiente y ahora incluye a estos dos. Y el calibrador tiene que confirmar el 8 y el 9: aquí
  * están medidos por el redactor, con el desglose por eje escrito arriba para que la discusión
  * sea sobre la regla y no sobre el número.
+ *
+ * DUODÉCIMA PASADA (22 ago 2026) — CUATRO PASAJES MÁS BARATOS Y EL GRUPO DE INFERENCIAS DEL
+ * DERECHO. **No se ha tocado ni una opción ni una razón**: los cuatro cambios son de
+ * `stimulus`, más un intercambio de posición y tres etiquetas. La distancia entre opciones
+ * —el eje D, donde vive todo el trabajo de las once pasadas contra la prueba a ciegas— queda
+ * exactamente donde estaba.
+ *
+ * PUNTO DE PARTIDA (calibrador, 22 ago): q09 8 · q10 8 · q11 11 · q12 14 · q13 12 · q14 11 ·
+ * q15 9. Media **10,43**, contra 11,00 del bloque equivalente del módulo 1. DESPUÉS: q09 7 ·
+ * q10 7 · q11 11 · q12 14 · q13 11 · q14 10 · q15 9. Media **9,86**.
+ *
+ * - **q09 · 8 → 7 (T 2 → 1).** Se parte la primera oración en dos y «fills in the thaw with
+ *   snowmelt off the slopes» pasa a «fills only when the snow on the slopes melts». Media de
+ *   19,0 a 16,1 palabras por oración, de seis oraciones a siete, y se van las dos palabras de
+ *   registro que yo tenía permiso para tocar (`thaw`, `snowmelt`). El contraste que sostiene
+ *   la clave no cambia: el lago del sur se llena **solo** cuando se derrite la nieve, el del
+ *   norte recibe agua todo el año.
+ * - **q09 · el encargo pedía −2 y aquí solo hay −1.** El punto que falta es L, y no lo tomo
+ *   por dos razones que conviene dejar escritas antes de que alguien lo intente. (1) L 2 → 1
+ *   exige bajar de tres paradas a dos, y la única que queda por fundir es la del sol con la de
+ *   la profundidad y el caudal: es la fusión que la novena pasada rechazó por escrito, porque
+ *   «los dos lagos son iguales en X» dos veces dentro de una oración se lee como «son
+ *   idénticos» y ahí un solo descarte mataría dos opciones. (2) Fundir alarga la oración, así
+ *   que compra L y devuelve T: en este ítem los dos ejes que el encargo pide bajar tiran en
+ *   direcciones contrarias, porque T se mide por palabras **por oración**.
+ * - **q09 · RESERVA sobre el T, que es la única cifra discutible de esta pasada.** La regla
+ *   pide media < 18 **y** léxico frecuente **y** tema concreto. La media (16,1) y el tema (dos
+ *   lagos que se hielan) están; del léxico queda una cláusula de registro, «Soundings put the
+ *   two basins at the same depth», y no la puedo tocar porque `razones.A` la cita literal y
+ *   esta ronda no tiene permiso sobre las razones. Si un calibrador la lee como léxico
+ *   académico, T sigue en 2, el ítem vuelve a 8 y la etiqueta a 2. Lo que lo resolvería en una
+ *   línea: una pasada con permiso sobre razones que llane esa cláusula y la cita a la vez.
+ * - **q10 · 8 → 7 (L 2 → 1).** La clave se decidía juntando dos frases separadas por tres
+ *   oraciones: el dictado a la hermana y la respiración de los cuadernos. Ahora el pasaje va
+ *   novelas → primeras cinco a mano → control de las tres calles → la prosa nueva → dictado →
+ *   cuadernos, y **la última oración decide sola**: «The notebooks, taken down as she spoke,
+ *   explain the change: no sentence in them runs longer than what Roiz could say in one breath»
+ *   lleva dentro las dos piezas, el origen hablado y la medida del aliento. Se dice «taken down
+ *   as she spoke» y no «her sister took down» porque *take down a notebook* también se lee como
+ *   bajarlo de un estante, y en un ítem que se decide con esa oración la ambigüedad no es
+ *   gratis. El control sigue **justo
+ *   delante** de la oración de la prosa, que es lo que dice `razones.D`, y la cláusula que mata
+ *   a A sigue dentro de la misma oración que presenta a la hermana.
+ * - **q10 · lo que cuesta y se asume:** juntar es alargar. La media sube de 12,6 a 15,5 y la
+ *   oración más larga de 18 a 24. T sigue en 1 —media < 18, léxico corriente, escena concreta—,
+ *   así que el ítem baja de verdad; pero queda dicho que este ítem ya no tiene margen por T.
+ * - **q13 · 12 → 11 (T 2 → 1).** La décima pasada partió el pasaje y dejó escrito por qué no
+ *   bajaba a 1: el léxico. Se van los tres términos que lo bloqueaban —`dormant` → «keeps the
+ *   seed asleep», `chemical switch` → «a switch», `annual plant` → «wild plant»— y la oración
+ *   del sembrado se parte en dos. De 16,6 a 14,8 de media y de 26 a 18 la más larga, ocho
+ *   oraciones. Es barato aquí y solo aquí: el pasaje es andamio de la tabla y ninguna razón
+ *   cita del texto más que los nombres de fila y sus cifras. La tabla, el 2×2, las dos filas
+ *   nombradas en la última oración y la doble atribución a la botánica siguen intactas.
+ * - **q14 · 11 → 10 (L 3 → 2).** La inferencia encadenaba cuatro hechos en tres sitios: los
+ *   escalones (dentro de la oración de la entrada, de 38 palabras), la cojera de Pablo (oración
+ *   siguiente) y el momento en que Elvira los nombra. Los dos primeros son ahora **una sola
+ *   oración**: «The door was up three high steps, and Pablo had broken an ankle at seven and
+ *   had taken those steps one at a time ever since». Quedan dos partes que relacionar: esa y la
+ *   de la cortina. La inferencia no se toca —siguen haciendo falta los escalones, la cojera, el
+ *   silencio y el orden—, solo dejan de estar repartidos.
+ * - **q14 · T se deja donde estaba A PROPÓSITO.** El pasaje sigue en 150 palabras, siete
+ *   oraciones y 21,4 de media clavadas; lo único que baja es la oración máxima, de 38 a 30. Si
+ *   la media bajara de 18, T caería a 1, el ítem a 9 y el grupo de inferencias quedaría plano
+ *   en vez de creciente. Recortar aquí habría deshecho lo que arregla el intercambio.
+ *
+ * INTERCAMBIO q14 ⇄ q15, calculado con el árbol tal y como queda (R16). Primero se recortaron
+ * los cuatro pasajes, luego se midió, y solo entonces se decidió: **q14 mide 10 y q15 mide 9**,
+ * o sea que el grupo `inferences` seguía al revés después de los cortes. Los dos objetos se han
+ * intercambiado enteros en `items` y en `meta`, cada id con su contenido, su clave y sus
+ * razones: las posiciones 14 y 15 del examen las ocupan ahora q15 (9) y q14 (10), y la curva
+ * del grupo va **9 → 10**. Es legal porque el guardián trata el id como nombre y no como
+ * posición (`check-sat-exam.mjs`, el bloque «El id de cada ítem tiene que coincidir con su
+ * posición», que documenta justamente lo contrario). Nadie se ha renumerado: quien busque q14
+ * en un informe encuentra el mismo ítem de siempre.
+ * - Efecto secundario, y es bueno: las claves por posición pasan de … A A C … a … A C A …, con
+ *   lo que desaparece el único par de claves iguales seguidas que tenía el bloque. El reparto
+ *   no se mueve —A ×2, B ×2, C ×2, D ×1—, que es como se defiende: por bloque y por módulo, no
+ *   por ítem.
+ *
+ * REETIQUETADO (corte del proyecto: 7 → 1, 8 → 2, 12 → 3): **q09 2 → 1**, **q10 2 → 1** y
+ * **q13 3 → 2**. q14 y q15 siguen en 2. Puerta 9, grupos de tipo: `central-ideas-details`
+ * q09 1 → q10 1; `command-of-evidence-textual` q11 2 → q12 3; `command-of-evidence-quantitative`
+ * q13 2, único de su tipo; `inferences` q15 2 → q14 2. Ninguna curva baja. Mezcla declarada del
+ * módulo: de 8/11/8 a **10/10/7**. Este bloque pasa de **cero ítems de lectura en banda fácil a
+ * dos**, que es el número que las nueve pasadas anteriores no consiguieron mover y que la
+ * novena dejó dicho que no se arreglaba recortando texto. Se arregla recortando texto en un
+ * ítem que ya estaba en el suelo de la banda media, no en cualquiera.
+ *
+ * MEDIDO con el contador del guardián, antes → después:
+ * - Puerta 7 · q09 100,3 → 99,3; q10 77,3 → 81,7; q13 134,8 → 133,8; q14 128,2 → 127,2
+ *   palabras-SAT. Las siete dentro de 25-150.
+ * - Puerta 3 · solapes **idénticos** en los cuatro: q09 4/5/6/7, q10 5/6/5/7, q13 11/12/10/10,
+ *   q14 5/2/6/5. La clave estrictamente entre el mayor y el menor en los cuatro.
+ * - Puerta 2 · longitudes de opción intactas, porque no se ha tocado ninguna opción:
+ *   q09 132/128/132/121, q10 135/139/144/140, q13 123/135/117/119, q14 95/93/97/101.
+ * - Puerta 5 · las **quince** citas literales que las razones de q09, q10 y q14 hacen de sus
+ *   pasajes (cinco por ítem) se comprobaron una a una sobre el archivo después de los cortes, y
+ *   las quince siguen dentro; las de q13 son nombres de fila y cifras de la tabla, que no se ha
+ *   tocado. Cada distractor sigue muriendo por una línea distinta.
+ * - La prueba a ciegas no puede haberse movido por construcción: el extractor manda enunciado
+ *   y opciones, y no manda el `stimulus`, que es lo único que ha cambiado hoy.
+ *
+ * Lo que NO se tocó: las siete claves, los siete enunciados, las veintiocho opciones —ni un
+ * carácter—, las veintiocho razones, la tabla de q13, el 2×2 de q13, los pasajes de q11, q12 y
+ * q15, y las cadenas de deducción de los siete.
+ *
+ * PENDIENTE, y sigue bloqueando el APTO: q09, q10, q13 y q14 han cambiado de `stimulus`, así
+ * que por R2 vuelven a la cola de auditoría y su huella en el guardián cambia con ellos; el
+ * acta pendiente desde la octava pasada sigue pendiente y ahora incluye a estos cuatro. El
+ * calibrador tiene que confirmar los cuatro números —el 7 de q09 es el discutible, y la
+ * discusión está acotada arriba a una cláusula—. Y sigue sin cerrarse la divergencia de una
+ * letra que dejó la novena pasada en `razones.C` de q09 («Neither» con mayúscula, que en el
+ * texto va en minúscula): esta ronda tampoco tenía permiso sobre las razones.
  */
 
 export const items: MCQQuestion[] = [
@@ -768,7 +881,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Two lakes lie a kilometer apart in the same valley, and every winter the northern one freezes about three weeks after the southern one. Soundings put the two basins at the same depth, and neither lake has a stream running into it or out of it the year round. The same ridge stands over both, and neither shore loses an hour of the low winter sun to it. What differs is where the water comes from. The southern lake fills in the thaw with snowmelt off the slopes. The northern one is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January.',
+      'Two lakes lie a kilometer apart in the same valley. Every winter the northern one freezes about three weeks after the southern one. Soundings put the two basins at the same depth, and neither lake has a stream running into it or out of it the year round. The same ridge stands over both, and neither shore loses an hour of the low winter sun to it. What differs is where the water comes from. The southern lake fills only when the snow on the slopes melts. The northern one is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January.',
     text: 'According to the text, why does the northern lake freeze later than the southern one?',
     options: [
       "Its basin goes down to a greater depth, and the water in a deep lake has far more of the summer's heat to give up before it freezes.",
@@ -783,7 +896,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Ada Roiz wrote nine novels and never went back over a sentence. She wrote the first five by hand, at a desk. From the sixth on, she spoke each sentence to her sister, who wrote it down and changed nothing. The last four are set in the same three streets as the first five. What is new in those four is the prose: long, rolling sentences critics call musical. The notebooks explain the change. No sentence in them runs longer than what Roiz could say in one breath.',
+      'Ada Roiz wrote nine novels and never went back over a sentence. She wrote the first five by hand, at a desk. The last four are set in the same three streets as the first five. What is new in those four is the prose: long, rolling sentences critics call musical. From the sixth on, she spoke each sentence to her sister, who wrote it down and changed nothing. The notebooks, taken down as she spoke, explain the change: no sentence in them runs longer than what Roiz could say in one breath.',
     text: 'Which choice best states the main idea of the text?',
     options: [
       "The prose readers admire in Roiz's last four novels is the sister's as much as hers, since no sentence reached the page as it was said.",
@@ -828,28 +941,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Population · germinated in deep shade · germinated in full sun\nCape Ridge · 7% · 74%\nNorth Ridge · 9% · 71%\nElm Valley · 64% · 68%\nPine Valley · 57% · 60%\n\nA seed that sprouts in deep shade may spend itself before it ever reaches the light. Many plants of open ground carry a chemical switch that holds the seed dormant until light falls on it. Botanist Runa Hallden sowed two hundred seeds from each of four populations of a small annual plant, half in deep shade and half in full sun. She counted the share of each half that came up within thirty days. She argues that the two ridge populations, which grow where nothing shades them, still carry the switch. The two valley populations, she argues, have lost it after many generations under forest. The figures for North Ridge and Elm Valley fit her account:',
+      'Population · germinated in deep shade · germinated in full sun\nCape Ridge · 7% · 74%\nNorth Ridge · 9% · 71%\nElm Valley · 64% · 68%\nPine Valley · 57% · 60%\n\nA seed that sprouts in deep shade may die before it reaches the light. Many plants of open ground carry a switch that keeps the seed asleep until light falls on it. Botanist Runa Hallden sowed two hundred seeds from each of four populations of a small wild plant. She put half of each lot in deep shade and half in full sun. She counted the share of each half that came up within thirty days. She argues that the two ridge populations, which grow where nothing shades them, still carry the switch. The two valley populations, she argues, have lost it after many generations under forest. The figures for North Ridge and Elm Valley fit her account:',
     text: 'Which choice most effectively uses data from the table to complete the text?',
     options: [
       'in deep shade only 9% of the North Ridge seeds came up, against 71% in full sun; the Elm Valley seeds went from 64% to 68%.',
       'the North Ridge seeds germinated at 7% in deep shade and at 74% in full sun; for the Elm Valley seeds the two figures were 64% and 68%.',
       '9% of the North Ridge seeds came up in deep shade and 71% in full sun, whereas Elm Valley moved only from 57% to 60%.',
       'deep shade held the North Ridge seeds down to 7%, against 74% in full sun, and the Elm Valley seeds to 57% against 60%.',
-    ],
-    answer: 0,
-  },
-  {
-    id: 'q14',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      "Elvira had kept the corner shop for thirty years, and for the last eleven of them she could not have told you the color of a customer's coat. Her sight had gone slowly and then all at once. The Sarda twins were the one pair in town nobody else could sort out either; even their mother went by the haircuts. Rafael and Pablo came in at the end of the bakery shift they worked together, both of them off the same ovens, and they came in together, shoulder to shoulder, through the door with its three high steps. Pablo had broken an ankle at seven and had taken those steps one at a time ever since. From behind the curtain of the back room, before either of them had said a word, Elvira called out the two names in the order they came. She could only have been going by…",
-    text: 'Which choice most logically completes the text?',
-    options: [
-      'the steps at the door, which Rafael went up in a bound while Pablo put a foot down on each one.',
-      'the two voices, which had broken a full year apart and had settled at different depths since.',
-      'the hour, since the bakery let Rafael off the ovens a good twenty minutes before it let Pablo go.',
-      'the smell of the ovens, which would have hung about Rafael at the end of a shift and not about Pablo.',
     ],
     answer: 0,
   },
@@ -868,6 +966,21 @@ export const items: MCQQuestion[] = [
     ],
     answer: 2,
   },
+  {
+    id: 'q14',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      "Elvira had kept the corner shop for thirty years, and for the last eleven of them she could not have told you the color of a customer's coat. Her sight had gone slowly and then all at once. The Sarda twins were the one pair in town nobody else could sort out either; even their mother went by the haircuts. Rafael and Pablo came in at the end of the bakery shift they worked together, both of them off the same ovens, and they came in together, shoulder to shoulder. The door was up three high steps, and Pablo had broken an ankle at seven and had taken those steps one at a time ever since. From behind the curtain of the back room, before either of them had said a word, Elvira called out the two names in the order they came. She could only have been going by…",
+    text: 'Which choice most logically completes the text?',
+    options: [
+      'the steps at the door, which Rafael went up in a bound while Pablo put a foot down on each one.',
+      'the two voices, which had broken a full year apart and had settled at different depths since.',
+      'the hour, since the bakery let Rafael off the ovens a good twenty minutes before it let Pablo go.',
+      'the smell of the ovens, which would have hung about Rafael at the end of a shift and not about Pablo.',
+    ],
+    answer: 0,
+  },
 ]
 
 export const meta: SatItemMeta[] = [
@@ -875,7 +988,7 @@ export const meta: SatItemMeta[] = [
     id: 'q09',
     domain: 'II',
     tipo: 'central-ideas-details',
-    dificultad: 2,
+    dificultad: 1,
     tema: 'ciencia',
     razones: {
       A:
@@ -894,7 +1007,7 @@ export const meta: SatItemMeta[] = [
     id: 'q10',
     domain: 'II',
     tipo: 'central-ideas-details',
-    dificultad: 2,
+    dificultad: 1,
     tema: 'literatura',
     razones: {
       A:
@@ -951,7 +1064,7 @@ export const meta: SatItemMeta[] = [
     id: 'q13',
     domain: 'II',
     tipo: 'command-of-evidence-quantitative',
-    dificultad: 3,
+    dificultad: 2,
     tema: 'ciencia',
     razones: {
       A:
@@ -964,25 +1077,7 @@ export const meta: SatItemMeta[] = [
         'Junta la primera fila de la tabla con la última: 7 % y 74 % son de Cape Ridge, y 57 % y 60 % de Pine Valley. Son además las dos filas que mejor parecen probar lo que sostiene la botánica —el salto de sombra a sol más ancho de los cuatro y el valle más plano—, así que es la opción de quien busca la prueba más fuerte en vez de la fila que el texto nombra.',
     },
     fuenteHecho:
-      'Fotoblastismo real: muchas semillas de plantas de terreno abierto necesitan luz para germinar, y las poblaciones de sotobosque tienden a perder ese requisito. La botánica, las cuatro poblaciones y los ocho porcentajes están inventados; las especies van sin nombre científico. El texto dice «a small annual plant» y no «a small annual» a secas: *annual* como sustantivo (planta de ciclo anual) es vocabulario de jardinería que el pasaje no define, y sin el sustantivo detrás se lee como adjetivo suelto.\n\n**El pasaje se partió por oraciones el 22 ago 2026 y no cambió de contenido.** Era el más denso del módulo —27,8 palabras por oración según el calibrador, 28,5 con el contador de este repositorio, y tres oraciones de 36, 36 y 31— y queda en 16,6 de media y 26 la más larga, con siete oraciones en vez de cuatro. Los tres cortes: la premisa se separa del mecanismo («…before it ever reaches the light. Many plants of open ground carry a chemical switch…»), el sembrado se separa del recuento («…half in full sun. She counted the share of each half that came up within thirty days.») y las dos mitades de la tesis van una por oración («…still carry the switch. The two valley populations, she argues, have lost it after many generations under forest.»). LO QUE NO CAMBIA, y es lo único que hace este ítem: la tabla, entera, con su 2×2 de fila y factor; las cuatro opciones, ni un carácter; las cuatro razones; y las dos filas que el pasaje nombra —North Ridge y Elm Valley—, que siguen nombradas en la última oración y en ninguna otra. Las dos mitades de la tesis siguen atribuidas a la botánica («She argues that…», «…, she argues, …»): sin atribución, la razón de D —quien busca la prueba más fuerte en vez de la fila que el texto nombra— se queda sin sujeto. Contado sobre el texto: ni un tipo léxico entra ni sale, así que el solape con las cuatro opciones sigue en 11/12/10/10 y la puerta 3 no se mueve; el pasaje pasa de 132,7 a 134,8 palabras-SAT, dentro de 25-150.',
-  },
-  {
-    id: 'q14',
-    domain: 'II',
-    tipo: 'inferences',
-    dificultad: 2,
-    tema: 'literatura',
-    razones: {
-      A:
-        'Correcta: es lo único que le llega detrás de la cortina. Pablo «had broken an ankle at seven and had taken those steps one at a time ever since», y la puerta tiene tres escalones altos; Elvira los nombra «in the order they came», que es el orden en que suenan los dos modos de subir.',
-      B:
-        'Se apoya en algo que todavía no ha pasado: Elvira dice los dos nombres «before either of them had said a word». Reconocer por la voz es lo primero que se le ocurre a cualquiera cuando quien reconoce no ve, y por eso esta es la más votada de las tres falsas; el texto cierra esa puerta en la misma frase en la que la abre.',
-      C:
-        'Necesita que los gemelos lleguen separados, y llegan juntos: «they came in together, shoulder to shoulder», al final de un turno que hacen los dos. Si entran a la vez por la misma puerta, la hora no distingue a uno del otro. Es el error de quien resuelve con la rutina del pueblo en lugar de con lo que ocurre esa tarde.',
-      D:
-        'Reparte entre los hermanos un olor que el texto les da por igual: vienen del mismo turno y «both of them off the same ovens». El pan es el único dato sensorial del pasaje, y quien elige esta opción construye con él el mecanismo sin fijarse en que vale para los dos.',
-    },
-    fuenteHecho: 'Ficción original; la tienda, los gemelos y la ceguera de Elvira están inventados.',
+      'Fotoblastismo real: muchas semillas de plantas de terreno abierto necesitan luz para germinar, y las poblaciones de sotobosque tienden a perder ese requisito. La botánica, las cuatro poblaciones y los ocho porcentajes están inventados; las especies van sin nombre científico. El texto decía «a small annual plant» —con el sustantivo detrás a propósito, porque *annual* a secas es vocabulario de jardinería que el pasaje no define— y desde la duodécima pasada dice «a small wild plant», que no necesita glosa ninguna: el ciclo anual de la planta no entra en ninguna deducción del ítem.\n\n**El pasaje se partió por oraciones el 22 ago 2026 y no cambió de contenido.** Era el más denso del módulo —27,8 palabras por oración según el calibrador, 28,5 con el contador de este repositorio, y tres oraciones de 36, 36 y 31— y queda en 16,6 de media y 26 la más larga, con siete oraciones en vez de cuatro. Los tres cortes: la premisa se separa del mecanismo («…before it ever reaches the light. Many plants of open ground carry a chemical switch…»), el sembrado se separa del recuento («…half in full sun. She counted the share of each half that came up within thirty days.») y las dos mitades de la tesis van una por oración («…still carry the switch. The two valley populations, she argues, have lost it after many generations under forest.»). LO QUE NO CAMBIA, y es lo único que hace este ítem: la tabla, entera, con su 2×2 de fila y factor; las cuatro opciones, ni un carácter; las cuatro razones; y las dos filas que el pasaje nombra —North Ridge y Elm Valley—, que siguen nombradas en la última oración y en ninguna otra. Las dos mitades de la tesis siguen atribuidas a la botánica («She argues that…», «…, she argues, …»): sin atribución, la razón de D —quien busca la prueba más fuerte en vez de la fila que el texto nombra— se queda sin sujeto. Contado sobre el texto: ni un tipo léxico entra ni sale, así que el solape con las cuatro opciones sigue en 11/12/10/10 y la puerta 3 no se mueve; el pasaje pasa de 132,7 a 134,8 palabras-SAT, dentro de 25-150.\n\n**Duodécima pasada (22 ago 2026): el mismo andamio, en palabras corrientes.** El corte por oraciones de arriba dejó el pasaje en 16,6 de media y T en 2, y el motivo escrito de que no bajara a 1 era el léxico: «dormant», «chemical switch» y «annual plant». Los tres se han ido —«keeps the seed asleep», «a switch», «a small wild plant»— y la oración del sembrado se parte en dos («…of a small wild plant. She put half of each lot in deep shade and half in full sun.»). Queda en 14,8 de media y 18 la más larga, ocho oraciones, con lo que **T baja de 2 a 1 y el ítem de 12 a 11**. Las dos citas de la décima pasada que aparecen aquí arriba —«…before it ever reaches the light» y «Many plants of open ground carry a chemical switch…»— describen el texto de entonces y ya no son literales. Sigue sin cambiar lo único que hace este ítem: la tabla entera, las cuatro opciones, las cuatro razones, las dos filas nombradas en la última oración y la atribución doble a la botánica. Medido: solape 11/12/10/10 sin mover un punto, 133,8 palabras-SAT.',
   },
   {
     id: 'q15',
@@ -1002,5 +1097,23 @@ export const meta: SatItemMeta[] = [
     },
     fuenteHecho:
       'Conservación de pintura, de dominio público. Las CUATRO opciones nombran mecanismos reales y corrientes en un museo, y las cuatro explican por qué la franja que tapaba el marco se ve distinta del resto: el repinte posterior que se detiene en el borde de la moldura (A), el barniz alterado que la moldura no llegó a cubrir (B), el cambio de color de un pigmento por la luz, que la moldura frenó (C) y el desgaste del marco que deja a la vista una capa inferior (D). Que los cuatro sean de primera fila es deliberado y es lo que impide resolver el ítem con lo que uno sepa de museos: decide el pasaje, no el mundo. El panel, el museo, las dos fechas y la limpieza de 1998 están inventados, y a propósito no se nombra ni obra ni autor —así no hay título que pueda tener dueño, que es lo que ya costó una pasada en este mismo ítem—. Sustituye al q15 anterior (los cuarenta ejemplares de «A Wager at Marlbeck» y la e de travesaño torcido), retirado en la undécima pasada por dificultad: medía 13 porque obligaba a cruzar tres datos —la letra fechada, la prensa única y el pliego sin hojas añadidas— y a sostener a la vez el orden de las tiradas y el procedimiento de taller.',
+  },
+  {
+    id: 'q14',
+    domain: 'II',
+    tipo: 'inferences',
+    dificultad: 2,
+    tema: 'literatura',
+    razones: {
+      A:
+        'Correcta: es lo único que le llega detrás de la cortina. Pablo «had broken an ankle at seven and had taken those steps one at a time ever since», y la puerta tiene tres escalones altos; Elvira los nombra «in the order they came», que es el orden en que suenan los dos modos de subir.',
+      B:
+        'Se apoya en algo que todavía no ha pasado: Elvira dice los dos nombres «before either of them had said a word». Reconocer por la voz es lo primero que se le ocurre a cualquiera cuando quien reconoce no ve, y por eso esta es la más votada de las tres falsas; el texto cierra esa puerta en la misma frase en la que la abre.',
+      C:
+        'Necesita que los gemelos lleguen separados, y llegan juntos: «they came in together, shoulder to shoulder», al final de un turno que hacen los dos. Si entran a la vez por la misma puerta, la hora no distingue a uno del otro. Es el error de quien resuelve con la rutina del pueblo en lugar de con lo que ocurre esa tarde.',
+      D:
+        'Reparte entre los hermanos un olor que el texto les da por igual: vienen del mismo turno y «both of them off the same ovens». El pan es el único dato sensorial del pasaje, y quien elige esta opción construye con él el mecanismo sin fijarse en que vale para los dos.',
+    },
+    fuenteHecho: 'Ficción original; la tienda, los gemelos y la ceguera de Elvira están inventados.',
   },
 ]

@@ -435,6 +435,102 @@ import type { SatItemMeta } from '../module-types'
  *
  * Por R2, q19 vuelve otra vez a la cola de auditoría: es el segundo cambio de texto del mismo
  * día sobre el mismo ítem, y su huella en el guardián cambia con él.
+ *
+ * ## TERCERA PASADA DE COMPLEJIDAD (22 ago 2026) — los seis pasajes que sostienen un signo
+ *
+ * Diagnóstico del calibrador, y es exacto: **seis de los siete pasajes iban a 21-25 palabras por
+ * oración** —las oraciones más largas del módulo— y sostenían ítems que miden una coma o un punto
+ * y coma. Esa carga de lectura no mide nada: un ítem de puntuación no necesita un pasaje trabajado,
+ * necesita una frase clara alrededor del hueco. Se parten oraciones en q16, q17, q18, q20, q21 y
+ * q22. El `diff` de esta pasada son **seis líneas, las seis de `stimulus`**: ni una opción, ni una
+ * razón, ni una clave, ni una etiqueta.
+ *
+ * **Medido, palabras por oración de media (antes → después, y nº de oraciones):**
+ *
+ *   q16 23,0 → 15,0 (4 → 6) · q17 23,0 → 14,2 (5 → 8) · q18 21,2 → 12,5 (6 → 10)
+ *   q20 24,0 → 13,6 (5 → 8) · q21 20,6 → 15,3 (5 → 7) · q22 25,2 → 16,9 (6 → 9)
+ *
+ * Los seis bajan de 18 con léxico frecuente y tema concreto, que son las tres condiciones que el
+ * eje T exige juntas: **T pasa de 2 a 1 en los seis, y son seis puntos**.
+ *
+ * La longitud apenas se mueve, que es lo que se buscaba —esto es un corte de oraciones, no un
+ * recorte de pasaje—. Palabras-SAT (caracteres ÷ 6, puerta 7, rango 25-150):
+ *
+ *   q16 80,0 → 78,7 · q17 100,0 → 99,8 · q18 112,8 → 111,8 · q20 111,5 → 100,5 ·
+ *   q21 89,7 → 93,2 · q22 143,0 → 142,7
+ *
+ * q21 sube porque el tambor de relojería pasa a oración propia y gana artículo y verbo; q20 baja
+ * once porque se le quita la relativa libre del final. Las otras puertas que leen el `stimulus`
+ * se comprobaron sobre el texto nuevo: la palabra de delante del hueco no coincide con ninguna
+ * opción en ninguno de los siete, y el solape léxico clave-distractores sigue siendo 0/0/0/0 en
+ * los siete, porque en SEC las opciones son la misma palabra con distinto signo. Ningún pasaje gana ni
+ * pierde contenido; lo único que cambia es dónde acaban las oraciones. Los cambios de palabra son
+ * cuatro y ninguno toca material citado en una razón: «what the concession had cost» → «the cost»
+ * en q20 (palabra rara y relativa libre), «nothing grander» → «nothing more» y «Its value» → «The
+ * value of the gauge» en q21 (el posesivo se había quedado sin antecedente al partir la oración) y
+ * «three consecutive Thursdays» → «three Thursdays in a row» en q22.
+ *
+ * **La oración del hueco no se parte en ningún ítem.** En los seis, el corte cae fuera de ella o
+ * en su cola no examinada, y las condiciones de clave única de la lista de arriba se comprobaron
+ * una por una **después** de cortar:
+ *
+ *   q16 · a la izquierda del hueco sigue habiendo solo la subordinada «Because a clerk earned more
+ *         from a long entry than from a short», y la oración llega entera hasta «spread over three
+ *         lines», que es lo que cita `razones.C`. Lo que sale a oración propia es el desglose.
+ *   q17 · el antecedente «the seedlings» sigue en la misma oración del hueco y en plural, y lo que
+ *         se separa es la cola «and a stand of trees begins…», que no decidía nada.
+ *   q18 · la oración del hueco no se toca: sujeto con «were arranged» dentro, «tells» a la derecha,
+ *         ninguna coma abierta antes y ninguna oración independiente cerrada a la izquierda.
+ *   q20 · a la derecha de «however» sigue habiendo oración con sujeto y verbo propios —«the fees it
+ *         charged wool brokers covered a third of the cost»—, que es lo que sostiene el punto y coma.
+ *   q21 · el núcleo «row», la frase interpuesta y el verbo coordinado «and stores» siguen los tres
+ *         dentro de la oración del hueco. Lo que sale es la relativa final del cupboard.
+ *   q22 · la oración de la lista **no se ha tocado en ningún carácter**: el dos puntos tras «three
+ *         people in all», las tres relativas explicativas y el primer punto y coma siguen igual.
+ *
+ * Un efecto lateral que conviene anotar porque **corrige** una imprecisión vieja: en q17 el
+ * «carrying its own small store of food» colgaba en realidad de «the young plant» y no de «Each
+ * seed», que es de quien lo hacen colgar `razones.A` y `razones.C`. Al partir la oración se ha
+ * colocado bajo «Each seed», que es donde las razones ya decían que estaba. La razón no se
+ * cambió: se cambió el texto para que la razón sea literalmente cierta.
+ *
+ * **Localización (eje L): un punto sale y el otro no está disponible.** El encargo pedía bajar L
+ * en q21 y q22 llevando el dato que decide a la oración del hueco.
+ *
+ * - **q21 sí baja.** Los dos datos que deciden —el núcleo «row» y el verbo coordinado «and
+ *   stores»— ya estaban dentro de la oración, pero la oración seguía 11 palabras más allá de
+ *   «stores» con una segunda relativa («a cupboard that is opened only after a storm») que obliga
+ *   a releer para volver al hueco. Esa cola sale a oración propia: la oración pasa de **43 a 34
+ *   palabras**, el tramo del hueco a «stores» de **13 a 11**, y lo que queda detrás de «stores»
+ *   de **11 a 5**. Lo que **no** puede bajar es el tramo de «row» al hueco (13 palabras): es la
+ *   frase interpuesta, o sea la regla misma, y `razones.D` la cita entera y literal.
+ * - **q22 no baja, y conviene que quede escrito antes de que alguien lo intente.** Los tres datos
+ *   que deciden —el dos puntos que abre la enumeración, el primer punto y coma y las comas
+ *   internas de los tres miembros— están **todos** dentro de la oración del hueco, así que no hay
+ *   nada que acercar; y los tres están citados palabra por palabra en `razones.A` («a treasurer,
+ *   who has never collected a single fee»), `razones.C` («the only key to the music cupboard and a
+ *   director») y `razones.D` («three people in all»). Acortar esa oración es escribir en una
+ *   razón. Lo que sí baja en q22 es T, de 25,2 a 16,9, y con ella el camino hasta la lista: las
+ *   cuatro oraciones que la preceden iban 12 · 18 · 24 · 34 y ahora van 12 · 12 · 7 · 13 · 10 ·
+ *   34, y la de 26 que venía detrás se parte en dos. Ninguna de ellas decidía nada.
+ *
+ * **Cuenta de puntos, con la resta hecha:** seis por T y **uno** por L, siete en total, no los
+ * ocho que salen de sumar el encargo (6 + 2) ni los nueve de su titular. El punto que falta es el
+ * L de q22 y su precio está dicho arriba.
+ *
+ * **La curva del bloque, que es lo que hay que mirar después de bajar seis ítems a la vez.** En
+ * orden de lectura queda **6 · 6 · 6 · 6 · (q19) · 8 · 8**. Ninguna etiqueta se mueve: los cuatro
+ * primeros siguen declarados 1 y siguen en banda fácil (≤ 7), q21 y q22 siguen declarados 2 y
+ * siguen en banda media (8-11), y el bloque sigue etiquetando 1 · 1 · 1 · 1 · 2 · 2 · 2. **El
+ * único punto abierto es q19**, que se lee en quinto lugar: si mide 8 —la lectura del «SEGUNDO
+ * CORTE» cuando el calibrador parte de `.aud/textos-f6.md`— la curva sale 6 · 6 · 6 · 6 · 8 · 8 ·
+ * 8, no decreciente y con un solo escalón, justo en la frontera de banda que la etiqueta anuncia.
+ * Si mide 9, hay un bache de un punto (9 → 8) dentro de la misma banda. No es el caso que la
+ * CALIBRACIÓN llamaba avería —aquello era una caída de tres puntos **y** un cambio de banda—,
+ * pero hay que decidirlo con la medida de q19 delante y no aquí.
+ *
+ * Por R2, los seis ítems cambian de texto y vuelven a la cola de auditoría; su huella en el
+ * guardián cambia con ellos. q19 es el único de los siete que esta pasada no toca.
  */
 
 export const items: MCQQuestion[] = [
@@ -443,7 +539,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "For two centuries the accounts of the salt works were copied out by hand, and the treasury paid its clerks by the page rather than by the hour. Historians who use those ledgers now have to read them twice. Because a clerk earned more from a long entry than from a short ______ the same shipment often appears spread over three lines, with the weight, the buyer, and the date each given a line of its own. The ledgers say less about the salt trade than about the men who kept them.",
+      "For two centuries the accounts of the salt works were copied out by hand. The treasury paid its clerks by the page rather than by the hour. Historians who use those ledgers now have to read them twice. Because a clerk earned more from a long entry than from a short ______ the same shipment often appears spread over three lines. The weight, the buyer, and the date each take a line of their own. The ledgers say less about the salt trade than about the men who kept them.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -459,7 +555,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Mangroves grow where a river meets the sea, in mud too salty for most trees to root in at all. Their seeds do not drop to the ground and wait there for a better season. Each seed sprouts while it is still attached to the parent tree, and the young plant falls into the water already the length of a hand, green and buoyant and carrying its own small store of food. The seedlings can drift on a tide for a month or more without harm. When the seedlings finally settle in shallow water, ______ roots take hold over the following weeks, and a stand of trees begins where there had been nothing but silt.",
+      "Mangroves grow where a river meets the sea. The mud there is too salty for most trees to root in at all. Their seeds do not drop to the ground and wait there for a better season. Each seed sprouts while it is still attached to the parent tree, carrying its own small store of food. The young plant falls into the water already the length of a hand, green and buoyant. The seedlings can drift on a tide for a month or more without harm. When the seedlings finally settle in shallow water, ______ roots take hold over the following weeks. A stand of trees begins where there had been nothing but silt.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -475,7 +571,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A gallery can make an argument without writing one down. In one city museum the same eleven pictures have hung in the same order since 1978. Five of them were painted before the valley below was flooded for a reservoir, a photograph of the dam under construction hangs at the center, and the last five were painted after. Visitors who walk the room from left to right reach the final canvas expecting a ruin and find a lake instead. Three curators have come and gone without moving a frame, and in nearly fifty years no one has hung a label longer than a title. The order in which the eleven pictures were ______ tells a visitor what no label in the room is long enough to say.",
+      "A gallery can make an argument without writing one down. In one city museum the same eleven pictures have hung in the same order since 1978. Five of them were painted before the valley below was flooded for a reservoir. A photograph of the dam under construction hangs at the center. The last five were painted after. Visitors walk the room from left to right and reach the final canvas expecting a ruin. They find a lake instead. Three curators have come and gone without moving a frame. No one has hung a label longer than a title in nearly fifty years. The order in which the eleven pictures were ______ tells a visitor what no label in the room is long enough to say.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -491,7 +587,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "When the telegraph line was strung over the pass in 1868, the newspapers in the capital sold the project as an instrument of government. An order from the ministry would reach the border garrison in an hour instead of two weeks, and the ministry paid for the wire on that promise. The traffic that kept the wire busy was another matter. Merchants used it to move prices, and the price of wool at the port could set what a shepherd was offered five hundred kilometers inland by the following morning. In its first full year the company sent fewer than two hundred official ______ however, the fees it charged wool brokers covered a third of what the concession had cost.",
+      "The telegraph line was strung over the pass in 1868. The newspapers in the capital sold it as an instrument of government. An order from the ministry would reach the border garrison in an hour instead of two weeks. The ministry paid for the wire on that promise. The traffic that kept the wire busy was another matter. Merchants used it to move prices. The price of wool at the port reached a shepherd five hundred kilometers inland by the next morning. In its first full year the company sent fewer than two hundred official ______ however, the fees it charged wool brokers covered a third of the cost.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -523,7 +619,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A tide gauge is a plain instrument: a float in a sheltered well, a pen on an arm, and a paper drum turned by clockwork. Its value comes from repetition rather than from precision. One measurement of high water on one morning tells a port almost nothing. But the row of gauges that the port authority has kept along the estuary since 1892 ______ the rise and fall of the water on paper without a break and stores the rolls in a cupboard that is opened only after a storm. Sea level is nothing grander than a very long stack of those rolls.",
+      "A tide gauge is a plain instrument: a float in a sheltered well and a pen on an arm. Clockwork turns the paper drum under the pen. The value of the gauge comes from repetition rather than from precision. One measurement of high water on one morning tells a port almost nothing. But the row of gauges that the port authority has kept along the estuary since 1892 ______ the rise and fall of the water without a break and stores the rolls in a cupboard. The cupboard is opened only after a storm. Sea level is nothing more than a very long stack of those rolls.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -539,7 +635,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "The oldest choir in the city has never once auditioned a singer. Anyone who turns up on three consecutive Thursdays is in, and anyone who stops turning up is out. Musicians who visit expect a congregation and hear something closer to a trained ensemble, which the director explains by arithmetic rather than by talent. Fifty Thursdays a year for eleven years come to more than five hundred rehearsals, which the director says is more singing together than most students have done by the time they leave a conservatory. The choir's administration is three people in all: a treasurer, who has never collected a single fee; a librarian, who keeps the only key to the music ______ a director, who has never once turned anyone away. The three of them meet in a room above a bakery that now sells bread on Thursday evenings to people who come only for the singing.",
+      "The oldest choir in the city has never once auditioned a singer. Anyone who turns up on three Thursdays in a row is in. Anyone who stops turning up is out. Visiting musicians expect a congregation and hear something closer to a trained ensemble. The director explains this by arithmetic rather than by talent. Fifty Thursdays a year for eleven years come to more than five hundred rehearsals, which the director says is more singing together than most students have done by the time they leave a conservatory. The choir's administration is three people in all: a treasurer, who has never collected a single fee; a librarian, who keeps the only key to the music ______ a director, who has never once turned anyone away. The three of them meet in a room above a bakery. The bakery now sells bread on Thursday evenings to people who come only for the singing.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -572,7 +668,7 @@ export const meta: SatItemMeta[] = [
         "Los dos puntos exigen a su izquierda una oración completa, y a la izquierda del hueco solo hay «Because a clerk earned more from a long entry than from a short one», que es una subordinada. Es el error de quien lee lo que sigue como una explicación —y lo es— y da por hecho que eso basta para poner dos puntos, sin comprobar qué clase de unidad los precede.",
     },
     fuenteHecho:
-      "Historia administrativa, hecho libre: el pago a los escribientes por página y su efecto sobre la forma de los libros de cuentas es un lugar común de la crítica de fuentes. Las salinas, los dos siglos y el desglose en tres líneas son invención propia; no describen ningún archivo concreto.",
+      "Historia administrativa, hecho libre: el pago a los escribientes por página y su efecto sobre la forma de los libros de cuentas es un lugar común de la crítica de fuentes. Las salinas, los dos siglos y el desglose en tres líneas son invención propia; no describen ningún archivo concreto.\n\n**Corte de complejidad (22 ago 2026), sin cambio de contenido.** Se parten dos oraciones y ninguna es la del hueco: la de apertura se separa de la del pago por página, y el desglose del envío sale de la oración examinada a oración propia —«The weight, the buyer, and the date each take a line of their own»—. De **23,0 a 15,0** palabras por oración, de cuatro oraciones a seis. La oración del hueco conserva lo que la sostiene: a la izquierda del hueco sigue habiendo solo la subordinada, y sigue llegando hasta «spread over three lines», que es lo que cita `razones.C`. Ni una opción ni una razón se tocaron.",
   },
   {
     id: 'q17',
@@ -593,7 +689,7 @@ export const meta: SatItemMeta[] = [
         "Es la contracción de «they are», no un posesivo: la oración quedaría «they are roots take hold over the following weeks». Acierta el número y falla la forma, que es el camino de quien corrige la concordancia de oído y escribe la palabra que suena, no la que funciona.",
     },
     fuenteHecho:
-      "Botánica de manual: la viviparidad del mangle. La semilla no se desprende para esperar en el fango, sino que germina adherida al árbol y cae al agua ya como propágulo desarrollado; el propágulo flota y se mantiene viable durante semanas, y una vez varado en agua somera echa raíces a lo largo de varias semanas, no en un día. Sin especie, país ni cifras: la comparación con el largo de una mano es propia.",
+      "Botánica de manual: la viviparidad del mangle. La semilla no se desprende para esperar en el fango, sino que germina adherida al árbol y cae al agua ya como propágulo desarrollado; el propágulo flota y se mantiene viable durante semanas, y una vez varado en agua somera echa raíces a lo largo de varias semanas, no en un día. Sin especie, país ni cifras: la comparación con el largo de una mano es propia.\n\n**Corte de complejidad (22 ago 2026), sin cambio de contenido.** Se parten tres oraciones: la de apertura, la de la germinación y la del hueco por su cola. De **23,0 a 14,2** palabras por oración, de cinco oraciones a ocho. El antecedente «the seedlings» sigue dentro de la oración del hueco y en plural —lo que sale de ella es «and a stand of trees begins where there had been nothing but silt», que no decidía nada—, y ningún singular nuevo entra en el pasaje. El corte **corrige** además una imprecisión de las razones: «carrying its own small store of food» colgaba de «the young plant» y ahora cuelga de «Each seed», que es de quien `razones.A` y `razones.C` decían que colgaba. Se cambió el texto para que la razón sea literalmente cierta; la razón no se tocó.",
   },
   {
     id: 'q18',
@@ -614,7 +710,7 @@ export const meta: SatItemMeta[] = [
         "Coma entre el sujeto y su verbo. Es la apuesta de quien puntúa por respiración: el sujeto es largo, al leerlo en voz alta se hace una pausa donde termina, y esa pausa se escribe. El inglés escrito no la admite —el sujeto entrega el verbo sin signo por larga que sea la distancia—, y aquí la coma además parte en dos la única oración del párrafo que dice qué hace el orden de los cuadros.",
     },
     fuenteHecho:
-      "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. La cuenta desde 1978 se escribe **«in nearly fifty years» y no una cifra exacta**: «forty-eight years» era correcto solo durante 2026 y pasaba a ser falso en enero de 2027, y un banco de ítems no se revisa cada enero. Toda cifra del examen que se mida contra «hoy» tiene que estar redondeada o acotada.\n\nEl pasaje no ha cambiado; sí la oración del hueco, que es la última. Decía «The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang» y examinaba los dos puntos; dice ahora «The order in which the eleven pictures were ______ tells a visitor what no label in the room is long enough to say» y examina que sujeto y verbo no se separan. El motivo del cambio de regla no es de contenido —la sala sigue argumentando por su orden de colgado— sino de conjunto, y está en el punto 3 de la cabecera.",
+      "Museografía, hecho libre: el orden de colgado como argumento tácito de una sala, y la cartela reducida al título como decisión de montaje. El museo, las once obras, el embalse, la fotografía de la presa y la fecha de 1978 son invención propia y no describen ninguna colección real. La cuenta desde 1978 se escribe **«in nearly fifty years» y no una cifra exacta**: «forty-eight years» era correcto solo durante 2026 y pasaba a ser falso en enero de 2027, y un banco de ítems no se revisa cada enero. Toda cifra del examen que se mida contra «hoy» tiene que estar redondeada o acotada.\n\nEl pasaje no ha cambiado; sí la oración del hueco, que es la última. Decía «The reason the room can argue without a word of explanation is ______ the order in which the eleven pictures hang» y examinaba los dos puntos; dice ahora «The order in which the eleven pictures were ______ tells a visitor what no label in the room is long enough to say» y examina que sujeto y verbo no se separan. El motivo del cambio de regla no es de contenido —la sala sigue argumentando por su orden de colgado— sino de conjunto, y está en el punto 3 de la cabecera.\n\n**Corte de complejidad (22 ago 2026), sin cambio de contenido.** Era el pasaje con más subordinación del bloque y se parte en cuatro sitios —la oración de los tres momentos del cuadro, la de los visitantes y la de los conservadores—, **ninguno de ellos la oración del hueco**, que no cambia un carácter: sigue con «were arranged» dentro del sujeto, «tells» a la derecha, ninguna coma abierta delante y ninguna oración independiente cerrada a la izquierda, que son las cuatro condiciones de arriba. De **21,2 a 12,5** palabras por oración, de seis oraciones a diez. «in nearly fifty years» se coloca al final de su oración y no al principio para que siga escribiéndose en minúscula, tal como se cita aquí. Ni una opción ni una razón se tocaron.",
   },
   {
     id: 'q20',
@@ -635,7 +731,7 @@ export const meta: SatItemMeta[] = [
         "Los dos puntos anuncian que lo que sigue desarrolla, ilustra o cumple lo que se acaba de decir, y aquí lo que sigue lo contradice: «however» avisa de un contraste, no de una ampliación. Es el error de quien ve dos hechos relacionados y coloca los dos puntos como si cualquier relación fuera explicación.",
     },
     fuenteHecho:
-      "Historia de las telecomunicaciones, hecho libre: las líneas telegráficas se justificaron ante la opinión pública como instrumento de gobierno y se sostuvieron con tráfico comercial. La línea, el paso de montaña, 1868, la guarnición y el mercado de la lana son invención propia. Distancias en kilómetros, como el resto del examen: ninguna medida imperial obliga al estudiante a convertir bajo cronómetro. Por la misma razón el plazo es «two weeks» y no «fortnight»: la palabra es británica, queda fuera del currículo escolar de inglés en Colombia y en casi toda Latinoamérica, y aquí **no es adorno** —es la mitad del contraste «una hora en vez de…» que hace inteligible la promesa con la que se vendió la línea—, de modo que quien no la conociera perdía la premisa del párrafo entero.",
+      "Historia de las telecomunicaciones, hecho libre: las líneas telegráficas se justificaron ante la opinión pública como instrumento de gobierno y se sostuvieron con tráfico comercial. La línea, el paso de montaña, 1868, la guarnición y el mercado de la lana son invención propia. Distancias en kilómetros, como el resto del examen: ninguna medida imperial obliga al estudiante a convertir bajo cronómetro. Por la misma razón el plazo es «two weeks» y no «fortnight»: la palabra es británica, queda fuera del currículo escolar de inglés en Colombia y en casi toda Latinoamérica, y aquí **no es adorno** —es la mitad del contraste «una hora en vez de…» que hace inteligible la promesa con la que se vendió la línea—, de modo que quien no la conociera perdía la premisa del párrafo entero.\n\n**Corte de complejidad (22 ago 2026).** Se parten tres oraciones y no la del hueco. De **24,0 a 13,6** palabras por oración, de cinco oraciones a ocho. Dos cambios de palabra, ninguno sobre material citado: «could set what a shepherd was offered» → «reached a shepherd» (relativa libre por verbo llano) y «a third of what the concession had cost» → «a third of the cost», que quita del examen «concession», palabra rara y del mismo campo semántico que la concesión administrativa que el estudiante no necesita. A la derecha de «however» sigue habiendo oración con sujeto y verbo propios —«the fees it charged wool brokers covered a third of the cost»—, que es lo que hace único al punto y coma, y a la izquierda sigue habiendo otra. Ni una opción ni una razón se tocaron.",
   },
   {
     id: 'q19',
@@ -677,7 +773,7 @@ export const meta: SatItemMeta[] = [
         "Correcta: el núcleo del sujeto es «the row», singular, aunque entre él y el verbo se interpongan «of gauges» y la relativa «that the port authority has kept along the estuary since 1892»; y el presente simple es el tiempo que exige el verbo coordinado «and stores».",
     },
     fuenteHecho:
-      "Oceanografía de manual: el mareógrafo de flotador en pozo tranquilizador, con plumilla sobre tambor de relojería, deja un trazo **continuo** sobre el papel —de ahí «without a break»— y no una lectura cada diez minutos, que es lo que hace un registrador digital. El nivel del mar es la serie larga de esos rollos. El puerto, el estuario y la fecha de 1892 son invención propia.",
+      "Oceanografía de manual: el mareógrafo de flotador en pozo tranquilizador, con plumilla sobre tambor de relojería, deja un trazo **continuo** sobre el papel —de ahí «without a break»— y no una lectura cada diez minutos, que es lo que hace un registrador digital. El nivel del mar es la serie larga de esos rollos. El puerto, el estuario y la fecha de 1892 son invención propia.\n\n**Corte de complejidad y de localización (22 ago 2026).** T: se parte la oración de apertura —el tambor de relojería pasa a oración propia— y la cola de la oración del hueco. De **20,6 a 15,3** palabras por oración, de cinco oraciones a siete. «Its value» pasa a «The value of the gauge» porque el posesivo se quedaba sin antecedente claro al cortar, y «nothing grander» a «nothing more» por frecuencia; ninguna de las dos está citada en ninguna razón. L: la oración del hueco pasa de **43 a 34** palabras, el tramo del hueco a «and stores» de **13 a 11** y lo que queda detrás de «stores» de **11 a 5**, porque la relativa final —«a cupboard that is opened only after a storm»— sale a oración propia y ya no obliga a volver atrás. Lo que **no** puede bajar es el tramo de «row» al hueco: esa frase interpuesta es la regla que el ítem mide y `razones.D` la cita entera. El núcleo, la interposición y el verbo coordinado «and stores» siguen los tres dentro de la oración del hueco. Ni una opción ni una razón se tocaron.",
   },
   {
     id: 'q22',
@@ -698,6 +794,6 @@ export const meta: SatItemMeta[] = [
         "Repite los dos puntos que ya abrieron la enumeración detrás de «three people in all». Un segundo par de puntos dentro de la misma serie anuncia una lista nueva que nunca llega, y deja al lector esperando el desglose del bibliotecario. Es el error de quien asocia los dos puntos con la idea de «enumerar» y los repite en cada tramo de la lista.",
     },
     fuenteHecho:
-      "Práctica coral aficionada, hecho libre: un coro sin audiciones cuya calidad se explica por horas acumuladas y no por selección. La aritmética del párrafo es correcta: un año tiene cincuenta y dos jueves, de los cuales el texto cuenta cincuenta, y cincuenta jueves por once años dan quinientos cincuenta ensayos. El coro, la ciudad, la panadería y las cifras son invención propia. La comparación con el conservatorio la sostiene ahora el director —«which the director says is more singing together than…»— y no el narrador: cuánto han cantado juntos los estudiantes al salir de un conservatorio no es verificable, y el párrafo ya había presentado al director como quien explica el coro por aritmética.",
+      "Práctica coral aficionada, hecho libre: un coro sin audiciones cuya calidad se explica por horas acumuladas y no por selección. La aritmética del párrafo es correcta: un año tiene cincuenta y dos jueves, de los cuales el texto cuenta cincuenta, y cincuenta jueves por once años dan quinientos cincuenta ensayos. El coro, la ciudad, la panadería y las cifras son invención propia. La comparación con el conservatorio la sostiene ahora el director —«which the director says is more singing together than…»— y no el narrador: cuánto han cantado juntos los estudiantes al salir de un conservatorio no es verificable, y el párrafo ya había presentado al director como quien explica el coro por aritmética.\n\n**Corte de complejidad (22 ago 2026); la localización de este ítem no se puede bajar.** T: se parten tres oraciones —la de los jueves consecutivos, la de los músicos visitantes y la de la panadería— y «three consecutive Thursdays» pasa a «three Thursdays in a row» por frecuencia. De **25,2 a 16,9** palabras por oración, de seis oraciones a nueve; era el pasaje más largo del bloque. **La oración de la lista no se toca en ningún carácter**: el dos puntos tras «three people in all», las tres relativas explicativas y el primer punto y coma siguen letra por letra. L: no baja, y no por descuido. Los tres datos que deciden —el dos puntos que abre la enumeración, el primer punto y coma y las comas internas de los miembros— están **todos** dentro de la oración del hueco, así que no hay nada que acercar, y los tres están citados palabra por palabra en `razones.A`, `razones.C` y `razones.D`: acortar esa oración sería escribir en una razón. Lo que se acorta es el camino hasta ella. Ni una opción ni una razón se tocaron.",
   },
 ]

@@ -35,6 +35,22 @@ Dificultad: objetivo **6 fáciles, 16 medios, 5 difíciles**, con media medida �
 > q13) en vez de tres. **Los dos ítems vuelven a la cola de auditoría por R2**: la prueba a
 > ciegas y la clave única hay que medirlas sobre los abanicos nuevos.
 
+> ⚠️ **Cuarta calibración de CS y EOI, 22 ago 2026 — la banda fácil de lectura deja de estar
+> vacía.** De veinte ítems de lectura, **ninguno** estaba en 5-7 contra dos del módulo 1.
+> `q01`, `q02` y `q03` medían **8** cada uno, al ras del suelo de la banda media, y bajan a
+> **7** por dos ejes y ninguna opción: L en `q02` y `q03` —la evidencia que decide la clave
+> pasa a una sola oración pegada al hueco— y T en `q01` —se glosa «transit» y se cae el
+> cociente de una parte en diez mil—. La fila 1 no se mueve (el plan ya decía **1**; era el
+> `meta` el que declaraba 2 y ahora dice la medida). En EOI, `q25` se reescribió entero
+> —pasaje y razones nuevos, **las cuatro opciones intactas**, y conservando tipo, dominio,
+> tema, **clave D** y posición— y baja de **11** a **9**. Con esto la cuenta declarada del
+> módulo pasa de 8 · 12 · 7 a **9 · 11 · 7** y la media medida baja unos 5 puntos de suma.
+> Puerta 9 intacta: `words-in-context` va 1 · 1 · 1 · 1 y `transitions` mide **9 · 9 · 9** en
+> el orden en que van, o sea no decreciente —se midió antes de decidir, y por eso **no** se
+> intercambiaron `q25` y `q26`, que es lo que habría hecho aplicar la regla de la curva a
+> ojo—. Desglose por eje en «DUODÉCIMA PASADA» (bloque CS) y «CALIBRACIÓN, cuarta pasada»
+> (bloque EOI). Por R2 los cuatro vuelven a la cola de auditoría.
+
 ## Lo que este plan fija y no se negocia ítem a ítem
 
 - **27 ítems, todos puntuables.** Reparto 8 · 7 · 7 · 5, el único que suma 27 dejando los cuatro dominios a menos de dos puntos de su peso oficial.
