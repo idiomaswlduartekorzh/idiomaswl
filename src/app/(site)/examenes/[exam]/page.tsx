@@ -13,6 +13,10 @@ import {
   ICFES_SEVEN_PARTS_NOTES,
   ICFES_SEVEN_PARTS_PODCAST,
 } from '@/data/practica/podcasts/estrategias-para-las-7-partes-del-icfes';
+import {
+  CAMBRIDGE_B2_FIRST_NOTES,
+  CAMBRIDGE_B2_FIRST_PODCAST,
+} from '@/data/practica/podcasts/how-to-pass-cambridge-b2-first';
 import toeflStyles from './toefl-ios.module.css';
 
 export async function generateStaticParams() {
@@ -94,6 +98,20 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
             { href: '/practica/icfes-saber-11/simulacro-guiado', label: 'Practicar con guía' },
             { href: '/practica/icfes-saber-11/repaso-errores', label: 'Revisar errores' },
             { href: '/practica/icfes-saber-11/plan-de-estudio', label: 'Crear un plan' },
+          ]}
+        />
+      )}
+
+      {slug === 'cambridge-b2' && (
+        <PodcastFeature
+          {...CAMBRIDGE_B2_FIRST_PODCAST}
+          accent={exam.color}
+          notes={CAMBRIDGE_B2_FIRST_NOTES}
+          links={[
+            { href: '/examenes/cambridge-b2/practica/set-1', label: 'Take the complete diagnostic' },
+            { href: '/practica/ingles/b2/uso-del-idioma', label: 'Train B2 Use of English' },
+            { href: '/practica/ingles/b2/conectores', label: 'Practise cohesion and connectors' },
+            { href: '/nivel-radar', label: 'Check your current level' },
           ]}
         />
       )}
