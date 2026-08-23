@@ -577,7 +577,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
     return (
       <>
         <p className={s.taskInstruction}>
-          Completa solo los tiempos que elegiste. Las demás formas ya están resueltas para conservar la historia.
+          Completa solo las formas o estructuras que elegiste. Las demás ya están resueltas para conservar la historia.
         </p>
         <div className={s.manuscript} lang={copy.languageCode}>
           {finalChallenge.segments.map((segment, index) => {
@@ -673,7 +673,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
           </dl>
         </header>
 
-        <section aria-label="Mapa temporal" className={s.timeMap}>
+        <section aria-label="Mapa de referencia" className={s.timeMap}>
           <span>{copy.mapLabels[0]}</span>
           <i aria-hidden="true" />
           <span>{copy.mapLabels[1]}</span>
@@ -724,21 +724,21 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
             </div>
 
             <div className={s.selectorFooter}>
-              <p>{draftTenses.length ? 'La corrección aparecerá cuando termines cada nivel.' : 'Selecciona al menos un tiempo para empezar.'}</p>
+              <p>{draftTenses.length ? 'La corrección aparecerá cuando termines cada nivel.' : 'Selecciona al menos una forma o estructura para empezar.'}</p>
               <button className="wlp-btn" disabled={!draftTenses.length} onClick={configureQuiz} type="button">
                 Crear mi quiz <ArrowRight size={16} />
               </button>
             </div>
           </section>
         ) : (
-          <section aria-label="Tiempos seleccionados" className={s.selectionBar}>
+          <section aria-label="Formas seleccionadas" className={s.selectionBar}>
             <div>
               <SlidersHorizontal aria-hidden="true" size={18} />
               <span>
                 {forms.filter((tense) => selectedSet.has(tense.id)).map((tense) => tense.label).join(' · ')}
               </span>
             </div>
-            <button onClick={() => setConfigured(false)} type="button">Cambiar tiempos</button>
+            <button onClick={() => setConfigured(false)} type="button">Cambiar selección</button>
           </section>
         )}
 

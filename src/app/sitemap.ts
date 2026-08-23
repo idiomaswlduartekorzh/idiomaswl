@@ -56,6 +56,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/herramientas/quizes`,                 lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/herramientas/quizes/italiano`,        lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
     { url: `${BASE}/herramientas/quizes/ingles`,           lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
+    { url: `${BASE}/herramientas/quizes/frances`,          lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
+    { url: `${BASE}/herramientas/quizes/portugues`,        lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
+    { url: `${BASE}/herramientas/quizes/aleman`,           lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
+    { url: `${BASE}/herramientas/quizes/ruso`,             lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
+    { url: `${BASE}/herramientas/quizes/japones`,          lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
+    { url: `${BASE}/herramientas/quizes/coreano`,          lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
     { url: `${BASE}/herramientas/transcripcion-fonetica`, lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
     ...IDIOMAS_PUBLICADOS.map((idioma) => ({
       url: `${BASE}/herramientas/transcripcion-fonetica/${idioma.slug}`,

@@ -7,7 +7,7 @@ const PAGE_URL = 'https://www.idiomaswl.com/herramientas/quizes'
 export const metadata: Metadata = {
   title: 'Quizes de idiomas — ejercicios gratuitos y autocorregibles',
   description:
-    'Quizes gratuitos por idioma con niveles progresivos y resultados al terminar cada nivel. Practica tiempos verbales en italiano e inglés.',
+    'Quizes gratuitos en ocho idiomas con niveles progresivos y resultados al terminar cada nivel. Practica tiempo, aspecto, modalidad y registro.',
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Quizes de idiomas — Idiomas WeLearn',
@@ -39,6 +39,36 @@ const QUIZES = [
     detail: '11 tiempos · 44 retos',
     color: '#009246',
   },
+  {
+    slug: 'frances', href: '/herramientas/quizes/frances', flag: '🇫🇷', name: 'Francés',
+    tagline: 'Contrasta récit oral, trasfondo, anterioridad, registro literario, futuro e hipótesis.',
+    detail: '10 formas · 111 retos', color: '#003189',
+  },
+  {
+    slug: 'portugues', href: '/herramientas/quizes/portugues', flag: '🇧🇷', name: 'Portugués',
+    tagline: 'Practica portugués brasileño hablado y formal con pasado, futuro e hipótesis.',
+    detail: '10 formas · 111 retos', color: '#009c3b',
+  },
+  {
+    slug: 'aleman', href: '/herramientas/quizes/aleman', flag: '🇩🇪', name: 'Alemán',
+    tagline: 'Controla auxiliar, participio, orden verbal, futuro, hipótesis y tratamiento.',
+    detail: '10 estructuras · 111 retos', color: '#dd0000',
+  },
+  {
+    slug: 'ruso', href: '/herramientas/quizes/ruso', flag: '🇷🇺', name: 'Ruso',
+    tagline: 'Decide no solo cuándo ocurre una acción, sino si importa el proceso o el resultado.',
+    detail: '10 contrastes · 111 retos', color: '#cc0000',
+  },
+  {
+    slug: 'japones', href: '/herramientas/quizes/japones', flag: '🇯🇵', name: 'Japonés',
+    tagline: 'Trabaja no-pasado, pasado, aspecto, experiencia, intención, condición y petición.',
+    detail: '10 contrastes · 111 retos', color: '#bc002d',
+  },
+  {
+    slug: 'coreano', href: '/herramientas/quizes/coreano', flag: '🇰🇷', name: 'Coreano',
+    tagline: 'Integra tiempo, aspecto, intención y registro sin confundir progreso con estado resultante.',
+    detail: '10 contrastes · 111 retos', color: '#534ab7',
+  },
 ]
 
 export default function QuizesPage() {
@@ -61,7 +91,7 @@ export default function QuizesPage() {
         </h1>
         <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 620, margin: '0 0 2rem' }}>
           Recorridos autocorregibles para usar durante la clase o practicar a tu ritmo.
-          Elige el idioma.
+          Cada idioma trabaja las categorías que realmente organizan su gramática.
         </p>
 
         <div className="wl-exams-catalog">
