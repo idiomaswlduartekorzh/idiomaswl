@@ -27,7 +27,7 @@ anteriores se escribieron sin ellas. Qué se tocó y por qué, al final del arch
 **Three things you won't do**
 1. You keep the pot on the fire, because you have raw cassava in twenty liters of hot water.
 2. You don't say that the group made a mistake. You need them here at one, and she is the one who asks them.
-3. You don't open the fridge until she gives you three things: how many, before what hour, and how they get back. You offer two options before she says yes.
+3. You don't open the fridge until she gives you three things: how many, before what hour, and how they get back. Nothing here is free. You offer two options before she says yes.
 
 **Nobody out there knows this**
 - You put in the cassava and the plantain at twelve, so at eleven forty you only have broth.
@@ -110,7 +110,7 @@ You said what you lose tonight if that number comes late, and what Monday and Tu
 
 **Three things you won't do**
 1. You don't show up empty-handed: you wrote in the chat that lunch was coming.
-2. You don't correct the ten o'clock message until something is in your hands. You correct it once, and you choose when.
+2. You don't correct the ten o'clock message until something is in your hands. You correct it once, and you choose when. Same number to him and to the six.
 3. On that bike, only what fits between your feet.
 
 **What you haven't said yet**
@@ -481,3 +481,32 @@ grammarReferences: [
   },
 ]
 ```
+
+
+---
+
+## Pasada de simulación (22 ago 2026) — `fase13-simulacion-4.md`
+
+Cinco parejas, alternando de qué lado cae el hándicap. **La forma nueva de A funciona**: el sitio
+número 1 donde la gente se pasaba al español —preguntar el número— desapareció de la lista, y el
+turno de la muerte se movió del 17 al 21, con él la causa. La puerta del 40 % la pasan las dos
+parejas de perfil parejo.
+
+**Lo que devolvió, y es un solo defecto con dos caras: las reglas que paran el atajo viven en la
+pantalla del cierre, y el que atajo se va antes de llegar a ella.**
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | A · restricción 3 | `…and how they get back. You offer two options…` → `…and how they get back. **Nothing here is free.** You offer two options…` | por el lado A el atajista no gana: **se rinde**. Regala el tarro en el turno 3, rompe su propia restricción y apaga la escena en ocho turnos con 0 de 8 piezas. La quinta regla —*nada sale de este patio gratis*— no lo alcanzaba porque vive en el cierre y él no llega al cierre |
+| 2 | B · restricción 2 | `…you choose when.` → `…you choose when. **Same number to him and to the six.**` | por el lado B **sí ganaba, y en cuatro turnos**: cumplía sus tres restricciones y satisfacía la de A con **dos datos falsos**. La restricción contaba piezas, no verdad, y aquí no hay nada que firmar ni que anotar — así que lo único que puede cobrar la mentira es que el mismo número tenga que sostenerse en el río |
+
+**Del callado, medido, y se declara sin arreglar:** produce las tres piezas que solo ella tiene, a la
+fuerza; **sus dos datos ocultos, ninguno**; y su restricción 2 —desdecirse del mensaje de las diez—
+**no se cumple nunca**. Lo que enseña es esto: *«la pieza de conversación más cara de su ficha es la
+única que no requiere ningún exponente que ella no tenga»* —`At ten I told you …. That's not true
+now.` está entera en su tabla, sin huecos— **y aun así no sale, porque desdecirse no es una forma,
+es una decisión, y un callado no toma decisiones caras.** Ninguna ficha arregla eso; lo arregla un
+profesor, o no se arregla.
+
+**Y los minutos:** la banda real medida es **2:01 – 7:33** contra los 7 declarados. Lo clava la
+pareja sólida-floja, no la sólida.
