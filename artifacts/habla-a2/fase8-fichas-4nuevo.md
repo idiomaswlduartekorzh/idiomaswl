@@ -36,65 +36,56 @@ anteriores se escribieron sin ellas. Qué se tocó y por qué, al final del arch
 
 **If she rides off and you have no answer** · You have twelve plates and nobody at the table. You lose the chicken tonight, and next Sunday they are back in your patio.
 
-### What the fire is doing while you talk
+### Facts
 
-You look at it every twenty minutes, because you cook on wood and not on gas.
+You look at the fire every twenty minutes, because you cook on wood and not on gas.
 
-| time | the pot |
+| | |
 |---|---|
+| Now | Sunday, September 20, 11:20 a.m. |
 | 6:00 | you up · nothing eaten yet |
 | 9:00 | chicken in · fire lit |
 | 11:20 | broth and chicken · simmering |
 | 12:00 | cassava and plantain in · second chicken now or never |
 | 1:00 | ready · twelve servings |
 | after 1:00 | low fire · two hours max · then dry |
-
-### The numbers you're cooking with
-
-| | |
-|---|---|
-| Now | Sunday, September 20, 11:20 a.m. |
-| Friday's plan | lunch here 1:00 · river after |
-| Second chicken | cut at 7:00 · out of the fridge |
-| The fridge | taken — Saturday's rice and chicken, one container |
-| That container | your Monday and Tuesday lunches |
 | Marcela's bike | out 11:40 · back around 12:40 · one passenger · nothing big |
 | The river | 15 minutes by bike · 40 on foot, no shade |
 | The gate | out of sight from the fire |
 
-### Words for the fire
+### Words you need here
 
 | word | what it is | here — **not a line to say** |
 |---|---|---|
+| a passenger | a person who rides and doesn't drive | the one seat on Marcela's bike · the whole size of the first round |
 | a round | one time when everybody gets food | half of your way out — the second one |
 | a serving | the food for one person | the unit of the number you keep asking for |
 | cassava | a white root you boil and eat, like a potato | yuca — the physical reason the pot can't move |
-| leftovers | food from an earlier meal | the name of what's in your fridge |
+| on foot | walking, with no bike and no car | the forty minutes between the river and this patio |
 | raw | not cooked yet | the cassava at eleven forty, in one word |
-| to go bad | to become bad, so you can't eat it | the clock on the second chicken |
+| shade | a cool place out of the sun | what that road has none of at midday |
+| the gate | the door in the fence, out at the street | where the first people arrive · out of sight from your fire |
 | to keep an eye on something | to look at it every few minutes | why one o'clock needs a second person |
-| to reheat | to make cold food hot again | the price of the three o'clock way out |
 | to simmer | to cook slowly in hot water | what the pot is doing at eleven twenty |
-| to stir | to move food with a big spoon | the job that ties a body to the patio |
 
-### What to take from the toolkit
+### Your toolkit
 Blocks **2**, **3** (numbers only), **4** `[jargon]` — *simmer*, *raw* and *serving* are yours — **5**, **6**, **7** `[grants]` (the fire explains the pot) and **8**. **Block 1 has no form for this patio**: your opening is in your own table.
 
-### Out loud, in this patio — by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
-| function | form | what it does here | register |
-|---|---|---|---|
-| advice, about her side | `You should tell them: get out of the water at …` | advise about her side of this, never about yours | informal |
-| asking again, with a new reason | `I have to know before …, because …` · `If you don't tell me a number, I'll cook for …` | a new reason every time · then a price on the wait | neutral |
-| asking how many, and how they get back | `How many are coming back at …?` · `And how do you all get back from …?` | the number you came down here for, asked in one question · the one question she can't answer with yes or no | neutral |
-| granting it, with a string | `The container can go, but only if …` | give the thing away and keep the hour | neutral |
-| opening | `Come here a second, before you …` | you speak first, and you don't open with the question | informal |
-| the gate, at one | `Somebody has to be at the gate at …, and it can't be …` | the job the phone call just handed you | informal |
-| the pot, and what it makes | `The cassava goes in at …, and it's ready at …` · `That's twelve servings, and the pot doesn't leave …` | two hours, so the wait stops being an opinion · a physical no, not a no to her | neutral |
-| two rounds | `We can do it in two rounds: some at …, and the rest at …` | stop asking, start offering | neutral |
-| what it costs you | `There's rice and chicken in there from …, and that's my lunch on …` | the exact point where pairs switch to Spanish: say what you lose | informal |
+| function | form | what it does here |
+|---|---|---|
+| advice, about her side | `You should tell them: get out of the water at …` | advise about her side of this, never about yours |
+| asking again, with a new reason | `I have to know before …, because …` · `If you don't tell me a number, I'll cook for …` | a new reason every time · then a price on the wait |
+| asking how many, and how they get back | `How many are coming back at …?` · `And how do you all get back from …?` | the number you came down here for, asked in one question · the one question she can't answer with yes or no |
+| granting it, with a string | `The container can go, but only if …` | give the thing away and keep the hour |
+| opening | `Come here a second, before you …` | you speak first, and you don't open with the question |
+| the gate, at one | `Somebody has to be at the gate at …, and it can't be …` | the job the phone call just handed you |
+| the pot, and what it makes | `The cassava goes in at …, and it's ready at …` · `That's twelve servings, and the pot doesn't leave …` | two hours, so the wait stops being an opinion · a physical no, not a no to her |
+| two rounds | `We can do it in two rounds: some at …, and the rest at …` | stop asking, start offering |
+| what it costs you | `There's rice and chicken in there from …, and that's my lunch on …` | the exact point where pairs switch to Spanish: say what you lose |
 
-### The lunch happened if
+### You did it if
 You said what you lose tonight if that number comes late, and what Monday and Tuesday cost you. You had a real number, and the chicken went in at twelve. You said what leaves and what stays. You asked for help at one o'clock. The open question has a name and an hour, and you never blamed the group.
 
 ---
@@ -120,64 +111,56 @@ You said what you lose tonight if that number comes late, and what Monday and Tu
 
 **If you leave at eleven forty with nothing** · You leave six people at a river with no food and no way home until four, and your message sent them there. And you leave behind lunch for twelve and one man at the fire.
 
-### The bike, and what fits
+### Facts
 
 Between your feet you can carry a cooler, and nothing bigger.
 
-| time | the road |
+| | |
 |---|---|
+| Now | Sunday, September 20, 11:20 a.m. |
 | 11:40 | Marcela's bike by the gate · one passenger |
 | 11:55 | at the river |
 | ~12:40 | Marcela back this way |
 | 1:30 | out of the water · 40 min on foot, no shade |
 | 2:00 | full sun on that road |
 | 4:00 | Édgar's car, finally out |
-
-### The numbers you're carrying
-
-| | |
-|---|---|
-| Now | Sunday, September 20, 11:20 a.m. |
 | At the river | six people · there from 10:00 · last food 7:00 |
-| Sunday there | no store, no stand, nothing open |
 | Your day off | Sundays only · the next one in a week |
 | What you said at ten | everybody back here at one |
-| What you wrote in the chat | lunch, on its way to the river |
-| The small cooler | in his kitchen, empty |
 
-### Words for the road
+### Words you need here
 
 | word | what it is | here — **not a line to say** |
 |---|---|---|
 | a cooler | a box that keeps food cold | the only thing that fits between your feet |
 | a day off | a day when you don't work | your Sunday, and what you lose if you stay |
 | a lid | the top that closes a pot | the small thing you tell him to do |
+| a passenger | a person who rides and doesn't drive | the one seat on Marcela's bike · the only one who doesn't walk |
 | empty-handed | with nothing in your hands | one word for your first no |
+| on foot | walking, with no bike and no car | the forty minutes for everybody without a seat |
+| the gate | the door in the fence, out at the street | where the bike waits at eleven forty · and the empty job at one |
 | the shade | a place out of the sun | the argument against a two o'clock walk |
-| to be starving | to be very, very hungry | the state of the six, and your best card |
 | to fit | to be small enough for a space | the verb of your flat no |
-| to hang out | to spend free time with friends, doing nothing special | what the six are doing, and why one o'clock is hard |
-| to head out | to leave for another place | your eleven forty, and the whole problem |
 | to show up | to arrive where people are waiting | what one o'clock is really about |
 
-### What to take from the toolkit
+### Your toolkit
 Blocks **2**, **3** `[receives]` — *simmer* and *raw* will come at you: ask — **4**, **5**, **6** (holding that message is not lying), **7** `[grants]` and **8**. **Not 1:** he speaks first; your opening is in your table.
 
-### Out loud, before the bike — by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
-| function | form | what it does here | register |
-|---|---|---|---|
-| advice, about his side | `You should turn the fire down and …` · `Put a lid on it and …` | advise about his side of this, never about yours | informal |
-| asking what's ready | `What is ready now?` · `And what can I take? It has to be cold.` | the one question he can't answer with yes or no | neutral |
-| bikes and feet | `Marcela can take …, and the rest walk from …` · `They can be out of the water at …` | the plan in people and minutes, not in one number | neutral |
-| complaining | `I got here at nine, and I didn't …` | say the unfair part without blaming him | informal |
-| granting it, with a string | `I'll bring some of them back, but only if …` | concede the trip, keep the plate | neutral |
-| insisting, with a new reason | `They ate at seven, and nothing is open …` · `I can't show up empty-handed, so I need something before I …` | a new reason every time · then say what the wait costs you | neutral |
-| opening, and what happened | `About the river …` · `They left at ten because it was …` | you come in second · give what you can give, not the number | informal |
-| saying no to the bike | `Nothing big fits on …` | close the door his idea keeps opening | neutral |
-| taking it back | `At ten I told you …. That's not true now.` | a number, not a sentence · late is fine, never is not | informal |
+| function | form | what it does here |
+|---|---|---|
+| advice, about his side | `You should turn the fire down and …` · `Put a lid on it and …` | advise about his side of this, never about yours |
+| asking what's ready | `What is ready now?` · `And what can I take? It has to be cold.` | the one question he can't answer with yes or no |
+| bikes and feet | `Marcela can take …, and the rest walk from …` · `They can be out of the water at …` | the plan in people and minutes, not in one number |
+| complaining | `I got here at nine, and I didn't …` | say the unfair part without blaming him |
+| granting it, with a string | `I'll bring some of them back, but only if …` | concede the trip, keep the plate |
+| insisting, with a new reason | `They ate at seven, and nothing is open …` · `I can't show up empty-handed, so I need something before I …` | a new reason every time · then say what the wait costs you |
+| opening, and what happened | `About the river …` · `They left at ten because it was …` | you come in second · give what you can give, not the number |
+| saying no to the bike | `Nothing big fits on …` | close the door his idea keeps opening |
+| taking it back | `At ten I told you …. That's not true now.` | a number, not a sentence · late is fine, never is not |
 
-### You rode off right if
+### You did it if
 You gave the real number and the hour — not the number from ten o'clock. You said who rides, who walks and how long the walk takes. You said what you tell the six and when. You kept one condition, and what is open has a name and an hour.
 
 ---
@@ -243,8 +226,8 @@ cp artifacts/habla-a2/fase8-fichas-4nuevo.md artifacts/habla-a2/fase7-fichas-4nu
 
 | ficha | prosa | techo §11 |
 |---|---|---|
-| **ROLE A — Fabián** | **448** | 450 ✔ |
-| **ROLE B — Astrid** | **450** | 450 ✔ |
+| **ROLE A — Fabián** | **436** | 450 ✔ |
+| **ROLE B — Astrid** | **440** | 450 ✔ |
 
 **Se cortó prosa; no se quitó ninguna pieza.** Las ocho obligatorias siguen en los dos roles:
 situación, objetivo, tres restricciones, dato oculto, lo que se pierde, caja, exponentes y
@@ -510,3 +493,119 @@ profesor, o no se arregla.
 
 **Y los minutos:** la banda real medida es **2:01 – 7:33** contra los 7 declarados. Lo clava la
 pareja sólida-floja, no la sólida.
+
+---
+
+## Alineación al molde (23 ago 2026) — `fase13-conjunto.md` GRAVE 2
+
+Las cuatro cosas del GRAVE 2, en el orden que manda el informe (los rótulos primero: son lo único
+que libera presupuesto, y sin ellos el `use it or don't` no cabía en 4B). **El motor no se toca:**
+conflicto, asimetría, poder, quién arranca, desenlace, minutos, turnos, la carta, las restricciones,
+los datos ocultos, `## Both screens — how it ends` y las dieciocho formas de la columna `form` están
+intactos. Contador canónico antes y después:
+
+| ficha | antes | después | techo |
+|---|---|---|---|
+| **ROLE A — Fabián** | 448 | **436** | 450 |
+| **ROLE B — Astrid** | 450 | **440** | 450 |
+
+Con esto el peor rol del set deja de ser este: el máximo de las dieciséis baja de **450 a 449**.
+
+### a) Rótulos — los cinco del molde, y la fusión de las dos tablas de datos
+
+`What the fire is doing while you talk` + `The numbers you're cooking with` (y, en B, `The bike, and
+what fits` + `The numbers you're carrying`) → una sola **`### Facts`** · `Words for the fire` /
+`Words for the road` → **`Words you need here`** · `What to take from the toolkit` → **`Your
+toolkit`** · `Out loud, in this patio — …` / `Out loud, before the bike — …` → **`Say it here —
+grouped by job, not in order · use it or don't · **don't read it out loud**`** · `The lunch happened
+if` / `You rode off right if` → **`You did it if`**.
+
+Las dos oraciones de voz que vivían bajo los rótulos viejos **se quedan**, ahora como entradilla de
+`### Facts`: son las dos únicas del archivo que explican por qué hay un reloj. La de A costó **+1
+palabra**: `You look at it…` se quedaba sin antecedente al desaparecer «the fire» del rótulo, y pasa
+a `You look at the fire every twenty minutes, because you cook on wood and not on gas.` De ahí que A
+cierre en **436** y no en los 435 declarados por el informe. B cierra en **440**, la cifra exacta.
+
+### b) Datos — de 14 y 13 filas a 10 y 10
+
+Se comprobó una por una que lo que sale **está dicho en la prosa de esa misma ficha**. Tres de las
+siete candidatas del informe **no lo estaban** y se sustituyeron:
+
+| rol | fila que sale | dónde sigue dicha, en su propia prosa |
+|---|---|---|
+| A | `Friday's plan \| lunch here 1:00 · river after` | situación: *«You lit the fire at nine, for Friday's plan: everybody here at one»* · objetivo: *«not for a river trip»* |
+| A | `Second chicken \| cut at 7:00 · out of the fridge` | dato oculto 2: *«You took the second chicken out at seven and cut it»* |
+| A | `The fridge \| taken — Saturday's rice and chicken, one container` | dato oculto 3: *«you have Saturday's rice and chicken in there, in the one container»* |
+| A | `That container \| your Monday and Tuesday lunches` | dato oculto 3: *«that is your Monday and Tuesday lunch»* |
+| B | `Sunday there \| no store, no stand, nothing open` | dato oculto 3: *«nothing open there on a Sunday»* |
+| B | `What you wrote in the chat \| lunch, on its way to the river` | restricción 1: *«you wrote in the chat that lunch was coming»* |
+| B | `The small cooler \| in his kitchen, empty` | *«Between your feet you can carry a cooler, and nothing bigger»* |
+
+**Las tres candidatas del informe que NO salen, y por qué:**
+
+1. **`6:00 \| you up · nothing eaten yet` (A).** No está en la prosa: es lo que quedó de la cuarta
+   viñeta de dato oculto que la tercera pasada cortó y metió en el reloj. Quitarla no es quitar una
+   redundancia, es borrar el dato. En su lugar sale `Friday's plan`, que sí está dicho dos veces.
+2. **`after 1:00 \| low fire · two hours max · then dry` (A).** Tampoco está en la prosa, y es el
+   único sostén de la salida de las tres —el exponente `two rounds` y la segunda tanda del cierre
+   conjunto se apoyan en esas dos horas—. En su lugar sale `Second chicken`, literal en el dato
+   oculto 2.
+3. **`2:00 \| full sun on that road` (B).** No está en la prosa y es el único anclaje de `the shade`
+   y del argumento contra la caminata de las dos. En su lugar sale `What you wrote in the chat`,
+   literal en la restricción 1.
+
+**Se conserva `Now` en los dos roles** aunque su contenido esté literal en la línea de situación:
+las **dieciséis** fichas del set abren su tabla de datos con esa fila —verificado por búsqueda
+literal—, y quitarla aquí arreglaría un rótulo creando una excepción nueva.
+
+### c) La columna `register`, fuera de las dos tablas de exponentes
+
+La añadió la séptima pasada y su propio aviso de conjunto ya avisaba de esto: era la única de las
+dieciséis tablas del set que la llevaba. Los ocho escenarios declaran el registro en la línea de
+cabecera del rol, y este también desde esa misma pasada (`Informal. No boss here.`), así que la
+columna era la única cosa que hacía esta tabla distinta de las otras catorce. Las dos tablas siguen
+en **9 filas**, agrupadas por función y **alfabéticas**, y ninguna forma se tocó.
+
+### d) Siete entradas de vocabulario por siete con sostén en los datos
+
+Salen `leftovers`, `to go bad`, `to reheat`, `to stir` (A) y `to be starving`, `to hang out`,
+`to head out` (B): ninguna de las siete aparece en los datos duros ni en la carta de su rol.
+
+**Tres de las siete palabras que el informe proponía ya estaban en el archivo** —`a serving` y
+`a round` en A, `to fit` en B: el informe midió sobre una versión anterior—. Así que las cuatro
+viables (`the gate`, `a passenger`, `shade`, `on foot`) entran en A, y B toma las tres suyas de la
+misma lista. Comprobación una por una contra su propia tabla:
+
+| rol | entra | dónde está, en los datos de ese rol |
+|---|---|---|
+| A | `a passenger` | `Marcela's bike \| out 11:40 · … · one passenger · nothing big` |
+| A | `on foot` | `The river \| 15 minutes by bike · 40 on foot, no shade` |
+| A | `shade` | `The river \| … no shade` |
+| A | `the gate` | `The gate \| out of sight from the fire` · y la carta: `The gate at 1:00` |
+| B | `a passenger` | `11:40 \| Marcela's bike by the gate · one passenger` |
+| B | `on foot` | `1:30 \| out of the water · 40 min on foot, no shade` |
+| B | `the gate` | `11:40 \| Marcela's bike by the gate …` |
+
+`a round` no entra en B aunque el cierre conjunto se lo pida: **no está en sus datos ni tiene carta**,
+y la regla de esta pasada es que la palabra que entra esté en la pantalla de quien la lee.
+
+Prueba de celda `here` rehecha en las siete: ninguna define la palabra, las siete dicen para qué
+sirve **aquí** —el asiento único de la moto, los cuarenta minutos de los que se quedan sin él, lo que
+esa carretera no tiene a mediodía, el sitio por donde llega la gente y que no se ve desde el fuego—
+y ninguna es una oración cerrada que se pueda decir tal cual. Los dos roles siguen en **10 filas** y
+en orden alfabético.
+
+### Verificado sobre el disco, no declarado
+
+- `node artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs` → **4A 436 · 4B 440**, 16/16 dentro de
+  450, peor del set 449. (El bloque `## El recuento de prosa` de más arriba ya no necesita la copia
+  a `fase7-fichas-4nuevo-TMP.md`: el contador nombra `fase8-fichas-4nuevo.md` en su lista desde el
+  22 de agosto. La instrucción se deja como registro de cómo se midió entonces.)
+- Filas de datos: **10 y 10**. Filas de exponentes: **9 y 9**, alfabéticas por función, sin columna
+  `register`.
+
+**Lo que esta pasada invalida** (`fase13-conjunto.md`, «qué hay que volver a medir»): la calcabilidad
+y el nivel de este escenario, por las siete filas de datos que salen y las siete palabras nuevas; y
+la MEDIDA 4, por el vocabulario. El solape A↔B de este escenario sube a **3 entradas de 10** —`a
+passenger`, `on foot`, `the gate`, más el par `shade` / `the shade`—: sigue por debajo del listón
+del MEDIO 8 (media pantalla propia), pero es la cifra que hay que volver a medir, no la vieja.
