@@ -216,28 +216,6 @@ grammarReferences: [
   { slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
     rationale: 'El cuarto punto del cierre es un condicional: "If the pain goes to your ear, go to the emergency room tonight".' }, // a2
   { slug: 'past-simple-questions', title: 'Preguntas y Negativos en Past Simple A2',
-    rationale: 'Sin pregunta abierta no sale el dato que da vuelta al escenario: "What happened?", y la respuesta que lo trae, "A piece of my tooth broke on Sunday". En directa, nunca incrustada.' }, // a2
-  { slug: 'have-to-must', title: 'Have to y Must en Inglés A2',
-    rationale: 'La hora de llegada del jueves se pregunta y se contesta con have to: "What time do I have to be there?", y el cierre exige decirla en voz alta.' }, // a2
-  { slug: 'quantifiers', title: 'Cuantificadores en Inglés A2',
-    rationale: 'Dosis, dinero y tiempo se dicen en cantidades: "two painkillers a day", "ten minutes early", "I have seventy thousand".' }, // a2
-  { slug: 'comparatives', title: 'Comparativos en Inglés A2',
-    rationale: 'El paciente describe cómo está comparando, que es como se describe un dolor: "it\'s worse than yesterday", "it hurts more when I drink something cold".' }, // a2
-  { slug: 'connectors-a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
-    rationale: 'Los dos movimientos que sostienen el escenario son un because y un but, y los dos están en la tabla propia de cada rol: "I can\'t come at seven, because I open the warehouse", "Maybe I have something later today, but I can\'t promise".' }, // a2
-  { slug: 'present-perfect-ever-never', title: 'Present Perfect con Ever, Never, Already y Yet',
-    rationale: 'El aviso que nunca llega vive en never, y en A2 se dice en presente simple: "The clinic never texts me". El tema marca además la frontera: el present perfect de duración con for o since sería B1 y este escenario no lo pide.' }, // a2
-  { slug: 'imperative', title: 'El imperativo en inglés A1',
-    rationale: 'Todo lo que hay que hacer esta noche se dice en imperativo, y también la reparación del mostrador: "Put something cold on your face", "Don\'t chew on that side", "Let me repeat it".' }, // a1
-  { slug: 'can-ability', title: 'Can para habilidad en inglés A1',
-    rationale: 'Es el verbo del escenario entero, en los dos lados del mostrador: "Can you say it one at a time?", "Can I come back at six?", "I can wait here", "I can\'t come at seven".' }, // a1
-  { slug: 'telling-time', title: 'Decir la hora en inglés A1',
-    rationale: 'El escenario entero son horas —4:20, 4:45, 6:15, 7:00, 8:30— y el cierre exige la de la cita y la de llegada.' }, // a1,
-  { slug: 'should-advice', title: 'Should y Shouldn\'t en Inglés A2',
-    rationale: 'Ancla el acto recomendar en las dos direcciones: "What should I do tonight?" desde el paciente y "You should go to our Centro branch" desde el mostrador.' }, // a2
-  { slug: 'first-conditional', title: 'El Primer Condicional en Inglés A2',
-    rationale: 'El cuarto punto del cierre es un condicional: "If the pain goes to your ear, go to the emergency room tonight".' }, // a2
-  { slug: 'past-simple-questions', title: 'Preguntas y Negativos en Past Simple A2',
     rationale: 'La pregunta abierta que saca el dato pivote se construye con did: "When did the pain start?". "What happened?" convive con ella como bloque léxico, porque la pregunta de sujeto sin auxiliar no la enseña ningún tema del nivel.' }, // a2
   { slug: 'past-simple-irregular', title: 'Past Simple Verbos Irregulares en Inglés A2',
     rationale: 'El dato que da vuelta al escenario es un pasado irregular afirmativo, no una pregunta: "A piece of my tooth broke on Sunday", "I left work at three thirty".' }, // a2
