@@ -15,7 +15,26 @@ export function elegirRamaModulo2(aciertos: number, routing: AdaptiveRouting): R
   return aciertos >= routing.correctToRouteHigh ? 'high' : 'low'
 }
 
+/** La parte concreta que corresponde a una rama. */
+export function parteParaRama(rama: RamaModulo2, routing: AdaptiveRouting): number {
+  return rama === 'high' ? routing.highPart : routing.lowPart
+}
+
 /** Las partes que ese estudiante llega a ver. Nunca las tres. */
 export function partesServidas(rama: RamaModulo2, routing: AdaptiveRouting): number[] {
-  return [routing.routeAfterPart, rama === 'high' ? routing.highPart : routing.lowPart]
+  return [routing.routeAfterPart, parteParaRama(rama, routing)]
+}
+
+/**
+ * Las partes por las que puede navegar en la etapa actual.
+ *
+ * `partesServidas` conserva M1 para puntuar y revisar el resultado final. Esta función
+ * es deliberadamente más estricta: después del corte solo deja M2, porque un módulo ya
+ * entregado no puede volver a abrirse ni modificar la ruta que ya produjo.
+ */
+export function partesNavegables(
+  rama: RamaModulo2 | null,
+  routing: AdaptiveRouting,
+): number[] {
+  return rama ? [parteParaRama(rama, routing)] : [routing.routeAfterPart]
 }

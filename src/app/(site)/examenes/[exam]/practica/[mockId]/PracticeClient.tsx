@@ -9,7 +9,12 @@ import type { MockExam, MCQQuestion, MockSection, QuestionInsight } from '@/data
 import { hasGuidedMock } from '@/data/icfes/guided-registry';
 import { SAT_DOMAIN_GUIDE_SLUG } from '@/data/mocks/sat/module-types';
 import { SAT_MARCA } from '@/data/sat-marca';
-import { elegirRamaModulo2, partesServidas } from '@/data/mocks/sat/routing';
+import {
+  elegirRamaModulo2,
+  partesNavegables,
+  partesServidas,
+  type RamaModulo2,
+} from '@/data/mocks/sat/routing';
 import type { SatDomain } from '@/data/mocks/sat/module-types';
 
 // ── Notices grid (ICFES Parte 1) ─────────────────────────────────────────────
@@ -785,12 +790,15 @@ function SectionTabs({
   answers,
   questions,
   onJumpToPart,
+  moduleNumber,
 }: {
   sections: MockExam['sections'];
   currentPart: number;
   answers: Record<string, number>;
   questions: MCQQuestion[];
   onJumpToPart: (part: number) => void;
+  /** En un examen adaptativo la parte interna 2 o 3 siempre se presenta como Módulo 2. */
+  moduleNumber?: 1 | 2;
 }) {
   return (
     <div className="prac-section-tabs">
@@ -803,7 +811,7 @@ function SectionTabs({
             onClick={() => onJumpToPart(sec.part)}
             className={`prac-section-tab${currentPart === sec.part ? ' prac-section-tab--active' : ''}`}
           >
-            <span>Parte {sec.part}</span>
+            <span>{moduleNumber ? `Módulo ${moduleNumber}` : `Parte ${sec.part}`}</span>
             <span className="prac-section-tab__count">{answered}/{sectionQs.length}</span>
           </button>
         );
@@ -1185,22 +1193,30 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   // ── Enrutado adaptativo por etapas (hoy solo el SAT) ───────────────────────
   //
   // El examen trae las tres partes escritas —módulo 1, módulo 2 estándar y módulo 2
-  // exigente— pero al estudiante solo se le sirven DOS. Hasta que entrega el módulo 1
-  // no existe la segunda, y la que no le toca no existe nunca: ni la ve, ni cuenta en
-  // el resultado, ni sale en la revisión. Por eso todo lo que mide o pinta trabaja
-  // sobre `servedMock` y no sobre `mock`.
+  // exigente— pero al estudiante solo se le sirven DOS. `servedMock` conserva las dos
+  // que cuentan para el resultado; `stageMock` contiene únicamente la etapa que todavía
+  // puede editar. Separarlas evita que M1 vuelva a abrirse después de haber decidido la
+  // ruta.
   const routing = mock.adaptive;
-  const [servedParts, setServedParts] = useState<number[]>(() => (routing ? [routing.routeAfterPart] : []));
-  const [routedTo, setRoutedTo] = useState<'low' | 'high' | null>(null);
+  const [routedTo, setRoutedTo] = useState<RamaModulo2 | null>(null);
+
+  const servedParts = routing
+    ? (routedTo ? partesServidas(routedTo, routing) : [routing.routeAfterPart])
+    : [];
+  const navigableParts = routing ? partesNavegables(routedTo, routing) : [];
 
   const servedMock: MockExam = routing
     ? { ...mock, sections: mock.sections.filter(sec => servedParts.includes(sec.part)) }
     : mock;
+  const stageMock: MockExam = routing
+    ? { ...mock, sections: mock.sections.filter(sec => navigableParts.includes(sec.part)) }
+    : mock;
 
   const allQuestions = getAllQuestions(servedMock) as MCQQuestion[];
-  const currentQuestion = allQuestions[currentIdx];
+  const stageQuestions = getAllQuestions(stageMock) as MCQQuestion[];
+  const currentQuestion = stageQuestions[currentIdx];
   const currentPart = currentQuestion?.part ?? 1;
-  const currentSection = servedMock.sections.find(s => s.part === currentPart);
+  const currentSection = stageMock.sections.find(s => s.part === currentPart);
 
   const handleAnswer = useCallback((optIdx: number) => {
     if (!currentQuestion) return;
@@ -1229,7 +1245,9 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     const aciertos = primeras.filter(q => answers[q.id] === q.answer).length;
     const rama = elegirRamaModulo2(aciertos, routing);
     setRoutedTo(rama);
-    setServedParts(partesServidas(rama, routing));
+    // Las marcas pertenecen a una etapa que ya quedó cerrada y no debe reaparecer en
+    // el panel del módulo 2.
+    setFlagged(new Set());
     setPhase('module-break');
   }, [routing, mock, answers]);
 
@@ -1237,31 +1255,31 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   // servir, entregar si no. Lo usan el botón, la barra lateral y el cronómetro, para
   // que ninguno de los tres pueda quedarse desincronizado de los otros dos.
   const finishStage = useCallback(() => {
-    if (routing && servedParts.length === 1) handleRoute();
+    if (routing && !routedTo) handleRoute();
     else handleSubmit();
-  }, [routing, servedParts, handleRoute, handleSubmit]);
+  }, [routing, routedTo, handleRoute, handleSubmit]);
 
   const handleStartSecondModule = useCallback(() => {
-    const primeras = (getAllQuestions(mock) as MCQQuestion[]).filter(q => q.part === routing?.routeAfterPart).length;
-    setCurrentIdx(primeras);
+    // `currentIdx` indexa las preguntas de la etapa, no las del examen completo.
+    setCurrentIdx(0);
     setPhase('exam');
-  }, [mock, routing]);
+  }, []);
 
   // Jump to first question of the section after current
   const handleNextSection = useCallback(() => {
-    const nextIdx = allQuestions.findIndex(q => q.part > currentPart);
+    const nextIdx = stageQuestions.findIndex(q => q.part > currentPart);
     if (nextIdx !== -1) setCurrentIdx(nextIdx);
-    else handleSubmit();
-  }, [allQuestions, currentPart, handleSubmit]);
+    else finishStage();
+  }, [stageQuestions, currentPart, finishStage]);
 
   // Jump to last question of the section before current
   const handlePrevSection = useCallback(() => {
     let last = -1;
-    for (let i = 0; i < allQuestions.length; i++) {
-      if (allQuestions[i].part < currentPart) last = i;
+    for (let i = 0; i < stageQuestions.length; i++) {
+      if (stageQuestions[i].part < currentPart) last = i;
     }
     if (last !== -1) setCurrentIdx(last);
-  }, [allQuestions, currentPart]);
+  }, [stageQuestions, currentPart]);
 
   const handleFlag = useCallback(() => {
     if (!currentQuestion) return;
@@ -1274,9 +1292,9 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   }, [currentQuestion]);
 
   const handleJumpToPart = useCallback((part: number) => {
-    const idx = allQuestions.findIndex(q => q.part === part);
+    const idx = stageQuestions.findIndex(q => q.part === part);
     if (idx !== -1) setCurrentIdx(idx);
-  }, [allQuestions]);
+  }, [stageQuestions]);
 
   const handleLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string }) => {
     const qs = allQuestions as MCQQuestion[];
@@ -1290,7 +1308,9 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
         examSlug: exam.slug,
         // El SAT no tiene escala de 100: guardar «63/100» ahí hace que en el panel se lea
         // como un puntaje ICFES, que sí va de 0 a 100. Para el SAT va el bruto y nada más.
-        examScore: exam.slug === 'sat' ? `${correct}/${total} correctas` : `${score}/100 (${correct}/${total} correctas)`,
+        examScore: exam.slug === 'sat'
+          ? `${correct}/${total} correctas${routedTo ? ` · M2 ${routedTo === 'high' ? 'exigente' : 'estándar'}` : ''}`
+          : `${score}/100 (${correct}/${total} correctas)`,
         // El balde del lead es el del examen que acaba de hacer. Estuvo fijo en
         // 'icfes-practica' hasta el 19 ago 2026, así que todo aspirante al SAT caía en la
         // lista del ICFES. Para el ICFES el valor no cambia (su slug es 'icfes').
@@ -1325,12 +1345,9 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     setAnswers({});
     setFlagged(new Set());
     setCurrentIdx(0);
-    // Sin esto, el reintento de un examen con enrutado servía las DOS ramas seguidas
-    // como examen lineal de 54 preguntas, sin corte y con los minutos de un solo módulo.
-    setServedParts(routing ? [routing.routeAfterPart] : []);
     setRoutedTo(null);
     setPhase('intro');
-  }, [routing]);
+  }, []);
 
   if (phase === 'lead') {
     // Se promete el desglose que la pantalla de resultados va a enseñar de verdad. Con
@@ -1363,7 +1380,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   // antes del segundo módulo cambiaría cómo lo afronta. Sí se dice, sin rodeos, que ya
   // no puede volver — que es lo que más sorprende a quien no ha visto el formato.
   if (phase === 'module-break') {
-    const segunda = servedParts[1];
+    const segunda = navigableParts[0];
     const seccion = mock.sections.find(sec => sec.part === segunda);
     const cuantas = (getAllQuestions(mock) as MCQQuestion[]).filter(q => q.part === segunda).length;
     return (
@@ -1400,7 +1417,37 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   }
 
   if (phase === 'intro') {
-    const totalQ = allQuestions.length;
+    const primera = routing
+      ? mock.sections.find(sec => sec.part === routing.routeAfterPart)
+      : undefined;
+    const ramaReferencia = routing
+      ? mock.sections.find(sec => sec.part === routing.lowPart)
+      : undefined;
+    const totalQ = routing
+      ? (primera?.questions.length ?? 0) + (ramaReferencia?.questions.length ?? 0)
+      : allQuestions.length;
+    const totalParts = routing ? 2 : mock.sections.length;
+    const introSections = routing
+      ? [
+          {
+            key: 'adaptive-m1',
+            label: 'Módulo 1',
+            title: 'Reading and Writing',
+            questions: primera?.questions.length ?? 0,
+          },
+          {
+            key: 'adaptive-m2',
+            label: 'Módulo 2',
+            title: 'Reading and Writing · dificultad ajustada después del módulo 1',
+            questions: ramaReferencia?.questions.length ?? 0,
+          },
+        ]
+      : mock.sections.map(sec => ({
+          key: `part-${sec.part}`,
+          label: `Parte ${sec.part}`,
+          title: sec.title.split('—')[1]?.trim() ?? sec.title,
+          questions: sec.questions.length,
+        }));
     return (
       <div className="prac-shell prac-shell--intro">
         <div className="prac-intro" style={{ '--exam-color': exam.color } as React.CSSProperties}>
@@ -1410,8 +1457,8 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
 
           <div className="prac-intro__stats">
             <div className="prac-intro__stat">
-              <span className="prac-intro__stat-val">{mock.sections.length}</span>
-              <span className="prac-intro__stat-lbl">{mock.sections.length === 1 ? 'Parte' : 'Partes'}</span>
+              <span className="prac-intro__stat-val">{totalParts}</span>
+              <span className="prac-intro__stat-lbl">{routing ? 'Módulos' : totalParts === 1 ? 'Parte' : 'Partes'}</span>
             </div>
             <div className="prac-intro__stat">
               <span className="prac-intro__stat-val">{totalQ}</span>
@@ -1424,11 +1471,11 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
           </div>
 
           <div className="prac-intro__sections">
-            {mock.sections.map(sec => (
-              <div key={sec.part} className="prac-intro__section">
-                <span className="prac-intro__section-part">Parte {sec.part}</span>
-                <span className="prac-intro__section-title">{sec.title.split('—')[1]?.trim() ?? sec.title}</span>
-                <span className="prac-intro__section-q">{sec.questions.length} preguntas</span>
+            {introSections.map(sec => (
+              <div key={sec.key} className="prac-intro__section">
+                <span className="prac-intro__section-part">{sec.label}</span>
+                <span className="prac-intro__section-title">{sec.title}</span>
+                <span className="prac-intro__section-q">{sec.questions} preguntas</span>
               </div>
             ))}
           </div>
@@ -1436,7 +1483,10 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
           <div className="prac-intro__tips">
             <p className="prac-intro__tips-title">Antes de empezar</p>
             <ul>
-              <li>Puedes navegar entre preguntas libremente usando el panel de navegación.</li>
+              <li>
+                Puedes navegar libremente dentro de cada {routing ? 'módulo' : 'parte'} usando el panel.
+                {routing ? ' Cuando entregues un módulo, ya no podrás volver a él.' : ''}
+              </li>
               <li>Marca preguntas con el botón <strong>Marcar</strong> para revisarlas antes de finalizar.</li>
               <li>El tiempo empieza al hacer clic en <strong>Empezar</strong>.</li>
               <li>Puedes finalizar en cualquier momento y ver tus resultados.</li>
@@ -1461,9 +1511,27 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     );
   }
 
+  if (!currentQuestion || !currentSection) {
+    return (
+      <div className="prac-shell prac-shell--intro">
+        <div className="prac-intro" style={{ '--exam-color': exam.color } as React.CSSProperties}>
+          <p className="prac-intro__eyebrow">No pudimos abrir este módulo</p>
+          <h1 className="prac-intro__title">El simulacro está incompleto</h1>
+          <p className="prac-intro__sub">
+            Tu progreso anterior no se perdió. Vuelve al inicio y, si el problema continúa,
+            avísanos para revisar la configuración del examen.
+          </p>
+          <button onClick={handleRetry} className="btn" style={{ marginTop: '1.4rem' }}>
+            Volver al inicio
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   // Exam phase
-  const answeredCount = Object.keys(answers).length;
-  const unanswered = allQuestions.length - answeredCount;
+  const answeredCount = stageQuestions.filter(q => answers[q.id] !== undefined).length;
+  const unanswered = stageQuestions.length - answeredCount;
 
   return (
     <div className="prac-shell prac-shell--exam">
@@ -1474,32 +1542,29 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
           <span className="prac-topbar__title">{mock.title}</span>
         </div>
         <Timer
-          key={servedParts.length}
+          key={routedTo ?? 'module-1'}
           totalSecs={(routing ? routing.minutesPerModule : mock.timeMinutes) * 60}
           onExpire={finishStage}
         />
       </header>
 
-      {/* Section tabs */}
-      {/* `servedMock`, no `mock`. Con el examen completo se pintaban las tres pestañas: el
-          estudiante veía «Módulo 2 (exigente)» activa y ya sabía qué rama le tocó —justo lo
-          contrario de lo que la pantalla de corte le acaba de prometer— y además podía volver
-          al módulo 1, que esa misma pantalla dice que está cerrado. */}
+      {/* Solo la etapa editable. M1 permanece en `servedMock` para puntuar, no para navegar. */}
       <SectionTabs
-        sections={servedMock.sections}
+        sections={stageMock.sections}
         currentPart={currentPart}
         answers={answers}
-        questions={allQuestions}
+        questions={stageQuestions}
         onJumpToPart={handleJumpToPart}
+        moduleNumber={routing ? (routedTo ? 2 : 1) : undefined}
       />
 
       {/* Main layout */}
       <div className="prac-body">
         <div className="prac-main">
           {(() => {
-            const sectionStart = allQuestions.findIndex(q => q.part === currentPart) + 1;
-            const isFirst = mock.sections[0].part === currentPart;
-            const isLast = mock.sections[mock.sections.length - 1].part === currentPart;
+            const sectionStart = stageQuestions.findIndex(q => q.part === currentPart) + 1;
+            const isFirst = stageMock.sections[0].part === currentPart;
+            const isLast = stageMock.sections[stageMock.sections.length - 1].part === currentPart;
             const sharedProps = {
               section: currentSection!,
               answers,
@@ -1530,14 +1595,14 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
               question={currentQuestion}
               section={currentSection}
               index={currentIdx}
-              total={allQuestions.length}
+              total={stageQuestions.length}
               selectedAnswer={answers[currentQuestion?.id]}
               isFlagged={flagged.has(currentQuestion?.id)}
               onAnswer={handleAnswer}
               onFlag={handleFlag}
               onPrev={() => setCurrentIdx(i => Math.max(0, i - 1))}
-              onNext={() => setCurrentIdx(i => Math.min(allQuestions.length - 1, i + 1))}
-              isLast={currentIdx === allQuestions.length - 1}
+              onNext={() => setCurrentIdx(i => Math.min(stageQuestions.length - 1, i + 1))}
+              isLast={currentIdx === stageQuestions.length - 1}
               onSubmit={() => {
                 if (unanswered > 0) {
                   if (!confirm(`Tienes ${unanswered} pregunta${unanswered !== 1 ? 's' : ''} sin responder. ¿Seguro que quieres finalizar?`)) return;
@@ -1551,7 +1616,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
 
         <aside className="prac-sidebar">
           <QuestionNav
-            questions={allQuestions}
+            questions={stageQuestions}
             current={currentIdx}
             answers={answers}
             flagged={flagged}
@@ -1560,7 +1625,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
 
           <div className="prac-sidebar__submit">
             <div className="prac-progress-info">
-              <span>{answeredCount}/{allQuestions.length} respondidas</span>
+              <span>{answeredCount}/{stageQuestions.length} respondidas</span>
               {flagged.size > 0 && <span>{flagged.size} marcadas</span>}
             </div>
             <button
@@ -1573,7 +1638,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
               className="btn"
               style={{ width: '100%' }}
             >
-              {routing && servedParts.length === 1 ? 'Entregar módulo 1' : 'Finalizar examen'}
+              {routing && !routedTo ? 'Entregar módulo 1' : 'Finalizar examen'}
             </button>
           </div>
         </aside>

@@ -3,6 +3,7 @@ import type { SatItemMeta } from '../module-types'
 
 /**
  * Bloque Craft and Structure del módulo `sat-set-1-m2-facil` — ocho ítems, q01 a q08.
+ * ESTADO: BORRADOR EN CUARENTENA. No importar ni registrar sin acta firmada del módulo.
  *
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 1-8). Textos originales de WeLearn;
  * ni un pasaje ni una pregunta salen de material de College Board (blueprint §5).

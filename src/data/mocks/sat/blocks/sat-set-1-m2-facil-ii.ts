@@ -3,6 +3,7 @@ import type { SatItemMeta } from '../module-types'
 
 /**
  * Bloque Information and Ideas del módulo `sat-set-1-m2-facil` — ítems q09 a q15.
+ * ESTADO: BORRADOR EN CUARENTENA. No importar ni registrar sin acta firmada del módulo.
  *
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 9-15). Las claves son las del plan y
  * no se negocian ítem a ítem: B, B, D, C, A, A, C. Cuando un ítem «pedía» otra letra se

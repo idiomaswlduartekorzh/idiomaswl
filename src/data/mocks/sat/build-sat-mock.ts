@@ -97,6 +97,40 @@ const MINUTOS_POR_MODULO = 32
  */
 const CORTE_MODULO_EXIGENTE = 16
 
+const cuentaDominios = (mod: SatModule): string => {
+  const cuenta = new Map<SatDomain, number>()
+  for (const item of mod.meta) cuenta.set(item.domain, (cuenta.get(item.domain) ?? 0) + 1)
+  return (Object.keys(DOMAIN_LABEL) as SatDomain[])
+    .map((domain) => `${domain}:${cuenta.get(domain) ?? 0}`)
+    .join('|')
+}
+
+function validarModulosAdaptativos(m1: SatModule, facil: SatModule, dificil: SatModule): void {
+  if (m1.variant !== 'M1' || facil.variant !== 'M2-facil' || dificil.variant !== 'M2-dificil') {
+    throw new Error(
+      `buildSatMock: variantes inválidas (${m1.variant}, ${facil.variant}, ${dificil.variant}). ` +
+      'El orden M1 → M2-facil → M2-dificil es parte del contrato de enrutado.',
+    )
+  }
+  if (!m1.items.length || !facil.items.length || !dificil.items.length) {
+    throw new Error('buildSatMock: ningún módulo adaptativo puede estar vacío.')
+  }
+  if (facil.items.length !== dificil.items.length) {
+    throw new Error(
+      `buildSatMock: las ramas de M2 tienen ${facil.items.length} y ${dificil.items.length} ítems. ` +
+      'El denominador del resultado no puede depender de la ruta.',
+    )
+  }
+  const dominiosFacil = cuentaDominios(facil)
+  const dominiosDificil = cuentaDominios(dificil)
+  if (dominiosFacil !== dominiosDificil) {
+    throw new Error(
+      `buildSatMock: las ramas de M2 no tienen el mismo reparto por dominio ` +
+      `(${dominiosFacil} frente a ${dominiosDificil}).`,
+    )
+  }
+}
+
 export function buildSatMock(args: {
   id: string
   title: string
@@ -114,6 +148,8 @@ export function buildSatMock(args: {
       'que hacer, y servirla a todo el mundo sería llamar «adaptativo» a un examen lineal.',
     )
   }
+
+  if (m2Facil && m2Dificil) validarModulosAdaptativos(m1, m2Facil, m2Dificil)
 
   const sections = [asSection(m1, 1, 'Módulo 1 — Reading and Writing')]
 

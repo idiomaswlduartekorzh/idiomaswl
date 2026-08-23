@@ -1,6 +1,6 @@
 # Motor adaptativo por etapas — cómo funciona, qué decide y dónde duele
 
-Estado a **22 de agosto de 2026**. Escrito para quien llegue sin contexto.
+Estado a **23 de agosto de 2026**. Escrito para quien llegue sin contexto.
 
 Este documento describe la **maquinaria**, no el contenido. El contenido de los módulos
 —los ítems, sus claves, sus distractores— vive en `docs/sat-ingles-blueprint.md` y lo
@@ -15,21 +15,20 @@ le sirve a quién**.
 |---|---|
 | Tipos del enrutado (`AdaptiveRouting`) | escritos |
 | Función de decisión (`routing.ts`) | escrita y probada en los 28 resultados posibles |
-| Constructor (`build-sat-mock.ts`) | escrito, con la regla «o las dos ramas o ninguna» |
-| Interfaz (`PracticeClient.tsx`) | escrita: corte entre módulos, cronómetro por módulo, resultados con la rama |
-| Guardián (`check-sat-adaptive.mjs`) | escrito, en `prebuild` |
+| Constructor (`build-sat-mock.ts`) | escrito; rechaza media adaptación, ramas vacías, variantes cambiadas y repartos no comparables |
+| Interfaz (`PracticeClient.tsx`) | escrita: corte irreversible, cronómetro y navegación por módulo, resultados con la rama |
+| Guardián (`check-sat-adaptive.mjs`) | escrito, en `prebuild`; prueba decisión, navegación y configuración |
 | Módulo 1 (`sat-set-1-m1`) | escrito y **auditado** (acta firmada) |
-| Módulo 2 estándar (`sat-set-1-m2-facil`) | escrito, **sin acta** → `check:sat` lo declara NO APTO |
+| Módulo 2 estándar (`sat-set-1-m2-facil`) | bloques escritos, **sin acta** y en cuarentena; no tiene manifiesto cargable |
 | Módulo 2 exigente (`sat-set-1-m2-dificil`) | **no existe** |
 | Simulacro publicado (`sat:set-1`) | **lineal, un módulo de 27 ítems** |
 
 Consecuencia que hay que tener delante todo el rato: **el camino adaptativo no se ejecuta
 hoy en producción**. `sat-set-1.ts` no pasa `m2Facil` ni `m2Dificil`, así que
-`mock.adaptive` es `undefined`, `routing` es `null` y `PracticeClient` se comporta como
-siempre. Todo lo que este documento describe del enrutado es **código escrito y no
-ejercitado por ningún estudiante**. Los defectos de la §7 son latentes: se despiertan el
-día que se escriba el M2 exigente y se cablee el set. Ninguno de ellos pondrá rojo un
-build.
+`mock.adaptive` es `undefined` y `PracticeClient` se comporta como siempre. El borrador
+completo del M2 estándar quedó respaldado en `origin/feat/sat-modulo-2`; en esta rama se
+conservan sus bloques y planes, pero se retiró el manifiesto que hacía fallar `prebuild`
+sin una auditoría independiente. No se bajó ninguna puerta ni se inventó un acta.
 
 ---
 
@@ -37,7 +36,7 @@ build.
 
 ```
 src/data/mocks/types.ts          → interface AdaptiveRouting  (el contrato)
-src/data/mocks/sat/routing.ts    → elegirRamaModulo2 / partesServidas  (la decisión)
+src/data/mocks/sat/routing.ts    → elegirRamaModulo2 / partesServidas / partesNavegables
 src/data/mocks/sat/build-sat-mock.ts → dónde se fija el corte y se arma el MockExam
 src/app/(site)/examenes/[exam]/practica/[mockId]/PracticeClient.tsx → quién lo ejecuta
 scripts/check-sat-adaptive.mjs   → el guardián, en prebuild
@@ -56,6 +55,7 @@ scripts/check-sat-adaptive.mjs   → el guardián, en prebuild
 ```ts
 elegirRamaModulo2(aciertos, routing) → aciertos >= routing.correctToRouteHigh ? 'high' : 'low'
 partesServidas(rama, routing)        → [routeAfterPart, rama === 'high' ? highPart : lowPart]
+partesNavegables(rama, routing)      → antes: [M1] · después: [solo la rama elegida]
 ```
 
 Están fuera del componente **a propósito**: dentro de React solo se comprueban abriendo un
@@ -66,28 +66,28 @@ componente «para simplificar», habrá simplificado quitando la única forma de
 **El constructor** compone un `MockExam` con **tres secciones escritas** —M1, M2 estándar,
 M2 exigente— y le cuelga el `adaptive`. Tres escritas, dos servidas.
 
-**La interfaz** filtra: `servedMock = {...mock, sections: mock.sections.filter(s =>
-servedParts.includes(s.part))}`. Todo lo que mide, pinta o guarda trabaja sobre
-`servedMock`. La rama que no le tocó al estudiante no existe para él: ni la ve, ni cuenta,
-ni sale en la revisión.
+**La interfaz** mantiene dos vistas distintas. `servedMock` contiene M1 y la rama elegida
+para puntuar, guardar y revisar. `stageMock` contiene únicamente el módulo todavía editable
+para preguntas, pestañas y navegación. Esa separación es la que permite conservar el
+resultado de M1 sin volver a abrirlo después del corte.
 
 ---
 
 ## 2. El recorrido, paso a paso
 
-1. **Intro.** `servedParts = [1]`. Solo hay un módulo servido.
+1. **Intro.** Presenta dos módulos y 54 preguntas sin enumerar las dos ramas internas.
 2. **Módulo 1.** 27 preguntas, 32 minutos, navegación libre dentro del módulo. El botón
    dice «Entregar módulo 1» en lugar de «Finalizar examen».
 3. **Entrega.** `finishStage()` es el único sitio que decide qué significa «he terminado»:
    si queda módulo por servir, enruta; si no, entrega. Lo llaman el botón del panel, el
    botón de la última pregunta y el cronómetro al expirar. Que sea uno solo es lo que
    impide que los tres se desincronicen.
-4. **Enrutado.** Se puntúa **solo** la parte `routeAfterPart` sobre el `mock` completo
-   (no sobre `servedMock`), se elige rama, se fija `servedParts = [1, rama]`.
+4. **Enrutado.** Se puntúa **solo** la parte `routeAfterPart`, se elige la rama y desde
+   ese estado se derivan las partes servidas `[M1, rama]` y navegables `[rama]`.
 5. **Corte entre módulos** (`phase: 'module-break'`). Pantalla que dice tres cosas: que ya
    no se puede volver, que el examen se adapta, y que **no se le dirá cuál le tocó ni
    cuántas acertó**. El cronómetro no corre aquí: el componente `Timer` está desmontado.
-6. **Módulo 2.** `currentIdx` salta a la primera pregunta del segundo módulo. El `Timer`
+6. **Módulo 2.** `currentIdx` vuelve a cero sobre las preguntas de la nueva etapa. El `Timer`
    se remonta —lleva `key={servedParts.length}`— con 32 minutos nuevos.
 7. **Resultados.** Aciertos brutos sobre el total servido, desglose por dominio con enlace
    a la guía de cada uno, y **ahí sí** se le dice qué rama hizo.
@@ -261,11 +261,16 @@ de «compila mal y el guardián dice que sí».
 
 ---
 
-## 7. Defectos abiertos
+## 7. Cierre de los defectos encontrados el 22 de agosto
 
-Ninguno está arreglado. Todos son latentes hasta que se cablee el M2 en el set.
+Los ocho defectos se conservaron aquí porque explican las regresiones que protege el
+guardián. D-1 a D-7 están cerrados en código; D-8 queda mitigado sin migración: la rama
+viaja en los campos que ya persisten y pintan ambos paneles.
 
-### D-1 · «Volver a intentar» no reinicia el enrutado — **grave**
+### D-1 · «Volver a intentar» no reinicia el enrutado — **RESUELTO**
+
+**Cierre (23 ago):** `handleRetry` limpia `routedTo`; las partes se derivan de ese estado
+y ya no pueden quedarse con una combinación de la ejecución anterior.
 
 `handleRetry` limpia `answers`, `flagged` y `currentIdx`, y **no toca `servedParts` ni
 `routedTo`**. Tras terminar un examen adaptativo, quien pulse reintentar recibe:
@@ -277,7 +282,10 @@ Ninguno está arreglado. Todos son latentes hasta que se cablee el M2 en el set.
 Arreglo: `setServedParts(routing ? [routing.routeAfterPart] : [])` y `setRoutedTo(null)`
 dentro de `handleRetry`.
 
-### D-2 · Las pestañas de sección delatan la rama — **grave, contradice lo que se promete**
+### D-2 · Las pestañas de sección delatan la rama — **RESUELTO**
+
+**Cierre (23 ago):** pestañas, panel y botones reciben `stageMock`/`stageQuestions`, que
+después del corte contienen solo M2 y lo rotulan como «Módulo 2», nunca «Parte 2/3».
 
 `<SectionTabs sections={mock.sections} .../>` recibe el mock **completo**, no `servedMock`.
 Efectos, todos en la misma línea:
@@ -293,7 +301,10 @@ Efectos, todos en la misma línea:
 
 Arreglo: pasar `servedMock.sections`, y bloquear el salto a partes ya entregadas.
 
-### D-3 · Los ítems de los dos módulos comparten `id` — **el peor**
+### D-3 · Los ítems de los dos módulos comparten `id` — **RESUELTO**
+
+**Cierre (22 ago):** el constructor prefija cada id con su parte (`p1-q01`, `p2-q01`, …)
+y el guardián comprueba unicidad sobre el set compuesto.
 
 `sat-set-1-m1` y `sat-set-1-m2-facil` numeran los ítems `q01`…`q27` **los dos**.
 `build-sat-mock` copia el ítem tal cual y solo le pone el `part`: no hay espacio de
@@ -324,14 +335,19 @@ Arreglo (elegir uno, y escribirlo en el blueprint):
 La primera es más robusta —no depende de que nadie se despiste— pero cambia los ids que ya
 aparecen en las actas de auditoría; la segunda no toca nada escrito. Decisión pendiente.
 
-### D-4 · Una parte enrutada que no existe deja pantalla en blanco
+### D-4 · Una parte enrutada que no existe deja pantalla en blanco — **RESUELTO**
+
+**Cierre (23 ago):** constructor y guardián rechazan partes vacías o inexistentes; la UI
+mantiene además una pantalla de recuperación si recibe una configuración rota.
 
 Si `lowPart`/`highPart` apuntan a una sección inexistente o vacía, `servedMock` se queda
 con una sección, `handleStartSecondModule` pone `currentIdx` fuera de rango y
 `QuestionView` recibe `question: undefined` sin ninguna guarda. Arreglo: validarlo en el
 guardián **y** poner una guarda en el componente.
 
-### D-5 · `handleNextSection` entrega el examen en vez de enrutar
+### D-5 · `handleNextSection` entrega el examen en vez de enrutar — **RESUELTO**
+
+**Cierre (23 ago):** el final de cualquier renderizador llama a `finishStage()`.
 
 `handleNextSection` termina en `handleSubmit()`, no en `finishStage()`. Hoy no es
 alcanzable en el SAT porque solo lo usan los renderizadores de sección en rejilla
@@ -339,13 +355,19 @@ alcanzable en el SAT porque solo lo usan los renderizadores de sección en rejil
 sección SAT lleve `sectionStyle`, pulsar «siguiente sección» al final del módulo 1 salta el
 enrutado y entrega el examen con 27 preguntas. Arreglo: llamar a `finishStage()`.
 
-### D-6 · Nada obliga a que las dos ramas midan lo mismo
+### D-6 · Nada obliga a que las dos ramas midan lo mismo — **RESUELTO**
+
+**Cierre (23 ago):** constructor y guardián exigen igual número de ítems, igual reparto
+por dominio y variantes `M2-facil`/`M2-dificil` en el lado correcto.
 
 Ni el tipo, ni el constructor, ni el guardián comprueban que M2-fácil y M2-difícil tengan
 el mismo número de ítems ni el mismo reparto por dominio. Si divergen, el bruto de dos
 estudiantes tiene denominadores distintos y el desglose por dominio deja de ser comparable.
 
-### D-7 · La pantalla de intro cuenta mal el examen adaptativo
+### D-7 · La pantalla de intro cuenta mal el examen adaptativo — **RESUELTO**
+
+**Cierre (23 ago):** la intro presenta dos módulos, la suma de M1 más una rama y 64
+minutos, sin listar ni nombrar las dos variantes internas.
 
 Muestra `mock.sections.length` = **3 partes** (cuando se hacen 2), lista las tres con sus
 títulos —«(estándar)» y «(exigente)», o sea que la existencia de las dos ramas se revela
@@ -353,10 +375,12 @@ antes de empezar— y enseña `27 preguntas` junto a `64 minutos`, dos cifras qu
 Además los consejos dicen «Puedes navegar entre preguntas libremente» sin mencionar que
 entre módulos no se vuelve.
 
-### D-8 · La rama no se guarda en ningún sitio
+### D-8 · La rama no se guarda en ningún sitio — **MITIGADO**
 
-Ver §3.6. `saveExamResult` y `saveLead` no llevan campo para la rama, así que el historial
-del estudiante y el panel comparan números que no son comparables.
+No se añadió una columna nueva a Supabase. La rama se incorpora a `total_label`, al título
+de la habilidad del M2 y a `examScore` del lead, tres campos ya persistidos y visibles. Así
+los paneles dejan de comparar intentos como si fueran equivalentes. Si análisis de datos
+necesita agrupar por rama sin parsear texto, tocará una migración separada y reversible.
 
 ---
 
@@ -416,13 +440,8 @@ contradice al código es peor que no tenerlo: alguien lo va a creer.
 
 ## 10. Resumen para quien tenga treinta segundos
 
-La decisión de enrutado está bien pensada, bien aislada y bien probada: 28 casos, frontera
-única, monotonía, y una regla explícita contra la media adaptación. **El problema no está
-en la decisión, está en todo lo que la rodea**: los ids repetidos entre módulos rompen la
-puntuación en silencio (D-3), las pestañas delatan la rama que se acaba de prometer no
-revelar y dejan volver al módulo 1 (D-2), reintentar deja el examen sin enrutado y con la
-mitad del tiempo (D-1), y el guardián da verde sobre un examen de laboratorio que no es el
-que se sirve.
-
-Nada de eso está encendido hoy, porque el simulacro publicado es lineal. Todo se enciende
-el día que exista el módulo 2 exigente.
+La decisión y sus límites están aislados y probados en los 28 resultados posibles. El
+constructor rechaza configuraciones incomparables; la interfaz separa lo servido de lo
+navegable; el guardián comprueba que M1 quede cerrado después del corte. El camino sigue
+apagado en producción por una razón editorial, no técnica: faltan el acta independiente
+del M2 estándar y todo el contenido del M2 exigente.

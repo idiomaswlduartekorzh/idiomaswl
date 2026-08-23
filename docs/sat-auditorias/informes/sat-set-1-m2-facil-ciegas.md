@@ -42,3 +42,16 @@ retirar el ítem, como se hizo con el `q10` original.
 del proyecto, donde está escrito que este examen se endureció contra el calcado a ciegas, y
 buscó las pistas que allí se mencionan. No le sirvió de nada —sacó un 15 %— pero es una vía
 de contaminación real: a partir de la sexta vuelta se les prohíbe expresamente.
+
+## Estado posterior a la vuelta 11 — 23 de agosto de 2026
+
+`q08` recibió un cuarto arreglo: la clave dejó de repetir cinco palabras consecutivas del
+texto y ahora tiene menos solape léxico que un distractor. Eso cierra el mecanismo concreto
+que explicaba su 9/10, pero **no equivale a una nueva prueba a ciegas**. No había en la
+máquina un modelo local independiente y quien hizo esta integración ya conocía la clave.
+
+Por esa razón no se añadió una vuelta 12, no se creó el acta del módulo y el manifiesto
+`sat-set-1-m2-facil.ts` quedó fuera de la rama de integración. El contenido completo sigue
+respaldado en `origin/feat/sat-modulo-2`. Para recuperarlo hacen falta diez solucionadores
+sin pasajes ni memoria del proyecto, consolidar el panel y repetir las demás auditorías
+sobre la forma exacta resultante.

@@ -164,17 +164,20 @@ El SAT reutiliza lo que ya existe; no se inventa un motor nuevo.
 - Ficha del examen: `src/data/exams.ts` → nueva entrada `sat` en `EXAMS`.
 - Módulos: `src/data/mocks/sat/sat-set-N-<variante>.ts`, con la forma `SatModule` de
   `src/data/mocks/sat/module-types.ts` (27 ítems + 27 metadatos emparejados por `id`).
-- Sets: se componen con `buildSatMock()` de `src/data/mocks/sat/build-sat-mock.ts` —
-  M1 + una variante de M2— y se registran en `MOCK_REGISTRY` de `src/data/mocks/index.ts`
-  con la clave `sat:<id>`.
-- El builder pone solo el `part` y el `stimulusStyle: 'passage'`; sin ese estilo un texto
-  de 150 palabras se pinta en monoespaciado y no hay quien lo lea.
+- Sets: se componen con `buildSatMock()` de `src/data/mocks/sat/build-sat-mock.ts`. Acepta
+  M1 solo, o M1 + **las dos** variantes de M2; una sola rama es un error. Se registran en
+  `MOCK_REGISTRY` de `src/data/mocks/index.ts` con la clave `sat:<id>`.
+- El builder fija `part`, prefija los ids por módulo, añade `stimulusStyle: 'passage'`,
+  conecta las explicaciones y declara la variante. También exige que las dos ramas tengan
+  igual número de ítems y reparto por dominio.
 - Ruta: `/examenes/sat/practica/[id]`, igual que IELTS y TOEFL.
 - El texto de cada ítem va en `stimulus`; la pregunta en `text`.
 
-Dos cosas que el motor actual **no** hace y hay que decidir antes de publicar:
-adaptatividad entre módulos, y conversión a escala 200–800. Mientras no existan, un set
-SAT es un simulacro lineal con puntaje bruto, y así hay que llamarlo en pantalla.
+El motor ya hace adaptatividad entre módulos con un corte de producto inclusivo de
+**16/27** —no es un dato publicado por College Board—. Lo que **no** hace es conversión a
+escala 200–800: esa tabla cambia por forma y no se inventa. La pantalla usa puntaje bruto,
+identifica la rama al terminar y advierte que dos brutos de ramas distintas no son
+directamente comparables.
 
 ## 4. Puertas de calidad
 

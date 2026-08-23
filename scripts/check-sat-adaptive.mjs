@@ -44,7 +44,7 @@ function loadTs(file) {
     for (const c of [b, `${b}.ts`, path.join(b, 'index.ts')]) {
       if (fs.existsSync(c) && fs.statSync(c).isFile()) return loadTs(c)
     }
-    return {}
+    throw new Error(`${path.basename(r)} importa «${spec}», pero no existe`)
   }
   const sb = { exports: {}, module: { exports: {} }, require: localRequire, console }
   sb.module.exports = sb.exports
@@ -63,6 +63,7 @@ try {
   ;({ buildSatMock } = loadTs('src/data/mocks/sat/build-sat-mock.ts'))
   ;({ satSet1M1: m1 } = loadTs('src/data/mocks/sat/sat-set-1-m1.ts'))
   var partesServidas = r.partesServidas
+  var partesNavegables = r.partesNavegables
 } catch (err) {
   console.error(`❌ No se pudo cargar el enrutado: ${err.message}`)
   process.exit(1)
@@ -85,14 +86,39 @@ if (lineal.timeMinutes !== 32) fail(`un módulo son 32 minutos, no ${lineal.time
 // aquí es la decisión, no el contenido— pero cada rama tiene que declarar la suya, o la
 // comprobación de «ramas intercambiadas» se dispara sobre el propio andamio.
 const comoRama = (mod, variant) => ({ ...mod, variant })
+const facilLaboratorio = comoRama(m1, 'M2-facil')
+const dificilLaboratorio = comoRama(m1, 'M2-dificil')
 const adap = buildSatMock({
   id: 'x', title: 't', subtitle: 's', m1,
-  m2Facil: comoRama(m1, 'M2-facil'),
-  m2Dificil: comoRama(m1, 'M2-dificil'),
+  m2Facil: facilLaboratorio,
+  m2Dificil: dificilLaboratorio,
 })
 if (!adap.adaptive) fail('con las dos ramas el examen no declara enrutado')
 if (adap.sections.length !== 3) fail(`deberían escribirse 3 partes, hay ${adap.sections.length}`)
 if (adap.timeMinutes !== 64) fail(`el estudiante hace 2 módulos: 64 minutos, no ${adap.timeMinutes}`)
+
+// El constructor rechaza configuraciones que volverían incomparables las dos rutas.
+const debeRechazar = (nombre, args) => {
+  try {
+    buildSatMock({ id: nombre, title: 't', subtitle: 's', m1, ...args })
+    fail(`buildSatMock acepta ${nombre}`)
+  } catch { /* era lo esperado */ }
+}
+debeRechazar('ramas con distinto número de ítems', {
+  m2Facil: facilLaboratorio,
+  m2Dificil: { ...dificilLaboratorio, items: dificilLaboratorio.items.slice(1), meta: dificilLaboratorio.meta.slice(1) },
+})
+debeRechazar('una rama fácil rotulada como difícil', {
+  m2Facil: comoRama(m1, 'M2-dificil'),
+  m2Dificil: dificilLaboratorio,
+})
+const metaDesbalanceada = dificilLaboratorio.meta.map((item, index) =>
+  index === 0 ? { ...item, domain: item.domain === 'CS' ? 'II' : 'CS' } : item,
+)
+debeRechazar('ramas con distinto reparto por dominio', {
+  m2Facil: facilLaboratorio,
+  m2Dificil: { ...dificilLaboratorio, meta: metaDesbalanceada },
+})
 
 // ── La decisión, con todos los resultados posibles ───────────────────────────
 if (adap.adaptive) {
@@ -112,6 +138,17 @@ if (adap.adaptive) {
     if (partes[0] !== R.routeAfterPart) fail(`con ${aciertos} aciertos la primera parte no es la de enrutado`)
     if (partes.includes(R.lowPart) && partes.includes(R.highPart)) {
       fail(`con ${aciertos} aciertos se sirven LAS DOS ramas del módulo 2`)
+    }
+    const antes = partesNavegables(null, R)
+    const despues = partesNavegables(rama, R)
+    if (antes.length !== 1 || antes[0] !== R.routeAfterPart) {
+      fail(`antes del corte se puede navegar por ${antes.join(', ')}; solo debe existir M1`)
+    }
+    if (despues.length !== 1 || despues[0] !== partes[1]) {
+      fail(`después del corte «${rama}» se puede navegar por ${despues.join(', ')}; solo debe existir la rama elegida`)
+    }
+    if (despues.includes(R.routeAfterPart)) {
+      fail(`después del corte «${rama}» todavía permite volver al módulo entregado`)
     }
   }
   // Una sola frontera: si hubiera dos, el enrutado no sería monótono y un estudiante
@@ -155,10 +192,22 @@ function cordura(mock, quien) {
     fail(`${quien}: las ramas miden ${baja.questions.length} y ${alta.questions.length} ítems — el denominador de la nota dependería de la rama`)
   }
 
+  const reparto = (sec) => {
+    const out = new Map()
+    for (const insight of Object.values(sec?.insights || {})) {
+      if (!insight?.domain) continue
+      out.set(insight.domain, (out.get(insight.domain) || 0) + 1)
+    }
+    return [...out.entries()].sort().map(([domain, n]) => `${domain}:${n}`).join('|')
+  }
+  if (baja && alta && reparto(baja) !== reparto(alta)) {
+    fail(`${quien}: las ramas no tienen el mismo reparto por dominio (${reparto(baja)} frente a ${reparto(alta)})`)
+  }
+
   // Ramas intercambiadas: al que va bien se le sirve la fácil y la pantalla le dice que
   // hizo la difícil. Solo se puede detectar desde que la sección declara su `variant`.
-  if (baja?.variant && baja.variant !== 'M2-facil') fail(`${quien}: lowPart sirve «${baja.variant}» — al que NO llega al corte se le da la rama equivocada`)
-  if (alta?.variant && alta.variant !== 'M2-dificil') fail(`${quien}: highPart sirve «${alta.variant}» — al que SÍ llega al corte se le da la rama equivocada`)
+  if (baja?.variant !== 'M2-facil') fail(`${quien}: lowPart sirve «${baja?.variant ?? 'sin variante'}» — al que NO llega al corte se le da la rama equivocada`)
+  if (alta?.variant !== 'M2-dificil') fail(`${quien}: highPart sirve «${alta?.variant ?? 'sin variante'}» — al que SÍ llega al corte se le da la rama equivocada`)
 
   // Ids repetidos entre módulos: el motor guarda las respuestas indexadas por id, así que
   // dos ítems con el mismo nombre son el mismo casillero. Contestar el módulo 1 rellenaba
