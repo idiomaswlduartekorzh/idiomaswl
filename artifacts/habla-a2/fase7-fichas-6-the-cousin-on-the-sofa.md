@@ -198,7 +198,7 @@ Blocks **2**, **3** `[receives]`, **4** `[jargon]` — *lease*, *drop*, *unload*
 | leaving something for later | `Let's leave [what] for…` | you park one thing on a day, instead of losing it |
 | saying yes to the cousin | `I'm not saying no, but…` | you say yes to the cousin and you put your own thing in the same sentence |
 | taking it back | `That's not true anymore.` | you break a fact you put on the table yourself |
-| the lease, last | `My mom is arriving on…` · `And one more thing: the lease, before…` | your second thing as a closed plan — and the marker with the third one already inside it |
+| the name on the lease | `My mom is arriving on…` · `And one more thing: the lease, before…` | the second ask, as a closed plan with a date on it |
 | the reason, if they ask | `The wifi drops next to…` | why the living room and not your room — all of it |
 | what you still don't know | `How many nights?` · `What's he going to do all day?` | first the number, then the fact that decides your Monday |
 

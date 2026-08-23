@@ -40,14 +40,14 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 > **Informal.** Same rank, same shifts, you see each other every day. **You start.** About 7 turns each · 7 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are in the back room. The machine is off, and Nayibe is at the other café. You waited half an hour for the right moment, and Saturday is in four days.
+**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are in the back room. The machine is off, and Aníbal is at the other café. You waited half an hour for the right moment, and Saturday is in four days.
 
 **You want** · You need someone to open on Saturday the 12th, and the message has to go to the café group today.
 
 **You can't**
-1. You can't offer money. Nayibe said in front of everybody that nobody pays for a shift here.
+1. You can't offer money. Aníbal said in front of everybody that nobody pays for a shift here.
 2. You can't ask for the whole Saturday. You have to offer two ways to split the shift before they say yes.
-3. You can't call Nayibe now, because she is at the Autopista café until six.
+3. You can't call Aníbal now, because he is at the Autopista café until six.
 
 **Only you know**
 - You already asked Katherine and Elkin, and both said no. This person is your last option, and if they learn that, the favor will cost you more.
@@ -114,17 +114,17 @@ an hour. Nobody knows about Katherine and Elkin.
 > **Informal.** Same rank, same shifts, you see each other every day. **They start.** About 7 turns each · 7 minutes.
 > **Your screen only.** Don't show it. Don't read from it.
 
-**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are tying your apron in the back room. Your shift starts in twenty minutes, and Nayibe is at the other café until six.
+**Where you are** · It is Tuesday, 3:40 in the afternoon, and you are tying your apron in the back room. Your shift starts in twenty minutes, and Aníbal is at the other café until six.
 
 **You want** · You want to help. But you don't want to work sixteen hours, and this can't be your third swap.
 
 **You can't**
-1. You can't say yes to anything Nayibe can count as swap number three. You have one condition and you never change it: today they have to ask you for it in the café group, in writing.
+1. You can't say yes to anything Aníbal can count as swap number three. You have one condition and you never change it: today they have to ask you for it in the café group, in writing.
 2. You can't stay after 8:00 p.m. on Saturday. Your bus to San Gil leaves at 5:00 on Sunday morning and you already paid for it.
 
 **Only you know**
 - You read in the group on Friday that forty people are coming for a company breakfast at nine on Saturday the 12th. That opening is the worst shift of the month, and they don't know it — they joined the group late.
-- You already swapped twice this month. Nayibe said in front of everybody that the third one puts you on the backup list, with no more fixed weekends. Your fixed weekends are the days that pay you in tips.
+- You already swapped twice this month. Aníbal said in front of everybody that the third one puts you on the backup list, with no more fixed weekends. Your fixed weekends are the days that pay you in tips.
 - You work a wedding for sixty people on Saturday the 19th. You can say this one out loud: it is just numbers.
 
 **If you walk away with nothing** · You work with this person every day, and you are going to need exactly this favor next month.
@@ -138,7 +138,7 @@ an hour. Nobody knows about Katherine and Elkin.
 | That day | a reservation for forty people at 9:00 a.m. — a company breakfast |
 | Announced | in the café group, on Friday |
 | Your swaps this month | two: the 28th and the 4th |
-| What Nayibe said | third swap → the backup list, no more fixed weekends |
+| What Aníbal said | third swap → the backup list, no more fixed weekends |
 | Your Sunday | bus at 5:00 a.m. to San Gil · ticket paid |
 | Your limit | nothing after 8:00 p.m. on Saturday |
 | A normal Saturday | about 45,000 pesos in tips |
@@ -210,13 +210,20 @@ dónde ir.
 
 ## Both screens — how it ends
 
-**Today a message goes to the café group. You finish when the two of you say it out loud, together:**
+**Today a message goes to the café group. You finish when the two of you have said all five out
+loud. Nobody says the other person's points.**
 
-1. Who opens on Saturday the 12th, and at what time.
-2. How long that person stays, and who comes in after.
-3. Which shift pays the favor back, and on what exact day.
-4. Who asked for the swap — the name, in the message.
-5. What's still open, who fixes it, and before what time today.
+**A's screen · your two:** who opens on Saturday the 12th, and at what time · which shift pays the
+favor back, and on what exact day.
+
+**B's screen · your two:** how long that person stays, and who comes in after — it is your 8:00
+limit · the name that goes written in the message, which is your one condition.
+
+**Together, once:** what's still open, who fixes it, and before what time today.
+
+**Two rules:**
+- Say the other one's point and it doesn't count — they say it again.
+- Saying yes is not a point. *Yeah*, *sure*, *okay*, *fine* and *that works* close nothing.
 
 **Five points, or it isn't closed.** It closes **partial**. That is the plan.
 
@@ -266,7 +273,7 @@ Medido después con el contador canónico: ROLE A **436**, ROLE B **443**, techo
 | 2 | B · `Only you know` 2, oración 3 | `The fixed weekends are the days with tips.` → `Your fixed weekends are the days that pay you in tips.` | calcable 2 |
 | 3 | B · `Only you know` 3, oración 1 | `On Saturday the 19th there is a wedding …` → `You work a wedding for sixty people on Saturday the 19th.` | calcable 3 |
 | 4 | B · `Only you know` 3, oración 2 | `it is not a condition, it is arithmetic` → `it is just numbers` | nivel R4 |
-| 5 | B · `Where you are`, oraciones 2 y 3 | fundidas: `…, with Nayibe at the other café until six.` (fuera la aposición `the manager`) · **la oración 1 se les unió después, en la fila 25** | calcable 4 |
+| 5 | B · `Where you are`, oraciones 2 y 3 | fundidas: `…, with Aníbal at the other café until six.` (fuera la aposición `the manager`) · **la oración 1 se les unió después, en la fila 25** | calcable 4 |
 | 6 | A · `You can't` 1 | dos oraciones fundidas con `because …that…` | calcable 5 |
 | 7 | A · `You can't` 3 | dos oraciones fundidas con `because` | calcable 6 |
 | 8 | A · vocabulario, fila `non-refundable`, col. `what it is` | `you pay it and nobody gives it back` → `money you pay and never get back` | calcable 7 |
@@ -315,11 +322,11 @@ grammarReferences: [
   { slug: 'present-continuous-future-a2', level: 'a2', title: 'Present Continuous para el futuro en Inglés A2: planes concretos',
     rationale: 'El plan fijo de A es un presente continuo con expresión de tiempo, que el tema declara esencial: "I\'m taking the IELTS on Saturday the 12th". Y la interrogativa del propio tema ("Are you working next Saturday?") es la que sostiene el exponente con que A abre por el lado del otro: "What are you doing on Saturday?".' },
   { slug: 'past-simple-irregular', level: 'a2', title: 'Past Simple Verbos Irregulares en Inglés A2',
-    rationale: 'Los cuatro verbos que cargan el pasado del escenario son irregulares: paid ("I paid more than a million pesos"), did ("I did two swaps this month"), said ("Nayibe said the third swap puts me on the backup list") y el del punto 4 del cierre: "I asked you for the swap" — que solo es decible en activa.' },
+    rationale: 'Los cuatro verbos que cargan el pasado del escenario son irregulares: paid ("I paid more than a million pesos"), did ("I did two swaps this month"), said ("Aníbal said the third swap puts me on the backup list") y el del punto 4 del cierre: "I asked you for the swap" — que solo es decible en activa.' },
   { slug: 'past-simple-questions', level: 'a2', title: 'Preguntas y Negativos en Past Simple A2',
     rationale: 'La pregunta que A no puede contestar y que su propia ficha le anuncia —"Who else did you ask?"— es past simple directo, con did y sin inversión rara. Es la razón de ser del bloque 6 de la caja.' },
   { slug: 'present-perfect-ever-never', level: 'a2', title: 'Present Perfect con Ever, Never, Already y Yet',
-    rationale: 'Lo que queda pendiente —el punto 5 del cierre— se dice con already y yet: "I haven\'t talked to Nayibe yet", "Have you already written it in the group?". Es present perfect de experiencia y de balance, sin for ni since: la duración se queda fuera de A2.' },
+    rationale: 'Lo que queda pendiente —el punto 5 del cierre— se dice con already y yet: "I haven\'t talked to Aníbal yet", "Have you already written it in the group?". Es present perfect de experiencia y de balance, sin for ni since: la duración se queda fuera de A2.' },
   { slug: 'quantifiers', level: 'a2', title: 'Cuantificadores en Inglés A2',
     rationale: 'El tamaño del favor se discute contando: "How many people are coming?" — "Forty", "There aren\'t many people on Saturday morning", "I don\'t have much time", "a lot of tips". El escenario entero se juega en cuántos, y sin estos el estudiante dice números sueltos sin marco.' },
   { slug: 'comparatives', level: 'a2', title: 'Comparativos en Inglés A2',
@@ -327,7 +334,7 @@ grammarReferences: [
   { slug: 'connectors-a2', level: 'a2', title: 'Conectores en Inglés A2: because, so, although, however, but',
     rationale: 'La columna vertebral de dar razones, que es el acto A2 del escenario: "I want to help, but sixteen hours is too much", "my bus leaves at five, so I can\'t stay after eight", "because there\'s no new date". El but es además lo que sujeta el exponente de concesión de B.' },
   { slug: 'relative-clauses-a2', level: 'a2', title: 'Cláusulas de relativo en Inglés A2: who, which, that',
-    rationale: 'Sostiene lo que se dice y lo que se lee. Se dice: "the person who opens", "the shift that pays it back", "the days that pay me in tips". Y se lee: la ficha usa dos relativas de contacto ("the money you paid for it", "anything Nayibe can call swap number three") y este tema es el que enseña que el relativo se omite cuando es objeto.' },
+    rationale: 'Sostiene lo que se dice y lo que se lee. Se dice: "the person who opens", "the shift that pays it back", "the days that pay me in tips". Y se lee: la ficha usa dos relativas de contacto ("the money you paid for it", "anything Aníbal can call swap number three") y este tema es el que enseña que el relativo se omite cuando es objeto.' },
   { slug: 'superlatives', level: 'a2', title: 'Superlativos en Inglés A2',
     rationale: 'La carta grande de B es un superlativo: "That is the worst shift of the month". Es la frase que cambia el tamaño del favor, y sin el tema se dice "that shift is very bad", que no obliga a A a mover nada.' },
   { slug: 'can-ability', level: 'a1', title: 'Can para habilidad en inglés A1',
@@ -360,8 +367,32 @@ un arreglo. De ahí que este bloque se escriba aquí y no solo en el informe.
 | grupo | qué se arregló |
 |---|---|
 | **N1-N5** | cinco pasivas: la regresión del punto 4, una pasiva con `get` en el punto 3 que **nunca miró nadie**, el objeto desplazado de la entradilla del cierre, la de la línea del objetivo de A y la de `You can't` 2 de B |
-| **R1-R2** | las dos oraciones fundidas por calcabilidad. La de B eran 31 palabras con dos absolutas con `with`; la de A tenía `the other one` sin antecedente claro —el más cercano era `the machine`, así que se leía «Nayibe en la otra máquina», que contradice su propia restricción 3. Fallo de comprensión, no de estilo |
+| **R1-R2** | las dos oraciones fundidas por calcabilidad. La de B eran 31 palabras con dos absolutas con `with`; la de A tenía `the other one` sin antecedente claro —el más cercano era `the machine`, así que se leía «Aníbal en la otra máquina», que contradice su propia restricción 3. Fallo de comprensión, no de estilo |
 | **R3** | **la condición de B, la pieza que decide el desenlace**, obligaba a una completiva de reporte (`the café group says that they asked you for it`) que solo existe en B1. Reescrita, el turno hablado sale entero con primer condicional: `I can do it, but only if you ask me in the group today.` |
 | **R4-R16** | trece renglones más: fragmento sin verbo, posesivos pronominales sin tema (`theirs`, `yours`, `nobody else's`), condicional cero donde el tema ancla enseña `will`, pseudo-hendida, `by` de plazo, y **el modismo `put … on the table` que la ronda anterior sacó de la restricción y sobrevivió en el criterio que comprueba esa misma restricción** |
 | **T1** | ROLE A no tenía el bloque 3 `[receives]`, y el vocabulario de B trae cuatro palabras que A nunca ve glosadas y B le va a decir. El argot va en las dos direcciones. **El escenario 1 sí se lo da a los dos roles: el molde era el que se salía**, y el molde es el que se copia |
 | **V1-V4** | `stock count` → `inventory` (británico, y además cognado de *inventario*), `back-up` → `backup`, `Saturday 12` → `Saturday the 12th`. Y en la **caja común**, que leen los dieciséis roles: `the other way round` → `the other way around` |
+
+---
+
+## Pasada de conjunto (23 ago 2026) — `fase13-conjunto.md` GRAVE 1 y MEDIO 5
+
+**El molde era el único de los ocho que fallaba la puerta 5** (carga 35,8 % en la pareja
+sólido+sólido), y el arreglo llevaba un día escrito y costeado en `fase12-carga.md` §4 sin aplicar.
+Que fallara **el archivo que sirve de molde a los otros siete** es lo que lo pone primero.
+
+**Los cinco puntos del cierre se reparten:** A los puntos 1 y 3 —quién abre el sábado 12 y a qué
+hora, qué turno devuelve el favor y qué día exacto—; B los puntos 2 y 4 —cuánto se queda y quién
+entra después, que es su límite de las 8:00, y el nombre escrito en el mensaje, que es su única
+condición—; el 5 juntos. Con las dos reglas que el resto del set ya tiene: no repetir la línea del
+otro, y que asentir no cierra nada.
+
+No se le pone el protocolo de «tres cada uno» de los escenarios 4, 6 y 7: cuesta +190 palabras de
+lectura y no hace falta. Este cuesta **+38 en el bloque compartido y 0 contra el techo de prosa**,
+porque el contador solo mide de `## ROLE A`/`## ROLE B` a la siguiente cabecera de nivel 2.
+
+**Y `Nayibe` pasa a `Aníbal`** (MEDIO 5): quien decide **fuera de escena** era mujer en 5 de 7
+escenarios, y mandaba la carta en 5 de 7 — la columna exacta sobre la que avisa §5 del blueprint.
+Esta es la sustitución más barata de las cinco: el personaje no está en escena, no tiene pantalla, y
+sus 12 apariciones son sustitución 1:1 en prosa y datos. Con **una sola** la columna queda 4 M / 3 H
+= 57/43, dentro de banda. **No se cambian dos ni tres: se caería al otro lado.**

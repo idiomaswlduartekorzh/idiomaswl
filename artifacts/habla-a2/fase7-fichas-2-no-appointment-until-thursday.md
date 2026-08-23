@@ -56,7 +56,7 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 | Saturday 12 | 9:00 a.m. free · only for patients who came here before · yours to hold |
 | The plan | full treatment paid · in this clinic only |
 | Dr. Restrepo | out at 6:30 p.m. · in writing only, never a call · late on Monday · a broken tooth, never a no from her |
-| Reminders | a text the day before · only with the right number · in the file now: 310 218 44 71, maybe not theirs |
+| Reminders | a text the day before · only with the right number · in the file now: 310 218 44 71, taken here by phone in March |
 | For tonight | something cold on the face, 10 minutes · no chewing on that side (**to chew** = to break food with your teeth) · soft food · no hot drinks, no cold drinks |
 | When it can't wait | pain moving to the ear or the eye → hospital emergency room, tonight |
 
