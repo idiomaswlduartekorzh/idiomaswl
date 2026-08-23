@@ -71,7 +71,7 @@ import type { SatItemMeta } from '../module-types'
  *
  * Los tres distractores de cada ítem son ahora **falsos dentro del cuaderno**, no
  * verdaderos-pero-ajenos. Por eso las dos situaciones son inventadas y llevan nombre propio
- * —los valles Ferrin, el pueblo de Brantwood—: una afirmación falsa sobre un lugar que no
+ * —los valles Ferrin, el pueblo de Marnec—: una afirmación falsa sobre un lugar que no
  * existe no enseña ningún hecho falso del mundo, y las tres causas descartadas son cosas
  * que en la historia real ocurrieron en otros sitios (la compañía que aprieta, el concejo
  * que cambia, el telégrafo que reparte la hora).
@@ -610,6 +610,65 @@ import type { SatItemMeta } from '../module-types'
  * texto o cambian las opciones, y aquí no ha cambiado ninguna de las dos cosas en ninguno de los
  * cinco. Lo mismo valió para `q25` y `q26` cuando se intercambiaron en la primera pasada: solo
  * cambiaron de sitio.
+ *
+ * ## Recorte de opciones de q23 y q24 (23 ago 2026): la grasa estaba en la estructura repetida
+ *
+ * La simulación de estudiantes midió lo que no había medido nadie: **el módulo no cabe en sus 32
+ * minutos**. 4.876 palabras para 32 minutos, y un B2 sólido necesita 43,6. q23 y q24 eran dos de
+ * los cinco ítems más caros —271 y 285 palabras, 2,4 y 2,6 minutos— y van en los puestos 23 y 24
+ * de 27, o sea donde ya no queda reloj. Los cuadernos ya se recortaron dos veces (seis viñetas →
+ * cinco → cuatro), así que esta vez se toca **el juego de opciones**, que es donde queda grasa:
+ * las cuatro opciones de cada ítem comparten estructura y arrastraban la misma cola.
+ *
+ * - **q24 · la cola compartida.** Tres de las cuatro terminaban en «the council gave up in 1851
+ *   the local time it had voted to keep in 1848» (19 palabras) y la cuarta en una variante suya.
+ *   El enunciado ya dice «reversed its 1848 vote», así que la cola no aportaba nada: queda «the
+ *   council gave up local time in 1851» (8 palabras) e idéntica en las cuatro. 663 → 534
+ *   caracteres.
+ * - **q23 · las colas propias.** Cada opción arrastraba una coda que repetía su propia premisa:
+ *   «a whistle worn thin on the way», «what is whistled», «without having learned the signal for
+ *   it», «about matters that». Se cortan las cuatro. 611 → 537 caracteres.
+ *
+ * **Total del recorte: 203 caracteres, 42 palabras, 33,8 palabras-SAT** entre los dos ítems.
+ * Ninguna nota, ninguna clave y ninguna razón de muerte se movió: A de q23 sigue cayendo por la
+ * nota 2 (una frase silbada se distingue a cinco kilómetros), B por la nota 1 (los adultos que se
+ * instalan allí siguen los mensajes en una temporada), C por la nota 1 (el silbo no es un código
+ * de señales fijas); en q24, B por la nota 1, C por la nota 2 y D por la nota 4.
+ *
+ * ### Y en q24, un escape de medición: la clave repetía la última línea del cuaderno
+ *
+ * La nota 3 decía «petitions from travelers who had reached the platform after their train had
+ * left» y la clave decía «travelers… reaching the platform to find their train already gone». Se
+ * contestaba emparejando palabras, sin leer nada más. La clave dice ahora lo mismo con otras:
+ * «dozens of people in the town kept missing departures at the station and said so in writing».
+ * De la nota 3 solo sobrevive «dozens», que es un cuantificador y no lleva a ninguna parte: hay
+ * que saber que una petición es decir algo por escrito y que llegar al andén con el tren fuera es
+ * perder la salida. **La clave no se movió: sigue siendo A**, y la proposición es la misma —no se
+ * añade ninguna causa que el cuaderno no tenga; en particular, la clave sigue sin afirmar que
+ * fueran los relojes del pueblo los que hacían perder el tren, que es un eslabón que las notas no
+ * escriben—.
+ *
+ * En C se cambió «new members» por «rivals» por la puerta 3, no por sentido: con la cola corta,
+ * los solapes quedaban 8 · 9 · 8 · 9 y la clave empataba en el mínimo. Con «rivals» quedan 8 · 9
+ * · 7 · 9. La razón de C no cambia —los once de 1847 siguieron sin elección hasta 1853—.
+ *
+ * **Puertas medidas sobre el juego nuevo, no estimadas:**
+ *
+ * - **2 longitud de la clave**: q24 → 139 · 139 · 122 · 134 (la clave empata con B en el máximo,
+ *   así que no es la más larga en solitario y la puerta no la cuenta); q23 → 129 · 136 · 136 ·
+ *   136 (la clave empata con B y C). Ninguna de las dos es la más corta.
+ * - **3 solape léxico**: q24 → clave 8 contra 9, 7 y 9; q23 → clave 7 contra 8, 5 y 4. En los dos
+ *   queda estrictamente entre el máximo y el mínimo, por las dos caras, y el fallo duro (clave −
+ *   mejor distractor ≥ 3) está a −1 en ambos.
+ * - **7 longitud del texto**: sin tocar. El recorte es de opciones, y la puerta 7 mide el
+ *   `stimulus`.
+ * - **12 variedad temática**: sin tocar.
+ *
+ * Esto **caduca dos cifras de la cuarta pasada**, más arriba en esta cabecera: donde dice «q23:
+ * 157 · 150 · 149 · 155 caracteres; q24: 165 · 168 · 163 · 167» y «en q23 la clave repite 8
+ * palabras del texto contra 9, 6 y 4… y en q24 repite 11 contra 11, 10 y 12», valen las cifras de
+ * esta pasada. Y **por R2, q23 y q24 vuelven a la cola de auditoría**: cambiaron las opciones, y
+ * la prueba a ciegas hay que repetirla sobre los dos.
  */
 
 export const items: MCQQuestion[] = [
@@ -618,13 +677,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "While researching a topic, a student has taken the following notes:\n\n• Until the 1840s every town set its clocks by local noon. The railway company printed one timetable for the whole line and kept the capital's time at every station; it asked nothing of the towns' clocks and made no stop depend on them.\n• In 1848 the council of Brantwood voted to keep local time on the town's clocks; the eleven men elected in 1847 sat on with no new election until 1853.\n• In 1851 the same council reversed the vote; its minutes record dozens of petitions from travelers who had reached the platform after their train had left.\n• The telegraph reached the district in 1858, seven years after the reversal.",
-    text: 'The student wants to explain why the council of Brantwood reversed its 1848 vote. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
+      "While researching a topic, a student has taken the following notes:\n\n• Until the 1840s every town set its clocks by local noon. The railway company printed one timetable for the whole line and kept the capital's time at every station; it asked nothing of the towns' clocks and made no stop depend on them.\n• In 1848 the council of Marnec voted to keep local time on the town's clocks; the eleven men elected in 1847 sat on with no new election until 1853.\n• In 1851 the same council reversed the vote; its minutes record dozens of petitions from travelers who had reached the platform after their train had left.\n• The telegraph reached the district in 1858, seven years after the reversal.",
+    text: 'The student wants to explain why the council of Marnec reversed its 1848 vote. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
-      'Because travelers from the town were reaching the platform to find their train already gone, the council gave up in 1851 the local time it had voted to keep in 1848.',
-      'Because the railway company had warned that its trains would stop only where its own time was kept, the council gave up in 1851 the local time it had voted for in 1848.',
-      'Because the men who carried the 1848 vote lost their seats to new members at the polls, the council that sat in 1851 gave up the local time those men had defended.',
-      "Because a telegraph line had begun to bring the capital's time into the district each morning, the council gave up in 1851 the local time it had voted to keep in 1848.",
+      'Because dozens of people in the town kept missing departures at the station and said so in writing, the council gave up local time in 1851.',
+      'Because the railway company had warned that its trains would stop only where its own time was kept, the council gave up local time in 1851.',
+      'Because the men who carried the 1848 vote lost their seats to rivals at the polls, the council gave up local time in 1851.',
+      "Because a telegraph line had begun to bring the capital's time into the district each morning, the council gave up local time in 1851.",
     ],
     answer: 0,
   },
@@ -636,10 +695,10 @@ export const items: MCQQuestion[] = [
       "While researching a topic, a student has taken the following notes:\n\n• In the Ferrin valleys herders whistle the words of the language spoken there; the whistle carries their vowels and consonants, not a code of fixed signals. Children take whistling at school half an hour a week, and adults who settle there follow whistled messages within a season.\n• A whistled sentence is made out five kilometers off, across a valley or over a ridge; a shout fades in a few hundred meters.\n• Many words come out as the same whistle, and herders settle an unclear one by what the day's work makes likely.\n• In a test there, herders who had whistled all their lives missed sentences about matters nobody whistles about, though every word was ordinary.",
     text: 'The student wants to explain why some listeners cannot understand a whistled message. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
     options: [
-      'Because a whistled sentence has to cross a whole valley or a ridge to arrive, a listener five kilometers off makes nothing of a whistle worn thin on the way.',
-      'Because whistling is acquired in childhood with the spoken language, a listener who came to the valleys as an adult makes nothing of what is whistled.',
-      'Because a whistled message keeps the melody of a sentence and not its words, a listener makes nothing of it without having learned the signal for it.',
-      "Because many words of the language sound alike once whistled, a listener makes nothing of a message about matters that the day's work does not make likely.",
+      'Because a whistled sentence has to cross a whole valley or a ridge to arrive, a listener five kilometers off makes nothing of it.',
+      'Because whistling is acquired in childhood with the spoken language, a listener who came to the valleys as an adult makes nothing of it.',
+      'Because a whistled message keeps the melody of a sentence and not its words, a listener makes nothing of it without learning its signal.',
+      "Because many words of the language sound alike once whistled, a listener makes nothing of a message the day's work does not make likely.",
     ],
     answer: 3,
   },
@@ -699,16 +758,16 @@ export const meta: SatItemMeta[] = [
     tema: 'historia',
     razones: {
       A:
-        'Correcta: es la única causa que el cuaderno sitúa entre los dos votos. Las actas de la sesión de 1851 recogen decenas de peticiones de viajeros que llegaron al andén con el tren ya salido (nota 3): la presión existe, es anterior a la revocación y sale del propio pueblo. Las otras tres son motivos igual de razonables para que un concejo se desdiga, y las notas los desmienten uno a uno.',
+        'Correcta: es la única causa que el cuaderno sitúa entre los dos votos. Las actas de la sesión de 1851 recogen decenas de peticiones de viajeros que llegaron al andén con el tren ya salido (nota 3): la presión existe, es anterior a la revocación y sale del propio pueblo. La opción dice eso mismo sin ninguna de esas palabras —gente del pueblo que pierde salidas en la estación y lo pone por escrito—, de modo que no se llega a ella emparejando: hay que saber que una petición es decir algo por escrito y que llegar al andén con el tren fuera es perder la salida. Las otras tres son motivos igual de razonables para que un concejo se desdiga, y las notas los desmienten uno a uno.',
       B:
         'Falsa por la nota 1: la compañía imprimía un solo horario con la hora de la capital, no pedía nada a los relojes de los pueblos y no hacía depender de ellos ninguna parada. Es el motivo que primero se le ocurre a cualquiera —el fuerte aprieta al débil— y por eso se lleva los votos de quien razona con el mundo en lugar de con el cuaderno. En las notas no hay ninguna amenaza de la compañía.',
       C:
-        'Falsa por las notas 2 y 3: los once hombres elegidos en 1847 siguieron en el cargo sin elección nueva hasta 1853, y quien revoca en 1851 es «el mismo concejo». Es el camino de quien explica un cambio de voto por un cambio de votantes, que es como se deshacen la mayoría de los acuerdos municipales. Aquí no cambió nadie: cambiaron de opinión los mismos once.',
+        'Falsa por las notas 2 y 3: los once hombres elegidos en 1847 siguieron en el cargo sin elección nueva hasta 1853, y quien revoca en 1851 es «el mismo concejo»: no hubo urnas por medio, ni rivales que les quitaran el escaño. Es el camino de quien explica un cambio de voto por un cambio de votantes, que es como se deshacen la mayoría de los acuerdos municipales. Aquí no cambió nadie: cambiaron de opinión los mismos once.',
       D:
         'Falsa por la nota 4: el telégrafo llegó al distrito en 1858, siete años después de la revocación. Es el camino de quien sabe cómo acabó la historia de la hora única —señal horaria repartida por telégrafo— y la adelanta hasta la fecha que le hace falta. Con las notas delante, para descartarla basta mirar el año, y esa nota dice ella sola cuántos años sobran.',
     },
     fuenteHecho:
-      'Patrón histórico libre: hora local por mediodía solar en cada población, horarios de ferrocarril impuestos desde una sola ciudad y señal horaria por telégrafo, que en la vida real llegó más tarde. Brantwood, el distrito, las fechas y las cifras son inventados. Los tres distractores atribuyen a ese pueblo inventado motivos que en otros sitios sí se dieron —la presión de la compañía, el relevo del concejo, el telégrafo—, de modo que ninguno enseña un hecho falso. El 22 ago 2026 el cuaderno pasó de cinco viñetas a cuatro: la nota de contexto —«Until the 1840s every town set its clocks by local noon»—, que no mata a ningún distractor ni sostiene la clave, deja de ser viñeta y entra como primera oración de la del ferrocarril. Ni una palabra se quitó y ningún distractor cambió de asesino; primero se probó a borrarla y se deshizo, porque sin ella el cuaderno perdía la única aparición de «town» a secas (solo quedaban las formas con genitivo, que para el guardián son otros tokens) y la clave caía de 11 a 10 palabras repetidas del texto, empatada en el mínimo con C. La puerta 3 se mide por las dos caras y esa cara estaba en 0.',
+      'Patrón histórico libre: hora local por mediodía solar en cada población, horarios de ferrocarril impuestos desde una sola ciudad y señal horaria por telégrafo, que en la vida real llegó más tarde. Marnec, el distrito, las fechas y las cifras son inventados. **El nombre cambió el 23 ago 2026 y el porqué importa:** el pueblo se llamaba «Brantwood», que es la casa real de John Ruskin en Cumbria, hoy museo abierto al público. Era el único topónimo del módulo que corresponde a un lugar real ajeno a la ficción, y el ítem le atribuye a ese lugar un concejo, dos votaciones y un ferrocarril que no existieron: el módulo entero está construido sobre la regla contraria —los distractores son falsos **dentro del cuaderno**, sobre sitios que no existen, para que ninguno enseñe un hecho falso del mundo— y este nombre la rompía. «Marnec» se comprobó en buscador antes de fijarlo: no aparece como localidad, ni como casa, ni como accidente geográfico en ningún país, y no está a una letra de ninguno (se descartaron por eso «Halverton», a una letra de Halberton en Devon, y «Marlbeck», que es una mina real en County Durham). Quien lo vuelva a cambiar, que repita la búsqueda. El nombre no aparece en ninguna opción, solo en el cuaderno y en el enunciado, de modo que ni las longitudes ni el solape léxico se mueven; el registro es el mismo de los demás inventados del módulo (Aldrec, Valmar, Trestona, los valles Ferrin). Los tres distractores atribuyen a ese pueblo inventado motivos que en otros sitios sí se dieron —la presión de la compañía, el relevo del concejo, el telégrafo—, de modo que ninguno enseña un hecho falso. El 22 ago 2026 el cuaderno pasó de cinco viñetas a cuatro: la nota de contexto —«Until the 1840s every town set its clocks by local noon»—, que no mata a ningún distractor ni sostiene la clave, deja de ser viñeta y entra como primera oración de la del ferrocarril. Ni una palabra se quitó y ningún distractor cambió de asesino; primero se probó a borrarla y se deshizo, porque sin ella el cuaderno perdía la única aparición de «town» a secas (solo quedaban las formas con genitivo, que para el guardián son otros tokens) y la clave caía de 11 a 10 palabras repetidas del texto, empatada en el mínimo con C. La puerta 3 se mide por las dos caras y esa cara estaba en 0. **Actualización del 23 ago 2026**: con las opciones recortadas y la clave reescrita para que no repita la última viñeta, las cifras de esta nota ya no son las de hoy —la clave repite 8 palabras del texto contra 9, 7 y 9—, pero el motivo por el que se conservó aquella primera oración sigue en pie: «town» es una de las ocho, y sin ella la clave bajaría a 7 y empataría con C en el mínimo. El recorte está explicado en la cabecera.',
   },
   {
     id: 'q23',

@@ -978,6 +978,56 @@ import type { SatItemMeta } from '../module-types'
  * pasarle auditoría de clave única y de equidad, y que el calibrador confirme el 9 —el eje
  * discutible es L, que un calibrador podría leer como 1 al estar las dos partes en frases
  * contiguas; si lo lee así el ítem cae a 8 y la etiqueta sigue siendo 2—.
+ *
+ * ## Reescritura de las claves de q09 y q10 (23 ago 2026): parafraseaban la última oración
+ *
+ * Es el hallazgo más importante de la simulación de estudiantes, y no se ve leyendo el ítem: se
+ * ve leyendo lo que hace el estudiante flojo. **Cuatro de los nueve aciertos del más flojo salían
+ * de emparejar palabras con la última oración del pasaje**, sin entender el argumento. Dos de
+ * esos cuatro son estos ítems:
+ *
+ * - **q09** — el pasaje cerraba con «fed from underneath, by a spring that leaves the gravel at
+ *   nine degrees Celsius in July and at nine degrees in January» y la clave decía «It is fed from
+ *   below by a spring at the same temperature in January as in July». Cuatro palabras clavadas.
+ * - **q10** — el pasaje cerraba con «no sentence in them runs longer than what Roiz could say in
+ *   one breath» y la clave decía «its sentences are the length of the breath that carried them».
+ *
+ * Se reescriben **las dos claves y solo las claves**. Ni los pasajes, ni las tres distractoras de
+ * cada ítem, ni las posiciones: **q09 sigue en B y q10 sigue en B**.
+ *
+ * - **q09 · B** → «It draws water from below all year, no colder in winter than in summer, and a
+ *   lake taking in water that warm ices over weeks later.» Con la última oración del pasaje ya no
+ *   comparte ni una palabra de contenido: se van «fed», «spring», «underneath», «gravel», los
+ *   grados y los dos meses. Y gana algo que la versión anterior tenía a medias: la constancia
+ *   («no colder in winter than in summer») es verdad en los dos hemisferios, porque el texto da
+ *   julio y enero —meses opuestos— a la misma temperatura, así que el lector del sur no tiene que
+ *   traducir nada. La unicidad se volvió a comprobar entera, que es lo que pedía el aviso de la
+ *   séptima pasada sobre el margen fino de este ítem: A la mata «Soundings put the two basins at
+ *   the same depth», C la mata «neither lake has a stream running into it or out of it the year
+ *   round» y D la mata «neither shore loses an hour of the low winter sun to it». La clave es la
+ *   única de las cuatro que el pasaje afirma, y lo afirma en la oración que anuncia el contraste
+ *   —«What differs is where the water comes from»— más la última. Nota de rigor: «all year» no
+ *   choca con la línea que mata a C; lo que el pasaje niega es un **stream** que entre o salga
+ *   todo el año, no un aporte por debajo, que es justo lo que el pasaje sí afirma.
+ * - **q10 · B** → «The prose readers admire in Roiz's last four novels is spoken language, since
+ *   the sentences critics praise end where she stopped for air.» Se van «breath», «runs longer» y
+ *   «one»; queda el mismo razonamiento en dos pasos —desde el sexto libro dictaba, y los
+ *   cuadernos enseñan hasta dónde llegaba de una vez—, que es exactamente lo que ya decía la
+ *   razón de B («una frase compuesta en voz alta se acaba donde se acaba el aire»).
+ *
+ * **Puertas medidas sobre el juego nuevo, no estimadas:**
+ *
+ * - **2 longitud de la clave**: q09 → 132 · 131 · 132 · 121 y q10 → 135 · 137 · 144 · 140. En los
+ *   dos, la clave ni la más larga ni la más corta. El bloque sigue en 0 % por las dos caras.
+ * - **3 solape léxico**: q09 → clave 6 contra 4, 6 y 7 (antes 5 contra 4, 6 y 7); q10 → clave 6
+ *   contra 5, 5 y 7 (la misma cifra que antes, con otras palabras dentro). Los dos siguen
+ *   estrictamente entre el máximo y el mínimo, y el fallo duro está a −1.
+ * - **7 longitud del texto**: sin tocar. No se cambió ni un carácter de los dos pasajes.
+ *
+ * **Por R2, q09 y q10 vuelven a la cola de auditoría**: cambiaron las opciones —una cada uno— y
+ * la prueba a ciegas hay que repetirla sobre los dos. Sigue sin cerrarse la divergencia de una
+ * letra en `razones.C` de q09 («Neither» con mayúscula): esta ronda solo tenía permiso sobre las
+ * dos claves.
  */
 
 export const items: MCQQuestion[] = [
@@ -990,7 +1040,7 @@ export const items: MCQQuestion[] = [
     text: 'According to the text, why does the northern lake freeze later than the southern one?',
     options: [
       "Its basin goes down to a greater depth, and the water in a deep lake has far more of the summer's heat to give up before it freezes.",
-      'It is fed from below by a spring at the same temperature in January as in July, and water arriving that warm keeps the ice away.',
+      'It draws water from below all year, no colder in winter than in summer, and a lake taking in water that warm ices over weeks later.',
       'It has a stream running through it the year round, and water traveling through a basin will not set into ice as standing water does.',
       'It lies open to the low winter sun, and a lake taking in sun all winter has more heat to lose before its surface freezes.',
     ],
@@ -1005,7 +1055,7 @@ export const items: MCQQuestion[] = [
     text: 'Which choice best states the main idea of the text?',
     options: [
       "The prose readers admire in Roiz's last four novels is the sister's as much as hers, since no sentence reached the page as it was said.",
-      "The prose readers admire in Roiz's last four novels is spoken language, since its sentences are the length of the breath that carried them.",
+      "The prose readers admire in Roiz's last four novels is spoken language, since the sentences critics praise end where she stopped for air.",
       "The prose readers admire in Roiz's last four novels is the fruit of long labor, since a rhythm that even is reached only by working a line over.",
       "The prose readers admire in Roiz's last four novels is the speech of the three streets she wrote about, since she had heard it all her life.",
     ],
@@ -1016,12 +1066,12 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'The porters of the Trestona market speak among themselves a jargon of some four hundred words, and it has always been explained the same way: a code for settling prices where the customer cannot follow. The linguist Nieves Barcala, who spent two years working the barrows, says it does nothing of the kind. Buyers pick the jargon up in a season, she points out; speaking it is an occupation of its own, kept up for its own sake, and the porters do not use it to shut anybody out. Barcala takes her evidence from what the porters told her.',
+      'The porters of the Trestona market speak among themselves a jargon of some four hundred words, and it has always been explained the same way: a code for settling prices where the customer cannot follow. The linguist Nieves Barcala, who spent two years working the market stalls, says it does nothing of the kind. Buyers pick the jargon up in a season, she points out; speaking it is an occupation of its own, kept up for its own sake, and the porters do not use it to shut anybody out. Barcala takes her evidence from what the porters told her.',
     text: "Which quotation from the porters most effectively illustrates Barcala's claim?",
     options: [
       '"We settle all the prices of the day in it, and we settle them with the customer right there; that is the use of the thing and always has been."',
       '"What we pay the growers stays inside this hall; no porter from the north side has ever been told the figure, and none ever will."',
-      '"Nobody is paid a cent for it and nobody sits down to teach it; a boy has it off the barrows in his first winter, the way we all did."',
+      '"Nobody is paid a thing for it and nobody sits down to teach it; a boy has it off the stalls in his first winter, the way we all did."',
       '"It is not for the prices and it locks nobody out; we talk it on the bus home, and would go on talking it if the market closed tomorrow."',
     ],
     answer: 3,
@@ -1031,11 +1081,11 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Between 1838 and 1852 the fields around Valmar went over from wheat to potatoes. The parish records give the reason plainly: three bad harvests in a row had left the wheat land exhausted, and the potato fed more people from less ground. Historian Emile Rojas is not persuaded that exhaustion is the whole of it. The tithe in that district, he points out, was collected in grain and had been for four centuries, while a field of potatoes owed the church nothing at all. What moved the plow, in his account, was the tax, and the failing harvests only made the arithmetic easier to see.',
+      'Between 1802 and 1816 the fields around Valmar went over from wheat to potatoes. The parish records give the reason plainly: three bad harvests in a row had left the wheat land exhausted, and the potato fed more people from less ground. Historian Emile Rojas is not persuaded that exhaustion is the whole of it. The tithe in that district, he points out, was collected in grain and had been for four centuries, while a field of potatoes owed the church nothing at all. What moved the plow, in his account, was the tax, and the failing harvests only made the arithmetic easier to see.',
     text: "Which finding, if true, would most directly support Rojas's argument?",
     options: [
       'In the parishes where the church left the grain tithe alone, the potato ground grew fastest on the wheat land the bad harvests had worn out worst.',
-      'In the parishes where the church began tithing potatoes too, the families who grew potatoes came through the winter of 1846 better fed than their neighbors.',
+      'In the parishes where the church began tithing potatoes too, the families who grew potatoes came through the winter of 1810 better fed than their neighbors.',
       'In the parishes where the church began tithing potatoes too, the potato ground shrank within two seasons on land no less worn out than it had been before.',
       'In the parishes where the church doubled the tithe it took in grain, the potato ground shrank by half within ten years, with the land as poor as ever.',
     ],
@@ -1099,14 +1149,14 @@ export const meta: SatItemMeta[] = [
       A:
         'Da por buena la diferencia que el texto niega en la segunda línea: «Soundings put the two basins at the same depth». El mecanismo que invoca es el más fuerte de los cuatro fuera del pasaje —el calor que un lago guarda es proporcional al agua que tiene, y la profundidad es el primer predictor de la fecha de congelación en cualquier estudio de hielo lacustre—, así que esta opción no se descarta por flojo: se descarta porque las sondas dan la misma profundidad. Es además el camino del sentido común: «lago hondo, se hiela más tarde» es lo primero que se le ocurre a cualquiera, y por eso el ítem lo pone aquí y no en la clave.',
       B:
-        'Correcta: es la única de las cuatro causas que el pasaje deja en pie, y él mismo señala dónde mirar. «What differs is where the water comes from»: el lago del sur se llena solo en el deshielo, con nieve derretida, y el del norte «is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January». Un aporte continuo a nueve grados hay que enfriarlo antes de que la superficie llegue a cero. La opción no nombra ninguna estación —dice enero y julio, las dos cifras del texto— para que no dependa del hemisferio del lector. No es la causa más convincente de las cuatro: es la única que el pasaje no desmiente.',
+        'Correcta: es la única de las cuatro causas que el pasaje deja en pie, y él mismo señala dónde mirar. «What differs is where the water comes from»: el lago del sur se llena solo en el deshielo, con nieve derretida, y el del norte «is fed from underneath, by a spring that leaves the gravel at nine degrees Celsius in July and at nine degrees in January». Un aporte continuo a nueve grados hay que enfriarlo antes de que la superficie llegue a cero. La opción no repite ni una palabra de esa última línea —ni «fed», ni «spring», ni «underneath», ni los grados, ni los meses—: dice «no colder in winter than in summer», y eso es verdad en los dos hemisferios precisamente porque el texto da julio y enero, meses opuestos, a la misma temperatura. Quien empareje palabras con el final del pasaje no llega aquí. No es la causa más convincente de las cuatro: es la única que el pasaje no desmiente.',
       C:
         'Propone la causa más famosa de las cuatro —el agua que corre no se hiela— y el texto la cierra de una línea: «Neither lake has a stream running into it or out of it the year round». Sin corriente que atraviese el vaso, no hay nada que distinga a un lago del otro por ahí. La ley es cierta y el mecanismo está documentado (las entradas y salidas de los lagos son lo último que se hiela), así que la opción no se cae sola: hay que ir a buscar la frase que la niega. La elige quien reconoce el hecho de manual y no comprueba si este lago lo tiene.',
       D:
         'Invoca una propiedad que el texto atribuye a los dos por igual: «The same ridge stands over both, and neither shore loses an hour of the low winter sun to it». El sol de invierno es un término real del balance de calor de un lago —el que pasa el invierno a la sombra de una loma se hiela antes—, y la opción es verdad del lago del norte; lo que no es, es una diferencia. Es el error de tomar por contraste un rasgo que el pasaje reparte entre los dos, y el más difícil de ver de los tres, porque la línea que lo mata no niega nada: iguala.',
     },
     fuenteHecho:
-      'Limnología de dominio público. Las CUATRO opciones son términos reales del balance de calor invernal de un lago y las cuatro explican retrasos de congelación medidos en la literatura: el calor almacenado según la profundidad (A), el aporte continuo de agua freática a temperatura constante (B), la corriente de un caudal que atraviesa el vaso (C) y la radiación solar que entra cada día de invierno (D). Valle, lagos, distancia, cresta y cifras inventados. Que los cuatro mecanismos sean de primera fila es el arreglo de la séptima pasada y no un adorno: ver la cabecera.',
+      'Limnología de dominio público. Las CUATRO opciones son términos reales del balance de calor invernal de un lago y las cuatro explican retrasos de congelación medidos en la literatura: el calor almacenado según la profundidad (A), el aporte continuo de agua freática a temperatura constante (B), la corriente de un caudal que atraviesa el vaso (C) y la radiación solar que entra cada día de invierno (D). Valle, lagos, distancia, cresta y cifras inventados. Que los cuatro mecanismos sean de primera fila es el arreglo de la séptima pasada y no un adorno: ver la cabecera. **La clave se reescribió el 23 ago 2026** porque parafraseaba casi literalmente la última oración del pasaje —«fed… by a spring… at nine degrees in July and at nine degrees in January» contra «fed from below by a spring at the same temperature in January as in July»— y se contestaba emparejando palabras. Dice lo mismo sin ninguna de ellas; el pasaje, las tres distractoras y la clave (B) no se tocaron. Detalle y puertas medidas, en la cabecera.',
   },
   {
     id: 'q10',
@@ -1118,14 +1168,14 @@ export const meta: SatItemMeta[] = [
       A:
         'El estudiante que elige esta es el que da por hecho que un texto dictado lo escriben dos personas, y no vuelve sobre la línea que lo niega: la hermana «wrote it down and changed nothing». Si entre la boca y el papel no se mueve nada, la prosa no puede ser de la hermana «as much as hers». Es el camino más razonable de los tres falsos —quien toma un dictado suele arreglar sobre la marcha— y por eso la cláusula que lo mata va dentro de la misma oración que presenta a la hermana: hay que leerla entera, no hasta la coma.',
       B:
-        'Correcta. El estudiante que elige esta es el que junta las dos únicas cosas que el pasaje dice del cambio: desde el sexto libro Roiz «spoke each sentence to her sister», y los cuadernos enseñan que «no sentence in them runs longer than what Roiz could say in one breath». Una frase compuesta en voz alta se acaba donde se acaba el aire, y eso es lo que los críticos oyen como música. Un solo paso, y no es la lectura más fina de las cuatro: es la única que no choca con ninguna línea del texto.',
+        'Correcta. El estudiante que elige esta es el que junta las dos únicas cosas que el pasaje dice del cambio: desde el sexto libro Roiz «spoke each sentence to her sister», y los cuadernos enseñan que «no sentence in them runs longer than what Roiz could say in one breath». Una frase compuesta en voz alta se acaba donde se acaba el aire, y eso es lo que los críticos oyen como música. La opción no dice «breath» ni «one» ni «runs longer»: dice que las frases que los críticos celebran «end where she stopped for air», de modo que emparejar con la última línea ya no lleva a ninguna parte. Un solo paso, y no es la lectura más fina de las cuatro: es la única que no choca con ninguna línea del texto.',
       C:
         'El estudiante que elige esta es el que contesta con lo que sabe de cómo se escribe bien —el ritmo se lima, no aparece— sin comprobar si esta escritora lo hacía. La primera línea lo cierra sin margen: Roiz «never went back over a sentence», y eso vale para las nueve novelas, no solo para las cinco primeras. Es la única de las cuatro que no atribuye la prosa a algo de fuera, y también la apuesta de quien contesta con el manual antes que con el pasaje.',
       D:
         'El estudiante que elige esta es el que ve una voz en el texto y la engancha a lo primero que suena a habla, sin preguntarse si eso separa a los cuatro últimos libros de los cinco primeros. El pasaje pone el control justo delante: «The last four are set in the same three streets as the first five». Lo que no cambió no puede explicar lo que sí cambió. Es la distractora más cercana a la clave —las dos hacen venir la prosa de una voz— y se separa de ella por un hecho comprobable, no por un matiz.',
     },
     fuenteHecho:
-      'Ficción original: Ada Roiz, sus nueve novelas, la hermana, los cuadernos y las tres calles están inventados. El nombre se comprobó en buscador antes de fijarlo —no corresponde a ninguna escritora publicada— y el ítem no nombra ni un título de obra, que es donde este bloque ya se quemó una vez (ver q15). El fenómeno de fondo sí es corriente en historia literaria: la prosa compuesta en voz alta y tomada al dictado tiene otra prosodia que la escrita a mano, y la frase dictada tiende a la unidad de respiración. Por eso el ítem se sostiene como lectura y no como dato: nada de lo que hay que deducir depende de saberlo. Sustituye al q10 anterior (Amparo Lascano y el editor que exigía «a proper ending»), retirado en la undécima pasada por dificultad y no por defecto: medía 13, el techo del módulo, con la evidencia repartida en tres puntos del pasaje. Las cuatro opciones atribuyen la prosa a cuatro fuentes que la crítica literaria usa de verdad —el amanuense, la voz, el trabajo de corrección y el habla del lugar—: ninguna es un absurdo, y las tres falsas caen por una cláusula del texto, no por inverosímiles.',
+      'Ficción original: Ada Roiz, sus nueve novelas, la hermana, los cuadernos y las tres calles están inventados. El nombre se comprobó en buscador antes de fijarlo —no corresponde a ninguna escritora publicada— y el ítem no nombra ni un título de obra, que es donde este bloque ya se quemó una vez (ver q15). El fenómeno de fondo sí es corriente en historia literaria: la prosa compuesta en voz alta y tomada al dictado tiene otra prosodia que la escrita a mano, y la frase dictada tiende a la unidad de respiración. Por eso el ítem se sostiene como lectura y no como dato: nada de lo que hay que deducir depende de saberlo. Sustituye al q10 anterior (Amparo Lascano y el editor que exigía «a proper ending»), retirado en la undécima pasada por dificultad y no por defecto: medía 13, el techo del módulo, con la evidencia repartida en tres puntos del pasaje. Las cuatro opciones atribuyen la prosa a cuatro fuentes que la crítica literaria usa de verdad —el amanuense, la voz, el trabajo de corrección y el habla del lugar—: ninguna es un absurdo, y las tres falsas caen por una cláusula del texto, no por inverosímiles. **La clave se reescribió el 23 ago 2026** por el mismo defecto que la de q09: «its sentences are the length of the breath that carried them» calcaba «no sentence in them runs longer than what Roiz could say in one breath», la última oración del pasaje. Dice lo mismo sin «breath», sin «one» y sin «runs longer»; el pasaje, las tres distractoras y la clave (B) no se tocaron.',
   },
   {
     id: 'q11',
@@ -1139,12 +1189,12 @@ export const meta: SatItemMeta[] = [
       B:
         'Prueba reserva, pero sobre el objeto equivocado. Lo que se guarda es lo que se paga al productor; de la jerga no dice una palabra, y callar el precio de compra lo hace media profesión. Es el error de quien retiene «do not use it to shut anybody out» y lo engancha a la primera cita que hable de secreto.',
       C:
-        'Describe cómo se transmite la jerga —sin paga y sin maestro, aprendida en las carretillas el primer invierno—, y eso es una cuestión de aprendizaje, no de finalidad: media docena de destrezas del oficio se aprenden así y siguen sirviendo para trabajar. Una jerga que nadie cobra ni enseña puede seguir tapándole el precio al cliente. Y no dice nada de a quién se dejaba fuera, que es la tercera pieza de la afirmación. Es la distractora más cercana a la clave, porque «nadie cobra por ello» suena a «por su propio gusto»: la elige quien toma el modo de aprenderse por el motivo de hacerse.',
+        'Describe cómo se transmite la jerga —sin paga y sin maestro, aprendida en los puestos el primer invierno—, y eso es una cuestión de aprendizaje, no de finalidad: media docena de destrezas del oficio se aprenden así y siguen sirviendo para trabajar. Una jerga que nadie cobra ni enseña puede seguir tapándole el precio al cliente. Y no dice nada de a quién se dejaba fuera, que es la tercera pieza de la afirmación. Es la distractora más cercana a la clave, porque «nadie cobra por ello» suena a «por su propio gusto»: la elige quien toma el modo de aprenderse por el motivo de hacerse.',
       D:
         'Correcta: cubre las tres piezas de la afirmación de Barcala en una frase. «Not for the prices» niega el código de precios, «it locks nobody out» niega que sirva para dejar fuera a nadie, y hablarla en el autobús de vuelta a casa, con el verbo entero al final —«would go on talking it if the market closed tomorrow»—, la describe como ocupación aparte que seguiría existiendo aunque se acabara el oficio. MANTENIMIENTO: la ventaja sobre C está en tener las TRES piezas —no es código de precios, ocupación aparte por sí misma, no sirve para dejar fuera a nadie—. La más frágil es la tercera: si una corrección futura quita el «would go on talking it», C se queda como la única que roza «por su propio gusto» y el ítem pasa a tener dos claves. No se recorta ninguna. En la octava pasada la opción bajó de 151 a 137 caracteres y la segunda negación se parafraseó —«not for shutting anyone out» → «it locks nobody out»—, porque repetía palabra por palabra el «shut anybody out» del pasaje; las tres piezas siguen enteras y el verbo del final, sin elidir.',
     },
     fuenteHecho:
-      'Ficción original: ni el mercado de Trestona, ni los porteadores, ni la lingüista, ni el estudio existen. El fenómeno de fondo sí está documentado en sociolingüística: las jergas de oficio se explican casi siempre como códigos crípticos frente al cliente, y el trabajo de campo suele encontrar que la función críptica es débil y que la variedad se mantiene por identidad y por gusto. Sustituye al q11 anterior (la pintora Ilse Marchetti y sus cuadernos), retirado en la sexta pasada por dos defectos de conjunto y no por nada del propio ítem: (1) con q10 formaba pareja —creadora, papeles privados, fecha de apertura del archivo, lectura que da la vuelta al relato recibido— y los dos ítems van seguidos; (2) compartía racimo léxico con q08 del bloque CS (`painter`, `canvases`, `studio`, `unfinished`), que además va de lienzos mal catalogados. Aquí no hay creadora individual, no hay papeles, no hay archivo ni fecha de apertura, y no queda una sola de esas cuatro palabras. La estructura lógica se conservó entera: tesis de tres piezas, clave que las cubre las tres, distractor C que roza una sola y por el motivo equivocado. Escenario urbano a propósito: q12 va justo detrás y es rural (parroquias, trigo, patatas), así que un q11 de campo habría cambiado una pareja por otra. Nombres comprobados en buscador antes de fijarlos: «Trestona» no aparece como localidad ni como mercado y «Nieves Barcala» no corresponde a ninguna persona. Quien los cambie, que repita la búsqueda.',
+      'Ficción original: ni el mercado de Trestona, ni los porteadores, ni la lingüista, ni el estudio existen. El fenómeno de fondo sí está documentado en sociolingüística: las jergas de oficio se explican casi siempre como códigos crípticos frente al cliente, y el trabajo de campo suele encontrar que la función críptica es débil y que la variedad se mantiene por identidad y por gusto. Sustituye al q11 anterior (la pintora Ilse Marchetti y sus cuadernos), retirado en la sexta pasada por dos defectos de conjunto y no por nada del propio ítem: (1) con q10 formaba pareja —creadora, papeles privados, fecha de apertura del archivo, lectura que da la vuelta al relato recibido— y los dos ítems van seguidos; (2) compartía racimo léxico con q08 del bloque CS (`painter`, `canvases`, `studio`, `unfinished`), que además va de lienzos mal catalogados. Aquí no hay creadora individual, no hay papeles, no hay archivo ni fecha de apertura, y no queda una sola de esas cuatro palabras. La estructura lógica se conservó entera: tesis de tres piezas, clave que las cubre las tres, distractor C que roza una sola y por el motivo equivocado. Escenario urbano a propósito: q12 va justo detrás y es rural (parroquias, trigo, patatas), así que un q11 de campo habría cambiado una pareja por otra. Nombres comprobados en buscador antes de fijarlos: «Trestona» no aparece como localidad ni como mercado y «Nieves Barcala» no corresponde a ninguna persona. Quien los cambie, que repita la búsqueda.\n\n**Equidad léxica (23 ago 2026), dos palabras.** (1) *barrow* —carretilla de mercado— no tiene cognado en español, es falso amigo con «barra» y no está en el currículo escolar: era la palabra menos recuperable del módulo y salía dos veces, en el pasaje («working the barrows») y dentro de la opción C («a boy has it off the barrows»). Queda «market stalls» en el pasaje y «the stalls» en la opción, que es transparente y no cambia lo que la opción afirma: sigue diciendo que la jerga se aprende en el oficio, sin paga y sin maestro. (2) *cent* era la única moneda de un módulo que las evita a propósito —sin país, sin moneda y sin medidas imperiales— y además no aporta nada: queda «Nobody is paid a thing for it». Longitudes de las cuatro opciones, en orden A-D: **144 · 130 · 134 · 137**, exactamente las mismas que antes del cambio, porque las dos sustituciones se compensan carácter a carácter dentro de C. La clave sigue sin ser la más larga ni la más corta. `razones.C` decía «aprendida en las carretillas» y ahora dice «aprendida en los puestos»; ninguna otra razón se tocó y la clave no cambió ni un carácter.',
   },
   {
     id: 'q12',
@@ -1156,14 +1206,14 @@ export const meta: SatItemMeta[] = [
       A:
         'Apoya la explicación rival, no la de Rojas. El diezmo se queda como estaba —la iglesia no toca nada— y aun así la patata avanza más deprisa justo donde las tres malas cosechas hicieron más daño: con el impuesto constante, lo que explica la diferencia es el agotamiento. Es el error de quien reconoce las dos variables correctas y no comprueba hacia dónde apuntan.',
       B:
-        'Cambia una consecuencia por una causa. Es el mismo cambio que la clave —la iglesia empieza a diezmar también la patata—, pero mira el desenlace equivocado: que las familias patateras siguieran comiendo mejor en 1846 dice qué se ganaba con la patata, no por qué se sembró, y convive sin problema con que se sembrara por el agotamiento del suelo. No separa las dos explicaciones, que es lo único que el hallazgo tiene que hacer. La elige quien reconoce la intervención correcta y no comprueba sobre qué se mide el efecto.',
+        'Cambia una consecuencia por una causa. Es el mismo cambio que la clave —la iglesia empieza a diezmar también la patata—, pero mira el desenlace equivocado: que las familias patateras siguieran comiendo mejor en 1810 dice qué se ganaba con la patata, no por qué se sembró, y convive sin problema con que se sembrara por el agotamiento del suelo. No separa las dos explicaciones, que es lo único que el hallazgo tiene que hacer. La elige quien reconoce la intervención correcta y no comprueba sobre qué se mide el efecto.',
       C:
         'Correcta: quita la ventaja fiscal y deja intacta la explicación rival. Donde la iglesia empieza a diezmar también la patata, el sembrado retrocede en dos temporadas sobre una tierra «no less worn out than it had been before». El agotamiento no ha cambiado y la decisión sí, así que lo que movía el arado era el impuesto, que es la tesis de Rojas. Es lo único que hace el hallazgo y que ningún otro hace: separar las dos explicaciones moviendo una sola de ellas.',
       D:
         'Acierta la variable y se equivoca de signo. Si la iglesia dobla lo que cobra sobre el grano, la ventaja fiscal de la patata crece, y con la tesis de Rojas el sembrado tendría que ensancharse; el hallazgo dice que se redujo a la mitad. Es la distractora gemela de la clave —misma intervención de la iglesia sobre el diezmo, mismo desenlace medido, mismo control sobre el estado de la tierra— y solo se separa de ella en si el cambio quitó o aumentó la ventaja de la patata. La marca quien comprueba de qué habla el hallazgo y no en qué dirección empuja.',
     },
     fuenteHecho:
-      'Hecho documentado de historia agraria europea: el diezmo se cobraba en grano y en varias regiones la patata quedó fuera de él, lo que le dio una ventaja fiscal frente al trigo. Valmar, Rojas, las fechas y los cuatro hallazgos están inventados. Los cuatro hallazgos se rehicieron en la sexta pasada: los cuatro nombran ahora el diezmo, los cuatro abren igual («In the parishes where the church…»), los cuatro miden un desenlace positivo y ninguno es un resultado nulo. El anterior D —levantado el diezmo, la patata siguió creciendo igual— tenía forma de refutación de manual («se quitó la causa y no pasó nada») y se reconocía como distractor sin leer el pasaje. Lo que queda a ciegas, medido y asumido: dos descartes razonados —el hallazgo tiene que hablar de un cambio en el diezmo (cae A) y tiene que medir superficie sembrada y no alimentación (cae B)— dejan a C y D en pie, y separarlas exige saber en qué dirección empuja la tesis de Rojas, que solo está en el pasaje. El techo a ciegas del ítem es 50 %, no 100 %.',
+      'Hecho documentado de historia agraria europea: el diezmo se cobraba en grano y en varias regiones la patata quedó fuera de él, lo que le dio una ventaja fiscal frente al trigo. Valmar, Rojas, las fechas y los cuatro hallazgos están inventados. **La ventana se movió el 23 ago 2026 y por eso está donde está:** decía «Between 1838 and 1852», y la opción B fechaba su invierno en 1846, de modo que el pasaje entero y el invierno de una opción caían dentro del tizón de la patata europeo (1845-1852). Nada de lo que el ítem afirma es falso —el distrito es ficticio y el hambre no se nombra—, pero un distrito que se pasa **a** la patata justo mientras la patata se pudre en media Europa chirría para cualquier estudiante con contexto histórico, y es decorado evitable. Queda «Between 1802 and 1816» y «the winter of 1810», que no tocan ninguna hambruna documentada. El cambio son cuatro cifras: la ventaja fiscal del diezmo, las tres malas cosechas, los cuatro siglos de diezmo en grano y las cuatro opciones siguen exactamente igual, y las longitudes A-D siguen en **146 · 156 · 154 · 150** porque las cifras sustituidas ocupan lo mismo. `razones.B` citaba el año y ahora dice 1810. Los cuatro hallazgos se rehicieron en la sexta pasada: los cuatro nombran ahora el diezmo, los cuatro abren igual («In the parishes where the church…»), los cuatro miden un desenlace positivo y ninguno es un resultado nulo. El anterior D —levantado el diezmo, la patata siguió creciendo igual— tenía forma de refutación de manual («se quitó la causa y no pasó nada») y se reconocía como distractor sin leer el pasaje. Lo que queda a ciegas, medido y asumido: dos descartes razonados —el hallazgo tiene que hablar de un cambio en el diezmo (cae A) y tiene que medir superficie sembrada y no alimentación (cae B)— dejan a C y D en pie, y separarlas exige saber en qué dirección empuja la tesis de Rojas, que solo está en el pasaje. El techo a ciegas del ítem es 50 %, no 100 %.',
   },
   {
     id: 'q13',
