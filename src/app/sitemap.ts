@@ -10,6 +10,7 @@ import { SIMULACROS } from '@/data/mocks/icfes-simulacros';
 import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
 import { getVocabLevels } from '@/data/practica/vocabulario/registry';
 import { HISTORIA_LANG_KEYS, getHistorias } from '@/data/practica/historias';
+import { ROLEPLAY_INGLES_A2 } from '@/data/practica/habla-acompanado';
 import { IDIOMAS_PUBLICADOS } from '@/data/fonetica/idiomas';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
@@ -139,6 +140,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),
+
+    // ── Practice — Habla acompañada, piloto de inglés A2 ────────────────────
+    // Cada rol tiene URL propia a propósito: dos personas abren dos pantallas y ninguna
+    // recibe los datos ocultos de la otra. El catálogo sale del registro, no de una lista.
+    { url: `${BASE}/practica/ingles/a2/habla`, lastModified: now, changeFrequency: 'monthly', priority: 0.74 },
+    { url: `${BASE}/practica/ingles/a2/habla/solo`, lastModified: now, changeFrequency: 'monthly', priority: 0.68 },
+    { url: `${BASE}/practica/ingles/a2/habla/acompanada`, lastModified: now, changeFrequency: 'monthly', priority: 0.76 },
+    { url: `${BASE}/practica/ingles/a2/habla/acompanada/herramientas`, lastModified: now, changeFrequency: 'monthly', priority: 0.64 },
+    ...ROLEPLAY_INGLES_A2.flatMap((scenario) => [
+      {
+        url: `${BASE}/practica/ingles/a2/habla/acompanada/${scenario.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: 0.72,
+      },
+      ...scenario.roles.map((role) => ({
+        url: `${BASE}/practica/ingles/a2/habla/acompanada/${scenario.slug}/${role.id}`,
+        lastModified: now,
+        changeFrequency: 'monthly' as const,
+        priority: 0.66,
+      })),
+    ]),
 
     // ── Practice — grammar topics A1–B1 (one indexable URL per topic) ─────────
     ...GRAMMAR_ENTRIES.map(({ lang, level, topic }) => ({

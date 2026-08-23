@@ -35,6 +35,9 @@ export default function HablaInglesA2() {
     <SpeakingPractice
       hubHref="/practica/ingles/a2"
       hubLabel="🇬🇧 Inglés A2"
+      sectionHref="/practica/ingles/a2/habla"
+      sectionLabel="Expresión oral"
+      currentLabel="Habla solo"
       eyebrow="Speaking · Inglés A2"
       title="Expresión oral A2"
       lead="20 frases esenciales con pronunciación, contexto situacional y variantes formal/informal. Practica en voz alta y marca las que dominas."

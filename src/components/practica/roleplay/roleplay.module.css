@@ -1,0 +1,667 @@
+/* Habla acompañada — lo propio de la ficha de rol, la carta y el hub de escenarios.
+
+   Todo lo demás —lienzo, migajero, encabezado, tarjetas, botones, pestañas— sale de las
+   primitivas de `practica-ui.css`, y el acento de `SKILL_ACCENT.habla`. Sin un solo hex:
+   los colores se piden a las variables que declara `.wlp-page`, como en el resto de la
+   sección. Ver `docs/sistema-visual-practica.md`. */
+
+/* ── Formato en línea ────────────────────────────────────────────────────── */
+
+/* Las formas decibles de la tabla de exponentes. Es lo único de la ficha que se puede
+   pronunciar tal cual, y por eso se distingue del texto que lo explica. */
+.code {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-sm);
+  font-family: var(--mono);
+  font-size: 0.86em;
+  padding: 0.08em 0.32em;
+}
+
+/* ── Bloques ─────────────────────────────────────────────────────────────── */
+
+.para {
+  color: var(--wlp-ink);
+  line-height: 1.7;
+  margin: 0 0 0.85rem;
+}
+
+.para:last-child {
+  margin-bottom: 0;
+}
+
+.list,
+.listOrdered {
+  color: var(--wlp-ink);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 1.65;
+  margin: 0 0 0.9rem;
+  padding-left: 1.15rem;
+}
+
+.list {
+  list-style: disc;
+}
+
+.listOrdered {
+  list-style: decimal;
+}
+
+.list:last-child,
+.listOrdered:last-child {
+  margin-bottom: 0;
+}
+
+.quote {
+  border-left: 3px solid var(--wlp-accent);
+  margin: 0 0 1rem;
+  padding: 0.15rem 0 0.15rem 1rem;
+}
+
+.quote:last-child {
+  margin-bottom: 0;
+}
+
+.tableWrap {
+  margin: 0 0 1rem;
+  overflow-x: auto;
+}
+
+.tableWrap:last-child {
+  margin-bottom: 0;
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 100%;
+  width: 100%;
+}
+
+.table th {
+  border-bottom: 1px solid var(--wlp-line);
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.table td {
+  border-bottom: 1px solid var(--wlp-line);
+  color: var(--wlp-ink);
+  line-height: 1.55;
+  padding: 0.6rem 0.7rem;
+  vertical-align: top;
+}
+
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* La columna izquierda de una tabla sin cabecera es la etiqueta del dato duro. */
+.tableLabel {
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+/* ── La ficha ────────────────────────────────────────────────────────────── */
+
+.briefing {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-left: 4px solid var(--wlp-accent);
+  border-radius: var(--wlp-r);
+  margin: 0 0 2rem;
+  padding: 1rem 1.2rem;
+}
+
+.briefing p {
+  color: var(--wlp-ink);
+  line-height: 1.65;
+  margin: 0 0 0.5rem;
+}
+
+.briefing p:last-child {
+  margin-bottom: 0;
+}
+
+.piece {
+  margin: 0 0 2rem;
+}
+
+.pieceLabel {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.panel {
+  background: var(--wlp-surface);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  padding: 1.1rem 1.25rem;
+}
+
+.panelHeading {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+}
+
+.panelHeading h2 {
+  color: var(--wlp-ink);
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.panelHeading span {
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+}
+
+/* ── Metadatos del escenario ─────────────────────────────────────────────── */
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.1rem 0 0;
+  padding: 0;
+}
+
+.metaItem {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-pill);
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  list-style: none;
+  padding: 0.22rem 0.62rem;
+}
+
+.metaItem strong {
+  color: var(--wlp-ink);
+  font-weight: 800;
+}
+
+/* ── Lo que el motor no hace ─────────────────────────────────────────────── */
+
+/* No es letra pequeña. Va en el hub, en el escenario y en las dos fichas, con las mismas
+   palabras: sin compañero este modo no sirve, y eso se dice antes, no se descubre. */
+.limits {
+  background: var(--wlp-tint-info);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  margin: 2rem 0 0;
+  padding: 1.1rem 1.25rem;
+}
+
+.limitsTitle {
+  color: var(--wlp-ink);
+  font-size: 0.95rem;
+  margin: 0 0 0.75rem;
+}
+
+.limitsList {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.limitsList div {
+  color: var(--wlp-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.limitsList strong {
+  color: var(--wlp-ink);
+  display: block;
+}
+
+/* ── Elegir rol ──────────────────────────────────────────────────────────── */
+
+.roleGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 1.5rem 0 0;
+}
+
+.roleLetter {
+  align-items: center;
+  background: var(--wlp-accent);
+  border-radius: var(--wlp-r-sm);
+  color: var(--wl-canvas);
+  display: flex;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  font-weight: 950;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+/* ── La carta ────────────────────────────────────────────────────────────── */
+
+/* La carta vive en su propia vista, detrás de un botón. Nunca debajo del andamiaje: en
+   las simulaciones, impresa ahí se leía sola —es justo la zona que el estudiante flojo
+   consulta cada dos turnos— y verla antes de tiempo llegó a hacer salir mejor un
+   escenario, que es un incentivo que enseña a mirar antes. §9 del blueprint. */
+.cardBar {
+  align-items: center;
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: space-between;
+  margin: 2rem 0 0;
+  padding: 1rem 1.2rem;
+}
+
+.cardBarText {
+  color: var(--wlp-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 46ch;
+}
+
+.cardBarText strong {
+  color: var(--wlp-ink);
+}
+
+.cardScreen {
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  border-top: 4px solid var(--wlp-accent);
+  padding: 1.5rem;
+}
+
+.cardTurn {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+}
+
+.cardBody {
+  margin: 1.4rem 0 0;
+}
+
+/* ── Referencias de gramática ────────────────────────────────────────────── */
+
+.refList {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.ref {
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  list-style: none;
+  padding: 0.85rem 1rem;
+}
+
+.ref a {
+  color: var(--wlp-accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ref a:hover {
+  text-decoration: underline;
+}
+
+.refLevel {
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-pill);
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+  margin-left: 0.45rem;
+  padding: 0.08rem 0.4rem;
+  text-transform: uppercase;
+}
+
+.ref p {
+  color: var(--wlp-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0.4rem 0 0;
+}
+
+/* ── Caja de herramientas ────────────────────────────────────────────────── */
+
+.toolkitBlock {
+  border-top: 1px solid var(--wlp-line);
+  padding: 1.4rem 0 0;
+}
+
+.toolkitBlock:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.toolkitTitle {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.6rem;
+}
+
+.toolkitTitle h3 {
+  color: var(--wlp-ink);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.toolkitNumber {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 950;
+}
+
+.toolkitTag {
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+
+/* ── Flujo completo: modos, catálogo y preparación ───────────────────────── */
+
+.modeGrid,
+.scenarioGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cardFacts,
+.steps,
+.checkList {
+  color: var(--wlp-muted);
+  line-height: 1.6;
+  margin: 1rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.cardFacts li + li,
+.steps li + li,
+.checkList li + li {
+  margin-top: 0.35rem;
+}
+
+.steps {
+  display: grid;
+  gap: 0.4rem;
+  list-style: none;
+  max-width: 760px;
+  padding-left: 0;
+}
+
+.steps strong {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  margin-right: 0.35rem;
+}
+
+.scenarioCard {
+  position: relative;
+}
+
+.scenarioNumber {
+  color: var(--wlp-line);
+  font-family: var(--mono);
+  font-size: clamp(2.2rem, 6vw, 4.4rem);
+  font-weight: 950;
+  line-height: 0.85;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.targetTitle {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0.35rem 0 0;
+}
+
+.toolkitCallout,
+.roleSwitch {
+  align-items: center;
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-left: 4px solid var(--wlp-accent);
+  border-radius: var(--wlp-r);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.toolkitCallout h2,
+.roleSwitch h2 {
+  color: var(--wlp-ink);
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.toolkitCallout p,
+.roleSwitch p {
+  color: var(--wlp-muted);
+  line-height: 1.6;
+  margin: 0.3rem 0 0;
+}
+
+.toolkitCallout .pieceLabel {
+  color: var(--wlp-accent);
+  margin: 0 0 0.35rem;
+}
+
+.roleChoice {
+  display: flex;
+  flex-direction: column;
+}
+
+.roleChoiceHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roleChoice h3 {
+  margin-top: 1rem;
+}
+
+.starts {
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-pill);
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.2rem 0.55rem;
+  text-transform: uppercase;
+}
+
+.roleActions {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: auto;
+  padding-top: 1.2rem;
+}
+
+.shareStatus {
+  color: var(--wlp-muted);
+  flex: 1 1 100%;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  min-height: 1.15em;
+}
+
+.preflight,
+.practiceFocus {
+  border-top: 1px solid var(--wlp-line);
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+}
+
+.preflight h2,
+.practiceFocus h2,
+.sectionTitle {
+  color: var(--wlp-ink);
+  font-size: 1.35rem;
+  margin: 0 0 0.8rem;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagList span,
+.rowTag {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-pill);
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  padding: 0.22rem 0.6rem;
+}
+
+.secretNotice {
+  background: var(--wlp-tint-info);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-muted);
+  line-height: 1.6;
+  margin-top: 1.1rem;
+  max-width: 760px;
+  padding: 0.85rem 1rem;
+}
+
+.secretNotice strong {
+  color: var(--wlp-ink);
+}
+
+.proseGrid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.proseGrid .panel:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.noCard,
+.success {
+  background: var(--wlp-tint-info);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-muted);
+  line-height: 1.6;
+  margin: 1rem 0 2rem;
+  padding: 0.9rem 1rem;
+}
+
+.noCard strong,
+.success strong {
+  color: var(--wlp-ink);
+}
+
+.toolkitBlocks {
+  background: var(--wlp-surface);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  margin-top: 2rem;
+  padding: 1.25rem;
+}
+
+.rowTag {
+  display: inline-block;
+  margin-left: 0.45rem;
+}
+
+.toolkitTail {
+  color: var(--wlp-muted);
+  font-size: 0.88rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0.75rem 0 0;
+}
+
+.roleSwitch {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .modeGrid,
+  .scenarioGrid,
+  .proseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .proseGrid .panel:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+
+  .table {
+    font-size: 0.86rem;
+  }
+
+  .tableLabel {
+    white-space: normal;
+  }
+
+  .cardBar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .toolkitCallout,
+  .roleSwitch {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .roleActions > * {
+    flex: 1 1 100%;
+  }
+}

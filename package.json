@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:practica-catalog && npm run check:tense-quests && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:ielts-review-blueprint && npm run check:toefl-audio-release && npm run check:toefl-review-blueprint && npm run check:toefl-editorial && npm run check:toefl-payments && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano && npm run check:fonetica-frances && npm run check:pdf-fonts && npm run check:sat && npm run check:sat-superhub",
+    "prebuild": "npm run check:practica-catalog && npm run check:habla-acompanada && npm run check:tense-quests && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:ielts-review-blueprint && npm run check:toefl-audio-release && npm run check:toefl-review-blueprint && npm run check:toefl-editorial && npm run check:toefl-payments && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano && npm run check:fonetica-frances && npm run check:pdf-fonts && npm run check:sat && npm run check:sat-superhub",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -16,6 +16,7 @@
     "test:wompi-checkout": "node --experimental-strip-types --no-warnings --test tests/wompi-checkout.test.mjs",
     "test:wompi": "npm run test:wompi-config && npm run test:wompi-checkout",
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
+    "check:habla-acompanada": "node --experimental-strip-types --no-warnings scripts/check-habla-acompanada.mjs",
     "check:tense-quests": "node --experimental-strip-types --no-warnings scripts/check-tense-quests.mjs",
     "check:seo-snippets": "node --experimental-strip-types --no-warnings scripts/check-seo-snippets.mjs",
     "check:fonetica": "node --experimental-strip-types --no-warnings scripts/check-fonetica.mjs",
