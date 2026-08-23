@@ -54,9 +54,9 @@ export function leer() {
 // mapa: escenario+rol -> acto por fila, EN EL ORDEN EN QUE ESTÁN EN LA FICHA
 const M = {
   '1A': ['pedir-aclaracion', 'poner-limite', 'pedir-aclaracion', 'conceder-con-condicion', 'apertura', 'dar-dato/razon', 'proponer-alternativa', 'poner-limite'],
-  '1B': ['pedir-aclaracion', 'poner-limite', 'apertura', 'pedir-favor', 'poner-limite', 'conceder-con-condicion', 'rechazar', 'quejarse'],
+  '1B': ['pedir-aclaracion', 'conceder-con-condicion', 'poner-limite', 'apertura', 'pedir-favor', 'poner-limite', 'rechazar', 'quejarse'],
   '2A': ['pedir-aclaracion', 'pedir-aclaracion', 'recomendar', 'dar-dato/razon', 'poner-limite', 'recomendar', 'dar-mala-noticia', 'recomendar', 'dar-dato/razon'],
-  '2B': ['pedir-aclaracion', 'pedir-aclaracion', 'dar-dato/razon', 'dar-dato/razon', 'proponer-alternativa', 'proponer-alternativa', 'pedir-favor', 'dar-dato/razon', 'poner-limite'],
+  '2B': ['pedir-aclaracion', 'pedir-aclaracion', 'dar-dato/razon', 'dar-dato/razon', 'recomendar', 'proponer-alternativa', 'pedir-favor', 'dar-dato/razon', 'poner-limite'],
   '3A': ['pedir-aclaracion', 'pedir-favor', 'dar-mala-noticia', 'negociar', 'proponer-alternativa', 'dar-dato/razon'],
   '3B': ['proponer-alternativa', 'pedir-aclaracion', 'conceder-con-condicion', 'poner-limite', 'dar-mala-noticia', 'dar-dato/razon'],
   '4A': ['recomendar', 'insistir', 'pedir-aclaracion', 'conceder-con-condicion', 'apertura', 'pedir-favor', 'dar-dato/razon', 'proponer-alternativa', 'dar-dato/razon'],
@@ -66,7 +66,7 @@ const M = {
   '6A': ['proponer-alternativa', 'pedir-aclaracion', 'rechazar', 'disculparse', 'proponer-alternativa', 'pedir-aclaracion', 'dar-dato/razon', 'dar-mala-noticia'],
   '6B': ['proponer-alternativa', 'pedir-favor', 'conceder-con-condicion', 'proponer-alternativa', 'poner-limite', 'dar-mala-noticia', 'pedir-favor', 'dar-dato/razon', 'pedir-aclaracion'],
   '7A': ['pedir-aclaracion', 'quejarse', 'poner-limite', 'cierre-ritual', 'quejarse', 'conceder-con-condicion', 'poner-limite', 'rechazar', 'quejarse'],
-  '7B': ['pedir-aclaracion', 'pedir-aclaracion', 'cierre-ritual', 'disculparse', 'disculparse', 'dar-dato/razon', 'negociar', 'pedir-favor', 'dar-dato/razon'],
+  '7B': ['pedir-aclaracion', 'pedir-aclaracion', 'quejarse', 'cierre-ritual', 'disculparse', 'dar-dato/razon', 'negociar', 'pedir-favor', 'dar-dato/razon'],
   '8A': ['insistir', 'insistir', 'pedir-favor', 'pedir-aclaracion', 'ganar-tiempo', 'quejarse', 'poner-limite', 'dar-dato/razon'],
   '8B': ['insistir', 'pedir-favor', 'ganar-tiempo', 'dar-dato/razon', 'proponer-alternativa', 'rechazar', 'disculparse', 'poner-limite'],
 };
