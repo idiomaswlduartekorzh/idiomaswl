@@ -10,11 +10,14 @@ otras dos salidas viven en los datos ocultos de A, y la carta asigna una tarea c
 **el 21 ago 2026** con el acta del guardián (`fase7-veredicto.md`) y la auditoría de equidad sobre
 la versión en inglés (`fase8-equidad-en.md`). Lo que no se aplicó, y por qué, está al final.
 
-**El vocabulario de este escenario es asimétrico y esa es la gracia.** `appointment`, `opening`,
-`referral note`, `emergency check`, `branch` son palabras del mostrador: en la ficha de A entran
-como palabras que **produce**, en la de B como palabras que **va a oír**. `referral note` entra
-en la ficha de B **sin definición, a propósito**: es lo que le da trabajo al bloque 3 de la caja.
-La tercera columna de B nombra lo que le van a decir, nunca lo que puede pedir.
+**El vocabulario de este escenario es asimétrico y esa es la gracia.** Desde la separación del 23
+de agosto, las palabras del mostrador —`referral note`, `emergency check`, `to be fully booked`,
+`a first consultation`— viven **solo en la ficha de A**, y las del cuerpo y el plan —`chipped`,
+`a sharp edge`, `to cover`, `a painkiller`— **solo en la de B**. Las tres que siguen en las dos
+(`appointment`, `branch`, `opening`) son las que los dos tienen que producir. Lo que antes se
+buscaba dando a B una palabra sin definición ahora lo da el reparto: B **no tiene** las palabras
+del oficio, así que el bloque 3 de la caja tiene trabajo de verdad. La tercera columna de B nombra
+lo que le van a decir, nunca lo que puede pedir.
 
 Caja común: `artifacts/habla-a2/caja-de-herramientas-a2.md`. Inglés americano.
 Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
@@ -64,16 +67,16 @@ Cada ficha va en su propia URL y se lee sola. La carta vive en pantalla aparte.
 
 | word | what it is | what it's for here — **not a line to say** |
 |---|---|---|
+| a first consultation | the first visit, when the clinic still knows nothing about the tooth | what Thursday at 7:00 is — the long one, with forms and an X-ray inside it |
 | appointment | a day and a time for one patient only | the thing you don't have today |
-| opening | a free time in the calendar | one only: Thursday, 7:00 a.m. · never promise a second one |
-| to be fully booked | no free times left at all | your bad news, in three words |
 | branch | one of the two places of the same clinic | the other one, Centro — where you send them |
-| referral note | a paper for another clinic with the problem on it | your only key to Centro |
 | emergency check | a short visit for pain, with no appointment | the way out that costs 40,000 · not the hospital emergency room |
-| X-ray | a photo of the inside of a tooth | the reason for the ten minutes early |
-| chipped | a tooth that lost a small piece | what they'll describe without the word — give them the word |
-| to cover | when the plan pays and the patient pays nothing | your best argument — here, and nowhere else |
+| opening | a free time in the calendar | one only: Thursday, 7:00 a.m. · never promise a second one |
+| referral note | a paper for another clinic with the problem on it | your only key to Centro |
+| the emergency room | the part of a hospital for people who can't wait | where they go tonight if the pain moves — the one place that is not this clinic |
+| to be fully booked | no free times left at all | your bad news, in three words |
 | to hold something for someone | to keep a time for one person, so nobody else takes it | Saturday at nine, while they decide |
+| X-ray | a photo of the inside of a tooth | the reason for the ten minutes early |
 
 ### Your toolkit
 All eight blocks — you are the only one behind a counter. **1** `[grants]`, but not *Good morning* — at 4:20 it is **Good afternoon**. **2**, **3**. **4** `[jargon]`: *referral note*, *emergency check*, *X-ray*, yours not theirs. **5**. **6** when they push about another patient. **7** `[grants]`, **8**.
@@ -136,14 +139,14 @@ They said the **day, time and branch** back to you, and you checked them on scre
 
 | word | what it is | what it's for here — **not a line to say** |
 |---|---|---|
+| a delivery | boxes that arrive on a truck at a fixed hour | the 6:30 truck on Thursday — the first of the two numbers that close that hour |
+| a painkiller | a pill you take so the pain gets smaller | two a day since Sunday — what you already tried, before anyone gives advice |
+| a sharp edge | the part of a broken thing that can cut | what your tongue finds when you talk — the detail that makes this today and not Thursday |
 | appointment | a day and a time for one patient only | the thing you don't have |
-| to be fully booked | no free times left at all | the first thing you're going to hear |
-| opening | a free time in the calendar | their word for a time that appears later |
 | branch | one of the two places of the same clinic | ask which one — appointment and treatment can be in different ones |
-| emergency check | a short visit for pain, with no appointment | one of their words — ask what it costs · not the hospital emergency room |
-| referral note | — they'll say it; ask what it means | a paper that comes with a condition — find out which one |
+| chipped | a tooth that lost a small piece | your **back tooth** in one word — the short way to say what happened on Sunday |
+| opening | a free time in the calendar | their word for a time that appears later |
 | to cover | when the plan pays and the patient pays nothing | their word for your plan — ask where it works |
-| chipped | a tooth that lost a small piece | your **back tooth**, in one word — the word they will give you |
 | tongue | the soft part in your mouth that moves when you talk | where the sharp edge cuts |
 | warehouse | a big building where a company keeps the things it sells | where you work · the reason for the seven o'clock |
 
@@ -547,3 +550,67 @@ Con ellas: `send anyone away` (phrasal separable con indefinido en medio, prohib
 esta mañana al quitar el absoluto nominal—, y la cadena `who pays, how much, and when`, que la fase 9
 corrigió en el cierre común y **se olvidó aquí**: hoy los dos sitios que deben decir lo mismo decían
 cosas distintas.
+
+
+---
+
+## Separación de vocabulario (23 ago 2026) — fase13-conjunto.md MEDIO 8
+
+**El defecto.** Ocho de las diez entradas estaban en las dos pantallas y siete con la glosa
+idéntica: el 80 % del presupuesto de vocabulario del escenario se gastaba dos veces. Con la
+palabra ya delante y definida en la pantalla de enfrente, **los bloques 3 y 4 de la caja se
+quedaban sin trabajo**: nadie pide que le repitan lo que puede leer.
+
+**El reparto.** Las palabras del oficio se quedan en A (`referral note`, `emergency check`,
+`to be fully booked`); las del cuerpo y las del plan, en B (`chipped`, `a sharp edge`,
+`to cover`). Después quedan **tres formas compartidas** —`appointment`, `branch`, `opening`— y
+cada pantalla tiene **siete de diez propias**. Solape del escenario: **80 % → 30 %**.
+
+**ROLE A · salen dos, entran dos**
+
+| sale | por qué |
+|---|---|
+| `chipped` | palabra del cuerpo, y el diente es de B · su celda decía «give them the word», que era justo el regalo que apagaba el bloque 3 del otro |
+| `to cover` | palabra del plan · quien tiene que preguntar dónde vale el plan es el paciente, no el mostrador |
+
+| entra | dónde la sostiene esta misma ficha |
+|---|---|
+| `a first consultation` | fila de datos `The calendar` (*a first consultation, 30 minutes*) y exponente `The first opening is…`. La línea de toolkit de B manda preguntar por *first consultation* desde hace tres pasadas y **ninguna de las dos tablas la tenía**: el bloque 3 de B pedía una palabra que nadie producía |
+| `the emergency room` | fila `When it can't wait` (*hospital emergency room, tonight*), exponente `If the pain goes to…, go to the emergency room tonight.`, criterio de éxito `the sign for the hospital` y punto 4 del cierre. Es la palabra que separa `emergency check` de las urgencias del hospital —el riesgo del hallazgo 39— y ahora vive en la pantalla que tiene que distinguir las dos |
+
+**ROLE B · salen tres, entran tres**
+
+| sale | por qué |
+|---|---|
+| `to be fully booked` | mostrador · es la mala noticia de A, dicha en tres palabras |
+| `referral note` | mostrador · ya entraba sin definición «a propósito»; ahora tampoco entra la fila |
+| `emergency check` | mostrador · su línea de toolkit ya dice qué hacer: **3** `[receives]` — *emergency check*, *referral note*, *first consultation* — **ask**. Las tres que salen son exactamente esas |
+
+| entra | dónde la sostiene esta misma ficha |
+|---|---|
+| `a delivery` | fila `Thursdays` (*delivery truck, 6:30 a.m. · stockroom key mine*) y exponente `I can't come at…, because I open…`. Es el primero de los dos números que hacen imposible el jueves a las 7:00 |
+| `a painkiller` | fila `Painkillers` (*two a day · the first one Sunday night*). El hallazgo 70 la pedía como fila propia de B y no había hueco; ahora lo hay |
+| `a sharp edge` | fila `What happened` (*a **sharp** (= able to cut) edge on my tongue*) y dato oculto (*you feel the sharp edge when you talk*). Es el detalle que sostiene la urgencia de hoy, y el que la carta de A convierte en tarea de quince minutos |
+
+**Una celda corregida, no una entrada nueva.** `chipped` decía en B «the word they will give you»,
+y A ya no la tiene: pasa a `your **back tooth** in one word — the short way to say what happened on
+Sunday`. Sigue siendo la única entrada del escenario que no reaparece en ninguna otra parte de las
+dos fichas (lista C de `vocab-13.mjs`), y se queda porque el diente es de B y su bloque 4 dice que
+nadie más puede describirlo.
+
+**Orden.** Las dos tablas pasan a orden alfabético literal, con artículo incluido, que es el que ya
+seguían doce de las dieciséis fichas del set; este escenario era uno de los cuatro que no.
+
+**Medido después, con los scripts del repo**
+
+| medida | antes | ahora |
+|---|---|---|
+| prosa (`fase7-scripts/prosa-canonica.mjs`) | A 449 · B 448 | **A 449 · B 448** (techo 450, sin cambio: las tablas no cuentan) |
+| solape A↔B (`fase13-scripts/vocab-13.mjs`) | 8 formas · 80 % | **3 formas · 30 %** |
+| glosa idéntica en las dos pantallas | 7 de 8 | **3 de 3** (`appointment`, `branch`, `opening`) |
+| exclusividad entre escenarios | 15/20 = 75 % | **16/20 = 80 %** |
+| entradas sin sostén en el escenario | 2 (`chipped` ×2) | **1** (`chipped` en B) |
+| filas por rol | 10 y 10 | **10 y 10** |
+
+Nada fuera de las dos tablas de vocabulario: prosa, datos duros, restricciones, datos ocultos,
+exponentes, carta, cierre y criterios de éxito quedan como estaban.

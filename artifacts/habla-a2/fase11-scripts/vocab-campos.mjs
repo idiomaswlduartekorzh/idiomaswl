@@ -1,4 +1,6 @@
 // CAMPO SEMÁNTICO del vocabulario del set — clasificación EXCLUSIVA (una entrada, un campo).
+// 23 ago 2026 · MEDIO 8: reetiquetadas las filas 2A, 2B, 6A y 6B tras separar el vocabulario de
+// las dos pantallas de los escenarios 2 y 6 (6A pasa de 9 a 10 entradas).
 // La medición anterior usaba regex solapadas: una misma entrada caía en «papel» y en «dinero»
 // a la vez, y por eso el 41 % no se podía interpretar. Aquí cada entrada tiene un campo y solo uno.
 import { readFileSync } from 'node:fs';
@@ -6,16 +8,16 @@ const R=JSON.parse(readFileSync('/tmp/habla-set11.json','utf8'));
 const C={
 '1A':['OBJETO','OBJETO','DINERO','OBJETO','DINERO','OBJETO','PAPEL','PERSONA','DINERO','OBJETO'],
 '1B':['OBJETO','PERSONA','DINERO','DINERO','OBJETO','DINERO','TRANSPORTE','OBJETO','TRANSPORTE','OBJETO'],
-'2A':['TIEMPO','TIEMPO','TIEMPO','PAPEL','PAPEL','PAPEL','SALUD','SALUD','DINERO','TIEMPO'],
-'2B':['TIEMPO','TIEMPO','TIEMPO','PAPEL','PAPEL','PAPEL','DINERO','SALUD','SALUD','TRABAJO'],
+'2A':['TIEMPO','TIEMPO','PAPEL','PAPEL','TIEMPO','PAPEL','SALUD','TIEMPO','TIEMPO','SALUD'],
+'2B':['TRABAJO','SALUD','SALUD','TIEMPO','PAPEL','SALUD','TIEMPO','DINERO','SALUD','TRABAJO'],
 '3A':['DINERO','TRABAJO','TRABAJO','TRABAJO','TRABAJO','TRABAJO','TRABAJO','SOCIAL','TRABAJO','TRABAJO'],
 '3B':['TRABAJO','TRABAJO','TRABAJO','TRABAJO','TIEMPO','TRABAJO','DINERO','TRABAJO','TRABAJO','TRABAJO'],
 '4A':['OCIO','OCIO','OCIO','OCIO','OCIO','OCIO','OCIO','OCIO','OCIO','OCIO'],
 '4B':['OCIO','OCIO','OCIO','SOCIAL','OCIO','OCIO','OBJETO','OCIO','TRANSPORTE','SOCIAL'],
 '5A':['TRABAJO','PAPEL','PAPEL','SOCIAL','PAPEL','TRANSPORTE','PAPEL','SOCIAL','TRABAJO','PAPEL'],
 '5B':['PAPEL','PAPEL','PAPEL','PAPEL','PAPEL','TRABAJO','TRABAJO','PAPEL','PAPEL'],
-'6A':['CASA','PERSONA','CASA','CASA','TIEMPO','SOCIAL','PAPEL','PAPEL','OBJETO'],
-'6B':['CASA','CASA','CASA','CASA','TIEMPO','SOCIAL','PAPEL','PAPEL','OBJETO','TRANSPORTE'],
+'6A':['PERSONA','CASA','TRANSPORTE','PERSONA','SOCIAL','CASA','PAPEL','TIEMPO','SOCIAL','CASA'],
+'6B':['CASA','TRABAJO','TRABAJO','CASA','PAPEL','OBJETO','TIEMPO','OBJETO','PAPEL','TRANSPORTE'],
 '7A':['OCIO','PERSONA','PAPEL','PERSONA','DINERO','DINERO','DINERO','PAPEL','OCIO'],
 '7B':['OCIO','TRABAJO','OCIO','PAPEL','TIEMPO','PERSONA','DINERO','TRANSPORTE','DINERO','DINERO'],
 '8A':['DINERO','TRANSPORTE','TIEMPO','PAPEL','PAPEL','DINERO','DINERO','PAPEL','PAPEL','PAPEL'],

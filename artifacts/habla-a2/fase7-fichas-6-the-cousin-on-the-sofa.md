@@ -103,15 +103,16 @@ concordancia sobre ninguno de los dos en ninguna de las dos fichas ni en la cart
 
 | word | what it is | here |
 |---|---|---|
-| to put someone up (*put him up*) | to let someone sleep in your home for a few days | the ask, in three words |
 | a cousin | your aunt's or your uncle's child | Iván — family, and the reason the hostel is an insult |
-| the couch | the long soft seat in the living room | where Iván sleeps in your plan — and the only one in the house |
 | a mattress | the flat soft thing you sleep on | your second way out — a bedroom floor, not the couch |
+| a ticket | the paper you buy to travel on a bus | already bought — the part of Thursday that nobody can move |
+| an aunt | your mother's sister or your father's sister | Iván's mom, and the call you owe tonight |
+| an insult | something that makes a person feel small | what a paid bed is in your family — the door you can't take |
+| the couch | the long soft seat in the living room | where Iván sleeps in your plan — and the only one in the house |
+| the notary | the person who signs and stamps official papers | Friday morning, Iván's real reason — the one word that never leaves this screen |
 | to be out all day | to be away from home from morning to night | Iván, from Friday on |
 | to owe someone a favor | to have to help someone later because they helped you first | Nelson, apartment 402 |
-| the lease | the paper that says you can live in this apartment | their word, not yours — and the cue to change the subject |
-| to sign | to write your name on a paper to say yes to it | the one you say yourself, at the end |
-| to drop | *(about the wifi)* to stop for a moment and then come back | their word, about the wifi — not about falling |
+| to put someone up (*put him up*) | to let someone sleep in your home for a few days | the ask, in three words |
 
 ### Your toolkit
 Blocks **1** `[asks]`, **2**, **3** `[receives]`, **4**, **5**, **6** (it matters · reason locked), **7** (you can say no too) and **8**. The whole box today. *unload* is theirs: ask for it.
@@ -174,15 +175,15 @@ The whole thing in your first turn — day, nights, the couch · you said it mat
 
 | word | what it is | here |
 |---|---|---|
-| to put someone up (*put him up*) | to let someone sleep in your home for a few days | what they are about to ask you for |
-| the couch | the long soft seat in the living room | one object, three claims on it |
-| a mattress | the flat soft thing you sleep on | already in the house — your second bed to offer |
 | a hostel | a cheap place to sleep, in a room with other people | the obvious cheap idea — to ask about, never to assume |
-| to be out all day | to be away from home from morning to night | their words, not yours — reception, and the cue you have to catch |
-| to owe someone a favor | to have to help someone later because they helped you first | a bed that depends on somebody else |
+| a video call | a call where the two people see each other on a screen | one hour on Monday — why the table, and not your room · only if they ask |
+| an interview | a meeting where a company asks you questions for a job | Monday the 24th at nine, the final one — the hour you are protecting |
+| quiet | with no noise around you | what that room has to be from 8:00 — a whole hour before the call |
 | the lease | the paper that says you can live in this apartment | your third thing, and the last one you bring out |
-| to sign | to write your name on a paper to say yes to it | the exact thing you need from them |
+| the signal | how well the phone or the wifi works in one place | good at the table, weak by your window — one of the three reasons, and only if they ask |
+| to be out all day | to be away from home from morning to night | their words, not yours — reception, and the cue you have to catch |
 | to drop | *(about the wifi)* to stop for a moment and then come back | your reason — not the first thing you give |
+| to sign | to write your name on a paper to say yes to it | the exact thing you need from them |
 | to unload | to take boxes out of a truck | nine in the morning, under that window |
 
 ### Your toolkit
@@ -626,3 +627,73 @@ Tres arreglos, ninguno con coste de prosa:
 **Queda abierto y se declara, no se disimula:** cada jugador sabe cuándo ha terminado **él**;
 ninguno sabe cuándo han terminado **los dos**, y eso no se puede comprobar desde una sola pantalla.
 Es una limitación del formato de dos pantallas sin sincronía, no un defecto del texto.
+
+
+---
+
+## Separación de vocabulario (23 ago 2026) — fase13-conjunto.md MEDIO 8
+
+**El defecto.** Ocho entradas estaban en las dos pantallas, las ocho con la glosa idéntica —el
+**84 %** del presupuesto del escenario, el peor del set—, y ROLE A traía nueve filas donde §11 da
+diez. Con las mismas palabras definidas en las dos pantallas, **los bloques 3 y 4 de la caja no
+tenían nada que reparar**, y dos entradas de B hacían algo peor que sobrar: le contaban a Cris lo
+que Dani todavía no ha dicho.
+
+**El reparto.** Las palabras del contrato se quedan en B (`the lease`, `to sign`, `to drop`); las
+de la visita, en A (`to put someone up`, `the couch`, `a mattress`). Después queda **una sola forma
+compartida**, `to be out all day`, y cada pantalla tiene **nueve de diez propias**. Solape del
+escenario: **84 % → 10 %**.
+
+**ROLE A · salen tres, entran cuatro** (de 9 filas a 10)
+
+| sale | por qué |
+|---|---|
+| `the lease` | contrato · es la tercera cosa de Cris y la última que saca · su línea de toolkit ya dice que *lease*, *drop* y *unload* son de B, no de A |
+| `to sign` | contrato · lo que Cris necesita de Dani, dicho por Cris |
+| `to drop` | es la razón del salón, y la razón es de Cris: A la recibe con el bloque 3 o no la recibe |
+
+| entra | dónde la sostiene esta misma ficha |
+|---|---|
+| `an aunt` | fila `Your aunt` (*her call: tonight*), situación (*You just finished the call with your aunt*), objetivo (*before you call your aunt back*), restricciones 2 y 3, dato oculto 1, exponente `I have to call… tonight.` y la tercera línea del cierre. Ocho apariciones y ninguna fila |
+| `a ticket` | fila `Iván` (*bus Thursday the 20th, 4:30 p.m. · ticket bought*) y lo que se pierde (*he already has the ticket*). Es lo que convierte el jueves en un hecho y no en una propuesta |
+| `an insult` | restricción 2 (*In your family a hostel or a paid room is an insult*). Es la palabra de la puerta que A tiene cerrada, y la que explica su `Not a hostel — not in this family.` |
+| `the notary` | fila `Friday the 21st` (*the notary, morning · his mom's papers*) y dato oculto 2. Es la razón cerrada del bloque 6: A la conoce, la usa para sostener que importa y no la puede decir |
+
+**ROLE B · salen cuatro, entran cuatro**
+
+| sale | por qué |
+|---|---|
+| `to put someone up` | la visita es de A · su celda decía «what they are about to ask you for», que es resumirle a Cris el turno de Dani antes de que ocurra |
+| `the couch` | la visita es de A |
+| `a mattress` | la visita es de A · Cris puede ofrecerlo, pero la palabra la trae quien tiene el colchón en su fila de datos y en su plan |
+| `to owe someone a favor` | **no la sostenía nada de la ficha de B** —Nelson y el 402 solo existen en la de A— y adelantaba la tercera salida de Dani, que su propia ficha le dice que no ofrezca todavía. Además era una de las seis formas repetidas entre escenarios (esc 3) |
+
+| entra | dónde la sostiene esta misma ficha |
+|---|---|
+| `an interview` | restricción 1 (*You can't do the interview in your room*), dato oculto 1 y fila `Your interview`. Es la hora que Cris está protegiendo |
+| `a video call` | fila `Your interview` (*one hour · video call · the final one*) y lo que se pierde (*your video call is gone*) |
+| `quiet` | fila `Your interview` (*quiet in the room from 8:00, out at 11:00*). Es la hora anterior a la llamada, que no está en la franja que Cris reserva en voz alta y decide si la reserva bien |
+| `the signal` | fila `The living room` (*the only good light and good signal*) y dato oculto 3 (*a weak signal*). Es la primera de las tres razones, y la ficha manda no darla hasta que la pregunten |
+
+**Lo que se queda compartido, y por qué.** `to be out all day` es lo único que sigue en las dos
+tablas: en A es el dato de Iván y en B es «their words, not yours — the cue you have to catch». La
+pregunta abierta sobre los días de Iván es criterio de éxito de B, así que la palabra tiene que
+poder reconocerse cuando llegue. Sigue sin reaparecer fuera de su fila en ninguna de las dos fichas
+(lista C de `vocab-13.mjs`), como antes de esta pasada.
+
+**Orden.** Las dos tablas pasan a orden alfabético literal, con artículo incluido, que es el que ya
+seguían doce de las dieciséis fichas del set; este escenario era uno de los cuatro que no.
+
+**Medido después, con los scripts del repo**
+
+| medida | antes | ahora |
+|---|---|---|
+| prosa (`fase7-scripts/prosa-canonica.mjs`) | A 440 · B 447 | **A 440 · B 447** (techo 450, sin cambio: las tablas no cuentan) |
+| solape A↔B (`fase13-scripts/vocab-13.mjs`) | 8 formas · 84 % | **1 forma · 10 %** |
+| glosa idéntica en las dos pantallas | 8 de 8 | **1 de 1** (`to be out all day`) |
+| exclusividad entre escenarios | 17/19 = 89 % | **19/20 = 95 %** |
+| entradas sin sostén en el escenario | 2 | **2** (`to be out all day`, una por rol) |
+| filas por rol | 9 y 10 | **10 y 10** |
+
+Nada fuera de las dos tablas de vocabulario: prosa, datos duros, restricciones, datos ocultos,
+exponentes, carta, cierre y criterios de éxito quedan como estaban.
