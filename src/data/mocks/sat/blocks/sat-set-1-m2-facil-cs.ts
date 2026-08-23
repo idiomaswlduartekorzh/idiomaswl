@@ -402,7 +402,7 @@ export const meta: SatItemMeta[] = [
     id: 'q01',
     domain: 'CS',
     tipo: 'words-in-context',
-    dificultad: 1,
+    dificultad: 2,
     tema: 'ciencia',
     razones: {
       A:
