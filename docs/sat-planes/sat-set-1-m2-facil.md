@@ -58,6 +58,24 @@ Dificultad **medida: 8 fáciles, 12 medios, 7 difíciles · media 9,33 sobre 15*
 > ojo—. Desglose por eje en «DUODÉCIMA PASADA» (bloque CS) y «CALIBRACIÓN, cuarta pasada»
 > (bloque EOI). Por R2 los cuatro vuelven a la cola de auditoría.
 
+> ⚠️ **`q14` se reescribió entero el 23 ago 2026, y la fila 15 no se mueve.** El auditor de
+> clave devolvió el bloque II con 14 de 15 aptos y cero dobles claves, y dos avisos sobre este
+> ítem: una **contradicción interna bloqueante** —la clave exigía que los gemelos se separaran
+> en los escalones y el pasaje decía «they came in together, shoulder to shoulder»— y, debajo,
+> que `q09` y `q14` eran **el mismo ítem con otra ropa**: dos objetos casi indistinguibles,
+> tres explicaciones canceladas una a una y la clave como única que queda en pie, de modo que
+> quien resolvía uno resolvía el otro sin leer. Se rehízo `q14` y no `q09` porque `q09` mide
+> **7** y es uno de los dos únicos ítems de lectura en banda fácil del módulo, y porque en sus
+> opciones vive el trabajo de tres intentos contra la prueba a ciegas. Se conservaron tipo,
+> dominio, tema, **clave A** y posición; pasaje, opciones y razones son nuevos. El ítem pasa de
+> **10** a **9** —T 1 · L 2 · D 2 · A 3 · E 1— y sigue declarado **2**, así que la cuenta del
+> módulo no se mueve y la puerta 9 queda plana en `inferences` (q15 9 → q14 9). Mecánica nueva
+> a propósito: la respuesta se **construye** aplicando una regla que el pasaje enuncia entera,
+> en vez de quedar como residuo de tres descartes, que era la operación con la que se ganaban
+> cuatro de los quince ítems auditados. Desglose y medición en «DECIMOTERCERA PASADA» de la
+> cabecera del bloque. **Por R2 vuelve a la cola de auditoría**: prueba a ciegas, clave única y
+> equidad hay que medirlas sobre el abanico nuevo.
+
 ## Lo que este plan fija y no se negocia ítem a ítem
 
 - **27 ítems, todos puntuables.** Reparto 8 · 7 · 7 · 5, el único que suma 27 dejando los cuatro dominios a menos de dos puntos de su peso oficial.
