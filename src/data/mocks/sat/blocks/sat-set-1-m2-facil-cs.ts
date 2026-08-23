@@ -22,8 +22,11 @@ import type { SatItemMeta } from '../module-types'
  * 1 en el otro extremo del examen, donde ya nadie la va a mirar.
  *
  * **Dificultad declarada**, medida con los cinco ejes del calibrador y no puesta a ojo:
- * **1 · 1 · 1 · 2 | 3 · 3 · 3 | 3** en el orden de pantalla, creciente dentro de cada grupo
- * de tipo, que es lo que mira la puerta 9. Los dos ítems más ligeros abren el bloque.
+ * **1 · 1 · 1 · 1 | 3 · 3 · 3 | 3** en el orden de pantalla, no decreciente dentro de cada
+ * grupo de tipo, que es lo que mira la puerta 9 (compara con `<`: el empate pasa). Las
+ * etiquetas de `q02`, `q03` y `q01` dejan de ser una declaración y pasan a ser la medida:
+ * los tres suman **7** en los cinco ejes, banda fácil (5-7). Ver «DUODÉCIMA PASADA» al
+ * final de esta cabecera.
  *
  * Los cuatro `words-in-context` llevan el enunciado del SAT digital —«Which choice completes
  * the text with the most logical and precise word or phrase?»— con el hueco marcado en el
@@ -54,25 +57,34 @@ import type { SatItemMeta } from '../module-types'
  *   clave está escrita como «lo dice por partes» y cita sus dos mitades.
  * - Longitudes 8 · 8 · 8 · 9 con la clave en 8: ni la más larga ni la más corta en solitario.
  *   `masks`, de 5, fue el caso que obligó a añadir la cara corta a la puerta 2.
+ * - «That crossing is called a transit» — glosa del único término opaco del pasaje, que
+ *   antes solo aparecía dentro de la oración del hueco. Es el eje T del ítem; quitarla se lo
+ *   devuelve.
  *
  * **q02 · la abuela (clave C, `automatic`).**
- * - Las tres conductas van **justo después del hueco** y la razón de la clave las cita
- *   literales: «heard half the answer», «asked the next as if I had finished» y «twice she
- *   came back to a question I had already answered», más el cierre «her eyes went to the
- *   window».
- * - La sexta oración empieza por «And», y es deliberado: es la única forma de partir ahí sin
- *   cambiarle la mayúscula a una cita literal de una razón.
+ * - Las tres conductas van **en una sola oración, la inmediatamente posterior al hueco**, y
+ *   la razón de la clave las cita literales: «heard half the answer», «asked the next as if
+ *   I had finished» y «twice she came back to a question I had already answered». No se
+ *   reparten en dos oraciones: ahí vive el eje L y es lo que bajó el ítem a 7.
+ * - El cierre «All the while her eyes went to the window» tiene que ser **la última frase**
+ *   del pasaje, porque así lo describe la razón de C.
  * - El texto ya **no** sostiene `hurried` —«started the next before I had finished» se
  *   cambió a propósito—. Quien lo reponga, resucita una segunda clave.
  *
- * **q03 · la capilla de Aldrec (clave D, `landmark`).**
- * - «For the men who fish here» — reduce la pregunta al uso y deja fuera el motivo de 1712.
- *   Sin ella, `monument` se defiende y el ítem tiene dos claves.
- * - Un anclaje por distractora, cada una con su cláusula: `refuge` ← lo que el mundo sabe de
- *   las capillas de la costa, y cae por «The door is unlocked one day a year»; `monument` ←
- *   la viuda de 1712; `boundary` ← «where the village ends».
- * - La clave vive en las dos oraciones anteriores al hueco: «the white shows up far out» y
- *   «lines the wall up with the pier and steers in on that line».
+ * **q03 · la capilla de Aldrec (clave D, `equipment`).**
+ * - **La oración del hueco decide sola**: «For them, a white wall repainted every spring to
+ *   steer by is a piece of ______» lleva dentro el mantenimiento periódico y el uso
+ *   declarado, que son las dos cosas que definen la clave. Es el eje L del ítem: quien la
+ *   devuelva a «For them it is a piece of ______» le sube un punto.
+ * - Las **tres** oraciones que cita la razón de D son las tres inmediatamente anteriores al
+ *   hueco, y en ese orden: «Two fishermen repaint the seaward wall every spring» / «Coming
+ *   home, a boat lines that wall up with the pier and steers in on that line» / «The men who
+ *   fish here keep the paint fresh for that line». Nada se intercala entre ellas y el hueco.
+ * - «for that line» — ata el mantenimiento al uso. Sin ella, la pintura anual vuelve a
+ *   leerse como aseo o como cuidado de lo propio y `scenery` y `property` se defienden.
+ * - Un anclaje por distractora: `history` ← la viuda de 1712, y cae por «None of them could
+ *   tell you the widow's name», que va pegada a ella; `property` ← quién lo cuida;
+ *   `scenery` ← «the white shows up far out».
  *
  * **q04 · el monte de la abadía (clave A, `license`).**
  * - «for the right to cut» — impide leer el cobro como multa o como precio de la madera, que
@@ -156,6 +168,53 @@ import type { SatItemMeta } from '../module-types'
  * **R2, que sigue vigente:** tocar un ítem lo devuelve entero a la cola de auditoría, y si
  * lo tocado son sus opciones o sus razones, la prueba a ciegas se repite sobre las nuevas.
  * La de **q03 y q04 está pendiente**: no queda una palabra de sus abanicos anteriores.
+ *
+ * ══════════════════════════════════════════════════════════════════════════════
+ * DUODÉCIMA PASADA (22 ago 2026) — tres puntos, todos en L salvo uno, y cero opciones
+ * ══════════════════════════════════════════════════════════════════════════════
+ *
+ * De veinte ítems de lectura del módulo, **ninguno estaba en banda fácil** (5-7 en los cinco
+ * ejes), contra dos del módulo 1. Y no faltaba mucho: `q02` y `q03` medían **8**, es decir al
+ * ras del suelo de la banda media, y `q01` medía **8** con la etiqueta 2. Los tres puntos que
+ * faltaban estaban donde el calibrador los señaló, y no en las opciones:
+ *
+ * - **q02 · L de 2 a 1.** Las tres conductas que deciden `automatic` estaban repartidas en
+ *   dos oraciones —«She asked one, heard half the answer, and asked the next as if I had
+ *   finished.» / «And twice she came back to a question…»— y ahora van coordinadas dentro de
+ *   **una sola oración pegada al hueco**, con las tres citas literales de la razón de C
+ *   intactas y en el mismo orden. Se cae «The last light was going off the yard», la única
+ *   oración que no cita ninguna razón, con lo que «All the while her eyes went to the window»
+ *   pasa a ser de verdad la última frase, que es como la llama esa misma razón; y se parte la
+ *   primera oración en dos para pagar en T lo que la fusión cuesta. 95 → 85 palabras, media
+ *   11,9 → 12,1, la más larga 18 → 27. **8 → 7.**
+ * - **q03 · L de 2 a 1.** La oración del hueco no decidía nada por sí sola —«For them it is a
+ *   piece of ______»— y ahora lleva dentro las dos cosas que definen la clave: «For them, a
+ *   white wall repainted every spring to steer by is a piece of ______». Además, las tres
+ *   oraciones que la razón de D dice citar pasan a ser de verdad las tres anteriores al
+ *   hueco: «None of them could tell you the widow's name» sube a pegarse a la viuda de 1712
+ *   —las dos citas de la razón de A quedan juntas— con un antecedente plural nuevo,
+ *   «Fishermen have gone out from the point ever since», y se cae «The door is unlocked one
+ *   day a year», que anclaba a `refuge` en el abanico anterior y a nada en este. 90 → 99
+ *   palabras, media 11,3 → 12,4, la más larga 17. **8 → 7.**
+ * - **q01 · T de 2 a 1.** El pasaje era el único del grupo con tema técnico y un cociente que
+ *   ninguna razón usa. Se glosa el término opaco —«That crossing is called a transit», que
+ *   antes solo aparecía dentro de la oración del hueco— y «The dip is small: for a planet the
+ *   size of Earth, about one part in ten thousand» pasa a «The dip is very small». 110 → 106
+ *   palabras, media 15,7 → 13,3, y la oración del hueco intacta con sus 36. **8 → 7**, y la
+ *   etiqueta del `meta` baja de **2 a 1** con la medida delante, no a ojo.
+ *
+ * Puerta 9 intacta: `words-in-context` va **1 · 1 · 1 · 1** en el orden de pantalla y la
+ * puerta compara con `<`, de modo que el empate pasa. Puerta 7: los tres siguen dentro de
+ * 25-150 palabras-SAT (71,8 · 83,8 · 93,8). Puertas 2 y 3 sin movimiento posible: **ninguna
+ * opción se tocó**, y en los tres ítems las cuatro opciones repiten cero palabras del texto,
+ * así que no hay variación que explotar ni por arriba ni por abajo.
+ *
+ * **Las razones tampoco se tocaron, y eso condicionó el diseño**: en `q02` la fusión tenía
+ * que dejar las tres citas literales con su misma minúscula, y en `q03` la razón de D dice
+ * «las tres oraciones anteriores al hueco», así que la evidencia no se podía comprimir en una
+ * —lo que se hizo fue meterla en la oración del hueco, que es la otra vía a L=1 que da la
+ * escala—. Por R2 los tres vuelven a la cola de auditoría; la prueba a ciegas **no** hay que
+ * repetirla, porque lo que la ciega ve son enunciado y opciones y ninguno de los dos cambió.
  */
 
 export const items: MCQQuestion[] = [
@@ -164,7 +223,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'When Mr. Ferreira came in from the yard, my grandmother did not ask him where he had been. She set a bowl in front of him and another in front of me. Then she asked me about the arithmetic I had been given at school. Her questions were ______ that evening. She asked one, heard half the answer, and asked the next as if I had finished. And twice she came back to a question I had already answered. All the while her eyes went to the window. The last light was going off the yard.',
+      'Mr. Ferreira came in from the yard. My grandmother did not ask him where he had been. She set a bowl in front of him and another in front of me. Then she asked me about the arithmetic I had been given at school. Her questions were ______ that evening. She asked one, heard half the answer, asked the next as if I had finished, and twice she came back to a question I had already answered. All the while her eyes went to the window.',
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'hurried',
@@ -179,7 +238,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "The chapel at Aldrec stands white on the point. A widow built it in 1712, after the sea took her sons. The door is unlocked one day a year. Two fishermen repaint the seaward wall every spring, and the white shows up far out. Coming home, a boat lines that wall up with the pier and steers in on that line. The men who fish here keep the paint fresh for that line. None of them could tell you the widow's name. For them it is a piece of ______.",
+      "The chapel at Aldrec stands white on the point. A widow built it in 1712, after the sea took her sons. Fishermen have gone out from the point ever since. None of them could tell you the widow's name. Two fishermen repaint the seaward wall every spring, and the white shows up far out. Coming home, a boat lines that wall up with the pier and steers in on that line. The men who fish here keep the paint fresh for that line. For them, a white wall repainted every spring to steer by is a piece of ______.",
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'history',
@@ -209,7 +268,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A planet crossing in front of its star blocks a sliver of the star's light. A telescope watching for years can catch the dip. The dip is small: for a planet the size of Earth, about one part in ten thousand. The star itself is not steady. Cooler patches on its surface turn into view and out again, dimming it by as much or more. They do this on a schedule of their own. That wandering ______ the transit: the dip is still there in the record, unchanged in depth and still arriving on its own fixed cycle, but it no longer stands out from everything else the star is doing.",
+      "A planet crossing in front of its star blocks a sliver of the star's light. That crossing is called a transit. A telescope watching for years can catch the dip in brightness. The dip is very small. The star itself is not steady. Cooler patches on its surface turn into view and out again, dimming it by as much or more. They do this on a schedule of their own. That wandering ______ the transit: the dip is still there in the record, unchanged in depth and still arriving on its own fixed cycle, but it no longer stands out from everything else the star is doing.",
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'reverses',
@@ -298,7 +357,8 @@ export const meta: SatItemMeta[] = [
       D:
         'Cae quien recuerda la primera línea —«did not ask him where he had been»— y lee el interrogatorio a la nieta como el rodeo de quien va detrás de algo. Para ir detrás de algo hay que escuchar lo que contestan, y el texto dice que oye media respuesta y que repite una que ya le habían respondido: no hay blanco al que apuntar.',
     },
-    fuenteHecho: 'Ficción original; ningún hecho real implicado.',
+    fuenteHecho:
+      'Ficción original; ningún hecho real implicado. El 22 ago 2026 se bajó el eje L y solo ese eje: las tres conductas que deciden la clave —«heard half the answer», «asked the next as if I had finished» y «twice she came back to a question I had already answered»— estaban repartidas en dos oraciones y ahora van en **una sola, la inmediatamente posterior al hueco**, con las tres citas literales intactas y en el mismo orden. La sexta oración ya no tiene que empezar por «And» para conservar la minúscula de la tercera cita: al ir coordinada dentro de la misma oración, la minúscula es la natural. Se cae «The last light was going off the yard», la única oración que no cita ninguna razón, con lo que «All the while her eyes went to the window» pasa a ser de verdad la última frase del pasaje, que es como la describe la razón de C. Y se parte la primera oración en dos para compensar en T lo que la fusión añade: 95 a 85 palabras, media de 11,9 a 12,1 —igual de lejos del umbral de 18— y la más larga de 18 a 27. Ninguna opción y ninguna razón se tocaron.',
   },
   {
     id: 'q03',
@@ -317,7 +377,7 @@ export const meta: SatItemMeta[] = [
         'Correcta: las tres oraciones anteriores al hueco describen un objeto de trabajo y no otra cosa. Se le da servicio en fecha fija —«Two fishermen repaint the seaward wall every spring»—, se le da servicio por un motivo declarado —«The men who fish here keep the paint fresh for that line»— y ese motivo es una maniobra concreta: «Coming home, a boat lines that wall up with the pier and steers in on that line». Algo que se revisa cada temporada para que siga sirviendo a una faena es, para quien lo revisa, un pedazo de su equipo, aunque esté hecho de piedra y tenga altar dentro. El estudiante que elige esta ha leído las tres oraciones anteriores al hueco y no ha necesitado ninguna otra. Frase que no se puede recortar: «for that line», que es la que ata el mantenimiento al uso; sin ella, la pintura anual vuelve a poder leerse como aseo o como cuidado de lo propio y `scenery` y `property` se defienden.',
     },
     fuenteHecho:
-      'Ficción original sobre un hecho libre y corriente de la navegación costera: una construcción blanqueada en tierra sirve de marca de día, y alinear dos marcas da la línea con la que se entra a un puerto. Aldrec, la viuda, la fecha de 1712, los dos pintores y el muelle son inventados; no describen ningún pueblo ni ninguna capilla reales, y no se nombra ningún país ni ninguna costa. Nombre comprobado en buscador antes de fijarlo: «Aldrec» no aparece como topónimo. Quien lo cambie, que repita la búsqueda.',
+      'Ficción original sobre un hecho libre y corriente de la navegación costera: una construcción blanqueada en tierra sirve de marca de día, y alinear dos marcas da la línea con la que se entra a un puerto. Aldrec, la viuda, la fecha de 1712, los dos pintores y el muelle son inventados; no describen ningún pueblo ni ninguna capilla reales, y no se nombra ningún país ni ninguna costa. Nombre comprobado en buscador antes de fijarlo: «Aldrec» no aparece como topónimo. Quien lo cambie, que repita la búsqueda. El 22 ago 2026 se bajó el eje L y solo ese eje, en dos movimientos. Primero, **la oración del hueco pasa a decidir sola**: era «For them it is a piece of ______» —que no decide nada sin las tres anteriores— y es «For them, a white wall repainted every spring to steer by is a piece of ______», que lleva dentro las dos cosas que definen la clave, el mantenimiento periódico y el uso declarado. Segundo, las **tres** oraciones que la razón de D cita pasan a ser de verdad las tres inmediatamente anteriores al hueco: antes se colaba entre ellas y el hueco «None of them could tell you the widow\'s name», que ahora sube junto a la viuda de 1712 —las dos citas de la razón de A quedan pegadas— y estrena antecedente plural, «Fishermen have gone out from the point ever since». Se cae «The door is unlocked one day a year», que anclaba a `refuge` en el abanico anterior y a nada en este: ninguna de las cuatro razones vigentes la cita. 90 a 99 palabras, media por oración de 11,3 a 12,4 —el texto sigue muy por debajo del umbral de 18— y la más larga sin cambio en 17. Ninguna opción y ninguna razón se tocaron, y «for that line», la frase que no se puede recortar, sigue en su sitio.',
   },
   {
     id: 'q04',
@@ -342,7 +402,7 @@ export const meta: SatItemMeta[] = [
     id: 'q01',
     domain: 'CS',
     tipo: 'words-in-context',
-    dificultad: 2,
+    dificultad: 1,
     tema: 'ciencia',
     razones: {
       A:
@@ -355,7 +415,7 @@ export const meta: SatItemMeta[] = [
         'Suma las dos caídas de brillo: si el planeta quita luz y las manchas también, el bache se haría más hondo. El texto cierra esa puerta con dos palabras, «unchanged in depth». Y hay una segunda razón: un bache amplificado se vería mejor, no peor, justo al revés de lo que dice el final de la oración.',
     },
     fuenteHecho:
-      'Hecho libre de astronomía de exoplanetas: la actividad estelar como ruido en la fotometría de tránsitos, y la profundidad de ~1 parte en 10.000 para un planeta del tamaño de la Tierra. Estrella, ejemplo y redacción originales.',
+      'Hecho libre de astronomía de exoplanetas: la actividad estelar como ruido en la fotometría de tránsitos. Estrella, ejemplo y redacción originales. El 22 ago 2026 se bajó el eje T del pasaje y solo ese eje: se glosa el término opaco de la entrada —«That crossing is called a transit», que antes solo aparecía dentro de la oración del hueco— y se sustituye «The dip is small: for a planet the size of Earth, about one part in ten thousand» por «The dip is very small», que dice lo mismo sin el cociente que ninguna razón usa. El dato real (~1 parte en 10.000 para un planeta del tamaño de la Tierra) sale del pasaje pero no se contradice en ninguna línea. Media por oración de 15,7 a 13,3 y 110 a 106 palabras; la oración del hueco no se parte y sigue con sus 36, y las tres frases intocables —«dimming it by as much or more», «on a schedule of their own» y «unchanged in depth»— están donde estaban. Ninguna opción y ninguna razón se tocaron.',
   },
   {
     id: 'q07',

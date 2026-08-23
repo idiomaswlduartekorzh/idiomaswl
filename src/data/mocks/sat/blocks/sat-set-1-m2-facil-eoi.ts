@@ -86,16 +86,19 @@ import type { SatItemMeta } from '../module-types'
  * que es la apuesta por defecto de cualquiera que haya visto exámenes: no había nada roto
  * en el texto, la clave estaba en el conector más adivinable del juego.
  *
- * Ahora «As a result,» es distractor y la clave es «In fact,». El párrafo se reescribió para
- * pedirla: la oración del hueco no es la consecuencia del mecanismo —esa ya está dicha en la
- * oración anterior, «carries the plant through a whole sunlit day»— sino la misma afirmación
- * llevada al extremo, de un día de sol a semanas de sequía. Los cuatro conectores siguen
+ * Ahora «As a result,» es distractor y la clave es «In fact,». Los cuatro conectores siguen
  * siendo de **cuatro relaciones distintas** (ejemplo, precisión, consecuencia,
- * simultaneidad; regla 2 del plan) y cada uno tiene su camino real en el texto: «For
- * instance,» lo abre «some of these plants», «As a result,» el mecanismo descrito justo
- * antes y «Meanwhile,» el reloj del párrafo, que va del día a la noche y a la mañana
- * siguiente. El hueco precede a una oración independiente completa, así que los cuatro caben
- * sin romper la sintaxis y ninguno se poda por gramática.
+ * simultaneidad; regla 2 del plan), ninguno es raro ni de registro llamativo, y cada uno
+ * tiene su camino real dentro del texto. El hueco precede a una oración independiente
+ * completa, así que los cuatro caben sin romper la sintaxis y ninguno se poda por gramática.
+ *
+ * ⚠️ **El pasaje que aquí se describía ya no existe.** Era el de las plantas del desierto
+ * —fotosíntesis nocturna, CO₂ guardado hasta la mañana siguiente, semanas de sequía— y se
+ * retiró entero en la cuarta pasada de calibración (última sección de esta cabecera). Lo
+ * vigente de este párrafo es el juego de conectores, que no se ha tocado desde entonces;
+ * caduca todo lo que decía sobre el texto: «carries the plant through a whole sunlit day»,
+ * «some of these plants» y el reloj de día y noche están en el pasaje anterior, no en el
+ * que hay.
  *
  * Efecto de conjunto que esto deja, y que se asume a conciencia: en los tres ítems de
  * transiciones del bloque **la clave nunca es el conector de consecuencia** —«As a result,»,
@@ -453,6 +456,76 @@ import type { SatItemMeta } from '../module-types'
  *
  * Por R2, q23, q24, q26 y q27 cambiaron de texto y vuelven los cuatro a la cola de auditoría:
  * la ciega hay que repetirla sobre ellos. q25 no cambió ni un carácter en esta pasada.
+ *
+ * ## CALIBRACIÓN, cuarta pasada (22 ago 2026) — el último texto denso, y la curva medida antes de tocarla
+ *
+ * El bloque quedó en **10,60** de media contra 9,40 del mismo dominio en el módulo 1, y sigue
+ * siendo el único de los cuatro por encima de su equivalente. Igualarlo no se puede: `q23` y
+ * `q24` son `rhetorical-synthesis`, que arranca en A=3 y E=2 por definición de la escala, de
+ * modo que su suelo es 11 y hoy miden 12 cada uno. Aquí el objetivo es **acotar, no igualar**.
+ *
+ * El único punto barato que quedaba era `q25`, que medía **11** —el más alto de los tres de
+ * transiciones— y por el mismo diagnóstico exacto que tenía `q27` antes de reescribirlo: era
+ * el único texto denso que quedaba fuera de dos ítems, 138 palabras a 23,0 por oración para
+ * elegir entre cuatro conectores. `q27` cayó de 12 a 9 cuando se reescribió entero con un
+ * pasaje concreto y corto; a `q25` se le ha hecho lo mismo.
+ *
+ * **Lo que se conserva de `q25`, y es todo lo que el plan fija de un ítem**: tipo
+ * (`transitions`), dominio (EOI), tema (ciencia), **clave D** y su posición, la cuarta del
+ * bloque. La fila 26 del plan dice **D** y ahí sigue: mover esa letra a otra bajaría la D del
+ * módulo de 6 a 5 y subiría otra a 8, y el reparto de claves se defiende a nivel de módulo,
+ * no de ítem.
+ *
+ * **Lo que se conserva además, y el plan no obliga: las cuatro opciones.** «For instance,» ·
+ * «Meanwhile,» · «As a result,» · «In fact,» siguen exactamente como estaban, con sus cuatro
+ * relaciones distintas y ninguna marcada. El pasaje nuevo está escrito para que cada una
+ * conserve su camino real: el cuantificador «some of these frogs» abre «For instance,», el
+ * calendario «winter / By midwinter / In spring» abre «Meanwhile,», y el mecanismo del azúcar
+ * abre «As a result,» —que muere, como antes, porque la consecuencia ya está dicha en la
+ * oración inmediatamente anterior al hueco, hoy «costs the frog nothing at all»—. Las
+ * **razones sí son nuevas**, y no había alternativa: citaban literalmente un pasaje que ya no
+ * existe. Es lo mismo que se hizo con `q27`, `q10` y `q15`.
+ *
+ * **El pasaje nuevo, medido**: 76 palabras (el encargo pedía 70-90), **67,8 palabras-SAT**,
+ * seis oraciones de 12 a 13 palabras —media 12,7— y las dos que el conector une contiguas:
+ * «A whole winter locked in ice costs the frog nothing at all.» y la del hueco. Venía de
+ * 124,8 palabras-SAT y 23,0 de media. **La lista de la puerta 7 pasa a ser 123,0 · 115,5 ·
+ * 75,3 · 67,8 · 68,0** palabras-SAT en el orden en que van (q23 · q24 · q26 · q25 · q27); las
+ * cinco siguen dentro de 25-150.
+ *
+ * **La medida, eje por eje, con la escala del calibrador delante**
+ * (`docs/sat-auditorias/informes/sat-set-1-m1-dificultad.md` §1; bandas 5-7 fácil · 8-11 medio
+ * · 12-15 difícil):
+ *
+ * | eje | antes | ahora | por qué |
+ * |---|---|---|---|
+ * | T · complejidad | 2 | **1** | media de 23,0 a 12,7 palabras por oración, léxico corriente y tema concreto (una rana bajo la hojarasca, no fotosíntesis nocturna) |
+ * | L · localización | 3 | **2** | decidían la oración del hueco, la anterior, el mecanismo repartido en tres oraciones y el cuantificador; ahora decide el par contiguo, que es lo máximo que puede bajar un ítem de transiciones: el conector une dos oraciones y hay que leer las dos |
+ * | D · distancia | 3 | 3 | ninguna opción se tocó |
+ * | A · abstracción | 2 | 2 | relación discursiva, por tipo |
+ * | E · enunciado | 1 | 1 | «…the most logical transition» es fórmula fija sin metalenguaje |
+ * | **suma** | **11** | **9** | banda media, en su mitad baja |
+ *
+ * **La curva, medida antes de decidir (R16).** El encargo avisaba de que la curva de
+ * transiciones iba 9 · 11 · 9 y de que el plan la pide creciente, y avisaba también de que no
+ * se arreglara con los números del propio encargo. Medida después: **9 · 9 · 9** en el orden
+ * en que van (q26 · q25 · q27). Es no decreciente, que es lo que comprueba la puerta 9 —que
+ * compara con `<`, de modo que el empate pasa—. **Así que no se intercambia nada.** Si se
+ * hubiera aplicado la regla antes de medir, dando por hecho que `q25` caería a 7 u 8, se
+ * habría movido `q25` delante de `q26` para arreglar una curva que ya estaba bien.
+ *
+ * **Las etiquetas `dificultad` tampoco se mueven**: 9 es banda media y `q25` estaba en 2. Los
+ * tres de transiciones siguen en 2 · 2 · 3 declarados, con `q27` etiquetado por encima de su
+ * medida desde la tercera pasada.
+ *
+ * **Lo que gana el bloque**: 12 · 12 · 9 · 9 · 9 = 51, media **10,20** contra 10,60. El módulo
+ * 1 en EOI está en 9,40, así que la brecha del bloque pasa de +1,20 a +0,80 sin tocar una sola
+ * opción de los cinco ítems.
+ *
+ * Por R2 `q25` vuelve entero a la cola de auditoría. La prueba a ciegas **sí** hay que
+ * repetirla sobre él aunque las opciones no hayan cambiado, porque lo que la ciega mide en un
+ * ítem de transiciones es la frecuencia de los cuatro conectores y eso solo se lee sobre el
+ * conjunto vigente; y hay que volver a comprobar la clave única contra el pasaje nuevo.
  */
 
 export const items: MCQQuestion[] = [
@@ -506,7 +579,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Most plants open the pores of their leaves by day, when sunlight drives photosynthesis, and every hour those pores stay open the leaf loses water. In a desert at midday the air pulls water out of a leaf faster than the roots can replace it, so many desert plants keep their pores shut through the heat. They open them after dark, when the air is cool and still. The carbon dioxide taken in at night is stored in the leaf and spent the next morning behind closed pores. That carries the plant through a whole sunlit day without opening its leaves to the dry air. ______ the same machinery carries some of these plants through weeks of drought, when the roots find nothing to take up and the leaf works again and again on the carbon already inside it.',
+      'A frog of the northern woods spends the winter under the leaf litter. By midwinter ice has formed between its cells and its heart has stopped. Sugar floods the cells and holds them whole while the frog is frozen. In spring the frog thaws, hops away, and feeds within a day. A whole winter locked in ice costs the frog nothing at all. ______ some of these frogs freeze and thaw many times in a single winter.',
     text: 'Which choice completes the text with the most logical transition?',
     options: [
       'For instance,',
@@ -599,16 +672,16 @@ export const meta: SatItemMeta[] = [
     tema: 'ciencia',
     razones: {
       A:
-        'Lee la oración del hueco como un ejemplo de la anterior, y «some of these plants» invita a ello. Pero un ejemplo tendría que ser un caso de lo que se acaba de afirmar —una planta pasando un día de sol con los poros cerrados— y lo que la oración describe va más allá: semanas sin nada que absorber y el mismo carbono aprovechado una y otra vez dentro de la hoja. Es el camino de quien ve un cuantificador y oye «por ejemplo».',
+        'Lee la oración del hueco como un ejemplo de la anterior, y «some of these frogs» invita a ello. Pero un ejemplo tendría que ser un caso de lo que se acaba de afirmar —una rana pasando un invierno entero helada y saliendo indemne— y lo que la oración describe va más allá: no un deshielo al final, sino muchos dentro del mismo invierno. Es el camino de quien ve un cuantificador y oye «por ejemplo».',
       B:
-        'Sigue el reloj del texto en vez de su argumento: hay día, hay noche y hay «the next morning», y de ahí a leer el cierre como algo que ocurre a la vez hay un paso. Pero en el hueco no hay dos procesos simultáneos ni dos sujetos: son las mismas plantas y la misma maquinaria, medidas en semanas en lugar de en un día.',
+        'Sigue el calendario del texto en vez de su argumento: hay invierno, hay «By midwinter» y hay primavera, y de ahí a leer el cierre como algo que ocurre a la vez hay un paso. Pero en el hueco no hay dos procesos simultáneos ni dos sujetos: son las mismas ranas y el mismo mecanismo, contados por veces en lugar de por un solo invierno.',
       C:
-        'Encadena por consecuencia dos oraciones que dicen lo mismo con distinta intensidad. Aguantar semanas de sequía no se sigue de aguantar un día de sol: es la misma capacidad enunciada en su límite. Y la consecuencia del mecanismo ya está dicha en la oración anterior —«carries the plant through a whole sunlit day»—, así que ponerla otra vez en el hueco repite el eslabón. Es lo que elige quien encuentra un mecanismo descrito y da por hecho que el final del párrafo es su efecto; es, con diferencia, la apuesta segura del que no lee.',
+        'Encadena por consecuencia dos oraciones que dicen lo mismo con distinta intensidad. Aguantar muchas heladas no se sigue de aguantar una: es la misma capacidad enunciada en su límite. Y la consecuencia del mecanismo ya está dicha en la oración anterior —«costs the frog nothing at all»—, así que ponerla otra vez en el hueco repite el eslabón. Es lo que elige quien encuentra un mecanismo descrito y da por hecho que el final del párrafo es su efecto; es, con diferencia, la apuesta segura del que no lee.',
       D:
-        'Correcta: la oración del hueco dice lo mismo que la anterior, llevado al extremo. La anterior afirma que el mecanismo saca a la planta de un día entero de sol; la del hueco, que a algunas las saca de semanas de sequía. Mismo sujeto, misma maquinaria, misma dirección y más fuerza: eso es lo que marca «In fact». El párrafo no cambia de relación al cerrar, sube la apuesta.',
+        'Correcta: la oración del hueco dice lo mismo que la anterior, llevado al extremo. La anterior afirma que un invierno entero encerrada en hielo no le cuesta nada a la rana; la del hueco, que a algunas no les cuesta nada repetirlo muchas veces dentro de ese mismo invierno. Mismo sujeto, mismo mecanismo, misma dirección y más fuerza: eso es lo que marca «In fact». El párrafo no cambia de relación al cerrar, sube la apuesta.',
     },
     fuenteHecho:
-      'Hecho libre de fisiología vegetal: apertura estomática nocturna, fijación del CO2 en la hoja hasta la mañana siguiente y, en sequía prolongada, ciclo cerrado con los poros sin abrir y el carbono respirado reaprovechado dentro de la hoja. Sin especie, desierto ni estudio concretos. El 22 ago 2026 el pasaje —el más denso del módulo— se partió por oraciones sin cambiar de contenido ni de número de palabras: baja de 34,5 a 23,0 palabras por oración de media y de 43 a 33 la más larga. La oración del hueco no se parte y «carries the plant through a whole sunlit day» sigue siendo la inmediatamente anterior, que es lo que mantiene falsa a C; los conectores, del texto y del juego, están intactos.',
+      'Hecho libre de fisiología animal: hay ranas de bosque templado que invernan bajo la hojarasca con el hielo formado entre las células y no dentro, con el corazón parado, con azúcar acumulada en las células como protección, y que se deshielan y se vuelven a helar varias veces en un mismo invierno. Sin especie, sin país y sin estudio concretos, como el resto del módulo. **Pasaje escrito de cero el 22 ago 2026 para la banda baja**, en sustitución del de las plantas del desierto, que era el texto más denso que quedaba fuera de dos ítems (138 palabras a 23,0 por oración): 76 palabras, 67,8 palabras-SAT, 12,7 palabras por oración de media y 13 la más larga. Las dos oraciones que el conector une son contiguas y dicen lo mismo con distinta fuerza —lo que un invierno helada le cuesta a la rana, y cuántas veces lo repite—, y los tres distractores conservan dentro del texto su camino real: el cuantificador «some of these frogs» para el de ejemplo, el calendario «winter / By midwinter / In spring» para el de simultaneidad y el mecanismo del azúcar para el de consecuencia. **Las cuatro opciones no se tocaron**: siguen siendo cuatro relaciones distintas y ninguna marcada.',
   },
   {
     id: 'q27',
