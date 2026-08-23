@@ -89,7 +89,7 @@ Blocks **1** `[grants]`: he came down to you. **2**: tomorrow you share a car. *
 | asking about the people | `Who exactly is …?` | open up a person you have never met |
 | asking about the plan | `Why didn't you tell me …?` | ask about a decision he made without you |
 | changing one thing | `Wait — we didn't say that.` | stop it there, change one thing |
-| group message | `That's it — I'll send …` | say his part is fine, and send it |
+| group message | `That's it — I'll send …` · `What do I tell …?` | say his part is fine, and send it · get the words you can repeat to the others |
 | keeping the friendship | `I'm not angry, but …` | complain and still travel together tomorrow |
 | putting a price on a yes | `Only if … — then yes.` | say yes, and put a price on it |
 | saying what happens if | `If I don't have it on …, I'll …` | say what happens when the day comes and the thing isn't there — the name tonight, the money on his day |
@@ -167,7 +167,7 @@ Blocks **1** `[asks]`, because you open, and you open with something uncomfortab
 | owning the lateness | `I know it's last minute, but …` | put the lateness in front before she does |
 | owning your half | `It's my fault, but …` | own your half, and keep what you came for |
 | saying your part out loud | `I'll say it like this: …` | say your part of the message out loud, whole |
-| something for something | `If you …, I'll …` | something for something, in one sentence |
+| something for something | `If you …, I'll …` · `If I don't …, I'll …` | something for something, in one sentence · and what you do if your own day falls through |
 | the day you pay | `Can I pay you on …?` | ask for one exact day, not "soon" |
 | when they paid you | `They paid me on …` | a fact with its day on it |
 
@@ -217,12 +217,12 @@ what he tells Sebastián and what he tells Andrea tonight, and by what time.
 Kevin's three, or changes one thing in them, and sends the message.
 
 **Four rules:**
-- Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again.
+- Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again. And a line answered *yes* or *no* is not said: ask it open, or it doesn't count.
 - A day is not a date until the other one says what happens if he pays late. The 100,000 needs two mouths, not one.
 - The message says two numbers — how many people go, and how many cars leave — and the two have to be the ones you just said out loud. If they aren't, say them again.
 - Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are not lines by themselves.
 
-**Six lines, or the message doesn't go.** This one does not close tonight, and that is the plan.
+**Six lines, or the message doesn't go.** Valentina writes nothing until she has heard Kevin's three. This one does not close tonight, and that is the plan.
 
 ## After — both screens, in Spanish
 
@@ -511,3 +511,39 @@ se escribe entera con lengua del nivel**. Contador después: **ROLE A 443 · ROL
 **Aviso que no es defecto:** la ruta mínima pasó de 8 turnos a **9 de 9**. Sigue dentro de §4, pero
 con margen cero: cualquier reparación de la caja empuja fuera de banda. Es la factura de la pasada
 de carga, y la cobra la simulación.
+
+---
+
+## Pasada de simulación (22 ago 2026) — `fase13-simulacion-7.md`
+
+Cinco parejas sobre el texto con las cuatro pasadas del día dentro. **Ninguna se sale de la banda de
+9 turnos por rol; cuatro de cinco la agotan.** La factura del margen cero que avisó el informe de
+nivel no es desbordamiento: son **líneas sin decir** — la pareja 2 necesitaba 11/11 y la 4 necesitaba
+10/10, y la tercera línea de Kevin muere literalmente sobre el turno 9. Cierre total: 23,0 de 30.
+
+**La fila `Payday` funcionó, y se puede medir:** en la ronda anterior la palabra `Friday` no aparece
+**ni una vez** en las cinco conversaciones; hoy el respaldo sale en **5 de 5**, y los cinco turnos
+llevan marca de consulta a la ficha. Cambió un hecho que había que inventar por uno que hay que
+mirar — que es exactamente lo que se buscaba.
+
+**Y quitar el `OK —` funcionó:** tres usos de palabra prohibida en 86 turnos, **ninguno llegado por
+un exponente impreso**.
+
+Cuatro arreglos, los cuatro sin coste de prosa:
+
+| # | dónde | por qué |
+|---|---|---|
+| 1 | B · exponentes, `something for something` gana `If I don't …, I'll …` | su condicional impresa era `If you …, I'll …` y su segunda línea del cierre pide **el sujeto contrario**. Ahí se fugaba al español |
+| 2 | A · exponentes, `group message` gana `What do I tell …?` | la pareja 3 necesitó `What do I say to …?` **y está impreso solo en la ficha del otro jugador**. Es la fuga más nítida de las seis: no le faltaba lengua, le faltaba su copia |
+| 3 | cierre · regla 1 | **la regla prohibía cinco palabras, no ganar por respuesta corta**: Kevin se llevó sus dos objetivos con 26 palabras contestando preguntas cerradas que Valentina fabricaba leyendo la pantalla de cierre. Ahora una línea contestada *sí* o *no* no cuenta como dicha |
+| 4 | cierre · remate | `Six lines, or the message doesn't go` **no puerteaba nada** — la pareja 3 mandó el mensaje con 1,0 de 6. Entra quién no escribe hasta cuándo, que es lo único comprobable desde una pantalla |
+
+**Lo que se declara y no se arregla:**
+
+- **La glosa de los 150.000 vive en la carta, que es pantalla de ella**, y Kevin la necesita. Su
+  vocabulario está en el tope de 10; meterla obliga a sacar otra, y eso es decisión de conjunto.
+- **El taller de Hernán sale en 1 de 5 parejas** y **la carta se puede guardar ocho turnos** sin que
+  nada lo impida. Es dosificación, no defecto: la ficha manda decirlo «solo si pregunta».
+- Las seis fugas al español se concentran entre los turnos globales 5 y 14, **cero en los cuatro
+  primeros y cero en el tramo del mensaje**, y las dos parejas con jugador flojo se fugan en el
+  global 5 —el turno inmediatamente posterior a la carta— **con la misma frase**.
