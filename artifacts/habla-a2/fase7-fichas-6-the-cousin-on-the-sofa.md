@@ -97,7 +97,7 @@ concordancia sobre ninguno de los dos en ninguna de las dos fichas ni en la cart
 | The apartment | Cabecera · two bedrooms · one couch · one table in the living room |
 | Your aunt | her call: tonight |
 | Apartment 402 | Nelson · away the 24th–30th · one favor owed, one use only |
-| Sunday the 23rd | kitchen, after lunch · the day for the things you did not decide today |
+| Things left for later | there is a day for them, and Cris knows which |
 
 ### Words you need here
 
@@ -243,8 +243,8 @@ one word, the two of you agreed on different things.
 **Four rules:**
 - Your three lines are yours. If the other one says one of them, it doesn't count — say it again yourself.
 - You can check with your own words. *So, we're clear then* is not one of the six lines, and it isn't cheating either.
-- Saying yes is not a line. *Yeah*, *sure*, *okay*, *fine* and *that works* are not lines by themselves.
-- Nothing goes one way. In the same turn, say what you give and what you get.
+- Saying yes is not a line. *Yeah*, *sure*, *okay*, *fine* and *that works* are not lines by themselves — and they don't close the `Together` either.
+- Nothing goes one way. In the same turn, say what you give and what you get — and the other one says out loud what they give back.
 
 **Six lines, or it isn't closed.** The easy one to forget is the third one. Skip it and the
 conversation just stops. It doesn't end.
@@ -588,7 +588,7 @@ pidiera el intercambio en una sola oración o encadenar contraofertas.
 
 | # | dónde | por qué |
 |---|---|---|
-| C1 | regla 4 · `Nothing is given away for free…` → `Nothing goes one way. In the same turn, say what you give and what you get.` | pasiva |
+| C1 | regla 4 · `Nothing is given away for free…` → `Nothing goes one way. In the same turn, say what you give and what you get — and the other one says out loud what they give back.` | pasiva |
 | C2 | remate · `The one that gets skipped…; it did not end.` → `The easy one to forget…` | `get`-pasiva **y** pasado contrafáctico, los dos en dos líneas |
 | C3 | regla 3 · `Nobody nods their way through.` → `Saying yes is not a line.` | modismo nativo con `way`. Sigue sin género, que es lo que la ronda anterior vino a arreglar |
 | C4 | regla 2 · `Checking with your own words does count.` → `You can check with your own words.` | gerundio en sujeto + `do` enfático |
@@ -604,3 +604,25 @@ Faltan cuatro anclajes que los exponentes sí ejercitan —`past-simple-irregula
 `prepositions-place` (el cierre reparte tres cuerpos en tres sitios y las preposiciones de lugar se
 quedaron sin anclaje) y `verb-to-be`—, y `Let's`, `Why not` y `What about` salen **cero veces** en
 todo `src/data/grammar/ingles/`.
+
+---
+
+## Pasada de simulación (22 ago 2026) — `fase13-simulacion-6.md`
+
+Cinco parejas sobre el cierre repartido. **Lo mejor que ha hecho la ronda:** en las cinco, Cris
+tiene que decir sus dos horas — el agujero que la pasada de carga vino a tapar está tapado, y la
+contrasonda lo confirma con el caso exacto que lo destapó. **Dos de cinco llegan a las seis líneas**,
+y la banda de 9 turnos por rol solo es correcta para esas dos: el presupuesto de tiempo sigue
+calculado sobre una conversación más corta que la que el escenario exige.
+
+Tres arreglos, ninguno con coste de prosa:
+
+| # | dónde | antes → ahora | por qué |
+|---|---|---|---|
+| 1 | datos de Dani, fila `Sunday the 23rd` | `kitchen, after lunch · the day for the things you did not decide today` → `Things left for later \| there is a day for them, and Cris knows which` | **la tercera línea de Cris no era suya**: el día y el sitio estaban en la tabla de datos de Dani, y el exponente para decirlo (`parking it`) también. Dani la dijo primero en tres de las cinco parejas. La pasada de carga escribió que las tres de Cris «son las tres que solo él tiene»; de la tercera no era verdad. Dani conserva el exponente —puede proponer aplazar— pero el día y el sitio son de Cris |
+| 2 | regla 3 | `…are not lines by themselves` → `… — and they don't close the Together either` | la regla prohibía asentir en las seis líneas **y no cubría el `Together`**: el atajista lo cerró con `Yeah. That works.` y se fue con dos líneas suyas sin decir |
+| 3 | regla 4 | `…say what you give and what you get` → `… — and the other one says out loud what they give back` | **era cumplible por una sola boca**: el mismo hablante decía las dos mitades sin que el otro concediera nada, y por ahí Dani perdía la franja, el contrato y el domingo contra un compañero que solo decía `OK` |
+
+**Queda abierto y se declara, no se disimula:** cada jugador sabe cuándo ha terminado **él**;
+ninguno sabe cuándo han terminado **los dos**, y eso no se puede comprobar desde una sola pantalla.
+Es una limitación del formato de dos pantallas sin sincronía, no un defecto del texto.
