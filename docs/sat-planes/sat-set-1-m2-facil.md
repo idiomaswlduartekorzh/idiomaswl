@@ -2,17 +2,21 @@
 
 **Variante: M2-fácil.** Es la rama **estándar** del módulo 2: la que se sirve a quien no llega al corte del módulo 1.
 
-Dificultad: objetivo **6 fáciles, 16 medios, 5 difíciles**, con media medida ≤ 9,3 en la escala de cinco ejes del calibrador. Esas cifras salen de una medición, no de un deseo: el 13 · 11 · 3 original era **inalcanzable con este reparto de tipos** —once ítems de 27 no pueden bajar de la banda media sin acercar las opciones, que es justo lo que reabre la prueba a ciegas, y tres no pueden bajar de difícil—, así que pedir trece fáciles obligaba a clavar en su mínimo a catorce ítems de quince. Lo que distingue a las dos ramas es la **media**, no la ausencia de los otros niveles: un M2-difícil de 27 ítems difíciles no reproduce el examen, y un M2-fácil sin ningún ítem difícil deja de medir a quien va bien (blueprint §2).
+Dificultad **medida: 8 fáciles, 12 medios, 7 difíciles · media 9,33 sobre 15**, contra **10,19 del módulo 1** con la misma vara. Los cuatro bloques están por debajo de su homólogo. El objetivo era 6 · 16 · 5 y la mezcla real sale más de barra que de campana: se deja así porque forzarla no baja la media —es trasiego de bandas— y obligaría a re-endurecer tres pasajes recién ablandados. El 13 · 11 · 3 del plan original era inalcanzable con este reparto de tipos, medido: once ítems de 27 no bajan de la banda media sin acercar las opciones, que es justo lo que reabre la prueba a ciegas. Y la lección que costó seis calibraciones: **un módulo fácil se escribe fácil desde el primer día**; ablandar un ítem ya endurecido agota su margen en tres o cuatro puntos.
 
 **Y la lección que costó tres calibraciones:** un módulo fácil se escribe fácil desde el primer día. Ablandar ítems ya endurecidos contra la prueba a ciegas no funciona —el margen por texto se agota en tres o cuatro puntos— y aflojar las opciones deshace el trabajo. Si falta banda fácil, se escriben ítems nuevos diseñados para eso.
 
-> ⚠️ **Ese 12 · 10 · 5 está pendiente de re-medición y se espera que vuelva a 12 · 12 · 3.** El
-> calibrador midió `q23` y `q24` en 14 —el techo de los dos módulos— y por eso llevan etiqueta 3;
-> las dos mediciones son **anteriores** a la rebaja de sus cuadernos de notas, que bajó los textos
-> de 144,3 y 146,2 a 122,7 y 115,8 palabras-SAT y adelantó a las tres primeras viñetas los hechos
-> que matan a los distractores. Si al re-medir caen por debajo de 13, la etiqueta honrada es 2. No
-> se ha bajado a ojo: una etiqueta se cambia con la medida delante, y el 3 es el único número
-> firmado que hay.
+> ✅ **`q23` y `q24` re-medidos el 22 ago 2026, y la estimación solo acertó a medias.** Los dos
+> llevaban etiqueta 3 de cuando el calibrador los midió en 14 —el techo de los dos módulos—, antes
+> de la rebaja de sus cuadernos de notas. Se esperaba que cayeran los dos a banda media y cayó
+> uno: `q23` mide **12** y conserva el 3; `q24` mide **11** y pasa a **2**. Por eso las filas 23 y
+> 24 llevan hoy los ids cruzados: la puerta 9 compara la curva **dentro de cada grupo de tipo** y
+> con `<`, así que `q23` (3) delante de `q24` (2) la rompía. Se intercambiaron los dos objetos
+> enteros —ítem y meta—, **sin renumerar ids y sin tocar ni un texto, ni una opción, ni una
+> razón**, igual que en las filas 25 y 26. De paso el último bloque del cronómetro deja de abrir
+> con su ítem más caro. Lo que esto enseña: hasta ese día la puerta 9 pasaba **porque la etiqueta
+> estaba mal**, no porque el bloque estuviera ordenado —una etiqueta desactualizada no es
+> documentación floja, es una puerta desactivada sin que nadie lo decida—.
 
 > ⚠️ **Bloque II (`q09`–`q15`) re-etiquetado el 22 ago 2026, con la medida delante.** Las filas
 > 9 a 15 de esta tabla ya no dicen la dificultad del plan: dicen la medida. Cinco números son del
@@ -24,6 +28,9 @@ Dificultad: objetivo **6 fáciles, 16 medios, 5 difíciles**, con media medida �
 > difíciles en el módulo entero: eso ya no se arregla dentro de este bloque, porque bajar más
 > exige acercar las opciones entre sí y ahí es donde vive el trabajo contra la prueba a ciegas.
 > Es una decisión de módulo.
+>
+> (Ese **8 · 11 · 8** duró hasta la re-medición de `q24` ese mismo día, que lo bajó de 3 a 2:
+> la cuenta vigente del módulo es **8 · 12 · 7**, la que encabeza este plan.)
 
 > ⚠️ **q10 y q15 se reescribieron enteros el 22 ago 2026 y sus filas vuelven a decir la medida.**
 > No se ablandaron: pasaje, opciones y razones son nuevos, y de cada uno solo se conservaron
@@ -83,21 +90,21 @@ Contrastado el 20 ago 2026 con un examen oficial de práctica de College Board. 
 
 | nº | id | dominio | tipo | tema | dificultad | clave |
 |---|---|---|---|---|---|---|
-| 1 | `q01` | CS | `words-in-context` | ciencia | 1 | **B** |
-| 2 | `q02` | CS | `words-in-context` | literatura | 1 | **C** |
-| 3 | `q03` | CS | `words-in-context` | humanidades | 2 | **D** |
-| 4 | `q04` | CS | `words-in-context` | historia | 2 | **A** |
-| 5 | `q05` | CS | `text-structure-purpose` | ciencia | 1 | **B** |
-| 6 | `q06` | CS | `text-structure-purpose` | literatura | 1 | **C** |
-| 7 | `q07` | CS | `text-structure-purpose` | humanidades | 2 | **A** |
+| 1 | `q02` | CS | `words-in-context` | literatura | 1 | **C** |
+| 2 | `q03` | CS | `words-in-context` | humanidades | 1 | **D** |
+| 3 | `q04` | CS | `words-in-context` | historia | 1 | **A** |
+| 4 | `q01` | CS | `words-in-context` | ciencia | 2 | **B** |
+| 5 | `q07` | CS | `text-structure-purpose` | humanidades | 3 | **A** |
+| 6 | `q06` | CS | `text-structure-purpose` | literatura | 3 | **C** |
+| 7 | `q05` | CS | `text-structure-purpose` | ciencia | 3 | **B** |
 | 8 | `q08` | CS | `cross-text-connections` | humanidades | 3 | **D** |
-| 9 | `q09` | II | `central-ideas-details` | ciencia | 2 | **B** |
+| 9 | `q09` | II | `central-ideas-details` | ciencia | 1 | **B** |
 | 10 | `q10` | II | `central-ideas-details` | literatura | 2 | **B** |
 | 11 | `q11` | II | `command-of-evidence-textual` | humanidades | 2 | **D** |
 | 12 | `q12` | II | `command-of-evidence-textual` | historia | 3 | **C** |
-| 13 | `q13` | II | `command-of-evidence-quantitative` | ciencia | 2 | **A** |
-| 14 | `q14` | II | `inferences` | literatura | 3 | **A** |
-| 15 | `q15` | II | `inferences` | humanidades | 2 | **C** |
+| 13 | `q13` | II | `command-of-evidence-quantitative` | ciencia | 3 | **A** |
+| 14 | `q15` | II | `inferences` | humanidades | 2 | **C** |
+| 15 | `q14` | II | `inferences` | literatura | 2 | **A** |
 | 16 | `q16` | SEC | `boundaries` | historia | 1 | **A** |
 | 17 | `q17` | SEC | `form-structure-sense` | ciencia | 1 | **C** |
 | 18 | `q18` | SEC | `boundaries` | humanidades | 1 | **A** |
@@ -105,13 +112,15 @@ Contrastado el 20 ago 2026 con un examen oficial de práctica de College Board. 
 | 20 | `q19` | SEC | `form-structure-sense` | humanidades | 2 | **B** |
 | 21 | `q21` | SEC | `form-structure-sense` | ciencia | 2 | **D** |
 | 22 | `q22` | SEC | `boundaries` | humanidades | 2 | **B** |
-| 23 | `q23` | EOI | `rhetorical-synthesis` | humanidades | 3 | **D** |
-| 24 | `q24` | EOI | `rhetorical-synthesis` | historia | 3 | **A** |
+| 23 | `q24` | EOI | `rhetorical-synthesis` | historia | 2 | **A** |
+| 24 | `q23` | EOI | `rhetorical-synthesis` | humanidades | 3 | **D** |
 | 25 | `q26` | EOI | `transitions` | literatura | 2 | **C** |
 | 26 | `q25` | EOI | `transitions` | ciencia | 2 | **D** |
-| 27 | `q27` | EOI | `transitions` | humanidades | 3 | **B** |
+| 27 | `q27` | EOI | `transitions` | humanidades | 2 | **B** |
 
-> **Las filas 25 y 26 llevan a propósito los ids cruzados.** El calibrador midió el grupo de
+> **Las filas 23 y 24 y las filas 25 y 26 llevan a propósito los ids cruzados.** El caso de 23
+> y 24 está explicado arriba, en el recuadro de la re-medición de `q24`; el de 25 y 26, aquí.
+> El calibrador midió el grupo de
 > transiciones en 11 · 8 · 13 y el plan pide dificultad creciente dentro de cada tipo, así que
 > `q25` y `q26` se intercambiaron enteros —objeto de ítem y objeto de meta— y el grupo va ahora
 > 8 · 11 · 13. **Los ids no se renumeran**: cambiar `q25` por `q26` en el código deja sin sentido

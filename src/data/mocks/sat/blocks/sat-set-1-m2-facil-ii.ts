@@ -1007,7 +1007,7 @@ export const meta: SatItemMeta[] = [
     id: 'q10',
     domain: 'II',
     tipo: 'central-ideas-details',
-    dificultad: 1,
+    dificultad: 2,
     tema: 'literatura',
     razones: {
       A:
@@ -1064,7 +1064,7 @@ export const meta: SatItemMeta[] = [
     id: 'q13',
     domain: 'II',
     tipo: 'command-of-evidence-quantitative',
-    dificultad: 2,
+    dificultad: 3,
     tema: 'ciencia',
     razones: {
       A:

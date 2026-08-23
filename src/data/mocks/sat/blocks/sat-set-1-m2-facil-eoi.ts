@@ -5,12 +5,15 @@ import type { SatItemMeta } from '../module-types'
  * Bloque Expression of Ideas del módulo `sat-set-1-m2-facil` — ítems q23 a q27.
  *
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 23-27). Claves vigentes, que no se
- * negocian ítem a ítem: **D, A, C, D, B** (el plan asignaba B, A, B, C, A; ver «REPARTO DE
- * LETRAS» al final de este comentario). El orden de los cinco es **q23 · q24 · q26 · q25 ·
- * q27** —q25 y q26 se intercambiaron enteros, ver «CALIBRACIÓN» al final—, con dificultades
- * **3, 3, 2, 2, 2** —la de q26 volvió de 1 a 2 en la segunda pasada de calibración y la de
- * q27 bajó de 3 a 2 al reescribirlo entero, ver el final— y temas humanidades, historia,
- * literatura, ciencia, humanidades. Todo el
+ * negocian ítem a ítem: cada ítem conserva la suya —q23 **D**, q24 **A**, q26 **C**, q25
+ * **D**, q27 **B**— (el plan asignaba B, A, B, C, A; ver «REPARTO DE LETRAS» al final de
+ * este comentario). El orden de los cinco es **q24 · q23 · q26 · q25 · q27** —q25 y q26 se
+ * intercambiaron enteros en la primera pasada de calibración y q23 y q24 en la quinta; ver
+ * «CALIBRACIÓN» al final—, de modo que en pantalla las claves salen **A, D, C, D, B**, con
+ * dificultades **2, 3, 2, 2, 2** —la de q26 volvió de 1 a 2 en la segunda pasada de
+ * calibración, la de q27 bajó de 3 a 2 al reescribirlo entero y la de q24 bajó de 3 a 2 en
+ * la quinta, ver el final— y temas historia, humanidades, literatura, ciencia, humanidades.
+ * Todo el
  * contenido es original (§5 del blueprint); de College Board solo se reproducen los dos
  * enunciados canónicos.
  *
@@ -319,9 +322,13 @@ import type { SatItemMeta } from '../module-types'
  * cuadernos de seis viñetas. A ojo, con 122,7 y 115,8 palabras-SAT y los distractores muriendo
  * en las tres primeras viñetas, los dos deberían caer a la banda de 12 y pasar a **2** — pero
  * eso hay que medirlo, no estimarlo, y quien escribe esto no tiene la fórmula del calibrador.
- * Se deja el 3, que es el número que hay firmado, y **se pide re-medición**: si caen por debajo
- * de 13, la etiqueta honrada es 2 y la mezcla del módulo vuelve a 12 fáciles · 12 medios · 3
- * difíciles, en vez del 12 · 10 · 5 que deja esta entrega.
+ * Se deja el 3, que es el número que hay firmado, y **se pide re-medición**.
+ *
+ * ✅ **Re-medido, y la estimación solo acertó a medias.** Es la razón por la que se pedía la
+ * medida en vez de aplicarla: q23 mide **12** —banda difícil, etiqueta 3 correcta— y solo q24
+ * bajó, a **11**, o sea banda media y etiqueta **2**. Corregido en la quinta pasada, última
+ * sección de esta cabecera. La mezcla del módulo no volvió a 12 · 12 · 3: la medida final es
+ * **8 fáciles · 12 medios · 7 difíciles**.
  *
  * Por R2 los tres ítems con texto nuevo —q23, q24, q27— vuelven a la cola de auditoría y la
  * prueba a ciegas hay que repetirla sobre ellos. q25 y q26 no cambiaron ni un carácter: solo
@@ -526,24 +533,86 @@ import type { SatItemMeta } from '../module-types'
  * repetirla sobre él aunque las opciones no hayan cambiado, porque lo que la ciega mide en un
  * ítem de transiciones es la frecuencia de los cuatro conectores y eso solo se lee sobre el
  * conjunto vigente; y hay que volver a comprobar la clave única contra el pasaje nuevo.
+ *
+ * ## QUINTA PASADA (22 ago 2026) — una etiqueta mal puesta que sostenía una puerta
+ *
+ * **Contabilidad, no contenido: no se ha tocado ni un texto, ni una opción, ni una razón.** No
+ * hay un solo carácter nuevo dentro de los cinco ítems; lo único que cambia es el número de
+ * `dificultad` de `q24` y el sitio en el que van `q23` y `q24` dentro de los dos arrays.
+ *
+ * **La medida.** El calibrador re-midió lo que la primera pasada dejó pedido a gritos y la
+ * cuarta dio por bueno: `q23` mide **12** —banda difícil, su 3 es correcto— y `q24` mide
+ * **11**, que es banda media y estaba declarado **3**. Se corrige a **2**. Es exactamente el
+ * caso que la primera pasada previó a medias: se estimó que caerían los dos y cayó uno, que es
+ * por lo que aquella entrega escribió «esto hay que medirlo, no estimarlo» y dejó el 3 puesto.
+ *
+ * **Por qué la corrección arrastra un reordenamiento, y no es opcional.** La puerta 9 mide la
+ * curva **por grupo de tipo** y compara con `<`, así que dentro de `rhetorical-synthesis` la
+ * secuencia declarada no puede decrecer. Con `q23` (3) delante de `q24` (2) quedaba **3 · 2** y
+ * la puerta se ponía roja. Lo incómodo de mirar es lo otro: hasta hoy esa puerta pasaba
+ * **porque la etiqueta estaba mal**, no porque el bloque estuviera ordenado. Un 3 de más tapaba
+ * una curva invertida —el ítem caro delante del barato— durante cinco pasadas. Es el mismo
+ * accidente que el módulo 1 arrastra, y la lección es que una etiqueta desactualizada no es
+ * documentación floja: es una puerta desactivada sin que nadie lo decida.
+ *
+ * Así que **se intercambian `q23` y `q24` enteros**, objeto por objeto en `items` y en `meta`,
+ * cada id con su contenido y sin renumerar —que es lo que licencia el comentario de la puerta
+ * de ids: el id es un nombre, no una posición—. El orden de pantalla pasa de `q23 · q24 · q26 ·
+ * q25 · q27` a **`q24 · q23 · q26 · q25 · q27`**.
+ *
+ * Lo que queda medido y declarado, en el orden en que van:
+ *
+ * | posición | id | medida | etiqueta | tipo | clave | tema |
+ * |---|---|---|---|---|---|---|
+ * | 23 | `q24` | 11 | **2** | rhetorical-synthesis | A | historia |
+ * | 24 | `q23` | 12 | 3 | rhetorical-synthesis | D | humanidades |
+ * | 25 | `q26` | 9 | 2 | transitions | C | literatura |
+ * | 26 | `q25` | 9 | 2 | transitions | D | ciencia |
+ * | 27 | `q27` | 9 | 2 | transitions | B | humanidades |
+ *
+ * Medidas **11 · 12 · 9 · 9 · 9**; etiquetas **2 · 3 · 2 · 2 · 2**. Los dos grupos de tipo van
+ * no decrecientes —síntesis 2 · 3, transiciones 2 · 2 · 2— y el empate pasa porque la puerta
+ * compara con `<`.
+ *
+ * **Lo que se gana además, y no es cosmético.** El bloque EOI es el último del cronómetro:
+ * empieza hacia el minuto 27 de 32, con el estudiante cansado. Hasta hoy **abría con su ítem
+ * más caro** (12) y bajaba desde ahí; ahora abre con 11 y el pico llega en la segunda. Es el
+ * defecto que el módulo 1 tiene y que este no tenía por qué heredar.
+ *
+ * **Las tres comprobaciones de conjunto, hechas sobre el orden nuevo:**
+ *
+ * - **Costura de claves (puerta 1).** El bloque anterior termina en `q21` **D** y `q22` **B**;
+ *   con el orden nuevo la tira es **D · B · A · D · C · D · B**. No hay ni dos letras iguales
+ *   seguidas, mucho menos tres, ni dentro del bloque ni cruzando la costura. El reparto del
+ *   módulo no se mueve: A7 B7 C7 D6, porque una permutación de posiciones no crea ni destruye
+ *   ninguna letra.
+ * - **Temas adyacentes.** `q22` es humanidades, y hasta hoy le seguía `q23`, que también lo es:
+ *   **el orden viejo tenía dos temas iguales pegados en la costura** y el nuevo lo deshace. La
+ *   tira queda humanidades · historia · humanidades · literatura · ciencia · humanidades, sin
+ *   ninguna pareja adyacente repetida. La puerta 12 mide otra cosa —el techo del 40 % por
+ *   tema— y no se mueve, porque los cinco temas son los mismos.
+ * - **Puerta 9, los dos grupos en verde.** Descrito arriba: 2 · 3 y 2 · 2 · 2.
+ *
+ * **Lo que esto sustituye de la lista de la puerta 7**: las cinco longitudes son las mismas y
+ * solo cambian de sitio las dos primeras, **115,5 · 123,0 · 75,3 · 67,8 · 68,0** palabras-SAT
+ * en el orden en que van. Las cinco dentro de 25-150.
+ *
+ * **Dos frases de esta cabecera que ya no son ciertas, y se corrigen aquí en vez de reescribir
+ * pasadas fechadas.** La cuarta pasada dice que el bloque «sigue siendo el único de los cuatro
+ * por encima de su equivalente» y las tres primeras dicen que **la rama estándar sale más
+ * difícil que el módulo 1**: eso era verdad cuando se escribió y hoy no lo es. El módulo mide
+ * **9,33** contra **10,19** del módulo 1 y los cuatro bloques quedan por debajo de su homólogo;
+ * el desvío de este bloque, que la cuarta pasada se comprometió a acotar en +0,80, queda en
+ * **+0,67**. Y donde la cuarta pasada dice que las tres transiciones «siguen en 2 · 2 · 3
+ * declarados», léase **2 · 2 · 2**: `q27` está en 2 desde que se reescribió entero.
+ *
+ * **Por R2 esto no devuelve nada a la cola de auditoría.** R2 manda ítem nuevo cuando cambia el
+ * texto o cambian las opciones, y aquí no ha cambiado ninguna de las dos cosas en ninguno de los
+ * cinco. Lo mismo valió para `q25` y `q26` cuando se intercambiaron en la primera pasada: solo
+ * cambiaron de sitio.
  */
 
 export const items: MCQQuestion[] = [
-  {
-    id: 'q23',
-    type: 'mcq',
-    part: 1,
-    stimulus:
-      "While researching a topic, a student has taken the following notes:\n\n• In the Ferrin valleys herders whistle the words of the language spoken there; the whistle carries their vowels and consonants, not a code of fixed signals. Children take whistling at school half an hour a week, and adults who settle there follow whistled messages within a season.\n• A whistled sentence is made out five kilometers off, across a valley or over a ridge; a shout fades in a few hundred meters.\n• Many words come out as the same whistle, and herders settle an unclear one by what the day's work makes likely.\n• In a test there, herders who had whistled all their lives missed sentences about matters nobody whistles about, though every word was ordinary.",
-    text: 'The student wants to explain why some listeners cannot understand a whistled message. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
-    options: [
-      'Because a whistled sentence has to cross a whole valley or a ridge to arrive, a listener five kilometers off makes nothing of a whistle worn thin on the way.',
-      'Because whistling is acquired in childhood with the spoken language, a listener who came to the valleys as an adult makes nothing of what is whistled.',
-      'Because a whistled message keeps the melody of a sentence and not its words, a listener makes nothing of it without having learned the signal for it.',
-      "Because many words of the language sound alike once whistled, a listener makes nothing of a message about matters that the day's work does not make likely.",
-    ],
-    answer: 3,
-  },
   {
     id: 'q24',
     type: 'mcq',
@@ -558,6 +627,21 @@ export const items: MCQQuestion[] = [
       "Because a telegraph line had begun to bring the capital's time into the district each morning, the council gave up in 1851 the local time it had voted to keep in 1848.",
     ],
     answer: 0,
+  },
+  {
+    id: 'q23',
+    type: 'mcq',
+    part: 1,
+    stimulus:
+      "While researching a topic, a student has taken the following notes:\n\n• In the Ferrin valleys herders whistle the words of the language spoken there; the whistle carries their vowels and consonants, not a code of fixed signals. Children take whistling at school half an hour a week, and adults who settle there follow whistled messages within a season.\n• A whistled sentence is made out five kilometers off, across a valley or over a ridge; a shout fades in a few hundred meters.\n• Many words come out as the same whistle, and herders settle an unclear one by what the day's work makes likely.\n• In a test there, herders who had whistled all their lives missed sentences about matters nobody whistles about, though every word was ordinary.",
+    text: 'The student wants to explain why some listeners cannot understand a whistled message. Which choice most effectively uses relevant information from the notes to accomplish this goal?',
+    options: [
+      'Because a whistled sentence has to cross a whole valley or a ridge to arrive, a listener five kilometers off makes nothing of a whistle worn thin on the way.',
+      'Because whistling is acquired in childhood with the spoken language, a listener who came to the valleys as an adult makes nothing of what is whistled.',
+      'Because a whistled message keeps the melody of a sentence and not its words, a listener makes nothing of it without having learned the signal for it.',
+      "Because many words of the language sound alike once whistled, a listener makes nothing of a message about matters that the day's work does not make likely.",
+    ],
+    answer: 3,
   },
   {
     id: 'q26',
@@ -608,6 +692,25 @@ export const items: MCQQuestion[] = [
 
 export const meta: SatItemMeta[] = [
   {
+    id: 'q24',
+    domain: 'EOI',
+    tipo: 'rhetorical-synthesis',
+    dificultad: 2,
+    tema: 'historia',
+    razones: {
+      A:
+        'Correcta: es la única causa que el cuaderno sitúa entre los dos votos. Las actas de la sesión de 1851 recogen decenas de peticiones de viajeros que llegaron al andén con el tren ya salido (nota 3): la presión existe, es anterior a la revocación y sale del propio pueblo. Las otras tres son motivos igual de razonables para que un concejo se desdiga, y las notas los desmienten uno a uno.',
+      B:
+        'Falsa por la nota 1: la compañía imprimía un solo horario con la hora de la capital, no pedía nada a los relojes de los pueblos y no hacía depender de ellos ninguna parada. Es el motivo que primero se le ocurre a cualquiera —el fuerte aprieta al débil— y por eso se lleva los votos de quien razona con el mundo en lugar de con el cuaderno. En las notas no hay ninguna amenaza de la compañía.',
+      C:
+        'Falsa por las notas 2 y 3: los once hombres elegidos en 1847 siguieron en el cargo sin elección nueva hasta 1853, y quien revoca en 1851 es «el mismo concejo». Es el camino de quien explica un cambio de voto por un cambio de votantes, que es como se deshacen la mayoría de los acuerdos municipales. Aquí no cambió nadie: cambiaron de opinión los mismos once.',
+      D:
+        'Falsa por la nota 4: el telégrafo llegó al distrito en 1858, siete años después de la revocación. Es el camino de quien sabe cómo acabó la historia de la hora única —señal horaria repartida por telégrafo— y la adelanta hasta la fecha que le hace falta. Con las notas delante, para descartarla basta mirar el año, y esa nota dice ella sola cuántos años sobran.',
+    },
+    fuenteHecho:
+      'Patrón histórico libre: hora local por mediodía solar en cada población, horarios de ferrocarril impuestos desde una sola ciudad y señal horaria por telégrafo, que en la vida real llegó más tarde. Brantwood, el distrito, las fechas y las cifras son inventados. Los tres distractores atribuyen a ese pueblo inventado motivos que en otros sitios sí se dieron —la presión de la compañía, el relevo del concejo, el telégrafo—, de modo que ninguno enseña un hecho falso. El 22 ago 2026 el cuaderno pasó de cinco viñetas a cuatro: la nota de contexto —«Until the 1840s every town set its clocks by local noon»—, que no mata a ningún distractor ni sostiene la clave, deja de ser viñeta y entra como primera oración de la del ferrocarril. Ni una palabra se quitó y ningún distractor cambió de asesino; primero se probó a borrarla y se deshizo, porque sin ella el cuaderno perdía la única aparición de «town» a secas (solo quedaban las formas con genitivo, que para el guardián son otros tokens) y la clave caía de 11 a 10 palabras repetidas del texto, empatada en el mínimo con C. La puerta 3 se mide por las dos caras y esa cara estaba en 0.',
+  },
+  {
     id: 'q23',
     domain: 'EOI',
     tipo: 'rhetorical-synthesis',
@@ -625,25 +728,6 @@ export const meta: SatItemMeta[] = [
     },
     fuenteHecho:
       'Hecho libre de lingüística: el habla silbada reproduce las vocales y consonantes de una lengua hablada —no es un código de señales—, se distingue a varios kilómetros y depende del contexto, porque muchas palabras dan el mismo silbo y el oyente las resuelve por lo previsible del mensaje. Donde se enseña en la escuela lo hace como asignatura obligatoria de media hora semanal. Los valles Ferrin, la prueba de la nota 4 y las cifras son inventados: así los tres distractores afirman cosas falsas sobre un lugar que no existe y ninguno enseña un hecho falso del mundo. El 22 ago 2026 el cuaderno pasó de cinco viñetas a cuatro: la nota de la escuela y los adultos se metió, con su texto intacto, en la viñeta de la definición, porque las dos dicen lo mismo —qué es el silbo y quién puede leerlo—. No se quitó ningún hecho ni se tocó ninguna opción: C sigue muriendo porque el silbo no es un código de señales fijas y B porque los adultos que se instalan allí siguen los mensajes en una temporada, dos hechos distintos dentro de una misma viñeta.',
-  },
-  {
-    id: 'q24',
-    domain: 'EOI',
-    tipo: 'rhetorical-synthesis',
-    dificultad: 3,
-    tema: 'historia',
-    razones: {
-      A:
-        'Correcta: es la única causa que el cuaderno sitúa entre los dos votos. Las actas de la sesión de 1851 recogen decenas de peticiones de viajeros que llegaron al andén con el tren ya salido (nota 3): la presión existe, es anterior a la revocación y sale del propio pueblo. Las otras tres son motivos igual de razonables para que un concejo se desdiga, y las notas los desmienten uno a uno.',
-      B:
-        'Falsa por la nota 1: la compañía imprimía un solo horario con la hora de la capital, no pedía nada a los relojes de los pueblos y no hacía depender de ellos ninguna parada. Es el motivo que primero se le ocurre a cualquiera —el fuerte aprieta al débil— y por eso se lleva los votos de quien razona con el mundo en lugar de con el cuaderno. En las notas no hay ninguna amenaza de la compañía.',
-      C:
-        'Falsa por las notas 2 y 3: los once hombres elegidos en 1847 siguieron en el cargo sin elección nueva hasta 1853, y quien revoca en 1851 es «el mismo concejo». Es el camino de quien explica un cambio de voto por un cambio de votantes, que es como se deshacen la mayoría de los acuerdos municipales. Aquí no cambió nadie: cambiaron de opinión los mismos once.',
-      D:
-        'Falsa por la nota 4: el telégrafo llegó al distrito en 1858, siete años después de la revocación. Es el camino de quien sabe cómo acabó la historia de la hora única —señal horaria repartida por telégrafo— y la adelanta hasta la fecha que le hace falta. Con las notas delante, para descartarla basta mirar el año, y esa nota dice ella sola cuántos años sobran.',
-    },
-    fuenteHecho:
-      'Patrón histórico libre: hora local por mediodía solar en cada población, horarios de ferrocarril impuestos desde una sola ciudad y señal horaria por telégrafo, que en la vida real llegó más tarde. Brantwood, el distrito, las fechas y las cifras son inventados. Los tres distractores atribuyen a ese pueblo inventado motivos que en otros sitios sí se dieron —la presión de la compañía, el relevo del concejo, el telégrafo—, de modo que ninguno enseña un hecho falso. El 22 ago 2026 el cuaderno pasó de cinco viñetas a cuatro: la nota de contexto —«Until the 1840s every town set its clocks by local noon»—, que no mata a ningún distractor ni sostiene la clave, deja de ser viñeta y entra como primera oración de la del ferrocarril. Ni una palabra se quitó y ningún distractor cambió de asesino; primero se probó a borrarla y se deshizo, porque sin ella el cuaderno perdía la única aparición de «town» a secas (solo quedaban las formas con genitivo, que para el guardián son otros tokens) y la clave caía de 11 a 10 palabras repetidas del texto, empatada en el mínimo con C. La puerta 3 se mide por las dos caras y esa cara estaba en 0.',
   },
   {
     id: 'q26',
