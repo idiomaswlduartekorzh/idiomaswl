@@ -158,7 +158,7 @@ Six blocks. **1** `[asks]`: no appointment, and it hurts. **2**. **3** `[receive
 | checking cost and arrival time | `What time do I have to be there?` · `Does my plan cover it…?` | the two things nobody tells you if you don't ask |
 | comparing the pain | `It's worse than…` · `It hurts more when…` | describe by comparing, which is how pain gets described |
 | fixing the number | `That's my sister's number. My number is…` | fix the wrong contact when they read it out |
-| putting your money in | `I have… with me, if that helps.` | your money as an option, not as a complaint |
+| how to reach you | `Better write down…` · `Don't use the one in the file — it's…` | tell them how to find you, before they promise a message |
 | putting your time in | `I can wait here.` · `I don't work on…` · `Can I come back at…?` | your time on the table · a day of yours they don't know about |
 | saying what you need | `I don't have an appointment. Can you help me, please?` | say what you are before they ask |
 | what broke, and when | `A piece of my tooth broke on…, and…` | what you don't tell on your own — it comes out if they ask something open |
@@ -171,9 +171,9 @@ A day that **really** works with your job, said with your schedule in hand · **
 
 ## The card — **its own screen** · role A only
 
-> **Pantalla propia, detrás de un botón. No se imprime debajo del andamiaje.**
-> **Se abre al terminar el turno global 5** (el tercero del rol B, porque arranca B).
-> El rol B no la ve nunca: solo se entera de lo que el rol A le cuente.
+> **Its own screen, behind a button. Never printed under the toolkit.**
+> **Open it when global turn 5 ends** (role B's third turn, because B starts).
+> Role B never sees it: B only knows what you tell them.
 
 > **Dr. Restrepo · 4:24 p.m.**
 >
@@ -182,7 +182,7 @@ A day that **really** works with your job, said with your schedule in hand · **
 > | Before that, two things | the exact problem + the date for the full treatment |
 > | Deadline | your answer on this same screen, before 4:45 p.m. |
 
-**Si se lee antes de tiempo:** no se gana nada. La tarea es la misma leída antes o después —hay
+**Nota de diseño — si se lee antes de tiempo:** no se gana nada. La tarea es la misma leída antes o después —hay
 que conseguir el motivo y la fecha, y eso solo se consigue hablando— y adelantarla sale mal: una
 pregunta por la urgencia en el primer turno se contesta con «me duele mucho», y la pregunta se
 gasta. El dato pivote aparece cuando hay conversación, no cuando hay prisa.

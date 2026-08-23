@@ -175,11 +175,11 @@ ask. Your reason has a number: the bus.
 | function | form | what it does here |
 |---|---|---|
 | asking about theirs | `Why are you …?` · `What did you change …?` | open questions · they bring out what is not in the ad |
+| asking for more in the deal | `Does the lock come …?` · `If you …, I can …` · `Maybe we can …` | ask for more inside the deal instead of less · the extra money moves only with a condition said out loud |
 | closing the question | `I have a reason.` · `That's not important right now.` | close the question without going quiet |
 | greeting | `Good morning — thanks for …` | you asked for this meeting · open before you talk about the tire |
 | if it can't leave now | `Can you keep it for me until …?` · `I'll pick it up at …` | a day and a time is also a close |
 | money | `I have … in cash, right …` · `The Nequi money is for …` | your number as a fact, not an offer — and the other money has a job already |
-| moving the deal | `Does the lock come …?` · `If you …, I can …` · `Maybe we can …` | ask for more inside the deal instead of less · the extra money moves only with a condition said out loud |
 | saying no | `That's more than I can …` · `I hear you, but that's not going to …` | turn the number down without bargaining · and make the second no sound different from the first |
 | the bike | `The rear tire is …` · `A new tire and a new seat — that's about …` | name the fault, then put a number on it |
 

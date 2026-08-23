@@ -163,9 +163,9 @@ Blocks **1** `[asks]`, because you open, and you open with something uncomfortab
 |---|---|---|
 | Andrea and Sebastián | `What do I say to …?` | get an answer you can repeat outside |
 | asking what changed | `When did that change?` | open the half of the mess that isn't yours |
+| hearing it from someone else | `Nobody told me about …` · `I found out from …` | say who told you, and that it wasn't him |
 | keeping the friendship | `We're good, right?` | make sure tomorrow's car is not silent |
 | owning the lateness | `I know it's last minute, but …` | put the lateness in front before she does |
-| owning your half | `It's my fault, but …` | own your half, and keep what you came for |
 | saying your part out loud | `I'll say it like this: …` | say your part of the message out loud, whole |
 | something for something | `If you …, I'll …` · `If I don't …, I'll …` | something for something, in one sentence · and what you do if your own day falls through |
 | the day you pay | `Can I pay you on …?` | ask for one exact day, not "soon" |

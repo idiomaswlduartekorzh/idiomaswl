@@ -90,7 +90,7 @@ Yours: **1** `[asks]`, **2**, **3** `[receives]`, **4** `[jargon]` — *IELTS*, 
 Not 7. Block **6** is
 for the question you can't answer — they are going to ask this: who else did you ask?
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
@@ -165,7 +165,7 @@ Yours: **1** (you don't open — they stop you), **2**, **3** `[receives]` — t
 (your reason has numbers in it), **7** `[grants]` and **8**. Not 4, not 6: you hide nothing.
 You have a card to drop, and you choose the moment.
 
-### Say it here — grouped by job, not in order · **don't read it out loud**
+### Say it here — grouped by job, not in order · use it or don't · **don't read it out loud**
 
 | function | form | what it does here |
 |---|---|---|
