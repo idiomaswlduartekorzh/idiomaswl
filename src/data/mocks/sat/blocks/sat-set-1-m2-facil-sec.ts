@@ -47,12 +47,12 @@ import type { SatItemMeta } from '../module-types'
  *
  *    **Reparto de signos-clave de los cuatro ítems de fronteras**, comprobado sobre el array:
  *
- *      q16 → coma · q18 → sin signo · q20 → punto y coma · q22 → punto y coma (delante de «and»)
+ *      q16 → coma · q18 → sin signo · q20 → dos puntos · q22 → punto y coma (delante de «and»)
  *
  *    Y **en qué letra vive cada uno**, porque el reparto de letras se decidió a nivel de módulo y
  *    llegó aquí como permutación: q16 → A · q18 → A · q20 → C · q22 → B. Las letras del bloque
  *    entero son `A C A B C D B`. Signo y letra son independientes a propósito: la clave sin signo
- *    y la clave con coma comparten letra (las dos en A), y las dos claves de punto y coma están
+ *    y la clave con coma comparten letra (las dos en A), y las dos claves de signo fuerte están
  *    en letras distintas (C y B), de modo que ninguna apuesta de letra reproduce una apuesta de
  *    signo.
  *
@@ -62,50 +62,70 @@ import type { SatItemMeta } from '../module-types'
  *    inseparable de tener una clave sin signo, que es lo que el punto 3 exige. Cuente como
  *    aceptado, no como pendiente.
  *
- *    Ninguna forma es clave más de dos veces. De las cuatro apuestas de un solo signo —jugar
- *    siempre la misma forma sin leer— «siempre coma» saca 1 de 4, «siempre sin signo» 1 de 4 y
- *    «siempre dos puntos» **0 de 4**; la única que pasa del azar es «siempre punto y coma», 2 de
- *    4, y es la que el punto 6 justifica y acota: los dos ítems que la pagan ofrecen ese signo
- *    con dibujos distintos —`;` a secas en q20 y `; and` en q22—, de modo que no es una sola
- *    apuesta formulable sobre los cuatro a la vez.
+ *    **Cada una de las cuatro formas es clave exactamente una vez, y con eso el reparto queda
+ *    cerrado (23 ago 2026).** Hasta la séptima vuelta no era así: la regla de q20 —punto y coma
+ *    ante adverbio conjuntivo— y la de q22 —serie con comas internas— exigían las dos ese signo,
+ *    el punto y coma era clave dos veces y, por pura aritmética, alguna de las cuatro formas
+ *    tenía que quedarse sin serlo nunca. Fueron los dos puntos, y el auditor de lengua lo levantó
+ *    con la etiqueta correcta: «en este módulo, nunca los dos puntos» es un patrón aprendible de
+ *    la familia de R14, el mismo que costó dos versiones de q18 cuando el que nunca pagaba era
+ *    «sin signo».
  *
- *    **Lo que este reparto no arregla, escrito para que nadie lo descubra creyendo que se
- *    ocultó.** Con cuatro ítems, cuatro formas de opción y dos ítems obligados al punto y coma
- *    (punto 6), alguna forma tiene que quedarse sin ser clave nunca. Antes era la ausencia de
- *    signo; ahora son los dos puntos. Para un solucionador que juegue **dos** eliminaciones
- *    globales sobre los cuatro ítems, el peor caso no baja: cambia de dueño.
+ *    **La salida no era quitar la opción, era mover una regla.** Retirar los dos puntos del juego
+ *    de uno de los cuatro ítems deja la eliminación en pie en los otros tres —la subida pasa de
+ *    33 % a 31 %, que es cosmética—. Lo que la cierra es que el signo pague en algún sitio, y con
+ *    dos ítems obligados al punto y coma no había sitio. Se rehízo **q20**, que era el más barato
+ *    de los dos: regla de una sola oración, banda fácil y sin arquitectura de lista que
+ *    reconstruir. Su clave son ahora los dos puntos. Lo que sale de ahí es el único reparto sin
+ *    residuo:
  *
- *      «sin signo nunca» + «la coma es la trampa» → antes 1,5 de 4 (37,5 %) · ahora 1,0 (25 %)
- *      «dos puntos nunca» + «la coma es la trampa» → antes 1,0 de 4 (25 %) · ahora 1,5 (37,5 %)
+ *      «siempre coma» · «siempre sin signo» · «siempre punto y coma» · «siempre dos puntos»
+ *        → **1 de 4 cada una: el azar exacto**
+ *      cualquier eliminación global «nunca X» → tres ítems a 1/3 y un cero: **1,0 de 4, el azar**
+ *      la peor combinación de dos eliminaciones, «nunca dos puntos» + «la coma es la trampa»
+ *        → **1,0 de 4 (25 %)**, donde el mejor reparto anterior dejaba 1,5 (37,5 %)
  *
- *    El cambio se hace igual, y no por aritmética sino por qué heurística existe de verdad:
+ *    Ninguna apuesta ciega sobre signos pasa del azar, y no por compensación: por construcción.
+ *
+ *    **Lo que costó, escrito para que nadie lo descubra creyendo que se ocultó.** El módulo deja
+ *    de examinar el punto y coma ante adverbio conjuntivo —«…messages; however, the fees…»—, que
+ *    es una de las fronteras más frecuentes del SAT real y que el bloque SEC del módulo 1 tampoco
+ *    examina. Se ha cambiado una regla muy examinable por un reparto que ninguna apuesta ciega
+ *    puede explotar. Es un intercambio, no una mejora gratis. Si alguna vez se decide al revés,
+ *    lo que hay que rehacer es **q22** —su serie con comas internas es la más rara de las cuatro
+ *    reglas—, y en ningún caso volver a dos claves del mismo signo.
+ *
+ *    **Y lo que no cambia: la clave de q18 sigue siendo la ausencia de signo.** El diagnóstico que
+ *    la puso ahí sigue en pie, y la razón está medida:
  *
  *    a) «Menos signos es más seguro» no hay que aprenderla aquí: se trae de fuera, y la trae
- *       también el estudiante real. «No elijas nunca los dos puntos» hay que inducirla de estos
- *       cuatro ítems y **contra** el prejuicio contrario, que es que el signo raro es el que se
- *       está examinando. Una sale gratis; la otra cuesta cuatro observaciones y va a
- *       contracorriente.
- *    b) La heurística contraria no es hipotética: es la que está disparando ahora. Quien no lee
- *       q18 elige los dos puntos. Con los dos puntos de distractor, ese solucionador pasa de
- *       acertar 1 de los 4 ítems de fronteras a acertar 0.
- *    c) «Los dos puntos nunca son la clave» es falsa un módulo antes: en el bloque SEC del módulo
- *       1 la clave de q20 es «the same recipe:». El estudiante que hace los dos módulos —que es la
- *       entrega real— ve pagar los dos puntos. La ausencia de signo, en cambio, no era clave en
- *       ninguno de los dos bloques, y en el módulo 1 lo más cerca que estuvo fue el q22, donde la
- *       clave es la que **no** pone comas alrededor del modificador esencial.
+ *       también el estudiante real. Un reparto en el que esa apuesta paga cero le regala
+ *       información al que no lee, igual que se la regalaba el anterior al que apostaba por el
+ *       signo marcado.
+ *    b) La heurística contraria tampoco es hipotética: quien no lee un ítem de puntuación elige
+ *       el signo marcado, y el signo marcado son los dos puntos. Con el reparto de hoy ese
+ *       solucionador acierta uno de cuatro; con el anterior acertaba cero, que suena mejor de lo
+ *       que es, porque un cero sistemático también es información explotable.
+ *    c) Los dos puntos ya pagaban un módulo antes: en el bloque SEC del módulo 1 la clave de q20
+ *       es «the same recipe:». Que vuelvan a pagar aquí no le enseña al estudiante nada falso;
+ *       lo que se lo enseñaba era no pagar nunca. Sobre la coincidencia de signo con aquel ítem
+ *       —y por qué las dos reglas no son la misma— ver la lista de las siete reglas, más abajo.
  *
- *    La metarregla que quede sigue siendo eso, una metarregla, y descarta una opción sin elegir
+ *    Lo que quede sigue siendo una metarregla, y una metarregla descarta una opción sin elegir
  *    entre las otras tres. Se midió en la cuarta vuelta metiendo en el panel a ciegas un
  *    solucionador con instrucción expresa de buscar esa clase de pista: sacó **4 de 27**, por
  *    debajo del azar.
  *
  *    **No repongas la política vieja «por coherencia».** Volver a poner un signo en la clave de
  *    q18 devuelve al bloque el patrón uniforme y con él la fuga de 7 de 10. Lo que hay que
- *    vigilar al editar no es que las cuatro claves lleven signo, sino que ninguna forma de opción
- *    sea clave más de dos veces.
- * 4. **Ni un solo periodo o punto y coma se ofrece junto a otro signo que también valdría.**
- *    Con dos oraciones independientes, punto y punto y coma son las dos correctas: por eso
- *    en q20 no aparece el punto. Es la puerta 4 (clave única) aplicada al reverso.
+ *    vigilar al editar no es que las cuatro claves lleven signo, sino que cada una de las cuatro
+ *    formas de opción sea clave exactamente una vez.
+ * 4. **Ningún signo se ofrece junto a otro que también valdría.** Con dos oraciones
+ *    independientes, punto y punto y coma son las dos correctas —por eso la versión anterior de
+ *    q20, la del «however», no ofrecía el punto—; y con oración completa a los dos lados, los dos
+ *    puntos y el punto y coma también lo son. De ahí que en el q20 de hoy lo que sigue al hueco
+ *    sea un sintagma nominal y no una oración: es justo lo que deja vivos los dos puntos y mata
+ *    el punto y coma. Es la puerta 4 (clave única) aplicada al reverso.
  * 5. **La marcación filtra, y es una tercera clase de fuga.** R13 manda medir, antes de
  *    arreglar, si un ítem se filtra por la forma (R11) o por el sentido. En la tercera vuelta
  *    q19 lo acertaban **7 de 10 sin ver el texto** y no era ninguna de las dos: sus cuatro
@@ -225,14 +245,16 @@ import type { SatItemMeta } from '../module-types'
  *    problema y q18 se volvió a rehacer, ahora con la ausencia de signo como clave. El porqué,
  *    la aritmética y el reparto vigente están en el punto 3.
  *
- *    Lo que de aquel diagnóstico sigue en pie: el punto y coma sale **dos veces** entre las
- *    cuatro claves y no se puede evitar sin romper otra cosa, porque la regla de q20 (adverbio
- *    conjuntivo entre dos independientes) y la de q22 (serie con comas internas) exigen las dos
- *    ese signo y ninguna admite otro. Lo que las separa es la forma de la opción —q20 es punto y
- *    coma a secas, q22 es punto y coma delante de «and»—, así que «siempre punto y coma» no es
- *    una apuesta que un solucionador a ciegas pueda formular sobre las cuatro a la vez. Es esa
- *    doble obligación la que fuerza que alguna de las cuatro formas se quede sin ser clave
- *    nunca, y la que convierte la elección de **cuál** en la única decisión disponible.
+ *    Lo que de aquel diagnóstico sigue en pie es el principio; lo que ya no está es la
+ *    obligación que lo estrechaba. Durante seis vueltas el punto y coma fue clave **dos veces**,
+ *    porque la regla de q20 (adverbio conjuntivo entre dos independientes) y la de q22 (serie con
+ *    comas internas) exigían las dos ese signo y ninguna admitía otro; y esa doble obligación era
+ *    la que forzaba que alguna de las cuatro formas se quedase sin ser clave nunca. El 23 ago
+ *    2026 q20 cambió de regla y con él desapareció la obligación: el punto y coma es clave una
+ *    sola vez, en q22, y las cuatro formas se reparten una a una. **La decisión que este punto
+ *    llamaba «la única disponible» —cuál de las cuatro formas se sacrifica— ya no hay que
+ *    tomarla**, y el precio de no tomarla está en el punto 3: el módulo pierde el punto y coma
+ *    ante adverbio conjuntivo.
  *
  * 7. **Pasada de equidad y veracidad (no de calidad de ítem).** Con el bloque ya cerrado a
  *    ciegas —15,9 % frente a un azar del 25 %— se revisó otra cosa: si un estudiante puede
@@ -281,12 +303,20 @@ import type { SatItemMeta } from '../module-types'
  *   q16 coma tras subordinada antepuesta · q17 concordancia pronombre-antecedente ·
  *   q18 ausencia de signo entre el sujeto y su verbo ·
  *   q19 pasado simple del hecho que interrumpe un trasfondo en pluscuamperfecto ·
- *   q20 punto y coma ante adverbio conjuntivo · q21 concordancia con frase interpuesta ·
+ *   q20 dos puntos ante el sintagma que especifica lo anunciado ·
+ *   q21 concordancia con frase interpuesta ·
  *   q22 punto y coma como separador de serie con comas internas
  *
- * Ninguna de las siete se repite dentro del bloque, y desde que q18 dejó los dos puntos **no
- * queda ninguna coincidencia de signo-clave con el bloque SEC del módulo 1** (allí la clave de
- * q20 es «the same recipe:»). Lo que q18 sí toca de refilón es el q18 del módulo 1, el de la
+ * Ninguna de las siete se repite dentro del bloque. **Con el módulo 1 hay, desde el 23 ago 2026,
+ * una coincidencia de signo, y conviene mirarla de frente**: allí la clave de q20 son unos dos
+ * puntos —«the same recipe:»— y aquí la de q20 también. La regla no es la misma y la
+ * discriminación tampoco. En el módulo 1 los dos puntos preceden a una **enumeración** cuyos tres
+ * miembros ya llevan comas dentro, y lo que mata a la coma es que metería el anuncio dentro de la
+ * serie; aquí preceden a un **sintagma nominal único**, y lo que mata a la coma es que la palabra
+ * de delante es un adverbio y un adverbio no admite aposición. Quien resolviera aquel de memoria
+ * —«dos puntos cuando viene una lista»— no tiene aquí ninguna lista que ver. Lo que sí se repite
+ * es el requisito común a cualquier uso del signo, oración completa a la izquierda, y eso es la
+ * regla examinada, no una pista sobre la clave. Lo que q18 sí toca de refilón es el q18 del módulo 1, el de la
  * nutria, y lo toca al revés: allí la clave es una **coma justo delante del verbo**, porque el
  * sujeto venía interrumpido por un inciso que había que cerrar —«The sea otter, an animal lighter
  * than most adult humans, eats…»—; aquí la clave es **no poner nada delante del verbo**, porque
@@ -329,9 +359,15 @@ import type { SatItemMeta } from '../module-types'
  *   perfecto, una por el singular y la última porque sus dos continuas se caían sin leer el texto,
  *   que es R11 incumplida—; la quinta versión existe para que ninguna de esas apuestas pague y
  *   para que las cuatro opciones exijan el pasaje.
- * - q20: a la derecha de «however» tiene que haber una oración con sujeto y verbo propios; si
- *   se queda en un complemento, el punto y coma muere. Y **no se puede ofrecer el punto**: con
- *   dos independientes, «messages. However,» es tan correcto como el punto y coma.
+ * - q20: a la izquierda del hueco tiene que cerrarse una oración completa —«Whatever kept the
+ *   line solvent lay elsewhere»—, que es lo único que los dos puntos exigen delante. A la derecha
+ *   tiene que quedar un sintagma nominal y **no** una oración: en cuanto tenga sujeto y verbo
+ *   propios, el punto y coma es tan correcto como los dos puntos y el ítem tiene dos claves. Y dos
+ *   condiciones más, que son las que sostienen falsos a los otros dos distractores: la palabra que
+ *   precede al hueco no puede ser un nombre —con un nombre delante, la coma se convierte en una
+ *   aposición explicativa legítima—, y el sintagma de la derecha no puede empezar por una
+ *   preposición que el verbo admita, porque «lay elsewhere in the fees…» es correcto sin ningún
+ *   signo y la opción sin signo pasaría a ser clave.
  * - q21: el núcleo del sujeto es «row», y lo que fija el tiempo es el verbo coordinado
  *   «and stores», que va en presente simple. Si se cambia «stores» por un compuesto, C deja de
  *   ser falsa por tiempo y solo lo es por número.
@@ -531,6 +567,76 @@ import type { SatItemMeta } from '../module-types'
  *
  * Por R2, los seis ítems cambian de texto y vuelven a la cola de auditoría; su huella en el
  * guardián cambia con ellos. q19 es el único de los siete que esta pasada no toca.
+ *
+ * ## PASADA DEL AUDITOR DE LENGUA (23 ago 2026) — un pronombre roto, un signo que nunca pagaba
+ *
+ * El auditor certificó los siete aptos y sin dobles claves, y confirmó expresamente que el corte
+ * de oraciones de la tercera pasada **no rompió ninguna condición de clave única**, que era el
+ * riesgo de aquella ronda. Lo que sí encontró son cinco cosas, y ninguna se arregla con una
+ * disculpa en un comentario.
+ *
+ * **Aviso de lectura antes de nada: todo lo que las secciones anteriores dicen de q20 con
+ * «however» describe una versión retirada.** El pasaje del telégrafo sigue siendo el mismo y las
+ * medidas de complejidad de aquellas pasadas siguen valiendo, pero la oración del hueco cambió de
+ * regla y de opciones ese día. Lo vigente está en el punto 3, en el punto 6 y en el `fuenteHecho`
+ * del ítem.
+ *
+ * **1 · q17 tenía un pronombre ambiguo, y es el ítem que examina pronombres.** Al partir la
+ * oración de apertura en la tercera pasada, «Their seeds do not drop to the ground» se quedó sin
+ * antecedente propio: el sintagma plural más cercano había pasado a ser «most trees» —los árboles
+ * que **no** enraízan en ese fango—, de modo que la frase, leída al pie de la letra, atribuía las
+ * semillas a quien no las tiene y además decía algo falso. No creaba segunda clave, y por eso no
+ * apareció en la puerta de claves; lo que minaba era la validez, que es peor: referencia
+ * pronominal rota justo donde se pregunta por referencia pronominal. → «Mangrove seeds do not
+ * drop to the ground…». Ni una opción ni una razón se tocaron, y la condición de clave única del
+ * ítem se comprobó después: el antecedente «the seedlings» sigue en la oración del hueco y en
+ * plural, y el cambio no mete ningún singular nuevo.
+ *
+ * **2 · Los dos puntos se ofrecían en los cuatro ítems de fronteras y no eran la clave ni una
+ * vez.** Es el hallazgo de conjunto de la pasada y la única decisión que había que tomar. Está
+ * resuelto rehaciendo la regla de q20, y el porqué, la aritmética y lo que ha costado están en el
+ * punto 3 y en el punto 6, que es donde alguien los va a buscar. Resumen: cada una de las cuatro
+ * formas es ahora clave exactamente una vez, ninguna apuesta ciega sobre signos pasa del azar, y
+ * el módulo pierde a cambio el punto y coma ante adverbio conjuntivo.
+ *
+ * **3 · «theatre» era el único britanismo del módulo**, que escribe «color», «gray» y
+ * «kilometer» a la americana. Dos apariciones en el pasaje de q19 → «theater». No toca ninguna
+ * razón: las de ese ítem citan «had worked», «sold out», «printed» y «has opened».
+ *
+ * **4 · Tres frases que decían algo distinto de lo que querían decir.** No son dobles claves ni
+ * fugas; son el pasaje mintiendo un poco, que es lo que la puerta de veracidad persigue:
+ *
+ *   - q20 · «Merchants used it to move prices» significa en inglés *hacer que los precios se
+ *     muevan*, o sea lo contrario de lo que el párrafo cuenta —el hilo llevaba la cotización, no
+ *     la alteraba—. → «to carry prices».
+ *   - q21 · «…traces the rise and fall of the water… and stores the rolls in a cupboard»: una
+ *     hilera de mareógrafos no guarda rollos en un armario, eso lo hace alguien. Y «stores» es
+ *     una de las dos cosas que fijan la clave —es el verbo coordinado en presente simple—, así
+ *     que su sujeto tiene que ser creíble o el estudiante duda de la coordinación por donde no
+ *     debe. → «…and stores the record on rolls of paper. The rolls go into a cupboard that is
+ *     opened only after a storm.» El verbo citado por `razones.B`, `razones.C` y `razones.D` es
+ *     «and stores» y sigue letra por letra; el núcleo «row», la frase interpuesta y el verbo
+ *     coordinado siguen los tres dentro de la oración del hueco. La oración pasa de 34 a 35
+ *     palabras y el pasaje de 15,3 a 16,1 de media: sigue por debajo de 18 y T sigue en 1.
+ *   - q22 · «Fifty Thursdays a year for eleven years **come** to more than five hundred
+ *     rehearsals» es defendible —sujeto aritmético con verbo plural—, pero es exactamente la
+ *     decisión que **q21 examina** dos ítems antes, y no se deja un caso discutible del mismo
+ *     asunto suelto en el mismo bloque. → «add up to», que con sujeto plural no admite discusión.
+ *
+ * **5 · Y una que se mira y se deja.** El auditor propuso además meter un segundo conector
+ * contrastivo en q27 (bloque EOI) para que su clave no se alcance por descarte de categoría. Está
+ * decidido en el `fuenteHecho` de aquel ítem y la respuesta es que no: el único contrastivo que
+ * no crea segunda clave ya es distractor en q26, dentro del mismo grupo de tres transiciones, y
+ * ponerlo dos veces sin que pague nunca reproduce el patrón aprendible que esta misma pasada
+ * viene a quitar de los signos.
+ *
+ * **Ninguno de los cinco arreglos sube la dificultad.** Medido, palabras por oración: q17 14,2
+ * (igual) · q19 15,3 (igual) · q20 13,6 → **12,9** · q21 15,3 → **16,1** · q22 16,9 → **17,0**.
+ * Los dos que suben lo hacen por menos de una oración de diferencia y **los cinco siguen por
+ * debajo de 18**, que es el umbral del eje T: ninguno cambia de escalón. La localización no se
+ * mueve en ninguno —lo que decide sigue dentro de la oración del hueco en los cinco— y ninguna
+ * etiqueta cambia. Por R2 vuelven a la cola de auditoría q17, q19, q20, q21 y q22 —los cinco cambian de
+ * texto— y **q20 entero**, que cambia además de regla, de opciones y de razones.
  */
 
 export const items: MCQQuestion[] = [
@@ -555,7 +661,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Mangroves grow where a river meets the sea. The mud there is too salty for most trees to root in at all. Their seeds do not drop to the ground and wait there for a better season. Each seed sprouts while it is still attached to the parent tree, carrying its own small store of food. The young plant falls into the water already the length of a hand, green and buoyant. The seedlings can drift on a tide for a month or more without harm. When the seedlings finally settle in shallow water, ______ roots take hold over the following weeks. A stand of trees begins where there had been nothing but silt.",
+      "Mangroves grow where a river meets the sea. The mud there is too salty for most trees to root in at all. Mangrove seeds do not drop to the ground and wait there for a better season. Each seed sprouts while it is still attached to the parent tree, carrying its own small store of food. The young plant falls into the water already the length of a hand, green and buoyant. The seedlings can drift on a tide for a month or more without harm. When the seedlings finally settle in shallow water, ______ roots take hold over the following weeks. A stand of trees begins where there had been nothing but silt.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -587,14 +693,14 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "The telegraph line was strung over the pass in 1868. The newspapers in the capital sold it as an instrument of government. An order from the ministry would reach the border garrison in an hour instead of two weeks. The ministry paid for the wire on that promise. The traffic that kept the wire busy was another matter. Merchants used it to move prices. The price of wool at the port reached a shepherd five hundred kilometers inland by the next morning. In its first full year the company sent fewer than two hundred official ______ however, the fees it charged wool brokers covered a third of the cost.",
+      "The telegraph line was strung over the pass in 1868. The newspapers in the capital sold it as an instrument of government. An order from the ministry would reach the border garrison in an hour instead of two weeks. The ministry paid for the wire on that promise. The traffic that kept the wire busy was another matter. Merchants used it to carry prices. The price of wool at the port reached a shepherd five hundred kilometers inland by the next morning. In its first full year the company sent fewer than two hundred official messages. Whatever kept the line solvent lay ______ the fees it charged wool brokers, which covered a third of the cost.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
-      "messages,",
-      "messages",
-      "messages;",
-      "messages:",
+      "elsewhere,",
+      "elsewhere",
+      "elsewhere:",
+      "elsewhere;",
     ],
     answer: 2,
   },
@@ -603,7 +709,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A theatre in a river town spent its first three decades on plays translated from other languages. Its audience came to expect an evening that sounded like somewhere else. The company had worked its way through the same handful of foreign comedies year after year when, in 1893, it ______ a piece written in the speech of the market square. Its author was a schoolteacher who had never published a line. The house sold out for eleven nights. The company printed the text at its own expense. Every season since, the theatre has opened its year with a play in the language its audience speaks at home.",
+      "A theater in a river town spent its first three decades on plays translated from other languages. Its audience came to expect an evening that sounded like somewhere else. The company had worked its way through the same handful of foreign comedies year after year when, in 1893, it ______ a piece written in the speech of the market square. Its author was a schoolteacher who had never published a line. The house sold out for eleven nights. The company printed the text at its own expense. Every season since, the theater has opened its year with a play in the language its audience speaks at home.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -619,7 +725,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "A tide gauge is a plain instrument: a float in a sheltered well and a pen on an arm. Clockwork turns the paper drum under the pen. The value of the gauge comes from repetition rather than from precision. One measurement of high water on one morning tells a port almost nothing. But the row of gauges that the port authority has kept along the estuary since 1892 ______ the rise and fall of the water without a break and stores the rolls in a cupboard. The cupboard is opened only after a storm. Sea level is nothing more than a very long stack of those rolls.",
+      "A tide gauge is a plain instrument: a float in a sheltered well and a pen on an arm. Clockwork turns the paper drum under the pen. The value of the gauge comes from repetition rather than from precision. One measurement of high water on one morning tells a port almost nothing. But the row of gauges that the port authority has kept along the estuary since 1892 ______ the rise and fall of the water without a break and stores the record on rolls of paper. The rolls go into a cupboard that is opened only after a storm. Sea level is nothing more than a very long stack of those rolls.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -635,7 +741,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "The oldest choir in the city has never once auditioned a singer. Anyone who turns up on three Thursdays in a row is in. Anyone who stops turning up is out. Visiting musicians expect a congregation and hear something closer to a trained ensemble. The director explains this by arithmetic rather than by talent. Fifty Thursdays a year for eleven years come to more than five hundred rehearsals, which the director says is more singing together than most students have done by the time they leave a conservatory. The choir's administration is three people in all: a treasurer, who has never collected a single fee; a librarian, who keeps the only key to the music ______ a director, who has never once turned anyone away. The three of them meet in a room above a bakery. The bakery now sells bread on Thursday evenings to people who come only for the singing.",
+      "The oldest choir in the city has never once auditioned a singer. Anyone who turns up on three Thursdays in a row is in. Anyone who stops turning up is out. Visiting musicians expect a congregation and hear something closer to a trained ensemble. The director explains this by arithmetic rather than by talent. Fifty Thursdays a year for eleven years add up to more than five hundred rehearsals, which the director says is more singing together than most students have done by the time they leave a conservatory. The choir's administration is three people in all: a treasurer, who has never collected a single fee; a librarian, who keeps the only key to the music ______ a director, who has never once turned anyone away. The three of them meet in a room above a bakery. The bakery now sells bread on Thursday evenings to people who come only for the singing.",
     text:
       "Which choice completes the text so that it conforms to the conventions of Standard English?",
     options: [
@@ -689,7 +795,7 @@ export const meta: SatItemMeta[] = [
         "Es la contracción de «they are», no un posesivo: la oración quedaría «they are roots take hold over the following weeks». Acierta el número y falla la forma, que es el camino de quien corrige la concordancia de oído y escribe la palabra que suena, no la que funciona.",
     },
     fuenteHecho:
-      "Botánica de manual: la viviparidad del mangle. La semilla no se desprende para esperar en el fango, sino que germina adherida al árbol y cae al agua ya como propágulo desarrollado; el propágulo flota y se mantiene viable durante semanas, y una vez varado en agua somera echa raíces a lo largo de varias semanas, no en un día. Sin especie, país ni cifras: la comparación con el largo de una mano es propia.\n\n**Corte de complejidad (22 ago 2026), sin cambio de contenido.** Se parten tres oraciones: la de apertura, la de la germinación y la del hueco por su cola. De **23,0 a 14,2** palabras por oración, de cinco oraciones a ocho. El antecedente «the seedlings» sigue dentro de la oración del hueco y en plural —lo que sale de ella es «and a stand of trees begins where there had been nothing but silt», que no decidía nada—, y ningún singular nuevo entra en el pasaje. El corte **corrige** además una imprecisión de las razones: «carrying its own small store of food» colgaba de «the young plant» y ahora cuelga de «Each seed», que es de quien `razones.A` y `razones.C` decían que colgaba. Se cambió el texto para que la razón sea literalmente cierta; la razón no se tocó.",
+      "Botánica de manual: la viviparidad del mangle. La semilla no se desprende para esperar en el fango, sino que germina adherida al árbol y cae al agua ya como propágulo desarrollado; el propágulo flota y se mantiene viable durante semanas, y una vez varado en agua somera echa raíces a lo largo de varias semanas, no en un día. Sin especie, país ni cifras: la comparación con el largo de una mano es propia.\n\n**Corte de complejidad (22 ago 2026), sin cambio de contenido.** Se parten tres oraciones: la de apertura, la de la germinación y la del hueco por su cola. De **23,0 a 14,2** palabras por oración, de cinco oraciones a ocho. El antecedente «the seedlings» sigue dentro de la oración del hueco y en plural —lo que sale de ella es «and a stand of trees begins where there had been nothing but silt», que no decidía nada—, y ningún singular nuevo entra en el pasaje. El corte **corrige** además una imprecisión de las razones: «carrying its own small store of food» colgaba de «the young plant» y ahora cuelga de «Each seed», que es de quien `razones.A` y `razones.C` decían que colgaba. Se cambió el texto para que la razón sea literalmente cierta; la razón no se tocó.\n\n**Referencia pronominal (23 ago 2026).** El mismo corte había dejado un «Their seeds do not drop to the ground» cuyo plural más cercano era «most trees», los árboles que no enraízan en ese fango: el pronombre colgaba de quien no tiene esas semillas y la frase, así leída, era falsa. En el ítem que examina concordancia de pronombre y antecedente eso no es un descuido de estilo. → «Mangrove seeds do not drop to the ground…». El antecedente del hueco, «the seedlings», sigue en la misma oración y en plural, no entra ningún singular nuevo en el pasaje y ni una opción ni una razón se tocaron.",
   },
   {
     id: 'q18',
@@ -719,19 +825,19 @@ export const meta: SatItemMeta[] = [
     dificultad: 1,
     tema: 'historia',
     regla:
-      "Frontera entre dos oraciones independientes cuando la segunda empieza por un adverbio conjuntivo: «however» enlaza el sentido pero no une sintácticamente, de modo que hace falta un punto y coma. La coma sola produce empalme (comma splice) y la ausencia de signo, una oración seguida.",
+      "Dos puntos tras oración completa para introducir el elemento que especifica lo que esa oración acaba de anunciar. A la izquierda del hueco hay una oración con sujeto y verbo propios —«Whatever kept the line solvent lay elsewhere»— que anuncia un «en otra parte» sin decir cuál; a la derecha está el sintagma nominal que lo dice, «the fees it charged wool brokers, which covered a third of the cost». Los dos puntos son el único signo que enlaza un anuncio con su especificación, y el único de los cuatro que admite a su derecha algo que no es una oración.\n\nEste es el único ítem de fronteras del bloque cuya clave son los dos puntos, y existe para eso: ver punto 3 de la cabecera antes de tocarlo.\n\nCondiciones de clave única, escritas aquí porque son lo primero que se rompe al editar la frase: (1) **a la izquierda del hueco tiene que cerrarse una oración completa**; si se queda en un sintagma o en una subordinada, los dos puntos mueren y el ítem se queda sin clave; (2) **a la derecha no puede empezar una oración independiente**: en cuanto la haya, el punto y coma pasa a ser tan correcto como los dos puntos y el ítem tiene dos claves —es la misma puerta que en el módulo 1 obliga a no ofrecer el punto junto al punto y coma—; (3) **la palabra que precede al hueco no puede ser un nombre**: con un nombre delante, la coma se convierte en una aposición explicativa legítima y vuelven las dos claves. Por eso el hueco cae detrás de «elsewhere», que es adverbio y no admite aposición; (4) **el sintagma de la derecha no puede empezar por una preposición que el verbo admita**: «lay elsewhere in the fees…» es gramatical sin ningún signo, de modo que la opción sin signo pasaría a ser correcta. La versión de trabajo llevaba ese «in» y por eso no está.",
     razones: {
       A:
-        "Empalme de comas: a los dos lados del hueco hay oraciones con sujeto y verbo propios —«the company sent…» y «the fees… covered…»— y una coma no basta para separarlas. Es el error de quien trata «however» como si fuera «but»: «but» sí es conjunción coordinante y admitiría la coma, «however» no lo es.",
+        "Coma entre el anuncio y su especificación. A la izquierda hay una oración cerrada —«Whatever kept the line solvent lay elsewhere»— y lo que sigue no es un inciso suyo ni una aposición: «elsewhere» es un adverbio, no un nombre, así que «the fees it charged wool brokers» no tiene a qué aponerse y queda colgando detrás de una coma. Es la apuesta de quien puntúa por respiración —al leer en voz alta hay pausa, y la pausa se escribe— y la que trae de casa quien, en la duda, pone coma.",
       B:
-        "Sin ningún signo quedan dos oraciones seguidas sin frontera, y el lector arrastra «however» al final de la primera —«fewer than two hundred official messages however»— hasta que el segundo verbo lo obliga a volver atrás. Es la apuesta segura de quien no lee la frase entera: en la duda, ningún signo.",
+        "Sin ningún signo, la frase pega el anuncio y su desarrollo: «…lay elsewhere the fees it charged wool brokers» obliga a leer un adverbio y un sintagma nominal seguidos y sin frontera, y el lector no descubre que le falta algo hasta la relativa. Es el error de quien da por hecho que, si el sentido se entiende, el signo sobra; es también la apuesta de quien ha aprendido que en este examen la opción prudente es la que no pone nada.",
       C:
-        "Correcta: el punto y coma separa dos oraciones independientes que no van unidas por conjunción coordinante, que es exactamente lo que hay aquí; «however» es un adverbio conjuntivo, señala el contraste y va seguido de su propia coma, pero no puede sostener él solo la unión.",
+        "Correcta: a la izquierda de los dos puntos hay una oración completa que anuncia sin decir el qué —«Whatever kept the line solvent lay elsewhere»— y a la derecha el sintagma que lo dice. Eso es exactamente lo que los dos puntos hacen y lo único que exigen: oración completa delante, y detrás la especificación, que no tiene por qué ser oración. El párrafo lo confirma dos líneas antes, cuando separa lo que el ministerio pagó de lo que de verdad tenía ocupado el hilo.",
       D:
-        "Los dos puntos anuncian que lo que sigue desarrolla, ilustra o cumple lo que se acaba de decir, y aquí lo que sigue lo contradice: «however» avisa de un contraste, no de una ampliación. Es el error de quien ve dos hechos relacionados y coloca los dos puntos como si cualquier relación fuera explicación.",
+        "El punto y coma exige oración independiente a los dos lados y a su derecha solo hay «the fees it charged wool brokers, which covered a third of the cost», un sintagma nominal con su relativa: no tiene verbo propio, tiene el de la relativa. Es el error de quien usa el punto y coma como una coma reforzada cuando lo que sigue le resulta largo, y aquí lo alimenta esa relativa final, que mete un verbo —«covered»— dentro de la propia frase nominal y la hace parecer una oración.",
     },
     fuenteHecho:
-      "Historia de las telecomunicaciones, hecho libre: las líneas telegráficas se justificaron ante la opinión pública como instrumento de gobierno y se sostuvieron con tráfico comercial. La línea, el paso de montaña, 1868, la guarnición y el mercado de la lana son invención propia. Distancias en kilómetros, como el resto del examen: ninguna medida imperial obliga al estudiante a convertir bajo cronómetro. Por la misma razón el plazo es «two weeks» y no «fortnight»: la palabra es británica, queda fuera del currículo escolar de inglés en Colombia y en casi toda Latinoamérica, y aquí **no es adorno** —es la mitad del contraste «una hora en vez de…» que hace inteligible la promesa con la que se vendió la línea—, de modo que quien no la conociera perdía la premisa del párrafo entero.\n\n**Corte de complejidad (22 ago 2026).** Se parten tres oraciones y no la del hueco. De **24,0 a 13,6** palabras por oración, de cinco oraciones a ocho. Dos cambios de palabra, ninguno sobre material citado: «could set what a shepherd was offered» → «reached a shepherd» (relativa libre por verbo llano) y «a third of what the concession had cost» → «a third of the cost», que quita del examen «concession», palabra rara y del mismo campo semántico que la concesión administrativa que el estudiante no necesita. A la derecha de «however» sigue habiendo oración con sujeto y verbo propios —«the fees it charged wool brokers covered a third of the cost»—, que es lo que hace único al punto y coma, y a la izquierda sigue habiendo otra. Ni una opción ni una razón se tocaron.",
+      "Historia de las telecomunicaciones, hecho libre: las líneas telegráficas se justificaron ante la opinión pública como instrumento de gobierno y se sostuvieron con tráfico comercial. La línea, el paso de montaña, 1868, la guarnición y el mercado de la lana son invención propia. Distancias en kilómetros, como el resto del examen: ninguna medida imperial obliga al estudiante a convertir bajo cronómetro. Por la misma razón el plazo es «two weeks» y no «fortnight»: la palabra es británica, queda fuera del currículo escolar de inglés en Colombia y en casi toda Latinoamérica, y aquí **no es adorno** —es la mitad del contraste «una hora en vez de…» que hace inteligible la promesa con la que se vendió la línea—, de modo que quien no la conociera perdía la premisa del párrafo entero.\n\n**Corte de complejidad (22 ago 2026).** Se parten tres oraciones y no la del hueco. De **24,0 a 13,6** palabras por oración, de cinco oraciones a ocho. Dos cambios de palabra, ninguno sobre material citado: «could set what a shepherd was offered» → «reached a shepherd» (relativa libre por verbo llano) y «a third of what the concession had cost» → «a third of the cost», que quita del examen «concession», palabra rara y del mismo campo semántico que la concesión administrativa que el estudiante no necesita.\n\n**La oración del hueco cambió de regla el 23 ago 2026, y el pasaje no cambió de contenido.** Hasta esa fecha el ítem examinaba el punto y coma delante de un adverbio conjuntivo —«…fewer than two hundred official ______ however, the fees it charged wool brokers covered a third of the cost»— y su clave era, con la de q22, la segunda del bloque en ese signo. El motivo del cambio no es de contenido ni de calidad del ítem, que estaba declarado apto: es de conjunto, y está en el punto 3 de la cabecera. Con el punto y coma repetido, los dos puntos no eran clave en ninguno de los cuatro ítems de fronteras y «en este módulo, nunca los dos puntos» era una eliminación aprendible que valía 37,5 % combinada con «la coma es la trampa». La última oración se parte en dos —«…fewer than two hundred official messages. Whatever kept the line solvent lay ______ the fees it charged wool brokers, which covered a third of the cost.»— y con ella el signo correcto pasa a ser los dos puntos, de modo que cada una de las cuatro formas es clave exactamente una vez.\n\n**Lo que la línea perdió y hay que saber que se perdió:** el módulo deja de examinar el punto y coma ante adverbio conjuntivo, que es una de las fronteras más frecuentes del SAT real y que el bloque SEC del módulo 1 tampoco examina. Se cambia una regla muy examinable por un reparto de signos que ninguna apuesta ciega puede explotar; si el coordinador prefiere lo contrario, lo que hay que rehacer es q22, no este.\n\n**Medido sobre el pasaje nuevo:** nueve oraciones, 116 palabras, **12,9 palabras por oración** (venía de 13,6) y la más larga 20 (venía de 26). T sigue en 1 y el ítem sigue midiendo lo mismo o menos que antes; la etiqueta no se mueve. Los tres datos que deciden —la oración completa de la izquierda, el sintagma nominal de la derecha y el adverbio que impide la aposición— están los tres dentro de la oración del hueco, así que L tampoco sube. La palabra que precede al hueco es «lay» y no coincide con ninguna opción; «elsewhere» no aparece en ninguna otra parte del pasaje, y el solape léxico clave-distractores sigue siendo 0/0/0/0, porque las cuatro opciones son la misma palabra con distinto signo.\n\nPor R2, el ítem cambia de texto, de opciones y de razones, y vuelve entero a la cola de auditoría.",
   },
   {
     id: 'q19',
@@ -752,7 +858,7 @@ export const meta: SatItemMeta[] = [
         "Presente perfecto con complemento de tiempo pasado definido: el inglés escrito no admite «in 1893 it has staged». Es el error de quien arrastra el «has opened» del cierre sin ver que aquel es correcto por su propio complemento —«every season since» abre un período que llega hasta hoy— y este no, porque «in 1893» cierra el suyo. Es además la opción donde se cruzan las dos apuestas de quien decide sin leer la frase: la forma perfecta, que es la que un examen de gramática parece estar examinando, y la marca de singular, que es el número por defecto cuando no se ve el sujeto. Que las dos caigan aquí y no en la clave es a propósito.",
     },
     fuenteHecho:
-      "Historia del teatro, hecho libre: las compañías de provincias vivieron durante el siglo XIX de repertorio traducido y de refritos extranjeros, y el paso a obra escrita en la lengua o el habla del público fue un episodio corriente y tardío en muchas de ellas. El pueblo, la compañía, el maestro de escuela, la fecha de 1893 y las once funciones son invención propia: el pasaje no atribuye ninguna primicia a nadie ni describe ningún teatro real. Sin país, sin moneda y sin medidas, como el resto del módulo.\n\n**Este ítem sustituye al de historia editorial que ocupaba esta fila** (impresor de provincias, «In 1846», el verbo «contain»), retirado por R11 en la quinta vuelta; el porqué está en el punto 5 ter de la cabecera. Las dos correcciones de equidad y veracidad que aquel arrastraba se conservan como criterio y no como texto: no se afirma ninguna primicia histórica que no se pueda sostener —era el error de un siglo del pasaje de 1846— y no hay ninguna referencia nacional que no aporte nada al ítem, que era lo que se le quitó al «ordinary American bookstore» de aquel cierre.\n\n**El pasaje se partió por oraciones el 22 ago 2026 y no cambió de contenido.** La oración del hueco era la más larga del módulo después de la de q25 —38 palabras— y se corta detrás de «in the speech of the market square»: quien escribió la pieza pasa a oración propia, «Its author was a schoolteacher who had never published a line». El pasaje baja de 26,3 a 21,4 palabras por oración de media y de 38 a 30 la más larga. Las tres condiciones de clave única siguen cumplidas —la fecha dentro de la oración del hueco, el trasfondo en pluscuamperfecto unido por «when» y ningún hecho pasado posterior al que el estreno preceda—, y ni una opción ni una razón se tocaron. El detalle está en la sección «CALIBRACIÓN» de la cabecera.\n\n**Segundo corte, el mismo día: dos oraciones más, y ninguna de ellas es la del hueco.** Se parten la primera —«…plays translated from other languages. Its audience came to expect an evening that sounded like somewhere else.»— y la del éxito —«The house sold out for eleven nights. The company printed the text at its own expense.»—. El pasaje pasa de 21,8 a 15,3 palabras por oración y de cinco oraciones a siete; la más larga sigue siendo la del hueco, con 31, porque **esa oración no se toca en absoluto**: «in 1893», el trasfondo en pluscuamperfecto y el «when» que los une siguen exactamente donde estaban, letra por letra. Los verbos que la razón de A necesita en pasado —«sold out», «printed»— siguen los dos en el pasaje, solo que en oraciones distintas, y el «has opened / every season since» que sostiene la razón de D no se ha tocado. Ni un tipo léxico entra o sale del pasaje: el solape con las cuatro opciones era 0/0/0/0 y sigue siéndolo, porque ninguna forma de *stage* aparece en el texto. Longitud: de 101,0 a 99,7 palabras-SAT.",
+      "Historia del teatro, hecho libre: las compañías de provincias vivieron durante el siglo XIX de repertorio traducido y de refritos extranjeros, y el paso a obra escrita en la lengua o el habla del público fue un episodio corriente y tardío en muchas de ellas. El pueblo, la compañía, el maestro de escuela, la fecha de 1893 y las once funciones son invención propia: el pasaje no atribuye ninguna primicia a nadie ni describe ningún teatro real. Sin país, sin moneda y sin medidas, como el resto del módulo.\n\n**Este ítem sustituye al de historia editorial que ocupaba esta fila** (impresor de provincias, «In 1846», el verbo «contain»), retirado por R11 en la quinta vuelta; el porqué está en el punto 5 ter de la cabecera. Las dos correcciones de equidad y veracidad que aquel arrastraba se conservan como criterio y no como texto: no se afirma ninguna primicia histórica que no se pueda sostener —era el error de un siglo del pasaje de 1846— y no hay ninguna referencia nacional que no aporte nada al ítem, que era lo que se le quitó al «ordinary American bookstore» de aquel cierre.\n\n**El pasaje se partió por oraciones el 22 ago 2026 y no cambió de contenido.** La oración del hueco era la más larga del módulo después de la de q25 —38 palabras— y se corta detrás de «in the speech of the market square»: quien escribió la pieza pasa a oración propia, «Its author was a schoolteacher who had never published a line». El pasaje baja de 26,3 a 21,4 palabras por oración de media y de 38 a 30 la más larga. Las tres condiciones de clave única siguen cumplidas —la fecha dentro de la oración del hueco, el trasfondo en pluscuamperfecto unido por «when» y ningún hecho pasado posterior al que el estreno preceda—, y ni una opción ni una razón se tocaron. El detalle está en la sección «CALIBRACIÓN» de la cabecera.\n\n**Segundo corte, el mismo día: dos oraciones más, y ninguna de ellas es la del hueco.** Se parten la primera —«…plays translated from other languages. Its audience came to expect an evening that sounded like somewhere else.»— y la del éxito —«The house sold out for eleven nights. The company printed the text at its own expense.»—. El pasaje pasa de 21,8 a 15,3 palabras por oración y de cinco oraciones a siete; la más larga sigue siendo la del hueco, con 31, porque **esa oración no se toca en absoluto**: «in 1893», el trasfondo en pluscuamperfecto y el «when» que los une siguen exactamente donde estaban, letra por letra. Los verbos que la razón de A necesita en pasado —«sold out», «printed»— siguen los dos en el pasaje, solo que en oraciones distintas, y el «has opened / every season since» que sostiene la razón de D no se ha tocado. Ni un tipo léxico entra o sale del pasaje: el solape con las cuatro opciones era 0/0/0/0 y sigue siéndolo, porque ninguna forma de *stage* aparece en el texto. Longitud: de 101,0 a 99,7 palabras-SAT.\n\n**Ortografía (23 ago 2026): «theatre» → «theater», dos veces.** Era el único britanismo del módulo, que escribe «color», «gray» y «kilometer» a la americana, y la norma del examen es la estadounidense. No toca ninguna razón —las de este ítem citan «had worked», «sold out», «printed» y «has opened»— ni cambia una sola palabra más del pasaje.",
   },
   {
     id: 'q21',
@@ -773,7 +879,7 @@ export const meta: SatItemMeta[] = [
         "Correcta: el núcleo del sujeto es «the row», singular, aunque entre él y el verbo se interpongan «of gauges» y la relativa «that the port authority has kept along the estuary since 1892»; y el presente simple es el tiempo que exige el verbo coordinado «and stores».",
     },
     fuenteHecho:
-      "Oceanografía de manual: el mareógrafo de flotador en pozo tranquilizador, con plumilla sobre tambor de relojería, deja un trazo **continuo** sobre el papel —de ahí «without a break»— y no una lectura cada diez minutos, que es lo que hace un registrador digital. El nivel del mar es la serie larga de esos rollos. El puerto, el estuario y la fecha de 1892 son invención propia.\n\n**Corte de complejidad y de localización (22 ago 2026).** T: se parte la oración de apertura —el tambor de relojería pasa a oración propia— y la cola de la oración del hueco. De **20,6 a 15,3** palabras por oración, de cinco oraciones a siete. «Its value» pasa a «The value of the gauge» porque el posesivo se quedaba sin antecedente claro al cortar, y «nothing grander» a «nothing more» por frecuencia; ninguna de las dos está citada en ninguna razón. L: la oración del hueco pasa de **43 a 34** palabras, el tramo del hueco a «and stores» de **13 a 11** y lo que queda detrás de «stores» de **11 a 5**, porque la relativa final —«a cupboard that is opened only after a storm»— sale a oración propia y ya no obliga a volver atrás. Lo que **no** puede bajar es el tramo de «row» al hueco: esa frase interpuesta es la regla que el ítem mide y `razones.D` la cita entera. El núcleo, la interposición y el verbo coordinado «and stores» siguen los tres dentro de la oración del hueco. Ni una opción ni una razón se tocaron.",
+      "Oceanografía de manual: el mareógrafo de flotador en pozo tranquilizador, con plumilla sobre tambor de relojería, deja un trazo **continuo** sobre el papel —de ahí «without a break»— y no una lectura cada diez minutos, que es lo que hace un registrador digital. El nivel del mar es la serie larga de esos rollos. El puerto, el estuario y la fecha de 1892 son invención propia.\n\n**Corte de complejidad y de localización (22 ago 2026).** T: se parte la oración de apertura —el tambor de relojería pasa a oración propia— y la cola de la oración del hueco. De **20,6 a 15,3** palabras por oración, de cinco oraciones a siete. «Its value» pasa a «The value of the gauge» porque el posesivo se quedaba sin antecedente claro al cortar, y «nothing grander» a «nothing more» por frecuencia; ninguna de las dos está citada en ninguna razón. L: la oración del hueco pasa de **43 a 34** palabras, el tramo del hueco a «and stores» de **13 a 11** y lo que queda detrás de «stores» de **11 a 5**, porque la relativa final —«a cupboard that is opened only after a storm»— sale a oración propia y ya no obliga a volver atrás. Lo que **no** puede bajar es el tramo de «row» al hueco: esa frase interpuesta es la regla que el ítem mide y `razones.D` la cita entera. El núcleo, la interposición y el verbo coordinado «and stores» siguen los tres dentro de la oración del hueco. Ni una opción ni una razón se tocaron.\n\n**Verosimilitud del sujeto (23 ago 2026).** La oración decía que la hilera de mareógrafos «stores the rolls in a cupboard», y una hilera de instrumentos no guarda rollos en un armario: eso lo hace alguien. Importa más de lo que parece porque «and stores» es el verbo coordinado que fija el tiempo de la clave y lo citan tres de las cuatro razones; si su sujeto no es creíble, el estudiante duda de la coordinación por donde no debe. → «…and stores the record on rolls of paper. The rolls go into a cupboard that is opened only after a storm.» El verbo se queda donde estaba, el núcleo «row» y la frase interpuesta también, y la oración del hueco pasa de 34 a 35 palabras. El pasaje sube de 15,3 a 16,1 palabras por oración: por debajo de 18, así que T sigue en 1. Ni una opción ni una razón se tocaron.",
   },
   {
     id: 'q22',
@@ -794,6 +900,6 @@ export const meta: SatItemMeta[] = [
         "Repite los dos puntos que ya abrieron la enumeración detrás de «three people in all». Un segundo par de puntos dentro de la misma serie anuncia una lista nueva que nunca llega, y deja al lector esperando el desglose del bibliotecario. Es el error de quien asocia los dos puntos con la idea de «enumerar» y los repite en cada tramo de la lista.",
     },
     fuenteHecho:
-      "Práctica coral aficionada, hecho libre: un coro sin audiciones cuya calidad se explica por horas acumuladas y no por selección. La aritmética del párrafo es correcta: un año tiene cincuenta y dos jueves, de los cuales el texto cuenta cincuenta, y cincuenta jueves por once años dan quinientos cincuenta ensayos. El coro, la ciudad, la panadería y las cifras son invención propia. La comparación con el conservatorio la sostiene ahora el director —«which the director says is more singing together than…»— y no el narrador: cuánto han cantado juntos los estudiantes al salir de un conservatorio no es verificable, y el párrafo ya había presentado al director como quien explica el coro por aritmética.\n\n**Corte de complejidad (22 ago 2026); la localización de este ítem no se puede bajar.** T: se parten tres oraciones —la de los jueves consecutivos, la de los músicos visitantes y la de la panadería— y «three consecutive Thursdays» pasa a «three Thursdays in a row» por frecuencia. De **25,2 a 16,9** palabras por oración, de seis oraciones a nueve; era el pasaje más largo del bloque. **La oración de la lista no se toca en ningún carácter**: el dos puntos tras «three people in all», las tres relativas explicativas y el primer punto y coma siguen letra por letra. L: no baja, y no por descuido. Los tres datos que deciden —el dos puntos que abre la enumeración, el primer punto y coma y las comas internas de los miembros— están **todos** dentro de la oración del hueco, así que no hay nada que acercar, y los tres están citados palabra por palabra en `razones.A`, `razones.C` y `razones.D`: acortar esa oración sería escribir en una razón. Lo que se acorta es el camino hasta ella. Ni una opción ni una razón se tocaron.",
+      "Práctica coral aficionada, hecho libre: un coro sin audiciones cuya calidad se explica por horas acumuladas y no por selección. La aritmética del párrafo es correcta: un año tiene cincuenta y dos jueves, de los cuales el texto cuenta cincuenta, y cincuenta jueves por once años dan quinientos cincuenta ensayos. El coro, la ciudad, la panadería y las cifras son invención propia. La comparación con el conservatorio la sostiene ahora el director —«which the director says is more singing together than…»— y no el narrador: cuánto han cantado juntos los estudiantes al salir de un conservatorio no es verificable, y el párrafo ya había presentado al director como quien explica el coro por aritmética.\n\n**Corte de complejidad (22 ago 2026); la localización de este ítem no se puede bajar.** T: se parten tres oraciones —la de los jueves consecutivos, la de los músicos visitantes y la de la panadería— y «three consecutive Thursdays» pasa a «three Thursdays in a row» por frecuencia. De **25,2 a 16,9** palabras por oración, de seis oraciones a nueve; era el pasaje más largo del bloque. **La oración de la lista no se toca en ningún carácter**: el dos puntos tras «three people in all», las tres relativas explicativas y el primer punto y coma siguen letra por letra. L: no baja, y no por descuido. Los tres datos que deciden —el dos puntos que abre la enumeración, el primer punto y coma y las comas internas de los miembros— están **todos** dentro de la oración del hueco, así que no hay nada que acercar, y los tres están citados palabra por palabra en `razones.A`, `razones.C` y `razones.D`: acortar esa oración sería escribir en una razón. Lo que se acorta es el camino hasta ella. Ni una opción ni una razón se tocaron.\n\n**Un caso discutible que no debía estar aquí (23 ago 2026).** «Fifty Thursdays a year for eleven years **come** to more than five hundred rehearsals» es defendible: sujeto aritmético con verbo plural. Pero es exactamente la decisión que examina q21, dos ítems antes, y un caso discutible del mismo asunto no se deja suelto en el mismo bloque —el estudiante que acaba de razonar la concordancia del núcleo se encuentra aquí con una que podría ir de las dos maneras—. → «add up to», que con sujeto plural no admite discusión. La oración de la lista, que es la examinada, no se toca; esta va cuatro oraciones antes. El pasaje pasa de 16,9 a 17,0 palabras por oración —una palabra más— y sigue por debajo de 18, que es lo que mantiene T en 1. Ni una opción ni una razón se tocaron.",
   },
 ]

@@ -873,6 +873,111 @@ import type { SatItemMeta } from '../module-types'
  * discusión está acotada arriba a una cláusula—. Y sigue sin cerrarse la divergencia de una
  * letra que dejó la novena pasada en `razones.C` de q09 («Neither» con mayúscula, que en el
  * texto va en minúscula): esta ronda tampoco tenía permiso sobre las razones.
+ *
+ * DECIMOTERCERA PASADA (23 ago 2026) — q14 SE REESCRIBE ENTERO, Y ES EL ÚNICO CAMBIO DEL
+ * BLOQUE. El auditor de clave devolvió el módulo con 14 de 15 aptos y cero dobles claves, y
+ * dejó dos cosas sobre este bloque: una bloqueante en q14 y una de conjunto que emparejaba
+ * q09 con q14. Las dos se cierran con el mismo movimiento.
+ *
+ * ⚠️ **Todo lo que este encabezado dice más arriba sobre q14 es historia.** Elvira, la tienda
+ * de la esquina, los gemelos Sarda, los tres escalones y el turno de la panadería no existen
+ * ya en el archivo. Se deja escrito porque explica de qué se murió el ítem.
+ *
+ * EL BLOQUEANTE. La clave del q14 anterior exigía que los gemelos se separaran al subir —
+ * Rafael de una zancada, Pablo escalón a escalón— y que de esa separación salieran la
+ * identificación y el orden. Dos líneas antes, el pasaje decía «and they came in together,
+ * shoulder to shoulder». Esa cláusula estaba puesta para matar el distractor de las horas
+ * distintas, y de paso mordía la clave: si entran a la vez y pegados, no hay orden que oír.
+ * Había un arreglo barato —que «shoulder to shoulder» describiera el camino desde la panadería
+ * hasta los escalones y no la entrada—, y no se ha tomado, porque no resolvía el segundo
+ * defecto y el segundo defecto obligaba a rehacer el ítem de todos modos.
+ *
+ * EL DEFECTO DE CONJUNTO, que es el que decide. q09 y q14 eran el mismo ítem con otra ropa:
+ * dos objetos casi indistinguibles (dos lagos a un kilómetro, dos gemelos que ni su madre
+ * separa), tres explicaciones canceladas de antemano una por una por el texto (misma
+ * profundidad, sin caudal, mismo sol · mismo turno, mismos hornos, sin hablar) y la clave como
+ * la única propiedad que queda en pie. Quien resuelve uno resuelve el otro sin leer, y eso no
+ * se ve revisando ítem a ítem: es exactamente la avería que este archivo lleva doce pasadas
+ * persiguiendo por otros nombres.
+ *
+ * POR QUÉ SALE q14 Y NO q09, dicho con la factura delante:
+ *
+ * - **q09 mide 7 y es uno de los dos únicos ítems de lectura en banda fácil del módulo.** Ese
+ *   número costó nueve pasadas y la duodécima lo dejó escrito: no se recupera reescribiendo,
+ *   porque un ítem nuevo se mide donde se mide y bajar exige acercar las opciones, que es lo
+ *   prohibido. Tocarlo arriesga el único hueco fácil que el bloque consiguió abrir.
+ * - **En q09 vive el trabajo más caro del bloque:** los cuatro términos del balance de calor
+ *   invernal de un lago, cruzados dos y dos por clase (agua que llega: B y C) y por notoriedad
+ *   (primer reflejo: A y C), después de tres intentos y de una fuga de nueve de diez a ciegas.
+ *   Rehacerlo es tirar eso y volver a empezar la cuenta de fugas.
+ * - **q14 hay que tocarlo igualmente**, porque su contradicción es bloqueante. Rehacerlo
+ *   resuelve los dos encargos con un solo ítem nuevo, y además es el pasaje más caro que
+ *   quedaba en el bloque (127,2 palabras-SAT, la media de oración más alta tras el corte de
+ *   q13). Sale más barato por los dos lados.
+ *
+ * MECÁNICA NUEVA, que era el tercer encargo —blando, pero es el que da la mejora de verdad—.
+ * El auditor midió que cuatro de los quince ítems se ganan con la misma operación: buscar la
+ * frase plantada para negar cada opción. El q14 nuevo no se resuelve así. El pasaje enuncia
+ * una regla completa en dos frases seguidas (la bandera significa que hay clase; la iza Rosa
+ * al llegar y la arría al anochecer; nadie más ha tocado nunca la cuerda), añade un hecho
+ * físico (el río no se puede cruzar desde la lluvia del domingo) y una observación (el lunes a
+ * las ocho la bandera está izada). **La respuesta se construye aplicando la regla y se puede
+ * formular antes de mirar las opciones**; no es el residuo de tres descartes. Los tres
+ * distractores no mueren cada uno por su frase plantada, sino por tres usos distintos de la
+ * misma regla y del mismo hecho: B niega el hecho del río para conservar la rutina, C se salta
+ * la cláusula de exclusividad, D se salta la del anochecer. Ninguno inventa un mecanismo que
+ * el pasaje tenga que ir a desmentir.
+ *
+ * ESCENARIO, elegido por descarte contra los otros veintiséis ítems del módulo, porque aquí ya
+ * costó una pasada entera no mirar el conjunto (sexta pasada, q11 y su racimo con q08):
+ * fuera la cocina de la abuela y la mesa puesta (q01 CS), fuera cualquier señal marinera —el
+ * muro blanco repintado para meter la barca es q02 CS—, fuera nieve, valle y ladera (q09 y
+ * q13), fuera pan, horno y panadería (el coro del q26 SEC ensaya encima de una) y fuera
+ * escritora, crítica y archivo (q10). Queda una escuela de pueblo a la orilla de un río, que
+ * no toca ninguno.
+ *
+ * MEDIDO, eje por eje, con la escala del calibrador (5-7 fácil · 8-11 medio · 12-15 difícil):
+ * **de 10 a 9.** T 1 · L 2 · D 2 · A 3 · E 1. Pasaje de 95 palabras, ocho oraciones, media
+ * 11,9 y máxima 17, escena concreta y léxico corriente, así que T baja de 2 a 1; L se queda en
+ * 2 porque siguen siendo dos partes que cruzar (la regla y el estado del río) aunque estén
+ * seguidas; A vale 3 por ser inferencia y no baja; E es la fórmula fija del SAT digital.
+ * **Etiqueta: sigue en 2**, que es lo que dice el plan. Puerta 9: el grupo `inferences` queda
+ * q15 (posición 14, mide 9) → q14 (posición 15, mide 9): plano, no baja. Mezcla declarada del
+ * módulo, intacta. La media del bloque baja un punto repartido entre siete, que es lo que
+ * pedía el encargo: lo mismo o menos, nunca más.
+ *
+ * PUERTAS, medidas con el contador del guardián sobre el ítem nuevo:
+ * - Puerta 7 · el pasaje pasa de 127,2 a 80,2 palabras-SAT (481 caracteres), dentro de 25-150.
+ *   Es ahora el más corto del bloque después de q15.
+ * - Puerta 2 · longitudes 81/85/78/76: la clave ni la más larga ni la más corta, y el bloque
+ *   sigue en 0 % por las dos caras.
+ * - Puerta 3 · solapes 4/3/3/5: la clave estrictamente entre el mayor y el menor, y a un punto
+ *   del mejor distractor (el fallo duro salta a partir de tres).
+ * - Puerta 5 · las cuatro razones son distintas entre sí y cada una nombra un error concreto;
+ *   las cuatro citas del pasaje se comprobaron literales después de guardar.
+ *
+ * LO QUE QUEDA A CIEGAS, medido a mano con las cuatro sondas de la undécima pasada y asumido:
+ * el abanico no tiene ningún apoyo en el mundo —cuatro afirmaciones sobre un pueblo, una
+ * maestra y una bandera que nadie conoce—, así que la sonda del «adulto culto» no discrimina,
+ * y las mecánicas tampoco (longitudes dentro de nueve caracteres, ninguna opción marcada, y
+ * dos de las cuatro son igual de novelescas: que la maestra durmiera en la escuela y que el
+ * río bajara por la noche). La corazonada de después de una crecida —la vida vuelve a su
+ * sitio— lleva a B, no a la clave. Esto es comprobación de diseño y **no sustituye a la
+ * medición**: ver PENDIENTE.
+ *
+ * Lo que NO se tocó: los seis ítems restantes del bloque —ni un carácter—, las siete claves del
+ * plan (q14 sigue en A), los siete enunciados, las posiciones, y la fila 15 del plan entera
+ * (II, `inferences`, literatura, dificultad 2, clave A), que sigue describiendo el archivo.
+ * Sigue sin cerrarse la divergencia de una letra que dejó la novena pasada en `razones.C` de
+ * q09 («Neither» con mayúscula, que en el texto va en minúscula): esta ronda solo tenía
+ * permiso sobre q14.
+ *
+ * PENDIENTE, y bloquea el APTO: por R2, q14 es un ítem nuevo entero y vuelve a la cola de
+ * auditoría con su huella cambiada. Hay que medirlo a ciegas de verdad
+ * (`scripts/sat-blind-test.mjs`, que manda enunciado y opciones y no manda el `stimulus`),
+ * pasarle auditoría de clave única y de equidad, y que el calibrador confirme el 9 —el eje
+ * discutible es L, que un calibrador podría leer como 1 al estar las dos partes en frases
+ * contiguas; si lo lee así el ítem cae a 8 y la etiqueta sigue siendo 2—.
  */
 
 export const items: MCQQuestion[] = [
@@ -971,13 +1076,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      "Elvira had kept the corner shop for thirty years, and for the last eleven of them she could not have told you the color of a customer's coat. Her sight had gone slowly and then all at once. The Sarda twins were the one pair in town nobody else could sort out either; even their mother went by the haircuts. Rafael and Pablo came in at the end of the bakery shift they worked together, both of them off the same ovens, and they came in together, shoulder to shoulder. The door was up three high steps, and Pablo had broken an ankle at seven and had taken those steps one at a time ever since. From behind the curtain of the back room, before either of them had said a word, Elvira called out the two names in the order they came. She could only have been going by…",
+      "The school in Tarnil stands on the south bank of the river. Rosa Quiral has taught in it for nine years and lives on the north bank. The flag on the school pole means there is class that day. Rosa raises it herself when she gets in and takes it down at dusk. Nobody else has ever touched the rope. Sunday's rain carried the footbridge away, and since then the river has run too high to cross. On Monday at eight the flag was up. What the flag told the village that morning is that…",
     text: 'Which choice most logically completes the text?',
     options: [
-      'the steps at the door, which Rafael went up in a bound while Pablo put a foot down on each one.',
-      'the two voices, which had broken a full year apart and had settled at different depths since.',
-      'the hour, since the bakery let Rafael off the ovens a good twenty minutes before it let Pablo go.',
-      'the smell of the ovens, which would have hung about Rafael at the end of a shift and not about Pablo.',
+      'Rosa had not gone home since the rain, and had spent the night on the south side.',
+      'the river had gone down in the night, and Rosa had come over the way she always does.',
+      'somebody in the village had gone up to the school and raised the flag for her.',
+      'Rosa had raised the flag before the rain came, and nobody had taken it down.',
     ],
     answer: 0,
   },
@@ -1106,14 +1211,15 @@ export const meta: SatItemMeta[] = [
     tema: 'literatura',
     razones: {
       A:
-        'Correcta: es lo único que le llega detrás de la cortina. Pablo «had broken an ankle at seven and had taken those steps one at a time ever since», y la puerta tiene tres escalones altos; Elvira los nombra «in the order they came», que es el orden en que suenan los dos modos de subir.',
+        'Correcta, y se llega a ella aplicando la regla que el texto enuncia entera, no descartando las otras tres. La bandera solo puede haberla izado Rosa —«Rosa raises it herself when she gets in» y «Nobody else has ever touched the rope»— y solo puede llevar izada desde esa misma mañana, porque «takes it down at dusk». Si estaba dentro de la escuela el lunes a las ocho y el río «has run too high to cross» desde la lluvia del domingo, no cruzó esa mañana ni la noche anterior: ya estaba en la orilla sur cuando el agua se llevó la pasarela, o sea que no fue a casa. La deducción se puede formular antes de mirar las cuatro opciones, que es justamente lo que no se podía hacer en el ítem al que sustituye.',
       B:
-        'Se apoya en algo que todavía no ha pasado: Elvira dice los dos nombres «before either of them had said a word». Reconocer por la voz es lo primero que se le ocurre a cualquiera cuando quien reconoce no ve, y por eso esta es la más votada de las tres falsas; el texto cierra esa puerta en la misma frase en la que la abre.',
+        'Deshace un hecho que el pasaje afirma, para poder conservar la rutina: el texto dice «since then the river has run too high to cross», y además la pasarela se la llevó la lluvia del domingo, así que el «the way she always does» de la propia opción no describe ninguna mañana desde entonces. Es el camino del sentido común —pasada la crecida, la vida vuelve a su sitio— y por eso es la más votada de las tres falsas: quien la elige explica la bandera con lo que suele ocurrir en el pueblo y no con lo que el pasaje dice que ocurrió ese fin de semana.',
       C:
-        'Necesita que los gemelos lleguen separados, y llegan juntos: «they came in together, shoulder to shoulder», al final de un turno que hacen los dos. Si entran a la vez por la misma puerta, la hora no distingue a uno del otro. Es el error de quien resuelve con la rutina del pueblo en lugar de con lo que ocurre esa tarde.',
+        'Se salta la cláusula de exclusividad de la regla: «Nobody else has ever touched the rope». Es la lectura humana de la escena, la del vecino que sube a echar una mano cuando la maestra no puede llegar, y valdría para casi cualquier señal de pueblo menos para esta, que el texto ata a una sola persona. Quien la elige ha retenido qué significa la bandera y no quién puede izarla, que es la mitad de la regla que decide el ítem.',
       D:
-        'Reparte entre los hermanos un olor que el texto les da por igual: vienen del mismo turno y «both of them off the same ovens». El pan es el único dato sensorial del pasaje, y quien elige esta opción construye con él el mecanismo sin fijarse en que vale para los dos.',
+        'Lee la bandera como un resto y no como un acto de esa mañana: si llevara izada desde antes de la lluvia, no diría nada del lunes y el ítem no tendría respuesta. La regla cierra esa puerta en la misma frase en que la abre —«takes it down at dusk»—, así que ninguna bandera pasa la noche izada. Es el movimiento del escéptico y el único distractor que no contradice ningún hecho del pasaje: falla por usar media regla, no por inventarse un dato.',
     },
-    fuenteHecho: 'Ficción original; la tienda, los gemelos y la ceguera de Elvira están inventados.',
+    fuenteHecho:
+      'Ficción original: Tarnil, Rosa Quiral, la escuela de una orilla y la bandera del mástil están inventados; los dos nombres se comprobaron en buscador antes de fijarlos y no corresponden a ningún pueblo ni a ninguna persona. Sustituye al q14 anterior (Elvira, la tienda de la esquina y los gemelos Sarda), retirado en la decimotercera pasada por dos defectos que se sumaban. El bloqueante era una contradicción interna: la clave exigía que los gemelos se separaran en los escalones —uno de una zancada, el otro escalón a escalón— y el pasaje decía dos líneas antes «they came in together, shoulder to shoulder», cláusula puesta para matar el distractor de las horas que de paso mordía la clave. El de fondo era que compartía arquitectura exacta con q09: dos objetos casi indistinguibles (dos lagos, dos gemelos), tres explicaciones canceladas una a una por el texto y la clave como única propiedad que queda en pie, de modo que quien resolvía uno resolvía el otro sin leer. Aquí no hay pareja de objetos ni descarte en cadena: la regla de la bandera se enuncia entera en dos frases seguidas y la respuesta se construye aplicándola.',
   },
 ]
