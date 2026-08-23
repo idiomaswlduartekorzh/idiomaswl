@@ -94,9 +94,18 @@ import type { SatItemMeta } from '../module-types'
  *   year» y «collected with the rent, like any other due»: periódico y ordinario.
  *
  * **q05 · los flotadores (clave B).**
- * - **Las cuatro opciones comparten dos tercios —221-229 caracteres— y solo se distinguen
- *   por el cierre: ese molde ES el arreglo que cerró su fuga.** No se acorta, no se iguala
- *   más y no se reparte de otro modo.
+ * - **Los dos primeros movimientos del texto van en el enunciado y las cuatro opciones son
+ *   solo el cierre en disputa.** Antes iban dentro de las cuatro opciones, repetidos —24
+ *   palabras × 4—, y esa repetición era el arreglo que cerró la fuga: que solo el cierre
+ *   decida. El arreglo sigue en pie, porque **lo que el estudiante lee sigue siendo lo
+ *   mismo**; lo que ha cambiado es dónde. Quien devuelva el preámbulo a las opciones le
+ *   suma 72 palabras al ítem sin añadir una sola decisión. Lo que NO se puede hacer es
+ *   repartir el preámbulo —dárselo a unas opciones y a otras no—: ahí vuelve la fuga.
+ * - La clave **no repite el cierre del pasaje**. Decía «covers no more years than the old
+ *   one» y «calling it better spread», que son las dos últimas oraciones del texto casi
+ *   literales, y se acertaba emparejando palabras. Dice lo mismo con otras: «goes no
+ *   further back in time» y «more uniform coverage». Quien la reescriba, que no reponga
+ *   «longer», «old one», «evenly» ni «spread».
  * - El ciclo tiene que seguir siendo el real —nueve días a un kilómetro, al décimo día a
  *   dos, perfil tomado en el ascenso—: la primera versión enseñaba un dato falso, y un
  *   simulacro no puede enseñar un dato falso ni de paso.
@@ -104,9 +113,13 @@ import type { SatItemMeta } from '../module-types'
  *   (razón C) y el cierre entero: «not longer than the old one» / «It is more evenly spread».
  *
  * **q06 · Sofía y el vecino (clave C).**
- * - Las cuatro opciones arrancan igual, «It pauses on Sofía's age and her reading to …»: el
- *   molde común es el arreglo que cerró su fuga de sentido; partir la frase en mitades
- *   devuelve la pista de segundo orden —qué mitad se cita—.
+ * - Las cuatro opciones arrancaban igual, «It pauses on Sofía's age and her reading to …»,
+ *   para que ninguna citara una mitad de la frase examinada y no hubiera pista de segundo
+ *   orden —qué mitad se cita—. Ese preámbulo **se ha caído entero de las cuatro**: era
+ *   paráfrasis de la frase que el enunciado ya reproduce literal, así que no hacía falta
+ *   moverlo a ningún sitio. La condición que protegía sigue viva, y es esta: **ninguna
+ *   opción puede nombrar la edad ni las novelas por separado.** Quien escriba «It sets her
+ *   seventeen years against the man of fifty» devuelve la pista él solo.
  * - Sostienen las razones: «Within a week Sofía had decided he was a widower» (A, el juicio
  *   ya está dado antes), la narración externa de principio a fin (B), las tres pruebas de
  *   Sofía (C) y que la edad del vecino no vuelve a cruzarse con la suya (D).
@@ -125,8 +138,12 @@ import type { SatItemMeta } from '../module-types'
  *   «fix».
  *
  * **q08 · el pozo de Cwm Brys (clave D).**
- * - Las cuatro opciones contestan con la misma forma —«each band is …»— y **las cuatro
- *   niegan la lectura ritual**, de modo que ninguna es «la respuesta de examen».
+ * - La concesión —que el pozo tiene cuatro bandas de cerámica rota, cosa que el texto 2 no
+ *   discute— **va en el enunciado**, y las cuatro opciones son solo lo que discute: qué es
+ *   cada banda. Antes la concesión iba dentro de las cuatro opciones, repetida, 17 palabras
+ *   × 4. Las cuatro siguen contestando con la misma forma —completan «each band is …»— y
+ *   **las cuatro niegan la lectura ritual**, de modo que ninguna es «la respuesta de
+ *   examen»: eso es lo que hay que conservar, no el sitio donde está escrita la concesión.
  * - Una cláusula por distractora y ninguna compartida: «wider at the top than any of the
  *   pots» (A), «rounded and worn … before burial» (B), «the lowest band would hold the
  *   oldest; instead every band holds the same two hundred years» (C).
@@ -134,11 +151,16 @@ import type { SatItemMeta } from '../module-types'
  *   jar came out of the lowest band and the highest» y el mismo abanico de dos siglos dentro
  *   de cada banda, más el cierre «did it four times over».
  *
- * **Molde compartido en q05, q06 y q08 — aviso, no defecto.** Tres de ocho llevan la misma
- * premisa en las cuatro opciones y solo la cola en disputa, y eso enseña a leer solo el
- * final. Se deja porque en los tres el molde **es** el arreglo que cerró su fuga. Cambiar la
- * redacción de la premisa sin cambiar su contenido es cosmético: la cola sigue siendo lo
- * único que decide.
+ * **Molde compartido en q05, q06 y q08 — resuelto el 23 ago 2026, y no como se pensaba.**
+ * Tres de ocho llevaban la misma premisa dentro de las cuatro opciones y solo la cola en
+ * disputa. El molde era el arreglo que cerró tres fugas, así que se dejó, con el aviso de
+ * que enseña a leer solo el final. Lo que nadie había medido es lo que costaba: **150
+ * palabras del módulo eran texto que el estudiante lee cuatro veces para nada**, y el módulo
+ * no se podía terminar en 32 minutos. La premisa está ahora donde no se repite —en el
+ * enunciado en q05 y q08, y en q06 fuera, porque era paráfrasis de la frase que el enunciado
+ * ya cita—. **La fuga no se reabre, y la razón es exacta: lo que ve un lector sin el pasaje
+ * delante es palabra por palabra lo mismo que veía antes.** Solo el cierre decide, igual que
+ * ayer. Lo que sigue prohibido es dar la premisa a unas opciones y a otras no.
  *
  * ══════════════════════════════════════════════════════════════════════════════
  * CÓMO SE LLEGÓ AQUÍ, en un párrafo
@@ -215,6 +237,80 @@ import type { SatItemMeta } from '../module-types'
  * —lo que se hizo fue meterla en la oración del hueco, que es la otra vía a L=1 que da la
  * escala—. Por R2 los tres vuelven a la cola de auditoría; la prueba a ciegas **no** hay que
  * repetirla, porque lo que la ciega ve son enunciado y opciones y ninguno de los dos cambió.
+ *
+ * ══════════════════════════════════════════════════════════════════════════════
+ * DECIMOTERCERA PASADA (23 ago 2026) — el reloj, que nadie había medido
+ * ══════════════════════════════════════════════════════════════════════════════
+ *
+ * La simulación de estudiantes midió lo único que las doce puertas no miran: **el módulo no
+ * se puede terminar en 32 minutos.** 4.876 palabras entre pasajes, enunciados y opciones para
+ * 27 ítems; un B2 sólido necesita 43,6 minutos y el estudiante al que va dirigida esta rama
+ * —un B1 flojo, el que NO llegó al corte del módulo 1— se queda sin reloj en el séptimo ítem,
+ * con 19 por contestar. Un simulacro que no se puede acabar no mide lo que dice medir: mide
+ * velocidad de lectura, y a este estudiante le enseña que llegó tarde, no qué falló.
+ *
+ * Y buena parte del gasto era **texto repetido**. Los tres ítems más caros del bloque
+ * —q05 (297 palabras), q08 (313) y q06 (228)— llevaban la misma premisa dentro de las cuatro
+ * opciones: el estudiante la leía cuatro veces y decidía siempre con la cola. Lo que se hizo,
+ * **sin tocar un solo pasaje, ninguna clave y ninguna razón**:
+ *
+ * - **q05 · el más caro del módulo. 297 → 225 palabras.** Las 24 palabras de preámbulo
+ *   —«It gives the reason ships measured… follows one float through a ten-day cycle, and
+ *   closes by…»— pasan al enunciado, que es donde se leen una vez: «The text explains why
+ *   ships measured only some waters in some seasons, then follows one float through a ten-day
+ *   cycle. Which choice best describes how the text closes?». Las opciones son ahora solo el
+ *   cierre en disputa, 17-20 palabras cada una. **72 palabras menos, y la decisión no se ha
+ *   movido de sitio.**
+ * - **q05 · la clave, reescrita (sigue siendo B).** Decía «covers no more years than the old
+ *   one» y «calling it better spread»: las dos últimas oraciones del pasaje —«not longer than
+ *   the old one» / «It is more evenly spread»— casi literales, de modo que se acertaba
+ *   emparejando palabras sin entender el argumento. Dice lo mismo con otras: «By allowing that
+ *   the newer record goes no further back in time, then claiming more uniform coverage». La
+ *   razón de B no se tocó: cita el pasaje, no la opción.
+ * - **q08 · 313 → 266.** La concesión —«By granting that the pit holds four bands of broken
+ *   pottery but arguing that each band is…», 17 palabras × 4— pasa al enunciado: «The author
+ *   of Text 2 accepts that Pit 12 holds four bands of broken pottery. Based on the texts, how
+ *   would that author most likely describe what each band is?». Las cuatro opciones completan
+ *   «each band is …» y las cuatro siguen negando la lectura ritual.
+ * - **q06 · 228 → 197.** El preámbulo —«It pauses on Sofía's age and her reading to …»— no
+ *   había que moverlo a ninguna parte: era paráfrasis de la frase que el enunciado ya cita
+ *   literal. Se cae de las cuatro. La condición que protegía —que ninguna opción cite una
+ *   mitad de la frase examinada— se cumple sola ahora que ninguna cita ninguna.
+ *
+ * **838 → 688 palabras en los tres** (−150, un 18 %), de las cuales 401 son pasaje y no se
+ * tocan: lo que se recortó fue **el 34 % de enunciados y opciones**, 435 → 287. A la velocidad
+ * que midió la simulación son entre 1,2 y 1,4 minutos devueltos al reloj, solo en este bloque.
+ *
+ * **Por qué esto NO reabre la fuga, y hay que decirlo con precisión:** lo que un lector sin el
+ * pasaje delante tiene ahora sobre la mesa es, palabra por palabra, lo mismo que tenía antes
+ * —la premisa la leía cuatro veces, ahora una—. La prueba a ciegas no ve más información que
+ * ayer, así que su resultado no puede empeorar por esto. Lo que sí cambia son las huellas del
+ * acta (enunciado y opciones entran en el hash), de modo que por R2 los tres vuelven a la cola
+ * de auditoría y el acta se firma después de ellos, no antes.
+ *
+ * Puertas medidas sobre el módulo entero con los tres cambios dentro: clave más larga 3,7 %
+ * (máx. 30), clave más corta 7,4 % (máx. 30), solape alto 7,4 % y solape bajo 3,7 % (máx. 40
+ * cada uno), y ningún ítem con la clave repitiendo tres palabras más del texto que el mejor
+ * distractor. En los tres, la clave quedó **ni la más larga ni la más corta**: q05 100 de
+ * 94·100·103·100, q06 93 de 95·92·93·92, q08 78 de 77·77·79·78. La reordenación de longitudes
+ * que dejó la auditoría de equidad de q06 —clave ni en un extremo ni en el otro— se conserva
+ * exacta: las cuatro perdieron los mismos 44 caracteres.
+ *
+ * **Lo que este recorte NO toca, y por eso no mueve la dificultad declarada:** ni un pasaje
+ * (T intacto), ni cuántas partes del texto hay que cruzar (L intacto), ni una clave, ni una
+ * razón, ni el reparto de letras. Quitar de una opción palabras que están idénticas en las
+ * otras tres no cambia ningún eje del calibrador: es texto que el estudiante ya había leído.
+ *
+ * **Enunciados: la desviación que hay que mirar antes de firmar.** El plan fija el enunciado
+ * por tipo, y el de `text-structure-purpose` es «Which choice best describes the overall
+ * structure of the text?». q05 lleva ahora una frase de contexto delante y pregunta por el
+ * cierre; q08 igual, con la concesión delante de «Based on the texts, how would that author
+ * most likely describe…». Es la forma que ya usa `rhetorical-synthesis` en el mismo plan
+ * —frase de encuadre + pregunta— y no cambia lo que se mide, pero **no es la redacción
+ * literal de la tabla**: si el auditor de lengua prefiere fidelidad estricta, la alternativa
+ * medida es dejar el enunciado oficial intacto y comprimir la premisa dentro de las cuatro
+ * opciones, que devuelve unas 30 palabras en vez de 119 y deja el módulo igual de imposible
+ * de terminar.
  */
 
 export const items: MCQQuestion[] = [
@@ -223,7 +319,7 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'Mr. Ferreira came in from the yard. My grandmother did not ask him where he had been. She set a bowl in front of him and another in front of me. Then she asked me about the arithmetic I had been given at school. Her questions were ______ that evening. She asked one, heard half the answer, asked the next as if I had finished, and twice she came back to a question I had already answered. All the while her eyes went to the window.',
+      'Mr. Ferreira came in from the yard. My grandmother did not ask him where he had been. She set a bowl in front of him and another in front of me. Then she asked me about the arithmetic I had been given at school. Her questions were ______ that evening. She asked one, heard half the answer, asked the next as if I had finished, and twice she came back to a question I had already answered. Whatever I answered, the next question came. All the while her eyes went to the window.',
     text: 'Which choice completes the text with the most logical and precise word or phrase?',
     options: [
       'hurried',
@@ -301,10 +397,10 @@ export const items: MCQQuestion[] = [
       "The new tenant across the hall was a man of about fifty who wore the same gray coat every day that winter. Within a week Sofía had decided he was a widower. He carried his groceries up in a net bag and never brought more than a day's worth; he came home at the same hour; and once, through the door, she heard him say good night to a room she was fairly sure was empty. She was seventeen and had read a great many novels. When the man's wife arrived in March with two suitcases and a cold, Sofía was less embarrassed than disappointed.",
     text: 'Which choice best describes the function of the sentence "She was seventeen and had read a great many novels." in the text as a whole?',
     options: [
-      "It pauses on Sofía's age and her reading to introduce her to the reader before the conclusion she draws about the tenant is reported.",
-      "It pauses on Sofía's age and her reading to step outside her own account of that winter for the only moment the story allows it.",
-      "It pauses on Sofía's age and her reading to explain where the story she has spent the winter building about the tenant comes from.",
-      "It pauses on Sofía's age and her reading to set her against the tenant, the contrast on which the last sentence of the text turns.",
+      'It introduces Sofía to the reader before the conclusion she draws about the tenant is reported.',
+      "It steps outside Sofía's own account of that winter for the only moment the story allows it.",
+      'It accounts for the story about the tenant that Sofía had been building for the whole winter.',
+      'It sets Sofía against the tenant, the contrast on which the last sentence of the text turns.',
     ],
     answer: 2,
   },
@@ -313,13 +409,13 @@ export const items: MCQQuestion[] = [
     type: 'mcq',
     part: 1,
     stimulus:
-      'For most of the twentieth century the temperature of the ocean below the surface was measured from ships. That meant it was measured where ships go, in the seasons when the weather lets them. Since 2000 most of the work has been done by drifting floats. A float sinks to about a kilometer and drifts there for nine days. On the tenth day it sinks to two kilometers. Then it rises to the surface, taking readings on the way up, and radios them to a satellite before sinking again. Several thousand are now at sea. They report from stretches of the Southern Ocean that no research vessel visits in winter. The record they have built is not longer than the old one. It is more evenly spread.',
-    text: 'Which choice best describes the overall structure of the text?',
+      'For most of the twentieth century the temperature of the ocean below the surface was measured from ships. That meant it was measured where ships go, in the seasons when the weather lets them. Since 2000 drifting floats have been taking over the work. A float sinks to about a kilometer and drifts there for nine days. On the tenth day it sinks to two kilometers. Then it rises to the surface, taking readings on the way up, and radios them to a satellite before sinking again. Several thousand are now at sea. They report from stretches of the Southern Ocean that no research vessel visits in winter. The record they have built is not longer than the old one. It is more evenly spread.',
+    text: 'The text explains why ships measured only some waters in some seasons, then follows one float through a ten-day cycle. Which choice best describes how the text closes?',
     options: [
-      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by comparing how many readings each of the two methods has produced and how deep each one reached.',
-      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by granting that the float record covers no more years than the old one and calling it better spread.',
-      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by admitting that both methods leave the same waters unmeasured and that winter is when the gap widens.',
-      'It gives the reason ships measured only some waters in some seasons, follows one float through a ten-day cycle, and closes by conceding that the float record is still too short to show a trend and saying how much longer it needs.',
+      'By comparing how many readings each of the two methods produced and how deep each one reached.',
+      'By allowing that the newer record goes no further back in time, then claiming more uniform coverage.',
+      'By admitting that both methods leave the same waters unmeasured and that winter is when the gap widens.',
+      'By conceding that the record is still too short to show a trend and saying how much longer it needs.',
     ],
     answer: 1,
   },
@@ -329,12 +425,12 @@ export const items: MCQQuestion[] = [
     part: 1,
     stimulus:
       'Text 1\n\nPit 12 at Cwm Brys held the pieces of about forty pots, lying in four bands with pale clean soil between them. Not one pot was whole. This is not a rubbish hole. The vessels were smashed and set down in stages. The pale soil between the bands is the time that passed between one visit and the next. The pit records the closing of a settlement.\n\nText 2\n\nThe pit is a broad bowl, wider at the top than any of the pots: nothing had to be broken to go in. The broken edges are rounded and worn, the way pieces go when they are walked on for years before burial. Parts of one jar came out of the lowest band and the highest. Had the pots gone in as they broke, the lowest band would hold the oldest; instead every band holds the same two hundred years of styles. Someone emptied an old heap of household waste into a disused hole, and did it four times over.',
-    text: "Based on the texts, how would the author of Text 2 most likely respond to Text 1's account of Pit 12?",
+    text: 'The author of Text 2 accepts that Pit 12 holds four bands of broken pottery. Based on the texts, how would that author most likely describe what each band is?',
     options: [
-      'By granting that the pit holds four bands of broken pottery but arguing that each band is a batch of pots smashed at the mouth so that they would go down it.',
-      'By granting that the pit holds four bands of broken pottery but arguing that each band is a layer in which pots left whole were crushed by the weight above.',
-      "By granting that the pit holds four bands of broken pottery but arguing that each band is a few years' worth of pots dropped in singly as they broke in use.",
-      'By granting that the pit holds four bands of broken pottery but arguing that each band is one cartload out of a single long-standing pile of household waste.',
+      'A batch of pots smashed at the pit mouth so that the pieces would go down it.',
+      'A layer of pots that went in whole and were crushed by the weight above them.',
+      "A few years' worth of pots dropped in one by one as they broke in ordinary use.",
+      'One cartload out of a single old heap of household waste that stood for years.',
     ],
     answer: 3,
   },
@@ -358,7 +454,7 @@ export const meta: SatItemMeta[] = [
         'Cae quien recuerda la primera línea —«did not ask him where he had been»— y lee el interrogatorio a la nieta como el rodeo de quien va detrás de algo. Para ir detrás de algo hay que escuchar lo que contestan, y el texto dice que oye media respuesta y que repite una que ya le habían respondido: no hay blanco al que apuntar.',
     },
     fuenteHecho:
-      'Ficción original; ningún hecho real implicado. El 22 ago 2026 se bajó el eje L y solo ese eje: las tres conductas que deciden la clave —«heard half the answer», «asked the next as if I had finished» y «twice she came back to a question I had already answered»— estaban repartidas en dos oraciones y ahora van en **una sola, la inmediatamente posterior al hueco**, con las tres citas literales intactas y en el mismo orden. La sexta oración ya no tiene que empezar por «And» para conservar la minúscula de la tercera cita: al ir coordinada dentro de la misma oración, la minúscula es la natural. Se cae «The last light was going off the yard», la única oración que no cita ninguna razón, con lo que «All the while her eyes went to the window» pasa a ser de verdad la última frase del pasaje, que es como la describe la razón de C. Y se parte la primera oración en dos para compensar en T lo que la fusión añade: 95 a 85 palabras, media de 11,9 a 12,1 —igual de lejos del umbral de 18— y la más larga de 18 a 27. Ninguna opción y ninguna razón se tocaron.',
+      'Ficción original; ningún hecho real implicado. El 22 ago 2026 se bajó el eje L y solo ese eje: las tres conductas que deciden la clave —«heard half the answer», «asked the next as if I had finished» y «twice she came back to a question I had already answered»— estaban repartidas en dos oraciones y ahora van en **una sola, la inmediatamente posterior al hueco**, con las tres citas literales intactas y en el mismo orden. La sexta oración ya no tiene que empezar por «And» para conservar la minúscula de la tercera cita: al ir coordinada dentro de la misma oración, la minúscula es la natural. Se cae «The last light was going off the yard», la única oración que no cita ninguna razón, con lo que «All the while her eyes went to the window» pasa a ser de verdad la última frase del pasaje, que es como la describe la razón de C. Y se parte la primera oración en dos para compensar en T lo que la fusión añade: 95 a 85 palabras, media de 11,9 a 12,1 —igual de lejos del umbral de 18— y la más larga de 18 a 27. Ninguna opción y ninguna razón se tocaron.\n\n**Segundo apoyo de la clave (23 ago 2026).** Todo lo que refutaba `hurried` eran once palabras —«twice she came back to a question I had already answered»— y el ítem descansaba entero en esa cláusula. Se añade una oración corta **detrás** de la de las tres conductas y **delante** del cierre: «Whatever I answered, the next question came». Dice que la forma de preguntar corre sola, con independencia de lo que se conteste, que es exactamente `automatic`, y no dice nada de prisa, de blanco al que apuntar ni de atención al que responde, de modo que no reabre ninguna de las tres distractoras. Las tres citas literales de la razón de C siguen en una sola oración inmediatamente posterior al hueco y «All the while her eyes went to the window» sigue siendo la última frase del pasaje: las dos condiciones que la razón de C describe se cumplen igual. El pasaje pasa de 85 a 92 palabras y de nueve oraciones a diez, así que la media por oración baja; T no sube. Ninguna opción y ninguna razón se tocaron.',
   },
   {
     id: 'q03',
@@ -452,7 +548,8 @@ export const meta: SatItemMeta[] = [
       D:
         'Ese contraste se monta así en muchos textos: dos edades enfrentadas y un final que descansa en la distancia entre ellas. Para que fuera este, la diferencia tendría que volver a usarse, y no vuelve. Los cincuenta años y el abrigo gris del vecino no se cruzan con los diecisiete de Sofía en ninguna línea posterior, y la última frase no gira sobre la edad de nadie: gira sobre lo que le pasa a su historia cuando la mujer llega en marzo con dos maletas.',
     },
-    fuenteHecho: 'Ficción original; ningún hecho real implicado.',
+    fuenteHecho:
+      'Ficción original; ningún hecho real implicado.\n\n**Equidad de la clave (23 ago 2026).** La clave decía «to explain where the story she has spent the winter building about the tenant comes from»: diez palabras entre «where» y su verbo, con una relativa reducida incrustada dentro, y «about the tenant» separado de «the story» al que modifica. Era la única opción del bloque cuya densidad sintáctica subía por encima de la de su propio pasaje, de modo que medía paciencia con la sintaxis y no comprensión de la función. Queda «to account for the story about the tenant that she had been building for the whole winter»: sujeto y verbo pegados en la relativa, ningún hueco largo y el complemento junto a su núcleo. **Dice lo mismo** —de dónde sale la historia—, que es lo que `razones.C` describe. Al reescribirla se comprobó que no quedara la más corta en solitario, que es el otro extremo de la puerta 2: con el molde de entonces las cuatro medían **133 · 128 · 131 · 130** en orden A-D, y la clave quedaba segunda por arriba. El mismo día, y en una pasada aparte, se cayó de las cuatro el preámbulo común «It pauses on Sofía’s age and her reading to …» por ser paráfrasis de la frase que el enunciado ya cita literal; medidas sobre ese texto, las cuatro son **95 · 92 · 93 · 92** y la clave sigue sin ser ni la más larga ni la más corta. Lo que esa pasada dejó escrito como condición viva —**ninguna opción puede nombrar la edad y las novelas por separado**— la clave no la roza: no nombra ninguna de las dos. Ninguna razón se tocó; por R2 el ítem vuelve a la cola de auditoría.',
   },
   {
     id: 'q05',
@@ -471,7 +568,7 @@ export const meta: SatItemMeta[] = [
         'Un texto que cerrara diciendo que la serie es todavía corta y cuántos años le faltan estaría bien cerrado; este no cierra así. «The record they have built is not longer than the old one» no denuncia una carencia: concede algo para poder afirmar lo siguiente, «It is more evenly spread», que es la frase con la que el párrafo se queda. En todo el texto no hay un solo plazo, umbral ni tiempo verbal de futuro.',
     },
     fuenteHecho:
-      'Hecho real y público: la red internacional de flotadores perfiladores funciona desde 2000 con ciclos de unos diez días —deriva a unos 1.000 m durante nueve días, descenso a 2.000 m y perfil tomado durante el ascenso—, transmite por satélite y son varios miles. La primera versión de este texto decía que el flotador «sinks to about two kilometers, drifts there for ten days» y que lo medido era «the deep ocean»: las dos cosas son falsas —la cobertura es la de los 2.000 m superiores— y un simulacro no puede enseñar un dato falso ni de paso. El programa no se nombra; la redacción es original.',
+      'Hecho real y público: la red internacional de flotadores perfiladores funciona desde 2000 con ciclos de unos diez días —deriva a unos 1.000 m durante nueve días, descenso a 2.000 m y perfil tomado durante el ascenso—, transmite por satélite y son varios miles. La primera versión de este texto decía que el flotador «sinks to about two kilometers, drifts there for ten days» y que lo medido era «the deep ocean»: las dos cosas son falsas —la cobertura es la de los 2.000 m superiores— y un simulacro no puede enseñar un dato falso ni de paso. El programa no se nombra; la redacción es original.\n\n**Fecha corregida (23 ago 2026).** El texto decía «Since 2000 most of the work has been done by drifting floats»: los primeros flotadores se desplegaron en 2000, pero la red no quedó completa hasta 2007, de modo que fechar en 2000 el momento en que los flotadores hacen *la mayor parte* del trabajo adelanta el hito siete años. Queda «Since 2000 drifting floats have been taking over the work», que describe un relevo en marcha y no un hito. Ninguna razón cita esta oración —las cuatro citan la apertura, el ciclo de diez días y el cierre— y esta corrección no tocó ninguna opción.\n\n**Preámbulo al enunciado y clave reescrita (23 ago 2026).** Era el ítem más caro del módulo —297 palabras, 2,7 minutos— y 72 de ellas eran las mismas 24 repetidas en las cuatro opciones. Los dos primeros movimientos pasan al enunciado, donde se leen una vez: «The text explains why ships measured only some waters in some seasons, then follows one float through a ten-day cycle. Which choice best describes how the text closes?». Las opciones son solo el cierre en disputa. **La clave sigue siendo B** y dice lo mismo con otras palabras: decía «covers no more years than the old one» y «calling it better spread», que son las dos últimas oraciones del pasaje casi literales —se acertaba emparejando palabras sin entender el argumento—, y dice «By allowing that the newer record goes no further back in time, then claiming more uniform coverage». Ninguna razón se tocó: las cuatro citan el pasaje, no las opciones. Longitudes de las cuatro, en orden A-D: **94 · 100 · 103 · 100**, la clave ni la más larga ni la más corta. El ítem pasa de 297 a 225 palabras, con el pasaje intacto.',
   },
   {
     id: 'q08',
@@ -490,6 +587,6 @@ export const meta: SatItemMeta[] = [
         'Correcta: el texto 2 no discute las cuatro bandas, discute qué son. Dos hechos las explican sin ceremonia de por medio. El primero, que la mezcla es anterior a la entrada: «Parts of one jar came out of the lowest band and the highest», cosa imposible si cada banda fuera una visita distinta. El segundo, que cada banda repite el mismo abanico de doscientos años de estilos, que es lo que contiene un montón viejo de desechos y no lo que deja una secuencia de actos separados en el tiempo. El cierre lo nombra: «Someone emptied an old heap of household waste into a disused hole, and did it four times over». Cuatro descargas, no cuatro visitas: las bandas cuentan las veces que se vació la carretilla.',
     },
     fuenteHecho:
-      'Debate real de la arqueología prehistórica europea: los depósitos de cerámica rota leídos como acto ritual —la llamada «deposición estructurada»— frente a su lectura como vertido corriente de desechos, con el desgaste de las aristas, las uniones de fragmentos entre capas y el reparto de fechas dentro de cada capa como pruebas que se usan de un lado y de otro. El yacimiento de Cwm Brys, el pozo 12, las cuarenta vasijas y las cuatro bandas son inventados; no se sigue ningún caso concreto ni se cita ninguna excavación real.',
+      'Debate real de la arqueología prehistórica europea: los depósitos de cerámica rota leídos como acto ritual —la llamada «deposición estructurada»— frente a su lectura como vertido corriente de desechos, con el desgaste de las aristas, las uniones de fragmentos entre capas y el reparto de fechas dentro de cada capa como pruebas que se usan de un lado y de otro. El yacimiento de Cwm Brys, el pozo 12, las cuarenta vasijas y las cuatro bandas son inventados; no se sigue ningún caso concreto ni se cita ninguna excavación real.\n\n**Concesión al enunciado (23 ago 2026).** El ítem costaba 313 palabras y 51 de ellas eran la misma concesión repetida en las cuatro opciones —«By granting that the pit holds four bands of broken pottery but arguing that each band is…», 17 palabras × 4—, que además nadie tiene que decidir: el texto 2 no discute las bandas, discute qué son. Pasa al enunciado: «The author of Text 2 accepts that Pit 12 holds four bands of broken pottery. Based on the texts, how would that author most likely describe what each band is?». Las cuatro opciones completan «each band is …», siguen llevando una cláusula propia y ninguna compartida, y **las cuatro siguen negando la lectura ritual**, que es la condición que impide que una sea «la respuesta de examen». Longitudes de las cuatro, en orden A-D: **77 · 77 · 79 · 78**, la clave ni la más larga ni la más corta. El ítem pasa de 313 a 266 palabras, con los dos textos intactos y ninguna razón tocada.',
   },
 ]
