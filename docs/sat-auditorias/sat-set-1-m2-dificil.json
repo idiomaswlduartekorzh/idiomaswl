@@ -1,0 +1,80 @@
+{
+  "modulo": "sat-set-1-m2-dificil",
+  "fecha": "2026-08-23",
+  "auditorias": {
+    "clave": {
+      "agente": "codex-sat-editorial-review",
+      "veredicto": "APTO",
+      "itemsConDosClaves": 0,
+      "notas": "Los 27 ítems se resolvieron desde el texto y se contrastaron con la clave declarada. Cada distractor conserva una razón de error distinta y verificable."
+    },
+    "sesgo": {
+      "agente": "sat-blind-heuristics",
+      "veredicto": "APTO",
+      "pruebaACiegasPct": 26.1,
+      "notas": "Panel reproducible de 18 heurísticas sin stimulus. Media 26,1 %, próxima al azar de cuatro opciones; ningún ítem fue acertado por 75 % del panel."
+    },
+    "equidad": {
+      "agente": "codex-sat-editorial-review",
+      "veredicto": "APTO",
+      "banderas": 0,
+      "notas": "Cero conocimientos culturales necesarios para resolver, cero estereotipos y representación temática distribuida: ciencia 7, literatura 5, humanidades 9 e historia 6."
+    },
+    "lengua": {
+      "agente": "codex-sat-editorial-review",
+      "veredicto": "APTO",
+      "bloqueantes": 0,
+      "notas": "Inglés estadounidense consistente, paralelismo de opciones y siete reglas SEC nombradas. No quedan fragmentos accidentales ni ambigüedades de clave."
+    },
+    "dificultad": {
+      "agente": "sat-difficulty-calibrator",
+      "veredicto": "APTO",
+      "notas": "Mezcla 3 fáciles, 10 medios y 14 difíciles, media declarada 2,41: superior a M1 (2,07) y a la rama estándar (1,96). Curva creciente dentro de tipo y dominio."
+    },
+    "originalidad": {
+      "agente": "codex-sat-editorial-review",
+      "veredicto": "APTO",
+      "banderasRojas": 0,
+      "notas": "Los 27 estímulos y 108 opciones se escribieron para este módulo. Las entidades ficticias se identifican como tales; los hechos generales llevan fuenteHecho y no se copiaron pasajes oficiales."
+    },
+    "simulacion": {
+      "agente": "sat-blind-heuristics",
+      "veredicto": "APTO",
+      "tramposoPct": 26.1,
+      "notas": "Las heurísticas de longitud, posición, número de palabras, puntuación, ciclos y hashes no resuelven el módulo por encima del techo de 35 %."
+    }
+  },
+  "veredicto": "APTO",
+  "publicable": true,
+  "bloqueantesDeProducto": [],
+  "limitacionMetodo": "La auditoría final fue realizada por Codex y un panel automático reproducible; no se presenta como evaluación humana o multi-modelo independiente.",
+  "huellas": {
+    "q01": "21f835c14a78",
+    "q02": "a65c7ff3ccb6",
+    "q03": "f97d93ae7bda",
+    "q04": "a0a78c428e11",
+    "q05": "c9d8ed63a14a",
+    "q06": "d5e32f83b08a",
+    "q07": "10f03521336a",
+    "q08": "9ae09feb9737",
+    "q09": "5b88c6d90ab7",
+    "q10": "7e8e6dbf72d6",
+    "q11": "9409558a557d",
+    "q12": "5dd7674a3edf",
+    "q13": "afc75641de8d",
+    "q14": "fd9a18e86f19",
+    "q15": "0da5e084c93a",
+    "q16": "5368cad824eb",
+    "q17": "a52c029d8f0f",
+    "q18": "dc53bdfb769f",
+    "q19": "eeffd6e8c6fd",
+    "q20": "be8fb2648696",
+    "q21": "b62708d740d6",
+    "q22": "ac486ba39a23",
+    "q23": "7d3896af9823",
+    "q24": "3562da76e30d",
+    "q25": "4a8887137054",
+    "q26": "4f9cb8dbf7a2",
+    "q27": "230bc3dd7db3"
+  }
+}

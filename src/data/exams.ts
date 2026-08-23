@@ -157,14 +157,14 @@ export const EXAMS: Record<string, Exam> = {
     totalQuestions: 54,
     scoreRange: '200 – 800 (sección)',
     scoreName: 'Puntaje de sección',
-    passing: 'No hay nota de corte: cada universidad fija la suya. Para admisión competitiva en EE. UU. se suele hablar de 600+ en la sección.',
+    passing: 'No hay nota de corte universal: revisa la política y el rango publicado por cada universidad.',
     recognized: ['Universidades de pregrado en Estados Unidos', 'Becas y ayuda financiera basadas en mérito', 'Programas internacionales que aceptan SAT en lugar de examen propio'],
     sections: [
       { name: 'Módulo 1', icon: '📖', time: '32 min', questions: 27, color: '#6d28d9', types: ['Craft and Structure', 'Information and Ideas', 'Standard English Conventions', 'Expression of Ideas'] },
       { name: 'Módulo 2', icon: '📈', time: '32 min', questions: 27, color: '#8b5cf6', types: ['Se ajusta a tu resultado del módulo 1', 'Mismos cuatro dominios', 'Mismo formato, distinta exigencia'] },
     ],
     mocks: [
-      { id: 'set-1', title: 'SAT · Reading and Writing — Módulo 1', subtitle: '27 preguntas · 32 minutos · los cuatro dominios del examen digital', free: true, parts: 1, questions: 27 },
+      { id: 'set-1', title: 'SAT · Reading and Writing adaptativo', subtitle: '54 preguntas · 64 minutos · el segundo módulo se ajusta a tu resultado', free: true, parts: 2, questions: 54 },
     ],
     available: true,
   },

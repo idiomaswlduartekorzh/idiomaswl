@@ -161,7 +161,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['craft-and-structure', 'information-and-ideas', 'standard-english-conventions', 'expression-of-ideas', 'como-estudiar-sat-desde-cero', 'puntaje-sat-universidades', 'sat-desde-colombia', 'sat-toefl-ielts-diferencias', 'sat-o-act'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · un módulo real', note: '27 preguntas en 32 minutos, con los cuatro dominios en la proporción del examen.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT adaptativo completo', note: '54 preguntas en 64 minutos, con una segunda rama ajustada al resultado de M1.' },
       { href: '/examenes/sat', label: 'Guía general del SAT', note: 'Qué es, cómo se puntúa, y dónde se consultan fechas y tarifas.' },
       { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'El SAT premia precisión de lectura, y eso se entrena.' },
     ],
@@ -253,7 +253,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['reading-and-writing', 'information-and-ideas', 'standard-english-conventions', 'expression-of-ideas'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · un módulo real', note: 'Ocho preguntas de Craft and Structure, en la proporción del examen.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Practica Craft and Structure', note: 'Dieciséis preguntas entre los dos módulos, con diagnóstico y explicaciones.' },
       { href: '/practica/ingles/b1/lectura', label: 'Práctica de lectura en inglés', note: 'Lecturas cortas con preguntas, gratis y sin registro.' },
     ],
     sources: FUENTES_BASE,
@@ -332,7 +332,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['reading-and-writing', 'craft-and-structure', 'standard-english-conventions', 'expression-of-ideas'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · un módulo real', note: 'Siete preguntas de Information and Ideas, con desglose de en cuál fallaste.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Practica Information and Ideas', note: 'Catorce preguntas entre los dos módulos, con desglose y explicaciones.' },
     ],
     sources: FUENTES_BASE,
     checked: '19 de agosto de 2026',
@@ -414,7 +414,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['reading-and-writing', 'craft-and-structure', 'information-and-ideas', 'expression-of-ideas'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · un módulo real', note: 'Siete preguntas de gramática y puntuación, con la regla explicada en cada una.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Practica gramática y puntuación', note: 'Catorce preguntas entre los dos módulos, con la regla explicada en cada una.' },
       { href: '/practica/ingles/b1/gramatica', label: 'Gramática inglesa gratis', note: 'Los temas de fondo, explicados desde el español.' },
     ],
     sources: FUENTES_BASE,
@@ -486,7 +486,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['reading-and-writing', 'craft-and-structure', 'information-and-ideas', 'standard-english-conventions'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · un módulo real', note: 'Cinco preguntas de Expression of Ideas, al final del módulo como en el examen.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Practica Expression of Ideas', note: 'Diez preguntas entre los dos módulos, al final de cada uno como en el examen.' },
     ],
     sources: FUENTES_BASE,
     checked: '19 de agosto de 2026',
@@ -579,7 +579,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['reading-and-writing', 'standard-english-conventions', 'expression-of-ideas', 'information-and-ideas', 'craft-and-structure'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Empieza midiendo · simulacro SAT', note: 'Un módulo cronometrado de 27 preguntas con desglose por dominio. Gratis, sin crear cuenta.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Empieza midiendo · simulacro SAT', note: 'Dos módulos adaptativos, 54 preguntas y desglose por dominio. Gratis, sin crear cuenta.' },
       { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Si tu nivel todavía no llega a B2, esto va antes que el formato.' },
     ],
     sources: FUENTES_BASE,
@@ -662,7 +662,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['reading-and-writing', 'como-estudiar-sat-desde-cero', 'sat-desde-colombia'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Mide antes de fijarte una meta', note: 'Un módulo cronometrado con desglose por dominio. Gratis y sin crear cuenta.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Mide antes de fijarte una meta', note: 'Simulacro adaptativo completo con desglose por dominio. Gratis y sin crear cuenta.' },
     ],
     sources: [
       ...FUENTES_BASE,
@@ -754,7 +754,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['como-estudiar-sat-desde-cero', 'puntaje-sat-universidades', 'reading-and-writing'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT gratis', note: 'Un módulo cronometrado, en inglés y con la presión real de los 32 minutos.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT gratis', note: 'Dos módulos en inglés, 64 minutos y enrutado adaptativo por etapas.' },
       { href: '/clases-de-ingles', label: 'Preparación con profesor', note: 'Academia colombiana, en Bucaramanga y online.' },
       { href: '/examenes/toefl', label: 'TOEFL iBT', note: 'El examen de idioma que muchas universidades piden además del SAT.' },
     ],
@@ -833,7 +833,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['reading-and-writing', 'puntaje-sat-universidades', 'como-estudiar-sat-desde-cero'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT gratis', note: 'Un módulo cronometrado de 27 preguntas con desglose por dominio.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT gratis', note: '54 preguntas, dos módulos y desglose por dominio al terminar.' },
       { href: '/examenes/toefl', label: 'TOEFL iBT', note: 'Guía y simulacros del examen de idioma más pedido en EE. UU.' },
       { href: '/examenes/ielts', label: 'IELTS', note: 'La alternativa al TOEFL, aceptada por la mayoría de universidades de EE. UU.' },
     ],
@@ -918,7 +918,7 @@ export const SAT_GUIDES: SatGuidePage[] = [
     ],
     relatedSlugs: ['reading-and-writing', 'puntaje-sat-universidades', 'sat-desde-colombia', 'como-estudiar-sat-desde-cero'],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Prueba el SAT antes de decidir', note: 'Un módulo cronometrado de 27 preguntas. Gratis y sin crear cuenta.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Prueba el SAT antes de decidir', note: 'Simulacro adaptativo de 54 preguntas. Gratis y sin crear cuenta.' },
     ],
     sources: [
       ...FUENTES_BASE,

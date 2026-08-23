@@ -57,10 +57,10 @@ export type ExamGuide = {
 export const EXAM_GUIDES: Record<string, ExamGuide> = {
 
   sat: {
-    title: 'SAT en español: qué es, cómo se puntúa y simulacro gratis',
-    description: 'El examen de admisión a universidades de EE. UU., explicado para latinoamericanos: cómo es el formato digital, qué puntaje piden y simulacro gratis.',
+    title: 'SAT digital: simulacro gratis adaptativo y guía en español',
+    description: 'Practica Reading and Writing con 54 preguntas adaptativas y aprende formato, puntaje, dominios, fechas y preparación del SAT desde Latinoamérica.',
     lead:
-      'El <strong>SAT</strong> es el examen que piden la mayoría de universidades de Estados Unidos para entrar a pregrado. Desde marzo de 2023 para quienes lo presentan fuera de Estados Unidos —Colombia incluida— es <strong>digital y adaptativo</strong>: dura unas dos horas y cuarto, se puntúa de 400 a 1600, y ya no hay preguntas sueltas de vocabulario ni textos larguísimos — cada pregunta trae su propio texto corto, de 25 a 150 palabras.',
+      'El <strong>SAT</strong> es una prueba de admisión que muchas universidades de Estados Unidos aceptan o consideran para entrar a pregrado; cada institución decide si lo exige, lo recomienda o mantiene una política opcional. Desde marzo de 2023 para quienes lo presentan fuera de Estados Unidos —Colombia incluida— es <strong>digital y adaptativo</strong>: dura unas dos horas y cuarto, se puntúa de 400 a 1600, y ya no hay preguntas sueltas de vocabulario ni textos larguísimos — cada pregunta trae su propio texto corto, de 25 a 150 palabras.',
     sections: [
       {
         h: 'Qué cambió con el SAT digital',
@@ -82,24 +82,24 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
         h: 'Cómo se puntúa',
         body: [
           'Cada sección —Reading and Writing por un lado, Math por otro— se puntúa de <strong>200 a 800</strong>, en intervalos de 10. El total va de <strong>400 a 1600</strong>.',
-          'No hay nota de aprobado: cada universidad fija lo que pide. Como orientación general, las universidades más competitivas de Estados Unidos suelen moverse por encima de 1400, y muchas universidades estatales aceptan desde 1100. Lo que decide es el rango publicado por cada institución, no una cifra universal.',
+          'No hay nota de aprobado ni una cifra universal de admisión. Revisa en la web oficial de cada universidad su política vigente y, si publica uno, el rango de puntajes del 50 % central de sus estudiantes admitidos. Ese contexto es más útil que comparar tu resultado con un número genérico.',
           'Ojo con una cosa que confunde: el puntaje que ves al terminar un simulacro <strong>no es un puntaje oficial</strong> mientras no venga de una tabla de conversión calibrada. El nuestro te da respuestas correctas sobre el total, que es lo honesto.',
         ],
       },
       {
         h: 'Cómo es nuestro simulacro, y qué no es',
         body: [
-          'Te damos <strong>un módulo completo: 27 preguntas en 32 minutos</strong>, con los cuatro dominios en la proporción real del examen y textos originales escritos para esto.',
-          'No es un examen completo, y preferimos decirlo: el SAT real tiene dos módulos por sección y el segundo se adapta a cómo te fue en el primero. Servirte dos módulos seguidos sin esa adaptación sería imitar la forma y perder lo que la forma significa. Un módulo bien hecho te dice más que un examen completo fingido.',
-          'Lo que sí garantizamos, y lo hemos medido: <strong>no se puede acertar sin leer los textos</strong>. Sometimos el simulacro a dieciséis solucionadores automáticos a los que les quitamos los pasajes, dejándoles solo las preguntas y las opciones. Acertaron el 23,1 %: por debajo del 25 % que daría marcar al azar entre cuatro opciones. La primera versión de este mismo simulacro sacaba 68,5 %, y hicieron falta siete mediciones y rehacer los juegos de opciones para bajarlo hasta aquí. Si un simulacro se puede resolver por astucia, te da un diagnóstico falso justo cuando más lo necesitas.',
+          'Te damos la sección completa de práctica: <strong>54 preguntas en 64 minutos</strong>, con dos módulos y los cuatro dominios en la proporción real. Al entregar el primero, el motor cuenta tus aciertos y sirve una rama estándar o una exigente; no puedes volver al módulo que ya cerraste.',
+          'La adaptación es transparente pero no revela la etiqueta interna mientras respondes. Las dos rutas tienen 27 preguntas, el mismo reparto por dominio y la misma duración; cambia su dificultad media. El corte de WeLearn es una regla de práctica, no el algoritmo secreto de College Board, y por eso el resultado se informa como aciertos, no como un puntaje oficial de 200 a 800.',
+          'Los tres módulos escritos —M1 y las dos ramas posibles de M2— pasan controles de claves, longitud, solape léxico, distribución, dificultad, variedad temática y explicaciones por distractor. También se prueban sin sus pasajes contra heurísticas baratas: si una estrategia como elegir la opción más larga resolviera el examen, el diagnóstico quedaría bloqueado.',
         ],
       },
       {
         h: 'Qué pasa cuando le das a empezar',
         body: [
-          'Lo contamos aquí para que no descubras nada a mitad de camino. Antes de arrancar hay una pantalla con las reglas y <strong>el cronómetro todavía no corre</strong>: empieza cuando pulsas «Empezar examen». Desde ahí tienes 32 minutos para las 27 preguntas, te mueves entre ellas libremente, puedes marcar las dudosas para volver y puedes entregar antes de tiempo. Si el reloj llega a cero, se entrega solo con lo que llevas.',
+          'Lo contamos aquí para que no descubras nada a mitad de camino. Antes de arrancar hay una pantalla con las reglas y <strong>el cronómetro todavía no corre</strong>: empieza cuando pulsas «Empezar examen». Tienes 32 minutos por módulo, te mueves libremente dentro del módulo activo, puedes marcar las dudosas y entregar antes de tiempo. Si el reloj llega a cero, se entrega solo con lo que llevas.',
           'Al entregar aparece <strong>un formulario con nombre, correo y WhatsApp, y va antes de las respuestas</strong>, no después. No se crea cuenta ni contraseña y no se pide tarjeta: el simulacro es gratis, y esos datos son la contrapartida. Preferimos que lo sepas ahora y no cuando ya invertiste media hora.',
-          'En cuanto lo envías, el resultado sale en pantalla —no llega por correo ni hay que esperar nada—: cuántas acertaste de 27, <strong>un desglose por los cuatro dominios</strong>, que es lo que de verdad te dice si el problema es de gramática o de lectura, y las 27 preguntas una a una con la respuesta correcta, la que marcaste y <strong>por qué esa opción era la buena y por qué la tuya no</strong>. Puedes repetir el módulo las veces que quieras. Tus datos quedan en WeLearn, que es por donde te escribimos si quieres preparación, y no se comparten con terceros.',
+          'En cuanto lo envías, el resultado sale en pantalla —no llega por correo ni hay que esperar nada—: cuántas acertaste de 54, <strong>un desglose por los cuatro dominios</strong> y las 54 preguntas con la respuesta correcta, la que marcaste y <strong>por qué esa opción era la buena y por qué la tuya no</strong>. Puedes repetir el simulacro y recibir otra rama según tu nuevo M1. Tus datos quedan en WeLearn y no se comparten con terceros.',
         ],
       },
       {
@@ -144,11 +144,11 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       },
       {
         q: '¿El simulacro tiene 27 preguntas o 54?',
-        a: '27, porque es un módulo. La sección de Reading and Writing del SAT real son 54 preguntas repartidas en dos módulos de 27, y el segundo se adapta a cómo te fue en el primero. Nuestro simulacro es un módulo completo, con los cuatro dominios en la proporción del examen. No servimos un segundo módulo porque sin esa adaptación no sería el segundo módulo: sería relleno.',
+        a: '54 preguntas en dos módulos de 27 y 32 minutos cada uno. Al entregar el primero, el simulacro elige una rama estándar o exigente para el segundo según tus aciertos. Esa regla de práctica reproduce la lógica por etapas, pero no pretende copiar el algoritmo privado de College Board ni convertir tus aciertos en un puntaje oficial.',
       },
       {
         q: '¿Tengo que registrarme para hacer el simulacro?',
-        a: 'No hay que crear cuenta ni contraseña, y no se pide tarjeta: es gratis. Lo que sí hay es un formulario con nombre, correo y WhatsApp cuando terminas las 27 preguntas, antes de ver las respuestas. Al enviarlo aparece el resultado completo en la misma pantalla, con el desglose por dominio y la explicación de cada pregunta; no llega nada por correo. Tus datos quedan en WeLearn y no se comparten con terceros.',
+        a: 'No hay que crear cuenta ni contraseña, y no se pide tarjeta: es gratis. Hay un formulario con nombre, correo y WhatsApp al terminar los dos módulos, antes de ver las respuestas. Al enviarlo aparece el resultado completo en la misma pantalla, con desglose por dominio y explicación de cada pregunta.',
       },
       {
         q: '¿Cuántas veces puedo presentar el SAT?',
@@ -181,14 +181,14 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
       { label: 'College Board — Envío de puntajes a universidades y programas de beca', url: 'https://satsuite.collegeboard.org/scores/sending-sat-scores' },
     ],
     related: [
-      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT · Reading and Writing', note: 'Un módulo de verdad: 27 de las 54 preguntas de la sección, cronometrado en 32 minutos.' },
+      { href: '/examenes/sat/practica/set-1', label: 'Simulacro SAT adaptativo · Reading and Writing', note: '54 preguntas, dos módulos cronometrados y una segunda rama que responde a tu resultado.' },
       { href: '/clases-de-ingles', label: 'Clases de inglés con preparación de exámenes', note: 'El SAT premia precisión de lectura; se entrena.' },
       { href: '/examenes/toefl', label: 'TOEFL iBT', note: 'El examen de idioma que muchas universidades piden además del SAT.' },
       { href: '/examenes/ielts', label: 'IELTS', note: 'La alternativa al TOEFL, aceptada por la mayoría de universidades de EE. UU.' },
       { href: '/practica/ingles/b1/lectura', label: 'Práctica de lectura en inglés', note: 'Lecturas cortas con preguntas, gratis y sin registro.' },
     ],
-    checked: '19 de agosto de 2026',
-    checkedISO: '2026-08-19',
+    checked: '23 de agosto de 2026',
+    checkedISO: '2026-08-23',
   },
 
   'celpe-bras': {

@@ -28,6 +28,11 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   const exam = EXAMS[slug];
   if (!exam) return {};
   const guide = EXAM_GUIDES[slug];
+  const satKeywords = [
+    'SAT', 'SAT digital', 'simulacro SAT gratis', 'práctica SAT',
+    'SAT Reading and Writing', 'SAT Colombia', 'preparación SAT en español',
+    'puntaje SAT', 'cómo estudiar para el SAT', 'examen SAT universidades Estados Unidos',
+  ];
   // Cuando el examen tiene guía, el título encabeza con el examen y no con
   // "simulacros": la gente busca "examen first" o "cambridge b2", no simulacros.
   return {
@@ -39,10 +44,30 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     description:
       guide?.description ??
       `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con feedback de IA.`,
+    ...(slug === 'sat' ? { keywords: satKeywords } : {}),
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large' as const,
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
+    },
     openGraph: {
-      title: `${exam.name} — Simulacros y preparación`,
-      description: exam.tagline,
+      title: guide?.title ?? `${exam.name} — Simulacros y preparación`,
+      description: guide?.description ?? exam.tagline,
       url: `https://www.idiomaswl.com/examenes/${slug}`,
+      type: 'website' as const,
+      locale: 'es_CO',
+      siteName: 'Idiomas WeLearn',
+    },
+    twitter: {
+      card: 'summary_large_image' as const,
+      title: guide?.title ?? `${exam.name} — Simulacros y preparación`,
+      description: guide?.description ?? exam.tagline,
     },
     alternates: {
       canonical: `https://www.idiomaswl.com/examenes/${slug}`,

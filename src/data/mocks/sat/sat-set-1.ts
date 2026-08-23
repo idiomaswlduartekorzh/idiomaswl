@@ -1,24 +1,20 @@
 import { buildSatMock } from './build-sat-mock'
 import { satSet1M1 } from './sat-set-1-m1'
+import { satSet1M2Dificil } from './sat-set-1-m2-dificil'
+import { satSet1M2Facil } from './sat-set-1-m2-facil'
 
 /**
- * Primer simulacro SAT publicable: **un módulo de 27 ítems, 32 minutos**.
- *
- * No es medio examen mal contado. El SAT real tiene dos módulos por sección y el segundo
- * se adapta al primero; nuestro motor sirve secciones lineales, así que servir dos módulos
- * seguidos sin adaptación sería imitar la forma y perder lo que la forma significa. Se
- * publica un módulo, se dice que es un módulo, y el estudiante recibe un diagnóstico
- * honesto de 27 preguntas en vez de un examen completo fingido.
- *
- * Lo que este simulacro sí garantiza, y está medido: **no se puede resolver sin leer los
- * textos**. Dieciséis solucionadores sin acceso a los pasajes sacaron un 25,5 %, con el
- * azar en 25 %. La serie de mediciones está en docs/sat-ingles-blueprint.md §4 ter.
+ * Simulacro adaptativo completo de Reading and Writing: M1 y una de dos ramas de M2.
+ * El corte de M1 decide la rama, el estudiante siempre responde 54 preguntas en 64 minutos
+ * y nunca ve el rótulo interno de dificultad durante el intento.
  */
 export const satSet1 = buildSatMock({
   id: 'set-1',
-  title: 'SAT · Reading and Writing — Módulo 1',
-  subtitle: '27 preguntas · 32 minutos · Craft and Structure, Information and Ideas, Standard English Conventions y Expression of Ideas',
+  title: 'SAT · Reading and Writing — simulacro adaptativo',
+  subtitle: '54 preguntas · 64 minutos · dos módulos y cuatro dominios del SAT digital',
   m1: satSet1M1,
+  m2Facil: satSet1M2Facil,
+  m2Dificil: satSet1M2Dificil,
 })
 
 export default satSet1

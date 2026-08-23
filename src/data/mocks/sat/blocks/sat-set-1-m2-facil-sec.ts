@@ -3,7 +3,7 @@ import type { SatItemMeta } from '../module-types'
 
 /**
  * Bloque Standard English Conventions del módulo `sat-set-1-m2-facil` — ítems q16 a q22.
- * ESTADO: BORRADOR EN CUARENTENA. No importar ni registrar sin acta firmada del módulo.
+ * ESTADO: APTO. Registrado por `sat-set-1-m2-facil.ts`; acta firmada el 23 ago 2026.
  *
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 16-22). Tipo, tema, dificultad y clave
  * salen de ahí y no se renegocian aquí: si un ítem «pedía» otra letra, se rehizo el ítem.

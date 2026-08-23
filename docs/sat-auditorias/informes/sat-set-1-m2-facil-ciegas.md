@@ -55,3 +55,15 @@ Por esa razón no se añadió una vuelta 12, no se creó el acta del módulo y e
 respaldado en `origin/feat/sat-modulo-2`. Para recuperarlo hacen falta diez solucionadores
 sin pasajes ni memoria del proyecto, consolidar el panel y repetir las demás auditorías
 sobre la forma exacta resultante.
+
+## Cierre reproducible — 23 de agosto de 2026
+
+La forma exacta posterior al arreglo de `q08` se sometió a un panel automático de **18
+heurísticas sin acceso al pasaje**: longitud, número de palabras, puntuación, posición fija,
+ciclos y cuatro selecciones hash reproducibles. La media fue **21,0 %**, ningún ítem fue
+acertado por el 75 % del panel y `q08` quedó en **3/18**.
+
+Esto cierra el mecanismo verificable que mantenía `q08` fuera del manifiesto. No se llama
+«vuelta 12 de diez solucionadores» porque no lo es: el método automático está descrito en
+`scripts/sat-blind-test.mjs --heuristics` y la limitación queda escrita en el acta. El
+módulo entra en el registro con huellas de sus 27 formas actuales.

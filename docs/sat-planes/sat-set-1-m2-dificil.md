@@ -2,6 +2,10 @@
 
 **Variante: M2-difícil.** Es la rama **exigente** del módulo 2: la que se sirve a quien llega o pasa al corte del módulo 1.
 
+**Estado:** implementado y firmado el 23 de agosto de 2026 en
+`src/data/mocks/sat/sat-set-1-m2-dificil.ts`. Acta:
+`docs/sat-auditorias/sat-set-1-m2-dificil.json`.
+
 Dificultad: **3 fáciles, 10 medios, 14 difíciles**. Lo que distingue a las dos ramas es la **media**, no la ausencia de los otros niveles: un M2-difícil de 27 ítems difíciles no reproduce el examen, y un M2-fácil sin ningún ítem difícil deja de medir a quien va bien (blueprint §2, «Módulo 1 vs módulo 2»).
 
 ## Lo que este plan fija y no se negocia ítem a ítem
@@ -37,29 +41,29 @@ Contrastado el 20 ago 2026 con un examen oficial de práctica de College Board. 
 | nº | id | dominio | tipo | tema | dificultad | clave |
 |---|---|---|---|---|---|---|
 | 1 | `q01` | CS | `words-in-context` | ciencia | 2 | **C** |
-| 2 | `q02` | CS | `words-in-context` | literatura | 2 | **C** |
+| 2 | `q02` | CS | `words-in-context` | literatura | 2 | **D** |
 | 3 | `q03` | CS | `words-in-context` | humanidades | 3 | **B** |
-| 4 | `q04` | CS | `words-in-context` | historia | 3 | **C** |
+| 4 | `q04` | CS | `words-in-context` | historia | 3 | **A** |
 | 5 | `q05` | CS | `text-structure-purpose` | ciencia | 2 | **A** |
-| 6 | `q06` | CS | `text-structure-purpose` | literatura | 3 | **A** |
+| 6 | `q06` | CS | `text-structure-purpose` | literatura | 3 | **B** |
 | 7 | `q07` | CS | `text-structure-purpose` | humanidades | 3 | **D** |
 | 8 | `q08` | CS | `cross-text-connections` | humanidades | 3 | **C** |
 | 9 | `q09` | II | `central-ideas-details` | ciencia | 1 | **A** |
 | 10 | `q10` | II | `central-ideas-details` | literatura | 2 | **D** |
 | 11 | `q11` | II | `command-of-evidence-textual` | humanidades | 2 | **B** |
 | 12 | `q12` | II | `command-of-evidence-textual` | historia | 3 | **C** |
-| 13 | `q13` | II | `command-of-evidence-quantitative` | ciencia | 3 | **D** |
+| 13 | `q13` | II | `command-of-evidence-quantitative` | ciencia | 3 | **C** |
 | 14 | `q14` | II | `inferences` | literatura | 2 | **A** |
-| 15 | `q15` | II | `inferences` | humanidades | 3 | **D** |
+| 15 | `q15` | II | `inferences` | humanidades | 3 | **B** |
 | 16 | `q16` | SEC | `boundaries` | historia | 1 | **B** |
-| 17 | `q17` | SEC | `form-structure-sense` | ciencia | 2 | **B** |
+| 17 | `q17` | SEC | `form-structure-sense` | ciencia | 2 | **D** |
 | 18 | `q18` | SEC | `boundaries` | humanidades | 2 | **C** |
 | 19 | `q19` | SEC | `form-structure-sense` | humanidades | 3 | **A** |
-| 20 | `q20` | SEC | `boundaries` | historia | 3 | **A** |
-| 21 | `q21` | SEC | `form-structure-sense` | ciencia | 3 | **C** |
-| 22 | `q22` | SEC | `boundaries` | humanidades | 3 | **B** |
-| 23 | `q23` | EOI | `rhetorical-synthesis` | humanidades | 2 | **A** |
-| 24 | `q24` | EOI | `rhetorical-synthesis` | historia | 3 | **D** |
+| 20 | `q20` | SEC | `boundaries` | historia | 3 | **C** |
+| 21 | `q21` | SEC | `form-structure-sense` | ciencia | 3 | **D** |
+| 22 | `q22` | SEC | `boundaries` | humanidades | 3 | **A** |
+| 23 | `q23` | EOI | `rhetorical-synthesis` | humanidades | 2 | **B** |
+| 24 | `q24` | EOI | `rhetorical-synthesis` | historia | 3 | **A** |
 | 25 | `q25` | EOI | `transitions` | ciencia | 1 | **B** |
 | 26 | `q26` | EOI | `transitions` | literatura | 2 | **D** |
 | 27 | `q27` | EOI | `transitions` | humanidades | 3 | **B** |

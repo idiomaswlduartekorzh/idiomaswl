@@ -30,6 +30,10 @@ const SITEMAP = path.join(ROOT, 'src/app/sitemap.ts')
 const RUTA = path.join(ROOT, 'src/app/(site)/examenes/[exam]/guia/[slug]/page.tsx')
 const HUB = path.join(ROOT, 'src/app/(site)/examenes/[exam]/page.tsx')
 const INDICE = path.join(ROOT, 'src/app/(site)/examenes/[exam]/ExamCluster.tsx')
+const HUB_JSONLD = path.join(ROOT, 'src/app/(site)/examenes/[exam]/ExamJsonLd.tsx')
+const HUB_OG = path.join(ROOT, 'src/app/(site)/examenes/[exam]/opengraph-image.tsx')
+const EXAM_GUIDES = path.join(ROOT, 'src/data/examGuides.ts')
+const EXAMS = path.join(ROOT, 'src/data/exams.ts')
 
 // Tope de la descripción: el mismo que aplica check-seo-snippets a todo el sitio.
 // Por encima, Google la recorta y la promesa del resultado se parte a mitad.
@@ -109,6 +113,39 @@ if (!fs.existsSync(INDICE)) {
 const hub = fs.existsSync(HUB) ? fs.readFileSync(HUB, 'utf8') : ''
 if (!hub.includes('ExamCluster')) {
   fail('—', 'hub', '/examenes/sat no pinta el índice del clúster: a las guías solo se llegaría por el sitemap')
+}
+
+// ── Puerta 3 ter · la portada describe el producto que realmente sirve ──────────────
+// El salto de 27 a 54 preguntas dejó cuatro superficies fáciles de desincronizar: tarjeta,
+// guía madre, metadata y JSON-LD. El simulacro puede funcionar mientras Google y el lector
+// siguen recibiendo la promesa antigua, que fue exactamente lo que encontramos en producción.
+let fichaSat
+try { fichaSat = loadTs(EXAMS)?.EXAMS?.sat } catch (err) { fail('—', 'producto', `no se pudo cargar exams.ts: ${err.message}`) }
+const mockSat = fichaSat?.mocks?.find(m => m.id === 'set-1')
+if (!mockSat || mockSat.questions !== 54 || mockSat.parts !== 2) {
+  fail('—', 'producto', `la tarjeta SAT declara ${mockSat?.questions ?? '?'} preguntas y ${mockSat?.parts ?? '?'} partes; deben ser 54 y 2`)
+}
+const guiaMadre = fs.existsSync(EXAM_GUIDES) ? fs.readFileSync(EXAM_GUIDES, 'utf8') : ''
+for (const promesaVieja of ['No servimos un segundo módulo', 'un módulo completo: 27 preguntas']) {
+  if (guiaMadre.includes(promesaVieja)) fail('—', 'producto', `la guía madre conserva la promesa lineal antigua: «${promesaVieja}»`)
+}
+if (!hub.includes('satKeywords') || !hub.includes('summary_large_image')) {
+  fail('—', 'metadata', 'la portada SAT no conserva keywords propios y tarjeta social grande')
+}
+const jsonLdHub = fs.existsSync(HUB_JSONLD) ? fs.readFileSync(HUB_JSONLD, 'utf8') : ''
+if (!jsonLdHub.includes("'@type': 'ItemList'") || !jsonLdHub.includes('SAT_GUIDES')) {
+  fail('—', 'schema', 'el hub no declara como ItemList las diez guías que muestra')
+}
+if (!jsonLdHub.includes("replace(/</g, '\\\\u003c')")) {
+  fail('—', 'schema', 'el JSON-LD del hub no neutraliza «<» antes de insertarlo')
+}
+if (!fs.existsSync(HUB_OG)) {
+  fail('—', 'social', 'falta la imagen Open Graph específica por examen')
+} else {
+  const og = fs.readFileSync(HUB_OG, 'utf8')
+  if (!og.includes('54 preguntas') || !og.includes('10 guías')) {
+    fail('—', 'social', 'la imagen social del SAT no comunica el producto completo de 54 preguntas y 10 guías')
+  }
 }
 
 // ── Puerta 3 bis · cada dominio del examen tiene su página ───────────────────

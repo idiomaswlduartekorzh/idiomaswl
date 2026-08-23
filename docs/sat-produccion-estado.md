@@ -1,24 +1,22 @@
 # SAT — estado de producción
 
-Archivo de estado del loop nocturno. **Lo reescribe el loop en cada vuelta.**
-Las reglas están en `docs/sat-loop-nocturno.md`; los parámetros y umbrales, en
-`docs/sat-ingles-blueprint.md`.
+Archivo histórico del loop que produjo M1 y el superhub. El estado operativo vigente está
+en [`docs/sat-estado.md`](sat-estado.md); el registro de vueltas de abajo se conserva como
+memoria editorial y no describe por sí solo la rama actual.
 
-- **Rama:** `feat/red-agentes-sat-ingles`
-- **Última vuelta:** 36 · 20 ago 2026 · **FASE E COMPLETA: diez páginas.** Se escribió la que faltaba (SAT o ACT) después de verificar el ACT contra su fuente
-- **Siguiente tarea:** decisión de David — publicar (merge a `main`). Y, cuando el árbol esté limpio, enganchar los dos guardianes al `prebuild`
+- **Rama actual:** `codex/sat-finish-20260823`
+- **Cierre:** 23 ago 2026 · M1, M2 estándar y M2 exigente completos; diez páginas del
+  superhub; guardianes integrados en `prebuild`.
+- **Producción al iniciar este cierre:** hub y diez guías activos, pero simulacro lineal de
+  27 preguntas. La versión adaptativa no llega a producción hasta integrarse en `main`.
 
 ---
 
 ## Deuda conocida
 
-- **`check:sat` y `check:sat-superhub` no están en `prebuild`.** Es una línea en
-  `package.json`, y no se ha hecho porque ese archivo tiene cambios sin commitear de
-  otra sesión —y uno de ellos apunta a un script que todavía está sin rastrear—, así
-  que tocarlo significaría llevarse su trabajo dentro de un commit ajeno. **Hasta que
-  se enganchen hay que correrlos a mano**, o una regresión en el SAT pasará el build.
-- Faltan los ítems de **completar el hueco** (formato dominante de vocabulario en el
-  SAT digital). Aplazado al módulo 2 a propósito.
+- Un panel humano o multi-modelo externo puede ampliar la evidencia editorial de M2; las
+  actas actuales declaran que la pasada final fue de Codex más 18 heurísticas reproducibles.
+- El SAT de WeLearn diagnostica aciertos y dominios; no inventa una conversión a 200–800.
 
 ## Cola de trabajo
 

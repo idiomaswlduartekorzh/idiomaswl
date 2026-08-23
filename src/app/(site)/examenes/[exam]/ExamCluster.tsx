@@ -22,9 +22,23 @@ export default function ExamCluster({ accent }: { accent: string }) {
           La guía completa del SAT, en español
         </h2>
         <p style={{ fontSize: '0.98rem', lineHeight: 1.6, color: 'var(--muted)', marginBottom: '2rem', maxWidth: 620 }}>
-          Nueve páginas escritas para quien presenta el SAT desde Latinoamérica. Lo que casi
+          Diez páginas escritas para quien presenta el SAT desde Latinoamérica. Lo que casi
           todo lo demás explica en inglés: no solo qué preguntan, sino cómo se responde.
         </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '0.7rem', marginBottom: '2.25rem' }}>
+          {[
+            ['10', 'guías en español'],
+            ['54', 'preguntas adaptativas'],
+            ['64 min', 'tiempo de práctica'],
+            ['4', 'dominios explicados'],
+          ].map(([value, label]) => (
+            <div key={label} style={{ padding: '0.9rem 1rem', border: '1px solid var(--line-soft)', borderRadius: 10, background: 'var(--bg-2)' }}>
+              <strong style={{ display: 'block', color: accent, fontSize: '1.2rem' }}>{value}</strong>
+              <span style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>{label}</span>
+            </div>
+          ))}
+        </div>
 
         {SAT_GUIDE_GROUPS.map(grupo => {
           const paginas = SAT_GUIDES.filter(g => g.group === grupo.key);

@@ -5,10 +5,8 @@ import type { SatDomain, SatModule } from './module-types'
  * Compone un simulacro SAT a partir de dos módulos escritos.
  *
  * Por qué existe: el motor de simulacros sirve secciones lineales, así que un «set» es una
- * secuencia de módulos. `m2` es opcional a propósito: el primer producto publicado es un
- * simulacro de **un solo módulo de 27 ítems**, por decisión de alcance de David el 19 ago
- * 2026 —menos ítems y mejor construidos antes que un examen completo con ítems flojos—.
- * Cuando existan las variantes de M2, se pasan aquí y el set pasa a tener dos secciones.
+ * secuencia de módulos. `m2` sigue siendo opcional para conservar sets históricos de un
+ * módulo, pero la forma adaptativa exige las dos ramas juntas y compara su dificultad.
  *
  * El builder es también el sitio donde se fuerzan tres cosas para que ningún redactor
  * tenga que acordarse de ellas: el `part` de cada ítem, el `stimulusStyle: 'passage'`,
@@ -105,6 +103,9 @@ const cuentaDominios = (mod: SatModule): string => {
     .join('|')
 }
 
+const dificultadMedia = (mod: SatModule): number =>
+  mod.meta.reduce((total, item) => total + item.dificultad, 0) / mod.meta.length
+
 function validarModulosAdaptativos(m1: SatModule, facil: SatModule, dificil: SatModule): void {
   if (m1.variant !== 'M1' || facil.variant !== 'M2-facil' || dificil.variant !== 'M2-dificil') {
     throw new Error(
@@ -127,6 +128,15 @@ function validarModulosAdaptativos(m1: SatModule, facil: SatModule, dificil: Sat
     throw new Error(
       `buildSatMock: las ramas de M2 no tienen el mismo reparto por dominio ` +
       `(${dominiosFacil} frente a ${dominiosDificil}).`,
+    )
+  }
+  const mediaM1 = dificultadMedia(m1)
+  const mediaFacil = dificultadMedia(facil)
+  const mediaDificil = dificultadMedia(dificil)
+  if (!(mediaFacil < mediaM1 && mediaM1 < mediaDificil)) {
+    throw new Error(
+      `buildSatMock: la dificultad declarada debe cumplir estándar < M1 < exigente ` +
+      `(${mediaFacil.toFixed(2)} < ${mediaM1.toFixed(2)} < ${mediaDificil.toFixed(2)}).`,
     )
   }
 }

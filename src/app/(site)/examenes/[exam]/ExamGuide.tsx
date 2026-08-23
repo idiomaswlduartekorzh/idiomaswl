@@ -22,7 +22,7 @@ export default function ExamGuideBlock({
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
 
       <section className="wl-exam-guide" style={{ padding: '3.5rem 1.25rem', background: 'var(--bg)' }}>
         <div style={{ maxWidth: 760, margin: '0 auto' }}>
@@ -35,6 +35,10 @@ export default function ExamGuideBlock({
             }}
             dangerouslySetInnerHTML={{ __html: guide.lead }}
           />
+
+          <p style={{ marginTop: '-2rem', marginBottom: '2.5rem', fontSize: '0.8rem', color: 'var(--muted)' }}>
+            Revisado por el equipo académico de Idiomas WeLearn · Actualizado {guide.checked}
+          </p>
 
           {guide.sections.map(sec => (
             <div key={sec.h} style={{ marginBottom: '2.5rem' }}>

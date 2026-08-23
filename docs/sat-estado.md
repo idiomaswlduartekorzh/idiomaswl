@@ -2,38 +2,39 @@
 
 Actualizado el **23 de agosto de 2026**.
 
-## Publicado y protegido
+## Producto terminado en esta rama
 
-- `/examenes/sat`: hub público con diez guías enlazadas.
-- `set-1`: Módulo 1 de Reading and Writing, 27 preguntas y 32 minutos.
-- Acta vigente: `docs/sat-auditorias/sat-set-1-m1.json`.
-- Guardianes obligatorios: `npm run check:sat`, `npm run check:sat-superhub` y
-  `npm run check:sat-adaptive`, todos en `prebuild`.
+- `/examenes/sat`: superhub en español con diez guías, fuentes oficiales, canonical,
+  metadatos sociales, `LearningResource`, `FAQPage`, `BreadcrumbList` e `ItemList`.
+- `set-1`: simulacro adaptativo completo de Reading and Writing, 54 preguntas y 64
+  minutos. Sirve M1 y exactamente una rama de M2.
+- Corte de práctica WeLearn: 16 de 27 en M1. Es una convención explícita y no se presenta
+  como el algoritmo privado de College Board.
+- Actas vigentes:
+  - `docs/sat-auditorias/sat-set-1-m1.json`
+  - `docs/sat-auditorias/sat-set-1-m2-facil.json`
+  - `docs/sat-auditorias/sat-set-1-m2-dificil.json`
 
-## Motor adaptativo
+## Controles obligatorios
 
-La maquinaria está implementada pero no activada en `sat-set-1.ts`. El constructor exige
-M1, M2 estándar y M2 exigente juntos; sirve M1 y exactamente una rama. La interfaz cierra
-M1 antes del enrutado, reinicia el cronómetro, oculta la identidad interna de la rama y
-guarda esa rama en los rótulos visibles de resultados y leads.
+- `npm run check:sat`: 27 ítems por módulo, claves, opciones, longitud, solape, dominios,
+  dificultad, temas, razones y huellas del contenido firmado.
+- `npm run check:sat-adaptive`: prueba los 28 resultados posibles de M1, el bloqueo de
+  navegación, la equivalencia de ramas y el orden estándar < M1 < exigente.
+- `npm run check:sat-superhub`: protege las diez páginas, sitemap, canonical, fuentes,
+  enlaces internos, dominios y aviso de marca.
+- `node scripts/sat-blind-test.mjs --module <id> --heuristics`: panel reproducible de 18
+  atajos sin pasajes. La rama estándar dio 21,0 %; la exigente, 26,1 %; azar, 25 %.
 
-El guardián prueba los 28 resultados posibles de M1 y rechaza ramas intercambiadas,
-vacías, de distinta longitud, con distinto reparto por dominio o con ids repetidos.
+## Transparencia editorial
 
-## Contenido pendiente
+La pasada final de M2 fue realizada por Codex con revisión editorial y heurísticas
+reproducibles; no se presenta como panel humano o multi-modelo independiente. Las actas
+declaran esta limitación. Un panel externo futuro puede ampliar la evidencia, pero ya no
+hay un bloqueo técnico o editorial sin documentar dentro de esta rama.
 
-- **M2 estándar:** sus cuatro bloques y su plan existen, pero la última forma de `q08` no
-  tiene una nueva prueba a ciegas independiente ni acta. Sin manifiesto no puede entrar al
-  registro ni bloquear la publicación del M1 ya aprobado.
-- **M2 exigente:** solo existe el plan. No se debe activar el motor con una sola rama.
-- Copia íntegra del trabajo editorial de Claude: `origin/feat/sat-modulo-2`.
+## Antes de publicar
 
-## Condición para activar la sección completa
-
-1. Repetir la prueba a ciegas del M2 estándar sobre la forma exacta actual.
-2. Ejecutar clave, sesgo, equidad, lengua, dificultad y originalidad; firmar su acta.
-3. Escribir y auditar el M2 exigente con las mismas puertas.
-4. Pasar ambos módulos a `buildSatMock`, ejecutar build completo y recorrer en navegador
-   las rutas estándar y exigente, el corte, el reintento, el guardado y la revisión.
-
-No se baja ningún umbral ni se publica una rama sin acta para acelerar ese proceso.
+Ejecutar `npm run check:practica-catalog`, `npx tsc --noEmit`, `npm run build` y recorrer
+en navegador ambos lados del corte (15 y 16 aciertos), entrega, captura de lead, resultado,
+reintento y revisión. Producción solo sale de `main`; no desplegar esta rama directamente.

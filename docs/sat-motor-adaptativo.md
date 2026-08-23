@@ -15,20 +15,19 @@ le sirve a quién**.
 |---|---|
 | Tipos del enrutado (`AdaptiveRouting`) | escritos |
 | Función de decisión (`routing.ts`) | escrita y probada en los 28 resultados posibles |
-| Constructor (`build-sat-mock.ts`) | escrito; rechaza media adaptación, ramas vacías, variantes cambiadas y repartos no comparables |
+| Constructor (`build-sat-mock.ts`) | escrito; rechaza media adaptación, ramas vacías, variantes cambiadas, repartos no comparables y dificultad invertida |
 | Interfaz (`PracticeClient.tsx`) | escrita: corte irreversible, cronómetro y navegación por módulo, resultados con la rama |
 | Guardián (`check-sat-adaptive.mjs`) | escrito, en `prebuild`; prueba decisión, navegación y configuración |
 | Módulo 1 (`sat-set-1-m1`) | escrito y **auditado** (acta firmada) |
-| Módulo 2 estándar (`sat-set-1-m2-facil`) | bloques escritos, **sin acta** y en cuarentena; no tiene manifiesto cargable |
-| Módulo 2 exigente (`sat-set-1-m2-dificil`) | **no existe** |
-| Simulacro publicado (`sat:set-1`) | **lineal, un módulo de 27 ítems** |
+| Módulo 2 estándar (`sat-set-1-m2-facil`) | escrito, auditado y registrado |
+| Módulo 2 exigente (`sat-set-1-m2-dificil`) | escrito, auditado y registrado |
+| Simulacro de esta rama (`sat:set-1`) | **adaptativo, 54 ítems servidos de 81 escritos** |
 
-Consecuencia que hay que tener delante todo el rato: **el camino adaptativo no se ejecuta
-hoy en producción**. `sat-set-1.ts` no pasa `m2Facil` ni `m2Dificil`, así que
-`mock.adaptive` es `undefined` y `PracticeClient` se comporta como siempre. El borrador
-completo del M2 estándar quedó respaldado en `origin/feat/sat-modulo-2`; en esta rama se
-conservan sus bloques y planes, pero se retiró el manifiesto que hacía fallar `prebuild`
-sin una auditoría independiente. No se bajó ninguna puerta ni se inventó un acta.
+Consecuencia que hay que tener delante todo el rato: **el camino adaptativo está encendido
+en esta rama, pero todavía no en producción**. `sat-set-1.ts` registra las dos ramas y el
+constructor prueba que la dificultad declarada cumpla estándar < M1 < exigente. Producción
+seguirá sirviendo el módulo lineal hasta que este trabajo llegue a `main` y Vercel publique
+ese commit.
 
 ---
 
@@ -442,6 +441,6 @@ contradice al código es peor que no tenerlo: alguien lo va a creer.
 
 La decisión y sus límites están aislados y probados en los 28 resultados posibles. El
 constructor rechaza configuraciones incomparables; la interfaz separa lo servido de lo
-navegable; el guardián comprueba que M1 quede cerrado después del corte. El camino sigue
-apagado en producción por una razón editorial, no técnica: faltan el acta independiente
-del M2 estándar y todo el contenido del M2 exigente.
+navegable; el guardián comprueba que M1 quede cerrado después del corte. Los tres módulos
+tienen acta y huellas. Esta rama ya sirve la sección completa; producción permanece lineal
+hasta que el cambio se integre en `main`.

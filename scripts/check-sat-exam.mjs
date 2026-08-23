@@ -33,6 +33,7 @@ const actasDir = path.join(repoRoot, 'docs/sat-auditorias')
 
 const args = process.argv.slice(2)
 const verbose = args.includes('--verbose')
+const printHashes = args.includes('--print-hashes')
 const onlyModule = args.includes('--module') ? args[args.indexOf('--module') + 1] : null
 
 const DOMAIN_ORDER = ['CS', 'II', 'SEC', 'EOI']
@@ -226,11 +227,16 @@ function checkModule(mod) {
 
   // ── 2 · la clave como opción más larga ──
   let masLarga = 0
+  const idsClaveMasLarga = []
   for (const q of items) {
     const lens = q.options.map((o) => o.length)
-    if (lens[q.answer] === Math.max(...lens) && lens.filter((l) => l === Math.max(...lens)).length === 1) masLarga++
+    if (lens[q.answer] === Math.max(...lens) && lens.filter((l) => l === Math.max(...lens)).length === 1) {
+      masLarga++
+      idsClaveMasLarga.push(q.id)
+    }
   }
   stats.masLargaPct = pct(masLarga, items.length)
+  stats.idsClaveMasLarga = idsClaveMasLarga
   if (stats.masLargaPct > 30) {
     fail(id, '2 longitud de la clave', `la correcta es la más larga en ${masLarga}/${items.length} (${fmt(stats.masLargaPct)} %), máximo 30 %`)
   }
@@ -241,12 +247,17 @@ function checkModule(mod) {
   // heurística «elige la más corta» es tan barata como «elige la más larga», y en ítems de
   // palabra suelta es la única que hay. Lo que no se mide, vuelve.
   let masCorta = 0
+  const idsClaveMasCorta = []
   for (const q of items) {
     const lens = (q.options || []).map((o) => (o || '').length)
     const min = Math.min(...lens)
-    if (lens[q.answer] === min && lens.filter((l) => l === min).length === 1) masCorta++
+    if (lens[q.answer] === min && lens.filter((l) => l === min).length === 1) {
+      masCorta++
+      idsClaveMasCorta.push(q.id)
+    }
   }
   stats.masCortaPct = pct(masCorta, items.length)
+  stats.idsClaveMasCorta = idsClaveMasCorta
   if (stats.masCortaPct > 30) {
     fail(id, '2 longitud de la clave', `la correcta es la más corta en ${masCorta}/${items.length} (${fmt(stats.masCortaPct)} %), máximo 30 %`)
   }
@@ -496,7 +507,17 @@ for (const mod of modules) {
   console.log(`${errs.length ? '❌' : '✅'} ${mod.id} · ${mod.variant} · ${mod.items.length} ítems`)
   if (verbose && s.letras) {
     console.log(`   claves ${LETTERS.map((l) => `${l}:${s.letras[l]}`).join(' ')} · clave más larga ${fmt(s.masLargaPct)} % · más corta ${fmt(s.masCortaPct)} % · solape alto ${fmt(s.solapePct)} % · solape bajo ${fmt(s.solapeBajoPct)} %`)
+    console.log(`   extremos de longitud · más larga: ${s.idsClaveMasLarga?.join(' ') || 'ninguna'} · más corta: ${s.idsClaveMasCorta?.join(' ') || 'ninguna'}`)
     console.log(`   dominios ${DOMAIN_ORDER.map((d) => `${d}:${s.dominios?.[d] ?? 0}`).join(' ')} · temas ${Object.entries(s.temas || {}).map(([t, n]) => `${t}:${n}`).join(' ')}`)
+  }
+  if (printHashes) {
+    const huellas = Object.fromEntries(mod.items.map(q => [
+      q.id,
+      crypto.createHash('sha256')
+        .update(JSON.stringify({ t: q.text, o: q.options, a: q.answer, s: q.stimulus ?? '' }))
+        .digest('hex').slice(0, 12),
+    ]))
+    console.log(`   huellas ${JSON.stringify(huellas)}`)
   }
   for (const e of errs) console.log(`   · [${e.gate}] ${e.msg}`)
 }

@@ -627,5 +627,5 @@ discusión, más la lista exacta de ítems a rehacer.
 | Skill de creación (`crear-examen-sat`) | ✅ escrita |
 | Skill de auditoría (`auditar-examen-sat`) | ✅ escrita |
 | Guardián (`scripts/check-sat-exam.mjs`) | ✅ 18 ago 2026 — probado contra 9 defectos sembrados |
-| Ficha `sat` en `exams.ts` + ruta | ✅ 18 ago 2026 — `available: false` hasta que haya contenido |
-| Primer set piloto | ⬜ pendiente |
+| Ficha `sat` en `exams.ts` + ruta | ✅ 18 ago 2026; actualizada a 54 preguntas adaptativas el 23 ago |
+| Primer set piloto | ✅ M1 + M2 estándar + M2 exigente, con actas y huellas |

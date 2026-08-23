@@ -33,8 +33,10 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
   return {
     title: guide.title,
     description: guide.description,
+    keywords: ['SAT digital', 'preparación SAT', 'SAT en español', guide.h1],
     alternates: { canonical: url },
-    openGraph: { title: guide.title, description: guide.description, url, type: 'article' },
+    openGraph: { title: guide.title, description: guide.description, url, type: 'article', locale: 'es_CO', siteName: 'Idiomas WeLearn' },
+    twitter: { card: 'summary_large_image', title: guide.title, description: guide.description },
   };
 }
 
@@ -93,7 +95,7 @@ export default async function SatGuidePage({ params }: { params: Promise<{ exam:
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph).replace(/</g, '\\u003c') }} />
 
       {/* Migas */}
       <div style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--line-soft)', padding: '0.6rem 0' }}>
@@ -122,6 +124,10 @@ export default async function SatGuidePage({ params }: { params: Promise<{ exam:
             dangerouslySetInnerHTML={{ __html: guide.lead }}
           />
 
+          <p style={{ marginTop: '-2rem', marginBottom: '2.5rem', fontSize: '0.8rem', color: 'var(--muted)' }}>
+            Revisado por el equipo académico de Idiomas WeLearn · Actualizado {guide.checked}
+          </p>
+
           {guide.sections.map(sec => (
             <section key={sec.h} style={{ marginBottom: '2.5rem' }}>
               <h2 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.6rem)', fontWeight: 800, lineHeight: 1.25, marginBottom: '0.9rem' }}>
@@ -143,9 +149,9 @@ export default async function SatGuidePage({ params }: { params: Promise<{ exam:
               Leer sobre el examen no te dice dónde estás.
             </strong>
             <p style={{ fontSize: '0.95rem', lineHeight: 1.6, color: 'var(--muted)', marginBottom: '0.85rem' }}>
-              Nuestro simulacro es un módulo de verdad: 27 preguntas en 32 minutos, con los cuatro
-              dominios en la proporción del examen y el desglose de en cuál fallaste. Es gratis y no
-              hay que crear cuenta.
+              Nuestro simulacro recorre los dos módulos: 54 preguntas en 64 minutos, con los cuatro
+              dominios y una segunda rama ajustada a tu resultado del módulo 1. Es gratis y no hay
+              que crear cuenta.
             </p>
             <Link href="/examenes/sat/practica/set-1" style={{ color: accent, fontWeight: 800, fontSize: '0.95rem' }}>
               Hacer el simulacro SAT →

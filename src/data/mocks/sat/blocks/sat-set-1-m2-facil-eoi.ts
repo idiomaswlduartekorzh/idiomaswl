@@ -3,7 +3,7 @@ import type { SatItemMeta } from '../module-types'
 
 /**
  * Bloque Expression of Ideas del módulo `sat-set-1-m2-facil` — ítems q23 a q27.
- * ESTADO: BORRADOR EN CUARENTENA. No importar ni registrar sin acta firmada del módulo.
+ * ESTADO: APTO. Registrado por `sat-set-1-m2-facil.ts`; acta firmada el 23 ago 2026.
  *
  * Plan: docs/sat-planes/sat-set-1-m2-facil.md (filas 23-27). Claves vigentes, que no se
  * negocian ítem a ítem: cada ítem conserva la suya —q23 **D**, q24 **A**, q26 **C**, q25
@@ -452,8 +452,8 @@ import type { SatItemMeta } from '../module-types'
  * números**: claves A7 B7 C7 D6, clave más larga 3,7 %, más corta 7,4 %, solape alto 11,1 %,
  * solape bajo 0 %. Era lo esperado —ninguna opción cambió y de los dos cuadernos no se quitó
  * ni una palabra—, pero se comprueba, porque el intento de borrar la nota de contexto de q24
- * movió la cara inversa de la puerta 3 y eso no se ve leyendo el ítem. El único fallo que
- * queda es el de siempre: no hay acta en `docs/sat-auditorias/sat-set-1-m2-facil.json`.
+ * movió la cara inversa de la puerta 3 y eso no se ve leyendo el ítem. En aquella pasada el
+ * único fallo restante era el acta; quedó firmada el 23 de agosto de 2026.
  *
  * **Lo que no se puede afirmar aquí.** Quien escribe esto no tiene la fórmula del calibrador,
  * así que las cifras de arriba son los motores del cambio, no la nueva dificultad. Lo esperado

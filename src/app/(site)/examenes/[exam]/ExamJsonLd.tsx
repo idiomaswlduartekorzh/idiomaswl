@@ -1,5 +1,6 @@
 import type { Exam } from '@/data/exams';
 import type { ExamGuide } from '@/data/examGuides';
+import { SAT_GUIDES } from '@/data/satGuides';
 
 const BASE = 'https://www.idiomaswl.com';
 
@@ -52,6 +53,8 @@ export default function ExamJsonLd({ exam, guide }: { exam: Exam; guide?: ExamGu
         url: BASE,
         areaServed: ['CO', 'US'],
       },
+      author: { '@type': 'EducationalOrganization', name: 'Idiomas WeLearn', url: BASE },
+      publisher: { '@type': 'EducationalOrganization', name: 'Idiomas WeLearn', url: BASE },
       about: {
         '@type': 'Thing',
         name: exam.fullName,
@@ -64,10 +67,25 @@ export default function ExamJsonLd({ exam, guide }: { exam: Exam; guide?: ExamGu
     },
   ];
 
+  if (exam.slug === 'sat') {
+    graph.push({
+      '@type': 'ItemList',
+      '@id': `${url}#guias`,
+      name: 'Guías del SAT digital en español',
+      numberOfItems: SAT_GUIDES.length,
+      itemListElement: SAT_GUIDES.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.h1,
+        url: `${BASE}/examenes/sat/guia/${item.slug}`,
+      })),
+    });
+  }
+
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c') }}
     />
   );
 }

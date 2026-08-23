@@ -31,6 +31,7 @@ const fadeUp: Variants = {
 interface Props { exam: Exam }
 
 export default function ExamInfoGraphic({ exam }: Props) {
+  const isSat = exam.slug === 'sat';
   const totalMins = exam.sections.reduce((acc, s) => {
     const m = parseInt(String(s.time));
     return acc + (isNaN(m) ? 0 : m);
@@ -56,7 +57,11 @@ export default function ExamInfoGraphic({ exam }: Props) {
             className="wl-exam-hero__title"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.1 }}
           >
-            {exam.slug === 'toefl' ? 'Simulacros TOEFL iBT 2026' : exam.name}
+            {exam.slug === 'toefl'
+              ? 'Simulacros TOEFL iBT 2026'
+              : isSat
+                ? 'SAT digital: guía y simulacro adaptativo'
+                : exam.name}
           </motion.h1>
           <motion.p
             className="wl-exam-hero__sub"
@@ -86,7 +91,7 @@ export default function ExamInfoGraphic({ exam }: Props) {
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.35 }}
           >
             {[
-              { label: 'Secciones', value: String(exam.sections.length) },
+              { label: isSat ? 'Módulos' : 'Secciones', value: String(exam.sections.length) },
               { label: 'Preguntas', value: String(exam.totalQuestions) },
               { label: 'Duración', value: exam.totalTime },
               { label: 'Puntaje', value: exam.scoreRange },
@@ -115,7 +120,7 @@ export default function ExamInfoGraphic({ exam }: Props) {
             style={{ fontSize: '1.75rem', fontWeight: 700, letterSpacing: '-0.03em', margin: '0 0 2.5rem', color: '#fff' }}
             initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           >
-            {exam.sections.length} secciones · {exam.totalTime} · {exam.scoreRange} {exam.scoreName}
+            {exam.sections.length} {isSat ? 'módulos' : 'secciones'} · {exam.totalTime} · {exam.scoreRange} {exam.scoreName}
           </motion.h2>
 
           <div className="wl-section-grid">
@@ -189,7 +194,7 @@ export default function ExamInfoGraphic({ exam }: Props) {
               <span>{scoreMin.trim()}</span>
               {exam.passing && (
                 <span className="wl-exam-readable-accent" style={{ color: exam.color, fontWeight: 600 }}>
-                  {exam.slug === 'toefl' ? 'Requisito: ' : '✓ Aprobado: '}{exam.passing}
+                  {exam.slug === 'toefl' ? 'Requisito: ' : isSat ? 'Referencia: ' : '✓ Aprobado: '}{exam.passing}
                 </span>
               )}
               <span>{scoreMax}</span>

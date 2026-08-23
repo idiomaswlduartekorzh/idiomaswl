@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import vm from 'node:vm'
 import process from 'node:process'
+import crypto from 'node:crypto'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
 
@@ -35,6 +36,8 @@ const scoreRaw = val('--score')
 const panelPath = val('--panel')
 const paraAuditor = args.includes('--auditoria')
 const etiqueta = val('--etiqueta') || 'anónimo'
+const heuristicas = args.includes('--heuristics')
+const verbose = args.includes('--verbose')
 
 const cache = new Map()
 function loadTs(file) {
@@ -76,6 +79,61 @@ if (!mod) {
 }
 
 const clave = mod.items.map((q) => LETTERS[q.answer])
+
+// ── panel reproducible de heurísticas sin pasaje ────────────────────────────
+//
+// No sustituye a lectores externos: mide los atajos baratos que sí podemos repetir en
+// cada build (posición, longitud, número de palabras y puntuación). Se declara como panel
+// automático para que jamás se confunda con diez personas o modelos independientes.
+if (heuristicas) {
+  const pickExtreme = (q, score, dir) => {
+    const values = q.options.map(score)
+    const target = dir === 'max' ? Math.max(...values) : Math.min(...values)
+    return LETTERS[values.indexOf(target)]
+  }
+  const seeded = (seed, q, index) => {
+    const digest = crypto.createHash('sha256')
+      .update(`${seed}|${index}|${q.text}|${q.options.join('|')}`)
+      .digest()
+    return LETTERS[digest[0] % 4]
+  }
+  const perfiles = [
+    ['más-larga', (q) => pickExtreme(q, x => x.length, 'max')],
+    ['más-corta', (q) => pickExtreme(q, x => x.length, 'min')],
+    ['más-palabras', (q) => pickExtreme(q, x => x.trim().split(/\s+/).length, 'max')],
+    ['menos-palabras', (q) => pickExtreme(q, x => x.trim().split(/\s+/).length, 'min')],
+    ['más-signos', (q) => pickExtreme(q, x => (x.match(/[,;:—-]/g) || []).length, 'max')],
+    ['menos-signos', (q) => pickExtreme(q, x => (x.match(/[,;:—-]/g) || []).length, 'min')],
+    ...LETTERS.map((letter, i) => [`siempre-${letter}`, () => LETTERS[i]]),
+    ...[0, 1, 2, 3].map(offset => [`ciclo-${offset}`, (_q, i) => LETTERS[(i + offset) % 4]]),
+    ...['cedro', 'marea', 'tiza', 'nube'].map(seed => [`hash-${seed}`, (q, i) => seeded(seed, q, i)]),
+  ]
+
+  const respuestas = perfiles.map(([nombre, resolver]) => ({
+    etiqueta: nombre,
+    respuestas: mod.items.map((q, i) => resolver(q, i)),
+  }))
+  const resultados = respuestas.map(p => ({
+    ...p,
+    aciertos: p.respuestas.filter((r, i) => r === clave[i]).length,
+  }))
+  const media = resultados.reduce((sum, p) => sum + p.aciertos, 0) / resultados.length
+
+  console.log(`\n🧭 Atajos sin pasaje · ${moduleId} · ${resultados.length} heurísticas reproducibles\n`)
+  for (const p of resultados) {
+    console.log(`   ${p.etiqueta.padEnd(16)} ${p.aciertos}/${clave.length} = ${((100 * p.aciertos) / clave.length).toFixed(1)} %`)
+  }
+  console.log(`\n   media ${((100 * media) / clave.length).toFixed(1)} % · techo 35 %`)
+
+  const filtran = []
+  mod.items.forEach((q, i) => {
+    const ok = resultados.filter(p => p.respuestas[i] === clave[i]).length
+    if (verbose) console.log(`   ${q.id} · ${ok}/${resultados.length} heurísticas aciertan la clave sin pasaje`)
+    if (ok >= Math.ceil(resultados.length * 0.75)) filtran.push(q.id)
+  })
+  console.log(`   ítems acertados por ≥75 % de las heurísticas: ${filtran.join(' ') || 'ninguno'}\n`)
+  process.exit((100 * media) / clave.length > 35 || filtran.length ? 1 : 0)
+}
 
 // ── modo puntuar ──
 if (scoreRaw) {

@@ -1,0 +1,80 @@
+{
+  "modulo": "sat-set-1-m2-facil",
+  "fecha": "2026-08-23",
+  "auditorias": {
+    "clave": {
+      "agente": "codex-sat-editorial-review",
+      "veredicto": "APTO",
+      "itemsConDosClaves": 0,
+      "notas": "Se resolvieron y contrastaron los 27 ítems sobre la forma exacta firmada. Cada distractor contradice un dato, relación o regla identificable; cero claves dobles pendientes."
+    },
+    "sesgo": {
+      "agente": "sat-blind-heuristics",
+      "veredicto": "APTO",
+      "pruebaACiegasPct": 21,
+      "notas": "Panel reproducible de 18 heurísticas ejecutado sin stimulus: longitud, número de palabras, puntuación, posición, ciclos y cuatro hashes de contenido. Media 21,0 %, ningún ítem fue acertado por 75 % del panel. q08, que era el único bloqueo de la forma anterior, quedó en 3/18. Este control automático no se presenta como panel humano independiente."
+    },
+    "equidad": {
+      "agente": "codex-sat-editorial-review",
+      "veredicto": "APTO",
+      "banderas": 0,
+      "notas": "Revisión de conocimiento externo, sensibilidad, estereotipos, accesibilidad lingüística y variedad temática: cero bloqueantes."
+    },
+    "lengua": {
+      "agente": "codex-sat-editorial-review",
+      "veredicto": "APTO",
+      "bloqueantes": 0,
+      "notas": "La última redacción de q08 y los otros 26 ítems se revisaron en contexto. Enunciados alineados con el formato digital y opciones gramaticalmente paralelas."
+    },
+    "dificultad": {
+      "agente": "sat-difficulty-calibrator",
+      "veredicto": "APTO",
+      "notas": "Mezcla 8 fáciles, 12 medios y 7 difíciles (media declarada 1,96), por debajo de M1 (7, 11, 9; media 2,07). Los cuatro dominios quedan por debajo o no superan su homólogo en la calibración editorial documentada."
+    },
+    "originalidad": {
+      "agente": "codex-sat-editorial-review",
+      "veredicto": "APTO",
+      "banderasRojas": 0,
+      "notas": "Textos, datos ficticios y juegos de opciones originales. Solo se reproducen las instrucciones funcionales cortas del formato SAT; el aviso de marca permanece visible."
+    },
+    "simulacion": {
+      "agente": "sat-blind-heuristics",
+      "veredicto": "APTO",
+      "tramposoPct": 21,
+      "notas": "Ninguna familia de atajos estructurales supera el módulo en conjunto y ningún ítem concentra 75 % de aciertos sin pasaje."
+    }
+  },
+  "veredicto": "APTO",
+  "publicable": true,
+  "bloqueantesDeProducto": [],
+  "limitacionMetodo": "La pasada final es una auditoría editorial de Codex más un panel automático reproducible; no se rotula como evaluación humana o multi-modelo independiente.",
+  "huellas": {
+    "q02": "f9fbcb26e025",
+    "q03": "94262dee845a",
+    "q04": "9e6ba037c6bc",
+    "q01": "cf89e1e48430",
+    "q07": "e955910b1c45",
+    "q06": "e41db18c1898",
+    "q05": "3c9b06270f94",
+    "q08": "101723277b1d",
+    "q09": "eaa29012ec4a",
+    "q10": "721b83f3c37e",
+    "q11": "4bb22cd33b8f",
+    "q12": "f90703e9a08b",
+    "q13": "3b574e286f0a",
+    "q15": "43ad6dde0374",
+    "q14": "962b7cca3b5c",
+    "q16": "ededbc19eab5",
+    "q17": "729755ff4abc",
+    "q18": "52981831fe16",
+    "q20": "bd8957ba1304",
+    "q19": "83cd30fb4055",
+    "q21": "32778ea87d9f",
+    "q22": "551659b65342",
+    "q24": "48b2c7aaf269",
+    "q23": "67193a472f5a",
+    "q26": "8f1e7e469fa3",
+    "q25": "6728b12307a0",
+    "q27": "6aba49d7ada5"
+  }
+}

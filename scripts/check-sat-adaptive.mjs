@@ -85,9 +85,13 @@ if (lineal.timeMinutes !== 32) fail(`un módulo son 32 minutos, no ${lineal.time
 // El examen de laboratorio reutiliza el módulo 1 como las dos ramas —lo que se prueba
 // aquí es la decisión, no el contenido— pero cada rama tiene que declarar la suya, o la
 // comprobación de «ramas intercambiadas» se dispara sobre el propio andamio.
-const comoRama = (mod, variant) => ({ ...mod, variant })
-const facilLaboratorio = comoRama(m1, 'M2-facil')
-const dificilLaboratorio = comoRama(m1, 'M2-dificil')
+const comoRama = (mod, variant, dificultad) => ({
+  ...mod,
+  variant,
+  meta: mod.meta.map(item => ({ ...item, dificultad })),
+})
+const facilLaboratorio = comoRama(m1, 'M2-facil', 1)
+const dificilLaboratorio = comoRama(m1, 'M2-dificil', 3)
 const adap = buildSatMock({
   id: 'x', title: 't', subtitle: 's', m1,
   m2Facil: facilLaboratorio,
@@ -109,7 +113,7 @@ debeRechazar('ramas con distinto número de ítems', {
   m2Dificil: { ...dificilLaboratorio, items: dificilLaboratorio.items.slice(1), meta: dificilLaboratorio.meta.slice(1) },
 })
 debeRechazar('una rama fácil rotulada como difícil', {
-  m2Facil: comoRama(m1, 'M2-dificil'),
+  m2Facil: comoRama(m1, 'M2-dificil', 1),
   m2Dificil: dificilLaboratorio,
 })
 const metaDesbalanceada = dificilLaboratorio.meta.map((item, index) =>
@@ -118,6 +122,14 @@ const metaDesbalanceada = dificilLaboratorio.meta.map((item, index) =>
 debeRechazar('ramas con distinto reparto por dominio', {
   m2Facil: facilLaboratorio,
   m2Dificil: { ...dificilLaboratorio, meta: metaDesbalanceada },
+})
+debeRechazar('una rama estándar tan difícil como el módulo 1', {
+  m2Facil: { ...facilLaboratorio, meta: m1.meta },
+  m2Dificil: dificilLaboratorio,
+})
+debeRechazar('una rama exigente más fácil que el módulo 1', {
+  m2Facil: facilLaboratorio,
+  m2Dificil: { ...dificilLaboratorio, meta: facilLaboratorio.meta },
 })
 
 // ── La decisión, con todos los resultados posibles ───────────────────────────
@@ -221,14 +233,15 @@ function cordura(mock, quien) {
 
 cordura(adap, 'examen adaptativo de prueba')
 
-// Y sobre los sets de verdad, no solo sobre el de laboratorio: el guardián decía
-// «enrutado correcto» habiendo probado únicamente un examen que se construye aquí mismo.
+// Y sobre el set registrado de verdad, no solo sobre el de laboratorio. Antes se intentaba
+// cargar un `sat/index.ts` que no existe y la excepción se tragaba: el guardián podía decir
+// «enrutado correcto» sin haber mirado nunca `set-1`.
 try {
-  for (const m of Object.values(loadTs('src/data/mocks/sat/index.ts') || {})) {
-    if (m && Array.isArray(m.sections) && m.adaptive) cordura(m, m.id)
-  }
-} catch {
-  // Si no hay índice todavía, la comprobación de laboratorio sigue valiendo.
+  const real = loadTs('src/data/mocks/sat/sat-set-1.ts')?.satSet1
+  if (!real) fail('no se pudo cargar satSet1: el guardián no está probando el producto real')
+  else cordura(real, real.id)
+} catch (err) {
+  fail(`no se pudo auditar satSet1: ${err.message}`)
 }
 
 console.log(`\n🔀 SAT — enrutado adaptativo\n`)
