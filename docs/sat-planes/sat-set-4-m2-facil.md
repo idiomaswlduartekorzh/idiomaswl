@@ -1,6 +1,6 @@
 # SAT Set 4 · Módulo 2 estándar — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 0/27**.
+Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 8/27**.
 
 Esta ruta sirve a estudiantes cuyo M1 queda en banda estándar. Reduce la concentración de
 ítems difíciles sin regalar respuestas por longitud, vocabulario o posición. Tema,
@@ -18,14 +18,14 @@ dificultad y clave quedan reservados antes de redactar.
 
 | ID | Tipo | Dif. | Materia | Clave | Tema original | Fuente objetivo y riesgo de diseño |
 | --- | --- | ---: | --- | :---: | --- | --- |
-| q01 | words-in-context | 1 | ciencia | A | Larvas de coral se establecen en baldosas de restauración | NOAA o estudio primario; separar *settled* de reposo y resolución |
+| q01 | words-in-context | 1 | ciencia | A | Larvas de coral se establecen en baldosas de restauración | NOAA verificada; separar *settled* de reposo y resolución |
 | q02 | words-in-context | 1 | literatura | C | Bibliotecaria ficticia guarda una mesa para lectores tardíos | Pasaje original; cuatro acepciones vivas de *reserved* |
 | q03 | words-in-context | 2 | historia | B | Registros de un molino de marea muestran lo que producía cada ciclo | Archivo o museo; objeto gramatical debe fijar *yielded* |
-| q04 | text-structure-purpose | 1 | ciencia | D | Escamas de polilla inspiran una superficie de bajo reflejo | Estudio primario; distinguir mecanismo, aplicación y resultado |
-| q05 | text-structure-purpose | 2 | historia | A | Dos cuadernos de navegación permiten detectar errores de copia | Archivo marítimo; función de la comparación, no del viaje |
+| q04 | text-structure-purpose | 1 | ciencia | D | Ojos de polilla inspiran una superficie de bajo reflejo | Estudio primario verificado; distinguir mecanismo, aplicación y resultado |
+| q05 | text-structure-purpose | 2 | historia | A | Dos cuadernos de navegación permiten detectar errores de copia | Informe de archivo verificado; función de la comparación, no del viaje |
 | q06 | text-structure-purpose | 2 | humanidades | D | Archivo de radio comunitaria indexa voces además de programas | Archivo público; conclusión debe ampliar acceso sin universalizar |
 | q07 | cross-text-connections | 2 | literatura | C | Dos editores discrepan sobre publicar anotaciones de una autora | Textos originales; desacuerdo matizado, no caricatura |
-| q08 | cross-text-connections | 3 | ciencia | B | Grabaciones de murciélagos: detección acústica frente a abundancia | USGS o artículo primario; presencia no equivale a tamaño poblacional |
+| q08 | cross-text-connections | 3 | ciencia | B | Grabaciones de murciélagos: detección acústica frente a abundancia | US Forest Service verificada; presencia no equivale a tamaño poblacional |
 
 ## Information and Ideas · q09–q15
 
