@@ -15,7 +15,6 @@ import { ROLEPLAY_INGLES_A1_BATCH_7 } from './ingles-a1-batch-7.ts'
 import { ROLEPLAY_INGLES_A1_BATCH_8 } from './ingles-a1-batch-8.ts'
 import { ROLEPLAY_INGLES_A1_BATCH_9 } from './ingles-a1-batch-9.ts'
 import { ROLEPLAY_INGLES_A1_BATCH_10 } from './ingles-a1-batch-10.ts'
-import { TOOLKIT_INGLES_B1 } from '../toolkit-ingles-b1.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_1 } from './ingles-b1-batch-1.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_2 } from './ingles-b1-batch-2.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_3 } from './ingles-b1-batch-3.ts'
@@ -87,11 +86,4 @@ export const ROLEPLAY_INGLES_B1_CANDIDATE = [
  * conjunto sale de aquí únicamente cuando alcanza 20 escenarios y pasa sus puertas
  * como unidad completa.
  */
-export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
-  {
-    language: 'ingles',
-    level: 'b1',
-    scenarios: ROLEPLAY_INGLES_B1_CANDIDATE,
-    toolkit: TOOLKIT_INGLES_B1,
-  },
-]
+export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = []

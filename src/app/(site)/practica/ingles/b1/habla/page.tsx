@@ -1,17 +1,34 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-import { QuizSchema } from '@/components/practica/EducationSchema'
-export const metadata: Metadata = practicaMetadata('ingles', 'b1', 'habla')
+import { notFound } from 'next/navigation'
+import { CourseSchema } from '@/components/practica/EducationSchema'
+import { SpeakingModeHub } from '@/components/practica/roleplay/RoleplayExperience'
+import { getRoleplaySet, speakingPath } from '@/data/practica/habla-acompanado'
+
+const LANGUAGE = 'ingles'
+const LEVEL = 'b1'
+const set = getRoleplaySet(LANGUAGE, LEVEL)
+const scenarioCount = set?.scenarios.length ?? 0
+const canonical = `https://www.idiomaswl.com${speakingPath(LANGUAGE, LEVEL)}`
+
+export const metadata: Metadata = {
+  title: 'Speaking inglés B1: solo o en pareja | Idiomas WeLearn',
+  description: `Practica speaking en inglés B1 con 20 frases individuales o con ${scenarioCount} juegos de rol para dos personas, fichas separadas y situaciones reales.`,
+  alternates: { canonical },
+}
+
 export default function Page() {
+  if (!set) notFound()
   return (
     <>
-      <QuizSchema
-        name="Expresión oral en Inglés B1 — Frases esenciales"
-        url="https://idiomaswl.com/practica/ingles/b1/habla"
-        description="20 frases esenciales de Inglés B1 para debates, opiniones y situaciones formales e informales."
+      <CourseSchema
+        name="Speaking en inglés B1 — práctica individual y en pareja"
+        description={`20 frases individuales y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
+        url={canonical}
+        educationalLevel="B1"
+        teaches="Expresión oral en inglés"
+        inLanguage="en"
       />
-      <Content />
+      <SpeakingModeHub set={set} />
     </>
   )
 }
