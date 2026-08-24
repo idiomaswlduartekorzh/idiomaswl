@@ -1,6 +1,6 @@
 # SAT Set 3 · Módulo 2 estándar — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **CRAFT AND STRUCTURE APTO, 8/27**.
+Fecha: 24 de agosto de 2026. Estado: **CS + INFORMATION AND IDEAS APTOS, 15/27**.
 
 Esta rama la recibe quien logra 0–15 aciertos en M1. No es un módulo remedial ni una
 colección de regalos: conserva los cuatro dominios y las tres bandas, pero baja la media de
@@ -35,11 +35,11 @@ antes de redactar claves, temas y riesgos para impedir ajustes oportunistas.
 | --- | --- | ---: | --- | :---: | --- | --- |
 | q09 | central-ideas-details | 1 | humanidades | B | Lenguas de señas usan ubicación y movimiento simultáneamente | Gallaudet/estudio lingüístico; idea principal no puede reducirse a “gestos” |
 | q10 | central-ideas-details | 2 | ciencia | D | Apertura nocturna de estomas bajo sequía en plantas CAM | USDA/estudio primario; separar mecanismo, ahorro de agua y universalidad |
-| q11 | command-of-evidence-textual | 1 | literatura | A | Panadera ficticia vuelve a una receta que había descartado | Ficción original; cita debe probar cambio y motivo, no uno solo |
+| q11 | command-of-evidence-textual | 1 | literatura | A | Panadero ficticio vuelve a una receta que había descartado | Ficción original; cita debe probar el cambio, no solo el fallo o el rechazo inicial |
 | q12 | command-of-evidence-textual | 2 | historia | C | Libros de una estación meteorológica corrigen una cronología local | NOAA/archivo; hallazgo hipotético con alcance exacto y fuente declarada |
-| q13 | command-of-evidence-quantitative | 2 | ciencia | D | Temperatura foliar bajo tres densidades de malla de sombra | Tabla original; unidades consistentes y distractores con aritmética cierta pero irrelevante |
+| q13 | command-of-evidence-quantitative | 2 | ciencia | D | Temperatura foliar bajo tres densidades de malla de sombra | Tabla original; unidades consistentes y distractores con signo, comparación o sujeto equivocados |
 | q14 | inferences | 2 | literatura | A | Abrigo prestado revela qué recuerdo evita una narradora | Ficción original; inferencia emocional anclada en dos acciones, no psicología libre |
-| q15 | inferences | 3 | ciencia | B | Orientación de polillas cambia con posición de luz artificial | estudio primario/USGS; inferir conducta observada, no caída poblacional |
+| q15 | inferences | 3 | ciencia | B | Luz artificial altera la orientación vertical de insectos voladores | estudio primario; inferir control de actitud observado, no atracción distante ni caída poblacional |
 
 ## Standard English Conventions · q16–q22
 

@@ -28,7 +28,9 @@ en el registro ejecutable por accidente.
 - M1 Expression of Ideas: 5/5 escritos y bloque APTO. Evidencia en
   `docs/sat-auditorias/informes/sat-set-3-m1-eoi.md`.
 - M1 total: 27/27; contenido editorial APTO, producto todavía no evaluado.
-- M2 estándar y M2 exigente: 0/27.
-- M2 estándar: Craft and Structure 8/8 escrito y APTO; 8/27 total. Evidencia en
-  `docs/sat-auditorias/informes/sat-set-3-m2-facil-cs.md`.
-- Siguiente bloque autorizado: M2 estándar Information and Ideas q09–q15.
+- M2 estándar: Craft and Structure 8/8 e Information and Ideas 7/7 escritos y APTOS;
+  15/27 total. Evidencia en
+  `docs/sat-auditorias/informes/sat-set-3-m2-facil-cs.md`
+  y `docs/sat-auditorias/informes/sat-set-3-m2-facil-ii.md`.
+- M2 exigente: 0/27.
+- Siguiente bloque autorizado: M2 estándar Standard English Conventions q16–q22.

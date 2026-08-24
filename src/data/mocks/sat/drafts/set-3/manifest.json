@@ -249,10 +249,10 @@
       "variant": "M2-facil",
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-3/sat-set-3-m2-facil.ts",
-      "writtenQuestions": 8,
-      "mechanicalGates": "PARTIAL_BLOCK_PASS",
-      "blindHeuristicsMeanPct": 24.3,
-      "editorialGates": "CS_PASS_ONLY",
+      "writtenQuestions": 15,
+      "mechanicalGates": "PARTIAL_TWO_BLOCK_PASS",
+      "blindHeuristicsMeanPct": 21.9,
+      "editorialGates": "CS_II_PASS",
       "productGate": "NOT_STARTED",
       "slots": [
         {
@@ -323,57 +323,57 @@
           "id": "q09",
           "domain": "II",
           "type": "central-ideas-details",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "humanidades",
+          "status": "written"
         },
         {
           "id": "q10",
           "domain": "II",
           "type": "central-ideas-details",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q11",
           "domain": "II",
           "type": "command-of-evidence-textual",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "literatura",
+          "status": "written"
         },
         {
           "id": "q12",
           "domain": "II",
           "type": "command-of-evidence-textual",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q13",
           "domain": "II",
           "type": "command-of-evidence-quantitative",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q14",
           "domain": "II",
           "type": "inferences",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "literatura",
+          "status": "written"
         },
         {
           "id": "q15",
           "domain": "II",
           "type": "inferences",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q16",
