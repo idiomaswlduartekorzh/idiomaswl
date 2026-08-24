@@ -98,4 +98,43 @@ export const ENGLISH_A2_RELEASE_AUDITS: RoleplayScenarioAudit[] = [
       { profile: 'shortcut', globalTurns: 9, wordsA: 84, wordsB: 80, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['reservation window', 'bike access slots', 'maintenance card', 'layout before and after lunch'], note: 'El atajista intenta poner tres mesas y dejar el paso en A2, pero no conoce el regreso ni la válvula. La carta fuerza un segundo plano y evita un cierre prematuro.' },
     ],
   },
+  {
+    slug: 'the-last-bus-has-gone',
+    auditedAt: '2026-08-23',
+    source: 'Simulación editorial · tanda 3 · escenario 14',
+    verdict: 'pass',
+    runs: [
+      { profile: 'solid-solid', globalTurns: 14, wordsA: 124, wordsB: 130, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['70,000 budget', 'closed passenger list', 'checkpoint consequence', 'licensed contact or hotel'], note: 'A prueba Barichara y el petrol station; B rechaza ambas por la misma regla y cambia a ayuda oficial. Sin viaje compartido, cierran oficina, hotel y bus matutino.' },
+      { profile: 'solid-weak', globalTurns: 17, wordsA: 73, wordsB: 148, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['reception 10:30', 'insurance limit', 'terminal office before nine', 'morning ticket time'], note: 'B sólido evita repetir no y acompaña a A a elegir contacto. A flojo consigue producir destino, presupuesto y deadline con tres filas no consecutivas.' },
+      { profile: 'weak-weak', globalTurns: 18, wordsA: 91, wordsB: 94, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['no informal car', 'vehicle tracker', 'Hotel Camino price', '5:40 bus'], note: 'La negativa no mata la conversación: list, office y hotel sostienen seis turnos después del no. El cierre impide confundir “maybe taxi” con un contacto real.' },
+      { profile: 'quiet', globalTurns: 13, wordsA: 37, wordsB: 116, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['A names Barichara', 'A gives 70,000 maximum', 'A gives reception deadline', 'A chooses contact or hotel'], note: 'A no obtiene ayuda asintiendo: debe producir destino, dinero, hora y elección para que B actúe antes de las nueve.' },
+      { profile: 'shortcut', globalTurns: 8, wordsA: 70, wordsB: 78, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['ride refusal reason', 'fleet alert', 'official alternative', 'morning fallback'], note: 'El atajista ofrece pagar en A2; B cierra esa rama. La carta bloquea cualquier atajo informal y el escenario necesita ocho turnos para convertir el no en plan seguro.' },
+    ],
+  },
+  {
+    slug: 'the-package-needs-another-id',
+    auditedAt: '2026-08-23',
+    source: 'Simulación editorial · tanda 3 · escenario 15',
+    verdict: 'pass',
+    runs: [
+      { profile: 'solid-solid', globalTurns: 14, wordsA: 132, wordsB: 125, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['live licence not screenshot', 'expired physical card', 'sender secure link', 'code before 4:55'], note: 'B primero muestra captura; A pregunta por app viva sin conocer la tarjeta vencida. La carta crea una ruta autorizada de tres pruebas y ambas fichas aportan una.' },
+      { profile: 'solid-weak', globalTurns: 17, wordsA: 151, wordsB: 68, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['stolen wallet', 'live app', 'FotoPro order number', 'one-time code entered privately'], note: 'A sólido reformula identity check como name plus document. B flojo produce robo, app y pedido, y mantiene el código fuera de la conversación.' },
+      { profile: 'weak-weak', globalTurns: 18, wordsA: 93, wordsB: 89, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['name match', 'second physical document', 'sender authorization', 'release record'], note: 'La pareja confunde screenshot y digital licence hasta usar official app. El cierre recupera el registro de liberación que ambos omiten en el primer intento.' },
+      { profile: 'quiet', globalTurns: 13, wordsA: 109, wordsB: 36, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['B explains replacement not ready', 'B opens live licence', 'B provides order 88391', 'B enters code'], note: 'B debe operar y producir cuatro piezas privadas; enseñar solo el nombre del paquete no permite que A complete el proceso.' },
+      { profile: 'shortcut', globalTurns: 8, wordsA: 77, wordsB: 73, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['failed screenshot', 'support card', 'three-part evidence', 'tracking release'], note: 'El atajista intenta usar police report como excepción, pero la carta no lo autoriza. El camino corto requiere app viva, tarjeta y código, y cierra en ocho turnos.' },
+    ],
+  },
+  {
+    slug: 'the-car-will-not-be-ready-today',
+    auditedAt: '2026-08-23',
+    source: 'Simulación editorial · tanda 3 · escenario 16',
+    verdict: 'pass',
+    runs: [
+      { profile: 'solid-solid', globalTurns: 16, wordsA: 138, wordsB: 142, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['failed brake test', 'taxi for 4:15', 'client moved to 7:30', 'authorized colleague and supplier branches'], note: 'B no discute la luz de freno después de oír el test; negocia consecuencias. La carta vuelve insuficiente el préstamo a las 6:30 y obliga a autorizar conductor.' },
+      { profile: 'solid-weak', globalTurns: 18, wordsA: 158, wordsB: 77, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['missed 4:00 promise', 'automatic-driving limit', 'Mateo after 6:30', 'workshop-covered costs'], note: 'A sólido separa seguridad, tiempo incierto y transporte. B flojo produce dos viajes y no acepta “loan car” hasta aclarar quién conduce.' },
+      { profile: 'weak-weak', globalTurns: 18, wordsA: 97, wordsB: 101, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['warning light stays active', 'taxi cap', 'loan-car handover', 'call in both supplier outcomes'], note: 'La pareja intenta prometer noon; el if de la ficha y el cierre corrigen la falsa certeza. El acuerdo queda parcial y las dos ramas siguen visibles.' },
+      { profile: 'quiet', globalTurns: 14, wordsA: 120, wordsB: 41, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['B states child pickup', 'B rejects manual self-drive', 'B names Mateo', 'B gives 7:30 client time'], note: 'B no puede obtener compensación con queja mínima: debe producir los dos relojes, el límite de manejo y el conductor alterno.' },
+      { profile: 'shortcut', globalTurns: 9, wordsA: 85, wordsB: 83, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['safety refusal', 'card new deadline', 'taxi and loan split', 'conditional repair update'], note: 'El atajista pide rental completo en B2; la autoridad de A no alcanza. La carta fuerza solución de dos etapas y el mínimo queda en nueve turnos.' },
+    ],
+  },
 ]
