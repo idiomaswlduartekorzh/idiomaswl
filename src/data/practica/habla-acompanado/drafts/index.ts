@@ -46,6 +46,7 @@ import { ROLEPLAY_FRANCES_A2_BATCH_4 } from './frances-a2-batch-4.ts'
 import { ROLEPLAY_FRANCES_A2_BATCH_4B } from './frances-a2-batch-4b.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_1 } from './italiano-a2-batch-1.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_2 } from './italiano-a2-batch-2.ts'
+import { ROLEPLAY_ITALIANO_A2_BATCH_3 } from './italiano-a2-batch-3.ts'
 import { TOOLKIT_ITALIANO_A2 } from '../toolkit-italiano-a2.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
@@ -139,6 +140,7 @@ export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
     scenarios: [
       ...ROLEPLAY_ITALIANO_A2_BATCH_1,
       ...ROLEPLAY_ITALIANO_A2_BATCH_2,
+      ...ROLEPLAY_ITALIANO_A2_BATCH_3,
     ],
     toolkit: TOOLKIT_ITALIANO_A2,
   },
