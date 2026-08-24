@@ -5,7 +5,7 @@ import {
   ROLEPLAY_INGLES_B1_CANDIDATE,
   ROLEPLAY_COREANO_A2_CANDIDATE,
   ROLEPLAY_FRANCES_A2_CANDIDATE,
-  ROLEPLAY_DRAFT_SETS,
+  ROLEPLAY_ITALIANO_A2_CANDIDATE,
 } from '../src/data/practica/habla-acompanado/drafts/index.ts'
 import { KOREAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-coreano-a2.ts'
 import { ENGLISH_A1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a1.ts'
@@ -47,7 +47,7 @@ const configurations = {
   },
   'italiano-a2': {
     label: 'italiano A2',
-    scenarios: ROLEPLAY_DRAFT_SETS.find((set) => set.language === 'italiano' && set.level === 'a2')?.scenarios ?? [],
+    scenarios: ROLEPLAY_ITALIANO_A2_CANDIDATE,
     audits: ITALIAN_A2_RELEASE_AUDITS,
   },
 }

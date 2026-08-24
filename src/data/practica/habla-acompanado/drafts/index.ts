@@ -50,7 +50,6 @@ import { ROLEPLAY_ITALIANO_A2_BATCH_3 } from './italiano-a2-batch-3.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4 } from './italiano-a2-batch-4.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4B } from './italiano-a2-batch-4b.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4C } from './italiano-a2-batch-4c.ts'
-import { TOOLKIT_ITALIANO_A2 } from '../toolkit-italiano-a2.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -129,6 +128,15 @@ export const ROLEPLAY_FRANCES_A2_CANDIDATE = [
   ...ROLEPLAY_FRANCES_A2_BATCH_4B,
 ].sort((a, b) => a.sequence - b.sequence)
 
+export const ROLEPLAY_ITALIANO_A2_CANDIDATE = [
+  ...ROLEPLAY_ITALIANO_A2_BATCH_1,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_2,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_3,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_4,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_4B,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_4C,
+].sort((a, b) => a.sequence - b.sequence)
+
 /**
  * Conjuntos todavía no publicables.
  *
@@ -136,19 +144,5 @@ export const ROLEPLAY_FRANCES_A2_CANDIDATE = [
  * conjunto sale de aquí únicamente cuando alcanza 20 escenarios y pasa sus puertas
  * como unidad completa.
  */
-export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
-  {
-    language: 'italiano',
-    level: 'a2',
-    scenarios: [
-      ...ROLEPLAY_ITALIANO_A2_BATCH_1,
-      ...ROLEPLAY_ITALIANO_A2_BATCH_2,
-      ...ROLEPLAY_ITALIANO_A2_BATCH_3,
-      ...ROLEPLAY_ITALIANO_A2_BATCH_4,
-      ...ROLEPLAY_ITALIANO_A2_BATCH_4B,
-      ...ROLEPLAY_ITALIANO_A2_BATCH_4C,
-    ],
-    toolkit: TOOLKIT_ITALIANO_A2,
-  },
-]
+export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = []
 import type { RoleplaySet } from '../index.ts'

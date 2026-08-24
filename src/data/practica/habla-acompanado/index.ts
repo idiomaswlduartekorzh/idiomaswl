@@ -3,8 +3,10 @@ import { ROLEPLAY_INGLES_A2_CANDIDATE as ROLEPLAY_INGLES_A2 } from './drafts/ind
 import { ROLEPLAY_INGLES_B1_CANDIDATE as ROLEPLAY_INGLES_B1 } from './drafts/index.ts'
 import { ROLEPLAY_COREANO_A2_CANDIDATE as ROLEPLAY_COREANO_A2 } from './drafts/index.ts'
 import { ROLEPLAY_FRANCES_A2_CANDIDATE as ROLEPLAY_FRANCES_A2 } from './drafts/index.ts'
+import { ROLEPLAY_ITALIANO_A2_CANDIDATE as ROLEPLAY_ITALIANO_A2 } from './drafts/index.ts'
 import { TOOLKIT_COREANO_A2 } from './toolkit-coreano-a2.ts'
 import { TOOLKIT_FRANCES_A2 } from './toolkit-frances-a2.ts'
+import { TOOLKIT_ITALIANO_A2 } from './toolkit-italiano-a2.ts'
 import { TOOLKIT_INGLES_A1 } from './toolkit-ingles-a1.ts'
 import { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 import { TOOLKIT_INGLES_B1 } from './toolkit-ingles-b1.ts'
@@ -23,8 +25,10 @@ export { ROLEPLAY_INGLES_A2_CANDIDATE as ROLEPLAY_INGLES_A2 } from './drafts/ind
 export { ROLEPLAY_INGLES_B1_CANDIDATE as ROLEPLAY_INGLES_B1 } from './drafts/index.ts'
 export { ROLEPLAY_COREANO_A2_CANDIDATE as ROLEPLAY_COREANO_A2 } from './drafts/index.ts'
 export { ROLEPLAY_FRANCES_A2_CANDIDATE as ROLEPLAY_FRANCES_A2 } from './drafts/index.ts'
+export { ROLEPLAY_ITALIANO_A2_CANDIDATE as ROLEPLAY_ITALIANO_A2 } from './drafts/index.ts'
 export { TOOLKIT_COREANO_A2 } from './toolkit-coreano-a2.ts'
 export { TOOLKIT_FRANCES_A2 } from './toolkit-frances-a2.ts'
+export { TOOLKIT_ITALIANO_A2 } from './toolkit-italiano-a2.ts'
 export { TOOLKIT_INGLES_A1 } from './toolkit-ingles-a1.ts'
 export { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 export { TOOLKIT_INGLES_B1 } from './toolkit-ingles-b1.ts'
@@ -106,6 +110,7 @@ export const ROLEPLAY_PUBLISHED_FLOORS: Partial<Record<RoleplaySetKey, number>> 
   'ingles-b1': 20,
   'coreano-a2': 20,
   'frances-a2': 20,
+  'italiano-a2': 20,
 }
 
 /**
@@ -151,6 +156,12 @@ export const ROLEPLAY_SETS: RoleplaySet[] = [
     level: 'a2',
     scenarios: ROLEPLAY_FRANCES_A2,
     toolkit: TOOLKIT_FRANCES_A2,
+  },
+  {
+    language: 'italiano',
+    level: 'a2',
+    scenarios: ROLEPLAY_ITALIANO_A2,
+    toolkit: TOOLKIT_ITALIANO_A2,
   },
 ]
 

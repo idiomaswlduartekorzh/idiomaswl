@@ -1,6 +1,6 @@
 # Habla acompañada · Italiano A2 · parrilla editorial 1–20
 
-Estado: **20/20 escenarios y 100/100 simulaciones de perfil validados fuera del registro público.** Es el siguiente conjunto de la
+Estado: **20/20 escenarios, 100/100 simulaciones aprobadas y conjunto integrado al registro público.** Es parte de la
 fase A2 de [`habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md). No traduce las
 colecciones ya publicadas: usa relaciones, servicios y objetos propios de interacciones
 cotidianas verosímiles en Italia.
