@@ -36,3 +36,34 @@ test('el generador ofrece un dry-run sin modificar el catálogo', () => {
   assert.equal(fs.readFileSync(catalogFile, 'utf8'), before)
   assert.equal(fs.existsSync(path.join(ROOT, 'src/data/mocks/sat/drafts/set-9999')), false)
 })
+
+test('el guardián valida un módulo de borrador sin fingir que sus auditorías están completas', () => {
+  const draftFile = 'src/data/mocks/sat/drafts/set-2/sat-set-2-m1.ts'
+  const result = spawnSync(process.execPath, [
+    'scripts/check-sat-exam.mjs', '--draft', '--file', draftFile, '--verbose',
+  ], { cwd: ROOT, encoding: 'utf8' })
+
+  assert.equal(result.status, 0, result.stderr || result.stdout)
+  assert.match(result.stdout, /Ocho puertas mecánicas superadas/)
+  assert.match(result.stdout, /NO publicable/)
+})
+
+test('el modo borrador no puede omitir actas fuera del directorio drafts', () => {
+  const result = spawnSync(process.execPath, [
+    'scripts/check-sat-exam.mjs', '--draft', '--file', 'src/data/mocks/sat/sat-set-1-m1.ts',
+  ], { cwd: ROOT, encoding: 'utf8' })
+
+  assert.notEqual(result.status, 0)
+  assert.match(result.stderr, /solo admite archivos dentro de src\/data\/mocks\/sat\/drafts/)
+})
+
+test('la prueba ciega puede medir módulos que todavía viven en drafts', () => {
+  const result = spawnSync(process.execPath, [
+    'scripts/sat-blind-test.mjs', '--module', 'sat-set-2-m1',
+    '--file', 'src/data/mocks/sat/drafts/set-2/sat-set-2-m1.ts', '--heuristics',
+  ], { cwd: ROOT, encoding: 'utf8' })
+
+  assert.equal(result.status, 0, result.stderr || result.stdout)
+  assert.match(result.stdout, /media 23\.7 % · techo 35 %/)
+  assert.match(result.stdout, /ítems acertados por ≥75 % de las heurísticas: ninguno/)
+})

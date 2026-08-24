@@ -23,6 +23,7 @@ import { fileURLToPath } from 'node:url'
  *
  *   node scripts/check-sat-exam.mjs
  *   node scripts/check-sat-exam.mjs --module sat-set-1-m1 --verbose
+ *   node scripts/check-sat-exam.mjs --draft --file src/data/mocks/sat/drafts/set-2/sat-set-2-m1.ts --verbose
  */
 
 const require = createRequire(import.meta.url)
@@ -35,6 +36,17 @@ const args = process.argv.slice(2)
 const verbose = args.includes('--verbose')
 const printHashes = args.includes('--print-hashes')
 const onlyModule = args.includes('--module') ? args[args.indexOf('--module') + 1] : null
+const draftMode = args.includes('--draft')
+const onlyFile = args.includes('--file') ? args[args.indexOf('--file') + 1] : null
+
+if (draftMode) {
+  if (!onlyFile) throw new Error('--draft exige --file para no omitir actas de módulos publicables por accidente')
+  const resolvedDraft = path.resolve(repoRoot, onlyFile)
+  const draftsRoot = path.join(satDir, 'drafts') + path.sep
+  if (!resolvedDraft.startsWith(draftsRoot)) {
+    throw new Error('--draft solo admite archivos dentro de src/data/mocks/sat/drafts/')
+  }
+}
 
 const DOMAIN_ORDER = ['CS', 'II', 'SEC', 'EOI']
 const DOMAIN_COUNTS = { CS: 8, II: 7, SEC: 7, EOI: 5 }
@@ -113,6 +125,24 @@ function loadTs(file) {
 }
 
 function collectModules() {
+  if (onlyFile) {
+    const file = path.resolve(repoRoot, onlyFile)
+    if (!fs.existsSync(file)) {
+      failures.push({ mod: onlyFile, gate: '—', msg: 'no existe el archivo indicado por --file' })
+      return
+    }
+    try {
+      const exported = loadTs(file)
+      for (const value of Object.values(exported)) {
+        if (value && Array.isArray(value.items) && Array.isArray(value.meta) && value.id) {
+          if (!onlyModule || value.id === onlyModule) modules.push({ file: path.relative(repoRoot, file), ...value })
+        }
+      }
+    } catch (err) {
+      failures.push({ mod: onlyFile, gate: '—', msg: `no se pudo cargar: ${err.message}` })
+    }
+    return
+  }
   if (!fs.existsSync(satDir)) return
   for (const f of fs.readdirSync(satDir).sort()) {
     if (!f.endsWith('.ts') || f === 'module-types.ts' || f === 'build-sat-mock.ts') continue
@@ -422,7 +452,9 @@ function checkModule(mod) {
 
   // ── 4, 6, 10, 11 · las que no son mecánicas: se exige el acta ──
   const acta = path.join(actasDir, `${id}.json`)
-  if (!fs.existsSync(acta)) {
+  if (draftMode) {
+    warn(id, '4/6/10/11 actas', 'borrador: se comprobaron las ocho puertas mecánicas; las cuatro puertas editoriales siguen pendientes y el módulo NO es publicable')
+  } else if (!fs.existsSync(acta)) {
     fail(id, '4/6/10/11 actas', `no hay acta de auditoría en docs/sat-auditorias/${id}.json — sin acta no hay APTO`)
   } else {
     let a
@@ -495,12 +527,14 @@ if (!modules.length) {
     console.error('')
     process.exit(1)
   }
-  const msg = onlyModule ? `no existe el módulo «${onlyModule}»` : 'todavía no hay módulos SAT escritos'
+  const msg = onlyFile
+    ? `el archivo «${onlyFile}» no exporta un módulo SAT`
+    : onlyModule ? `no existe el módulo «${onlyModule}»` : 'todavía no hay módulos SAT escritos'
   console.log(`ℹ️  check:sat — ${msg}. Nada que comprobar.`)
   process.exit(onlyModule ? 1 : 0)
 }
 
-console.log(`\n🎓 SAT — doce puertas de calidad · ${modules.length} módulo(s)\n`)
+console.log(`\n🎓 SAT — ${draftMode ? 'ocho puertas mecánicas de borrador' : 'doce puertas de calidad'} · ${modules.length} módulo(s)\n`)
 for (const mod of modules) {
   const s = checkModule(mod)
   const errs = failures.filter((f) => f.mod === mod.id)
@@ -538,4 +572,6 @@ if (failures.length) {
   console.error('   No se baja ningún umbral para que pase un lote (blueprint §5). Se rehace el ítem.\n')
   process.exit(1)
 }
-console.log(`\n✅ Las doce puertas, superadas.\n`)
+console.log(draftMode
+  ? `\n✅ Ocho puertas mecánicas superadas. BORRADOR: faltan auditorías editoriales; NO publicable.\n`
+  : `\n✅ Las doce puertas, superadas.\n`)

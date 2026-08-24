@@ -20,6 +20,7 @@ import { fileURLToPath } from 'node:url'
  *
  *   node scripts/sat-blind-test.mjs --module sat-set-1-m1 --out /tmp/ciego.md
  *   node scripts/sat-blind-test.mjs --module sat-set-1-m1 --score '["A","C",…]' --etiqueta haiku
+ *   node scripts/sat-blind-test.mjs --module sat-set-2-m1 --file src/data/mocks/sat/drafts/set-2/sat-set-2-m1.ts --heuristics
  */
 
 const require = createRequire(import.meta.url)
@@ -31,6 +32,7 @@ const LETTERS = ['A', 'B', 'C', 'D']
 const args = process.argv.slice(2)
 const val = (f) => (args.includes(f) ? args[args.indexOf(f) + 1] : null)
 const moduleId = val('--module')
+const moduleFile = val('--file')
 const outPath = val('--out')
 const scoreRaw = val('--score')
 const panelPath = val('--panel')
@@ -62,6 +64,15 @@ function loadTs(file) {
 }
 
 function findModule(id) {
+  if (moduleFile) {
+    const file = path.resolve(repoRoot, moduleFile)
+    if (!fs.existsSync(file)) return null
+    const exported = loadTs(file)
+    for (const v of Object.values(exported)) {
+      if (v && Array.isArray(v.items) && v.id === id) return v
+    }
+    return null
+  }
   for (const f of fs.readdirSync(satDir)) {
     if (!f.endsWith('.ts') || f === 'module-types.ts' || f === 'build-sat-mock.ts') continue
     const exported = loadTs(path.join(satDir, f))
