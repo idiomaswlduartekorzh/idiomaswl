@@ -46,6 +46,11 @@ japonés y coreano. La familia de pronombres inicia con un piloto italiano bajo
 | `src/app/(site)/herramientas/quizes/page.tsx` | Catálogo público de quizzes |
 | `src/app/(site)/herramientas/quizes/[idioma]/page.tsx` | Metadata, datos estructurados y montaje del motor |
 
+Cada ruta de idioma debe descubrir todas las familias publicadas para ese idioma. Una familia
+nueva no está integrada si solo aparece en su hub transversal: debe existir navegación visible y
+bidireccional entre ella y las demás familias del mismo idioma. El componente compartido
+`QuizFamilyNav` mantiene ese contrato sin duplicar enlaces en cada motor.
+
 Las rutas son Server Components. Solo el motor interactivo es Client Component. No se crea una
 copia del motor por idioma.
 

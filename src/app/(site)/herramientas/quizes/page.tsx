@@ -88,7 +88,8 @@ export default function QuizesPage() {
           <p className="wlp-eyebrow">Gramática · práctica acumulativa</p>
           <h1>Quizes por idioma</h1>
           <p className="wlp-hero-lead">
-            Elige un idioma y construye un recorrido de seis niveles con las formas que necesitas practicar.
+            Elige un idioma y luego decide si quieres practicar tiempos y estructuras o pronombres.
+            Construye un recorrido de seis niveles con las formas que necesitas.
             La corrección aparece al cerrar cada nivel.
           </p>
         </header>
@@ -122,8 +123,8 @@ export default function QuizesPage() {
               <Link href="/herramientas/quizes/pronombres" className={`wlp-card wlp-card--path ${s.card}`}>
                 <span className="wlp-eyebrow wlp-eyebrow--card">PRONOMBRES</span>
                 <h2 className={s.name}>Quién hace qué a quién</h2>
-                <p className={s.desc}>Comienza con italiano: sujeto, demostrativos, posesivos, objetos y combinaciones.</p>
-                <div className={s.foot}><span className={s.detail}>1 idioma · 6 niveles</span><span className={s.arrow} aria-hidden="true">→</span></div>
+                <p className={s.desc}>Practica sujeto, demostrativos, posesivos, objetos y combinaciones con un banco propio para cada idioma.</p>
+                <div className={s.foot}><span className={s.detail}>8 idiomas · 6 niveles</span><span className={s.arrow} aria-hidden="true">→</span></div>
               </Link>
             </li>
           </ul>

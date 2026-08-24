@@ -18,6 +18,7 @@ import {
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 import type { GapChallenge, TenseQuestConfig } from '@/data/practica/tense-quest-types'
 
+import QuizFamilyNav from './QuizFamilyNav'
 import s from './TenseQuestEngine.module.css'
 
 type ResponseSnapshot = {
@@ -106,7 +107,7 @@ function GapText({
   )
 }
 
-export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<string> }) {
+export default function TenseQuestEngine({ config, languageSlug }: { config: TenseQuestConfig<string>; languageSlug: string }) {
   const {
     choiceChallenges: allChoiceChallenges,
     copy,
@@ -821,6 +822,8 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
           <h1 lang={copy.languageCode}>{copy.title}</h1>
           <p className="wlp-hero-lead">{copy.lead}</p>
         </header>
+
+        <QuizFamilyNav active="tiempos" languageName={copy.languageName} slug={languageSlug}/>
 
         <section aria-label="Mapa de referencia" className={s.timeMap} lang={copy.languageCode}>
           <span>{copy.mapLabels[0]}</span>

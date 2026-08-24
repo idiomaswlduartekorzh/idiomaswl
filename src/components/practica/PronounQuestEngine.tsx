@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, Check, CheckCircle2, EyeOff, RotateCcw, SlidersH
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 import type { PronounChoice, PronounQuestConfig } from '@/data/practica/pronoun-quest-types'
 
+import QuizFamilyNav from './QuizFamilyNav'
 import s from './TenseQuestEngine.module.css'
 import p from './PronounQuestEngine.module.css'
 
@@ -66,7 +67,7 @@ function safeAttempt(value: unknown, topicIds: ReadonlySet<string>, levelCount: 
     && typeof item.summary === 'boolean'
 }
 
-export default function PronounQuestEngine({ config }: { config: PronounQuestConfig<string> }) {
+export default function PronounQuestEngine({ config, languageSlug }: { config: PronounQuestConfig<string>; languageSlug: string }) {
   const allTopicIds = useMemo(() => config.topics.map((topic) => topic.id), [config.topics])
   const topicIdSet = useMemo(() => new Set(allTopicIds), [allTopicIds])
   const [configured, setConfigured] = useState(false)
@@ -302,6 +303,7 @@ export default function PronounQuestEngine({ config }: { config: PronounQuestCon
     <div className="wlp-shell">
       <nav aria-label="Migas de pan" className="wlp-breadcrumb"><Link href="/herramientas">Herramientas</Link><span aria-hidden="true">/</span><Link href="/herramientas/quizes">Quizes</Link><span aria-hidden="true">/</span><Link href="/herramientas/quizes/pronombres">Pronombres</Link><span aria-hidden="true">/</span><span aria-current="page">{config.languageName}</span></nav>
       <header className="wlp-hero wlp-hero--compact"><p className="wlp-eyebrow">Gramática · referentes y función</p><h1 lang={config.languageCode}>{config.title}</h1><p className="wlp-hero-lead">Elige qué familias practicar y aprende a seguir quién hace qué a quién. Todas las respuestas son cerradas y la corrección aparece al terminar el nivel.</p></header>
+      <QuizFamilyNav active="pronombres" languageName={config.languageName} slug={languageSlug}/>
       <section aria-label="Cadena de referencia" className={p.referenceChain}><span>referente</span><ArrowRight aria-hidden="true" size={15}/><span>función</span><ArrowRight aria-hidden="true" size={15}/><strong>pronombre</strong></section>
 
       {!configured ? <section aria-labelledby="pronoun-selector-title" className={`wlp-card wlp-card--path ${s.selector}`}>

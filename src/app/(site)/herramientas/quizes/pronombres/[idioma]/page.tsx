@@ -41,6 +41,6 @@ export default async function PronounQuizLanguagePage({ params }: Props) {
       url={url}
     />
     <QuizSchema description={`Quiz cerrado de seis niveles sobre pronombres en ${entry.config.languageName.toLocaleLowerCase('es')}, con resultados al finalizar cada nivel.`} name={entry.config.title} url={url}/>
-    <PronounQuestEngine config={entry.config}/>
+    <PronounQuestEngine config={entry.config} languageSlug={entry.slug}/>
   </>
 }

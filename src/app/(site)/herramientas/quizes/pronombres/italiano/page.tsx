@@ -32,6 +32,6 @@ export default function ItalianPronounQuizPage() {
       url={URL}
     />
     <QuizSchema description="Quiz cerrado de seis niveles sobre pronombres italianos, con resultados al finalizar cada nivel." name="La catena dei pronomi" url={URL}/>
-    <PronounQuestEngine config={ITALIAN_PRONOUN_QUEST}/>
+    <PronounQuestEngine config={ITALIAN_PRONOUN_QUEST} languageSlug="italiano"/>
   </>
 }
