@@ -25,6 +25,7 @@ import { ROLEPLAY_INGLES_B1_BATCH_6 } from './ingles-b1-batch-6.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_7 } from './ingles-b1-batch-7.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_8 } from './ingles-b1-batch-8.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_9 } from './ingles-b1-batch-9.ts'
+import { ROLEPLAY_INGLES_B1_BATCH_10 } from './ingles-b1-batch-10.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -74,6 +75,7 @@ export const ROLEPLAY_INGLES_B1_CANDIDATE = [
   ...ROLEPLAY_INGLES_B1_BATCH_7,
   ...ROLEPLAY_INGLES_B1_BATCH_8,
   ...ROLEPLAY_INGLES_B1_BATCH_9,
+  ...ROLEPLAY_INGLES_B1_BATCH_10,
 ].sort((a, b) => a.sequence - b.sequence)
 
 /**
