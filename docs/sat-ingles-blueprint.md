@@ -161,17 +161,32 @@ El SAT reutiliza lo que ya existe; no se inventa un motor nuevo.
 
 - Tipos: `src/data/mocks/types.ts` — los ítems son `MCQQuestion` (`type: 'mcq'`,
   `options: string[]`, `answer` 0-indexed), agrupados en `MockSection` (una por módulo).
-- Ficha del examen: `src/data/exams.ts` → nueva entrada `sat` en `EXAMS`.
+- Catálogo de sets: `src/data/mocks/sat/catalog.json` es la única fuente de verdad para
+  estado (`draft` o `published`), fuentes, exportaciones, módulos y tarjeta comercial.
+- Ficha del examen: `src/data/exams.ts` consume `SAT_MOCK_CARDS`, generado desde el
+  catálogo; no se añaden tarjetas SAT a mano.
 - Módulos: `src/data/mocks/sat/sat-set-N-<variante>.ts`, con la forma `SatModule` de
   `src/data/mocks/sat/module-types.ts` (27 ítems + 27 metadatos emparejados por `id`).
 - Sets: se componen con `buildSatMock()` de `src/data/mocks/sat/build-sat-mock.ts`. Acepta
-  M1 solo, o M1 + **las dos** variantes de M2; una sola rama es un error. Se registran en
-  `MOCK_REGISTRY` de `src/data/mocks/index.ts` con la clave `sat:<id>`.
+  M1 solo, o M1 + **las dos** variantes de M2; una sola rama es un error. El registro
+  `sat:<id>` se genera desde el catálogo con `npm run generate:sat-catalog`.
 - El builder fija `part`, prefija los ids por módulo, añade `stimulusStyle: 'passage'`,
   conecta las explicaciones y declara la variante. También exige que las dos ramas tengan
   igual número de ítems y reparto por dominio.
 - Ruta: `/examenes/sat/practica/[id]`, igual que IELTS y TOEFL.
 - El texto de cada ítem va en `stimulus`; la pregunta en `text`.
+
+### Fábrica para escalar sets
+
+1. `npm run scaffold:sat -- --set N` crea un borrador con tres módulos y 81 slots,
+   repartidos CS 8 · II 7 · SEC 7 · EOI 5 por módulo.
+2. El borrador entra en `catalog.json` con `status: draft`; por diseño no aparece ni en
+   `EXAMS` ni en `MOCK_REGISTRY`.
+3. Tras escribir los tres módulos, superar las doce puertas y firmar las tres actas, se
+   cambia la entrada a `published` y se ejecuta `npm run generate:sat-catalog`.
+4. `npm run check:sat-catalog` rechaza catálogos inválidos o archivos derivados viejos;
+   `npm run test:sat-factory` demuestra que los borradores no se registran. El guardián
+   adaptativo recorre todos los sets publicados, sin imports manuales por cada set nuevo.
 
 El motor ya hace adaptatividad entre módulos con un corte de producto inclusivo de
 **16/27** —no es un dato publicado por College Board—. Lo que **no** hace es conversión a
