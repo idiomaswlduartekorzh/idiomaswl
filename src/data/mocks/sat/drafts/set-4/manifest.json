@@ -248,7 +248,7 @@
       "variant": "M2-facil",
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-4/sat-set-4-m2-facil.ts",
-      "writtenQuestions": 15,
+      "writtenQuestions": 22,
       "slots": [
         {
           "id": "q01",
@@ -370,62 +370,62 @@
           "topic": "ciencia",
           "status": "written"
         },
-        {
-          "id": "q16",
-          "domain": "SEC",
-          "type": "boundaries",
-          "difficulty": 1,
-          "topic": "historia",
-          "status": "empty"
-        },
+      {
+        "id": "q16",
+        "domain": "SEC",
+        "type": "boundaries",
+        "difficulty": 1,
+        "topic": "historia",
+        "status": "written"
+      },
         {
           "id": "q17",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": 1,
-          "topic": "ciencia",
-          "status": "empty"
-        },
+        "difficulty": 1,
+        "topic": "ciencia",
+        "status": "written"
+      },
         {
           "id": "q18",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": 1,
-          "topic": "humanidades",
-          "status": "empty"
-        },
+        "difficulty": 1,
+        "topic": "humanidades",
+        "status": "written"
+      },
         {
           "id": "q19",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": 2,
-          "topic": "historia",
-          "status": "empty"
-        },
+        "difficulty": 2,
+        "topic": "historia",
+        "status": "written"
+      },
         {
           "id": "q20",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": 2,
-          "topic": "ciencia",
-          "status": "empty"
-        },
+        "difficulty": 2,
+        "topic": "ciencia",
+        "status": "written"
+      },
         {
           "id": "q21",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": 3,
-          "topic": "humanidades",
-          "status": "empty"
-        },
+        "difficulty": 3,
+        "topic": "humanidades",
+        "status": "written"
+      },
         {
           "id": "q22",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": 3,
-          "topic": "historia",
-          "status": "empty"
-        },
+        "difficulty": 3,
+        "topic": "historia",
+        "status": "written"
+      },
         {
           "id": "q23",
           "domain": "EOI",
