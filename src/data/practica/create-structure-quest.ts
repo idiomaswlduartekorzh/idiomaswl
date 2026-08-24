@@ -48,7 +48,7 @@ type QuestText = {
 const DEFAULT_LEVELS: readonly LevelMeta[] = [
   { number: '01', title: 'Elección rápida', short: 'Opción múltiple', description: 'Reconoce la forma que encaja con cada contexto.' },
   { number: '02', title: 'Microtextos', short: 'Producción breve', description: 'Escribe la unidad verbal completa a partir de una pista precisa.' },
-  { number: '03', title: 'Usos conectados', short: 'Contextos amplios', description: 'Mantén la misma lógica gramatical en tres situaciones.' },
+  { number: '03', title: 'Recuperación acumulativa', short: 'Tres escenarios', description: 'Recupera sin opciones tres casos practicados en el nivel anterior.' },
   { number: '04', title: 'Laboratorio de errores', short: 'Detecta y repara', description: 'Encuentra la forma que rompe la lógica y corrígela.' },
   { number: '05', title: 'Mapa de funciones', short: 'Relaciona usos', description: 'Asocia cada enunciado completo con su función temporal o discursiva.' },
   { number: '06', title: 'Reconstrucción final', short: 'Banco cerrado', description: 'Reconstruye un texto completo sin depender de corrección abierta.' },
@@ -57,7 +57,7 @@ const DEFAULT_LEVELS: readonly LevelMeta[] = [
 const DEFAULT_TEXT: QuestText = {
   choicePrompt: (cue) => `Elige la forma adecuada para: ${cue}.`,
   microInstruction: 'Escribe la forma verbal completa.',
-  storyInstruction: 'Completa los tres contextos con la forma objetivo.',
+  storyInstruction: 'Completa tres escenarios con la misma forma objetivo, ahora sin opciones.',
   errorInstruction: 'Selecciona la unidad que rompe la lógica y reescríbela correctamente.',
   timelineContext: 'Relaciona cada enunciado completo con la pista que justifica esta forma.',
   timelineFocus: 'Función en contexto',
@@ -70,6 +70,18 @@ function split(context: string) {
   const parts = context.split('___')
   if (parts.length !== 2) throw new Error(`Cada ejemplo debe contener un solo hueco: ${context}`)
   return [parts[0], parts[1]] as const
+}
+
+function rotate<T>(items: readonly T[], offset: number): T[] {
+  if (!items.length) return []
+  const start = ((offset % items.length) + items.length) % items.length
+  return [...items.slice(start), ...items.slice(0, start)]
+}
+
+function choiceOptions(example: StructureExample, position: number) {
+  const options = [...example.distractors]
+  options.splice(position, 0, example.answer)
+  return options
 }
 
 export function createStructureQuest<FormId extends string>({
@@ -94,13 +106,13 @@ export function createStructureQuest<FormId extends string>({
   const labels = new Map(forms.map((form) => [form.id, form.label]))
   const ui = { ...DEFAULT_TEXT, ...text }
 
-  const choices: ChoiceChallenge<FormId>[] = seeds.flatMap((seed) => seed.examples.map((example, index) => ({
+  const choices: ChoiceChallenge<FormId>[] = seeds.flatMap((seed, seedIndex) => seed.examples.map((example, index) => ({
     id: `${id}-choice-${seed.id}-${index + 1}`,
     tenses: [seed.id],
     focus: labels.get(seed.id) ?? seed.id,
     prompt: ui.choicePrompt(example.cue),
     context: example.context,
-    options: [example.distractors[0], example.answer, example.distractors[1], example.distractors[2]],
+    options: choiceOptions(example, (seedIndex * seed.examples.length + index) % 4),
     answer: example.answer,
     explanation: seed.explanation,
   })))
@@ -126,7 +138,7 @@ export function createStructureQuest<FormId extends string>({
     return {
       id: `${id}-story-${seed.id}-${variant + 1}`,
       title: `${labels.get(seed.id) ?? seed.id} · contexto ${variant + 1}`,
-      focus: 'Tres usos contrastados',
+      focus: 'Tres escenarios acumulativos',
       instruction: ui.storyInstruction,
       segments: [parts[0][0], `${parts[0][1]} ${parts[1][0]}`, `${parts[1][1]} ${parts[2][0]}`, parts[2][1]],
       gaps: examples.map((example, index) => ({
@@ -159,9 +171,12 @@ export function createStructureQuest<FormId extends string>({
     }
   }
 
-  const errors = seeds.flatMap((seed) => [createError(seed, 0), createError(seed, 1)])
+  const errors = seeds.flatMap((seed, seedIndex) => [
+    createError(seed, seedIndex % seed.examples.length),
+    createError(seed, (seedIndex + 1) % seed.examples.length),
+  ])
 
-  const timelines: TimelineChallenge<FormId>[] = seeds.map((seed) => ({
+  const timelines: TimelineChallenge<FormId>[] = seeds.map((seed, seedIndex) => ({
     id: `${id}-timeline-${seed.id}`,
     title: `${labels.get(seed.id) ?? seed.id} · mapa`,
     focus: ui.timelineFocus,
@@ -169,11 +184,11 @@ export function createStructureQuest<FormId extends string>({
     slots: seed.examples.map((example, index) => ({
       id: `${id}-timeline-slot-${seed.id}-${index + 1}`,
       tense: seed.id,
-      label: example.cue,
-      hint: example.context.replace('___', '…'),
-      answer: example.context.replace('___', example.answer),
+      label: example.context.replace('___', example.answer),
+      hint: `${example.lemma} · ${labels.get(seed.id) ?? seed.id}`,
+      answer: example.cue,
     })),
-    options: [2, 0, 1].map((index) => seed.examples[index].context.replace('___', seed.examples[index].answer)),
+    options: rotate([...new Set(seed.examples.map((example) => example.cue))], seedIndex),
     explanation: seed.explanation,
   }))
 

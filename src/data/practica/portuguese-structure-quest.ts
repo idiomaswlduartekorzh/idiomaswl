@@ -82,7 +82,7 @@ const FINAL_ROWS: FinalRow<PortugueseFormId>[] = [
 ]
 
 export const PORTUGUESE_STRUCTURE_QUEST = createStructureQuest({
-  id: 'portuguese-structure-quest', storageKey: 'wl-portuguese-structure-quest-v1', forms: PORTUGUESE_FORMS,
+  id: 'portuguese-structure-quest', storageKey: 'wl-portuguese-structure-quest-v2', forms: PORTUGUESE_FORMS,
   presets: [
     { label: 'Passado', ids: PORTUGUESE_FORMS.filter((form) => form.group === 'Passado').map((form) => form.id) },
     { label: 'Futuro', ids: PORTUGUESE_FORMS.filter((form) => form.group === 'Futuro').map((form) => form.id) },

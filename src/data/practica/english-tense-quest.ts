@@ -30,7 +30,7 @@ export const ENGLISH_FORMS = [
 
 export type EnglishFormId = (typeof ENGLISH_FORMS)[number]['id']
 
-type Example = { context: string; answer: string; wrong: string; lemma: string; cue: string }
+type Example = { context: string; answer: string; wrong: string; lemma: string; cue: string; accepted?: string[] }
 type Seed = {
   id: EnglishFormId
   explanation: string
@@ -136,6 +136,29 @@ const SEEDS: Seed[] = [
   ] },
 ]
 
+const NEGATIVE_CONTRACTIONS: [RegExp, string][] = [
+  [/\bdo not\b/i, "don't"],
+  [/\bdoes not\b/i, "doesn't"],
+  [/\bdid not\b/i, "didn't"],
+  [/\bis not\b/i, "isn't"],
+  [/\bare not\b/i, "aren't"],
+  [/\bwas not\b/i, "wasn't"],
+  [/\bwere not\b/i, "weren't"],
+  [/\bhas not\b/i, "hasn't"],
+  [/\bhave not\b/i, "haven't"],
+  [/\bhad not\b/i, "hadn't"],
+  [/\bwill not\b/i, "won't"],
+  [/\bwould not\b/i, "wouldn't"],
+]
+
+function acceptedAnswers(example: Example) {
+  const answers = [example.answer, ...(example.accepted ?? [])]
+  for (const [pattern, replacement] of NEGATIVE_CONTRACTIONS) {
+    if (pattern.test(example.answer)) answers.push(example.answer.replace(pattern, replacement))
+  }
+  return [...new Set(answers)]
+}
+
 function split(context: string) {
   const parts = context.split('___')
   return [parts[0], parts[1]] as const
@@ -201,18 +224,26 @@ const CHOICE_DISTRACTORS: Record<string, [string, string, string]> = {
   'imperative-3': ['are', 'to be', 'will be'],
 }
 
-function options(seed: Seed, example: Example, index: number) {
-  const distractors = CHOICE_DISTRACTORS[`${seed.id}-${index + 1}`]
-  return [distractors[0], example.answer, distractors[1], distractors[2]]
+function rotate<T>(items: readonly T[], offset: number): T[] {
+  if (!items.length) return []
+  const start = ((offset % items.length) + items.length) % items.length
+  return [...items.slice(start), ...items.slice(0, start)]
 }
 
-const CHOICES: ChoiceChallenge<EnglishFormId>[] = SEEDS.flatMap((seed) => seed.examples.map((example, index) => ({
+function options(seed: Seed, example: Example, index: number, seedIndex: number) {
+  const distractors = CHOICE_DISTRACTORS[`${seed.id}-${index + 1}`]
+  const result = [...distractors]
+  result.splice((seedIndex * seed.examples.length + index) % 4, 0, example.answer)
+  return result
+}
+
+const CHOICES: ChoiceChallenge<EnglishFormId>[] = SEEDS.flatMap((seed, seedIndex) => seed.examples.map((example, index) => ({
   id: `en-choice-${seed.id}-${index + 1}`,
   tenses: [seed.id],
   focus: ENGLISH_FORMS.find((form) => form.id === seed.id)?.label ?? seed.id,
   prompt: `Choose the form for this ${example.cue}.`,
   context: example.context,
-  options: options(seed, example, index),
+  options: options(seed, example, index, seedIndex),
   answer: example.answer,
   explanation: seed.explanation,
 })))
@@ -223,7 +254,7 @@ const MICROS: GapChallenge<EnglishFormId>[] = SEEDS.flatMap((seed) => seed.examp
   focus: example.cue,
   instruction: 'Write the complete verb form.',
   segments: [...split(example.context)],
-  gaps: [{ id: `en-micro-gap-${seed.id}-${index + 1}`, tense: seed.id, verb: example.lemma, answers: [example.answer] }],
+  gaps: [{ id: `en-micro-gap-${seed.id}-${index + 1}`, tense: seed.id, verb: example.lemma, answers: acceptedAnswers(example) }],
   explanation: seed.explanation,
 })))
 
@@ -233,10 +264,10 @@ const STORIES: GapChallenge<EnglishFormId>[] = SEEDS.flatMap((seed) => [0, 1].ma
   return {
     id: `en-story-${seed.id}-${variant + 1}`,
     title: `${ENGLISH_FORMS.find((form) => form.id === seed.id)?.label} in context · ${variant + 1}`,
-    focus: 'Three connected uses',
-    instruction: 'Complete all three contexts with the same target form.',
+    focus: 'Three cumulative scenarios',
+    instruction: 'Retrieve the same target form in three scenarios, now without options.',
     segments: [parts[0][0], `${parts[0][1]} ${parts[1][0]}`, `${parts[1][1]} ${parts[2][0]}`, parts[2][1]],
-    gaps: examples.map((example, index) => ({ id: `en-story-gap-${seed.id}-${variant + 1}-${index + 1}`, tense: seed.id, verb: example.lemma, answers: [example.answer] })),
+    gaps: examples.map((example, index) => ({ id: `en-story-gap-${seed.id}-${variant + 1}-${index + 1}`, tense: seed.id, verb: example.lemma, answers: acceptedAnswers(example) })),
     explanation: seed.explanation,
   }
 }))
@@ -256,14 +287,17 @@ function errorChallenge(seed: Seed, wrongIndex: number): ErrorChallenge<EnglishF
     })),
     after: parts[2][1],
     wrongId: `en-error-token-${seed.id}-${wrongIndex + 1}-${wrongIndex + 1}`,
-    answers: [seed.examples[wrongIndex].answer],
+    answers: acceptedAnswers(seed.examples[wrongIndex]),
     explanation: seed.explanation,
   }
 }
 
-const ERRORS = SEEDS.flatMap((seed) => [errorChallenge(seed, 0), errorChallenge(seed, 1)])
+const ERRORS = SEEDS.flatMap((seed, seedIndex) => [
+  errorChallenge(seed, seedIndex % seed.examples.length),
+  errorChallenge(seed, (seedIndex + 1) % seed.examples.length),
+])
 
-const TIMELINES: TimelineChallenge<EnglishFormId>[] = SEEDS.map((seed) => ({
+const TIMELINES: TimelineChallenge<EnglishFormId>[] = SEEDS.map((seed, seedIndex) => ({
   id: `en-timeline-${seed.id}`,
   title: `${ENGLISH_FORMS.find((form) => form.id === seed.id)?.label} map`,
   focus: 'Context clues',
@@ -271,11 +305,11 @@ const TIMELINES: TimelineChallenge<EnglishFormId>[] = SEEDS.map((seed) => ({
   slots: seed.examples.map((example, index) => ({
     id: `en-timeline-slot-${seed.id}-${index + 1}`,
     tense: seed.id,
-    label: example.cue,
-    hint: example.context.replace('___', '…'),
-    answer: example.context.replace('___', example.answer),
+    label: example.context.replace('___', example.answer),
+    hint: `${example.lemma} · ${ENGLISH_FORMS.find((form) => form.id === seed.id)?.label ?? seed.id}`,
+    answer: example.cue,
   })),
-  options: [2, 0, 1].map((index) => seed.examples[index].context.replace('___', seed.examples[index].answer)),
+  options: rotate([...new Set(seed.examples.map((example) => example.cue))], seedIndex),
   explanation: seed.explanation,
 }))
 
@@ -305,7 +339,7 @@ const finalAnswers = FINAL_ROWS.map((row, index) => ({ id: `en-final-card-${inde
 
 export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
   id: 'english-tense-quest',
-  storageKey: 'wl-english-tense-quest-v1',
+  storageKey: 'wl-english-tense-quest-v2',
   forms: ENGLISH_FORMS,
   presets: [
     { label: 'Present', ids: ENGLISH_FORMS.filter((form) => form.group === 'Present').map((form) => form.id) },
@@ -316,7 +350,7 @@ export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
   levels: [
     { number: '01', title: 'Quick choice', short: 'Multiple choice', description: 'Recognize the form that fits each context.' },
     { number: '02', title: 'Micro stories', short: 'Short production', description: 'Write the complete verb form from a precise clue.' },
-    { number: '03', title: 'Connected uses', short: 'Longer contexts', description: 'Keep the same time logic across three situations.' },
+    { number: '03', title: 'Cumulative retrieval', short: 'Three scenarios', description: 'Retrieve three previously practiced cases without options.' },
     { number: '04', title: 'Error lab', short: 'Detect and repair', description: 'Find the form that breaks the logic and correct it.' },
     { number: '05', title: 'Aspect map', short: 'Match functions', description: 'Match complete clauses to their temporal function.' },
     { number: '06', title: 'The workshop file', short: 'Final reconstruction', description: 'Rebuild a complete timeline from a closed word bank.' },

@@ -649,7 +649,7 @@
   justify-content: center;
   line-height: 1.25;
   margin: 0 0.18rem;
-  min-height: 34px;
+  min-height: 44px;
   min-width: 88px;
   padding: 0.2rem 0.45rem;
   vertical-align: middle;
@@ -709,6 +709,12 @@
   opacity: 0.45;
 }
 
+.bankHint {
+  color: var(--wlp-muted);
+  font-size: 0.75rem;
+  margin: -0.25rem 0 0.65rem;
+}
+
 .wordBank {
   display: flex;
   flex-wrap: wrap;
@@ -724,7 +730,7 @@
   font: inherit;
   font-size: 0.78rem;
   font-weight: 700;
-  min-height: 38px;
+  min-height: 44px;
   padding: 0.45rem 0.65rem;
 }
 

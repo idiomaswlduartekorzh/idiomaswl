@@ -1,7 +1,8 @@
 # Blueprint multilingüe — quizes de tiempo, aspecto y estructura
 
 Fuente de verdad para escalar el motor de `/herramientas/quizes` a los ocho idiomas de
-Idiomas WeLearn. Versión 1: 23 de agosto de 2026.
+Idiomas WeLearn. Versión 2: 23 de agosto de 2026, endurecida tras auditoría funcional y
+pedagógica.
 
 ## Principio de producto
 
@@ -16,7 +17,7 @@ El estudiante:
 2. completa un nivel sin recibir señales de acierto;
 3. puede revisar y cambiar sus respuestas antes de finalizar;
 4. recibe puntaje por decisión lingüística, solución y explicación al cerrar el nivel;
-5. conserva su mejor resultado local por selección y nivel.
+5. conserva localmente su intento activo y su mejor resultado por selección y nivel.
 
 ## Fases y puertas de salida
 
@@ -80,9 +81,11 @@ Cada forma seleccionable nueva declara:
 - variantes aceptadas solo cuando son normativas para el mismo significado y registro;
 - una aparición en la reconstrucción final.
 
-La factoría deriva de ese núcleo 3 opciones múltiples, 3 microtextos, 2 bloques conectados,
-2 reparaciones y un mapa de 3 funciones. El texto final se escribe aparte porque la coherencia
-discursiva no debe generarse combinando frases al azar.
+La factoría deriva de ese núcleo 3 opciones múltiples, 3 microtextos, 2 bloques de recuperación
+acumulativa, 2 reparaciones y un mapa de 3 funciones. Los bloques acumulativos reutilizan los
+casos de forma deliberada para pasar de reconocimiento a producción; no se anuncian como relatos
+nuevos. El texto final se escribe aparte porque la coherencia discursiva no debe generarse
+combinando frases al azar.
 
 ## Reglas contra falsos positivos
 
@@ -96,6 +99,11 @@ discursiva no debe generarse combinando frases al azar.
   repiten textos para evitar pistas ambiguas.
 - Un distractor no puede ser una variante correcta en otro registro sin que el contexto marque
   claramente el registro objetivo.
+- La posición correcta se distribuye de forma equilibrada entre A, B, C y D.
+- El token erróneo ocupa de forma equilibrada las tres posiciones seleccionables.
+- Un mapa funcional muestra una cláusula y pide clasificar su función; la pista nunca reproduce
+  literalmente la opción correcta.
+- Una reconstrucción con una sola forma ofrece al menos tres distractores y nunca un banco 1:1.
 
 ## Arquitectura
 
@@ -113,11 +121,13 @@ los ocho idiomas.
 
 ## QA por publicación
 
-1. `npm run check:tense-quests` valida estructura, respuesta, unicidad y cobertura.
+1. `npm run check:tense-quests` valida estructura, respuesta, unicidad, cobertura, distribución de
+   opciones, distribución de errores, variantes normativas y ausencia de pistas literales.
 2. `npm run check:practica-catalog` protege escucha, IELTS, ICFES y catálogos previos.
 3. `npx tsc --noEmit`, lint de archivos tocados y `npm run build` validan integración.
-4. En navegador se prueba por idioma: selección única, preset, URL compartible, los seis
-   niveles, edición hacia atrás, corrección diferida, resultado, teclado y móvil.
+4. En navegador se prueba por idioma: selección única, preset, URL compartible, persistencia tras
+   recarga, los seis niveles, edición hacia atrás, corrección diferida, distractores, resultado,
+   teclado y móvil.
 5. Después de desplegar se comprueban el hub y las ocho rutas con HTTP 200 y contenido propio.
 
 ## Evolución
