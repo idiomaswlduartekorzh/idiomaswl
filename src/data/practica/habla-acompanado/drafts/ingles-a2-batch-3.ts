@@ -140,6 +140,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_3: RoleplayScenario[] = [
       { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'La conversación separa capacidad práctica, permiso empresarial y ayuda posible mediante can/can’t en peticiones y negativas.' },
       { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'El registro, la lista y el control policial son obligaciones externas que explican por qué el conductor no decide libremente.' },
       { slug: 'superlatives', level: 'a2', title: 'Superlativos en Inglés A2', rationale: 'The last bus y the first morning option sitúan las únicas salidas del horario sin exigir una negociación imposible.' },
+      { slug: 'wh-questions', level: 'a1', title: 'Preguntas con WH en Inglés A1', rationale: 'Where are you going, why can’t you take me y who has the list aclaran ruta, restricción y ayuda oficial.' },
+      { slug: 'will-future', level: 'a2', title: 'Will para decisiones en Inglés A2', rationale: 'El conductor decide acompañar al pasajero a la oficina y el pasajero decide hotel o bus durante la conversación.' },
+      { slug: 'prepositions-time', level: 'a1', title: 'Preposiciones de tiempo en Inglés A1', rationale: 'Before 9:00, at 5:40 y after 10:30 sostienen los tres relojes que hacen seguro el cierre sin viaje.' },
     ],
   },
   {
@@ -280,6 +283,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_3: RoleplayScenario[] = [
       { slug: 'have-got', level: 'a1', title: 'Have got en Inglés A1', rationale: 'El receptor necesita declarar qué documentos tiene y cuáles no tiene sin convertirlos todavía en argumentos.' },
       { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'La liberación depende de requisitos acumulativos: documento vivo, tarjeta física y código antes de la hora.' },
       { slug: 'wh-questions', level: 'a1', title: 'Preguntas con WH en Inglés A1', rationale: 'Which part, who y what permiten aislar el fallo y repartir los pasos de contacto y verificación.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'Can you open, can the sender authorize y I can’t use distinguen capacidad técnica, permiso y límite del mostrador.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'Does the name match y do you have another document verifican los requisitos sin pedir todos los papeles a la vez.' },
+      { slug: 'first-conditional', level: 'a2', title: 'Primer condicional en Inglés A2', rationale: 'La entrega ocurre solo si llegan enlace, segundo documento y código antes de las 4:55.' },
     ],
   },
   {
@@ -420,6 +426,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_3: RoleplayScenario[] = [
       { slug: 'first-conditional', level: 'a2', title: 'Primer condicional en Inglés A2', rationale: 'La hora de reparación solo existe si llega la pieza; el cierre debe conservar ambas ramas sin convertir una estimación en promesa.' },
       { slug: 'present-perfect-basic', level: 'a2', title: 'Present perfect básico en Inglés A2', rationale: 'El taller comunica un resultado reciente con efecto actual: the sensor has failed y the supplier has not confirmed the part.' },
       { slug: 'will-future', level: 'a2', title: 'Will para decisiones en Inglés A2', rationale: 'Taxi, llamada, conductor autorizado y recogida son decisiones tomadas durante la negociación y se cierran como compromisos.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'I can arrange, I can’t release y can your colleague drive separan la ayuda disponible del límite de seguridad.' },
+      { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'El carro tiene que quedarse y el conductor temporal debe quedar autorizado; ambas son condiciones externas del acuerdo parcial.' },
+      { slug: 'wh-questions', level: 'a1', title: 'Preguntas con WH en Inglés A1', rationale: 'What happened, who collects y which costs permiten comprobar prueba, entrega y cobertura del transporte.' },
     ],
   },
 ]

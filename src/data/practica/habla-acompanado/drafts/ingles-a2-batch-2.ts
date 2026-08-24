@@ -140,6 +140,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_2: RoleplayScenario[] = [
       { slug: 'prepositions-time', level: 'a1', title: 'Preposiciones de tiempo en Inglés A1', rationale: 'At 10:00, after ten y until 11:30 permiten que la regla tenga inicio y final exactos.' },
       { slug: 'first-conditional', level: 'a2', title: 'Primer condicional en Inglés A2', rationale: 'El permiso para continuar depende del resultado del test: if the bedroom test fails, el acuerdo activa otra acción.' },
       { slug: 'should-advice', level: 'a2', title: 'Should para recomendaciones en Inglés A2', rationale: 'Mover el parlante, bajar los bajos y cerrar la ventana aparecen como recomendaciones antes de convertirse en regla compartida.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'Can we check, I can control y I can’t promise separan el test, lo controlable y el límite de una reunión con diez personas.' },
+      { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'Quiet hours y la visita de seguridad introducen obligaciones compartidas que no dependen del gusto de un vecino.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'Does it still travel y what time does it finish verifican el resultado acústico y el cierre.' },
     ],
   },
   {
@@ -280,6 +283,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_2: RoleplayScenario[] = [
       { slug: 'prepositions-place', level: 'a1', title: 'Preposiciones de lugar en Inglés A1', rationale: 'Beside, around, through y on permiten negociar un plano real sin convertirlo en instrucciones abstractas.' },
       { slug: 'present-continuous-future-a2', level: 'a2', title: 'Present continuous para planes en Inglés A2', rationale: 'La reserva, la llegada de invitados y el trabajo son planes cerrados con hora que explican por qué el espacio cambia durante la tarde.' },
       { slug: 'first-conditional', level: 'a2', title: 'Primer condicional en Inglés A2', rationale: 'La puerta del sótano y el acceso por el paso ancho dependen de acciones concretas: if someone unlocks it y if the gate stays clear.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'The bicycle can’t turn, I can fold y can you open expresan límites físicos y concesiones de uso.' },
+      { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'El paso de emergencia y la válvula tienen que permanecer accesibles aunque exista una reserva válida.' },
+      { slug: 'wh-questions', level: 'a1', title: 'Preguntas con WH en Inglés A1', rationale: 'What times, who opens y where does the table go convierten un conflicto espacial en un mapa con responsables.' },
     ],
   },
 ]

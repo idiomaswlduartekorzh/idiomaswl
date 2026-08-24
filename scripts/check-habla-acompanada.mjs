@@ -220,7 +220,10 @@ for (const { set, published } of validationSets) {
       unique(role.exponents.map((entry) => entry.form), `${roleWhere}: exponentes`)
     }
 
-    if (!scenario.grammarReferences.length) fail(`${scenarioWhere}: no tiene referencias gramaticales.`)
+    if (scenario.grammarReferences.length < 6) {
+      fail(`${scenarioWhere}: necesita al menos 6 referencias para anclar sus exponentes; tiene ${scenario.grammarReferences.length}.`)
+    }
+    unique(scenario.grammarReferences.map((ref) => `${ref.level}/${ref.slug}`), `${scenarioWhere}: referencias gramaticales`)
     for (const ref of scenario.grammarReferences) {
       if (!grammarSlugs(set.language, ref.level).has(ref.slug)) {
         fail(`${scenarioWhere}: la referencia ${set.language}/${ref.level}/${ref.slug} no existe.`)

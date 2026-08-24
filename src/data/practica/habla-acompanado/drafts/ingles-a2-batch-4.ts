@@ -140,6 +140,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_4: RoleplayScenario[] = [
       { slug: 'imperative', level: 'a1', title: 'Imperativo en Inglés A1', rationale: 'La ayuda ocurre en instrucciones cortas de una sola acción, seguidas por comprobación, no en un párrafo técnico.' },
       { slug: 'first-conditional', level: 'a2', title: 'Primer condicional en Inglés A2', rationale: 'Cada resultado abre una rama real: if the notice does not appear, use the recovery email.' },
       { slug: 'present-perfect-basic', level: 'a2', title: 'Present perfect básico en Inglés A2', rationale: 'Signed in, recognized y opened conectan acciones recientes del dispositivo con el acceso disponible ahora.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'What can I try, I can guide y I can’t see the code delimitan ayuda, opciones y privacidad.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'Are you signed in, what do you see y does the file open sostienen el diagnóstico paso a paso.' },
+      { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'La reunión obliga a priorizar el archivo correcto, mientras las reglas de soporte exigen mantener secretos fuera de la mesa.' },
     ],
   },
   {
@@ -280,6 +283,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_4: RoleplayScenario[] = [
       { slug: 'comparatives', level: 'a2', title: 'Comparativos en Inglés A2', rationale: 'Twice as much, higher than y cheaper permiten medir el cambio y comparar opciones sin convertir preferencias en hechos.' },
       { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'Los costos requeridos y el cierre del salón son condiciones externas separadas de los extras opcionales.' },
       { slug: 'will-future', level: 'a2', title: 'Will para decisiones en Inglés A2', rationale: 'Cancelar, avisar y mantener o detener el pago son compromisos decididos durante un cierre sin acuerdo de lugar.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'Can contribute, can’t authorize y can we move expresan recursos personales, autoridad y opciones de lugar.' },
+      { slug: 'quantifiers', level: 'a2', title: 'Cuantificadores en Inglés A2', rationale: 'All required costs, thirty guests, each person y more than permiten verificar que el presupuesto cubra al grupo completo.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'Which costs are required y does the room include permiten auditar el presupuesto antes de decidir.' },
     ],
   },
   {
@@ -420,6 +426,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_4: RoleplayScenario[] = [
       { slug: 'past-simple-irregular', level: 'a2', title: 'Pasado simple irregular en Inglés A2', rationale: 'Dropped, left y sent permiten dar al cliente un informe breve del fallo y lo ocurrido antes de reprogramar.' },
       { slug: 'going-to', level: 'a1', title: 'Going to en Inglés A1', rationale: 'La nueva franja, sala y sección forman un plan decidido con evidencia, no una predicción sobre cuándo vuelve internet.' },
       { slug: 'first-conditional', level: 'a2', title: 'Primer condicional en Inglés A2', rationale: 'If the room is confirmed y if the client accepts controlan las acciones posteriores del cierre aplazado.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'I can cover pricing, I can’t send the file y can you be ready delimitan sustitución, seguridad y compromiso.' },
+      { slug: 'will-future', level: 'a2', title: 'Will para decisiones en Inglés A2', rationale: 'Enviar el enlace, confirmar la sala y reiniciar la demo son compromisos tomados después del fallo.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'How much data do you have y when does the client leave convierten la falla en una decisión medible.' },
     ],
   },
   {
@@ -560,6 +569,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_4: RoleplayScenario[] = [
       { slug: 'comparatives', level: 'a2', title: 'Comparativos en Inglés A2', rationale: 'Closer, cheaper y safer permiten comparar acceso, costo y riesgo sin reducir la decisión a una sola ventaja.' },
       { slug: 'going-to', level: 'a1', title: 'Going to en Inglés A1', rationale: 'El lugar, transporte de comida y mensaje forman el nuevo plan basado en la alerta y la disponibilidad.' },
       { slug: 'should-advice', level: 'a2', title: 'Should para recomendaciones en Inglés A2', rationale: 'La alerta transforma recomendaciones de seguridad en razones para descartar el parque y elegir una alternativa.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'Can transport, can pay y can’t host separan recursos de cada organizador y límites del grupo.' },
+      { slug: 'quantifiers', level: 'a2', title: 'Cuantificadores en Inglés A2', rationale: 'Twenty guests, eighteen contributions, each person y no one conectan el costo de sala con toda la lista.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'Who brings the food, when does the room open y does everyone know verifican la operación antes del mensaje.' },
     ],
   },
 ]

@@ -140,6 +140,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_1: RoleplayScenario[] = [
       { slug: 'past-simple-irregular', level: 'a2', title: 'Pasado simple irregular en Inglés A2', rationale: 'El cliente necesita contar que el motor stopped y que la tía bought el regalo; el pasado separa el hecho comprobable de la petición actual.' },
       { slug: 'first-conditional', level: 'a2', title: 'Primer condicional en Inglés A2', rationale: 'La solución depende de verificaciones reales: If the serial number matches, I can exchange it; la condición precede a la concesión.' },
       { slug: 'wh-questions', level: 'a1', title: 'Preguntas con WH en Inglés A1', rationale: 'What, why, who y when sostienen la aclaración de la política y convierten el cierre en acciones verificables.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'Can I check, what can you do y I can offer sostienen permiso, capacidad y opciones sin prometer un resultado antes de verificar.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'Does it work, do you have y does the serial number match permiten comprobar el fallo y la evidencia disponible.' },
+      { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'La política y el cierre imponen pasos externos: la devolución tiene que volver al pago original y la caja debe estar completa.' },
     ],
   },
   {
@@ -280,6 +283,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_1: RoleplayScenario[] = [
       { slug: 'will-future', level: 'a2', title: 'Will para decisiones en Inglés A2', rationale: 'El reparto se decide durante la conversación: I’ll build, I’ll check, we’ll present; no son planes previos sino compromisos de este momento.' },
       { slug: 'have-to-must', level: 'a2', title: 'Have to y must en Inglés A2', rationale: 'Las restricciones externas de hora, enlaces y revisión de datos se expresan como necesidades, no como preferencias.' },
       { slug: 'comparatives', level: 'a2', title: 'Comparativos en Inglés A2', rationale: 'La carta obliga a comparar más diapositivas con menos práctica y a elegir una versión más corta bajo un nuevo horario.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'Can you take, I can present y I can’t build expresan reparto posible y límites de capacidad bajo presión.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'Which point does the client need y do we have permiten priorizar contenido antes de diseñar.' },
+      { slug: 'present-continuous-future-a2', level: 'a2', title: 'Present continuous para futuro en Inglés A2', rationale: 'La llamada del cliente y el nuevo horario son planes cerrados que reordenan tareas y práctica.' },
     ],
   },
   {
@@ -420,6 +426,9 @@ export const ROLEPLAY_INGLES_A2_BATCH_1: RoleplayScenario[] = [
       { slug: 'first-conditional', level: 'a2', title: 'Primer condicional en Inglés A2', rationale: 'El cierre aplazado necesita dos ramas reales: if the paper arrives y if it does not; cada una lleva una acción concreta.' },
       { slug: 'quantifiers', level: 'a2', title: 'Cuantificadores en Inglés A2', rationale: 'At least forty, all two hundred y the rest permiten separar el mínimo operativo del pedido completo.' },
       { slug: 'comparatives', level: 'a2', title: 'Comparativos en Inglés A2', rationale: 'La alternativa enfrenta papel lighter y cheaper con una calidad de marca inferior, haciendo explícito el intercambio.' },
+      { slug: 'can-ability', level: 'a1', title: 'Can y can’t en Inglés A1', rationale: 'Can I see, we can use y I can’t promise organizan evidencia, opciones y el límite del proveedor.' },
+      { slug: 'present-simple-questions', level: 'a1', title: 'Preguntas en presente simple en Inglés A1', rationale: 'What is wrong, which paper works y does the color match permiten que la muestra, no una opinión, dirija la decisión.' },
+      { slug: 'will-future', level: 'a2', title: 'Will para decisiones en Inglés A2', rationale: 'La llamada, el checkpoint y la división 40/160 se convierten en compromisos tomados durante la negociación.' },
     ],
   },
 ]
