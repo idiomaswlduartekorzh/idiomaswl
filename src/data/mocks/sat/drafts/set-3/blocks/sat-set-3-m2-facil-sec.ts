@@ -30,7 +30,7 @@ export const items: MCQQuestion[] = [
   },
   {
     id: 'q19', type: 'mcq', part: 1,
-    stimulus: 'Public health organizations have long used posters to pair memorable images with advice about preventing disease. One early campaign displayed many designs but repeated the same short slogan ______ “Covered wells, safer streets.” Because the phrase appeared in several visual settings, viewers could encounter the same advice on walls, in clinics, and at public exhibitions.',
+    stimulus: 'Public health organizations have long used posters to pair memorable images with advice about preventing disease. One early campaign displayed many designs but repeatedly featured the same short ______ “Covered wells, safer streets.” Because the phrase appeared in several visual settings, viewers could encounter the same advice on walls, in clinics, and at public exhibitions.',
     text: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
     options: ['slogan,', 'slogan;', 'slogan', 'slogan:'],
     answer: 3,

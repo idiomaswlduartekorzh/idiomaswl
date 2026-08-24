@@ -26,7 +26,7 @@ originales; cada estudiante responde 54 por intento y nunca recibe las dos ramas
 ## Loop de escala a 20
 
 El loop se abrió el **24 de agosto de 2026** en una rama aislada. `set-3` está reservado
-como borrador con 81 slots; 49 ya tienen contenido y ninguno aparece en el hub ni en el
+como borrador con 81 slots; 54 ya tienen contenido y ninguno aparece en el hub ni en el
 registro público. La
 receta operativa, los costes medidos y las puertas por vuelta viven en
 [`docs/sat-fabrica.md`](sat-fabrica.md).
@@ -36,9 +36,9 @@ de M1 de Set 3 está cerrada en `docs/sat-planes/sat-set-3-m1.md`: 27 temas, dif
 claves equilibradas. Sus cuatro bloques y el contenido M1 completo están APTOS; los 27
 ítems dan 23,0 % en la prueba ciega y cero coincidencias locales. Producto y acta formal
 siguen pendientes hasta tener ambas ramas M2. La matriz editorial de M2 estándar ya está
-cerrada con perfil 10/13/4; Craft and Structure q01–q08, Information and Ideas q09–q15 y
-Standard English Conventions q16–q22 están APTOS. La siguiente unidad es Expression of
-Ideas q23–q27.
+cerrada con perfil 10/13/4 y sus 27 ítems tienen contenido editorial APTO: ocho puertas
+mecánicas, 23,7 % de prueba ciega y cero coincidencias locales. El acta formal y el
+producto siguen bloqueados. La siguiente unidad es la matriz editorial de M2 exigente.
 Ningún set se promueve junto con otro ni se baja un umbral para sostener el ritmo.
 
 ## Blueprint de escala
