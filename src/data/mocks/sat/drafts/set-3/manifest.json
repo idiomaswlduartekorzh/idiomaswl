@@ -11,10 +11,10 @@
       "variant": "M1",
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-3/sat-set-3-m1.ts",
-      "writtenQuestions": 22,
-      "mechanicalGates": "PARTIAL_THREE_BLOCK_PASS",
-      "blindHeuristicsMeanPct": 22.2,
-      "editorialGates": "CS_II_SEC_PASS",
+      "writtenQuestions": 27,
+      "mechanicalGates": "PASS",
+      "blindHeuristicsMeanPct": 23.0,
+      "editorialGates": "PASS_CONTENT_ONLY",
       "productGate": "NOT_STARTED",
       "slots": [
         {
@@ -197,41 +197,41 @@
           "id": "q23",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "humanidades",
+          "status": "written"
         },
         {
           "id": "q24",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q25",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q26",
           "domain": "EOI",
           "type": "transitions",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q27",
           "domain": "EOI",
           "type": "transitions",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "literatura",
+          "status": "written"
         }
       ],
       "audit": {
