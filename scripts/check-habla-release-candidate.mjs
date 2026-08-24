@@ -5,12 +5,14 @@ import {
   ROLEPLAY_INGLES_B1_CANDIDATE,
   ROLEPLAY_COREANO_A2_CANDIDATE,
   ROLEPLAY_FRANCES_A2_CANDIDATE,
+  ROLEPLAY_DRAFT_SETS,
 } from '../src/data/practica/habla-acompanado/drafts/index.ts'
 import { KOREAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-coreano-a2.ts'
 import { ENGLISH_A1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a1.ts'
 import { ENGLISH_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a2.ts'
 import { ENGLISH_B1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-b1.ts'
 import { FRENCH_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-frances-a2.ts'
+import { ITALIAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-italiano-a2.ts'
 
 const progressOnly = process.argv.includes('--progress')
 const targetArg = process.argv.find((argument) => argument.startsWith('--target='))
@@ -43,10 +45,15 @@ const configurations = {
     scenarios: ROLEPLAY_FRANCES_A2_CANDIDATE,
     audits: FRENCH_A2_RELEASE_AUDITS,
   },
+  'italiano-a2': {
+    label: 'italiano A2',
+    scenarios: ROLEPLAY_DRAFT_SETS.find((set) => set.language === 'italiano' && set.level === 'a2')?.scenarios ?? [],
+    audits: ITALIAN_A2_RELEASE_AUDITS,
+  },
 }
 const configuration = configurations[target]
 if (!configuration) {
-  console.error(`Target de release desconocido: ${target}. Usa ingles-a1, ingles-a2, ingles-b1, coreano-a2 o frances-a2.`)
+  console.error(`Target de release desconocido: ${target}. Usa ingles-a1, ingles-a2, ingles-b1, coreano-a2, frances-a2 o italiano-a2.`)
   process.exit(1)
 }
 const newScenarios = configuration.scenarios
