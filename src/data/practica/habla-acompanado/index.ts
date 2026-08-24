@@ -1,6 +1,8 @@
 import { ROLEPLAY_INGLES_A1_CANDIDATE as ROLEPLAY_INGLES_A1 } from './drafts/index.ts'
 import { ROLEPLAY_INGLES_A2_CANDIDATE as ROLEPLAY_INGLES_A2 } from './drafts/index.ts'
 import { ROLEPLAY_INGLES_B1_CANDIDATE as ROLEPLAY_INGLES_B1 } from './drafts/index.ts'
+import { ROLEPLAY_COREANO_A2_CANDIDATE as ROLEPLAY_COREANO_A2 } from './drafts/index.ts'
+import { TOOLKIT_COREANO_A2 } from './toolkit-coreano-a2.ts'
 import { TOOLKIT_INGLES_A1 } from './toolkit-ingles-a1.ts'
 import { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 import { TOOLKIT_INGLES_B1 } from './toolkit-ingles-b1.ts'
@@ -17,6 +19,8 @@ export * from './types.ts'
 export { ROLEPLAY_INGLES_A1_CANDIDATE as ROLEPLAY_INGLES_A1 } from './drafts/index.ts'
 export { ROLEPLAY_INGLES_A2_CANDIDATE as ROLEPLAY_INGLES_A2 } from './drafts/index.ts'
 export { ROLEPLAY_INGLES_B1_CANDIDATE as ROLEPLAY_INGLES_B1 } from './drafts/index.ts'
+export { ROLEPLAY_COREANO_A2_CANDIDATE as ROLEPLAY_COREANO_A2 } from './drafts/index.ts'
+export { TOOLKIT_COREANO_A2 } from './toolkit-coreano-a2.ts'
 export { TOOLKIT_INGLES_A1 } from './toolkit-ingles-a1.ts'
 export { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 export { TOOLKIT_INGLES_B1 } from './toolkit-ingles-b1.ts'
@@ -96,6 +100,7 @@ export const ROLEPLAY_PUBLISHED_FLOORS: Partial<Record<RoleplaySetKey, number>> 
   'ingles-a1': 20,
   'ingles-a2': 20,
   'ingles-b1': 20,
+  'coreano-a2': 20,
 }
 
 /**
@@ -129,6 +134,12 @@ export const ROLEPLAY_SETS: RoleplaySet[] = [
     level: 'b1',
     scenarios: ROLEPLAY_INGLES_B1,
     toolkit: TOOLKIT_INGLES_B1,
+  },
+  {
+    language: 'coreano',
+    level: 'a2',
+    scenarios: ROLEPLAY_COREANO_A2,
+    toolkit: TOOLKIT_COREANO_A2,
   },
 ]
 

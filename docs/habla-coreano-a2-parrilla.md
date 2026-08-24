@@ -1,7 +1,8 @@
 # Habla acompañada · Coreano A2 · parrilla editorial 1–20
 
-Estado: **matriz cerrada; autoría todavía fuera del registro público.** Este es el primer
-conjunto de la fase 2 de [`habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md).
+Estado: **20 escenarios cerrados, 100 simulaciones aprobadas y conjunto integrado al registro
+público el 24 de agosto de 2026.** Este es el primer conjunto de la fase 2 de
+[`habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md).
 No es una traducción de Inglés A2: conserva las cinco familias y las puertas del motor, pero
 las relaciones, servicios, horarios y decisiones pertenecen a situaciones verosímiles en
 Corea. Las fichas usarán `해요체` como base; cada escenario declarará relación y jerarquía.
