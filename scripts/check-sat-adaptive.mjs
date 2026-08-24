@@ -22,6 +22,7 @@ import { createRequire } from 'node:module'
 const require = createRequire(import.meta.url)
 const ts = require('typescript')
 const cache = new Map()
+const catalogFile = path.resolve('src/data/mocks/sat/catalog.json')
 
 function loadTs(file) {
   const r = path.resolve(file)
@@ -56,12 +57,18 @@ function loadTs(file) {
 const fallos = []
 const fail = (m) => fallos.push(m)
 
-let routing, buildSatMock, m1
+let routing, buildSatMock, m1, publishedSets
 try {
   ;({ elegirRamaModulo2: routing } = loadTs('src/data/mocks/sat/routing.ts'))
   const r = loadTs('src/data/mocks/sat/routing.ts')
   ;({ buildSatMock } = loadTs('src/data/mocks/sat/build-sat-mock.ts'))
-  ;({ satSet1M1: m1 } = loadTs('src/data/mocks/sat/sat-set-1-m1.ts'))
+  const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf8'))
+  publishedSets = catalog.sets.filter((set) => set.status === 'published')
+  if (!publishedSets.length) throw new Error('catalog.json no declara ningún SAT publicado')
+  const firstM1 = publishedSets[0].modules?.find((module) => module.variant === 'M1')
+  if (!firstM1) throw new Error(`${publishedSets[0].id} no declara M1 en catalog.json`)
+  m1 = loadTs(firstM1.source)?.[firstM1.exportName]
+  if (!m1) throw new Error(`${firstM1.source} no exporta ${firstM1.exportName}`)
   var partesServidas = r.partesServidas
   var partesNavegables = r.partesNavegables
 } catch (err) {
@@ -233,15 +240,20 @@ function cordura(mock, quien) {
 
 cordura(adap, 'examen adaptativo de prueba')
 
-// Y sobre el set registrado de verdad, no solo sobre el de laboratorio. Antes se intentaba
-// cargar un `sat/index.ts` que no existe y la excepción se tragaba: el guardián podía decir
-// «enrutado correcto» sin haber mirado nunca `set-1`.
-try {
-  const real = loadTs('src/data/mocks/sat/sat-set-1.ts')?.satSet1
-  if (!real) fail('no se pudo cargar satSet1: el guardián no está probando el producto real')
-  else cordura(real, real.id)
-} catch (err) {
-  fail(`no se pudo auditar satSet1: ${err.message}`)
+// Y sobre TODOS los sets publicados, no solo sobre el laboratorio. La lista viene del
+// mismo catálogo que genera las tarjetas y el registro: publicar set-2 obliga a que este
+// bucle lo audite sin recordar añadir otro import a mano.
+for (const set of publishedSets) {
+  try {
+    const real = loadTs(set.source)?.[set.exportName]
+    if (!real) fail(`${set.id}: ${set.source} no exporta ${set.exportName}; no se está probando el producto real`)
+    else {
+      if (real.id !== set.id) fail(`${set.id}: el mock cargado declara id «${real.id}»`)
+      cordura(real, set.id)
+    }
+  } catch (err) {
+    fail(`${set.id}: no se pudo auditar el producto real: ${err.message}`)
+  }
 }
 
 console.log(`\n🔀 SAT — enrutado adaptativo\n`)
@@ -251,4 +263,4 @@ if (fallos.length) {
   process.exit(1)
 }
 console.log(`✅ Enrutado correcto en los ${m1.items.length + 1} resultados posibles del módulo 1.`)
-console.log(`   Corte: ${adap.adaptive.correctToRouteHigh} de ${m1.items.length}. Nunca se sirven las dos ramas.\n`)
+console.log(`   ${publishedSets.length} set(s) publicado(s) auditado(s). Corte: ${adap.adaptive.correctToRouteHigh} de ${m1.items.length}. Nunca se sirven las dos ramas.\n`)

@@ -121,9 +121,12 @@ if (!hub.includes('ExamCluster')) {
 // siguen recibiendo la promesa antigua, que fue exactamente lo que encontramos en producción.
 let fichaSat
 try { fichaSat = loadTs(EXAMS)?.EXAMS?.sat } catch (err) { fail('—', 'producto', `no se pudo cargar exams.ts: ${err.message}`) }
-const mockSat = fichaSat?.mocks?.find(m => m.id === 'set-1')
-if (!mockSat || mockSat.questions !== 54 || mockSat.parts !== 2) {
-  fail('—', 'producto', `la tarjeta SAT declara ${mockSat?.questions ?? '?'} preguntas y ${mockSat?.parts ?? '?'} partes; deben ser 54 y 2`)
+const mocksSat = fichaSat?.mocks ?? []
+if (!mocksSat.length) fail('—', 'producto', 'el catálogo no declara ningún simulacro SAT publicado')
+for (const mockSat of mocksSat) {
+  if (mockSat.questions !== 54 || mockSat.parts !== 2) {
+    fail('—', 'producto', `${mockSat.id} declara ${mockSat.questions ?? '?'} preguntas y ${mockSat.parts ?? '?'} partes; deben ser 54 y 2`)
+  }
 }
 const guiaMadre = fs.existsSync(EXAM_GUIDES) ? fs.readFileSync(EXAM_GUIDES, 'utf8') : ''
 for (const promesaVieja of ['No servimos un segundo módulo', 'un módulo completo: 27 preguntas']) {

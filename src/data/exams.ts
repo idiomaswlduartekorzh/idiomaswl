@@ -1,3 +1,5 @@
+import { SAT_MOCK_CARDS } from './mocks/sat/catalog.generated';
+
 export interface ExamSection {
   name: string;
   icon: string;
@@ -163,9 +165,7 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Módulo 1', icon: '📖', time: '32 min', questions: 27, color: '#6d28d9', types: ['Craft and Structure', 'Information and Ideas', 'Standard English Conventions', 'Expression of Ideas'] },
       { name: 'Módulo 2', icon: '📈', time: '32 min', questions: 27, color: '#8b5cf6', types: ['Se ajusta a tu resultado del módulo 1', 'Mismos cuatro dominios', 'Mismo formato, distinta exigencia'] },
     ],
-    mocks: [
-      { id: 'set-1', title: 'SAT · Reading and Writing adaptativo', subtitle: '54 preguntas · 64 minutos · el segundo módulo se ajusta a tu resultado', free: true, parts: 2, questions: 54 },
-    ],
+    mocks: SAT_MOCK_CARDS,
     available: true,
   },
   icfes: {
