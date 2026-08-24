@@ -6,11 +6,12 @@ Fuente de verdad de las decisiones pedagógicas de los juegos de rol para dos pe
 Si un agente y este documento se contradicen, manda este documento. Si este documento y lo
 que David decida se contradicen, manda David **y hay que corregir este documento**.
 
-Estado: **motor y primera cohorte integrados el 23 de agosto de 2026.** Hay ocho escenarios
-de inglés A2, dieciséis fichas separadas, caja común A2, rutas estáticas por rol y guardián
-estructural. La decisión de producto vigente es llevar el sistema a **20 prácticas por nivel,
-60 por idioma y 480 en total**. El piloto ya no es una puerta para decidir si se expande: es
-la primera cohorte de la expansión descrita en §13.
+Estado: **motor e Inglés completo integrados el 24 de agosto de 2026.** Producción sirve los
+60 escenarios de Inglés A1, A2 y B1, sus 120 fichas separadas, tres cajas propias, rutas
+estáticas por rol y guardián estructural. Coreano A2 abrió la fase 2 fuera del registro vivo.
+La decisión de producto vigente es llegar a **20 prácticas por nivel, 60 por idioma y 480 en
+total**. El piloto ya no es una puerta para decidir si se expande: es la primera cohorte de la
+expansión descrita en §13.
 
 ---
 
@@ -21,7 +22,7 @@ Al entrar en la destreza de habla el estudiante elige entre dos modos:
 | Modo | Con quién | Estado |
 |---|---|---|
 | **Habla solo** | Nadie. 20 frases con fonética y seguimiento local. | Conservado en `/habla/solo` |
-| **Habla acompañada** | **Otra persona real**: un compañero, el profesor, un amigo, la pareja. | 8 de 480 escenarios publicados; meta cerrada en §1.1 |
+| **Habla acompañada** | **Otra persona real**: un compañero, el profesor, un amigo, la pareja. | 60 de 480 escenarios publicados; meta cerrada en §1.1 |
 
 Cerrado y no se rediscute salvo que David lo reabra:
 
@@ -46,7 +47,7 @@ elección y dos fichas privadas —A y B—, pero cuenta una sola vez en el cat�
 
 | Idioma | Slug | A1 | A2 | B1 | Total | Publicado hoy | Pendiente |
 |---|---|---:|---:|---:|---:|---:|---:|
-| Inglés | `ingles` | 20 | 20 | 20 | 60 | 8 | 52 |
+| Inglés | `ingles` | 20 | 20 | 20 | 60 | 60 | 0 |
 | Coreano | `coreano` | 20 | 20 | 20 | 60 | 0 | 60 |
 | Francés | `frances` | 20 | 20 | 20 | 60 | 0 | 60 |
 | Italiano | `italiano` | 20 | 20 | 20 | 60 | 0 | 60 |
@@ -54,7 +55,7 @@ elección y dos fichas privadas —A y B—, pero cuenta una sola vez en el cat�
 | Alemán | `aleman` | 20 | 20 | 20 | 60 | 0 | 60 |
 | Ruso | `ruso` | 20 | 20 | 20 | 60 | 0 | 60 |
 | Japonés | `japones` | 20 | 20 | 20 | 60 | 0 | 60 |
-| **Total** | — | **160** | **160** | **160** | **480** | **8** | **472** |
+| **Total** | — | **160** | **160** | **160** | **480** | **60** | **420** |
 
 La meta ejecutable incluye además:
 
@@ -65,9 +66,9 @@ La meta ejecutable incluye además:
   estas 480: son otro modo y otra experiencia.
 
 Un conjunto nuevo no se publica con 3, 8 o 15 escenarios «para ir llenando». Se prepara fuera
-del registro vivo y entra cuando tiene 20 y pasa todas las puertas. La única excepción temporal
-es inglés A2, porque sus ocho escenarios ya están publicados; su siguiente hito es pasar de 8 a
-20 de una vez.
+del registro vivo y entra cuando tiene 20 y pasa todas las puertas. La excepción histórica fue
+Inglés A2, que nació con ocho escenarios; quedó cerrada al publicar los veinte el 23 de agosto
+de 2026. Desde entonces no existe ningún conjunto parcial en el registro vivo.
 
 ## 2. Anatomía de un escenario
 
@@ -515,8 +516,9 @@ la secuencia exacta `1..20`.
 `npm run check:habla-acompanada` deja de importar `ROLEPLAY_INGLES_A2` y recorre el registro.
 Mantiene dos mapas explícitos:
 
-- **Piso publicado:** cuenta mínima por conjunto que nunca puede bajar. Empieza con
-  `ingles-a2: 8`; al publicar veinte cambia a 20. Añadir un conjunto nuevo lo incorpora con 20.
+- **Piso publicado:** cuenta mínima por conjunto que nunca puede bajar. Nació con
+  `ingles-a2: 8`; los tres conjuntos ingleses están ahora en 20. Añadir un conjunto nuevo lo
+  incorpora directamente con 20.
 - **Meta:** las 24 combinaciones, todas con 20. Permite medir avance sin fingir que un borrador
   ya está publicado.
 
