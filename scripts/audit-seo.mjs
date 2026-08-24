@@ -1,39 +1,32 @@
 #!/usr/bin/env node
 /**
- * Auditoría de la red interna del sitio, contra producción.
+ * Auditoría SEO de producción. Depende de red y, por diseño, NO corre en prebuild.
  *
- * Nace de la Fase 0 del plan (docs/PLAN-ATAQUE-SEO-FASES.md): «red verificada al
- * 100 %» no puede ser una comprobación única, porque cada despliegue puede
- * romperla. Esto se ejecuta y falla ruidosamente.
- *
- * Comprueba seis cosas que ya fallaron de verdad en este sitio:
- *
- *   1. Huérfanas         — una URL en el sitemap sin ningún enlace entrante no se
- *                          rastrea. /clases-de-ingles-bucaramanga tuvo 1 impresión
- *                          en 12 días por esto.
- *   2. Callejones        — las páginas de destreza tenían 0 o 1 enlaces salientes;
- *                          Google dejó 470 páginas en «Descubierta: sin indexar».
- *   3. Paridad de FAQs   — el FAQPage escrito aparte diverge del texto visible.
- *                          Pasó en el hub de Bucaramanga.
- *   4. 404 con historial — 75 URLs indexadas devolvían 404 tras renombrar slugs.
- *   5. Host único        — el 307 en vez de 308 mantuvo 35 URLs indexadas sin www.
- *   6. Cadenas           — una redirección que apunta a otra pierde señal.
+ * Comprueba señales que ya fallaron en el sitio: respuestas del sitemap, páginas
+ * huérfanas, callejones internos, paridad FAQ, URLs críticas, host único y cadenas.
  *
  * Uso:
- *   node scripts/audit-seo.mjs                 # todo
- *   node scripts/audit-seo.mjs --quick         # sin el grafo completo (rápido)
+ *   npm run audit:seo:prod
+ *   npm run audit:seo:prod:quick
  *   node scripts/audit-seo.mjs --base=http://localhost:3000
- *
- * Sale con código 1 si algo falla, para poder encadenarlo antes de desplegar.
  */
 
-const args = process.argv.slice(2);
-const BASE = (args.find(a => a.startsWith('--base=')) || '--base=https://www.idiomaswl.com').split('=')[1];
-const QUICK = args.includes('--quick');
-const CONCURRENCY = 10;
+import dns from 'node:dns';
+import { compareFaqParity } from './lib/seo-audit-utils.mjs';
 
-/** URLs que tuvieron impresiones alguna vez. Se amplía al exportar Search Console. */
-const URLS_CON_HISTORIAL = [
+// Evita falsos bloqueos de Undici cuando el resolver entrega primero una ruta IPv6
+// sin salida en runners que sí tienen conectividad IPv4.
+dns.setDefaultResultOrder('ipv4first');
+
+const args = process.argv.slice(2);
+const BASE = (args.find((arg) => arg.startsWith('--base='))?.split('=').slice(1).join('=') || 'https://www.idiomaswl.com').replace(/\/$/, '');
+const QUICK = args.includes('--quick');
+const CONCURRENCY = 4;
+const REQUEST_TIMEOUT_MS = 30_000;
+const REQUEST_ATTEMPTS = 3;
+
+/** Muestra explícita de URLs con historial confirmado. Se amplía con exportes URL-level de GSC. */
+const URLS_CRITICAS = [
   '/practica/ingles/a1/gramatica/verbo-to-be',
   '/practica/ingles/a1/gramatica/preposiciones-de-lugar',
   '/practica/italiano/a1/gramatica/la-negacion',
@@ -45,170 +38,253 @@ const URLS_CON_HISTORIAL = [
 
 const problemas = [];
 const fallo = (regla, detalle) => problemas.push({ regla, detalle });
+const cache = new Map();
 
 async function mapLimit(items, limit, fn) {
-  const out = [];
-  let i = 0;
-  await Promise.all(
-    Array.from({ length: Math.min(limit, items.length) }, async () => {
-      while (i < items.length) {
-        const n = i++;
-        try { out[n] = await fn(items[n]); } catch { out[n] = null; }
-      }
-    })
-  );
+  const out = new Array(items.length);
+  let nextIndex = 0;
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (nextIndex < items.length) {
+      const index = nextIndex++;
+      out[index] = await fn(items[index]);
+    }
+  }));
   return out;
 }
 
-async function head(url) {
-  try {
-    const r = await fetch(url, { redirect: 'manual' });
-    return { status: r.status, location: r.headers.get('location') };
-  } catch { return { status: 0, location: null }; }
-}
+async function request(url, { follow = false } = {}) {
+  const key = `${follow ? 'follow' : 'manual'}:${url}`;
+  if (cache.has(key)) return cache.get(key);
 
-async function text(url) {
-  try {
-    const r = await fetch(url);
-    return r.ok ? await r.text() : '';
-  } catch { return ''; }
-}
-
-const rutasDe = html => [...html.matchAll(/href="(\/[^"#?]*)"/g)].map(m => m[1]);
-
-// ─────────────────────────────────────────────────────────────────────────────
-
-async function sitemap() {
-  const xml = await text(`${BASE}/sitemap.xml`);
-  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-  return locs.map(u => u.replace(/^https?:\/\/[^/]+/, '') || '/');
-}
-
-/** 5 · Un solo host canónico: el dominio sin www debe hacer 308, no 307. */
-async function checkHost() {
-  const { status, location } = await head('https://idiomaswl.com/');
-  if (status !== 308 && status !== 301) {
-    fallo('host-unico', `idiomaswl.com responde ${status} (se espera 308 o 301). Un 307 es temporal y mantiene ambas versiones indexadas.`);
-  }
-  if (location && !location.includes('www.')) {
-    fallo('host-unico', `la redirección no apunta a www: ${location}`);
-  }
-}
-
-/** 4 · Ninguna URL con historial de impresiones puede devolver 404. */
-async function check404() {
-  const res = await mapLimit(URLS_CON_HISTORIAL, CONCURRENCY, async p => ({ p, ...(await head(BASE + p)) }));
-  for (const r of res) {
-    if (!r) continue;
-    if (r.status === 404) fallo('404-con-historial', `${r.p} devuelve 404 y tuvo impresiones`);
-  }
-}
-
-/** 6 · Una redirección no debe apuntar a otra redirección. */
-async function checkCadenas() {
-  const res = await mapLimit(URLS_CON_HISTORIAL, CONCURRENCY, async p => {
-    const a = await head(BASE + p);
-    if (a.status < 300 || a.status >= 400 || !a.location) return null;
-    const destino = a.location.startsWith('http') ? a.location : BASE + a.location;
-    const b = await head(destino);
-    return b.status >= 300 && b.status < 400 ? { p, destino, status: b.status } : null;
-  });
-  for (const r of res) if (r) fallo('cadena-de-redireccion', `${r.p} -> ${r.destino} -> ${r.status}`);
-}
-
-/** 3 · Las FAQs visibles deben coincidir con las del FAQPage. */
-async function checkFaqs(rutas) {
-  const candidatas = rutas.filter(p => /^\/(examenes\/[a-z0-9-]+|clases-de-[a-z0-9-]+|quienes-somos)$/.test(p));
-  const res = await mapLimit(candidatas, CONCURRENCY, async p => {
-    const html = await text(BASE + p);
-    if (!html) return null;
-    let enSchema = 0;
-    for (const m of html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) {
+  const pending = (async () => {
+    let lastError = 'sin respuesta';
+    for (let attempt = 1; attempt <= REQUEST_ATTEMPTS; attempt += 1) {
       try {
-        const d = JSON.parse(m[1]);
-        for (const n of d['@graph'] || [d]) {
-          if (n['@type'] === 'FAQPage') enSchema = n.mainEntity.length;
+        const response = await fetch(url, {
+          redirect: follow ? 'follow' : 'manual',
+          signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+          headers: { 'user-agent': 'IdiomasWL-SEO-Audit/1.0' },
+        });
+        return {
+          status: response.status,
+          location: response.headers.get('location'),
+          body: await response.text(),
+          error: null,
+        };
+      } catch (error) {
+        const cause = error instanceof Error && error.cause && typeof error.cause === 'object'
+          ? `: ${error.cause.code ?? error.cause.message ?? String(error.cause)}`
+          : '';
+        lastError = `${error instanceof Error ? error.message : String(error)}${cause}`;
+        if (attempt < REQUEST_ATTEMPTS) {
+          await new Promise((resolve) => setTimeout(resolve, attempt * 250));
         }
-      } catch { /* marcado no parseable: se reporta abajo */ }
+      }
     }
-    if (!enSchema) return null;
-    // Las FAQs visibles se pintan como <details> o como bloques con clase faq-q
-    const visibles = (html.match(/<details/g) || []).length || (html.match(/wlh-faq-q/g) || []).length;
-    return { p, enSchema, visibles };
-  });
-  for (const r of res) {
-    if (!r) continue;
-    if (r.visibles !== r.enSchema) {
-      fallo('paridad-faq', `${r.p}: ${r.visibles} visibles vs ${r.enSchema} en el schema`);
+    return { status: 0, location: null, body: '', error: lastError };
+  })();
+
+  cache.set(key, pending);
+  return pending;
+}
+
+const normalizePath = (value) => {
+  const path = value.replace(/\/$/, '') || '/';
+  return path.startsWith('/') ? path : `/${path}`;
+};
+
+function internalRoutes(html) {
+  const routes = [];
+  for (const match of html.matchAll(/href=["']([^"'#?]+)["']/gi)) {
+    try {
+      const url = new URL(match[1], `${BASE}/`);
+      if (url.origin === new URL(BASE).origin) routes.push(normalizePath(url.pathname));
+    } catch {
+      // Un href inválido pertenece a otra auditoría de HTML.
+    }
+  }
+  return routes;
+}
+
+async function readSitemap() {
+  const response = await request(`${BASE}/sitemap.xml`, { follow: true });
+  if (response.status !== 200) {
+    const detail = response.status || response.error || 'sin respuesta';
+    throw new Error(`sitemap.xml no respondió 200 (${detail})`);
+  }
+
+  const absoluteUrls = [...response.body.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].trim());
+  if (!absoluteUrls.length) throw new Error('sitemap.xml no contiene URLs');
+
+  const seen = new Set();
+  const entries = [];
+  for (const absoluteUrl of absoluteUrls) {
+    let parsed;
+    try {
+      parsed = new URL(absoluteUrl);
+    } catch {
+      fallo('sitemap-invalido', `URL inválida: ${absoluteUrl}`);
+      continue;
+    }
+    if (seen.has(absoluteUrl)) fallo('sitemap-duplicado', absoluteUrl);
+    seen.add(absoluteUrl);
+    if (new URL(BASE).hostname === 'www.idiomaswl.com' && parsed.origin !== 'https://www.idiomaswl.com') {
+      fallo('sitemap-host', `${absoluteUrl} no usa el host canónico`);
+    }
+    entries.push({ absoluteUrl, path: normalizePath(parsed.pathname) });
+  }
+  return entries;
+}
+
+/** El dominio desnudo debe consolidar autoridad en www con redirección permanente. */
+async function checkHost() {
+  if (new URL(BASE).hostname !== 'www.idiomaswl.com') return;
+  const response = await request('https://idiomaswl.com/');
+  if (![301, 308].includes(response.status)) {
+    fallo('host-unico', `idiomaswl.com responde ${response.status || response.error} (se espera 301 o 308)`);
+  }
+  if (!response.location || new URL(response.location, 'https://idiomaswl.com/').hostname !== 'www.idiomaswl.com') {
+    fallo('host-unico', `la redirección no apunta a www: ${response.location || 'sin Location'}`);
+  }
+}
+
+/** Toda URL publicada en sitemap debe responder directamente 200. */
+async function checkSitemapResponses(entries) {
+  const sample = QUICK ? entries.filter((_, index) => index % 10 === 0) : entries;
+  const responses = await mapLimit(sample, CONCURRENCY, async (entry) => ({ entry, response: await request(`${BASE}${entry.path}`) }));
+
+  for (const { entry, response } of responses) {
+    if (response.status === 200) continue;
+    if (response.status === 0) fallo('sitemap-red', `${entry.path}: ${response.error || 'sin respuesta'}`);
+    else if (response.status >= 500) fallo('sitemap-5xx', `${entry.path} devuelve ${response.status}`);
+    else if (response.status === 404) fallo('sitemap-404', `${entry.path} devuelve 404`);
+    else if (response.status >= 300 && response.status < 400) fallo('sitemap-redireccion', `${entry.path} devuelve ${response.status} → ${response.location || 'sin Location'}`);
+    else fallo('sitemap-no-200', `${entry.path} devuelve ${response.status}`);
+  }
+}
+
+/** Las sondas con historial no pueden quedar inaccesibles, aunque no estén en sitemap. */
+async function checkCriticalUrls() {
+  const responses = await mapLimit(URLS_CRITICAS, CONCURRENCY, async (path) => ({ path, response: await request(BASE + path) }));
+  for (const { path, response } of responses) {
+    if (response.status === 0 || response.status === 404 || response.status >= 500) {
+      fallo('url-critica-inaccesible', `${path} devuelve ${response.status || response.error}`);
     }
   }
 }
 
-/** 2 · Ninguna página de práctica puede tener menos de 5 enlaces salientes. */
-async function checkCallejones(rutas) {
-  const practica = rutas.filter(p => /^\/practica\/[a-z]+\/(a1|a2|b1|b2)\/[a-z-]+$/.test(p));
-  const muestra = QUICK ? practica.filter((_, i) => i % 7 === 0) : practica;
-  const res = await mapLimit(muestra, CONCURRENCY, async p => {
-    const html = await text(BASE + p);
-    if (!html) return null;
-    const n = new Set(rutasDe(html).filter(h => /^\/(practica|clases-de|examenes)/.test(h))).size;
-    return { p, n };
+/** Una sonda que redirige no debe apuntar a otra redirección. */
+async function checkRedirectChains() {
+  const results = await mapLimit(URLS_CRITICAS, CONCURRENCY, async (path) => {
+    const first = await request(BASE + path);
+    if (first.status < 300 || first.status >= 400 || !first.location) return null;
+    const destination = new URL(first.location, BASE + path).toString();
+    const second = await request(destination);
+    return second.status >= 300 && second.status < 400 ? { path, destination, status: second.status } : null;
   });
-  for (const r of res) if (r && r.n < 5) fallo('callejon-sin-salida', `${r.p} solo tiene ${r.n} enlaces salientes`);
-}
-
-/** 1 · Toda URL del sitemap debe recibir al menos un enlace interno. */
-async function checkHuerfanas(rutas) {
-  const entrantes = new Set();
-  const paginas = QUICK ? rutas.filter((_, i) => i % 5 === 0) : rutas;
-  await mapLimit(paginas, CONCURRENCY, async p => {
-    for (const h of rutasDe(await text(BASE + p))) entrantes.add(h.replace(/\/$/, '') || '/');
-  });
-  for (const p of rutas) {
-    const clave = p.replace(/\/$/, '') || '/';
-    if (!entrantes.has(clave)) fallo('huerfana', `${p} no recibe ningún enlace interno`);
+  for (const result of results) {
+    if (result) fallo('cadena-de-redireccion', `${result.path} → ${result.destination} → ${result.status}`);
   }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
+/** Compara preguntas, no el número bruto de <details>; otras funciones también usan details. */
+async function checkFaqs(paths) {
+  const candidates = paths.filter((path) => /^\/(examenes\/[a-z0-9-]+|clases-de-[a-z0-9-]+|quienes-somos)$/.test(path));
+  const results = await mapLimit(candidates, CONCURRENCY, async (path) => {
+    const response = await request(BASE + path);
+    if (response.status !== 200) return null;
+    const parity = compareFaqParity(response.body);
+    return parity.schema.length ? { path, ...parity } : null;
+  });
 
-const rutas = await sitemap();
-if (!rutas.length) {
-  console.error('No se pudo leer el sitemap. ¿Está el sitio arriba?');
+  for (const result of results) {
+    if (!result || (!result.missingVisible.length && !result.missingSchema.length)) continue;
+    const details = [
+      result.missingVisible.length ? `faltan visibles: ${result.missingVisible.slice(0, 2).join(' | ')}` : '',
+      result.missingSchema.length ? `faltan en schema: ${result.missingSchema.slice(0, 2).join(' | ')}` : '',
+    ].filter(Boolean).join('; ');
+    fallo('paridad-faq', `${result.path}: ${details}`);
+  }
+}
+
+/** Ninguna página de práctica publicada debe tener menos de cinco enlaces útiles. */
+async function checkDeadEnds(paths) {
+  const practice = paths.filter((path) => /^\/practica\/[a-z]+\/(a1|a2|b1|b2)\/[a-z-]+$/.test(path));
+  const sample = QUICK ? practice.filter((_, index) => index % 7 === 0) : practice;
+  const results = await mapLimit(sample, CONCURRENCY, async (path) => {
+    const response = await request(BASE + path);
+    if (response.status !== 200) return null;
+    const links = new Set(internalRoutes(response.body).filter((href) => /^\/(practica|clases-de|examenes)/.test(href)));
+    return { path, count: links.size };
+  });
+  for (const result of results) {
+    if (result && result.count < 5) fallo('callejon-sin-salida', `${result.path} solo tiene ${result.count} enlaces salientes`);
+  }
+}
+
+/** En modo completo, toda URL de sitemap debe recibir al menos un enlace interno. */
+async function checkOrphans(paths) {
+  const incoming = new Set();
+  await mapLimit(paths, CONCURRENCY, async (path) => {
+    const response = await request(BASE + path);
+    if (response.status !== 200) return;
+    for (const href of internalRoutes(response.body)) incoming.add(href);
+  });
+  for (const path of paths) {
+    if (!incoming.has(path)) fallo('huerfana', `${path} no recibe ningún enlace interno`);
+  }
+}
+
+let entries;
+try {
+  entries = await readSitemap();
+} catch (error) {
+  console.error(`No se pudo auditar ${BASE}: ${error instanceof Error ? error.message : error}`);
   process.exit(1);
 }
-console.log(`Auditando ${BASE} — ${rutas.length} URLs en el sitemap${QUICK ? ' (modo rápido)' : ''}\n`);
+
+const paths = [...new Set(entries.map((entry) => entry.path))];
+console.log(`Auditando ${BASE} — ${entries.length} URLs en el sitemap${QUICK ? ' (muestra rápida)' : ''}\n`);
 
 await checkHost();
-await check404();
-await checkCadenas();
-await checkFaqs(rutas);
-await checkCallejones(rutas);
-if (!QUICK) await checkHuerfanas(rutas);
+await checkSitemapResponses(entries);
+await checkCriticalUrls();
+await checkRedirectChains();
+await checkFaqs(paths);
+await checkDeadEnds(paths);
+if (!QUICK) await checkOrphans(paths);
 
-const REGLAS = {
-  'host-unico': '5 · Un solo host canónico',
-  '404-con-historial': '4 · URLs con historial que devuelven 404',
-  'cadena-de-redireccion': '6 · Cadenas de redirección',
-  'paridad-faq': '3 · Paridad entre FAQs visibles y schema',
-  'callejon-sin-salida': '2 · Callejones sin salida',
-  huerfana: '1 · Páginas huérfanas',
+const RULES = {
+  'host-unico': 'Host canónico único',
+  'sitemap-invalido': 'URLs inválidas en sitemap',
+  'sitemap-duplicado': 'URLs duplicadas en sitemap',
+  'sitemap-host': 'Host incorrecto en sitemap',
+  'sitemap-red': 'Errores de red en sitemap',
+  'sitemap-5xx': 'Errores 5xx en sitemap',
+  'sitemap-404': 'Errores 404 en sitemap',
+  'sitemap-redireccion': 'Redirecciones dentro del sitemap',
+  'sitemap-no-200': 'Respuestas no 200 en sitemap',
+  'url-critica-inaccesible': 'URLs críticas inaccesibles',
+  'cadena-de-redireccion': 'Cadenas de redirección',
+  'paridad-faq': 'Paridad entre FAQs visibles y schema',
+  'callejon-sin-salida': 'Callejones sin salida',
+  huerfana: 'Páginas huérfanas',
 };
 
 if (!problemas.length) {
-  console.log('Sin problemas. La red interna está sana.');
+  console.log(`Sin problemas en ${QUICK ? 'la muestra rápida' : 'la auditoría completa'}.`);
   process.exit(0);
 }
 
-const porRegla = {};
-for (const p of problemas) (porRegla[p.regla] ||= []).push(p.detalle);
-
-for (const [regla, lista] of Object.entries(porRegla)) {
-  console.log(`\n${REGLAS[regla] ?? regla} — ${lista.length}`);
-  for (const d of lista.slice(0, 15)) console.log(`   ${d}`);
-  if (lista.length > 15) console.log(`   ... y ${lista.length - 15} más`);
+const byRule = problemas.reduce((groups, finding) => {
+  (groups[finding.regla] ??= []).push(finding);
+  return groups;
+}, {});
+for (const [rule, findings] of Object.entries(byRule)) {
+  console.log(`\n${RULES[rule] ?? rule} — ${findings.length}`);
+  for (const { detalle } of findings.slice(0, 15)) console.log(`   ${detalle}`);
+  if (findings.length > 15) console.log(`   ... y ${findings.length - 15} más`);
 }
 
 console.log(`\nTotal: ${problemas.length} problemas.`);
-console.log('Nota: la raíz "/" aparece como huérfana a propósito mientras la home siga en /home.');
 process.exit(1);
