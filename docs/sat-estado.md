@@ -38,9 +38,9 @@ claves equilibradas. Sus cuatro bloques y el contenido M1 completo están APTOS;
 siguen pendientes hasta tener ambas ramas M2. La matriz editorial de M2 estándar ya está
 cerrada con perfil 10/13/4 y sus 27 ítems tienen contenido editorial APTO: ocho puertas
 mecánicas, 23,7 % de prueba ciega y cero coincidencias locales. El acta formal y el
-producto siguen bloqueados. La matriz de M2 exigente está cerrada con perfil 5/9/13 y
-Craft and Structure q01–q08 está APTO. La siguiente unidad es Information and Ideas
-q09–q15 de esa rama.
+producto siguen bloqueados. La matriz de M2 exigente está cerrada con perfil 5/9/13;
+Craft and Structure q01–q08 e Information and Ideas q09–q15 están APTOS, 15/27. La
+siguiente unidad es Standard English Conventions q16–q22 de esa rama.
 Ningún set se promueve junto con otro ni se baja un umbral para sostener el ritmo.
 
 ## Blueprint de escala
