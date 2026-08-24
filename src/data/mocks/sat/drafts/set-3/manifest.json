@@ -1,23 +1,21 @@
 {
   "schemaVersion": 1,
   "id": "set-3",
-  "status": "draft",
-  "publishable": false,
+  "status": "published",
+  "publishable": true,
   "studentQuestions": 54,
   "authoredQuestionsRequired": 81,
-  "candidateFile": "src/data/mocks/sat/drafts/set-3/sat-set-3.ts",
-  "candidateExport": "satSet3Candidate",
   "modules": [
     {
       "id": "sat-set-3-m1",
       "variant": "M1",
-      "status": "draft",
-      "contentFile": "src/data/mocks/sat/drafts/set-3/sat-set-3-m1.ts",
+      "status": "published",
+      "contentFile": "src/data/mocks/sat/sat-set-3-m1.ts",
       "writtenQuestions": 27,
       "mechanicalGates": "PASS",
       "blindHeuristicsMeanPct": 23.0,
-      "editorialGates": "PASS_CONTENT_ONLY",
-      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
+      "editorialGates": "PASS_WITH_DECLARED_LIMITS",
+      "productGate": "PASS",
       "slots": [
         {
           "id": "q01",
@@ -237,25 +235,25 @@
         }
       ],
       "audit": {
-        "key": "PENDING",
-        "bias": "PENDING",
-        "fairness": "PENDING",
-        "language": "PENDING",
-        "difficulty": "PENDING",
-        "originality": "PENDING",
-        "simulation": "PENDING"
+        "key": "APTO-NO-INDEPENDIENTE",
+        "bias": "APTO-AUTOMATICO",
+        "fairness": "APTO-NO-INDEPENDIENTE",
+        "language": "APTO-NO-INDEPENDIENTE",
+        "difficulty": "APTO-MATRIZ",
+        "originality": "APTO-CON-LIMITES",
+        "simulation": "APTO-AUTOMATICO"
       }
     },
     {
       "id": "sat-set-3-m2-facil",
       "variant": "M2-facil",
-      "status": "draft",
-      "contentFile": "src/data/mocks/sat/drafts/set-3/sat-set-3-m2-facil.ts",
+      "status": "published",
+      "contentFile": "src/data/mocks/sat/sat-set-3-m2-facil.ts",
       "writtenQuestions": 27,
       "mechanicalGates": "PASS",
       "blindHeuristicsMeanPct": 23.7,
-      "editorialGates": "PASS_CONTENT_ONLY",
-      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
+      "editorialGates": "PASS_WITH_DECLARED_LIMITS",
+      "productGate": "PASS",
       "slots": [
         {
           "id": "q01",
@@ -475,25 +473,25 @@
         }
       ],
       "audit": {
-        "key": "PENDING",
-        "bias": "PENDING",
-        "fairness": "PENDING",
-        "language": "PENDING",
-        "difficulty": "PENDING",
-        "originality": "PENDING",
-        "simulation": "PENDING"
+        "key": "APTO-NO-INDEPENDIENTE",
+        "bias": "APTO-AUTOMATICO",
+        "fairness": "APTO-NO-INDEPENDIENTE",
+        "language": "APTO-NO-INDEPENDIENTE",
+        "difficulty": "APTO-MATRIZ",
+        "originality": "APTO-CON-LIMITES",
+        "simulation": "APTO-AUTOMATICO"
       }
     },
     {
       "id": "sat-set-3-m2-dificil",
       "variant": "M2-dificil",
-      "status": "draft",
-      "contentFile": "src/data/mocks/sat/drafts/set-3/sat-set-3-m2-dificil.ts",
+      "status": "published",
+      "contentFile": "src/data/mocks/sat/sat-set-3-m2-dificil.ts",
       "writtenQuestions": 27,
       "mechanicalGates": "PASS",
       "blindHeuristicsMeanPct": 24.3,
-      "editorialGates": "PASS_CONTENT_ONLY",
-      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
+      "editorialGates": "PASS_WITH_DECLARED_LIMITS",
+      "productGate": "PASS",
       "slots": [
         {
           "id": "q01",
@@ -713,13 +711,13 @@
         }
       ],
       "audit": {
-        "key": "PENDING",
-        "bias": "PENDING",
-        "fairness": "PENDING",
-        "language": "PENDING",
-        "difficulty": "PENDING",
-        "originality": "PENDING",
-        "simulation": "PENDING"
+        "key": "APTO-NO-INDEPENDIENTE",
+        "bias": "APTO-AUTOMATICO",
+        "fairness": "APTO-NO-INDEPENDIENTE",
+        "language": "APTO-NO-INDEPENDIENTE",
+        "difficulty": "APTO-MATRIZ",
+        "originality": "APTO-CON-LIMITES",
+        "simulation": "APTO-AUTOMATICO"
       }
     }
   ]

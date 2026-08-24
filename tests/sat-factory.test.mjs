@@ -74,32 +74,39 @@ test('la prueba ciega puede medir módulos que todavía viven en drafts', () => 
   assert.match(result.stdout, /ítems acertados por ≥75 % de las heurísticas: ninguno/)
 })
 
-test('los tres módulos publicados del set 2 conservan todas las puertas y la progresión adaptativa', () => {
-  const manifest = JSON.parse(fs.readFileSync(path.join(
-    ROOT, 'src/data/mocks/sat/drafts/set-2/manifest.json',
-  ), 'utf8'))
-  const means = {}
+test('cada manifiesto publicado conserva sus puertas y progresión adaptativa', () => {
+  const draftsDir = path.join(ROOT, 'src/data/mocks/sat/drafts')
+  const manifests = fs.readdirSync(draftsDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => path.join(draftsDir, entry.name, 'manifest.json'))
+    .filter((file) => fs.existsSync(file))
+    .map((file) => JSON.parse(fs.readFileSync(file, 'utf8')))
+    .filter((manifest) => manifest.status === 'published')
 
-  assert.equal(manifest.status, 'published')
-  assert.equal(manifest.publishable, true)
+  assert.ok(manifests.length > 0)
+  for (const manifest of manifests) {
+    const means = {}
+    assert.equal(manifest.publishable, true, manifest.id)
+    assert.equal(manifest.modules.length, 3, manifest.id)
 
-  for (const publishedModule of manifest.modules) {
-    assert.equal(publishedModule.status, 'published')
-    assert.equal(publishedModule.writtenQuestions, 27)
-    assert.equal(publishedModule.mechanicalGates, 'PASS')
-    assert.equal(publishedModule.editorialGates, 'PASS_WITH_DECLARED_LIMITS')
-    assert.equal(publishedModule.productGate, 'PASS')
-    assert.equal(publishedModule.slots.filter((slot) => slot.status === 'written').length, 27)
-    means[publishedModule.variant] = publishedModule.slots.reduce((sum, slot) => sum + slot.difficulty, 0) / 27
+    for (const publishedModule of manifest.modules) {
+      assert.equal(publishedModule.status, 'published', publishedModule.id)
+      assert.equal(publishedModule.writtenQuestions, 27, publishedModule.id)
+      assert.equal(publishedModule.mechanicalGates, 'PASS', publishedModule.id)
+      assert.equal(publishedModule.editorialGates, 'PASS_WITH_DECLARED_LIMITS', publishedModule.id)
+      assert.equal(publishedModule.productGate, 'PASS', publishedModule.id)
+      assert.equal(publishedModule.slots.filter((slot) => slot.status === 'written').length, 27, publishedModule.id)
+      means[publishedModule.variant] = publishedModule.slots.reduce((sum, slot) => sum + slot.difficulty, 0) / 27
 
-    const result = spawnSync(process.execPath, [
-      'scripts/check-sat-exam.mjs', '--module', publishedModule.id,
-    ], { cwd: ROOT, encoding: 'utf8' })
-    assert.equal(result.status, 0, result.stderr || result.stdout)
+      const result = spawnSync(process.execPath, [
+        'scripts/check-sat-exam.mjs', '--module', publishedModule.id,
+      ], { cwd: ROOT, encoding: 'utf8' })
+      assert.equal(result.status, 0, result.stderr || result.stdout)
+    }
+
+    assert.ok(means['M2-facil'] < means.M1, `${manifest.id}: ${JSON.stringify(means)}`)
+    assert.ok(means['M2-dificil'] > means.M1, `${manifest.id}: ${JSON.stringify(means)}`)
   }
-
-  assert.ok(means['M2-facil'] < means.M1, JSON.stringify(means))
-  assert.ok(means['M2-dificil'] > means.M1, JSON.stringify(means))
 })
 
 test('ningún módulo SAT reutiliza secuencias internas de ocho palabras', () => {
@@ -111,15 +118,16 @@ test('ningún módulo SAT reutiliza secuencias internas de ocho palabras', () =>
   assert.match(result.stdout, /sin coincidencias de 8\+ palabras/)
 })
 
-test('el set 2 publicado supera el contrato adaptativo desde el catálogo', () => {
+test('todos los sets publicados superan el contrato adaptativo desde el catálogo', () => {
   const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf8'))
-  assert.equal(catalog.sets.find((set) => set.id === 'set-2')?.status, 'published')
+  const published = catalog.sets.filter((set) => set.status === 'published')
+  assert.ok(published.length > 0)
   const result = spawnSync(process.execPath, ['scripts/check-sat-adaptive.mjs'], {
     cwd: ROOT,
     encoding: 'utf8',
   })
   assert.equal(result.status, 0, result.stderr || result.stdout)
-  assert.match(result.stdout, /2 set\(s\) publicado\(s\) auditado\(s\)/)
+  assert.match(result.stdout, new RegExp(`${published.length} set\\(s\\) publicado\\(s\\) auditado\\(s\\)`))
 })
 
 test('cada borrador que declara candidato supera el contrato de producto sin publicarse', () => {

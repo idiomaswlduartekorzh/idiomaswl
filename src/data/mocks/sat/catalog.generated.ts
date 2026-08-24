@@ -16,4 +16,12 @@ export const SAT_MOCK_CARDS = [
     parts: 2,
     questions: 54,
   },
+  {
+    id: 'set-3',
+    title: 'SAT · Reading and Writing adaptativo — Set 3',
+    subtitle: '54 preguntas nuevas · 64 minutos · el segundo módulo se ajusta a tu resultado',
+    free: true,
+    parts: 2,
+    questions: 54,
+  },
 ];

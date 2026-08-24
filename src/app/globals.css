@@ -2382,7 +2382,10 @@ button {
 }
 @media (max-width: 768px) {
   .prac-body { grid-template-columns: 1fr; }
-  .prac-sidebar { order: -1; }
+  /* En móvil la pregunta es la tarea principal. El panel de 27 accesos rápidos
+     va después para no obligar a recorrer una cuadrícula completa antes de leer
+     y responder el primer ítem. Tampoco debe quedar pegado como un bloque alto. */
+  .prac-sidebar { order: initial; position: static; }
 }
 
 /* Question main area */
