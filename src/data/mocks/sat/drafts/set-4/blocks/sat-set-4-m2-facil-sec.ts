@@ -29,7 +29,7 @@ export const items: MCQQuestion[] = [
   },
   {
     id: 'q19', type: 'mcq', part: 1,
-    stimulus: 'An inventory from a small printing shop names three styles of type that the owner kept in separate ______ roman, italic, and blackletter.',
+    stimulus: 'The document bears an 1842 date. An inventory from a small printing shop names three styles of type that the owner kept in separate ______ roman, italic, and blackletter.',
     text: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
     options: ['cases;', 'cases', 'cases:', 'cases,'],
     answer: 2,

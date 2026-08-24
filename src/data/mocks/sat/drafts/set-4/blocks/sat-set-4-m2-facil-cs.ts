@@ -52,7 +52,7 @@ export const items: MCQQuestion[] = [
     id: 'q07', type: 'mcq', part: 1,
     stimulus: 'Text 1\n\nA new edition of a novelist’s draft should print her margin notes beside the passages they address. Readers can then see abandoned word choices and questions at the exact point where they influenced revision. Moving the notes to an appendix would separate evidence of composition from the sentences that prompted it.\n\nText 2\n\nMargin notes can illuminate revision, but placing every note beside the main text may interrupt a first reading of the novel. A clear edition can preserve the draft’s pages in facsimile and provide a linked appendix. Readers who want the compositional record can follow it, while others can encounter the narrative without constant editorial signals.',
     text: 'Based on the texts, how would the author of Text 2 most likely respond to the proposal in Text 1?',
-    options: ['By denying that margin notes provide any evidence about how a novelist revised', 'By agreeing that notes belong beside the text even if they make the narrative difficult to follow', 'By using a linked appendix to keep notes accessible without placing every one in the reading text', 'By recommending that the notes be discarded once a clean version of the novel is available'],
+    options: ['By denying that margin notes provide any evidence about how a novelist revised', 'By agreeing that notes belong beside the text even if they make the narrative difficult to follow', 'By preserving the notes in a cross-referenced supplement instead of inserting each one into the narrative', 'By recommending that the notes be discarded once a clean version of the novel is available'],
     answer: 2,
   },
   {
@@ -104,7 +104,7 @@ export const meta: SatItemMeta[] = [
   { id: 'q07', domain: 'CS', tipo: 'cross-text-connections', dificultad: 2, tema: 'literatura', razones: {
     A: 'Text 2 acepta que las notas iluminan la revisión; discrepa sobre dónde presentarlas.',
     B: 'Text 2 rechaza colocar todas junto al texto porque pueden interrumpir una primera lectura.',
-    C: 'Correcta: responde con facsímil y apéndice enlazado, preservando acceso sin insertar cada señal editorial en la narración.',
+    C: 'Correcta: responde con un suplemento enlazado, preservando el acceso sin insertar cada señal editorial en la narración.',
     D: 'Text 2 quiere conservar las notas y hacerlas consultables; no propone eliminarlas.',
   }, fuenteHecho: 'Ambos textos editoriales son originales.' },
   { id: 'q08', domain: 'CS', tipo: 'cross-text-connections', dificultad: 3, tema: 'ciencia', razones: {
