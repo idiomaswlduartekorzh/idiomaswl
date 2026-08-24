@@ -18,11 +18,9 @@ import {
   Sparkles,
   Volume2,
 } from 'lucide-react'
-import type { AdvancedQuestion } from '@/data/practica/advanced-topics'
-import { ADVANCED_CYCLE, FRAMING_LESSON } from '@/data/practica/advanced-topics'
+import type { AdvancedLesson, AdvancedQuestion } from '@/data/practica/advanced-topics'
+import { ADVANCED_CYCLE } from '@/data/practica/advanced-topics'
 import styles from './AdvancedLesson.module.css'
-
-const STORAGE_KEY = 'wl-advanced-framing-v1'
 
 interface SavedLessonState {
   stage: number
@@ -79,7 +77,8 @@ function QuestionBlock({
   )
 }
 
-export default function AdvancedLessonClient() {
+export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesson }) {
+  const storageKey = `wl-advanced-${lesson.slug}-v1`
   const [stage, setStage] = useState(0)
   const [completed, setCompleted] = useState<number[]>([])
   const [openingChoice, setOpeningChoice] = useState<number | null>(null)
@@ -92,7 +91,7 @@ export default function AdvancedLessonClient() {
   const [practiceAnswers, setPracticeAnswers] = useState<Record<string, number>>({})
   const [revealedWords, setRevealedWords] = useState<string[]>([])
   const [draft, setDraft] = useState('')
-  const [checks, setChecks] = useState<boolean[]>(FRAMING_LESSON.production.checklist.map(() => false))
+  const [checks, setChecks] = useState<boolean[]>(lesson.production.checklist.map(() => false))
   const [showModel, setShowModel] = useState(false)
   const [hydrated, setHydrated] = useState(false)
   const contentRef = useRef<HTMLDivElement>(null)
@@ -100,14 +99,14 @@ export default function AdvancedLessonClient() {
   useEffect(() => {
     setSpeechSupported(typeof window !== 'undefined' && 'speechSynthesis' in window)
     try {
-      const raw = window.localStorage.getItem(STORAGE_KEY)
+      const raw = window.localStorage.getItem(storageKey)
       if (raw) {
         const saved = JSON.parse(raw) as SavedLessonState
         setStage(Math.min(Math.max(saved.stage ?? 0, 0), ADVANCED_CYCLE.length - 1))
         setCompleted(saved.completed ?? [])
         setOpeningChoice(saved.openingChoice ?? null)
         setDraft(saved.draft ?? '')
-        setChecks(saved.checks?.length === FRAMING_LESSON.production.checklist.length ? saved.checks : checks)
+        setChecks(saved.checks?.length === lesson.production.checklist.length ? saved.checks : checks)
       }
     } catch {
       // A damaged local draft should never block the lesson.
@@ -121,14 +120,14 @@ export default function AdvancedLessonClient() {
   useEffect(() => {
     if (!hydrated) return
     const state: SavedLessonState = { stage, completed, openingChoice, draft, checks }
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
-  }, [checks, completed, draft, hydrated, openingChoice, stage])
+    window.localStorage.setItem(storageKey, JSON.stringify(state))
+  }, [checks, completed, draft, hydrated, openingChoice, stage, storageKey])
 
   const progress = Math.round((completed.length / ADVANCED_CYCLE.length) * 100)
-  const allPracticeAnswered = FRAMING_LESSON.practice.every((question) => practiceAnswers[question.id] !== undefined)
+  const allPracticeAnswered = lesson.practice.questions.every((question) => practiceAnswers[question.id] !== undefined)
   const practiceScore = useMemo(
-    () => FRAMING_LESSON.practice.filter((question) => practiceAnswers[question.id] === question.answer).length,
-    [practiceAnswers],
+    () => lesson.practice.questions.filter((question) => practiceAnswers[question.id] === question.answer).length,
+    [lesson.practice.questions, practiceAnswers],
   )
 
   const selectStage = (nextStage: number) => {
@@ -146,7 +145,7 @@ export default function AdvancedLessonClient() {
   const speak = () => {
     if (!window.speechSynthesis) return
     window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(FRAMING_LESSON.listening.script)
+    const utterance = new SpeechSynthesisUtterance(lesson.listening.script)
     utterance.lang = 'en-US'
     utterance.rate = 0.88
     const voices = window.speechSynthesis.getVoices()
@@ -164,7 +163,7 @@ export default function AdvancedLessonClient() {
 
   const resetLesson = () => {
     window.speechSynthesis?.cancel()
-    window.localStorage.removeItem(STORAGE_KEY)
+    window.localStorage.removeItem(storageKey)
     setStage(0)
     setCompleted([])
     setOpeningChoice(null)
@@ -176,7 +175,7 @@ export default function AdvancedLessonClient() {
     setPracticeAnswers({})
     setRevealedWords([])
     setDraft('')
-    setChecks(FRAMING_LESSON.production.checklist.map(() => false))
+    setChecks(lesson.production.checklist.map(() => false))
     setShowModel(false)
   }
 
@@ -188,15 +187,15 @@ export default function AdvancedLessonClient() {
           <span aria-hidden="true">/</span>
           <Link href="/practica/ideas-avanzadas">Ideas avanzadas</Link>
           <span aria-hidden="true">/</span>
-          <span>Efecto de encuadre</span>
+          <span>{lesson.breadcrumbTitle}</span>
         </nav>
 
         <header className={styles.hero}>
           <div>
-            <p className="wlp-eyebrow">Ciclo 01 · sesgos · {FRAMING_LESSON.level}</p>
-            <h1>{FRAMING_LESSON.title}</h1>
-            <p className={styles.subtitle}>{FRAMING_LESSON.subtitle}</p>
-            <p className={styles.objective}>{FRAMING_LESSON.objective}</p>
+            <p className="wlp-eyebrow">Ciclo {String(lesson.sequence).padStart(2, '0')} · {lesson.category.toLowerCase()} · {lesson.level}</p>
+            <h1>{lesson.title}</h1>
+            <p className={styles.subtitle}>{lesson.subtitle}</p>
+            <p className={styles.objective}>{lesson.objective}</p>
           </div>
           <div className={styles.progressCard}>
             <div className={styles.progressTop}>
@@ -238,17 +237,17 @@ export default function AdvancedLessonClient() {
             <span>{String(stage + 1).padStart(2, '0')}</span>
             <p>de 06</p>
             <div aria-hidden="true" />
-            <small>{FRAMING_LESSON.minutes} min en total</small>
+            <small>{lesson.minutes} min en total</small>
           </aside>
 
           <section className={styles.stageContent} key={stage}>
             {stage === 0 && (
               <>
                 <p className={styles.stageEyebrow}>Orientar · responde antes de estudiar</p>
-                <h2>¿Qué versión te inspira más confianza?</h2>
-                <p className={styles.instruction}>No calcules demasiado. Registra tu primera reacción.</p>
+                <h2>{lesson.opening.title}</h2>
+                <p className={styles.instruction}>{lesson.opening.instruction}</p>
                 <div className={styles.frameChoice}>
-                  {FRAMING_LESSON.opening.options.map((option, index) => (
+                  {lesson.opening.options.map((option, index) => (
                     <button
                       className={openingChoice === index ? styles.frameSelected : ''}
                       key={option}
@@ -259,7 +258,7 @@ export default function AdvancedLessonClient() {
                       type="button"
                       aria-pressed={openingChoice === index}
                     >
-                      <span>Frame {index === 0 ? 'A' : 'B'}</span>
+                      <span>Opción {String.fromCharCode(65 + index)}</span>
                       <strong>{option}</strong>
                     </button>
                   ))}
@@ -273,8 +272,8 @@ export default function AdvancedLessonClient() {
                   <div className={styles.insight} role="status">
                     <Lightbulb size={22} />
                     <div>
-                      <strong>El número no cambió.</strong>
-                      <p>{FRAMING_LESSON.opening.reveal}</p>
+                      <strong>{lesson.opening.revealTitle}</strong>
+                      <p>{lesson.opening.reveal}</p>
                     </div>
                   </div>
                 )}
@@ -284,14 +283,12 @@ export default function AdvancedLessonClient() {
             {stage === 1 && (
               <>
                 <p className={styles.stageEyebrow}>Escuchar · idea principal y detalle</p>
-                <h2>{FRAMING_LESSON.listening.title}</h2>
-                <p className={styles.instruction}>
-                  Escucha una vez sin transcripción. En la segunda escucha, toma dos notas: <em>how frames work</em> y <em>one defense</em>.
-                </p>
+                <h2>{lesson.listening.title}</h2>
+                <p className={styles.instruction}>{lesson.listening.instruction}</p>
                 <div className={styles.audioPanel}>
                   <div className={styles.audioIcon}><Volume2 size={24} /></div>
                   <div>
-                    <strong>Audio en inglés · 1:25 aprox.</strong>
+                    <strong>Audio en inglés · {lesson.listening.duration}</strong>
                     <small>Voz del navegador · velocidad 0.88×</small>
                   </div>
                   {speechSupported ? (
@@ -307,9 +304,9 @@ export default function AdvancedLessonClient() {
                   {showTranscript ? 'Ocultar transcripción' : 'Mostrar transcripción'}
                   <ChevronDown className={showTranscript ? styles.chevronOpen : ''} size={17} />
                 </button>
-                {showTranscript && <p className={styles.transcript}>{FRAMING_LESSON.listening.script}</p>}
+                {showTranscript && <p className={styles.transcript}>{lesson.listening.script}</p>}
                 <div className={styles.questionStack}>
-                  {FRAMING_LESSON.listening.questions.map((question) => (
+                  {lesson.listening.questions.map((question) => (
                     <QuestionBlock
                       key={question.id}
                       question={question}
@@ -324,10 +321,10 @@ export default function AdvancedLessonClient() {
             {stage === 2 && (
               <>
                 <p className={styles.stageEyebrow}>Leer · evidencia, lenguaje y límites</p>
-                <h2>{FRAMING_LESSON.reading.title}</h2>
-                <p className={styles.readingDek}>{FRAMING_LESSON.reading.dek}</p>
+                <h2>{lesson.reading.title}</h2>
+                <p className={styles.readingDek}>{lesson.reading.dek}</p>
                 <article className={styles.reading} lang="en">
-                  {FRAMING_LESSON.reading.sections.map((section, index) => (
+                  {lesson.reading.sections.map((section, index) => (
                     <section key={section.heading}>
                       <span>{String(index + 1).padStart(2, '0')}</span>
                       <h3>{section.heading}</h3>
@@ -335,10 +332,13 @@ export default function AdvancedLessonClient() {
                     </section>
                   ))}
                   <footer>
-                    Fuente conceptual:{' '}
-                    <a href={FRAMING_LESSON.reading.source.href} target="_blank" rel="noreferrer">
-                      {FRAMING_LESSON.reading.source.label}
-                    </a>. El texto pedagógico es una síntesis original de WeLearn.
+                    Fuentes conceptuales:{' '}
+                    {lesson.reading.sources.map((source, index) => (
+                      <span key={source.href}>
+                        {index > 0 && ' · '}
+                        <a href={source.href} target="_blank" rel="noreferrer">{source.label}</a>
+                      </span>
+                    ))}. El texto pedagógico es una síntesis original de WeLearn.
                   </footer>
                 </article>
               </>
@@ -347,10 +347,10 @@ export default function AdvancedLessonClient() {
             {stage === 3 && (
               <>
                 <p className={styles.stageEyebrow}>Vocabulario · precisión antes que decoración</p>
-                <h2>Ocho palabras para desmontar un encuadre.</h2>
+                <h2>{lesson.vocabularyTitle}</h2>
                 <p className={styles.instruction}>Abre cada ficha, di el ejemplo en voz alta y crea un segundo ejemplo mental.</p>
                 <div className={styles.vocabGrid}>
-                  {FRAMING_LESSON.vocabulary.map((item) => {
+                  {lesson.vocabulary.map((item) => {
                     const isRevealed = revealedWords.includes(item.term)
                     return (
                       <button
@@ -377,11 +377,11 @@ export default function AdvancedLessonClient() {
 
             {stage === 4 && (
               <>
-                <p className={styles.stageEyebrow}>Practicar · equivalencia, agencia y matiz</p>
-                <h2>Que no te baste con reconocer la definición.</h2>
-                <p className={styles.instruction}>Responde las cuatro. Cada explicación señala qué debes inspeccionar.</p>
+                <p className={styles.stageEyebrow}>{lesson.practice.eyebrow}</p>
+                <h2>{lesson.practice.title}</h2>
+                <p className={styles.instruction}>{lesson.practice.instruction}</p>
                 <div className={styles.questionStack}>
-                  {FRAMING_LESSON.practice.map((question) => (
+                  {lesson.practice.questions.map((question) => (
                     <QuestionBlock
                       key={question.id}
                       question={question}
@@ -392,8 +392,8 @@ export default function AdvancedLessonClient() {
                 </div>
                 {allPracticeAnswered && (
                   <div className={styles.score} role="status">
-                    <strong>{practiceScore}/{FRAMING_LESSON.practice.length}</strong>
-                    <p>{practiceScore === FRAMING_LESSON.practice.length ? 'Distingues el número, el agente y el matiz.' : 'Revisa las explicaciones y vuelve a formular cada error con tus palabras.'}</p>
+                    <strong>{practiceScore}/{lesson.practice.questions.length}</strong>
+                    <p>{practiceScore === lesson.practice.questions.length ? lesson.practice.success : 'Revisa las explicaciones y vuelve a formular cada error con tus palabras.'}</p>
                   </div>
                 )}
               </>
@@ -402,20 +402,20 @@ export default function AdvancedLessonClient() {
             {stage === 5 && (
               <>
                 <p className={styles.stageEyebrow}>Producir · cerrar la órbita</p>
-                <h2>Ahora tú controlas el encuadre.</h2>
-                <p className={styles.productionPrompt}>{FRAMING_LESSON.production.prompt}</p>
-                <label className={styles.draftLabel} htmlFor="framing-draft">
-                  Tu reformulación en inglés
+                <h2>{lesson.production.title}</h2>
+                <p className={styles.productionPrompt}>{lesson.production.prompt}</p>
+                <label className={styles.draftLabel} htmlFor={`${lesson.slug}-draft`}>
+                  {lesson.production.draftLabel}
                   <span>{draft.trim() ? draft.trim().split(/\s+/).length : 0} palabras</span>
                 </label>
                 <textarea
-                  id="framing-draft"
+                  id={`${lesson.slug}-draft`}
                   value={draft}
                   onChange={(event) => setDraft(event.target.value)}
-                  placeholder="The policy keeps 96 out of every 100 users safe..."
+                  placeholder={lesson.production.placeholder}
                 />
                 <div className={styles.checklist}>
-                  {FRAMING_LESSON.production.checklist.map((item, index) => (
+                  {lesson.production.checklist.map((item, index) => (
                     <label key={item}>
                       <input
                         type="checkbox"
@@ -430,17 +430,17 @@ export default function AdvancedLessonClient() {
                 <button className={styles.modelButton} onClick={() => setShowModel((value) => !value)} type="button">
                   {showModel ? 'Ocultar modelo' : 'Comparar con un modelo'}
                 </button>
-                {showModel && <p className={styles.model}>{FRAMING_LESSON.production.model}</p>}
+                {showModel && <p className={styles.model}>{lesson.production.model}</p>}
 
                 <div className={styles.loopBack}>
                   <RotateCcw size={22} />
                   <div>
                     <span>Vuelve al comienzo</span>
-                    <h3>¿Cuál frame elegirías ahora?</h3>
-                    <p>No buscamos que cambies de opción. Buscamos que puedas explicar por qué ambas son equivalentes y qué información falta.</p>
+                    <h3>{lesson.opening.returnTitle}</h3>
+                    <p>{lesson.opening.returnPrompt}</p>
                   </div>
                   <div className={styles.returnOptions}>
-                    {FRAMING_LESSON.opening.options.map((option, index) => (
+                    {lesson.opening.options.map((option, index) => (
                       <button className={returnChoice === index ? styles.returnSelected : ''} key={option} onClick={() => setReturnChoice(index)} type="button">
                         <span>{index === 0 ? 'A' : 'B'}</span>{option}
                       </button>
@@ -448,7 +448,7 @@ export default function AdvancedLessonClient() {
                   </div>
                   {returnChoice !== null && (
                     <p className={styles.loopConclusion}>
-                      Al inicio elegiste <strong>{openingChoice === null ? 'sin registrar' : openingChoice === 0 ? 'A' : 'B'}</strong>; ahora elegiste <strong>{returnChoice === 0 ? 'A' : 'B'}</strong>. El aprendizaje está en la explicación: 90 de 100 sobreviven y 10 de 100 no.
+                      Al inicio elegiste <strong>{openingChoice === null ? 'sin registrar' : String.fromCharCode(65 + openingChoice)}</strong>; ahora elegiste <strong>{String.fromCharCode(65 + returnChoice)}</strong>. {lesson.opening.returnConclusion}
                     </p>
                   )}
                 </div>

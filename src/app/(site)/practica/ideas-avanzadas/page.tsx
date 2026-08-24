@@ -53,7 +53,7 @@ export default function AdvancedIdeasPage() {
               vocabulario, la pones a prueba y vuelves a formularla con más precisión.
             </p>
             <div className={styles.heroMeta} aria-label="Características del curso">
-              <span>{availableCount} ciclo completo disponible</span>
+              <span>{availableCount} ciclos completos disponibles</span>
               <span>6 movimientos por tema</span>
               <span>32–38 min</span>
             </div>
@@ -155,4 +155,3 @@ export default function AdvancedIdeasPage() {
     </main>
   )
 }
-
