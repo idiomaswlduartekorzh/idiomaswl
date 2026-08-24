@@ -13,13 +13,14 @@ recibe M1 y una sola rama de M2, por lo que responde 54 preguntas en 64 minutos.
 | Estado | Sets | Módulos | Preguntas autoradas | Preguntas servidas por intento |
 | --- | ---: | ---: | ---: | ---: |
 | Publicado al abrir este loop | 2 | 6 | 162 | 54 por set |
-| Trabajo restante | 18 | 54 | 1.458 | 54 por set |
+| Publicado actual | 3 | 9 | 243 | 54 por set |
+| Trabajo restante | 17 | 51 | 1.377 | 54 por set |
 | Meta | 20 | 60 | 1.620 | 54 por set |
 
 La primera producción midió aproximadamente **25 minutos por bloque de ocho ítems** para
 plan, textos, ítems y primera auditoría, sin contar correcciones. Un módulo requiere cuatro
-bloques operativos; los 54 módulos restantes tienen por tanto un piso optimista de unas
-90 horas antes de QA de producto. Esta cifra sirve para capacidad, no para saltarse pasos.
+bloques operativos; los 51 módulos restantes tienen por tanto un piso optimista de unas
+85 horas antes de QA de producto. Esta cifra sirve para capacidad, no para saltarse pasos.
 
 ## Regla de flujo
 
@@ -169,6 +170,6 @@ las páginas se cambia a carga por set; no se espera a que el Set 20 haga visibl
 
 ## Siguiente unidad de trabajo
 
-`set-3` está reservado como borrador. Su próxima tarea es completar la matriz editorial de
-M1 —dificultad, materia, tema y letras previstas— y cerrar el bloque Craft and Structure.
+`set-4` está reservado como borrador. Su próxima tarea es cerrar la matriz editorial de M1
+—dificultad, materia, tema y letras previstas— y después Craft and Structure q01–q08.
 Hasta entonces no tiene contenido publicable y no debe aparecer en el hub.

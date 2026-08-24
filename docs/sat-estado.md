@@ -1,6 +1,6 @@
 # SAT — estado de publicación
 
-Actualizado el **23 de agosto de 2026**.
+Actualizado el **24 de agosto de 2026**.
 
 ## Producto en producción
 
@@ -10,6 +10,9 @@ Actualizado el **23 de agosto de 2026**.
   minutos. Sirve M1 y exactamente una rama de M2.
 - `set-2`: segundo simulacro adaptativo completo, con otras 81 preguntas autoradas y 54
   servidas por intento. Superó guardianes, TypeScript, build y las dos rutas de navegador.
+- `set-3`: tercer simulacro adaptativo completo, con 81 preguntas nuevas. Pasó las doce
+  puertas editoriales, las 28 decisiones de enrutado, ambas ramas, móvil, preview remoto
+  y verificación HTTP posterior al despliegue desde `main`.
 - Corte de práctica WeLearn: 16 de 27 en M1. Es una convención explícita y no se presenta
   como el algoritmo privado de College Board.
 - Actas vigentes:
@@ -19,31 +22,24 @@ Actualizado el **23 de agosto de 2026**.
   - `docs/sat-auditorias/sat-set-2-m1.json`
   - `docs/sat-auditorias/sat-set-2-m2-facil.json`
   - `docs/sat-auditorias/sat-set-2-m2-dificil.json`
+  - `docs/sat-auditorias/sat-set-3-m1.json`
+  - `docs/sat-auditorias/sat-set-3-m2-facil.json`
+  - `docs/sat-auditorias/sat-set-3-m2-dificil.json`
 
-**Inventario:** hay **2 SAT completos publicados**, formados por 6 módulos y 162 preguntas
+**Inventario:** hay **3 SAT completos publicados**, formados por 9 módulos y 243 preguntas
 originales; cada estudiante responde 54 por intento y nunca recibe las dos ramas de M2.
 
 ## Loop de escala a 20
 
-El loop se abrió el **24 de agosto de 2026** en una rama aislada. `set-3` está reservado
-como borrador con 81 slots; 54 ya tienen contenido y ninguno aparece en el hub ni en el
-registro público. La
-receta operativa, los costes medidos y las puertas por vuelta viven en
-[`docs/sat-fabrica.md`](sat-fabrica.md).
+El loop se abrió el **24 de agosto de 2026** en una rama aislada. Set 3 completó el ciclo y
+se publicó desde `main` en el dominio real. `set-4` está ahora reservado como borrador de
+81 slots: no aparece en el hub ni en el registro ejecutable. Su primera unidad es la matriz
+editorial de M1 y después Craft and Structure q01–q08.
 
-La regla de avance es un set, un módulo y un bloque abiertos a la vez. La matriz editorial
-de M1 de Set 3 está cerrada en `docs/sat-planes/sat-set-3-m1.md`: 27 temas, dificultad y
-claves equilibradas. Sus cuatro bloques y el contenido M1 completo están APTOS; los 27
-ítems dan 23,0 % en la prueba ciega y cero coincidencias locales. Producto y acta formal
-siguen pendientes hasta tener ambas ramas M2. La matriz editorial de M2 estándar ya está
-cerrada con perfil 10/13/4 y sus 27 ítems tienen contenido editorial APTO: ocho puertas
-mecánicas, 23,7 % de prueba ciega y cero coincidencias locales. El acta formal y el
-producto siguen bloqueados. La matriz de M2 exigente está cerrada con perfil 5/9/13;
-M2 exigente ya tiene 27/27 y contenido editorial APTO con perfil 5/9/13. Los tres módulos
-de Set 3 están completos en `drafts`; el candidato ya superó enrutado, 54 preguntas por
-ruta, IDs y explicaciones de revisión. Quedan build y QA de interfaz, resultados y
-reintento antes de emitir actas formales.
-Ningún set se promueve junto con otro ni se baja un umbral para sostener el ritmo.
+La receta operativa, los costes medidos y las puertas por vuelta viven en
+[`docs/sat-fabrica.md`](sat-fabrica.md). La regla sigue siendo un set, un módulo y un bloque
+abiertos a la vez. Ningún set se promueve junto con otro ni se baja un umbral para sostener
+el ritmo.
 
 ## Blueprint de escala
 
@@ -68,7 +64,7 @@ Ningún set se promueve junto con otro ni se baja un umbral para sostener el rit
 - `npm run check:sat-superhub`: protege las diez páginas, sitemap, canonical, fuentes,
   enlaces internos, dominios y aviso de marca.
 - `node scripts/sat-blind-test.mjs --module <id> --heuristics`: panel reproducible de 18
-  atajos sin pasajes. La rama estándar dio 21,0 %; la exigente, 26,1 %; azar, 25 %.
+  atajos sin pasajes. En Set 3: M1 23,0 %, estándar 23,7 % y exigente 24,3 %; azar, 25 %.
 - `npm run check:sat-originality-local`: rechaza secuencias internas repetidas de ocho
   palabras entre estímulos y opciones, incluyendo candidatos en `drafts`.
 
@@ -83,6 +79,10 @@ El Set 2 usa la misma transparencia: segunda pasada de Codex, no independiente; 
 heurísticas sin pasaje (M1 23,7 %, estándar 26,1 %, exigente 23,0 %); cero coincidencias
 locales de ocho palabras. Su auditoría de producto recorrió ambas ramas en un build real,
 incluido móvil a 390 px, antes de firmar las actas como publicables.
+
+Set 3 mantiene esa limitación declarada. Además, su QA bloqueó los POST con datos ficticios
+para no crear leads reales, contó 54 explicaciones y corrigió el orden móvil para mostrar la
+pregunta antes del panel de 27 accesos rápidos.
 
 ## Antes de la siguiente publicación
 

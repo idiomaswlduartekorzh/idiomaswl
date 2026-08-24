@@ -5,15 +5,10 @@ en [`docs/sat-estado.md`](sat-estado.md); el registro de vueltas de abajo se con
 memoria editorial y no describe por sí solo la rama actual.
 
 **Reapertura del 24 ago 2026:** comenzó el loop de escala de 2 a 20 sets. La fase C0 quedó
-documentada en [`docs/sat-fabrica.md`](sat-fabrica.md) y `set-3` fue reservado como
-borrador de 81 slots. M1 ya tiene 27/27 y contenido editorial APTO; producto y acta formal
-siguen pendientes hasta completar ambas ramas M2. La matriz de M2 estándar ya está cerrada;
-M2 estándar ya tiene 27/27 y contenido editorial APTO. El acta formal sigue prohibida
-hasta completar M2 exigente y probar el producto adaptativo. Su matriz editorial 5/9/13
-está cerrada y M2 exigente ya tiene 27/27 con contenido editorial APTO. Los tres módulos
-de Set 3 están completos en `drafts`; el candidato pasó enrutado, 54 preguntas por ruta,
-IDs y explicaciones. Quedan build y QA visual de ambas rutas. Nada nuevo está publicado
-todavía.
+documentada en [`docs/sat-fabrica.md`](sat-fabrica.md). Set 3 completó 81/81 preguntas,
+tres actas con huellas, QA de ambas ramas y móvil, build remoto, rebase limpio y despliegue
+desde `main`. Producción muestra ahora tres SAT completos. Set 4 quedó reservado como el
+único borrador activo, con 81 slots vacíos y sin entrada ejecutable.
 
 - **Rama actual:** `codex/sat-finish-20260823`
 - **Cierre:** 23 ago 2026 · M1, M2 estándar y M2 exigente completos; diez páginas del
