@@ -1,6 +1,6 @@
 # SAT Set 3 · Módulo 2 estándar — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **PLANIFICADO, 0/27 escritos**.
+Fecha: 24 de agosto de 2026. Estado: **CRAFT AND STRUCTURE APTO, 8/27**.
 
 Esta rama la recibe quien logra 0–15 aciertos en M1. No es un módulo remedial ni una
 colección de regalos: conserva los cuatro dominios y las tres bandas, pero baja la media de

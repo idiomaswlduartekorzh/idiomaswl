@@ -8,7 +8,8 @@ memoria editorial y no describe por sí solo la rama actual.
 documentada en [`docs/sat-fabrica.md`](sat-fabrica.md) y `set-3` fue reservado como
 borrador de 81 slots. M1 ya tiene 27/27 y contenido editorial APTO; producto y acta formal
 siguen pendientes hasta completar ambas ramas M2. La matriz de M2 estándar ya está cerrada
-y la siguiente tarea es Craft and Structure q01–q08. Nada nuevo está publicado todavía.
+y Craft and Structure q01–q08 está APTO. La siguiente tarea es Information and Ideas
+q09–q15. Nada nuevo está publicado todavía.
 
 - **Rama actual:** `codex/sat-finish-20260823`
 - **Cierre:** 23 ago 2026 · M1, M2 estándar y M2 exigente completos; diez páginas del

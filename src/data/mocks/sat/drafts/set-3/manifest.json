@@ -248,70 +248,76 @@
       "id": "sat-set-3-m2-facil",
       "variant": "M2-facil",
       "status": "draft",
+      "contentFile": "src/data/mocks/sat/drafts/set-3/sat-set-3-m2-facil.ts",
+      "writtenQuestions": 8,
+      "mechanicalGates": "PARTIAL_BLOCK_PASS",
+      "blindHeuristicsMeanPct": 24.3,
+      "editorialGates": "CS_PASS_ONLY",
+      "productGate": "NOT_STARTED",
       "slots": [
         {
           "id": "q01",
           "domain": "CS",
           "type": "words-in-context",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q02",
           "domain": "CS",
           "type": "words-in-context",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "literatura",
+          "status": "written"
         },
         {
           "id": "q03",
           "domain": "CS",
           "type": "words-in-context",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q04",
           "domain": "CS",
           "type": "text-structure-purpose",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "humanidades",
+          "status": "written"
         },
         {
           "id": "q05",
           "domain": "CS",
           "type": "text-structure-purpose",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q06",
           "domain": "CS",
           "type": "text-structure-purpose",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q07",
           "domain": "CS",
           "type": "cross-text-connections",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "humanidades",
+          "status": "written"
         },
         {
           "id": "q08",
           "domain": "CS",
           "type": "cross-text-connections",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q09",
