@@ -1,6 +1,6 @@
 # SAT Set 4 · Módulo 2 exigente — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 8/27**.
+Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 15/27**.
 
 Esta rama la recibe quien queda en la banda alta de M1. Eleva densidad y razonamiento sin
 convertir adaptatividad en castigo: conserva cinco entradas fáciles, todos los dominios y
@@ -35,11 +35,11 @@ Tema, dificultad y clave se fijan antes de redactar.
 | --- | --- | ---: | --- | :---: | --- | --- |
 | q09 | central-ideas-details | 1 | humanidades | C | Audio descripción prioriza relaciones espaciales relevantes para la acción | Guía oficial; idea central no debe exigir describir cada detalle visual |
 | q10 | central-ideas-details | 3 | ciencia | A | Banco de semillas responde de forma desigual a intensidad y estación del fuego | Estudio primario; separar patrón observado de mecanismo no medido |
-| q11 | command-of-evidence-textual | 2 | historia | D | Recibos de provisiones apoyan tripulación con procedencias diversas | Archivo hipotético; evidencia debe nombrar personas o lugares, no solo cantidades |
+| q11 | command-of-evidence-textual | 2 | historia | D | Recibos de pago apoyan tripulación con procedencias diversas | Archivo hipotético; evidencia debe nombrar personas o lugares, no solo cantidades |
 | q12 | command-of-evidence-textual | 3 | historia | B | Reparaciones del pergamino preceden su incorporación a otra encuadernación | Conservación; evidencia estratigráfica y secuencia, no fecha exacta inventada |
 | q13 | command-of-evidence-quantitative | 3 | ciencia | C | Actividad de una enzima a cuatro temperaturas | Datos originales; unidades, pico y comparación exactos |
 | q14 | inferences | 2 | literatura | D | Marcas de prueba muestran que una impresora ficticia cambió el orden de dos escenas | Ficción original; inferencia basada en tachado y renumeración observables |
-| q15 | inferences | 3 | ciencia | A | Abejas liberan más polen de una flor cuando cambia la frecuencia de vibración | Estudio primario; inferir contribución bajo prueba, no preferencia natural universal |
+| q15 | inferences | 3 | ciencia | A | Flores liberan más polen al aumentar la amplitud de vibración controlada | Estudio primario; inferir contribución bajo prueba, no respuesta universal |
 
 ## Standard English Conventions · q16–q22
 
