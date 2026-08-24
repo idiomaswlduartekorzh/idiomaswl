@@ -72,4 +72,30 @@ export const ENGLISH_A2_RELEASE_AUDITS: RoleplayScenarioAudit[] = [
       { profile: 'shortcut', globalTurns: 8, wordsA: 76, wordsB: 81, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['visible test', 'supplier message', 'minimum quantity', 'if/if-not branches'], note: 'B intenta ordenar el papel ligero de inmediato, pero no puede cerrar el precio ni el mínimo sin la evidencia y la carta. Ocho turnos es el camino mínimo.' },
     ],
   },
+  {
+    slug: 'music-after-ten',
+    auditedAt: '2026-08-23',
+    source: 'Simulación editorial · tanda 2 · escenario 11',
+    verdict: 'pass',
+    runs: [
+      { profile: 'solid-solid', globalTurns: 14, wordsA: 126, wordsB: 119, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['bass at maximum', 'bedroom location', 'second complaint and open window', 'sound test and finish time'], note: 'B limita la queja a bajo+dormitorio y A ofrece parlante+ventana. La carta demuestra que moverlo sin cerrar la ventana no basta; hacen un test real antes del cierre.' },
+      { profile: 'solid-weak', globalTurns: 17, wordsA: 149, wordsB: 70, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['bass not voices', 'sleep by 10:30', 'speaker in back bedroom', 'test if still audible'], note: 'A sólido reformula vibration como low sound y propone dos controles. B flojo logra producir habitación, hora y test; no necesita recitar la norma completa.' },
+      { profile: 'weak-weak', globalTurns: 18, wordsA: 92, wordsB: 96, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['quiet hours', 'bass control', 'closed window', '11:30 finish'], note: 'Ambos empiezan con “music low”, pero el cierre los obliga a separar bajo, volumen y ventana. La pareja llega sin amenaza ni español gracias a bass, ceiling y speaker.' },
+      { profile: 'quiet', globalTurns: 13, wordsA: 112, wordsB: 34, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['B identifies bedroom', 'B says bass not voices', 'B gives sleep time', 'B requests test'], note: 'B no puede resolver con “please, lower”: debe localizar el dormitorio, excluir las voces, dar la hora y participar en el test.' },
+      { profile: 'shortcut', globalTurns: 8, wordsA: 72, wordsB: 77, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['quiet-hours boundary', 'card second complaint', 'speaker and window changes', 'bedroom verification'], note: 'El atajista propone volume 3 en el segundo turno, pero la complicación de otra fachada impide cerrar sin comprobar ventana y bajo. Ocho turnos globales es el mínimo.' },
+    ],
+  },
+  {
+    slug: 'the-courtyard-is-for-everyone',
+    auditedAt: '2026-08-23',
+    source: 'Simulación editorial · tanda 2 · escenario 12',
+    verdict: 'pass',
+    runs: [
+      { profile: 'solid-solid', globalTurns: 16, wordsA: 141, wordsB: 136, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['valid reservation', 'two bicycle times', 'valve maintenance 5–6', 'two-stage table layout'], note: 'A no conoce los horarios de bicicleta y B no conoce la reserva hasta oírlos. La carta mueve la cuarta mesa y obliga a distinguir el plano antes/después del almuerzo.' },
+      { profile: 'solid-weak', globalTurns: 18, wordsA: 155, wordsB: 76, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['wide passage', '2:50 exit and 6:10 return', 'one-metre valve area', 'basement-door owner'], note: 'A sólido dibuja verbalmente tres zonas. B flojo usa medidas solo para explicar el giro y consigue producir sus dos tiempos y la condición de la puerta.' },
+      { profile: 'weak-weak', globalTurns: 18, wordsA: 99, wordsB: 95, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['three tables on tiles', 'emergency route clear', 'technician window', 'clear by seven'], note: 'La pareja confunde primero passage y entrance, pero vocabulario+datos permiten corregir el plano. El cierre idéntico detecta una silla todavía dentro de la ruta.' },
+      { profile: 'quiet', globalTurns: 14, wordsA: 117, wordsB: 38, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['B cannot use narrow turn', 'B states both travel times', 'B requests valve access', 'B names basement condition'], note: 'B debe producir geometría, dos horarios y condición; asentir al plano de A no abre la puerta del sótano ni protege el regreso.' },
+      { profile: 'shortcut', globalTurns: 9, wordsA: 84, wordsB: 80, reachesClosing: true, complicationAt: 5, noLeak: true, requiredPieces: ['reservation window', 'bike access slots', 'maintenance card', 'layout before and after lunch'], note: 'El atajista intenta poner tres mesas y dejar el paso en A2, pero no conoce el regreso ni la válvula. La carta fuerza un segundo plano y evita un cierre prematuro.' },
+    ],
+  },
 ]
