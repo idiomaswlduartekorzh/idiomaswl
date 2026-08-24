@@ -29,4 +29,6 @@ en el registro ejecutable por accidente.
   `docs/sat-auditorias/informes/sat-set-3-m1-eoi.md`.
 - M1 total: 27/27; contenido editorial APTO, producto todavía no evaluado.
 - M2 estándar y M2 exigente: 0/27.
-- Siguiente unidad autorizada: matriz editorial de M2 estándar.
+- M2 estándar: matriz editorial cerrada en
+  `docs/sat-planes/sat-set-3-m2-facil.md`; 0/27 escritos.
+- Siguiente bloque autorizado: M2 estándar Craft and Structure q01–q08.

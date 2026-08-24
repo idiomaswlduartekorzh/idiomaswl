@@ -35,8 +35,8 @@ La regla de avance es un set, un módulo y un bloque abiertos a la vez. La matri
 de M1 de Set 3 está cerrada en `docs/sat-planes/sat-set-3-m1.md`: 27 temas, dificultad y
 claves equilibradas. Sus cuatro bloques y el contenido M1 completo están APTOS; los 27
 ítems dan 23,0 % en la prueba ciega y cero coincidencias locales. Producto y acta formal
-siguen pendientes hasta tener ambas ramas M2. La siguiente unidad es la matriz editorial
-de M2 estándar.
+siguen pendientes hasta tener ambas ramas M2. La matriz editorial de M2 estándar ya está
+cerrada con perfil 10/13/4; la siguiente unidad es Craft and Structure q01–q08.
 Ningún set se promueve junto con otro ni se baja un umbral para sostener el ritmo.
 
 ## Blueprint de escala
