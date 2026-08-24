@@ -31,10 +31,10 @@ receta operativa, los costes medidos y las puertas por vuelta viven en
 [`docs/sat-fabrica.md`](sat-fabrica.md).
 
 La regla de avance es un set, un módulo y un bloque abiertos a la vez. La matriz editorial
-de M1 de Set 3 ya está cerrada en `docs/sat-planes/sat-set-3-m1.md`: 27 temas, dificultad y
-claves equilibradas, todavía 0 preguntas escritas. La siguiente unidad es verificar las
-fuentes y cerrar su bloque Craft and Structure. Ningún set se promueve junto con otro ni
-se baja un umbral para sostener el ritmo.
+de M1 de Set 3 está cerrada en `docs/sat-planes/sat-set-3-m1.md`: 27 temas, dificultad y
+claves equilibradas. Craft and Structure q01–q08 está APTO, con 25,0 % en la prueba ciega
+y cero coincidencias locales. La siguiente unidad es Information and Ideas q09–q15.
+Ningún set se promueve junto con otro ni se baja un umbral para sostener el ritmo.
 
 ## Blueprint de escala
 

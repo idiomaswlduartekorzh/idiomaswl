@@ -16,3 +16,11 @@ publicará mientras siga con `status: draft`.
 
 El guardián `npm run check:sat-catalog` impide que este borrador aparezca en el hub o
 en el registro ejecutable por accidente.
+
+## Avance
+
+- M1 Craft and Structure: 8/8 escritos y bloque APTO. Evidencia en
+  `docs/sat-auditorias/informes/sat-set-3-m1-cs.md`.
+- M1 total: 8/27.
+- M2 estándar y M2 exigente: 0/27.
+- Siguiente bloque autorizado: M1 Information and Ideas q09–q15.
