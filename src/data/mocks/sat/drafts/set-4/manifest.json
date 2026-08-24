@@ -252,216 +252,216 @@
           "id": "q01",
           "domain": "CS",
           "type": "words-in-context",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q02",
           "domain": "CS",
           "type": "words-in-context",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "literatura",
           "status": "empty"
         },
         {
           "id": "q03",
           "domain": "CS",
           "type": "words-in-context",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "historia",
           "status": "empty"
         },
         {
           "id": "q04",
           "domain": "CS",
           "type": "text-structure-purpose",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q05",
           "domain": "CS",
           "type": "text-structure-purpose",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "historia",
           "status": "empty"
         },
         {
           "id": "q06",
           "domain": "CS",
           "type": "text-structure-purpose",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "humanidades",
           "status": "empty"
         },
         {
           "id": "q07",
           "domain": "CS",
           "type": "cross-text-connections",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "literatura",
           "status": "empty"
         },
         {
           "id": "q08",
           "domain": "CS",
           "type": "cross-text-connections",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 3,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q09",
           "domain": "II",
           "type": "central-ideas-details",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "humanidades",
           "status": "empty"
         },
         {
           "id": "q10",
           "domain": "II",
           "type": "central-ideas-details",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q11",
           "domain": "II",
           "type": "command-of-evidence-textual",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "literatura",
           "status": "empty"
         },
         {
           "id": "q12",
           "domain": "II",
           "type": "command-of-evidence-textual",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "historia",
           "status": "empty"
         },
         {
           "id": "q13",
           "domain": "II",
           "type": "command-of-evidence-quantitative",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q14",
           "domain": "II",
           "type": "inferences",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "humanidades",
           "status": "empty"
         },
         {
           "id": "q15",
           "domain": "II",
           "type": "inferences",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 3,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q16",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "historia",
           "status": "empty"
         },
         {
           "id": "q17",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q18",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "humanidades",
           "status": "empty"
         },
         {
           "id": "q19",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "historia",
           "status": "empty"
         },
         {
           "id": "q20",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q21",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 3,
+          "topic": "humanidades",
           "status": "empty"
         },
         {
           "id": "q22",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 3,
+          "topic": "historia",
           "status": "empty"
         },
         {
           "id": "q23",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "humanidades",
           "status": "empty"
         },
         {
           "id": "q24",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 1,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q25",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "historia",
           "status": "empty"
         },
         {
           "id": "q26",
           "domain": "EOI",
           "type": "transitions",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 2,
+          "topic": "ciencia",
           "status": "empty"
         },
         {
           "id": "q27",
           "domain": "EOI",
           "type": "transitions",
-          "difficulty": null,
-          "topic": null,
+          "difficulty": 3,
+          "topic": "literatura",
           "status": "empty"
         }
       ],
