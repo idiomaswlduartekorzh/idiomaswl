@@ -1,19 +1,41 @@
 import process from 'node:process'
-import { ROLEPLAY_INGLES_A2_CANDIDATE } from '../src/data/practica/habla-acompanado/drafts/index.ts'
+import {
+  ROLEPLAY_INGLES_A1_CANDIDATE,
+  ROLEPLAY_INGLES_A2_CANDIDATE,
+} from '../src/data/practica/habla-acompanado/drafts/index.ts'
+import { ENGLISH_A1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a1.ts'
 import { ENGLISH_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a2.ts'
 
 const progressOnly = process.argv.includes('--progress')
+const targetArg = process.argv.find((argument) => argument.startsWith('--target='))
+const target = targetArg?.slice('--target='.length) ?? 'ingles-a2'
 const failures = []
 const expectedProfiles = ['solid-solid', 'solid-weak', 'weak-weak', 'quiet', 'shortcut']
-const newSequences = new Set([4, 7, 8, 11, 12, 14, 15, 16, 17, 18, 19, 20])
-const newScenarios = ROLEPLAY_INGLES_A2_CANDIDATE.filter((scenario) => newSequences.has(scenario.sequence))
+const configurations = {
+  'ingles-a1': {
+    label: 'inglés A1',
+    scenarios: ROLEPLAY_INGLES_A1_CANDIDATE,
+    audits: ENGLISH_A1_RELEASE_AUDITS,
+  },
+  'ingles-a2': {
+    label: 'inglés A2',
+    scenarios: ROLEPLAY_INGLES_A2_CANDIDATE.filter((scenario) => new Set([4, 7, 8, 11, 12, 14, 15, 16, 17, 18, 19, 20]).has(scenario.sequence)),
+    audits: ENGLISH_A2_RELEASE_AUDITS,
+  },
+}
+const configuration = configurations[target]
+if (!configuration) {
+  console.error(`Target de release desconocido: ${target}. Usa ingles-a1 o ingles-a2.`)
+  process.exit(1)
+}
+const newScenarios = configuration.scenarios
 
 function fail(message) {
   failures.push(message)
 }
 
-const auditsBySlug = new Map(ENGLISH_A2_RELEASE_AUDITS.map((audit) => [audit.slug, audit]))
-if (auditsBySlug.size !== ENGLISH_A2_RELEASE_AUDITS.length) fail('Hay slugs de auditoría repetidos.')
+const auditsBySlug = new Map(configuration.audits.map((audit) => [audit.slug, audit]))
+if (auditsBySlug.size !== configuration.audits.length) fail('Hay slugs de auditoría repetidos.')
 
 for (const scenario of newScenarios) {
   const audit = auditsBySlug.get(scenario.slug)
@@ -41,17 +63,17 @@ for (const scenario of newScenarios) {
   }
 }
 
-for (const audit of ENGLISH_A2_RELEASE_AUDITS) {
-  if (!newScenarios.some((scenario) => scenario.slug === audit.slug)) fail(`${audit.slug}: auditoría huérfana; no pertenece a los 12 escenarios nuevos.`)
+for (const audit of configuration.audits) {
+  if (!newScenarios.some((scenario) => scenario.slug === audit.slug)) fail(`${audit.slug}: auditoría huérfana; no pertenece al candidato ${configuration.label}.`)
 }
 
 const audited = newScenarios.filter((scenario) => auditsBySlug.has(scenario.slug)).length
 if (failures.length && !progressOnly) {
-  console.error(`Candidato inglés A2 no liberable: ${audited}/${newScenarios.length} escenarios auditados.`)
+  console.error(`Candidato ${configuration.label} no liberable: ${audited}/${newScenarios.length} escenarios auditados.`)
   for (const failure of failures) console.error(`- ${failure}`)
   process.exitCode = 1
 } else if (failures.length) {
   console.log(`Auditoría de release en progreso: ${audited}/${newScenarios.length} escenarios; faltan ${newScenarios.length - audited}.`)
 } else {
-  console.log(`Candidato inglés A2 liberable: ${newScenarios.length}/${newScenarios.length} escenarios nuevos pasan cinco perfiles; 20 prácticas listas para promoción.`)
+  console.log(`Candidato ${configuration.label} liberable: ${newScenarios.length}/${newScenarios.length} escenarios pasan cinco perfiles; ${newScenarios.length} prácticas listas para promoción.`)
 }

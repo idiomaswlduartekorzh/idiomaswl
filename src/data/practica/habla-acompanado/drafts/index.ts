@@ -41,6 +41,19 @@ export const ROLEPLAY_INGLES_A2_CANDIDATE = [
   ...ROLEPLAY_INGLES_A2_BATCH_4,
 ].sort((a, b) => a.sequence - b.sequence)
 
+export const ROLEPLAY_INGLES_A1_CANDIDATE = [
+  ...ROLEPLAY_INGLES_A1_BATCH_1,
+  ...ROLEPLAY_INGLES_A1_BATCH_2,
+  ...ROLEPLAY_INGLES_A1_BATCH_3,
+  ...ROLEPLAY_INGLES_A1_BATCH_4,
+  ...ROLEPLAY_INGLES_A1_BATCH_5,
+  ...ROLEPLAY_INGLES_A1_BATCH_6,
+  ...ROLEPLAY_INGLES_A1_BATCH_7,
+  ...ROLEPLAY_INGLES_A1_BATCH_8,
+  ...ROLEPLAY_INGLES_A1_BATCH_9,
+  ...ROLEPLAY_INGLES_A1_BATCH_10,
+].sort((a, b) => a.sequence - b.sequence)
+
 /**
  * Conjuntos todavía no publicables.
  *
@@ -52,18 +65,7 @@ export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
   {
     language: 'ingles',
     level: 'a1',
-    scenarios: [
-      ...ROLEPLAY_INGLES_A1_BATCH_1,
-      ...ROLEPLAY_INGLES_A1_BATCH_2,
-      ...ROLEPLAY_INGLES_A1_BATCH_3,
-      ...ROLEPLAY_INGLES_A1_BATCH_4,
-      ...ROLEPLAY_INGLES_A1_BATCH_5,
-      ...ROLEPLAY_INGLES_A1_BATCH_6,
-      ...ROLEPLAY_INGLES_A1_BATCH_7,
-      ...ROLEPLAY_INGLES_A1_BATCH_8,
-      ...ROLEPLAY_INGLES_A1_BATCH_9,
-      ...ROLEPLAY_INGLES_A1_BATCH_10,
-    ],
+    scenarios: ROLEPLAY_INGLES_A1_CANDIDATE,
     toolkit: TOOLKIT_INGLES_A1,
   },
 ]
