@@ -1,5 +1,5 @@
-import { ROLEPLAY_INGLES_A2 } from './ingles-a2'
-import { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2'
+import { ROLEPLAY_INGLES_A2 } from './ingles-a2.ts'
+import { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 import type {
   RoleId,
   RoleplayLanguage,
@@ -7,24 +7,96 @@ import type {
   RoleplayRole,
   RoleplayScenario,
   RoleplayToolkit,
-} from './types'
+} from './types.ts'
 
-export * from './types'
-export { ROLEPLAY_INGLES_A2 } from './ingles-a2'
-export { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2'
+export * from './types.ts'
+export { ROLEPLAY_INGLES_A2 } from './ingles-a2.ts'
+export { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
+
+type RoleplayTargetLabels = {
+  word: string
+  meaning: string
+  here: string
+  purpose: string
+  form: string
+  effect: string
+  closing: string
+  success: string
+  when: string
+  register: string
+}
+
+export const ROLEPLAY_LANGUAGES: Record<
+  RoleplayLanguage,
+  { label: string; labelLower: string; flag: string; htmlLang: string; targetLabels: RoleplayTargetLabels }
+> = {
+  ingles: {
+    label: 'Inglés', labelLower: 'inglés', flag: '🇬🇧', htmlLang: 'en',
+    targetLabels: { word: 'Word', meaning: 'What it is', here: 'Here', purpose: 'Purpose', form: 'Form', effect: 'Effect', closing: 'Closing criterion', success: 'Success', when: 'When', register: 'Register' },
+  },
+  coreano: {
+    label: 'Coreano', labelLower: 'coreano', flag: '🇰🇷', htmlLang: 'ko',
+    targetLabels: { word: '단어', meaning: '뜻', here: '이 상황에서', purpose: '목적', form: '표현', effect: '효과', closing: '마무리 기준', success: '성공', when: '언제', register: '말투' },
+  },
+  frances: {
+    label: 'Francés', labelLower: 'francés', flag: '🇫🇷', htmlLang: 'fr',
+    targetLabels: { word: 'Mot', meaning: 'Ce que c’est', here: 'Ici', purpose: 'Fonction', form: 'Forme', effect: 'Effet', closing: 'Critère de fin', success: 'Réussite', when: 'Quand', register: 'Registre' },
+  },
+  italiano: {
+    label: 'Italiano', labelLower: 'italiano', flag: '🇮🇹', htmlLang: 'it',
+    targetLabels: { word: 'Parola', meaning: 'Che cos’è', here: 'Qui', purpose: 'Funzione', form: 'Forma', effect: 'Effetto', closing: 'Criterio finale', success: 'Successo', when: 'Quando', register: 'Registro' },
+  },
+  portugues: {
+    label: 'Portugués', labelLower: 'portugués', flag: '🇧🇷', htmlLang: 'pt-BR',
+    targetLabels: { word: 'Palavra', meaning: 'O que é', here: 'Aqui', purpose: 'Função', form: 'Forma', effect: 'Efeito', closing: 'Critério de encerramento', success: 'Sucesso', when: 'Quando', register: 'Registro' },
+  },
+  aleman: {
+    label: 'Alemán', labelLower: 'alemán', flag: '🇩🇪', htmlLang: 'de',
+    targetLabels: { word: 'Wort', meaning: 'Bedeutung', here: 'Hier', purpose: 'Funktion', form: 'Formulierung', effect: 'Wirkung', closing: 'Abschlusskriterium', success: 'Erfolg', when: 'Wann', register: 'Register' },
+  },
+  ruso: {
+    label: 'Ruso', labelLower: 'ruso', flag: '🇷🇺', htmlLang: 'ru',
+    targetLabels: { word: 'Слово', meaning: 'Что это', here: 'Здесь', purpose: 'Цель', form: 'Форма', effect: 'Эффект', closing: 'Критерий завершения', success: 'Успех', when: 'Когда', register: 'Регистр' },
+  },
+  japones: {
+    label: 'Japonés', labelLower: 'japonés', flag: '🇯🇵', htmlLang: 'ja',
+    targetLabels: { word: '言葉', meaning: '意味', here: 'この場面で', purpose: '目的', form: '表現', effect: '効果', closing: '終了条件', success: '成功', when: 'いつ', register: '丁寧さ' },
+  },
+}
+
+export const ROLEPLAY_LEVELS: Record<
+  RoleplayLevel,
+  { label: string; minutes: string; minMinutes: number; maxMinutes: number; minTurns: number; maxTurns: number }
+> = {
+  a1: { label: 'A1', minutes: '3–4', minMinutes: 3, maxMinutes: 4, minTurns: 4, maxTurns: 6 },
+  a2: { label: 'A2', minutes: '5–8', minMinutes: 5, maxMinutes: 8, minTurns: 6, maxTurns: 9 },
+  b1: { label: 'B1', minutes: '6–9', minMinutes: 6, maxMinutes: 9, minTurns: 8, maxTurns: 12 },
+}
+
+export type RoleplaySetKey = `${RoleplayLanguage}-${RoleplayLevel}`
+
+export const ROLEPLAY_TARGET_SET_SIZE = 20
+export const ROLEPLAY_TARGET_SET_KEYS: RoleplaySetKey[] = Object.keys(ROLEPLAY_LANGUAGES).flatMap(
+  (language) => Object.keys(ROLEPLAY_LEVELS).map((level) => `${language}-${level}` as RoleplaySetKey),
+)
+
+/**
+ * Piso monotónico de contenido ya publicado. Solo puede subir. Los conjuntos nuevos
+ * entran directamente con 20; inglés A2 es la única cohorte histórica parcial.
+ */
+export const ROLEPLAY_PUBLISHED_FLOORS: Partial<Record<RoleplaySetKey, number>> = {
+  'ingles-a2': 8,
+}
 
 /**
  * Registro de habla acompañada.
  *
- * Hoy hay un solo conjunto vivo —inglés A2, el piloto—. Los otros siete idiomas y los
- * otros dos niveles entran aquí y en ningún otro sitio: las rutas se derivan de este
- * registro, no de una lista escrita a mano en `app/`.
+ * Hoy hay un solo conjunto vivo —la primera cohorte de inglés A2—. Los otros 23 conjuntos
+ * entran aquí completos y en ningún otro sitio: rutas y sitemap se derivan de este registro.
  */
 export type RoleplaySet = {
   language: RoleplayLanguage
   level: RoleplayLevel
-  /** Cómo se llama el idioma en el migajero y en los títulos. */
-  languageLabel: string
   scenarios: RoleplayScenario[]
   toolkit: RoleplayToolkit
 }
@@ -33,11 +105,38 @@ export const ROLEPLAY_SETS: RoleplaySet[] = [
   {
     language: 'ingles',
     level: 'a2',
-    languageLabel: 'Inglés',
     scenarios: ROLEPLAY_INGLES_A2,
     toolkit: TOOLKIT_INGLES_A2,
   },
 ]
+
+export function roleplaySetKey(language: RoleplayLanguage, level: RoleplayLevel): RoleplaySetKey {
+  return `${language}-${level}`
+}
+
+export function speakingPath(language: RoleplayLanguage, level: RoleplayLevel): string {
+  return `/practica/${language}/${level}/habla`
+}
+
+export function soloSpeakingPath(language: RoleplayLanguage, level: RoleplayLevel): string {
+  return `${speakingPath(language, level)}/solo`
+}
+
+export function accompaniedSpeakingPath(language: RoleplayLanguage, level: RoleplayLevel): string {
+  return `${speakingPath(language, level)}/acompanada`
+}
+
+export function roleplayToolkitPath(language: RoleplayLanguage, level: RoleplayLevel): string {
+  return `${accompaniedSpeakingPath(language, level)}/herramientas`
+}
+
+export function roleplayScenarioPath(scenario: RoleplayScenario): string {
+  return `${accompaniedSpeakingPath(scenario.language, scenario.level)}/${scenario.slug}`
+}
+
+export function roleplayRolePath(scenario: RoleplayScenario, role: RoleId): string {
+  return `${roleplayScenarioPath(scenario)}/${role}`
+}
 
 export function getRoleplaySet(language: string, level: string): RoleplaySet | null {
   return ROLEPLAY_SETS.find((set) => set.language === language && set.level === level) ?? null

@@ -1,23 +1,29 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 import { CourseSchema } from '@/components/practica/EducationSchema'
 import { SpeakingModeHub } from '@/components/practica/roleplay/RoleplayExperience'
-import { getRoleplaySet } from '@/data/practica/habla-acompanado'
+import { getRoleplaySet, speakingPath } from '@/data/practica/habla-acompanado'
+
+const LANGUAGE = 'ingles'
+const LEVEL = 'a2'
+const set = getRoleplaySet(LANGUAGE, LEVEL)
+const scenarioCount = set?.scenarios.length ?? 0
+const canonical = `https://www.idiomaswl.com${speakingPath(LANGUAGE, LEVEL)}`
 
 export const metadata: Metadata = {
   title: 'Speaking inglés A2: solo o en pareja | Idiomas WeLearn',
-  description: 'Practica speaking en inglés A2 con 20 frases individuales o con 8 juegos de rol para dos personas, fichas separadas y situaciones reales.',
-  alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/a2/habla' },
+  description: `Practica speaking en inglés A2 con 20 frases individuales o con ${scenarioCount} juegos de rol para dos personas, fichas separadas y situaciones reales.`,
+  alternates: { canonical },
 }
 
 export default function Page() {
-  const set = getRoleplaySet('ingles', 'a2')
-  if (!set) return null
+  if (!set) notFound()
   return (
     <>
       <CourseSchema
         name="Speaking en inglés A2 — práctica individual y en pareja"
-        description="20 frases individuales y 8 juegos de rol para dos personas con información diferente por rol."
-        url="https://www.idiomaswl.com/practica/ingles/a2/habla"
+        description={`20 frases individuales y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
+        url={canonical}
         educationalLevel="A2"
         teaches="Expresión oral en inglés"
         inLanguage="en"

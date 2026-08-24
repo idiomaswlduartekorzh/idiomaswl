@@ -1,4 +1,4 @@
-import type { RoleplayScenario } from './types'
+import type { RoleplayScenario } from './types.ts'
 
 /**
  * Habla acompañada · inglés A2 — los ocho escenarios.

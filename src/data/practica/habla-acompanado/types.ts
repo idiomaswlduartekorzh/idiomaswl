@@ -21,7 +21,15 @@
  * automática y no hay emparejador.
  */
 
-export type RoleplayLanguage = 'ingles'
+export type RoleplayLanguage =
+  | 'ingles'
+  | 'coreano'
+  | 'frances'
+  | 'italiano'
+  | 'portugues'
+  | 'aleman'
+  | 'ruso'
+  | 'japones'
 export type RoleplayLevel = 'a1' | 'a2' | 'b1'
 export type RoleId = 'a' | 'b'
 
@@ -60,7 +68,7 @@ export type RoleplayRole = {
   /** Nombre corto y neutro. Es lo único del rol que ve la otra persona, al elegir. */
   name: string
   nameEs: string
-  /** El titular de la ficha, en inglés. Solo en la pantalla de este rol. */
+  /** El titular de la ficha, en el idioma meta. Solo en la pantalla de este rol. */
   headline: string
   /** Registro, quién arranca, turnos y minutos. Va arriba del todo. */
   briefing: string[]
@@ -69,12 +77,12 @@ export type RoleplayRole = {
   factsNote?: string
   /** Datos duros en nota. Nunca una frase decible. */
   facts: { label: string; value: string }[]
-  /** 8-10 palabras que este rol necesita aquí, con definición en inglés sencillo. */
-  vocab: { word: string; whatItIs: string; here: string }[]
+  /** 8-10 palabras que este rol necesita aquí, con definición sencilla en el idioma meta. */
+  vocab: { word: string; reading?: string; whatItIs: string; here: string }[]
   /** A qué bloques de la caja común le toca echar mano, y por qué. */
   toolkit: string
   /** 6-9 exponentes propios, agrupados por función y en orden alfabético de función. */
-  exponents: { purpose: string; form: string; effect: string }[]
+  exponents: { purpose: string; form: string; reading?: string; effect: string }[]
   success: string
 }
 
@@ -122,15 +130,15 @@ export type RoleplayScenario = {
   grammarReferences: RoleplayGrammarReference[]
 }
 
-/** La caja de herramientas del nivel: común a los dieciséis roles. §10 del blueprint. */
+/** La caja de herramientas del idioma y nivel: común a todos los roles del conjunto. §10. */
 export type RoleplayToolkitBlock = {
   number: number
   title: string
   /** La marca del bloque entero: `[receives]`, `[jargon]`, `[grants]`. */
   tag?: string
-  /** Por qué existe el bloque. En inglés, como el resto de lo que se lee en pantalla. */
+  /** Por qué existe el bloque, en el idioma meta. */
   note?: string
-  rows: { form: string; when: string; register?: string; tag?: string }[]
+  rows: { form: string; reading?: string; when: string; register?: string; tag?: string }[]
   tail?: string
 }
 

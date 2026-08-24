@@ -1,4 +1,4 @@
-import type { RoleplayToolkit } from './types'
+import type { RoleplayToolkit } from './types.ts'
 
 /**
  * La caja de herramientas del nivel — inglés A2.
