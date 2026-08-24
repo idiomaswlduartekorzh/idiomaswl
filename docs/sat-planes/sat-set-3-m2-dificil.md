@@ -1,6 +1,6 @@
 # SAT Set 3 · Módulo 2 exigente — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **CS + INFORMATION AND IDEAS APTOS, 15/27**.
+Fecha: 24 de agosto de 2026. Estado: **CS + II + SEC APTOS, 22/27**.
 
 Esta rama la recibe quien logra 16–27 aciertos en M1. Eleva razonamiento y densidad sin
 convertir adaptatividad en castigo: conserva cinco entradas fáciles, todos los dominios y

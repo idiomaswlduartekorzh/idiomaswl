@@ -10,9 +10,9 @@ borrador de 81 slots. M1 ya tiene 27/27 y contenido editorial APTO; producto y a
 siguen pendientes hasta completar ambas ramas M2. La matriz de M2 estándar ya está cerrada;
 M2 estándar ya tiene 27/27 y contenido editorial APTO. El acta formal sigue prohibida
 hasta completar M2 exigente y probar el producto adaptativo. Su matriz editorial 5/9/13
-está cerrada; Craft and Structure q01–q08 e Information and Ideas q09–q15 están APTOS,
-15/27. La siguiente tarea es Standard English Conventions q16–q22. Nada nuevo está
-publicado todavía.
+está cerrada; Craft and Structure q01–q08, Information and Ideas q09–q15 y Standard
+English Conventions q16–q22 están APTOS, 22/27. La siguiente tarea es Expression of
+Ideas q23–q27. Nada nuevo está publicado todavía.
 
 - **Rama actual:** `codex/sat-finish-20260823`
 - **Cierre:** 23 ago 2026 · M1, M2 estándar y M2 exigente completos; diez páginas del

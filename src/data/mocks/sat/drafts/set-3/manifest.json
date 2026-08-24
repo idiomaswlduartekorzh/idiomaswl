@@ -487,10 +487,10 @@
       "variant": "M2-dificil",
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-3/sat-set-3-m2-dificil.ts",
-      "writtenQuestions": 15,
+      "writtenQuestions": 22,
       "mechanicalGates": "PARTIAL_BLOCK_PASS",
-      "blindHeuristicsMeanPct": 23.0,
-      "editorialGates": "CS_II_PASS_ONLY",
+      "blindHeuristicsMeanPct": 22.7,
+      "editorialGates": "CS_II_SEC_PASS_ONLY",
       "productGate": "NOT_STARTED",
       "slots": [
         {
@@ -617,57 +617,57 @@
           "id": "q16",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q17",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q18",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "humanidades",
+          "status": "written"
         },
         {
           "id": "q19",
           "domain": "SEC",
           "type": "boundaries",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q20",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q21",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "humanidades",
+          "status": "written"
         },
         {
           "id": "q22",
           "domain": "SEC",
           "type": "form-structure-sense",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q23",

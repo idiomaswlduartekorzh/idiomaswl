@@ -34,8 +34,10 @@ en el registro ejecutable por accidente.
   `docs/sat-auditorias/informes/sat-set-3-m2-facil-sec.md`,
   `docs/sat-auditorias/informes/sat-set-3-m2-facil-eoi.md` y
   `docs/sat-auditorias/informes/sat-set-3-m2-facil-editorial.md`.
-- M2 exigente: matriz 5/9/13 cerrada; Craft and Structure e Information and Ideas
-  están APTOS, 15/27 total. Evidencia en `docs/sat-planes/sat-set-3-m2-dificil.md`,
+- M2 exigente: matriz 5/9/13 cerrada; Craft and Structure, Information and Ideas y
+  Standard English Conventions están APTOS, 22/27 total. Evidencia en
+  `docs/sat-planes/sat-set-3-m2-dificil.md`,
   `docs/sat-auditorias/informes/sat-set-3-m2-dificil-cs.md` y
-  `docs/sat-auditorias/informes/sat-set-3-m2-dificil-ii.md`.
-- Siguiente bloque autorizado: M2 exigente Standard English Conventions q16–q22.
+  `docs/sat-auditorias/informes/sat-set-3-m2-dificil-ii.md` y
+  `docs/sat-auditorias/informes/sat-set-3-m2-dificil-sec.md`.
+- Siguiente bloque autorizado: M2 exigente Expression of Ideas q23–q27.
