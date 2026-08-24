@@ -1,6 +1,6 @@
 # SAT Set 4 · Módulo 1 — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 8/27**.
+Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 15/27**.
 
 Esta matriz reserva tema, dificultad y clave antes de redactar. Cada hecho se verificará
 en la fuente primaria al abrir su bloque. Los pasajes y opciones serán originales: una
@@ -31,13 +31,13 @@ fuente respalda un hecho, nunca aporta prosa para adaptar.
 
 | ID | Tipo | Dif. | Materia | Clave | Tema original | Fuente objetivo y riesgo de diseño |
 | --- | --- | ---: | --- | :---: | --- | --- |
-| q09 | central-ideas-details | 1 | humanidades | C | Pavimento táctil comunica dirección y advertencia mediante patrones | ADA o autoridad de transporte; clave no debe ser la única opción general |
-| q10 | central-ideas-details | 2 | ciencia | A | Un calamar usa contrailuminación para reducir su silueta | NOAA o artículo primario; distinguir mecanismo, función y contexto |
+| q09 | central-ideas-details | 1 | humanidades | C | Pavimento táctil comunica dirección y advertencia mediante patrones | U.S. Access Board verificada; clave no debe ser la única opción general |
+| q10 | central-ideas-details | 2 | ciencia | A | Un calamar usa contrailuminación para reducir su silueta | Artículo primario en *Science* verificado; distinguir mecanismo, función y contexto |
 | q11 | command-of-evidence-textual | 2 | literatura | D | Personaje ficticio desecha una vajilla pero conserva una taza agrietada | Pasaje original; cuatro citas igualmente concretas |
-| q12 | command-of-evidence-textual | 3 | historia | B | Libros domésticos permiten fechar una transición entre combustibles | Archivo histórico; evidencia para el momento del cambio, no para su causa |
-| q13 | command-of-evidence-quantitative | 2 | ciencia | C | Reflectancia de nieve con tres concentraciones de algas pigmentadas | Tabla original basada en estudio primario; unidades y comparación explícitas |
+| q12 | command-of-evidence-textual | 3 | historia | B | Libros domésticos permiten fechar una transición entre combustibles | Escenario original informado por archivo universitario; evidencia para secuencia, no causa |
+| q13 | command-of-evidence-quantitative | 2 | ciencia | C | Reflectancia de nieve con tres concentraciones de algas pigmentadas | Tabla original y relación cualitativa verificada; unidades y comparación explícitas |
 | q14 | inferences | 2 | literatura | A | Músico ficticio anota dos tempos para una pieza que evita tocar | Pasaje original; cuatro inferencias plausibles sin psicología inventada |
-| q15 | inferences | 3 | ciencia | D | Peces de cueva muestran patrones de sueño distintos bajo la misma luz | Artículo primario; inferencia limitada a la conducta observada |
+| q15 | inferences | 3 | ciencia | D | Peces de cueva muestran patrones de sueño distintos bajo la misma luz | Artículo primario verificado; inferencia limitada a la conducta observada |
 
 ## Standard English Conventions · q16–q22
 

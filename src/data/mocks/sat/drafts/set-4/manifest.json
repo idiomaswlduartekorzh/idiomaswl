@@ -11,7 +11,7 @@
       "variant": "M1",
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-4/sat-set-4-m1.ts",
-      "writtenQuestions": 8,
+      "writtenQuestions": 15,
       "slots": [
         {
           "id": "q01",
@@ -83,7 +83,7 @@
           "type": "central-ideas-details",
           "difficulty": 1,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q10",
@@ -91,7 +91,7 @@
           "type": "central-ideas-details",
           "difficulty": 2,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q11",
@@ -99,7 +99,7 @@
           "type": "command-of-evidence-textual",
           "difficulty": 2,
           "topic": "literatura",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q12",
@@ -107,7 +107,7 @@
           "type": "command-of-evidence-textual",
           "difficulty": 3,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q13",
@@ -115,7 +115,7 @@
           "type": "command-of-evidence-quantitative",
           "difficulty": 2,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q14",
@@ -123,7 +123,7 @@
           "type": "inferences",
           "difficulty": 2,
           "topic": "literatura",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q15",
@@ -131,7 +131,7 @@
           "type": "inferences",
           "difficulty": 3,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q16",
