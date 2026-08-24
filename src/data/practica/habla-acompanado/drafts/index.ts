@@ -27,6 +27,7 @@ import { ROLEPLAY_INGLES_B1_BATCH_9 } from './ingles-b1-batch-9.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_10 } from './ingles-b1-batch-10.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_11 } from './ingles-b1-batch-11.ts'
 import { ROLEPLAY_COREANO_A2_BATCH_1 } from './coreano-a2-batch-1.ts'
+import { ROLEPLAY_COREANO_A2_BATCH_1B } from './coreano-a2-batch-1b.ts'
 import { TOOLKIT_COREANO_A2 } from '../toolkit-coreano-a2.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
@@ -83,6 +84,7 @@ export const ROLEPLAY_INGLES_B1_CANDIDATE = [
 
 export const ROLEPLAY_COREANO_A2_CANDIDATE = [
   ...ROLEPLAY_COREANO_A2_BATCH_1,
+  ...ROLEPLAY_COREANO_A2_BATCH_1B,
 ].sort((a, b) => a.sequence - b.sequence)
 
 /**
