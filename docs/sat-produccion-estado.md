@@ -11,8 +11,9 @@ siguen pendientes hasta completar ambas ramas M2. La matriz de M2 estándar ya e
 M2 estándar ya tiene 27/27 y contenido editorial APTO. El acta formal sigue prohibida
 hasta completar M2 exigente y probar el producto adaptativo. Su matriz editorial 5/9/13
 está cerrada y M2 exigente ya tiene 27/27 con contenido editorial APTO. Los tres módulos
-de Set 3 están completos en `drafts`; la siguiente tarea es componer y probar las dos
-rutas del producto. Nada nuevo está publicado todavía.
+de Set 3 están completos en `drafts`; el candidato pasó enrutado, 54 preguntas por ruta,
+IDs y explicaciones. Quedan build y QA visual de ambas rutas. Nada nuevo está publicado
+todavía.
 
 - **Rama actual:** `codex/sat-finish-20260823`
 - **Cierre:** 23 ago 2026 · M1, M2 estándar y M2 exigente completos; diez páginas del

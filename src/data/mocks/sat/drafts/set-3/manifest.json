@@ -5,6 +5,8 @@
   "publishable": false,
   "studentQuestions": 54,
   "authoredQuestionsRequired": 81,
+  "candidateFile": "src/data/mocks/sat/drafts/set-3/sat-set-3.ts",
+  "candidateExport": "satSet3Candidate",
   "modules": [
     {
       "id": "sat-set-3-m1",
@@ -15,7 +17,7 @@
       "mechanicalGates": "PASS",
       "blindHeuristicsMeanPct": 23.0,
       "editorialGates": "PASS_CONTENT_ONLY",
-      "productGate": "NOT_STARTED",
+      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
       "slots": [
         {
           "id": "q01",
@@ -253,7 +255,7 @@
       "mechanicalGates": "PASS",
       "blindHeuristicsMeanPct": 23.7,
       "editorialGates": "PASS_CONTENT_ONLY",
-      "productGate": "NOT_STARTED",
+      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
       "slots": [
         {
           "id": "q01",
@@ -491,7 +493,7 @@
       "mechanicalGates": "PASS",
       "blindHeuristicsMeanPct": 24.3,
       "editorialGates": "PASS_CONTENT_ONLY",
-      "productGate": "NOT_STARTED",
+      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
       "slots": [
         {
           "id": "q01",

@@ -211,6 +211,9 @@ function cordura(mock, quien) {
     fail(`${quien}: con un corte de ${R.correctToRouteHigh} sobre ${total}, prácticamente todo el mundo cae en la misma rama — eso no es adaptativo`)
   }
   if (!(R.minutesPerModule > 0)) fail(`${quien}: minutesPerModule es ${R.minutesPerModule}`)
+  if (mock.timeMinutes !== R.minutesPerModule * 2) {
+    fail(`${quien}: declara ${mock.timeMinutes} minutos; dos módulos de ${R.minutesPerModule} requieren ${R.minutesPerModule * 2}`)
+  }
 
   // Las dos ramas tienen que medir lo mismo, o el denominador de la nota depende de
   // qué rama tocó y dos estudiantes no son comparables ni de lejos.
@@ -218,6 +221,17 @@ function cordura(mock, quien) {
   const alta = porParte.get(R.highPart)
   if (baja && alta && baja.questions.length !== alta.questions.length) {
     fail(`${quien}: las ramas miden ${baja.questions.length} y ${alta.questions.length} ítems — el denominador de la nota dependería de la rama`)
+  }
+  for (const [nombre, sec] of [['M1', enrutadora], ['M2 estándar', baja], ['M2 exigente', alta]]) {
+    if (sec && sec.questions.length !== 27) {
+      fail(`${quien}: ${nombre} tiene ${sec.questions.length} preguntas; el contrato SAT exige 27`)
+    }
+  }
+  if (enrutadora && baja && enrutadora.questions.length + baja.questions.length !== 54) {
+    fail(`${quien}: la ruta estándar entrega ${enrutadora.questions.length + baja.questions.length} preguntas; deben ser 54`)
+  }
+  if (enrutadora && alta && enrutadora.questions.length + alta.questions.length !== 54) {
+    fail(`${quien}: la ruta exigente entrega ${enrutadora.questions.length + alta.questions.length} preguntas; deben ser 54`)
   }
 
   const reparto = (sec) => {
@@ -244,6 +258,32 @@ function cordura(mock, quien) {
   const repes = [...new Set(ids.filter((x, i) => ids.indexOf(x) !== i))]
   if (repes.length) {
     fail(`${quien}: ${repes.length} id(s) repetidos entre partes (${repes.slice(0, 3).join(', ')}…) — las respuestas de un módulo se copian al otro`)
+  }
+
+  // La revisión final depende de `insights`: si falta uno, el examen puntúa, pero el
+  // estudiante no ve el dominio ni por qué acertó o falló. Cada opción necesita su
+  // explicación, y la clave tiene que apuntar a una alternativa real.
+  for (const sec of mock.sections) {
+    const insightIds = Object.keys(sec.insights || {})
+    if (insightIds.length !== sec.questions.length) {
+      fail(`${quien}: la parte ${sec.part} tiene ${sec.questions.length} preguntas y ${insightIds.length} explicaciones`)
+    }
+    for (const q of sec.questions) {
+      if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= (q.options?.length || 0)) {
+        fail(`${quien}: ${q.id} tiene una clave fuera de sus opciones`)
+        continue
+      }
+      const insight = sec.insights?.[q.id]
+      if (!insight?.domain || !insight?.domainLabel) {
+        fail(`${quien}: ${q.id} no tiene dominio legible para el desglose de resultados`)
+      }
+      const faltan = (q.options || [])
+        .map((_, i) => String.fromCharCode(65 + i))
+        .filter((letter) => !insight?.rationales?.[letter]?.trim())
+      if (faltan.length) {
+        fail(`${quien}: ${q.id} no explica ${faltan.join(', ')} en la revisión de respuestas`)
+      }
+    }
   }
 }
 

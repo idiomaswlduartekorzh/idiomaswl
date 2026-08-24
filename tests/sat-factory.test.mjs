@@ -121,3 +121,23 @@ test('el set 2 publicado supera el contrato adaptativo desde el catálogo', () =
   assert.equal(result.status, 0, result.stderr || result.stdout)
   assert.match(result.stdout, /2 set\(s\) publicado\(s\) auditado\(s\)/)
 })
+
+test('cada borrador que declara candidato supera el contrato de producto sin publicarse', () => {
+  const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf8'))
+  const drafts = catalog.sets.filter((set) => set.status === 'draft' && set.draftManifest)
+
+  for (const draft of drafts) {
+    const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, draft.draftManifest), 'utf8'))
+    if (!manifest.candidateFile || !manifest.candidateExport) continue
+
+    assert.equal(manifest.publishable, false, `${draft.id} no puede probarse fingiendo que ya es publicable`)
+    const result = spawnSync(process.execPath, [
+      'scripts/check-sat-adaptive.mjs',
+      '--candidate', manifest.candidateFile,
+      '--export', manifest.candidateExport,
+    ], { cwd: ROOT, encoding: 'utf8' })
+
+    assert.equal(result.status, 0, result.stderr || result.stdout)
+    assert.match(result.stdout, /Enrutado correcto en los 28 resultados posibles/)
+  }
+})

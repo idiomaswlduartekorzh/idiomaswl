@@ -40,4 +40,6 @@ en el registro ejecutable por accidente.
   `docs/sat-auditorias/informes/sat-set-3-m2-dificil-sec.md`,
   `docs/sat-auditorias/informes/sat-set-3-m2-dificil-eoi.md` y
   `docs/sat-auditorias/informes/sat-set-3-m2-dificil-editorial.md`.
-- Siguiente unidad autorizada: componer Set 3 y validar ambas rutas de producto.
+- Candidato compuesto en `sat-set-3.ts`, todavía fuera del registro público.
+- Siguiente unidad autorizada: validar ambas rutas adaptativas y la experiencia de
+  producto antes de promover archivos o cambiar el catálogo.
