@@ -2,6 +2,18 @@ import { expect, test } from '@playwright/test'
 
 const ROUTES = ['italiano', 'ingles', 'frances', 'portugues', 'aleman', 'ruso', 'japones', 'coreano']
 
+test('el catálogo comparte el sistema visual de Práctica y cabe en móvil', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/herramientas/quizes')
+
+  await expect(page.locator('.wlp-page')).toBeVisible()
+  await expect(page.locator('.wlp-card--path')).toHaveCount(8)
+  await expect(page.locator('.wl-catalog-card')).toHaveCount(0)
+  await expect(page.locator('main')).toHaveCount(1)
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+  expect(overflow).toBeLessThanOrEqual(1)
+})
+
 async function reset(page: import('@playwright/test').Page, route: string) {
   await page.goto(`/herramientas/quizes/${route}`)
   await page.evaluate(() => window.localStorage.clear())

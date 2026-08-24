@@ -17,6 +17,10 @@ import {
   CAMBRIDGE_B2_FIRST_NOTES,
   CAMBRIDGE_B2_FIRST_PODCAST,
 } from '@/data/practica/podcasts/how-to-pass-cambridge-b2-first';
+import {
+  DIGITAL_SAT_STRATEGY_MAP_NOTES,
+  DIGITAL_SAT_STRATEGY_MAP_PODCAST,
+} from '@/data/practica/podcasts/strategic-map-for-the-digital-sat';
 import toeflStyles from './toefl-ios.module.css';
 
 export async function generateStaticParams() {
@@ -137,6 +141,20 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
             { href: '/practica/ingles/b2/uso-del-idioma', label: 'Train B2 Use of English' },
             { href: '/practica/ingles/b2/conectores', label: 'Practise cohesion and connectors' },
             { href: '/nivel-radar', label: 'Check your current level' },
+          ]}
+        />
+      )}
+
+      {slug === 'sat' && (
+        <PodcastFeature
+          {...DIGITAL_SAT_STRATEGY_MAP_PODCAST}
+          accent={exam.color}
+          notes={DIGITAL_SAT_STRATEGY_MAP_NOTES}
+          links={[
+            { href: '/examenes/sat/practica/set-1', label: 'Take the SAT diagnostic' },
+            { href: '/examenes/sat/guia/reading-and-writing', label: 'Map Reading and Writing' },
+            { href: '/examenes/sat/guia/puntaje-sat-universidades', label: 'Set a target score' },
+            { href: '/examenes/sat/guia/como-estudiar-sat-desde-cero', label: 'Build the study plan' },
           ]}
         />
       )}
