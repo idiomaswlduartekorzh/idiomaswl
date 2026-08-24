@@ -46,10 +46,10 @@ const SEEDS: StructureSeed<JapaneseFormId>[] = [
     { context: '田中さんは___。', answer: '結婚しています', wrong: '結婚します', lemma: '結婚する', cue: '変化の後に続く状態', distractors: ['結婚しました', '結婚しません', '結婚するつもりです'] },
     { context: '部屋の電気が___。', answer: 'ついています', wrong: 'つけています', lemma: 'つく', cue: '点灯した結果の状態', distractors: ['つきます', 'つきました', 'つく予定です'] },
   ] },
-  { id: 'experience', explanation: 'た形 + ことがあるは、人生経験を表します。経験がない場合はことがありませんです。', examples: [
-    { context: '私は京都へ___。', answer: '行ったことがあります', wrong: '行くことがあります', lemma: '行く', cue: 'これまでの経験', distractors: ['行きました', '行っています', '行く予定です'] },
-    { context: '納豆を___。', answer: '食べたことがありません', wrong: '食べることがありません', lemma: '食べる', cue: '経験がないこと', distractors: ['食べませんでした', '食べていません', '食べないつもりです'] },
-    { context: '兄は富士山に___。', answer: '登ったことがあります', wrong: '登ることがあります', lemma: '登る', cue: '第三者の経験', distractors: ['登りました', '登っています', '登る予定です'] },
+  { id: 'experience', explanation: 'た形 + ことがあるは、人生経験を表します。経験がない場合は「V-たことがありません」を使います。', examples: [
+    { context: '私は京都へ___。', answer: '行ったことがあります', accepted: ['行ったことあります'], wrong: '行くことがあります', lemma: '行く', cue: 'これまでの経験', distractors: ['行きました', '行っています', '行く予定です'] },
+    { context: '納豆を___。', answer: '食べたことがありません', accepted: ['食べたことありません'], wrong: '食べることがありません', lemma: '食べる', cue: '経験がないこと', distractors: ['食べませんでした', '食べていません', '食べないつもりです'] },
+    { context: '兄は富士山に___。', answer: '登ったことがあります', accepted: ['登ったことあります'], wrong: '登ることがあります', lemma: '登る', cue: '第三者の経験', distractors: ['登りました', '登っています', '登る予定です'] },
   ] },
   { id: 'plan-intention', explanation: 'つもりですは話し手の意図、予定ですは比較的具体的に決まった計画を表します。', examples: [
     { context: '来年、日本で___。', answer: '勉強するつもりです', wrong: '勉強したつもりです', lemma: '勉強する', cue: '将来の意図', distractors: ['勉強しました', '勉強しています', '勉強したことがあります'] },
@@ -82,7 +82,7 @@ const FINAL_ROWS: FinalRow<JapaneseFormId>[] = [
 ]
 
 export const JAPANESE_STRUCTURE_QUEST = createStructureQuest({
-  id: 'japanese-structure-quest', storageKey: 'wl-japanese-structure-quest-v1', forms: JAPANESE_FORMS,
+  id: 'japanese-structure-quest', storageKey: 'wl-japanese-structure-quest-v2', forms: JAPANESE_FORMS,
   presets: [
     { label: '時制', ids: JAPANESE_FORMS.filter((form) => form.group === '時制').map((form) => form.id) },
     { label: 'アスペクト', ids: JAPANESE_FORMS.filter((form) => form.group === 'アスペクト').map((form) => form.id) },

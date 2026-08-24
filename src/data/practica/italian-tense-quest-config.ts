@@ -13,9 +13,15 @@ import type { TenseQuestConfig } from './tense-quest-types'
 
 const cards = FINAL_CHALLENGE.bank.map((text, index) => ({ id: `it-final-card-${index + 1}`, text }))
 
+function balancedChoiceOptions(challenge: (typeof CHOICE_CHALLENGES)[number], index: number) {
+  const distractors = challenge.options.filter((option) => option !== challenge.answer)
+  distractors.splice(index % 4, 0, challenge.answer)
+  return distractors
+}
+
 export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
   id: 'italian-tense-quest',
-  storageKey: 'wl-italian-tense-quest-v3',
+  storageKey: 'wl-italian-tense-quest-v4',
   forms: TENSE_OPTIONS,
   presets: [
     { label: 'Pasados', ids: ['passato-prossimo', 'imperfetto', 'passato-remoto', 'trapassato-prossimo', 'trapassato-remoto'] },
@@ -23,7 +29,11 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     { label: 'Condicionales', ids: ['condizionale-presente', 'condizionale-passato'] },
   ],
   levels: LEVEL_META,
-  choiceChallenges: CHOICE_CHALLENGES.map((challenge, index) => ({ ...challenge, id: `it-choice-${index + 1}` })),
+  choiceChallenges: CHOICE_CHALLENGES.map((challenge, index) => ({
+    ...challenge,
+    id: `it-choice-${index + 1}`,
+    options: balancedChoiceOptions(challenge, index),
+  })),
   microStories: MICRO_STORIES.map((challenge, index) => ({ ...challenge, id: `it-micro-${index + 1}` })),
   longStories: LONG_STORIES.map((challenge, index) => ({ ...challenge, id: `it-long-${index + 1}` })),
   errorChallenges: ERROR_CHALLENGES.map((challenge, index) => ({ ...challenge, id: `it-error-${index + 1}` })),

@@ -24,7 +24,7 @@ const SEEDS: StructureSeed<RussianFormId>[] = [
   { id: 'past-imperfective', explanation: 'Несовершенный вид в прошлом описывает процесс, фон или повторяющееся действие без фокуса на результате.', examples: [
     { context: 'В детстве Сергей часто ___ во дворе.', answer: 'играл', wrong: 'сыграл', lemma: 'играть', cue: 'повторяющаяся привычка', distractors: ['играет', 'будет играть', 'сыграет'] },
     { context: 'В восемь часов они ещё ___.', answer: 'ужинали', wrong: 'поужинали', lemma: 'ужинать', cue: 'процесс в определённый момент', distractors: ['ужинают', 'будут ужинать', 'поужинают'] },
-    { context: 'Весь вечер ___ снег.', answer: 'шёл', wrong: 'пошёл', lemma: 'идти (о снеге)', cue: 'длительный фон', distractors: ['идёт', 'будет идти', 'пойдёт'] },
+    { context: 'Весь вечер ___ снег.', answer: 'шёл', accepted: ['шел'], wrong: 'пошёл', lemma: 'идти (о снеге)', cue: 'длительный фон', distractors: ['идёт', 'будет идти', 'пойдёт'] },
   ] },
   { id: 'past-perfective', explanation: 'Совершенный вид в прошлом выделяет завершение, результат или одно последовательное событие.', examples: [
     { context: 'Вчера Олег ___ письмо и отправил его.', answer: 'написал', wrong: 'писал', lemma: 'написать', cue: 'завершённый результат', distractors: ['пишет', 'будет писать', 'напишет'] },
@@ -82,7 +82,7 @@ const FINAL_ROWS: FinalRow<RussianFormId>[] = [
 ]
 
 export const RUSSIAN_STRUCTURE_QUEST = createStructureQuest({
-  id: 'russian-structure-quest', storageKey: 'wl-russian-structure-quest-v1', forms: RUSSIAN_FORMS,
+  id: 'russian-structure-quest', storageKey: 'wl-russian-structure-quest-v2', forms: RUSSIAN_FORMS,
   presets: [
     { label: 'Время и вид', ids: RUSSIAN_FORMS.filter((form) => form.group.includes('Время')).map((form) => form.id) },
     { label: 'Условность', ids: RUSSIAN_FORMS.filter((form) => form.group === 'Условность').map((form) => form.id) },

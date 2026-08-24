@@ -26,7 +26,7 @@ const QUIZES = [
     flag: '🇺🇸',
     name: 'Inglés',
     tagline: 'Contrasta tiempos, aspectos y condicionales en seis niveles que se adaptan a tu selección.',
-    detail: '19 formas · 210 retos',
+    detail: '76 contextos fuente · 6 niveles',
     color: '#3c5fb8',
   },
   {
@@ -42,32 +42,32 @@ const QUIZES = [
   {
     slug: 'frances', href: '/herramientas/quizes/frances', flag: '🇫🇷', name: 'Francés',
     tagline: 'Contrasta récit oral, trasfondo, anterioridad, registro literario, futuro e hipótesis.',
-    detail: '10 formas · 111 retos', color: '#003189',
+    detail: '40 contextos fuente · 6 niveles', color: '#003189',
   },
   {
     slug: 'portugues', href: '/herramientas/quizes/portugues', flag: '🇧🇷', name: 'Portugués',
     tagline: 'Practica portugués brasileño hablado y formal con pasado, futuro e hipótesis.',
-    detail: '10 formas · 111 retos', color: '#009c3b',
+    detail: '40 contextos fuente · 6 niveles', color: '#009c3b',
   },
   {
     slug: 'aleman', href: '/herramientas/quizes/aleman', flag: '🇩🇪', name: 'Alemán',
     tagline: 'Controla auxiliar, participio, orden verbal, futuro, hipótesis y tratamiento.',
-    detail: '10 estructuras · 111 retos', color: '#dd0000',
+    detail: '40 contextos fuente · 6 niveles', color: '#dd0000',
   },
   {
     slug: 'ruso', href: '/herramientas/quizes/ruso', flag: '🇷🇺', name: 'Ruso',
     tagline: 'Decide no solo cuándo ocurre una acción, sino si importa el proceso o el resultado.',
-    detail: '10 contrastes · 111 retos', color: '#cc0000',
+    detail: '40 contextos fuente · 6 niveles', color: '#cc0000',
   },
   {
     slug: 'japones', href: '/herramientas/quizes/japones', flag: '🇯🇵', name: 'Japonés',
     tagline: 'Trabaja no-pasado, pasado, aspecto, experiencia, intención, condición y petición.',
-    detail: '10 contrastes · 111 retos', color: '#bc002d',
+    detail: '40 contextos fuente · 6 niveles', color: '#bc002d',
   },
   {
     slug: 'coreano', href: '/herramientas/quizes/coreano', flag: '🇰🇷', name: 'Coreano',
     tagline: 'Integra tiempo, aspecto, intención y registro sin confundir progreso con estado resultante.',
-    detail: '10 contrastes · 111 retos', color: '#534ab7',
+    detail: '40 contextos fuente · 6 niveles', color: '#534ab7',
   },
 ]
 

@@ -82,7 +82,7 @@ const FINAL_ROWS: FinalRow<FrenchFormId>[] = [
 ]
 
 export const FRENCH_STRUCTURE_QUEST = createStructureQuest({
-  id: 'french-structure-quest', storageKey: 'wl-french-structure-quest-v1', forms: FRENCH_FORMS,
+  id: 'french-structure-quest', storageKey: 'wl-french-structure-quest-v2', forms: FRENCH_FORMS,
   presets: [
     { label: 'Passé', ids: FRENCH_FORMS.filter((form) => form.group.startsWith('Passé')).map((form) => form.id) },
     { label: 'Futur', ids: FRENCH_FORMS.filter((form) => form.group === 'Futur').map((form) => form.id) },

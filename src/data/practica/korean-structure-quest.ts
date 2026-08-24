@@ -82,7 +82,7 @@ const FINAL_ROWS: FinalRow<KoreanFormId>[] = [
 ]
 
 export const KOREAN_STRUCTURE_QUEST = createStructureQuest({
-  id: 'korean-structure-quest', storageKey: 'wl-korean-structure-quest-v1', forms: KOREAN_FORMS,
+  id: 'korean-structure-quest', storageKey: 'wl-korean-structure-quest-v2', forms: KOREAN_FORMS,
   presets: [
     { label: '시제와 높임', ids: KOREAN_FORMS.filter((form) => form.group === '시제와 높임').map((form) => form.id) },
     { label: '상', ids: KOREAN_FORMS.filter((form) => form.group === '상').map((form) => form.id) },

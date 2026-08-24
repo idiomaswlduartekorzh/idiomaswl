@@ -3,8 +3,8 @@
 Fuente de verdad para construir `/herramientas/quizes/ingles` a partir de la experiencia del
 quiz italiano, sin copiar sus defectos de cobertura, puntuación ni accesibilidad.
 
-Estado: **blueprint cerrado el 21 de agosto de 2026 a partir de una auditoría del motor
-italiano en `7d6001c0`.** Todavía no existe contenido inglés ni ruta pública.
+Estado: **implementado y endurecido el 23 de agosto de 2026.** La ruta pública comparte el motor
+multilingüe y sus barreras automáticas de distribución, persistencia y accesibilidad.
 
 Si este documento contradice una decisión posterior de David, manda David y se actualiza este
 documento antes de implementar.
@@ -95,12 +95,12 @@ exacta.
   se deja fijo un `already`, `just`, `yet`, `still`, `never`, `not` o partícula verbal que pueda
   duplicarse o forzar un orden incorrecto.
 
-### Nivel 3 — Connected stories
+### Nivel 3 — Cumulative retrieval
 
-Relatos de cuatro a siete huecos. Las formas no seleccionadas se muestran resueltas para
-conservar el texto; las seleccionadas siguen siendo editables.
+Bloques de tres escenarios ya reconocidos en los niveles anteriores, ahora recuperados sin
+opciones. Esta repetición es andamiaje deliberado; la interfaz no los presenta como relatos nuevos.
 
-- mínimo **2 relatos que contengan cada forma**;
+- mínimo **2 bloques por forma**;
 - cada hueco vale un punto independiente;
 - el resumen agrupa por relato, pero muestra el resultado de cada hueco;
 - ninguna frase admite dos tiempos razonables por falta de contexto;
@@ -123,17 +123,19 @@ earlier event, duration, prediction, prior future result, hypothetical result, e
 
 - mínimo **2 apariciones por forma** en el banco total;
 - cada ranura vale un punto;
-- las opciones se mezclan con semilla de intento;
-- elegir una sola forma sigue produciendo al menos cinco ranuras, no un nivel de una pregunta.
+- las opciones funcionales cambian de orden de forma determinista entre estructuras;
+- cada mapa contiene tres cláusulas y al menos dos funciones plausibles;
+- la pista nunca reproduce la cláusula correcta con un hueco cosmético.
 
 ### Nivel 6 — Final reconstruction
 
 Texto completo con banco cerrado. No hay escritura libre: se selecciona un espacio y luego una
 tarjeta.
 
-- mínimo 12 huecos y al menos 2 por cada familia elegida cuando la selección lo permita;
+- el texto maestro incluye una aparición de las 19 formas;
 - las formas no seleccionadas se muestran resueltas;
 - el banco usa el orden editorial mezclado, nunca el orden de los huecos;
+- una selección de una sola forma mantiene tres distractores; algunas tarjetas sobran;
 - dos tarjetas con el mismo texto siguen siendo dos entidades distintas;
 - cada hueco vale un punto;
 - se puede vaciar o reemplazar cualquier asignación antes de terminar.
@@ -297,20 +299,14 @@ El primer release no sale con una muestra de una pregunta por forma.
 |---|---:|
 | Nivel 1 | 57 ítems: 3 × 19 formas |
 | Nivel 2 | 57 microtextos: 3 × 19 formas |
-| Nivel 3 | 12 relatos, con 2 apariciones mínimas por forma |
+| Nivel 3 | 38 bloques acumulativos: 2 × 19 formas |
 | Nivel 4 | 38 errores: 2 × 19 formas |
-| Nivel 5 | 12 mapas, con 2 apariciones mínimas por forma |
-| Nivel 6 | 6 reconstrucciones finales |
+| Nivel 5 | 19 mapas de 3 funciones |
+| Nivel 6 | 1 reconstrucción maestra de 19 huecos con distractores adaptativos |
 
-Para que una selección pequeña no produzca niveles vacíos o de un solo reto, el motor elige de
-cada banco hasta completar un objetivo de sesión:
-
-- niveles 1, 2 y 4: 6–10 retos;
-- nivel 3: 2–4 relatos;
-- nivel 5: 5–8 ranuras;
-- nivel 6: una reconstrucción de 12–18 huecos.
-
-Si el banco todavía no cumple, la forma no aparece seleccionable en producción.
+El motor muestra todos los retos de las formas seleccionadas y conserva el intento completo en
+localStorage. Esto permite sesiones breves con una forma y recorridos acumulativos largos sin
+perder el avance al recargar.
 
 ## 10. Guardián obligatorio
 
@@ -324,6 +320,10 @@ Crear `scripts/check-tense-quests.mjs` y ejecutarlo en `prebuild`. Debe fallar s
 6. alguna forma seleccionable incumple la cobertura mínima de §9;
 7. un reto queda sin explicación o sin ancla contextual;
 8. una forma declarada no existe en el catálogo;
+9. las respuestas no se reparten de forma equilibrada entre A, B, C y D;
+10. el token defectuoso no aparece de forma equilibrada en las tres posiciones;
+11. una pista del mapa funcional reproduce literalmente su respuesta;
+12. los `storageKey` no son únicos o no tienen versión de esquema;
 9. el mismo distractor aparece dos veces en una pregunta;
 10. una respuesta contiene una partícula móvil repetida en el segmento adyacente;
 11. una historia puede quedar sin huecos activos para la selección que la incluye;

@@ -29,12 +29,31 @@ function checkUniqueIds(config) {
   assert(new Set(ids).size === ids.length, `${config.id}: hay IDs de retos duplicados`)
 }
 
+function assertBalancedPositions(config) {
+  const choicePositions = [0, 0, 0, 0]
+  for (const challenge of config.choiceChallenges) {
+    const position = challenge.options.indexOf(challenge.answer)
+    if (position >= 0) choicePositions[position] += 1
+  }
+  assert(choicePositions.every((count) => count > 0), `${config.id}: la respuesta múltiple no usa las cuatro posiciones (${choicePositions.join('/')})`)
+  assert(Math.max(...choicePositions) - Math.min(...choicePositions) <= 1, `${config.id}: distribución múltiple desequilibrada (${choicePositions.join('/')})`)
+
+  const errorPositions = [0, 0, 0]
+  for (const challenge of config.errorChallenges) {
+    const position = challenge.chunks.findIndex((chunk) => chunk.id === challenge.wrongId)
+    if (position >= 0 && position < errorPositions.length) errorPositions[position] += 1
+  }
+  assert(errorPositions.every((count) => count > 0), `${config.id}: el error no aparece en las tres posiciones (${errorPositions.join('/')})`)
+  assert(Math.max(...errorPositions) - Math.min(...errorPositions) <= 1, `${config.id}: distribución de errores desequilibrada (${errorPositions.join('/')})`)
+}
+
 function validate(config, minimums) {
   const formIds = new Set(config.forms.map((form) => form.id))
   assert(formIds.size === config.forms.length, `${config.id}: hay IDs de forma duplicados`)
   assert(config.forms.every((form) => form.label.trim() && form.group.trim()), `${config.id}: hay formas sin etiqueta o grupo`)
   assert(config.copy.languageCode.trim(), `${config.id}: falta el código de idioma`)
   checkUniqueIds(config)
+  assertBalancedPositions(config)
   assert(config.levels.length === 6, `${config.id}: debe declarar exactamente seis niveles`)
 
   for (const challenge of config.choiceChallenges) {
@@ -66,11 +85,13 @@ function validate(config, minimums) {
 
   for (const challenge of config.timelineChallenges) {
     assert(challenge.slots.length > 0, `${challenge.id}: no tiene posiciones temporales`)
+    assert(challenge.options.length >= 2, `${challenge.id}: necesita al menos dos funciones plausibles`)
     assert(new Set(challenge.slots.map((slot) => slot.id)).size === challenge.slots.length, `${challenge.id}: tiene posiciones duplicadas`)
     assert(new Set(challenge.options).size === challenge.options.length, `${challenge.id}: contiene opciones repetidas`)
     for (const slot of challenge.slots) {
       assert(formIds.has(slot.tense), `${challenge.id}/${slot.id}: referencia una forma inexistente`)
       assert(challenge.options.includes(slot.answer), `${challenge.id}/${slot.id}: su respuesta no está entre las opciones`)
+      assert(slot.hint.trim() !== slot.answer.trim(), `${challenge.id}/${slot.id}: la pista revela literalmente la respuesta`)
     }
   }
 
@@ -108,16 +129,22 @@ function validate(config, minimums) {
 validate(ITALIAN_TENSE_QUEST, { choice: 1, micro: 1, long: 1, error: 1, timeline: 1, final: 1 })
 validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 
-for (const config of [
+const GENERATED_CONFIGS = [
   FRENCH_STRUCTURE_QUEST,
   PORTUGUESE_STRUCTURE_QUEST,
   GERMAN_STRUCTURE_QUEST,
   RUSSIAN_STRUCTURE_QUEST,
   JAPANESE_STRUCTURE_QUEST,
   KOREAN_STRUCTURE_QUEST,
-]) {
+]
+
+for (const config of GENERATED_CONFIGS) {
   validate(config, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 }
+
+const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, ...GENERATED_CONFIGS]
+assert(new Set(allConfigs.map((config) => config.storageKey)).size === allConfigs.length, 'los storageKey deben ser únicos por idioma')
+assert(allConfigs.every((config) => /-v\d+$/.test(config.storageKey)), 'cada storageKey debe declarar una versión de esquema')
 
 if (failures.length) {
   console.error(`Tense quest check failed (${failures.length})`)

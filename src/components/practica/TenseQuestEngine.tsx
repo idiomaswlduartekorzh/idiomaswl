@@ -31,6 +31,22 @@ type ResponseSnapshot = {
 
 type QuestionResult = { correct: number; total: number }
 
+type StoredAttempt = {
+  selectedTenses: string[]
+  activeLevel: number
+  itemIndex: number
+  responses: Record<number, ResponseSnapshot>
+  savedLevelResponses: Record<number, Record<number, ResponseSnapshot>>
+  current: ResponseSnapshot
+  questionResults: Record<number, QuestionResult>
+  summary: boolean
+}
+
+type StoredQuest = {
+  bestScores?: Record<string, number>
+  attempt?: StoredAttempt
+}
+
 function normalize(value: string, locale: string) {
   return value
     .normalize('NFKC')
@@ -73,6 +89,7 @@ function GapText({
                   aria-label={`Conjuga ${gap.verb}`}
                   autoComplete="off"
                   className={s.gapInput}
+                  name={gap.id}
                   onChange={(event) => onChange(gap.id, event.target.value)}
                   spellCheck={false}
                   value={answers[gap.id] ?? ''}
@@ -121,39 +138,100 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
   const [questionResults, setQuestionResults] = useState<Record<number, QuestionResult>>({})
   const [summary, setSummary] = useState(false)
   const [bestScores, setBestScores] = useState<Record<string, number>>({})
+  const [hydrated, setHydrated] = useState(false)
   const taskHeadingRef = useRef<HTMLHeadingElement>(null)
   const resultHeadingRef = useRef<HTMLHeadingElement>(null)
 
   useEffect(() => {
     let cancelled = false
+    let saved: StoredQuest = {}
     try {
-      const saved = JSON.parse(localStorage.getItem(config.storageKey) ?? '{}') as {
-        bestScores?: Record<string, number>
-      }
-      queueMicrotask(() => {
-        if (!cancelled && saved.bestScores) setBestScores(saved.bestScores)
-      })
+      saved = JSON.parse(localStorage.getItem(config.storageKey) ?? '{}') as StoredQuest
     } catch {
       // El progreso local es opcional; un valor corrupto no bloquea el ejercicio.
     }
+
+    const url = new URL(window.location.href)
+    const requested = url.searchParams.get('forms')?.split(',') ?? []
+    const valid = forms.filter((form) => requested.includes(form.id)).map((form) => form.id)
+    const requestedLevel = Number(url.searchParams.get('level')) - 1
+    const level = Number.isInteger(requestedLevel) && requestedLevel >= 0 && requestedLevel < levels.length
+      ? requestedLevel
+      : 0
+    const attempt = saved.attempt
+    const canRestore = Boolean(
+      valid.length
+      && attempt
+      && valid.length === attempt.selectedTenses?.length
+      && valid.every((id, index) => attempt.selectedTenses[index] === id),
+    )
+    const restoredLevel = canRestore
+      && Number.isInteger(attempt!.activeLevel)
+      && attempt!.activeLevel >= 0
+      && attempt!.activeLevel < levels.length
+      ? attempt!.activeLevel
+      : level
+    const validSet = new Set(valid)
+    const restoredTotals = [
+      allChoiceChallenges.filter((challenge) => challenge.tenses.some((id) => validSet.has(id))).length,
+      allMicroStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length,
+      allLongStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length,
+      allErrorChallenges.filter((challenge) => validSet.has(challenge.tense)).length,
+      allTimelineChallenges.filter((challenge) => challenge.slots.some((slot) => validSet.has(slot.tense))).length,
+      finalChallenge.gaps.some((gap) => validSet.has(gap.tenseId)) ? 1 : 0,
+    ]
+    const restoredItem = canRestore
+      && Number.isInteger(attempt!.itemIndex)
+      && attempt!.itemIndex >= 0
+      && attempt!.itemIndex < restoredTotals[restoredLevel]
+      ? attempt!.itemIndex
+      : 0
+    const restoredCurrent = canRestore && restoredItem === attempt!.itemIndex
+      ? attempt!.current
+      : attempt?.responses?.[restoredItem] ?? {}
+
+    queueMicrotask(() => {
+      if (cancelled) return
+      if (saved.bestScores && typeof saved.bestScores === 'object') setBestScores(saved.bestScores)
+      if (valid.length) {
+        setDraftTenses(valid)
+        setSelectedTenses(valid)
+        setConfigured(true)
+        setActiveLevel(restoredLevel)
+        if (canRestore) {
+          setItemIndex(restoredItem)
+          setResponses(attempt!.responses ?? {})
+          setSavedLevelResponses(attempt!.savedLevelResponses ?? {})
+          setQuestionResults(attempt!.questionResults ?? {})
+          setSummary(Boolean(attempt!.summary))
+          setChoice(restoredCurrent?.choice ?? '')
+          setGapAnswers(restoredCurrent?.gapAnswers ?? {})
+          setSelectedError(restoredCurrent?.selectedError ?? '')
+          setCorrection(restoredCurrent?.correction ?? '')
+          setTimelineAnswers(restoredCurrent?.timelineAnswers ?? {})
+          setBankAnswers(restoredCurrent?.bankAnswers ?? {})
+        }
+      }
+      setHydrated(true)
+    })
+
     return () => { cancelled = true }
-  }, [config.storageKey])
+  }, [
+    allChoiceChallenges,
+    allErrorChallenges,
+    allLongStories,
+    allMicroStories,
+    allTimelineChallenges,
+    config.storageKey,
+    finalChallenge.gaps,
+    forms,
+    levels.length,
+  ])
 
   useEffect(() => {
     if (!configured) return
     requestAnimationFrame(() => (summary ? resultHeadingRef.current : taskHeadingRef.current)?.focus())
   }, [activeLevel, configured, itemIndex, summary])
-
-  useEffect(() => {
-    const requested = new URLSearchParams(window.location.search).get('forms')?.split(',') ?? []
-    const valid = forms.filter((form) => requested.includes(form.id)).map((form) => form.id)
-    if (!valid.length) return
-    queueMicrotask(() => {
-      setDraftTenses(valid)
-      setSelectedTenses(valid)
-      setConfigured(true)
-    })
-  }, [forms])
 
   const selectedSet = useMemo(() => new Set(selectedTenses), [selectedTenses])
 
@@ -181,6 +259,57 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
     () => finalChallenge.gaps.filter((gap) => selectedSet.has(gap.tenseId)),
     [finalChallenge.gaps, selectedSet],
   )
+  const finalBankCards = useMemo(() => {
+    const correctIds = new Set(finalGaps.map((gap) => gap.answerCardId))
+    const minimumSize = Math.min(finalChallenge.cards.length, Math.max(finalGaps.length, 4))
+    const decoyIds = new Set(
+      finalChallenge.cards
+        .filter((card) => !correctIds.has(card.id))
+        .slice(0, Math.max(0, minimumSize - correctIds.size))
+        .map((card) => card.id),
+    )
+    return finalChallenge.cards.filter((card) => correctIds.has(card.id) || decoyIds.has(card.id))
+  }, [finalChallenge.cards, finalGaps])
+
+  useEffect(() => {
+    if (!hydrated) return
+    const stored: StoredQuest = {
+      bestScores,
+      attempt: configured ? {
+        selectedTenses,
+        activeLevel,
+        itemIndex,
+        responses,
+        savedLevelResponses,
+        current: { choice, gapAnswers, selectedError, correction, timelineAnswers, bankAnswers },
+        questionResults,
+        summary,
+      } : undefined,
+    }
+    try {
+      localStorage.setItem(config.storageKey, JSON.stringify(stored))
+    } catch {
+      // El quiz sigue funcionando cuando el almacenamiento local está bloqueado.
+    }
+  }, [
+    activeLevel,
+    bankAnswers,
+    bestScores,
+    choice,
+    configured,
+    config.storageKey,
+    correction,
+    gapAnswers,
+    hydrated,
+    itemIndex,
+    questionResults,
+    responses,
+    savedLevelResponses,
+    selectedError,
+    selectedTenses,
+    summary,
+    timelineAnswers,
+  ])
 
   function cardText(cardId?: string) {
     return finalChallenge.cards.find((card) => card.id === cardId)?.text ?? ''
@@ -296,11 +425,6 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
     const key = scoreKey(activeLevel)
     const next = { ...bestScores, [key]: Math.max(bestScores[key] ?? 0, percentage) }
     setBestScores(next)
-    try {
-      localStorage.setItem(config.storageKey, JSON.stringify({ bestScores: next }))
-    } catch {
-      // El quiz sigue funcionando aunque el navegador bloquee localStorage.
-    }
   }
 
   function submitCurrent() {
@@ -348,6 +472,9 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
     setQuestionResults({})
     setSummary(false)
     loadResponse(targetResponses[0])
+    const url = new URL(window.location.href)
+    url.searchParams.set('level', String(index + 1))
+    window.history.replaceState({}, '', url)
   }
 
   function retryLevel() {
@@ -386,6 +513,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
     setSelectedTenses(orderedSelection)
     const url = new URL(window.location.href)
     url.searchParams.set('forms', orderedSelection.join(','))
+    url.searchParams.set('level', '1')
     window.history.replaceState({}, '', url)
     setConfigured(true)
     setActiveLevel(0)
@@ -403,6 +531,31 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
     setActiveBankGap('')
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     requestAnimationFrame(() => document.getElementById('quiz-levels')?.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' }))
+  }
+
+  function hasAttemptProgress() {
+    return !summary && (itemIndex > 0
+      || Object.keys(responses).length > 0
+      || Boolean(choice || selectedError || correction.trim())
+      || Object.values(gapAnswers).some(Boolean)
+      || Object.values(timelineAnswers).some(Boolean)
+      || Object.values(bankAnswers).some(Boolean))
+  }
+
+  function changeSelection() {
+    if (hasAttemptProgress() && !window.confirm('Cambiar la selección descartará este intento en curso. ¿Quieres continuar?')) return
+    const url = new URL(window.location.href)
+    url.searchParams.delete('forms')
+    url.searchParams.delete('level')
+    window.history.replaceState({}, '', url)
+    setConfigured(false)
+    setActiveLevel(0)
+    setItemIndex(0)
+    setResponses({})
+    setSavedLevelResponses({})
+    setQuestionResults({})
+    setSummary(false)
+    clearInteraction()
   }
 
   function assignBankForm(form: string) {
@@ -476,7 +629,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
       <>
         <p className={s.taskInstruction}>{challenge.prompt}</p>
         <p className={s.choiceContext} lang={copy.languageCode}>{challenge.context}</p>
-        <div className="wlp-option-grid">
+        <div className="wlp-option-grid" lang={copy.languageCode}>
           {challenge.options.map((option, index) => (
             <button
               aria-pressed={option === choice}
@@ -534,8 +687,9 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
           <span>Reescribe el verbo</span>
           <input
             autoComplete="off"
+            name={`${config.id}-correction`}
             onChange={(event) => setCorrection(event.target.value)}
-            placeholder={selectedError ? 'Escribe la forma corregida' : 'Primero selecciona el verbo'}
+            placeholder={selectedError ? 'Escribe la forma corregida…' : 'Primero selecciona el verbo…'}
             spellCheck={false}
             value={correction}
           />
@@ -550,7 +704,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
     return (
       <>
         <p className={s.taskInstruction}>{challenge.context}</p>
-        <div className={s.timelineBoard}>
+        <div className={s.timelineBoard} lang={copy.languageCode}>
           {slots.map((slot, index) => (
             <label className={s.timelineRow} key={slot.id}>
               <span className={s.timelineMarker}>{index + 1}</span>
@@ -559,6 +713,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
                 <small>{slot.hint}</small>
               </span>
               <select
+                name={slot.id}
                 onChange={(event) => setTimelineAnswers((current) => ({ ...current, [slot.id]: event.target.value }))}
                 value={timelineAnswers[slot.id] ?? ''}
               >
@@ -606,11 +761,12 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
         <div className={s.bankHeader}>
           <span>Banco de formas</span>
           <button disabled={!bankAnswers[activeBankGap]} onClick={clearActiveBankGap} type="button">
-            <X size={14} /> Vaciar selección
+            <X aria-hidden="true" size={14} /> Vaciar selección
           </button>
         </div>
-        <div className={s.wordBank}>
-          {finalChallenge.cards.filter((card) => finalGaps.some((gap) => gap.answerCardId === card.id)).map((card) => (
+        {finalBankCards.length > finalGaps.length ? <p className={s.bankHint}>Hay tarjetas distractoras que no se usan.</p> : null}
+        <div className={s.wordBank} lang={copy.languageCode}>
+          {finalBankCards.map((card) => (
             <button
               className={used.has(card.id) ? s.bankCardUsed : ''}
               disabled={used.has(card.id)}
@@ -650,7 +806,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
   const nextLevel = nextAvailableLevel()
 
   return (
-    <main className="wlp-page" style={{ '--wlp-accent': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
+    <div className="wlp-page" style={{ '--wlp-accent': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
       <div className="wlp-shell">
         <nav aria-label="Migas de pan" className="wlp-breadcrumb">
           <Link href="/herramientas">Herramientas</Link>
@@ -663,17 +819,17 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
         <header className={`wlp-hero wlp-hero--compact ${s.hero}`}>
           <div>
             <p className="wlp-eyebrow">{copy.eyebrow}</p>
-            <h1>{copy.title}</h1>
+            <h1 lang={copy.languageCode}>{copy.title}</h1>
             <p className="wlp-hero-lead">{copy.lead}</p>
           </div>
           <dl className={s.heroStats}>
-            <div><dt>{forms.length}</dt><dd>formas</dd></div>
+            <div><dt>{forms.length}</dt><dd>objetivos</dd></div>
             <div><dt>{levels.length}</dt><dd>niveles</dd></div>
             <div><dt>1</dt><dd>resultado por nivel</dd></div>
           </dl>
         </header>
 
-        <section aria-label="Mapa de referencia" className={s.timeMap}>
+        <section aria-label="Mapa de referencia" className={s.timeMap} lang={copy.languageCode}>
           <span>{copy.mapLabels[0]}</span>
           <i aria-hidden="true" />
           <span>{copy.mapLabels[1]}</span>
@@ -704,7 +860,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
               <button onClick={() => setDraftTenses([])} type="button">Limpiar</button>
             </div>
 
-            <div className={s.tenseGrid}>
+            <div className={s.tenseGrid} lang={copy.languageCode}>
               {forms.map((tense) => {
                 const selected = draftTenses.includes(tense.id)
                 return (
@@ -734,11 +890,11 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
           <section aria-label="Formas seleccionadas" className={s.selectionBar}>
             <div>
               <SlidersHorizontal aria-hidden="true" size={18} />
-              <span>
+              <span lang={copy.languageCode}>
                 {forms.filter((tense) => selectedSet.has(tense.id)).map((tense) => tense.label).join(' · ')}
               </span>
             </div>
-            <button onClick={() => setConfigured(false)} type="button">Cambiar selección</button>
+            <button onClick={changeSelection} type="button">Cambiar selección</button>
           </section>
         )}
 
@@ -830,8 +986,8 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
                               : <XCircle aria-hidden="true" size={19} />}
                             <strong>{index + 1}. {itemTitle(index)} · {result.correct}/{result.total}</strong>
                           </div>
-                          <p><b>Tu respuesta:</b> {submittedAnswer(index)}</p>
-                          {!correct ? <p><b>Respuesta correcta:</b> {expectedAnswer(index)}</p> : null}
+                          <p><b>Tu respuesta:</b> <span lang={copy.languageCode}>{submittedAnswer(index)}</span></p>
+                          {!correct ? <p><b>Respuesta correcta:</b> <span lang={copy.languageCode}>{expectedAnswer(index)}</span></p> : null}
                           <small>{itemExplanation(index)}</small>
                         </li>
                       )
@@ -856,7 +1012,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
                   <div className={s.taskHeader}>
                     <div>
                       <p className="wlp-eyebrow">{currentFocus}</p>
-                      <h3 ref={taskHeadingRef} tabIndex={-1}>{currentTitle}</h3>
+                      <h3 lang={copy.languageCode} ref={taskHeadingRef} tabIndex={-1}>{currentTitle}</h3>
                     </div>
                     <span>{meta.short}</span>
                   </div>
@@ -886,6 +1042,6 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
           {copy.reviewLinks.map((link) => <Link href={link.href} key={link.href}>{link.label}</Link>)}
         </nav>
       </div>
-    </main>
+    </div>
   )
 }
