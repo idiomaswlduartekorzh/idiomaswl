@@ -13,6 +13,7 @@ import { ROLEPLAY_INGLES_A1_BATCH_5 } from './ingles-a1-batch-5.ts'
 import { ROLEPLAY_INGLES_A1_BATCH_6 } from './ingles-a1-batch-6.ts'
 import { ROLEPLAY_INGLES_A1_BATCH_7 } from './ingles-a1-batch-7.ts'
 import { ROLEPLAY_INGLES_A1_BATCH_8 } from './ingles-a1-batch-8.ts'
+import { ROLEPLAY_INGLES_A1_BATCH_9 } from './ingles-a1-batch-9.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -59,6 +60,7 @@ export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
       ...ROLEPLAY_INGLES_A1_BATCH_6,
       ...ROLEPLAY_INGLES_A1_BATCH_7,
       ...ROLEPLAY_INGLES_A1_BATCH_8,
+      ...ROLEPLAY_INGLES_A1_BATCH_9,
     ],
     toolkit: TOOLKIT_INGLES_A1,
   },
