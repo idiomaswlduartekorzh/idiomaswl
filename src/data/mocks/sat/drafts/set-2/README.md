@@ -7,13 +7,16 @@ publicará mientras siga con `status: draft`.
 ## Estado actual
 
 - M1: 27/27 ítems escritos y ocho puertas mecánicas superadas.
-- M2 estándar: 0/27.
-- M2 exigente: 0/27.
-- Auditorías editoriales y prueba a ciegas de M1: pendientes.
-- Set completo: 27/81 ítems escritos; **no publicable**.
+- M2 estándar: 27/27 ítems escritos y ocho puertas mecánicas superadas.
+- M2 exigente: 27/27 ítems escritos y ocho puertas mecánicas superadas.
+- Auditoría editorial de Codex y controles reproducibles: completados; no hubo panel
+  humano o multi-modelo independiente y esa limitación está declarada en las actas.
+- Set completo: 81/81 ítems escritos; **todavía no publicable**.
 
-El M1 permanece dentro de `drafts/` hasta que las auditorías de criterio sean APTO. Se
-valida sin omitir ni falsificar actas con:
+Las fuentes candidatas viven en `src/data/mocks/sat/sat-set-2-*.ts`; este directorio
+conserva wrappers de auditoría y el manifiesto. El catálogo sigue en `draft`, por lo que el
+hub y el registro no pueden servirlas. Se validan mecánicamente sin saltar la puerta de
+producto con:
 
 ```bash
 node scripts/check-sat-exam.mjs --draft \
@@ -22,13 +25,13 @@ node scripts/check-sat-exam.mjs --draft \
 
 ## Contrato de salida
 
-- Escribir primero los tres módulos bajo este directorio de borradores.
+- Mantener wrappers de auditoría bajo este directorio mientras el catálogo siga en draft.
 - Mantener por módulo CS 8 · II 7 · SEC 7 · EOI 5 y el orden del manifest.
 - Completar metadatos, razones A-D, dificultad, tema y fuentes de hechos.
-- Superar las ocho puertas mecánicas en borrador y obtener tres actas APTO con huellas
-  vigentes antes de promover los archivos a `src/data/mocks/sat/sat-set-2-*.ts`.
+- Mantener tres actas APTO con huellas vigentes. `publicable` permanece en `false` hasta
+  completar build y QA de navegador con recursos disponibles.
 - Componer `src/data/mocks/sat/sat-set-2.ts` con `buildSatMock`.
-- Solo entonces cambiar esta entrada del catálogo a `published`, declarar fuente,
+- Solo después de ese QA cambiar esta entrada del catálogo a `published`, declarar fuente,
   exportación, módulos y tarjeta, y ejecutar `npm run generate:sat-catalog`.
 
 El guardián `npm run check:sat-catalog` impide que este borrador aparezca en el hub o

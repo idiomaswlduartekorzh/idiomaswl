@@ -504,8 +504,8 @@ function checkModule(mod) {
       // la enseñó una auditoría de producto que encontró el embudo de leads roto y los textos
       // recortados en móvil con el contenido ya en APTO. Un módulo impecable dentro de un
       // producto roto sigue siendo un producto roto.
-      if (a.publicable === false) {
-        fail(id, 'producto', `el contenido es APTO pero el acta declara el producto NO publicable (${(a.bloqueantesDeProducto || []).length} bloqueantes de producto)`)
+      if (a.publicable !== true) {
+        fail(id, 'producto', `el contenido es APTO pero el acta no declara el producto publicable (${(a.bloqueantesDeProducto || []).length} bloqueantes de producto)`)
         for (const b of a.bloqueantesDeProducto || []) warn(id, 'producto', b)
       }
     }

@@ -17,12 +17,21 @@ import { createRequire } from 'node:module'
  * de 0 a 27, no con dos casos de ejemplo.
  *
  *   node scripts/check-sat-adaptive.mjs
+ *   node scripts/check-sat-adaptive.mjs --candidate src/data/mocks/sat/sat-set-2.ts --export satSet2
  */
 
 const require = createRequire(import.meta.url)
 const ts = require('typescript')
 const cache = new Map()
 const catalogFile = path.resolve('src/data/mocks/sat/catalog.json')
+const args = process.argv.slice(2)
+const candidateFile = args.includes('--candidate') ? args[args.indexOf('--candidate') + 1] : null
+const candidateExport = args.includes('--export') ? args[args.indexOf('--export') + 1] : null
+
+if (candidateFile && !candidateExport) {
+  console.error('❌ --candidate exige --export para identificar el simulacro candidato.')
+  process.exit(1)
+}
 
 function loadTs(file) {
   const r = path.resolve(file)
@@ -253,6 +262,19 @@ for (const set of publishedSets) {
     }
   } catch (err) {
     fail(`${set.id}: no se pudo auditar el producto real: ${err.message}`)
+  }
+}
+
+// Un set todavía en draft se puede probar de extremo a extremo sin registrarlo en el hub.
+// Esto rompe el círculo peligroso de «publicarlo para poder comprobarlo»: el candidato
+// tiene que superar primero el mismo contrato que los sets publicados.
+if (candidateFile) {
+  try {
+    const candidate = loadTs(candidateFile)?.[candidateExport]
+    if (!candidate) fail(`candidato: ${candidateFile} no exporta ${candidateExport}`)
+    else cordura(candidate, `candidato ${candidate.id || candidateExport}`)
+  } catch (err) {
+    fail(`candidato: no se pudo auditar ${candidateFile}: ${err.message}`)
   }
 }
 

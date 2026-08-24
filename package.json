@@ -24,6 +24,7 @@
     "check:fonetica-coreano": "node --experimental-strip-types --no-warnings scripts/check-fonetica-coreano.mjs",
     "check:fonetica-frances": "node --experimental-strip-types --no-warnings scripts/check-fonetica-frances.mjs",
     "check:sat": "node scripts/check-sat-exam.mjs",
+    "check:sat-originality-local": "node scripts/check-sat-originality-local.mjs",
     "check:sat-catalog": "node scripts/build-sat-catalog.mjs",
     "generate:sat-catalog": "node scripts/build-sat-catalog.mjs --write",
     "scaffold:sat": "node scripts/scaffold-sat-set.mjs",

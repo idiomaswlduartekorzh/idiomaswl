@@ -1,0 +1,85 @@
+{
+  "modulo": "sat-set-2-m2-facil",
+  "fecha": "2026-08-23",
+  "auditorias": {
+    "clave": {
+      "agente": "Codex — segunda pasada editorial no independiente",
+      "veredicto": "APTO",
+      "itemsConDosClaves": 0,
+      "notas": "Resolución razonada de los 27 ítems con revisión de cada distractor. Metodología y limitaciones en docs/sat-auditorias/informes/sat-set-2-editorial.md."
+    },
+    "sesgo": {
+      "agente": "check-sat-exam + panel heurístico reproducible",
+      "veredicto": "APTO",
+      "pruebaACiegasPct": 26.1,
+      "notas": "Dieciocho perfiles automáticos sin acceso al pasaje; ningún ítem fue acertado por al menos 75 % de los perfiles. No es un panel humano."
+    },
+    "equidad": {
+      "agente": "Codex — revisión editorial no independiente",
+      "veredicto": "APTO",
+      "banderas": 0,
+      "notas": "Los datos necesarios están en cada estímulo y no se exige conocimiento cultural, regional o económico externo."
+    },
+    "lengua": {
+      "agente": "Codex + montaje mecánico de huecos",
+      "veredicto": "APTO",
+      "bloqueantes": 0,
+      "notas": "Inglés estadounidense, enunciados SAT canónicos y reglas SEC nombradas; cero duplicaciones de palabra en huecos."
+    },
+    "dificultad": {
+      "agente": "matriz editorial + guardián de curva",
+      "veredicto": "APTO",
+      "notas": "10 fáciles, 13 medios y 4 difíciles; media 1,78, inferior a M1."
+    },
+    "originalidad": {
+      "agente": "redacción original + búsqueda local y web representativa",
+      "veredicto": "APTO",
+      "banderasRojas": 0,
+      "notas": "Cero secuencias internas comunes de ocho palabras entre 162 ítems. Doce búsquedas literales web representativas sin coincidencias exactas; no equivale a rastreo exhaustivo."
+    },
+    "simulacion": {
+      "agente": "18 perfiles heurísticos reproducibles",
+      "veredicto": "APTO",
+      "tramposoPct": 26.1,
+      "notas": "Panel automático reproducible, no humano ni multi-modelo. Limitación declarada en el informe editorial."
+    }
+  },
+  "veredicto": "APTO",
+  "quedaAbierto": [
+    "Panel humano o multi-modelo independiente recomendado como evidencia adicional, no disponible en esta ejecución."
+  ],
+  "publicable": false,
+  "bloqueantesDeProducto": [
+    "Pendiente componer el Set 2, ejecutar build/guardia adaptativa y recorrer ambas ramas en navegador antes de autorizar publicación."
+  ],
+  "notaSobreElActa": "Certifica contenido con revisión de Codex y controles reproducibles; no afirma independencia. La publicabilidad permanece bloqueada hasta la auditoría de producto.",
+  "huellas": {
+    "q01": "a02079072b6d",
+    "q02": "ee7cf8f81403",
+    "q03": "c59588423d71",
+    "q04": "1d16e1ebfb52",
+    "q05": "76f8342db045",
+    "q06": "fa9bd2a285f6",
+    "q07": "8774d73a37d6",
+    "q08": "48a8b8aa70f7",
+    "q09": "3817328af219",
+    "q10": "00113ea55ec5",
+    "q11": "a05d66d063e5",
+    "q12": "06b87ee228ad",
+    "q13": "ad68be05dcc0",
+    "q14": "35faaec7fc0c",
+    "q15": "013f9beea791",
+    "q16": "50c89ee90014",
+    "q17": "7bb82f7c7c2f",
+    "q18": "5935d3dceb62",
+    "q19": "c116d67156d4",
+    "q20": "6d174858d63b",
+    "q21": "725d06d09be5",
+    "q22": "fbd7493e7395",
+    "q23": "146913d15c1b",
+    "q24": "f9be9915ec02",
+    "q25": "c932feae8910",
+    "q26": "8d0354ee5811",
+    "q27": "029ddbe0a8d9"
+  }
+}

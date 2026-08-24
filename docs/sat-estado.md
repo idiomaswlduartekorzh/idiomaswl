@@ -16,9 +16,10 @@ Actualizado el **23 de agosto de 2026**.
   - `docs/sat-auditorias/sat-set-1-m2-dificil.json`
 
 **Inventario:** hay **1 SAT completo publicado**, formado por 3 módulos autorados y 81
-preguntas originales; cada estudiante responde 54. Existe además el scaffold de `set-2`
-con 81 slots editoriales, pero es un borrador sin preguntas y no cuenta como simulacro
-disponible.
+preguntas originales; cada estudiante responde 54. Existe además un candidato completo
+de `set-2` con otras 81 preguntas, tres módulos, actas editoriales y guardias mecánicas en
+verde. Sigue en `draft`, no aparece en el hub y no cuenta como simulacro disponible hasta
+completar build y QA de navegador.
 
 ## Blueprint de escala
 
@@ -44,6 +45,8 @@ disponible.
   enlaces internos, dominios y aviso de marca.
 - `node scripts/sat-blind-test.mjs --module <id> --heuristics`: panel reproducible de 18
   atajos sin pasajes. La rama estándar dio 21,0 %; la exigente, 26,1 %; azar, 25 %.
+- `npm run check:sat-originality-local`: rechaza secuencias internas repetidas de ocho
+  palabras entre estímulos y opciones, incluyendo candidatos en `drafts`.
 
 ## Transparencia editorial
 
@@ -51,6 +54,11 @@ La pasada final de M2 fue realizada por Codex con revisión editorial y heuríst
 reproducibles; no se presenta como panel humano o multi-modelo independiente. Las actas
 declaran esta limitación. Un panel externo futuro puede ampliar la evidencia, pero ya no
 hay un bloqueo técnico o editorial sin documentar dentro de esta rama.
+
+El Set 2 usa la misma transparencia: segunda pasada de Codex, no independiente; 18
+heurísticas sin pasaje (M1 23,7 %, estándar 26,1 %, exigente 23,0 %); cero coincidencias
+locales de ocho palabras. Su bloqueo actual es de producto y recursos: no se ejecutará un
+build ni un navegador mientras otras sesiones pesadas estén trabajando en el equipo.
 
 ## Antes de la siguiente publicación
 

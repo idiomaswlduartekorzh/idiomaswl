@@ -57,6 +57,12 @@ test('el modo borrador no puede omitir actas fuera del directorio drafts', () =>
   assert.match(result.stderr, /solo admite archivos dentro de src\/data\/mocks\/sat\/drafts/)
 })
 
+test('un acta debe declarar publicable true; omitir el campo no da luz verde', () => {
+  const checker = fs.readFileSync(path.join(ROOT, 'scripts/check-sat-exam.mjs'), 'utf8')
+  assert.match(checker, /a\.publicable !== true/)
+  assert.doesNotMatch(checker, /a\.publicable === false/)
+})
+
 test('la prueba ciega puede medir módulos que todavía viven en drafts', () => {
   const result = spawnSync(process.execPath, [
     'scripts/sat-blind-test.mjs', '--module', 'sat-set-2-m1',
@@ -66,4 +72,47 @@ test('la prueba ciega puede medir módulos que todavía viven en drafts', () => 
   assert.equal(result.status, 0, result.stderr || result.stdout)
   assert.match(result.stdout, /media 23\.7 % · techo 35 %/)
   assert.match(result.stdout, /ítems acertados por ≥75 % de las heurísticas: ninguno/)
+})
+
+test('los tres módulos escritos del set 2 pasan puertas mecánicas y conservan la progresión adaptativa', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(
+    ROOT, 'src/data/mocks/sat/drafts/set-2/manifest.json',
+  ), 'utf8'))
+  const means = {}
+
+  for (const draftModule of manifest.modules) {
+    assert.equal(draftModule.writtenQuestions, 27)
+    assert.equal(draftModule.mechanicalGates, 'PASS')
+    assert.equal(draftModule.editorialGates, 'PASS_WITH_DECLARED_LIMITS')
+    assert.equal(draftModule.productGate, 'PENDING_BUILD_BROWSER')
+    assert.equal(draftModule.slots.filter((slot) => slot.status === 'written').length, 27)
+    means[draftModule.variant] = draftModule.slots.reduce((sum, slot) => sum + slot.difficulty, 0) / 27
+
+    const result = spawnSync(process.execPath, [
+      'scripts/check-sat-exam.mjs', '--draft', '--file', draftModule.contentFile,
+    ], { cwd: ROOT, encoding: 'utf8' })
+    assert.equal(result.status, 0, result.stderr || result.stdout)
+  }
+
+  assert.ok(means['M2-facil'] < means.M1, JSON.stringify(means))
+  assert.ok(means['M2-dificil'] > means.M1, JSON.stringify(means))
+})
+
+test('ningún módulo SAT reutiliza secuencias internas de ocho palabras', () => {
+  const result = spawnSync(process.execPath, ['scripts/check-sat-originality-local.mjs'], {
+    cwd: ROOT,
+    encoding: 'utf8',
+  })
+  assert.equal(result.status, 0, result.stderr || result.stdout)
+  assert.match(result.stdout, /sin coincidencias de 8\+ palabras/)
+})
+
+test('el set 2 candidato supera el contrato adaptativo sin entrar al catálogo publicado', () => {
+  const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf8'))
+  assert.equal(catalog.sets.find((set) => set.id === 'set-2')?.status, 'draft')
+  const result = spawnSync(process.execPath, [
+    'scripts/check-sat-adaptive.mjs',
+    '--candidate', 'src/data/mocks/sat/sat-set-2.ts', '--export', 'satSet2',
+  ], { cwd: ROOT, encoding: 'utf8' })
+  assert.equal(result.status, 0, result.stderr || result.stdout)
 })

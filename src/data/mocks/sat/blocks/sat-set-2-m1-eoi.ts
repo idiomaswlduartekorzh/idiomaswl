@@ -1,5 +1,5 @@
-import type { MCQQuestion } from '../../../../types'
-import type { SatItemMeta } from '../../../module-types'
+import type { MCQQuestion } from '../../types'
+import type { SatItemMeta } from '../module-types'
 
 export const items: MCQQuestion[] = [
   {
