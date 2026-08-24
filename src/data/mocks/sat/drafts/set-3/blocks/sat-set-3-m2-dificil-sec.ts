@@ -96,7 +96,7 @@ export const meta: SatItemMeta[] = [
     C: 'El gerundio no es paralelo a los dos infinitivos anteriores.',
     D: 'Correcta: mend completa el tercer infinitivo coordinado bajo el to compartido.',
   }, fuenteHecho: 'Cartas y tratamiento de conservación originales.' },
-  { id: 'q22', domain: 'SEC', tipo: 'form-structure-sense', dificultad: 3, tema: 'historia', regla: 'Pasado perfecto para una acción terminada antes de un punto de referencia pasado.', razones: {
+  { id: 'q22', domain: 'SEC', tipo: 'form-structure-sense', dificultad: 3, tema: 'ciencia', regla: 'Pasado perfecto para una acción terminada antes de un punto de referencia pasado.', razones: {
     A: 'Correcta: la calibración de marzo ya había ocurrido cuando empezó el análisis de julio y queda paralela a had documented.',
     B: 'El presente perfecto no concuerda con el punto de referencia pasado began ni con la cronología fechada.',
     C: 'El futuro contradice que la calibración precediera al despliegue y al análisis.',

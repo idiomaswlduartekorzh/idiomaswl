@@ -487,10 +487,10 @@
       "variant": "M2-dificil",
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-3/sat-set-3-m2-dificil.ts",
-      "writtenQuestions": 22,
-      "mechanicalGates": "PARTIAL_BLOCK_PASS",
-      "blindHeuristicsMeanPct": 22.7,
-      "editorialGates": "CS_II_SEC_PASS_ONLY",
+      "writtenQuestions": 27,
+      "mechanicalGates": "PASS",
+      "blindHeuristicsMeanPct": 24.3,
+      "editorialGates": "PASS_CONTENT_ONLY",
       "productGate": "NOT_STARTED",
       "slots": [
         {
@@ -666,48 +666,48 @@
           "domain": "SEC",
           "type": "form-structure-sense",
           "difficulty": 3,
-          "topic": "historia",
+          "topic": "ciencia",
           "status": "written"
         },
         {
           "id": "q23",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "humanidades",
+          "status": "written"
         },
         {
           "id": "q24",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "ciencia",
+          "status": "written"
         },
         {
           "id": "q25",
           "domain": "EOI",
           "type": "rhetorical-synthesis",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 3,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q26",
           "domain": "EOI",
           "type": "transitions",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 1,
+          "topic": "historia",
+          "status": "written"
         },
         {
           "id": "q27",
           "domain": "EOI",
           "type": "transitions",
-          "difficulty": null,
-          "topic": null,
-          "status": "empty"
+          "difficulty": 2,
+          "topic": "literatura",
+          "status": "written"
         }
       ],
       "audit": {

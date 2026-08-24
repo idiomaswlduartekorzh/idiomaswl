@@ -39,9 +39,9 @@ siguen pendientes hasta tener ambas ramas M2. La matriz editorial de M2 estánda
 cerrada con perfil 10/13/4 y sus 27 ítems tienen contenido editorial APTO: ocho puertas
 mecánicas, 23,7 % de prueba ciega y cero coincidencias locales. El acta formal y el
 producto siguen bloqueados. La matriz de M2 exigente está cerrada con perfil 5/9/13;
-Craft and Structure q01–q08, Information and Ideas q09–q15 y Standard English
-Conventions q16–q22 están APTOS, 22/27. La siguiente unidad es Expression of Ideas
-q23–q27 de esa rama.
+M2 exigente ya tiene 27/27 y contenido editorial APTO con perfil 5/9/13. Los tres módulos
+de Set 3 están completos en `drafts`; la siguiente unidad es componer el producto y probar
+ambas rutas adaptativas, interfaz, resultados y reintento antes de emitir actas formales.
 Ningún set se promueve junto con otro ni se baja un umbral para sostener el ritmo.
 
 ## Blueprint de escala
