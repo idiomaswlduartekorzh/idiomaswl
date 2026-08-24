@@ -1,9 +1,34 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
+import { notFound } from 'next/navigation'
+import { CourseSchema } from '@/components/practica/EducationSchema'
+import { SpeakingModeHub } from '@/components/practica/roleplay/RoleplayExperience'
+import { getRoleplaySet, speakingPath } from '@/data/practica/habla-acompanado'
 
-export const metadata: Metadata = practicaMetadata('frances', 'a2', 'habla')
+const LANGUAGE = 'frances'
+const LEVEL = 'a2'
+const set = getRoleplaySet(LANGUAGE, LEVEL)
+const scenarioCount = set?.scenarios.length ?? 0
+const canonical = `https://www.idiomaswl.com${speakingPath(LANGUAGE, LEVEL)}`
+
+export const metadata: Metadata = {
+  title: 'Speaking francés A2: solo o en pareja | Idiomas WeLearn',
+  description: `Practica speaking en francés A2 con 20 frases individuales o con ${scenarioCount} juegos de rol para dos personas, fichas separadas y situaciones reales.`,
+  alternates: { canonical },
+}
 
 export default function Page() {
-  return <Content />
+  if (!set) notFound()
+  return (
+    <>
+      <CourseSchema
+        name="Speaking en francés A2 — práctica individual y en pareja"
+        description={`20 frases individuales y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
+        url={canonical}
+        educationalLevel="A2"
+        teaches="Expresión oral en francés"
+        inLanguage="fr"
+      />
+      <SpeakingModeHub set={set} />
+    </>
+  )
 }

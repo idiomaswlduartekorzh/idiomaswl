@@ -21,6 +21,7 @@
     "check:habla-release:a1": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs --target=ingles-a1",
     "check:habla-release:b1": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs --target=ingles-b1",
     "check:habla-release:coreano-a2": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs --target=coreano-a2",
+    "check:habla-release:frances-a2": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs --target=frances-a2",
     "check:tense-quests": "node --experimental-strip-types --no-warnings scripts/check-tense-quests.mjs && npm run test:tense-quests",
     "test:tense-quests": "node --experimental-strip-types --no-warnings --test tests/tense-quests.test.mjs",
     "check:pronoun-quests": "node --experimental-strip-types --no-warnings scripts/check-pronoun-quests.mjs && npm run test:pronoun-quests",
