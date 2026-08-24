@@ -23,6 +23,8 @@ en el registro ejecutable por accidente.
   `docs/sat-auditorias/informes/sat-set-3-m1-cs.md`.
 - M1 Information and Ideas: 7/7 escritos y bloque APTO. Evidencia en
   `docs/sat-auditorias/informes/sat-set-3-m1-ii.md`.
-- M1 total: 15/27.
+- M1 Standard English Conventions: 7/7 escritos y bloque APTO. Evidencia en
+  `docs/sat-auditorias/informes/sat-set-3-m1-sec.md`.
+- M1 total: 22/27.
 - M2 estándar y M2 exigente: 0/27.
-- Siguiente bloque autorizado: M1 Standard English Conventions q16–q22.
+- Siguiente bloque autorizado: M1 Expression of Ideas q23–q27.
