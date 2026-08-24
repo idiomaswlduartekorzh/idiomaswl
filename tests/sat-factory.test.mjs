@@ -74,22 +74,26 @@ test('la prueba ciega puede medir módulos que todavía viven en drafts', () => 
   assert.match(result.stdout, /ítems acertados por ≥75 % de las heurísticas: ninguno/)
 })
 
-test('los tres módulos escritos del set 2 pasan puertas mecánicas y conservan la progresión adaptativa', () => {
+test('los tres módulos publicados del set 2 conservan todas las puertas y la progresión adaptativa', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(
     ROOT, 'src/data/mocks/sat/drafts/set-2/manifest.json',
   ), 'utf8'))
   const means = {}
 
-  for (const draftModule of manifest.modules) {
-    assert.equal(draftModule.writtenQuestions, 27)
-    assert.equal(draftModule.mechanicalGates, 'PASS')
-    assert.equal(draftModule.editorialGates, 'PASS_WITH_DECLARED_LIMITS')
-    assert.equal(draftModule.productGate, 'PENDING_BUILD_BROWSER')
-    assert.equal(draftModule.slots.filter((slot) => slot.status === 'written').length, 27)
-    means[draftModule.variant] = draftModule.slots.reduce((sum, slot) => sum + slot.difficulty, 0) / 27
+  assert.equal(manifest.status, 'published')
+  assert.equal(manifest.publishable, true)
+
+  for (const publishedModule of manifest.modules) {
+    assert.equal(publishedModule.status, 'published')
+    assert.equal(publishedModule.writtenQuestions, 27)
+    assert.equal(publishedModule.mechanicalGates, 'PASS')
+    assert.equal(publishedModule.editorialGates, 'PASS_WITH_DECLARED_LIMITS')
+    assert.equal(publishedModule.productGate, 'PASS')
+    assert.equal(publishedModule.slots.filter((slot) => slot.status === 'written').length, 27)
+    means[publishedModule.variant] = publishedModule.slots.reduce((sum, slot) => sum + slot.difficulty, 0) / 27
 
     const result = spawnSync(process.execPath, [
-      'scripts/check-sat-exam.mjs', '--draft', '--file', draftModule.contentFile,
+      'scripts/check-sat-exam.mjs', '--module', publishedModule.id,
     ], { cwd: ROOT, encoding: 'utf8' })
     assert.equal(result.status, 0, result.stderr || result.stdout)
   }
@@ -107,12 +111,13 @@ test('ningún módulo SAT reutiliza secuencias internas de ocho palabras', () =>
   assert.match(result.stdout, /sin coincidencias de 8\+ palabras/)
 })
 
-test('el set 2 candidato supera el contrato adaptativo sin entrar al catálogo publicado', () => {
+test('el set 2 publicado supera el contrato adaptativo desde el catálogo', () => {
   const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf8'))
-  assert.equal(catalog.sets.find((set) => set.id === 'set-2')?.status, 'draft')
-  const result = spawnSync(process.execPath, [
-    'scripts/check-sat-adaptive.mjs',
-    '--candidate', 'src/data/mocks/sat/sat-set-2.ts', '--export', 'satSet2',
-  ], { cwd: ROOT, encoding: 'utf8' })
+  assert.equal(catalog.sets.find((set) => set.id === 'set-2')?.status, 'published')
+  const result = spawnSync(process.execPath, ['scripts/check-sat-adaptive.mjs'], {
+    cwd: ROOT,
+    encoding: 'utf8',
+  })
   assert.equal(result.status, 0, result.stderr || result.stdout)
+  assert.match(result.stdout, /2 set\(s\) publicado\(s\) auditado\(s\)/)
 })

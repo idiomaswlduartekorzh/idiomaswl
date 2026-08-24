@@ -8,18 +8,20 @@ Actualizado el **23 de agosto de 2026**.
   metadatos sociales, `LearningResource`, `FAQPage`, `BreadcrumbList` e `ItemList`.
 - `set-1`: simulacro adaptativo completo de Reading and Writing, 54 preguntas y 64
   minutos. Sirve M1 y exactamente una rama de M2.
+- `set-2`: segundo simulacro adaptativo completo, con otras 81 preguntas autoradas y 54
+  servidas por intento. Superó guardianes, TypeScript, build y las dos rutas de navegador.
 - Corte de práctica WeLearn: 16 de 27 en M1. Es una convención explícita y no se presenta
   como el algoritmo privado de College Board.
 - Actas vigentes:
   - `docs/sat-auditorias/sat-set-1-m1.json`
   - `docs/sat-auditorias/sat-set-1-m2-facil.json`
   - `docs/sat-auditorias/sat-set-1-m2-dificil.json`
+  - `docs/sat-auditorias/sat-set-2-m1.json`
+  - `docs/sat-auditorias/sat-set-2-m2-facil.json`
+  - `docs/sat-auditorias/sat-set-2-m2-dificil.json`
 
-**Inventario:** hay **1 SAT completo publicado**, formado por 3 módulos autorados y 81
-preguntas originales; cada estudiante responde 54. Existe además un candidato completo
-de `set-2` con otras 81 preguntas, tres módulos, actas editoriales y guardias mecánicas en
-verde. Sigue en `draft`, no aparece en el hub y no cuenta como simulacro disponible hasta
-completar build y QA de navegador.
+**Inventario:** hay **2 SAT completos publicados**, formados por 6 módulos y 162 preguntas
+originales; cada estudiante responde 54 por intento y nunca recibe las dos ramas de M2.
 
 ## Blueprint de escala
 
@@ -57,8 +59,8 @@ hay un bloqueo técnico o editorial sin documentar dentro de esta rama.
 
 El Set 2 usa la misma transparencia: segunda pasada de Codex, no independiente; 18
 heurísticas sin pasaje (M1 23,7 %, estándar 26,1 %, exigente 23,0 %); cero coincidencias
-locales de ocho palabras. Su bloqueo actual es de producto y recursos: no se ejecutará un
-build ni un navegador mientras otras sesiones pesadas estén trabajando en el equipo.
+locales de ocho palabras. Su auditoría de producto recorrió ambas ramas en un build real,
+incluido móvil a 390 px, antes de firmar las actas como publicables.
 
 ## Antes de la siguiente publicación
 

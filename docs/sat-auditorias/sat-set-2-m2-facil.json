@@ -48,11 +48,9 @@
   "quedaAbierto": [
     "Panel humano o multi-modelo independiente recomendado como evidencia adicional, no disponible en esta ejecución."
   ],
-  "publicable": false,
-  "bloqueantesDeProducto": [
-    "La composición y la guardia adaptativa candidata están en verde; faltan TypeScript, build y el recorrido de ambas ramas en navegador antes de autorizar publicación."
-  ],
-  "notaSobreElActa": "Certifica contenido con revisión de Codex y controles reproducibles; no afirma independencia. La publicabilidad permanece bloqueada hasta la auditoría de producto.",
+  "publicable": true,
+  "bloqueantesDeProducto": [],
+  "notaSobreElActa": "Certifica contenido con revisión de Codex y controles reproducibles; no afirma independencia. La auditoría de producto del 23 ago 2026 completó TypeScript, dos builds Webpack y recorridos de navegador de ambas ramas y móvil.",
   "huellas": {
     "q01": "a02079072b6d",
     "q02": "ee7cf8f81403",
