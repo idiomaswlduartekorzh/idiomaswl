@@ -10,7 +10,7 @@ const PAGE_URL = 'https://www.idiomaswl.com/herramientas/quizes'
 export const metadata: Metadata = {
   title: 'Quizes de idiomas — ejercicios gratuitos y autocorregibles',
   description:
-    'Quizes gratuitos en ocho idiomas con niveles progresivos y resultados al terminar cada nivel. Practica tiempo, aspecto, modalidad y registro.',
+    'Quizes gratuitos con niveles progresivos y resultados al terminar cada nivel. Practica tiempos, estructuras y pronombres por idioma.',
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: 'Quizes de idiomas — Idiomas WeLearn',
@@ -110,6 +110,24 @@ export default function QuizesPage() {
             </li>
           ))}
         </ul>
+
+        <section className="wlp-section" aria-labelledby="more-quizzes">
+          <div className="wlp-section-heading">
+            <p className="wlp-eyebrow">Nueva familia</p>
+            <h2 id="more-quizzes">Pronombres en contexto</h2>
+            <p>Entrena referente, función, concordancia y posición con respuestas cerradas.</p>
+          </div>
+          <ul className={s.grid}>
+            <li>
+              <Link href="/herramientas/quizes/pronombres" className={`wlp-card wlp-card--path ${s.card}`}>
+                <span className="wlp-eyebrow wlp-eyebrow--card">PRONOMBRES</span>
+                <h2 className={s.name}>Quién hace qué a quién</h2>
+                <p className={s.desc}>Comienza con italiano: sujeto, demostrativos, posesivos, objetos y combinaciones.</p>
+                <div className={s.foot}><span className={s.detail}>1 idioma · 6 niveles</span><span className={s.arrow} aria-hidden="true">→</span></div>
+              </Link>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   )

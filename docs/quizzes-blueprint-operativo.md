@@ -21,13 +21,17 @@ selección → nivel en curso ↔ revisar respuestas → resumen del nivel → s
      └── URL compartible┴── intento en localStorage ──┘
 ```
 
-Rutas publicadas: italiano, inglés, francés, portugués, alemán, ruso, japonés y coreano.
+La familia de tiempos tiene rutas para italiano, inglés, francés, portugués, alemán, ruso,
+japonés y coreano. La familia de pronombres inicia con un piloto italiano bajo
+`/herramientas/quizes/pronombres/italiano`; su contrato específico está en
+[`quiz-pronombres-blueprint.md`](quiz-pronombres-blueprint.md).
 
 ## 2. Arquitectura real
 
 | Archivo | Responsabilidad |
 |---|---|
 | `src/components/practica/TenseQuestEngine.tsx` | Estado, URL, persistencia, navegación, puntuación, foco y seis mecánicas |
+| `src/components/practica/PronounQuestEngine.tsx` | Motor cerrado de referente, función, posición, reparación, transformación y cadena final |
 | `src/components/practica/TenseQuestEngine.module.css` | Adaptaciones propias del motor sobre el sistema visual de Práctica |
 | `src/data/practica/tense-quest-types.ts` | Contrato tipado de configuración y retos |
 | `src/data/practica/create-structure-quest.ts` | Factoría determinista para bancos con tres ejemplos por forma |
@@ -198,7 +202,7 @@ Los quizzes pertenecen visualmente a Práctica aunque su URL viva bajo Herramien
 - El mapa temporal es la única firma propia del motor y permanece compacto en móvil.
 - Controles táctiles: mínimo 44 × 44 px; foco visible y `prefers-reduced-motion` respetado.
 
-La línea base actual del catálogo es de ocho tarjetas. Al añadir otra, el conteo esperado del E2E
+La línea base actual del catálogo es de nueve tarjetas. Al añadir otra, el conteo esperado del E2E
 debe actualizarse deliberadamente. Todas deben usar `wlp-card--path`, un solo acento de Gramática
 y cero tarjetas heredadas `wl-catalog-card`.
 

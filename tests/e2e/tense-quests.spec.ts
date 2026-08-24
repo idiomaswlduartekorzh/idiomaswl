@@ -7,7 +7,7 @@ test('el catálogo comparte el sistema visual de Práctica y cabe en móvil', as
   await page.goto('/herramientas/quizes')
 
   await expect(page.locator('.wlp-page')).toBeVisible()
-  await expect(page.locator('.wlp-card--path')).toHaveCount(8)
+  await expect(page.locator('.wlp-card--path')).toHaveCount(9)
   await expect(page.locator('.wl-catalog-card')).toHaveCount(0)
   await expect(page.locator('main')).toHaveCount(1)
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)

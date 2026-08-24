@@ -1,0 +1,44 @@
+.referenceChain {
+  align-items: center;
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  margin-top: 1.25rem;
+  padding: 0.8rem 1rem;
+}
+
+.referenceChain span,
+.referenceChain strong {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.referenceChain span { color: var(--wlp-muted); }
+.referenceChain strong { color: var(--wlp-accent); }
+.referenceChain svg { color: var(--wlp-line); }
+
+.choicePrompt {
+  color: var(--wlp-ink);
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.55;
+  margin: 0 0 0.8rem;
+}
+
+.bankText {
+  color: var(--wlp-ink);
+  font-size: clamp(1rem, 2vw, 1.12rem);
+  line-height: 2.6;
+}
+
+@media (max-width: 620px) {
+  .referenceChain { gap: 0.35rem; padding: 0.7rem; }
+  .referenceChain span,
+  .referenceChain strong { font-size: 0.58rem; }
+}
