@@ -1,6 +1,5 @@
 import type { RoleplaySet } from '../index.ts'
 import { ROLEPLAY_INGLES_A2 } from '../ingles-a2.ts'
-import { TOOLKIT_INGLES_A2 } from '../toolkit-ingles-a2.ts'
 import { ROLEPLAY_INGLES_A2_BATCH_1 } from './ingles-a2-batch-1.ts'
 import { ROLEPLAY_INGLES_A2_BATCH_2 } from './ingles-a2-batch-2.ts'
 import { ROLEPLAY_INGLES_A2_BATCH_3 } from './ingles-a2-batch-3.ts'
@@ -38,11 +37,4 @@ export const ROLEPLAY_INGLES_A2_CANDIDATE = [
  * conjunto sale de aquí únicamente cuando alcanza 20 escenarios y pasa sus puertas
  * como unidad completa.
  */
-export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
-  {
-    language: 'ingles',
-    level: 'a2',
-    scenarios: ROLEPLAY_INGLES_A2_CANDIDATE,
-    toolkit: TOOLKIT_INGLES_A2,
-  },
-]
+export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = []

@@ -1,8 +1,8 @@
 # Habla acompañada · Inglés A2 · parrilla editorial 1–20
 
-Estado: **candidato completo de 20 bajo el guardián de borradores.** Este documento no publica
-contenido. El registro vivo conserva ocho escenarios hasta que las veinte prácticas, las
-cuarenta fichas y la caja A2 pasen juntas el guardián.
+Estado: **candidato de 20 promovido al registro en rama; pendiente de build y despliegue.**
+Producción conserva ocho escenarios hasta que esta rama pase build, QA visual e integración
+con `main`. El candidato ya pasó el guardián estructural y 60 simulaciones de release.
 
 La secuencia final reordena seis escenarios ya publicados para respetar las cinco familias del
 blueprint. Los slugs y, por tanto, sus URLs públicas no cambian.

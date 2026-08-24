@@ -1,4 +1,4 @@
-import { ROLEPLAY_INGLES_A2 } from './ingles-a2.ts'
+import { ROLEPLAY_INGLES_A2_CANDIDATE as ROLEPLAY_INGLES_A2 } from './drafts/index.ts'
 import { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 import type {
   RoleId,
@@ -10,7 +10,7 @@ import type {
 } from './types.ts'
 
 export * from './types.ts'
-export { ROLEPLAY_INGLES_A2 } from './ingles-a2.ts'
+export { ROLEPLAY_INGLES_A2_CANDIDATE as ROLEPLAY_INGLES_A2 } from './drafts/index.ts'
 export { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 
 type RoleplayTargetLabels = {
@@ -85,13 +85,13 @@ export const ROLEPLAY_TARGET_SET_KEYS: RoleplaySetKey[] = Object.keys(ROLEPLAY_L
  * entran directamente con 20; inglés A2 es la única cohorte histórica parcial.
  */
 export const ROLEPLAY_PUBLISHED_FLOORS: Partial<Record<RoleplaySetKey, number>> = {
-  'ingles-a2': 8,
+  'ingles-a2': 20,
 }
 
 /**
  * Registro de habla acompañada.
  *
- * Hoy hay un solo conjunto vivo —la primera cohorte de inglés A2—. Los otros 23 conjuntos
+ * Hoy hay un solo conjunto vivo —inglés A2 completo—. Los otros 23 conjuntos
  * entran aquí completos y en ningún otro sitio: rutas y sitemap se derivan de este registro.
  */
 export type RoleplaySet = {
