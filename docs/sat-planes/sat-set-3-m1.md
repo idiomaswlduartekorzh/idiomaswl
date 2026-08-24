@@ -1,6 +1,6 @@
 # SAT Set 3 · Módulo 1 — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **CRAFT AND STRUCTURE APTO, 8/27**.
+Fecha: 24 de agosto de 2026. Estado: **CS E II APTOS, 15/27**.
 
 Esta matriz reserva temas, dificultad y reparto de claves antes de redactar. Ningún hecho
 de la columna «fuente objetivo» se presume correcto: se verifica en la fuente primaria al

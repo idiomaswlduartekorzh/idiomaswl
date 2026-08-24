@@ -21,6 +21,8 @@ en el registro ejecutable por accidente.
 
 - M1 Craft and Structure: 8/8 escritos y bloque APTO. Evidencia en
   `docs/sat-auditorias/informes/sat-set-3-m1-cs.md`.
-- M1 total: 8/27.
+- M1 Information and Ideas: 7/7 escritos y bloque APTO. Evidencia en
+  `docs/sat-auditorias/informes/sat-set-3-m1-ii.md`.
+- M1 total: 15/27.
 - M2 estándar y M2 exigente: 0/27.
-- Siguiente bloque autorizado: M1 Information and Ideas q09–q15.
+- Siguiente bloque autorizado: M1 Standard English Conventions q16–q22.

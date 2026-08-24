@@ -26,14 +26,16 @@ originales; cada estudiante responde 54 por intento y nunca recibe las dos ramas
 ## Loop de escala a 20
 
 El loop se abrió el **24 de agosto de 2026** en una rama aislada. `set-3` está reservado
-como borrador con 81 slots vacíos; no aparece en el hub ni en el registro público. La
+como borrador con 81 slots; 15 ya tienen contenido y ninguno aparece en el hub ni en el
+registro público. La
 receta operativa, los costes medidos y las puertas por vuelta viven en
 [`docs/sat-fabrica.md`](sat-fabrica.md).
 
 La regla de avance es un set, un módulo y un bloque abiertos a la vez. La matriz editorial
 de M1 de Set 3 está cerrada en `docs/sat-planes/sat-set-3-m1.md`: 27 temas, dificultad y
-claves equilibradas. Craft and Structure q01–q08 está APTO, con 25,0 % en la prueba ciega
-y cero coincidencias locales. La siguiente unidad es Information and Ideas q09–q15.
+claves equilibradas. Craft and Structure q01–q08 e Information and Ideas q09–q15 están
+APTOS; los 15 ítems dan 23,7 % en la prueba ciega y cero coincidencias locales. La
+siguiente unidad es Standard English Conventions q16–q22.
 Ningún set se promueve junto con otro ni se baja un umbral para sostener el ritmo.
 
 ## Blueprint de escala
