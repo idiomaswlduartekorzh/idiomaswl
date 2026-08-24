@@ -6,8 +6,8 @@ memoria editorial y no describe por sí solo la rama actual.
 
 **Reapertura del 24 ago 2026:** comenzó el loop de escala de 2 a 20 sets. La fase C0 quedó
 documentada en [`docs/sat-fabrica.md`](sat-fabrica.md) y `set-3` fue reservado como
-borrador de 81 slots. La siguiente tarea es la matriz editorial de M1; nada nuevo está
-publicado todavía.
+borrador de 81 slots. Su matriz de M1 ya fija 27 temas, dificultad y claves; la siguiente
+tarea es cerrar Craft and Structure q01–q08. Nada nuevo está publicado todavía.
 
 - **Rama actual:** `codex/sat-finish-20260823`
 - **Cierre:** 23 ago 2026 · M1, M2 estándar y M2 exigente completos; diez páginas del

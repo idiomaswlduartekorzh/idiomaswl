@@ -30,9 +30,11 @@ como borrador con 81 slots vacíos; no aparece en el hub ni en el registro públ
 receta operativa, los costes medidos y las puertas por vuelta viven en
 [`docs/sat-fabrica.md`](sat-fabrica.md).
 
-La regla de avance es un set, un módulo y un bloque abiertos a la vez. La siguiente unidad
-es la matriz editorial de M1 de Set 3 y luego su bloque de Craft and Structure. Ningún set
-se promueve junto con otro ni se baja un umbral para sostener el ritmo.
+La regla de avance es un set, un módulo y un bloque abiertos a la vez. La matriz editorial
+de M1 de Set 3 ya está cerrada en `docs/sat-planes/sat-set-3-m1.md`: 27 temas, dificultad y
+claves equilibradas, todavía 0 preguntas escritas. La siguiente unidad es verificar las
+fuentes y cerrar su bloque Craft and Structure. Ningún set se promueve junto con otro ni
+se baja un umbral para sostener el ritmo.
 
 ## Blueprint de escala
 
