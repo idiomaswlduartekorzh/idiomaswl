@@ -31,6 +31,7 @@ import { ROLEPLAY_COREANO_A2_BATCH_1B } from './coreano-a2-batch-1b.ts'
 import { ROLEPLAY_COREANO_A2_BATCH_2 } from './coreano-a2-batch-2.ts'
 import { ROLEPLAY_COREANO_A2_BATCH_2B } from './coreano-a2-batch-2b.ts'
 import { ROLEPLAY_COREANO_A2_BATCH_3 } from './coreano-a2-batch-3.ts'
+import { ROLEPLAY_COREANO_A2_BATCH_3B } from './coreano-a2-batch-3b.ts'
 import { TOOLKIT_COREANO_A2 } from '../toolkit-coreano-a2.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
@@ -91,6 +92,7 @@ export const ROLEPLAY_COREANO_A2_CANDIDATE = [
   ...ROLEPLAY_COREANO_A2_BATCH_2,
   ...ROLEPLAY_COREANO_A2_BATCH_2B,
   ...ROLEPLAY_COREANO_A2_BATCH_3,
+  ...ROLEPLAY_COREANO_A2_BATCH_3B,
 ].sort((a, b) => a.sequence - b.sequence)
 
 /**
