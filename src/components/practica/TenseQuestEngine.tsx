@@ -816,17 +816,10 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
           <span aria-current="page">{copy.languageName}</span>
         </nav>
 
-        <header className={`wlp-hero wlp-hero--compact ${s.hero}`}>
-          <div>
-            <p className="wlp-eyebrow">{copy.eyebrow}</p>
-            <h1 lang={copy.languageCode}>{copy.title}</h1>
-            <p className="wlp-hero-lead">{copy.lead}</p>
-          </div>
-          <dl className={s.heroStats}>
-            <div><dt>{forms.length}</dt><dd>objetivos</dd></div>
-            <div><dt>{levels.length}</dt><dd>niveles</dd></div>
-            <div><dt>1</dt><dd>resultado por nivel</dd></div>
-          </dl>
+        <header className="wlp-hero wlp-hero--compact">
+          <p className="wlp-eyebrow">{copy.eyebrow}</p>
+          <h1 lang={copy.languageCode}>{copy.title}</h1>
+          <p className="wlp-hero-lead">{copy.lead}</p>
         </header>
 
         <section aria-label="Mapa de referencia" className={s.timeMap} lang={copy.languageCode}>
@@ -840,7 +833,7 @@ export default function TenseQuestEngine({ config }: { config: TenseQuestConfig<
         </section>
 
         {!configured ? (
-          <section aria-labelledby="tense-selector-title" className={s.selector} id="tense-selector">
+          <section aria-labelledby="tense-selector-title" className={`wlp-card wlp-card--path ${s.selector}`} id="tense-selector">
             <div className={s.selectorHeading}>
               <div>
                 <p className="wlp-eyebrow">Configura tu recorrido</p>
