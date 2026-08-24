@@ -50,7 +50,7 @@
   ],
   "publicable": false,
   "bloqueantesDeProducto": [
-    "Pendiente componer el Set 2, ejecutar build/guardia adaptativa y recorrer ambas ramas en navegador antes de autorizar publicación."
+    "La composición y la guardia adaptativa candidata están en verde; faltan TypeScript, build y el recorrido de ambas ramas en navegador antes de autorizar publicación."
   ],
   "notaSobreElActa": "Certifica contenido con revisión de Codex y controles reproducibles; no afirma independencia. La publicabilidad permanece bloqueada hasta la auditoría de producto.",
   "huellas": {
