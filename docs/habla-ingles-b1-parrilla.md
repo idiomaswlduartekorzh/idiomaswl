@@ -1,8 +1,8 @@
 # Habla acompañada · Inglés B1 · parrilla editorial 1–20
 
-Estado: **20/20 escenarios validados estructuralmente fuera del registro público.** El conjunto entra
-completo cuando sus veinte escenarios, cuarenta fichas, caja B1 y simulaciones pasen las puertas
-de `docs/habla-acompanado-blueprint.md`.
+Estado: **20/20 escenarios y 100/100 simulaciones de perfil validados fuera del registro público.**
+Sus veinte escenarios, cuarenta fichas y caja B1 están listos para promoción conforme a las
+puertas de `docs/habla-acompanado-blueprint.md`.
 
 La carga B1 exige negociar prioridades, límites y consecuencias: 6–9 minutos, 8–12 turnos por
 persona y al menos dos salidas defendibles. Las fichas usan inglés americano y no requieren

@@ -2,9 +2,11 @@ import process from 'node:process'
 import {
   ROLEPLAY_INGLES_A1_CANDIDATE,
   ROLEPLAY_INGLES_A2_CANDIDATE,
+  ROLEPLAY_INGLES_B1_CANDIDATE,
 } from '../src/data/practica/habla-acompanado/drafts/index.ts'
 import { ENGLISH_A1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a1.ts'
 import { ENGLISH_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a2.ts'
+import { ENGLISH_B1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-b1.ts'
 
 const progressOnly = process.argv.includes('--progress')
 const targetArg = process.argv.find((argument) => argument.startsWith('--target='))
@@ -22,10 +24,15 @@ const configurations = {
     scenarios: ROLEPLAY_INGLES_A2_CANDIDATE.filter((scenario) => new Set([4, 7, 8, 11, 12, 14, 15, 16, 17, 18, 19, 20]).has(scenario.sequence)),
     audits: ENGLISH_A2_RELEASE_AUDITS,
   },
+  'ingles-b1': {
+    label: 'inglés B1',
+    scenarios: ROLEPLAY_INGLES_B1_CANDIDATE,
+    audits: ENGLISH_B1_RELEASE_AUDITS,
+  },
 }
 const configuration = configurations[target]
 if (!configuration) {
-  console.error(`Target de release desconocido: ${target}. Usa ingles-a1 o ingles-a2.`)
+  console.error(`Target de release desconocido: ${target}. Usa ingles-a1, ingles-a2 o ingles-b1.`)
   process.exit(1)
 }
 const newScenarios = configuration.scenarios

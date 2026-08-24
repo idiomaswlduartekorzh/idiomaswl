@@ -19,6 +19,7 @@
     "check:habla-acompanada": "node --experimental-strip-types --no-warnings scripts/check-habla-acompanada.mjs",
     "check:habla-release": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs",
     "check:habla-release:a1": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs --target=ingles-a1",
+    "check:habla-release:b1": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs --target=ingles-b1",
     "check:tense-quests": "node --experimental-strip-types --no-warnings scripts/check-tense-quests.mjs && npm run test:tense-quests",
     "test:tense-quests": "node --experimental-strip-types --no-warnings --test tests/tense-quests.test.mjs",
     "check:pronoun-quests": "node --experimental-strip-types --no-warnings scripts/check-pronoun-quests.mjs && npm run test:pronoun-quests",
