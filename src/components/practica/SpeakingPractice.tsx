@@ -44,6 +44,10 @@ export type SpeakingPracticeProps = {
   /** El hub del nivel, para el migajero: `/practica/ingles/a2`. */
   hubHref: string
   hubLabel: string
+  /** Migajero adicional para modos que viven debajo de la página de habla. */
+  sectionHref?: string
+  sectionLabel?: string
+  currentLabel?: string
   /** Antetítulo. Suele llevar el nombre de la destreza en el idioma meta. */
   eyebrow: string
   title: string
@@ -71,6 +75,9 @@ const ALL = '__todas__'
 export default function SpeakingPractice({
   hubHref,
   hubLabel,
+  sectionHref,
+  sectionLabel = 'Expresión oral',
+  currentLabel = 'Expresión oral',
   eyebrow,
   title,
   lead,
@@ -114,7 +121,13 @@ export default function SpeakingPractice({
           <span aria-hidden="true">/</span>
           <Link href={hubHref}>{hubLabel}</Link>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">Expresión oral</span>
+          {sectionHref ? (
+            <>
+              <Link href={sectionHref}>{sectionLabel}</Link>
+              <span aria-hidden="true">/</span>
+            </>
+          ) : null}
+          <span aria-current="page">{currentLabel}</span>
         </nav>
 
         <header className="wlp-hero wlp-hero--compact">

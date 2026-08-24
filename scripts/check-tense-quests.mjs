@@ -1,5 +1,11 @@
 import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest.ts'
 import { ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
+import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
+import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
+import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
+import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
+import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest.ts'
+import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
 
 const failures = []
 
@@ -25,6 +31,9 @@ function checkUniqueIds(config) {
 
 function validate(config, minimums) {
   const formIds = new Set(config.forms.map((form) => form.id))
+  assert(formIds.size === config.forms.length, `${config.id}: hay IDs de forma duplicados`)
+  assert(config.forms.every((form) => form.label.trim() && form.group.trim()), `${config.id}: hay formas sin etiqueta o grupo`)
+  assert(config.copy.languageCode.trim(), `${config.id}: falta el código de idioma`)
   checkUniqueIds(config)
   assert(config.levels.length === 6, `${config.id}: debe declarar exactamente seis niveles`)
 
@@ -32,6 +41,7 @@ function validate(config, minimums) {
     assert(challenge.options.length === 4, `${challenge.id}: debe tener cuatro opciones`)
     assert(new Set(challenge.options).size === 4, `${challenge.id}: contiene opciones duplicadas`)
     assert(challenge.options.includes(challenge.answer), `${challenge.id}: la respuesta no aparece entre las opciones`)
+    assert(challenge.context.split('___').length === 2, `${challenge.id}: debe contener exactamente un hueco`)
     assert(challenge.tenses.length > 0 && challenge.tenses.every((id) => formIds.has(id)), `${challenge.id}: referencia una forma inexistente`)
   }
 
@@ -50,11 +60,14 @@ function validate(config, minimums) {
     assert(chunkIds.includes(challenge.wrongId), `${challenge.id}: el token erróneo no existe`)
     assert(formIds.has(challenge.tense), `${challenge.id}: referencia una forma inexistente`)
     assert(challenge.answers.length > 0 && challenge.answers.every(Boolean), `${challenge.id}: no tiene corrección válida`)
+    const wrongForm = challenge.chunks.find((chunk) => chunk.id === challenge.wrongId)?.form
+    assert(!challenge.answers.includes(wrongForm), `${challenge.id}: la forma marcada como errónea también figura como solución`)
   }
 
   for (const challenge of config.timelineChallenges) {
     assert(challenge.slots.length > 0, `${challenge.id}: no tiene posiciones temporales`)
     assert(new Set(challenge.slots.map((slot) => slot.id)).size === challenge.slots.length, `${challenge.id}: tiene posiciones duplicadas`)
+    assert(new Set(challenge.options).size === challenge.options.length, `${challenge.id}: contiene opciones repetidas`)
     for (const slot of challenge.slots) {
       assert(formIds.has(slot.tense), `${challenge.id}/${slot.id}: referencia una forma inexistente`)
       assert(challenge.options.includes(slot.answer), `${challenge.id}/${slot.id}: su respuesta no está entre las opciones`)
@@ -65,11 +78,14 @@ function validate(config, minimums) {
     const cardIds = challenge.cards.map((card) => card.id)
     assert(challenge.segments.length === challenge.gaps.length + 1, `${challenge.id}: segmentos y huecos no están alineados`)
     assert(new Set(cardIds).size === cardIds.length, `${challenge.id}: tiene tarjetas con IDs duplicados`)
+    assert(new Set(challenge.cards.map((card) => card.text)).size === challenge.cards.length, `${challenge.id}: tiene tarjetas con texto duplicado`)
+    assert(challenge.cards.length === challenge.gaps.length, `${challenge.id}: el banco debe tener una tarjeta por hueco`)
     assert(new Set(challenge.gaps.map((gap) => gap.id)).size === challenge.gaps.length, `${challenge.id}: tiene huecos duplicados`)
     for (const gap of challenge.gaps) {
       assert(formIds.has(gap.tenseId), `${challenge.id}/${gap.id}: referencia una forma inexistente`)
       assert(cardIds.includes(gap.answerCardId), `${challenge.id}/${gap.id}: su tarjeta correcta no existe`)
     }
+    assert(new Set(challenge.gaps.map((gap) => gap.answerCardId)).size === challenge.gaps.length, `${challenge.id}: una tarjeta correcta se reutiliza en varios huecos`)
   }
 
   const coverage = {
@@ -91,6 +107,17 @@ function validate(config, minimums) {
 
 validate(ITALIAN_TENSE_QUEST, { choice: 1, micro: 1, long: 1, error: 1, timeline: 1, final: 1 })
 validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
+
+for (const config of [
+  FRENCH_STRUCTURE_QUEST,
+  PORTUGUESE_STRUCTURE_QUEST,
+  GERMAN_STRUCTURE_QUEST,
+  RUSSIAN_STRUCTURE_QUEST,
+  JAPANESE_STRUCTURE_QUEST,
+  KOREAN_STRUCTURE_QUEST,
+]) {
+  validate(config, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
+}
 
 if (failures.length) {
   console.error(`Tense quest check failed (${failures.length})`)

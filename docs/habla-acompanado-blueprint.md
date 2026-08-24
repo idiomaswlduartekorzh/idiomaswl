@@ -1,11 +1,14 @@
 # Habla acompañada — blueprint y puertas de calidad
 
-Fuente de verdad de los juegos de rol para dos personas de `/practica/<idioma>/<nivel>/habla`.
+Fuente de verdad de las decisiones pedagógicas de los juegos de rol para dos personas de
+`/practica/<idioma>/<nivel>/habla`. La fuente ejecutable del contenido publicado es
+`src/data/practica/habla-acompanado/`; las auditorías intermedias son evidencia, no runtime.
 Si un agente y este documento se contradicen, manda este documento. Si este documento y lo
 que David decida se contradicen, manda David **y hay que corregir este documento**.
 
-Estado: **decisiones de producto cerradas el 19 de agosto de 2026.** Contenido: cero
-escenarios escritos todavía. Ver [[project-speaking-blueprint]] para el histórico.
+Estado: **piloto inglés A2 integrado el 23 de agosto de 2026.** Ocho escenarios, dieciséis
+fichas separadas, caja común A2, rutas estáticas por rol y guardián estructural. Los otros
+siete idiomas y niveles esperan la evaluación del piloto.
 
 ---
 
@@ -15,8 +18,8 @@ Al entrar en la destreza de habla el estudiante elige entre dos modos:
 
 | Modo | Con quién | Estado |
 |---|---|---|
-| **Habla solo** | Nadie. Es lo que hay hoy: 20 frases con fonética y checkbox. | En producción, no se toca en este bloque |
-| **Habla acompañada** | **Otra persona real**: un compañero, el profesor, un amigo, la pareja. | Lo que se construye ahora |
+| **Habla solo** | Nadie. 20 frases con fonética y seguimiento local. | Conservado en `/habla/solo` |
+| **Habla acompañada** | **Otra persona real**: un compañero, el profesor, un amigo, la pareja. | Piloto inglés A2: 8 escenarios |
 
 Cerrado y no se rediscute salvo que David lo reabra:
 
@@ -48,7 +51,7 @@ Nueve piezas. Falta una y el escenario se muere de una de las seis maneras de §
 | **Andamiaje** | 6 a 10 expresiones en el idioma meta, con su uso y su registro. Opcionales. | El flojo se bloquea y se pasa al español |
 | **Complicación** | Una carta que entra a mitad y va **a un solo rol** | La conversación se aplana |
 | **Criterio de cierre** | Cómo saben los dos que terminó y con qué | Se apaga sin final |
-| **Debrief** | 3 preguntas para después, en español | Se habla y no se aprende |
+| **Debrief** | 3–4 preguntas para después, en español | Se habla y no se aprende |
 
 **La ficha del rol A no contiene nunca la ficha del rol B.** Ni resumida. Si el estudiante ve
 lo que el otro quiere, deja de escuchar y empieza a esperar su turno.
@@ -104,9 +107,16 @@ por etiquetas, el set salió variado; contado por turnos escritos, `rechazar` y
 `proponer-alternativa` aparecían en **8 de 8**. La etiqueta dice de qué va el escenario; el
 reparto se calcula sobre los turnos que la pareja tiene que producir para llegar al cierre.
 
+**Y se mide en cuota de turnos, no en «en cuántos escenarios aparece».** Esto lo corrige la
+auditoría del 21 de agosto de 2026, que encontró la frase anterior contradiciéndose consigo
+misma: pedir que ningún acto salga en más del 40 % de los escenarios es inalcanzable en cuanto
+cuentas turnos, porque toda conversación de adultos contiene una negativa y una alternativa —el
+umbral exigía menos de cinco actos distintos por escenario y el molde tiene cinco—. Lo que sí
+dice algo es **qué porcentaje de los turnos del set entero pide cada acto**.
+
 | Reparto | Regla |
 |---|---|
-| **Actos de habla** | Ningún acto en más del 40 % de los escenarios, **contando turnos producidos, no etiquetas** |
+| **Actos de habla** | Ningún acto por encima del **30 % de los turnos** del set, y **ninguno de los declarados por debajo del 3 %**. Lo primero evita el nivel monotema; lo segundo caza el acto de adorno —medido: `insistir` salía en 1 turno de 145 y `recomendar` en 4, los cuatro del mismo escenario— |
 | **Poder** | El estudiante manda en al menos 3 de cada 8. Si siempre pide permiso, nunca aprende a concederlo |
 | **Quién arranca** | Entre 40 % y 60 % para cada rol a lo largo del set |
 | **Desenlace** | Al menos un «sin acuerdo» y un «acuerdo parcial» por cada 8. No todo termina bien |
@@ -128,8 +138,24 @@ El guardián no publica un set que falle una sola.
    conversación**.
 5. **Carga** — ningún rol por debajo del 40 % de la conversación, medido en **palabras**, no
    en turnos. Un «Mm» cuenta como turno: hubo simulaciones con el 50 % de los turnos y el
-   10 % de las palabras que pasaban esta puerta con las dos manos atadas. Se cuenta sobre la
-   simulación, no sobre el previsto.
+   10 % de las palabras que pasaban esta puerta con las dos manos atadas.
+
+   **Se mide sobre las parejas de perfil parejo** —sólido+sólido y flojo+flojo—, y solo sobre
+   ellas. Esto lo corrige el diagnóstico del 21 de agosto de 2026: la puerta se estaba midiendo
+   sobre la pareja del **callado**, cuyo perfil dice literalmente «responde con una a tres
+   palabras». Ahí el 80/20 no es un resultado, es el enunciado, y la puerta es insatisfacible:
+   para que el otro no pasara del 60 % tendría que ser mudo también. Medido donde toca, el
+   mismo set pasaba 14 de 14 con un peor caso de 62/38.
+
+   **Al callado se le mide otra cosa**, porque medirle palabras no dice nada: **¿produjo las
+   piezas que solo él tiene?** El dato oculto, la condición, su parte del cierre. Un callado que
+   consigue su objetivo asintiendo es un defecto del escenario —el objetivo tiene que exigir
+   producir algo—, y ese sí va a `habla-escenarios`.
+
+   Y una condición de la medida: **un solo contador, y declarado**. En la ronda que destapó
+   esto, dos escenarios contaban «palabras propias» descontando lo leído, cuatro contaban en
+   bruto y uno midió una sola de sus cinco parejas: el 79/21 de uno de ellos era 64/36 con el
+   otro criterio, y pasaba.
 6. **Complicación colocada** — entra entre el turno **global** 3 y 6, y va a un solo rol.
    Cuidado con el enunciado: «ábrela al terminar tu cuarto turno» suena a lo mismo y no lo
    es —el cuarto turno de un rol es el turno global 7 u 8, o sea después del final útil—.
@@ -249,13 +275,57 @@ mitad del ejercicio.
 **El riesgo que introduce, y cómo se cierra.** Con la ficha en español era físicamente imposible
 leerla en voz alta. En inglés, se puede — y si se puede, se hace. Por eso:
 
-> La ficha se escribe **en notas, no en frases**. `Exam: Saturday 12, 8:00 a.m.` sí.
-> `I'm taking the exam on Saturday at eight.` no, jamás, ni en los datos ni en la situación ni
-> en los objetivos. Las frases decibles viven **solo** en la tabla de exponentes, que es donde
-> el estudiante sabe que va a buscarlas.
+> **En las tablas** —datos duros, vocabulario, la carta— se escribe en notas, no en frases.
+> `Exam: Saturday 12, 8:00 a.m.` sí. `I'm taking the exam on Saturday at eight.` no, jamás.
+> Las frases decibles viven **solo** en la tabla de exponentes, que es donde el estudiante sabe
+> que va a buscarlas.
+>
+> **En la prosa** —situación, objetivo, restricciones, dato oculto, lo que se pierde— se escribe
+> en **inglés A2 legible**: oraciones cortas y completas, no telegramas. Y ninguna de esas
+> oraciones puede ser algo que el jugador diría: se escriben *sobre* él, no *por* él.
+
+Ese reparto lo corrige la auditoría de equidad del 21 de agosto de 2026, y corrige una regla
+mía. Aplicar el telegrama a la prosa hizo aparecer líneas como `if nobody goes: her news,
+tonight` o `then the boy: thirty minutes alone at the daycare door`. Un lector A2 **no
+reconstruye** esa oración: en su lengua la adivinaría, en L2 no. La regla existía para que no se
+pudiera calcar la ficha, y al llevarla a la prosa consiguió que no se pudiera leer, que es peor.
+
+La prueba de calcabilidad sigue en pie y no se relaja: `You need someone to open on Saturday`
+es prosa legible y no se puede decir tal cual —habla de él en segunda persona—; `I need someone
+to open on Saturday` sí se podría, y por eso no se escribe.
 
 Prueba para el redactor: si una línea de tu ficha se puede decir tal cual en la conversación y
 el turno avanza, esa línea está mal escrita. Reescríbela como dato.
+
+**Y la tabla de exponentes entra en la prueba, aunque sus frases sean decibles a propósito.**
+Durante cinco rondas se declaró «fuera de alcance» —yo la dejé fuera— y por eso nadie la miró
+nunca. Ahí estaba escondido el defecto que se perseguía: en un escenario, **la cola de la tabla
+era el cierre entero, en orden**. Con leerla de arriba abajo se resolvía la conversación.
+
+Lo que se audita en ella no es si sus frases se pueden decir —claro que sí—, sino **si la tabla
+leída en orden es la conversación**: que esté agrupada por función y ordenada alfabéticamente
+por función, que no haya más filas que turnos, y que ninguna secuencia de filas reproduzca el
+cierre ni el arranque. Una tabla que se puede seguir como un guion no es andamiaje: es el
+ejercicio ya hecho.
+
+**Contra qué extremo de la banda se cuentan las filas.** Casi todas las fichas declaran una banda
+(`6-9 turnos por rol`), así que «no más filas que turnos» era ambiguo, y en un escenario esa
+ambigüedad tapó nueve filas para ocho turnos. Se mide **contra el número que la ficha declara**, y
+si declara banda, **contra su techo**. No contra el suelo: una pareja que resuelva en seis turnos
+usa un subconjunto de la tabla, que es exactamente lo que `use it or don't` autoriza. Quien impide
+que la tabla sea un guion no es el recuento de filas, son las otras tres pruebas — y la cuarta que
+falta:
+
+**La fila que concede se mira aparte.** Medir solo secuencias deja pasar el caso peor: la fila del
+otorgamiento —`granting it`— sola, en la última posición, le dice al estudiante *cuándo* soltar la
+condición que decide el desenlace. Apareció en cinco de los ocho escenarios y en ninguno lo cazó la
+prueba de secuencia. Etiquétese por función (`granting it`, nunca `yes, with a condition` ni
+`your condition`) y compruébese que el alfabético no la deja ni primera ni última.
+
+**Una etiqueta no puede nombrar un momento.** `how you walk in`, `the two questions before you
+leave`, `the message you send`: el alfabético baraja las filas y una etiqueta que dice *cuándo*
+—o que lleva dentro las palabras literales del cierre— le devuelve el orden al estudiante. Las
+etiquetas nombran función, no posición.
 
 El inglés de la ficha es **A2 leído**, que aguanta un poco más que el A2 hablado: frases cortas,
 presente y pasado simple, cero subordinación larga. Si una instrucción no cabe en A2, es que la
@@ -276,6 +346,16 @@ palabra que necesita quien está detrás del mostrador no es la que necesita qui
 | `what it is` | Definición **en inglés sencillo**, no traducción. `shift — the hours you work in one day` |
 | `here` | Para qué le sirve en esta conversación concreta |
 
+**Cuidado con la columna `here`: es la más calcable de la ficha entera.** Medido en la primera
+tanda del formato nuevo, es donde se concentran los fallos —explicar para qué sirve una palabra
+empuja sola hacia la frase que se dice con ella—. Y en un escenario llegó a entregar el dato
+oculto ya convertido en frase lista para pronunciar, que es exactamente lo que la ficha no puede
+hacer.
+
+Se escribe como **nota de propósito, no como ejemplo**: `your way out — you must offer two ways`
+sí; `you can say "we can split it"` no. Si la celda contiene algo entrecomillado o algo que
+empiece por un pronombre y un verbo conjugado, reescríbela.
+
 Se eligen por una prueba, no por intuición: **¿puede este rol llegar al cierre sin esta
 palabra?** Si sí, fuera. Entran las que aparecen en los datos duros del propio rol, las que le
 va a soltar el otro, y las del oficio de la escena.
@@ -288,15 +368,49 @@ parezca incumplido cuando no lo está.
 
 | Nivel | Prosa | Tablas |
 |---|---|---|
-| **A1-A2** | **≤ 350 palabras** | datos ≤ 10 filas · vocabulario 8-10 · exponentes 6-9 |
+| **A1-A2** | **≤ 450 palabras**, apuntando a 400 | datos ≤ 10 filas · vocabulario 8-10 · exponentes 6-9 |
 | **B1-B2** | ≤ 600 | datos ≤ 14 · vocabulario 10-12 · exponentes 8-10 |
 | **C1-C2** | sin tope fijo | ahí la ficha puede ser un documento de verdad — un contrato, un informe |
 
 Medido sobre el escenario 3: la ficha en español gastaba **798 palabras de prosa**; la misma
-ficha en inglés, con el bloque de vocabulario añadido, gasta **343** — un 57 % menos, y con una
-pieza más dentro. Se corta prosa, no piezas:
+ficha en inglés, con el bloque de vocabulario añadido, gasta **346**. El corte es real y es lo
+que se buscaba.
+
+**El techo de 450 sale de medir, no de desear.** La primera versión de esta tabla puso 350, y
+ese número salió de contar a mano una sola ficha —la del molde— con un contador improvisado.
+Medidas las dieciséis con el contador canónico
+(`artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`), la media es **425** y solo una baja de
+350: la ficha B del propio molde se va a 376. Cuando el molde no cumple su propio techo, el
+techo está mal, no el molde. El juego de piezas obligatorio —situación, objetivo, dos o tres
+restricciones, el dato oculto, lo que se pierde, la caja, los criterios y el cierre— cuesta unas
+425 palabras, y bajar de ahí obliga a quitar una pieza. **Se corta prosa, nunca una pieza.**
+
+El contador es uno y está en el repo por un motivo: las ocho fichas de esa ronda declaraban
+cumplir con **seis contadores distintos**, y dos auditorías dieron 9 y 15 fichas fuera de techo
+sobre el mismo contenido. Un umbral sin un contador único no es un umbral. Se corta prosa, no piezas:
 la situación pasa de párrafo a dos líneas, el objetivo de explicación a frase, y lo que cabe en
 una tabla no se cuenta en un texto.
 
-El molde vivo está en `artifacts/habla-a2/fase7-modelo-ficha-en.md`. Los escenarios nuevos se
-escriben contra él, no contra esta descripción.
+El molde histórico que produjo el piloto está en
+`artifacts/habla-a2/fase7-modelo-ficha-en.md` dentro de la rama de auditoría. Los escenarios
+nuevos se escriben contra las reglas de este documento y se incorporan al registro runtime.
+
+## 12. Integración publicada por el código
+
+El flujo tiene cinco capas y ninguna se mantiene como lista paralela:
+
+1. `/practica/ingles/a2/habla` — elige entre práctica individual y en pareja.
+2. `/habla/solo` — conserva las veinte frases existentes.
+3. `/habla/acompanada` — deriva los ocho escenarios del registro.
+4. `/habla/acompanada/<slug>` — reparte roles sin mostrar información secreta.
+5. `/habla/acompanada/<slug>/<a|b>` — ficha privada; la carta sustituye la pantalla cuando
+   se abre y puede volver a cerrarse.
+
+La caja común vive en `/habla/acompanada/herramientas`. Los escenarios, las fichas, el
+sitemap y `generateStaticParams` salen de `ROLEPLAY_INGLES_A2`; no hay otra lista manual.
+
+`npm run check:habla-acompanada` verifica el conjunto antes de cada build: ocho escenarios,
+roles A/B, rangos A2, vocabulario y exponentes, cartas en turno global 3–6, cierres,
+preguntas posteriores, referencias gramaticales existentes y presencia de las rutas. El
+guardián transversal `check:practica-catalog` protege además el registro y el motor contra
+una integración que los borre en silencio.

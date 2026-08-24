@@ -85,6 +85,19 @@ expectText('src/components/practica/ListeningJourney.tsx', 'ListeningPlayer');
 expectText('src/data/practica/listening-shuffle.ts', 'balanceOptions');
 
 /**
+ * Habla acompañada: el piloto de inglés A2, sus dos modos y las fichas separadas.
+ *
+ * El validador profundo vive en `check-habla-acompanada.mjs`; estos marcadores hacen que
+ * el guardián transversal pare también si un merge elimina el registro, el selector de
+ * modo o las rutas de rol completas.
+ */
+expectText('src/data/practica/habla-acompanado/ingles-a2.ts', 'ROLEPLAY_INGLES_A2');
+expectText('src/data/practica/habla-acompanado/index.ts', 'ROLEPLAY_SETS');
+expectText('src/components/practica/roleplay/RoleplayExperience.tsx', 'RoleplayRolePage');
+expectText('src/app/(site)/practica/ingles/a2/habla/page.tsx', 'SpeakingModeHub');
+expectText('src/app/(site)/practica/ingles/a2/habla/acompanada/[slug]/[role]/page.tsx', 'RoleplayRolePage');
+
+/**
  * Vocabulario: las 24 rutas del catálogo y el motor nuevo.
  *
  * Mismo razonamiento que con escucha. Estas 24 rutas no las importa ninguna página de IELTS

@@ -28,8 +28,8 @@ const HABILIDADES = [
   },
   {
     id: 'habla', emoji: '🗣️', name: 'Expresión oral', eng: 'Speaking',
-    desc: '20 frases A2 con contexto situacional, pronunciación y variantes formal/informal.',
-    count: '20 frases esenciales', href: '/practica/ingles/a2/habla', available: true,
+    desc: 'Practica a solas con 20 frases o conversa en pareja con 8 juegos de rol y fichas separadas.',
+    count: '2 modos · 8 roleplays', href: '/practica/ingles/a2/habla', available: true,
   },
   {
     id: 'vocabulario', emoji: '📚', name: 'Vocabulario', eng: 'Vocabulary',
