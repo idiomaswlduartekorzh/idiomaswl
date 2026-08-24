@@ -1,6 +1,6 @@
 # SAT Set 4 · Módulo 1 — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 0/27**.
+Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 8/27**.
 
 Esta matriz reserva tema, dificultad y clave antes de redactar. Cada hecho se verificará
 en la fuente primaria al abrir su bloque. Los pasajes y opciones serán originales: una
@@ -18,14 +18,14 @@ fuente respalda un hecho, nunca aporta prosa para adaptar.
 
 | ID | Tipo | Dif. | Materia | Clave | Tema original | Fuente objetivo y riesgo de diseño |
 | --- | --- | ---: | --- | :---: | --- | --- |
-| q01 | words-in-context | 1 | ciencia | D | Un liquen reanuda su actividad tras perder y recuperar agua | USGS o estudio primario; cuatro verbos transitivos compatibles, sin pista de registro |
+| q01 | words-in-context | 1 | ciencia | D | Un liquen reanuda su actividad tras perder y recuperar agua | PLOS ONE, fuente primaria verificada; cuatro predicados compatibles, sin pista de registro |
 | q02 | words-in-context | 2 | literatura | B | Relojera ficticia conserva una página deliberadamente incompleta | Pasaje original; cuatro acepciones abstractas con el mismo régimen |
-| q03 | words-in-context | 3 | historia | A | Imágenes multiespectrales hacen legible una nota borrada de un mapa | Library of Congress o museo; no confundir descubrimiento con interpretación |
-| q04 | text-structure-purpose | 1 | humanidades | C | Archivo oral invita a hablantes a corregir la transcripción de su dialecto | Smithsonian o archivo público; cuatro funciones con alcance comparable |
-| q05 | text-structure-purpose | 2 | ciencia | D | La línea lateral de un pez inspira sensores para robots acuáticos | NSF o artículo primario; separar ejemplo, mecanismo y aplicación |
-| q06 | text-structure-purpose | 3 | historia | A | Catálogos de intercambio de semillas conectan jardines botánicos | Biodiversity Heritage Library; evitar que la cronología delate la función |
+| q03 | words-in-context | 3 | historia | A | Imágenes multiespectrales hacen legible una nota borrada de un mapa | Library of Congress verificada; no confundir descubrimiento con interpretación |
+| q04 | text-structure-purpose | 1 | humanidades | C | Archivo oral invita a hablantes a corregir la transcripción de su dialecto | Escenario original informado por Smithsonian; cuatro funciones con alcance comparable |
+| q05 | text-structure-purpose | 2 | ciencia | D | La línea lateral de un pez inspira sensores para robots acuáticos | Artículo primario en *Sensors* verificado; separar ejemplo, mecanismo y aplicación |
+| q06 | text-structure-purpose | 3 | historia | A | Catálogos de intercambio de semillas conectan jardines botánicos | Biodiversity Heritage Library verificada; evitar que la cronología delate la función |
 | q07 | cross-text-connections | 2 | humanidades | C | Dos curadores discrepan entre explicar una ausencia o dejarla visible | ICOM o museo; acuerdo factual y diferencia de criterio, sin caricaturizar una voz |
-| q08 | cross-text-connections | 3 | ciencia | B | Humedales artificiales: remoción de nitrato frente a diversidad del hábitat | EPA o estudios primarios; no convertir una compensación en oposición absoluta |
+| q08 | cross-text-connections | 3 | ciencia | B | Humedales artificiales: remoción de nitrato frente a diversidad del hábitat | US EPA verificada; no convertir una compensación en oposición absoluta |
 
 ## Information and Ideas · q09–q15
 
