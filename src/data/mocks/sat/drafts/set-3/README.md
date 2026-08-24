@@ -34,6 +34,7 @@ en el registro ejecutable por accidente.
   `docs/sat-auditorias/informes/sat-set-3-m2-facil-sec.md`,
   `docs/sat-auditorias/informes/sat-set-3-m2-facil-eoi.md` y
   `docs/sat-auditorias/informes/sat-set-3-m2-facil-editorial.md`.
-- M2 exigente: matriz editorial cerrada con perfil 5/9/13; 0/27 escritos. Evidencia en
-  `docs/sat-planes/sat-set-3-m2-dificil.md`.
-- Siguiente bloque autorizado: M2 exigente Craft and Structure q01–q08.
+- M2 exigente: matriz 5/9/13 cerrada y Craft and Structure 8/8 escrito y APTO; 8/27
+  total. Evidencia en `docs/sat-planes/sat-set-3-m2-dificil.md` y
+  `docs/sat-auditorias/informes/sat-set-3-m2-dificil-cs.md`.
+- Siguiente bloque autorizado: M2 exigente Information and Ideas q09–q15.
