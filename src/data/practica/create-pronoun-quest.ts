@@ -29,7 +29,7 @@ export type PronounSeed<TopicId extends string> = {
 const LEVELS: readonly PronounLevel[] = [
   { number: '01', title: 'El referente', short: 'Elige la forma', description: 'Relaciona una persona, cosa o grupo con el pronombre que lo sustituye.' },
   { number: '02', title: 'La función', short: 'Lee la relación', description: 'Distingue qué trabajo realiza el pronombre dentro de la oración.' },
-  { number: '03', title: 'La posición', short: 'Orden correcto', description: 'Escoge la frase donde el pronombre ocupa una posición natural.' },
+  { number: '03', title: 'La frase completa', short: 'Integra la forma', description: 'Escoge la oración completa que conserva referente, función y concordancia.' },
   { number: '04', title: 'La reparación', short: 'Error y cambio', description: 'Detecta la forma problemática y selecciona una corrección completa.' },
   { number: '05', title: 'La transformación', short: 'Sustituye sin perder', description: 'Reescribe mentalmente la idea y conserva referente, función y concordancia.' },
   { number: '06', title: 'La cadena final', short: 'Banco cerrado', description: 'Reconstruye una escena donde cada pronombre debe mantener claro su referente.' },
@@ -46,6 +46,10 @@ export function createPronounQuest<TopicId extends string>({
   storageKey,
   languageName,
   languageCode,
+  title,
+  reviewLinks,
+  finalTitle,
+  finalExplanation,
   topics,
   presets,
   seeds,
@@ -55,6 +59,10 @@ export function createPronounQuest<TopicId extends string>({
   storageKey: string
   languageName: string
   languageCode: string
+  title: string
+  reviewLinks: readonly { href: string; label: string }[]
+  finalTitle: string
+  finalExplanation?: string
   topics: readonly PronounTopicOption<TopicId>[]
   presets: readonly PronounPreset<TopicId>[]
   seeds: readonly PronounSeed<TopicId>[]
@@ -90,10 +98,14 @@ export function createPronounQuest<TopicId extends string>({
 
   const placement = makeChoices('placement', (seed, example, _index, globalIndex) => ({
     focus: labels.get(seed.id) ?? seed.id,
-    prompt: 'Elige la oración completa con la forma y la posición correctas.',
-    context: example.transformPrompt,
-    options: options(example.transformAnswer, example.transformDistractors, globalIndex + 2),
-    answer: example.transformAnswer,
+    prompt: 'Elige la oración completa que integra correctamente el pronombre.',
+    context: example.cue,
+    options: options(
+      example.context.replace('___', example.answer),
+      example.distractors.map((distractor) => example.context.replace('___', distractor)),
+      globalIndex + 2,
+    ),
+    answer: example.context.replace('___', example.answer),
   }))
 
   const repairs = makeChoices('repair', (seed, example, _index, globalIndex) => ({
@@ -120,6 +132,8 @@ export function createPronounQuest<TopicId extends string>({
     storageKey,
     languageName,
     languageCode,
+    title,
+    reviewLinks,
     topics,
     presets,
     levels: LEVELS,
@@ -130,7 +144,7 @@ export function createPronounQuest<TopicId extends string>({
     transformations,
     finalChallenge: {
       id: `${id}-final`,
-      title: 'Una entrega con demasiados referentes',
+      title: finalTitle,
       instruction: 'Selecciona un espacio y después la tarjeta que mantiene claro quién hace qué a quién.',
       segments: [rows[0]?.before ?? '', ...rows.map((row, index) => `${row.after}${rows[index + 1]?.before ?? ''}`)],
       gaps: seeds.map((seed, index) => ({
@@ -144,7 +158,7 @@ export function createPronounQuest<TopicId extends string>({
         ...finalDistractors.map((text, index) => ({ id: `${id}-final-distractor-${index + 1}`, text })),
         ...cards.slice(0, Math.ceil(cards.length / 2)),
       ],
-      explanation: 'Cada forma conserva un referente distinto; la posición permite reconstruir la cadena sin repetir todos los nombres.',
+      explanation: finalExplanation ?? 'Cada forma conserva un referente distinto; la posición permite reconstruir la cadena sin repetir todos los nombres.',
     },
   }
 }

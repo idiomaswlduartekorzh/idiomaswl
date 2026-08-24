@@ -24,15 +24,46 @@ type StoredAttempt = {
 }
 type StoredQuest = { bestScores?: Record<string, number>; attempt?: StoredAttempt }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value)
+}
+
+function isStringRecord(value: unknown): value is Record<string, string> {
+  return isRecord(value) && Object.values(value).every((entry) => typeof entry === 'string')
+}
+
+function isNestedStringRecord(value: unknown): value is Record<number, Record<number, string>> {
+  return isRecord(value) && Object.values(value).every(isStringRecord)
+}
+
+function isResultRecord(value: unknown): value is Record<number, Result> {
+  return isRecord(value) && Object.values(value).every((entry) => isRecord(entry)
+    && Number.isInteger(entry.correct) && Number(entry.correct) >= 0
+    && Number.isInteger(entry.total) && Number(entry.total) > 0)
+}
+
+function isBestScoreRecord(value: unknown): value is Record<string, number> {
+  return isRecord(value) && Object.values(value).every((score) => typeof score === 'number' && Number.isFinite(score) && score >= 0 && score <= 100)
+}
+
 function safeAttempt(value: unknown, topicIds: ReadonlySet<string>, levelCount: number): value is StoredAttempt {
-  if (!value || typeof value !== 'object') return false
+  if (!isRecord(value)) return false
   const item = value as Partial<StoredAttempt>
   return Array.isArray(item.selectedTopics)
     && item.selectedTopics.length > 0
+    && new Set(item.selectedTopics).size === item.selectedTopics.length
     && item.selectedTopics.every((id) => typeof id === 'string' && topicIds.has(id))
     && Number.isInteger(item.activeLevel)
     && Number(item.activeLevel) >= 0
     && Number(item.activeLevel) < levelCount
+    && Number.isInteger(item.itemIndex)
+    && Number(item.itemIndex) >= 0
+    && isStringRecord(item.answers)
+    && isNestedStringRecord(item.savedAnswers)
+    && isStringRecord(item.bankAnswers)
+    && isStringRecord(item.savedBankAnswers)
+    && isResultRecord(item.results)
+    && typeof item.summary === 'boolean'
 }
 
 export default function PronounQuestEngine({ config }: { config: PronounQuestConfig<string> }) {
@@ -91,7 +122,7 @@ export default function PronounQuestEngine({ config }: { config: PronounQuestCon
     let saved: StoredQuest = {}
     try { saved = JSON.parse(localStorage.getItem(config.storageKey) ?? '{}') as StoredQuest } catch { /* progreso opcional */ }
     const url = new URL(window.location.href)
-    const requested = url.searchParams.get('topics')?.split(',').filter((id) => topicIdSet.has(id)) ?? []
+    const requested = [...new Set(url.searchParams.get('topics')?.split(',').filter((id) => topicIdSet.has(id)) ?? [])]
     const urlLevel = Number(url.searchParams.get('level')) - 1
     const requestedLevel = Number.isInteger(urlLevel) && urlLevel >= 0 && urlLevel < config.levels.length ? urlLevel : 0
     const attempt = safeAttempt(saved.attempt, topicIdSet, config.levels.length) ? saved.attempt : undefined
@@ -120,7 +151,7 @@ export default function PronounQuestEngine({ config }: { config: PronounQuestCon
           setSummary(Boolean(attempt.summary))
         }
       }
-      if (saved.bestScores && typeof saved.bestScores === 'object') setBestScores(saved.bestScores)
+      if (isBestScoreRecord(saved.bestScores)) setBestScores(saved.bestScores)
       setHydrated(true)
     })
     return () => cancelAnimationFrame(frame)
@@ -241,7 +272,7 @@ export default function PronounQuestEngine({ config }: { config: PronounQuestCon
     return <>
       <p className={p.choicePrompt}>{item.prompt}</p>
       <div className={s.choiceContext} lang={config.languageCode}>{item.context}</div>
-      <div className="wlp-option-grid" lang={config.languageCode}>
+      <div className="wlp-option-grid" lang={activeLevel === 1 ? 'es' : config.languageCode}>
         {item.options.map((option) => <button aria-pressed={answers[itemIndex] === option} className="wlp-option" key={option} onClick={() => setAnswers((currentAnswers) => ({ ...currentAnswers, [itemIndex]: option }))} type="button">{option}</button>)}
       </div>
     </>
@@ -269,14 +300,14 @@ export default function PronounQuestEngine({ config }: { config: PronounQuestCon
 
   return <div className="wlp-page" style={{ '--wlp-accent': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
     <div className="wlp-shell">
-      <nav aria-label="Migas de pan" className="wlp-breadcrumb"><Link href="/herramientas">Herramientas</Link><span aria-hidden="true">/</span><Link href="/herramientas/quizes">Quizes</Link><span aria-hidden="true">/</span><Link href="/herramientas/quizes/pronombres">Pronombres</Link><span aria-hidden="true">/</span><span aria-current="page">Italiano</span></nav>
-      <header className="wlp-hero wlp-hero--compact"><p className="wlp-eyebrow">Gramática · referentes y función</p><h1 lang="it">La catena dei pronomi</h1><p className="wlp-hero-lead">Elige qué familias practicar y aprende a seguir quién hace qué a quién. Todas las respuestas son cerradas y la corrección aparece al terminar el nivel.</p></header>
+      <nav aria-label="Migas de pan" className="wlp-breadcrumb"><Link href="/herramientas">Herramientas</Link><span aria-hidden="true">/</span><Link href="/herramientas/quizes">Quizes</Link><span aria-hidden="true">/</span><Link href="/herramientas/quizes/pronombres">Pronombres</Link><span aria-hidden="true">/</span><span aria-current="page">{config.languageName}</span></nav>
+      <header className="wlp-hero wlp-hero--compact"><p className="wlp-eyebrow">Gramática · referentes y función</p><h1 lang={config.languageCode}>{config.title}</h1><p className="wlp-hero-lead">Elige qué familias practicar y aprende a seguir quién hace qué a quién. Todas las respuestas son cerradas y la corrección aparece al terminar el nivel.</p></header>
       <section aria-label="Cadena de referencia" className={p.referenceChain}><span>referente</span><ArrowRight aria-hidden="true" size={15}/><span>función</span><ArrowRight aria-hidden="true" size={15}/><strong>pronombre</strong></section>
 
       {!configured ? <section aria-labelledby="pronoun-selector-title" className={`wlp-card wlp-card--path ${s.selector}`}>
         <div className={s.selectorHeading}><div><p className="wlp-eyebrow">Configura tu recorrido</p><h2 id="pronoun-selector-title">¿Qué pronombres quieres practicar?</h2><p>Combina familias o trabaja una sola. Cada selección conserva seis niveles completos.</p></div><span className={s.selectionCount}>{draftTopics.length} de {config.topics.length}</span></div>
         <div aria-label="Selecciones rápidas" className={s.presets}>{config.presets.map((preset) => <button key={preset.label} onClick={() => setDraftTopics(preset.ids)} type="button">{preset.label}</button>)}<button onClick={() => setDraftTopics([])} type="button">Limpiar</button></div>
-        <div className={s.tenseGrid} lang="it">{config.topics.map((topic) => { const selected = draftTopics.includes(topic.id); return <button aria-pressed={selected} className={selected ? s.tenseSelected : ''} key={topic.id} onClick={() => toggleTopic(topic.id)} type="button"><span aria-hidden="true">{selected ? <Check size={16}/> : null}</span><strong>{topic.label}</strong><small>{topic.level} · {topic.group}</small></button> })}</div>
+        <div className={s.tenseGrid}>{config.topics.map((topic) => { const selected = draftTopics.includes(topic.id); return <button aria-pressed={selected} className={selected ? s.tenseSelected : ''} key={topic.id} onClick={() => toggleTopic(topic.id)} type="button"><span aria-hidden="true">{selected ? <Check size={16}/> : null}</span><strong>{topic.label}</strong><small>{topic.level} · {topic.group}</small></button> })}</div>
         <div className={s.selectorFooter}><p>{draftTopics.length ? 'No verás aciertos ni errores hasta terminar el nivel.' : 'Selecciona al menos una familia para empezar.'}</p><button className="wlp-btn" disabled={!draftTopics.length} onClick={configureQuiz} type="button">Crear mi quiz <ArrowRight size={16}/></button></div>
       </section> : <section aria-label="Familias seleccionadas" className={s.selectionBar}><div><SlidersHorizontal aria-hidden="true" size={18}/><span>{config.topics.filter((topic) => selectedSet.has(topic.id)).map((topic) => topic.label).join(' · ')}</span></div><button onClick={changeSelection} type="button">Cambiar selección</button></section>}
 
@@ -286,10 +317,10 @@ export default function PronounQuestEngine({ config }: { config: PronounQuestCon
         <article aria-labelledby={`${config.id}-tab-${activeLevel}`} className={`wlp-card wlp-card--path ${s.quizCard}`} id={`${config.id}-panel`} role="tabpanel">
           <div className={s.quizTopline}><div><span>Nivel {activeLevel + 1} · {meta.title}</span><strong>{summary ? 'Resultado' : `${itemIndex + 1} / ${total}`}</strong></div><span>{meta.description}</span></div>
           <div aria-label={`Progreso ${Math.round(progress)}%`} aria-valuemax={100} aria-valuemin={0} aria-valuenow={Math.round(progress)} className="wlp-meter" role="progressbar"><span style={{ width: `${progress}%` }}/></div>
-          {summary ? <div aria-live="polite" className={s.summary} role="status"><div className={s.summaryScore}><Trophy aria-hidden="true" size={34}/><div><p className="wlp-eyebrow">Nivel completado</p><h3 ref={resultHeadingRef} tabIndex={-1}>{levelCorrect} de {levelPoints} puntos correctos</h3></div><strong>{percentage}%</strong></div><p>{percentage >= 70 ? 'La cadena de referentes está clara. Revisa el detalle y continúa.' : 'Revisa función, concordancia y posición antes de repetir el nivel.'}</p><ol className={s.reviewList}>{Array.from({ length: reviewCount }, (_, index) => { const result = results[index] ?? { correct: 0, total: 1 }; const item = reviewItem(index); const ok = result.correct === result.total; return <li className={ok ? s.reviewOk : s.reviewAlert} key={index}><div className={s.reviewTitle}>{ok ? <CheckCircle2 aria-hidden="true" size={19}/> : <XCircle aria-hidden="true" size={19}/>}<strong>{index + 1}. {item.title} · {result.correct}/{result.total}</strong></div><p><b>Tu respuesta:</b> <span lang="it">{item.submitted}</span></p>{!ok ? <p><b>Respuesta correcta:</b> <span lang="it">{item.expected}</span></p> : null}<small>{item.explanation}</small></li> })}</ol><div className="wlp-actions"><button className="wlp-btn wlp-btn--secondary" onClick={retryLevel} type="button"><RotateCcw size={16}/> Repetir nivel</button>{activeLevel < 5 ? <button className="wlp-btn" onClick={() => goToLevel(activeLevel + 1)} type="button">Siguiente nivel <ArrowRight size={16}/></button> : <Link className="wlp-btn" href="/herramientas/quizes/pronombres">Volver a Pronombres</Link>}</div></div> : <><div className={s.taskHeader}><div><p className="wlp-eyebrow">{current?.focus ?? 'Cadena final'}</p><h3 lang="it" ref={taskHeadingRef} tabIndex={-1}>{current ? `${config.topics.find((topic) => topic.id === current.topic)?.label ?? current.topic} · ${itemIndex + 1}` : config.finalChallenge.title}</h3></div><span>{meta.short}</span></div><div className={s.exerciseBody}>{current ? renderChoice(current) : renderBank()}</div><p className={s.deferNote}><EyeOff aria-hidden="true" size={16}/>Sin corrección inmediata: tus resultados aparecen al terminar el nivel.</p><div className={s.quizActions}><button className="wlp-btn wlp-btn--secondary" disabled={itemIndex === 0} onClick={goBack} type="button"><ArrowLeft size={16}/> Anterior</button><button className="wlp-btn" disabled={!currentComplete()} onClick={submitCurrent} type="button">{itemIndex === total - 1 ? 'Terminar nivel' : 'Guardar y seguir'} <ArrowRight size={16}/></button></div></>}
+          {summary ? <div aria-live="polite" className={s.summary} role="status"><div className={s.summaryScore}><Trophy aria-hidden="true" size={34}/><div><p className="wlp-eyebrow">Nivel completado</p><h3 ref={resultHeadingRef} tabIndex={-1}>{levelCorrect} de {levelPoints} puntos correctos</h3></div><strong>{percentage}%</strong></div><p>{percentage >= 70 ? 'La cadena de referentes está clara. Revisa el detalle y continúa.' : 'Revisa función, concordancia y posición antes de repetir el nivel.'}</p><ol className={s.reviewList}>{Array.from({ length: reviewCount }, (_, index) => { const result = results[index] ?? { correct: 0, total: 1 }; const item = reviewItem(index); const ok = result.correct === result.total; return <li className={ok ? s.reviewOk : s.reviewAlert} key={index}><div className={s.reviewTitle}>{ok ? <CheckCircle2 aria-hidden="true" size={19}/> : <XCircle aria-hidden="true" size={19}/>}<strong>{index + 1}. {item.title} · {result.correct}/{result.total}</strong></div><p><b>Tu respuesta:</b> <span lang={config.languageCode}>{item.submitted}</span></p>{!ok ? <p><b>Respuesta correcta:</b> <span lang={config.languageCode}>{item.expected}</span></p> : null}<small>{item.explanation}</small></li> })}</ol><div className="wlp-actions"><button className="wlp-btn wlp-btn--secondary" onClick={retryLevel} type="button"><RotateCcw size={16}/> Repetir nivel</button>{activeLevel < 5 ? <button className="wlp-btn" onClick={() => goToLevel(activeLevel + 1)} type="button">Siguiente nivel <ArrowRight size={16}/></button> : <Link className="wlp-btn" href="/herramientas/quizes/pronombres">Volver a Pronombres</Link>}</div></div> : <><div className={s.taskHeader}><div><p className="wlp-eyebrow">{current?.focus ?? 'Cadena final'}</p><h3 lang={current ? 'es' : config.languageCode} ref={taskHeadingRef} tabIndex={-1}>{current ? `${config.topics.find((topic) => topic.id === current.topic)?.label ?? current.topic} · ${itemIndex + 1}` : config.finalChallenge.title}</h3></div><span>{meta.short}</span></div><div className={s.exerciseBody}>{current ? renderChoice(current) : renderBank()}</div><p className={s.deferNote}><EyeOff aria-hidden="true" size={16}/>Sin corrección inmediata: tus resultados aparecen al terminar el nivel.</p><div className={s.quizActions}><button className="wlp-btn wlp-btn--secondary" disabled={itemIndex === 0} onClick={goBack} type="button"><ArrowLeft size={16}/> Anterior</button><button className="wlp-btn" disabled={!currentComplete()} onClick={submitCurrent} type="button">{itemIndex === total - 1 ? 'Terminar nivel' : 'Guardar y seguir'} <ArrowRight size={16}/></button></div></>}
         </article>
       </section> : null}
-      <nav aria-label="Siguiente práctica" className="wlp-next"><Link href="/practica/italiano/a1/gramatica/pronombres-sujeto">Repasar pronombres sujeto</Link><Link href="/practica/italiano/a1/gramatica/adjetivos-posesivos">Repasar posesivos</Link></nav>
+      <nav aria-label="Siguiente práctica" className="wlp-next">{config.reviewLinks.map((link) => <Link href={link.href} key={link.href}>{link.label}</Link>)}</nav>
     </div>
   </div>
 }

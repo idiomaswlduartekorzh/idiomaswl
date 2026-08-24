@@ -1,8 +1,8 @@
 # Quiz de pronombres — blueprint de implementación y expansión
 
 Fuente de verdad de la familia `/herramientas/quizes/pronombres`. Complementa el contrato
-operativo general de [`quizzes-blueprint-operativo.md`](quizzes-blueprint-operativo.md). Piloto
-verificado: italiano A1–A2+, 23 de agosto de 2026.
+operativo general de [`quizzes-blueprint-operativo.md`](quizzes-blueprint-operativo.md).
+Implementación multilingüe verificada: 8 idiomas, 58 familias y 6 niveles, 23 de agosto de 2026.
 
 ## 1. Resultado pedagógico
 
@@ -11,7 +11,8 @@ El estudiante no memoriza listas aisladas: reconstruye la cadena
 niveles sin recibir pistas de corrección hasta cerrar cada nivel. Todas las respuestas se eligen
 entre opciones editoriales; no hay texto libre, IA, similitud ni corrección aproximada.
 
-El piloto italiano cubre:
+La familia publicada cubre mapas contrastivos propios para italiano, inglés, francés, portugués
+brasileño, alemán, ruso, japonés y coreano. Italiano cubre:
 
 - pronombres sujeto y tratamiento formal `Lei`;
 - demostrativos;
@@ -29,7 +30,10 @@ El piloto italiano cubre:
 | `src/components/practica/PronounQuestEngine.module.css` | Firma visual de la cadena y el banco final |
 | `src/data/practica/pronoun-quest-types.ts` | Contrato independiente del idioma |
 | `src/data/practica/create-pronoun-quest.ts` | Factoría determinista de los seis niveles |
-| `src/data/practica/italian-pronoun-quest.ts` | Mapa y contenido editorial italiano |
+| `src/data/practica/pronoun-quest-authoring.ts` | Ayudante editorial compacto sin reducir el contrato del motor |
+| `src/data/practica/pronoun-quest-registry.ts` | Registro único de rutas, metadata y bancos publicados |
+| `src/data/practica/<idioma>-pronoun-quest.ts` | Mapa contrastivo y contenido editorial de cada idioma |
+| `src/app/(site)/herramientas/quizes/pronombres/[idioma]/page.tsx` | Ruta dinámica, metadata y schemas de los siete idiomas escalados |
 | `scripts/check-pronoun-quests.mjs` | Guardián estructural, pedagógico y de cobertura |
 | `tests/pronoun-quests.test.mjs` | Regresiones de dominio y formas sensibles |
 | `tests/e2e/pronoun-quests.spec.ts` | Flujo real, móvil, persistencia y estado corrupto |
@@ -45,7 +49,7 @@ debe forzar una abstracción de estado que mezcle ambos dominios.
 |---|---|---|
 | 1 · El referente | escoger la forma que retoma el referente | cuatro opciones |
 | 2 · La función | identificar el trabajo del pronombre en contexto | cuatro funciones |
-| 3 · La posición | reconocer forma y orden natural | cuatro oraciones completas |
+| 3 · La frase completa | integrar la forma sin romper referente, función o concordancia | cuatro oraciones completas |
 | 4 · La reparación | reemplazar una forma problemática | cuatro cambios completos `error → corrección` |
 | 5 · La transformación | sustituir sin perder significado o concordancia | cuatro oraciones completas |
 | 6 · La cadena final | mantener varios referentes a través de una escena | banco cerrado con distractores |
@@ -72,6 +76,19 @@ Los distractores no son ruido aleatorio. Deben representar confusiones plausible
 persona, género, número, función, posición, registro o combinación. Ninguno puede ser también
 válido dentro del mismo contexto y registro.
 
+### Inventario publicado
+
+| Idioma | Familias que organizan el banco |
+|---|---|
+| Italiano | sujeto, demostrativos, posesivos, directo, indirecto, reflexivo, combinados |
+| Inglés | sujeto, objeto, determinantes posesivos, pronombres posesivos, demostrativos, reflexivos, relativos |
+| Francés | sujeto, tónicos, directo, indirecto, `y/en`, reflexivos, demostrativos, posesivos |
+| Portugués BR | sujeto, formas preposicionales, directo formal, indirecto, reflexivos, demostrativos, posesivos |
+| Alemán | nominativo, acusativo, dativo, reflexivos, posesivos, demostrativos, relativos |
+| Ruso | nominativo, acusativo, dativo, formas con `н-`, posesivos/`свой`, demostrativos, `себя`, `который` |
+| Japonés | primera persona, tratamiento, tercera persona contextual, `これ/それ/あれ`, `この/その/あの`, posesión con `の`, `自分` |
+| Coreano | primera persona, tratamientos, tercera persona contextual, `이것/그것/저것`, `이/그/저`, posesión, `자기/자신` |
+
 ## 5. Reglas lingüísticas no negociables
 
 1. El antecedente y la función deben ser recuperables sin adivinar intención.
@@ -87,6 +104,10 @@ válido dentro del mismo contexto y registro.
 9. La explicación enseña la regla que resuelve el caso, no repite simplemente la solución.
 10. Las decisiones dudosas se resuelven con fuentes normativas primarias y se convierten en una
     regresión automatizada si son fáciles de perder.
+11. Una respuesta nunca termina en un apóstrofo o guion que deje parte de la forma fija fuera
+    del hueco; `m’envoyer`, `l’ho` o la unidad combinada completa pertenecen a la opción.
+12. En japonés y coreano, partículas necesarias para reconstruir la referencia forman parte de
+    la tarjeta final cuando dejarlas fijas impediría corregir la unidad elegida.
 
 ## 6. Estado, URL y corrección
 
@@ -132,16 +153,17 @@ seis niveles desde el primer commit. No publiques tarjetas “próximamente” d
 
 ### Fase C — montaje y descubrimiento
 
-Crea la ruta `/herramientas/quizes/pronombres/<idioma>` como Server Component con metadata,
-canonical, `GrammarLessonSchema` y `QuizSchema`. Registra el idioma en la página de familia y, si
-cambia el catálogo principal, actualiza su prueba deliberadamente. Nunca copies el motor.
+Registra banco, slug, descripción y palabras clave en `pronoun-quest-registry.ts`. La ruta
+dinámica genera metadata, canonical, `GrammarLessonSchema` y `QuizSchema`; no se crea ni copia
+una página por idioma. Italiano conserva temporalmente su ruta estática por compatibilidad, pero
+usa el mismo motor y contrato.
 
 ### Fase D — guardianes
 
 Añade el banco a `scripts/check-pronoun-quests.mjs`, a `tests/pronoun-quests.test.mjs` y a las
 rutas E2E. Incorpora regresiones para formas normativas sensibles del idioma.
 
-### Orden de expansión recomendado
+### Orden aplicado en la expansión
 
 1. inglés, por valor de uso y menor complejidad de clíticos;
 2. francés y portugués, después de validar el patrón de clíticos y tratamiento;
@@ -153,7 +175,33 @@ rutas E2E. Incorpora regresiones para formas normativas sensibles del idioma.
 Cada fase se publica por idioma completo; un fallo lingüístico detiene solo ese idioma, pero un
 fallo del motor, catálogo o build detiene toda la publicación.
 
-## 9. Puertas de calidad
+## 9. Auditoría de agosto de 2026
+
+La auditoría previa a la expansión encontró y corrigió cuatro clases de fallo:
+
+- nivel 3 duplicaba exactamente las 21 decisiones italianas del nivel 5;
+- formas elididas o ligadas dejaban fragmentos fijos fuera de la respuesta (`l’` + `ho`,
+  `quell’` + nombre), lo que impedía reparar toda la unidad;
+- algunos reflexivos eran en realidad verbos pronominales y no demostraban correferencia;
+- el estado restaurado aceptaba objetos parciales o corruptos y la URL aceptaba familias repetidas.
+
+El guardián actual recorre los ocho bancos, exige tres contextos por familia y nivel, cuatro
+opciones únicas, distribución equilibrada, una sola unidad reemplazable, niveles 3 y 5 distintos,
+tarjetas finales únicas, claves versionadas y rutas registradas. Los E2E recorren catálogo,
+8 selectores, móvil, corrección diferida, persistencia, los 6 niveles y estado corrupto.
+
+### Fuentes normativas de diseño
+
+- Italiano: [Treccani — pronomi personali](https://www.treccani.it/enciclopedia/pronomi-personali_%28La-grammatica-italiana%29/), [Treccani — verbi riflessivi](https://www.treccani.it/enciclopedia/verbi-riflessivi_%28Enciclopedia-dell%27Italiano%29/), [Accademia della Crusca — pronomi di cortesia](https://accademiadellacrusca.it/it/consulenza/sui-pronomi-di-cortesia/179).
+- Inglés: [Cambridge Grammar — personal pronouns](https://dictionary.cambridge.org/grammar/british-grammar/pronouns-personal-i-me-you-him-it-we-us-they-them), [reflexives](https://dictionary.cambridge.org/grammar/british-grammar/reflexive), [relative pronouns](https://dictionary.cambridge.org/us/grammar/british-grammar/relative-pronouns/).
+- Francés: [Académie française — pronoms](https://www.academie-francaise.fr/des-coelacanthes-dans-la-grammaire), [OQLF — pronom possessif](https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26559853/pronom-possessif).
+- Portugués: [Ciberdúvidas — `lhe` objeto indireto](https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/lhe-objeto-indireto-sem-preposicao/37726), [uso atual de `o/a/lhe`](https://ciberduvidas.iscte-iul.pt/artigos/rubricas/pelourinho/o-atual-uso-dos-pronomes-pessoais-obliquos-oa-e-lhe/4380), [`dele` y ambigüedad](https://ciberduvidas.iscte-iul.pt/artigos/rubricas/idioma/a-classe-de-palavras-de-dele/5103).
+- Alemán: [Duden — Wortart Pronomen](https://www.duden.de/sprachwissen/fuer-lernende/wortarten-pronomen), [Duden — Relativpronomen](https://www.duden.de/sprachwissen/sprachratgeber/Was-sind-Relativpronomen).
+- Ruso: [Грамота — categorías semánticas](https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/razryady-mestoimeniy-po-znacheniyu), [formas personales tras preposición](https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/grammaticheskie-priznaki-mestoimeniy-sushchestvitelnykh).
+- Japonés: [Japan Foundation — Marugoto Starter](https://marugoto.jpf.go.jp/assets/docs/about/starter_competences_sample.pdf), [Irodori — nombres y さん](https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L03_au.pdf).
+- Coreano: [National Institute of Korean Language — clasificación](https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&pageIndex=1&qna_seq=311884), [Korean Basic Dictionary — personal pronouns](https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=72258&nation=eng&nationCode=6), [`당신`](https://krdict.korean.go.kr/eng/dicSearch/wordLinkViewPopup?ParaWordNo=30200&nation=eng&nationCode=6).
+
+## 10. Puertas de calidad
 
 Durante desarrollo:
 
@@ -174,10 +222,14 @@ npx tsc --noEmit
 npm run build
 ```
 
+En equipos de memoria limitada, no se duplica un build local que ya provocó presión de memoria:
+se ejecutan guardianes, TypeScript, lint y E2E localmente; el build completo se valida en el
+deployment de Vercel del commit. La excepción debe quedar explícita en el cierre.
+
 La publicación termina solo cuando el deployment está `Ready` y el E2E pasa sobre
 `https://www.idiomaswl.com`, no únicamente en local.
 
-## 10. Definición de terminado
+## 11. Definición de terminado
 
 - mapa contrastivo revisado con fuentes normativas;
 - tres contextos inequívocos por familia en niveles 1–5;
@@ -189,7 +241,7 @@ La publicación termina solo cuando el deployment está `Ready` y el E2E pasa so
 - catálogo, guardianes, unit tests, TypeScript, lint y build en verde;
 - commit integrado en `main`, despliegue `Ready` y prueba productiva en verde.
 
-## 11. Prompt para otro chat
+## 12. Prompt para otro chat
 
 ```text
 Implementa el siguiente idioma del quiz de pronombres siguiendo

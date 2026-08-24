@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 const ROUTE = '/herramientas/quizes/pronombres/italiano'
+const LANGUAGE_ROUTES = ['italiano', 'ingles', 'frances', 'portugues', 'aleman', 'ruso', 'japones', 'coreano']
 
 async function reset(page: import('@playwright/test').Page) {
   await page.goto(ROUTE)
@@ -24,6 +25,17 @@ test('el catálogo descubre la nueva familia y el piloto cabe en móvil', async 
   await expect(page.locator('main')).toHaveCount(1)
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
   expect(overflow).toBeLessThanOrEqual(1)
+})
+
+test('los ocho idiomas cargan un selector funcional', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  for (const language of LANGUAGE_ROUTES) {
+    await page.goto(`/herramientas/quizes/pronombres/${language}`)
+    await expect(page.locator('#pronoun-selector-title')).toBeVisible()
+    await expect(page.locator('section[aria-labelledby="pronoun-selector-title"] button[aria-pressed]').first()).toBeVisible()
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+    expect(overflow, `${language} no debe desbordar horizontalmente`).toBeLessThanOrEqual(1)
+  }
 })
 
 test('no revela corrección antes de cerrar el nivel y restaura el intento', async ({ page }) => {
@@ -80,4 +92,14 @@ test('estado local y parámetros corruptos vuelven a una configuración segura',
   await page.goto(`${ROUTE}?topics=soggetto&level=99`)
   await expect(page.getByText('1 / 3', { exact: true })).toBeVisible()
   await expect(page.locator('.wlp-option')).toHaveCount(4)
+
+  await page.evaluate(() => window.localStorage.setItem('wl-italian-pronoun-quest-v1', JSON.stringify({
+    attempt: {
+      selectedTopics: ['soggetto'], activeLevel: 0, itemIndex: 0, answers: 'roto', savedAnswers: {},
+      bankAnswers: {}, savedBankAnswers: {}, results: {}, summary: false,
+    },
+  })))
+  await page.goto(`${ROUTE}?topics=soggetto,soggetto&level=1`)
+  await expect(page.locator('.wlp-option[aria-pressed="true"]')).toHaveCount(0)
+  await expect(page.getByText('Pronombres sujeto · 1')).toBeVisible()
 })

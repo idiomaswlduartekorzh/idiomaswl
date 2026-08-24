@@ -52,6 +52,8 @@ export type PronounQuestConfig<TopicId extends string> = {
   storageKey: string
   languageName: string
   languageCode: string
+  title: string
+  reviewLinks: readonly { href: string; label: string }[]
   topics: readonly PronounTopicOption<TopicId>[]
   presets: readonly PronounPreset<TopicId>[]
   levels: readonly PronounLevel[]

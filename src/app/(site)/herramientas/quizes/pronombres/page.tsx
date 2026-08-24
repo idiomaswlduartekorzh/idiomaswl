@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
+import { PRONOUN_QUESTS } from '@/data/practica/pronoun-quest-registry'
 
 import s from '../QuizesHub.module.css'
 
@@ -26,7 +27,7 @@ export default function PronounQuizesPage() {
     <div className="wlp-shell">
       <nav aria-label="Migas de pan" className="wlp-breadcrumb"><Link href="/herramientas">Herramientas</Link><span aria-hidden="true">/</span><Link href="/herramientas/quizes">Quizes</Link><span aria-hidden="true">/</span><span aria-current="page">Pronombres</span></nav>
       <header className="wlp-hero wlp-hero--compact"><p className="wlp-eyebrow">Gramática · referentes y función</p><h1>Quizes de pronombres</h1><p className="wlp-hero-lead">Practica quién hace qué a quién sin depender de traducción literal. Elige las familias y recibe la corrección al cerrar cada nivel.</p></header>
-      <section className="wlp-section" aria-labelledby="pronoun-languages"><div className="wlp-section-heading"><p className="wlp-eyebrow">Piloto disponible</p><h2 id="pronoun-languages">Elige un idioma</h2><p>Cada idioma tendrá su propio mapa lingüístico; no se traducen bancos mecánicamente.</p></div><ul className={s.grid}><li><Link className={`wlp-card wlp-card--path ${s.card}`} href="/herramientas/quizes/pronombres/italiano"><p className="wlp-eyebrow wlp-eyebrow--card" lang="it">ITALIANO</p><h3 className={s.name}>La catena dei pronomi</h3><p className={s.desc}>Sujeto, demostrativos, posesivos, objetos directos e indirectos, reflexivos y combinados.</p><div className={s.foot}><span className={s.detail}>7 familias · 6 niveles</span><span className={s.arrow} aria-hidden="true">→</span></div></Link></li></ul></section>
+      <section className="wlp-section" aria-labelledby="pronoun-languages"><div className="wlp-section-heading"><p className="wlp-eyebrow">8 recorridos disponibles</p><h2 id="pronoun-languages">Elige un idioma</h2><p>Cada banco sigue el mapa real del idioma; no son traducciones mecánicas del italiano.</p></div><ul className={s.grid}>{PRONOUN_QUESTS.map((entry) => <li key={entry.slug}><Link className={`wlp-card wlp-card--path ${s.card}`} href={`/herramientas/quizes/pronombres/${entry.slug}`}><p className="wlp-eyebrow wlp-eyebrow--card" lang={entry.config.languageCode}>{entry.eyebrow}</p><h3 className={s.name} lang={entry.config.languageCode}>{entry.config.title}</h3><p className={s.desc}>{entry.description}</p><div className={s.foot}><span className={s.detail}>{entry.config.topics.length} familias · 6 niveles</span><span className={s.arrow} aria-hidden="true">→</span></div></Link></li>)}</ul></section>
     </div>
   </div>
 }
