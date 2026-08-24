@@ -1,5 +1,9 @@
 # Blueprint multilingüe — quizes de tiempo, aspecto y estructura
 
+> Para implementar un banco nuevo, registrar todos sus puntos de integración y publicarlo, usa
+> primero [`quizzes-blueprint-operativo.md`](quizzes-blueprint-operativo.md). Este documento se
+> concentra en las decisiones curriculares por idioma.
+
 Fuente de verdad para escalar el motor de `/herramientas/quizes` a los ocho idiomas de
 Idiomas WeLearn. Versión 2: 23 de agosto de 2026, endurecida tras auditoría funcional y
 pedagógica.

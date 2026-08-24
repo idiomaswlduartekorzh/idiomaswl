@@ -1,5 +1,9 @@
 # Quiz de tiempos verbales en inglés — blueprint y puertas de calidad
 
+> La receta técnica actual, los guardianes y el checklist de producción viven en
+> [`quizzes-blueprint-operativo.md`](quizzes-blueprint-operativo.md). Este documento conserva la
+> especificación editorial particular de inglés.
+
 Fuente de verdad para construir `/herramientas/quizes/ingles` a partir de la experiencia del
 quiz italiano, sin copiar sus defectos de cobertura, puntuación ni accesibilidad.
 
