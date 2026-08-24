@@ -2,6 +2,7 @@ import type { RoleplaySet } from '../index.ts'
 import { TOOLKIT_INGLES_A2 } from '../toolkit-ingles-a2.ts'
 import { ROLEPLAY_INGLES_A2_BATCH_1 } from './ingles-a2-batch-1.ts'
 import { ROLEPLAY_INGLES_A2_BATCH_2 } from './ingles-a2-batch-2.ts'
+import { ROLEPLAY_INGLES_A2_BATCH_3 } from './ingles-a2-batch-3.ts'
 
 /**
  * Conjuntos todavía no publicables.
@@ -14,7 +15,11 @@ export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
   {
     language: 'ingles',
     level: 'a2',
-    scenarios: [...ROLEPLAY_INGLES_A2_BATCH_1, ...ROLEPLAY_INGLES_A2_BATCH_2],
+    scenarios: [
+      ...ROLEPLAY_INGLES_A2_BATCH_1,
+      ...ROLEPLAY_INGLES_A2_BATCH_2,
+      ...ROLEPLAY_INGLES_A2_BATCH_3,
+    ],
     toolkit: TOOLKIT_INGLES_A2,
   },
 ]

@@ -1,6 +1,6 @@
 # Habla acompañada · Inglés A2 · parrilla editorial 1–20
 
-Estado: **parrilla cerrada; tandas 1–2 (4, 7, 8, 11 y 12) en borrador.** Este documento no publica
+Estado: **parrilla cerrada; tandas 1–3 (4, 7, 8, 11, 12 y 14–16) en borrador.** Este documento no publica
 contenido. El registro vivo conserva ocho escenarios hasta que las veinte prácticas, las
 cuarenta fichas y la caja A2 pasen juntas el guardián.
 
@@ -43,7 +43,7 @@ blueprint. Los slugs y, por tanto, sus URLs públicas no cambian.
 
 1. Tanda 1: escenarios 4, 7 y 8 — borrador estructural completo; pendiente simulación editorial.
 2. Tanda 2: escenarios 11 y 12 — borrador estructural completo; pendiente simulación editorial.
-3. Tanda 3: escenarios 14, 15 y 16 — completa Movilidad/servicios.
+3. Tanda 3: escenarios 14, 15 y 16 — borrador estructural completo; pendiente simulación editorial.
 4. Tanda 4: escenarios 17–20 — completa Planes/problemas.
 5. Reordenar los ocho escenarios vivos, concatenar `1..20`, subir el piso de `ingles-a2` a
    20 y publicar solo cuando el conjunto completo pase las doce puertas.
