@@ -18,7 +18,6 @@ import {
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 import type { GapChallenge, TenseQuestConfig } from '@/data/practica/tense-quest-types'
 
-import QuizFamilyNav from './QuizFamilyNav'
 import s from './TenseQuestEngine.module.css'
 
 type ResponseSnapshot = {
@@ -814,7 +813,9 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
           <span aria-hidden="true">/</span>
           <Link href="/herramientas/quizes">Quizes</Link>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">{copy.languageName}</span>
+          <Link href={`/herramientas/quizes/idiomas/${languageSlug}`}>{copy.languageName}</Link>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Tiempos y estructuras</span>
         </nav>
 
         <header className="wlp-hero wlp-hero--compact">
@@ -822,8 +823,6 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
           <h1 lang={copy.languageCode}>{copy.title}</h1>
           <p className="wlp-hero-lead">{copy.lead}</p>
         </header>
-
-        <QuizFamilyNav active="tiempos" languageName={copy.languageName} slug={languageSlug}/>
 
         <section aria-label="Mapa de referencia" className={s.timeMap} lang={copy.languageCode}>
           <span>{copy.mapLabels[0]}</span>
@@ -999,7 +998,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
                         Siguiente nivel <ArrowRight size={16} />
                       </button>
                     ) : (
-                      <Link className="wlp-btn" href="/herramientas/quizes">Volver a Quizes</Link>
+                      <Link className="wlp-btn" href={`/herramientas/quizes/idiomas/${languageSlug}`}>Ver los quizes de {copy.languageName}</Link>
                     )}
                   </div>
                 </div>

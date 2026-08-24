@@ -17,9 +17,9 @@ async function configureFirstTopic(page: import('@playwright/test').Page) {
 test('el catálogo descubre la nueva familia y el piloto cabe en móvil', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/herramientas/quizes')
-  await expect(page.getByRole('link', { name: /Quién hace qué a quién/ })).toBeVisible()
-  await page.getByRole('link', { name: /Quién hace qué a quién/ }).click()
-  await expect(page).toHaveURL(/\/herramientas\/quizes\/pronombres$/)
+  await page.getByRole('link', { name: /Italiano/ }).click()
+  await expect(page).toHaveURL(/\/herramientas\/quizes\/idiomas\/italiano$/)
+  await expect(page.getByRole('link', { name: /La macchina del tempo/ })).toBeVisible()
   await page.getByRole('link', { name: /La catena dei pronomi/ }).click()
   await expect(page.locator('#pronoun-selector-title')).toBeVisible()
   await expect(page.locator('main')).toHaveCount(1)
