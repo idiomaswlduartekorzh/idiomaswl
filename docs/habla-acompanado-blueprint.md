@@ -6,9 +6,11 @@ Fuente de verdad de las decisiones pedagógicas de los juegos de rol para dos pe
 Si un agente y este documento se contradicen, manda este documento. Si este documento y lo
 que David decida se contradicen, manda David **y hay que corregir este documento**.
 
-Estado: **piloto inglés A2 integrado el 23 de agosto de 2026.** Ocho escenarios, dieciséis
-fichas separadas, caja común A2, rutas estáticas por rol y guardián estructural. Los otros
-siete idiomas y niveles esperan la evaluación del piloto.
+Estado: **motor y primera cohorte integrados el 23 de agosto de 2026.** Hay ocho escenarios
+de inglés A2, dieciséis fichas separadas, caja común A2, rutas estáticas por rol y guardián
+estructural. La decisión de producto vigente es llevar el sistema a **20 prácticas por nivel,
+60 por idioma y 480 en total**. El piloto ya no es una puerta para decidir si se expande: es
+la primera cohorte de la expansión descrita en §13.
 
 ---
 
@@ -19,7 +21,7 @@ Al entrar en la destreza de habla el estudiante elige entre dos modos:
 | Modo | Con quién | Estado |
 |---|---|---|
 | **Habla solo** | Nadie. 20 frases con fonética y seguimiento local. | Conservado en `/habla/solo` |
-| **Habla acompañada** | **Otra persona real**: un compañero, el profesor, un amigo, la pareja. | Piloto inglés A2: 8 escenarios |
+| **Habla acompañada** | **Otra persona real**: un compañero, el profesor, un amigo, la pareja. | 8 de 480 escenarios publicados; meta cerrada en §1.1 |
 
 Cerrado y no se rediscute salvo que David lo reabra:
 
@@ -29,12 +31,43 @@ Cerrado y no se rediscute salvo que David lo reabra:
 - **No hay servidor ni sala sincronizada.** Cada rol tiene **su propia URL**. Dos móviles, o
   un móvil y un portátil, o una pantalla que se pasa. Nada que sincronizar, nada que caerse,
   y cada URL es una página indexable más.
-- **Piloto: inglés A2.** 6 a 8 escenarios. Los otros 7 idiomas y los otros 2 niveles esperan
-  a que el piloto convenza.
+- **Cobertura cerrada:** inglés, coreano, francés, italiano, portugués, alemán, ruso y japonés;
+  niveles A1, A2 y B1; 20 escenarios en cada combinación.
 
 **Lo que hace interesante un juego de rol no es el tema, es la asimetría.** Dos personas que
 quieren lo mismo terminan en dos turnos. La gracia está en que cada uno sabe algo que el
 otro no y quiere algo que el otro no quiere dar.
+
+## 1.1. Decisión de escala: 20 × 3 × 8
+
+Una **práctica** es un escenario completo para dos personas. No es una ficha de rol, una frase
+del modo solo ni una variante de la misma conversación. Cada práctica produce una página de
+elección y dos fichas privadas —A y B—, pero cuenta una sola vez en el catálogo.
+
+| Idioma | Slug | A1 | A2 | B1 | Total | Publicado hoy | Pendiente |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Inglés | `ingles` | 20 | 20 | 20 | 60 | 8 | 52 |
+| Coreano | `coreano` | 20 | 20 | 20 | 60 | 0 | 60 |
+| Francés | `frances` | 20 | 20 | 20 | 60 | 0 | 60 |
+| Italiano | `italiano` | 20 | 20 | 20 | 60 | 0 | 60 |
+| Portugués | `portugues` | 20 | 20 | 20 | 60 | 0 | 60 |
+| Alemán | `aleman` | 20 | 20 | 20 | 60 | 0 | 60 |
+| Ruso | `ruso` | 20 | 20 | 20 | 60 | 0 | 60 |
+| Japonés | `japones` | 20 | 20 | 20 | 60 | 0 | 60 |
+| **Total** | — | **160** | **160** | **160** | **480** | **8** | **472** |
+
+La meta ejecutable incluye además:
+
+- **960 fichas privadas de rol**: dos por escenario.
+- **24 cajas de herramientas**: una por idioma y nivel, nunca una caja genérica traducida.
+- Secuencias completas `1..20` en cada conjunto, sin huecos ni duplicados.
+- Las 20 prácticas del modo **solo** que ya existen se conservan, pero no cuentan dentro de
+  estas 480: son otro modo y otra experiencia.
+
+Un conjunto nuevo no se publica con 3, 8 o 15 escenarios «para ir llenando». Se prepara fuera
+del registro vivo y entra cuando tiene 20 y pasa todas las puertas. La única excepción temporal
+es inglés A2, porque sus ocho escenarios ya están publicados; su siguiente hito es pasar de 8 a
+20 de una vez.
 
 ## 2. Anatomía de un escenario
 
@@ -47,7 +80,7 @@ Nueve piezas. Falta una y el escenario se muere de una de las seis maneras de §
 | **Restricciones** | Lo que este rol **no** puede hacer o decir. 2 o 3. | Se resuelve por la vía fácil y no se produce lengua |
 | **Dato oculto** | Algo que este rol sabe y el otro no | No hay razón para preguntar |
 | **Datos duros** | Fecha, hora, precio, nombre, número, en forma de nota. **Nunca una frase decible.** | O traduce literal, o lee la ficha en voz alta |
-| **Vocabulario** | 8 a 10 palabras que este rol necesita **aquí** y que un A2 probablemente no tiene, con su definición en inglés sencillo | Se sabe qué decir y no con qué palabra |
+| **Vocabulario** | 8 a 10 palabras que este rol necesita **aquí** y que un estudiante del nivel probablemente no tiene, con su definición en el idioma meta a nivel legible | Se sabe qué decir y no con qué palabra |
 | **Andamiaje** | 6 a 10 expresiones en el idioma meta, con su uso y su registro. Opcionales. | El flojo se bloquea y se pasa al español |
 | **Complicación** | Una carta que entra a mitad y va **a un solo rol** | La conversación se aplana |
 | **Criterio de cierre** | Cómo saben los dos que terminó y con qué | Se apaga sin final |
@@ -98,7 +131,7 @@ entiende».
 
 ## 5. Reparto del conjunto — lo que no se ve escenario a escenario
 
-Un set de 8 escenarios puede tener 8 escenarios buenos y ser malo. Los repartos se miden
+Un set de 20 escenarios puede tener 20 escenarios buenos y ser malo. Los repartos se miden
 sobre el set completo, con script, no a ojo. Es la misma lección de [[pedagogy-defectos-de-conjunto]].
 
 **Se mide lo que se produce, no lo que se declara.** Un escenario etiquetado `pedir-favor`
@@ -117,12 +150,30 @@ dice algo es **qué porcentaje de los turnos del set entero pide cada acto**.
 | Reparto | Regla |
 |---|---|
 | **Actos de habla** | Ningún acto por encima del **30 % de los turnos** del set, y **ninguno de los declarados por debajo del 3 %**. Lo primero evita el nivel monotema; lo segundo caza el acto de adorno —medido: `insistir` salía en 1 turno de 145 y `recomendar` en 4, los cuatro del mismo escenario— |
-| **Poder** | El estudiante manda en al menos 3 de cada 8. Si siempre pide permiso, nunca aprende a concederlo |
-| **Quién arranca** | Entre 40 % y 60 % para cada rol a lo largo del set |
-| **Desenlace** | Al menos un «sin acuerdo» y un «acuerdo parcial» por cada 8. No todo termina bien |
-| **Culpa** | El problema no lo causa el estudiante en más de la mitad de los casos |
+| **Poder** | `a>b` aparece al menos 6 veces y `b>a` al menos 6; `igual` completa el resto. Ningún nombre o género concentra el poder |
+| **Quién arranca** | Cada rol inicia entre 8 y 12 de las 20 conversaciones |
+| **Desenlace** | Mínimo 3 «acuerdo parcial», 2 «sin acuerdo» y 2 «aplazado»; «acuerdo» no supera 13 de 20 |
+| **Carta** | La complicación va al rol A entre 8 y 12 veces y al B en el resto |
+| **Culpa** | Ningún rol, nombre o género causa el problema en más de 10 de 20 |
 | **Género** | Ni el poder ni la culpa se concentran en un género. Se cuenta quién manda en escena, quién decide fuera, quién gana y quién causa el problema. Ojo con arreglarlo del revés: en la primera corrección el sesgo se espejó —4 de 4 mandando mujeres, y los 2 hombres nombrados eran los culpables— y eso no es equilibrio |
-| **Escenografía** | Máximo 2 de 8 en aula. La vida pasa en otros sitios |
+| **Escenografía** | Máximo 5 de 20 en aula y mínimo 5 familias de contexto distintas. La vida pasa en otros sitios |
+
+### La parrilla de veinte
+
+Cada conjunto cubre cinco familias con cuatro prácticas cada una. La familia fija cobertura;
+no obliga a repetir los mismos argumentos entre idiomas.
+
+| Secuencias | Familia | Ejemplos de terreno, no títulos obligatorios |
+|---|---|---|
+| 1–4 | **Transacciones cotidianas** | comprar, reservar, devolver, pedir un servicio |
+| 5–8 | **Estudio y trabajo** | horarios, tareas, turnos, prioridades, desacuerdos |
+| 9–12 | **Casa y comunidad** | convivencia, vecinos, favores, eventos, normas comunes |
+| 13–16 | **Movilidad y servicios** | transporte, salud no clínica, viajes, trámites sencillos |
+| 17–20 | **Planes y problemas** | cambios, tecnología cotidiana, decisiones compartidas, imprevistos |
+
+La progresión vive dentro de cada familia: A1 intercambia datos y necesidades directas; A2
+explica, propone y condiciona; B1 negocia prioridades, límites y consecuencias. Un título
+parecido en dos niveles no autoriza a reciclar la conversación cambiando cuatro palabras.
 
 ## 6. Las doce puertas
 
@@ -130,10 +181,10 @@ El guardián no publica un set que falle una sola.
 
 1. **Asimetría** — cada ficha tiene al menos un dato que la otra no.
 2. **Zona de acuerdo** — existe una salida que los dos aceptarían, y no es obvia.
-3. **Cero frase calcable** — ninguna ficha trae la frase que hay que decir, ni en español ni en inglés (ver §11).
+3. **Cero frase calcable** — ninguna ficha trae la frase que hay que decir, ni en la lengua de apoyo ni en el idioma meta (ver §11).
 4. **Andamiaje** — en **dos piezas separadas**, y esto no es organización, es lo que impide
-   que se convierta en un guion (ver §10): la **caja de herramientas del nivel**, común a los
-   ocho escenarios, y **6 a 10 exponentes propios** de este rol en este escenario. Ninguna
+   que se convierta en un guion (ver §10): la **caja de herramientas del idioma y nivel**,
+   común a sus veinte escenarios, y **6 a 10 exponentes propios** de este rol en este escenario. Ninguna
    fila resuelve la conversación, y **la tabla leída en orden tampoco puede ser la
    conversación**.
 5. **Carga** — ningún rol por debajo del 40 % de la conversación, medido en **palabras**, no
@@ -165,11 +216,13 @@ El guardián no publica un set que falle una sola.
 9. **Registro** — está dicho quién trata a quién de usted, y el idioma lo soporta.
 10. **Equidad** — sin conocimiento cultural que la ficha no dé, sin escenario que duela, sin rol humillante.
 11. **Simulación** — la pareja sólida llega al cierre; la floja llega con el andamiaje; nadie lo resuelve en menos de 6 turnos.
-12. **Conjunto** — el set pasa los seis repartos de §5.
+12. **Conjunto** — el set pasa todos los repartos de §5.
 
 ## 7. Forma de los datos
 
-Propuesta, a confirmar por `habla-integracion` contra el repo:
+El contrato ejecutable vive en `src/data/practica/habla-acompanado/types.ts`. Esta es la forma
+objetivo para la expansión; cualquier diferencia descubierta al implementarla se corrige en el
+tipo y en este documento en el mismo commit:
 
 ```ts
 type SpeechAct =
@@ -184,8 +237,8 @@ type RoleplayRole = {
   constraints: string[]
   secret?: string
   data: { label: string; value: string }[]   // datos duros en nota, jamás una frase decible
-  vocab: { word: string; whatItIs: string; here: string }[]  // 8-10, definición en inglés (§11)
-  exponents: { form: string; use: string; register: 'formal' | 'neutro' | 'informal' }[]
+  vocab: { word: string; reading?: string; whatItIs: string; here: string }[]
+  exponents: { form: string; reading?: string; use: string; register: 'formal' | 'neutro' | 'informal' }[]
   successCriteria: string[]
 }
 
@@ -209,6 +262,11 @@ type RoleplayScenario = {
 
 Los campos `speechActs`, `power`, `initiator` y `outcome` no son adorno: son lo que hace
 medible el §5. Sin ellos el reparto se juzga a ojo, y a ojo no se ve.
+
+`reading` es opcional y solo existe para apoyo de escritura no latina (§11). No contiene una
+traducción ni una respuesta lista. El registro de conjuntos añade `language`, `level`, etiqueta,
+20 escenarios y una caja; las rutas leen ese registro, nunca importan un archivo concreto por
+nombre.
 
 ## 8. Lo que el motor no hace hoy
 
@@ -265,12 +323,12 @@ mitades y cada ficha señala cuáles le tocan.
 Regla de reparto: si una forma sirve igual en cinco escenarios, es de la caja. Si solo se
 entiende sabiendo de qué va este escenario, es de la ficha.
 
-## 11. La ficha está en inglés, y por eso hay que escribirla distinto
+## 11. La ficha está en el idioma meta, y por eso hay que escribirla distinto
 
-**Decisión de David, 20 de agosto de 2026.** La ficha entera va en el idioma que se estudia. No
-es una traducción de la versión en español: es lo que convierte el ejercicio en circular —se
-lee en inglés y después se habla en inglés, y la lectura deja de ser un trámite para ser la
-mitad del ejercicio.
+**Decisión de David, 20 de agosto de 2026; generalizada a los ocho idiomas el 23 de agosto.**
+La ficha entera va en el idioma que se estudia. No es una traducción de una versión maestra en
+español o inglés: es lo que convierte el ejercicio en circular —se lee en el idioma meta y
+después se habla en él, y la lectura deja de ser un trámite para ser la mitad del ejercicio.
 
 **El riesgo que introduce, y cómo se cierra.** Con la ficha en español era físicamente imposible
 leerla en voz alta. En inglés, se puede — y si se puede, se hace. Por eso:
@@ -281,7 +339,7 @@ leerla en voz alta. En inglés, se puede — y si se puede, se hace. Por eso:
 > que va a buscarlas.
 >
 > **En la prosa** —situación, objetivo, restricciones, dato oculto, lo que se pierde— se escribe
-> en **inglés A2 legible**: oraciones cortas y completas, no telegramas. Y ninguna de esas
+> al **nivel legible del conjunto**: oraciones cortas y completas, no telegramas. Y ninguna de esas
 > oraciones puede ser algo que el jugador diría: se escriben *sobre* él, no *por* él.
 
 Ese reparto lo corrige la auditoría de equidad del 21 de agosto de 2026, y corrige una regla
@@ -327,12 +385,28 @@ leave`, `the message you send`: el alfabético baraja las filas y una etiqueta q
 —o que lleva dentro las palabras literales del cierre— le devuelve el orden al estudiante. Las
 etiquetas nombran función, no posición.
 
-El inglés de la ficha es **A2 leído**, que aguanta un poco más que el A2 hablado: frases cortas,
-presente y pasado simple, cero subordinación larga. Si una instrucción no cabe en A2, es que la
-instrucción es demasiado complicada.
+La lengua de la ficha se calibra como **nivel leído**, que aguanta un poco más que el nivel
+hablado, pero no autoriza instrucciones por encima del MCER declarado. Si una instrucción no
+cabe en el nivel, es que la instrucción es demasiado complicada.
 
-**Variedad: americana.** `road work`, no `roadworks`. `gas`, no `petrol`. Vale para los ocho
-escenarios y para los 23 niveles que vengan detrás.
+### Convenciones por idioma
+
+- **Inglés:** variedad americana en los 60 escenarios: `road work`, no `roadworks`; `gas`,
+  no `petrol`.
+- **Francés, italiano, portugués, alemán y ruso:** cada escenario declara trato formal o
+  informal y no cambia de pronombre o tratamiento a mitad de ficha sin que sea parte explícita
+  del conflicto.
+- **Coreano y japonés:** cada escenario declara relación, jerarquía y grado de cortesía. No se
+  presenta una forma neutra como si sirviera con cualquier interlocutor.
+- **Coreano, japonés y ruso:** `reading` puede acompañar vocabulario y exponentes en A1, aparece
+  solo donde sea pedagógicamente necesario en A2 y se retira por defecto en B1. La escritura
+  original siempre es primaria; romanización o lectura nunca la sustituye.
+- **Todos:** la interfaz, el reparto de roles y el debrief pueden orientar en español; la ficha
+  privada, los datos, el vocabulario, los exponentes, la carta y el cierre viven en el idioma meta.
+
+No se traduce una misma parrilla de veinte. Se pueden compartir actos de habla y dificultad,
+pero cada idioma recibe situaciones naturales para su uso, sus tratamientos y su vida cotidiana.
+Una revisión lingüística debe poder decir «esto fue escrito en este idioma», no «esto vino del inglés».
 
 ### El bloque de vocabulario
 
@@ -343,7 +417,7 @@ palabra que necesita quien está detrás del mostrador no es la que necesita qui
 | Columna | Qué lleva |
 |---|---|
 | `word` | La palabra o el trozo, tal como se dice |
-| `what it is` | Definición **en inglés sencillo**, no traducción. `shift — the hours you work in one day` |
+| `what it is` | Definición sencilla **en el idioma meta**, no traducción. En inglés: `shift — the hours you work in one day` |
 | `here` | Para qué le sirve en esta conversación concreta |
 
 **Cuidado con la columna `here`: es la más calcable de la ficha entera.** Medido en la primera
@@ -397,20 +471,107 @@ nuevos se escriben contra las reglas de este documento y se incorporan al regist
 
 ## 12. Integración publicada por el código
 
-El flujo tiene cinco capas y ninguna se mantiene como lista paralela:
+El contrato de rutas es el mismo para las 24 combinaciones y ninguna se mantiene como lista
+de contenido paralela:
 
-1. `/practica/ingles/a2/habla` — elige entre práctica individual y en pareja.
-2. `/habla/solo` — conserva las veinte frases existentes.
-3. `/habla/acompanada` — deriva los ocho escenarios del registro.
+1. `/practica/<idioma>/<nivel>/habla` — elige entre práctica individual y en pareja.
+2. `/habla/solo` — conserva las veinte frases existentes de ese idioma y nivel.
+3. `/habla/acompanada` — deriva los veinte escenarios del conjunto publicado.
 4. `/habla/acompanada/<slug>` — reparte roles sin mostrar información secreta.
 5. `/habla/acompanada/<slug>/<a|b>` — ficha privada; la carta sustituye la pantalla cuando
    se abre y puede volver a cerrarse.
+6. `/habla/acompanada/herramientas` — caja del idioma y nivel actuales.
 
-La caja común vive en `/habla/acompanada/herramientas`. Los escenarios, las fichas, el
-sitemap y `generateStaticParams` salen de `ROLEPLAY_INGLES_A2`; no hay otra lista manual.
+Los 24 árboles de ruta ya tienen una página de habla propia. La expansión conserva esos puntos
+de entrada y extrae adaptadores delgados compartidos; no copia el motor 24 veces. Todo enlace de
+`RoleplayExperience` se construye desde `scenario.language` y `scenario.level`: después de la
+migración no queda ningún `ingles/a2` clavado dentro del componente compartido.
 
-`npm run check:habla-acompanada` verifica el conjunto antes de cada build: ocho escenarios,
-roles A/B, rangos A2, vocabulario y exponentes, cartas en turno global 3–6, cierres,
-preguntas posteriores, referencias gramaticales existentes y presencia de las rutas. El
-guardián transversal `check:practica-catalog` protege además el registro y el motor contra
-una integración que los borre en silencio.
+### Fuente de verdad y tamaño de los archivos
+
+`ROLEPLAY_SETS` sigue siendo el catálogo vivo. Cada entrada apunta a un conjunto completo y a
+su caja. Para que 480 escenarios no conviertan un archivo en zona de conflicto, la estructura
+objetivo es:
+
+```text
+src/data/practica/habla-acompanado/
+  types.ts
+  index.ts                         # registro de los 24 conjuntos publicados
+  <idioma>/<nivel>/
+    scenarios-01-05.ts
+    scenarios-06-10.ts
+    scenarios-11-15.ts
+    scenarios-16-20.ts
+    toolkit.ts
+    index.ts                       # ensambla y exporta este conjunto
+```
+
+La secuencia, slug y metadatos viven dentro del escenario. Los cuatro archivos por conjunto son
+unidades editoriales, no cuatro catálogos: el `index.ts` solo los concatena y el guardián exige
+la secuencia exacta `1..20`.
+
+### Guardián monotónico
+
+`npm run check:habla-acompanada` deja de importar `ROLEPLAY_INGLES_A2` y recorre el registro.
+Mantiene dos mapas explícitos:
+
+- **Piso publicado:** cuenta mínima por conjunto que nunca puede bajar. Empieza con
+  `ingles-a2: 8`; al publicar veinte cambia a 20. Añadir un conjunto nuevo lo incorpora con 20.
+- **Meta:** las 24 combinaciones, todas con 20. Permite medir avance sin fingir que un borrador
+  ya está publicado.
+
+El piso solo sube. Bajar un número para hacer pasar CI equivale a borrar contenido y está
+prohibido. Los conjuntos en redacción no entran en `ROLEPLAY_SETS`; se validan con el mismo
+script en modo borrador y se integran cuando llegan completos.
+
+Por cada conjunto el guardián verifica, como mínimo:
+
+- 20 escenarios, secuencia `1..20`, ids y slugs únicos y dos roles distintos.
+- Nivel e idioma iguales a los de su entrada de catálogo.
+- Rangos de minutos, turnos, vocabulario, exponentes y prosa del §4 y §11.
+- Carta en turno global 3–6, cierre común, debrief y referencias gramaticales que existen.
+- Las doce puertas y los repartos de §5 calculados sobre el conjunto completo.
+- Caja propia del idioma y nivel, rutas, metadatos, sitemap y `generateStaticParams`.
+- Ausencia de enlaces o textos clavados a otro idioma o nivel.
+
+El guardián transversal `check:practica-catalog` protege el registro, el motor y el piso
+publicado contra una integración que los borre en silencio. La meta final queda cerrada cuando
+ambos guardianes cuentan **24 conjuntos, 480 escenarios y 960 roles**.
+
+## 13. Plan de expansión
+
+La unidad de producción es **un conjunto de veinte**, pero la unidad de trabajo es una tanda de
+cinco. Se pueden revisar cuatro tandas en paralelo sin publicar una colección incompleta.
+
+| Fase | Entrega | Escenarios nuevos | Acumulado publicado |
+|---|---|---:|---:|
+| 0 | Generalizar tipos, rutas, enlaces, registro y guardián | 0 | 8 |
+| 1 | Inglés: completar A2 (+12), crear A1 (20) y B1 (20) | 52 | 60 |
+| 2 | A2 de los otros siete idiomas | 140 | 200 |
+| 3 | A1 de los otros siete idiomas | 140 | 340 |
+| 4 | B1 de los otros siete idiomas | 140 | 480 |
+
+El orden A2 → A1 → B1 para los otros idiomas permite probar primero el molde más maduro sin
+confundir eso con traducción. Dentro de una fase, cada conjunto puede publicarse cuando complete
+sus veinte; no necesita esperar a los otros seis idiomas de la misma fase.
+
+### Pipeline editorial de cada conjunto
+
+1. **Matriz:** asignar las veinte secuencias a la parrilla del §5, actos, poder, iniciador,
+   desenlace, carta y puntos gramaticales antes de escribir prosa.
+2. **Autoría en cuatro tandas:** escribir 1–5, 6–10, 11–15 y 16–20 directamente en el idioma
+   meta, con fichas A/B y caja propia.
+3. **Revisión lingüística:** nivel, naturalidad, tratamiento, cultura, escritura y lecturas.
+4. **Auditoría adversarial:** buscar frase calcable, dato filtrado, salida en tres turnos,
+   monólogo, ping-pong, vía única y carta aprovechable antes de tiempo.
+5. **Simulación:** parejas sólida+sólida y floja+floja para carga; perfil callado para comprobar
+   que produce su dato oculto, condición y parte del cierre.
+6. **Integración:** registrar las veinte juntas, generar rutas, ejecutar guardianes, TypeScript
+   y build; publicar únicamente desde `main` del repositorio canónico.
+
+### Definición de terminado
+
+Un idioma está terminado cuando sus tres niveles muestran 20 tarjetas cada uno —60 prácticas—,
+las 120 fichas de rol responden en sus URLs, las tres cajas son propias y los tres conjuntos
+pasan calidad sin excepciones. El programa entero está terminado cuando eso se cumple en los
+ocho idiomas y producción sirve la matriz **8 × 3 × 20**, conservando intacto el modo solo.
