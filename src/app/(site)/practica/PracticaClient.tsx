@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import type { CSSProperties } from 'react';
 import Link from 'next/link';
 import { getStreakInfo, getTotalXP, getTotalCompletedSkills } from '@/lib/progress';
+import AdvancedIdeasEntry from './AdvancedIdeasEntry';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Exam catalogue
@@ -109,6 +110,8 @@ export default function PracticaClient() {
           <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: `${globalStats ? '0' : '0'} 0 2rem` }}>
             Practica para tu examen o elige un idioma para desarrollar tus habilidades.
           </p>
+
+          <AdvancedIdeasEntry />
 
           {/* Exam cards — same grid as language cards */}
           <p style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontFamily: 'var(--mono)', marginBottom: '0.85rem' }}>
