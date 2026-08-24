@@ -1,6 +1,6 @@
 # Habla acompañada · Inglés B1 · parrilla editorial 1–20
 
-Estado: **matriz cerrada; 6/20 escenarios validados fuera del registro público.** El conjunto entra
+Estado: **matriz cerrada; 8/20 escenarios validados fuera del registro público.** El conjunto entra
 completo cuando sus veinte escenarios, cuarenta fichas, caja B1 y simulaciones pasen las puertas
 de `docs/habla-acompanado-blueprint.md`.
 
