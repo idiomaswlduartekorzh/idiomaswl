@@ -120,7 +120,7 @@ export const ROLEPLAY_INGLES_A2_BATCH_3: RoleplayScenario[] = [
     card: {
       toRole: 'b',
       afterTurn: 5,
-      openWhen: [{ kind: 'p', text: '**Open after your third turn.** Keep the company alert on your screen. Explain what it changes without reading it aloud.' }],
+      openWhen: [{ kind: 'p', text: '**Open after turn 5 of the conversation.** Keep the company alert on your screen. Explain what it changes without reading it aloud.' }],
       blocks: [{ kind: 'quote', blocks: [
         { kind: 'p', text: '**Fleet alert · 8:52 p.m.**' },
         { kind: 'p', text: '“Police checkpoint on the garage road tonight. Drivers must show the closed passenger list and vehicle log. Unlisted passengers will suspend the vehicle for review.”' },
@@ -260,7 +260,7 @@ export const ROLEPLAY_INGLES_A2_BATCH_3: RoleplayScenario[] = [
     card: {
       toRole: 'a',
       afterTurn: 5,
-      openWhen: [{ kind: 'p', text: '**Open after your third turn.** Keep the internal support result private. Explain the allowed steps in your own words.' }],
+      openWhen: [{ kind: 'p', text: '**Open after turn 5 of the conversation.** Keep the internal support result private. Explain the allowed steps in your own words.' }],
       blocks: [{ kind: 'quote', blocks: [
         { kind: 'p', text: '**Courier support · case 204-771 · 4:34 p.m.**' },
         { kind: 'p', text: '“Sender permits alternative ID. Send secure link to FotoPro. Receiver must show the live digital licence plus any physical card with the same full name. Enter the sender’s one-time code before 4:55 p.m.”' },
@@ -400,7 +400,7 @@ export const ROLEPLAY_INGLES_A2_BATCH_3: RoleplayScenario[] = [
     card: {
       toRole: 'b',
       afterTurn: 5,
-      openWhen: [{ kind: 'p', text: '**Open after your third turn.** Do not show your client’s message. Explain the new time and how it changes the transport you need.' }],
+      openWhen: [{ kind: 'p', text: '**Open after turn 5 of the conversation.** Do not show your client’s message. Explain the new time and how it changes the transport you need.' }],
       blocks: [{ kind: 'quote', blocks: [
         { kind: 'p', text: '**Client message · 3:23 p.m.**' },
         { kind: 'p', text: '“Tomorrow’s visit must start at **7:30 a.m.**, not 9:00. Please confirm tonight that you can be in Girón.”' },

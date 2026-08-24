@@ -150,7 +150,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
       openWhen: [
         { kind: 'quote', blocks: [
           { kind: 'p', text: "**Its own screen, behind a button. Never printed under the toolkit.**" },
-          { kind: 'p', text: "**Open it after your third turn.** (You start, so this is the fifth turn of the conversation.) Role A never sees it: A only knows what B tells them." },
+          { kind: 'p', text: "**Open it when global turn 5 ends.** Role B starts, so B has spoken three times. Role A never sees it: A only knows what B tells them." },
         ] },
       ],
       blocks: [
@@ -531,7 +531,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
       openWhen: [
         { kind: 'quote', blocks: [
           { kind: 'p', text: "**Its own screen, behind a button. Never printed under the toolkit.**" },
-          { kind: 'p', text: "**Open it when they finish their third turn.** (You start, so that is the sixth turn of the conversation.) Role B never sees it: B only knows what you tell them." },
+          { kind: 'p', text: "**Open it when global turn 6 ends.** Role A starts, so A has spoken three times. Role B never sees it: B only knows what you tell them." },
         ] },
       ],
       blocks: [

@@ -120,7 +120,7 @@ export const ROLEPLAY_INGLES_A2_BATCH_1: RoleplayScenario[] = [
     card: {
       toRole: 'a',
       afterTurn: 5,
-      openWhen: [{ kind: 'p', text: '**Open after your third turn.** The customer never sees this screen; tell them only what changes the conversation.' }],
+      openWhen: [{ kind: 'p', text: '**Open after turn 5 of the conversation.** The customer never sees this screen; tell them only what changes the conversation.' }],
       blocks: [{ kind: 'quote', blocks: [
         { kind: 'p', text: '**Registry search result · 5:47 p.m.**' },
         { kind: 'table', rows: [['Buyer', 'Lucía P. · phone ending 8842'], ['Purchase', 'September 11 · 299,900 pesos'], ['Payment', 'Visa ending 0619'], ['Status', '31 days ago · one day outside normal refund period']] },
@@ -260,7 +260,7 @@ export const ROLEPLAY_INGLES_A2_BATCH_1: RoleplayScenario[] = [
     card: {
       toRole: 'b',
       afterTurn: 5,
-      openWhen: [{ kind: 'p', text: '**Open after your third turn.** Do not show the message. Explain only the new constraints your partner needs.' }],
+      openWhen: [{ kind: 'p', text: '**Open after turn 5 of the conversation.** Do not show the message. Explain only the new constraints your partner needs.' }],
       blocks: [{ kind: 'quote', blocks: [
         { kind: 'p', text: '**Client message · 2:18 p.m.**' },
         { kind: 'p', text: '“Can we start at **3:00 p.m.** instead? Our security system also blocks external links, so please put every chart inside the slides.”' },
@@ -400,7 +400,7 @@ export const ROLEPLAY_INGLES_A2_BATCH_1: RoleplayScenario[] = [
     card: {
       toRole: 'a',
       afterTurn: 5,
-      openWhen: [{ kind: 'p', text: '**Open after your third turn.** Keep the supplier message private. Tell the customer the operational facts that affect their choices.' }],
+      openWhen: [{ kind: 'p', text: '**Open after turn 5 of the conversation.** Keep the supplier message private. Tell the customer the operational facts that affect their choices.' }],
       blocks: [{ kind: 'quote', blocks: [
         { kind: 'p', text: '**Supplier message · 11:31 a.m.**' },
         { kind: 'p', text: '“The truck has the wrong paper. The 160-gram matte paper can leave our warehouse at **4:00 p.m.** We cannot promise arrival before **5:30 p.m.**”' },

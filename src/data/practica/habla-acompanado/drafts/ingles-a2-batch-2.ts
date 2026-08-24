@@ -120,7 +120,7 @@ export const ROLEPLAY_INGLES_A2_BATCH_2: RoleplayScenario[] = [
     card: {
       toRole: 'b',
       afterTurn: 5,
-      openWhen: [{ kind: 'p', text: '**Open after your third turn.** Do not show the building message. Share the facts that change what the two of you need to test.' }],
+      openWhen: [{ kind: 'p', text: '**Open after turn 5 of the conversation.** Do not show the building message. Share the facts that change what the two of you need to test.' }],
       blocks: [{ kind: 'quote', blocks: [
         { kind: 'p', text: '**Building security · 9:43 p.m.**' },
         { kind: 'p', text: '“A resident on the other side of the building also reported bass. We will check the eighth floor at **10:15 p.m.** Please try a solution before then.”' },
@@ -260,7 +260,7 @@ export const ROLEPLAY_INGLES_A2_BATCH_2: RoleplayScenario[] = [
     card: {
       toRole: 'a',
       afterTurn: 5,
-      openWhen: [{ kind: 'p', text: '**Open after your third turn.** Do not show the maintenance notice. Explain the new access requirement and invite a new layout.' }],
+      openWhen: [{ kind: 'p', text: '**Open after turn 5 of the conversation.** Do not show the maintenance notice. Explain the new access requirement and invite a new layout.' }],
       blocks: [{ kind: 'quote', blocks: [
         { kind: 'p', text: '**Building office · maintenance notice · 9:12 a.m.**' },
         { kind: 'p', text: '“A technician needs the courtyard water valve today between **5:00 and 6:00 p.m.** Keep a one-metre area around the valve empty. Water may be off for twenty minutes.”' },

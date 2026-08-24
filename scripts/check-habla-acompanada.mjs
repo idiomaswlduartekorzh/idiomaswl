@@ -179,6 +179,13 @@ for (const { set, published } of validationSets) {
     }
     if (!scenario.roles.some((role) => role.id === scenario.card.toRole)) fail(`${scenarioWhere}: la carta apunta a un rol inexistente.`)
     if (!scenario.card.openWhen.length || !scenario.card.blocks.length) fail(`${scenarioWhere}: la carta no tiene disparador o contenido.`)
+    const cardTrigger = JSON.stringify(scenario.card.openWhen)
+    if (!cardTrigger.includes(String(scenario.card.afterTurn))) {
+      fail(`${scenarioWhere}: el disparador visible no nombra el turno global ${scenario.card.afterTurn}.`)
+    }
+    if (/your\s+(?:first|second|third|fourth|fifth|sixth)\s+turn/i.test(cardTrigger)) {
+      fail(`${scenarioWhere}: el disparador cuenta turnos del rol; debe contar turnos globales.`)
+    }
     if (!scenario.closing.length) fail(`${scenarioWhere}: no tiene criterio de cierre.`)
     if (scenario.debrief.length < 3 || scenario.debrief.length > 4) {
       fail(`${scenarioWhere}: debe tener 3–4 preguntas de debrief; tiene ${scenario.debrief.length}.`)
