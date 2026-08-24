@@ -8,6 +8,12 @@ Fuente de verdad para escalar el motor de `/herramientas/quizes` a los ocho idio
 Idiomas WeLearn. Versión 2: 23 de agosto de 2026, endurecida tras auditoría funcional y
 pedagógica.
 
+Actualización italiana (24 de agosto de 2026): el motor admite varios retos finales y entrega
+un informe acumulado al cerrar el nivel 6. El banco italiano fija un mínimo verificable de diez
+retos diferentes por forma en cada nivel e incorpora las perífrasis `stare + gerundio` en
+presente e imperfetto. El guardián `check:tense-quests` debe fallar si esa cobertura baja; no se
+permite completar el cupo repitiendo preguntas.
+
 ## Principio de producto
 
 No se traduce una lista inglesa de “tiempos”. Cada idioma selecciona las oposiciones que un
@@ -21,7 +27,9 @@ El estudiante:
 2. completa un nivel sin recibir señales de acierto;
 3. puede revisar y cambiar sus respuestas antes de finalizar;
 4. recibe puntaje por decisión lingüística, solución y explicación al cerrar el nivel;
-5. conserva localmente su intento activo y su mejor resultado por selección y nivel.
+5. conserva localmente su intento activo y su mejor resultado por selección y nivel;
+6. al terminar el nivel final, ve el resultado de los seis niveles y recomendaciones basadas en
+   sus tres áreas más débiles.
 
 ## Fases y puertas de salida
 

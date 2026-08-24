@@ -13,6 +13,11 @@ El estudiante elige las formas o contrastes que quiere practicar y completa seis
 aciertos, errores ni soluciones hasta cerrar el nivel. El motor corrige con bancos cerrados y
 respuestas explícitas; no usa IA, similitud ni autocorrección.
 
+Para bancos intensivos, “diez ejercicios por nivel” significa diez retos editoriales distintos
+incluso cuando el alumno selecciona una sola forma. No se satisface repitiendo o ciclando un
+ítem. El motor acepta varios `finalChallenges` y el resumen del sexto nivel presenta promedio,
+desglose por nivel y comentarios deterministas de mejora.
+
 Flujo estable:
 
 ```text

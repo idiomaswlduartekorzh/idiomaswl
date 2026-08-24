@@ -8,11 +8,11 @@ const URL = 'https://www.idiomaswl.com/herramientas/quizes/italiano'
 export const metadata: Metadata = {
   title: 'Quiz de tiempos verbales en italiano — 6 niveles',
   description:
-    'Elige los tiempos verbales de italiano que quieres practicar y completa seis niveles con resultados al final de cada nivel.',
+    'Practica 13 tiempos y perífrasis del italiano en seis niveles con mínimo 10 ejercicios, corrección diferida e informe final.',
   alternates: { canonical: URL },
   openGraph: {
     title: 'La macchina del tempo — Quiz de italiano',
-    description: 'Elige los tiempos y completa seis niveles autocorregibles de italiano.',
+    description: 'Elige entre 13 tiempos y perífrasis, completa seis niveles y recibe un informe final de mejora.',
     url: URL,
     type: 'website',
     siteName: 'Idiomas WeLearn',
@@ -25,15 +25,15 @@ export default function QuizItalianoPage() {
     <>
       <GrammarLessonSchema
         course={{ name: 'Quizes de Italiano', url: 'https://www.idiomaswl.com/herramientas/quizes' }}
-        description="Quiz configurable de seis niveles para practicar los tiempos principales del italiano, incluido el trapassato remoto, sin formas del subjuntivo."
+        description="Quiz configurable de seis niveles y diez ejercicios mínimos por nivel para practicar tiempos y perífrasis progresivas del italiano, incluido el trapassato remoto, sin subjuntivo."
         educationalLevel="A2, B1, B2"
         inLanguage="it"
-        keywords={['tiempos verbales italiano', 'trapassato remoto', 'passato prossimo', 'condizionale italiano', 'quiz italiano']}
+        keywords={['tiempos verbales italiano', 'stare más gerundio', 'trapassato remoto', 'passato prossimo', 'condizionale italiano', 'quiz italiano']}
         name="La macchina del tempo — Quiz acumulativo de tiempos verbales"
         url={URL}
       />
       <QuizSchema
-        description="Quiz configurable de tiempos verbales italianos, desde opción múltiple hasta reconstrucción narrativa, con resultados por nivel."
+        description="Quiz configurable de 13 tiempos y perífrasis italianas, con mínimo diez retos por nivel, corrección diferida e informe global."
         name="La macchina del tempo"
         url={URL}
       />

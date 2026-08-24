@@ -62,3 +62,18 @@ test('declared normative variants survive into every written-answer level', () =
   const russianYo = RUSSIAN_STRUCTURE_QUEST.microStories.find((item) => item.id === 'russian-structure-quest-micro-past-imperfective-3')
   assert.ok(russianYo?.gaps[0].answers.includes('шел'))
 })
+
+test('Italian exposes progressive periphrases and ten real challenges per form and level', () => {
+  const ids = ITALIAN_TENSE_QUEST.forms.map((form) => form.id)
+  assert.ok(ids.includes('presente-progressivo'))
+  assert.ok(ids.includes('imperfetto-progressivo'))
+
+  for (const id of ids) {
+    assert.ok(ITALIAN_TENSE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(id)).length >= 10, `${id}/choice`)
+    assert.ok(ITALIAN_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length >= 10, `${id}/micro`)
+    assert.ok(ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length >= 10, `${id}/long`)
+    assert.ok(ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === id).length >= 10, `${id}/error`)
+    assert.ok(ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length >= 10, `${id}/timeline`)
+    assert.ok(ITALIAN_TENSE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length >= 10, `${id}/final`)
+  }
+})
