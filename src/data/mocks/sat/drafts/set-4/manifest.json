@@ -481,7 +481,8 @@
       "id": "sat-set-4-m2-dificil",
       "variant": "M2-dificil",
       "status": "draft",
-      "writtenQuestions": 0,
+      "contentFile": "src/data/mocks/sat/drafts/set-4/sat-set-4-m2-dificil.ts",
+      "writtenQuestions": 8,
       "slots": [
         {
           "id": "q01",
@@ -489,7 +490,7 @@
           "type": "words-in-context",
           "difficulty": 1,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q02",
@@ -497,7 +498,7 @@
           "type": "words-in-context",
           "difficulty": 2,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q03",
@@ -505,7 +506,7 @@
           "type": "words-in-context",
           "difficulty": 3,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q04",
@@ -513,7 +514,7 @@
           "type": "text-structure-purpose",
           "difficulty": 2,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q05",
@@ -521,7 +522,7 @@
           "type": "text-structure-purpose",
           "difficulty": 3,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q06",
@@ -529,7 +530,7 @@
           "type": "text-structure-purpose",
           "difficulty": 3,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q07",
@@ -537,7 +538,7 @@
           "type": "cross-text-connections",
           "difficulty": 2,
           "topic": "literatura",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q08",
@@ -545,7 +546,7 @@
           "type": "cross-text-connections",
           "difficulty": 3,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q09",

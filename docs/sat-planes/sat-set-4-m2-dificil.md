@@ -1,6 +1,6 @@
 # SAT Set 4 · Módulo 2 exigente — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 0/27**.
+Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 8/27**.
 
 Esta rama la recibe quien queda en la banda alta de M1. Eleva densidad y razonamiento sin
 convertir adaptatividad en castigo: conserva cinco entradas fáciles, todos los dominios y
@@ -20,7 +20,7 @@ Tema, dificultad y clave se fijan antes de redactar.
 
 | ID | Tipo | Dif. | Materia | Clave | Tema original | Fuente objetivo y riesgo de diseño |
 | --- | --- | ---: | --- | :---: | --- | --- |
-| q01 | words-in-context | 1 | ciencia | B | Micorrizas retienen fósforo que de otro modo se desplazaría del suelo | USDA/estudio primario; *retain* debe significar conservar, no contratar ni recordar |
+| q01 | words-in-context | 1 | ciencia | B | Hifas de micorriza amplían la zona donde una planta adquiere fósforo | USDA/estudio primario; *acquire* debe significar obtener, no medir ni liberar |
 | q02 | words-in-context | 2 | humanidades | D | Entrevistadora obtiene un detalle después de cambiar una pregunta | Escenario original; *elicited* debe quedar fijado sin una definición calcada |
 | q03 | words-in-context | 3 | historia | A | Un relojero ajusta un mecanismo para regular una señal horaria pública | Museo científico; distinguir controlar el ritmo de legislar o uniformar |
 | q04 | text-structure-purpose | 2 | ciencia | C | Anillos de árbol anómalos se contrastan con sedimentos de un lago | Estudio primario; función de la segunda evidencia, no conclusión causal total |
