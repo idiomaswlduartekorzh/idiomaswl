@@ -4,6 +4,11 @@ Archivo histórico del loop que produjo M1 y el superhub. El estado operativo vi
 en [`docs/sat-estado.md`](sat-estado.md); el registro de vueltas de abajo se conserva como
 memoria editorial y no describe por sí solo la rama actual.
 
+**Reapertura del 24 ago 2026:** comenzó el loop de escala de 2 a 20 sets. La fase C0 quedó
+documentada en [`docs/sat-fabrica.md`](sat-fabrica.md) y `set-3` fue reservado como
+borrador de 81 slots. La siguiente tarea es la matriz editorial de M1; nada nuevo está
+publicado todavía.
+
 - **Rama actual:** `codex/sat-finish-20260823`
 - **Cierre:** 23 ago 2026 · M1, M2 estándar y M2 exigente completos; diez páginas del
   superhub; guardianes integrados en `prebuild`.
@@ -57,7 +62,7 @@ Sustituyen a la fase C. David aprobó las tres vías y pidió hacerlas en este o
 
 ### Fase C — Escala (aplazada hasta que D2 dé un módulo APTO)
 
-- [ ] **C0** · `docs/sat-fabrica.md`: la receta real, con costes y atascos medidos
+- [x] **C0** · `docs/sat-fabrica.md`: receta real, costes, atascos y cadena de promoción
 - [ ] **C1** · Segundo módulo, ya con el método R8 desde el principio
 
 ### Fase E — El superhub (19 ago 2026)

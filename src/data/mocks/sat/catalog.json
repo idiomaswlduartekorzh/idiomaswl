@@ -66,6 +66,11 @@
         "parts": 2,
         "questions": 54
       }
+    },
+    {
+      "id": "set-3",
+      "status": "draft",
+      "draftManifest": "src/data/mocks/sat/drafts/set-3/manifest.json"
     }
   ]
 }

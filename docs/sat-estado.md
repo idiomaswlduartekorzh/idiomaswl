@@ -23,6 +23,17 @@ Actualizado el **23 de agosto de 2026**.
 **Inventario:** hay **2 SAT completos publicados**, formados por 6 módulos y 162 preguntas
 originales; cada estudiante responde 54 por intento y nunca recibe las dos ramas de M2.
 
+## Loop de escala a 20
+
+El loop se abrió el **24 de agosto de 2026** en una rama aislada. `set-3` está reservado
+como borrador con 81 slots vacíos; no aparece en el hub ni en el registro público. La
+receta operativa, los costes medidos y las puertas por vuelta viven en
+[`docs/sat-fabrica.md`](sat-fabrica.md).
+
+La regla de avance es un set, un módulo y un bloque abiertos a la vez. La siguiente unidad
+es la matriz editorial de M1 de Set 3 y luego su bloque de Craft and Structure. Ningún set
+se promueve junto con otro ni se baja un umbral para sostener el ritmo.
+
 ## Blueprint de escala
 
 - `src/data/mocks/sat/catalog.json` es la fuente única de sets publicados y borradores.
