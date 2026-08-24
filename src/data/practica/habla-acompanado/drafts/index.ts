@@ -26,6 +26,8 @@ import { ROLEPLAY_INGLES_B1_BATCH_8 } from './ingles-b1-batch-8.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_9 } from './ingles-b1-batch-9.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_10 } from './ingles-b1-batch-10.ts'
 import { ROLEPLAY_INGLES_B1_BATCH_11 } from './ingles-b1-batch-11.ts'
+import { ROLEPLAY_COREANO_A2_BATCH_1 } from './coreano-a2-batch-1.ts'
+import { TOOLKIT_COREANO_A2 } from '../toolkit-coreano-a2.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -79,6 +81,10 @@ export const ROLEPLAY_INGLES_B1_CANDIDATE = [
   ...ROLEPLAY_INGLES_B1_BATCH_11,
 ].sort((a, b) => a.sequence - b.sequence)
 
+export const ROLEPLAY_COREANO_A2_CANDIDATE = [
+  ...ROLEPLAY_COREANO_A2_BATCH_1,
+].sort((a, b) => a.sequence - b.sequence)
+
 /**
  * Conjuntos todavía no publicables.
  *
@@ -86,4 +92,11 @@ export const ROLEPLAY_INGLES_B1_CANDIDATE = [
  * conjunto sale de aquí únicamente cuando alcanza 20 escenarios y pasa sus puertas
  * como unidad completa.
  */
-export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = []
+export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
+  {
+    language: 'coreano',
+    level: 'a2',
+    scenarios: ROLEPLAY_COREANO_A2_CANDIDATE,
+    toolkit: TOOLKIT_COREANO_A2,
+  },
+]
