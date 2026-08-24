@@ -17,6 +17,7 @@
     "test:wompi": "npm run test:wompi-config && npm run test:wompi-checkout",
     "check:practica-catalog": "node scripts/check-practica-catalog.mjs",
     "check:habla-acompanada": "node --experimental-strip-types --no-warnings scripts/check-habla-acompanada.mjs",
+    "check:habla-release": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs",
     "check:tense-quests": "node --experimental-strip-types --no-warnings scripts/check-tense-quests.mjs && npm run test:tense-quests",
     "test:tense-quests": "node --experimental-strip-types --no-warnings --test tests/tense-quests.test.mjs",
     "check:seo-snippets": "node --experimental-strip-types --no-warnings scripts/check-seo-snippets.mjs",
