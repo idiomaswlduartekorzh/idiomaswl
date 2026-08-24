@@ -1,6 +1,6 @@
 # Habla acompañada · Inglés A1 · parrilla editorial 1–20
 
-Estado: **candidato liberable: 20/20 escenarios, caja A1 y 100 simulaciones verdes.** Nada de este conjunto está todavía en el registro
+Estado: **promovido al registro local: 20/20 escenarios, caja A1, 100 simulaciones, build y QA verdes; pendiente de producción.**
 público. Entra completo cuando sus veinte escenarios, cuarenta fichas, caja propia y simulaciones
 pasen las puertas de `docs/habla-acompanado-blueprint.md`.
 

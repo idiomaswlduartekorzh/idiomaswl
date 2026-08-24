@@ -61,11 +61,4 @@ export const ROLEPLAY_INGLES_A1_CANDIDATE = [
  * conjunto sale de aquí únicamente cuando alcanza 20 escenarios y pasa sus puertas
  * como unidad completa.
  */
-export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
-  {
-    language: 'ingles',
-    level: 'a1',
-    scenarios: ROLEPLAY_INGLES_A1_CANDIDATE,
-    toolkit: TOOLKIT_INGLES_A1,
-  },
-]
+export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = []
