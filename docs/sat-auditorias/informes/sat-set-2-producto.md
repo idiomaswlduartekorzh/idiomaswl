@@ -13,7 +13,7 @@ permanecer fuera del catálogo público hasta cerrar toda la tabla.
 | Composición | `src/data/mocks/sat/sat-set-2.ts` construye 54 preguntas servidas desde M1 y una sola rama M2 | PASS |
 | Enrutado | `node scripts/check-sat-adaptive.mjs --candidate src/data/mocks/sat/sat-set-2.ts --export satSet2` recorre los 28 resultados posibles de M1 | PASS |
 | Catálogo previo | `set-2` continúa en `draft` y no aparece en el hub antes de cerrar las demás puertas | PASS |
-| Guardianes | `npm run test:sat-factory`, `npm run check:sat-originality-local`, `npm run check:sat-superhub` y `npm run check:practica-catalog` | PENDIENTE TRAS MERGE |
+| Guardianes | `npm run test:sat-factory`, `npm run check:sat-originality-local`, `npm run check:sat-superhub` y `npm run check:practica-catalog` | PASS |
 | Tipos | `npx tsc --noEmit` | PENDIENTE |
 | Construcción | build de producción completo, sin omitir el prebuild | PENDIENTE |
 | Navegador · estándar | M1 por debajo del corte, corte irreversible, 27 preguntas de M2 estándar, lead y resultado de 54 preguntas | PENDIENTE |
@@ -40,6 +40,23 @@ Además de completar las 54 preguntas, se comprobarán explícitamente:
 - texto honesto que no presenta los aciertos como escala SAT de 200 a 800;
 - aviso de marca y regreso al hub;
 - ausencia de desplazamiento horizontal a 390 px.
+
+## Ejecución tras integrar `main`
+
+Checkpoint probado: `0be116ee` sobre el merge `e04cf7bd`.
+
+```text
+check:practica-catalog       PASS · 465 temas y módulos protegidos
+test:sat-factory             PASS · 9/9
+check:sat-superhub           PASS · 10 páginas, ocho puertas
+check:sat-catalog            PASS · 1 publicado, 1 borrador
+check:sat-originality-local  PASS · 6 módulos, 162 ítems, cero coincidencias de 8+ palabras
+check-sat-adaptive candidato PASS · 28/28 resultados de M1; corte 16/27
+```
+
+Estas pruebas se ejecutaron de forma serial para no competir con otras sesiones. TypeScript,
+build y Chromium permanecen pendientes porque la máquina seguía con carga elevada y menos
+de 6 GB de disco libre.
 
 ## Cierre
 
