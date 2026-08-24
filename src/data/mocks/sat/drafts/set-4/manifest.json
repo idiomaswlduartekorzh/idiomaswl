@@ -482,7 +482,7 @@
       "variant": "M2-dificil",
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-4/sat-set-4-m2-dificil.ts",
-      "writtenQuestions": 15,
+      "writtenQuestions": 22,
       "slots": [
         {
           "id": "q01",
@@ -610,7 +610,7 @@
           "type": "boundaries",
           "difficulty": 1,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q17",
@@ -618,7 +618,7 @@
           "type": "boundaries",
           "difficulty": 2,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q18",
@@ -626,7 +626,7 @@
           "type": "boundaries",
           "difficulty": 2,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q19",
@@ -634,7 +634,7 @@
           "type": "boundaries",
           "difficulty": 3,
           "topic": "literatura",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q20",
@@ -642,7 +642,7 @@
           "type": "form-structure-sense",
           "difficulty": 3,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q21",
@@ -650,7 +650,7 @@
           "type": "form-structure-sense",
           "difficulty": 3,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q22",
@@ -658,7 +658,7 @@
           "type": "form-structure-sense",
           "difficulty": 3,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q23",
