@@ -4,12 +4,14 @@ import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import {
   ROLEPLAY_LEVELS,
+  ROLEPLAY_LANGUAGES,
   ROLEPLAY_PUBLISHED_FLOORS,
   ROLEPLAY_SETS,
   ROLEPLAY_TARGET_SET_KEYS,
   ROLEPLAY_TARGET_SET_SIZE,
   roleplaySetKey,
 } from '../src/data/practica/habla-acompanado/index.ts'
+import { ROLEPLAY_DRAFT_SETS } from '../src/data/practica/habla-acompanado/drafts/index.ts'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const failures = []
@@ -29,6 +31,22 @@ function countBy(values) {
     counts[value] = (counts[value] ?? 0) + 1
     return counts
   }, {})
+}
+
+function roleProseWordCount(role, language) {
+  const text = [
+    ...role.briefing,
+    ...role.prose.flatMap((block) => [block.text ?? '', ...(block.items ?? [])]),
+    role.toolkit,
+    role.success,
+  ].join(' ').replace(/[`*_]/g, ' ')
+  const segmenter = new Intl.Segmenter(ROLEPLAY_LANGUAGES[language].htmlLang, { granularity: 'word' })
+  return [...segmenter.segment(text)].filter((segment) => segment.isWordLike).length
+}
+
+function isAlphabetical(values, locale) {
+  const expected = [...values].sort((a, b) => a.localeCompare(b, locale, { sensitivity: 'base' }))
+  return values.every((value, index) => value === expected[index])
 }
 
 function grammarSlugs(language, level) {
@@ -83,6 +101,7 @@ if (ROLEPLAY_TARGET_SET_KEYS.length !== 24) {
 
 const setKeys = ROLEPLAY_SETS.map((set) => roleplaySetKey(set.language, set.level))
 unique(setKeys, 'Conjuntos publicados')
+unique(ROLEPLAY_DRAFT_SETS.map((set) => roleplaySetKey(set.language, set.level)), 'Conjuntos en borrador')
 
 for (const floorKey of Object.keys(ROLEPLAY_PUBLISHED_FLOORS)) {
   if (!setKeys.includes(floorKey)) {
@@ -90,21 +109,29 @@ for (const floorKey of Object.keys(ROLEPLAY_PUBLISHED_FLOORS)) {
   }
 }
 
-for (const set of ROLEPLAY_SETS) {
+const validationSets = [
+  ...ROLEPLAY_SETS.map((set) => ({ set, published: true })),
+  ...ROLEPLAY_DRAFT_SETS.map((set) => ({ set, published: false })),
+]
+
+for (const { set, published } of validationSets) {
   const key = roleplaySetKey(set.language, set.level)
-  const where = `Conjunto ${key}`
+  const where = `${published ? 'Conjunto' : 'Borrador'} ${key}`
   const floor = ROLEPLAY_PUBLISHED_FLOORS[key]
   const allowedCounts = floor === undefined ? [ROLEPLAY_TARGET_SET_SIZE] : [floor, ROLEPLAY_TARGET_SET_SIZE]
 
   if (!ROLEPLAY_TARGET_SET_KEYS.includes(key)) fail(`${where}: no pertenece a la matriz objetivo.`)
-  if (floor === undefined) {
+  if (published && floor === undefined) {
     fail(`${where}: está publicado pero no declara un piso monotónico.`)
   }
-  if (!allowedCounts.includes(set.scenarios.length)) {
+  if (published && !allowedCounts.includes(set.scenarios.length)) {
     fail(`${where}: tiene ${set.scenarios.length} escenarios; las cuentas publicables son ${[...new Set(allowedCounts)].join(' o ')}.`)
   }
-  if (floor !== undefined && set.scenarios.length < floor) {
+  if (published && floor !== undefined && set.scenarios.length < floor) {
     fail(`${where}: cayó por debajo del piso publicado de ${floor}.`)
+  }
+  if (!published && (set.scenarios.length < 1 || set.scenarios.length > ROLEPLAY_TARGET_SET_SIZE)) {
+    fail(`${where}: debe contener entre 1 y ${ROLEPLAY_TARGET_SET_SIZE} escenarios durante la autoría.`)
   }
   if (set.toolkit.language !== set.language || set.toolkit.level !== set.level) {
     fail(`${where}: la caja no pertenece al mismo idioma y nivel.`)
@@ -119,10 +146,16 @@ for (const set of ROLEPLAY_SETS) {
   unique(set.scenarios.map((scenario) => scenario.id), `${where}: ids de escenario`)
   unique(set.scenarios.map((scenario) => scenario.slug), `${where}: slugs de escenario`)
   unique(set.scenarios.map((scenario) => scenario.sequence), `${where}: secuencias de escenario`)
-  const expectedSequence = Array.from({ length: set.scenarios.length }, (_, index) => index + 1)
   const actualSequence = set.scenarios.map((scenario) => scenario.sequence).sort((a, b) => a - b)
-  if (actualSequence.join(',') !== expectedSequence.join(',')) {
+  const expectedSequence = Array.from({ length: set.scenarios.length }, (_, index) => index + 1)
+  if (published && actualSequence.join(',') !== expectedSequence.join(',')) {
     fail(`${where}: la secuencia debe ser 1..${set.scenarios.length}; es ${actualSequence.join(',')}.`)
+  }
+  if (!published && actualSequence.some((sequence) => sequence < 1 || sequence > ROLEPLAY_TARGET_SET_SIZE)) {
+    fail(`${where}: las secuencias de borrador deben quedar entre 1 y ${ROLEPLAY_TARGET_SET_SIZE}; son ${actualSequence.join(',')}.`)
+  }
+  if (!published && set.scenarios.length === ROLEPLAY_TARGET_SET_SIZE && actualSequence.join(',') !== expectedSequence.join(',')) {
+    fail(`${where}: al llegar a 20 la secuencia debe ser 1..20; es ${actualSequence.join(',')}.`)
   }
 
   for (const scenario of set.scenarios) {
@@ -155,12 +188,25 @@ for (const set of ROLEPLAY_SETS) {
 
     for (const role of scenario.roles) {
       const roleWhere = `${scenarioWhere}, rol ${role.id.toUpperCase()}`
+      const proseLimit = set.level === 'b1' ? 600 : 450
+      const tableLimits = set.level === 'b1'
+        ? { facts: 14, vocabMin: 10, vocabMax: 12, exponentsMin: 8, exponentsMax: 10 }
+        : { facts: 10, vocabMin: 8, vocabMax: 10, exponentsMin: 6, exponentsMax: 9 }
+      const proseWords = roleProseWordCount(role, set.language)
       if (role.briefing.length < 2) fail(`${roleWhere}: el briefing está incompleto.`)
       if (role.prose.length < 5) fail(`${roleWhere}: faltan piezas de situación, objetivo o asimetría.`)
       if (!role.facts.length) fail(`${roleWhere}: no tiene datos duros.`)
-      if (role.vocab.length < 8 || role.vocab.length > 10) fail(`${roleWhere}: debe tener 8–10 palabras; tiene ${role.vocab.length}.`)
-      if (role.exponents.length < 6 || role.exponents.length > 10) {
-        fail(`${roleWhere}: debe tener entre 6 y 10 exponentes; tiene ${role.exponents.length}.`)
+      if (proseWords > proseLimit) fail(`${roleWhere}: la prosa tiene ${proseWords} palabras; el máximo de ${range.label} es ${proseLimit}.`)
+      if (role.facts.length > tableLimits.facts) fail(`${roleWhere}: tiene ${role.facts.length} datos; el máximo de ${range.label} es ${tableLimits.facts}.`)
+      if (role.vocab.length < tableLimits.vocabMin || role.vocab.length > tableLimits.vocabMax) {
+        fail(`${roleWhere}: debe tener ${tableLimits.vocabMin}–${tableLimits.vocabMax} palabras; tiene ${role.vocab.length}.`)
+      }
+      if (role.exponents.length < tableLimits.exponentsMin || role.exponents.length > tableLimits.exponentsMax) {
+        fail(`${roleWhere}: debe tener ${tableLimits.exponentsMin}–${tableLimits.exponentsMax} exponentes; tiene ${role.exponents.length}.`)
+      }
+      if (role.exponents.length > scenario.turnsPerRole) fail(`${roleWhere}: tiene más exponentes (${role.exponents.length}) que turnos declarados (${scenario.turnsPerRole}).`)
+      if (!isAlphabetical(role.exponents.map((entry) => entry.purpose), ROLEPLAY_LANGUAGES[set.language].htmlLang)) {
+        fail(`${roleWhere}: los exponentes no están ordenados alfabéticamente por función.`)
       }
       if (!role.success.trim()) fail(`${roleWhere}: no declara su criterio de éxito.`)
       unique(role.vocab.map((entry) => entry.word), `${roleWhere}: vocabulario`)
@@ -177,17 +223,19 @@ for (const set of ROLEPLAY_SETS) {
 
   if (set.scenarios.length === ROLEPLAY_TARGET_SET_SIZE) validateCompleteSetDistribution(set, where)
 
-  const routeBase = `src/app/(site)/practica/${set.language}/${set.level}/habla`
-  const protectedRoutes = [
-    `${routeBase}/page.tsx`,
-    `${routeBase}/solo/page.tsx`,
-    `${routeBase}/acompanada/page.tsx`,
-    `${routeBase}/acompanada/herramientas/page.tsx`,
-    `${routeBase}/acompanada/[slug]/page.tsx`,
-    `${routeBase}/acompanada/[slug]/[role]/page.tsx`,
-  ]
-  for (const route of protectedRoutes) {
-    if (!fs.existsSync(path.join(root, route))) fail(`${where}: falta la ruta pública ${route}.`)
+  if (published) {
+    const routeBase = `src/app/(site)/practica/${set.language}/${set.level}/habla`
+    const protectedRoutes = [
+      `${routeBase}/page.tsx`,
+      `${routeBase}/solo/page.tsx`,
+      `${routeBase}/acompanada/page.tsx`,
+      `${routeBase}/acompanada/herramientas/page.tsx`,
+      `${routeBase}/acompanada/[slug]/page.tsx`,
+      `${routeBase}/acompanada/[slug]/[role]/page.tsx`,
+    ]
+    for (const route of protectedRoutes) {
+      if (!fs.existsSync(path.join(root, route))) fail(`${where}: falta la ruta pública ${route}.`)
+    }
   }
 }
 
@@ -212,5 +260,7 @@ if (failures.length) {
     0,
   )
   const target = ROLEPLAY_TARGET_SET_KEYS.length * ROLEPLAY_TARGET_SET_SIZE
-  console.log(`Habla acompañada íntegra: ${ROLEPLAY_SETS.length}/24 conjuntos, ${scenarios}/${target} escenarios, ${roles} roles y ${references} referencias verificadas.`)
+  const draftScenarios = ROLEPLAY_DRAFT_SETS.reduce((sum, set) => sum + set.scenarios.length, 0)
+  const draftSummary = draftScenarios ? ` Borradores validados fuera del registro: ${draftScenarios}.` : ''
+  console.log(`Habla acompañada íntegra: ${ROLEPLAY_SETS.length}/24 conjuntos, ${scenarios}/${target} escenarios, ${roles} roles y ${references} referencias verificadas.${draftSummary}`)
 }
