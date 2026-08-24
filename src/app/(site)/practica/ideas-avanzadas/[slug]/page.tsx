@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { LearningResourceSchema, QuizSchema } from '@/components/practica/EducationSchema'
-import { ADVANCED_TOPICS, FRAMING_LESSON, getAdvancedTopic } from '@/data/practica/advanced-topics'
+import { ADVANCED_LESSONS, getAdvancedLesson, getAdvancedTopic } from '@/data/practica/advanced-topics'
 import AdvancedLessonClient from './AdvancedLessonClient'
 
 type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
-  return ADVANCED_TOPICS.filter((topic) => topic.status === 'available').map((topic) => ({ slug: topic.slug }))
+  return ADVANCED_LESSONS.map((lesson) => ({ slug: lesson.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -29,26 +29,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function AdvancedTopicPage({ params }: Props) {
   const { slug } = await params
-  if (slug !== FRAMING_LESSON.slug) notFound()
+  const lesson = getAdvancedLesson(slug)
+  if (!lesson) notFound()
 
   const url = `https://www.idiomaswl.com/practica/ideas-avanzadas/${slug}`
+  const keywords = [
+    lesson.breadcrumbTitle,
+    'critical thinking',
+    'advanced English',
+    'B2 English',
+    'C1 English',
+  ]
 
   return (
     <>
       <LearningResourceSchema
-        name="The framing effect — ciclo integrado B2–C1"
+        name={`${lesson.title} — ciclo integrado B2–C1`}
         url={url}
-        description={FRAMING_LESSON.objective}
+        description={lesson.objective}
         inLanguage="en"
-        keywords={['framing effect', 'critical thinking', 'advanced English', 'B2 English', 'C1 English']}
+        keywords={keywords}
       />
       <QuizSchema
-        name="The framing effect — ejercicios de comprensión y aplicación"
+        name={`${lesson.title} — ejercicios de comprensión y aplicación`}
         url={url}
-        description="Preguntas de escucha, lectura crítica, equivalencia numérica y encuadre lingüístico."
+        description="Preguntas de escucha, lectura crítica, vocabulario académico y aplicación argumentada."
       />
-      <AdvancedLessonClient />
+      <AdvancedLessonClient lesson={lesson} />
     </>
   )
 }
-
