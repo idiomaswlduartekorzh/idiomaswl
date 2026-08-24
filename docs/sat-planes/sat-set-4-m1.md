@@ -1,6 +1,6 @@
 # SAT Set 4 · Módulo 1 — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 15/27**.
+Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 22/27**.
 
 Esta matriz reserva tema, dificultad y clave antes de redactar. Cada hecho se verificará
 en la fuente primaria al abrir su bloque. Los pasajes y opciones serán originales: una
