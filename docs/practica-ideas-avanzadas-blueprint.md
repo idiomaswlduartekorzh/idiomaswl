@@ -1,7 +1,7 @@
 # Ideas avanzadas — blueprint editorial y pedagógico
 
 Estado: **propuesta para revisión**  
-Versión: `0.2.0`  
+Versión: `0.3.0`
 Ruta del producto: `/practica/ideas-avanzadas`  
 Nivel de lengua: **B2–C1**  
 
@@ -14,7 +14,10 @@ ciclos completos:
 2. **Calibration and competence** — Dunning–Kruger sin la curva viral.
 
 El tipo `AdvancedLesson` ya permite definir orientación, escucha, lectura, vocabulario, práctica y
-producción. Eso es un **contrato técnico inicial**, no un blueprint editorial completo.
+producción. Eso es un **contrato técnico inicial**, no un blueprint editorial completo. Además, el
+orden actual —escucha antes de lectura— no representa todavía la coreografía de clase descrita en
+este blueprint: conversación guiada, primera grabación, lectura activa, recuperación, práctica
+IELTS, escucha dual y síntesis.
 
 Antes de este documento faltaban:
 
@@ -34,23 +37,42 @@ del estudiante cuando incorpora lenguaje, evidencia, límites y contraargumentos
 La circularidad se comprueba así:
 
 ```text
-intuición inicial
-      ↓
-escucha sin apoyo escrito
-      ↓
-lectura larga con evidencia y objeciones
-      ↓
-vocabulario para distinguir conceptos
-      ↓
-ejercicios de discriminación y transferencia
-      ↓
-producción propia
-      ↓
-respuesta de nuevo a la intuición inicial
+conversación e intuición inicial
+             ↓
+       audio diagnóstico
+             ↓
+lectura activa con evidencia y objeciones
+             ↓
+ recuperación: voz, notas y vocabulario
+             ↓
+ práctica IELTS sin atajos de forma
+             ↓
+dos escuchas que cambian la perspectiva
+             ↓
+       síntesis y audio final
+             └──────────────→ vuelve a la intuición inicial
 ```
 
-El último movimiento no pregunta únicamente si el estudiante cambió de opinión. Pregunta si ahora
+La voz aparece tres veces con funciones distintas: diagnosticar lo que el estudiante piensa antes
+de recibir contenido, recuperar lo comprendido después de leer y construir una respuesta final
+con evidencia. El último movimiento no pregunta únicamente si cambió de opinión. Pregunta si ahora
 puede justificarla con mayor precisión y declarar qué evidencia podría hacerle cambiar de nuevo.
+
+### Razón pedagógica de la secuencia
+
+| Momento | Función | Qué deja visible |
+|---|---|---|
+| conversación | activar experiencia y construir una pregunta común | hipótesis y lenguaje disponible en el grupo |
+| audio inicial | producir antes de recibir la explicación formal | modelo mental y confianza de partida |
+| lectura activa | seleccionar, organizar y relacionar evidencia | predicciones, marcas, paráfrasis y dudas |
+| voz y notas | recuperar y autoexplicar sin copiar | comprensión retenida y vacíos reales |
+| IELTS | discriminar significado bajo restricciones formales | errores de alcance, evidencia e inferencia |
+| escucha dual | coordinar fuentes con funciones diferentes | acuerdos, tensiones y niveles de análisis |
+| síntesis final | transferir y comparar con el punto de partida | explicación más precisa y condición de cambio |
+
+La dificultad sube por **transformación** —predecir, explicar, distinguir, integrar y transferir—,
+no por hacer el texto innecesariamente oscuro. La discusión inicial tampoco es un calentamiento
+prescindible: produce el material intelectual al que la lección volverá al final.
 
 ## 3. Tres estatutos editoriales
 
@@ -79,74 +101,153 @@ objeciones y casos límite.
 
 No se permite describir una conclusión moral como si fuera un hallazgo experimental.
 
-## 4. Contrato de una lección
+## 4. Contrato de una lección guiada
 
-Duración objetivo: **35–50 minutos**. La lección se puede abandonar y retomar por `slug`.
+El modo principal es **clase guiada de 95–120 minutos**. El profesor decide cuándo avanzar y
+cuándo abrir una grabación. El modo autónomo, de **55–70 minutos**, conserva la secuencia pero
+reemplaza la conversación oral por pausas y consignas individuales. La lección se puede abandonar
+y retomar por `slug`, sin revelar respuestas de etapas futuras.
 
-### Movimiento 1 — Orientar
+Los seis movimientos cognitivos originales se conservan —activar, leer, recuperar, comprobar,
+escuchar y sintetizar—, pero la experiencia visible se divide en ocho fases.
 
-- Un dilema, comparación o predicción en inglés.
-- Dos o tres opciones plausibles; ninguna puede ser una caricatura obvia.
-- El estudiante registra una opción y confianza de `0–100`.
-- La revelación abre la pregunta; no adelanta toda la lectura.
-- Tiempo objetivo: 2–4 minutos.
+### Fase 1 — Conversación guiada · 18–22 minutos
 
-### Movimiento 2 — Escuchar
+La interfaz ofrece al profesor entre cinco y siete preguntas en embudo, no un cuestionario que el
+estudiante contesta en silencio:
 
-- Audio original de 180–280 palabras; 75–120 segundos.
-- No es la lectura larga narrada ni un resumen que revele todas las respuestas.
-- Primera escucha: idea principal.
-- Segunda escucha: mecanismo, contraste o límite.
-- Dos preguntas: una global y una de detalle/inferencia.
-- Transcripción disponible después del primer intento.
-- Tiempo objetivo: 5–7 minutos.
+1. **Experiencia:** una situación reconocible sin nombrar todavía la teoría.
+2. **Patrón:** qué factores parecen repetirse.
+3. **Mecanismo:** por qué podría ocurrir.
+4. **Excepción:** cuándo no ocurriría.
+5. **Concepto:** qué distinción o definición hace falta.
+6. **Evidencia:** qué dato permitiría decidir entre explicaciones.
 
-### Movimiento 3 — Leer con matices
+Ejemplo de progresión para emparejamiento: `Where do couples usually meet?` → `Which factors
+influence coupling between men and women?` → `How could we separate preference from opportunity?`
+→ `What evidence would weaken your explanation?`.
 
-- Texto original de 900–1.400 palabras.
-- Cinco a siete secciones con subtítulos informativos.
-- Estructura mínima:
-  1. intuición popular;
-  2. definición operativa;
-  3. evidencia o argumento central;
-  4. explicación alternativa o contraargumento;
-  5. límites de generalización;
-  6. protocolo de aplicación.
-- Entre tres y seis fuentes; al menos dos primarias para constructos empíricos.
-- Las fuentes sostienen afirmaciones concretas, no sirven como decoración al final.
-- Tiempo objetivo: 12–18 minutos.
+La pantalla del profesor muestra una pregunta a la vez, notas de intención y dos posibles
+repreguntas. El profesor habla primero, escucha respuestas y avanza cuando el grupo ya tiene una
+hipótesis. No se revela aún la etiqueta académica como una respuesta correcta.
 
-### Movimiento 4 — Vocabulario
+### Fase 2 — Primera grabación · 3–5 minutos
 
-- Entre ocho y doce entradas.
-- Cada entrada incluye categoría gramatical, significado contextual, colocación y ejemplo original.
-- Al menos cuatro términos deben ser reutilizables fuera del tema.
-- Debe existir un contraste léxico: por ejemplo, `confidence` frente a `calibration`.
-- Tiempo objetivo: 5–7 minutos.
+- El profesor abre explícitamente la consigna mediante `TeacherPhaseGate`.
+- El estudiante graba entre 60 y 90 segundos: postura inicial, dos factores y nivel de confianza.
+- Puede escucharse y repetir antes de enviar; el primer intento no se califica por pronunciación.
+- La finalidad es **diagnóstica**: volver visible la explicación previa y crear algo que pueda
+  compararse con la síntesis final.
+- La interfaz indica quién puede oír el audio, durante cuánto tiempo se conserva y si todavía está
+  solo en el dispositivo. El profesor no recibe una grabación sin una acción explícita de entrega.
 
-### Movimiento 5 — Practicar
+### Fase 3 — Lectura larga activa · 22–30 minutos
 
-- Seis ejercicios como mínimo, además de las dos preguntas de escucha.
-- Cobertura obligatoria:
-  - definición;
-  - evidencia;
-  - límite;
-  - caso nuevo;
-  - formulación lingüística;
-  - mejor conclusión disponible.
-- Los distractores representan confusiones naturales; no se podan por longitud, gramática o tono.
-- Cada respuesta tiene explicación específica.
-- Tiempo objetivo: 7–10 minutos.
+El texto original tiene 1.100–1.600 palabras y seis a ocho bloques. No aparece como una pared
+continua. Cada bloque declara su función: `claim`, `definition`, `evidence`, `example`,
+`counterargument`, `scope-limit` o `application`.
 
-### Movimiento 6 — Producir y cerrar la órbita
+El lector incorpora herramientas de código con una función pedagógica concreta:
 
-- Producción de 100–180 palabras o audio de 60–90 segundos.
-- Lista de cuatro criterios observables.
-- Modelo comentado, no presentado antes del primer borrador.
-- El estudiante responde de nuevo al dilema inicial y registra nueva confianza.
-- El cierre compara `opción inicial`, `opción final`, `confianza inicial` y `confianza final`.
-- Debe completar: “I would update this conclusion if…”.
-- Tiempo objetivo: 7–10 minutos.
+- **Revelación por bloques:** antes de abrir un bloque, el estudiante predice la respuesta a una
+  pregunta breve; después contrasta su predicción.
+- **Glosario en contexto:** definición, pronunciación, colocación y ejemplo al pulsar una palabra,
+  sin abandonar el párrafo.
+- **Marcado semántico:** resaltar una afirmación, su evidencia, una objeción o un límite con cuatro
+  categorías fijas; no una paleta decorativa ilimitada.
+- **Mapa del argumento:** genera una vista `claim → evidence → objection → qualified conclusion`
+  a partir de relaciones editoriales, no de una inferencia automática no revisada.
+- **Fuente lateral:** cada afirmación auditable abre la referencia, el estatuto de evidencia y la
+  formulación exacta que la fuente permite sostener.
+- **Comparador:** pone lado a lado una cifra en dos formatos, dos definiciones o el estudio y su
+  crítica cuando esa comparación sea parte del tema.
+- **Paráfrasis de una oración:** al cerrar cada sección, el estudiante escribe la idea central; el
+  sistema conserva la respuesta, pero no finge evaluar semánticamente un texto libre.
+- **Notas ancladas:** comentarios privados por párrafo y un cuaderno general con guardado local.
+- **Puntos de pausa docente:** tres momentos sugeridos para preguntar, contrastar y aclarar antes de
+  que el grupo continúe.
+- **Modo concentración y accesibilidad:** ancho de línea legible, tamaño de fuente, teclado, lectura
+  por secciones y progreso; no se premia leer más rápido.
+
+Estructura editorial mínima del contenido: intuición popular, definición operativa, evidencia o
+argumento central, explicación alternativa, límites de generalización y protocolo de aplicación.
+Debe haber entre tres y seis fuentes; al menos dos primarias en un constructo empírico.
+
+### Fase 4 — “What did you understand?” · 8–12 minutos
+
+Sin volver al texto durante el primer minuto, el estudiante prepara y graba 75–120 segundos:
+
+1. `The central claim is…`
+2. `The strongest evidence or argument was…`
+3. `One limitation is…`
+4. `One question I still have is…`
+
+Junto al grabador aparece un cajón de apuntes con cuatro pestañas: `main idea`, `evidence`,
+`language` y `questions`. Después de grabar puede reabrir sus marcas y corregir sus notas. Esta
+fase usa recuperación y autoexplicación; todavía no muestra el audio inicial para evitar que el
+estudiante se limite a repetirlo.
+
+### Fase 5 — Vocabulario de precisión · 7–10 minutos
+
+- Entre ocho y doce entradas extraídas del texto y reutilizadas en las fases posteriores.
+- Cada entrada incluye categoría gramatical, significado contextual, pronunciación, colocación y
+  ejemplo original.
+- Al menos cuatro términos son transferibles a otros temas.
+- Hay dos o tres contrastes léxicos (`confidence` frente a `calibration`; `preference` frente a
+  `choice`) y recuperación activa, no solo tarjetas para releer.
+
+### Fase 6 — Desafío IELTS avanzado · 15–20 minutos
+
+Cada lección contiene entre ocho y diez preguntas originales. Mezcla como máximo cuatro familias
+para que la dificultad venga de leer con precisión y no de descifrar demasiadas interfaces:
+
+- idea principal o `Matching Headings`;
+- inferencia y alcance;
+- postura del autor (`Yes / No / Not Given`);
+- emparejar afirmación con evidencia o fuente;
+- completar resumen con límite de palabras;
+- propósito de párrafo o mejor conclusión disponible.
+
+La primera entrega permanece cerrada hasta responder el bloque completo. Después, cada ítem muestra
+el tramo exacto de evidencia y explica la confusión concreta de cada distractor. La puntuación se
+presenta como dominio de esta práctica, nunca como banda IELTS.
+
+### Fase 7 — Laboratorio de dos escuchas · 15–22 minutos
+
+Son dos audios originales de 2–4 minutos; ninguno narra el texto ni repite al otro. La ficha debe
+declarar la relación pedagógica del par:
+
+| Relación | Audio A | Audio B | Operación del estudiante |
+|---|---|---|---|
+| `contrast` | defiende una interpretación | defiende otra | localizar desacuerdo y supuesto |
+| `complement` | explica mecanismo o datos | aporta caso o consecuencia | integrar sin confundir niveles |
+| `micro-macro` | experiencia individual | patrón poblacional | evitar generalizar el caso |
+| `study-critique` | presenta un estudio | cuestiona método o alcance | calibrar la conclusión |
+| `temporal` | decisión inicial | resultado posterior | separar proceso y desenlace |
+| `scenario` | situación representada | análisis posterior | inferir antes de recibir teoría |
+| `is-ought` | describe lo observado | discute lo deseable | separar hecho y norma |
+
+Flujo: primera escucha global → dos preguntas → segunda escucha global → dos preguntas → matriz de
+comparación → nueva escucha focalizada. Las transcripciones aparecen después del primer intento y
+se distinguen por voz. La tarea final exige usar información de ambos audios, no identificar dos
+ideas aisladas.
+
+### Fase 8 — Síntesis y cierre de la órbita · 10–15 minutos
+
+- Discusión final o respuesta escrita de 140–200 palabras con evidencia de la lectura y los audios.
+- Audio final de 90–120 segundos: `I kept/changed my view because…`, una objeción, un límite y
+  `I would update this conclusion if…`.
+- Solo entonces se ponen en paralelo el audio inicial y el final, junto con confianza inicial y
+  final. La interfaz invita a detectar mayor precisión, no premia cambiar de opinión.
+- La rúbrica observa diferenciación conceptual, uso de evidencia, tratamiento del contraargumento
+  y calibración. No afirma corregir automáticamente una postura libre.
+
+### Ritmo y control docente
+
+En `guided-class`, el profesor puede `presentar`, `abrir`, `pausar` y `cerrar` una fase; cerrar no
+borra el trabajo. El estudiante ve la fase actual y una vista previa del recorrido, pero no las
+respuestas. La clase puede dividirse en dos sesiones: fases 1–5 y fases 6–8. En `self-study`, los
+gates se convierten en pausas explícitas y se mantienen los mismos productos de aprendizaje.
 
 ## 5. Arquitectura de evidencia
 
@@ -297,6 +398,16 @@ learningObjectives:
   -
 misconceptions:
   -
+classMode: guided-class | self-study | both
+discussion:
+  minutes: 20
+  funnelQuestions:
+    - kind: experience | pattern | mechanism | exception | concept | evidence
+      prompt:
+      teacherFollowUps:
+        -
+  recordingPrompt:
+  recordingSeconds: 60-90
 claimLedger:
   - claimId:
     status: supported | contested | normative | illustrative
@@ -304,11 +415,29 @@ claimLedger:
 counterposition:
 scopeLimits:
 openingDilemma:
-listeningAngle:
-readingSections:
+reading:
+  sections:
+    - id:
+      role: claim | definition | evidence | example | counterargument | scope-limit | application
+      pausePrompt:
+      claimIds:
+  activeTools:
+    - inline-glossary | semantic-marking | argument-map | comparator | anchored-notes
+postReading:
+  audioPrompt:
+  noteBuckets: [main-idea, evidence, language, questions]
 vocabularyTargets:
+ieltsPractice:
+  questionFamilies:
+  questionCount: 8-10
+listeningPair:
+  relationship: contrast | complement | micro-macro | study-critique | temporal | scenario | is-ought
+  audioAFunction:
+  audioBFunction:
+  integrationTask:
 practiceTargets:
 productionPrompt:
+finalAudioPrompt:
 updateCondition:
 sources:
   - type: primary | replication | review | critique | philosophical-source
@@ -316,17 +445,37 @@ sources:
     url:
 ```
 
-## 10. Contrato de datos v2 propuesto
+## 10. Contrato de datos v3 propuesto
 
-El contrato actual se conserva mientras se validan los pilotos. La siguiente versión debe añadir:
+El contrato actual se conserva mientras se validan los pilotos. La migración no debe forzar la
+misma interfaz sobre las dos lecciones ya publicadas: primero se construye un adaptador y luego un
+piloto v3. La siguiente versión debe añadir, como mínimo:
 
 ```ts
 type EvidenceClass = 'empirical' | 'contested-social' | 'normative'
 type EditorialRisk = 'low' | 'medium' | 'high'
+type LessonMode = 'guided-class' | 'self-study' | 'both'
+type ReadingBlockRole =
+  | 'claim'
+  | 'definition'
+  | 'evidence'
+  | 'example'
+  | 'counterargument'
+  | 'scope-limit'
+  | 'application'
+type ListeningRelationship =
+  | 'contrast'
+  | 'complement'
+  | 'micro-macro'
+  | 'study-critique'
+  | 'temporal'
+  | 'scenario'
+  | 'is-ought'
 
-interface AdvancedLessonV2 extends AdvancedLesson {
+interface AdvancedLessonV3 extends AdvancedLesson {
   evidenceClass: EvidenceClass
   editorialRisk: EditorialRisk
+  mode: LessonMode
   centralQuestion: string
   claims: Array<{
     id: string
@@ -340,8 +489,47 @@ interface AdvancedLessonV2 extends AdvancedLesson {
     citation: string
     href: string
   }>
-  opening: AdvancedLesson['opening'] & {
-    confidencePrompt: boolean
+  discussion: {
+    targetMinutes: number
+    questions: Array<{
+      id: string
+      kind: 'experience' | 'pattern' | 'mechanism' | 'exception' | 'concept' | 'evidence'
+      prompt: string
+      teacherIntent: string
+      followUps: string[]
+    }>
+  }
+  recordings: {
+    baseline: RecordingPrompt
+    postReading: RecordingPrompt
+    final: RecordingPrompt
+  }
+  reading: {
+    title: string
+    blocks: Array<{
+      id: string
+      role: ReadingBlockRole
+      heading: string
+      body: string
+      claimIds: string[]
+      glossaryIds: string[]
+      pausePrompt?: string
+      comparator?: { left: string; right: string; question: string }
+    }>
+  }
+  notes: {
+    buckets: Array<'main-idea' | 'evidence' | 'language' | 'questions'>
+    allowParagraphAnchors: boolean
+  }
+  ieltsPractice: {
+    questionFamilies: string[]
+    questions: AdvancedQuestion[]
+  }
+  listeningPair: {
+    relationship: ListeningRelationship
+    audioA: AdvancedAudio
+    audioB: AdvancedAudio
+    integrationTask: string
   }
   production: AdvancedLesson['production'] & {
     updateConditionPrompt: string
@@ -349,22 +537,83 @@ interface AdvancedLessonV2 extends AdvancedLesson {
 }
 ```
 
+`RecordingPrompt`, `AdvancedQuestion` y `AdvancedAudio` deben ser tipos discriminados, no bolsas de
+campos opcionales. Así, por ejemplo, una pregunta `matching-headings` no puede publicarse sin sus
+encabezados sobrantes ni un par `study-critique` sin dos posiciones realmente distintas.
+
+### Componentes de producto previstos
+
+- `TeacherDiscussionPanel`: pregunta, intención docente y repreguntas; sin respuesta modelo visible.
+- `TeacherPhaseGate`: controla apertura y pausa sin perder progreso.
+- `VoiceRecorder`: grabar, reproducir, repetir y entregar con consentimiento explícito.
+- `ActiveReadingRenderer`: bloques, roles, progreso y puntos de pausa.
+- `InlineGlossary`, `SemanticMarker`, `ClaimEvidenceMap` y `ReadingNotes`.
+- `AdvancedIeltsQuestionEngine`: entrega cerrada, evidencia y feedback por distractor.
+- `DualListeningLab`: dos pistas, matriz comparativa y transcripción diferida.
+- `BeforeAfterAudioReview`: comparación privada de los tres productos de voz.
+
+### Persistencia y privacidad
+
+El MVP guarda notas, marcas y estado localmente. Un audio puede permanecer como `Blob` local durante
+la sesión; subirlo exige autenticación, consentimiento visible y una política de retención. El
+estado distingue `recorded`, `kept-on-device` y `submitted-to-teacher`. Nunca se presenta un audio
+como entregado si solo existe en el navegador, ni se activa el micrófono al abrir la fase.
+
 ## 11. Puertas de calidad
 
 Una lección no se marca `available` si falla cualquiera de estas puertas:
 
-1. **Completitud:** seis movimientos, ocho preguntas totales y cierre circular.
+1. **Completitud:** ocho fases, tres consignas de voz, ocho preguntas IELTS y cierre circular.
 2. **Fuentes:** URLs válidas y ledger de afirmaciones completo.
 3. **Estatuto:** el lenguaje coincide con `evidenceClass`.
-4. **Escucha real:** las preguntas exigen escuchar y no se responden solo con el título.
-5. **Distractores:** todos plausibles y formalmente equivalentes.
-6. **Lectura:** longitud, contraargumento, alcance y protocolo de aplicación presentes.
-7. **Vocabulario:** ocho entradas como mínimo y ejemplos originales.
-8. **Producción:** criterios observables, modelo y condición de actualización.
-9. **Sensibilidad:** revisión adicional cuando `editorialRisk = high`.
-10. **Accesibilidad:** teclado, foco, contraste, etiquetas y móvil sin desbordamiento.
-11. **Persistencia:** progreso independiente por `slug`.
-12. **Compilación:** guardián del catálogo, TypeScript y build pasan sin reducir umbrales.
+4. **Conversación:** cinco preguntas en embudo y repreguntas; no empieza con una definición que
+   cierre el debate.
+5. **Lectura activa:** roles de bloque, contraargumento, límite, notas, mapa y tres pausas; las
+   herramientas no inventan evidencia ni emiten una falsa corrección de texto libre.
+6. **Escucha real:** los audios tienen funciones declaradas y diferentes; las preguntas exigen
+   escuchar y la integración exige usar ambos.
+7. **Distractores:** todos plausibles y formalmente equivalentes.
+8. **Antiatájos IELTS:** distribución, longitud, silueta, solapamiento, filtración y rachas pasan el
+   guardián descrito abajo.
+9. **Lectura editorial:** longitud, contraargumento, alcance y protocolo de aplicación presentes.
+10. **Vocabulario:** ocho entradas como mínimo y ejemplos originales.
+11. **Producción:** criterios observables, modelo y condición de actualización.
+12. **Sensibilidad:** revisión adicional cuando `editorialRisk = high`.
+13. **Accesibilidad:** teclado, foco, contraste, etiquetas y móvil sin desbordamiento.
+14. **Persistencia y privacidad:** progreso por `slug`, consentimiento y estados de audio inequívocos.
+15. **Compilación:** guardián del catálogo, TypeScript y build pasan sin reducir umbrales.
+
+La numeración anterior se implementa como identificadores estables (`completeness`, `sources`,
+`evidence-language`, etc.); el orden de presentación no debe ser parte de la API.
+
+### Guardián de sesgo para el bloque IELTS
+
+Las reglas nacen de los guardianes que ya protegen Historias, Listening, SAT e IELTS. Se miden sobre
+lo que realmente ve el estudiante después de cualquier reordenamiento:
+
+- **Posición global:** con cuatro opciones, ninguna posición puede concentrar más del 40 % ni quedar
+  por debajo del 10 % del banco completo. En un bloque de ocho preguntas se usa idealmente cada
+  posición dos veces; en bancos pequeños se audita también el agregado de la colección.
+- **Rachas:** nunca aparecen tres claves iguales consecutivas.
+- **Extremos de longitud:** la correcta no puede ser la única más larga ni la única más corta en más
+  del 30 % del banco. En cada lección, ninguna correcta puede superar por tres o más palabras al
+  distractor más largo.
+- **Silueta completa:** también se rechaza una única opción con cifra, cita, paréntesis, registro,
+  estructura gramatical o nivel de precisión que la delate.
+- **Solapamiento léxico por ambas caras:** no debe funcionar ni “elige la que más palabras repite”
+  ni “elige la que menos repite”. Los empates se reportan con honestidad.
+- **Distractores:** cada uno corresponde a un error identificable —detalle por idea principal,
+  causalidad inventada, alcance excesivo, evidencia ausente— y recibe feedback propio.
+- **Sin letras en contenido:** ni enunciado ni explicación dicen “option A/C”; las opciones pueden
+  cambiar de posición entre intentos mediante el helper compartido.
+- **Sin filtración:** pista, ejemplo, glosario, mapa y texto visible antes de entregar no reproducen
+  la respuesta. El ejemplo guiado y el bloque independiente usan pools separados.
+- **Reglas del tipo:** `Not Given` identifica la relación ausente; `Matching Headings` incluye
+  opciones sin usar; los límites de palabras se validan; las respuestas siguen el orden del texto
+  cuando IELTS lo exige.
+
+El umbral no reemplaza la revisión editorial: una lección de ocho preguntas puede parecer
+balanceada por azar. El guardián evalúa simultáneamente el bloque, la colección y todo el banco.
 
 ## 12. Fuentes aportadas por el usuario
 
@@ -390,9 +639,12 @@ Antes de convertirlo en lección se requiere:
 
 ## 13. Decisiones que debe revisar el usuario
 
-1. ¿Aprobamos 36 temas como horizonte o reducimos la primera biblioteca visible a 18?
-2. ¿La Oleada 1 debe publicar en el orden propuesto?
-3. ¿Mostramos en pantalla las etiquetas `empírico`, `discutido` y `normativo`?
-4. ¿La confianza inicial/final se expresa como porcentaje o escala de cinco puntos?
-5. ¿“Firmeza, fuerza y generosidad” conserva ese título o se formula como pregunta?
-
+1. ¿Aprobamos una clase completa de 95–120 minutos que pueda dividirse en dos sesiones, o debemos
+   diseñarla desde el inicio para una sola franja de 90 minutos?
+2. ¿El control de avance será una sesión docente sincronizada en la plataforma o, en el primer MVP,
+   un botón que el profesor indica verbalmente que cada estudiante pulse?
+3. ¿Los audios permanecen privados en el dispositivo por defecto y solo se entregan uno a uno, o
+   la clase requiere una bandeja docente con retención definida?
+4. ¿Mostramos en pantalla las etiquetas `empírico`, `discutido` y `normativo`?
+5. ¿La confianza inicial/final se expresa como porcentaje o escala de cinco puntos?
+6. ¿Aprobamos 36 temas como horizonte y la Oleada 1 como conjunto piloto?
