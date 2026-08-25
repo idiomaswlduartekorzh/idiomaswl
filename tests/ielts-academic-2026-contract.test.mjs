@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import test from 'node:test';
 import set4 from '../src/data/mocks/ielts-set-4.ts';
 import set13 from '../src/data/mocks/ielts-set-13.ts';
@@ -57,6 +57,64 @@ test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 word
     ), 0);
     assert.ok(wordCount >= 2150 && wordCount <= 2750, `${mock.id} has ${wordCount} Reading words`);
     assert.equal(responseCount, 40, `${mock.id} Reading response count`);
+  }
+});
+
+test('Sets 4–20 are directly accessible from the public IELTS catalog', () => {
+  const catalogSource = readFileSync(new URL('../src/data/exams.ts', import.meta.url), 'utf8');
+  for (let setNumber = 4; setNumber <= 20; setNumber += 1) {
+    assert.match(
+      catalogSource,
+      new RegExp(`\\{ id: 'set-${setNumber}',[^\\n]+free: true`),
+      `set-${setNumber} must not render a Pro subscription lock`,
+    );
+  }
+});
+
+test('Writing and Speaking preserve the complete Academic task contract', async () => {
+  for (const mock of await loadAuditedSets()) {
+    const writing = mock.sections.filter(section => section.skill === 'writing').flatMap(section => section.questions);
+    const task1 = writing.find(question => question.type === 'write' && question.taskNumber === 1);
+    const task2 = writing.find(question => question.type === 'write' && question.taskNumber === 2);
+    assert.equal(task1?.minWords, 150, `${mock.id} Task 1 minimum`);
+    assert.equal(task2?.minWords, 250, `${mock.id} Task 2 minimum`);
+    assert.ok(task1?.imageUrl, `${mock.id} Task 1 visual`);
+    assert.ok(existsSync(new URL(`../public${task1.imageUrl}`, import.meta.url)), `${mock.id} Task 1 asset exists`);
+    assert.ok((task2?.stimulus ?? '').trim().length >= 80, `${mock.id} Task 2 prompt is substantive`);
+
+    const speaking = mock.sections.filter(section => section.skill === 'speaking').flatMap(section => section.questions);
+    const part1 = speaking.filter(question => question.type === 'speak' && question.partNumber === 1);
+    const part2 = speaking.find(question => question.type === 'speak' && question.partNumber === 2);
+    const part3 = speaking.filter(question => question.type === 'speak' && question.partNumber === 3);
+    const part1QuestionCount = part1.reduce((total, question) => total + (question.text.match(/\?/g)?.length ?? 0) + (question.followUp?.length ?? 0), 0);
+    const part3QuestionCount = part3.reduce((total, question) => total + (question.text.match(/\?/g)?.length ?? 0) + (question.followUp?.length ?? 0), 0);
+    assert.ok(part1QuestionCount >= 4, `${mock.id} Speaking Part 1 needs at least 4 questions`);
+    assert.ok(part2?.cueCard?.includes('explain'), `${mock.id} Speaking Part 2 needs a complete cue card`);
+    assert.ok((part2?.cueCard?.match(/•/g)?.length ?? 0) >= 3, `${mock.id} Speaking Part 2 cue points`);
+    assert.ok(part3QuestionCount >= 4, `${mock.id} Speaking Part 3 needs at least 4 questions`);
+  }
+});
+
+test('completion keys are supported verbatim by their Listening transcript or Reading passage', async () => {
+  for (const mock of await loadAuditedSets()) {
+    for (const section of mock.sections.filter(item => item.skill === 'listening' || item.skill === 'reading')) {
+      const source = (section.transcript || section.passage || '').toLowerCase().replaceAll('’', "'");
+      for (const question of section.questions) {
+        const constrainedChoice = question.type === 'formgroup' && /(?:TRUE.+FALSE|YES.+NO).+NOT GIVEN/i.test(question.groupLabel);
+        if (constrainedChoice) continue;
+        const blanks = question.type === 'formgroup'
+          ? question.blanks
+          : question.type === 'tablegroup'
+            ? question.rows.flat().filter(cell => typeof cell !== 'string')
+            : [];
+        for (const blank of blanks) {
+          assert.ok(
+            blank.answers.some(answer => source.includes(answer.toLowerCase().replaceAll('’', "'"))),
+            `${mock.id} ${section.skill} ${question.id} Q${blank.num}: accepted answer must occur in source`,
+          );
+        }
+      }
+    }
   }
 });
 

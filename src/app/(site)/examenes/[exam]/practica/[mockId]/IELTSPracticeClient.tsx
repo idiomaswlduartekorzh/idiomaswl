@@ -78,6 +78,19 @@ type WriteMap  = Record<string, string>;    // questionId -> text
 type SpeakMap  = Record<string, string>;    // questionId -> notes
 type SpeakAudioMap = Record<string, IeltsSpeakingRecording>;
 
+function emptyAnswers(): AllAnswers {
+  return { fills:{}, mcq:{}, ms:{}, match:{}, write:{}, speak:{} };
+}
+
+function isSavedAnswers(value: unknown): value is AllAnswers {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
+  const candidate = value as Partial<AllAnswers>;
+  return ['fills', 'mcq', 'ms', 'match', 'write', 'speak'].every(key => {
+    const map = candidate[key as keyof AllAnswers];
+    return !!map && typeof map === 'object' && !Array.isArray(map);
+  });
+}
+
 // ── Form-group question renderer ──────────────────────────────────────────────
 
 function renderFormTemplate(
@@ -86,11 +99,20 @@ function renderFormTemplate(
   fills: FillMap,
   groupId: string,
   onChange: (key: string, val: string) => void,
+  choiceOptions?: readonly string[],
 ) {
   const blanksByNum = Object.fromEntries(blanks.map(b => [b.num, b]));
 
+  // Some authored templates begin a line with the same number later rendered
+  // beside the response control (for example, "33. {{33}}: ..."). Keep the
+  // accessible numbered control as the single source of numbering.
+  const normalizedTemplate = template.split('\n').map(line => {
+    const prefix = line.match(/^\s*(\d+)\.\s*/);
+    return prefix && line.includes(`{{${prefix[1]}}}`) ? line.slice(prefix[0].length) : line;
+  }).join('\n');
+
   // Split template into segments around {{n}} markers
-  const parts = template.split(/(\{\{\d+\}\})/);
+  const parts = normalizedTemplate.split(/(\{\{\d+\}\})/);
 
   return (
     <div className="ielts-form__body">
@@ -103,17 +125,31 @@ function renderFormTemplate(
           return (
             <span key={i} className="ielts-form__blank-wrap">
               <span className="ielts-form__blank-num">{num}</span>
-              <input
-                type="text"
-                name={`${groupId}_${num}`}
-                aria-label={`Question ${num}`}
-                autoComplete="off"
-                className="ielts-form__input"
-                value={fills[key] ?? ''}
-                onChange={e => onChange(key, e.target.value)}
-                placeholder="Answer…"
-                style={{ width: `${Math.max(6, (blank?.maxWords ?? 1) * 3.5)}ch` }}
-              />
+              {choiceOptions ? (
+                <select
+                  name={`${groupId}_${num}`}
+                  aria-label={`Question ${num}`}
+                  autoComplete="off"
+                  className="ielts-form__choice"
+                  value={fills[key] ?? ''}
+                  onChange={e => onChange(key, e.target.value)}
+                >
+                  <option value="">Choose…</option>
+                  {choiceOptions.map(option => <option key={option} value={option}>{option}</option>)}
+                </select>
+              ) : (
+                <input
+                  type="text"
+                  name={`${groupId}_${num}`}
+                  aria-label={`Question ${num}`}
+                  autoComplete="off"
+                  className="ielts-form__input"
+                  value={fills[key] ?? ''}
+                  onChange={e => onChange(key, e.target.value)}
+                  placeholder="Answer…"
+                  style={{ width: `${Math.max(6, (blank?.maxWords ?? 1) * 3.5)}ch` }}
+                />
+              )}
             </span>
           );
         }
@@ -140,6 +176,12 @@ function renderFormTemplate(
 function FormGroupView({
   q, fills, onChange,
 }: { q: FormGroupQuestion; fills: FillMap; onChange: (k: string, v: string) => void }) {
+  const upperLabel = q.groupLabel.toUpperCase();
+  const choiceOptions = upperLabel.includes('TRUE') && upperLabel.includes('FALSE') && upperLabel.includes('NOT GIVEN')
+    ? ['TRUE', 'FALSE', 'NOT GIVEN']
+    : upperLabel.includes('YES') && upperLabel.includes('NO') && upperLabel.includes('NOT GIVEN')
+      ? ['YES', 'NO', 'NOT GIVEN']
+      : undefined;
   return (
     <div className="ielts-form">
       <div className="ielts-group__label">
@@ -153,7 +195,7 @@ function FormGroupView({
       )}
       {q.title && <p className="ielts-form__title">{q.title}</p>}
       {q.example && <p className="ielts-form__example"><em>Example</em><br />{q.example}</p>}
-      {renderFormTemplate(q.template, q.blanks, fills, q.id, onChange)}
+      {renderFormTemplate(q.template, q.blanks, fills, q.id, onChange, choiceOptions)}
     </div>
   );
 }
@@ -230,6 +272,7 @@ function MultiSelectView({
             >
               <input
                 type="checkbox"
+                name={`${q.id}_${opt.letter}`}
                 checked={checked}
                 disabled={overlimit}
                 onChange={() => onToggle(opt.letter)}
@@ -266,6 +309,7 @@ function MCQView({
             ) : (
               <button
                 key={i}
+                type="button"
                 onClick={() => onChange(i)}
                 className={`prac-option${selected===i?' prac-option--selected':''}`}
               >
@@ -543,7 +587,7 @@ function SectionPanel({
           </div>
         </div>
         <div className="ielts-split__right">
-          <p className="ielts-split__section-title">{section.title}</p>
+          <h2 className="ielts-split__section-title">{section.title}</h2>
           <p className="ielts-split__instructions">{section.instructions}</p>
           {questionsEl}
         </div>
@@ -553,7 +597,7 @@ function SectionPanel({
 
   return (
     <div className="ielts-section-panel">
-      <p className="ielts-section-panel__title">{section.title}</p>
+      <h2 className="ielts-section-panel__title">{section.title}</h2>
       <p className="ielts-section-panel__instructions">{section.instructions}</p>
       {/* transcript data preserved in section.transcript — hidden in exam UI */}
       {questionsEl}
@@ -767,7 +811,7 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
             Respuesta por respuesta de Listening y Reading, y la corrección completa de tu
             Writing (errores marcados + versión corregida) — déjanos tu WhatsApp para verlo.
           </p>
-          <button onClick={handleWantDetail} className="btn">Ver reporte detallado</button>
+          <button type="button" onClick={handleWantDetail} className="btn">Ver reporte detallado</button>
         </div>
       )}
 
@@ -954,8 +998,8 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
       )}
 
       <div className="prac-results__actions">
-        <button onClick={onRetry} className="btn btn-ghost">Try again</button>
-        <Link href={`/examenes/${exam.slug}`} className="btn">Back to IELTS</Link>
+        <button type="button" onClick={onRetry} className="btn btn-ghost">Intentar de nuevo</button>
+        <Link href={`/examenes/${exam.slug}`} className="btn">Volver a IELTS</Link>
       </div>
     </div>
   );
@@ -967,8 +1011,10 @@ type Phase = 'intro'|'exam'|'submit'|'results';
 
 export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const isAligned2026 = mock.format === 'ielts-academic-2026' && !!mock.ieltsAcademic2026Blueprint;
+  const listeningUnderReview = mock.ieltsAcademic2026Blueprint?.listeningMediaStatus === 'legacy-audio-under-review';
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
+  const draftKey = `wl_ielts_draft_${mock.id}`;
 
   const comingSoonSkills = new Set(
     mock.sections.filter(s=>s.comingSoon).map(s=>s.skill).filter(Boolean) as string[]
@@ -978,8 +1024,16 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   ) ?? 'reading';
 
   const [activeSkill, setActiveSkill] = useState(firstActiveSkill);
-  const [ans, setAns] = useState<AllAnswers>({
-    fills:{}, mcq:{}, ms:{}, match:{}, write:{}, speak:{},
+  const [ans, setAns] = useState<AllAnswers>(() => {
+    if (typeof window === 'undefined') return emptyAnswers();
+    try {
+      const saved = sessionStorage.getItem(draftKey);
+      if (saved) {
+        const parsed: unknown = JSON.parse(saved);
+        if (isSavedAnswers(parsed) && Object.values(parsed).some(map => Object.keys(map).length > 0)) return parsed;
+      }
+    } catch {}
+    return emptyAnswers();
   });
   const [recordings, setRecordings] = useState<SpeakAudioMap>({});
   const [recordingIds, setRecordingIds] = useState<Set<string>>(new Set());
@@ -988,6 +1042,10 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
 
   const skills = SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
   const runnableSkills = skills.filter(skill => !comingSoonSkills.has(skill));
+
+  useEffect(() => {
+    try { sessionStorage.setItem(draftKey, JSON.stringify(ans)); } catch {}
+  }, [ans, draftKey]);
 
   const handlers = {
     onFill: useCallback((k:string,v:string)=>setAns(p=>({...p,fills:{...p.fills,[k]:v}})),[]),
@@ -1044,14 +1102,15 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   }
 
   const handleRetry = useCallback(()=>{
-    setAns({fills:{},mcq:{},ms:{},match:{},write:{},speak:{}});
+    setAns(emptyAnswers());
     setRecordings({});
     setRecordingIds(new Set());
     setFinishError('');
     setSubmissionReceipt(null);
     setListeningConsumed(false);
+    try { sessionStorage.removeItem(draftKey); } catch {}
     setActiveSkill(firstActiveSkill); setPhase('intro');
-  },[firstActiveSkill]);
+  },[draftKey,firstActiveSkill]);
 
   useEffect(()=>{
     if (phase!=='exam'&&phase!=='submit') return;
@@ -1062,7 +1121,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
 
   useEffect(()=>{
     window.scrollTo({top:0,left:0,behavior:'auto'});
-  },[phase]);
+  },[activeSkill,phase]);
 
   if (phase==='results') {
     return (
@@ -1091,6 +1150,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           recordings={recordings}
           onBack={()=>setPhase('exam')}
           onSuccess={(receipt)=>{
+            try { sessionStorage.removeItem(draftKey); } catch {}
             setSubmissionReceipt(receipt);
             setPhase('results');
           }}
@@ -1134,10 +1194,11 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
               <li>Reading: los textos aparecen junto a las preguntas.</li>
               <li>Writing y Speaking: tus respuestas se envían al profesor para corrección.</li>
               {isAligned2026 && <li>Listening se reproduce una sola vez. Speaking es una simulación grabada de WeLearn, no una entrevista oficial.</li>}
+              {listeningUnderReview && <li>El audio actual de Listening sigue disponible como versión heredada; será reemplazado tras la expansión editorial y el QA final 2026.</li>}
               {comingSoonSkills.has('listening') && <li>Listening está temporalmente excluido: el guion existe, pero el MP3 aún no ha pasado release y QA.</li>}
             </ul>
           </div>
-          <button onClick={()=>{ setActiveSkill(firstActiveSkill); setPhase('exam'); }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>Empezar examen</button>
+          <button type="button" onClick={()=>{ setActiveSkill(firstActiveSkill); setPhase('exam'); }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>Empezar examen</button>
           <Link href={`/examenes/${exam.slug}`} style={{color:'var(--muted)',fontSize:'0.9rem',marginTop:'1rem',display:'block'}}>Volver a IELTS</Link>
         </div>
       </div>
@@ -1165,7 +1226,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           <span className="prac-topbar__title">{mock.title}</span>
         </div>
         <div className="prac-topbar__right">
-          <span className="ielts-topbar__progress">{totalAnswered}/{totalQs} answered</span>
+          <span className="ielts-topbar__progress">{totalAnswered}/{totalQs} respondidas</span>
           <Timer
             key={isAligned2026 ? activeSkill : 'whole-exam'}
             totalSecs={activeTimeSeconds}
@@ -1187,6 +1248,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
       <div className="ielts-exam-body">
         {activeSkill === 'listening' && (
           <div className="ielts-audio-sticky">
+            {listeningUnderReview && <p className="ielts-audio__review-note" role="note">Versión heredada en revisión editorial; no es todavía el audio final 2026.</p>}
             <AudioPlayer
               src={mock.sections.find(s=>s.skill==='listening')?.audioUrl}
               label="IELTS Listening"
@@ -1214,12 +1276,12 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
               const prev=arr[i-1], next=arr[i+1];
               return (
                 <span key={sk} style={{display:'flex',gap:'0.75rem'}}>
-                  {prev && !isAligned2026 && <button onClick={()=>setActiveSkill(prev)} className="btn btn-ghost btn-sm">&larr; {SKILL_LABEL[prev]}</button>}
+                  {prev && !isAligned2026 && <button type="button" onClick={()=>setActiveSkill(prev)} className="btn btn-ghost btn-sm">&larr; {SKILL_LABEL[prev]}</button>}
                   {next
-                    ? <button onClick={()=>isAligned2026 ? advanceAlignedSkill() : setActiveSkill(next)} className="btn btn-sm">
+                    ? <button type="button" onClick={()=>isAligned2026 ? advanceAlignedSkill() : setActiveSkill(next)} className="btn btn-sm">
                         {isAligned2026 ? `Cerrar ${SKILL_LABEL[sk]} y continuar` : SKILL_LABEL[next]} &rarr;
                       </button>
-                    : <button onClick={()=>{
+                    : <button type="button" onClick={()=>{
                         if (unanswered>0&&!confirm(`${unanswered} pregunta(s) sin responder. ¿Terminar de todas formas?`)) return;
                         handleSubmit();
                       }} className="btn">Terminar examen</button>

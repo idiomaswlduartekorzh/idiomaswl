@@ -473,7 +473,7 @@ F. Researchers are careful to note the limitations of Blue Zone research. The da
           title: 'Blue Zones — Key Features',
           template: `21. Physical activity: Embedded in daily routine; not {{21}} exercise.\n22. Diet staple: {{22}} consumed daily in all five zones.\n23. Okinawan eating principle: Called {{23}}: eating until 80% full.\n24. Okinawan social group: Lifelong support groups called {{24}}.\n25. Okinawan life purpose: Called {{25}}: "the reason for getting up".\n26. Research limitation: {{26}} variables such as genetics make causation hard to isolate.`,
           blanks: [
-            { num: 21, answers: ['formal', 'organised', 'structured'] },
+            { num: 21, answers: ['scheduled'] },
             { num: 22, answers: ['Legumes'] },
             { num: 23, answers: ['hara hachi bu'] },
             { num: 24, answers: ['moais', 'moai'] },

@@ -307,7 +307,7 @@ export interface MockSection {
   transcript?: string;
   audioUrl?: string;       // URL to audio file (if available)
   mediaId?: string;        // stable Listening stimulus identity
-  mediaStatus?: 'ready-existing' | 'script-ready-audio-blocked';
+  mediaStatus?: 'ready-existing' | 'legacy-audio-under-review' | 'script-ready-audio-blocked';
   comingSoon?: boolean;    // disables the tab, shows "En Construcción" badge
   questions: Question[];
   // TOEFL 2026 fixed-route practice metadata. The official test is adaptive;
@@ -389,7 +389,7 @@ export interface MockExam {
     }[];
     readingTargetWords: readonly [2150, 2750];
     listeningPlayback: 'once';
-    listeningMediaStatus: 'ready-existing' | 'script-ready-audio-blocked';
+    listeningMediaStatus: 'ready-existing' | 'legacy-audio-under-review' | 'script-ready-audio-blocked';
     speakingMode: 'recorded-welearn-simulation';
   };
   toefl2026Blueprint?: {

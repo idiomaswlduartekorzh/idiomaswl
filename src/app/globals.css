@@ -2256,13 +2256,14 @@ button {
 /* Top bar */
 .prac-topbar {
   position: sticky;
-  top: 0;
+  top: 60px;
   z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0 1.5rem;
+  padding-left: max(1.5rem, env(safe-area-inset-left));
+  padding-right: max(1.5rem, env(safe-area-inset-right));
   height: 56px;
   background: var(--ink-bg);
   border-bottom: 2px solid var(--exam-color, var(--accent));
@@ -4053,7 +4054,7 @@ button {
 .ielts-section-panel__title {
   font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 0.35rem;
+  margin: 0 0 0.35rem;
 }
 .ielts-section-panel__instructions {
   font-size: 0.9rem;
@@ -4192,10 +4193,12 @@ button {
   content: '';
   position: absolute;
   left: 0; top: 0; bottom: 0;
-  width: var(--pct, 0%);
+  width: 100%;
   background: var(--accent);
   border-radius: 2px;
-  transition: width 0.5s linear;
+  transform: scaleX(var(--progress, 0));
+  transform-origin: left;
+  transition: transform 0.5s linear;
 }
 .ielts-audio__time {
   font-size: 0.75rem;
@@ -4205,12 +4208,19 @@ button {
 }
 .ielts-audio-sticky {
   position: sticky;
-  top: 0;
+  top: 116px;
   z-index: 10;
   background: var(--bg-card);
   border-bottom: 1px solid var(--border);
   padding: 0.5rem 1.5rem;
   margin-bottom: 0.5rem;
+}
+.ielts-audio__review-note {
+  margin: 0 0 .5rem;
+  color: var(--wl-on-panel-alert, #9a6700);
+  font-size: .76rem;
+  font-weight: 700;
+  line-height: 1.45;
 }
 .ielts-audio__badge {
   font-size: 0.72rem;
@@ -4358,6 +4368,17 @@ button {
   transition: border-color 0.15s;
 }
 .ielts-form__input:focus { border-bottom-color: var(--fg); }
+.ielts-form__choice {
+  min-width: 9.5rem;
+  padding: 0.32rem 0.55rem;
+  border: 1.5px solid var(--accent);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--fg);
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
 
 /* Table-group */
 .ielts-tableq {
@@ -4636,7 +4657,7 @@ button {
 .ielts-split__section-title {
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 0.3rem;
+  margin: 0 0 0.3rem;
 }
 .ielts-split__instructions {
   font-size: 0.88rem;
@@ -5082,7 +5103,9 @@ button {
 }
 @media (prefers-reduced-motion: reduce) {
   .ielts-speak__rec-btn--recording,
-  .ielts-speak__rec-dot--live { animation: none; }
+  .ielts-speak__rec-dot--live,
+  .prac-timer--urgent .prac-timer__val { animation: none; }
+  .ielts-audio__progress-bar::after { transition: none; }
 }
 
 /* ── Unified Exam Report ──────────────────────────────────────────────────── */

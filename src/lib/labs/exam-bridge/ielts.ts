@@ -12,6 +12,7 @@
  */
 
 import type { MockExam, SpeakQuestion, WriteQuestion } from '@/data/mocks/types';
+import { withIeltsAcademic2026Blueprint } from '@/data/mocks/ielts-academic-2026';
 
 export interface IeltsWritingAssignment {
   /** Consigna completa tal como la ve el estudiante en el examen real. */
@@ -65,7 +66,17 @@ export function isReviewableIeltsMock(mockId: string): boolean {
 export async function loadIeltsMock(mockId: string): Promise<MockExam | null> {
   const loader = SET_LOADERS[mockId];
   if (!loader) return null;
-  return (await loader()).default;
+  const authoredMock = (await loader()).default;
+  const setNumber = Number(mockId.replace(/^set-/, ''));
+
+  // Sets 4–20 are transformed before they reach the browser (MCQ positions,
+  // audited Reading length and Listening release state). The submission
+  // server must use the exact same projection or a visually correct answer
+  // can be scored against a different option index. Keeping this here also
+  // prevents unreleased Listening sections from producing a false Band 1.
+  return Number.isInteger(setNumber) && setNumber >= 4 && setNumber <= 20
+    ? withIeltsAcademic2026Blueprint(authoredMock)
+    : authoredMock;
 }
 
 async function findWriteQuestion(mockId: string, taskNumber: 1 | 2): Promise<WriteQuestion | null> {

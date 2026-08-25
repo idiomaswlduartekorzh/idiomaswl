@@ -45,12 +45,23 @@ export default function MockGrid({ exam }: { exam: Exam }) {
     <div className="wl-mock-grid">
       {mocks.map((mock) => {
         const absoluteIndex = exam.mocks.findIndex(item => item.id === mock.id);
+        const ieltsSetNumber = exam.slug === 'ielts' ? Number(mock.id.replace(/^set-/, '')) : 0;
+        const ieltsAudioState = ieltsSetNumber >= 4 && ieltsSetNumber <= 12
+          ? 'legacy'
+          : ieltsSetNumber >= 13 && ieltsSetNumber <= 20
+            ? 'pending'
+            : null;
         return (
           <article key={mock.id} className={`wl-mock-card${mock.free ? '' : ' wl-mock-card--locked'}`}>
             <div className="wl-mock-card__header">
               <span className="wl-mock-card__num">{String(absoluteIndex + 1).padStart(2, '0')}</span>
               <div className="wl-mock-card__badges">
                 {mock.badge ? <span className="wl-exam-status-chip">{mock.badge}</span> : null}
+                {ieltsAudioState ? (
+                  <span className="wl-exam-status-chip">
+                    {ieltsAudioState === 'legacy' ? 'Audio en revisión' : 'Audio pendiente'}
+                  </span>
+                ) : null}
                 <span className={`wl-mock-card__tag ${mock.free ? 'wl-mock-card__tag--free' : 'wl-mock-card__tag--pro'}`}>
                   {mock.free ? 'Gratis' : 'Pro'}
                 </span>
@@ -59,7 +70,11 @@ export default function MockGrid({ exam }: { exam: Exam }) {
             <h3 className="wl-mock-card__title">{mock.title}</h3>
             <p className="wl-mock-card__sub">{mock.subtitle}</p>
             <div className="wl-mock-card__stats">
-              <span>{mock.parts} {mock.parts === 1 ? 'parte' : 'partes'}</span><span aria-hidden="true">·</span><span>{mock.questions} preguntas</span>
+              {ieltsAudioState === 'pending' ? (
+                <span>Reading, Writing y Speaking activos · Listening pendiente</span>
+              ) : (
+                <><span>{mock.parts} {mock.parts === 1 ? 'parte' : 'partes'}</span><span aria-hidden="true">·</span><span>{mock.questions} preguntas</span></>
+              )}
             </div>
             {mock.free ? (
               <div className="wl-mock-card__actions">

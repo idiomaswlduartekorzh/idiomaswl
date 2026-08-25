@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
@@ -61,6 +61,21 @@ function answerLeak(question) {
   const uniquelyLongest = correctLength === Math.max(...lengths)
     && lengths.filter((length) => length === correctLength).length === 1;
   return { answer: question.answer, uniquelyLongest };
+}
+
+function completionAnswerIssues(section, question) {
+  const constrainedChoice = question.type === 'formgroup'
+    && /(?:TRUE.+FALSE|YES.+NO).+NOT GIVEN/i.test(question.groupLabel);
+  if (constrainedChoice) return [];
+  const blanks = question.type === 'formgroup'
+    ? question.blanks
+    : question.type === 'tablegroup'
+      ? question.rows.flat().filter((cell) => typeof cell !== 'string')
+      : [];
+  const source = (section.transcript || section.passage || '').toLowerCase().replaceAll('’', "'");
+  return blanks
+    .filter((blank) => !blank.answers.some((answer) => source.includes(answer.toLowerCase().replaceAll('’', "'"))))
+    .map((blank) => `${question.id} Q${blank.num} (${blank.answers.join(' / ')})`);
 }
 
 function audioDurationSeconds(url) {
@@ -155,6 +170,14 @@ for (const setNumber of SETS) {
     }
   }
 
+  for (const section of [...bySkill.listening, ...bySkill.reading]) {
+    for (const question of section.questions) {
+      for (const issue of completionAnswerIssues(section, question)) {
+        blockers.push(`Set ${setNumber} ${section.skill}: clave de completion no aparece en la fuente: ${issue}.`);
+      }
+    }
+  }
+
   for (const section of mock.sections) {
     for (const value of [section.passage, section.transcript]) {
       if (!value) continue;
@@ -187,8 +210,22 @@ for (const setNumber of SETS) {
   if (writingTasks.length !== 2 || !writingTasks.some((question) => question.taskNumber === 1) || !writingTasks.some((question) => question.taskNumber === 2)) {
     blockers.push(`Set ${setNumber}: Writing no contiene exactamente Task 1 y Task 2.`);
   }
-  if (!writingTasks.find((question) => question.taskNumber === 1)?.imageUrl) blockers.push(`Set ${setNumber}: Writing Task 1 carece de visual.`);
+  const task1 = writingTasks.find((question) => question.taskNumber === 1);
+  const task2 = writingTasks.find((question) => question.taskNumber === 2);
+  if (!task1?.imageUrl) blockers.push(`Set ${setNumber}: Writing Task 1 carece de visual.`);
+  else if (!existsSync(path.join(process.cwd(), 'public', task1.imageUrl))) blockers.push(`Set ${setNumber}: falta el visual ${task1.imageUrl}.`);
+  if (task1?.minWords !== 150) blockers.push(`Set ${setNumber}: Writing Task 1 no exige 150 palabras.`);
+  if (task2?.minWords !== 250) blockers.push(`Set ${setNumber}: Writing Task 2 no exige 250 palabras.`);
+  if ((task2?.stimulus ?? '').trim().length < 80) blockers.push(`Set ${setNumber}: Writing Task 2 carece de una consigna sustantiva.`);
   if (![1, 2, 3].every((part) => speakingParts.has(part))) blockers.push(`Set ${setNumber}: Speaking no cubre Parts 1–3.`);
+  const speakingQuestions = bySkill.speaking.flatMap((section) => section.questions).filter((question) => question.type === 'speak');
+  const speakingCount = (partNumber) => speakingQuestions
+    .filter((question) => question.partNumber === partNumber)
+    .reduce((total, question) => total + (question.text.match(/\?/g)?.length ?? 0) + (question.followUp?.length ?? 0), 0);
+  const cueCard = speakingQuestions.find((question) => question.partNumber === 2)?.cueCard ?? '';
+  if (speakingCount(1) < 4) blockers.push(`Set ${setNumber}: Speaking Part 1 ofrece menos de 4 preguntas.`);
+  if ((cueCard.match(/•/g)?.length ?? 0) < 3 || !cueCard.includes('explain')) blockers.push(`Set ${setNumber}: Speaking Part 2 no tiene cue card completo.`);
+  if (speakingCount(3) < 4) blockers.push(`Set ${setNumber}: Speaking Part 3 ofrece menos de 4 preguntas.`);
 
   if (publicKeyCount > 0) blockers.push(`Set ${setNumber}: ${publicKeyCount} claves cruzan al payload del cliente.`);
 
@@ -203,6 +240,13 @@ for (const setNumber of SETS) {
     sourceKeys: sourceKeyCount,
     publicKeys: publicKeyCount,
   });
+}
+
+const catalogSource = readFileSync(path.join(process.cwd(), 'src/data/exams.ts'), 'utf8');
+for (const setNumber of SETS) {
+  if (!new RegExp(`\\{ id: 'set-${setNumber}',[^\\n]+free: true`).test(catalogSource)) {
+    blockers.push(`Catálogo IELTS: Set ${setNumber} debe abrir directamente, sin estado Pro ni bloqueo de suscripción.`);
+  }
 }
 
 const readingA = distributions.reading[0];

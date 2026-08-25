@@ -30,6 +30,11 @@ interface Props {
 }
 
 type SubmitState = 'idle' | 'preparing' | 'uploading' | 'confirming';
+type PendingSubmission = {
+  signature: string;
+  prepared: IeltsPrepareResponse;
+  uploadedQuestionIds: Set<string>;
+};
 
 function formatDuration(seconds: number): string {
   const minutes = Math.floor(seconds / 60);
@@ -65,9 +70,11 @@ export function IELTSSubmission({
   const [email, setEmail] = useState('');
   const [consent, setConsent] = useState(false);
   const [state, setState] = useState<SubmitState>('idle');
+  const [canRetry, setCanRetry] = useState(false);
   const [uploadProgress, setUploadProgress] = useState({ current: 0, total: 0 });
   const [error, setError] = useState('');
   const errorRef = useRef<HTMLParagraphElement>(null);
+  const pendingRef = useRef<PendingSubmission | null>(null);
 
   const task1Words = countEssayWords(writingTask1);
   const task2Words = countEssayWords(writingTask2);
@@ -119,27 +126,35 @@ export function IELTSSubmission({
       speakingNotes,
       audio: audioDescriptors,
     };
+    const signature = JSON.stringify(payload);
     const endpoint = `/api/ielts/${encodeURIComponent(mockId)}/submissions`;
 
     try {
-      setState('preparing');
-      const prepareResponse = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ action: 'prepare', payload }),
-      });
-      const prepared = await readResponse<IeltsPrepareResponse>(prepareResponse);
-      if (!prepareResponse.ok || !prepared.ok) throw new Error(prepared.error || 'No pudimos preparar la entrega. Inténtalo otra vez.');
+      let pending = pendingRef.current;
+      if (!pending || pending.signature !== signature) {
+        setState('preparing');
+        const prepareResponse = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ action: 'prepare', payload }),
+        });
+        const prepared = await readResponse<IeltsPrepareResponse>(prepareResponse);
+        if (!prepareResponse.ok || !prepared.ok) throw new Error(prepared.error || 'No pudimos preparar la entrega. Inténtalo otra vez.');
+        pending = { signature, prepared, uploadedQuestionIds: new Set() };
+        pendingRef.current = pending;
+        setCanRetry(true);
+      }
+      const prepared = pending.prepared;
 
       const supabase = createClient();
       if (!supabase) throw new Error('La conexión segura de archivos no está configurada.');
       setState('uploading');
-      setUploadProgress({ current: 0, total: prepared.uploads.length });
+      setUploadProgress({ current: pending.uploadedQuestionIds.size, total: prepared.uploads.length });
       for (let index = 0; index < prepared.uploads.length; index += 1) {
         const upload = prepared.uploads[index];
+        if (pending.uploadedQuestionIds.has(upload.questionId)) continue;
         const recording = recordings[upload.questionId];
         if (!recording) throw new Error(`Falta la grabación ${upload.questionId}. Vuelve al examen y grábala otra vez.`);
-        setUploadProgress({ current: index + 1, total: prepared.uploads.length });
         const { error: uploadError } = await supabase.storage
           .from(IELTS_SPEAKING_BUCKET)
           .uploadToSignedUrl(upload.path, upload.token, recording.blob, {
@@ -147,6 +162,8 @@ export function IELTSSubmission({
             upsert: false,
           });
         if (uploadError) throw new Error(`No pudimos subir el audio ${index + 1}. Revisa tu conexión e inténtalo otra vez.`);
+        pending.uploadedQuestionIds.add(upload.questionId);
+        setUploadProgress({ current: pending.uploadedQuestionIds.size, total: prepared.uploads.length });
       }
 
       setState('confirming');
@@ -161,6 +178,8 @@ export function IELTSSubmission({
       });
       const completed = await readResponse<IeltsCompleteResponse>(completeResponse);
       if (!completeResponse.ok || !completed.ok) throw new Error(completed.error || 'Los archivos subieron, pero no pudimos confirmar la entrega. Inténtalo otra vez.');
+      pendingRef.current = null;
+      setCanRetry(false);
 
       try {
         localStorage.setItem('wl_lead_captured', '1');
@@ -248,7 +267,7 @@ export function IELTSSubmission({
           <p className="ielts-submit__status" role="status" aria-live="polite">{statusText}</p>
           <div className="ielts-submit__actions">
             <button type="button" className="btn btn-ghost" onClick={onBack} disabled={isSubmitting}>Volver al examen</button>
-            <button type="submit" className="btn" disabled={isSubmitting}>{isSubmitting ? 'Enviando…' : 'Enviar a evaluación'}</button>
+            <button type="submit" className="btn" disabled={isSubmitting}>{isSubmitting ? 'Enviando…' : canRetry ? 'Reintentar entrega' : 'Enviar a evaluación'}</button>
           </div>
         </form>
       </section>

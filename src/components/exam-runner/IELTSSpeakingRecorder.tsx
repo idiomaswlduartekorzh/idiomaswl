@@ -186,6 +186,7 @@ export function IELTSSpeakingRecorder({
   }
 
   function removeRecording() {
+    if (!window.confirm('¿Eliminar esta grabación? Tendrás que grabarla de nuevo.')) return;
     onChange(undefined);
     setElapsed(0);
     elapsedRef.current = 0;

@@ -13,6 +13,32 @@ import {
   validateIeltsDelegatedReviewInput,
 } from '../src/lib/ielts/delegated-review.ts'
 import { ieltsSpeakingEvidenceIssues } from '../src/lib/ielts/submission.ts'
+import { scoreIeltsObjectiveAnswers } from '../src/lib/ielts/mock-scoring.ts'
+import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts'
+import ieltsSet4 from '../src/data/mocks/ielts-set-4.ts'
+import ieltsSet13 from '../src/data/mocks/ielts-set-13.ts'
+
+function correctObjectiveAnswers(mock) {
+  const answers = { fills: {}, mcq: {}, ms: {}, match: {} }
+  for (const section of mock.sections.filter(item => !item.comingSoon)) {
+    for (const question of section.questions) {
+      if (question.type === 'formgroup') {
+        for (const blank of question.blanks) answers.fills[`${question.id}__${blank.num}`] = blank.answers[0]
+      } else if (question.type === 'tablegroup') {
+        for (const row of question.rows) for (const cell of row) {
+          if (typeof cell !== 'string') answers.fills[`${question.id}__${cell.num}`] = cell.answers[0]
+        }
+      } else if (question.type === 'multiselect') {
+        answers.ms[question.id] = [...question.answers]
+      } else if (question.type === 'matching') {
+        for (const item of question.items) answers.match[`${question.id}__${item.num}`] = item.answer
+      } else if (question.type === 'mcq' || question.type === 'dialog') {
+        answers.mcq[question.id] = question.answer
+      }
+    }
+  }
+  return answers
+}
 
 test('Task 2 counts twice when calculating the IELTS Writing band', () => {
   assert.equal(calculateIeltsWritingBand(6, 7), 6.5)
@@ -37,6 +63,20 @@ test('score summary preserves Listening and Reading after human review', () => {
   assert.equal(summary.totalScore, 7)
   assert.equal(summary.totalLabel, 'Listening Band 7.5 · Reading Band 7 · Writing Band 6.5 · Speaking Band 7')
   assert.deepEqual(summary.skills.map(skill => skill.skill), ['Listening', 'Reading', 'Writing', 'Speaking'])
+})
+
+test('submission scoring uses the same audited option order and media release state as the browser', async () => {
+  const released = withIeltsAcademic2026Blueprint(ieltsSet4)
+  assert.equal(released.format, 'ielts-academic-2026')
+  assert.deepEqual(scoreIeltsObjectiveAnswers(released, correctObjectiveAnswers(released)), {
+    listening: { correct: 40, total: 40, band: 9 },
+    reading: { correct: 40, total: 40, band: 9 },
+  })
+
+  const audioBlocked = withIeltsAcademic2026Blueprint(ieltsSet13)
+  const blockedScore = scoreIeltsObjectiveAnswers(audioBlocked, correctObjectiveAnswers(audioBlocked))
+  assert.equal(blockedScore.listening, null)
+  assert.deepEqual(blockedScore.reading, { correct: 40, total: 40, band: 9 })
 })
 
 test('score summary does not invent Overall from a partial skill set', () => {

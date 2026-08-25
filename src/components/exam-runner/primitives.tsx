@@ -45,7 +45,7 @@ export function Timer({ totalSecs, onExpire }: { totalSecs: number; onExpire: ()
   }, []);
   const urgent = secs < 300;
   return (
-    <div className={`prac-timer${urgent ? ' prac-timer--urgent' : ''}`}>
+    <div className={`prac-timer${urgent ? ' prac-timer--urgent' : ''}`} role="timer" aria-label={`${formatTime(secs)} restantes`}>
       <span className="prac-timer__label">Tiempo</span>
       <span className="prac-timer__val">{formatTime(secs)}</span>
       <div className="prac-timer__bar">
@@ -122,7 +122,7 @@ export function AudioPlayer({
         <button
           className={`ielts-audio__btn${started ? ' ielts-audio__btn--done' : ''}`}
           onClick={play}
-          aria-label="Play"
+          aria-label={`Reproducir ${label} una sola vez`}
           disabled={started || alreadyPlayed}
         >
           {done ? '✓' : '▶'}
@@ -131,10 +131,17 @@ export function AudioPlayer({
           <span className="ielts-audio__label">
             {done ? `${label} — completed` : started ? `${label} — playing…` : `${label} — press play to begin`}
           </span>
-          <div className="ielts-audio__progress-wrap">
+          <div
+            className="ielts-audio__progress-wrap"
+            role="progressbar"
+            aria-label={`Progreso de ${label}`}
+            aria-valuemin={0}
+            aria-valuemax={Math.floor(duration)}
+            aria-valuenow={Math.floor(current)}
+          >
             <div
               className="ielts-audio__progress-bar"
-              style={{ '--pct': `${pct}%` } as React.CSSProperties}
+              style={{ '--progress': Math.min(1, Math.max(0, pct / 100)) } as React.CSSProperties}
             />
             <span className="ielts-audio__time">{formatTime(Math.floor(current))} / {formatTime(Math.floor(duration))}</span>
           </div>
@@ -158,15 +165,18 @@ export function SkillTabs({ skills, active, onSelect, progress, comingSoon, lock
   const cs = comingSoon ?? new Set<string>();
   const lockedSkills = locked ?? new Set<string>();
   return (
-    <div className="ielts-skill-tabs">
+    <nav className="ielts-skill-tabs" aria-label="Secciones del simulacro">
       {skills.map(skill => {
         const isCS = cs.has(skill);
         const isLocked = lockedSkills.has(skill);
         const p = progress[skill];
         return (
           <button key={skill}
+            type="button"
             onClick={() => { if (!isCS && !isLocked) onSelect(skill); }}
             disabled={isCS || isLocked}
+            aria-current={active === skill ? 'step' : undefined}
+            title={isCS ? `${labels[skill] ?? skill}: audio pendiente de QA` : isLocked ? `${labels[skill] ?? skill}: sección bloqueada` : undefined}
             className={`ielts-skill-tab${active === skill ? ' ielts-skill-tab--active' : ''}${isCS ? ' ielts-skill-tab--coming-soon' : ''}`}>
             <span>{labels[skill] ?? skill}</span>
             {isCS
@@ -175,6 +185,6 @@ export function SkillTabs({ skills, active, onSelect, progress, comingSoon, lock
           </button>
         );
       })}
-    </div>
+    </nav>
   );
 }

@@ -831,6 +831,11 @@ Ultimately, the success of the electric vehicle transition will depend not only 
           part: 9,
           partNumber: 1,
           text: 'Tell me about where you grew up. What was the area like?',
+          followUp: [
+            'What did you like most about living there?',
+            'Has that place changed much since you were a child?',
+            'Would you like to live there again in the future? Why or why not?',
+          ],
         },
         {
           type: 'speak',
