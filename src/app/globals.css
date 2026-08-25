@@ -4308,8 +4308,19 @@ button {
   font-size: 0.93rem;
   line-height: 2.1;
 }
+.ielts-format-disclosure {
+  max-width: 56rem;
+  margin: 1rem auto 0;
+  padding: .85rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--border));
+  border-radius: .75rem;
+  background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
 .ielts-form__bullet {
-  display: block;
+  display: inline;
   padding-left: 1rem;
 }
 .ielts-form__blank-wrap {
@@ -4795,6 +4806,15 @@ button {
   font-size: 0.9rem;
 }
 .ielts-speak__notes-label { font-size: 0.85rem; font-weight: 600; color: var(--muted); margin-bottom: 0.4rem; }
+.ielts-speak__prep {
+  max-width: 18rem;
+  margin: 1rem 0;
+  padding: .9rem;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  background: var(--surface);
+}
+.ielts-speak__prep > p { margin: 0 0 .6rem; font-weight: 700; }
 
 /* Record button */
 .ielts-speak__record-row {

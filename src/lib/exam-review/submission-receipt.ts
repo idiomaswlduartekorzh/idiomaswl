@@ -2,4 +2,8 @@
 export interface ExamSubmissionReceipt {
   submissionId: string;
   completionToken: string;
+  objectiveScores?: {
+    listening: { correct: number; total: number; band: number } | null;
+    reading: { correct: number; total: number; band: number };
+  };
 }

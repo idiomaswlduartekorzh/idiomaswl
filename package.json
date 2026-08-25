@@ -64,6 +64,8 @@
     "test:whatsapp": "node --experimental-strip-types --no-warnings --test tests/whatsapp-chatbot.test.mts",
     "test:ielts-review": "node --experimental-strip-types --no-warnings --test tests/ielts-review-scoring.test.mjs",
     "check:ielts-review-blueprint": "node --experimental-strip-types --no-warnings scripts/check-ielts-review-blueprint.mjs",
+    "audit:ielts-academic-2026": "node --experimental-strip-types --no-warnings scripts/audit-ielts-academic-2026.mjs",
+    "test:ielts-academic-2026": "node --experimental-strip-types --no-warnings --test tests/ielts-academic-2026-contract.test.mjs",
     "check:icfes-superhub": "node scripts/check-icfes-superhub.mjs && node --experimental-strip-types scripts/audit-icfes-guided-editorial.mjs --no-write && node --experimental-strip-types scripts/audit-icfes-guided-55.mjs --no-write && node --experimental-strip-types scripts/audit-icfes-official-guided.mjs --no-write && node --experimental-strip-types scripts/audit-icfes-seo-product.mjs --no-write && node --experimental-strip-types scripts/audit-icfes-100-users.mjs --no-write",
     "audit:icfes-guided": "node --experimental-strip-types scripts/audit-icfes-guided-editorial.mjs",
     "audit:icfes-guided-55": "node --experimental-strip-types scripts/audit-icfes-guided-55.mjs",

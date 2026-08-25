@@ -50,6 +50,24 @@ function getSkillSections(mock: MockExam, skill: string) {
   return mock.sections.filter(s => s.skill === skill);
 }
 
+function getMcqQuestionNumbers(sections: MockSection[]): Record<string, number> {
+  const numbers: Record<string, number> = {};
+  let nextNumber = 1;
+
+  for (const section of sections) {
+    for (const question of section.questions) {
+      if ('qRange' in question && question.qRange) {
+        nextNumber = question.qRange[1] + 1;
+      } else if (question.type === 'mcq' || question.type === 'dialog') {
+        numbers[question.id] = nextNumber;
+        nextNumber += 1;
+      }
+    }
+  }
+
+  return numbers;
+}
+
 // ── Answer state types ────────────────────────────────────────────────────────
 
 type FillMap   = Record<string, string>;    // blankKey -> value
@@ -381,6 +399,10 @@ function SpeakView({
   onAudio: (recording: IeltsSpeakingRecording | undefined) => void;
   onRecordingStateChange: (recording: boolean) => void;
 }) {
+  const [partTwoStage, setPartTwoStage] = useState<'idle'|'preparing'|'ready'>(
+    q.partNumber === 2 ? 'idle' : 'ready',
+  );
+  const maxSeconds = q.partNumber === 2 ? 120 : 300;
   return (
     <div className="ielts-speak">
       <div className="ielts-write__header">
@@ -400,15 +422,28 @@ function SpeakView({
         </div>
       )}
 
-      <IELTSSpeakingRecorder
-        questionId={q.id}
-        recording={audio}
-        maxSeconds={q.partNumber === 3 ? 180 : 150}
-        onChange={onAudio}
-        onRecordingStateChange={onRecordingStateChange}
-      />
+      {q.partNumber === 2 && partTwoStage === 'idle' && (
+        <button type="button" className="btn btn-sm" onClick={()=>setPartTwoStage('preparing')}>
+          Start 1-minute preparation
+        </button>
+      )}
+      {q.partNumber === 2 && partTwoStage === 'preparing' && (
+        <div className="ielts-speak__prep" role="status">
+          <p>Preparation time</p>
+          <Timer totalSecs={60} onExpire={()=>setPartTwoStage('ready')} />
+        </div>
+      )}
+      {partTwoStage === 'ready' && (
+        <IELTSSpeakingRecorder
+          questionId={q.id}
+          recording={audio}
+          maxSeconds={maxSeconds}
+          onChange={onAudio}
+          onRecordingStateChange={onRecordingStateChange}
+        />
+      )}
 
-      <div className="ielts-speak__notes">
+      {q.partNumber === 2 && <div className="ielts-speak__notes">
         <label className="ielts-speak__notes-label" htmlFor={`${q.id}-notes`}>Preparation notes (optional):</label>
         <textarea
           id={`${q.id}-notes`}
@@ -419,7 +454,7 @@ function SpeakView({
           onChange={e=>onNotes(e.target.value)}
           placeholder="Jot down key ideas…"
         />
-      </div>
+      </div>}
     </div>
   );
 }
@@ -479,24 +514,21 @@ function renderQuestion(
 }
 
 function SectionPanel({
-  section, ans, recordings, handlers,
+  section, ans, recordings, handlers, mcqQuestionNumbers,
 }: {
   section: MockSection;
   ans: AllAnswers;
   recordings: SpeakAudioMap;
   handlers: Parameters<typeof renderQuestion>[4];
+  mcqQuestionNumbers: Record<string, number>;
 }) {
   const hasPassage = !!section.passage;
-
-  // Simple numbered counter for MCQ-like questions in this section
-  let mcqCounter = 0;
 
   const questionsEl = (
     <div className="ielts-panel__questions">
       {section.questions.map(q => {
-        let idx = 0;
-        if (q.type === 'mcq' || q.type === 'dialog') { idx = mcqCounter; mcqCounter++; }
-        return renderQuestion(q, idx, ans, recordings, handlers);
+        const questionNumber = mcqQuestionNumbers[q.id] ?? 1;
+        return renderQuestion(q, questionNumber - 1, ans, recordings, handlers);
       })}
     </div>
   );
@@ -548,8 +580,9 @@ function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: numbe
       total += cells.length;
       done += cells.filter(c=>(ans.fills[blankKey(tg.id,c.num)]??'').trim()).length;
     } else if (q.type === 'multiselect') {
-      total += 1; // counts as one "question answered" when at least one selected
-      if ((ans.ms[q.id]??[]).length>0) done++;
+      const selected = ans.ms[q.id] ?? [];
+      total += q.selectCount;
+      done += Math.min(selected.length, q.selectCount);
     } else if (q.type === 'matching') {
       const mg = q as MatchingGroupQuestion;
       total += mg.items.length;
@@ -617,16 +650,22 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
 
   const lSections = getSkillSections(mock,'listening').filter(s=>!s.comingSoon);
   const rSections = getSkillSections(mock,'reading');
-  const lCorrect = lSections.reduce((a,s)=>a+scoreSection(s,ans),0);
-  const rCorrect = rSections.reduce((a,s)=>a+scoreSection(s,ans),0);
+  const hasObjectiveAnswerKeys = mock.format !== 'ielts-academic-2026';
+  const serverScores = receipt?.objectiveScores;
+  const lCorrect = serverScores?.listening?.correct
+    ?? (hasObjectiveAnswerKeys ? lSections.reduce((a,s)=>a+scoreSection(s,ans),0) : 0);
+  const rCorrect = serverScores?.reading.correct
+    ?? (hasObjectiveAnswerKeys ? rSections.reduce((a,s)=>a+scoreSection(s,ans),0) : 0);
 
   let lTotal=0, rTotal=0;
   for (const s of lSections) lTotal += countGroupAnswers(s,ans).total;
   for (const s of rSections) rTotal += countGroupAnswers(s,ans).total;
 
   const hasListening = lSections.length > 0;
-  const rBand = rawToBand(rCorrect, R_BAND);
-  const lBand = hasListening ? rawToBand(lCorrect, L_BAND) : null;
+  const rBand = serverScores?.reading.band ?? rawToBand(rCorrect, R_BAND);
+  const lBand = hasListening
+    ? (serverScores?.listening?.band ?? rawToBand(lCorrect, L_BAND))
+    : null;
 
   const writeQs = getSkillSections(mock,'writing').flatMap(s=>s.questions) as WriteQuestion[];
   const speakQs = getSkillSections(mock,'speaking').flatMap(s=>s.questions) as SpeakQuestion[];
@@ -688,7 +727,8 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
     skills: autoSkills,
   };
 
-  const hasDetailContent = writingEnabled || (mock.sections.some(s=>(s.skill==='listening'||s.skill==='reading')&&!s.comingSoon));
+  const hasDetailContent = writingEnabled || (hasObjectiveAnswerKeys
+    && mock.sections.some(s=>(s.skill==='listening'||s.skill==='reading')&&!s.comingSoon));
 
   return (
     <div className="prac-results">
@@ -742,6 +782,19 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
 
       {leadCaptured && (
       <>
+      {!hasObjectiveAnswerKeys && serverScores && (
+        <div className="ielts-pending-notice" role="status">
+          <div className="ielts-pending-notice__icon">✓</div>
+          <div>
+            <p className="ielts-pending-notice__title">Resultado objetivo verificado en el servidor</p>
+            <p className="ielts-pending-notice__sub">
+              Las claves de Listening y Reading no se descargan con el examen. El servidor
+              recalculó {serverScores.listening?.correct ?? 0}/{serverScores.listening?.total ?? 0}
+              {' '}en Listening y {serverScores.reading.correct}/{serverScores.reading.total} en Reading.
+            </p>
+          </div>
+        </div>
+      )}
       {writingEnabled && (
         <>
           {task1Essay && (
@@ -771,7 +824,7 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
         </>
       )}
 
-      <div className="prac-results__review">
+      {hasObjectiveAnswerKeys && <div className="prac-results__review">
         <h2 className="prac-results__review-title">Answer Review</h2>
         {mock.sections.filter(s=>(s.skill==='listening'||s.skill==='reading')&&!s.comingSoon).map(sec=>(
           <div key={sec.part} className="prac-results__section-block">
@@ -896,7 +949,7 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
             })}
           </div>
         ))}
-      </div>
+      </div>}
       </>
       )}
 
@@ -913,6 +966,7 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
 type Phase = 'intro'|'exam'|'submit'|'results';
 
 export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
+  const isAligned2026 = mock.format === 'ielts-academic-2026' && !!mock.ieltsAcademic2026Blueprint;
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
 
@@ -930,8 +984,10 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   const [recordings, setRecordings] = useState<SpeakAudioMap>({});
   const [recordingIds, setRecordingIds] = useState<Set<string>>(new Set());
   const [finishError, setFinishError] = useState('');
+  const [listeningConsumed, setListeningConsumed] = useState(false);
 
   const skills = SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
+  const runnableSkills = skills.filter(skill => !comingSoonSkills.has(skill));
 
   const handlers = {
     onFill: useCallback((k:string,v:string)=>setAns(p=>({...p,fills:{...p.fills,[k]:v}})),[]),
@@ -976,12 +1032,24 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     setPhase(isReviewableIeltsMock(mock.id)?'submit':'results');
   },[mock.id,recordingIds]);
 
+  function advanceAlignedSkill(expired = false) {
+    const currentIndex = runnableSkills.indexOf(activeSkill);
+    const nextSkill = runnableSkills[currentIndex + 1];
+    if (!expired && nextSkill && !confirm(`Al cerrar ${SKILL_LABEL[activeSkill]} no podrás regresar. ¿Continuar?`)) return;
+    if (nextSkill) {
+      setActiveSkill(nextSkill);
+      return;
+    }
+    handleSubmit();
+  }
+
   const handleRetry = useCallback(()=>{
     setAns({fills:{},mcq:{},ms:{},match:{},write:{},speak:{}});
     setRecordings({});
     setRecordingIds(new Set());
     setFinishError('');
     setSubmissionReceipt(null);
+    setListeningConsumed(false);
     setActiveSkill(firstActiveSkill); setPhase('intro');
   },[firstActiveSkill]);
 
@@ -1042,6 +1110,9 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           <p className="prac-intro__eyebrow">{exam.flag} {exam.name}</p>
           <h1 className="prac-intro__title">{mock.title}</h1>
           <p className="prac-intro__sub">{mock.subtitle}</p>
+          {isAligned2026 && (
+            <p className="ielts-format-disclosure">{mock.ieltsAcademic2026Blueprint!.disclosure}</p>
+          )}
           <div className="prac-intro__stats">
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{skills.filter(sk=>!comingSoonSkills.has(sk)).length}</span><span className="prac-intro__stat-lbl">Secciones activas</span></div>
             <div className="prac-intro__stat"><span className="prac-intro__stat-val">{totalQ}</span><span className="prac-intro__stat-lbl">Respuestas</span></div>
@@ -1059,10 +1130,11 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
           <div className="prac-intro__tips">
             <p className="prac-intro__tips-title">Antes de empezar</p>
             <ul>
-              <li>Navega entre las secciones usando las pestañas superiores.</li>
+              <li>{isAligned2026 ? 'Cada sección se cierra al avanzar; no podrás regresar a una sección anterior.' : 'Navega entre las secciones usando las pestañas superiores.'}</li>
               <li>Reading: los textos aparecen junto a las preguntas.</li>
               <li>Writing y Speaking: tus respuestas se envían al profesor para corrección.</li>
-              {comingSoonSkills.has('listening') && <li>Listening está en construcción — próximamente con audio real.</li>}
+              {isAligned2026 && <li>Listening se reproduce una sola vez. Speaking es una simulación grabada de WeLearn, no una entrevista oficial.</li>}
+              {comingSoonSkills.has('listening') && <li>Listening está temporalmente excluido: el guion existe, pero el MP3 aún no ha pasado release y QA.</li>}
             </ul>
           </div>
           <button onClick={()=>{ setActiveSkill(firstActiveSkill); setPhase('exam'); }} className="btn" style={{fontSize:'1.1rem',padding:'0.9rem 2.5rem'}}>Empezar examen</button>
@@ -1074,9 +1146,16 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
 
   // Exam
   const activeSections = getSkillSections(mock, activeSkill).filter(s=>!s.comingSoon);
+  const mcqQuestionNumbers = getMcqQuestionNumbers(activeSections);
   const totalAnswered = Object.values(progressMap).reduce((a,p)=>a+p.done,0);
   const totalQs = Object.values(progressMap).reduce((a,p)=>a+p.total,0);
   const unanswered = totalQs - totalAnswered;
+  const activeTimeSeconds = mock.ieltsAcademic2026Blueprint?.sections
+    .find(section=>section.skill===activeSkill)?.timeLimitSeconds
+    ?? mock.timeMinutes*60;
+  const lockedSkills = isAligned2026
+    ? new Set(skills.filter(skill=>skill!==activeSkill))
+    : undefined;
 
   return (
     <div className="prac-shell prac-shell--exam">
@@ -1087,20 +1166,44 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
         </div>
         <div className="prac-topbar__right">
           <span className="ielts-topbar__progress">{totalAnswered}/{totalQs} answered</span>
-          <Timer totalSecs={mock.timeMinutes*60} onExpire={handleSubmit} />
+          <Timer
+            key={isAligned2026 ? activeSkill : 'whole-exam'}
+            totalSecs={activeTimeSeconds}
+            onExpire={isAligned2026 ? ()=>advanceAlignedSkill(true) : handleSubmit}
+          />
         </div>
       </header>
 
-      <SkillTabs skills={skills} active={activeSkill} onSelect={setActiveSkill} progress={progressMap} comingSoon={comingSoonSkills} labels={SKILL_LABEL} />
+      <SkillTabs
+        skills={skills}
+        active={activeSkill}
+        onSelect={setActiveSkill}
+        progress={progressMap}
+        comingSoon={comingSoonSkills}
+        locked={lockedSkills}
+        labels={SKILL_LABEL}
+      />
 
       <div className="ielts-exam-body">
         {activeSkill === 'listening' && (
           <div className="ielts-audio-sticky">
-            <AudioPlayer src={mock.sections.find(s=>s.skill==='listening')?.audioUrl} label="IELTS Listening" />
+            <AudioPlayer
+              src={mock.sections.find(s=>s.skill==='listening')?.audioUrl}
+              label="IELTS Listening"
+              alreadyPlayed={isAligned2026 && listeningConsumed}
+              onPlaybackStart={()=>setListeningConsumed(true)}
+            />
           </div>
         )}
         {activeSections.map(sec=>(
-          <SectionPanel key={sec.part} section={sec} ans={ans} recordings={recordings} handlers={handlers} />
+          <SectionPanel
+            key={sec.part}
+            section={sec}
+            ans={ans}
+            recordings={recordings}
+            handlers={handlers}
+            mcqQuestionNumbers={mcqQuestionNumbers}
+          />
         ))}
 
         <div className="ielts-exam-footer">
@@ -1111,9 +1214,11 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
               const prev=arr[i-1], next=arr[i+1];
               return (
                 <span key={sk} style={{display:'flex',gap:'0.75rem'}}>
-                  {prev && <button onClick={()=>setActiveSkill(prev)} className="btn btn-ghost btn-sm">&larr; {SKILL_LABEL[prev]}</button>}
+                  {prev && !isAligned2026 && <button onClick={()=>setActiveSkill(prev)} className="btn btn-ghost btn-sm">&larr; {SKILL_LABEL[prev]}</button>}
                   {next
-                    ? <button onClick={()=>setActiveSkill(next)} className="btn btn-sm">{SKILL_LABEL[next]} &rarr;</button>
+                    ? <button onClick={()=>isAligned2026 ? advanceAlignedSkill() : setActiveSkill(next)} className="btn btn-sm">
+                        {isAligned2026 ? `Cerrar ${SKILL_LABEL[sk]} y continuar` : SKILL_LABEL[next]} &rarr;
+                      </button>
                     : <button onClick={()=>{
                         if (unanswered>0&&!confirm(`${unanswered} pregunta(s) sin responder. ¿Terminar de todas formas?`)) return;
                         handleSubmit();

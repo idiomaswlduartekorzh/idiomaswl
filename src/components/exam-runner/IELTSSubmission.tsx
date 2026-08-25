@@ -171,7 +171,11 @@ export function IELTSSubmission({
           audio_count: recordedEntries.length,
         });
       } catch {}
-      onSuccess({ submissionId: prepared.submissionId, completionToken: prepared.completionToken });
+      onSuccess({
+        submissionId: prepared.submissionId,
+        completionToken: prepared.completionToken,
+        objectiveScores: prepared.objectiveScores,
+      });
     } catch (caught) {
       setState('idle');
       showError(errorMessage(caught));

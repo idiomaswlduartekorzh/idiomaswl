@@ -374,7 +374,23 @@ export interface MockExam {
   adaptive?: AdaptiveRouting;
   // Marks a mock that follows a specific official blueprint. 'toefl-2026' selects
   // the 1–6 section scoring and the new-format task renderers; absent = legacy.
-  format?: 'toefl-2026';
+  format?: 'toefl-2026' | 'ielts-academic-2026';
+  ieltsAcademic2026Blueprint?: {
+    delivery: 'computer';
+    contentOrigin: 'original-welearn';
+    disclosure: string;
+    sourceAsOf: '2026-08-25';
+    sections: readonly {
+      skill: 'listening' | 'reading' | 'writing' | 'speaking';
+      timeLimitSeconds: number;
+      navigation: 'within-section' | 'forward-only';
+      targetResponses: number | 'human-assessed';
+    }[];
+    readingTargetWords: readonly [2150, 2750];
+    listeningPlayback: 'once';
+    listeningMediaStatus: 'ready-existing' | 'script-ready-audio-blocked';
+    speakingMode: 'recorded-welearn-simulation';
+  };
   toefl2026Blueprint?: {
     delivery: 'fixed-official-practice-shape';
     adaptive: false;

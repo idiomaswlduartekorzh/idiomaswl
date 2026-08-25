@@ -146,24 +146,27 @@ export function AudioPlayer({
 
 // ── Skill tabs ────────────────────────────────────────────────────────────────
 
-export function SkillTabs({ skills, active, onSelect, progress, comingSoon, labels }: {
+export function SkillTabs({ skills, active, onSelect, progress, comingSoon, locked, labels }: {
   skills: string[];
   active: string;
   onSelect: (s: string) => void;
   progress: Record<string, { done: number; total: number }>;
   comingSoon?: Set<string>;
+  locked?: Set<string>;
   labels: Record<string, string>;
 }) {
   const cs = comingSoon ?? new Set<string>();
+  const lockedSkills = locked ?? new Set<string>();
   return (
     <div className="ielts-skill-tabs">
       {skills.map(skill => {
         const isCS = cs.has(skill);
+        const isLocked = lockedSkills.has(skill);
         const p = progress[skill];
         return (
           <button key={skill}
-            onClick={() => { if (!isCS) onSelect(skill); }}
-            disabled={isCS}
+            onClick={() => { if (!isCS && !isLocked) onSelect(skill); }}
+            disabled={isCS || isLocked}
             className={`ielts-skill-tab${active === skill ? ' ielts-skill-tab--active' : ''}${isCS ? ' ielts-skill-tab--coming-soon' : ''}`}>
             <span>{labels[skill] ?? skill}</span>
             {isCS

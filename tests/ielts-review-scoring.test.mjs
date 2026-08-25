@@ -111,9 +111,9 @@ test('Speaking evidence gate requires every part and a meaningful aggregate samp
     { questionId: 'sp3', partNumber: 3 },
   ]
   const complete = [
-    { questionId: 'sp1', mimeType: 'audio/webm', size: 2000, durationSeconds: 40 },
-    { questionId: 'sp2', mimeType: 'audio/webm', size: 3000, durationSeconds: 65 },
-    { questionId: 'sp3', mimeType: 'audio/webm', size: 2500, durationSeconds: 50 },
+    { questionId: 'sp1', mimeType: 'audio/webm', size: 2000, durationSeconds: 100 },
+    { questionId: 'sp2', mimeType: 'audio/webm', size: 3000, durationSeconds: 70 },
+    { questionId: 'sp3', mimeType: 'audio/webm', size: 2500, durationSeconds: 100 },
   ]
   assert.deepEqual(ieltsSpeakingEvidenceIssues(prompts, complete), [])
   assert.equal(ieltsSpeakingEvidenceIssues(prompts, complete.slice(0, 2)).some(issue => issue.includes('SP3')), true)

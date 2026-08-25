@@ -282,6 +282,7 @@ async function prepareSubmission(request: Request, mockId: string, rawPayload: u
     ok: true,
     submissionId,
     completionToken: createIeltsSubmissionToken(submissionId),
+    objectiveScores: objectiveScore,
     uploads: uploadResults.map(result => ({
       questionId: result.questionId,
       path: result.path,

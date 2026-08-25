@@ -2,6 +2,7 @@ import type { MockExam } from './types';
 import { SAT_MOCK_REGISTRY } from './sat/registry.generated';
 import { normalizeIcfesMock } from './normalize-icfes-mock';
 import { withToefl2026FixedForm } from './toefl-fixed-form';
+import { withIeltsAcademic2026Blueprint } from './ielts-academic-2026';
 import icfesMock01 from './icfes-mock-01';
 import icfesMock02 from './icfes-mock-02';
 import icfesMock03 from './icfes-mock-03';
@@ -203,23 +204,23 @@ const MOCK_REGISTRY: Record<string, MockExam> = {
   'ielts:set-1':  ieltsSet1,
   'ielts:set-2':  ieltsSet2,
   'ielts:set-3':  ieltsSet3,
-  'ielts:set-4':  ieltsSet4,
-  'ielts:set-5':  ieltsSet5,
-  'ielts:set-6':  ieltsSet6,
-  'ielts:set-7':  ieltsSet7,
-  'ielts:set-8':  ieltsSet8,
-  'ielts:set-9':  ieltsSet9,
-  'ielts:set-10': ieltsSet10,
-  'ielts:set-11': ieltsSet11,
-  'ielts:set-12': ieltsSet12,
-  'ielts:set-13': ieltsSet13,
-  'ielts:set-14': ieltsSet14,
-  'ielts:set-15': ieltsSet15,
-  'ielts:set-16': ieltsSet16,
-  'ielts:set-17': ieltsSet17,
-  'ielts:set-18': ieltsSet18,
-  'ielts:set-19': ieltsSet19,
-  'ielts:set-20': ieltsSet20,
+  'ielts:set-4':  withIeltsAcademic2026Blueprint(ieltsSet4),
+  'ielts:set-5':  withIeltsAcademic2026Blueprint(ieltsSet5),
+  'ielts:set-6':  withIeltsAcademic2026Blueprint(ieltsSet6),
+  'ielts:set-7':  withIeltsAcademic2026Blueprint(ieltsSet7),
+  'ielts:set-8':  withIeltsAcademic2026Blueprint(ieltsSet8),
+  'ielts:set-9':  withIeltsAcademic2026Blueprint(ieltsSet9),
+  'ielts:set-10': withIeltsAcademic2026Blueprint(ieltsSet10),
+  'ielts:set-11': withIeltsAcademic2026Blueprint(ieltsSet11),
+  'ielts:set-12': withIeltsAcademic2026Blueprint(ieltsSet12),
+  'ielts:set-13': withIeltsAcademic2026Blueprint(ieltsSet13),
+  'ielts:set-14': withIeltsAcademic2026Blueprint(ieltsSet14),
+  'ielts:set-15': withIeltsAcademic2026Blueprint(ieltsSet15),
+  'ielts:set-16': withIeltsAcademic2026Blueprint(ieltsSet16),
+  'ielts:set-17': withIeltsAcademic2026Blueprint(ieltsSet17),
+  'ielts:set-18': withIeltsAcademic2026Blueprint(ieltsSet18),
+  'ielts:set-19': withIeltsAcademic2026Blueprint(ieltsSet19),
+  'ielts:set-20': withIeltsAcademic2026Blueprint(ieltsSet20),
   // ── Other exams ───────────────────────────────────────────────────────────
   'toefl:set-1': withToefl2026FixedForm(toeflSet1),
   'toefl:set-2': withToefl2026FixedForm(toeflSet2),

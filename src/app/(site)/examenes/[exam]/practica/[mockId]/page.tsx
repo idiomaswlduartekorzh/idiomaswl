@@ -7,6 +7,7 @@ import TOEFLPracticeClient from './TOEFLPracticeClient';
 import Toefl2026PracticeClient from './Toefl2026PracticeClient';
 import LanguagePracticeClient from './LanguagePracticeClient';
 import TOPIKPracticeClient from './TOPIKPracticeClient';
+import { toPublicIeltsMock } from '@/data/mocks/ielts-public-payload';
 
 const LANGUAGE_EXAMS = new Set(['goethe', 'cils-celi', 'delf-dalf', 'celpe-bras', 'cambridge-b2']);
 
@@ -29,7 +30,7 @@ export default async function PracticePage({ params }: { params: Promise<{ exam:
 
   if (!exam || !mock) notFound();
 
-  if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={mock} />;
+  if (slug === 'ielts') return <IELTSPracticeClient exam={exam} mock={toPublicIeltsMock(mock)} />;
   if (slug === 'toefl') {
     // All twenty public TOEFL sets use the audited fixed-form 2026 runner.
     return mock.format === 'toefl-2026'

@@ -42,6 +42,7 @@ export interface IeltsPreparedUpload {
 export interface IeltsPrepareResponse extends IeltsSubmissionReceipt {
   ok: true;
   uploads: IeltsPreparedUpload[];
+  objectiveScores: NonNullable<IeltsSubmissionReceipt['objectiveScores']>;
 }
 
 export interface IeltsCompleteResponse {
@@ -50,11 +51,11 @@ export interface IeltsCompleteResponse {
 }
 
 export const IELTS_SPEAKING_MIN_PART_SECONDS: Readonly<Record<number, number>> = {
-  1: 30,
+  1: 90,
   2: 60,
-  3: 45,
+  3: 90,
 };
-export const IELTS_SPEAKING_MIN_TOTAL_SECONDS = 150;
+export const IELTS_SPEAKING_MIN_TOTAL_SECONDS = 240;
 
 export function countEssayWords(value: string): number {
   return value.trim() ? value.trim().split(/\s+/).length : 0;
