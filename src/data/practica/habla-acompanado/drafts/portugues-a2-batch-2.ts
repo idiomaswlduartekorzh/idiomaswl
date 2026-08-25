@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · trabalho/estudo 6. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_2: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-name-is-wrong-on-certificate', slug: 'name-is-wrong-on-certificate', sequence: 6,
+    language: 'portugues', level: 'a2', title: 'Mi nombre salió mal en el certificado', titleTarget: 'Meu nome saiu errado no certificado',
+    setting: 'Quarta-feira, às 14h10, na secretaria de um curso de extensão em Salvador', settingEs: 'La secretaría de un curso de extensión en Salvador, el miércoles a las 2:10 p. m.',
+    speechActs: ['quejarse', 'pedir-aclaracion', 'negociar'], power: 'b>a', initiator: 'a', outcome: 'acuerdo-parcial', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#6',
+    roles: [
+      {
+        id: 'a', name: 'estudante do curso', nameEs: 'quien hizo el curso', headline: 'O sobrenome “dos Santos” perdeu uma parte, e a candidatura fecha hoje às 18h',
+        briefing: ['**Mostre a diferença e explique o prazo.** Use **o senhor/a senhora** com a secretária. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre à secretária. Não altere o PDF por conta própria: o documento precisa sair do sistema da instituição.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você concluiu um curso de 40 horas. O certificado digital chegou como “Marina Santos”, mas seus documentos e a inscrição dizem “Marina dos Santos”.' },
+          { label: 'Objetivo', text: 'Entregar hoje uma prova oficial com nome, curso e carga horária corretos e receber protocolo e prazo para o certificado definitivo.' },
+          { label: 'O que não é possível', items: ['Enviar o certificado errado: o portal compara o nome com o CPF.', 'Editar o arquivo em casa: a assinatura digital deixaria de ser válida.', 'Esperar até a próxima semana: a candidatura fecha hoje às 18h.'] },
+          { label: 'Só você sabe', items: ['A inscrição EX-447 e o CPF mostram “Marina dos Santos”.', 'O portal da vaga aceita uma declaração provisória emitida pela instituição se trouxer protocolo e carga horária.', 'Você pode anexar um novo arquivo até 17h45, mas depois disso o sistema bloqueia alterações.'] },
+          { label: 'Se vocês não resolverem', text: 'Sua candidatura fica sem prova das 40 horas ou usa um documento cujo nome não corresponde ao CPF.' },
+        ],
+        facts: [
+          { label: 'Inscrição', value: 'EX-447 · Marina dos Santos' }, { label: 'Certificado', value: 'Marina Santos · emitido hoje 9h12' },
+          { label: 'CPF', value: 'final 083-20' }, { label: 'Curso', value: 'Gestão de Projetos Comunitários' },
+          { label: 'Carga horária', value: '40 horas' }, { label: 'Candidatura', value: 'fecha hoje · 18h00' },
+          { label: 'Último anexo', value: '17h45' }, { label: 'Formato aceito', value: 'certificado ou declaração oficial' },
+        ],
+        vocab: [
+          { word: 'assinatura digital', whatItIs: 'marca eletrônica que prova a origem de um arquivo', here: 'parte que impede editar o PDF' },
+          { word: 'candidatura', whatItIs: 'pedido para participar de vaga ou seleção', here: 'processo que fecha às 18h' },
+          { word: 'carga horária', whatItIs: 'total de horas de um curso', here: '40 horas que precisam aparecer' },
+          { word: 'certificado', whatItIs: 'documento que confirma conclusão de um curso', here: 'arquivo com sobrenome incompleto' },
+          { word: 'declaração provisória', whatItIs: 'documento temporário emitido antes do definitivo', here: 'prova aceita hoje pelo portal' },
+          { word: 'emitir', whatItIs: 'criar e entregar oficialmente um documento', here: 'ação que só a instituição pode fazer' },
+          { word: 'protocolo', whatItIs: 'número que identifica um pedido registrado', here: 'prova da correção solicitada' },
+          { word: 'sobrenome', whatItIs: 'parte do nome que indica a família', here: '“dos Santos”, não apenas “Santos”' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Compare os dois nomes e separe a necessidade de hoje do certificado definitivo.',
+        exponents: [
+          { purpose: 'Aceitar a solução parcial', form: '`Aceito a declaração hoje se ela trouxer nome, curso, horas e protocolo.`', effect: 'define condições para o documento provisório' },
+          { purpose: 'Comparar os nomes', form: '`Na inscrição está “Marina dos Santos”, mas no certificado saiu “Marina Santos”.`', effect: 'torna o erro verificável' },
+          { purpose: 'Dar o prazo', form: '`Só consigo anexar um novo documento até …`', effect: 'mostra a urgência real' },
+          { purpose: 'Pedir a correção', form: '`Como podemos corrigir o nome sem alterar a assinatura digital?`', effect: 'mantém aberta uma solução oficial' },
+          { purpose: 'Pedir uma prova hoje', form: '`Seria possível emitir uma declaração provisória agora?`', effect: 'distingue necessidade imediata e arquivo final' },
+          { purpose: 'Recusar o arquivo errado', form: '`Não posso enviar este PDF porque o nome não confere com o CPF.`', effect: 'recusa o documento com um motivo objetivo' },
+          { purpose: 'Verificar o próximo passo', form: '`Qual é o protocolo e quando receberei o certificado corrigido?`', effect: 'confirma registro e prazo' },
+        ],
+        success: 'Você comparou os nomes e explicou o prazo sem editar o PDF. Recebeu uma declaração com nome completo, curso, 40 horas e protocolo, mais a previsão do certificado para amanhã às 10h.',
+      },
+      {
+        id: 'b', name: 'secretária do curso', nameEs: 'quien atiende en la secretaría', headline: 'O certificado assinado não pode ser editado, mas uma declaração correta pode sair hoje',
+        briefing: ['**Confira cadastro e arquivo antes de prometer.** Use **o senhor/a senhora** com a estudante. **A estudante começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre à estudante. Não prometa o certificado hoje: a nova assinatura depende da coordenação.'],
+        prose: [
+          { label: 'Situação atual', text: 'A estudante mostra um certificado com o nome “Marina Santos”. No cadastro da matrícula aparece “Marina dos Santos”, igual ao CPF apresentado.' },
+          { label: 'Objetivo', text: 'Registrar a divergência, emitir uma prova temporária válida e encaminhar o certificado para nova assinatura com prazo real.' },
+          { label: 'O que não é possível', items: ['Editar o PDF já assinado.', 'Emitir outro certificado sem a assinatura digital da coordenação.', 'Apagar o arquivo errado do histórico antes de concluir a correção.'] },
+          { label: 'Só você sabe', items: ['Pode emitir em dez minutos uma declaração com nome, CPF parcial, curso, 40 horas e protocolo.', 'A coordenadora assina novos certificados amanhã entre 9h e 10h.', 'O protocolo CR-118 permitirá baixar o novo certificado e marcará o anterior como substituído.'] },
+          { label: 'Se vocês não resolverem', text: 'A estudante perde o prazo da candidatura e a secretaria conserva dois nomes diferentes sem registrar a correção.' },
+        ],
+        facts: [
+          { label: 'Cadastro', value: 'Marina dos Santos · CPF final 083-20' }, { label: 'Arquivo emitido', value: 'Marina Santos · assinatura válida' },
+          { label: 'Declaração', value: 'emissão em 10 minutos' }, { label: 'Conteúdo', value: 'nome + CPF parcial + curso + 40 h' },
+          { label: 'Protocolo', value: 'CR-118' }, { label: 'Nova assinatura', value: 'amanhã · 9h–10h' },
+          { label: 'Novo download', value: 'portal do estudante' }, { label: 'Arquivo anterior', value: 'marcado como substituído' },
+        ],
+        vocab: [
+          { word: 'arquivo substituído', whatItIs: 'documento antigo que não deve mais ser usado', here: 'estado futuro do certificado errado' },
+          { word: 'cadastro acadêmico', whatItIs: 'dados oficiais do estudante na instituição', here: 'fonte com o nome correto' },
+          { word: 'coordenação', whatItIs: 'equipe responsável por decisões do curso', here: 'setor que assina o novo certificado' },
+          { word: 'divergência', whatItIs: 'diferença entre duas informações que deveriam ser iguais', here: 'nomes do cadastro e do PDF' },
+          { word: 'encaminhar', whatItIs: 'enviar um pedido ao setor responsável', here: 'ação feita para obter nova assinatura' },
+          { word: 'histórico', whatItIs: 'registro dos documentos e mudanças anteriores', here: 'lugar onde o arquivo antigo permanece' },
+          { word: 'validade', whatItIs: 'condição de um documento aceito oficialmente', here: 'propriedade mantida pela assinatura digital' },
+          { word: 'versão corrigida', whatItIs: 'novo arquivo que resolve um erro anterior', here: 'certificado disponível amanhã' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Explique “substituído” e não apresente a declaração como certificado definitivo.',
+        exponents: [
+          { purpose: 'Confirmar a divergência', form: '`O cadastro tem “dos Santos”, mas o arquivo foi emitido sem “dos”.`', effect: 'reconhece o erro com as duas fontes' },
+          { purpose: 'Dar o limite', form: '`Não posso editar um PDF que já foi assinado digitalmente.`', effect: 'recusa a ação, não a correção' },
+          { purpose: 'Emitir a prova temporária', form: '`Posso emitir uma declaração correta em … minutos.`', effect: 'oferece uma resposta útil hoje' },
+          { purpose: 'Explicar o processo', form: '`Vou registrar o protocolo e encaminhar o certificado para nova assinatura.`', effect: 'nomeia as duas ações oficiais' },
+          { purpose: 'Pedir confirmação', form: '`Pode confirmar seu CPF final e a carga horária?`', effect: 'confere os dados antes de emitir' },
+          { purpose: 'Prometer o prazo', form: '`A versão corrigida estará disponível amanhã até …`', effect: 'dá uma previsão verificável' },
+          { purpose: 'Resumir os documentos', form: '`Hoje entrego a declaração; amanhã o novo certificado substituirá este.`', effect: 'separa provisório e definitivo' },
+        ],
+        success: 'Você confirmou a divergência, emitiu a declaração correta e registrou CR-118. Explicou que o PDF atual continua no histórico e que a versão assinada ficará disponível amanhã às 10h.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, compare os nomes, explique o prazo e pergunte o que a secretaria pode emitir hoje. Não mostre a tela à secretária.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Mensagem do portal da vaga · 14h16**' },
+        { kind: 'table', head: ['Documento', 'Condição'], rows: [['Declaração provisória', 'aceita'], ['Nome', 'igual ao CPF'], ['Dados obrigatórios', 'curso + 40 horas + protocolo'], ['Último envio', '17h45']] },
+        { kind: 'p', text: 'Você pode usar uma declaração hoje, mas ela precisa vir da instituição e trazer os quatro dados. O certificado corrigido poderá ser enviado depois da candidatura.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem com um acordo parcial quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['O nome correto “Marina dos Santos” e o erro no arquivo atual.', 'A declaração emitida hoje com CPF parcial, curso e 40 horas.', 'O protocolo CR-118.', 'O envio da declaração antes das 17h45.', 'O certificado definitivo disponível amanhã às 10h e o anterior marcado como substituído.'] },
+    ],
+    debrief: ['¿Qué documento resolvió la urgencia sin fingir que era definitivo?', '¿Por qué no era válido editar el PDF en casa?', 'Repitan en portugués nombre, carga horaria, protocolo y plazos sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'o nome saiu errado y o sistema fez o arquivo reconstruyen la emisión.' },
+      { slug: 'voz-passiva-a2', level: 'a2', title: 'Voz pasiva en portugués A2', rationale: 'foi emitido y será substituído describen el estado documental.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vou encaminhá-lo y posso emiti-la retoman certificado y declaración.' },
+      { slug: 'pronomes-relativos-a2', level: 'a2', title: 'Pronombres relativos en portugués A2', rationale: 'o documento que recebi identifica el archivo problemático.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'estará disponível y substituirá fijan el resultado posterior.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'seria possível y poderia aceitar formulan la alternativa con cortesía.' },
+    ],
+  },
+]
