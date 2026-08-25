@@ -13,8 +13,9 @@ recibe M1 y una sola rama de M2, por lo que responde 54 preguntas en 64 minutos.
 | Estado | Sets | Módulos | Preguntas autoradas | Preguntas servidas por intento |
 | --- | ---: | ---: | ---: | ---: |
 | Publicado al abrir este loop | 2 | 6 | 162 | 54 por set |
-| Publicado actual | 3 | 9 | 243 | 54 por set |
-| Trabajo restante | 17 | 51 | 1.377 | 54 por set |
+| Producción verificada | 3 | 9 | 243 | 54 por set |
+| Integrado en `main`, pendiente de deployment | 1 | 3 | 81 | 54 |
+| Trabajo restante por autorar | 16 | 48 | 1.296 | 54 por set |
 | Meta | 20 | 60 | 1.620 | 54 por set |
 
 La primera producción midió aproximadamente **25 minutos por bloque de ocho ítems** para
@@ -137,6 +138,17 @@ Solo después de cerrar contenido y producto:
 - la rama se actualiza otra vez con `origin/main` antes de integrar;
 - producción sale exclusivamente del commit de `main` y se verifica por URL.
 
+### 7. Disciplina de despliegues
+
+Los checkpoints editoriales se respaldan en GitHub, pero no necesitan un preview de
+Vercel por cada bloque. `vercel.json` desactiva únicamente los despliegues Git automáticos
+de ramas `codex/sat-scale-*`; `main` y las ramas de otras sesiones conservan su conducta.
+
+Se crea un solo preview manual cuando el set completo ya superó contenido, actas, QA local
+y build. Ese artefacto se inspecciona y, si queda READY, se verifica antes de integrar. El
+push final a `main` sigue creando el deployment de producción. No se reintenta una subida
+si Vercel reporta cuota agotada: se calcula la siguiente ventana y se preserva el commit.
+
 ## Comandos de cierre
 
 ```bash
@@ -170,6 +182,7 @@ las páginas se cambia a carga por set; no se espera a que el Set 20 haga visibl
 
 ## Siguiente unidad de trabajo
 
-`set-4` está reservado como borrador. Su próxima tarea es cerrar la matriz editorial de M1
-—dificultad, materia, tema y letras previstas— y después Craft and Structure q01–q08.
-Hasta entonces no tiene contenido publicable y no debe aparecer en el hub.
+`set-4` completó 81 preguntas, tres actas, ambas rutas adaptativas, QA móvil y build; está
+integrado en `main`. La cuota de Vercel impidió crear su deployment y producción conserva
+tres sets verificables. La próxima unidad es cerrar esa publicación y comprobar Set 4 por
+URL. Solo después se reserva `set-5` y se abre su matriz editorial de M1.
