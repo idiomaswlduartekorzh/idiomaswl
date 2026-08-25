@@ -58,6 +58,7 @@ import { ROLEPLAY_PORTUGUES_A2_BATCH_1D } from './portugues-a2-batch-1d.ts'
 import { ROLEPLAY_PORTUGUES_A2_BATCH_1E } from './portugues-a2-batch-1e.ts'
 import { ROLEPLAY_PORTUGUES_A2_BATCH_2 } from './portugues-a2-batch-2.ts'
 import { ROLEPLAY_PORTUGUES_A2_BATCH_2B } from './portugues-a2-batch-2b.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_2C } from './portugues-a2-batch-2c.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -153,6 +154,7 @@ export const ROLEPLAY_PORTUGUES_A2_CANDIDATE = [
   ...ROLEPLAY_PORTUGUES_A2_BATCH_1E,
   ...ROLEPLAY_PORTUGUES_A2_BATCH_2,
   ...ROLEPLAY_PORTUGUES_A2_BATCH_2B,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_2C,
 ].sort((a, b) => a.sequence - b.sequence)
 
 /**
