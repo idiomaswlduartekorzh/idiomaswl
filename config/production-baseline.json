@@ -23,7 +23,7 @@
     "habla"
   ],
   "minimumFileCounts": {
-    "src/app/(site)/practica:**/page.tsx": 412,
+    "src/app/(site)/practica:**/page.tsx": 417,
     "src/data/grammar:**/*.ts": 492,
     "src/data/reading:**/*": 264,
     "src/data/mocks:**/*": 277
@@ -147,6 +147,7 @@
     { "path": "/practica/ingles/a2/escucha", "marker": "Escucha" },
     { "path": "/practica/japones/b1/lectura", "marker": "Lectura" },
     { "path": "/practica/coreano/a2/habla/acompanada", "marker": "acompañada" },
+    { "path": "/practica/aleman/a2/habla/acompanada", "marker": "Alemán A2" },
     { "path": "/practica/ielts", "marker": "IELTS" },
     { "path": "/practica/icfes-saber-11", "marker": "ICFES" },
     { "path": "/nivel-radar", "marker": "nivel" },

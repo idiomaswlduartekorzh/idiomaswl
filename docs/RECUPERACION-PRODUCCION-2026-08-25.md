@@ -36,6 +36,7 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 | Habla acompañada Francés A2 | Ruta de producción `200`. | `DESPLEGADO` |
 | Habla acompañada Italiano A2 | Ruta de producción `200`. | `DESPLEGADO` |
 | Habla acompañada Portugués A2 | Ruta de producción `200`; incluido antes de `a036f93c`. | `DESPLEGADO` |
+| Habla acompañada Alemán A2 | Integrada en `origin/main` como `e41f1022`; el despliegue de producción está construyéndose. | `INTEGRADO`; falta smoke para pasar a `DESPLEGADO`. |
 | Archivo de resultados del Home | Los commits `17dd9ebc`, `fbb9af2d`, `5976dc4e`, `58a2c7e1`, `60ead605`, `87db200b`, `9202c030`, `e225559f` y `1cea3ab2` son ancestros de `origin/main`. | `CONFIRMAR_PRODUCCION`: corregir documento obsoleto |
 | Clase Claude independiente | `src/app/clase-claude/route.ts` y sus contenidos existen en `origin/main`. | `DESPLEGADO`; no restaurar la rama antigua completa |
 | Sistema PDF actual | Componentes y `src/lib/pdf/` existen en `origin/main`. | `DESPLEGADO`; no sustituir con copias antiguas del árbol sucio |
@@ -59,7 +60,6 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 | Trabajo | Rama/SHA de corte | Estado observado | Condición para publicar |
 |---|---|---|---|
-| Habla Alemán A2 | `codex/habla-aleman-a2` · `4ee7413a` | 17 commits únicos; 3 detrás; 16 escenarios redactados; ruta de producción `404`. | Completar la colección, auditoría de release, rebase, build y smoke. |
 | SAT Set 5 | `codex/sat-scale-to-20-20260824` · `674d2490` | 8 commits únicos; 0 detrás; módulo 1 y plan de rama estándar en borrador. | Completar módulos/rutas, auditorías SAT y certificación de producto. |
 | Piloto registro/pagos TOEFL | `codex/toefl-pilot-registration` · `5def8b7b` | 1 parche único; 206 detrás; incluye migración y comercio. | Decisión de producto, revisión de seguridad/RLS, migración, pruebas de pago y reimplementación actualizada. |
 | Parche SAT adaptativo | `feat/sat-modulo-2`; parche `afd24f7d` | Rama 220 detrás; solo un parche no equivalente. | Comprobar si el motor actual ya resuelve la intención y reimplementar si hace falta. |
@@ -155,3 +155,6 @@ Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview
 - El `prebuild` completo pasó. El build Webpack de Next 16.2.6 terminó con 2.306 páginas
   estáticas usando `NODE_OPTIONS=--max-old-space-size=4096`; CI conserva ese límite.
 - El smoke público pasó en 10/10 rutas críticas con HTTP 200.
+- Mientras se validaba la protección, Alemán A2 avanzó de 16 a 20 escenarios y se integró
+  concurrentemente en `origin/main` (`e41f1022`). La rama de protección se rebasó sobre ese
+  commit antes de continuar; ahora exige 417 páginas de Práctica y añade su ruta al smoke.
