@@ -1,7 +1,7 @@
 # SAT Set 5 · Módulo 1 — matriz editorial
 
 Fecha: 25 de agosto de 2026. Estado: **CONTENIDO 27/27 · OCHO PUERTAS MECÁNICAS
-PASS · AUDITORÍAS EDITORIALES PENDIENTES**.
+PASS · EDITORIAL APTO CON LÍMITES · SET NO PUBLICABLE**.
 
 Esta matriz reserva tema, dificultad y clave antes de redactar. Cada hecho se verificará
 en una fuente primaria al abrir su bloque. Los pasajes y opciones serán originales: una
@@ -83,5 +83,7 @@ pasa de `empty` a `written` antes de existir en código y superar su revisión d
 - Prueba ciega: 18 heurísticas, media 25,3 % con techo 35 %; ningún ítem alcanzó 75 %.
 - Originalidad local: cero secuencias compartidas de ocho palabras entre 13 módulos y
   351 ítems, incluidos este candidato y los 12 módulos publicados.
-- El módulo permanece en `draft`; estos resultados no sustituyen clave única, equidad,
-  lengua ni revisión editorial de originalidad.
+- Clave única, equidad, lengua y originalidad tienen revisión editorial no independiente
+  en `docs/sat-auditorias/informes/sat-set-5-m1-editorial.md`.
+- El módulo permanece en `draft`: faltan dos módulos, composición adaptativa y QA de
+  producto antes de que el Set 5 pueda considerarse publicable.

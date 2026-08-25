@@ -1,0 +1,88 @@
+{
+  "modulo": "sat-set-5-m1",
+  "fecha": "2026-08-25",
+  "auditorias": {
+    "clave": {
+      "agente": "Codex — revisión editorial no independiente",
+      "veredicto": "APTO",
+      "itemsConDosClaves": 0,
+      "notas": "Resolución de 27 ítems y revisión de distractores; evidencia en informes/sat-set-5-m1-editorial.md."
+    },
+    "sesgo": {
+      "agente": "panel heurístico reproducible",
+      "veredicto": "APTO",
+      "pruebaACiegasPct": 25.3,
+      "notas": "Ningún ítem alcanzó 75 % de acierto sin pasaje; no sustituye un panel humano."
+    },
+    "equidad": {
+      "agente": "Codex — revisión editorial no independiente",
+      "veredicto": "APTO",
+      "banderas": 0,
+      "notas": "La evidencia necesaria está en cada estímulo; no se exige conocimiento cultural, regional o económico externo."
+    },
+    "lengua": {
+      "agente": "Codex + controles mecánicos",
+      "veredicto": "APTO",
+      "bloqueantes": 0,
+      "notas": "Inglés estadounidense, enunciados canónicos, razones A–D completas y huecos sin duplicación."
+    },
+    "dificultad": {
+      "agente": "matriz editorial + guardián de curva",
+      "veredicto": "APTO",
+      "notas": "Dificultad prevista: 7 fáciles, 11 medios y 9 difíciles; media 2,07. No es calibración psicométrica."
+    },
+    "originalidad": {
+      "agente": "redacción original + búsquedas locales y web representativas",
+      "veredicto": "APTO",
+      "banderasRojas": 0,
+      "notas": "Cero secuencias internas comunes de ocho palabras entre 351 ítems. La búsqueda web representativa no equivale a rastreo exhaustivo."
+    },
+    "simulacion": {
+      "agente": "panel heurístico reproducible",
+      "veredicto": "APTO",
+      "tramposoPct": 25.3,
+      "notas": "Prueba automática reproducible, no humana ni multi-modelo."
+    }
+  },
+  "veredicto": "APTO_EDITORIAL_NO_PUBLICABLE",
+  "quedaAbierto": [
+    "Panel humano o multi-modelo independiente recomendado como evidencia adicional.",
+    "Calibración psicométrica cuando existan datos de uso real."
+  ],
+  "publicable": false,
+  "bloqueantesDeProducto": [
+    "M2-facil del Set 5 no existe.",
+    "M2-dificil del Set 5 no existe.",
+    "Composición adaptativa y QA de producto del Set 5 están pendientes."
+  ],
+  "notaSobreElActa": "Certifica la revisión editorial del contenido vigente de M1; no autoriza catálogo, ruta ni publicación del Set 5.",
+  "huellas": {
+    "q01": "ae24ed83a751",
+    "q02": "9a60ad502d59",
+    "q03": "ba1515d1bbd3",
+    "q04": "9374df6466a9",
+    "q05": "212c2913727b",
+    "q06": "5995bf6100e8",
+    "q07": "0b5dbf3e1b79",
+    "q08": "5d6b414d843f",
+    "q09": "090cc4350392",
+    "q10": "501c621e9891",
+    "q11": "da09a4cd4a20",
+    "q12": "651ca1ebe274",
+    "q13": "960e8dc1c536",
+    "q14": "6641c9abb506",
+    "q15": "49ab3d168763",
+    "q16": "7e5526a35623",
+    "q17": "245acc460446",
+    "q18": "76219c14bae3",
+    "q19": "8523b6943ce9",
+    "q20": "2d43c4f31a53",
+    "q21": "6725de729f9e",
+    "q22": "0dfef5adc9d4",
+    "q23": "97b8b3869194",
+    "q24": "ff54d2fb6558",
+    "q25": "d7d0eaff32b2",
+    "q26": "ec7c8567da18",
+    "q27": "5f10a409c5f1"
+  }
+}
