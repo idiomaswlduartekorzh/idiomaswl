@@ -2,7 +2,7 @@
 
 Fecha de contraste: 25 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  
-Dictamen actual: **BLOCKED — no declarar los 17 sets como réplica completa todavía**
+Dictamen actual: **BLOCKED sólo por audio — Sets 13–20 no se liberan todavía**
 
 ## Alcance responsable
 
@@ -29,38 +29,38 @@ pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 
 | Set | Listening | Reading | Palabras Reading | MP3 integral | Claves en cliente |
 |---:|---:|---:|---:|---|---:|
-| 4 | 40 | 40 | 1.613 | OK | 0 |
-| 5 | 40 | 40 | 1.933 | OK | 0 |
-| 6 | 40 | 40 | 1.842 | OK | 0 |
-| 7 | 40 | 40 | 1.724 | OK | 0 |
-| 8 | 40 | 40 | 1.667 | OK | 0 |
-| 9 | 40 | 40 | 1.688 | OK | 0 |
-| 10 | 40 | 40 | 1.611 | OK | 0 |
-| 11 | 40 | 40 | 1.933 | OK | 0 |
-| 12 | 40 | 40 | 1.880 | OK | 0 |
-| 13 | 40 | 40 | 1.859 | FALTA | 0 |
-| 14 | 40 | 40 | 1.901 | FALTA | 0 |
-| 15 | 40 | 40 | 1.860 | FALTA | 0 |
-| 16 | 40 | 40 | 1.918 | FALTA | 0 |
-| 17 | 40 | 40 | 1.973 | FALTA | 0 |
-| 18 | 40 | 40 | 2.003 | FALTA | 0 |
-| 19 | 40 | 40 | 1.942 | FALTA | 0 |
-| 20 | 40 | 40 | 1.985 | FALTA | 0 |
+| 4 | 40 | 40 | 2.184 | OK | 0 |
+| 5 | 40 | 40 | 2.180 | OK | 0 |
+| 6 | 40 | 40 | 2.225 | OK | 0 |
+| 7 | 40 | 40 | 2.225 | OK | 0 |
+| 8 | 40 | 40 | 2.165 | OK | 0 |
+| 9 | 40 | 40 | 2.187 | OK | 0 |
+| 10 | 40 | 40 | 2.171 | OK | 0 |
+| 11 | 40 | 40 | 2.151 | OK | 0 |
+| 12 | 40 | 40 | 2.150 | OK | 0 |
+| 13 | 40 | 40 | 2.155 | FALTA | 0 |
+| 14 | 40 | 40 | 2.179 | FALTA | 0 |
+| 15 | 40 | 40 | 2.150 | FALTA | 0 |
+| 16 | 40 | 40 | 2.154 | FALTA | 0 |
+| 17 | 40 | 40 | 2.151 | FALTA | 0 |
+| 18 | 40 | 40 | 2.172 | FALTA | 0 |
+| 19 | 40 | 40 | 2.151 | FALTA | 0 |
+| 20 | 40 | 40 | 2.192 | FALTA | 0 |
 
-El rango oficial de Reading es 2.150–2.750 palabras: los 17 sets están por debajo. Los
-MP3 de Sets 13–20 están referenciados por el contenido, pero no existen en
-`public/audio/ielts/`.
+Los 17 Readings ya quedan dentro del rango oficial de 2.150–2.750 palabras. Los MP3 de
+Sets 13–20 todavía no existen en `public/audio/ielts/`; por eso esas cuatro partes de
+Listening permanecen bloqueadas de forma explícita.
 
 ## Hallazgos editoriales
 
-- Listening 4–20 sólo usa `formgroup`, `tablegroup`, `multiselect` y MCQ. No existe
-  matching ni plan/map/diagram labelling en la colección.
-- Las respuestas correctas de los 91 MCQ de Listening se distribuyen A/B/C/D como
-  22/50/18/1; en 43/91 la correcta es la única opción más larga.
-- Las respuestas correctas de los 89 MCQ de Reading se distribuyen A/B/C/D como
-  6/57/26/0; en 35/89 la correcta es la única opción más larga.
-- Sets 5–20 repiten una composición de tipos demasiado uniforme. Tener temas distintos
-  no compensa una huella de formulario casi idéntica.
+- La colección original no tenía matching ni plan/map/diagram labelling en Listening;
+  la rama incorpora matching en Set 14 y un plano SVG original en Set 7 sin cambiar los
+  guiones de los MP3 existentes.
+- Tras la revisión, los MCQ de Listening se distribuyen A/B/C/D como 28/28/28/2 (sólo
+  los ítems de cuatro opciones pueden usar D); 30/86 conservan la correcta como única
+  opción más larga, por debajo del gate máximo de 35 %.
+- Los 89 MCQ de Reading se distribuyen A/B/C/D como 23/22/24/20; 31/89 conservan la
+  correcta como única opción más larga, también por debajo del 35 %.
 - Las claves objetivas vivían en el mismo objeto serializado al navegador. La proyección
   pública nueva deja cero claves; el servidor conserva el banco privado y recalcula el
   resultado recibido.
@@ -84,31 +84,33 @@ MP3 de Sets 13–20 están referenciados por el contenido, pero no existen en
   un reproductor que falla silenciosamente.
 - Las claves objetivas se eliminan en el límite Server Component → Client Component y el
   recibo conserva exclusivamente los resultados recalculados por el servidor.
+- Los 17 Readings se ampliaron con 5.600+ palabras originales de WeLearn y ahora suman
+  entre 2.150 y 2.225 palabras por set, sin cambiar ninguna frase portadora de respuesta.
+- Set 7 incorpora plan labelling con un plano propio del museo y Set 14 incorpora una
+  tarea matching basada en detalles ya presentes en su grabación.
+- Las posiciones correctas se equilibran de forma determinista antes de cruzar al
+  cliente y el servidor puntúa exactamente el mismo orden privado.
+- Catorce distractores se revisaron editorialmente para retirar la pista de longitud sin
+  debilitar su plausibilidad.
 
 ## Gates pendientes para cerrar el dictamen
 
-1. Expandir y revalidar cada pasaje de Reading hasta que cada set alcance 2.150–2.750
-   palabras sin añadir relleno ni romper la evidencia de las 40 respuestas.
-2. Rediseñar la composición de tareas entre sets e incorporar matching y
-   plan/map/diagram labelling en Listening con activos propios.
-3. Reequilibrar posiciones y longitudes de distractores; repetir revisión lingüística y
-   factual pregunta por pregunta.
-4. Generar los ocho MP3 integrales pendientes con reparto de voces/acento, pausas y
+1. Generar los ocho MP3 integrales pendientes con reparto de voces/acento, pausas y
    normalización; después registrar tamaño, hash, duración, loudness y contraste
    transcript↔audio. La generación con proveedor de pago requiere aprobación separada.
-5. Crear manifiesto de audio inmutable y convertir la auditoría en guardián de `prebuild`
+2. Crear manifiesto de audio inmutable y convertir la auditoría en guardián de `prebuild`
    sólo cuando todos los bloqueos estén cerrados.
-6. Repetir build completo, smoke de las 17 rutas, móvil 320/390, teclado, lector de
+3. Repetir build completo, smoke de las 17 rutas, móvil 320/390, teclado, lector de
    pantalla y el recorrido de entrega privada con Writing y las tres muestras de Speaking.
 
 ## Evidencia reproducible
 
 ```bash
-npm run audit:ielts-academic-2026  # hoy debe terminar BLOCKED y enumerar 30 bloqueos
+npm run audit:ielts-academic-2026  # hoy debe terminar BLOCKED y enumerar sólo 8 audios
 npm run test:ielts-academic-2026   # contrato, claves privadas y audio bloqueado
 npm run test:ielts-review          # scoring/review pipeline
 npx tsc --noEmit
 ```
 
-La salida `BLOCKED` es intencional: evita que una mejora visual sea confundida con la
-liberación editorial y multimedia de los 17 exámenes.
+La salida `BLOCKED` sigue siendo intencional: impide presentar Sets 13–20 como completos
+hasta que sus ocho audios integrales pasen el mismo gate técnico y editorial usado en TOEFL.

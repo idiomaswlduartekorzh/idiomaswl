@@ -2,6 +2,7 @@
 
 import { existsSync } from 'node:fs';
 import path from 'node:path';
+import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
 import { toPublicIeltsMock } from '../src/data/mocks/ielts-public-payload.ts';
 
 const SETS = Array.from({ length: 17 }, (_, index) => index + 4);
@@ -61,6 +62,7 @@ const blockers = [];
 const warnings = [];
 const listeningTypes = new Set();
 const readingTypes = new Set();
+let hasPlanMapDiagram = false;
 const fingerprints = new Map();
 const distributions = {
   listening: [0, 0, 0, 0],
@@ -72,7 +74,8 @@ const distributions = {
 };
 
 for (const setNumber of SETS) {
-  const { default: mock } = await import(`../src/data/mocks/ielts-set-${setNumber}.ts`);
+  const { default: authoredMock } = await import(`../src/data/mocks/ielts-set-${setNumber}.ts`);
+  const mock = withIeltsAcademic2026Blueprint(authoredMock);
   const bySkill = Object.fromEntries(
     ['listening', 'reading', 'writing', 'speaking'].map((skill) => [
       skill,
@@ -97,6 +100,7 @@ for (const setNumber of SETS) {
   );
   const audioUrls = new Set(bySkill.listening.map((section) => section.audioUrl).filter(Boolean));
   const missingAudio = [...audioUrls].filter((url) => !existsSync(path.join(process.cwd(), 'public', url)));
+  const blockedAudio = bySkill.listening.some((section) => section.mediaStatus === 'script-ready-audio-blocked');
   const sourceKeyCount = mock.sections.flatMap((section) => section.questions).reduce(
     (total, question) => total + keyCount(question),
     0,
@@ -116,6 +120,9 @@ for (const setNumber of SETS) {
     }
     for (const question of questions) {
       (skill === 'listening' ? listeningTypes : readingTypes).add(question.type);
+      if (skill === 'listening' && question.type === 'formgroup' && question.taskFamily === 'plan-map-diagram-labelling') {
+        hasPlanMapDiagram = true;
+      }
       const leak = answerLeak(question);
       if (leak) {
         distributions[skill][leak.answer] += 1;
@@ -138,7 +145,8 @@ for (const setNumber of SETS) {
   if (bySkill.listening.length !== 4) blockers.push(`Set ${setNumber}: Listening debe tener 4 partes.`);
   if (listeningResponses !== 40) blockers.push(`Set ${setNumber}: Listening tiene ${listeningResponses}, no 40 respuestas.`);
   if (bySkill.listening.some((section) => !section.transcript?.trim())) blockers.push(`Set ${setNumber}: falta transcript en Listening.`);
-  if (audioUrls.size !== 1) blockers.push(`Set ${setNumber}: se esperaba un único audio integral; hay ${audioUrls.size}.`);
+  if (blockedAudio) blockers.push(`Set ${setNumber}: el audio integral sigue bloqueado hasta generación y QA.`);
+  else if (audioUrls.size !== 1) blockers.push(`Set ${setNumber}: se esperaba un único audio integral; hay ${audioUrls.size}.`);
   for (const url of missingAudio) blockers.push(`Set ${setNumber}: falta ${url}.`);
 
   if (bySkill.reading.length !== 3) blockers.push(`Set ${setNumber}: Reading debe tener 3 pasajes.`);
@@ -160,7 +168,7 @@ for (const setNumber of SETS) {
     listening: listeningResponses,
     reading: readingResponses,
     readingWords,
-    audio: missingAudio.length ? 'MISSING' : 'OK',
+    audio: blockedAudio || missingAudio.length ? 'MISSING' : 'OK',
     sourceKeys: sourceKeyCount,
     publicKeys: publicKeyCount,
   });
@@ -179,7 +187,7 @@ for (const skill of ['listening', 'reading']) {
   }
 }
 if (!listeningTypes.has('matching')) blockers.push('Listening 4–20 no contiene ninguna tarea matching.');
-if (![...listeningTypes].some((type) => type.includes('diagram'))) {
+if (!hasPlanMapDiagram) {
   blockers.push('Listening 4–20 no contiene una tarea explícita de plan/map/diagram labelling.');
 }
 

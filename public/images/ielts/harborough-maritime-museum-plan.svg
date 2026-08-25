@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Harborough Maritime Museum visitor plan</title>
+  <desc id="desc">A two-level museum schematic with numbered locations for Questions 14 to 20.</desc>
+  <defs>
+    <style>
+      .wall{fill:#f8fafc;stroke:#182a66;stroke-width:4}.room{fill:#fff;stroke:#8793b6;stroke-width:3}.outdoor{fill:#edf8ef;stroke:#579265;stroke-width:3}.label{font:600 22px Arial,sans-serif;fill:#182a66}.small{font:18px Arial,sans-serif;fill:#34416f}.arrow{fill:none;stroke:#c62035;stroke-width:4;marker-end:url(#head)}
+    </style>
+    <marker id="head" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#c62035"/></marker>
+  </defs>
+  <rect class="wall" x="35" y="45" width="520" height="420" rx="16"/>
+  <rect class="room" x="65" y="310" width="220" height="125" rx="10"/>
+  <text class="label" x="96" y="355">ENTRANCE HALL</text>
+  <text class="label" x="164" y="398">14</text>
+  <rect class="room" x="65" y="85" width="220" height="190" rx="10"/>
+  <text class="label" x="95" y="135">FIRST GALLERY</text>
+  <text class="label" x="164" y="185">15</text>
+  <rect class="room" x="315" y="85" width="210" height="190" rx="10"/>
+  <text class="label" x="337" y="135">SECOND GALLERY</text>
+  <text class="label" x="408" y="185">16</text>
+  <rect class="room" x="315" y="310" width="95" height="125" rx="10"/>
+  <text class="label" x="348" y="380">20</text>
+  <rect class="room" x="430" y="310" width="95" height="125" rx="10"/>
+  <text class="small" x="447" y="365">STAIRS</text>
+  <path class="arrow" d="M175 460 L175 430 M285 370 L315 370 M477 310 L477 275"/>
+  <rect class="wall" x="595" y="45" width="270" height="225" rx="16"/>
+  <text class="label" x="633" y="88">UPPER GALLERY</text>
+  <text class="label" x="681" y="145">17</text>
+  <text class="label" x="681" y="195">18</text>
+  <rect class="outdoor" x="595" y="305" width="270" height="160" rx="16"/>
+  <text class="label" x="714" y="350">19</text>
+  <rect class="room" x="620" y="375" width="110" height="65" rx="10"/>
+  <text class="label" x="641" y="416">CAFÉ</text>
+  <path class="arrow" d="M595 190 L525 190 M730 270 L730 305"/>
+</svg>

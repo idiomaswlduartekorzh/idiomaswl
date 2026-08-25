@@ -160,8 +160,11 @@ Enjoy your visit, and press the green button whenever you'd like me to continue.
           id: 'l2-form',
           part: 2,
           qRange: [13, 20],
-          groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
-          title: 'Harborough Maritime Museum',
+          groupLabel: 'Label the museum plan and complete the visitor notes.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          title: 'Harborough Maritime Museum — visitor plan',
+          taskFamily: 'plan-map-diagram-labelling',
+          imageUrl: '/images/ielts/harborough-maritime-museum-plan.svg',
+          imageAlt: 'Schematic plan of Harborough Maritime Museum with numbered locations for Questions 14 to 20.',
           template: `• The museum is housed in a former {{13}}.
 • Entrance hall: a ship's {{14}}, four hundred years old — the oldest object.
 • First gallery: models of {{15}} built by local craftsmen.

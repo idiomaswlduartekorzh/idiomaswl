@@ -95,6 +95,7 @@ export interface FormGroupQuestion {
   example?: string;          // e.g. "Name: Andrea Brown"
   imageUrl?: string;         // optional diagram/chart shown above template
   imageAlt?: string;
+  taskFamily?: 'plan-map-diagram-labelling';
   template: string;          // text with {{n}} markers, use \n for line breaks
   blanks: FormBlank[];
 }

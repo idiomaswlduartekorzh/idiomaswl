@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import set4 from '../src/data/mocks/ielts-set-4.ts';
 import set13 from '../src/data/mocks/ielts-set-13.ts';
@@ -7,6 +8,18 @@ import { toPublicIeltsMock } from '../src/data/mocks/ielts-public-payload.ts';
 
 function countAnswerKeys(mock) {
   return JSON.stringify(mock).match(/"answers?":/g)?.length ?? 0;
+}
+
+function words(value = '') {
+  return value.trim().split(/\s+/).filter(Boolean).length;
+}
+
+async function loadAuditedSets() {
+  return Promise.all(Array.from({ length: 17 }, async (_, index) => {
+    const setNumber = index + 4;
+    const { default: authoredMock } = await import(`../src/data/mocks/ielts-set-${setNumber}.ts`);
+    return withIeltsAcademic2026Blueprint(authoredMock);
+  }));
 }
 
 test('Sets 4–20 receive the explicit computer-delivered IELTS Academic 2026 contract', () => {
@@ -33,4 +46,67 @@ test('sets whose integral Listening media is absent are visibly blocked, not sil
   const listening = mock.sections.filter(section => section.skill === 'listening');
   assert.equal(listening.length, 4);
   assert.ok(listening.every(section => section.comingSoon && !section.audioUrl));
+});
+
+test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 words', async () => {
+  for (const mock of await loadAuditedSets()) {
+    const reading = mock.sections.filter(section => section.skill === 'reading');
+    const wordCount = reading.reduce((total, section) => total + words(section.passage), 0);
+    const responseCount = reading.flatMap(section => section.questions).reduce((total, question) => (
+      total + ('qRange' in question && question.qRange ? question.qRange[1] - question.qRange[0] + 1 : 1)
+    ), 0);
+    assert.ok(wordCount >= 2150 && wordCount <= 2750, `${mock.id} has ${wordCount} Reading words`);
+    assert.equal(responseCount, 40, `${mock.id} Reading response count`);
+  }
+});
+
+test('Listening includes matching and an original plan-labelling task', async () => {
+  const sets = await loadAuditedSets();
+  const listeningQuestions = sets.flatMap(mock => mock.sections)
+    .filter(section => section.skill === 'listening')
+    .flatMap(section => section.questions);
+  assert.ok(listeningQuestions.some(question => question.type === 'matching'));
+  assert.ok(listeningQuestions.some(question => (
+    question.type === 'formgroup'
+    && question.taskFamily === 'plan-map-diagram-labelling'
+    && question.imageUrl?.endsWith('.svg')
+  )));
+});
+
+test('the plan graphic does not reveal any accepted answer in text or alt copy', async () => {
+  const set7 = (await loadAuditedSets()).find(mock => mock.id === 'set-7');
+  const plan = set7.sections.flatMap(section => section.questions).find(question => (
+    question.type === 'formgroup' && question.taskFamily === 'plan-map-diagram-labelling'
+  ));
+  assert.ok(plan?.imageUrl);
+  const svg = readFileSync(new URL(`../public${plan.imageUrl}`, import.meta.url), 'utf8').toLowerCase();
+  const exposedCopy = `${svg}\n${plan.imageAlt ?? ''}`.toLowerCase();
+  for (const blank of plan.blanks) {
+    for (const answer of blank.answers) {
+      const escaped = answer.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+      assert.ok(!new RegExp(`\\b${escaped}\\b`).test(exposedCopy), `plan leaks answer: ${answer}`);
+    }
+  }
+});
+
+test('MCQ answer positions and option lengths do not expose the key statistically', async () => {
+  const sets = await loadAuditedSets();
+  for (const skill of ['listening', 'reading']) {
+    const questions = sets.flatMap(mock => mock.sections)
+      .filter(section => section.skill === skill)
+      .flatMap(section => section.questions)
+      .filter(question => question.type === 'mcq' || question.type === 'dialog');
+    const positions = [0, 0, 0, 0];
+    let uniquelyLongest = 0;
+    for (const question of questions) {
+      positions[question.answer] += 1;
+      const lengths = question.options.map(words);
+      const correctLength = lengths[question.answer];
+      if (correctLength === Math.max(...lengths) && lengths.filter(length => length === correctLength).length === 1) {
+        uniquelyLongest += 1;
+      }
+    }
+    if (skill === 'reading') assert.ok(positions.every(position => position / questions.length >= 0.15));
+    assert.ok(uniquelyLongest / questions.length <= 0.35, `${skill}: ${uniquelyLongest}/${questions.length}`);
+  }
 });
