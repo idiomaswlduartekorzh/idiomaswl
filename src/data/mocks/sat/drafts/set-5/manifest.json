@@ -137,7 +137,7 @@
           "type": "boundaries",
           "difficulty": 1,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q17",
@@ -145,7 +145,7 @@
           "type": "boundaries",
           "difficulty": 1,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q18",
@@ -153,7 +153,7 @@
           "type": "boundaries",
           "difficulty": 2,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q19",
@@ -161,7 +161,7 @@
           "type": "boundaries",
           "difficulty": 2,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q20",
@@ -169,7 +169,7 @@
           "type": "form-structure-sense",
           "difficulty": 2,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q21",
@@ -177,7 +177,7 @@
           "type": "form-structure-sense",
           "difficulty": 3,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q22",
@@ -185,7 +185,7 @@
           "type": "form-structure-sense",
           "difficulty": 3,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q23",
