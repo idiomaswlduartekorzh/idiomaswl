@@ -1,6 +1,6 @@
 # Registro de recuperación de producción
 
-Estado: inventario inicial. Debe actualizarse durante la ejecución del plan.
+Estado: recuperación en ejecución.
 
 Fecha de corte: 25 de agosto de 2026, 09:30 COT.
 
@@ -45,7 +45,7 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 | Prioridad | Trabajo | Rama/SHA de corte | Diferencia contra `origin/main` | Estado propuesto | Acción |
 |---:|---|---|---:|---|---|
-| P0 | Plan, registro y baseline de producción | `codex/branch-recovery-plan-20260825` | Rama nueva desde `a036f93c` | `EN_CURSO` | Integrar primero para proteger lo que siga. |
+| P0 | Plan, registro y baseline de producción | `codex/branch-recovery-plan-20260825` | Rama nueva desde `a036f93c` | `LISTO_PARA_INTEGRAR` | Guardianes, TypeScript, build y smoke aprobados; integrar primero. |
 | P0 | Guardrails SEO y landings | `codex/seo-guardrails-phase0-20260824` · `58655b44` | 1 parche único; 61 commits detrás | `EN_VALIDACION` | Rebase/reimplementar sobre `main`; conservar el `prebuild` actual. |
 | P1 | Ideas avanzadas | `codex/practica-avanzada` · `953e20fa` | 4 parches únicos; 0 detrás | `EN_VALIDACION` | Validar contenido, UI, catálogo y build; publicar solo con aprobación. |
 | P1 | Canonicals de 46 páginas de Práctica | `claude/gifted-edison-ef8a3c` · `3a3ca985` | 1 parche único; 420 detrás | `REIMPLEMENTAR` | Comparar canonicals actuales y portar únicamente los que aún fallan. |
@@ -139,3 +139,19 @@ Una fila solo pasa a `DESPLEGADO` cuando contiene:
 - documento de subsistema actualizado.
 
 Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview.
+
+## 10. Bitácora de ejecución
+
+### 25 de agosto de 2026
+
+- Los 45 commits locales de `feat/red-agentes-sat-ingles` quedaron respaldados en
+  `archive/recovery-feat-red-agentes-sat-ingles-20260825` con punta `2fb610c6a447`.
+- Se implementó una línea base que protege 144 rutas base de Práctica y los 480 MP3 de
+  Escucha, además de archivos críticos, marcadores y guardianes de `prebuild`.
+- Se añadió comparación monotónica contra la rama base: un PR no puede bajar mínimos ni
+  retirar protecciones para pasar CI.
+- `check:production-baseline`, `check:practica-catalog`, `check:habla-acompanada` y TypeScript
+  pasaron.
+- El `prebuild` completo pasó. El build Webpack de Next 16.2.6 terminó con 2.306 páginas
+  estáticas usando `NODE_OPTIONS=--max-old-space-size=4096`; CI conserva ese límite.
+- El smoke público pasó en 10/10 rutas críticas con HTTP 200.

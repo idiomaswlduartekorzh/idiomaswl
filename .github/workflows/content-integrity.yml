@@ -7,8 +7,31 @@ on:
       - main
 
 jobs:
-  verify-catalog:
+  baseline-and-types:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Protect production baseline
+        if: github.event_name == 'pull_request'
+        run: npm run check:production-baseline -- --compare-git-ref=origin/${{ github.base_ref }}
+      - name: Verify production baseline
+        if: github.event_name != 'pull_request'
+        run: npm run check:production-baseline
+      - run: npm run check:practica-catalog
+      - run: npx tsc --noEmit --pretty false
+
+  production-build:
+    needs: baseline-and-types
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -16,5 +39,6 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run check:practica-catalog
-      - run: npx tsc --noEmit --pretty false
+      - run: npm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096

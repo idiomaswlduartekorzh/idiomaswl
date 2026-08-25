@@ -1,6 +1,7 @@
 # Plan operativo de comunicación entre ramas y protección de producción
 
-Estado: propuesto y listo para revisión; no autoriza por sí solo merges ni despliegues.
+Estado: activo. La línea base, la plantilla de PR y las puertas de CI se implementaron en
+`codex/branch-recovery-plan-20260825`; su vigencia en producción empieza al integrarse en `main`.
 
 Fecha de corte: 25 de agosto de 2026.
 
@@ -164,6 +165,9 @@ La plantilla de PR debe pedir base SHA, rutas afectadas, eliminaciones, guardian
 
 ### 4.2 CI obligatoria
 
+Implementado el 25 de agosto de 2026 en `.github/workflows/content-integrity.yml`,
+`config/production-baseline.json` y `scripts/check-production-baseline.mjs`.
+
 El workflow actual de integridad cubre `check:practica-catalog` y TypeScript. Debe dividirse en cuatro puertas requeridas:
 
 1. **Baseline de producción**
@@ -189,6 +193,9 @@ El workflow actual de integridad cubre `check:practica-catalog` y TypeScript. De
 No se permite «arreglar» CI bajando mínimos, quitando checks de `prebuild` o excluyendo el subsistema que falla. Una excepción exige decisión explícita en el registro.
 
 ### 4.3 Manifiesto de baseline
+
+Implementado en `config/production-baseline.json`. La comparación contra la rama base impide
+retirar rutas, archivos, marcadores, checks o mínimos protegidos dentro de un PR.
 
 Debe existir un manifiesto legible por máquina con, al menos:
 

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.idiomaswl.com/schemas/production-baseline.schema.json",
+  "title": "WeLearn production baseline",
+  "type": "object",
+  "required": [
+    "version",
+    "recordedAt",
+    "sourceProductionCommit",
+    "languages",
+    "levels",
+    "practiceModalities",
+    "minimumFileCounts",
+    "listening",
+    "protectedFiles",
+    "protectedMarkers",
+    "requiredNpmScripts",
+    "requiredPrebuildChecks",
+    "smokeRoutes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "integer", "minimum": 1 },
+    "recordedAt": { "type": "string", "format": "date" },
+    "sourceProductionCommit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+    "languages": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+    "levels": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+    "practiceModalities": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+    "minimumFileCounts": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "integer", "minimum": 1 }
+    },
+    "listening": {
+      "type": "object",
+      "required": ["episodesPerLanguageLevel", "fileTemplate"],
+      "additionalProperties": false,
+      "properties": {
+        "episodesPerLanguageLevel": { "type": "integer", "minimum": 1 },
+        "fileTemplate": { "type": "string" }
+      }
+    },
+    "classLandingLanguages": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+    "protectedFiles": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+    "protectedMarkers": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/nonEmptyUniqueStrings" }
+    },
+    "requiredNpmScripts": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+    "requiredPrebuildChecks": { "$ref": "#/$defs/nonEmptyUniqueStrings" },
+    "smokeRoutes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["path", "marker"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string", "pattern": "^/" },
+          "marker": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nonEmptyUniqueStrings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}
