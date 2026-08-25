@@ -6,11 +6,13 @@ import { ROLEPLAY_FRANCES_A2_CANDIDATE as ROLEPLAY_FRANCES_A2 } from './drafts/i
 import { ROLEPLAY_ITALIANO_A2_CANDIDATE as ROLEPLAY_ITALIANO_A2 } from './drafts/index.ts'
 import { ROLEPLAY_PORTUGUES_A2_CANDIDATE as ROLEPLAY_PORTUGUES_A2 } from './drafts/index.ts'
 import { ROLEPLAY_ALEMAN_A2_CANDIDATE as ROLEPLAY_ALEMAN_A2 } from './drafts/index.ts'
+import { ROLEPLAY_RUSO_A2_CANDIDATE as ROLEPLAY_RUSO_A2 } from './drafts/index.ts'
 import { TOOLKIT_COREANO_A2 } from './toolkit-coreano-a2.ts'
 import { TOOLKIT_FRANCES_A2 } from './toolkit-frances-a2.ts'
 import { TOOLKIT_ITALIANO_A2 } from './toolkit-italiano-a2.ts'
 import { TOOLKIT_PORTUGUES_A2 } from './toolkit-portugues-a2.ts'
 import { TOOLKIT_ALEMAN_A2 } from './toolkit-aleman-a2.ts'
+import { TOOLKIT_RUSO_A2 } from './toolkit-ruso-a2.ts'
 import { TOOLKIT_INGLES_A1 } from './toolkit-ingles-a1.ts'
 import { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 import { TOOLKIT_INGLES_B1 } from './toolkit-ingles-b1.ts'
@@ -32,11 +34,13 @@ export { ROLEPLAY_FRANCES_A2_CANDIDATE as ROLEPLAY_FRANCES_A2 } from './drafts/i
 export { ROLEPLAY_ITALIANO_A2_CANDIDATE as ROLEPLAY_ITALIANO_A2 } from './drafts/index.ts'
 export { ROLEPLAY_PORTUGUES_A2_CANDIDATE as ROLEPLAY_PORTUGUES_A2 } from './drafts/index.ts'
 export { ROLEPLAY_ALEMAN_A2_CANDIDATE as ROLEPLAY_ALEMAN_A2 } from './drafts/index.ts'
+export { ROLEPLAY_RUSO_A2_CANDIDATE as ROLEPLAY_RUSO_A2 } from './drafts/index.ts'
 export { TOOLKIT_COREANO_A2 } from './toolkit-coreano-a2.ts'
 export { TOOLKIT_FRANCES_A2 } from './toolkit-frances-a2.ts'
 export { TOOLKIT_ITALIANO_A2 } from './toolkit-italiano-a2.ts'
 export { TOOLKIT_PORTUGUES_A2 } from './toolkit-portugues-a2.ts'
 export { TOOLKIT_ALEMAN_A2 } from './toolkit-aleman-a2.ts'
+export { TOOLKIT_RUSO_A2 } from './toolkit-ruso-a2.ts'
 export { TOOLKIT_INGLES_A1 } from './toolkit-ingles-a1.ts'
 export { TOOLKIT_INGLES_A2 } from './toolkit-ingles-a2.ts'
 export { TOOLKIT_INGLES_B1 } from './toolkit-ingles-b1.ts'
@@ -121,6 +125,7 @@ export const ROLEPLAY_PUBLISHED_FLOORS: Partial<Record<RoleplaySetKey, number>> 
   'italiano-a2': 20,
   'portugues-a2': 20,
   'aleman-a2': 20,
+  'ruso-a2': 20,
 }
 
 /**
@@ -184,6 +189,12 @@ export const ROLEPLAY_SETS: RoleplaySet[] = [
     level: 'a2',
     scenarios: ROLEPLAY_ALEMAN_A2,
     toolkit: TOOLKIT_ALEMAN_A2,
+  },
+  {
+    language: 'ruso',
+    level: 'a2',
+    scenarios: ROLEPLAY_RUSO_A2,
+    toolkit: TOOLKIT_RUSO_A2,
   },
 ]
 

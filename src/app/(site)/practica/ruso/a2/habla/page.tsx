@@ -1,19 +1,34 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-import { QuizSchema } from '@/components/practica/EducationSchema';
+import { notFound } from 'next/navigation'
+import { CourseSchema } from '@/components/practica/EducationSchema'
+import { SpeakingModeHub } from '@/components/practica/roleplay/RoleplayExperience'
+import { getRoleplaySet, speakingPath } from '@/data/practica/habla-acompanado'
 
-export const metadata: Metadata = practicaMetadata('ruso', 'a2', 'habla')
+const LANGUAGE = 'ruso'
+const LEVEL = 'a2'
+const set = getRoleplaySet(LANGUAGE, LEVEL)
+const scenarioCount = set?.scenarios.length ?? 0
+const canonical = `https://www.idiomaswl.com${speakingPath(LANGUAGE, LEVEL)}`
+
+export const metadata: Metadata = {
+  title: 'Speaking ruso A2: solo o en pareja | Idiomas WeLearn',
+  description: `Practica speaking en ruso A2 con 20 frases individuales o con ${scenarioCount} juegos de rol para dos personas, fichas separadas y situaciones reales.`,
+  alternates: { canonical },
+}
 
 export default function Page() {
+  if (!set) notFound()
   return (
     <>
-      <QuizSchema
-        name="Expresión oral en Ruso A2 — Frases esenciales"
-        url="https://idiomaswl.com/practica/ruso/a2/habla"
-        description="20 frases esenciales de Ruso A2 con cirílico, transliteración y guía de pronunciación para hispanohablantes."
+      <CourseSchema
+        name="Speaking en ruso A2 — práctica individual y en pareja"
+        description={`20 frases individuales y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
+        url={canonical}
+        educationalLevel="A2"
+        teaches="Expresión oral en ruso"
+        inLanguage="ru"
       />
-      <Content />
+      <SpeakingModeHub set={set} />
     </>
   )
 }

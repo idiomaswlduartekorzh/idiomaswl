@@ -1,7 +1,7 @@
 # Habla acompañada · Ruso A2 · parrilla editorial 1–20
 
-Estado: **matriz 20/20 cerrada para autoría; todavía no publicada.** Es el siguiente
-conjunto de la fase A2 de [`habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md).
+Estado: **20/20 publicados y auditados el 25 de agosto de 2026.** Es el sexto
+conjunto no inglés de la fase A2 de [`habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md).
 Las situaciones se escriben directamente en ruso contemporáneo y no traducen las colecciones
 ya publicadas.
 

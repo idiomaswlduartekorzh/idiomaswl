@@ -90,7 +90,6 @@ import { ROLEPLAY_ALEMAN_A2_BATCH_4B } from './aleman-a2-batch-4b.ts'
 import { ROLEPLAY_ALEMAN_A2_BATCH_4C } from './aleman-a2-batch-4c.ts'
 import { ROLEPLAY_ALEMAN_A2_BATCH_4D } from './aleman-a2-batch-4d.ts'
 import { ROLEPLAY_ALEMAN_A2_BATCH_4E } from './aleman-a2-batch-4e.ts'
-import { TOOLKIT_RUSO_A2 } from '../toolkit-ruso-a2.ts'
 import { ROLEPLAY_RUSO_A2_BATCH_1 } from './ruso-a2-batch-1.ts'
 import { ROLEPLAY_RUSO_A2_BATCH_1B } from './ruso-a2-batch-1b.ts'
 import { ROLEPLAY_RUSO_A2_BATCH_1C } from './ruso-a2-batch-1c.ts'
@@ -275,11 +274,5 @@ export const ROLEPLAY_RUSO_A2_CANDIDATE = [
  * como unidad completa.
  */
 export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
-  {
-    language: 'ruso',
-    level: 'a2',
-    scenarios: ROLEPLAY_RUSO_A2_CANDIDATE,
-    toolkit: TOOLKIT_RUSO_A2,
-  },
 ]
 import type { RoleplaySet } from '../index.ts'
