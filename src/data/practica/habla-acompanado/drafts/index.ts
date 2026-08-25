@@ -44,6 +44,12 @@ import { ROLEPLAY_FRANCES_A2_BATCH_3B } from './frances-a2-batch-3b.ts'
 import { ROLEPLAY_FRANCES_A2_BATCH_3C } from './frances-a2-batch-3c.ts'
 import { ROLEPLAY_FRANCES_A2_BATCH_4 } from './frances-a2-batch-4.ts'
 import { ROLEPLAY_FRANCES_A2_BATCH_4B } from './frances-a2-batch-4b.ts'
+import { ROLEPLAY_ITALIANO_A2_BATCH_1 } from './italiano-a2-batch-1.ts'
+import { ROLEPLAY_ITALIANO_A2_BATCH_2 } from './italiano-a2-batch-2.ts'
+import { ROLEPLAY_ITALIANO_A2_BATCH_3 } from './italiano-a2-batch-3.ts'
+import { ROLEPLAY_ITALIANO_A2_BATCH_4 } from './italiano-a2-batch-4.ts'
+import { ROLEPLAY_ITALIANO_A2_BATCH_4B } from './italiano-a2-batch-4b.ts'
+import { ROLEPLAY_ITALIANO_A2_BATCH_4C } from './italiano-a2-batch-4c.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -120,6 +126,15 @@ export const ROLEPLAY_FRANCES_A2_CANDIDATE = [
   ...ROLEPLAY_FRANCES_A2_BATCH_3C,
   ...ROLEPLAY_FRANCES_A2_BATCH_4,
   ...ROLEPLAY_FRANCES_A2_BATCH_4B,
+].sort((a, b) => a.sequence - b.sequence)
+
+export const ROLEPLAY_ITALIANO_A2_CANDIDATE = [
+  ...ROLEPLAY_ITALIANO_A2_BATCH_1,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_2,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_3,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_4,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_4B,
+  ...ROLEPLAY_ITALIANO_A2_BATCH_4C,
 ].sort((a, b) => a.sequence - b.sequence)
 
 /**

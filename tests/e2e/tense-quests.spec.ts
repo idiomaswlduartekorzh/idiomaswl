@@ -7,7 +7,7 @@ test('el catálogo comparte el sistema visual de Práctica y cabe en móvil', as
   await page.goto('/herramientas/quizes')
 
   await expect(page.locator('.wlp-page')).toBeVisible()
-  await expect(page.locator('.wlp-card--path')).toHaveCount(9)
+  await expect(page.locator('.wlp-card--path')).toHaveCount(8)
   await expect(page.locator('.wl-catalog-card')).toHaveCount(0)
   await expect(page.locator('main')).toHaveCount(1)
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
@@ -73,6 +73,26 @@ test('un intento se restaura y cambiar selección limpia la URL', async ({ page 
   await expect(page.locator('#tense-selector-title')).toBeVisible()
   await expect(page).not.toHaveURL(/forms=/)
   await expect(page).not.toHaveURL(/level=/)
+})
+
+test('italiano ofrece progresivos, diez retos por nivel e informe final', async ({ page }) => {
+  await reset(page, 'italiano')
+  await expect(page.getByText('Presente progressivo', { exact: true })).toBeVisible()
+  await expect(page.getByText('Imperfetto progressivo', { exact: true })).toBeVisible()
+  await configureFirstForm(page)
+
+  for (let level = 0; level < 6; level += 1) {
+    await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  }
+
+  await page.getByRole('tab').nth(5).click()
+  for (let item = 0; item < 10; item += 1) {
+    await page.locator('[class*="wordBank"] button:not([disabled])').first().click()
+    await page.getByRole('button', { name: item === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+  }
+  await expect(page.getByRole('status')).toContainText('Resultado global y próximos pasos')
+  await expect(page.getByRole('status')).toContainText('Comentarios de mejora')
+  await expect(page.getByRole('status')).toContainText('1 de 6 niveles')
 })
 
 test('un estudiante puede cerrar los 6 niveles sin recibir corrección anticipada', async ({ page }) => {

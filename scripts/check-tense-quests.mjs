@@ -126,7 +126,7 @@ function validate(config, minimums) {
   }
 }
 
-validate(ITALIAN_TENSE_QUEST, { choice: 1, micro: 1, long: 1, error: 1, timeline: 1, final: 1 })
+validate(ITALIAN_TENSE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 
 const GENERATED_CONFIGS = [

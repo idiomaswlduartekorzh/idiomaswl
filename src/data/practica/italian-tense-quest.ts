@@ -77,8 +77,10 @@ export type BankChallenge = {
 
 export const TENSE_OPTIONS = [
   { id: 'presente', label: 'Presente', group: 'Presente' },
+  { id: 'presente-progressivo', label: 'Presente progressivo', group: 'Perífrasis progresivas' },
   { id: 'passato-prossimo', label: 'Passato prossimo', group: 'Passato' },
   { id: 'imperfetto', label: 'Imperfetto', group: 'Passato' },
+  { id: 'imperfetto-progressivo', label: 'Imperfetto progressivo', group: 'Perífrasis progresivas' },
   { id: 'passato-remoto', label: 'Passato remoto', group: 'Passato' },
   { id: 'trapassato-prossimo', label: 'Trapassato prossimo', group: 'Anterioridad' },
   { id: 'trapassato-remoto', label: 'Trapassato remoto', group: 'Anterioridad' },

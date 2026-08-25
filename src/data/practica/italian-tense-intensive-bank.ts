@@ -1,0 +1,250 @@
+import type { TenseId } from './italian-tense-quest.ts'
+
+type Drill = {
+  before: string
+  after: string
+  answer: string
+  alternatives: [string, string, string]
+  verb: string
+  cue: string
+}
+
+export type ItalianDrillSeries = {
+  id: TenseId
+  label: string
+  rule: string
+  drills: readonly Drill[]
+}
+
+const d = (
+  before: string,
+  answer: string,
+  after: string,
+  verb: string,
+  cue: string,
+  alternatives: [string, string, string],
+): Drill => ({ before, answer, after, verb, cue, alternatives })
+
+export const ITALIAN_DRILL_SERIES: readonly ItalianDrillSeries[] = [
+  {
+    id: 'presente',
+    label: 'Presente',
+    rule: 'El presente expresa hábitos, hechos vigentes y acciones que ocurren ahora.',
+    drills: [
+      d('Ogni mattina Luca ', 'beve', ' un caffè prima di uscire.', 'bere', 'rutina cotidiana', ['berrà', 'ha bevuto', 'beveva']),
+      d('Di solito noi ', 'prendiamo', ' l’autobus delle otto.', 'prendere', 'hábito vigente', ['prenderemo', 'abbiamo preso', 'prendevamo']),
+      d('Marta ', 'lavora', ' in biblioteca dal lunedì al venerdì.', 'lavorare', 'situación actual', ['lavorerà', 'ha lavorato', 'lavorava']),
+      d('In questo momento ti ', 'ascolto', ' con attenzione.', 'ascoltare', 'acción actual', ['ascolterò', 'ho ascoltato', 'ascoltavo']),
+      d('Il museo ', 'apre', ' alle nove tutti i giorni.', 'aprire', 'horario estable', ['aprirà', 'ha aperto', 'apriva']),
+      d('I miei nonni ', 'vivono', ' vicino al mare.', 'vivere', 'hecho vigente', ['vivranno', 'hanno vissuto', 'vivevano']),
+      d('Quando piove, Sara ', 'porta', ' sempre l’ombrello.', 'portare', 'costumbre', ['porterà', 'ha portato', 'portava']),
+      d('Voi ', 'conoscete', ' già la risposta.', 'conoscere', 'estado presente', ['conoscerete', 'avete conosciuto', 'conoscevate']),
+      d('Il treno per Roma ', 'parte', ' dal binario quattro.', 'partire', 'horario programado', ['partirà', 'è partito', 'partiva']),
+      d('Io non ', 'capisco', ' questa parola.', 'capire', 'estado mental actual', ['capirò', 'ho capito', 'capivo']),
+    ],
+  },
+  {
+    id: 'presente-progressivo',
+    label: 'Presente progressivo',
+    rule: 'La perífrasis stare al presente + gerundio enfoca una acción en desarrollo ahora.',
+    drills: [
+      d('Non posso parlare: ', 'sto guidando', ' verso l’ufficio.', 'guidare', 'acción en curso ahora', ['guido', 'ho guidato', 'stavo guidando']),
+      d('Guarda: i bambini ', 'stanno correndo', ' nel cortile.', 'correre', 'escena observada ahora', ['corrono', 'hanno corso', 'stavano correndo']),
+      d('In questo momento noi ', 'stiamo preparando', ' la cena.', 'preparare', 'proceso actual', ['prepariamo', 'abbiamo preparato', 'stavamo preparando']),
+      d('Perché non rispondi? ', 'Stai leggendo', ' il messaggio?', 'leggere', 'acción en desarrollo', ['Leggi', 'Hai letto', 'Stavi leggendo']),
+      d('Silenzio, Marta ', 'sta dormendo', ' nella stanza accanto.', 'dormire', 'acción actual visible', ['dorme', 'ha dormito', 'stava dormendo']),
+      d('Adesso voi ', 'state aspettando', ' il vostro turno.', 'aspettare', 'espera en curso', ['aspettate', 'avete aspettato', 'stavate aspettando']),
+      d('Il tecnico ', 'sta controllando', ' il server proprio ora.', 'controllare', 'proceso técnico actual', ['controlla', 'ha controllato', 'stava controllando']),
+      d('Io ', 'sto cercando', ' le chiavi dappertutto.', 'cercare', 'búsqueda en curso', ['cerco', 'ho cercato', 'stavo cercando']),
+      d('Gli studenti ', 'stanno discutendo', ' il progetto in aula.', 'discutere', 'actividad actual', ['discutono', 'hanno discusso', 'stavano discutendo']),
+      d('Che cosa ', 'stai cucinando', ' per pranzo?', 'cucinare', 'proceso actual interrogado', ['cucini', 'hai cucinato', 'stavi cucinando']),
+    ],
+  },
+  {
+    id: 'passato-prossimo',
+    label: 'Passato prossimo',
+    rule: 'El passato prossimo presenta un hecho pasado concluido y conectado con el marco actual.',
+    drills: [
+      d('Stamattina io ', 'ho perso', ' le chiavi di casa.', 'perdere', 'hecho concluido hoy', ['perdevo', 'persi', 'avevo perso']),
+      d('Ieri sera Giulia ', 'è tornata', ' molto tardi.', 'tornare', 'movimiento concluido', ['ha tornato', 'tornava', 'tornò']),
+      d('Questa settimana noi ', 'abbiamo visitato', ' due musei.', 'visitare', 'periodo aún vigente', ['visitavamo', 'visiteremo', 'avevamo visitato']),
+      d('Avete fame? Voi non ', 'avete mangiato', ' nulla a pranzo.', 'mangiare', 'resultado relevante ahora', ['mangiavate', 'mangiaste', 'avevate mangiato']),
+      d('Paolo ', 'ha appena finito', ' la relazione.', 'finire', 'pasado inmediato', ['finiva appena', 'finì appena', 'aveva appena finito']),
+      d('Le ragazze ', 'sono arrivate', ' dieci minuti fa.', 'arrivare', 'llegada concluida', ['hanno arrivato', 'arrivavano', 'arrivarono']),
+      d('Oggi il direttore ', 'ha cancellato', ' la riunione.', 'cancellare', 'hecho de hoy', ['cancellava', 'cancellò', 'aveva cancellato']),
+      d('Non trovo Marco: ', 'è uscito', ' poco fa.', 'uscire', 'acción reciente', ['ha uscito', 'usciva', 'uscì']),
+      d('Finalmente tu ', 'hai capito', ' il problema.', 'capire', 'logro con efecto presente', ['capivi', 'capisti', 'avevi capito']),
+      d('Negli ultimi mesi loro ', 'hanno cambiato', ' spesso programma.', 'cambiare', 'balance hasta el presente', ['cambiavano', 'cambiarono', 'avevano cambiato']),
+    ],
+  },
+  {
+    id: 'imperfetto',
+    label: 'Imperfetto',
+    rule: 'El imperfetto describe marcos, hábitos y acciones durativas del pasado.',
+    drills: [
+      d('Da bambino io ', 'giocavo', ' ogni pomeriggio in cortile.', 'giocare', 'hábito infantil', ['ho giocato', 'giocai', 'giocherò']),
+      d('Mentre studiavamo, fuori ', 'pioveva', ' forte.', 'piovere', 'marco descriptivo', ['ha piovuto', 'piovve', 'pioverà']),
+      d('A quei tempi loro ', 'vivevano', ' in un piccolo paese.', 'vivere', 'situación durativa pasada', ['hanno vissuto', 'vissero', 'vivranno']),
+      d('Ogni estate noi ', 'andavamo', ' dai nonni in campagna.', 'andare', 'costumbre pasada', ['siamo andati', 'andammo', 'andremo']),
+      d('La casa ', 'aveva', ' un grande giardino.', 'avere', 'descripción pasada', ['ha avuto', 'ebbe', 'avrà']),
+      d('Quando ero studente, non ', 'avevo', ' molti soldi.', 'avere', 'estado pasado', ['ho avuto', 'ebbi', 'avrò']),
+      d('Mia madre mi ', 'leggeva', ' una storia ogni sera.', 'leggere', 'acción repetida', ['ha letto', 'lesse', 'leggerà']),
+      d('Alle sette il negozio ', 'era', ' ancora aperto.', 'essere', 'estado simultáneo', ['è stato', 'fu', 'sarà']),
+      d('In quel periodo voi ', 'lavoravate', ' anche il sabato.', 'lavorare', 'rutina en un periodo pasado', ['avete lavorato', 'lavoraste', 'lavorerete']),
+      d('Non ti ho chiamato perché ', 'pensavo', ' che fossi occupato.', 'pensare', 'estado mental pasado', ['ho pensato', 'pensai', 'penserò']),
+    ],
+  },
+  {
+    id: 'imperfetto-progressivo',
+    label: 'Imperfetto progressivo',
+    rule: 'Stare al imperfetto + gerundio destaca una acción que estaba desarrollándose en un punto del pasado.',
+    drills: [
+      d('Quando hai telefonato, io ', 'stavo facendo', ' la doccia.', 'fare', 'acción interrumpida', ['facevo', 'ho fatto', 'sto facendo']),
+      d('Alle tre precise noi ', 'stavamo aspettando', ' davanti al cinema.', 'aspettare', 'proceso en un momento pasado', ['aspettavamo', 'abbiamo aspettato', 'stiamo aspettando']),
+      d('Mentre arrivava il temporale, i pescatori ', 'stavano tornando', ' al porto.', 'tornare', 'acción en desarrollo pasada', ['tornavano', 'sono tornati', 'stanno tornando']),
+      d('Ti ho visto: ', 'stavi parlando', ' con la direttrice.', 'parlare', 'escena observada en curso', ['parlavi', 'hai parlato', 'stai parlando']),
+      d('A mezzanotte Marta ', 'stava ancora lavorando', ' al computer.', 'lavorare', 'acción aún en curso', ['lavorava ancora', 'ha ancora lavorato', 'sta ancora lavorando']),
+      d('Quando si è spenta la luce, voi ', 'stavate cenando', ' in cucina.', 'cenare', 'proceso interrumpido', ['cenavate', 'avete cenato', 'state cenando']),
+      d('In quel momento il medico ', 'stava visitando', ' un paziente.', 'visitare', 'acción puntual en desarrollo', ['visitava', 'ha visitato', 'sta visitando']),
+      d('Quando è iniziata la musica, loro ', 'stavano chiacchierando', ' vicino alla porta.', 'chiacchierare', 'acción simultánea en curso', ['chiacchieravano', 'hanno chiacchierato', 'stanno chiacchierando']),
+      d('Ieri alle nove io ', 'stavo prendendo', ' il treno per Milano.', 'prendere', 'acción localizada en el pasado', ['prendevo', 'ho preso', 'sto prendendo']),
+      d('Prima dell’incidente l’autista ', 'stava guardando', ' lo specchietto.', 'guardare', 'proceso inmediatamente anterior', ['guardava', 'ha guardato', 'sta guardando']),
+    ],
+  },
+  {
+    id: 'passato-remoto',
+    label: 'Passato remoto',
+    rule: 'El passato remoto sitúa hechos concluidos en una narración o época histórica cerrada.',
+    drills: [
+      d('Dante ', 'nacque', ' a Firenze nel 1265.', 'nascere', 'biografía histórica', ['nasceva', 'è nato', 'era nato']),
+      d('Cristoforo Colombo ', 'raggiunse', ' l’America nel 1492.', 'raggiungere', 'fecha histórica cerrada', ['raggiungeva', 'ha raggiunto', 'aveva raggiunto']),
+      d('Il re ', 'lesse', ' la lettera e rimase in silenzio.', 'leggere', 'secuencia narrativa', ['leggeva', 'ha letto', 'aveva letto']),
+      d('All’improvviso la porta si ', 'aprì', ' e comparve uno sconosciuto.', 'aprire', 'evento puntual narrativo', ['apriva', 'è aperta', 'era aperta']),
+      d('Nel 1861 l’Italia ', 'divenne', ' uno Stato unitario.', 'diventare', 'hecho histórico', ['diventava', 'è diventata', 'era diventata']),
+      d('L’esploratore ', 'partì', ' all’alba e non tornò più.', 'partire', 'inicio de secuencia literaria', ['partiva', 'è partito', 'era partito']),
+      d('La principessa ', 'vide', ' una luce oltre il bosco.', 'vedere', 'evento en relato', ['vedeva', 'ha visto', 'aveva visto']),
+      d('Galileo ', 'morì', ' ad Arcetri nel 1642.', 'morire', 'dato biográfico cerrado', ['moriva', 'è morto', 'era morto']),
+      d('Il pubblico ', 'applaudì', ' quando calò il sipario.', 'applaudire', 'acción narrativa concluida', ['applaudiva', 'ha applaudito', 'aveva applaudito']),
+      d('La tempesta ', 'distrusse', ' il ponte quella notte.', 'distruggere', 'episodio remoto cerrado', ['distruggeva', 'ha distrutto', 'aveva distrutto']),
+    ],
+  },
+  {
+    id: 'trapassato-prossimo',
+    label: 'Trapassato prossimo',
+    rule: 'El trapassato prossimo expresa una acción anterior a otro punto del pasado.',
+    drills: [
+      d('Quando arrivammo, il film ', 'era già iniziato', '.', 'iniziare', 'anterioridad respecto a llegada', ['è già iniziato', 'iniziava già', 'fu già iniziato']),
+      d('Non avevo fame perché ', 'avevo già mangiato', '.', 'mangiare', 'causa anterior en el pasado', ['ho già mangiato', 'mangiavo già', 'ebbi già mangiato']),
+      d('Giulia ritrovò il libro che ', 'aveva perso', ' il giorno prima.', 'perdere', 'acción previa recuperada', ['ha perso', 'perdeva', 'ebbe perso']),
+      d('Prima di trasferirsi, loro ', 'avevano vissuto', ' dieci anni a Torino.', 'vivere', 'periodo anterior a otro pasado', ['hanno vissuto', 'vivevano', 'ebbero vissuto']),
+      d('Quando entrammo in sala, gli ospiti ', 'erano già arrivati', ' da pochi minuti.', 'arrivare', 'llegada anterior a otra acción pasada', ['sono già arrivati', 'arrivavano già', 'furono già arrivati']),
+      d('Marco conosceva bene Parigi perché ci ', 'era stato', ' molte volte.', 'essere', 'experiencia previa', ['è stato', 'stava', 'fu stato']),
+      d('La strada era bagnata: ', 'aveva piovuto', ' tutta la notte.', 'piovere', 'causa anterior', ['ha piovuto', 'pioveva', 'ebbe piovuto']),
+      d('Voi non riconosceste Anna perché ', 'era cambiata', ' molto.', 'cambiare', 'cambio previo con essere', ['è cambiata', 'cambiava', 'fu cambiata']),
+      d('Alla riunione scoprii che tutti ', 'avevano letto', ' il documento.', 'leggere', 'acción colectiva previa', ['hanno letto', 'leggevano', 'ebbero letto']),
+      d('Dopo che tu ', 'avevi chiuso', ' la porta, sentimmo un rumore.', 'chiudere', 'acción completada antes de otra', ['hai chiuso', 'chiudevi', 'avesti chiuso']),
+    ],
+  },
+  {
+    id: 'trapassato-remoto',
+    label: 'Trapassato remoto',
+    rule: 'El trapassato remoto aparece sobre todo en narración escrita para una acción inmediatamente anterior a un passato remoto.',
+    drills: [
+      d('Non appena il re ', 'ebbe letto', ' il messaggio, convocò i ministri.', 'leggere', 'non appena + passato remoto', ['aveva letto', 'ha letto', 'leggeva']),
+      d('Dopo che gli ospiti ', 'furono partiti', ', la casa tornò silenziosa.', 'partire', 'dopo che en narración literaria', ['erano partiti', 'sono partiti', 'partivano']),
+      d('Appena noi ', 'fummo entrati', ', la porta si chiuse.', 'entrare', 'acción inmediatamente anterior', ['eravamo entrati', 'siamo entrati', 'entravamo']),
+      d('Quando la regina ', 'ebbe firmato', ' il decreto, lo consegnò al messaggero.', 'firmare', 'secuencia formal narrativa', ['aveva firmato', 'ha firmato', 'firmava']),
+      d('Non appena tu ', 'avesti pronunciato', ' quelle parole, tutti tacquero.', 'pronunciare', 'anterioridad inmediata, segunda persona', ['avevi pronunciato', 'hai pronunciato', 'pronunciavi']),
+      d('Dopo che il nemico ', 'ebbe distrutto', ' il ponte, l’esercito cambiò strada.', 'distruggere', 'evento previo en relato', ['aveva distrutto', 'ha distrutto', 'distruggeva']),
+      d('Appena Marta ', 'ebbe aperto', ' il cofanetto, vide la collana.', 'aprire', 'apertura previa inmediata', ['aveva aperto', 'ha aperto', 'apriva']),
+      d('Quando i soldati ', 'ebbero attraversato', ' il fiume, montarono il campo.', 'attraversare', 'acción plural anterior', ['avevano attraversato', 'hanno attraversato', 'attraversavano']),
+      d('Non appena voi ', 'foste usciti', ', cominciò a nevicare.', 'uscire', 'salida previa con essere', ['eravate usciti', 'siete usciti', 'uscivate']),
+      d('Dopo che io ', 'ebbi terminato', ' il racconto, il giudice mi congedò.', 'terminare', 'acción previa, primera persona', ['avevo terminato', 'ho terminato', 'terminavo']),
+    ],
+  },
+  {
+    id: 'futuro-semplice',
+    label: 'Futuro semplice',
+    rule: 'El futuro semplice proyecta acciones o hipótesis posteriores al momento de habla.',
+    drills: [
+      d('Domani noi ', 'partiremo', ' molto presto.', 'partire', 'mañana', ['partiamo', 'siamo partiti', 'partivamo']),
+      d('La prossima settimana Marta ', 'inizierà', ' il nuovo lavoro.', 'iniziare', 'próxima semana', ['inizia', 'ha iniziato', 'iniziava']),
+      d('Tra un’ora ti ', 'chiamerò', ' con la risposta.', 'chiamare', 'dentro de una hora', ['chiamo', 'ho chiamato', 'chiamavo']),
+      d('Un giorno voi ', 'capirete', ' questa decisione.', 'capire', 'futuro indefinido', ['capite', 'avete capito', 'capivate']),
+      d('Stasera gli ospiti ', 'arriveranno', ' verso le nove.', 'arrivare', 'esta noche', ['arrivano', 'sono arrivati', 'arrivavano']),
+      d('Fra dieci anni questa città ', 'sarà', ' molto diversa.', 'essere', 'proyección a largo plazo', ['è', 'è stata', 'era']),
+      d('Se continui così, ', 'otterrai', ' ottimi risultati.', 'ottenere', 'consecuencia futura', ['ottieni', 'hai ottenuto', 'ottenevi']),
+      d('Non preoccuparti: io ti ', 'aiuterò', '.', 'aiutare', 'promesa', ['aiuto', 'ho aiutato', 'aiutavo']),
+      d('Secondo le previsioni, domani ', 'pioverà', '.', 'piovere', 'predicción', ['piove', 'ha piovuto', 'pioveva']),
+      d('Alla fine del corso loro ', 'riceveranno', ' un certificato.', 'ricevere', 'resultado futuro', ['ricevono', 'hanno ricevuto', 'ricevevano']),
+    ],
+  },
+  {
+    id: 'futuro-anteriore',
+    label: 'Futuro anteriore',
+    rule: 'El futuro anteriore presenta una acción ya completada antes de otro punto futuro.',
+    drills: [
+      d('Entro le sei noi ', 'avremo finito', ' il lavoro.', 'finire', 'límite futuro', ['finiremo', 'abbiamo finito', 'avremmo finito']),
+      d('Quando arriverai, io ', 'avrò già preparato', ' la cena.', 'preparare', 'anterioridad respecto a llegada futura', ['preparerò già', 'ho già preparato', 'avrei già preparato']),
+      d('Tra un mese loro ', 'saranno tornati', ' dal viaggio.', 'tornare', 'regreso completado en el futuro', ['torneranno', 'sono tornati', 'sarebbero tornati']),
+      d('Dopo che voi ', 'avrete letto', ' il contratto, ne parleremo.', 'leggere', 'acción previa a conversación futura', ['leggerete', 'avete letto', 'avreste letto']),
+      d('A quest’ora domani Marta ', 'sarà già partita', '.', 'partire', 'suposición sobre acción completada', ['partirà già', 'è già partita', 'sarebbe già partita']),
+      d('Prima di venerdì tu ', 'avrai ricevuto', ' tutti i documenti.', 'ricevere', 'fecha límite futura', ['riceverai', 'hai ricevuto', 'avresti ricevuto']),
+      d('Quando inizierà la riunione, il direttore ', 'avrà deciso', ' la strategia.', 'decidere', 'decisión anterior a evento futuro', ['deciderà', 'ha deciso', 'avrebbe deciso']),
+      d('Entro il 2030 la città ', 'avrà costruito', ' due nuove linee.', 'costruire', 'meta futura completada', ['costruirà', 'ha costruito', 'avrebbe costruito']),
+      d('Appena ', 'avremo superato', ' il ponte, faremo una pausa.', 'superare', 'acción previa a otra futura', ['supereremo', 'abbiamo superato', 'avremmo superato']),
+      d('Fra poco il film ', 'sarà finito', ' e potremo uscire.', 'finire', 'estado resultante futuro', ['finirà', 'è finito', 'sarebbe finito']),
+    ],
+  },
+  {
+    id: 'condizionale-presente',
+    label: 'Condizionale presente',
+    rule: 'El condizionale presente expresa cortesía, deseos, consejos e hipótesis actuales o futuras.',
+    drills: [
+      d('Io ', 'vorrei', ' un caffè, per favore.', 'volere', 'petición cortés', ['voglio', 'vorrò', 'avrei voluto']),
+      d('Al tuo posto, ', 'parlerei', ' con il direttore.', 'parlare', 'consejo hipotético', ['parlo', 'parlerò', 'avrei parlato']),
+      d('Potresti dirmi quanto ', 'costerebbe', ' il biglietto?', 'costare', 'pregunta cortés', ['costa', 'costerà', 'sarebbe costato']),
+      d('Con più tempo noi ', 'visiteremmo', ' anche Napoli.', 'visitare', 'hipótesis presente', ['visitiamo', 'visiteremo', 'avremmo visitato']),
+      d('Secondo il giornale, il ministro ', 'sarebbe', ' pronto a dimettersi.', 'essere', 'información no confirmada', ['è', 'sarà', 'sarebbe stato']),
+      d('Voi ', 'dovreste', ' riposare un po’.', 'dovere', 'recomendación', ['dovete', 'dovrete', 'avreste dovuto']),
+      d('Mi ', 'piacerebbe', ' imparare il giapponese.', 'piacere', 'deseo', ['piace', 'piacerà', 'sarebbe piaciuto']),
+      d('Senza traffico loro ', 'arriverebbero', ' in mezz’ora.', 'arrivare', 'resultado hipotético', ['arrivano', 'arriveranno', 'sarebbero arrivati']),
+      d('Tu mi ', 'aiuteresti', ' con queste valigie?', 'aiutare', 'solicitud amable', ['aiuti', 'aiuterai', 'avresti aiutato']),
+      d('Una soluzione diversa ', 'ridurrebbe', ' i costi.', 'ridurre', 'consecuencia posible', ['riduce', 'ridurrà', 'avrebbe ridotto']),
+    ],
+  },
+  {
+    id: 'condizionale-passato',
+    label: 'Condizionale passato',
+    rule: 'El condizionale passato expresa hipótesis no realizadas, deseos pasados o futuro visto desde el pasado.',
+    drills: [
+      d('Con più tempo io ', 'avrei finito', ' il progetto.', 'finire', 'hipótesis pasada no realizada', ['finirei', 'ho finito', 'avrò finito']),
+      d('Senza la pioggia noi ', 'saremmo usciti', ' prima.', 'uscire', 'resultado pasado irreal', ['usciremmo', 'siamo usciti', 'saremo usciti']),
+      d('Marta ha detto che ', 'sarebbe arrivata', ' alle otto.', 'arrivare', 'futuro en el pasado', ['arriverebbe', 'è arrivata', 'sarà arrivata']),
+      d('Ti ', 'avrei chiamato', ', ma non avevo il numero.', 'chiamare', 'intención pasada frustrada', ['chiamerei', 'ho chiamato', 'avrò chiamato']),
+      d('Voi ', 'avreste dovuto', ' avvertirci prima.', 'dovere', 'reproche sobre el pasado', ['dovreste', 'avete dovuto', 'avrete dovuto']),
+      d('Loro ', 'sarebbero rimasti', ' volentieri, ma era tardi.', 'rimanere', 'deseo pasado impedido', ['rimarrebbero', 'sono rimasti', 'saranno rimasti']),
+      d('Secondo le prime notizie, il ladro ', 'sarebbe fuggito', ' all’estero.', 'fuggire', 'noticia pasada no confirmada', ['fuggirebbe', 'è fuggito', 'sarà fuggito']),
+      d('Al tuo posto non ', 'avrei accettato', ' quella proposta.', 'accettare', 'valoración hipotética pasada', ['accetterei', 'ho accettato', 'avrò accettato']),
+      d('Credevamo che il treno ', 'sarebbe partito', ' più tardi.', 'partire', 'posterioridad respecto a pasado', ['partirebbe', 'è partito', 'sarà partito']),
+      d('Con il tuo aiuto lei ', 'avrebbe risolto', ' il problema.', 'risolvere', 'consecuencia pasada irreal', ['risolverebbe', 'ha risolto', 'avrà risolto']),
+    ],
+  },
+  {
+    id: 'imperativo',
+    label: 'Imperativo',
+    rule: 'El imperativo formula instrucciones, invitaciones y prohibiciones dirigidas al interlocutor.',
+    drills: [
+      d('Marco, ', 'chiudi', ' la finestra, per favore.', 'chiudere', 'orden a tu', ['chiude', 'chiuderai', 'hai chiuso']),
+      d('Ragazzi, ', 'ascoltate', ' con attenzione.', 'ascoltare', 'orden a voi', ['ascoltano', 'ascolterete', 'avete ascoltato']),
+      d('Signora, ', 'entri', ' pure e si accomodi.', 'entrare', 'imperativo formal', ['entra', 'entrerà', 'è entrata']),
+      d('Non ', 'toccare', ' quel pulsante!', 'toccare', 'prohibición a tu', ['tocchi', 'toccherai', 'hai toccato']),
+      d('Per arrivare al museo, ', 'girate', ' a destra.', 'girare', 'instrucción a voi', ['girano', 'girerete', 'avete girato']),
+      d('Anna, ', 'dimmi', ' la verità.', 'dire', 'imperativo irregular con pronombre', ['mi dici', 'mi dirai', 'mi hai detto']),
+      d('Bambini, non ', 'correte', ' sulle scale.', 'correre', 'prohibición a voi', ['corrono', 'correrete', 'avete corso']),
+      d('Professore, ', 'legga', ' questo documento.', 'leggere', 'petición formal', ['leggi', 'leggerà', 'ha letto']),
+      d('Prima di uscire, ', 'spegni', ' tutte le luci.', 'spegnere', 'instrucción a tu', ['spegne', 'spegnerai', 'hai spento']),
+      d('Coraggio, ', 'andiamo', ' insieme!', 'andare', 'exhortación inclusiva', ['andate', 'andremo', 'siamo andati']),
+    ],
+  },
+] as const
