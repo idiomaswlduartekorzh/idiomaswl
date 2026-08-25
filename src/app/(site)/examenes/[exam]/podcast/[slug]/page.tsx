@@ -74,6 +74,7 @@ export default async function ExamPodcastPage({ params }: PodcastPageProps) {
         '@id': `${url}#episode`,
         url,
         name: episode.title,
+        alternateName: episode.alternateName,
         description: episode.fullDescription,
         duration: episode.durationIso,
         inLanguage: episode.locale,

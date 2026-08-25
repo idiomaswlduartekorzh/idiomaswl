@@ -24,6 +24,7 @@ export type ExamPodcastLink = {
 };
 
 export type ExamPodcastEpisode = PodcastLibraryEpisode & {
+  alternateName?: string;
   fullDescription: string;
   outcomes: readonly string[];
   editorialTitle: string;
@@ -129,6 +130,7 @@ export const EXAM_PODCASTS: readonly ExamPodcastEpisode[] = [
   {
     ...ICFES_SEVEN_PARTS_PODCAST,
     ...byId('icfes-seven-parts'),
+    alternateName: ICFES_SEVEN_PARTS_PODCAST.title,
     fullDescription: ICFES_SEVEN_PARTS_PODCAST.description,
     notes: ICFES_SEVEN_PARTS_NOTES,
     relatedLinks: [
@@ -157,6 +159,7 @@ export const EXAM_PODCASTS: readonly ExamPodcastEpisode[] = [
   {
     ...DIGITAL_SAT_STRATEGY_MAP_PODCAST,
     ...byId('digital-sat-strategy-map'),
+    alternateName: DIGITAL_SAT_STRATEGY_MAP_PODCAST.title,
     fullDescription: DIGITAL_SAT_STRATEGY_MAP_PODCAST.description,
     notes: DIGITAL_SAT_STRATEGY_MAP_NOTES,
     relatedLinks: [
