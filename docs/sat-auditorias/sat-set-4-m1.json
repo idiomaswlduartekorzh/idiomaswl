@@ -1,0 +1,21 @@
+{
+  "modulo": "sat-set-4-m1",
+  "fecha": "2026-08-24",
+  "auditorias": {
+    "clave": { "agente": "Codex — revisión editorial no independiente", "veredicto": "APTO", "itemsConDosClaves": 0, "notas": "Resolución de 27 ítems y revisión de distractores; evidencia en informes/sat-set-4-m1-editorial.md." },
+    "sesgo": { "agente": "panel heurístico reproducible", "veredicto": "APTO", "pruebaACiegasPct": 24.7, "notas": "Ningún ítem alcanzó 75 % de acierto sin pasaje; no sustituye un panel humano." },
+    "equidad": { "agente": "Codex — revisión editorial no independiente", "veredicto": "APTO", "banderas": 0, "notas": "La evidencia necesaria está en cada estímulo; no se exige conocimiento cultural, regional o económico externo." },
+    "lengua": { "agente": "Codex + controles mecánicos", "veredicto": "APTO", "bloqueantes": 0, "notas": "Inglés estadounidense, enunciados canónicos, razones A–D completas y huecos sin duplicación." },
+    "dificultad": { "agente": "matriz editorial + guardián de curva", "veredicto": "APTO", "notas": "7 fáciles, 11 medios y 9 difíciles; media 2,07." },
+    "originalidad": { "agente": "redacción original + búsquedas locales y web representativas", "veredicto": "APTO", "banderasRojas": 0, "notas": "Cero secuencias internas comunes de ocho palabras entre 324 ítems. La búsqueda web representativa no equivale a rastreo exhaustivo." },
+    "simulacion": { "agente": "panel heurístico reproducible", "veredicto": "APTO", "tramposoPct": 24.7, "notas": "Prueba automática reproducible, no humana ni multi-modelo." }
+  },
+  "veredicto": "APTO",
+  "quedaAbierto": ["Panel humano o multi-modelo independiente recomendado como evidencia adicional."],
+  "publicable": true,
+  "bloqueantesDeProducto": [],
+  "notaSobreElActa": "Certifica contenido con revisión de Codex y controles reproducibles; no afirma independencia. QA de producto: contrato adaptativo, TypeScript, ambas ramas, resultados, reintento y móvil. El build de release permanece como puerta posterior del despliegue.",
+  "huellas": {
+    "q01": "3a5de8f71a24", "q02": "3798b907da29", "q03": "8577ce005f03", "q04": "649c5e54940e", "q05": "f4a1a956f16e", "q06": "b8c532476fa4", "q07": "76c00b648565", "q08": "000def006165", "q09": "b57bb77c771b", "q10": "0324ce2b0241", "q11": "8887cdc01813", "q12": "938ebc51c288", "q13": "ff582b5acca4", "q14": "879b3365d653", "q15": "4f9ef1512be2", "q16": "8464e178a01e", "q17": "361f74ecbf70", "q18": "ce1d9e8ebdae", "q19": "bf342efb6d39", "q20": "ea457616797c", "q21": "1612a57a35c7", "q22": "3859abfed2c5", "q23": "4b48829facfb", "q24": "da9e140dd909", "q25": "cdf15aa72994", "q26": "87b1727aa33e", "q27": "7add73f6d8db"
+  }
+}
