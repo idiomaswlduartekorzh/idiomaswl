@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · mobilidade/serviços 13. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_3C: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-ticket-leaves-from-other-terminal', slug: 'ticket-leaves-from-other-terminal', sequence: 13,
+    language: 'portugues', level: 'a2', title: 'El pasaje sale de otra terminal', titleTarget: 'A passagem sai de outro terminal',
+    setting: 'Segunda-feira, às 9h08, no terminal Central de Ribeirão Preto', settingEs: 'La terminal Central de Ribeirão Preto, el lunes a las 9:08 a. m.',
+    speechActs: ['pedir-aclaracion', 'pedir-favor', 'proponer-alternativa'], power: 'b>a', initiator: 'a', outcome: 'acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#13',
+    roles: [
+      {
+        id: 'a', name: 'passageiro no terminal Central', nameEs: 'quien llegó a la terminal Central', headline: 'Sua passagem para Franca continua válida, mas o embarque das 10h05 fica no terminal Sul',
+        briefing: ['**Mostre a passagem e confirme antes de comprar outra.** Use **o senhor/a senhora** com o atendente. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao atendente. Não cancele o trecho principal: pergunte primeiro se ele continua válido.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você chegou ao terminal Central para viajar a Franca às 10h05. O painel não mostra o ônibus, e o bilhete informa em letras pequenas que o embarque sai do terminal Sul.' },
+          { label: 'Objetivo', text: 'Manter o trecho já pago, chegar ao terminal Sul com sua bagagem e comprar apenas o transporte necessário entre os dois terminais.' },
+          { label: 'O que não é possível', items: ['Comprar outra passagem completa de R$ 86,00.', 'Ir de táxi: a estimativa no aplicativo é R$ 54,00.', 'Chegar depois das 9h55: o embarque fecha dez minutos antes da saída.'] },
+          { label: 'Só você sabe', items: ['O bilhete RP-540 está pago, no seu nome, e mostra assento 18 no trecho Sul–Franca.', 'Você leva uma mala de 18 kg e uma mochila pequena.', 'Tem R$ 25,00 disponíveis e aceita uma conexão oficial que entregue a mala no terminal Sul.'] },
+          { label: 'Se vocês não resolverem', text: 'Você perde o ônibus ou paga novamente por um trecho que já está válido.' },
+        ],
+        facts: [
+          { label: 'Bilhete', value: 'RP-540 · pago' }, { label: 'Trecho', value: 'terminal Sul → Franca' },
+          { label: 'Saída', value: '10h05' }, { label: 'Fechamento do embarque', value: '9h55' },
+          { label: 'Assento', value: '18' }, { label: 'Bagagem', value: 'mala 18 kg + mochila' },
+          { label: 'Dinheiro disponível', value: 'R$ 25,00' }, { label: 'Táxi estimado', value: 'R$ 54,00' },
+        ],
+        vocab: [
+          { word: 'assento', whatItIs: 'lugar numerado onde o passageiro se senta', here: 'número 18 no ônibus principal' },
+          { word: 'conexão', whatItIs: 'transporte que liga duas partes de uma viagem', here: 'trajeto entre os terminais' },
+          { word: 'embarque', whatItIs: 'momento em que passageiros entram no veículo', here: 'processo que fecha às 9h55' },
+          { word: 'letras pequenas', whatItIs: 'informação escrita em tamanho reduzido', here: 'local do terminal de saída no bilhete' },
+          { word: 'mala despachada', whatItIs: 'bagagem entregue à equipe para viajar no compartimento', here: 'volume de 18 kg' },
+          { word: 'passagem completa', whatItIs: 'bilhete de todo o trecho principal', here: 'compra que não deve ser repetida' },
+          { word: 'terminal', whatItIs: 'local de saída e chegada de ônibus', here: 'Central é o local atual e Sul é o embarque' },
+          { word: 'trecho válido', whatItIs: 'parte da viagem que continua autorizada e paga', here: 'Sul–Franca no RP-540' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Confirme o trecho já pago antes de discutir a conexão.',
+        exponents: [
+          { purpose: 'Aceitar a conexão', form: '`Compro a conexão de R$ … se ela chegar antes das …`', effect: 'liga a compra ao horário de embarque' },
+          { purpose: 'Confirmar a validade', form: '`O trecho Sul–Franca e o assento 18 continuam válidos?`', effect: 'protege a compra principal' },
+          { purpose: 'Dar o limite', form: '`Tenho até R$ … para chegar ao outro terminal.`', effect: 'define a margem econômica' },
+          { purpose: 'Explicar a bagagem', form: '`Estou com uma mala de … kg e uma mochila.`', effect: 'permite verificar a regra da conexão' },
+          { purpose: 'Pedir esclarecimento', form: '`Este ônibus sai daqui ou do terminal Sul?`', effect: 'confirma o local sem suposição' },
+          { purpose: 'Pedir uma alternativa', form: '`Existe transporte oficial entre os dois terminais?`', effect: 'busca apenas o trecho que falta' },
+          { purpose: 'Verificar o plano', form: '`Então mantenho o RP-540, pego a conexão às … e embarco às …, certo?`', effect: 'confere bilhete, transferência e saída' },
+        ],
+        success: 'Você confirmou que RP-540 e assento 18 continuam válidos, declarou bagagem e limite e comprou somente a conexão de R$ 18,00. Confirmou saída, chegada e fechamento do embarque.',
+      },
+      {
+        id: 'b', name: 'atendente da empresa de ônibus', nameEs: 'quien atiende en la empresa de autobuses', headline: 'Há uma van oficial às 9h20, mas a venda fecha em dez minutos e aceita só uma mala despachada',
+        briefing: ['**Confira a passagem antes de vender.** Use **o senhor/a senhora** com o passageiro. **O passageiro começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao passageiro. Não venda outro trecho Sul–Franca: o bilhete já está ativo.'],
+        prose: [
+          { label: 'Situação atual', text: 'Um passageiro procura no terminal Central um ônibus que sai do terminal Sul. O sistema mostra o bilhete RP-540 ativo para as 10h05.' },
+          { label: 'Objetivo', text: 'Preservar a passagem principal, vender apenas a conexão adequada e garantir que passageiro e mala cheguem antes do fechamento.' },
+          { label: 'O que não é possível', items: ['Mudar a saída do ônibus principal para o terminal Central.', 'Garantir embarque se a van perder a saída das 9h20.', 'Levar mais de uma mala despachada na conexão; mochilas ficam com o passageiro.'] },
+          { label: 'Só você sabe', items: ['A van oficial custa R$ 18,00, sai às 9h20 e chega ao terminal Sul às 9h42.', 'A venda fecha às 9h18 e restam seis lugares.', 'A mala recebe etiqueta até Franca na própria bilheteria; a mochila vai com o passageiro.'] },
+          { label: 'Se vocês não resolverem', text: 'O passageiro compra um bilhete desnecessário ou não chega a tempo ao embarque principal.' },
+        ],
+        facts: [
+          { label: 'RP-540', value: 'ativo · assento 18' }, { label: 'Ônibus principal', value: 'terminal Sul · 10h05' },
+          { label: 'Van oficial', value: '9h20–9h42' }, { label: 'Venda da van', value: 'até 9h18' },
+          { label: 'Preço', value: 'R$ 18,00' }, { label: 'Lugares', value: '6 restantes' },
+          { label: 'Bagagem permitida', value: '1 mala despachada + mochila de mão' }, { label: 'Etiqueta', value: 'destino final · Franca' },
+        ],
+        vocab: [
+          { word: 'bilhete ativo', whatItIs: 'passagem válida que ainda pode ser usada', here: 'estado do RP-540' },
+          { word: 'bilheteria', whatItIs: 'local onde passagens são conferidas e vendidas', here: 'ponto que etiqueta a mala' },
+          { word: 'compartimento de bagagem', whatItIs: 'espaço do veículo para malas grandes', here: 'local da mala de 18 kg' },
+          { word: 'etiquetar a mala', whatItIs: 'prender identificação e destino à bagagem', here: 'ação que mantém Franca como destino' },
+          { word: 'lugar restante', whatItIs: 'assento que ainda não foi vendido', here: 'um dos seis disponíveis na van' },
+          { word: 'mochila de mão', whatItIs: 'bagagem pequena que fica com o passageiro', here: 'volume que não será despachado' },
+          { word: 'transporte oficial', whatItIs: 'serviço reconhecido pela empresa', here: 'van entre Central e Sul' },
+          { word: 'venda encerrada', whatItIs: 'momento depois do qual não se compra mais', here: 'estado da conexão após 9h18' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Explique “trecho ativo”, venda, bagagem e etiqueta antes de cobrar.',
+        exponents: [
+          { purpose: 'Confirmar o bilhete', form: '`O RP-540 está ativo para o terminal Sul, às …, assento …`', effect: 'preserva o trecho principal' },
+          { purpose: 'Dar o limite', form: '`A venda da conexão termina às … e a van não espera.`', effect: 'torna o prazo claro' },
+          { purpose: 'Explicar a bagagem', form: '`A van aceita uma mala despachada; a mochila fica com o senhor.`', effect: 'distingue os dois volumes' },
+          { purpose: 'Oferecer a conexão', form: '`Temos uma van oficial por R$ …, com chegada às …`', effect: 'propõe só o trecho necessário' },
+          { purpose: 'Pedir os dados', form: '`Pode confirmar código, nome e peso da mala?`', effect: 'verifica passagem e regra antes de vender' },
+          { purpose: 'Resumir a viagem', form: '`A van sai às …, chega às … e o ônibus parte às …`', effect: 'organiza a sequência completa' },
+          { purpose: 'Verificar a condição', form: '`O senhor leva uma mala e uma mochila, dentro do limite, certo?`', effect: 'confirma elegibilidade para a conexão' },
+        ],
+        success: 'Você manteve RP-540 ativo, conferiu bagagem e vendeu somente a van por R$ 18,00. Etiquetou a mala até Franca e repetiu venda, chegada e embarque.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, confira RP-540, terminal de saída, peso e quantidade de bagagem. Não mostre a tela ao passageiro.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Atualização da operação · 9h13**' },
+        { kind: 'table', head: ['Dado', 'Confirmação'], rows: [['Van', '9h20'], ['Chegada', '9h42'], ['Venda', 'fecha 9h18'], ['Lugares', '6'], ['Bagagem', '1 mala + mochila']] },
+        { kind: 'p', text: 'A conexão está disponível e chega antes do embarque, mas só pode ser vendida depois de confirmar a quantidade de bagagem.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem quando as duas pessoas puderem repetir estes cinco elementos:**' },
+      { kind: 'ol', items: ['O RP-540, o assento 18 e o trecho Sul–Franca continuam válidos.', 'A conexão custa R$ 18,00 e a venda fecha às 9h18.', 'A van sai do Central às 9h20 e chega ao Sul às 9h42.', 'A mala de 18 kg recebe etiqueta até Franca; a mochila fica com o passageiro.', 'O embarque principal fecha às 9h55 e o ônibus parte às 10h05.'] },
+    ],
+    debrief: ['¿Qué parte del viaje ya estaba pagada y cuál faltaba?', '¿Qué datos hicieron viable la conexión?', 'Repitan en portugués terminales, equipaje, precio y horarios sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'o passageiro foi ao terminal errado y veio cedo reconstruyen el desplazamiento.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vou mantê-lo y posso etiquetá-la retoman billete y maleta.' },
+      { slug: 'para-vs-por-a2', level: 'a2', title: 'Para vs. por en portugués A2', rationale: 'para Franca y por R$ 18 distinguem destino y precio.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'a van chegará y o passageiro embarcará organizan la conexión.' },
+      { slug: 'verbos-modais-a2', level: 'a2', title: 'Verbos modales en portugués A2', rationale: 'pode manter, precisa chegar y consegue levar expresan opción y necesidad.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, por isso y antes que conectan límite y secuencia.' },
+    ],
+  },
+]
