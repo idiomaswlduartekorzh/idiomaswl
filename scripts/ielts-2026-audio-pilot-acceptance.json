@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "29578a9a6f3a327938d6061fd70592b45386da566c7785fa51747030506b5775",
+  "pilot_set": 4,
+  "status": "pending_generation_and_owner_listening_review",
+  "audio_sha256": null,
+  "qa_report_sha256": null,
+  "approved_at": null
+}

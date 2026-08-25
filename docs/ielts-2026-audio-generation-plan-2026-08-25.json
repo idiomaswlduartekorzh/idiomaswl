@@ -6,7 +6,7 @@
   "officialReference": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening",
   "officialSampleReference": "https://ielts.org/cdn/ielts-sample-tests/ielts-listening-sample-tasks-2023.pdf",
   "editorialGate": {
-    "status": "blocked",
+    "status": "passed",
     "rationale": "The 2,200-word threshold is a conservative WeLearn density gate derived from 44 response positions across eight official sample-task tapescripts; IELTS does not publish a transcript word minimum.",
     "minimumTranscriptWordsPerSet": 2200,
     "targetIntegralDurationSeconds": [
@@ -31,11 +31,11 @@
   "invoice": {
     "priceUsdPer1000Characters": 0.05,
     "creditsPerCharacter": 0.5,
-    "currentRejectedSourceCharacters": 229446,
-    "currentRejectedSourceEstimatedUsdBeforeTax": 11.4723,
-    "projectedMinimumCharactersAfterEditorialGate": 216075,
-    "projectedMinimumCreditsAfterEditorialGate": 108038,
-    "projectedMinimumUsdBeforeTax": 10.8038,
+    "sourceCharacters": 229446,
+    "sourceEstimatedUsdBeforeTax": 11.4723,
+    "projectedMinimumCharactersAfterEditorialGate": 229446,
+    "projectedMinimumCreditsAfterEditorialGate": 114723,
+    "projectedMinimumUsdBeforeTax": 11.4723,
     "retryContingencyNotIncluded": true
   },
   "rows": [
@@ -49,7 +49,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 14023,
-      "projectedCharactersAtGate": 13287,
+      "projectedCharactersAtGate": 14023,
       "transcriptSha256": "b966f58c5f47415a5ac3fa94ee73dd4e9d5376916fd076d92b351c2d93d40bc7",
       "requestSegments": 50,
       "profiles": [
@@ -426,7 +426,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13311,
-      "projectedCharactersAtGate": 12705,
+      "projectedCharactersAtGate": 13311,
       "transcriptSha256": "02a74aa224e43230189c7a9ce58a357d6828496e02d103860f2f715d347e460e",
       "requestSegments": 57,
       "profiles": [
@@ -852,7 +852,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13331,
-      "projectedCharactersAtGate": 12626,
+      "projectedCharactersAtGate": 13331,
       "transcriptSha256": "eb538604d2a394d0d779be7ec46b9aa0fff22f28a8ec9acaf6c8b7214f6ef084",
       "requestSegments": 55,
       "profiles": [
@@ -1265,7 +1265,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13533,
-      "projectedCharactersAtGate": 12702,
+      "projectedCharactersAtGate": 13533,
       "transcriptSha256": "4a670db1872f6dfbb3fc2ab55dd65c315d289f276c115cac527248b3fdcc448c",
       "requestSegments": 62,
       "profiles": [
@@ -1725,7 +1725,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13735,
-      "projectedCharactersAtGate": 12659,
+      "projectedCharactersAtGate": 13735,
       "transcriptSha256": "315649a6e4f3ec82db9ba4c59ba351512aa425f4f6876d5bf3359a308cdc827a",
       "requestSegments": 66,
       "profiles": [
@@ -2214,7 +2214,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13841,
-      "projectedCharactersAtGate": 12625,
+      "projectedCharactersAtGate": 13841,
       "transcriptSha256": "62e56029bb1ee4eeef0016f90e31aa83e4b6c0d3061acc918ca5164483a6301f",
       "requestSegments": 61,
       "profiles": [
@@ -2668,7 +2668,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13509,
-      "projectedCharactersAtGate": 12728,
+      "projectedCharactersAtGate": 13509,
       "transcriptSha256": "dc8b5d9269b23fae7ade624d000b330ff016e356555a368a406a4fd12b32eac9",
       "requestSegments": 52,
       "profiles": [
@@ -3059,7 +3059,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13585,
-      "projectedCharactersAtGate": 12537,
+      "projectedCharactersAtGate": 13585,
       "transcriptSha256": "c0253a05841217e8494b3c6ed3bef0cb60dae0523d15b1f74864f56eacd5abdf",
       "requestSegments": 58,
       "profiles": [
@@ -3491,7 +3491,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13052,
-      "projectedCharactersAtGate": 12330,
+      "projectedCharactersAtGate": 13052,
       "transcriptSha256": "fdcc58be9be5cc2f24781e0e6d225f260aecefcdcbdd757d46d88fcfc1322f78",
       "requestSegments": 62,
       "profiles": [
@@ -3953,7 +3953,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13487,
-      "projectedCharactersAtGate": 12823,
+      "projectedCharactersAtGate": 13487,
       "transcriptSha256": "15893355b9acaa42f528e6fc6542426f3d9eeb6e403b6974396f118ccd78575e",
       "requestSegments": 57,
       "profiles": [
@@ -4379,7 +4379,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13715,
-      "projectedCharactersAtGate": 12673,
+      "projectedCharactersAtGate": 13715,
       "transcriptSha256": "e53ab54994ce0c6a5bd098318fffe7b03edf4a79fda1fa1a4fbe207bccd98c1f",
       "requestSegments": 56,
       "profiles": [
@@ -4799,7 +4799,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13363,
-      "projectedCharactersAtGate": 12700,
+      "projectedCharactersAtGate": 13363,
       "transcriptSha256": "108bf3000274b6684d8ff2cc1d513458d5194ef25150c47f736bac3a652169be",
       "requestSegments": 54,
       "profiles": [
@@ -5205,7 +5205,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13230,
-      "projectedCharactersAtGate": 12622,
+      "projectedCharactersAtGate": 13230,
       "transcriptSha256": "ee8dd6e75b88c50d2b8143191388581f514e2f609a99de0179e7d7cf2dfe2d5e",
       "requestSegments": 56,
       "profiles": [
@@ -5625,7 +5625,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13486,
-      "projectedCharactersAtGate": 12811,
+      "projectedCharactersAtGate": 13486,
       "transcriptSha256": "77f04c6e2ecfc1aac8ce5ba5a1a49fcc62d362c173b69f85fbcd49a0f6f47042",
       "requestSegments": 59,
       "profiles": [
@@ -6066,7 +6066,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13586,
-      "projectedCharactersAtGate": 12823,
+      "projectedCharactersAtGate": 13586,
       "transcriptSha256": "06fea33a73de73d3185bf8dd417ec1ecfc7ead6121b0c50a0fe45177e31fa337",
       "requestSegments": 57,
       "profiles": [
@@ -6493,7 +6493,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13509,
-      "projectedCharactersAtGate": 12701,
+      "projectedCharactersAtGate": 13509,
       "transcriptSha256": "ac1fbca5febe19d4e9749ef0c9539833abd812f9fea050bd477562d47f7b45f8",
       "requestSegments": 55,
       "profiles": [
@@ -6906,7 +6906,7 @@
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "sourceCharacters": 13150,
-      "projectedCharactersAtGate": 12723,
+      "projectedCharactersAtGate": 13150,
       "transcriptSha256": "27dc8c6e03b7b4c36930d0dba4bd1459c04a035a1f5fd7b67952ad3b3209b2a8",
       "requestSegments": 58,
       "profiles": [
@@ -7331,5 +7331,5 @@
       "releaseAction": "generate-after-editorial-and-audio-qa"
     }
   ],
-  "manifestSha256": "61f9631c2cf3ed55cbf9e9d0d24b5c140ce20cdb2557306fb77fa6acca0c2451"
+  "manifestSha256": "29578a9a6f3a327938d6061fd70592b45386da566c7785fa51747030506b5775"
 }

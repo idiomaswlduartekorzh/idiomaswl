@@ -88,7 +88,10 @@ for (const setNumber of SETS) {
   const transcript = sections.map(section => section.transcript.trim()).join('\n\n');
   const transcriptWords = words(transcript);
   const sourceCharacters = segments.reduce((total, segment) => total + segment.characters, 0);
-  const projectedCharactersAtGate = Math.ceil(sourceCharacters * MIN_TRANSCRIPT_WORDS / transcriptWords);
+  const projectedCharactersAtGate = Math.max(
+    sourceCharacters,
+    Math.ceil(sourceCharacters * MIN_TRANSCRIPT_WORDS / transcriptWords),
+  );
   const existingDuration = durationSeconds(existingPath);
   rows.push({
     mediaId: `media:ielts:set-${setNumber}:listening-integral-v2`,
@@ -121,7 +124,7 @@ const manifestCore = {
   officialReference: 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening',
   officialSampleReference: 'https://ielts.org/cdn/ielts-sample-tests/ielts-listening-sample-tasks-2023.pdf',
   editorialGate: {
-    status: 'blocked',
+    status: rows.every(row => row.transcriptWords >= MIN_TRANSCRIPT_WORDS) ? 'passed' : 'blocked',
     rationale: 'The 2,200-word threshold is a conservative WeLearn density gate derived from 44 response positions across eight official sample-task tapescripts; IELTS does not publish a transcript word minimum.',
     minimumTranscriptWordsPerSet: MIN_TRANSCRIPT_WORDS,
     targetIntegralDurationSeconds: [1620, 1980],
@@ -143,8 +146,8 @@ const manifestCore = {
   invoice: {
     priceUsdPer1000Characters: PRICE_USD_PER_1000_CHARACTERS,
     creditsPerCharacter: CREDITS_PER_CHARACTER,
-    currentRejectedSourceCharacters: sourceCharacters,
-    currentRejectedSourceEstimatedUsdBeforeTax: Number((sourceCharacters / 1000 * PRICE_USD_PER_1000_CHARACTERS).toFixed(4)),
+    sourceCharacters,
+    sourceEstimatedUsdBeforeTax: Number((sourceCharacters / 1000 * PRICE_USD_PER_1000_CHARACTERS).toFixed(4)),
     projectedMinimumCharactersAfterEditorialGate: projectedCharactersAtGate,
     projectedMinimumCreditsAfterEditorialGate: Math.ceil(projectedCharactersAtGate * CREDITS_PER_CHARACTER),
     projectedMinimumUsdBeforeTax: Number((projectedCharactersAtGate / 1000 * PRICE_USD_PER_1000_CHARACTERS).toFixed(4)),

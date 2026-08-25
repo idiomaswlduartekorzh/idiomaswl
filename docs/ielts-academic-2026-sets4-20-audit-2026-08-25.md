@@ -2,7 +2,7 @@
 
 Fecha de contraste: 25 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  
-Dictamen actual: **APROBADO excepto Listening — los 17 sets requieren guion y audio v2**
+Dictamen actual: **APROBADO excepto Listening — los 17 sets requieren audio v2**
 
 ## Alcance responsable
 
@@ -139,26 +139,32 @@ eliminar la antigua deriva en la navegación compartida.
    proveedor, modelo y techo de gasto. El casting propuesto cubre 32 perfiles con 12 voces
    de multiplicador 1; sigue marcado `pending_owner_approval`. No se ha llamado ninguna API
    de generación de voz.
-2. Reemplazar los nueve MP3 4–12 y generar los ocho MP3 13–20 con duración 27–33 min,
+2. Generar primero un piloto aislado del Set 4, ejecutar QA técnica y revisión auditiva
+   humana, y registrar su aceptación. El lote completo permanece bloqueado hasta entonces.
+3. Reemplazar los nueve MP3 4–12 y generar los ocho MP3 13–20 con duración 27–33 min,
    reproducción única, mono 44,1 kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
-3. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
+4. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
    tamaño, hash, duración, loudness, pico y silencios. El plan actualizado proyecta
-   216.075 caracteres y USD 10,8038 antes de impuestos y reintentos; no es una autorización.
-4. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
+   229.446 caracteres, 114.723 créditos y USD 11,4723 antes de impuestos y reintentos;
+   no es una autorización.
+5. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
    sólo cuando todos los bloqueos estén cerrados.
-5. Tras generar audio, repetir smoke de las 17 rutas Listening, móvil 320/390, teclado,
+6. Tras generar audio, repetir smoke de las 17 rutas Listening, móvil 320/390, teclado,
    lector de pantalla y verificación humana de las cuatro partes de cada MP3.
 
 Consulta de cuenta sólo lectura: plan Creator con 11.052 créditos disponibles frente a
-108.038 requeridos para el lote mínimo; el próximo reinicio informado por ElevenLabs es
+114.723 requeridos para el lote completo; el piloto Set 4 requiere 7.012. El próximo
+reinicio informado por ElevenLabs es
 el 5 de septiembre de 2026 a las 18:13:51 (Bogotá). La cuenta no permite extender el límite.
 Por tanto, incluso con aprobación del propietario, el lote completo no puede ejecutarse hoy.
 
 ## Evidencia reproducible
 
 ```bash
-npm run audit:ielts-academic-2026  # hoy debe terminar BLOCKED en guion/audio
+npm run audit:ielts-academic-2026  # hoy debe terminar BLOCKED sólo en audio
 npm run plan:ielts-audio-2026      # valida plan, hashes y factura mínima; no genera
+npm run audio:ielts-2026 -- --verify-source # valida fuente/casting sin API ni gasto
+npm run audit:ielts-generated-audio -- <dir> # QA del piloto/lote fuera de public/
 npm run test:ielts-academic-2026   # contrato, claves privadas y audio bloqueado
 npm run test:ielts-review          # scoring/review pipeline
 npm run test:ielts-fullstack       # privacidad, presentación, SSR y navegación
@@ -168,5 +174,5 @@ npx next build --webpack
 ```
 
 La salida `BLOCKED` sigue siendo intencional: impide presentar Sets 4–20 como equivalentes
-en Listening hasta que los 17 guiones y audios v2 pasen el mismo gate técnico y editorial
+en Listening hasta que los 17 audios v2 pasen el mismo gate técnico y editorial
 usado en TOEFL.
