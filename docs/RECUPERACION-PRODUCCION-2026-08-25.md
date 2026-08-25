@@ -2,14 +2,16 @@
 
 Estado: recuperación en ejecución.
 
-Fecha de corte: 25 de agosto de 2026, 09:30 COT.
+Fecha de corte: 25 de agosto de 2026, 13:47 COT.
 
 Producción verificada:
 
 - repositorio: `idiomaswlduartekorzh/idiomaswl`;
 - rama: `main`;
-- SHA: `a036f93c5f151e0e49d90823f0e9dded815e0e6b`;
+- SHA verificado para SAT Set 5: `17fc7487afd037d323eeaf2ebc1085d05354cc7c`;
 - Vercel: `READY`;
+- deployment: `dpl_4NkTRTkBUYY3xgbtuhzmfh46ZjAm` ·
+  `https://idiomaswl-60ige2wvn-idiomaswlduartekorzhs-projects.vercel.app`;
 - fuente del despliegue: GitHub, rama `main`;
 - dominios: `idiomaswl.com`, `www.idiomaswl.com`, `idiomaswl.vercel.app`.
 
@@ -41,6 +43,7 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 | Clase Claude independiente | `src/app/clase-claude/route.ts` y sus contenidos existen en `origin/main`. | `DESPLEGADO`; no restaurar la rama antigua completa |
 | Sistema PDF actual | Componentes y `src/lib/pdf/` existen en `origin/main`. | `DESPLEGADO`; no sustituir con copias antiguas del árbol sucio |
 | Landings y blog de japonés/ruso | Los archivos locales marcados como modificados coinciden byte a byte con `origin/main` en la auditoría. | `DESPLEGADO` |
+| SAT Sets 1–5 | Rama `codex/sat-scale-to-20-20260824` integrada por fast-forward en `main` con SHA `17fc7487`. Deployment `dpl_4NkTRTkBUYY3xgbtuhzmfh46ZjAm`, fuente GitHub `main`, `READY`. Smoke oficial 14/14; hub, Sets 1–5 y login HTTP 200; `/dashboard` redirige 307 a login. | `DESPLEGADO`; conservar cinco sets y pausar la expansión hasta retomar el proyecto. |
 
 ## 3. Candidatos de recuperación e integración
 
@@ -60,7 +63,6 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 | Trabajo | Rama/SHA de corte | Estado observado | Condición para publicar |
 |---|---|---|---|
-| SAT Set 5 | `codex/sat-scale-to-20-20260824` · `5e6c05f9`; base `6d2620f5` | `LISTO_PARA_INTEGRAR`; cinco sets, 15 módulos y 405 ítems. Doce puertas, fábrica 10/10, adaptatividad, originalidad, TypeScript, prebuild, build y ambas ramas en navegador aprobados el 25 ago 2026. | `MERGE`/fast-forward desde `main`; después exigir Vercel `READY`, SHA de `main` y smoke del hub más Sets 1–5 antes de marcar `DESPLEGADO`. |
 | Piloto registro/pagos TOEFL | `codex/toefl-pilot-registration` · `5def8b7b` | 1 parche único; 206 detrás; incluye migración y comercio. | Decisión de producto, revisión de seguridad/RLS, migración, pruebas de pago y reimplementación actualizada. |
 | Parche SAT adaptativo | `feat/sat-modulo-2`; parche `afd24f7d` | Rama 220 detrás; solo un parche no equivalente. | Comprobar si el motor actual ya resuelve la intención y reimplementar si hace falta. |
 
@@ -162,3 +164,8 @@ Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview
   Los cinco sets suman 15 módulos y 405 preguntas autoradas. Pasaron las doce puertas,
   fábrica 10/10, originalidad local, los 28 resultados adaptativos, TypeScript, prebuild,
   build y QA de navegador de ambas ramas con POST interceptados y móvil 390 × 844.
+- SAT Set 5 se integró por fast-forward en `main` como `17fc7487` y quedó `DESPLEGADO` en
+  `dpl_4NkTRTkBUYY3xgbtuhzmfh46ZjAm`. Vercel confirmó fuente GitHub `main` y estado
+  `READY`; los tres dominios apuntaron al mismo deployment. El smoke oficial pasó 14/14,
+  Sets 1–5 devolvieron HTTP 200, el hub mostró cinco simulacros y Set 5 publicó 54
+  preguntas y 64 minutos. La expansión se pausa en cinco por decisión de producto.

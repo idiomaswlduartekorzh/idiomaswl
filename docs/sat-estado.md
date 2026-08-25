@@ -16,6 +16,9 @@ Actualizado el **25 de agosto de 2026**.
 - `set-4`: cuarto simulacro adaptativo completo, con 81 preguntas nuevas. Pasó las doce
   puertas, originalidad local, ambas rutas en navegador, móvil a 390 px, TypeScript y
   builds local y remoto. El dominio real devuelve 200 y lo enlaza desde el hub.
+- `set-5`: quinto simulacro adaptativo completo, con 81 preguntas nuevas. Pasó las doce
+  puertas, originalidad local entre los 405 ítems, las 28 decisiones adaptativas, ambas
+  ramas en navegador y móvil a 390 px. Vercel y el dominio real quedaron verificados.
 - Corte de práctica WeLearn: 16 de 27 en M1. Es una convención explícita y no se presenta
   como el algoritmo privado de College Board.
 - Actas vigentes:
@@ -31,16 +34,20 @@ Actualizado el **25 de agosto de 2026**.
   - `docs/sat-auditorias/sat-set-4-m1.json`
   - `docs/sat-auditorias/sat-set-4-m2-facil.json`
   - `docs/sat-auditorias/sat-set-4-m2-dificil.json`
+  - `docs/sat-auditorias/sat-set-5-m1.json`
+  - `docs/sat-auditorias/sat-set-5-m2-facil.json`
+  - `docs/sat-auditorias/sat-set-5-m2-dificil.json`
 
-**Inventario:** hay **4 SAT completos publicados**, formados por 12 módulos y 324 preguntas
+**Inventario:** hay **5 SAT completos publicados**, formados por 15 módulos y 405 preguntas
 originales; cada estudiante responde 54 por intento y nunca recibe las dos ramas de M2.
 
 ## Loop de escala a 20
 
-El loop se abrió el **24 de agosto de 2026** en una rama aislada. Sets 3 y 4 completaron el
-ciclo y se publicaron desde `main` en el dominio real. Set 4 quedó verificado en el
-deployment `dpl_2ZgtCKHeYEP8A4QjS85TX1YAu227`; la siguiente unidad es reservar `set-5` y
-cerrar su matriz editorial de M1 antes de escribir Craft and Structure.
+El loop se abrió el **24 de agosto de 2026** en una rama aislada. Sets 3, 4 y 5 completaron
+el ciclo y se publicaron desde `main` en el dominio real. Set 5 quedó verificado en el
+deployment `dpl_4NkTRTkBUYY3xgbtuhzmfh46ZjAm`, asociado a `main` en `17fc7487`. Por
+decisión de producto, la escala queda pausada en cinco SAT completos; Sets 6–20 se crearán
+más adelante, después de cerrar los otros trabajos activos.
 
 La receta operativa, los costes medidos y las puertas por vuelta viven en
 [`docs/sat-fabrica.md`](sat-fabrica.md). La regla sigue siendo un set, un módulo y un bloque
@@ -94,6 +101,12 @@ Set 4 conserva la misma transparencia. Su QA recorrió una ruta estándar y una 
 interceptó los POST, contó 54 revisiones y razones por ruta, comprobó el reintento y midió
 cero overflow a 390 px. El build final de `main` volvió a ejecutar las doce puertas y los
 28 resultados adaptativos antes de publicar.
+
+Set 5 mantiene la misma transparencia. Su QA recorrió las ramas estándar y exigente,
+interceptó los POST para no crear leads ni intentos reales, verificó los cuatro dominios y
+54 explicaciones por resultado, reintento, corte adaptativo y cero overflow a 390 × 844.
+El build remoto volvió a ejecutar la línea base, la fábrica 10/10, las doce puertas, el
+superhub y los 28 resultados antes de publicar 2.372 rutas.
 
 ## Antes de la siguiente publicación
 
