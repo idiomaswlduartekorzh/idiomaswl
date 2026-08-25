@@ -1,18 +1,22 @@
-# SAT set-5 — borrador editorial
+# SAT set-5 — release editorial
 
-Este scaffold reserva los **81 ítems originales** del simulacro adaptativo: 27 para M1,
-27 para M2 estándar y 27 para M2 exigente. No está registrado en la aplicación y no se
-publicará mientras siga con `status: draft`.
+Este manifiesto conserva la trazabilidad de los **81 ítems originales** del simulacro
+adaptativo: 27 para M1, 27 para M2 estándar y 27 para M2 exigente.
 
-## Contrato de salida
+## Contrato cerrado
 
-- Escribir los tres módulos en `src/data/mocks/sat/sat-set-5-*.ts`.
-- Mantener por módulo CS 8 · II 7 · SEC 7 · EOI 5 y el orden del manifest.
-- Completar metadatos, razones A-D, dificultad, tema y fuentes de hechos.
-- Superar `npm run check:sat` y obtener tres actas APTO con huellas vigentes.
-- Componer `src/data/mocks/sat/sat-set-5.ts` con `buildSatMock`.
-- Solo entonces cambiar esta entrada del catálogo a `published`, declarar fuente,
-  exportación, módulos y tarjeta, y ejecutar `npm run generate:sat-catalog`.
+- Los tres módulos públicos viven en `src/data/mocks/sat/sat-set-5-*.ts`.
+- Cada módulo conserva CS 8 · II 7 · SEC 7 · EOI 5, metadatos y razones A-D.
+- Las tres actas APTO fijan huellas por ítem y `npm run check:sat` las verifica.
+- `src/data/mocks/sat/sat-set-5.ts` compone el producto con `buildSatMock`.
+- El catálogo genera la quinta tarjeta y el registro ejecutable de forma reproducible.
 
-El guardián `npm run check:sat-catalog` impide que este borrador aparezca en el hub o
-en el registro ejecutable por accidente.
+## Evidencia de producto
+
+- El contrato adaptativo pasa los 28 resultados posibles de M1 y sirve exactamente una
+  rama de 27 preguntas, para un total de 54.
+- Ambas rutas se completaron en navegador con POST interceptados: resultado sobre 54,
+  desglose CS 16 · II 14 · SEC 14 · EOI 10 y 54 explicaciones.
+- El corte no revela puntaje ni rama; reintentar limpia el estado.
+- Las cinco rutas SAT responden 200 y los Sets 1–4 conservan su pantalla de inicio.
+- En móvil 390 × 844 no hay desbordamiento horizontal en pregunta ni resultados.

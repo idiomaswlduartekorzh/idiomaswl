@@ -135,8 +135,36 @@
     },
     {
       "id": "set-5",
-      "status": "draft",
-      "draftManifest": "src/data/mocks/sat/drafts/set-5/manifest.json"
+      "status": "published",
+      "source": "src/data/mocks/sat/sat-set-5.ts",
+      "exportName": "satSet5",
+      "modules": [
+        {
+          "id": "sat-set-5-m1",
+          "variant": "M1",
+          "source": "src/data/mocks/sat/sat-set-5-m1.ts",
+          "exportName": "satSet5M1"
+        },
+        {
+          "id": "sat-set-5-m2-facil",
+          "variant": "M2-facil",
+          "source": "src/data/mocks/sat/sat-set-5-m2-facil.ts",
+          "exportName": "satSet5M2Facil"
+        },
+        {
+          "id": "sat-set-5-m2-dificil",
+          "variant": "M2-dificil",
+          "source": "src/data/mocks/sat/sat-set-5-m2-dificil.ts",
+          "exportName": "satSet5M2Dificil"
+        }
+      ],
+      "card": {
+        "title": "SAT · Reading and Writing adaptativo — Set 5",
+        "subtitle": "54 preguntas nuevas · 64 minutos · el segundo módulo se ajusta a tu resultado",
+        "free": true,
+        "parts": 2,
+        "questions": 54
+      }
     }
   ]
 }

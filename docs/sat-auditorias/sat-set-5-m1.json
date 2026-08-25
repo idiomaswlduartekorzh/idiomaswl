@@ -35,7 +35,7 @@
       "agente": "redacción original + búsquedas locales y web representativas",
       "veredicto": "APTO",
       "banderasRojas": 0,
-      "notas": "Cero secuencias internas comunes de ocho palabras entre 351 ítems. La búsqueda web representativa no equivale a rastreo exhaustivo."
+      "notas": "Cero secuencias internas comunes de ocho palabras entre 405 ítems. La búsqueda web representativa no equivale a rastreo exhaustivo."
     },
     "simulacion": {
       "agente": "panel heurístico reproducible",
@@ -44,18 +44,14 @@
       "notas": "Prueba automática reproducible, no humana ni multi-modelo."
     }
   },
-  "veredicto": "APTO_EDITORIAL_NO_PUBLICABLE",
+  "veredicto": "APTO",
   "quedaAbierto": [
     "Panel humano o multi-modelo independiente recomendado como evidencia adicional.",
     "Calibración psicométrica cuando existan datos de uso real."
   ],
-  "publicable": false,
-  "bloqueantesDeProducto": [
-    "M2-facil del Set 5 no existe.",
-    "M2-dificil del Set 5 no existe.",
-    "Composición adaptativa y QA de producto del Set 5 están pendientes."
-  ],
-  "notaSobreElActa": "Certifica la revisión editorial del contenido vigente de M1; no autoriza catálogo, ruta ni publicación del Set 5.",
+  "publicable": true,
+  "bloqueantesDeProducto": [],
+  "notaSobreElActa": "Certifica contenido con revisión de Codex y controles reproducibles; no afirma independencia. QA de producto: contrato adaptativo para los 28 resultados de M1, TypeScript, ambas ramas, resultados, 54 explicaciones, reintento, regresión de Sets 1–4 y móvil 390×844 sin desbordamiento. El build de release permanece como puerta posterior del despliegue.",
   "huellas": {
     "q01": "ae24ed83a751",
     "q02": "9a60ad502d59",

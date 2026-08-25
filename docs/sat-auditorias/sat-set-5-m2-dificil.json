@@ -44,17 +44,14 @@
       "notas": "Prueba automática reproducible, no humana ni multi-modelo."
     }
   },
-  "veredicto": "APTO_EDITORIAL_NO_PUBLICABLE",
+  "veredicto": "APTO",
   "quedaAbierto": [
     "Panel humano o multi-modelo independiente recomendado como evidencia adicional.",
     "Calibración psicométrica cuando existan datos de uso real."
   ],
-  "publicable": false,
-  "bloqueantesDeProducto": [
-    "Composición adaptativa del Set 5 pendiente.",
-    "QA de producto del Set 5 pendiente."
-  ],
-  "notaSobreElActa": "Certifica la revisión editorial del contenido vigente de M2-dificil; no autoriza catálogo, ruta ni publicación del Set 5.",
+  "publicable": true,
+  "bloqueantesDeProducto": [],
+  "notaSobreElActa": "Certifica contenido con revisión de Codex y controles reproducibles; no afirma independencia. QA de producto: contrato adaptativo para los 28 resultados de M1, TypeScript, ambas ramas, resultados, 54 explicaciones, reintento, regresión de Sets 1–4 y móvil 390×844 sin desbordamiento. El build de release permanece como puerta posterior del despliegue.",
   "huellas": {
     "q01": "b361f2a61204",
     "q02": "6583f4a962dc",
