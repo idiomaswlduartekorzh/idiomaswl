@@ -62,6 +62,7 @@ test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 word
 
 test('all 17 Listening papers preserve authored evidence and pass the full-density gate', async () => {
   const fingerprints = new Set();
+  const fiftyWordShingleOwners = new Map();
   for (let setNumber = 4; setNumber <= 20; setNumber += 1) {
     const { default: authoredMock } = await import(`../src/data/mocks/ielts-set-${setNumber}.ts`);
     const mock = withIeltsAcademic2026Blueprint(authoredMock);
@@ -83,6 +84,13 @@ test('all 17 Listening papers preserve authored evidence and pass the full-densi
       const fingerprint = section.transcript.toLowerCase().replace(/\s+/g, ' ').trim();
       assert.equal(fingerprints.has(fingerprint), false, `${mock.id} Part ${section.part} duplicates another transcript`);
       fingerprints.add(fingerprint);
+      const normalizedWords = section.transcript.toLowerCase().split(/[^a-z0-9-]+/).filter(Boolean);
+      for (let offset = 0; offset + 50 <= normalizedWords.length; offset += 1) {
+        const shingle = normalizedWords.slice(offset, offset + 50).join(' ');
+        const owner = fiftyWordShingleOwners.get(shingle);
+        assert.ok(!owner || owner === mock.id, `${mock.id} Part ${section.part} repeats 50 words from ${owner}`);
+        fiftyWordShingleOwners.set(shingle, mock.id);
+      }
     }
   }
 });

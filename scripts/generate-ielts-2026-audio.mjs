@@ -373,6 +373,7 @@ if (accountStatus) {
   if (has('--verify-source')) await Promise.all(plan.rows.map(hydrateRow));
   console.log(JSON.stringify({
     pilot: invoice(plan.rows.filter(row => row.setId === 'set-4'), 'pilot-set-4'),
+    postPilotRemainder: invoice(plan.rows.filter(row => row.setId !== 'set-4'), 'sets-5-20-after-pilot'),
     full: invoice(plan.rows, 'full-sets-4-20'),
     ...(selectedRows.length ? { selected: invoice(selectedRows, scopeLabel()) } : {}),
     castingApproval: casting.approval,

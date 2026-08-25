@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "faeec8b72ba8c6eda612d772a2aa03af4d818a55921c8e244cb8aead415a2222",
+  "manifest_sha256": "dfeedeca345e41dc6f597b280c89a354638cfcaf6603cdd79b715ed332053a45",
   "model_id": "eleven_flash_v2_5",
   "credits_per_character": 0.5,
   "api_price_usd_per_1000_characters": 0.05,

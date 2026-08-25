@@ -26,10 +26,16 @@ const resolved = usedProfiles.map(profile => {
 });
 
 const requiredCredits = plan.invoice.projectedMinimumCreditsAfterEditorialGate;
+const pilotCredits = Math.ceil(
+  plan.rows.find(row => row.setId === 'set-4').sourceCharacters * casting.credits_per_character,
+);
+const postPilotCredits = requiredCredits - pilotCredits;
 const availableCredits = casting.account_snapshot.available_credits;
+const resetCreditLimit = casting.account_snapshot.character_limit;
 const blockers = [];
 if (casting.approval !== 'approved_by_owner') blockers.push('voice casting is pending explicit owner approval');
-if (availableCredits < requiredCredits) blockers.push(`account has ${availableCredits} credits; full batch requires at least ${requiredCredits}`);
+if (availableCredits < pilotCredits) blockers.push(`account has ${availableCredits} credits; Set 4 pilot requires ${pilotCredits}`);
+if (resetCreditLimit < postPilotCredits) blockers.push(`post-reset limit is ${resetCreditLimit}; Sets 5-20 require ${postPilotCredits}`);
 
 console.log(JSON.stringify({
   manifestSha256: plan.manifestSha256,
@@ -38,10 +44,13 @@ console.log(JSON.stringify({
   accents: Object.keys(casting.voices),
   estimatedUsdBeforeTax: plan.invoice.projectedMinimumUsdBeforeTax,
   requiredCredits,
+  pilotCredits,
+  postPilotCredits,
   availableCredits,
+  resetCreditLimit,
   nextResetLocal: casting.account_snapshot.next_reset_local,
   approval: casting.approval,
-  status: blockers.length ? 'BLOCKED' : 'READY',
+  status: blockers.length ? 'BLOCKED' : 'READY_FOR_SET_4_PILOT',
   blockers,
 }, null, 2));
 
