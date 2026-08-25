@@ -1,19 +1,34 @@
 import type { Metadata } from 'next'
-import { practicaMetadata } from '@/lib/practica-metadata'
-import Content from './Content'
-import { QuizSchema } from '@/components/practica/EducationSchema';
+import { notFound } from 'next/navigation'
+import { CourseSchema } from '@/components/practica/EducationSchema'
+import { SpeakingModeHub } from '@/components/practica/roleplay/RoleplayExperience'
+import { getRoleplaySet, speakingPath } from '@/data/practica/habla-acompanado'
 
-export const metadata: Metadata = practicaMetadata('japones', 'a2', 'habla')
+const LANGUAGE = 'japones'
+const LEVEL = 'a2'
+const set = getRoleplaySet(LANGUAGE, LEVEL)
+const scenarioCount = set?.scenarios.length ?? 0
+const canonical = `https://www.idiomaswl.com${speakingPath(LANGUAGE, LEVEL)}`
+
+export const metadata: Metadata = {
+  title: 'Speaking japonés A2: solo o en pareja | Idiomas WeLearn',
+  description: `Practica speaking en japonés A2 con 20 frases individuales o con ${scenarioCount} juegos de rol para dos personas, fichas separadas y situaciones reales.`,
+  alternates: { canonical },
+}
 
 export default function Page() {
+  if (!set) notFound()
   return (
     <>
-      <QuizSchema
-        name="Expresión oral en Japonés A2 — Frases esenciales"
-        url="https://idiomaswl.com/practica/japones/a2/habla"
-        description="20 frases esenciales de Japonés A2 con pronunciación, romaji y contexto situacional para hispanohablantes."
+      <CourseSchema
+        name="Speaking en japonés A2 — práctica individual y en pareja"
+        description={`20 frases individuales y ${scenarioCount} juegos de rol para dos personas con información diferente por rol.`}
+        url={canonical}
+        educationalLevel="A2"
+        teaches="Expresión oral en japonés"
+        inLanguage="ja"
       />
-      <Content />
+      <SpeakingModeHub set={set} />
     </>
   )
 }

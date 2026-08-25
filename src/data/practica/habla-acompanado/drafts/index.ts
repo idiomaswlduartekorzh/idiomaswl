@@ -130,7 +130,6 @@ import { ROLEPLAY_JAPONES_A2_BATCH_5 } from './japones-a2-batch-5.ts'
 import { ROLEPLAY_JAPONES_A2_BATCH_5B } from './japones-a2-batch-5b.ts'
 import { ROLEPLAY_JAPONES_A2_BATCH_5C } from './japones-a2-batch-5c.ts'
 import { ROLEPLAY_JAPONES_A2_BATCH_5D } from './japones-a2-batch-5d.ts'
-import { TOOLKIT_JAPONES_A2 } from '../toolkit-japones-a2.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -317,12 +316,5 @@ export const ROLEPLAY_JAPONES_A2_CANDIDATE = [
  * conjunto sale de aquí únicamente cuando alcanza 20 escenarios y pasa sus puertas
  * como unidad completa.
  */
-export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
-  {
-    language: 'japones',
-    level: 'a2',
-    scenarios: ROLEPLAY_JAPONES_A2_CANDIDATE,
-    toolkit: TOOLKIT_JAPONES_A2,
-  },
-]
+export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = []
 import type { RoleplaySet } from '../index.ts'
