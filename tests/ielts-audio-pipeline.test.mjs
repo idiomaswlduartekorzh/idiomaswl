@@ -14,6 +14,12 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(sourceCharacters * casting.credits_per_character));
   assert.equal(casting.manifest_sha256, plan.manifestSha256);
   assert.equal(pilot.manifest_sha256, plan.manifestSha256);
+  for (const row of plan.rows) {
+    const announcements = row.segments.filter(segment => segment.kind === 'announcer');
+    assert.equal(announcements.length, 12, `${row.setId} must announce both question blocks and review time in every part`);
+    assert.equal(announcements.reduce((total, segment) => total + segment.pauseAfterSeconds, 0), 570);
+    assert.ok(row.profiles.includes('announcer:british'));
+  }
 });
 
 test('dry-run source verification is local, deterministic and non-authorizing', () => {

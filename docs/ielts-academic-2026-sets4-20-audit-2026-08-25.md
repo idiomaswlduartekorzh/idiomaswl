@@ -145,7 +145,7 @@ eliminar la antigua deriva en la navegación compartida.
    reproducción única, mono 44,1 kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
 4. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
    tamaño, hash, duración, loudness, pico y silencios. El plan actualizado proyecta
-   229.446 caracteres, 114.723 créditos y USD 11,4723 antes de impuestos y reintentos;
+   238.615 caracteres, 119.308 créditos y USD 11,9308 antes de impuestos y reintentos;
    no es una autorización.
 5. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
    sólo cuando todos los bloqueos estén cerrados.
@@ -153,7 +153,7 @@ eliminar la antigua deriva en la navegación compartida.
    lector de pantalla y verificación humana de las cuatro partes de cada MP3.
 
 Consulta de cuenta sólo lectura: plan Creator con 11.052 créditos disponibles frente a
-114.723 requeridos para el lote completo; el piloto Set 4 requiere 7.012. El próximo
+119.308 requeridos para el lote completo; el piloto Set 4 requiere 7.279. El próximo
 reinicio informado por ElevenLabs es
 el 5 de septiembre de 2026 a las 18:13:51 (Bogotá). La cuenta no permite extender el límite.
 Por tanto, incluso con aprobación del propietario, el lote completo no puede ejecutarse hoy.

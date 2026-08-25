@@ -53,16 +53,51 @@ function profileForLabel(label, accent, setNumber) {
 function sectionSegments(section, accent, setNumber) {
   const blocks = section.transcript.trim().split(/\n{2,}/).map(block => block.trim()).filter(Boolean);
   if (section.part === 2 || section.part === 4) {
-    return [{
+    return blocks.map(text => ({
       profile: `${section.part === 2 ? 'guide' : 'lecturer'}:${accent}`,
-      text: blocks.join('\n\n'),
-    }];
+      text,
+    }));
   }
   return blocks.map((block) => {
     const match = block.match(/^([A-Z][A-Z -]{1,30}):\s*([\s\S]+)$/);
     assert.ok(match, `Set ${setNumber} Part ${section.part}: unlabeled dialogue block: ${block.slice(0, 80)}`);
     return { profile: profileForLabel(match[1], accent, setNumber), text: match[2].trim() };
   });
+}
+
+const PART_NAMES = ['One', 'Two', 'Three', 'Four'];
+
+function plannedSegments(section, accent, setNumber) {
+  const content = sectionSegments(section, accent, setNumber);
+  const split = Math.max(1, Math.ceil(content.length / 2));
+  const firstQuestion = (section.part - 1) * 10 + 1;
+  const midpointQuestion = firstQuestion + 4;
+  const finalQuestion = firstQuestion + 9;
+  const partName = PART_NAMES[section.part - 1];
+  const withPauses = segments => segments.map(segment => ({
+    kind: 'content',
+    ...segment,
+    pauseAfterSeconds: 0.35,
+  }));
+  return [
+    {
+      kind: 'announcer', part: section.part, profile: 'announcer:british',
+      text: `Part ${partName}. First, review Questions ${firstQuestion} to ${midpointQuestion}.`,
+      pauseAfterSeconds: 45,
+    },
+    ...withPauses(content.slice(0, split)).map(segment => ({ ...segment, part: section.part })),
+    {
+      kind: 'announcer', part: section.part, profile: 'announcer:british',
+      text: `Now review Questions ${midpointQuestion + 1} to ${finalQuestion} before the recording continues.`,
+      pauseAfterSeconds: 45,
+    },
+    ...withPauses(content.slice(split)).map(segment => ({ ...segment, part: section.part })),
+    {
+      kind: 'announcer', part: section.part, profile: 'announcer:british',
+      text: `Part ${partName} is complete. Check your answers.`,
+      pauseAfterSeconds: section.part === 4 ? 120 : 30,
+    },
+  ];
 }
 
 const rows = [];
@@ -78,12 +113,14 @@ for (const setNumber of SETS) {
   const plannedUrl = [...plannedUrls][0];
   const existingPath = path.join(repoRoot, 'public', plannedUrl);
   const accent = accentRotation[(setNumber - 4) % accentRotation.length];
-  const segments = sections.flatMap(section => sectionSegments(section, accent, setNumber).map(segment => ({
-    part: section.part,
+  const segments = sections.flatMap(section => plannedSegments(section, accent, setNumber).map(segment => ({
+    kind: segment.kind,
+    part: segment.part,
     profile: segment.profile,
     characters: segment.text.length,
     words: words(segment.text),
     textSha256: sha256(segment.text),
+    pauseAfterSeconds: segment.pauseAfterSeconds,
   })));
   const transcript = sections.map(section => section.transcript.trim()).join('\n\n');
   const transcriptWords = words(transcript);

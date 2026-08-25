@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "29578a9a6f3a327938d6061fd70592b45386da566c7785fa51747030506b5775",
+  "manifest_sha256": "faeec8b72ba8c6eda612d772a2aa03af4d818a55921c8e244cb8aead415a2222",
   "model_id": "eleven_flash_v2_5",
   "credits_per_character": 0.5,
   "api_price_usd_per_1000_characters": 0.05,
@@ -91,6 +91,7 @@
     }
   },
   "role_voice": {
+    "announcer": "lecturer",
     "guide": "woman",
     "lecturer": "lecturer",
     "participant-man": "man",

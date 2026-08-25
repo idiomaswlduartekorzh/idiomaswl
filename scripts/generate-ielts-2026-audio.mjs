@@ -70,13 +70,44 @@ function profileForLabel(label, accent, setNumber) {
 function sectionSegments(section, accent, setNumber) {
   const blocks = section.transcript.trim().split(/\n{2,}/).map(block => block.trim()).filter(Boolean);
   if (section.part === 2 || section.part === 4) {
-    return [{ part: section.part, profile: `${section.part === 2 ? 'guide' : 'lecturer'}:${accent}`, text: blocks.join('\n\n') }];
+    return blocks.map(text => ({ part: section.part, profile: `${section.part === 2 ? 'guide' : 'lecturer'}:${accent}`, text }));
   }
   return blocks.map(block => {
     const match = block.match(/^([A-Z][A-Z -]{1,30}):\s*([\s\S]+)$/);
     assert.ok(match, `Set ${setNumber} Part ${section.part}: unlabeled dialogue block`);
     return { part: section.part, profile: profileForLabel(match[1], accent, setNumber), text: match[2].trim() };
   });
+}
+
+const PART_NAMES = ['One', 'Two', 'Three', 'Four'];
+
+function plannedSegments(section, accent, setNumber) {
+  const content = sectionSegments(section, accent, setNumber);
+  const split = Math.max(1, Math.ceil(content.length / 2));
+  const firstQuestion = (section.part - 1) * 10 + 1;
+  const midpointQuestion = firstQuestion + 4;
+  const finalQuestion = firstQuestion + 9;
+  const partName = PART_NAMES[section.part - 1];
+  const withPauses = segments => segments.map(segment => ({ kind: 'content', ...segment, pauseAfterSeconds: 0.35 }));
+  return [
+    {
+      kind: 'announcer', part: section.part, profile: 'announcer:british',
+      text: `Part ${partName}. First, review Questions ${firstQuestion} to ${midpointQuestion}.`,
+      pauseAfterSeconds: 45,
+    },
+    ...withPauses(content.slice(0, split)),
+    {
+      kind: 'announcer', part: section.part, profile: 'announcer:british',
+      text: `Now review Questions ${midpointQuestion + 1} to ${finalQuestion} before the recording continues.`,
+      pauseAfterSeconds: 45,
+    },
+    ...withPauses(content.slice(split)),
+    {
+      kind: 'announcer', part: section.part, profile: 'announcer:british',
+      text: `Part ${partName} is complete. Check your answers.`,
+      pauseAfterSeconds: section.part === 4 ? 120 : 30,
+    },
+  ];
 }
 
 async function hydrateRow(row) {
@@ -89,14 +120,15 @@ async function hydrateRow(row) {
   assert.equal(sections.length, 4, `Set ${setNumber} must have four Listening parts`);
   const transcript = sections.map(section => section.transcript.trim()).join('\n\n');
   assert.equal(sha256(transcript), row.transcriptSha256, `Set ${setNumber} transcript changed after plan approval`);
-  const segments = sections.flatMap(section => sectionSegments(section, row.accentTarget, setNumber));
+  const segments = sections.flatMap(section => plannedSegments(section, row.accentTarget, setNumber));
   assert.deepEqual(
     segments.map(segment => ({
-      part: segment.part,
+      kind: segment.kind, part: segment.part,
       profile: segment.profile,
       characters: segment.text.length,
       words: segment.text.trim().split(/\s+/).length,
       textSha256: sha256(segment.text),
+      pauseAfterSeconds: segment.pauseAfterSeconds,
     })),
     row.segments,
     `Set ${setNumber} segment plan changed after approval`,
@@ -231,10 +263,8 @@ function assemble(row, segmentPaths, targetPath) {
     inputArgs.push('-i', segmentPath);
     labels.push(`[${inputIndex}:a]`);
     inputIndex += 1;
-    if (index < segmentPaths.length - 1) {
-      const seconds = row.segments[index].part === row.segments[index + 1].part
-        ? casting.target.silence_between_conversation_turns_seconds
-        : casting.target.silence_between_parts_seconds;
+    const seconds = Number(row.segments[index].pauseAfterSeconds ?? 0);
+    if (seconds > 0) {
       inputArgs.push('-f', 'lavfi', '-t', String(seconds), '-i', 'anullsrc=r=44100:cl=mono');
       labels.push(`[${inputIndex}:a]`);
       inputIndex += 1;
