@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · trabalho/estudo 5. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_1E: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-meeting-room-is-in-two-calendars', slug: 'meeting-room-is-in-two-calendars', sequence: 5,
+    language: 'portugues', level: 'a2', title: 'La sala de reunión está en dos calendarios', titleTarget: 'A sala de reunião está em dois calendários',
+    setting: 'Terça-feira, às 13h42, em um centro de projetos de Recife', settingEs: 'Un centro de proyectos de Recife, el martes a la 1:42 p. m.',
+    speechActs: ['pedir-aclaracion', 'pedir-favor', 'conceder-con-condicion'], power: 'a>b', initiator: 'b', outcome: 'acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#5',
+    roles: [
+      {
+        id: 'a', name: 'coordenador do projeto', nameEs: 'quien coordina el proyecto', headline: 'A sala Jacarandá pertence a um treinamento, mas a sala Ipê fica livre às 15h30',
+        briefing: ['**Confira os dois calendários antes de decidir.** Use **você** com o integrante. **O integrante começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao integrante. Não apague a reserva do treinamento: o calendário do prédio tem prioridade.'],
+        prose: [
+          { label: 'Situação atual', text: 'A equipe marcou uma apresentação às 15h na sala Jacarandá. O calendário interno mostra a reunião, mas o calendário do prédio reserva a mesma sala para um treinamento das 14h30 às 16h.' },
+          { label: 'Objetivo', text: 'Manter a apresentação hoje, dividir preparação e reunião sem perder os arquivos e confirmar sala, equipamento, convite e responsáveis.' },
+          { label: 'O que não é possível', items: ['Usar a sala Jacarandá durante o treinamento.', 'Começar uma videoconferência no café aberto: há barulho e nenhuma tela.', 'Reservar a sala Ipê antes das 15h30.'] },
+          { label: 'Só você sabe', items: ['A sala Ipê está livre das 15h30 às 16h15 e tem tela, mas não tem câmera.', 'A cabine 2 fica livre das 14h50 às 15h25 para duas pessoas revisarem os arquivos.', 'Você pode reservar Ipê e enviar um novo convite, mas precisa receber o link do cliente até 14h15.'] },
+          { label: 'Se vocês não resolverem', text: 'A equipe chega a uma sala ocupada, perde parte da apresentação e envia dois horários diferentes ao cliente.' },
+        ],
+        facts: [
+          { label: 'Reunião interna', value: 'Jacarandá · 15h00–16h00' }, { label: 'Calendário do prédio', value: 'treinamento · 14h30–16h00' },
+          { label: 'Sala Ipê', value: '15h30–16h15 · tela · sem câmera' }, { label: 'Cabine 2', value: '14h50–15h25 · 2 pessoas' },
+          { label: 'Equipe', value: '4 pessoas' }, { label: 'Cliente', value: 'participação on-line' },
+          { label: 'Prazo do link', value: '14h15' }, { label: 'Responsabilidade', value: 'reservar sala + atualizar convite' },
+        ],
+        vocab: [
+          { word: 'cabine', whatItIs: 'espaço pequeno e fechado para trabalhar', here: 'lugar de revisão para duas pessoas' },
+          { word: 'calendário do prédio', whatItIs: 'agenda oficial dos espaços compartilhados', here: 'fonte que tem prioridade' },
+          { word: 'câmera', whatItIs: 'equipamento que envia imagem em uma chamada', here: 'item que falta na sala Ipê' },
+          { word: 'convite', whatItIs: 'mensagem com data, horário e acesso a uma reunião', here: 'registro que precisa ser atualizado' },
+          { word: 'disponível', whatItIs: 'livre para ser usado', here: 'estado da sala Ipê às 15h30' },
+          { word: 'reserva', whatItIs: 'registro que guarda um espaço em certo horário', here: 'duas marcações em conflito' },
+          { word: 'tela', whatItIs: 'superfície onde aparecem imagens do computador', here: 'equipamento existente na sala Ipê' },
+          { word: 'treinamento', whatItIs: 'atividade para aprender ou praticar um trabalho', here: 'evento oficial na Jacarandá' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Diferencie calendário interno e calendário do prédio e atribua cada ação.',
+        exponents: [
+          { purpose: 'Conceder com uma condição', form: '`Reservo a sala Ipê se você me enviar o link até …`', effect: 'liga a reserva a um dado necessário' },
+          { purpose: 'Dar a prioridade', form: '`O calendário do prédio tem prioridade sobre o interno.`', effect: 'explica qual reserva vale sem culpar a equipe' },
+          { purpose: 'Dividir o trabalho', form: '`Duas pessoas revisam na cabine e duas preparam o equipamento.`', effect: 'distribui tarefas simultâneas' },
+          { purpose: 'Explicar o conflito', form: '`A Jacarandá aparece livre aqui, mas está ocupada das … às …`', effect: 'compara as duas fontes' },
+          { purpose: 'Pedir o link', form: '`Pode me mandar o link do cliente até …?`', effect: 'pede um recurso com prazo' },
+          { purpose: 'Propor a sequência', form: '`Primeiro revisamos na cabine; depois começamos na Ipê às …`', effect: 'organiza preparação e reunião' },
+          { purpose: 'Resumir o plano', form: '`Eu reservo e atualizo o convite; você traz … e envia …`', effect: 'confirma responsáveis antes de fechar' },
+        ],
+        success: 'Você respeitou o calendário oficial, reservou Ipê das 15h30 às 16h15 e separou a revisão na cabine. Recebeu o link, atualizou o convite e confirmou quem leva câmera e adaptador.',
+      },
+      {
+        id: 'b', name: 'integrante da equipe', nameEs: 'quien integra el equipo', headline: 'O cliente pode mudar o horário, e você consegue uma câmera portátil se responder antes das 14h15',
+        briefing: ['**Mostre o conflito e ofereça recursos.** Use **você** com o coordenador. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao coordenador. Não confirme um novo horário ao cliente antes de saber qual sala estará reservada.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você percebeu que o convite da equipe diz sala Jacarandá às 15h, mas uma placa na porta anuncia um treinamento no mesmo horário.' },
+          { label: 'Objetivo', text: 'Evitar que equipe e cliente cheguem ao lugar errado, manter uma revisão antes da apresentação e levar o equipamento que a nova sala não possui.' },
+          { label: 'O que não é possível', items: ['Apresentar apenas pelo celular: os gráficos e tabelas ficam ilegíveis.', 'Mover a reunião para amanhã: o cliente viaja à noite.', 'Usar a cabine com quatro pessoas: ela tem somente duas cadeiras.'] },
+          { label: 'Só você sabe', items: ['O cliente escreveu que pode participar das 15h30 às 16h15 se receber o novo convite até 14h15.', 'A equipe de comunicação empresta uma câmera e um adaptador HDMI das 15h10 às 16h30.', 'Você tem a versão final dos slides e pode revisar números com outra pessoa na cabine.'] },
+          { label: 'Se vocês não resolverem', text: 'O cliente abre o link no horário antigo, a equipe não consegue mostrar os gráficos e a viagem impede uma nova reunião amanhã.' },
+        ],
+        facts: [
+          { label: 'Convite atual', value: '15h00–16h00 · Jacarandá' }, { label: 'Cliente disponível', value: '15h30–16h15' },
+          { label: 'Prazo de resposta', value: '14h15' }, { label: 'Slides', value: 'versão final · 12 páginas' },
+          { label: 'Empréstimo', value: 'câmera + adaptador HDMI' }, { label: 'Retirada do equipamento', value: '15h10' },
+          { label: 'Devolução', value: 'até 16h30' }, { label: 'Viagem do cliente', value: 'hoje · 20h' },
+        ],
+        vocab: [
+          { word: 'adaptador', whatItIs: 'peça que conecta equipamentos diferentes', here: 'liga o computador à tela' },
+          { word: 'arquivo final', whatItIs: 'versão pronta de um documento', here: 'doze slides que serão apresentados' },
+          { word: 'conflito de horário', whatItIs: 'duas atividades marcadas no mesmo momento', here: 'reunião e treinamento na Jacarandá' },
+          { word: 'emprestar', whatItIs: 'dar algo para uso temporário e receber depois', here: 'ação da equipe de comunicação' },
+          { word: 'equipamento portátil', whatItIs: 'aparelho que pode ser levado para outro lugar', here: 'câmera usada na sala Ipê' },
+          { word: 'horário atualizado', whatItIs: 'nova hora que substitui a anterior', here: '15h30 no convite do cliente' },
+          { word: 'link', whatItIs: 'endereço digital para entrar em uma chamada', here: 'acesso que deve chegar ao coordenador' },
+          { word: 'revisar', whatItIs: 'conferir algo antes de apresentar ou entregar', here: 'verificação dos números nos slides' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Diga o que pode conseguir, mas condicione a confirmação do cliente à reserva real da sala.',
+        exponents: [
+          { purpose: 'Aceitar a divisão', form: '`Eu reviso os slides na cabine e depois levo o equipamento.`', effect: 'assume duas ações em ordem' },
+          { purpose: 'Dar a disponibilidade', form: '`O cliente pode participar das … às …`', effect: 'abre uma faixa exata para o novo plano' },
+          { purpose: 'Explicar o conflito', form: '`O convite diz …, mas a placa mostra um treinamento.`', effect: 'apresenta as duas informações sem acusar' },
+          { purpose: 'Oferecer equipamento', form: '`Consigo pegar uma câmera e um adaptador às …`', effect: 'resolve a limitação técnica da sala' },
+          { purpose: 'Pedir a confirmação', form: '`Você pode confirmar a sala antes de eu responder ao cliente?`', effect: 'mantém a ordem segura das decisões' },
+          { purpose: 'Prometer uma ação', form: '`Envio o link e pego o equipamento até …`', effect: 'atribui recurso e prazo' },
+          { purpose: 'Verificar o convite', form: '`O novo convite terá sala Ipê, … e o mesmo link, certo?`', effect: 'confere lugar, horário e acesso' },
+        ],
+        success: 'Você mostrou o conflito, confirmou a disponibilidade do cliente e conseguiu câmera e adaptador. Revisou os slides na cabine, enviou o link e conferiu o convite com sala e horário novos.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, confirme qual calendário vale, quando a sala Ipê fica livre e qual equipamento falta. Não mostre a tela ao coordenador.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Mensagem do cliente · 13h47**' },
+        { kind: 'table', head: ['Dado', 'Confirmação'], rows: [['Nova faixa', '15h30–16h15'], ['Prazo do convite', '14h15'], ['Participação', 'on-line'], ['Amanhã', 'indisponível por viagem']] },
+        { kind: 'p', text: 'O cliente aceita o novo horário, mas precisa receber agora o convite correto com o link. Não confirme enquanto a sala não estiver reservada.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem quando as duas pessoas puderem repetir estes cinco elementos:**' },
+      { kind: 'ol', items: ['A sala Jacarandá mantida para o treinamento.', 'A revisão de duas pessoas na cabine 2, das 14h50 às 15h25.', 'A sala Ipê reservada das 15h30 às 16h15.', 'A câmera, o adaptador e quem vai buscá-los às 15h10.', 'O novo convite enviado ao cliente até 14h15.'] },
+    ],
+    debrief: ['¿Qué fuente resolvió el conflicto entre los calendarios?', '¿Cómo se dividieron preparación, equipo y reunión?', 'Repitan en portugués sala, horarios, responsables y equipo sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'a equipe fez a reserva y o cliente disse que pode reconstruyen el problema.' },
+      { slug: 'preterito-imperfeito-a2', level: 'a2', title: 'Pretérito imperfeito en portugués A2', rationale: 'a sala aparecia livre contrasta la información anterior.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vou enviá-lo y precisamos buscá-la retoman link y cámara.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'o convite terá y a equipe começará confirman el plan.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'seria possível y poderia mudar permiten negociar horarios.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, primeiro y depois conectan conflicto y secuencia.' },
+    ],
+  },
+]
