@@ -14,6 +14,7 @@ const NAV_LINKS = [
   { label: 'Idiomas',        href: '/clases-de-idiomas' },
   { label: 'Exámenes',       href: '/examenes' },
   { label: 'Práctica',       href: '/practica' },
+  { label: 'Podcasts',       href: '/podcasts' },
   { label: 'Herramientas',   href: '/herramientas' },
   { label: 'Quiénes somos',  href: '/quienes-somos' },
 ];
@@ -23,6 +24,7 @@ const IELTS_NAV_LINKS = [
   { label: 'Languages',  href: '/clases-de-idiomas' },
   { label: 'Exams',      href: '/examenes' },
   { label: 'Practice',   href: '/practica' },
+  { label: 'Podcasts',   href: '/podcasts' },
   { label: 'About us',   href: '/quienes-somos' },
 ];
 

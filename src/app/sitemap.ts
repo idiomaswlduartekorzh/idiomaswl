@@ -53,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/metodo`,          lastModified: now, changeFrequency: 'monthly', priority: 0.9  },
     { url: `${BASE}/leccion`,         lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/practica`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
+    { url: `${BASE}/podcasts`,        lastModified: now, changeFrequency: 'monthly', priority: 0.82 },
     { url: `${BASE}/nivel-radar`,     lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
 
     // ── Herramientas gratuitas ────────────────────────────────────────────────

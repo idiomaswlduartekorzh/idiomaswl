@@ -59,6 +59,27 @@ function compareManifest(previous, gitRef) {
   const currentSmokePaths = manifest.smokeRoutes.map((route) => route.path)
   const previousSmokePaths = previous.smokeRoutes.map((route) => route.path)
   compareSet(currentSmokePaths, previousSmokePaths, 'smokeRoutes')
+  const currentSmokeRoutes = new Map(manifest.smokeRoutes.map((route) => [route.path, route.marker]))
+  for (const route of previous.smokeRoutes) {
+    if (currentSmokeRoutes.get(route.path) !== route.marker) {
+      failures.push(`smokeRoutes no puede cambiar el marcador de ${route.path}: ${route.marker}`)
+    }
+  }
+
+  if (previous.smokeAssets) {
+    const currentAssets = new Map((manifest.smokeAssets ?? []).map((asset) => [asset.path, asset]))
+    compareSet([...currentAssets.keys()], previous.smokeAssets.map((asset) => asset.path), 'smokeAssets')
+    for (const asset of previous.smokeAssets) {
+      const current = currentAssets.get(asset.path)
+      if (!current) continue
+      if (current.contentType !== asset.contentType) {
+        failures.push(`smokeAssets no puede cambiar contentType de ${asset.path}: ${asset.contentType}`)
+      }
+      if (current.minimumBytes < asset.minimumBytes) {
+        failures.push(`smokeAssets no puede bajar minimumBytes de ${asset.path}: ${asset.minimumBytes} → ${current.minimumBytes}`)
+      }
+    }
+  }
 
   for (const [pattern, previousMinimum] of Object.entries(previous.minimumFileCounts)) {
     const currentMinimum = manifest.minimumFileCounts[pattern]
@@ -106,6 +127,20 @@ for (const language of manifest.classLandingLanguages ?? []) {
 for (const relativePath of manifest.protectedFiles) expectFile(relativePath)
 for (const [relativePath, markers] of Object.entries(manifest.protectedMarkers)) expectMarkers(relativePath, markers)
 
+const smokeRoutePaths = manifest.smokeRoutes.map((route) => route.path)
+if (new Set(smokeRoutePaths).size !== smokeRoutePaths.length) failures.push('smokeRoutes contiene rutas duplicadas')
+
+for (const asset of manifest.smokeAssets ?? []) {
+  const publicPath = `public${asset.path.split('?')[0]}`
+  expectFile(publicPath)
+  if (exists(publicPath)) {
+    const bytes = fs.statSync(absolute(publicPath)).size
+    if (bytes < asset.minimumBytes) {
+      failures.push(`${publicPath} pesa ${bytes} bytes; el mínimo protegido es ${asset.minimumBytes}`)
+    }
+  }
+}
+
 for (const [pattern, minimum] of Object.entries(manifest.minimumFileCounts)) {
   const count = countPattern(pattern)
   if (count < minimum) failures.push(`${pattern} tiene ${count} archivos; el mínimo de producción es ${minimum}`)
@@ -148,5 +183,5 @@ if (failures.length) {
 } else {
   const matrixRoutes = manifest.languages.length * manifest.levels.length * manifest.practiceModalities.length
   const listeningFiles = manifest.languages.length * manifest.levels.length * manifest.listening.episodesPerLanguageLevel
-  console.log(`Línea base íntegra: ${matrixRoutes} rutas base de Práctica y ${listeningFiles} audios de Escucha protegidos.`)
+  console.log(`Línea base íntegra: ${matrixRoutes} rutas base de Práctica, ${listeningFiles} audios de Escucha y ${(manifest.smokeAssets ?? []).length} activos de podcast protegidos.`)
 }

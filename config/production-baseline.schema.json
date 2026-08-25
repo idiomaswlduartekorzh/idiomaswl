@@ -16,7 +16,8 @@
     "protectedMarkers",
     "requiredNpmScripts",
     "requiredPrebuildChecks",
-    "smokeRoutes"
+    "smokeRoutes",
+    "smokeAssets"
   ],
   "additionalProperties": false,
   "properties": {
@@ -60,6 +61,20 @@
         "properties": {
           "path": { "type": "string", "pattern": "^/" },
           "marker": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "smokeAssets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["path", "contentType", "minimumBytes"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string", "pattern": "^/" },
+          "contentType": { "type": "string", "minLength": 1 },
+          "minimumBytes": { "type": "integer", "minimum": 1 }
         }
       }
     }
