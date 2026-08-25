@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · casa/comunidade 12. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_3B: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-barbecue-was-booked-twice', slug: 'barbecue-was-booked-twice', sequence: 12,
+    language: 'portugues', level: 'a2', title: 'La parrilla común fue reservada dos veces', titleTarget: 'A churrasqueira foi reservada duas vezes',
+    setting: 'Domingo, às 11h40, na área comum de um condomínio em Campo Grande', settingEs: 'El área común de un condominio en Campo Grande, el domingo a las 11:40 a. m.',
+    speechActs: ['quejarse', 'proponer-alternativa', 'conceder-con-condicion'], power: 'igual', initiator: 'a', outcome: 'acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#12',
+    roles: [
+      {
+        id: 'a', name: 'moradora da festa infantil', nameEs: 'quien organiza la fiesta infantil', headline: 'Sua reserva começa ao meio-dia, mas as crianças vão embora antes das duas',
+        briefing: ['**Mostre sua confirmação e abra uma faixa real.** Use **você** com o outro morador. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao outro morador. Não esconda o tempo necessário para limpar mesa, pia e churrasqueira.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você reservou a churrasqueira das 12h às 15h para uma festa infantil. Outro morador chegou com confirmação das 14h às 17h para o mesmo espaço.' },
+          { label: 'Objetivo', text: 'Manter almoço e bolo, terminar a limpeza antes do segundo grupo e combinar chave, lixo e vistoria sem cancelar nenhuma família.' },
+          { label: 'O que não é possível', items: ['Começar depois das 12h30: o fornecedor entrega o almoço ao meio-dia.', 'Levar a festa ao salão: ele está em manutenção.', 'Entregar o espaço sem limpar: você deixou caução de R$ 100,00.'] },
+          { label: 'Só você sabe', items: ['As oito crianças vão embora às 13h50 porque têm outra atividade.', 'Dois adultos podem levar bolo e presentes ao apartamento enquanto você limpa.', 'Você consegue desligar a churrasqueira às 13h45 e terminar mesa, pia e lixo às 14h20.'] },
+          { label: 'Se vocês não resolverem', text: 'As duas famílias chegam ao mesmo tempo, alguém perde a caução e a chave não tem responsável entre os grupos.' },
+        ],
+        facts: [
+          { label: 'Sua reserva', value: '12h00–15h00 · protocolo CH-308' }, { label: 'Festa', value: '8 crianças + 6 adultos' },
+          { label: 'Entrega do almoço', value: '12h00' }, { label: 'Saída das crianças', value: '13h50' },
+          { label: 'Churrasqueira desligada', value: '13h45' }, { label: 'Limpeza', value: '13h50–14h20' },
+          { label: 'Caução', value: 'R$ 100,00' }, { label: 'Chave', value: 'retirada por você · 11h35' },
+        ],
+        vocab: [
+          { word: 'área comum', whatItIs: 'espaço compartilhado pelos moradores', here: 'local da churrasqueira' },
+          { word: 'caução', whatItIs: 'dinheiro que pode ser devolvido após cumprir regras', here: 'R$ 100,00 ligados à limpeza' },
+          { word: 'chave', whatItIs: 'objeto usado para abrir e fechar um local', here: 'item que deve passar entre os grupos' },
+          { word: 'churrasqueira', whatItIs: 'equipamento onde se prepara comida com calor', here: 'recurso reservado duas vezes' },
+          { word: 'desligar', whatItIs: 'fazer um equipamento parar de funcionar', here: 'ação das 13h45' },
+          { word: 'pia', whatItIs: 'recipiente com água usado para lavar', here: 'parte que precisa ficar limpa' },
+          { word: 'reserva dupla', whatItIs: 'duas marcações para o mesmo lugar e horário', here: 'conflito entre 14h e 15h' },
+          { word: 'vistoria', whatItIs: 'verificação do estado de um espaço', here: 'controle antes de devolver a caução' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Compare protocolos e negocie uso, limpeza e chave como tempos diferentes.',
+        exponents: [
+          { purpose: 'Conceder com uma condição', form: '`Posso liberar às … se o segundo grupo esperar a limpeza terminar.`', effect: 'liga a concessão a uma transição segura' },
+          { purpose: 'Dar a margem', form: '`As crianças vão embora às … e consigo desligar a churrasqueira antes.`', effect: 'abre tempo real para negociar' },
+          { purpose: 'Explicar a reserva', form: '`Meu protocolo é … e a faixa era das … às …`', effect: 'apresenta a marcação sem negar a outra' },
+          { purpose: 'Negociar a limpeza', form: '`Preciso de trinta minutos para mesa, pia, lixo e churrasqueira.`', effect: 'torna visível o tempo entre grupos' },
+          { purpose: 'Propor a entrega', form: '`Entrego a chave às … depois de fazermos uma vistoria rápida.`', effect: 'define momento e condição da troca' },
+          { purpose: 'Reconhecer o conflito', form: '`Nós dois recebemos confirmação para o mesmo horário.`', effect: 'trata a falha como compartilhada pelo sistema' },
+          { purpose: 'Resumir o acordo', form: '`Meu grupo usa até …, limpa até … e o seu entra depois da vistoria.`', effect: 'confirma três etapas' },
+        ],
+        success: 'Você mostrou CH-308, abriu mão dos últimos 40 minutos e preservou trinta minutos de limpeza. Confirmou desligamento, vistoria e entrega da chave às 14h20.',
+      },
+      {
+        id: 'b', name: 'morador do almoço de família', nameEs: 'quien organiza el almuerzo familiar', headline: 'Seus convidados chegam às 14h30, e a comida pode esperar em caixas térmicas até a entrega da chave',
+        briefing: ['**Mostre sua confirmação e proteja a transição.** Use **você** com a outra moradora. **A moradora começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre à outra moradora. Não entre enquanto houver crianças, objetos ou fogo no espaço.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você reservou a churrasqueira das 14h às 17h para um almoço de família. Ao chegar para organizar, encontra outra reserva válida até 15h.' },
+          { label: 'Objetivo', text: 'Receber o espaço limpo antes dos convidados, conservar a comida e assumir chave e estado do local a partir da vistoria.' },
+          { label: 'O que não é possível', items: ['Começar depois das 14h40: dois parentes idosos chegam às 14h30.', 'Usar as mesas enquanto a festa infantil continua.', 'Assumir lixo ou danos do grupo anterior sem vistoria.'] },
+          { label: 'Só você sabe', items: ['Os convidados receberam mensagem para chegar às 14h30, não às 14h.', 'A carne e as bebidas ficam seguras em duas caixas térmicas até 15h.', 'Você pode esperar no jardim e ajudar a conferir pia, mesa e churrasqueira às 14h20.'] },
+          { label: 'Se vocês não resolverem', text: 'Os grupos ocupam o mesmo espaço, a comida fica sem organização e ninguém sabe quem responde pela limpeza anterior.' },
+        ],
+        facts: [
+          { label: 'Sua reserva', value: '14h00–17h00 · protocolo CH-311' }, { label: 'Convidados', value: '10 pessoas · chegada 14h30' },
+          { label: 'Parentes idosos', value: '2 pessoas' }, { label: 'Caixas térmicas', value: '2 · comida segura até 15h' },
+          { label: 'Espera possível', value: 'jardim · até 14h20' }, { label: 'Vistoria', value: 'pia + mesa + churrasqueira' },
+          { label: 'Entrada limite', value: '14h30' }, { label: 'Fim da reserva', value: '17h00' },
+        ],
+        vocab: [
+          { word: 'caixa térmica', whatItIs: 'recipiente que conserva comida fria ou quente', here: 'proteção até a entrada' },
+          { word: 'convidado', whatItIs: 'pessoa chamada para uma festa ou encontro', here: 'dez pessoas que chegam às 14h30' },
+          { word: 'entrega da chave', whatItIs: 'momento em que a responsabilidade passa a outra pessoa', here: 'troca prevista após a vistoria' },
+          { word: 'faixa de horário', whatItIs: 'período entre uma hora inicial e final', here: '14h–17h no protocolo CH-311' },
+          { word: 'grupo anterior', whatItIs: 'pessoas que usaram o espaço antes', here: 'festa infantil que deve limpar' },
+          { word: 'jardim', whatItIs: 'área externa com plantas', here: 'lugar onde pode esperar' },
+          { word: 'parente idoso', whatItIs: 'familiar de idade avançada', here: 'pessoa que não deve esperar em pé' },
+          { word: 'responsabilidade', whatItIs: 'obrigação de cuidar e responder por algo', here: 'estado que muda com a chave' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Dê a chegada real dos convidados e aceite esperar somente com limpeza e vistoria definidas.',
+        exponents: [
+          { purpose: 'Aceitar a nova faixa', form: '`Posso entrar às … porque os convidados só chegam às …`', effect: 'usa a margem real sem apagar sua necessidade' },
+          { purpose: 'Comparar as reservas', form: '`Seu protocolo termina às …; o meu começa às …`', effect: 'mostra a sobreposição' },
+          { purpose: 'Dar o limite', form: '`Preciso receber o espaço até … por causa dos convidados idosos.`', effect: 'define a última hora aceitável' },
+          { purpose: 'Oferecer uma margem', form: '`A comida pode ficar nas caixas térmicas enquanto espero no jardim.`', effect: 'torna possível a transição' },
+          { purpose: 'Pedir a vistoria', form: '`Antes da chave, podemos conferir mesa, pia e churrasqueira?`', effect: 'separa responsabilidades' },
+          { purpose: 'Propor a espera', form: '`Espero até … se a limpeza começar às …`', effect: 'liga concessão a uma ação observável' },
+          { purpose: 'Verificar a troca', form: '`Às … fazemos a vistoria, recebo a chave e meu grupo assume o espaço, certo?`', effect: 'confirma hora e responsabilidade' },
+        ],
+        success: 'Você apresentou CH-311, explicou a chegada real e aceitou esperar no jardim. Protegeu a comida, fez a vistoria e assumiu o espaço e a chave às 14h20.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, compare os dois protocolos, pergunte quando chegam os convidados e explique o tempo de limpeza. Não mostre a tela ao outro morador.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Mensagem dos responsáveis pelas crianças · 11h47**' },
+        { kind: 'table', head: ['Atividade', 'Atualização'], rows: [['Almoço', '12h10'], ['Bolo', '13h20'], ['Saída das crianças', '13h50'], ['Dois adultos', 'levam presentes ao apartamento']] },
+        { kind: 'p', text: 'A festa pode terminar antes do previsto. Se a churrasqueira for desligada às 13h45, você consegue limpar até 14h20 sem tirar as crianças no meio da atividade.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem quando as duas pessoas puderem repetir estes cinco elementos:**' },
+      { kind: 'ol', items: ['Os protocolos CH-308 e CH-311 e a sobreposição original.', 'A festa infantil termina às 13h50 e a churrasqueira desliga às 13h45.', 'A limpeza de mesa, pia, lixo e churrasqueira termina às 14h20.', 'O segundo grupo espera no jardim com a comida em caixas térmicas.', 'A vistoria e a entrega da chave ocorrem às 14h20; o segundo uso termina às 17h.'] },
+    ],
+    debrief: ['¿Qué información privada creó una franja de acuerdo?', '¿Por qué la limpieza y la entrega de llave formaron parte del horario?', 'Repitan en portugués franjas, tareas y responsables sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-imperfeito-a2', level: 'a2', title: 'Pretérito imperfeito en portugués A2', rationale: 'cada grupo esperava usar o espaço describe expectativas anteriores.' },
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'os dois fizeram reserva y o sistema deu confirmações reconstruyen el conflicto.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'seria possível y poderia esperar suavizan concesiones.' },
+      { slug: 'comparativos-superlativos-a2', level: 'a2', title: 'Comparativos y superlativos en portugués A2', rationale: 'mais cedo, mais tarde y menor intervalo comparan franjas.' },
+      { slug: 'expressoes-com-fazer-a2', level: 'a2', title: 'Expresiones con fazer en portugués A2', rationale: 'fazer a limpeza, a vistoria y um acordo organizan tareas.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'se, enquanto y depois conectan condición y secuencia.' },
+    ],
+  },
+]
