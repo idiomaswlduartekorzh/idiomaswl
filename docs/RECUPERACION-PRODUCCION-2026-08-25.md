@@ -60,7 +60,7 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 | Trabajo | Rama/SHA de corte | Estado observado | Condición para publicar |
 |---|---|---|---|
-| SAT Set 5 | `codex/sat-scale-to-20-20260824` · `674d2490` | 8 commits únicos; 0 detrás; módulo 1 y plan de rama estándar en borrador. | Completar módulos/rutas, auditorías SAT y certificación de producto. |
+| SAT Set 5 | `codex/sat-scale-to-20-20260824` · `5e6c05f9`; base `6d2620f5` | `LISTO_PARA_INTEGRAR`; cinco sets, 15 módulos y 405 ítems. Doce puertas, fábrica 10/10, adaptatividad, originalidad, TypeScript, prebuild, build y ambas ramas en navegador aprobados el 25 ago 2026. | `MERGE`/fast-forward desde `main`; después exigir Vercel `READY`, SHA de `main` y smoke del hub más Sets 1–5 antes de marcar `DESPLEGADO`. |
 | Piloto registro/pagos TOEFL | `codex/toefl-pilot-registration` · `5def8b7b` | 1 parche único; 206 detrás; incluye migración y comercio. | Decisión de producto, revisión de seguridad/RLS, migración, pruebas de pago y reimplementación actualizada. |
 | Parche SAT adaptativo | `feat/sat-modulo-2`; parche `afd24f7d` | Rama 220 detrás; solo un parche no equivalente. | Comprobar si el motor actual ya resuelve la intención y reimplementar si hace falta. |
 
@@ -158,3 +158,7 @@ Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview
 - Mientras se validaba la protección, Alemán A2 avanzó de 16 a 20 escenarios y se integró
   concurrentemente en `origin/main` (`e41f1022`). La rama de protección se rebasó sobre ese
   commit antes de continuar; ahora exige 417 páginas de Práctica y añade su ruta al smoke.
+- SAT Set 5 quedó `LISTO_PARA_INTEGRAR` en `5e6c05f9`, rebasado sobre `6d2620f5`.
+  Los cinco sets suman 15 módulos y 405 preguntas autoradas. Pasaron las doce puertas,
+  fábrica 10/10, originalidad local, los 28 resultados adaptativos, TypeScript, prebuild,
+  build y QA de navegador de ambas ramas con POST interceptados y móvil 390 × 844.
