@@ -21,6 +21,10 @@ import {
   DIGITAL_SAT_STRATEGY_MAP_NOTES,
   DIGITAL_SAT_STRATEGY_MAP_PODCAST,
 } from '@/data/practica/podcasts/strategic-map-for-the-digital-sat';
+import {
+  TOPIK_I_STRATEGY_NOTES,
+  TOPIK_I_STRATEGY_PODCAST,
+} from '@/data/practica/podcasts/estrategias-para-aprobar-el-topik-i';
 import toeflStyles from './toefl-ios.module.css';
 
 export async function generateStaticParams() {
@@ -155,6 +159,20 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
             { href: '/examenes/sat/guia/reading-and-writing', label: 'Map Reading and Writing' },
             { href: '/examenes/sat/guia/puntaje-sat-universidades', label: 'Set a target score' },
             { href: '/examenes/sat/guia/como-estudiar-sat-desde-cero', label: 'Build the study plan' },
+          ]}
+        />
+      )}
+
+      {slug === 'topik' && (
+        <PodcastFeature
+          {...TOPIK_I_STRATEGY_PODCAST}
+          accent={exam.color}
+          notes={TOPIK_I_STRATEGY_NOTES}
+          links={[
+            { href: '/examenes/topik/practica/set-1', label: 'Hacer el diagnóstico de lectura' },
+            { href: '/examenes/topik/practica/set-2', label: 'Practicar escucha y lectura' },
+            { href: '/practica/coreano/a1/gramatica', label: 'Reforzar la gramática inicial' },
+            { href: '/blog/topik-1-preparacion-guia-para-principiantes', label: 'Abrir la guía de preparación' },
           ]}
         />
       )}
