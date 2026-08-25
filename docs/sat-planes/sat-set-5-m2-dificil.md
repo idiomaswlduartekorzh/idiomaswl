@@ -1,6 +1,6 @@
 # SAT Set 5 · Módulo 2 exigente — matriz editorial
 
-Fecha: 25 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 8/27**.
+Fecha: 25 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 15/27**.
 
 Esta ruta sirve a estudiantes cuyo M1 queda en la banda alta. Eleva densidad y número de
 inferencias sin convertir la adaptatividad en castigo: conserva cinco entradas fáciles,
