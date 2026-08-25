@@ -3,6 +3,8 @@
   "id": "set-5",
   "status": "draft",
   "publishable": false,
+  "candidateFile": "src/data/mocks/sat/drafts/set-5/sat-set-5.ts",
+  "candidateExport": "satSet5Candidate",
   "studentQuestions": 54,
   "authoredQuestionsRequired": 81,
   "modules": [
