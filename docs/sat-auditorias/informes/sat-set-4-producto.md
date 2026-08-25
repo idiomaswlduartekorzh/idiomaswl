@@ -1,10 +1,9 @@
 # Auditoría de producto · SAT Set 4
 
-Fecha: 24 de agosto de 2026. Estado: **APTO PARA INTEGRAR EN `main`**.
+Fecha de cierre: 25 de agosto de 2026. Estado: **PRODUCCIÓN VERIFICADA**.
 
-El producto se compone en `src/data/mocks/sat/sat-set-4.ts`. Esta auditoría no implica
-que ya esté en producción: producción solo cambia al integrar `main` y superar su
-despliegue.
+El producto se compone en `src/data/mocks/sat/sat-set-4.ts` y está publicado desde
+`main`.
 
 ## Comprobado
 
@@ -38,11 +37,14 @@ porque el `node_modules` compartido del worktree queda fuera de la raíz que Tur
 permite en local; los previews anteriores de esta misma rama sí compilaron con Turbopack
 en Vercel.
 
-## Publicación pendiente
+## Evidencia de publicación
 
-La rama ya incorporó el `origin/main` vigente y superó el guardián del catálogo de
-práctica, TypeScript y el build completo. Corresponde integrar exclusivamente en `main` y
-verificar el despliegue de producción. La preview remota final no pudo crearse porque el
-proyecto agotó su cuota de más de 100 despliegues gratuitos en 24 horas; no fue un fallo
-de compilación ni de contenido. Hasta que el despliegue de producción quede verificado,
-producción conserva tres SAT públicos.
+- commit SAT integrado en `main`: `efeb017da8c333df2b5ad65fcd1189071438aecc`;
+- deployment de producción descendiente: `dpl_2ZgtCKHeYEP8A4QjS85TX1YAu227`, estado
+  `READY`, commit `88d71ab652e39c9a803dfe71445cb339c6dd74b3`;
+- build remoto con Turbopack: prebuild completo, 12 módulos SAT, 28 resultados
+  adaptativos, TypeScript y 2.306 rutas generadas;
+- `https://www.idiomaswl.com/examenes/sat` enlaza Sets 1–4;
+- `https://www.idiomaswl.com/examenes/sat/practica/set-4` devuelve HTTP 200 y contiene
+  la presentación de 54 preguntas y 64 minutos;
+- cero logs de nivel error encontrados en los primeros 15 minutos del deployment.

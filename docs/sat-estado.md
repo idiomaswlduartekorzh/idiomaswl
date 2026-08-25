@@ -1,6 +1,6 @@
 # SAT — estado de publicación
 
-Actualizado el **24 de agosto de 2026**.
+Actualizado el **25 de agosto de 2026**.
 
 ## Producto en producción
 
@@ -13,6 +13,9 @@ Actualizado el **24 de agosto de 2026**.
 - `set-3`: tercer simulacro adaptativo completo, con 81 preguntas nuevas. Pasó las doce
   puertas editoriales, las 28 decisiones de enrutado, ambas ramas, móvil, preview remoto
   y verificación HTTP posterior al despliegue desde `main`.
+- `set-4`: cuarto simulacro adaptativo completo, con 81 preguntas nuevas. Pasó las doce
+  puertas, originalidad local, ambas rutas en navegador, móvil a 390 px, TypeScript y
+  builds local y remoto. El dominio real devuelve 200 y lo enlaza desde el hub.
 - Corte de práctica WeLearn: 16 de 27 en M1. Es una convención explícita y no se presenta
   como el algoritmo privado de College Board.
 - Actas vigentes:
@@ -25,17 +28,19 @@ Actualizado el **24 de agosto de 2026**.
   - `docs/sat-auditorias/sat-set-3-m1.json`
   - `docs/sat-auditorias/sat-set-3-m2-facil.json`
   - `docs/sat-auditorias/sat-set-3-m2-dificil.json`
+  - `docs/sat-auditorias/sat-set-4-m1.json`
+  - `docs/sat-auditorias/sat-set-4-m2-facil.json`
+  - `docs/sat-auditorias/sat-set-4-m2-dificil.json`
 
-**Inventario:** hay **3 SAT completos publicados**, formados por 9 módulos y 243 preguntas
+**Inventario:** hay **4 SAT completos publicados**, formados por 12 módulos y 324 preguntas
 originales; cada estudiante responde 54 por intento y nunca recibe las dos ramas de M2.
 
 ## Loop de escala a 20
 
-El loop se abrió el **24 de agosto de 2026** en una rama aislada. Set 3 completó el ciclo y
-se publicó desde `main` en el dominio real. `set-4` completó sus 81 preguntas, tres actas,
-las dos rutas adaptativas, QA móvil y build de producción. Está promovido en la rama como
-candidato publicable, pero no se suma al inventario de producción hasta integrarse en
-`main` y verificar el despliegue real.
+El loop se abrió el **24 de agosto de 2026** en una rama aislada. Sets 3 y 4 completaron el
+ciclo y se publicaron desde `main` en el dominio real. Set 4 quedó verificado en el
+deployment `dpl_2ZgtCKHeYEP8A4QjS85TX1YAu227`; la siguiente unidad es reservar `set-5` y
+cerrar su matriz editorial de M1 antes de escribir Craft and Structure.
 
 La receta operativa, los costes medidos y las puertas por vuelta viven en
 [`docs/sat-fabrica.md`](sat-fabrica.md). La regla sigue siendo un set, un módulo y un bloque
@@ -84,6 +89,11 @@ incluido móvil a 390 px, antes de firmar las actas como publicables.
 Set 3 mantiene esa limitación declarada. Además, su QA bloqueó los POST con datos ficticios
 para no crear leads reales, contó 54 explicaciones y corrigió el orden móvil para mostrar la
 pregunta antes del panel de 27 accesos rápidos.
+
+Set 4 conserva la misma transparencia. Su QA recorrió una ruta estándar y una exigente,
+interceptó los POST, contó 54 revisiones y razones por ruta, comprobó el reintento y midió
+cero overflow a 390 px. El build final de `main` volvió a ejecutar las doce puertas y los
+28 resultados adaptativos antes de publicar.
 
 ## Antes de la siguiente publicación
 

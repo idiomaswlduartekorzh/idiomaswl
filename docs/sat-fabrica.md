@@ -1,6 +1,6 @@
 # Fábrica SAT — escala controlada de 2 a 20 sets
 
-Actualizado el **24 de agosto de 2026**. Este documento es la receta operativa que faltaba
+Actualizado el **25 de agosto de 2026**. Este documento es la receta operativa que faltaba
 en la fase C0. No sustituye las especificaciones de `docs/sat-ingles-blueprint.md`: las
 convierte en una cadena de producción repetible.
 
@@ -13,15 +13,14 @@ recibe M1 y una sola rama de M2, por lo que responde 54 preguntas en 64 minutos.
 | Estado | Sets | Módulos | Preguntas autoradas | Preguntas servidas por intento |
 | --- | ---: | ---: | ---: | ---: |
 | Publicado al abrir este loop | 2 | 6 | 162 | 54 por set |
-| Producción verificada | 3 | 9 | 243 | 54 por set |
-| Integrado en `main`, pendiente de deployment | 1 | 3 | 81 | 54 |
+| Producción verificada | 4 | 12 | 324 | 54 por set |
 | Trabajo restante por autorar | 16 | 48 | 1.296 | 54 por set |
 | Meta | 20 | 60 | 1.620 | 54 por set |
 
 La primera producción midió aproximadamente **25 minutos por bloque de ocho ítems** para
 plan, textos, ítems y primera auditoría, sin contar correcciones. Un módulo requiere cuatro
-bloques operativos; los 51 módulos restantes tienen por tanto un piso optimista de unas
-85 horas antes de QA de producto. Esta cifra sirve para capacidad, no para saltarse pasos.
+bloques operativos; los 48 módulos restantes tienen por tanto un piso optimista de unas
+80 horas antes de QA de producto. Esta cifra sirve para capacidad, no para saltarse pasos.
 
 ## Regla de flujo
 
@@ -182,7 +181,6 @@ las páginas se cambia a carga por set; no se espera a que el Set 20 haga visibl
 
 ## Siguiente unidad de trabajo
 
-`set-4` completó 81 preguntas, tres actas, ambas rutas adaptativas, QA móvil y build; está
-integrado en `main`. La cuota de Vercel impidió crear su deployment y producción conserva
-tres sets verificables. La próxima unidad es cerrar esa publicación y comprobar Set 4 por
-URL. Solo después se reserva `set-5` y se abre su matriz editorial de M1.
+`set-4` completó 81 preguntas, tres actas, ambas rutas adaptativas, QA móvil y builds local
+y remoto. Está publicado y verificado por URL. La próxima unidad es reservar `set-5`,
+cerrar la matriz editorial de M1 y después abrir Craft and Structure q01–q08.
