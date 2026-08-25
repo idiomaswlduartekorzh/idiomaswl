@@ -13,7 +13,9 @@ collection: Juicio y decisión
 evidenceClass: empirical
 editorialRisk: medium
 level: B2–C1
-minutes: 42
+mode: both
+guidedMinutes: 110
+selfStudyMinutes: 65
 centralQuestion: When does a feeling provide useful information, and when does it replace evidence?
 ```
 
@@ -38,38 +40,159 @@ Al terminar, el estudiante podrá:
 4. aplicar un protocolo de pausa sin eliminar información emocional relevante;
 5. formular una conclusión calibrada y una condición de actualización.
 
-## 2. Movimiento 1 — Orientar
+## 2. Fase 1 — Conversación guiada
 
-### Escenario
+### Escenario de entrada
 
 El estudiante recibe una mala calificación y, diez minutos después, una invitación para una audición
-que había deseado durante meses.
+que había deseado durante meses. El profesor cuenta primero una versión breve de una ocasión en la
+que un estado de ánimo cambió cómo interpretó una decisión distinta.
 
-### Pregunta inicial
+### Guion de 20 minutos para el profesor
 
-> Right now, how risky does accepting the audition feel?
+| Minuto | Tipo | Pregunta proyectada | Intención y posible repregunta |
+|---:|---|---|---|
+| 0–4 | experiencia | `When has a good or bad mood changed an unrelated decision?` | Obtener casos, no definiciones. `What felt different in that moment?` |
+| 4–7 | patrón | `Which parts of a decision can feelings influence: risk, benefit, trust or urgency?` | Separar dimensiones. `Could the same feeling affect two of them?` |
+| 7–11 | mecanismo | `Why might a vivid feeling become evidence in our minds?` | Construir hipótesis. `Does speed make it more or less likely?` |
+| 11–14 | excepción | `When can a feeling be useful information rather than noise?` | Evitar “emotion is bad”. `What might it be detecting?` |
+| 14–17 | concepto | `What is the difference between feeling unsafe and being unsafe?` | Preparar `perceived` frente a `measured risk`. |
+| 17–20 | evidencia | `What evidence could tell us whether mood changed the judgment?` | Preparar diseño experimental y falsabilidad. |
 
-Opciones:
+La nota privada del profesor recuerda: aceptar ejemplos personales sin pedir revelaciones íntimas,
+no confirmar una teoría todavía y recoger en el tablero las palabras que el grupo necesita decir
+en inglés.
 
-1. **High risk:** today’s failure probably says something about my chances.
-2. **Unclear:** the feeling is real, but the exam and the audition measure different abilities.
-3. **Low risk:** emotions are irrelevant and should be ignored.
+## 3. Fase 2 — Audio diagnóstico
 
-Después de elegir, registra confianza de `0–100`.
+Cuando el profesor considera que el grupo ya tiene una explicación tentativa, pulsa **Open first
+recording**. La consigna aparece entonces, no antes:
 
-### Revelación
+> In 60–90 seconds, explain how your current mood could affect a decision that is not directly
+> related to it. Name two parts of the decision that might change, give one exception, and rate your
+> confidence from 0 to 100.
 
-La opción 2 distingue la información emocional de la evidencia sobre la tarea. La opción 3 tampoco
-es suficiente: una emoción puede señalar cansancio, amenaza o valor personal, aunque no demuestre
-la probabilidad de fracasar en una actividad independiente.
+El estudiante puede grabar, escuchar y repetir. La interfaz dice `Private on this device` hasta que
+decida entregar. No hay nota ni modelo; el producto conserva este audio para el cierre.
 
-## 3. Movimiento 2 — Escuchar
+## 4. Fase 3 — Lectura larga activa
 
-### Título
+Título: **When risk feels like a property of the object**  
+Extensión objetivo: 1.250–1.450 palabras.
 
-**A feeling can answer the wrong question quickly**
+| Bloque | Rol | Contenido | Herramienta activa |
+|---|---|---|---|
+| 1. The useful speed of affect | `definition` | `affect`; rapidez no equivale a error; `I dislike it` frente a `it is dangerous` | glosario y contraste marcable |
+| 2. One feeling, two estimates | `evidence` | experimentos de Finucane et al.; relación inversa entre riesgo y beneficio; presión temporal | mapa `claim → design → result → limit` |
+| 3. The image inside a statistic | `example` | `20%` frente a `20 out of 100`; equivalencia numérica e imagen mental | comparador que alterna formatos y pide predicción |
+| 4. Emotion is not the enemy | `counterargument` | velocidad, prioridad y aprendizaje; emoción relevante frente a emoción transferida | marcado `objection` y `reply` |
+| 5. A four-question protocol | `application` | nombrar, localizar origen, separar riesgo/beneficio y cambiar el encuadre | hoja de decisión editable |
+| 6. Limits and better conclusions | `scope-limit` | el atajo no predice por sí solo una mala decisión; contexto y diferencias individuales | mapa final y condición de actualización |
 
-### Guion base — 226 palabras
+### Interacciones concretas
+
+1. Antes del bloque 2: `If time pressure increases, will perceived risk and benefit become more
+   independent or more strongly linked?` La respuesta se guarda antes de revelar el resultado.
+2. En el bloque 2, el estudiante puede pulsar **Show evidence chain** para distinguir qué se
+   manipuló, qué se midió y qué no demuestra el estudio.
+3. En el bloque 3, un control cambia `20%` por veinte figuras resaltadas entre cien. El valor no
+   cambia; el estudiante anota si cambió su reacción y por qué.
+4. Las palabras `affect`, `perceived risk`, `spill over` y `disentangle` abren pronunciación,
+   colocación y un ejemplo nuevo.
+5. Cada bloque termina con `Write the section in one sentence`. No aparece una falsa marca de
+   “correcto”; después se ofrece una lista de elementos para autoinspección.
+6. Tres pausas docentes: después del diseño experimental, después del comparador estadístico y
+   antes de revelar el protocolo.
+
+El estudiante puede anclar notas a una frase y clasificarlas como `main idea`, `evidence`,
+`language` o `question`. El mapa argumental solo usa relaciones previamente revisadas en la ficha
+editorial.
+
+## 5. Fase 4 — Recuperación: voz y apuntes
+
+El texto se minimiza durante el primer minuto. El cajón de notas permanece disponible, inicialmente
+vacío, con cuatro campos:
+
+- `Main claim in my own words`;
+- `Evidence or argument I found strongest`;
+- `A limitation or counterexample`;
+- `Question I still have`.
+
+Consigna de audio:
+
+> Without summarising every section, explain the central claim, one piece of evidence, one limit and
+> one question that remains. Speak for 75–120 seconds.
+
+Después de grabar, el estudiante puede reabrir el texto y completar los apuntes con otro color para
+distinguir recuerdo inicial de revisión posterior. Todavía no ve su primer audio.
+
+## 6. Fase 5 — Vocabulario de precisión
+
+1. `affect` — evaluación sentida de bondad o maldad.
+2. `gut feeling` — intuición o reacción visceral.
+3. `perceived risk` — riesgo tal como se experimenta o estima.
+4. `measured risk` — riesgo estimado mediante datos definidos.
+5. `time pressure` — presión por decidir rápidamente.
+6. `to elicit` — provocar una respuesta.
+7. `to spill over` — trasladarse de un contexto a otro.
+8. `to disentangle` — separar factores mezclados.
+9. `trade-off` — intercambio entre beneficios y costos.
+10. `to override` — imponerse sobre otra señal o decisión.
+
+Contrastes obligatorios: `feeling / evidence`, `perceived / measured risk` y `fast / careless`.
+La práctica usa recuperación en frases nuevas y obliga a reutilizar al menos cuatro términos en las
+fases 7 y 8.
+
+## 7. Fase 6 — Desafío IELTS avanzado
+
+El bloque tiene ocho preguntas. La ficha editorial reserva estas posiciones de clave antes de
+redactar opciones: `B, D, A, C, C, A, D, B`. No hay rachas y cada posición aparece dos veces. En
+pantalla se reordenan de forma determinista por intento sin mencionar letras en el feedback.
+
+| # | Familia | Objetivo | Trampa principal |
+|---:|---|---|---|
+| 1 | Matching Heading | función del bloque 1 | escoger un detalle atractivo |
+| 2 | inferencia | efecto de presión temporal | convertir tendencia en regla universal |
+| 3 | Yes/No/Not Given | postura sobre emoción | confundir ausencia con desacuerdo |
+| 4 | evidencia | diseño frente a resultado | usar conclusión como método |
+| 5 | completar resumen | `perceived risk` | exceder límite de dos palabras |
+| 6 | propósito de párrafo | función del bloque 4 | escoger tema en lugar de propósito |
+| 7 | mejor conclusión | alcance del constructo | afirmar causalidad o universalidad |
+| 8 | transferencia | donación y foto vívida | confundir reacción con efectividad |
+
+### Ítem modelo
+
+> A charity shows one vivid photograph before asking for a donation. Which conclusion is best
+> supported by the passage?
+
+- The photograph proves that the programme produces measurable benefits.
+- The reaction may reveal what matters to the donor, while effectiveness still requires separate
+  evidence.
+- The donor should ignore the photograph because affect is always an obstacle to sound reasoning.
+- The intensity of the reaction provides an accurate estimate of how many people the programme
+  helps.
+
+El feedback no dice “B”. Explica que la respuesta defendible conserva la información afectiva sin
+convertirla en una medición de impacto; las otras tres inventan prueba, universalidad o precisión.
+
+### Auditoría previa a publicar
+
+- ninguna correcta es la única más larga o más corta;
+- diferencia máxima frente al distractor más largo: menos de tres palabras;
+- cifras, citas, paréntesis y registro se distribuyen entre clave y distractores;
+- repetir más o menos vocabulario del párrafo no resuelve el conjunto;
+- cada distractor tiene `errorCode`, explicación y tramo de evidencia;
+- los ocho ítems independientes no reutilizan los ejemplos resueltos durante la lectura.
+
+## 8. Fase 7 — Laboratorio de escucha dual
+
+Relación declarada: **`complement` + `scenario`**. El primer audio explica un patrón experimental;
+el segundo representa una decisión donde el estado afectivo puede haberse trasladado. El segundo
+no repite la definición del primero.
+
+### Audio A — The researcher separates two estimates
+
+Función: explicar diseño, resultado y límite. Guion base, 230–280 palabras:
 
 > Imagine that you are deciding whether to invest in a new technology. You like the company, its
 > founder seems inspiring, and the product represents a future you want to believe in. When asked
@@ -85,133 +208,75 @@ la probabilidad de fracasar en una actividad independiente.
 > Information that makes an activity feel more positive can also lower perceived risk, even when
 > the new information concerns benefits rather than safety.
 >
-> The practical response is not to become emotionless. First, name the feeling. Second, separate
-> the questions: What are the benefits? What are the risks? What evidence supports each answer?
-> Finally, ask whether the feeling comes from this decision or travelled here from another event.
-> A feeling is data about your present state. It is not automatically data about the probability you
-> are trying to estimate.
+> This does not show that every positive feeling makes people reckless. It identifies a pattern in
+> particular judgment tasks. To inspect your own estimate, name the feeling, evaluate benefits and
+> risks separately, and ask whether the feeling began with this decision or travelled from another
+> event.
 
-### Preguntas
+### Audio B — The audition decision
 
-1. **Idea principal:** Why can one emotional evaluation distort two judgments at once?
-   - Correcta: Because it can be used as a shared shortcut for both perceived risk and benefit.
-2. **Inferencia:** Why does the speaker ask whether the feeling “travelled” from another event?
-   - Correcta: To test whether the emotion is relevant evidence for the present decision.
+Función: representar una situación ambigua con dos voces. Guion base, 250–300 palabras:
 
-## 4. Movimiento 3 — Lectura larga
+> **Maya:** I nearly declined the audition. I had just received my statistics result, and it was
+> much worse than I expected. Suddenly the audition felt like another public failure waiting to
+> happen.
+>
+> **Leo:** Did anything about the audition itself change?
+>
+> **Maya:** Not really. Same panel, same piece, same deadline. But the risk felt different. Yesterday
+> I thought, “This could open a door.” Today I thought, “This could prove I am not good enough.”
+>
+> **Leo:** So the exam result may have changed the story attached to the audition. But perhaps the
+> feeling still tells you something useful. Are you exhausted? Have you prepared the piece?
+>
+> **Maya:** That is the difficult part. I am tired, which matters. Yet I also practised for six
+> weeks, and my teacher says the piece is ready. The statistics exam gives me evidence about one
+> course. It does not directly estimate my probability of performing the music well.
+>
+> **Leo:** What would you do if the grade had been excellent?
+>
+> **Maya:** I would probably accept immediately. That contrast makes me suspect some spillover. I am
+> going to sleep before deciding, then list the actual costs and benefits. If I still feel worried,
+> I will ask whether the worry points to a specific weakness in my preparation.
 
-Título: **When risk feels like a property of the object**  
-Extensión objetivo: 1.150–1.300 palabras.
+### Operación de escucha
 
-### Sección 1 — The useful speed of affect
+1. Audio A: identificar mecanismo y límite.
+2. Audio B: localizar evidencia relevante, emoción transferida y una señal que sí importa.
+3. Completar una matriz `source of feeling / measured evidence / unresolved risk / next action`.
+4. Responder: `How does Maya’s case illustrate the pattern without proving that the pattern caused
+   her decision?`.
 
-- Definir `affect` como cualidad positiva o negativa experimentada ante un estímulo.
-- Explicar que rapidez no equivale automáticamente a error.
-- Contrastar “I dislike it” con “it is objectively dangerous”.
+## 9. Fase 8 — Síntesis y cierre
 
-### Sección 2 — One feeling, two estimates
+### Producción escrita o discusión
 
-- Presentar los experimentos de Finucane et al. (2000).
-- Explicar la relación inversa entre riesgo y beneficio percibidos.
-- Mostrar por qué la presión temporal fortalece el uso del atajo.
+> A friend says: “If an opportunity feels wrong, that is all the evidence you need.” Respond in
+> 140–200 words. Use the reading and both audios, preserve one useful role for emotion, distinguish
+> perceived from measured risk, address one objection and state what could change your advice.
 
-### Sección 3 — The image inside a statistic
+### Audio final
 
-- Comparar `20%` con `20 out of 100`.
-- Explicar que la equivalencia numérica no garantiza una imagen mental equivalente.
-- Conectar con el efecto de encuadre sin tratarlos como sinónimos.
+> Return to your first explanation. In 90–120 seconds, say what you kept or changed, which evidence
+> made your explanation more precise, one limit you would now include, and what would make you
+> update again.
 
-### Sección 4 — Emotion is not the enemy of reason
-
-- Presentar beneficios: velocidad, prioridad, aprendizaje acumulado y respuesta ante urgencia.
-- Evitar presentar “System 1” y “System 2” como dos zonas anatómicas del cerebro.
-- Introducir la pregunta de relevancia: ¿esta emoción responde a esta decisión?
-
-### Sección 5 — A four-question protocol
-
-1. What am I feeling?
-2. Did this feeling begin with this decision?
-3. What evidence supports risk and benefit separately?
-4. Would I make the same estimate tomorrow or under a different frame?
-
-### Sección 6 — Limits and better conclusions
-
-- El atajo no predice por sí solo una mala decisión.
-- Un sentimiento puede coincidir con evidencia válida.
-- Las diferencias individuales y el contexto importan.
-- La meta es calibrar, no suprimir el afecto.
-
-## 5. Movimiento 4 — Vocabulario
-
-1. `affect` — evaluación sentida de bondad o maldad.
-2. `gut feeling` — intuición o reacción visceral.
-3. `perceived risk` — riesgo tal como se experimenta o estima.
-4. `measured risk` — riesgo estimado mediante datos definidos.
-5. `time pressure` — presión por decidir rápidamente.
-6. `to elicit` — provocar una respuesta.
-7. `to spill over` — trasladarse de un contexto a otro.
-8. `to disentangle` — separar factores mezclados.
-9. `trade-off` — intercambio entre beneficios y costos.
-10. `to override` — imponerse sobre otra señal o decisión.
-
-Contrastes obligatorios:
-
-- `feeling` ≠ `evidence`;
-- `perceived risk` ≠ `measured risk`;
-- `fast` ≠ `careless`.
-
-## 6. Movimiento 5 — Práctica
-
-1. **Definición:** identificar una decisión guiada por afecto, no solo una decisión emocional.
-2. **Mecanismo:** explicar por qué un sentimiento positivo puede reducir riesgo percibido.
-3. **Formato:** comparar `10%` y `10 out of 100` sin afirmar que los valores difieren.
-4. **Relevancia:** distinguir emoción originada por la decisión de emoción transferida.
-5. **Límite:** elegir la mejor objeción a “emotion always produces bad decisions”.
-6. **Transferencia:** aplicar el protocolo a salud, inversión o elección académica.
-
-### Ejercicio modelo
-
-> A charity shows one vivid photograph before asking for a donation. Which conclusion is best?
-
-A. The photograph proves the programme is effective.  
-B. The emotion is irrelevant because moral decisions must be logical.  
-C. The photograph may reveal what matters to the donor, but programme effectiveness requires
-separate evidence.  
-
-Correcta: **C**. No elimina la emoción ni la convierte en prueba de impacto.
-
-## 7. Movimiento 6 — Producción
-
-### Consigna
-
-> A friend says: “If an opportunity feels wrong, that is all the evidence you need.” Write 120–160
-> words. Preserve one useful role for emotion, distinguish perceived from measured risk, apply the
-> four-question protocol, and state what information could change your recommendation.
-
-### Lista de control
-
-- I did not treat emotion as either infallible or useless.
-- I separated risk from benefit.
-- I used at least three target terms.
-- I stated what evidence would make me update.
-
-### Cierre circular
-
-El estudiante responde de nuevo al escenario de la audición y registra confianza. El producto
-compara la opción inicial con la final, pero evalúa principalmente la calidad de la explicación.
+Solo después aparecen los audios inicial y final en paralelo. El estudiante marca evidencias de
+progreso: `I separated two concepts`, `I used evidence`, `I included a limit` y `I stated an update
+condition`. Cambiar de opinión no es un criterio de éxito.
 
 ### Modelo abreviado
 
 > A feeling that an opportunity is wrong deserves attention, but it does not answer every relevant
 > question. First, I would identify whether the feeling began with this opportunity or spilled over
 > from another event. Then I would disentangle perceived risk from measured risk by examining the
-> likely costs, benefits and available evidence separately. A gut feeling may reveal a value or a
-> warning that I have not yet articulated, especially under time pressure. However, it should not
-> override independent evidence automatically. I would update my recommendation if new information
-> showed a concrete danger, a poor trade-off or a pattern of outcomes that my first reaction had
-> detected but I had not yet understood.
+> likely costs, benefits and available evidence separately. Maya’s case illustrates why this matters:
+> her exam result changed the story attached to an unchanged audition, while her preparation still
+> provided relevant evidence. A gut feeling may reveal a warning that has not yet been articulated;
+> it should not override independent evidence automatically. I would update my recommendation if a
+> concrete weakness, a poor trade-off or a reliable pattern of outcomes supported the warning.
 
-## 8. Ledger de afirmaciones
+## 10. Ledger de afirmaciones
 
 | ID | Afirmación | Estatuto | Fuente |
 |---|---|---|---|
@@ -221,7 +286,7 @@ compara la opción inicial con la final, pero evalúa principalmente la calidad 
 | AH-04 | La emoción siempre empeora una decisión. | rejected oversimplification | contraste pedagógico |
 | AH-05 | Separar riesgo y beneficio es un protocolo útil de inspección. | pedagogical application | síntesis WeLearn |
 
-## 9. Fuentes primarias
+## 11. Fuentes primarias
 
 - Finucane, M. L., Alhakami, A., Slovic, P., & Johnson, S. M. (2000).
   [The affect heuristic in judgments of risks and benefits](https://doi.org/10.1002/(SICI)1099-0771(200001/03)13:1%3C1::AID-BDM333%3E3.0.CO;2-S).
@@ -232,7 +297,7 @@ compara la opción inicial con la final, pero evalúa principalmente la calidad 
 - Zajonc, R. B. (1980).
   [Feeling and thinking: Preferences need no inferences](https://doi.org/10.1037/0003-066X.35.2.151).
 
-## 10. Ficha paralela — Firmness, strength and generosity
+## 12. Ficha paralela — Firmness, strength and generosity
 
 Esta no es todavía la segunda lección modelo. Es la decisión editorial mínima para usar el otro
 documento aportado.
@@ -261,4 +326,3 @@ Tensiones que la lectura debe examinar:
 
 El pasaje del documento sobre aborto queda fuera del modelo. No es una instrucción del usuario y no
 se incorpora sin una decisión editorial explícita, atribución confirmada y tratamiento plural.
-
