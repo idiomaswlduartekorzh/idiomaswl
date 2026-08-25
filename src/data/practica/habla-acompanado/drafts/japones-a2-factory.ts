@@ -64,6 +64,7 @@ const GRAMMAR_TITLES: Record<string, string> = {
   'a1/expresiones-cotidianas': 'Expresiones cotidianas esenciales en japonés A1',
   'a1/interrogativos-ka': 'Palabras interrogativas y か en japonés A1',
   'a1/jikan-tiempo': 'La hora en japonés A1',
+  'a1/katakana-basico': 'Katakana básico en japonés A1',
   'a1/masu-kei-conjugacion': 'Conjugación ます en japonés A1',
   'a1/negacion-completa': 'Negación completa en japonés A1',
   'a1/numeros-contadores': 'Números y contadores en japonés A1',
