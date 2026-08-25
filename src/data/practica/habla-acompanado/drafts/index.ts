@@ -50,6 +50,26 @@ import { ROLEPLAY_ITALIANO_A2_BATCH_3 } from './italiano-a2-batch-3.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4 } from './italiano-a2-batch-4.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4B } from './italiano-a2-batch-4b.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4C } from './italiano-a2-batch-4c.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_1 } from './portugues-a2-batch-1.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_1B } from './portugues-a2-batch-1b.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_1C } from './portugues-a2-batch-1c.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_1D } from './portugues-a2-batch-1d.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_1E } from './portugues-a2-batch-1e.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_2 } from './portugues-a2-batch-2.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_2B } from './portugues-a2-batch-2b.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_2C } from './portugues-a2-batch-2c.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_2D } from './portugues-a2-batch-2d.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_2E } from './portugues-a2-batch-2e.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_3 } from './portugues-a2-batch-3.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_3B } from './portugues-a2-batch-3b.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_3C } from './portugues-a2-batch-3c.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_3D } from './portugues-a2-batch-3d.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_3E } from './portugues-a2-batch-3e.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_4 } from './portugues-a2-batch-4.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_4B } from './portugues-a2-batch-4b.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_4C } from './portugues-a2-batch-4c.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_4D } from './portugues-a2-batch-4d.ts'
+import { ROLEPLAY_PORTUGUES_A2_BATCH_4E } from './portugues-a2-batch-4e.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -135,6 +155,29 @@ export const ROLEPLAY_ITALIANO_A2_CANDIDATE = [
   ...ROLEPLAY_ITALIANO_A2_BATCH_4,
   ...ROLEPLAY_ITALIANO_A2_BATCH_4B,
   ...ROLEPLAY_ITALIANO_A2_BATCH_4C,
+].sort((a, b) => a.sequence - b.sequence)
+
+export const ROLEPLAY_PORTUGUES_A2_CANDIDATE = [
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_1,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_1B,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_1C,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_1D,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_1E,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_2,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_2B,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_2C,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_2D,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_2E,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_3,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_3B,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_3C,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_3D,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_3E,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_4,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_4B,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_4C,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_4D,
+  ...ROLEPLAY_PORTUGUES_A2_BATCH_4E,
 ].sort((a, b) => a.sequence - b.sequence)
 
 /**

@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · planos/problemas 19. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_4D: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-grill-must-leave-veranda', slug: 'grill-must-leave-veranda', sequence: 19,
+    language: 'portugues', level: 'a2', title: 'La parrilla debe salir de la terraza', titleTarget: 'A churrasqueira precisa sair da varanda',
+    setting: 'Sábado, às 16h45, em um espaço de eventos de Natal', settingEs: 'Un espacio para eventos de Natal, el sábado a las 4:45 p. m.',
+    speechActs: ['dar-mala-noticia', 'negociar', 'pedir-aclaracion'], power: 'igual', initiator: 'a', outcome: 'acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#19',
+    roles: [
+      {
+        id: 'a', name: 'responsável pelo espaço', nameEs: 'quien gestiona el espacio', headline: 'A churrasqueira não pode ficar perto do toldo, mas o pátio lateral comporta dezoito pessoas',
+        briefing: ['**Dê a notícia e apresente medidas e horários.** Use **você** com o organizador. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao organizador. Não autorize fogo na varanda nem aumente a capacidade do pátio acima de dezoito pessoas.'],
+        prose: [
+          { label: 'Situação atual', text: 'A churrasqueira foi montada na varanda para um encontro de 24 pessoas. Uma vistoria identificou fumaça perto do toldo e pediu que o equipamento vá para o pátio lateral.' },
+          { label: 'Objetivo', text: 'Mover o equipamento antes de acender, manter convidados em áreas permitidas e definir última cocção, limpeza e encerramento.' },
+          { label: 'O que não é possível', items: ['Acender a churrasqueira na varanda, mesmo com janelas abertas.', 'Colocar mais de 18 pessoas no pátio lateral.', 'Usar o pátio depois das 21h30 por causa do horário do bairro.'] },
+          { label: 'Só você sabe', items: ['O pátio mede 6 × 4 m e tem 18 cadeiras e quatro mesas.', 'Uma sala interna ao lado comporta seis pessoas e permite levar pratos prontos, mas não fogo.', 'Pode oferecer dois funcionários para mover a churrasqueira agora e revisar a área às 17h15.'] },
+          { label: 'Se vocês não resolverem', text: 'O encontro começa com equipamento em local proibido ou o pátio ultrapassa a capacidade e precisa ser fechado.' },
+        ],
+        facts: [
+          { label: 'Convidados', value: '24 pessoas' }, { label: 'Varanda', value: 'toldo · fogo proibido' },
+          { label: 'Pátio lateral', value: '6 × 4 m · 18 lugares' }, { label: 'Sala interna', value: '6 lugares · sem fogo' },
+          { label: 'Mudança', value: '2 funcionários disponíveis' }, { label: 'Vistoria', value: '17h15' },
+          { label: 'Último uso do pátio', value: '21h30' }, { label: 'Limpeza', value: 'antes do fechamento' },
+        ],
+        vocab: [
+          { word: 'capacidade', whatItIs: 'maior número de pessoas permitido em um lugar', here: 'dezoito no pátio' },
+          { word: 'cocção', whatItIs: 'preparação de alimento com calor', here: 'atividade que precisa terminar antes da limpeza' },
+          { word: 'fumaça', whatItIs: 'gás visível produzido pelo fogo', here: 'risco perto do toldo' },
+          { word: 'horário do bairro', whatItIs: 'limite de uso externo para reduzir barulho', here: 'fechamento do pátio às 21h30' },
+          { word: 'pátio lateral', whatItIs: 'área aberta ao lado do prédio', here: 'novo local da churrasqueira' },
+          { word: 'prato pronto', whatItIs: 'comida já preparada que pode ser levada a outro espaço', here: 'item permitido na sala interna' },
+          { word: 'toldo', whatItIs: 'cobertura de tecido sobre uma área', here: 'material perto do qual não pode haver fogo' },
+          { word: 'vistoria', whatItIs: 'verificação de segurança e organização', here: 'controle marcado para 17h15' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Diferencie onde se cozinha, onde se come e quando cada área fecha.',
+        exponents: [
+          { purpose: 'Dar a notícia', form: '`A churrasqueira precisa sair da varanda antes de ser acesa.`', effect: 'comunica o limite sem ambiguidade' },
+          { purpose: 'Explicar o risco', form: '`A fumaça ficaria perto do toldo, por isso o fogo não é permitido aqui.`', effect: 'liga regra e causa' },
+          { purpose: 'Negociar a capacidade', form: '`O pátio recebe dezoito pessoas e a sala interna, mais seis.`', effect: 'distribui os 24 convidados' },
+          { purpose: 'Oferecer a mudança', form: '`Dois funcionários podem mover o equipamento e fazer a vistoria às …`', effect: 'atribui ajuda e prazo' },
+          { purpose: 'Pedir os horários', form: '`Quantas pessoas chegam primeiro e a que horas chega o segundo grupo?`', effect: 'verifica se a capacidade é respeitada' },
+          { purpose: 'Recomendar o encerramento', form: '`É melhor fazer a última cocção às … e limpar até …`', effect: 'protege o fechamento do pátio' },
+          { purpose: 'Resumir as áreas', form: '`Cozinhamos no pátio, servimos também na sala e fechamos tudo às …`', effect: 'confirma uso e fechamento' },
+        ],
+        success: 'Você proibiu o fogo na varanda, ofereceu a mudança e manteve capacidade de 18 no pátio. Confirmou sala interna, vistoria, última cocção e fechamento.',
+      },
+      {
+        id: 'b', name: 'organizador do encontro', nameEs: 'quien organiza el encuentro', headline: 'Seis convidados chegam mais tarde, e quatro dos primeiros saem antes das oito',
+        briefing: ['**Explique o cronograma e não negocie o fogo na varanda.** Use **você** com o responsável. **O responsável começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao responsável. Não coloque mais de dezoito pessoas no pátio nem leve a churrasqueira à sala interna.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você organizou um encontro para 24 pessoas e colocou a churrasqueira na varanda, como em um evento anterior. O responsável informa que a vistoria proibiu esse local.' },
+          { label: 'Objetivo', text: 'Manter a comida e os convidados no espaço, usar pátio e sala sem ultrapassar a capacidade e reorganizar o horário.' },
+          { label: 'O que não é possível', items: ['Cancelar o encontro: comida e convidados já estão a caminho.', 'Manter todos os 24 no pátio ao mesmo tempo.', 'Servir a última comida depois das 21h: serão necessários trinta minutos para limpar.'] },
+          { label: 'Só você sabe', items: ['Dezoito pessoas chegam às 18h; seis chegam somente às 19h30.', 'Quatro dos primeiros convidados vão embora às 19h45.', 'Pode reservar a sala interna para seis pessoas e servir a comida pronta lá.'] },
+          { label: 'Se vocês não resolverem', text: 'A comida não é preparada ou o encontro ultrapassa capacidade e horário, mesmo havendo duas áreas disponíveis.' },
+        ],
+        facts: [
+          { label: 'Total', value: '24 convidados' }, { label: 'Primeira chegada', value: '18 pessoas · 18h00' },
+          { label: 'Segunda chegada', value: '6 pessoas · 19h30' }, { label: 'Saída antecipada', value: '4 pessoas · 19h45' },
+          { label: 'Sala interna', value: 'reserva possível · 6 lugares' }, { label: 'Última cocção', value: '20h45' },
+          { label: 'Limpeza', value: '20h45–21h15' }, { label: 'Saída final', value: '21h30' },
+        ],
+        vocab: [
+          { word: 'convidado atrasado', whatItIs: 'pessoa que chega depois do primeiro grupo', here: 'um dos seis que chegam às 19h30' },
+          { word: 'cronograma', whatItIs: 'lista de atividades e horários', here: 'chegadas, comida, limpeza e saída' },
+          { word: 'encontro', whatItIs: 'evento social de um grupo', here: 'atividade para 24 pessoas' },
+          { word: 'grupo inicial', whatItIs: 'primeiras pessoas que chegam a um evento', here: 'dezoito convidados das 18h' },
+          { word: 'limite de pessoas', whatItIs: 'maior quantidade autorizada em um espaço', here: 'dezoito no pátio' },
+          { word: 'reorganizar', whatItIs: 'mudar a ordem ou distribuição de um plano', here: 'ação feita com áreas e horários' },
+          { word: 'sala interna', whatItIs: 'espaço fechado dentro do prédio', here: 'lugar para seis pessoas e pratos prontos' },
+          { word: 'servir', whatItIs: 'entregar comida ou bebida para as pessoas', here: 'ação permitida nas duas áreas' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Use as chegadas e saídas para provar que pátio e sala comportam o grupo.',
+        exponents: [
+          { purpose: 'Aceitar a mudança', form: '`Tudo bem, movemos a churrasqueira antes de acender e usamos o pátio.`', effect: 'aceita o limite de segurança' },
+          { purpose: 'Dar o cronograma', form: '`Dezoito chegam às …; seis chegam às …; quatro saem às …`', effect: 'mostra como a quantidade muda' },
+          { purpose: 'Explicar a necessidade', form: '`Não posso cancelar porque a comida e os convidados já estão a caminho.`', effect: 'mantém aberta uma solução dentro do espaço' },
+          { purpose: 'Negociar as áreas', form: '`Podemos manter até dezoito no pátio e usar seis lugares na sala.`', effect: 'respeita os dois limites' },
+          { purpose: 'Pedir a vistoria', form: '`Depois da mudança, podemos conferir o pátio às …?`', effect: 'confirma segurança antes de acender' },
+          { purpose: 'Propor o fechamento', form: '`Terminamos a cocção às … e limpamos até …`', effect: 'reserva tempo antes de 21h30' },
+          { purpose: 'Verificar o acordo', form: '`Fogo só no pátio, comida nas duas áreas e saída às …, certo?`', effect: 'confirma lugar, distribuição e horário' },
+        ],
+        success: 'Você aceitou mover a churrasqueira, distribuiu 24 pessoas sem superar 18 no pátio e reservou a sala. Confirmou vistoria, última cocção, limpeza e saída.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, aceite a mudança, pergunte as capacidades e diga quantos convidados chegam. Não mostre a tela ao responsável.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Atualização do grupo · 16h52**' },
+        { kind: 'table', head: ['Grupo', 'Horário'], rows: [['Primeiros convidados', '18 pessoas · 18h'], ['Segundo grupo', '6 pessoas · 19h30'], ['Saída antecipada', '4 pessoas · 19h45'], ['Total máximo no pátio', '18 pessoas']] },
+        { kind: 'p', text: 'As chegadas não são simultâneas. Com seis lugares na sala interna, o pátio pode respeitar a capacidade durante todo o encontro.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem quando as duas pessoas puderem repetir estes cinco elementos:**' },
+      { kind: 'ol', items: ['A churrasqueira será movida da varanda para o pátio antes de ser acesa.', 'Dois funcionários fazem a mudança e a vistoria ocorre às 17h15.', 'Nunca haverá mais de 18 pessoas no pátio; seis lugares ficam disponíveis na sala interna.', 'A última cocção termina às 20h45 e a limpeza às 21h15.', 'Todos saem do pátio até 21h30.'] },
+    ],
+    debrief: ['¿Qué dato demostró que el patio pequeño podía funcionar?', '¿Cómo se separaron cocinar, servir y sentarse?', 'Repitan en portugués áreas, capacidades y horarios sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'a churrasqueira ficará y os convidados chegarão organizan el evento.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderia funcionar y seria melhor negocian espacios.' },
+      { slug: 'subjuntivo-presente-a2', level: 'a2', title: 'Presente de subjuntivo en portugués A2', rationale: 'antes que seja acesa y para que o pátio fique livre expresan condición.' },
+      { slug: 'comparativos-superlativos-a2', level: 'a2', title: 'Comparativos y superlativos en portugués A2', rationale: 'o pátio é menor que a varanda y a sala é mais segura com pratos prontos.' },
+      { slug: 'para-vs-por-a2', level: 'a2', title: 'Para vs. por en portugués A2', rationale: 'para o pátio y por causa da fumaça distinguen destino y causa.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, se y enquanto conectan límite, condición y distribución.' },
+    ],
+  },
+]

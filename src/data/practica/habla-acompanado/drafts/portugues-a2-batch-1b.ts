@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · transação 2. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_1B: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-health-plan-discount-is-missing', slug: 'health-plan-discount-is-missing', sequence: 2,
+    language: 'portugues', level: 'a2', title: 'No apareció el descuento del convenio', titleTarget: 'O desconto do convênio não apareceu',
+    setting: 'Segunda-feira, às 18h22, em uma farmácia de Belo Horizonte', settingEs: 'Una farmacia de Belo Horizonte, el lunes a las 6:22 p. m.',
+    speechActs: ['pedir-aclaracion', 'poner-limite', 'proponer-alternativa'], power: 'b>a', initiator: 'a', outcome: 'acuerdo-parcial', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#2',
+    roles: [
+      {
+        id: 'a', name: 'cliente do convênio', nameEs: 'quien usa el convenio', headline: 'O aplicativo mostra 20% de desconto, mas o caixa está cobrando o preço inteiro',
+        briefing: ['**Compare os dados antes de pedir uma solução.** Use **o senhor/a senhora** com o atendente. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao atendente. Não afirme que a farmácia prometeu uma devolução: o aplicativo só mostra a regra do convênio.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você vai comprar três produtos. O aplicativo do convênio mostra desconto de 20% em dois deles, mas o caixa calculou R$ 126,00, sem desconto algum.' },
+          { label: 'Objetivo', text: 'Levar hoje os dois produtos necessários, pagar um valor que caiba no orçamento e receber um protocolo para revisar a diferença sem tratar a devolução como garantida.' },
+          { label: 'O que não é possível', items: ['Pagar R$ 126,00: você tem R$ 105,00 disponíveis até quarta-feira.', 'Deixar o protetor solar: vai trabalhar ao ar livre amanhã.', 'Esperar uma hora: o último ônibus útil passa às 18h55.'] },
+          { label: 'Só você sabe', items: ['O aplicativo mostra que protetor e hidratante participam; o sabonete não participa.', 'Sem o sabonete, o preço cheio dos outros dois é R$ 106,00.', 'Você aceita pagar R$ 101,00 hoje se houver protocolo para revisar os R$ 16,20 restantes.'] },
+          { label: 'Se vocês não resolverem', text: 'Você sai sem um produto necessário para amanhã ou paga acima do orçamento sem prova de que a diferença será analisada.' },
+        ],
+        facts: [
+          { label: 'Horário', value: 'segunda-feira · 18h22' }, { label: 'Convênio', value: 'Saúde Minas · cadastro ativo' },
+          { label: 'Protetor solar', value: 'R$ 68,00 · desconto indicado 20%' }, { label: 'Hidratante', value: 'R$ 38,00 · desconto indicado 20%' },
+          { label: 'Sabonete', value: 'R$ 20,00 · sem desconto' }, { label: 'Total no caixa', value: 'R$ 126,00' },
+          { label: 'Valor disponível', value: 'R$ 105,00' }, { label: 'Último ônibus', value: '18h55' },
+        ],
+        vocab: [
+          { word: 'cadastro', whatItIs: 'dados de uma pessoa em um sistema', here: 'registro ativo no convênio' },
+          { word: 'convênio', whatItIs: 'acordo que oferece preço especial', here: 'programa que indica 20% em dois produtos' },
+          { word: 'desconto', whatItIs: 'redução no preço original', here: '20% que não apareceu no caixa' },
+          { word: 'diferença', whatItIs: 'valor que separa dois preços', here: 'quantia que precisa ser revisada' },
+          { word: 'orçamento', whatItIs: 'dinheiro disponível para uma compra', here: 'limite de R$ 105,00' },
+          { word: 'preço cheio', whatItIs: 'valor sem redução', here: 'R$ 106,00 pelos dois produtos' },
+          { word: 'protocolo', whatItIs: 'número que identifica uma solicitação', here: 'prova da revisão do desconto' },
+          { word: 'revisão', whatItIs: 'nova análise de dados ou cálculo', here: 'processo que verifica a diferença' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Separe o valor de hoje da possível devolução depois da revisão.',
+        exponents: [
+          { purpose: 'Aceitar uma solução parcial', form: '`Posso pagar R$ … hoje se a revisão ficar registrada.`', effect: 'aceita a compra sem fingir que a diferença já foi devolvida' },
+          { purpose: 'Comparar os valores', form: '`O aplicativo mostra 20%, mas o caixa está cobrando R$ …`', effect: 'apresenta a divergência com duas fontes' },
+          { purpose: 'Dar o limite', form: '`Hoje eu só tenho R$ … disponíveis.`', effect: 'define a margem real para negociar' },
+          { purpose: 'Pedir esclarecimento', form: '`O desconto vale para estes dois produtos ou para a compra inteira?`', effect: 'separa a regra dos itens incluídos' },
+          { purpose: 'Pedir uma prova', form: '`Qual é o número do protocolo e quando terei uma resposta?`', effect: 'transforma a promessa em acompanhamento verificável' },
+          { purpose: 'Recusar o total', form: '`Não consigo pagar R$ … e ainda pegar o ônibus.`', effect: 'recusa o valor por um limite concreto' },
+          { purpose: 'Verificar o acordo', form: '`Então pago R$ … agora e vocês analisam R$ … até …, certo?`', effect: 'separa pagamento, diferença e prazo' },
+        ],
+        success: 'Você comparou o aplicativo e o caixa, retirou o sabonete e declarou o limite de R$ 105,00. Pagou R$ 101,00 e recebeu protocolo e prazo, sem declarar garantida a devolução de R$ 16,20.',
+      },
+      {
+        id: 'b', name: 'atendente da farmácia', nameEs: 'quien atiende en la farmacia', headline: 'O sistema do convênio está indisponível e a farmácia só pode adiantar uma parte do desconto',
+        briefing: ['**Explique o limite sem encerrar a conversa.** Use **o senhor/a senhora** com o cliente. **O cliente começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao cliente. Não garanta a devolução: a operadora precisa confirmar quais produtos participam.'],
+        prose: [
+          { label: 'Situação atual', text: 'O caixa calculou três produtos pelo preço cheio. A consulta do convênio está fora do ar desde as 18h05, então você ainda não consegue confirmar a regra exibida no celular.' },
+          { label: 'Objetivo', text: 'Conferir cadastro, produtos e valores, manter a compra dentro do limite possível e abrir uma revisão com número, quantia e prazo claros.' },
+          { label: 'O que não é possível', items: ['Aplicar manualmente 20% sem resposta do convênio.', 'Prometer que a operadora aceitará a captura de tela como prova final.', 'Devolver dinheiro hoje antes da decisão da revisão.'] },
+          { label: 'Só você sabe', items: ['O gerente autorizou abatimento provisório máximo de R$ 5,00 em compras acima de R$ 100,00.', 'É possível retirar o sabonete e cobrar R$ 101,00 pelos outros dois produtos.', 'A revisão recebe protocolo imediato e resposta até quarta-feira, às 17h; se aprovada, a diferença vai para o mesmo cartão.'] },
+          { label: 'Se vocês não resolverem', text: 'O cliente abandona a compra ou paga um total que não cabe no orçamento; a farmácia perde a chance de registrar a falha.' },
+        ],
+        facts: [
+          { label: 'Falha do sistema', value: 'desde 18h05 · consulta indisponível' }, { label: 'Cadastro', value: 'nome e CPF conferem · ativo' },
+          { label: 'Preço dos 3 itens', value: 'R$ 126,00' }, { label: 'Preço sem sabonete', value: 'R$ 106,00' },
+          { label: 'Abatimento provisório', value: 'máximo R$ 5,00' }, { label: 'Cobrança possível', value: 'R$ 101,00' },
+          { label: 'Diferença em análise', value: 'R$ 16,20' }, { label: 'Resposta', value: 'até quarta-feira · 17h' },
+        ],
+        vocab: [
+          { word: 'abatimento', whatItIs: 'valor retirado do preço a pagar', here: 'R$ 5,00 autorizados provisoriamente' },
+          { word: 'captura de tela', whatItIs: 'imagem do que aparece no celular', here: 'evidência que acompanha a revisão' },
+          { word: 'cobrança', whatItIs: 'valor pedido no momento do pagamento', here: 'R$ 101,00 pelos dois itens' },
+          { word: 'fora do ar', whatItIs: 'temporariamente indisponível', here: 'estado da consulta do convênio' },
+          { word: 'operadora', whatItIs: 'empresa que administra um convênio', here: 'entidade que confirma o desconto' },
+          { word: 'provisório', whatItIs: 'válido antes da decisão final', here: 'abatimento de R$ 5,00' },
+          { word: 'reembolso', whatItIs: 'dinheiro devolvido depois de um pagamento', here: 'resultado possível, mas não aprovado' },
+          { word: 'solicitação', whatItIs: 'pedido registrado para uma equipe analisar', here: 'revisão que recebe protocolo' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Explique “abatimento provisório” com palavras simples e diferencie revisão de reembolso.',
+        exponents: [
+          { purpose: 'Confirmar os dados', form: '`Seu cadastro está ativo, e estes são os dois produtos indicados, certo?`', effect: 'confere pessoa e itens antes de calcular' },
+          { purpose: 'Dar o limite', form: '`Sem a resposta do convênio, não posso aplicar os 20% manualmente.`', effect: 'recusa uma ação específica com motivo' },
+          { purpose: 'Explicar a falha', form: '`A consulta está fora do ar desde …`', effect: 'indica um estado e um horário verificáveis' },
+          { purpose: 'Oferecer uma alternativa', form: '`Podemos retirar o sabonete e aplicar R$ … de abatimento provisório.`', effect: 'reduz a compra sem apresentar a revisão como concluída' },
+          { purpose: 'Registrar o próximo passo', form: '`Vou abrir a solicitação agora e anotar a diferença de R$ …`', effect: 'nomeia a ação e o valor que será analisado' },
+          { purpose: 'Resumir a solução', form: '`Hoje o senhor paga R$ …; a resposta chega até …`', effect: 'separa o presente da decisão futura' },
+          { purpose: 'Verificar a condição', form: '`Essa cobrança cabe no seu limite se a revisão ficar registrada?`', effect: 'pede consentimento para o acordo parcial' },
+        ],
+        success: 'Você confirmou cadastro e produtos, explicou a falha e o limite sem prometer reembolso. Retirou o sabonete, aplicou R$ 5,00 provisórios e registrou R$ 16,20 para resposta até quarta-feira às 17h.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, mostre os dois preços, pergunte quais produtos participam e diga o seu limite. Não mostre a tela ao atendente.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Notificação do banco · 18h27**' },
+        { kind: 'table', head: ['Dado', 'Atualização'], rows: [['Saldo disponível', 'R$ 105,00'], ['Próxima entrada', 'quarta-feira · 9h'], ['Ônibus', '18h55'], ['Compra mínima', 'protetor + hidratante']] },
+        { kind: 'p', text: 'O banco confirmou que não há limite adicional hoje. Você pode retirar o sabonete, mas não pode autorizar cobrança acima de R$ 105,00.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem com um acordo parcial quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['Os dois produtos mantidos e o sabonete retirado.', 'O preço cheio de R$ 106,00 e o abatimento provisório de R$ 5,00.', 'A cobrança de R$ 101,00 feita hoje.', 'A diferença de R$ 16,20 registrada para revisão, sem devolução garantida.', 'O protocolo e a resposta até quarta-feira às 17h.'] },
+    ],
+    debrief: ['¿Qué diferencia hubo entre un abatimiento provisional y un reembolso?', '¿Qué límite privado cambió la compra después de la carta?', 'Repitan en portugués productos, valores, protocolo y plazo sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'o desconto não veio y o sistema ficou fora do ar sitúan el problema.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vou registrá-lo y posso retirá-lo retoman protocolo y producto.' },
+      { slug: 'ser-vs-estar-a2', level: 'a2', title: 'Ser vs. estar en portugués A2', rationale: 'o cadastro está ativo y o desconto é de 20% separan estado y característica.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderia y seria permiten pedir y proponer con cortesía.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'terá y receberá distinguen la compra actual del resultado posterior.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, por isso y se conectan falla, consecuencia y condición.' },
+    ],
+  },
+]

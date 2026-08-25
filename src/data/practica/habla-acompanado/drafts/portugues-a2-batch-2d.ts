@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · casa/comunidade 9. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_2D: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-name-is-not-on-gate-list', slug: 'name-is-not-on-gate-list', sequence: 9,
+    language: 'portugues', level: 'a2', title: 'Mi nombre no está en la lista de portería', titleTarget: 'Meu nome não está na lista da portaria',
+    setting: 'Sexta-feira, às 17h25, na portaria de um condomínio em Brasília', settingEs: 'La portería de un condominio en Brasilia, el viernes a las 5:25 p. m.',
+    speechActs: ['quejarse', 'poner-limite', 'rechazar'], power: 'a>b', initiator: 'b', outcome: 'sin-acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#9',
+    roles: [
+      {
+        id: 'a', name: 'síndico do condomínio', nameEs: 'quien administra el condominio', headline: 'A identidade confere, mas o cadastro não tem autorização do proprietário para liberar a entrada',
+        briefing: ['**Reconheça a situação e mantenha o limite.** Use **o senhor/a senhora** com o novo morador. **O morador começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao morador. Não inclua um nome no cadastro sem o formulário do proprietário.'],
+        prose: [
+          { label: 'Situação atual', text: 'Uma pessoa diz que alugou o apartamento 406 e apresenta documento e contrato digital. O nome e o CPF conferem, mas não aparecem na lista autorizada da portaria.' },
+          { label: 'Objetivo', text: 'Verificar os dados sem expor moradores, explicar o documento que falta e indicar como e quando o cadastro poderá ser concluído.' },
+          { label: 'O que não é possível', items: ['Liberar entrada residencial apenas com uma captura do contrato.', 'Telefonar para um número que não está no cadastro do proprietário.', 'Permitir que outra pessoa use a autorização de um morador atual.'] },
+          { label: 'Só você sabe', items: ['O cadastro do apartamento 406 ainda mostra somente a proprietária, Helena Moura.', 'O formulário deve vir do e-mail cadastrado e trazer nome, CPF, data inicial e assinatura.', 'Se o formulário chegar até 19h, a atualização ocorre hoje; depois disso, somente amanhã às 8h30.'] },
+          { label: 'Se vocês não resolverem', text: 'A pessoa não entra hoje, mas liberar sem autorização quebra o controle de acesso e expõe todos os moradores.' },
+        ],
+        facts: [
+          { label: 'Apartamento', value: 'bloco B · 406' }, { label: 'Cadastro atual', value: 'Helena Moura · proprietária' },
+          { label: 'Documento apresentado', value: 'nome e CPF conferem' }, { label: 'Contrato', value: 'arquivo no celular · não cadastrado' },
+          { label: 'Formulário exigido', value: 'nome + CPF + início + assinatura' }, { label: 'Origem exigida', value: 'e-mail da proprietária' },
+          { label: 'Prazo hoje', value: '19h00' }, { label: 'Próxima atualização', value: 'sábado · 8h30' },
+        ],
+        vocab: [
+          { word: 'autorização', whatItIs: 'permissão dada por quem tem responsabilidade', here: 'documento que ainda não chegou' },
+          { word: 'cadastro', whatItIs: 'lista oficial de pessoas e dados', here: 'registro que só mostra a proprietária' },
+          { word: 'condomínio', whatItIs: 'conjunto de apartamentos com áreas e regras comuns', here: 'local cuja entrada é controlada' },
+          { word: 'contrato digital', whatItIs: 'acordo guardado em arquivo eletrônico', here: 'prova apresentada no celular' },
+          { word: 'e-mail cadastrado', whatItIs: 'endereço eletrônico já confirmado no sistema', here: 'origem obrigatória do formulário' },
+          { word: 'formulário', whatItIs: 'documento com campos definidos para registrar dados', here: 'peça exigida para incluir o morador' },
+          { word: 'proprietária', whatItIs: 'pessoa a quem o apartamento pertence', here: 'Helena Moura, única pessoa no cadastro' },
+          { word: 'síndico', whatItIs: 'pessoa que administra um condomínio', here: 'responsável por manter a regra de entrada' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6**, **7** e **8** da caixa comum. Explique “e-mail cadastrado” e não revele telefone ou outros dados da proprietária.',
+        exponents: [
+          { purpose: 'Confirmar a identidade', form: '`Seu nome e CPF conferem com os documentos apresentados.`', effect: 'reconhece o que já foi verificado' },
+          { purpose: 'Dar o limite', form: '`Mesmo assim, não posso liberar a entrada sem a autorização cadastrada.`', effect: 'separa identidade e permissão' },
+          { purpose: 'Explicar o requisito', form: '`O formulário precisa vir do e-mail da proprietária e ter quatro dados.`', effect: 'torna a regra executável' },
+          { purpose: 'Indicar o prazo', form: '`Se chegar até …, atualizamos hoje; depois, só amanhã às …`', effect: 'mostra as duas janelas reais' },
+          { purpose: 'Recusar a entrada', form: '`Hoje não consigo autorizar a entrada apenas com esta imagem do contrato.`', effect: 'recusa a ação com motivo específico' },
+          { purpose: 'Resumir o resultado', form: '`A identidade está confirmada, mas a autorização ainda não; a entrada fica pendente.`', effect: 'não confunde os dois controles' },
+          { purpose: 'Verificar o próximo passo', form: '`A proprietária enviará nome, CPF, data e assinatura pelo e-mail cadastrado, certo?`', effect: 'confirma o documento necessário' },
+        ],
+        success: 'Você verificou identidade e contrato, mas não liberou a entrada nem revelou dados da proprietária. Explicou o formulário, a origem exigida e os horários de atualização.',
+      },
+      {
+        id: 'b', name: 'novo morador do apartamento', nameEs: 'quien acaba de alquilar el apartamento', headline: 'O contrato começa hoje, mas a imobiliária enviou o formulário para o endereço errado',
+        briefing: ['**Mostre seus documentos e peça uma explicação clara.** Use **o senhor/a senhora** com o síndico. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao síndico. Não peça para usar o nome de outra pessoa: sua entrada precisa ficar no próprio cadastro.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você alugou o apartamento 406 a partir de hoje. Chegou com uma mala e descobriu que seu nome não está na lista da portaria.' },
+          { label: 'Objetivo', text: 'Entender por que a entrada não foi liberada, apresentar identidade e contrato e saber qual ação pode concluir seu cadastro.' },
+          { label: 'O que não é possível', items: ['Ficar esperando na rua até tarde: começa a chover e você está com uma mala.', 'Pedir hospedagem à proprietária: ela está viajando.', 'Entrar como visitante de outro apartamento: você não conhece moradores do prédio.'] },
+          { label: 'Só você sabe', items: ['Seu contrato assinado começa hoje e contém nome, CPF e apartamento 406.', 'A imobiliária enviou uma mensagem dizendo que o formulário foi para “portaria@condominio.com”, não para o e-mail cadastrado da proprietária.', 'A proprietária está em voo até 20h e só poderá reenviar o formulário amanhã cedo.'] },
+          { label: 'Se vocês não resolverem', text: 'Você precisa passar a noite em outro lugar, mesmo com contrato válido, porque o processo de autorização não foi concluído.' },
+        ],
+        facts: [
+          { label: 'Nome', value: 'Rafael Lima · CPF final 604-11' }, { label: 'Contrato', value: 'apartamento 406 · início hoje' },
+          { label: 'Assinaturas', value: 'Rafael + Helena Moura' }, { label: 'Bagagem', value: '1 mala' },
+          { label: 'Envio da imobiliária', value: 'portaria@condominio.com' }, { label: 'Proprietária', value: 'em voo até 20h' },
+          { label: 'Novo envio', value: 'amanhã cedo' }, { label: 'Alternativa', value: 'hotel a 600 m' },
+        ],
+        vocab: [
+          { word: 'arquivo assinado', whatItIs: 'documento que mostra a concordância das partes', here: 'contrato de Rafael e Helena' },
+          { word: 'cadastro de morador', whatItIs: 'registro oficial de quem vive no prédio', here: 'lista onde Rafael ainda não aparece' },
+          { word: 'data de início', whatItIs: 'primeiro dia em que um acordo vale', here: 'hoje no contrato de aluguel' },
+          { word: 'imobiliária', whatItIs: 'empresa que ajuda a alugar ou vender imóveis', here: 'setor que usou o endereço errado' },
+          { word: 'lista da portaria', whatItIs: 'registro usado para controlar a entrada', here: 'fonte onde o nome está ausente' },
+          { word: 'morador', whatItIs: 'pessoa que vive em uma casa ou apartamento', here: 'condição que ainda precisa ser cadastrada' },
+          { word: 'reenviar', whatItIs: 'mandar novamente uma mensagem ou arquivo', here: 'ação necessária da proprietária' },
+          { word: 'visitante', whatItIs: 'pessoa que entra por pouco tempo a convite de alguém', here: 'categoria que não corresponde ao contrato' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6**, **7** e **8** da caixa comum. Diferencie contrato de cadastro e peça o próximo passo sem solicitar uma exceção em nome de terceiros.',
+        exponents: [
+          { purpose: 'Aceitar o resultado', form: '`Entendo que hoje não posso entrar sem o formulário, mas preciso saber o próximo horário.`', effect: 'reconhece o limite sem fingir acordo sobre a entrada' },
+          { purpose: 'Apresentar os documentos', form: '`Tenho documento e contrato assinado com início hoje.`', effect: 'mostra identidade e relação com o apartamento' },
+          { purpose: 'Explicar o erro', form: '`A imobiliária enviou o formulário para outro endereço de e-mail.`', effect: 'identifica a falha de processo' },
+          { purpose: 'Pedir esclarecimento', form: '`Qual documento falta se meu nome e CPF já conferem?`', effect: 'separa identidade de autorização' },
+          { purpose: 'Pedir o próximo passo', form: '`Quando a proprietária deve reenviar o formulário e quando posso voltar?`', effect: 'busca ação e horário concretos' },
+          { purpose: 'Recusar uma identidade emprestada', form: '`Não quero entrar como visitante de outra pessoa; preciso do meu cadastro.`', effect: 'protege o registro correto' },
+          { purpose: 'Verificar o encerramento', form: '`Então volto amanhã às … depois do envio pelo e-mail cadastrado, certo?`', effect: 'confirma o resultado sem entrada hoje' },
+        ],
+        success: 'Você apresentou documento e contrato, entendeu a diferença entre identidade e autorização e não pediu cadastro falso. Aceitou que não entrará hoje e confirmou o reenvio e a volta amanhã às 8h30.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, mostre contrato e documento e pergunte qual autorização falta. Não mostre a tela ao síndico.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Mensagem da imobiliária · 17h31**' },
+        { kind: 'table', head: ['Dado', 'Atualização'], rows: [['Envio anterior', 'endereço geral da portaria'], ['Proprietária', 'em voo até 20h'], ['Reenvio correto', 'amanhã cedo'], ['Hospedagem próxima', 'hotel a 600 m']] },
+        { kind: 'p', text: 'O formulário não poderá chegar pelo canal correto antes das 19h. A imobiliária oferece pagar o hotel desta noite e falar com a proprietária amanhã.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem sem acordo sobre a entrada quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['A identidade e o contrato do apartamento 406 foram verificados.', 'O cadastro ainda mostra apenas a proprietária.', 'O formulário anterior foi enviado ao endereço errado.', 'Não haverá entrada hoje nem uso do cadastro de outra pessoa.', 'A proprietária reenviará o formulário e Rafael voltará amanhã às 8h30.'] },
+    ],
+    debrief: ['¿Qué diferencia hubo entre comprobar identidad y autorizar entrada?', '¿Por qué el contrato no permitió saltar el registro de portería?', 'Repitan en portugués documento faltante, canal y próximo horario sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'a imobiliária enviou y o nome não foi incluído reconstruyen la falha.' },
+      { slug: 'preterito-imperfeito-a2', level: 'a2', title: 'Pretérito imperfeito en portugués A2', rationale: 'o cadastro mostrava y a pessoa esperava describen el estado previo.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vou reenviá-lo y não posso incluí-lo retoman formulario y morador.' },
+      { slug: 'ser-vs-estar-a2', level: 'a2', title: 'Ser vs. estar en portugués A2', rationale: 'o contrato é válido y o cadastro está incompleto separan característica y estado.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mesmo assim, mas y por isso conectan prueba, límite y consecuencia.' },
+      { slug: 'subjuntivo-presente-a2', level: 'a2', title: 'Presente de subjuntivo en portugués A2', rationale: 'é necessário que venha y antes que entre expresan requisito.' },
+    ],
+  },
+]

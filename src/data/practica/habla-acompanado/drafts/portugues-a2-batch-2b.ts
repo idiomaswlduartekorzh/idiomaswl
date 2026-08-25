@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · trabalho/estudo 7. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_2B: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-projector-cable-did-not-arrive', slug: 'projector-cable-did-not-arrive', sequence: 7,
+    language: 'portugues', level: 'a2', title: 'El cable del proyector no llegó', titleTarget: 'O cabo do projetor não chegou',
+    setting: 'Sábado, às 16h50, em um centro cultural de Goiânia', settingEs: 'Un centro cultural de Goiânia, el sábado a las 4:50 p. m.',
+    speechActs: ['dar-mala-noticia', 'pedir-aclaracion', 'proponer-alternativa'], power: 'igual', initiator: 'b', outcome: 'aplazado', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#7',
+    roles: [
+      {
+        id: 'a', name: 'voluntário do equipamento', nameEs: 'quien se encarga del equipo', headline: 'A entrega aparece como concluída, mas o cabo HDMI não está na recepção nem no auditório',
+        briefing: ['**Diga o que verificou e o que ainda falta.** Use **você** com o outro voluntário. **O outro voluntário começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao outro voluntário. Não diga que o cabo foi roubado: o registro só mostra uma entrega sem localização clara.'],
+        prose: [
+          { label: 'Situação atual', text: 'O debate começa às 18h30. O cabo HDMI de cinco metros comprado para o projetor aparece como entregue às 15h42, mas você não o encontrou na recepção, no depósito nem no auditório.' },
+          { label: 'Objetivo', text: 'Conseguir uma conexão segura, testar imagem e som com o computador da palestrante e combinar um plano alternativo antes da entrada do público.' },
+          { label: 'O que não é possível', items: ['Usar o cabo curto da sala: ele não alcança a mesa da palestrante.', 'Mover o projetor para o chão: o corredor de saída precisa ficar livre.', 'Comprar outro cabo agora: a loja próxima fecha às 17h.'] },
+          { label: 'Só você sabe', items: ['A biblioteca vizinha empresta um cabo de três metros se alguém deixar documento e assinar a retirada.', 'O computador fixo do centro lê arquivos em memória USB e já está conectado ao projetor.', 'Você pode fazer o teste técnico das 18h15 às 18h25, depois que terminar o ensaio de teatro.'] },
+          { label: 'Se vocês não resolverem', text: 'A palestrante não mostra as imagens ou o público entra enquanto a equipe ainda move cabos pelo corredor.' },
+        ],
+        facts: [
+          { label: 'Evento', value: 'debate · 18h30' }, { label: 'Entrega', value: 'HD-930 · concluída 15h42' },
+          { label: 'Busca feita', value: 'recepção + depósito + auditório' }, { label: 'Cabo local', value: '1 m · não alcança a mesa' },
+          { label: 'Biblioteca', value: 'empréstimo · documento obrigatório' }, { label: 'Computador fixo', value: 'HDMI conectado + porta USB' },
+          { label: 'Ensaio', value: 'até 18h15' }, { label: 'Teste', value: '18h15–18h25' },
+        ],
+        vocab: [
+          { word: 'auditório', whatItIs: 'sala com lugares para apresentações', here: 'espaço onde acontece o debate' },
+          { word: 'cabo HDMI', whatItIs: 'fio que leva imagem e som entre equipamentos', here: 'objeto que não foi localizado' },
+          { word: 'computador fixo', whatItIs: 'máquina que permanece instalada em um lugar', here: 'plano B já conectado ao projetor' },
+          { word: 'empréstimo', whatItIs: 'uso temporário de algo que deve ser devolvido', here: 'opção oferecida pela biblioteca' },
+          { word: 'ensaio', whatItIs: 'prática antes de uma apresentação artística', here: 'atividade que ocupa o auditório até 18h15' },
+          { word: 'memória USB', whatItIs: 'pequeno dispositivo usado para transportar arquivos', here: 'forma de abrir os slides no computador fixo' },
+          { word: 'projetor', whatItIs: 'aparelho que mostra imagem ampliada em uma tela', here: 'equipamento do debate' },
+          { word: 'teste técnico', whatItIs: 'verificação de imagem, som e conexão', here: 'atividade marcada antes do público entrar' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **3** `[jargon]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Distingua “entregue” de “encontrado” e não confirme a conexão antes do teste.',
+        exponents: [
+          { purpose: 'Dar a notícia', form: '`O sistema diz “entregue”, mas o cabo não está nos três lugares que verifiquei.`', effect: 'informa sem acusar ninguém' },
+          { purpose: 'Explicar o limite', form: '`O cabo de um metro não alcança a mesa e não podemos bloquear a saída.`', effect: 'recusa duas opções inseguras' },
+          { purpose: 'Marcar a prova', form: '`Vamos testar imagem e som entre … e …`', effect: 'define a janela antes do evento' },
+          { purpose: 'Oferecer o plano B', form: '`Se o empréstimo falhar, abrimos os slides no computador fixo.`', effect: 'mantém uma opção independente do cabo' },
+          { purpose: 'Pedir os arquivos', form: '`Você consegue trazer os slides também em uma memória USB?`', effect: 'prepara a alternativa com antecedência' },
+          { purpose: 'Propor o empréstimo', form: '`Podemos pedir um cabo à biblioteca, deixando um documento.`', effect: 'oferece recurso e condição' },
+          { purpose: 'Resumir a pendência', form: '`Já temos plano A e plano B; a conexão só ficará confirmada depois do teste.`', effect: 'não confunde planejamento com resultado' },
+        ],
+        success: 'Você explicou a entrega sem acusar, recusou o cabo curto e marcou o teste. Preparou o computador fixo como plano B e deixou a confirmação final para depois das 18h15.',
+      },
+      {
+        id: 'b', name: 'voluntário da programação', nameEs: 'quien coordina la programación', headline: 'A palestrante traz adaptador e arquivo, mas a biblioteca só devolverá o cabo emprestado perto do teste',
+        briefing: ['**Pergunte o que foi verificado e distribua as ações.** Use **você** com o outro voluntário. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao outro voluntário. Não peça à palestrante que mude o computador sem primeiro testar as opções do centro.'],
+        prose: [
+          { label: 'Situação atual', text: 'A palestrante chega às 18h com um notebook que tem apenas USB-C. Você percebeu que a equipe ainda não encontrou o cabo HDMI comprado para o debate.' },
+          { label: 'Objetivo', text: 'Garantir que arquivos e adaptador cheguem, buscar o empréstimo se estiver disponível e saber às 18h25 qual conexão será usada.' },
+          { label: 'O que não é possível', items: ['Começar o debate depois das 18h35: haverá transmissão on-line.', 'Pedir que a palestrante envie arquivos pela internet no último minuto: o Wi-Fi dos bastidores é instável.', 'Deixar documento pessoal na biblioteca depois do fechamento.'] },
+          { label: 'Só você sabe', items: ['A palestrante confirmou que traz adaptador USB-C para HDMI e os slides em PPT e PDF.', 'Você tem uma memória USB vazia e um documento com foto para o empréstimo.', 'Pode buscar o cabo e devolvê-lo às 19h50, dez minutos antes de a biblioteca fechar.'] },
+          { label: 'Se vocês não resolverem', text: 'A transmissão começa sem imagens ou a equipe depende de uma transferência de arquivos em uma rede instável.' },
+        ],
+        facts: [
+          { label: 'Palestrante', value: 'chegada · 18h00' }, { label: 'Notebook', value: 'porta USB-C' },
+          { label: 'Adaptador', value: 'USB-C para HDMI · trazido pela palestrante' }, { label: 'Arquivos', value: 'PPT + PDF' },
+          { label: 'Memória USB', value: 'vazia · disponível' }, { label: 'Documento', value: 'com foto · disponível' },
+          { label: 'Biblioteca', value: 'fecha 20h00' }, { label: 'Transmissão', value: 'começa 18h35' },
+        ],
+        vocab: [
+          { word: 'adaptador USB-C', whatItIs: 'peça que liga uma porta USB-C a outro cabo', here: 'conexão trazida pela palestrante' },
+          { word: 'arquivo PDF', whatItIs: 'documento que mantém o mesmo formato em vários computadores', here: 'versão alternativa dos slides' },
+          { word: 'bastidores', whatItIs: 'área de preparação que o público não vê', here: 'lugar com Wi-Fi instável' },
+          { word: 'devolver', whatItIs: 'entregar de volta algo emprestado', here: 'ação necessária antes das 20h' },
+          { word: 'documento com foto', whatItIs: 'identificação oficial com imagem da pessoa', here: 'garantia pedida pela biblioteca' },
+          { word: 'instável', whatItIs: 'que funciona e para de funcionar', here: 'estado do Wi-Fi nos bastidores' },
+          { word: 'retirar', whatItIs: 'buscar e levar um objeto autorizado', here: 'ação feita na biblioteca' },
+          { word: 'transmissão on-line', whatItIs: 'envio ao vivo de imagem e som pela internet', here: 'atividade que limita o atraso' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Confirme portas, adaptador, formatos e horários; distribua busca, cópia e teste.',
+        exponents: [
+          { purpose: 'Aceitar o plano provisório', form: '`Busco o cabo e copio os arquivos, mas confirmamos a opção só depois do teste.`', effect: 'assume ações sem prometer resultado' },
+          { purpose: 'Confirmar os recursos', form: '`Ela traz adaptador USB-C para HDMI e os arquivos em PPT e PDF.`', effect: 'lista as duas formas de conexão' },
+          { purpose: 'Dar o limite', form: '`Precisamos terminar o teste até … por causa da transmissão.`', effect: 'torna o prazo verificável' },
+          { purpose: 'Pedir esclarecimento', form: '`Onde você procurou e qual cabo já está conectado?`', effect: 'evita repetir buscas' },
+          { purpose: 'Prometer a devolução', form: '`Retiro o cabo com meu documento e devolvo até …`', effect: 'cumpre a condição do empréstimo' },
+          { purpose: 'Propor a divisão', form: '`Eu vou à biblioteca enquanto você prepara o computador fixo.`', effect: 'permite duas ações ao mesmo tempo' },
+          { purpose: 'Verificar o plano', form: '`Plano A: cabo e notebook; plano B: PDF na memória USB, certo?`', effect: 'confere as duas opções com clareza' },
+        ],
+        success: 'Você confirmou adaptador e arquivos, assumiu buscar e devolver o cabo e preparou a memória USB. Manteve a decisão aberta até o teste das 18h15–18h25.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 4,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 4º turno global da conversa.** Antes, pergunte onde o cabo foi procurado, o que já está conectado e quando o auditório fica livre. Não mostre a tela ao outro voluntário.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Mensagem da biblioteca · 16h54**' },
+        { kind: 'table', head: ['Recurso', 'Atualização'], rows: [['Cabo HDMI', '3 m'], ['Devolução anterior', 'prevista 18h10'], ['Retirada', 'documento + assinatura'], ['Fechamento', '20h00']] },
+        { kind: 'p', text: 'O cabo ainda está com outro usuário. Você pode buscá-lo às 18h10 se ele for devolvido, mas precisa manter o plano da memória USB.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem com a decisão aplazada quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['A busca já feita e o cabo comprado ainda não localizado.', 'O empréstimo da biblioteca às 18h10, sujeito à devolução.', 'O adaptador, os arquivos PPT/PDF e a memória USB.', 'Quem prepara o computador e quem busca e devolve o cabo.', 'O teste das 18h15 às 18h25, que decidirá entre plano A e plano B.'] },
+    ],
+    debrief: ['¿Qué hechos estaban confirmados y cuáles seguían pendientes?', '¿Cómo evitó el plan B depender del Wi-Fi?', 'Repitan en portugués equipo, responsables y horarios sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'a entrega foi concluída y você não viu o cabo reconstruyen la busca.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'o teste decidirá y a palestrante trará organizan lo pendiente.' },
+      { slug: 'pronomes-relativos-a2', level: 'a2', title: 'Pronombres relativos en portugués A2', rationale: 'o cabo que compramos y o computador que lê USB identifican recursos.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, enquanto y se conectan contraste, simultaneidad y condición.' },
+      { slug: 'verbos-modais-a2', level: 'a2', title: 'Verbos modales en portugués A2', rationale: 'podemos, precisa y consegue distribuyen posibilidad y necesidad.' },
+      { slug: 'gerundio-a2', level: 'a2', title: 'Gerundio en portugués A2', rationale: 'estamos procurando y ficamos esperando describen acciones en curso.' },
+    ],
+  },
+]

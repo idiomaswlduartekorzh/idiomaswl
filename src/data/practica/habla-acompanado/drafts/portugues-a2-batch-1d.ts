@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · transação 4. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_1D: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-room-cannot-stay-until-two', slug: 'room-cannot-stay-until-two', sequence: 4,
+    language: 'portugues', level: 'a2', title: 'La habitación no puede quedarse hasta las dos', titleTarget: 'O quarto não pode ficar até as duas',
+    setting: 'Quinta-feira, às 19h05, na recepção de uma pousada em Paraty', settingEs: 'La recepción de una posada en Paraty, el jueves a las 7:05 p. m.',
+    speechActs: ['dar-mala-noticia', 'pedir-favor', 'negociar'], power: 'a>b', initiator: 'b', outcome: 'aplazado', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#4',
+    roles: [
+      {
+        id: 'a', name: 'responsável pela pousada', nameEs: 'quien gestiona la posada', headline: 'O quarto precisa ser limpo ao meio-dia, e a sala comum ainda depende de uma vistoria',
+        briefing: ['**Dê a notícia e ofereça um próximo passo real.** Use **o senhor/a senhora** com o hóspede. **O hóspede começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao hóspede. Não confirme a sala comum antes da mensagem da manutenção.'],
+        prose: [
+          { label: 'Situação atual', text: 'O hóspede pediu para usar o quarto até as 14h amanhã. A saída normal é às 11h, e outro casal chega às 15h. A equipe precisa começar a limpeza ao meio-dia.' },
+          { label: 'Objetivo', text: 'Entender por que o hóspede precisa de espaço, combinar bagagem e uma saída menor e dar resposta com horário sobre a sala comum.' },
+          { label: 'O que não é possível', items: ['Manter o quarto ocupado até as 14h: a limpeza precisa de três horas.', 'Guardar computador ou documentos na recepção: o depósito é apenas para malas fechadas.', 'Prometer a sala comum antes da vistoria do ar-condicionado.'] },
+          { label: 'Só você sabe', items: ['Pode estender a saída do quarto até 11h30 sem cobrança.', 'Pode guardar duas malas fechadas até 18h e entregar um comprovante numerado.', 'A manutenção responderá às 19h30 se a sala comum estará liberada amanhã das 11h45 às 13h15.'] },
+          { label: 'Se vocês não resolverem', text: 'O hóspede perde a reunião ou deixa objetos sem proteção; a pousada atrasa a limpeza e a entrada do próximo casal.' },
+        ],
+        facts: [
+          { label: 'Saída normal', value: 'sexta-feira · 11h00' }, { label: 'Limpeza', value: '12h00–15h00' },
+          { label: 'Próxima entrada', value: '15h00 · casal confirmado' }, { label: 'Extensão possível', value: 'até 11h30 · sem cobrança' },
+          { label: 'Bagagem', value: '2 malas fechadas · até 18h' }, { label: 'Sala comum', value: '11h45–13h15 · não confirmada' },
+          { label: 'Vistoria', value: 'ar-condicionado' }, { label: 'Resposta', value: 'hoje · 19h30' },
+        ],
+        vocab: [
+          { word: 'comprovante', whatItIs: 'papel que identifica um serviço ou objeto', here: 'número entregue pelas duas malas' },
+          { word: 'depósito', whatItIs: 'espaço fechado para guardar objetos', here: 'local que aceita apenas malas fechadas' },
+          { word: 'hóspede', whatItIs: 'pessoa que dorme em hotel ou pousada', here: 'cliente que pede saída tardia' },
+          { word: 'limpeza', whatItIs: 'trabalho de preparar o quarto para outra pessoa', here: 'atividade marcada das 12h às 15h' },
+          { word: 'recepção', whatItIs: 'área de entrada e atendimento de uma hospedagem', here: 'lugar da negociação' },
+          { word: 'sala comum', whatItIs: 'espaço compartilhado por vários hóspedes', here: 'possível local para a reunião' },
+          { word: 'saída tardia', whatItIs: 'uso do quarto depois do horário normal', here: 'pedido até as 14h' },
+          { word: 'vistoria', whatItIs: 'verificação técnica de um espaço ou equipamento', here: 'controle antes de liberar a sala' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Separe quarto, bagagem e sala comum; diga claramente o que ainda não está confirmado.',
+        exponents: [
+          { purpose: 'Dar a notícia', form: '`O quarto não pode ficar ocupado até as …`', effect: 'comunica o limite antes de oferecer outra opção' },
+          { purpose: 'Explicar o motivo', form: '`Precisamos de três horas porque o próximo casal chega às …`', effect: 'liga o limite a horários verificáveis' },
+          { purpose: 'Negociar uma saída menor', form: '`Podemos estender a saída até …, mas não além desse horário.`', effect: 'abre uma margem sem comprometer a limpeza' },
+          { purpose: 'Oferecer a bagagem', form: '`Podemos guardar duas malas fechadas até …`', effect: 'resolve parte do problema com condição clara' },
+          { purpose: 'Pedir tempo', form: '`Preciso esperar a vistoria antes de confirmar a sala.`', effect: 'evita inventar uma resposta' },
+          { purpose: 'Prometer o retorno', form: '`Vou dar uma resposta sobre a sala às …`', effect: 'define responsável e prazo' },
+          { purpose: 'Resumir o provisório', form: '`Por enquanto: quarto até …, malas até … e resposta às …`', effect: 'separa o combinado da decisão pendente' },
+        ],
+        success: 'Você explicou por que 14h é impossível, ofereceu quarto até 11h30 e bagagem até 18h. Não prometeu a sala comum e assumiu dar a resposta às 19h30.',
+      },
+      {
+        id: 'b', name: 'hóspede com reunião', nameEs: 'quien se hospeda y tiene una reunión', headline: 'Uma reunião on-line termina às 13h e duas malas precisam ficar seguras até o ônibus',
+        briefing: ['**Explique a necessidade, não apenas o horário desejado.** Use **o senhor/a senhora** com o responsável. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao responsável. Não deixe computador ou documentos dentro de uma mala que será guardada.'],
+        prose: [
+          { label: 'Situação atual', text: 'Seu ônibus sai amanhã às 17h20, mas a saída do quarto é às 11h. Você pediu o quarto até 14h porque tem uma reunião on-line das 12h às 13h.' },
+          { label: 'Objetivo', text: 'Encontrar um lugar silencioso com Wi-Fi para a reunião, guardar duas malas e sair do quarto o mais tarde possível sem perder o ônibus.' },
+          { label: 'O que não é possível', items: ['Fazer a reunião no saguão: há música e chegadas de grupos ao meio-dia.', 'Levar as duas malas para um café: juntas pesam 31 kg.', 'Encerrar a reunião antes das 13h: você apresenta os últimos quinze minutos.'] },
+          { label: 'Só você sabe', items: ['A reunião pode começar em qualquer espaço silencioso entre 11h50 e 12h05.', 'Você leva computador e documentos em uma mochila e pode ficar com ela.', 'Um café próximo oferece Wi-Fi a partir das 13h30, mas não resolve o início da reunião.'] },
+          { label: 'Se vocês não resolverem', text: 'Você participa da reunião em um lugar barulhento ou carrega 31 kg pela cidade durante várias horas.' },
+        ],
+        facts: [
+          { label: 'Reunião', value: 'sexta-feira · 12h00–13h00' }, { label: 'Sua apresentação', value: '12h45–13h00' },
+          { label: 'Horário de saída', value: '11h00' }, { label: 'Pedido inicial', value: 'quarto até 14h00' },
+          { label: 'Bagagem', value: '2 malas · 31 kg' }, { label: 'Mochila', value: 'computador + documentos · fica com você' },
+          { label: 'Ônibus', value: '17h20' }, { label: 'Café próximo', value: 'Wi-Fi a partir de 13h30' },
+        ],
+        vocab: [
+          { word: 'bagagem', whatItIs: 'conjunto de malas de uma viagem', here: 'dois volumes que precisam ser guardados' },
+          { word: 'entrada', whatItIs: 'horário em que um novo hóspede recebe o quarto', here: '15h para o próximo casal' },
+          { word: 'guardar', whatItIs: 'manter algo em local protegido por um tempo', here: 'serviço pedido para as malas' },
+          { word: 'lugar silencioso', whatItIs: 'espaço com pouco barulho', here: 'condição para participar da reunião' },
+          { word: 'mala fechada', whatItIs: 'bagagem que não fica aberta ou solta', here: 'condição do depósito' },
+          { word: 'mochila', whatItIs: 'bolsa carregada nas costas', here: 'onde ficam computador e documentos' },
+          { word: 'reunião on-line', whatItIs: 'encontro feito por vídeo ou áudio na internet', here: 'compromisso das 12h às 13h' },
+          { word: 'Wi-Fi', whatItIs: 'conexão sem fio com a internet', here: 'recurso necessário para a reunião' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Explique reunião, malas e mochila separadamente e peça uma hora exata para a resposta.',
+        exponents: [
+          { purpose: 'Aceitar o provisório', form: '`Posso sair às … e deixar as malas se receber a resposta às …`', effect: 'aceita parte do plano com próximo passo' },
+          { purpose: 'Dar flexibilidade', form: '`Posso começar entre … e …, desde que o lugar seja silencioso.`', effect: 'abre uma faixa real para a solução' },
+          { purpose: 'Explicar a necessidade', form: '`Tenho uma reunião das … às … e apresento no final.`', effect: 'mostra por que precisa de espaço' },
+          { purpose: 'Pedir a bagagem', form: '`Seria possível guardar duas malas fechadas até …?`', effect: 'faz um pedido com quantidade e prazo' },
+          { purpose: 'Pedir uma confirmação', form: '`A que horas o senhor poderá confirmar a sala comum?`', effect: 'transforma espera em prazo verificável' },
+          { purpose: 'Recusar o saguão', form: '`O saguão não funciona porque haverá música ao meio-dia.`', effect: 'recusa o lugar, não toda alternativa' },
+          { purpose: 'Resumir o que falta', form: '`A saída e as malas estão combinadas; ainda falta confirmar …`', effect: 'distingue acordo parcial e pendência' },
+        ],
+        success: 'Você explicou a reunião e o peso das malas, aceitou sair às 11h30 e guardar a bagagem até 18h. Manteve a mochila e pediu confirmação da sala às 19h30, sem tratá-la como garantida.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 4,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 4º turno global da conversa.** Antes, entenda o horário da reunião, o peso da bagagem e por que o saguão não serve. Não mostre a tela ao hóspede.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Mensagem da manutenção · 19h09**' },
+        { kind: 'table', head: ['Espaço', 'Situação'], rows: [['Quarto', 'limpeza começa 12h'], ['Sala comum', 'vistoria do ar-condicionado'], ['Resposta técnica', '19h30'], ['Uso possível', '11h45–13h15, se liberada']] },
+        { kind: 'p', text: 'A manutenção ainda não terminou. Não confirme a sala agora; dê ao hóspede uma resposta às 19h30 e mantenha uma alternativa fora da pousada.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem com a decisão aplazada quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['A saída do quarto às 11h30 e a limpeza ao meio-dia.', 'As duas malas fechadas guardadas até 18h, com comprovante.', 'A mochila que fica com o hóspede.', 'A sala comum ainda não confirmada e a alternativa do café depois das 13h30.', 'A resposta do responsável às 19h30.'] },
+    ],
+    debrief: ['¿Qué parte quedó acordada y cuál quedó aplazada?', '¿Cómo ayudó explicar la reunión en vez de repetir “hasta las dos”?', 'Repitan en portugués horarios, equipaje y próximo contacto sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'o casal chegará y darei uma resposta organizan el día siguiente.' },
+      { slug: 'verbo-ficar-a2', level: 'a2', title: 'Verbo ficar en portugués A2', rationale: 'o quarto fica livre y as malas ficam guardadas describen estado y permanencia.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'seria possível y poderia usar formulan peticiones y alternativas.' },
+      { slug: 'expressoes-tempo-a2', level: 'a2', title: 'Expresiones de tiempo en portugués A2', rationale: 'até, a partir de y entre fijan franjas y plazos.' },
+      { slug: 'verbos-modais-a2', level: 'a2', title: 'Verbos modales en portugués A2', rationale: 'precisa, pode y não consegue expresan necesidad, permiso y límite.' },
+      { slug: 'subjuntivo-presente-a2', level: 'a2', title: 'Presente de subjuntivo en portugués A2', rationale: 'desde que seja silencioso pone una condición sobre el espacio.' },
+    ],
+  },
+]

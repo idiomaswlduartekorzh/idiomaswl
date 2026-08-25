@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · trabalho/estudo 8. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_2C: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-badge-stayed-at-other-office', slug: 'badge-stayed-at-other-office', sequence: 8,
+    language: 'portugues', level: 'a2', title: 'La credencial quedó en la otra sede', titleTarget: 'O crachá ficou na outra unidade',
+    setting: 'Quinta-feira, às 8h12, na entrada de uma empresa em Porto Alegre', settingEs: 'La entrada de una empresa en Porto Alegre, el jueves a las 8:12 a. m.',
+    speechActs: ['disculparse', 'pedir-favor', 'recomendar'], power: 'igual', initiator: 'b', outcome: 'acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#8',
+    roles: [
+      {
+        id: 'a', name: 'colega da unidade central', nameEs: 'quien trabaja en la sede central', headline: 'A portaria pode emitir um crachá temporário, mas precisa confirmar identidade e responsável',
+        briefing: ['**Ajude sem emprestar o seu acesso.** Use **você** com o colega. **O colega começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao colega. Não passe seu crachá na catraca para duas pessoas: cada entrada precisa ficar registrada.'],
+        prose: [
+          { label: 'Situação atual', text: 'Um colega da unidade Norte chegou para um treinamento, mas deixou o crachá na mesa de trabalho. A portaria ainda não liberou a entrada.' },
+          { label: 'Objetivo', text: 'Confirmar identidade e agenda, conseguir um crachá temporário e acompanhar o colega até a sala sem quebrar a regra de acesso.' },
+          { label: 'O que não é possível', items: ['Emprestar seu próprio crachá.', 'Entrar pela saída ou passar junto na catraca.', 'Levar uma pessoa sem identificação até a área de estoque.'] },
+          { label: 'Só você sabe', items: ['A portaria aceita documento com foto, número de funcionário e confirmação do responsável por telefone.', 'Você está na lista do treinamento e pode acompanhar o colega entre portaria, sala 3 e refeitório.', 'Um crachá temporário pode valer até 13h30 e precisa ser devolvido na saída.'] },
+          { label: 'Se vocês não resolverem', text: 'O colega perde o treinamento ou entra sem registro; você também pode ter seu acesso bloqueado por uso indevido.' },
+        ],
+        facts: [
+          { label: 'Horário', value: 'quinta-feira · 8h12' }, { label: 'Treinamento', value: 'sala 3 · 8h30–12h30' },
+          { label: 'Entrada aceita', value: 'documento + matrícula + responsável' }, { label: 'Acompanhamento', value: 'portaria + sala 3 + refeitório' },
+          { label: 'Crachá temporário', value: 'validade até 13h30' }, { label: 'Devolução', value: 'portaria · na saída' },
+          { label: 'Área proibida', value: 'estoque sem autorização' }, { label: 'Seu acesso', value: 'individual · não transferível' },
+        ],
+        vocab: [
+          { word: 'acompanhar', whatItIs: 'ir junto com outra pessoa até um lugar', here: 'ação entre portaria e sala 3' },
+          { word: 'catraca', whatItIs: 'barreira que controla a entrada de uma pessoa por vez', here: 'equipamento que exige crachá individual' },
+          { word: 'crachá temporário', whatItIs: 'cartão de acesso válido por pouco tempo', here: 'solução até 13h30' },
+          { word: 'documento com foto', whatItIs: 'identificação oficial com imagem da pessoa', here: 'prova apresentada à portaria' },
+          { word: 'matrícula de funcionário', whatItIs: 'número que identifica uma pessoa na empresa', here: 'dado conferido no sistema' },
+          { word: 'portaria', whatItIs: 'local que controla entrada e saída de um prédio', here: 'setor que emite o cartão temporário' },
+          { word: 'responsável', whatItIs: 'pessoa que confirma ou autoriza uma atividade', here: 'gerente que confirma a visita' },
+          { word: 'uso indevido', whatItIs: 'uso que não respeita uma regra', here: 'passar duas pessoas com o mesmo crachá' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Explique cada controle com palavras simples e ofereça acompanhamento, não seu crachá.',
+        exponents: [
+          { purpose: 'Dar o limite', form: '`Não posso emprestar meu crachá nem liberar duas pessoas na mesma entrada.`', effect: 'protege o registro individual' },
+          { purpose: 'Explicar a condição', form: '`A portaria precisa do seu documento, da matrícula e da confirmação do gerente.`', effect: 'lista os três controles necessários' },
+          { purpose: 'Oferecer acompanhamento', form: '`Posso acompanhar você da portaria até a sala 3.`', effect: 'ajuda dentro da regra' },
+          { purpose: 'Pedir os dados', form: '`Qual é sua matrícula e quem pode confirmar sua agenda?`', effect: 'prepara a verificação sem expor mais dados' },
+          { purpose: 'Recomendar a solução', form: '`Vamos pedir um crachá temporário válido até …`', effect: 'propõe acesso individual e limitado' },
+          { purpose: 'Resumir o acesso', form: '`Você entra com o temporário, eu acompanho e devolvemos o cartão na saída.`', effect: 'organiza entrada, circulação e devolução' },
+          { purpose: 'Verificar a confirmação', form: '`O gerente confirmou seu nome, a sala e o horário, certo?`', effect: 'confere o alcance da autorização' },
+        ],
+        success: 'Você não emprestou o próprio crachá. Conferiu documento, matrícula e responsável, acompanhou o colega e confirmou validade, áreas permitidas e devolução do cartão temporário.',
+      },
+      {
+        id: 'b', name: 'colega da unidade Norte', nameEs: 'quien llegó desde la sede Norte', headline: 'O crachá está a 40 minutos dali, mas você tem documento, matrícula e contato da gerente',
+        briefing: ['**Reconheça o erro e apresente suas provas.** Use **você** com o colega. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao colega. Não peça para passar junto na catraca: solicite uma entrada registrada.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você veio da unidade Norte para um treinamento na unidade central e percebeu na portaria que o crachá ficou sobre sua mesa.' },
+          { label: 'Objetivo', text: 'Entrar de forma registrada antes das 8h30, participar do treinamento e combinar como devolver o acesso temporário.' },
+          { label: 'O que não é possível', items: ['Voltar agora à unidade Norte: cada trecho leva 40 minutos.', 'Usar o crachá de um colega.', 'Faltar à primeira hora: você apresentará o processo de inventário às 9h.'] },
+          { label: 'Só você sabe', items: ['Tem documento com foto e matrícula 5814 no aplicativo corporativo.', 'Sua gerente, Paula Ribeiro, está em reunião, mas pode atender uma ligação entre 8h18 e 8h23.', 'O e-mail do treinamento confirma sala 3, horário e seu nome completo.'] },
+          { label: 'Se vocês não resolverem', text: 'Você perde sua apresentação e viaja 80 minutos para buscar um crachá, embora possa confirmar a identidade no local.' },
+        ],
+        facts: [
+          { label: 'Unidade de origem', value: 'Norte · 40 minutos por trecho' }, { label: 'Matrícula', value: '5814' },
+          { label: 'Documento', value: 'com foto · disponível' }, { label: 'Gerente', value: 'Paula Ribeiro' },
+          { label: 'Janela da ligação', value: '8h18–8h23' }, { label: 'Treinamento', value: 'sala 3 · 8h30–12h30' },
+          { label: 'Sua apresentação', value: '9h00' }, { label: 'Confirmação', value: 'e-mail corporativo' },
+        ],
+        vocab: [
+          { word: 'aplicativo corporativo', whatItIs: 'programa usado por funcionários da empresa', here: 'lugar onde aparece a matrícula 5814' },
+          { word: 'área permitida', whatItIs: 'espaço onde uma pessoa pode entrar com autorização', here: 'sala 3 e refeitório' },
+          { word: 'crachá', whatItIs: 'cartão que identifica e libera um funcionário', here: 'objeto esquecido na unidade Norte' },
+          { word: 'devolver', whatItIs: 'entregar de volta algo temporário', here: 'ação obrigatória na saída' },
+          { word: 'entrada registrada', whatItIs: 'acesso que fica anotado no sistema', here: 'forma correta de passar pela portaria' },
+          { word: 'esquecer', whatItIs: 'não lembrar de levar algo', here: 'erro cometido com o crachá' },
+          { word: 'ligação de confirmação', whatItIs: 'telefonema que verifica uma informação', here: 'contato com a gerente Paula' },
+          { word: 'unidade', whatItIs: 'um dos prédios ou locais da mesma empresa', here: 'sede Norte e sede central' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Dê apenas os dados necessários e confirme horário, áreas e devolução.',
+        exponents: [
+          { purpose: 'Aceitar as condições', form: '`Tudo bem: uso o temporário, fico nas áreas permitidas e devolvo na saída.`', effect: 'confirma os três limites' },
+          { purpose: 'Apresentar a prova', form: '`Tenho meu documento, a matrícula … e o e-mail do treinamento.`', effect: 'oferece fontes verificáveis' },
+          { purpose: 'Explicar o problema', form: '`Meu crachá ficou na unidade Norte, a quarenta minutos daqui.`', effect: 'reconhece o erro e o custo de voltar' },
+          { purpose: 'Pedir ajuda', form: '`Você pode me ajudar a solicitar uma entrada temporária?`', effect: 'pede um processo, não o crachá do colega' },
+          { purpose: 'Prometer a devolução', form: '`Vou devolver o crachá temporário na portaria até …`', effect: 'assume a responsabilidade final' },
+          { purpose: 'Propor a confirmação', form: '`Minha gerente pode atender entre … e …`', effect: 'oferece uma janela concreta para verificar' },
+          { purpose: 'Verificar o alcance', form: '`Com este cartão posso ir à sala 3 e ao refeitório, mas não ao estoque, certo?`', effect: 'confere onde a autorização vale' },
+        ],
+        success: 'Você reconheceu o esquecimento, apresentou documento, matrícula e e-mail e conseguiu a confirmação da gerente. Entrou com cartão próprio temporário e aceitou áreas, acompanhamento e devolução.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 4,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 4º turno global da conversa.** Antes, pergunte pela matrícula, pelo documento e por quem confirma a agenda. Não mostre a tela ao colega.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Aviso da segurança · 8h15**' },
+        { kind: 'table', head: ['Controle', 'Situação'], rows: [['Foto do cadastro', 'sistema indisponível'], ['Verificação aceita', 'documento + matrícula'], ['Confirmação', 'responsável por telefone'], ['Acesso temporário', 'até 13h30']] },
+        { kind: 'p', text: 'Como a foto do sistema não abre, a portaria precisa ouvir a gerente confirmar nome, sala e horário antes de emitir o crachá temporário.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem quando as duas pessoas puderem repetir estes cinco elementos:**' },
+      { kind: 'ol', items: ['O crachá permanente ficou na unidade Norte e não será emprestado outro.', 'O documento com foto e a matrícula 5814.', 'A confirmação de Paula Ribeiro por telefone.', 'O acesso temporário até 13h30 apenas para sala 3 e refeitório, com acompanhamento.', 'A devolução do crachá temporário na portaria ao sair.'] },
+    ],
+    debrief: ['¿Qué controles sustituyeron la foto del sistema?', '¿Cómo ayudó el colega sin prestar su propia credencial?', 'Repitan en portugués identificación, áreas, horario y devolución sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'o crachá ficou y você veio da unidade reconstruyen el error.' },
+      { slug: 'verbo-ficar-a2', level: 'a2', title: 'Verbo ficar en portugués A2', rationale: 'ficou na mesa y fica válido até 13h30 expresan ubicación y estado.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vou devolvê-lo y posso acompanhá-lo retoman tarjeta y colega.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'seria possível y poderia confirmar mantienen cortesía.' },
+      { slug: 'verbos-reflexivos-a2', level: 'a2', title: 'Verbos reflexivos en portugués A2', rationale: 'identificar-se y dirigir-se à portaria describen acciones del acceso.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'como, mas y por isso conectan falla, límite y solución.' },
+    ],
+  },
+]

@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · transação 3. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_1C: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-reserved-plant-was-sold', slug: 'reserved-plant-was-sold', sequence: 3,
+    language: 'portugues', level: 'a2', title: 'La planta reservada ya fue vendida', titleTarget: 'A muda reservada já foi vendida',
+    setting: 'Domingo, às 10h35, em uma feira de plantas de Campinas', settingEs: 'Una feria de plantas de Campinas, el domingo a las 10:35 a. m.',
+    speechActs: ['quejarse', 'rechazar', 'proponer-alternativa'], power: 'b>a', initiator: 'a', outcome: 'sin-acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#3',
+    roles: [
+      {
+        id: 'a', name: 'cliente da muda reservada', nameEs: 'quien reservó la planta', headline: 'A jiboia cabia na estante e tolerava pouca luz, mas não está mais no estande',
+        briefing: ['**Mostre a reserva e compare as condições.** Use **o senhor/a senhora** com o vendedor. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao vendedor. Não aceite outra planta só por ser mais barata: confira luz e tamanho adulto.'],
+        prose: [
+          { label: 'Situação atual', text: 'Na sexta-feira, você pagou R$ 12,00 para reservar uma muda de jiboia até domingo ao meio-dia. A etiqueta da reserva está no estande, mas a planta não está.' },
+          { label: 'Objetivo', text: 'Levar a jiboia descrita no comprovante ou encerrar claramente a compra, recuperar o sinal e saber por que a reserva não foi respeitada.' },
+          { label: 'O que não é possível', items: ['Levar uma planta que precise de sol direto: o apartamento só recebe luz indireta.', 'Colocar um vaso com mais de 22 cm na estante.', 'Aceitar crédito da feira: você viaja amanhã e não sabe quando voltará.'] },
+          { label: 'Só você sabe', items: ['O comprovante F-602 diz “jiboia”, vaso de 15 cm, R$ 42,00 e reserva até 12h.', 'A estante tem 22 cm de profundidade e fica a dois metros da janela.', 'Você pagou R$ 12,00 por PIX e pagaria os R$ 30,00 restantes apenas ao retirar a planta.'] },
+          { label: 'Se vocês não resolverem', text: 'Você perde o sinal ou leva uma espécie que não sobrevive no local planejado, sem entender o que aconteceu com a reserva.' },
+        ],
+        facts: [
+          { label: 'Reserva', value: 'F-602 · sexta-feira 16h40' }, { label: 'Prazo', value: 'domingo · 12h00' },
+          { label: 'Sinal', value: 'R$ 12,00 · PIX' }, { label: 'Saldo previsto', value: 'R$ 30,00 na retirada' },
+          { label: 'Espécie', value: 'jiboia · vaso 15 cm' }, { label: 'Luz disponível', value: 'indireta · 2 m da janela' },
+          { label: 'Estante', value: '22 cm de profundidade' }, { label: 'Viagem', value: 'segunda-feira · 7h' },
+        ],
+        vocab: [
+          { word: 'comprovante', whatItIs: 'documento que prova pagamento ou acordo', here: 'registro F-602 da reserva' },
+          { word: 'estante', whatItIs: 'móvel com prateleiras para guardar objetos', here: 'lugar com limite de 22 cm' },
+          { word: 'jiboia', whatItIs: 'planta de folhas verdes que tolera luz indireta', here: 'espécie reservada na sexta-feira' },
+          { word: 'luz indireta', whatItIs: 'claridade sem sol forte sobre a planta', here: 'condição do apartamento' },
+          { word: 'muda', whatItIs: 'planta jovem pronta para crescer em outro vaso', here: 'produto reservado' },
+          { word: 'reserva', whatItIs: 'acordo para guardar um produto até certo horário', here: 'promessa válida até meio-dia' },
+          { word: 'sinal', whatItIs: 'parte do preço paga antes da retirada', here: 'R$ 12,00 já pagos' },
+          { word: 'tamanho adulto', whatItIs: 'medida que a planta pode alcançar depois de crescer', here: 'dado necessário antes de aceitar alternativa' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Compare comprovante, luz e tamanho antes de avaliar qualquer alternativa.',
+        exponents: [
+          { purpose: 'Aceitar a devolução', form: '`Aceito a devolução dos R$ …, mas não outra planta.`', effect: 'encerra o sinal sem fingir acordo sobre a compra' },
+          { purpose: 'Comparar as plantas', form: '`Esta precisa de mais luz do que a jiboia reservada.`', effect: 'recusa a alternativa com uma condição real' },
+          { purpose: 'Dar um limite', form: '`O vaso não pode ter mais de … cm.`', effect: 'explica a restrição da estante' },
+          { purpose: 'Pedir uma explicação', form: '`Pode verificar quando e por que a muda foi vendida?`', effect: 'procura um fato verificável' },
+          { purpose: 'Recusar a alternativa', form: '`Sinto muito, essa espécie não serve porque precisa de sol direto.`', effect: 'recusa a planta, não o vendedor' },
+          { purpose: 'Relembrar a reserva', form: '`Eu reservei uma jiboia em vaso de … cm até …`', effect: 'identifica produto e prazo sem ambiguidade' },
+          { purpose: 'Verificar o encerramento', form: '`Então o senhor devolve R$ … e a compra termina aqui, certo?`', effect: 'torna explícito o resultado sem planta' },
+        ],
+        success: 'Você identificou a jiboia com comprovante, vaso, luz e prazo. Recusou uma planta inadequada, recuperou os R$ 12,00 pelo PIX e encerrou a compra sem declarar resolvida a necessidade.',
+      },
+      {
+        id: 'b', name: 'vendedor da feira', nameEs: 'quien vende en la feria', headline: 'A etiqueta caiu do vaso e é preciso confirmar se a jiboia saiu com outra venda',
+        briefing: ['**Confira antes de culpar alguém.** Use **o senhor/a senhora** com o cliente. **O cliente começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao cliente. Não prometa recuperar uma planta que já saiu da feira.'],
+        prose: [
+          { label: 'Situação atual', text: 'Um cliente procura a jiboia reservada com R$ 12,00. A etiqueta F-602 caiu durante a montagem e foi encontrada embaixo da mesa, sem o vaso.' },
+          { label: 'Objetivo', text: 'Descobrir o que aconteceu, oferecer apenas espécies com luz e tamanho verificados e devolver o sinal se nenhuma alternativa servir.' },
+          { label: 'O que não é possível', items: ['Cancelar uma venda já paga e retirada por outra pessoa.', 'Compartilhar nome ou telefone de outro cliente.', 'Devolver R$ 42,00: só o sinal de R$ 12,00 foi recebido.'] },
+          { label: 'Só você sabe', items: ['Uma jiboia em vaso de 15 cm aparece no registro às 10h08 por R$ 42,00.', 'Há uma muda de cróton por R$ 36,00, mas ela precisa de muita claridade e sol fraco da manhã.', 'Você pode devolver imediatamente R$ 12,00 pelo PIX e marcar a reserva como não cumprida.'] },
+          { label: 'Se vocês não resolverem', text: 'O cliente fica sem planta e sem sinal, e a feira não registra que a etiqueta solta causou uma venda errada.' },
+        ],
+        facts: [
+          { label: 'Etiqueta', value: 'F-602 · encontrada embaixo da mesa' }, { label: 'Sinal registrado', value: 'R$ 12,00 · PIX' },
+          { label: 'Venda parecida', value: 'jiboia · vaso 15 cm · 10h08' }, { label: 'Dados do comprador', value: 'não podem ser compartilhados' },
+          { label: 'Alternativa', value: 'cróton · vaso 18 cm · R$ 36,00' }, { label: 'Luz do cróton', value: 'muita claridade · sol fraco' },
+          { label: 'Devolução máxima', value: 'R$ 12,00' }, { label: 'Registro final', value: 'reserva não cumprida' },
+        ],
+        vocab: [
+          { word: 'claridade', whatItIs: 'quantidade de luz em um lugar', here: 'necessidade alta do cróton' },
+          { word: 'cróton', whatItIs: 'planta de folhas coloridas que gosta de muita luz', here: 'alternativa que pode não servir' },
+          { word: 'devolver', whatItIs: 'dar de volta dinheiro ou objeto', here: 'ação possível sobre o sinal' },
+          { word: 'etiqueta solta', whatItIs: 'identificação que não está mais presa ao produto', here: 'causa provável da venda errada' },
+          { word: 'registro de vendas', whatItIs: 'lista com horário, produto e preço', here: 'prova da saída às 10h08' },
+          { word: 'reserva não cumprida', whatItIs: 'acordo de guardar que não foi respeitado', here: 'motivo anotado na devolução' },
+          { word: 'retirada', whatItIs: 'momento em que alguém leva o produto comprado', here: 'ação já concluída por outro cliente' },
+          { word: 'vaso', whatItIs: 'recipiente com terra onde uma planta cresce', here: 'objeto medido em centímetros' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Diga o que o registro mostra e o que ainda precisa ser confirmado.',
+        exponents: [
+          { purpose: 'Confirmar a devolução', form: '`Vou devolver agora os R$ … do sinal pelo PIX.`', effect: 'nomeia valor, motivo e meio' },
+          { purpose: 'Dar a notícia', form: '`O registro mostra que uma jiboia foi vendida às …`', effect: 'comunica o fato sem expor outro comprador' },
+          { purpose: 'Oferecer uma alternativa', form: '`Posso mostrar um cróton, mas precisamos comparar luz e tamanho.`', effect: 'não apresenta a espécie como equivalente' },
+          { purpose: 'Pedir os detalhes', form: '`O senhor tem o comprovante e a medida do vaso reservado?`', effect: 'identifica a planta antes de concluir' },
+          { purpose: 'Reconhecer o erro', form: '`Sinto muito, a etiqueta da reserva caiu do vaso.`', effect: 'admite a causa sem culpar o cliente' },
+          { purpose: 'Resumir o resultado', form: '`Não encontramos uma planta adequada; devolvo R$ … e encerramos a compra.`', effect: 'registra o desacordo com precisão' },
+          { purpose: 'Verificar o sinal', form: '`O comprovante confirma R$ … pagos e R$ … ainda pendentes, certo?`', effect: 'separa valor pago e preço total' },
+        ],
+        success: 'Você conferiu o registro sem revelar dados pessoais, comparou o cróton e aceitou a recusa. Devolveu apenas o sinal documentado de R$ 12,00 e marcou a reserva como não cumprida.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, confira comprovante, descrição e registro de vendas. Não mostre a tela ao cliente.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Mensagem do caixa da feira · 10h40**' },
+        { kind: 'table', head: ['Dado', 'Confirmação'], rows: [['Planta', 'jiboia'], ['Vaso', '15 cm'], ['Venda', '10h08 · R$ 42,00'], ['Estado', 'retirada pelo comprador']] },
+        { kind: 'p', text: 'A muda reservada já saiu da feira e não pode ser recuperada hoje. Resta comparar uma alternativa ou devolver o sinal.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem sem acordo sobre a compra quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['A reserva F-602 e a jiboia identificada pelo vaso de 15 cm.', 'A venda das 10h08 e o fato de que a muda não pode ser recuperada.', 'A necessidade de luz que torna o cróton inadequado.', 'A devolução de R$ 12,00 pelo PIX.', 'O encerramento da compra sem planta substituta nem crédito futuro.'] },
+    ],
+    debrief: ['¿Qué pruebas permitieron identificar la planta reservada?', '¿Por qué devolver la seña no resuelve la necesidad original?', 'Repitan en portugués medidas, luz, hora y cierre sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'a etiqueta caiu y a planta foi vendida reconstruyen la pérdida.' },
+      { slug: 'preterito-imperfeito-a2', level: 'a2', title: 'Pretérito imperfeito en portugués A2', rationale: 'a reserva valia y a planta ficava sitúan condiciones anteriores.' },
+      { slug: 'comparativos-superlativos-a2', level: 'a2', title: 'Comparativos y superlativos en portugués A2', rationale: 'mais luz do que y vaso maior comparam alternativas.' },
+      { slug: 'pronomes-relativos-a2', level: 'a2', title: 'Pronombres relativos en portugués A2', rationale: 'a planta que reservei identifica el objeto perdido.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderia servir y seria melhor mantienen abierta la evaluación.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, porque y por isso conectan prueba, límite y cierre.' },
+    ],
+  },
+]

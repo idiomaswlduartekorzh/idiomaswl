@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · mobilidade/serviços 16. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_4: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-beach-umbrella-must-return-now', slug: 'beach-umbrella-must-return-now', sequence: 16,
+    language: 'portugues', level: 'a2', title: 'La sombrilla debe devolverse ahora', titleTarget: 'O guarda-sol precisa voltar agora',
+    setting: 'Sábado, às 10h20, em um quiosque de praia em Florianópolis', settingEs: 'Un quiosco de playa en Florianópolis, el sábado a las 10:20 a. m.',
+    speechActs: ['pedir-aclaracion', 'rechazar', 'proponer-alternativa'], power: 'b>a', initiator: 'a', outcome: 'acuerdo-parcial', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#16',
+    roles: [
+      {
+        id: 'a', name: 'banhista que alugou o guarda-sol', nameEs: 'quien alquiló la sombrilla', headline: 'Você pagou quatro horas e usou só uma hora e vinte, mas precisa manter uma criança na sombra',
+        briefing: ['**Peça a regra e negocie o que ainda pode mudar.** Use **o senhor/a senhora** com o atendente. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao atendente. Não insista em manter o guarda-sol depois da alerta de vento.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você alugou um guarda-sol das 9h às 13h por R$ 40,00. Às 10h20, o atendente pede a devolução imediata por causa de uma alerta de vento.' },
+          { label: 'Objetivo', text: 'Entender a regra de segurança, encontrar sombra fixa para uma criança e receber uma correção proporcional pelo tempo que não será usado.' },
+          { label: 'O que não é possível', items: ['Ficar sem sombra: uma criança de quatro anos está com você.', 'Aceitar apenas crédito para outro dia: vocês voltam para casa amanhã.', 'Manter o guarda-sol aberto depois da ordem de recolhimento.'] },
+          { label: 'Só você sabe', items: ['Usou o equipamento por 1 hora e 20 minutos; faltam 2 horas e 40 minutos do aluguel.', 'A criança pode caminhar até uma área coberta a 80 m se houver lugar sentado.', 'Você aceita R$ 20,00 de devolução e uso da área coberta até meio-dia.'] },
+          { label: 'Se vocês não resolverem', text: 'A criança fica no sol ou o guarda-sol continua aberto em condição perigosa, e o tempo não utilizado fica sem correção.' },
+        ],
+        facts: [
+          { label: 'Aluguel', value: '9h00–13h00' }, { label: 'Preço', value: 'R$ 40,00 · cartão' },
+          { label: 'Uso', value: '1 h 20 min' }, { label: 'Tempo restante', value: '2 h 40 min' },
+          { label: 'Criança', value: '4 anos · precisa de sombra' }, { label: 'Área coberta', value: '80 m' },
+          { label: 'Aceitável', value: 'R$ 20,00 + sombra até 12h' }, { label: 'Viagem', value: 'retorno para casa amanhã' },
+        ],
+        vocab: [
+          { word: 'alerta de vento', whatItIs: 'aviso de que o vento pode ficar perigoso', here: 'motivo do recolhimento' },
+          { word: 'área coberta', whatItIs: 'espaço protegido por teto ou estrutura fixa', here: 'alternativa a 80 m' },
+          { word: 'crédito futuro', whatItIs: 'valor guardado para usar outro dia', here: 'compensação que não serve à família' },
+          { word: 'devolução parcial', whatItIs: 'retorno de uma parte do dinheiro pago', here: 'R$ 20,00 pelo tempo restante' },
+          { word: 'equipamento', whatItIs: 'objeto usado para uma atividade', here: 'guarda-sol alugado' },
+          { word: 'guarda-sol', whatItIs: 'estrutura de tecido que cria sombra na praia', here: 'objeto que deve ser recolhido' },
+          { word: 'recolhimento', whatItIs: 'ação de fechar e retirar um objeto', here: 'regra aplicada durante o vento' },
+          { word: 'tempo não utilizado', whatItIs: 'parte paga que não pôde ser usada', here: '2 horas e 40 minutos' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Aceite o recolhimento e negocie sombra e dinheiro, não a alerta.',
+        exponents: [
+          { purpose: 'Aceitar a segurança', form: '`Vou fechar o guarda-sol agora, mas preciso resolver a sombra e o tempo restante.`', effect: 'aceita a regra e mantém duas questões abertas' },
+          { purpose: 'Comparar o tempo', form: '`Paguei quatro horas e usei somente uma hora e vinte.`', effect: 'torna a diferença verificável' },
+          { purpose: 'Dar a necessidade', form: '`Estou com uma criança de quatro anos que precisa ficar na sombra.`', effect: 'explica por que uma alternativa física importa' },
+          { purpose: 'Explicar o limite', form: '`Um crédito futuro não serve porque voltamos para casa amanhã.`', effect: 'recusa a forma de compensação' },
+          { purpose: 'Pedir esclarecimento', form: '`A alerta exige recolher todos os guarda-sóis agora?`', effect: 'confirma o alcance da regra' },
+          { purpose: 'Recusar o crédito', form: '`Não aceito apenas crédito; preciso de uma devolução pelo tempo não usado.`', effect: 'mantém aberta outra correção' },
+          { purpose: 'Verificar o acordo', form: '`Então devolvo o guarda-sol, recebo R$ … e uso a área coberta até …, certo?`', effect: 'confere segurança, dinheiro e sombra' },
+        ],
+        success: 'Você recolheu o guarda-sol sem discutir a alerta, mostrou o tempo restante e recusou crédito inútil. Confirmou R$ 20,00 no cartão e lugar coberto até meio-dia.',
+      },
+      {
+        id: 'b', name: 'atendente do quiosque', nameEs: 'quien atiende el quiosco', headline: 'A praia ordenou recolher todos os guarda-sóis, mas há lugares sob a cobertura fixa e devolução autorizada',
+        briefing: ['**Explique a regra antes da compensação.** Use **o senhor/a senhora** com o banhista. **O banhista começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao banhista. Não deixe o equipamento aberto nem prometa devolver o valor inteiro após uso parcial.'],
+        prose: [
+          { label: 'Situação atual', text: 'A Defesa Civil enviou alerta de rajadas e a administração da praia mandou recolher estruturas móveis. Um cliente ainda tem 2 horas e 40 minutos de aluguel.' },
+          { label: 'Objetivo', text: 'Fechar o equipamento imediatamente, oferecer sombra em estrutura fixa e calcular uma devolução dentro da autorização.' },
+          { label: 'O que não é possível', items: ['Manter um guarda-sol aberto, mesmo com peso adicional.', 'Mover a estrutura móvel para a área coberta.', 'Devolver os R$ 40,00 completos depois de 1 hora e 20 minutos de uso.'] },
+          { label: 'Só você sabe', items: ['Há uma mesa livre para quatro pessoas na cobertura fixa até 12h.', 'O gerente autorizou R$ 20,00 de devolução no cartão ou R$ 25,00 de crédito futuro.', 'A devolução no cartão recebe comprovante imediato, mas pode aparecer em até três dias úteis.'] },
+          { label: 'Se vocês não resolverem', text: 'O cliente permanece com estrutura insegura ou sai sem sombra e sem registro da correção financeira.' },
+        ],
+        facts: [
+          { label: 'Alerta', value: 'Defesa Civil · rajadas' }, { label: 'Ordem', value: 'recolher estruturas móveis agora' },
+          { label: 'Cobertura fixa', value: '1 mesa · 4 lugares · até 12h' }, { label: 'Devolução autorizada', value: 'R$ 20,00 · cartão' },
+          { label: 'Crédito alternativo', value: 'R$ 25,00' }, { label: 'Comprovante', value: 'imediato' },
+          { label: 'Prazo no cartão', value: 'até 3 dias úteis' }, { label: 'Valor total', value: 'R$ 40,00' },
+        ],
+        vocab: [
+          { word: 'administração da praia', whatItIs: 'equipe que organiza regras e serviços no local', here: 'origem da ordem de recolhimento' },
+          { word: 'comprovante de devolução', whatItIs: 'registro de que um valor foi enviado de volta', here: 'documento entregue imediatamente' },
+          { word: 'cobertura fixa', whatItIs: 'teto preso ao chão que não é equipamento móvel', here: 'sombra segura durante a alerta' },
+          { word: 'estrutura móvel', whatItIs: 'objeto que pode ser aberto, fechado e transportado', here: 'categoria do guarda-sol' },
+          { word: 'peso adicional', whatItIs: 'objeto colocado para tentar segurar outro', here: 'solução que não torna o guarda-sol seguro' },
+          { word: 'rajada', whatItIs: 'vento forte que chega de repente', here: 'risco anunciado pela Defesa Civil' },
+          { word: 'recolher', whatItIs: 'fechar e retirar do uso', here: 'ação obrigatória sobre todos os guarda-sóis' },
+          { word: 'valor autorizado', whatItIs: 'quantia que o funcionário pode conceder', here: 'R$ 20,00 no cartão' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Explique estrutura móvel versus fixa e diferencie comprovante imediato de crédito no cartão.',
+        exponents: [
+          { purpose: 'Confirmar o uso', form: '`O aluguel começou às … e o senhor usou uma hora e vinte, correto?`', effect: 'confere a base da devolução' },
+          { purpose: 'Dar a regra', form: '`Precisamos recolher todas as estruturas móveis por causa da alerta.`', effect: 'aplica a mesma regra a todos' },
+          { purpose: 'Explicar o prazo', form: '`O comprovante sai agora, mas o valor pode aparecer em até três dias úteis.`', effect: 'separa registro e disponibilidade' },
+          { purpose: 'Oferecer a alternativa', form: '`Temos uma mesa para quatro pessoas sob a cobertura até …`', effect: 'mantém sombra sem equipamento móvel' },
+          { purpose: 'Pedir o recolhimento', form: '`Pode fechar o guarda-sol agora enquanto eu preparo a devolução?`', effect: 'prioriza a segurança e permite trabalhar em paralelo' },
+          { purpose: 'Resumir a correção', form: '`O senhor recebe R$ … no cartão e usa a cobertura fixa até …`', effect: 'confirma as duas concessões' },
+          { purpose: 'Verificar a escolha', form: '`Prefere R$ … no cartão em vez de R$ … de crédito?`', effect: 'permite escolher sem ocultar diferenças' },
+        ],
+        success: 'Você aplicou a ordem a todas as estruturas, confirmou o uso e ofereceu apenas sombra fixa. Processou R$ 20,00 com comprovante e explicou o prazo do cartão.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, confirme a ordem, compare tempo pago e usado e pergunte por sombra fixa. Não mostre a tela ao atendente.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Mensagem da família · 10h26**' },
+        { kind: 'table', head: ['Necessidade', 'Atualização'], rows: [['Criança', '4 anos'], ['Caminhada possível', 'até 100 m'], ['Tempo de praia', 'até 12h'], ['Crédito futuro', 'não será usado']] },
+        { kind: 'p', text: 'A área coberta a 80 m resolve a necessidade de sombra. Negocie lugar e devolução, mas mantenha o guarda-sol fechado.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem com um acordo parcial quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['O guarda-sol será fechado e devolvido imediatamente por causa da alerta.', 'O aluguel era das 9h às 13h e houve 1 hora e 20 minutos de uso.', 'A família usará uma mesa sob cobertura fixa até meio-dia.', 'O quiosque devolverá R$ 20,00 ao mesmo cartão e entregará comprovante agora.', 'O valor pode aparecer no cartão em até três dias úteis.'] },
+    ],
+    debrief: ['¿Qué parte no podía negociarse por seguridad?', '¿Cómo se combinaron sombra y compensación?', 'Repitan en portugués tiempo usado, lugar, valor y plazo sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'comparativos-superlativos-a2', level: 'a2', title: 'Comparativos y superlativos en portugués A2', rationale: 'mais seguro que y menos tempo comparam riesgo y uso.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vou fechá-lo y posso devolvê-lo retoman guarda-sol y dinero.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderia ficar y seria possível formulan alternativas.' },
+      { slug: 'verbos-modais-a2', level: 'a2', title: 'Verbos modales en portugués A2', rationale: 'precisa voltar, pode usar y não deve abrir expresan obligación y permiso.' },
+      { slug: 'subjuntivo-presente-a2', level: 'a2', title: 'Presente de subjuntivo en portugués A2', rationale: 'é necessário que fique fechado y antes que o vento aumente expresan seguridad.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, porque y enquanto conectan límite, causa y simultaneidad.' },
+    ],
+  },
+]

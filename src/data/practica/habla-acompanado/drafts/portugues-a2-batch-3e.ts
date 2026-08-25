@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · mobilidade/serviços 15. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_3E: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-suitcase-will-not-be-ready-today', slug: 'suitcase-will-not-be-ready-today', sequence: 15,
+    language: 'portugues', level: 'a2', title: 'La maleta no queda lista hoy', titleTarget: 'A mala não fica pronta hoje',
+    setting: 'Quinta-feira, às 16h40, em uma oficina de malas de Curitiba', settingEs: 'Un taller de maletas de Curitiba, el jueves a las 4:40 p. m.',
+    speechActs: ['dar-mala-noticia', 'quejarse', 'poner-limite'], power: 'a>b', initiator: 'b', outcome: 'aplazado', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#15',
+    roles: [
+      {
+        id: 'a', name: 'técnico da oficina', nameEs: 'quien repara la maleta', headline: 'A roda chegou no tamanho errado, mas há uma mala de cabine para empréstimo',
+        briefing: ['**Dê a notícia antes de oferecer o empréstimo.** Use **o senhor/a senhora** com a cliente. **A cliente começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre à cliente. Não prometa a mala pronta antes da confirmação do fornecedor amanhã.'],
+        prose: [
+          { label: 'Situação atual', text: 'A cliente veio buscar uma mala cuja roda seria trocada hoje às 17h. A peça entregue tem 55 mm, mas o suporte da mala exige uma roda de 60 mm.' },
+          { label: 'Objetivo', text: 'Explicar o atraso, oferecer bagagem temporária e combinar chamada, possível retirada e plano alternativo para a viagem.' },
+          { label: 'O que não é possível', items: ['Instalar a roda de 55 mm: a mala ficaria inclinada e poderia quebrar.', 'Entregar a mala sem uma roda: o casco é grande e pesado.', 'Garantir a peça correta antes de o fornecedor atualizar o rastreio às 8h30.'] },
+          { label: 'Só você sabe', items: ['Há uma mala de cabine emprestável, com capacidade de 10 kg e devolução sem custo após a viagem.', 'Se a peça chegar até 9h, o conserto termina às 10h e a oficina pode levar a mala ao terminal às 11h.', 'Se não chegar, a cliente viaja com a emprestada e retira a própria depois de voltar.'] },
+          { label: 'Se vocês não resolverem', text: 'A cliente viaja sem bagagem adequada ou leva uma mala reparada com peça incompatível.' },
+        ],
+        facts: [
+          { label: 'Ordem', value: 'ML-260 · retirada hoje 17h' }, { label: 'Roda necessária', value: '60 mm' },
+          { label: 'Roda recebida', value: '55 mm · incompatível' }, { label: 'Atualização do fornecedor', value: 'amanhã · 8h30' },
+          { label: 'Conserto possível', value: '9h00–10h00 se a peça chegar' }, { label: 'Entrega possível', value: 'terminal · 11h00' },
+          { label: 'Empréstimo', value: 'mala de cabine · 10 kg' }, { label: 'Custo do empréstimo', value: 'R$ 0 · devolução após viagem' },
+        ],
+        vocab: [
+          { word: 'casco', whatItIs: 'parte externa e firme de uma mala', here: 'estrutura grande que não pode ser carregada sem roda' },
+          { word: 'conserto', whatItIs: 'trabalho feito para reparar um objeto', here: 'troca da roda de 60 mm' },
+          { word: 'empréstimo', whatItIs: 'uso temporário de algo que será devolvido', here: 'mala de cabine sem custo' },
+          { word: 'fornecedor', whatItIs: 'empresa que envia materiais ou peças', here: 'origem da roda correta' },
+          { word: 'incompatível', whatItIs: 'que não funciona corretamente com outra parte', here: 'roda de 55 mm no suporte de 60 mm' },
+          { word: 'mala de cabine', whatItIs: 'bagagem pequena levada dentro do avião', here: 'alternativa de até 10 kg' },
+          { word: 'rastreio', whatItIs: 'informação sobre o caminho de uma entrega', here: 'atualização esperada às 8h30' },
+          { word: 'suporte da roda', whatItIs: 'peça onde a roda fica presa à mala', here: 'parte que exige 60 mm' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Explique os dois tamanhos e deixe a retirada dependente do rastreio.',
+        exponents: [
+          { purpose: 'Dar a notícia', form: '`Sinto muito, a roda que chegou tem … mm e sua mala precisa de … mm.`', effect: 'comunica diferença e motivo' },
+          { purpose: 'Dar o limite', form: '`Não posso instalar uma peça incompatível nem prometer a entrega hoje.`', effect: 'protege a mala e o prazo real' },
+          { purpose: 'Explicar os caminhos', form: '`Se a peça chegar até …, terminamos às …; se não, o conserto fica para depois.`', effect: 'apresenta dois resultados condicionais' },
+          { purpose: 'Oferecer o empréstimo', form: '`Posso emprestar uma mala de cabine de até … kg sem custo.`', effect: 'resolve parte da viagem agora' },
+          { purpose: 'Prometer a chamada', form: '`Vou ligar às … depois de conferir o rastreio.`', effect: 'define responsável e hora' },
+          { purpose: 'Propor a entrega', form: '`Se ficar pronta, podemos levar sua mala ao terminal às …`', effect: 'reduz o deslocamento da cliente' },
+          { purpose: 'Resumir a pendência', form: '`Hoje entrego a mala emprestada; amanhã confirmo peça, conserto e entrega.`', effect: 'separa o certo do pendente' },
+        ],
+        success: 'Você explicou 55 mm versus 60 mm e não instalou a peça errada. Entregou a mala emprestada e assumiu ligar às 8h30, com retirada ou entrega condicionada à peça.',
+      },
+      {
+        id: 'b', name: 'cliente que viaja amanhã', nameEs: 'quien viaja al día siguiente', headline: 'O voo sai às 14h, e uma mala de cabine serve para os itens essenciais se tiver 10 kg',
+        briefing: ['**Mostre a ordem e explique o que precisa levar.** Use **o senhor/a senhora** com o técnico. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao técnico. Não aceite uma roda menor só para retirar a mala hoje.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você deixou uma mala grande para trocar a roda e recebeu promessa de retirada hoje às 17h. Amanhã viaja de avião às 14h por quatro dias.' },
+          { label: 'Objetivo', text: 'Ter bagagem suficiente para viajar, saber às 8h30 se a mala estará pronta e evitar uma ida inútil à oficina.' },
+          { label: 'O que não é possível', items: ['Usar a mala grande com uma roda menor ou faltando.', 'Chegar ao terminal depois das 12h: precisa despachar ou reorganizar a bagagem.', 'Comprar outra mala grande antes da viagem.'] },
+          { label: 'Só você sabe', items: ['Separa roupas e materiais essenciais em 9,4 kg, dentro do limite de uma mala de cabine.', 'Pode ir diretamente ao terminal às 11h30 e receber a mala reparada lá, se estiver pronta.', 'Volta da viagem na terça-feira e pode devolver a mala emprestada e buscar a sua depois.'] },
+          { label: 'Se vocês não resolverem', text: 'Você perde o voo reorganizando bagagem ou viaja com uma mala insegura.' },
+        ],
+        facts: [
+          { label: 'Ordem', value: 'ML-260 · promessa 17h' }, { label: 'Voo', value: 'amanhã · 14h00' },
+          { label: 'Chegada ao terminal', value: 'até 12h00' }, { label: 'Bagagem essencial', value: '9,4 kg' },
+          { label: 'Viagem', value: '4 dias' }, { label: 'Retorno', value: 'terça-feira' },
+          { label: 'Ponto de encontro possível', value: 'terminal · 11h30' }, { label: 'Peça aceita', value: 'somente roda correta de 60 mm' },
+        ],
+        vocab: [
+          { word: 'bagagem essencial', whatItIs: 'itens mais necessários para uma viagem', here: 'roupas e materiais de 9,4 kg' },
+          { word: 'despachar', whatItIs: 'entregar uma mala para viajar no compartimento do avião', here: 'processo que exige chegar cedo' },
+          { word: 'inseguro', whatItIs: 'que pode causar problema ou dano', here: 'estado de uma mala com roda errada' },
+          { word: 'limite de peso', whatItIs: 'maior quantidade de quilos permitida', here: '10 kg na mala emprestada' },
+          { word: 'ordem de serviço', whatItIs: 'documento que registra um reparo', here: 'ML-260 com promessa das 17h' },
+          { word: 'peça correta', whatItIs: 'componente com tamanho e tipo adequados', here: 'roda de 60 mm' },
+          { word: 'retirada', whatItIs: 'momento em que o cliente busca um objeto', here: 'ação ainda não confirmada para amanhã' },
+          { word: 'terminal', whatItIs: 'local de embarque de uma viagem', here: 'ponto possível de entrega às 11h30' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Dê peso, voo e limite de segurança e peça uma chamada, não uma promessa de peça.',
+        exponents: [
+          { purpose: 'Aceitar o empréstimo', form: '`Aceito a mala de cabine porque meus itens pesam … kg.`', effect: 'mostra que a solução temporária cabe no limite' },
+          { purpose: 'Dar o limite', form: '`Preciso estar no terminal até … e não posso fazer uma viagem inútil à oficina.`', effect: 'define horário e deslocamento' },
+          { purpose: 'Explicar a urgência', form: '`Meu voo sai amanhã às … e a viagem dura quatro dias.`', effect: 'liga bagagem e prazo' },
+          { purpose: 'Pedir a confirmação', form: '`O senhor pode me ligar às … depois de verificar a peça?`', effect: 'pede informação no momento certo' },
+          { purpose: 'Propor o encontro', form: '`Se a mala ficar pronta, posso recebê-la no terminal às …`', effect: 'oferece alternativa condicionada' },
+          { purpose: 'Recusar a peça errada', form: '`Não aceito a roda de … mm porque a mala precisa de … mm.`', effect: 'protege segurança e reparo' },
+          { purpose: 'Verificar os dois planos', form: '`Se a peça chegar, recebo a mala; se não, viajo com a emprestada, certo?`', effect: 'confirma os dois caminhos' },
+        ],
+        success: 'Você recusou a roda errada, mostrou que 9,4 kg cabem no empréstimo e evitou deslocamento incerto. Confirmou chamada às 8h30 e dois planos para a viagem.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, compare os tamanhos da roda, diga o horário do voo e pergunte pela mala emprestada. Não mostre a tela ao técnico.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Atualização da companhia aérea · 16h47**' },
+        { kind: 'table', head: ['Bagagem', 'Condição'], rows: [['Cabine', 'até 10 kg'], ['Seus itens essenciais', '9,4 kg'], ['Mala grande', 'despacho até 12h40'], ['Voo', '14h00']] },
+        { kind: 'p', text: 'A mala emprestada comporta os itens essenciais. Você pode viajar com ela se a peça não chegar, sem aceitar um reparo inseguro.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem com a decisão aplazada quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['A roda recebida tem 55 mm e não será instalada no suporte de 60 mm.', 'A cliente leva hoje uma mala de cabine emprestada, sem custo, para 9,4 kg.', 'O técnico verifica o rastreio e liga amanhã às 8h30.', 'Se a peça chegar até 9h, a mala fica pronta às 10h e pode ser entregue no terminal às 11h30.', 'Se não chegar, a cliente viaja com a emprestada e retira a própria depois de terça-feira.'] },
+    ],
+    debrief: ['¿Qué parte quedó confirmada hoy y cuál depende de la pieza?', '¿Cómo evitó la maleta prestada aceptar una reparación insegura?', 'Repitan en portugués medidas, peso y dos planes sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'gerundio-a2', level: 'a2', title: 'Gerundio en portugués A2', rationale: 'estamos esperando y a peça está chegando describen proceso.' },
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'a peça veio errada y o técnico fez o pedido reconstruyen el atraso.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'ligarei y a mala ficará pronta organizan resultados futuros.' },
+      { slug: 'verbo-ficar-a2', level: 'a2', title: 'Verbo ficar en portugués A2', rationale: 'não fica pronta y fica inclinada expresan estado y resultado.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderia receber y seria possível suavizan opciones.' },
+      { slug: 'verbos-modais-a2', level: 'a2', title: 'Verbos modales en portugués A2', rationale: 'pode emprestar, precisa chegar y não deve instalar expresan posibilidad y límite.' },
+    ],
+  },
+]

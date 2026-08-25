@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · mobilidade/serviços 14. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_3D: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-pickup-street-is-blocked', slug: 'pickup-street-is-blocked', sequence: 14,
+    language: 'portugues', level: 'a2', title: 'La calle de recogida está bloqueada', titleTarget: 'A rua do embarque está bloqueada',
+    setting: 'Sexta-feira, às 18h50, durante uma festa junina em Campina Grande', settingEs: 'Campina Grande durante una fiesta de junio, el viernes a las 6:50 p. m.',
+    speechActs: ['quejarse', 'poner-limite', 'rechazar'], power: 'b>a', initiator: 'a', outcome: 'sin-acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#14',
+    roles: [
+      {
+        id: 'a', name: 'passageiro com duas malas', nameEs: 'quien espera el vehículo con dos maletas', headline: 'O motorista cancelou na barreira, e o novo ponto exige caminhar 1,2 km com duas malas',
+        briefing: ['**Mostre localização, cancelamento e limite.** Use **o senhor/a senhora** com o suporte. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao suporte. Não afirme que o reembolso já foi aprovado: peça registro e prazo.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você pediu um carro do hotel ao aeroporto. O motorista parou na barreira da festa junina e cancelou. O aplicativo cobrou R$ 12,00 e oferece novo embarque a 1,2 km.' },
+          { label: 'Objetivo', text: 'Documentar que a rua estava bloqueada, cancelar sem aceitar um ponto que não consegue alcançar e receber número e prazo para revisar a cobrança.' },
+          { label: 'O que não é possível', items: ['Caminhar 1,2 km sozinho com duas malas de 21 kg cada.', 'Esperar a barreira abrir às 22h: seu voo sai às 21h40.', 'Pagar uma nova corrida no aplicativo antes de saber se o carro chega ao hotel.'] },
+          { label: 'Só você sabe', items: ['Tem captura do mapa com embarque no hotel e foto da barreira às 18h43.', 'O motorista escreveu “rua bloqueada pelo evento” antes de cancelar.', 'Um ponto de táxi licenciado fica a 300 m pela calçada interna do hotel; você pode tentar essa opção fora do aplicativo.'] },
+          { label: 'Se vocês não resolverem', text: 'Você perde tempo em um ponto inacessível e conserva uma cobrança por um carro que não chegou.' },
+        ],
+        facts: [
+          { label: 'Corrida', value: 'CG-884 · hotel → aeroporto' }, { label: 'Pedido', value: '18h32' },
+          { label: 'Cancelamento', value: '18h44 · motorista' }, { label: 'Taxa', value: 'R$ 12,00' },
+          { label: 'Novo ponto', value: '1,2 km · avenida do Parque' }, { label: 'Bagagem', value: '2 malas · 21 kg cada' },
+          { label: 'Voo', value: '21h40' }, { label: 'Provas', value: 'mapa + foto + mensagem' },
+        ],
+        vocab: [
+          { word: 'barreira', whatItIs: 'bloqueio que impede veículos de passar', here: 'estrutura instalada para a festa' },
+          { word: 'cancelamento', whatItIs: 'fim de um serviço antes de acontecer', here: 'ação registrada às 18h44' },
+          { word: 'captura do mapa', whatItIs: 'imagem da localização mostrada no aplicativo', here: 'prova do embarque no hotel' },
+          { word: 'corrida', whatItIs: 'viagem solicitada em um carro por aplicativo', here: 'CG-884 até o aeroporto' },
+          { word: 'embarque', whatItIs: 'ponto onde o passageiro entra no veículo', here: 'hotel no pedido original' },
+          { word: 'ponto inacessível', whatItIs: 'local que a pessoa não consegue alcançar', here: 'avenida a 1,2 km com malas' },
+          { word: 'revisão da cobrança', whatItIs: 'análise para decidir se uma taxa deve continuar', here: 'processo pedido sobre R$ 12,00' },
+          { word: 'taxa de cancelamento', whatItIs: 'valor cobrado quando uma corrida termina antes', here: 'R$ 12,00 ainda não devolvidos' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6**, **7** e **8** da caixa comum. Dê as três provas e recuse o ponto, mas diferencie abrir revisão de receber reembolso.',
+        exponents: [
+          { purpose: 'Aceitar apenas o registro', form: '`Aceito encerrar a corrida se a revisão da taxa ficar registrada.`', effect: 'fecha o serviço sem fingir reembolso' },
+          { purpose: 'Dar o limite', form: '`Não consigo caminhar 1,2 km com duas malas de … kg.`', effect: 'explica por que o ponto não é viável' },
+          { purpose: 'Identificar a corrida', form: '`O código é …, e o embarque original era no hotel.`', effect: 'localiza o caso correto' },
+          { purpose: 'Mostrar as provas', form: '`Tenho o mapa, a foto da barreira e a mensagem do motorista.`', effect: 'documenta o bloqueio por três fontes' },
+          { purpose: 'Pedir a revisão', form: '`Pode registrar que o motorista cancelou por causa do bloqueio?`', effect: 'relaciona motivo e cobrança' },
+          { purpose: 'Recusar o novo ponto', form: '`Não aceito a avenida do Parque porque não consigo chegar até lá.`', effect: 'recusa a opção, não toda ajuda' },
+          { purpose: 'Verificar o encerramento', form: '`A corrida termina sem novo carro, e a taxa fica em análise até …, certo?`', effect: 'confirma desacordo, estado y plazo' },
+        ],
+        success: 'Você identificou CG-884, apresentou três provas e recusou o ponto a 1,2 km. Encerrou sem nova corrida e recebeu protocolo e prazo de revisão, sem chamar isso de reembolso aprovado.',
+      },
+      {
+        id: 'b', name: 'atendente do suporte do aplicativo', nameEs: 'quien atiende el soporte de la aplicación', headline: 'O sistema permite outro ponto ou revisão da taxa, mas não garante carro no hotel nem reembolso imediato',
+        briefing: ['**Verifique o trajeto e seja preciso sobre o que pode conceder.** Use **o senhor/a senhora** com o passageiro. **O passageiro começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao passageiro. Não prometa reembolso: sua função só abre e documenta a revisão.'],
+        prose: [
+          { label: 'Situação atual', text: 'O passageiro contesta uma taxa de R$ 12,00. O GPS mostra o motorista parado na barreira e o sistema sugere embarque na avenida do Parque.' },
+          { label: 'Objetivo', text: 'Conferir evidências, explicar o limite do suporte e registrar a revisão com código e prazo se o passageiro não aceitar o novo ponto.' },
+          { label: 'O que não é possível', items: ['Mandar um carro atravessar a barreira municipal.', 'Mover o ponto para dentro do hotel enquanto a rua estiver fechada.', 'Aprovar reembolso antes da análise do GPS e das mensagens.'] },
+          { label: 'Só você sabe', items: ['A avenida do Parque é o único ponto liberado no aplicativo e fica a 1,2 km.', 'Pode encerrar sem nova corrida e abrir o protocolo RV-209 com mapa, foto e mensagem.', 'A equipe responde em até cinco dias úteis e, se aprovar, devolve R$ 12,00 ao mesmo cartão.'] },
+          { label: 'Se vocês não resolverem', text: 'O passageiro pede carros que não podem chegar ao hotel ou termina a chamada sem prova da revisão da taxa.' },
+        ],
+        facts: [
+          { label: 'GPS do motorista', value: 'barreira · 18h41–18h44' }, { label: 'Mensagem', value: 'rua bloqueada pelo evento' },
+          { label: 'Ponto liberado', value: 'avenida do Parque · 1,2 km' }, { label: 'Taxa', value: 'R$ 12,00 · cartão' },
+          { label: 'Protocolo possível', value: 'RV-209' }, { label: 'Evidências', value: 'mapa + foto + mensagem' },
+          { label: 'Prazo da revisão', value: 'até 5 dias úteis' }, { label: 'Resultado', value: 'reembolso não garantido' },
+        ],
+        vocab: [
+          { word: 'análise do GPS', whatItIs: 'verificação dos lugares registrados pelo sistema', here: 'controle da posição do motorista' },
+          { word: 'bloqueio municipal', whatItIs: 'fechamento definido pela administração da cidade', here: 'barreira que o carro não atravessa' },
+          { word: 'dia útil', whatItIs: 'dia normal de trabalho, sem fim de semana ou feriado', here: 'unidade do prazo de revisão' },
+          { word: 'evidência', whatItIs: 'informação usada para verificar um fato', here: 'mapa, foto e mensagem' },
+          { word: 'ponto liberado', whatItIs: 'local onde o aplicativo permite embarque', here: 'avenida do Parque' },
+          { word: 'protocolo de revisão', whatItIs: 'código de um pedido de análise', here: 'RV-209' },
+          { word: 'reembolso aprovado', whatItIs: 'devolução autorizada depois de análise', here: 'resultado que o suporte ainda não pode prometer' },
+          { word: 'suporte', whatItIs: 'equipe que registra e tenta resolver problemas do aplicativo', here: 'canal da conversa' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6**, **7** e **8** da caixa comum. Explique revisão, prazo e resultado possível; não use “devolvido” no presente.',
+        exponents: [
+          { purpose: 'Confirmar as evidências', form: '`O GPS, a foto e a mensagem mostram o bloqueio às …`', effect: 'registra o fato com fontes' },
+          { purpose: 'Dar o limite', form: '`Não posso enviar um carro ao hotel enquanto a rua estiver bloqueada.`', effect: 'recusa um serviço impossível' },
+          { purpose: 'Explicar a revisão', form: '`A equipe vai analisar o GPS e responder em até cinco dias úteis.`', effect: 'descreve processo e prazo' },
+          { purpose: 'Oferecer o ponto', form: '`O único embarque liberado no aplicativo é a avenida do Parque.`', effect: 'apresenta a alternativa sem esconder a distância' },
+          { purpose: 'Registrar o caso', form: '`Vou anexar as três provas ao protocolo …`', effect: 'cria rastreabilidade' },
+          { purpose: 'Resumir o resultado', form: '`Não haverá nova corrida; a taxa continua cobrada enquanto a revisão estiver aberta.`', effect: 'expõe o desacordo com precisão' },
+          { purpose: 'Verificar a escolha', form: '`O senhor prefere encerrar e abrir a revisão, sem garantia de reembolso?`', effect: 'pede consentimento informado' },
+        ],
+        success: 'Você confirmou as evidências, explicou por que nenhum carro chega ao hotel e não prometeu devolução. Abriu RV-209, anexou as provas e informou o prazo de cinco dias úteis.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, identifique a corrida, diga a distância do novo ponto e apresente as provas. Não mostre a tela ao suporte.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Aviso da organização da festa · 18h56**' },
+        { kind: 'table', head: ['Acesso', 'Atualização'], rows: [['Rua do hotel', 'fechada até 22h'], ['Ponto de aplicativo', 'avenida do Parque · 1,2 km'], ['Calçada interna', 'ponto de táxi · 300 m'], ['Barreira', 'não será movida antes das 22h']] },
+        { kind: 'p', text: 'Não haverá embarque de aplicativo no hotel hoje. O táxi licenciado é uma opção externa, mas não faz parte da solução oferecida pelo suporte.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem sem acordo sobre uma nova corrida quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['A corrida CG-884 foi cancelada pelo motorista na barreira.', 'Mapa, foto e mensagem foram anexados ao caso.', 'O passageiro recusou caminhar 1,2 km com duas malas.', 'O aplicativo não enviará outro carro ao hotel; o passageiro buscará transporte fora do aplicativo.', 'A taxa de R$ 12,00 fica em revisão no protocolo RV-209 por até cinco dias úteis, sem reembolso garantido.'] },
+    ],
+    debrief: ['¿Qué evidencia documentó que el bloqueo no dependía del pasajero?', '¿Por qué abrir una revisión no equivale a devolver el dinero?', 'Repitan en portugués distancia, pruebas, protocolo y plazo sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'o motorista foi até a barreira y o passageiro teve a cobrança reconstruyen el caso.' },
+      { slug: 'preterito-imperfeito-a2', level: 'a2', title: 'Pretérito imperfeito en portugués A2', rationale: 'a rua estava bloqueada y o aplicativo mostrava outro ponto describen contexto.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderia caminhar y seria possível apresentam opções inviables.' },
+      { slug: 'para-vs-por-a2', level: 'a2', title: 'Para vs. por en portugués A2', rationale: 'para o aeroporto y por causa do evento distinguen destino y causa.' },
+      { slug: 'subjuntivo-presente-a2', level: 'a2', title: 'Presente de subjuntivo en portugués A2', rationale: 'até que a equipe responda y embora esteja bloqueada expresan espera y contraste.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, enquanto y por isso conectan límite, estado y consecuencia.' },
+    ],
+  },
+]

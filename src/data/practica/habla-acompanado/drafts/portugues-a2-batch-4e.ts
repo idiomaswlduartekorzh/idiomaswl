@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · planos/problemas 20. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_4E: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-arrive-after-last-park-access', slug: 'arrive-after-last-park-access', sequence: 20,
+    language: 'portugues', level: 'a2', title: 'Llegaré después del último acceso', titleTarget: 'Vou chegar depois do último acesso',
+    setting: 'Sexta-feira, às 16h50, em uma ligação para um parque estadual em Goiás', settingEs: 'Una llamada a un parque estatal de Goiás, el viernes a las 4:50 p. m.',
+    speechActs: ['pedir-favor', 'rechazar', 'poner-limite'], power: 'b>a', initiator: 'a', outcome: 'sin-acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#20',
+    roles: [
+      {
+        id: 'a', name: 'visitante em ônibus atrasado', nameEs: 'quien viaja en un autobús retrasado', headline: 'O ônibus chegará às 18h35, mas sua reserva de camping começa hoje e continua amanhã',
+        briefing: ['**Explique o atraso e peça uma opção segura.** Use **o senhor/a senhora** com o guarda-parque. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao guarda-parque. Não tente entrar pela trilha lateral nem peça que deixem o portão sem vigilância.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você tem reserva de duas noites no camping. O ônibus atrasou por causa de uma interdição e agora chegará à cidade às 18h35, depois do último acesso ao parque.' },
+          { label: 'Objetivo', text: 'Saber se existe entrada acompanhada, preservar a segunda noite e obter uma alternativa para dormir sem caminhar no escuro.' },
+          { label: 'O que não é possível', items: ['Descer antes e caminhar pela estrada: faltam 14 km e anoitece às 18h10.', 'Entrar por uma trilha lateral: você não conhece o caminho e estará sem guia.', 'Voltar para casa hoje: não há outro ônibus.'] },
+          { label: 'Só você sabe', items: ['A empresa confirmou por mensagem que o ônibus 702 chegará às 18h35.', 'Tem barraca e mochila, mas não leva lanterna forte para uma trilha noturna.', 'Aceita dormir em uma pousada da cidade e entrar amanhã às 7h se a segunda noite continuar válida.'] },
+          { label: 'Se vocês não resolverem', text: 'Você tenta um acesso sem vigilância ou perde também a segunda noite, embora tenha avisado antes do fechamento.' },
+        ],
+        facts: [
+          { label: 'Reserva', value: 'PG-418 · sexta + sábado' }, { label: 'Ônibus', value: '702 · chegada atual 18h35' },
+          { label: 'Último acesso', value: '18h00' }, { label: 'Anoitecer', value: '18h10' },
+          { label: 'Distância', value: 'cidade → portão · 14 km' }, { label: 'Equipamento', value: 'barraca + mochila · sem lanterna forte' },
+          { label: 'Próxima entrada', value: 'sábado · 7h00' }, { label: 'Alternativa', value: 'pousada na cidade' },
+        ],
+        vocab: [
+          { word: 'acesso acompanhado', whatItIs: 'entrada feita com funcionário responsável', here: 'única forma possível depois do horário' },
+          { word: 'anoitecer', whatItIs: 'momento em que o dia fica escuro', here: '18h10, antes da chegada' },
+          { word: 'camping', whatItIs: 'área autorizada para montar barraca', here: 'reserva de duas noites' },
+          { word: 'interdição', whatItIs: 'fechamento temporário de uma estrada ou lugar', here: 'causa do atraso do ônibus' },
+          { word: 'lanterna', whatItIs: 'aparelho portátil que produz luz', here: 'equipamento forte que o visitante não tem' },
+          { word: 'pousada', whatItIs: 'hospedagem pequena com quartos', here: 'alternativa na cidade para esta noite' },
+          { word: 'trilha lateral', whatItIs: 'caminho menor fora da entrada principal', here: 'rota que não deve ser usada no escuro' },
+          { word: 'vigilância', whatItIs: 'presença de equipe que controla e acompanha', here: 'serviço inexistente após as 18h' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6**, **7** e **8** da caixa comum. Dê reserva, atraso e equipamento e negocie o dia seguinte, não uma entrada sem equipe.',
+        exponents: [
+          { purpose: 'Aceitar o próximo dia', form: '`Entendo que hoje não entro; quero manter a entrada de amanhã às …`', effect: 'aceita o limite sem fingir acordo sobre esta noite' },
+          { purpose: 'Dar a chegada', form: '`O ônibus 702 chegará à cidade às …`', effect: 'torna o atraso verificável' },
+          { purpose: 'Explicar a segurança', form: '`Não tenho lanterna forte e não vou usar a trilha lateral no escuro.`', effect: 'recusa uma ação insegura' },
+          { purpose: 'Pedir o próximo passo', form: '`Como confirmo a segunda noite e a entrada de amanhã?`', effect: 'protege o que ainda pode ser usado' },
+          { purpose: 'Pedir uma exceção segura', form: '`Há algum funcionário que possa acompanhar a entrada depois das 18h?`', effect: 'pergunta pela única condição aceitável' },
+          { purpose: 'Recusar a caminhada', form: '`Não posso caminhar 14 km depois do anoitecer.`', effect: 'define um limite físico e temporal' },
+          { purpose: 'Verificar o encerramento', form: '`Hoje fico na cidade e amanhã apresento PG-418 às …, certo?`', effect: 'confirma o resultado sem entrada tardia' },
+        ],
+        success: 'Você informou atraso e reserva, perguntou por acompanhamento e recusou trilha e caminhada noturna. Aceitou não entrar hoje e confirmou pousada, segunda noite e acesso amanhã às 7h.',
+      },
+      {
+        id: 'b', name: 'guarda-parque do atendimento', nameEs: 'quien atiende como guardaparque', headline: 'Não haverá equipe no portão depois das seis, mas a segunda noite pode permanecer ativa',
+        briefing: ['**Confira a reserva e mantenha o limite do acesso.** Use **o senhor/a senhora** com o visitante. **O visitante começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao visitante. Não dê instruções para trilhas ou portões sem vigilância.'],
+        prose: [
+          { label: 'Situação atual', text: 'Um visitante com reserva de camping avisa que chegará depois das 18h. O portão fecha nesse horário, e a equipe noturna já está destinada a uma patrulha interna.' },
+          { label: 'Objetivo', text: 'Confirmar a reserva, recusar entrada sem acompanhamento e preservar a visita do dia seguinte com instruções claras.' },
+          { label: 'O que não é possível', items: ['Deixar o portão aberto ou uma chave escondida.', 'Retirar a equipe da patrulha para buscar uma pessoa na cidade.', 'Autorizar caminhada noturna pela estrada ou trilha lateral.'] },
+          { label: 'Só você sabe', items: ['A reserva PG-418 está paga para sexta e sábado, mas a primeira noite não pode ser transferida.', 'Pode marcar “chegada comunicada” para manter a segunda noite ativa.', 'A recepção reabre às 7h; há uma pousada parceira a 400 m da rodoviária, mas o parque não paga a diária.'] },
+          { label: 'Se vocês não resolverem', text: 'O visitante procura uma entrada perigosa ou o sistema cancela as duas noites por ausência sem aviso.' },
+        ],
+        facts: [
+          { label: 'PG-418', value: 'paga · sexta + sábado' }, { label: 'Portão', value: 'fecha 18h00' },
+          { label: 'Equipe noturna', value: 'patrulha interna · sem busca externa' }, { label: 'Primeira noite', value: 'não transferível' },
+          { label: 'Segunda noite', value: 'pode ficar ativa' }, { label: 'Registro', value: 'chegada comunicada' },
+          { label: 'Recepção', value: 'reabre sábado · 7h00' }, { label: 'Pousada', value: '400 m da rodoviária · custo do visitante' },
+        ],
+        vocab: [
+          { word: 'chegada comunicada', whatItIs: 'registro de que a pessoa avisou sobre o atraso', here: 'marca que preserva a segunda noite' },
+          { word: 'diária', whatItIs: 'preço de uma noite em hospedagem', here: 'custo da pousada que o parque não cobre' },
+          { word: 'equipe noturna', whatItIs: 'funcionários que trabalham depois do horário regular', here: 'grupo ocupado em patrulha interna' },
+          { word: 'entrada principal', whatItIs: 'acesso oficial e controlado de um lugar', here: 'portão que fecha às 18h' },
+          { word: 'noite ativa', whatItIs: 'parte da reserva que continua válida', here: 'sábado no camping' },
+          { word: 'patrulha interna', whatItIs: 'ronda de segurança dentro de uma área', here: 'tarefa que impede buscar o visitante' },
+          { word: 'recepção', whatItIs: 'local que confere reservas e orienta visitantes', here: 'setor que reabre às 7h' },
+          { word: 'transferir a reserva', whatItIs: 'mover uma data paga para outro dia', here: 'ação não permitida para a primeira noite' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6**, **7** e **8** da caixa comum. Explique “chegada comunicada” e separe primeira noite perdida de segunda noite ativa.',
+        exponents: [
+          { purpose: 'Confirmar a reserva', form: '`A reserva … inclui sexta e sábado e está paga.`', effect: 'estabelece o que existe no sistema' },
+          { purpose: 'Dar o limite', form: '`Depois das 18h não haverá funcionário no portão para acompanhar a entrada.`', effect: 'explica por que não há exceção' },
+          { purpose: 'Explicar as noites', form: '`A primeira noite não pode ser transferida, mas a segunda continuará ativa.`', effect: 'separa a perda do que foi preservado' },
+          { purpose: 'Oferecer a alternativa', form: '`Há uma pousada a 400 m da rodoviária, com diária paga pelo visitante.`', effect: 'indica uma opção sem prometer custo' },
+          { purpose: 'Pedir a confirmação', form: '`Posso marcar “chegada comunicada” e esperar o senhor às 7h?`', effect: 'protege a segunda noite com consentimento' },
+          { purpose: 'Recusar o acesso', form: '`Não posso deixar o portão aberto nem autorizar a trilha no escuro.`', effect: 'fecha duas opções inseguras' },
+          { purpose: 'Resumir o resultado', form: '`Hoje não haverá entrada; amanhã a recepção confere PG-418 às …`', effect: 'torna explícito o desacordo e o próximo passo' },
+        ],
+        success: 'Você confirmou PG-418, recusou entrada sem equipe e não deu rota alternativa perigosa. Marcou chegada comunicada, manteve sábado ativo e indicou recepção e pousada sem prometer diária.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, dê o novo horário do ônibus, pergunte por acesso acompanhado e confirme o estado da reserva. Não mostre a tela ao guarda-parque.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Atualização da empresa de ônibus · 16h56**' },
+        { kind: 'table', head: ['Dado', 'Confirmação'], rows: [['Ônibus', '702'], ['Chegada à cidade', '18h35'], ['Causa', 'interdição na estrada'], ['Próximo ônibus de volta', 'sábado · 9h20']] },
+        { kind: 'p', text: 'O atraso é definitivo e não há como chegar antes das 18h. Negocie somente hospedagem e entrada no dia seguinte.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem sem acordo sobre a entrada tardia quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['O ônibus 702 chega à cidade às 18h35, depois do fechamento das 18h.', 'Não haverá funcionário para acompanhar a entrada e ninguém usará estrada ou trilha no escuro.', 'A primeira noite não será transferida.', 'O parque registrará “chegada comunicada” e manterá a segunda noite ativa.', 'O visitante ficará em uma pousada por conta própria e apresentará PG-418 amanhã às 7h.'] },
+    ],
+    debrief: ['¿Qué condición habría permitido una entrada tardía segura?', '¿Qué parte de la reserva se perdió y cuál se conservó?', 'Repitan en portugués llegada, límites y próximo acceso sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'o ônibus teve atraso y o visitante não pôde chegar reconstruyen el problema.' },
+      { slug: 'ha-faz-tempo-a2', level: 'a2', title: 'Há y faz en expresiones de tiempo en portugués A2', rationale: 'há 14 km y faz duas horas situam distancia y duración.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'chegará, continuará y reabrirá organizan el siguiente día.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderia entrar y seria possível formulan la excepción inexistente.' },
+      { slug: 'verbos-modais-a2', level: 'a2', title: 'Verbos modales en portugués A2', rationale: 'pode manter, precisa voltar y não deve caminhar expresan opción y límite.' },
+      { slug: 'subjuntivo-presente-a2', level: 'a2', title: 'Presente de subjuntivo en portugués A2', rationale: 'é necessário que haja funcionário y antes que anoiteça expresan condición.' },
+    ],
+  },
+]

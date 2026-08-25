@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · casa/comunidade 11. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_3: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-package-went-to-wrong-tower', slug: 'package-went-to-wrong-tower', sequence: 11,
+    language: 'portugues', level: 'a2', title: 'El paquete fue a la torre equivocada', titleTarget: 'A encomenda foi para a torre errada',
+    setting: 'Terça-feira, às 18h05, na portaria de um condomínio em Fortaleza', settingEs: 'La portería de un condominio en Fortaleza, el martes a las 6:05 p. m.',
+    speechActs: ['pedir-aclaracion', 'dar-mala-noticia', 'proponer-alternativa'], power: 'igual', initiator: 'b', outcome: 'aplazado', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#11',
+    roles: [
+      {
+        id: 'a', name: 'porteiro da torre A', nameEs: 'quien atiende la portería de la torre A', headline: 'O código aparece na torre C, mas ninguém confirmou ainda se a caixa continua lá',
+        briefing: ['**Diga o que o registro prova e o que ainda falta verificar.** Use **o senhor/a senhora** com o morador. **O morador começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao morador. Não revele nomes, apartamentos ou telefones de moradores da torre C.'],
+        prose: [
+          { label: 'Situação atual', text: 'Um morador da torre A procura uma encomenda marcada como entregue. Sua portaria não recebeu a caixa, mas o código aparece no livro digital da torre C às 14h08.' },
+          { label: 'Objetivo', text: 'Conferir código, destinatário e torre, pedir uma busca física na torre C e definir resposta e transferência sem expor dados de terceiros.' },
+          { label: 'O que não é possível', items: ['Declarar a caixa encontrada apenas porque o código está no sistema.', 'Dar ao morador nome ou apartamento de quem assinou na torre C.', 'Abrir outra portaria ou armário sem o funcionário responsável.'] },
+          { label: 'Só você sabe', items: ['O livro digital mostra o código BR-7719 na torre C, mas a assinatura está ilegível.', 'O porteiro da torre C faz a conferência física às 18h30 e pode responder até 18h40.', 'Se a caixa lacrada for localizada, um funcionário poderá trazê-la à torre A até 19h.'] },
+          { label: 'Se vocês não resolverem', text: 'O morador não sabe onde está a encomenda e a equipe pode transferir uma caixa errada ou revelar informações privadas.' },
+        ],
+        facts: [
+          { label: 'Morador', value: 'torre A · apartamento 703' }, { label: 'Código', value: 'BR-7719' },
+          { label: 'Registro', value: 'torre C · 14h08' }, { label: 'Assinatura', value: 'ilegível' },
+          { label: 'Conferência física', value: '18h30' }, { label: 'Resposta', value: 'até 18h40' },
+          { label: 'Transferência possível', value: 'caixa lacrada · até 19h00' }, { label: 'Dados de terceiros', value: 'não compartilháveis' },
+        ],
+        vocab: [
+          { word: 'assinatura ilegível', whatItIs: 'nome escrito que não pode ser entendido', here: 'dado que não identifica quem recebeu' },
+          { word: 'caixa lacrada', whatItIs: 'embalagem fechada sem sinais de abertura', here: 'condição para transferir a encomenda' },
+          { word: 'código de rastreio', whatItIs: 'sequência que identifica uma entrega', here: 'BR-7719 no livro digital' },
+          { word: 'conferência física', whatItIs: 'busca feita olhando os objetos no local', here: 'ação necessária na torre C' },
+          { word: 'destinatário', whatItIs: 'pessoa para quem uma encomenda foi enviada', here: 'morador da torre A, apartamento 703' },
+          { word: 'livro digital', whatItIs: 'registro eletrônico de entradas e entregas', here: 'fonte que mostra torre e horário' },
+          { word: 'transferência', whatItIs: 'movimento de um objeto de um local para outro', here: 'passagem da torre C para a A' },
+          { word: 'torre', whatItIs: 'bloco vertical de apartamentos de um condomínio', here: 'A é o destino e C é o registro' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Diferencie registro, localização física e transferência.',
+        exponents: [
+          { purpose: 'Confirmar os dados', form: '`O código é … e o destino correto é torre …, apartamento …`', effect: 'evita buscar uma encomenda parecida' },
+          { purpose: 'Dar a notícia', form: '`A torre A não recebeu a caixa; o sistema mostra entrada na torre C.`', effect: 'comunica as duas evidências' },
+          { purpose: 'Explicar o limite', form: '`Não posso informar quem assinou nem abrir a portaria da outra torre.`', effect: 'protege dados e acesso' },
+          { purpose: 'Pedir a conferência', form: '`Vou pedir que a torre C procure fisicamente o código …`', effect: 'transforma o registro em uma ação' },
+          { purpose: 'Prometer a resposta', form: '`Dou uma resposta até …, mesmo que a caixa não seja encontrada.`', effect: 'define prazo sem garantir resultado' },
+          { purpose: 'Propor a transferência', form: '`Se a caixa estiver lacrada e correta, podemos trazê-la até …`', effect: 'condiciona a movimentação à verificação' },
+          { purpose: 'Resumir a pendência', form: '`O registro está confirmado; localização e transferência ficam pendentes até …`', effect: 'separa prova e resultado' },
+        ],
+        success: 'Você confirmou código e torre, protegeu dados de terceiros e pediu busca física. Não declarou a caixa encontrada e assumiu resposta às 18h40 e transferência apenas se o volume estiver lacrado.',
+      },
+      {
+        id: 'b', name: 'morador que espera a encomenda', nameEs: 'quien espera el paquete', headline: 'A foto da entrega mostra uma parede vermelha da torre C, e o carregador é necessário amanhã cedo',
+        briefing: ['**Apresente código e imagem sem acusar outro morador.** Use **o senhor/a senhora** com o porteiro. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao porteiro. Não vá bater em apartamentos da torre C: peça uma busca pela equipe responsável.'],
+        prose: [
+          { label: 'Situação atual', text: 'O aplicativo da transportadora diz que sua encomenda foi entregue às 14h08. Você mora na torre A, mas a portaria não tem a caixa.' },
+          { label: 'Objetivo', text: 'Localizar o volume pelo código e pela foto, receber uma resposta hoje e saber como a caixa chegará à torre correta.' },
+          { label: 'O que não é possível', items: ['Entrar na torre C sem autorização.', 'Esperar sem horário de resposta: amanhã você trabalha às 7h.', 'Aceitar uma caixa aberta ou com outro nome.'] },
+          { label: 'Só você sabe', items: ['A foto da transportadora mostra uma parede vermelha; a entrada da torre C é a única com essa cor.', 'A etiqueta deve dizer “Daniel Rocha · A-703” e o pacote mede cerca de 30 × 20 cm.', 'Dentro há um carregador de notebook necessário para uma viagem de trabalho amanhã às 7h.'] },
+          { label: 'Se vocês não resolverem', text: 'Você viaja sem o carregador ou procura por conta própria em outra torre, invadindo a privacidade dos moradores.' },
+        ],
+        facts: [
+          { label: 'Código', value: 'BR-7719' }, { label: 'Destinatário', value: 'Daniel Rocha · A-703' },
+          { label: 'Notificação', value: 'entregue · 14h08' }, { label: 'Foto', value: 'parede vermelha · porta de vidro' },
+          { label: 'Tamanho', value: 'aprox. 30 × 20 cm' }, { label: 'Conteúdo', value: 'carregador de notebook' },
+          { label: 'Viagem', value: 'amanhã · saída 7h00' }, { label: 'Condição aceita', value: 'lacrada + etiqueta correta' },
+        ],
+        vocab: [
+          { word: 'aplicativo da transportadora', whatItIs: 'programa que mostra o caminho de uma entrega', here: 'fonte da hora e da foto' },
+          { word: 'embalagem aberta', whatItIs: 'caixa cujo fechamento foi rompido', here: 'condição que precisa ser registrada' },
+          { word: 'encomenda', whatItIs: 'produto enviado para uma pessoa', here: 'caixa com carregador' },
+          { word: 'etiqueta de entrega', whatItIs: 'papel com destinatário e endereço', here: 'prova de Daniel Rocha, A-703' },
+          { word: 'localizar', whatItIs: 'descobrir o lugar onde algo está', here: 'objetivo da busca na torre C' },
+          { word: 'notificação', whatItIs: 'aviso enviado por um aplicativo', here: 'mensagem das 14h08' },
+          { word: 'parede vermelha', whatItIs: 'característica visual de um lugar', here: 'pista que aponta para a torre C' },
+          { word: 'volume', whatItIs: 'caixa ou pacote tratado como uma unidade', here: 'objeto de aproximadamente 30 × 20 cm' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Dê código, etiqueta e pista visual; peça prazo, não dados de outros moradores.',
+        exponents: [
+          { purpose: 'Aceitar a espera', form: '`Posso esperar até … se receber uma resposta nesse horário.`', effect: 'transforma espera em compromisso verificável' },
+          { purpose: 'Dar a pista visual', form: '`A foto mostra a parede vermelha e a porta de vidro da torre C.`', effect: 'ajuda a localizar sem acusar uma pessoa' },
+          { purpose: 'Explicar a urgência', form: '`Preciso do carregador porque viajo amanhã às …`', effect: 'dá um motivo real para o prazo' },
+          { purpose: 'Identificar a caixa', form: '`A etiqueta deve dizer Daniel Rocha, A-703, e o código é …`', effect: 'evita pegar outro volume' },
+          { purpose: 'Pedir a busca', form: '`O senhor pode pedir uma conferência física na torre C?`', effect: 'solicita a ação pelo canal correto' },
+          { purpose: 'Recusar dados privados', form: '`Não preciso do nome de quem assinou; preciso saber se a caixa está lá.`', effect: 'mantém o foco sem invadir privacidade' },
+          { purpose: 'Verificar o próximo passo', form: '`Se encontrarem a caixa lacrada, quem a traz e até que horas?`', effect: 'confirma condição, responsável e prazo' },
+        ],
+        success: 'Você apresentou código, etiqueta e foto sem procurar moradores. Aceitou aguardar a busca até 18h40 e pediu transferência apenas da caixa lacrada e correta.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, dê código, destinatário e horário e pergunte qual torre aparece no registro. Não mostre a tela ao porteiro.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Atualização da transportadora · 18h11**' },
+        { kind: 'table', head: ['Dado', 'Imagem'], rows: [['Código', 'BR-7719'], ['Etiqueta visível', 'Daniel Rocha · A-703'], ['Fundo', 'parede vermelha'], ['Estado', 'caixa aparentemente lacrada']] },
+        { kind: 'p', text: 'A nova foto reforça a pista da torre C, mas não prova que a caixa ainda está no local. Use-a para orientar a conferência física.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem com a decisão aplazada quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['O código BR-7719 e a etiqueta Daniel Rocha, A-703.', 'O registro e a foto que apontam para a torre C.', 'A busca física feita pelo porteiro da torre C às 18h30.', 'A resposta ao morador até 18h40, mesmo sem localização.', 'A transferência até 19h apenas se a caixa estiver lacrada e correta.'] },
+    ],
+    debrief: ['¿Qué evidencia orientó la búsqueda y qué seguía sin probar?', '¿Cómo se protegieron los datos de otras personas?', 'Repitan en portugués código, torre, condición y horarios sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'a encomenda foi para outra torre y o morador viu a foto reconstruyen el caso.' },
+      { slug: 'voz-passiva-a2', level: 'a2', title: 'Voz pasiva en portugués A2', rationale: 'foi entregue y será transferida distinguen registro y acción futura.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vamos procurá-la y posso trazê-la retoman la caja.' },
+      { slug: 'pronomes-relativos-a2', level: 'a2', title: 'Pronombres relativos en portugués A2', rationale: 'a caixa que aparece y a torre onde entrou identifican objeto y lugar.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'o porteiro verificará y dará resposta fijan responsables.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'mas, se y mesmo que conectan evidencia, condición y promesa.' },
+    ],
+  },
+]

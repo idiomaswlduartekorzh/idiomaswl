@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · planos/problemas 17. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_4B: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-generator-cannot-power-two-freezers', slug: 'generator-cannot-power-two-freezers', sequence: 17,
+    language: 'portugues', level: 'a2', title: 'El generador no enciende los dos congeladores', titleTarget: 'O gerador não liga os dois freezers',
+    setting: 'Sexta-feira, às 15h30, na montagem de uma festa comunitária em Manaus', settingEs: 'El montaje de una fiesta comunitaria en Manaos, el viernes a las 3:30 p. m.',
+    speechActs: ['poner-limite', 'negociar', 'conceder-con-condicion'], power: 'a>b', initiator: 'b', outcome: 'acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#17',
+    roles: [
+      {
+        id: 'a', name: 'coordenadora da festa', nameEs: 'quien coordina la fiesta', headline: 'O sorvete precisa do freezer A, mas as bebidas podem passar para caixas térmicas com gelo',
+        briefing: ['**Priorize produtos e atribua cada tarefa.** Use **você** com o fornecedor. **O fornecedor começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao fornecedor. Não autorize ligar os dois freezers ao mesmo tempo.'],
+        prose: [
+          { label: 'Situação atual', text: 'A festa começa às 17h. O gerador alugado mantém luzes e um freezer, mas desliga quando os freezers A e B são conectados juntos.' },
+          { label: 'Objetivo', text: 'Proteger os produtos mais sensíveis, manter as bebidas frias por outro meio e confirmar quem liga, confere e repõe cada recurso.' },
+          { label: 'O que não é possível', items: ['Deixar sorvete fora do freezer durante a festa.', 'Desligar as luzes da área de alimentação.', 'Testar novamente os dois freezers sem autorização técnica.'] },
+          { label: 'Só você sabe', items: ['O freezer A contém 180 sorvetes e precisa ficar ligado continuamente.', 'O freezer B contém apenas latas e garrafas que cabem em seis caixas térmicas.', 'Uma equipe pode buscar 60 kg de gelo às 16h e repor 20 kg às 19h30.'] },
+          { label: 'Se vocês não resolverem', text: 'O gerador continua desligando, o sorvete perde qualidade e a área de alimentação fica sem luz.' },
+        ],
+        facts: [
+          { label: 'Festa', value: '17h00–22h00' }, { label: 'Gerador', value: 'luzes + 1 freezer' },
+          { label: 'Freezer A', value: '180 sorvetes · prioridade' }, { label: 'Freezer B', value: 'latas + garrafas' },
+          { label: 'Caixas térmicas', value: '6 · disponíveis' }, { label: 'Gelo inicial', value: '60 kg · 16h00' },
+          { label: 'Reposição', value: '20 kg · 19h30' }, { label: 'Equipe', value: '2 voluntários disponíveis' },
+        ],
+        vocab: [
+          { word: 'carga', whatItIs: 'quantidade de energia pedida pelos equipamentos', here: 'limite que impede ligar dois freezers' },
+          { word: 'caixa térmica', whatItIs: 'recipiente que conserva produtos frios', here: 'destino das bebidas' },
+          { word: 'desligar sozinho', whatItIs: 'parar automaticamente por proteção', here: 'reação do gerador com excesso de carga' },
+          { word: 'freezer', whatItIs: 'equipamento que mantém produtos congelados', here: 'A guarda sorvete e B guarda bebidas' },
+          { word: 'gerador', whatItIs: 'máquina que produz energia temporária', here: 'fonte das luzes e de um freezer' },
+          { word: 'prioridade', whatItIs: 'o que precisa ser atendido primeiro', here: 'freezer A com sorvete' },
+          { word: 'repor gelo', whatItIs: 'acrescentar gelo novo depois de algum tempo', here: 'ação marcada às 19h30' },
+          { word: 'voluntário', whatItIs: 'pessoa que ajuda sem ser funcionária do evento', here: 'quem busca e distribui o gelo' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Explique qual freezer é prioritário e transforme bebidas, gelo e reposição em tarefas.',
+        exponents: [
+          { purpose: 'Conceder com uma condição', form: '`Mantemos o gerador se ele alimentar luzes e somente o freezer A.`', effect: 'aceita o equipamento dentro do limite' },
+          { purpose: 'Dar a prioridade', form: '`O freezer A precisa ficar ligado porque contém … sorvetes.`', effect: 'justifica a escolha com quantidade e produto' },
+          { purpose: 'Distribuir as tarefas', form: '`Dois voluntários buscam o gelo, e você verifica o gerador às …`', effect: 'atribui responsáveis e horário' },
+          { purpose: 'Negociar a alternativa', form: '`Passamos as bebidas para seis caixas se houver … kg de gelo.`', effect: 'liga a mudança a recurso verificável' },
+          { purpose: 'Pedir o limite técnico', form: '`O que o gerador pode manter ligado com segurança?`', effect: 'pede capacidade sem adivinhar' },
+          { purpose: 'Recusar o novo teste', form: '`Não vamos ligar os dois freezers outra vez.`', effect: 'evita repetir a falha' },
+          { purpose: 'Resumir o plano', form: '`A fica no gerador; B é esvaziado; o gelo chega às … e volta às …`', effect: 'confirma equipamento, ação e horários' },
+        ],
+        success: 'Você priorizou o freezer A, proibiu novo teste duplo e organizou seis caixas térmicas. Confirmou gelo, reposição, voluntários e verificação do gerador.',
+      },
+      {
+        id: 'b', name: 'fornecedor do gerador', nameEs: 'quien suministra el generador', headline: 'O equipamento suporta luzes e um freezer, e você pode monitorá-lo durante as primeiras horas',
+        briefing: ['**Dê o limite técnico em linguagem simples.** Use **você** com a coordenadora. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre à coordenadora. Não retire a proteção nem sugira ligar os dois equipamentos novamente.'],
+        prose: [
+          { label: 'Situação atual', text: 'O gerador alugado desligou duas vezes quando os dois freezers foram conectados. Com luzes e apenas um freezer, ele funciona normalmente.' },
+          { label: 'Objetivo', text: 'Explicar a capacidade, identificar o equipamento prioritário e acompanhar o funcionamento sem modificar a proteção.' },
+          { label: 'O que não é possível', items: ['Aumentar a capacidade do gerador no local.', 'Retirar a proteção automática.', 'Trocar por um gerador maior antes das 20h.'] },
+          { label: 'Só você sabe', items: ['O contrato cobre luzes e um freezer médio, não dois.', 'Pode ficar no evento até 18h30 e verificar o painel às 16h30, 17h30 e 18h30.', 'Se funcionar sem alerta até 18h30, a equipe pode seguir a lista de conferência a cada hora.'] },
+          { label: 'Se vocês não resolverem', text: 'O equipamento desliga novamente ou a equipe tenta alterar uma proteção necessária.' },
+        ],
+        facts: [
+          { label: 'Contrato', value: 'luzes + 1 freezer médio' }, { label: 'Falhas', value: '2 desligamentos com A + B' },
+          { label: 'Funcionamento atual', value: 'normal com luzes + A' }, { label: 'Troca maior', value: 'somente após 20h' },
+          { label: 'Sua presença', value: 'até 18h30' }, { label: 'Verificações', value: '16h30 · 17h30 · 18h30' },
+          { label: 'Depois', value: 'lista de conferência a cada hora' }, { label: 'Proteção', value: 'automática · não removível' },
+        ],
+        vocab: [
+          { word: 'alerta do painel', whatItIs: 'aviso visível no controle do equipamento', here: 'sinal que precisa ser conferido' },
+          { word: 'capacidade', whatItIs: 'quantidade máxima que algo consegue atender', here: 'luzes e um freezer' },
+          { word: 'contrato de aluguel', whatItIs: 'acordo sobre equipamento, tempo e uso', here: 'documento que define a carga' },
+          { word: 'lista de conferência', whatItIs: 'sequência de itens que devem ser verificados', here: 'controle usado após 18h30' },
+          { word: 'monitorar', whatItIs: 'observar regularmente se algo funciona', here: 'ação em três horários' },
+          { word: 'painel', whatItIs: 'parte com controles e informações da máquina', here: 'lugar onde aparece o alerta' },
+          { word: 'proteção automática', whatItIs: 'sistema que desliga para evitar problema', here: 'função que não pode ser retirada' },
+          { word: 'troca de equipamento', whatItIs: 'substituição de uma máquina por outra', here: 'opção impossível antes das 20h' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **3** `[jargon]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Traduza “capacidade” em equipamentos concretos e entregue uma rotina de conferência.',
+        exponents: [
+          { purpose: 'Aceitar a prioridade', form: '`Podemos manter o freezer A se o B ficar desligado.`', effect: 'confirma a configuração permitida' },
+          { purpose: 'Dar o limite', form: '`Este gerador suporta as luzes e um freezer médio, não dois.`', effect: 'explica a capacidade em termos simples' },
+          { purpose: 'Explicar a proteção', form: '`Ele desliga sozinho quando a carga passa do limite.`', effect: 'mostra que a falha é uma proteção' },
+          { purpose: 'Oferecer monitoramento', form: '`Vou conferir o painel às …, … e …`', effect: 'assume três verificações' },
+          { purpose: 'Pedir a escolha', form: '`Qual freezer contém o produto que precisa ficar congelado?`', effect: 'usa a prioridade do conteúdo' },
+          { purpose: 'Recusar a alteração', form: '`Não posso retirar a proteção nem aumentar a capacidade aqui.`', effect: 'impede soluções inseguras' },
+          { purpose: 'Verificar a continuidade', form: '`Depois das 18h30, alguém seguirá a lista a cada hora, certo?`', effect: 'transfere o monitoramento com clareza' },
+        ],
+        success: 'Você explicou o contrato e a proteção, manteve apenas o freezer A e fez três verificações. Entregou uma rotina horária sem alterar nem ampliar o gerador.',
+      },
+    ],
+    card: {
+      toRole: 'b', afterTurn: 5,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 5º turno global da conversa.** Antes, explique a capacidade, pergunte qual conteúdo é prioritário e diga até quando pode monitorar. Não mostre a tela à coordenadora.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Confirmação do fornecedor de gelo · 15h37**' },
+        { kind: 'table', head: ['Entrega', 'Confirmação'], rows: [['Gelo inicial', '60 kg · 16h00'], ['Reposição', '20 kg · 19h30'], ['Caixas térmicas', '6'], ['Responsáveis', '2 voluntários']] },
+        { kind: 'p', text: 'As bebidas podem sair do freezer B. Confirme com a coordenadora quem recebe, distribui e repõe o gelo.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem quando as duas pessoas puderem repetir estes cinco elementos:**' },
+      { kind: 'ol', items: ['O gerador alimentará as luzes e somente o freezer A com 180 sorvetes.', 'O freezer B ficará desligado e as bebidas irão para seis caixas térmicas.', 'Dois voluntários receberão 60 kg de gelo às 16h.', 'A reposição de 20 kg ocorrerá às 19h30.', 'O fornecedor verifica o painel até 18h30; depois a equipe usa a lista a cada hora.'] },
+    ],
+    debrief: ['¿Qué criterio decidió cuál congelador permanecía conectado?', '¿Cómo se dividieron hielo y monitoreo?', 'Repitan en portugués equipos, cantidades, responsables y horarios sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'o gerador alimentará y os voluntários receberão organizan el plan.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vamos desligá-lo y posso monitorá-lo retoman freezer y generador.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderia funcionar y seria melhor permiten evaluar alternativas.' },
+      { slug: 'pronomes-relativos-a2', level: 'a2', title: 'Pronombres relativos en portugués A2', rationale: 'o freezer que contém sorvete identifica la prioridad.' },
+      { slug: 'verbos-modais-a2', level: 'a2', title: 'Verbos modales en portugués A2', rationale: 'pode manter, precisa ficar y não deve ligar expresan capacidad y límite.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'se, enquanto y depois conectan condición y secuencia.' },
+    ],
+  },
+]
