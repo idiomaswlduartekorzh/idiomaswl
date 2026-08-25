@@ -1,6 +1,6 @@
 # SAT Set 5 · Módulo 2 estándar — matriz editorial
 
-Fecha: 25 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 22/27**.
+Fecha: 25 de agosto de 2026. Estado: **CONTENIDO 27/27 · AUDITORÍA EDITORIAL APTO · NO PUBLICABLE**.
 
 Esta ruta sirve a estudiantes cuyo M1 queda en banda estándar. Reduce la concentración de
 ítems difíciles, no la calidad de la evidencia ni la vitalidad de los distractores. Tema,
