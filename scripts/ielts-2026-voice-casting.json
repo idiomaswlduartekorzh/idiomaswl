@@ -1,0 +1,113 @@
+{
+  "manifest_sha256": "61f9631c2cf3ed55cbf9e9d0d24b5c140ce20cdb2557306fb77fa6acca0c2451",
+  "model_id": "eleven_flash_v2_5",
+  "credits_per_character": 0.5,
+  "api_price_usd_per_1000_characters": 0.05,
+  "approval": "pending_owner_approval",
+  "target": {
+    "intermediate_output_format": "mp3_44100_128",
+    "final_sample_rate_hz": 44100,
+    "final_channels": 1,
+    "final_bitrate": "64k",
+    "integrated_loudness_lufs": -18,
+    "max_true_peak_dbfs": -1.5,
+    "silence_between_conversation_turns_seconds": 0.35,
+    "silence_between_parts_seconds": 7
+  },
+  "voice_settings": {
+    "stability": 0.55,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true
+  },
+  "voices": {
+    "british": {
+      "woman": {
+        "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+        "voice_name": "Alice - Clear, Engaging Educator",
+        "credit_multiplier": 1
+      },
+      "man": {
+        "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+        "voice_name": "George - Warm, Captivating Storyteller",
+        "credit_multiplier": 1
+      },
+      "lecturer": {
+        "voice_id": "onwK4e9ZLuTAKqWW03F9",
+        "voice_name": "Daniel - Steady Broadcaster",
+        "credit_multiplier": 1
+      }
+    },
+    "north-american": {
+      "woman": {
+        "voice_id": "EXAVITQu4vr4xnSDxMaL",
+        "voice_name": "Sarah - Mature, Reassuring, Confident",
+        "credit_multiplier": 1
+      },
+      "man": {
+        "voice_id": "bIHbv24MWmeRgasZH58o",
+        "voice_name": "Will - Relaxed Optimist",
+        "credit_multiplier": 1
+      },
+      "lecturer": {
+        "voice_id": "XrExE9yKIg1WjnnlVkGX",
+        "voice_name": "Matilda - Knowledgable, Professional",
+        "credit_multiplier": 1
+      }
+    },
+    "australian": {
+      "woman": {
+        "voice_id": "tyepWYJJwJM9TTFIg5U7",
+        "voice_name": "Clara - Australian Professional Female",
+        "credit_multiplier": 1
+      },
+      "man": {
+        "voice_id": "pDoe9k94N27tidKG2ssb",
+        "voice_name": "David V - An Expressive Australian",
+        "credit_multiplier": 1
+      },
+      "lecturer": {
+        "voice_id": "2pwMUCWPsm9t6AwXYaCj",
+        "voice_name": "Dave - Australian Educational Male",
+        "credit_multiplier": 1
+      }
+    },
+    "new-zealand": {
+      "woman": {
+        "voice_id": "7ceZgj78jCCeAW93ItNk",
+        "voice_name": "Jessie - Friendly Educator",
+        "credit_multiplier": 1
+      },
+      "man": {
+        "voice_id": "lRhPoiLGmkYN4Rw9YiN4",
+        "voice_name": "Reuben - Friendly Phone and Business Voice",
+        "credit_multiplier": 1
+      },
+      "lecturer": {
+        "voice_id": "6J1lB05oyDOLPaxMFyS9",
+        "voice_name": "Liam Bainbridge - Smooth and Warm",
+        "credit_multiplier": 1
+      }
+    }
+  },
+  "role_voice": {
+    "guide": "woman",
+    "lecturer": "lecturer",
+    "participant-man": "man",
+    "participant-woman": "woman",
+    "service-staff": "woman",
+    "speaker": "man",
+    "student-man": "man",
+    "student-woman": "woman",
+    "tutor": "lecturer"
+  },
+  "account_snapshot": {
+    "captured_at": "2026-08-25",
+    "tier": "creator",
+    "character_count": 109979,
+    "character_limit": 121031,
+    "available_credits": 11052,
+    "next_reset_local": "2026-09-05 18:13:51 -05",
+    "sufficient_for_full_batch": false
+  }
+}

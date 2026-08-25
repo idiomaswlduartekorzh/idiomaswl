@@ -60,6 +60,33 @@ test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 word
   }
 });
 
+test('all 17 Listening papers preserve authored evidence and pass the full-density gate', async () => {
+  const fingerprints = new Set();
+  for (let setNumber = 4; setNumber <= 20; setNumber += 1) {
+    const { default: authoredMock } = await import(`../src/data/mocks/ielts-set-${setNumber}.ts`);
+    const mock = withIeltsAcademic2026Blueprint(authoredMock);
+    const authored = authoredMock.sections.filter(section => section.skill === 'listening');
+    const listening = mock.sections.filter(section => section.skill === 'listening');
+    assert.equal(listening.length, 4, `${mock.id} Listening parts`);
+    assert.ok(listening.reduce((total, section) => total + words(section.transcript), 0) >= 2200, `${mock.id} Listening density`);
+    for (const [index, section] of listening.entries()) {
+      const partWords = words(section.transcript);
+      assert.ok(partWords >= 540 && partWords <= 620, `${mock.id} Part ${section.part} has ${partWords} words`);
+      for (const block of authored[index].transcript.trim().split(/\n{2,}/)) {
+        assert.ok(section.transcript.includes(block.trim()), `${mock.id} Part ${section.part} must preserve authored block`);
+      }
+      if (section.part === 1 || section.part === 3) {
+        for (const block of section.transcript.trim().split(/\n{2,}/)) {
+          assert.match(block, /^[A-Z][A-Z -]{1,30}:\s+/, `${mock.id} Part ${section.part} speaker label`);
+        }
+      }
+      const fingerprint = section.transcript.toLowerCase().replace(/\s+/g, ' ').trim();
+      assert.equal(fingerprints.has(fingerprint), false, `${mock.id} Part ${section.part} duplicates another transcript`);
+      fingerprints.add(fingerprint);
+    }
+  }
+});
+
 test('Sets 4–20 are directly accessible from the public IELTS catalog', () => {
   const catalogSource = readFileSync(new URL('../src/data/exams.ts', import.meta.url), 'utf8');
   for (let setNumber = 4; setNumber <= 20; setNumber += 1) {

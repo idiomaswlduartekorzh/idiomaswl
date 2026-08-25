@@ -30,34 +30,36 @@ pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 
 | Set | Resp. L/R | Palabras Listening | Palabras Reading | MP3 integral | Claves cliente |
 |---:|---:|---:|---:|---|---:|
-| 4 | 40/40 | 1.398 | 2.184 | REEMPLAZAR · 24,3 min | 0 |
-| 5 | 40/40 | 1.348 | 2.180 | REEMPLAZAR · 24,0 min | 0 |
-| 6 | 40/40 | 1.349 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
-| 7 | 40/40 | 1.332 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
-| 8 | 40/40 | 1.357 | 2.165 | REEMPLAZAR · 24,0 min | 0 |
-| 9 | 40/40 | 1.343 | 2.187 | REEMPLAZAR · 24,0 min | 0 |
-| 10 | 40/40 | 1.358 | 2.171 | REEMPLAZAR · 24,0 min | 0 |
-| 11 | 40/40 | 1.305 | 2.151 | REEMPLAZAR · 24,0 min | 0 |
-| 12 | 40/40 | 1.299 | 2.150 | REEMPLAZAR · 24,0 min | 0 |
-| 13 | 40/40 | 1.302 | 2.155 | FALTA | 0 |
-| 14 | 40/40 | 1.290 | 2.179 | FALTA | 0 |
-| 15 | 40/40 | 1.303 | 2.150 | FALTA | 0 |
-| 16 | 40/40 | 1.329 | 2.154 | FALTA | 0 |
-| 17 | 40/40 | 1.360 | 2.151 | FALTA | 0 |
-| 18 | 40/40 | 1.354 | 2.172 | FALTA | 0 |
-| 19 | 40/40 | 1.383 | 2.151 | FALTA | 0 |
-| 20 | 40/40 | 1.297 | 2.192 | FALTA | 0 |
+| 4 | 40/40 | 2.322 | 2.184 | REEMPLAZAR · 24,3 min | 0 |
+| 5 | 40/40 | 2.305 | 2.180 | REEMPLAZAR · 24,0 min | 0 |
+| 6 | 40/40 | 2.323 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
+| 7 | 40/40 | 2.344 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
+| 8 | 40/40 | 2.387 | 2.165 | REEMPLAZAR · 24,0 min | 0 |
+| 9 | 40/40 | 2.412 | 2.187 | REEMPLAZAR · 24,0 min | 0 |
+| 10 | 40/40 | 2.335 | 2.171 | REEMPLAZAR · 24,0 min | 0 |
+| 11 | 40/40 | 2.384 | 2.151 | REEMPLAZAR · 24,0 min | 0 |
+| 12 | 40/40 | 2.329 | 2.150 | REEMPLAZAR · 24,0 min | 0 |
+| 13 | 40/40 | 2.314 | 2.155 | FALTA | 0 |
+| 14 | 40/40 | 2.381 | 2.179 | FALTA | 0 |
+| 15 | 40/40 | 2.315 | 2.150 | FALTA | 0 |
+| 16 | 40/40 | 2.306 | 2.154 | FALTA | 0 |
+| 17 | 40/40 | 2.316 | 2.151 | FALTA | 0 |
+| 18 | 40/40 | 2.331 | 2.172 | FALTA | 0 |
+| 19 | 40/40 | 2.340 | 2.151 | FALTA | 0 |
+| 20 | 40/40 | 2.274 | 2.192 | FALTA | 0 |
 
 Los 17 Readings ya quedan dentro del rango oficial de 2.150–2.750 palabras. En cambio,
 los tapescripts oficiales de ocho familias de muestra suman aproximadamente 3.168
 palabras para 44 posiciones de respuesta, cerca de 72 por respuesta. IELTS no publica
 un mínimo de palabras; el auditor usa deliberadamente un gate WeLearn más conservador
-de 55 por respuesta, 2.200 por set. Los guiones actuales sólo tienen 1.290–1.398.
+de 55 por respuesta, 2.200 por set. La expansión editorial local conserva literalmente
+cada bloque original y deja los guiones en 2.274–2.412 palabras; cada parte queda entre
+540 y 620 palabras.
 
 Los nueve MP3 existentes duran 24,0–24,3 minutos y contienen pausas extensas; quedan
 marcados para reemplazo por una simulación de 27–33 minutos. Los ocho MP3 13–20 no
-existen. No basta con sintetizar esos ocho guiones cortos: primero deben ampliarse los
-17 guiones y después reemplazarse nueve audios y generarse ocho.
+existen. Los 17 guiones ya superan el gate; ahora deben reemplazarse nueve audios y
+generarse ocho con la nueva fuente.
 
 ## Hallazgos editoriales
 
@@ -103,6 +105,9 @@ existen. No basta con sintetizar esos ocho guiones cortos: primero deben ampliar
   cliente y el servidor puntúa exactamente el mismo orden privado.
 - Catorce distractores se revisaron editorialmente para retirar la pista de longitud sin
   debilitar su plausibilidad.
+- Los 68 tapescripts se ampliaron localmente con discurso original de WeLearn: contexto,
+  clarificación, recap, cautela académica y autocorrección. Ningún texto ni clave se envió
+  a un proveedor externo, y todos los bloques fuente se preservan de forma literal.
 - El intento persiste borradores sólo después de hidratar el navegador; una sesión guardada
   ya no puede alterar ni ser sobrescrita durante el primer render del servidor.
 - El resultado privado separa con claridad bandas parciales, `Overall pendiente` y resultado
@@ -130,20 +135,24 @@ eliminar la antigua deriva en la navegación compartida.
 
 ## Gates pendientes para cerrar el dictamen
 
-1. Expandir editorialmente los 17 guiones Listening hasta al menos 2.200 palabras por
-   set, añadiendo contexto, autocorrecciones y distractores naturales alrededor de las
-   40 evidencias; faltan como mínimo 14.693 palabras.
-2. Aprobar reparto de voces y acentos British, Australian, New Zealand y North American,
-   proveedor, modelo y techo de gasto. No se ha llamado ninguna API de voz.
-3. Reemplazar los nueve MP3 4–12 y generar los ocho MP3 13–20 con duración 27–33 min,
+1. Aprobar reparto de voces y acentos British, Australian, New Zealand y North American,
+   proveedor, modelo y techo de gasto. El casting propuesto cubre 32 perfiles con 12 voces
+   de multiplicador 1; sigue marcado `pending_owner_approval`. No se ha llamado ninguna API
+   de generación de voz.
+2. Reemplazar los nueve MP3 4–12 y generar los ocho MP3 13–20 con duración 27–33 min,
    reproducción única, mono 44,1 kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
-4. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
-   tamaño, hash, duración, loudness, pico y silencios. El plan mínimo proyecta 207.647
-   caracteres y USD 10,3824 antes de impuestos y reintentos; no es una autorización.
-5. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
+3. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
+   tamaño, hash, duración, loudness, pico y silencios. El plan actualizado proyecta
+   216.075 caracteres y USD 10,8038 antes de impuestos y reintentos; no es una autorización.
+4. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
    sólo cuando todos los bloqueos estén cerrados.
-6. Tras generar audio, repetir smoke de las 17 rutas Listening, móvil 320/390, teclado,
+5. Tras generar audio, repetir smoke de las 17 rutas Listening, móvil 320/390, teclado,
    lector de pantalla y verificación humana de las cuatro partes de cada MP3.
+
+Consulta de cuenta sólo lectura: plan Creator con 11.052 créditos disponibles frente a
+108.038 requeridos para el lote mínimo; el próximo reinicio informado por ElevenLabs es
+el 5 de septiembre de 2026 a las 18:13:51 (Bogotá). La cuenta no permite extender el límite.
+Por tanto, incluso con aprobación del propietario, el lote completo no puede ejecutarse hoy.
 
 ## Evidencia reproducible
 

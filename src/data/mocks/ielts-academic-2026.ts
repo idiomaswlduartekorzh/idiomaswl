@@ -3,6 +3,7 @@ import {
   IELTS_READING_AUDIT_CODAS,
   IELTS_READING_PASSAGE_3_SUPPLEMENTS,
 } from './ielts-reading-supplements.ts';
+import { expandIeltsListeningTranscript } from './ielts-listening-expansions.ts';
 
 export const IELTS_ACADEMIC_2026_DISCLOSURE =
   'Simulacro académico original de WeLearn, alineado con la estructura pública de IELTS Academic consultada el 25 de agosto de 2026. No es material oficial de IELTS, no reproduce preguntas oficiales y no ofrece equivalencia psicométrica.';
@@ -113,6 +114,12 @@ function withAuditedReadingLength(sections: MockSection[], setNumber: number): M
     : section);
 }
 
+function withAuditedListeningDensity(sections: MockSection[], setNumber: number): MockSection[] {
+  return sections.map((section) => section.skill === 'listening' && section.transcript
+    ? { ...section, transcript: expandIeltsListeningTranscript(setNumber, section.part, section.transcript) }
+    : section);
+}
+
 /**
  * Makes the public product contract explicit without mutating the authored set.
  * Content and media release integrity are enforced separately by the IELTS audit.
@@ -120,7 +127,8 @@ function withAuditedReadingLength(sections: MockSection[], setNumber: number): M
 export function withIeltsAcademic2026Blueprint(mock: MockExam): MockExam {
   const setNumber = Number(mock.id.replace(/^set-/, ''));
   const hasLegacyListeningAudio = setNumber >= 4 && setNumber <= 12;
-  const expandedSections = withAuditedReadingLength(mock.sections, setNumber);
+  const listeningExpandedSections = withAuditedListeningDensity(mock.sections, setNumber);
+  const expandedSections = withAuditedReadingLength(listeningExpandedSections, setNumber);
   const balancedSections = withBalancedMcqPositions(expandedSections, setNumber);
   return {
     ...mock,

@@ -6,6 +6,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
+import { expandIeltsListeningTranscript } from '../src/data/mocks/ielts-listening-expansions.ts';
 
 const SETS = Array.from({ length: 17 }, (_, index) => index + 4);
 const MIN_TRANSCRIPT_WORDS = 2200;
@@ -67,7 +68,10 @@ function sectionSegments(section, accent, setNumber) {
 const rows = [];
 for (const setNumber of SETS) {
   const { default: mock } = await import(`../src/data/mocks/ielts-set-${setNumber}.ts`);
-  const sections = mock.sections.filter(section => section.skill === 'listening');
+  const sections = mock.sections.filter(section => section.skill === 'listening').map(section => ({
+    ...section,
+    transcript: expandIeltsListeningTranscript(setNumber, section.part, section.transcript),
+  }));
   assert.equal(sections.length, 4, `Set ${setNumber} must have four Listening parts`);
   const plannedUrls = new Set(sections.map(section => section.audioUrl).filter(Boolean));
   assert.equal(plannedUrls.size, 1, `Set ${setNumber} must reference one integral Listening file`);

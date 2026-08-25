@@ -135,7 +135,7 @@ for (const setNumber of SETS) {
   const audioUrls = new Set(authoredListening.map((section) => section.audioUrl).filter(Boolean));
   const missingAudio = [...audioUrls].filter((url) => !existsSync(path.join(process.cwd(), 'public', url)));
   const blockedAudio = bySkill.listening.some((section) => section.mediaStatus === 'script-ready-audio-blocked');
-  const listeningWords = authoredListening.reduce((total, section) => total + words(section.transcript), 0);
+  const listeningWords = bySkill.listening.reduce((total, section) => total + words(section.transcript), 0);
   const audioDuration = audioDurationSeconds([...audioUrls][0]);
   const audioOutsideTarget = audioDuration !== null
     && (audioDuration < LISTENING_AUDIO_SECONDS_RANGE[0] || audioDuration > LISTENING_AUDIO_SECONDS_RANGE[1]);
