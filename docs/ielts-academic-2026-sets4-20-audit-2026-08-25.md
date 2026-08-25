@@ -2,7 +2,7 @@
 
 Fecha de contraste: 25 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  
-Dictamen actual: **BLOCKED sólo por audio — Sets 13–20 no se liberan todavía**
+Dictamen actual: **BLOCKED en Listening — los 17 sets requieren guion y audio v2**
 
 ## Alcance responsable
 
@@ -17,6 +17,7 @@ Fuentes oficiales revalidadas:
 - [IELTS Academic: estructura y duración](https://ielts.org/take-a-test/test-types/ielts-academic-test)
 - [IELTS Academic: preguntas de muestra y familias de tarea](https://www.ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test)
 - [Listening: cuatro partes, 40 preguntas y una reproducción](https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening)
+- [PDF oficial de tareas y tapescripts de muestra Listening](https://ielts.org/cdn/ielts-sample-tests/ielts-listening-sample-tasks-2023.pdf)
 - [Reading: tres secciones, 40 preguntas y 2.150–2.750 palabras](https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading)
 - [Speaking: tres partes y 11–14 minutos](https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking)
 - [Actualización de entrega en computador desde mediados de 2026](https://ielts.org/news-and-insights/updates-to-ielts-test-delivery)
@@ -27,29 +28,36 @@ Los 17 sets sí contienen cuatro partes y 40 respuestas de Listening, tres pasaj
 respuestas de Reading, Writing Task 1 + Task 2 y Speaking Parts 1–3. No se encontraron
 pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 
-| Set | Listening | Reading | Palabras Reading | MP3 integral | Claves en cliente |
+| Set | Resp. L/R | Palabras Listening | Palabras Reading | MP3 integral | Claves cliente |
 |---:|---:|---:|---:|---|---:|
-| 4 | 40 | 40 | 2.184 | OK | 0 |
-| 5 | 40 | 40 | 2.180 | OK | 0 |
-| 6 | 40 | 40 | 2.225 | OK | 0 |
-| 7 | 40 | 40 | 2.225 | OK | 0 |
-| 8 | 40 | 40 | 2.165 | OK | 0 |
-| 9 | 40 | 40 | 2.187 | OK | 0 |
-| 10 | 40 | 40 | 2.171 | OK | 0 |
-| 11 | 40 | 40 | 2.151 | OK | 0 |
-| 12 | 40 | 40 | 2.150 | OK | 0 |
-| 13 | 40 | 40 | 2.155 | FALTA | 0 |
-| 14 | 40 | 40 | 2.179 | FALTA | 0 |
-| 15 | 40 | 40 | 2.150 | FALTA | 0 |
-| 16 | 40 | 40 | 2.154 | FALTA | 0 |
-| 17 | 40 | 40 | 2.151 | FALTA | 0 |
-| 18 | 40 | 40 | 2.172 | FALTA | 0 |
-| 19 | 40 | 40 | 2.151 | FALTA | 0 |
-| 20 | 40 | 40 | 2.192 | FALTA | 0 |
+| 4 | 40/40 | 1.398 | 2.184 | REEMPLAZAR · 24,3 min | 0 |
+| 5 | 40/40 | 1.348 | 2.180 | REEMPLAZAR · 24,0 min | 0 |
+| 6 | 40/40 | 1.349 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
+| 7 | 40/40 | 1.332 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
+| 8 | 40/40 | 1.357 | 2.165 | REEMPLAZAR · 24,0 min | 0 |
+| 9 | 40/40 | 1.343 | 2.187 | REEMPLAZAR · 24,0 min | 0 |
+| 10 | 40/40 | 1.358 | 2.171 | REEMPLAZAR · 24,0 min | 0 |
+| 11 | 40/40 | 1.305 | 2.151 | REEMPLAZAR · 24,0 min | 0 |
+| 12 | 40/40 | 1.299 | 2.150 | REEMPLAZAR · 24,0 min | 0 |
+| 13 | 40/40 | 1.302 | 2.155 | FALTA | 0 |
+| 14 | 40/40 | 1.290 | 2.179 | FALTA | 0 |
+| 15 | 40/40 | 1.303 | 2.150 | FALTA | 0 |
+| 16 | 40/40 | 1.329 | 2.154 | FALTA | 0 |
+| 17 | 40/40 | 1.360 | 2.151 | FALTA | 0 |
+| 18 | 40/40 | 1.354 | 2.172 | FALTA | 0 |
+| 19 | 40/40 | 1.383 | 2.151 | FALTA | 0 |
+| 20 | 40/40 | 1.297 | 2.192 | FALTA | 0 |
 
-Los 17 Readings ya quedan dentro del rango oficial de 2.150–2.750 palabras. Los MP3 de
-Sets 13–20 todavía no existen en `public/audio/ielts/`; por eso esas cuatro partes de
-Listening permanecen bloqueadas de forma explícita.
+Los 17 Readings ya quedan dentro del rango oficial de 2.150–2.750 palabras. En cambio,
+los tapescripts oficiales de ocho familias de muestra suman aproximadamente 3.168
+palabras para 44 posiciones de respuesta, cerca de 72 por respuesta. IELTS no publica
+un mínimo de palabras; el auditor usa deliberadamente un gate WeLearn más conservador
+de 55 por respuesta, 2.200 por set. Los guiones actuales sólo tienen 1.290–1.398.
+
+Los nueve MP3 existentes duran 24,0–24,3 minutos y contienen pausas extensas; quedan
+marcados para reemplazo por una simulación de 27–33 minutos. Los ocho MP3 13–20 no
+existen. No basta con sintetizar esos ocho guiones cortos: primero deben ampliarse los
+17 guiones y después reemplazarse nueve audios y generarse ocho.
 
 ## Hallazgos editoriales
 
@@ -64,6 +72,9 @@ Listening permanecen bloqueadas de forma explícita.
 - Las claves objetivas vivían en el mismo objeto serializado al navegador. La proyección
   pública nueva deja cero claves; el servidor conserva el banco privado y recalcula el
   resultado recibido.
+- La revisión inicial trató erróneamente los nueve MP3 de 24 minutos como material listo.
+  El contraste posterior con los tapescripts oficiales detectó que el silencio añadido
+  ocultaba una densidad verbal demasiado baja; el auditor ya impide esa falsa liberación.
 
 ## Correcciones cerradas en esta rama
 
@@ -95,22 +106,31 @@ Listening permanecen bloqueadas de forma explícita.
 
 ## Gates pendientes para cerrar el dictamen
 
-1. Generar los ocho MP3 integrales pendientes con reparto de voces/acento, pausas y
-   normalización; después registrar tamaño, hash, duración, loudness y contraste
-   transcript↔audio. La generación con proveedor de pago requiere aprobación separada.
-2. Crear manifiesto de audio inmutable y convertir la auditoría en guardián de `prebuild`
+1. Expandir editorialmente los 17 guiones Listening hasta al menos 2.200 palabras por
+   set, añadiendo contexto, autocorrecciones y distractores naturales alrededor de las
+   40 evidencias; faltan como mínimo 14.693 palabras.
+2. Aprobar reparto de voces y acentos British, Australian, New Zealand y North American,
+   proveedor, modelo y techo de gasto. No se ha llamado ninguna API de voz.
+3. Reemplazar los nueve MP3 4–12 y generar los ocho MP3 13–20 con duración 27–33 min,
+   reproducción única, mono 44,1 kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
+4. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
+   tamaño, hash, duración, loudness, pico y silencios. El plan mínimo proyecta 207.647
+   caracteres y USD 10,3824 antes de impuestos y reintentos; no es una autorización.
+5. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
    sólo cuando todos los bloqueos estén cerrados.
-3. Repetir build completo, smoke de las 17 rutas, móvil 320/390, teclado, lector de
+6. Repetir build completo, smoke de las 17 rutas, móvil 320/390, teclado, lector de
    pantalla y el recorrido de entrega privada con Writing y las tres muestras de Speaking.
 
 ## Evidencia reproducible
 
 ```bash
-npm run audit:ielts-academic-2026  # hoy debe terminar BLOCKED y enumerar sólo 8 audios
+npm run audit:ielts-academic-2026  # hoy debe terminar BLOCKED en guion/audio
+npm run plan:ielts-audio-2026      # valida plan, hashes y factura mínima; no genera
 npm run test:ielts-academic-2026   # contrato, claves privadas y audio bloqueado
 npm run test:ielts-review          # scoring/review pipeline
 npx tsc --noEmit
 ```
 
-La salida `BLOCKED` sigue siendo intencional: impide presentar Sets 13–20 como completos
-hasta que sus ocho audios integrales pasen el mismo gate técnico y editorial usado en TOEFL.
+La salida `BLOCKED` sigue siendo intencional: impide presentar Sets 4–20 como equivalentes
+en Listening hasta que los 17 guiones y audios v2 pasen el mismo gate técnico y editorial
+usado en TOEFL.
