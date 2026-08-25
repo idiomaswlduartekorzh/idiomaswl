@@ -107,6 +107,7 @@ import { ROLEPLAY_RUSO_A2_BATCH_3C } from './ruso-a2-batch-3c.ts'
 import { ROLEPLAY_RUSO_A2_BATCH_3D } from './ruso-a2-batch-3d.ts'
 import { ROLEPLAY_RUSO_A2_BATCH_3E } from './ruso-a2-batch-3e.ts'
 import { ROLEPLAY_RUSO_A2_BATCH_4 } from './ruso-a2-batch-4.ts'
+import { ROLEPLAY_RUSO_A2_BATCH_4B } from './ruso-a2-batch-4b.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
   'the-bike-in-the-parking-lot': 1,
@@ -257,6 +258,7 @@ export const ROLEPLAY_RUSO_A2_CANDIDATE = [
   ...ROLEPLAY_RUSO_A2_BATCH_3D,
   ...ROLEPLAY_RUSO_A2_BATCH_3E,
   ...ROLEPLAY_RUSO_A2_BATCH_4,
+  ...ROLEPLAY_RUSO_A2_BATCH_4B,
 ].sort((a, b) => a.sequence - b.sequence)
 
 /**
