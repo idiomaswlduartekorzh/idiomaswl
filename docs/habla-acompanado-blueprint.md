@@ -6,9 +6,9 @@ Fuente de verdad de las decisiones pedagógicas de los juegos de rol para dos pe
 Si un agente y este documento se contradicen, manda este documento. Si este documento y lo
 que David decida se contradicen, manda David **y hay que corregir este documento**.
 
-Estado: **motor, Inglés completo, Coreano A2, Francés A2, Italiano A2 y Portugués A2 integrados el 24 de agosto de 2026.**
-El registro vivo sirve 140 escenarios, 280 fichas separadas, siete cajas propias, rutas
-estáticas por rol y guardián estructural. La fase 2 continúa con los otros cuatro conjuntos A2.
+Estado: **motor, Inglés completo y Coreano, Francés, Italiano, Portugués y Alemán A2 integrados el 25 de agosto de 2026.**
+El registro vivo sirve 160 escenarios, 320 fichas separadas, ocho cajas propias, rutas
+estáticas por rol y guardián estructural. La fase 2 continúa con los otros dos conjuntos A2.
 La decisión de producto vigente es llegar a **20 prácticas por nivel, 60 por idioma y 480 en
 total**. El piloto ya no es una puerta para decidir si se expande: es la primera cohorte de la
 expansión descrita en §13.
@@ -22,7 +22,7 @@ Al entrar en la destreza de habla el estudiante elige entre dos modos:
 | Modo | Con quién | Estado |
 |---|---|---|
 | **Habla solo** | Nadie. 20 frases con fonética y seguimiento local. | Conservado en `/habla/solo` |
-| **Habla acompañada** | **Otra persona real**: un compañero, el profesor, un amigo, la pareja. | 140 de 480 escenarios publicados; meta cerrada en §1.1 |
+| **Habla acompañada** | **Otra persona real**: un compañero, el profesor, un amigo, la pareja. | 160 de 480 escenarios publicados; meta cerrada en §1.1 |
 
 Cerrado y no se rediscute salvo que David lo reabra:
 
@@ -52,10 +52,10 @@ elección y dos fichas privadas —A y B—, pero cuenta una sola vez en el cat�
 | Francés | `frances` | 20 | 20 | 20 | 60 | 20 | 40 |
 | Italiano | `italiano` | 20 | 20 | 20 | 60 | 20 | 40 |
 | Portugués | `portugues` | 20 | 20 | 20 | 60 | 20 | 40 |
-| Alemán | `aleman` | 20 | 20 | 20 | 60 | 0 | 60 |
+| Alemán | `aleman` | 20 | 20 | 20 | 60 | 20 | 40 |
 | Ruso | `ruso` | 20 | 20 | 20 | 60 | 0 | 60 |
 | Japonés | `japones` | 20 | 20 | 20 | 60 | 0 | 60 |
-| **Total** | — | **160** | **160** | **160** | **480** | **140** | **340** |
+| **Total** | — | **160** | **160** | **160** | **480** | **160** | **320** |
 
 La meta ejecutable incluye además:
 

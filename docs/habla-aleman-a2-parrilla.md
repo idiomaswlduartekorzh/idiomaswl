@@ -1,8 +1,8 @@
 # Habla acompañada · Alemán A2 · parrilla editorial 1–20
 
-Estado: **matriz 20/20 preparada para autoría; todavía no publicada.** Es el siguiente conjunto
-de la fase A2 de [`habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md). Las situaciones
-se escriben directamente en alemán y no traducen las colecciones existentes.
+Estado: **20/20 publicadas el 25 de agosto de 2026.** El conjunto superó la revisión
+estructural, lingüística y adversarial, incluidas 100 simulaciones (20 × 5 perfiles). Las
+situaciones se escribieron directamente en alemán y no traducen las colecciones existentes.
 
 ## Decisiones lingüísticas
 
