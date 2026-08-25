@@ -113,6 +113,7 @@ import { ROLEPLAY_RUSO_A2_BATCH_4E } from './ruso-a2-batch-4e.ts'
 import { ROLEPLAY_JAPONES_A2_BATCH_1 } from './japones-a2-batch-1.ts'
 import { ROLEPLAY_JAPONES_A2_BATCH_1B } from './japones-a2-batch-1b.ts'
 import { ROLEPLAY_JAPONES_A2_BATCH_1C } from './japones-a2-batch-1c.ts'
+import { ROLEPLAY_JAPONES_A2_BATCH_1D } from './japones-a2-batch-1d.ts'
 import { TOOLKIT_JAPONES_A2 } from '../toolkit-japones-a2.ts'
 
 const ENGLISH_A2_PUBLISHED_SEQUENCE: Record<string, number> = {
@@ -274,6 +275,7 @@ export const ROLEPLAY_JAPONES_A2_CANDIDATE = [
   ...ROLEPLAY_JAPONES_A2_BATCH_1,
   ...ROLEPLAY_JAPONES_A2_BATCH_1B,
   ...ROLEPLAY_JAPONES_A2_BATCH_1C,
+  ...ROLEPLAY_JAPONES_A2_BATCH_1D,
 ].sort((a, b) => a.sequence - b.sequence)
 
 /**
