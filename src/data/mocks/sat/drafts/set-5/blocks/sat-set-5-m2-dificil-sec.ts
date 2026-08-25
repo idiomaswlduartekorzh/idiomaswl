@@ -10,9 +10,9 @@ import type { SatItemMeta } from '../../../module-types'
 export const items: MCQQuestion[] = [
   {
     id: 'q16', type: 'mcq', part: 1,
-    stimulus: 'Although the harbor bell book recorded the hour of every fog signal ______ it did not explain why several entries were copied in a different hand.',
+    stimulus: 'Although the harbor bell book recorded the hour of every fog signal and the name of the keeper on ______ it did not explain why several entries were copied in a different hand.',
     text: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
-    options: ['signal;', 'signal:', 'signal,', 'signal'],
+    options: ['duty;', 'duty:', 'duty,', 'duty'],
     answer: 2,
   },
   {
@@ -24,21 +24,21 @@ export const items: MCQQuestion[] = [
   },
   {
     id: 'q18', type: 'mcq', part: 1,
-    stimulus: 'The artist’s archive ______ which includes installation diagrams, correspondence, and copies of obsolete software—allows conservators to compare new presentations of the work with its documented behavior.',
+    stimulus: 'The artist’s ______ which includes installation diagrams, correspondence, and copies of obsolete software—allows conservators to compare new presentations of the work with its documented behavior.',
     text: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
     options: ['archive,', 'archive;', 'archive:', 'archive—'],
     answer: 3,
   },
   {
     id: 'q19', type: 'mcq', part: 1,
-    stimulus: 'An inventory of the early diving bell names three accessories carried inside the chamber ______ a weighted sounding line, a slate for written signals, and a sealed lamp.',
+    stimulus: 'An inventory of the early diving bell names three accessories carried inside the ______ a weighted sounding line, a slate for written signals, and a sealed lamp.',
     text: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
     options: ['chamber:', 'chamber;', 'chamber,', 'chamber'],
     answer: 0,
   },
   {
     id: 'q20', type: 'mcq', part: 1,
-    stimulus: 'Located just inside the membrane of the freshwater alga ______ several light-sensitive organelles that change position as illumination shifts.',
+    stimulus: 'Located just inside the membrane of the freshwater alga and visible only under specialized microscopy ______ several light-sensitive organelles that change position as illumination shifts.',
     text: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
     options: ['is', 'has been', 'are', 'was'],
     answer: 2,

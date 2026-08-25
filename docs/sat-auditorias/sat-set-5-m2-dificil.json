@@ -1,0 +1,87 @@
+{
+  "modulo": "sat-set-5-m2-dificil",
+  "fecha": "2026-08-25",
+  "auditorias": {
+    "clave": {
+      "agente": "Codex — revisión editorial no independiente",
+      "veredicto": "APTO",
+      "itemsConDosClaves": 0,
+      "notas": "Resolución de 27 ítems y revisión de distractores; evidencia en informes/sat-set-5-m2-dificil-editorial.md."
+    },
+    "sesgo": {
+      "agente": "panel heurístico reproducible",
+      "veredicto": "APTO",
+      "pruebaACiegasPct": 24.3,
+      "notas": "Ningún ítem alcanzó 75 % de acierto sin pasaje; no sustituye un panel humano."
+    },
+    "equidad": {
+      "agente": "Codex — revisión editorial no independiente",
+      "veredicto": "APTO",
+      "banderas": 0,
+      "notas": "Toda evidencia necesaria está dentro del ítem; no se exige conocimiento cultural, regional o económico externo."
+    },
+    "lengua": {
+      "agente": "Codex + controles mecánicos",
+      "veredicto": "APTO",
+      "bloqueantes": 0,
+      "notas": "Inglés estadounidense, enunciados canónicos, razones A–D completas y huecos montados con las cuatro opciones."
+    },
+    "dificultad": {
+      "agente": "matriz editorial + guardián de curva",
+      "veredicto": "APTO",
+      "notas": "Dificultad prevista: 5 fáciles, 9 medios y 13 difíciles; media 2,30. No es calibración psicométrica."
+    },
+    "originalidad": {
+      "agente": "redacción original + búsquedas locales y web representativas",
+      "veredicto": "APTO",
+      "banderasRojas": 0,
+      "notas": "Cero secuencias internas comunes de ocho palabras entre 405 ítems. La búsqueda web representativa no equivale a rastreo exhaustivo."
+    },
+    "simulacion": {
+      "agente": "panel heurístico reproducible",
+      "veredicto": "APTO",
+      "tramposoPct": 24.3,
+      "notas": "Prueba automática reproducible, no humana ni multi-modelo."
+    }
+  },
+  "veredicto": "APTO_EDITORIAL_NO_PUBLICABLE",
+  "quedaAbierto": [
+    "Panel humano o multi-modelo independiente recomendado como evidencia adicional.",
+    "Calibración psicométrica cuando existan datos de uso real."
+  ],
+  "publicable": false,
+  "bloqueantesDeProducto": [
+    "Composición adaptativa del Set 5 pendiente.",
+    "QA de producto del Set 5 pendiente."
+  ],
+  "notaSobreElActa": "Certifica la revisión editorial del contenido vigente de M2-dificil; no autoriza catálogo, ruta ni publicación del Set 5.",
+  "huellas": {
+    "q01": "b361f2a61204",
+    "q02": "6583f4a962dc",
+    "q03": "39a655de6c50",
+    "q04": "0659eeac5f28",
+    "q05": "2618e779f1f8",
+    "q06": "dbfc0245bccf",
+    "q07": "6112d44346fe",
+    "q08": "b4c60324f0c9",
+    "q09": "6510943e53ba",
+    "q10": "df0f7ecca97f",
+    "q11": "7372b85ec32a",
+    "q12": "b91d06d3759c",
+    "q13": "3139f4a82f7e",
+    "q14": "f38a2cae4a41",
+    "q15": "484aee86328f",
+    "q16": "90fca2dbb778",
+    "q17": "bf09b7b1f667",
+    "q18": "ac5b90190151",
+    "q19": "07759662aa46",
+    "q20": "d9d547b18b67",
+    "q21": "afa7ffbab9a6",
+    "q22": "cbcb3dd0173a",
+    "q23": "187712b13a88",
+    "q24": "987835b2de1c",
+    "q25": "688c4602ef49",
+    "q26": "79df06ee86c7",
+    "q27": "2f1a92c64693"
+  }
+}

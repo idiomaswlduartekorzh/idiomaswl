@@ -1,6 +1,6 @@
 # SAT Set 5 · Módulo 2 exigente — matriz editorial
 
-Fecha: 25 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 22/27**.
+Fecha: 25 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 27/27**.
 
 Esta ruta sirve a estudiantes cuyo M1 queda en la banda alta. Eleva densidad y número de
 inferencias sin convertir la adaptatividad en castigo: conserva cinco entradas fáciles,
@@ -58,7 +58,7 @@ la prosa será original y cada hecho se verificará al abrir su bloque.
 | ID | Tipo | Dif. | Materia | Clave | Tema original | Fuente objetivo y riesgo de diseño |
 | --- | --- | ---: | --- | :---: | --- | --- |
 | q23 | rhetorical-synthesis | 1 | humanidades | A | Facetas de búsqueda reducen resultados irrelevantes en un catálogo | Datos originales; comparar finalización sin afirmar preferencia o accesibilidad universal |
-| q24 | rhetorical-synthesis | 1 | ciencia | C | Recubrimiento de cera reduce permeabilidad de una película de celulosa bacteriana | Estudio primario; conservar material, condición y magnitud sin recomendar todo empaque |
+| q24 | rhetorical-synthesis | 1 | ciencia | C | Cera aumenta la hidrofobicidad y elasticidad de una película de celulosa bacteriana, pero reduce su resistencia | Estudio primario; conservar concentración, magnitudes y trade-off sin recomendar todo empaque |
 | q25 | rhetorical-synthesis | 2 | historia | D | Camera lucida y pantógrafo ayudan a transferir contornos por mecanismos distintos | Museos técnicos; comparación funcional sin afirmar influencia directa ni precisión idéntica |
 | q26 | transitions | 2 | ciencia | B | Mejillones modifican inversión en byssal threads bajo flujo más fuerte | Estudio primario; contraste o consecuencia limitado a las medidas reportadas |
 | q27 | transitions | 3 | literatura | A | Poeta ficticia conserva puntuación pero cambia cortes de verso | Texto original; concesión entre signos estables y ritmo alterado |
