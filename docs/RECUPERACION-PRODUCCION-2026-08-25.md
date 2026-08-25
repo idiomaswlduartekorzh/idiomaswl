@@ -63,6 +63,8 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 | Trabajo | Rama/SHA de corte | Estado observado | Condición para publicar |
 |---|---|---|---|
+| Habla acompañada Ruso A2 | `main` · `58152f88`; artefacto `dpl_41Vp3YvdCacAqMXmPvuWm8cZrDPp` | `INTEGRADO`; 20 escenarios y artefacto Vercel `READY`. La promoción chocó con la cuota diaria y los tres alias se devolvieron al deployment público anterior. | Promover el artefacto exacto o un deployment posterior de `main`; exigir 64 rutas rusas, dos inválidas y regresiones públicas antes de marcar `DESPLEGADO`. |
+| Habla acompañada Japonés A2 | `codex/habla-japones-a2` · `d071d658`; base `77476a11` | `LISTO_PARA_INTEGRAR`; 20 escenarios, 40 fichas, caja propia, 100 simulaciones, rutas, guardianes, TypeScript y build Webpack de 2.499 páginas aprobados. El guardián cuenta 10/24 conjuntos y 200/480 escenarios. | Fast-forward de `main`, deployment Vercel `READY` desde ese SHA y QA de las 64 rutas japonesas, dos inválidas y regresiones antes de marcar `DESPLEGADO`. |
 | Piloto registro/pagos TOEFL | `codex/toefl-pilot-registration` · `5def8b7b` | 1 parche único; 206 detrás; incluye migración y comercio. | Decisión de producto, revisión de seguridad/RLS, migración, pruebas de pago y reimplementación actualizada. |
 | Parche SAT adaptativo | `feat/sat-modulo-2`; parche `afd24f7d` | Rama 220 detrás; solo un parche no equivalente. | Comprobar si el motor actual ya resuelve la intención y reimplementar si hace falta. |
 
@@ -169,3 +171,9 @@ Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview
   `READY`; los tres dominios apuntaron al mismo deployment. El smoke oficial pasó 14/14,
   Sets 1–5 devolvieron HTTP 200, el hub mostró cinco simulacros y Set 5 publicó 54
   preguntas y 64 minutos. La expansión se pausa en cinco por decisión de producto.
+- Ruso A2 quedó integrado en `main` como `58152f88` y su deployment exacto
+  `dpl_41Vp3YvdCacAqMXmPvuWm8cZrDPp` terminó `READY`. La promoción agotó la cuota diaria;
+  se revirtieron los tres alias al deployment público anterior para no dejar Vercel SSO.
+- Japonés A2 llegó a 20 escenarios y 100 simulaciones en `codex/habla-japones-a2`.
+  Rebasado sobre `77476a11`, pasó release guard, guardián profundo (10/24, 200/480),
+  catálogo, TypeScript y build Webpack de 2.499 páginas; queda listo para fast-forward.
