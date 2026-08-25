@@ -16,3 +16,14 @@ publicará mientras siga con `status: draft`.
 
 El guardián `npm run check:sat-catalog` impide que este borrador aparezca en el hub o
 en el registro ejecutable por accidente.
+
+## Avance
+
+- M1: 27/27; cuatro bloques y contenido editorial APTO.
+- M2 estándar: 27/27; cuatro bloques y contenido editorial APTO.
+- M2 exigente: 27/27; cuatro bloques y contenido editorial APTO.
+- Candidato compuesto en `sat-set-4.ts`, todavía fuera del registro público.
+- El contrato adaptativo pasa para los 28 resultados posibles de M1 y entrega exactamente
+  54 preguntas por ruta, con explicaciones A–D para los 81 ítems redactados.
+- Siguiente unidad autorizada: validar ambas rutas y la experiencia de producto antes de
+  promover archivos, emitir actas formales o cambiar el catálogo.

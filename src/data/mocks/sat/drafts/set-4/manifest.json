@@ -3,6 +3,8 @@
   "id": "set-4",
   "status": "draft",
   "publishable": false,
+  "candidateFile": "src/data/mocks/sat/drafts/set-4/sat-set-4.ts",
+  "candidateExport": "satSet4Candidate",
   "studentQuestions": 54,
   "authoredQuestionsRequired": 81,
   "modules": [
@@ -15,6 +17,7 @@
       "mechanicalGates": "PASS",
       "blindHeuristicsMeanPct": 24.7,
       "editorialGates": "PASS_WITH_DECLARED_LIMITS",
+      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
       "slots": [
         {
           "id": "q01",
@@ -249,6 +252,10 @@
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-4/sat-set-4-m2-facil.ts",
       "writtenQuestions": 27,
+      "mechanicalGates": "PASS",
+      "blindHeuristicsMeanPct": 25.1,
+      "editorialGates": "PASS_WITH_DECLARED_LIMITS",
+      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
       "slots": [
         {
           "id": "q01",
@@ -483,6 +490,10 @@
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-4/sat-set-4-m2-dificil.ts",
       "writtenQuestions": 27,
+      "mechanicalGates": "PASS",
+      "blindHeuristicsMeanPct": 22.4,
+      "editorialGates": "PASS_WITH_DECLARED_LIMITS",
+      "productGate": "ROUTING_AND_REVIEW_DATA_PASS_UI_PENDING",
       "slots": [
         {
           "id": "q01",
