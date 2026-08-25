@@ -130,7 +130,7 @@ export const EXAM_PODCASTS: readonly ExamPodcastEpisode[] = [
   {
     ...ICFES_SEVEN_PARTS_PODCAST,
     ...byId('icfes-seven-parts'),
-    alternateName: ICFES_SEVEN_PARTS_PODCAST.title,
+    alternateName: 'Estrategias para las 7 partes del ICFES Saber 11',
     fullDescription: ICFES_SEVEN_PARTS_PODCAST.description,
     notes: ICFES_SEVEN_PARTS_NOTES,
     relatedLinks: [
@@ -159,7 +159,7 @@ export const EXAM_PODCASTS: readonly ExamPodcastEpisode[] = [
   {
     ...DIGITAL_SAT_STRATEGY_MAP_PODCAST,
     ...byId('digital-sat-strategy-map'),
-    alternateName: DIGITAL_SAT_STRATEGY_MAP_PODCAST.title,
+    alternateName: 'The Strategic Map for the Digital SAT',
     fullDescription: DIGITAL_SAT_STRATEGY_MAP_PODCAST.description,
     notes: DIGITAL_SAT_STRATEGY_MAP_NOTES,
     relatedLinks: [
