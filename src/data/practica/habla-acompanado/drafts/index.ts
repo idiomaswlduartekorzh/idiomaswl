@@ -50,7 +50,6 @@ import { ROLEPLAY_ITALIANO_A2_BATCH_3 } from './italiano-a2-batch-3.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4 } from './italiano-a2-batch-4.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4B } from './italiano-a2-batch-4b.ts'
 import { ROLEPLAY_ITALIANO_A2_BATCH_4C } from './italiano-a2-batch-4c.ts'
-import { TOOLKIT_PORTUGUES_A2 } from '../toolkit-portugues-a2.ts'
 import { ROLEPLAY_PORTUGUES_A2_BATCH_1 } from './portugues-a2-batch-1.ts'
 import { ROLEPLAY_PORTUGUES_A2_BATCH_1B } from './portugues-a2-batch-1b.ts'
 import { ROLEPLAY_PORTUGUES_A2_BATCH_1C } from './portugues-a2-batch-1c.ts'
@@ -188,12 +187,5 @@ export const ROLEPLAY_PORTUGUES_A2_CANDIDATE = [
  * conjunto sale de aquí únicamente cuando alcanza 20 escenarios y pasa sus puertas
  * como unidad completa.
  */
-export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = [
-  {
-    language: 'portugues',
-    level: 'a2',
-    scenarios: ROLEPLAY_PORTUGUES_A2_CANDIDATE,
-    toolkit: TOOLKIT_PORTUGUES_A2,
-  },
-]
+export const ROLEPLAY_DRAFT_SETS: RoleplaySet[] = []
 import type { RoleplaySet } from '../index.ts'

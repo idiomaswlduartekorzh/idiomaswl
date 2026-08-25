@@ -1,6 +1,6 @@
 # Habla acompañada · Portugués A2 · parrilla editorial 1–20
 
-Estado: **matriz cerrada; autoría fuera del registro público.** Es el siguiente conjunto de la
+Estado: **20/20 prácticas auditadas y listas para integración al registro público.** Es el siguiente conjunto de la
 fase A2 de [`habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md). Usa portugués
 brasileño y situaciones propias; no traduce las colecciones publicadas.
 
