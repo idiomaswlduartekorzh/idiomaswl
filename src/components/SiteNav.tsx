@@ -9,12 +9,13 @@ import Image from 'next/image';
 import { useTheme } from '@/components/ThemeProvider';
 
 // ⚠️ NUNCA borrar "Práctica" ni "Herramientas": se han perdido en force-pushes.
+// Las colecciones editoriales (como Podcasts) viven dentro de Herramientas y de cada
+// examen. `check:podcast-architecture` impide volver a elevarlas a la navegación global.
 const NAV_LINKS = [
   { label: 'Home',           href: '/' },
   { label: 'Idiomas',        href: '/clases-de-idiomas' },
   { label: 'Exámenes',       href: '/examenes' },
   { label: 'Práctica',       href: '/practica' },
-  { label: 'Podcasts',       href: '/podcasts' },
   { label: 'Herramientas',   href: '/herramientas' },
   { label: 'Quiénes somos',  href: '/quienes-somos' },
 ];
@@ -24,7 +25,7 @@ const IELTS_NAV_LINKS = [
   { label: 'Languages',  href: '/clases-de-idiomas' },
   { label: 'Exams',      href: '/examenes' },
   { label: 'Practice',   href: '/practica' },
-  { label: 'Podcasts',   href: '/podcasts' },
+  { label: 'Tools',      href: '/herramientas' },
   { label: 'About us',   href: '/quienes-somos' },
 ];
 

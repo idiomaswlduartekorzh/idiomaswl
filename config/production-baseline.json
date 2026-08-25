@@ -58,6 +58,7 @@
     "src/app/(site)/clases-de-idiomas/page.tsx",
     "src/app/(site)/examenes/page.tsx",
     "src/app/(site)/examenes/[exam]/page.tsx",
+    "src/app/(site)/herramientas/page.tsx",
     "src/app/(site)/podcasts/page.tsx",
     "src/app/(site)/podcasts/page.module.css",
     "src/data/practica/podcast-library.ts",
@@ -69,6 +70,8 @@
     "src/data/practica/exam-podcast-catalog.ts",
     "src/app/(site)/examenes/[exam]/podcast/[slug]/page.tsx",
     "src/app/(site)/examenes/[exam]/podcast/[slug]/page.module.css",
+    "scripts/check-podcast-architecture.mjs",
+    "docs/arquitectura-podcasts.md",
     "src/lib/storage.ts",
     "src/components/lesson/stages/step001/Activation001.tsx",
     "src/components/lesson/stages/step002/Activation002.tsx",
@@ -138,11 +141,14 @@
     "vercel.json"
   ],
   "protectedMarkers": {
-    "src/components/SiteNav.tsx": ["{ label: 'Podcasts',", "href: '/podcasts'"],
+    "src/components/SiteNav.tsx": ["{ label: 'Herramientas',", "href: '/herramientas'"],
+    "src/app/(site)/herramientas/page.tsx": ["slug: 'podcasts-examenes'", "href: '/podcasts'", "PODCAST_LIBRARY.length"],
     "src/app/(site)/podcasts/page.tsx": ["PODCAST_LIBRARY.map", "Estrategia que se escucha."],
     "src/data/practica/podcast-library.ts": ["PODCAST_LIBRARY", "digital-sat-strategy-map"],
     "src/data/practica/exam-podcast-catalog.ts": ["EXAM_PODCASTS", "getExamPodcast"],
     "src/app/(site)/examenes/[exam]/podcast/[slug]/page.tsx": ["generateStaticParams", "PodcastEpisode", "LearningResource"],
+    "scripts/check-podcast-architecture.mjs": ["no puede enlazar /podcasts", "CollectionPage", "EXAM_PODCASTS"],
+    "docs/arquitectura-podcasts.md": ["no una categoría principal", "check:podcast-architecture", "PodcastEpisode"],
     "src/lib/storage.ts": ["KR_PODCAST =", "KR_PODCAST_002", "KR_PODCAST_003", "KR_PODCAST_004", "KR_PODCAST_005", "KR_PODCAST_006", "KR_PODCAST_007"],
     "src/app/(site)/home/HomePage.tsx": ["HomeResultsArchive"],
     "src/app/(site)/precios/PreciosClient.tsx": ["WompiCheckoutProvider", "WompiCheckoutButton"],
@@ -162,6 +168,7 @@
   },
   "requiredNpmScripts": [
     "check:production-baseline",
+    "check:podcast-architecture",
     "check:advanced-ideas",
     "check:practica-catalog",
     "check:habla-acompanada",
@@ -184,6 +191,7 @@
   ],
   "requiredPrebuildChecks": [
     "check:production-baseline",
+    "check:podcast-architecture",
     "check:advanced-ideas",
     "check:practica-catalog",
     "check:habla-acompanada",

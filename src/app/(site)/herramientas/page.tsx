@@ -2,9 +2,13 @@ import type { CSSProperties } from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import { PODCAST_LIBRARY } from '@/data/practica/podcast-library'
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 
 const URL = 'https://www.idiomaswl.com/herramientas'
+const PODCAST_EXAM_COUNT = new Set(PODCAST_LIBRARY.map((episode) => episode.examSlug)).size
+const PODCAST_COLLECTIONS = [...new Set(PODCAST_LIBRARY.map((episode) => episode.collection))]
+const PODCAST_COLLECTION_LABEL = new Intl.ListFormat('es', { style: 'long', type: 'conjunction' }).format(PODCAST_COLLECTIONS)
 
 export const metadata: Metadata = {
   title: 'Herramientas gratuitas para estudiar idiomas',
@@ -52,8 +56,8 @@ const TOOLS: Tool[] = [
     flag: '🎧',
     name: 'Podcasts de exámenes',
     tagline:
-      'Escucha mapas de estrategia para IELTS, TOEFL, ICFES, Cambridge B2 y SAT, con notas editoriales y rutas de práctica.',
-    detail: '7 episodios · 5 exámenes',
+      `Escucha mapas de estrategia para ${PODCAST_COLLECTION_LABEL}, con notas editoriales y rutas de práctica.`,
+    detail: `${PODCAST_LIBRARY.length} episodios · ${PODCAST_EXAM_COUNT} exámenes`,
     color: SKILL_ACCENT.escucha.light,
   },
   {

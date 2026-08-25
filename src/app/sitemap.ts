@@ -54,7 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/metodo`,          lastModified: now, changeFrequency: 'monthly', priority: 0.9  },
     { url: `${BASE}/leccion`,         lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/practica`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
-    { url: `${BASE}/podcasts`,        lastModified: now, changeFrequency: 'monthly', priority: 0.82 },
     { url: `${BASE}/nivel-radar`,     lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
 
     // ── Herramientas gratuitas ────────────────────────────────────────────────
@@ -63,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Los idiomas salen del registro, no de una lista a mano: así añadir uno no puede
     // dejarlo fuera del sitemap.
     { url: `${BASE}/herramientas`,                        lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/podcasts`,                            lastModified: now, changeFrequency: 'monthly', priority: 0.78 },
     { url: `${BASE}/herramientas/quizes`,                 lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/herramientas/quizes/italiano`,        lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
     { url: `${BASE}/herramientas/quizes/ingles`,           lastModified: now, changeFrequency: 'monthly', priority: 0.72 },

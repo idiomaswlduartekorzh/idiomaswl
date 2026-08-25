@@ -53,6 +53,28 @@
   color: var(--muted);
 }
 
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.2rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.breadcrumb a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -429,4 +451,3 @@
     transition: none;
   }
 }
-
