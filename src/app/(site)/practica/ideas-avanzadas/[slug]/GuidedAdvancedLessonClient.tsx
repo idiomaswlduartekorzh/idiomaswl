@@ -1,0 +1,569 @@
+'use client'
+
+import { useEffect, useMemo, useRef, useState } from 'react'
+import Link from 'next/link'
+import {
+  ArrowLeft,
+  ArrowRight,
+  BookOpenText,
+  Check,
+  ChevronDown,
+  CircleDot,
+  FileQuestion,
+  Headphones,
+  LockKeyhole,
+  MessageCircleMore,
+  Mic,
+  NotebookPen,
+  RotateCcw,
+  ScanText,
+  Sparkles,
+  UnlockKeyhole,
+} from 'lucide-react'
+import type {
+  GuidedAdvancedLesson,
+  GuidedChoiceQuestion,
+} from '@/data/practica/advanced-guided-topics'
+import { GUIDED_ADVANCED_PHASES } from '@/data/practica/advanced-guided-topics'
+import LocalVoiceRecorder from './LocalVoiceRecorder'
+import styles from './GuidedAdvancedLesson.module.css'
+
+interface GuidedSavedState {
+  phase: number
+  completed: number[]
+  baselineUnlocked: boolean
+  discussionIndex: number
+  openedBlocks: string[]
+  predictions: Record<string, string>
+  paraphrases: Record<string, string>
+  notes: Record<string, string>
+  ieltsAnswers: Record<string, number>
+  ieltsSubmitted: boolean
+  draft: string
+  checks: boolean[]
+}
+
+const PHASE_ICONS = [
+  MessageCircleMore,
+  Mic,
+  BookOpenText,
+  NotebookPen,
+  ScanText,
+  FileQuestion,
+  Headphones,
+  Sparkles,
+]
+
+const NOTE_BUCKETS = [
+  ['mainIdea', 'Main idea'],
+  ['evidence', 'Evidence'],
+  ['language', 'Language'],
+  ['questions', 'Questions'],
+] as const
+
+const ROLE_LABELS = {
+  definition: 'Definition',
+  evidence: 'Evidence',
+  example: 'Example',
+  counterargument: 'Counterargument',
+  application: 'Application',
+  'scope-limit': 'Scope limit',
+} as const
+
+function GuidedQuestion({
+  question,
+  selected,
+  submitted,
+  onSelect,
+}: {
+  question: GuidedChoiceQuestion
+  selected: number | undefined
+  submitted: boolean
+  onSelect: (option: number) => void
+}) {
+  const answered = selected !== undefined
+  const correct = selected === question.answer
+
+  return (
+    <fieldset className={styles.question}>
+      <legend>
+        <span>{question.family}</span>
+        {question.prompt}
+      </legend>
+      <div className={styles.options}>
+        {question.options.map((option, index) => {
+          const isSelected = selected === index
+          const isCorrect = submitted && index === question.answer
+          const isWrong = submitted && isSelected && !isCorrect
+          return (
+            <button
+              className={`${styles.option} ${isSelected ? styles.optionSelected : ''} ${isCorrect ? styles.correct : ''} ${isWrong ? styles.wrong : ''}`}
+              disabled={submitted}
+              key={option.text}
+              onClick={() => onSelect(index)}
+              type="button"
+              aria-pressed={isSelected}
+            >
+              <span>{String.fromCharCode(65 + index)}</span>
+              <strong>{option.text}</strong>
+              {isCorrect && <Check size={17} aria-label="Correct answer" />}
+            </button>
+          )
+        })}
+      </div>
+      {submitted && answered && (
+        <div className={correct ? styles.feedbackCorrect : styles.feedbackWrong} role="status">
+          <strong>{correct ? 'Evidence matched.' : 'Inspect the reasoning.'}</strong>
+          <p>{question.options[selected].feedback}</p>
+          {!correct && <p><b>Best-supported answer:</b> {question.options[question.answer].text}</p>}
+          <small>Evidence: {question.evidence}</small>
+        </div>
+      )}
+    </fieldset>
+  )
+}
+
+export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedAdvancedLesson }) {
+  const storageKey = `wl-advanced-guided-${lesson.slug}-v3`
+  const [phase, setPhase] = useState(0)
+  const [completed, setCompleted] = useState<number[]>([])
+  const [baselineUnlocked, setBaselineUnlocked] = useState(false)
+  const [discussionIndex, setDiscussionIndex] = useState(0)
+  const [showTeacherNotes, setShowTeacherNotes] = useState(false)
+  const [openedBlocks, setOpenedBlocks] = useState<string[]>([lesson.reading.blocks[0]?.id].filter(Boolean))
+  const [predictions, setPredictions] = useState<Record<string, string>>({})
+  const [paraphrases, setParaphrases] = useState<Record<string, string>>({})
+  const [notes, setNotes] = useState<Record<string, string>>({})
+  const [revealedWords, setRevealedWords] = useState<string[]>([])
+  const [ieltsAnswers, setIeltsAnswers] = useState<Record<string, number>>({})
+  const [ieltsSubmitted, setIeltsSubmitted] = useState(false)
+  const [draft, setDraft] = useState('')
+  const [checks, setChecks] = useState<boolean[]>(lesson.synthesis.checklist.map(() => false))
+  const [hydrated, setHydrated] = useState(false)
+  const contentRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem(storageKey)
+      if (raw) {
+        const saved = JSON.parse(raw) as Partial<GuidedSavedState>
+        // Hydration is the one point where the external local draft becomes React state.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setPhase(Math.min(Math.max(saved.phase ?? 0, 0), GUIDED_ADVANCED_PHASES.length - 1))
+        setCompleted(saved.completed ?? [])
+        setBaselineUnlocked(saved.baselineUnlocked ?? false)
+        setDiscussionIndex(Math.min(saved.discussionIndex ?? 0, lesson.discussion.questions.length - 1))
+        setOpenedBlocks(saved.openedBlocks?.length ? saved.openedBlocks : [lesson.reading.blocks[0]?.id].filter(Boolean))
+        setPredictions(saved.predictions ?? {})
+        setParaphrases(saved.paraphrases ?? {})
+        setNotes(saved.notes ?? {})
+        setIeltsAnswers(saved.ieltsAnswers ?? {})
+        setIeltsSubmitted(saved.ieltsSubmitted ?? false)
+        setDraft(saved.draft ?? '')
+        if (saved.checks?.length === lesson.synthesis.checklist.length) setChecks(saved.checks)
+      }
+    } catch {
+      // A damaged local draft should not block the guided lesson.
+    }
+    setHydrated(true)
+  }, [lesson.discussion.questions.length, lesson.reading.blocks, lesson.synthesis.checklist.length, storageKey])
+
+  useEffect(() => {
+    if (!hydrated) return
+    const saved: GuidedSavedState = {
+      phase,
+      completed,
+      baselineUnlocked,
+      discussionIndex,
+      openedBlocks,
+      predictions,
+      paraphrases,
+      notes,
+      ieltsAnswers,
+      ieltsSubmitted,
+      draft,
+      checks,
+    }
+    window.localStorage.setItem(storageKey, JSON.stringify(saved))
+  }, [baselineUnlocked, checks, completed, discussionIndex, draft, hydrated, ieltsAnswers, ieltsSubmitted, notes, openedBlocks, paraphrases, phase, predictions, storageKey])
+
+  const progress = Math.round((completed.length / GUIDED_ADVANCED_PHASES.length) * 100)
+  const discussionQuestion = lesson.discussion.questions[discussionIndex]
+  const allIeltsAnswered = lesson.ieltsPractice.questions.every((question) => ieltsAnswers[question.id] !== undefined)
+  const ieltsScore = useMemo(
+    () => lesson.ieltsPractice.questions.filter((question) => ieltsAnswers[question.id] === question.answer).length,
+    [ieltsAnswers, lesson.ieltsPractice.questions],
+  )
+
+  const selectPhase = (nextPhase: number) => {
+    setPhase(nextPhase)
+    window.requestAnimationFrame(() => contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+  }
+
+  const completeAndContinue = () => {
+    setCompleted((current) => current.includes(phase) ? current : [...current, phase].sort())
+    if (phase < GUIDED_ADVANCED_PHASES.length - 1) selectPhase(phase + 1)
+  }
+
+  const resetLesson = () => {
+    window.localStorage.removeItem(storageKey)
+    setPhase(0)
+    setCompleted([])
+    setBaselineUnlocked(false)
+    setDiscussionIndex(0)
+    setShowTeacherNotes(false)
+    setOpenedBlocks([lesson.reading.blocks[0]?.id].filter(Boolean))
+    setPredictions({})
+    setParaphrases({})
+    setNotes({})
+    setRevealedWords([])
+    setIeltsAnswers({})
+    setIeltsSubmitted(false)
+    setDraft('')
+    setChecks(lesson.synthesis.checklist.map(() => false))
+  }
+
+  return (
+    <main className={`wlp-page ${styles.page}`}>
+      <div className="wlp-shell">
+        <nav className="wlp-breadcrumb" aria-label="Migas de pan">
+          <Link href="/practica">Práctica</Link>
+          <span aria-hidden="true">/</span>
+          <Link href="/practica/ideas-avanzadas">Ideas avanzadas</Link>
+          <span aria-hidden="true">/</span>
+          <span>{lesson.breadcrumbTitle}</span>
+        </nav>
+
+        <header className={styles.hero}>
+          <div>
+            <p className="wlp-eyebrow">Piloto guiado · {lesson.evidenceClass} · {lesson.level}</p>
+            <h1>{lesson.title}</h1>
+            <p className={styles.subtitle}>{lesson.subtitle}</p>
+            <p className={styles.objective}>{lesson.objective}</p>
+            <div className={styles.centralQuestion}>
+              <CircleDot size={18} aria-hidden="true" />
+              <span>{lesson.centralQuestion}</span>
+            </div>
+          </div>
+          <aside className={styles.sessionCard} aria-label="Estado de la sesión">
+            <div className={styles.sessionTop}>
+              <span>Guided class</span>
+              <strong>{lesson.guidedMinutes} min</strong>
+            </div>
+            <div className={styles.progressTrack} role="progressbar" aria-label={`${progress}% completado`} aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
+              <span style={{ width: `${progress}%` }} />
+            </div>
+            <p>{completed.length} of {GUIDED_ADVANCED_PHASES.length} phases · saved on this device</p>
+            <div className={styles.sessionStatus}>
+              {baselineUnlocked ? <UnlockKeyhole size={15} /> : <LockKeyhole size={15} />}
+              {baselineUnlocked ? 'First recording is open' : 'Teacher gate is closed'}
+            </div>
+            <button className={styles.reset} onClick={resetLesson} type="button">
+              <RotateCcw size={14} /> Reset local work
+            </button>
+          </aside>
+        </header>
+
+        <nav className={styles.phaseNav} aria-label="Fases de la clase">
+          {GUIDED_ADVANCED_PHASES.map((item, index) => {
+            const Icon = PHASE_ICONS[index]
+            return (
+              <button
+                className={phase === index ? styles.phaseActive : ''}
+                key={item.id}
+                onClick={() => selectPhase(index)}
+                type="button"
+                aria-current={phase === index ? 'step' : undefined}
+              >
+                <span>{completed.includes(index) ? <Check size={15} /> : <Icon size={15} />}</span>
+                <small>{String(index + 1).padStart(2, '0')} · {item.minutes} min</small>
+                <strong>{item.shortLabel}</strong>
+              </button>
+            )
+          })}
+        </nav>
+
+        <div className={styles.workspace} ref={contentRef}>
+          <aside className={styles.phaseRail}>
+            <span>{String(phase + 1).padStart(2, '0')}</span>
+            <div aria-hidden="true" />
+            <p>{GUIDED_ADVANCED_PHASES[phase].label}</p>
+          </aside>
+
+          <section className={styles.phaseContent} key={phase}>
+            {phase === 0 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>Teacher-led opening · {lesson.discussion.targetMinutes} minutes</p>
+                  <h2>Build the question before naming the theory.</h2>
+                  <span>Speak first, collect hypotheses and open the recording only when the group has something worth testing.</span>
+                </div>
+
+                <div className={styles.discussionBoard}>
+                  <div className={styles.discussionCounter}>
+                    <span>{String(discussionIndex + 1).padStart(2, '0')}</span>
+                    <small>of {lesson.discussion.questions.length} · {discussionQuestion.kind}</small>
+                  </div>
+                  <blockquote>{discussionQuestion.prompt}</blockquote>
+                  <button className={styles.teacherNoteToggle} onClick={() => setShowTeacherNotes((value) => !value)} type="button" aria-expanded={showTeacherNotes}>
+                    <NotebookPen size={16} /> {showTeacherNotes ? 'Hide teacher notes' : 'Show teacher notes'}
+                  </button>
+                  {showTeacherNotes && (
+                    <div className={styles.teacherNotes}>
+                      <strong>Teaching intention</strong>
+                      <p>{discussionQuestion.teacherIntent}</p>
+                      <strong>Follow-up</strong>
+                      <ul>{discussionQuestion.followUps.map((item) => <li key={item}>{item}</li>)}</ul>
+                    </div>
+                  )}
+                  <div className={styles.discussionActions}>
+                    <button disabled={discussionIndex === 0} onClick={() => setDiscussionIndex((value) => Math.max(0, value - 1))} type="button">
+                      <ArrowLeft size={16} /> Previous question
+                    </button>
+                    <button disabled={discussionIndex === lesson.discussion.questions.length - 1} onClick={() => setDiscussionIndex((value) => Math.min(lesson.discussion.questions.length - 1, value + 1))} type="button">
+                      Next question <ArrowRight size={16} />
+                    </button>
+                  </div>
+                </div>
+
+                <div className={baselineUnlocked ? styles.gateOpen : styles.gateClosed}>
+                  <div>
+                    {baselineUnlocked ? <UnlockKeyhole size={22} /> : <LockKeyhole size={22} />}
+                    <div>
+                      <strong>{baselineUnlocked ? 'First recording is open' : 'Teacher gate'}</strong>
+                      <p>{baselineUnlocked ? 'Students can move to their first voice note.' : 'Open it when the group has formed an initial explanation.'}</p>
+                    </div>
+                  </div>
+                  <button onClick={() => setBaselineUnlocked((value) => !value)} type="button">
+                    {baselineUnlocked ? 'Close recording' : 'Open first recording'}
+                  </button>
+                </div>
+              </>
+            )}
+
+            {phase === 1 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>Voice I · diagnostic, not graded</p>
+                  <h2>Capture the explanation before the formal input.</h2>
+                  <span>Pronunciation is not scored. The value of this recording is the comparison it makes possible later.</span>
+                </div>
+                {baselineUnlocked ? (
+                  <LocalVoiceRecorder prompt={lesson.recordings.baseline} />
+                ) : (
+                  <div className={styles.waitingGate}>
+                    <LockKeyhole size={28} />
+                    <h3>Waiting for the teacher</h3>
+                    <p>The discussion remains open. When the teacher opens this phase, the local recorder will appear.</p>
+                    <button onClick={() => selectPhase(0)} type="button">Return to discussion</button>
+                  </div>
+                )}
+              </>
+            )}
+
+            {phase === 2 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>Active reading · six evidence roles</p>
+                  <h2>{lesson.reading.title}</h2>
+                  <span>{lesson.reading.dek}</span>
+                </div>
+                <div className={styles.readingLayout}>
+                  <article className={styles.reading} lang="en">
+                    {lesson.reading.blocks.map((block, index) => {
+                      const isOpen = openedBlocks.includes(block.id)
+                      return (
+                        <section className={isOpen ? styles.readingBlockOpen : ''} key={block.id}>
+                          <button
+                            className={styles.readingBlockHeader}
+                            onClick={() => setOpenedBlocks((current) => current.includes(block.id) ? current.filter((id) => id !== block.id) : [...current, block.id])}
+                            type="button"
+                            aria-expanded={isOpen}
+                          >
+                            <span>{String(index + 1).padStart(2, '0')}</span>
+                            <div><small>{ROLE_LABELS[block.role]}</small><strong>{block.heading}</strong></div>
+                            <ChevronDown size={19} aria-hidden="true" />
+                          </button>
+                          {isOpen && (
+                            <div className={styles.readingBlockBody}>
+                              {block.prediction && (
+                                <label className={styles.prediction}>
+                                  <span>Predict before reading</span>
+                                  {block.prediction}
+                                  <textarea value={predictions[block.id] ?? ''} onChange={(event) => setPredictions((current) => ({ ...current, [block.id]: event.target.value }))} placeholder="Write one tentative sentence…" />
+                                </label>
+                              )}
+                              {block.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                              <div className={styles.glossaryRow} aria-label="Terms used in this section">
+                                {block.glossaryTerms.map((term) => <span key={term}>{term}</span>)}
+                              </div>
+                              {block.pausePrompt && <blockquote className={styles.pausePrompt}><span>Teacher pause</span>{block.pausePrompt}</blockquote>}
+                              <label className={styles.paraphrase}>
+                                <span>Close the section in one sentence</span>
+                                <textarea value={paraphrases[block.id] ?? ''} onChange={(event) => setParaphrases((current) => ({ ...current, [block.id]: event.target.value }))} placeholder="The central move in this section is…" />
+                              </label>
+                            </div>
+                          )}
+                        </section>
+                      )
+                    })}
+                    <footer>
+                      Sources:{' '}
+                      {lesson.reading.sources.map((source, index) => (
+                        <span key={source.href}>{index > 0 && ' · '}<a href={source.href} target="_blank" rel="noreferrer">{source.label}</a></span>
+                      ))}. WeLearn’s text is an original educational synthesis.
+                    </footer>
+                  </article>
+
+                  <aside className={styles.argumentMap} aria-label="Argument map">
+                    <p>Argument trace</p>
+                    {lesson.reading.argumentMap.map((item, index) => (
+                      <div key={item.label}>
+                        <span>{String(index + 1).padStart(2, '0')}</span>
+                        <strong>{item.label}</strong>
+                        <p>{item.text}</p>
+                      </div>
+                    ))}
+                  </aside>
+                </div>
+              </>
+            )}
+
+            {phase === 3 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>Retrieval · voice and notes</p>
+                  <h2>What did you understand without copying?</h2>
+                  <span>Record first. Reopen the reading afterwards to repair your notes, not to replace retrieval.</span>
+                </div>
+                <LocalVoiceRecorder prompt={lesson.recordings.postReading} />
+                <div className={styles.notesGrid}>
+                  {NOTE_BUCKETS.map(([id, label]) => (
+                    <label key={id}>
+                      <span>{label}</span>
+                      <textarea value={notes[id] ?? ''} onChange={(event) => setNotes((current) => ({ ...current, [id]: event.target.value }))} placeholder={`Add ${label.toLowerCase()} notes…`} />
+                    </label>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {phase === 4 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>Precision vocabulary · ten reusable tools</p>
+                  <h2>Open a word, then use it to sharpen a distinction.</h2>
+                  <span>The point is not recognition. Each word should become available for the IELTS and synthesis phases.</span>
+                </div>
+                <div className={styles.vocabGrid}>
+                  {lesson.vocabulary.map((item) => {
+                    const isOpen = revealedWords.includes(item.term)
+                    return (
+                      <button
+                        className={isOpen ? styles.vocabOpen : ''}
+                        key={item.term}
+                        onClick={() => setRevealedWords((current) => current.includes(item.term) ? current.filter((term) => term !== item.term) : [...current, item.term])}
+                        type="button"
+                        aria-expanded={isOpen}
+                      >
+                        <span>{item.partOfSpeech}</span>
+                        <strong>{item.term}</strong>
+                        {isOpen ? <div><p>{item.meaning}</p><b>{item.collocation}</b><em>{item.example}</em></div> : <small>Meaning · collocation · example</small>}
+                      </button>
+                    )
+                  })}
+                </div>
+              </>
+            )}
+
+            {phase === 5 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>IELTS-style challenge · feedback closed</p>
+                  <h2>{lesson.ieltsPractice.title}</h2>
+                  <span>{lesson.ieltsPractice.instruction}</span>
+                </div>
+                <div className={styles.assessmentStatus}>
+                  <strong>{Object.keys(ieltsAnswers).length}/{lesson.ieltsPractice.questions.length}</strong>
+                  <span>{ieltsSubmitted ? `${ieltsScore} evidence matches` : 'answered before submission'}</span>
+                </div>
+                <div className={styles.questionStack}>
+                  {lesson.ieltsPractice.questions.map((question) => (
+                    <GuidedQuestion
+                      key={question.id}
+                      question={question}
+                      selected={ieltsAnswers[question.id]}
+                      submitted={ieltsSubmitted}
+                      onSelect={(option) => setIeltsAnswers((current) => ({ ...current, [question.id]: option }))}
+                    />
+                  ))}
+                </div>
+                <div className={styles.submitBar}>
+                  <p>{ieltsSubmitted ? 'Feedback identifies the evidence and the reasoning error; this is not an IELTS band.' : 'Feedback stays closed until every answer is complete.'}</p>
+                  {ieltsSubmitted ? (
+                    <button onClick={() => { setIeltsAnswers({}); setIeltsSubmitted(false) }} type="button"><RotateCcw size={16} /> Try a clean set</button>
+                  ) : (
+                    <button disabled={!allIeltsAnswered} onClick={() => setIeltsSubmitted(true)} type="button">Open evidence feedback</button>
+                  )}
+                </div>
+              </>
+            )}
+
+            {phase === 6 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>Dual listening lab · structure approved, media pending</p>
+                  <h2>Two sources will do different intellectual work.</h2>
+                  <span>This branch deliberately contains no generated lesson audio, transcript or placeholder MP3.</span>
+                </div>
+                <div className={styles.noAudioNotice}>
+                  <Headphones size={28} />
+                  <div><strong>Audio production has not started</strong><p>The interaction is scaffolded so content can be added later without redesigning the lesson.</p></div>
+                </div>
+                <div className={styles.listeningBlueprint}>
+                  <article><span>Audio A · mechanism</span><h3>Researcher explanation</h3><p>{lesson.listeningLab.audioAFunction}</p></article>
+                  <article><span>Audio B · situation</span><h3>Represented decision</h3><p>{lesson.listeningLab.audioBFunction}</p></article>
+                </div>
+                <div className={styles.integrationPrompt}><strong>Future integration task</strong><p>{lesson.listeningLab.integrationPrompt}</p></div>
+              </>
+            )}
+
+            {phase === 7 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>Synthesis · return to the first explanation</p>
+                  <h2>Precision matters more than changing your mind.</h2>
+                  <span>For this no-audio pilot, use the discussion, reading and IELTS evidence. The listening sources will join this prompt later.</span>
+                </div>
+                <p className={styles.synthesisPrompt}>{lesson.synthesis.prompt}</p>
+                <label className={styles.draftLabel}>
+                  <span>Your synthesis in English</span>
+                  <small>{draft.trim() ? draft.trim().split(/\s+/).length : 0} words</small>
+                  <textarea value={draft} onChange={(event) => setDraft(event.target.value)} placeholder="A feeling deserves attention, but it does not answer every question…" />
+                </label>
+                <div className={styles.checklist}>
+                  {lesson.synthesis.checklist.map((item, index) => (
+                    <label key={item}>
+                      <input type="checkbox" checked={checks[index]} onChange={() => setChecks((current) => current.map((value, checkIndex) => checkIndex === index ? !value : value))} />
+                      <span><Check size={14} /></span>{item}
+                    </label>
+                  ))}
+                </div>
+                <LocalVoiceRecorder prompt={lesson.recordings.final} />
+              </>
+            )}
+
+            <footer className={styles.phaseFooter}>
+              {phase > 0 ? <button className={styles.backButton} onClick={() => selectPhase(phase - 1)} type="button"><ArrowLeft size={17} /> Previous</button> : <span />}
+              {phase < GUIDED_ADVANCED_PHASES.length - 1 ? (
+                <button className={styles.nextButton} onClick={completeAndContinue} type="button">Mark phase and continue <ArrowRight size={17} /></button>
+              ) : (
+                <button className={styles.nextButton} onClick={() => setCompleted((current) => current.includes(phase) ? current : [...current, phase].sort())} type="button"><Check size={17} /> Complete pilot</button>
+              )}
+            </footer>
+          </section>
+        </div>
+      </div>
+    </main>
+  )
+}

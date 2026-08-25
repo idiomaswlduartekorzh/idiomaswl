@@ -1,4 +1,4 @@
-export type AdvancedTopicStatus = 'available' | 'planned'
+export type AdvancedTopicStatus = 'available' | 'pilot' | 'planned'
 
 export interface AdvancedTopic {
   slug: string
@@ -106,6 +106,17 @@ export const ADVANCED_TOPICS: AdvancedTopic[] = [
     minutes: 35,
     status: 'available',
     caution: 'Incluye replicaciones y objeciones estadísticas, no solo el estudio de 1999.',
+  },
+  {
+    slug: 'heuristica-del-afecto',
+    category: 'Sesgos',
+    title: 'La heurística del afecto',
+    titleEn: 'When feelings become evidence',
+    premise: 'Una clase guiada para separar la reacción sentida, el riesgo percibido y la evidencia disponible.',
+    level: 'B2–C1',
+    minutes: 110,
+    status: 'pilot',
+    caution: 'Piloto v3: discusión, grabaciones locales, lectura activa e IELTS. Los audios didácticos aún no se han producido.',
   },
   {
     slug: 'hipergamia-dato-o-relato',

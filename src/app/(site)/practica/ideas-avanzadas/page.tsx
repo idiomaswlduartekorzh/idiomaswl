@@ -49,13 +49,13 @@ export default function AdvancedIdeasPage() {
             <p className="wlp-eyebrow">Inglés B2–C1 · pensamiento y lenguaje</p>
             <h1>Ideas que no caben en una respuesta rápida.</h1>
             <p className={styles.lead}>
-              Aquí no memorizas una opinión. Escuchas una tesis, lees sus matices, afilas el
-              vocabulario, la pones a prueba y vuelves a formularla con más precisión.
+              Aquí no memorizas una opinión. La conversación abre el problema; después lees sus
+              matices, recuperas lo entendido, lo pones a prueba y vuelves con más precisión.
             </p>
             <div className={styles.heroMeta} aria-label="Características del curso">
               <span>{availableCount} ciclos completos disponibles</span>
-              <span>6 movimientos por tema</span>
-              <span>32–38 min</span>
+              <span>6 movimientos cognitivos</span>
+              <span>Nuevo piloto guiado · 8 fases</span>
             </div>
             <Link className="wlp-btn wlp-btn--primary" href="/practica/ideas-avanzadas/efecto-encuadre">
               Empezar con el encuadre <ArrowRight size={17} aria-hidden="true" />
@@ -122,9 +122,9 @@ export default function AdvancedIdeasPage() {
                     <span className={styles.category}>
                       {CATEGORY_NUMBER[topic.category]} · {topic.category}
                     </span>
-                    <span className={topic.status === 'available' ? styles.available : styles.planned}>
-                      {topic.status === 'available' ? <Check size={13} /> : <LockKeyhole size={13} />}
-                      {topic.status === 'available' ? 'Disponible' : 'En diseño'}
+                    <span className={topic.status === 'available' ? styles.available : topic.status === 'pilot' ? styles.pilot : styles.planned}>
+                      {topic.status === 'planned' ? <LockKeyhole size={13} /> : <Check size={13} />}
+                      {topic.status === 'available' ? 'Disponible' : topic.status === 'pilot' ? 'Piloto v3' : 'En diseño'}
                     </span>
                   </div>
                   <h3>{topic.title}</h3>
@@ -134,17 +134,17 @@ export default function AdvancedIdeasPage() {
                   <div className={styles.topicFooter}>
                     <span>{topic.level}</span>
                     <span>{topic.minutes} min</span>
-                    <strong>{topic.status === 'available' ? 'Abrir ciclo →' : 'Próximamente'}</strong>
+                    <strong>{topic.status === 'available' ? 'Abrir ciclo →' : topic.status === 'pilot' ? 'Revisar piloto →' : 'Próximamente'}</strong>
                   </div>
                 </>
               )
 
-              return topic.status === 'available' ? (
+              return topic.status !== 'planned' ? (
                 <Link className={styles.topicCard} href={`/practica/ideas-avanzadas/${topic.slug}`} key={topic.slug}>
                   {content}
                 </Link>
               ) : (
-                <article className={`${styles.topicCard} ${styles.topicCardPlanned}`} key={topic.slug} aria-disabled="true">
+                <article className={`${styles.topicCard} ${styles.topicCardPlanned}`} key={topic.slug}>
                   {content}
                 </article>
               )

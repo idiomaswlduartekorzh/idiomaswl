@@ -1,7 +1,7 @@
 # Modelo base para revisión — The affect heuristic
 
-Estado: **maqueta editorial; todavía no es una lección publicada**  
-Blueprint: [`practica-ideas-avanzadas-blueprint.md`](practica-ideas-avanzadas-blueprint.md)  
+Estado: **piloto v3 implementado en rama aislada; todavía no publicado y sin audios didácticos**
+Blueprint: [`practica-ideas-avanzadas-blueprint.md`](practica-ideas-avanzadas-blueprint.md)
 
 ## 1. Identidad
 
@@ -77,7 +77,7 @@ decida entregar. No hay nota ni modelo; el producto conserva este audio para el 
 
 ## 4. Fase 3 — Lectura larga activa
 
-Título: **When risk feels like a property of the object**  
+Título: **When risk feels like a property of the object**
 Extensión objetivo: 1.250–1.450 palabras.
 
 | Bloque | Rol | Contenido | Herramienta activa |

@@ -284,6 +284,7 @@ a.topicCard:hover {
 }
 
 .available,
+.pilot,
 .planned {
   align-items: center;
   border: 1px solid currentColor;
@@ -296,6 +297,7 @@ a.topicCard:hover {
 }
 
 .available { color: var(--wlp-ok); }
+.pilot { color: var(--orbit-rust); }
 .planned { color: var(--wlp-muted); }
 
 .topicCard h3 {
@@ -403,4 +405,3 @@ a.topicCard:hover {
     transition: none;
   }
 }
-

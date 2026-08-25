@@ -1,9 +1,10 @@
 # Ideas avanzadas — blueprint editorial y pedagógico
 
-Estado: **propuesta para revisión**  
-Versión: `0.3.0`
-Ruta del producto: `/practica/ideas-avanzadas`  
-Nivel de lengua: **B2–C1**  
+Estado: **piloto v3 en rama aislada; no publicado**
+Versión: `0.3.1`
+Ruta del producto: `/practica/ideas-avanzadas`
+
+Nivel de lengua: **B2–C1**
 
 ## 1. Qué existe y qué faltaba
 
@@ -18,6 +19,19 @@ producción. Eso es un **contrato técnico inicial**, no un blueprint editorial 
 orden actual —escucha antes de lectura— no representa todavía la coreografía de clase descrita en
 este blueprint: conversación guiada, primera grabación, lectura activa, recuperación, práctica
 IELTS, escucha dual y síntesis.
+
+### Corte implementado en `codex/practica-avanzada`
+
+El primer corte v3 usa **The affect heuristic** y convive con el motor anterior mediante un contrato
+y un cliente separados. Incluye las ocho fases, gate docente local, grabaciones privadas en memoria,
+lectura por bloques, predicciones, paráfrasis, mapa argumental, notas, vocabulario, ocho preguntas
+IELTS y síntesis. La compuerta `npm run check:advanced-guided` verifica estructura, reparto de clave,
+longitud de opciones, feedback, evidencia y ausencia de referencias a medios antes de autorizarlos.
+
+No se crearon audios didácticos, transcripciones de escucha ni archivos MP3/WAV. El laboratorio dual
+solo presenta las dos funciones futuras y su tarea de integración. Tampoco existe todavía sesión
+docente sincronizada ni bandeja de entrega: el gate opera en el dispositivo y las grabaciones del
+estudiante desaparecen al cerrar o recargar la pestaña.
 
 Antes de este documento faltaban:
 

@@ -2,18 +2,20 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { LearningResourceSchema, QuizSchema } from '@/components/practica/EducationSchema'
 import { ADVANCED_LESSONS, getAdvancedLesson, getAdvancedTopic } from '@/data/practica/advanced-topics'
+import { GUIDED_ADVANCED_LESSONS, getGuidedAdvancedLesson } from '@/data/practica/advanced-guided-topics'
 import AdvancedLessonClient from './AdvancedLessonClient'
+import GuidedAdvancedLessonClient from './GuidedAdvancedLessonClient'
 
 type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
-  return ADVANCED_LESSONS.map((lesson) => ({ slug: lesson.slug }))
+  return [...ADVANCED_LESSONS, ...GUIDED_ADVANCED_LESSONS].map((lesson) => ({ slug: lesson.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const topic = getAdvancedTopic(slug)
-  if (!topic || topic.status !== 'available') return {}
+  if (!topic || topic.status === 'planned') return {}
 
   return {
     title: `${topic.title} en inglés B2–C1 | Ciclo integrado`,
@@ -29,8 +31,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function AdvancedTopicPage({ params }: Props) {
   const { slug } = await params
-  const lesson = getAdvancedLesson(slug)
+  const guidedLesson = getGuidedAdvancedLesson(slug)
+  const legacyLesson = getAdvancedLesson(slug)
+  const lesson = guidedLesson ?? legacyLesson
   if (!lesson) notFound()
+  const lessonClient = guidedLesson
+    ? <GuidedAdvancedLessonClient lesson={guidedLesson} />
+    : legacyLesson
+      ? <AdvancedLessonClient lesson={legacyLesson} />
+      : null
 
   const url = `https://www.idiomaswl.com/practica/ideas-avanzadas/${slug}`
   const keywords = [
@@ -55,7 +64,7 @@ export default async function AdvancedTopicPage({ params }: Props) {
         url={url}
         description="Preguntas de escucha, lectura crítica, vocabulario académico y aplicación argumentada."
       />
-      <AdvancedLessonClient lesson={lesson} />
+      {lessonClient}
     </>
   )
 }
