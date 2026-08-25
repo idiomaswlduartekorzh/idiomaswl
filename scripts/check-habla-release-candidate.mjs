@@ -8,6 +8,7 @@ import {
   ROLEPLAY_ITALIANO_A2_CANDIDATE,
   ROLEPLAY_PORTUGUES_A2_CANDIDATE,
   ROLEPLAY_ALEMAN_A2_CANDIDATE,
+  ROLEPLAY_RUSO_A2_CANDIDATE,
 } from '../src/data/practica/habla-acompanado/drafts/index.ts'
 import { KOREAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-coreano-a2.ts'
 import { ENGLISH_A1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a1.ts'
@@ -17,6 +18,7 @@ import { FRENCH_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/
 import { ITALIAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-italiano-a2.ts'
 import { PORTUGUESE_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-portugues-a2.ts'
 import { GERMAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-aleman-a2.ts'
+import { RUSSIAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ruso-a2.ts'
 
 const progressOnly = process.argv.includes('--progress')
 const targetArg = process.argv.find((argument) => argument.startsWith('--target='))
@@ -64,10 +66,15 @@ const configurations = {
     scenarios: ROLEPLAY_ALEMAN_A2_CANDIDATE,
     audits: GERMAN_A2_RELEASE_AUDITS,
   },
+  'ruso-a2': {
+    label: 'ruso A2',
+    scenarios: ROLEPLAY_RUSO_A2_CANDIDATE,
+    audits: RUSSIAN_A2_RELEASE_AUDITS,
+  },
 }
 const configuration = configurations[target]
 if (!configuration) {
-  console.error(`Target de release desconocido: ${target}. Usa ingles-a1, ingles-a2, ingles-b1, coreano-a2, frances-a2, italiano-a2, portugues-a2 o aleman-a2.`)
+  console.error(`Target de release desconocido: ${target}. Usa ingles-a1, ingles-a2, ingles-b1, coreano-a2, frances-a2, italiano-a2, portugues-a2, aleman-a2 o ruso-a2.`)
   process.exit(1)
 }
 const newScenarios = configuration.scenarios
