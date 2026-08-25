@@ -54,6 +54,7 @@
   text-transform: uppercase;
 }
 
+.header h1,
 .header h2 {
   color: #fff;
   font-size: clamp(1.75rem, 4vw, 3rem);
@@ -205,6 +206,7 @@
   max-width: 1040px;
 }
 
+.compact .header h1,
 .compact .header h2 {
   font-size: clamp(1.55rem, 3vw, 2.35rem);
 }
@@ -250,6 +252,7 @@
   color: #0569d8;
 }
 
+.ios .header h1,
 .ios .header h2,
 .ios .editorialNote h3 {
   color: #1d1d1f;

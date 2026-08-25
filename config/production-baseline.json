@@ -64,6 +64,11 @@
     "src/components/practica/PodcastFeature.tsx",
     "src/components/practica/PodcastFeature.module.css",
     "src/components/practica/EpisodeNotes.tsx",
+    "src/components/practica/ExamPodcastShelf.tsx",
+    "src/components/practica/ExamPodcastShelf.module.css",
+    "src/data/practica/exam-podcast-catalog.ts",
+    "src/app/(site)/examenes/[exam]/podcast/[slug]/page.tsx",
+    "src/app/(site)/examenes/[exam]/podcast/[slug]/page.module.css",
     "src/lib/storage.ts",
     "src/components/lesson/stages/step001/Activation001.tsx",
     "src/components/lesson/stages/step002/Activation002.tsx",
@@ -136,11 +141,13 @@
     "src/components/SiteNav.tsx": ["{ label: 'Podcasts',", "href: '/podcasts'"],
     "src/app/(site)/podcasts/page.tsx": ["PODCAST_LIBRARY.map", "Estrategia que se escucha."],
     "src/data/practica/podcast-library.ts": ["PODCAST_LIBRARY", "digital-sat-strategy-map"],
+    "src/data/practica/exam-podcast-catalog.ts": ["EXAM_PODCASTS", "getExamPodcast"],
+    "src/app/(site)/examenes/[exam]/podcast/[slug]/page.tsx": ["generateStaticParams", "PodcastEpisode", "LearningResource"],
     "src/lib/storage.ts": ["KR_PODCAST =", "KR_PODCAST_002", "KR_PODCAST_003", "KR_PODCAST_004", "KR_PODCAST_005", "KR_PODCAST_006", "KR_PODCAST_007"],
     "src/app/(site)/home/HomePage.tsx": ["HomeResultsArchive"],
     "src/app/(site)/precios/PreciosClient.tsx": ["WompiCheckoutProvider", "WompiCheckoutButton"],
     "src/app/(site)/nivel-radar/page.tsx": ["NivelRadarClient"],
-    "src/app/(site)/practica/ielts/IELTSHubClient.tsx": ["IELTS Academic"],
+    "src/app/(site)/practica/ielts/IELTSHubClient.tsx": ["IELTS Academic", "ExamPodcastShelf"],
     "src/app/(site)/practica/icfes-saber-11/IcfesHubClient.tsx": ["IcfesAdaptiveGame"],
     "src/data/icfes-smart-route.ts": ["ICFES_SMART_BANK_SUMMARY"],
     "src/app/(site)/practica/ideas-avanzadas/page.tsx": ["ADVANCED_TOPICS", "Ideas que no caben"],
@@ -151,7 +158,7 @@
     "src/data/practica/habla-acompanado/index.ts": ["ROLEPLAY_SETS", "ROLEPLAY_PUBLISHED_FLOORS"],
     "src/components/practica/PdfDownloadButton.tsx": ["Descargar PDF"],
     "src/lib/pdf/brandedDoc.ts": ["createBrandedDoc"],
-    "src/app/sitemap.ts": ["GRAMMAR_ENTRIES", "`${BASE}/podcasts`"]
+    "src/app/sitemap.ts": ["GRAMMAR_ENTRIES", "`${BASE}/podcasts`", "EXAM_PODCASTS"]
   },
   "requiredNpmScripts": [
     "check:production-baseline",
@@ -212,7 +219,14 @@
     { "path": "/practica/icfes-saber-11", "marker": "ICFES" },
     { "path": "/nivel-radar", "marker": "nivel" },
     { "path": "/examenes/toefl", "marker": "TOEFL" },
-    { "path": "/examenes/sat", "marker": "SAT" }
+    { "path": "/examenes/sat", "marker": "SAT" },
+    { "path": "/examenes/ielts/podcast/ielts-academic-reading-strategies-and-traps", "marker": "IELTS Academic Reading: Strategies and Traps" },
+    { "path": "/examenes/ielts/podcast/mastering-ielts-academic-writing-task-1", "marker": "Mastering IELTS Academic Writing Task 1" },
+    { "path": "/examenes/ielts/podcast/picking-the-ielts-task-2-lock", "marker": "Picking the IELTS Task 2 Lock" },
+    { "path": "/examenes/toefl/podcast/toefl-ibt-2026-strategy-map", "marker": "Your 2026 TOEFL iBT Strategy Map" },
+    { "path": "/examenes/icfes/podcast/estrategias-siete-partes-icfes-saber-11", "marker": "Estrategias para las 7 partes del ICFES Saber 11" },
+    { "path": "/examenes/cambridge-b2/podcast/how-to-pass-cambridge-b2-first", "marker": "How to Pass Cambridge B2 First" },
+    { "path": "/examenes/sat/podcast/digital-sat-strategy-map", "marker": "The Strategic Map for the Digital SAT" }
   ],
   "smokeAssets": [
     { "path": "/audio/ielts/reading/ielts-academic-reading-strategies-and-traps.mp3", "contentType": "audio/mpeg", "minimumBytes": 10000000 },

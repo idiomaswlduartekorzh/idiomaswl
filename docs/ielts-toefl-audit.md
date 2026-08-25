@@ -4,6 +4,14 @@ Date: 2026-07-11
 Scope: `/practica/ielts` and `/practica/toefl`
 Status: Phase 0 baseline for the SEO/EAO expansion plan
 
+## Podcast architecture update: 2026-08-25
+
+- The audio library remains available at `/podcasts`, but each of the seven exam-preparation episodes now has a canonical editorial URL under `/examenes/<exam>/podcast/<slug>`.
+- IELTS exposes all three of its episodes from the clean top-level practice hub and retains contextual audio blocks inside Reading, Writing Task 1 and Writing Task 2.
+- TOEFL no longer duplicates a long-form podcast block inside both `/practica/toefl` and `/examenes/toefl`; both hubs use a compact audio shelf and send readers to the episode page for the complete written companion.
+- ICFES, Cambridge B2 and Digital SAT follow the same hub-to-episode pattern. The shared catalog now feeds the hubs, dedicated pages, metadata, structured data and sitemap.
+- The new files and all seven public episode routes are protected in `config/production-baseline.json`. Operational details live in `docs/podcast-exam-hubs.md`.
+
 ## Progress update: 2026-07-12
 
 - IELTS Academic Reading question-type coverage is now complete in the implementation inventory: 14 official task-type routes are live under `/practica/ielts/reading/tipos-de-preguntas`.

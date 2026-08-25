@@ -9,7 +9,7 @@ const URL = 'https://www.idiomaswl.com/herramientas'
 export const metadata: Metadata = {
   title: 'Herramientas gratuitas para estudiar idiomas',
   description:
-    'Utilidades abiertas de Idiomas WeLearn: transcripción fonética del inglés al alfabeto AFI, con acento británico y americano. Sin registro.',
+    'Utilidades abiertas de Idiomas WeLearn: podcasts para preparar exámenes, quizes y transcripción fonética. Sin registro.',
   alternates: { canonical: URL },
   // Sin esto se hereda el `openGraph` del layout raíz entero, `url` incluida: compartir
   // esta página por WhatsApp enseñaba el título del sitio y un enlace a la portada.
@@ -46,6 +46,16 @@ interface Tool {
 }
 
 const TOOLS: Tool[] = [
+  {
+    slug: 'podcasts-examenes',
+    href: '/podcasts',
+    flag: '🎧',
+    name: 'Podcasts de exámenes',
+    tagline:
+      'Escucha mapas de estrategia para IELTS, TOEFL, ICFES, Cambridge B2 y SAT, con notas editoriales y rutas de práctica.',
+    detail: '7 episodios · 5 exámenes',
+    color: SKILL_ACCENT.escucha.light,
+  },
   {
     slug: 'quizes',
     href: '/herramientas/quizes',

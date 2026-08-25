@@ -92,6 +92,7 @@ export default function Task2HubPage() {
                   <li>turn the episode into practice using the three paths directly below.</li>
                 </ul>
                 <nav className={styles.podcastLinks} aria-label="Continue from the audio guide">
+                  <Link href="/examenes/ielts/podcast/picking-the-ielts-task-2-lock">Episode page & notes <ArrowRight size={15} aria-hidden="true" /></Link>
                   <a href="#build-the-essay">Architecture <ArrowRight size={15} aria-hidden="true" /></a>
                   <a href="#question-types">Question types <ArrowRight size={15} aria-hidden="true" /></a>
                   <a href="#transferable-skills">Writing skills <ArrowRight size={15} aria-hidden="true" /></a>

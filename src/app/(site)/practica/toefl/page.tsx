@@ -3,10 +3,12 @@ import Link from 'next/link';
 import { ArrowRight, BookOpenText, Check, Headphones, Mic2, PenLine } from 'lucide-react';
 
 import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
-import PodcastFeature from '@/components/practica/PodcastFeature';
-import toeflStrategyMapNotes, { TOEFL_STRATEGY_MAP_PODCAST } from '@/data/practica/podcasts/your-2026-toefl-ibt-strategy-map';
+import ExamPodcastShelf from '@/components/practica/ExamPodcastShelf';
+import { getExamPodcasts } from '@/data/practica/exam-podcast-catalog';
 
 import styles from './ios.module.css';
+
+const TOEFL_PODCASTS = getExamPodcasts('toefl');
 
 export const metadata: Metadata = {
   title: 'Práctica TOEFL 2026: 4 secciones y 20 simulacros',
@@ -105,17 +107,12 @@ export default function TOEFLPage() {
         </div>
       </section>
 
-      <PodcastFeature
-        {...TOEFL_STRATEGY_MAP_PODCAST}
-        notes={toeflStrategyMapNotes}
-        variant="ios"
-        links={[
-          { href: '/practica/toefl/reading', label: 'Reading route' },
-          { href: '/practica/toefl/listening', label: 'Listening route' },
-          { href: '/practica/toefl/writing', label: 'Writing route' },
-          { href: '/practica/toefl/speaking', label: 'Speaking route' },
-          { href: '/examenes/toefl', label: 'Full mock tests' },
-        ]}
+      <ExamPodcastShelf
+        episodes={TOEFL_PODCASTS}
+        locale="es"
+        eyebrow="Sala de estudio TOEFL"
+        title="El mapa de audio del TOEFL iBT 2026"
+        description="Escucha la orientación aquí o abre su página editorial para consultar el mapa escrito, las aclaraciones del formato y las rutas de práctica de cada sección."
       />
 
       <section className={styles.routes} aria-labelledby="toefl-routes-heading">

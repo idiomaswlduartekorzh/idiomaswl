@@ -20,6 +20,7 @@ import {
   speakingPath,
 } from '@/data/practica/habla-acompanado';
 import { IDIOMAS_PUBLICADOS } from '@/data/fonetica/idiomas';
+import { EXAM_PODCASTS } from '@/data/practica/exam-podcast-catalog';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -104,6 +105,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.75,
+    })),
+    // Cada episodio vive dentro de su examen y tiene contenido editorial propio.
+    // El catálogo es la única fuente para el índice /podcasts, los hubs y el sitemap.
+    ...EXAM_PODCASTS.map((episode) => ({
+      url: `${BASE}${episode.href}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.78,
     })),
     // Espinazo del superhub de SAT — ver docs/sat-superhub-plan.md
     ...SAT_GUIDE_SLUGS.map((slug) => ({

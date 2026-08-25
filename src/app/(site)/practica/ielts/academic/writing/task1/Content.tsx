@@ -225,6 +225,7 @@ export default function Task1HubPage() {
                   <li>turn Read, Select, Group and Report into practice using the three paths directly below.</li>
                 </ul>
                 <nav className={styles.podcastLinks} aria-label="Continue from the audio guide">
+                  <Link href="/examenes/ielts/podcast/mastering-ielts-academic-writing-task-1">Episode page & notes <ArrowRight size={15} aria-hidden="true" /></Link>
                   <a href="#response-architecture">Response plan <ArrowRight size={15} aria-hidden="true" /></a>
                   <a href="#visual-types">Visual types <ArrowRight size={15} aria-hidden="true" /></a>
                   <a href="#transferable-skills">Writing skills <ArrowRight size={15} aria-hidden="true" /></a>

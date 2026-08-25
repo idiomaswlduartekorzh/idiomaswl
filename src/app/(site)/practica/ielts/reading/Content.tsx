@@ -267,6 +267,7 @@ export default function IELTSReadingHub() {
                   <li>move from focused question practice to mixed transfer, adding full timing only after the method is stable.</li>
                 </ul>
                 <nav className={styles.podcastLinks} aria-label="Continue from the audio guide">
+                  <Link href="/examenes/ielts/podcast/ielts-academic-reading-strategies-and-traps">Episode page & notes <ArrowRight size={15} aria-hidden="true" /></Link>
                   <a href="#question-types">Question types <ArrowRight size={15} aria-hidden="true" /></a>
                   <a href="#reading-skills">Reading skills <ArrowRight size={15} aria-hidden="true" /></a>
                   <Link href="/practica/ielts/reading/mixed-practice">Mixed practice <ArrowRight size={15} aria-hidden="true" /></Link>

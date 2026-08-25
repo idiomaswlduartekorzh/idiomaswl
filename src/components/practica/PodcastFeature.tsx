@@ -25,6 +25,7 @@ type PodcastFeatureProps = {
   accent?: string;
   variant?: 'default' | 'ios';
   locale?: 'en' | 'es';
+  headingLevel?: 1 | 2;
 };
 
 const COPY = {
@@ -71,11 +72,13 @@ export default function PodcastFeature({
   accent = '#2563eb',
   variant = 'default',
   locale = 'en',
+  headingLevel = 2,
 }: PodcastFeatureProps) {
   const tone = {
     '--podcast-accent': accent,
   } as CSSProperties;
   const copy = COPY[locale];
+  const Heading = headingLevel === 1 ? 'h1' : 'h2';
 
   return (
     <section
@@ -91,7 +94,7 @@ export default function PodcastFeature({
               <p className={styles.eyebrow}>
                 <Headphones size={16} aria-hidden="true" /> {copy.eyebrow}
               </p>
-              <h2 id={`${id}-heading`}>{title}</h2>
+              <Heading id={`${id}-heading`}>{title}</Heading>
               <p>{description}</p>
             </div>
             <div className={styles.duration} aria-label={`${copy.duration}: ${duration}`}>

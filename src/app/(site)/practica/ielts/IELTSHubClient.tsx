@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { ArrowRight, BookOpenText, Headphones, Mic2, PenLine } from 'lucide-react';
+import ExamPodcastShelf from '@/components/practica/ExamPodcastShelf';
+import { getExamPodcasts } from '@/data/practica/exam-podcast-catalog';
 import styles from './IeltsHub.module.css';
+
+const IELTS_PODCASTS = getExamPodcasts('ielts');
 
 const MODALITIES = [
   {
@@ -74,6 +78,14 @@ export default function IELTSHubClient() {
             ))}
           </div>
         </section>
+
+        <ExamPodcastShelf
+          episodes={IELTS_PODCASTS}
+          locale="en"
+          eyebrow="IELTS audio study room"
+          title="Three podcast maps for the work ahead"
+          description="Start with the episode that matches your next task. Each one has its own exam page with the audio, an editorial accuracy note, a written study map and direct routes into practice."
+        />
 
         <section className={styles.section} aria-labelledby="skills-heading">
           <div className={styles.sectionHeading}><p className={styles.kicker}>Choose a live skill</p><h2 id="skills-heading">Learn the method, practise it, then transfer it</h2><p>Reading and Writing now use the same product structure: clear architecture, focused sub-skills, guided practice and a route into independent work.</p></div>

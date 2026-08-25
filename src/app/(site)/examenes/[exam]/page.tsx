@@ -7,20 +7,8 @@ import ExamGuideBlock from './ExamGuide';
 import ExamJsonLd from './ExamJsonLd';
 import ExamCluster from './ExamCluster';
 import { EXAM_GUIDES } from '@/data/examGuides';
-import PodcastFeature from '@/components/practica/PodcastFeature';
-import { TOEFL_STRATEGY_MAP_PODCAST } from '@/data/practica/podcasts/your-2026-toefl-ibt-strategy-map';
-import {
-  ICFES_SEVEN_PARTS_NOTES,
-  ICFES_SEVEN_PARTS_PODCAST,
-} from '@/data/practica/podcasts/estrategias-para-las-7-partes-del-icfes';
-import {
-  CAMBRIDGE_B2_FIRST_NOTES,
-  CAMBRIDGE_B2_FIRST_PODCAST,
-} from '@/data/practica/podcasts/how-to-pass-cambridge-b2-first';
-import {
-  DIGITAL_SAT_STRATEGY_MAP_NOTES,
-  DIGITAL_SAT_STRATEGY_MAP_PODCAST,
-} from '@/data/practica/podcasts/strategic-map-for-the-digital-sat';
+import ExamPodcastShelf from '@/components/practica/ExamPodcastShelf';
+import { getExamPodcasts } from '@/data/practica/exam-podcast-catalog';
 import toeflStyles from './toefl-ios.module.css';
 
 export async function generateStaticParams() {
@@ -84,6 +72,7 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   const exam = EXAMS[slug];
   if (!exam) notFound();
   const guide = EXAM_GUIDES[slug];
+  const podcasts = getExamPodcasts(slug);
 
   const content = (
     <>
@@ -101,63 +90,15 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
       {/* Animated infographic */}
       <ExamInfoGraphic exam={exam} />
 
-      {slug === 'toefl' && (
-        <PodcastFeature
-          {...TOEFL_STRATEGY_MAP_PODCAST}
-          compact
-          variant="ios"
-          links={[
-            { href: '/practica/toefl#toefl-strategy-map', label: 'Episode notes and study map' },
-            { href: '/practica/toefl/reading', label: 'Practise Reading' },
-            { href: '/practica/toefl/listening', label: 'Practise Listening' },
-            { href: '/practica/toefl/writing', label: 'Practise Writing' },
-            { href: '/practica/toefl/speaking', label: 'Practise Speaking' },
-          ]}
+      {podcasts.length > 0 ? (
+        <ExamPodcastShelf
+          episodes={podcasts}
+          locale="es"
+          eyebrow={`Podcast de ${exam.name}`}
+          title={podcasts.length > 1 ? `Guías de audio para preparar ${exam.name}` : `Una guía de audio para preparar ${exam.name}`}
+          description="Cada episodio tiene una página propia dentro de este examen, con contexto editorial, notas escritas y enlaces directos a la práctica relacionada."
         />
-      )}
-
-      {slug === 'icfes' && (
-        <PodcastFeature
-          {...ICFES_SEVEN_PARTS_PODCAST}
-          accent={exam.color}
-          notes={ICFES_SEVEN_PARTS_NOTES}
-          links={[
-            { href: '/practica/icfes-saber-11', label: 'Abrir la ruta de las 7 partes' },
-            { href: '/practica/icfes-saber-11/diagnostico', label: 'Hacer el diagnóstico' },
-            { href: '/practica/icfes-saber-11/simulacro-guiado', label: 'Practicar con guía' },
-            { href: '/practica/icfes-saber-11/repaso-errores', label: 'Revisar errores' },
-            { href: '/practica/icfes-saber-11/plan-de-estudio', label: 'Crear un plan' },
-          ]}
-        />
-      )}
-
-      {slug === 'cambridge-b2' && (
-        <PodcastFeature
-          {...CAMBRIDGE_B2_FIRST_PODCAST}
-          accent={exam.color}
-          notes={CAMBRIDGE_B2_FIRST_NOTES}
-          links={[
-            { href: '/examenes/cambridge-b2/practica/set-1', label: 'Take the complete diagnostic' },
-            { href: '/practica/ingles/b2/uso-del-idioma', label: 'Train B2 Use of English' },
-            { href: '/practica/ingles/b2/conectores', label: 'Practise cohesion and connectors' },
-            { href: '/nivel-radar', label: 'Check your current level' },
-          ]}
-        />
-      )}
-
-      {slug === 'sat' && (
-        <PodcastFeature
-          {...DIGITAL_SAT_STRATEGY_MAP_PODCAST}
-          accent={exam.color}
-          notes={DIGITAL_SAT_STRATEGY_MAP_NOTES}
-          links={[
-            { href: '/examenes/sat/practica/set-1', label: 'Take the SAT diagnostic' },
-            { href: '/examenes/sat/guia/reading-and-writing', label: 'Map Reading and Writing' },
-            { href: '/examenes/sat/guia/puntaje-sat-universidades', label: 'Set a target score' },
-            { href: '/examenes/sat/guia/como-estudiar-sat-desde-cero', label: 'Build the study plan' },
-          ]}
-        />
-      )}
+      ) : null}
 
       {/* ── Practice mocks ── */}
       <MockGrid exam={exam} />

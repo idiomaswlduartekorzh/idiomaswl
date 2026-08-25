@@ -86,7 +86,7 @@ export default function PodcastsPage() {
               </div>
               <div className={styles.episodeAction}>
                 <Link href={episode.href}>
-                  Abrir guía y notas <ArrowRight size={17} aria-hidden="true" />
+                  Abrir episodio y notas <ArrowRight size={17} aria-hidden="true" />
                 </Link>
               </div>
             </article>
