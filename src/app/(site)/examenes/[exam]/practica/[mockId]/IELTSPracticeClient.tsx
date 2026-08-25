@@ -1024,17 +1024,24 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   ) ?? 'reading';
 
   const [activeSkill, setActiveSkill] = useState(firstActiveSkill);
-  const [ans, setAns] = useState<AllAnswers>(() => {
-    if (typeof window === 'undefined') return emptyAnswers();
+  const [ans, setAns] = useState<AllAnswers>(emptyAnswers);
+  const [draftHydrated, setDraftHydrated] = useState(false);
+
+  useEffect(() => {
+    let savedAnswers: AllAnswers | null = null;
     try {
       const saved = sessionStorage.getItem(draftKey);
       if (saved) {
         const parsed: unknown = JSON.parse(saved);
-        if (isSavedAnswers(parsed) && Object.values(parsed).some(map => Object.keys(map).length > 0)) return parsed;
+        if (isSavedAnswers(parsed) && Object.values(parsed).some(map => Object.keys(map).length > 0)) savedAnswers = parsed;
       }
     } catch {}
-    return emptyAnswers();
-  });
+    const timer = window.setTimeout(() => {
+      if (savedAnswers) setAns(savedAnswers);
+      setDraftHydrated(true);
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [draftKey]);
   const [recordings, setRecordings] = useState<SpeakAudioMap>({});
   const [recordingIds, setRecordingIds] = useState<Set<string>>(new Set());
   const [finishError, setFinishError] = useState('');
@@ -1044,8 +1051,9 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   const runnableSkills = skills.filter(skill => !comingSoonSkills.has(skill));
 
   useEffect(() => {
+    if (!draftHydrated) return;
     try { sessionStorage.setItem(draftKey, JSON.stringify(ans)); } catch {}
-  }, [ans, draftKey]);
+  }, [ans, draftHydrated, draftKey]);
 
   const handlers = {
     onFill: useCallback((k:string,v:string)=>setAns(p=>({...p,fills:{...p.fills,[k]:v}})),[]),
@@ -1223,7 +1231,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
       <header className="prac-topbar" style={{'--exam-color':exam.color} as React.CSSProperties}>
         <div className="prac-topbar__left">
           <Link href={`/examenes/${exam.slug}`} className="prac-topbar__back">IELTS</Link>
-          <span className="prac-topbar__title">{mock.title}</span>
+          <h1 className="prac-topbar__title">{mock.title}</h1>
         </div>
         <div className="prac-topbar__right">
           <span className="ielts-topbar__progress">{totalAnswered}/{totalQs} respondidas</span>

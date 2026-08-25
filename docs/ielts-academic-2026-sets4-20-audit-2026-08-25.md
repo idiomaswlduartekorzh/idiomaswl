@@ -2,7 +2,7 @@
 
 Fecha de contraste: 25 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  
-Dictamen actual: **BLOCKED en Listening — los 17 sets requieren guion y audio v2**
+Dictamen actual: **APROBADO excepto Listening — los 17 sets requieren guion y audio v2**
 
 ## Alcance responsable
 
@@ -103,6 +103,30 @@ existen. No basta con sintetizar esos ocho guiones cortos: primero deben ampliar
   cliente y el servidor puntúa exactamente el mismo orden privado.
 - Catorce distractores se revisaron editorialmente para retirar la pista de longitud sin
   debilitar su plausibilidad.
+- El intento persiste borradores sólo después de hidratar el navegador; una sesión guardada
+  ya no puede alterar ni ser sobrescrita durante el primer render del servidor.
+- El resultado privado separa con claridad bandas parciales, `Overall pendiente` y resultado
+  final, y verifica `user_id` antes de mostrar textos, notas o grabaciones.
+- La navegación global usa un estado inicial de sesión determinista. La build de producción
+  ya no presenta deriva de hidratación cuando Supabase se inyecta en runtime.
+- El soporte flotante usa CSS global, reconoce las rutas reales de IELTS y respeta
+  `prefers-reduced-motion`; el documento evita landmarks `main` anidados.
+
+## Auditoría final no-audio
+
+| Perspectiva | Evidencia | Resultado |
+|---|---|---|
+| IELTS experto | 17× contratos L/R/W/S, 40/40 L/R, tiempos por etapa, familias, claves y rúbricas | APROBADO |
+| Fullstack | privacidad por usuario, scoring inmutable, Task 2 doble, Overall sólo con L/R/W/S | 7/7 + 12/12 |
+| Usuario promedio | catálogo libre, disclosure honesto, borrador persistente, estados pendientes legibles | APROBADO |
+| UI/UX | desktop 1440, móvil 390, sin overflow, locks ni errores de navegador | APROBADO |
+| Accesibilidad | skip link IELTS, alerts vivos, controles con nombre, reduced motion, landmarks válidos | APROBADO |
+| Integración | guardián de práctica y build Webpack de 2.369 rutas | APROBADO |
+
+Smoke de producción reproducible: catálogo `200`; Sets 5 y 13 en desktop/móvil; cero
+bloqueos de suscripción; ruta de resultado ajena redirigida a login; cero errores de
+consola o hidratación. El runner también se contrastó contra TOEFL para localizar y
+eliminar la antigua deriva en la navegación compartida.
 
 ## Gates pendientes para cerrar el dictamen
 
@@ -118,8 +142,8 @@ existen. No basta con sintetizar esos ocho guiones cortos: primero deben ampliar
    caracteres y USD 10,3824 antes de impuestos y reintentos; no es una autorización.
 5. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
    sólo cuando todos los bloqueos estén cerrados.
-6. Repetir build completo, smoke de las 17 rutas, móvil 320/390, teclado, lector de
-   pantalla y el recorrido de entrega privada con Writing y las tres muestras de Speaking.
+6. Tras generar audio, repetir smoke de las 17 rutas Listening, móvil 320/390, teclado,
+   lector de pantalla y verificación humana de las cuatro partes de cada MP3.
 
 ## Evidencia reproducible
 
@@ -128,7 +152,10 @@ npm run audit:ielts-academic-2026  # hoy debe terminar BLOCKED en guion/audio
 npm run plan:ielts-audio-2026      # valida plan, hashes y factura mínima; no genera
 npm run test:ielts-academic-2026   # contrato, claves privadas y audio bloqueado
 npm run test:ielts-review          # scoring/review pipeline
+npm run test:ielts-fullstack       # privacidad, presentación, SSR y navegación
+npm run check:practica-catalog     # no-regresión del producto completo
 npx tsc --noEmit
+npx next build --webpack
 ```
 
 La salida `BLOCKED` sigue siendo intencional: impide presentar Sets 4–20 como equivalentes

@@ -157,18 +157,24 @@ function ThemeToggle({ english = false }: { english?: boolean }) {
 
 export default function SiteNav() {
   const pathname = usePathname();
-  const isIelts = pathname.startsWith('/practica/ielts');
+  const isIelts = pathname.startsWith('/practica/ielts') || pathname.startsWith('/examenes/ielts');
   const navLinks = isIelts ? IELTS_NAV_LINKS : NAV_LINKS;
   const languageLinks = isIelts ? IELTS_IDIOMAS : IDIOMAS;
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(() => Boolean(createClient()));
+  // Keep the first server and browser render identical. Environment values can
+  // be injected at different moments (build vs runtime), so deriving this state
+  // from createClient() caused a production-only hydration mismatch.
+  const [loading, setLoading] = useState(true);
   const mobileMenuId = 'wl-site-nav-mobile';
 
   useEffect(() => {
     const supabase = createClient();
-    if (!supabase) return;
+    if (!supabase) {
+      const task = window.setTimeout(() => setLoading(false), 0);
+      return () => window.clearTimeout(task);
+    }
     supabase.auth.getUser().then(({ data }) => {
       setUser(data.user);
       setLoading(false);

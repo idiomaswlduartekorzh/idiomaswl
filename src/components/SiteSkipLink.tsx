@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 
 export default function SiteSkipLink() {
   const pathname = usePathname();
-  const label = pathname.startsWith('/practica/ielts')
+  const label = pathname.startsWith('/practica/ielts') || pathname.startsWith('/examenes/ielts')
     ? 'Skip to main content'
     : 'Saltar al contenido principal';
 

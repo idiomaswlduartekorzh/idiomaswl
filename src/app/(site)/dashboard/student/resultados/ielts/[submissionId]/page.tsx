@@ -97,7 +97,7 @@ export default async function IeltsStudentResultPage({
   const final = Boolean(result.reviewed_at)
 
   return (
-    <main className="ir-shell">
+    <div className="ir-shell">
       <div className="ir-wrap">
         <Link href="/dashboard/student/progreso" className="ir-back">← Volver a mi progreso</Link>
         <header className="ir-hero">
@@ -165,6 +165,6 @@ export default async function IeltsStudentResultPage({
       <style>{`
         .ir-shell{min-height:100vh;background:#f7f5f2;color:#17204a;padding:40px 20px 72px}.ir-wrap{width:min(1040px,100%);margin:0 auto}.ir-back{color:#5f6785;text-decoration:none;font-size:14px}.ir-back:hover{text-decoration:underline}.ir-hero{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin:26px 0 18px}.ir-hero h1{font-size:clamp(30px,5vw,52px);line-height:1.02;letter-spacing:-.04em;margin:7px 0}.ir-hero p{margin:0;color:#6b7280}.ir-eyebrow{margin:0!important;color:#c8202e!important;font-size:11px!important;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.ir-status{min-width:210px;background:#fff7ed;border:1px solid #fed7aa;border-radius:16px;padding:14px 16px}.ir-status--final{background:#f0fdf4;border-color:#bbf7d0}.ir-status span{display:block;color:#6b7280;font-size:11px;text-transform:uppercase;font-weight:800}.ir-status strong{display:block;margin-top:5px;font-size:18px}.ir-notice{background:#eef2ff;border-left:4px solid #3448c5;border-radius:10px;padding:14px 16px;line-height:1.55}.ir-bands{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.ir-card{background:#fff;border:1px solid #e3e5ee;border-radius:16px;padding:18px}.ir-bands span{display:block;color:#6b7280;font-size:12px;font-weight:800;text-transform:uppercase}.ir-bands strong{display:block;margin-top:7px;font-size:22px}.ir-summary,.ir-report,.ir-evidence{margin-top:14px}.ir-card h2{margin:0 0 9px;font-size:20px}.ir-card p{line-height:1.6}.ir-fine{color:#6b7280;font-size:13px}.ir-report-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px}.ir-report-head>strong{color:#c8202e;font-size:24px;white-space:nowrap}.ir-criteria{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}.ir-criteria article{background:#f7f5f2;border-radius:12px;padding:12px}.ir-criteria h3{font-size:13px;margin:0}.ir-criteria p{font-size:13px;color:#555d78;margin:5px 0 0}.ir-card details{border-top:1px solid #e3e5ee;padding-top:12px;margin-top:12px}.ir-card summary{cursor:pointer;font-weight:750}.ir-card li{margin:7px 0;line-height:1.5}.ir-pre{white-space:pre-wrap;overflow-wrap:anywhere}.ir-footer{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:24px}.ir-footer p{font-size:13px;color:#6b7280}.ir-footer a{color:#3448c5}.ir-cta{display:inline-flex;min-height:44px;align-items:center;background:#17204a;color:#fff;text-decoration:none;border-radius:10px;padding:0 16px;font-weight:800;white-space:nowrap}@media(max-width:720px){.ir-shell{padding:26px 14px 56px}.ir-hero,.ir-footer{align-items:stretch;flex-direction:column}.ir-status{min-width:0}.ir-bands{grid-template-columns:repeat(2,1fr)}.ir-criteria{grid-template-columns:1fr}.ir-cta{justify-content:center}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
       `}</style>
-    </main>
+    </div>
   )
 }

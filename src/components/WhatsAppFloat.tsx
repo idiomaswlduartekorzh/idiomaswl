@@ -43,7 +43,7 @@ declare global {
 
 export default function WhatsAppFloat() {
   const pathname = usePathname();
-  const isIelts = pathname.startsWith('/practica/ielts');
+  const isIelts = pathname.startsWith('/practica/ielts') || pathname.startsWith('/examenes/ielts');
   const msg = getMessageForPath(pathname);
   const href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
@@ -56,90 +56,7 @@ export default function WhatsAppFloat() {
   }
 
   return (
-    <>
-      <style>{`
-        .wl-wa-float {
-          position: fixed;
-          bottom: 24px;
-          right: 24px;
-          z-index: 9999;
-          display: flex;
-          align-items: center;
-          gap: 0;
-          background: #25D366;
-          color: #fff;
-          border-radius: 999px;
-          box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
-          text-decoration: none;
-          overflow: hidden;
-          max-width: 52px;
-          transition: max-width 0.3s ease, box-shadow 0.2s ease, gap 0.3s ease;
-          cursor: pointer;
-        }
-        .wl-wa-float:hover {
-          max-width: 220px;
-          gap: 0.5rem;
-          box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
-        }
-        .wl-wa-float__icon {
-          flex-shrink: 0;
-          width: 52px;
-          height: 52px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .wl-wa-float__label {
-          font-family: var(--sans);
-          font-size: 0.88rem;
-          font-weight: 700;
-          white-space: nowrap;
-          opacity: 0;
-          max-width: 0;
-          overflow: hidden;
-          transition: opacity 0.2s ease 0.1s, max-width 0.3s ease;
-          padding-right: 0;
-        }
-        .wl-wa-float:hover .wl-wa-float__label {
-          opacity: 1;
-          max-width: 160px;
-          padding-right: 1.1rem;
-        }
-        /* Pulse animation */
-        @keyframes wl-wa-pulse {
-          0%   { box-shadow: 0 0 0 0   rgba(37, 211, 102, 0.55); }
-          70%  { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
-          100% { box-shadow: 0 0 0 0   rgba(37, 211, 102, 0); }
-        }
-        .wl-wa-float {
-          animation: wl-wa-pulse 2.5s ease-out 2s 3;
-        }
-        /* Mobile: always compact */
-        @media (max-width: 640px) {
-          .wl-wa-float {
-            bottom: max(8px, env(safe-area-inset-bottom));
-            right: max(8px, env(safe-area-inset-right));
-            z-index: 40;
-            max-width: 44px !important;
-            gap: 0 !important;
-            opacity: 0.9;
-          }
-          .wl-wa-float__icon {
-            width: 44px;
-            height: 44px;
-          }
-          .wl-wa-float__label {
-            display: none;
-          }
-        }
-        @media (max-width: 640px) {
-          body:has([data-active-practice="true"]) .wl-wa-float {
-            display: none;
-          }
-        }
-      `}</style>
-
-      <a
+    <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
@@ -155,7 +72,6 @@ export default function WhatsAppFloat() {
           </svg>
         </span>
         <span className="wl-wa-float__label">{isIelts ? 'Message us' : 'Escríbenos'}</span>
-      </a>
-    </>
+    </a>
   );
 }
