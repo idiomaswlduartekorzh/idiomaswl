@@ -1,6 +1,6 @@
 # SAT Set 4 · Módulo 2 exigente — matriz editorial
 
-Fecha: 24 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 22/27**.
+Fecha: 24 de agosto de 2026. Estado: **CONTENIDO APTO 27/27 · PRODUCTO NO PUBLICABLE**.
 
 Esta rama la recibe quien queda en la banda alta de M1. Eleva densidad y razonamiento sin
 convertir adaptatividad en castigo: conserva cinco entradas fáciles, todos los dominios y
@@ -60,8 +60,8 @@ Tema, dificultad y clave se fijan antes de redactar.
 | q23 | rhetorical-synthesis | 1 | humanidades | A | Dos cartelas de archivo difieren en precisión de fecha | Datos originales; comparar sin afirmar cuál prefiere todo visitante |
 | q24 | rhetorical-synthesis | 1 | ciencia | C | Dos superficies de captación de niebla producen volúmenes distintos | Estudio primario/datos declarados; relación y unidades exactas |
 | q25 | rhetorical-synthesis | 2 | historia | D | Marca de agua y registro de adquisición acotan la fecha de una hoja | Archivo/museo; combinar límites sin presentar fecha exacta imposible |
-| q26 | transitions | 3 | ciencia | B | Membrana elimina un ion pero pierde flujo con mayor concentración | Estudio primario; contraste entre selectividad y desempeño, no causalidad gratuita |
-| q27 | transitions | 2 | literatura | C | Poeta ficticio cambia el ritmo circundante pero conserva una imagen | Texto original; concesión entre revisión amplia y detalle preservado |
+| q26 | transitions | 2 | ciencia | B | Membrana elimina un ion pero pierde flujo con mayor concentración | Datos originales; contraste entre selectividad y desempeño, no causalidad gratuita |
+| q27 | transitions | 3 | literatura | C | Poeta ficticio cambia el ritmo circundante pero conserva una imagen | Texto original; concesión entre revisión amplia y detalle preservado |
 
 ## Orden de producción
 

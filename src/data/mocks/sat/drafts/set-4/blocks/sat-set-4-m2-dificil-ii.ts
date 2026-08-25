@@ -28,7 +28,7 @@ export const items: MCQQuestion[] = [
     id: 'q12', type: 'mcq', part: 1,
     stimulus: 'A conservator proposes that a torn parchment leaf was repaired before it was incorporated into its present binding. The leaf has a sewn patch over one edge and a line of binding holes through that same area.',
     text: 'Which finding, if true, would most directly support the conservator’s proposal?',
-    options: ['The ink on the leaf contains a pigment also found on several unrelated pages in the volume.', 'Each binding hole passes through both the sewn patch and the original parchment beneath it.', 'The thread used for the patch is a different color from the thread currently holding the volume together.', 'A later owner wrote a price on the inside of the volume’s wooden cover.'],
+    options: ['The ink on the leaf contains a pigment also found on several unrelated pages in the volume.', 'The fasteners attaching the page to the book cut through the added reinforcement.', 'The thread used for the patch is a different color from the thread currently holding the volume together.', 'A later owner wrote a price on the inside of the volume’s wooden cover.'],
     answer: 1,
   },
   {
@@ -65,7 +65,7 @@ export const meta: SatItemMeta[] = [
     A: 'La jerarquía salarial no identifica dónde se reclutó a los marineros.', B: 'Las deducciones por ropa informan condiciones de pago, no procedencia.', C: 'Variantes del nombre del barco no demuestran diversidad geográfica de la tripulación.', D: 'Correcta: residencias en tres puertos distintos son evidencia directa de procedencias diversas.',
   }, fuenteHecho: 'Barco, recibos, nombres de puertos y hallazgos hipotéticos originales.' },
   { id: 'q12', domain: 'II', tipo: 'command-of-evidence-textual', dificultad: 3, tema: 'historia', razones: {
-    A: 'Un pigmento compartido no ordena cronológicamente reparación y encuadernación.', B: 'Correcta: si la perforación atraviesa parche y hoja, el parche ya estaba presente cuando se hicieron los agujeros de la encuadernación.', C: 'El color distinto del hilo no establece cuál acción ocurrió primero.', D: 'Una anotación en la cubierta es posterior a la fabricación de la cubierta, pero no fecha la reparación del folio.',
+    A: 'Un pigmento compartido no ordena cronológicamente reparación y encuadernación.', B: 'Correcta: si las perforaciones de sujeción atraviesan el material cosido, la reparación ya estaba presente cuando se encuadernó la hoja.', C: 'El color distinto del hilo no establece cuál acción ocurrió primero.', D: 'Una anotación en la cubierta es posterior a la fabricación de la cubierta, pero no fecha la reparación del folio.',
   }, fuenteHecho: 'Pergamino, reparación, encuadernación y observaciones hipotéticas originales.' },
   { id: 'q13', domain: 'II', tipo: 'command-of-evidence-quantitative', dificultad: 3, tema: 'ciencia', razones: {
     A: 'De 30°C a 40°C la actividad baja 28 U/mL; no sube 35.', B: 'Los valores son 12 y 19 U/mL, no iguales.', C: 'Correcta: 47 U/mL es el máximo y 47 − 19 = 28 U/mL.', D: 'La actividad aumenta hasta 30°C y después disminuye a 40°C.',

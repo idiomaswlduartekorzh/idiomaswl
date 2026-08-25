@@ -482,7 +482,7 @@
       "variant": "M2-dificil",
       "status": "draft",
       "contentFile": "src/data/mocks/sat/drafts/set-4/sat-set-4-m2-dificil.ts",
-      "writtenQuestions": 22,
+      "writtenQuestions": 27,
       "slots": [
         {
           "id": "q01",
@@ -666,7 +666,7 @@
           "type": "rhetorical-synthesis",
           "difficulty": 1,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q24",
@@ -674,7 +674,7 @@
           "type": "rhetorical-synthesis",
           "difficulty": 1,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q25",
@@ -682,33 +682,33 @@
           "type": "rhetorical-synthesis",
           "difficulty": 2,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q26",
           "domain": "EOI",
           "type": "transitions",
-          "difficulty": 3,
+          "difficulty": 2,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q27",
           "domain": "EOI",
           "type": "transitions",
-          "difficulty": 2,
+          "difficulty": 3,
           "topic": "literatura",
-          "status": "empty"
+          "status": "written"
         }
       ],
       "audit": {
-        "key": "PENDING",
-        "bias": "PENDING",
-        "fairness": "PENDING",
-        "language": "PENDING",
-        "difficulty": "PENDING",
-        "originality": "PENDING",
-        "simulation": "PENDING"
+        "key": "APTO-NO-INDEPENDIENTE",
+        "bias": "APTO-AUTOMATICO",
+        "fairness": "APTO-NO-INDEPENDIENTE",
+        "language": "APTO-NO-INDEPENDIENTE",
+        "difficulty": "APTO-MATRIZ",
+        "originality": "APTO-CON-LIMITES",
+        "simulation": "APTO-AUTOMATICO"
       }
     }
   ]
