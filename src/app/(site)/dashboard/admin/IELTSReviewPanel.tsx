@@ -29,8 +29,14 @@ function formatDate(iso: string) {
 
 function statusFor(item: ExamSubmission): { label: string; color: string; background: string } {
   if (item.reviewed_at) return { label: 'Revisado', color: '#166534', background: '#dcfce7' }
-  if (item.writing_band != null) return { label: 'Análisis listo · falta revisión', color: '#92400e', background: '#fef3c7' }
-  return { label: 'Informe preliminar pendiente', color: '#991b1b', background: '#fee2e2' }
+  const delegated = Boolean(item.writing_task1_delegated_assessment || item.writing_task2_delegated_assessment || item.speaking_assessment)
+  if (item.writing_band != null || item.speaking_band != null) {
+    return { label: delegated ? 'Evaluación lista · falta cierre' : 'Análisis listo · falta revisión', color: '#92400e', background: '#fef3c7' }
+  }
+  const started = Boolean(item.writing_task1_assessment || item.writing_task2_assessment || delegated)
+  return started
+    ? { label: 'Evaluación en curso', color: '#92400e', background: '#fef3c7' }
+    : { label: 'Evaluación pendiente', color: '#991b1b', background: '#fee2e2' }
 }
 
 function Score({ label, value, source }: { label: string; value: number | null | undefined; source?: string }) {
@@ -277,7 +283,9 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
     setError('')
     try {
       const result = await scoreSubmission(active.id, writingBand, speakingBand)
-      setMessage(`Revisión guardada. Overall Band ${result.overall ?? '—'} con Listening, Reading, Writing y Speaking.`)
+      setMessage(result.overall == null
+        ? 'Revisión guardada. Writing y Speaking quedaron cerrados; el Overall sigue pendiente hasta disponer de las cuatro bandas.'
+        : `Revisión guardada. Overall Band ${result.overall} con Listening, Reading, Writing y Speaking.`)
       setFilter('reviewed')
       router.refresh()
     } catch (caught) {
@@ -408,7 +416,7 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
               <IELTSDelegatedReviewCallout key={active.id} submission={active} />
 
               <section style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 12 }}>
-                <p style={{ margin: '0 0 10px', fontSize: 11, color: MUTED }}>La valoración preliminar orienta Writing; el profesor confirma Writing y asigna Speaking. Al guardar se recalcula el Overall con L/R/W/S.</p>
+                <p style={{ margin: '0 0 10px', fontSize: 11, color: MUTED }}>Los reportes orientan Writing y Speaking; el profesor confirma ambas bandas. El Overall solo se publica cuando existen L/R/W/S.</p>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(235px, 1fr))', gap: 12 }}>
                   <BandPicker label="Writing Band final" value={writingBand} onChange={setWritingBand} />
                   <BandPicker label="Speaking Band final" value={speakingBand} onChange={setSpeakingBand} />

@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import ProgresoClient from './ProgresoClient'
+import { presentExamResult } from '@/lib/exam-results/presentation'
 
 // Korean steps metadata (same as main dashboard)
 const KOREAN_STEPS = [
@@ -27,7 +28,9 @@ export interface ExamEntry {
   id: string
   name: string
   mockTitle: string
-  pct: number
+  pct: number | null
+  scoreLabel: string
+  pending: boolean
   color: string
   date: string
   slug: string
@@ -67,20 +70,30 @@ export default async function ProgresoPage() {
   // ── All exam submissions ───────────────────────────────────────────────────
   const { data: submissions } = await supabase
     .from('exam_submissions')
-    .select('id, exam_slug, exam_name, mock_title, total_score, total_max, created_at')
+    .select('id, exam_slug, exam_name, mock_title, total_score, total_max, reviewed_at, created_at')
     .eq('user_id', user.id)
     .order('created_at', { ascending: false })
     .limit(50)
 
-  const exams: ExamEntry[] = (submissions ?? []).map(s => ({
-    id:        s.id,
-    name:      s.exam_name as string,
-    mockTitle: (s.mock_title as string) ?? '',
-    pct:       s.total_max > 0 ? Math.round((s.total_score / s.total_max) * 100) : 0,
-    color:     EXAM_COLOURS[s.exam_slug as string] ?? '#1a2ecc',
-    date:      s.created_at as string,
-    slug:      s.exam_slug as string,
-  }))
+  const exams: ExamEntry[] = (submissions ?? []).map(s => {
+    const result = presentExamResult({
+      examSlug: s.exam_slug as string,
+      totalScore: s.total_score == null ? null : Number(s.total_score),
+      totalMax: s.total_max == null ? null : Number(s.total_max),
+      reviewedAt: s.reviewed_at as string | null,
+    })
+    return {
+      id: s.id,
+      name: s.exam_name as string,
+      mockTitle: (s.mock_title as string) ?? '',
+      pct: result.percent,
+      scoreLabel: result.label,
+      pending: result.pending,
+      color: EXAM_COLOURS[s.exam_slug as string] ?? '#1a2ecc',
+      date: s.created_at as string,
+      slug: s.exam_slug as string,
+    }
+  })
 
   // ── Korean progress ────────────────────────────────────────────────────────
   const { data: progressRows } = await supabase

@@ -16,9 +16,12 @@ export interface DashboardStats {
 }
 
 export interface RecentExam {
+  id: string
   name: string
   subtitle: string
-  pct: number
+  pct: number | null
+  scoreLabel: string
+  pending: boolean
   color: string
   slug: string
 }
@@ -406,9 +409,9 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
   ]
 
   // Use real exam data when available, fall back to placeholder list
-  const examProgress: typeof IN_PROGRESS = recentExams && recentExams.length > 0
+  const examProgress = recentExams && recentExams.length > 0
     ? recentExams.map(e => ({ ...e, mockId: '' }))
-    : IN_PROGRESS
+    : IN_PROGRESS.map(exam => ({ ...exam, id: '', scoreLabel: `${exam.pct}%`, pending: false }))
 
   return (
     <div className="std-shell">
@@ -558,7 +561,9 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
                   {examProgress.map(ex => (
                     <Link
                       key={`${ex.name}-${ex.subtitle}`}
-                      href={`/examenes/${ex.slug}`}
+                      href={ex.slug === 'ielts' && ex.id
+                        ? `/dashboard/student/resultados/ielts/${ex.id}`
+                        : `/examenes/${ex.slug}`}
                       className="std-progress-card"
                     >
                       <div className="std-progress-card__top">
@@ -567,13 +572,13 @@ export default function StudentDashboardClient({ name, plan, streak, stats, rece
                           <p className="std-progress-card__sub">{ex.subtitle}</p>
                         </div>
                         <span className="std-progress-card__pct" style={{ color: ex.color }}>
-                          {ex.pct}%
+                          {ex.scoreLabel}
                         </span>
                       </div>
-                      <div className="std-progress-track">
+                      <div className="std-progress-track" aria-hidden="true">
                         <div
                           className="std-progress-fill"
-                          style={{ width: `${ex.pct}%`, background: ex.color }}
+                          style={{ width: `${ex.pct ?? 0}%`, background: ex.color }}
                         />
                       </div>
                     </Link>

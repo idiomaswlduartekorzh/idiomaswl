@@ -5,6 +5,7 @@ import type { RecentExam, DashboardStats } from './StudentDashboardClient'
 import { trackDailyActivity } from '@/lib/actions/trackActivity'
 import { calculateStreak } from '@/lib/utils/streak'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
+import { presentExamResult } from '@/lib/exam-results/presentation'
 
 // Korean lessons shown in the dashboard grid (step IDs match /courses/korean/step/[n])
 const KOREAN_STEPS = [
@@ -55,7 +56,7 @@ export default async function StudentDashboardPage() {
   // ── Exam stats ─────────────────────────────────────────────────────────────
   const { data: submissions } = await supabase
     .from('exam_submissions')
-    .select('exam_slug, exam_name, mock_title, total_score, total_max, created_at')
+    .select('id, exam_slug, exam_name, mock_title, total_score, total_max, reviewed_at, created_at')
     .eq('user_id', user.id)
     .order('created_at', { ascending: false })
     .limit(50)
@@ -83,11 +84,19 @@ export default async function StudentDashboardPage() {
       const key = `${s.exam_slug}/${s.mock_title}`
       if (seen.has(key)) continue
       seen.add(key)
-      const pct = s.total_max > 0 ? Math.round((s.total_score / s.total_max) * 100) : 0
+      const result = presentExamResult({
+        examSlug: s.exam_slug as string,
+        totalScore: s.total_score == null ? null : Number(s.total_score),
+        totalMax: s.total_max == null ? null : Number(s.total_max),
+        reviewedAt: s.reviewed_at as string | null,
+      })
       recentExams.push({
+        id: s.id as string,
         name:     s.exam_name as string,
         subtitle: s.mock_title as string,
-        pct,
+        pct: result.percent,
+        scoreLabel: result.label,
+        pending: result.pending,
         color: EXAM_COLOURS[s.exam_slug as string] ?? '#1a2ecc',
         slug:  s.exam_slug as string,
       })

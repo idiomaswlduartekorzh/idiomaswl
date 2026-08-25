@@ -20,9 +20,10 @@ function formatDate(iso: string) {
 export default function ProgresoClient({ name, exams, koreanSteps, activityDays, totalActive }: Props) {
   const koreanDone = koreanSteps.filter(s => s.done).length
   const koreanPct  = koreanSteps.length > 0 ? Math.round((koreanDone / koreanSteps.length) * 100) : 0
-  const bestScore  = exams.length > 0 ? Math.max(...exams.map(e => e.pct)) : 0
-  const avgScore   = exams.length > 0
-    ? Math.round(exams.reduce((acc, e) => acc + e.pct, 0) / exams.length)
+  const completedScores = exams.flatMap(exam => exam.pct == null ? [] : [exam.pct])
+  const bestScore  = completedScores.length > 0 ? Math.max(...completedScores) : 0
+  const avgScore   = completedScores.length > 0
+    ? Math.round(completedScores.reduce((acc, score) => acc + score, 0) / completedScores.length)
     : 0
 
   // Group activityDays into weeks of 7
@@ -119,14 +120,16 @@ export default function ProgresoClient({ name, exams, koreanSteps, activityDays,
             ) : (
               <div className="pg-exam-list">
                 {exams.map(ex => (
-                  <Link key={ex.id} href={`/examenes/${ex.slug}`} className="pg-exam-row">
+                  <Link key={ex.id} href={ex.slug === 'ielts'
+                    ? `/dashboard/student/resultados/ielts/${ex.id}`
+                    : `/examenes/${ex.slug}`} className="pg-exam-row">
                     <div className="pg-exam-row__dot" style={{ background: ex.color }} />
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <p className="pg-exam-row__name">{ex.name} · {ex.mockTitle}</p>
                       <p className="pg-exam-row__date">{formatDate(ex.date)}</p>
                     </div>
-                    <div className="pg-exam-row__score" style={{ color: ex.pct >= 70 ? '#16a34a' : ex.pct >= 50 ? '#d97706' : '#dc2626' }}>
-                      {ex.pct}%
+                    <div className="pg-exam-row__score" style={{ color: ex.pending ? 'var(--muted)' : (ex.pct ?? 0) >= 70 ? '#16a34a' : (ex.pct ?? 0) >= 50 ? '#d97706' : '#dc2626' }}>
+                      {ex.scoreLabel}
                     </div>
                   </Link>
                 ))}
@@ -186,19 +189,19 @@ export default function ProgresoClient({ name, exams, koreanSteps, activityDays,
         </div>
 
         {/* ── Score trends ── */}
-        {exams.length >= 2 && (
+        {completedScores.length >= 2 && (
           <div className="pg-card" style={{ marginTop: 24 }}>
             <h2 className="pg-card__title">Evolución de puntajes</h2>
             <div className="pg-trend">
-              {[...exams].reverse().map((ex, i) => (
+              {[...exams].filter(ex => ex.pct != null).reverse().map((ex, i) => (
                 <div key={ex.id} className="pg-trend-col">
                   <div
                     className="pg-trend-bar"
                     style={{
-                      height: `${Math.max(ex.pct, 4)}%`,
+                      height: `${Math.max(ex.pct ?? 0, 4)}%`,
                       background: ex.color,
                     }}
-                    title={`${ex.name}: ${ex.pct}%`}
+                    title={`${ex.name}: ${ex.scoreLabel}`}
                   />
                   <span className="pg-trend-label">{i + 1}</span>
                 </div>
