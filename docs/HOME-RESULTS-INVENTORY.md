@@ -1,6 +1,7 @@
 # Inventario seguro de resultados para el home
 
-Estado: Fase 1 aprobada e integrada en la rama `codex/home-seo-hub-v2`. No se ha desplegado ni integrado a `main`.
+Estado: Fase 1 aprobada, integrada en `main` y alcanzable desde el commit de producción
+`a036f93c` verificado el 25 de agosto de 2026. La rama histórica ya no es la fuente de verdad.
 
 ## Resultado del inventario
 
@@ -68,7 +69,8 @@ La animación debe usar `transform` y `opacity`, detenerse fuera del viewport y 
 - No afirmar que cada fotografía representa una persona diferente.
 - No usar logotipos de las entidades como si existiera afiliación o aval.
 - No afirmar que una puntuación está garantizada.
-- No desplegar ni integrar a `main` sin autorización explícita.
+- No publicar cambios futuros sobre esta sección sin autorización explícita y sin actualizar el
+  registro de producción.
 
 ## Preparación de la integración
 

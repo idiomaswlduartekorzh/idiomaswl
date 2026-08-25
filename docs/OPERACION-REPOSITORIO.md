@@ -39,6 +39,15 @@ Antes de una consolidación o limpieza se crea una rama `archive/` en el reposit
 
 Claude y Codex deben leer este archivo, `AGENTS.md` y `CLAUDE.md` antes de trabajar. Al terminar una tarea, registrar en el commit qué cambió y qué validaciones se ejecutaron. Si el árbol de trabajo ya tiene cambios ajenos, no mezclar ni sobrescribirlos: aislar el cambio en una rama o pedir una decisión.
 
+La comunicación entre ramas, los estados obligatorios y el protocolo de recuperación están en
+[`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md).
+El inventario vivo de trabajos que están fuera, dentro o pendientes de producción está en
+[`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
+
+Una rama no se declara «hecha» porque tenga commit, push o preview. Solo se declara desplegada
+cuando el registro contiene el SHA integrado en `main`, el deployment de Vercel y las rutas de
+producción verificadas. Antes de iniciar o entregar trabajo, consulta y actualiza el registro.
+
 ## Estado por subsistema
 
 Cada subsistema grande deja un documento de traspaso con lo que hay publicado, qué scripts lo
