@@ -32,9 +32,10 @@ originales; cada estudiante responde 54 por intento y nunca recibe las dos ramas
 ## Loop de escala a 20
 
 El loop se abrió el **24 de agosto de 2026** en una rama aislada. Set 3 completó el ciclo y
-se publicó desde `main` en el dominio real. `set-4` está ahora reservado como borrador de
-81 slots: no aparece en el hub ni en el registro ejecutable. Su primera unidad es la matriz
-editorial de M1 y después Craft and Structure q01–q08.
+se publicó desde `main` en el dominio real. `set-4` completó sus 81 preguntas, tres actas,
+las dos rutas adaptativas, QA móvil y build de producción. Está promovido en la rama como
+candidato publicable, pero no se suma al inventario de producción hasta integrarse en
+`main` y verificar el despliegue real.
 
 La receta operativa, los costes medidos y las puertas por vuelta viven en
 [`docs/sat-fabrica.md`](sat-fabrica.md). La regla sigue siendo un set, un módulo y un bloque

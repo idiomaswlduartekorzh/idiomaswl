@@ -1,6 +1,6 @@
 # Auditoría de producto · SAT Set 4
 
-Fecha: 24 de agosto de 2026. Estado: **APTO PARA PUERTA DE BUILD Y PREVIEW REMOTA**.
+Fecha: 24 de agosto de 2026. Estado: **APTO PARA INTEGRAR EN `main`**.
 
 El producto se compone en `src/data/mocks/sat/sat-set-4.ts`. Esta auditoría no implica
 que ya esté en producción: producción solo cambia al integrar `main` y superar su
@@ -32,11 +32,17 @@ despliegue.
 `test:sat-factory` pasa 10/10, `check:sat-adaptive` recorre los 28 resultados de M1,
 `check:sat` verifica las doce puertas y las huellas de los tres módulos, y TypeScript
 compila sin errores. La QA de navegador se ejecutó con Playwright CLI sobre una preview
-local aislada y con una sola instancia de Next.
+local aislada y con una sola instancia de Next. El build de producción con Next 16.2.6 y
+Webpack compiló, validó tipos y generó 2.243 páginas estáticas con salida 0. Se usó Webpack
+porque el `node_modules` compartido del worktree queda fuera de la raíz que Turbopack
+permite en local; los previews anteriores de esta misma rama sí compilaron con Turbopack
+en Vercel.
 
-## Puerta restante
+## Publicación pendiente
 
-Antes de integrar: actualizar desde `origin/main`, ejecutar el guardián del catálogo de
-práctica, TypeScript y el build completo. Después corresponde integrar exclusivamente en
-`main` y verificar el despliegue de producción. Hasta entonces producción conserva tres
-SAT públicos.
+La rama ya incorporó el `origin/main` vigente y superó el guardián del catálogo de
+práctica, TypeScript y el build completo. Corresponde integrar exclusivamente en `main` y
+verificar el despliegue de producción. La preview remota final no pudo crearse porque el
+proyecto agotó su cuota de más de 100 despliegues gratuitos en 24 horas; no fue un fallo
+de compilación ni de contenido. Hasta que el despliegue de producción quede verificado,
+producción conserva tres SAT públicos.

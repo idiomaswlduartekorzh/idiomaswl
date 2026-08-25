@@ -7,8 +7,9 @@ memoria editorial y no describe por sí solo la rama actual.
 **Reapertura del 24 ago 2026:** comenzó el loop de escala de 2 a 20 sets. La fase C0 quedó
 documentada en [`docs/sat-fabrica.md`](sat-fabrica.md). Set 3 completó 81/81 preguntas,
 tres actas con huellas, QA de ambas ramas y móvil, build remoto, rebase limpio y despliegue
-desde `main`. Producción muestra ahora tres SAT completos. Set 4 quedó reservado como el
-único borrador activo, con 81 slots vacíos y sin entrada ejecutable.
+desde `main`. Producción muestra ahora tres SAT completos. Set 4 completó sus 81 preguntas,
+tres actas, ambas rutas adaptativas, QA móvil y build; está listo para integrar, pero aún
+no se cuenta como producción.
 
 - **Rama actual:** `codex/sat-finish-20260823`
 - **Cierre:** 23 ago 2026 · M1, M2 estándar y M2 exigente completos; diez páginas del
