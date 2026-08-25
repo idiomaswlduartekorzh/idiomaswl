@@ -1,6 +1,7 @@
 # SAT Set 5 · Módulo 1 — matriz editorial
 
-Fecha: 25 de agosto de 2026. Estado: **MATRIZ CERRADA · CONTENIDO 0/27**.
+Fecha: 25 de agosto de 2026. Estado: **CONTENIDO 27/27 · OCHO PUERTAS MECÁNICAS
+PASS · AUDITORÍAS EDITORIALES PENDIENTES**.
 
 Esta matriz reserva tema, dificultad y clave antes de redactar. Cada hecho se verificará
 en una fuente primaria al abrir su bloque. Los pasajes y opciones serán originales: una
@@ -73,3 +74,14 @@ supuesto o el tema no permite cuatro opciones vivas, la fila se reemplaza.
 
 La matriz es una restricción editorial, no una autorización de publicación. Ningún ítem
 pasa de `empty` a `written` antes de existir en código y superar su revisión de bloque.
+
+## Evidencia mecánica vigente
+
+- Claves: A 7 · B 7 · C 6 · D 7; sin rachas de tres y con las cuatro letras por dominio.
+- Clave más larga: 18,5 %; clave más corta: 7,4 %.
+- Solape léxico alto: 14,8 %; solape bajo: 7,4 %.
+- Prueba ciega: 18 heurísticas, media 25,3 % con techo 35 %; ningún ítem alcanzó 75 %.
+- Originalidad local: cero secuencias compartidas de ocho palabras entre 13 módulos y
+  351 ítems, incluidos este candidato y los 12 módulos publicados.
+- El módulo permanece en `draft`; estos resultados no sustituyen clave única, equidad,
+  lengua ni revisión editorial de originalidad.

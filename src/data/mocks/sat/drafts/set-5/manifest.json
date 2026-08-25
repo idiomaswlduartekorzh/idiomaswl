@@ -10,6 +10,12 @@
       "id": "sat-set-5-m1",
       "variant": "M1",
       "status": "draft",
+      "contentFile": "src/data/mocks/sat/drafts/set-5/sat-set-5-m1.ts",
+      "writtenQuestions": 27,
+      "mechanicalGates": "PASS",
+      "blindHeuristicsMeanPct": 25.3,
+      "editorialGates": "PENDING",
+      "productGate": "PENDING",
       "slots": [
         {
           "id": "q01",
@@ -193,7 +199,7 @@
           "type": "rhetorical-synthesis",
           "difficulty": 1,
           "topic": "humanidades",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q24",
@@ -201,7 +207,7 @@
           "type": "rhetorical-synthesis",
           "difficulty": 2,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q25",
@@ -209,7 +215,7 @@
           "type": "rhetorical-synthesis",
           "difficulty": 3,
           "topic": "historia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q26",
@@ -217,7 +223,7 @@
           "type": "transitions",
           "difficulty": 1,
           "topic": "ciencia",
-          "status": "empty"
+          "status": "written"
         },
         {
           "id": "q27",
@@ -225,7 +231,7 @@
           "type": "transitions",
           "difficulty": 3,
           "topic": "literatura",
-          "status": "empty"
+          "status": "written"
         }
       ],
       "audit": {
@@ -235,7 +241,7 @@
         "language": "PENDING",
         "difficulty": "APTO-MATRIZ",
         "originality": "PENDING",
-        "simulation": "PENDING"
+        "simulation": "APTO-AUTOMATICO"
       }
     },
     {
