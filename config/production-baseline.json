@@ -23,7 +23,7 @@
     "habla"
   ],
   "minimumFileCounts": {
-    "src/app/(site)/practica:**/page.tsx": 417,
+    "src/app/(site)/practica:**/page.tsx": 419,
     "src/data/grammar:**/*.ts": 492,
     "src/data/reading:**/*": 264,
     "src/data/mocks:**/*": 277
@@ -67,6 +67,12 @@
     "src/app/(site)/practica/icfes-saber-11/IcfesHubClient.tsx",
     "src/app/(site)/practica/icfes-saber-11/IcfesAdaptiveGame.tsx",
     "src/data/icfes-smart-route.ts",
+    "src/app/(site)/practica/AdvancedIdeasEntry.tsx",
+    "src/app/(site)/practica/ideas-avanzadas/page.tsx",
+    "src/app/(site)/practica/ideas-avanzadas/[slug]/page.tsx",
+    "src/app/(site)/practica/ideas-avanzadas/[slug]/AdvancedLessonClient.tsx",
+    "src/data/practica/advanced-topics.ts",
+    "scripts/check-advanced-ideas.mjs",
     "src/components/practica/ListeningPlayer.tsx",
     "src/components/practica/ListeningJourney.tsx",
     "src/data/practica/listening-shuffle.ts",
@@ -93,6 +99,10 @@
     "src/app/(site)/practica/ielts/IELTSHubClient.tsx": ["IELTS Academic"],
     "src/app/(site)/practica/icfes-saber-11/IcfesHubClient.tsx": ["IcfesAdaptiveGame"],
     "src/data/icfes-smart-route.ts": ["ICFES_SMART_BANK_SUMMARY"],
+    "src/app/(site)/practica/ideas-avanzadas/page.tsx": ["ADVANCED_TOPICS", "Ideas que no caben"],
+    "src/app/(site)/practica/ideas-avanzadas/[slug]/page.tsx": ["generateStaticParams", "ADVANCED_LESSONS"],
+    "src/data/practica/advanced-topics.ts": ["ADVANCED_TOPICS", "ADVANCED_LESSONS"],
+    "scripts/check-advanced-ideas.mjs": ["const PUBLISHED_FLOOR = 2"],
     "src/components/practica/ListeningJourney.tsx": ["ListeningPlayer"],
     "src/data/practica/habla-acompanado/index.ts": ["ROLEPLAY_SETS", "ROLEPLAY_PUBLISHED_FLOORS"],
     "src/components/practica/PdfDownloadButton.tsx": ["Descargar PDF"],
@@ -101,6 +111,7 @@
   },
   "requiredNpmScripts": [
     "check:production-baseline",
+    "check:advanced-ideas",
     "check:practica-catalog",
     "check:habla-acompanada",
     "check:reading-content",
@@ -122,6 +133,7 @@
   ],
   "requiredPrebuildChecks": [
     "check:production-baseline",
+    "check:advanced-ideas",
     "check:practica-catalog",
     "check:habla-acompanada",
     "check:reading-content",
@@ -148,6 +160,9 @@
     { "path": "/practica/japones/b1/lectura", "marker": "Lectura" },
     { "path": "/practica/coreano/a2/habla/acompanada", "marker": "acompañada" },
     { "path": "/practica/aleman/a2/habla/acompanada", "marker": "Alemán A2" },
+    { "path": "/practica/ideas-avanzadas", "marker": "Ideas que no caben" },
+    { "path": "/practica/ideas-avanzadas/efecto-encuadre", "marker": "The framing effect" },
+    { "path": "/practica/ideas-avanzadas/dunning-kruger-sin-la-curva", "marker": "Calibration and competence" },
     { "path": "/practica/ielts", "marker": "IELTS" },
     { "path": "/practica/icfes-saber-11", "marker": "ICFES" },
     { "path": "/nivel-radar", "marker": "nivel" },

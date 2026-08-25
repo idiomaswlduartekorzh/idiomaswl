@@ -488,7 +488,7 @@ export const DUNNING_KRUGER_LESSON = {
         href: 'https://doi.org/10.1016/j.intell.2020.101449',
       },
       {
-        label: 'McIntosh et al. (2023), Intelligence',
+        label: 'Dunkel, Nedelec & van der Linden (2023), Intelligence',
         href: 'https://doi.org/10.1016/j.intell.2022.101717',
       },
     ],
