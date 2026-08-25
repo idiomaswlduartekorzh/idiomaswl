@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · casa/comunidade 10. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_2E: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-we-took-everything-to-closed-ecopoint', slug: 'we-took-everything-to-closed-ecopoint', sequence: 10,
+    language: 'portugues', level: 'a2', title: 'Llevamos todo al ecopunto cerrado', titleTarget: 'Levamos tudo ao ecoponto fechado',
+    setting: 'Sábado, às 15h20, diante de um ecoponto municipal em São Paulo', settingEs: 'Frente a un ecopunto municipal de São Paulo, el sábado a las 3:20 p. m.',
+    speechActs: ['disculparse', 'recomendar', 'negociar'], power: 'igual', initiator: 'b', outcome: 'acuerdo-parcial', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#10',
+    roles: [
+      {
+        id: 'a', name: 'vizinha que separou os materiais', nameEs: 'quien separó los materiales', headline: 'Madeira e papelão podem voltar para sua garagem, mas tinta e vidro precisam de outro lugar',
+        briefing: ['**Reconheça o erro compartilhado e separe os riscos.** Use **você** com o vizinho. **O vizinho começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao vizinho. Não deixe materiais na calçada nem coloque latas de tinta junto do papelão.'],
+        prose: [
+          { label: 'Situação atual', text: 'Vocês trouxeram restos de uma pequena reforma, mas o ecoponto está fechado por manutenção. No carro há papelão, madeira, um espelho quebrado e quatro latas fechadas de tinta.' },
+          { label: 'Objetivo', text: 'Retirar tudo da rua, guardar cada grupo sem mistura e dividir as viagens ao ecoponto e à coleta especial.' },
+          { label: 'O que não é possível', items: ['Deixar qualquer material ao lado do portão.', 'Guardar tinta na sua garagem: o espaço é fechado e fica perto do aquecedor.', 'Levar vidro solto no carro amanhã.'] },
+          { label: 'Só você sabe', items: ['Sua garagem seca comporta as seis caixas de papelão e oito tábuas até amanhã.', 'Você tem uma caixa rígida com tampa para o espelho quebrado.', 'Pode dirigir ao ecoponto amanhã às 8h30, mas não estará livre na quarta-feira.'] },
+          { label: 'Se vocês não resolverem', text: 'Os materiais ficam na calçada ou voltam misturados, aumentando risco de corte, vazamento e uma nova viagem recusada.' },
+        ],
+        facts: [
+          { label: 'Papelão', value: '6 caixas · seco' }, { label: 'Madeira', value: '8 tábuas · sem pregos' },
+          { label: 'Espelho', value: 'quebrado · embrulhado' }, { label: 'Tinta', value: '4 latas · fechadas' },
+          { label: 'Sua garagem', value: 'seca · sem espaço para tinta' }, { label: 'Caixa rígida', value: 'com tampa · disponível' },
+          { label: 'Viagem possível', value: 'domingo · 8h30' }, { label: 'Quarta-feira', value: 'indisponível' },
+        ],
+        vocab: [
+          { word: 'calçada', whatItIs: 'parte da rua usada por pedestres', here: 'lugar onde nada pode ser abandonado' },
+          { word: 'caixa rígida', whatItIs: 'recipiente duro que não dobra facilmente', here: 'proteção para o espelho quebrado' },
+          { word: 'coleta especial', whatItIs: 'serviço marcado para resíduos que exigem cuidado', here: 'destino das latas de tinta' },
+          { word: 'ecoponto', whatItIs: 'local municipal que recebe certos resíduos separados', here: 'destino fechado por manutenção' },
+          { word: 'lata fechada', whatItIs: 'recipiente com tampa firme e sem vazamento', here: 'condição das quatro tintas' },
+          { word: 'madeira sem pregos', whatItIs: 'tábua da qual partes metálicas foram retiradas', here: 'material aceito no ecoponto' },
+          { word: 'manutenção', whatItIs: 'trabalho para reparar ou cuidar de um lugar', here: 'motivo do fechamento' },
+          { word: 'separar', whatItIs: 'colocar materiais diferentes em grupos próprios', here: 'ação necessária antes das viagens' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Nomeie os quatro grupos e não trate o ecoponto e a coleta de tinta como o mesmo serviço.',
+        exponents: [
+          { purpose: 'Aceitar uma parte', form: '`Posso guardar papelão, madeira e vidro até amanhã, mas não a tinta.`', effect: 'define contribuição e limite' },
+          { purpose: 'Explicar o risco', form: '`Minha garagem é fechada e fica perto do aquecedor, por isso não serve para tinta.`', effect: 'recusa o armazenamento com motivo concreto' },
+          { purpose: 'Negociar as viagens', form: '`Eu levo três grupos amanhã; você marca e leva as latas na quarta-feira.`', effect: 'divide destino e responsáveis' },
+          { purpose: 'Pedir a separação', form: '`Vamos colocar o espelho na caixa rígida antes de voltar?`', effect: 'reduz risco durante o transporte' },
+          { purpose: 'Recomendar o retorno', form: '`É melhor levar papelão, madeira e vidro quando o ecoponto abrir.`', effect: 'relaciona os materiais ao destino correto' },
+          { purpose: 'Reconhecer o erro', form: '`Devíamos ter conferido o horário antes de carregar o carro.`', effect: 'assume o problema sem culpar apenas o vizinho' },
+          { purpose: 'Resumir o plano', form: '`Hoje guardamos tudo separado; amanhã eu vou ao ecoponto e na quarta você leva a tinta.`', effect: 'confirma sequência e responsáveis' },
+        ],
+        success: 'Você não abandonou nem misturou materiais. Guardou papelão, madeira e vidro protegido, assumiu a viagem de domingo e deixou tinta e coleta especial sob responsabilidade definida.',
+      },
+      {
+        id: 'b', name: 'vizinho que levou o carro', nameEs: 'quien llevó el automóvil', headline: 'Sua área externa pode guardar as latas fechadas, e você consegue levá-las à coleta de quarta-feira',
+        briefing: ['**Dê a notícia e assuma uma parte da correção.** Use **você** com a vizinha. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre à vizinha. Não abra as latas nem tente colocá-las no lixo comum.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você dirigiu até o ecoponto sem conferir o aviso de manutenção. O carro está cheio e não pode permanecer estacionado na rua durante a noite.' },
+          { label: 'Objetivo', text: 'Levar os materiais de volta com segurança, assumir o armazenamento da tinta e garantir a coleta especial sem deixar toda a tarefa para a vizinha.' },
+          { label: 'O que não é possível', items: ['Deixar o carro carregado na rua: a vaga tem limpeza noturna.', 'Colocar tinta ou vidro no lixo comum.', 'Ir ao ecoponto amanhã: você trabalha das 7h às 13h.'] },
+          { label: 'Só você sabe', items: ['Sua área de serviço externa é coberta, ventilada, trancada e sem acesso de crianças ou animais.', 'Pode levar as quatro latas fechadas à coleta especial na quarta-feira às 10h.', 'Pode ajudar hoje a descarregar e etiquetar os quatro grupos, mas precisa sair às 16h10.'] },
+          { label: 'Se vocês não resolverem', text: 'O carro continua carregado em uma vaga que será limpa e os materiais chegam misturados ao próximo serviço.' },
+        ],
+        facts: [
+          { label: 'Carro', value: 'estacionado na rua · precisa sair hoje' }, { label: 'Limpeza da vaga', value: 'sábado · 22h00' },
+          { label: 'Área de serviço', value: 'externa + coberta + ventilada + trancada' }, { label: 'Tinta', value: '4 latas fechadas' },
+          { label: 'Coleta especial', value: 'quarta-feira · 10h00' }, { label: 'Trabalho domingo', value: '7h00–13h00' },
+          { label: 'Ajuda hoje', value: 'até 16h10' }, { label: 'Etiquetas', value: '4 grupos' },
+        ],
+        vocab: [
+          { word: 'área de serviço', whatItIs: 'espaço usado para limpeza e tarefas da casa', here: 'lugar externo para as latas fechadas' },
+          { word: 'coberto', whatItIs: 'protegido da chuva por um teto', here: 'condição do armazenamento' },
+          { word: 'descarregar', whatItIs: 'retirar objetos de um veículo', here: 'ação necessária antes das 16h10' },
+          { word: 'etiquetar', whatItIs: 'colocar nome ou informação em um grupo', here: 'forma de não misturar materiais' },
+          { word: 'lixo comum', whatItIs: 'resíduo doméstico recolhido normalmente', here: 'destino inadequado para tinta e vidro' },
+          { word: 'manter trancado', whatItIs: 'deixar fechado com chave', here: 'proteção da área externa' },
+          { word: 'resíduo de tinta', whatItIs: 'tinta e recipiente que precisam de destino especial', here: 'quatro latas da reforma' },
+          { word: 'ventilado', whatItIs: 'lugar onde o ar circula', here: 'condição da área de serviço' },
+        ],
+        toolkit: 'Use os blocos **1**, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Reconheça que não conferiu o aviso, ofereça espaço e viagem e confirme que as latas permanecem fechadas.',
+        exponents: [
+          { purpose: 'Aceitar a divisão', form: '`Eu fico com as latas e faço a entrega de quarta-feira.`', effect: 'assume armazenamento e viagem' },
+          { purpose: 'Dar a notícia', form: '`O ecoponto está fechado por manutenção e não podemos deixar nada aqui.`', effect: 'explica a situação e o limite' },
+          { purpose: 'Descrever o espaço', form: '`Minha área é externa, coberta, ventilada e fica trancada.`', effect: 'permite avaliar o armazenamento' },
+          { purpose: 'Negociar o tempo', form: '`Posso descarregar e etiquetar até …`', effect: 'oferece ajuda com limite verificável' },
+          { purpose: 'Pedir ajuda', form: '`Você pode levar os três grupos ao ecoponto amanhã?`', effect: 'distribui a viagem que não consegue fazer' },
+          { purpose: 'Reconhecer a falha', form: '`Desculpe, eu não conferi o aviso antes de dirigir até aqui.`', effect: 'assume sua parte sem transferir culpa' },
+          { purpose: 'Verificar a segurança', form: '`As quatro latas estão fechadas e sem vazamento, certo?`', effect: 'confere a condição antes de guardar' },
+        ],
+        success: 'Você reconheceu que não conferiu o aviso, ajudou a separar e guardou as quatro latas fechadas em área adequada. Assumiu a coleta de quarta-feira e confirmou que nada ficará no carro ou na calçada.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 4,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 4º turno global da conversa.** Antes, identifique os quatro grupos, diga o que não pode guardar e pergunte quais horários o vizinho tem. Não mostre a tela ao vizinho.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Aviso municipal · 15h24**' },
+        { kind: 'table', head: ['Serviço', 'Atualização'], rows: [['Ecoponto', 'reabre domingo · 8h'], ['Aceita amanhã', 'papelão + madeira + vidro protegido'], ['Tinta', 'não aceita no ecoponto'], ['Coleta especial', 'quarta-feira · 9h–12h · até 5 latas']] },
+        { kind: 'p', text: 'Os materiais precisam seguir dois caminhos. O espelho deve ir em recipiente rígido; as latas devem permanecer fechadas até a coleta especial.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem com um acordo parcial quando as duas pessoas puderem repetir:**' },
+      { kind: 'ol', items: ['Nada ficará no portão, na calçada ou no carro.', 'Papelão e madeira serão guardados secos na garagem da vizinha.', 'O espelho irá em caixa rígida com tampa.', 'A vizinha levará esses três grupos ao ecoponto domingo às 8h30.', 'O vizinho guardará as quatro latas fechadas e as levará à coleta especial quarta-feira às 10h.'] },
+    ],
+    debrief: ['¿Por qué el ecopunto y la recolección especial no eran el mismo destino?', '¿Cómo se repartieron espacio, tiempo y viajes?', 'Repitan en portugués materiales, almacenamiento y horarios sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'levamos tudo y o ecoponto fechou reconstruyen el error.' },
+      { slug: 'futuro-do-presente-a2', level: 'a2', title: 'Futuro do presente en portugués A2', rationale: 'levarei y ficará guardado distribuyen acciones futuras.' },
+      { slug: 'pronomes-obliquos-a2', level: 'a2', title: 'Pronombres oblicuos en portugués A2', rationale: 'vou guardá-las y podemos levá-lo retoman latas y vidrio.' },
+      { slug: 'verbos-reflexivos-a2', level: 'a2', title: 'Verbos reflexivos en portugués A2', rationale: 'organizar-se y responsabilizar-se por expresan reparto personal.' },
+      { slug: 'expressoes-tempo-a2', level: 'a2', title: 'Expresiones de tiempo en portugués A2', rationale: 'até, amanhã às y na quarta-feira fijan límites y entregas.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'por isso, enquanto y mas conectan causa, simultaneidad y límite.' },
+    ],
+  },
+]
