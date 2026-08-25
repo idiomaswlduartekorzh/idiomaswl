@@ -1,0 +1,112 @@
+import type { RoleplayScenario } from '../types.ts'
+
+/** Português brasileiro A2 · planos/problemas 18. */
+export const ROLEPLAY_PORTUGUES_A2_BATCH_4C: RoleplayScenario[] = [
+  {
+    id: 'portugues-a2-court-lights-go-out-before-game', slug: 'court-lights-go-out-before-game', sequence: 18,
+    language: 'portugues', level: 'a2', title: 'Las luces de la cancha se apagan antes del partido', titleTarget: 'As luzes da quadra apagam antes do jogo',
+    setting: 'Quarta-feira, às 17h55, em um centro esportivo de Belo Horizonte', settingEs: 'Un centro deportivo de Belo Horizonte, el miércoles a las 5:55 p. m.',
+    speechActs: ['disculparse', 'recomendar', 'proponer-alternativa'], power: 'a>b', initiator: 'a', outcome: 'acuerdo', minutes: 7, turnsPerRole: 8,
+    source: 'docs/habla-portugues-a2-parrilla.md#18',
+    roles: [
+      {
+        id: 'a', name: 'atendente do centro esportivo', nameEs: 'quien atiende el centro deportivo', headline: 'A iluminação desliga às 20h30, mas a quadra acabou de ficar livre uma hora antes',
+        briefing: ['**Dê a notícia e ofereça a faixa completa.** Use **você** com o jogador. **Você começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao jogador. Não prometa luz depois das 20h30 nem permita jogo no escuro.'],
+        prose: [
+          { label: 'Situação atual', text: 'A equipe reservou a quadra das 19h30 às 21h. A manutenção elétrica começará às 20h30 e desligará iluminação, placar e vestiários.' },
+          { label: 'Objetivo', text: 'Avisar antes da chegada, oferecer um horário anterior e confirmar acesso, aquecimento, jogo e saída com luz.' },
+          { label: 'O que não é possível', items: ['Manter qualquer pessoa na quadra depois das 20h30.', 'Acender apenas metade dos refletores: todo o circuito será desligado.', 'Transferir a reserva para amanhã: a quadra já está ocupada.'] },
+          { label: 'Só você sabe', items: ['A equipe anterior cancelou e liberou a quadra das 18h30 às 19h30.', 'Pode estender essa liberação até 20h25 sem custo adicional.', 'A portaria pode liberar os jogadores a partir das 18h35 se receber a lista até 18h15.'] },
+          { label: 'Se vocês não resolverem', text: 'O jogo para no meio, os jogadores saem no escuro e a equipe perde a única reserva da semana.' },
+        ],
+        facts: [
+          { label: 'Reserva original', value: '19h30–21h00' }, { label: 'Desligamento', value: '20h30 · iluminação + placar + vestiários' },
+          { label: 'Faixa liberada', value: '18h30–20h25' }, { label: 'Entrada possível', value: '18h35' },
+          { label: 'Prazo da lista', value: '18h15' }, { label: 'Custo extra', value: 'R$ 0' },
+          { label: 'Aviso de saída', value: '20h20' }, { label: 'Portão', value: 'fecha 20h30' },
+        ],
+        vocab: [
+          { word: 'circuito elétrico', whatItIs: 'sistema que leva energia aos equipamentos', here: 'rede desligada pela manutenção' },
+          { word: 'faixa liberada', whatItIs: 'período que ficou disponível para uso', here: '18h30–20h25' },
+          { word: 'iluminação', whatItIs: 'conjunto de luzes de um lugar', here: 'recurso que termina às 20h30' },
+          { word: 'lista de jogadores', whatItIs: 'nomes das pessoas autorizadas a entrar', here: 'documento pedido até 18h15' },
+          { word: 'manutenção elétrica', whatItIs: 'trabalho de reparo no sistema de energia', here: 'atividade que exige desligamento' },
+          { word: 'placar', whatItIs: 'equipamento que mostra pontos e tempo', here: 'aparelho que também ficará desligado' },
+          { word: 'refletor', whatItIs: 'luz forte usada em quadras e campos', here: 'parte que não pode continuar acesa' },
+          { word: 'vestiário', whatItIs: 'espaço para trocar roupa e tomar banho', here: 'área que fecha junto com a energia' },
+        ],
+        toolkit: 'Use os blocos **1** `[grants]`, **2** `[receives]`, **4**, **5** `[grants]`, **6** `[grants]`, **7** e **8** da caixa comum. Apresente entrada, aquecimento, jogo e saída como quatro horários.',
+        exponents: [
+          { purpose: 'Dar a notícia', form: '`Sinto muito, a iluminação e os vestiários serão desligados às …`', effect: 'comunica o limite completo' },
+          { purpose: 'Explicar o motivo', form: '`A manutenção precisa desligar todo o circuito, não apenas alguns refletores.`', effect: 'evita uma falsa alternativa' },
+          { purpose: 'Oferecer a faixa', form: '`A quadra ficou livre das … às …, sem custo adicional.`', effect: 'oferece tempo suficiente' },
+          { purpose: 'Pedir a lista', form: '`Pode enviar os nomes até … para liberar a entrada às …?`', effect: 'liga acesso a documento e prazo' },
+          { purpose: 'Recomendar a saída', form: '`É melhor terminar o jogo às … e sair até …`', effect: 'reserva tempo para deixar a quadra com luz' },
+          { purpose: 'Resumir o horário', form: '`Entrada às …, aquecimento às …, jogo às … e saída às …`', effect: 'confirma as quatro etapas' },
+          { purpose: 'Verificar a duração', form: '`Com essa faixa, vocês conseguem fazer aquecimento e … minutos de jogo?`', effect: 'confere se a alternativa cumpre o mínimo' },
+        ],
+        success: 'Você explicou o desligamento total, ofereceu a faixa anterior e pediu a lista. Confirmou entrada, aquecimento, 80 minutos de jogo e saída antes das 20h30.',
+      },
+      {
+        id: 'b', name: 'jogador que organiza a equipe', nameEs: 'quien organiza el equipo', headline: 'A equipe consegue chegar às 18h40, e o jogo precisa de pelo menos oitenta minutos',
+        briefing: ['**Dê a duração mínima e verifique a chegada da equipe.** Use **você** com o atendente. **O atendente começa.** Cerca de 8 turnos · 7 minutos.', '**Olhe apenas para a sua tela.** Não mostre ao atendente. Não aceite jogar depois do apagado nem reduzir o aquecimento a zero.'],
+        prose: [
+          { label: 'Situação atual', text: 'Você organizou um jogo para as 19h30. O centro esportivo informa que as luzes serão desligadas uma hora antes do fim reservado.' },
+          { label: 'Objetivo', text: 'Manter pelo menos dez minutos de aquecimento e oitenta de jogo, avisar os jogadores e sair antes do desligamento.' },
+          { label: 'O que não é possível', items: ['Começar antes das 18h50: quatro jogadores saem do trabalho às 18h30.', 'Jogar sem dez minutos de aquecimento.', 'Terminar depois das 20h20: a equipe precisa guardar bolas e trocar calçados.'] },
+          { label: 'Só você sabe', items: ['Todos os dez jogadores podem chegar até 18h40 se receberem mensagem antes das 18h10.', 'O árbitro chega às 18h50 e aceita iniciar o jogo às 19h.', 'Você tem a lista pronta e consegue enviá-la agora pelo aplicativo do centro.'] },
+          { label: 'Se vocês não resolverem', text: 'A equipe perde o jogo semanal ou continua na quadra quando luzes e vestiários fecharem.' },
+        ],
+        facts: [
+          { label: 'Equipe', value: '10 jogadores' }, { label: 'Chegada possível', value: 'até 18h40' },
+          { label: 'Prazo do aviso', value: '18h10' }, { label: 'Árbitro', value: 'chegada 18h50' },
+          { label: 'Aquecimento mínimo', value: '10 minutos' }, { label: 'Jogo mínimo', value: '80 minutos' },
+          { label: 'Fim necessário', value: '20h20' }, { label: 'Lista', value: 'pronta para envio' },
+        ],
+        vocab: [
+          { word: 'aquecimento', whatItIs: 'exercícios leves feitos antes de jogar', here: 'dez minutos antes da partida' },
+          { word: 'árbitro', whatItIs: 'pessoa que aplica as regras de um jogo', here: 'participante que chega às 18h50' },
+          { word: 'aviso à equipe', whatItIs: 'mensagem enviada a todos os jogadores', here: 'ação necessária antes das 18h10' },
+          { word: 'duração mínima', whatItIs: 'menor tempo que ainda serve para a atividade', here: 'oitenta minutos de jogo' },
+          { word: 'faixa anterior', whatItIs: 'período disponível antes do horário original', here: 'tempo liberado pela outra equipe' },
+          { word: 'guardar o material', whatItIs: 'recolher objetos usados em uma atividade', here: 'ação feita antes de 20h20' },
+          { word: 'partida', whatItIs: 'jogo entre duas equipes', here: 'atividade das 19h às 20h20' },
+          { word: 'trocar o horário', whatItIs: 'mudar início e fim de uma atividade', here: 'solução para evitar o apagado' },
+        ],
+        toolkit: 'Use os blocos **1** `[asks]`, **2** `[receives]`, **4**, **5**, **6** `[grants]`, **7** e **8** da caixa comum. Dê os mínimos de aquecimento e jogo e confirme a chegada de jogadores e árbitro.',
+        exponents: [
+          { purpose: 'Aceitar a troca', form: '`Aceito a faixa anterior se tivermos dez minutos de aquecimento e oitenta de jogo.`', effect: 'condiciona a mudança ao mínimo necessário' },
+          { purpose: 'Confirmar a equipe', form: '`Os dez jogadores chegam até … e o árbitro chega às …`', effect: 'verifica viabilidade do início' },
+          { purpose: 'Dar o limite', form: '`Precisamos terminar às … para guardar o material antes do apagado.`', effect: 'reserva tempo de saída' },
+          { purpose: 'Explicar o mínimo', form: '`Não podemos começar sem aquecimento nem jogar menos de … minutos.`', effect: 'define qualidade mínima' },
+          { purpose: 'Prometer o aviso', form: '`Envio a lista agora e aviso a equipe antes das …`', effect: 'assume documento e comunicação' },
+          { purpose: 'Propor a partida', form: '`Aquecemos às … e fazemos o jogo das … às …`', effect: 'organiza dois períodos' },
+          { purpose: 'Verificar a saída', form: '`Paramos às …, guardamos tudo e saímos antes das …, certo?`', effect: 'confirma o fechamento seguro' },
+        ],
+        success: 'Você confirmou que todos chegam, enviou a lista e avisou a equipe. Preservou dez minutos de aquecimento, oitenta de jogo e dez minutos para guardar e sair.',
+      },
+    ],
+    card: {
+      toRole: 'a', afterTurn: 4,
+      openWhen: [{ kind: 'p', text: '**Abra depois do 4º turno global da conversa.** Antes, diga a hora do apagado e pergunte quantos minutos de aquecimento e jogo são necessários. Não mostre a tela ao jogador.' }],
+      blocks: [{ kind: 'quote', blocks: [
+        { kind: 'p', text: '**Cancelamento da equipe anterior · 18h01**' },
+        { kind: 'table', head: ['Quadra', 'Atualização'], rows: [['Faixa liberada', '18h30–20h25'], ['Entrada', 'a partir de 18h35'], ['Custo extra', 'R$ 0'], ['Condição', 'lista até 18h15']] },
+        { kind: 'p', text: 'A nova faixa permite aquecimento e jogo completo. Confirme quando entram, começam, terminam e saem.' },
+      ] }],
+    },
+    closing: [
+      { kind: 'p', text: '**Terminem quando as duas pessoas puderem repetir estes cinco elementos:**' },
+      { kind: 'ol', items: ['A lista de dez jogadores será enviada até 18h15.', 'A equipe entra às 18h40 e o árbitro chega às 18h50.', 'O aquecimento ocorre das 18h50 às 19h.', 'O jogo dura 80 minutos, das 19h às 20h20.', 'A equipe guarda o material e sai antes do desligamento das 20h30.'] },
+    ],
+    debrief: ['¿Qué mínimos hicieron útil la franja anterior?', '¿Por qué terminar el juego no era lo mismo que salir de la cancha?', 'Repitan en portugués entrada, calentamiento, juego y salida sin leer toda la ficha.'],
+    grammarReferences: [
+      { slug: 'preterito-perfeito-irregular-a2', level: 'a2', title: 'Pretérito perfeito irregular en portugués A2', rationale: 'a equipe anterior fez o cancelamento y a quadra ficou livre reconstruyen la oportunidad.' },
+      { slug: 'verbo-ficar-a2', level: 'a2', title: 'Verbo ficar en portugués A2', rationale: 'ficou livre y as luzes ficam apagadas describen cambios de estado.' },
+      { slug: 'condicional-a2', level: 'a2', title: 'Condicional en portugués A2', rationale: 'poderiam chegar y seria possível evaluan la nueva franja.' },
+      { slug: 'expressoes-tempo-a2', level: 'a2', title: 'Expresiones de tiempo en portugués A2', rationale: 'das…às, antes de y a partir de fijan cada etapa.' },
+      { slug: 'expressoes-com-fazer-a2', level: 'a2', title: 'Expresiones con fazer en portugués A2', rationale: 'fazer aquecimento, fazer o jogo y fazer a lista organizan acciones.' },
+      { slug: 'conjuncoes-logicas-a2', level: 'a2', title: 'Conjunciones lógicas en portugués A2', rationale: 'se, antes que y depois conectan condición y secuencia.' },
+    ],
+  },
+]
