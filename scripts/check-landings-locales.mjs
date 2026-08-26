@@ -26,9 +26,9 @@ const GOOGLE_PROFILE = {
 const LANDINGS = [
   { slug: 'clases-de-ingles', language: 'inglés', exams: ['IELTS', 'TOEFL', 'FCE', 'ICFES'] },
   { slug: 'clases-de-coreano', language: 'coreano', exams: ['TOPIK'] },
-  { slug: 'clases-de-italiano', language: 'italiano', exams: ['CILS', 'CELI', 'Ciudadanía'] },
+  { slug: 'clases-de-italiano', language: 'italiano', exams: ['CILS', 'CELI', 'Ciudadanía'], faqSingleSource: true },
   { slug: 'clases-de-portugues', language: 'portugués', exams: ['Celpe-Bras'] },
-  { slug: 'clases-de-frances', language: 'francés', exams: ['DELF', 'DALF'] },
+  { slug: 'clases-de-frances', language: 'francés', exams: ['DELF', 'DALF'], faqSingleSource: true },
   { slug: 'clases-de-aleman', language: 'alemán', exams: ['Goethe', 'Ausbildung'] },
   { slug: 'clases-de-japones', language: 'japonés', exams: ['JLPT'] },
   { slug: 'clases-de-ruso', language: 'ruso', exams: ['Cero'] },
@@ -77,7 +77,7 @@ const snippetSource = read('src/lib/seo-snippet.ts') ?? '';
 const TITLE_MAX = Number(snippetSource.match(/TITLE_MAX\s*=\s*(\d+)/)?.[1] ?? 60);
 const DESCRIPTION_MAX = Number(snippetSource.match(/DESC_MAX\s*=\s*(\d+)/)?.[1] ?? 155);
 
-for (const { slug, language, exams } of LANDINGS) {
+for (const { slug, language, exams, faqSingleSource } of LANDINGS) {
   const relativePath = `src/app/(site)/${slug}/page.tsx`;
   const source = read(relativePath);
   if (!source) {
@@ -112,7 +112,14 @@ for (const { slug, language, exams } of LANDINGS) {
     if (!source.includes(`'${schemaType}'`)) fail(slug, `perdió ${schemaType} del JSON-LD.`);
   }
 
-  const questionCount = (source.match(/'@type':\s*'Question'/g) ?? []).length;
+  const visibleQuestionCount = (source.match(/\{\s*q:\s*['"]/g) ?? []).length;
+  const schemaQuestionCount = (source.match(/'@type':\s*'Question'/g) ?? []).length;
+  const questionCount = Math.max(visibleQuestionCount, schemaQuestionCount);
+  if (faqSingleSource) {
+    if (!/mainEntity:\s*faqs\.map\(/.test(source) || !/JSON\.stringify\(faqJsonLd\(FAQS\)\)/.test(source)) {
+      fail(slug, 'el FAQ visible y su JSON-LD dejaron de compartir una sola fuente.');
+    }
+  }
   if (questionCount < FAQ_TARGET) warn(slug, `solo tiene ${questionCount} pregunta${questionCount === 1 ? '' : 's'} en FAQ; objetivo ${FAQ_TARGET}.`);
   details.push(`${slug.padEnd(20)} title ${String(title?.length ?? 0).padStart(2)}/${TITLE_MAX} · FAQ ${String(questionCount).padStart(2)} · NAP + LocalBusiness + Course`);
 }

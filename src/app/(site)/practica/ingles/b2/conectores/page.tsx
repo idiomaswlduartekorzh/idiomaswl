@@ -6,7 +6,7 @@ import { QuizSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Advanced connectors B2: moreover, nevertheless, provided',
   description: 'Practica los conectores avanzados del inglés B2: moreover, furthermore, nevertheless, consequently, provided that, despite, so that. 6 niveles progresivos.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ingles/b2/conectores' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/b2/conectores' },
 };
 
 const guide: QuestGuide = {
@@ -131,7 +131,7 @@ export default function ConectoresInglesB2() {
     <>
       <QuizSchema
         name="Advanced Connectors B2 — moreover, nevertheless, consequently, despite"
-        url="https://idiomaswl.com/practica/ingles/b2/conectores"
+        url="https://www.idiomaswl.com/practica/ingles/b2/conectores"
         description="Practica los conectores avanzados del inglés B2: moreover, furthermore, nevertheless, consequently, provided that, despite, so that. 6 niveles progresivos."
       />
       <QuestEngine

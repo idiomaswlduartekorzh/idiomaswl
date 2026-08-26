@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Japonés B1 — Frases esenciales"
-        url="https://idiomaswl.com/practica/japones/b1/habla"
+        url="https://www.idiomaswl.com/practica/japones/b1/habla"
         description="20 frases esenciales de Japonés B1 con kanji, romaji y fonética para debates y situaciones formales."
       />
       <Content />
