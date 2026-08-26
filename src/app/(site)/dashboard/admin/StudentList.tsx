@@ -16,7 +16,17 @@ export interface StudentRow {
   subject: string | null
   enrolled_at: string | null
   simulacro_count: number
+  completed_steps: number
+  active_days: number
   last_active: string | null
+  progress: StudentProgressRow[]
+}
+
+export interface StudentProgressRow {
+  course_slug: string
+  step_id: string
+  last_stage: string | null
+  completed_at: string
 }
 
 const PLAN_OPTS: { value: StudentPlan; label: string; color: string }[] = [
@@ -178,6 +188,14 @@ function StudentDetail({ student, submissions }: { student: StudentRow; submissi
           <p style={{ margin: 0, fontSize: 11, color: MUTED }}>Simulacros realizados</p>
           <p style={{ margin: 0, fontSize: 20, fontWeight: 800, color: TEXT }}>{exams.length}</p>
         </div>
+        <div>
+          <p style={{ margin: 0, fontSize: 11, color: MUTED }}>Pasos completados</p>
+          <p style={{ margin: 0, fontSize: 20, fontWeight: 800, color: TEXT }}>{student.completed_steps}</p>
+        </div>
+        <div>
+          <p style={{ margin: 0, fontSize: 11, color: MUTED }}>Días activos</p>
+          <p style={{ margin: 0, fontSize: 20, fontWeight: 800, color: TEXT }}>{student.active_days}</p>
+        </div>
         {student.enrolled_at && (
           <div>
             <p style={{ margin: 0, fontSize: 11, color: MUTED }}>Inscrito</p>
@@ -192,32 +210,66 @@ function StudentDetail({ student, submissions }: { student: StudentRow; submissi
         </a>
       </div>
 
-      {exams.length === 0 ? (
-        <p style={{ fontSize: 12, color: MUTED, margin: 0 }}>Sin simulacros registrados aún.</p>
-      ) : (
-        <div style={{ overflowX: 'auto' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
-            <thead>
-              <tr>
-                {['Examen', 'Resultado', 'Fecha'].map(h => (
-                  <th key={h} style={{ textAlign: 'left', padding: '4px 8px', color: MUTED, fontWeight: 600, fontSize: 10, borderBottom: `1px solid ${BORDER}` }}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {exams.map(s => (
-                <tr key={s.id} style={{ borderBottom: `1px solid ${BORDER}` }}>
-                  <td style={{ padding: '6px 8px', color: TEXT }}>{s.exam_name} {s.mock_title ? `· ${s.mock_title}` : ''}</td>
-                  <td style={{ padding: '6px 8px', fontWeight: 700, color: A }}>{s.total_label ?? '—'}</td>
-                  <td style={{ padding: '6px 8px', color: MUTED, whiteSpace: 'nowrap' }}>
-                    {new Date(s.created_at).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 14 }}>
+        <section>
+          <p style={{ margin: '0 0 7px', color: TEXT, fontSize: 11, fontWeight: 800 }}>Lecciones y pasos completados</p>
+          {student.progress.length === 0 ? (
+            <p style={{ fontSize: 12, color: MUTED, margin: 0 }}>Aún no ha completado pasos de curso.</p>
+          ) : (
+            <div style={{ overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
+                <thead>
+                  <tr>
+                    {['Curso', 'Paso', 'Última etapa', 'Fecha'].map(h => (
+                      <th key={h} style={{ textAlign: 'left', padding: '4px 8px', color: MUTED, fontWeight: 600, fontSize: 10, borderBottom: `1px solid ${BORDER}` }}>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {student.progress.slice(0, 20).map(item => (
+                    <tr key={`${item.course_slug}-${item.step_id}`} style={{ borderBottom: `1px solid ${BORDER}` }}>
+                      <td style={{ padding: '6px 8px', color: TEXT, textTransform: 'capitalize' }}>{item.course_slug}</td>
+                      <td style={{ padding: '6px 8px', color: TEXT, fontWeight: 700 }}>{item.step_id}</td>
+                      <td style={{ padding: '6px 8px', color: MUTED }}>{item.last_stage ?? '—'}</td>
+                      <td style={{ padding: '6px 8px', color: MUTED, whiteSpace: 'nowrap' }}>{formatDate(item.completed_at)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </section>
+
+        <section>
+          <p style={{ margin: '0 0 7px', color: TEXT, fontSize: 11, fontWeight: 800 }}>Simulacros realizados</p>
+          {exams.length === 0 ? (
+            <p style={{ fontSize: 12, color: MUTED, margin: 0 }}>Sin simulacros registrados aún.</p>
+          ) : (
+            <div style={{ overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
+                <thead>
+                  <tr>
+                    {['Examen', 'Resultado', 'Fecha'].map(h => (
+                      <th key={h} style={{ textAlign: 'left', padding: '4px 8px', color: MUTED, fontWeight: 600, fontSize: 10, borderBottom: `1px solid ${BORDER}` }}>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {exams.map(s => (
+                    <tr key={s.id} style={{ borderBottom: `1px solid ${BORDER}` }}>
+                      <td style={{ padding: '6px 8px', color: TEXT }}>{s.exam_name} {s.mock_title ? `· ${s.mock_title}` : ''}</td>
+                      <td style={{ padding: '6px 8px', fontWeight: 700, color: A }}>{s.total_label ?? '—'}</td>
+                      <td style={{ padding: '6px 8px', color: MUTED, whiteSpace: 'nowrap' }}>
+                        {new Date(s.created_at).toLocaleDateString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </section>
+      </div>
     </div>
   )
 }
@@ -339,7 +391,7 @@ export default function StudentList({
           {filtered.length} de {list.length}
           {' · '}
           <span style={{ color: '#d97706', fontWeight: 600 }}>
-            {list.filter(s => { if (!s.last_active) return false; const d = Math.floor((Date.now() - new Date(s.last_active).getTime()) / 86400000); return d > 7 && d <= 30 }).length} riesgo
+            {list.filter(s => activityStatus(s.last_active).label === 'En riesgo').length} riesgo
           </span>
         </span>
         <button
@@ -365,7 +417,7 @@ export default function StudentList({
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
             <thead>
               <tr>
-                {['', 'Estudiante', 'Estado', 'Materia', 'Plan', 'Sims', 'Último acceso', 'Cambiar plan', 'Materia', ''].map((h, i) => (
+                {['', 'Estudiante', 'Estado', 'Materia', 'Plan', 'Pasos', 'Sims', 'Último acceso', 'Cambiar plan', 'Materia', ''].map((h, i) => (
                   <th key={i} style={{
                     textAlign: 'left', padding: '6px 8px',
                     color: MUTED, fontWeight: 600, fontSize: 10,
@@ -446,6 +498,11 @@ export default function StudentList({
                       <PlanBadge plan={student.plan} />
                     </td>
 
+                    {/* Completed steps */}
+                    <td style={{ padding: '10px 8px', fontWeight: 700, color: TEXT, fontFamily: 'monospace' }}>
+                      {student.completed_steps}
+                    </td>
+
                     {/* Simulacro count */}
                     <td style={{ padding: '10px 8px', fontWeight: 700, color: TEXT, fontFamily: 'monospace' }}>
                       {student.simulacro_count}
@@ -516,7 +573,7 @@ export default function StudentList({
                   {/* Expanded detail row */}
                   {expandedId === student.id && (
                     <tr key={`${student.id}-detail`} style={{ borderBottom: `1px solid ${BORDER}` }}>
-                      <td colSpan={10} style={{ padding: '0 0 8px' }}>
+                      <td colSpan={11} style={{ padding: '0 0 8px' }}>
                         <StudentDetail student={student} submissions={submissions} />
                       </td>
                     </tr>

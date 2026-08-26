@@ -45,24 +45,33 @@ export async function inviteStudent(
     return { ok: false, error: 'Sin permisos de administrador' }
   }
 
+  const normalizedEmail = email.trim().toLowerCase()
+  const normalizedName = fullName.trim()
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail) || !normalizedName) {
+    return { ok: false, error: 'Email y nombre son requeridos' }
+  }
+
   const admin = createAdminClient()
 
-  const { data, error: inviteError } = await admin.auth.admin.inviteUserByEmail(email, {
-    data: { full_name: fullName },
+  const { data, error: inviteError } = await admin.auth.admin.inviteUserByEmail(normalizedEmail, {
+    data: { full_name: normalizedName },
   })
 
   if (inviteError) return { ok: false, error: inviteError.message }
 
   if (data?.user) {
-    await admin.from('profiles').upsert({
+    const { error: profileError } = await admin.from('profiles').upsert({
       id:          data.user.id,
-      email,
-      full_name:   fullName,
+      email:       normalizedEmail,
+      full_name:   normalizedName,
+      name:        normalizedName,
       plan,
       subject,
-      role:        'student',
+      role:        'user',
       enrolled_at: new Date().toISOString(),
     }, { onConflict: 'id' })
+
+    if (profileError) return { ok: false, error: profileError.message }
   }
 
   return { ok: true }

@@ -13,7 +13,7 @@ export default async function ZhannaDashboardServer() {
   const { count: studentCount } = await supabase
     .from('profiles')
     .select('id', { count: 'exact', head: true })
-    .eq('role', 'student')
+    .eq('role', 'user')
 
   // This week's exam submissions
   const startOfThisWeek = new Date()

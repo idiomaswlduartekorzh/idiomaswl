@@ -1,6 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import JoseDashboard from './JoseDashboard'
-import type { StudentRow } from './StudentList'
+import type { StudentProgressRow, StudentRow } from './StudentList'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
 import type { StudentSubject } from '@/lib/actions/inviteStudent'
 import { EXAMS } from '@/data/exams'
@@ -184,11 +184,27 @@ export default async function JoseDashboardServer() {
   )
 
   // ── Students list ────────────────────────────────────────────────────────────
-  const { data: profileRows } = await supabase
-    .from('profiles')
-    .select('id, email, full_name, plan, subject, enrolled_at, created_at')
-    .eq('role', 'student')
-    .order('created_at', { ascending: false })
+  const [
+    { data: profileRows },
+    { data: progressRows },
+    { data: activityRows },
+  ] = await Promise.all([
+    supabase
+      .from('profiles')
+      .select('id, email, full_name, plan, subject, enrolled_at, created_at')
+      .eq('role', 'user')
+      .order('created_at', { ascending: false }),
+    supabase
+      .from('user_progress')
+      .select('user_id, course_slug, step_id, last_stage, completed_at')
+      .order('completed_at', { ascending: false })
+      .limit(5000),
+    supabase
+      .from('daily_activity')
+      .select('user_id, activity_date')
+      .order('activity_date', { ascending: false })
+      .limit(10000),
+  ])
 
   // Build simulacro count per user from existing submissions
   const simCountMap = new Map<string, number>()
@@ -204,16 +220,53 @@ export default async function JoseDashboardServer() {
     if (!lastActiveMap.has(r.user_id)) lastActiveMap.set(r.user_id, r.created_at)
   }
 
-  const students: StudentRow[] = (profileRows ?? []).map(p => ({
-    id:              p.id,
-    email:           p.email,
-    full_name:       p.full_name ?? null,
-    plan:            (p.plan as StudentPlan) ?? 'autodidacta',
-    subject:         (p.subject as StudentSubject | null) ?? null,
-    enrolled_at:     p.enrolled_at ?? p.created_at ?? null,
-    simulacro_count: simCountMap.get(p.id) ?? 0,
-    last_active:     lastActiveMap.get(p.id) ?? null,
-  }))
+  const progressMap = new Map<string, StudentProgressRow[]>()
+  for (const row of progressRows ?? []) {
+    const progress: StudentProgressRow = {
+      course_slug: String(row.course_slug),
+      step_id: String(row.step_id),
+      last_stage: row.last_stage ? String(row.last_stage) : null,
+      completed_at: String(row.completed_at),
+    }
+    const current = progressMap.get(String(row.user_id)) ?? []
+    current.push(progress)
+    progressMap.set(String(row.user_id), current)
+  }
+
+  const activeDaysMap = new Map<string, number>()
+  for (const row of activityRows ?? []) {
+    const userId = String(row.user_id)
+    activeDaysMap.set(userId, (activeDaysMap.get(userId) ?? 0) + 1)
+    const activityAt = `${String(row.activity_date)}T00:00:00.000Z`
+    const previous = lastActiveMap.get(userId)
+    if (!previous || new Date(activityAt) > new Date(previous)) {
+      lastActiveMap.set(userId, activityAt)
+    }
+  }
+
+  for (const [userId, progress] of progressMap) {
+    const completedAt = progress[0]?.completed_at
+    const previous = lastActiveMap.get(userId)
+    if (completedAt && (!previous || new Date(completedAt) > new Date(previous))) {
+      lastActiveMap.set(userId, completedAt)
+    }
+  }
+
+  const students: StudentRow[] = (profileRows ?? [])
+    .filter(p => typeof p.email === 'string' && p.email.length > 0)
+    .map(p => ({
+      id:              p.id,
+      email:           p.email,
+      full_name:       p.full_name ?? null,
+      plan:            (p.plan as StudentPlan) ?? 'autodidacta',
+      subject:         (p.subject as StudentSubject | null) ?? null,
+      enrolled_at:     p.enrolled_at ?? p.created_at ?? null,
+      simulacro_count: simCountMap.get(p.id) ?? 0,
+      completed_steps: progressMap.get(p.id)?.length ?? 0,
+      active_days:     activeDaysMap.get(p.id) ?? 0,
+      last_active:     lastActiveMap.get(p.id) ?? null,
+      progress:        progressMap.get(p.id) ?? [],
+    }))
 
   // ── Leads de simulacros (formulario de captura) ─────────────────────────────
   // NO filtrar por un examen concreto: el patrón '<examen>-practica' cubre a los
