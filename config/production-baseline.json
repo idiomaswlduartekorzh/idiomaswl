@@ -241,7 +241,7 @@
     { "path": "/podcasts", "marker": "Estrategia que se escucha." },
     { "path": "/practica/ideas-avanzadas", "marker": "Ideas that refuse a quick answer." },
     { "path": "/practica/ideas-avanzadas/efecto-encuadre", "marker": "The framing effect" },
-    { "path": "/practica/ideas-avanzadas/dunning-kruger-sin-la-curva", "marker": "Calibration and competence" },
+    { "path": "/practica/ideas-avanzadas/dunning-kruger-sin-la-curva", "marker": "Calibration, competence and the graph that escaped the lab" },
     { "path": "/practica/ielts", "marker": "IELTS" },
     { "path": "/practica/icfes-saber-11", "marker": "ICFES" },
     { "path": "/nivel-radar", "marker": "nivel" },
