@@ -107,7 +107,7 @@ export function IELTSSubmission({
     if (task1Words < 150) return showError('Writing Task 1 necesita al menos 150 palabras. Vuelve al examen para completarlo.');
     if (task2Words < 250) return showError('Writing Task 2 necesita al menos 250 palabras. Vuelve al examen para completarlo.');
     if (speakingIssues.length > 0) return showError(speakingIssues[0]);
-    if (!consent) return showError('Debes autorizar el envío académico y la posible evaluación externa.');
+    if (!consent) return showError('Debes autorizar el envío y la evaluación académica.');
 
     const payload: IeltsSubmissionPayload = {
       name: trimmedName,
@@ -233,7 +233,7 @@ export function IELTSSubmission({
             <input type="checkbox" name="evaluation_consent" checked={consent}
               onChange={event => setConsent(event.target.checked)} required />
             <span>
-              Autorizo el almacenamiento privado para evaluación académica. El profesor puede delegar una tarea a ChatGPT, Claude u otro evaluador externo mediante un enlace temporal que no revela mi nombre ni correo.
+              Autorizo el almacenamiento privado de mis respuestas para su evaluación académica por el equipo docente y evaluadores autorizados. Los accesos temporales no revelan mi nombre ni correo.
             </span>
           </label>
           <p className="ielts-submit__privacy">

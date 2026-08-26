@@ -86,11 +86,11 @@ export default function ReviewSubmissionForm({ review }: { review: IeltsDelegate
       <div className={styles.twoColumns}>
         <label>
           Evaluador
-          <input name="evaluator_name" autoComplete="off" required minLength={2} maxLength={120} value={evaluatorName} onChange={event => setEvaluatorName(event.target.value)} placeholder="ChatGPT, Claude o nombre humano…" />
+          <input name="evaluator_name" autoComplete="off" required minLength={2} maxLength={120} value={evaluatorName} onChange={event => setEvaluatorName(event.target.value)} placeholder="Nombre del evaluador…" />
         </label>
         <label>
-          Modelo y versión
-          <input name="evaluator_model" autoComplete="off" required minLength={2} maxLength={120} value={evaluatorModel} onChange={event => setEvaluatorModel(event.target.value)} placeholder="Ej.: Claude Sonnet 4.5…" />
+          Método de evaluación
+          <input name="evaluator_model" autoComplete="off" required minLength={2} maxLength={120} value={evaluatorModel} onChange={event => setEvaluatorModel(event.target.value)} placeholder="Ej.: rúbrica IELTS vigente…" />
         </label>
       </div>
 
@@ -121,7 +121,7 @@ export default function ReviewSubmissionForm({ review }: { review: IeltsDelegate
       <div className={styles.bandLabel}>
         <span>Banda estimada de la tarea</span>
         <strong>{overallBand ?? 'Pendiente'}</strong>
-        <small>Promedio automático de los cuatro criterios.</small>
+        <small>Promedio calculado a partir de los cuatro criterios.</small>
       </div>
 
       <label>

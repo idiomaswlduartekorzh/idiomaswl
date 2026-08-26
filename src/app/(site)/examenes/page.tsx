@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Simulacros de Certificación',
-    description: 'TOEFL, IELTS, ICFES y más. Simulacros completos con feedback de IA.',
+    description: 'TOEFL, IELTS, ICFES y más. Simulacros completos con retroalimentación personalizada.',
     url: 'https://www.idiomaswl.com/examenes',
   },
   alternates: {
@@ -31,7 +31,7 @@ export default function ExamenesPage() {
           Elige tu examen
         </h1>
         <p style={{ color: 'var(--muted)', fontSize: '1.05rem', maxWidth: 560, margin: '0 0 3rem' }}>
-          Simulacros oficiales, estrategia de examen y feedback con IA para cada certificación.
+          Simulacros completos, estrategia de examen y retroalimentación personalizada para cada certificación.
         </p>
 
         <div className="wl-exams-catalog">

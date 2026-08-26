@@ -142,7 +142,7 @@ function validatePayload(
   if (name.length < 2) return { ok: false, error: 'Escribe el nombre completo de la estudiante.' };
   if (!/^\S+@\S+\.\S+$/.test(email)) return { ok: false, error: 'Escribe un correo electrónico válido.' };
   if (candidate.consentVersion !== IELTS_SUBMISSION_CONSENT_VERSION) {
-    return { ok: false, error: 'Debes aceptar el consentimiento académico y de evaluación externa vigente.' };
+    return { ok: false, error: 'Debes aceptar el consentimiento académico vigente.' };
   }
   if (!objectiveAnswers) return { ok: false, error: 'No pudimos verificar las respuestas de Listening y Reading.' };
   if (countEssayWords(writingTask1) < 150) return { ok: false, error: 'Writing Task 1 necesita al menos 150 palabras para enviarse.' };

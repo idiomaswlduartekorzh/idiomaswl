@@ -29,8 +29,8 @@ function formatDate(iso: string) {
 
 function statusFor(item: ExamSubmission): { label: string; color: string; background: string } {
   if (item.reviewed_at) return { label: 'Revisado', color: '#166534', background: '#dcfce7' }
-  if (item.writing_band != null) return { label: 'IA lista · falta revisión', color: '#92400e', background: '#fef3c7' }
-  return { label: 'Reporte IA pendiente', color: '#991b1b', background: '#fee2e2' }
+  if (item.writing_band != null) return { label: 'Análisis listo · falta revisión', color: '#92400e', background: '#fef3c7' }
+  return { label: 'Informe preliminar pendiente', color: '#991b1b', background: '#fee2e2' }
 }
 
 function Score({ label, value, source }: { label: string; value: number | null | undefined; source?: string }) {
@@ -65,7 +65,7 @@ function AssessmentReport({ title, report }: { title: string; report?: FullAsses
     return (
       <section style={{ background: CARD, border: `1px dashed ${BORDER}`, borderRadius: 10, padding: 12 }}>
         <h4 style={{ margin: 0, fontSize: 12, color: TEXT }}>{title}</h4>
-        <p style={{ margin: '4px 0 0', fontSize: 11, color: MUTED }}>El reporte automático todavía no se ha generado.</p>
+        <p style={{ margin: '4px 0 0', fontSize: 11, color: MUTED }}>El informe preliminar todavía no se ha generado.</p>
       </section>
     )
   }
@@ -78,7 +78,7 @@ function AssessmentReport({ title, report }: { title: string; report?: FullAsses
         <div>
           <h4 style={{ margin: 0, fontSize: 12, color: TEXT }}>{title}</h4>
           <p style={{ margin: '2px 0 0', fontSize: 10, color: MUTED }}>
-            {report.wordCount} palabras · {delegated ? `${delegated.evaluatorName} · ${delegated.evaluatorModel}` : `motor ${report.engineUsed ?? 'IA'}`}
+            {report.wordCount} palabras · {delegated ? `${delegated.evaluatorName} · ${delegated.evaluatorModel}` : 'análisis preliminar'}
           </p>
         </div>
         <strong style={{ color: A, fontSize: 20 }}>Band {report.overallBand}</strong>
@@ -298,7 +298,7 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
             <ClipboardCheck size={17} color={A} />
             <h3 id="ielts-review-heading" style={{ margin: 0, fontSize: 15, fontWeight: 800, color: TEXT }}>Evaluaciones IELTS</h3>
           </div>
-          <p style={{ margin: '4px 0 0 25px', color: MUTED, fontSize: 11 }}>Resultados L/R, textos, reportes de IA y audios privados en una sola ficha.</p>
+          <p style={{ margin: '4px 0 0 25px', color: MUTED, fontSize: 11 }}>Resultados L/R, textos, informes preliminares y audios privados en una sola ficha.</p>
         </div>
         <div role="group" aria-label="Filtrar evaluaciones" style={{ display: 'flex', gap: 5 }}>
           {([
@@ -362,17 +362,17 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
               </header>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(125px, 1fr))', gap: 7 }}>
-                <Score label="Listening" value={active.listening_band} source="Resultado automático" />
-                <Score label="Reading" value={active.reading_band} source="Resultado automático" />
-                <Score label="Writing" value={active.writing_band} source={active.reviewed_at ? 'Banda final del profesor' : active.writing_task1_delegated_assessment || active.writing_task2_delegated_assessment ? 'Evaluación delegada' : active.writing_band != null ? 'Sugerencia de IA' : undefined} />
+                <Score label="Listening" value={active.listening_band} source="Resultado objetivo" />
+                <Score label="Reading" value={active.reading_band} source="Resultado objetivo" />
+                <Score label="Writing" value={active.writing_band} source={active.reviewed_at ? 'Banda final del profesor' : active.writing_task1_delegated_assessment || active.writing_task2_delegated_assessment ? 'Evaluación delegada' : active.writing_band != null ? 'Valoración preliminar' : undefined} />
                 <Score label="Speaking" value={active.speaking_band} source={active.reviewed_at ? 'Banda final del profesor' : active.speaking_assessment ? 'Evaluación delegada' : undefined} />
               </div>
 
               <Essay title="Writing Task 1" value={active.writing_task1_answer} />
-              <AssessmentReport title="Reporte IA · Task 1" report={active.writing_task1_assessment} />
+              <AssessmentReport title="Informe preliminar · Task 1" report={active.writing_task1_assessment} />
               {active.writing_task1_delegated_assessment && <AssessmentReport title="Reporte delegado · Task 1" report={active.writing_task1_delegated_assessment} />}
               <Essay title="Writing Task 2" value={active.writing_task2_answer} />
-              <AssessmentReport title="Reporte IA · Task 2" report={active.writing_task2_assessment} />
+              <AssessmentReport title="Informe preliminar · Task 2" report={active.writing_task2_assessment} />
               {active.writing_task2_delegated_assessment && <AssessmentReport title="Reporte delegado · Task 2" report={active.writing_task2_delegated_assessment} />}
 
               {active.speaking_answers && Object.values(active.speaking_answers).some(Boolean) && (
@@ -408,7 +408,7 @@ export default function IELTSReviewPanel({ items }: { items: ExamSubmission[] })
               <IELTSDelegatedReviewCallout key={active.id} submission={active} />
 
               <section style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 12 }}>
-                <p style={{ margin: '0 0 10px', fontSize: 11, color: MUTED }}>La IA sugiere Writing; el profesor confirma Writing y asigna Speaking. Al guardar se recalcula el Overall con L/R/W/S.</p>
+                <p style={{ margin: '0 0 10px', fontSize: 11, color: MUTED }}>La valoración preliminar orienta Writing; el profesor confirma Writing y asigna Speaking. Al guardar se recalcula el Overall con L/R/W/S.</p>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(235px, 1fr))', gap: 12 }}>
                   <BandPicker label="Writing Band final" value={writingBand} onChange={setWritingBand} />
                   <BandPicker label="Speaking Band final" value={speakingBand} onChange={setSpeakingBand} />

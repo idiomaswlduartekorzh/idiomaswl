@@ -13,7 +13,7 @@ export default async function DashboardPage() {
   }
 
   // Email-based admin check is the source of truth (no Supabase profile needed)
-  const email = user.email ?? ''
+  const email = user.email?.trim().toLowerCase() ?? ''
   if (ALL_ADMIN_EMAILS.includes(email)) {
     redirect('/dashboard/admin')
   }

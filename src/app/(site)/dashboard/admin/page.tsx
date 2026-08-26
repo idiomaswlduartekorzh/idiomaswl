@@ -10,7 +10,7 @@ export default async function AdminPage() {
     data: { user },
   } = await supabase.auth.getUser()
 
-  const email = user?.email ?? ''
+  const email = user?.email?.trim().toLowerCase() ?? ''
 
   if (JOSE_EMAILS.includes(email as typeof JOSE_EMAILS[number])) {
     return <JoseDashboardServer />

@@ -157,7 +157,7 @@ async function authorizeDelegatedReview(token: string): Promise<
 function responseContract(task: IeltsDelegatedReviewTask): IeltsDelegatedReviewCase['responseContract'] {
   return {
     evaluatorName: 'Nombre del agente o evaluador',
-    evaluatorModel: 'Modelo y versión, por ejemplo Claude Sonnet 4.5',
+    evaluatorModel: 'Método de evaluación y versión de la rúbrica',
     overallBand: 'Número de 0 a 9 en pasos de 0.5',
     criteria: IELTS_OFFICIAL_RUBRICS[task].criteria.map(criterion => ({
       criterion: criterion.key,

@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
         : `Simulacros de ${exam.fullName ?? exam.name}`),
     description:
       guide?.description ??
-      `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con feedback de IA.`,
+      `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con retroalimentación personalizada.`,
     ...(slug === 'sat' ? { keywords: satKeywords } : {}),
     robots: {
       index: true,

@@ -270,7 +270,7 @@ export function validateIeltsDelegatedReviewInput(
   const priorities = cleanList(candidate.priorities);
 
   if (evaluatorName.length < 2 || evaluatorModel.length < 2) {
-    return { ok: false, message: 'Identifica el evaluador y el modelo utilizado.' };
+    return { ok: false, message: 'Identifica el evaluador y el método utilizado.' };
   }
   if (overallBand == null) return { ok: false, message: 'La banda general debe ir de 0 a 9 en pasos de 0.5.' };
   if (summary.length < 40) return { ok: false, message: 'Incluye un resumen sustentado de al menos 40 caracteres.' };

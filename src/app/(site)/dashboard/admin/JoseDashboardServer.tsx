@@ -1,4 +1,5 @@
-import { createClient } from '@/lib/supabase/server'
+import { requireAdmin } from '@/lib/auth/require-admin.server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import JoseDashboard from './JoseDashboard'
 import type { StudentProgressRow, StudentRow } from './StudentList'
 import type { StudentPlan } from '@/lib/actions/assignPlan'
@@ -101,7 +102,10 @@ function leadExamLabel(examSlug: string | null, source: string | null): string |
 }
 
 export default async function JoseDashboardServer() {
-  const supabase = await createClient()
+  // All reads in the owner dashboard stay server-side. Authorization is based
+  // on the immutable email registry, never on a user-editable profile role.
+  await requireAdmin()
+  const supabase = createAdminClient()
 
   // IELTS and TOEFL own independent queues so general exam traffic cannot push
   // valid attempts out of the admin panel. Audio links are generated lazily only

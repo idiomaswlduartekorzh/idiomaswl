@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# Private generated reports (student names, emails and submission evidence)
+/output/pdf/
+
 # next.js
 /.next/
 /out/

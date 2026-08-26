@@ -34,8 +34,8 @@ export default async function IeltsDelegatedReviewPage({ params }: { params: Pro
 
   const review = result.reviewCase
   const apiExample = {
-    evaluatorName: 'Claude',
-    evaluatorModel: 'Modelo y versión exactos',
+    evaluatorName: 'Evaluador autorizado',
+    evaluatorModel: 'Método y versión de la rúbrica',
     overallBand: 6.5,
     criteria: review.rubric.criteria.map(criterion => ({ criterion: criterion.key, band: 6.5, reason: 'Justificación con evidencia de la respuesta.' })),
     summary: 'Resumen sustentado de la evaluación.',
@@ -118,8 +118,8 @@ export default async function IeltsDelegatedReviewPage({ params }: { params: Pro
         </section>
 
         <details className={styles.agentContract}>
-          <summary>Contrato API para ChatGPT, Claude u otro agente</summary>
-          <p>El agente puede hacer GET y luego POST JSON al mismo endpoint: <code>{review.submissionEndpoint}</code>.</p>
+          <summary>Contrato técnico para evaluación delegada</summary>
+          <p>El evaluador autorizado puede consultar y registrar la evaluación en el mismo endpoint: <code>{review.submissionEndpoint}</code>.</p>
           <pre>{JSON.stringify(apiExample, null, 2)}</pre>
         </details>
 

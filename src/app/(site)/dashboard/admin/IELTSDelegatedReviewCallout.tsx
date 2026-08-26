@@ -102,7 +102,7 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
     try {
       await navigator.clipboard.writeText(prompt)
       setCopied(true)
-      setMessage('Llamado copiado. Ya puedes pegarlo en ChatGPT o Claude.')
+      setMessage('Llamado copiado. Ya puedes compartirlo con el evaluador autorizado.')
     } catch {
       setError('No pudimos copiar automáticamente. Selecciona el texto y cópialo manualmente.')
     }
@@ -128,7 +128,7 @@ Abre el enlace. Revisa primero la consigna, la respuesta o los audios y los desc
       <div style={{ display: 'flex', alignItems: 'flex-start', gap: 9 }}>
         <Bot size={18} color={A} aria-hidden="true" />
         <div>
-          <h4 id={`delegated-review-${submission.id}`} style={{ margin: 0, color: TEXT, fontSize: 12 }}>Llamado para ChatGPT, Claude o evaluador externo</h4>
+          <h4 id={`delegated-review-${submission.id}`} style={{ margin: 0, color: TEXT, fontSize: 12 }}>Llamado para evaluación académica delegada</h4>
           <p style={{ margin: '4px 0 0', color: MUTED, fontSize: 10, lineHeight: 1.45 }}>Crea un enlace de 24 horas y un solo uso. Solo abre la tarea elegida; nunca comparte tu sesión admin ni el correo de la estudiante.</p>
         </div>
       </div>

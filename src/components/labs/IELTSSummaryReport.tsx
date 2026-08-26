@@ -15,7 +15,7 @@ interface SkillScore {
   skill: string;
   /** number = banda calculada. null = calculando ahora (aparece en segundos).
    *  'pending' = esta habilidad no se autoevalúa todavía (ej. Speaking).
-   *  'saturated' = los motores de IA están saturados hoy — no va a resolver solo. */
+   *  'saturated' = el servicio de evaluación está saturado hoy — no va a resolver solo. */
   score: number | null | 'pending' | 'saturated';
   max:   number;
 }
@@ -142,8 +142,8 @@ export function IELTSSummaryReport({ mockTitle, date, studentName, skills, overa
 
       {/* Disclaimer — reemplaza sellos/firma/número de documento oficial */}
       <p className="mt-6 text-[11px] text-[var(--muted)] leading-relaxed border-t border-[var(--border)] pt-3">
-        Este es un reporte de práctica generado por WeLearn con inteligencia artificial, basado en
-        el estándar de evaluación IELTS. <strong>No es un documento oficial</strong> de IELTS,
+        Este es un reporte de práctica personalizado de WeLearn, basado en el estándar de
+        evaluación IELTS. <strong>No es un documento oficial</strong> de IELTS,
         British Council, IDP ni Cambridge Assessment English, y no tiene validez para trámites
         migratorios o académicos.
       </p>

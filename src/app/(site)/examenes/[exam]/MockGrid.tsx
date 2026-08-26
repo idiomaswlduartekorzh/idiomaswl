@@ -120,7 +120,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
           <div className="wl-sub-banner">
             <div>
               <h3 className="wl-sub-banner__title">Desbloquea los {paidMocks.length} simulacros restantes</h3>
-              <p className="wl-sub-banner__sub">Acceso completo a todos los mocks, corrección con IA y seguimiento de progreso.</p>
+              <p className="wl-sub-banner__sub">Acceso completo a todos los simulacros, retroalimentación personalizada y seguimiento de progreso.</p>
             </div>
             <a
               href="https://wa.me/573005004253?text=Hola%2C%20quiero%20acceso%20completo%20a%20los%20simulacros%20de%20WeLearn."

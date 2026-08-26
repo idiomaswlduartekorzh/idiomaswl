@@ -29,10 +29,10 @@ function Report({ label, report }: { label: string; report?: FullAssessment | nu
       </div>
       {report ? (
         <>
-          <p style={{ margin: '4px 0', color: MUTED, fontSize: 10 }}>{report.wordCount} palabras · motor {report.engineUsed ?? 'IA'} · estimación pedagógica</p>
+          <p style={{ margin: '4px 0', color: MUTED, fontSize: 10 }}>{report.wordCount} palabras · análisis preliminar · estimación pedagógica</p>
           {report.criteria.map(row => <p key={row.criterion} style={{ margin: '5px 0', fontSize: 10, lineHeight: 1.45 }}><strong>{row.criterion} {row.band}:</strong> {row.reason}</p>)}
         </>
-      ) : <p style={{ color: MUTED, fontSize: 10 }}>El texto está guardado aunque el motor automático todavía no haya respondido.</p>}
+      ) : <p style={{ color: MUTED, fontSize: 10 }}>El texto está guardado aunque el informe preliminar todavía no esté disponible.</p>}
     </section>
   )
 }
@@ -104,14 +104,14 @@ export default function TOEFLReviewPanel({ items }: { items: ExamSubmission[] })
       {visible.length === 0 ? <p style={{ color: MUTED }}>No hay entregas pendientes.</p> : (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: 14 }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 7, maxHeight: 760, overflowY: 'auto' }}>
-            {visible.map(item => <button key={item.id} type="button" onClick={() => choose(item)} aria-pressed={active?.id === item.id} style={{ textAlign: 'left', border: `1px solid ${active?.id === item.id ? A : BORDER}`, background: active?.id === item.id ? BG : CARD, borderRadius: 9, padding: 10, cursor: 'pointer' }}><strong style={{ color: TEXT }}>{item.user_name ?? item.user_email ?? 'Estudiante'}</strong><p style={{ margin: '3px 0', color: MUTED, fontSize: 10 }}>{item.mock_title} · {formatDate(item.created_at)}</p><span style={{ color: item.reviewed_at ? '#166534' : A, fontSize: 10, fontWeight: 800 }}>{item.reviewed_at ? 'Revisada' : item.writing_task1_assessment && item.writing_task2_assessment ? 'Writing listo · Speaking pendiente' : 'Writing automático en proceso'}</span></button>)}
+            {visible.map(item => <button key={item.id} type="button" onClick={() => choose(item)} aria-pressed={active?.id === item.id} style={{ textAlign: 'left', border: `1px solid ${active?.id === item.id ? A : BORDER}`, background: active?.id === item.id ? BG : CARD, borderRadius: 9, padding: 10, cursor: 'pointer' }}><strong style={{ color: TEXT }}>{item.user_name ?? item.user_email ?? 'Estudiante'}</strong><p style={{ margin: '3px 0', color: MUTED, fontSize: 10 }}>{item.mock_title} · {formatDate(item.created_at)}</p><span style={{ color: item.reviewed_at ? '#166534' : A, fontSize: 10, fontWeight: 800 }}>{item.reviewed_at ? 'Revisada' : item.writing_task1_assessment && item.writing_task2_assessment ? 'Writing listo · Speaking pendiente' : 'Informe de Writing en proceso'}</span></button>)}
           </div>
           {active && <div style={{ background: BG, borderRadius: 12, padding: 14, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
             <div><h4 style={{ margin: 0 }}>{active.user_name ?? 'Estudiante'}</h4><p style={{ margin: '3px 0', color: MUTED, fontSize: 10 }}>{active.user_email} · {active.total_label}</p></div>
             <Essay label="Write an Email" text={active.writing_task1_answer} />
-            <Report label="Reporte automático · Email" report={active.writing_task1_assessment} />
+            <Report label="Informe preliminar · Email" report={active.writing_task1_assessment} />
             <Essay label="Academic Discussion" text={active.writing_task2_answer} />
-            <Report label="Reporte automático · Discussion" report={active.writing_task2_assessment} />
+            <Report label="Informe preliminar · Discussion" report={active.writing_task2_assessment} />
             <section><h4 style={{ margin: '0 0 6px', fontSize: 11 }}>Speaking · evidencia privada</h4>{!activeAudio && <p style={{ color: MUTED, fontSize: 10 }}>Preparando enlaces temporales…</p>}{activeAudio?.error && <p role="alert" style={{ color: '#b91c1c', fontSize: 10 }}>{activeAudio.error}</p>}<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(210px,1fr))', gap: 7 }}>{activeAudio?.files.map(file => <div key={file.questionId} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 8 }}><strong style={{ fontSize: 10 }}>{file.questionId}</strong><audio controls preload="metadata" src={file.signedUrl} aria-label={`Escuchar respuesta ${file.questionId}`} style={{ width: '100%', marginTop: 5 }} /></div>)}</div></section>
             <a href={TASK_GUIDE} target="_blank" rel="noreferrer" style={{ color: A, fontSize: 10, fontWeight: 750 }}>Guías públicas TOEFL 2026 de Writing y Speaking (ETS) ↗</a>
             {!active.reviewed_at && <section style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 12 }}><p style={{ color: MUTED, fontSize: 10 }}>Asigna una estimación agregada 0–5 por familia oral después de escuchar toda la evidencia. No se convierte a 1–6.</p><div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: 10 }}><ScorePicker label="Listen and Repeat" value={repeatScore} onChange={setRepeatScore} /><ScorePicker label="Take an Interview" value={interviewScore} onChange={setInterviewScore} /></div><label style={{ display: 'block', marginTop: 10, fontSize: 11, fontWeight: 750 }}>Evidencia y observaciones<textarea value={notes} onChange={event => setNotes(event.target.value)} rows={5} style={{ display: 'block', width: '100%', marginTop: 4, padding: 9, border: `1px solid ${BORDER}`, borderRadius: 8 }} /></label><button type="button" onClick={save} disabled={saving || repeatScore == null || interviewScore == null} style={{ width: '100%', marginTop: 10, border: 0, borderRadius: 8, background: A, color: '#fff', padding: 10, fontWeight: 800, cursor: 'pointer', opacity: saving ? .65 : 1 }}>{saving ? 'Guardando…' : 'Cerrar revisión TOEFL'}</button></section>}
