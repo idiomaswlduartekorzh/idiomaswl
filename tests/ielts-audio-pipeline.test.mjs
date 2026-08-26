@@ -69,6 +69,12 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.ok(reuseOnlyGate > 0 && apiSecretRead > reuseOnlyGate, '--reuse-only must exit the gate before reading a provider secret');
   assert.match(generatorSource, /Math\.min\(providerAvailableCredits, conservativeAvailableCredits\)/);
   assert.match(generatorSource, /conservativeAvailableCredits -= Math\.ceil/);
+  assert.match(
+    generatorSource,
+    /billableCharacters: row\.sourceCharacters - reusedPilotCharacters/,
+    'prior-cache speech remains historically billable; only accepted pilot bytes are free',
+  );
+  assert.match(generatorSource, /sameAudioBytes\(segmentPath, approvedPilotPath\)/);
 });
 
 test('dry-run source verification is local, deterministic and non-authorizing', () => {
@@ -92,13 +98,15 @@ test('paid generation cannot exceed the owner-approved ceiling before any secret
   assert.notEqual(excessiveCap.status, 0);
   assert.match(excessiveCap.stderr, /exceeds owner-approved 0.75/);
 
-  const insufficientReserve = spawnSync(process.execPath, [
+  const invalidReserve = spawnSync(process.execPath, [
     '--experimental-strip-types', '--no-warnings', 'scripts/generate-ielts-2026-audio.mjs',
     '--generate', '--sets', '4', '--approve-manifest', plan.manifestSha256,
-    '--max-usd', '0.75', '--min-remaining-credits', '3499', '--seed-salt', 'test-only',
+    '--max-usd', '0.75', '--min-remaining-credits', '-1', '--seed-salt', 'test-only',
   ], { encoding: 'utf8', env: { PATH: process.env.PATH } });
-  assert.notEqual(insufficientReserve.status, 0);
-  assert.match(insufficientReserve.stderr, /below owner-approved 3500/);
+  assert.notEqual(invalidReserve.status, 0);
+  assert.match(invalidReserve.stderr, /pass --min-remaining-credits/);
+  assert.equal(casting.approval_scope.minimum_remaining_credits, 0);
+  assert.ok(casting.approval_scope.reserve_override_at);
   assert.equal(casting.approval, 'approved_by_owner');
   assert.equal(pilot.status, 'accepted_by_owner');
   assert.ok(pilot.audio_sha256);

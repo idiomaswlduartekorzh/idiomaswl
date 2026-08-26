@@ -31,7 +31,7 @@ pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 | Set | Resp. L/R | Palabras Listening | Palabras Reading | MP3 integral | Claves cliente |
 |---:|---:|---:|---:|---|---:|
 | 4 | 40/40 | 2.255 | 2.184 | OK · 27,1 min | 0 |
-| 5 | 40/40 | 2.215 | 2.180 | EN GENERACIÓN · 18/71 segmentos | 0 |
+| 5 | 40/40 | 2.215 | 2.180 | CANDIDATO QA · 29,0 min | 0 |
 | 6 | 40/40 | 2.333 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
 | 7 | 40/40 | 2.326 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
 | 8 | 40/40 | 2.404 | 2.165 | REEMPLAZAR · 24,0 min | 0 |
@@ -57,10 +57,11 @@ cada bloque original y deja los guiones en 2.254–2.404 palabras; cada parte qu
 555 y 620 palabras. No hay bloques largos duplicados ni coincidencias exactas de 50
 palabras entre dos sets.
 
-El master v2 del Set 4 fue aceptado y publicado con 27:05. Los ocho MP3 heredados 5–12
-duran 24,0 minutos y contienen pausas extensas; quedan marcados para reemplazo por una
-simulación de 29–31 minutos. Los ocho MP3 13–20 no existen. Los 17 guiones ya superan
-el gate; faltan por reemplazar ocho audios y generar ocho con la nueva fuente.
+El master v2 del Set 4 fue aceptado y publicado con 27:05. El candidato v2 del Set 5 ya
+está ensamblado y auditado con 29:00, pero permanece fuera de `public/` hasta la escucha
+y autorización del propietario. Los siete MP3 heredados 6–12 duran 24,0 minutos y
+contienen pausas extensas; quedan marcados para reemplazo por una simulación de 29–31
+minutos. Los ocho MP3 13–20 no existen. Los 17 guiones ya superan el gate.
 
 El Set 5 recibió una revisión editorial específica, no relleno genérico: conversación
 social de dos personas, monólogo social, discusión educativa de tres participantes y
@@ -152,14 +153,16 @@ eliminar la antigua deriva en la navegación compartida.
 ## Gates pendientes para cerrar el dictamen
 
 1. El propietario aprobó el casting de 33 perfiles/12 voces, el piloto Set 4 y la
-   generación del Set 5 con techo USD 0,75 y reserva mínima de 3.500 créditos.
+   generación del Set 5 con techo USD 0,75. El 26 de agosto retiró explícitamente la
+   reserva de 3.500 créditos para terminar este set aunque el saldo se agote.
 2. El piloto Set 4 pasó QA técnica (27:05, mono 44,1 kHz/64 kbps, -18,48 LUFS,
    pico -1,64 dBFS) y transcript↔Whisper (`small.en`, WER 2,36 %, completion 27/27).
    El propietario lo escuchó, aprobó y autorizó explícitamente su publicación; el MP3 público
    coincide con el hash aceptado `4fef56f5678bce1405bfa58cfc4619bf9e81c77a57132ad64173998b37c72ed2`.
-3. Reemplazar los ocho MP3 5–12 y generar los ocho MP3 13–20 con duración 29–31 min,
-   reproducción única, mono 44,1 kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
-4. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
+3. Escuchar y autorizar el candidato Set 5; después reemplazar los siete MP3 6–12 y
+   generar los ocho MP3 13–20 con duración 29–31 min, reproducción única, mono 44,1
+   kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
+4. Contrastar los 15 audios restantes transcript↔Whisper, revisar muestras humanas y registrar
    tamaño, hash, duración, loudness, pico y silencios. El plan actualizado proyecta
    241.654 caracteres, 120.827 créditos y USD 12,0827 antes de impuestos y reintentos;
    no es una autorización.
@@ -168,22 +171,27 @@ eliminar la antigua deriva en la navegación compartida.
 6. Tras generar audio, repetir smoke de las 17 rutas Listening, móvil 320/390, teclado,
    lector de pantalla y verificación humana de las cuatro partes de cada MP3.
 
-Estado Set 5 al 26 de agosto: 18/71 segmentos están cacheados fuera de `public/`: seis
-segmentos nuevos y los 12 anuncios reutilizados sin coste. ElevenLabs reportó el consumo
-con retraso durante la primera ejecución; el proceso alcanzó 3.314 créditos disponibles,
-186 por debajo de la reserva, y se detuvo sin ensamblar ni publicar un máster. El guardián
-ahora mantiene además un saldo conservador local después de cada síntesis y usa siempre
-el menor valor entre ese saldo y el reportado por el proveedor, por lo que el retardo del
-endpoint no puede autorizar la siguiente llamada. No se harán más llamadas pagadas hasta
-el reinicio del 5 de septiembre de 2026 a las 18:13:51 (Bogotá), salvo nueva autorización
-explícita para cambiar la reserva.
+Estado Set 5 al 26 de agosto: los 71/71 segmentos y el máster están completos fuera de
+`public/`. La autorización de reserva cero permitió terminarlo sin exceder el techo de
+USD 0,75. De 13.058 caracteres fuente, 12 anuncios/583 caracteres son reutilización
+gratuita byte por byte del piloto aceptado; seis segmentos/7.215 caracteres proceden de
+una síntesis ya pagada en el caché anterior; en total la factura histórica atribuible al
+Set 5 es de 12.475 caracteres, 6.238 créditos conservadores y USD 0,6238 antes de
+impuestos. El saldo final consultado al proveedor es 1.870 créditos.
+
+El máster pesa 13.920.592 bytes y conserva SHA-256
+`17f598cb7d5943f35bbad590ecc4d986dabc5b89703b8e2a17de2b5d098db14c`. La QA técnica
+pasó: 29:00, MP3 mono 44,1 kHz/64 kbps, -18,48 LUFS y pico -1,86 dBFS. La alineación
+`small.en` pasó con WER 5,28 % y 33/33 evidencias de completion presentes y en orden.
+Queda sólo la escucha y aprobación humana antes de reemplazar el audio heredado público.
 
 La caché verificable se preserva fuera del worktree en
-`/Users/josedavidduartesilva/Developer/idiomaswl-ielts-audio-cache/`; ocupa 43 MB. El
+`/Users/josedavidduartesilva/Developer/idiomaswl-ielts-audio-cache/`; ocupa 63 MB. El
 manifiesto vigente `a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea`
-conserva 18 segmentos: 12 proceden byte por byte del piloto aceptado y seis del lote
-parcial pagado, todos ligados por perfil y hash de texto. La reanudación debe usar esa
-ruta como `--output-dir` para no pagar otra vez por los segmentos ya obtenidos.
+conserva los 71 segmentos del Set 5, el máster, los dos reportes QA y la transcripción
+ASR. Los 18 segmentos reutilizados están ligados por perfil, hash de texto y bytes de
+audio; el registro distingue correctamente la reutilización gratuita del piloto de la
+síntesis pagada en el caché anterior.
 
 ## Evidencia reproducible
 

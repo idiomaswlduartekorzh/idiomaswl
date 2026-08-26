@@ -14,7 +14,8 @@ assert.equal(casting.model_id, 'eleven_flash_v2_5');
 assert.equal(casting.credits_per_character, plan.invoice.creditsPerCharacter);
 assert.deepEqual(casting.approval_scope.approved_sets, [4, 5]);
 assert.ok(casting.approval_scope.approved_max_usd_before_tax >= 0.7185);
-assert.ok(casting.approval_scope.minimum_remaining_credits >= 3500);
+assert.equal(casting.approval_scope.minimum_remaining_credits, 0);
+assert.ok(casting.approval_scope.reserve_override_at);
 
 const usedProfiles = [...new Set(plan.rows.flatMap(row => row.profiles))].sort();
 const resolved = usedProfiles.map(profile => {

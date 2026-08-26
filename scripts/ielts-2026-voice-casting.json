@@ -7,10 +7,12 @@
   "approval_scope": {
     "approved_sets": [4, 5],
     "approved_max_usd_before_tax": 0.75,
-    "minimum_remaining_credits": 3500,
+    "minimum_remaining_credits": 0,
     "pilot_approved_at": "2026-08-26T00:13:29Z",
     "set_5_approved_at": "2026-08-26T12:12:33Z",
-    "set_5_instruction": "Generate Set 5 at the lowest ElevenLabs credit cost without reducing IELTS fidelity."
+    "set_5_instruction": "Generate Set 5 at the lowest ElevenLabs credit cost without reducing IELTS fidelity.",
+    "reserve_override_at": "2026-08-26T14:01:08Z",
+    "reserve_override_instruction": "Finish Set 5 even if the remaining ElevenLabs credits are exhausted."
   },
   "target": {
     "intermediate_output_format": "mp3_44100_128",
@@ -114,11 +116,11 @@
     "tutor": "lecturer"
   },
   "account_snapshot": {
-    "captured_at": "2026-08-26T13:05:33Z",
+    "captured_at": "2026-08-26T14:47:31Z",
     "tier": "creator",
-    "character_count": 117717,
+    "character_count": 119161,
     "character_limit": 121031,
-    "available_credits": 3314,
+    "available_credits": 1870,
     "next_reset_local": "2026-09-05 18:13:51 -05",
     "sufficient_for_full_batch": false
   }

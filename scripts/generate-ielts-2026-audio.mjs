@@ -397,6 +397,7 @@ async function reassemble(rows) {
     ));
     for (const segmentPath of segmentPaths) assert.ok(isReusableSegment(segmentPath), `missing reusable segment ${segmentPath}`);
     assemble(row, segmentPaths, entry.path);
+    Object.assign(entry, reuseAccounting(row, segmentPaths));
     entry.audioSha256 = sha256(readFileSync(entry.path));
   }
   log.updatedAt = new Date().toISOString();
@@ -444,6 +445,45 @@ function priorSourceCacheReusePath(row, segment) {
   return isReusableSegment(sourcePath) ? sourcePath : null;
 }
 
+function sameAudioBytes(leftPath, rightPath) {
+  return Boolean(leftPath && rightPath)
+    && isReusableSegment(leftPath)
+    && isReusableSegment(rightPath)
+    && sha256(readFileSync(leftPath)) === sha256(readFileSync(rightPath));
+}
+
+function reuseAccounting(row, segmentPaths) {
+  let reusedPilotCharacters = 0;
+  let reusedPilotSegments = 0;
+  let reusedCacheCharacters = 0;
+  let reusedCacheSegments = 0;
+  for (const [segmentIndex, segment] of row.segments.entries()) {
+    const segmentPath = segmentPaths[segmentIndex];
+    const approvedPilotPath = approvedPilotReusePath(row, segment);
+    if (sameAudioBytes(segmentPath, approvedPilotPath)) {
+      reusedPilotCharacters += segment.text.length;
+      reusedPilotSegments += 1;
+      continue;
+    }
+    const sourceCachePath = priorSourceCacheReusePath(row, segment);
+    if (sameAudioBytes(segmentPath, sourceCachePath)) {
+      reusedCacheCharacters += segment.text.length;
+      reusedCacheSegments += 1;
+    }
+  }
+  return {
+    reusedCharacters: reusedPilotCharacters + reusedCacheCharacters,
+    reusedSegments: reusedPilotSegments + reusedCacheSegments,
+    reusedPilotCharacters,
+    reusedPilotSegments,
+    reusedCacheCharacters,
+    reusedCacheSegments,
+    // Prior-cache speech was already charged by ElevenLabs. Only byte-identical,
+    // owner-accepted pilot announcements reduce the lifetime provider invoice.
+    billableCharacters: row.sourceCharacters - reusedPilotCharacters,
+  };
+}
+
 async function generate(rows) {
   const hydratedRows = await Promise.all(rows.map(hydrateRow));
   const root = outputDirectory(scopeLabel());
@@ -475,12 +515,6 @@ async function generate(rows) {
     const segmentPaths = row.segments.map((_, segmentIndex) => (
       path.join(segmentsDir, `segment-${String(segmentIndex + 1).padStart(3, '0')}.mp3`)
     ));
-    let reusedCharacters = 0;
-    let reusedSegments = 0;
-    let reusedPilotCharacters = 0;
-    let reusedPilotSegments = 0;
-    let reusedCacheCharacters = 0;
-    let reusedCacheSegments = 0;
     for (const [segmentIndex, segment] of row.segments.entries()) {
       const segmentPath = segmentPaths[segmentIndex];
       if (isReusableSegment(segmentPath)) continue;
@@ -489,15 +523,6 @@ async function generate(rows) {
       const reusePath = approvedPilotPath ?? sourceCachePath;
       if (reusePath) {
         copyFileSync(reusePath, segmentPath);
-        reusedCharacters += segment.text.length;
-        reusedSegments += 1;
-        if (approvedPilotPath) {
-          reusedPilotCharacters += segment.text.length;
-          reusedPilotSegments += 1;
-        } else {
-          reusedCacheCharacters += segment.text.length;
-          reusedCacheSegments += 1;
-        }
       }
     }
     const missing = row.segments
@@ -518,8 +543,11 @@ async function generate(rows) {
         return;
       }
       if (gate.allowPartialAtReserve) {
-        const subscription = await apiJson('/v1/user/subscription', gate.apiKey);
-        const providerAvailableCredits = Number(subscription.character_limit) - Number(subscription.character_count);
+        let providerAvailableCredits = conservativeAvailableCredits;
+        if (gate.reserve > 0) {
+          const subscription = await apiJson('/v1/user/subscription', gate.apiKey);
+          providerAvailableCredits = Number(subscription.character_limit) - Number(subscription.character_count);
+        }
         const availableCredits = Math.min(providerAvailableCredits, conservativeAvailableCredits);
         const conservativeNextCost = Math.ceil(segment.text.length * Number(casting.credits_per_character));
         if (availableCredits - conservativeNextCost < gate.reserve) {
@@ -543,13 +571,11 @@ async function generate(rows) {
     }
     for (const segmentPath of segmentPaths) assert.ok(isReusableSegment(segmentPath), `missing generated segment ${segmentPath}`);
     assemble(row, segmentPaths, targetPath);
+    const accounting = reuseAccounting(row, segmentPaths);
     files.push({
       mediaId: row.mediaId, setId: row.setId, path: targetPath,
       plannedUrl: row.plannedUrl, sourceCharacters: row.sourceCharacters,
-      reusedCharacters, reusedSegments,
-      reusedPilotCharacters, reusedPilotSegments,
-      reusedCacheCharacters, reusedCacheSegments,
-      billableCharacters: row.sourceCharacters - reusedCharacters,
+      ...accounting,
       audioSha256: sha256(readFileSync(targetPath)),
     });
     writeLog('in_progress');
