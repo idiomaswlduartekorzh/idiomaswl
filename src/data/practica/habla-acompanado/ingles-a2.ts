@@ -3,20 +3,18 @@ import type { RoleplayScenario } from './types.ts'
 /**
  * Habla acompañada · inglés A2 — los ocho escenarios.
  *
- * Contenido importado de `artifacts/habla-a2/`, una ficha por escenario. La ficha
- * es la fuente de verdad: si hay que cambiar una línea, se cambia allí y se vuelve a
- * importar. No se edita a mano aquí, igual que las series de escucha derivan de su
- * archivo de serie.
+ * Este archivo TypeScript es la única fuente ejecutable de estos ocho escenarios.
+ * `artifacts/` y las ramas `archive/*` conservan historia editorial, pero nunca se
+ * importan ni se copian como si fueran el estado vigente.
  *
  * El campo `level` de cada referencia de gramática no es adorno: trece de las 116
  * apuntan a temas de A1, y la ruta de gramática de A2 lleva el nivel clavado
  * (`const NIVEL = 'a2'` + `notFound()`). El enlace se construye con
  * `/practica/ingles/${ref.level}/gramatica/${ref.slug}` o esas trece dan 404.
  *
- * Deuda declarada al publicar el piloto (`artifacts/habla-a2/fase13-veredicto.md`):
- * el guardián dio NO APTO por auditorías caducadas y por un defecto medido en el
- * escenario 7 (la pareja floja no llega al cierre). Se publica por orden de David con
- * los huecos declarados; se cierra en una ronda posterior.
+ * Toda modificación aquí invalida la huella de release del conjunto completo. Para
+ * volver a aprobarlo hay que repetir los cinco perfiles y actualizar la aprobación;
+ * el prebuild debe impedir que una auditoría antigua siga pareciendo vigente.
  */
 export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
   {
@@ -35,7 +33,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     outcome: 'acuerdo',
     minutes: 6,
     turnsPerRole: 8,
-    source: "artifacts/habla-a2/fase7-fichas-1-the-bike-in-the-parking-lot.md",
+    source: "src/data/practica/habla-acompanado/ingles-a2.ts",
     roles: [
       {
         id: 'a',
@@ -164,6 +162,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     closing: [
       { kind: 'p', text: "**Say the whole deal out loud, both of you. Use these four facts. Then check: are you both saying the same thing?**" },
       { kind: 'ol', items: ["**The final price. And the way to pay it:** all in cash, or how much in cash and how much by Nequi.","**What goes with the bike:** new gears or old gears, and what else.","**Who moves it, at what time, and how far.**","**The rear tire:** who fixes it, where, and who pays."] },
+      { kind: 'p', text: "**Two checkpoints before the deal can close:** each person asks one open question and says what new fact they learned. If the price went below 390,000 or any money moved to Nequi, both also name the condition that unlocked it and confirm it was said in the same turn as the new number." },
       { kind: 'p', text: "**If one of the four is missing, you are not done.** Say all four. If you both say the same, it's closed. When you agree, say it: `That works for me.` · `OK — deal.` · `Let's do that, then.`" },
     ],
     debrief: [
@@ -232,7 +231,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     outcome: 'acuerdo',
     minutes: 6,
     turnsPerRole: 9,
-    source: "artifacts/habla-a2/fase7-fichas-2-no-appointment-until-thursday.md",
+    source: "src/data/practica/habla-acompanado/ingles-a2.ts",
     roles: [
       {
         id: 'a',
@@ -246,7 +245,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
         prose: [
           { label: "Where you are", text: "It is Tuesday, 4:20 p.m., and you are at the front desk of a dental clinic in Cabecera. Somebody walks in with no appointment. That person has a hand on their face." },
           { label: "You want", text: "You need three things before that person leaves: a date, a checked cell number, and something for tonight." },
-          { label: "You can't", items: ["You can't ask Dr. Restrepo anything before 5:00: you write to her, but you never call.","You can't say a word about another patient's appointment: not the name, and not the reason.","You can't let anyone leave without a written date **and** something for tonight. At closing the administrator reads your calendar."] },
+          { label: "You can't", items: ["You can't propose a day or a branch before you ask one open question about what happened and wait for the answer.","You can't ask Dr. Restrepo anything before 5:00: you write to her, but you never call.","You can't say a word about another patient's appointment: not the name, and not the reason.","You can't let anyone leave without a written date **and** something for tonight. At closing the administrator reads your calendar."] },
           { label: "Only you know", items: ["At 5:20 today you are seeing a patient who missed twice. You can leave that door open, but never with a name or a reason.","You never ask Dr. Restrepo for favors, but today you want to ask her: you think she will say yes. That is your key.","Three chairs were empty this week, and the clinic counts them against you, like every patient who leaves for the corner clinic."] },
           { label: "If you walk away with nothing", text: "You get a fourth empty chair, and one more patient with the plan walks to the corner clinic. Both count against you." },
         ],
@@ -361,7 +360,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     },
     closing: [
       { kind: 'p', text: "**You finish when the two of you say the plan out loud — and each of you says a different part of it. Then check: are the two versions the same?**" },
-      { kind: 'ol', items: ["**The patient says the day, the time and the branch**, and the time to arrive. **The front desk checks it** on the screen.","**The front desk says the price, and who pays it** (or: nothing, covered). **The patient says the price back.**","**The patient says the cell number from memory**, one digit at a time. **The front desk reads it back** from what they wrote down.","**The patient says what they will do about the pain tonight. The front desk says the sign that means hospital tonight**, and where to go."] },
+      { kind: 'ol', items: ["**The patient says the day, the time and the branch**, and the time to arrive. **The front desk checks it** on the screen. If today is only an emergency check or a sharp-edge fix, both also say the written date for the full treatment.","**The front desk says the price, and who pays it** (or: nothing, covered). **The patient says the price back.** If the plan uses the Centro, the front desk reads the exact problem written in the referral note and the patient confirms it in their own words.","**The patient says the cell number from memory**, one digit at a time. **The front desk reads it back** from what they wrote down.","**The patient says what they will do about the pain tonight. The front desk says the sign that means hospital tonight**, and where to go."] },
       { kind: 'p', text: "**If one of the four is missing, it is not finished. And if one of you said all four, it is not finished either.**" },
     ],
     debrief: [
@@ -422,7 +421,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     outcome: 'acuerdo-parcial',
     minutes: 7,
     turnsPerRole: 7,
-    source: "artifacts/habla-a2/fase7-modelo-ficha-en.md",
+    source: "src/data/practica/habla-acompanado/ingles-a2.ts",
     roles: [
       {
         id: 'a',
@@ -485,7 +484,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
         prose: [
           { label: "Where you are", text: "It is Tuesday, 3:40 in the afternoon, and you are tying your apron in the back room. Your shift starts in twenty minutes, and Aníbal is at the other café until six." },
           { label: "You want", text: "You want to help. But you don't want to work sixteen hours, and this can't be your third swap." },
-          { label: "You can't", items: ["You can't say yes to anything Aníbal can count as swap number three. You have one condition and you never change it: today they have to ask you for it in the café group, in writing.","You can't stay after 8:00 p.m. on Saturday. Your bus to San Gil leaves at 5:00 on Sunday morning and you already paid for it."] },
+          { label: "You can't", items: ["You can't say yes before they offer two ways to split the shift and you tell them about the forty-person breakfast. After that, you still can't accept anything Aníbal can count as swap number three. Your condition does not change: today they have to ask you for it in the café group, in writing.","You can't stay after 8:00 p.m. on Saturday. Your bus to San Gil leaves at 5:00 on Sunday morning and you already paid for it."] },
           { label: "Only you know", items: ["You read in the group on Friday that forty people are coming for a company breakfast at nine on Saturday the 12th. That opening is the worst shift of the month, and they don't know it — they joined the group late.","You already swapped twice this month. Aníbal said in front of everybody that the third one puts you on the backup list, with no more fixed weekends. Your fixed weekends are the days that pay you in tips.","You work a wedding for sixty people on Saturday the 19th. You can say this one out loud: it is just numbers."] },
           { label: "If you walk away with nothing", text: "You work with this person every day, and you are going to need exactly this favor next month." },
         ],
@@ -548,13 +547,14 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
       ],
     },
     closing: [
-      { kind: 'p', text: "**Today a message goes to the café group. You finish when the two of you have said all five out loud. Nobody says the other person's points.**" },
+      { kind: 'p', text: "**Today a message goes to the café group. You finish when the two of you have said all six out loud. Nobody says the other person's points.**" },
+      { kind: 'p', text: "**The message cannot close before global turn 6 and the exam card.** After opening it, A must say the new 3:00–6:00 uncertainty in their own words; any earlier split is only a draft." },
       { kind: 'p', text: "**A's screen · your two:** who opens on Saturday the 12th, and at what time · which shift pays the favor back, and on what exact day." },
-      { kind: 'p', text: "**B's screen · your two:** how long that person stays, and who comes in after — it is your 8:00 limit · the name that goes written in the message, which is your one condition." },
+      { kind: 'p', text: "**B's screen · your three:** how long that person stays, and who comes in after — it is your 8:00 limit · what you need in writing today, and before what time · the forty-person breakfast and what a third swap costs you." },
       { kind: 'p', text: "**Together, once:** what's still open, who fixes it, and before what time today." },
       { kind: 'p', text: "**Two rules:**" },
       { kind: 'ul', items: ["Say the other one's point and it doesn't count — they say it again.","Saying yes is not a point. *Yeah*, *sure*, *okay*, *fine* and *that works* close nothing."] },
-      { kind: 'p', text: "**Five points, or it isn't closed.** It closes **partial**. That is the plan." },
+      { kind: 'p', text: "**Six points, or it isn't closed.** It closes **partial**. That is the plan." },
     ],
     debrief: [
       "Uno de los dos sabía algo del sábado 12 que el otro no. ¿En qué turno salió? ¿Habría cambiado la conversación si sale en el primero?",
@@ -614,7 +614,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     outcome: 'acuerdo-parcial',
     minutes: 7,
     turnsPerRole: 9,
-    source: "artifacts/habla-a2/fase8-fichas-4nuevo.md",
+    source: "src/data/practica/habla-acompanado/ingles-a2.ts",
     roles: [
       {
         id: 'a',
@@ -628,7 +628,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
         prose: [
           { label: "The patio, 11:20 a.m.", text: "Sunday, September 20, in Girón. You lit the fire at nine, for Friday's plan: everybody here at one." },
           { label: "What you want", text: "One number, before twelve o'clock: how many plates at one. You are cooking for one o'clock, not for a river trip." },
-          { label: "Three things you won't do", items: ["You keep the pot on the fire, because you have raw cassava in twenty liters of hot water.","You don't say that the group made a mistake. You need them here at one, and she is the one who asks them.","You don't open the fridge until she gives you three things: how many, before what hour, and how they get back. Nothing here is free. You offer two options before she says yes."] },
+          { label: "Three things you won't do", items: ["You keep the pot on the fire, because you have raw cassava in twenty liters of hot water.","You don't say that the group made a mistake. You need them here at one, and she is the one who asks them.","You don't open the fridge until she gives you three things: how many, before what hour, and how they get back. You don't empty that container for nothing. You offer two options before she says yes."] },
           { label: "Nobody out there knows this", items: ["You put in the cassava and the plantain at twelve, so at eleven forty you only have broth.","You took the second chicken out at seven and cut it. If you put it in before twelve, you feed twelve. If you don't, you lose it tonight.","You can't put it back: you have Saturday's rice and chicken in there, in the one container that is your Monday and Tuesday lunch."] },
           { label: "If she rides off and you have no answer", text: "You have twelve plates and nobody at the table. You lose the chicken tonight, and next Sunday they are back in your patio." },
         ],
@@ -683,7 +683,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
         prose: [
           { label: "The patio, and the road", text: "Sunday, September 20, 11:20 a.m., in Girón. You came at nine to help him, and at eleven twenty you are still the only one. You stayed." },
           { label: "What you need before you go", text: "To be on Marcela's bike at eleven forty, with food in your hands." },
-          { label: "Three things you won't do", items: ["You don't show up empty-handed: you wrote in the chat that lunch was coming.","You don't correct the ten o'clock message until something is in your hands. You correct it once, and you choose when. Same number to him and to the six.","On that bike, only what fits between your feet."] },
+          { label: "Three things you won't do", items: ["You don't show up empty-handed: you wrote in the chat that lunch was coming.","You don't correct the ten o'clock message until something is in your hands. You correct it once, and you choose when. He knows that bike takes one.","On that bike, only what fits between your feet."] },
           { label: "What you haven't said yet", items: ["You read Édgar's message at 11:11: no car back before four. You have not said a word about it.","At ten you gave Fabián a number for one o'clock. Today you know it is wrong. He doesn't know. You leave at eleven forty, and he thinks you're staying.","Only you know two things: last food at seven, and nothing open there on a Sunday. It is your best card and it can also hurt you. If you play it early, he says they walk back, and you lose the card."] },
           { label: "If you leave at eleven forty with nothing", text: "You leave six people at a river with no food and no way home until four, and your message sent them there. And you leave behind lunch for twelve and one man at the fire." },
         ],
@@ -729,9 +729,9 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     ],
     card: {
       toRole: 'a',
-      afterTurn: 5,
+      afterTurn: 3,
       openWhen: [
-        { kind: 'p', text: "**When her second turn ends — global turn 5, and it's yours. Read it, then keep talking. Don't show it, and don't read it out loud.**" },
+        { kind: 'p', text: "**When global turn 3 ends, open this before either person can settle on a number. Read it, then keep talking. Don't show it, and don't read it out loud.**" },
       ],
       blocks: [
         { kind: 'p', text: "**Phone · your mother · 11:2x**" },
@@ -742,7 +742,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     closing: [
       { kind: 'p', text: "**Each of you says three things out loud. Six in total. Nobody says the other person's three.**" },
       { kind: 'p', text: "**Only A can say:** what goes in the pot at twelve, for how many, and what you lose tonight if that number comes late · what leaves this patio now, what stays, and what that costs on Monday and Tuesday · what A needs at one o'clock and can't do with the fire on." },
-      { kind: 'p', text: "**Only B can say:** how many really come back, and before what time · who rides and who walks, and how long that walk takes · what B tells the six at the river, and before what hour." },
+      { kind: 'p', text: "**Only B can say:** how many really come back, and before what time · who rides and who walks, how long that walk takes, and why the bike takes only one passenger · what B tells the six at the river, and before what hour." },
       { kind: 'p', text: "**Together, once:** the time of the second round, and who's at the gate when the first people arrive." },
       { kind: 'p', text: "**And one thing stays open on purpose:** who doesn't eat with the others, and who fixes it. Say it with a name and a time." },
       { kind: 'p', text: "**Five rules:**" },
@@ -788,7 +788,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     outcome: 'acuerdo',
     minutes: 8,
     turnsPerRole: 9,
-    source: "artifacts/habla-a2/fase7-fichas-5-late-again-on-monday.md",
+    source: "src/data/practica/habla-acompanado/ingles-a2.ts",
     roles: [
       {
         id: 'a',
@@ -840,7 +840,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
           { purpose: "saying the job out loud", form: "`I'd like…`", effect: "say it once, in clear words. Nobody guesses it" },
           { purpose: "the price, both ways", form: "`Then I pick up her two boys on…` · `And what does this cost…?`", effect: "say what you pay, and ask what she pays" },
           { purpose: "what changed in August", form: "`My bus used to arrive at… — now…` · `The road work started on…`", effect: "two times and a date. People understand times" },
-          { purpose: "what you can start", form: "`I can start at…` → `I'll start at…, from…`", effect: "with `can` you offer it · with `will` somebody can check it · the same time in both halves" },
+          { purpose: "what you can start", form: "`From Monday: … takes Matías at …; I take the … bus; … opens at …`", effect: "one checkable mechanism, not a promise: person, time, bus and opener in the same line" },
         ],
         success: "1. Your first question was open, about the two things on the desk. 2. You said sorry once, then gave the whole reason: daycare, road work, bus, with times. 3. You said what you want. 4. You said no to Saturday mornings, and not why. 5. You put a time, a bus and a name on the WHAT CHANGES line — not a promise. 6. You said which paper it is, and who reads it. 7. You said what it costs you, and you asked what it costs her.",
       },
@@ -889,7 +889,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
           { purpose: "asking, and then waiting", form: "`What happened this morning?` · `And what can you…?`", effect: "two open questions: one about this morning, one about next Monday. Then wait" },
           { purpose: "granting it", form: "`If you write this line today, I can…`", effect: "in one sentence: what you need, and what you give" },
           { purpose: "he thinks you're angry", form: "`I'm not angry.`", effect: "show him you are not" },
-          { purpose: "naming your price", form: "`That helps, but I need…` → `I need… mornings on…, and I…`", effect: "say it falls short, then the number, the day and who teaches" },
+          { purpose: "naming your price", form: "`Training is on … at …; … teaches; it costs me … and costs you …`", effect: "day, place, teacher and both prices in one complete line" },
           { purpose: "one more door", form: "`What if we…?` · `Maybe we can…`", effect: "put a third door on the table before either of you shuts one" },
           { purpose: "the rule, not the fight", form: "`I have to write…`", effect: "an obligation, not your decision" },
           { purpose: "the two things on the desk", form: "`Have a seat, Camilo.` · `You fill out this line, not me.`", effect: "say why you called him. Then point at the line" },
@@ -912,13 +912,14 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
         { kind: 'quote', blocks: [
           { kind: 'p', text: "**Alba knocks on the office door.** You step into the hallway for thirty seconds and come back." },
           { kind: 'table', rows: [["What they are saying outside","the four of them · this morning, out loud in the store"],["The question one of them asked","the other two Mondays · not in the incident form"]] },
-          { kind: 'ul', items: ["No room now for a secret deal.","Nothing you give him now stays between the two of you. So he gives something back, and they see that too.","You decide how much you tell him."] },
+          { kind: 'ul', items: ["No room now for a secret deal.","Nothing you give him now stays between the two of you. So he gives something back, and they see that too.","On your next turn, say that all four people outside already know and ask for a plan they can check on Monday."] },
         ] },
       ],
     },
     closing: [
       { kind: 'p', text: "**You finish when you both say these three things out loud, and you both agree:**" },
       { kind: 'ol', items: ["**The paper you write, and where it goes:** a written warning in his file · a note in the store folder · the commitment sheet and nothing else.","**What changes next Monday, exactly:** the start time, and how it works — who takes Matías, which bus, who opens the store — and the review date.","**When and where the training happens, and what it costs.** Then each of you says: \"This costs you ___.\""] },
+      { kind: 'p', text: "**Weak route — use it before signing:** Camilo says the full `From Monday:` line; Amparo says the full `Training is on:` line; then each repeats the other person's cost and names the review date." },
       { kind: 'p', text: "**And to really finish:** you both sign the commitment sheet on the desk. No time before seven on that line, no close." },
       { kind: 'p', text: "**Three, or it isn't closed.** Point 2: you cannot close with a promise. Point 3: you cannot close without the price." },
     ],
@@ -972,7 +973,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     outcome: 'acuerdo-parcial',
     minutes: 8,
     turnsPerRole: 9,
-    source: "artifacts/habla-a2/fase7-fichas-6-the-cousin-on-the-sofa.md",
+    source: "src/data/practica/habla-acompanado/ingles-a2.ts",
     roles: [
       {
         id: 'a',
@@ -1016,7 +1017,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
         ],
         toolkit: "Blocks **1** `[asks]`, **2**, **3** `[receives]`, **4**, **5**, **6** (it matters · reason locked), **7** (you can say no too) and **8**. The whole box today. *unload* is theirs: ask for it.",
         exponents: [
-          { purpose: "a second bed", form: "`He can sleep… There's a mattress.` · `What about…?`", effect: "you say where he sleeps and you don't decide it" },
+          { purpose: "a second bed", form: "`Second bed: my room.` · `Nobody pays.`", effect: "two short pieces; a quiet player may say them in separate turns before Monday is accepted" },
           { purpose: "asking why", form: "`What's wrong with…?` · `Why not…?`", effect: "you ask for the reason instead of repeating your idea" },
           { purpose: "not a hostel", form: "`Not a hostel — not in this family.` · `He's out all day — he has…`", effect: "the hostel and the paid room get the same answer · the second one only when they ask" },
           { purpose: "owning it", form: "`Sorry — I said yes before…`", effect: "you name what you did, once, and you move on" },
@@ -1025,7 +1026,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
           { purpose: "the call to your aunt", form: "`I have to call… tonight.` · `So: he's coming on…, and he's sleeping…, right?`", effect: "your real deadline, and then the message she gets" },
           { purpose: "the news itself", form: "`He's coming on…` · `He's going to sleep…`", effect: "a plan that doesn't move, and then the hard part with nothing added" },
         ],
-        success: "The whole thing in your first turn — day, nights, the couch · you said it matters and you didn't say why · after a no you asked why, and you learned a reason you did not know · you said out loud what Iván does all day · **two** options, and nobody pays for a bed · you never said the problem is them, and breakfast tomorrow still works.",
+        success: "The whole thing in your first turn — day, nights, the couch · you said it matters and you didn't say why · after a no you asked why, and you learned a reason you did not know · you said out loud what Iván does all day · **two** options, and nobody pays for a bed · you corrected the aunt's message in your own words · you never said the problem is them, and breakfast tomorrow still works.",
       },
       {
         id: 'b',
@@ -1075,7 +1076,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
           { purpose: "leaving something for later", form: "`Let's leave [what] for…`", effect: "you park one thing on a day, instead of losing it" },
           { purpose: "saying yes to the cousin", form: "`I'm not saying no, but…`", effect: "you say yes to the cousin and you put your own thing in the same sentence" },
           { purpose: "taking it back", form: "`That's not true anymore.`", effect: "you break a fact you put on the table yourself" },
-          { purpose: "the name on the lease", form: "`My mom is arriving on…` · `And one more thing: the lease, before…`", effect: "the second ask, as a closed plan with a date on it" },
+          { purpose: "the name on the lease", form: "`The lease needs both names by …` · `We leave … for Sunday after lunch.`", effect: "two short lines before Together: the paper and date, then what remains open and when" },
           { purpose: "the reason, if they ask", form: "`The wifi drops next to…`", effect: "why the living room and not your room — all of it" },
           { purpose: "what you still don't know", form: "`How many nights?` · `What's he going to do all day?`", effect: "first the number, then the fact that decides your Monday" },
         ],
@@ -1100,12 +1101,13 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
       ],
     },
     closing: [
-      { kind: 'p', text: "**Each of you says three things out loud. Six in total. Nobody says the other person's three lines.**" },
-      { kind: 'p', text: "**Dani's screen · your three:** where Iván sleeps on Thursday the 20th, and who sleeps where that night · the second bed, and that nobody pays for it · the message for the aunt, out loud, in front of Cris." },
+      { kind: 'p', text: "**Six pieces in total. Nobody says the other person's private facts.**" },
+      { kind: 'p', text: "**Dani's screen · your two:** where Iván sleeps on Thursday the 20th, and who sleeps where that night · the second bed, and that nobody pays for it." },
       { kind: 'p', text: "**Cris's screen · your three:** from what time to what time the living room is yours on Monday the 24th · the lease, and the day it has to carry the two names · what you did not decide today, and when you talk about it — Sunday the 23rd, in the kitchen, after lunch." },
-      { kind: 'p', text: "**Together, once:** Cris says yes to the aunt's message, or changes one word in it. If Cris changes one word, the two of you agreed on different things." },
+      { kind: 'p', text: "**Before Together:** Dani says the bed and `Nobody pays` — in one turn or two short turns. Cris says the lease deadline and the Sunday-after-lunch question. If any piece is missing, stop and use the matching row in the table." },
+      { kind: 'p', text: "**Together, once — the sixth piece:** Dani first gives a correction of at most three words, such as `Thursday to Sunday`. Cris then says the complete corrected message for the aunt. A yes does not count." },
       { kind: 'p', text: "**Four rules:**" },
-      { kind: 'ul', items: ["Your three lines are yours. If the other one says one of them, it doesn't count — say it again yourself.","You can check with your own words. *So, we're clear then* is not one of the six lines, and it isn't cheating either.","Saying yes is not a line. *Yeah*, *sure*, *okay*, *fine* and *that works* are not lines by themselves — and they don't close the `Together` either.","Nothing goes one way. In the same turn, say what you give and what you get — and the other one says out loud what they give back."] },
+      { kind: 'ul', items: ["Your assigned lines are yours. If the other one says one of them, it doesn't count — say it again yourself.","You can check with your own words. *So, we're clear then* is not one of the six lines, and it isn't cheating either.","Saying yes is not a line. *Yeah*, *sure*, *okay*, *fine* and *that works* are not lines by themselves — and they don't close the `Together` either.","Nothing goes one way. In the same turn, say what you give and what you get — and the other one says out loud what they give back."] },
       { kind: 'p', text: "**Six lines, or it isn't closed.** The easy one to forget is the third one. Skip it and the conversation just stops. It doesn't end." },
     ],
     debrief: [
@@ -1153,7 +1155,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     outcome: 'aplazado',
     minutes: 7,
     turnsPerRole: 9,
-    source: "artifacts/habla-a2/fase7-fichas-7-two-more-people-for-the-trip.md",
+    source: "src/data/practica/habla-acompanado/ingles-a2.ts",
     roles: [
       {
         id: 'a',
@@ -1252,7 +1254,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
         ],
         toolkit: "Blocks **1** `[asks]`, because you open, and you open with something uncomfortable. **2**. **3** `[receives]`: reservations, ID numbers and gate lists are **her** words, not yours, so ask. **5**, two weekends moved because of you. **7**, no money tonight, and three things to offer instead. **8**. Not 4, not 6.",
         exponents: [
-          { purpose: "Andrea and Sebastián", form: "`What do I say to …?`", effect: "get an answer you can repeat outside" },
+          { purpose: "Andrea and Sebastián", form: "`Andrea: name, ID.` · `I send by …` · `Sebastián: … by …` · `Andrea: … by …` · `Kevin's car: … people.` · `Hernán's car: … people.`", effect: "six short pieces: identity, both messages and a driver + count for each car; Andrea stays pending until seven" },
           { purpose: "asking what changed", form: "`When did that change?`", effect: "open the half of the mess that isn't yours" },
           { purpose: "hearing it from someone else", form: "`Nobody told me about …` · `I found out from …`", effect: "say who told you, and that it wasn't him" },
           { purpose: "keeping the friendship", form: "`We're good, right?`", effect: "make sure tomorrow's car is not silent" },
@@ -1281,15 +1283,15 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
         { kind: 'p', text: "**Two words on this screen**" },
         { kind: 'table', head: ["word","what it is","here"], rows: [["a camping mat","a thin bed that you put on the floor","the seventh person, if there is one · not a bed"],["the person in charge of the house","the one who says yes or no about the house","why nothing closes tonight"]] },
         { kind: 'quote', blocks: [
-          { kind: 'p', text: "**Nothing here helps you if you open it early.** It only gives you more work: the money, and a name for doña Nubia tonight. And you have to change something you already said out loud. Kevin learns only what you tell him. You decide how much." },
+          { kind: 'p', text: "**On your next turn, you must say all three changes:** there may be room for one person, it costs 150,000 on your reservation, and the answer comes before 7:00 a.m. You still choose your words, but you cannot hide the card or send the message before Kevin answers." },
         ] },
       ],
     },
     closing: [
       { kind: 'p', text: "**Each of you says three things out loud. Six in total. Nobody says the other person's three lines. Then Valentina sends the message to the WhatsApp group.**" },
       { kind: 'p', text: "**Only Valentina can say:** how many beds there are, how many names and ID numbers are on the gate list, and who can change it · what an extra person costs, and on whose reservation · the 7:00 a.m. call, and what she does if nobody answers before it." },
-      { kind: 'p', text: "**Only Kevin can say:** the full name and the ID number he sends tonight, and who gives them to him · the exact day he pays the 100,000, and what he does if the money is not there that day · what he tells Sebastián and what he tells Andrea tonight, and by what time." },
-      { kind: 'p', text: "**Together, once:** which cars leave at 8:00, and who rides in each one. Then Valentina says yes to Kevin's three, or changes one thing in them, and sends the message." },
+      { kind: 'p', text: "**Only Kevin can say:** who gives the full name and ID number and when he sends them · the exact day he pays the 100,000, and what he does if the money is not there that day · action + time for Sebastián, then action + time for Andrea. A quiet player may produce each short piece in a separate turn." },
+      { kind: 'p', text: "**Together, once:** say the driver and passenger count for Kevin's car and Hernán's car. Andrea stays `pending before 7:00`; do not invent a seventh passenger or unnamed people. Then Valentina says yes to Kevin's three, or changes one thing in them, and sends the message." },
       { kind: 'p', text: "**Four rules:**" },
       { kind: 'ul', items: ["Nobody repeats the other's line. Say the other one's line and it doesn't count — they say it again. And a line answered *yes* or *no* is not said: ask it open, or it doesn't count.","A day is not a date until the other one says what happens if he pays late. The 100,000 needs two mouths, not one.","The message says two numbers — how many people go, and how many cars leave — and the two have to be the ones you just said out loud. If they aren't, say them again.","Nobody nods their way through. *Yeah*, *sure*, *okay*, *fine* and *that works* are not lines by themselves."] },
       { kind: 'p', text: "**Six lines, or the message doesn't go.** Valentina writes nothing until she has heard Kevin's three. This one does not close tonight, and that is the plan." },
@@ -1348,7 +1350,7 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
     outcome: 'sin-acuerdo',
     minutes: 8,
     turnsPerRole: 8,
-    source: "artifacts/habla-a2/fase7-fichas-8-cancel-the-gym-i-am-leaving.md",
+    source: "src/data/practica/habla-acompanado/ingles-a2.ts",
     roles: [
       {
         id: 'a',
@@ -1478,9 +1480,9 @@ export const ROLEPLAY_INGLES_A2: RoleplayScenario[] = [
       ],
     },
     closing: [
-      { kind: 'p', text: "**Three things end it. Tatiana signs the visit log. Mauricio says the case number and the date out loud. Tatiana says them back.** Before she signs, you two have to answer out loud:" },
-      { kind: 'ol', items: ["**What Mauricio writes today, and what he doesn't.** Tatiana says it, in her own words.","**Her first choice, and what she has to bring.** One way, not two.","**Who with, where and at what time — and what happens on September 5 and on the 12th if she does nothing.**"] },
-      { kind: 'p', text: "When Tatiana has the number and the date, and she says them back, it's over. **That is the end of the game.** Nobody has to ask." },
+      { kind: 'p', text: "**The signature and case number stay locked until the content is complete.** Before Tatiana can sign, Mauricio says both available ways and what each one needs. Tatiana chooses one, repeats its condition in her own words, and then you two answer all three blocks out loud:" },
+      { kind: 'ol', items: ["**What Mauricio writes today, and what he doesn't.** Tatiana says it, in her own words.","**Both available ways and what each one needs. Then her first choice**, repeated by Tatiana in her own words.","**Who with, where and at what time — and what happens on September 5 and on the 12th if she does nothing.**"] },
+      { kind: 'p', text: "Only after those answers: Tatiana signs the visit log, Mauricio says the case number and date, and Tatiana says them back. A signature, a number or a yes cannot replace any missing answer. **That is the end of the game.**" },
     ],
     debrief: [
       "**Hoy nadie consigue la cancelación**, y eso estaba decidido por el escenario antes de que hablaran: no depende de cómo lo hicieron y no es fallar el ejercicio. Lo que se medía es otra cosa: si Tatiana salió con más de lo que traía, y si Mauricio dijo que no **y** dijo qué sí.",

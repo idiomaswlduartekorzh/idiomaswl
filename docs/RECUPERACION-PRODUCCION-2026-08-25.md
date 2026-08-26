@@ -1,6 +1,12 @@
 # Registro de recuperación de producción
 
-Estado: recuperación en ejecución.
+Estado: **snapshot histórico del 25 de agosto; no es autoridad operativa vigente**.
+
+Para el inventario versionado actual usa
+[`MAPA-CONOCIMIENTO-MAIN.md`](MAPA-CONOCIMIENTO-MAIN.md); para ramas y producción usa
+[`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md). Las menciones
+de cuota, ramas pendientes y despliegues de este archivo describen el momento del corte y no deben
+usarse para decidir un despliegue nuevo sin volver a verificar GitHub y Vercel.
 
 Fecha de corte: 25 de agosto de 2026, 13:47 COT.
 

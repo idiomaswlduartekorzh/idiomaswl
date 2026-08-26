@@ -43,6 +43,9 @@ La comunicación entre ramas, los estados obligatorios y el protocolo de recuper
 [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md).
 El inventario vivo de trabajos que están fuera, dentro o pendientes de producción está en
 [`RECUPERACION-PRODUCCION-2026-08-25.md`](RECUPERACION-PRODUCCION-2026-08-25.md).
+El grafo de lo versionado en la rama canónica está en
+[`MAPA-CONOCIMIENTO-MAIN.md`](MAPA-CONOCIMIENTO-MAIN.md); su encabezado siempre debe nombrar el
+SHA del snapshot para no confundir `main` con un deployment anterior.
 
 Una rama no se declara «hecha» porque tenga commit, push o preview. Solo se declara desplegada
 cuando el registro contiene el SHA integrado en `main`, el deployment de Vercel y las rutas de
@@ -58,3 +61,4 @@ comprueban y qué queda pendiente. Léelo antes de tocar ese subsistema, y actua
 | Escucha — 480 episodios en 8 idiomas, `/practica/*/escucha` | [`docs/escucha-estado.md`](escucha-estado.md) |
 | SAT — superhub y simulacro adaptativo completo | [`docs/sat-estado.md`](sat-estado.md) |
 | PDF descargables — 5 destrezas en 8 idiomas, `src/lib/pdf/` | [`docs/pdf-descargables-estado.md`](pdf-descargables-estado.md) |
+| Habla acompañada — 10 conjuntos, 200 escenarios publicados | [`docs/METODOLOGIA-HABLA-ACOMPANADA.md`](METODOLOGIA-HABLA-ACOMPANADA.md) y [`docs/habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md) |

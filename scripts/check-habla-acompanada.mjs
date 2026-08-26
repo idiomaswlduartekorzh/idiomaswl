@@ -161,9 +161,15 @@ for (const { set, published } of validationSets) {
   for (const scenario of set.scenarios) {
     const scenarioWhere = `${where}, escenario ${scenario.sequence} (${scenario.slug})`
     const range = ROLEPLAY_LEVELS[set.level]
+    const sourcePath = scenario.source.split('#', 1)[0]
 
     if (scenario.language !== set.language || scenario.level !== set.level) {
       fail(`${scenarioWhere}: idioma o nivel distinto del conjunto.`)
+    }
+    if (/(^|\/)(artifacts|archive|output|outputs)(\/|$)/.test(sourcePath)) {
+      fail(`${scenarioWhere}: source apunta a evidencia histórica (${scenario.source}); debe apuntar a una fuente viva.`)
+    } else if (!fs.existsSync(path.join(root, sourcePath))) {
+      fail(`${scenarioWhere}: source no existe en el repositorio vivo (${scenario.source}).`)
     }
     if (scenario.minutes < range.minMinutes || scenario.minutes > range.maxMinutes) {
       fail(`${scenarioWhere}: ${scenario.minutes} minutos queda fuera del rango ${range.label} ${range.minMinutes}–${range.maxMinutes}.`)

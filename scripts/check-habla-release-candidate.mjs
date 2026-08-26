@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto'
+import fs from 'node:fs'
 import process from 'node:process'
 import {
   ROLEPLAY_INGLES_A1_CANDIDATE,
@@ -13,7 +15,7 @@ import {
 } from '../src/data/practica/habla-acompanado/drafts/index.ts'
 import { KOREAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-coreano-a2.ts'
 import { ENGLISH_A1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a1.ts'
-import { ENGLISH_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a2.ts'
+import { ENGLISH_A2_RELEASE_APPROVAL, ENGLISH_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-a2.ts'
 import { ENGLISH_B1_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-ingles-b1.ts'
 import { FRENCH_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-frances-a2.ts'
 import { ITALIAN_A2_RELEASE_AUDITS } from '../src/data/practica/habla-acompanado/drafts/audit-italiano-a2.ts'
@@ -35,8 +37,9 @@ const configurations = {
   },
   'ingles-a2': {
     label: 'inglés A2',
-    scenarios: ROLEPLAY_INGLES_A2_CANDIDATE.filter((scenario) => new Set([4, 7, 8, 11, 12, 14, 15, 16, 17, 18, 19, 20]).has(scenario.sequence)),
+    scenarios: ROLEPLAY_INGLES_A2_CANDIDATE,
     audits: ENGLISH_A2_RELEASE_AUDITS,
+    approval: ENGLISH_A2_RELEASE_APPROVAL,
   },
   'ingles-b1': {
     label: 'inglés B1',
@@ -92,6 +95,20 @@ function fail(message) {
 
 const auditsBySlug = new Map(configuration.audits.map((audit) => [audit.slug, audit]))
 if (auditsBySlug.size !== configuration.audits.length) fail('Hay slugs de auditoría repetidos.')
+if (newScenarios.length !== 20) fail(`El conjunto publicado tiene ${newScenarios.length}/20 escenarios.`)
+const publishedSequences = newScenarios.map((scenario) => scenario.sequence).sort((a, b) => a - b)
+const expectedSequences = Array.from({ length: 20 }, (_, index) => index + 1)
+if (publishedSequences.join(',') !== expectedSequences.join(',')) fail('Las secuencias publicadas no son exactamente 1–20.')
+if (configuration.approval) {
+  const currentDigest = createHash('sha256').update(JSON.stringify(newScenarios)).digest('hex')
+  if (currentDigest !== configuration.approval.contentDigest) {
+    fail(`La aprobación editorial caducó: huella aprobada ${configuration.approval.contentDigest}, huella actual ${currentDigest}.`)
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(configuration.approval.approvedAt)) fail('La aprobación editorial debe declarar approvedAt en formato YYYY-MM-DD.')
+  for (const evidencePath of configuration.approval.evidence) {
+    if (!fs.existsSync(evidencePath)) fail(`Falta la evidencia transcript-backed ${evidencePath}.`)
+  }
+}
 
 for (const scenario of newScenarios) {
   const audit = auditsBySlug.get(scenario.slug)

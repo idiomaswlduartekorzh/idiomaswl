@@ -56,6 +56,15 @@ conviene saber antes de tocar nada de ahí:
 (`IELTSHubClient`, `IcfesAdaptiveGame`, `ICFES_SMART_BANK_SUMMARY`, Task 1, Nivel Radar).
 Valen la misma regla: si el guardián se queja de ellos, tu rama se llevó algo por delante.
 
+**Habla acompañada — 200 escenarios publicados.** Antes de tocarla, lee
+[`docs/METODOLOGIA-HABLA-ACOMPANADA.md`](docs/METODOLOGIA-HABLA-ACOMPANADA.md) y
+[`docs/habla-acompanado-blueprint.md`](docs/habla-acompanado-blueprint.md). El runtime en
+`src/data/practica/habla-acompanado/` es la única fuente ejecutable; `artifacts/`, `outputs/` y
+ramas `archive/*` son evidencia histórica, no contenido recuperable por copia. Un cambio de ficha
+invalida su auditoría. Antes de integrar exige 20/20 escenarios, cinco perfiles frescos con
+`check:habla-release:<objetivo>`, `check:habla-acompanada`, catálogo, TypeScript y build. Nunca
+bajes pisos ni publiques un `12/12` como si certificara un conjunto de 20.
+
 ### Tu rama solo existe en este portátil
 
 Las ramas `codex/*` no están en `origin`. Compruébalo con

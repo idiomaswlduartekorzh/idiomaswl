@@ -1,3 +1,5 @@
+import { ENGLISH_A2_LEGACY_RELEASE_AUDITS } from './audit-ingles-a2-legacy.ts'
+
 export type SimulationProfile =
   | 'solid-solid'
   | 'solid-weak'
@@ -25,6 +27,16 @@ export type RoleplayScenarioAudit = {
   runs: RoleplaySimulationRun[]
 }
 
+export const ENGLISH_A2_RELEASE_APPROVAL = {
+  contentDigest: 'fb4fa9a569e0f2e990bf5156782391d949bf8867e9a9a36d7a61a3c41325e586',
+  approvedAt: '2026-08-26',
+  evidence: [
+    'docs/audits/habla-ingles-a2-legacy-1-2-8-2026-08-26.md',
+    'docs/audits/habla-ingles-a2-legacy-3-4-5-2026-08-26.md',
+    'docs/audits/habla-ingles-a2-legacy-6-7-2026-08-26.md',
+  ],
+} as const
+
 /**
  * Evidencia de simulación del candidato inglés A2.
  *
@@ -33,6 +45,7 @@ export type RoleplayScenarioAudit = {
  * El guardián de release exige cinco perfiles y no admite un escenario ausente.
  */
 export const ENGLISH_A2_RELEASE_AUDITS: RoleplayScenarioAudit[] = [
+  ...ENGLISH_A2_LEGACY_RELEASE_AUDITS,
   {
     slug: 'the-blender-was-a-gift',
     auditedAt: '2026-08-23',

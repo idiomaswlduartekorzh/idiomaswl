@@ -447,14 +447,14 @@ parezca incumplido cuando no lo está.
 | **B1-B2** | ≤ 600 | datos ≤ 14 · vocabulario 10-12 · exponentes 8-10 |
 | **C1-C2** | sin tope fijo | ahí la ficha puede ser un documento de verdad — un contrato, un informe |
 
-Medido sobre el escenario 3: la ficha en español gastaba **798 palabras de prosa**; la misma
+Medido históricamente sobre el escenario 3: la ficha en español gastaba **798 palabras de prosa**; la misma
 ficha en inglés, con el bloque de vocabulario añadido, gasta **346**. El corte es real y es lo
 que se buscaba.
 
 **El techo de 450 sale de medir, no de desear.** La primera versión de esta tabla puso 350, y
 ese número salió de contar a mano una sola ficha —la del molde— con un contador improvisado.
-Medidas las dieciséis con el contador canónico
-(`artifacts/habla-a2/fase7-scripts/prosa-canonica.mjs`), la media es **425** y solo una baja de
+Medidas las dieciséis con el contador de aquella auditoría (conservado en la rama `archive/`),
+la media fue **425** y solo una bajó de
 350: la ficha B del propio molde se va a 376. Cuando el molde no cumple su propio techo, el
 techo está mal, no el molde. El juego de piezas obligatorio —situación, objetivo, dos o tres
 restricciones, el dato oculto, lo que se pierde, la caja, los criterios y el cierre— cuesta unas
@@ -466,9 +466,9 @@ sobre el mismo contenido. Un umbral sin un contador único no es un umbral. Se c
 la situación pasa de párrafo a dos líneas, el objetivo de explicación a frase, y lo que cabe en
 una tabla no se cuenta en un texto.
 
-El molde histórico que produjo el piloto está en
-`artifacts/habla-a2/fase7-modelo-ficha-en.md` dentro de la rama de auditoría. Los escenarios
-nuevos se escriben contra las reglas de este documento y se incorporan al registro runtime.
+El molde histórico que produjo el piloto se conserva en la rama de auditoría solo como evidencia.
+Los escenarios nuevos se escriben contra las reglas de este documento y directamente en el
+registro runtime; nunca se importan desde `artifacts/` o `archive/*`.
 
 ## 12. Integración publicada por el código
 
@@ -526,15 +526,20 @@ El piso solo sube. Bajar un número para hacer pasar CI equivale a borrar conten
 prohibido. Los conjuntos en redacción no entran en `ROLEPLAY_SETS`; se validan con el mismo
 script en modo borrador y se integran cuando llegan completos.
 
-Por cada conjunto el guardián verifica, como mínimo:
+Por cada conjunto el guardián de integridad mecánica verifica, como mínimo:
 
 - 20 escenarios, secuencia `1..20`, ids y slugs únicos y dos roles distintos.
 - Nivel e idioma iguales a los de su entrada de catálogo.
 - Rangos de minutos, turnos, vocabulario, exponentes y prosa del §4 y §11.
 - Carta en turno global 3–6, cierre común, debrief y referencias gramaticales que existen.
-- Las doce puertas y los repartos de §5 calculados sobre el conjunto completo.
-- Caja propia del idioma y nivel, rutas, metadatos, sitemap y `generateStaticParams`.
+- Distribuciones mecánicas de iniciador, poder, desenlace y dueño de carta sobre el conjunto.
+- Caja propia del idioma y nivel y presencia de las rutas públicas compartidas.
 - Ausencia de enlaces o textos clavados a otro idioma o nivel.
+
+No afirma por sí solo que pasen naturalidad, tensión, equidad, calcabilidad o simulación. Esas
+puertas necesitan la evidencia editorial fresca de `check:habla-release:<objetivo>` y el protocolo
+de [`METODOLOGIA-HABLA-ACOMPANADA.md`](METODOLOGIA-HABLA-ACOMPANADA.md). Ambos son obligatorios:
+un verde estructural nunca sustituye una recertificación de cinco perfiles.
 
 El guardián transversal `check:practica-catalog` protege el registro, el motor y el piso
 publicado contra una integración que los borre en silencio. La meta final queda cerrada cuando
