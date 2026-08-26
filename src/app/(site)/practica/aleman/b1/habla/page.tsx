@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Alemán B1 — Frases esenciales"
-        url="https://idiomaswl.com/practica/aleman/b1/habla"
+        url="https://www.idiomaswl.com/practica/aleman/b1/habla"
         description="20 frases esenciales de Alemán B1 para debates, opiniones y conversaciones formales e informales."
       />
       <Content />

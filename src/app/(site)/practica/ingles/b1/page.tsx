@@ -7,7 +7,7 @@ import { listeningCard } from '@/data/practica/series/page-copy';
 export const metadata: Metadata = {
   title: 'Inglés B1 — Elige una habilidad',
   description: 'Inglés B1: present perfect, past continuous, condicionales y voz pasiva. Lectura, gramática, escritura, habla, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ingles/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/b1' },
 };
 
 const HABILIDADES = [
@@ -54,7 +54,7 @@ export default function InglesB1Page() {
       <CourseSchema
         name="Inglés B1 — Lectura, Gramática, Vocabulario y más"
         description="Practica Inglés nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-        url="https://idiomaswl.com/practica/ingles/b1"
+        url="https://www.idiomaswl.com/practica/ingles/b1"
         educationalLevel="B1"
         teaches="Inglés, habilidades MCER"
         inLanguage="in"

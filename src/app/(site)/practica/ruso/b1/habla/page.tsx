@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Ruso B1 — Frases esenciales"
-        url="https://idiomaswl.com/practica/ruso/b1/habla"
+        url="https://www.idiomaswl.com/practica/ruso/b1/habla"
         description="20 frases esenciales de Ruso B1 con cirílico, transliteración y fonética para debates y situaciones formales."
       />
       <Content />

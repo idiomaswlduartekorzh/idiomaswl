@@ -38,100 +38,18 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-frances' },
 };
 
-const faqJsonLd = {
+const faqJsonLd = (faqs: ReadonlyArray<{ q: string; a: string }>) => ({
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: '¿Necesito saber francés para empezar?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. Empezamos desde A1 absoluto. La primera sesión cubre pronunciación básica, saludos y la lógica del idioma para hispanohablantes.',
-      },
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: a,
     },
-    {
-      '@type': 'Question',
-      name: '¿Qué tan difícil es el francés para colombianos?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Más fácil de lo que parece. Compartimos el 80% del vocabulario con el español gracias al latín común. La pronunciación es diferente pero sistemática. Con método, progresas rápido.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Para qué sirve el DELF?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El DELF es la certificación oficial de francés del Ministerio de Educación de Francia. Es requerida para estudiar en universidades francesas, obtener visas y demostrar nivel en contextos laborales internacionales.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto tiempo toma llegar al DELF B2?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Partiendo de cero, entre 18 y 24 meses con práctica constante de 3–4 horas semanales. Si ya tienes base (A2), puedes alcanzar B2 en 10–14 meses.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Dónde puedo tomar clases de francés en Bucaramanga?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'En Idiomas WeLearn, academia de idiomas con base en Bucaramanga. Atiende presencialmente a estudiantes de Bucaramanga, Floridablanca, Girón y Piedecuesta, y online al resto de Colombia y del mundo. El contacto es por WhatsApp al 300 500 4253 y la primera sesión de diagnóstico es gratuita.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Las clases de francés son presenciales o virtuales?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Las dos modalidades están disponibles. En Bucaramanga y su área metropolitana las clases pueden ser presenciales; desde cualquier otra ciudad son por videollamada, con el mismo profesor y el mismo plan de estudio. También es posible alternar entre ambos formatos según la semana.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto cuestan las clases de francés en Bucaramanga?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El precio depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿El DELF sirve para migrar a Canadá?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. Para los trámites migratorios canadienses se aceptan el TEF Canada y el TCF Canada, no el DELF. El DELF y el DALF son diplomas académicos que no caducan y sirven para universidades y para acreditar nivel, pero no reemplazan el examen que exige el proceso migratorio.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuál es la diferencia entre DELF, DALF, TCF y TEF?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'DELF y DALF son diplomas del Ministerio de Educación de Francia: se presentan por nivel, de A1 a C2, y no caducan. TCF y TEF son pruebas de nivel con vigencia limitada, normalmente de dos años, y sus versiones Canada son las que reconocen los procesos migratorios canadienses. El francés que se estudia es el mismo; lo que cambia es el formato de la prueba.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Dónde puedo presentar el DELF o el TCF en Colombia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'En los centros autorizados de la Alianza Francesa, presentes en Bogotá, Medellín, Cali y otras ciudades del país. Cada examen tiene su propio calendario de sesiones e inscripción, por lo que conviene confirmar fecha y sede con anticipación.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Qué nivel de francés necesito para estudiar en Francia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'La mayoría de programas universitarios dictados en francés piden nivel B2. Algunos posgrados y programas selectivos piden C1. Si el programa se dicta en inglés, suele bastar un nivel básico de francés para la vida diaria, pero conviene verificarlo con la universidad.',
-      },
-    },
-  ],
-};
+  })),
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -287,7 +205,7 @@ export default function ClasesDeFrancesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(FAQS)) }} />
       <main className={s.page}>
 
         {/* ══════════════ HERO ══════════════ */}

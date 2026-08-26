@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Expresión oral en Portugués B1 — Frases esenciales"
-        url="https://idiomaswl.com/practica/portugues/b1/habla"
+        url="https://www.idiomaswl.com/practica/portugues/b1/habla"
         description="20 frases esenciales de Portugués B1 para debates, opiniones y conversaciones formais e informais."
       />
       <Content />

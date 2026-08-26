@@ -7,7 +7,6 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const read = (relativePath) => fs.readFileSync(path.join(ROOT, relativePath), 'utf8');
 
 const errors = [];
-const warnings = [];
 const requireMatch = (source, pattern, message) => {
   if (!pattern.test(source)) errors.push(message);
 };
@@ -22,6 +21,16 @@ requireMatch(robots, /sitemap:\s*'https:\/\/www\.idiomaswl\.com\/sitemap\.xml'/,
 requireMatch(robots, /userAgent:\s*'\*',\s*allow:\s*'\/'/, 'robots.ts dejó de permitir el rastreo público.');
 requireMatch(rootPage, /export default HomePage/, 'La home pública dejó de vivir en la raíz /.');
 requireMatch(legacyHome, /permanentRedirect\('\/'\)/, '/home dejó de consolidar autoridad con redirección permanente a /.');
+requireMatch(
+  sitemap,
+  /lastModified:\s*new Date\(post\.updatedDate \?\? post\.date\)/,
+  'El sitemap dejó de publicar la fecha editorial real de los artículos.',
+);
+requireMatch(
+  sitemap,
+  /const lastModified = new Date\(exercise\.seo\.lastModified\)/,
+  'El sitemap dejó de publicar la fecha editorial real de las lecturas.',
+);
 
 if (/\$\{BASE\}\/home(?:['"`/}]|$)/.test(sitemap) || /https:\/\/www\.idiomaswl\.com\/home/.test(sitemap)) {
   errors.push('El sitemap volvió a publicar /home aunque la URL canónica es /.');
@@ -59,23 +68,6 @@ for (const relativePath of PRIVATE_NOINDEX) {
   if (!/index:\s*false/.test(source)) errors.push(`${relativePath} perdió su noindex intencional.`);
 }
 
-const KNOWN_NON_WWW_CANONICAL_FILES = new Set([
-  'src/app/(site)/practica/aleman/b1/page.tsx',
-  'src/app/(site)/practica/coreano/a2/leccion-integrada/page.tsx',
-  'src/app/(site)/practica/coreano/a2/page.tsx',
-  'src/app/(site)/practica/coreano/b1/page.tsx',
-  'src/app/(site)/practica/frances/b1/page.tsx',
-  'src/app/(site)/practica/ingles/b1/conjunciones/page.tsx',
-  'src/app/(site)/practica/ingles/b1/page.tsx',
-  'src/app/(site)/practica/ingles/b2/conectores/page.tsx',
-  'src/app/(site)/practica/italiano/a2/page.tsx',
-  'src/app/(site)/practica/japones/a2/page.tsx',
-  'src/app/(site)/practica/japones/b1/page.tsx',
-  'src/app/(site)/practica/portugues/b1/page.tsx',
-  'src/app/(site)/practica/ruso/a2/page.tsx',
-  'src/app/(site)/practica/ruso/b1/page.tsx',
-]);
-
 function sourceFiles(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const absolutePath = path.join(directory, entry.name);
@@ -84,27 +76,16 @@ function sourceFiles(directory) {
   });
 }
 
-const unresolvedCanonicalFiles = [];
 for (const absolutePath of sourceFiles(path.join(ROOT, 'src/app'))) {
   const source = fs.readFileSync(absolutePath, 'utf8');
-  if (!/canonical\s*:\s*['"`]https:\/\/idiomaswl\.com(?:[/'"`])/.test(source)) continue;
+  if (!/https:\/\/idiomaswl\.com(?:[/'"`])/.test(source)) continue;
   const relativePath = path.relative(ROOT, absolutePath);
-  unresolvedCanonicalFiles.push(relativePath);
-  if (!KNOWN_NON_WWW_CANONICAL_FILES.has(relativePath)) {
-    errors.push(`${relativePath} añadió un canonical nuevo sin www.`);
-  }
+  errors.push(`${relativePath} publica una URL absoluta sin el host canónico www.`);
 }
 
-if (unresolvedCanonicalFiles.length) {
-  warnings.push(`${unresolvedCanonicalFiles.length} canonicals sin www siguen como deuda conocida; el guardián impide que aparezcan nuevos.`);
+if (/const now = new Date\(\)/.test(sitemap) || /lastModified:\s*now\b/.test(sitemap)) {
+  errors.push('El sitemap volvió a usar la hora del build como lastModified.');
 }
-
-const volatileLastModified = (sitemap.match(/lastModified:\s*now\b/g) ?? []).length;
-if (volatileLastModified) {
-  warnings.push(`${volatileLastModified} grupos del sitemap aún publican la hora del build como lastModified; se corregirá en la fase de señales.`);
-}
-
-for (const warning of warnings) console.warn(`! ${warning}`);
 
 if (errors.length) {
   console.error(`\n✗ Fundación SEO: ${errors.length} regresión${errors.length === 1 ? '' : 'es'}:\n`);

@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Ruso B1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/ruso/b1/vocabulario"
+        url="https://www.idiomaswl.com/practica/ruso/b1/vocabulario"
         description="Ejercicios de vocabulario de Ruso nivel B1: 8 sets temáticos con cirílico, transliteración y práctica activa."
       />
       <Content />

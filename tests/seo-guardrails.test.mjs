@@ -44,12 +44,12 @@ test('el extractor admite FAQPage dentro de @graph y entidades HTML', () => {
   assert.equal(normalizeVisibleText('<strong>Plan&nbsp;local</strong>'), 'Plan local');
 });
 
-test('el guardián estático acepta la fundación SEO actual sin ocultar la deuda conocida', () => {
+test('el guardián estático acepta la fundación SEO sin deuda tolerada', () => {
   const result = spawnSync(process.execPath, ['scripts/check-seo-foundation.mjs'], {
     cwd: process.cwd(),
     encoding: 'utf8',
   });
   assert.equal(result.status, 0, result.stderr || result.stdout);
   assert.match(result.stdout, /Fundación SEO/);
-  assert.match(result.stderr, /deuda conocida/);
+  assert.doesNotMatch(result.stderr, /deuda conocida|lastModified|sin www/);
 });

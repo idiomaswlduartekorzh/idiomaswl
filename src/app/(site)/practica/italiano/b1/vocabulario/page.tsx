@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Italiano B1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/italiano/b1/vocabulario"
+        url="https://www.idiomaswl.com/practica/italiano/b1/vocabulario"
         description="Ejercicios de vocabulario de Italiano nivel B1: tarjetas temáticas, scelta multipla y escritura activa."
       />
       <Content />
