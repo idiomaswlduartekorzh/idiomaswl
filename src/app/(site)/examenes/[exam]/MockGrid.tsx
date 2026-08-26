@@ -1,9 +1,8 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import type { Exam } from '@/data/exams';
 import { hasGuidedMock } from '@/data/icfes/guided-registry';
+
+const INITIAL_VISIBLE_MOCKS = 8;
 
 export default function MockGrid({ exam }: { exam: Exam }) {
   if (!exam.available) {
@@ -30,7 +29,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
         {
           id: 'practice',
           title: 'Prácticas propias abreviadas',
-          description: '23 recorridos creados por WeLearn para entrenar las siete habilidades. Tienen 45 preguntas y no reproducen la extensión estándar 2026-2 de 55 preguntas.',
+          description: '23 recorridos creados por WeLearn para entrenar las siete partes. Tienen 45 preguntas y no reproducen la extensión estándar 2026-2 de 55 preguntas.',
           mocks: exam.mocks.filter(mock => !mock.badge),
         },
         {
@@ -42,13 +41,47 @@ export default function MockGrid({ exam }: { exam: Exam }) {
       ]
     : [{ id: 'all', title: 'Simulacros disponibles', description: '', mocks: exam.mocks }];
 
+  const renderCards = (mocks: typeof exam.mocks) => (
+    <div className="wl-mock-grid">
+      {mocks.map((mock) => {
+        const absoluteIndex = exam.mocks.findIndex(item => item.id === mock.id);
+        return (
+          <article key={mock.id} className={`wl-mock-card${mock.free ? '' : ' wl-mock-card--locked'}`}>
+            <div className="wl-mock-card__header">
+              <span className="wl-mock-card__num">{String(absoluteIndex + 1).padStart(2, '0')}</span>
+              <div className="wl-mock-card__badges">
+                {mock.badge ? <span className="wl-exam-status-chip">{mock.badge}</span> : null}
+                <span className={`wl-mock-card__tag ${mock.free ? 'wl-mock-card__tag--free' : 'wl-mock-card__tag--pro'}`}>
+                  {mock.free ? 'Gratis' : 'Pro'}
+                </span>
+              </div>
+            </div>
+            <h3 className="wl-mock-card__title">{mock.title}</h3>
+            <p className="wl-mock-card__sub">{mock.subtitle}</p>
+            <div className="wl-mock-card__stats">
+              <span>{mock.parts} {mock.parts === 1 ? 'parte' : 'partes'}</span><span aria-hidden="true">·</span><span>{mock.questions} preguntas</span>
+            </div>
+            {mock.free ? (
+              <div className="wl-mock-card__actions">
+                <Link href={mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`} className="wl-mock-card__cta btn btn-sm">Modo examen →</Link>
+                {exam.slug === 'icfes' && hasGuidedMock(mock.id) ? <Link href={`/examenes/icfes/practica/${mock.id}/guiado`} className="btn btn-sm btn-ghost">Modo guiado</Link> : null}
+              </div>
+            ) : (
+              <button type="button" className="wl-mock-card__cta btn btn-sm btn-ghost" disabled>🔒 Suscríbete para acceder</button>
+            )}
+          </article>
+        );
+      })}
+    </div>
+  );
+
   return (
-    <section className="wl-section" id={exam.slug === 'toefl' ? 'simulacros' : undefined}>
+    <section className="wl-section wl-exam-practice" id="practica" aria-labelledby="exam-practice-title">
       <div className="wrap">
-        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem' }}>
+        <div className="wl-exam-practice__heading">
           <div>
-            <p className="eyebrow" style={{ marginBottom: '0.4rem' }}><span className="ink-line" />Práctica</p>
-            <h2 style={{ fontSize: '1.75rem', fontWeight: 700, letterSpacing: '-0.03em', margin: 0 }}>
+            <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Práctica</p>
+            <h2 id="exam-practice-title">
               {exam.slug === 'icfes' ? 'Elige qué tipo de práctica necesitas' : 'Simulacros disponibles'}
             </h2>
           </div>
@@ -60,7 +93,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
         </div>
 
         {groups.map((group, groupIndex) => (
-          <div key={group.id} style={{ marginTop: groupIndex === 0 ? 0 : '3.5rem' }}>
+          <div key={group.id} className="wl-mock-group" data-later={groupIndex > 0 ? 'true' : 'false'}>
             {exam.slug === 'icfes' && (
               <div style={{ maxWidth: 760, marginBottom: '1.25rem' }}>
                 <h3 style={{ fontSize: '1.3rem', margin: '0 0 0.4rem', letterSpacing: '-0.02em' }}>{group.title}</h3>
@@ -72,67 +105,19 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                 )}
               </div>
             )}
-            <div className="wl-mock-grid">
-              {group.mocks.map((mock, i) => {
-                const absoluteIndex = exam.mocks.findIndex(item => item.id === mock.id);
-                return (
-                  <motion.div
-                    key={mock.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.45, delay: Math.min(i, 5) * 0.06, ease: [0.22, 1, 0.36, 1] }}
-                    viewport={{ once: true, margin: '-30px' }}
-                  >
-                    <div className={`wl-mock-card${mock.free ? '' : ' wl-mock-card--locked'}`}>
-                      <div className="wl-mock-card__header">
-                        <span className="wl-mock-card__num">{String(absoluteIndex + 1).padStart(2, '0')}</span>
-                        <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'center' }}>
-                          {mock.badge && (
-                            <span className="wl-exam-status-chip" style={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', background: 'rgba(220,38,38,0.1)', color: '#dc2626', border: '1px solid rgba(220,38,38,0.25)', borderRadius: 4, padding: '2px 6px' }}>
-                              {mock.badge}
-                            </span>
-                          )}
-                          {mock.free ? (
-                            <span className="wl-mock-card__tag wl-mock-card__tag--free">Gratis</span>
-                          ) : (
-                            <span className="wl-mock-card__tag wl-mock-card__tag--pro">Pro</span>
-                          )}
-                        </div>
-                      </div>
-                      <h3 className="wl-mock-card__title">{mock.title}</h3>
-                      <p className="wl-mock-card__sub">{mock.subtitle}</p>
-                      <div className="wl-mock-card__stats">
-                        <span>{mock.parts} {mock.parts === 1 ? 'parte' : 'partes'}</span>
-                        <span>·</span>
-                        <span>{mock.questions} preguntas</span>
-                      </div>
-                      {mock.free ? (
-                        <div style={{ display: 'flex', gap: '.5rem', flexWrap: 'wrap' }}>
-                          <Link href={mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`} className="wl-mock-card__cta btn btn-sm">Modo examen →</Link>
-                          {exam.slug === 'icfes' && hasGuidedMock(mock.id) && <Link href={`/examenes/icfes/practica/${mock.id}/guiado`} className="btn btn-sm btn-ghost">Modo guiado</Link>}
-                        </div>
-                      ) : (
-                        <button type="button" className="wl-mock-card__cta btn btn-sm btn-ghost" disabled>
-                          🔒 Suscríbete para acceder
-                        </button>
-                      )}
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
+            {renderCards(group.mocks.slice(0, INITIAL_VISIBLE_MOCKS))}
+            {group.mocks.length > INITIAL_VISIBLE_MOCKS ? (
+              <details className="wl-mock-more">
+                <summary>Ver {group.mocks.length - INITIAL_VISIBLE_MOCKS} prácticas más</summary>
+                {renderCards(group.mocks.slice(INITIAL_VISIBLE_MOCKS))}
+              </details>
+            ) : null}
           </div>
         ))}
 
         {/* Subscription CTA */}
         {paidMocks.length > 0 && (
-          <motion.div
-            className="wl-sub-banner"
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
+          <div className="wl-sub-banner">
             <div>
               <h3 className="wl-sub-banner__title">Desbloquea los {paidMocks.length} simulacros restantes</h3>
               <p className="wl-sub-banner__sub">Acceso completo a todos los mocks, corrección con IA y seguimiento de progreso.</p>
@@ -142,7 +127,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
               target="_blank" rel="noopener noreferrer"
               className="btn"
             >Hablar con WeLearn <span className="arrow">→</span></a>
-          </motion.div>
+          </div>
         )}
       </div>
     </section>

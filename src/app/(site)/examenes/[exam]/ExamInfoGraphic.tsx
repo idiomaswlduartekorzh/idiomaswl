@@ -1,233 +1,134 @@
-'use client';
-
-import { motion, type Variants } from 'framer-motion';
+import type { CSSProperties } from 'react';
 import type { Exam } from '@/data/exams';
 
 function SectionArc({ pct, color, size = 72 }: { pct: number; color: string; size?: number }) {
-  const r = size / 2 - 6;
-  const circ = 2 * Math.PI * r;
+  const radius = size / 2 - 6;
+  const circumference = 2 * Math.PI * radius;
   return (
-    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ transform: 'rotate(-90deg)' }}>
-      <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth={5} />
-      <motion.circle
-        cx={size / 2} cy={size / 2} r={r}
-        fill="none" stroke={color} strokeWidth={5}
-        strokeLinecap="round"
-        strokeDasharray={circ}
-        initial={{ strokeDashoffset: circ }}
-        whileInView={{ strokeDashoffset: circ * (1 - pct) }}
-        transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
-        viewport={{ once: true }}
-      />
+    <svg aria-hidden="true" focusable="false" width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ transform: 'rotate(-90deg)' }}>
+      <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke="currentColor" strokeWidth={5} />
+      <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke={color} strokeWidth={5} strokeLinecap="round" strokeDasharray={circumference} strokeDashoffset={circumference * (1 - pct)} />
     </svg>
   );
 }
 
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  show: (i: number) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } }),
-};
-
-interface Props { exam: Exam }
-
-export default function ExamInfoGraphic({ exam }: Props) {
+function examVocabulary(exam: Exam) {
   const isSat = exam.slug === 'sat';
-  const totalMins = exam.sections.reduce((acc, s) => {
-    const m = parseInt(String(s.time));
-    return acc + (isNaN(m) ? 0 : m);
+  const isIcfes = exam.slug === 'icfes';
+  const isToefl = exam.slug === 'toefl';
+  return {
+    title: isToefl
+      ? 'Simulacros TOEFL iBT 2026'
+      : isSat
+        ? 'SAT digital: guía y simulacro adaptativo'
+        : isIcfes
+          ? 'ICFES Saber 11: Inglés'
+          : exam.name,
+    sectionLabel: isIcfes ? 'Partes' : isSat ? 'Módulos' : 'Secciones',
+    questionLabel: isToefl ? 'Ítems base' : exam.slug === 'celpe-bras' ? 'Tareas' : 'Preguntas',
+    durationLabel: isIcfes ? 'Sesión completa' : 'Duración',
+  };
+}
+
+export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Exam; hasPodcast?: boolean }) {
+  const vocabulary = examVocabulary(exam);
+  const totalMins = exam.sections.reduce((total, section) => {
+    const minutes = Number.parseInt(String(section.time), 10);
+    return total + (Number.isNaN(minutes) ? 0 : minutes);
   }, 0);
   const [scoreMin = '0', scoreMaxPart = exam.scoreRange] = exam.scoreRange.split('–');
   const scoreMax = scoreMaxPart.trim().match(/^[\d.]+/)?.[0] ?? scoreMaxPart.trim();
+  const levelDenominator = Math.max((exam.levels?.length ?? 1) - 1, 1);
+  const stats = [
+    { label: vocabulary.sectionLabel, value: String(exam.sections.length) },
+    { label: vocabulary.questionLabel, value: exam.slug === 'toefl' ? String(exam.totalQuestions).replace(/\s*ítems base$/i, '') : String(exam.totalQuestions) },
+    { label: vocabulary.durationLabel, value: exam.totalTime },
+    { label: 'Puntaje', value: exam.scoreRange },
+  ];
 
   return (
     <div className="wl-exam-info-graphic">
-      {/* ── Hero dark header ── */}
-      <div
-        className="wl-exam-hero"
-        style={{ '--exam-color': exam.color, '--exam-color-dark': exam.colorDark } as React.CSSProperties}
-      >
+      <section id="resumen" className="wl-exam-hero" aria-labelledby="exam-title">
         <div className="wrap">
-          <motion.p
-            className="wl-exam-hero__eyebrow"
-            initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
-          >
-            {exam.flag} {exam.language}
-          </motion.p>
-          <motion.h1
-            className="wl-exam-hero__title"
-            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.1 }}
-          >
-            {exam.slug === 'toefl'
-              ? 'Simulacros TOEFL iBT 2026'
-              : isSat
-                ? 'SAT digital: guía y simulacro adaptativo'
-                : exam.name}
-          </motion.h1>
-          <motion.p
-            className="wl-exam-hero__sub"
-            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            {exam.tagline}
-          </motion.p>
-          <motion.p
-            className="wl-exam-hero__desc"
-            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.28 }}
-          >
-            {exam.description}
-          </motion.p>
+          <p className="wl-exam-hero__eyebrow"><span aria-hidden="true">{exam.flag}</span> {exam.language}</p>
+          <h1 id="exam-title" className="wl-exam-hero__title">{vocabulary.title}</h1>
+          <p className="wl-exam-hero__sub">{exam.tagline}</p>
+          <p className="wl-exam-hero__desc">{exam.description}</p>
 
-          {exam.slug === 'toefl' ? (
-            <motion.p
-              initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.32 }}
-              style={{ margin: '1.25rem 0 0' }}
-            >
-              <a href="#simulacros" className="btn">Elegir uno de los 20 simulacros →</a>
-            </motion.p>
-          ) : null}
+          <div className="wl-exam-hero__actions">
+            <a href="#practica" className="btn">Ver prácticas <span aria-hidden="true">→</span></a>
+            {hasPodcast ? <a href="#podcasts-del-examen" className="btn btn-ghost">Escuchar guía</a> : null}
+          </div>
 
-          {/* Key stat pills */}
-          <motion.div
-            className="wl-exam-hero__pills"
-            initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.35 }}
-          >
-            {[
-              { label: isSat ? 'Módulos' : 'Secciones', value: String(exam.sections.length) },
-              { label: 'Preguntas', value: String(exam.totalQuestions) },
-              { label: 'Duración', value: exam.totalTime },
-              { label: 'Puntaje', value: exam.scoreRange },
-            ].map(p => (
-              <div key={p.label} className="wl-exam-hero__pill">
-                <span className="wl-exam-hero__pill-val">{p.value}</span>
-                <span className="wl-exam-hero__pill-lbl">{p.label}</span>
+          <dl className="wl-exam-hero__pills" aria-label={`Datos principales de ${exam.name}`}>
+            {stats.map((stat) => (
+              <div key={stat.label} className="wl-exam-hero__pill">
+                <dd className="wl-exam-hero__pill-val">{stat.value}</dd>
+                <dt className="wl-exam-hero__pill-lbl">{stat.label}</dt>
               </div>
             ))}
-          </motion.div>
+          </dl>
         </div>
-      </div>
+      </section>
 
-      {/* ── Section breakdown ── */}
-      <section className="wl-section" style={{ background: 'var(--ink-bg)', color: 'var(--wl-on-inverse, #fff)' }}>
+      <section id="estructura" className="wl-section wl-exam-structure" aria-labelledby="exam-structure-title">
         <div className="wrap">
-          <motion.p
-            className="eyebrow wl-exam-readable-accent"
-            style={{ color: exam.color, marginBottom: '0.5rem' }}
-            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
-          >
-            <span className="wl-exam-readable-accent-bg" style={{ display: 'inline-block', height: 1, width: 28, background: exam.color, verticalAlign: 'middle', marginRight: 12 }} />
-            Estructura del examen
-          </motion.p>
-          <motion.h2
-            style={{ fontSize: '1.75rem', fontWeight: 700, letterSpacing: '-0.03em', margin: '0 0 2.5rem', color: '#fff' }}
-            initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-          >
-            {exam.sections.length} {isSat ? 'módulos' : 'secciones'} · {exam.totalTime} · {exam.scoreRange} {exam.scoreName}
-          </motion.h2>
+          <p className="eyebrow wl-exam-readable-accent"><span className="ink-line" aria-hidden="true" />Mapa del examen</p>
+          <h2 id="exam-structure-title">{exam.sections.length} {vocabulary.sectionLabel.toLocaleLowerCase('es')} · {exam.totalTime} · {exam.scoreRange} {exam.scoreName}</h2>
 
           <div className="wl-section-grid">
-            {exam.sections.map((sec, i) => {
-              const pct = totalMins > 0 ? parseInt(sec.time) / totalMins : 0.25;
+            {exam.sections.map((section) => {
+              const minutes = Number.parseInt(String(section.time), 10);
+              const pct = totalMins > 0 && !Number.isNaN(minutes) ? minutes / totalMins : 0.25;
               return (
-                <motion.article
-                  key={sec.name}
-                  className="wl-section-card"
-                  custom={i}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, margin: '-40px' }}
-                >
+                <article key={section.name} className="wl-section-card">
                   <div className="wl-section-card__top">
                     <div className="wl-section-card__arc">
-                      <SectionArc pct={Math.max(pct, 0.15)} color={sec.color} size={64} />
-                      <span className="wl-section-card__icon">{sec.icon}</span>
+                      <SectionArc pct={Math.min(Math.max(pct, 0.15), 1)} color={section.color} size={64} />
+                      <span className="wl-section-card__icon" aria-hidden="true">{section.icon}</span>
                     </div>
-                    <div>
-                      <h3 className="wl-section-card__name">{sec.name}</h3>
+                    <div className="wl-section-card__copy">
+                      <h3 className="wl-section-card__name">{section.name}</h3>
                       <div className="wl-section-card__meta">
-                        <span>{sec.time}</span>
-                        <span>·</span>
-                        <span>{sec.questions} {exam.slug === 'toefl' ? 'ítems base' : typeof sec.questions === 'number' && sec.questions > 2 ? 'preguntas' : 'tareas'}</span>
+                        <span>{section.time}</span><span aria-hidden="true">·</span>
+                        <span>{section.questions} {exam.slug === 'toefl' ? 'ítems base' : typeof section.questions === 'number' && section.questions > 2 ? 'preguntas' : 'tareas'}</span>
                       </div>
                     </div>
                   </div>
                   <ul className="wl-section-card__types">
-                    {sec.types.map(t => (
-                      <li key={t} style={{ borderLeftColor: sec.color }}>{t}</li>
-                    ))}
+                    {section.types.map((type) => <li key={type} style={{ borderLeftColor: section.color }}>{type}</li>)}
                   </ul>
-                </motion.article>
+                </article>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* ── Score scale ── */}
-      <section className="wl-section" style={{ background: 'var(--bg-2)' }}>
+      <section id="puntaje" className="wl-section wl-exam-score" aria-labelledby="exam-score-title">
         <div className="wrap">
-          <motion.p
-            className="eyebrow" style={{ marginBottom: '0.5rem' }}
-            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
-          >
-            <span className="ink-line" />Escala de puntuación
-          </motion.p>
-          <motion.h2
-            style={{ fontSize: '1.6rem', fontWeight: 700, letterSpacing: '-0.03em', margin: '0 0 2rem' }}
-            initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-          >
-            {exam.scoreName}: {exam.scoreRange}
-          </motion.h2>
-
-          {/* Score bar */}
+          <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Escala de puntuación</p>
+          <h2 id="exam-score-title">{exam.scoreName}: {exam.scoreRange}</h2>
           <div className="wl-score-bar-wrap">
-            <div className="wl-score-bar">
-              <motion.div
-                className="wl-score-bar__fill"
-                style={{ background: `linear-gradient(90deg, ${exam.colorDark}, ${exam.color})` }}
-                initial={{ scaleX: 0 }}
-                whileInView={{ scaleX: 1 }}
-                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                viewport={{ once: true }}
-              />
-            </div>
+            <div className="wl-score-bar" aria-hidden="true"><div className="wl-score-bar__fill" /></div>
             <div className="wl-score-bar__labels">
               <span>{scoreMin.trim()}</span>
-              {exam.passing && (
-                <span className="wl-exam-readable-accent" style={{ color: exam.color, fontWeight: 600 }}>
-                  {exam.slug === 'toefl' ? 'Requisito: ' : isSat ? 'Referencia: ' : '✓ Aprobado: '}{exam.passing}
-                </span>
-              )}
+              {exam.passing ? <span className="wl-exam-readable-accent">{exam.slug === 'toefl' ? 'Requisito: ' : 'Referencia: '}{exam.passing}</span> : null}
               <span>{scoreMax}</span>
             </div>
           </div>
 
-          {/* Levels */}
-          {exam.levels && (
-            <div className="wl-levels-row">
-              {exam.levels.map((lv, i) => (
-                <motion.div
-                  key={lv}
-                  className="wl-level-chip"
-                  style={{ background: `${exam.color}${Math.round(20 + (i / (exam.levels!.length - 1)) * 80).toString(16).padStart(2, '0')}` }}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.35, delay: i * 0.06 }}
-                  viewport={{ once: true }}
-                >
-                  {lv}
-                </motion.div>
+          {exam.levels ? (
+            <div className="wl-levels-row" aria-label="Niveles reportados">
+              {exam.levels.map((level, index) => (
+                <span key={level} className="wl-level-chip" style={{ '--level-strength': `${Math.round(24 + (index / levelDenominator) * 70)}%` } as CSSProperties}>{level}</span>
               ))}
             </div>
-          )}
+          ) : null}
 
-          {/* Recognized by */}
           <div className="wl-recognized">
-            <p className="eyebrow" style={{ marginBottom: '1rem' }}><span className="ink-line" />Reconocido por</p>
-            {exam.recognized.map(r => (
-              <div key={r} className="wl-recognized__item">
-                <span className="wl-exam-readable-accent" style={{ color: exam.color }}>✓</span> {r}
-              </div>
-            ))}
+            <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Dónde se utiliza</p>
+            {exam.recognized.map((item) => <div key={item} className="wl-recognized__item"><span aria-hidden="true">✓</span>{item}</div>)}
           </div>
         </div>
       </section>

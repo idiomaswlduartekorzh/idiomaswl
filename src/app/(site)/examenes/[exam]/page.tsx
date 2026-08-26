@@ -9,7 +9,7 @@ import ExamCluster from './ExamCluster';
 import { EXAM_GUIDES } from '@/data/examGuides';
 import ExamPodcastShelf from '@/components/practica/ExamPodcastShelf';
 import { getExamPodcasts } from '@/data/practica/exam-podcast-catalog';
-import toeflStyles from './toefl-ios.module.css';
+import styles from './exam-hub.module.css';
 
 export async function generateStaticParams() {
   return Object.keys(EXAMS).map(slug => ({ exam: slug }));
@@ -73,22 +73,41 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   if (!exam) notFound();
   const guide = EXAM_GUIDES[slug];
   const podcasts = getExamPodcasts(slug);
+  const sectionLinks = [
+    { href: '#resumen', label: 'Resumen' },
+    { href: '#estructura', label: 'Estructura' },
+    { href: '#puntaje', label: 'Puntaje' },
+    ...(podcasts.length > 0 ? [{ href: '#podcasts-del-examen', label: 'Podcast' }] : []),
+    { href: '#practica', label: 'Práctica' },
+    ...(guide ? [{ href: '#guia', label: 'Guía' }] : []),
+  ];
 
-  const content = (
-    <>
+  return (
+    <main
+      className={styles.page}
+      style={{ '--exam-accent': exam.color, '--exam-action': exam.colorDark } as React.CSSProperties}
+    >
       <ExamJsonLd exam={exam} guide={guide} />
 
       {/* Breadcrumb */}
-      <div className={slug === 'toefl' ? toeflStyles.breadcrumbBar : undefined} style={{ background: 'var(--bg-2)', borderBottom: '1px solid var(--line-soft)', padding: '0.6rem 0' }}>
-        <div className="wrap" style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
-          <Link href="/examenes" style={{ color: 'var(--muted)' }}>Exámenes</Link>
-          <span>›</span>
-          <span style={{ color: 'var(--ink)' }}>{exam.name}</span>
+      <div className={styles.breadcrumbBar}>
+        <div className={`wrap ${styles.breadcrumb}`}>
+          <Link href="/examenes">Exámenes</Link>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">{exam.name}</span>
         </div>
       </div>
 
-      {/* Animated infographic */}
-      <ExamInfoGraphic exam={exam} />
+      <nav className={styles.localNav} aria-label={`Secciones de ${exam.name}`}>
+        <div className={`wrap ${styles.localNavInner}`}>
+          <strong>{exam.name}</strong>
+          <div>
+            {sectionLinks.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
+          </div>
+        </div>
+      </nav>
+
+      <ExamInfoGraphic exam={exam} hasPodcast={podcasts.length > 0} />
 
       {podcasts.length > 0 ? (
         <ExamPodcastShelf
@@ -107,9 +126,11 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
       {slug === 'sat' && <ExamCluster accent={exam.color} />}
 
       {/* ── Guía de contenido (solo los exámenes que ya la tienen escrita) ── */}
-      {guide && <ExamGuideBlock guide={guide} examName={exam.name} accent={exam.color} />}
-    </>
+      {guide && (
+        <div id="guia" className={styles.anchorTarget}>
+          <ExamGuideBlock guide={guide} examName={exam.name} accent={exam.colorDark} />
+        </div>
+      )}
+    </main>
   );
-
-  return slug === 'toefl' ? <div className={toeflStyles.page}>{content}</div> : content;
 }
