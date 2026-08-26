@@ -49,7 +49,7 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
   return (
     <div className="wl-exam-info-graphic">
       <section id="resumen" className="wl-exam-hero" aria-labelledby="exam-title">
-        <div className="wrap">
+        <div className="wrap wl-hub-panel wl-hub-panel--hero">
           <p className="wl-exam-hero__eyebrow"><span aria-hidden="true">{exam.flag}</span> {exam.language}</p>
           <h1 id="exam-title" className="wl-exam-hero__title">{vocabulary.title}</h1>
           <p className="wl-exam-hero__sub">{exam.tagline}</p>
@@ -72,9 +72,11 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
       </section>
 
       <section id="estructura" className="wl-section wl-exam-structure" aria-labelledby="exam-structure-title">
-        <div className="wrap">
-          <p className="eyebrow wl-exam-readable-accent"><span className="ink-line" aria-hidden="true" />Mapa del examen</p>
-          <h2 id="exam-structure-title">{exam.sections.length} {vocabulary.sectionLabel.toLocaleLowerCase('es')} · {exam.totalTime} · {exam.scoreRange} {exam.scoreName}</h2>
+        <div className="wrap wl-hub-panel">
+          <header className="wl-hub-heading">
+            <p className="eyebrow wl-exam-readable-accent"><span className="ink-line" aria-hidden="true" />Mapa del examen</p>
+            <h2 id="exam-structure-title">{exam.sections.length} {vocabulary.sectionLabel.toLocaleLowerCase('es')} · {exam.totalTime} · {exam.scoreRange} {exam.scoreName}</h2>
+          </header>
 
           <div className="wl-section-grid">
             {exam.sections.map((section) => {
@@ -106,9 +108,11 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
       </section>
 
       <section id="puntaje" className="wl-section wl-exam-score" aria-labelledby="exam-score-title">
-        <div className="wrap">
-          <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Escala de puntuación</p>
-          <h2 id="exam-score-title">{exam.scoreName}: {exam.scoreRange}</h2>
+        <div className="wrap wl-hub-panel">
+          <header className="wl-hub-heading">
+            <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Escala de puntuación</p>
+            <h2 id="exam-score-title">{exam.scoreName}: {exam.scoreRange}</h2>
+          </header>
           <div className="wl-score-bar-wrap">
             <div className="wl-score-bar" aria-hidden="true"><div className="wl-score-bar__fill" /></div>
             <div className="wl-score-bar__labels">

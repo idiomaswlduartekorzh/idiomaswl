@@ -1,13 +1,13 @@
 export type PodcastLibraryEpisode = {
   id: string;
   slug: string;
-  examSlug: 'ielts' | 'toefl' | 'icfes' | 'cambridge-b2' | 'sat';
+  examSlug: 'ielts' | 'toefl' | 'icfes' | 'cambridge-b2' | 'sat' | 'topik';
   title: string;
   description: string;
   duration: string;
   durationIso: string;
   language: 'English' | 'Español';
-  collection: 'IELTS' | 'TOEFL' | 'ICFES' | 'Cambridge B2' | 'SAT';
+  collection: 'IELTS' | 'TOEFL' | 'ICFES' | 'Cambridge B2' | 'SAT' | 'TOPIK';
   href: string;
   hubHref: string;
   audioSrc: string;
@@ -125,5 +125,20 @@ export const PODCAST_LIBRARY: readonly PodcastLibraryEpisode[] = [
     hubHref: '/examenes/sat',
     audioSrc: '/audio/sat/strategy-map/strategic-map-for-the-digital-sat.mp3?v=20260823',
     accent: '#d06b23',
+  },
+  {
+    id: 'topik-i-strategy-map',
+    slug: 'estrategias-para-aprobar-el-topik-i',
+    examSlug: 'topik',
+    title: 'TOPIK I sin misterio: estrategias para aprobar',
+    description: 'Una guía en español para entender el TOPIK I, entrenar 듣기 y 읽기 y convertir cada simulacro en un plan concreto.',
+    duration: '23:42',
+    durationIso: 'PT23M42S',
+    language: 'Español',
+    collection: 'TOPIK',
+    href: '/examenes/topik/podcast/estrategias-para-aprobar-el-topik-i',
+    hubHref: '/examenes/topik',
+    audioSrc: '/audio/topik/strategy-map/estrategias-para-aprobar-el-topik-i.mp3?v=20260825',
+    accent: '#003478',
   },
 ] as const;

@@ -40,6 +40,8 @@ expectMarkers(infographic, 'ExamInfoGraphic', [
   'aria-hidden="true"',
   'href="#practica"',
   'hasPodcast',
+  'wl-hub-panel',
+  'wl-hub-heading',
 ]);
 expect(!infographic.includes('framer-motion'), 'El contenido crítico del hub no puede depender de Framer Motion para ser visible.');
 expect(!infographic.includes('initial={{ opacity: 0'), 'El hero no puede renderizar contenido crítico inicialmente invisible.');
@@ -51,6 +53,8 @@ expectMarkers(mockGrid, 'MockGrid', [
   '<details className="wl-mock-more">',
   '<summary>',
   'wl-mock-card__actions',
+  'wl-hub-panel',
+  'wl-hub-heading',
 ]);
 expect(!mockGrid.includes('framer-motion'), 'El catálogo de simulacros no puede ocultarse detrás de animaciones cliente.');
 
@@ -66,8 +70,27 @@ expectMarkers(styles, 'Sistema visual de hubs', [
   'grid-template-columns: repeat(2',
   ':focus-visible',
   '@media (prefers-reduced-motion: reduce)',
+  '.wl-hub-panel',
+  '.wl-hub-heading',
+  '.wl-exam-guide__panel',
 ]);
 expect(!styles.includes('transition: all'), 'El sistema visual no puede usar transition: all.');
+
+const podcastShelf = read('src/components/practica/ExamPodcastShelf.tsx');
+expectMarkers(podcastShelf, 'Estantería de podcast', ['wl-hub-panel', 'wl-hub-heading']);
+
+const guide = read('src/app/(site)/examenes/[exam]/ExamGuide.tsx');
+expectMarkers(guide, 'Guía editorial', ['wl-hub-panel', 'wl-hub-heading', 'wl-exam-guide__body']);
+
+const cluster = read('src/app/(site)/examenes/[exam]/ExamCluster.tsx');
+expectMarkers(cluster, 'Clúster editorial', ['wl-hub-panel', 'wl-hub-heading', 'wl-exam-cluster__group']);
+
+const podcastLibrary = read('src/data/practica/podcast-library.ts');
+const podcastCatalog = read('src/data/practica/exam-podcast-catalog.ts');
+expectMarkers(podcastLibrary, 'Biblioteca de podcasts', ['topik-i-strategy-map', "examSlug: 'topik'"]);
+expectMarkers(podcastCatalog, 'Catálogo editorial de podcasts', ['TOPIK_I_STRATEGY_PODCAST', "byId('topik-i-strategy-map')"]);
+expect(exists('src/data/practica/podcasts/estrategias-para-aprobar-el-topik-i.ts'), 'Faltan las notas revisadas del podcast TOPIK.');
+expect(exists('public/audio/topik/strategy-map/estrategias-para-aprobar-el-topik-i.mp3'), 'Falta el audio público del podcast TOPIK.');
 
 const jsonLd = read('src/app/(site)/examenes/[exam]/ExamJsonLd.tsx');
 expectMarkers(jsonLd, 'SEO de hubs', ["'@type': 'BreadcrumbList'", "'@type': 'LearningResource'", 'isAccessibleForFree']);

@@ -15,7 +15,7 @@ La página del episodio contiene el reproductor, una descripción extensa, objet
 `src/data/practica/exam-podcast-catalog.ts` es la fuente de verdad editorial. Amplía el registro breve de `podcast-library.ts` y alimenta:
 
 - la estantería compacta que aparece en los hubs de examen;
-- las siete páginas editoriales de episodio;
+- las ocho páginas editoriales de episodio;
 - metadatos, JSON-LD y parámetros estáticos;
 - el sitemap;
 - enlaces del índice `/podcasts`.
@@ -26,13 +26,13 @@ El audio y las notas no se duplican. El catálogo referencia los MP3 y módulos 
 
 - IELTS conserva su jerarquía limpia y muestra tres tarjetas de audio entre la elección de modalidad y las rutas de habilidad.
 - TOEFL reemplaza el bloque editorial gigante y duplicado por una estantería compacta.
-- Los hubs de TOEFL, ICFES, Cambridge B2, SAT e IELTS muestran únicamente el resumen pertinente y enlazan a la página completa.
+- Los hubs de TOEFL, ICFES, Cambridge B2, SAT, TOPIK e IELTS muestran únicamente el resumen pertinente y enlazan a la página completa.
 - Las páginas específicas de IELTS Reading, Task 1 y Task 2 conservan su orientación en contexto y añaden un enlace a la URL editorial canónica.
 - `/herramientas` enlaza a la biblioteca completa como utilidad abierta.
 
 ## Protección para despliegues
 
-`config/production-baseline.json` protege el catálogo, el componente de hub, la ruta dinámica, sus estilos y las siete URLs públicas. El sitemap deriva las URLs del mismo catálogo. Un despliegue que elimine cualquiera de estos elementos debe fallar antes de llegar a producción.
+`config/production-baseline.json` protege el catálogo, el componente de hub, la ruta dinámica, sus estilos y las ocho URLs públicas. El sitemap deriva las URLs del mismo catálogo. Un despliegue que elimine cualquiera de estos elementos debe fallar antes de llegar a producción.
 
 Antes de integrar una rama:
 
@@ -45,4 +45,4 @@ npx tsc --noEmit
 npm run build
 ```
 
-Después del despliegue se deben probar los cinco hubs de examen, `/podcasts`, `/herramientas`, las siete páginas editoriales y los siete activos de audio.
+Después del despliegue se deben probar los seis hubs de examen, `/podcasts`, `/herramientas`, las ocho páginas editoriales y los ocho activos de audio.

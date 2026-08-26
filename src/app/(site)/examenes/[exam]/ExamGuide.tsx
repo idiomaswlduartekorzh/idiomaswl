@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import type { ExamGuide } from '@/data/examGuides';
 
 /**
@@ -24,92 +25,76 @@ export default function ExamGuideBlock({
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
 
-      <section className="wl-exam-guide" style={{ padding: '3.5rem 1.25rem', background: 'var(--bg)' }}>
-        <div style={{ maxWidth: 760, margin: '0 auto' }}>
+      <section
+        className="wl-exam-guide"
+        style={{ '--guide-accent': accent } as CSSProperties}
+        aria-labelledby="exam-guide-title"
+      >
+        <div className="wrap wl-hub-panel wl-exam-guide__panel">
+          <header className="wl-hub-heading wl-exam-guide__heading">
+            <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Guía de preparación</p>
+            <h2 id="exam-guide-title">Lo que necesitas saber sobre {examName}</h2>
+            <p>Información revisada, preguntas frecuentes y rutas concretas para continuar.</p>
+          </header>
+          <div className="wl-exam-guide__body">
 
           {/* Respuesta directa — lo primero que lee una persona y lo que citan los motores de IA */}
           <p
-            style={{
-              fontSize: '1.12rem', lineHeight: 1.65, color: 'var(--ink)',
-              borderLeft: `3px solid ${accent}`, paddingLeft: '1.1rem', marginBottom: '2.75rem',
-            }}
+            className="wl-exam-guide__lead"
             dangerouslySetInnerHTML={{ __html: guide.lead }}
           />
 
-          <p style={{ marginTop: '-2rem', marginBottom: '2.5rem', fontSize: '0.8rem', color: 'var(--muted)' }}>
+          <p className="wl-exam-guide__reviewed">
             Revisado por el equipo académico de Idiomas WeLearn · Actualizado {guide.checked}
           </p>
 
           {guide.sections.map(sec => (
-            <div key={sec.h} style={{ marginBottom: '2.5rem' }}>
-              <h2 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.6rem)', fontWeight: 800, lineHeight: 1.25, marginBottom: '0.9rem' }}>
-                {sec.h}
-              </h2>
+            <section key={sec.h} className="wl-exam-guide__section">
+              <h3>{sec.h}</h3>
               {sec.body.map((p, i) => (
                 <p
                   key={i}
-                  style={{ fontSize: '1rem', lineHeight: 1.7, color: 'var(--muted)', marginBottom: '0.85rem' }}
                   dangerouslySetInnerHTML={{ __html: p }}
                 />
               ))}
-            </div>
+            </section>
           ))}
 
           {guide.related && guide.related.length > 0 && (
-            <div style={{ marginTop: '3rem' }}>
-              <h2 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.6rem)', fontWeight: 800, marginBottom: '0.5rem' }}>
-                Sigue por aquí
-              </h2>
-              <p style={{ fontSize: '0.95rem', color: 'var(--muted)', marginBottom: '1.1rem', lineHeight: 1.6 }}>
+            <section className="wl-exam-guide__related">
+              <h3>Sigue por aquí</h3>
+              <p>
                 El simulacro te dice dónde estás. Esto es lo que te mueve de sitio.
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '0.7rem' }}>
+              <div>
                 {guide.related.map(r => (
-                  <Link
-                    key={r.href}
-                    href={r.href}
-                    style={{
-                      display: 'block', padding: '0.9rem 1.05rem', borderRadius: 10,
-                      border: '1px solid var(--line-soft)', background: 'var(--bg-2)',
-                      textDecoration: 'none', borderLeft: `3px solid ${accent}`,
-                    }}
-                  >
-                    <strong style={{ display: 'block', fontSize: '0.93rem', color: 'var(--ink)', marginBottom: 2 }}>
-                      {r.label}
-                    </strong>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.45 }}>{r.note}</span>
+                  <Link key={r.href} href={r.href}>
+                    <strong>{r.label}</strong>
+                    <span>{r.note}</span>
                   </Link>
                 ))}
               </div>
-            </div>
+            </section>
           )}
 
-          <h2 style={{ fontSize: 'clamp(1.35rem, 3.2vw, 1.75rem)', fontWeight: 900, marginTop: '3rem', marginBottom: '1.25rem' }}>
-            Preguntas frecuentes sobre el {examName}
-          </h2>
+          <section className="wl-exam-guide__faq">
+            <h3>Preguntas frecuentes sobre el {examName}</h3>
+            <div>
+              {guide.faqs.map(f => (
+                <details key={f.q}>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
 
-          <div style={{ display: 'grid', gap: '0.75rem' }}>
-            {guide.faqs.map(f => (
-              <details
-                key={f.q}
-                style={{ border: '1px solid var(--line-soft)', borderRadius: 12, padding: '1rem 1.15rem', background: 'var(--bg-2)' }}
-              >
-                <summary style={{ fontWeight: 700, fontSize: '0.97rem', cursor: 'pointer', lineHeight: 1.45 }}>
-                  {f.q}
-                </summary>
-                <p style={{ marginTop: '0.7rem', fontSize: '0.95rem', lineHeight: 1.65, color: 'var(--muted)' }}>
-                  {f.a}
-                </p>
-              </details>
-            ))}
-          </div>
-
-          <div style={{ marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--line-soft)' }}>
-            <p style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+          <footer className="wl-exam-guide__sources">
+            <p>
               Datos verificados en {guide.checked} contra la fuente oficial:{' '}
               {guide.sources.map((s, i) => (
                 <span key={s.url}>
-                  <a href={s.url} target="_blank" rel="noopener noreferrer" style={{ color: accent, fontWeight: 600 }}>
+                  <a href={s.url} target="_blank" rel="noopener noreferrer">
                     {s.label}
                   </a>
                   {i < guide.sources.length - 1 ? ' · ' : '.'}
@@ -118,17 +103,18 @@ export default function ExamGuideBlock({
               Los requisitos de cada universidad, empleador o proceso migratorio cambian: confirma
               siempre el tuyo antes de pagar un examen.
             </p>
-            <p style={{ fontSize: '0.9rem', marginTop: '1rem' }}>
-              <Link href="/clases-de-ingles" style={{ color: accent, fontWeight: 700 }}>
+            <p>
+              <Link href="/clases-de-ingles">
                 Ver cómo preparamos el inglés en WeLearn
               </Link>
               {' · '}
-              <Link href="/clases-de-ingles-bucaramanga" style={{ color: accent, fontWeight: 700 }}>
+              <Link href="/clases-de-ingles-bucaramanga">
                 Clases presenciales en Bucaramanga
               </Link>
             </p>
-          </div>
+          </footer>
 
+          </div>
         </div>
       </section>
     </>

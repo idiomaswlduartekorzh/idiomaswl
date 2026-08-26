@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import { SAT_GUIDES, SAT_GUIDE_GROUPS } from '@/data/satGuides';
 import { SAT_MARCA } from '@/data/sat-marca';
 
@@ -16,26 +17,24 @@ import { SAT_MARCA } from '@/data/sat-marca';
  */
 export default function ExamCluster({ accent }: { accent: string }) {
   return (
-    <section style={{ padding: '3rem 1.25rem 1rem', background: 'var(--bg)' }}>
-      <div style={{ maxWidth: 900, margin: '0 auto' }}>
-        <h2 style={{ fontSize: 'clamp(1.4rem, 3.4vw, 1.9rem)', fontWeight: 900, letterSpacing: '-0.01em', marginBottom: '0.5rem' }}>
-          La guía completa del SAT, en español
-        </h2>
-        <p style={{ fontSize: '0.98rem', lineHeight: 1.6, color: 'var(--muted)', marginBottom: '2rem', maxWidth: 620 }}>
-          Diez páginas escritas para quien presenta el SAT desde Latinoamérica. Lo que casi
-          todo lo demás explica en inglés: no solo qué preguntan, sino cómo se responde.
-        </p>
+    <section className="wl-exam-cluster" style={{ '--cluster-accent': accent } as CSSProperties}>
+      <div className="wrap wl-hub-panel">
+        <header className="wl-hub-heading">
+          <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Ruta de preparación</p>
+          <h2>La guía completa del SAT, en español</h2>
+          <p>Diez páginas para quien presenta el SAT desde Latinoamérica: no solo qué preguntan, sino cómo se responde.</p>
+        </header>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '0.7rem', marginBottom: '2.25rem' }}>
+        <div className="wl-exam-cluster__stats">
           {[
             ['10', 'guías en español'],
             ['54', 'preguntas adaptativas'],
             ['64 min', 'tiempo de práctica'],
             ['4', 'dominios explicados'],
           ].map(([value, label]) => (
-            <div key={label} style={{ padding: '0.9rem 1rem', border: '1px solid var(--line-soft)', borderRadius: 10, background: 'var(--bg-2)' }}>
-              <strong style={{ display: 'block', color: accent, fontSize: '1.2rem' }}>{value}</strong>
-              <span style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>{label}</span>
+            <div key={label}>
+              <strong>{value}</strong>
+              <span>{label}</span>
             </div>
           ))}
         </div>
@@ -44,40 +43,22 @@ export default function ExamCluster({ accent }: { accent: string }) {
           const paginas = SAT_GUIDES.filter(g => g.group === grupo.key);
           if (!paginas.length) return null;
           return (
-            <div key={grupo.key} style={{ marginBottom: '2.25rem' }}>
-              <h3 style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: accent, fontWeight: 700, marginBottom: 4 }}>
-                {grupo.label}
-              </h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--muted)', marginBottom: '0.9rem', lineHeight: 1.5 }}>
-                {grupo.note}
-              </p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(255px, 1fr))', gap: '0.7rem' }}>
+            <section key={grupo.key} className="wl-exam-cluster__group">
+              <h3>{grupo.label}</h3>
+              <p>{grupo.note}</p>
+              <div>
                 {paginas.map(g => (
-                  <Link
-                    key={g.slug}
-                    href={`/examenes/sat/guia/${g.slug}`}
-                    style={{
-                      display: 'block', padding: '0.95rem 1.1rem', borderRadius: 10,
-                      border: '1px solid var(--line-soft)', background: 'var(--bg-2)',
-                      textDecoration: 'none', borderLeft: `3px solid ${accent}`,
-                    }}
-                  >
-                    <strong style={{ display: 'block', fontSize: '0.95rem', color: 'var(--ink)', marginBottom: 3, lineHeight: 1.3 }}>
-                      {g.h1}
-                    </strong>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.45 }}>
-                      {g.description}
-                    </span>
+                  <Link key={g.slug} href={`/examenes/sat/guia/${g.slug}`}>
+                    <strong>{g.h1}</strong>
+                    <span>{g.description}</span>
                   </Link>
                 ))}
               </div>
-            </div>
+            </section>
           );
         })}
 
-        <p style={{ fontSize: '0.78rem', color: 'var(--muted)', lineHeight: 1.55, marginTop: '0.5rem', opacity: 0.85 }}>
-          {SAT_MARCA}
-        </p>
+        <p className="wl-exam-cluster__mark">{SAT_MARCA}</p>
       </div>
     </section>
   );

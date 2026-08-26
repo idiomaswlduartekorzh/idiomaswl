@@ -50,8 +50,8 @@ export default function ExamPodcastShelf({
 
   return (
     <section id={id} className={styles.section} aria-labelledby={`${id}-heading`}>
-      <div className={styles.shell}>
-        <header className={styles.heading}>
+      <div className={`${styles.shell} wl-hub-panel`}>
+        <header className={`${styles.heading} wl-hub-heading`}>
           <div>
             <p className={styles.kicker}><Headphones size={16} aria-hidden="true" /> {eyebrow ?? copy.kicker}</p>
             <h2 id={`${id}-heading`}>{title ?? copy.title}</h2>

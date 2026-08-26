@@ -16,6 +16,10 @@ import {
   DIGITAL_SAT_STRATEGY_MAP_NOTES,
   DIGITAL_SAT_STRATEGY_MAP_PODCAST,
 } from './podcasts/strategic-map-for-the-digital-sat';
+import {
+  TOPIK_I_STRATEGY_NOTES,
+  TOPIK_I_STRATEGY_PODCAST,
+} from './podcasts/estrategias-para-aprobar-el-topik-i';
 import { PODCAST_LIBRARY, type PodcastLibraryEpisode } from './podcast-library';
 
 export type ExamPodcastLink = {
@@ -170,6 +174,20 @@ export const EXAM_PODCASTS: readonly ExamPodcastEpisode[] = [
     ],
     keywords: ['Digital SAT podcast', 'SAT strategy podcast', 'Digital SAT audio guide', 'SAT preparation podcast'],
     locale: 'en',
+  },
+  {
+    ...TOPIK_I_STRATEGY_PODCAST,
+    ...byId('topik-i-strategy-map'),
+    fullDescription: TOPIK_I_STRATEGY_PODCAST.description,
+    notes: TOPIK_I_STRATEGY_NOTES,
+    relatedLinks: [
+      { href: '/examenes/topik/practica/set-1', label: 'Hacer el diagnóstico de lectura' },
+      { href: '/examenes/topik/practica/set-2', label: 'Practicar escucha y lectura' },
+      { href: '/practica/coreano/a1/gramatica', label: 'Reforzar la gramática inicial' },
+      { href: '/blog/topik-1-preparacion-guia-para-principiantes', label: 'Abrir la guía de preparación' },
+    ],
+    keywords: ['podcast TOPIK I', 'estrategias TOPIK I', 'TOPIK español', 'guía de audio TOPIK'],
+    locale: 'es',
   },
 ] as const;
 

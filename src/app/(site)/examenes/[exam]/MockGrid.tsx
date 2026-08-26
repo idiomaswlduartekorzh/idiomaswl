@@ -77,8 +77,8 @@ export default function MockGrid({ exam }: { exam: Exam }) {
 
   return (
     <section className="wl-section wl-exam-practice" id="practica" aria-labelledby="exam-practice-title">
-      <div className="wrap">
-        <div className="wl-exam-practice__heading">
+      <div className="wrap wl-hub-panel">
+        <header className="wl-exam-practice__heading wl-hub-heading">
           <div>
             <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Práctica</p>
             <h2 id="exam-practice-title">
@@ -90,16 +90,16 @@ export default function MockGrid({ exam }: { exam: Exam }) {
               ? `${exam.mocks.length} simulacros · Reading, Listening, Writing y Speaking`
               : `${freeMocks.length} gratis · ${paidMocks.length} con suscripción`}
           </p>
-        </div>
+        </header>
 
         {groups.map((group, groupIndex) => (
           <div key={group.id} className="wl-mock-group" data-later={groupIndex > 0 ? 'true' : 'false'}>
             {exam.slug === 'icfes' && (
-              <div style={{ maxWidth: 760, marginBottom: '1.25rem' }}>
-                <h3 style={{ fontSize: '1.3rem', margin: '0 0 0.4rem', letterSpacing: '-0.02em' }}>{group.title}</h3>
-                <p style={{ color: 'var(--muted)', lineHeight: 1.65, margin: 0 }}>{group.description}</p>
+              <div className="wl-mock-group__heading">
+                <h3>{group.title}</h3>
+                <p>{group.description}</p>
                 {group.id === 'published' && (
-                  <Link href="/practica/icfes-saber-11/examenes" style={{ display: 'inline-block', marginTop: '0.65rem', color: exam.color, fontWeight: 700 }}>
+                  <Link href="/practica/icfes-saber-11/examenes">
                     Ver catálogo organizado y modo guiado →
                   </Link>
                 )}
