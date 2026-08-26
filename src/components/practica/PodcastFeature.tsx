@@ -24,7 +24,7 @@ type PodcastFeatureProps = {
   compact?: boolean;
   accent?: string;
   variant?: 'default' | 'ios';
-  locale?: 'en' | 'es';
+  locale?: 'en' | 'es' | 'ko';
   headingLevel?: 1 | 2;
 };
 
@@ -54,6 +54,19 @@ const COPY = {
     links: 'Continúa desde la guía en audio',
     editorialAria: 'Nota de precisión editorial',
     editorial: 'Revisión editorial',
+  },
+  ko: {
+    eyebrow: '여기서 시작 · 오디오 가이드',
+    duration: '에피소드 길이',
+    orientation: '시험 안내 에피소드 · 한국어',
+    noAutoplay: '자동 재생 없음',
+    play: '재생',
+    fallback: '이 브라우저는 오디오 재생을 지원하지 않습니다.',
+    download: '에피소드 다운로드',
+    outcomes: '이 에피소드를 들은 뒤 할 수 있는 것',
+    links: '오디오 가이드 다음 단계',
+    editorialAria: '편집 검토 안내',
+    editorial: '편집 검토 완료',
   },
 } as const;
 

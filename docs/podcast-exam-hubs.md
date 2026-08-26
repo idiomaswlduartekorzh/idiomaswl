@@ -15,7 +15,7 @@ La página del episodio contiene el reproductor, una descripción extensa, objet
 `src/data/practica/exam-podcast-catalog.ts` es la fuente de verdad editorial. Amplía el registro breve de `podcast-library.ts` y alimenta:
 
 - la estantería compacta que aparece en los hubs de examen;
-- las ocho páginas editoriales de episodio;
+- las nueve páginas editoriales de episodio;
 - metadatos, JSON-LD y parámetros estáticos;
 - el sitemap;
 - enlaces del índice `/podcasts`.
@@ -45,4 +45,4 @@ npx tsc --noEmit
 npm run build
 ```
 
-Después del despliegue se deben probar los seis hubs de examen, `/podcasts`, `/herramientas`, las ocho páginas editoriales y los ocho activos de audio.
+Después del despliegue se deben probar los seis hubs de examen, `/podcasts`, `/herramientas`, las nueve páginas editoriales y los nueve activos de audio.

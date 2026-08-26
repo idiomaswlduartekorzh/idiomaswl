@@ -6,7 +6,7 @@ export type PodcastLibraryEpisode = {
   description: string;
   duration: string;
   durationIso: string;
-  language: 'English' | 'Español';
+  language: 'English' | 'Español' | '한국어';
   collection: 'IELTS' | 'TOEFL' | 'ICFES' | 'Cambridge B2' | 'SAT' | 'TOPIK';
   href: string;
   hubHref: string;
@@ -140,5 +140,20 @@ export const PODCAST_LIBRARY: readonly PodcastLibraryEpisode[] = [
     hubHref: '/examenes/topik',
     audioSrc: '/audio/topik/strategy-map/estrategias-para-aprobar-el-topik-i.mp3?v=20260825',
     accent: '#003478',
+  },
+  {
+    id: 'topik-i-7-day-routine-korean',
+    slug: 'topik-i-7-day-routine-korean',
+    examSlug: 'topik',
+    title: '토픽 I 함정 탈출: 7일 루틴',
+    description: 'PBT와 IBT를 정확히 구분하고 듣기·읽기 오답을 7일 훈련 루프로 바꾸는 한국어 가이드입니다.',
+    duration: '19:40',
+    durationIso: 'PT19M40S',
+    language: '한국어',
+    collection: 'TOPIK',
+    href: '/examenes/topik/podcast/topik-i-7-day-routine-korean',
+    hubHref: '/examenes/topik',
+    audioSrc: '/audio/topik/strategy-map/topik-i-7-day-routine-korean.mp3?v=20260826',
+    accent: '#c8202e',
   },
 ] as const;

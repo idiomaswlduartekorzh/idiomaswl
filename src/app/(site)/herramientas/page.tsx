@@ -53,7 +53,7 @@ const TOOLS: Tool[] = [
     name: 'Podcasts de exámenes',
     tagline:
       'Escucha mapas de estrategia para IELTS, TOEFL, ICFES, Cambridge B2, SAT y TOPIK, con notas editoriales y rutas de práctica.',
-    detail: '8 episodios · 6 exámenes',
+    detail: '8 episodios · 6 exámenes + 1 episodio en coreano',
     color: SKILL_ACCENT.escucha.light,
   },
   {

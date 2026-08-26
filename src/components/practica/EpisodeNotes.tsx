@@ -23,7 +23,7 @@ type EpisodeNotesTone = {
 type EpisodeNotesProps = {
   sections: EpisodeSection[];
   tone?: EpisodeNotesTone;
-  locale?: 'en' | 'es';
+  locale?: 'en' | 'es' | 'ko';
 };
 
 const COPY = {
@@ -40,6 +40,13 @@ const COPY = {
       `${sections} secciones · ${minutes} min de lectura aprox.`,
     intro:
       'El mismo recorrido del audio, resumido por escrito: puedes leerlo en lugar de escuchar, seguirlo mientras suena o volver directamente a la regla que necesitas.',
+  },
+  ko: {
+    title: '이 에피소드의 핵심 내용을 글로 읽기',
+    meta: (sections: number, minutes: number) =>
+      `${sections}개 섹션 · 약 ${minutes}분`,
+    intro:
+      '오디오의 핵심 내용을 글로 정리했습니다. 듣기 전에 구조를 확인하거나, 재생하면서 따라 읽거나, 필요한 규칙만 다시 찾을 수 있습니다.',
   },
 } as const;
 

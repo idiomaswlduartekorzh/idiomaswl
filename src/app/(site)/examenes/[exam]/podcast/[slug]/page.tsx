@@ -24,7 +24,9 @@ export async function generateMetadata({ params }: PodcastPageProps): Promise<Me
   const url = `${BASE}${episode.href}`;
 
   return {
-    title: `${episode.title}: podcast y guía escrita`,
+    title: episode.locale === 'ko'
+      ? `${episode.title}: 팟캐스트와 학습 가이드`
+      : `${episode.title}: podcast y guía escrita`,
     description: episode.fullDescription,
     keywords: [...episode.keywords],
     alternates: { canonical: url },
@@ -39,7 +41,7 @@ export async function generateMetadata({ params }: PodcastPageProps): Promise<Me
       url,
       type: 'article',
       siteName: 'Idiomas WeLearn',
-      locale: episode.locale === 'es' ? 'es_CO' : 'en_US',
+      locale: episode.locale === 'es' ? 'es_CO' : episode.locale === 'ko' ? 'ko_KR' : 'en_US',
       audio: [{ url: `${BASE}${episode.audioSrc}`, type: 'audio/mpeg' }],
     },
     twitter: {
@@ -58,13 +60,40 @@ export default async function ExamPodcastPage({ params }: PodcastPageProps) {
   const url = `${BASE}${episode.href}`;
   const audioUrl = `${BASE}${episode.audioSrc}`;
   const isEnglish = episode.locale === 'en';
+  const isKorean = episode.locale === 'ko';
+  const pageCopy = isKorean
+    ? {
+        exams: '시험',
+        back: `${episode.collection}으로 돌아가기`,
+        nextEyebrow: '듣기에서 의도적인 연습으로',
+        nextTitle: '에피소드에서 멈추지 마세요.',
+        nextDescription: '글로 정리한 핵심 내용을 확인한 뒤, 지금 필요한 판단을 직접 훈련하는 연습으로 이동하세요.',
+        library: '전체 오디오 가이드 보기',
+      }
+    : isEnglish
+      ? {
+          exams: 'Exams',
+          back: `Back to ${episode.collection}`,
+          nextEyebrow: 'From listening to deliberate practice',
+          nextTitle: 'Do not stop at the episode.',
+          nextDescription: 'Use the written companion to name the method, then open the route that trains the exact decision you need.',
+          library: 'Browse the complete audio library',
+        }
+      : {
+          exams: 'Exámenes',
+          back: `Volver a ${episode.collection}`,
+          nextEyebrow: 'De la escucha a la práctica deliberada',
+          nextTitle: 'No te quedes solamente en el episodio.',
+          nextDescription: 'Usa la guía escrita para nombrar el método y abre después la ruta que entrena la decisión exacta que necesitas.',
+          library: 'Ver la biblioteca completa de audio',
+        };
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: isEnglish ? 'Exams' : 'Exámenes', item: `${BASE}/examenes` },
+          { '@type': 'ListItem', position: 1, name: pageCopy.exams, item: `${BASE}/examenes` },
           { '@type': 'ListItem', position: 2, name: episode.collection, item: `${BASE}${episode.hubHref}` },
           { '@type': 'ListItem', position: 3, name: episode.title, item: url },
         ],
@@ -122,14 +151,14 @@ export default async function ExamPodcastPage({ params }: PodcastPageProps) {
 
       <div className={styles.topbar}>
         <nav className={styles.breadcrumb} aria-label="Breadcrumb">
-          <Link href="/examenes">{isEnglish ? 'Exams' : 'Exámenes'}</Link>
+          <Link href="/examenes">{pageCopy.exams}</Link>
           <span aria-hidden="true">/</span>
           <Link href={episode.hubHref}>{episode.collection}</Link>
           <span aria-hidden="true">/</span>
           <span aria-current="page">Podcast</span>
         </nav>
         <Link href={episode.hubHref} className={styles.backLink}>
-          <ArrowLeft size={15} aria-hidden="true" /> {isEnglish ? `Back to ${episode.collection}` : `Volver a ${episode.collection}`}
+          <ArrowLeft size={15} aria-hidden="true" /> {pageCopy.back}
         </Link>
       </div>
 
@@ -146,15 +175,9 @@ export default async function ExamPodcastPage({ params }: PodcastPageProps) {
       <section className={styles.next} aria-labelledby="next-step-heading">
         <div className={styles.nextShell}>
           <div className={styles.nextHeading}>
-            <p><Headphones size={16} aria-hidden="true" /> {isEnglish ? 'From listening to deliberate practice' : 'De la escucha a la práctica deliberada'}</p>
-            <h2 id="next-step-heading">
-              {isEnglish ? 'Do not stop at the episode.' : 'No te quedes solamente en el episodio.'}
-            </h2>
-            <span>
-              {isEnglish
-                ? 'Use the written companion to name the method, then open the route that trains the exact decision you need.'
-                : 'Usa la guía escrita para nombrar el método y abre después la ruta que entrena la decisión exacta que necesitas.'}
-            </span>
+            <p><Headphones size={16} aria-hidden="true" /> {pageCopy.nextEyebrow}</p>
+            <h2 id="next-step-heading">{pageCopy.nextTitle}</h2>
+            <span>{pageCopy.nextDescription}</span>
           </div>
           <div className={styles.nextGrid}>
             {episode.relatedLinks.map((link, index) => (
@@ -167,7 +190,7 @@ export default async function ExamPodcastPage({ params }: PodcastPageProps) {
             ))}
           </div>
           <Link className={styles.libraryLink} href="/podcasts">
-            {isEnglish ? 'Browse the complete audio library' : 'Ver la biblioteca completa de audio'} <ArrowRight size={16} aria-hidden="true" />
+            {pageCopy.library} <ArrowRight size={16} aria-hidden="true" />
           </Link>
         </div>
       </section>

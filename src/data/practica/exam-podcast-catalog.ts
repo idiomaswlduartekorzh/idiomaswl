@@ -20,6 +20,10 @@ import {
   TOPIK_I_STRATEGY_NOTES,
   TOPIK_I_STRATEGY_PODCAST,
 } from './podcasts/estrategias-para-aprobar-el-topik-i';
+import {
+  TOPIK_I_KOREAN_ROUTINE_NOTES,
+  TOPIK_I_KOREAN_ROUTINE_PODCAST,
+} from './podcasts/topik-i-7-day-routine-korean';
 import { PODCAST_LIBRARY, type PodcastLibraryEpisode } from './podcast-library';
 
 export type ExamPodcastLink = {
@@ -36,7 +40,7 @@ export type ExamPodcastEpisode = PodcastLibraryEpisode & {
   notes: EpisodeSection[];
   relatedLinks: readonly ExamPodcastLink[];
   keywords: readonly string[];
-  locale: 'en' | 'es';
+  locale: 'en' | 'es' | 'ko';
 };
 
 const byId = (id: PodcastLibraryEpisode['id']) => {
@@ -188,6 +192,20 @@ export const EXAM_PODCASTS: readonly ExamPodcastEpisode[] = [
     ],
     keywords: ['podcast TOPIK I', 'estrategias TOPIK I', 'TOPIK español', 'guía de audio TOPIK'],
     locale: 'es',
+  },
+  {
+    ...TOPIK_I_KOREAN_ROUTINE_PODCAST,
+    ...byId('topik-i-7-day-routine-korean'),
+    fullDescription: TOPIK_I_KOREAN_ROUTINE_PODCAST.description,
+    notes: TOPIK_I_KOREAN_ROUTINE_NOTES,
+    relatedLinks: [
+      { href: '/examenes/topik/practica/set-1', label: '토픽 I 읽기 진단 시작하기' },
+      { href: '/examenes/topik/practica/set-2', label: '듣기와 읽기 연습하기' },
+      { href: '/practica/coreano/a1/gramatica', label: '초급 한국어 문법 복습하기' },
+      { href: '/blog/topik-1-preparacion-guia-para-principiantes', label: '토픽 I 준비 가이드 보기' },
+    ],
+    keywords: ['TOPIK I 팟캐스트', '토픽 1 공부법', 'TOPIK I 7일 루틴', '토픽 I 듣기 읽기 전략', '한국어능력시험 초급'],
+    locale: 'ko',
   },
 ] as const;
 
