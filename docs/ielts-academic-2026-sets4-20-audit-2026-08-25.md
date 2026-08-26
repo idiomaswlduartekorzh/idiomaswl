@@ -144,12 +144,12 @@ eliminar la antigua deriva en la navegación compartida.
 
 ## Gates pendientes para cerrar el dictamen
 
-1. Aprobar reparto de voces y acentos British, Australian, New Zealand y North American,
-   proveedor, modelo y techo de gasto. El casting propuesto cubre 32 perfiles con 12 voces
-   de multiplicador 1; sigue marcado `pending_owner_approval`. No se ha llamado ninguna API
-   de generación de voz.
-2. Generar primero un piloto aislado del Set 4, ejecutar QA técnica y revisión auditiva
-   humana, y registrar su aceptación. El lote completo permanece bloqueado hasta entonces.
+1. El propietario aprobó el casting de 33 perfiles/12 voces y un piloto Set 4 con techo
+   USD 0,75 y reserva mínima de 3.500 créditos. El piloto se generó fuera de `public/`;
+   la cuenta conserva 7.100 créditos.
+2. El piloto Set 4 pasó QA técnica (27:05, mono 44,1 kHz/64 kbps, -18,48 LUFS,
+   pico -1,64 dBFS) y transcript↔Whisper (`small.en`, WER 2,36 %, completion 27/27).
+   Falta exclusivamente la escucha y aceptación humana antes de liberarlo o generar más sets.
 3. Reemplazar los nueve MP3 4–12 y generar los ocho MP3 13–20 con duración 27–33 min,
    reproducción única, mono 44,1 kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
 4. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
@@ -175,6 +175,7 @@ npm run audit:ielts-academic-2026  # hoy debe terminar BLOCKED sólo en audio
 npm run plan:ielts-audio-2026      # valida plan, hashes y factura mínima; no genera
 npm run audio:ielts-2026 -- --verify-source # valida fuente/casting sin API ni gasto
 npm run audit:ielts-generated-audio -- <dir> # QA del piloto/lote fuera de public/
+npm run audit:ielts-transcript-alignment -- <dir> <set> <whisper.txt>
 npm run test:ielts-academic-2026   # contrato, claves privadas y audio bloqueado
 npm run test:ielts-review          # scoring/review pipeline
 npm run test:ielts-fullstack       # privacidad, presentación, SSR y navegación
@@ -184,5 +185,5 @@ npx next build --webpack
 ```
 
 La salida `BLOCKED` sigue siendo intencional: impide presentar Sets 4–20 como equivalentes
-en Listening hasta que los 17 audios v2 pasen el mismo gate técnico y editorial
-usado en TOEFL.
+en Listening hasta que el piloto obtenga aceptación humana y los 17 audios v2 pasen el mismo
+gate técnico y editorial usado en TOEFL.

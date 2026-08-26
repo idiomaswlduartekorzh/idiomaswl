@@ -1,8 +1,19 @@
 {
   "manifest_sha256": "024680660790cf1ac6e3431f4ad379c09b73e52cb67e2847484606956dbde187",
   "pilot_set": 4,
-  "status": "pending_generation_and_owner_listening_review",
-  "audio_sha256": null,
-  "qa_report_sha256": null,
+  "status": "technical_and_transcript_qa_passed_pending_owner_listening_review",
+  "generated_at": "2026-08-26T00:18:08.562Z",
+  "reassembled_at": "2026-08-26T00:27:12.493Z",
+  "audio_sha256": "4fef56f5678bce1405bfa58cfc4619bf9e81c77a57132ad64173998b37c72ed2",
+  "qa_report_sha256": "c5e624c89d9389a9bda4789548a436fa86897302c045c7dd32a85f7a39fd0630",
+  "transcript_qa_report_sha256": "aa12e01b939d4c7062f354b4714977eb1d1b5bf44653deaaca6140011b286222",
+  "measurements": {
+    "duration_seconds": 1625,
+    "bit_rate": 64003,
+    "integrated_loudness_lufs": -18.48,
+    "true_peak_dbfs": -1.64,
+    "word_error_rate": 0.0236,
+    "completion_evidence_in_order": "27/27"
+  },
   "approved_at": null
 }

@@ -46,6 +46,7 @@ function parseSetSelection(selection) {
 const selectedSetNumbers = parseSetSelection(value('--sets'));
 const fullBatch = has('--all');
 const doGenerate = has('--generate');
+const repairAssembly = has('--reassemble');
 const accountStatus = has('--account');
 const selectedRows = fullBatch
   ? plan.rows
@@ -213,11 +214,20 @@ async function ensureGenerationGate(rows) {
     assert.equal(pilotAcceptance.status, 'accepted_by_owner', 'full generation requires an owner-accepted Set 4 pilot');
     assert.ok(pilotAcceptance.audio_sha256, 'accepted pilot must record its audio SHA-256');
     assert.ok(pilotAcceptance.qa_report_sha256, 'accepted pilot must record its QA report SHA-256');
+    assert.ok(pilotAcceptance.transcript_qa_report_sha256, 'accepted pilot must record its transcript QA report SHA-256');
   }
   const cap = Number(value('--max-usd'));
   assert.ok(Number.isFinite(cap) && cap > 0, 'pass a positive owner-approved --max-usd ceiling');
   const reserve = Number(value('--min-remaining-credits'));
   assert.ok(Number.isFinite(reserve) && reserve >= 0, 'pass --min-remaining-credits');
+  assert.ok(
+    cap <= Number(casting.approval_scope.approved_max_usd_before_tax),
+    `requested USD ceiling ${cap} exceeds owner-approved ${casting.approval_scope.approved_max_usd_before_tax}`,
+  );
+  assert.ok(
+    reserve >= Number(casting.approval_scope.minimum_remaining_credits),
+    `requested reserve ${reserve} is below owner-approved ${casting.approval_scope.minimum_remaining_credits}`,
+  );
   assert.ok(value('--seed-salt'), 'pass a non-empty --seed-salt for reproducible synthesis');
   const bill = invoice(rows, scopeLabel());
   assert.ok(bill.estimatedUsdBeforeTax <= cap, `estimated USD ${bill.estimatedUsdBeforeTax} exceeds approved ceiling ${cap}`);
@@ -263,7 +273,11 @@ function assemble(row, segmentPaths, targetPath) {
     inputArgs.push('-i', segmentPath);
     labels.push(`[${inputIndex}:a]`);
     inputIndex += 1;
-    const seconds = Number(row.segments[index].pauseAfterSeconds ?? 0);
+    const partTransition = row.segments[index + 1]
+      && row.segments[index + 1].part !== row.segments[index].part
+      ? Number(casting.target.silence_between_parts_seconds ?? 0)
+      : 0;
+    const seconds = Number(row.segments[index].pauseAfterSeconds ?? 0) + partTransition;
     if (seconds > 0) {
       inputArgs.push('-f', 'lavfi', '-t', String(seconds), '-i', 'anullsrc=r=44100:cl=mono');
       labels.push(`[${inputIndex}:a]`);
@@ -281,7 +295,7 @@ function assemble(row, segmentPaths, targetPath) {
   if (joined.status !== 0) throw new Error(`assembly failed for ${row.mediaId}: ${joined.stderr}`);
   try {
     const targetI = casting.target.integrated_loudness_lufs;
-    const targetTp = casting.target.max_true_peak_dbfs;
+    const targetTp = casting.target.normalization_true_peak_dbfs ?? casting.target.max_true_peak_dbfs;
     const analysis = spawnSync('ffmpeg', [
       '-hide_banner', '-nostats', '-i', wavPath,
       '-af', `loudnorm=I=${targetI}:LRA=7:TP=${targetTp}:print_format=json`, '-f', 'null', '-',
@@ -296,8 +310,9 @@ function assemble(row, segmentPaths, targetPath) {
       `measured_TP=${measured.input_tp}`, `measured_thresh=${measured.input_thresh}`,
       `offset=${measured.target_offset}`, 'linear=true', 'print_format=summary',
     ].join(':');
+    const masteringFilter = `${filter},apad=whole_dur=${casting.target.minimum_duration_seconds}`;
     const normalized = spawnSync('ffmpeg', [
-      '-y', '-hide_banner', '-loglevel', 'error', '-i', wavPath, '-af', filter,
+      '-y', '-hide_banner', '-loglevel', 'error', '-i', wavPath, '-af', masteringFilter,
       '-vn', '-ar', String(casting.target.final_sample_rate_hz), '-ac', String(casting.target.final_channels),
       '-b:a', casting.target.final_bitrate, normalizedPath,
     ], { encoding: 'utf8' });
@@ -307,6 +322,33 @@ function assemble(row, segmentPaths, targetPath) {
     if (existsSync(wavPath)) unlinkSync(wavPath);
     if (existsSync(normalizedPath)) unlinkSync(normalizedPath);
   }
+}
+
+async function reassemble(rows) {
+  assert.equal(Number(fullBatch) + Number(selectedSetNumbers.length > 0), 1, 'choose exactly one scope: --all or --sets');
+  assert.ok(rows.length > 0, 'reassembly scope is empty');
+  const hydratedRows = await Promise.all(rows.map(hydrateRow));
+  const root = outputDirectory(scopeLabel());
+  const logPath = path.join(root, 'generation-log.json');
+  assert.ok(existsSync(logPath), `missing generation log: ${logPath}`);
+  const log = JSON.parse(readFileSync(logPath, 'utf8'));
+  assert.equal(log.manifestSha256, manifestHash, 'reassembly log belongs to a stale manifest');
+  for (const row of hydratedRows) {
+    const entry = log.files.find(file => file.mediaId === row.mediaId);
+    assert.ok(entry, `generation log has no completed file for ${row.mediaId}`);
+    const segmentsDir = path.join(root, row.setId, '.segments');
+    const segmentPaths = row.segments.map((_, segmentIndex) => (
+      path.join(segmentsDir, `segment-${String(segmentIndex + 1).padStart(3, '0')}.mp3`)
+    ));
+    for (const segmentPath of segmentPaths) assert.ok(isReusableSegment(segmentPath), `missing reusable segment ${segmentPath}`);
+    assemble(row, segmentPaths, entry.path);
+    entry.audioSha256 = sha256(readFileSync(entry.path));
+  }
+  log.updatedAt = new Date().toISOString();
+  log.reassembledAt = log.updatedAt;
+  log.status = 'complete_pending_qa';
+  writeFileSync(logPath, `${JSON.stringify(log, null, 2)}\n`);
+  console.log(JSON.stringify({ outputDirectory: root, files: hydratedRows.length, reassembledWithoutSynthesis: true }, null, 2));
 }
 
 function isReusableSegment(segmentPath) {
@@ -369,6 +411,8 @@ if (accountStatus) {
   await showAccount();
 } else if (doGenerate) {
   await generate(selectedRows);
+} else if (repairAssembly) {
+  await reassemble(selectedRows);
 } else {
   if (has('--verify-source')) await Promise.all(plan.rows.map(hydrateRow));
   console.log(JSON.stringify({

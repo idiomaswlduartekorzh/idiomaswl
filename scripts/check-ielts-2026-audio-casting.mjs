@@ -7,10 +7,14 @@ import path from 'node:path';
 const root = process.cwd();
 const plan = JSON.parse(readFileSync(path.join(root, 'docs', 'ielts-2026-audio-generation-plan-2026-08-25.json'), 'utf8'));
 const casting = JSON.parse(readFileSync(path.join(root, 'scripts', 'ielts-2026-voice-casting.json'), 'utf8'));
+const pilot = JSON.parse(readFileSync(path.join(root, 'scripts', 'ielts-2026-audio-pilot-acceptance.json'), 'utf8'));
 
 assert.equal(casting.manifest_sha256, plan.manifestSha256, 'casting belongs to a stale IELTS audio manifest');
 assert.equal(casting.model_id, 'eleven_flash_v2_5');
 assert.equal(casting.credits_per_character, plan.invoice.creditsPerCharacter);
+assert.equal(casting.approval_scope.pilot_set, 4);
+assert.ok(casting.approval_scope.approved_max_usd_before_tax >= 0.7185);
+assert.ok(casting.approval_scope.minimum_remaining_credits >= 3500);
 
 const usedProfiles = [...new Set(plan.rows.flatMap(row => row.profiles))].sort();
 const resolved = usedProfiles.map(profile => {
@@ -34,7 +38,7 @@ const availableCredits = casting.account_snapshot.available_credits;
 const resetCreditLimit = casting.account_snapshot.character_limit;
 const blockers = [];
 if (casting.approval !== 'approved_by_owner') blockers.push('voice casting is pending explicit owner approval');
-if (availableCredits < pilotCredits) blockers.push(`account has ${availableCredits} credits; Set 4 pilot requires ${pilotCredits}`);
+if (!pilot.audio_sha256 && availableCredits < pilotCredits) blockers.push(`account has ${availableCredits} credits; Set 4 pilot requires ${pilotCredits}`);
 if (resetCreditLimit < postPilotCredits) blockers.push(`post-reset limit is ${resetCreditLimit}; Sets 5-20 require ${postPilotCredits}`);
 
 console.log(JSON.stringify({
@@ -50,7 +54,14 @@ console.log(JSON.stringify({
   resetCreditLimit,
   nextResetLocal: casting.account_snapshot.next_reset_local,
   approval: casting.approval,
-  status: blockers.length ? 'BLOCKED' : 'READY_FOR_SET_4_PILOT',
+  approvalScope: casting.approval_scope,
+  status: blockers.length
+    ? 'BLOCKED'
+    : pilot.status === 'technical_and_transcript_qa_passed_pending_owner_listening_review'
+      ? 'PILOT_QA_PASSED_PENDING_OWNER_LISTENING_REVIEW'
+      : pilot.status === 'accepted_by_owner'
+        ? 'PILOT_ACCEPTED_POST_RESET_BATCH_PENDING'
+        : 'READY_FOR_SET_4_PILOT',
   blockers,
 }, null, 2));
 

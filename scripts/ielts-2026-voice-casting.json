@@ -3,13 +3,21 @@
   "model_id": "eleven_flash_v2_5",
   "credits_per_character": 0.5,
   "api_price_usd_per_1000_characters": 0.05,
-  "approval": "pending_owner_approval",
+  "approval": "approved_by_owner",
+  "approval_scope": {
+    "pilot_set": 4,
+    "approved_max_usd_before_tax": 0.75,
+    "minimum_remaining_credits": 3500,
+    "approved_at": "2026-08-26T00:13:29Z"
+  },
   "target": {
     "intermediate_output_format": "mp3_44100_128",
     "final_sample_rate_hz": 44100,
     "final_channels": 1,
     "final_bitrate": "64k",
+    "minimum_duration_seconds": 1625,
     "integrated_loudness_lufs": -18,
+    "normalization_true_peak_dbfs": -2.2,
     "max_true_peak_dbfs": -1.5,
     "silence_between_conversation_turns_seconds": 0.35,
     "silence_between_parts_seconds": 7
@@ -103,11 +111,11 @@
     "tutor": "lecturer"
   },
   "account_snapshot": {
-    "captured_at": "2026-08-25",
+    "captured_at": "2026-08-26T00:29:00Z",
     "tier": "creator",
-    "character_count": 109979,
+    "character_count": 113931,
     "character_limit": 121031,
-    "available_credits": 11052,
+    "available_credits": 7100,
     "next_reset_local": "2026-09-05 18:13:51 -05",
     "sufficient_for_full_batch": false
   }

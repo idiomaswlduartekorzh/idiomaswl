@@ -14,6 +14,9 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(sourceCharacters * casting.credits_per_character));
   assert.equal(casting.manifest_sha256, plan.manifestSha256);
   assert.equal(pilot.manifest_sha256, plan.manifestSha256);
+  assert.equal(casting.target.minimum_duration_seconds, 1625);
+  assert.ok(casting.target.normalization_true_peak_dbfs < casting.target.max_true_peak_dbfs);
+  assert.equal(casting.target.silence_between_parts_seconds, 7);
   for (const row of plan.rows) {
     const announcements = row.segments.filter(segment => segment.kind === 'announcer');
     assert.equal(announcements.length, 12, `${row.setId} must announce both question blocks and review time in every part`);
@@ -34,14 +37,26 @@ test('dry-run source verification is local, deterministic and non-authorizing', 
   assert.match(output.note, /No API call/);
 });
 
-test('paid generation is closed before any secret or provider call', () => {
-  const result = spawnSync(process.execPath, [
+test('paid generation cannot exceed the owner-approved ceiling before any secret or provider call', () => {
+  const excessiveCap = spawnSync(process.execPath, [
     '--experimental-strip-types', '--no-warnings', 'scripts/generate-ielts-2026-audio.mjs',
     '--generate', '--sets', '4', '--approve-manifest', plan.manifestSha256,
-    '--max-usd', '1', '--min-remaining-credits', '1000', '--seed-salt', 'test-only',
+    '--max-usd', '1', '--min-remaining-credits', '3500', '--seed-salt', 'test-only',
   ], { encoding: 'utf8', env: { PATH: process.env.PATH } });
-  assert.notEqual(result.status, 0);
-  assert.match(result.stderr, /voice casting still needs explicit owner approval/);
-  assert.equal(casting.approval, 'pending_owner_approval');
-  assert.equal(pilot.status, 'pending_generation_and_owner_listening_review');
+  assert.notEqual(excessiveCap.status, 0);
+  assert.match(excessiveCap.stderr, /exceeds owner-approved 0.75/);
+
+  const insufficientReserve = spawnSync(process.execPath, [
+    '--experimental-strip-types', '--no-warnings', 'scripts/generate-ielts-2026-audio.mjs',
+    '--generate', '--sets', '4', '--approve-manifest', plan.manifestSha256,
+    '--max-usd', '0.75', '--min-remaining-credits', '3499', '--seed-salt', 'test-only',
+  ], { encoding: 'utf8', env: { PATH: process.env.PATH } });
+  assert.notEqual(insufficientReserve.status, 0);
+  assert.match(insufficientReserve.stderr, /below owner-approved 3500/);
+  assert.equal(casting.approval, 'approved_by_owner');
+  assert.equal(pilot.status, 'technical_and_transcript_qa_passed_pending_owner_listening_review');
+  assert.ok(pilot.audio_sha256);
+  assert.ok(pilot.qa_report_sha256);
+  assert.ok(pilot.transcript_qa_report_sha256);
+  assert.equal(pilot.approved_at, null);
 });
