@@ -213,9 +213,9 @@ TUTOR: That matches what the studies show — students spend hours scrolling on 
 
 TUTOR: I agree. Now, one real challenge with campaigns like this is measuring success. How will you know if it has worked?
 
-PRIYA: We'll run a survey before and after the campaign, and then compare the results.
+PRIYA: We'll run a survey before and after the campaign, so we can measure whether attitudes change.
 
-TUTOR: That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early, because it's in very high demand. And keep a copy of everything in a shared folder, so nothing gets lost.
+TUTOR: That's exactly the right approach. Let me suggest some practical steps. First, don't start filming until you've written a clear script. Second, you'll need approval from the ethics committee before you collect any data at all. Third, book the recording equipment early, because it's in very high demand. And keep a copy of everything in a shared folder, so nothing gets lost. Once the campaign is over, compare the survey results.
 
 SAM: That's really helpful — thanks. We'll divide up the tasks and send you a full plan by the end of the week.
 

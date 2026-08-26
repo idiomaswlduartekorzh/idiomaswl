@@ -207,7 +207,9 @@ SOFIA: Perfect. Should we include screen time tracking data from participants' p
 
 JAMES: That would be great for objective data rather than just self-reports, which tend to be unreliable — people consistently underestimate how long they spend on their phones.
 
-SOFIA: Let's include both then. We'll ask them to share weekly screen time summaries from their phone settings.`,
+SOFIA: Let's include both then. We'll ask them to share weekly screen time summaries from their phone settings.
+
+JAMES: Good. To keep collection consistent, we'll request them every Monday. We should identify each participant with a code rather than a name, and keep all files on the university's secure server.`,
       questions: [
         {
           type: 'mcq',
@@ -300,6 +302,22 @@ SOFIA: Let's include both then. We'll ask them to share weekly screen time summa
           ],
           answer: 0,
         },
+        {
+          type: 'formgroup',
+          id: 'l3-procedure',
+          part: 3,
+          qRange: [28, 30],
+          groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
+          title: 'Study administration',
+          template: `• Screen-time summaries collected every {{28}}
+• Participants identified using a {{29}}, not a name
+• Files stored on the university's secure {{30}}`,
+          blanks: [
+            { num: 28, answers: ['Monday'], maxWords: 1 },
+            { num: 29, answers: ['code'], maxWords: 1 },
+            { num: 30, answers: ['server'], maxWords: 1 },
+          ],
+        },
       ],
     },
 
@@ -308,7 +326,7 @@ SOFIA: Let's include both then. We'll ask them to share weekly screen time summa
       skill: 'listening',
       audioUrl: '/audio/ielts/ielts-listening-set-4.mp3',
       title: 'Listening — Section 4: Lecture on Bird Migration',
-      instructions: 'You will hear a university lecture on bird migration patterns. Listen and answer Questions 28–40.',
+      instructions: 'You will hear a university lecture on bird migration patterns. Listen and answer Questions 31–40.',
       transcript: `Good afternoon, everyone. Today I want to talk about one of the most remarkable phenomena in the natural world: bird migration.
 
 Each year, roughly half of all bird species on Earth undertake some form of seasonal movement — some travelling only a few hundred kilometres, others crossing entire hemispheres. But how do they do it? And why?
@@ -333,15 +351,10 @@ Thank you. We'll now move on to look at specific case studies.`,
           type: 'formgroup',
           id: 'l4-notes',
           part: 4,
-          qRange: [28, 36],
+          qRange: [31, 36],
           groupLabel: 'Complete the lecture notes.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
           title: 'Bird Migration — Lecture Notes',
-          template: `Why birds migrate:
-• Seasonal changes in {{28}} availability
-• Northern summer: insects/seeds abundant; long {{29}} hours allow extended foraging
-• Winter: food becomes {{30}} in northern regions
-
-How birds navigate (three methods):
+          template: `How birds navigate (three methods):
 1. Earth's {{31}} field — birds have magnetite crystals in their beaks (natural compasses)
    — Disrupting this field can {{32}} migrating birds
 2. Position of the {{33}} (daytime) and stars (night-time)
@@ -351,9 +364,6 @@ How birds navigate (three methods):
 Flight timing:
 • Small songbirds: migrate at {{36}} (less turbulence and fewer predators)`,
           blanks: [
-            { num: 28, answers: ['food'], maxWords: 1 },
-            { num: 29, answers: ['daylight'], maxWords: 1 },
-            { num: 30, answers: ['scarce'], maxWords: 1 },
             { num: 31, answers: ['magnetic'], maxWords: 1 },
             { num: 32, answers: ['disorient'], maxWords: 1 },
             { num: 33, answers: ['sun'], maxWords: 1 },

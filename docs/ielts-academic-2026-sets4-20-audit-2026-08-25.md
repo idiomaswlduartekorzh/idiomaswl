@@ -30,7 +30,7 @@ pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 
 | Set | Resp. L/R | Palabras Listening | Palabras Reading | MP3 integral | Claves cliente |
 |---:|---:|---:|---:|---|---:|
-| 4 | 40/40 | 2.281 | 2.184 | REEMPLAZAR · 24,3 min | 0 |
+| 4 | 40/40 | 2.255 | 2.184 | REEMPLAZAR · 24,3 min | 0 |
 | 5 | 40/40 | 2.333 | 2.180 | REEMPLAZAR · 24,0 min | 0 |
 | 6 | 40/40 | 2.333 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
 | 7 | 40/40 | 2.326 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
@@ -46,7 +46,7 @@ pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 | 17 | 40/40 | 2.271 | 2.151 | FALTA | 0 |
 | 18 | 40/40 | 2.338 | 2.172 | FALTA | 0 |
 | 19 | 40/40 | 2.301 | 2.151 | FALTA | 0 |
-| 20 | 40/40 | 2.328 | 2.192 | FALTA | 0 |
+| 20 | 40/40 | 2.339 | 2.192 | FALTA | 0 |
 
 Los 17 Readings ya quedan dentro del rango oficial de 2.150–2.750 palabras. En cambio,
 los tapescripts oficiales de ocho familias de muestra suman aproximadamente 3.168
@@ -54,7 +54,7 @@ palabras para 44 posiciones de respuesta, cerca de 72 por respuesta. IELTS no pu
 un mínimo de palabras; el auditor usa deliberadamente un gate WeLearn más conservador
 de 55 por respuesta, 2.200 por set. La expansión editorial local conserva literalmente
 cada bloque original y deja los guiones en 2.254–2.404 palabras; cada parte queda entre
-555 y 615 palabras. No hay bloques largos duplicados ni coincidencias exactas de 50
+555 y 620 palabras. No hay bloques largos duplicados ni coincidencias exactas de 50
 palabras entre dos sets.
 
 Los nueve MP3 existentes duran 24,0–24,3 minutos y contienen pausas extensas; quedan
@@ -85,6 +85,8 @@ generarse ocho con la nueva fuente.
   ya no se fuerza un bloque antes de cada respuesta.
 - La numeración MCQ es global por skill: el primer MCQ de Listening Part 3 se presenta
   como 21, no vuelve a 1.
+- Cada parte Listening contiene exactamente diez respuestas en su rango propio. El Set 4,
+  que antes repartía 7 en Part 3 y 13 en Part 4, ahora respeta 21–30 y 31–40.
 - Un multiselect de dos letras cuenta como dos respuestas en el progreso.
 - Los Sets 4–20 tienen contrato explícito `ielts-academic-2026`, disclosure original de
   WeLearn y tiempos por etapa 30/60/60/14.
@@ -112,6 +114,9 @@ generarse ocho con la nueva fuente.
 - Una segunda auditoría encontró 44 bloques largos de plantilla repetidos en 363 posiciones.
   Se sustituyeron por andamiajes ligados al tema de cada parte; el contrato ahora rechaza
   tanto una transcripción duplicada como cualquier coincidencia exacta de 50 palabras entre sets.
+- La auditoría de orden encontró que la evidencia de la pregunta 30 del Set 20 aparecía
+  antes de las preguntas 26–29. Se movió al cierre de la secuencia sin cambiar la clave y
+  un nuevo contrato verifica el orden de toda evidencia literal de completion en los 68 guiones.
 - El intento persiste borradores sólo después de hidratar el navegador; una sesión guardada
   ya no puede alterar ni ser sobrescrita durante el primer render del servidor.
 - El resultado privado separa con claridad bandas parciales, `Overall pendiente` y resultado
@@ -149,7 +154,7 @@ eliminar la antigua deriva en la navegación compartida.
    reproducción única, mono 44,1 kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
 4. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
    tamaño, hash, duración, loudness, pico y silencios. El plan actualizado proyecta
-   243.059 caracteres, 121.530 créditos y USD 12,1530 antes de impuestos y reintentos;
+   242.957 caracteres, 121.479 créditos y USD 12,1479 antes de impuestos y reintentos;
    no es una autorización.
 5. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
    sólo cuando todos los bloqueos estén cerrados.
@@ -157,8 +162,8 @@ eliminar la antigua deriva en la navegación compartida.
    lector de pantalla y verificación humana de las cuatro partes de cada MP3.
 
 Consulta de cuenta sólo lectura: plan Creator con 11.052 créditos disponibles. El piloto
-Set 4 requiere 7.270; los Sets 5–20 requieren otros 114.260. El lote se divide así porque
-los 121.530 créditos totales superan por poco el límite mensual de 121.031, mientras que
+Set 4 requiere 7.185; los Sets 5–20 requieren otros 114.294. El lote se divide así porque
+los 121.479 créditos totales superan por poco el límite mensual de 121.031, mientras que
 el piloto cabe hoy y el remanente cabe después del reinicio informado por ElevenLabs,
 el 5 de septiembre de 2026 a las 18:13:51 (Bogotá). La cuenta no permite extender el límite.
 Por tanto, incluso con aprobación del propietario, el lote completo no puede ejecutarse hoy.

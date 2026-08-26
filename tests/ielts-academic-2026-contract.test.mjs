@@ -14,6 +14,44 @@ function words(value = '') {
   return value.trim().split(/\s+/).filter(Boolean).length;
 }
 
+function normalizedEvidenceText(value = '') {
+  return ` ${value.toLowerCase().replaceAll('’', "'").replace(/[^a-z0-9£]+/g, ' ').trim()} `;
+}
+
+function evidencePositions(source, answers) {
+  const positions = new Set();
+  for (const answer of answers) {
+    const needle = normalizedEvidenceText(answer);
+    let position = source.indexOf(needle);
+    while (position >= 0) {
+      positions.add(position);
+      position = source.indexOf(needle, position + 1);
+    }
+  }
+  return [...positions].sort((a, b) => a - b);
+}
+
+function completionBlanks(section) {
+  return section.questions.flatMap(question => (
+    question.type === 'formgroup'
+      ? question.blanks
+      : question.type === 'tablegroup'
+        ? question.rows.flat().filter(cell => typeof cell !== 'string')
+        : []
+  )).sort((a, b) => a.num - b.num);
+}
+
+function questionNumbers(question) {
+  if ('qRange' in question && question.qRange) {
+    return Array.from(
+      { length: question.qRange[1] - question.qRange[0] + 1 },
+      (_, index) => question.qRange[0] + index,
+    );
+  }
+  const suffix = question.id.match(/q(\d+)$/i);
+  return suffix ? [Number(suffix[1])] : [];
+}
+
 async function loadAuditedSets() {
   return Promise.all(Array.from({ length: 17 }, async (_, index) => {
     const setNumber = index + 4;
@@ -71,6 +109,12 @@ test('all 17 Listening papers preserve authored evidence and pass the full-densi
     assert.equal(listening.length, 4, `${mock.id} Listening parts`);
     assert.ok(listening.reduce((total, section) => total + words(section.transcript), 0) >= 2200, `${mock.id} Listening density`);
     for (const [index, section] of listening.entries()) {
+      const expectedNumbers = Array.from({ length: 10 }, (_, offset) => index * 10 + offset + 1);
+      assert.deepEqual(
+        section.questions.flatMap(questionNumbers),
+        expectedNumbers,
+        `${mock.id} Part ${section.part} must contain its exact ten-question range`,
+      );
       const partWords = words(section.transcript);
       assert.ok(partWords >= 540 && partWords <= 620, `${mock.id} Part ${section.part} has ${partWords} words`);
       for (const block of authored[index].transcript.trim().split(/\n{2,}/)) {
@@ -147,6 +191,31 @@ test('completion keys are supported verbatim by their Listening transcript or Re
             blank.answers.some(answer => source.includes(answer.toLowerCase().replaceAll('’', "'"))),
             `${mock.id} ${section.skill} ${question.id} Q${blank.num}: accepted answer must occur in source`,
           );
+        }
+      }
+    }
+  }
+});
+
+test('all Listening completion evidence follows question order in authored and expanded tapescripts', async () => {
+  for (let setNumber = 4; setNumber <= 20; setNumber += 1) {
+    const { default: authoredMock } = await import(`../src/data/mocks/ielts-set-${setNumber}.ts`);
+    const expandedMock = withIeltsAcademic2026Blueprint(authoredMock);
+    const authoredListening = authoredMock.sections.filter(section => section.skill === 'listening');
+    const expandedListening = expandedMock.sections.filter(section => section.skill === 'listening');
+    for (const [index, authoredSection] of authoredListening.entries()) {
+      for (const sourceText of [authoredSection.transcript, expandedListening[index].transcript]) {
+        const source = normalizedEvidenceText(sourceText);
+        let previousPosition = -1;
+        for (const blank of completionBlanks(authoredSection)) {
+          const positions = evidencePositions(source, blank.answers);
+          const position = positions.find(candidate => candidate >= previousPosition);
+          assert.notEqual(
+            position,
+            undefined,
+            `set-${setNumber} Part ${authoredSection.part} Q${blank.num} evidence must follow Q${blank.num - 1}`,
+          );
+          previousPosition = position;
         }
       }
     }

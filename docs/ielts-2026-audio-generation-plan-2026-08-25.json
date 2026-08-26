@@ -31,11 +31,11 @@
   "invoice": {
     "priceUsdPer1000Characters": 0.05,
     "creditsPerCharacter": 0.5,
-    "sourceCharacters": 243059,
-    "sourceEstimatedUsdBeforeTax": 12.153,
-    "projectedMinimumCharactersAfterEditorialGate": 243059,
-    "projectedMinimumCreditsAfterEditorialGate": 121530,
-    "projectedMinimumUsdBeforeTax": 12.153,
+    "sourceCharacters": 242957,
+    "sourceEstimatedUsdBeforeTax": 12.1479,
+    "projectedMinimumCharactersAfterEditorialGate": 242957,
+    "projectedMinimumCreditsAfterEditorialGate": 121479,
+    "projectedMinimumUsdBeforeTax": 12.1479,
     "retryContingencyNotIncluded": true
   },
   "rows": [
@@ -45,13 +45,13 @@
       "plannedUrl": "/audio/ielts/ielts-listening-set-4.mp3",
       "sourceRef": "src/data/mocks/ielts-set-4.ts",
       "accentTarget": "british",
-      "transcriptWords": 2281,
+      "transcriptWords": 2255,
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
-      "sourceCharacters": 14540,
-      "projectedCharactersAtGate": 14540,
-      "transcriptSha256": "6046cc5cbb360fd46defd15a533d5392014064698b00e8019a2dcc0cd3233141",
-      "requestSegments": 84,
+      "sourceCharacters": 14369,
+      "projectedCharactersAtGate": 14369,
+      "transcriptSha256": "be132230f4c6698cf5f41b06acef86489c8a8a5b553800b0ccc98ff0cbb4ffe8",
+      "requestSegments": 83,
       "profiles": [
         "announcer:british",
         "guide:british",
@@ -489,6 +489,15 @@
           "kind": "content",
           "part": 3,
           "profile": "speaker:british",
+          "characters": 175,
+          "words": 27,
+          "textSha256": "988c58794b79d712c2eacba334f6d6b44c233e329a5eaf669972fd81a08beeca",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:british",
           "characters": 261,
           "words": 44,
           "textSha256": "b9dc97e21742e7b53ad30cd08ab10708e76d55ee69b4d0f1f82960a0c2b04d24",
@@ -501,15 +510,6 @@
           "characters": 160,
           "words": 24,
           "textSha256": "6582b8a1bf69b48c979dcaa974286e33b281d576012b5e89d034c876c8c1ef5a",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "speaker:british",
-          "characters": 175,
-          "words": 27,
-          "textSha256": "988c58794b79d712c2eacba334f6d6b44c233e329a5eaf669972fd81a08beeca",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -534,6 +534,33 @@
           "kind": "content",
           "part": 3,
           "profile": "student-man:british",
+          "characters": 170,
+          "words": 25,
+          "textSha256": "fe262901890e6382534cffb12260b2dbd645d1b404d027db9360abc569c55606",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:british",
+          "characters": 55,
+          "words": 9,
+          "textSha256": "813cfbfcb16a29a4b9e209ce2f8ccfcda54fddae1f48012083667dc1df8b782e",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "announcer",
+          "part": 3,
+          "profile": "announcer:british",
+          "characters": 61,
+          "words": 10,
+          "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
+          "pauseAfterSeconds": 45
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:british",
           "characters": 280,
           "words": 41,
           "textSha256": "823481f9364af1a0b3a05397912e466ac2398802e4e12f0ce53a3e07037b4412",
@@ -552,54 +579,9 @@
           "kind": "content",
           "part": 3,
           "profile": "student-man:british",
-          "characters": 170,
-          "words": 25,
-          "textSha256": "fe262901890e6382534cffb12260b2dbd645d1b404d027db9360abc569c55606",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "announcer",
-          "part": 3,
-          "profile": "announcer:british",
-          "characters": 61,
-          "words": 10,
-          "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "speaker:british",
-          "characters": 55,
-          "words": 9,
-          "textSha256": "813cfbfcb16a29a4b9e209ce2f8ccfcda54fddae1f48012083667dc1df8b782e",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "student-man:british",
           "characters": 187,
           "words": 30,
           "textSha256": "a1a6f8f81ca7f9c2a5a1b658daca002612854211e7d060f8717ee7a7ca8c5251",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "speaker:british",
-          "characters": 237,
-          "words": 38,
-          "textSha256": "13023068fa2b86ffd7ec9a3060942bfcbf0d382c6e541bfc9f03f377e3b46f42",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "student-man:british",
-          "characters": 155,
-          "words": 24,
-          "textSha256": "d14b4247069b39df232fb9408b7d6400231aceb6c1a792473aa08de844ff9446",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -632,19 +614,19 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "student-man:british",
-          "characters": 211,
-          "words": 32,
-          "textSha256": "9f580d95e71e47c843cd1ceb32f88786cc15aa061be77ad42e27ff894203ff25",
+          "profile": "speaker:british",
+          "characters": 237,
+          "words": 38,
+          "textSha256": "13023068fa2b86ffd7ec9a3060942bfcbf0d382c6e541bfc9f03f377e3b46f42",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:british",
-          "characters": 151,
+          "profile": "student-man:british",
+          "characters": 155,
           "words": 24,
-          "textSha256": "be7ea6d7308fa441d019b0bb401f3ed1864657035b7d4a1b1c1b5c9c5e884022",
+          "textSha256": "d14b4247069b39df232fb9408b7d6400231aceb6c1a792473aa08de844ff9446",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -663,6 +645,15 @@
           "characters": 104,
           "words": 17,
           "textSha256": "288f9d35f702b60444877075d6d662027c955c66d5bf828b12f40a154439530c",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:british",
+          "characters": 191,
+          "words": 31,
+          "textSha256": "4c7084269b3ce4686cffd0dc810ef9965785c28bf267512ad0b6009286aaf911",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -13369,12 +13360,12 @@
       "plannedUrl": "/audio/ielts/ielts-listening-set-20.mp3",
       "sourceRef": "src/data/mocks/ielts-set-20.ts",
       "accentTarget": "british",
-      "transcriptWords": 2328,
+      "transcriptWords": 2339,
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
-      "sourceCharacters": 14447,
-      "projectedCharactersAtGate": 14447,
-      "transcriptSha256": "a9ab78c2ee5cc91aa3b5df1c5dd4c059f7902fbbb995b749048bb639608a2b7d",
+      "sourceCharacters": 14516,
+      "projectedCharactersAtGate": 14516,
+      "transcriptSha256": "ac85191151dd82d56491de56d130c1b1ac7f5ddfb1e51b712351489581f7faf4",
       "requestSegments": 90,
       "profiles": [
         "announcer:british",
@@ -14012,18 +14003,18 @@
           "kind": "content",
           "part": 3,
           "profile": "student-woman:british",
-          "characters": 79,
-          "words": 14,
-          "textSha256": "2388a29ab017138ed5e919410f7d4ef2b18505a0a48e6ac4882f43a02dc2f0cd",
+          "characters": 93,
+          "words": 16,
+          "textSha256": "4e20390dac5d5acb1f61f4ca35dec5c3583e10ec839013306b428577ed29b09f",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "tutor:british",
-          "characters": 375,
-          "words": 62,
-          "textSha256": "7b3215725e27ac02815dd5b0296b5a0009b4f79683b481f16eda7124fb036173",
+          "characters": 430,
+          "words": 71,
+          "textSha256": "dd2b69435e4184ae688139675fb764895fbca114490206ace23191d7706d2d51",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -14203,5 +14194,5 @@
       "releaseAction": "generate-after-editorial-and-audio-qa"
     }
   ],
-  "manifestSha256": "dfeedeca345e41dc6f597b280c89a354638cfcaf6603cdd79b715ed332053a45"
+  "manifestSha256": "024680660790cf1ac6e3431f4ad379c09b73e52cb67e2847484606956dbde187"
 }
