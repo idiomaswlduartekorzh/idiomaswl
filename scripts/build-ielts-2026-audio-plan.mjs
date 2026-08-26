@@ -18,8 +18,8 @@ const repoRoot = path.resolve(scriptDir, '..');
 const outputPath = path.join(repoRoot, 'docs', 'ielts-2026-audio-generation-plan-2026-08-25.json');
 
 const accentRotation = ['british', 'north-american', 'australian', 'new-zealand'];
-const femaleNames = new Set(['AMY', 'MAYA', 'PRIYA', 'SOPHIE']);
-const maleNames = new Set(['BEN', 'JAMES', 'JOSH', 'LIAM', 'SAM', 'TOM']);
+const femaleNames = new Set(['AMY', 'MAYA', 'MEG', 'PRIYA', 'SOPHIE']);
+const maleNames = new Set(['BEN', 'JAMES', 'JOSH', 'LIAM', 'RYAN', 'SAM', 'TOM']);
 const staffLabels = new Set(['AGENT', 'COORDINATOR', 'LIBRARIAN', 'OFFICER', 'ORGANISER', 'STAFF']);
 const participantLabels = new Set(['CALLER', 'CUSTOMER', 'PARENT', 'STUDENT']);
 
@@ -67,6 +67,19 @@ function sectionSegments(section, accent, setNumber) {
 
 const PART_NAMES = ['One', 'Two', 'Three', 'Four'];
 
+function packContentSegments(setNumber, segments) {
+  if (setNumber !== 5) return segments;
+  return segments.reduce((packed, segment) => {
+    const previous = packed.at(-1);
+    if (previous?.profile === segment.profile) {
+      previous.text = `${previous.text}\n\n${segment.text}`;
+    } else {
+      packed.push({ ...segment });
+    }
+    return packed;
+  }, []);
+}
+
 function plannedSegments(section, accent, setNumber) {
   const content = sectionSegments(section, accent, setNumber);
   const split = Math.max(1, Math.ceil(content.length / 2));
@@ -74,7 +87,7 @@ function plannedSegments(section, accent, setNumber) {
   const midpointQuestion = firstQuestion + 4;
   const finalQuestion = firstQuestion + 9;
   const partName = PART_NAMES[section.part - 1];
-  const withPauses = segments => segments.map(segment => ({
+  const withPauses = segments => packContentSegments(setNumber, segments).map(segment => ({
     kind: 'content',
     ...segment,
     pauseAfterSeconds: 0.35,
@@ -83,19 +96,19 @@ function plannedSegments(section, accent, setNumber) {
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Part ${partName}. First, review Questions ${firstQuestion} to ${midpointQuestion}.`,
-      pauseAfterSeconds: 45,
+      pauseAfterSeconds: 60,
     },
     ...withPauses(content.slice(0, split)).map(segment => ({ ...segment, part: section.part })),
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Now review Questions ${midpointQuestion + 1} to ${finalQuestion} before the recording continues.`,
-      pauseAfterSeconds: 45,
+      pauseAfterSeconds: 60,
     },
     ...withPauses(content.slice(split)).map(segment => ({ ...segment, part: section.part })),
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Part ${partName} is complete. Check your answers.`,
-      pauseAfterSeconds: section.part === 4 ? 120 : 30,
+      pauseAfterSeconds: section.part === 4 ? 120 : 45,
     },
   ];
 }
@@ -164,7 +177,7 @@ const manifestCore = {
     status: rows.every(row => row.transcriptWords >= MIN_TRANSCRIPT_WORDS) ? 'passed' : 'blocked',
     rationale: 'The 2,200-word threshold is a conservative WeLearn density gate derived from 44 response positions across eight official sample-task tapescripts; IELTS does not publish a transcript word minimum.',
     minimumTranscriptWordsPerSet: MIN_TRANSCRIPT_WORDS,
-    targetIntegralDurationSeconds: [1620, 1980],
+    targetIntegralDurationSeconds: [1740, 1860],
     playback: 'once',
   },
   generation: {

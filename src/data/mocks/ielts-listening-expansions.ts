@@ -115,6 +115,62 @@ const BANKS: Readonly<Record<number, readonly (readonly string[])[]>> = {
   ],
 };
 
+/**
+ * Set 5 uses topic-specific discourse rather than the reusable density bank.
+ * These passages add natural distractors, clarification and academic reasoning
+ * without introducing any answer-bearing fact or changing evidence order.
+ */
+const SET_FIVE_ADDITIONS: Readonly<Record<number, readonly string[]>> = {
+  1: [
+    `AGENT: Before we compare the two routes, may I check whether anyone in your party has limited mobility? Most of the old town is accessible, but one narrow lane has several uneven steps, so the leader can use a parallel street when necessary.
+
+CUSTOMER: No one needs a step-free route, although my mother prefers a steady pace.
+
+AGENT: That will be fine. The leader pauses regularly to explain the buildings, so it never feels like a continuous hike.`,
+    `CUSTOMER: What happens if the weather turns bad? The forecast looks changeable.
+
+AGENT: We only cancel for severe conditions. Light rain is not usually a problem because part of the route passes through covered arcades. If we cancel, you can move the booking to another date or receive a refund. Groups are kept fairly small as well, so people can hear the commentary without crowding the pavement.
+
+CUSTOMER: Good. I was hoping it would be informative rather than rushed.`,
+    `AGENT: You may take photographs, but please stay with the group at road crossings. The leader cannot hold up the whole route if one guest falls far behind.
+
+CUSTOMER: That is fair. Is there a place to sit during the walk?
+
+AGENT: There are brief stops in two quiet courtyards. They are useful for anyone who needs a rest, and they give the leader time to answer questions.`,
+  ],
+  2: [
+    `We organise the rota several weeks ahead, but you are not expected to attend every session. When you offer to help on a particular day, please arrive promptly and sign in before joining your team. This lets us account for everybody if an area has to close unexpectedly. New volunteers normally work beside someone experienced until they are familiar with the routine.`,
+    `Please remember that this is a protected site rather than an ordinary public park. Keep to the marked routes, avoid disturbing nesting areas and never handle an animal unless a staff member has asked you to do so. If you are uncertain about a task, pause and ask. We value careful observation much more than completing a job quickly.`,
+    `Most sessions begin with a short briefing at the main office. The team leader will explain the aim for the day, show you the area on a site map and check that each pair has the right tools. At the end, return all shared items and sign out, even if another team is still working. Please tell us in advance about any health issue that could affect outdoor work. We can often adapt a role, but we need enough notice to do so safely. You are also welcome to ask why a task is needed; understanding the purpose tends to produce more careful work.`,
+  ],
+  3: [
+    `RYAN: Should we take readings at random points, or use the same distance between sites?
+
+TUTOR: Use fixed intervals. Random sampling sounds attractive, but on a narrow estuary it could place most observations in one habitat by chance. Mark the positions on your map before you go, then take a preliminary reading at the first site to make sure the procedure is practical.
+
+MEG: That should also make it easier to compare our results.`,
+    `MEG: Do we all carry out every stage, or should we divide the work?
+
+TUTOR: Work in pairs and rotate roles after each site. One person should operate the meter while the other records the value and checks the location. Rotation reduces the risk that one person's technique creates a pattern in the data.
+
+RYAN: And if a reading looks unusual?
+
+TUTOR: Repeat it once and keep both values. Do not silently replace an inconvenient result.`,
+    `MEG: How much detail should go in the final report?
+
+TUTOR: Enough for another group to follow your method. Explain where each site was, when the sample was taken and how the meter was used. Keep raw results separate from your comments.
+
+RYAN: So we describe first and interpret later.
+
+TUTOR: Exactly. That will make your reasoning much easier to check.`,
+  ],
+  4: [
+    `An important distinction is that supporting honeybees is not automatically the same as supporting every urban pollinator. Many solitary species use different nesting sites and travel over shorter distances. If too many managed colonies are concentrated in one district, competition for forage can increase. Good planning therefore begins with an estimate of what the surrounding habitat can sustain, rather than simply adding as many colonies as space allows.`,
+    `Researchers also examine movement between managed and wild populations. A dense network of colonies may allow parasites to spread more easily, particularly when equipment is exchanged between keepers. Regular inspection and careful record-keeping make unusual changes easier to detect. The most successful projects combine colony health data with observations of plant diversity, seasonal conditions and the abundance of other insects.`,
+    `There is also a question of scale. A single well-run hive can be a useful teaching tool, yet a rapid rise in hive numbers across a whole city may have effects that no one project can see. Long-term studies compare districts and seasons rather than relying on one successful year. They also distinguish between the amount of honey produced and the health of the wider insect community, since those measures do not always move in the same direction.`,
+  ],
+};
+
 const CONTEXTS: Readonly<Record<number, readonly [string, string, string, string]>> = {
   4: ['student-housing enquiry', 'natural-history museum visit', 'social-media research project', 'bird-migration lecture'],
   5: ['city-walk booking', 'volunteer induction', 'field-trip planning session', 'urban-beekeeping lecture'],
@@ -197,6 +253,7 @@ function monologuePartFour(setNumber: number, context: string) {
 }
 
 function additionsFor(setNumber: number, part: number) {
+  if (setNumber === 5) return SET_FIVE_ADDITIONS[part] ?? [];
   const context = CONTEXTS[setNumber]?.[part - 1];
   const fallback = BANKS[part];
   if (!context) return fallback?.[setNumber % fallback.length] ?? [];

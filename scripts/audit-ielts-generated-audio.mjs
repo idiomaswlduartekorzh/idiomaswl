@@ -43,7 +43,8 @@ for (const entry of log.files ?? []) {
     sampleRate44100: Number(stream?.sample_rate) === casting.target.final_sample_rate_hz,
     mono: Number(stream?.channels) === casting.target.final_channels,
     bitRateNear64k: bitRate >= 60000 && bitRate <= 70000,
-    officialApproximateDuration: durationSeconds >= 1620 && durationSeconds <= 1980,
+    officialApproximateDuration: durationSeconds >= casting.target.minimum_duration_seconds
+      && durationSeconds <= casting.target.maximum_duration_seconds,
     loudnessNearTarget: Math.abs(Number(loudness.input_i) - casting.target.integrated_loudness_lufs) <= 1,
     truePeakWithinCeiling: Number(loudness.input_tp) <= casting.target.max_true_peak_dbfs + 0.1,
   };

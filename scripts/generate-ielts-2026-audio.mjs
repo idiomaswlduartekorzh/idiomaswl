@@ -2,7 +2,7 @@
 
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import process from 'node:process';
@@ -21,13 +21,44 @@ const args = process.argv.slice(2);
 const has = flag => args.includes(flag);
 const value = flag => has(flag) ? args[args.indexOf(flag) + 1] : null;
 const manifestHash = plan.manifestSha256;
+const sourceCachePlanPath = value('--reuse-source-plan');
+const sourceCacheSegmentsDir = value('--reuse-source-segments');
+
+assert.equal(Boolean(sourceCachePlanPath), Boolean(sourceCacheSegmentsDir), 'pass both --reuse-source-plan and --reuse-source-segments');
+const sourceCachePlan = sourceCachePlanPath
+  ? JSON.parse(readFileSync(path.resolve(sourceCachePlanPath), 'utf8'))
+  : null;
+if (sourceCachePlan) {
+  const sourceCacheLogPath = path.resolve(sourceCacheSegmentsDir, '..', '..', 'generation-log.json');
+  assert.ok(existsSync(sourceCacheLogPath), `source cache generation log is missing: ${sourceCacheLogPath}`);
+  const sourceCacheLog = JSON.parse(readFileSync(sourceCacheLogPath, 'utf8'));
+  assert.equal(
+    sourceCacheLog.manifestSha256,
+    sourceCachePlan.manifestSha256,
+    'source cache does not belong to the supplied source plan',
+  );
+}
 
 assert.equal(casting.manifest_sha256, manifestHash, 'casting belongs to a stale IELTS manifest');
-assert.equal(pilotAcceptance.manifest_sha256, manifestHash, 'pilot acceptance belongs to a stale IELTS manifest');
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex');
 }
+
+function segmentSourceSha256(row) {
+  return sha256(JSON.stringify(row.segments.map(segment => ({
+    profile: segment.profile,
+    textSha256: segment.textSha256,
+  }))));
+}
+
+const acceptedPilotRow = plan.rows.find(row => row.setId === `set-${pilotAcceptance.pilot_set}`);
+assert.ok(acceptedPilotRow, 'accepted pilot set is absent from the current plan');
+assert.equal(
+  pilotAcceptance.segment_source_sha256,
+  segmentSourceSha256(acceptedPilotRow),
+  'accepted pilot speech changed; its reusable segments are no longer valid',
+);
 
 function parseSetSelection(selection) {
   if (!selection) return [];
@@ -54,8 +85,8 @@ const selectedRows = fullBatch
     ? plan.rows.filter(row => selectedSetNumbers.includes(Number(row.setId.replace('set-', ''))))
     : [];
 
-const femaleNames = new Set(['AMY', 'MAYA', 'PRIYA', 'SOPHIE']);
-const maleNames = new Set(['BEN', 'JAMES', 'JOSH', 'LIAM', 'SAM', 'TOM']);
+const femaleNames = new Set(['AMY', 'MAYA', 'MEG', 'PRIYA', 'SOPHIE']);
+const maleNames = new Set(['BEN', 'JAMES', 'JOSH', 'LIAM', 'RYAN', 'SAM', 'TOM']);
 const staffLabels = new Set(['AGENT', 'COORDINATOR', 'LIBRARIAN', 'OFFICER', 'ORGANISER', 'STAFF']);
 const participantLabels = new Set(['CALLER', 'CUSTOMER', 'PARENT', 'STUDENT']);
 
@@ -82,6 +113,19 @@ function sectionSegments(section, accent, setNumber) {
 
 const PART_NAMES = ['One', 'Two', 'Three', 'Four'];
 
+function packContentSegments(setNumber, segments) {
+  if (setNumber !== 5) return segments;
+  return segments.reduce((packed, segment) => {
+    const previous = packed.at(-1);
+    if (previous?.profile === segment.profile) {
+      previous.text = `${previous.text}\n\n${segment.text}`;
+    } else {
+      packed.push({ ...segment });
+    }
+    return packed;
+  }, []);
+}
+
 function plannedSegments(section, accent, setNumber) {
   const content = sectionSegments(section, accent, setNumber);
   const split = Math.max(1, Math.ceil(content.length / 2));
@@ -89,24 +133,25 @@ function plannedSegments(section, accent, setNumber) {
   const midpointQuestion = firstQuestion + 4;
   const finalQuestion = firstQuestion + 9;
   const partName = PART_NAMES[section.part - 1];
-  const withPauses = segments => segments.map(segment => ({ kind: 'content', ...segment, pauseAfterSeconds: 0.35 }));
+  const withPauses = segments => packContentSegments(setNumber, segments)
+    .map(segment => ({ kind: 'content', ...segment, pauseAfterSeconds: 0.35 }));
   return [
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Part ${partName}. First, review Questions ${firstQuestion} to ${midpointQuestion}.`,
-      pauseAfterSeconds: 45,
+      pauseAfterSeconds: 60,
     },
     ...withPauses(content.slice(0, split)),
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Now review Questions ${midpointQuestion + 1} to ${finalQuestion} before the recording continues.`,
-      pauseAfterSeconds: 45,
+      pauseAfterSeconds: 60,
     },
     ...withPauses(content.slice(split)),
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Part ${partName} is complete. Check your answers.`,
-      pauseAfterSeconds: section.part === 4 ? 120 : 30,
+      pauseAfterSeconds: section.part === 4 ? 120 : 45,
     },
   ];
 }
@@ -206,6 +251,10 @@ async function ensureGenerationGate(rows) {
   assert.ok(rows.length > 0, 'generation scope is empty');
   assert.equal(value('--approve-manifest'), manifestHash, `pass --approve-manifest ${manifestHash}`);
   assert.equal(casting.approval, 'approved_by_owner', 'voice casting still needs explicit owner approval');
+  const approvedSets = new Set(casting.approval_scope.approved_sets ?? []);
+  for (const row of rows) {
+    assert.ok(approvedSets.has(Number(row.setId.replace('set-', ''))), `${row.setId} does not have explicit owner approval`);
+  }
   if (pilotAcceptance.status !== 'accepted_by_owner') {
     assert.deepEqual(selectedSetNumbers, [4], 'only the Set 4 pilot may be generated before owner acceptance');
   }
@@ -233,16 +282,22 @@ async function ensureGenerationGate(rows) {
   assert.ok(bill.estimatedUsdBeforeTax <= cap, `estimated USD ${bill.estimatedUsdBeforeTax} exceeds approved ceiling ${cap}`);
   const ffmpeg = spawnSync('ffmpeg', ['-version'], { encoding: 'utf8' });
   assert.equal(ffmpeg.status, 0, 'ffmpeg is required for assembly');
+  if (has('--reuse-only')) {
+    return { apiKey: null, bill, cap, reserve, availableCredits: null, allowPartialAtReserve: true, reuseOnly: true };
+  }
   const apiKey = process.env.ELEVENLABS_API_KEY;
   assert.ok(apiKey, 'ELEVENLABS_API_KEY is required for generation and is never read from a committed file');
   const subscription = await apiJson('/v1/user/subscription', apiKey);
   const availableCredits = Number(subscription.character_limit) - Number(subscription.character_count);
-  assert.ok(bill.estimatedCredits + reserve <= availableCredits, `estimated ${bill.estimatedCredits} credits plus ${reserve} reserve exceeds ${availableCredits} available`);
+  const allowPartialAtReserve = has('--allow-partial-at-reserve');
+  if (!allowPartialAtReserve) {
+    assert.ok(bill.estimatedCredits + reserve <= availableCredits, `estimated ${bill.estimatedCredits} credits plus ${reserve} reserve exceeds ${availableCredits} available`);
+  }
   for (const profile of new Set(rows.flatMap(row => row.segments.map(segment => segment.profile)))) {
     const voice = voiceFor(profile);
     await apiJson(`/v1/voices/${voice.voice_id}`, apiKey);
   }
-  return { apiKey, bill, cap, reserve, availableCredits };
+  return { apiKey, bill, cap, reserve, availableCredits, allowPartialAtReserve };
 }
 
 async function synthesize({ apiKey, row, segment, segmentIndex }) {
@@ -359,6 +414,36 @@ function isReusableSegment(segmentPath) {
   return probe.status === 0 && probe.stdout.trim().split(/\s+/).includes('audio');
 }
 
+function approvedPilotReusePath(row, segment) {
+  const sourceDir = value('--reuse-approved-pilot-segments');
+  if (!sourceDir || row.setId === acceptedPilotRow.setId) return null;
+  assert.equal(pilotAcceptance.status, 'accepted_by_owner', 'pilot segments require owner acceptance');
+  const textSha256 = sha256(segment.text);
+  const sourceIndex = acceptedPilotRow.segments.findIndex(candidate => (
+    candidate.profile === segment.profile && candidate.textSha256 === textSha256
+  ));
+  if (sourceIndex < 0) return null;
+  const sourcePath = path.join(path.resolve(sourceDir), `segment-${String(sourceIndex + 1).padStart(3, '0')}.mp3`);
+  assert.ok(isReusableSegment(sourcePath), `approved pilot reuse segment is missing or invalid: ${sourcePath}`);
+  return sourcePath;
+}
+
+function priorSourceCacheReusePath(row, segment) {
+  if (!sourceCachePlan) return null;
+  const sourceRow = sourceCachePlan.rows.find(candidate => candidate.setId === row.setId);
+  if (!sourceRow) return null;
+  const textSha256 = sha256(segment.text);
+  const sourceIndex = sourceRow.segments.findIndex(candidate => (
+    candidate.profile === segment.profile && candidate.textSha256 === textSha256
+  ));
+  if (sourceIndex < 0) return null;
+  const sourcePath = path.join(
+    path.resolve(sourceCacheSegmentsDir),
+    `segment-${String(sourceIndex + 1).padStart(3, '0')}.mp3`,
+  );
+  return isReusableSegment(sourcePath) ? sourcePath : null;
+}
+
 async function generate(rows) {
   const hydratedRows = await Promise.all(rows.map(hydrateRow));
   const root = outputDirectory(scopeLabel());
@@ -372,6 +457,7 @@ async function generate(rows) {
   const pending = hydratedRows.filter(row => !completed.has(row.mediaId));
   if (!pending.length) return console.log(JSON.stringify({ outputDirectory: root, files: files.length, resumed: true, qaStatus: 'pending' }, null, 2));
   const gate = await ensureGenerationGate(pending);
+  let conservativeAvailableCredits = gate.availableCredits;
   const writeLog = status => writeFileSync(logPath, `${JSON.stringify({
     generatedAt: previous?.generatedAt ?? new Date().toISOString(), updatedAt: new Date().toISOString(),
     status, scope: scopeLabel(), manifestSha256: manifestHash, modelId: casting.model_id,
@@ -386,18 +472,84 @@ async function generate(rows) {
     mkdirSync(segmentsDir, { recursive: true });
     const targetPath = path.join(setDir, path.basename(row.plannedUrl));
     assert.ok(!existsSync(targetPath), `refusing to overwrite ${targetPath}`);
-    const segmentPaths = [];
+    const segmentPaths = row.segments.map((_, segmentIndex) => (
+      path.join(segmentsDir, `segment-${String(segmentIndex + 1).padStart(3, '0')}.mp3`)
+    ));
+    let reusedCharacters = 0;
+    let reusedSegments = 0;
+    let reusedPilotCharacters = 0;
+    let reusedPilotSegments = 0;
+    let reusedCacheCharacters = 0;
+    let reusedCacheSegments = 0;
     for (const [segmentIndex, segment] of row.segments.entries()) {
-      const segmentPath = path.join(segmentsDir, `segment-${String(segmentIndex + 1).padStart(3, '0')}.mp3`);
-      if (!isReusableSegment(segmentPath)) {
-        writeFileSync(segmentPath, await synthesize({ apiKey: gate.apiKey, row, segment, segmentIndex }));
+      const segmentPath = segmentPaths[segmentIndex];
+      if (isReusableSegment(segmentPath)) continue;
+      const approvedPilotPath = approvedPilotReusePath(row, segment);
+      const sourceCachePath = approvedPilotPath ? null : priorSourceCacheReusePath(row, segment);
+      const reusePath = approvedPilotPath ?? sourceCachePath;
+      if (reusePath) {
+        copyFileSync(reusePath, segmentPath);
+        reusedCharacters += segment.text.length;
+        reusedSegments += 1;
+        if (approvedPilotPath) {
+          reusedPilotCharacters += segment.text.length;
+          reusedPilotSegments += 1;
+        } else {
+          reusedCacheCharacters += segment.text.length;
+          reusedCacheSegments += 1;
+        }
       }
-      segmentPaths.push(segmentPath);
     }
+    const missing = row.segments
+      .map((segment, segmentIndex) => ({ segment, segmentIndex, segmentPath: segmentPaths[segmentIndex] }))
+      .filter(item => !isReusableSegment(item.segmentPath))
+      .sort((left, right) => right.segment.text.length - left.segment.text.length);
+    for (const { segment, segmentIndex, segmentPath } of missing) {
+      if (gate.reuseOnly) {
+        writeLog('partial_waiting_for_credits');
+        console.log(JSON.stringify({
+          outputDirectory: root,
+          status: 'partial_reuse_materialized_no_provider_call',
+          setId: row.setId,
+          completedSegments: segmentPaths.filter(isReusableSegment).length,
+          totalSegments: row.segments.length,
+          protectedCreditReserve: gate.reserve,
+        }, null, 2));
+        return;
+      }
+      if (gate.allowPartialAtReserve) {
+        const subscription = await apiJson('/v1/user/subscription', gate.apiKey);
+        const providerAvailableCredits = Number(subscription.character_limit) - Number(subscription.character_count);
+        const availableCredits = Math.min(providerAvailableCredits, conservativeAvailableCredits);
+        const conservativeNextCost = Math.ceil(segment.text.length * Number(casting.credits_per_character));
+        if (availableCredits - conservativeNextCost < gate.reserve) {
+          writeLog('partial_waiting_for_credits');
+          console.log(JSON.stringify({
+            outputDirectory: root,
+            status: 'partial_waiting_for_credits',
+            setId: row.setId,
+            completedSegments: segmentPaths.filter(isReusableSegment).length,
+            totalSegments: row.segments.length,
+            providerAvailableCredits,
+            conservativeAvailableCredits,
+            protectedCreditReserve: gate.reserve,
+            nextSegmentConservativeCost: conservativeNextCost,
+          }, null, 2));
+          return;
+        }
+      }
+      writeFileSync(segmentPath, await synthesize({ apiKey: gate.apiKey, row, segment, segmentIndex }));
+      conservativeAvailableCredits -= Math.ceil(segment.text.length * Number(casting.credits_per_character));
+    }
+    for (const segmentPath of segmentPaths) assert.ok(isReusableSegment(segmentPath), `missing generated segment ${segmentPath}`);
     assemble(row, segmentPaths, targetPath);
     files.push({
       mediaId: row.mediaId, setId: row.setId, path: targetPath,
-      plannedUrl: row.plannedUrl, billableCharacters: row.sourceCharacters,
+      plannedUrl: row.plannedUrl, sourceCharacters: row.sourceCharacters,
+      reusedCharacters, reusedSegments,
+      reusedPilotCharacters, reusedPilotSegments,
+      reusedCacheCharacters, reusedCacheSegments,
+      billableCharacters: row.sourceCharacters - reusedCharacters,
       audioSha256: sha256(readFileSync(targetPath)),
     });
     writeLog('in_progress');

@@ -1,26 +1,29 @@
 {
-  "manifest_sha256": "024680660790cf1ac6e3431f4ad379c09b73e52cb67e2847484606956dbde187",
+  "manifest_sha256": "a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea",
   "model_id": "eleven_flash_v2_5",
   "credits_per_character": 0.5,
   "api_price_usd_per_1000_characters": 0.05,
   "approval": "approved_by_owner",
   "approval_scope": {
-    "pilot_set": 4,
+    "approved_sets": [4, 5],
     "approved_max_usd_before_tax": 0.75,
     "minimum_remaining_credits": 3500,
-    "approved_at": "2026-08-26T00:13:29Z"
+    "pilot_approved_at": "2026-08-26T00:13:29Z",
+    "set_5_approved_at": "2026-08-26T12:12:33Z",
+    "set_5_instruction": "Generate Set 5 at the lowest ElevenLabs credit cost without reducing IELTS fidelity."
   },
   "target": {
     "intermediate_output_format": "mp3_44100_128",
     "final_sample_rate_hz": 44100,
     "final_channels": 1,
     "final_bitrate": "64k",
-    "minimum_duration_seconds": 1625,
+    "minimum_duration_seconds": 1740,
+    "maximum_duration_seconds": 1860,
     "integrated_loudness_lufs": -18,
     "normalization_true_peak_dbfs": -2.2,
     "max_true_peak_dbfs": -1.5,
     "silence_between_conversation_turns_seconds": 0.35,
-    "silence_between_parts_seconds": 7
+    "silence_between_parts_seconds": 15
   },
   "voice_settings": {
     "stability": 0.55,
@@ -111,11 +114,11 @@
     "tutor": "lecturer"
   },
   "account_snapshot": {
-    "captured_at": "2026-08-26T00:29:00Z",
+    "captured_at": "2026-08-26T13:05:33Z",
     "tier": "creator",
-    "character_count": 113931,
+    "character_count": 117717,
     "character_limit": 121031,
-    "available_credits": 7100,
+    "available_credits": 3314,
     "next_reset_local": "2026-09-05 18:13:51 -05",
     "sufficient_for_full_batch": false
   }

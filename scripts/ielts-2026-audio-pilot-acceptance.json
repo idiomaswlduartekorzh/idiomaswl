@@ -1,6 +1,7 @@
 {
   "manifest_sha256": "024680660790cf1ac6e3431f4ad379c09b73e52cb67e2847484606956dbde187",
   "pilot_set": 4,
+  "segment_source_sha256": "552b6314452324667924bfb39e8a19abf8a1fed523de31f4ad6668b4bb4aa3fa",
   "status": "accepted_by_owner",
   "generated_at": "2026-08-26T00:18:08.562Z",
   "reassembled_at": "2026-08-26T00:27:12.493Z",

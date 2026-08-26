@@ -12,7 +12,7 @@ const pilot = JSON.parse(readFileSync(path.join(root, 'scripts', 'ielts-2026-aud
 assert.equal(casting.manifest_sha256, plan.manifestSha256, 'casting belongs to a stale IELTS audio manifest');
 assert.equal(casting.model_id, 'eleven_flash_v2_5');
 assert.equal(casting.credits_per_character, plan.invoice.creditsPerCharacter);
-assert.equal(casting.approval_scope.pilot_set, 4);
+assert.deepEqual(casting.approval_scope.approved_sets, [4, 5]);
 assert.ok(casting.approval_scope.approved_max_usd_before_tax >= 0.7185);
 assert.ok(casting.approval_scope.minimum_remaining_credits >= 3500);
 

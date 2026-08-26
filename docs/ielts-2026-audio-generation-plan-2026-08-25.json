@@ -10,8 +10,8 @@
     "rationale": "The 2,200-word threshold is a conservative WeLearn density gate derived from 44 response positions across eight official sample-task tapescripts; IELTS does not publish a transcript word minimum.",
     "minimumTranscriptWordsPerSet": 2200,
     "targetIntegralDurationSeconds": [
-      1620,
-      1980
+      1740,
+      1860
     ],
     "playback": "once"
   },
@@ -31,11 +31,11 @@
   "invoice": {
     "priceUsdPer1000Characters": 0.05,
     "creditsPerCharacter": 0.5,
-    "sourceCharacters": 242957,
-    "sourceEstimatedUsdBeforeTax": 12.1479,
-    "projectedMinimumCharactersAfterEditorialGate": 242957,
-    "projectedMinimumCreditsAfterEditorialGate": 121479,
-    "projectedMinimumUsdBeforeTax": 12.1479,
+    "sourceCharacters": 241654,
+    "sourceEstimatedUsdBeforeTax": 12.0827,
+    "projectedMinimumCharactersAfterEditorialGate": 241654,
+    "projectedMinimumCreditsAfterEditorialGate": 120827,
+    "projectedMinimumUsdBeforeTax": 12.0827,
     "retryContingencyNotIncluded": true
   },
   "rows": [
@@ -69,7 +69,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -195,7 +195,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -312,7 +312,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -321,7 +321,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -384,7 +384,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -438,7 +438,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -447,7 +447,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -555,7 +555,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -663,7 +663,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -672,7 +672,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -744,7 +744,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -811,7 +811,7 @@
         }
       ],
       "existingFile": true,
-      "existingDurationSeconds": 1459,
+      "existingDurationSeconds": 1625,
       "releaseAction": "replace-after-editorial-and-audio-qa"
     },
     {
@@ -820,20 +820,21 @@
       "plannedUrl": "/audio/ielts/ielts-listening-set-5.mp3",
       "sourceRef": "src/data/mocks/ielts-set-5.ts",
       "accentTarget": "north-american",
-      "transcriptWords": 2333,
+      "transcriptWords": 2215,
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
-      "sourceCharacters": 14361,
-      "projectedCharactersAtGate": 14361,
-      "transcriptSha256": "d504024aa1337e2285be9c99f6552d5ac6c70232cd93a81f0da9ee230563ffab",
-      "requestSegments": 88,
+      "sourceCharacters": 13058,
+      "projectedCharactersAtGate": 13058,
+      "transcriptSha256": "7db3c8149187a9749b44309bc3be84d4e34653fa028aaf2a1da988774bd8a2ee",
+      "requestSegments": 71,
       "profiles": [
         "announcer:british",
         "guide:north-american",
         "lecturer:north-american",
         "participant-woman:north-american",
         "service-staff:north-american",
-        "speaker:north-american",
+        "student-man:north-american",
+        "student-woman:north-american",
         "tutor:north-american"
       ],
       "segments": [
@@ -844,7 +845,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -894,24 +895,6 @@
         {
           "kind": "content",
           "part": 1,
-          "profile": "service-staff:north-american",
-          "characters": 295,
-          "words": 50,
-          "textSha256": "ef7de60e578bce512e8ba92df0fa32c1b41c99aa29ce51a5de9536ec8b9e508a",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "participant-woman:north-american",
-          "characters": 208,
-          "words": 34,
-          "textSha256": "04c66a97b386a2a9fdec823e531a59cb47876f84009c0e22369f4b36a7ba0c3a",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
           "profile": "participant-woman:north-american",
           "characters": 33,
           "words": 4,
@@ -922,9 +905,27 @@
           "kind": "content",
           "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 72,
-          "words": 15,
-          "textSha256": "d946ebfdf77e5530aa805ddeb16f3d2d8346364bcc82e930f932a1c202d9d5f8",
+          "characters": 234,
+          "words": 42,
+          "textSha256": "2e0835fe4d4fb2daf4dce034d64f5e9eb4b91597c58f3522e1cbab15f846cc71",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-woman:north-american",
+          "characters": 73,
+          "words": 13,
+          "textSha256": "ed7636695479aa979dd47555d6400ec2c30bfd673759c84207954b47fa76f135",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 188,
+          "words": 35,
+          "textSha256": "476f08808e7c1e403f68ed7e8beafe931ea2d89c1389a425ad54c42101814007",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -957,24 +958,6 @@
         {
           "kind": "content",
           "part": 1,
-          "profile": "participant-woman:north-american",
-          "characters": 230,
-          "words": 36,
-          "textSha256": "080f6849f06cdf7a712fb84d172ecb75cb9cde99dca4c23b36db848177ccaeb9",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "service-staff:north-american",
-          "characters": 162,
-          "words": 28,
-          "textSha256": "1e9c2e97276bf8316ffb4ec688aa17db964c06ad7b1b05f1f08d460dacb319bb",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
           "profile": "service-staff:north-american",
           "characters": 98,
           "words": 19,
@@ -985,9 +968,9 @@
           "kind": "content",
           "part": 1,
           "profile": "participant-woman:north-american",
-          "characters": 121,
-          "words": 23,
-          "textSha256": "4460b04e6e8f331f4a84f0a77e4546308cac4b7e3f3a3503c4b5a6c8eb20d07d",
+          "characters": 192,
+          "words": 34,
+          "textSha256": "879f7ea8292c6a7d5699db612ec9bac803519d50d909e3592aea5ed32c04fe5b",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -997,7 +980,25 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 310,
+          "words": 54,
+          "textSha256": "d41c626b634ec93be2deb43e09a2259cfb310e9ce3b964a684e21e48e68e4650",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-woman:north-american",
+          "characters": 62,
+          "words": 11,
+          "textSha256": "4afd579767f9f79c89b06bd732d9e600ad6cda7322ed13450af5ef5de288910d",
+          "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
@@ -1015,24 +1016,6 @@
           "characters": 64,
           "words": 11,
           "textSha256": "58b49d25d5230cf1c7e090f05c13b8e63ba34616f9d2c5039cc9b74c46a48de2",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "service-staff:north-american",
-          "characters": 245,
-          "words": 42,
-          "textSha256": "1934b7f01e0c10ef77066344eed1b590f683410ee91027a60dba234181f31bfe",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "participant-woman:north-american",
-          "characters": 154,
-          "words": 23,
-          "textSha256": "be297aa4d19779af926916c4124c1f541ff698912abc5dfac5ad77a372fce9b0",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1075,27 +1058,27 @@
           "kind": "content",
           "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 171,
+          "characters": 148,
           "words": 27,
-          "textSha256": "582abbbf4b1a43f2a5f54aea1e637e76338c76d54fad014ee936e77728dad9bb",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "service-staff:north-american",
-          "characters": 298,
-          "words": 48,
-          "textSha256": "0f9aacad521f9dfc812bdd4e3d0cd5c2f33d515c12e4accb127277316f98bc6e",
+          "textSha256": "8e3c7a7997fa9811e30e209522318a8daeabe9ef2dda9b680da030735fee6065",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 1,
           "profile": "participant-woman:north-american",
-          "characters": 98,
-          "words": 17,
-          "textSha256": "8beb5f26f94cc8e1da0cc97c5cf22b7672b0566063fd719f4b04ab314dbbf215",
+          "characters": 54,
+          "words": 12,
+          "textSha256": "4b27ff519e67a0fb8c06334d77eb14c2c760c2ed21a802daa85aac027452c328",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 315,
+          "words": 53,
+          "textSha256": "01a129e151897668839f08fbd08917bed2d1ce5dfe79cb5842f97980115e363b",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1141,7 +1124,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -1150,60 +1133,15 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
           "part": 2,
           "profile": "guide:north-american",
-          "characters": 183,
-          "words": 28,
-          "textSha256": "574cde0672cca7c5f616de52d29dfc36cca4cafe105ed5b937fc5a3d4f558947",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 468,
-          "words": 81,
-          "textSha256": "0cd5c58507fd6784b5c64919e7294a35e3b099903d535d7ec16e8352778b241f",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 419,
-          "words": 62,
-          "textSha256": "bfc6334cdabecb7399773c6aade3bf0d255801312326bf52dfbcfc24282db64a",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 252,
-          "words": 44,
-          "textSha256": "f834b82223efd1f181a6459bac09b916261c71f30d93ea451f6762ec8a2cd6e2",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 408,
-          "words": 63,
-          "textSha256": "03a837d4be3b3abf129ae017bfa54b04f380fb6132621d87e9207e564950c0ea",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 361,
-          "words": 64,
-          "textSha256": "fa952c63a0d29352f470dc30bfa11af0d5017e7ba2f33735fffa5f1c0c14ea85",
+          "characters": 1639,
+          "words": 279,
+          "textSha256": "db578ed7215f9d65c6266e3e4c333fb80f9773d3f459f4121a7e63b5632fbaa7",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1213,51 +1151,15 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
           "part": 2,
           "profile": "guide:north-american",
-          "characters": 183,
-          "words": 33,
-          "textSha256": "c0862e267800a5d7dfd8106158e45cfe70a7cc0bc7cb95f2ff1d5eef82fa4f1e",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 395,
-          "words": 61,
-          "textSha256": "0562711a52051ba5c682ab015bdc1331dbe20f6040b7fabddef49aec0beb6dd9",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 182,
-          "words": 28,
-          "textSha256": "ae89c603baecd46cd4af43e9308892d3c13bfe1edd311cdd5fe8affa80f91659",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 300,
-          "words": 52,
-          "textSha256": "3a1a334de24e472766409b8515ae99b984a81ebf9805e19f87b6a3a618f2d16f",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 2,
-          "profile": "guide:north-american",
-          "characters": 274,
-          "words": 48,
-          "textSha256": "9f26e6d946b963003546cd16c6051e5b35ed1654b2915c9d0c25e386207e4b64",
+          "characters": 1521,
+          "words": 272,
+          "textSha256": "5cd384cf5740f2f6e92fd0ae00785aa2297c0cd286e99cea2c65c9681c9b05d3",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1267,7 +1169,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -1276,7 +1178,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -1290,7 +1192,7 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
+          "profile": "student-woman:north-american",
           "characters": 62,
           "words": 10,
           "textSha256": "b7f2e2c588c4e62cba6847a038e9251661b0fc594d378781a4522bcb1d486c68",
@@ -1308,28 +1210,10 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
+          "profile": "student-man:north-american",
           "characters": 91,
           "words": 19,
           "textSha256": "a81c231c7064ed91877d3b4e66b7363c8ec338711c2b1e7956797d5a5fcb12b4",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "tutor:north-american",
-          "characters": 259,
-          "words": 44,
-          "textSha256": "a34c4ddcb9e0f444c2f7e41fdc172037729c76d7c167d5344da4d80c5312205d",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "speaker:north-american",
-          "characters": 159,
-          "words": 24,
-          "textSha256": "bb859984286005ede95e6638fa54c9c1151f0d4da4225d672289dd61a79f04cc",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1344,10 +1228,28 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
-          "characters": 85,
-          "words": 15,
-          "textSha256": "9be595e18b610cbb2c0134483151147230d15b585957692c14f1ed6d5b475c2b",
+          "profile": "student-man:north-american",
+          "characters": 81,
+          "words": 14,
+          "textSha256": "5350fcc269e69a1d19be7b62d678bca62e2d36b6fe671978da88e9c565afbb9b",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 275,
+          "words": 47,
+          "textSha256": "3e23e831db225c2fed26058088f43c79311ee3cb8a2bc74831a58116dd732a8b",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-woman:north-american",
+          "characters": 142,
+          "words": 25,
+          "textSha256": "f3acb9ee33ab4cf6eec2c9d3edba55727331d1ba968452735644c922e561e66e",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1362,38 +1264,11 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
-          "characters": 278,
-          "words": 41,
-          "textSha256": "6f5f65dfa1fa19207d829a112f169a164aa8d4d9af7f44be6afe766da0aab0ed",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "tutor:north-american",
-          "characters": 64,
-          "words": 8,
-          "textSha256": "7576369decdb6e46ee79c13b7188fe087e31c70a37cd100287d45c93dead0047",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "speaker:north-american",
+          "profile": "student-man:north-american",
           "characters": 60,
           "words": 12,
           "textSha256": "c658678160d5586840dd96c6a7c58570fee28c5b95a729cf52cc594357ec8a5d",
           "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "announcer",
-          "part": 3,
-          "profile": "announcer:british",
-          "characters": 61,
-          "words": 10,
-          "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
         },
         {
           "kind": "content",
@@ -1407,28 +1282,55 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
-          "characters": 102,
-          "words": 21,
-          "textSha256": "96fb87ded2a620fef75b99c6bf9dfca9df22ff3ecb87eee4867a60ee8fbaf74c",
+          "profile": "student-woman:north-american",
+          "characters": 62,
+          "words": 13,
+          "textSha256": "9aa67017f1effec5a92602b1995415e7b50a44df599553518eebd4f6ec1f0199",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "tutor:north-american",
-          "characters": 235,
-          "words": 38,
-          "textSha256": "0930955afeb0466e066d0d88f7b1aaa8b444541af4a3450195dc1cbe083d10a1",
+          "characters": 227,
+          "words": 39,
+          "textSha256": "b0f90286017623e3379aae47aeb704540d70f736039603ded0725b013b3a421f",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "announcer",
+          "part": 3,
+          "profile": "announcer:british",
+          "characters": 61,
+          "words": 10,
+          "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
+          "pauseAfterSeconds": 60
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:north-american",
+          "characters": 31,
+          "words": 6,
+          "textSha256": "7e6b2235a3557dc7a46d78bbf3e12a7848b468d08084a98df0a3127c3ff7cb44",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
-          "characters": 160,
-          "words": 25,
-          "textSha256": "56a5ce3ece82db77f817ee1a6b67e7e279e29c660a6908187406a95b367403fd",
+          "profile": "tutor:north-american",
+          "characters": 84,
+          "words": 14,
+          "textSha256": "324fd5144cc45826af4fd89d694255da24b2bf67777b8d4ffd48abc17b30302d",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-woman:north-american",
+          "characters": 102,
+          "words": 21,
+          "textSha256": "96fb87ded2a620fef75b99c6bf9dfca9df22ff3ecb87eee4867a60ee8fbaf74c",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1443,7 +1345,7 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
+          "profile": "student-man:north-american",
           "characters": 27,
           "words": 6,
           "textSha256": "9163c539631f2ef274fa6af63aa5fca62cdec7a9236fefff3846ed28871a8899",
@@ -1461,25 +1363,43 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
-          "characters": 209,
-          "words": 32,
-          "textSha256": "e03361e5f12a0c824c6989053aa58ce22361cf64e25d37ea2817cfa560c750e4",
+          "profile": "student-woman:north-american",
+          "characters": 46,
+          "words": 9,
+          "textSha256": "13016c8bef30e584986e387831ec348f653a2982917cdfbce4d083747d17ad8c",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "tutor:north-american",
-          "characters": 126,
-          "words": 21,
-          "textSha256": "126b47c068449299d2b02eea4197944b34637f32c1b28c68460e3fc8a482a487",
+          "characters": 176,
+          "words": 31,
+          "textSha256": "f7a05bfbcc9505e804de6791d0f6dd1a27e20d19b4725faa42f0fb33c56255c9",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
+          "profile": "student-man:north-american",
+          "characters": 41,
+          "words": 7,
+          "textSha256": "5c1ed5b8629f5c3ce6154146958921b21e86746257535247c093d6e5e8a9edec",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 60,
+          "words": 10,
+          "textSha256": "1fdb46b2e4590b86bad7c28a2b39970b86d188189d4305eeccfa6249afa1a473",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-woman:north-american",
           "characters": 30,
           "words": 4,
           "textSha256": "9bc06df4ecca8a37a3cb3fb3b6395825250aea064f13a623e733ebe093ee4308",
@@ -1497,7 +1417,7 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:north-american",
+          "profile": "student-man:north-american",
           "characters": 16,
           "words": 3,
           "textSha256": "cfcc24e49b5b5b39e4800d801568df5665a9ac01c7929855478b08940605f97b",
@@ -1510,7 +1430,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -1519,51 +1439,15 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
           "part": 4,
           "profile": "lecturer:north-american",
-          "characters": 160,
-          "words": 27,
-          "textSha256": "cea98dcc59334979eec14bfabbaa737b92dbaf2cdf1e80b2a5882c5005f40940",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 4,
-          "profile": "lecturer:north-american",
-          "characters": 477,
-          "words": 78,
-          "textSha256": "b54d9417d45cf6dd70098ffe29d4f32833b24e2141e1219d0a9c2a2b388dd504",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 4,
-          "profile": "lecturer:north-american",
-          "characters": 452,
-          "words": 63,
-          "textSha256": "94a51375774dcc38b9e4acbaccfd31706231d51c58ed9d3dba77fc03b64b313e",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 4,
-          "profile": "lecturer:north-american",
-          "characters": 485,
-          "words": 80,
-          "textSha256": "d1ce5807b6a06bc9eeeb44247c49842faf72760a2108b416c311a2e5dbb93cba",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 4,
-          "profile": "lecturer:north-american",
-          "characters": 381,
-          "words": 51,
-          "textSha256": "4d56c716184a1ba0739734626f7962c2b5b9d07d3c9f7fdb5c8210bf13bb9969",
+          "characters": 1999,
+          "words": 323,
+          "textSha256": "544cf530eddd3c7de06a55b7bb157779e7323c1fc4054ffe75a67851ebb1f832",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1573,51 +1457,15 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
           "part": 4,
           "profile": "lecturer:north-american",
-          "characters": 410,
-          "words": 70,
-          "textSha256": "45ea9bb9ae5e54acf841b4558e2855b154a94b8fabfea7dc08c92dfdc0eb7c2b",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 4,
-          "profile": "lecturer:north-american",
-          "characters": 369,
-          "words": 55,
-          "textSha256": "e186cfae54929ee56d57c99ce8797edcb44782f3f254be109a0060766365759d",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 4,
-          "profile": "lecturer:north-american",
-          "characters": 352,
-          "words": 62,
-          "textSha256": "298cae9ab8069ecaccb48ce46a851afbe03600ce41dd074d718c44673311561a",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 4,
-          "profile": "lecturer:north-american",
-          "characters": 363,
-          "words": 51,
-          "textSha256": "ea38d8d0c2ab097eae1314a838bc8f0ebce1523121c935f31644e8e422009ec1",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 4,
-          "profile": "lecturer:north-american",
-          "characters": 147,
-          "words": 28,
-          "textSha256": "2b7ada37abfd097796d68c20a3195e4c997634c459626371d4b9395ddcc2ed7a",
+          "characters": 1387,
+          "words": 228,
+          "textSha256": "24041e90294eef92c7d3bf21c555580168bc01626f5db9a80b6273c15072c896",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1665,7 +1513,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -1827,7 +1675,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -1980,7 +1828,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -1989,7 +1837,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2052,7 +1900,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2106,7 +1954,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -2115,7 +1963,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2214,7 +2062,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2313,7 +2161,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -2322,7 +2170,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2385,7 +2233,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2465,6 +2313,7 @@
         "lecturer:new-zealand",
         "participant-woman:new-zealand",
         "speaker:new-zealand",
+        "student-man:new-zealand",
         "tutor:new-zealand"
       ],
       "segments": [
@@ -2475,7 +2324,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2628,7 +2477,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2772,7 +2621,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -2781,7 +2630,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2862,7 +2711,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2934,7 +2783,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -2943,7 +2792,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -2975,7 +2824,7 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:new-zealand",
+          "profile": "student-man:new-zealand",
           "characters": 117,
           "words": 21,
           "textSha256": "ee0660a69da1d8d643fdf953dea9a0908af2638d150233101e7198ecf566bea5",
@@ -3029,7 +2878,7 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:new-zealand",
+          "profile": "student-man:new-zealand",
           "characters": 88,
           "words": 13,
           "textSha256": "d6860a29a31e93ef89d9007a8f18179c90da3a584750a054809ca83d1b5d65a8",
@@ -3087,12 +2936,12 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:new-zealand",
+          "profile": "student-man:new-zealand",
           "characters": 68,
           "words": 11,
           "textSha256": "8533032a96b0980bc792cd59759bd9202fd2b1c42a161803f196684534ea3716",
@@ -3146,7 +2995,7 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:new-zealand",
+          "profile": "student-man:new-zealand",
           "characters": 52,
           "words": 11,
           "textSha256": "6e75469de7a69b279d311ce80484293d8dad4c77725320767ac8f8f33fc2736d",
@@ -3200,7 +3049,7 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "speaker:new-zealand",
+          "profile": "student-man:new-zealand",
           "characters": 20,
           "words": 4,
           "textSha256": "62be09b90019c55aeb24f8897aaceb00739d46ba8201c3d8c169dde50ab61a5e",
@@ -3222,7 +3071,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -3231,7 +3080,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -3312,7 +3161,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -3430,7 +3279,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -3601,7 +3450,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -3763,7 +3612,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -3772,7 +3621,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -3853,7 +3702,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -3925,7 +3774,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -3934,7 +3783,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4078,7 +3927,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4213,7 +4062,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -4222,7 +4071,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4312,7 +4161,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4430,7 +4279,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4583,7 +4432,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4727,7 +4576,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -4736,7 +4585,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4799,7 +4648,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4853,7 +4702,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -4862,7 +4711,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -4979,7 +4828,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5096,7 +4945,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -5105,7 +4954,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5159,7 +5008,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5250,7 +5099,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5394,7 +5243,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5538,7 +5387,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -5547,7 +5396,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5601,7 +5450,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5655,7 +5504,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -5664,7 +5513,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5763,7 +5612,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5862,7 +5711,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -5871,7 +5720,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -5925,7 +5774,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6015,7 +5864,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6168,7 +6017,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6321,7 +6170,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -6330,7 +6179,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6393,7 +6242,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6456,7 +6305,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -6465,7 +6314,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6573,7 +6422,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6681,7 +6530,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -6690,7 +6539,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6753,7 +6602,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -6854,7 +6703,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7007,7 +6856,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7160,7 +7009,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -7169,7 +7018,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7241,7 +7090,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7304,7 +7153,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -7313,7 +7162,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7448,7 +7297,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7583,7 +7432,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -7592,7 +7441,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7655,7 +7504,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7746,7 +7595,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -7899,7 +7748,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8043,7 +7892,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -8052,7 +7901,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8106,7 +7955,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8151,7 +8000,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -8160,7 +8009,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8277,7 +8126,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8394,7 +8243,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -8403,7 +8252,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8466,7 +8315,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8558,7 +8407,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8702,7 +8551,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8846,7 +8695,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -8855,7 +8704,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8909,7 +8758,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -8954,7 +8803,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -8963,7 +8812,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9080,7 +8929,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9197,7 +9046,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -9206,7 +9055,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9269,7 +9118,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9361,7 +9210,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9514,7 +9363,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9658,7 +9507,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -9667,7 +9516,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9721,7 +9570,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9775,7 +9624,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -9784,7 +9633,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9892,7 +9741,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -9991,7 +9840,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -10000,7 +9849,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10063,7 +9912,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10164,7 +10013,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10317,7 +10166,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10461,7 +10310,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -10470,7 +10319,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10542,7 +10391,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10605,7 +10454,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -10614,7 +10463,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10731,7 +10580,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10839,7 +10688,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -10848,7 +10697,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -10911,7 +10760,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11012,7 +10861,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11174,7 +11023,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11327,7 +11176,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -11336,7 +11185,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11390,7 +11239,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11435,7 +11284,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -11444,7 +11293,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11552,7 +11401,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11660,7 +11509,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -11669,7 +11518,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11723,7 +11572,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11806,7 +11655,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -11968,7 +11817,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12121,7 +11970,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -12130,7 +11979,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12184,7 +12033,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12229,7 +12078,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -12238,7 +12087,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12346,7 +12195,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12454,7 +12303,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -12463,7 +12312,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12517,7 +12366,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12609,7 +12458,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12753,7 +12602,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12888,7 +12737,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -12897,7 +12746,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -12951,7 +12800,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13005,7 +12854,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -13014,7 +12863,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13122,7 +12971,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13230,7 +13079,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -13239,7 +13088,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13293,7 +13142,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13385,7 +13234,7 @@
           "characters": 41,
           "words": 8,
           "textSha256": "c39599ce1bc9e11d4fb34d748dec49ecd4ba5d469897ba167f1f5cb7f00b2bb2",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13547,7 +13396,7 @@
           "characters": 60,
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13700,7 +13549,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "6b44c90761925d0b7fc0f85fffb80f4e34d4f528355ffeb5690d528370da70f7",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -13709,7 +13558,7 @@
           "characters": 43,
           "words": 8,
           "textSha256": "6d9e3a1eb95d3fbd600a91e733e4377d45fccc3dd0ffbd9ba18409099e074ed9",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13772,7 +13621,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "c5ef82b1996914f781281893ae7d5035238f0978074e149dd31424b195c00e08",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13826,7 +13675,7 @@
           "characters": 41,
           "words": 7,
           "textSha256": "bfc6da50a5c9ef831cf280245a8c116440d04891cbaa21a86677690a44b6ad44",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -13835,7 +13684,7 @@
           "characters": 45,
           "words": 8,
           "textSha256": "e494f90cbaa484064a4250d45b02c0db92a948c4aacf1c896ec54e8d9ccf93c3",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -13952,7 +13801,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -14060,7 +13909,7 @@
           "characters": 43,
           "words": 7,
           "textSha256": "70c7ab65616c4d93629f438c787db671d7bd79c95ed08a176c8103726ad99637",
-          "pauseAfterSeconds": 30
+          "pauseAfterSeconds": 45
         },
         {
           "kind": "announcer",
@@ -14069,7 +13918,7 @@
           "characters": 44,
           "words": 8,
           "textSha256": "b6242c04e76d3b948fbf56dd83a9058e6596b0b1eea0514f898cc6008983a0c1",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -14132,7 +13981,7 @@
           "characters": 61,
           "words": 10,
           "textSha256": "b909ba2cdcc28ad93fd9144c3d0ce7fa561a6173b57074fbb1655f2ee7bcdfa5",
-          "pauseAfterSeconds": 45
+          "pauseAfterSeconds": 60
         },
         {
           "kind": "content",
@@ -14194,5 +14043,5 @@
       "releaseAction": "generate-after-editorial-and-audio-qa"
     }
   ],
-  "manifestSha256": "024680660790cf1ac6e3431f4ad379c09b73e52cb67e2847484606956dbde187"
+  "manifestSha256": "a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea"
 }
