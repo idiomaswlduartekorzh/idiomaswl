@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { chromium } from '@playwright/test';
 
 const base = process.env.IELTS_SMOKE_BASE ?? 'http://127.0.0.1:3137';
@@ -10,6 +11,7 @@ const viewports = [
 ];
 const browser = await chromium.launch({ headless: true });
 const browserErrors = [];
+const acceptedSet4Sha256 = '4fef56f5678bce1405bfa58cfc4619bf9e81c77a57132ad64173998b37c72ed2';
 
 try {
   for (const viewport of viewports) {
@@ -26,6 +28,25 @@ try {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth), false, `${viewport.name}: catalog overflow`);
     await page.getByRole('heading', { level: 1 }).waitFor();
 
+    const set4 = await page.goto(`${base}/examenes/ielts/practica/set-4`, { waitUntil: 'domcontentloaded', timeout: 30_000 });
+    assert.equal(set4?.status(), 200, `${viewport.name}: Set 4 status`);
+    assert.doesNotMatch(await page.locator('body').innerText(), /versión heredada|Listening pendiente/i);
+    await page.getByRole('button', { name: 'Empezar examen' }).click();
+    await page.getByRole('heading', { level: 1, name: 'IELTS Academic Set 4' }).waitFor();
+    const acceptedListeningTab = page.locator('nav[aria-label="Secciones del simulacro"] button').filter({ hasText: /^Listening/ });
+    assert.equal(await acceptedListeningTab.isDisabled(), false, `${viewport.name}: accepted Listening must be enabled`);
+    const set4Audio = page.locator('audio[src*="ielts-listening-set-4.mp3"]');
+    await set4Audio.waitFor({ state: 'attached' });
+    const set4AudioSrc = await set4Audio.getAttribute('src');
+    assert.ok(set4AudioSrc, `${viewport.name}: Set 4 audio src`);
+    if (viewport.name === 'desktop') {
+      const audioResponse = await page.request.get(new URL(set4AudioSrc, base).toString());
+      assert.equal(audioResponse.status(), 200, 'Set 4 audio response');
+      assert.match(audioResponse.headers()['content-type'] ?? '', /^audio\/mpeg/);
+      assert.equal(createHash('sha256').update(await audioResponse.body()).digest('hex'), acceptedSet4Sha256, 'served Set 4 audio must be the accepted master');
+    }
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth), false, `${viewport.name}: Set 4 runner overflow`);
+
     const set5 = await page.goto(`${base}/examenes/ielts/practica/set-5`, { waitUntil: 'domcontentloaded', timeout: 30_000 });
     assert.equal(set5?.status(), 200, `${viewport.name}: Set 5 status`);
     assert.match(await page.locator('body').innerText(), /versión heredada|audio final 2026|revisión editorial/i);
@@ -36,7 +57,8 @@ try {
     await page.getByRole('button', { name: 'Empezar examen' }).click();
     await page.getByRole('heading', { level: 1, name: 'IELTS Academic Set 13' }).waitFor();
     await page.getByRole('button', { name: /^Reading\b/ }).waitFor();
-    assert.equal(await page.getByRole('button', { name: /^Listening\b/ }).isDisabled(), true, `${viewport.name}: unavailable Listening must stay disabled`);
+    const unavailableListeningTab = page.locator('nav[aria-label="Secciones del simulacro"] button').filter({ hasText: /^Listening/ });
+    assert.equal(await unavailableListeningTab.isDisabled(), true, `${viewport.name}: unavailable Listening must stay disabled`);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth), false, `${viewport.name}: runner overflow`);
     await page.close();
   }
@@ -51,7 +73,8 @@ try {
   assert.deepEqual(browserErrors, [], browserErrors.join('\n'));
   console.log(JSON.stringify({
     catalog: 200,
-    sets: [5, 13],
+    sets: [4, 5, 13],
+    set4AudioSha256: acceptedSet4Sha256,
     viewports: viewports.map(viewport => viewport.name),
     locks: 0,
     averageUserJourney: 'intro-to-reading',

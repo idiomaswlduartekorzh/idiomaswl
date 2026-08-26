@@ -30,7 +30,7 @@ pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 
 | Set | Resp. L/R | Palabras Listening | Palabras Reading | MP3 integral | Claves cliente |
 |---:|---:|---:|---:|---|---:|
-| 4 | 40/40 | 2.255 | 2.184 | REEMPLAZAR · 24,3 min | 0 |
+| 4 | 40/40 | 2.255 | 2.184 | OK · 27,1 min | 0 |
 | 5 | 40/40 | 2.333 | 2.180 | REEMPLAZAR · 24,0 min | 0 |
 | 6 | 40/40 | 2.333 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
 | 7 | 40/40 | 2.326 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
@@ -57,10 +57,10 @@ cada bloque original y deja los guiones en 2.254–2.404 palabras; cada parte qu
 555 y 620 palabras. No hay bloques largos duplicados ni coincidencias exactas de 50
 palabras entre dos sets.
 
-Los nueve MP3 existentes duran 24,0–24,3 minutos y contienen pausas extensas; quedan
-marcados para reemplazo por una simulación de 27–33 minutos. Los ocho MP3 13–20 no
-existen. Los 17 guiones ya superan el gate; ahora deben reemplazarse nueve audios y
-generarse ocho con la nueva fuente.
+El master v2 del Set 4 fue aceptado y publicado con 27:05. Los ocho MP3 heredados 5–12
+duran 24,0 minutos y contienen pausas extensas; quedan marcados para reemplazo por una
+simulación de 27–33 minutos. Los ocho MP3 13–20 no existen. Los 17 guiones ya superan
+el gate; faltan por reemplazar ocho audios y generar ocho con la nueva fuente.
 
 ## Hallazgos editoriales
 
@@ -149,8 +149,9 @@ eliminar la antigua deriva en la navegación compartida.
    la cuenta conserva 7.100 créditos.
 2. El piloto Set 4 pasó QA técnica (27:05, mono 44,1 kHz/64 kbps, -18,48 LUFS,
    pico -1,64 dBFS) y transcript↔Whisper (`small.en`, WER 2,36 %, completion 27/27).
-   Falta exclusivamente la escucha y aceptación humana antes de liberarlo o generar más sets.
-3. Reemplazar los nueve MP3 4–12 y generar los ocho MP3 13–20 con duración 27–33 min,
+   El propietario lo escuchó, aprobó y autorizó explícitamente su publicación; el MP3 público
+   coincide con el hash aceptado `4fef56f5678bce1405bfa58cfc4619bf9e81c77a57132ad64173998b37c72ed2`.
+3. Reemplazar los ocho MP3 5–12 y generar los ocho MP3 13–20 con duración 27–33 min,
    reproducción única, mono 44,1 kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
 4. Contrastar los 17 audios transcript↔Whisper, revisar muestras humanas y registrar
    tamaño, hash, duración, loudness, pico y silencios. El plan actualizado proyecta
@@ -184,6 +185,6 @@ npx tsc --noEmit
 npx next build --webpack
 ```
 
-La salida `BLOCKED` sigue siendo intencional: impide presentar Sets 4–20 como equivalentes
-en Listening hasta que el piloto obtenga aceptación humana y los 17 audios v2 pasen el mismo
-gate técnico y editorial usado en TOEFL.
+La salida `BLOCKED (16)` sigue siendo intencional: Set 4 está liberado, pero impide presentar
+Sets 5–20 como equivalentes en Listening hasta que sus 16 audios v2 pasen el mismo gate técnico,
+transcript↔audio y editorial usado en el piloto.

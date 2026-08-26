@@ -126,7 +126,8 @@ function withAuditedListeningDensity(sections: MockSection[], setNumber: number)
  */
 export function withIeltsAcademic2026Blueprint(mock: MockExam): MockExam {
   const setNumber = Number(mock.id.replace(/^set-/, ''));
-  const hasLegacyListeningAudio = setNumber >= 4 && setNumber <= 12;
+  const hasReadyListeningAudio = setNumber === 4;
+  const hasLegacyListeningAudio = setNumber >= 5 && setNumber <= 12;
   const listeningExpandedSections = withAuditedListeningDensity(mock.sections, setNumber);
   const expandedSections = withAuditedReadingLength(listeningExpandedSections, setNumber);
   const balancedSections = withBalancedMcqPositions(expandedSections, setNumber);
@@ -134,6 +135,9 @@ export function withIeltsAcademic2026Blueprint(mock: MockExam): MockExam {
     ...mock,
     sections: balancedSections.map((section) => {
       if (section.skill !== 'listening') return section;
+      if (hasReadyListeningAudio) {
+        return { ...section, mediaStatus: 'ready-existing' as const };
+      }
       if (hasLegacyListeningAudio) {
         return { ...section, mediaStatus: 'legacy-audio-under-review' as const };
       }
@@ -179,7 +183,11 @@ export function withIeltsAcademic2026Blueprint(mock: MockExam): MockExam {
       ],
       readingTargetWords: [2150, 2750],
       listeningPlayback: 'once',
-      listeningMediaStatus: hasLegacyListeningAudio ? 'legacy-audio-under-review' : 'script-ready-audio-blocked',
+      listeningMediaStatus: hasReadyListeningAudio
+        ? 'ready-existing'
+        : hasLegacyListeningAudio
+          ? 'legacy-audio-under-review'
+          : 'script-ready-audio-blocked',
       speakingMode: 'recorded-welearn-simulation',
     },
   };

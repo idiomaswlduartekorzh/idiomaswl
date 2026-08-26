@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import test from 'node:test';
 import set4 from '../src/data/mocks/ielts-set-4.ts';
+import set5 from '../src/data/mocks/ielts-set-5.ts';
 import set13 from '../src/data/mocks/ielts-set-13.ts';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
 import { toPublicIeltsMock } from '../src/data/mocks/ielts-public-payload.ts';
@@ -84,6 +85,14 @@ test('sets whose integral Listening media is absent are visibly blocked, not sil
   const listening = mock.sections.filter(section => section.skill === 'listening');
   assert.equal(listening.length, 4);
   assert.ok(listening.every(section => section.comingSoon && !section.audioUrl));
+});
+
+test('only owner-accepted Listening media is marked ready', () => {
+  const acceptedPilot = withIeltsAcademic2026Blueprint(set4);
+  const legacyAudio = withIeltsAcademic2026Blueprint(set5);
+  assert.equal(acceptedPilot.ieltsAcademic2026Blueprint.listeningMediaStatus, 'ready-existing');
+  assert.ok(acceptedPilot.sections.filter(section => section.skill === 'listening').every(section => section.mediaStatus === 'ready-existing'));
+  assert.equal(legacyAudio.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');
 });
 
 test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 words', async () => {

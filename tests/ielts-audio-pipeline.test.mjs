@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
@@ -17,6 +18,12 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.equal(casting.target.minimum_duration_seconds, 1625);
   assert.ok(casting.target.normalization_true_peak_dbfs < casting.target.max_true_peak_dbfs);
   assert.equal(casting.target.silence_between_parts_seconds, 7);
+  assert.equal(pilot.status, 'accepted_by_owner');
+  assert.equal(
+    createHash('sha256').update(readFileSync('public/audio/ielts/ielts-listening-set-4.mp3')).digest('hex'),
+    pilot.audio_sha256,
+    'the public Set 4 MP3 must be the exact owner-accepted master',
+  );
   for (const row of plan.rows) {
     const announcements = row.segments.filter(segment => segment.kind === 'announcer');
     assert.equal(announcements.length, 12, `${row.setId} must announce both question blocks and review time in every part`);
@@ -54,9 +61,9 @@ test('paid generation cannot exceed the owner-approved ceiling before any secret
   assert.notEqual(insufficientReserve.status, 0);
   assert.match(insufficientReserve.stderr, /below owner-approved 3500/);
   assert.equal(casting.approval, 'approved_by_owner');
-  assert.equal(pilot.status, 'technical_and_transcript_qa_passed_pending_owner_listening_review');
+  assert.equal(pilot.status, 'accepted_by_owner');
   assert.ok(pilot.audio_sha256);
   assert.ok(pilot.qa_report_sha256);
   assert.ok(pilot.transcript_qa_report_sha256);
-  assert.equal(pilot.approved_at, null);
+  assert.ok(pilot.approved_at);
 });
