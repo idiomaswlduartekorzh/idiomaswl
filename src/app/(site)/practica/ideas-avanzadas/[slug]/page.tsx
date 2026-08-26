@@ -9,7 +9,8 @@ import GuidedAdvancedLessonClient from './GuidedAdvancedLessonClient'
 type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
-  return [...ADVANCED_LESSONS, ...GUIDED_ADVANCED_LESSONS].map((lesson) => ({ slug: lesson.slug }))
+  return [...new Set([...ADVANCED_LESSONS, ...GUIDED_ADVANCED_LESSONS].map((lesson) => lesson.slug))]
+    .map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -18,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!topic || topic.status === 'planned') return {}
 
   return {
-    title: `${topic.title} en inglés B2–C1 | Ciclo integrado`,
-    description: `${topic.premise} Practica escucha, lectura larga, vocabulario, análisis y producción en inglés avanzado.`,
+    title: `${topic.title} in English B2–C1 | Integrated cycle`,
+    description: `${topic.premise} Practise listening, long-form reading, vocabulary, analysis and production in advanced English.`,
     alternates: { canonical: `https://www.idiomaswl.com/practica/ideas-avanzadas/${topic.slug}` },
     openGraph: {
-      title: `${topic.titleEn} — práctica integrada`,
+      title: `${topic.titleEn} — integrated practice`,
       description: topic.premise,
       url: `https://www.idiomaswl.com/practica/ideas-avanzadas/${topic.slug}`,
     },
@@ -53,16 +54,16 @@ export default async function AdvancedTopicPage({ params }: Props) {
   return (
     <>
       <LearningResourceSchema
-        name={`${lesson.title} — ciclo integrado B2–C1`}
+        name={`${lesson.title} — integrated B2–C1 cycle`}
         url={url}
         description={lesson.objective}
         inLanguage="en"
         keywords={keywords}
       />
       <QuizSchema
-        name={`${lesson.title} — ejercicios de comprensión y aplicación`}
+        name={`${lesson.title} — comprehension and application practice`}
         url={url}
-        description="Preguntas de escucha, lectura crítica, vocabulario académico y aplicación argumentada."
+        description="Listening questions, critical reading, academic vocabulary and evidence-based application."
       />
       {lessonClient}
     </>

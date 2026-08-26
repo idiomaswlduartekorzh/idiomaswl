@@ -40,21 +40,21 @@ unique(ADVANCED_LESSONS.map(({ sequence }) => sequence), 'Secuencias de leccione
 if (ADVANCED_CYCLE.length !== 6) fail(`El ciclo debe conservar 6 movimientos; tiene ${ADVANCED_CYCLE.length}.`)
 if (ADVANCED_LESSONS.length < PUBLISHED_FLOOR) fail(`Cayó por debajo del piso de ${PUBLISHED_FLOOR} lecciones.`)
 
-const availableTopics = ADVANCED_TOPICS.filter(({ status }) => status === 'available')
-if (availableTopics.length !== ADVANCED_LESSONS.length) {
-  fail(`Hay ${availableTopics.length} temas disponibles y ${ADVANCED_LESSONS.length} lecciones.`)
+const publishedTopics = ADVANCED_TOPICS.filter(({ status }) => status !== 'planned')
+if (publishedTopics.length !== ADVANCED_LESSONS.length) {
+  fail(`Hay ${publishedTopics.length} temas publicados y ${ADVANCED_LESSONS.length} lecciones.`)
 }
 const sequence = ADVANCED_LESSONS.map(({ sequence }) => sequence).sort((a, b) => a - b)
 const expected = Array.from({ length: ADVANCED_LESSONS.length }, (_, index) => index + 1)
 if (sequence.join(',') !== expected.join(',')) fail(`La secuencia debe ser ${expected.join(',')}; es ${sequence.join(',')}.`)
 
-for (const topic of availableTopics) {
+for (const topic of publishedTopics) {
   if (!ADVANCED_LESSONS.some(({ slug }) => slug === topic.slug)) fail(`El tema ${topic.slug} no tiene lección.`)
 }
 
 for (const lesson of ADVANCED_LESSONS) {
   const where = `Lección ${lesson.sequence} (${lesson.slug})`
-  const topic = availableTopics.find(({ slug }) => slug === lesson.slug)
+  const topic = publishedTopics.find(({ slug }) => slug === lesson.slug)
   if (!topic) fail(`${where}: no está disponible en el catálogo.`)
   if (topic && (topic.level !== lesson.level || topic.minutes !== lesson.minutes || topic.category !== lesson.category)) {
     fail(`${where}: nivel, duración o categoría no coincide con el catálogo.`)

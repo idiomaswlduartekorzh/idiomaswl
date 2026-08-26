@@ -47,7 +47,7 @@ export default function LocalVoiceRecorder({ prompt }: { prompt: GuidedRecording
     setError('')
     if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === 'undefined') {
       setStatus('error')
-      setError('Este navegador no permite grabar desde esta página. Puedes responder en vivo y conservar tus notas.')
+      setError('This browser cannot record from this page. You can answer live and keep written notes instead.')
       return
     }
 
@@ -73,14 +73,14 @@ export default function LocalVoiceRecorder({ prompt }: { prompt: GuidedRecording
       }
       recorder.onerror = () => {
         setStatus('error')
-        setError('La grabación se interrumpió. Revisa el permiso del micrófono e inténtalo de nuevo.')
+        setError('The recording was interrupted. Check microphone permission and try again.')
         releaseStream()
       }
       recorder.start(250)
       setStatus('recording')
     } catch {
       setStatus('error')
-      setError('No se pudo abrir el micrófono. Revisa el permiso del navegador o responde en vivo.')
+      setError('The microphone could not be opened. Check browser permission or answer live instead.')
       releaseStream()
     }
   }
@@ -136,9 +136,9 @@ export default function LocalVoiceRecorder({ prompt }: { prompt: GuidedRecording
       {audioUrl && (
         <div className={styles.localPlayback}>
           <audio controls src={audioUrl}>
-            Tu navegador no puede reproducir esta grabación local.
+            Your browser cannot play this local recording.
           </audio>
-          <p>No hay botón de entrega: este piloto no sube ni comparte el audio.</p>
+          <p>There is no submission button: this pilot never uploads or shares the recording.</p>
         </div>
       )}
       {error && <p className={styles.recorderError} role="alert">{error}</p>}

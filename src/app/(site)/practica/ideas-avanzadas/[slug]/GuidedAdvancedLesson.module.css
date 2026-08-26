@@ -146,6 +146,7 @@
   grid-template-columns: 1.8rem minmax(0, 1fr);
   min-width: 0;
   padding: 0.65rem 0.55rem;
+  scroll-margin-top: 6.5rem;
   text-align: left;
 }
 
@@ -311,6 +312,63 @@
   margin: 2.5rem 0;
   max-width: 850px;
 }
+
+.statementLab {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-top: 5px solid var(--guided-violet);
+  margin-bottom: 1rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.statementIntro {
+  align-items: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.statementIntro p,
+.statementIntro > strong {
+  color: var(--guided-violet);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.statementIntro h3 { color: var(--wlp-ink); font-size: 1.55rem; margin: 0.35rem 0; }
+.statementIntro span { color: var(--wlp-muted); display: block; font-size: 0.82rem; line-height: 1.55; max-width: 720px; }
+.statementIntro > strong { background: var(--guided-violet-soft); border-radius: var(--wlp-r-pill); flex: none; padding: 0.45rem 0.65rem; }
+
+.statementGrid {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.25rem;
+}
+
+.statementGrid button {
+  align-items: center;
+  background: var(--wlp-surface);
+  border: 1px solid var(--wlp-line);
+  color: var(--wlp-ink);
+  display: grid;
+  font-size: 0.86rem;
+  font-weight: 720;
+  gap: 0.7rem;
+  grid-template-columns: 1.8rem 1fr;
+  line-height: 1.45;
+  min-height: 74px;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.statementGrid button > span { align-items: center; border: 1px solid var(--wlp-line); border-radius: 50%; color: var(--wlp-muted); display: flex; height: 1.8rem; justify-content: center; width: 1.8rem; }
+.statementGrid .statementSelected { background: var(--guided-violet-soft); border-color: var(--guided-violet); box-shadow: inset 0 0 0 1px var(--guided-violet); }
+.statementGrid .statementSelected > span { background: var(--guided-violet); border-color: var(--guided-violet); color: white; }
+.statementRequirement { color: var(--guided-rust); font-family: var(--mono); font-size: 0.66rem; font-weight: 750; margin: 0.85rem 0 0; }
 
 .teacherNoteToggle {
   align-items: center;
@@ -609,6 +667,12 @@
 .notesGrid label > span { color: var(--guided-violet); font-family: var(--mono); font-size: 0.65rem; font-weight: 800; text-transform: uppercase; }
 .notesGrid textarea { min-height: 130px; }
 
+.vocabFamilies { display: grid; gap: 1.4rem; }
+.vocabFamily { border-top: 1px solid var(--wlp-line); padding-top: 0.8rem; }
+.vocabFamilyHeading { align-items: baseline; display: flex; gap: 0.65rem; margin-bottom: 0.75rem; }
+.vocabFamilyHeading span { color: var(--guided-rust); font-family: var(--mono); font-size: 0.65rem; }
+.vocabFamilyHeading h3 { color: var(--wlp-ink); font-size: 1.2rem; margin: 0; }
+
 .vocabGrid {
   display: grid;
   gap: 0.75rem;
@@ -722,9 +786,32 @@
 .listeningBlueprint span { color: var(--wlp-muted); font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase; }
 .listeningBlueprint h3 { color: var(--wlp-ink); font-size: 1.35rem; margin: 2.5rem 0 0.55rem; }
 .listeningBlueprint p { color: var(--wlp-muted); line-height: 1.6; margin: 0; }
+.audioTrackStack { display: grid; gap: 1.5rem; }
+.audioTrack { background: var(--wlp-raised); border: 1px solid var(--wlp-line); padding: clamp(1rem, 3vw, 1.4rem); }
+.audioTrack:first-child { border-top: 5px solid var(--guided-teal); }
+.audioTrack:nth-child(2) { border-top: 5px solid var(--guided-rust); }
+.audioTrack > header { align-items: center; display: grid; gap: 0.85rem; grid-template-columns: auto 1fr; }
+.audioTrackIcon { align-items: center; background: var(--guided-violet-soft); border-radius: 50%; color: var(--guided-violet); display: flex; height: 3rem; justify-content: center; width: 3rem; }
+.audioTrack header span { color: var(--guided-violet); font-family: var(--mono); font-size: 0.61rem; font-weight: 800; text-transform: uppercase; }
+.audioTrack header h3 { color: var(--wlp-ink); font-size: 1.45rem; margin: 0.2rem 0; }
+.audioTrack header p { color: var(--wlp-muted); font-size: 0.74rem; margin: 0; }
+.audioFunction { color: var(--wlp-muted); line-height: 1.55; margin: 1rem 0; }
+.audioTrack audio { display: block; width: 100%; }
+.transcriptButton { align-items: center; background: transparent; border: 0; color: var(--guided-violet); display: flex; font-size: 0.75rem; font-weight: 800; gap: 0.35rem; margin: 0.75rem 0; padding: 0; }
+.transcriptButton[aria-expanded='true'] svg { transform: rotate(180deg); }
+.audioTranscript { border-left: 3px solid var(--guided-violet); color: var(--wlp-ink); font-size: 0.93rem; line-height: 1.78; margin: 0.8rem 0 1.2rem; max-height: 460px; overflow: auto; padding: 0 1rem; }
+.audioTranscript p { margin: 0 0 1rem; }
+.audioQuestions { display: grid; gap: 0.8rem; margin-top: 1rem; }
 .integrationPrompt { border-left: 3px solid var(--guided-gold); margin-top: 1rem; padding: 0.5rem 0 0.5rem 0.9rem; }
 .integrationPrompt strong { color: var(--guided-rust); font-family: var(--mono); font-size: 0.65rem; text-transform: uppercase; }
 .integrationPrompt p { color: var(--wlp-ink); line-height: 1.6; margin: 0.3rem 0 0; }
+
+.statementReturn { background: var(--guided-violet-soft); border: 1px solid color-mix(in srgb, var(--guided-violet) 28%, var(--wlp-line)); padding: 1rem; }
+.statementReturn > p { color: var(--guided-violet); font-family: var(--mono); font-size: 0.62rem; font-weight: 800; margin: 0; text-transform: uppercase; }
+.statementReturn h3 { color: var(--wlp-ink); font-size: 1.25rem; margin: 0.35rem 0 0.8rem; }
+.statementReturn ul { color: var(--wlp-ink); line-height: 1.55; margin: 0; padding-left: 1.2rem; }
+.statementReturn li + li { margin-top: 0.35rem; }
+.statementReturn button { background: transparent; border: 0; color: var(--guided-violet); font-size: 0.75rem; font-weight: 800; margin-top: 0.85rem; padding: 0; }
 
 .synthesisPrompt { background: var(--guided-violet-soft); border-left: 4px solid var(--guided-violet); color: var(--wlp-ink); font-size: 1.02rem; line-height: 1.7; padding: 1rem; }
 .draftLabel { color: var(--wlp-ink); display: grid; font-size: 0.84rem; font-weight: 800; gap: 0.4rem; margin-top: 1rem; }
@@ -746,12 +833,15 @@
 .phaseNav button:focus-visible,
 .reset:focus-visible,
 .discussionBoard button:focus-visible,
+.statementGrid button:focus-visible,
 .gateClosed button:focus-visible,
 .gateOpen button:focus-visible,
 .waitingGate button:focus-visible,
 .recorder button:focus-visible,
 .readingBlockHeader:focus-visible,
 .vocabGrid button:focus-visible,
+.transcriptButton:focus-visible,
+.statementReturn button:focus-visible,
 .option:focus-visible,
 .submitBar button:focus-visible,
 .phaseFooter button:focus-visible {
@@ -802,6 +892,8 @@
 
 @media (max-width: 620px) {
   .hero h1 { font-size: 3.35rem; }
+  .statementIntro { flex-direction: column; }
+  .statementGrid { grid-template-columns: 1fr; }
   .sessionCard .reset { margin-right: 3.5rem; }
   .gateClosed,
   .gateOpen,
@@ -817,6 +909,7 @@
   .listeningBlueprint,
   .checklist { grid-template-columns: 1fr; }
   .argumentMap { grid-template-columns: 1fr; }
+  .audioTrack > header { align-items: start; grid-template-columns: 1fr; }
   .phaseFooter { align-items: stretch; flex-direction: column-reverse; gap: 0.6rem; }
   .phaseFooter button { justify-content: center; }
 }

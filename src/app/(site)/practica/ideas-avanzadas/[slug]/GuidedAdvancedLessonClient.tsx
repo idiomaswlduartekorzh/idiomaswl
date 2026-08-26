@@ -31,6 +31,7 @@ import styles from './GuidedAdvancedLesson.module.css'
 interface GuidedSavedState {
   phase: number
   completed: number[]
+  selectedStatements: string[]
   baselineUnlocked: boolean
   discussionIndex: number
   openedBlocks: string[]
@@ -39,6 +40,8 @@ interface GuidedSavedState {
   notes: Record<string, string>
   ieltsAnswers: Record<string, number>
   ieltsSubmitted: boolean
+  listeningAnswers: Record<string, number>
+  listeningSubmitted: boolean
   draft: string
   checks: boolean[]
 }
@@ -69,6 +72,8 @@ const ROLE_LABELS = {
   application: 'Application',
   'scope-limit': 'Scope limit',
 } as const
+
+const VOCABULARY_CATEGORIES = ['Phrasal verbs', 'Useful language', 'Adjectives', 'Nouns'] as const
 
 function GuidedQuestion({
   question,
@@ -127,6 +132,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
   const storageKey = `wl-advanced-guided-${lesson.slug}-v3`
   const [phase, setPhase] = useState(0)
   const [completed, setCompleted] = useState<number[]>([])
+  const [selectedStatements, setSelectedStatements] = useState<string[]>([])
   const [baselineUnlocked, setBaselineUnlocked] = useState(false)
   const [discussionIndex, setDiscussionIndex] = useState(0)
   const [showTeacherNotes, setShowTeacherNotes] = useState(false)
@@ -137,6 +143,9 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
   const [revealedWords, setRevealedWords] = useState<string[]>([])
   const [ieltsAnswers, setIeltsAnswers] = useState<Record<string, number>>({})
   const [ieltsSubmitted, setIeltsSubmitted] = useState(false)
+  const [openTranscripts, setOpenTranscripts] = useState<string[]>([])
+  const [listeningAnswers, setListeningAnswers] = useState<Record<string, number>>({})
+  const [listeningSubmitted, setListeningSubmitted] = useState(false)
   const [draft, setDraft] = useState('')
   const [checks, setChecks] = useState<boolean[]>(lesson.synthesis.checklist.map(() => false))
   const [hydrated, setHydrated] = useState(false)
@@ -151,6 +160,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setPhase(Math.min(Math.max(saved.phase ?? 0, 0), GUIDED_ADVANCED_PHASES.length - 1))
         setCompleted(saved.completed ?? [])
+        setSelectedStatements(saved.selectedStatements ?? [])
         setBaselineUnlocked(saved.baselineUnlocked ?? false)
         setDiscussionIndex(Math.min(saved.discussionIndex ?? 0, lesson.discussion.questions.length - 1))
         setOpenedBlocks(saved.openedBlocks?.length ? saved.openedBlocks : [lesson.reading.blocks[0]?.id].filter(Boolean))
@@ -159,6 +169,8 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
         setNotes(saved.notes ?? {})
         setIeltsAnswers(saved.ieltsAnswers ?? {})
         setIeltsSubmitted(saved.ieltsSubmitted ?? false)
+        setListeningAnswers(saved.listeningAnswers ?? {})
+        setListeningSubmitted(saved.listeningSubmitted ?? false)
         setDraft(saved.draft ?? '')
         if (saved.checks?.length === lesson.synthesis.checklist.length) setChecks(saved.checks)
       }
@@ -173,6 +185,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
     const saved: GuidedSavedState = {
       phase,
       completed,
+      selectedStatements,
       baselineUnlocked,
       discussionIndex,
       openedBlocks,
@@ -181,11 +194,13 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
       notes,
       ieltsAnswers,
       ieltsSubmitted,
+      listeningAnswers,
+      listeningSubmitted,
       draft,
       checks,
     }
     window.localStorage.setItem(storageKey, JSON.stringify(saved))
-  }, [baselineUnlocked, checks, completed, discussionIndex, draft, hydrated, ieltsAnswers, ieltsSubmitted, notes, openedBlocks, paraphrases, phase, predictions, storageKey])
+  }, [baselineUnlocked, checks, completed, discussionIndex, draft, hydrated, ieltsAnswers, ieltsSubmitted, listeningAnswers, listeningSubmitted, notes, openedBlocks, paraphrases, phase, predictions, selectedStatements, storageKey])
 
   const progress = Math.round((completed.length / GUIDED_ADVANCED_PHASES.length) * 100)
   const discussionQuestion = lesson.discussion.questions[discussionIndex]
@@ -194,6 +209,16 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
     () => lesson.ieltsPractice.questions.filter((question) => ieltsAnswers[question.id] === question.answer).length,
     [ieltsAnswers, lesson.ieltsPractice.questions],
   )
+  const listeningQuestions = useMemo(
+    () => lesson.listeningLab.tracks?.flatMap((track) => track.questions) ?? [],
+    [lesson.listeningLab.tracks],
+  )
+  const allListeningAnswered = listeningQuestions.length > 0 && listeningQuestions.every((question) => listeningAnswers[question.id] !== undefined)
+  const listeningScore = useMemo(
+    () => listeningQuestions.filter((question) => listeningAnswers[question.id] === question.answer).length,
+    [listeningAnswers, listeningQuestions],
+  )
+  const hasOpeningSelection = !lesson.openingStatements || selectedStatements.length >= lesson.openingStatements.minimum
 
   const selectPhase = (nextPhase: number) => {
     setPhase(nextPhase)
@@ -209,6 +234,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
     window.localStorage.removeItem(storageKey)
     setPhase(0)
     setCompleted([])
+    setSelectedStatements([])
     setBaselineUnlocked(false)
     setDiscussionIndex(0)
     setShowTeacherNotes(false)
@@ -219,6 +245,9 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
     setRevealedWords([])
     setIeltsAnswers({})
     setIeltsSubmitted(false)
+    setOpenTranscripts([])
+    setListeningAnswers({})
+    setListeningSubmitted(false)
     setDraft('')
     setChecks(lesson.synthesis.checklist.map(() => false))
   }
@@ -226,17 +255,17 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
   return (
     <main className={`wlp-page ${styles.page}`}>
       <div className="wlp-shell">
-        <nav className="wlp-breadcrumb" aria-label="Migas de pan">
-          <Link href="/practica">Práctica</Link>
+        <nav className="wlp-breadcrumb" aria-label="Breadcrumb">
+          <Link href="/practica">Practice</Link>
           <span aria-hidden="true">/</span>
-          <Link href="/practica/ideas-avanzadas">Ideas avanzadas</Link>
+          <Link href="/practica/ideas-avanzadas">Advanced ideas</Link>
           <span aria-hidden="true">/</span>
           <span>{lesson.breadcrumbTitle}</span>
         </nav>
 
         <header className={styles.hero}>
           <div>
-            <p className="wlp-eyebrow">Piloto guiado · {lesson.evidenceClass} · {lesson.level}</p>
+            <p className="wlp-eyebrow">Guided pilot · {lesson.evidenceClass} · {lesson.level}</p>
             <h1>{lesson.title}</h1>
             <p className={styles.subtitle}>{lesson.subtitle}</p>
             <p className={styles.objective}>{lesson.objective}</p>
@@ -245,12 +274,12 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
               <span>{lesson.centralQuestion}</span>
             </div>
           </div>
-          <aside className={styles.sessionCard} aria-label="Estado de la sesión">
+          <aside className={styles.sessionCard} aria-label="Session status">
             <div className={styles.sessionTop}>
               <span>Guided class</span>
               <strong>{lesson.guidedMinutes} min</strong>
             </div>
-            <div className={styles.progressTrack} role="progressbar" aria-label={`${progress}% completado`} aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
+            <div className={styles.progressTrack} role="progressbar" aria-label={`${progress}% complete`} aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
               <span style={{ width: `${progress}%` }} />
             </div>
             <p>{completed.length} of {GUIDED_ADVANCED_PHASES.length} phases · saved on this device</p>
@@ -264,7 +293,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
           </aside>
         </header>
 
-        <nav className={styles.phaseNav} aria-label="Fases de la clase">
+        <nav className={styles.phaseNav} aria-label="Lesson phases">
           {GUIDED_ADVANCED_PHASES.map((item, index) => {
             const Icon = PHASE_ICONS[index]
             return (
@@ -298,6 +327,41 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
                   <h2>Build the question before naming the theory.</h2>
                   <span>Speak first, collect hypotheses and open the recording only when the group has something worth testing.</span>
                 </div>
+
+                {lesson.openingStatements && (
+                  <section className={styles.statementLab} aria-labelledby="opening-statements-title">
+                    <div className={styles.statementIntro}>
+                      <div>
+                        <p>Starting position · choose more than one</p>
+                        <h3 id="opening-statements-title">{lesson.openingStatements.title}</h3>
+                        <span>{lesson.openingStatements.instruction}</span>
+                      </div>
+                      <strong>{selectedStatements.length}/{lesson.openingStatements.statements.length} selected</strong>
+                    </div>
+                    <div className={styles.statementGrid}>
+                      {lesson.openingStatements.statements.map((statement) => {
+                        const selected = selectedStatements.includes(statement.id)
+                        return (
+                          <button
+                            className={selected ? styles.statementSelected : ''}
+                            key={statement.id}
+                            onClick={() => setSelectedStatements((current) => current.includes(statement.id)
+                              ? current.filter((id) => id !== statement.id)
+                              : [...current, statement.id])}
+                            type="button"
+                            aria-pressed={selected}
+                          >
+                            <span>{selected ? <Check size={16} /> : <CircleDot size={16} />}</span>
+                            {statement.text}
+                          </button>
+                        )
+                      })}
+                    </div>
+                    {!hasOpeningSelection && (
+                      <p className={styles.statementRequirement}>Choose at least {lesson.openingStatements.minimum} claims before continuing.</p>
+                    )}
+                  </section>
+                )}
 
                 <div className={styles.discussionBoard}>
                   <div className={styles.discussionCounter}>
@@ -451,25 +515,36 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
             {phase === 4 && (
               <>
                 <div className={styles.phaseHeading}>
-                  <p>Precision vocabulary · ten reusable tools</p>
-                  <h2>Open a word, then use it to sharpen a distinction.</h2>
-                  <span>The point is not recognition. Each word should become available for the IELTS and synthesis phases.</span>
+                  <p>Precision vocabulary · four compact families</p>
+                  <h2>Move from recognition to controlled use.</h2>
+                  <span>The language comes from the reading and will reappear in the evidence practice, listening comparison and synthesis.</span>
                 </div>
-                <div className={styles.vocabGrid}>
-                  {lesson.vocabulary.map((item) => {
-                    const isOpen = revealedWords.includes(item.term)
+                <div className={styles.vocabFamilies}>
+                  {VOCABULARY_CATEGORIES.map((category) => {
+                    const items = lesson.vocabulary.filter((item) => item.category === category)
+                    if (!items.length) return null
                     return (
-                      <button
-                        className={isOpen ? styles.vocabOpen : ''}
-                        key={item.term}
-                        onClick={() => setRevealedWords((current) => current.includes(item.term) ? current.filter((term) => term !== item.term) : [...current, item.term])}
-                        type="button"
-                        aria-expanded={isOpen}
-                      >
-                        <span>{item.partOfSpeech}</span>
-                        <strong>{item.term}</strong>
-                        {isOpen ? <div><p>{item.meaning}</p><b>{item.collocation}</b><em>{item.example}</em></div> : <small>Meaning · collocation · example</small>}
-                      </button>
+                      <section className={styles.vocabFamily} key={category}>
+                        <div className={styles.vocabFamilyHeading}><span>{String(items.length).padStart(2, '0')}</span><h3>{category}</h3></div>
+                        <div className={styles.vocabGrid}>
+                          {items.map((item) => {
+                            const isOpen = revealedWords.includes(item.term)
+                            return (
+                              <button
+                                className={isOpen ? styles.vocabOpen : ''}
+                                key={item.term}
+                                onClick={() => setRevealedWords((current) => current.includes(item.term) ? current.filter((term) => term !== item.term) : [...current, item.term])}
+                                type="button"
+                                aria-expanded={isOpen}
+                              >
+                                <span>{item.partOfSpeech}</span>
+                                <strong>{item.term}</strong>
+                                {isOpen ? <div><p>{item.meaning}</p><b>{item.collocation}</b><em>{item.example}</em></div> : <small>Meaning · collocation · example</small>}
+                              </button>
+                            )
+                          })}
+                        </div>
+                      </section>
                     )
                   })}
                 </div>
@@ -512,19 +587,74 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
             {phase === 6 && (
               <>
                 <div className={styles.phaseHeading}>
-                  <p>Dual listening lab · structure approved, media pending</p>
-                  <h2>Two sources will do different intellectual work.</h2>
-                  <span>This branch deliberately contains no generated lesson audio, transcript or placeholder MP3.</span>
+                  <p>Dual listening lab · compare before judging</p>
+                  <h2>Two voices, one disagreement worth locating precisely.</h2>
+                  <span>Listen once for position, again for evidence, and only then open the transcript. The speakers disagree in emphasis without becoming caricatures.</span>
                 </div>
-                <div className={styles.noAudioNotice}>
-                  <Headphones size={28} />
-                  <div><strong>Audio production has not started</strong><p>The interaction is scaffolded so content can be added later without redesigning the lesson.</p></div>
-                </div>
-                <div className={styles.listeningBlueprint}>
-                  <article><span>Audio A · mechanism</span><h3>Researcher explanation</h3><p>{lesson.listeningLab.audioAFunction}</p></article>
-                  <article><span>Audio B · situation</span><h3>Represented decision</h3><p>{lesson.listeningLab.audioBFunction}</p></article>
-                </div>
-                <div className={styles.integrationPrompt}><strong>Future integration task</strong><p>{lesson.listeningLab.integrationPrompt}</p></div>
+                {lesson.listeningLab.status === 'produced' && lesson.listeningLab.tracks?.length ? (
+                  <>
+                    <div className={styles.audioTrackStack}>
+                      {lesson.listeningLab.tracks.map((track) => {
+                        const transcriptOpen = openTranscripts.includes(track.id)
+                        return (
+                          <article className={styles.audioTrack} key={track.id}>
+                            <header>
+                              <div className={styles.audioTrackIcon}><Headphones size={22} /></div>
+                              <div>
+                                <span>{track.eyebrow}</span>
+                                <h3>{track.title}</h3>
+                                <p>{track.speaker} · {track.duration}</p>
+                              </div>
+                            </header>
+                            <p className={styles.audioFunction}>{track.function}</p>
+                            <audio controls preload="metadata" src={track.audioSrc}>Your browser cannot play this audio.</audio>
+                            <button
+                              className={styles.transcriptButton}
+                              onClick={() => setOpenTranscripts((current) => current.includes(track.id) ? current.filter((id) => id !== track.id) : [...current, track.id])}
+                              type="button"
+                              aria-expanded={transcriptOpen}
+                            >
+                              {transcriptOpen ? 'Hide transcript' : 'Open transcript after listening'}
+                              <ChevronDown size={16} />
+                            </button>
+                            {transcriptOpen && <div className={styles.audioTranscript}>{track.transcript.split('\n\n').map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>}
+                            <div className={styles.audioQuestions}>
+                              {track.questions.map((question) => (
+                                <GuidedQuestion
+                                  key={question.id}
+                                  question={question}
+                                  selected={listeningAnswers[question.id]}
+                                  submitted={listeningSubmitted}
+                                  onSelect={(option) => setListeningAnswers((current) => ({ ...current, [question.id]: option }))}
+                                />
+                              ))}
+                            </div>
+                          </article>
+                        )
+                      })}
+                    </div>
+                    <div className={styles.submitBar}>
+                      <p>{listeningSubmitted ? `${listeningScore}/${listeningQuestions.length} answers matched the evidence. Revisit the speakers’ exact point of disagreement.` : `${Object.keys(listeningAnswers).length}/${listeningQuestions.length} listening questions answered.`}</p>
+                      {listeningSubmitted ? (
+                        <button onClick={() => { setListeningAnswers({}); setListeningSubmitted(false) }} type="button"><RotateCcw size={16} /> Try both sets again</button>
+                      ) : (
+                        <button disabled={!allListeningAnswered} onClick={() => setListeningSubmitted(true)} type="button">Open listening evidence</button>
+                      )}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className={styles.noAudioNotice}>
+                      <Headphones size={28} />
+                      <div><strong>Audio production is pending for this lesson</strong><p>The reading and practice remain available while the two-source listening pair is prepared.</p></div>
+                    </div>
+                    <div className={styles.listeningBlueprint}>
+                      <article><span>Audio A · mechanism</span><h3>Research explanation</h3><p>{lesson.listeningLab.audioAFunction}</p></article>
+                      <article><span>Audio B · situation</span><h3>Represented decision</h3><p>{lesson.listeningLab.audioBFunction}</p></article>
+                    </div>
+                  </>
+                )}
+                <div className={styles.integrationPrompt}><strong>Integration task</strong><p>{lesson.listeningLab.integrationPrompt}</p></div>
               </>
             )}
 
@@ -533,8 +663,20 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
                 <div className={styles.phaseHeading}>
                   <p>Synthesis · return to the first explanation</p>
                   <h2>Precision matters more than changing your mind.</h2>
-                  <span>For this no-audio pilot, use the discussion, reading and IELTS evidence. The listening sources will join this prompt later.</span>
+                  <span>Use the opening claims, reading evidence, practice feedback and both listening positions. Preserve disagreement where the evidence remains unsettled.</span>
                 </div>
+                {lesson.openingStatements && selectedStatements.length > 0 && (
+                  <section className={styles.statementReturn} aria-labelledby="selected-claims-title">
+                    <p>Your recorded starting position</p>
+                    <h3 id="selected-claims-title">The claims you selected before the evidence</h3>
+                    <ul>
+                      {lesson.openingStatements.statements
+                        .filter((statement) => selectedStatements.includes(statement.id))
+                        .map((statement) => <li key={statement.id}>{statement.text}</li>)}
+                    </ul>
+                    <button onClick={() => selectPhase(0)} type="button">Review all opening claims</button>
+                  </section>
+                )}
                 <p className={styles.synthesisPrompt}>{lesson.synthesis.prompt}</p>
                 <label className={styles.draftLabel}>
                   <span>Your synthesis in English</span>
@@ -556,7 +698,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
             <footer className={styles.phaseFooter}>
               {phase > 0 ? <button className={styles.backButton} onClick={() => selectPhase(phase - 1)} type="button"><ArrowLeft size={17} /> Previous</button> : <span />}
               {phase < GUIDED_ADVANCED_PHASES.length - 1 ? (
-                <button className={styles.nextButton} onClick={completeAndContinue} type="button">Mark phase and continue <ArrowRight size={17} /></button>
+                <button className={styles.nextButton} disabled={phase === 0 && !hasOpeningSelection} onClick={completeAndContinue} type="button">Mark phase and continue <ArrowRight size={17} /></button>
               ) : (
                 <button className={styles.nextButton} onClick={() => setCompleted((current) => current.includes(phase) ? current : [...current, phase].sort())} type="button"><Check size={17} /> Complete pilot</button>
               )}

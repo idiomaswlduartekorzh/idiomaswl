@@ -30,7 +30,7 @@ interface SavedLessonState {
   checks: boolean[]
 }
 
-const STAGE_ICONS = [Lightbulb, Headphones, BookOpenText, Languages, Sparkles, PenLine]
+const STAGE_ICONS = [Lightbulb, BookOpenText, Headphones, Languages, Sparkles, PenLine]
 
 function QuestionBlock({
   question,
@@ -97,6 +97,8 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
   const contentRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    // Browser capability and the saved draft are external state hydrated once on mount.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setSpeechSupported(typeof window !== 'undefined' && 'speechSynthesis' in window)
     try {
       const raw = window.localStorage.getItem(storageKey)
@@ -182,10 +184,10 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
   return (
     <main className={`wlp-page ${styles.page}`}>
       <div className="wlp-shell">
-        <nav className="wlp-breadcrumb" aria-label="Migas de pan">
-          <Link href="/practica">Práctica</Link>
+        <nav className="wlp-breadcrumb" aria-label="Breadcrumb">
+          <Link href="/practica">Practice</Link>
           <span aria-hidden="true">/</span>
-          <Link href="/practica/ideas-avanzadas">Ideas avanzadas</Link>
+          <Link href="/practica/ideas-avanzadas">Advanced ideas</Link>
           <span aria-hidden="true">/</span>
           <span>{lesson.breadcrumbTitle}</span>
         </nav>
@@ -199,20 +201,20 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
           </div>
           <div className={styles.progressCard}>
             <div className={styles.progressTop}>
-              <span>Tu órbita</span>
+              <span>Your cycle</span>
               <strong>{progress}%</strong>
             </div>
-            <div className={styles.progressTrack} aria-label={`${progress}% completado`} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
+            <div className={styles.progressTrack} aria-label={`${progress}% complete`} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
               <span style={{ width: `${progress}%` }} />
             </div>
-            <small>{completed.length} de {ADVANCED_CYCLE.length} movimientos · se guarda en este dispositivo</small>
+            <small>{completed.length} of {ADVANCED_CYCLE.length} moves · saved on this device</small>
             <button className={styles.reset} onClick={resetLesson} type="button">
-              <RotateCcw size={13} /> Reiniciar
+              <RotateCcw size={13} /> Reset
             </button>
           </div>
         </header>
 
-        <nav className={styles.stageNav} aria-label="Etapas de la lección">
+        <nav className={styles.stageNav} aria-label="Lesson stages">
           {ADVANCED_CYCLE.map((item, index) => {
             const Icon = STAGE_ICONS[index]
             const isCompleted = completed.includes(index)
@@ -235,15 +237,15 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
         <div className={styles.lesson} ref={contentRef}>
           <aside className={styles.stageAside}>
             <span>{String(stage + 1).padStart(2, '0')}</span>
-            <p>de 06</p>
+            <p>of 06</p>
             <div aria-hidden="true" />
-            <small>{lesson.minutes} min en total</small>
+            <small>{lesson.minutes} min total</small>
           </aside>
 
           <section className={styles.stageContent} key={stage}>
             {stage === 0 && (
               <>
-                <p className={styles.stageEyebrow}>Orientar · responde antes de estudiar</p>
+                <p className={styles.stageEyebrow}>Orient · respond before studying</p>
                 <h2>{lesson.opening.title}</h2>
                 <p className={styles.instruction}>{lesson.opening.instruction}</p>
                 <div className={styles.frameChoice}>
@@ -258,14 +260,14 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
                       type="button"
                       aria-pressed={openingChoice === index}
                     >
-                      <span>Opción {String.fromCharCode(65 + index)}</span>
+                      <span>Option {String.fromCharCode(65 + index)}</span>
                       <strong>{option}</strong>
                     </button>
                   ))}
                 </div>
                 {openingChoice !== null && (
                   <button className={styles.revealButton} onClick={() => setShowOpeningReveal(true)} type="button">
-                    Comprobar qué cambió <ArrowRight size={16} />
+                    Inspect the framing <ArrowRight size={16} />
                   </button>
                 )}
                 {showOpeningReveal && (
@@ -280,28 +282,28 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
               </>
             )}
 
-            {stage === 1 && (
+            {stage === 2 && (
               <>
-                <p className={styles.stageEyebrow}>Escuchar · idea principal y detalle</p>
+                <p className={styles.stageEyebrow}>Listen · main idea and detail</p>
                 <h2>{lesson.listening.title}</h2>
                 <p className={styles.instruction}>{lesson.listening.instruction}</p>
                 <div className={styles.audioPanel}>
                   <div className={styles.audioIcon}><Volume2 size={24} /></div>
                   <div>
-                    <strong>Audio en inglés · {lesson.listening.duration}</strong>
-                    <small>Voz del navegador · velocidad 0.88×</small>
+                    <strong>English audio · {lesson.listening.duration}</strong>
+                    <small>Browser voice · 0.88× speed</small>
                   </div>
                   {speechSupported ? (
                     <button onClick={isSpeaking ? stopSpeaking : speak} type="button">
                       {isSpeaking ? <Pause size={18} /> : <Play size={18} fill="currentColor" />}
-                      {isSpeaking ? 'Pausar' : 'Reproducir'}
+                      {isSpeaking ? 'Pause' : 'Play'}
                     </button>
                   ) : (
-                    <span className={styles.noAudio}>Audio no disponible</span>
+                    <span className={styles.noAudio}>Audio unavailable</span>
                   )}
                 </div>
                 <button className={styles.transcriptToggle} onClick={() => setShowTranscript((value) => !value)} type="button" aria-expanded={showTranscript}>
-                  {showTranscript ? 'Ocultar transcripción' : 'Mostrar transcripción'}
+                  {showTranscript ? 'Hide transcript' : 'Show transcript'}
                   <ChevronDown className={showTranscript ? styles.chevronOpen : ''} size={17} />
                 </button>
                 {showTranscript && <p className={styles.transcript}>{lesson.listening.script}</p>}
@@ -318,9 +320,9 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
               </>
             )}
 
-            {stage === 2 && (
+            {stage === 1 && (
               <>
-                <p className={styles.stageEyebrow}>Leer · evidencia, lenguaje y límites</p>
+                <p className={styles.stageEyebrow}>Read · evidence, language and limits</p>
                 <h2>{lesson.reading.title}</h2>
                 <p className={styles.readingDek}>{lesson.reading.dek}</p>
                 <article className={styles.reading} lang="en">
@@ -332,13 +334,13 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
                     </section>
                   ))}
                   <footer>
-                    Fuentes conceptuales:{' '}
+                    Conceptual sources:{' '}
                     {lesson.reading.sources.map((source, index) => (
                       <span key={source.href}>
                         {index > 0 && ' · '}
                         <a href={source.href} target="_blank" rel="noreferrer">{source.label}</a>
                       </span>
-                    ))}. El texto pedagógico es una síntesis original de WeLearn.
+                    ))}. The educational text is an original WeLearn synthesis.
                   </footer>
                 </article>
               </>
@@ -346,9 +348,9 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
 
             {stage === 3 && (
               <>
-                <p className={styles.stageEyebrow}>Vocabulario · precisión antes que decoración</p>
+                <p className={styles.stageEyebrow}>Vocabulary · precision before decoration</p>
                 <h2>{lesson.vocabularyTitle}</h2>
-                <p className={styles.instruction}>Abre cada ficha, di el ejemplo en voz alta y crea un segundo ejemplo mental.</p>
+                <p className={styles.instruction}>Open each card, say the example aloud and create a second example of your own.</p>
                 <div className={styles.vocabGrid}>
                   {lesson.vocabulary.map((item) => {
                     const isRevealed = revealedWords.includes(item.term)
@@ -367,7 +369,7 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
                             <p>{item.meaning}</p>
                             <em>{item.example}</em>
                           </div>
-                        ) : <small>Ver significado + ejemplo</small>}
+                        ) : <small>Open meaning + example</small>}
                       </button>
                     )
                   })}
@@ -393,7 +395,7 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
                 {allPracticeAnswered && (
                   <div className={styles.score} role="status">
                     <strong>{practiceScore}/{lesson.practice.questions.length}</strong>
-                    <p>{practiceScore === lesson.practice.questions.length ? lesson.practice.success : 'Revisa las explicaciones y vuelve a formular cada error con tus palabras.'}</p>
+                    <p>{practiceScore === lesson.practice.questions.length ? lesson.practice.success : 'Review the explanations and reformulate each error in your own words.'}</p>
                   </div>
                 )}
               </>
@@ -401,12 +403,12 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
 
             {stage === 5 && (
               <>
-                <p className={styles.stageEyebrow}>Producir · cerrar la órbita</p>
+                <p className={styles.stageEyebrow}>Produce · close the cycle</p>
                 <h2>{lesson.production.title}</h2>
                 <p className={styles.productionPrompt}>{lesson.production.prompt}</p>
                 <label className={styles.draftLabel} htmlFor={`${lesson.slug}-draft`}>
                   {lesson.production.draftLabel}
-                  <span>{draft.trim() ? draft.trim().split(/\s+/).length : 0} palabras</span>
+                  <span>{draft.trim() ? draft.trim().split(/\s+/).length : 0} words</span>
                 </label>
                 <textarea
                   id={`${lesson.slug}-draft`}
@@ -428,14 +430,14 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
                   ))}
                 </div>
                 <button className={styles.modelButton} onClick={() => setShowModel((value) => !value)} type="button">
-                  {showModel ? 'Ocultar modelo' : 'Comparar con un modelo'}
+                  {showModel ? 'Hide model' : 'Compare with a model'}
                 </button>
                 {showModel && <p className={styles.model}>{lesson.production.model}</p>}
 
                 <div className={styles.loopBack}>
                   <RotateCcw size={22} />
                   <div>
-                    <span>Vuelve al comienzo</span>
+                    <span>Return to the beginning</span>
                     <h3>{lesson.opening.returnTitle}</h3>
                     <p>{lesson.opening.returnPrompt}</p>
                   </div>
@@ -448,7 +450,7 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
                   </div>
                   {returnChoice !== null && (
                     <p className={styles.loopConclusion}>
-                      Al inicio elegiste <strong>{openingChoice === null ? 'sin registrar' : String.fromCharCode(65 + openingChoice)}</strong>; ahora elegiste <strong>{String.fromCharCode(65 + returnChoice)}</strong>. {lesson.opening.returnConclusion}
+                      Your opening choice was <strong>{openingChoice === null ? 'not recorded' : String.fromCharCode(65 + openingChoice)}</strong>; your return choice is <strong>{String.fromCharCode(65 + returnChoice)}</strong>. {lesson.opening.returnConclusion}
                     </p>
                   )}
                 </div>
@@ -458,12 +460,12 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
             <footer className={styles.stageFooter}>
               {stage > 0 ? (
                 <button className={styles.backButton} onClick={() => selectStage(stage - 1)} type="button">
-                  <ArrowLeft size={17} /> Anterior
+                  <ArrowLeft size={17} /> Previous
                 </button>
               ) : <span />}
               {stage < ADVANCED_CYCLE.length - 1 ? (
                 <button className={styles.nextButton} onClick={completeAndContinue} type="button">
-                  Marcar y continuar <ArrowRight size={17} />
+                  Mark stage and continue <ArrowRight size={17} />
                 </button>
               ) : (
                 <button
@@ -472,7 +474,7 @@ export default function AdvancedLessonClient({ lesson }: { lesson: AdvancedLesso
                   onClick={() => setCompleted((current) => current.includes(stage) ? current : [...current, stage].sort())}
                   type="button"
                 >
-                  <Check size={17} /> Completar ciclo
+                  <Check size={17} /> Complete cycle
                 </button>
               )}
             </footer>

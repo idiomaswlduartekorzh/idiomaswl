@@ -3,28 +3,28 @@ import { ArrowRight, BookOpenText, Headphones, Languages, PenLine, RotateCcw, Sp
 import styles from './AdvancedIdeasEntry.module.css'
 
 const MOVES = [
-  { label: 'Escucha', icon: Headphones },
-  { label: 'Lectura', icon: BookOpenText },
-  { label: 'Vocabulario', icon: Languages },
-  { label: 'Ejercicios', icon: Sparkles },
-  { label: 'Producción', icon: PenLine },
-  { label: 'Retorno', icon: RotateCcw },
+  { label: 'Listening', icon: Headphones },
+  { label: 'Reading', icon: BookOpenText },
+  { label: 'Vocabulary', icon: Languages },
+  { label: 'Practice', icon: Sparkles },
+  { label: 'Production', icon: PenLine },
+  { label: 'Return', icon: RotateCcw },
 ]
 
 export default function AdvancedIdeasEntry() {
   return (
     <Link className={styles.entry} href="/practica/ideas-avanzadas">
       <div className={styles.copy}>
-        <span className={styles.kicker}>Nuevo · inglés B2–C1</span>
-        <h2>Ideas avanzadas</h2>
+        <span className={styles.kicker}>New · English B2–C1</span>
+        <h2>Advanced ideas</h2>
         <p>
-          Sesgos, relatos sociales y carácter mediante ciclos de escucha, lectura larga,
-          vocabulario, ejercicios y producción propia.
+          Biases, social narratives and character through integrated listening, long-form reading,
+          vocabulary, evidence practice and original production.
         </p>
-        <strong>Explorar el primer ciclo <ArrowRight size={16} /></strong>
+        <strong>Explore the first cycle <ArrowRight size={16} /></strong>
       </div>
-      <div className={styles.cycle} aria-label="Seis movimientos pedagógicos">
-        <span className={styles.cycleLabel}>Una idea · seis lentes</span>
+      <div className={styles.cycle} aria-label="Six learning moves">
+        <span className={styles.cycleLabel}>One idea · six lenses</span>
         <ol>
           {MOVES.map(({ label, icon: Icon }, index) => (
             <li key={label}>

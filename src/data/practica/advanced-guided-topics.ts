@@ -1,3 +1,5 @@
+import { DUNNING_KRUGER_GUIDED_LESSON } from './advanced-guided-dunning.ts'
+
 export type GuidedEvidenceClass = 'empirical' | 'contested-social' | 'normative'
 
 export type DiscussionQuestionKind =
@@ -43,11 +45,29 @@ export interface GuidedReadingBlock {
 }
 
 export interface GuidedVocabularyItem {
+  category: 'Phrasal verbs' | 'Useful language' | 'Adjectives' | 'Nouns'
   term: string
   partOfSpeech: string
   meaning: string
   collocation: string
   example: string
+}
+
+export interface GuidedOpeningStatement {
+  id: string
+  text: string
+}
+
+export interface GuidedListeningTrack {
+  id: 'audio-a' | 'audio-b'
+  eyebrow: string
+  title: string
+  speaker: string
+  function: string
+  duration: string
+  audioSrc: string
+  transcript: string
+  questions: GuidedChoiceQuestion[]
 }
 
 export interface GuidedChoiceQuestion {
@@ -76,6 +96,12 @@ export interface GuidedAdvancedLesson {
   guidedMinutes: number
   selfStudyMinutes: number
   centralQuestion: string
+  openingStatements?: {
+    title: string
+    instruction: string
+    minimum: number
+    statements: GuidedOpeningStatement[]
+  }
   discussion: {
     targetMinutes: number
     questions: GuidedDiscussionQuestion[]
@@ -99,10 +125,11 @@ export interface GuidedAdvancedLesson {
     questions: GuidedChoiceQuestion[]
   }
   listeningLab: {
-    status: 'not-produced'
-    relationship: 'complement + scenario'
-    audioAFunction: string
-    audioBFunction: string
+    status: 'not-produced' | 'produced'
+    relationship: 'complement + scenario' | 'contrast + application'
+    audioAFunction?: string
+    audioBFunction?: string
+    tracks?: GuidedListeningTrack[]
     integrationPrompt: string
   }
   synthesis: {
@@ -116,9 +143,9 @@ export const GUIDED_ADVANCED_PHASES = [
   { id: 'baseline', label: 'First voice note', shortLabel: 'Voice I', minutes: '4' },
   { id: 'reading', label: 'Active reading', shortLabel: 'Read', minutes: '28' },
   { id: 'retrieval', label: 'What did you understand?', shortLabel: 'Retrieve', minutes: '10' },
-  { id: 'vocabulary', label: 'Precision vocabulary', shortLabel: 'Words', minutes: '8' },
-  { id: 'ielts', label: 'IELTS challenge', shortLabel: 'IELTS', minutes: '18' },
-  { id: 'listening', label: 'Dual listening lab', shortLabel: 'Listen', minutes: '20' },
+  { id: 'vocabulary', label: 'Precision vocabulary', shortLabel: 'Words', minutes: '12' },
+  { id: 'ielts', label: 'Evidence practice', shortLabel: 'Practice', minutes: '24' },
+  { id: 'listening', label: 'Dual listening lab', shortLabel: 'Listen', minutes: '24' },
   { id: 'synthesis', label: 'Synthesis and return', shortLabel: 'Return', minutes: '12' },
 ] as const
 
@@ -156,10 +183,10 @@ const AFFECT_QUESTIONS: GuidedChoiceQuestion[] = [
     family: 'Yes / No / Not Given',
     prompt: 'The writer believes that a feeling is useless unless it agrees with measured risk.',
     options: [
-      { text: 'No', feedback: 'The writer gives affect a useful role while limiting what it can establish.' },
-      { text: 'Yes', feedback: 'This reverses the writer’s explicit refusal to treat emotion as useless.' },
-      { text: 'Not Given', feedback: 'The writer directly discusses useful emotional information, so the view is stated.' },
-      { text: 'Only under time pressure', feedback: 'This is not an IELTS Y/N/NG response and adds a condition the statement does not contain.' },
+      { text: 'No, affect can still carry useful information', feedback: 'The writer gives affect a useful role while limiting what it can establish.' },
+      { text: 'Yes, measured risk makes affect entirely useless', feedback: 'This reverses the writer’s explicit refusal to treat emotion as useless.' },
+      { text: 'Not given, the writer avoids that comparison', feedback: 'The writer directly discusses useful emotional information, so the view is stated.' },
+      { text: 'Only true when decisions involve time pressure', feedback: 'This adds a condition the statement does not contain.' },
     ],
     answer: 0,
     evidence: 'A feeling may signal urgency, value or a learned pattern even when it does not estimate probability accurately.',
@@ -184,10 +211,10 @@ const AFFECT_QUESTIONS: GuidedChoiceQuestion[] = [
     family: 'Summary completion',
     prompt: 'Complete the idea: Affect can change an estimate of ______ even when the new information concerns benefits.',
     options: [
-      { text: 'objective danger', feedback: 'The experiment measured people’s judgments, not danger itself.' },
-      { text: 'the objective measured probability', feedback: 'Besides exceeding the intended limit, this changes perception into an objective value.' },
-      { text: 'perceived risk', feedback: 'This is the exact two-word construct used in the passage.' },
-      { text: 'emotional intelligence', feedback: 'That construct is not part of the claim or study.' },
+      { text: 'the level of objective danger', feedback: 'The experiment measured people’s judgments, not danger itself.' },
+      { text: 'the objectively measured probability', feedback: 'This changes perception into an objective value.' },
+      { text: 'their level of perceived risk', feedback: 'This is the construct used in the passage.' },
+      { text: 'their level of emotional intelligence', feedback: 'That construct is not part of the claim or study.' },
     ],
     answer: 2,
     evidence: 'Benefit information could lower perceived risk without changing measured danger.',
@@ -241,7 +268,7 @@ export const AFFECT_HEURISTIC_GUIDED_LESSON: GuidedAdvancedLesson = {
   kind: 'guided-v3',
   slug: 'heuristica-del-afecto',
   sequence: 3,
-  breadcrumbTitle: 'Heurística del afecto',
+  breadcrumbTitle: 'The affect heuristic',
   title: 'When feelings become evidence',
   subtitle: 'A guided seminar about affect, risk and benefit.',
   objective:
@@ -407,16 +434,16 @@ export const AFFECT_HEURISTIC_GUIDED_LESSON: GuidedAdvancedLesson = {
     ],
   },
   vocabulary: [
-    { term: 'affect', partOfSpeech: 'noun', meaning: 'A quickly experienced positive or negative quality.', collocation: 'positive affect', example: 'Positive affect made the benefits easier to imagine.' },
-    { term: 'gut feeling', partOfSpeech: 'noun phrase', meaning: 'An immediate judgment that is difficult to explain consciously.', collocation: 'trust a gut feeling', example: 'Her gut feeling deserved inspection, not automatic obedience.' },
-    { term: 'perceived risk', partOfSpeech: 'noun phrase', meaning: 'Risk as experienced or estimated by a person.', collocation: 'lower perceived risk', example: 'The benefit message lowered perceived risk.' },
-    { term: 'measured risk', partOfSpeech: 'noun phrase', meaning: 'Risk estimated using a defined method and evidence.', collocation: 'compare measured risk', example: 'Measured risk did not change when the description changed.' },
-    { term: 'time pressure', partOfSpeech: 'noun phrase', meaning: 'A condition in which a decision must be made quickly.', collocation: 'under time pressure', example: 'The relationship became stronger under time pressure.' },
-    { term: 'to elicit', partOfSpeech: 'verb', meaning: 'To cause or draw out a response.', collocation: 'elicit a reaction', example: 'The frequency format elicited a more vivid reaction.' },
-    { term: 'to spill over', partOfSpeech: 'phrasal verb', meaning: 'To move from one situation and influence another.', collocation: 'spill over into', example: 'Her disappointment spilled over into the audition decision.' },
-    { term: 'to disentangle', partOfSpeech: 'verb', meaning: 'To separate factors that have become mixed together.', collocation: 'disentangle risk from benefit', example: 'The protocol disentangles risk from benefit.' },
-    { term: 'trade-off', partOfSpeech: 'noun', meaning: 'A balance in which gaining one benefit involves a cost.', collocation: 'evaluate a trade-off', example: 'The student evaluated the trade-off without hiding either side.' },
-    { term: 'to override', partOfSpeech: 'verb', meaning: 'To take priority over another signal or decision.', collocation: 'override evidence', example: 'A vivid reaction should not automatically override evidence.' },
+    { category: 'Nouns', term: 'affect', partOfSpeech: 'noun', meaning: 'A quickly experienced positive or negative quality.', collocation: 'positive affect', example: 'Positive affect made the benefits easier to imagine.' },
+    { category: 'Nouns', term: 'gut feeling', partOfSpeech: 'noun phrase', meaning: 'An immediate judgment that is difficult to explain consciously.', collocation: 'trust a gut feeling', example: 'Her gut feeling deserved inspection, not automatic obedience.' },
+    { category: 'Useful language', term: 'perceived risk', partOfSpeech: 'noun phrase', meaning: 'Risk as experienced or estimated by a person.', collocation: 'lower perceived risk', example: 'The benefit message lowered perceived risk.' },
+    { category: 'Useful language', term: 'measured risk', partOfSpeech: 'noun phrase', meaning: 'Risk estimated using a defined method and evidence.', collocation: 'compare measured risk', example: 'Measured risk did not change when the description changed.' },
+    { category: 'Nouns', term: 'time pressure', partOfSpeech: 'noun phrase', meaning: 'A condition in which a decision must be made quickly.', collocation: 'under time pressure', example: 'The relationship became stronger under time pressure.' },
+    { category: 'Useful language', term: 'to elicit', partOfSpeech: 'verb', meaning: 'To cause or draw out a response.', collocation: 'elicit a reaction', example: 'The frequency format elicited a more vivid reaction.' },
+    { category: 'Phrasal verbs', term: 'to spill over', partOfSpeech: 'phrasal verb', meaning: 'To move from one situation and influence another.', collocation: 'spill over into', example: 'Her disappointment spilled over into the audition decision.' },
+    { category: 'Useful language', term: 'to disentangle', partOfSpeech: 'verb', meaning: 'To separate factors that have become mixed together.', collocation: 'disentangle risk from benefit', example: 'The protocol disentangles risk from benefit.' },
+    { category: 'Nouns', term: 'trade-off', partOfSpeech: 'noun', meaning: 'A balance in which gaining one benefit involves a cost.', collocation: 'evaluate a trade-off', example: 'The student evaluated the trade-off without hiding either side.' },
+    { category: 'Useful language', term: 'to override', partOfSpeech: 'verb', meaning: 'To take priority over another signal or decision.', collocation: 'override evidence', example: 'A vivid reaction should not automatically override evidence.' },
   ],
   ieltsPractice: {
     title: 'Read for claims, evidence and limits',
@@ -441,7 +468,10 @@ export const AFFECT_HEURISTIC_GUIDED_LESSON: GuidedAdvancedLesson = {
   },
 }
 
-export const GUIDED_ADVANCED_LESSONS: GuidedAdvancedLesson[] = [AFFECT_HEURISTIC_GUIDED_LESSON]
+export const GUIDED_ADVANCED_LESSONS: GuidedAdvancedLesson[] = [
+  DUNNING_KRUGER_GUIDED_LESSON,
+  AFFECT_HEURISTIC_GUIDED_LESSON,
+]
 
 export function getGuidedAdvancedLesson(slug: string) {
   return GUIDED_ADVANCED_LESSONS.find((lesson) => lesson.slug === slug)
