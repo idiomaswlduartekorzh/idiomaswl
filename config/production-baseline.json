@@ -45,6 +45,7 @@
   "protectedFiles": [
     "src/app/(site)/page.tsx",
     "src/components/SiteNav.tsx",
+    "scripts/check-site-navigation.mjs",
     "src/app/(site)/home/HomePage.tsx",
     "src/app/(site)/home/HomeResultsArchive.tsx",
     "src/app/(site)/home/home-results.ts",
@@ -147,7 +148,9 @@
     "vercel.json"
   ],
   "protectedMarkers": {
-    "src/components/SiteNav.tsx": ["{ label: 'Podcasts',", "href: '/podcasts'"],
+    "src/components/SiteNav.tsx": ["{ label: 'Herramientas',", "{ label: 'Tools',", "href: '/herramientas'"],
+    "scripts/check-site-navigation.mjs": ["Podcasts no debe aparecer", "La biblioteca de podcasts debe vivir como tarjeta dentro de Herramientas"],
+    "src/app/(site)/herramientas/page.tsx": ["slug: 'podcasts-examenes'", "href: '/podcasts'", "8 episodios · 6 exámenes"],
     "src/app/(site)/examenes/[exam]/page.tsx": ["exam-hub.module.css", "className={styles.localNav}", "<ExamPodcastShelf"],
     "src/app/(site)/examenes/[exam]/ExamInfoGraphic.tsx": ["function examVocabulary", "id=\"resumen\"", "id=\"estructura\"", "id=\"puntaje\"", "wl-hub-panel"],
     "src/app/(site)/examenes/[exam]/MockGrid.tsx": ["INITIAL_VISIBLE_MOCKS", "id=\"practica\"", "wl-mock-more", "wl-hub-panel"],
@@ -180,6 +183,7 @@
   },
   "requiredNpmScripts": [
     "check:production-baseline",
+    "check:site-navigation",
     "check:exam-hub-ui",
     "check:advanced-ideas",
     "check:practica-catalog",
@@ -203,6 +207,7 @@
   ],
   "requiredPrebuildChecks": [
     "check:production-baseline",
+    "check:site-navigation",
     "check:exam-hub-ui",
     "check:advanced-ideas",
     "check:practica-catalog",

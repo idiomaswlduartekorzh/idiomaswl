@@ -52,8 +52,8 @@ const TOOLS: Tool[] = [
     flag: '🎧',
     name: 'Podcasts de exámenes',
     tagline:
-      'Escucha mapas de estrategia para IELTS, TOEFL, ICFES, Cambridge B2 y SAT, con notas editoriales y rutas de práctica.',
-    detail: '7 episodios · 5 exámenes',
+      'Escucha mapas de estrategia para IELTS, TOEFL, ICFES, Cambridge B2, SAT y TOPIK, con notas editoriales y rutas de práctica.',
+    detail: '8 episodios · 6 exámenes',
     color: SKILL_ACCENT.escucha.light,
   },
   {
