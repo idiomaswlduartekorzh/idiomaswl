@@ -77,14 +77,14 @@ for (const lesson of GUIDED_ADVANCED_LESSONS) {
   if (lesson.reading.blocks.length < 6) problems.push(`${label}: fewer than six active-reading blocks`)
   if (lesson.vocabulary.length < 8) problems.push(`${label}: fewer than eight vocabulary targets`)
 
-  if (lesson.slug === 'dunning-kruger-sin-la-curva') {
+  if (['dunning-kruger-sin-la-curva', 'hipergamia-dato-o-relato'].includes(lesson.slug)) {
     if (!lesson.openingStatements || lesson.openingStatements.statements.length < 6) problems.push(`${label}: opening statement selection is incomplete`)
     for (const category of ['Phrasal verbs', 'Useful language', 'Adjectives', 'Nouns']) {
-      if (lesson.vocabulary.filter((item) => item.category === category).length < 3) problems.push(`${label}: vocabulary category ${category} needs at least three items`)
+      if (lesson.vocabulary.filter((item) => item.category === category).length < 5) problems.push(`${label}: vocabulary category ${category} needs at least five items`)
     }
   }
 
-  validateChoiceSet(lesson.ieltsPractice.questions, `${label}/evidence-practice`, lesson.slug === 'dunning-kruger-sin-la-curva' ? 12 : 8)
+  validateChoiceSet(lesson.ieltsPractice.questions, `${label}/evidence-practice`, ['dunning-kruger-sin-la-curva', 'hipergamia-dato-o-relato'].includes(lesson.slug) ? 12 : 8)
 
   if (lesson.listeningLab.status === 'produced') {
     if (lesson.listeningLab.tracks?.length !== 2) problems.push(`${label}: a produced listening lab needs exactly two tracks`)
