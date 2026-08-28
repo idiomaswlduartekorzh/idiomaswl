@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set18-audit-2026-08-28.json',
   expectedMediaStatus: 'script-ready-audio-blocked',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'a cheap, precise, and widely accessible tool for editing DNA in virtually any organism',
     'some patients appearing functionally cured after a single treatment',

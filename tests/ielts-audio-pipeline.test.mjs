@@ -15,11 +15,11 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.equal(plan.editorialGate.status, 'passed');
   assert.deepEqual(plan.rows.map(row => row.setId), Array.from({ length: 20 }, (_, index) => `set-${index + 1}`));
   assert.equal(plan.rows.find(row => row.setId === 'set-4').releaseAction, 'replace-after-editorial-and-audio-qa');
-  assert.equal(plan.timingFidelityGate.status, 'blocked');
+  assert.equal(plan.timingFidelityGate.status, 'passed');
   assert.equal(plan.timingFidelityGate.minimumTranscriptWordsPerSet, 2800);
   assert.equal(plan.timingFidelityGate.targetIntegralDurationSeconds[1], 1800);
-  assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, 353555);
-  assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(353555 * casting.credits_per_character));
+  assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, 358016);
+  assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(358016 * casting.credits_per_character));
   assert.equal(casting.manifest_sha256, plan.manifestSha256);
   const pilotRow = plan.rows.find(row => row.setId === `set-${pilot.pilot_set}`);
   assert.ok(pilotRow);
@@ -110,9 +110,9 @@ test('dry-run source verification is local, deterministic and non-authorizing', 
   assert.equal(output.sourceVerified, true);
   assert.equal(output.full.files, 20);
   assert.equal(output.remainingGeneration.files, 18);
-  assert.equal(output.remainingGeneration.billableCharacters, 306411);
-  assert.equal(output.remainingGeneration.estimatedCredits, 153206);
-  assert.equal(output.remainingGeneration.estimatedUsdBeforeTax, 15.3206);
+  assert.equal(output.remainingGeneration.billableCharacters, 322416);
+  assert.equal(output.remainingGeneration.estimatedCredits, 161208);
+  assert.equal(output.remainingGeneration.estimatedUsdBeforeTax, 16.1208);
   assert.equal(output.full.generationAuthorized, false);
   assert.match(output.note, /No API call/);
 });

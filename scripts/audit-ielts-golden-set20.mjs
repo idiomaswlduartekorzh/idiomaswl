@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set20-audit-2026-08-28.json',
   expectedMediaStatus: 'script-ready-audio-blocked',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'saved hundreds of millions of lives',
     'approximately 4.95 million further deaths',

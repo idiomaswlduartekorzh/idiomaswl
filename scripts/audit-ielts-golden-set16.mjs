@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set16-audit-2026-08-28.json',
   expectedMediaStatus: 'script-ready-audio-blocked',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'making it the cheapest source of new electricity generation in history in most parts of the world',
     'millions of people still lack access to clean drinking water, so a cheap, simple solution really does matter',

@@ -323,7 +323,7 @@ export function expandIeltsListeningTranscript(setNumber: number, part: number, 
   const bank = additionsFor(setNumber, part);
   const labels = dialogueLabels(source);
   const additions: string[] = [];
-  const targetPartWords = setNumber <= 15
+  const targetPartWords = setNumber <= 20
     ? (setNumber === 12 && part === 2 ? 680 : TIMING_REFERENCE_PART_WORDS)
     : TARGET_PART_WORDS;
   let projectedWords = countWords(source);

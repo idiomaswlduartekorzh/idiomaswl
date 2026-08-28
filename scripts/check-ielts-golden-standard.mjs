@@ -2,8 +2,6 @@
 
 import { IELTS_GOLDEN_STANDARD_2026 as standard } from '../src/data/mocks/ielts-golden-standard.ts';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
-import set4 from '../src/data/mocks/ielts-set-4.ts';
-import set5 from '../src/data/mocks/ielts-set-5.ts';
 
 const failures = [];
 const assert = (condition, message) => {
@@ -30,9 +28,12 @@ assert(format.speaking.parts === 3 && format.speaking.criteria.length === 4, 'Sp
 assert(format.speaking.part2PreparationSeconds === 60 && format.speaking.part2TalkSeconds[1] === 120, 'Speaking Part 2 must preserve one-minute preparation and up to two-minute talk.');
 assert(format.speaking.officialDelivery !== format.speaking.welearnDelivery, 'The Speaking simulation difference must stay explicit.');
 
-const set4Blueprint = withIeltsAcademic2026Blueprint(set4);
-const set5Blueprint = withIeltsAcademic2026Blueprint(set5);
-for (const blueprint of [set4Blueprint, set5Blueprint]) {
+const blueprints = [];
+for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
+  const { default: mock } = await import(`../src/data/mocks/ielts-set-${setNumber}.ts`);
+  blueprints.push(withIeltsAcademic2026Blueprint(mock));
+}
+for (const blueprint of blueprints) {
   const skillContract = Object.fromEntries(blueprint.ieltsAcademic2026Blueprint.sections.map((item) => [item.skill, item]));
   assert(skillContract.listening.targetResponses === format.listening.totalResponses, `${blueprint.id}: Listening target drifted from Golden.`);
   assert(skillContract.reading.targetResponses === format.reading.totalResponses, `${blueprint.id}: Reading target drifted from Golden.`);
@@ -40,8 +41,14 @@ for (const blueprint of [set4Blueprint, set5Blueprint]) {
   assert(skillContract.listening.timeLimitSeconds === format.listening.timeLimitSeconds, `${blueprint.id}: Listening timer drifted from Golden.`);
   assert(skillContract.reading.timeLimitSeconds === format.reading.timeLimitSeconds, `${blueprint.id}: Reading timer drifted from Golden.`);
   assert(skillContract.writing.timeLimitSeconds === format.writing.timeLimitSeconds, `${blueprint.id}: Writing timer drifted from Golden.`);
+  const listeningPartWords = blueprint.sections.filter((section) => section.skill === 'listening')
+    .map((section) => section.transcript.trim().split(/\s+/).filter(Boolean).length);
+  assert(listeningPartWords.reduce((sum, count) => sum + count, 0) >= 2800, `${blueprint.id}: Listening script is below the pre-synthesis floor.`);
+  assert(listeningPartWords.every((count) => count >= 680 && count <= 760), `${blueprint.id}: Listening part density drifted outside 680–760.`);
 }
 
+const set4Blueprint = blueprints[3];
+const set5Blueprint = blueprints[4];
 assert(set4Blueprint.ieltsAcademic2026Blueprint.listeningMediaStatus === 'legacy-audio-under-review', 'Set 4 must preserve its published master without misclassifying it after timing reassessment.');
 assert(set5Blueprint.ieltsAcademic2026Blueprint.listeningMediaStatus !== 'ready-existing', 'Set 5 must not become Golden by bypassing final acceptance.');
 assert(standard.welearnInternalGates.listening.scriptsFreezeBeforePaidAudio, 'Paid audio must remain deferred until scripts freeze.');
@@ -56,5 +63,5 @@ if (failures.length) {
   for (const failure of failures) console.error(`- ${failure}`);
   process.exitCode = 1;
 } else {
-  console.log('✓ IELTS Golden Standard 2026: official rules, WeLearn gates and Sets 4/5 reference contract verified.');
+  console.log('✓ IELTS Golden Standard 2026: official rules, WeLearn gates and all 20 reference contracts verified.');
 }

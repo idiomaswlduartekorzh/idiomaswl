@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set17-audit-2026-08-28.json',
   expectedMediaStatus: 'script-ready-audio-blocked',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'It seems fitness might protect against short-term sleep loss',
     'we often credit Johannes Gutenberg with inventing printing in the fifteenth century',

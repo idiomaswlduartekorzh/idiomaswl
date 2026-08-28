@@ -25,13 +25,13 @@ respuesta, control de longitud de distractores, claves sólo en servidor, proced
 verificada, consentimiento de grabación, acceso mínimo a revisiones y estado incompleto nunca
 mostrado como cero.
 
-Ningún audio nuevo se genera antes de congelar el script y sus respuestas. Sets 1–15 son
-los primeros guiones de referencia que superan el proxy temporal, con 2.866–2.967 palabras
+Ningún audio nuevo se genera antes de congelar el script y sus respuestas. Sets 1–20 ya
+superan el proxy temporal, con 2.869–2.967 palabras
 y cada parte dentro de 680–760; esto aprueba los textos para la siguiente auditoría, no sus
 audios históricos ni su generación. Set 4 conserva
 su aprobación y publicación como hechos históricos, pero no es referencia vigente: el gate
 temporal posterior detectó una cola muda artificial. Los Sets 1–20 ya superaron sus auditorías
-Golden de contenido; sus audios siguen diferidos hasta ampliar los guiones, completar casting,
+Golden de contenido; sus audios siguen diferidos hasta confirmar casting y coste incremental,
 generación, mastering y QA. La certificación Golden exige las auditorías estructural,
 editorial, de evidencia, UI/UX/accesibilidad, resultados, privacidad y regresión visual.
 

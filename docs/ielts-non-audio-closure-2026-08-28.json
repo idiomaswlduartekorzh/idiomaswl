@@ -49,7 +49,7 @@
     20
   ],
   "totalLiveControls": 4800,
-  "sharedInputsSha256": "09091fa25a0434f145db3b4ad77834b78530f49d0e1936969ede78656a10c35c",
+  "sharedInputsSha256": "8460296e4b41572cebfc36c911a1ea970990ed258669657fc86384112f73a808",
   "setEvidence": [
     {
       "set": 1,
@@ -69,7 +69,7 @@
         "Listening audio generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set1-task1.svg",
-      "inputSha256": "242c3600354b1b06244f7e4d4395c4ecb697dd027c0743eeec75949afadf7593",
+      "inputSha256": "2c5caa124e123ec3455b66f246834545ac5eaa5cc5bede79589ed620d2507180",
       "reportSha256": "13503a8f281edfa735af800e5fd52761735bd93349e92e6eef332630f4d69939"
     },
     {
@@ -90,7 +90,7 @@
         "Listening audio generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set2-task1.svg",
-      "inputSha256": "1c2c7885b513957a85ed207a17541ff37dd7b6a9ac1b110a0ae6fe80ad63bdbf",
+      "inputSha256": "ff8d6ff099344c415ceb917ce5a4666da645b04accf88f23a30712ad7e3be835",
       "reportSha256": "227cb091b6c3db77e2bbff579aa4b31f6329a96a6d7154785303819f192e65f7"
     },
     {
@@ -111,7 +111,7 @@
         "Listening audio generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set3-task1.svg",
-      "inputSha256": "86ee17586ce8656e800a9bc0ca6c8e70611800d5f65b16cbf613d491967380f5",
+      "inputSha256": "1d6532b56dadac737b4f920bdf5fc15b7f4b96c31f16d92fa0b5a98d7a7b7f5d",
       "reportSha256": "f8c9aaf6132479fce91ee85425f840b88df67f67138dc2909b4e901e39fc6fa7"
     },
     {
@@ -132,7 +132,7 @@
         "Reassemble the expanded Listening script without padding, repeat technical/ASR QA and preserve the owner-acceptance history."
       ],
       "task1Asset": "/assets/ielts/charts/set4-task1.svg",
-      "inputSha256": "9ef1020dbc5afb62cc100f2223761408133ba3e9e84fcbb2b00440553be3dcdc",
+      "inputSha256": "5006cd032e75c7173eda7ca04c499a183b1e3594ba9e389cd55f0f0751734fec",
       "reportSha256": "8ed9c8bfe2d5815c1139a56da9def2e3d4360d6e5ac4b8bfa60278fb0e68d09b"
     },
     {
@@ -153,7 +153,7 @@
         "Reassemble the current Listening script without padding, repeat technical/ASR QA, then request human acceptance."
       ],
       "task1Asset": "/assets/ielts/charts/set5-task1.svg",
-      "inputSha256": "c4c2953d916a86f788aa5937f19b6afeba8a757cfc0ed583569a590adce8b41e",
+      "inputSha256": "4040a4c7af396d1106c2312a6ef40d87e02c7a1faabc148065209d959ee3a5b4",
       "reportSha256": "6515529103171456d522505f12cc72ae6c82240cf7852dbb7c6173af2b640d74"
     },
     {
@@ -174,7 +174,7 @@
         "Listening audio replacement, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set6-task1.svg",
-      "inputSha256": "94563a242945a2fbf86873a364d1fbae3988f019f2cd7521d6b16e55d7ff1de4",
+      "inputSha256": "68b3ddafe76d6042050551450f0a6f0b3cd0f0f49b1cbcc3e6a5872c28e654a0",
       "reportSha256": "cb1da41689a44f843266dfc0c74157420a6aba8626befa752135a4fc068da23d"
     },
     {
@@ -195,7 +195,7 @@
         "Listening audio replacement, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set7-task1.svg",
-      "inputSha256": "15ec4ca3d53f3463dbf6475240464eb013525d80f61d8d921b038bfc8883a96f",
+      "inputSha256": "bfa78d150ee7d6b8a79a1bc5b18241d7acdf4a654da155605af084c778d68949",
       "reportSha256": "597951440f14879c74aa8084df21bd5d884deafa24780bad91ca05ecf586fbd6"
     },
     {
@@ -216,7 +216,7 @@
         "Listening audio replacement, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set8-task1.svg",
-      "inputSha256": "4e07c7a67429b4427922673c5da1d82a606afb870ada33f19eef873d7137ee9c",
+      "inputSha256": "b7fda56defb6dd83518b68d3b1fab5807ef852e713e4ede2a7db618ed98b4732",
       "reportSha256": "cd31528c61118b98c340a5c8aa023fd10e145aeb5f97b7574a8bcf4a35876df0"
     },
     {
@@ -237,7 +237,7 @@
         "Listening audio replacement, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set9-task1.svg",
-      "inputSha256": "dca0a53f6b6e955eeac4e8bf3088da8847e58fb8746a6948449870f7e94958e1",
+      "inputSha256": "77ec9dc2fe0df172a248932c8ecc8c1a4034031e5f7450612854a21ef40070ca",
       "reportSha256": "315cece708619e93c5b2431871d02eecfbeb0507059ac23b855fecfaccdca4da"
     },
     {
@@ -258,7 +258,7 @@
         "Listening audio replacement, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set10-task1.svg",
-      "inputSha256": "98409391230b440cc7d877199553e999ceb129a9e6bf769c40bcdd7203a356cd",
+      "inputSha256": "269f77ee0ad3440701c5d50fe0d2d6264b3991212a04dd391a66676e250bec11",
       "reportSha256": "00b53f2f8a4d386dad2af15802d4282bede946b07f401c96c893c1302b8f50cf"
     },
     {
@@ -279,7 +279,7 @@
         "Listening audio replacement, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set11-task1.svg",
-      "inputSha256": "7734bc8b91520b6c89fd58c63e6829e39385c82bf7da0d4217e9fa30904aa5d2",
+      "inputSha256": "eb16469f0fde084c1924af4667e4fbdba84e3faccc6fc1758d58f8564842879e",
       "reportSha256": "3a6122442cadaf342c6fd3bd360325003de2b06d5ba96e99d703ab60f08e09f3"
     },
     {
@@ -300,7 +300,7 @@
         "Listening audio replacement, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set12-task1.svg",
-      "inputSha256": "706eba6bbf9b3273b48dc8cdba7914a5b2a3ff82bbc1421767f3bcdbed6b8035",
+      "inputSha256": "d70ad2855f43e64045918f272595be9ee1040f62819a61480b2f4df2fc0bd5cd",
       "reportSha256": "29c43da92db1d22ca236bce2a6349f9396c607ecd3d5af63a4356e5090f7b132"
     },
     {
@@ -321,7 +321,7 @@
         "Listening audio casting, generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set13-task1.svg",
-      "inputSha256": "bc9b4055f68235a83260faba60a9a4b452d2b238588d2f66353e584c280f2e2f",
+      "inputSha256": "660cea3f6458d4cdd4369ed717939e1d132266d50e30268d760d706e4d4abe5c",
       "reportSha256": "dbf29a6336ff9ae4a01938105a23cd12eee99fdc603570aabdcb145a5010c7b1"
     },
     {
@@ -342,7 +342,7 @@
         "Listening audio casting, generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set14-task1.svg",
-      "inputSha256": "ea8f2331f0d348b65de4d3a495c0c134be1daff7c578aeb237fec18438e086fa",
+      "inputSha256": "373a9f2fd4b65f0324220acca7cfa4214f3ea3d06386e6b09f962a3b10ce3679",
       "reportSha256": "1eccd3dda6f8a75a704634991ccd0297b6b2130f14d370ced7f175e83e7e95e4"
     },
     {
@@ -363,7 +363,7 @@
         "Listening audio casting, generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set15-task1.svg",
-      "inputSha256": "eeea66bb313f9428649d582c0ac2f5e88c7121780817723dd7852fa1239d6de9",
+      "inputSha256": "2f6fcdc3cfeb815753c015ab453fb627c1070ffd46284726dbe276625ec00a41",
       "reportSha256": "9f18d47ed706f4e4bd1165400a49b0efe115fdc6a387c3a1804302a6732e5ae8"
     },
     {
@@ -384,8 +384,8 @@
         "Listening audio casting, generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set16-task1.svg",
-      "inputSha256": "829e4f2e2ce3b196b9f52e1d2e6881d99e535c2ce1cb7d1724c7c63789ea4a9a",
-      "reportSha256": "64f4cb003b46059f0b97e8aaa1c0ef2db1078608cbf01f46979d67efb2836699"
+      "inputSha256": "242fbd18c1f525d9e48835aa08844059f18f75c1c7c8176fbfebba4bc846479b",
+      "reportSha256": "afb90a65b833cdd352905638afdf15a6fbe1357e352a7ad725b47c8c383034b6"
     },
     {
       "set": 17,
@@ -405,8 +405,8 @@
         "Listening audio casting, generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set17-task1.svg",
-      "inputSha256": "7de798fdcee869f080dfdde52ff32a6a316dab9badc5dcb8e4eb629b6815805a",
-      "reportSha256": "9c7d0396321ff8194708fd89518542be152655d49e11564c28631e4e4e3fd2e9"
+      "inputSha256": "835b99b752312ceddecd585394ab88fceaa91dd469cc392594766502ca982e0f",
+      "reportSha256": "68289e112e15c84ae7c0fa2f2f577712ec5dce55b241d9352ba59e4d1a38dafd"
     },
     {
       "set": 18,
@@ -426,8 +426,8 @@
         "Listening audio casting, generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set18-task1.svg",
-      "inputSha256": "f66fa4352f623f186a0d086aa2100c6423c7fc6aeb57314c3cb535431404e997",
-      "reportSha256": "2fdede1fe5277811efd3e50aa98c0eb3bddc1808c2edc586a46cb640428fe42c"
+      "inputSha256": "8b8d2efff467e610faa555a09136ecba2b6673d37463181dfd151bbc1d84bf49",
+      "reportSha256": "84d321bc83a2a3431877cee44f5035b5898d4a0abf98ab431126a7611375948b"
     },
     {
       "set": 19,
@@ -447,8 +447,8 @@
         "Listening audio casting, generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set19-task1.svg",
-      "inputSha256": "b4de03974be7f8229140dce850d60913236d357f5552b1af1f7fd69aa631f18f",
-      "reportSha256": "24f3b4388001bfd55e243ed4c65ebfd2f42d1d5591502d3ed493480e123da670"
+      "inputSha256": "b4b6bd98f33dfd8985c34052a0333e4a20e60575f0cbcb548392806ccd14e173",
+      "reportSha256": "53d25add47593871135aa787b8ae3d28bc0ad6a240b8610028993858c5f9096d"
     },
     {
       "set": 20,
@@ -468,9 +468,9 @@
         "Listening audio casting, generation, mastering and waveform/ASR QA"
       ],
       "task1Asset": "/assets/ielts/charts/set20-task1.svg",
-      "inputSha256": "9e83da8fb62d2b12ab502820b743e225c9af57388c29b60d1fe2ab1f391debc6",
-      "reportSha256": "d02ec8784baca173ed3f75e973f2615c5b39a06aef7ff7eb77988aca18b0c40a"
+      "inputSha256": "702164ae5c1ef9c79647995580a7b03df479e77020c4b5bd99d3460320df9950",
+      "reportSha256": "770b65e9b3079b2c3b147f028594b6288fc7cb1250e319b1a691db31f5486737"
     }
   ],
-  "closureSha256": "d6a509e3f4c93889bdf223edb0d2c012dc20f92a0af6def7c3e77c548cd13c5b"
+  "closureSha256": "49d433b6816fd5aa4e33e127eb0d03c718c00835accdc5d8ed1eac67df692ea3"
 }

@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set19-audit-2026-08-28.json',
   expectedMediaStatus: 'script-ready-audio-blocked',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'can only be explained if galaxies contain far more mass',
     'the most direct evidence that dark matter is a real physical substance rather than a modification',

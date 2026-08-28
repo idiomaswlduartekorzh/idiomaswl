@@ -13,9 +13,9 @@ Por eso el producto y cada Set 1–20 muestran una declaración explícita de no
 
 “Aprobado no-audio” significa que Reading, Writing, Speaking, las respuestas y estructura
 de los guiones Listening, las claves privadas, la corrección, la privacidad y la experiencia
-de uso pasaron sus guardianes. La densidad temporal de esos guiones necesita una segunda
-expansión antes de síntesis. No autoriza a afirmar que los 20 mocks ya simulan Listening de
-punta a punta.
+de uso pasaron sus guardianes. Los 20 guiones también superan ya el proxy temporal previo
+a síntesis; ese proxy no sustituye la medición del audio final. No autoriza a afirmar que los
+20 mocks ya simulan Listening de punta a punta.
 
 ## Inventario verificado
 
@@ -26,8 +26,8 @@ punta a punta.
 | Respuestas Listening por set | 40/40 |
 | Respuestas Reading por set | 40/40 |
 | Palabras por Reading | 2.150–2.468 |
-| Palabras por guion Listening | 2.376–2.967 |
-| Guiones que superan el proxy temporal de 2.800 palabras | 15/20 (Sets 1–15) |
+| Palabras por guion Listening | 2.869–2.967 |
+| Guiones que superan el proxy temporal de 2.800 palabras | 20/20 |
 | Writing | Task 1 + Task 2 en 20/20 |
 | Speaking | Parts 1–3 en 20/20 |
 | Claves objetivas expuestas al cliente | 0 |
@@ -46,8 +46,7 @@ Estado real del audio:
 - Sets 6–10: los guiones ya pasan el proxy temporal con 2.869–2.967 palabras; sus MP3
   heredados de 24:00 siguen siendo reemplazo obligatorio.
 - Sets 11–12: guiones en rango; sus MP3 heredados de 24:00 requieren reemplazo.
-- Sets 13–15: guiones en rango y MP3 integral inexistente; la interfaz excluye Listening.
-- Sets 16–20: guiones aún por ampliar y MP3 integral inexistente.
+- Sets 13–20: guiones en rango y MP3 integral inexistente; la interfaz excluye Listening.
 
 El auditor global termina deliberadamente `BLOCKED (23)`: dos gates por cada Set 1–3,
 uno de fidelidad temporal por cada Set 4–12 y uno por cada Set 13–20. No existe otro bloqueo editorial,
@@ -127,7 +126,7 @@ proveniencia y ya no se sirven en el simulacro.
 
 El cierre no-audio está fijado además por el manifiesto
 `docs/ielts-non-audio-closure-2026-08-28.json`, con SHA-256 de cierre
-`d6a509e3f4c93889bdf223edb0d2c012dc20f92a0af6def7c3e77c548cd13c5b`. El guardián
+`49d433b6816fd5aa4e33e127eb0d03c718c00835accdc5d8ed1eac67df692ea3`. El guardián
 repite las 20 auditorías en vivo y liga cada resultado al mock actual, su auditor, las
 transformaciones compartidas, la proyección pública y el gráfico Task 1. Cualquier cambio
 sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los registros
@@ -136,11 +135,11 @@ sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los
 ## Plan de audio y criterio de salida
 
 El manifiesto de planificación vigente tiene SHA-256
-`da27b1e806793ec6b710ce7c4f62aaf41f57da8b2deafac84f30f6b3c4090bb5`, 55.869
-palabras fuente y un déficit temporal conservador de 1.901 palabras hasta 2.800 por Set.
-La proyección de los guiones ampliados es 353.555 caracteres, 176.778 créditos y
-USD 17,6777 antes de impuestos y reintentos. `generationAuthorized=false`: el propio
-generador rechaza cualquier llamada al proveedor mientras el gate siga bloqueado.
+`c1faeb57ba9fe3bf9aa3b13ea1adad174e824c3831a1759c00a63e9bea5c6fff`, 58.322
+palabras fuente y déficit temporal cero: los 20 guiones pasan el proxy previo a síntesis.
+El manifiesto suma 358.016 caracteres, 179.008 créditos y USD 17,9008 antes de impuestos
+y reintentos. `generationAuthorized=false`: aunque el gate de guion ya está aprobado, el
+generador rechaza llamadas al proveedor porque el manifiesto no tiene autorización vigente.
 
 Sets 4 y 5 conservan 27.427 caracteres históricos para reutilización selectiva únicamente
 cuando el hash del segmento todavía coincida con el texto vigente. Ambos masters completos
@@ -151,8 +150,9 @@ La consulta de sólo lectura del 28 de agosto registró 964 créditos disponible
 el 5 de septiembre de 2026 a las 18:13:51 (Bogotá); la consulta no consumió créditos.
 
 El presupuesto anterior dejó de ser válido porque dependía de guiones demasiado breves.
-Los 964 créditos observados no alcanzan para esta fase y no se gastarán: primero se amplían,
-auditan y congelan los 20 guiones; después se recalcula reutilización y factura incremental.
+Los 964 créditos observados no alcanzan para sintetizar el manifiesto congelado y no se
+gastarán sin una nueva autorización. La expansión y auditoría de los 20 guiones ya terminó;
+el siguiente gate es cuantificar la reutilización real por hash y la factura incremental.
 
 Antes de cualquier nueva llamada a ElevenLabs se debe recalcular la factura incremental
 excluyendo bytes aceptados de Set 4 y caché verificable de Set 5. Después, cada Set debe
