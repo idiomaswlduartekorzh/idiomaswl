@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import {
   canonicalHref,
@@ -41,6 +42,43 @@ test('la paridad FAQ detecta preguntas visibles o estructuradas que divergen', (
   assert.deepEqual(parity.missingSchema, ['¿Pregunta visible?']);
 });
 
+test('la paridad FAQ reconoce tarjetas article/h3 dentro de una sección FAQ', () => {
+  const html = `
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently asked questions</h2>
+      <article><h3>Is this official practice?</h3><p>No.</p></article>
+      <article><h3>How should I use it?</h3><p>As guided practice.</p></article>
+    </section>
+    <script type="application/ld+json">${faqSchema([
+      'Is this official practice?',
+      'How should I use it?',
+    ])}</script>
+  `;
+
+  assert.deepEqual(compareFaqParity(html), {
+    schema: ['Is this official practice?', 'How should I use it?'],
+    visible: ['Is this official practice?', 'How should I use it?'],
+    missingVisible: [],
+    missingSchema: [],
+  });
+});
+
+test('la paridad FAQ no confunde una pregunta didáctica fuera de una sección FAQ', () => {
+  const html = `
+    <section aria-labelledby="lesson-heading">
+      <h2 id="lesson-heading">Analiza la consigna</h2>
+      <article><h3>¿Qué postura vas a defender?</h3><p>Elige una postura clara.</p></article>
+    </section>
+  `;
+
+  assert.deepEqual(compareFaqParity(html), {
+    schema: [],
+    visible: [],
+    missingVisible: [],
+    missingSchema: [],
+  });
+});
+
 test('el extractor admite FAQPage dentro de @graph y entidades HTML', () => {
   const schema = JSON.stringify({
     '@graph': [{ '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: '¿Qué incluye & más?' }] }],
@@ -67,4 +105,21 @@ test('el guardián estático acepta la fundación SEO sin deuda tolerada', () =>
   assert.equal(result.status, 0, result.stderr || result.stdout);
   assert.match(result.stdout, /Fundación SEO/);
   assert.doesNotMatch(result.stderr, /deuda conocida|lastModified|sin www/);
+});
+
+test('Task 2 solo publica FAQ schema cuando la página entrega FAQ visibles', () => {
+  const component = readFileSync(
+    'src/app/(site)/practica/ielts/academic/writing/task2/Task2SkillStructuredData.tsx',
+    'utf8',
+  );
+  const introduction = readFileSync(
+    'src/app/(site)/practica/ielts/academic/writing/task2/introduccion/page.tsx',
+    'utf8',
+  );
+  const productionAudit = readFileSync('scripts/audit-seo.mjs', 'utf8');
+
+  assert.doesNotMatch(component, /faqs\s*=\s*TASK2_SKILL_FAQS/);
+  assert.match(component, /faqs\?\.length\s*\?\s*<FaqJsonLd faqs=\{faqs\}/);
+  assert.match(introduction, /faqs=\{TASK2_SKILL_FAQS\}/);
+  assert.match(productionAudit, /practica\\\/ielts\\\/academic\\\/writing\\\/task2/);
 });

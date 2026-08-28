@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   openGraph: { title: 'IELTS Task 2 Final Review Checklist and Practice', description: 'Check Task Response, essay logic, position, cohesion and language before submitting a Task 2 response.', type: 'website', locale: 'en_US' },
 };
 
-const faqs = [
-  { question: 'What should I review first in IELTS Task 2?', answer: 'Start with the prompt and every instruction. A missing answer cannot be repaired by better vocabulary or punctuation.' },
-  { question: 'Does this IELTS checklist predict a band score?', answer: 'No. It identifies visible revision priorities. Writing and scoring still require expert evaluation of the complete response.' },
-  { question: 'Should I rewrite whole paragraphs during final review?', answer: 'Usually not. Correct the highest-impact issue that can be fixed safely without creating new contradictions.' },
-  { question: 'What if my IELTS Task 2 essay is under 250 words?', answer: 'Task 2 requires at least 250 words. Add purposeful development to a required idea rather than filler.' },
+const FAQS = [
+  { question: 'What should I review first?', answer: 'Start with the prompt and every instruction. A missing answer cannot be repaired by better vocabulary or punctuation.' },
+  { question: 'Does this checklist predict my band?', answer: 'No. It helps you find visible revision priorities. Writing and scoring still require expert evaluation of the complete response.' },
+  { question: 'Should I rewrite whole paragraphs?', answer: 'Usually not during a final timed review. Correct the highest-impact issue that can be fixed safely without creating new contradictions.' },
+  { question: 'What if I am under 250 words?', answer: 'Task 2 requires at least 250 words. Do not add filler: identify the least-developed required idea and extend its reasoning purposefully.' },
 ];
 
 export default function Page() {
-  return <><Task2SkillStructuredData name="IELTS Task 2 Final Review" path="/practica/ielts/academic/writing/task2/revision-final" teaches={['Task Response review', 'essay logic review', 'position consistency', 'cohesion review', 'language editing']} faqs={faqs} /><FinalReviewClient /></>;
+  return <><Task2SkillStructuredData name="IELTS Task 2 Final Review" path="/practica/ielts/academic/writing/task2/revision-final" teaches={['Task Response review', 'essay logic review', 'position consistency', 'cohesion review', 'language editing']} faqs={FAQS} /><FinalReviewClient faqs={FAQS} /></>;
 }

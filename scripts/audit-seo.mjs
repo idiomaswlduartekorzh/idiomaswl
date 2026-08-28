@@ -207,7 +207,7 @@ async function checkRedirectChains() {
 
 /** Compara preguntas, no el número bruto de <details>; otras funciones también usan details. */
 async function checkFaqs(paths) {
-  const candidates = paths.filter((path) => /^\/(examenes\/[a-z0-9-]+|clases-de-[a-z0-9-]+|quienes-somos)$/.test(path));
+  const candidates = paths.filter((path) => /^\/(examenes\/[a-z0-9-]+|clases-de-[a-z0-9-]+|quienes-somos|practica\/ielts\/academic\/writing\/task2(?:\/.*)?)$/.test(path));
   const results = await mapLimit(candidates, CONCURRENCY, async (path) => {
     const response = await request(BASE + path);
     if (response.status !== 200) return null;

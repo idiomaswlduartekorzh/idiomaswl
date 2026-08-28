@@ -107,8 +107,37 @@ function visibleClassQuestions(html) {
   return questions;
 }
 
+function visibleFaqSectionQuestions(html) {
+  const questions = [];
+  const sectionPattern = /<section\b([^>]*)>([\s\S]*?)<\/section>/gi;
+
+  for (const match of html.matchAll(sectionPattern)) {
+    const attributes = match[1];
+    const content = match[2];
+    const visibleContent = content
+      .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ');
+    const label = normalizeVisibleText(visibleContent);
+    const hasFaqMarker = /faq/i.test(attributes)
+      || /\b(?:frequently asked questions|preguntas frecuentes)\b/i.test(label);
+
+    if (!hasFaqMarker) continue;
+
+    for (const heading of visibleContent.matchAll(/<h([2-4])\b[^>]*>([\s\S]*?)<\/h\1>/gi)) {
+      const text = normalizeVisibleText(heading[2]);
+      if (/[?¿]/.test(text)) questions.push(text);
+    }
+  }
+
+  return questions;
+}
+
 export function visibleFaqQuestions(html) {
-  return [...new Set([...visibleSummaryQuestions(html), ...visibleClassQuestions(html)])];
+  return [...new Set([
+    ...visibleSummaryQuestions(html),
+    ...visibleClassQuestions(html),
+    ...visibleFaqSectionQuestions(html),
+  ])];
 }
 
 export function compareFaqParity(html) {
