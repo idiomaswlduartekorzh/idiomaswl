@@ -4,7 +4,16 @@ import { ReadingHub } from './ReadingHub'
 import { ReadingLesson } from './ReadingLesson'
 import { ReadingStructuredData } from './ReadingStructuredData'
 import { availableExercises, findReadingExercise, findReadingHubExercises } from '@/lib/reading/catalog'
-import { LANGUAGE_NAMES, languageSlug, readingExercisePath, readingHubPath, resolveLanguageSlug } from '@/lib/reading/routes'
+import {
+  LANGUAGE_NAMES,
+  languageSlug,
+  readingAlternates,
+  readingExerciseLocalePaths,
+  readingExercisePath,
+  readingHubLocalePaths,
+  readingHubPath,
+  resolveLanguageSlug,
+} from '@/lib/reading/routes'
 import { localized } from '@/lib/reading/validate'
 import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from '@/lib/reading/types'
 import styles from './reading.module.css'
@@ -39,19 +48,13 @@ function resolveRoute(locale: TutorLocale, languageParam: string, levelParam: st
   return { language, level }
 }
 
-function localizedAlternates(exercise: ReadingExercise) {
-  const es = readingExercisePath('es', exercise.language, exercise.level.cefr, exercise.slug)
-  const en = readingExercisePath('en', exercise.language, exercise.level.cefr, exercise.slug)
-  return { es, en, 'x-default': es }
-}
-
 export function buildExerciseMetadata(exercise: ReadingExercise, locale: TutorLocale): Metadata {
   const canonical = readingExercisePath(locale, exercise.language, exercise.level.cefr, exercise.slug)
   const publishable = exercise.status === 'published' && exercise.seo.indexable
   return {
     title: localized(exercise.seo.title, locale),
     description: localized(exercise.seo.description, locale),
-    alternates: { canonical, languages: localizedAlternates(exercise) },
+    alternates: { canonical, languages: readingAlternates(readingExerciseLocalePaths(exercise)) },
     robots: { index: publishable, follow: true },
     openGraph: {
       type: 'article',
@@ -67,8 +70,10 @@ export function buildExerciseMetadata(exercise: ReadingExercise, locale: TutorLo
 export function buildHubMetadata(locale: TutorLocale, language: ReadingLanguage, level: CefrLevel, exercises: ReadingExercise[]): Metadata {
   const languageName = LANGUAGE_NAMES[locale][language]
   const canonical = readingHubPath(locale, language, level)
-  const es = readingHubPath('es', language, level)
-  const en = readingHubPath('en', language, level)
+  const availableLocales = (['es', 'en'] as const).filter(
+    (candidate) => findReadingHubExercises(candidate, language, level).length > 0
+  )
+  const languages = readingAlternates(readingHubLocalePaths(availableLocales, language, level))
   const indexable = exercises.some((exercise) => exercise.status === 'published' && exercise.seo.indexable)
   const title = locale === 'es' ? `Lecturas de ${languageName} ${level} con preguntas | WeLearn` : `${level} ${languageName} readings with questions | WeLearn`
   const description = locale === 'es'
@@ -77,7 +82,7 @@ export function buildHubMetadata(locale: TutorLocale, language: ReadingLanguage,
   return {
     title,
     description,
-    alternates: { canonical, languages: { es, en, 'x-default': es } },
+    alternates: { canonical, languages },
     robots: { index: indexable, follow: true },
     openGraph: { type: 'website', url: canonical, locale: locale === 'es' ? 'es_CO' : 'en_US', title, description },
   }

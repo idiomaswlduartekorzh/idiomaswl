@@ -704,9 +704,9 @@ export default function ClasesDeCoreanoPage() {
                 >
                   Agendar diagnóstico gratis por WhatsApp
                 </a>
-                <a href="#miembro-fundador" className={s.ghostBtn}>
-                  Ver Miembro Fundador
-                </a>
+                <Link href="/miembro-fundador" className={s.ghostBtn}>
+                  Ver todos los beneficios de Miembro Fundador
+                </Link>
               </div>
             </div>
           </div>
