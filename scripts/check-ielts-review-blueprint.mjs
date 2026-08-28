@@ -101,4 +101,9 @@ const set15Task1 = set15.sections.flatMap(section => section.questions).find(que
 assert.match(set15Task1.stimulus, /percentage shares.*total domestic electricity generation.*United Kingdom.*Australia.*2022/i, 'Set 15: la consigna debe declarar medida, alcance, países y año')
 assert.match(set15Task1.imageAlt, /United Kingdom.*38\.5%.*28\.9%.*14\.6%.*12\.8%.*5\.2%.*Australia.*47%.*32%.*19%.*2%/i, 'Set 15: el texto alternativo debe comunicar todas las categorías y valores')
 
+const { default: set16 } = await import('../src/data/mocks/ielts-set-16.ts')
+const set16Task1 = set16.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set16Task1.stimulus, /global installed renewable power capacity.*gigawatts.*four technology groups.*2015.*2022/i, 'Set 16: la consigna debe declarar alcance, medida, grupos y años')
+assert.match(set16Task1.imageAlt, /hydropower.*wind.*solar.*other technologies.*2015.*2022/i, 'Set 16: el texto alternativo debe comunicar tecnologías y años')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

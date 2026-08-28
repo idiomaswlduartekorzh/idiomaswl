@@ -28,39 +28,49 @@ OFFICER: And your surname?
 
 PARENT: It's Fletcher — shall I spell that? F-L-E-T-C-H-E-R.
 
-OFFICER: Perfect, thank you. And the best number to reach you on?
+OFFICER: Perfect, thank you. We use the name on the booking form for collection checks, so please tell us if another adult will pick the children up. And the best number to reach you on?
 
-PARENT: My mobile is 07700 900642.
+PARENT: My mobile is 07700 900642. My office number is on an old form, but please don't use it because I rarely work there now.
 
 OFFICER: Let me just repeat that — 07700 900642.
 
 PARENT: That's the one.
 
-OFFICER: Great. And how many children are you registering today?
+OFFICER: And how many children are you registering today?
 
 PARENT: I was going to bring three, but my eldest has other plans now, so just 2.
 
-OFFICER: No problem, 2 children. Now, we run several kinds of camp. Were you interested in the sports camp?
+OFFICER: No problem, 2 children. We can place siblings in different age groups and they can still arrive together. Now, we run several kinds of camp. Were you interested in the sports camp?
 
-PARENT: I looked at that, but I think they'd both prefer the adventure camp — they love being outdoors.
+PARENT: I looked at that, and the arts week sounded good too, but I think they'd both prefer the adventure camp — they love being outdoors and neither is especially keen on team games.
 
-OFFICER: A popular choice. The camp runs every weekday, starting at 9 am and finishing at 4 pm.
+OFFICER: A popular choice. The camp runs every weekday, starting at 9 am and finishing at 4 pm. We open the gate at quarter to nine, but that early period is only for signing children in; the activities still begin at nine.
 
-PARENT: That works well for us.
+PARENT: That works well for us. I had seen five o'clock on the website, so I'm glad I checked.
 
-OFFICER: Now, a few things to remember. Children should bring a packed lunch each day, as we don't provide meals. And because they'll be outside a lot, please make sure they've applied sunscreen before they arrive.
+OFFICER: Five is when the office closes, not the children's collection time. If a parent is delayed, they must ring us rather than ask a child to wait outside.
 
-PARENT: Understood. And what does it cost?
+OFFICER: Now, a few things to remember. Children should bring a packed lunch each day, as we don't provide meals. We do supply drinking water, so a refillable bottle is useful, although it isn't compulsory. Please avoid nuts because one child has a severe allergy. And because they'll be outside a lot, please make sure they've applied sunscreen before they arrive. They can bring a light waterproof jacket too; we continue in light rain but move indoors in a storm.
 
-OFFICER: It depends on their ages. Our Juniors programme is for children aged 6 and over, and that's £90 per week. Juniors also each receive a free cap to wear on trips.
+PARENT: Understood. Do they need hiking boots?
+
+OFFICER: Trainers with a good grip are fine. Please label clothing clearly. And did you want to ask about the cost?
+
+PARENT: Yes, please.
+
+OFFICER: It depends on their ages. Our Juniors programme is for children aged 6 and over, and that's £90 per week. The price includes craft materials and the short minibus trips, but not lunch. Juniors also each receive a free cap to wear on trips. Last year it was a T-shirt, so some returning families may remember a different item.
 
 PARENT: And for older children?
 
-OFFICER: That would be our Explorers programme. The minimum age for that is 9, and it's a little more — £120 a week, because it includes more excursions. Explorers are given a free backpack instead of a cap.
+OFFICER: That would be our Explorers programme. The minimum age for that is 9, and it's a little more — £120 a week, because it includes more excursions and a climbing session. Explorers are given a free backpack instead of a cap. There is an optional overnight stay on Thursday, but that has a separate charge and you can decide about it later.
 
 PARENT: Right. My two are 8 and 11, so I suppose that's one in each.
 
-OFFICER: Exactly. I'll set that up for you now.`,
+OFFICER: Exactly. Before I set it up, I should mention that places are held for forty-eight hours. You can pay online, and we'll email the medical and emergency-contact forms. Both forms must be returned before the first Monday.
+
+PARENT: Fine. I'll complete them tonight.
+
+OFFICER: Excellent. I'll set that up for you now.`,
       questions: [
         {
           type: 'formgroup',
@@ -81,7 +91,7 @@ Children must apply {{6}} before arriving`,
             { num: 1, answers: ['Fletcher'], maxWords: 1 },
             { num: 2, answers: ['2', 'two'], maxWords: 1 },
             { num: 3, answers: ['adventure'], maxWords: 1 },
-            { num: 4, answers: ['4', '4pm'], maxWords: 1 },
+            { num: 4, answers: ['4'], maxWords: 1 },
             { num: 5, answers: ['lunch'], maxWords: 1 },
             { num: 6, answers: ['sunscreen'], maxWords: 1 },
           ],
@@ -117,23 +127,23 @@ Children must apply {{6}} before arriving`,
       audioUrl: '/audio/ielts/ielts-listening-set-16.mp3',
       title: 'Listening — Section 2: Recycling Scheme Launch',
       instructions: 'You will hear a talk launching a new local recycling scheme. Listen and answer Questions 11–20.',
-      transcript: `Good evening, everyone, and thank you for coming to the launch of our town's new recycling scheme. I'm Sarah, from the council's environment team, and I'm here to explain how the scheme will work and what it means for you.
+      transcript: `Good evening, everyone, and thank you for coming to the launch of our town's new recycling scheme. I'm Sarah Malik from the council's environment team. I'll explain what changes next month, what belongs in each container and where residents can get help. There will be time for questions at the end, so please keep this information leaflet beside you.
 
-Let me start with the most important change. From next month, every household will receive a brand-new recycling bin. To make it easy to identify, these bins are green, quite different from the black bins we use for general rubbish.
+Let me start with the most visible change. Every household will receive a new recycling bin. To make it easy to identify, the bin is green, quite different from the black container used for general rubbish. Flats that share a collection point will receive larger communal versions, while houses will get individual wheeled bins. Please write your address on the label under the lid, not on the outside, because the bins remain council property.
 
-Now, what can go in them? You'll be pleased to hear the list is generous. Glass bottles and jars are fine, as are cardboard and newspapers. However, there are two things we cannot accept. Please do not put plastic bags in the recycling bin — they jam our sorting machines. And, secondly, any container that is still covered in food cannot be recycled either; food-contaminated packaging has to go in the general waste.
+Now, what can go in them? The list is fairly generous. Clean glass bottles and jars are fine, as are cardboard, newspapers, steel tins and empty drinks cans. Cardboard boxes should be flattened so they do not occupy the whole bin. You do not need to remove paper labels from jars, but lids should be placed loose in the bin.
 
-As for collections: your green bin will be emptied on a Wednesday. Note that this won't be every week — collections are fortnightly, so once every two weeks. We'll post a calendar through your door showing the exact dates.
+There are, however, two common items we cannot accept. Please do not put plastic bags in the recycling bin: they become tangled around the sorting equipment. The bags can still be taken to collection points at several supermarkets. Secondly, containers covered in food cannot be processed. A quick rinse is enough; they do not need to be perfectly clean, but packaging with food still inside must go in general waste. Broken drinking glasses are also excluded, although they are not one of the items on your checklist, because that type of glass melts at a different temperature.
 
-The new bins will be delivered to all homes by 30 June, so please look out for yours. If your household is large and you feel you need a bigger bin, you can request one by calling our recycling helpline; the number is on our leaflet.
+As for collections, your green bin will normally be emptied on a Wednesday. The old leaflet mentioned Friday, but that referred to the trial in the northern district. The service is fortnightly — in other words, once every two weeks — rather than weekly. We will post a calendar through each door showing the exact dates, including changes around public holidays. Please put the bin at the edge of your property by seven in the morning and bring it back after collection.
 
-To encourage everyone to take part, we're running a little competition. Each month, one household that recycles particularly well will win a shopping voucher worth fifty pounds.
+The bins are being delivered street by street and all homes should receive one by 30 June. Do not report a missing delivery before that deadline. If your household is large and the standard size is genuinely insufficient, call the recycling helpline shown on the back of the leaflet. Staff will ask how many people live at the address before approving a larger container. The general council switchboard cannot process those requests.
 
-Why are we doing all this? Our goal is ambitious but achievable: we aim to reduce the amount of waste sent to landfill by 40 percent within two years.
+To encourage everyone to take part, we are running a monthly competition. One household that sorts its materials particularly well will receive a shopping voucher worth fifty pounds. It is the voucher, rather than cash, and the winner can use it in participating local shops. Collection crews will make nominations; residents do not need to enter.
 
-Finally, for those of you who'd like to recycle food scraps as well, a free kitchen caddy is available from the town hall — just ask at the front desk.
+Why are we making this change? At present too much reusable material goes into landfill. Our measured target is to reduce the quantity sent there by 40 percent within two years. That does not mean every household must produce forty percent less waste; it is a town-wide target based on the weight collected.
 
-Thank you, and let's make this a success.`,
+Finally, food scraps are handled separately from the green-bin scheme. Any resident can collect a free kitchen caddy from the town hall. Ask at the front desk and take proof of address. Compostable liners are available there too, but ordinary plastic liners must not be used. Thank you for listening, and with careful sorting we can make the launch a success.`,
       questions: [
         {
           type: 'multiselect',
@@ -176,7 +186,7 @@ Goals
           blanks: [
             { num: 13, answers: ['green'], maxWords: 2 },
             { num: 14, answers: ['Wednesday'], maxWords: 2 },
-            { num: 15, answers: ['fortnightly', 'every two weeks', 'two weeks'], maxWords: 2 },
+            { num: 15, answers: ['fortnightly', 'two weeks'], maxWords: 2 },
             { num: 16, answers: ['30 June', 'June'], maxWords: 2 },
             { num: 17, answers: ['helpline', 'recycling helpline'], maxWords: 2 },
             { num: 18, answers: ['voucher', 'shopping voucher'], maxWords: 2 },
@@ -193,35 +203,39 @@ Goals
       audioUrl: '/audio/ielts/ielts-listening-set-16.mp3',
       title: 'Listening — Section 3: Engineering Prototype Review',
       instructions: 'You will hear a tutor and two engineering students reviewing a prototype. Listen and answer Questions 21–30.',
-      transcript: `TUTOR: Right, Liam, Sophie — let's review your prototype. Talk me through it.
+      transcript: `TUTOR: Right, Liam and Sophie, let's review your prototype. Before we discuss the results, remind me what the design brief actually asked you to achieve.
 
-SOPHIE: Of course. Our brief was to design a low-cost water filter for use in rural areas without mains electricity. The main aim was to make it as affordable as possible, so anyone could build one.
+SOPHIE: We had to build a small water-treatment prototype for a classroom demonstration, using no mains electricity. The main aim was to make it as affordable as possible, because the brief imagined settings where replacement parts and specialist tools might be difficult to obtain.
 
-TUTOR: That's a genuinely worthwhile goal — millions of people still lack access to clean drinking water, so a cheap, simple solution really does matter.
+TUTOR: Good. Calling it a prototype is important. It is not a certified drinking-water device, and your report must not imply that anyone should use it in a real emergency. What did you choose for the casing?
 
-TUTOR: And what have you built it from?
+LIAM: A clear plastic bottle. We first considered a metal cylinder because it would survive repeated use, but the sheet was expensive and needed workshop equipment to shape. The bottle was cheaper and lighter, so it fitted both our budget and the requirement to carry the model between demonstrations.
 
-LIAM: The outer casing is a simple plastic bottle. We did consider using metal, which is more durable, but plastic is far cheaper and lighter, and that fitted our budget better.
+TUTOR: And the material inside it?
 
-TUTOR: Sensible. And the filtering material itself?
+SOPHIE: Three layers: washed gravel at the bottom, fine sand in the middle and activated charcoal above that. We placed cloth over the outlet so the grains would not escape.
 
-SOPHIE: We used layers of sand and charcoal. The charcoal is the key part — it removes impurities and improves the taste of the water.
+TUTOR: What did each layer appear to do?
 
-TUTOR: Good. Now, how did testing go?
+LIAM: The gravel supported the finer material, the sand trapped visible particles, and the charcoal reduced the odour and colour in our prepared sample. We originally wrote that it removed all impurities, but that claim was much too broad. We only measured turbidity and appearance; we did not test dissolved chemicals.
 
-LIAM: Mostly well, but we did hit one problem. When we ran dirty water through it quickly, the filter clogged up, and the flow almost stopped. We had to pour the water in much more slowly.
+TUTOR: Exactly. A change in taste or clarity does not prove that water is safe. How did the flow test go?
 
-TUTOR: That's useful to know. My main concern, though, isn't the flow rate — it's safety. Your filter removes dirt and improves taste, but it won't kill bacteria. For drinking water, that's a serious gap.
+SOPHIE: At a slow, controlled rate it ran steadily. When we poured the sample in quickly, though, the filter clogged and the flow almost stopped. Stirring the top layer made the water cloudier, so we stopped and cleaned the unit.
 
-SOPHIE: You're right. We hadn't fully addressed the bacteria issue.
+TUTOR: That gives you a useful design trade-off. My main concern, however, is microbiological safety. A simple sand-and-charcoal model may reduce some particles, but your experiment does not show that it removes viruses or parasites, and it does not kill bacteria. Without validated treatment and safe storage, the output must not be described as drinking water.
 
-TUTOR: So here's what I'd suggest for the next version. First, reduce the weight further so it's easier to carry. Second, bring the cost down even more if you can. Third, add a stage that disinfects the water — perhaps a UV step. Fourth, do much more testing with different water samples. And finally, prepare a clear diagram for your report so the design is easy to follow.
+LIAM: We understand. We had treated filtration and disinfection as if they were the same process.
 
-LIAM: That all makes sense. The disinfection stage is the priority, clearly.
+TUTOR: They are separate barriers. For the next version, first reduce the weight, but do not make the casing unstable. Second, lower the cost and provide an itemised calculation rather than a rough estimate. Third, add a stage that disinfects the water. You mentioned ultraviolet light in your proposal, but UV performance depends on dose, equipment and water clarity, so you cannot just shine a small lamp through a cloudy bottle and claim success.
 
-TUTOR: Absolutely. Get that right and it's a strong project.
+SOPHIE: Would it be better to compare a validated UV unit with a carefully specified chemical treatment on paper, instead of improvising either one?
 
-SOPHIE: Thanks. We'll start work on the next version straight away.`,
+TUTOR: Yes. Make the comparison part of the design review and explain the maintenance, contact time and safety requirements. Then carry out more testing with water samples of different turbidity. That testing should include repeat trials and measurements before and after each stage, not tasting the water. Your final improvement is communication: include a clear diagram in the report, with arrows showing the order of treatment and a warning that the classroom prototype is not approved for consumption.
+
+TUTOR: Correct. A responsible engineering project defines what the prototype can and cannot demonstrate. If your conclusions stay within the evidence, the project will be much stronger.
+
+SOPHIE: Thanks. We'll revise the claims and testing plan before rebuilding it.`,
       questions: [
         {
           type: 'mcq',
@@ -298,8 +312,8 @@ SOPHIE: Thanks. We'll start work on the next version straight away.`,
           blanks: [
             { num: 26, answers: ['weight'], maxWords: 1 },
             { num: 27, answers: ['cost'], maxWords: 1 },
-            { num: 28, answers: ['disinfects', 'disinfect'], maxWords: 1 },
-            { num: 29, answers: ['testing', 'tests'], maxWords: 1 },
+            { num: 28, answers: ['disinfects'], maxWords: 1 },
+            { num: 29, answers: ['testing'], maxWords: 1 },
             { num: 30, answers: ['diagram'], maxWords: 1 },
           ],
         },
@@ -312,21 +326,23 @@ SOPHIE: Thanks. We'll start work on the next version straight away.`,
       audioUrl: '/audio/ielts/ielts-listening-set-16.mp3',
       title: 'Listening — Section 4: Bird Navigation',
       instructions: 'You will hear a lecture about how migrating birds navigate. Listen and answer Questions 31–40.',
-      transcript: `Good afternoon. Today we're going to explore one of the great mysteries of the natural world: how migrating birds find their way. Every year, billions of birds travel enormous distances between their breeding and wintering grounds — some species cover more than ten thousand kilometres in a single journey — and yet they arrive with astonishing accuracy. How do they do it?
+      transcript: `Good afternoon. Today we are going to examine how migrating birds orient themselves and reach a destination. Every year, birds travel between breeding and non-breeding areas, and some species cover more than ten thousand kilometres in a single journey. Evidence suggests that birds combine several cues whose importance varies with species, age, weather and location.
 
-The answer is that birds rely not on one method but on several, combining them like tools in a navigator's kit.
+We will begin with the sky. Birds travelling by day can use the position of the sun as a compass. Since the sun moves across the sky, this system must be corrected by an internal sense of time. Experiments that shift a bird's apparent daily clock can therefore change the direction it chooses.
 
-The first tool is the sky. During the day, many birds orient themselves using the position of the sun, adjusting for the fact that it moves across the sky as the hours pass. At night, other species switch to the stars, using the fixed point around which the night sky appears to rotate to work out which way is north.
+Many small songbirds migrate at night, when the sun is unavailable. Young birds do not simply identify one bright star and follow it. Classic planetarium experiments indicate that they learn the pattern of rotation in the night sky. Stars appear to turn around a region near the celestial pole, and experience of that rotating pattern provides directional information. Clouds can hide both solar and stellar cues, so a bird needs alternatives.
 
-Perhaps the most remarkable tool is a kind of internal compass. Birds can sense the Earth's magnetic field, and use it to determine direction even when the sky is hidden by cloud. Exactly how they detect it is still debated, but many researchers now believe the sense is linked to special molecules in the birds' eyes, which may allow them, in effect, to "see" magnetic lines.
+One alternative is sensitivity to the Earth's magnetic field. Behavioural experiments show that changing the field around a bird can alter its orientation. However, the biological detector remains debated. One leading hypothesis involves light-sensitive cryptochrome molecules in the birds' eyes. Chemical reactions in these molecules might provide compass information under suitable wavelengths of light. Researchers sometimes use the convenient metaphor that a bird could "see" a magnetic pattern, but this has not been demonstrated as a literal visual image. Other proposed mechanisms, including particles containing iron, have also been investigated. The evidence does not justify treating a single explanation as settled.
 
-Some species add yet another sense to the mix. Seabirds in particular appear to use their sense of smell, building up a kind of odour map of the ocean that helps them relocate distant islands.
+A compass does not necessarily reveal where home is. Visual features such as coastlines, mountains and rivers can guide experienced individuals over familiar territory.
 
-Navigation is also partly inherited. Young birds making their very first migration alone are guided by instinct, following a direction and distance encoded in their biology. Older, experienced birds supplement this with memory, recognising landmarks such as coastlines, mountain ranges and large rivers.
+Smell can contribute too. Experiments with pigeons and some seabirds indicate that their sense of smell supplies location information. Scientists describe this as an odour map, but it is not known to operate identically in every species.
 
-Sadly, human activity is making navigation harder. Artificial light at night — what we call light pollution — draws birds off course and causes fatal collisions with buildings.
+Age creates another important distinction. In several species, a young bird making its first migration without an adult follows an inherited programme: its initial direction and approximate duration are guided partly by instinct. In species that travel socially, juveniles may learn routes from experienced birds. With later journeys, memory and landmarks can refine the route. Thus inherited and learned information can contribute in different proportions.
 
-To understand all this, scientists now fit migrating birds with tiny electronic tags, which record their position and reveal, for the first time, the astonishing routes these travellers take.`,
+Human activity can disrupt that system. Artificial illumination creates light pollution, especially around cities and offshore structures. Nocturnal migrants may circle bright sources, waste energy or collide with windows and buildings. Weather, habitat loss and altered seasonal timing create additional risks, but artificial light is the threat most directly connected to the celestial cues discussed today. Reducing unnecessary lighting during peak migration can lower some of those hazards.
+
+Finally, scientists reconstruct routes with tiny electronic tags. Some store measurements for later retrieval; others send positions through radio or satellite networks. Devices must be light enough not to change normal behaviour. Combined with orientation experiments, these tracks show where a bird travelled and help researchers investigate how it chose the way.`,
       questions: [
         {
           type: 'formgroup',
@@ -355,16 +371,16 @@ Threats and research
 • Light {{39}} from cities draws birds off course.
 • Scientists fit birds with tiny electronic {{40}} to track their routes.`,
           blanks: [
-            { num: 31, answers: ['kilometres', 'kilometers', 'km'], maxWords: 1 },
+            { num: 31, answers: ['kilometres'], maxWords: 1 },
             { num: 32, answers: ['sun'], maxWords: 1 },
             { num: 33, answers: ['stars', 'star'], maxWords: 1 },
             { num: 34, answers: ['field'], maxWords: 1 },
-            { num: 35, answers: ['eyes', 'eye'], maxWords: 1 },
+            { num: 35, answers: ['eyes'], maxWords: 1 },
             { num: 36, answers: ['smell'], maxWords: 1 },
             { num: 37, answers: ['instinct'], maxWords: 1 },
-            { num: 38, answers: ['landmarks', 'landmark'], maxWords: 1 },
+            { num: 38, answers: ['landmarks'], maxWords: 1 },
             { num: 39, answers: ['pollution'], maxWords: 1 },
-            { num: 40, answers: ['tags', 'tag'], maxWords: 1 },
+            { num: 40, answers: ['tags'], maxWords: 1 },
           ],
         },
       ],
@@ -377,17 +393,19 @@ Threats and research
       instructions: 'Read the passage and answer Questions 1–13.',
       passage: `The Renewable Energy Transition
 
-The global energy system is undergoing a transformation without historical precedent. After more than a century dominated by fossil fuels, the combination of falling technology costs, climate policy, and shifting investment is accelerating the deployment of renewable energy at a pace that has repeatedly outstripped even optimistic forecasts. In 2023, global capacity additions of solar and wind power reached a record four hundred and forty-five gigawatts—more than all other forms of electricity generation combined.
+The composition of the world's power system is changing rapidly, although not evenly. International Renewable Energy Agency figures show that solar and wind supplied 96.6 percent of net renewable generating-capacity additions in 2024. Capacity is the maximum output that installations can produce; it is not the same as the electricity actually generated, which also depends on weather, maintenance and operating decisions. The distinction matters when impressive installation totals are used to describe the wider energy transition. Faster construction of renewable plants can reduce dependence on fossil-fuel generation, but it does not by itself guarantee that every hour of demand will be met with low-carbon electricity.
 
-The decline in the cost of solar photovoltaic electricity has been the most dramatic story in energy economics for a generation. Between 2010 and 2023, the cost of generating electricity from utility-scale solar PV fell by approximately ninety percent, making it the cheapest source of new electricity generation in history in most parts of the world. Wind power followed a similar trajectory, with offshore wind costs falling by around seventy percent over the same period. These cost reductions are not the product of any single technological breakthrough but the result of cumulative improvements across manufacturing, installation, materials science, and supply chain logistics—a process known as "learning by doing" or Wright's Law.
+Economics has been a major driver. Between 2010 and 2024, the global weighted average cost of electricity from newly commissioned utility-scale solar photovoltaic plants fell by about ninety percent. In 2024, most new utility-scale renewable capacity in the available cost database produced electricity more cheaply than the lowest-cost newly built fossil-fuel alternative. Neither result came from a single dramatic invention. Manufacturers improved modules and turbines, developers gained experience, supply chains expanded and installation practices became more efficient. Economists often describe cost reductions accumulated through repeated production as learning by doing. Yet the global average can conceal local differences: borrowing costs, planning delays, grid connections and the quality of the resource can make an otherwise inexpensive technology costly in a particular market.
 
-The implications for existing energy systems are significant. In electricity grids that previously relied on dispatchable sources—power stations that generate electricity on demand—the growing share of wind and solar creates new challenges of integration. Solar and wind generate electricity intermittently, dependent on weather conditions, and their output does not automatically match the pattern of demand. Managing this variability requires a range of solutions: flexible demand, interconnection between grids, natural gas as a backup "firm" power source, and increasingly, energy storage.
+Wind and solar are variable because their output follows environmental conditions rather than an operator's request. Conventional stations able to adjust generation on demand are commonly described as dispatchable. As the variable share grows, grid planners must coordinate a broader collection of resources. Transmission can move electricity from a windy or sunny region to one with higher demand. Interconnection can smooth some local fluctuations, while demand response can shift flexible uses to favourable hours. Hydropower, geothermal power and other controllable resources may contribute where geography permits. None of these measures is a universal substitute for the others; the appropriate mix depends on the existing system and on timescales ranging from seconds to seasons.
 
-Battery storage technology has emerged as a critical enabler of the energy transition. The same cost trajectories that transformed solar and wind have affected lithium-ion batteries: prices fell by over ninety-seven percent between 1991 and 2023, unlocking utility-scale battery installations that can store surplus renewable generation and discharge it when needed. Electric vehicles are also reshaping the energy system—both as a major new source of demand for electricity and, potentially, as a distributed storage resource that could help balance grids through vehicle-to-grid charging. The electrification of transport, heating, and industrial processes is a necessary complement to the decarbonisation of the electricity supply.
+Storage is one part of that mix. IRENA reports that battery-storage costs declined by 93 percent between 2010 and 2024. Short-duration batteries can absorb surplus electricity and release it later, as well as provide rapid balancing services, but their economics and materials requirements must still be considered. Longer gaps may require other storage technologies, stronger networks or controllable generation. Electric vehicles add demand to the system, yet suitably equipped cars could also return power through vehicle-to-grid charging. That possibility depends on compatible chargers, market rules and owners' willingness to make part of a battery available. Electrifying vehicles or heating also reduces emissions only to the extent that the power supplying them becomes cleaner.
 
-The pace of transition is uneven across countries and sectors. Rich countries with strong policy frameworks and access to capital have led deployment, though some middle-income countries—notably China, India, and Brazil—have also installed renewable capacity at enormous scale. Fossil fuel-dependent economies, particularly those in which fossil fuels represent a major source of government revenue and employment, face the most complex transitions. For countries like Saudi Arabia, Nigeria, and Australia, the energy transition raises profound questions not only about electricity systems but about economic models and social contracts.
+The transition has a geographical and social dimension. Some economies can obtain affordable finance and build networks quickly, whereas others face high capital costs or weak infrastructure. Several large middle-income countries, including China, India and Brazil, have deployed renewables at substantial scale, but this observation alone does not establish a simple ranking against every high-income country. Regions dependent on mining, refining or exporting fossil fuels face another problem. Where the sector supplies government revenue, foreign exchange and stable employment, a rapid fall in demand can affect public services and communities. A "just transition" therefore includes worker training, regional investment and consultation, not merely the replacement of one generating technology with another.
 
-Achieving full decarbonisation of energy systems by mid-century—as required by the Paris Agreement targets—will require not only the continued scaling of wind, solar, and storage but also progress in areas where renewable electricity is more difficult to deploy. "Hard-to-abate" sectors—heavy industry, aviation, and shipping—are responsible for a significant share of global emissions and present greater technical and economic challenges than electricity generation. Green hydrogen, produced by using renewable electricity to split water into hydrogen and oxygen, has attracted considerable interest as a potential fuel for these sectors, though its cost remains high and the infrastructure for its use is at an early stage.`,
+Policy also has to address effects beyond the power plant. Renewable projects need land, minerals, manufacturing and transmission lines. Poorly planned development can damage habitats or exclude local communities from decisions. Conversely, transparent siting, recycling standards and benefit-sharing can reduce conflict. Supply chains for panels, turbines and batteries are internationally connected, creating efficiencies but also exposure to trade restrictions and concentrated production. Energy security is consequently not a matter of producing every component domestically; it can also involve diverse suppliers, inventories and resilient networks.
+
+The Paris Agreement guides national efforts to limit warming, but it does not prescribe one identical technology pathway for every country. Deep emissions reductions will require progress beyond electricity. Heavy industry, aviation and shipping are frequently called hard-to-abate sectors because direct electrification is technically or economically difficult for some uses. Green hydrogen is one proposed option. It is made through electrolysis, using electricity to split water into hydrogen and oxygen; calling it green normally implies that the electricity is renewable. It may be useful for selected industrial processes and derived fuels, but production costs, conversion losses, infrastructure and water requirements constrain deployment. At present, it would be inaccurate to describe green hydrogen as a fuel already used widely across aviation and shipping. The transition is therefore best understood not as a single race to install panels and turbines, but as the coordinated redesign of technology, markets and institutions.`,
       questions: [
         {
           type: 'formgroup',
@@ -395,7 +413,7 @@ Achieving full decarbonisation of energy systems by mid-century—as required by
           part: 5,
           qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: In 2023, solar and wind capacity additions exceeded those of all other electricity sources combined.\n2. {{2}}: The cost decline of solar PV was primarily the result of a single major scientific breakthrough.\n3. {{3}}: Solar and wind generation poses integration challenges because their output is variable.\n4. {{4}}: Lithium-ion battery prices fell by more than ninety percent between 1991 and 2023.\n5. {{5}}: China, India, and Brazil have installed more renewable energy capacity than any high-income country.\n6. {{6}}: Heavy industry, aviation, and shipping are among the sectors hardest to decarbonise using renewable electricity.\n7. {{7}}: Green hydrogen is already widely used as a fuel in the shipping and aviation industries.`,
+          template: `1. {{1}}: Solar and wind accounted for more than ninety-six percent of net renewable capacity additions in 2024.\n2. {{2}}: The cost decline of solar PV was primarily the result of a single major scientific breakthrough.\n3. {{3}}: Solar and wind create integration challenges because their output is variable.\n4. {{4}}: Battery-storage costs fell by more than ninety percent between 2010 and 2024.\n5. {{5}}: China, India, and Brazil have installed more renewable energy capacity than every high-income country.\n6. {{6}}: Heavy industry, aviation, and shipping include uses that are difficult to electrify directly.\n7. {{7}}: Green hydrogen is already widely used as a fuel in shipping and aviation.`,
           blanks: [
             { num: 1, answers: ['TRUE'] },
             { num: 2, answers: ['FALSE'] },
@@ -412,12 +430,12 @@ Achieving full decarbonisation of energy systems by mid-century—as required by
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. The process of cost reduction through accumulated manufacturing experience is known as {{8}}.\n9. Power stations that can generate electricity on demand are described in the passage as {{9}} sources.\n10. Electric vehicles could potentially help balance electricity grids through {{10}} charging systems.\n11. The {{11}} process uses renewable electricity to split water into hydrogen and oxygen.\n12. Countries in which fossil fuels are a major source of {{12}} face the most complex energy transitions.\n13. The global climate agreement requiring mid-century decarbonisation is known as the {{13}}.`,
+          template: `8. Cost reductions accumulated through repeated production are known as {{8}}.\n9. Power stations that can adjust generation on demand are described as {{9}}.\n10. Electric cars could return power to the grid through {{10}} charging.\n11. The process that uses electricity to split water is called {{11}}.\n12. A fall in fossil-fuel demand can be especially difficult where the sector supplies {{12}}.\n13. The international climate accord named in the passage is the {{13}}.`,
           blanks: [
-            { num: 8, answers: ['learning by doing', 'Wright\'s Law'] },
+            { num: 8, answers: ['learning by doing'] },
             { num: 9, answers: ['dispatchable'] },
             { num: 10, answers: ['vehicle-to-grid'] },
-            { num: 11, answers: ['green hydrogen'] },
+            { num: 11, answers: ['electrolysis'] },
             { num: 12, answers: ['government revenue'] },
             { num: 13, answers: ['Paris Agreement'] },
           ],
@@ -432,19 +450,19 @@ Achieving full decarbonisation of energy systems by mid-century—as required by
       instructions: 'Read the passage and answer Questions 14–26.',
       passage: `Cognitive Development in Early Childhood
 
-A. The first five years of life represent a period of cognitive development of extraordinary rapidity and consequence. The human brain at birth contains virtually all the neurons it will ever have—approximately one hundred billion—but the connections between these neurons, the synapses, are formed at a rate of millions per second during infancy and early childhood. This period of synaptic proliferation is followed, from early childhood through adolescence, by a process of "synaptic pruning" in which connections that are frequently used are strengthened and those that are not are eliminated. The architecture of the mature brain is thus shaped, in significant part, by the quality and richness of a child's early experiences.
+A. Early childhood is a period of rapid cognitive development, but claims about the brain must be interpreted carefully. Connections among neurons are created and reorganised as children act, communicate, sleep and respond to their surroundings. Some connections are strengthened while others are pruned as development continues. This experience-dependent refinement does not mean that a single lesson permanently fixes the mature brain, nor that development ends after a narrow window. Genes, health, nutrition and later learning also matter. Nevertheless, early experiences form part of the architecture on which later skills develop. This is why international guidance on nurturing care treats responsive caregiving and opportunities for early learning alongside health, nutrition, safety and security rather than as isolated educational extras.
 
-B. Jean Piaget, the Swiss psychologist whose work between the 1930s and 1970s revolutionised understanding of child development, proposed that children pass through a series of discrete cognitive stages. In the sensorimotor stage, from birth to approximately two years, infants learn through physical interaction with their environment and develop object permanence—the understanding that objects continue to exist even when not visible. The pre-operational stage, from two to seven years, is characterised by the development of language and symbolic thinking, though logical reasoning remains limited. Children in this stage are typically egocentric—that is, they find it difficult to understand perspectives different from their own.
+B. One influential historical account came from Jean Piaget, who proposed a sequence of discrete cognitive stages. In his sensorimotor stage, extending roughly from birth to two years, infants learn through perception and physical action and gradually develop object permanence: the understanding that an object continues to exist when it is out of sight. Piaget's pre-operational stage, from about two to seven, includes rapid growth in language and symbolic play, while certain forms of logical reasoning remain difficult. He described young children as egocentric because they may struggle to represent a perspective different from their own. The age boundaries were intended as a developmental framework, not a timetable against which every child can be diagnosed.
 
-C. Piaget's stage theory was enormously influential but has been revised by subsequent research. Modern developmental psychologists have found that many cognitive abilities emerge earlier than Piaget proposed, and that development is less clearly staged and more continuous than his model suggests. Infant research using habituation techniques—in which infants' attention to novel versus familiar stimuli is measured—has demonstrated that babies as young as three or four months show implicit understanding of basic physical principles, including aspects of object permanence, that Piaget believed were not present until the end of the first year.
+C. Later experiments revised parts of this stage theory. Researchers developed habituation methods in which an infant is repeatedly shown a stimulus until attention declines, then presented with a new or apparently impossible event. Differences in looking time suggest that some expectations about objects emerge earlier than Piaget's action-based tasks indicated. Such findings support the claim that infant cognitive abilities can appear earlier than his original account predicted. They do not, however, give direct access to a baby's thoughts. Looking-time results depend on experimental design and can support competing explanations, so researchers are cautious about equating surprise with a fully adult concept of physics or object permanence.
 
-D. Lev Vygotsky, a Soviet psychologist working at roughly the same time as Piaget, emphasised the social and cultural dimensions of cognitive development in ways that Piaget's framework largely ignored. For Vygotsky, cognitive growth is fundamentally a social process: children learn through interaction with more knowledgeable others—parents, older siblings, teachers—who guide them through tasks slightly beyond their current independent capability. The zone of proximal development (ZPD), Vygotsky's most influential concept, refers to the gap between what a child can do alone and what they can achieve with guidance. Effective instruction and scaffolding operate within this zone, stretching the child's capabilities without overwhelming them.
+D. Lev Vygotsky placed greater emphasis on culture, language and interaction with other people. His best-known concept, the zone of proximal development, is the distance between what a learner can do independently and what the learner can achieve with guidance. A parent might model one step of a puzzle, ask a useful question and then withdraw assistance as the child becomes competent. This temporary support is often called scaffolding, although the later term was coined by other researchers. The approach does not imply that adults should continually direct play. Effective support is responsive: it notices the child's current goal and provides enough help to extend participation without taking over the task.
 
-E. Language development is among the most remarkable achievements of early childhood. A typical child produces their first words at around twelve months, reaches a vocabulary of approximately fifty words by eighteen months, and begins combining words into two-word utterances shortly thereafter. By the age of four, most children have acquired the core grammatical structures of their language and can produce and understand an enormous variety of sentences. Linguist Noam Chomsky famously proposed that the speed and uniformity of language acquisition across cultures reflects the existence of an innate "language acquisition device"—a biological predisposition for language that is unique to human beings, though this view has been contested by researchers who emphasise the role of social interaction in language learning.
+E. Language illustrates how biological readiness and social experience interact. First words and combinations often emerge in a broadly predictable sequence, but exact ages and vocabulary sizes vary among children, languages and communicative environments. Gesture, turn-taking and shared attention prepare the ground before recognisable words appear. Noam Chomsky argued that the speed with which children acquire complex grammar points to an innate language acquisition device or specialised biological capacity. Other accounts give more weight to statistical learning, general cognition and conversation. The disagreement is not between biology and experience as mutually exclusive forces; contemporary research asks what information children can learn, what constraints they bring and how responsive interaction supports the process.
 
-F. The quality of early childhood environments has profound and lasting effects. Research on adverse childhood experiences—including neglect, abuse, household instability, and poverty—has demonstrated that early adversity is associated with significantly worse developmental outcomes across cognitive, social, emotional, and physical domains. Conversely, research on high-quality early childhood education programmes—particularly those targeting disadvantaged children—consistently shows positive effects on school readiness, academic achievement, and long-term outcomes including employment and health. Economic analyses suggest that investment in early childhood education yields some of the highest returns of any form of public expenditure.
+F. Adversity can affect many parts of this system. Neglect, violence, household instability and poverty are associated with poorer developmental outcomes across cognitive, emotional, social and physical domains. Association is not destiny, and poverty should not be treated as a quality of parenting: supportive relationships and effective services can protect children, while structural conditions shape the resources available to families. Evidence for early-childhood programmes also varies according to design, staff quality, duration and the group served. Some well-studied, high-quality interventions for disadvantaged children have improved school readiness and later outcomes, and economic evaluations have reported long-term returns. It would be misleading to assume that every programme automatically produces the same result.
 
-G. The digital environment presents new questions for early childhood development. Screen time among young children has increased dramatically in the past decade, and parents and researchers debate the effects of digital media on attention, language development, and social skills. Current evidence suggests that interactive, co-viewed digital content—in which a caregiver watches and discusses media with a young child—can support language learning, while passive background television and unsupported solo device use appear to have less beneficial or neutral effects. The nature of the content and the social context of viewing appear more important than simple screen time duration.`,
+G. Digital media adds a newer set of questions. A label such as screen time combines video calls, creative play, educational programmes, fast-paced entertainment and television running unattended in the background. These experiences are unlikely to have identical effects. Age-appropriate material viewed with a caregiver may prompt conversation and help a child connect images to real life, whereas passive background television can displace talk or focused play. Duration still matters because time with a device replaces some other activity, including movement and sleep. Content and social context therefore need to be considered alongside duration, not used to dismiss it. Research also faces a familiar difficulty: families who use media differently may differ in many other ways, making simple cause-and-effect claims unreliable.`,
       questions: [
         {
           type: 'matching',
@@ -456,9 +474,9 @@ G. The digital environment presents new questions for early childhood developmen
             { num: 14, stem: 'Evidence that infant cognitive abilities appear earlier than a major theorist proposed', answer: 'C' },
             { num: 15, stem: 'A description of how children develop language from their first words to full sentences', answer: 'E' },
             { num: 16, stem: 'Research showing that early adversity has lasting negative effects on multiple developmental outcomes', answer: 'F' },
-            { num: 17, stem: 'An account of how the mature brain is shaped by early experiences', answer: 'A' },
+            { num: 17, stem: 'An account of experience-dependent refinement in the developing brain', answer: 'A' },
             { num: 18, stem: 'A concept describing the gap between what a child can do alone and with support', answer: 'D' },
-            { num: 19, stem: 'A discussion of how the type of digital media use matters more than the amount of screen time', answer: 'G' },
+            { num: 19, stem: 'A discussion of why content, social context and duration must all be considered in digital-media use', answer: 'G' },
             { num: 20, stem: 'A description of a stage of development characterised by difficulty in understanding other perspectives', answer: 'B' },
           ],
           endings: [
@@ -478,7 +496,7 @@ G. The digital environment presents new questions for early childhood developmen
           qRange: [21, 26],
           groupLabel: 'Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
           title: 'Key Theories of Child Cognitive Development',
-          template: `Jean Piaget proposed that children pass through a series of discrete {{21}}, beginning with the sensorimotor stage in which infants develop {{22}}—the understanding that objects still exist when not seen. Vygotsky, by contrast, emphasised the role of social interaction and introduced the zone of {{23}}, which refers to what a child can achieve with guidance. Chomsky argued that language acquisition reflects an innate {{24}} device unique to humans. Research on early adversity shows that neglect and poverty are associated with worse {{25}} outcomes. Investment in early childhood education programmes targeting disadvantaged children consistently yields high {{26}} compared with other public spending.`,
+          template: `Jean Piaget proposed a sequence of discrete {{21}}, beginning with a sensorimotor period in which infants develop {{22}}—the understanding that objects continue to exist when out of sight. Vygotsky emphasised interaction and introduced the zone of {{23}}, which concerns what a learner can achieve with guidance. Chomsky proposed an innate {{24}} device or specialised biological capacity. Neglect, instability and poverty are associated with poorer {{25}}. Evaluations of some high-quality interventions have reported long-term {{26}}.`,
           blanks: [
             { num: 21, answers: ['cognitive stages'] },
             { num: 22, answers: ['object permanence'] },
@@ -498,17 +516,21 @@ G. The digital environment presents new questions for early childhood developmen
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `Globalisation and Its Critics
 
-Globalisation—the intensifying economic, cultural, and political interconnection of the world—has been one of the defining processes of the late twentieth and early twenty-first centuries. It has generated extraordinary gains in prosperity and connected billions of people to information, markets, and opportunities previously inaccessible to them. It has also produced profound dislocations and generated a political backlash that has shaped elections and reshaped international relations in ways that were difficult to foresee when globalisation's advance seemed irresistible.
+Globalisation describes increasing economic, cultural and political connections across borders. It is not a single policy with one measurable effect. Lower communication costs, container shipping, trade agreements, migration and digital networks have all contributed, while governments have retained different rules for labour, finance and public services. Supporters point to access to larger markets, knowledge and cheaper goods. Critics emphasise dislocations, environmental pressures and the unequal power of firms and states. Both gains and dislocations can occur at the same time, which helps explain why national averages and personal experience often produce sharply different accounts of the same period.
 
-The economic case for globalisation rests on the principle of comparative advantage: the idea that countries benefit by specialising in what they produce most efficiently and trading with others for goods they produce less efficiently. Applied at global scale, this logic supports the international division of labour that has allowed manufacturing to migrate from high-wage to lower-wage countries, sharply reducing production costs and consumer prices. Global poverty reduction over the past three decades has been dramatic: the share of the world's population living in extreme poverty fell from approximately thirty-six percent in 1990 to under ten percent by 2015, and this reduction is heavily concentrated in countries—particularly China and India—that integrated deeply into the global economy.
+The conventional economic case begins with comparative advantage. Even when one country is more productive in every activity, both trading partners may benefit if each specialises relatively more in goods or services for which its opportunity cost is lower. The simplified model clarifies a possible source of gains; it does not predict how those gains will be divided or how quickly workers and capital can move. Modern production also crosses borders repeatedly. A design may be created in one country, components made in several others and final assembly completed elsewhere. Such global value chains account for almost half of world trade, according to the World Bank, but their expansion has been sluggish since the 2008 financial crisis.
 
-Not all have shared equally in these gains. Within high-income countries, the benefits of cheaper imports and expanded export markets have been broadly distributed, while the costs—factory closures, job losses in manufacturing, and wage stagnation for workers in directly competing sectors—have been concentrated in specific communities. Research on trade-exposed regions in the United States, United Kingdom, and Germany has consistently found elevated rates of unemployment, depressed wages, and reduced economic mobility in communities that lost manufacturing industries to import competition. The political consequences of this concentrated displacement have been significant: studies have identified a correlation between the share of jobs lost to Chinese import competition in a congressional district and support for populist candidates and positions hostile to further trade liberalisation.
+The period of deeper integration coincided with a large fall in global extreme poverty. Under the World Bank's poverty line updated in 2025 to three international dollars a day, the estimated rate fell from 44 percent in 1990 to 10.5 percent in 2022. Rapid growth in China and other Asian economies contributed substantially to that change, and export-oriented production was one element of their development. The figures do not establish that globalisation was the sole or primary cause. Domestic reforms, education, public investment, demographic change and the method used to set an international poverty line also affect the interpretation. Indeed, revisions to prices and survey data can change historical estimates without changing anyone's past living conditions.
 
-Globalisation's effects on inequality at the global level are more complex than the within-country picture. The economist Branko Milanovic's analysis of global income distribution from 1988 to 2008 produced what he called the "elephant curve"—a graph of income growth across the global distribution in which those at the very bottom and in the rising middle of the global distribution (largely workers in emerging economies) gained substantially, those at the upper-middle range (largely the middle class of high-income countries) experienced relative stagnation, while the global top one percent gained greatly. This pattern reflects both the genuine convergence of developing economies toward higher incomes and the divergence of a global elite from everyone else.
+Within countries, benefits and costs may be distributed differently. Consumers can gain from lower prices and firms can reach export markets, while factory closures and job losses are concentrated in specific communities exposed to import competition. Adjustment is rarely immediate: specialised skills, housing costs and family ties may prevent displaced workers from moving to a growing region. Studies of trade-exposed areas have reported persistent effects on employment and earnings. Political research has also found correlations between exposure to import shocks and support for populist or protectionist positions. A correlation is not a direct link proving that every lost job causes a particular vote; local institutions, prior economic decline and political campaigning can influence both outcomes.
 
-Cultural globalisation has proved equally contested. Flows of music, film, fashion, food, and digital culture across national boundaries have enriched many lives and facilitated new forms of identity, creativity, and connection. Critics, however, point to the dominance of a small number of cultural industries—largely American—in global flows of entertainment and media, raising concerns about the homogenisation of culture, the erosion of local languages and traditions, and the loss of cultural diversity that resembles, in some analyses, a form of cultural imperialism. The evidence, however, is mixed: research in multiple countries has found that exposure to global culture does not straightforwardly displace local cultural production but often generates hybrid forms that blend local and global influences.
+Inequality across the entire world adds another layer. Economist Branko Milanovic helped popularise an influential graph nicknamed the elephant curve, which plotted income growth at different points of the global distribution between 1988 and 2008. Its original shape suggested strong gains for a rising global middle, weaker growth for parts of the upper-middle distribution often associated with working and middle classes in rich economies, and large gains near the top. Later work using different data, periods and methods has altered the curve's shape and challenged simple identifications of each percentile with one social group. The episode illustrates a broader lesson: a striking graph can organise debate, but it cannot by itself separate the effect of trade from technology, national policy or starting income.
 
-The COVID-19 pandemic exposed the vulnerabilities of highly interconnected supply chains, as disruptions in one part of the world rapidly cascaded through global systems for producing medicines, semiconductors, and food. The resulting political pressure for supply chain "reshoring"—the return of production to domestic locations—and the broader shift toward strategic autonomy in critical sectors has introduced a new phase of "slowbalisation" or selective deglobalisation. Whether this represents a temporary adjustment or a deeper structural shift in the organisation of the global economy remains one of the central questions of international political economy.`,
+Cultural globalisation is similarly contested. Music, film, food, fashion and language travel quickly through broadcasting, migration and online platforms. Critics fear cultural homogenisation when a small number of commercial industries dominate attention, and some use the phrase cultural imperialism to describe unequal influence. Yet audiences are not merely passive recipients. Producers and communities adapt imported forms, combine them with local traditions and circulate the result back across borders. Researchers therefore often observe hybrid forms rather than the straightforward disappearance of local production. That finding does not prove that every language or tradition is secure; market concentration and platform algorithms can still make some voices much easier to encounter than others.
+
+Recent shocks have changed the debate about production networks. During the COVID-19 pandemic, simultaneous factory closures, transport constraints and sudden shifts in demand disrupted supplies of medical equipment, semiconductors and many everyday goods. Governments and firms responded with inventories, alternative suppliers and, in some cases, reshoring—the return of production to a domestic location. Others adopted "friend-shoring" or regional sourcing. These strategies involve trade-offs: duplication may improve resilience to one disruption while raising costs or creating a new concentration elsewhere.
+
+The label slowbalisation has been applied to a period in which some measures of cross-border economic integration grew more slowly, but selective deglobalisation is not the same as the end of international exchange. Trade in services and data may expand while trade in particular strategic goods becomes more restricted. Climate policy requires cross-border finance and technology even as geopolitical rivalry encourages controls. The future organisation of production is consequently a central question of international political economy. The most useful debate is not whether an abstract force called globalisation is wholly good or bad, but which rules spread benefits, support adjustment and manage risks without abandoning cooperation.`,
       questions: [
         {
           type: 'mcq',
@@ -568,11 +590,11 @@ The COVID-19 pandemic exposed the vulnerabilities of highly interconnected suppl
           part: 7,
           qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: The writer argues that globalisation has generated both significant gains and significant dislocations.\n32. {{32}}: The reduction in extreme poverty since 1990 is primarily due to globalisation in countries like China and India.\n33. {{33}}: Research shows a direct link between job losses caused by trade and support for anti-trade political candidates.\n34. {{34}}: Branko Milanovic concludes that globalisation has benefited only the top one percent of income earners globally.\n35. {{35}}: The passage claims that cultural globalisation has resulted in the complete disappearance of local cultural traditions in many countries.\n36. {{36}}: The COVID-19 pandemic contributed to political pressure to return production to domestic locations.`,
+          template: `31. {{31}}: The writer argues that globalisation can generate gains and dislocations at the same time.\n32. {{32}}: Globalisation was the primary cause of the fall in extreme poverty between 1990 and 2022.\n33. {{33}}: Research proves a direct causal link between every trade-related job loss and a vote for a protectionist candidate.\n34. {{34}}: The elephant curve showed that only the top one percent experienced income growth.\n35. {{35}}: The passage claims that cultural globalisation has completely eliminated local production.\n36. {{36}}: The COVID-19 pandemic encouraged some interest in returning production to domestic locations.`,
           blanks: [
             { num: 31, answers: ['YES'] },
-            { num: 32, answers: ['YES'] },
-            { num: 33, answers: ['YES'] },
+            { num: 32, answers: ['NO'] },
+            { num: 33, answers: ['NO'] },
             { num: 34, answers: ['NO'] },
             { num: 35, answers: ['NO'] },
             { num: 36, answers: ['YES'] },
@@ -607,8 +629,8 @@ The COVID-19 pandemic exposed the vulnerabilities of highly interconnected suppl
           part: 8,
           taskNumber: 1,
           imageUrl: '/assets/ielts/charts/set16-task1.svg',
-          imageAlt: 'Bar chart showing global installed renewable energy capacity by type in 2010, 2015, and 2022',
-          stimulus: 'The bar chart below shows global installed renewable energy capacity (in gigawatts) for four energy types in 2010, 2015, and 2022.',
+          imageAlt: 'Grouped bar chart comparing global renewable power capacity for hydropower, wind, solar and other technologies in 2015 and 2022',
+          stimulus: 'The bar chart below compares global installed renewable power capacity, measured in gigawatts, for four technology groups in 2015 and 2022.',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
@@ -626,8 +648,8 @@ The COVID-19 pandemic exposed the vulnerabilities of highly interconnected suppl
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'Governments and businesses are increasingly investing in renewable energy sources such as wind and solar power.',
-          text: 'What are the advantages of this trend, and what challenges does the transition away from fossil fuels present? Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
+          stimulus: 'Some people believe governments should spend public money on making homes more energy-efficient, while others think the money should be used to build more renewable power stations.',
+          text: 'Discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
           minWords: 250,
         },
       ],
@@ -644,12 +666,16 @@ The COVID-19 pandemic exposed the vulnerabilities of highly interconnected suppl
           id: 'sp1',
           part: 10,
           partNumber: 1,
-          text: 'Part 1 — Personal questions about learning and education',
+          text: 'Part 1 — Learning new things',
           followUp: [
-            'What was your favourite subject at school, and why?',
-            'How do you prefer to learn new skills — by reading, watching videos, or practising?',
-            'Do you think the education you received has prepared you well for adult life?',
-            'What is something you would like to learn more about in the future?',
+            'Do you enjoy learning new things?',
+            'What is something useful you learned recently?',
+            'Do you prefer to learn alone or with other people?',
+            'Where do you usually go when you need to study?',
+            'Did you enjoy studying when you were a child?',
+            'Is there a skill that is difficult for you to learn?',
+            'Do you use videos when you are learning something?',
+            'What would you like to learn in the future?',
           ],
         },
         {
@@ -667,10 +693,12 @@ The COVID-19 pandemic exposed the vulnerabilities of highly interconnected suppl
           partNumber: 3,
           text: 'Part 3 — Discussion: Energy, environment, and global cooperation',
           followUp: [
-            'Do you think individuals can make a meaningful difference to climate change through their personal choices?',
-            'How important is international cooperation in addressing global challenges like climate change?',
-            'Do you think richer countries have a greater responsibility to reduce their carbon emissions than poorer ones?',
-            'What do you think the world will look like in fifty years in terms of energy production?',
+            'Why do some communities accept environmental changes more readily than others?',
+            'How should governments balance the cost of new energy systems with long-term benefits?',
+            'Can personal choices make a meaningful difference to large environmental problems?',
+            'Why is international cooperation important when environmental problems cross borders?',
+            'Should wealthier countries carry more responsibility for financing cleaner technology?',
+            'How might the way electricity is produced change over the next fifty years?',
           ],
         },
       ],

@@ -184,6 +184,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   desperdicio con SOFI 2025, FAO y UNEP. La gráfica eléctrica corrige los datos oficiales
   de Reino Unido y Australia, pasó QA visual y accesible; el Task 2 de donación de
   excedentes es original. Sólo queda diferido su audio.
+- El Set 16 superó 244 controles Golden. Listening conserva los cuatro escenarios y
+  corrige seguridad del prototipo de agua y la evidencia científica de navegación aviar.
+  Reading actualiza costes e integración renovable, desarrollo infantil y pobreza/comercio
+  con IRENA, IEA, WHO, UNICEF y World Bank. La gráfica de capacidad renovable usa dos
+  años IRENA consistentes y pasó QA visual y accesible; el Task 2 de inversión pública en
+  eficiencia frente a nueva generación es original. Sólo queda diferido su audio.
 
 ## Auditoría final no-audio
 
