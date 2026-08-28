@@ -59,6 +59,7 @@ comprueban y qué queda pendiente. Léelo antes de tocar ese subsistema, y actua
 | Subsistema | Documento |
 |---|---|
 | Escucha — 480 episodios en 8 idiomas, `/practica/*/escucha` | [`docs/escucha-estado.md`](escucha-estado.md) |
+| Ideas avanzadas — 7 ciclos guiados B2–C1 | [`docs/ideas-avanzadas-estado.md`](ideas-avanzadas-estado.md) |
 | SAT — superhub y simulacro adaptativo completo | [`docs/sat-estado.md`](sat-estado.md) |
 | PDF descargables — 5 destrezas en 8 idiomas, `src/lib/pdf/` | [`docs/pdf-descargables-estado.md`](pdf-descargables-estado.md) |
 | Habla acompañada — 10 conjuntos, 200 escenarios publicados | [`docs/METODOLOGIA-HABLA-ACOMPANADA.md`](METODOLOGIA-HABLA-ACOMPANADA.md) y [`docs/habla-acompanado-blueprint.md`](habla-acompanado-blueprint.md) |

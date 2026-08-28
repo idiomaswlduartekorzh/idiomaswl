@@ -295,7 +295,7 @@ const [audioA, audioB] = HYPERGAMY_AUDIO_TRACKS
 export const HYPERGAMY_GUIDED_LESSON: GuidedAdvancedLesson = {
   kind: 'guided-v3',
   slug: 'hipergamia-dato-o-relato',
-  sequence: 3,
+  sequence: 4,
   breadcrumbTitle: 'Hypergamy: data, pattern or story?',
   title: 'Hypergamy: preference, opportunity and outcome',
   subtitle: 'An advanced English seminar on how partner patterns are measured, explained and overstated.',
