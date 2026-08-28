@@ -97,8 +97,8 @@ export default function PrototypeBriefing({ brief, roles, accent }: { brief: Sha
               <h2 id="problem-title">There is a problem with the seats.</h2>
               <p>{brief.problem}</p>
               <div className={s.ticketPair} aria-label="Two tickets with the same seat">
-                <span>Laura Gómez <strong>Seat 12</strong></span>
-                <span>Ana Gómez <strong>Seat 12</strong></span>
+                <span>Ticket 1 <strong>Seat 12</strong></span>
+                <span>Ticket 2 <strong>Seat 12</strong></span>
               </div>
             </section>
 
