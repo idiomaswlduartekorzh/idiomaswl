@@ -309,6 +309,17 @@ async function ensureGenerationGate(rows) {
   );
   const ffmpeg = spawnSync('ffmpeg', ['-version'], { encoding: 'utf8' });
   assert.equal(ffmpeg.status, 0, 'ffmpeg is required for assembly');
+  if (auditedCacheReport) {
+    const verified = new Set();
+    for (const row of rows) {
+      for (const segment of row.segments) {
+        const key = `${segment.profile}|${sha256(segment.text)}`;
+        if (!auditedCacheIndex.has(key) || verified.has(key)) continue;
+        assert.ok(auditedCacheReusePath(segment), `audited cache preflight failed for ${key}`);
+        verified.add(key);
+      }
+    }
+  }
   if (has('--reuse-only')) {
     assert.ok(auditedCacheReport || sourceCachePlan, '--reuse-only requires an audited or pinned source cache');
     return { apiKey: null, bill, cap: 0, reserve: 0, availableCredits: null, allowPartialAtReserve: true, reuseOnly: true };

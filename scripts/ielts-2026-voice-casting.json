@@ -16,6 +16,31 @@
     "reserve_override_at": "2026-08-26T14:01:08Z",
     "reserve_override_instruction": "Finish Set 5 even if the remaining ElevenLabs credits are exhausted."
   },
+  "proposed_production_waves": {
+    "status": "pending_owner_authorization",
+    "cache_reuse_report_sha256": "0b519774fc04f2e8037d8f3d7685661d7fbffe628ea0fd8b89aee108ad861cb2",
+    "provider_calls_made": false,
+    "waves": [
+      {
+        "wave": 1,
+        "sets": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+        "incremental_characters": 224357,
+        "conservative_credits": 112473,
+        "max_usd_before_tax": 11.2179,
+        "minimum_remaining_credits": 8000,
+        "generation_authorized": false
+      },
+      {
+        "wave": 2,
+        "sets": [18, 19, 20, 1, 2, 3],
+        "incremental_characters": 104631,
+        "conservative_credits": 52461,
+        "max_usd_before_tax": 5.2316,
+        "minimum_remaining_credits": 8000,
+        "generation_authorized": false
+      }
+    ]
+  },
   "target": {
     "intermediate_output_format": "mp3_44100_128",
     "final_sample_rate_hz": 44100,

@@ -9,13 +9,17 @@
       "setId": "set-4",
       "manifestSha256": "024680660790cf1ac6e3431f4ad379c09b73e52cb67e2847484606956dbde187",
       "gitRevision": "a6f431b9ffe6320eb634e0b767a5996281383a26:docs/ielts-2026-audio-generation-plan-2026-08-25.json",
-      "fileSha256": "0a807838bab9552c77ec1edabda1a2e13b8272b32f08454d108174879aa9435c"
+      "fileSha256": "0a807838bab9552c77ec1edabda1a2e13b8272b32f08454d108174879aa9435c",
+      "castingGitRevision": "a6f431b9ffe6320eb634e0b767a5996281383a26:scripts/ielts-2026-voice-casting.json",
+      "voiceConfigurationSha256": "0009fa78cfe50dedc12eac9a53b5ca7a04b8dc0630d74123619705cf96c92b7e"
     },
     {
       "setId": "set-5",
       "manifestSha256": "a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea",
       "gitRevision": "720fcb4023935e8c6090e756515b32bd8ac5b938:docs/ielts-2026-audio-generation-plan-2026-08-25.json",
-      "fileSha256": "55c225b58cf449ee6971097fcf7bbe73cd64fb239b9fe4346610281d69d4c6c4"
+      "fileSha256": "55c225b58cf449ee6971097fcf7bbe73cd64fb239b9fe4346610281d69d4c6c4",
+      "castingGitRevision": "720fcb4023935e8c6090e756515b32bd8ac5b938:scripts/ielts-2026-voice-casting.json",
+      "voiceConfigurationSha256": "0009fa78cfe50dedc12eac9a53b5ca7a04b8dc0630d74123619705cf96c92b7e"
     }
   ],
   "artifacts": [

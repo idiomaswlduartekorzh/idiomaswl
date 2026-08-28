@@ -73,19 +73,26 @@ function historicalPlan(source) {
   assert.equal(shown.status, 0, `cannot read pinned historical plan ${revision}: ${shown.stderr}`);
   const parsed = JSON.parse(shown.stdout);
   assert.equal(parsed.manifestSha256, source.generationManifestSha256, `${source.setId} pinned source plan manifest changed`);
-  return { parsed, revision, fileSha256: sha256(shown.stdout) };
+  const castingRevision = `${source.sourcePlanCommit}:scripts/ielts-2026-voice-casting.json`;
+  const castingShown = spawnSync('git', ['show', castingRevision], { cwd: repoRoot, encoding: 'utf8' });
+  assert.equal(castingShown.status, 0, `cannot read pinned historical casting ${castingRevision}: ${castingShown.stderr}`);
+  const historicalCasting = JSON.parse(castingShown.stdout);
+  assert.equal(historicalCasting.manifest_sha256, source.generationManifestSha256, `${source.setId} historical casting belongs to another manifest`);
+  const historicalVoiceConfigurationSha256 = voiceConfigurationSha256(historicalCasting);
+  assert.equal(historicalVoiceConfigurationSha256, voiceConfigurationSha256(), `${source.setId} historical voice configuration differs from the current cache contract`);
+  return { parsed, revision, fileSha256: sha256(shown.stdout), castingRevision, historicalVoiceConfigurationSha256 };
 }
 
-function currentVoiceConfigurationSha256() {
+function voiceConfigurationSha256(configuration = casting) {
   return sha256(JSON.stringify({
-    modelId: casting.model_id,
-    voiceSettings: casting.voice_settings,
-    roleVoice: casting.role_voice,
-    voiceIds: Object.fromEntries(Object.entries(casting.voices).map(([accent, roles]) => [
+    modelId: configuration.model_id,
+    voiceSettings: configuration.voice_settings,
+    roleVoice: configuration.role_voice,
+    voiceIds: Object.fromEntries(Object.entries(configuration.voices).map(([accent, roles]) => [
       accent,
       Object.fromEntries(Object.entries(roles).map(([role, voice]) => [role, voice.voice_id])),
     ])),
-    intermediateOutputFormat: casting.target.intermediate_output_format,
+    intermediateOutputFormat: configuration.target.intermediate_output_format,
   }));
 }
 
@@ -112,6 +119,8 @@ function buildReport(root) {
       manifestSha256: sourcePlan.parsed.manifestSha256,
       gitRevision: sourcePlan.revision,
       fileSha256: sourcePlan.fileSha256,
+      castingGitRevision: sourcePlan.castingRevision,
+      voiceConfigurationSha256: sourcePlan.historicalVoiceConfigurationSha256,
     });
     const scope = `sets-${source.setId.replace('set-', '')}`;
     const generationLogRelativePath = cacheRelative(source.generationManifestSha256, scope, 'generation-log.json');
@@ -216,7 +225,7 @@ function buildReport(root) {
     schemaVersion: 1,
     auditedAsOf: '2026-08-28',
     currentManifestSha256: plan.manifestSha256,
-    currentVoiceConfigurationSha256: currentVoiceConfigurationSha256(),
+    currentVoiceConfigurationSha256: voiceConfigurationSha256(),
     cacheRootPolicy: 'external; resolve relativePath entries against --cache-root or IELTS_AUDIO_CACHE_ROOT',
     historicalSourcePlans,
     artifacts,
@@ -262,7 +271,7 @@ function buildReport(root) {
 
 function assertCheckedInReport(report) {
   assert.equal(report.currentManifestSha256, plan.manifestSha256, 'cache-reuse report belongs to a stale current manifest');
-  assert.equal(report.currentVoiceConfigurationSha256, currentVoiceConfigurationSha256(), 'cache-reuse report belongs to a stale casting configuration');
+  assert.equal(report.currentVoiceConfigurationSha256, voiceConfigurationSha256(), 'cache-reuse report belongs to a stale casting configuration');
   assert.equal(report.invoice.fullCharacters, plan.invoice.projectedMinimumCharactersAfterEditorialGate);
   assert.equal(report.invoice.fullCharacterEquivalentCredits, plan.invoice.projectedMinimumCreditsAfterEditorialGate);
   assert.equal(report.invoice.incrementalCharacters, report.invoice.fullCharacters - report.invoice.reusableCharacters);

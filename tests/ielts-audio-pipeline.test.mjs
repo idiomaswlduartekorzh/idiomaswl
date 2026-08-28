@@ -90,6 +90,7 @@ test('the checked-in invoice never discounts authored characters', () => {
   const reuseOnlyGate = generatorSource.indexOf("if (has('--reuse-only'))");
   const apiSecretRead = generatorSource.indexOf('const apiKey = process.env.ELEVENLABS_API_KEY;', reuseOnlyGate);
   assert.ok(reuseOnlyGate > 0 && apiSecretRead > reuseOnlyGate, '--reuse-only must exit the gate before reading a provider secret');
+  assert.ok(generatorSource.indexOf('audited cache preflight failed') < apiSecretRead, 'physical cache must be verified before reading a provider secret');
   assert.match(generatorSource, /Math\.min\(providerAvailableCredits, conservativeAvailableCredits\)/);
   assert.match(generatorSource, /conservativeAvailableCredits -= Math\.ceil/);
   assert.match(generatorSource, /function auditedCacheReusePath\(segment\)/);
