@@ -18,13 +18,13 @@ const mock: MockExam = {
       instructions: 'You will hear a telephone conversation between a customer and a home-repair booking agent. Listen and answer Questions 1–10.',
       transcript: `AGENT: Good afternoon, Hartley Home Repairs. How can I help you today?
 
-CUSTOMER: Hello. I'd like to arrange for someone to come and fix a few things at my house.
+CUSTOMER: Hello. I'd like to arrange for someone to inspect two problems at my house.
 
-AGENT: Of course, I can help with that. Can I take your name, please?
+AGENT: First, can I take your name, please?
 
 CUSTOMER: Yes, it's David Whitfield.
 
-AGENT: And could you spell your surname for me?
+AGENT: Could you spell your surname for me?
 
 CUSTOMER: Certainly. It's W-H-I-T-F-I-E-L-D.
 
@@ -32,43 +32,51 @@ AGENT: Thank you, Mr Whitfield. And what's your address?
 
 CUSTOMER: It's 15 Maple Avenue.
 
-AGENT: Maple Avenue, got it. And the postcode?
+AGENT: Maple Avenue, got it. Is that the street near the library rather than Maple Close?
 
-CUSTOMER: It's LS9 4RT.
+CUSTOMER: That's right. The postcode is LS9 4RT.
 
-AGENT: Lovely. And what's the best number to reach you on?
+AGENT: And what's the best number to reach you on?
 
-CUSTOMER: My mobile is 078 4419 2036.
+CUSTOMER: My mobile is 078 4419 2036. Please don't use the landline listed on my previous booking; that number is no longer connected.
 
-AGENT: And when's the best time for us to call you, if we need to?
+AGENT: I'll update the record. When is the best time to call if the technician needs more information?
 
-CUSTOMER: In the evenings, please. I'm at work all day.
+CUSTOMER: In the evenings, please. I'm at work all day and usually can't answer before six.
 
-AGENT: Noted — evenings. Now, could you describe the problems for me?
+AGENT: Noted — evenings. We can send the appointment confirmation by text, but any change requiring a decision will be discussed by phone. Now, could you describe the problems?
 
-CUSTOMER: Well, the main thing is a leak. There's water coming in from the roof whenever it rains heavily.
+CUSTOMER: The main one is a leak. Water comes in from the roof whenever it rains heavily. It appears near an upstairs window, but the window frame itself looks dry.
 
-AGENT: A leak from the roof — I'll make a note of that. Anything else?
+AGENT: We should inspect the roof rather than assume the water entered directly above the stain. If the rain becomes severe, move furniture away and place a container underneath, but please don't climb up to investigate. Anything else?
 
-CUSTOMER: Yes, there's also a broken fence in the back garden that needs repairing.
+CUSTOMER: Yes, there's a broken fence in the back garden. One panel is loose and moves in the wind. The gate is fine, so the technician doesn't need to replace that.
 
-AGENT: A broken fence. And when would suit you for our visit?
+AGENT: Thank you. We normally allocate roofing and outdoor carpentry separately, but one technician can make the initial assessment. Which day would suit you?
 
-CUSTOMER: I'd prefer the morning — oh, actually, no. Make it the afternoon. I have to take the children to school first.
+CUSTOMER: Thursday would be ideal. Friday is possible if Thursday is full.
 
-AGENT: The afternoon it is. And how will our technician get in if you're not at home?
+AGENT: We have Thursday available. Would you prefer the morning slot, from eight to twelve, or the afternoon, from one to five?
 
-CUSTOMER: I'll leave a spare key with a neighbour. They're always in.
+CUSTOMER: I was going to say morning, but I have to take the children to school and attend a meeting. Make it the afternoon.
 
-AGENT: Perfect. Now let me tell you about our two maintenance plans. The basic plan includes two visits a year, with a call-out fee of £45 each time, but it does include free parts.
+AGENT: The afternoon it is. The technician will send a message when travelling. How will they enter if you are not home at the start of the slot?
 
-CUSTOMER: And the other one?
+CUSTOMER: I'll leave a spare key with a neighbour. She lives at number seventeen and is normally in. Please ask the technician not to put the key through my letterbox afterwards; it should be returned to her.
 
-AGENT: The premium plan gives you four visits a year. With that plan the call-out fee drops to £30, and it also includes free labour.
+AGENT: I've added that instruction. Before confirming, let me explain our maintenance plans. You can also pay for this visit alone, but a plan may be useful if the building needs regular attention. The basic plan includes two visits per year. Its call-out fee is £45 each time, and replacement parts are included up to the policy limit.
 
-CUSTOMER: The premium sounds better. I'll go with that one.
+CUSTOMER: Does it cover the time spent doing the repair?
 
-AGENT: Excellent choice, Mr Whitfield. I'll get that booked in for you.`,
+AGENT: Labour is charged separately on the basic plan. The premium plan allows four visits per year. Its call-out fee falls to £30, and labour is included for standard work. Specialist equipment, such as scaffolding, is still quoted separately on either plan.
+
+CUSTOMER: I first assumed the basic option would be enough, but the lower fee and included work make the premium plan more suitable. I'll choose that one.
+
+AGENT: Fine. Today's appointment will count as the first visit only if you activate the plan after receiving the inspection report. I will email the terms, and no payment is taken during this call.
+
+CUSTOMER: That's clear. Thank you.
+
+AGENT: You're welcome. The booking is now reserved for Thursday afternoon.`,
       questions: [
         {
           type: 'formgroup',
@@ -90,11 +98,11 @@ Problem details
 • Will leave a spare key with a {{6}}`,
           blanks: [
             { num: 1, answers: ['Maple', 'maple'], maxWords: 1 },
-            { num: 2, answers: ['evenings', 'evening'], maxWords: 1 },
+            { num: 2, answers: ['evenings'], maxWords: 1 },
             { num: 3, answers: ['roof'], maxWords: 1 },
             { num: 4, answers: ['fence'], maxWords: 1 },
             { num: 5, answers: ['afternoon'], maxWords: 1 },
-            { num: 6, answers: ['neighbour', 'neighbor'], maxWords: 1 },
+            { num: 6, answers: ['neighbour'], maxWords: 1 },
           ],
         },
         {
@@ -109,13 +117,13 @@ Problem details
               'Basic plan',
               { num: 7, answers: ['two', '2'], maxWords: 1 },
               '£45',
-              { num: 8, answers: ['parts', 'part'], maxWords: 1 },
+              { num: 8, answers: ['parts'], maxWords: 1 },
             ],
             [
               'Premium plan',
               '4',
               { num: 9, answers: ['30', '£30'], maxWords: 1 },
-              { num: 10, answers: ['labour', 'labor'], maxWords: 1 },
+              { num: 10, answers: ['labour'], maxWords: 1 },
             ],
           ],
         },
@@ -128,15 +136,25 @@ Problem details
       audioUrl: '/audio/ielts/ielts-listening-set-17.mp3',
       title: 'Listening — Section 2: Art Gallery Guided Tour',
       instructions: 'You will hear a guide talking to visitors at the start of an art gallery tour. Listen and answer Questions 11–20.',
-      transcript: `Good morning everyone, and welcome to the Riverside Art Gallery. My name's Karen, and I'll be your guide this morning. Before we begin, let me tell you about a few improvements we've made recently. The most exciting addition is our new rooftop café, which opened last month and has wonderful views over the river. We've also created a brand-new workshop room for children on the second floor, where families can take part in hands-on activities. Now, some of you have asked about the gift shop and the members' lounge — those have been here for years — and our audio guide app, I'm afraid, is still being developed and isn't available yet.
+      transcript: `Good morning everyone, and welcome to the Riverside Art Gallery. My name is Karen, and I'll be your guide. Before we begin, please check that you have a blue visitor badge; the red badges are for the afternoon schools programme.
 
-Right, let me explain how the tour works. The tour lasts about 90 minutes, and we'll finish back here at the main entrance. Please note that photography is allowed, but only without flash, as bright light can damage the older paintings. If you'd like to leave your bags, there are free lockers next to the cloakroom.
+Several parts of the building have changed since last season. The most popular new feature is our rooftop café, which opened last month and has views over the river. It serves light meals until four, although hot drinks remain available until the gallery closes. We have also created a workshop room for children on the second floor. Families can join short drawing and printmaking activities there at weekends. Both of those spaces are new. The gift shop and members' lounge have existed for years, despite their recent redecoration. An audio guide app is still being developed, so if you saw it advertised in an early brochure, please note that it is not available today.
 
-We'll start in the East Wing, which houses the gallery's collection of landscape paintings. The highlight there is a work called 'The Harvest', which the gallery bought at auction in 2019 for a record price. From there, we move to the sculpture garden, where I'd ask you to please stay on the path, as the grass has just been reseeded.
+Let me explain the timing. The guided route lasts about 90 minutes. A shorter sixty-minute route was offered during building work, but we have returned to the full tour. We will finish here at the main entrance, not upstairs at the café, which means anyone with another booking can leave promptly. Visitors may step out of the group and rejoin at the next stop.
 
-After the sculpture garden, we visit the portrait gallery on the first floor. Many of these portraits were donated by a local collector whose family owned the building in the nineteenth century. The final room on the tour is the print room, which is kept quite dark to protect the delicate drawings.
+Photography is allowed for personal use, but only without flash, because repeated bright light can damage sensitive works. Tripods and selfie sticks are not permitted in the galleries because they obstruct narrow passages. Some objects on loan carry a no-photography symbol; please respect that sign even if your camera has no flash.
 
-At the end of the tour, you're welcome to relax in the café, and don't forget that gallery members receive a ten percent discount in the shop. If you have any questions along the way, please feel free to ask me at any time. Now, if you'd all like to follow me, we'll make our way to the East Wing.`,
+Large bags should not be carried around the collection. Free lockers are beside the cloakroom on this level. They use a returnable one-pound coin, and reception can lend a token if you do not have one. Coats may be left at the staffed desk, but food and open drinks must remain outside exhibition rooms.
+
+Our first stop is the East Wing, home to the collection of landscape paintings. The room includes coastal views, mountain scenes and several studies made outdoors. Its best-known work is The Harvest. A former owner lent it to the gallery for a decade, but the gallery finally bought it at auction in 2019. The frame was conserved after the purchase, while the painted surface required only a careful clean.
+
+From there, we move through the glass doors into the sculpture garden. Please stay on the path. The grass has just been reseeded, and the soil is softer than it appears. You may walk around each sculpture where the paving widens, but do not touch the surfaces. If rain becomes heavy, we will view that section through the windows and spend longer in the next room.
+
+After the garden, we visit the portrait gallery on the first floor. Many works were donated by a local collector whose family owned this building in the nineteenth century. A few portraits came directly from the people represented, so do not assume the entire display has one source. I will show you how changes in clothing and background reveal the sitter's status.
+
+The final stop is the print room. It is kept fairly dark to protect works on paper, and only a selection is displayed at one time. The current exhibition focuses on river transport. Please allow your eyes a moment to adjust before moving between cases.
+
+Afterwards, you are welcome to use the café or shop. Gallery members receive a ten percent discount in the shop after showing their card; the reduction does not apply in the café. Questions are welcome at natural pauses, but please keep together on the stairs. Now, follow me to the East Wing.`,
       questions: [
         {
           type: 'multiselect',
@@ -175,9 +193,9 @@ On the tour
 • The portraits were {{19}} by a local collector.
 • Gallery members receive a ten percent {{20}} in the shop.`,
           blanks: [
-            { num: 13, answers: ['90', 'ninety'], maxWords: 2 },
+            { num: 13, answers: ['90'], maxWords: 2 },
             { num: 14, answers: ['flash'], maxWords: 2 },
-            { num: 15, answers: ['lockers', 'locker'], maxWords: 2 },
+            { num: 15, answers: ['lockers'], maxWords: 2 },
             { num: 16, answers: ['landscape'], maxWords: 2 },
             { num: 17, answers: ['auction'], maxWords: 2 },
             { num: 18, answers: ['path'], maxWords: 2 },
@@ -194,33 +212,43 @@ On the tour
       audioUrl: '/audio/ielts/ielts-listening-set-17.mp3',
       title: 'Listening — Section 3: Sports-Science Study Discussion',
       instructions: 'You will hear a tutor talking to two students about a sports-science study. Listen and answer Questions 21–30.',
-      transcript: `TUTOR: So, Amy and Josh, thanks for coming in. I've read your draft proposal for the sports-science study. Perhaps you could start by reminding me what you're actually trying to find out.
+      transcript: `TUTOR: Amy and Josh, thanks for coming in. I've read your draft sports-science proposal. Start by stating the question in one sentence, because the introduction still contains two different ideas.
 
-AMY: Well, originally we wanted to look at how diet affects sprinting speed, but we decided that was too broad. So now we're focusing specifically on how the amount of sleep athletes get affects their reaction times.
+AMY: Originally we wanted to examine how diet affects sprinting speed. That would have required detailed food records and several performance measures, so it became too broad. We now want to investigate how the amount of sleep athletes report is associated with their reaction times the following day.
 
-TUTOR: Good — that's a much sharper focus. And who are your participants?
+TUTOR: Better. Be careful with the word "affects", though. If participants follow their normal routines rather than being randomly assigned a sleep duration, your design can identify an association, not establish that sleep caused the difference.
 
-JOSH: We're recruiting university students, but only ones who already play sport competitively. We thought about using complete beginners, but their results would be too inconsistent.
+JOSH: We'll revise that. We plan to recruit university students who already compete in sport. We considered complete beginners, but sporting experience varies so much that comparisons would be difficult. Professional athletes were outside our budget and would be harder to schedule.
 
-TUTOR: Sensible. Now, how exactly are you measuring reaction time?
+TUTOR: Good. How will you measure reaction time?
 
-AMY: We're using a light-based test. A light flashes and the participant presses a button as quickly as they can. The software records the delay in milliseconds.
+AMY: With a light-based computer test. A light appears at unpredictable intervals and the participant presses a button as quickly as possible. The software records the delay in milliseconds. Each person completes practice trials, followed by twenty measured trials, and we'll use the median rather than a single response.
 
-TUTOR: And have you run into any difficulties yet?
+TUTOR: What is the main practical difficulty now?
 
-JOSH: The main problem has been getting participants to attend at the same time each day. Reaction times vary depending on the time of day, so if people come at different hours, that adds noise to the data.
+JOSH: Getting participants to attend at the same time each day. Reaction speed can vary with time of day. If one person is tested at eight in the morning and another after an evening training session, timing adds noise. We first offered completely flexible appointments, but that would make comparison weak.
 
-TUTOR: That's a really important point. Consistency of timing matters enormously. So what have your early results shown?
+TUTOR: Sensible. You mentioned an early pattern in your presentation. Where did those data come from if recruitment has not begun?
 
-AMY: This is the surprising bit. We expected that less sleep would always mean slower reactions, but actually, for the fittest participants, one bad night didn't seem to affect them much at all. It seems fitness might protect against short-term sleep loss.
+AMY: From an anonymised teaching dataset supplied for the statistics workshop, not from our future participants. The fittest subgroup showed a smaller average change after a short night than the other subgroup. We initially wrote that fitness protects people from sleep loss, but the dataset contains only twenty cases and the difference could be chance or confounding.
 
-TUTOR: Fascinating. That's genuinely worth exploring. Now, in terms of next steps, I'd strongly recommend increasing your sample size — twenty participants really isn't enough to draw firm conclusions.
+TUTOR: Exactly. Report it as a pattern that motivated a question, not as a health claim. Acute sleep restriction can have important effects, and your study must not ask anyone to deprive themselves of sleep. You are observing normal variation and recording what they report.
 
-JOSH: We were worried about that.
+JOSH: Understood. For the main study, we hoped twenty participants would be enough because each person attends twice.
 
-TUTOR: Also, you should keep a log of each participant's caffeine intake, because that clearly influences alertness. And I'd like you to add a short questionnaire about their usual sleep patterns. Finally, make sure you get ethical approval before you start testing — the committee meets next Tuesday.
+TUTOR: Repeated measures help, but you still need a justified sample. Increase the sample size and add a power calculation to the protocol. If recruitment cannot reach the target, label the project exploratory rather than drawing firm conclusions.
 
-AMY: Thank you, that's really helpful.`,
+AMY: What other variables should we record?
+
+TUTOR: Keep a log of caffeine intake, including the amount and time, because it may influence alertness. Do not simply classify people as coffee drinkers or non-drinkers. Add a short questionnaire about usual sleep patterns as well. A single night's reported duration may not represent someone's normal routine.
+
+JOSH: We had planned to use a phone sleep app.
+
+TUTOR: You can record whether participants use one, but consumer estimates are not interchangeable with laboratory measures. State the limitations. Most importantly, obtain ethical approval before collecting any original participant data. The committee meets next Tuesday, so submit the information sheet, consent form, data plan and withdrawal procedure by Friday.
+
+AMY: That gives us a clear revision list. We'll change the causal wording and prepare the ethics documents first.
+
+TUTOR: Good. A modest study with transparent limitations is more valuable than an impressive conclusion the design cannot support.`,
       questions: [
         {
           type: 'mcq',
@@ -262,10 +290,10 @@ AMY: Thank you, that's really helpful.`,
           type: 'mcq',
           id: 'l3q24',
           part: 3,
-          text: 'What did the early results surprisingly suggest?',
+          text: 'What surprising pattern appeared in the teaching dataset?',
           options: [
-            'less sleep always slows reaction times',
-            'fitness may protect against short-term sleep loss',
+            'every participant reacted more slowly after less sleep',
+            'the fittest subgroup showed a smaller average change',
             'beginners react faster than expected',
           ],
           answer: 1,
@@ -312,15 +340,21 @@ AMY: Thank you, that's really helpful.`,
       audioUrl: '/audio/ielts/ielts-listening-set-17.mp3',
       title: 'Listening — Section 4: The Printing Press',
       instructions: 'You will hear a lecture about the history of the printing press. Listen and answer Questions 31–40.',
-      transcript: `Today I'm going to talk about one of the most influential inventions in human history: the printing press. Although we often credit Johannes Gutenberg with inventing printing in the fifteenth century, forms of printing existed long before him. In China, printers were using carved wooden blocks to reproduce texts as early as the seventh century. The Chinese also experimented with movable type made from clay, but because the Chinese writing system uses thousands of different characters, the method never became widely practical there.
+      transcript: `Today we will examine the printing press, but we must begin by correcting a familiar shortcut. Johannes Gutenberg did not invent printing for the whole world. Long before his work in Europe, craftspeople in East Asia reproduced images and texts from carved surfaces. In China, surviving printed material shows the use of wooden blocks by the seventh century. A complete page could be carved in reverse, inked and pressed onto paper. Preparing a block required skill, yet it could produce many copies once finished.
 
-Gutenberg's crucial innovation, developed in the German city of Mainz around 1440, was movable type made from metal. He created a special alloy that was durable enough to be reused thousands of times, and he designed a mould that allowed individual letters to be produced quickly and in large quantities. He also adapted the design of the wine press, which was already common in the region, to apply even pressure to the paper.
+Chinese innovators also developed movable type. In the eleventh century, Bi Sheng used individual pieces made from clay. Movable pieces could be rearranged for a new page instead of carving every page from the beginning. However, a writing system with thousands of characters created storage and selection challenges very different from those of a small alphabet. This did not mean movable type disappeared in Asia. Korean printers later used metal movable type, and printing traditions developed through several technologies. The history is therefore a sequence of regional innovations, not a single moment of invention.
 
-Another essential element was ink. Gutenberg developed a new oil-based ink that stuck properly to the metal type — earlier water-based inks simply slid off. His most famous product was a printed Bible, completed around 1455, which is admired even today for the beauty of its printing.
+Gutenberg's achievement was to combine processes into a commercially effective system in fifteenth-century Europe. He worked in Mainz, a German city with metalworking and trading connections, during the period around 1440. Instead of carving a whole page, printers assembled separate letters of metal. Type cast from an alloy had to be hard enough to survive repeated impressions while still being practical to manufacture. A hand mould helped workers make many pieces with consistent dimensions, so lines could be assembled, printed, redistributed and used again.
 
-The consequences of the printing press were enormous. Before printing, books were copied by hand, usually by monks, which made them extremely expensive and rare. After Gutenberg, the price of books fell dramatically, and literacy began to spread among ordinary people. Ideas could now travel faster than ever before. Historians often argue that the printing press made the religious movement known as the Reformation possible, because pamphlets could be produced and distributed on a massive scale.
+The press itself supplied controlled pressure. Historians often compare its action with screw presses used for wine or other agricultural products, although workshop details changed over time. Paper was positioned against an inked form of type, pressure transferred the image, and the sheet was removed to dry.
 
-The press also had a profound effect on science. Accurate diagrams could be reproduced identically in every copy of a book, which helped scholars across Europe share knowledge reliably. Some historians claim that without the printing press, the Scientific Revolution could not have happened. By the year 1500, presses across Europe had already produced millions of books, transforming society permanently.`,
+Ink was another essential component. A thin water-based mixture suitable for writing or woodblocks did not behave well on metal. European printers used a more viscous oil-based ink that adhered to the type and produced a dense impression on paper. Attribution of every formula to one person is difficult because recipes were workshop knowledge, but the compatibility of ink, type, paper and press was crucial. Gutenberg's best-known production is the Bible associated with his workshop, completed in the mid-1450s. Its layout imitated features readers valued in manuscripts, and decoration was sometimes added by hand.
+
+Before the spread of European printing, books were copied by hand by professional scribes in religious and secular settings. Monasteries were important centres, but monks were not the only people who made manuscripts. Copying was slow and skilled, which limited the number of identical texts and contributed to high costs. Printing did not make books instantly cheap or create universal literacy. It did, however, increase the scale and speed with which many texts could be reproduced, while competition and expanding markets changed their price and availability.
+
+These changes affected religion and politics. During the sixteenth-century Reformation, printers produced pamphlets, sermons, translations and replies for competing sides. The press did not by itself cause the movement; religious disputes, institutions and political protection also mattered. It helped Reformation arguments circulate faster and across wider areas, while authorities used licences, censorship and confiscation in attempts to control the same medium.
+
+Printing also changed scholarly communication. Tables, maps and diagrams could be reproduced across an edition, allowing readers in different places to consult closely related visual evidence. "Identical" should not be taken literally: type could be reset, plates could wear and corrections might be introduced during a print run. Nevertheless, repeatable pages made comparison and criticism easier. By 1500, presses operated in many European towns and had produced millions of volumes.`,
       questions: [
         {
           type: 'formgroup',
@@ -339,25 +373,25 @@ Gutenberg's innovations
 
 • Gutenberg worked in the German city of {{34}} around 1440.
 • He produced movable type made from {{35}}.
-• He created a special {{36}} that could be reused thousands of times.
+• His type was cast from an {{36}} suitable for repeated impressions.
 • He developed a new oil-based {{37}} that stuck to the metal type.
 
 The impact of printing
 
-• Before printing, books were copied by hand, usually by {{38}}.
-• The press is said to have made the religious movement called the {{39}} possible.
+• Before printing, books were copied by hand by professional {{38}}.
+• Printed texts helped arguments from the {{39}} circulate more widely.
 • In science, accurate {{40}} could be reproduced identically in every copy.`,
           blanks: [
-            { num: 31, answers: ['seventh', '7th'], maxWords: 1 },
+            { num: 31, answers: ['seventh'], maxWords: 1 },
             { num: 32, answers: ['clay'], maxWords: 1 },
-            { num: 33, answers: ['characters', 'character'], maxWords: 1 },
+            { num: 33, answers: ['characters'], maxWords: 1 },
             { num: 34, answers: ['Mainz'], maxWords: 1 },
             { num: 35, answers: ['metal'], maxWords: 1 },
             { num: 36, answers: ['alloy'], maxWords: 1 },
             { num: 37, answers: ['ink'], maxWords: 1 },
-            { num: 38, answers: ['monks', 'monk'], maxWords: 1 },
+            { num: 38, answers: ['scribes'], maxWords: 1 },
             { num: 39, answers: ['Reformation'], maxWords: 1 },
-            { num: 40, answers: ['diagrams', 'diagram'], maxWords: 1 },
+            { num: 40, answers: ['diagrams'], maxWords: 1 },
           ],
         },
       ],
@@ -370,17 +404,23 @@ The impact of printing
       instructions: 'Read the passage and answer Questions 1–13.',
       passage: `Ocean Acidification
 
-The world's oceans are undergoing a fundamental chemical change. Since the beginning of the Industrial Revolution, the oceans have absorbed approximately thirty percent of all carbon dioxide emitted by human activity—around one hundred and fifty billion tonnes in total. This absorption has served as a vital buffer against even more rapid atmospheric warming, but it has come at a significant cost: the dissolved carbon dioxide reacts with seawater to form carbonic acid, progressively lowering the pH of the ocean in a process called ocean acidification.
+Ocean acidification is a long-term reduction in seawater pH caused mainly by uptake of carbon dioxide from the atmosphere. The ocean absorbs about thirty percent of the carbon dioxide released into the atmosphere, although estimates depend on the period and emissions category being measured. This uptake slows the accumulation of carbon dioxide in the air, but it also changes carbonate chemistry. Dissolved gas reacts with water and forms carbonic acid. That weak acid releases hydrogen ions, so pH falls and carbonate ions become less abundant. The term "acidification" describes movement toward greater acidity; average surface seawater remains alkaline, with a pH above seven.
 
-The scale of the change is significant. Ocean surface pH has fallen from approximately 8.2 before industrialisation to around 8.1 today—a change that, because the pH scale is logarithmic, represents a twenty-six percent increase in hydrogen ion concentration and thus in acidity. If emissions continue on their current trajectory, models project that ocean pH could fall to 7.8 by the end of this century—a level lower than any experienced in the past twenty million years, and one that would have far-reaching consequences for marine ecosystems.
+The average change appears small only if the scale is misunderstood. Global surface pH is commonly described as falling from roughly 8.2 before industrialisation to about 8.1 today. Because pH is logarithmic, that shift corresponds to an increase of about twenty-six percent in hydrogen-ion concentration, according to a 2025 NOAA summary. A global mean also hides strong natural variation. Temperature, freshwater, biological activity and the upwelling of deeper water can alter coastal pH over hours or seasons. Scientists therefore use long records and multiple chemical measurements rather than interpreting one low reading as proof of a global trend.
 
-The organisms most directly threatened by acidification are those that build shells or skeletons from calcium carbonate, the mineral that dissolves in acidic conditions. Oysters, mussels, sea urchins, starfish, and certain species of plankton—including pteropods, tiny free-swimming snails that form a critical link in many marine food webs—are all highly sensitive to declining pH. Laboratory experiments have demonstrated that pteropods exposed to projected near-future pH levels show measurable dissolution of their shells within 45 days. Coral reefs, which are already under severe stress from warming, face the additional challenge of acidification reducing the availability of carbonate ions, slowing calcification rates and weakening reef structures.
+Carbonate ions are building material for calcium-carbonate minerals used by many corals, molluscs and plankton. Adding carbon dioxide reduces carbonate availability and can lower the saturation state of forms such as aragonite. Under undersaturated conditions, forming and maintaining a shell may require more energy, and exposed material can dissolve. Pteropods—small swimming snails that participate in marine food webs—are frequently studied because their aragonite shells are sensitive to carbonate chemistry. They are not a stand-in for every organism. Responses vary among species, populations, life stages and locations; some organisms can regulate internal chemistry or obtain enough food to offset part of the cost.
 
-The economic and social stakes are substantial. Marine fisheries provide the primary source of protein for more than one billion people worldwide, and many of the species most exposed to acidification—shellfish, crustaceans, and the small forage fish and zooplankton that underpin marine food webs—are critical both ecologically and commercially. The US shellfish industry alone, particularly on the Pacific Northwest coast, has already experienced significant impacts: oyster hatcheries in Oregon and Washington reported mass failures of oyster larvae beginning in 2005, which were subsequently linked to high-carbon seawater upwelling along the coast.
+Coral reefs face several simultaneous pressures. Warming can trigger bleaching, while acidification can slow calcification rates or alter the balance between reef growth and erosion. Pollution, disease and physical damage add further stress. A laboratory experiment can isolate one factor, but a reef experiences them together. Combined effects may be additive, smaller than expected or synergistic—greater than the separate effects would suggest. Predicting ecosystem change therefore requires experiments, field observations and models rather than extending one species' short-term response to the whole ocean.
 
-Understanding the interaction between acidification and other ocean stressors is an important area of ongoing research. Acidification does not act in isolation: it operates alongside warming, deoxygenation, and pollution in ways that are sometimes additive and sometimes synergistic, producing effects greater than any single stressor would generate alone. Some species and ecosystems show greater resilience than others. Seagrass beds and kelp forests, which absorb carbon dioxide through photosynthesis and can locally elevate pH in surrounding water, have been identified as potential refugia—areas where conditions remain more hospitable—and their conservation has taken on new importance in the context of acidification.
+The history of oyster hatcheries in the Pacific Northwest illustrates why attribution must be precise. In the mid-2000s, some facilities experienced severe larval production failures when corrosive, carbon-rich water entered their systems. The water was associated with coastal upwelling, a natural process that brings deeper water toward the surface, against a background in which human-caused carbon dioxide has increased the carbon content of the ocean. Monitoring and changes to intake timing and treatment helped hatcheries respond. The event is evidence of vulnerability to carbonate conditions, but it should not be reduced to the claim that global average pH alone caused every failure.
 
-Mitigation of ocean acidification at a global scale ultimately requires reducing carbon dioxide emissions, since the ocean's chemistry is directly coupled to atmospheric concentrations. Local interventions—adding alkaline substances to coastal waters, protecting and restoring coastal vegetation, and reducing other local stressors to improve ecosystem resilience—can provide some protection for particularly valuable sites but cannot address the global-scale change without emissions reduction. The scientific consensus is clear: ocean acidification is one of the most serious and least reversible consequences of unchecked carbon emissions, and the window for avoiding the worst outcomes is narrowing rapidly.`,
+Social effects depend on ecology and adaptation. Shellfish aquaculture can be exposed directly during sensitive larval stages. Wild fisheries may be affected through changes in prey, habitat, growth or distribution, yet outcomes differ by region and species. Communities with few alternative foods or livelihoods can be especially vulnerable. Economic estimates must state what they include: landed catch, aquaculture, tourism and the protective value of reefs are related but not interchangeable measures.
+
+Researchers have investigated whether vegetation can moderate conditions locally. Seagrasses and kelp take up carbon dioxide during photosynthesis and may raise surrounding pH for part of a daily cycle. This has led to interest in potential refugia—places where sensitive organisms encounter more favourable chemistry. A refuge is not guaranteed. Water movement, respiration at night, season, plant density and local emissions affect the result. Protecting coastal vegetation has independent ecological value, but it cannot be assumed to cancel the global chemical signal.
+
+Other local responses include reducing nutrient pollution and improving monitoring so hatcheries can avoid the most corrosive intake periods. Ocean alkalinity enhancement, in which alkaline material is added to increase carbon uptake or counter acidity, remains an area of active research; effectiveness, energy use, mining, ecological side effects and verification all require evaluation before large-scale deployment. Such measures may reduce risk in selected places. They do not replace cuts in carbon dioxide emissions, because atmospheric carbon dioxide drives the global change.
+
+The evidence is strongest for the chemical mechanism and the observed decline in open-ocean surface pH. Biological and social consequences contain more variation and uncertainty. That distinction is not a reason for inaction. It is a reason to separate what is measured, what is projected and what remains under study, while combining emissions reduction with locally appropriate adaptation.`,
       questions: [
         {
           type: 'formgroup',
@@ -388,14 +428,14 @@ Mitigation of ocean acidification at a global scale ultimately requires reducing
           part: 5,
           qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: The oceans have absorbed roughly thirty percent of all human-produced carbon dioxide since industrialisation.\n2. {{2}}: A drop in ocean pH from 8.2 to 8.1 represents a twenty-six percent increase in acidity.\n3. {{3}}: All species of marine plankton are equally sensitive to changes in ocean pH.\n4. {{4}}: Oyster hatcheries in the Pacific Northwest experienced failures that were linked to ocean acidification.\n5. {{5}}: Warming, deoxygenation, and acidification sometimes produce effects that are greater together than individually.\n6. {{6}}: Seagrass beds can locally raise pH levels by absorbing carbon dioxide.\n7. {{7}}: Adding alkaline substances to coastal waters can fully reverse global ocean acidification.`,
+          template: `1. {{1}}: The ocean absorbs about thirty percent of the carbon dioxide released into the atmosphere.\n2. {{2}}: Average surface seawater has become acidic, with a pH below seven.\n3. {{3}}: All shell-building organisms respond identically to changes in carbonate chemistry.\n4. {{4}}: Corrosive upwelled water was associated with serious larval-production failures at some Pacific Northwest hatcheries.\n5. {{5}}: The combined effect of ocean stressors is always greater than their separate effects.\n6. {{6}}: Every seagrass meadow provides a permanent refuge from acidification.\n7. {{7}}: Local interventions can replace reductions in carbon dioxide emissions.`,
           blanks: [
             { num: 1, answers: ['TRUE'] },
-            { num: 2, answers: ['TRUE'] },
+            { num: 2, answers: ['FALSE'] },
             { num: 3, answers: ['FALSE'] },
             { num: 4, answers: ['TRUE'] },
-            { num: 5, answers: ['TRUE'] },
-            { num: 6, answers: ['TRUE'] },
+            { num: 5, answers: ['FALSE'] },
+            { num: 6, answers: ['FALSE'] },
             { num: 7, answers: ['FALSE'] },
           ],
         },
@@ -405,11 +445,11 @@ Mitigation of ocean acidification at a global scale ultimately requires reducing
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. Dissolved carbon dioxide forms {{8}} when it reacts with seawater, lowering the ocean's pH.\n9. Tiny free-swimming snails called {{9}} are a critical link in many marine food webs and are highly vulnerable to acidification.\n10. Laboratory studies showed that pteropod shells begin to dissolve when exposed to near-future pH levels within {{10}} days.\n11. Acidification slows coral {{11}} rates by reducing the availability of carbonate ions.\n12. Areas where marine conditions remain more hospitable to sensitive species are known as potential {{12}}.\n13. Scientists agree that tackling ocean acidification fundamentally requires reducing {{13}} emissions.`,
+          template: `8. Dissolved carbon dioxide forms {{8}} when it reacts with seawater.\n9. Small swimming snails called {{9}} are often studied because their shells respond to carbonate chemistry.\n10. Acidification makes {{10}} less abundant in seawater.\n11. Acidification can slow coral {{11}} rates.\n12. Places with more favourable chemistry for sensitive organisms may act as potential {{12}}.\n13. Addressing the global chemical change requires cuts in {{13}} emissions.`,
           blanks: [
             { num: 8, answers: ['carbonic acid'] },
             { num: 9, answers: ['pteropods'] },
-            { num: 10, answers: ['45'] },
+            { num: 10, answers: ['carbonate ions'] },
             { num: 11, answers: ['calcification'] },
             { num: 12, answers: ['refugia'] },
             { num: 13, answers: ['carbon dioxide'] },
@@ -425,19 +465,19 @@ Mitigation of ocean acidification at a global scale ultimately requires reducing
       instructions: 'Read the passage and answer Questions 14–26.',
       passage: `A History of Cinema
 
-A. Cinema is one of the youngest art forms in human history, yet within little more than a century it has become the world's dominant popular entertainment, a major economic industry, and a powerful medium for shaping and reflecting culture. Its origins lie in the late nineteenth century, when a series of inventors—working simultaneously and competitively in France, Britain, Germany, and the United States—developed technologies for capturing and projecting moving images. The Lumière brothers, Auguste and Louis, are conventionally credited with the first public commercial film screening, held in Paris on 28 December 1895, in which short films depicting everyday scenes—workers leaving a factory, a train arriving at a station—astonished paying audiences.
+A. Cinema has no uncontested birthday. In the 1890s, inventors in several countries developed cameras, film mechanisms and viewing systems, sometimes showing motion inside a cabinet and sometimes projecting it for an audience. The Lumière brothers' ticketed programme in Paris on 28 December 1895 became a famous landmark, but it was not the first occasion on which a paying public saw projected moving pictures. In New York on 20 May 1895, an audience paid to see a boxing film projected by the Eidoloscope. Earlier demonstrations and peephole machines complicate the story further. It is more accurate to describe cinema as emerging from overlapping experiments than to award the invention to one person or event.
 
-B. The earliest films were silent and very short, often lasting less than a minute. As the medium developed through the 1900s and 1910s, filmmakers discovered techniques that are now the grammar of cinema: editing (cutting between shots to create narrative and meaning), close-ups (focusing on facial expression or detail to convey emotion), and cross-cutting (alternating between simultaneous actions in different locations to create tension). D. W. Griffith, the American director whose 1915 film The Birth of a Nation remains deeply controversial for its racist content, was nonetheless influential in systematising and demonstrating these techniques at epic length. His subsequent film Intolerance (1916) developed complex parallel narratives that influenced filmmakers for generations.
+B. Film form also developed collectively. Early actualities, trick films and fictional scenes led makers to arrange shots in increasingly complex sequences. A close-up could direct attention to a face or object; editing could omit time or connect separate spaces; and cross-cutting could alternate between events presented as simultaneous, often building tension as they approached a meeting point. D. W. Griffith used such devices on an ambitious scale, but did not invent the entire grammar of cinema. His The Birth of a Nation (1915) combined technical influence with racist representation and propaganda. A historical account that celebrates technique while treating the film's politics as a minor footnote misses how form and ideology worked together.
 
-C. The introduction of synchronised sound in the late 1920s transformed the industry almost overnight. The Jazz Singer (1927), produced by Warner Bros, is conventionally cited as the first "talkie," though it was partly silent. By 1930, virtually all Hollywood studios had converted entirely to sound production. The transition had significant social consequences: it created enormous demand for actors with suitable voices and dramatic training, ending the careers of some major silent stars while creating new opportunities for stage-trained performers. Sound also enabled the development of the musical as a distinct Hollywood genre, and dialogue gave writers a central creative role they had not previously held.
+C. Synchronised sound was another process rather than an overnight switch. Warner Bros released Don Juan with recorded music and effects in 1926. The Jazz Singer followed in 1927 with synchronised songs and passages of speech, while much of the film still used silent-era intertitles. Competing sound-on-disc and sound-on-film systems required cinemas and studios to invest in equipment, and silent production continued in some countries into the 1930s. Sound changed performance and employment: microphone technique, language and voice mattered, stage performers gained opportunities and some silent stars struggled. Yet the popular story that accents abruptly ended most silent careers is too simple; contracts, age, changing tastes and individual choices also shaped outcomes.
 
-D. Hollywood consolidated its dominance of global cinema in the 1930s and 1940s through a "studio system" in which major studios controlled every aspect of production and distribution—writing, directing, casting, releasing, and exhibiting films through their own chains of theatres. Stars and directors worked under long-term exclusive contracts, giving studios extraordinary control over creative and financial resources. This system produced the "Golden Age" of Hollywood, characterised by the refinement of genre conventions—the Western, the gangster film, the screwball comedy, the musical—and by the luminous star personas of figures such as Cary Grant, Katharine Hepburn, and Humphrey Bogart.
+D. During the classical Hollywood period, several major companies operated a vertically integrated studio system. They financed and produced films, distributed them and owned or controlled important theatre chains. Long-term contracts organised the work of actors, directors and technicians, while departments developed recognisable house styles. This structure did not mean one executive personally controlled every creative decision, nor did all companies operate identically. It did give the largest firms substantial influence over which films reached audiences. In the United States, the 1948 Supreme Court decision in the Paramount case required major changes to distribution practices and theatre ownership, contributing to the decline of the old integrated system.
 
-E. The postwar period brought significant challenges to Hollywood dominance. Television drew audiences away from cinemas, and European cinema—particularly Italian neorealism and the French New Wave—produced films of artistic ambition and formal innovation that contrasted sharply with the polished genre entertainment of the studio system. Directors such as Vittorio De Sica, Federico Fellini, Jean-Luc Godard, and François Truffaut rejected studio conventions, shooting on location with non-professional actors and expressing personal, idiosyncratic visions. This "auteur" tradition—in which the director's personal style is seen as the defining element of a film—became enormously influential, shaping both critical discourse and a generation of American filmmakers.
+E. Post-war European movements challenged polished studio convention in different ways. Italian neorealist films often used locations, available light and stories about everyday hardship; some employed non-professional performers, although not exclusively. The later French New Wave experimented with editing, handheld cameras and self-conscious references to film history. French critics also developed the auteur idea, treating a director's recurring choices as a creative signature visible even within commercial production. Neorealism and auteur theory should not be collapsed into one method. Together with work from Japan and elsewhere, however, these currents broadened critical discussion and influenced younger American directors.
 
-F. The blockbuster era, initiated by the enormous commercial success of Jaws (1975) and Star Wars (1977), reorganised Hollywood around large-budget, wide-release "event" films with massive marketing campaigns. Studios became more risk-averse, concentrating investment on films with established intellectual property, franchise potential, and global market appeal. The rise of home video in the 1980s and streaming services in the twenty-first century further transformed distribution models, while digital technology revolutionised both production—replacing celluloid with digital image capture—and visual effects, enabling the spectacle of contemporary superhero and science fiction films.
+F. Jaws (1975) and Star Wars (1977) demonstrated the commercial potential of heavily promoted films released to large audiences and supported by merchandise or sequels. Their success helped make the blockbuster a central Hollywood strategy, but smaller films did not vanish and high budgets were never a guarantee of profit. Home video later created another market after theatrical release. Digital cameras, editing and visual effects changed production, while streaming altered how viewers find and watch films. Each shift changed the balance among studios, cinemas, creators and technology companies rather than replacing every older form at once.
 
-G. Cinema's global landscape today is far more diverse than at any previous point in its history. Bollywood—the Hindi-language film industry based in Mumbai—produces more films annually than Hollywood and reaches a global audience of billions. South Korean cinema achieved remarkable international recognition with Bong Joon-ho's Parasite winning the Academy Award for Best Picture in 2020—the first non-English-language film to do so. Chinese, Nigerian, and Brazilian cinemas are significant and growing industries. The globalisation of distribution through streaming platforms has simultaneously made world cinema more accessible to global audiences and raised concerns about the dominance of US-produced content in recommendation algorithms.`,
+G. The word "global" should not be used as another synonym for Hollywood. India contains several language-based industries, including Hindi-language production popularly labelled Bollywood; Nigeria, China, South Korea, Brazil and many other countries sustain distinct production cultures. Output totals are difficult to compare because sources count films, languages and release categories differently. International recognition can nevertheless mark a change in circulation. In 2020, Bong Joon-ho's Parasite became the first non-English-language film to win the Academy Award for Best Picture. Streaming services can make subtitled films available in territories where theatrical distribution was limited, while catalogues, licensing and recommendation systems still shape which works viewers actually encounter. Cinema's history remains one of unequal but multidirectional exchange.`,
       questions: [
         {
           type: 'matching',
@@ -471,9 +511,9 @@ G. Cinema's global landscape today is far more diverse than at any previous poin
           qRange: [21, 26],
           groupLabel: 'Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
           title: 'The History of Cinema',
-          template: `The first public commercial film screening took place in Paris in 1895, organised by the {{21}} brothers. Early filmmakers developed key techniques including {{22}}, which alternates between simultaneous events to create tension. The introduction of {{23}} sound in the late 1920s transformed the industry, creating demand for actors with stage training. During the 1930s and 1940s, Hollywood studios operated under a {{24}} that controlled all aspects of production and distribution. Post-war European cinema, particularly the {{25}} tradition, emphasised the director's personal vision over genre conventions. In 2020, Bong Joon-ho's Parasite became the first non-English-language film to win the {{26}} for Best Picture.`,
+          template: `A paying New York audience saw projected moving pictures from the {{21}} before the famous Lumière programme in Paris. Early filmmakers developed techniques including {{22}}, which alternates between simultaneous events. The arrival of {{23}} sound involved competing systems and gradual conversion. Major Hollywood companies operated a vertically integrated {{24}}. French critics developed the {{25}} idea, which treated a director's recurring choices as a creative signature. In 2020, Parasite became the first non-English-language film to win the {{26}} for Best Picture.`,
           blanks: [
-            { num: 21, answers: ['Lumière'] },
+            { num: 21, answers: ['Eidoloscope'] },
             { num: 22, answers: ['cross-cutting'] },
             { num: 23, answers: ['synchronised'] },
             { num: 24, answers: ['studio system'] },
@@ -491,17 +531,21 @@ G. Cinema's global landscape today is far more diverse than at any previous poin
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `Behavioural Economics
 
-For most of the twentieth century, the dominant model in economics was that of the rational actor: an individual who consistently pursues their own interests, makes decisions based on complete and accurate information, and maximises utility—broadly, their own wellbeing—in every choice they make. This model, known as homo economicus, provided economists with a tractable framework for building mathematical models of markets and predicting aggregate economic outcomes. Its drawback was that real human beings behave in ways that the model cannot explain.
+Economic models simplify. One influential benchmark represents people as having coherent preferences and choosing the available option that best advances those preferences under stated constraints. This rational actor is sometimes nicknamed homo economicus. The label does not mean that every economic model assumes perfect information or crude selfishness, and rationality is not a claim that a person calculates every choice consciously. A simplified agent can help analysts derive clear predictions about markets. The difficulty arises when the benchmark is treated as a complete description rather than one model whose assumptions and predictions must be tested.
 
-Behavioural economics emerged from the intersection of psychology and economics, drawing on evidence from laboratory experiments, field studies, and neuroscience to document the systematic ways in which human decision-making departs from rational actor predictions. Its intellectual origins lie primarily in the work of Daniel Kahneman and Amos Tversky in the 1970s and 1980s, and it was brought to mainstream economic and policy attention by Richard Thaler and Cass Sunstein's 2008 book Nudge. Kahneman received the Nobel Memorial Prize in Economic Sciences in 2002, and Thaler in 2017—notable achievements for work rooted in psychology rather than traditional economic modelling.
+Behavioural economics examines how evidence from psychology and related fields can improve economic explanation. Its history reaches beyond one group, but the collaboration of psychologists Daniel Kahneman and Amos Tversky was especially influential in the study of judgement and decisions under uncertainty. In 2002, the economics prize recognised Kahneman for integrating psychological research into economic science; Tversky had died in 1996 and the prize is not awarded posthumously. Richard Thaler's work later connected limited rationality, fairness and self-control to individual choices and market outcomes, earning the 2017 prize. These awards did not establish that standard economics was false. They recognised the value of revising specific assumptions when behaviour departs systematically from a prediction.
 
-One of the field's central contributions is prospect theory, developed by Kahneman and Tversky as an empirically grounded alternative to expected utility theory—the standard economic model of decision-making under risk. Expected utility theory predicts that people evaluate outcomes in terms of their final states of wealth. Prospect theory found instead that people evaluate outcomes in terms of gains and losses relative to a reference point, and that losses are psychologically more powerful than equivalent gains—a phenomenon called loss aversion. Experiments consistently show that the pain of losing a sum of money is approximately twice as intense as the pleasure of gaining the same amount, which explains a range of puzzling behaviours: why investors hold losing stocks too long, why homeowners resist selling at a loss, and why employees prefer salary cuts to layoffs when the objective outcome may be comparable.
+Prospect theory was developed as an alternative account for certain decisions under risk. In a standard expected utility theory representation, evaluation concerns possible final outcomes and their probabilities. Prospect theory instead describes people as responding to gains and losses relative to a reference point, with sensitivity changing as outcomes move farther from that point. Loss aversion means that, in the relevant comparison, a loss receives greater weight than an equal-sized gain. A coefficient close to two appears in some influential estimates, but it is not a universal psychological constant. The reference point, task, stakes, experience and method can change measured behaviour, so the slogan that every loss "hurts twice as much" overstates the evidence.
 
-Present bias—the tendency to disproportionately prefer immediate rewards over future ones, even when future rewards are objectively larger—is another well-documented departure from rational actor predictions. Classical economic models assume that people discount future outcomes at a consistent rate; behavioural research shows that the rate of discounting is much steeper for the near-term future than for the more distant future. This "hyperbolic discounting" explains why people repeatedly fail to save adequately for retirement despite knowing they should, and why they choose the larger slice of cake today knowing they intended to diet. Present bias underlies much of the evidence on self-control failure, which is recognised as one of the most important and costly failures in individual decision-making.
+Time creates another challenge. Present bias is the tendency to give disproportionate weight to an immediate payoff when comparing it with a later one. A person may prefer a reward today to a larger reward next month, while also saying that, viewed from a year in advance, waiting the extra month would be worthwhile. Hyperbolic discounting is one mathematical pattern that can generate declining impatience across horizons, but the two terms are not interchangeable definitions of every delayed choice. Liquidity, uncertainty, trust and genuine changes in circumstances may also explain why someone selects the earlier option. Present bias can illuminate self-control problems; it is not the main cause of all financial difficulty.
 
-The policy application of behavioural economics is "nudging"—designing the architecture of choice to encourage people toward decisions that are better for their long-term interests without restricting their freedom to choose otherwise. Classic nudge interventions include: defaulting employees into pension savings plans (with the option to opt out), placing fruit and healthy food at eye level in canteens, requiring people to actively opt out of organ donation rather than opt in, and sending personalised energy use reports that compare a household's consumption to similar neighbours. These interventions have been shown in large-scale trials to produce meaningful changes in behaviour at low cost and without coercion—though critics have questioned whether they can produce lasting change or whether they merely shift behaviour temporarily.
+Policy interest often focuses on choice architecture: the environment in which options are presented. Nudging changes that architecture in a predictable way without forbidding options or substantially changing economic incentives, and the intervention should remain easy to avoid. Automatic enrolment in a workplace pension with a clear opt-out is a common example. Simplifying a form, changing the order of information or providing timely feedback may also qualify. A default is not neutral merely because one option had to be preselected, but this fact does not remove the need to justify which default serves citizens and how easily they can reject it.
 
-Behavioural economics has also attracted substantive criticism. Some economists argue that the field has overstated the irrationality of human decision-making: in natural settings, where people have experience, feedback, and stakes in outcomes, behaviour often approaches rationality more closely than laboratory experiments suggest. Others argue that nudges are paternalistic—that it is inappropriate for governments to exploit psychological weaknesses to manipulate behaviour, even toward ostensibly beneficial ends, without explicit consent. The political valence of the critique is mixed: conservatives object to government manipulation of choice; some progressives worry that nudges are a substitute for structural reforms that would address the underlying social and economic determinants of poor outcomes. Despite these critiques, behavioural economics has become a well-established influence on policy in dozens of countries, with dedicated behavioural insights teams operating in governments from the United Kingdom to Singapore.`,
+Evidence has to be evaluated intervention by intervention. A result in one organisation may depend on administrative systems, baseline participation and the population affected. Average effects can hide groups that do not benefit or experience a burden. Replication, pre-specified outcomes, comparison groups and monitoring of long-term and side effects are therefore important. Some behavioural interventions are inexpensive and effective; others have small, temporary or null effects. It is false that every nudge produces meaningful change at low cost. Behavioural insights can also improve diagnosis even when the eventual policy is a regulation, service redesign or financial investment rather than a nudge.
+
+Ethics is part of effectiveness, not an optional appendix. Public officials intentionally trying to change behaviour must consider autonomy, transparency, consent, privacy, distribution and accountability. A transparent reminder that is easy to ignore differs from a hidden design that exploits attention or makes cancellation difficult. Public approval alone does not make an intervention ethical, and a beneficial average cannot excuse avoidable harm to a subgroup. Data collection and experimentation introduce further duties concerning purpose, security and withdrawal.
+
+Critics approach the field from different directions. Some argue that laboratory tasks exaggerate departures from rationality because people use useful rules in familiar settings. Others object to paternalism or manipulation. A further criticism is political: attention to individual decisions can make nudges a substitute for structural reforms addressing income, housing, market power or access to services. These positions are not all conservative, nor do they imply that behavioural research has no value. The strongest response is modest and empirical: define the problem, compare behavioural and non-behavioural tools, test likely effects, disclose the mechanism and remain willing to stop an intervention that fails.`,
       questions: [
         {
           type: 'mcq',
@@ -523,7 +567,7 @@ Behavioural economics has also attracted substantive criticism. Some economists 
           text: 'What does "loss aversion" mean, according to the passage?',
           options: [
             'The tendency to avoid all financial risk, even when expected returns are positive.',
-            'The psychological experience in which losses feel roughly twice as painful as equivalent gains feel pleasurable.',
+            'The tendency to give a loss greater weight than an equal-sized gain in the relevant comparison.',
             'The preference for certain outcomes over uncertain ones, regardless of expected value.',
             'The tendency to overestimate the probability of rare but catastrophic financial losses.',
           ],
@@ -561,13 +605,13 @@ Behavioural economics has also attracted substantive criticism. Some economists 
           part: 7,
           qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: The rational actor model was considered useful by economists even though it did not perfectly describe real behaviour.\n32. {{32}}: Daniel Kahneman was awarded the Nobel Prize in Economic Sciences despite working primarily as a psychologist.\n33. {{33}}: Prospect theory predicts that people evaluate outcomes in terms of their total accumulated wealth.\n34. {{34}}: Present bias has been shown to be the main cause of all forms of financial irresponsibility.\n35. {{35}}: Nudge interventions have been demonstrated to produce meaningful behavioural change at relatively low cost.\n36. {{36}}: The author concludes that all critics of behavioural economics are motivated by conservative political beliefs.`,
+          template: `31. {{31}}: The rational actor can be a useful analytical benchmark without being a complete description of behaviour.\n32. {{32}}: Kahneman's 2002 prize recognised the integration of psychological research into economic science.\n33. {{33}}: Prospect theory describes choices only in terms of final accumulated wealth.\n34. {{34}}: Present bias is the main cause of every type of financial difficulty.\n35. {{35}}: Every nudge produces meaningful behavioural change at low cost.\n36. {{36}}: All criticism of behavioural economics comes from conservative opposition to government action.`,
           blanks: [
             { num: 31, answers: ['YES'] },
             { num: 32, answers: ['YES'] },
             { num: 33, answers: ['NO'] },
-            { num: 34, answers: ['NOT GIVEN'] },
-            { num: 35, answers: ['YES'] },
+            { num: 34, answers: ['NO'] },
+            { num: 35, answers: ['NO'] },
             { num: 36, answers: ['NO'] },
           ],
         },
@@ -600,8 +644,8 @@ Behavioural economics has also attracted substantive criticism. Some economists 
           part: 8,
           taskNumber: 1,
           imageUrl: '/assets/ielts/charts/set17-task1.svg',
-          imageAlt: 'Bar chart comparing life expectancy at birth by world region in 1990 and 2022',
-          stimulus: 'The bar chart below shows life expectancy at birth (in years) for five world regions in 1990 and 2022.',
+          imageAlt: 'Grouped bar chart of life expectancy in 1990 and 2022: East Asia and Pacific 68.3 and 76.7 years; Europe and Central Asia 72.2 and 77.8; Latin America and Caribbean 67.5 and 74.6; North America 75.4 and 77.8; Sub-Saharan Africa 50.0 and 61.9',
+          stimulus: 'The bar chart below compares life expectancy at birth, measured in years, in five World Bank regions in 1990 and 2022.',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
@@ -619,8 +663,8 @@ Behavioural economics has also attracted substantive criticism. Some economists 
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'Governments are increasingly using insights from psychology and behavioural science to influence citizens\' decisions—for example, by changing how choices are presented or setting certain options as defaults.',
-          text: 'Is this an acceptable approach, or does it raise ethical concerns? Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
+          stimulus: 'Some people believe governments should use behavioural insights, such as reminders and default options, to help citizens make beneficial choices. Others believe this influence threatens individual autonomy.',
+          text: 'Discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
           minWords: 250,
         },
       ],
@@ -637,12 +681,16 @@ Behavioural economics has also attracted substantive criticism. Some economists 
           id: 'sp1',
           part: 10,
           partNumber: 1,
-          text: 'Part 1 — Personal questions about money and financial decisions',
+          text: 'Part 1 — Saving and spending money',
           followUp: [
-            'Are you generally good at saving money? Why or why not?',
-            'Do you prefer to plan your spending carefully or spend more spontaneously?',
-            'Has anyone ever given you useful financial advice? What was it?',
-            'Do you think people in your country are generally good at managing money?',
+            'Did you save money when you were a child?',
+            'What kinds of things do you usually save money for?',
+            'Do you prefer to pay with cash or by card?',
+            'Do you make a list before you go shopping?',
+            'Is it easy for you to avoid buying things you do not need?',
+            'Have you ever received useful advice about money?',
+            'Do you compare prices before making a large purchase?',
+            'Would you like to change any of your spending habits?',
           ],
         },
         {
@@ -660,10 +708,12 @@ Behavioural economics has also attracted substantive criticism. Some economists 
           partNumber: 3,
           text: 'Part 3 — Discussion: The oceans, environment, and human behaviour',
           followUp: [
-            'How aware do you think most people are of environmental problems like ocean acidification?',
-            'Do you think people naturally make good decisions about the environment, or do they need to be encouraged?',
-            'What is more effective in changing environmental behaviour — government regulations or individual choice?',
-            'Should entertainment media like film and television be used to promote environmental messages?',
+            'Why are some environmental problems harder for the public to understand than others?',
+            'How can governments encourage environmental action without hiding how choices are being influenced?',
+            'When are regulations more effective than voluntary changes in behaviour?',
+            'Should films and television programmes try to change public attitudes about environmental issues?',
+            'How can scientists communicate uncertainty without making a problem seem unimportant?',
+            'Who should pay for protecting communities whose livelihoods depend on marine ecosystems?',
           ],
         },
       ],

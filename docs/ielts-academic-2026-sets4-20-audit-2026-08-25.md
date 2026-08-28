@@ -190,6 +190,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   con IRENA, IEA, WHO, UNICEF y World Bank. La gráfica de capacidad renovable usa dos
   años IRENA consistentes y pasó QA visual y accesible; el Task 2 de inversión pública en
   eficiencia frente a nueva generación es original. Sólo queda diferido su audio.
+- El Set 17 superó 250 controles Golden. Listening conserva sus cuatro escenarios y
+  corrige causalidad, ética y seguridad del estudio deportivo, además del origen asiático
+  de la imprenta. Reading actualiza acidificación con NOAA/IPCC, la historia del cine con
+  BFI/Oscars y economía conductual con Nobel/OECD. La gráfica de esperanza de vida usa
+  la API oficial del World Bank, pasó QA visual y accesible; el Task 2 sobre autonomía y
+  política conductual es original. Sólo queda diferido su audio.
 
 ## Auditoría final no-audio
 
