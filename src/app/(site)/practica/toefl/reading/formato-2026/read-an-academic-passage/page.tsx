@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle2, FileText, SearchCheck } from 'lucide-react';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import ReadingSet1Practice from '@/components/toefl/ReadingSet1Practice';
 import {
   PRACTICE_BASE_URL,
@@ -40,7 +40,6 @@ export default function Page() {
         teaches={ROUTE.teaches}
         isPartOf={{ name: 'TOEFL Reading formato actual', url: `${PRACTICE_BASE_URL}/practica/toefl/reading/formato-2026` }}
       />
-      <FaqJsonLd faqs={ROUTE.faqs} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
