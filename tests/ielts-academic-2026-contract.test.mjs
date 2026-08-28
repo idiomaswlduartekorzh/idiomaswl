@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import test from 'node:test';
+import set1 from '../src/data/mocks/ielts-set-1.ts';
 import set4 from '../src/data/mocks/ielts-set-4.ts';
 import set5 from '../src/data/mocks/ielts-set-5.ts';
 import set13 from '../src/data/mocks/ielts-set-13.ts';
@@ -76,7 +77,8 @@ test('Sets 4–20 receive the explicit computer-delivered IELTS Academic 2026 co
 
 test('all 20 sets have an explicit editorial certification state', () => {
   assert.deepEqual(Object.keys(IELTS_EDITORIAL_STATUS_2026).map(Number), Array.from({ length: 20 }, (_, index) => index + 1));
-  assert.equal(IELTS_EDITORIAL_STATUS_2026[1].certification, 'blocked-known-source-match');
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[1].certification, 'certified-golden-content');
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[1].provenance, 'audited-original-welearn');
   assert.equal(IELTS_EDITORIAL_STATUS_2026[4].contentCertified, true);
   assert.equal(IELTS_EDITORIAL_STATUS_2026[5].certification, 'certified-golden-content');
   for (let setNumber = 6; setNumber <= 20; setNumber += 1) {
@@ -91,6 +93,10 @@ test('the Server Component projection removes every objective answer key', () =>
 });
 
 test('sets whose integral Listening media is absent are visibly blocked, not silently broken', () => {
+  const replacedSet = withIeltsAcademic2026Blueprint(set1);
+  assert.equal(replacedSet.ieltsAcademic2026Blueprint.listeningMediaStatus, 'script-ready-audio-blocked');
+  assert.ok(replacedSet.sections.filter(section => section.skill === 'listening').every(section => section.comingSoon && !section.audioUrl));
+
   const mock = withIeltsAcademic2026Blueprint(set13);
   assert.equal(mock.ieltsAcademic2026Blueprint.listeningMediaStatus, 'script-ready-audio-blocked');
   const listening = mock.sections.filter(section => section.skill === 'listening');

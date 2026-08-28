@@ -67,7 +67,7 @@ export const EXAMS: Record<string, Exam> = {
       { name: 'Speaking', icon: '🎙️', time: '11–14 min', questions: 3, color: '#c8202e', types: ['Parte 1: preguntas personales', 'Parte 2: monólogo con ficha', 'Parte 3: discusión abstracta'] },
     ],
     mocks: [
-      { id: 'set-1',  title: 'IELTS Academic Set 1',  subtitle: 'Car Tours · Leisure Club · Design Competition · Spirit Bear', free: true,  parts: 4, questions: 80 },
+      { id: 'set-1',  title: 'IELTS Academic Set 1',  subtitle: 'Seed Banks · Low-carbon Concrete · Citizen Science', free: true,  parts: 4, questions: 80 },
       { id: 'set-2',  title: 'IELTS Academic Set 2',  subtitle: 'Listening + Reading + Writing + Speaking',                   free: true,  parts: 4, questions: 80 },
       { id: 'set-3',  title: 'IELTS Academic Set 3',  subtitle: 'Listening + Reading + Writing + Speaking',                   free: true,  parts: 4, questions: 80 },
       { id: 'set-4',  title: 'IELTS Academic Set 4',  subtitle: 'Listening + Reading + Writing + Speaking',                   free: true,  parts: 4, questions: 80 },

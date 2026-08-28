@@ -18,10 +18,10 @@ export const IELTS_EDITORIAL_STATUS_2026: Readonly<Record<number, IeltsEditorial
     const set = index + 1;
     if (set === 1) return [set, {
       set,
-      certification: 'blocked-known-source-match',
-      contentCertified: false,
-      provenance: 'blocked-known-third-party-match',
-      evidence: 'Reading titles and passages match a known published IELTS preparation paper; replacement is required.',
+      certification: 'certified-golden-content',
+      contentCertified: true,
+      provenance: 'audited-original-welearn',
+      evidence: 'All inherited L/R/W/S material was replaced; Golden content audit passed 270 checks on 2026-08-28. Final audio remains deferred.',
     }];
     if (set === 2 || set === 3) return [set, {
       set,

@@ -4,7 +4,7 @@ const mock: MockExam = {
   id: 'set-1',
   examSlug: 'ielts',
   title: 'IELTS Academic Set 1',
-  subtitle: 'Bakelite · What\'s so funny? · Scientific English',
+  subtitle: 'Seed Banks · Low-carbon Concrete · Citizen Science',
   timeMinutes: 164,
   sections: [
 
@@ -14,65 +14,71 @@ const mock: MockExam = {
       part: 1,
       skill: 'listening',
       audioUrl: '/audio/ielts/ielts-listening-set-1.mp3',
-      title: 'Listening — Section 1: Car Tours',
-      instructions: 'You will hear a conversation between a tourist and a car tour booking agent. Listen and answer Questions 1–10.',
-      transcript: `AGENT: Good morning, Island Car Tours. How can I help you?
+      title: 'Listening — Section 1: Weekend Pottery Courses',
+      instructions: 'You will hear a caller asking about weekend pottery courses. Listen and answer Questions 1–10.',
+      transcript: `COORDINATOR: Good morning, Northbank Pottery Centre. Daniel speaking. How can I help?
 
-CUSTOMER: Oh, hello. I saw your advert in the local paper, and I'm interested in booking one of your self-drive tours of the area.
+CALLER: Hello. I’m hoping to book one of your weekend courses. My colleague Priya came last month and recommended it.
 
-AGENT: Certainly. Can I take your name?
+COORDINATOR: Lovely. I’ll take a few details first. What’s your name?
 
-CUSTOMER: Yes, it's Andrea Brown.
+CALLER: Helena Walsh.
 
-AGENT: Thank you, Ms Brown. And can I take your address?
+COORDINATOR: Could you spell the surname, please?
 
-CUSTOMER: 24 Poppyfield Road.
+CALLER: W-A-L-S-H.
 
-AGENT: Is that Poppyfield — P-O-P-P-Y-F-I-E-L-D?
+COORDINATOR: Thank you. And what do you do, Helena? We ask because some courses qualify for professional training.
 
-CUSTOMER: That's right.
+CALLER: I’m an architect. Well, I’ve just finished studying, but I started work as an architect on Monday.
 
-AGENT: And your postcode?
+COORDINATOR: Congratulations. Have you worked with clay before?
 
-CUSTOMER: BH5 2OP.
+CALLER: Only at school, and that was years ago. I wouldn’t call myself intermediate, so please put me down as a beginner.
 
-AGENT: OK. And a phone number?
+COORDINATOR: That makes sense. We provide all the tools, but participants need clothes that can get dirty.
 
-CUSTOMER: My mobile is 077 8664 3091.
+CALLER: Should I bring gloves?
 
-AGENT: Thank you. Can I ask how you heard about us?
+COORDINATOR: They make it harder to feel the clay. An old shirt is fine, although an apron is much more practical.
 
-CUSTOMER: I found you on the internet, actually. I was searching for car hire in the area.
+CALLER: I’ve got one, so I’ll bring an apron.
 
-AGENT: Great. Now, we have two self-drive tours currently available. Would you like me to describe them?
+COORDINATOR: Good. How will you travel here? There’s a small car park, but it fills early.
 
-CUSTOMER: Yes please. I'm travelling with my two children.
+CALLER: I was going to drive. Actually, the number 18 bus stops outside my flat and near the centre, doesn’t it?
 
-AGENT: Trip One takes twelve days and covers Los Angeles, Yosemite Park and the coast. In LA, many families like to visit the national parks with children — there's a lot to do.
+COORDINATOR: Yes, every twenty minutes on Saturdays.
 
-CUSTOMER: That sounds good. We'd definitely want to do that.
+CALLER: Then I’ll take the bus. I won’t have to find parking.
 
-AGENT: And in Yosemite, would you want to stay in a lodge or would you be happy camping?
+COORDINATOR: Now, would you prefer the morning session, from nine until twelve, or the evening one, from five until eight?
 
-CUSTOMER: Oh, definitely a lodge. We wouldn't want to sleep in a tent.
+CALLER: Morning would normally be better, but I’m helping at a charity sale until lunchtime that Saturday. I’ll need the evening session.
 
-AGENT: Noted. Trip Two is nine days and goes along the coast to Cambria via Santa Monica and San Diego.
+COORDINATOR: Fine. We have two suitable courses. The first is Introduction to Hand Building. It lasts one day and costs ninety pounds. Clay and firing are included, though you bring your own lunch.
 
-CUSTOMER: I remember reading about Cambria. What's the route like?
+CALLER: What would we make?
 
-AGENT: You'd get to see the wildlife on the way there — it's really spectacular. And at Santa Monica there's a lot of shopping, if that interests you.
+COORDINATOR: Usually a small bowl and a tile. It’s designed for complete beginners, and the group is limited to eight people.
 
-CUSTOMER: Not particularly, no.
+CALLER: That sounds manageable. What’s the other option?
 
-AGENT: That's fine. And at San Diego, most visitors spend time on the beach — it's beautiful.
+COORDINATOR: Wheel Skills is spread over two Saturdays. It was advertised at one hundred and fifty pounds, but the current price is £135. You’ll practise centring clay and throwing a cylinder. All materials are supplied and lunch is included on both days.
 
-CUSTOMER: That does sound lovely.
+CALLER: Is it suitable for someone with so little experience?
 
-AGENT: Now let me give you some details on pricing. Trip One: twelve days, 1,260 kilometres, £525 per person. That includes accommodation and car hire, and also one meal per day.
+COORDINATOR: Yes. The tutor demonstrates each stage slowly. Hand Building is calmer, but Wheel Skills gives you more supervised practice.
 
-CUSTOMER: And Trip Two?
+CALLER: I’d rather attend twice and have time to improve. Does the Wheel Skills fee include glazing as well as clay?
 
-AGENT: Nine days, 980 kilometres, £685 per person. That includes accommodation, car hire, and a map of the area.`,
+COORDINATOR: Clay, glaze and firing are all covered. You’ll collect the finished pieces about three weeks later.
+
+CALLER: Great. Can I reserve a place on Wheel Skills?
+
+COORDINATOR: Certainly. I’ll email a payment link. The booking is held for forty-eight hours, and we’ll send directions once payment is received.
+
+CALLER: Perfect. Thank you.`,
       questions: [
         {
           type: 'formgroup',
@@ -80,30 +86,26 @@ AGENT: Nine days, 980 kilometres, £685 per person. That includes accommodation,
           part: 1,
           qRange: [1, 6],
           groupLabel: 'Complete the notes below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
-          title: 'Car Tours in the USA',
-          example: 'Name:  Andrea Brown',
-          template: `Address: 24 {{1}} Road
-Postcode: BH5 2OP
-Phone: (mobile) 077 8664 3091
+          title: 'Northbank Pottery Centre — booking form',
+          example: 'First name: Helena',
+          template: `Surname: {{1}}
 
-Heard about company from: {{2}}
+Occupation: {{2}}
 
-Possible self-drive tours
-Trip One:
-• Los Angeles: customer wants to visit some {{3}} parks with her children
-• Yosemite Park: customer wants to stay in a lodge, not a {{4}}
+Experience level: {{3}}
 
-Trip Two:
-• Customer wants to see the {{5}} on the way to Cambria
-• At Santa Monica: not interested in shopping
-• At San Diego, wants to spend time on the {{6}}`,
+Item to bring: an {{4}}
+
+Transport to the centre: {{5}}
+
+Preferred session: {{6}}`,
           blanks: [
-            { num: 1, answers: ['Poppyfield', 'poppyfield'], maxWords: 1 },
-            { num: 2, answers: ['internet', 'Internet', 'web', 'website'], maxWords: 1 },
-            { num: 3, answers: ['national'], maxWords: 1 },
-            { num: 4, answers: ['tent'], maxWords: 1 },
-            { num: 5, answers: ['wildlife'], maxWords: 1 },
-            { num: 6, answers: ['beach'], maxWords: 1 },
+            { num: 1, answers: ['Walsh'], maxWords: 1 },
+            { num: 2, answers: ['architect'], maxWords: 1 },
+            { num: 3, answers: ['beginner'], maxWords: 1 },
+            { num: 4, answers: ['apron'], maxWords: 1 },
+            { num: 5, answers: ['bus'], maxWords: 1 },
+            { num: 6, answers: ['evening'], maxWords: 1 },
           ],
         },
         {
@@ -112,21 +114,19 @@ Trip Two:
           part: 1,
           qRange: [7, 10],
           groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
-          headers: ['Trip', 'Number of days', 'Total distance', 'Price per person', 'Includes'],
+          headers: ['Course', 'Length', 'Current price', 'Included'],
           rows: [
             [
-              'Trip One',
-              '12 days',
-              { num: 7, answers: ['1260', '1,260'], maxWords: 1 },
-              '£525',
-              { num: 8, answers: ['meal', 'meals'], maxWords: 1 },
+              'Introduction to Hand Building',
+              { num: 7, answers: ['one day', '1 day'], maxWords: 2 },
+              '£90',
+              { num: 8, answers: ['clay', 'clay and firing'], maxWords: 3 },
             ],
             [
-              'Trip Two',
-              '9 days',
-              '980 km',
-              { num: 9, answers: ['685', '£685'], maxWords: 1 },
-              { num: 10, answers: ['map'], maxWords: 1 },
+              'Wheel Skills',
+              'two Saturdays',
+              { num: 9, answers: ['135', '£135'], maxWords: 1 },
+              { num: 10, answers: ['lunch'], maxWords: 1 },
             ],
           ],
         },
@@ -137,31 +137,41 @@ Trip Two:
       part: 2,
       skill: 'listening',
       audioUrl: '/audio/ielts/ielts-listening-set-1.mp3',
-      title: 'Listening — Section 2: Westfield Leisure Club',
-      instructions: 'You will hear a talk about joining a leisure club. Listen and answer Questions 11–20.',
-      transcript: `Good morning everyone, and welcome to Westfield Leisure Club's open day. I'm delighted to see so many of you here. As you know, we've been making some significant improvements to the club recently, and I'd like to tell you a little about those, as well as explaining what membership involves.
+      title: 'Listening — Section 2: Harbour Repair Hub',
+      instructions: 'You will hear an organiser introducing a community repair workshop. Listen and answer Questions 11–20.',
+      transcript: `Good afternoon, everyone, and welcome to the Harbour Repair Hub. Before we tour the building, I’d like to explain what has changed and how you can use the workshop safely.
 
-First of all, our recent improvements. Over the past year, we've renovated our gym, which now has the very latest equipment. We also replaced the old outdoor pool with a brand-new heated pool — it's much larger than the previous one and very popular already. The indoor pool remains open throughout the winter, as always. We've also added a new children's activity area, though our sports training for children hasn't changed — we're still offering the same excellent programmes. And the running and cycling tracks are exactly as they were.
+The hub began six years ago in a single room where volunteers repaired household items once a month. We now open five days a week. The sewing room near reception is unchanged, although we replaced three of its older machines last year. The bicycle bay still occupies the covered yard, and the wood workshop has simply been repainted. Our major work has been elsewhere. The tool library has moved into a larger room, so members can now borrow equipment without blocking the entrance. We have also rebuilt the electronics bench. It has better lighting, extraction fans and lockable storage for delicate components. Those are the two facilities completed this spring.
 
-Now, regarding membership itself. When you join, every new member has a personal assessment with one of our trainers. During this session, you'll be asked to describe any medical conditions you have — it's very important that our staff know about these before you start exercising. The trainer will then explain the safety procedures you'll need to follow when using the equipment. After that, you'll be given a six-week programme tailored specifically for you.
+If this is your first visit, please don’t begin work immediately. At reception, we record an emergency contact: someone we can telephone if you become unwell or have an accident. We don’t need your doctor’s details. Next, a volunteer gives a safety briefing covering protective equipment, fire exits and the machines that require supervision. Even experienced makers must attend. You then book an induction session, which lasts about ninety minutes. During it, you practise using a hand tool and learn how to label an unfinished project.
 
-In terms of the types of membership we offer: all members pay a compulsory £90 registration fee when they join. We have three levels. Silver membership gives you access to the main facilities. Gold membership, in addition to everything Silver offers, gives you free access to all the LP clubs in the country — there are over 50 of those. And our Premier membership gives you priority booking during peak hours. Premier members are also able to bring two guests every month at no extra charge. All members, whatever their level, should always carry their membership card with them at all times — you'll need it to access the facilities.`,
+There are three ways to join. A day pass suits visitors with one small repair. Monthly membership allows unlimited visits, while an annual plan includes equipment loans. We used to charge a joining fee, but members disliked paying for paperwork. Instead, everyone now leaves a refundable key deposit of twenty pounds. You get it back when you return your locker key at the end of your membership.
+
+Annual members receive free access to partner workshops in four neighbouring towns. That does not include their specialist courses, which are priced separately, but you may use their ordinary benches without another day fee. Monthly members can visit those workshops too, though they pay half the normal entrance price.
+
+Opening times vary. Tuesday and Thursday mornings are reserved for school and charity groups. General members can come from midday. People on the annual plan may also book benches during evening hours on Wednesdays, when the building stays open until nine. We considered Sunday opening, but there were too few volunteers to supervise it.
+
+Members sometimes ask if another person may help with a repair. Day-pass users must work alone unless the helper buys a pass. A monthly member can bring one guest on each visit, but that person may not operate powered machinery. Annual members can register two helpers, although only one may attend at a time. In all cases, the member remains responsible for the project.
+
+Finally, bring your ID card whenever you enter. The card opens the outside door and records who is in the building during an emergency. A photograph of it on your phone is not enough because the electronic strip must be scanned. If you lose it, tell reception rather than borrowing someone else’s.
+
+After the tour, we’ll return here for questions. Please leave bags in the lockers and keep the yellow walkway clear as we go around.`,
       questions: [
         {
           type: 'multiselect',
           id: 'l2-multi',
           part: 2,
           qRange: [11, 12],
-          text: 'Which TWO facilities at the leisure club have recently been improved?',
+          text: 'Which TWO facilities at the repair hub were improved this spring?',
           options: [
-            { letter: 'A', text: 'the gym' },
-            { letter: 'B', text: 'the tracks' },
-            { letter: 'C', text: 'the indoor pool' },
-            { letter: 'D', text: 'the outdoor pool' },
-            { letter: 'E', text: 'the sports training for children' },
+            { letter: 'A', text: 'the sewing room' },
+            { letter: 'B', text: 'the bicycle bay' },
+            { letter: 'C', text: 'the wood workshop' },
+            { letter: 'D', text: 'the electronics bench' },
+            { letter: 'E', text: 'the tool library' },
           ],
           selectCount: 2,
-          answers: ['A', 'D'],
+          answers: ['D', 'E'],
         },
         {
           type: 'formgroup',
@@ -169,29 +179,29 @@ In terms of the types of membership we offer: all members pay a compulsory £90 
           part: 2,
           qRange: [13, 20],
           groupLabel: 'Complete the notes below.\nWrite NO MORE THAN TWO WORDS for each answer.',
-          title: 'Joining the leisure club',
-          template: `Personal Assessment
+          title: 'Using the Harbour Repair Hub',
+          template: `Before starting
 
-• New members should describe any {{13}}.
-• The {{14}} will be explained to you before you use the equipment.
-• You will be given a six-week {{15}}.
+• Give reception the name of an {{13}}.
+• Attend a {{14}} covering protective equipment and exits.
+• Book a ninety-minute {{15}}.
 
-Types of membership
+Membership
 
-• There is a compulsory £90 {{16}} fee for members.
-• Gold members are given {{17}} to all the LP clubs.
-• Premier members are given priority during {{18}} hours.
-• Premier members can bring some {{19}} every month.
-• Members should always take their {{20}} with them.`,
+• Every member pays a refundable {{16}}.
+• Annual members receive {{17}} to partner workshops.
+• They may book benches during Wednesday {{18}} hours.
+• A monthly member may bring one {{19}} per visit.
+• Members must carry their {{20}} to enter the building.`,
           blanks: [
-            { num: 13, answers: ['medical conditions', 'conditions'], maxWords: 2 },
-            { num: 14, answers: ['safety procedures', 'procedures'], maxWords: 2 },
-            { num: 15, answers: ['programme', 'program', 'schedule'], maxWords: 1 },
-            { num: 16, answers: ['registration'], maxWords: 1 },
+            { num: 13, answers: ['emergency contact'], maxWords: 2 },
+            { num: 14, answers: ['safety briefing'], maxWords: 2 },
+            { num: 15, answers: ['induction session'], maxWords: 2 },
+            { num: 16, answers: ['key deposit'], maxWords: 2 },
             { num: 17, answers: ['free access', 'access'], maxWords: 2 },
-            { num: 18, answers: ['peak'], maxWords: 1 },
-            { num: 19, answers: ['guests', 'guest', 'friends'], maxWords: 1 },
-            { num: 20, answers: ['membership card', 'card'], maxWords: 2 },
+            { num: 18, answers: ['evening'], maxWords: 1 },
+            { num: 19, answers: ['guest'], maxWords: 1 },
+            { num: 20, answers: ['ID card'], maxWords: 2 },
           ],
         },
       ],
@@ -201,107 +211,129 @@ Types of membership
       part: 3,
       skill: 'listening',
       audioUrl: '/audio/ielts/ielts-listening-set-1.mp3',
-      title: 'Listening — Section 3: Global Design Competition',
-      instructions: 'You will hear two students discussing a design competition entry. Listen and answer Questions 21–30.',
-      transcript: `PROFESSOR: Come in, John. Sit down. I've been looking at your design competition entry — the FreshTrack dishwasher.
+      title: 'Listening — Section 3: Campus Garden Research',
+      instructions: 'You will hear two students discussing a research project with their tutor. Listen and answer Questions 21–30.',
+      transcript: `TUTOR: Maya, Leo, come in. I’ve read your proposal for the campus garden study. Tell me what you’ve settled on.
 
-JOHN: Yes, I'm quite pleased with how it's come together.
+MAYA: At first we wanted to compare vegetables grown on a roof with those at ground level. But the soil depth and shade were too different, so any result would be hard to interpret.
 
-PROFESSOR: It's very creative. Now, just to confirm — the competition brief was to develop a new use for current technology, wasn't it?
+LEO: We narrowed the project. We’ll use identical planters on the library roof and compare two irrigation methods: hand watering and a drip system.
 
-JOHN: That's right. You could adapt an existing appliance, or design something energy-efficient, but I decided to take existing technology and find a new application for it.
+TUTOR: Good. So the main objective is the comparison between irrigation methods, not between locations.
 
-PROFESSOR: And why a dishwasher specifically?
+MAYA: Exactly. We considered three roofs. The science building had the greatest variety of plants, but students can’t enter without a technician. The sports centre is accessible, although nearby construction would create dust.
 
-JOHN: Well, dishwashers are pretty common in most homes now, but people don't think of them as particularly stylish. I wanted to make them more appealing — give them a design aesthetic they haven't had before.
+LEO: The library roof has fewer existing beds, but we can reach it safely each morning. Reliable access matters more than having a mature garden, so that’s where we’ll work.
 
-PROFESSOR: Right. Tell me about the 'Rockpool' design. There's a stone involved?
+TUTOR: What will you measure?
 
-JOHN: Yes — the stone is actually used to switch it on. You place the stone in a special depression on the front, and that activates the machine. It's meant to give it an organic feel.
+LEO: Plant height once a week and the mass of the harvest at the end. We’re also installing sensors. I assumed they recorded temperature, but these particular ones measure soil moisture every fifteen minutes.
 
-PROFESSOR: Interesting. And the cleaning process uses carbon dioxide?
+MAYA: We’ll obtain temperature from the weather station instead.
 
-JOHN: Yes. In the holding chamber, the carbon dioxide changes back from a liquid state into a gas, and it's that gas which does the cleaning — it gets into all the tiny spaces.
+TUTOR: Have you run a pilot?
 
-PROFESSOR: And at the end of the process?
+MAYA: A short one. We expected birds to disturb the seedlings, so we brought netting. Birds weren’t the problem. The roof was much windier than the courtyard, and two lightweight pots moved overnight.
 
-JOHN: The carbon dioxide is collected and stored, ready to be re-used in the next cycle. There's no waste.
+LEO: We’ll secure every planter to the frame. The wind exposure was the main surprise.
 
-PROFESSOR: Very good. Now, what stage are you at? Do you need help with anything?
+TUTOR: Sensible. How are you organising the data?
 
-JOHN: I'm struggling a bit with the presentation, actually. I've never done one like this before.
+LEO: Each sensor sends readings to a tablet. Maya suggested copying everything weekly, but after the pilot we agreed that was risky. The files will be backed up automatically every day.
 
-PROFESSOR: I'd strongly suggest making a model of the design. A physical model always impresses the judges and helps you explain the technology.
+MAYA: And we’ll photograph the plants from the same marked position. That should help us explain unusual growth.
 
-JOHN: That makes sense. My biggest practical problem has been sourcing the materials — I need really high-quality carbon dioxide, and it's been difficult to find a supplier.
+TUTOR: It will, provided the photographs are labelled. Now, your assessment includes an oral presentation before the written report. Have you divided the work?
 
-PROFESSOR: You should apply for a grant. The university has funding available for exactly this kind of project.
+MAYA: Leo is confident about answering questions, but neither of us has built the slides. We need help with the presentation, especially deciding how much method to include.
 
-JOHN: I didn't know that. That would be a great help.
+TUTOR: Bring me an outline next week. For the irrigation layout, don’t carry the real equipment into the seminar room. A clear diagram will show the tubing better than photographs.
 
-PROFESSOR: One more thing — I'll need to check over the technical information in your written report before you submit. Make sure you send it to me in good time.
+LEO: I can draw that. Our practical difficulty is the sensors. We have enough units, but their batteries lose power quickly outdoors.
 
-JOHN: Of course. Thank you very much.`,
+MAYA: Buying rechargeable ones for all twelve sensors costs more than our materials allowance.
+
+TUTOR: Apply to the student research fund. It offers a small grant for essential equipment. The deadline is Friday, so don’t wait for your next meeting.
+
+LEO: We’ll do it today.
+
+TUTOR: I also noticed that your timetable ends as soon as you harvest the plants. Leave time for analysis.
+
+MAYA: We’ve allowed two days to put the numbers into graphs.
+
+TUTOR: Graphs are only the start. Because moisture readings are repeated over time, you need statistical advice before choosing a test. Dr Chen runs a drop-in clinic on Tuesdays.
+
+LEO: So we should ask her to check the statistical method, rather than just the final figures?
+
+TUTOR: Precisely. If you decide on the method now, you’ll know whether the data you collect can answer your question.
+
+MAYA: One last thing: should we interview people who use the garden?
+
+TUTOR: That would introduce a second research question and require ethics approval. Mention user experience as possible future work, but keep this study focused on irrigation.
+
+LEO: Understood. We’ll revise the proposal, prepare the grant application and book the statistics clinic.
+
+TUTOR: Good. Send me the revised version by Monday.`,
       questions: [
         {
           type: 'mcq',
           id: 'l3q21',
           part: 3,
-          text: 'Students entering the design competition have to',
+          text: 'The main aim of the students’ project is to compare',
           options: [
-            'produce an energy-efficient design',
-            'adapt an existing energy-saving appliance',
-            'develop a new use for current technology',
-          ],
-          answer: 2,
-        },
-        {
-          type: 'mcq',
-          id: 'l3q22',
-          part: 3,
-          text: 'John chose a dishwasher because he wanted to make dishwashers',
-          options: [
-            'more appealing',
-            'more common',
-            'more economical',
-          ],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'l3q23',
-          part: 3,
-          text: 'The stone in John\'s \'Rockpool\' design is used',
-          options: [
-            'for decoration',
-            'to switch it on',
-            'to stop water escaping',
+            'plants grown at different heights',
+            'two methods of irrigation',
+            'vegetables grown in different soils',
           ],
           answer: 1,
         },
         {
           type: 'mcq',
-          id: 'l3q24',
+          id: 'l3q22',
           part: 3,
-          text: 'In the holding chamber, the carbon dioxide',
+          text: 'Why did the students choose the library roof?',
           options: [
-            'changes back to a gas',
-            'dries the dishes',
-            'is allowed to cool',
+            'It already had a mature garden.',
+            'It was protected from building work.',
+            'They could reach it safely each day.',
+          ],
+          answer: 2,
+        },
+        {
+          type: 'mcq',
+          id: 'l3q23',
+          part: 3,
+          text: 'What will the sensors measure?',
+          options: [
+            'soil moisture',
+            'air temperature',
+            'plant height',
           ],
           answer: 0,
         },
         {
           type: 'mcq',
+          id: 'l3q24',
+          part: 3,
+          text: 'What unexpected issue occurred during the pilot?',
+          options: [
+            'Birds damaged the seedlings.',
+            'Wind moved some containers.',
+            'Construction dust covered the plants.',
+          ],
+          answer: 1,
+        },
+        {
+          type: 'mcq',
           id: 'l3q25',
           part: 3,
-          text: 'At the end of the cleaning process, the carbon dioxide',
+          text: 'How often will the sensor files be backed up?',
           options: [
-            'is released into the air',
-            'is disposed of with the waste',
-            'is collected ready to be re-used',
+            'every fifteen minutes',
+            'once a day',
+            'once a week',
           ],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'formgroup',
@@ -309,17 +341,17 @@ JOHN: Of course. Thank you very much.`,
           part: 3,
           qRange: [26, 30],
           groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
-          template: `• John needs help preparing for his {{26}}.
-• The professor advises John to make a {{27}} of his design.
-• John's main problem is getting good quality {{28}}.
-• The professor suggests John apply for a {{29}}.
-• The professor will check the {{30}} information in John's written report.`,
+          template: `• The students need help planning their {{26}}.
+• A {{27}} should be used to explain the irrigation layout.
+• The sensors require new {{28}}.
+• The students can apply for a {{29}} to cover this cost.
+• They should seek {{30}} advice before choosing how to analyse the results.`,
           blanks: [
             { num: 26, answers: ['presentation'], maxWords: 1 },
-            { num: 27, answers: ['model'], maxWords: 1 },
-            { num: 28, answers: ['materials', 'material'], maxWords: 1 },
+            { num: 27, answers: ['diagram'], maxWords: 1 },
+            { num: 28, answers: ['batteries'], maxWords: 1 },
             { num: 29, answers: ['grant'], maxWords: 1 },
-            { num: 30, answers: ['technical'], maxWords: 1 },
+            { num: 30, answers: ['statistical'], maxWords: 1 },
           ],
         },
       ],
@@ -329,21 +361,31 @@ JOHN: Of course. Thank you very much.`,
       part: 4,
       skill: 'listening',
       audioUrl: '/audio/ielts/ielts-listening-set-1.mp3',
-      title: 'Listening — Section 4: The Spirit Bear',
-      instructions: 'You will hear a lecture about the Spirit Bear. Listen and answer Questions 31–40.',
-      transcript: `Today I want to talk about a remarkable animal — the Spirit Bear, or Kermode Bear, which lives in the coastal rainforests of British Columbia in Canada.
+      title: 'Listening — Section 4: How Urban Trees Cool a City',
+      instructions: 'You will hear a university lecture about measuring the cooling effect of urban trees. Listen and answer Questions 31–40.',
+      transcript: `Today we’ll examine how urban trees affect heat and, more importantly, how researchers measure that effect. It is tempting to say that any green street is a cool street, but the relationship is more complicated. The result depends on the size of the trees, the arrangement of buildings, water availability and even the time of day.
 
-The Spirit Bear is a white-coated black bear. Unlike albino animals, its white colour comes from an uncommon gene — a double recessive gene — that occurs only in black bears in this particular region. It's quite a rare sight.
+Let’s begin with structure. The collection of leaves and branches above the ground is called the canopy. A broad canopy intercepts sunlight before it reaches a pavement or wall. This produces shade, which lowers the surface temperature beneath the tree. The air itself may not cool by the same amount, so a photograph from a thermal camera and a thermometer at head height can tell different stories.
 
-The bear holds special significance for the local indigenous peoples, who believe that it has unusual powers. Some groups tell of the bear's ability to heal the sick, and others describe it as a spirit that bridges the human and natural worlds. Because of this sacred status, local communities have traditionally protected the bear from hunters, which has helped maintain its population over the centuries.
+Trees also move water from the soil through their roots and release it as vapour from tiny openings in their leaves. The process is known as transpiration. Energy is used when liquid water becomes vapour, and that transfer can cool the surrounding air. However, the process slows when a tree closes those openings during severe water stress. A species that performs well in a wet park may therefore provide less cooling beside a dry road.
 
-The bear's relationship with the forest is complex and fascinating. In autumn, the bears feed heavily on salmon from the coastal rivers. As they drag fish from the water and carry them into the forest to eat, nutrients from the salmon are deposited across a wide area. This feeding behaviour actually provides nutrients for the forest vegetation, effectively fertilising the trees. The bears also rely on the trees in another way — the roots of the forest trees prevent erosion along the salmon streams, which helps keep the river banks stable for the bears to fish.
+This shade-and-transpiration combination explains why trees can influence both surfaces and nearby air.
 
-The Spirit Bear is currently found on a small number of islands and in certain mainland areas, but its habitat is shrinking. Deforestation is a serious problem, as is the construction of roads by logging companies, which fragments the habitat and disturbs wildlife. The salmon supply — which the bears depend on entirely — is also being reduced by unrestricted fishing in coastal waters.
+The material around a tree matters too. Dark asphalt can absorb a great deal of solar energy during the day and release it after sunset. Grass or light-coloured paving generally stores less. This is why researchers do not compare a tree-lined park with a treeless industrial street and attribute the entire difference to vegetation. The sites differ in too many ways.
 
-Perhaps the most serious long-term threat is the bears' low rate of reproduction. They breed slowly, and their populations can take a long time to recover from any decline.
+A stronger study may select pairs of streets with similar orientation, building height and traffic, then vary the amount of tree cover. Small sensors are fixed at a standard height inside radiation shields. They record temperature and humidity every few minutes. Placing a sensor directly against a trunk would be convenient, but it would not represent the air experienced by pedestrians. Instruments also need checking before and after fieldwork so that a faulty unit does not create an imaginary hot spot.
 
-But there is hope. Interested parties — including the government, conservation groups, and local communities — are working together on a plan. Logging companies are being required to improve their methods of logging so as to reduce habitat damage. And there are ongoing programmes for the maintenance and expansion of the Spirit Bears' protected territory.`,
+Ground instruments provide detail at specific points. Satellites offer a wider view by estimating the temperature of the land surface across an entire city. They are useful for locating broad patterns, but a satellite does not directly measure the air temperature a person breathes. Roofs can dominate a pixel, and cloud may obscure an image. Researchers increasingly combine satellite maps, mobile surveys and fixed sensors instead of treating one source as complete.
+
+The timing of measurement changes the conclusion. Dense shade often creates the clearest benefit in the afternoon, when solar radiation is strong. After sunset, some tree-covered spaces remain warmer because foliage reduces the loss of heat to the open sky and blocks wind. A claim that trees reduced temperature by a particular number of degrees is therefore incomplete without the hour, weather conditions and the type of temperature measured.
+
+Cooling is also a social issue. Canopy is rarely distributed evenly. Wealthier districts may have mature trees and large gardens, while neighbourhoods with more apartments and paved yards have fewer. This inequality can overlap with higher exposure to heat and less access to air conditioning. Mapping temperature alongside population data helps cities decide where planting could protect vulnerable residents, rather than simply making already green streets greener.
+
+Planting, though, is only the beginning. Young trees require watering, and prolonged drought may kill them before their canopy becomes large enough to matter. Species must suit the local climate and available soil. Relying on a single species creates another risk: one pest or disease could remove much of the canopy at once. Ecologists therefore recommend diversity, while still avoiding species whose roots damage infrastructure or whose pollen creates health problems.
+
+Finally, budgets must include maintenance. A city can announce that it planted ten thousand trees, but survival after five or ten years is the more useful outcome. Pruning, soil care, replacement and community involvement all cost money. Researchers evaluating a programme should measure not only the number planted, but canopy growth, survival and who receives the benefit.
+
+Urban trees are not a substitute for insulated buildings, reflective materials or plans for extreme heat. They are one part of a wider system. Their cooling value is real, but good evidence comes from careful definitions, comparable sites, multiple instruments and observations made across seasons rather than on one convenient summer afternoon.`,
       questions: [
         {
           type: 'formgroup',
@@ -351,43 +393,37 @@ But there is hope. Interested parties — including the government, conservation
           part: 4,
           qRange: [31, 40],
           groupLabel: 'Complete the notes below.\nWrite ONE WORD ONLY for each answer.',
-          title: 'THE SPIRIT BEAR',
-          template: `General facts
+          title: 'HOW URBAN TREES COOL A CITY',
+          template: `Cooling processes
 
-• It is a white bear belonging to the black bear family.
-• Its colour comes from an uncommon {{31}}.
-• Local people believe that it has unusual {{32}}.
-• They protect the bear from {{33}}.
+• A broad {{31}} prevents some sunlight from reaching surfaces.
+• Water released by leaves cools the air through {{32}}.
+• The cooling effect of {{33}} is often greater at the surface than in the air.
+• Dark {{34}} stores solar energy and releases it later.
 
-Habitat
+Measuring the effect
 
-• The bear's relationship with the forest is complex.
-• Tree roots prevent {{34}} along salmon streams.
-• The bears' feeding habits provide nutrients for forest vegetation.
-• It is currently found on a small number of {{35}}.
+• Fixed {{35}} record temperature and humidity at standard heights.
+• {{36}} provide land-surface measurements over a wide area.
+• The hour and weather must be reported with every result.
 
-Threats
+Planning urban forests
 
-• Habitat is being lost due to deforestation and construction of {{36}} by logging companies.
-• Unrestricted {{37}} is affecting the salmon supply.
-• The bears' existence is also threatened by their low rate of {{38}}.
-
-Going forward
-
-• Interested parties are working together.
-• Logging companies must improve their {{39}} of logging.
-• Maintenance and {{40}} of the spirit bears' territory is needed.`,
+• Unequal tree cover can reinforce social {{37}}.
+• Young trees may die during prolonged {{38}}.
+• Planting a {{39}} of species reduces the danger from a single pest.
+• Long-term budgets must pay for {{40}}, not only planting.`,
           blanks: [
-            { num: 31, answers: ['gene'], maxWords: 1 },
-            { num: 32, answers: ['powers'], maxWords: 1 },
-            { num: 33, answers: ['hunters'], maxWords: 1 },
-            { num: 34, answers: ['erosion'], maxWords: 1 },
-            { num: 35, answers: ['islands'], maxWords: 1 },
-            { num: 36, answers: ['roads'], maxWords: 1 },
-            { num: 37, answers: ['fishing'], maxWords: 1 },
-            { num: 38, answers: ['reproduction'], maxWords: 1 },
-            { num: 39, answers: ['methods'], maxWords: 1 },
-            { num: 40, answers: ['expansion'], maxWords: 1 },
+            { num: 31, answers: ['canopy'], maxWords: 1 },
+            { num: 32, answers: ['transpiration'], maxWords: 1 },
+            { num: 33, answers: ['shade'], maxWords: 1 },
+            { num: 34, answers: ['asphalt'], maxWords: 1 },
+            { num: 35, answers: ['sensors'], maxWords: 1 },
+            { num: 36, answers: ['satellites'], maxWords: 1 },
+            { num: 37, answers: ['inequality'], maxWords: 1 },
+            { num: 38, answers: ['drought'], maxWords: 1 },
+            { num: 39, answers: ['diversity'], maxWords: 1 },
+            { num: 40, answers: ['maintenance'], maxWords: 1 },
           ],
         },
       ],
@@ -398,47 +434,41 @@ Going forward
     {
       part: 5,
       skill: 'reading',
-      title: 'Reading Passage 1: Bakelite',
+      title: 'Reading Passage 1: Seeds Against Time',
       instructions: 'Read the passage and answer Questions 1–13.',
-      passage: `In 1907, Leo Hendrick Baekeland, a Belgian scientist working in New York, discovered and patented a revolutionary new synthetic material. His invention, which he named 'Bakelite', was of enormous technological importance, and effectively launched the modern plastics industry.
+      passage: `Seeds Against Time
 
-The term 'plastic' comes from the Greek plassein, meaning 'to mould'. Some plastics are derived from natural sources, some are semi-synthetic (the result of chemical action on a natural substance), and some are entirely synthetic, that is, chemically engineered from the constituents of coal or oil. Some are 'thermoplastic', which means that, like candlewax, they melt when heated and can then be reshaped. Others are 'thermosetting': like eggs, they cannot revert to their original viscous state, and their shape is thus fixed forever. Bakelite had the distinction of being the first totally synthetic thermosetting plastic.
+A seed bank is sometimes described as a library, but the comparison is incomplete. Books can remain useful while sitting untouched on a shelf; seeds are living material whose ability to germinate gradually declines. Banks therefore practise ex situ conservation—protecting biological material away from its natural habitat—while accepting that a frozen collection cannot replace the ecosystem in which a plant evolved. Its purpose is insurance, research and, when conditions permit, restoration.
 
-The history of today's plastics begins with the discovery of a series of semi-synthetic thermoplastic materials in the mid-nineteenth century. The impetus behind the development of these early plastics was generated by a number of factors — immense technological progress in the domain of chemistry, coupled with wider cultural changes, and the pragmatic need to find acceptable substitutes for dwindling supplies of 'luxury' materials such as tortoiseshell and ivory.
+The work begins in the field. Collectors do not simply fill a bag with whatever is available. They must confirm the species, obtain permission, judge whether the seeds are mature and avoid taking so many that the wild population is weakened. They also record metadata: the location, altitude, date, surrounding vegetation and conditions in which the parent plants grew. Without that context, a packet may preserve genes but lose much of its scientific meaning. A herbarium specimen is commonly collected as a permanent reference for identification.
 
-Baekeland's interest in plastics began in 1885 when, as a young chemistry student in Belgium, he embarked on research into phenolic resins, the group of sticky substances produced when phenol (carbolic acid) combines with an aldehyde (a volatile fluid similar to alcohol). He soon abandoned the subject, however, only returning to it some years later. By 1905 he was a wealthy New Yorker, having recently made his fortune with the invention of a new photographic paper.
+Back at a bank, most conventional collections follow a carefully controlled sequence. At Kew's Millennium Seed Bank, material suitable for normal storage is placed in a dry environment of about 15 percent relative humidity and 15°C. Debris, empty seeds and insect-damaged material are removed. Staff may use cut tests or x-rays to check whether embryos are properly formed without opening every seed. After drying, collections are placed in sealed containers and transferred to freezers maintained near -20°C. Low moisture slows damaging chemical reactions; low temperature slows them further.
 
-While Baekeland had been busily amassing dollars, some advances had been made in the development of plastics. The years 1899 and 1900 had seen the patenting of the first semi-synthetic thermosetting material that could be manufactured on an industrial scale. In purely scientific terms, Baekeland's major contribution to the field is not so much the actual discovery of the material to which he gave his name, but rather the method by which a reaction between phenol and formaldehyde could be controlled, thus making possible its preparation on a commercial basis. On 13 July 1907, Baekeland took out his famous patent describing this preparation, the essential features of which are still in use today.
+Storage is not the end of the process. Curators periodically remove a small sample and conduct a germination test. If too few seeds grow, a bank may need to recollect the species or regenerate the accession by raising plants and harvesting fresh seed. Regeneration sounds straightforward, yet it carries risks. If only a small, unrepresentative group of plants reproduces, the genetic composition of the new sample can drift away from that of the original population. Curators must balance the need to renew ageing material against the loss involved each time a sealed collection is opened.
 
-The original patent outlined a three-stage process, in which phenol and formaldehyde (from wood or coal) were initially combined under vacuum inside a large egg-shaped kettle. The result was a resin known as Novalak, which became soluble and malleable when heated. The resin was allowed to cool in shallow trays until it hardened, and then broken up and ground into powder.
+Conventional freezing also has a biological limit. So-called recalcitrant seeds, including those of several important tropical trees, cannot survive the drying required before storage. Other species produce extremely short-lived or microscopic seed. Researchers may preserve embryos or other tissue in liquid nitrogen, a technique called cryopreservation, but it is more expensive and demands specialised equipment. A complete conservation strategy may therefore combine seed banking, living collections, tissue culture and protection in the wild.
 
-Other substances were then introduced: including fillers, such as woodflour, asbestos or cotton, which increase strength and moisture resistance, catalysts (substances to speed up the reaction between two chemicals without joining to either) and hexa, a compound of ammonia and formaldehyde which supplied the additional formaldehyde necessary to form a thermosetting resin. This resin was then left to cool and harden, and ground up a second time. The resulting granular powder was raw Bakelite, ready to be made into a vast range of manufactured objects.
+Duplication provides another layer of security. Recognised standards encourage banks to keep a second collection at a geographically separate facility. The Svalbard Global Seed Vault in Norway performs this backup role for crop diversity: depositors send duplicate samples from their own genebanks, retain ownership and can withdraw their material. Svalbard is not a replacement for the more than 1,700 crop genebanks around the world. It is a reserve for failures ranging from a broken freezer or unstable funding to war and natural disaster. Wild-plant collections, meanwhile, are often duplicated through partnerships between institutions such as Kew and banks in the country of origin.
 
-In the last stage, the heated Bakelite was poured into a hollow mould of the required shape and subjected to extreme heat and pressure; thereby 'setting' its form for life.
+The value of a bank becomes clearest when material moves out of storage. Seeds can help researchers study drought tolerance, allow horticulturists to propagate threatened plants and supply restoration projects after fire or habitat damage. Yet release is not automatic: curators must preserve enough viable material for the future, respect agreements with the country that supplied it and ensure that a restoration site still offers suitable conditions.
 
-The design of Bakelite objects, everything from earrings to television sets, was governed to a large extent by the technical requirements of the moulding process. The object could not be designed so that it was locked into the mould and therefore difficult to extract. A common general rule was that objects should taper towards the deepest part of the mould, and if necessary the product was moulded in separate pieces.
-
-Moulds had to be carefully designed so that the molten Bakelite would flow evenly and completely into the mould. Sharp corners proved impractical and were thus avoided, giving rise to the smooth, 'streamlined' style popular in the 1930s. The thickness of the walls of the mould was also crucial: thick walls took longer to cool and harden, a factor which had to be considered by the designer in order to make the most efficient use of machines.
-
-Baekeland's invention, although treated with disdain in its early years, went on to enjoy an unparalleled popularity which lasted throughout the first half of the twentieth century. It became the wonder product of the new world of industrial expansion — 'the material of a thousand uses'. Being both non-porous and heat-resistant, Bakelite kitchen goods were promoted as being germ-free and sterilisable. Electrical manufacturers seized on its insulating properties, and consumers everywhere relished its dazzling array of shades.
-
-It then fell from favour again during the 1950s, and was despised and destroyed in vast quantities. Recently, however, it has been experiencing something of a renaissance, with renewed demand for original Bakelite objects in the collectors' marketplace, and museums, societies and dedicated individuals once again appreciating the style and originality of this innovative material.`,
+For this reason, modern seed banking is less an attempt to stop time than a system for managing change. A collection needs electricity, trained staff, accurate records, repeated tests and long-term relationships with people who manage plants in the landscape. The vault may be the most visible symbol, but conservation depends just as much on the decisions made before a seed enters it and after a seed leaves.`,
       questions: [
         {
           type: 'formgroup',
           id: 'r1-summary',
           part: 5,
           qRange: [1, 3],
-          groupLabel: 'Complete the summary.\nChoose ONE WORD ONLY from the passage for each answer.',
-          template: `Some plastics behave in a similar way to {{1}} in that they melt under heat and can be moulded into new forms.
+          groupLabel: 'Complete the summary.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.',
+          template: `Seed banks are a form of {{1}} conservation, because material is protected away from its original habitat.
 
-Bakelite was unique because it was the first material to be both entirely {{2}} in origin and thermosetting.
+Collectors record {{2}} such as location, altitude and surrounding vegetation so that a sample retains its scientific context.
 
-There were several reasons for the research into plastics in the nineteenth century, among them the great advances that had been made in the field of {{3}} and the search for alternatives to natural resources like ivory.`,
+Banks can use {{3}} to inspect the internal quality of seeds without opening all of them.`,
           blanks: [
-            { num: 1, answers: ['candlewax'], maxWords: 1 },
-            { num: 2, answers: ['synthetic'], maxWords: 1 },
-            { num: 3, answers: ['chemistry'], maxWords: 1 },
+            { num: 1, answers: ['ex situ'], maxWords: 2 },
+            { num: 2, answers: ['metadata'], maxWords: 1 },
+            { num: 3, answers: ['x-rays'], maxWords: 1 },
           ],
         },
         {
@@ -446,24 +476,22 @@ There were several reasons for the research into plastics in the nineteenth cent
           id: 'r1-flowchart',
           part: 5,
           qRange: [4, 8],
-          imageUrl: '/ielts/images/reading-set-1-bakelite-flowchart.png',
-          imageAlt: 'Flow-chart: The Production of Bakelite',
-          groupLabel: 'Complete the flow-chart.\nChoose ONE WORD ONLY from the passage for each answer.\n\nThe Production of Bakelite',
-          template: `Phenol and formaldehyde combined under {{4}} in a kettle
+          groupLabel: 'Complete the flow-chart.\nChoose ONE WORD AND/OR A NUMBER from the passage for each answer.\n\nConventional seed storage',
+          template: `Place suitable material in roughly {{4}} percent relative humidity
 
-The resin (Novalak) was allowed to {{5}} in shallow trays until hardened, then ground into powder
+Remove debris and {{5}} seeds
 
-Other substances added, including {{6}} (e.g. woodflour, cotton) and catalysts
+Put the dried collection in {{6}} containers
 
-Resin left to cool and {{7}}, then ground up a second time
+Transfer it to freezers near {{7}}°C
 
-Resulting {{8}} powder = raw Bakelite`,
+Periodically carry out a {{8}} test`,
           blanks: [
-            { num: 4, answers: ['vacuum'], maxWords: 1 },
-            { num: 5, answers: ['cool'], maxWords: 1 },
-            { num: 6, answers: ['fillers'], maxWords: 1 },
-            { num: 7, answers: ['harden'], maxWords: 1 },
-            { num: 8, answers: ['granular'], maxWords: 1 },
+            { num: 4, answers: ['15', 'fifteen'], maxWords: 1 },
+            { num: 5, answers: ['empty'], maxWords: 1 },
+            { num: 6, answers: ['sealed'], maxWords: 1 },
+            { num: 7, answers: ['-20', 'minus 20'], maxWords: 2 },
+            { num: 8, answers: ['germination'], maxWords: 1 },
           ],
         },
         {
@@ -471,22 +499,22 @@ Resulting {{8}} powder = raw Bakelite`,
           id: 'r1-multi',
           part: 5,
           qRange: [9, 10],
-          text: 'Which TWO of the following factors influencing the design of Bakelite objects are mentioned in the text?',
+          text: 'Which TWO difficulties of long-term seed conservation are mentioned in the passage?',
           options: [
-            { letter: 'A', text: 'the function which the object would serve' },
-            { letter: 'B', text: 'the ease with which the resin could fill the mould' },
-            { letter: 'C', text: 'the facility with which the object could be removed from the mould' },
-            { letter: 'D', text: 'the limitations of the materials used to manufacture the mould' },
-            { letter: 'E', text: 'the fashionable styles of the period' },
+            { letter: 'A', text: 'Some seeds cannot tolerate the drying process.' },
+            { letter: 'B', text: 'Every stored species requires liquid nitrogen.' },
+            { letter: 'C', text: 'Freezing always changes the colour of a seed.' },
+            { letter: 'D', text: 'Regeneration can alter a collection’s genetic composition.' },
+            { letter: 'E', text: 'Collectors are unable to identify mature seed.' },
           ],
           selectCount: 2,
-          answers: ['C', 'E'],
+          answers: ['A', 'D'],
         },
         {
           type: 'mcq',
           id: 'r1q11',
           part: 5,
-          text: 'Modern-day plastic preparation is based on the same principles as that patented in 1907.',
+          text: 'The Svalbard Global Seed Vault keeps duplicate crop samples whose ownership remains with the depositors.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 0,
         },
@@ -494,7 +522,7 @@ Resulting {{8}} powder = raw Bakelite`,
           type: 'mcq',
           id: 'r1q12',
           part: 5,
-          text: 'Bakelite was immediately welcomed as a practical and versatile material.',
+          text: 'The writer presents seed banks as a complete substitute for conserving plants in natural habitats.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 1,
         },
@@ -502,9 +530,9 @@ Resulting {{8}} powder = raw Bakelite`,
           type: 'mcq',
           id: 'r1q13',
           part: 5,
-          text: 'Bakelite was only available in a limited range of colours.',
+          text: 'Scientists can predict the exact storage life of every seed species.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 2,
+          answer: 1,
         },
       ],
     },
@@ -512,37 +540,33 @@ Resulting {{8}} powder = raw Bakelite`,
     {
       part: 6,
       skill: 'reading',
-      title: 'Reading Passage 2: What\'s so funny?',
+      title: 'Reading Passage 2: Concrete Without the Usual Carbon',
       instructions: 'Read the passage and answer Questions 14–27.',
-      passage: `John McCrone reviews recent research on humour
+      passage: `Concrete Without the Usual Carbon
 
-The joke comes over the headphones: 'Which side of a dog has the most hair? The left.' No, not funny. Try again. 'Which side of a dog has the most hair? The outside.' Hah! The punchline is silly yet fitting, tempting a smile, even a laugh. Laughter has always struck people as deeply mysterious, perhaps pointless. The writer Arthur Koestler dubbed it the luxury reflex: 'unique in that it serves no apparent biological purpose'.
+Concrete is often confused with cement, although the two are not interchangeable. Concrete is the finished mixture used for buildings, bridges and roads; cement is the binding powder that reacts with water and holds sand and stone together. Most ordinary cement contains clinker, a hard intermediate material produced in a kiln. The manufacture of that clinker is responsible for the largest share of cement’s climate impact.
 
-Theories about humour have an ancient pedigree. Plato expressed the idea that humour is simply a delighted feeling of superiority over others. Kant and Freud felt that joke-telling relies on building up a psychic tension which is safely punctured by the ludicrousness of the punchline. But most modern humour theorists have settled on some version of Aristotle's belief that jokes are based on a reaction to or resolution of incongruity, when the punchline is either a nonsense or, though appearing silly, has a clever second meaning.
+There are two main sources of emissions. A kiln must reach very high temperatures, so heating it with coal or other fuels releases carbon dioxide. More fundamentally, limestone is heated so that calcium carbonate becomes lime, one of clinker’s essential ingredients. This chemical reaction, called calcination, releases carbon dioxide from the stone itself. Even a kiln powered entirely by low-emission energy would therefore retain these process emissions unless the chemistry changed or the gas was captured.
 
-Graeme Ritchie, a computational linguist in Edinburgh, studies the linguistic structure of jokes in order to understand not only humour but language understanding and reasoning in machines. He says that while there is no single format for jokes, many revolve around a sudden and surprising conceptual shift. A comedian will present a situation followed by an unexpected interpretation that is also apt.
+The least dramatic solution may be to use material more intelligently. Engineers can avoid unnecessary concrete through efficient structural design, reuse sound building frames and specify only the strength that a component actually needs. Such measures do not create a new kind of cement; they reduce demand for the most carbon-intensive ingredient. Their effect can be large, but they require decisions early in design, when architects, engineers and clients still have freedom to change a project.
 
-So even if a punchline sounds silly, the listener can see there is a clever semantic fit and that sudden mental 'Aha!' is the buzz that makes us laugh. Viewed from this angle, humour is just a form of creative insight, a sudden leap to a new perspective.
+A second strategy is to lower the clinker-to-cement ratio. Producers can blend clinker with supplementary cementitious materials such as blast-furnace slag, fly ash or carefully processed calcined clay. Some of these materials react with compounds released as cement hardens and contribute to long-term strength. They can also change setting time, colour or early strength, so substitution is not a simple act of exchanging one powder for another. Local availability matters as well. Fly ash is associated with coal-fired power generation and may become scarcer where coal plants close; suitable clay is more widely distributed but must still be mined and heated.
 
-However, there is another type of laughter, the laughter of social appeasement and it is important to understand this too. Play is a crucial part of development in most young mammals. Rats produce ultrasonic squeaks to prevent their scuffles turning nasty. Chimpanzees have a 'play-face' — a gaping expression accompanied by a panting 'ah, ah' noise. In humans, these signals have mutated into smiles and laughs. Researchers believe social situations, rather than cognitive events such as jokes, trigger these instinctual markers of play or appeasement.
+Changing the fuel in a kiln addresses a different part of the problem. Biomass, electricity and other low-emission heat sources can reduce energy-related emissions, but they do not stop calcination. Carbon capture, utilisation and storage—usually shortened to CCUS—could collect carbon dioxide from both the fuel and the chemical reaction. The captured stream must then be compressed, transported and either stored securely underground or used in a product that keeps it out of the atmosphere. This makes CCUS relevant to deep reductions, yet early plants are costly and depend on transport and storage infrastructure that many cement-producing regions lack.
 
-Both social and cognitive types of laughter tap into the same expressive machinery in our brains, the emotion and motor circuits that produce smiles and excited vocalisations. However, if cognitive laughter is the product of more general thought processes, it should result from more expansive brain activity.
+Claims about “low-carbon concrete” are difficult to compare without common accounting. A cubic metre of high-strength concrete may contain more cement than a weaker mix but carry more load, so volume alone can be misleading. Boundaries matter too: one label may count quarrying and factory emissions, while another includes transport to the construction site. The International Energy Agency and other organisations therefore support compatible definitions, measurement rules and intensity thresholds. Transparent records are needed to prevent the same reduction from being counted twice.
 
-Psychologist Vinod Goel investigated humour using the new technique of 'single event' functional magnetic resonance imaging (FMRI). An MRI scanner uses magnetic fields and radio waves to track the changes in oxygenated blood that accompany mental activity. Until recently, MRI scanners needed several minutes of activity and so could not be used to track rapid thought processes such as comprehending a joke. New developments now allow half-second 'snapshots' of all sorts of reasoning and problem-solving activities.
+Building standards present another challenge. Concrete is used where failure can be catastrophic, and regulators are understandably cautious about unfamiliar mixtures. A material that performs well in one climate or application may behave differently in another. Long approval cycles can slow adoption, but abandoning testing would transfer risk to occupants and infrastructure. Demonstration projects, updated standards and performance-based specifications can allow innovation while retaining safety.
 
-Although Goel felt being inside a brain scanner was hardly the ideal place for appreciating a joke, he found evidence that understanding a joke involves a widespread mental shift. His scans showed that at the beginning of a joke the listener's prefrontal cortex lit up, particularly the right prefrontal believed to be critical for problem solving. But there was also activity in the temporal lobes at the side of the head (consistent with attempts to rouse stored knowledge) and in many other brain areas. Then when the punchline arrived, a new area sprang to life — the orbital prefrontal cortex. This patch of brain tucked behind the orbits of the eyes is associated with evaluating information.
+Concrete also absorbs a limited amount of carbon dioxide during its life through carbonation, as exposed cement compounds react with air. This process is real, but it does not cancel the much larger release from producing clinker, and demolishing a structure simply to expose more surface would waste useful material. Keeping buildings in service, designing components for reuse and recycling demolished concrete as aggregate are usually more valuable circular strategies.
 
-Making a rapid emotional assessment of the events of the moment is an extremely demanding job for the brain, animal or human. Energy and arousal levels may need to be retuned in the blink of an eye. These abrupt changes will produce either positive or negative feelings. The orbital cortex, the region that becomes active in Goel's experiment, seems the best candidate for the site that feeds such feelings into higher-level thought processes, with its close connections to the brain's sub-cortical arousal apparatus and centres of metabolic control.
-
-All warm-blooded animals make constant tiny adjustments in arousal in response to external events, but humans, who have developed a much more complicated internal life as a result of language, respond emotionally not only to their surroundings, but to their own thoughts. Whenever a sought-for answer snaps into place, there is a shudder of pleased recognition. Creative discovery being pleasurable, humans have learned to find ways of milking this natural response. The fact that jokes tap into our general evaluative machinery explains why the line between funny and disgusting, or funny and frightening, can be so fine. Whether a joke gives pleasure or pain depends on a person's outlook.
-
-Humour may be a luxury, but the mechanism behind it is no evolutionary accident. As Peter Derks, a psychologist at William and Mary College in Virginia, says: 'I like to think of humour as the distorted mirror of the mind. It's creative, perceptual, analytical and lingual. If we can figure out how the mind processes humour, then we'll have a pretty good handle on how it works in general.'`,
+No single recipe will decarbonise concrete everywhere. Regions differ in raw materials, electricity, construction practice and access to carbon storage. Progress instead depends on a portfolio: use less material, reduce clinker where performance allows, clean up kiln heat, deploy capture for the emissions that remain and measure every claim consistently. The familiar grey material may look unchanged, but the system behind it will have to be redesigned.`,
       questions: [
         {
           type: 'mcq',
           id: 'r2q14',
           part: 6,
-          text: 'Arthur Koestler considered laughter biologically important in several ways.',
+          text: 'Cement and concrete are two names for exactly the same material.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 1,
         },
@@ -550,65 +574,63 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           type: 'mcq',
           id: 'r2q15',
           part: 6,
-          text: 'Plato believed humour to be a sign of above-average intelligence.',
+          text: 'Calcination would release carbon dioxide even if a kiln used low-emission energy.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 1,
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'r2q16',
           part: 6,
-          text: 'Kant believed that a successful joke involves the controlled release of nervous energy.',
-          options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
-        },
-        {
-          type: 'mcq',
-          id: 'r2q17',
-          part: 6,
-          text: 'Current thinking on humour has largely ignored Aristotle\'s view on the subject.',
+          text: 'Replacing clinker with fly ash always increases the early strength of cement.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 1,
         },
         {
           type: 'mcq',
-          id: 'r2q18',
+          id: 'r2q17',
           part: 6,
-          text: 'Graeme Ritchie\'s work links jokes to artificial intelligence.',
+          text: 'The supply of fly ash may fall when coal-fired power stations close.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 0,
+        },
+        {
+          type: 'mcq',
+          id: 'r2q18',
+          part: 6,
+          text: 'Changing a kiln to low-emission fuel removes the carbon released by calcination.',
+          options: ['TRUE', 'FALSE', 'NOT GIVEN'],
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'r2q19',
           part: 6,
-          text: 'Most comedians use personal situations as a source of humour.',
+          text: 'CCUS can collect emissions associated with both fuel use and the chemical reaction.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 2,
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'r2q20',
           part: 6,
-          text: 'Chimpanzees make particular noises when they are playing.',
+          text: 'The author recommends one standard low-carbon concrete formula for every region.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'formgroup',
-          id: 'r2-diagram',
+          id: 'r2-notes',
           part: 6,
           qRange: [21, 23],
-          imageUrl: '/ielts/images/reading-set-1-brain-diagram.png',
-          imageAlt: 'Diagram: Brain areas activated by jokes',
-          groupLabel: 'The diagram below shows the areas of the brain activated by jokes.\nLabel the diagram. Choose NO MORE THAN TWO WORDS from the passage for each answer.\n\nBrain areas activated by jokes:',
-          template: `Area active at start of joke (problem solving): {{21}}
-Area active during retrieval of stored knowledge: {{22}}
-Area active when punchline arrives (evaluating information): {{23}}`,
+          groupLabel: 'Complete the notes below.\nChoose NO MORE THAN THREE WORDS from the passage for each answer.\n\nRoutes to lower emissions:',
+          template: `Use structural design to reduce demand for the most carbon-intensive {{21}}.
+Replace some clinker with {{22}} materials.
+Collect remaining emissions using {{23}}.`,
           blanks: [
-            { num: 21, answers: ['right prefrontal', 'prefrontal cortex', 'right prefrontal cortex'], maxWords: 3 },
-            { num: 22, answers: ['temporal lobes', 'temporal lobe'], maxWords: 2 },
-            { num: 23, answers: ['orbital prefrontal', 'orbital prefrontal cortex', 'orbital cortex'], maxWords: 3 },
+            { num: 21, answers: ['ingredient'], maxWords: 1 },
+            { num: 22, answers: ['supplementary cementitious'], maxWords: 2 },
+            { num: 23, answers: ['CCUS', 'carbon capture'], maxWords: 2 },
           ],
         },
         {
@@ -618,19 +640,19 @@ Area active when punchline arrives (evaluating information): {{23}}`,
           qRange: [24, 27],
           groupLabel: 'Complete each sentence with the correct ending A–G below.\nWrite the correct letter, A–G, next to questions 24–27.',
           items: [
-            { num: 24, stem: 'One of the brain\'s most difficult tasks is to', answer: 'C' },
-            { num: 25, stem: 'Because of the language they have developed, humans', answer: 'A' },
-            { num: 26, stem: 'Individual responses to humour', answer: 'F' },
-            { num: 27, stem: 'Peter Derks believes that humour', answer: 'D' },
+            { num: 24, stem: 'Material efficiency can', answer: 'B' },
+            { num: 25, stem: 'Existing building standards may', answer: 'E' },
+            { num: 26, stem: 'Common accounting rules help buyers', answer: 'G' },
+            { num: 27, stem: 'Carbonation during a building’s life', answer: 'D' },
           ],
           endings: [
-            { letter: 'A', text: 'react to their own thoughts.' },
-            { letter: 'B', text: 'helped create language in humans.' },
-            { letter: 'C', text: 'respond instantly to whatever is happening.' },
-            { letter: 'D', text: 'may provide valuable information about the operation of the brain.' },
-            { letter: 'E', text: 'cope with difficult situations.' },
-            { letter: 'F', text: 'relate to a person\'s subjective views.' },
-            { letter: 'G', text: 'led our ancestors to smile and then laugh.' },
+            { letter: 'A', text: 'eliminate the need to test structural materials.' },
+            { letter: 'B', text: 'reduce the total volume of concrete required.' },
+            { letter: 'C', text: 'make captured carbon free to transport.' },
+            { letter: 'D', text: 'returns only a limited amount of carbon dioxide.' },
+            { letter: 'E', text: 'delay the adoption of unfamiliar mixtures.' },
+            { letter: 'F', text: 'guarantee identical performance in every climate.' },
+            { letter: 'G', text: 'compare emissions claims on a consistent basis.' },
           ],
         },
       ],
@@ -639,29 +661,29 @@ Area active when punchline arrives (evaluating information): {{23}}`,
     {
       part: 7,
       skill: 'reading',
-      title: 'Reading Passage 3: The Birth of Scientific English',
+      title: 'Reading Passage 3: When Volunteers Become Instruments',
       instructions: 'Read the passage and answer Questions 28–40.',
-      passage: `World science is dominated today by a small number of languages, including Japanese, German and French, but it is English which is probably the most popular global language of science. This is not just because of the importance of English-speaking countries such as the USA in scientific research; the scientists of many non-English-speaking countries find that they need to write their research papers in English to reach a wide international audience. Given the prominence of scientific English today, it may seem surprising that no one really knew how to write science in English before the 17th century. Before that, Latin was regarded as the lingua franca for European intellectuals.
+      passage: `When Volunteers Become Instruments
 
-The European Renaissance (circa 14th-16th century) is sometimes called the 'revival of learning', a time of renewed interest in the 'lost knowledge' of classical times. At the same time, however, scholars also began to test and extend this knowledge. The emergent nation states of Europe developed competitive interests in world exploration and the development of trade. Such expansion, which was to take the English language west to America and east to India, was supported by scientific developments such as the discovery of magnetism (and hence the invention of the compass), improvements in cartography and — perhaps the most important scientific revolution of them all — the new theories of astronomy and the movement of the Earth in relation to the planets and stars, developed by Copernicus (1473-1543).
+A research team can place only so many sensors, inspect only so many photographs and visit only so many beaches. Citizen-science projects attempt to extend that reach by inviting members of the public to make observations or classify existing records. Volunteers have counted birds, measured rainfall, photographed clouds and searched telescope images for unusual objects. The attraction is scale: thousands of participants can collect information across a larger area or a longer period than a small professional team could cover alone. Yet a large file is not automatically a reliable scientific dataset.
 
-England was one of the first countries where scientists adopted and publicised Copernican ideas with enthusiasm. Some of these scholars, including two with interests in language — John Wilkins and John Wallis — helped found the Royal Society in 1660 in order to promote empirical scientific research.
+Quality begins before the first observation. Researchers must decide what question the project is intended to answer and write a protocol that ordinary participants can follow. A request to “report interesting insects” leaves each person to define both “interesting” and “insect”. A better protocol specifies where to look, how long to search and which features must appear in a photograph. Short training exercises can reveal whether the instructions work. If many beginners make the same mistake, the design may need revision rather than a lecture blaming the volunteers.
 
-Across Europe similar academies and societies arose, creating new national traditions of science. In the initial stages of the scientific revolution, most publications in the national languages were popular works, encyclopaedias, educational textbooks and translations. Original science was not done in English until the second half of the 17th century. For example, Newton published his mathematical treatise, known as the Principia, in Latin, but published his later work on the properties of light — Optics — in English.
+Every record also needs context. A photograph without a date or location may be attractive but scientifically weak. Useful metadata can include time, coordinates, weather, the observer’s method and the type of instrument used. Projects should preserve negative observations too. Knowing that a participant searched a defined site for twenty minutes and found no frogs is different from receiving no report at all. The first is evidence of absence under stated conditions; the second could simply mean that nobody looked.
 
-There were several reasons why original science continued to be written in Latin. The first was simply a matter of audience. Latin was suitable for an international audience of scholars, whereas English reached a socially wider, but more local, audience. Hence, popular science was written in English.
+Measurements create a further problem because phones, thermometers and low-cost air sensors do not all behave identically. One response is calibration. A participant may compare an instrument with a reference device, photograph an object of known size or complete a test observation before submitting field data. Researchers can then detect a consistent bias and, where appropriate, correct for it. Calibration does not make an inexpensive sensor perfect, but it turns an unknown difference into something that can be estimated.
 
-A second reason for writing in Latin may, perversely, have been a concern for secrecy. Open publication had dangers in putting into the public domain preliminary ideas which had not yet been fully exploited by their 'author'. This growing concern about intellectual property rights was a feature of the period — it reflected both the humanist notion of the individual, rational scientist who invents and discovers through private intellectual labour, and the growing connection between original science and commercial exploitation.
+Other projects depend on judgement rather than measurement. A faint galaxy, for example, might be described as spiral by one person and irregular by another. Instead of accepting the first label, a platform can show the same image independently to several volunteers. If most classifications agree, their consensus may be more dependable than any single response. Disagreement is useful too: it can identify ambiguous cases for expert review. Automated systems can process enormous image collections, but human observers remain valuable when rare or unfamiliar patterns fall outside the examples used to train an algorithm. The strongest projects often combine the two.
 
-There was something of a social distinction between 'scholars and gentlemen' who understood Latin, and men of trade who lacked a classical education. And in the mid-17th century it was common practice for mathematicians to keep their discoveries and proofs secret, by writing them in cipher, in obscure languages, or in private messages deposited in a sealed box with the Royal Society. Some scientists might have felt more comfortable with Latin precisely because its audience, though international, was socially restricted. Doctors clung the most keenly to Latin as an 'insider language'.
+Professional checks therefore continue after submission. Software can flag impossible coordinates, duplicate photographs or temperatures outside a plausible range. Experts may inspect a sample of ordinary records and all unusual ones. Some projects compare volunteer observations with established monitoring stations; others repeat a survey using trained staff. These procedures estimate error instead of pretending that it does not exist. Importantly, a suspicious record is not always a mistake. An apparent outlier may be the first sign of a genuine event, so automatic deletion can remove the discovery a project was designed to find.
 
-A third reason why the writing of original science in English was delayed may have been to do with the linguistic inadequacy of English in the early modern period. English was not well equipped to deal with scientific argument. First, it lacked the necessary technical vocabulary. Second, it lacked the grammatical resources required to represent the world in an objective and impersonal way, and to discuss the relations, such as cause and effect, that might hold between complex and hypothetical entities.
+Even perfectly recorded observations can give a distorted picture. Volunteers tend to visit places that are accessible, safe or visually appealing. A city park beside a railway station may consequently produce hundreds of records while an industrial fringe produces almost none. This selection bias cannot be repaired merely by recruiting more people in the popular park. Project leaders may divide a region into sampling cells, assign under-represented sites or weight results during analysis. They must also explain the remaining gaps when publishing conclusions.
 
-Fortunately, several members of the Royal Society possessed an interest in language and became engaged in various linguistic projects. Although a proposal in 1664 to establish a committee for improving the English language came to little, the society's members did a great deal to foster the publication of science in English and to encourage the development of a suitable writing style. Many members of the Royal Society also published monographs in English. One of the first was by Robert Hooke, the society's first curator of experiments, who described his experiments with microscopes in Micrographia (1665). This work is largely narrative in style, based on a transcript of oral demonstrations and lectures.
+The appropriate standard depends on the use of the data. A classroom project mapping the first flowers of spring can tolerate more uncertainty than a system issuing flood warnings. Researchers sometimes describe this as being fit for purpose. Citizen science is not a universal substitute for professional monitoring, but neither is it merely public entertainment. With a clear question, consistent methods and a documented quality-assurance plan, volunteer observations can complement official networks and reveal patterns that would otherwise remain invisible.
 
-In 1665 a new scientific journal, Philosophical Transactions, was inaugurated. Perhaps the first international English-language scientific journal, it encouraged a new genre of scientific writing, that of short, focused accounts of particular experiments.
+Publication should therefore state the intended use, uncertainty and limits of every collection plainly.
 
-The 17th century was thus a formative period in the establishment of scientific English. In the following century much of this momentum was lost as German established itself as the leading European language of science. It is estimated that by the end of the 18th century 401 German scientific journals had been established as opposed to 96 in France and 50 in England. However, in the 19th century scientific English again enjoyed substantial lexical growth as the industrial revolution created the need for new technical vocabulary, and new, specialised, professional societies were instituted to promote and publish in the new disciplines.`,
+Participants themselves are part of that quality system. Prompt feedback helps people correct errors, while maps and research updates show that their effort has value. Projects that collect precise locations must also protect privacy and may need to hide records of threatened species. Retaining volunteers is easier when researchers explain both what the data can establish and what it cannot. Trust grows not from claiming perfection, but from making the path from observation to conclusion visible.`,
       questions: [
         {
           type: 'formgroup',
@@ -669,40 +691,30 @@ The 17th century was thus a formative period in the establishment of scientific 
           part: 7,
           qRange: [28, 34],
           groupLabel: 'Complete the summary.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `In Europe modern science emerged at the same time as the nation state. At first, the scientific language of choice remained {{28}}.
-
-It allowed scientists to communicate with other socially privileged thinkers while protecting their work from unwanted exploitation.
-
-Sometimes the desire to protect ideas seems to have been stronger than the desire to communicate them, particularly in the case of mathematicians and {{29}}.
-
-In Britain, moreover, scientists worried that English had neither the {{30}} nor the {{31}} to express their ideas.
-
-This situation only changed after 1660 when scientists associated with the {{32}} set about developing English.
-
-Although English was then overtaken by {{33}}, it developed again in the 19th century as a direct result of the {{34}}.`,
+          template: `Citizen-science projects allow research to operate at a greater {{28}} than a small professional team could manage. Reliability starts with a clear research question and a {{29}} that participants can follow. Each observation should include contextual {{30}}, such as its time and location. When different devices are used, {{31}} can reveal a consistent measurement bias. For tasks involving judgement, several independent classifications can produce a {{32}}. Researchers must still account for {{33}}, because volunteers may favour convenient places. They should also retain {{34}} so that a missing report is not confused with evidence that nothing was found.`,
           blanks: [
-            { num: 28, answers: ['Latin'], maxWords: 1 },
-            { num: 29, answers: ['doctors'], maxWords: 1 },
-            { num: 30, answers: ['technical vocabulary', 'vocabulary'], maxWords: 2 },
-            { num: 31, answers: ['grammatical resources', 'grammatical'], maxWords: 2 },
-            { num: 32, answers: ['Royal Society'], maxWords: 2 },
-            { num: 33, answers: ['German'], maxWords: 1 },
-            { num: 34, answers: ['industrial revolution'], maxWords: 2 },
+            { num: 28, answers: ['scale'], maxWords: 1 },
+            { num: 29, answers: ['protocol'], maxWords: 1 },
+            { num: 30, answers: ['metadata'], maxWords: 1 },
+            { num: 31, answers: ['calibration'], maxWords: 1 },
+            { num: 32, answers: ['consensus'], maxWords: 1 },
+            { num: 33, answers: ['selection bias'], maxWords: 2 },
+            { num: 34, answers: ['negative observations'], maxWords: 2 },
           ],
         },
         {
           type: 'mcq',
           id: 'r3q35',
           part: 7,
-          text: 'There was strong competition between scientists in Renaissance Europe.',
+          text: 'Citizen-science data are useful only when every volunteer observes the same location.',
           options: ['YES', 'NO', 'NOT GIVEN'],
-          answer: 2,
+          answer: 1,
         },
         {
           type: 'mcq',
           id: 'r3q36',
           part: 7,
-          text: 'The most important scientific development of the Renaissance period was the discovery of magnetism.',
+          text: 'Automated classification has made human observers unnecessary in image-based projects.',
           options: ['YES', 'NO', 'NOT GIVEN'],
           answer: 1,
         },
@@ -710,9 +722,9 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           type: 'mcq',
           id: 'r3q37',
           part: 7,
-          text: 'In 17th century Britain, leading thinkers combined their interest in science with an interest in how to express ideas.',
+          text: 'Financial payment is the main reason volunteers remain involved in citizen-science projects.',
           options: ['YES', 'NO', 'NOT GIVEN'],
-          answer: 0,
+          answer: 2,
         },
         {
           type: 'tablegroup',
@@ -720,11 +732,11 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           part: 7,
           qRange: [38, 40],
           groupLabel: 'Complete the table.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.',
-          headers: ['', 'Latin', 'English'],
+          headers: ['Risk to the data', 'Quality-control response'],
           rows: [
-            ['Type of science', 'Original', { num: 38, answers: ['popular'], maxWords: 1 }],
-            ['Examples', 'Treatises (e.g. Principia)', { num: 39, answers: ['encyclopaedias', 'Encyclopaedias', 'educational textbooks'], maxWords: 2 }],
-            ['Target audience', 'International scholars', { num: 40, answers: ['local'], maxWords: 1 }],
+            ['Instruments produce systematically different readings', { num: 38, answers: ['calibration'], maxWords: 1 }],
+            ['Participants concentrate on convenient or attractive sites', { num: 39, answers: ['selection bias'], maxWords: 2 }],
+            ['Researchers cannot distinguish “nothing found” from “nobody looked”', { num: 40, answers: ['negative observations'], maxWords: 2 }],
           ],
         },
       ],
@@ -743,10 +755,10 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           id: 'w1',
           part: 8,
           taskNumber: 1,
-          stimulusLabel: 'The bar chart below shows the hours per week that teenagers spend doing certain activities in Chester from 2002 to 2007.',
+          stimulusLabel: 'The bar chart below shows the average daily electricity used by households in Westhaven for five purposes in winter and summer 2025.',
           stimulus: '',
-          imageUrl: '/ielts/images/writing-set1-task1-chester.png',
-          imageAlt: 'Bar chart: hours per week teenagers in Chester spent on activities 2002–2007',
+          imageUrl: '/assets/ielts/charts/set1-task1.svg',
+          imageAlt: 'Grouped bar chart comparing average daily household electricity use by purpose in winter and summer 2025',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.',
           minWords: 150,
         },
@@ -764,7 +776,7 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'In some countries, many more people are choosing to live alone nowadays than in the past. Do you think this is a positive or negative development?',
+          stimulus: 'Some people believe that cities should convert vacant office buildings into homes before allowing new housing to be built on undeveloped land. To what extent do you agree or disagree?',
           text: 'Give reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.',
           minWords: 250,
         },
@@ -786,11 +798,14 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           partNumber: 1,
           text: 'Part 1 — Personal questions (4–5 minutes). Answer the following questions about yourself.',
           followUp: [
-            'Do you work or are you a student?',
-            'What do you enjoy most about your work/studies?',
-            'Where do you come from? What do you like about your hometown?',
-            'Do you enjoy cooking? Why / why not?',
-            'What kind of food do you usually eat?',
+            'Do you live in a house or an apartment?',
+            'Which room do you spend the most time in?',
+            'Is there anything you would like to change about your home?',
+            'Do you usually make plans for your weekends?',
+            'What did you enjoy doing at weekends when you were a child?',
+            'Do you prefer quiet or busy weekends? Why?',
+            'Is there an object in your home that you use every day?',
+            'Do people in your area often lend things to their neighbours?',
           ],
         },
         {
@@ -799,14 +814,15 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           part: 10,
           partNumber: 2,
           text: 'Part 2 — Individual long turn (3–4 minutes). Read the cue card and prepare for 1 minute, then speak for 1–2 minutes.',
-          cueCard: `Describe a time when you visited a friend or family member at their workplace.
+          cueCard: `Describe a useful object that you or someone you know repaired instead of replacing.
 
 You should say:
-  - who you visited and where they work
-  - why you visited them there
-  - what you did during your visit
+• what the object was
+• what was wrong with it
+• who repaired it and how
+• how long the repair took
 
-and explain how you felt about the experience.`,
+and explain why repairing it was worthwhile.`,
         },
         {
           type: 'speak',
@@ -815,11 +831,12 @@ and explain how you felt about the experience.`,
           partNumber: 3,
           text: 'Part 3 — Two-way discussion (4–5 minutes). Discuss the following questions.',
           followUp: [
-            'What kinds of jobs do young people find most attractive, and why?',
-            'How important is it for people to do work that they enjoy?',
-            'Do you think job satisfaction or salary is more important? Why?',
-            'How might the world of work change in the future?',
-            'Is it good for people to change jobs frequently, or is it better to stay in the same job?',
+            'Why do some people replace products rather than repair them?',
+            'Which practical repair skills should children learn, if any?',
+            'How has the design of modern products affected people’s ability to repair them?',
+            'Should manufacturers be required to provide spare parts for longer periods?',
+            'What could governments do to encourage repair and reuse?',
+            'Do you think repair businesses will become more common in the future?',
           ],
         },
       ],
