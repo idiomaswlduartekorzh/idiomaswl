@@ -1,5 +1,7 @@
 import {
+  CALDAS_FIRST_SPECIALTIES_2027,
   MEDICAL_EDITORIAL_TAXONOMY,
+  MEDICAL_MVP_AUDIT_LOG,
   MEDICAL_RESIDENCY_BLUEPRINTS,
   MEDICAL_RESIDENCY_OFFICIAL_SOURCES,
 } from '../src/data/medical-residency/index.ts';
@@ -115,6 +117,28 @@ for (const domain of MEDICAL_EDITORIAL_TAXONOMY) {
   if (!domain.childTopics.length) fail(`taxonomy.${domain.id}`, 'debe tener temas hijos');
 }
 checkUnique(MEDICAL_EDITORIAL_TAXONOMY.map((domain) => domain.id), 'taxonomía');
+
+checkUnique(CALDAS_FIRST_SPECIALTIES_2027.map((specialty) => specialty.slug), 'especialidades-caldas');
+if (CALDAS_FIRST_SPECIALTIES_2027.length !== 7) {
+  fail('especialidades-caldas', 'la convocatoria modelada exige exactamente siete primeras especialidades');
+}
+
+checkUnique(MEDICAL_MVP_AUDIT_LOG.map((entry) => entry.id), 'auditoría-mvp');
+for (const [index, entry] of MEDICAL_MVP_AUDIT_LOG.entries()) {
+  if (entry.sequence !== index + 1) fail(entry.id, 'la secuencia de auditoría debe ser continua');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(entry.recordedAt)) fail(entry.id, 'recordedAt debe usar YYYY-MM-DD');
+  if (!entry.artifacts.length) fail(entry.id, 'debe registrar al menos un artefacto');
+  checkSourceReferences(entry.sourceIds, `${entry.id}.sourceIds`);
+  if (entry.status === 'completed' && !entry.verification.length) {
+    fail(entry.id, 'una fase completada debe registrar verificaciones');
+  }
+  if (entry.status === 'blocked' && !entry.blockers.length) {
+    fail(entry.id, 'una fase bloqueada debe explicar sus bloqueos');
+  }
+  if (entry.status !== 'blocked' && entry.blockers.length) {
+    fail(entry.id, 'solo una fase bloqueada puede conservar bloqueos');
+  }
+}
 
 const atlantico = MEDICAL_RESIDENCY_BLUEPRINTS.find((blueprint) => blueprint.slug === 'uniatlantico');
 if (!atlantico || atlantico.readiness !== 'monitor-only') {

@@ -1,7 +1,7 @@
 # Arquitectura de producto — Qbank de residencias médicas Colombia
 
 Última revisión: 2026-08-28
-Estado: contrato base implementado; sin rutas públicas, migraciones ni contenido clínico.
+Estado: contrato y MVP navegable implementados; sin migraciones ni contenido clínico.
 
 ## 1. Resultado de producto
 
@@ -300,12 +300,16 @@ No se muestra “probabilidad de admisión” hasta contar con resultados reales
 - guardián y pruebas;
 - flujo editorial, negocio y UX documentados.
 
-### Fase 1 — prototipo vertical
+### Fase 1 — prototipo vertical, corte navegable completado
 
-- wireframes de onboarding, estudio, examen y reporte;
-- Caldas/Medicina Interna con contenido ficticio claramente marcado, solo para probar interacción;
-- contrato de sesión e intentos;
-- prueba móvil y accesibilidad.
+- navegador de nueve perfiles con estados de evidencia;
+- ficha por universidad derivada del blueprint;
+- generador reproducible de plan Caldas 2027 mediante GET;
+- validación de entrada cerrada y estado de error accesible;
+- prueba visual en escritorio y móvil;
+- rutas en `noindex` mientras el producto siga siendo MVP.
+
+Pendiente dentro de la fase: prototipo de pregunta, explicación y reporte con contenido sintético; contrato persistente de sesión e intentos.
 
 ### Fase 2 — piloto clínico
 
@@ -334,7 +338,7 @@ No se muestra “probabilidad de admisión” hasta contar con resultados reales
 ## 11. Decisiones explícitamente diferidas
 
 - no hay migración de base de datos;
-- no hay rutas públicas;
+- las rutas navegables permanecen en `noindex` y no se agregan al sitemap;
 - no hay checkout nuevo;
 - no hay instalación de Zod, FSRS u observabilidad;
 - no hay contenido médico real;

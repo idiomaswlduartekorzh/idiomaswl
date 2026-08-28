@@ -85,6 +85,7 @@ public/audio/**/piloto-*.mp3
 # Artefactos de Playwright: cachés y trazas de las sesiones de prueba, no producto.
 /.playwright-cli/
 /.playwright-mcp/
+output/playwright/
 
 # Playwright — segunda auditoría
 test-results/

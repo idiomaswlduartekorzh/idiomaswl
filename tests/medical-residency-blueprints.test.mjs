@@ -60,3 +60,48 @@ test('Universidad Libre conserva el formato oficial y la ponderación incompleta
   );
   assert.equal(blueprint.capabilities.cvPreparation, false);
 });
+
+test('el plan de Caldas es reproducible y conserva la proporción oficial 40+20', async () => {
+  const {
+    createCaldasStudyPlan,
+    parseCaldasStudyPlanInput,
+  } = await import('../src/data/medical-residency/mvp-plan.ts');
+
+  const input = parseCaldasStudyPlanInput({
+    especialidad: 'medicina-interna',
+    semanas: '12',
+    horas: '6',
+  });
+
+  assert.ok(input);
+  const plan = createCaldasStudyPlan(input);
+  assert.equal(plan.blueprintVersion, 'ucaldas-2027.v1');
+  assert.equal(plan.totalHours, 72);
+  assert.deepEqual(plan.weeklyAllocation.map(({ hours }) => hours), [4, 2]);
+  assert.deepEqual(
+    plan.weeklyAllocation.map(({ officialQuestionShare }) => officialQuestionShare),
+    ['40 de 60 preguntas', '20 de 60 preguntas'],
+  );
+});
+
+test('el generador rechaza parámetros fuera del contrato auditado', async () => {
+  const { parseCaldasStudyPlanInput } = await import(
+    '../src/data/medical-residency/mvp-plan.ts'
+  );
+
+  assert.equal(parseCaldasStudyPlanInput({
+    especialidad: 'neurocirugia',
+    semanas: '999',
+    horas: '-3',
+  }), null);
+});
+
+test('el log del MVP es secuencial y mantiene bloqueado el contenido clínico', async () => {
+  const { MEDICAL_MVP_AUDIT_LOG } = await import(
+    '../src/data/medical-residency/mvp-audit.ts'
+  );
+
+  assert.deepEqual(MEDICAL_MVP_AUDIT_LOG.map(({ sequence }) => sequence), [1, 2, 3, 4]);
+  assert.equal(MEDICAL_MVP_AUDIT_LOG.at(-1)?.status, 'blocked');
+  assert.match(MEDICAL_MVP_AUDIT_LOG.at(-1)?.phase ?? '', /lote clínico/i);
+});
