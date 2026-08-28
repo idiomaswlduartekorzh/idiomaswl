@@ -5,12 +5,12 @@
   "status": "content-golden-audio-timing-replacement-pending",
   "metrics": {
     "listeningResponses": 40,
-    "listeningWords": 2866,
+    "listeningWords": 2870,
     "listeningPartWords": [
       704,
       697,
       734,
-      731
+      735
     ],
     "readingResponses": 40,
     "readingWords": 2193,
@@ -56,11 +56,11 @@
     "reading: numbering covers 1–40 exactly.",
     "reading: no duplicate response numbers.",
     "Listening has 4 parts and 40 responses.",
-    "Listening has 2866 transcript words (minimum 2800).",
+    "Listening has 2870 transcript words (minimum 2800).",
     "Listening Part 1 has 704 words within 680–760.",
     "Listening Part 2 has 697 words within 680–760.",
     "Listening Part 3 has 734 words within 680–760.",
-    "Listening Part 4 has 731 words within 680–760.",
+    "Listening Part 4 has 735 words within 680–760.",
     "Reading has 3 passages and 40 responses.",
     "Reading has 2193 words within 2,150–2,750.",
     "l1-form Q1 has an accepted key.",
@@ -321,6 +321,6 @@
   ],
   "failures": [],
   "deferred": [
-    "Replace or reassemble Listening only after the expanded script passes the timing-density gate; preserve the owner-acceptance history."
+    "Reassemble the expanded Listening script without padding, repeat technical/ASR QA and preserve the owner-acceptance history."
   ]
 }

@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set12-audit-2026-08-28.json',
   expectedMediaStatus: 'legacy-audio-under-review',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     "Today, they face an unprecedented convergence of threats that scientists warn could eliminate most of the world's reefs within decades",
     'The origins lie in the Indian subcontinent, where a game called chaturanga',

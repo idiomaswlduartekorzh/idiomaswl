@@ -5,12 +5,12 @@
   "status": "content-golden-audio-replacement-pending",
   "metrics": {
     "listeningResponses": 40,
-    "listeningWords": 2922,
+    "listeningWords": 2926,
     "listeningPartWords": [
       727,
       729,
       728,
-      738
+      742
     ],
     "readingResponses": 40,
     "readingWords": 2154,
@@ -58,11 +58,11 @@
     "reading: numbering covers 1–40 exactly.",
     "reading: no duplicate response numbers.",
     "Listening has 4 parts and 40 responses.",
-    "Listening has 2922 transcript words (minimum 2800).",
+    "Listening has 2926 transcript words (minimum 2800).",
     "Listening Part 1 has 727 words within 680–760.",
     "Listening Part 2 has 729 words within 680–760.",
     "Listening Part 3 has 728 words within 680–760.",
-    "Listening Part 4 has 738 words within 680–760.",
+    "Listening Part 4 has 742 words within 680–760.",
     "Reading has 3 passages and 40 responses.",
     "Reading has 2154 words within 2,150–2,750.",
     "l1-form Q1 has an accepted key.",

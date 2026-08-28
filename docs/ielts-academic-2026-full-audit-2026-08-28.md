@@ -26,8 +26,8 @@ punta a punta.
 | Respuestas Listening por set | 40/40 |
 | Respuestas Reading por set | 40/40 |
 | Palabras por Reading | 2.150–2.468 |
-| Palabras por guion Listening | 2.204–2.963 |
-| Guiones que superan el proxy temporal de 2.800 palabras | 10/20 (Sets 1–10) |
+| Palabras por guion Listening | 2.376–2.967 |
+| Guiones que superan el proxy temporal de 2.800 palabras | 15/20 (Sets 1–15) |
 | Writing | Task 1 + Task 2 en 20/20 |
 | Speaking | Parts 1–3 en 20/20 |
 | Claves objetivas expuestas al cliente | 0 |
@@ -43,10 +43,11 @@ Estado real del audio:
 - Set 5: el guion de referencia ya tiene 2.909 palabras (729/721/737/722 por parte),
   pero su candidato v2 de 29:00 quedó obsoleto frente a ese texto y además fue rechazado:
   sólo 737,066 s audibles y una cola muda de 242,318 s.
-- Sets 6–10: los guiones ya pasan el proxy temporal con 2.869–2.963 palabras; sus MP3
+- Sets 6–10: los guiones ya pasan el proxy temporal con 2.869–2.967 palabras; sus MP3
   heredados de 24:00 siguen siendo reemplazo obligatorio.
-- Sets 11–12: guiones aún por ampliar y MP3 heredados de 24:00; reemplazo obligatorio.
-- Sets 13–20: MP3 integral inexistente; la interfaz excluye Listening de forma explícita.
+- Sets 11–12: guiones en rango; sus MP3 heredados de 24:00 requieren reemplazo.
+- Sets 13–15: guiones en rango y MP3 integral inexistente; la interfaz excluye Listening.
+- Sets 16–20: guiones aún por ampliar y MP3 integral inexistente.
 
 El auditor global termina deliberadamente `BLOCKED (23)`: dos gates por cada Set 1–3,
 uno de fidelidad temporal por cada Set 4–12 y uno por cada Set 13–20. No existe otro bloqueo editorial,
@@ -126,7 +127,7 @@ proveniencia y ya no se sirven en el simulacro.
 
 El cierre no-audio está fijado además por el manifiesto
 `docs/ielts-non-audio-closure-2026-08-28.json`, con SHA-256 de cierre
-`b396a2c276722f216e901b286fb8a4629fa7abf2add0eb6812b72ba79b25c632`. El guardián
+`d6a509e3f4c93889bdf223edb0d2c012dc20f92a0af6def7c3e77c548cd13c5b`. El guardián
 repite las 20 auditorías en vivo y liga cada resultado al mock actual, su auditor, las
 transformaciones compartidas, la proyección pública y el gráfico Task 1. Cualquier cambio
 sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los registros
@@ -135,10 +136,10 @@ sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los
 ## Plan de audio y criterio de salida
 
 El manifiesto de planificación vigente tiene SHA-256
-`7f793d380be79101ae02bd28ff9ef7364ecca5ea4ce51c224f99e220ed6004e6`, 53.230
-palabras fuente y un déficit temporal conservador de 3.911 palabras hasta 2.800 por Set.
-La proyección de los guiones ampliados es 348.612 caracteres, 174.306 créditos y
-USD 17,4306 antes de impuestos y reintentos. `generationAuthorized=false`: el propio
+`da27b1e806793ec6b710ce7c4f62aaf41f57da8b2deafac84f30f6b3c4090bb5`, 55.869
+palabras fuente y un déficit temporal conservador de 1.901 palabras hasta 2.800 por Set.
+La proyección de los guiones ampliados es 353.555 caracteres, 176.778 créditos y
+USD 17,6777 antes de impuestos y reintentos. `generationAuthorized=false`: el propio
 generador rechaza cualquier llamada al proveedor mientras el gate siga bloqueado.
 
 Sets 4 y 5 conservan 27.427 caracteres históricos para reutilización selectiva únicamente

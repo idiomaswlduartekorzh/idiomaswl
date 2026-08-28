@@ -69,5 +69,5 @@ runGoldenContentAudit({
     'Removed a disputed exact dog-domestication date and clarified herd-animal benefits.',
     'Reclassified the published Listening master after the new official-sample timing audit detected a 141.545-second silent tail.',
   ],
-  deferred: ['Replace or reassemble Listening only after the expanded script passes the timing-density gate; preserve the owner-acceptance history.'],
+  deferred: ['Reassemble the expanded Listening script without padding, repeat technical/ASR QA and preserve the owner-acceptance history.'],
 });

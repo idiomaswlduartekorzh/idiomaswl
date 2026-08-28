@@ -150,7 +150,7 @@ const report = {
   ],
   evidence,
   failures,
-  deferred: ['Expand the Listening script to the timing-density floor, reassemble without padding, repeat technical/ASR QA, then request human acceptance.'],
+  deferred: ['Reassemble the current Listening script without padding, repeat technical/ASR QA, then request human acceptance.'],
 };
 
 if (process.argv.includes('--write')) {

@@ -39,7 +39,7 @@
     ]
   },
   "currentPlan": {
-    "manifestSha256": "7f793d380be79101ae02bd28ff9ef7364ecca5ea4ce51c224f99e220ed6004e6",
+    "manifestSha256": "da27b1e806793ec6b710ce7c4f62aaf41f57da8b2deafac84f30f6b3c4090bb5",
     "sourceCompatible": false,
     "supersededByExpandedTimingReferenceScript": true,
     "preserveIndividualSegmentsForHashMatchedReuse": true

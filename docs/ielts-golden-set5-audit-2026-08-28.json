@@ -167,6 +167,6 @@
   ],
   "failures": [],
   "deferred": [
-    "Expand the Listening script to the timing-density floor, reassemble without padding, repeat technical/ASR QA, then request human acceptance."
+    "Reassemble the current Listening script without padding, repeat technical/ASR QA, then request human acceptance."
   ]
 }
