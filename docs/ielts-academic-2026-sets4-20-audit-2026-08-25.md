@@ -143,6 +143,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   de 2026, comparaciones de ciclo de vida para cultivo vertical y límites empíricos de
   la aversión a la pérdida. Se sustituyó el prompt público de financiación artística,
   y el proceso solar pasó inspección visual y semántica accesible. Su audio sigue diferido.
+- El Set 9 superó 237 controles Golden. Sus guiones Listening conservan el orden de
+  evidencia y añaden discurso natural específico; Reading fue actualizado con fuentes
+  WHO, ONU/Seabed 2030, ILO y OECD de 2025–2026. Se reemplazó el Task 2 público sobre
+  zoológicos por uno original de ciencia ciudadana. El gráfico de cinco áreas quedó
+  alineado en categorías, años y miles, y pasó inspección renderizada y semántica.
+  Sólo queda diferido su audio Listening.
 
 ## Auditoría final no-audio
 

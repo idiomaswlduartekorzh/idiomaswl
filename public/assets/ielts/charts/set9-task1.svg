@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" role="img" aria-labelledby="title desc" font-family="system-ui,sans-serif">
+  <title id="title">University enrolment in five subject areas, 2005 and 2023</title>
+  <desc id="desc">Grouped bars show enrolment in thousands for Business and Management, Computer Science, Engineering, Health Sciences and Humanities in 2005 and 2023.</desc>
   <rect width="680" height="400" fill="#fafafa" rx="8"/>
   <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">University Enrolment by Subject Area — 2005 vs 2023 (thousands)</text>
 

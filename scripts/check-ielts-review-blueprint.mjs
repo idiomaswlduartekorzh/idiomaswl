@@ -65,4 +65,10 @@ const set8Task1 = set8.sections.flatMap(section => section.questions).find(quest
 assert.match(set8Task1.stimulus, /solar-panel.*home.*battery storage.*national grid/i, 'Set 8: la consigna debe describir el sistema y sus tres destinos')
 assert.match(set8Task1.imageAlt, /direct current.*inverter.*alternating current/i, 'Set 8: el texto alternativo debe explicar la conversión DC a AC')
 
+const { default: set9 } = await import('../src/data/mocks/ielts-set-9.ts')
+const set9Task1 = set9.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set9Task1.stimulus, /five university subject areas.*2005.*2023/i, 'Set 9: la consigna debe coincidir con las cinco categorías y los dos años')
+assert.match(set9Task1.stimulus, /in thousands/i, 'Set 9: la consigna debe declarar la unidad del gráfico')
+assert.match(set9Task1.imageAlt, /Business and Management.*Computer Science.*Engineering.*Health Sciences.*Humanities/i, 'Set 9: el texto alternativo debe enumerar las cinco áreas')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')
