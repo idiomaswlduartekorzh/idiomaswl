@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" font-family="system-ui, sans-serif" role="img" aria-labelledby="title description">
+  <title id="title">Average weekday passengers on three public transport services in Larton</title>
+  <desc id="description">Line graph showing passenger numbers in thousands for metro, tram and ferry services in 2010, 2015, 2020 and 2025. All three fall in 2020 and recover by 2025.</desc>
+  <rect width="780" height="440" rx="10" fill="#fff"/>
+  <text x="390" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#18233f">Average weekday passengers in Larton, 2010–2025</text>
+  <text x="20" y="220" text-anchor="middle" font-size="11" fill="#52617d" transform="rotate(-90 20 220)">Passengers (thousands)</text>
+  <line x1="80" y1="55" x2="80" y2="350" stroke="#78849b"/>
+  <line x1="80" y1="350" x2="735" y2="350" stroke="#78849b"/>
+  <g stroke="#dde2eb" stroke-dasharray="4 4">
+    <line x1="80" y1="300" x2="735" y2="300"/><line x1="80" y1="250" x2="735" y2="250"/>
+    <line x1="80" y1="200" x2="735" y2="200"/><line x1="80" y1="150" x2="735" y2="150"/>
+    <line x1="80" y1="100" x2="735" y2="100"/><line x1="80" y1="50" x2="735" y2="50"/>
+  </g>
+  <g text-anchor="end" font-size="10" fill="#52617d">
+    <text x="72" y="354">0</text><text x="72" y="304">50</text><text x="72" y="254">100</text>
+    <text x="72" y="204">150</text><text x="72" y="154">200</text><text x="72" y="104">250</text><text x="72" y="54">300</text>
+  </g>
+  <g text-anchor="middle" font-size="11" fill="#293652">
+    <text x="135" y="372">2010</text><text x="320" y="372">2015</text><text x="505" y="372">2020</text><text x="690" y="372">2025</text>
+  </g>
+  <polyline points="135,170 320,130 505,200 690,90" fill="none" stroke="#2448a5" stroke-width="4"/>
+  <polyline points="135,260 320,240 505,270 690,210" fill="none" stroke="#d69a25" stroke-width="4"/>
+  <polyline points="135,290 320,295 505,320 690,300" fill="none" stroke="#29836f" stroke-width="4"/>
+  <g fill="#2448a5"><circle cx="135" cy="170" r="5"/><circle cx="320" cy="130" r="5"/><circle cx="505" cy="200" r="5"/><circle cx="690" cy="90" r="5"/></g>
+  <g fill="#d69a25"><circle cx="135" cy="260" r="5"/><circle cx="320" cy="240" r="5"/><circle cx="505" cy="270" r="5"/><circle cx="690" cy="210" r="5"/></g>
+  <g fill="#29836f"><circle cx="135" cy="290" r="5"/><circle cx="320" cy="295" r="5"/><circle cx="505" cy="320" r="5"/><circle cx="690" cy="300" r="5"/></g>
+  <line x1="260" y1="410" x2="290" y2="410" stroke="#2448a5" stroke-width="4"/><text x="298" y="414" font-size="11" fill="#293652">Metro</text>
+  <line x1="370" y1="410" x2="400" y2="410" stroke="#d69a25" stroke-width="4"/><text x="408" y="414" font-size="11" fill="#293652">Tram</text>
+  <line x1="475" y1="410" x2="505" y2="410" stroke="#29836f" stroke-width="4"/><text x="513" y="414" font-size="11" fill="#293652">Ferry</text>
+</svg>
