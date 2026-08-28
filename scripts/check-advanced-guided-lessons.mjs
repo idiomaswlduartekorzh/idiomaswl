@@ -75,16 +75,12 @@ for (const lesson of GUIDED_ADVANCED_LESSONS) {
   if (forbiddenInterfaceSpanish.test(JSON.stringify(lesson))) problems.push(`${label}: contains Spanish interface copy`)
   if (lesson.discussion.questions.length < 5) problems.push(`${label}: fewer than five discussion questions`)
   if (lesson.reading.blocks.length < 6) problems.push(`${label}: fewer than six active-reading blocks`)
-  if (lesson.vocabulary.length < 8) problems.push(`${label}: fewer than eight vocabulary targets`)
-
-  if (['dunning-kruger-sin-la-curva', 'hipergamia-dato-o-relato'].includes(lesson.slug)) {
-    if (!lesson.openingStatements || lesson.openingStatements.statements.length < 6) problems.push(`${label}: opening statement selection is incomplete`)
-    for (const category of ['Phrasal verbs', 'Useful language', 'Adjectives', 'Nouns']) {
-      if (lesson.vocabulary.filter((item) => item.category === category).length < 5) problems.push(`${label}: vocabulary category ${category} needs at least five items`)
-    }
+  if (!lesson.openingStatements || lesson.openingStatements.statements.length < 6) problems.push(`${label}: opening statement selection is incomplete`)
+  for (const category of ['Phrasal verbs', 'Useful language', 'Adjectives', 'Nouns']) {
+    if (lesson.vocabulary.filter((item) => item.category === category).length < 5) problems.push(`${label}: vocabulary category ${category} needs at least five items`)
   }
 
-  validateChoiceSet(lesson.ieltsPractice.questions, `${label}/evidence-practice`, ['dunning-kruger-sin-la-curva', 'hipergamia-dato-o-relato'].includes(lesson.slug) ? 12 : 8)
+  validateChoiceSet(lesson.ieltsPractice.questions, `${label}/evidence-practice`, 12)
 
   if (lesson.listeningLab.status === 'produced') {
     if (lesson.listeningLab.tracks?.length !== 2) problems.push(`${label}: a produced listening lab needs exactly two tracks`)
@@ -96,7 +92,13 @@ for (const lesson of GUIDED_ADVANCED_LESSONS) {
       validateChoiceSet(track.questions, `${label}/${track.id}`, 4)
     }
   } else {
-    if (lesson.listeningLab.tracks?.length) problems.push(`${label}: pending listening lab cannot expose produced tracks`)
+    if (lesson.listeningLab.plannedTracks?.length !== 2) problems.push(`${label}: pending listening lab needs exactly two complete scripts`)
+    for (const track of lesson.listeningLab.plannedTracks ?? []) {
+      if (wordCount(track.transcript) < 300) problems.push(`${label}/${track.id}: planned transcript needs at least 300 words`)
+      if (!track.estimatedDuration.trim()) problems.push(`${label}/${track.id}: missing estimated duration`)
+      if (!track.function.trim() || !track.speaker.trim() || !track.title.trim()) problems.push(`${label}/${track.id}: incomplete production brief`)
+      validateChoiceSet(track.questions, `${label}/${track.id}`, 4)
+    }
     if (audioAssetReference.test(JSON.stringify(lesson))) problems.push(`${label}: contains an audio asset before production`)
   }
 }

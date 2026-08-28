@@ -104,8 +104,9 @@ export const ADVANCED_TOPICS: AdvancedTopic[] = [
     titleEn: 'Equivalent facts, different choices',
     premise: 'How a description can move a decision even when the underlying facts remain unchanged.',
     level: 'B2–C1',
-    minutes: 32,
+    minutes: 124,
     status: 'available',
+    caution: 'The complete guided blueprint and both C1 scripts are ready; only audio recording and mastering remain.',
   },
   {
     slug: 'heuristica-del-afecto',
@@ -115,8 +116,8 @@ export const ADVANCED_TOPICS: AdvancedTopic[] = [
     premise: 'A guided seminar that separates felt reactions, perceived risk and available evidence.',
     level: 'B2–C1',
     minutes: 110,
-    status: 'planned',
-    caution: 'The reading cycle is drafted; its two-source listening pair is still in development.',
+    status: 'available',
+    caution: 'The complete guided blueprint and both C1 scripts are ready; only audio recording and mastering remain.',
   },
   {
     slug: 'hipergamia-dato-o-relato',
@@ -136,9 +137,9 @@ export const ADVANCED_TOPICS: AdvancedTopic[] = [
     titleEn: 'Firmness, strength and generosity',
     premise: 'An ethical framework for holding boundaries without losing capability or humanity.',
     level: 'B2–C1',
-    minutes: 34,
-    status: 'planned',
-    caution: 'It will be presented as a framework to debate and apply, not as a psychological law.',
+    minutes: 126,
+    status: 'available',
+    caution: 'A normative framework to debate and apply; both C1 scripts are ready and only audio production remains.',
   },
   {
     slug: 'sesgo-confirmacion',
@@ -147,8 +148,9 @@ export const ADVANCED_TOPICS: AdvancedTopic[] = [
     titleEn: 'Confirmation bias',
     premise: 'How searching, interpretation and memory can turn an intuition into a verdict.',
     level: 'B2–C1',
-    minutes: 31,
-    status: 'planned',
+    minutes: 128,
+    status: 'available',
+    caution: 'The complete guided blueprint and both C1 scripts are ready; only audio recording and mastering remain.',
   },
   {
     slug: 'pensamiento-suma-cero',
@@ -157,8 +159,9 @@ export const ADVANCED_TOPICS: AdvancedTopic[] = [
     titleEn: 'When everything looks zero-sum',
     premise: 'What changes when we frame a relationship as fixed allocation, cooperation or value creation.',
     level: 'B2–C1',
-    minutes: 33,
-    status: 'planned',
+    minutes: 128,
+    status: 'available',
+    caution: 'The complete guided blueprint and both C1 scripts are ready; only audio recording and mastering remain.',
   },
 ]
 

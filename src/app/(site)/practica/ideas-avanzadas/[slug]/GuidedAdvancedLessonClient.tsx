@@ -203,9 +203,10 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
     () => lesson.ieltsPractice.questions.filter((question) => ieltsAnswers[question.id] === question.answer).length,
     [ieltsAnswers, lesson.ieltsPractice.questions],
   )
+  const listeningTracks = lesson.listeningLab.status === 'produced' ? lesson.listeningLab.tracks : []
   const listeningQuestions = useMemo(
-    () => lesson.listeningLab.tracks?.flatMap((track) => track.questions) ?? [],
-    [lesson.listeningLab.tracks],
+    () => listeningTracks.flatMap((track) => track.questions),
+    [listeningTracks],
   )
   const allListeningAnswered = listeningQuestions.length > 0 && listeningQuestions.every((question) => listeningAnswers[question.id] !== undefined)
   const listeningScore = useMemo(
@@ -572,7 +573,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
                     ? 'Listen once for position, again for evidence, and only then open the transcript. The speakers disagree in emphasis without becoming caricatures.'
                     : 'Listen once for each source’s function, again for the connection, and only then open the transcript. The second source extends the first instead of repeating it.'}</span>
                 </div>
-                {lesson.listeningLab.status === 'produced' && lesson.listeningLab.tracks?.length ? (
+                {lesson.listeningLab.status === 'produced' ? (
                   <>
                     <div className={styles.audioTrackStack}>
                       {lesson.listeningLab.tracks.map((track) => {
@@ -627,11 +628,17 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
                   <>
                     <div className={styles.noAudioNotice}>
                       <Headphones size={28} />
-                      <div><strong>Audio production is pending for this lesson</strong><p>The reading and practice remain available while the two-source listening pair is prepared.</p></div>
+                      <div><strong>Only audio production is pending</strong><p>Both C1 scripts, their distinct teaching functions and all eight listening questions are ready. Recording and mastering are the remaining steps.</p></div>
                     </div>
                     <div className={styles.listeningBlueprint}>
-                      <article><span>Audio A · mechanism</span><h3>Research explanation</h3><p>{lesson.listeningLab.audioAFunction}</p></article>
-                      <article><span>Audio B · situation</span><h3>Represented decision</h3><p>{lesson.listeningLab.audioBFunction}</p></article>
+                      {lesson.listeningLab.plannedTracks.map((track) => (
+                        <article key={track.id}>
+                          <span>{track.eyebrow} · script approved</span>
+                          <h3>{track.title}</h3>
+                          <p>{track.function}</p>
+                          <small>{track.speaker} · estimated {track.estimatedDuration} · {track.questions.length} questions ready</small>
+                        </article>
+                      ))}
                     </div>
                   </>
                 )}

@@ -2,8 +2,10 @@ import process from 'node:process'
 import { ADVANCED_CYCLE, ADVANCED_LESSONS, ADVANCED_TOPICS } from '../src/data/practica/advanced-topics.ts'
 import { GUIDED_ADVANCED_LESSONS } from '../src/data/practica/advanced-guided-topics.ts'
 
-// Piso monotónico: estos dos ciclos ya están publicados y no pueden desaparecer.
+// Piso histórico protegido por la línea base de producción.
 const PUBLISHED_FLOOR = 2
+// Piso nuevo: los siete temas del catálogo ya tienen un blueprint guiado completo.
+const GUIDED_BLUEPRINT_FLOOR = 7
 const failures = []
 const publishedTopicSlugs = new Set(ADVANCED_TOPICS.filter(({ status }) => status !== 'planned').map(({ slug }) => slug))
 const publishedGuidedLessons = GUIDED_ADVANCED_LESSONS.filter(({ slug }) => publishedTopicSlugs.has(slug))
@@ -49,6 +51,7 @@ unique(GUIDED_ADVANCED_LESSONS.map(({ slug }) => slug), 'Slugs de lecciones guia
 unique(deliveredLessons.map(({ sequence }) => sequence), 'Secuencias publicadas')
 if (ADVANCED_CYCLE.length !== 6) fail(`El ciclo debe conservar 6 movimientos; tiene ${ADVANCED_CYCLE.length}.`)
 if (deliveredLessons.length < PUBLISHED_FLOOR) fail(`Cayó por debajo del piso de ${PUBLISHED_FLOOR} lecciones.`)
+if (GUIDED_ADVANCED_LESSONS.length < GUIDED_BLUEPRINT_FLOOR) fail(`Cayó por debajo del piso de ${GUIDED_BLUEPRINT_FLOOR} blueprints guiados.`)
 
 const publishedTopics = ADVANCED_TOPICS.filter(({ status }) => status !== 'planned')
 if (publishedTopics.length !== deliveredLessons.length) {

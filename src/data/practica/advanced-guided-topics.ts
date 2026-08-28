@@ -1,5 +1,10 @@
 import { DUNNING_KRUGER_GUIDED_LESSON } from './advanced-guided-dunning.ts'
+import { FRAMING_GUIDED_LESSON } from './advanced-guided-framing.ts'
+import { FIRMNESS_GUIDED_LESSON } from './advanced-guided-firmness.ts'
+import { CONFIRMATION_BIAS_GUIDED_LESSON } from './advanced-guided-confirmation.ts'
 import { HYPERGAMY_GUIDED_LESSON } from './advanced-guided-hypergamy.ts'
+import { ZERO_SUM_GUIDED_LESSON } from './advanced-guided-zero-sum.ts'
+import { guidedQuestion as q } from './advanced-guided-helpers.ts'
 
 export type GuidedEvidenceClass = 'empirical' | 'contested-social' | 'normative'
 
@@ -71,6 +76,24 @@ export interface GuidedListeningTrack {
   questions: GuidedChoiceQuestion[]
 }
 
+export interface GuidedPlannedListeningTrack extends Omit<GuidedListeningTrack, 'audioSrc' | 'duration'> {
+  estimatedDuration: string
+}
+
+export type GuidedListeningLab =
+  | {
+      status: 'not-produced'
+      relationship: 'complement + scenario' | 'contrast + application'
+      plannedTracks: [GuidedPlannedListeningTrack, GuidedPlannedListeningTrack]
+      integrationPrompt: string
+    }
+  | {
+      status: 'produced'
+      relationship: 'complement + scenario' | 'contrast + application'
+      tracks: [GuidedListeningTrack, GuidedListeningTrack]
+      integrationPrompt: string
+    }
+
 export interface GuidedChoiceQuestion {
   id: string
   family: string
@@ -97,7 +120,7 @@ export interface GuidedAdvancedLesson {
   guidedMinutes: number
   selfStudyMinutes: number
   centralQuestion: string
-  openingStatements?: {
+  openingStatements: {
     title: string
     instruction: string
     statements: GuidedOpeningStatement[]
@@ -124,14 +147,7 @@ export interface GuidedAdvancedLesson {
     instruction: string
     questions: GuidedChoiceQuestion[]
   }
-  listeningLab: {
-    status: 'not-produced' | 'produced'
-    relationship: 'complement + scenario' | 'contrast + application'
-    audioAFunction?: string
-    audioBFunction?: string
-    tracks?: GuidedListeningTrack[]
-    integrationPrompt: string
-  }
+  listeningLab: GuidedListeningLab
   synthesis: {
     prompt: string
     checklist: string[]
@@ -262,6 +278,60 @@ const AFFECT_QUESTIONS: GuidedChoiceQuestion[] = [
     evidence: 'A feeling can be data about a present state without becoming evidence about the probability or outcome being estimated.',
     errorCode: 'reaction-as-proof',
   },
+  q('affect-frequency', 'Numerical representation', 'Why can “twenty out of one hundred” feel different from “twenty per cent”?',
+    ['The frequency can create a more concrete mental image', 'The percentage always reports a smaller objective probability', 'The two formats necessarily use different source populations', 'The frequency removes emotional evaluation from the decision'], 0,
+    'Equivalent formats can differ in vividness even when the numerical value stays constant.', 'format-as-quantity',
+    ['', 'Twenty per cent and twenty per hundred are equal.', 'They can describe the same population.', 'Concrete imagery may increase rather than remove affect.']),
+  q('affect-spillover', 'Application', 'What would best test emotional spillover in the audition scenario?',
+    ['Ask only whether Casey normally enjoys theatrical performances', 'Compare audition judgments after unrelated positive and negative feedback', 'Measure acting ability after Casey receives the audition result', 'Replace the audition with another examination of the same subject'], 1,
+    'Manipulating unrelated feedback before the audition judgment can test whether mood crosses between decisions.', 'causal-test-missed',
+    ['General enjoyment does not isolate the current mood.', '', 'That sequence occurs after the judgment of interest.', 'A related examination would not test cross-domain spillover.']),
+  q('affect-protocol', 'Procedure', 'Which step most directly separates one global feeling into inspectable claims?',
+    ['Wait until the feeling disappears before gathering evidence', 'Choose the numerical frame that produces least anxiety', 'List benefits and risks separately with evidence for each', 'Ask a confident friend to make the final decision instead'], 2,
+    'Separate columns prevent one evaluation from silently answering both risk and benefit questions.', 'global-evaluation-intact',
+    ['Delay alone does not identify the inputs.', 'Low anxiety does not guarantee accurate framing.', '', 'Delegation can transfer rather than inspect the shortcut.']),
+  q('affect-update', 'Best conclusion', 'What should make an affect-based judgment more credible?',
+    ['The reaction becomes stronger each time it is remembered', 'Several friends report an equally intense emotional response', 'The decision is made quickly enough to preserve intuition', 'Independent evidence supports the specific claim the feeling suggests'], 3,
+    'A feeling gains evidential relevance when independent information supports the particular risk or benefit claim.', 'intensity-as-evidence',
+    ['Repeated intensity can reflect rehearsal.', 'Shared reaction does not establish the external claim.', 'Speed may strengthen reliance on one global evaluation.', '']),
+]
+
+const AFFECT_AUDIO_A_QUESTIONS = [
+  q('affect-a-claim', 'Main claim', 'What is Dr Brooks’s central claim about affect?',
+    ['Affect prevents people from understanding numerical probability', 'One evaluation can influence both risk and benefit judgments', 'Positive feelings reliably identify the safest available option', 'Emotional reactions matter only when time pressure is present'], 1,
+    'A shared positive or negative evaluation may feed two judgments that should be examined separately.', 'claim-reduction',
+    ['Numerical understanding is not ruled out.', '', 'Positive evaluation does not establish safety.', 'Time pressure can strengthen rather than create the process.']),
+  q('affect-a-design', 'Evidence', 'What made the benefit-information manipulation informative?',
+    ['It replaced every technology with an unfamiliar product', 'It measured objective accidents before and after the message', 'It instructed participants to suppress emotional reactions', 'It changed perceived risk without adding safety evidence'], 3,
+    'A cross-effect from benefit information to risk judgment supports a shared evaluative input.', 'design-misread',
+    ['The task did not depend on complete unfamiliarity.', 'The study measured judgments rather than accident rates.', 'Suppression was not the manipulation.', '']),
+  q('affect-a-limit', 'Limitation', 'Which limitation does the speaker explicitly preserve?',
+    ['A feeling can carry relevant information without estimating probability', 'Measured risk is always more important than personal values', 'Experts do not use affect when making rapid judgments', 'An experimental average predicts every individual decision'], 0,
+    'Affect may signal urgency, learned patterns or values even when it is not a probability estimate.', 'emotion-as-noise',
+    ['', 'Different questions require different kinds of information.', 'Expertise can shape rather than remove affect.', 'The speaker rejects individual diagnosis from an average.']),
+  q('affect-a-tool', 'Procedure', 'What practical procedure does the speaker recommend?',
+    ['Remove all emotional words from the available descriptions', 'Choose the option associated with the calmest current mood', 'Name the feeling, trace its source and separate estimates', 'Delay the decision until no emotional response remains'], 2,
+    'The procedure makes source, relevance, risk and benefit separately inspectable.', 'procedure-substitution',
+    ['Words are only one source of affect.', 'Calmness does not establish relevance.', '', 'Emotion-free judgment is neither required nor promised.']),
+]
+
+const AFFECT_AUDIO_B_QUESTIONS = [
+  q('affect-b-trigger', 'Scenario', 'What event may have spilled over into Casey’s audition decision?',
+    ['Receiving a disappointing examination result earlier that day', 'Learning that the theatre company had changed directors', 'Discovering that the audition required an unfamiliar monologue', 'Hearing another actor describe the role as highly competitive'], 0,
+    'The unrelated exam result changed Casey’s mood immediately before evaluating the audition.', 'trigger-misread',
+    ['', 'No director change appears in the scenario.', 'The script does not introduce an unfamiliar monologue.', 'Another actor’s warning is not part of the account.']),
+  q('affect-b-distinction', 'Concept distinction', 'What distinction does Rowan ask Casey to make?',
+    ['Between professional theatre and university performance standards', 'Between personal values and every form of emotional evidence', 'Between feeling incapable and evidence about acting ability', 'Between the audition deadline and the examination schedule'], 2,
+    'Rowan separates a present internal state from a claim about performance in another domain.', 'state-as-capacity',
+    ['The institutions are not the key distinction.', 'Values are preserved as relevant information.', '', 'Scheduling is not the mechanism under discussion.']),
+  q('affect-b-plan', 'Application', 'What makes the final plan a test rather than reassurance?',
+    ['Casey is told that failure at the audition is impossible', 'Rowan promises to make the application decision instead', 'The audition is postponed until the exam can be retaken', 'Casey will review evidence and reassess after rest'], 3,
+    'The plan separates evidence, uses a time check and keeps the decision revisable.', 'reassurance-as-test',
+    ['No outcome is guaranteed.', 'Casey retains agency over the decision.', 'The audition is not postponed.', '']),
+  q('affect-b-limit', 'Inference limit', 'What cannot be concluded from Casey’s changed judgment tomorrow?',
+    ['The earlier mood was relevant to the first evaluation', 'The affect heuristic alone caused the original refusal', 'Time stability provides useful information about the estimate', 'Acting evidence should be considered separately from the exam'], 1,
+    'A changing judgment is consistent with spillover but does not isolate one mechanism as the sole cause.', 'illustration-as-proof',
+    ['The timing makes relevance plausible.', '', 'Stability testing is part of the protocol.', 'The domains involve different abilities.']),
 ]
 
 export const AFFECT_HEURISTIC_GUIDED_LESSON: GuidedAdvancedLesson = {
@@ -278,6 +348,18 @@ export const AFFECT_HEURISTIC_GUIDED_LESSON: GuidedAdvancedLesson = {
   guidedMinutes: 110,
   selfStudyMinutes: 65,
   centralQuestion: 'When does a feeling provide useful information, and when does it replace evidence?',
+  openingStatements: {
+    title: 'Which statements sound most logical right now?',
+    instruction: 'Select any claims you could defend. The cards are optional and never block the lesson.',
+    statements: [
+      { id: 'affect-s1', text: 'A strong feeling is evidence that the situation itself is dangerous.' },
+      { id: 'affect-s2', text: 'Emotion can carry useful information without estimating probability accurately.' },
+      { id: 'affect-s3', text: 'Risk and benefit should be judged separately before they are combined.' },
+      { id: 'affect-s4', text: 'A mood from one event can influence an unrelated decision.' },
+      { id: 'affect-s5', text: 'Deliberate reasoning is always more reliable than a rapid evaluation.' },
+      { id: 'affect-s6', text: 'The source and relevance of a feeling matter more than its intensity alone.' },
+    ],
+  },
   discussion: {
     targetMinutes: 20,
     questions: [
@@ -444,17 +526,77 @@ export const AFFECT_HEURISTIC_GUIDED_LESSON: GuidedAdvancedLesson = {
     { category: 'Useful language', term: 'to disentangle', partOfSpeech: 'verb', meaning: 'To separate factors that have become mixed together.', collocation: 'disentangle risk from benefit', example: 'The protocol disentangles risk from benefit.' },
     { category: 'Nouns', term: 'trade-off', partOfSpeech: 'noun', meaning: 'A balance in which gaining one benefit involves a cost.', collocation: 'evaluate a trade-off', example: 'The student evaluated the trade-off without hiding either side.' },
     { category: 'Useful language', term: 'to override', partOfSpeech: 'verb', meaning: 'To take priority over another signal or decision.', collocation: 'override evidence', example: 'A vivid reaction should not automatically override evidence.' },
+    { category: 'Phrasal verbs', term: 'to carry over', partOfSpeech: 'phrasal verb', meaning: 'To continue affecting a later situation.', collocation: 'carry over into', example: 'The disappointment carried over into the audition decision.' },
+    { category: 'Phrasal verbs', term: 'to calm down', partOfSpeech: 'phrasal verb', meaning: 'To become less emotionally activated.', collocation: 'calm down before deciding', example: 'Casey calmed down before estimating the audition risk again.' },
+    { category: 'Phrasal verbs', term: 'to weigh up', partOfSpeech: 'phrasal verb', meaning: 'To compare advantages, risks and evidence carefully.', collocation: 'weigh up the evidence', example: 'She weighed up benefits and risks in separate columns.' },
+    { category: 'Phrasal verbs', term: 'to home in on', partOfSpeech: 'phrasal verb', meaning: 'To focus strongly on one feature.', collocation: 'home in on danger', example: 'The negative mood made Casey home in on possible failure.' },
+    { category: 'Adjectives', term: 'affective', partOfSpeech: 'adjective', meaning: 'Related to experienced positive or negative feeling.', collocation: 'affective evaluation', example: 'One affective evaluation influenced two separate estimates.' },
+    { category: 'Adjectives', term: 'vivid', partOfSpeech: 'adjective', meaning: 'Producing a clear and emotionally available mental image.', collocation: 'vivid representation', example: 'The frequency created a more vivid representation of harm.' },
+    { category: 'Adjectives', term: 'unrelated', partOfSpeech: 'adjective', meaning: 'Not directly connected to the decision being evaluated.', collocation: 'unrelated event', example: 'An unrelated exam result changed the later judgment.' },
+    { category: 'Adjectives', term: 'inspectable', partOfSpeech: 'adjective', meaning: 'Open enough for its inputs to be examined.', collocation: 'inspectable estimate', example: 'The four questions made the estimate inspectable.' },
+    { category: 'Adjectives', term: 'conditional', partOfSpeech: 'adjective', meaning: 'True only under stated circumstances or limits.', collocation: 'conditional conclusion', example: 'The class defended a conditional rather than universal conclusion.' },
+    { category: 'Nouns', term: 'spillover', partOfSpeech: 'noun', meaning: 'Influence that travels from one event into another judgment.', collocation: 'emotional spillover', example: 'The comparison was designed to detect emotional spillover.' },
   ],
   ieltsPractice: {
     title: 'Read for claims, evidence and limits',
-    instruction: 'Answer all eight questions before opening feedback. This is advanced IELTS-style practice, not a band estimate.',
+    instruction: 'Answer all twelve questions before opening feedback. This is advanced IELTS-style practice, not a band estimate.',
     questions: AFFECT_QUESTIONS,
   },
   listeningLab: {
     status: 'not-produced',
     relationship: 'complement + scenario',
-    audioAFunction: 'A researcher explains the experimental design, result and limit.',
-    audioBFunction: 'Two speakers represent an audition decision affected by a previous exam result.',
+    plannedTracks: [
+      {
+        id: 'audio-a',
+        eyebrow: 'Audio A · research explanation',
+        title: 'One evaluation, two judgments',
+        speaker: 'Dr Helen Brooks · decision scientist',
+        function: 'Explains the experimental cross-effect between perceived benefit and perceived risk while preserving useful roles for emotion.',
+        estimatedDuration: '3:20–3:45',
+        transcript: `The affect heuristic describes a shortcut in which a positive or negative evaluation becomes information for another judgment. Suppose a technology feels beneficial and familiar. That global positive evaluation may make its risks seem lower. If the technology feels disturbing or unfamiliar, the same process can make benefits seem smaller and risks larger. One reaction begins answering two questions.
+
+Research by Finucane and colleagues made this relationship easier to inspect. Participants judged the risks and benefits of technologies and activities. Perceived benefit and perceived risk often moved in opposite directions. Under time pressure, the inverse relationship became stronger. A later manipulation supplied information intended to change perceived benefit. Risk judgments also moved, even though the message had added no new safety evidence. Information about risk could similarly influence perceived benefit.
+
+The cross-effect matters because it suggests a shared evaluative input. It does not show that the objective danger changed, that every participant used the shortcut or that affect necessarily produced a poor decision. An experienced feeling may carry useful information. Anxiety can signal incomplete preparation; attraction can reveal a value; discomfort can reflect patterns learned through repeated experience. What affect cannot do by itself is establish the probability of the external event it seems to describe.
+
+Numerical representation can intensify the process. Twenty per cent and twenty people out of one hundred are equivalent, but the frequency may produce a more concrete image. That vividness can change the emotional weight attached to the estimate. Framing and affect can therefore operate together without being identical mechanisms.
+
+For a practical decision, I use four steps. Name the feeling precisely. Ask whether it began with this decision or travelled from another event. Estimate risks and benefits separately, attaching evidence to each claim. Finally, test stability: would the estimate look similar tomorrow, without time pressure or under an equivalent numerical description? The goal is not emotional silence. It is an inspectable relationship between feeling, claim and evidence.`,
+        questions: AFFECT_AUDIO_A_QUESTIONS,
+      },
+      {
+        id: 'audio-b',
+        eyebrow: 'Audio B · represented decision',
+        title: 'The exam before the audition',
+        speaker: 'Casey and Rowan · coaching conversation',
+        function: 'Represents emotional spillover while keeping fatigue, values and genuine uncertainty inside the decision.',
+        estimatedDuration: '3:15–3:40',
+        transcript: `Casey: I am going to decline the audition. I failed an important exam this morning, and I clearly overestimate what I can do.
+
+Rowan: The exam result is evidence about something. What exactly does it tell you about acting?
+
+Casey: Not much directly. But I feel incapable, and the theatre company is selective. If I fail again, I will have wasted everyone’s time.
+
+Rowan: Let us separate the propositions. “I feel incapable” is a true report of your present state. “I am unlikely to perform well at the audition” is a prediction about another domain. What evidence supports that prediction?
+
+Casey: I have performed well in workshops, and the director invited me after seeing the last one. I am also tired and upset, which could affect how I prepare tonight.
+
+Rowan: Good. The feeling is not irrelevant. It tells us that your current energy and confidence need attention. It does not automatically estimate your acting ability. Could the exam disappointment be carrying over into the risk judgment?
+
+Casey: Probably. Before I saw the grade, the audition felt exciting. Afterward, the same invitation felt like a warning.
+
+Rowan: Then make the estimates separately. What are the benefits of attending? What are the risks, and what evidence belongs to each one?
+
+Casey: The benefit is experience and a real chance at the role. The risks are rejection, preparation time and performing badly because I am exhausted. None of those is the same as failing the exam.
+
+Rowan: What test would make the decision more stable?
+
+Casey: I will rest, review the audition material tomorrow and ask whether the evidence still supports declining. If I cannot prepare safely or the material exposes a skill gap, I can withdraw. If the fear decreases while the acting evidence remains positive, I should probably attend.
+
+Rowan: That is not reassurance that you will succeed. It is a way to stop one painful event from answering every later question.`,
+        questions: AFFECT_AUDIO_B_QUESTIONS,
+      },
+    ],
     integrationPrompt: 'Explain how the situation illustrates the pattern without proving that the pattern caused the decision.',
   },
   synthesis: {
@@ -469,9 +611,13 @@ export const AFFECT_HEURISTIC_GUIDED_LESSON: GuidedAdvancedLesson = {
 }
 
 export const GUIDED_ADVANCED_LESSONS: GuidedAdvancedLesson[] = [
+  FRAMING_GUIDED_LESSON,
   DUNNING_KRUGER_GUIDED_LESSON,
   AFFECT_HEURISTIC_GUIDED_LESSON,
   HYPERGAMY_GUIDED_LESSON,
+  FIRMNESS_GUIDED_LESSON,
+  CONFIRMATION_BIAS_GUIDED_LESSON,
+  ZERO_SUM_GUIDED_LESSON,
 ]
 
 export function getGuidedAdvancedLesson(slug: string) {

@@ -25,6 +25,7 @@
     "check:advanced-guided": "node --experimental-strip-types --no-warnings scripts/check-advanced-guided-lessons.mjs",
     "audio:advanced-dunning": "node --experimental-strip-types --no-warnings scripts/generate-advanced-dunning-audio.mjs",
     "audio:advanced-hypergamy": "node --experimental-strip-types --no-warnings scripts/generate-advanced-hypergamy-audio.mjs",
+    "audio:advanced:scripts": "node --experimental-strip-types --no-warnings scripts/print-advanced-audio-scripts.mjs",
     "check:habla-acompanada": "node --experimental-strip-types --no-warnings scripts/check-habla-acompanada.mjs",
     "check:habla-release": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs",
     "check:habla-release:a2": "node --experimental-strip-types --no-warnings scripts/check-habla-release-candidate.mjs --target=ingles-a2",
