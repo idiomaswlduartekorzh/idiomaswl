@@ -13,7 +13,7 @@ const ESCUCHA = listeningCard(
 export const metadata: Metadata = {
   title: 'Japonés A2 — Elige una habilidad',
   description: 'Japonés A2: て-form, た-form, ～ています, ～たいです, ～ことができます, ～なければなりません. Lectura, gramática, vocabulario, escritura, habla y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/japones/a2' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/japones/a2' },
 };
 
 const HABILIDADES = [
@@ -55,7 +55,7 @@ export default function JaponesA2Page() {
       <CourseSchema
         name="Japonés A2 — Lectura, Gramática, Vocabulario y más"
         description="Practica Japonés nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-        url="https://idiomaswl.com/practica/japones/a2"
+        url="https://www.idiomaswl.com/practica/japones/a2"
         educationalLevel="A2"
         teaches="Japonés, habilidades MCER"
         inLanguage="ja"

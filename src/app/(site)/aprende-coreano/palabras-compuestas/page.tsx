@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import KoreanCompounds from '@/app/(site)/practica/KoreanCompounds';
-import { COMPOUNDS, ROOTS, CATEGORY_COLORS, getCompoundsForRoot } from '@/data/korean-compounds';
+import { COMPOUNDS, ROOTS, CATEGORY_COLORS } from '@/data/korean-compounds';
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
@@ -25,6 +25,25 @@ export const metadata: Metadata = {
 };
 
 // ─── JSON-LD ──────────────────────────────────────────────────────────────────
+
+const FAQS = [
+  {
+    question: '¿Todas las palabras coreanas son compuestas?',
+    answer: 'No, pero las 합성어 son muy frecuentes en el vocabulario cotidiano, especialmente para conceptos físicos y naturales. El coreano también tiene palabras de origen chino (한자어) y préstamos modernos (외래어), pero las palabras compuestas puras (순우리말) son las más descriptivas y memorables.',
+  },
+  {
+    question: '¿En qué nivel del TOPIK aparecen las palabras compuestas?',
+    answer: 'Las más comunes (눈물, 손가락, 불고기) aparecen desde TOPIK I (nivel 1-2). Las palabras más abstractas o con cambios fonológicos se trabajan en TOPIK II (nivel 3-6). Conocer el mecanismo te ayuda en todos los niveles.',
+  },
+  {
+    question: '¿Puedo inventar nuevas palabras combinando raíces?',
+    answer: 'En cierta medida sí, especialmente en lenguaje informal o creativo. Sin embargo, no todas las combinaciones producen palabras aceptadas — algunas combinaciones simplemente no se usan en la práctica. Por eso es útil aprender las combinaciones establecidas primero.',
+  },
+  {
+    question: '¿Cómo sé cuál de las dos raíces va primero?',
+    answer: 'El coreano sigue una lógica de "modificador + núcleo". La primera raíz generalmente modifica o especifica a la segunda: 손(mano) + 가락(palito) = palito de la mano. La segunda raíz es el concepto principal y la primera lo describe.',
+  },
+] as const;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -58,40 +77,11 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: '¿Qué son las palabras compuestas en coreano (합성어)?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Las 합성어 (hapseong-eo) son palabras coreanas formadas por la unión de dos o más raíces independientes. Por ejemplo: 눈 (ojo) + 물 (agua) = 눈물 (lágrimas). El coreano usa este mecanismo con mucha frecuencia, lo que permite a los estudiantes predecir el significado de palabras nuevas si conocen las raíces.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: '¿Cuáles son las palabras compuestas más comunes en coreano?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Entre las más comunes: 눈물 (lágrimas = ojo+agua), 손가락 (dedo = mano+palito), 손바닥 (palma = mano+fondo), 발가락 (dedo del pie = pie+palito), 불고기 (bulgogi = fuego+carne), 눈사람 (muñeco de nieve = nieve+persona), 나뭇잎 (hoja de árbol = árbol+hoja), 하늘색 (azul cielo = cielo+color).',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: '¿Por qué aprender las raíces coreanas acelera el aprendizaje de vocabulario?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Porque una sola raíz puede aparecer en múltiples palabras. Por ejemplo, aprendiendo 손 (mano) desbloqueas automáticamente: 손가락 (dedo), 손바닥 (palma) y 손목 (muñeca). Así, memorizar 23 raíces base te da acceso a decenas de palabras compuestas sin aprenderlas de forma aislada.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: '¿Qué es el 사이시옷 en coreano?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'El 사이시옷 (saiiot) es un fenómeno fonológico que ocurre cuando se unen dos raíces en coreano puro. Se inserta una ㅅ entre las dos partes, produciendo un cambio de sonido. Ejemplo: 비 (lluvia) + 물 (agua) = 빗물 (pronunciado [빈물]). También ocurre en 나뭇잎 (hoja de árbol).',
-          },
-        },
-      ],
+      mainEntity: FAQS.map(({ question, answer }) => ({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: { '@type': 'Answer', text: answer },
+      })),
     },
   ],
 };
@@ -436,25 +426,8 @@ export default function PalabrasCompuestasPage() {
               Todo sobre las 합성어
             </h2>
             <div style={{ display:'flex', flexDirection:'column', gap:'1rem' }}>
-              {[
-                {
-                  q: '¿Todas las palabras coreanas son compuestas?',
-                  a: 'No, pero las 합성어 son muy frecuentes en el vocabulario cotidiano, especialmente para conceptos físicos y naturales. El coreano también tiene palabras de origen chino (한자어) y préstamos modernos (외래어), pero las palabras compuestas puras (순우리말) son las más descriptivas y memorables.',
-                },
-                {
-                  q: '¿En qué nivel del TOPIK aparecen las palabras compuestas?',
-                  a: 'Las más comunes (눈물, 손가락, 불고기) aparecen desde TOPIK I (nivel 1-2). Las palabras más abstractas o con cambios fonológicos se trabajan en TOPIK II (nivel 3-6). Conocer el mecanismo te ayuda en todos los niveles.',
-                },
-                {
-                  q: '¿Puedo inventar nuevas palabras combinando raíces?',
-                  a: 'En cierta medida sí, especialmente en lenguaje informal o creativo. Sin embargo, no todas las combinaciones producen palabras aceptadas — algunas combinaciones simplemente no se usan en la práctica. Por eso es útil aprender las combinaciones establecidas primero.',
-                },
-                {
-                  q: '¿Cómo sé cuál de las dos raíces va primero?',
-                  a: 'El coreano sigue una lógica de "modificador + núcleo". La primera raíz generalmente modifica o especifica a la segunda: 손(mano) + 가락(palito) = palito de la mano. La segunda raíz es el concepto principal y la primera lo describe.',
-                },
-              ].map(({ q, a }, i) => (
-                <details key={i} style={{
+              {FAQS.map(({ question, answer }) => (
+                <details key={question} style={{
                   borderRadius:12, border:'1.5px solid var(--line-soft)',
                   background:'var(--bg)', overflow:'hidden',
                 }}>
@@ -462,11 +435,11 @@ export default function PalabrasCompuestasPage() {
                     padding:'1rem 1.25rem', fontWeight:700, fontSize:'0.95rem', color:'var(--ink)',
                     cursor:'pointer', listStyle:'none', display:'flex', justifyContent:'space-between', alignItems:'center',
                   }}>
-                    {q}
+                    {question}
                     <span style={{ color:'var(--muted)', fontSize:'1rem', flexShrink:0, marginLeft:'1rem' }}>+</span>
                   </summary>
                   <div style={{ padding:'0 1.25rem 1rem', color:'var(--muted)', lineHeight:1.7, fontSize:'0.9rem', borderTop:'1px solid var(--line-soft)' }}>
-                    {a}
+                    {answer}
                   </div>
                 </details>
               ))}

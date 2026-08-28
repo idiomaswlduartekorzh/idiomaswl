@@ -40,24 +40,24 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    question: '¿Por dónde debería empezar en el hub de IELTS Reading?',
+    question: '¿Por dónde debería empezar?',
     answer:
       'Empieza con Skimming y Scanning si pierdes tu ubicación dentro del pasaje. Empieza con un tipo de pregunta específico si encuentras la evidencia, pero todavía eliges la respuesta incorrecta.',
   },
   {
-    question: '¿Skimming y scanning son tipos oficiales de pregunta IELTS?',
+    question: '¿Skimming y scanning son tipos oficiales de pregunta?',
     answer:
-      'No. Skimming y scanning son habilidades WeLearn de lectura transferibles. El hub las separa de los formatos oficiales y muestra en qué tipos de pregunta se aplican.',
+      'No. Son habilidades de lectura transferibles. El hub las separa de los formatos oficiales y muestra en qué tipos de pregunta se aplican.',
   },
   {
-    question: '¿Debo practicar IELTS Reading con cronómetro desde el principio?',
+    question: '¿Debo practicar con cronómetro desde el principio?',
     answer:
-      'No. Primero construye un proceso preciso para localizar evidencia y decidir respuestas. Añade presión de tiempo cuando puedas explicar por qué una respuesta es correcta.',
+      'No. Primero construye un proceso preciso y explicable. Añade presión de tiempo cuando puedas localizar y comprobar evidencia de forma consistente.',
   },
   {
-    question: '¿Cuándo debo usar la práctica mixta de IELTS Reading?',
+    question: '¿Cuándo debo entrar a Mixed Practice?',
     answer:
-      'Usa la práctica mixta después del entrenamiento enfocado, cuando puedas cambiar entre afirmaciones, emparejamientos y ejercicios de completar dentro del mismo pasaje.',
+      'Después de practicar una habilidad y un tipo de pregunta por separado. Allí tendrás que cambiar de método dentro del mismo pasaje y justificar cada respuesta.',
   },
 ]
 

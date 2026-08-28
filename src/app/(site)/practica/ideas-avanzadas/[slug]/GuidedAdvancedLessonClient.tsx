@@ -11,14 +11,12 @@ import {
   CircleDot,
   FileQuestion,
   Headphones,
-  LockKeyhole,
   MessageCircleMore,
   Mic,
   NotebookPen,
   RotateCcw,
   ScanText,
   Sparkles,
-  UnlockKeyhole,
 } from 'lucide-react'
 import type {
   GuidedAdvancedLesson,
@@ -32,7 +30,6 @@ interface GuidedSavedState {
   phase: number
   completed: number[]
   selectedStatements: string[]
-  baselineUnlocked: boolean
   discussionIndex: number
   openedBlocks: string[]
   predictions: Record<string, string>
@@ -47,13 +44,13 @@ interface GuidedSavedState {
 }
 
 const PHASE_ICONS = [
+  CircleDot,
   MessageCircleMore,
-  Mic,
+  ScanText,
   BookOpenText,
   NotebookPen,
-  ScanText,
-  FileQuestion,
   Headphones,
+  FileQuestion,
   Sparkles,
 ]
 
@@ -129,11 +126,10 @@ function GuidedQuestion({
 }
 
 export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedAdvancedLesson }) {
-  const storageKey = `wl-advanced-guided-${lesson.slug}-v3`
+  const storageKey = `wl-advanced-guided-${lesson.slug}-v4`
   const [phase, setPhase] = useState(0)
   const [completed, setCompleted] = useState<number[]>([])
   const [selectedStatements, setSelectedStatements] = useState<string[]>([])
-  const [baselineUnlocked, setBaselineUnlocked] = useState(false)
   const [discussionIndex, setDiscussionIndex] = useState(0)
   const [showTeacherNotes, setShowTeacherNotes] = useState(false)
   const [openedBlocks, setOpenedBlocks] = useState<string[]>([lesson.reading.blocks[0]?.id].filter(Boolean))
@@ -161,7 +157,6 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
         setPhase(Math.min(Math.max(saved.phase ?? 0, 0), GUIDED_ADVANCED_PHASES.length - 1))
         setCompleted(saved.completed ?? [])
         setSelectedStatements(saved.selectedStatements ?? [])
-        setBaselineUnlocked(saved.baselineUnlocked ?? false)
         setDiscussionIndex(Math.min(saved.discussionIndex ?? 0, lesson.discussion.questions.length - 1))
         setOpenedBlocks(saved.openedBlocks?.length ? saved.openedBlocks : [lesson.reading.blocks[0]?.id].filter(Boolean))
         setPredictions(saved.predictions ?? {})
@@ -186,7 +181,6 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
       phase,
       completed,
       selectedStatements,
-      baselineUnlocked,
       discussionIndex,
       openedBlocks,
       predictions,
@@ -200,7 +194,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
       checks,
     }
     window.localStorage.setItem(storageKey, JSON.stringify(saved))
-  }, [baselineUnlocked, checks, completed, discussionIndex, draft, hydrated, ieltsAnswers, ieltsSubmitted, listeningAnswers, listeningSubmitted, notes, openedBlocks, paraphrases, phase, predictions, selectedStatements, storageKey])
+  }, [checks, completed, discussionIndex, draft, hydrated, ieltsAnswers, ieltsSubmitted, listeningAnswers, listeningSubmitted, notes, openedBlocks, paraphrases, phase, predictions, selectedStatements, storageKey])
 
   const progress = Math.round((completed.length / GUIDED_ADVANCED_PHASES.length) * 100)
   const discussionQuestion = lesson.discussion.questions[discussionIndex]
@@ -218,8 +212,6 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
     () => listeningQuestions.filter((question) => listeningAnswers[question.id] === question.answer).length,
     [listeningAnswers, listeningQuestions],
   )
-  const hasOpeningSelection = !lesson.openingStatements || selectedStatements.length >= lesson.openingStatements.minimum
-
   const selectPhase = (nextPhase: number) => {
     setPhase(nextPhase)
     window.requestAnimationFrame(() => contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
@@ -235,7 +227,6 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
     setPhase(0)
     setCompleted([])
     setSelectedStatements([])
-    setBaselineUnlocked(false)
     setDiscussionIndex(0)
     setShowTeacherNotes(false)
     setOpenedBlocks([lesson.reading.blocks[0]?.id].filter(Boolean))
@@ -284,8 +275,8 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
             </div>
             <p>{completed.length} of {GUIDED_ADVANCED_PHASES.length} phases · saved on this device</p>
             <div className={styles.sessionStatus}>
-              {baselineUnlocked ? <UnlockKeyhole size={15} /> : <LockKeyhole size={15} />}
-              {baselineUnlocked ? 'First recording is open' : 'Teacher gate is closed'}
+              <Mic size={15} />
+              Every phase is open · recordings stay local
             </div>
             <button className={styles.reset} onClick={resetLesson} type="button">
               <RotateCcw size={14} /> Reset local work
@@ -323,16 +314,16 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
             {phase === 0 && (
               <>
                 <div className={styles.phaseHeading}>
-                  <p>Teacher-led opening · {lesson.discussion.targetMinutes} minutes</p>
-                  <h2>Build the question before naming the theory.</h2>
-                  <span>Speak first, collect hypotheses and open the recording only when the group has something worth testing.</span>
+                  <p>Starting claims · optional selection</p>
+                  <h2>Which statements sound most logical right now?</h2>
+                  <span>Select any claims you want to defend, question or revisit. This records a starting position; it never blocks the lesson.</span>
                 </div>
 
                 {lesson.openingStatements && (
                   <section className={styles.statementLab} aria-labelledby="opening-statements-title">
                     <div className={styles.statementIntro}>
                       <div>
-                        <p>Starting position · choose more than one</p>
+                        <p>Starting position · choose any number</p>
                         <h3 id="opening-statements-title">{lesson.openingStatements.title}</h3>
                         <span>{lesson.openingStatements.instruction}</span>
                       </div>
@@ -357,12 +348,25 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
                         )
                       })}
                     </div>
-                    {!hasOpeningSelection && (
-                      <p className={styles.statementRequirement}>Choose at least {lesson.openingStatements.minimum} claims before continuing.</p>
-                    )}
+                    <p className={styles.statementRequirement}>Optional: continue with none selected, or return later and change your choices.</p>
                   </section>
                 )}
+                {!lesson.openingStatements && (
+                  <section className={styles.statementFallback}>
+                    <CircleDot size={22} />
+                    <div><strong>No answer is required here.</strong><p>Continue to the discussion when you are ready to form a first explanation.</p></div>
+                  </section>
+                )}
+              </>
+            )}
 
+            {phase === 1 && (
+              <>
+                <div className={styles.phaseHeading}>
+                  <p>Teacher-led discussion · {lesson.discussion.targetMinutes} minutes</p>
+                  <h2>Build an explanation, then record it.</h2>
+                  <span>Discuss the questions first. Once the group has a workable idea, record the initial explanation below. The recorder is always available.</span>
+                </div>
                 <div className={styles.discussionBoard}>
                   <div className={styles.discussionCounter}>
                     <span>{String(discussionIndex + 1).padStart(2, '0')}</span>
@@ -389,43 +393,16 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
                     </button>
                   </div>
                 </div>
-
-                <div className={baselineUnlocked ? styles.gateOpen : styles.gateClosed}>
-                  <div>
-                    {baselineUnlocked ? <UnlockKeyhole size={22} /> : <LockKeyhole size={22} />}
-                    <div>
-                      <strong>{baselineUnlocked ? 'First recording is open' : 'Teacher gate'}</strong>
-                      <p>{baselineUnlocked ? 'Students can move to their first voice note.' : 'Open it when the group has formed an initial explanation.'}</p>
-                    </div>
-                  </div>
-                  <button onClick={() => setBaselineUnlocked((value) => !value)} type="button">
-                    {baselineUnlocked ? 'Close recording' : 'Open first recording'}
-                  </button>
+                <div className={styles.recorderLead}>
+                  <span>Voice I · diagnostic, not graded</span>
+                  <strong>Capture the explanation before the formal input.</strong>
+                  <p>Pronunciation is not scored. The value of this recording is the comparison it makes possible later.</p>
                 </div>
+                <LocalVoiceRecorder prompt={lesson.recordings.baseline} />
               </>
             )}
 
-            {phase === 1 && (
-              <>
-                <div className={styles.phaseHeading}>
-                  <p>Voice I · diagnostic, not graded</p>
-                  <h2>Capture the explanation before the formal input.</h2>
-                  <span>Pronunciation is not scored. The value of this recording is the comparison it makes possible later.</span>
-                </div>
-                {baselineUnlocked ? (
-                  <LocalVoiceRecorder prompt={lesson.recordings.baseline} />
-                ) : (
-                  <div className={styles.waitingGate}>
-                    <LockKeyhole size={28} />
-                    <h3>Waiting for the teacher</h3>
-                    <p>The discussion remains open. When the teacher opens this phase, the local recorder will appear.</p>
-                    <button onClick={() => selectPhase(0)} type="button">Return to discussion</button>
-                  </div>
-                )}
-              </>
-            )}
-
-            {phase === 2 && (
+            {phase === 3 && (
               <>
                 <div className={styles.phaseHeading}>
                   <p>Active reading · six evidence roles</p>
@@ -493,7 +470,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
               </>
             )}
 
-            {phase === 3 && (
+            {phase === 4 && (
               <>
                 <div className={styles.phaseHeading}>
                   <p>Retrieval · voice and notes</p>
@@ -512,12 +489,12 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
               </>
             )}
 
-            {phase === 4 && (
+            {phase === 2 && (
               <>
                 <div className={styles.phaseHeading}>
-                  <p>Precision vocabulary · four compact families</p>
-                  <h2>Move from recognition to controlled use.</h2>
-                  <span>The language comes from the reading and will reappear in the evidence practice, listening comparison and synthesis.</span>
+                  <p>Language preview · four practical families</p>
+                  <h2>Learn the language that unlocks the text.</h2>
+                  <span>Open the cards before reading. The same expressions will return in the text, listening comparison and final response.</span>
                 </div>
                 <div className={styles.vocabFamilies}>
                   {VOCABULARY_CATEGORIES.map((category) => {
@@ -551,7 +528,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
               </>
             )}
 
-            {phase === 5 && (
+            {phase === 6 && (
               <>
                 <div className={styles.phaseHeading}>
                   <p>IELTS-style challenge · feedback closed</p>
@@ -584,12 +561,16 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
               </>
             )}
 
-            {phase === 6 && (
+            {phase === 5 && (
               <>
                 <div className={styles.phaseHeading}>
                   <p>Dual listening lab · compare before judging</p>
-                  <h2>Two voices, one disagreement worth locating precisely.</h2>
-                  <span>Listen once for position, again for evidence, and only then open the transcript. The speakers disagree in emphasis without becoming caricatures.</span>
+                  <h2>{lesson.listeningLab.relationship === 'contrast + application'
+                    ? 'Two voices, one disagreement worth locating precisely.'
+                    : 'Two voices, one pattern viewed from different stages.'}</h2>
+                  <span>{lesson.listeningLab.relationship === 'contrast + application'
+                    ? 'Listen once for position, again for evidence, and only then open the transcript. The speakers disagree in emphasis without becoming caricatures.'
+                    : 'Listen once for each source’s function, again for the connection, and only then open the transcript. The second source extends the first instead of repeating it.'}</span>
                 </div>
                 {lesson.listeningLab.status === 'produced' && lesson.listeningLab.tracks?.length ? (
                   <>
@@ -663,7 +644,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
                 <div className={styles.phaseHeading}>
                   <p>Synthesis · return to the first explanation</p>
                   <h2>Precision matters more than changing your mind.</h2>
-                  <span>Use the opening claims, reading evidence, practice feedback and both listening positions. Preserve disagreement where the evidence remains unsettled.</span>
+                  <span>Use the opening claims, reading evidence, practice feedback and both listening functions. Preserve uncertainty where the evidence remains unsettled.</span>
                 </div>
                 {lesson.openingStatements && selectedStatements.length > 0 && (
                   <section className={styles.statementReturn} aria-labelledby="selected-claims-title">
@@ -698,7 +679,7 @@ export default function GuidedAdvancedLessonClient({ lesson }: { lesson: GuidedA
             <footer className={styles.phaseFooter}>
               {phase > 0 ? <button className={styles.backButton} onClick={() => selectPhase(phase - 1)} type="button"><ArrowLeft size={17} /> Previous</button> : <span />}
               {phase < GUIDED_ADVANCED_PHASES.length - 1 ? (
-                <button className={styles.nextButton} disabled={phase === 0 && !hasOpeningSelection} onClick={completeAndContinue} type="button">Mark phase and continue <ArrowRight size={17} /></button>
+                <button className={styles.nextButton} onClick={completeAndContinue} type="button">Mark phase and continue <ArrowRight size={17} /></button>
               ) : (
                 <button className={styles.nextButton} onClick={() => setCompleted((current) => current.includes(phase) ? current : [...current, phase].sort())} type="button"><Check size={17} /> Complete pilot</button>
               )}

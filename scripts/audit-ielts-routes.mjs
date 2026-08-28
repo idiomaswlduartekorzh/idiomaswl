@@ -23,7 +23,9 @@ function extractIeltsRoutes(routeMapText) {
   const routePattern = /`(\/practica\/ielts[^`]*)`/g;
   const routes = new Set();
   for (const match of routeMapText.matchAll(routePattern)) {
-    routes.add(match[1]);
+    // Las sesiones con query string son superficies funcionales `noindex`, no páginas
+    // canónicas. Su frontera se protege en check:seo-foundation y no debe exigírseles sitemap.
+    if (!match[1].includes('?')) routes.add(match[1]);
   }
   return [...routes].sort((a, b) => a.localeCompare(b));
 }

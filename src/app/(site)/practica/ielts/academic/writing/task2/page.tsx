@@ -12,8 +12,16 @@ const FAQS = [
     answer: 'IELTS does not prescribe a fixed paragraph count. WeLearn teaches a four-paragraph default while adapting each paragraph to the exact prompt.',
   },
   {
+    question: 'Is Body 3 required?',
+    answer: 'No. Add it only when a distinct third idea can be developed fully without weakening the other paragraphs or time control.',
+  },
+  {
     question: 'Are the five essay types official IELTS task names?',
     answer: 'No. They are WeLearn teaching categories for recurring instructions within the same official Task 2 essay response.',
+  },
+  {
+    question: 'Where should I start?',
+    answer: 'Start with Prompt Analysis, then build the introduction. The prompt determines the job of every later paragraph.',
   },
 ]
 
@@ -59,7 +67,7 @@ export default function Page() {
           { name: 'Task 2', url: URL },
         ]}
       />
-      <Content />
+      <Content faqs={FAQS} />
       <section className="wl-section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <IeltsTask2PromptBank prompts={IELTS_TASK2_PROMPT_BANK} />

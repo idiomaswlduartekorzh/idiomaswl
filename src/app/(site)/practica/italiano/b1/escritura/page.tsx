@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Scrittura Italiano B1 — Compiti guidati"
-        url="https://idiomaswl.com/practica/italiano/b1/escritura"
+        url="https://www.idiomaswl.com/practica/italiano/b1/escritura"
         description="5 compiti di scrittura B1 de italiano: email formali, saggi di opinione, descrizioni comparative con testo modello y lista di verifica."
       />
       <Content />

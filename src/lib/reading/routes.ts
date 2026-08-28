@@ -1,4 +1,4 @@
-import type { CefrLevel, ReadingLanguage, TutorLocale } from './types'
+import type { CefrLevel, ReadingExercise, ReadingLanguage, TutorLocale } from './types'
 
 const LANGUAGE_SLUGS: Record<TutorLocale, Record<ReadingLanguage, string>> = {
   es: { en: 'ingles', fr: 'frances', it: 'italiano', de: 'aleman', ru: 'ruso', ja: 'japones', ko: 'coreano', pt: 'portugues' },
@@ -28,6 +28,32 @@ export function readingExercisePath(locale: TutorLocale, language: ReadingLangua
   return `${readingHubPath(locale, language, level)}/${slug}`
 }
 
+export function readingExerciseLocalePaths(
+  exercise: Pick<ReadingExercise, 'language' | 'level' | 'slug' | 'tutorLocales'>
+) {
+  return [...new Set(exercise.tutorLocales)].map((locale) => ({
+    locale,
+    path: readingExercisePath(locale, exercise.language, exercise.level.cefr, exercise.slug),
+  }))
+}
+
+export function readingHubLocalePaths(
+  locales: readonly TutorLocale[],
+  language: ReadingLanguage,
+  level: CefrLevel
+) {
+  return [...new Set(locales)].map((locale) => ({
+    locale,
+    path: readingHubPath(locale, language, level),
+  }))
+}
+
+export function readingAlternates(paths: ReadonlyArray<{ locale: TutorLocale; path: string }>) {
+  const languages = Object.fromEntries(paths.map(({ locale, path }) => [locale, path]))
+  const xDefault = languages.es ?? languages.en
+  return xDefault ? { ...languages, 'x-default': xDefault } : languages
+}
+
 export function resolveLanguageSlug(locale: TutorLocale, slug: string): ReadingLanguage | null {
   const entry = Object.entries(LANGUAGE_SLUGS[locale]).find(([, localizedSlug]) => localizedSlug === slug)
   return (entry?.[0] as ReadingLanguage | undefined) ?? null
@@ -36,4 +62,3 @@ export function resolveLanguageSlug(locale: TutorLocale, slug: string): ReadingL
 export function languageSlug(locale: TutorLocale, language: ReadingLanguage) {
   return LANGUAGE_SLUGS[locale][language]
 }
-

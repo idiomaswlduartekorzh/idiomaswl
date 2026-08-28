@@ -2051,6 +2051,42 @@ export const TOEFL_READING_SKILLS: PracticeRoute[] = [
   },
   {
     exam: 'toefl',
+    slug: 'seleccion-de-palabras-contexto',
+    title: 'TOEFL Reading selección de palabras por contexto',
+    description:
+      'Práctica complementaria WeLearn de vocabulario y selección de palabras por contexto con 16 ejercicios explicados.',
+    path: '/practica/toefl/reading/habilidades/seleccion-de-palabras-contexto',
+    parentPath: '/practica/toefl/reading/habilidades',
+    skill: 'reading',
+    searchIntent: 'Practicar selección de palabras por contexto como habilidad complementaria de TOEFL Reading.',
+    teaches: ['TOEFL Reading', 'context clues', 'word choice', 'collocations', 'grammatical category'],
+    keywords: [
+      'TOEFL selección de palabras contexto',
+      'TOEFL context clues practice',
+      'TOEFL word choice practice',
+      'vocabulario TOEFL Reading',
+    ],
+    priority: 0.65,
+    changeFrequency: 'monthly',
+    status: 'published',
+    currentExam: false,
+    note:
+      'Banco WeLearn complementario conservado tras la migración a Complete the Words; no representa una familia oficial del formato actual.',
+    faqs: [
+      {
+        question: '¿Selección de palabras por contexto es una tarea oficial del TOEFL actual?',
+        answer:
+          'No. Es un banco complementario WeLearn conservado para practicar categoría gramatical, colocación y pistas semánticas. La interacción oficial Complete the Words trabaja letras faltantes dentro de palabras parciales.',
+      },
+      {
+        question: '¿Qué habilidad entrena este banco?',
+        answer:
+          'Entrena cómo elegir una palabra compatible con la gramática, el significado y las colocaciones de una oración. Cada ejercicio muestra la respuesta, la explicación y la trampa principal.',
+      },
+    ],
+  },
+  {
+    exam: 'toefl',
     slug: 'text-organisation',
     title: 'TOEFL Reading Text Organisation',
     description:

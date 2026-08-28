@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Mi Vocabulario — Palabras guardadas',
   description: 'Tu colección personal de vocabulario. Repasa las palabras que guardaste durante la práctica con flashcards interactivas.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/mi-vocabulario' },
+  robots: { index: false, follow: true },
 }
 
 export default function MiVocabularioPage() {

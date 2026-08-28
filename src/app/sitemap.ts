@@ -5,7 +5,7 @@ import { SAT_GUIDE_SLUGS } from '@/data/satGuides';
 import { grammarRegistry } from '@/data/grammar/registry';
 import { EXAM_PRACTICE_ROUTES } from '@/data/practica-exams/seo-catalog';
 import { publishedReadingExercises } from '@/lib/reading/catalog';
-import { readingExercisePath } from '@/lib/reading/routes';
+import { readingAlternates, readingExerciseLocalePaths } from '@/lib/reading/routes';
 import { SIMULACROS } from '@/data/mocks/icfes-simulacros';
 import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
 import { getVocabLevels } from '@/data/practica/vocabulario/registry';
@@ -21,6 +21,12 @@ import {
 } from '@/data/practica/habla-acompanado';
 import { IDIOMAS_PUBLICADOS } from '@/data/fonetica/idiomas';
 import { EXAM_PODCASTS } from '@/data/practica/exam-podcast-catalog';
+import { QUIZ_LANGUAGES } from '@/data/practica/quiz-language-catalog';
+import { PRONOUN_QUESTS } from '@/data/practica/pronoun-quest-registry';
+import { PARAPHRASE_TECHNIQUES } from '@/app/(site)/practica/ielts/academic/writing/task2/paraphrasing/paraphrasing-data';
+import { VOCAB_FUNCTIONS } from '@/app/(site)/practica/ielts/academic/writing/task2/academic-vocabulary/vocabulary-data';
+import { TRANSFERABLE_SKILLS } from '@/app/(site)/practica/ielts/academic/writing/task2/habilidades/skills-data';
+import { VOCAB_UNITS } from '@/app/(site)/practica/ielts/academic/writing/vocabulario/vocabulary-index';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -45,64 +51,71 @@ const EXAM_SLUGS = Object.keys(EXAMS).filter((slug) => EXAMS[slug].available);
 const PUBLISHED_EXAM_PRACTICE_ROUTES = EXAM_PRACTICE_ROUTES.filter((route) => route.status === 'published');
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const publishedReadings = publishedReadingExercises();
 
   return [
     // ── Core pages ─────────────────────────────────────────────────────────────
-    { url: BASE,                      lastModified: now, changeFrequency: 'monthly', priority: 1    },
-    { url: `${BASE}/metodo`,          lastModified: now, changeFrequency: 'monthly', priority: 0.9  },
-    { url: `${BASE}/leccion`,         lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
-    { url: `${BASE}/practica`,                  lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
-    { url: `${BASE}/podcasts`,        lastModified: now, changeFrequency: 'monthly', priority: 0.82 },
-    { url: `${BASE}/nivel-radar`,     lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
+    { url: BASE, changeFrequency: 'monthly', priority: 1    },
+    { url: `${BASE}/metodo`, changeFrequency: 'monthly', priority: 0.9  },
+    { url: `${BASE}/leccion`, changeFrequency: 'weekly',  priority: 0.85 },
+    { url: `${BASE}/practica`, changeFrequency: 'weekly',  priority: 0.85 },
+    { url: `${BASE}/podcasts`, changeFrequency: 'monthly', priority: 0.82 },
+    { url: `${BASE}/nivel-radar`, changeFrequency: 'monthly', priority: 0.85 },
 
     // ── Herramientas gratuitas ────────────────────────────────────────────────
     // Una URL por idioma a propósito: «transcripción fonética inglés» y «cómo se
     // pronuncia en coreano» son búsquedas distintas y no comparten página.
     // Los idiomas salen del registro, no de una lista a mano: así añadir uno no puede
     // dejarlo fuera del sitemap.
-    { url: `${BASE}/herramientas`,                        lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/herramientas/quizes`,                 lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
-    { url: `${BASE}/herramientas/quizes/italiano`,        lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/ingles`,           lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/frances`,          lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/portugues`,        lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/aleman`,           lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/ruso`,             lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/japones`,          lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/coreano`,          lastModified: now, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/transcripcion-fonetica`, lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/herramientas`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/herramientas/quizes`, changeFrequency: 'monthly', priority: 0.75 },
+    { url: `${BASE}/herramientas/quizes/pronombres`, changeFrequency: 'monthly', priority: 0.73 },
+    ...QUIZ_LANGUAGES.flatMap((language) => [
+      {
+        url: `${BASE}/herramientas/quizes/idiomas/${language.slug}`,
+        changeFrequency: 'monthly' as const,
+        priority: 0.73,
+      },
+      {
+        url: `${BASE}/herramientas/quizes/${language.slug}`,
+        changeFrequency: 'monthly' as const,
+        priority: 0.72,
+      },
+    ]),
+    ...PRONOUN_QUESTS.map((quest) => ({
+      url: `${BASE}/herramientas/quizes/pronombres/${quest.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.72,
+    })),
+    { url: `${BASE}/herramientas/transcripcion-fonetica`, changeFrequency: 'monthly', priority: 0.75 },
     ...IDIOMAS_PUBLICADOS.map((idioma) => ({
       url: `${BASE}/herramientas/transcripcion-fonetica/${idioma.slug}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
 
-    { url: `${BASE}/precios`,         lastModified: now, changeFrequency: 'monthly', priority: 0.7  },
+    { url: `${BASE}/precios`, changeFrequency: 'monthly', priority: 0.7  },
 
     // ── High-intent landing pages ──────────────────────────────────────────────
-    { url: `${BASE}/clases-de-idiomas`,    lastModified: now, changeFrequency: 'monthly', priority: 0.93 },
-    { url: `${BASE}/clases-de-ingles`,     lastModified: now, changeFrequency: 'monthly', priority: 0.95 },
-    { url: `${BASE}/clases-de-coreano`,    lastModified: now, changeFrequency: 'monthly', priority: 0.92 },
-    { url: `${BASE}/clases-de-frances`,    lastModified: now, changeFrequency: 'monthly', priority: 0.88 },
-    { url: `${BASE}/clases-de-aleman`,     lastModified: now, changeFrequency: 'monthly', priority: 0.88 },
-    { url: `${BASE}/clases-de-italiano`,   lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${BASE}/clases-de-portugues`,  lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${BASE}/clases-de-ruso`,       lastModified: now, changeFrequency: 'monthly', priority: 0.82 },
-    { url: `${BASE}/quienes-somos`,       lastModified: now, changeFrequency: 'monthly', priority: 0.80 },
-    { url: `${BASE}/clases-de-japones`,   lastModified: now, changeFrequency: 'monthly', priority: 0.82 },
-    { url: `${BASE}/preparacion-icfes`,              lastModified: now, changeFrequency: 'monthly', priority: 0.9  },
-    { url: `${BASE}/miembro-fundador`,               lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
-    { url: `${BASE}/clases-de-ingles-bucaramanga`,              lastModified: now, changeFrequency: 'monthly', priority: 0.95 },
-    { url: `${BASE}/aprende-coreano/palabras-compuestas`,       lastModified: now, changeFrequency: 'monthly', priority: 0.82 },
+    { url: `${BASE}/clases-de-idiomas`, changeFrequency: 'monthly', priority: 0.93 },
+    { url: `${BASE}/clases-de-ingles`, changeFrequency: 'monthly', priority: 0.95 },
+    { url: `${BASE}/clases-de-coreano`, changeFrequency: 'monthly', priority: 0.92 },
+    { url: `${BASE}/clases-de-frances`, changeFrequency: 'monthly', priority: 0.88 },
+    { url: `${BASE}/clases-de-aleman`, changeFrequency: 'monthly', priority: 0.88 },
+    { url: `${BASE}/clases-de-italiano`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/clases-de-portugues`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/clases-de-ruso`, changeFrequency: 'monthly', priority: 0.82 },
+    { url: `${BASE}/quienes-somos`, changeFrequency: 'monthly', priority: 0.80 },
+    { url: `${BASE}/clases-de-japones`, changeFrequency: 'monthly', priority: 0.82 },
+    { url: `${BASE}/preparacion-icfes`, changeFrequency: 'monthly', priority: 0.9  },
+    { url: `${BASE}/miembro-fundador`, changeFrequency: 'weekly',  priority: 0.85 },
+    { url: `${BASE}/clases-de-ingles-bucaramanga`, changeFrequency: 'monthly', priority: 0.95 },
+    { url: `${BASE}/aprende-coreano/palabras-compuestas`, changeFrequency: 'monthly', priority: 0.82 },
 
     // ── Exams ──────────────────────────────────────────────────────────────────
-    { url: `${BASE}/examenes`,        lastModified: now, changeFrequency: 'weekly',  priority: 0.9  },
+    { url: `${BASE}/examenes`, changeFrequency: 'weekly',  priority: 0.9  },
     ...EXAM_SLUGS.map((slug) => ({
       url: `${BASE}/examenes/${slug}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.75,
     })),
@@ -110,20 +123,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // El catálogo es la única fuente para el índice /podcasts, los hubs y el sitemap.
     ...EXAM_PODCASTS.map((episode) => ({
       url: `${BASE}${episode.href}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.78,
     })),
     // Espinazo del superhub de SAT — ver docs/sat-superhub-plan.md
     ...SAT_GUIDE_SLUGS.map((slug) => ({
       url: `${BASE}/examenes/sat/guia/${slug}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     })),
 
     // ── Blog ───────────────────────────────────────────────────────────────────
-    { url: `${BASE}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${BASE}/blog`, changeFrequency: 'weekly', priority: 0.8 },
     ...BLOG_POSTS.map(post => ({
       url: `${BASE}/blog/${post.slug}`,
       lastModified: new Date(post.updatedDate ?? post.date),
@@ -134,7 +145,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── Practice — language hubs ───────────────────────────────────────────────
     ...PRACTICE_LANGUAGES.map((lang) => ({
       url: `${BASE}/practica/${lang}`,
-      lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     })),
@@ -144,7 +154,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       Object.keys(grammarRegistry[lang]).map((level) => ({ lang, level }))
     ).map(({ lang, level }) => ({
       url: `${BASE}/practica/${lang}/${level}`,
-      lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.75,
     })),
@@ -160,7 +169,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       )
     ).map(({ lang, level, skill }) => ({
       url: `${BASE}/practica/${lang}/${level}/${skill}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),
@@ -169,20 +177,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Cada rol tiene URL propia a propósito: dos personas abren dos pantallas y ninguna
     // recibe los datos ocultos de la otra. Sets, rutas y slugs salen del registro vivo.
     ...ROLEPLAY_SETS.flatMap((set) => [
-      { url: `${BASE}${speakingPath(set.language, set.level)}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.74 },
-      { url: `${BASE}${soloSpeakingPath(set.language, set.level)}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
-      { url: `${BASE}${accompaniedSpeakingPath(set.language, set.level)}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.76 },
-      { url: `${BASE}${roleplayToolkitPath(set.language, set.level)}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.64 },
+      { url: `${BASE}${speakingPath(set.language, set.level)}`, changeFrequency: 'monthly' as const, priority: 0.74 },
+      { url: `${BASE}${soloSpeakingPath(set.language, set.level)}`, changeFrequency: 'monthly' as const, priority: 0.68 },
+      { url: `${BASE}${accompaniedSpeakingPath(set.language, set.level)}`, changeFrequency: 'monthly' as const, priority: 0.76 },
+      { url: `${BASE}${roleplayToolkitPath(set.language, set.level)}`, changeFrequency: 'monthly' as const, priority: 0.64 },
       ...set.scenarios.flatMap((scenario) => [
         {
           url: `${BASE}${roleplayScenarioPath(scenario)}`,
-          lastModified: now,
           changeFrequency: 'monthly' as const,
           priority: 0.72,
         },
         ...scenario.roles.map((role) => ({
           url: `${BASE}${roleplayRolePath(scenario, role.id)}`,
-          lastModified: now,
           changeFrequency: 'monthly' as const,
           priority: 0.66,
         })),
@@ -192,7 +198,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── Practice — grammar topics A1–B1 (one indexable URL per topic) ─────────
     ...GRAMMAR_ENTRIES.map(({ lang, level, topic }) => ({
       url: `${BASE}/practica/${lang}/${level}/gramatica/${topic.slug}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.72,
     })),
@@ -203,13 +208,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getVocabLevels().flatMap((nivel) => [
       {
         url: `${BASE}/practica/${nivel.lang}/${nivel.nivel}/vocabulario`,
-        lastModified: now,
         changeFrequency: 'monthly' as const,
         priority: 0.7,
       },
       ...nivel.bloques.map((bloque) => ({
         url: `${BASE}/practica/${nivel.lang}/${nivel.nivel}/vocabulario/${bloque.id}`,
-        lastModified: now,
         changeFrequency: 'monthly' as const,
         priority: 0.72,
       })),
@@ -217,118 +220,146 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Reading engine — only human-reviewed, published exercises ───────────
     ...publishedReadings.flatMap((exercise) => {
-      const esPath = readingExercisePath('es', exercise.language, exercise.level.cefr, exercise.slug);
-      const enPath = readingExercisePath('en', exercise.language, exercise.level.cefr, exercise.slug);
+      const localePaths = readingExerciseLocalePaths(exercise);
       const lastModified = new Date(exercise.seo.lastModified);
-      // Idiomas con URL canónica unificada (ej. inglés en /practica/...): una sola entrada, sin hreflang duplicado.
-      if (esPath === enPath) {
-        return [{ url: `${BASE}${esPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.72 }];
-      }
       const alternates = {
-        languages: {
-          es: `${BASE}${esPath}`,
-          en: `${BASE}${enPath}`,
-          'x-default': `${BASE}${esPath}`,
-        },
+        languages: Object.fromEntries(
+          Object.entries(readingAlternates(localePaths)).map(([locale, path]) => [locale, `${BASE}${path}`])
+        ),
       };
-      return [
-        { url: `${BASE}${esPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.72, alternates },
-        { url: `${BASE}${enPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.7, alternates },
-      ];
+      return localePaths.map(({ locale, path }) => ({
+        url: `${BASE}${path}`,
+        lastModified,
+        changeFrequency: 'monthly' as const,
+        priority: locale === 'es' ? 0.72 : 0.7,
+        alternates,
+      }));
     }),
+    // Los hubs ingleses solo existen para los tres niveles que realmente tienen lecturas
+    // publicadas. Se derivan del mismo catálogo para no volver a fabricar 404 por idioma.
+    ...[...new Set(publishedReadings.flatMap((exercise) =>
+      readingExerciseLocalePaths(exercise)
+        .filter(({ locale }) => locale === 'en')
+        .map(({ path }) => path.replace(/\/[^/]+$/, ''))
+    ))].map((path) => ({
+      url: `${BASE}${path}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.68,
+    })),
 
     // ── Practice — Historias: comprensión integrada en los 8 idiomas ─────────
     // Derivado del registro, no una lista a mano: al añadir una historia entra
     // aquí sola. El hub de cada idioma va antes que sus historias.
     ...HISTORIA_LANG_KEYS.flatMap((lang) => [
-      { url: `${BASE}/practica/${lang}/historias`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.74 },
+      { url: `${BASE}/practica/${lang}/historias`, changeFrequency: 'monthly' as const, priority: 0.74 },
       ...getHistorias(lang).map((h) => ({
         url: `${BASE}/practica/${lang}/historias/${h.slug}`,
-        lastModified: now,
         changeFrequency: 'monthly' as const,
         priority: 0.72,
       })),
     ]),
 
     // ── Practice — ICFES Saber 11 ────────────────────────────────────────────
-    { url: `${BASE}/practica/icfes-saber-11`,                                  lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },
-    { url: `${BASE}/practica/icfes-saber-11/diagnostico`,                      lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
-    { url: `${BASE}/practica/icfes-saber-11/plan-de-estudio`,                  lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8  },
-    { url: `${BASE}/practica/icfes-saber-11/simulacro-guiado`,                 lastModified: now, changeFrequency: 'monthly' as const, priority: 0.84 },
-    ...GUIDED_MOCK_IDS.map((mockId) => ({ url: `${BASE}/examenes/icfes/practica/${mockId}/guiado`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.76 })),
-    { url: `${BASE}/practica/icfes-saber-11/pregunta-del-dia`,                 lastModified: now, changeFrequency: 'daily'   as const, priority: 0.78 },
+    { url: `${BASE}/practica/icfes-saber-11`, changeFrequency: 'weekly'  as const, priority: 0.85 },
+    { url: `${BASE}/practica/icfes-saber-11/diagnostico`, changeFrequency: 'weekly'  as const, priority: 0.82 },
+    { url: `${BASE}/practica/icfes-saber-11/plan-de-estudio`, changeFrequency: 'monthly' as const, priority: 0.8  },
+    { url: `${BASE}/practica/icfes-saber-11/simulacro-guiado`, changeFrequency: 'monthly' as const, priority: 0.84 },
+    ...GUIDED_MOCK_IDS.map((mockId) => ({ url: `${BASE}/examenes/icfes/practica/${mockId}/guiado`, changeFrequency: 'monthly' as const, priority: 0.76 })),
+    { url: `${BASE}/practica/icfes-saber-11/pregunta-del-dia`, changeFrequency: 'daily'   as const, priority: 0.78 },
     ...(['parte-1', 'parte-2', 'parte-3', 'parte-4', 'parte-5', 'parte-6', 'parte-7'] as const).map((part) => ({
       url: `${BASE}/practica/icfes-saber-11/${part}`,
-      lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     })),
-    { url: `${BASE}/practica/icfes-saber-11/examenes`,                         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
-    ...SIMULACROS.filter((exam) => exam.assessment === 'saber-11').map((exam) => ({ url: `${BASE}/practica/icfes-saber-11/examenes/${exam.id}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.72 })),
-    ...GUIDED_WORKBOOK_IDS.map((examId) => ({ url: `${BASE}/practica/icfes-saber-11/examenes/${examId}/guiado`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.78 })),
-    { url: `${BASE}/practica/icfes-saber-11/vocabulario`,                      lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
-    { url: `${BASE}/practica/icfes-saber-11/gramatica-conjunciones`,           lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
-    { url: `${BASE}/practica/icfes-saber-11/sinonimos-inferencia`,             lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.82 },
+    { url: `${BASE}/practica/icfes-saber-11/examenes`, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    ...SIMULACROS.filter((exam) => exam.assessment === 'saber-11').map((exam) => ({ url: `${BASE}/practica/icfes-saber-11/examenes/${exam.id}`, changeFrequency: 'monthly' as const, priority: 0.72 })),
+    ...GUIDED_WORKBOOK_IDS.map((examId) => ({ url: `${BASE}/practica/icfes-saber-11/examenes/${examId}/guiado`, changeFrequency: 'monthly' as const, priority: 0.78 })),
+    { url: `${BASE}/practica/icfes-saber-11/vocabulario`, changeFrequency: 'weekly'  as const, priority: 0.82 },
+    { url: `${BASE}/practica/icfes-saber-11/gramatica-conjunciones`, changeFrequency: 'weekly'  as const, priority: 0.82 },
+    { url: `${BASE}/practica/icfes-saber-11/sinonimos-inferencia`, changeFrequency: 'weekly'  as const, priority: 0.82 },
 
     // ── Practice — IELTS ──────────────────────────────────────────────────────
-    { url: `${BASE}/practica/ielts`,                          lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.85 },
-    { url: `${BASE}/practica/ielts/general-training`,         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
-    { url: `${BASE}/practica/ielts/general-training/reading`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.67 },
-    { url: `${BASE}/practica/ielts/general-training/writing/task1`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.66 },
-    { url: `${BASE}/practica/ielts/general-training/writing/task2`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.66 },
-    { url: `${BASE}/practica/ielts/reading`,                   lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
-    { url: `${BASE}/practica/ielts/reading/mixed-practice`,    lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.75 },
-    { url: `${BASE}/practica/ielts/reading/tipos-de-preguntas`, lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.76 },
-    { url: `${BASE}/practica/ielts/reading/habilidades`,        lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.74 },
-    { url: `${BASE}/practica/ielts/academic`,                 lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.8  },
-    { url: `${BASE}/practica/ielts/academic/writing`,         lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.75 },
-    { url: `${BASE}/practica/ielts/academic/writing/rubrica`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
-    { url: `${BASE}/practica/ielts/academic/writing/task1`,   lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7  },
-    { url: `${BASE}/practica/ielts/academic/writing/task2`,   lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7  },
+    { url: `${BASE}/practica/ielts`, changeFrequency: 'weekly'  as const, priority: 0.85 },
+    { url: `${BASE}/practica/ielts/general-training`, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/ielts/general-training/reading`, changeFrequency: 'monthly' as const, priority: 0.67 },
+    { url: `${BASE}/practica/ielts/general-training/writing/task1`, changeFrequency: 'monthly' as const, priority: 0.66 },
+    { url: `${BASE}/practica/ielts/general-training/writing/task2`, changeFrequency: 'monthly' as const, priority: 0.66 },
+    { url: `${BASE}/practica/ielts/reading`, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/ielts/reading/mixed-practice`, changeFrequency: 'weekly'  as const, priority: 0.75 },
+    { url: `${BASE}/practica/ielts/reading/tipos-de-preguntas`, changeFrequency: 'weekly'  as const, priority: 0.76 },
+    { url: `${BASE}/practica/ielts/reading/habilidades`, changeFrequency: 'weekly'  as const, priority: 0.74 },
+    { url: `${BASE}/practica/ielts/academic`, changeFrequency: 'weekly'  as const, priority: 0.8  },
+    { url: `${BASE}/practica/ielts/academic/writing`, changeFrequency: 'weekly'  as const, priority: 0.75 },
+    { url: `${BASE}/practica/ielts/academic/writing/rubrica`, changeFrequency: 'monthly' as const, priority: 0.68 },
+    { url: `${BASE}/practica/ielts/academic/writing/task1`, changeFrequency: 'monthly' as const, priority: 0.7  },
+    { url: `${BASE}/practica/ielts/academic/writing/task2`, changeFrequency: 'monthly' as const, priority: 0.7  },
     ...(['introduccion', 'overview', 'body-1', 'body-2', 'tendencias', 'comparaciones', 'procesos', 'mapas', 'vocabulario', 'tarea-completa', 'graficos-lineales', 'graficos-de-barras', 'pie-charts', 'tablas'] as const).map((s) => ({
       url: `${BASE}/practica/ielts/academic/writing/task1/${s}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),
-    { url: `${BASE}/recursos/ielts-writing-task-1-introduccion-pdf`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.78 },
+    { url: `${BASE}/recursos/ielts-writing-task-1-introduccion-pdf`, changeFrequency: 'monthly' as const, priority: 0.78 },
     // Una URL por familia de conectores. Cada una responde a una búsqueda distinta
     // —«conectores de contraste en inglés», «conectores de causa y efecto»— que en una sola
     // página larga competirían entre sí.
     ...(['addition', 'contrast', 'cause-and-effect', 'examples', 'concession', 'comparison', 'conclusion', 'condition', 'correlative'] as const).map((f) => ({
       url: `${BASE}/practica/ielts/academic/writing/task2/linking-language/${f}`,
-      lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
     })),
     ...(['analisis-pregunta', 'tipo-ensayo', 'introduccion', 'body-1', 'body-2', 'parrafos-cuerpo', 'linking-language', 'conclusion', 'revision-final', 'tarea-completa', 'opinion', 'discussion', 'advantages-disadvantages', 'problem-solution', 'direct-question', 'model-answers'] as const).map((s) => ({
       url: `${BASE}/practica/ielts/academic/writing/task2/${s}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),
+    // Estos cuatro clústeres están publicados y protegidos por check:ielts-task2. Sus rutas
+    // salen de los mismos registros que generan las páginas, no de una segunda lista manual.
+    { url: `${BASE}/practica/ielts/academic/writing/task2/paraphrasing`, changeFrequency: 'monthly', priority: 0.66 },
+    ...PARAPHRASE_TECHNIQUES.map((technique) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task2/paraphrasing/${technique.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.62,
+    })),
+    { url: `${BASE}/practica/ielts/academic/writing/task2/academic-vocabulary`, changeFrequency: 'monthly', priority: 0.66 },
+    ...VOCAB_FUNCTIONS.map((vocabFunction) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task2/academic-vocabulary/${vocabFunction.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.62,
+    })),
+    ...TRANSFERABLE_SKILLS.map((skill) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task2/habilidades/${skill.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.62,
+    })),
+    { url: `${BASE}/practica/ielts/academic/writing/vocabulario`, changeFrequency: 'monthly', priority: 0.66 },
+    ...VOCAB_UNITS.map((unit) => ({
+      url: `${BASE}/practica/ielts/academic/writing/vocabulario/${unit.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.62,
+    })),
     ...PUBLISHED_EXAM_PRACTICE_ROUTES.map((route) => ({
       url: `${BASE}${route.path}`,
-      lastModified: now,
       changeFrequency: route.changeFrequency,
       priority: route.priority,
     })),
 
     // ── Practice — TOEFL ──────────────────────────────────────────────────────
-    { url: `${BASE}/practica/toefl`,                            lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.84 },
-    { url: `${BASE}/practica/toefl/reading`,                    lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
-    { url: `${BASE}/practica/toefl/reading/tipos-de-preguntas`, lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.76 },
-    { url: `${BASE}/practica/toefl/listening`,                  lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
-    { url: `${BASE}/practica/toefl/writing`,                    lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
-    { url: `${BASE}/practica/toefl/speaking`,                   lastModified: now, changeFrequency: 'weekly'  as const, priority: 0.78 },
-    { url: `${BASE}/practica/toefl/writing/model-answers`,      lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
-    { url: `${BASE}/practica/toefl/writing/rubrica`,            lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
-    { url: `${BASE}/practica/toefl/writing/grammar-for-writing`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.68 },
-    { url: `${BASE}/practica/toefl/writing/academic-discussion/banco-de-prompts`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.69 },
-    { url: `${BASE}/practica/toefl/writing/write-an-email/banco-de-prompts`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.69 },
+    { url: `${BASE}/practica/toefl`, changeFrequency: 'weekly'  as const, priority: 0.84 },
+    { url: `${BASE}/practica/toefl/reading`, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/toefl/reading/tipos-de-preguntas`, changeFrequency: 'weekly'  as const, priority: 0.76 },
+    { url: `${BASE}/practica/toefl/listening`, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/toefl/writing`, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/toefl/speaking`, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/toefl/writing/model-answers`, changeFrequency: 'monthly' as const, priority: 0.68 },
+    { url: `${BASE}/practica/toefl/writing/rubrica`, changeFrequency: 'monthly' as const, priority: 0.68 },
+    { url: `${BASE}/practica/toefl/writing/grammar-for-writing`, changeFrequency: 'monthly' as const, priority: 0.68 },
+    { url: `${BASE}/practica/toefl/writing/academic-discussion/banco-de-prompts`, changeFrequency: 'monthly' as const, priority: 0.69 },
+    { url: `${BASE}/practica/toefl/writing/write-an-email/banco-de-prompts`, changeFrequency: 'monthly' as const, priority: 0.69 },
 
     // ── Korean lesson steps ────────────────────────────────────────────────────
+    { url: `${BASE}/practica/korean-speaking-1`, changeFrequency: 'monthly' as const, priority: 0.7 },
     ...PUBLISHED_DAYS.map((day) => ({
       url: `${BASE}/courses/korean/step/${day}`,
-      lastModified: now,
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),

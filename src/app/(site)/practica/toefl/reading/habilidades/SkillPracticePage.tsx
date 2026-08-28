@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { CheckCircle2, ListChecks, SearchCheck } from 'lucide-react';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import {
   PRACTICE_BASE_URL,
   TOEFL_READING_CURRENT_FORMAT,
@@ -26,7 +26,6 @@ export function SkillPracticePage({ slug }: { slug: string }) {
         teaches={route.teaches}
         isPartOf={{ name: 'TOEFL Reading habilidades', url: `${PRACTICE_BASE_URL}/practica/toefl/reading/habilidades` }}
       />
-      <FaqJsonLd faqs={route.faqs} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },

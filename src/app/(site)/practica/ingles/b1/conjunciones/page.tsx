@@ -6,7 +6,7 @@ import { QuizSchema } from '@/components/practica/EducationSchema';
 export const metadata: Metadata = {
   title: 'Conjunctions B1 — and/but/although/when/if/however',
   description: 'Practica las conjunciones del inglés B1 con 6 niveles progresivos: coordinating, contrast, condition, time y connectors. Feedback inmediato.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/ingles/b1/conjunciones' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/b1/conjunciones' },
 };
 
 const guide: QuestGuide = {
@@ -128,7 +128,7 @@ export default function ConjuncionesInglesB1() {
     <>
       <QuizSchema
         name="Conjunctions B1 — and, but, although, when, if, however"
-        url="https://idiomaswl.com/practica/ingles/b1/conjunciones"
+        url="https://www.idiomaswl.com/practica/ingles/b1/conjunciones"
         description="Practica las conjunciones del inglés B1: coordinating, contrast, condition y time. 6 niveles progresivos con feedback inmediato."
       />
       <QuestEngine

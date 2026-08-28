@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Task2SkillStructuredData } from '../Task2SkillStructuredData'
+import { TASK2_SKILL_FAQS, Task2SkillStructuredData } from '../Task2SkillStructuredData'
 
 export const metadata: Metadata = {
   title: 'IELTS Writing Task 2 Introduction: Thesis and Paraphrase',
@@ -22,6 +22,7 @@ export default function Page() {
         name="IELTS Writing Task 2 introduction practice"
         path="/practica/ielts/academic/writing/task2/introduccion"
         teaches={['essay introduction', 'prompt analysis', 'paraphrasing', 'thesis statement', 'sentence functions']}
+        faqs={TASK2_SKILL_FAQS}
       />
       <IntroduccionTask2Client />
     </>

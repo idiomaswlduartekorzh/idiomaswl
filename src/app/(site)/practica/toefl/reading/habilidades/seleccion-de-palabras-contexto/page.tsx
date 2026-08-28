@@ -4,10 +4,12 @@ import { CheckCircle2 } from 'lucide-react';
 import { TOEFL_COMPLETE_WORDS_ITEMS } from '@/data/practica-exams/seo-catalog';
 
 const ITEMS = TOEFL_COMPLETE_WORDS_ITEMS;
+const CANONICAL = 'https://www.idiomaswl.com/practica/toefl/reading/habilidades/seleccion-de-palabras-contexto';
 
 export const metadata: Metadata = {
   title: 'Selección de palabras por contexto — TOEFL Reading',
   description: 'Práctica complementaria WeLearn de vocabulario y selección de palabras por contexto con 16 ejercicios explicados.',
+  alternates: { canonical: CANONICAL },
   robots: { index: true, follow: true },
 };
 

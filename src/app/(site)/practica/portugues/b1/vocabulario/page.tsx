@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Portugués B1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/portugues/b1/vocabulario"
+        url="https://www.idiomaswl.com/practica/portugues/b1/vocabulario"
         description="Ejercicios de vocabulario de Portugués nivel B1: 8 conjuntos temáticos con flashcards, múltipla escolha e escrita."
       />
       <Content />

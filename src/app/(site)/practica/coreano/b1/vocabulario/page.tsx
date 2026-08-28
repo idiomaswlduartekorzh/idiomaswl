@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Coreano B1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/coreano/b1/vocabulario"
+        url="https://www.idiomaswl.com/practica/coreano/b1/vocabulario"
         description="Ejercicios de vocabulario de Coreano nivel B1: 8 temas, 80 palabras con Hangul y romanización. Flashcards, opción múltiple y práctica de escritura."
       />
       <Content />

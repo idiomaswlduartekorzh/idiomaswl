@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Escritura en Italiano A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/italiano/a2/escritura"
+        url="https://www.idiomaswl.com/practica/italiano/a2/escritura"
         description="Ejercicios de escritura guiada de Italiano nivel A2 con modelos, banco de vocabulario y checklist."
       />
       <Content />

@@ -1,6 +1,10 @@
+import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
-export const metadata = { title: 'WeLearn Korean — Animation' };
+export const metadata: Metadata = {
+  title: 'WeLearn Korean — Animation',
+  robots: { index: false, follow: false },
+};
 
 export default function AnimationLayout({ children }: { children: ReactNode }) {
   return (
