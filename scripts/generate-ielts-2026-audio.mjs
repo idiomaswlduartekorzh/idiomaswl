@@ -63,11 +63,10 @@ assert.equal(
 );
 const set5CandidateRow = plan.rows.find(row => row.setId === 'set-5');
 assert.ok(set5CandidateRow, 'Set 5 candidate is absent from the current plan');
-assert.equal(
-  set5Candidate.segmentSourceSha256,
-  segmentSourceSha256(set5CandidateRow),
-  'Set 5 candidate speech changed; regenerate and re-audit before reuse',
-);
+const set5CandidateMatchesCurrentSource = set5Candidate.segmentSourceSha256 === segmentSourceSha256(set5CandidateRow);
+assert.equal(set5Candidate.currentPlan?.manifestSha256, manifestHash, 'Set 5 candidate supersession record belongs to a stale plan');
+assert.equal(set5Candidate.currentPlan?.sourceCompatible, set5CandidateMatchesCurrentSource, 'Set 5 candidate compatibility record is inaccurate');
+assert.equal(set5CandidateMatchesCurrentSource, false, 'rejected Set 5 candidate must not be mistaken for the expanded reference script');
 assert.equal(set5Candidate.releaseAuthorized, false, 'Set 5 candidate cannot silently authorize its own release');
 
 function parseSetSelection(selection) {

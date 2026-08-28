@@ -163,7 +163,7 @@ const closure = {
 
 assert.deepEqual(closure.nonAudioReadySets, SET_NUMBERS, 'Non-audio closure does not cover Sets 1–20 exactly.');
 assert.deepEqual(closure.audioReadySets, [], 'No set may be audio-ready until it passes the calibrated timing gate.');
-assert.equal(closure.totalLiveControls, 4784, 'Golden control-count drift requires an explicit closure refresh.');
+assert.equal(closure.totalLiveControls, 4788, 'Golden control-count drift requires an explicit closure refresh.');
 
 if (process.argv.includes('--write')) {
   writeFileSync(CLOSURE_PATH, `${JSON.stringify(closure, null, 2)}\n`);

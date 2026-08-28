@@ -18,8 +18,8 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.equal(plan.timingFidelityGate.status, 'blocked');
   assert.equal(plan.timingFidelityGate.minimumTranscriptWordsPerSet, 2800);
   assert.equal(plan.timingFidelityGate.targetIntegralDurationSeconds[1], 1800);
-  assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, 340074);
-  assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(340074 * casting.credits_per_character));
+  assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, 340845);
+  assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(340845 * casting.credits_per_character));
   assert.equal(casting.manifest_sha256, plan.manifestSha256);
   const pilotRow = plan.rows.find(row => row.setId === `set-${pilot.pilot_set}`);
   assert.ok(pilotRow);
@@ -35,7 +35,8 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.ok(casting.target.normalization_true_peak_dbfs < casting.target.max_true_peak_dbfs);
   assert.equal(casting.target.silence_between_parts_seconds, 15);
   assert.equal(pilot.status, 'accepted_by_owner');
-  assert.deepEqual(casting.approval_scope.approved_sets, [4, 5]);
+  assert.deepEqual(casting.approval_scope.approved_sets, []);
+  assert.deepEqual(casting.approval_scope.historical_approved_sets, [4, 5]);
   assert.equal(
     createHash('sha256').update(readFileSync('public/audio/ielts/ielts-listening-set-4.mp3')).digest('hex'),
     pilot.audio_sha256,
@@ -53,21 +54,22 @@ test('the checked-in invoice never discounts authored characters', () => {
   const reusableSet5 = set5.segments.filter(segment => acceptedSpeech.has(`${segment.profile}|${segment.textSha256}`));
   assert.equal(reusableSet5.length, 12);
   assert.equal(reusableSet5.reduce((total, segment) => total + segment.characters, 0), 583);
-  assert.equal(set5.transcriptWords, 2215);
-  assert.equal(set5.requestSegments, 71);
+  assert.equal(set5.transcriptWords, 2909);
+  assert.equal(set5.requestSegments, 78);
   assert.ok(set5.profiles.includes('student-woman:north-american'));
   assert.ok(set5.profiles.includes('student-man:north-american'));
   assert.ok(set5.profiles.includes('tutor:north-american'));
   assert.ok(!set5.profiles.includes('speaker:north-american'), 'Meg and Ryan must never collapse into one generic voice');
-  assert.equal(set5.sourceCharacters - 583, 12475, 'only new Set 5 speech is billable after approved reuse');
-  assert.equal(set5Candidate.segmentSourceSha256, createHash('sha256').update(JSON.stringify(set5.segments.map(segment => ({
+  assert.equal(set5.sourceCharacters - 583, 16695, 'expanded Set 5 speech would be billable after approved byte reuse');
+  assert.notEqual(set5Candidate.segmentSourceSha256, createHash('sha256').update(JSON.stringify(set5.segments.map(segment => ({
     profile: segment.profile,
     textSha256: segment.textSha256,
   })))).digest('hex'));
-  assert.equal(set5Candidate.sourceCharacters, set5.sourceCharacters);
+  assert.notEqual(set5Candidate.sourceCharacters, set5.sourceCharacters);
+  assert.equal(set5Candidate.sourceCharacters, 13058);
   assert.equal(set5Candidate.billableCharacters, 12475);
   assert.equal(set5Candidate.reusedPilotCharacters, 583);
-  assert.equal(set5Candidate.billableCharacters + set5Candidate.reusedPilotCharacters, set5.sourceCharacters);
+  assert.equal(set5Candidate.billableCharacters + set5Candidate.reusedPilotCharacters, set5Candidate.sourceCharacters);
   assert.equal(set5Candidate.releaseAuthorized, false);
   assert.equal(set5Candidate.status, 'rejected_timing_profile_requires_script_revision_and_reassembly');
   assert.equal(set5Candidate.timingQa.status, 'rejected');
@@ -113,22 +115,24 @@ test('dry-run source verification is local, deterministic and non-authorizing', 
   assert.match(output.note, /No API call/);
 });
 
-test('paid generation cannot exceed the owner-approved ceiling before any secret or provider call', () => {
-  const excessiveCap = spawnSync(process.execPath, [
+test('paid generation rejects the superseded approval scope before any secret or provider call', () => {
+  const staleSet4Approval = spawnSync(process.execPath, [
     '--experimental-strip-types', '--no-warnings', 'scripts/generate-ielts-2026-audio.mjs',
     '--generate', '--sets', '4', '--approve-manifest', plan.manifestSha256,
     '--max-usd', '1', '--min-remaining-credits', '3500', '--seed-salt', 'test-only',
   ], { encoding: 'utf8', env: { PATH: process.env.PATH } });
-  assert.notEqual(excessiveCap.status, 0);
-  assert.match(excessiveCap.stderr, /exceeds owner-approved 0.75/);
+  assert.notEqual(staleSet4Approval.status, 0);
+  assert.match(staleSet4Approval.stderr, /set-4 does not have explicit owner approval/);
+  assert.doesNotMatch(staleSet4Approval.stderr, /ELEVENLABS_API_KEY/);
 
-  const invalidReserve = spawnSync(process.execPath, [
+  const staleSet5Approval = spawnSync(process.execPath, [
     '--experimental-strip-types', '--no-warnings', 'scripts/generate-ielts-2026-audio.mjs',
-    '--generate', '--sets', '4', '--approve-manifest', plan.manifestSha256,
-    '--max-usd', '0.75', '--min-remaining-credits', '-1', '--seed-salt', 'test-only',
+    '--generate', '--sets', '5', '--approve-manifest', plan.manifestSha256,
+    '--max-usd', '0.75', '--min-remaining-credits', '0', '--seed-salt', 'test-only',
   ], { encoding: 'utf8', env: { PATH: process.env.PATH } });
-  assert.notEqual(invalidReserve.status, 0);
-  assert.match(invalidReserve.stderr, /pass --min-remaining-credits/);
+  assert.notEqual(staleSet5Approval.status, 0);
+  assert.match(staleSet5Approval.stderr, /set-5 does not have explicit owner approval/);
+  assert.doesNotMatch(staleSet5Approval.stderr, /ELEVENLABS_API_KEY/);
   assert.equal(casting.approval_scope.minimum_remaining_credits, 0);
   assert.ok(casting.approval_scope.reserve_override_at);
   assert.equal(casting.approval, 'approved_by_owner');
@@ -139,12 +143,4 @@ test('paid generation cannot exceed the owner-approved ceiling before any secret
   assert.ok(pilot.transcript_qa_report_sha256);
   assert.ok(pilot.approved_at);
 
-  const timingBlocked = spawnSync(process.execPath, [
-    '--experimental-strip-types', '--no-warnings', 'scripts/generate-ielts-2026-audio.mjs',
-    '--generate', '--sets', '5', '--approve-manifest', plan.manifestSha256,
-    '--max-usd', '0.75', '--min-remaining-credits', '0', '--seed-salt', 'test-only',
-  ], { encoding: 'utf8', env: { PATH: process.env.PATH } });
-  assert.notEqual(timingBlocked.status, 0);
-  assert.match(timingBlocked.stderr, /timing-density gate/);
-  assert.doesNotMatch(timingBlocked.stderr, /ELEVENLABS_API_KEY/);
 });

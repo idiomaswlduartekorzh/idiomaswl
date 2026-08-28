@@ -181,7 +181,7 @@ test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 word
   }
 });
 
-test('all 17 Listening papers preserve authored evidence and pass the full-density gate', async () => {
+test('all 17 Listening papers preserve authored evidence while Set 5 pins the timing-density reference', async () => {
   const fingerprints = new Set();
   const fiftyWordShingleOwners = new Map();
   for (let setNumber = 4; setNumber <= 20; setNumber += 1) {
@@ -190,7 +190,8 @@ test('all 17 Listening papers preserve authored evidence and pass the full-densi
     const authored = authoredMock.sections.filter(section => section.skill === 'listening');
     const listening = mock.sections.filter(section => section.skill === 'listening');
     assert.equal(listening.length, 4, `${mock.id} Listening parts`);
-    assert.ok(listening.reduce((total, section) => total + words(section.transcript), 0) >= 2200, `${mock.id} Listening density`);
+    const listeningWords = listening.reduce((total, section) => total + words(section.transcript), 0);
+    assert.ok(listeningWords >= (setNumber === 5 ? 2800 : 2200), `${mock.id} Listening density`);
     for (const [index, section] of listening.entries()) {
       const expectedNumbers = Array.from({ length: 10 }, (_, offset) => index * 10 + offset + 1);
       assert.deepEqual(
@@ -199,7 +200,8 @@ test('all 17 Listening papers preserve authored evidence and pass the full-densi
         `${mock.id} Part ${section.part} must contain its exact ten-question range`,
       );
       const partWords = words(section.transcript);
-      assert.ok(partWords >= 540 && partWords <= 620, `${mock.id} Part ${section.part} has ${partWords} words`);
+      const partWordRange = setNumber === 5 ? [680, 760] : [540, 620];
+      assert.ok(partWords >= partWordRange[0] && partWords <= partWordRange[1], `${mock.id} Part ${section.part} has ${partWords} words`);
       for (const block of authored[index].transcript.trim().split(/\n{2,}/)) {
         assert.ok(section.transcript.includes(block.trim()), `${mock.id} Part ${section.part} must preserve authored block`);
       }

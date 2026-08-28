@@ -1,11 +1,13 @@
 {
-  "manifest_sha256": "f9ea031bea843645fd8b4a48dd3f59f3958c546973eb9ba2746e66516e9bbcf3",
+  "manifest_sha256": "6047f8835a006a76cc3b23edbfac9ffd8cf16de268e2661d7f40d6d9e782464f",
   "model_id": "eleven_flash_v2_5",
   "credits_per_character": 0.5,
   "api_price_usd_per_1000_characters": 0.05,
   "approval": "approved_by_owner",
   "approval_scope": {
-    "approved_sets": [4, 5],
+    "approved_sets": [],
+    "historical_approved_sets": [4, 5],
+    "current_manifest_requires_new_generation_approval": true,
     "approved_max_usd_before_tax": 0.75,
     "minimum_remaining_credits": 0,
     "pilot_approved_at": "2026-08-26T00:13:29Z",

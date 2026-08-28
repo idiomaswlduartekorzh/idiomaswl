@@ -45,11 +45,11 @@
   "invoice": {
     "priceUsdPer1000Characters": 0.05,
     "creditsPerCharacter": 0.5,
-    "sourceCharacters": 287255,
-    "sourceEstimatedUsdBeforeTax": 14.3628,
-    "projectedMinimumCharactersAfterEditorialGate": 340074,
-    "projectedMinimumCreditsAfterEditorialGate": 170037,
-    "projectedMinimumUsdBeforeTax": 17.0037,
+    "sourceCharacters": 291475,
+    "sourceEstimatedUsdBeforeTax": 14.5738,
+    "projectedMinimumCharactersAfterEditorialGate": 340845,
+    "projectedMinimumCreditsAfterEditorialGate": 170423,
+    "projectedMinimumUsdBeforeTax": 17.0423,
     "retryContingencyNotIncluded": true
   },
   "rows": [
@@ -3408,15 +3408,15 @@
       "plannedUrl": "/audio/ielts/ielts-listening-set-5.mp3",
       "sourceRef": "src/data/mocks/ielts-set-5.ts",
       "accentTarget": "north-american",
-      "transcriptWords": 2215,
+      "transcriptWords": 2909,
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "minimumTimingTranscriptWords": 2800,
-      "timingAdditionalWordsRequired": 585,
-      "sourceCharacters": 13058,
-      "projectedCharactersAtGate": 16507,
-      "transcriptSha256": "7db3c8149187a9749b44309bc3be84d4e34653fa028aaf2a1da988774bd8a2ee",
-      "requestSegments": 71,
+      "timingAdditionalWordsRequired": 0,
+      "sourceCharacters": 17278,
+      "projectedCharactersAtGate": 17278,
+      "transcriptSha256": "ee9530df18301dcd6852ac6886b9c9e3089af2c9f8235e62c13bfa72a774c9fd",
+      "requestSegments": 78,
       "profiles": [
         "announcer:british",
         "guide:north-american",
@@ -3477,24 +3477,6 @@
           "kind": "content",
           "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 36,
-          "words": 7,
-          "textSha256": "fd4bda47ac59866849c2a5d45a387ede813136d38f63feced914c5ebc4bca9fa",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "participant-woman:north-american",
-          "characters": 33,
-          "words": 4,
-          "textSha256": "68defaaa55229b8940114c5669fd03bfba6b9ba84d6060c98268b71a1c2b871e",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "service-staff:north-american",
           "characters": 234,
           "words": 42,
           "textSha256": "2e0835fe4d4fb2daf4dce034d64f5e9eb4b91597c58f3522e1cbab15f846cc71",
@@ -3513,18 +3495,54 @@
           "kind": "content",
           "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 188,
-          "words": 35,
-          "textSha256": "476f08808e7c1e403f68ed7e8beafe931ea2d89c1389a425ad54c42101814007",
+          "characters": 152,
+          "words": 27,
+          "textSha256": "8d1dc09778f2b9731ea271933d54103bed362fec0c2c5ae58093692fed896ed4",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 1,
           "profile": "participant-woman:north-american",
-          "characters": 18,
-          "words": 3,
-          "textSha256": "2ca9068b6e02f5a31356815aa83eb1a6fac540f02f881f43fad3d9d965e0df9e",
+          "characters": 33,
+          "words": 4,
+          "textSha256": "68defaaa55229b8940114c5669fd03bfba6b9ba84d6060c98268b71a1c2b871e",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 72,
+          "words": 15,
+          "textSha256": "d946ebfdf77e5530aa805ddeb16f3d2d8346364bcc82e930f932a1c202d9d5f8",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-woman:north-american",
+          "characters": 89,
+          "words": 14,
+          "textSha256": "62c0cfe3557cd8e9e2b2d59d857d4c8c243d66553b56fb3832f1ddfab462f8dc",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 310,
+          "words": 54,
+          "textSha256": "d41c626b634ec93be2deb43e09a2259cfb310e9ce3b964a684e21e48e68e4650",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-woman:north-american",
+          "characters": 62,
+          "words": 11,
+          "textSha256": "4afd579767f9f79c89b06bd732d9e600ad6cda7322ed13450af5ef5de288910d",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3558,9 +3576,18 @@
           "kind": "content",
           "part": 1,
           "profile": "participant-woman:north-american",
-          "characters": 192,
-          "words": 34,
-          "textSha256": "879f7ea8292c6a7d5699db612ec9bac803519d50d909e3592aea5ed32c04fe5b",
+          "characters": 121,
+          "words": 23,
+          "textSha256": "4460b04e6e8f331f4a84f0a77e4546308cac4b7e3f3a3503c4b5a6c8eb20d07d",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 148,
+          "words": 27,
+          "textSha256": "8e3c7a7997fa9811e30e209522318a8daeabe9ef2dda9b680da030735fee6065",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3575,28 +3602,19 @@
         {
           "kind": "content",
           "part": 1,
-          "profile": "service-staff:north-american",
-          "characters": 310,
-          "words": 54,
-          "textSha256": "d41c626b634ec93be2deb43e09a2259cfb310e9ce3b964a684e21e48e68e4650",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
           "profile": "participant-woman:north-american",
-          "characters": 62,
-          "words": 11,
-          "textSha256": "4afd579767f9f79c89b06bd732d9e600ad6cda7322ed13450af5ef5de288910d",
+          "characters": 54,
+          "words": 12,
+          "textSha256": "4b27ff519e67a0fb8c06334d77eb14c2c760c2ed21a802daa85aac027452c328",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 85,
-          "words": 15,
-          "textSha256": "a2f89c5027ac64ff70e1d5a773b6d6085038fbf91572af41629b6eeeb59d5c42",
+          "characters": 229,
+          "words": 41,
+          "textSha256": "86dc4b3eac787032c6d7ace6a77dd222c1dd756e21c5aee16d0088ab9fd39203",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3621,18 +3639,36 @@
           "kind": "content",
           "part": 1,
           "profile": "participant-woman:north-american",
-          "characters": 38,
-          "words": 7,
-          "textSha256": "2ef4ca524f534e29e73ad54d4462f8f1e787fad371e416045dd7dc9612c97cb7",
+          "characters": 168,
+          "words": 28,
+          "textSha256": "53303b6b780cee4491d79add501f059ae09c6f8aeac3ed30c120028b34f7ff5b",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 180,
-          "words": 33,
-          "textSha256": "8aff86c95828df724904827f06a14144de8a7d0ec8486c5172ddd5d38ce9d190",
+          "characters": 366,
+          "words": 61,
+          "textSha256": "de6691475b76424fed724e3e85215c2884ab102db06764e348f782957859a755",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-woman:north-american",
+          "characters": 73,
+          "words": 13,
+          "textSha256": "0a117fdcf651f502d6c0c0a91c92205c5bad1219a8bc3ef14bde27af782f0292",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 330,
+          "words": 61,
+          "textSha256": "6a4ef85b4b3b4aa1a42c106269279e3d7de8952473d83444d7834ee4a8a09a1c",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3648,45 +3684,27 @@
           "kind": "content",
           "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 148,
+          "characters": 171,
           "words": 27,
-          "textSha256": "8e3c7a7997fa9811e30e209522318a8daeabe9ef2dda9b680da030735fee6065",
+          "textSha256": "582abbbf4b1a43f2a5f54aea1e637e76338c76d54fad014ee936e77728dad9bb",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 1,
           "profile": "participant-woman:north-american",
-          "characters": 54,
-          "words": 12,
-          "textSha256": "4b27ff519e67a0fb8c06334d77eb14c2c760c2ed21a802daa85aac027452c328",
+          "characters": 108,
+          "words": 22,
+          "textSha256": "04adfb8f13a4ea97d882513c5258d579a61d3afbfb785a758848c70cf0a91a23",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 315,
-          "words": 53,
-          "textSha256": "01a129e151897668839f08fbd08917bed2d1ce5dfe79cb5842f97980115e363b",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "participant-woman:north-american",
-          "characters": 33,
-          "words": 6,
-          "textSha256": "17db4261335194112f5db37d9327dbdcaa35fc3324af95a029a9bdbe519d8bf0",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "service-staff:north-american",
-          "characters": 170,
-          "words": 30,
-          "textSha256": "5cea571b865608f655d6dd98ae5b59795a72a28fb089b14556b6988351c3ead5",
+          "characters": 362,
+          "words": 61,
+          "textSha256": "31f1d6064adb8f90c313dda0e715a322a274865d127deb3b0ef1a23bcfac4742",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3729,9 +3747,9 @@
           "kind": "content",
           "part": 2,
           "profile": "guide:north-american",
-          "characters": 1639,
-          "words": 279,
-          "textSha256": "db578ed7215f9d65c6266e3e4c333fb80f9773d3f459f4121a7e63b5632fbaa7",
+          "characters": 1974,
+          "words": 338,
+          "textSha256": "91fe82b15c740e24856ff2ab2c911f534b6e42cf430824824ea3c3a6111c9f78",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3747,9 +3765,9 @@
           "kind": "content",
           "part": 2,
           "profile": "guide:north-american",
-          "characters": 1521,
-          "words": 272,
-          "textSha256": "5cd384cf5740f2f6e92fd0ae00785aa2297c0cd286e99cea2c65c9681c9b05d3",
+          "characters": 2212,
+          "words": 383,
+          "textSha256": "56c79e2b392febe156ca275c281f4d37ac78359613b2be1a01f51b03804aca29",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3801,24 +3819,6 @@
           "kind": "content",
           "part": 3,
           "profile": "student-man:north-american",
-          "characters": 91,
-          "words": 19,
-          "textSha256": "a81c231c7064ed91877d3b4e66b7363c8ec338711c2b1e7956797d5a5fcb12b4",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "tutor:north-american",
-          "characters": 106,
-          "words": 18,
-          "textSha256": "2c33d8eec9a7fc04c3c1d8ba581df066d4e8c99a46c1fa78297c22b66115f76a",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "student-man:north-american",
           "characters": 81,
           "words": 14,
           "textSha256": "5350fcc269e69a1d19be7b62d678bca62e2d36b6fe671978da88e9c565afbb9b",
@@ -3837,18 +3837,63 @@
           "kind": "content",
           "part": 3,
           "profile": "student-woman:north-american",
-          "characters": 142,
-          "words": 25,
-          "textSha256": "f3acb9ee33ab4cf6eec2c9d3edba55727331d1ba968452735644c922e561e66e",
+          "characters": 55,
+          "words": 10,
+          "textSha256": "15f5b007e7d0d4f5b7dc952facf22030a765d085c45086f9aa9cb28d7a04b8d0",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:north-american",
+          "characters": 91,
+          "words": 19,
+          "textSha256": "a81c231c7064ed91877d3b4e66b7363c8ec338711c2b1e7956797d5a5fcb12b4",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "tutor:north-american",
-          "characters": 137,
-          "words": 23,
-          "textSha256": "e4e396727e76f22130420356d1f2bb7b46b40ebc5639123762f36db1a663e096",
+          "characters": 106,
+          "words": 18,
+          "textSha256": "2c33d8eec9a7fc04c3c1d8ba581df066d4e8c99a46c1fa78297c22b66115f76a",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-woman:north-american",
+          "characters": 149,
+          "words": 28,
+          "textSha256": "66989bcb08b8f82fe1f1eafea88f15326c7572307fcfbf39cbee8f0dc71a65ec",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 227,
+          "words": 39,
+          "textSha256": "b0f90286017623e3379aae47aeb704540d70f736039603ded0725b013b3a421f",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:north-american",
+          "characters": 31,
+          "words": 6,
+          "textSha256": "7e6b2235a3557dc7a46d78bbf3e12a7848b468d08084a98df0a3127c3ff7cb44",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 223,
+          "words": 37,
+          "textSha256": "69c981a8b7f42b325050ab714bdd2aa7a92edeffe9f60e94854fb1b40c8cfdbe",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3873,18 +3918,18 @@
           "kind": "content",
           "part": 3,
           "profile": "student-woman:north-american",
-          "characters": 62,
-          "words": 13,
-          "textSha256": "9aa67017f1effec5a92602b1995415e7b50a44df599553518eebd4f6ec1f0199",
+          "characters": 46,
+          "words": 9,
+          "textSha256": "13016c8bef30e584986e387831ec348f653a2982917cdfbce4d083747d17ad8c",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "tutor:north-american",
-          "characters": 227,
-          "words": 39,
-          "textSha256": "b0f90286017623e3379aae47aeb704540d70f736039603ded0725b013b3a421f",
+          "characters": 176,
+          "words": 31,
+          "textSha256": "f7a05bfbcc9505e804de6791d0f6dd1a27e20d19b4725faa42f0fb33c56255c9",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3900,18 +3945,18 @@
           "kind": "content",
           "part": 3,
           "profile": "student-man:north-american",
-          "characters": 31,
-          "words": 6,
-          "textSha256": "7e6b2235a3557dc7a46d78bbf3e12a7848b468d08084a98df0a3127c3ff7cb44",
+          "characters": 41,
+          "words": 7,
+          "textSha256": "5c1ed5b8629f5c3ce6154146958921b21e86746257535247c093d6e5e8a9edec",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "tutor:north-american",
-          "characters": 84,
-          "words": 14,
-          "textSha256": "324fd5144cc45826af4fd89d694255da24b2bf67777b8d4ffd48abc17b30302d",
+          "characters": 60,
+          "words": 10,
+          "textSha256": "1fdb46b2e4590b86bad7c28a2b39970b86d188189d4305eeccfa6249afa1a473",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3936,6 +3981,60 @@
           "kind": "content",
           "part": 3,
           "profile": "student-man:north-american",
+          "characters": 67,
+          "words": 13,
+          "textSha256": "3b6bc5a5b911c355b735572286d744df657640a289ff224a76efe47ea63dd905",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 175,
+          "words": 30,
+          "textSha256": "96549c943f6b54fc4e6c005257db26aa13b32939acfd80d5661257227657c39c",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-woman:north-american",
+          "characters": 53,
+          "words": 10,
+          "textSha256": "7ce6065ea187a20d3d00095e48613f5521a9bb033b2af387a158a0337a8e3c69",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 236,
+          "words": 40,
+          "textSha256": "3e6927c0c585246fd32550d25e4ba529520106e491fee7ff168d0ece73ee3599",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:north-american",
+          "characters": 61,
+          "words": 11,
+          "textSha256": "62588fe8bdaa938b5e4754a0b0889676823775afd20b155ccae1ed97de7e0132",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 146,
+          "words": 21,
+          "textSha256": "aa6c8566e946167e55cf5ca6305fe4e1498d6c6d0d9ec1a52bf528182120466b",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:north-american",
           "characters": 27,
           "words": 6,
           "textSha256": "9163c539631f2ef274fa6af63aa5fca62cdec7a9236fefff3846ed28871a8899",
@@ -3954,54 +4053,18 @@
           "kind": "content",
           "part": 3,
           "profile": "student-woman:north-american",
-          "characters": 46,
-          "words": 9,
-          "textSha256": "13016c8bef30e584986e387831ec348f653a2982917cdfbce4d083747d17ad8c",
+          "characters": 100,
+          "words": 16,
+          "textSha256": "e81b5cedbb116502102e476447c48b61cf1b9695f01fcfa8f80db465c8e059fe",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "tutor:north-american",
-          "characters": 176,
-          "words": 31,
-          "textSha256": "f7a05bfbcc9505e804de6791d0f6dd1a27e20d19b4725faa42f0fb33c56255c9",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "student-man:north-american",
-          "characters": 41,
-          "words": 7,
-          "textSha256": "5c1ed5b8629f5c3ce6154146958921b21e86746257535247c093d6e5e8a9edec",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "tutor:north-american",
-          "characters": 60,
-          "words": 10,
-          "textSha256": "1fdb46b2e4590b86bad7c28a2b39970b86d188189d4305eeccfa6249afa1a473",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "student-woman:north-american",
-          "characters": 30,
-          "words": 4,
-          "textSha256": "9bc06df4ecca8a37a3cb3fb3b6395825250aea064f13a623e733ebe093ee4308",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "tutor:north-american",
-          "characters": 354,
-          "words": 62,
-          "textSha256": "bbc52024dd7d49de294216ab4fad6cb482a9d8756e2b0ceabe402bc8ca515d26",
+          "characters": 565,
+          "words": 94,
+          "textSha256": "ec0b461c961b73db74e6acb0996779174ad84384bdb9421a586cf08486a40bb7",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -4035,9 +4098,9 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:north-american",
-          "characters": 1999,
-          "words": 323,
-          "textSha256": "544cf530eddd3c7de06a55b7bb157779e7323c1fc4054ffe75a67851ebb1f832",
+          "characters": 2436,
+          "words": 383,
+          "textSha256": "6e47b769c4c862f8810bfd32b6ff54347a31ef815daf46ae8c9eea876ed6a49b",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -4053,9 +4116,9 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:north-american",
-          "characters": 1387,
-          "words": 228,
-          "textSha256": "24041e90294eef92c7d3bf21c555580168bc01626f5db9a80b6273c15072c896",
+          "characters": 2137,
+          "words": 339,
+          "textSha256": "efd7ad8a2b2e138bdc509d6f5d9cf6a6abef56af74e2bb1b81448fd5c5acde87",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -16924,5 +16987,5 @@
       "releaseAction": "generate-after-editorial-and-audio-qa"
     }
   ],
-  "manifestSha256": "f9ea031bea843645fd8b4a48dd3f59f3958c546973eb9ba2746e66516e9bbcf3"
+  "manifestSha256": "6047f8835a006a76cc3b23edbfac9ffd8cf16de268e2661d7f40d6d9e782464f"
 }

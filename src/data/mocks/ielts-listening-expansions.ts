@@ -7,6 +7,7 @@
  */
 
 const TARGET_PART_WORDS = 555;
+const TIMING_REFERENCE_PART_WORDS = 700;
 
 const BANKS: Readonly<Record<number, readonly (readonly string[])[]>> = {
   1: [
@@ -137,11 +138,23 @@ CUSTOMER: Good. I was hoping it would be informative rather than rushed.`,
 CUSTOMER: That is fair. Is there a place to sit during the walk?
 
 AGENT: There are brief stops in two quiet courtyards. They are useful for anyone who needs a rest, and they give the leader time to answer questions.`,
+    `CUSTOMER: I like having some background before I visit a place. Will the commentary assume that everyone already knows the city's history?
+
+AGENT: Not at all. The leader introduces each period in plain language and explains how the streets changed over time. There is enough detail for people who are genuinely interested, but unfamiliar names are never presented as a list to memorise. Guests can ask questions at the longer stopping points, and the leader will distinguish a documented event from a local story.
+
+CUSTOMER: That sounds much more engaging than simply following a route on my phone.
+
+AGENT: That is what we aim for. We also ask guests to keep conversations quiet while an explanation is in progress, so everyone in the group can follow it.`,
+    `CUSTOMER: If I need to leave before the end, should I tell the leader at the start?
+
+AGENT: Yes, please. The route crosses several busy streets, so disappearing without a word can cause unnecessary concern. The leader can indicate a safe point where you can separate from the group.`,
   ],
   2: [
     `We organise the rota several weeks ahead, but you are not expected to attend every session. When you offer to help on a particular day, please arrive promptly and sign in before joining your team. This lets us account for everybody if an area has to close unexpectedly. New volunteers normally work beside someone experienced until they are familiar with the routine.`,
     `Please remember that this is a protected site rather than an ordinary public park. Keep to the marked routes, avoid disturbing nesting areas and never handle an animal unless a staff member has asked you to do so. If you are uncertain about a task, pause and ask. We value careful observation much more than completing a job quickly.`,
     `Most sessions begin with a short briefing at the main office. The team leader will explain the aim for the day, show you the area on a site map and check that each pair has the right tools. At the end, return all shared items and sign out, even if another team is still working. Please tell us in advance about any health issue that could affect outdoor work. We can often adapt a role, but we need enough notice to do so safely. You are also welcome to ask why a task is needed; understanding the purpose tends to produce more careful work.`,
+    `The reserve keeps a record of what each team completes, but the purpose is to understand the condition of the site rather than to rank individuals by speed. Write down anything unexpected, including a task that could not be finished because the ground was unsuitable or an area was occupied by wildlife. A precise note is more useful than an optimistic guess. Please clean shared equipment before returning it, report damage instead of hiding it, and leave each work area as you found it. These habits allow the next team to begin safely and give staff reliable information when they plan later sessions. Questions are encouraged during the closing discussion, especially if an instruction seemed different in practice from the way it sounded indoors.`,
+    `Finally, work at a pace that allows you to notice your surroundings. If conditions change or a boundary is unclear, stop the activity and contact the team leader. Responsible decisions in the field are part of the contribution, not a failure to complete the planned list.`,
   ],
   3: [
     `RYAN: Should we take readings at random points, or use the same distance between sites?
@@ -163,11 +176,27 @@ TUTOR: Enough for another group to follow your method. Explain where each site w
 RYAN: So we describe first and interpret later.
 
 TUTOR: Exactly. That will make your reasoning much easier to check.`,
+    `RYAN: Should we decide now what pattern we expect to see along the shore?
+
+TUTOR: You may write a prediction, but keep it separate from the observations. If you expect one direction of change, you can become less attentive to a result that points elsewhere.
+
+MEG: Would a simple table help us keep those stages apart?
+
+TUTOR: Yes. Give the recorded values their own columns, then add brief field comments in a different space. When you return, plot the values before writing the explanation. The shape of the data may suggest a comparison you did not anticipate.
+
+RYAN: And we should discuss an unusual point rather than delete it.
+
+TUTOR: Precisely. Check whether it reflects a recording error, a local condition or genuine variation, and state which explanation the evidence supports.`,
+    `MEG: It might be useful to compare our notes immediately after each site.
+
+TUTOR: Do that briefly, but do not make the entries identical. Independent records can reveal a misunderstanding. Resolve any difference while the procedure is still fresh, and document the reason for the correction.`,
   ],
   4: [
     `An important distinction is that supporting honeybees is not automatically the same as supporting every urban pollinator. Many solitary species use different nesting sites and travel over shorter distances. If too many managed colonies are concentrated in one district, competition for forage can increase. Good planning therefore begins with an estimate of what the surrounding habitat can sustain, rather than simply adding as many colonies as space allows.`,
     `Researchers also examine movement between managed and wild populations. A dense network of colonies may allow parasites to spread more easily, particularly when equipment is exchanged between keepers. Regular inspection and careful record-keeping make unusual changes easier to detect. The most successful projects combine colony health data with observations of plant diversity, seasonal conditions and the abundance of other insects.`,
     `There is also a question of scale. A single well-run hive can be a useful teaching tool, yet a rapid rise in hive numbers across a whole city may have effects that no one project can see. Long-term studies compare districts and seasons rather than relying on one successful year. They also distinguish between the amount of honey produced and the health of the wider insect community, since those measures do not always move in the same direction.`,
+    `For that reason, evaluation should begin before a new project is installed. Organisers can document the surrounding vegetation, note other insect species and agree how frequently colonies will be inspected. The same observations should continue afterwards, using a consistent method, so that change can be compared rather than remembered informally. Community projects are particularly valuable when their records are shared with researchers, because a network of carefully monitored sites can reveal variation that one location cannot. Even then, interpretation must remain cautious: a difference between districts may reflect weather, land use or management practice. The aim is not to prove that every urban colony is beneficial or harmful, but to identify the conditions under which a project can coexist responsibly with the broader ecosystem.`,
+    `This approach also changes how success is communicated. A project should report setbacks and uncertainty alongside positive outcomes, and should revise its management when the observations justify doing so. Transparent records allow residents, keepers and ecologists to discuss the same evidence instead of relying on enthusiasm alone.`,
   ],
 };
 
@@ -283,10 +312,11 @@ export function expandIeltsListeningTranscript(setNumber: number, part: number, 
   const bank = additionsFor(setNumber, part);
   const labels = dialogueLabels(source);
   const additions: string[] = [];
+  const targetPartWords = setNumber === 5 ? TIMING_REFERENCE_PART_WORDS : TARGET_PART_WORDS;
   let projectedWords = countWords(source);
 
   for (const candidate of bank) {
-    if (projectedWords >= TARGET_PART_WORDS) break;
+    if (projectedWords >= targetPartWords) break;
     const addition = part === 1 || part === 3 ? fillLabels(candidate, labels) : candidate;
     additions.push(addition);
     projectedWords += countWords(addition);

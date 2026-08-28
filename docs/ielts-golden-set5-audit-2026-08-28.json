@@ -5,7 +5,13 @@
   "status": "content-golden-audio-deferred",
   "metrics": {
     "listeningResponses": 40,
-    "listeningWords": 2215,
+    "listeningWords": 2909,
+    "listeningPartWords": [
+      729,
+      721,
+      737,
+      722
+    ],
     "readingResponses": 40,
     "readingWords": 2172,
     "writingTasks": 2,
@@ -37,7 +43,11 @@
     "listening: numbering covers 1–40 exactly.",
     "reading: numbering covers 1–40 exactly.",
     "Listening has 4 parts and 40 responses.",
-    "Listening has 2215 transcript words.",
+    "Listening has 2909 words and passes the pre-synthesis timing proxy.",
+    "Listening Part 1 has 729 words within the Set 5 timing-reference range.",
+    "Listening Part 2 has 721 words within the Set 5 timing-reference range.",
+    "Listening Part 3 has 737 words within the Set 5 timing-reference range.",
+    "Listening Part 4 has 722 words within the Set 5 timing-reference range.",
     "Reading has 3 passages and 40 responses.",
     "Reading has 2172 words within 2,150–2,750.",
     "l1-form Q1: “friend” is supported by the source.",

@@ -37,5 +37,11 @@
       "longestSilence",
       "noArtificialTrailingPadding"
     ]
+  },
+  "currentPlan": {
+    "manifestSha256": "6047f8835a006a76cc3b23edbfac9ffd8cf16de268e2661d7f40d6d9e782464f",
+    "sourceCompatible": false,
+    "supersededByExpandedTimingReferenceScript": true,
+    "preserveIndividualSegmentsForHashMatchedReuse": true
   }
 }

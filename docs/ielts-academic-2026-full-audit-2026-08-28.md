@@ -26,7 +26,8 @@ punta a punta.
 | Respuestas Listening por set | 40/40 |
 | Respuestas Reading por set | 40/40 |
 | Palabras por Reading | 2.150–2.468 |
-| Palabras por guion Listening | 2.204–2.467 |
+| Palabras por guion Listening | 2.204–2.909 |
+| Guiones que superan el proxy temporal de 2.800 palabras | 1/20 (Set 5) |
 | Writing | Task 1 + Task 2 en 20/20 |
 | Speaking | Parts 1–3 en 20/20 |
 | Claves objetivas expuestas al cliente | 0 |
@@ -38,7 +39,8 @@ Estado real del audio:
   QA pendientes.
 - Set 4: master históricamente aceptado y publicado, pero reclasificado como heredado:
   27:05, sólo 902,119 s audibles y una cola muda de 141,545 s.
-- Set 5: candidato v2 de 29:00 fuera de `public/`, rechazado antes de escucha humana:
+- Set 5: el guion de referencia ya tiene 2.909 palabras (729/721/737/722 por parte),
+  pero su candidato v2 de 29:00 quedó obsoleto frente a ese texto y además fue rechazado:
   sólo 737,066 s audibles y una cola muda de 242,318 s.
 - Sets 6–12: MP3 heredados de 24:00; reemplazo obligatorio.
 - Sets 13–20: MP3 integral inexistente; la interfaz excluye Listening de forma explícita.
@@ -52,7 +54,7 @@ estructural, de claves o de aplicación en su salida.
 | Perspectiva | Evidencia reproducible | Dictamen |
 |---|---|---|
 | IELTS experto | 20× L40/R40; Reading en rango; scripts densos y con evidencia ordenada; Task 1/2; Speaking 1–3; tiempos 30/60/60/14 en Sets 4–20 | APROBADO no-audio |
-| Modelo Golden | 20 auditorías individuales, 4.784 controles; la aceptación histórica de Set 4 se conserva sin presentarla como release vigente | APROBADO no-audio |
+| Modelo Golden | 20 auditorías individuales, 4.788 controles; la aceptación histórica de Set 4 se conserva sin presentarla como release vigente | APROBADO no-audio |
 | Full-stack | 14 contratos Academic 2026, 12 de scoring/review y 11 de entrega/privacidad | 37/37 |
 | Seguridad y privacidad | proyección pública con 0 claves; scoring privado; consulta de resultados ligada a `user_id`; Overall sólo con L/R/W/S | APROBADO |
 | Usuario promedio | 20 enlaces, 0 locks; estados `Audio pendiente`/`Audio en revisión`; errores de reproducción con explicación y reintento | APROBADO |
@@ -92,14 +94,14 @@ test:ielts-audio-pipeline    3/3
 test:ielts-audio-timing      3/3
 check:ielts-review-blueprint 20/20 sets
 check:ielts-golden-standard PASS
-check:ielts-non-audio-closure 20/20 sets, 4.784 live controls
+check:ielts-non-audio-closure 20/20 sets, 4.788 live controls
 check:exam-hub-ui           PASS
 check:practica-catalog      465 temas protegidos
 TypeScript                  PASS
 Set 1 pinned blueprint      BLUEPRINT_APPROVED, Q1–Q40 por skill
 ```
 
-Las 20 auditorías Golden individuales pasaron 4.784 controles. La auditoría tardía de
+Las 20 auditorías Golden individuales pasaron 4.788 controles. La auditoría tardía de
 Set 4 añadió 267 controles y encontró una deuda real que los guardianes globales no
 detectaban: su Writing heredado coincidía con dos materiales IELTS ampliamente
 publicados. Se sustituyeron el gráfico de consumo de carne y la consigna sobre transporte
@@ -121,7 +123,7 @@ proveniencia y ya no se sirven en el simulacro.
 
 El cierre no-audio está fijado además por el manifiesto
 `docs/ielts-non-audio-closure-2026-08-28.json`, con SHA-256 de cierre
-`5a01e99bf29be5688c229772c3cbc4a72ab1e260cb742fae6251da217e4c44a3`. El guardián
+`dd005af4eb77b49030e120e0837ed00dbd14deb11dce30d4ec33ffa990648678`. El guardián
 repite las 20 auditorías en vivo y liga cada resultado al mock actual, su auditor, las
 transformaciones compartidas, la proyección pública y el gráfico Task 1. Cualquier cambio
 sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los registros
@@ -130,14 +132,16 @@ sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los
 ## Plan de audio y criterio de salida
 
 El manifiesto de planificación vigente tiene SHA-256
-`f9ea031bea843645fd8b4a48dd3f59f3958c546973eb9ba2746e66516e9bbcf3`, 47.310
-palabras fuente y un déficit temporal conservador de 8.690 palabras hasta 2.800 por Set.
-La proyección de los guiones ampliados es 340.074 caracteres, 170.037 créditos y
-USD 17,0037 antes de impuestos y reintentos. `generationAuthorized=false`: el propio
+`6047f8835a006a76cc3b23edbfac9ffd8cf16de268e2661d7f40d6d9e782464f`, 48.004
+palabras fuente y un déficit temporal conservador de 8.105 palabras hasta 2.800 por Set.
+La proyección de los guiones ampliados es 340.845 caracteres, 170.423 créditos y
+USD 17,0423 antes de impuestos y reintentos. `generationAuthorized=false`: el propio
 generador rechaza cualquier llamada al proveedor mientras el gate siga bloqueado.
 
-Set 4 y Set 5 conservan sus segmentos y hashes para reutilización selectiva, pero ninguno
-de sus masters es liberable bajo el gate actual. El MP3 candidato Set 5 permanece en el caché estable
+Set 4 conserva sus segmentos y Set 5 conserva 71 segmentos históricos para reutilización
+selectiva únicamente cuando su hash todavía coincida con el texto vigente. El candidato
+completo de Set 5 no coincide con el nuevo manifiesto y está marcado `superseded`; ninguno
+de los masters es liberable bajo el gate actual. El MP3 histórico de Set 5 permanece en el caché estable
 `/Users/josedavidduartesilva/Developer/idiomaswl-ielts-audio-cache/a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea/sets-5/set-5/ielts-listening-set-5.mp3`.
 La consulta de sólo lectura del 28 de agosto registró 964 créditos disponibles y renovación
 el 5 de septiembre de 2026 a las 18:13:51 (Bogotá); la consulta no consumió créditos.

@@ -19,15 +19,16 @@ const segmentSourceSha256 = row => createHash('sha256').update(JSON.stringify(ro
 assert.equal(casting.manifest_sha256, plan.manifestSha256, 'casting belongs to a stale IELTS audio manifest');
 assert.equal(casting.model_id, 'eleven_flash_v2_5');
 assert.equal(casting.credits_per_character, plan.invoice.creditsPerCharacter);
-assert.deepEqual(casting.approval_scope.approved_sets, [4, 5]);
+assert.deepEqual(casting.approval_scope.approved_sets, []);
+assert.deepEqual(casting.approval_scope.historical_approved_sets, [4, 5]);
 assert.ok(casting.approval_scope.approved_max_usd_before_tax >= 0.7185);
 assert.equal(casting.approval_scope.minimum_remaining_credits, 0);
 assert.ok(casting.approval_scope.reserve_override_at);
 const set5Row = plan.rows.find(row => row.setId === 'set-5');
 assert.ok(set5Row);
-assert.equal(set5Candidate.segmentSourceSha256, segmentSourceSha256(set5Row));
-assert.equal(set5Candidate.sourceCharacters, set5Row.sourceCharacters);
-assert.equal(set5Candidate.billableCharacters + set5Candidate.reusedPilotCharacters, set5Row.sourceCharacters);
+assert.notEqual(set5Candidate.segmentSourceSha256, segmentSourceSha256(set5Row));
+assert.equal(set5Candidate.currentPlan.sourceCompatible, false);
+assert.equal(set5Candidate.billableCharacters + set5Candidate.reusedPilotCharacters, set5Candidate.sourceCharacters);
 assert.equal(set5Candidate.releaseAuthorized, false);
 
 const usedProfiles = [...new Set(plan.rows.flatMap(row => row.profiles))].sort();
@@ -67,6 +68,7 @@ const availableCredits = casting.account_snapshot.available_credits;
 const resetCreditLimit = casting.account_snapshot.character_limit;
 const blockers = [];
 if (casting.approval !== 'approved_by_owner') blockers.push('voice casting is pending explicit owner approval');
+if (casting.approval_scope.approved_sets.length === 0) blockers.push('the expanded current manifest has no owner-approved generation scope');
 if (plan.timingFidelityGate?.status !== 'passed') blockers.push(`Listening scripts need ${plan.rows.reduce((total, row) => total + row.timingAdditionalWordsRequired, 0)} additional words before paid synthesis`);
 if (pilot.timing_reassessment?.release_ready_under_current_gate === false) blockers.push('Set 4 historical master fails the current timing-fidelity gate');
 if (set5Candidate.timingQa?.status === 'rejected') blockers.push('Set 5 candidate fails the current timing-fidelity gate');

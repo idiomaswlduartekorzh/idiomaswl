@@ -6,6 +6,9 @@
 > Las cifras de bloqueo y UI de este documento ya no deben usarse para liberar producto.
 > En particular, la duración nominal de Sets 4/5 ocultaba colas mudas de 141,545/242,318 s;
 > ambos masters están rechazados por el gate temporal vigente y Set 5 ya no espera escucha.
+> Su guion vigente fue ampliado a 2.909 palabras (729/721/737/722 por parte), por lo que
+> el candidato histórico tampoco coincide con el manifiesto actual; sólo se pueden reciclar
+> segmentos cuyo hash siga siendo idéntico.
 
 Fecha de contraste: 25 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  

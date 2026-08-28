@@ -25,7 +25,10 @@ respuesta, control de longitud de distractores, claves sólo en servidor, proced
 verificada, consentimiento de grabación, acceso mínimo a revisiones y estado incompleto nunca
 mostrado como cero.
 
-Ningún audio nuevo se genera antes de congelar el script y sus respuestas. Set 4 conserva
+Ningún audio nuevo se genera antes de congelar el script y sus respuestas. Set 5 es el
+primer guion de referencia que supera el proxy temporal: 2.909 palabras y 729/721/737/722
+por parte; esto aprueba el texto para la siguiente auditoría, no su candidato de audio
+histórico ni su generación. Set 4 conserva
 su aprobación y publicación como hechos históricos, pero no es referencia vigente: el gate
 temporal posterior detectó una cola muda artificial. Los Sets 1–20 ya superaron sus auditorías
 Golden de contenido; sus audios siguen diferidos hasta ampliar los guiones, completar casting,
