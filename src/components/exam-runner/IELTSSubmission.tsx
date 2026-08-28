@@ -74,6 +74,9 @@ export function IELTSSubmission({
   const [uploadProgress, setUploadProgress] = useState({ current: 0, total: 0 });
   const [error, setError] = useState('');
   const errorRef = useRef<HTMLParagraphElement>(null);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const consentRef = useRef<HTMLInputElement>(null);
   const pendingRef = useRef<PendingSubmission | null>(null);
 
   const task1Words = countEssayWords(writingTask1);
@@ -98,9 +101,9 @@ export function IELTSSubmission({
         ? 'Confirmando que textos y audios llegaron completos…'
         : '';
 
-  function showError(message: string) {
+  function showError(message: string, target?: React.RefObject<HTMLElement | null>) {
     setError(message);
-    requestAnimationFrame(() => errorRef.current?.focus());
+    requestAnimationFrame(() => (target?.current ?? errorRef.current)?.focus());
   }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -109,12 +112,12 @@ export function IELTSSubmission({
 
     const trimmedName = name.trim();
     const trimmedEmail = email.trim().toLowerCase();
-    if (trimmedName.length < 2) return showError('Escribe el nombre completo de la estudiante.');
-    if (!/^\S+@\S+\.\S+$/.test(trimmedEmail)) return showError('Escribe un correo válido, por ejemplo estudiante@correo.com.');
+    if (trimmedName.length < 2) return showError('Escribe el nombre completo de la estudiante.', nameRef);
+    if (!/^\S+@\S+\.\S+$/.test(trimmedEmail)) return showError('Escribe un correo válido, por ejemplo estudiante@correo.com.', emailRef);
     if (task1Words < 150) return showError('Writing Task 1 necesita al menos 150 palabras. Vuelve al examen para completarlo.');
     if (task2Words < 250) return showError('Writing Task 2 necesita al menos 250 palabras. Vuelve al examen para completarlo.');
     if (speakingIssues.length > 0) return showError(speakingIssues[0]);
-    if (!consent) return showError('Debes autorizar el envío y la evaluación académica.');
+    if (!consent) return showError('Debes autorizar el envío y la evaluación académica.', consentRef);
 
     const payload: IeltsSubmissionPayload = {
       name: trimmedName,
@@ -239,21 +242,21 @@ export function IELTSSubmission({
           Estas grabaciones permiten una estimación pedagógica de Speaking; no sustituyen la entrevista oficial IELTS de 11–14 minutos.
         </p>
 
-        <form className="ielts-submit__form" onSubmit={handleSubmit} noValidate>
+        <form className="ielts-submit__form" onSubmit={handleSubmit} noValidate aria-busy={isSubmitting}>
           <div className="ielts-submit__field">
             <label htmlFor="ielts-student-name">Nombre completo</label>
-            <input id="ielts-student-name" name="student_name" type="text" autoComplete="name" value={name}
+            <input ref={nameRef} id="ielts-student-name" name="student_name" type="text" autoComplete="name" value={name}
               onChange={event => setName(event.target.value)} placeholder="Ej.: Ana García…" maxLength={120} required />
           </div>
           <div className="ielts-submit__field">
             <label htmlFor="ielts-student-email">Correo electrónico</label>
-            <input id="ielts-student-email" name="student_email" type="email" inputMode="email" autoComplete="email"
+            <input ref={emailRef} id="ielts-student-email" name="student_email" type="email" inputMode="email" autoComplete="email"
               spellCheck={false} value={email} onChange={event => setEmail(event.target.value)}
               placeholder="Ej.: estudiante@correo.com…" maxLength={254} required />
           </div>
 
           <label className="ielts-submit__consent">
-            <input type="checkbox" name="evaluation_consent" checked={consent}
+            <input ref={consentRef} type="checkbox" name="evaluation_consent" checked={consent}
               onChange={event => setConsent(event.target.checked)} required />
             <span>
               Autorizo el almacenamiento privado de mis respuestas para su evaluación académica por el equipo docente y evaluadores autorizados. Los accesos temporales no revelan mi nombre ni correo.

@@ -35,10 +35,10 @@ a síntesis; ese proxy no sustituye la medición del audio final. No autoriza a 
 
 Estado real del audio:
 
-- Sets 1–3: los guiones ya pasan el proxy temporal con 2.897–2.937 palabras; sus archivos
+- Sets 1–3: los guiones ya pasan el proxy temporal con 2.901–2.937 palabras; sus archivos
   heredados duran 22,9–26,0 minutos y no están liberados. Reensamblado y QA pendientes.
 - Set 4: master históricamente aceptado y publicado, pero reclasificado como heredado:
-  su guion vigente ya tiene 2.866 palabras, pero el MP3 de 27:05 sólo conserva 902,119 s
+  su guion vigente ya tiene 2.870 palabras, pero el MP3 de 27:05 sólo conserva 902,119 s
   audibles y una cola muda de 141,545 s.
 - Set 5: el guion de referencia ya tiene 2.909 palabras (729/721/737/722 por parte),
   pero su candidato v2 de 29:00 quedó obsoleto frente a ese texto y además fue rechazado:
@@ -58,7 +58,7 @@ estructural, de claves o de aplicación en su salida.
 |---|---|---|
 | IELTS experto | 20× L40/R40; Reading en rango; scripts densos y con evidencia ordenada; Task 1/2; Speaking 1–3; tiempos 30/60/60/14 en Sets 4–20 | APROBADO no-audio |
 | Modelo Golden | 20 auditorías individuales, 4.800 controles; la aceptación histórica de Set 4 se conserva sin presentarla como release vigente | APROBADO no-audio |
-| Full-stack | 14 contratos Academic 2026, 12 de scoring/review y 11 de entrega/privacidad | 37/37 |
+| Full-stack | 14 contratos Academic 2026, 12 de scoring/review y 12 de entrega/privacidad | 38/38 |
 | Seguridad y privacidad | proyección pública con 0 claves; scoring privado; consulta de resultados ligada a `user_id`; Overall sólo con L/R/W/S | APROBADO |
 | Usuario promedio | 20 enlaces, 0 locks; estados `Audio pendiente`/`Audio en revisión`; errores de reproducción con explicación y reintento | APROBADO |
 | UI/UX | un solo `main`; cards Listening distinguibles; singular/plural correcto; Reading sticky sin ocultarse; móvil sin sticky ni overflow | APROBADO |
@@ -79,6 +79,13 @@ Validación local con Next.js 16.2.6 y Playwright:
 - Móvil 390×844: grid de una columna, pasaje `position: static`, pestañas con scroll
   interno y documento sin overflow horizontal.
 - Teclado: el tab activo presenta outline sólido de 3 px y halo adicional.
+- Revisión Web Interface Guidelines: MCQ usa `fieldset`/`legend` y radios nativos; los
+  multiselectores anuncian grupo y conteo; nombre, correo y consentimiento reciben foco
+  cuando fallan; la entrega expone su estado asíncrono con `aria-busy` y regiones live.
+- Interacción accesible real: en Reading Set 20, `ArrowDown` movió la selección del radio C
+  al D dentro del grupo de la pregunta 27; en Listening Set 4, las casillas A y B dejaron el
+  contador en `Selected: 2/2` y deshabilitaron C; al intentar enviar el formulario vacío,
+  el foco regresó al campo `Nombre completo` mientras el error se anunció como `alert`.
 - Set 4: MP3 histórico cargado con `readyState=4`, duración 1.625 segundos (27:05), reproducción
   iniciada y tiempo avanzando; la UI lo identifica ahora como audio heredado en revisión.
 - Reproducción única: después de iniciar Set 4 se persiste `consumed=1`; tras recargar,
@@ -92,8 +99,8 @@ Validación local con Next.js 16.2.6 y Playwright:
 audit:ielts-academic-2026   BLOCKED (23), exclusivamente audio
 test:ielts-academic-2026    14/14
 test:ielts-review           12/12
-test:ielts-fullstack        11/11
-test:ielts-audio-pipeline    3/3
+test:ielts-fullstack        12/12
+test:ielts-audio-pipeline    4/4
 test:ielts-audio-timing      3/3
 check:ielts-review-blueprint 20/20 sets
 check:ielts-golden-standard PASS

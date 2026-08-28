@@ -107,6 +107,22 @@ test('IELTS intro keeps pending Listening parts distinguishable and grammar corr
   assert.doesNotMatch(runner, /sec\.comingSoon \? '🔨 Próximamente'/)
 })
 
+test('IELTS response controls expose native grouping, focus repair and async state', () => {
+  const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx')
+  const submission = read('src/components/exam-runner/IELTSSubmission.tsx')
+  const styles = read('src/app/globals.css')
+  assert.match(runner, /<fieldset className="ielts-mcq__body">/)
+  assert.match(runner, /<legend className="ielts-mcq__text">\{q\.text\}<\/legend>/)
+  assert.match(runner, /className="ielts-mcq__radio"[\s\S]*?type="radio"/)
+  assert.match(runner, /role="group" aria-labelledby=\{`\$\{q\.id\}-prompt`\}/)
+  assert.match(runner, /ielts-multiselect__count" role="status" aria-live="polite"/)
+  assert.match(styles, /\.ielts-mcq \.prac-option:focus-within/)
+  assert.match(submission, /showError\('Escribe el nombre completo[^\n]+nameRef\)/)
+  assert.match(submission, /showError\('Escribe un correo válido[^\n]+emailRef\)/)
+  assert.match(submission, /showError\('Debes autorizar[^\n]+consentRef\)/)
+  assert.match(submission, /aria-busy=\{isSubmitting\}/)
+})
+
 test('one-use IELTS Listening survives a page reload and resets only on retry', () => {
   const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx')
   assert.match(runner, /const listeningConsumptionKey = `\$\{draftKey\}_listening_consumed`/)

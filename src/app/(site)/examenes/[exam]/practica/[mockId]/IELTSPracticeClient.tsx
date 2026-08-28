@@ -258,10 +258,10 @@ function MultiSelectView({
     <div className="ielts-multiselect">
       <div className="ielts-group__label">
         <span className="ielts-group__range">Questions {q.qRange[0]}–{q.qRange[1]}</span>
-        <p>{q.text}</p>
+        <p id={`${q.id}-prompt`}>{q.text}</p>
         <p className="ielts-multiselect__hint">Choose {q.selectCount === 2 ? 'TWO' : q.selectCount} letters, {q.options[0].letter}–{q.options[q.options.length-1].letter}.</p>
       </div>
-      <div className="ielts-multiselect__opts">
+      <div className="ielts-multiselect__opts" role="group" aria-labelledby={`${q.id}-prompt`}>
         {q.options.map(opt => {
           const checked = selected.includes(opt.letter);
           const overlimit = !checked && selected.length >= q.selectCount;
@@ -283,7 +283,7 @@ function MultiSelectView({
           );
         })}
       </div>
-      <p className="ielts-multiselect__count">Selected: {selected.length}/{q.selectCount}</p>
+      <p className="ielts-multiselect__count" role="status" aria-live="polite">Selected: {selected.length}/{q.selectCount}</p>
     </div>
   );
 }
@@ -297,8 +297,8 @@ function MCQView({
   return (
     <div className={`ielts-mcq${isTFNG?' ielts-mcq--tfng':''}`}>
       <div className="ielts-mcq__num">{index}.</div>
-      <div className="ielts-mcq__body">
-        <p className="ielts-mcq__text">{q.text}</p>
+      <fieldset className="ielts-mcq__body">
+        <legend className="ielts-mcq__text">{q.text}</legend>
         <div className={isTFNG ? 'ielts-tfng__opts' : 'prac-options'}>
           {q.options.map((opt, i) => (
             isTFNG ? (
@@ -307,19 +307,21 @@ function MCQView({
                 {opt}
               </label>
             ) : (
-              <button
-                key={i}
-                type="button"
-                onClick={() => onChange(i)}
-                className={`prac-option${selected===i?' prac-option--selected':''}`}
-              >
+              <label key={i} className={`prac-option${selected===i?' prac-option--selected':''}`}>
+                <input
+                  className="ielts-mcq__radio"
+                  type="radio"
+                  name={q.id}
+                  checked={selected===i}
+                  onChange={() => onChange(i)}
+                />
                 <span className="prac-option__letter">{String.fromCharCode(65+i)}</span>
                 <span className="prac-option__text">{opt}</span>
-              </button>
+              </label>
             )
           ))}
         </div>
-      </div>
+      </fieldset>
     </div>
   );
 }
@@ -418,6 +420,7 @@ function WriteView({
       <textarea
         name={`writing_task_${q.taskNumber}`}
         aria-label={`Writing Task ${q.taskNumber} response`}
+        autoComplete="off"
         className="ielts-write__textarea"
         value={value}
         onChange={e => onChange(e.target.value)}
@@ -468,7 +471,7 @@ function SpeakView({
 
       {q.partNumber === 2 && partTwoStage === 'idle' && (
         <button type="button" className="btn btn-sm" onClick={()=>setPartTwoStage('preparing')}>
-          Start 1-minute preparation
+          Iniciar 1 minuto de preparación
         </button>
       )}
       {q.partNumber === 2 && partTwoStage === 'preparing' && (
@@ -492,6 +495,7 @@ function SpeakView({
         <textarea
           id={`${q.id}-notes`}
           name={`${q.id}_notes`}
+          autoComplete="off"
           className="ielts-write__textarea"
           rows={4}
           value={notes}
