@@ -33,6 +33,10 @@ PASSENGER: Yes, it's 0161 496 0175.
 
 OFFICER: Let me just repeat that — 0161 496 0175. Now, what exactly did you lose?
 
+PASSENGER: Before we continue, do you need an email address as well?
+
+OFFICER: Not for the initial search. We use the telephone number for urgent contact and ask for further details only if an item is found. The report receives a reference number, so you won't need to repeat personal information whenever you call.
+
 PASSENGER: It was a suitcase — sorry, no, I mean a rucksack. I've been travelling all day and I'm a bit muddled.
 
 OFFICER: No problem at all. And what colour is the rucksack?
@@ -47,21 +51,41 @@ OFFICER: That's helpful. Was there anything valuable inside?
 
 PASSENGER: Yes, unfortunately — my laptop was in the main compartment, along with some books.
 
+OFFICER: Can you describe the outside more precisely? Similar bags arrive every day.
+
+PASSENGER: There's a small reflective strip across the front pocket and one buckle is scratched. It has no name label, but a paper luggage tag from an earlier journey is tied to the handle.
+
+OFFICER: Excellent; those details are more useful than the brand. Please don't give me a password or any private information from the laptop.
+
 OFFICER: I'll note that down. Now, a few details about your journey so we can trace it. Where were you travelling from?
 
 PASSENGER: From Manchester, on the two o'clock service.
+
+OFFICER: Was it a direct train or did you change?
+
+PASSENGER: Direct. It stopped twice, and I got off at Preston. I remember taking my coat from the hook, but I must have left the bag above the seat.
+
+OFFICER: That narrows the search to one carriage rather than the whole route.
 
 OFFICER: And which day was that — today?
 
 PASSENGER: Yes, today, Friday.
 
+OFFICER: Good. Weekend staffing is different, so recording the day prevents the request going to Monday's collection by mistake.
+
 OFFICER: Do you remember your seat number?
 
 PASSENGER: It was seat 43, in the quiet coach.
 
+OFFICER: Were you facing forwards or backwards?
+
+PASSENGER: Forwards, beside the aisle. Another passenger joined at the second stop, but the rack was nearly empty when I boarded.
+
 OFFICER: And roughly what would you say the contents are worth, for the report?
 
 PASSENGER: All together, probably around £400.
+
+OFFICER: That's an estimate, not a promise of compensation, but it helps us classify the report. If we find the rucksack, you'll need identification to collect it. We can transfer it to this station without charge, although that normally takes two working days.
 
 OFFICER: Thank you. I'll circulate this description straight away, and we'll call you the moment anything matching turns up.
 
@@ -86,7 +110,7 @@ Most valuable contents: a {{6}}`,
           blanks: [
             { num: 1, answers: ['Ashworth', 'ashworth'], maxWords: 1 },
             { num: 2, answers: ['0161 496 0175', '01614960175'], maxWords: 1 },
-            { num: 3, answers: ['rucksack', 'backpack'], maxWords: 1 },
+            { num: 3, answers: ['rucksack'], maxWords: 1 },
             { num: 4, answers: ['green'], maxWords: 1 },
             { num: 5, answers: ['train'], maxWords: 1 },
             { num: 6, answers: ['laptop'], maxWords: 1 },
@@ -119,21 +143,33 @@ Most valuable contents: a {{6}}`,
 
 First, what's new this year. We've kept all our old favourites — the food market, the evening concert, and the popular fireworks display are all returning. But we've added two brand-new attractions: a children's parade through the grounds at midday, and a series of craft workshops in the main tent.
 
+The parade route has been shortened so young participants do not cross the service road. Families should assemble at the east lawn twenty minutes beforehand. Workshop places are allocated at the tent rather than online; volunteers must never promise a place, because capacity depends on the activity and age group.
+
 Now, some practical details you'll need in order to answer visitors' questions. As always, the festival is being held in Victoria Park, right in the centre of town.
+
+The northern entrance has level access, and a temporary hard-surface route connects it to the central facilities. A quiet space is available near the community garden. Please point visitors to the accessibility desk if they need a loan wheelchair or a large-print programme.
 
 This year the event runs for three days, from Friday afternoon through to Sunday evening, so we've got a long weekend ahead of us. It's shaping up to be our biggest festival yet, with well over two hundred stalls already booked.
 
 For those of you volunteering, please collect your festival T-shirt from the desk behind me before you start your shift — it helps visitors to identify you.
 
+Wear your own name badge as well, and sign both in and out. If you swap a shift, tell the coordinator; otherwise we cannot tell whether an area is properly staffed. Water and a secure cupboard for personal belongings are provided in the volunteer room.
+
 Let me remind you of the layout. The main stage is set up beside the lake, where there's plenty of room for a crowd.
 
+Barriers mark a clear emergency lane behind it. Keep that route open, even between performances, and ask a steward rather than moving a barrier yourself. The smaller acoustic stage is on the opposite side of the grounds, so check which stage a visitor means.
+
 Parking is always a common question. Visitors can leave their cars at the sports centre just across the road, as there's no parking inside the park itself.
+
+There is also supervised bicycle parking at the south entrance. Performers and suppliers use a separate gate and must show a vehicle pass; ordinary visitors should not be directed there, even if the public car park is busy.
 
 Now, we are expecting some rain on Saturday. If the weather turns bad, the outdoor performances will be moved into the marquee near the west gate.
 
 A very important point: if you come across a child who has become separated from their family, please bring them straight to the information tent, where our trained staff will look after them.
 
 And finally, a reminder of why we're all here. This year, all the money we raise will go to the local hospital, to fund new equipment for the children's ward.
+
+Please separate recycling at every food area and report a full bin rather than trying to compress it. For medical help, contact the first-aid team by radio. Do not announce a person's name over the main-stage microphone unless the control tent authorises it.
 
 Right — let's have a wonderful festival. The gates open in ten minutes.`,
       questions: [
@@ -171,9 +207,9 @@ Right — let's have a wonderful festival. The gates open in ten minutes.`,
           blanks: [
             { num: 13, answers: ['Victoria Park', 'park'], maxWords: 2 },
             { num: 14, answers: ['three days', '3 days'], maxWords: 2 },
-            { num: 15, answers: ['T-shirt', 't-shirt', 'tshirt'], maxWords: 1 },
+            { num: 15, answers: ['T-shirt', 't-shirt'], maxWords: 1 },
             { num: 16, answers: ['lake'], maxWords: 1 },
-            { num: 17, answers: ['sports centre', 'sports center'], maxWords: 2 },
+            { num: 17, answers: ['sports centre'], maxWords: 2 },
             { num: 18, answers: ['marquee'], maxWords: 1 },
             { num: 19, answers: ['information tent', 'tent'], maxWords: 2 },
             { num: 20, answers: ['hospital'], maxWords: 1 },
@@ -202,17 +238,29 @@ SAM: I suppose they're already keen cyclists, so they're not really typical cust
 
 TUTOR: Exactly — your sample is biased. Next, pricing. You planned to charge less than the existing shops. Is that wise?
 
+SAM: I should probably interview occasional cyclists and commuters who do not belong to a club, and record how recently each person paid for a repair.
+
+TUTOR: Yes. Ask about actual behaviour as well as hypothetical interest. Someone may like the idea but still repair a puncture at home.
+
 SAM: I thought a low price would attract customers, but it might not cover my costs. Maybe I should charge the same as competitors and compete on convenience instead.
 
 TUTOR: I agree — convenience is your real selling point. And don't ignore the online retailers selling cheap spare parts. How could you compete?
 
 SAM: I could offer something they can't — visiting the customer at home.
 
+TUTOR: Precisely. You cannot win every comparison on component price, but you can offer diagnosis, fitting and a booked time. State what happens if a repair needs workshop equipment you cannot carry.
+
 TUTOR: Good. Last thing — the biggest risk. What worries you most?
 
 SAM: Honestly, cash flow. Early on I'll have spent money on tools and a van, but I won't have many customers yet.
 
+TUTOR: Model a cautious case, not only the number of bookings you hope for. Include fuel, card fees, replacement tools and tax, and allow for winter weeks when fewer people cycle.
+
 TUTOR: A realistic fear. Now, the document itself. It opens too slowly — add a short summary at the very start that captures the whole idea.
+
+SAM: Should it contain every figure?
+
+TUTOR: No. It should identify the customer problem, the mobile solution and the immediate funding need. A reader can inspect the assumptions later.
 
 SAM: An executive summary, yes.
 
@@ -220,11 +268,17 @@ TUTOR: Second, your finances are thin. I want a monthly cash-flow forecast for t
 
 SAM: I'll build one.
 
+TUTOR: Show money entering and leaving in the month when it actually moves. Profit on paper will not pay a bill if a customer has not yet paid.
+
 TUTOR: Third, you describe the product but not the buyers. Add a clear description of your target customers.
 
 SAM: Cyclists who commute, mostly.
 
 TUTOR: Put that in. And there's nothing on how people will hear about you, so include a section on marketing. One more practical thing you've forgotten — you must arrange insurance before taking on any paying work.
+
+SAM: I could test a small local search advert and partnerships with employers that provide cycle parking, then compare enquiries rather than counting views.
+
+TUTOR: Good. Also describe how you will keep booking details secure and dispose of replaced parts responsibly. Those operational choices affect trust as much as a logo does.
 
 SAM: I hadn't thought of that. I'll sort it out.
 
@@ -323,15 +377,23 @@ TUTOR: Do all that and resubmit next week.`,
 
 The earliest timekeeping device was the sundial, used by ancient civilisations thousands of years ago.
 
+That description is convenient rather than absolute: archaeology preserves some devices better than others, and people also estimated time from recurring events long before they built instruments. A sundial divides daylight locally; it does not deliver one universal hour independent of season and place.
+
 A sundial works by casting a shadow that moves as the day progresses. Its obvious weakness, however, was that it depended entirely on the position of the sun, so it was useless at night or in cloudy weather.
 
 To overcome this, other cultures developed the water clock, which measured time by the steady dripping of liquid from one container to another. Water clocks were used by the ancient Egyptians, among others, and worked in darkness as well as in daylight.
 
 The next great step came in medieval Europe. The first mechanical clocks appeared in the great monasteries, where monks needed to know the correct hours for prayer.
 
+Historians are cautious about assigning a single inventor. Surviving written records and mechanisms are incomplete, and mechanical timekeepers also appeared in towers and civic settings. Monastic schedules nevertheless provided a clear reason to sound hours without watching the sky.
+
 These early machines were very different from clocks today. Remarkably, many had no hands at all; instead, they simply struck a bell to mark the hours.
 
+Their escapements released stored energy in repeated steps. Friction, changes in driving force and rough manufacture limited accuracy, so an operator still adjusted the mechanism against an astronomical observation or another local reference.
+
 A revolution in accuracy arrived in the seventeenth century. In 1656 the Dutch scientist Huygens built the first pendulum clock.
+
+Galileo had studied pendulum motion earlier, but Huygens combined the principle with a working clock and patented his design. The period of a pendulum is stable only within limits: temperature changes its length and a moving ship disrupts its swing.
 
 The swinging pendulum kept far steadier time than anything before it, making clocks vastly more accurate — losing only seconds a day rather than minutes.
 
@@ -339,7 +401,11 @@ The next challenge was to make clocks portable. This became possible with the in
 
 Accurate timekeeping also transformed navigation. Once reliable clocks could be carried on ships, sailors could finally calculate their longitude — their east–west position — something that had defeated navigators for centuries.
 
+They compared local noon with the time kept for a reference meridian. Each hour of difference represented fifteen degrees of longitude. Marine chronometers therefore had to resist changes in motion, humidity and temperature throughout a voyage, and navigators still combined their readings with astronomical observations.
+
 Finally, the modern age. Most clocks and watches today keep time using tiny vibrating crystals of quartz, which are astonishingly precise and cheap to produce.
+
+An electronic circuit counts the stable oscillations produced when voltage is applied to quartz. Atomic clocks use transitions associated with atoms rather than a crystal; national laboratories compare them to maintain time scales. Everyday clocks remain less exact, yet networks can correct them without their owners seeing the reference process.
 
 Next week, we'll look at how atomic clocks now define the very second itself.`,
       questions: [
@@ -374,9 +440,9 @@ Wider effects
           blanks: [
             { num: 31, answers: ['sundial'], maxWords: 1 },
             { num: 32, answers: ['sun'], maxWords: 1 },
-            { num: 33, answers: ['Egyptians', 'egyptians', 'Egyptian'], maxWords: 1 },
-            { num: 34, answers: ['monasteries', 'monastery'], maxWords: 1 },
-            { num: 35, answers: ['hands', 'hand'], maxWords: 1 },
+            { num: 33, answers: ['Egyptians', 'egyptians'], maxWords: 1 },
+            { num: 34, answers: ['monasteries'], maxWords: 1 },
+            { num: 35, answers: ['hands'], maxWords: 1 },
             { num: 36, answers: ['Huygens', 'huygens'], maxWords: 1 },
             { num: 37, answers: ['accurate'], maxWords: 1 },
             { num: 38, answers: ['spring'], maxWords: 1 },
@@ -395,18 +461,26 @@ Wider effects
 
 The domestic dog is the oldest animal companion of humanity, a relationship that predates agriculture, pottery, and the wheel. Yet the precise origins of this partnership remain one of archaeology's most debated questions. When, where, and how wolves became dogs are matters on which geneticists, archaeologists, and evolutionary biologists continue to disagree vigorously.
 
-The earliest unambiguous fossil evidence for domestic dogs dates to approximately 15,000 years ago, from sites in Europe and the Near East. However, genetic analyses have produced a more complex picture. A 2016 study comparing ancient and modern dog DNA concluded that dogs were domesticated twice independently—once in Europe or the Near East and once in East Asia—before the East Asian lineage partially replaced the European one following human migrations. This scenario remains contested: a 2020 analysis suggested a single domestication event in Southeast Asia or Central Asia, with subsequent dispersal across the globe. The difficulty lies partly in the fact that domestication was not a single moment but likely a drawn-out process spanning thousands of years and involving multiple wolf populations.
+Archaeological classification is difficult because an early dog need not resemble a modern breed and a small wolf is not automatically a dog. Genomes published in 2026 identified dog ancestry in remains about 14,300 years old from Gough's Cave in Britain and about 15,800 years old from Pınarbaşı in Türkiye. The dated material indicates that a genetically related dog population was already widespread in western Eurasia by at least 14,300 years ago. It does not locate the first domestication event. Older proposed specimens remain disputed, and the earliest specimen recovered is not necessarily from the place where the lineage began.
+
+Ancient-wolf DNA adds a different layer. An analysis of 72 wolf genomes found that dogs are generally closer to ancient wolves from eastern Eurasia than to the western Eurasian wolves sampled, yet no analysed wolf was a direct match for the progenitor. Many Near Eastern and African dogs also carry ancestry related to a second, western wolf population. The data can fit more than one history: two domestication processes that later merged, or an eastern domestication followed by admixture with western wolves. Missing genomes from relevant places and periods prevent a final choice between them.
 
 How the relationship began is equally uncertain. One widely held theory proposes that wolves began following human hunter-gatherer groups to scavenge scraps and carrion. The bolder, less fearful individuals that approached humans most closely would have gained preferential access to food, and over generations, natural selection would have favoured traits associated with reduced aggression towards humans—a process sometimes called "self-domestication." Supporting this model is a landmark long-term experiment begun in Siberia in 1959 by geneticist Dmitri Belyaev, who selectively bred silver foxes for reduced fear of humans. Within a remarkably small number of generations, Belyaev's foxes began showing physical and behavioural traits associated with domestication: floppy ears, curled tails, shortened snouts, and reduced stress hormone levels. The experiment demonstrated that selection for tameness could rapidly produce the suite of traits observed in domestic animals.
 
-The cognitive abilities that dogs have developed as a result of millennia living alongside humans are extraordinary. Dogs are uniquely sensitive to human social cues: they follow a pointing gesture to locate hidden food, a task that chimpanzees and even wolf pups raised alongside humans perform far less reliably. They track human gaze and have been shown to understand human emotional expressions sufficiently to distinguish photographs of happy and angry faces. Some researchers argue that dogs essentially evolved to read human minds—or at least human intentions—more effectively than any other non-human animal.
+The fox experiment demonstrates a possible process, not the historical route taken by dogs. Its animals came from a managed breeding population, people controlled which foxes reproduced, and researchers selected a behavioural response under captive conditions. Changes correlated with tameness may reflect linked genes, development or altered stress systems, and descriptions of when every physical trait appeared have been debated. The work supports the idea that selection on behaviour can have wider consequences; it cannot identify an ancient wolf population or decide whether wolves, people or both initiated contact.
 
-The evolutionary success of dogs has come at a cost to the wolves from which they descend. As human populations expanded and natural habitats contracted, wolf populations declined dramatically. Today, domestic dogs outnumber wolves by a ratio of approximately one thousand to one—a striking reversal of the balance that existed at the beginning of the human-canine relationship. The evolutionary bargain struck between early humans and early dogs—shelter and food in exchange for loyalty and labour—has proved highly advantageous for one partner, though perhaps not for the other.`,
+Living with people also affected dog behaviour, but “unique” depends on the comparison and task. Dogs are highly sensitive to some human social cues: in standard cooperative experiments many follow a pointing gesture to locate hidden food more reliably than chimpanzees. Performance varies with development, experience and experimental design, and hand-raised wolves can succeed in some conditions. Dogs also use gaze, voice and body posture. These results support selection and learning for communication with people; they do not show literal mind-reading. Researchers who say dogs infer human intentions are describing performance in defined behavioural tests, not unrestricted access to another species' thoughts.
+
+Calling the relationship an evolutionary bargain is a metaphor rather than a signed exchange. Dogs gained access to human-associated food and shelter; people later used dogs for transport, hunting, guarding and companionship. The balance was not uniformly beneficial. Free-ranging dogs can compete or hybridise with wild canids, while persecution and habitat change affect wolf populations differently across regions. A single global dog-to-wolf ratio would combine uncertain estimates and conceal those contrasts.
+
+Diet shows that domestication continued after the first partnership. Some dog populations have extra copies of a gene involved in starch digestion, consistent with later adaptation to starch-rich human diets. Copy numbers vary, so the finding does not prove that agriculture initiated domestication or that every dog followed the same nutritional route. Traits could spread after dogs were already accompanying hunter-gatherers.
+
+Evidence must therefore be tied to the question it can answer. Bone shape addresses morphology; ancient DNA traces ancestry; modern behaviour tests current animals under particular conditions. None alone reveals who first approached whom. The strongest account treats domestication as a changing relationship among human communities, dog lineages and wolf populations, and marks uncertainty instead of forcing every result into one origin story.`,
       questions: [
         {
           type: 'formgroup', id: 'r1-tfng', part: 5, qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: The earliest fossil evidence for domestic dogs is approximately 15,000 years old.\n2. {{2}}: Genetic studies have produced a single universally accepted theory of dog domestication.\n3. {{3}}: Belyaev's fox experiment began in the 1950s in Russia.\n4. {{4}}: Belyaev selected foxes based on their physical appearance rather than their behaviour.\n5. {{5}}: Foxes in Belyaev's experiment developed curled tails within the first generation.\n6. {{6}}: Dogs perform better than chimpanzees at following a human pointing gesture.\n7. {{7}}: Domestic dogs currently outnumber wild wolves by roughly one thousand to one.`,
+          template: `1. {{1}}: Dog ancestry has been identified in remains more than 14,000 years old.\n2. {{2}}: Genetic studies have produced a single universally accepted theory of dog domestication.\n3. {{3}}: Belyaev's fox experiment began in the 1950s in Russia.\n4. {{4}}: Belyaev selected foxes based on their physical appearance rather than their behaviour.\n5. {{5}}: Foxes in Belyaev's experiment developed curled tails within the first generation.\n6. {{6}}: In standard cooperative tests, many dogs follow pointing more reliably than chimpanzees.\n7. {{7}}: A single worldwide dog-to-wolf ratio would hide important regional differences.`,
           blanks: [
             { num: 1, answers: ['TRUE'] }, { num: 2, answers: ['FALSE'] }, { num: 3, answers: ['TRUE'] },
             { num: 4, answers: ['FALSE'] }, { num: 5, answers: ['NOT GIVEN'] }, { num: 6, answers: ['TRUE'] }, { num: 7, answers: ['TRUE'] },
@@ -415,7 +489,7 @@ The evolutionary success of dogs has come at a cost to the wolves from which the
         {
           type: 'formgroup', id: 'r1-sent', part: 5, qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `8. Wolves that were less fearful of humans had better access to food scraps, a process sometimes called {{8}}.\n9. Belyaev's experiment showed that selection for {{9}} rapidly produced a range of domestication traits.\n10. Dogs are described as uniquely sensitive to human {{10}} cues.\n11. Unlike dogs, {{11}} are less reliable at following a human pointing gesture to find food.\n12. Some researchers argue that dogs evolved to read human {{12}} more effectively than any other animal.\n13. The passage describes the relationship between early humans and dogs as an evolutionary {{13}}.`,
+          template: `8. Wolves that were less fearful of humans had better access to food scraps, a process sometimes called {{8}}.\n9. Belyaev's experiment showed that selection for {{9}} rapidly produced a range of domestication traits.\n10. Dogs are highly sensitive to some human {{10}} cues.\n11. In standard pointing tests, {{11}} are often less reliable than dogs.\n12. Behavioural studies investigate whether dogs infer human {{12}}.\n13. The relationship between early humans and dogs is described metaphorically as a {{13}}.`,
           blanks: [
             { num: 8, answers: ['self-domestication'] }, { num: 9, answers: ['tameness'] },
             { num: 10, answers: ['social'] }, { num: 11, answers: ['chimpanzees'] },
@@ -431,17 +505,19 @@ The evolutionary success of dogs has come at a cost to the wolves from which the
       instructions: 'Read the passage and answer Questions 14–26.',
       passage: `Vertical Farming
 
-A. Vertical farming—the practice of growing crops in stacked layers inside climate-controlled buildings—has attracted significant investment and media attention over the past decade. Proponents present it as a revolutionary answer to some of the most pressing challenges facing the global food system: land scarcity, water depletion, pesticide use, and the disruption of supply chains by extreme weather events. Critics question whether the technology can deliver on its promises at scale. The debate reflects deeper tensions in how societies think about the future of agriculture.
+A. Vertical farming grows crops in stacked layers, usually inside a controlled environment with electric lighting. The label covers different systems: a research cabinet, a converted warehouse and a purpose-built plant factory do not share one cost or footprint. Advocates point to land scarcity, recirculated water and protection from outdoor weather; critics point to capital, electricity and a narrow crop range. Any comparison must therefore declare its crop, location, electricity source and system boundary. A result per square metre of floor can favour stacked production, while a result per kilogram, calorie or unit of nutrition may answer a different question.
 
-B. The potential advantages of vertical farming are genuinely compelling. Because crops are grown indoors, they can be protected from pests without pesticides, from frost, drought, and flooding, and from contamination by pathogens common in outdoor environments. Yields per unit of land area can be dramatically higher than conventional agriculture: some vertical farms report yields ten to twenty times greater than field equivalents for leafy greens such as lettuce and spinach. Water use is typically reduced by up to ninety-five percent compared to conventional irrigation, as water is recirculated within the system and losses through evaporation and runoff are minimised.
+B. Stacking layers and scheduling several harvests can produce much more food per unit of building footprint. Closed hydroponic loops collect drainage and can recirculate water and nutrients, while indoor barriers reduce exposure to some pests and weather. These benefits are not automatic: disease can still enter a facility, sanitation requires resources and water accounting may or may not include electricity generation. One life-cycle comparison of lettuce supply chains found land and water use efficiency 38–60 times higher for controlled-environment production than for open-field production. That range belongs to the configurations studied, not to every vertical farm or every field.
 
-C. The technology also offers geographic flexibility. Vertical farms can in principle be built anywhere—in urban warehouses close to consumers, in arid regions currently unsuitable for agriculture, or in polar territories where food security depends on costly imports. Japan, which faces severe land constraints and frequent natural disasters, has become a global leader in vertical farming, with hundreds of facilities operating across the country. A growing number of vertical farms have been established in desert regions of the Middle East, supplying fresh produce to populations that would otherwise depend almost entirely on food imports.
+C. A controlled facility separates production from local soil and much outdoor weather, which creates geographic flexibility. Projects operate in dense Japanese cities and in water-stressed Middle Eastern regions, but physical possibility is not the same as environmental advantage. Building near consumers may shorten transport and reduce spoilage, yet transport is often smaller than cultivation electricity in the life cycle of indoor lettuce. A city farm powered by a carbon-intensive grid can therefore have a larger climate footprint than field produce carried over a considerable distance. Local labour, cooling demand, building reuse and the reliability of the grid also shape the result.
 
-D. Despite these advantages, the economics of vertical farming remain challenging. The primary obstacle is energy consumption. Providing the artificial lighting necessary for plant growth requires enormous quantities of electricity, and in most current markets this cost makes vertical farms uncompetitive relative to conventional agriculture for most crops. A 2020 analysis found that the energy cost of producing one kilogram of lettuce in a vertical farm was approximately fifty times higher than that of field-grown lettuce when the full electricity supply chain was considered. As renewable energy costs fall and grid carbon intensity declines, the economics may improve significantly; for now, vertical farming is largely limited to high-value crops—salad leaves, herbs, strawberries—where premium prices can offset elevated production costs.
+D. The dominant operating challenge is electricity for lighting, cooling, ventilation and pumps. A 2022 comparison estimated roughly 15 kilowatt-hours of electricity per kilogram of supplied lettuce for the controlled-environment systems it modelled. Climate impact then changed sharply with the electricity source: typical grids produced large footprints, whereas renewable supply and credit for land opportunity could make carefully designed systems competitive with some field supply chains. Economics likewise depend on local power prices, yield and utilisation. Salad leaves and herbs remain more plausible than commodity grains because they grow quickly and command more value per kilogram.
 
-E. The crop range currently suited to vertical farming is limited in another important way. Staple foods such as wheat, rice, and maize are not economically viable candidates for indoor production: they require large volumes per calorie, tolerate outdoor conditions relatively well, and are highly price-competitive on global commodity markets. The crops best suited to vertical farming are those with short growth cycles, compact growth habits, and high value relative to weight—characteristics that describe a narrow slice of the global diet.
+Capital risk sits beside operating cost. A facility buys lighting, racks, pumps and climate equipment before achieving a stable harvest, and a biological problem can affect several stacked layers at once. Consistent conditions can improve scheduling, but they also require monitoring, backup power and staff who understand both crops and machinery. Published yield from a trial should not be inserted directly into a business case without allowing for cleaning time, unsold produce and imperfect occupancy.
 
-F. Technological advances are reshaping the sector rapidly. LED lighting has dramatically reduced energy consumption compared to earlier grow-light technologies, and the development of LED spectra specifically tailored to optimise plant growth (rather than illuminate for human vision) has produced further efficiency gains. Robotics and automation are reducing labour costs, which represent the second-largest cost category after energy. Advances in crop genetics are also relevant: plant varieties optimised specifically for indoor, low-light, high-efficiency cultivation are being developed. Whether these advances will prove sufficient to expand vertical farming from a niche technology into a mainstream component of the food system remains an open question.`,
+E. Crop choice limits the contribution to food security. Wheat, rice and maize supply many inexpensive calories but require large areas and substantial biomass; paying for artificial light around that biomass is rarely competitive. Current systems favour crops with short growth cycles, compact canopies and high value relative to weight. Breeding could adapt plants to indoor conditions, yet optimisation for yield alone may neglect taste, nutrient content or resilience. Comparing tonnes of lettuce with tonnes of grain would also confuse their different dietary roles. Vertical farms can diversify some fresh supply without replacing broad-acre agriculture.
+
+F. LEDs convert electricity into useful light more efficiently than older lamps, and growers can tune intensity, timing and spectrum for photosynthesis rather than human vision. Experiments show that these settings affect yield, water use and energy efficiency together; maximising light does not necessarily maximise efficiency. Sensors, automation and improved climate control can reduce waste, but their equipment and computation also have material and energy costs. The grid mix remains decisive, and renewable electricity is not impact-free. A credible assessment reports infrastructure, refrigerants, nutrient losses and end-of-life as well as farm output. Technical improvement may widen the viable crop range, but it does not establish that every urban site is sustainable.`,
       questions: [
         {
           type: 'matching', id: 'r2-match', part: 6, qRange: [14, 20],
@@ -449,8 +525,8 @@ F. Technological advances are reshaping the sector rapidly. LED lighting has dra
           items: [
             { num: 14, stem: 'An explanation of why staple crops are not suitable for vertical farming', answer: 'E' },
             { num: 15, stem: 'A description of how water is conserved in vertical farming systems', answer: 'B' },
-            { num: 16, stem: 'Examples of countries where vertical farming has been widely adopted', answer: 'C' },
-            { num: 17, stem: 'Specific data comparing the energy costs of vertical vs field-grown produce', answer: 'D' },
+            { num: 16, stem: 'An explanation of why a shorter transport route does not guarantee a smaller climate footprint', answer: 'C' },
+            { num: 17, stem: 'A quantified estimate of electricity used to supply a kilogram of lettuce', answer: 'D' },
             { num: 18, stem: 'A reference to how new lighting technologies have improved efficiency', answer: 'F' },
             { num: 19, stem: 'A general introduction to the debate about vertical farming\'s potential', answer: 'A' },
             { num: 20, stem: 'A mention of the crops for which vertical farming is currently most economically feasible', answer: 'D' },
@@ -464,11 +540,11 @@ F. Technological advances are reshaping the sector rapidly. LED lighting has dra
         {
           type: 'formgroup', id: 'r2-sent', part: 6, qRange: [21, 26],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `21. Vertical farms can reduce water use by up to {{21}} percent compared to conventional irrigation.\n22. Japan has become a global leader in vertical farming partly due to its severe {{22}} constraints.\n23. The main economic obstacle for vertical farming is its high {{23}} consumption.\n24. Crops with short {{24}} cycles and compact growth habits are best suited to vertical farming.\n25. LED spectra are now tailored to optimise {{25}} rather than to illuminate for human vision.\n26. Plant varieties designed for indoor cultivation with low {{26}} are currently being developed.`,
+          template: `21. One lettuce study found land and water use efficiency {{21}} times higher than in open fields.\n22. Locating production near consumers may shorten {{22}}, although cultivation can dominate the footprint.\n23. The main operating challenge is high {{23}} use.\n24. Crops with short {{24}} cycles and compact canopies are better suited to vertical farming.\n25. Lighting can be tuned for {{25}} rather than human vision.\n26. The carbon intensity of the {{26}} remains decisive.`,
           blanks: [
-            { num: 21, answers: ['ninety-five', '95'] }, { num: 22, answers: ['land'] },
-            { num: 23, answers: ['energy'] }, { num: 24, answers: ['growth'] },
-            { num: 25, answers: ['plant growth'] }, { num: 26, answers: ['light', 'low-light'] },
+            { num: 21, answers: ['38–60'] }, { num: 22, answers: ['transport'] },
+            { num: 23, answers: ['electricity'] }, { num: 24, answers: ['growth'] },
+            { num: 25, answers: ['photosynthesis'] }, { num: 26, answers: ['grid mix'] },
           ],
         },
       ],
@@ -480,26 +556,30 @@ F. Technological advances are reshaping the sector rapidly. LED lighting has dra
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `The Psychology of Money
 
-Economists have long modelled human beings as rational agents who maximise utility—making financial decisions by carefully calculating costs and benefits and acting in their own long-term self-interest. This model has proved analytically powerful but empirically problematic. Decades of research in behavioural economics and psychology have revealed systematic, predictable deviations from rational behaviour in financial decision-making, driven by cognitive biases, emotional responses, and social influences that the classical model does not accommodate.
+Economists often model choices using rational agents who maximise utility under stated assumptions. Such a model can be a benchmark rather than a claim that every person consciously calculates each decision. Behavioural economics studies systematic patterns the benchmark omits and tests how framing, timing, emotion and social context alter choices. Calling a response a bias describes a difference from a specified standard; it does not by itself prove that the person is foolish or that an observer knows the person's true goals.
 
-One of the most well-documented phenomena is loss aversion: the tendency for losses to feel psychologically more painful than equivalent gains feel pleasurable. Prospect theory, developed by psychologists Daniel Kahneman and Amos Tversky in 1979, formalised this observation. Their research demonstrated that most people feel the pain of losing one hundred pounds roughly twice as intensely as they feel the pleasure of gaining one hundred pounds. This asymmetry has profound implications for financial behaviour: it helps explain why investors hold losing stocks too long (hoping to "break even" before selling) and sell winning stocks too early (to lock in gains before they disappear). It also explains why insurance and warranty products, which protect against loss rather than delivering gain, are purchased far more widely than would be predicted by a purely rational calculation of expected value.
+Prospect theory, introduced by Daniel Kahneman and Amos Tversky in 1979 and later refined, evaluates gains and losses relative to a reference point rather than only final wealth. Its value function gives losses greater weight than equivalent gains in many choices, a pattern called loss aversion. The memorable claim that a loss is always felt “twice” as strongly is too universal: estimated strength varies with stakes, method and context, and some studies of small losses find weak or absent effects. Reference dependence can nevertheless help explain why an investor treats a fall below a purchase price differently from an equal change above it. It does not prove one psychological mechanism behind every insurance purchase or sale.
 
-Mental accounting—the tendency to categorise and evaluate money differently depending on its source or intended purpose—is another departure from classical rationality. People treat unexpected windfalls differently from earned income: money won in a casino is more likely to be spent recklessly than money earned through work, even though both have identical purchasing power. Similarly, people assign different values to money in different "mental accounts": the money earmarked for a holiday fund feels qualitatively different from money in a current account, even if the nominal amounts are identical. This segmentation of money into psychological categories influences spending and saving decisions in ways that have no basis in economics but are highly predictable in practice.
+Mental accounting is the tendency to categorise and evaluate money differently according to its source or intended purpose. A windfall may be treated differently from earned income even though both have identical purchasing power. Likewise, a holiday fund can feel separate from a current account. Classical fungibility says one pound can substitute for another; real budgets may impose labels to support self-control or meet household commitments. The same partition can therefore prevent overspending in one setting and produce an expensive mistake in another, such as borrowing at high interest while protecting a low-interest savings account.
 
-Social comparison is a further force that distorts financially rational behaviour. Research by economists Robert Frank and Philip Cook has documented what they call "expenditure cascades": as the conspicuous consumption of high-income groups rises, those immediately below in the income distribution feel pressure to match it, driving up spending across the economy. This dynamic is intensified by social media, which creates constant visibility of others' consumption. Studies have found that exposure to images of luxury spending on platforms such as Instagram is associated with increased materialistic aspirations and reduced financial wellbeing among users.
+Social comparison is a further proposed influence. The expression “expenditure cascade” describes a process in which visible spending near the top shifts standards for households below, with pressure passing through an income distribution. Social media can make selected consumption unusually visible. Studies report associations between exposure to idealised luxury images, materialistic aspirations and lower financial wellbeing, but association is not a randomised intervention. Platform use, prior preferences, income and peer groups can affect both exposure and outcome. Evidence for a mechanism must therefore be distinguished from a story that merely fits a correlation.
 
-Time inconsistency—the tendency to prefer smaller rewards now over larger rewards later—poses particular challenges for long-term financial planning. Behavioural economists call this "present bias": people systematically discount the future in ways inconsistent with their own stated long-term preferences. Someone who genuinely wants to save more for retirement will nonetheless consistently find reasons to spend today and save "next month." Default enrolment in pension schemes—where employees must actively opt out rather than opt in—exploits present bias constructively: when saving is the default option, participation rates rise dramatically compared to opt-in schemes.
+Time inconsistency—the tendency to prefer a smaller reward now despite previously planning to wait for a larger reward—poses challenges for long-term finance. Behavioural economists call the extra weight on the immediate option present bias. Default enrolment in pension schemes, where employees must actively opt out, often raises participation compared with opt-in systems. Yet enrolment is not the same as an adequate contribution or a suitable investment. The default rate, fees, access to emergency savings and the ability to opt out all affect welfare. A successful participation statistic can conceal poor design elsewhere.
 
-Understanding the psychology of money has significant implications beyond individual financial wellbeing. The design of financial products, retirement systems, and consumer lending regulation increasingly draws on behavioural insights to improve outcomes at a population level. Critics of this "behavioural nudge" approach argue that it can be paternalistic—guiding individuals toward choices that policy-makers deem optimal, rather than respecting individual autonomy. Defenders counter that the alternative—continuing to design systems as if humans were the perfectly rational agents of classical economics—leads to demonstrably worse outcomes for real people.`,
+Understanding financial psychology has implications beyond individual wellbeing. Product design, retirement systems and consumer regulation increasingly use behavioural insights. Critics call some interventions paternalistic because an institution chooses the path of least resistance; defenders reply that every form, sequence and default already creates a choice architecture. The relevant comparison is not design versus no design, but one transparent design against plausible alternatives.
+
+Evaluation should measure distribution as well as averages. A reminder may help busy customers but burden people with unstable income; automatic saving may benefit many workers while creating hardship for someone with expensive debt. Researchers should preregister outcomes where possible, report opt-outs and unintended effects, and test whether results persist. Behavioural evidence can improve a policy, but it does not make the policy-maker's objective neutral or guarantee respect for individual autonomy.
+
+Individual variation matters throughout. An average treatment effect can combine people who benefit, people who are unaffected and people who are harmed. Financial literacy, scarcity, age and institutional trust may change a response, while repeated exposure can weaken an initially effective cue. Field evidence is valuable because real money and constraints are present, but causal interpretation still depends on comparison groups and measurement. The psychology of money is therefore a set of testable mechanisms, not a catalogue of tricks that predicts every person.`,
       questions: [
         {
           type: 'mcq', id: 'r3-q27', part: 7,
-          text: 'What does prospect theory, as described in the passage, demonstrate?',
+          text: 'What central idea of prospect theory does the passage emphasise?',
           options: [
-            'That people feel equal emotional responses to gains and losses of the same amount.',
-            'That people experience the pain of losses approximately twice as strongly as the pleasure of equivalent gains.',
-            'That rational investors always hold losing stocks until they recover their full value.',
-            'That insurance products are purchased because they deliver measurable financial gain.',
+            'People evaluate only their final level of wealth, regardless of a starting point.',
+            'People evaluate gains and losses relative to a reference point and may weight losses more heavily.',
+            'Every person values a loss at exactly twice an equivalent gain in all settings.',
+            'Investment behaviour can be explained without considering framing or context.',
           ],
           answer: 1,
         },
@@ -539,10 +619,10 @@ Understanding the psychology of money has significant implications beyond indivi
         {
           type: 'formgroup', id: 'r3-ynng', part: 7, qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: Classical economic models assume people always act in their own long-term financial interest.\n32. {{32}}: Loss aversion explains why people sell losing investments before they recover.\n33. {{33}}: Money won through gambling has the same purchasing power as money earned through work.\n34. {{34}}: Research has found that Instagram use is linked to increased financial dissatisfaction.\n35. {{35}}: Present bias means people overestimate future rewards relative to immediate ones.\n36. {{36}}: The writer ultimately argues that behavioural nudge policies are always superior to classical approaches.`,
+          template: `31. {{31}}: Rational-agent models can be used as benchmarks rather than literal descriptions of every decision.\n32. {{32}}: The passage says loss aversion has the same measured strength in every context.\n33. {{33}}: A windfall and earned income can have identical purchasing power.\n34. {{34}}: Associations involving social-media exposure establish that the exposure caused the financial outcome.\n35. {{35}}: Present bias gives extra weight to an immediate option.\n36. {{36}}: The writer says behavioural evidence automatically makes a policy objective neutral.`,
           blanks: [
             { num: 31, answers: ['YES'] }, { num: 32, answers: ['NO'] }, { num: 33, answers: ['YES'] },
-            { num: 34, answers: ['YES'] }, { num: 35, answers: ['NO'] }, { num: 36, answers: ['NOT GIVEN'] },
+            { num: 34, answers: ['NO'] }, { num: 35, answers: ['YES'] }, { num: 36, answers: ['NO'] },
           ],
         },
         {
@@ -563,8 +643,8 @@ Understanding the psychology of money has significant implications beyond indivi
       questions: [{
         type: 'write', id: 'w1', part: 8, taskNumber: 1,
         imageUrl: '/assets/ielts/charts/set8-task1.svg',
-        imageAlt: 'Diagram showing the process by which solar panels generate and distribute electricity',
-        stimulus: 'The diagram below shows how solar panels generate and distribute electricity to homes and the national grid.',
+        imageAlt: 'Process diagram in which sunlight reaches solar panels, direct current passes to an inverter, and alternating current is distributed to a home or the national grid while surplus can enter battery storage',
+        stimulus: 'The diagram below shows how a domestic solar-panel system generates electricity and distributes it to a home, battery storage and the national grid.',
         text: 'Summarise the information by selecting and reporting the main features and stages of the process.',
         minWords: 150,
       }],
@@ -574,7 +654,7 @@ Understanding the psychology of money has significant implications beyond indivi
       instructions: 'You should spend about 40 minutes on this task. Write at least 250 words.',
       questions: [{
         type: 'write', id: 'w2', part: 9, taskNumber: 2,
-        stimulus: 'Some people think that governments should provide financial assistance to artists such as musicians, painters, and poets, while others believe that artists should seek funding from other sources.',
+        stimulus: 'Public museums increasingly create high-resolution digital copies of objects in their collections. Some people believe these images should be freely available for anyone to reuse, while others argue that museums should charge commercial users to help fund conservation.',
         text: 'Discuss both views and give your own opinion.',
         minWords: 250,
       }],
@@ -591,6 +671,10 @@ Understanding the psychology of money has significant implications beyond indivi
             'Have you ever tried to create something artistic? Tell me about it.',
             'Do you think art is important in everyday life? Why or why not?',
             'Are there any artists or musicians you particularly admire?',
+            'Did you visit museums or performances when you were a child?',
+            'What kind of creative activity is popular where you live?',
+            'Do you prefer seeing art in person or on a screen?',
+            'Would you like to learn a new creative skill in the future?',
           ],
         },
         {
@@ -606,6 +690,8 @@ Understanding the psychology of money has significant implications beyond indivi
             'Do you think digital technology has made it easier or harder for artists to make a living?',
             'How important is it for schools to include arts education in their curriculum?',
             'Do you think commercial art (created for profit) can be just as valuable as non-commercial art?',
+            'How should museums balance public access with the cost of conserving collections?',
+            'What may be gained or lost when a physical work is experienced only as a digital copy?',
           ],
         },
       ],

@@ -60,4 +60,9 @@ assert.match(set7Task1.stimulus, /household waste.*Alderwick.*Brenton/i, 'Set 7:
 assert.match(set7Task1.stimulus, /2025/i, 'Set 7: la consigna debe coincidir con el año del gráfico')
 assert.match(set7Task1.imageAlt, /food.*paper and card.*plastic.*glass.*other/i, 'Set 7: el texto alternativo debe enumerar las cinco categorías')
 
+const { default: set8 } = await import('../src/data/mocks/ielts-set-8.ts')
+const set8Task1 = set8.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set8Task1.stimulus, /solar-panel.*home.*battery storage.*national grid/i, 'Set 8: la consigna debe describir el sistema y sus tres destinos')
+assert.match(set8Task1.imageAlt, /direct current.*inverter.*alternating current/i, 'Set 8: el texto alternativo debe explicar la conversión DC a AC')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

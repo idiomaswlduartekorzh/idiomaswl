@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" role="img" aria-labelledby="title desc" font-family="system-ui,sans-serif">
+  <title id="title">Domestic solar electricity generation and distribution</title>
+  <desc id="desc">Sunlight reaches solar panels that generate direct current. An inverter changes it to alternating current, a meter and fuse box distribute it to the home or national grid, and surplus direct current can enter battery storage.</desc>
   <rect width="680" height="380" fill="#fafafa" rx="8"/>
   <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">How Solar Panels Generate and Distribute Electricity</text>
 

@@ -34,7 +34,7 @@ pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 | 5 | 40/40 | 2.215 | 2.180 | CANDIDATO QA · 29,0 min | 0 |
 | 6 | 40/40 | 2.333 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
 | 7 | 40/40 | 2.311 | 2.176 | REEMPLAZAR · 24,0 min | 0 |
-| 8 | 40/40 | 2.404 | 2.165 | REEMPLAZAR · 24,0 min | 0 |
+| 8 | 40/40 | 2.358 | 2.151 | REEMPLAZAR · 24,0 min | 0 |
 | 9 | 40/40 | 2.254 | 2.187 | REEMPLAZAR · 24,0 min | 0 |
 | 10 | 40/40 | 2.342 | 2.171 | REEMPLAZAR · 24,0 min | 0 |
 | 11 | 40/40 | 2.364 | 2.151 | REEMPLAZAR · 24,0 min | 0 |
@@ -138,6 +138,11 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   se reemplazaron el gráfico Task 1 defectuoso y un Task 2 de alto riesgo de coincidencia.
   El nuevo gráfico original de residuos Alderwick/Brenton pasó inspección renderizada y
   conserva título y descripción accesibles. Sólo queda diferido su audio Listening.
+- El Set 8 superó 236 controles Golden. Sus cuatro guiones fueron reconstruidos con
+  discurso propio de cada escenario; las lecturas incorporan evidencia genómica canina
+  de 2026, comparaciones de ciclo de vida para cultivo vertical y límites empíricos de
+  la aversión a la pérdida. Se sustituyó el prompt público de financiación artística,
+  y el proceso solar pasó inspección visual y semántica accesible. Su audio sigue diferido.
 
 ## Auditoría final no-audio
 
