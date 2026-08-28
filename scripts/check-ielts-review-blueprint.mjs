@@ -121,4 +121,9 @@ const set19Task1 = set19.sections.flatMap(section => section.questions).find(que
 assert.match(set19Task1.stimulus, /U\.S\. retail e-commerce sales.*percentage of total retail sales.*fourth quarter.*2019.*2024.*seasonally adjusted.*not adjusted/i, 'Set 19: la consigna debe declarar medida, periodo y las dos series')
 assert.match(set19Task1.imageAlt, /11\.4%.*14\.0%.*12\.9%.*14\.7%.*15\.6%.*16\.4%.*12\.8%.*15\.7%.*14\.5%.*16\.0%.*17\.1%.*17\.9%/i, 'Set 19: el texto alternativo debe comunicar todos los valores Census')
 
+const { default: set20 } = await import('../src/data/mocks/ielts-set-20.ts')
+const set20Task1 = set20.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set20Task1.stimulus, /global electric-car sales.*share of all new-car sales.*2023.*2024.*2025/i, 'Set 20: la consigna debe declarar medida, alcance y años')
+assert.match(set20Task1.imageAlt, /14 million.*17 million.*21 million.*18%.*20%.*25%/i, 'Set 20: el texto alternativo debe comunicar ventas y porcentajes IEA')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

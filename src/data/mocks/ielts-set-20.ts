@@ -28,7 +28,7 @@ LIBRARIAN: Could you spell your surname for me?
 
 STUDENT: Of course — O-K-O-R-O.
 
-LIBRARIAN: Thank you, Daniel. And a phone number in case we need to reach you?
+LIBRARIAN: Thank you, Daniel. And a phone number, please?
 
 STUDENT: It's 07811 402596.
 
@@ -68,7 +68,35 @@ LIBRARIAN: Room B is on the fourth floor. It seats ten, costs five pounds an hou
 
 STUDENT: Then I'll take Room B for Thursday.
 
-LIBRARIAN: Excellent. I'll book that in for you now.`,
+LIBRARIAN: Excellent. What time would you like to start?
+
+STUDENT: We finish our lecture at half past one, so could we have it from two until four?
+
+LIBRARIAN: Two hours is fine. Rooms can be reserved for a maximum of three hours, and your group must leave ten minutes before the library closes. Thursday is a normal teaching day, so that will not affect you.
+
+STUDENT: Good. Can we bring drinks in with us?
+
+LIBRARIAN: Drinks in bottles with lids are permitted, but no hot food. Please wipe the whiteboard and return any cables to the labelled drawer. The person who made the booking is responsible for the room.
+
+STUDENT: Understood. Is there a deposit for the projector?
+
+LIBRARIAN: No deposit, but the projector remote is issued with the key. If anything is missing or damaged, report it at the help desk rather than trying to repair it yourself.
+
+STUDENT: And if one of us arrives before I do, can they collect the key?
+
+LIBRARIAN: Only if you add their name to the reservation in advance. Otherwise we must see the card of the person who booked. I'll send a confirmation email now; use the link in it if you need to add a name or cancel.
+
+STUDENT: How much notice do you need for a cancellation?
+
+LIBRARIAN: Please cancel at least two hours before the start. Repeatedly failing to attend can temporarily suspend booking privileges.
+
+STUDENT: That's clear. So it is Room B, from two to four this Thursday.
+
+LIBRARIAN: Correct. The room is reached by the east lift; the west lift stops at the third floor. Your reference number is CL-4827. Is there anything else?
+
+STUDENT: No, that's everything. Thanks for explaining it.
+
+LIBRARIAN: You're welcome. Your confirmation should arrive within a few minutes.`,
       questions: [
         {
           type: 'formgroup',
@@ -88,7 +116,7 @@ LIBRARIAN: Excellent. I'll book that in for you now.`,
 • Must bring student {{6}} to collect the key`,
           blanks: [
             { num: 1, answers: ['economics'], maxWords: 1 },
-            { num: 2, answers: ['third', '3rd'], maxWords: 1 },
+            { num: 2, answers: ['third'], maxWords: 1 },
             { num: 3, answers: ['6', 'six'], maxWords: 1 },
             { num: 4, answers: ['projector'], maxWords: 1 },
             { num: 5, answers: ['Thursday'], maxWords: 1 },
@@ -112,7 +140,7 @@ LIBRARIAN: Excellent. I'll book that in for you now.`,
             ],
             [
               'Room B',
-              { num: 9, answers: ['fourth', '4th', '4'], maxWords: 1 },
+              { num: 9, answers: ['fourth'], maxWords: 1 },
               '10',
               '£5',
               { num: 10, answers: ['projector'], maxWords: 1 },
@@ -138,7 +166,15 @@ For families, we run a treasure hunt every afternoon; just pick up a worksheet f
 
 A few quick reminders. Large bags must be left in the cloakroom near the main entrance. Our guided tours leave every hour from the central hall, and each one lasts about forty minutes. And if you happen to get lost, look for a member of staff in a red jacket — they'll be glad to point you in the right direction.
 
-Finally, before you leave, do go up to the viewing platform on the top floor, which gives a wonderful view over the old railway yard. And on your way out, we'd be really grateful if you could fill in a short questionnaire about your visit, because your comments genuinely help us improve. Right — enjoy the museum.`,
+Before I finish, let me explain today's temporary route. The lift beside reception is being serviced, so visitors who need step-free access should follow the blue signs to the lift behind the café. The route is slightly longer, but every gallery remains accessible. Folding stools are available without charge; please ask rather than moving the display benches.
+
+At eleven fifteen, one of our conservators will demonstrate how leather seats are cleaned without damaging their original surface. That talk takes place beside the horse-drawn bus and does not require a ticket. The engine-starting demonstration is different: it is outdoors at two o'clock, numbers are limited, and free places must be reserved at reception. If wet weather makes it unsafe, an announcement will be made fifteen minutes beforehand.
+
+You may notice small green labels beside several vehicles. These mark objects selected for our energy trail, which compares the fuels used by different generations of transport. Scan the square code only if you want extra technical detail; all essential information is printed on the main labels, so a phone is not necessary.
+
+Please supervise children near the open tram and use the handrail when climbing aboard. Wheelchairs and pushchairs have priority in the narrow aircraft-gallery passage. If an alarm sounds, do not return to the cloakroom: staff will direct everyone to the assembly point in the north courtyard.
+
+Finally, before you leave, do go up to the viewing platform on the top floor, which gives a wonderful view over the old railway yard. The platform closes twenty minutes before the rest of the museum because staff must secure the external doors. And on your way out, we'd be really grateful if you could fill in a short questionnaire about your visit, because your comments genuinely help us improve. You can complete the paper version or scan the code at reception. Right — enjoy the museum.`,
       questions: [
         {
           type: 'multiselect',
@@ -172,7 +208,7 @@ Finally, before you leave, do go up to the viewing platform on the top floor, wh
 • Guided tours last about {{19}}.
 • Visitors are asked to complete a {{20}}.`,
           blanks: [
-            { num: 13, answers: ['four thirty', '4.30', '4:30', 'half past four'], maxWords: 2 },
+            { num: 13, answers: ['four thirty'], maxWords: 2 },
             { num: 14, answers: ['model railway'], maxWords: 2 },
             { num: 15, answers: ['gift shop', 'shop'], maxWords: 2 },
             { num: 16, answers: ['worksheet'], maxWords: 1 },
@@ -219,7 +255,33 @@ TUTOR: That's exactly the right approach. Let me suggest some practical steps. F
 
 SAM: That's really helpful — thanks. We'll divide up the tasks and send you a full plan by the end of the week.
 
-TUTOR: Perfect. I look forward to seeing it.`,
+TUTOR: Before you go, let's test the logic of the campaign. Saving money may attract attention, but what action are you asking students to take?
+
+PRIYA: We want them to replace one sugary drink a day with tap water. We can show the weekly saving rather than making vague claims.
+
+SAM: We also thought about asking the café to remove all sweet drinks during the campaign.
+
+TUTOR: Keep the products available, but ask the café manager whether you may place a water jug beside the display.
+
+PRIYA: Should our survey ask how many drinks people buy?
+
+TUTOR: Ask about behaviour, but do not request names, medical history or anything you do not need. Use the same short questions before and after. If the wording changes, any difference may come from the survey rather than the campaign.
+
+SAM: We could also count sales at the café.
+
+TUTOR: Only if the manager can provide anonymous totals.
+
+PRIYA: For the videos, I can interview students who already switched to water.
+
+TUTOR: Obtain written consent and let participants review the clip in which they appear. Add captions, because many people watch without sound, and provide a text version for accessibility.
+
+SAM: What schedule would you recommend?
+
+TUTOR: Draft the materials next week, pilot them with a small group the week after, and revise before launch. A pilot may reveal that the saving is hard to understand or that the tone sounds judgemental.
+
+PRIYA: We will also record which changes we make after the pilot.
+
+TUTOR: Good. That audit trail will strengthen your final report. Meet me after ethics approval, and we can review the sampling plan before any responses are collected.`,
       questions: [
         {
           type: 'mcq',
@@ -319,7 +381,17 @@ Everything changed during the Industrial Revolution. New machinery made it possi
 
 The solid chocolate bar we know today appeared a few decades later. Manufacturers found that adding extra cocoa butter produced a bar that would melt in the mouth. Soon afterwards, the addition of milk created milk chocolate, which became hugely popular, especially with children.
 
-Today chocolate is a global industry worth billions. However, it faces serious challenges. Most cacao is now grown in West Africa, where farmers often receive very low prices for their crop. There are also environmental concerns, since expanding plantations can lead to deforestation. For that reason, many companies now promote products certified as sustainable. So next time you eat a chocolate bar, remember its remarkable journey through history.`,
+The sequence was not quite as simple as popular histories sometimes suggest. Techniques developed in different places and companies competed over texture, shelf life and price. Grinding reduced the particles, while careful heating and mixing helped create the smooth consistency consumers expected. Packaging mattered too: once bars could be wrapped and transported reliably, chocolate moved beyond specialist shops into a mass market.
+
+Demand also changed what manufacturers sold. Dark chocolate contains cocoa solids and cocoa butter but no added milk solids, whereas recipes for milk and white chocolate use different proportions. Legal definitions vary between countries, so a product sold under one name in one market may need a different label elsewhere. This is one reason historians distinguish cacao as the tree or raw crop from the many processed foods called chocolate.
+
+Today chocolate is a global industry worth billions. However, it faces serious challenges. Most cacao is now grown in West Africa, where many smallholder farmers have limited bargaining power and incomes can be unstable. A low shop price does not show how revenue is divided among growers, traders, processors and retailers. Certification schemes try to improve traceability and farming practices, but their standards and coverage differ; a logo is not evidence that every social or environmental problem has been solved.
+
+There are environmental concerns as well, since expanding plantations into forested land can contribute to deforestation. Yet simply blaming individual farmers misses wider pressures, including insecure land rights, crop disease, ageing trees and volatile prices. Some programmes therefore combine forest monitoring with training, shade-grown production and support for more productive existing farms.
+
+Climate change adds another layer of uncertainty. Cacao thrives within a limited range of temperature and rainfall, and changing conditions can alter where it grows well. Researchers and farmers are testing more resilient varieties, but a new tree takes time to mature. That long investment horizon makes stable income and access to advice especially important.
+
+So next time you eat a chocolate bar, remember that its history is not only a chain of inventions. It is also a continuing story about agriculture, trade, consumer taste and the choices used to share risks and rewards across a global supply network.`,
       questions: [
         {
           type: 'formgroup',
@@ -372,17 +444,17 @@ Today
       instructions: 'Read the passage and answer Questions 1–13.',
       passage: `The Crisis of Antibiotic Resistance
 
-Antibiotics—medicines that kill or inhibit bacteria—are among the most transformative discoveries in the history of medicine. Since Alexander Fleming observed the bacteria-killing properties of the Penicillium mould in 1928, antibiotics have saved hundreds of millions of lives by making previously fatal infections treatable and enabling surgical procedures, organ transplants, and cancer chemotherapy that would be impossibly dangerous without effective infection control. Today, that transformative capacity is under threat from a biological process that medicine cannot prevent but can only slow: antimicrobial resistance (AMR).
+Antibiotics—medicines that kill or inhibit bacteria—are among the most transformative discoveries in the history of medicine. After Alexander Fleming observed the antibacterial action of a Penicillium mould in 1928, later research turned penicillin into a medicine. Antibiotics made many previously fatal infections treatable and lowered the infection risk surrounding surgery, organ transplantation and cancer chemotherapy. That capacity is now threatened by a biological process that medicine can manage but not abolish: antimicrobial resistance (AMR).
 
-Resistance arises because antibiotics, while effective against most bacteria in a population, rarely kill every single bacterium. Those with natural genetic variations that allow them to survive drug exposure reproduce, passing on their resistant traits. This evolutionary dynamic is inevitable—but its pace is dramatically accelerated by overuse and misuse of antibiotics. In human medicine, antibiotics are frequently prescribed for viral infections such as colds and influenza against which they are entirely ineffective. In low-income countries, over-the-counter access without prescription enables self-medication with incorrect doses and durations. In agriculture, the use of antibiotics at sub-therapeutic levels to promote growth in livestock has been identified as a major driver of resistance genes entering environmental reservoirs.
+Resistance is a product of selection. When a drug suppresses susceptible bacteria, organisms carrying a protective mutation or an acquired resistance gene may survive and reproduce. Bacteria can inherit resistance vertically and can also exchange genetic material, so a useful trait need not remain within one lineage. Evolution cannot be stopped, but unnecessary exposure increases selection pressure. Examples include prescribing antibiotics for viral infections such as colds and influenza, self-medication with unsuitable doses, and inappropriate use in food-producing animals. Agriculture is one important sector, although the routes by which resistant organisms and genes move among people, animals and the environment are complex.
 
-The consequences of the AMR crisis are already severe. The World Health Organization estimated that in 2019, bacterial AMR was directly responsible for 1.27 million deaths globally and was a contributing factor in approximately 4.95 million further deaths. If current trends continue, projections suggest that AMR could cause ten million deaths annually by 2050—surpassing cancer as a leading cause of mortality. Particular concern surrounds a group of pathogens described by the WHO as "priority pathogens": bacteria including Klebsiella pneumoniae, Acinetobacter baumannii, and Enterococcus faecium that have developed resistance to multiple classes of antibiotics, including carbapenems, which are considered last-resort treatments.
+The burden is already severe, but two measures are easily confused. A major analysis estimated that bacterial AMR was attributable to 1.27 million deaths in 2019 and associated with 4.95 million deaths in total; the larger number is not a further group to add to the first. An influential review also projected that annual deaths associated with drug-resistant infections could reach ten million by 2050 under its assumptions. That figure is a scenario, not an observed total. To guide research, the WHO's 2024 bacterial priority pathogens list groups 24 pathogens in 15 families into critical, high and medium categories. It includes resistant forms of Klebsiella pneumoniae, Acinetobacter baumannii and Enterococcus faecium; some resist carbapenems, drugs often reserved as last-resort treatments for severe infections when alternatives are limited.
 
-The antibiotic pipeline—the process of developing new drugs—has been inadequate for decades. Antibiotics are commercially unattractive: they are taken for short periods, prescribed cautiously to preserve effectiveness, and often priced at modest levels inappropriate to recoup the enormous investment required for drug development. Many major pharmaceutical companies exited antibiotic research in the 1980s and 1990s. The few new antibiotics approved in recent decades have primarily been modifications of existing drug classes, rather than genuinely novel mechanisms of action capable of overcoming existing resistance.
+The antibiotic pipeline—the route from laboratory discovery through trials and approval—has remained inadequate. Antibiotics are usually taken for short periods and should be prescribed cautiously to preserve effectiveness. Those features weaken the conventional commercial reward for developing them. By the end of 2023, the WHO counted 97 antibacterial products in clinical development for priority pathogens, yet judged the pipeline insufficient because too few candidates were innovative or directed at the most urgent threats. Counting candidates alone is misleading: many will fail, and approval does not guarantee affordable access in every health system.
 
-Addressing AMR requires action on multiple fronts simultaneously. Stewardship programmes—initiatives to ensure antibiotics are prescribed only when needed and in appropriate doses and durations—have been shown to reduce unnecessary antibiotic use in hospitals without worsening patient outcomes. Rapid diagnostic tests that can distinguish bacterial from viral infections in minutes, rather than the hours or days required by conventional culture methods, are increasingly available and could significantly reduce inappropriate prescribing. In agriculture, the elimination of prophylactic and growth-promoting antibiotic use in livestock—already implemented in the European Union and some other jurisdictions—is a necessary step, though political resistance from farming industries has slowed progress in many countries.
+Addressing AMR requires action on several fronts. Stewardship programmes aim to ensure that antibiotics are used only when indicated, with an appropriate drug, dose and duration. Diagnostics can support that decision, but capabilities vary: some rapid tests identify a pathogen or resistance marker quickly, while conventional culture and susceptibility testing may take much longer. A test must also be affordable, available and interpreted in context. In animal production, vaccination, hygiene and veterinary oversight can reduce the need for treatment. The European Union restricts routine use and reserves prophylaxis for exceptional individual cases, rather than pretending that all preventive and therapeutic uses are identical.
 
-International coordination is essential because resistance genes move across borders with the bacteria that carry them, through trade, travel, and environmental flows. The WHO's Global Action Plan on Antimicrobial Resistance, adopted in 2015, provides a framework, but implementation has been uneven and often underfunded. The COVID-19 pandemic, which dramatically increased antibiotic use in hospital settings and disrupted existing stewardship programmes, is estimated to have worsened global AMR trends significantly—a reminder of how interconnected and fragile the global systems that underpin public health really are.`,
+International coordination is essential because resistant organisms and genes move through trade, travel and environmental flows. The WHO's Global Action Plan on Antimicrobial Resistance, adopted in 2015, provides a framework, but implementation and surveillance capacity remain uneven. The pandemic disrupted health services and changed antibiotic use, although its effects differed by place and time; it should not be treated as a single quantified cause of every later trend. In 2024, governments agreed a global target to reduce deaths associated with bacterial AMR by ten percent by 2030 from the 2019 baseline. That commitment makes measurement as important as invention: countries need comparable data to know whether stewardship, infection prevention and access to effective treatment are improving together.`,
       questions: [
         {
           type: 'formgroup',
@@ -390,14 +462,14 @@ International coordination is essential because resistance genes move across bor
           part: 5,
           qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: Alexander Fleming discovered penicillin by observing the bacteria-killing properties of a mould in 1928.\n2. {{2}}: Antibiotic resistance arises because antibiotics completely eliminate all bacteria in a population.\n3. {{3}}: The use of antibiotics at sub-therapeutic levels to promote livestock growth has been linked to the spread of resistance genes.\n4. {{4}}: In 2019, AMR was directly responsible for 4.95 million deaths globally.\n5. {{5}}: Most major pharmaceutical companies have increased their investment in antibiotic research since the 1990s.\n6. {{6}}: Rapid diagnostic tests can currently distinguish bacterial from viral infections within minutes.\n7. {{7}}: The WHO Global Action Plan on AMR was adopted at an international summit in 2015.`,
+          template: `1. {{1}}: Fleming observed the antibacterial action of a mould in 1928.\n2. {{2}}: Antibiotic resistance arises because antibiotics completely eliminate all bacteria in a population.\n3. {{3}}: Inappropriate antibiotic use in food-producing animals can add to the selection pressure for resistance.\n4. {{4}}: In 2019, AMR was directly responsible for 4.95 million deaths globally.\n5. {{5}}: The WHO regarded all 97 antibacterial products in clinical development at the end of 2023 as sufficient.\n6. {{6}}: Every health facility can now identify a pathogen and its resistance within minutes.\n7. {{7}}: The WHO Global Action Plan on AMR was adopted in 2015.`,
           blanks: [
             { num: 1, answers: ['TRUE'] },
             { num: 2, answers: ['FALSE'] },
             { num: 3, answers: ['TRUE'] },
             { num: 4, answers: ['FALSE'] },
             { num: 5, answers: ['FALSE'] },
-            { num: 6, answers: ['TRUE'] },
+            { num: 6, answers: ['FALSE'] },
             { num: 7, answers: ['TRUE'] },
           ],
         },
@@ -407,12 +479,12 @@ International coordination is essential because resistance genes move across bor
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. Antibiotic {{8}} programmes aim to ensure that drugs are prescribed only when necessary and in correct doses.\n9. Carbapenems are described in the passage as {{9}} treatments when other antibiotics have failed.\n10. The decline in pharmaceutical company investment in antibiotics since the 1980s has resulted in an inadequate antibiotic {{10}}.\n11. The COVID-19 pandemic is estimated to have {{11}} global AMR trends significantly.\n12. Resistance genes spread internationally through trade, travel, and {{12}} flows.\n13. Bacteria that have developed resistance to multiple antibiotic classes are grouped by the WHO as {{13}} pathogens.`,
+          template: `8. Antibiotic {{8}} programmes aim to ensure that drugs are prescribed only when necessary and in correct doses.\n9. Carbapenems are described in the passage as {{9}} treatments when alternatives are limited.\n10. The route from laboratory discovery through trials and approval is called the antibiotic {{10}}.\n11. The pandemic {{11}} health services and changed patterns of antibiotic use.\n12. Resistance genes spread internationally through trade, travel, and {{12}} flows.\n13. The WHO groups urgent bacterial threats as {{13}} pathogens.`,
           blanks: [
             { num: 8, answers: ['stewardship'] },
             { num: 9, answers: ['last-resort'] },
             { num: 10, answers: ['pipeline'] },
-            { num: 11, answers: ['worsened'] },
+            { num: 11, answers: ['disrupted'] },
             { num: 12, answers: ['environmental'] },
             { num: 13, answers: ['priority'] },
           ],
@@ -429,17 +501,17 @@ International coordination is essential because resistance genes move across bor
 
 A. Urban gardening—the cultivation of plants within city environments—has moved from a marginal activity associated with wartime food production and community allotments to a significant component of contemporary urban planning and sustainability strategy. From rooftop gardens and vertical farms to community vegetable patches and edible street planting, cities around the world are increasingly integrating growing spaces into the fabric of urban life. This shift reflects both practical motivations—food security, environmental benefits—and deeper cultural desires for connection to nature and community.
 
-B. The history of urban food growing is long and cyclical. In both world wars, "victory gardens" were promoted by governments in the United Kingdom and United States as a patriotic response to food shortages, with public parks and private lawns converted to vegetable production. Cuba's "organoponico" movement, born of necessity after the collapse of Soviet subsidies in the early 1990s left the country without access to imported food and agricultural inputs, became one of the world's most celebrated examples of urban agriculture, with community gardens transforming abandoned lots across Havana into productive growing spaces that supplied a significant fraction of the city's fresh vegetables.
+B. The history of urban food growing is long and cyclical. In both world wars, "victory gardens" were promoted by governments in the United Kingdom and United States as a patriotic response to pressure on food supplies, with public parks and private lawns converted to vegetable production. Cuba's "organoponico" movement expanded after the loss of Soviet trade and inputs in the early 1990s. Organopónicos and other urban farms converted many plots in and around Havana to food production. The case is important because it shows how policy, access to land and necessity can accelerate urban cultivation; it does not provide a universal estimate of the share of vegetables that every city could grow.
 
-C. The environmental benefits of urban gardening are multiple, though their scale depends significantly on context and implementation. Urban green spaces reduce the heat island effect by providing shade and evapotranspiration, absorb carbon dioxide through photosynthesis, and support biodiversity by providing habitat for pollinators, birds, and invertebrates. In cities where stormwater management is a challenge, green roofs and garden spaces can absorb rainfall and reduce runoff, alleviating pressure on drainage systems. Research in European cities has found that urban green spaces also have measurable positive effects on air quality, particularly in relation to particulate matter.
+C. Urban vegetation can provide several environmental services, although their scale depends on design, climate and maintenance. Shade and evapotranspiration can moderate the heat island effect locally, plants store some carbon, and varied planting can provide habitat for pollinators, birds and invertebrates. Where stormwater management is a challenge, suitable green roofs and garden soils can retain rainfall and slow runoff, alleviating pressure on drainage systems. Claims about air quality require particular care. Vegetation may intercept some particles, but species, street geometry and airflow affect the outcome, and dense planting in a confined street can sometimes restrict dispersion. A garden is therefore one component of green infrastructure, not a substitute for controlling pollution at source.
 
-D. The social and health benefits of urban gardening have attracted growing research interest. Contact with nature and gardening activity has been consistently associated with reduced levels of cortisol, lower rates of depression and anxiety, and improved subjective wellbeing. Community gardens, in particular, serve as sites of social interaction across demographic boundaries—age, ethnicity, socioeconomic status—that are rarely bridged in other urban spaces. Research in the United States and Europe has found that residents of neighbourhoods with community gardens report higher levels of social trust and community cohesion than comparable residents in areas without them.
+D. Possible social and health benefits have attracted growing research interest. Studies often find associations between contact with green space or gardening and lower reported stress, depression or anxiety, as well as better subjective wellbeing. Such findings do not prove that a garden alone caused the difference: people who participate may already differ from non-participants, and programmes vary greatly. Community gardens can nevertheless create repeated opportunities for social contact across age, ethnicity and income. Some surveys report higher social trust and community cohesion in neighbourhoods with gardens, but a credible evaluation must consider selection, local leadership and how safely the space is maintained.
 
 E. The contribution of urban agriculture to food security is real but often overstated. Urban growing can supplement household food budgets, particularly for low-income families, and can provide access to fresh produce in areas described as "food deserts"—urban neighbourhoods where affordable, nutritious food is difficult to obtain. However, the physical constraints of urban environments—limited space, competition for land, soil contamination, and artificial light requirements for indoor growing—mean that cities are unlikely to achieve meaningful self-sufficiency in food production in the foreseeable future. The economic viability of urban farming at scale remains contested; many operations require significant public subsidy or premium pricing to remain financially sustainable.
 
 F. Vertical farming—the cultivation of crops in stacked layers within controlled indoor environments, typically using artificial LED lighting, hydroponic nutrient systems, and precise climate control—has attracted enormous investor attention as a potential solution to the space constraints of urban agriculture. Proponents argue that vertical farms can produce dramatically higher yields per unit of land area than conventional agriculture and can be located anywhere, independent of climate and soil conditions. Critics point to the high capital and energy costs of these systems, and question whether the environmental benefits of local food production justify the carbon footprint of the artificial lighting and climate control that vertical farms require.
 
-G. The future of urban gardening is likely to be shaped by policy choices about land use, planning regulations, and public investment, as well as by the values and priorities of urban communities themselves. Cities that integrate green infrastructure into planning from the outset—as Singapore, Copenhagen, and Melbourne are attempting to do—may achieve genuinely transformative outcomes. For most cities, however, the challenge is retrofitting green space into environments built for very different purposes, a process that requires both technical innovation and sustained political commitment to the idea that the quality of urban life is inseparable from access to nature.`,
+G. The future of urban gardening will be shaped by land-use rules, tenure, water access and public investment as well as community priorities. Integrating green infrastructure when a district is planned can make room for connected soil, drainage and public access. Existing cities face the harder task of retrofitting dense environments built for other purposes. Even then, technical design is only part of the answer. A short grant may create planting beds, but long-term value depends on who can use the space, who maintains it and whether development pressure can displace it. The strongest policy case is therefore not that every garden delivers every claimed benefit, but that clearly defined projects can be assessed against food, water, biodiversity or social goals instead of being judged by appearance alone.`,
       questions: [
         {
           type: 'matching',
@@ -449,7 +521,7 @@ G. The future of urban gardening is likely to be shaped by policy choices about 
           groupLabel: 'The passage has seven paragraphs, A–G. Which paragraph contains the following information?',
           items: [
             { num: 14, stem: 'A description of a country that developed large-scale urban farming in response to an economic crisis', answer: 'B' },
-            { num: 15, stem: 'Evidence that gardens improve social trust among residents of a neighbourhood', answer: 'D' },
+            { num: 15, stem: 'Survey findings of higher reported social trust in neighbourhoods with gardens', answer: 'D' },
             { num: 16, stem: 'A caution that cities are unlikely to achieve significant food self-sufficiency through urban farming', answer: 'E' },
             { num: 17, stem: 'An overview of how urban gardening has become part of contemporary sustainability strategy', answer: 'A' },
             { num: 18, stem: 'A description of how vertical farms work and the debate about their environmental credentials', answer: 'F' },
@@ -478,7 +550,7 @@ G. The future of urban gardening is likely to be shaped by policy choices about 
             { num: 21, answers: ['victory'] },
             { num: 22, answers: ['organoponico'] },
             { num: 23, answers: ['heat island'] },
-            { num: 24, answers: ['depression', 'anxiety', 'cortisol'] },
+            { num: 24, answers: ['depression', 'anxiety'] },
             { num: 25, answers: ['contamination'] },
             { num: 26, answers: ['capital'] },
           ],
@@ -493,28 +565,28 @@ G. The future of urban gardening is likely to be shaped by policy choices about 
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `The Future of Transport
 
-Transport systems are the circulatory infrastructure of modern economies, enabling the movement of people and goods at the scales and speeds that contemporary life requires. They are also among the most significant sources of greenhouse gas emissions, accounting for approximately twenty-three percent of global energy-related CO₂ output, with road transport—principally cars and trucks—contributing the largest share. The decarbonisation of transport is therefore central to global climate goals, and it is being pursued through three principal pathways: electrification, modal shift, and improved efficiency.
+Transport systems connect homes, jobs and markets, but they also lock in energy use and patterns of access. In the European Union, for example, transport including international aviation and shipping accounted for about 31 percent of greenhouse-gas emissions in 2023, and road transport produced nearly 73 percent of the transport total. The figures are regional rather than global, but they illustrate why changing mobility matters. Three recurring pathways are electrification, modal shift and improved efficiency; none removes the need to examine how much travel is created and who can reach essential destinations.
 
-Electrification of the vehicle fleet is the most widely discussed pathway, and the pace of its advance has surprised many observers. Global electric vehicle (EV) sales reached 14 million units in 2023—approximately eighteen percent of all new car sales worldwide—up from less than one percent in 2015. The plummeting cost of lithium-ion batteries, which has fallen by over ninety percent since 2010, is the primary driver. In several markets—Norway, the Netherlands, China—EVs have achieved price parity with internal combustion engine vehicles without subsidies, and the transition is increasingly market-driven rather than policy-driven. The primary remaining barriers are charging infrastructure (particularly for apartment dwellers and those in rural areas), the higher upfront cost of EVs in lower-income countries, and concerns about battery supply chains involving lithium, cobalt, and nickel.
+Electrification is the most visible pathway. Nearly 14 million electric cars were sold worldwide in 2023, more than 17 million in 2024 and 21 million in 2025; their share of new-car sales rose from about 18 percent to one quarter over those three years. Falling battery costs and wider model choice helped this expansion, but policy and affordability still matter. In China, many battery-electric models are cheaper than comparable conventional cars, whereas purchase-price gaps remain in some other major markets. Charging access is also uneven, especially for apartment residents, rural drivers and people unable to install a private charger. Supply chains for lithium, graphite, nickel and other materials create environmental, labour and geopolitical questions that sales totals alone cannot answer.
 
-Electrification, however, is not sufficient by itself. An electric vehicle charged from a coal-powered electricity grid may have a larger lifecycle carbon footprint than a fuel-efficient petrol car; the benefit depends heavily on the carbon intensity of the electricity supply. Furthermore, manufacturing an EV produces significantly more carbon than producing an equivalent conventional vehicle, primarily due to battery production: this "carbon debt" is typically paid off over two to three years of driving, depending on the electricity source. And electrification addresses only tailpipe emissions; it does not reduce congestion, land use devoted to roads and parking, or the safety and equity issues associated with car-dominated urban design.
+Electrification, however, is not sufficient by itself. Lifecycle assessment includes mineral processing, vehicle and battery manufacture, fuel or electricity production, use and disposal. On a global-average basis, the IEA estimates that a medium-sized battery-electric car sold in 2023 produces about half the lifetime emissions of a comparable internal-combustion car over 15 years. The result is not identical everywhere: vehicle size, distance driven and the carbon intensity of electricity affect the comparison. Battery production generally gives an electric car higher manufacturing emissions, but a universal two- or three-year "payback" cannot be stated without assumptions. Moreover, electrification removes tailpipe exhaust, not congestion, tyre wear, road danger or the land devoted to driving and parking.
 
-Modal shift—moving journeys from high-emission to low-emission modes—is equally important, particularly in urban areas. Rail, cycling, and walking produce dramatically lower emissions per passenger-kilometre than private car travel. Cities that have invested heavily in public transport—Tokyo, Vienna, Zurich, Singapore—achieve high modal shares for these alternatives and have significantly lower transport emissions per capita than car-dependent cities. The design of urban environments matters profoundly: cities built at human scale, with mixed uses and dense networks of destinations, generate less travel demand and facilitate active modes far more effectively than sprawling, single-use developments.
+Modal shift means moving suitable journeys from private cars or aircraft to public transport, walking or cycling. Its impact depends on occupancy, energy supply and whether new journeys replace old ones, yet active travel and well-used rail usually require far less energy per passenger than a private car. Urban form affects whether those choices are practical. Mixed-use neighbourhoods with connected streets and nearby services tend to generate lower travel demand and make active modes easier than dispersed, single-use development. Frequency, reliability, safe routes and affordable fares matter at least as much as announcing a new vehicle technology.
 
-Autonomous vehicles (AVs)—cars capable of navigating without a human driver—have been the subject of intense enthusiasm and investment since the early 2010s, but the technology has proved far more difficult to deploy at scale than early proponents anticipated. Several companies that led the field, including some well-capitalised startups, have abandoned or significantly curtailed their AV programmes. As of 2024, limited robotaxi services operate in a small number of cities, primarily in controlled urban environments with favourable road conditions. The full autonomy envisioned—vehicles capable of navigating any environment in any conditions without human intervention—remains substantially further away than was predicted a decade ago.
+Autonomous vehicles have attracted intense investment since the early 2010s, but the phrase covers different capabilities. Driver-assistance features still require supervision, while limited driverless services operate inside mapped areas under specified conditions. By 2026, robotaxis had expanded beyond early pilots, yet they still served selected, controlled urban environments rather than every road and weather condition. This distinction matters: success inside an operational boundary does not prove universal autonomy. Policy must also consider responsibility after a collision, accessibility, cybersecurity and whether empty vehicles add traffic while travelling to their next passenger.
 
-The future of transport will also be shaped by the physical infrastructure of movement: roads, railways, ports, and airports built over decades or centuries at enormous cost and difficult to replace or repurpose quickly. Infrastructure decisions made today will constrain and enable transport choices for generations. The high-speed rail networks being expanded or planned across Europe, Asia, and—more tentatively—North America and South America, offer the potential to replace short-haul flights with a significantly lower-emission mode. Aviation itself remains one of the most technically challenging sectors to decarbonise: sustainable aviation fuels (SAF), hydrogen propulsion, and hybrid-electric aircraft are all under development, but none is yet available at scale or cost-competitive with conventional jet fuel.
+Physical infrastructure changes slowly. Roads, railways, ports and airports are expensive, long-lived systems, so decisions made today will constrain and enable transport choices for generations. High-speed rail can replace some short-haul flights where demand, geography and connections support it, but the passage does not claim that it has replaced a majority of them. Aviation remains difficult to decarbonise. Sustainable aviation fuel can work in existing aircraft when certified, but global supply is still small and generally more costly than conventional jet fuel. Hydrogen and battery-electric aircraft face questions of storage, weight, infrastructure and range. Each option therefore has a possible role rather than a guaranteed timetable.
 
-The equity dimension of transport transitions is frequently overlooked in discussions focused on technology. The benefits of EVs and new mobility services have disproportionately accrued to higher-income households with access to private vehicles, home charging, and urban areas with good public transport. Lower-income workers in car-dependent suburbs, rural areas, and developing countries face a transition that may remove access to affordable personal mobility before adequate alternatives are in place. Ensuring that the transition to sustainable transport improves rather than worsens mobility equity is one of the defining challenges for transport policy in the coming decades.`,
+The equity dimension is frequently overlooked in technology-led accounts. Early benefits from electric cars and app-based services often accrue to households able to buy a newer vehicle, charge at home or live in a well-served area. Meanwhile, a low-income worker on an early shift may depend on an older car because no bus runs at that hour. A fair transition cannot simply make one technology expensive before a usable alternative exists. Distributional tests should ask who receives subsidies, who bears road pricing, whether disabled travellers can use a service and how rural access will be protected. Improving mobility equity—people's practical ability to reach work, education, health care and social life—is therefore a defining policy challenge, not an optional benefit. Useful evaluation must combine averages with distribution: travel time, household cost, reliability, injury risk and access can improve for one group while worsening for another. Publishing those differences makes trade-offs visible and gives residents evidence with which to challenge a technically impressive but socially weak plan.`,
       questions: [
         {
           type: 'mcq',
           id: 'r3-q27',
           part: 7,
-          text: 'According to the passage, what is the main reason why electric vehicle sales have grown so rapidly?',
+          text: 'Which factor does the passage identify as helping electric-car sales to expand?',
           options: [
-            'Government subsidies have made EVs significantly cheaper than conventional vehicles everywhere.',
-            'The dramatic fall in the cost of lithium-ion batteries over the past decade.',
+            'Government subsidies have made EVs cheaper than conventional vehicles in every market.',
+            'Falling battery costs alongside a wider choice of models.',
             'The superior performance and range of electric vehicles compared to petrol cars.',
             'International agreements requiring car manufacturers to phase out combustion engines.',
           ],
@@ -524,10 +596,10 @@ The equity dimension of transport transitions is frequently overlooked in discus
           type: 'mcq',
           id: 'r3-q28',
           part: 7,
-          text: 'What does the passage say about the "carbon debt" of manufacturing electric vehicles?',
+          text: 'What does the passage say about lifecycle emissions from electric vehicles?',
           options: [
-            'It is negligible compared to the lifetime savings from zero tailpipe emissions.',
-            'EV manufacturing produces more carbon than conventional vehicle manufacturing, mainly because of battery production.',
+            'Manufacturing emissions can be ignored because electric cars have no exhaust.',
+            'Battery production raises manufacturing emissions, but the full comparison depends on several assumptions.',
             'The carbon debt of EV manufacturing is higher in countries with renewable electricity grids.',
             'The carbon debt means that EVs never achieve a lower carbon footprint than petrol cars.',
           ],
@@ -539,7 +611,7 @@ The equity dimension of transport transitions is frequently overlooked in discus
           part: 7,
           text: 'What does the passage suggest about autonomous vehicles?',
           options: [
-            'They have been successfully deployed at scale in most major cities by 2024.',
+            'They operate without geographic or weather restrictions in most major cities by 2026.',
             'They have proved much more difficult to deploy than early optimists predicted.',
             'Most investment in AVs has come from public transport authorities rather than private companies.',
             'They are expected to be widely available within the next two to three years.',
@@ -604,8 +676,8 @@ The equity dimension of transport transitions is frequently overlooked in discus
           part: 8,
           taskNumber: 1,
           imageUrl: '/assets/ielts/charts/set20-task1.svg',
-          imageAlt: 'Bar chart showing annual public transport journeys per capita in five selected cities in 2023',
-          stimulus: 'The bar chart below shows the annual number of public transport journeys per capita in five selected cities in 2023.',
+          imageAlt: 'Two bar charts comparing global electric-car sales in millions and their share of new-car sales in 2023, 2024 and 2025. Sales were approximately 14 million, more than 17 million and 21 million; shares were approximately 18%, more than 20% and 25%, respectively.',
+          stimulus: 'The two bar charts below compare global electric-car sales and their share of all new-car sales in 2023, 2024 and 2025.',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
@@ -623,8 +695,8 @@ The equity dimension of transport transitions is frequently overlooked in discus
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'Private car use contributes significantly to air pollution, traffic congestion, and greenhouse gas emissions in cities around the world.',
-          text: 'What measures should governments and city authorities take to reduce reliance on private cars and encourage the use of more sustainable transport? Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
+          stimulus: 'Many city governments want to reduce traffic congestion, air pollution and greenhouse-gas emissions linked to private cars. One approach is to discourage driving directly through congestion charges, fewer parking spaces or restrictions in busy districts. Supporters say that road space is limited and that people will not change their habits while driving remains the easiest option. Critics argue that restrictions can be unfair to disabled people, rural commuters and shift workers who do not yet have a practical alternative. They believe public authorities should first invest in frequent public transport, safe walking and cycling routes, and better connections between suburbs and employment areas. The debate is therefore not only about technology or the environment; it is also about the timing of change, access to essential journeys and how costs are shared across different groups.',
+          text: 'Some people believe cities should restrict private-car use directly, while others believe they should improve alternatives without restricting drivers. Discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
           minWords: 250,
         },
       ],
@@ -645,8 +717,12 @@ The equity dimension of transport transitions is frequently overlooked in discus
           followUp: [
             'How do you usually travel to work or study?',
             'Do you drive a car, or do you prefer public transport? Why?',
-            'Have you ever used an electric vehicle or bicycle as a regular form of transport?',
+            'How long does your usual journey take?',
+            'Is there a type of transport you dislike using? Why?',
+            'Did you travel differently when you were a child?',
+            'Have you ever used a bicycle as a regular form of transport?',
             'What do you think could be improved about public transport in your city or town?',
+            'Do you think the way you travel will change in the future?',
           ],
         },
         {
@@ -664,10 +740,12 @@ The equity dimension of transport transitions is frequently overlooked in discus
           partNumber: 3,
           text: 'Part 3 — Discussion: Health, environment, and the future of cities',
           followUp: [
-            'Do you think people in your country take enough care of their health? What influences their choices?',
-            'Should governments have the right to restrict individual behaviour in order to protect public health?',
-            'How important is access to green space and nature for people living in cities?',
-            'What do you think cities will look like in fifty years\' time? Will they be better or worse places to live?',
+            'Why do some public-health problems receive more attention than others?',
+            'How should governments decide whether prevention or treatment deserves more funding?',
+            'To what extent should authorities restrict individual behaviour to protect public health?',
+            'Why can health information change behaviour in some groups but not in others?',
+            'How does the design of a city influence residents\' physical and mental health?',
+            'Who should be responsible for reducing health inequalities in a community?',
           ],
         },
       ],

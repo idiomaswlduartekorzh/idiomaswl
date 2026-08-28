@@ -149,6 +149,13 @@ export const IELTS_EDITORIAL_STATUS_2026: Readonly<Record<number, IeltsEditorial
       provenance: 'audited-original-welearn',
       evidence: 'Reused shells were rebuilt and fact-checked; Golden content audit passed 251 checks on 2026-08-28. Final audio remains blocked until generation and QA.',
     }];
+    if (set === 20) return [set, {
+      set,
+      certification: 'certified-golden-content',
+      contentCertified: true,
+      provenance: 'audited-original-welearn',
+      evidence: 'Reused shells were rebuilt and fact-checked; Golden content audit passed 245 checks on 2026-08-28. Final audio remains blocked until generation and QA.',
+    }];
     return [set, {
       set,
       certification: 'pending-golden-audit',

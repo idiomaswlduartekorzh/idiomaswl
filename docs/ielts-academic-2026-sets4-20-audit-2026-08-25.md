@@ -209,6 +209,13 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   de Venecia. La gráfica usa seis releases Q4 del U.S. Census, pasó QA visual y accesible;
   el Task 2 sobre impacto social del comercio electrónico es original. Sólo queda diferido
   su audio.
+- El Set 20 superó 245 controles Golden. Listening conserva sus cuatro escenarios y
+  sustituye relleno genérico por reglas de reserva, accesibilidad del museo, ética de
+  investigación y análisis de la cadena del cacao. Reading corrige los denominadores de
+  mortalidad por AMR, la lista WHO 2024, causalidad en jardines urbanos y datos IEA 2026
+  sobre vehículos eléctricos. La gráfica usa la serie IEA 2023–2025, pasó QA accesible;
+  el Task 2 sobre restricciones al automóvil y alternativas equitativas es original. Sólo
+  queda diferido su audio.
 
 ## Auditoría final no-audio
 
@@ -240,7 +247,7 @@ eliminar la antigua deriva en la navegación compartida.
    kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
 4. Contrastar los 15 audios restantes transcript↔Whisper, revisar muestras humanas y registrar
    tamaño, hash, duración, loudness, pico y silencios. El plan actualizado proyecta
-   241.654 caracteres, 120.827 créditos y USD 12,0827 antes de impuestos y reintentos;
+   243.231 caracteres, 121.616 créditos y USD 12,1616 antes de impuestos y reintentos;
    no es una autorización.
 5. Convertir el plan en manifiesto inmutable de release y la auditoría en guardián de `prebuild`
    sólo cuando todos los bloqueos estén cerrados.

@@ -19,7 +19,7 @@ WeLearn ofrece simulacros originales alineados funcional y editorialmente con el
 
 Los siguientes no se presentan como reglas oficiales: audio integral de 27–33 minutos, al menos 2.200 palabras de transcript, auditoría ASR, ausencia de silencios o clipping, evidencia antes de cada respuesta, control de longitud de distractores, claves sólo en servidor, procedencia editorial verificada, consentimiento de grabación, acceso mínimo a revisiones y estado incompleto nunca mostrado como cero.
 
-Ningún audio nuevo se genera antes de congelar el script y sus respuestas. El Set 4 es la referencia publicada. Los Sets 1, 2, 3 y 5–19 ya superaron sus auditorías Golden de contenido; sus audios siguen diferidos hasta completar casting, generación, mastering y QA. Los demás sets sólo pasan a Golden después de las auditorías estructural, editorial, de evidencia, UI/UX/accesibilidad, resultados, privacidad y regresión visual.
+Ningún audio nuevo se genera antes de congelar el script y sus respuestas. El Set 4 es la referencia publicada. Los Sets 1, 2, 3 y 5–20 ya superaron sus auditorías Golden de contenido; sus audios siguen diferidos hasta completar casting, generación, mastering y QA. La certificación Golden exige las auditorías estructural, editorial, de evidencia, UI/UX/accesibilidad, resultados, privacidad y regresión visual.
 
 ## Fuentes normativas
 
