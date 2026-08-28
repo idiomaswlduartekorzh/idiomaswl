@@ -5,6 +5,7 @@ import set1 from '../src/data/mocks/ielts-set-1.ts';
 import set3 from '../src/data/mocks/ielts-set-3.ts';
 import set4 from '../src/data/mocks/ielts-set-4.ts';
 import set5 from '../src/data/mocks/ielts-set-5.ts';
+import set6 from '../src/data/mocks/ielts-set-6.ts';
 import set13 from '../src/data/mocks/ielts-set-13.ts';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
 import { toPublicIeltsMock } from '../src/data/mocks/ielts-public-payload.ts';
@@ -86,7 +87,9 @@ test('all 20 sets have an explicit editorial certification state', () => {
   assert.equal(IELTS_EDITORIAL_STATUS_2026[3].provenance, 'audited-original-welearn');
   assert.equal(IELTS_EDITORIAL_STATUS_2026[4].contentCertified, true);
   assert.equal(IELTS_EDITORIAL_STATUS_2026[5].certification, 'certified-golden-content');
-  for (let setNumber = 6; setNumber <= 20; setNumber += 1) {
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[6].certification, 'certified-golden-content');
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[6].provenance, 'audited-original-welearn');
+  for (let setNumber = 7; setNumber <= 20; setNumber += 1) {
     assert.equal(IELTS_EDITORIAL_STATUS_2026[setNumber].certification, 'pending-golden-audit');
   }
 });
@@ -119,6 +122,8 @@ test('only owner-accepted Listening media is marked ready', () => {
   assert.equal(acceptedPilot.ieltsAcademic2026Blueprint.listeningMediaStatus, 'ready-existing');
   assert.ok(acceptedPilot.sections.filter(section => section.skill === 'listening').every(section => section.mediaStatus === 'ready-existing'));
   assert.equal(legacyAudio.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');
+  const nextLegacyAudio = withIeltsAcademic2026Blueprint(set6);
+  assert.equal(nextLegacyAudio.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');
 });
 
 test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 words', async () => {

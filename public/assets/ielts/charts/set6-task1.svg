@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif" role="img" aria-labelledby="title desc">
+  <title id="title">Home internet access in five Bellmere districts, 2000 to 2022</title>
+  <desc id="desc">A line graph showing rising household internet access in the Central, North, Riverside, East and South districts. Central remains highest and South remains lowest throughout.</desc>
   <rect width="680" height="400" fill="#fafafa" rx="8"/>
-  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Internet Usage by World Region (% of population) — 2000–2022</text>
-  <text x="18" y="210" text-anchor="middle" font-size="11" fill="#666" transform="rotate(-90,18,210)">% population</text>
+  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Bellmere households with home internet access, 2000–2022</text>
+  <text x="18" y="210" text-anchor="middle" font-size="11" fill="#666" transform="rotate(-90,18,210)">% of households</text>
 
   <!-- Grid + axes -->
   <line x1="70" y1="50" x2="70" y2="320" stroke="#ccc" stroke-width="1"/>
@@ -29,30 +31,30 @@
   <text x="536" y="337" text-anchor="middle" font-size="10" fill="#666">2020</text>
   <text x="610" y="337" text-anchor="middle" font-size="10" fill="#666">2022</text>
 
-  <!-- North America: 2000=44%, 2004=62%, 2008=73%, 2012=80%, 2016=87%, 2020=92%, 2022=94% -->
+  <!-- Central district -->
   <polyline points="70,206 163,196 256,172 350,154 443,132 536,116 610,111" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
 
-  <!-- Europe: 2000=23%, 2004=38%, 2008=54%, 2012=68%, 2016=78%, 2020=87%, 2022=90% -->
+  <!-- North district -->
   <polyline points="70,258 163,224 256,196 350,184 443,164 536,132 610,122" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linejoin="round"/>
 
-  <!-- Latin America: 2000=3%, 2004=11%, 2008=24%, 2012=40%, 2016=54%, 2020=68%, 2022=74% -->
+  <!-- Riverside district -->
   <polyline points="70,314 163,291 256,264 350,214 443,188 536,168 610,158" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round"/>
 
-  <!-- Asia-Pacific: 2000=2%, 2004=7%, 2008=16%, 2012=29%, 2016=43%, 2020=60%, 2022=67% -->
+  <!-- East district -->
   <polyline points="70,319 163,302 256,278 350,244 443,210 536,186 610,176" fill="none" stroke="#c8202e" stroke-width="2.5" stroke-linejoin="round"/>
 
-  <!-- Africa: 2000=0.5%, 2004=2%, 2008=5%, 2012=11%, 2016=20%, 2020=33%, 2022=40% -->
+  <!-- South district -->
   <polyline points="70,321 163,319 256,308 350,290 443,258 536,236 610,214" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linejoin="round"/>
 
   <!-- Legend -->
   <line x1="82" y1="362" x2="100" y2="362" stroke="#2563eb" stroke-width="2.5"/>
-  <text x="104" y="366" font-size="11" fill="#333">North America</text>
+  <text x="104" y="366" font-size="11" fill="#333">Central</text>
   <line x1="200" y1="362" x2="218" y2="362" stroke="#16a34a" stroke-width="2.5"/>
-  <text x="222" y="366" font-size="11" fill="#333">Europe</text>
+  <text x="222" y="366" font-size="11" fill="#333">North</text>
   <line x1="280" y1="362" x2="298" y2="362" stroke="#d97706" stroke-width="2.5"/>
-  <text x="302" y="366" font-size="11" fill="#333">Latin America</text>
+  <text x="302" y="366" font-size="11" fill="#333">Riverside</text>
   <line x1="398" y1="362" x2="416" y2="362" stroke="#c8202e" stroke-width="2.5"/>
-  <text x="420" y="366" font-size="11" fill="#333">Asia-Pacific</text>
+  <text x="420" y="366" font-size="11" fill="#333">East</text>
   <line x1="507" y1="362" x2="525" y2="362" stroke="#7c3aed" stroke-width="2.5"/>
-  <text x="529" y="366" font-size="11" fill="#333">Africa</text>
+  <text x="529" y="366" font-size="11" fill="#333">South</text>
 </svg>

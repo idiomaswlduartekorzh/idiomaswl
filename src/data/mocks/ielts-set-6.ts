@@ -51,9 +51,21 @@ AGENT: Sensible. And don't worry about breakdowns: a repair kit is included free
 
 CUSTOMER: That's reassuring. Where do I bring the bike back?
 
+AGENT: Before we get to returns, let me check the frame size. How tall are you?
+
+CUSTOMER: About one metre eighty.
+
+AGENT: Then a large frame should be comfortable. We can adjust the saddle when you collect it. A lock is attached to every bicycle, but a front basket costs extra.
+
+CUSTOMER: I won't need a basket. Can I collect the bike this evening?
+
+AGENT: Yes. Please bring photo identification. We close at half past six, so arrive by six to leave enough time for the safety check.
+
 AGENT: We have two branches, but hired bikes must be returned to the central branch, near the market square.
 
 CUSTOMER: Central branch, noted. Could you run through the prices?
+
+AGENT: Certainly. The hourly price is useful for a short ride, whereas the daily rate covers any period up to closing time. If the bicycle comes back late, another day is charged. The deposit is only held on your card and released after we inspect the bike.
 
 AGENT: Certainly. A mountain bike is five pounds an hour, or eighteen pounds for a full day. The deposit on that one is thirty pounds, and it comes with lights fitted.
 
@@ -63,7 +75,15 @@ AGENT: An electric bike is nine pounds an hour, or thirty-five pounds a day, wit
 
 CUSTOMER: Perfect. I'll take the mountain bike for three days.
 
-AGENT: Wonderful, let me sort that out for you.`,
+AGENT: Wonderful. Your booking starts at five this afternoon and ends at five on Thursday. The basic price covers ordinary mechanical faults, but not damage caused by leaving the bicycle unlocked. If anything goes wrong on a trail, call the assistance number printed on the key tag rather than attempting a major repair yourself.
+
+CUSTOMER: Understood. Is there a suggested route for someone who knows the city centre but not the countryside?
+
+AGENT: The canal path is easy and well signposted. The woodland loop is rougher and can become muddy after rain, which is another reason your chosen bike is suitable. We give every customer a paper map, and the same routes are available on our website.
+
+CUSTOMER: Great. I'll bring my identification and see you before six.
+
+AGENT: Excellent. I'll prepare the large frame for you.`,
       questions: [
         {
           type: 'formgroup',
@@ -127,13 +147,23 @@ AGENT: Wonderful, let me sort that out for you.`,
 
 Let me begin with what's actually new here, because there's been some confusion. The swimming pool, although it looks brand new, was in fact refurbished from the old centre, and the café has simply been expanded. The sports hall is the same one many of you will remember. What is genuinely new are two things we're very proud of: a full climbing wall, the tallest in the region, and a Finnish-style sauna next to the changing rooms. Those two are completely new additions.
 
+The entrance level has also been reorganised. Reception is directly ahead, with step-free access from the car park and a lowered section of desk for wheelchair users. The lift serves both floors, and signs use the same colours as the printed plan. These are improvements to the building rather than separate sports facilities, but they should make a first visit much easier.
+
 Now, some useful information. On weekdays the centre opens at seven in the morning, which is early enough for a swim before work. Do note that it closes early on Sundays, at four rather than the usual ten, so plan your weekend visits accordingly.
+
+The centre opens at eight on Saturdays. The pool timetable varies because lanes are reserved for lessons at certain times, so check before travelling if you want uninterrupted lane swimming. Last entry is forty-five minutes before closing, and staff begin clearing activity areas fifteen minutes later.
 
 Let's talk membership. A standard membership costs forty pounds per month, which gives you unlimited access to all the facilities. As a welcome offer, every new member also gets a free session with a personal trainer to set up a fitness plan.
 
+That introductory appointment is optional, but it is useful if you have not exercised recently. The trainer will ask about injuries and demonstrate how to adjust the equipment. Members can then book further appointments at the normal rate. Day passes are available for visitors who do not want a monthly contract.
+
 A few notes on the facilities themselves. The pool has a special shallow area for toddlers, so it's ideal for families with young children. One small practical point: the lockers require a pound coin, which you get back at the end, so do keep one handy.
 
+Family changing rooms are beside the pool entrance, and accessible changing spaces have larger benches and emergency cords. Please do not leave valuables in an unlocked cubicle; reception can hold a small item if necessary.
+
 Finally, our timetable of classes is packed. We offer everything from spinning to boxing, but by far the most popular class is yoga — the morning sessions fill up within minutes, so do get here early if you'd like a space on the floor. To secure a place, all booking is done through the centre's website, so please create an account before you leave today.
+
+Bookings open seven days ahead and can be cancelled without charge up to two hours before a class. If a session is full, join the waiting list: the system will send a message if another member cancels.
 
 Right, if you'd like to follow me, we'll start with the climbing wall. Please stay together as we go.`,
       questions: [
@@ -181,13 +211,13 @@ Classes
 • All booking is done through the centre's {{20}}.`,
           blanks: [
             { num: 13, answers: ['seven', '7'], maxWords: 1 },
-            { num: 14, answers: ['Sundays', 'Sunday'], maxWords: 1 },
+            { num: 14, answers: ['Sundays'], maxWords: 1 },
             { num: 15, answers: ['40', '£40', 'forty'], maxWords: 1 },
             { num: 16, answers: ['session'], maxWords: 1 },
             { num: 17, answers: ['toddlers', 'children'], maxWords: 1 },
             { num: 18, answers: ['pound', '£1', '1'], maxWords: 1 },
             { num: 19, answers: ['yoga'], maxWords: 1 },
-            { num: 20, answers: ['website', 'app'], maxWords: 1 },
+            { num: 20, answers: ['website'], maxWords: 1 },
           ],
         },
       ],
@@ -219,7 +249,31 @@ TUTOR: Yes, thirty is too few. Try sharing it more widely this time. And how are
 
 SOPHIE: We thought about making a short video, but we've settled on a set of slides — it feels more professional for this kind of report.
 
-TUTOR: Slides work well. Right, a few final reminders before you submit. Add a clear label to each chart, otherwise the reader gets lost. Make sure you reference all sources correctly, including websites. Keep the tone formal throughout — no slang. Proofread carefully for spelling, because errors cost marks. And when you're done, upload the file as a PDF, not a Word document. Do all of that, and you'll be in a strong position for a good mark.
+TUTOR: Slides work well, provided they support the argument rather than become the argument. How many are you planning?
+
+MARK: Twelve, including the opening and references.
+
+TUTOR: That sounds manageable. Put the research question near the beginning, then explain your method before showing results. The audience should understand who answered the survey and why those respondents are relevant. Do not place a paragraph of prose on every slide.
+
+SOPHIE: We have three charts for the sales figures and two for the survey. Is that too many?
+
+TUTOR: Not if each earns its place. Compare the campaign period with a sensible earlier period, and distinguish a change in sales from proof that the campaign caused it. Competitor prices and seasonal demand could also have contributed.
+
+MARK: So the conclusion needs to acknowledge those limitations?
+
+TUTOR: Exactly. A cautious conclusion is stronger than a dramatic claim the evidence cannot support. Now, let's turn that into a submission checklist. First, add a clear label to each chart, otherwise the reader gets lost.
+
+SOPHIE: A label that states the measure and time period, not just “Chart One”.
+
+TUTOR: Correct. Next, reference all sources accurately, including websites and the company's published dataset.
+
+MARK: We have used one citation style consistently.
+
+TUTOR: Good. Keep the tone formal throughout — no slang or advertising language. Then proofread carefully for spelling. Reading aloud can catch errors that a spellchecker misses.
+
+SOPHIE: Should we submit the spreadsheet as well?
+
+TUTOR: Keep it in case I ask to see your calculations, but upload the report itself as a PDF, not a Word document. Open the exported file once before submission to check that charts, page numbers and references have not moved. Do all of that, and you'll be in a strong position for a good mark.
 
 MARK: Got it. Thanks very much.`,
       questions: [
@@ -295,8 +349,8 @@ MARK: Got it. Thanks very much.`,
 • Proofread carefully for {{29}}.
 • Upload the file as a {{30}}.`,
           blanks: [
-            { num: 26, answers: ['label', 'title'], maxWords: 1 },
-            { num: 27, answers: ['sources', 'source'], maxWords: 1 },
+            { num: 26, answers: ['label'], maxWords: 1 },
+            { num: 27, answers: ['sources'], maxWords: 1 },
             { num: 28, answers: ['formal'], maxWords: 1 },
             { num: 29, answers: ['spelling'], maxWords: 1 },
             { num: 30, answers: ['PDF'], maxWords: 1 },
@@ -313,15 +367,19 @@ MARK: Got it. Thanks very much.`,
       instructions: 'You will hear a lecture about the history of tea. Listen and answer Questions 31–40.',
       transcript: `Good morning. Today's lecture traces the long and fascinating history of tea, a drink now enjoyed by billions of people every day.
 
-Let's begin at the very start. Tea was first drunk in China thousands of years ago, and Chinese legend credits its discovery to an emperor whose boiling water was flavoured by falling leaves. Interestingly, tea was not originally a social drink at all — it was taken as a medicine, valued for keeping people alert and aiding digestion. In those early days, the drink was made simply from dried leaves steeped in hot water, much as it is today.
+Let's begin at the very start. Tea was first drunk in China thousands of years ago. Chinese legend credits its discovery to an emperor whose boiling water was flavoured by falling leaves, but a legend is not a dated historical record. Early written references show tea being valued for practical effects before it became an everyday social drink: it was taken as a medicine and associated with alertness and digestion. Preparation varied by period and region, but dried leaves remained the essential ingredient.
 
-From China, tea gradually spread across Asia. It was carried to Japan by monks, who had studied in Chinese monasteries and brought the custom home with them. There, tea became far more than a beverage: an elaborate and highly formal tea ceremony developed, with strict rules governing every movement.
+From China, tea gradually spread across Asia. It was carried to Japan by monks, who had studied in Chinese monasteries and brought the custom home with them. Tea could help them remain awake during meditation. Over centuries, elite practice, religious influence and local aesthetics shaped several traditions. The formal tea ceremony often mentioned in introductions to Japanese culture was therefore not created in a single moment; it developed through changing schools and conventions governing utensils, space and movement.
 
-Now, how did tea reach the West? It was first shipped to Europe by Portuguese traders in the sixteenth century, though the Dutch and later the British soon dominated the trade. Tea quickly became fashionable, but it was expensive, and for many years Europeans paid for their tea with silver, which drained their treasuries and caused serious tension with China.
+Now, how did tea reach the West? Portuguese traders and missionaries encountered it in Asia, and Portuguese trading networks were among the first to ship tea to Europe in the sixteenth century. Dutch merchants then developed regular commercial imports, while the British became major consumers and traders later. Tea was initially expensive. European buyers sent large quantities of silver to China because Chinese sellers had limited interest in European manufactured goods, creating a trade imbalance that governments and merchants tried to alter.
 
-This brings us to mass production. To reduce their dependence on China, the British set up enormous plantations in India, particularly in the region of Assam. This made tea far cheaper and turned it into an everyday drink. However, we should not romanticise this period — conditions were often extremely hard for the workers, who laboured long hours for very little pay.
+This brings us to colonial mass production. British commercial and imperial institutions expanded plantations in India, particularly in Assam, and later in other territories. Larger supplies and new transport networks helped lower retail prices and made tea an everyday drink for more consumers. However, we should not romanticise this period. Land, labour and trade were governed through unequal colonial systems, and conditions were often extremely hard for plantation workers, whose pay, housing and freedom to leave could all be restricted.
 
-Finally, a word about convenience. For centuries tea was brewed loose in a pot, but in the early nineteen-hundreds the tea bag was invented, apparently by accident, when a merchant sent out samples in small silk pouches. This simple innovation made tea quicker and cleaner to prepare, and it transformed how the world drinks tea.
+Finally, a word about convenience. For centuries tea was brewed loose in a pot. Patents for small holders and infusers appeared before disposable bags became common, and the popular story that customers accidentally dipped a merchant's silk sample pouches is difficult to verify. What is clear is that the tea bag spread during the twentieth century as materials and packing machinery improved. It made a single cup quicker and cleaner to prepare, although loose tea continued to dominate in many markets.
+
+This history is not a straight line from an ancient discovery to a modern product. Tea changed as it moved: cultivation, taxation, empire, advertising and domestic routines all affected who drank it and how. When evaluating a neat origin story, historians compare it with objects, commercial records and dated texts rather than treating repetition as proof.
+
+The same caution applies to the word “first”. A community may know a plant before it leaves a surviving written record, while an invention can have separate stages of cultivation, processing and commercial distribution. For the exam notes, remember the documented sequence, but for historical analysis remember the uncertainty behind it and the limits of each surviving source.
 
 Next week, we'll look at the science of how tea affects the body. Thank you.`,
       questions: [
@@ -356,13 +414,13 @@ Mass production
           blanks: [
             { num: 31, answers: ['China'], maxWords: 1 },
             { num: 32, answers: ['medicine'], maxWords: 1 },
-            { num: 33, answers: ['leaves', 'leaf'], maxWords: 1 },
-            { num: 34, answers: ['monks', 'monk'], maxWords: 1 },
+            { num: 33, answers: ['leaves'], maxWords: 1 },
+            { num: 34, answers: ['monks'], maxWords: 1 },
             { num: 35, answers: ['ceremony'], maxWords: 1 },
             { num: 36, answers: ['Portuguese'], maxWords: 1 },
             { num: 37, answers: ['silver'], maxWords: 1 },
             { num: 38, answers: ['plantations', 'plantation'], maxWords: 1 },
-            { num: 39, answers: ['workers', 'worker'], maxWords: 1 },
+            { num: 39, answers: ['workers'], maxWords: 1 },
             { num: 40, answers: ['bag', 'bags'], maxWords: 1 },
           ],
         },
@@ -378,17 +436,19 @@ Mass production
       instructions: 'Read the passage and answer Questions 1–13.',
       passage: `The History of Paper
 
-Paper is so fundamental to modern civilisation that it is easy to forget how relatively recent its invention is and how dramatically it transformed the world. Before paper, civilisations stored and transmitted knowledge on materials that were expensive, heavy, and difficult to produce: clay tablets in Mesopotamia, papyrus along the Nile, and silk or bamboo strips in ancient China. Each of these materials limited the spread of literacy and knowledge to small elites.
+Paper is so familiar that its history is often reduced to a single inventor and date. Before it became widespread, societies stored information on materials with different strengths and costs: clay tablets in Mesopotamia, papyrus along the Nile, parchment around the Mediterranean, and silk or bamboo strips in ancient China. None prevented complex administration or literature, but weight, preparation and price affected what could be copied, transported and preserved.
 
-The invention of paper is attributed to Cai Lun, a court official in the Han Dynasty of China, around 105 CE. Cai Lun developed a technique for creating sheets from macerated plant fibres—including bark, hemp, rags, and fishing nets—suspended in water, drained through a mesh screen, and dried. This process produced a material that was lighter, cheaper, and more versatile than any existing writing surface. Although archaeological evidence suggests that earlier, cruder forms of paper existed in China before Cai Lun, his refinement of the technique is credited with making paper practical for widespread use.
+A Chinese historical record reports that in 105 CE Cai Lun, an official at the Han court, presented an improved method using materials such as bark, hemp, rags and old fishing nets. The fibres were separated in water, collected as a thin layer on a screen, pressed and dried. Older fragments found by archaeologists mean that Cai Lun cannot safely be called paper's sole inventor. His importance lies instead in the recorded refinement and promotion of a process that produced a light, flexible writing surface.
 
-For several centuries, the Chinese guarded the papermaking process with great secrecy, recognising its strategic and commercial value. However, following the Battle of Talas in 751 CE—a conflict between the Tang Dynasty and the Abbasid Caliphate—Chinese prisoners of war reportedly shared papermaking knowledge with their captors. The Abbasid court at Baghdad quickly established paper mills, and the technology spread westward with remarkable speed. By the tenth century, Egypt had largely abandoned papyrus in favour of paper; by the twelfth century, the craft had reached Europe through Islamic Spain.
+Defining paper matters to that debate. A sheet formed when dispersed fibres settle and bond is structurally different from strips woven together, a skin scraped into parchment or papyrus made by pressing layers of plant stem. Ancient fragments can be tiny, contaminated or difficult to date in direct association with their archaeological context. Historians therefore combine fibre analysis, excavation records and written accounts. A new find may change the earliest secure date without proving who first understood the full process or how quickly a technique spread beyond one workshop.
 
-In Europe, paper initially coexisted with parchment—made from animal skin—which remained preferred for important documents because of its durability. The pivotal moment came with Johannes Gutenberg's invention of the movable-type printing press around 1440. The printing press demanded paper in quantities that parchment could never supply, and the two technologies together created a self-reinforcing revolution. Books that had previously taken months to copy by hand could now be produced in days. The cost of books dropped dramatically, literacy rates climbed, and the rapid dissemination of ideas enabled by cheap printing has been credited with accelerating the Protestant Reformation, the Scientific Revolution, and the Enlightenment.
+Papermaking travelled through East and Central Asia over centuries. A famous later account says that Chinese prisoners captured after the Battle of Talas in 751 taught the craft to their captors. Historians treat this as a story rather than a demonstrated moment of transfer: paper was already known in Central Asia, the account was written much later, and surviving evidence does not identify captive papermakers. What can be documented is rapid expansion through Islamic lands after this period. Production was established in Baghdad by the end of the eighth century, in Egypt by the end of the ninth, and use had reached the Iberian Peninsula by the end of the tenth.
 
-Modern paper production bears little resemblance to its ancient origins. The industrial revolution introduced mechanised papermaking in the early nineteenth century, and wood pulp—derived from trees—replaced rags as the primary raw material. Today, global paper production exceeds 400 million tonnes per year, with the industry consuming approximately four billion trees annually. Environmental concerns have shaped the sector profoundly: deforestation, water pollution from pulp mills, and the energy intensity of production have all come under scrutiny. In response, many manufacturers have adopted closed-loop water recycling systems, sourced timber from certified sustainable forests, and expanded the use of recycled fibre, which now accounts for more than half of paper production in developed countries.
+In Europe, paper initially coexisted with parchment—made from animal skin—which remained preferred for some important documents because of its durability. Printing from carved blocks and movable type had developed earlier in East Asia. In Europe, Johannes Gutenberg's system of movable metal type, oil-based ink and a press around the mid-fifteenth century enabled repeated production on a new scale. Printers required quantities of writing material that parchment could not economically supply. Paper and printing reinforced one another: editions grew, the unit cost of books fell, and a wider circulation of texts contributed to religious, scientific and political debate. Literacy did not rise automatically, however; schooling, language and censorship still shaped access.
 
-Despite predictions that digital technology would render paper obsolete—the so-called "paperless office" of the 1970s and 1980s—global paper consumption continued to rise until the mid-2010s, when it began to plateau and then slowly decline in certain categories. Office paper use has fallen significantly, but packaging paper and cardboard have surged alongside the growth of e-commerce. Paper, it seems, remains as adaptable as ever, finding new roles even as old ones disappear.`,
+Modern paper production bears little resemblance to workshop manufacture. Mechanised machines appeared during the industrial revolution, and wood pulp gradually replaced rags as the main raw material. The sector uses substantial quantities of fibre, water and energy, so impacts depend on forest management, mill technology, transport and what happens after use. Responses include certified fibre, cleaner bleaching, closed-loop water systems and recovery of used paper. Recycling figures require care: a collection or recycling rate is not the same as the proportion of recycled fibre in every new sheet. The European paper value chain reported a 75.1 per cent recycling rate for paper and board consumed in 2024, while individual grades differed considerably.
+
+Predictions of a completely “paperless office” also confused one category with the whole material. Digital communication reduced demand for some printing and office grades, while e-commerce increased demand for packaging paper and cardboard. Tissue, books and food packaging have different technical and hygiene requirements, and recovered fibres cannot be recycled indefinitely because they shorten and deteriorate. The future of paper is therefore not a simple contest between sheets and screens. It depends on product design, reuse, fibre recovery, responsible forestry and whether paper replaces a material with a larger impact or merely adds more consumption.`,
       questions: [
         {
           type: 'formgroup',
@@ -396,12 +456,12 @@ Despite predictions that digital technology would render paper obsolete—the so
           part: 5,
           qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: Before paper, writing materials were generally expensive and difficult to make.\n2. {{2}}: Archaeological evidence confirms that Cai Lun was the sole inventor of paper.\n3. {{3}}: Chinese authorities deliberately prevented papermaking knowledge from leaving the country.\n4. {{4}}: The Battle of Talas resulted in a Chinese military victory.\n5. {{5}}: Parchment was considered more durable than paper in medieval Europe.\n6. {{6}}: The movable-type printing press reduced the cost of producing books.\n7. {{7}}: Recycled fibre now accounts for over fifty percent of paper production in developed countries.`,
+          template: `1. {{1}}: The physical properties and price of writing materials affected how information circulated.\n2. {{2}}: Archaeological evidence confirms that Cai Lun was the sole inventor of paper.\n3. {{3}}: The historical record associated with Cai Lun describes an improved production method.\n4. {{4}}: Contemporary evidence proves that prisoners captured at Talas introduced papermaking to Islamic lands.\n5. {{5}}: Parchment was considered more durable than paper for some European documents.\n6. {{6}}: European movable-type printing helped reduce the unit cost of books.\n7. {{7}}: Europe reported recycling about three quarters of the paper and board it consumed in 2024.`,
           blanks: [
             { num: 1, answers: ['TRUE'] },
             { num: 2, answers: ['FALSE'] },
             { num: 3, answers: ['TRUE'] },
-            { num: 4, answers: ['NOT GIVEN'] },
+            { num: 4, answers: ['FALSE'] },
             { num: 5, answers: ['TRUE'] },
             { num: 6, answers: ['TRUE'] },
             { num: 7, answers: ['TRUE'] },
@@ -414,10 +474,10 @@ Despite predictions that digital technology would render paper obsolete—the so
           qRange: [8, 13],
           groupLabel: 'Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
           title: 'History of Paper — Key Events',
-          template: `8. 105 CE — Cai Lun's paper: Paper made from macerated {{8}} and other materials.\n9. 751 CE — Battle of Talas: Knowledge passed to the {{9}} court at Baghdad.\n10. ~1440 — Gutenberg's press: Created demand for paper that {{10}} could not supply.\n11. 19th century: {{11}} replaced rags as the primary raw material.\n12. Modern era — Environmental response: Adoption of {{12}} recycling in mills.\n13. Mid-2010s to present: {{13}} demand surged due to e-commerce growth.`,
+          template: `8. 105 CE — Cai Lun's method: Sheets were made from separated {{8}} and other materials.\n9. After the eighth century: Papermaking expanded through {{9}} lands.\n10. Mid-15th century — European printing: Created demand for paper that {{10}} could not economically supply.\n11. Industrial era: {{11}} replaced rags as the main raw material.\n12. Modern mills: Some adopted {{12}} systems to reduce water demand.\n13. Digital era: {{13}} demand grew alongside e-commerce.`,
           blanks: [
-            { num: 8,  answers: ['plant fibres'] },
-            { num: 9,  answers: ['Abbasid', 'Abbasid Caliphate'] },
+            { num: 8,  answers: ['fibres'] },
+            { num: 9,  answers: ['Islamic'] },
             { num: 10, answers: ['parchment'] },
             { num: 11, answers: ['Wood pulp'] },
             { num: 12, answers: ['closed-loop', 'closed-loop water'] },
@@ -434,19 +494,19 @@ Despite predictions that digital technology would render paper obsolete—the so
       instructions: 'Read the passage and answer Questions 14–26.',
       passage: `Rewilding Europe
 
-A. Across the continent of Europe, a quiet revolution in conservation is under way. For much of the twentieth century, the dominant approach to protecting nature involved designating reserves, managing habitats carefully, and excluding or strictly controlling human activity. This model has produced important results, but ecologists increasingly argue that it is insufficient: it preserves fragments of damaged ecosystems rather than restoring their capacity to function. A growing movement known as rewilding proposes a more ambitious alternative—allowing, and in some cases actively promoting, the return of nature on a large scale.
+A. When a European field stops being farmed, nature does not wait for a conservation plan: scrub advances, animals move and water finds new paths. Rewilding asks how policy can give such processes more room while restoring missing ecological functions. This differs from managing every reserve towards a fixed picture of the past. Traditional protection has saved species and habitats, but isolated or intensively maintained fragments may lack the scale and connections needed for long-term adaptation. Rewilding can therefore involve passive recovery, removal of barriers or active return of a species; it is an approach, not one identical recipe.
 
-B. Rewilding is founded on the concept of trophic cascades: the idea that predators at the top of a food chain exert powerful, often indirect effects on ecosystems far below them. The most celebrated example is the reintroduction of grey wolves to Yellowstone National Park in the United States in 1995. Within a few years, wolf predation had dramatically reduced the number of elk, which had been overgrazing riverbanks and valley floors. Vegetation recovered, rivers stabilised as root systems held soil in place, and populations of beavers, songbirds, and fish rebounded. Ecologists describe this sequence of events as a "trophic cascade," and it provided compelling evidence for the ecological value of apex predators.
+B. One idea associated with rewilding is the trophic cascade: a change near the top of a food web may produce indirect effects at lower levels. Grey wolves were reintroduced to Yellowstone National Park in the United States in 1995 and 1996, after which elk numbers, browsing patterns and some vegetation changed. A popular account says wolves consequently restored plants, beavers and even river channels. Researchers agree that predator recovery had ecological effects, but debate the strength and route of this particular cascade. Other predators, hunting, climate, groundwater and the legacy of earlier browsing also changed. Yellowstone is therefore a useful hypothesis and case study, not proof that adding one predator will automatically produce the same chain everywhere.
 
-C. In Europe, advocates of rewilding point to several large carnivores that were once native to the continent but were hunted to extinction or near-extinction over centuries of agricultural expansion: wolves, bears, lynx, and—most ambitiously—the wisent, or European bison. Some recovery has already occurred naturally. Wolf populations have expanded from remnant populations in Italy and the Iberian Peninsula, colonising France, Germany, and the Netherlands without human assistance, aided by legal protections introduced under the European Union's Habitats Directive. Lynx have been successfully reintroduced in Switzerland, the Czech Republic, and Germany.
+C. In Europe, advocates point to the recovery of large native animals. Wolves, bears and lynx are carnivores, whereas the wisent, or European bison, is a large herbivore; each has a different ecological role and cannot be treated as an interchangeable symbol. Some recovery has occurred through natural range expansion. Wolves spread from surviving populations into parts of France, Germany and the Netherlands without direct release in those places, aided by legal protection and connected habitat. Lynx and wisent recovery has relied more heavily on reintroduction or reinforcement in selected landscapes. Return alone is not the final measure of success: population viability, genetic diversity, ecological function and coexistence with people must also be monitored.
 
-D. The rewilding of rivers is equally compelling. Beavers, extinct in Britain for approximately four hundred years, were reintroduced to Scotland in 2009 as part of a pilot project. The results have been striking. Beaver dams create wetland habitats, slow the flow of water, reduce downstream flooding, and improve water quality. A river system in Devon, where beavers were reintroduced in 2011, showed a 30 percent reduction in peak water flow during storm events—a finding with significant implications for flood management in a country increasingly vulnerable to extreme rainfall.
+D. The recovery of beavers offers a different test. By building dams and channels, beavers can create wetland habitat, retain sediment and delay some storm water. The licensed River Otter Beaver Trial in Devon combined field monitoring with evidence about ecology, farming and local attitudes. Results vary by site because dams, valley shape and rainfall differ. In another Devon catchment, beaver dams operated alongside human-built “leaky dams” and other measures; together these interventions reduced peak flow by 23 percent. That result supports catchment restoration, but it should not be attributed to beavers alone or converted into a universal flood-prevention percentage.
 
 E. Critics of rewilding raise legitimate concerns. Farmers and landowners are understandably anxious about the return of large predators that may attack livestock. The economic impact can be severe for individual producers, even if the overall ecological and economic benefits are positive. In some regions of Europe, compensation schemes for livestock losses to wolves and bears have helped reduce conflict, but enforcement and adequacy of payments remain contentious. There are also concerns about whether rewilded landscapes can be maintained at sufficient scale: wildlife needs vast corridors of connected habitat to thrive, and much of Europe is densely settled and intensively farmed.
 
 F. Perhaps the most significant challenge is cultural. The idealised European landscape—neatly farmed fields, managed forests, picturesque villages—reflects centuries of human shaping of the land. For many rural communities, the arrival of wolves or the flooding caused by beavers represents not a restoration of nature but an unwelcome disruption of their way of life. Successful rewilding programmes have found that community involvement, transparent communication, and genuine local benefit-sharing are as important as ecological science.
 
-G. Despite these obstacles, the ambition of rewilding's proponents is considerable. Rewilding Europe, a non-governmental organisation founded in 2011, aims to facilitate the rewilding of one million hectares across the continent by 2030. Projects are under way in the Danube delta, the Carpathian mountains, the Atlantic coast of Spain, and several other regions. Supporters argue that rewilding is not merely an ecological project but an economic one: functioning ecosystems generate income through wildlife tourism, sustainable fishing, and reduced costs for flood management and water purification. The wolf, it turns out, may have a measurable value measured in euros as well as in biodiversity.`,
+G. Despite these obstacles, proponents have set large targets. Rewilding Europe's 2030 strategy distinguishes land and water under direct rewilding management from a wider area under rewilding influence. It aims for 500,000 hectares under direct management across 15 landscapes and at least one million hectares under influence by 2030. At the end of 2024, it reported just under 65,000 hectares under direct management and slightly more than 811,000 under influence. The categories matter when judging progress. Supporters also argue that functioning ecosystems can support wildlife tourism, sustainable fishing and lower costs for services such as flood management. Those benefits require evidence and local participation rather than an assumption that every project will pay for itself.`,
       questions: [
         {
           type: 'matching',
@@ -456,11 +516,11 @@ G. Despite these obstacles, the ambition of rewilding's proponents is considerab
           groupLabel: 'The passage has seven paragraphs, A–G. Which paragraph contains the following information?',
           items: [
             { num: 14, stem: 'An example of a carnivore species recovering in Europe without direct human intervention', answer: 'C' },
-            { num: 15, stem: 'A description of how top predators can change the behaviour of rivers', answer: 'B' },
-            { num: 16, stem: 'Evidence that returning a specific animal reduced the risk of flooding', answer: 'D' },
+            { num: 15, stem: 'A warning that a famous predator example has a disputed causal explanation', answer: 'B' },
+            { num: 16, stem: 'A result that should not be attributed to one intervention alone', answer: 'D' },
             { num: 17, stem: 'A reference to the cultural significance of traditional agricultural landscapes', answer: 'F' },
             { num: 18, stem: 'A statement of the limitations of traditional conservation approaches', answer: 'A' },
-            { num: 19, stem: 'Details of financial targets set by a rewilding organisation', answer: 'G' },
+            { num: 19, stem: 'Two different area targets set by a rewilding organisation', answer: 'G' },
             { num: 20, stem: 'An explanation of difficulties in compensating farmers for losses', answer: 'E' },
           ],
           endings: [
@@ -476,14 +536,14 @@ G. Despite these obstacles, the ambition of rewilding's proponents is considerab
           part: 6,
           qRange: [21, 26],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `21. The concept that predators indirectly affect all levels of an ecosystem is known as a {{21}}.\n22. The legal protection of wolves in Europe is partly due to the EU's {{22}}.\n23. The reintroduction of beavers to Devon resulted in a 30 percent reduction in {{23}} during storms.\n24. Financial {{24}} for livestock losses have been introduced in some regions to reduce conflict with farmers.\n25. Rewilding advocates argue that functioning ecosystems can generate income through {{25}} tourism.\n26. Rewilding Europe aims to restore {{26}} of land across the continent by 2030.`,
+          template: `21. An indirect change through levels of a food web is known as a {{21}}.\n22. The recovery of large animals also requires connected {{22}}.\n23. Combined measures in one Devon catchment reduced {{23}} by 23 percent.\n24. Financial {{24}} for livestock losses have been introduced in some regions to reduce conflict with farmers.\n25. Rewilding advocates argue that functioning ecosystems can generate income through {{25}} tourism.\n26. Rewilding Europe aims for at least {{26}} under rewilding influence by 2030.`,
           blanks: [
             { num: 21, answers: ['trophic cascade'] },
-            { num: 22, answers: ['Habitats Directive'] },
-            { num: 23, answers: ['peak water flow'] },
+            { num: 22, answers: ['habitat'] },
+            { num: 23, answers: ['peak flow'] },
             { num: 24, answers: ['compensation schemes', 'compensation'] },
             { num: 25, answers: ['wildlife'] },
-            { num: 26, answers: ['one million hectares', 'a million hectares'] },
+            { num: 26, answers: ['one million hectares'] },
           ],
         },
       ],
@@ -496,25 +556,27 @@ G. Despite these obstacles, the ambition of rewilding's proponents is considerab
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `The Gig Economy
 
-The term "gig economy" describes a labour market characterised by short-term contracts, freelance work, and on-demand services, in contrast to the permanent employment that dominated the post-war economic era. The rise of digital platforms—from ride-hailing services to freelance marketplaces and food delivery apps—has accelerated this shift dramatically over the past decade. For some, the gig economy represents liberation from the constraints of traditional employment; for others, it represents the erosion of labour protections built up over a century of industrial relations.
+A passenger sees a car moving across a phone screen; its driver sees an offer, a price and a rating that may affect the next offer. The term “gig economy” covers short assignments, freelance work and on-demand services, many now coordinated by digital platforms. Not all independent work is new, and not every freelancer uses an app, but platforms have altered the speed and scale at which clients and workers are matched. To supporters this can loosen the constraints of a fixed job; to critics it can move commercial risk away from a firm while weakening labour protection.
 
-Advocates of platform-based work stress its flexibility. Many gig workers report that the ability to set their own hours, work from home, and supplement other income streams makes gig work highly attractive. For students, parents caring for young children, or retirees seeking additional earnings, the gig model offers genuine autonomy that conventional employment cannot match. A 2019 survey by the McKinsey Global Institute found that the majority of independent workers—across countries and skill levels—chose their work status voluntarily and reported being satisfied with it.
+Advocates of platform-based work stress flexibility. The ability to choose when to log in, work remotely in some occupations or supplement another income can be valuable to students, carers and people combining several roles. A 2016 McKinsey Global Institute report found that most independent workers in its European and United States sample worked independently by choice. However, “independent work” in that research was broader than app-based gig work: it also included traditional freelance, temporary and self-employed activity. The finding cannot automatically describe every delivery rider or online contractor.
 
-Critics, however, focus on the substantial minority who rely on gig work as a primary income source, often involuntarily. For these workers, the flexibility argument rings hollow: without guaranteed hours, they cannot budget reliably; without employment status, they receive no sick pay, no holiday entitlement, and no employer pension contributions. Research across the United Kingdom, United States, and Australia consistently finds that median hourly earnings for gig workers, once expenses and unpaid time are accounted for, fall below the minimum wage applicable to employed workers in the same jurisdictions. The apparent freedom of gig work thus conceals significant financial insecurity.
+Critics focus on people who rely on gigs as their primary income or lack a realistic alternative. Without guaranteed hours, budgeting becomes difficult; depending on legal status, sick pay, paid leave and employer pension contributions may be absent. Earnings are also hard to compare with an employee's wage. A driver's fuel, vehicle wear, insurance and time waiting for a task can be work-related costs even when an app reports only payment for an accepted trip. Results vary across occupations and places, so a single headline hourly rate may either exaggerate or understate financial security.
 
 Legal classification has emerged as a central battleground. In most legal systems, workers fall into one of three categories: employees (with full protections), independent contractors (with minimal protections), or—in some jurisdictions—a middle category of "worker" with intermediate rights. Platform companies have typically classified their workers as independent contractors, arguing that they operate as independent businesses using the platform as a tool. In 2021, the UK Supreme Court rejected this classification in the case of Uber BV v Aslam, ruling that Uber drivers were "workers" entitled to minimum wage guarantees and holiday pay when logged in and available to accept rides. Similar decisions have followed in France, Spain, and the Netherlands.
 
-The regulatory response is evolving rapidly but unevenly. The European Union proposed a Platform Work Directive in 2021, which would establish a legal presumption that platform workers are employees unless the platform can demonstrate otherwise—a reversal of the current burden of proof. California's Proposition 22 (2020) moved in the opposite direction, classifying rideshare and delivery drivers as independent contractors but mandating a range of minimum earnings guarantees and benefits. The result is a patchwork of rules that varies not just between countries but sometimes between regions within the same country, creating significant uncertainty for both platforms and workers.
+The regulatory response is evolving rapidly but unevenly. The European Union proposed platform-work legislation in 2021 and adopted Directive (EU) 2024/2831 in October 2024. Member states must create an effective legal presumption of employment when facts indicating direction and control are found, under their national systems; the directive does not simply declare every platform worker an employee. It also regulates automated monitoring and decision-making, requires information about the systems in use and limits the processing of certain personal data. National implementation and litigation will still produce differences, but the measure is no longer merely a proposal.
 
-Academic perspectives on the gig economy's overall impact diverge significantly. Some economists argue that platform work, by reducing transaction costs and matching supply to demand more efficiently, ultimately increases total employment and economic output. Others contend that the growth of precarious work shifts risk from capital to labour, compresses wages across the economy, and undermines the tax base that funds social protection systems. The debate is further complicated by measurement difficulties: official labour statistics, designed to capture traditional employment relationships, systematically undercount gig workers, making it difficult to assess the scale and trajectory of the phenomenon with precision.
+Algorithmic management raises issues even when employment status is undisputed. A platform may allocate tasks, vary prices, rank performance or restrict an account using data that a worker cannot inspect. Automation can coordinate a large market efficiently, yet an unexplained suspension may immediately remove someone's income. Meaningful human review requires more than placing a person at the end of an appeal form: the reviewer needs authority, relevant information and time to reconsider the decision. Transparency also has limits, because publishing every detail of an allocation system could enable manipulation. Regulation must balance explanation, privacy, commercial secrecy and the ability to contest consequential errors.
 
-What appears clear is that the gig economy is not a temporary aberration but a structural feature of modern labour markets, shaped by technology, globalisation, and shifting expectations about work and employment. Whether it ultimately expands or contracts human freedom depends substantially on regulatory choices that are still being contested in legislatures, courts, and corporate boardrooms around the world.`,
+Academic perspectives on the gig economy's overall impact diverge. Some economists argue that platforms reduce transaction costs and match supply to demand more efficiently, potentially increasing work opportunities and output. Others contend that precarious arrangements shift risk from capital to labour, weaken bargaining power and complicate funding for social protection. Measurement makes the disagreement harder to resolve. A person may complete occasional online tasks while holding a conventional job and may not identify as a gig worker in a survey. Platforms also define active workers differently. Official labour statistics designed around a main job can therefore undercount or classify the same activity differently, obscuring both scale and change over time.
+
+What appears clear is that the gig economy is not a temporary aberration but a structural feature of modern labour markets, shaped by technology, globalisation and shifting expectations about work. Whether it expands or contracts human freedom cannot be answered from flexibility alone. The outcome depends on regulation, enforcement, platform design and the worker's bargaining position. It also depends on transparency: workers need to know how pay, access to tasks, ratings and suspension decisions are determined if they are to challenge an error or make an informed choice.`,
       questions: [
         {
           type: 'mcq',
           id: 'r3-q27',
           part: 7,
-          text: 'Which of the following best describes the McKinsey 2019 survey findings?',
+          text: 'Which of the following best describes the McKinsey research discussed in the passage?',
           options: [
             'The majority of gig workers had been forced into independent work by redundancy.',
             'Most independent workers chose gig work voluntarily and expressed satisfaction with it.',
@@ -527,12 +589,12 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           type: 'mcq',
           id: 'r3-q28',
           part: 7,
-          text: 'What did research across the UK, US, and Australia consistently find about gig worker earnings?',
+          text: 'Why does the passage say that a headline hourly rate may be misleading?',
           options: [
-            'Gig workers earned more than equivalent permanent employees on an hourly basis.',
-            'Median gig earnings exceeded minimum wage in most jurisdictions.',
-            'When expenses and unpaid time were included, median gig earnings fell below minimum wage.',
-            'Earnings varied so widely that no consistent pattern could be established.',
+            'Platforms always report earnings before tax.',
+            'Workers may receive several payments for the same task.',
+            'Costs and waiting time may not be included in the reported rate.',
+            'National minimum wages never apply to independent work.',
           ],
           answer: 2,
         },
@@ -553,12 +615,12 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           type: 'mcq',
           id: 'r3-q30',
           part: 7,
-          text: 'According to the passage, what is a consequence of California\'s Proposition 22?',
+          text: 'What does the passage say about the EU Platform Work Directive?',
           options: [
-            'Rideshare drivers were reclassified as employees with full benefits.',
-            'Drivers were confirmed as independent contractors with some minimum guarantees.',
-            'The proposition was rejected by the courts as unconstitutional.',
-            'Platforms were required to offer pension contributions to all drivers.',
+            'It automatically classifies every platform worker as an employee.',
+            'It addresses employment status and the use of automated management systems.',
+            'It applies only to ride-hailing companies operating in one country.',
+            'It was proposed in 2024 but has not yet been adopted.',
           ],
           answer: 1,
         },
@@ -568,11 +630,11 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           part: 7,
           qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: The gig economy has grown primarily because digital platforms have reduced the need for labour.\n32. {{32}}: Platform companies have generally preferred to classify workers as independent contractors.\n33. {{33}}: The EU Platform Work Directive was fully approved and implemented by 2022.\n34. {{34}}: Some economists argue that platform work improves total employment and economic output.\n35. {{35}}: Official labour statistics reliably capture the full extent of gig work.\n36. {{36}}: The writer suggests that the future of the gig economy depends partly on regulatory decisions.`,
+          template: `31. {{31}}: The gig economy has grown primarily because digital platforms have reduced the need for labour.\n32. {{32}}: Platform companies have generally preferred to classify workers as independent contractors.\n33. {{33}}: The EU Platform Work Directive was fully adopted and implemented by 2022.\n34. {{34}}: Some economists argue that platform work can improve employment opportunities and economic output.\n35. {{35}}: Official labour statistics reliably capture the full extent of gig work.\n36. {{36}}: The writer suggests that the effects of gig work depend partly on regulatory decisions.`,
           blanks: [
             { num: 31, answers: ['NOT GIVEN'] },
             { num: 32, answers: ['YES'] },
-            { num: 33, answers: ['NOT GIVEN'] },
+            { num: 33, answers: ['NO'] },
             { num: 34, answers: ['YES'] },
             { num: 35, answers: ['NO'] },
             { num: 36, answers: ['YES'] },
@@ -584,7 +646,7 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           part: 7,
           qRange: [37, 40],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `37. Workers who have full employment protections are classified as {{37}} in most legal systems.\n38. The EU directive proposes a {{38}} that platform workers are employees unless proven otherwise.\n39. The difficulty of measuring the gig economy is partly due to its undercount in {{39}} statistics.\n40. The passage describes the gig economy as a {{40}} feature of modern labour markets, not a temporary trend.`,
+          template: `37. Workers who have full employment protections are classified as {{37}} in most legal systems.\n38. The EU directive requires national systems to provide a {{38}} when facts indicate direction and control.\n39. The difficulty of measuring the gig economy is partly due to its undercount in {{39}} statistics.\n40. The passage describes the gig economy as a {{40}} feature of modern labour markets, not a temporary trend.`,
           blanks: [
             { num: 37, answers: ['employees'] },
             { num: 38, answers: ['legal presumption'] },
@@ -609,8 +671,8 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           part: 8,
           taskNumber: 1,
           imageUrl: '/assets/ielts/charts/set6-task1.svg',
-          imageAlt: 'Line graph showing internet usage rates in five world regions from 2000 to 2022',
-          stimulus: 'The line graph below shows the percentage of the population using the internet in five world regions between 2000 and 2022.',
+          imageAlt: 'Line graph comparing the percentage of households with home internet access in the Central, North, Riverside, East and South districts of Bellmere from 2000 to 2022',
+          stimulus: 'The line graph below shows the percentage of households with home internet access in five districts of Bellmere between 2000 and 2022.',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
@@ -628,8 +690,8 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'Some people think that parents should limit the amount of screen time their children have, while others believe that technology is an important part of modern life and children should be free to use it as much as they wish.',
-          text: 'Discuss both views and give your own opinion.',
+          stimulus: 'Digital services increasingly use automated systems to decide which news, job opportunities or prices people see. Some believe users should always be told when such a system has materially influenced a significant decision. To what extent do you agree or disagree?',
+          text: 'Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
           minWords: 250,
         },
       ],
@@ -654,6 +716,10 @@ What appears clear is that the gig economy is not a temporary aberration but a s
             'What do you mainly use the internet for?',
             'Have your technology habits changed in the last few years? How?',
             'Do you think you spend too much time on screens?',
+            'Which device do you find easiest to use?',
+            'Do you prefer reading news online or in print?',
+            'Is there a piece of technology you would like to learn to use?',
+            'When do you usually choose to switch your phone off?',
           ],
         },
         {
@@ -661,8 +727,8 @@ What appears clear is that the gig economy is not a temporary aberration but a s
           id: 'sp2',
           part: 10,
           partNumber: 2,
-          text: 'Part 2 — Individual long turn',
-          cueCard: `Describe a piece of technology that has had a big impact on your life.\n\nYou should say:\n• what the technology is\n• when and how you started using it\n• how it has changed your daily routine\n• and explain whether you think its overall impact has been positive or negative`,
+          text: 'Part 2 — Individual long turn (3–4 minutes). Prepare for 1 minute, then speak for 1–2 minutes.',
+          cueCard: `Describe a piece of technology that has had a big impact on your life.\n\nYou should say:\n• what the technology is\n• when and how you started using it\n• how it has changed your daily routine\n• who you use it with or communicate with\n\nand explain whether you think its overall impact has been positive or negative.`,
         },
         {
           type: 'speak',
@@ -675,6 +741,8 @@ What appears clear is that the gig economy is not a temporary aberration but a s
             'What risks do you see in children having unrestricted access to the internet?',
             'How should schools adapt their teaching methods to reflect the digital age?',
             'Do you think there will ever be technology that fundamentally changes how humans communicate?',
+            'Who should be responsible when an automated system makes a harmful decision?',
+            'Why do some groups benefit from new technology sooner than others?',
           ],
         },
       ],

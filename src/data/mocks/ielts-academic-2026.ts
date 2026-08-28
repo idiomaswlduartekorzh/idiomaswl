@@ -108,6 +108,10 @@ function withAuditedReadingLength(sections: MockSection[], setNumber: number): M
   if (!supplement) return sections;
   const coda = IELTS_READING_AUDIT_CODAS[setNumber];
   const readingSections = sections.filter((section) => section.skill === 'reading');
+  const authoredWords = readingSections.reduce((total, section) => (
+    total + (section.passage?.trim().split(/\s+/).filter(Boolean).length ?? 0)
+  ), 0);
+  if (authoredWords >= 2150) return sections;
   const finalReadingPart = readingSections.at(-1)?.part;
   return sections.map((section) => section.skill === 'reading' && section.part === finalReadingPart
     ? { ...section, passage: `${section.passage?.trim() ?? ''}\n\n${supplement.trim()}${coda ? `\n\n${coda.trim()}` : ''}` }
