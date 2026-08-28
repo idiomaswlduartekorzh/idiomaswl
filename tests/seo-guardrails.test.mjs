@@ -121,5 +121,16 @@ test('Task 2 solo publica FAQ schema cuando la página entrega FAQ visibles', ()
   assert.doesNotMatch(component, /faqs\s*=\s*TASK2_SKILL_FAQS/);
   assert.match(component, /faqs\?\.length\s*\?\s*<FaqJsonLd faqs=\{faqs\}/);
   assert.match(introduction, /faqs=\{TASK2_SKILL_FAQS\}/);
-  assert.match(productionAudit, /practica\\\/ielts\\\/academic\\\/writing\\\/task2/);
+  assert.match(productionAudit, /practica\\\/ielts\\\/academic\\\/writing\\\/task\[12\]/);
+});
+
+test('Task 1 no hereda FAQ schema que sus páginas no muestran', () => {
+  const component = readFileSync(
+    'src/app/(site)/practica/ielts/academic/writing/task1/Task1SkillStructuredData.tsx',
+    'utf8',
+  );
+
+  assert.doesNotMatch(component, /FaqJsonLd|FAQS/);
+  assert.match(component, /LearningResourceJsonLd/);
+  assert.match(component, /BreadcrumbJsonLd/);
 });
