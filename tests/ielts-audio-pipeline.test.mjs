@@ -4,14 +4,17 @@ import { readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
 
-const plan = JSON.parse(readFileSync('docs/ielts-2026-audio-generation-plan-2026-08-25.json', 'utf8'));
+const plan = JSON.parse(readFileSync('docs/ielts-2026-audio-generation-plan-2026-08-28.json', 'utf8'));
 const casting = JSON.parse(readFileSync('scripts/ielts-2026-voice-casting.json', 'utf8'));
 const pilot = JSON.parse(readFileSync('scripts/ielts-2026-audio-pilot-acceptance.json', 'utf8'));
+const set5Candidate = JSON.parse(readFileSync('scripts/ielts-2026-audio-set5-candidate.json', 'utf8'));
 const generatorSource = readFileSync('scripts/generate-ielts-2026-audio.mjs', 'utf8');
 
 test('the checked-in invoice never discounts authored characters', () => {
   const sourceCharacters = plan.rows.reduce((total, row) => total + row.sourceCharacters, 0);
   assert.equal(plan.editorialGate.status, 'passed');
+  assert.deepEqual(plan.rows.map(row => row.setId), Array.from({ length: 20 }, (_, index) => `set-${index + 1}`));
+  assert.equal(plan.rows.find(row => row.setId === 'set-4').releaseAction, 'keep-owner-accepted-master');
   assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, sourceCharacters);
   assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(sourceCharacters * casting.credits_per_character));
   assert.equal(casting.manifest_sha256, plan.manifestSha256);
@@ -54,6 +57,16 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.ok(set5.profiles.includes('tutor:north-american'));
   assert.ok(!set5.profiles.includes('speaker:north-american'), 'Meg and Ryan must never collapse into one generic voice');
   assert.equal(set5.sourceCharacters - 583, 12475, 'only new Set 5 speech is billable after approved reuse');
+  assert.equal(set5Candidate.segmentSourceSha256, createHash('sha256').update(JSON.stringify(set5.segments.map(segment => ({
+    profile: segment.profile,
+    textSha256: segment.textSha256,
+  })))).digest('hex'));
+  assert.equal(set5Candidate.sourceCharacters, set5.sourceCharacters);
+  assert.equal(set5Candidate.billableCharacters, 12475);
+  assert.equal(set5Candidate.reusedPilotCharacters, 583);
+  assert.equal(set5Candidate.billableCharacters + set5Candidate.reusedPilotCharacters, set5.sourceCharacters);
+  assert.equal(set5Candidate.releaseAuthorized, false);
+  assert.equal(set5Candidate.status, 'technical_and_transcript_qa_passed_pending_owner_listening_review');
   assert.match(
     generatorSource,
     /const textSha256 = sha256\(segment\.text\);/,
@@ -84,7 +97,11 @@ test('dry-run source verification is local, deterministic and non-authorizing', 
   assert.equal(result.status, 0, result.stderr);
   const output = JSON.parse(result.stdout);
   assert.equal(output.sourceVerified, true);
-  assert.equal(output.full.files, 17);
+  assert.equal(output.full.files, 20);
+  assert.equal(output.remainingGeneration.files, 18);
+  assert.equal(output.remainingGeneration.billableCharacters, 259828);
+  assert.equal(output.remainingGeneration.estimatedCredits, 129914);
+  assert.equal(output.remainingGeneration.estimatedUsdBeforeTax, 12.9914);
   assert.equal(output.full.generationAuthorized, false);
   assert.match(output.note, /No API call/);
 });

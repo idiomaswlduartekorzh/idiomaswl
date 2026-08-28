@@ -8,16 +8,17 @@ import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { expandIeltsListeningTranscript } from '../src/data/mocks/ielts-listening-expansions.ts';
 
-const SETS = Array.from({ length: 17 }, (_, index) => index + 4);
+const SETS = Array.from({ length: 20 }, (_, index) => index + 1);
 const MIN_TRANSCRIPT_WORDS = 2200;
 const PRICE_USD_PER_1000_CHARACTERS = 0.05;
 const CREDITS_PER_CHARACTER = 0.5;
 const args = new Set(process.argv.slice(2));
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, '..');
-const outputPath = path.join(repoRoot, 'docs', 'ielts-2026-audio-generation-plan-2026-08-25.json');
+const outputPath = path.join(repoRoot, 'docs', 'ielts-2026-audio-generation-plan-2026-08-28.json');
 
 const accentRotation = ['british', 'north-american', 'australian', 'new-zealand'];
+const prePilotAccents = new Map([[1, 'north-american'], [2, 'australian'], [3, 'new-zealand']]);
 const femaleNames = new Set(['AMY', 'MAYA', 'MEG', 'PRIYA', 'SOPHIE']);
 const maleNames = new Set(['BEN', 'JAMES', 'JOSH', 'LIAM', 'RYAN', 'SAM', 'TOM']);
 const staffLabels = new Set(['AGENT', 'COORDINATOR', 'LIBRARIAN', 'OFFICER', 'ORGANISER', 'STAFF']);
@@ -125,7 +126,7 @@ for (const setNumber of SETS) {
   assert.equal(plannedUrls.size, 1, `Set ${setNumber} must reference one integral Listening file`);
   const plannedUrl = [...plannedUrls][0];
   const existingPath = path.join(repoRoot, 'public', plannedUrl);
-  const accent = accentRotation[(setNumber - 4) % accentRotation.length];
+  const accent = prePilotAccents.get(setNumber) ?? accentRotation[(setNumber - 4) % accentRotation.length];
   const segments = sections.flatMap(section => plannedSegments(section, accent, setNumber).map(segment => ({
     kind: segment.kind,
     part: segment.part,
@@ -160,7 +161,11 @@ for (const setNumber of SETS) {
     segments,
     existingFile: existsSync(existingPath),
     existingDurationSeconds: existingDuration ? Number(existingDuration.toFixed(3)) : null,
-    releaseAction: existsSync(existingPath) ? 'replace-after-editorial-and-audio-qa' : 'generate-after-editorial-and-audio-qa',
+    releaseAction: setNumber === 4
+      ? 'keep-owner-accepted-master'
+      : existsSync(existingPath)
+        ? 'replace-after-editorial-and-audio-qa'
+        : 'generate-after-editorial-and-audio-qa',
   });
 }
 
@@ -168,9 +173,9 @@ const sourceCharacters = rows.reduce((total, row) => total + row.sourceCharacter
 const projectedCharactersAtGate = rows.reduce((total, row) => total + row.projectedCharactersAtGate, 0);
 const manifestCore = {
   schemaVersion: 1,
-  sourceAsOf: '2026-08-25',
+  sourceAsOf: '2026-08-28',
   contentOrigin: 'original-welearn',
-  scope: 'IELTS Academic Sets 4-20 integral Listening replacement',
+  scope: 'IELTS Academic Sets 1-20 integral Listening release plan',
   officialReference: 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening',
   officialSampleReference: 'https://ielts.org/cdn/ielts-sample-tests/ielts-listening-sample-tasks-2023.pdf',
   editorialGate: {
@@ -223,7 +228,8 @@ if (args.has('--write')) {
 console.log(JSON.stringify({
   manifestSha256: manifest.manifestSha256,
   sets: rows.length,
-  existingToReplace: rows.filter(row => row.existingFile).length,
+  acceptedExisting: rows.filter(row => row.releaseAction === 'keep-owner-accepted-master').length,
+  existingToReplace: rows.filter(row => row.releaseAction === 'replace-after-editorial-and-audio-qa').length,
   missingToGenerate: rows.filter(row => !row.existingFile).length,
   sourceWords: rows.reduce((total, row) => total + row.transcriptWords, 0),
   additionalWordsRequired: rows.reduce((total, row) => total + row.minimumAdditionalWords, 0),

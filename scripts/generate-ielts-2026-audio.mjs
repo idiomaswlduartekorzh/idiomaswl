@@ -13,10 +13,11 @@ import { expandIeltsListeningTranscript } from '../src/data/mocks/ielts-listenin
 const API = 'https://api.elevenlabs.io';
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, '..');
-const plan = JSON.parse(readFileSync(path.join(repoRoot, 'docs', 'ielts-2026-audio-generation-plan-2026-08-25.json'), 'utf8'));
+const plan = JSON.parse(readFileSync(path.join(repoRoot, 'docs', 'ielts-2026-audio-generation-plan-2026-08-28.json'), 'utf8'));
 const casting = JSON.parse(readFileSync(path.join(scriptDir, 'ielts-2026-voice-casting.json'), 'utf8'));
 const pilotAcceptancePath = path.join(scriptDir, 'ielts-2026-audio-pilot-acceptance.json');
 const pilotAcceptance = JSON.parse(readFileSync(pilotAcceptancePath, 'utf8'));
+const set5Candidate = JSON.parse(readFileSync(path.join(scriptDir, 'ielts-2026-audio-set5-candidate.json'), 'utf8'));
 const args = process.argv.slice(2);
 const has = flag => args.includes(flag);
 const value = flag => has(flag) ? args[args.indexOf(flag) + 1] : null;
@@ -59,6 +60,14 @@ assert.equal(
   segmentSourceSha256(acceptedPilotRow),
   'accepted pilot speech changed; its reusable segments are no longer valid',
 );
+const set5CandidateRow = plan.rows.find(row => row.setId === 'set-5');
+assert.ok(set5CandidateRow, 'Set 5 candidate is absent from the current plan');
+assert.equal(
+  set5Candidate.segmentSourceSha256,
+  segmentSourceSha256(set5CandidateRow),
+  'Set 5 candidate speech changed; regenerate and re-audit before reuse',
+);
+assert.equal(set5Candidate.releaseAuthorized, false, 'Set 5 candidate cannot silently authorize its own release');
 
 function parseSetSelection(selection) {
   if (!selection) return [];
@@ -68,7 +77,7 @@ function parseSetSelection(selection) {
     assert.ok(match, `invalid --sets selection: ${token}`);
     const start = Number(match[1]);
     const end = Number(match[2] ?? match[1]);
-    assert.ok(start >= 4 && end <= 20 && start <= end, `--sets must stay within 4-20: ${token}`);
+    assert.ok(start >= 1 && end <= 20 && start <= end, `--sets must stay within 1-20: ${token}`);
     for (let setNumber = start; setNumber <= end; setNumber += 1) selected.add(setNumber);
   }
   return [...selected].sort((a, b) => a - b);
@@ -226,7 +235,7 @@ async function showAccount() {
 }
 
 function scopeLabel() {
-  return fullBatch ? 'full-sets-4-20' : `sets-${selectedSetNumbers.join('-')}`;
+  return fullBatch ? 'full-sets-1-20' : `sets-${selectedSetNumbers.join('-')}`;
 }
 
 function outputDirectory(scope) {
@@ -259,7 +268,7 @@ async function ensureGenerationGate(rows) {
     assert.deepEqual(selectedSetNumbers, [4], 'only the Set 4 pilot may be generated before owner acceptance');
   }
   if (fullBatch) {
-    assert.equal(value('--approve-full-batch'), '17', 'full generation also requires --approve-full-batch 17');
+    assert.equal(value('--approve-full-batch'), '20', 'full generation also requires --approve-full-batch 20');
     assert.equal(pilotAcceptance.status, 'accepted_by_owner', 'full generation requires an owner-accepted Set 4 pilot');
     assert.ok(pilotAcceptance.audio_sha256, 'accepted pilot must record its audio SHA-256');
     assert.ok(pilotAcceptance.qa_report_sha256, 'accepted pilot must record its QA report SHA-256');
@@ -595,8 +604,9 @@ if (accountStatus) {
   if (has('--verify-source')) await Promise.all(plan.rows.map(hydrateRow));
   console.log(JSON.stringify({
     pilot: invoice(plan.rows.filter(row => row.setId === 'set-4'), 'pilot-set-4'),
-    postPilotRemainder: invoice(plan.rows.filter(row => row.setId !== 'set-4'), 'sets-5-20-after-pilot'),
-    full: invoice(plan.rows, 'full-sets-4-20'),
+    postPilotRemainder: invoice(plan.rows.filter(row => row.setId !== 'set-4'), 'sets-1-3-and-5-20-after-pilot'),
+    remainingGeneration: invoice(plan.rows.filter(row => !['set-4', 'set-5'].includes(row.setId)), 'sets-1-3-and-6-20-after-preserved-synthesis'),
+    full: invoice(plan.rows, 'full-sets-1-20'),
     ...(selectedRows.length ? { selected: invoice(selectedRows, scopeLabel()) } : {}),
     castingApproval: casting.approval,
     pilotAcceptance: pilotAcceptance.status,

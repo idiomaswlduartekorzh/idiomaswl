@@ -11,7 +11,7 @@ const root = path.resolve(process.argv[2]);
 const logPath = path.join(root, 'generation-log.json');
 assert.ok(existsSync(logPath), `missing generation log: ${logPath}`);
 const log = JSON.parse(readFileSync(logPath, 'utf8'));
-const plan = JSON.parse(readFileSync(path.resolve('docs/ielts-2026-audio-generation-plan-2026-08-25.json'), 'utf8'));
+const plan = JSON.parse(readFileSync(path.resolve('docs/ielts-2026-audio-generation-plan-2026-08-28.json'), 'utf8'));
 const casting = JSON.parse(readFileSync(path.resolve('scripts/ielts-2026-voice-casting.json'), 'utf8'));
 assert.equal(log.manifestSha256, plan.manifestSha256, 'generation log belongs to a stale manifest');
 assert.equal(log.modelId, casting.model_id, 'generation used a different model');

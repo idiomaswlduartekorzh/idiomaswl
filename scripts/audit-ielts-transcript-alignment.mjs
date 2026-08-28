@@ -9,14 +9,14 @@ import { expandIeltsListeningTranscript } from '../src/data/mocks/ielts-listenin
 assert.ok(process.argv[2], 'usage: audit-ielts-transcript-alignment.mjs <generation-directory> <set-number> <whisper-txt>');
 const generationRoot = path.resolve(process.argv[2]);
 const setNumber = Number(process.argv[3]);
-assert.ok(Number.isInteger(setNumber) && setNumber >= 4 && setNumber <= 20, 'set number must be within 4-20');
+assert.ok(Number.isInteger(setNumber) && setNumber >= 1 && setNumber <= 20, 'set number must be within 1-20');
 const asrPath = path.resolve(process.argv[4] ?? path.join(generationRoot, 'whisper-small-en.txt'));
 const logPath = path.join(generationRoot, 'generation-log.json');
 assert.ok(existsSync(logPath), `missing generation log: ${logPath}`);
 assert.ok(existsSync(asrPath), `missing ASR transcript: ${asrPath}`);
 
 const log = JSON.parse(readFileSync(logPath, 'utf8'));
-const plan = JSON.parse(readFileSync(path.resolve('docs/ielts-2026-audio-generation-plan-2026-08-25.json'), 'utf8'));
+const plan = JSON.parse(readFileSync(path.resolve('docs/ielts-2026-audio-generation-plan-2026-08-28.json'), 'utf8'));
 assert.equal(log.manifestSha256, plan.manifestSha256, 'generation log belongs to a stale manifest');
 const entry = log.files.find(file => file.setId === `set-${setNumber}`);
 assert.ok(entry, `generation log has no Set ${setNumber} file`);

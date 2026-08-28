@@ -101,10 +101,31 @@ manifiesto técnico/audio aceptado.
 ## Plan de audio y criterio de salida
 
 El manifiesto de planificación vigente tiene SHA-256
-`5d5b2495f79ec8d1860eaeefd7c73c505756132025ab6116b8b28fa1831b2799`, 40.269
-palabras fuente y cero palabras adicionales requeridas. Su proyección completa es
-243.231 caracteres, 121.616 créditos y USD 12,1616 antes de impuestos y reintentos.
-`generationAuthorized=false`: es una estimación conservadora, no una orden de gasto.
+`79a2bee7d889a8a4780c0ba2bdcc57cde82dfda916debf0f23eb58cb3700cb7c`, 47.310
+palabras fuente y cero palabras adicionales requeridas. Ahora cubre realmente Sets 1–20.
+Su proyección bruta es 287.255 caracteres, 143.628 créditos y USD 14,3628 antes de
+impuestos y reintentos. `generationAuthorized=false`: es una estimación conservadora,
+no una orden de gasto.
+
+Set 4 ya está aceptado y el candidato Set 5 conserva exactamente el mismo hash de
+segmentos que el plan con el que fue generado. Excluyendo esas dos síntesis preservadas,
+Sets 1–3 y 6–20 requieren como máximo 259.828 caracteres, 129.914 créditos y USD 12,9914
+antes de impuestos y reintentos. Set 5 sigue fuera de release hasta aprobación humana.
+Las dos síntesis cubren 27.427 caracteres fuente (equivalente de reemplazo: 13.714
+créditos), pero sus logs registran 26.844 caracteres facturables (estimación: 13.422
+créditos) porque Set 5 reutilizó 583 caracteres ya sintetizados en Set 4. El MP3 candidato
+Set 5 fue verificado por SHA-256 en el caché estable
+`/Users/josedavidduartesilva/Developer/idiomaswl-ielts-audio-cache/a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea/sets-5/set-5/ielts-listening-set-5.mp3`.
+La consulta de sólo lectura del 28 de agosto registró 964 créditos disponibles y renovación
+el 5 de septiembre de 2026 a las 18:13:51 (Bogotá); la consulta no consumió créditos.
+
+Con el límite Creator actual de 121.031 créditos, el remanente no cabe en un solo ciclo:
+faltan 8.883 créditos aun partiendo de un saldo mensual completo. Si el propietario amplía
+explícitamente el alcance y el techo de gasto, una secuencia simple conserva el orden del
+catálogo: completar Sets 1–3 y 6–18 consume 115.408 créditos; los 5.623 restantes del ciclo
+pueden dejar parte de Set 19 en caché, y el siguiente ciclo termina Set 19 + Set 20 con unos
+8.887 créditos conservadores. La granularidad real depende del tamaño de los segmentos y
+todo reintento se contabiliza aparte. Sin nueva autorización no se ejecuta esta secuencia.
 
 Antes de cualquier nueva llamada a ElevenLabs se debe recalcular la factura incremental
 excluyendo bytes aceptados de Set 4 y caché verificable de Set 5. Después, cada Set debe
