@@ -91,7 +91,11 @@ export function faqSchemaQuestions(html) {
 function visibleSummaryQuestions(html) {
   const questions = [];
   for (const match of html.matchAll(/<summary\b[^>]*>([\s\S]*?)<\/summary>/gi)) {
-    const text = normalizeVisibleText(match[1]).replace(/\s*[+−]\s*$/, '');
+    const visibleContent = match[1].replace(
+      /<([a-z][a-z0-9-]*)\b[^>]*aria-hidden\s*=\s*["']true["'][^>]*>[\s\S]*?<\/\1>/gi,
+      ' ',
+    );
+    const text = normalizeVisibleText(visibleContent).replace(/\s*[+−]\s*$/, '');
     if (/[?¿]/.test(text)) questions.push(text);
   }
   return questions;

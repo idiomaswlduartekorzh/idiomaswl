@@ -1,30 +1,12 @@
 import type { Metadata } from 'next';
 
-import { BreadcrumbJsonLd, FaqJsonLd, JsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import { BreadcrumbJsonLd, JsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import { PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 import AcademicDiscussionPromptBankClient from './AcademicDiscussionPromptBankClient';
 import { ACADEMIC_DISCUSSION_PROMPTS } from './prompts';
 
 const URL = `${PRACTICE_BASE_URL}/practica/toefl/writing/academic-discussion/banco-de-prompts`;
-
-const FAQS = [
-  {
-    question: '¿Estos prompts de TOEFL Academic Discussion son oficiales?',
-    answer:
-      'No. Son prompts originales de práctica creados por WeLearn. Usan el formato oficial actual de Academic Discussion como referencia, pero no son material oficial de ETS.',
-  },
-  {
-    question: '¿Cuántas palabras debo escribir en Academic Discussion?',
-    answer:
-      'Como práctica, apunta a una respuesta clara de unas 100 a 150 palabras: postura, conexión con la discusión, razón desarrollada y ejemplo. La prioridad no es escribir más, sino comunicar mejor.',
-  },
-  {
-    question: '¿Integrated Writing forma parte de este banco?',
-    answer:
-      'No. Este banco se enfoca en Write for an Academic Discussion, una tarea actual de TOEFL iBT Writing. Integrated Writing permanece como ruta legacy/síntesis complementaria.',
-  },
-];
 
 export const metadata: Metadata = {
   title: 'TOEFL Academic Discussion prompts: banco de práctica',
@@ -65,7 +47,6 @@ export default function Page() {
         ]}
         isPartOf={{ name: 'TOEFL Writing', url: `${PRACTICE_BASE_URL}/practica/toefl/writing` }}
       />
-      <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },

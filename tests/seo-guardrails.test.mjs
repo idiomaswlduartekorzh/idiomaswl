@@ -19,7 +19,7 @@ const faqSchema = (questions) => JSON.stringify({
 
 test('la paridad FAQ ignora details ajenos como las notas del pódcast', () => {
   const html = `
-    <details><summary>¿Cuánto dura el examen? <span aria-hidden="true">+</span></summary></details>
+    <details><summary><span aria-hidden="true">01</span> ¿Cuánto dura el examen? <span aria-hidden="true">+</span></summary></details>
     <details><summary>¿Cómo recibo el resultado?</summary></details>
     <details><summary>Notas del episodio</summary></details>
     <script type="application/ld+json">${faqSchema(['¿Cuánto dura el examen?', '¿Cómo recibo el resultado?'])}</script>
@@ -156,4 +156,28 @@ test('las plantillas de gramática no presentan secciones editoriales como FAQPa
     assert.match(source, /'@type': 'BreadcrumbList'/);
   }
   assert.match(productionAudit, /gramatica\\\/\[a-z0-9-\]\+/);
+});
+
+test('la auditoría completa revisa todo FAQPage publicado en el sitemap', () => {
+  const productionAudit = readFileSync('scripts/audit-seo.mjs', 'utf8');
+
+  assert.match(productionAudit, /const candidates = QUICK \? paths\.filter/);
+  assert.match(productionAudit, /: paths;/);
+});
+
+test('las rutas sin preguntas visibles no publican FAQPage fantasma', () => {
+  const routes = [
+    'src/app/(site)/practica/ielts/academic/page.tsx',
+    'src/app/(site)/practica/ielts/academic/writing/page.tsx',
+    'src/app/(site)/practica/toefl/writing/academic-discussion/banco-de-prompts/page.tsx',
+    'src/app/(site)/practica/toefl/writing/write-an-email/banco-de-prompts/page.tsx',
+    'src/app/(site)/precios/page.tsx',
+    'src/app/(site)/recursos/ielts-writing-task-1-introduccion-pdf/page.tsx',
+  ];
+
+  for (const route of routes) {
+    const source = readFileSync(route, 'utf8');
+    assert.doesNotMatch(source, /FaqJsonLd|FAQPage/);
+    assert.match(source, /BreadcrumbJsonLd|BreadcrumbList/);
+  }
 });
