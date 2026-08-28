@@ -11,7 +11,7 @@ import BodyOneWorkshop from './BodyOneWorkshop';
 import ColoredBodyParagraph from './ColoredBodyParagraph';
 import styles from '../introduccion/page.module.css';
 
-export default function BodyOneClient() {
+export default function BodyOneClient({ faqs }: { faqs: { question: string; answer: string }[] }) {
   const [activeType, setActiveType] = useState<EssayTypeId>('opinion');
   const [activeExample, setActiveExample] = useState(1);
   const lesson = BODY_ONE_LESSONS.find((item) => item.id === activeType) ?? BODY_ONE_LESSONS[0];
@@ -45,7 +45,7 @@ export default function BodyOneClient() {
 
     <BodyOnePracticeEngine essayType={activeType} />
 
-    <section className={styles.section}><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2>Develop Body 1 without becoming formulaic</h2></div><div className={styles.faqGrid}><article><h3>How many words should Body 1 contain?</h3><p>IELTS sets no paragraph word count. WeLearn uses roughly 80–110 words as a study target, then adjusts it to the prompt and the complete 250+ word response.</p></article><article><h3>Must Body 1 always present my first reason?</h3><p>No. It presents the first reason in an opinion essay, but may explain the first view, analyse requested problems or answer the first direct question in other prompts.</p></article><article><h3>Does every paragraph need a real-world statistic?</h3><p>No. A clear, plausible example can illustrate reasoning. Do not invent a named study, authority or exact statistic.</p></article><article><h3>Can one sentence perform two blocks?</h3><p>Yes. The labels make logic visible during practice; fluent writing may combine a main idea with explanation or an example with its link.</p></article></div></section>
+    <section className={styles.section}><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2>Develop Body 1 without becoming formulaic</h2></div><div className={styles.faqGrid}>{faqs.map(({ question, answer }) => <article key={question}><h3>{question}</h3><p>{answer}</p></article>)}</div></section>
 
     <nav className={styles.nextLinks}><Link href="/practica/ielts/academic/writing/task2/analisis-pregunta">Analyse the prompt</Link><Link href="/practica/ielts/academic/writing/task2/introduccion"><FilePenLine size={18} /> Build the introduction</Link><Link href="/practica/ielts/academic/writing/task2/body-2"><Layers3 size={18} /> Build Body 2 <ArrowRight size={16} /></Link></nav>
   </div></div>;

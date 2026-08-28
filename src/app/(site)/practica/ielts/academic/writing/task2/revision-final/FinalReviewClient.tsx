@@ -35,7 +35,7 @@ const PARAGRAPH_TONE: Record<string, string> = {
 function ReviewWorkshop({ lessonId, caseIndex }: { lessonId: EssayTypeId; caseIndex: number }) {
   const lesson = REVIEW_LESSONS.find((item) => item.id === lessonId) ?? REVIEW_LESSONS[0]; const example = lesson.cases[caseIndex];
   const [selected, setSelected] = useState(''); const [checked, setChecked] = useState(false); const [showRevision, setShowRevision] = useState(false);
-  const options = useMemo(() => rotate([example.category, ...pickDistractors(lesson.layers.map((layer) => layer.label), example.category, example.issue)], `taller-review|${example.title}`, caseIndex), [caseIndex, example.category, lesson]);
+  const options = useMemo(() => rotate([example.category, ...pickDistractors(lesson.layers.map((layer) => layer.label), example.category, example.issue)], `taller-review|${example.title}`, caseIndex), [caseIndex, example.category, example.issue, example.title, lesson]);
   /**
    * Una explicación por opción. Antes las cuatro compartían `example.explanation`, así que
    * fallar no enseñaba nada: el mismo texto salía eligieras lo que eligieras. Cada control
@@ -78,7 +78,7 @@ function ReviewWorkshop({ lessonId, caseIndex }: { lessonId: EssayTypeId; caseIn
   </div>;
 }
 
-export default function FinalReviewClient() {
+export default function FinalReviewClient({ faqs }: { faqs: { question: string; answer: string }[] }) {
   const [activeType, setActiveType] = useState<EssayTypeId>('opinion'); const [activeExample, setActiveExample] = useState(1);
   const lesson = REVIEW_LESSONS.find((item) => item.id === activeType) ?? REVIEW_LESSONS[0]; const worked = lesson.cases[0]; const example = lesson.cases[activeExample];
   return <div lang="en" className={styles.page}><div className={styles.shell}>
@@ -92,7 +92,7 @@ export default function FinalReviewClient() {
       <p className={styles.reviewDraft}>{worked.draft}</p>
       <div className={styles.modelBlockGrid}><article className={styles.claim}><strong>What is wrong with it</strong><p>{worked.issue}</p><small>Read the draft above and you can see it</small></article><article className={styles.development}><strong>{worked.category}</strong><p>{worked.explanation}</p><small>The first check it fails</small></article><article className={styles.link}><strong>Targeted revision</strong><p>{worked.revision}</p><small>Repairs that one thing, and leaves the rest alone</small></article></div></article><div className={styles.tryDivider}><span>Now you try</span><p>Decide which check fails first, then reveal the revision.</p></div><div className={styles.exampleTabs}>{lesson.cases.slice(1).map((item, offset) => { const index = offset + 1; return <button key={item.title} type="button" className={`${styles.exampleTab} ${activeExample === index ? styles.exampleTabActive : ''}`} onClick={() => setActiveExample(index)}>{String(index + 1).padStart(2, '0')} · {item.title}</button>; })}</div><article className={styles.examplePanel}><div className={styles.promptCard}><span>Your IELTS-style prompt</span><p>{example.prompt}</p></div><ReviewWorkshop key={`${activeType}-${activeExample}`} lessonId={activeType} caseIndex={activeExample} /></article></section>
     <FinalReviewPracticeEngine essayType={activeType} />
-    <section className={styles.section}><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2>Review strategically under time pressure</h2></div><div className={styles.faqGrid}><article><h3>What should I review first?</h3><p>Start with the prompt and every instruction. A missing answer cannot be repaired by better vocabulary or punctuation.</p></article><article><h3>Does this checklist predict my band?</h3><p>No. It helps you find visible revision priorities. Writing and scoring still require expert evaluation of the complete response.</p></article><article><h3>Should I rewrite whole paragraphs?</h3><p>Usually not during a final timed review. Correct the highest-impact issue that can be fixed safely without creating new contradictions.</p></article><article><h3>What if I am under 250 words?</h3><p>Task 2 requires at least 250 words. Do not add filler: identify the least-developed required idea and extend its reasoning purposefully.</p></article></div></section>
+    <section className={styles.section}><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2>Review strategically under time pressure</h2></div><div className={styles.faqGrid}>{faqs.map(({ question, answer }) => <article key={question}><h3>{question}</h3><p>{answer}</p></article>)}</div></section>
     <nav className={styles.nextLinks}><Link href="/practica/ielts/academic/writing/task2/conclusion"><FileCheck2 size={18} /> Build the conclusion</Link><Link href="/practica/ielts/academic/writing/task2/tarea-completa">Open Complete Essay Practice <ArrowRight size={16} /></Link></nav>
   </div></div>;
 }

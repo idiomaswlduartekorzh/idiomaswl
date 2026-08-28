@@ -2,7 +2,7 @@ import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/component
 
 const TASK2_BASE = 'https://www.idiomaswl.com/practica/ielts/academic/writing/task2';
 
-const FAQS = [
+export const TASK2_SKILL_FAQS = [
   {
     question: 'Is this page a separate official IELTS task?',
     answer:
@@ -19,7 +19,7 @@ export function Task2SkillStructuredData({
   name,
   path,
   teaches,
-  faqs = FAQS,
+  faqs,
 }: {
   name: string;
   path: string;
@@ -40,7 +40,7 @@ export function Task2SkillStructuredData({
           url: TASK2_BASE,
         }}
       />
-      <FaqJsonLd faqs={faqs} />
+      {faqs?.length ? <FaqJsonLd faqs={faqs} /> : null}
       <BreadcrumbJsonLd
         items={[
           { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
