@@ -13,6 +13,14 @@ La decisión de producto vigente es llegar a **20 prácticas por nivel, 60 por i
 total**. El piloto ya no es una puerta para decidir si se expande: es la primera cohorte de la
 expansión descrita en §13.
 
+> **Presentación v2 — decisión del 27 de agosto de 2026.** Las pruebas con estudiantes mostraron
+> que el recorrido actual no explica con suficiente claridad qué deben hacer. Para las 60
+> prácticas de inglés se propone: (1) toda la superficie del ejercicio en inglés, incluso A1; y
+> (2) un briefing compartido con Situation, What happened y Shared task antes de elegir roles. El
+> contrato, ejemplo A1, piloto y migración están en
+> [`habla-acompanada-presentacion-v2.md`](habla-acompanada-presentacion-v2.md). La propuesta aún
+> no cambia el runtime ni producción.
+
 ---
 
 ## 1. Qué es esto, y qué no es
