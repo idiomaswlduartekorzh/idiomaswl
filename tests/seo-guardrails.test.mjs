@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
+import path from 'node:path';
 import test from 'node:test';
 import {
   canonicalHref,
@@ -139,4 +140,20 @@ test('la auditoría de producción protege la paridad FAQ de TOEFL Reading', () 
   const productionAudit = readFileSync('scripts/audit-seo.mjs', 'utf8');
 
   assert.match(productionAudit, /practica\\\/toefl\\\/reading/);
+});
+
+test('las plantillas de gramática no presentan secciones editoriales como FAQPage', () => {
+  const practiceRoot = 'src/app/(site)/practica';
+  const templates = readdirSync(practiceRoot, { recursive: true, encoding: 'utf8' })
+    .filter((entry) => entry.endsWith('/gramatica/[slug]/page.tsx'));
+  const productionAudit = readFileSync('scripts/audit-seo.mjs', 'utf8');
+
+  assert.equal(templates.length, 24);
+  for (const template of templates) {
+    const source = readFileSync(path.join(practiceRoot, template), 'utf8');
+    assert.doesNotMatch(source, /mainEntity:\s*topic\.seo/);
+    assert.match(source, /'@type': 'LearningResource'/);
+    assert.match(source, /'@type': 'BreadcrumbList'/);
+  }
+  assert.match(productionAudit, /gramatica\\\/\[a-z0-9-\]\+/);
 });
