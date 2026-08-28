@@ -66,6 +66,7 @@
     "test:ielts-fullstack": "node --experimental-strip-types --no-warnings --test tests/ielts-fullstack-results.test.mjs",
     "smoke:ielts-production": "node scripts/smoke-ielts-production.mjs",
     "check:ielts-review-blueprint": "node --experimental-strip-types --no-warnings scripts/check-ielts-review-blueprint.mjs",
+    "audit:ielts-inventory": "node --experimental-strip-types --no-warnings scripts/audit-ielts-inventory.mjs",
     "audit:ielts-academic-2026": "node --experimental-strip-types --no-warnings scripts/audit-ielts-academic-2026.mjs",
     "plan:ielts-audio-2026": "node --experimental-strip-types --no-warnings scripts/build-ielts-2026-audio-plan.mjs",
     "check:ielts-audio-casting-2026": "node scripts/check-ielts-2026-audio-casting.mjs",

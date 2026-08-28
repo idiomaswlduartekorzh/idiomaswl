@@ -1,0 +1,1454 @@
+{
+  "schemaVersion": 1,
+  "reportAsOf": "2026-08-28",
+  "scope": "WeLearn IELTS Academic Sets 1–20",
+  "policy": {
+    "productClaim": "Original WeLearn simulation aligned to the public IELTS Academic format; not official IELTS material.",
+    "reuseFirst": true,
+    "audioDeferredUntilScriptsFrozen": true,
+    "noKnownThirdPartyTextAllowed": true,
+    "referenceSet": 4,
+    "goldenCandidateSet": 5
+  },
+  "summary": {
+    "totalSets": 20,
+    "catalogUnlocked": 20,
+    "coveredByExisting2026Gate": 17,
+    "audioDurationGatePass": 1,
+    "setsWithKnownOrPendingProvenanceReview": [
+      1,
+      2,
+      3
+    ],
+    "setsWithBlockers": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  "inventory": [
+    {
+      "set": 1,
+      "title": "IELTS Academic Set 1",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": false,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1443,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 2618,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 1443,
+        "readingWords": 2618
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-1.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 23,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "blocked-editorial-replacement",
+        "provenance": "blocked-known-third-party-match",
+        "listening": "audit-and-repair-script; replace-or-regenerate-audio-last",
+        "reading": "replace-with-original-welearn-content",
+        "writing": "reuse-after-editorial-and-visual-audit",
+        "speaking": "reuse-after-editorial-and-timing-audit",
+        "reason": "The three Reading passage titles match a known published IELTS preparation test; they cannot be certified as original WeLearn content."
+      },
+      "currentBlockers": [
+        "Not covered by the pre-existing IELTS Academic 2026 release audit.",
+        "Content provenance: blocked-known-third-party-match.",
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 2,
+      "title": "IELTS Academic Set 2",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": false,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1221,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1551,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq",
+            "multiselect"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 1221,
+        "readingWords": 1551
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-2.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 22.9,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "blocked-pending-provenance-and-format-audit",
+        "provenance": "pending-manual-review",
+        "listening": "reuse-structure; audit-and-complete-script; audio-last",
+        "reading": "reuse-if-provenance-and-editorial-audit-pass; otherwise-replace",
+        "writing": "reuse-after-editorial-and-visual-audit",
+        "speaking": "reuse-after-editorial-and-timing-audit",
+        "reason": "Complete authored shell exists, but it was outside the 2026 release gate and has not passed provenance review."
+      },
+      "currentBlockers": [
+        "Not covered by the pre-existing IELTS Academic 2026 release audit.",
+        "Content provenance: pending-manual-review.",
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 3,
+      "title": "IELTS Academic Set 3",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": false,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1296,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1406,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq",
+            "multiselect"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 1296,
+        "readingWords": 1406
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-3.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 26,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "blocked-pending-provenance-and-format-audit",
+        "provenance": "pending-manual-review",
+        "listening": "reuse-structure; audit-and-complete-script; audio-last",
+        "reading": "reuse-if-provenance-and-editorial-audit-pass; otherwise-replace",
+        "writing": "reuse-after-editorial-and-visual-audit",
+        "speaking": "reuse-after-editorial-and-timing-audit",
+        "reason": "Complete authored shell exists, but it was outside the 2026 release gate and has not passed provenance review."
+      },
+      "currentBlockers": [
+        "Not covered by the pre-existing IELTS Academic 2026 release audit.",
+        "Content provenance: pending-manual-review.",
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 4,
+      "title": "IELTS Academic Set 4",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1430,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1613,
+          "questionTypes": [
+            "formgroup",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2255,
+        "readingWords": 2184
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-4.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 27.1,
+        "durationGate": "pass"
+      },
+      "reuseDecision": {
+        "state": "reference-ready-preserve",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-script-and-published-master",
+        "reading": "preserve-as-reference",
+        "writing": "preserve-as-reference",
+        "speaking": "preserve-as-reference",
+        "reason": "Current release audit and accepted Listening master make this the stable production reference."
+      },
+      "currentBlockers": []
+    },
+    {
+      "set": 5,
+      "title": "IELTS Academic Set 5",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1348,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1933,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2215,
+        "readingWords": 2180
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-5.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "golden-candidate-audio-not-published",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-script; publish-only-after-final-golden-audit",
+        "reading": "preserve-and-freeze-after-golden-audit",
+        "writing": "preserve-and-freeze-after-golden-audit",
+        "speaking": "preserve-and-freeze-after-golden-audit",
+        "reason": "Set 5 is the Golden candidate; its generated audio candidate passed technical and ASR checks but the public path still contains legacy media."
+      },
+      "currentBlockers": [
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 6,
+      "title": "IELTS Academic Set 6",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1349,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1842,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2333,
+        "readingWords": 2225
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-6.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
+      },
+      "currentBlockers": [
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 7,
+      "title": "IELTS Academic Set 7",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1332,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1724,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2326,
+        "readingWords": 2225
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-7.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
+      },
+      "currentBlockers": [
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 8,
+      "title": "IELTS Academic Set 8",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1357,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1667,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2404,
+        "readingWords": 2165
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-8.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
+      },
+      "currentBlockers": [
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 9,
+      "title": "IELTS Academic Set 9",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1343,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1688,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2254,
+        "readingWords": 2187
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-9.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
+      },
+      "currentBlockers": [
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 10,
+      "title": "IELTS Academic Set 10",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1358,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1611,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2342,
+        "readingWords": 2171
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-10.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
+      },
+      "currentBlockers": [
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 11,
+      "title": "IELTS Academic Set 11",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1305,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1933,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2364,
+        "readingWords": 2151
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-11.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
+      },
+      "currentBlockers": [
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 12,
+      "title": "IELTS Academic Set 12",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1299,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1880,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2376,
+        "readingWords": 2150
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-12.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
+      },
+      "currentBlockers": [
+        "Listening audio is outside the 27–33 minute simulation gate."
+      ]
+    },
+    {
+      "set": 13,
+      "title": "IELTS Academic Set 13",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1302,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1859,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2344,
+        "readingWords": 2155
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-13.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 14,
+      "title": "IELTS Academic Set 14",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1290,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1901,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2345,
+        "readingWords": 2179
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-14.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 15,
+      "title": "IELTS Academic Set 15",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1303,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1860,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2362,
+        "readingWords": 2150
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-15.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 16,
+      "title": "IELTS Academic Set 16",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1329,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1918,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2312,
+        "readingWords": 2154
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-16.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 17,
+      "title": "IELTS Academic Set 17",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1360,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1973,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2271,
+        "readingWords": 2151
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-17.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 18,
+      "title": "IELTS Academic Set 18",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1354,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 2003,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2338,
+        "readingWords": 2172
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-18.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 19,
+      "title": "IELTS Academic Set 19",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1383,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1942,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2301,
+        "readingWords": 2151
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-19.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 20,
+      "title": "IELTS Academic Set 20",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 1308,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 1985,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2339,
+        "readingWords": 2192
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-20.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing"
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    }
+  ]
+}
