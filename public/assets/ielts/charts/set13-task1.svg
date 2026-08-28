@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif" role="img" aria-labelledby="set13-title set13-desc">
+  <title id="set13-title">International tourist arrivals by world region in 2010 and 2023</title>
+  <desc id="set13-desc">A grouped bar chart measured in millions. Europe rises from 489 to 700, Asia and the Pacific from 208 to 233, the Americas from 150 to 198, the Middle East from 61 to 87, and Africa from 50 to 66.</desc>
   <rect width="680" height="400" fill="#fafafa" rx="8"/>
   <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">International Tourist Arrivals by World Region — 2010 vs 2023 (millions)</text>
 
@@ -26,29 +28,29 @@
 
   <!-- Scale: y = 320 - val*0.386 -->
 
-  <!-- Europe: 2010=489, 2023=685 -->
+  <!-- Europe: 2010=489, 2023=700 -->
   <rect x="112" y="131" width="30" height="189" fill="#3b82f6"/>
-  <rect x="146" y="56"  width="30" height="264" fill="#f97316"/>
+  <rect x="146" y="50"  width="30" height="270" fill="#f97316"/>
   <text x="150" y="337" text-anchor="middle" font-size="9" fill="#374151">Europe</text>
 
-  <!-- Asia-Pacific: 2010=208, 2023=295 -->
+  <!-- Asia-Pacific: 2010=208, 2023=233 -->
   <rect x="222" y="240" width="30" height="80" fill="#3b82f6"/>
-  <rect x="256" y="206" width="30" height="114" fill="#f97316"/>
+  <rect x="256" y="230" width="30" height="90" fill="#f97316"/>
   <text x="257" y="337" text-anchor="middle" font-size="9" fill="#374151">Asia-Pacific</text>
 
-  <!-- Americas: 2010=150, 2023=210 -->
+  <!-- Americas: 2010=150, 2023=198 -->
   <rect x="332" y="262" width="30" height="58" fill="#3b82f6"/>
-  <rect x="366" y="239" width="30" height="81" fill="#f97316"/>
+  <rect x="366" y="244" width="30" height="76" fill="#f97316"/>
   <text x="365" y="337" text-anchor="middle" font-size="9" fill="#374151">Americas</text>
 
-  <!-- Middle East: 2010=61, 2023=89 -->
+  <!-- Middle East: 2010=61, 2023=87 -->
   <rect x="442" y="296" width="30" height="24" fill="#3b82f6"/>
   <rect x="476" y="286" width="30" height="34" fill="#f97316"/>
   <text x="476" y="337" text-anchor="middle" font-size="9" fill="#374151">Middle East</text>
 
-  <!-- Africa: 2010=50, 2023=72 -->
+  <!-- Africa: 2010=50, 2023=66 -->
   <rect x="552" y="301" width="30" height="19" fill="#3b82f6"/>
-  <rect x="586" y="292" width="30" height="28" fill="#f97316"/>
+  <rect x="586" y="295" width="30" height="25" fill="#f97316"/>
   <text x="586" y="337" text-anchor="middle" font-size="9" fill="#374151">Africa</text>
 
   <!-- Y-axis title -->

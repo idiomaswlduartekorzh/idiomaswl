@@ -86,4 +86,9 @@ const set12Task1 = set12.sections.flatMap(section => section.questions).find(que
 assert.match(set12Task1.stimulus, /coastal monitoring station.*1980.*2022.*degrees Celsius.*1961–1990/i, 'Set 12: la consigna debe declarar alcance, periodo, unidad y línea base')
 assert.match(set12Task1.imageAlt, /0\.05.*0\.91.*1961–1990 baseline/i, 'Set 12: el texto alternativo debe comunicar extremos y línea base')
 
+const { default: set13 } = await import('../src/data/mocks/ielts-set-13.ts')
+const set13Task1 = set13.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set13Task1.stimulus, /international tourist arrivals.*millions.*five world regions.*2010.*2023/i, 'Set 13: la consigna debe declarar medida, unidad, alcance y años')
+assert.match(set13Task1.imageAlt, /Europe.*Asia and the Pacific.*Americas.*Middle East.*Africa/i, 'Set 13: el texto alternativo debe enumerar las cinco regiones')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

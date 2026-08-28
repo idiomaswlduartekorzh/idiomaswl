@@ -166,6 +166,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   uso problemático y causalidad en salud mental. El Task 2 ahora plantea un conflicto
   original entre apoyo escolar y privacidad; el gráfico delimitado a una estación costera
   pasó QA visual y semántica accesible. Sólo queda diferido su audio Listening.
+- El Set 13 superó 239 controles Golden. Se sustituyó el relleno genérico de Listening
+  por cuatro guiones específicos y se actualizaron las categorías IOM/UNHCR a junio de
+  2026. Reading ahora separa promesa y ventaja cuántica demostrada, y distingue respuesta
+  placebo, efecto específico, historia natural y nocebo. El Task 2 regional es original;
+  la gráfica turística pasó QA visual y accesible. Su audio continúa bloqueado hasta
+  generación, mastering y QA.
 
 ## Auditoría final no-audio
 
