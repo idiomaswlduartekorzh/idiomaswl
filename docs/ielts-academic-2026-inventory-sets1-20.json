@@ -350,7 +350,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1933,
+          "sourceWords": 1925,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -377,7 +377,7 @@
       },
       "releaseTransforms": {
         "listeningWords": 2215,
-        "readingWords": 2180
+        "readingWords": 2172
       },
       "audio": {
         "authoredUrls": [

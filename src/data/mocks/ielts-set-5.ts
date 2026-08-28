@@ -168,7 +168,7 @@ Finally, we like to say thank you properly. The end-of-year celebration is held 
           blanks: [
             { num: 13, answers: ['18', 'eighteen'], maxWords: 1 },
             { num: 14, answers: ['two hours', '2 hours'], maxWords: 2 },
-            { num: 15, answers: ['boots', 'boot'], maxWords: 1 },
+            { num: 15, answers: ['boots'], maxWords: 1 },
             { num: 16, answers: ['belongings'], maxWords: 1 },
             { num: 17, answers: ['hot drinks', 'drinks'], maxWords: 2 },
             { num: 18, answers: ['supervisor'], maxWords: 1 },
@@ -291,7 +291,7 @@ RYAN: Will do. Thanks.`,
           blanks: [
             { num: 26, answers: ['jacket'], maxWords: 1 },
             { num: 27, answers: ['camera'], maxWords: 1 },
-            { num: 28, answers: ['bottles', 'bottle'], maxWords: 1 },
+            { num: 28, answers: ['bottles'], maxWords: 1 },
             { num: 29, answers: ['notebook'], maxWords: 1 },
             { num: 30, answers: ['assessment'], maxWords: 1 },
           ],
@@ -347,15 +347,15 @@ Advice
 • Register each hive with the local {{39}}.
 • Provide a nearby source of {{40}}.`,
           blanks: [
-            { num: 31, answers: ['rooftops', 'rooftop', 'roofs'], maxWords: 1 },
+            { num: 31, answers: ['rooftops'], maxWords: 1 },
             { num: 32, answers: ['frost'], maxWords: 1 },
             { num: 33, answers: ['pollination'], maxWords: 1 },
             { num: 34, answers: ['flavour', 'flavor'], maxWords: 1 },
             { num: 35, answers: ['awareness'], maxWords: 1 },
-            { num: 36, answers: ['flowers', 'flower'], maxWords: 1 },
+            { num: 36, answers: ['flowers'], maxWords: 1 },
             { num: 37, answers: ['pollution'], maxWords: 1 },
             { num: 38, answers: ['training'], maxWords: 1 },
-            { num: 39, answers: ['council', 'authority'], maxWords: 1 },
+            { num: 39, answers: ['council'], maxWords: 1 },
             { num: 40, answers: ['water'], maxWords: 1 },
           ],
         },
@@ -383,7 +383,7 @@ The economics of coffee production drove one of the earliest examples of global 
 
 The ecological impact of coffee's spread was considerable. In many regions, rainforest was cleared to make way for plantations, altering local biodiversity and contributing to soil erosion. Modern cultivation practices have shifted significantly: shade-grown coffee, which involves planting coffee beneath the canopy of native trees, has gained favour as an approach that preserves habitat for migratory birds and other wildlife while often improving the complexity of the bean's flavour.
 
-Today, coffee is the second most traded commodity in the world by volume, surpassed only by petroleum. Approximately two billion cups are consumed daily, and the industry employs around 125 million people worldwide, the majority of them in developing countries. Despite this scale, serious concerns persist about equity in the supply chain: a typical coffee farmer receives only a small fraction of the retail price paid by the end consumer, a disparity that has inspired the growth of fair-trade certification schemes and direct-trade models.`,
+Today, coffee is the world's most widely traded tropical product and ranks among the most traded commodities globally. Up to twenty-five million farming households account for most world output, while the wider industry supports many more livelihoods across processing, transport and retail. Despite this scale, serious concerns persist about equity in the supply chain: producing countries export much of their coffee at an early stage, before most value is added. Such imbalances have encouraged the growth of fair-trade certification schemes and direct-trade models.`,
       questions: [
         {
           type: 'formgroup',
@@ -393,7 +393,7 @@ Today, coffee is the second most traded commodity in the world by volume, surpas
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
           template: `1. {{1}}: Kaldi was a historical figure whose existence has been confirmed by archaeologists.\n2. {{2}}: Sufi monks in Yemen were among the first people to brew coffee as a drink.\n3. {{3}}: Qahveh khaneh in Constantinople served food as well as coffee.\n4. {{4}}: The 1511 ban on coffee in Mecca lasted for several decades.\n5. {{5}}: The Women's Petition Against Coffee was written by a medical doctor.\n6. {{6}}: Lloyd's of London has its origins in a coffeehouse.\n7. {{7}}: The Ottoman Empire successfully prevented coffee plants from leaving its territory.`,
           blanks: [
-            { num: 1, answers: ['NOT GIVEN'] },
+            { num: 1, answers: ['FALSE'] },
             { num: 2, answers: ['TRUE'] },
             { num: 3, answers: ['NOT GIVEN'] },
             { num: 4, answers: ['FALSE'] },
@@ -408,14 +408,14 @@ Today, coffee is the second most traded commodity in the world by volume, surpas
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `8. Coffeehouses in the Arab world were sometimes described as "{{8}} of the wise" because of their role in intellectual life.\n9. When coffee arrived in Europe, it was initially praised for encouraging {{9}} and clear thinking.\n10. Dutch traders broke the Ottoman monopoly by smuggling {{10}} coffee plants to Java.\n11. The practice of {{11}} coffee has been promoted as an environmentally friendly cultivation method.\n12. Coffee is the world's second most traded commodity after {{12}}.\n13. Fair-trade {{13}} have been developed to address inequalities in the coffee supply chain.`,
+          template: `8. Coffeehouses in the Arab world were sometimes described as "{{8}} of the wise" because of their role in intellectual life.\n9. When coffee arrived in Europe, it was initially praised for encouraging {{9}} and clear thinking.\n10. Dutch traders broke the Ottoman monopoly by smuggling {{10}} coffee plants to Java.\n11. The practice of {{11}} coffee has been promoted as an environmentally friendly cultivation method.\n12. Coffee is described as the world's most widely traded {{12}} product.\n13. Fair-trade {{13}} have been developed to address inequalities in the coffee supply chain.`,
           blanks: [
             { num: 8, answers: ['schools'] },
             { num: 9, answers: ['sobriety'] },
             { num: 10, answers: ['living'] },
             { num: 11, answers: ['shade-grown'] },
-            { num: 12, answers: ['petroleum'] },
-            { num: 13, answers: ['certification schemes', 'certification'] },
+            { num: 12, answers: ['tropical'] },
+            { num: 13, answers: ['certification schemes'] },
           ],
         },
       ],
@@ -434,13 +434,13 @@ B. Many animals rely on darkness as a fundamental cue for behaviour. Nocturnal s
 
 C. Perhaps the most dramatic examples of light pollution's effects involve sea turtles. Female turtles have nested on the same beaches for millions of years, emerging from the sea under cover of darkness to lay their eggs in the sand. When hatchlings emerge, they orient themselves towards the brightest horizon—in natural conditions, the open sea, which reflects starlight and moonlight. On beaches adjacent to developed coastlines, however, the glow from hotels, streetlights, and parking lots draws hatchlings inland, where they become disorientated, dehydrated, and eventually die. In Florida, it is estimated that hundreds of thousands of hatchlings are lost this way each year, contributing to the threatened status of several turtle species.
 
-D. Birds are equally vulnerable. Approximately three billion birds migrate annually across North America alone, and many make these journeys at night, navigating partly by the stars. Artificial light, particularly from illuminated buildings and communication towers, confuses their navigational systems. Birds become attracted to and trapped in lit areas, circling endlessly in a phenomenon known as "fatal light attraction." The problem is concentrated around large cities during peak migration periods: in a single night in 2020, an estimated one thousand birds were killed after colliding with a single illuminated building in Chicago. Across the continent, bird-window collisions kill between 365 million and one billion birds annually in the United States, with night lighting a significant contributing factor.
+D. Birds are equally vulnerable. Approximately three billion birds migrate annually across North America alone, and many make these journeys at night, navigating partly by the stars. Artificial light, particularly from illuminated buildings and communication towers, confuses their navigational systems. Birds become attracted to and trapped in lit areas, circling endlessly in a phenomenon known as "fatal light attraction." The problem is concentrated around large cities during peak migration periods: in a single night in 2023, more than one thousand migratory birds were killed after colliding with a single building in Chicago. Across the continent, bird-window collisions kill between 365 million and one billion birds annually in the United States, with night lighting a significant contributing factor.
 
 E. Insects, which form the foundation of many food webs, are acutely sensitive to artificial light. Moths and beetles are drawn irresistibly to artificial light sources in a process called positive phototaxis, and around a third of insects that approach a light source do not survive until morning. Beyond the direct mortality, light pollution disrupts insect mating, foraging, and reproduction. The pollination services provided by nocturnal insects—particularly moths—are impaired when these creatures are lured away from flowers toward lamps. Research published in 2021 found that hedgerows illuminated by streetlights had significantly fewer pollinators visiting flowers compared to unlit hedgerows, with potential knock-on effects for plant reproduction.
 
 F. The good news is that light pollution is one of the most reversible forms of environmental harm. Unlike chemical contamination or habitat loss, the effects of artificial light cease almost immediately when the source is extinguished. Conservationists and city planners have collaborated to develop dark-sky ordinances—local regulations that require shielded lighting fixtures, restrict upward-directed light, and mandate lighting curfews in sensitive areas. Coastal communities in Florida and elsewhere have adopted turtle-friendly amber LED lights, which emit wavelengths that are less disorienting to hatchlings. Evidence suggests that these measures work: in some locations, turtle nesting success has improved markedly following the implementation of appropriate lighting protocols.
 
-G. The International Dark-Sky Association campaigns globally for better lighting practices and designates certified dark-sky parks and communities where light pollution is strictly controlled. As of 2024, over two hundred such protected areas exist worldwide. However, the pace of progress remains slow relative to the expansion of global light pollution, which has been growing at approximately two percent per year. Greater public awareness, stronger regulation, and innovation in lighting technology will all be necessary if the night sky—and the wildlife that depends on it—is to be preserved.`,
+G. DarkSky International campaigns globally for better lighting practices and certifies parks, communities and other places where responsible policies protect the night. By late 2025, its programme had certified more than two hundred and fifty places worldwide. However, the pace of progress remains slow relative to the continuing expansion of global light pollution. Greater public awareness, stronger regulation, and innovation in lighting technology will all be necessary if the night sky—and the wildlife that depends on it—is to be preserved.`,
       questions: [
         {
           type: 'matching',
@@ -449,7 +449,7 @@ G. The International Dark-Sky Association campaigns globally for better lighting
           qRange: [14, 20],
           groupLabel: 'The passage has seven paragraphs, A–G. Which paragraph contains the following information?',
           items: [
-            { num: 14, stem: 'A description of a government body that certifies areas with low light pollution', answer: 'G' },
+            { num: 14, stem: 'A description of an organisation that certifies places with low light pollution', answer: 'G' },
             { num: 15, stem: 'An explanation of why hatchling sea turtles instinctively move towards light', answer: 'C' },
             { num: 16, stem: 'Details of how light affects a specific chemical produced in animals', answer: 'B' },
             { num: 17, stem: 'Statistical data on the collision deaths of migratory birds', answer: 'D' },
@@ -477,7 +477,7 @@ G. The International Dark-Sky Association campaigns globally for better lighting
           template: `Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings are drawn towards {{22}} areas rather than the sea. In birds, the problem of {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.`,
           blanks: [
             { num: 21, answers: ['melatonin'] },
-            { num: 22, answers: ['lit', 'illuminated', 'developed'] },
+            { num: 22, answers: ['developed'] },
             { num: 23, answers: ['fatal light attraction'] },
             { num: 24, answers: ['phototaxis'] },
             { num: 25, answers: ['hedgerows'] },
@@ -649,9 +649,13 @@ The implications for policy and design are significant. Behavioural economists h
           text: 'Part 1 — Personal questions about home and daily life',
           followUp: [
             'Can you describe where you currently live?',
+            'How long have you lived there?',
             'Do you prefer living in a city or in the countryside? Why?',
             'How much time do you spend at home each day?',
             'Do you like your neighbourhood? What do you like or dislike about it?',
+            'What part of your daily routine do you enjoy most?',
+            'Is your routine different at weekends?',
+            'Would you like to move somewhere else in the future? Why or why not?',
           ],
         },
         {

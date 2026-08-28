@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+  <title>CO₂ emissions per capita by sector in Germany and the United Kingdom</title>
+  <desc>Grouped bar chart comparing transport, industry, heating and electricity emissions in 2000 and 2020. Every sector declined in both countries.</desc>
   <!-- Background -->
   <rect width="680" height="400" fill="#fafafa" rx="8"/>
 
