@@ -8,6 +8,7 @@ const plan = JSON.parse(readFileSync('docs/ielts-2026-audio-generation-plan-2026
 const casting = JSON.parse(readFileSync('scripts/ielts-2026-voice-casting.json', 'utf8'));
 const pilot = JSON.parse(readFileSync('scripts/ielts-2026-audio-pilot-acceptance.json', 'utf8'));
 const set5Candidate = JSON.parse(readFileSync('scripts/ielts-2026-audio-set5-candidate.json', 'utf8'));
+const cacheReuse = JSON.parse(readFileSync('docs/ielts-audio-cache-reuse-2026-08-28.json', 'utf8'));
 const generatorSource = readFileSync('scripts/generate-ielts-2026-audio.mjs', 'utf8');
 
 test('the checked-in invoice never discounts authored characters', () => {
@@ -91,14 +92,36 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.ok(reuseOnlyGate > 0 && apiSecretRead > reuseOnlyGate, '--reuse-only must exit the gate before reading a provider secret');
   assert.match(generatorSource, /Math\.min\(providerAvailableCredits, conservativeAvailableCredits\)/);
   assert.match(generatorSource, /conservativeAvailableCredits -= Math\.ceil/);
-  assert.match(
-    generatorSource,
-    /billableCharacters: row\.sourceCharacters - reusedPilotCharacters/,
-    'prior-cache speech remains historically billable; only accepted pilot bytes are free',
-  );
+  assert.match(generatorSource, /function auditedCacheReusePath\(segment\)/);
+  assert.match(generatorSource, /- reusedAuditedCacheCharacters/);
+  assert.match(generatorSource, /sha256\(readFileSync\(sourcePath\)\), entry\.audioSha256/);
   assert.match(generatorSource, /sameAudioBytes\(segmentPath, approvedPilotPath\)/);
   assert.doesNotMatch(generatorSource, /apad=whole_dur/);
   assert.match(generatorSource, /assertAudioTiming\(wavPath/);
+});
+
+test('the pinned physical cache audit yields a conservative incremental invoice', () => {
+  assert.equal(cacheReuse.currentManifestSha256, plan.manifestSha256);
+  assert.equal(cacheReuse.integrity.physicalSegmentFiles, 154);
+  assert.equal(cacheReuse.integrity.validAudioSegmentFiles, 154);
+  assert.equal(cacheReuse.integrity.uniqueReusableSourceSegments, 142);
+  assert.equal(cacheReuse.invoice.reusableSegmentOccurrences, 351);
+  assert.equal(cacheReuse.invoice.reusableCharacters, 29028);
+  assert.equal(cacheReuse.invoice.incrementalCharacters, 328988);
+  assert.equal(cacheReuse.invoice.incrementalCharacterEquivalentCredits, 164494);
+  assert.equal(cacheReuse.invoice.incrementalCredits, 164934);
+  assert.equal(cacheReuse.invoice.incrementalUsdBeforeTax, 16.4494);
+  assert.equal(cacheReuse.capacitySnapshot.incrementalCreditsExceedSingleResetLimitBy, 43903);
+  assert.equal(cacheReuse.perSet.find(row => row.setId === 'set-4').reusableSegmentOccurrences, 82);
+  assert.equal(cacheReuse.perSet.find(row => row.setId === 'set-4').incrementalCharacters, 4308);
+  assert.equal(cacheReuse.perSet.find(row => row.setId === 'set-5').reusableSegmentOccurrences, 51);
+  assert.equal(cacheReuse.perSet.find(row => row.setId === 'set-5').incrementalCharacters, 12830);
+  assert.deepEqual(cacheReuse.recommendedProductionWaves[0].setIds, Array.from({ length: 14 }, (_, index) => `set-${index + 4}`));
+  assert.equal(cacheReuse.recommendedProductionWaves[0].conservativeCredits, 112473);
+  assert.equal(cacheReuse.recommendedProductionWaves[0].singleResetHeadroomCredits, 8558);
+  assert.equal(cacheReuse.recommendedProductionWaves[1].conservativeCredits, 52461);
+  assert.equal(cacheReuse.capacitySnapshot.smallestCompleteSet.setId, 'set-4');
+  assert.equal(cacheReuse.capacitySnapshot.smallestCompleteSet.currentBalanceDeficit, 1195);
 });
 
 test('dry-run source verification is local, deterministic and non-authorizing', () => {
@@ -111,7 +134,8 @@ test('dry-run source verification is local, deterministic and non-authorizing', 
   assert.equal(output.full.files, 20);
   assert.equal(output.remainingGeneration.files, 18);
   assert.equal(output.remainingGeneration.billableCharacters, 322416);
-  assert.equal(output.remainingGeneration.estimatedCredits, 161208);
+  assert.equal(output.remainingGeneration.characterEquivalentCredits, 161208);
+  assert.equal(output.remainingGeneration.estimatedCredits, 161717);
   assert.equal(output.remainingGeneration.estimatedUsdBeforeTax, 16.1208);
   assert.equal(output.full.generationAuthorized, false);
   assert.match(output.note, /No API call/);

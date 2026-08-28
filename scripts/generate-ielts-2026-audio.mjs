@@ -25,8 +25,12 @@ const value = flag => has(flag) ? args[args.indexOf(flag) + 1] : null;
 const manifestHash = plan.manifestSha256;
 const sourceCachePlanPath = value('--reuse-source-plan');
 const sourceCacheSegmentsDir = value('--reuse-source-segments');
+const auditedCacheRoot = value('--reuse-cache-root') ?? process.env.IELTS_AUDIO_CACHE_ROOT ?? null;
+const auditedCacheReportPath = value('--reuse-cache-report')
+  ?? (auditedCacheRoot ? path.join(repoRoot, 'docs', 'ielts-audio-cache-reuse-2026-08-28.json') : null);
 
 assert.equal(Boolean(sourceCachePlanPath), Boolean(sourceCacheSegmentsDir), 'pass both --reuse-source-plan and --reuse-source-segments');
+assert.equal(Boolean(auditedCacheRoot), Boolean(auditedCacheReportPath), 'pass --reuse-cache-root with --reuse-cache-report (the checked-in report is the default)');
 const sourceCachePlan = sourceCachePlanPath
   ? JSON.parse(readFileSync(path.resolve(sourceCachePlanPath), 'utf8'))
   : null;
@@ -40,11 +44,38 @@ if (sourceCachePlan) {
     'source cache does not belong to the supplied source plan',
   );
 }
+const auditedCacheReport = auditedCacheReportPath
+  ? JSON.parse(readFileSync(path.resolve(auditedCacheReportPath), 'utf8'))
+  : null;
+if (auditedCacheReport) {
+  assert.equal(auditedCacheReport.currentManifestSha256, manifestHash, 'audited cache report belongs to a stale IELTS manifest');
+  assert.equal(auditedCacheReport.schemaVersion, 1, 'unsupported audited cache report schema');
+  assert.equal(auditedCacheReport.cacheEntries.length, auditedCacheReport.integrity.uniqueReusableSourceSegments);
+  assert.equal(auditedCacheReport.currentVoiceConfigurationSha256, voiceConfigurationSha256(), 'audited cache report belongs to another voice configuration');
+}
+const auditedCacheIndex = new Map((auditedCacheReport?.cacheEntries ?? []).map(entry => [
+  `${entry.profile}|${entry.textSha256}`,
+  entry,
+]));
+assert.equal(auditedCacheIndex.size, auditedCacheReport?.cacheEntries.length ?? 0, 'audited cache report contains duplicate source keys');
 
 assert.equal(casting.manifest_sha256, manifestHash, 'casting belongs to a stale IELTS manifest');
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex');
+}
+
+function voiceConfigurationSha256() {
+  return sha256(JSON.stringify({
+    modelId: casting.model_id,
+    voiceSettings: casting.voice_settings,
+    roleVoice: casting.role_voice,
+    voiceIds: Object.fromEntries(Object.entries(casting.voices).map(([accent, roles]) => [
+      accent,
+      Object.fromEntries(Object.entries(roles).map(([role, voice]) => [role, voice.voice_id])),
+    ])),
+    intermediateOutputFormat: casting.target.intermediate_output_format,
+  }));
 }
 
 function segmentSourceSha256(row) {
@@ -202,13 +233,25 @@ function voiceFor(profile) {
 }
 
 function invoice(rows, label) {
-  const characters = rows.reduce((total, row) => total + row.sourceCharacters, 0);
+  const sourceCharacters = rows.reduce((total, row) => total + row.sourceCharacters, 0);
+  const reusableCharacters = rows.reduce((total, row) => total + row.segments.reduce((rowTotal, segment) => (
+    rowTotal + (auditedCacheIndex.has(`${segment.profile}|${segment.textSha256}`) ? segment.characters : 0)
+  ), 0), 0);
+  const characters = sourceCharacters - reusableCharacters;
+  const billableSegments = rows.flatMap(row => row.segments.filter(segment => (
+    !auditedCacheIndex.has(`${segment.profile}|${segment.textSha256}`)
+  )));
   return {
     scope: label,
     manifestSha256: manifestHash,
     files: rows.length,
+    sourceCharacters,
+    reusableCharacters,
     billableCharacters: characters,
-    estimatedCredits: Math.ceil(characters * Number(casting.credits_per_character)),
+    characterEquivalentCredits: Math.ceil(characters * Number(casting.credits_per_character)),
+    estimatedCredits: billableSegments.reduce((total, segment) => (
+      total + Math.ceil(segment.characters * Number(casting.credits_per_character))
+    ), 0),
     estimatedUsdBeforeTax: Number((characters / 1000 * Number(casting.api_price_usd_per_1000_characters)).toFixed(4)),
     generationAuthorized: false,
   };
@@ -258,6 +301,18 @@ async function ensureGenerationGate(rows) {
   assert.equal(Number(fullBatch) + Number(selectedSetNumbers.length > 0), 1, 'choose exactly one scope: --all or --sets');
   assert.ok(rows.length > 0, 'generation scope is empty');
   assert.equal(value('--approve-manifest'), manifestHash, `pass --approve-manifest ${manifestHash}`);
+  const bill = invoice(rows, scopeLabel());
+  assert.equal(
+    plan.timingFidelityGate?.status,
+    'passed',
+    'paid generation is blocked until every Listening script passes the official-sample timing-density gate',
+  );
+  const ffmpeg = spawnSync('ffmpeg', ['-version'], { encoding: 'utf8' });
+  assert.equal(ffmpeg.status, 0, 'ffmpeg is required for assembly');
+  if (has('--reuse-only')) {
+    assert.ok(auditedCacheReport || sourceCachePlan, '--reuse-only requires an audited or pinned source cache');
+    return { apiKey: null, bill, cap: 0, reserve: 0, availableCredits: null, allowPartialAtReserve: true, reuseOnly: true };
+  }
   assert.equal(casting.approval, 'approved_by_owner', 'voice casting still needs explicit owner approval');
   const approvedSets = new Set(casting.approval_scope.approved_sets ?? []);
   for (const row of rows) {
@@ -286,18 +341,7 @@ async function ensureGenerationGate(rows) {
     `requested reserve ${reserve} is below owner-approved ${casting.approval_scope.minimum_remaining_credits}`,
   );
   assert.ok(value('--seed-salt'), 'pass a non-empty --seed-salt for reproducible synthesis');
-  const bill = invoice(rows, scopeLabel());
   assert.ok(bill.estimatedUsdBeforeTax <= cap, `estimated USD ${bill.estimatedUsdBeforeTax} exceeds approved ceiling ${cap}`);
-  assert.equal(
-    plan.timingFidelityGate?.status,
-    'passed',
-    'paid generation is blocked until every Listening script passes the official-sample timing-density gate',
-  );
-  const ffmpeg = spawnSync('ffmpeg', ['-version'], { encoding: 'utf8' });
-  assert.equal(ffmpeg.status, 0, 'ffmpeg is required for assembly');
-  if (has('--reuse-only')) {
-    return { apiKey: null, bill, cap, reserve, availableCredits: null, allowPartialAtReserve: true, reuseOnly: true };
-  }
   const apiKey = process.env.ELEVENLABS_API_KEY;
   assert.ok(apiKey, 'ELEVENLABS_API_KEY is required for generation and is never read from a committed file');
   const subscription = await apiJson('/v1/user/subscription', apiKey);
@@ -458,6 +502,21 @@ function priorSourceCacheReusePath(row, segment) {
   return isReusableSegment(sourcePath) ? sourcePath : null;
 }
 
+function auditedCacheReusePath(segment) {
+  if (!auditedCacheReport) return null;
+  const textSha256 = sha256(segment.text);
+  const entry = auditedCacheIndex.get(`${segment.profile}|${textSha256}`);
+  if (!entry) return null;
+  assert.equal(entry.characters, segment.text.length, 'audited cache character count differs from hydrated text');
+  const resolvedCacheRoot = path.resolve(auditedCacheRoot);
+  const sourcePath = path.resolve(resolvedCacheRoot, entry.relativePath);
+  const relativeToCache = path.relative(resolvedCacheRoot, sourcePath);
+  assert.ok(relativeToCache && !relativeToCache.startsWith('..') && !path.isAbsolute(relativeToCache), 'audited cache entry escapes the cache root');
+  assert.ok(isReusableSegment(sourcePath), `audited cache segment is missing or invalid: ${sourcePath}`);
+  assert.equal(sha256(readFileSync(sourcePath)), entry.audioSha256, `audited cache segment bytes changed: ${sourcePath}`);
+  return sourcePath;
+}
+
 function sameAudioBytes(leftPath, rightPath) {
   return Boolean(leftPath && rightPath)
     && isReusableSegment(leftPath)
@@ -468,6 +527,8 @@ function sameAudioBytes(leftPath, rightPath) {
 function reuseAccounting(row, segmentPaths) {
   let reusedPilotCharacters = 0;
   let reusedPilotSegments = 0;
+  let reusedAuditedCacheCharacters = 0;
+  let reusedAuditedCacheSegments = 0;
   let reusedCacheCharacters = 0;
   let reusedCacheSegments = 0;
   for (const [segmentIndex, segment] of row.segments.entries()) {
@@ -478,6 +539,12 @@ function reuseAccounting(row, segmentPaths) {
       reusedPilotSegments += 1;
       continue;
     }
+    const auditedCachePath = auditedCacheReusePath(segment);
+    if (sameAudioBytes(segmentPath, auditedCachePath)) {
+      reusedAuditedCacheCharacters += segment.text.length;
+      reusedAuditedCacheSegments += 1;
+      continue;
+    }
     const sourceCachePath = priorSourceCacheReusePath(row, segment);
     if (sameAudioBytes(segmentPath, sourceCachePath)) {
       reusedCacheCharacters += segment.text.length;
@@ -485,15 +552,20 @@ function reuseAccounting(row, segmentPaths) {
     }
   }
   return {
-    reusedCharacters: reusedPilotCharacters + reusedCacheCharacters,
-    reusedSegments: reusedPilotSegments + reusedCacheSegments,
+    reusedCharacters: reusedPilotCharacters + reusedAuditedCacheCharacters + reusedCacheCharacters,
+    reusedSegments: reusedPilotSegments + reusedAuditedCacheSegments + reusedCacheSegments,
     reusedPilotCharacters,
     reusedPilotSegments,
+    reusedAuditedCacheCharacters,
+    reusedAuditedCacheSegments,
     reusedCacheCharacters,
     reusedCacheSegments,
-    // Prior-cache speech was already charged by ElevenLabs. Only byte-identical,
-    // owner-accepted pilot announcements reduce the lifetime provider invoice.
-    billableCharacters: row.sourceCharacters - reusedPilotCharacters,
+    // All byte-identical cache speech avoids a new provider request. Historical
+    // spending remains recorded separately in the accepted pilot/candidate logs.
+    billableCharacters: row.sourceCharacters
+      - reusedPilotCharacters
+      - reusedAuditedCacheCharacters
+      - reusedCacheCharacters,
   };
 }
 
@@ -532,8 +604,9 @@ async function generate(rows) {
       const segmentPath = segmentPaths[segmentIndex];
       if (isReusableSegment(segmentPath)) continue;
       const approvedPilotPath = approvedPilotReusePath(row, segment);
-      const sourceCachePath = approvedPilotPath ? null : priorSourceCacheReusePath(row, segment);
-      const reusePath = approvedPilotPath ?? sourceCachePath;
+      const auditedCachePath = approvedPilotPath ? null : auditedCacheReusePath(segment);
+      const sourceCachePath = approvedPilotPath || auditedCachePath ? null : priorSourceCacheReusePath(row, segment);
+      const reusePath = approvedPilotPath ?? auditedCachePath ?? sourceCachePath;
       if (reusePath) {
         copyFileSync(reusePath, segmentPath);
       }

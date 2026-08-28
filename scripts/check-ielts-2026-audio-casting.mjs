@@ -10,6 +10,7 @@ const plan = JSON.parse(readFileSync(path.join(root, 'docs', 'ielts-2026-audio-g
 const casting = JSON.parse(readFileSync(path.join(root, 'scripts', 'ielts-2026-voice-casting.json'), 'utf8'));
 const pilot = JSON.parse(readFileSync(path.join(root, 'scripts', 'ielts-2026-audio-pilot-acceptance.json'), 'utf8'));
 const set5Candidate = JSON.parse(readFileSync(path.join(root, 'scripts', 'ielts-2026-audio-set5-candidate.json'), 'utf8'));
+const cacheReuse = JSON.parse(readFileSync(path.join(root, 'docs', 'ielts-audio-cache-reuse-2026-08-28.json'), 'utf8'));
 
 const segmentSourceSha256 = row => createHash('sha256').update(JSON.stringify(row.segments.map(segment => ({
   profile: segment.profile,
@@ -19,6 +20,7 @@ const segmentSourceSha256 = row => createHash('sha256').update(JSON.stringify(ro
 assert.equal(casting.manifest_sha256, plan.manifestSha256, 'casting belongs to a stale IELTS audio manifest');
 assert.equal(casting.model_id, 'eleven_flash_v2_5');
 assert.equal(casting.credits_per_character, plan.invoice.creditsPerCharacter);
+assert.equal(cacheReuse.currentManifestSha256, plan.manifestSha256);
 assert.deepEqual(casting.approval_scope.approved_sets, []);
 assert.deepEqual(casting.approval_scope.historical_approved_sets, [4, 5]);
 assert.ok(casting.approval_scope.approved_max_usd_before_tax >= 0.7185);
@@ -54,12 +56,11 @@ const providerBillableCharactersForPreservedSynthesis = pilot.source_characters
 const estimatedProviderCreditsConsumed = Math.ceil(
   providerBillableCharactersForPreservedSynthesis * casting.credits_per_character,
 );
-const remainingGenerationCharacters = plan.invoice.projectedMinimumCharactersAfterEditorialGate
-  - preservedSourceCharacters;
-const remainingGenerationCredits = requiredCredits - preservedSourceCreditEquivalent;
-const remainingGenerationUsdBeforeTax = Number(
-  (remainingGenerationCharacters / 1000 * casting.api_price_usd_per_1000_characters).toFixed(4),
-);
+const reusableCharacters = cacheReuse.invoice.reusableCharacters;
+const avoidedRequestRoundedCredits = cacheReuse.invoice.avoidedRequestRoundedCredits;
+const incrementalGenerationCharacters = cacheReuse.invoice.incrementalCharacters;
+const incrementalGenerationCredits = cacheReuse.invoice.incrementalCredits;
+const incrementalGenerationUsdBeforeTax = cacheReuse.invoice.incrementalUsdBeforeTax;
 const availableCredits = casting.account_snapshot.available_credits;
 const resetCreditLimit = casting.account_snapshot.character_limit;
 const blockers = [];
@@ -68,8 +69,8 @@ if (casting.approval_scope.approved_sets.length === 0) blockers.push('the expand
 if (plan.timingFidelityGate?.status !== 'passed') blockers.push(`Listening scripts need ${plan.rows.reduce((total, row) => total + row.timingAdditionalWordsRequired, 0)} additional words before paid synthesis`);
 if (pilot.timing_reassessment?.release_ready_under_current_gate === false) blockers.push('Set 4 historical master fails the current timing-fidelity gate');
 if (set5Candidate.timingQa?.status === 'rejected') blockers.push('Set 5 candidate fails the current timing-fidelity gate');
-if (!pilot.audio_sha256 && availableCredits < pilotCredits) blockers.push(`account has ${availableCredits} credits; Set 4 pilot requires ${pilotCredits}`);
-if (resetCreditLimit < remainingGenerationCredits) blockers.push(`post-reset limit is ${resetCreditLimit}; remaining current work requires ${remainingGenerationCredits}`);
+if (availableCredits < incrementalGenerationCredits) blockers.push(`account snapshot has ${availableCredits} credits; exact-hash incremental work requires ${incrementalGenerationCredits}`);
+if (resetCreditLimit < incrementalGenerationCredits) blockers.push(`post-reset limit is ${resetCreditLimit}; exact-hash incremental work requires ${incrementalGenerationCredits}`);
 
 console.log(JSON.stringify({
   manifestSha256: plan.manifestSha256,
@@ -84,9 +85,11 @@ console.log(JSON.stringify({
   preservedSourceCreditEquivalent,
   providerBillableCharactersForPreservedSynthesis,
   estimatedProviderCreditsConsumed,
-  remainingGenerationCharacters,
-  remainingGenerationCredits,
-  remainingGenerationUsdBeforeTax,
+  reusableCharacters,
+  avoidedRequestRoundedCredits,
+  incrementalGenerationCharacters,
+  incrementalGenerationCredits,
+  incrementalGenerationUsdBeforeTax,
   availableCredits,
   resetCreditLimit,
   nextResetLocal: casting.account_snapshot.next_reset_local,

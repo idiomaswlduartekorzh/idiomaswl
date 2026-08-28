@@ -141,21 +141,29 @@ El manifiesto suma 358.016 caracteres, 179.008 créditos y USD 17,9008 antes de 
 y reintentos. `generationAuthorized=false`: aunque el gate de guion ya está aprobado, el
 generador rechaza llamadas al proveedor porque el manifiesto no tiene autorización vigente.
 
-Sets 4 y 5 conservan 27.427 caracteres históricos para reutilización selectiva únicamente
-cuando el hash del segmento todavía coincida con el texto vigente. Ambos masters completos
-son incompatibles con el nuevo manifiesto y están marcados como superados; ninguno
-de los masters es liberable bajo el gate actual. El MP3 histórico de Set 5 permanece en el caché estable
+La auditoría física `docs/ielts-audio-cache-reuse-2026-08-28.json` verificó 154 archivos
+de segmento (29.044.006 bytes), todos legibles como audio. Al deduplicarlos quedan 142
+segmentos fuente únicos; la coincidencia estricta `perfil de voz + SHA-256 del texto`
+cubre 351 apariciones y 29.028 caracteres del manifiesto vigente. Esto reduce la factura
+incremental a 328.988 caracteres, 164.494 créditos equivalentes por volumen y un techo
+conservador de 164.934 tras redondear cada solicitud, o USD 16,4494 antes de impuestos y
+reintentos. Set 4 puede reciclar 82 de 98 segmentos (14.014 caracteres) y Set 5, 51 de 78
+(4.448 caracteres). Los anuncios comunes también se reciclan en los demás Sets.
+
+Ambos masters completos siguen siendo incompatibles con el nuevo manifiesto y están
+marcados como superados; ninguno es liberable bajo el gate actual. El MP3 histórico de Set 5 permanece en el caché estable
 `/Users/josedavidduartesilva/Developer/idiomaswl-ielts-audio-cache/a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea/sets-5/set-5/ielts-listening-set-5.mp3`.
 La consulta de sólo lectura del 28 de agosto registró 964 créditos disponibles y renovación
 el 5 de septiembre de 2026 a las 18:13:51 (Bogotá); la consulta no consumió créditos.
 
 El presupuesto anterior dejó de ser válido porque dependía de guiones demasiado breves.
-Los 964 créditos observados no alcanzan para sintetizar el manifiesto congelado y no se
-gastarán sin una nueva autorización. La expansión y auditoría de los 20 guiones ya terminó;
-el siguiente gate es cuantificar la reutilización real por hash y la factura incremental.
-
-Antes de cualquier nueva llamada a ElevenLabs se debe recalcular la factura incremental
-excluyendo bytes aceptados de Set 4 y caché verificable de Set 5. Después, cada Set debe
+Los 964 créditos observados no cubren los 164.934 créditos incrementales conservadores y no se gastarán
+sin una nueva autorización. Incluso el límite de una renovación completa (121.031) queda
+43.903 créditos por debajo del techo incremental; será necesario dividir la producción
+entre ciclos o ampliar capacidad. La ola recomendada 1 cubre Sets 4–17 con 112.473 créditos
+conservadores y deja 8.558 de margen dentro de una renovación; la ola 2 cubre Sets 18–20
+y 1–3 con 52.461. Este orden es sólo un plan técnico y no autoriza gasto. La expansión y auditoría de los 20 guiones ya terminó y
+la factura incremental está congelada por hash. Después, cada Set debe
 pasar, en una microfase independiente:
 
 1. manifiesto inmutable de texto, casting y coste máximo autorizado;
