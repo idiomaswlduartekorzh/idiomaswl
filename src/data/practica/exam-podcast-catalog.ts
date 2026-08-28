@@ -24,6 +24,10 @@ import {
   TOPIK_I_KOREAN_ROUTINE_NOTES,
   TOPIK_I_KOREAN_ROUTINE_PODCAST,
 } from './podcasts/topik-i-7-day-routine-korean';
+import {
+  GOETHE_ZERTIFIKAT_STRATEGY_NOTES,
+  GOETHE_ZERTIFIKAT_STRATEGY_PODCAST,
+} from './podcasts/estrategias-para-aprobar-el-goethe-zertifikat';
 import { PODCAST_LIBRARY, type PodcastLibraryEpisode } from './podcast-library';
 
 export type ExamPodcastLink = {
@@ -206,6 +210,22 @@ export const EXAM_PODCASTS: readonly ExamPodcastEpisode[] = [
     ],
     keywords: ['TOPIK I 팟캐스트', '토픽 1 공부법', 'TOPIK I 7일 루틴', '토픽 I 듣기 읽기 전략', '한국어능력시험 초급'],
     locale: 'ko',
+  },
+  {
+    ...GOETHE_ZERTIFIKAT_STRATEGY_PODCAST,
+    ...byId('goethe-zertifikat-strategy-map'),
+    fullDescription: GOETHE_ZERTIFIKAT_STRATEGY_PODCAST.description,
+    notes: GOETHE_ZERTIFIKAT_STRATEGY_NOTES,
+    relatedLinks: [
+      { href: '/examenes/goethe', label: 'Abrir el hub del Goethe-Zertifikat' },
+      { href: '/examenes/goethe/practica/set-1', label: 'Hacer el primer simulacro' },
+      { href: '/practica/aleman/b1/lectura', label: 'Entrenar lectura en alemán B1' },
+      { href: '/practica/aleman/b1/escucha', label: 'Entrenar escucha en alemán B1' },
+      { href: '/practica/aleman/b1/escritura', label: 'Entrenar escritura en alemán B1' },
+      { href: '/practica/aleman/b1/habla', label: 'Entrenar expresión oral en alemán B1' },
+    ],
+    keywords: ['podcast Goethe-Zertifikat', 'cómo aprobar Goethe B1', 'estrategias examen Goethe', 'preparación Goethe español', 'Goethe-Zertifikat audio'],
+    locale: 'es',
   },
 ] as const;
 

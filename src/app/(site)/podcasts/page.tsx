@@ -7,12 +7,12 @@ import { PODCAST_LIBRARY } from '@/data/practica/podcast-library';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Podcasts para IELTS, TOEFL, ICFES, Cambridge, SAT y TOPIK',
-  description: 'Escucha gratis las guías en audio de WeLearn para IELTS, TOEFL iBT, ICFES Saber 11, Cambridge B2 First, Digital SAT y TOPIK I.',
+  title: 'Podcasts de exámenes: IELTS, TOEFL, SAT, TOPIK y Goethe',
+  description: 'Escucha gratis las guías en audio de WeLearn para IELTS, TOEFL iBT, ICFES Saber 11, Cambridge B2 First, Digital SAT, TOPIK I y Goethe-Zertifikat.',
   alternates: { canonical: 'https://www.idiomaswl.com/podcasts' },
   openGraph: {
     title: 'Biblioteca de podcasts de WeLearn',
-    description: 'Nueve guías editoriales en audio para entender el examen antes de practicarlo.',
+    description: 'Diez guías editoriales en audio para entender el examen antes de practicarlo.',
     url: 'https://www.idiomaswl.com/podcasts',
     type: 'website',
     locale: 'es_CO',
@@ -31,12 +31,12 @@ export default function PodcastsPage() {
             <p className={styles.eyebrow}><Headphones size={16} aria-hidden="true" /> Biblioteca de audio</p>
             <h1 id="podcast-library-title">Estrategia que se escucha.</h1>
             <p className={styles.lead}>
-              Nueve episodios gratuitos para entender el examen antes de practicarlo. Escucha aquí o abre la guía completa con notas, rutas y ejercicios.
+              Diez episodios gratuitos para entender el examen antes de practicarlo. Escucha aquí o abre la guía completa con notas, rutas y ejercicios.
             </p>
             <div className={styles.heroStats} aria-label="Resumen de la biblioteca">
-              <span><strong>09</strong> guías en audio</span>
-              <span><strong>3 h 14 min</strong> de orientación</span>
-              <span><strong>6</strong> rutas de examen</span>
+              <span><strong>10</strong> guías en audio</span>
+              <span><strong>3 h 35 min</strong> de orientación</span>
+              <span><strong>7</strong> rutas de examen</span>
             </div>
           </div>
 
@@ -47,7 +47,7 @@ export default function PodcastsPage() {
                 <i key={`${height}-${index}`} style={{ '--wave-height': `${height}%` } as CSSProperties} />
               ))}
             </div>
-            <strong>09</strong>
+            <strong>10</strong>
             <small>episodios publicados</small>
           </div>
         </div>
