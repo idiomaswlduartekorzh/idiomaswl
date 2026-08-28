@@ -4,9 +4,10 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
+import { IELTS_EDITORIAL_STATUS_2026 } from '../src/data/mocks/ielts-editorial-status.ts';
 import { toPublicIeltsMock } from '../src/data/mocks/ielts-public-payload.ts';
 
-const SETS = Array.from({ length: 17 }, (_, index) => index + 4);
+const SETS = Array.from({ length: 20 }, (_, index) => index + 1);
 const READING_WORD_RANGE = [2150, 2750];
 // IELTS does not publish a transcript word minimum. This conservative WeLearn gate
 // uses 55 words per response, below the roughly 72 extracted from 44 response
@@ -228,6 +229,10 @@ for (const setNumber of SETS) {
   if (speakingCount(3) < 4) blockers.push(`Set ${setNumber}: Speaking Part 3 ofrece menos de 4 preguntas.`);
 
   if (publicKeyCount > 0) blockers.push(`Set ${setNumber}: ${publicKeyCount} claves cruzan al payload del cliente.`);
+  const editorial = IELTS_EDITORIAL_STATUS_2026[setNumber];
+  if (!editorial?.contentCertified) {
+    blockers.push(`Set ${setNumber}: contenido no certificado (${editorial?.certification ?? 'sin registro'}): ${editorial?.evidence ?? 'falta evidencia editorial'}`);
+  }
 
   rows.push({
     set: setNumber,
@@ -261,9 +266,9 @@ for (const skill of ['listening', 'reading']) {
     blockers.push(`${skill}: la respuesta correcta es la única más larga en ${longest}/${total} MCQ.`);
   }
 }
-if (!listeningTypes.has('matching')) blockers.push('Listening 4–20 no contiene ninguna tarea matching.');
+if (!listeningTypes.has('matching')) blockers.push('Listening 1–20 no contiene ninguna tarea matching.');
 if (!hasPlanMapDiagram) {
-  blockers.push('Listening 4–20 no contiene una tarea explícita de plan/map/diagram labelling.');
+  blockers.push('Listening 1–20 no contiene una tarea explícita de plan/map/diagram labelling.');
 }
 
 console.table(rows);
@@ -282,5 +287,5 @@ if (blockers.length) {
   for (const blocker of blockers) console.error(`- ${blocker}`);
   process.exitCode = 1;
 } else {
-  console.log('\n✓ IELTS Academic 2026 release audit: Sets 4–20 conformes.');
+  console.log('\n✓ IELTS Academic 2026 release audit: Sets 1–20 conformes.');
 }

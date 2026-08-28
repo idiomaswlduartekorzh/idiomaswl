@@ -4,6 +4,7 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
+import { IELTS_EDITORIAL_STATUS_2026 } from '../src/data/mocks/ielts-editorial-status.ts';
 
 const SETS = Array.from({ length: 20 }, (_, index) => index + 1);
 const REPORT_AS_OF = '2026-08-28';
@@ -59,11 +60,14 @@ const REVIEW_DECISIONS = {
 };
 
 function decisionFor(setNumber) {
-  if (REVIEW_DECISIONS[setNumber]) return REVIEW_DECISIONS[setNumber];
+  if (REVIEW_DECISIONS[setNumber]) return {
+    ...REVIEW_DECISIONS[setNumber],
+    provenance: IELTS_EDITORIAL_STATUS_2026[setNumber].provenance,
+  };
   if (setNumber <= 12) {
     return {
       state: 'reuse-content-replace-legacy-audio',
-      provenance: 'audited-original-welearn',
+      provenance: IELTS_EDITORIAL_STATUS_2026[setNumber].provenance,
       listening: 'preserve-and-audit-script; replace-audio-last',
       reading: 'preserve-and-verify-against-golden',
       writing: 'preserve-and-verify-against-golden',
@@ -73,7 +77,7 @@ function decisionFor(setNumber) {
   }
   return {
     state: 'reuse-content-generate-audio-last',
-    provenance: 'audited-original-welearn',
+    provenance: IELTS_EDITORIAL_STATUS_2026[setNumber].provenance,
     listening: 'preserve-and-audit-script; generate-audio-last',
     reading: 'preserve-and-verify-against-golden',
     writing: 'preserve-and-verify-against-golden',
@@ -170,11 +174,10 @@ for (const setNumber of SETS) {
     && audioDuration >= AUDIO_TARGET_SECONDS[0]
     && audioDuration <= AUDIO_TARGET_SECONDS[1];
   const decision = decisionFor(setNumber);
+  const editorialStatus = IELTS_EDITORIAL_STATUS_2026[setNumber];
   const blockers = structuralBlockers(authoredMock);
   if (setNumber < 4) blockers.push('Not covered by the pre-existing IELTS Academic 2026 release audit.');
-  if (decision.provenance.startsWith('blocked') || decision.provenance.startsWith('pending')) {
-    blockers.push(`Content provenance: ${decision.provenance}.`);
-  }
+  if (!editorialStatus.contentCertified) blockers.push(`Editorial certification: ${editorialStatus.certification}.`);
   if (!durationPasses) blockers.push(audioFileExists ? 'Listening audio is outside the 27–33 minute simulation gate.' : 'Listening audio is missing.');
 
   inventory.push({
@@ -199,6 +202,7 @@ for (const setNumber of SETS) {
       durationGate: durationPasses ? 'pass' : audioFileExists ? 'replace-or-regenerate' : 'missing',
     },
     reuseDecision: decision,
+    editorialStatus,
     currentBlockers: blockers,
   });
 }
@@ -220,7 +224,7 @@ const report = {
     catalogUnlocked: inventory.filter((item) => item.catalogUnlocked).length,
     coveredByExisting2026Gate: inventory.filter((item) => item.releaseGate2026Coverage).length,
     audioDurationGatePass: inventory.filter((item) => item.audio.durationGate === 'pass').length,
-    setsWithKnownOrPendingProvenanceReview: inventory.filter((item) => item.reuseDecision.provenance !== 'audited-original-welearn').map((item) => item.set),
+    setsWithKnownOrPendingProvenanceReview: inventory.filter((item) => !item.editorialStatus.contentCertified).map((item) => item.set),
     setsWithBlockers: inventory.filter((item) => item.currentBlockers.length > 0).map((item) => item.set),
   },
   inventory,

@@ -6,6 +6,7 @@ import set5 from '../src/data/mocks/ielts-set-5.ts';
 import set13 from '../src/data/mocks/ielts-set-13.ts';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
 import { toPublicIeltsMock } from '../src/data/mocks/ielts-public-payload.ts';
+import { IELTS_EDITORIAL_STATUS_2026 } from '../src/data/mocks/ielts-editorial-status.ts';
 
 function countAnswerKeys(mock) {
   return JSON.stringify(mock).match(/"answers?":/g)?.length ?? 0;
@@ -71,6 +72,16 @@ test('Sets 4–20 receive the explicit computer-delivered IELTS Academic 2026 co
   );
   assert.match(mock.ieltsAcademic2026Blueprint.disclosure, /original de WeLearn/);
   assert.match(mock.ieltsAcademic2026Blueprint.disclosure, /No es material oficial/);
+});
+
+test('all 20 sets have an explicit editorial certification state', () => {
+  assert.deepEqual(Object.keys(IELTS_EDITORIAL_STATUS_2026).map(Number), Array.from({ length: 20 }, (_, index) => index + 1));
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[1].certification, 'blocked-known-source-match');
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[4].contentCertified, true);
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[5].certification, 'certified-golden-content');
+  for (let setNumber = 6; setNumber <= 20; setNumber += 1) {
+    assert.equal(IELTS_EDITORIAL_STATUS_2026[setNumber].certification, 'pending-golden-audit');
+  }
 });
 
 test('the Server Component projection removes every objective answer key', () => {

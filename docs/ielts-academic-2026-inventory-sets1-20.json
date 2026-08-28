@@ -18,7 +18,22 @@
     "setsWithKnownOrPendingProvenanceReview": [
       1,
       2,
-      3
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
     ],
     "setsWithBlockers": [
       1,
@@ -111,9 +126,16 @@
         "speaking": "reuse-after-editorial-and-timing-audit",
         "reason": "The three Reading passage titles match a known published IELTS preparation test; they cannot be certified as original WeLearn content."
       },
+      "editorialStatus": {
+        "set": 1,
+        "certification": "blocked-known-source-match",
+        "contentCertified": false,
+        "provenance": "blocked-known-third-party-match",
+        "evidence": "Reading titles and passages match a known published IELTS preparation paper; replacement is required."
+      },
       "currentBlockers": [
         "Not covered by the pre-existing IELTS Academic 2026 release audit.",
-        "Content provenance: blocked-known-third-party-match.",
+        "Editorial certification: blocked-known-source-match.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -184,9 +206,16 @@
         "speaking": "reuse-after-editorial-and-timing-audit",
         "reason": "Complete authored shell exists, but it was outside the 2026 release gate and has not passed provenance review."
       },
+      "editorialStatus": {
+        "set": 2,
+        "certification": "pending-provenance-review",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Complete authored shell exists but has not passed provenance and Golden editorial review."
+      },
       "currentBlockers": [
         "Not covered by the pre-existing IELTS Academic 2026 release audit.",
-        "Content provenance: pending-manual-review.",
+        "Editorial certification: pending-provenance-review.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -257,9 +286,16 @@
         "speaking": "reuse-after-editorial-and-timing-audit",
         "reason": "Complete authored shell exists, but it was outside the 2026 release gate and has not passed provenance review."
       },
+      "editorialStatus": {
+        "set": 3,
+        "certification": "pending-provenance-review",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Complete authored shell exists but has not passed provenance and Golden editorial review."
+      },
       "currentBlockers": [
         "Not covered by the pre-existing IELTS Academic 2026 release audit.",
-        "Content provenance: pending-manual-review.",
+        "Editorial certification: pending-provenance-review.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -327,6 +363,13 @@
         "writing": "preserve-as-reference",
         "speaking": "preserve-as-reference",
         "reason": "Current release audit and accepted Listening master make this the stable production reference."
+      },
+      "editorialStatus": {
+        "set": 4,
+        "certification": "certified-reference",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Production reference accepted under the Sets 4–20 structural audit and Listening master QA."
       },
       "currentBlockers": []
     },
@@ -396,6 +439,13 @@
         "speaking": "preserve-and-freeze-after-golden-audit",
         "reason": "Set 5 is the Golden candidate; its generated audio candidate passed technical and ASR checks but the public path still contains legacy media."
       },
+      "editorialStatus": {
+        "set": 5,
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Golden content audit passed 120 checks on 2026-08-28; final audio remains deferred."
+      },
       "currentBlockers": [
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
@@ -459,14 +509,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
+      "editorialStatus": {
+        "set": 6,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -529,14 +587,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
+      "editorialStatus": {
+        "set": 7,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -599,14 +665,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
+      "editorialStatus": {
+        "set": 8,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -669,14 +743,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
+      "editorialStatus": {
+        "set": 9,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -739,14 +821,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
+      "editorialStatus": {
+        "set": 10,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -809,14 +899,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
+      "editorialStatus": {
+        "set": 11,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -879,14 +977,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
+      "editorialStatus": {
+        "set": 12,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is outside the 27–33 minute simulation gate."
       ]
     },
@@ -949,14 +1055,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; no released Listening master exists."
       },
+      "editorialStatus": {
+        "set": 13,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1019,14 +1133,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; no released Listening master exists."
       },
+      "editorialStatus": {
+        "set": 14,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1089,14 +1211,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; no released Listening master exists."
       },
+      "editorialStatus": {
+        "set": 15,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1159,14 +1289,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; no released Listening master exists."
       },
+      "editorialStatus": {
+        "set": 16,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1229,14 +1367,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; no released Listening master exists."
       },
+      "editorialStatus": {
+        "set": 17,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1299,14 +1445,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; no released Listening master exists."
       },
+      "editorialStatus": {
+        "set": 18,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1369,14 +1523,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; no released Listening master exists."
       },
+      "editorialStatus": {
+        "set": 19,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1439,14 +1601,22 @@
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "audited-original-welearn",
+        "provenance": "pending-manual-review",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
         "speaking": "preserve-and-verify-against-golden",
         "reason": "The full authored exam is reusable; no released Listening master exists."
       },
+      "editorialStatus": {
+        "set": 20,
+        "certification": "pending-golden-audit",
+        "contentCertified": false,
+        "provenance": "pending-manual-review",
+        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+      },
       "currentBlockers": [
+        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     }
