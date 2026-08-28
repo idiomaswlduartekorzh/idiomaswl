@@ -79,6 +79,8 @@ test('all 20 sets have an explicit editorial certification state', () => {
   assert.deepEqual(Object.keys(IELTS_EDITORIAL_STATUS_2026).map(Number), Array.from({ length: 20 }, (_, index) => index + 1));
   assert.equal(IELTS_EDITORIAL_STATUS_2026[1].certification, 'certified-golden-content');
   assert.equal(IELTS_EDITORIAL_STATUS_2026[1].provenance, 'audited-original-welearn');
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[2].certification, 'certified-golden-content');
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[2].provenance, 'audited-original-welearn');
   assert.equal(IELTS_EDITORIAL_STATUS_2026[4].contentCertified, true);
   assert.equal(IELTS_EDITORIAL_STATUS_2026[5].certification, 'certified-golden-content');
   for (let setNumber = 6; setNumber <= 20; setNumber += 1) {

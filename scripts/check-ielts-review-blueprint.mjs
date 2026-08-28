@@ -38,8 +38,8 @@ for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
 
 const { default: set2 } = await import('../src/data/mocks/ielts-set-2.ts')
 const set2Task1 = set2.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
-assert.match(set2Task1.stimulusLabel, /global sales/i, 'Set 2: la consigna debe describir ventas globales')
-assert.match(set2Task1.stimulusLabel, /2000.*2006/i, 'Set 2: la consigna debe coincidir con los años del gráfico')
-assert.match(set2Task1.imageAlt, /mobile phone.*online.*console.*handheld/i, 'Set 2: el texto alternativo debe enumerar las cuatro series')
+assert.match(set2Task1.stimulusLabel, /commuters.*Norchester/i, 'Set 2: la consigna debe describir los desplazamientos en Norchester')
+assert.match(set2Task1.stimulusLabel, /2005.*2015.*2025/i, 'Set 2: la consigna debe coincidir con los años del gráfico')
+assert.match(set2Task1.imageAlt, /car.*bus.*rail.*bicycle.*foot/i, 'Set 2: el texto alternativo debe enumerar los cinco modos')
 
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

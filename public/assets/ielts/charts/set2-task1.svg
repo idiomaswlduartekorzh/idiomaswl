@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="system-ui, sans-serif" role="img" aria-labelledby="title description">
+  <title id="title">Main commuting method in Norchester in 2005, 2015 and 2025</title>
+  <desc id="description">Grouped bar chart showing percentages for car, bus, rail, bicycle and walking. Car use falls while rail, bus and bicycle use rise; walking remains stable.</desc>
+  <rect width="800" height="450" rx="10" fill="#fff"/>
+  <text x="400" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#18233f">Main commuting method in Norchester, 2005–2025</text>
+  <text x="20" y="220" text-anchor="middle" font-size="11" fill="#52617d" transform="rotate(-90 20 220)">Percentage of commuters</text>
+  <line x1="75" y1="55" x2="75" y2="350" stroke="#78849b"/>
+  <line x1="75" y1="350" x2="755" y2="350" stroke="#78849b"/>
+  <g stroke="#dde2eb" stroke-dasharray="4 4">
+    <line x1="75" y1="308" x2="755" y2="308"/>
+    <line x1="75" y1="266" x2="755" y2="266"/>
+    <line x1="75" y1="224" x2="755" y2="224"/>
+    <line x1="75" y1="182" x2="755" y2="182"/>
+    <line x1="75" y1="140" x2="755" y2="140"/>
+    <line x1="75" y1="98" x2="755" y2="98"/>
+    <line x1="75" y1="56" x2="755" y2="56"/>
+  </g>
+  <g text-anchor="end" font-size="10" fill="#52617d">
+    <text x="68" y="354">0</text><text x="68" y="312">10</text><text x="68" y="270">20</text>
+    <text x="68" y="228">30</text><text x="68" y="186">40</text><text x="68" y="144">50</text>
+    <text x="68" y="102">60</text><text x="68" y="60">70</text>
+  </g>
+
+  <g fill="#2448a5">
+    <rect x="105" y="90" width="24" height="260" rx="2"/>
+    <rect x="240" y="274" width="24" height="76" rx="2"/>
+    <rect x="375" y="308" width="24" height="42" rx="2"/>
+    <rect x="510" y="325" width="24" height="25" rx="2"/>
+    <rect x="645" y="333" width="24" height="17" rx="2"/>
+  </g>
+  <g fill="#d69a25">
+    <rect x="133" y="123" width="24" height="227" rx="2"/>
+    <rect x="268" y="266" width="24" height="84" rx="2"/>
+    <rect x="403" y="291" width="24" height="59" rx="2"/>
+    <rect x="538" y="316" width="24" height="34" rx="2"/>
+    <rect x="673" y="333" width="24" height="17" rx="2"/>
+  </g>
+  <g fill="#29836f">
+    <rect x="161" y="161" width="24" height="189" rx="2"/>
+    <rect x="296" y="258" width="24" height="92" rx="2"/>
+    <rect x="431" y="270" width="24" height="80" rx="2"/>
+    <rect x="566" y="308" width="24" height="42" rx="2"/>
+    <rect x="701" y="333" width="24" height="17" rx="2"/>
+  </g>
+
+  <g text-anchor="middle" font-size="11" fill="#293652">
+    <text x="145" y="372">Car</text><text x="280" y="372">Bus</text><text x="415" y="372">Rail</text>
+    <text x="550" y="372">Bicycle</text><text x="685" y="372">Walking</text>
+  </g>
+  <rect x="250" y="410" width="16" height="11" rx="2" fill="#2448a5"/><text x="272" y="420" font-size="11" fill="#293652">2005</text>
+  <rect x="350" y="410" width="16" height="11" rx="2" fill="#d69a25"/><text x="372" y="420" font-size="11" fill="#293652">2015</text>
+  <rect x="450" y="410" width="16" height="11" rx="2" fill="#29836f"/><text x="472" y="420" font-size="11" fill="#293652">2025</text>
+</svg>

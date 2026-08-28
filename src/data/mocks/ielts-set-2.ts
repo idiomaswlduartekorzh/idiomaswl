@@ -18,55 +18,69 @@ const mock: MockExam = {
       instructions: 'You will hear a conversation between a customer and a sports centre receptionist. Listen and answer Questions 1–10.',
       transcript: `RECEPTIONIST: Good morning, Riverside Sports Centre. How can I help?
 
-CUSTOMER: Hello, I'd like to book one of your tennis courts for this weekend, please.
+CUSTOMER: Hello. I’d like to book a tennis court for this weekend, and perhaps arrange a lesson as well.
 
-RECEPTIONIST: Certainly. Can I take your name?
+RECEPTIONIST: Certainly. I’ll create the booking first. Can I take your name?
 
-CUSTOMER: Yes, it's Daniel Harris.
+CUSTOMER: Daniel Harris.
 
-RECEPTIONIST: And a contact number?
+RECEPTIONIST: Is that H-A-R-R-I-S?
 
-CUSTOMER: My mobile is 078 5501 3742.
+CUSTOMER: Yes. And my mobile is 078 5501 3742.
 
-RECEPTIONIST: Thank you. What day were you thinking?
+RECEPTIONIST: Let me read that back: 078 5501 3742. Fine. Would you like us to send the confirmation by text?
 
-CUSTOMER: Saturday, if possible. In the afternoon.
+CUSTOMER: A text is best. My email account is full at the moment.
 
-RECEPTIONIST: Let me check. We have Court 3 free from two o'clock to four o'clock.
+RECEPTIONIST: Which day were you considering? Sunday morning is fairly quiet.
 
-CUSTOMER: That would be perfect. We're a group of four players.
+CUSTOMER: It has to be Saturday. Two of the players work on Sundays, and we’d prefer the afternoon.
 
-RECEPTIONIST: Great. The cost for that slot is twelve pounds per hour, so that's twenty-four pounds in total.
+RECEPTIONIST: Court 1 is free at eleven, but that’s outdoors. Court 3, which is indoors, is available from two until four.
 
-CUSTOMER: I see. Do you offer any kind of membership discount?
+CUSTOMER: Court 3 sounds ideal. There will be four players altogether. I originally expected six, but two can’t come.
 
-RECEPTIONIST: Yes, members receive a twenty percent discount, bringing it to just over nineteen pounds.
+RECEPTIONIST: The normal court charge is £12 per hour, so two hours would be twenty-four pounds. Lighting is included.
 
-CUSTOMER: I'm not a member yet. Is it easy to join?
+CUSTOMER: Do members pay less?
 
-RECEPTIONIST: Very straightforward. You fill in a form online or in person. Annual membership is sixty-five pounds and includes unlimited use of the gym and swimming pool, as well as discounted court hire.
+RECEPTIONIST: They receive a twenty percent court discount. Annual membership costs £65. It includes the gym and swimming pool, but coaching and equipment hire are charged separately.
 
-CUSTOMER: That sounds good. Can I also book a coach for a session?
+CUSTOMER: I probably won’t join today. I’m only here for three months, so the discount wouldn’t repay the fee.
 
-RECEPTIONIST: Absolutely. Our head coach, Mr Patel, is available on Saturday from ten to twelve in the morning.
+RECEPTIONIST: In that case I’ll leave the court at the standard price.
 
-CUSTOMER: I'd prefer the afternoon, to match our court booking.
+CUSTOMER: Two of us need rackets. Is there a deposit?
 
-RECEPTIONIST: In that case, our other coach, Ms Carter, is available from half past two.
+RECEPTIONIST: No deposit, just £2.50 per racket for the session. Please collect them from the equipment room beside the main entrance, not from reception. You’ll need to leave a driving licence or another piece of identification until they’re returned.
 
-CUSTOMER: Brilliant. We'll take that.
+CUSTOMER: Fine. Now, could we also arrange a lesson?
 
-RECEPTIONIST: Shall I put you down for thirty minutes or a full hour?
+RECEPTIONIST: Our head coach, Mr Patel, works on Saturday morning from 10–12. He has one space at eleven thirty.
 
-CUSTOMER: A full hour, please.
+CUSTOMER: That’s too early. We wanted advice while the four of us are on court.
 
-RECEPTIONIST: Done. Is there anything else you need?
+RECEPTIONIST: Ms Carter can come at 2:30. She usually teaches beginners, but she also runs group sessions for experienced social players.
 
-CUSTOMER: Do you have racket hire?
+CUSTOMER: We’re somewhere in the middle, so she should be fine.
 
-RECEPTIONIST: We do — two pounds fifty per racket per session. You can collect them from the equipment room near the main entrance.
+RECEPTIONIST: Would you like thirty minutes? Many groups use the second half-hour to practise independently.
 
-CUSTOMER: Perfect. Thank you very much.`,
+CUSTOMER: We’ve booked the court for two hours, so let’s have one hour of coaching and then one hour by ourselves.
+
+RECEPTIONIST: Done. Coaching is not included with membership, by the way, so everyone pays the same lesson fee.
+
+CUSTOMER: Can we borrow tennis balls too?
+
+RECEPTIONIST: Ms Carter supplies balls during the lesson. If you continue afterwards, a tube costs four pounds at the desk. We don’t hire those because opened tubes lose pressure.
+
+CUSTOMER: Fine. When do I need to pay?
+
+RECEPTIONIST: Pay for the court now using the link in your text. Coaching and rackets can be paid for when you arrive. If you cancel more than twenty-four hours ahead, the court fee is refunded; after that, we can only move the booking.
+
+CUSTOMER: That’s clear. Thank you for your help.
+
+RECEPTIONIST: You’re welcome. Please arrive ten minutes early so the equipment doesn’t delay your lesson.`,
       questions: [
         {
           type: 'formgroup',
@@ -88,12 +102,12 @@ Annual membership fee: £{{5}}
 
 Racket hire: £{{6}} per racket`,
           blanks: [
-            { num: 1, answers: ['078 5501 3742', '07855013742'], maxWords: 2 },
-            { num: 2, answers: ['Saturday', 'saturday'], maxWords: 1 },
-            { num: 3, answers: ['four', '4'], maxWords: 1 },
-            { num: 4, answers: ['12', 'twelve'], maxWords: 1 },
-            { num: 5, answers: ['65', 'sixty-five', 'sixty five'], maxWords: 2 },
-            { num: 6, answers: ['2.50', '2½', 'two fifty'], maxWords: 2 },
+            { num: 1, answers: ['078 5501 3742'], maxWords: 2 },
+            { num: 2, answers: ['Saturday'], maxWords: 1 },
+            { num: 3, answers: ['four'], maxWords: 1 },
+            { num: 4, answers: ['12'], maxWords: 1 },
+            { num: 5, answers: ['65'], maxWords: 1 },
+            { num: 6, answers: ['2.50'], maxWords: 1 },
           ],
         },
         {
@@ -101,11 +115,11 @@ Racket hire: £{{6}} per racket`,
           id: 'l1-table',
           part: 1,
           qRange: [7, 10],
-          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
+          groupLabel: 'Complete the table below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
           headers: ['Coach', 'Availability on Saturday', 'Session length booked', 'Included with membership'],
           rows: [
-            ['Mr Patel', { num: 7, answers: ['morning', '10–12', '10 to 12'], maxWords: 1 }, 'N/A', 'No'],
-            ['Ms Carter', { num: 8, answers: ['2:30', 'half past two', '14:30'], maxWords: 3 }, { num: 9, answers: ['one hour', '1 hour', 'hour'], maxWords: 2 }, { num: 10, answers: ['no', 'No'], maxWords: 1 }],
+            ['Mr Patel', { num: 7, answers: ['10–12'], maxWords: 1 }, 'N/A', 'No'],
+            ['Ms Carter', { num: 8, answers: ['2:30'], maxWords: 1 }, { num: 9, answers: ['one hour'], maxWords: 2 }, { num: 10, answers: ['not included'], maxWords: 2 }],
           ],
         },
       ],
@@ -117,19 +131,23 @@ Racket hire: £{{6}} per racket`,
       audioUrl: '/audio/ielts/ielts-listening-set-2.mp3',
       title: 'Listening — Section 2: Campus Orientation Talk',
       instructions: 'You will hear a talk given to new students during a campus orientation. Listen and answer Questions 11–20.',
-      transcript: `Welcome, everyone, to Greenfield University. I'm James, one of the student advisors, and I'll be giving you a quick overview of the campus and the services available to you.
+      transcript: `Welcome to Greenfield University. I’m James, one of the student advisers, and this talk covers the services students most often need during their first month. You’ll receive a campus map afterwards, so I’ll focus on when and how to use each place rather than list every building.
 
-Let's start with the library. The main library is open seven days a week — from eight in the morning until ten at night on weekdays, and nine to six on weekends. You'll need your student card to access the building after six in the evening. The library holds over 400,000 physical books and gives you access to more than 200 academic databases online. If a book you need isn't available here, you can request an inter-library loan, which usually takes three to five working days.
+Let’s begin with the main library. It opens seven days a week. On weekdays the hours are eight in the morning until 10 p.m.; at weekends it opens an hour later and closes at six. The doors do not close at six on weekdays, as an old online guide states, but you must scan your student card after 6 p.m. Visitors can enter only while the reception desk is staffed.
 
-Next, the Student Support Centre. This is located in the Fleming Building, just to the left of the main gate as you come in. It handles a wide range of services — academic advice, welfare support, and financial guidance. They also run a peer mentoring programme where second and third-year students are paired with first-years to help with the transition to university life.
+The library holds more than four hundred thousand printed books as well as electronic journals and databases. If an item is on loan, you may reserve it through the catalogue. If the university does not own it, request an inter-library loan. Most printed loans arrive in three to five working days, although overseas material can take longer. Articles are often supplied electronically. There are also bookable study rooms on floors two and three; please cancel a room if your group no longer needs it.
 
-The health centre is on the south side of the campus, next to the sports hall. You should register as soon as possible — appointments can be booked online or by phone. There is a pharmacist on site on Tuesdays and Thursdays.
+The Student Support Centre is in the Fleming Building, immediately left of the main gate. It provides academic advice, welfare support and financial guidance. It does not arrange sports memberships or issue library loans, even though students sometimes queue there for those services. Financial advisers can explain bursaries and budgeting, but they cannot lend money directly. The centre also runs peer mentoring, pairing trained second- or third-year volunteers with new students. Participation is optional and what you discuss remains private unless there is a serious safety concern.
 
-Regarding accommodation: if you're in university halls, your warden is your first point of contact for any issues. Each hall also has a common room that stays open until midnight.
+For healthcare, register online before you become ill. The health centre stands on the south side of campus next to the sports hall—not beside the science laboratories, as it appears on maps printed before last year’s move. Routine appointments can be booked online or by phone. A pharmacist visits on Tuesdays and Thursdays; on other weekdays prescriptions are sent to a pharmacy in town. Urgent problems should still go through the regional emergency service rather than waiting for the campus clinic.
 
-Finally, transport. The university operates a free shuttle bus between the north campus, the main campus, and the train station. It runs every fifteen minutes from seven in the morning until eleven at night. You don't need to book — just turn up and show your student card.
+Students living in university halls should contact their warden first about noise, lost keys or shared facilities. Maintenance faults such as a water leak should also be reported through the online form so the repair team receives the room number. Every hall has a common room open until midnight. Kitchens remain accessible later, but social events must finish at the published time. Private renters can ask the accommodation office for general guidance, although the university cannot negotiate a contract for them.
 
-Please feel free to ask questions at the end — we want to make sure your first weeks here go smoothly.`,
+Finally, the free shuttle links north campus, main campus and the train station. It runs every 15 minutes between seven in the morning and 11 p.m. on weekdays. Saturday buses run every half-hour and finish at nine; there is no Sunday service outside examination periods. You do not reserve a seat. Show your student card when boarding, and remember that large bicycles are not carried at busy times.
+
+If you commute by car, buy a permit before using a staff area. Parking inspectors begin work from the first teaching day, not after orientation week. Covered cycle stores are free, and the transport office can mark your bicycle with a security number on Wednesday afternoon.
+
+Those are the main services. We’ll now divide into small groups for the walking tour. Keep this sheet: it contains phone numbers and a QR code linking to current opening times, which may change during holidays.`,
       questions: [
         {
           type: 'multiselect',
@@ -170,11 +188,11 @@ Transport
 • Free shuttle bus runs every {{19}} minutes.
 • Bus service ends at {{20}} p.m.`,
           blanks: [
-            { num: 13, answers: ['10 p.m.', '10pm', 'ten'], maxWords: 2 },
+            { num: 13, answers: ['10 p.m.'], maxWords: 2 },
             { num: 14, answers: ['6', 'six'], maxWords: 1 },
-            { num: 15, answers: ['3–5', 'three to five', 'three-five'], maxWords: 3 },
-            { num: 16, answers: ['sports hall', 'sports centre'], maxWords: 2 },
-            { num: 17, answers: ['Thursdays', 'Thursday'], maxWords: 1 },
+            { num: 15, answers: ['three to five'], maxWords: 3 },
+            { num: 16, answers: ['sports hall'], maxWords: 2 },
+            { num: 17, answers: ['Thursdays'], maxWords: 1 },
             { num: 18, answers: ['warden'], maxWords: 1 },
             { num: 19, answers: ['15', 'fifteen'], maxWords: 1 },
             { num: 20, answers: ['11', 'eleven'], maxWords: 1 },
@@ -189,39 +207,65 @@ Transport
       audioUrl: '/audio/ielts/ielts-listening-set-2.mp3',
       title: 'Listening — Section 3: Discussion about Renewable Energy Project',
       instructions: 'You will hear two students discussing their group project on renewable energy. Listen and answer Questions 21–30.',
-      transcript: `SARAH: Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?
+      transcript: `SARAH: Hi, Tom. Did you read Professor Jenkins’s comments on our renewable-energy report?
 
-TOM: Yes — overall I thought it was quite positive. She liked the section on solar power, but said we need to develop our argument about wind energy more.
+TOM: Twice. The overall mark was encouraging, and she said our solar section explained costs clearly. The wind section needs work, though.
 
-SARAH: I agree. I think we relied too much on statistics and not enough on case studies. Real-world examples would make it more convincing.
+SARAH: Her note says “evidence too general”. I thought she meant we had too few statistics.
 
-TOM: That's a good point. I found a report from the Danish government on their offshore wind programme — apparently they now get over 50% of their electricity from wind. That's a compelling example.
+TOM: I asked her after class. It’s the opposite: we list national percentages but don’t show how a real project handled practical problems. She wants case studies, not another page of figures.
 
-SARAH: Perfect. Should we add a new section or revise what we already have?
+SARAH: That makes sense. Have you found one we can use?
 
-TOM: I think revise. Adding a new section might make the report too long. Professor Jenkins also commented that our introduction was too vague.
+TOM: A report about an island electricity system. Wind power supplies more than half of its annual electricity, but on very windy nights production can exceed local demand. The operators use a battery and ask a water-treatment plant to shift some work to those hours.
 
-SARAH: Right, she wants a clearer thesis statement from the start.
+SARAH: Good. It shows that generation and demand have to be balanced. We should mention that the headline figure doesn’t mean wind supplies every moment.
 
-TOM: Exactly. Now, what about the conclusion? I felt it was quite weak.
+TOM: Exactly. I also found a solar village example, but adding both would take us beyond the word limit.
 
-SARAH: Yes, we basically just summarised what we'd said. We need to make some stronger recommendations.
+SARAH: Then let’s revise the existing wind section around the island example rather than create a completely new section. We can save the solar village for the presentation.
 
-TOM: Like what?
+TOM: Agreed. What did you make of the comment on our introduction?
 
-SARAH: Well, we could recommend that governments set mandatory renewable energy targets — say, sixty percent renewables by 2035.
+SARAH: The background is fine, but the thesis is vague. We say renewables are “important” without stating what the report evaluates. I’ll rewrite the last sentence to say that a reliable transition needs generation, storage and network planning.
 
-TOM: Good idea. We could also suggest increased investment in grid infrastructure, since that's often the bottleneck.
+TOM: Good. The conclusion is weaker. It only summarises points we’ve already made.
 
-SARAH: Agreed. One thing I wanted to ask you about is the map we were asked to include showing wind farm locations. Did you manage to create it?
+SARAH: Yes, and the assignment asks for recommendations. We could propose mandatory renewable-energy targets, but our first draft said sixty percent by 2035 for every country. That’s too rigid because starting points differ.
 
-TOM: I started it but I'm having trouble with the software. The labels aren't positioning correctly.
+TOM: How about recommending that governments publish binding targets with dates, while allowing the percentage to reflect local resources?
 
-SARAH: I can help with that. I used the same programme for my geography project.
+SARAH: Much better. Our second recommendation should be increased investment in grid infrastructure. Remote wind farms are little use if transmission lines cannot carry their output to cities.
 
-TOM: That would be great. Can we meet Thursday to work on it together?
+TOM: Should storage be a separate recommendation?
 
-SARAH: Sure. Let's meet at the library at two o'clock.`,
+SARAH: Perhaps an example under grid planning. We only have two hundred words for the conclusion, and three equally large recommendations would feel rushed.
+
+TOM: Fine. Now, the tutor asked for a map of wind-farm locations. I imported the coordinates, but the map looks awful.
+
+SARAH: Are the points in the wrong place?
+
+TOM: The locations are accurate. The problem is the labels: several names overlap near the coast, while offshore sites have too much empty space around them.
+
+SARAH: The programme can move labels automatically if you set a priority. I used the same programme for my geography project last term.
+
+TOM: I tried changing the font size instead, which made everything unreadable. Could you show me the priority tool?
+
+SARAH: Of course. We also need a scale and a source beneath the map. Professor Jenkins said a decorative map without those elements would not count as evidence.
+
+TOM: I have the source information in my notes. What about colour? Red for offshore and blue for onshore?
+
+SARAH: Avoid red and blue alone because some readers won’t distinguish them. Let’s use different symbols as well as colour and check the printout in greyscale.
+
+TOM: Good point. Can we meet on Thursday?
+
+SARAH: Yes. The computer lab is booked for an exam, so let’s use the library. Two o’clock?
+
+TOM: Perfect. I’ll revise the wind section before then. You’ll do the introduction, and we can write the recommendations together after the map.
+
+SARAH: And we should leave Friday for references. Two of the web links in our first draft led only to press releases, so I’ll replace them with the full reports.
+
+TOM: Great. I feel much clearer about the feedback now.`,
       questions: [
         {
           type: 'mcq',
@@ -239,7 +283,7 @@ SARAH: Sure. Let's meet at the library at two o'clock.`,
           type: 'mcq',
           id: 'l3q22',
           part: 3,
-          text: 'Tom found a report from the Danish government showing that Denmark gets over 50% of its electricity from',
+          text: 'In Tom’s island case study, more than half of annual electricity comes from',
           options: [
             'solar power',
             'hydroelectric sources',
@@ -297,8 +341,8 @@ SARAH: Sure. Let's meet at the library at two o'clock.`,
           blanks: [
             { num: 26, answers: ['grid'], maxWords: 1 },
             { num: 27, answers: ['locations'], maxWords: 1 },
-            { num: 28, answers: ['labels', 'label'], maxWords: 1 },
-            { num: 29, answers: ['programme', 'program', 'software'], maxWords: 1 },
+            { num: 28, answers: ['labels'], maxWords: 1 },
+            { num: 29, answers: ['programme'], maxWords: 1 },
             { num: 30, answers: ['library'], maxWords: 1 },
           ],
         },
@@ -311,19 +355,27 @@ SARAH: Sure. Let's meet at the library at two o'clock.`,
       audioUrl: '/audio/ielts/ielts-listening-set-2.mp3',
       title: 'Listening — Section 4: Lecture on Coral Reef Ecosystems',
       instructions: 'You will hear a lecture about coral reef ecosystems. Listen and answer Questions 31–40.',
-      transcript: `Today I want to discuss one of the planet's most diverse and threatened ecosystems: coral reefs.
+      transcript: `Today’s lecture examines coral reefs as living structures: how they are built, why warming damages them and what restoration can realistically achieve.
 
-Coral reefs cover less than one percent of the ocean floor, yet they support approximately 25% of all known marine species. This extraordinary concentration of biodiversity makes them one of the most ecologically important environments on Earth.
+Reef-building corals occupy tropical and subtropical seas where light can reach shallow water. Reefs cover less than one percent of the ocean floor, yet estimates suggest that they support about a quarter of marine species at some stage of life. Fish find shelter and feeding grounds in their complex surfaces, and people depend on reefs for fisheries, tourism and protection from waves. Those benefits come from a structure produced by very small animals.
 
-Corals are animals, not plants — a common misconception. Each individual coral is called a polyp. Polyps secrete a hard calcium carbonate skeleton, and over thousands of years these skeletons accumulate to form the reef structure. Inside each polyp live tiny algae called zooxanthellae. This is a symbiotic relationship: the algae photosynthesise, providing the coral with up to 90% of its energy, while the coral provides the algae with nutrients and shelter.
+A coral colony is made up of individual polyps. Each polyp has a mouth surrounded by tentacles and secretes a calcium carbonate skeleton beneath its living tissue. New polyps grow on material left by earlier generations, so the three-dimensional reef develops slowly over long periods. A storm can break branches in a few hours, whereas rebuilding the same complexity may take decades.
 
-When water temperatures rise even slightly above normal — sometimes by just one degree Celsius — the coral expels the zooxanthellae. This is known as coral bleaching. Without the algae, the coral turns white and, if temperatures remain high, the coral eventually dies. Mass bleaching events have become far more frequent due to climate change.
+Inside the tissues live microscopic algae, often described by the older general name zooxanthellae. The algae photosynthesise and transfer compounds that can provide most of the coral’s energy—under favourable conditions, up to about ninety percent. In return, the coral offers nutrients, shelter and access to sunlight. Corals also capture food with their tentacles, but the partnership with algae helps explain why major reef systems occur in clear, well-lit water.
 
-Other major threats include ocean acidification, which reduces the availability of calcium carbonate and weakens reef structures; physical damage from boat anchors, tourist divers, and destructive fishing practices such as blast fishing; and the spread of invasive species such as the crown-of-thorns starfish, which feeds on coral tissue.
+That partnership is sensitive to stress. When water temperature remains unusually high, the chemical process of photosynthesis can become damaging. The coral expels many of its algae, revealing the pale skeleton through transparent tissue. The colony consequently appears white, a condition called bleaching. A bleached coral is not necessarily dead; if temperature returns to a tolerable range soon enough, algae can repopulate it. Prolonged or repeated heat reduces growth and reproduction and can lead to mortality. This distinction matters when news reports treat every white colony as already lost.
 
-Conservation efforts are varied. Marine protected areas restrict human activities in key reef zones. Coral gardening programmes grow coral fragments in underwater nurseries and then transplant them onto damaged reefs. Scientists are also developing heat-resistant strains of coral through selective breeding.
+Warming is not the only pressure. As the ocean absorbs carbon dioxide, seawater chemistry changes through acidification. The result reduces the availability of carbonate ions that corals use to build skeletons, making growth and repair more difficult. Local pollution can add nutrients that encourage algal growth over the reef. Sediment from construction or damaged land may block light and smother young colonies.
 
-The challenge is significant, but many conservationists argue that with immediate action on carbon emissions and local pollution, the worst outcomes can still be avoided.`,
+Direct physical damage also occurs. Anchors can crush branching coral, careless contact by swimmers or divers can break it, and destructive fishing practices such as explosives destroy both habitat and the fish being targeted. Ordinary fishing can alter the ecological balance too if it removes species that graze competing algae. Managers therefore have to regulate activities beyond the exact patch where coral is growing.
+
+Crown-of-thorns starfish feed naturally on coral tissue. They belong in Indo-Pacific reef ecosystems, so calling the species universally invasive is misleading. The problem is an outbreak in which their numbers rise high enough to consume coral faster than it recovers. Nutrient runoff and removal of predators have been proposed as contributing factors in some places, although causes vary and remain under study.
+
+Conservation works at several scales. Marine protected areas can limit fishing and anchoring, but a boundary cannot prevent marine heatwaves. Improving water quality and protecting herbivorous fish may give colonies a better chance to recover after heat stress. At the global level, limiting greenhouse-gas emissions remains essential because local management cannot hold temperature constant.
+
+Restoration is a supplement, not a replacement for those measures. Coral gardening programmes grow fragments in nurseries and attach them to damaged sites. Researchers are testing which colonies tolerate heat and whether selective breeding or assisted movement can increase resilience. The work is expensive, and transplanted coral still faces the conditions that damaged the original reef. Success should be measured through survival, reproduction and restored habitat complexity, not simply by counting fragments on planting day.
+
+The central lesson is that a reef is neither an underwater rock nor a garden that can be replanted once and forgotten. It is a biological partnership embedded in a wider food web. Protecting it requires lower global heat stress, better local conditions and long-term observation of what actually survives.`,
       questions: [
         {
           type: 'formgroup',
@@ -352,14 +404,14 @@ Major threats
 
 • Ocean {{38}}, which weakens the reef structure.
 • Physical damage from divers and destructive {{39}} practices.
-• Invasive species such as the crown-of-thorns {{40}}.`,
+• Outbreaks of the crown-of-thorns {{40}}.`,
           blanks: [
             { num: 31, answers: ['species'], maxWords: 1 },
-            { num: 32, answers: ['polyps', 'polyp'], maxWords: 1 },
+            { num: 32, answers: ['polyps'], maxWords: 1 },
             { num: 33, answers: ['calcium'], maxWords: 1 },
             { num: 34, answers: ['algae'], maxWords: 1 },
             { num: 35, answers: ['energy'], maxWords: 1 },
-            { num: 36, answers: ['temperature', 'temperatures'], maxWords: 1 },
+            { num: 36, answers: ['temperature'], maxWords: 1 },
             { num: 37, answers: ['white'], maxWords: 1 },
             { num: 38, answers: ['acidification'], maxWords: 1 },
             { num: 39, answers: ['fishing'], maxWords: 1 },
@@ -376,21 +428,25 @@ Major threats
       skill: 'reading',
       title: 'Reading Passage 1: The History of Glass',
       instructions: 'Read the passage and answer Questions 1–13.',
-      passage: `Glass is one of humanity's oldest manufactured materials, yet it remains, in many ways, one of the most remarkable. Its origins lie in the natural world: volcanic glass, known as obsidian, formed when molten rock cooled rapidly, was used by early humans to make cutting tools and weapons long before the first synthetic glass was produced. The earliest manufactured glass objects — beads and vessels — date from around 3500 BCE in Mesopotamia and ancient Egypt.
+      passage: `The History of Glass
 
-The first glass was made by heating a mixture of silica (sand), an alkali such as soda ash or potash, and lime. These ingredients, when melted together at very high temperatures and then allowed to cool, produce the hard, transparent solid we recognise today. In the ancient world, glass was coloured, often a deep blue-green, due to impurities in the raw materials. The Romans were among the first to develop clearer glass by adding manganese dioxide.
+Humans used a natural glass long before they learnt to manufacture it. Obsidian forms when volcanic material cools so rapidly that crystals have no time to grow. Its sharp fracture made it useful for blades, although its composition and origin differ from those of later vessel glass. Archaeological labels can therefore be confusing: early beads may contain glassy glazes, while objects commonly identified as deliberately manufactured glass appear in Mesopotamia around 1600 BCE. Glass vessels became established somewhat later in Egypt and the eastern Mediterranean.
 
-For centuries, glass objects were luxury items, affordable only by the wealthy. This changed dramatically in the first century BCE with the invention of glassblowing in the region of modern-day Syria. By blowing air through a metal tube into a gather of molten glass, craftsmen could quickly and cheaply produce a wide variety of shapes. This technique spread rapidly across the Roman Empire and transformed glass from a precious commodity into an everyday material.
+The durable recipe combines silica, usually obtained from sand, with an alkali that lowers the melting temperature and lime that improves stability. Ancient furnaces could not produce the chemically uniform material expected today. Iron and other impurities often coloured a batch blue-green, and makers added minerals to obtain stronger colours deliberately. A workshop might produce raw glass in bulk and send it elsewhere to be shaped, so an excavated object does not always reveal where the glass itself was made.
 
-The fall of the Roman Empire slowed innovation in the West, and the centre of glassmaking shifted to the Islamic world. Craftsmen in what are now Iran, Iraq, and Syria developed new techniques, including the use of coloured enamels and gilding, which produced objects of extraordinary beauty.
+Early vessels were labour-intensive. Craftspeople wound hot glass around a removable core or pressed it into moulds, methods suited to small containers owned by wealthy households. A decisive change came with glassblowing in the eastern Mediterranean during the first century BCE. A gather of molten glass on the end of a hollow tube could be inflated, rotated and tooled into a vessel far more quickly. Blowing did not make every object cheap, but it greatly expanded both output and the variety of forms available across the Roman world.
 
-By the eleventh century, Venice had established itself as the European capital of glassmaking. The island of Murano, to which the glassblowers were relocated in 1291 — ostensibly to reduce the risk of fire in Venice itself — became synonymous with high-quality glass. Venetian craftsmen jealously guarded their techniques; it was reportedly punishable by death to reveal the secrets of the trade to outsiders.
+After Roman political control declined in western Europe, glassmaking did not simply disappear. Workshops in the Byzantine and Islamic worlds developed their own combinations of cutting, coloured enamels and gilding. Knowledge also travelled with workers and trade. This uneven history is important: there was no single straight line in which one centre invented every improvement and passed it permanently to the next.
 
-The next great innovation came in 1674, when Englishman George Ravenscroft added lead oxide to the glass mixture. The resulting lead crystal glass was heavier and had a higher refractive index, giving it exceptional brilliance and making it ideal for decorative pieces such as chandeliers and fine tableware.
+Venice became a major European centre, and in 1291 its authorities ordered furnaces moved to the island of Murano. Fire prevention in the densely built city was the stated reason. Concentrating furnaces also made regulation easier, and the republic later restricted the movement of skilled workers and technical knowledge. Murano’s reputation rested on both control and innovation. By the fifteenth century, Venetian glassmakers were producing a notably colourless glass called cristallo as well as elaborate coloured and filigree vessels.
 
-The industrialisation of glass production in the nineteenth and twentieth centuries made glass ubiquitous. The development of plate glass through the float glass process — in which molten glass is floated on a bed of molten tin to produce perfectly flat sheets — transformed architecture, making possible the vast glass facades of modern buildings.
+In England, George Ravenscroft patented a new formula in 1674 that used lead oxide. Lead crystal was stronger than fragile Venetian-style wares and had a high refractive index, so cut surfaces scattered light with unusual brilliance. It became especially suitable for decorative tableware and chandeliers. Continental makers achieved other effects with different recipes; “better glass” never meant a single composition for every purpose.
 
-Today, glass science continues to advance. Borosilicate glass, developed in the late nineteenth century, resists thermal shock and is used in laboratory equipment and cookware. Optical fibre, made from extremely pure glass, has revolutionised telecommunications. And scientists are developing smart glass that can change its transparency in response to electrical signals, with applications ranging from privacy windows to energy-efficient building design.`,
+Industrial production changed the scale of the material. Window glass had long been flattened by spinning or opening a blown cylinder, but these methods left distortions and required polishing for the finest sheets. In the twentieth century, the float glass process transformed the industry. A continuous ribbon of molten glass travels across molten tin, whose level surface allows both faces to become flat and parallel. The result is a uniform sheet that needs little additional grinding and can be made in the vast dimensions used by modern architecture.
+
+Specialisation has continued. Borosilicate glass, developed in the late nineteenth century, expands relatively little when heated and therefore resists thermal shock; it is valuable in laboratories and cookware. Optical fibre carries light through extremely pure strands, enabling high-capacity telecommunications over long distances. Smart glass can alter its transparency in response to an electrical signal, controlling glare, privacy or solar heat without a curtain. These products look different, but all depend on the same ability to adjust a disordered silica-based structure by changing its ingredients and manufacture.
+
+Glass also illustrates a modern trade-off. It can be recycled repeatedly if colour and contamination are controlled, and recovered glass lowers the energy needed to melt a new batch. Yet specialised coatings, laminates and mixed products are harder to separate. The history of glass is consequently not finished: the latest challenge is to preserve its remarkable performance while designing products that can return efficiently to the furnace.`,
       questions: [
         {
           type: 'formgroup',
@@ -415,7 +471,7 @@ In Venice, glassblowers were moved to the island of {{4}} in 1291. Later, George
           type: 'mcq',
           id: 'r1q6',
           part: 5,
-          text: 'The earliest manufactured glass objects were produced around 3500 BCE.',
+          text: 'Objects widely accepted as deliberately manufactured glass appeared in Mesopotamia around 1600 BCE.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 0,
         },
@@ -485,19 +541,25 @@ In Venice, glassblowers were moved to the island of {{4}} in 1291. Later, George
       skill: 'reading',
       title: 'Reading Passage 2: Bees and Pollination',
       instructions: 'Read the passage and answer Questions 14–26.',
-      passage: `Of all the creatures that contribute to the pollination of flowering plants, bees are by far the most important. It is estimated that one third of the human food supply depends, directly or indirectly, on insect pollination, and bees account for the majority of this work. Without them, many of our most familiar foods — including apples, almonds, blueberries, and squash — would cease to exist in their current form.
+      passage: `Bees and Pollination
 
-Bees are uniquely adapted to the task of pollination. Their bodies are covered with branched, feathery hairs that readily trap pollen grains as the bee moves from flower to flower. Many species also possess specialised structures for carrying pollen: bumblebees and honeybees, for example, have basket-like structures on their hind legs called corbiculae, or pollen baskets, which they use to transport pollen back to the colony. Solitary bees, by contrast, carry pollen in dense patches of hair on their abdomen or hind legs.
+Pollination is the transfer of pollen to the part of a flower where fertilisation can occur. Wind performs the task for crops such as wheat, while birds, bats and many kinds of insect move pollen for other plants. Bees are especially important visitors, but popular statistics require care. About 35 percent of the world’s food crops benefit from animal pollinators; this does not mean that bees alone produce one third of the total human food supply. Staple crops can be wind-pollinated, and the contribution of animals varies from essential fruit set to a modest improvement in yield or quality.
 
-The relationship between flowering plants and bees is a classic example of mutualism: both parties benefit. The plant gains a reliable and efficient pollination service, while the bee obtains nectar and pollen as food sources. Nectar provides carbohydrates for energy, while pollen supplies proteins and fats essential for larval development.
+Bees are effective because their bodies have branched, feathery hairs that trap grains as they move through a flower. Many species also possess structures for carrying a concentrated load. Bumblebees and honeybees pack moistened pollen into corbiculae, smooth-edged baskets on their hind legs. Some solitary bees use a dense brush of hair, called a scopa, on the abdomen or legs. Pollen stored for transport may be less likely to reach another flower, however, so the visible size of a load is not a complete measure of pollination.
 
-To attract bees, flowers have evolved a remarkable array of features. Many produce nectar guides — patterns on their petals, often visible only in ultraviolet light, which direct the bee towards the nectary. Flowers also emit specific scent compounds that bees can detect from long distances. Some plants have gone further, mimicking the scent or appearance of female bees to lure male bees, which inadvertently pollinate the plant while attempting to mate.
+The exchange is often described as mutualism. A plant gains transport for its pollen, while the visitor gathers food. Nectar mainly supplies carbohydrates for energy. Pollen provides proteins and fats needed for growth, particularly larval development. The interests of plant and bee are not perfectly identical: the bee seeks to collect as much food as possible, whereas the plant benefits when at least some grains escape collection and reach another compatible flower.
 
-Different bee species show marked preferences for particular types of flowers. Long-tongued bees, such as certain bumblebee species, are able to access nectar from deep, tubular flowers that short-tongued bees cannot reach. This specialisation means that some plants depend almost entirely on a single bee species for pollination.
+Flowers influence this encounter through colour, shape and odour. Nectar guides are patterns that point towards the nectary; some reflect ultraviolet light that humans cannot see. Flowers may also release distinctive scent compounds. In a more extreme strategy, certain orchids mimic the scent or appearance of a female bee. A male seeking a mate contacts the flower’s pollen and may carry it to the next deceptive bloom, even though the plant supplies no food reward.
 
-Bee populations globally are under considerable pressure. Among the key threats are habitat loss due to agricultural intensification, the widespread use of pesticides — particularly neonicotinoids, which impair bees' navigation and memory — and the spread of pathogens such as the Varroa mite, which parasitises honeybee colonies. Climate change adds further stress, disrupting the synchrony between bee emergence and flower bloom.
+Physical fit matters. A long-tongued bee can reach nectar at the base of a deep tube, while a short-tongued visitor may be excluded or may pierce the flower from the side without pollinating it. Bumblebees can also perform buzz pollination: vibration from their flight muscles shakes pollen out of flowers such as tomatoes. Honeybees do not use this technique. Diversity is therefore functional, not merely decorative; a crop visited by several kinds of bee may retain pollination when weather or disease reduces one group.
 
-The decline in bee populations has prompted urgent conservation efforts. These include the creation of wildflower corridors along roads and field margins; the banning or restriction of certain pesticides in several countries; and the promotion of garden planting schemes to support urban bee populations. Research into disease-resistant honeybee strains and the development of artificial pollination technologies also continues, though many scientists argue that these cannot substitute for natural pollinator communities.`,
+Managed honeybee colonies and wild bees play different roles. Beekeepers can transport hives to a flowering crop at the required time, providing a large workforce. Wild species may forage in cooler conditions, visit different parts of a flower or carry pollen more effectively for particular plants. Researchers do not rank every solitary bee as more efficient than every social bee. Performance depends on the crop, climate, abundance and behaviour of the species involved.
+
+Threats also differ. The Varroa mite parasitises honeybee colonies and transmits viruses, but it is not the main explanation for every decline in wild bees. Habitat loss removes nesting places and a continuous supply of flowers. Pesticide risk depends on toxicity, dose and exposure; some neonicotinoids can impair navigation and memory under particular conditions. Climate change can disrupt the timing between bee emergence and flowering, and extreme heat or drought can reduce both forage and nesting success. These pressures may interact rather than act independently.
+
+Conservation consequently needs more than a row of ornamental flowers. Wildflower corridors and field margins can connect habitat, but they should contain locally suitable plants that bloom at different times. Bare ground, hollow stems and undisturbed banks provide nests for species that do not live in hives. Farmers can reduce exposure by avoiding pesticide application while crops are in bloom and by using targeted controls only when necessary. Urban gardens can help too, provided that attractive non-native flowers do not replace all native resources.
+
+Artificial pollination may be useful in enclosed systems or during a local emergency, yet machines must still collect, store and deliver viable pollen at the right stage of flowering. Replacing an adaptable community of insects across a landscape would be technically demanding and costly. Protecting pollinators is therefore less about preserving one famous species than maintaining the varied relationships among plants, insects and land management on which reliable harvests depend.`,
       questions: [
         {
           type: 'mcq',
@@ -590,21 +652,25 @@ Flower adaptations to attract bees
       skill: 'reading',
       title: 'Reading Passage 3: The Psychology of Decision Making',
       instructions: 'Read the passage and answer Questions 27–40.',
-      passage: `Every day, humans make thousands of decisions, from the trivial — which shirt to wear, what to order for lunch — to the momentous — whether to change career, whom to marry. For much of the twentieth century, economists and psychologists modelled human decision making as a largely rational process, in which individuals weigh up the costs and benefits of available options and choose the one that maximises their utility. This view, known as rational choice theory, has been enormously influential in fields as diverse as economics, political science, and sociology.
+      passage: `The Psychology of Decision Making
 
-However, a growing body of research, much of it pioneered by psychologists Daniel Kahneman and Amos Tversky, has challenged this picture. Their work demonstrated that human decision making is systematically biased in ways that rational choice theory cannot explain. Far from being cool, calculating machines, humans rely heavily on mental shortcuts known as heuristics, which, while often useful, can lead to predictable errors of judgement known as cognitive biases.
+Many institutions are built around a simple model of choice. A person identifies the available options, estimates their costs and benefits, and selects the one that best serves a goal. This family of assumptions is often called rational choice theory. It has shaped economics, but its influence also reaches political science and sociology. The model can predict behaviour at an aggregate level without claiming that every individual performs a conscious calculation before buying lunch or crossing a road.
 
-One of the most studied heuristics is availability: people judge the likelihood of an event by how easily examples come to mind. After a widely reported plane crash, for instance, many people overestimate the risk of flying, even though statistics show it to be far safer than driving. Because media coverage makes the event mentally available, people perceive it as more common than it is.
+Psychologists Daniel Kahneman and Amos Tversky studied what happens when people judge probabilities under uncertainty. Their experiments did not show that human thought is random. Instead, people often use heuristics: efficient mental shortcuts that work well in familiar settings but can produce systematic mistakes elsewhere. Those predictable patterns are called cognitive biases. A shortcut may be sensible when time is limited, so identifying a bias is not the same as declaring the decision-maker unintelligent.
 
-Another important bias is anchoring. When people are asked to estimate an unknown quantity — the population of a city, the price of a house — their judgement is heavily influenced by the first number they encounter, even if that number is arbitrary. In one famous experiment, participants who were asked to estimate the percentage of African countries in the United Nations after spinning a wheel — which landed on either 10 or 65 by chance — gave estimates that were strongly influenced by the wheel's result.
+Consider availability. When estimating how common an event is, people are influenced by how easily examples come to mind. A dramatic accident repeated in news reports is easy to recall, while thousands of uneventful journeys leave little memory. The resulting judgement may reflect the vividness of the example rather than the frequency recorded in data. Availability can be useful—recent experience sometimes signals a changing risk—but publicity and personal experience can make an unusual event seem typical.
 
-Loss aversion is another well-documented phenomenon. Tversky and Kahneman showed that people feel the pain of losses more acutely than they experience the pleasure of equivalent gains. The prospect of losing £100 is typically felt as more distressing than the prospect of gaining £100 is felt as pleasurable. This asymmetry has profound implications for financial decision making, explaining why people often hold on to losing investments far longer than is rational.
+Anchoring describes a different influence. An initial number can pull later estimates towards it even when it provides no relevant evidence. In a well-known demonstration, participants saw a wheel stop at either 10 or 65 and were then asked about the percentage of African countries in the United Nations. The wheel was arranged to produce those values, although participants were led to treat its result as random. Estimates differed substantially between the two groups. The number did not supply knowledge; it created a starting point that proved difficult to ignore.
 
-Kahneman later organised his thinking around a distinction between two systems of thought. System 1 is fast, automatic, and intuitive — it operates largely outside conscious awareness and draws on pattern recognition and emotional responses. System 2 is slow, deliberate, and analytical, requiring conscious effort. Most everyday decisions are handled by System 1, and cognitive biases arise largely because System 1 misapplies heuristics in situations where careful reasoning is required.
+Choice also depends on how outcomes are framed. In prospect theory, losses and gains are evaluated relative to a reference point rather than only by final wealth. Loss aversion means that a loss commonly has a stronger psychological impact than an equivalent gain. This helps explain why an investor may retain a falling asset to avoid admitting a loss, or why consumers react differently to a surcharge and a mathematically equal discount. It does not imply that every person rejects every gamble; size, probability and context still matter.
 
-Understanding these biases has practical applications. In the field of public policy, the concept of 'nudging' — designing choice environments to steer people towards better decisions while preserving their freedom to choose — has gained significant traction. By changing the default option in pension enrolment (so that employees are enrolled unless they opt out, rather than having to opt in), governments have dramatically increased pension savings rates. Menu designs, energy bills, and health communications have all been reimagined with behavioural insights in mind.
+Kahneman later presented a useful contrast between two modes of thought. System 1 is fast, automatic and intuitive. It recognises a face, completes a familiar phrase and reacts to sudden danger with little conscious effort. System 2 is slower and deliberate, and is recruited for tasks such as checking a complex argument. The labels describe interacting processes, not two physical compartments in the brain. Most routine decisions rely heavily on System 1 because sustained analytical attention is limited.
 
-Critics of nudging argue that it is paternalistic, manipulating people's choices without their knowledge or consent. Others question whether short-term nudges can address deeply ingrained habits. Nonetheless, the field of behavioural economics — which applies insights from psychology to economic models — has transformed our understanding of human behaviour and is now firmly embedded in government, business, and healthcare policy worldwide.`,
+Behavioural findings have moved from laboratories into public policy. Nudging changes the architecture in which a choice is made while leaving alternatives available. Pension enrolment is a common example. Where joining requires an active request, many employees postpone the decision. Changing the default so that workers are enrolled unless they opt out has increased participation and savings rates in several programmes. The financial options may be unchanged, but inaction now produces a different result.
+
+Defaults are not automatically beneficial. The organisation choosing one could have commercial interests, and a default suitable for most people may harm a minority. Clear information, easy reversal and evaluation of real outcomes are therefore essential. A message that produces an immediate response may also fail to change a deeply ingrained habit once reminders end.
+
+Criticism takes two principal forms. Some opponents call nudging paternalistic because officials may influence behaviour without people fully noticing the design. Others accept its aim but question long-term effectiveness: a small alteration in a form cannot by itself remove poverty, addiction or inadequate services. Supporters reply that no choice environment is neutral; forms, menus and websites must place something first. The practical issue is thus not whether design influences decisions, but who controls it, whose welfare is measured and whether people can genuinely choose another path. Transparent trials should publish failures as carefully as successes. Independent replication matters too.`,
       questions: [
         {
           type: 'formgroup',
@@ -627,7 +693,7 @@ The idea of {{33}} involves designing choice environments to promote better deci
             { num: 27, answers: ['rational choice', 'rational'], maxWords: 2 },
             { num: 28, answers: ['heuristics'], maxWords: 1 },
             { num: 29, answers: ['cognitive biases', 'biases'], maxWords: 2 },
-            { num: 30, answers: ['recall', 'remember', 'retrieve'], maxWords: 1 },
+            { num: 30, answers: ['recall'], maxWords: 1 },
             { num: 31, answers: ['Loss', 'loss'], maxWords: 1 },
             { num: 32, answers: ['intuitive', 'automatic'], maxWords: 1 },
             { num: 33, answers: ['nudging'], maxWords: 1 },
@@ -645,7 +711,7 @@ The idea of {{33}} involves designing choice environments to promote better deci
           type: 'mcq',
           id: 'r3q35',
           part: 7,
-          text: 'The anchoring experiment used a spinning wheel to produce random numbers.',
+          text: 'Participants in the anchoring demonstration were led to believe that the wheel result was random.',
           options: ['YES', 'NO', 'NOT GIVEN'],
           answer: 0,
         },
@@ -706,10 +772,10 @@ The idea of {{33}} involves designing choice environments to promote better deci
           id: 'w1',
           part: 8,
           taskNumber: 1,
-          stimulusLabel: 'The bar chart below shows global sales of four different kinds of digital games between 2000 and 2006.',
+          stimulusLabel: 'The bar chart below shows the percentage of commuters using five main forms of transport in Norchester in 2005, 2015 and 2025.',
           stimulus: '',
-          imageUrl: '/ielts/images/writing-set2-task1-games.png',
-          imageAlt: 'Bar chart of global sales in billions of dollars for mobile phone, online, console and handheld games from 2000 to 2006',
+          imageUrl: '/assets/ielts/charts/set2-task1.svg',
+          imageAlt: 'Grouped bar chart comparing the percentage of Norchester commuters travelling by car, bus, rail, bicycle and on foot in 2005, 2015 and 2025',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.',
           minWords: 150,
         },
@@ -727,7 +793,7 @@ The idea of {{33}} involves designing choice environments to promote better deci
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'Some people think that environmental problems are too big for individuals to solve. Others believe that individuals can make a significant difference. Discuss both views and give your own opinion.',
+          stimulus: 'Universities should require every student to complete a practical project with a local business or community organisation before graduating. To what extent do you agree or disagree?',
           text: 'Give reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.',
           minWords: 250,
         },
@@ -749,11 +815,14 @@ The idea of {{33}} involves designing choice environments to promote better deci
           partNumber: 1,
           text: 'Part 1 — Personal questions (4–5 minutes). Answer the following questions about yourself.',
           followUp: [
-            'Where do you live at the moment? Do you like it there?',
-            'Do you enjoy spending time outdoors? Why / why not?',
-            'What kind of music do you like to listen to?',
-            'How do you usually spend your weekends?',
-            'Have you travelled to other countries? Where would you most like to visit?',
+            'Are you working or studying at the moment?',
+            'What part of your work or studies do you find most interesting?',
+            'Did you enjoy learning practical skills at school?',
+            'Is there a skill you would like to learn this year?',
+            'Who do you usually ask for advice when learning something new?',
+            'Do you prefer learning by watching or by reading instructions?',
+            'Have you ever taught another person how to do something?',
+            'Do you think people need to keep learning throughout life?',
           ],
         },
         {
@@ -762,14 +831,15 @@ The idea of {{33}} involves designing choice environments to promote better deci
           part: 10,
           partNumber: 2,
           text: 'Part 2 — Individual long turn (3–4 minutes). Read the cue card and prepare for 1 minute, then speak for 1–2 minutes.',
-          cueCard: `Describe a place you have visited that you particularly enjoyed.
+          cueCard: `Describe a useful skill that you learned from someone of a different generation.
 
 You should say:
-  - where the place is and how you got there
-  - what you did there
-  - who you went with
+• what the skill was
+• who taught it to you
+• how you practised it
+• when you first used it independently
 
-and explain why you enjoyed the visit so much.`,
+and explain why learning from this person was memorable.`,
         },
         {
           type: 'speak',
@@ -778,11 +848,12 @@ and explain why you enjoyed the visit so much.`,
           partNumber: 3,
           text: 'Part 3 — Two-way discussion (4–5 minutes). Discuss the following questions.',
           followUp: [
-            'Why do you think people enjoy travelling to new places?',
-            'How has tourism changed in recent years?',
-            'Do you think tourism can have negative effects on a place? How?',
-            'What are the economic benefits of tourism for a country?',
-            'How might travel and tourism change in the future?',
+            'What kinds of knowledge are commonly passed between generations?',
+            'Why are some young people reluctant to learn from older people?',
+            'What can older people learn from younger generations?',
+            'Has technology made intergenerational learning easier or more difficult?',
+            'Should schools invite more community members to teach practical skills?',
+            'How might longer working lives change the way generations learn from one another?',
           ],
         },
       ],
