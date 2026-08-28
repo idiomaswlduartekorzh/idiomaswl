@@ -16,11 +16,11 @@ const mock: MockExam = {
       audioUrl: '/audio/ielts/ielts-listening-set-12.mp3',
       title: 'Listening — Section 1: Car-Park and Travel-Card Enquiry',
       instructions: 'You will hear a conversation between a customer and a transport office assistant. Listen and answer Questions 1–10.',
-      transcript: `AGENT: Good morning, City Transport Office. How can I help?
+      transcript: `AGENT: Good morning, City Transport Office. You're speaking to Maya. How can I help?
 
-CUSTOMER: Hello. I've just moved to the area and I'd like to ask about a parking permit and a travel card.
+CUSTOMER: Hello. I've just moved to the area and I'd like to ask about a parking permit and a travel card. I looked online, but I wasn't sure whether I needed two separate applications.
 
-AGENT: Of course. Let me take a few details first. Your name?
+AGENT: You do, although we can deal with both during the same appointment. The permit is linked to your vehicle, whereas the travel card is personal. Let me take a few details first. Your name?
 
 CUSTOMER: It's Daniel Foster.
 
@@ -32,37 +32,51 @@ AGENT: Thank you. And your address?
 
 CUSTOMER: 8 Ashgrove Avenue — that's A-S-H-G-R-O-V-E.
 
-AGENT: Ashgrove Avenue. And the postcode?
+AGENT: Fine. And the postcode?
 
 CUSTOMER: It's NG2 6BX.
 
-AGENT: And a phone number?
+AGENT: And a phone number in case we need to contact you?
 
-CUSTOMER: My mobile's 079 3358 4162.
+CUSTOMER: My mobile's 079 3358 4162. I am usually at work during the morning, so a text message is easier than a call.
 
-AGENT: Great. Now, the parking permit — which car park did you want?
+AGENT: I've noted that. Now, the parking permit — which car park did you want?
 
-CUSTOMER: The riverside one, please. Oh, sorry — no, I meant the station car park. That's the one nearest my flat.
+CUSTOMER: The riverside one, please. Oh, sorry — no, I meant the station car park. That's the one nearest my flat. I keep confusing the names because both are beside the railway line.
 
-AGENT: The station car park, fine. Just so you know, a warden checks the permits every day, so you'll need to display it clearly — on the windscreen, please, not on the dashboard.
+AGENT: The station car park, fine. That permit is valid overnight as well as during the day. It doesn't guarantee a particular space, but residents can use any bay marked in blue.
 
-CUSTOMER: On the windscreen. Got it.
+CUSTOMER: That's fine. I mainly need somewhere to leave the car when I take the train to work.
 
-AGENT: Now, the travel card. It's very useful — you can use it on the buses and the tram, right across the city.
+AGENT: Just so you know, a warden checks the permits every day, including Sundays, so you'll need to display it clearly — on the windscreen, please, not on the dashboard.
+
+CUSTOMER: On the windscreen. Got it. Does the permit start immediately?
+
+AGENT: It starts on the date you choose. We can issue one for six or twelve months, and send a reminder shortly before it expires. You'll need your vehicle registration document, but not a printed utility bill because we can verify your address electronically.
+
+CUSTOMER: Excellent. Now, what about the travel card?
+
+AGENT: It's useful if you make several journeys — you can use it on the buses and the tram, right across the city. It isn't valid on regional trains, though.
 
 CUSTOMER: That's exactly what I need. What do I have to do to apply?
 
-AGENT: When you come in, just bring a recent photo of yourself and we'll print the card while you wait.
+AGENT: When you come in, just bring a recent photo of yourself and we'll print the card while you wait. A passport-sized colour image is best, but it doesn't need to be professionally taken.
 
-CUSTOMER: Lovely. And how much do they cost?
+CUSTOMER: Lovely. And how much do the cards cost?
 
-AGENT: We have two options. The weekly card is £15, and it includes a free map of the network. The monthly card lasts thirty days and costs £58; with that one you also get discounts at a number of shops and cafés in the centre.
+AGENT: We have two options. The weekly card is £15, and it includes a free map of the network. That's popular with visitors because the map also shows the main interchange points.
 
-CUSTOMER: I'll go for the monthly, I think.
+CUSTOMER: I expect the longer one works out cheaper for commuting.
 
-AGENT: Good choice. If you bring your photo and the £58 to the office, we can sort it out today.
+AGENT: Usually. The monthly card lasts thirty days and costs £58; with that one you also get discounts at a number of shops and cafés in the centre. Those offers change, so check the transport app rather than an old leaflet.
 
-CUSTOMER: Perfect, thank you very much.`,
+CUSTOMER: I'll go for the monthly, I think. Can I pay by card at the office?
+
+AGENT: Yes, card or cash. If you bring the required documents and payment, we can sort everything out today. Our quieter period is between two and four in the afternoon.
+
+CUSTOMER: Perfect. I'll come at about half past two. Thank you very much.
+
+AGENT: You're welcome. See you later.`,
       questions: [
         {
           type: 'formgroup',
@@ -91,7 +105,7 @@ Travel card
             { num: 3, answers: ['day'], maxWords: 1 },
             { num: 4, answers: ['windscreen'], maxWords: 1 },
             { num: 5, answers: ['tram'], maxWords: 1 },
-            { num: 6, answers: ['photo', 'photograph'], maxWords: 1 },
+            { num: 6, answers: ['photo'], maxWords: 1 },
           ],
         },
         {
@@ -112,7 +126,7 @@ Travel card
               'Monthly card',
               '30 days',
               { num: 9, answers: ['58', '£58'], maxWords: 1 },
-              { num: 10, answers: ['discounts', 'discount'], maxWords: 1 },
+              { num: 10, answers: ['discounts'], maxWords: 1 },
             ],
           ],
         },
@@ -125,23 +139,25 @@ Travel card
       audioUrl: '/audio/ielts/ielts-listening-set-12.mp3',
       title: 'Listening — Section 2: Farm Open-Day Talk',
       instructions: 'You will hear a guide welcoming visitors to a farm open day. Listen and answer Questions 11–20.',
-      transcript: `Hello everyone, and a warm welcome to Greenfields Farm on our annual open day. It's wonderful to see so many families here. Let me start by telling you what's new. This year, for the very first time, we've opened a farm shop selling our own produce, and we've built a large children's play barn for when the weather turns. Now, some of our old favourites are still here too — the café has been serving visitors for over twenty years, the duck pond is where it's always been, and yes, the tractor rides are running as usual, so don't worry.
+      transcript: `Hello everyone, and a warm welcome to Greenfields Farm on our annual open day. It's wonderful to see so many families here. Before I describe the programme, let me explain the coloured signs. Blue signs point to visitor facilities, yellow ones mark demonstrations, and red signs mean that an area is closed to the public. Please don't cross a red barrier, even if you can see a member of staff working beyond it.
 
-Right, let me run through today's programme. All of our guided walks set off from the car park, just behind you, so please gather there.
+Let me start by telling you what's new. This year, for the very first time, we've opened a farm shop selling our own produce, and we've built a large children's play barn for when the weather turns. The shop stocks vegetables, eggs and apple juice from the farm; refrigerated items will be kept for you until you leave. The play barn is supervised, but an adult must remain with children under eight. Some old favourites are still here too — the café has served visitors for over twenty years, the duck pond is where it's always been, and the tractor rides are running as usual, so don't worry.
 
-One thing you mustn't miss is the sheepdog display. That begins at 11, over in the top field, and it lasts about half an hour.
+Right, let me run through today's programme. All of our guided walks set off from the car park, just behind you, so please gather there ten minutes before the advertised time. There are two routes. The shorter route is suitable for pushchairs; the longer one crosses uneven ground and visitors should wear sturdy shoes.
 
-After that, children are welcome to help feed the lambs in the small animal barn — they do love a bottle of milk.
+One thing you mustn't miss is the sheepdog display. That begins at 11 in the top field and lasts about half an hour. The afternoon display is identical, so there is no need to attend both. Please remain behind the rope because the dogs work quickly and need a clear route around the flock.
 
-Next to that is the dairy. Through the window, you can watch our staff making cheese in the traditional way, and there are samples to try.
+After that, children are welcome to help feed the lambs in the small animal barn — they do love a bottle of milk. Numbers are limited, and free tickets are available from the information desk. Children must wash their hands as soon as the activity finishes.
 
-If you'd like to take something home, head down to the lower field, where you can pick your own strawberries — bring a basket if you have one.
+Next to that is the dairy. Through the window, you can watch our staff making cheese in the traditional way, and there are samples to try. The viewing area is accessible by a ramp on the eastern side; the steps at the front are quite steep.
 
-When you get hungry, hot food and drinks are served all day in the food tent, near the main gate.
+If you'd like to take something home, head down to the lower field, where you can pick your own strawberries — bring a basket if you have one. We weigh the fruit at the field gate. Please pick only from rows carrying a green marker, since the other rows are not yet ripe.
 
-A couple of reminders. We do have animals roaming freely, so please keep your dogs on a lead at all times. And do watch your children near the machinery.
+When you get hungry, hot food and drinks are served all day in a large tent near the main gate. Vegetarian meals are available. The café serves cakes and cold drinks, but it will be busiest between twelve and two.
 
-The farm closes at 5 pm today, and the car park closes shortly after, so do allow yourself plenty of time. Above all, enjoy your day — and please do ask any of our staff in green jackets if you need help. Thank you.`,
+A couple of reminders. We do have animals roaming freely, so please keep your dogs on a lead at all times. And do watch your children near the machinery. If you need first aid, go to the information desk beside the entrance, where a trained member of staff is on duty.
+
+The farm closes at 5 pm today, and the vehicle gates close shortly after, so allow yourself plenty of time. Above all, enjoy your day — and ask any of our staff in green jackets if you need help. Thank you.`,
       questions: [
         {
           type: 'multiselect',
@@ -175,14 +191,14 @@ The farm closes at 5 pm today, and the car park closes shortly after, so do allo
 • Visitors must keep their {{19}} on a lead.
 • The farm closes at {{20}}.`,
           blanks: [
-            { num: 13, answers: ['car park', 'car-park'], maxWords: 2 },
-            { num: 14, answers: ['11', '11 am', 'eleven'], maxWords: 1 },
-            { num: 15, answers: ['lambs', 'lamb'], maxWords: 1 },
+            { num: 13, answers: ['car park'], maxWords: 2 },
+            { num: 14, answers: ['11'], maxWords: 1 },
+            { num: 15, answers: ['lambs'], maxWords: 1 },
             { num: 16, answers: ['cheese'], maxWords: 1 },
-            { num: 17, answers: ['strawberries', 'strawberry'], maxWords: 1 },
-            { num: 18, answers: ['tent', 'food tent'], maxWords: 2 },
-            { num: 19, answers: ['dogs', 'dog'], maxWords: 1 },
-            { num: 20, answers: ['5 pm', '5', '5pm', 'five'], maxWords: 2 },
+            { num: 17, answers: ['strawberries'], maxWords: 1 },
+            { num: 18, answers: ['tent'], maxWords: 2 },
+            { num: 19, answers: ['dogs'], maxWords: 1 },
+            { num: 20, answers: ['5 pm'], maxWords: 2 },
           ],
         },
       ],
@@ -194,45 +210,57 @@ The farm closes at 5 pm today, and the car park closes shortly after, so do allo
       audioUrl: '/audio/ielts/ielts-listening-set-12.mp3',
       title: 'Listening — Section 3: Robotics Group Project',
       instructions: 'You will hear a tutor and two students discussing a robotics project. Listen and answer Questions 21–30.',
-      transcript: `TUTOR: So, Sam, Priya — how's the robotics project coming along? Remind me what your robot has to do.
+      transcript: `TUTOR: So, Sam, Priya — how's the robotics project coming along? I read your progress note, but remind me what the robot has to do in the final demonstration.
 
-SAM: Well, the brief is to build a small robot that can find its way through a maze without any human control.
+SAM: The brief is to build a small robot that can find its way through a maze without any human control. It doesn't need to map the whole maze in advance, but it must reach the exit within four minutes.
 
 TUTOR: A maze-solving robot, good. And it has to be fully autonomous?
 
-PRIYA: Yes, completely. Once we press start, it has to make all its own decisions.
+PRIYA: Yes, completely. Once we press start, it has to make all its own decisions. We originally misunderstood that and designed a remote control, but we removed it after the first tutorial.
 
 TUTOR: Excellent. So where are you up to?
 
-SAM: We've built the frame and fitted the wheels. The main headache has been the sensors. At first we used a camera to detect the walls, but it was far too slow to process the images.
+SAM: We've built the frame and fitted the wheels. The main headache has been the sensors. At first we used a camera to detect the walls, but it was far too slow to process the images. The pictures were clear; the delay was the problem.
 
 TUTOR: So what did you switch to?
 
-PRIYA: We replaced it with an ultrasonic sensor, which measures distance using sound. It's much faster and, honestly, a lot cheaper as well.
+PRIYA: We replaced it with an ultrasonic sensor, which measures distance using sound. It's much faster and, honestly, a lot cheaper as well. We considered infrared, but strong light in the laboratory affected the readings.
 
-TUTOR: A sensible choice. Now, how have you divided the work?
+TUTOR: A sensible choice. Have you checked how the ultrasonic device behaves at corners? A flat wall gives a strong return, whereas an angled surface may not.
 
-SAM: Priya is doing all the programming, and I'm concentrating on the electronics — the wiring and the motors.
+PRIYA: Not systematically. We have only tried it in the corridor.
+
+TUTOR: Include several wall angles in your trial, then. Now, how have you divided the work?
+
+SAM: Priya is doing all the programming, and I'm concentrating on the electronics — the wiring and the motors. I was going to design the outer shell too, but we decided that would leave me with too much.
 
 TUTOR: And who's writing up the report?
 
-PRIYA: We're sharing that. But actually, we wondered if you could help us with the testing schedule.
+PRIYA: We're sharing that. Sam will describe the hardware, I'll explain the algorithm, and we'll write the evaluation together. But actually, we wondered if you could help us with the testing schedule.
 
-TUTOR: Of course. My advice would be to test the robot in a simple maze first, before you try the full competition layout. You'll find the faults much more quickly.
+TUTOR: Of course. My advice would be to test the robot in a simple maze first, before you try the full competition layout. You'll find faults much more quickly because there are fewer possible causes. Change only one variable between trials, or you won't know which adjustment helped.
 
-SAM: That's a good point.
+SAM: That's a good point. We changed the wheel speed and the sensor threshold together last time, so the result told us very little.
+
+TUTOR: Exactly. Keep a record of failed trials as well as successful ones. A good evaluation explains how the design developed; it doesn't pretend the first attempt worked.
+
+PRIYA: Should we film the trials?
+
+TUTOR: A short recording could help you examine a difficult turn, but measurements matter more than polished video. Record completion time, wrong turns and whether the robot touches a wall.
+
+SAM: Right.
 
 TUTOR: One concern — what are you making the body from? It looks rather heavy.
 
-SAM: It's plywood at the moment.
+SAM: It's plywood at the moment. We chose it because the workshop had some spare sheets.
 
-TUTOR: I'd switch to plastic. It's lighter, and your battery will last longer.
+TUTOR: I'd switch to plastic. It's lighter, and your battery will last longer. You can reuse the same frame, so this isn't a complete rebuild.
 
-PRIYA: We'll change that.
+PRIYA: We'll change that. The electronics can stay where they are.
 
-TUTOR: Right, a few things before next week. First, order the plastic for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also, book the workshop for Friday — you'll need the space. And email me your budget, because I think you can still claim some funding.
+TUTOR: Good. Let's agree the actions before next week. First, order the plastic needed for the new body. Then finish the code so the robot can turn corners. After that, run a full test and record the results in a table. Also, book the workshop for Friday — you'll need the space. Finally, email me your budget, because I think you can still claim some funding.
 
-SAM: Brilliant. Thanks so much.`,
+SAM: Brilliant. We'll send that this afternoon. Thanks so much.`,
       questions: [
         {
           type: 'mcq',
@@ -323,17 +351,21 @@ SAM: Brilliant. Thanks so much.`,
       audioUrl: '/audio/ielts/ielts-listening-set-12.mp3',
       title: 'Listening — Section 4: Human Colour Vision',
       instructions: 'You will hear a lecture about human colour vision. Listen and answer Questions 31–40.',
-      transcript: `Good afternoon. Today we're going to explore how human beings see colour — a process that is far more remarkable than most people assume.
+      transcript: `Good afternoon. Today we're going to explore how human beings see colour — a process that is far more remarkable than most people assume. Colour is not simply a property carried intact from an object into the mind. Light reaches the eye, sensory cells respond to it, and neural systems construct a useful perception from patterns of activity.
 
-It begins in the eye. When light enters, it is focused onto a thin layer of light-sensitive tissue at the back of the eye called the retina. This layer is packed with millions of specialised cells that convert light into electrical signals.
+It begins in the eye. When light enters through the pupil, the lens helps focus it onto a thin layer of light-sensitive tissue at the back of the eye called the retina. This layer is packed with specialised cells that convert light into electrical signals. The centre and edges of the retina are not identical, which helps explain why fine colour detail is easiest to see when we look directly at something.
 
-There are two main kinds of these cells. The first, called rods, are extremely sensitive and allow us to see in dim light, but they cannot detect colour. The second kind, the cones, are responsible for colour vision, though they need bright light to work well. That is why, on a dark night, the world appears in shades of grey.
+There are two main kinds of photoreceptor. The first, called rods, are extremely sensitive and allow us to see in dim light, but they do not provide ordinary colour vision. The second kind, the cones, are responsible for colour vision, though they need brighter light to work well. That is why, on a dark night, the world appears largely in shades of grey even when we know that the objects around us are coloured.
 
-Now, in the human eye there are three different types of cone. Each type contains a slightly different pigment, and because of this, each responds most strongly to a particular wavelength of light. Broadly speaking, one type is most sensitive to red, another to green, and the third to blue. Every colour we perceive is produced by the eye comparing the signals from these three types, and that comparison is carried out by the brain, which interprets the mixture as a single colour.
+The human eye normally contains three types of cone. Each type contains a different light-sensitive pigment and responds across a range of the spectrum, with its strongest response around a particular wavelength. Scientists call them short-, medium- and long-wavelength cones. They are commonly associated, in simplified descriptions, with blue, green and red respectively, although their sensitivity ranges overlap substantially.
 
-This system also explains colour blindness. In most cases the condition is inherited, passed down from a person's parents through their genes. Interestingly, it is far more common in men than in women, for reasons linked to the way the relevant genes are carried. The most frequent form is an inability to distinguish red from green, which can make everyday tasks, such as reading a map, surprisingly difficult.
+No single cone announces the name of a colour. Instead, the visual system compares the relative activity of the three types. Later neural stages also organise information into opponent channels, such as differences between red and green signals, or between blue and yellow signals. The brain combines and interprets these patterns alongside brightness and context. As a result, the same patch can appear different when its surroundings change, and an object can seem to keep a fairly stable colour under different illumination. This tendency is known as colour constancy.
 
-Finally, it's worth remembering that human vision is not the limit of what's possible. Many animals see the world quite differently. Birds, for example, have an extra type of cone and can see ultraviolet light, which is completely invisible to us. Next week, we'll look at how the brain processes all these signals in more detail.`,
+This system also helps explain common forms of colour-vision deficiency, often casually called colour blindness. Complete absence of colour perception is rare. In most familiar red–green cases, the condition is inherited, passed through genes that affect cone pigments. It is much more common in men than in women because the relevant red–green pigment genes are on the X chromosome. The commonest difficulties involve distinguishing red from green, which can affect tasks such as interpreting maps, warning lights or colour-coded charts. Good design therefore uses labels, shapes or contrast as well as hue.
+
+Colour perception can also change without an inherited condition. Ageing alters the amount and quality of light reaching the retina, and some diseases or medicines can affect visual pathways. This is why a sudden change in colour vision should be assessed rather than assumed to be genetic.
+
+Finally, human vision is not the limit of what is possible. Many birds have an additional cone class and can detect ultraviolet light, which is invisible to us. That ability may help them identify food, mates or markings that humans cannot see. Other species sample light in different ways, so it is misleading to rank every visual system on a single scale from simple to advanced. Each is adapted to particular tasks. Next week, we'll examine how the brain uses context and prior experience when it processes these signals.`,
       questions: [
         {
           type: 'formgroup',
@@ -388,17 +420,19 @@ Beyond human vision
       instructions: 'Read the passage and answer Questions 1–13.',
       passage: `The Decline of Coral Reefs
 
-Coral reefs occupy less than one percent of the ocean floor, yet they support approximately twenty-five percent of all known marine species. These ecosystems—often described as the rainforests of the sea—provide food security, coastal protection, and economic income to hundreds of millions of people worldwide. Today, they face an unprecedented convergence of threats that scientists warn could eliminate most of the world's reefs within decades.
+Coral reefs occupy less than one percent of the ocean floor, yet estimates commonly place about a quarter of marine species in reef habitats during at least part of their lives. These ecosystems—often described as the rainforests of the sea—support fisheries and tourism and reduce the force of waves reaching many tropical coasts. Their benefits are biological, social and economic, but they are not distributed evenly: an offshore reef visited by tourists, for example, may be valued differently from a near-shore reef on which a fishing community depends directly.
 
-The primary driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. These algae provide corals with up to ninety percent of their energy needs through photosynthesis and give corals their vivid colours. When sea temperatures rise by even one or two degrees Celsius above the seasonal maximum for a sustained period, corals expel their zooxanthellae in a stress response called coral bleaching. Without the algae, the coral skeleton becomes visible—appearing ghostly white—and the coral begins to starve. If temperatures do not return to normal within weeks, the coral dies. Mass bleaching events, once rare, are now occurring with increasing frequency; the Great Barrier Reef experienced five mass bleaching events between 2016 and 2024.
+The primary global driver of reef decline is ocean warming caused by climate change. Corals are colonial animals that live in a symbiotic relationship with photosynthetic algae called zooxanthellae. The algae supply much of the coral's energy and give many corals their vivid colours. When temperatures remain unusually high, corals may expel these algae in a stress response called coral bleaching. The pale calcium-carbonate coral skeleton then becomes visible through the living tissue. Bleached coral is not necessarily dead: if heat stress eases soon enough, algae can return and colonies may recover. Prolonged or repeated stress, however, raises mortality and can leave too little time for growth and reproduction between events.
 
-Ocean acidification compounds this problem significantly. As the ocean absorbs approximately thirty percent of all carbon dioxide emitted by human activity, a chemical reaction produces carbonic acid, lowering the pH of seawater. Since the Industrial Revolution, ocean surface pH has dropped from 8.2 to 8.1—a change that, because pH is logarithmic, represents a twenty-six percent increase in acidity. For corals, which build their skeletons from calcium carbonate, this is deeply problematic: acidification reduces the availability of carbonate ions, making it harder for corals to calcify and causing existing skeletons to weaken and dissolve.
+Satellite monitoring and field reports show how widely the risk has spread. In June 2026, the United States National Oceanic and Atmospheric Administration concluded that the fourth global bleaching event had probably ended during 2025. From early 2023 to mid-2025, bleaching-level heat stress had affected about eighty-four percent of the world's reef area, and mass bleaching had been documented in at least eighty-three countries and territories. Exposure to heat does not prove that every colony bleached or died, but the scale makes local observations and consistent definitions essential.
+
+Ocean acidification compounds this problem. The ocean absorbs a substantial share of the carbon dioxide released by human activity. Dissolved carbon dioxide changes seawater chemistry, increasing hydrogen-ion concentration and reducing the carbonate ions used by many organisms. Average surface-ocean pH has fallen by roughly 0.1 unit since the industrial era began. Because the pH scale is logarithmic, that apparently small shift represents a large rise in acidity. For reef-building corals, lower carbonate availability can make calcification more energetically demanding; its effects vary with species, location and other environmental conditions.
 
 Local stressors add further pressure. Agricultural runoff introduces nutrients into coastal waters, stimulating algal blooms that smother reefs and block sunlight. Overfishing removes herbivorous fish such as parrotfish and surgeonfish, which normally keep algae in check. Coastal development disrupts sediment patterns and can physically damage reef structures. In many regions, these local threats operate in combination with climate stressors, creating a "death by a thousand cuts" dynamic from which reefs have little opportunity to recover.
 
-The economic stakes are enormous. Coral reefs generate an estimated US$375 billion per year in goods and services, including fisheries, tourism, and coastal protection. The physical barrier they create absorbs wave energy and protects shorelines from erosion and storm damage—a service valued at hundreds of billions of dollars annually for low-lying coastal nations and islands. In countries like Indonesia, the Philippines, and the Maldives, reef-based tourism and fishing underpin the livelihoods of millions of people, making reef degradation not merely an ecological problem but a development crisis.
+The economic stakes are substantial but difficult to compress into one global price. Studies count different combinations of fisheries, tourism, coastal protection and non-market cultural value, so headline totals are not directly interchangeable. The physical structure of a reef can dissipate wave energy and reduce erosion or storm damage, while reef-associated fish contribute to food and income. A damaged reef may therefore create costs far beyond lost visitor spending. At the same time, a monetary estimate can miss relationships that communities regard as cultural or irreplaceable.
 
-Responses to reef decline range from local interventions to global policy ambitions. Coral gardening—growing fragments of resilient coral on underwater nurseries and transplanting them to degraded reefs—has shown promise in the Caribbean and parts of the Indo-Pacific, though the scale of the work required is vast. Scientists are investigating heat-resistant coral strains, produced through selective breeding or assisted evolution, that may be able to survive warmer waters. At the policy level, the establishment of marine protected areas reduces local stressors and gives reefs more capacity to recover from bleaching events. Ultimately, however, conservationists argue that without aggressive action to limit greenhouse gas emissions, all other interventions risk being overwhelmed by continued warming.`,
+Responses to reef decline range from local interventions to global policy. Coral gardening—growing fragments in nurseries and transplanting them to degraded sites—can rebuild selected patches, but survival after transplantation must be measured over time. Researchers are also studying natural heat tolerance and carefully testing assisted approaches. Marine protected areas may reduce fishing pressure, yet a boundary on a map does not by itself stop polluted runoff or marine heatwaves. Effective projects therefore state what threat they address, compare restored sites with controls and publish failures as well as successes. Local management can improve recovery conditions; it cannot substitute for rapid reductions in the greenhouse-gas emissions driving continued ocean warming.`,
       questions: [
         {
           type: 'formgroup',
@@ -406,7 +440,7 @@ Responses to reef decline range from local interventions to global policy ambiti
           part: 5,
           qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: Coral reefs cover approximately one quarter of the total ocean floor.\n2. {{2}}: Zooxanthellae supply corals with most of their energy through photosynthesis.\n3. {{3}}: A temperature rise of five degrees is needed to trigger coral bleaching.\n4. {{4}}: Ocean pH has become more acidic since the beginning of the Industrial Revolution.\n5. {{5}}: Parrotfish and surgeonfish help reefs by controlling algae growth.\n6. {{6}}: Coral reefs generate more economic value from tourism than from fisheries.\n7. {{7}}: Coral gardening involves transplanting resilient coral fragments to damaged reefs.`,
+          template: `1. {{1}}: Coral reefs cover approximately one quarter of the total ocean floor.\n2. {{2}}: Zooxanthellae provide an important share of a coral's energy.\n3. {{3}}: A temperature rise of five degrees is needed to trigger coral bleaching.\n4. {{4}}: Ocean pH has become more acidic since the beginning of the Industrial Revolution.\n5. {{5}}: Parrotfish and surgeonfish help reefs by controlling algae growth.\n6. {{6}}: Coral reefs generate more economic value from tourism than from fisheries.\n7. {{7}}: Coral gardening involves transplanting coral fragments to damaged reefs.`,
           blanks: [
             { num: 1, answers: ['FALSE'] },
             { num: 2, answers: ['TRUE'] },
@@ -423,14 +457,14 @@ Responses to reef decline range from local interventions to global policy ambiti
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. The algae living inside coral tissue are called {{8}} and they are expelled during bleaching events.\n9. The {{9}} experienced five mass bleaching events between 2016 and 2024.\n10. When corals lose their algae, they appear white because their {{10}} becomes visible.\n11. Agricultural runoff promotes {{11}} that cover reefs and block sunlight.\n12. Coral reefs protect coastlines from erosion by acting as a physical {{12}} that absorbs wave energy.\n13. Scientists are developing {{13}} coral strains that may survive higher ocean temperatures.`,
+          template: `8. The algae living inside coral tissue are called {{8}} and they are expelled during bleaching events.\n9. NOAA concluded that the fourth global bleaching event had probably ended during {{9}}.\n10. When corals lose their algae, they appear white because their {{10}} becomes visible.\n11. Agricultural runoff promotes {{11}} that cover reefs and block sunlight.\n12. A reef's physical {{12}} can reduce the force of waves and help protect coastlines.\n13. Restoration projects should compare restored sites with {{13}} and publish failures as well as successes.`,
           blanks: [
             { num: 8, answers: ['zooxanthellae'] },
-            { num: 9, answers: ['Great Barrier Reef'] },
+            { num: 9, answers: ['2025'] },
             { num: 10, answers: ['coral skeleton'] },
             { num: 11, answers: ['algal blooms'] },
-            { num: 12, answers: ['barrier'] },
-            { num: 13, answers: ['heat-resistant'] },
+            { num: 12, answers: ['structure'] },
+            { num: 13, answers: ['controls'] },
           ],
         },
       ],
@@ -441,9 +475,9 @@ Responses to reef decline range from local interventions to global policy ambiti
       skill: 'reading',
       title: 'Reading — Passage 2: A History of Chess',
       instructions: 'Read the passage and answer Questions 14–26.',
-      passage: `A History of Chess
+      passage: `A Concise History of Chess Across Continents, Centuries, Communities and Cultures
 
-A. Chess is one of the oldest and most widely played strategy games in the world. Its origins lie in the Indian subcontinent, where a game called chaturanga—meaning "four divisions," a reference to the divisions of the Indian military—was played as early as the sixth century CE. Chaturanga featured four types of pieces corresponding to infantry, cavalry, elephants, and chariots, and was played on an eight-by-eight grid. From India, the game spread westward to Persia, where it was transformed into chatrang, later shatranj. The Persian word for the game's most important piece, shah, meaning king, gave rise to the words "chess" and "checkmate"—the latter derived from shah mat, meaning "the king is helpless."
+A. Chess is one of the oldest and most widely played strategy games in the world. Most histories connect its continuous development with the Indian subcontinent, where a game called chaturanga—meaning "four divisions," a reference to divisions of an army—was played by around the sixth century CE. Chaturanga featured pieces associated with infantry, cavalry, elephants and chariots and used an eight-by-eight grid. Written sources and surviving objects do not reveal one inventor or a single moment of creation, so claims of a precise birthplace remain debated. From India, the game spread westward to Persia, where it became chatrang, later shatranj. The Persian word shah means king. The expression associated with checkmate is often linked to shah mat, although linguists caution that the second element is better understood as the king being defeated or left without escape than literally dead.
 
 B. Arab traders and scholars carried shatranj across the Islamic world following the conquest of Persia in the seventh century. The game proved enormously popular in the caliphate courts, and a significant body of chess literature—including problem collections, treatise on strategy, and biographical accounts of great players—was produced in Arabic during the eighth and ninth centuries. The caliph Harun al-Rashid, famed for his patronage of arts and sciences, was reportedly a devoted player. When chess reached Moorish Spain and Sicily, it entered Europe, where it would undergo a transformation that produced the game we recognise today.
 
@@ -451,11 +485,11 @@ C. European chess diverged from shatranj in the late fifteenth century, during a
 
 D. The eighteenth and nineteenth centuries saw chess flourish as a competitive pursuit. The first unofficial world championship is generally considered to have been the match between Wilhelm Steinitz and Johannes Zukertort in 1886, which Steinitz won, becoming the game's first recognised world champion. Steinitz also developed what became known as positional chess—a style emphasising long-term structural advantages, pawn formations, and the control of open files, rather than the swashbuckling tactical play that had dominated earlier European chess. His ideas, initially controversial, proved enormously influential on subsequent generations of players.
 
-E. The twentieth century brought two defining developments: the rise of Soviet chess and the advent of computer analysis. Following the Russian Revolution, the Soviet government promoted chess as a sport of intellectual prestige, funding a network of state chess schools and producing a series of world champions, beginning with Alexander Alekhine and continuing through Mikhail Botvinnik, Tigran Petrosian, Boris Spassky, and Anatoly Karpov. The match between Spassky and the American Bobby Fischer in Reykjavik in 1972 became a proxy conflict for Cold War tensions, attracting global media attention and drawing chess briefly into mainstream consciousness.
+E. The twentieth century brought institutional competition and, later, computer analysis. The World Chess Federation, known by its French acronym FIDE, was founded in Paris in 1924 and assumed control of the world-title cycle after the death of Alexander Alekhine. Within the Soviet Union, the government promoted chess as a sport of intellectual prestige, funding clubs, coaching and systematic preparation. From Mikhail Botvinnik's victory in the 1948 championship tournament, Soviet representatives became a succession of world champions, including Vasily Smyslov, Mikhail Tal, Tigran Petrosian, Boris Spassky and Anatoly Karpov. The match between Spassky and the American Bobby Fischer in Reykjavik in 1972 became associated with Cold War rivalry, attracting global media attention. The political symbolism did not determine the moves on the board, but it shaped how the contest was presented to audiences far beyond chess.
 
-F. Computer chess programs began defeating amateur players in the 1980s and gradually improved to the point where they could challenge grandmasters. In 1997, IBM's Deep Blue defeated the reigning world champion Garry Kasparov in a six-game match—a result that shocked the chess world and the public alike. Today's chess engines, running on ordinary laptop computers, play at a level far beyond the reach of any human player. Paradoxically, rather than diminishing the human game, computer analysis has enriched it: players and coaches use engines to prepare openings, analyse mistakes, and explore positions of extraordinary complexity that would have been inaccessible to earlier generations.
+F. Computer chess programs began defeating amateur players in the 1980s and gradually improved to the point where they could challenge grandmasters. In 1997, IBM's Deep Blue defeated the reigning world champion Garry Kasparov in a six-game match. The machine's achievement depended on specialised hardware, extensive search and human preparation; it was not evidence that a computer reasoned about every problem as a person did. Today's leading chess engines play beyond human level on ordinary hardware. Rather than ending the human game, analysis software has changed preparation: players use it to test openings, locate mistakes and explore positions that earlier generations could assess only through human calculation. Online fair-play systems, meanwhile, must distinguish legitimate preparation from prohibited assistance during a game.
 
-G. The twenty-first century has seen chess undergo a remarkable popular revival. The COVID-19 pandemic drove millions of people online, and chess became one of the most-watched and played games on the internet. The release of the Netflix series The Queen's Gambit in 2020 introduced the game to an entirely new global audience. Online platforms such as Chess.com reported record membership growth, and live-streamed chess tournaments attracted audiences in the millions. Chess, it seems, is as resilient and adaptable as the game itself demands its players to be.`,
+G. The twenty-first century has seen chess undergo a remarkable popular revival. During the COVID-19 pandemic, many existing players moved online and many beginners tried the game while other activities were restricted. The release of the Netflix series The Queen's Gambit in 2020 brought chess to a broad global audience, while streaming allowed strong players to explain fast games in an informal style. Online platforms reported rapid membership growth and tournaments gained viewers who might never attend a traditional playing hall. These indicators measure accounts, games or views rather than a single population of distinct players, so they should not be combined uncritically. Nevertheless, the interaction between entertainment, accessible lessons and immediate matchmaking changed how people could encounter and practise the game. Chess proved adaptable not because its rules stood still, but because the settings in which people learned, watched and competed kept evolving.`,
       questions: [
         {
           type: 'matching',
@@ -509,41 +543,45 @@ G. The twenty-first century has seen chess undergo a remarkable popular revival.
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `Social Media and Mental Health
 
-Few topics in contemporary public discourse generate as much concern and controversy as the relationship between social media use and mental health, particularly among young people. The debate pits alarming survey data and compelling personal narratives against a more cautious scientific literature that emphasises the complexity of the evidence and warns against simplistic causal claims.
+Concern about young people's social-media use is understandable, but the first challenge is to define what is being measured. Time on a platform, constant contact with friends and loss of control over use are not interchangeable. Nor is an average association proof that every user experiences the same effect. A useful account must separate correlation from causation while still taking credible risks seriously.
 
-The popular concern is grounded in striking statistics. In the United States and the United Kingdom, rates of depression, anxiety, and self-harm among adolescents—particularly girls—began rising sharply around 2012, a period that coincides with the widespread adoption of smartphones and social media platforms. The psychologist Jean Twenge, one of the most prominent voices in this debate, argues that this correlation reflects causation: that social media use has fundamentally altered the social landscape of adolescence in harmful ways. Platforms built around social comparison, she argues, expose young users to a constant stream of curated, idealised images of others' lives, driving feelings of inadequacy, envy, and low self-worth. The displacement of face-to-face social interaction by screen time, she further argues, deprives young people of the emotionally nourishing forms of connection that genuine relationships provide.
+Use is widespread. The United States Surgeon General's 2023 advisory reported that up to ninety-five percent of people aged thirteen to seventeen used a social-media platform. The advisory concluded that the available evidence was not sufficient to declare social media safe for children and adolescents. That statement is deliberately different from saying that every platform or every use is harmful. It identifies a need for precautions and better evidence because adolescence is a sensitive period of social and neurological development.
 
-Critics of this position, however, point out that correlation does not establish causation, and that multiple alternative explanations exist for the rise in adolescent mental health problems—including economic insecurity, academic pressure, and changes in diagnostic practices or help-seeking behaviour. A major meta-analysis published in 2019 in the journal Psychological Science examined data from over half a million adolescents and found that the association between social media use and wellbeing, while statistically significant, was tiny in magnitude—comparable in size to the association between wearing glasses and mental health problems. The researchers questioned whether associations of this scale warranted the level of public alarm they had generated.
+In 2024, the World Health Organization's European office reported results from a survey of almost 280,000 eleven-, thirteen- and fifteen-year-olds in forty-four countries and regions. The share showing signs of problematic social-media behaviour rose from seven percent in 2018 to eleven percent in 2022. This measure of problematic use concerned addiction-like symptoms, including difficulty controlling use and negative consequences; it did not classify all frequent users as problematic. The same report found that thirty-six percent described themselves as being in constant online contact with friends. High engagement and impaired control therefore require separate interpretation.
 
-Other studies have found evidence of more nuanced, bidirectional relationships. People who are already experiencing depression or anxiety may be more likely to use social media heavily—partly because digital socialising feels less demanding than in-person interaction. In this case, the direction of causation is reversed: mental ill-health drives social media use, rather than the other way around. Some research also identifies positive uses of social media, particularly for groups who experience social isolation in their offline lives. LGBTQ+ youth, young people with chronic illness, and those living in rural or socially homogeneous communities have reported that online communities provide access to support, identity affirmation, and connection that would otherwise be unavailable.
+Several mechanisms could plausibly produce harm. Notifications and late-night interaction may displace sleep. Recommendation systems can repeatedly expose a user to upsetting material, while public counts and edited images can intensify social comparison. Harassment can travel beyond school hours and reach a large audience. Yet the direction of influence may also be bidirectional: distress may change how a young person uses a platform, just as particular online experiences may affect distress. Family circumstances, offline relationships and pre-existing vulnerabilities can influence both.
 
-The role of specific platforms and specific uses matters significantly. Passive consumption—scrolling through feeds and comparing oneself to others—appears more strongly associated with negative outcomes than active use, such as messaging friends, sharing personal content, or participating in interest-based communities. Some researchers have proposed that the key variable is not time spent but the quality of the social experience: meaningful, reciprocal interaction appears to have neutral or positive effects, while passive exposure to social comparison stimuli is associated with worse outcomes.
+Benefits also matter. Messaging can maintain ordinary friendships, and interest-based communities can provide information or belonging. Young people who are socially isolated offline—including some LGBTQ+ youth, people with chronic illness and those in remote communities—may find support that is unavailable locally. These benefits do not cancel the possibility of harm; they show why a single rule based only on minutes of use can miss the quality, content and context of an experience. Effects may differ by person, platform feature and stage of development.
 
-Regulators and platform companies are under increasing pressure to respond. Several countries, including Australia and Norway, have introduced or proposed legislation restricting the use of social media by children under a certain age—typically fourteen or sixteen. Platform companies have introduced features such as daily use reminders, time limits, and the removal of like counts on posts, following research suggesting that like counts intensify social comparison. Critics argue that these measures are insufficient given the scale of the problem and the financial incentives that drive platforms to maximise engagement at the expense of user wellbeing. The debate, like the evidence itself, remains unresolved—though the urgency with which researchers, policymakers, and parents are seeking answers suggests that it will not remain so indefinitely.`,
+Research design shapes the conclusions that can be drawn. A cross-sectional survey can show that two variables occur together, but not which came first. Self-reported screen time may be inaccurate, while a total recorded by a device says little about what the person saw or did. Longitudinal studies provide timing, and experiments can test narrower mechanisms, but both face ethical and practical limits with minors. Researchers also need access to platform data and consistent outcome measures if results are to be compared.
+
+Policy responses range from education and parental guidance to age-based access rules. A minimum age is visible and easy to explain, but implementation raises questions about identity checks, exclusion and data collection. No measure should create a new privacy risk merely to enforce another protection. Safety-by-design approaches can instead reduce unsolicited contact, provide effective reporting tools, limit sensitive targeting and set protective defaults for minors. Platforms can also share suitably protected data with independent researchers.
+
+The evidence therefore supports neither complacency nor a universal diagnosis. Families can establish boundaries around sleep and device-free activities, schools can teach digital literacy, and services can offer routes to help when online experiences cause distress. Governments and companies can require transparent evaluation rather than assuming that a reminder, ban or design change works. The central question is not whether social media is wholly good or wholly bad, but which combinations of user, content and design create benefit or risk—and how those conditions can be changed.`,
       questions: [
         {
           type: 'mcq',
           id: 'r3-q27',
           part: 7,
-          text: 'What is the main argument made by Jean Twenge regarding social media?',
+          text: 'What distinction does the writer emphasise in the first paragraph?',
           options: [
-            'Social media is primarily responsible for increasing smartphone addiction.',
-            'Exposure to idealised images on social platforms drives feelings of inadequacy in young people.',
-            'Social media platforms deliberately cause mental illness in young users.',
-            'The decline in face-to-face interaction began well before smartphones were introduced.',
+            'Frequent use, constant contact and problematic use are different measures.',
+            'Only experiments can provide useful information about social media.',
+            'Every young user is affected by social media in the same way.',
+            'Time spent online is more important than the content encountered.',
           ],
-          answer: 1,
+          answer: 0,
         },
         {
           type: 'mcq',
           id: 'r3-q28',
           part: 7,
-          text: 'What did the 2019 meta-analysis published in Psychological Science find about social media and wellbeing?',
+          text: 'What did the 2024 WHO report show about problematic social-media behaviour?',
           options: [
-            'There was no statistically measurable association between social media and wellbeing.',
-            'The association between social media use and poor wellbeing was real but very small.',
-            'Social media was confirmed as the primary cause of adolescent mental health problems.',
-            'Girls showed a much stronger negative association than boys.',
+            'It affected every adolescent who was frequently online.',
+            'Its reported prevalence rose from 7% in 2018 to 11% in 2022.',
+            'It was measured only by the number of minutes spent online.',
+            'Its prevalence fell in all forty-four participating countries.',
           ],
           answer: 1,
         },
@@ -551,12 +589,12 @@ Regulators and platform companies are under increasing pressure to respond. Seve
           type: 'mcq',
           id: 'r3-q29',
           part: 7,
-          text: 'According to the passage, which group appears to experience positive effects from social media use?',
+          text: 'According to the passage, which users may obtain support that is unavailable locally?',
           options: [
-            'Young people who use social media to passively scroll through news feeds.',
-            'Those who live in large cities with many opportunities for face-to-face interaction.',
-            'Young people who are socially isolated offline, such as LGBTQ+ youth or those with chronic illness.',
-            'Adolescents who use social media for less than one hour per day.',
+            'Only users who never disclose their identity online',
+            'People who already have extensive local support networks',
+            'Young people isolated offline, including some LGBTQ+ youth or those with chronic illness',
+            'All adolescents who spend less than one hour a day online',
           ],
           answer: 2,
         },
@@ -564,12 +602,12 @@ Regulators and platform companies are under increasing pressure to respond. Seve
           type: 'mcq',
           id: 'r3-q30',
           part: 7,
-          text: 'What does the passage say about the effect of removing "like counts" from posts?',
+          text: 'What concern does the writer raise about enforcing a minimum age?',
           options: [
-            'It has been shown to completely eliminate social comparison on platforms.',
-            'Research suggests it may reduce the intensity of social comparison behaviour.',
-            'It has been banned in several countries as an insufficient measure.',
-            'Platform companies introduced it voluntarily after being legally required to do so.',
+            'It would remove the need for digital-literacy education.',
+            'Identity checks used for enforcement could create a privacy risk.',
+            'It would be impossible for families to understand.',
+            'Every young person would lose access to online support.',
           ],
           answer: 1,
         },
@@ -579,14 +617,14 @@ Regulators and platform companies are under increasing pressure to respond. Seve
           part: 7,
           qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: Jean Twenge argues that the rise in adolescent mental health problems is directly caused by social media.\n32. {{32}}: The 2019 meta-analysis studied data from more than 500,000 adolescents.\n33. {{33}}: People who are already depressed may use social media more heavily than others.\n34. {{34}}: Active engagement on social media, such as messaging, is more harmful than passive scrolling.\n35. {{35}}: Australia has introduced legislation to restrict children under a certain age from using social media.\n36. {{36}}: Social media companies have sufficient financial incentive to prioritise user wellbeing over engagement.`,
+          template: `31. {{31}}: The Surgeon General's advisory stated that every form of social-media use harms adolescents.\n32. {{32}}: The WHO survey included almost 280,000 young people.\n33. {{33}}: The WHO measure treated all frequent social-media users as problematic users.\n34. {{34}}: The relationship between distress and social-media use may operate in both directions.\n35. {{35}}: The impact of social media may vary according to the individual, the feature and the developmental stage.\n36. {{36}}: Age-based access rules have been proved more effective than safety-by-design measures.`,
           blanks: [
-            { num: 31, answers: ['YES'] },
+            { num: 31, answers: ['NO'] },
             { num: 32, answers: ['YES'] },
-            { num: 33, answers: ['YES'] },
-            { num: 34, answers: ['NO'] },
+            { num: 33, answers: ['NO'] },
+            { num: 34, answers: ['YES'] },
             { num: 35, answers: ['YES'] },
-            { num: 36, answers: ['NO'] },
+            { num: 36, answers: ['NOT GIVEN'] },
           ],
         },
         {
@@ -595,12 +633,12 @@ Regulators and platform companies are under increasing pressure to respond. Seve
           part: 7,
           qRange: [37, 40],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `37. The concern about social media and mental health is partly based on the sharp increase in rates of depression, anxiety, and {{37}} among adolescents from around 2012.\n38. Some researchers argue that the relationship between social media and mental health is {{38}}, meaning each can influence the other.\n39. {{39}} consumption of social media, such as passively viewing others' posts, is more associated with negative outcomes than active use.\n40. Researchers emphasise that the key variable is not the time spent on social media but the {{40}} of the social experience.`,
+          template: `37. Up to {{37}} of people aged thirteen to seventeen used a social-media platform.\n38. The WHO report defined {{38}} in terms of addiction-like symptoms rather than frequency alone.\n39. Notifications and late-night online interaction may reduce the time available for {{39}}.\n40. The writer warns that enforcing an age limit should not create a new risk to {{40}}.`,
           blanks: [
-            { num: 37, answers: ['self-harm'] },
-            { num: 38, answers: ['bidirectional'] },
-            { num: 39, answers: ['passive'] },
-            { num: 40, answers: ['quality'] },
+            { num: 37, answers: ['ninety-five percent'] },
+            { num: 38, answers: ['problematic use'] },
+            { num: 39, answers: ['sleep'] },
+            { num: 40, answers: ['privacy'] },
           ],
         },
       ],
@@ -620,8 +658,8 @@ Regulators and platform companies are under increasing pressure to respond. Seve
           part: 8,
           taskNumber: 1,
           imageUrl: '/assets/ielts/charts/set12-task1.svg',
-          imageAlt: 'Line graph showing global average sea surface temperature anomaly from 1980 to 2022',
-          stimulus: 'The line graph below shows the global average sea surface temperature anomaly (degrees Celsius above the 1961–1990 baseline) from 1980 to 2022.',
+          imageAlt: 'Line graph showing the annual average sea-surface temperature anomaly at one coastal monitoring station in selected years from 1980 to 2022, rising from 0.05 to 0.91 degrees Celsius above the 1961–1990 baseline',
+          stimulus: 'The line graph below shows the annual average sea-surface temperature anomaly recorded at one coastal monitoring station in selected years from 1980 to 2022, measured in degrees Celsius above the 1961–1990 baseline.',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
@@ -639,8 +677,8 @@ Regulators and platform companies are under increasing pressure to respond. Seve
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'Social media platforms have become a major part of daily life for people of all ages, but particularly for young people.',
-          text: 'Do the advantages of social media outweigh the disadvantages? Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
+          stimulus: 'Some schools ask students to keep private diaries of their social-media habits so that counsellors can help them identify patterns affecting sleep or wellbeing. Some people think this is a useful form of support, while others believe it intrudes on privacy and may discourage honest communication.',
+          text: 'Discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
           minWords: 250,
         },
       ],
@@ -665,6 +703,10 @@ Regulators and platform companies are under increasing pressure to respond. Seve
             'What do you mainly use the internet for in your daily life?',
             'Do you prefer communicating with friends online or in person? Why?',
             'Have your technology habits changed significantly in the past few years?',
+            'Is there a device that you find especially useful at home?',
+            'Do you ever choose to spend a day without using social media?',
+            'What kind of information do you prefer to receive in a message rather than by phone?',
+            'Was learning to use new technology easy for you when you were younger?',
           ],
         },
         {
@@ -686,6 +728,8 @@ Regulators and platform companies are under increasing pressure to respond. Seve
             'Should governments regulate the age at which children can access social media? Why or why not?',
             'How do you think technology will change human relationships in the next twenty years?',
             'Is there a risk that technology is making people less able to cope with real-world challenges?',
+            'What should schools teach young people about privacy and persuasive design online?',
+            'How can researchers measure the social effects of technology without intruding on users\' private lives?',
           ],
         },
       ],

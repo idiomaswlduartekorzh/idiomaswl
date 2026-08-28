@@ -1,6 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif" role="img" aria-labelledby="set12-title set12-desc">
+  <title id="set12-title">Sea-surface temperature anomaly at one coastal monitoring station, 1980 to 2022</title>
+  <desc id="set12-desc">A line graph for selected years. The annual average anomaly rises from 0.05 degrees Celsius in 1980 to 0.91 in 2022, relative to the 1961 to 1990 baseline. Values shown are 0.05, 0.10, 0.15, 0.25, 0.35, 0.45, 0.55, 0.72 and 0.91 degrees Celsius.</desc>
   <rect width="680" height="400" fill="#fafafa" rx="8"/>
-  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Global Average Sea Surface Temperature — 1980 to 2022 (°C above 1961–1990 baseline)</text>
+  <text x="340" y="23" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Sea-surface temperature anomaly at one coastal monitoring station</text>
+  <text x="340" y="40" text-anchor="middle" font-size="10.5" fill="#4b5563">Selected years, 1980–2022 · °C above the 1961–1990 baseline</text>
 
   <!-- Axes -->
   <line x1="80" y1="50" x2="80" y2="320" stroke="#374151" stroke-width="2"/>
@@ -37,7 +40,7 @@
   <!-- y = 320 - (val + 0.2) * 225  where 225 = 270/1.2 -->
   <!-- val=-0.2 → y=320; val=0→y=275; val=0.2→y=230; val=0.4→y=185; val=0.6→y=140; val=0.8→y=95; val=1.0→y=50 -->
 
-  <!-- Data: 1980=0.05, 1985=0.1, 1990=0.15, 1995=0.25, 2000=0.35, 2005=0.45, 2010=0.55, 2015=0.72, 2022=0.91 -->
+  <!-- Illustrative task dataset: one station, selected years; 1980=0.05, 1985=0.1, 1990=0.15, 1995=0.25, 2000=0.35, 2005=0.45, 2010=0.55, 2015=0.72, 2022=0.91 -->
   <!-- y for each: 0.05→(0.05+0.2)*225=56.25 → y=263; 0.1→y=252; 0.15→y=241; 0.25→y=219; 0.35→y=197; 0.45→y=174; 0.55→y=152; 0.72→y=114; 0.91→y=72 -->
 
   <polyline points="80,263 147,252 213,241 280,219 347,197 413,174 480,152 547,114 640,72"
@@ -68,5 +71,5 @@
   <!-- Legend -->
   <line x1="268" y1="373" x2="296" y2="373" stroke="#ef4444" stroke-width="2.5"/>
   <circle cx="282" cy="373" r="4" fill="#ef4444"/>
-  <text x="300" y="377" font-size="11" fill="#333">Sea surface temperature anomaly</text>
+  <text x="300" y="377" font-size="11" fill="#333">Annual average anomaly at the station</text>
 </svg>

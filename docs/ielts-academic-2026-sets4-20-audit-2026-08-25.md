@@ -160,6 +160,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   afirmaciones térmicas sin contexto y generalizaciones sobre sesgos y efecto rebote.
   El Task 2 ahora usa una política original de mapas de calor; la gráfica de consumo
   hídrico pasó QA visual y accesible. Sólo queda diferido su audio Listening.
+- El Set 12 superó 235 controles Golden. Sus cuatro guiones quedaron en densidad y orden
+  de evidencia; Reading incorporó el cierre NOAA 2026 del cuarto evento global de
+  blanqueamiento, corrigió la cronología soviética del ajedrez y separó uso frecuente,
+  uso problemático y causalidad en salud mental. El Task 2 ahora plantea un conflicto
+  original entre apoyo escolar y privacidad; el gráfico delimitado a una estación costera
+  pasó QA visual y semántica accesible. Sólo queda diferido su audio Listening.
 
 ## Auditoría final no-audio
 
