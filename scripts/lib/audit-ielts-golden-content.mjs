@@ -7,7 +7,7 @@ import { toPublicIeltsMock } from '../../src/data/mocks/ielts-public-payload.ts'
 const words = (value = '') => value.trim().split(/\s+/).filter(Boolean).length;
 const responseCount = (question) => question.qRange ? question.qRange[1] - question.qRange[0] + 1 : 1;
 const canonical = (value) => String(value).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-  .replaceAll('’', "'").replaceAll('£', '').replace(/[^a-z0-9@'-]+/g, ' ').trim();
+  .replaceAll('’', "'").replaceAll('£', '').replace(/[-–—]+/g, ' ').replace(/[^a-z0-9@']+/g, ' ').trim();
 
 function numbers(question) {
   if (question.qRange) return Array.from({ length: responseCount(question) }, (_, index) => question.qRange[0] + index);
@@ -26,11 +26,11 @@ function sourceSupports(source, answer) {
   const needle = canonical(answer);
   const equivalents = new Map([
     ['one', '1'], ['two', '2'], ['three', '3'], ['four', '4'], ['five', '5'], ['six', '6'], ['seven', '7'], ['eight', '8'], ['nine', '9'], ['ten', '10'],
-    ['eleven', '11'], ['twelve', '12'], ['thirteen', '13'], ['fourteen', '14'], ['fifteen', '15'], ['thirty', '30'], ['thirty-five', '35'], ['forty', '40'], ['fifty', '50'],
+    ['eleven', '11'], ['twelve', '12'], ['thirteen', '13'], ['fourteen', '14'], ['fifteen', '15'], ['thirty', '30'], ['thirty five', '35'], ['forty', '40'], ['fifty', '50'],
     ['1', 'one'], ['2', 'two'], ['3', 'three'], ['4', 'four'], ['5', 'five'], ['6', 'six'], ['7', 'seven'], ['8', 'eight'], ['9', 'nine'], ['10', 'ten'],
-    ['11', 'eleven'], ['12', 'twelve'], ['13', 'thirteen'], ['14', 'fourteen'], ['15', 'fifteen'], ['30', 'thirty'], ['35', 'thirty-five'], ['40', 'forty'], ['50', 'fifty'],
+    ['11', 'eleven'], ['12', 'twelve'], ['13', 'thirteen'], ['14', 'fourteen'], ['15', 'fifteen'], ['30', 'thirty'], ['35', 'thirty five'], ['40', 'forty'], ['50', 'fifty'],
   ]);
-  const alternate = needle.split(' ').map((token) => equivalents.get(token) ?? token).join(' ');
+  const alternate = equivalents.get(needle) ?? needle.split(' ').map((token) => equivalents.get(token) ?? token).join(' ');
   const compactNumber = needle.replaceAll(' ', '');
   const compactSource = haystack.replace(/(?<=\d) (?=\d)/g, '');
   return haystack.includes(` ${needle} `)
@@ -152,7 +152,7 @@ export function runGoldenContentAudit(config) {
     schemaVersion: 1,
     reportAsOf: config.reportAsOf,
     set: config.set,
-    status: failures.length ? 'blocked' : 'content-golden-audio-replacement-pending',
+    status: failures.length ? 'blocked' : (config.successStatus ?? 'content-golden-audio-replacement-pending'),
     metrics: { listeningResponses, listeningWords, listeningPartWords, readingResponses, readingWords, writingTasks: writing.length, speakingParts: speaking.length, publicKeys },
     provenanceSearch: config.provenanceSearch,
     factualSources: config.factualSources,
@@ -173,7 +173,7 @@ export function runGoldenContentAudit(config) {
     for (const failure of failures) console.error(`- ${failure}`);
     process.exitCode = 1;
   } else {
-    console.log(`✓ IELTS Golden Set ${config.set}: ${evidence.length} content/contract checks passed; final audio remains deferred.`);
+    console.log(`✓ IELTS Golden Set ${config.set}: ${evidence.length} content/contract checks passed; ${config.successNote ?? 'final audio remains deferred'}.`);
   }
   return report;
 }

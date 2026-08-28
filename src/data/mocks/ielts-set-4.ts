@@ -97,7 +97,7 @@ Option B — Cedar Hall:
             ['Also needed', 'passport and bank statement'],
             ['Send to', { num: 8, answers: ['housing@greenfield.ac.uk', 'email'], maxWords: 1 }],
             ['Processing time', { num: 9, answers: ['three', '3'], maxWords: 1 } ],
-            ['Deposit amount', { num: 10, answers: ['one month', "one month's rent"], maxWords: 3 }],
+            ['Deposit amount', { num: 10, answers: ["one month's rent"], maxWords: 3 }],
           ],
         },
       ],
@@ -160,12 +160,12 @@ Gallery Four:
 • Partially under {{19}}
 • Most prized exhibit: T-rex skeleton discovered in {{20}}`,
           blanks: [
-            { num: 13, answers: ['26', 'twenty-six'], maxWords: 1 },
+            { num: 13, answers: ['26'], maxWords: 1 },
             { num: 14, answers: ['two', '2'], maxWords: 1 },
             { num: 15, answers: ['10', 'ten'], maxWords: 1 },
             { num: 16, answers: ['last'], maxWords: 1 },
             { num: 17, answers: ['peat'], maxWords: 1 },
-            { num: 18, answers: ['4,000', '4000', 'four thousand'], maxWords: 2 },
+            { num: 18, answers: ['4,000', '4000'], maxWords: 1 },
             { num: 19, answers: ['renovation'], maxWords: 1 },
             { num: 20, answers: ['Montana'], maxWords: 1 },
           ],
@@ -368,7 +368,7 @@ Flight timing:
             { num: 32, answers: ['disorient'], maxWords: 1 },
             { num: 33, answers: ['sun'], maxWords: 1 },
             { num: 34, answers: ['night', 'star'], maxWords: 1 },
-            { num: 35, answers: ['landmarks', 'landmark'], maxWords: 1 },
+            { num: 35, answers: ['landmarks'], maxWords: 1 },
             { num: 36, answers: ['night'], maxWords: 1 },
           ],
         },
@@ -442,7 +442,7 @@ The answer is likely to be complex and context-dependent. In the Fertile Crescen
 
 Others point to population pressure as the key driver. As human groups grew larger, a territory that once supported a small foraging band could no longer do so. Cultivation offered a way to produce more food from the same area of land, even if the labour involved was considerably greater.
 
-The domestication of animals added another dimension to early agriculture. Dogs, domesticated from wolves at least 15,000 years ago, were used for herding and protection. Sheep, goats, and cattle were domesticated in the Near East between 9,000 and 7,000 BCE, providing not only meat but also milk, wool, and traction power for ploughs.
+The domestication of animals added another dimension to early agriculture. Dogs were domesticated before the herd animals associated with farming and later took on guarding and herding roles. Sheep, goats, and cattle were domesticated in the Near East between 9,000 and 7,000 BCE. Collectively, these animals provided not only meat but also milk, wool, and, in the case of cattle, traction power for ploughs.
 
 The consequences of agriculture were profound and not entirely positive. Settled communities became more vulnerable to infectious disease: living close to animals and in denser populations facilitated the spread of pathogens. Evidence from skeletal remains shows that early farmers were on average shorter, had more dental problems, and suffered from a narrower range of nutrients compared to their forager predecessors.
 
@@ -494,7 +494,7 @@ Today, scholars debate whether agriculture was genuinely "invented" at a single 
           type: 'mcq',
           id: 'r1q6',
           part: 5,
-          text: 'Dogs were the first animals to be domesticated, approximately 15,000 years ago.',
+          text: 'Dogs were domesticated before the sheep, goats, and cattle associated with early farming.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 0,
         },
@@ -529,10 +529,10 @@ Today, scholars debate whether agriculture was genuinely "invented" at a single 
           type: 'mcq',
           id: 'r1q12',
           part: 5,
-          text: 'According to the passage, what role did cattle and sheep play beyond providing meat?',
+          text: 'According to the passage, what benefits did domesticated herd animals collectively provide beyond meat?',
           options: [
             'They were used only for religious ceremonies.',
-            'They provided milk, wool, and traction power for ploughs.',
+            'They provided milk and wool, while cattle also supplied traction power.',
             'They were traded with neighbouring regions for tools.',
             'They were used exclusively for transportation.',
           ],
@@ -678,9 +678,9 @@ The practical implications of this research are significant. School start times,
       skill: 'reading',
       title: 'Reading Passage 3: The Future of Electric Vehicles',
       instructions: 'Read the passage and answer Questions 27–40.',
-      passage: `The electric vehicle (EV) has moved rapidly from the margins of automotive technology to the centre of global transport policy. In 2023, global sales of battery electric and plug-in hybrid vehicles exceeded 14 million units — a figure that would have seemed fantastical just a decade ago. Yet despite this remarkable growth, the transition to an all-electric transport system faces substantial challenges that will define the sector for the remainder of the century.
+      passage: `The electric vehicle (EV) has moved rapidly from the margins of automotive technology to the centre of global transport policy. In 2023, global registrations of electric cars reached almost 14 million — a figure that would have seemed fantastical just a decade ago. Yet despite this remarkable growth, the transition to an all-electric transport system faces substantial challenges that will define the sector for the remainder of the century.
 
-The core case for EVs rests on their potential to decarbonise road transport, which accounts for approximately 16% of global greenhouse gas emissions. Because EVs produce no tailpipe emissions, they can significantly reduce urban air pollution. Life-cycle analyses — which account for emissions from manufacturing, electricity generation, and disposal — consistently show that EVs produce significantly fewer greenhouse gases than equivalent internal combustion engine vehicles, provided the electricity grid is not dominated by coal.
+The core case for EVs rests on their potential to decarbonise road transport, a major source of global greenhouse gas emissions. Because EVs produce no tailpipe emissions, they can significantly reduce urban air pollution. Life-cycle analyses — which account for emissions from manufacturing, electricity generation, and disposal — generally show lower greenhouse gas emissions for battery-electric cars than for equivalent internal-combustion vehicles, although the size of the advantage depends strongly on the electricity used for charging.
 
 Battery technology is the central technical challenge. Lithium-ion batteries, which power most current EVs, have seen dramatic improvements in energy density and cost reduction since the early 2010s. However, they still have limitations: relatively long charging times compared to petrol refuelling, performance degradation in very cold temperatures, and concerns about the sourcing of raw materials such as lithium, cobalt, and nickel, which are subject to supply chain vulnerabilities and environmental extraction concerns.
 
@@ -690,15 +690,15 @@ The charging infrastructure gap remains a significant barrier to mass adoption, 
 
 The second-life use of EV batteries is becoming an increasingly important area of research and commercial activity. When a battery degrades to roughly 70–80% of its original capacity, it is typically no longer suitable for vehicle use, but it retains considerable capacity for stationary storage applications — for example, storing energy from solar panels or providing backup power to buildings. Several automotive manufacturers have partnered with energy companies to deploy repurposed EV batteries in large-scale grid storage projects.
 
-Critics of the EV transition point to the environmental impact of battery manufacturing and disposal. Mining lithium and cobalt is associated with habitat destruction, high water use, and in some regions, poor labour conditions. Recycling infrastructure for spent batteries is still developing, though significant progress is being made. In the European Union, new regulations require battery manufacturers to achieve minimum recycled content levels by 2030, signalling a move towards a circular economy approach.
+Critics of the EV transition point to the environmental impact of battery manufacturing and disposal. Mining lithium and cobalt is associated with habitat destruction, high water use, and in some regions, poor labour conditions. Recycling infrastructure for spent batteries is still developing, though significant progress is being made. In the European Union, minimum recycled-content requirements for several battery materials begin to apply in 2031, signalling a move towards a circular economy approach.
 
-Ultimately, the success of the electric vehicle transition will depend not only on technology and infrastructure, but on the speed of grid decarbonisation. An EV charged from a coal-powered grid produces more lifecycle emissions than a highly efficient petrol vehicle. As renewable energy expands and grids become cleaner, the environmental advantage of EVs will grow. The trajectory is clear, but the pace at which the world travels down it will determine whether the climate benefits arrive in time to matter.`,
+Ultimately, the success of the electric vehicle transition will depend not only on technology and infrastructure, but on the speed of grid decarbonisation. Electricity systems with a high carbon intensity narrow the life-cycle advantage of an EV; cleaner grids widen it. As renewable energy expands and grids become cleaner, the environmental advantage of EVs will grow. The trajectory is clear, but the pace at which the world travels down it will determine whether the climate benefits arrive in time to matter.`,
       questions: [
         {
           type: 'mcq',
           id: 'r3q27',
           part: 7,
-          text: 'Global EV sales in 2023 exceeded 14 million units.',
+          text: 'Global electric-car registrations in 2023 reached almost 14 million.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 0,
         },
@@ -738,7 +738,7 @@ Ultimately, the success of the electric vehicle transition will depend not only 
           type: 'mcq',
           id: 'r3q32',
           part: 7,
-          text: 'The EU has introduced regulations requiring minimum recycled content levels for batteries by 2030.',
+          text: 'EU minimum recycled-content requirements for several battery materials begin to apply in 2031.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
           answer: 0,
         },
@@ -746,9 +746,14 @@ Ultimately, the success of the electric vehicle transition will depend not only 
           type: 'mcq',
           id: 'r3q33',
           part: 7,
-          text: 'Road transport accounts for approximately what percentage of global greenhouse gas emissions?',
-          options: ['8%', '12%', '16%', '24%'],
-          answer: 2,
+          text: 'According to the passage, what most affects the size of an electric car’s life-cycle emissions advantage?',
+          options: [
+            'The colour and body style of the vehicle.',
+            'The carbon intensity of the electricity used for charging.',
+            'Whether the owner lives in an urban or rural area.',
+            'The number of public chargers in neighbouring countries.',
+          ],
+          answer: 1,
         },
         {
           type: 'mcq',
@@ -788,7 +793,7 @@ Ultimately, the success of the electric vehicle transition will depend not only 
             { num: 37, answers: ['energy'], maxWords: 1 },
             { num: 38, answers: ['infrastructure'], maxWords: 1 },
             { num: 39, answers: ['stationary'], maxWords: 1 },
-            { num: 40, answers: ['decarbonisation', 'decarbonization'], maxWords: 1 },
+            { num: 40, answers: ['decarbonisation'], maxWords: 1 },
           ],
         },
       ],
@@ -807,10 +812,10 @@ Ultimately, the success of the electric vehicle transition will depend not only 
           id: 'w1',
           part: 8,
           taskNumber: 1,
-          stimulusLabel: 'The line graph below shows the consumption of 4 kinds of meat in a European country from 1979 to 2004.',
+          stimulusLabel: 'The line graph below shows the average number of bicycles entering a fictional university campus through four gates on a weekday between 2015 and 2025.',
           stimulus: '',
-          imageUrl: '/ielts/images/writing-set4-task1-meat.jpg',
-          imageAlt: 'Line graph: consumption of chicken, beef, lamb and fish in grams per person per week, 1979–2004',
+          imageUrl: '/assets/ielts/charts/set4-task1.svg',
+          imageAlt: 'Line graph of average weekday bicycle entries at the North, East, Library and Riverside gates of a fictional university campus from 2015 to 2025',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
@@ -820,7 +825,7 @@ Ultimately, the success of the electric vehicle transition will depend not only 
           part: 8,
           taskNumber: 2,
           stimulusLabel: 'Write about the following topic:',
-          stimulus: 'The best way to solve traffic congestion in cities is to provide free public transport. To what extent do you agree or disagree?',
+          stimulus: 'Some city employers are considering compressed working weeks so that fewer employees commute during peak hours. Others argue that expanding reliable public transport would reduce congestion more effectively. Discuss both views and give your own opinion.',
           text: 'Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words.',
           minWords: 250,
         },
@@ -845,6 +850,11 @@ Ultimately, the success of the electric vehicle transition will depend not only 
             'What did you like most about living there?',
             'Has that place changed much since you were a child?',
             'Would you like to live there again in the future? Why or why not?',
+            'Was it easy to travel around the area?',
+            'What kinds of homes were common there?',
+            'Where did people usually meet or spend time together?',
+            'Was it a good place for young people? Why or why not?',
+            'What would you show a visitor who went there for the first time?',
           ],
         },
         {
@@ -864,14 +874,10 @@ Ultimately, the success of the electric vehicle transition will depend not only 
           followUp: [
             'How has technology changed the skills that people need in the workplace?',
             'Some people believe that schools should focus more on practical skills rather than academic subjects. Do you agree?',
+            'Should employers be responsible for helping workers learn new skills?',
+            'Is it more useful to develop adaptable skills or specialise deeply in one area?',
+            'What can governments do to help people develop new skills throughout their working lives?',
           ],
-        },
-        {
-          type: 'speak',
-          id: 'sp4',
-          part: 9,
-          partNumber: 3,
-          text: 'What can governments do to help people develop new skills throughout their working lives?',
         },
       ],
     },

@@ -9,7 +9,7 @@ Dictamen: **APROBADO en contenido, UI/UX y full-stack; BLOQUEADO para release IE
 Los 20 simulacros son material original de WeLearn alineado con la estructura pública,
 familias de tarea, tiempos y dificultad observable de IELTS Academic. No son preguntas,
 gráficos ni grabaciones oficiales; tampoco existe evidencia de equivalencia psicométrica.
-Por eso el producto y cada Set 4–20 muestran una declaración explícita de no oficialidad.
+Por eso el producto y cada Set 1–20 muestran una declaración explícita de no oficialidad.
 
 “Aprobado no-audio” significa que Reading, Writing, Speaking, los guiones de Listening,
 las claves privadas, la corrección, la privacidad y la experiencia de uso pasaron sus
@@ -49,7 +49,7 @@ estructural, de claves o de aplicación en su salida.
 | Perspectiva | Evidencia reproducible | Dictamen |
 |---|---|---|
 | IELTS experto | 20× L40/R40; Reading en rango; scripts densos y con evidencia ordenada; Task 1/2; Speaking 1–3; tiempos 30/60/60/14 en Sets 4–20 | APROBADO no-audio |
-| Modelo Golden | 19 auditorías individuales, 4.517 controles; Set 4 cubierto por contrato global y QA del piloto | APROBADO no-audio |
+| Modelo Golden | 20 auditorías individuales, 4.784 controles; Set 4 conserva además su QA de audio aceptado | APROBADO no-audio |
 | Full-stack | 14 contratos Academic 2026, 12 de scoring/review y 11 de entrega/privacidad | 37/37 |
 | Seguridad y privacidad | proyección pública con 0 claves; scoring privado; consulta de resultados ligada a `user_id`; Overall sólo con L/R/W/S | APROBADO |
 | Usuario promedio | 20 enlaces, 0 locks; estados `Audio pendiente`/`Audio en revisión`; errores de reproducción con explicación y reintento | APROBADO |
@@ -94,9 +94,24 @@ TypeScript                  PASS
 Set 1 pinned blueprint      BLUEPRINT_APPROVED, Q1–Q40 por skill
 ```
 
-Las 19 auditorías Golden individuales disponibles (Sets 1–3 y 5–20) pasaron 4.517
-controles. Set 4 se valida además en el contrato de la colección, el auditor global y su
-manifiesto técnico/audio aceptado.
+Las 20 auditorías Golden individuales pasaron 4.784 controles. La auditoría tardía de
+Set 4 añadió 267 controles y encontró una deuda real que los guardianes globales no
+detectaban: su Writing heredado coincidía con dos materiales IELTS ampliamente
+publicados. Se sustituyeron el gráfico de consumo de carne y la consigna sobre transporte
+público gratuito por un SVG y una consigna originales de WeLearn. También se ampliaron
+Speaking Parts 1 y 3, se corrigieron afirmaciones factuales de Reading y se eliminaron
+variantes de respuesta que no aparecían literalmente en la fuente. Sus cuatro partes,
+preguntas, evidencias, reparto y master de Listening aceptado permanecieron intactos.
+
+La verificación factual de Set 4 se apoyó en la estructura pública de
+[IELTS Speaking](https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking),
+el total de registros de vehículos eléctricos de la
+[IEA](https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-cars), el
+análisis de ciclo de vida del
+[ICCT](https://theicct.org/wp-content/uploads/2025/07/ID-392-%E2%80%93-Life-cycle-GHG_report_final.pdf)
+y el [Reglamento europeo de baterías](https://eur-lex.europa.eu/eli/reg/2023/1542/oj).
+Las coincidencias públicas de las consignas antiguas se documentaron sólo como
+proveniencia y ya no se sirven en el simulacro.
 
 ## Plan de audio y criterio de salida
 
