@@ -144,7 +144,6 @@ const PARAGRAPH_TOOLKIT = [
       { label: 'Trends', href: '/practica/ielts/academic/writing/task1/tendencias' },
       { label: 'Comparisons', href: '/practica/ielts/academic/writing/task1/comparaciones' },
       { label: 'Data vocabulary', href: '/practica/ielts/academic/writing/task1/vocabulario' },
-      { label: 'Connector practice', href: '/practica/ielts-writing-conectores' },
     ],
   },
   {

@@ -179,7 +179,10 @@ private exercise-state pages.
 | `/practica/ielts/academic/writing/vocabulario/task2-body` | live | Task 2 body-paragraph vocabulary |
 | `/practica/ielts/academic/writing/vocabulario/task2-conclusion` | live | Task 2 conclusion vocabulary |
 | `/practica/ielts/academic/writing/vocabulario/task2-revision` | live | Task 2 revision vocabulary |
-| `/practica/ielts-writing-conectores` | live | Legacy interactive Task 1 connector practice |
+
+The legacy activity at /practica/ielts-writing-conectores remains outside this canonical map
+and the sitemap until its estimated Band 5/6/7 result labels are removed or replaced by
+skill-specific feedback that does not imply official IELTS scoring.
 
 ## 5. IELTS General Training
 

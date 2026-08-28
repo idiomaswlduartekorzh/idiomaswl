@@ -337,7 +337,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.62,
     })),
-    { url: `${BASE}/practica/ielts-writing-conectores`, changeFrequency: 'monthly', priority: 0.61 },
     ...PUBLISHED_EXAM_PRACTICE_ROUTES.map((route) => ({
       url: `${BASE}${route.path}`,
       changeFrequency: route.changeFrequency,

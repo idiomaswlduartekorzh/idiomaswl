@@ -20,7 +20,6 @@ const koreanLanding = read('src/app/(site)/clases-de-coreano/page.tsx');
 const icfesLayout = read('src/app/(site)/practica/icfes-saber-11/layout.tsx');
 const quizzesHub = read('src/app/(site)/herramientas/quizes/page.tsx');
 const claudeRoute = read('src/app/clase-claude/route.ts');
-const ieltsTask1Hub = read('src/app/(site)/practica/ielts/academic/writing/task1/Content.tsx');
 
 requireMatch(sitemap, /const BASE = 'https:\/\/www\.idiomaswl\.com'/, 'sitemap.ts perdió el host canónico con www.');
 requireMatch(robots, /sitemap:\s*'https:\/\/www\.idiomaswl\.com\/sitemap\.xml'/, 'robots.ts dejó de anunciar el sitemap canónico.');
@@ -106,11 +105,6 @@ requireMatch(
   claudeRoute,
   /'X-Robots-Tag':\s*'noindex, nofollow'/,
   'La clase HTML operativa perdió su protección X-Robots-Tag.',
-);
-requireMatch(
-  ieltsTask1Hub,
-  /href:\s*'\/practica\/ielts-writing-conectores'/,
-  'La práctica indexable de conectores IELTS volvió a quedar huérfana.',
 );
 
 const PRIVATE_NOINDEX = [
