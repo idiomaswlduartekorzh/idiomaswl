@@ -78,3 +78,40 @@ test('global navigation hydrates deterministically across build and runtime envs
   assert.match(component, /pathname\.startsWith\('\/examenes\/ielts'\)/)
   assert.match(skipLink, /pathname\.startsWith\('\/examenes\/ielts'\)/)
 })
+
+test('IELTS delivery exposes truthful audio states and recoverable playback errors', () => {
+  const hub = read('src/app/(site)/examenes/[exam]/MockGrid.tsx')
+  const player = read('src/components/exam-runner/primitives.tsx')
+  const styles = read('src/app/globals.css')
+  assert.match(hub, /ieltsSetNumber >= 5 && ieltsSetNumber <= 12/)
+  assert.match(hub, /ieltsSetNumber >= 1 && ieltsSetNumber <= 3/)
+  assert.match(hub, /Reading, Writing y Speaking activos · Listening pendiente/)
+  assert.match(player, /Audio could not start\. Check your connection, then press play again before continuing\./)
+  assert.match(player, /role="alert"/)
+  assert.match(player, /type="button"/)
+  assert.match(styles, /\.ielts-audio__error/)
+  assert.match(player, /Audio stopped unexpectedly\. Pause the attempt and contact WeLearn before continuing\./)
+})
+
+test('IELTS reading split avoids sticky obstruction on desktop and mobile', () => {
+  const styles = read('src/app/globals.css')
+  assert.match(styles, /\.ielts-split__passage \{[\s\S]*?top: 132px;/)
+  assert.match(styles, /@media \(max-width: 900px\) \{[\s\S]*?\.ielts-split__passage \{[\s\S]*?position: static;[\s\S]*?max-height: none;/)
+})
+
+test('IELTS intro keeps pending Listening parts distinguishable and grammar correct', () => {
+  const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx')
+  assert.match(runner, /sec\.title\.split\('—'\)\[1\]\?\.trim\(\)\?\?sec\.title/)
+  assert.match(runner, /sec\.comingSoon \? 'Audio pendiente'/)
+  assert.match(runner, /sec\.questions\.length===1\?'grupo':'grupos'/)
+  assert.doesNotMatch(runner, /sec\.comingSoon \? '🔨 Próximamente'/)
+})
+
+test('one-use IELTS Listening survives a page reload and resets only on retry', () => {
+  const runner = read('src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx')
+  assert.match(runner, /const listeningConsumptionKey = `\$\{draftKey\}_listening_consumed`/)
+  assert.match(runner, /setListeningConsumed\(sessionStorage\.getItem\(listeningConsumptionKey\) === '1'\)/)
+  assert.match(runner, /sessionStorage\.setItem\(listeningConsumptionKey, '1'\)/)
+  assert.match(runner, /sessionStorage\.removeItem\(listeningConsumptionKey\)/)
+  assert.match(runner, /onPlaybackStart=\{consumeListening\}/)
+})

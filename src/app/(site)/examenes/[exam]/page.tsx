@@ -83,7 +83,7 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   ];
 
   return (
-    <main
+    <div
       className={styles.page}
       style={{ '--exam-accent': exam.color, '--exam-action': exam.colorDark } as React.CSSProperties}
     >
@@ -131,6 +131,6 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
           <ExamGuideBlock guide={guide} examName={exam.name} accent={exam.colorDark} />
         </div>
       )}
-    </main>
+    </div>
   );
 }

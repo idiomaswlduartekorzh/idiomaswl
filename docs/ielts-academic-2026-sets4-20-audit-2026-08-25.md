@@ -1,5 +1,10 @@
 # IELTS Academic 2026 — auditoría de Sets 4–20
 
+> **Instantánea histórica.** El dictamen autoritativo vigente, ampliado a Sets 1–20 y
+> revalidado el 28 de agosto de 2026, está en
+> [`ielts-academic-2026-full-audit-2026-08-28.md`](./ielts-academic-2026-full-audit-2026-08-28.md).
+> Las cifras de bloqueo y UI de este documento ya no deben usarse para liberar producto.
+
 Fecha de contraste: 25 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  
 Dictamen actual: **APROBADO excepto Listening — los 17 sets requieren audio v2**

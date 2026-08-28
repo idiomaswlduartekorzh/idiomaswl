@@ -46,9 +46,9 @@ export default function MockGrid({ exam }: { exam: Exam }) {
       {mocks.map((mock) => {
         const absoluteIndex = exam.mocks.findIndex(item => item.id === mock.id);
         const ieltsSetNumber = exam.slug === 'ielts' ? Number(mock.id.replace(/^set-/, '')) : 0;
-        const ieltsAudioState = ieltsSetNumber >= 4 && ieltsSetNumber <= 12
+        const ieltsAudioState = ieltsSetNumber >= 5 && ieltsSetNumber <= 12
           ? 'legacy'
-          : ieltsSetNumber >= 13 && ieltsSetNumber <= 20
+          : (ieltsSetNumber >= 1 && ieltsSetNumber <= 3) || (ieltsSetNumber >= 13 && ieltsSetNumber <= 20)
             ? 'pending'
             : null;
         return (

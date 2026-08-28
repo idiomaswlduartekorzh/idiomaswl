@@ -26,6 +26,7 @@ expectMarkers(page, 'ExamPage', [
   'alternates:',
   'canonical:',
 ]);
+expect(!page.includes('<main'), 'ExamPage no puede anidar un segundo landmark main dentro del layout del sitio.');
 expect(!/slug\s*===\s*['"]toefl['"]\s*\?\s*<div/.test(page), 'ExamPage no puede volver a envolver un examen en un tema visual exclusivo.');
 expect(!page.includes('toefl-ios.module.css'), 'ExamPage no puede importar el tema privado de TOEFL.');
 expect(!exists('src/app/(site)/examenes/[exam]/toefl-ios.module.css'), 'El tema privado toefl-ios.module.css debe permanecer eliminado.');
@@ -55,6 +56,9 @@ expectMarkers(mockGrid, 'MockGrid', [
   'wl-mock-card__actions',
   'wl-hub-panel',
   'wl-hub-heading',
+  "ieltsSetNumber >= 5 && ieltsSetNumber <= 12",
+  "ieltsSetNumber >= 1 && ieltsSetNumber <= 3",
+  'Reading, Writing y Speaking activos · Listening pendiente',
 ]);
 expect(!mockGrid.includes('framer-motion'), 'El catálogo de simulacros no puede ocultarse detrás de animaciones cliente.');
 

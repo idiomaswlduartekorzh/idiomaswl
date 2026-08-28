@@ -77,15 +77,27 @@ export function AudioPlayer({
   const [done, setDone] = useState(false);
   const [current, setCurrent] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [playbackError, setPlaybackError] = useState<string | null>(null);
+  const errorReportedRef = useRef(false);
+
+  function reportPlaybackError() {
+    setPlaybackError(started
+      ? 'Audio stopped unexpectedly. Pause the attempt and contact WeLearn before continuing.'
+      : 'Audio could not start. Check your connection, then press play again before continuing.');
+    if (!errorReportedRef.current) {
+      errorReportedRef.current = true;
+      onPlaybackError?.();
+    }
+  }
 
   function play() {
     if (!audioRef.current || started || alreadyPlayed) return;
     void audioRef.current.play().then(() => {
+      setPlaybackError(null);
+      errorReportedRef.current = false;
       setStarted(true);
       onPlaybackStart?.();
-    }).catch(() => {
-      onPlaybackError?.();
-    });
+    }).catch(reportPlaybackError);
   }
 
   const pct = duration > 0 ? (current / duration) * 100 : 0;
@@ -116,10 +128,11 @@ export function AudioPlayer({
           setDone(true);
           onEnded?.();
         }}
-        onError={onPlaybackError}
+        onError={reportPlaybackError}
       />
       <div className="ielts-audio__player">
         <button
+          type="button"
           className={`ielts-audio__btn${started ? ' ielts-audio__btn--done' : ''}`}
           onClick={play}
           aria-label={`Reproducir ${label} una sola vez`}
@@ -147,6 +160,7 @@ export function AudioPlayer({
           </div>
         </div>
       </div>
+      {playbackError ? <p className="ielts-audio__error" role="alert">{playbackError}</p> : null}
     </div>
   );
 }

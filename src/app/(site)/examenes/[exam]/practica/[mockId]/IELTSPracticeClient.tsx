@@ -1015,6 +1015,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   const [phase, setPhase] = useState<Phase>('intro');
   const [submissionReceipt, setSubmissionReceipt] = useState<IeltsSubmissionReceipt | null>(null);
   const draftKey = `wl_ielts_draft_${mock.id}`;
+  const listeningConsumptionKey = `${draftKey}_listening_consumed`;
 
   const comingSoonSkills = new Set(
     mock.sections.filter(s=>s.comingSoon).map(s=>s.skill).filter(Boolean) as string[]
@@ -1026,11 +1027,13 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
   const [activeSkill, setActiveSkill] = useState(firstActiveSkill);
   const [ans, setAns] = useState<AllAnswers>(emptyAnswers);
   const [draftHydrated, setDraftHydrated] = useState(false);
+  const [listeningConsumed, setListeningConsumed] = useState(false);
 
   useEffect(() => {
     let savedAnswers: AllAnswers | null = null;
     try {
       const saved = sessionStorage.getItem(draftKey);
+      setListeningConsumed(sessionStorage.getItem(listeningConsumptionKey) === '1');
       if (saved) {
         const parsed: unknown = JSON.parse(saved);
         if (isSavedAnswers(parsed) && Object.values(parsed).some(map => Object.keys(map).length > 0)) savedAnswers = parsed;
@@ -1041,11 +1044,10 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
       setDraftHydrated(true);
     }, 0);
     return () => window.clearTimeout(timer);
-  }, [draftKey]);
+  }, [draftKey, listeningConsumptionKey]);
   const [recordings, setRecordings] = useState<SpeakAudioMap>({});
   const [recordingIds, setRecordingIds] = useState<Set<string>>(new Set());
   const [finishError, setFinishError] = useState('');
-  const [listeningConsumed, setListeningConsumed] = useState(false);
 
   const skills = SKILL_ORDER.filter(sk => mock.sections.some(s=>s.skill===sk));
   const runnableSkills = skills.filter(skill => !comingSoonSkills.has(skill));
@@ -1116,9 +1118,17 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
     setFinishError('');
     setSubmissionReceipt(null);
     setListeningConsumed(false);
-    try { sessionStorage.removeItem(draftKey); } catch {}
+    try {
+      sessionStorage.removeItem(draftKey);
+      sessionStorage.removeItem(listeningConsumptionKey);
+    } catch {}
     setActiveSkill(firstActiveSkill); setPhase('intro');
-  },[draftKey,firstActiveSkill]);
+  },[draftKey,firstActiveSkill,listeningConsumptionKey]);
+
+  const consumeListening = useCallback(() => {
+    setListeningConsumed(true);
+    try { sessionStorage.setItem(listeningConsumptionKey, '1'); } catch {}
+  }, [listeningConsumptionKey]);
 
   useEffect(()=>{
     if (phase!=='exam'&&phase!=='submit') return;
@@ -1190,8 +1200,10 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
             {mock.sections.map(sec=>(
               <div key={sec.part} className={`prac-intro__section${sec.comingSoon?' prac-intro__section--coming-soon':''}`}>
                 <span className="prac-intro__section-part">{sec.skill?SKILL_LABEL[sec.skill]:''}</span>
-                <span className="prac-intro__section-title">{sec.comingSoon ? '🔨 Próximamente' : (sec.title.split('—')[1]?.trim()??sec.title)}</span>
-                <span className="prac-intro__section-q">{sec.comingSoon ? '—' : `${sec.questions.length} grupos`}</span>
+                <span className="prac-intro__section-title">{sec.title.split('—')[1]?.trim()??sec.title}</span>
+                <span className="prac-intro__section-q">
+                  {sec.comingSoon ? 'Audio pendiente' : `${sec.questions.length} ${sec.questions.length===1?'grupo':'grupos'}`}
+                </span>
               </div>
             ))}
           </div>
@@ -1261,7 +1273,7 @@ export default function IELTSPracticeClient({ exam, mock }: { exam: Exam; mock: 
               src={mock.sections.find(s=>s.skill==='listening')?.audioUrl}
               label="IELTS Listening"
               alreadyPlayed={isAligned2026 && listeningConsumed}
-              onPlaybackStart={()=>setListeningConsumed(true)}
+              onPlaybackStart={consumeListening}
             />
           </div>
         )}

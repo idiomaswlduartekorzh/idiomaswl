@@ -4281,6 +4281,13 @@ button {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
+.ielts-audio__error {
+  margin: 0.5rem 0 0;
+  color: var(--wl-on-panel-alert, #c8202e);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
 .ielts-audio-sticky {
   position: sticky;
   top: 116px;
@@ -4697,18 +4704,22 @@ button {
   margin-bottom: 1.5rem;
   align-items: start;
 }
-@media (max-width: 900px) {
-  .ielts-split { grid-template-columns: 1fr; }
-}
 .ielts-split__passage {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.5rem;
   position: sticky;
-  top: 1rem;
+  top: 132px;
   max-height: calc(100vh - 160px);
   overflow-y: auto;
+}
+@media (max-width: 900px) {
+  .ielts-split { grid-template-columns: 1fr; }
+  .ielts-split__passage {
+    position: static;
+    max-height: none;
+  }
 }
 .ielts-split__passage-label {
   font-size: 0.72rem;
