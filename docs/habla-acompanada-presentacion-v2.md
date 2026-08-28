@@ -1,8 +1,26 @@
 # Habla acompañada — blueprint de presentación v2
 
-> **Estado:** propuesta para revisión de David. No implementada ni publicada.
+> **Estado:** `EN_VALIDACION`. Prototipo implementado y validado en preview protegida; no está
+> integrado en `main` ni publicado en producción.
 > **Decisión de producto:** 27 de agosto de 2026.
 > **Primer alcance:** las 60 prácticas de inglés A1, A2 y B1.
+
+## Estado operativo del prototipo
+
+- **Rama/SHA:** `codex/speaking-ux-blueprint-v2-20260827` · `a79383cf`.
+- **Base `origin/main`:** `d89c53a5`.
+- **Ruta compartida:** `/practica/ingles/a1/habla/prototipo`.
+- **Fichas privadas:** `/a` y `/b`; cualquier otro rol devuelve 404.
+- **Preview:** `dpl_8uSBzBUJ4D5VLtqfForJkJP1xLFZ` ·
+  `https://idiomaswl-git-codex-speak-c73fbc-idiomaswlduartekorzhs-projects.vercel.app`.
+- **Acceso:** protegido por inicio de sesión de Vercel y marcado `noindex, nofollow, nocache`.
+- **Validación del 28 de agosto de 2026:** catálogo, guardián de Habla, TypeScript, prebuild,
+  build Webpack y QA responsive aprobados. Smoke autenticado de preview aprobado para briefing,
+  roles A/B, revelación de la complicación, revisión final, privacidad entre roles y rol inválido.
+- **Dependencias externas:** ninguna; no hay migraciones, variables, audio, grabación ni datos
+  persistidos.
+- **Siguiente decisión:** probar esta única situación con estudiantes y aprobar o ajustar la
+  presentación antes de migrar las 60 prácticas de inglés.
 
 Este documento redefine **cómo se presenta** una práctica de Habla acompañada. No reemplaza
 las reglas de asimetría, tensión, nivel, cartas y simulación de
@@ -11,8 +29,8 @@ observado con estudiantes reales: las fichas contienen información suficiente, 
 experiencia no deja claro, antes de repartir los roles, **qué pasó, qué deben hacer y cómo saben
 que terminaron**.
 
-No se toca código ni producción hasta aprobar este blueprint y probar un prototipo con
-estudiantes.
+No se integra en `main` ni se toca producción hasta aprobar el blueprint y probar este prototipo
+con estudiantes.
 
 ---
 
