@@ -54,4 +54,10 @@ assert.match(set6Task1.stimulus, /households.*Bellmere/i, 'Set 6: la consigna de
 assert.match(set6Task1.stimulus, /2000.*2022/i, 'Set 6: la consigna debe coincidir con los años del gráfico')
 assert.match(set6Task1.imageAlt, /Central.*North.*Riverside.*East.*South/i, 'Set 6: el texto alternativo debe enumerar los cinco distritos')
 
+const { default: set7 } = await import('../src/data/mocks/ielts-set-7.ts')
+const set7Task1 = set7.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set7Task1.stimulus, /household waste.*Alderwick.*Brenton/i, 'Set 7: la consigna debe identificar la medida y las dos ciudades ficticias')
+assert.match(set7Task1.stimulus, /2025/i, 'Set 7: la consigna debe coincidir con el año del gráfico')
+assert.match(set7Task1.imageAlt, /food.*paper and card.*plastic.*glass.*other/i, 'Set 7: el texto alternativo debe enumerar las cinco categorías')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

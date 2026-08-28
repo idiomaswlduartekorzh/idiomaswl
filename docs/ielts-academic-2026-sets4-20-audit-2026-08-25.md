@@ -33,7 +33,7 @@ pasajes ni transcripciones duplicados de forma exacta entre los sets auditados.
 | 4 | 40/40 | 2.255 | 2.184 | OK · 27,1 min | 0 |
 | 5 | 40/40 | 2.215 | 2.180 | CANDIDATO QA · 29,0 min | 0 |
 | 6 | 40/40 | 2.333 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
-| 7 | 40/40 | 2.326 | 2.225 | REEMPLAZAR · 24,0 min | 0 |
+| 7 | 40/40 | 2.311 | 2.176 | REEMPLAZAR · 24,0 min | 0 |
 | 8 | 40/40 | 2.404 | 2.165 | REEMPLAZAR · 24,0 min | 0 |
 | 9 | 40/40 | 2.254 | 2.187 | REEMPLAZAR · 24,0 min | 0 |
 | 10 | 40/40 | 2.342 | 2.171 | REEMPLAZAR · 24,0 min | 0 |
@@ -133,6 +133,11 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   ya no presenta deriva de hidratación cuando Supabase se inyecta en runtime.
 - El soporte flotante usa CSS global, reconoce las rutas reales de IELTS y respeta
   `prefers-reduced-motion`; el documento evita landmarks `main` anidados.
+- El Set 7 superó una auditoría Golden individual de 235 controles. Se corrigieron
+  afirmaciones sobre sueño, biomimética, Blue Zones y relatividad lingüística; también
+  se reemplazaron el gráfico Task 1 defectuoso y un Task 2 de alto riesgo de coincidencia.
+  El nuevo gráfico original de residuos Alderwick/Brenton pasó inspección renderizada y
+  conserva título y descripción accesibles. Sólo queda diferido su audio Listening.
 
 ## Auditoría final no-audio
 

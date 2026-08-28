@@ -25,13 +25,17 @@ function sourceSupports(source, answer) {
   const haystack = ` ${canonical(source)} `;
   const needle = canonical(answer);
   const equivalents = new Map([
-    ['one', '1'], ['two', '2'], ['three', '3'], ['five', '5'], ['six', '6'], ['seven', '7'], ['eight', '8'],
-    ['eleven', '11'], ['twelve', '12'], ['thirty', '30'], ['thirty-five', '35'], ['forty', '40'], ['fifty', '50'],
-    ['1', 'one'], ['2', 'two'], ['3', 'three'], ['5', 'five'], ['6', 'six'], ['7', 'seven'], ['8', 'eight'],
-    ['11', 'eleven'], ['12', 'twelve'], ['30', 'thirty'], ['35', 'thirty-five'], ['40', 'forty'], ['50', 'fifty'],
+    ['one', '1'], ['two', '2'], ['three', '3'], ['four', '4'], ['five', '5'], ['six', '6'], ['seven', '7'], ['eight', '8'], ['nine', '9'], ['ten', '10'],
+    ['eleven', '11'], ['twelve', '12'], ['thirteen', '13'], ['fourteen', '14'], ['fifteen', '15'], ['thirty', '30'], ['thirty-five', '35'], ['forty', '40'], ['fifty', '50'],
+    ['1', 'one'], ['2', 'two'], ['3', 'three'], ['4', 'four'], ['5', 'five'], ['6', 'six'], ['7', 'seven'], ['8', 'eight'], ['9', 'nine'], ['10', 'ten'],
+    ['11', 'eleven'], ['12', 'twelve'], ['13', 'thirteen'], ['14', 'fourteen'], ['15', 'fifteen'], ['30', 'thirty'], ['35', 'thirty-five'], ['40', 'forty'], ['50', 'fifty'],
   ]);
   const alternate = needle.split(' ').map((token) => equivalents.get(token) ?? token).join(' ');
-  return haystack.includes(` ${needle} `) || haystack.includes(` ${alternate} `);
+  const compactNumber = needle.replaceAll(' ', '');
+  const compactSource = haystack.replace(/(?<=\d) (?=\d)/g, '');
+  return haystack.includes(` ${needle} `)
+    || haystack.includes(` ${alternate} `)
+    || (/^\d+$/.test(compactNumber) && compactSource.includes(` ${compactNumber} `));
 }
 
 function keyCount(question) {

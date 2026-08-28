@@ -51,7 +51,19 @@ REGISTRAR: Very sensible. One important thing: for this course, students have to
 
 STUDENT: That's no problem — I've already got one.
 
+REGISTRAR: Good. It does not need to be a professional model, but you should be able to control the focus and exposure manually. The tutor sends a short equipment guide before the first class.
+
+STUDENT: Mine has those controls. Will we be outside much? I ask because evenings get dark quite early in autumn.
+
+REGISTRAR: Two sessions involve a supervised walk near the river, but most teaching takes place indoors. If the weather is unsuitable, the tutor uses objects and lighting equipment in the studio instead. There is also a computer room for basic editing, although the course concentrates on taking photographs rather than software.
+
+STUDENT: That balance sounds right for me.
+
 REGISTRAR: Perfect. Let me give you the practical details, then. The beginners' photography course runs on Tuesday evenings, and it lasts for 10 weeks. The fee for the term is £120, and the classes are held in Room B4.
+
+STUDENT: What time does it begin?
+
+REGISTRAR: At half past six, finishing at eight. The fee includes printing for two assignments, but not travel to the outdoor locations. If you miss a class, the tutor can send the handout, though the practical exercise is not repeated.
 
 STUDENT: And is there anything more advanced afterwards?
 
@@ -59,7 +71,15 @@ REGISTRAR: Yes — the follow-up course runs on Thursday evenings. It's a little
 
 STUDENT: That sounds ideal. I'll sign up for the beginners' course to start with.
 
-REGISTRAR: Wonderful. I'll just print out the enrolment form for you now.`,
+REGISTRAR: Before I print the form, I should mention our cancellation policy. You can receive a full refund if you withdraw at least fourteen days before the term begins. After that, we can normally transfer the fee to another course only if your place is filled from the waiting list.
+
+STUDENT: I understand. I am confident about Tuesday evenings.
+
+REGISTRAR: Excellent. The first class is on the third of October. You will receive an email receipt and the equipment guide today, then a reminder shortly before the course starts. Bring your camera, its manual if you have it, and a fully charged battery.
+
+STUDENT: Great. I'll watch for the email.
+
+REGISTRAR: Wonderful. I'll print the enrolment form for you now.`,
       questions: [
         {
           type: 'formgroup',
@@ -121,21 +141,35 @@ Note: students must bring their own {{6}}`,
 
 Before we begin, a few practical points. Admission to our main galleries is completely free, so you can explore them at your own pace. Our popular children's activity trail is also free of charge, and I'd recommend it if you're visiting with a family. Do be aware, though, that our guided harbour tour, the temporary exhibition on the top floor, and hire of this audio guide all carry a small charge.
 
+The building has step-free access on the ground floor. A platform lift reaches the upper gallery, but it is narrow, so a member of staff will operate it for you. Photography without flash is permitted in the permanent collection. Please check the signs in the temporary exhibition, where lenders may impose different conditions.
+
 Now, a little about the building itself. The museum is housed in a nineteenth-century warehouse that once stored goods arriving by sea. It's one of the oldest buildings on the waterfront.
+
+The brick walls and timber roof are historic, while the internal ramps, cases and environmental controls are modern additions. This combination lets us preserve the structure and protect objects from changes in humidity. Begin on the ground floor rather than going directly upstairs; the route follows the development of the harbour in chronological order.
 
 Let's start in the entrance hall. The oldest object in our whole collection is displayed here — a ship's bell dating back four hundred years, recovered from a wreck just off the coast.
 
+The label beside it explains how conservators removed salt from the metal. Please do not touch the bell: even clean hands leave moisture and oils that can damage its surface.
+
 Moving into the first gallery on your left, you'll find a wonderful collection of detailed models of fishing boats, each one built by local craftsmen over the past century.
 
+Look closely at the changing hull shapes rather than treating the models as decoration. They show how builders adapted boats for shallow coastal water and later added engines.
+
 The second gallery is devoted to maps. Here you can trace how the coastline around the town has changed over the centuries, as the sea has advanced and retreated.
+
+An interactive display lets you align three surveys. Remember that part of the apparent change comes from improved measurement, while storms and harbour construction changed the shore itself.
 
 Upstairs, our most popular exhibit awaits: a complete Victorian diving suit, still in remarkable condition, together with its heavy brass helmet.
 
 In the same room, a short film about the history of the port is shown every hour, and it's well worth twenty minutes of your time.
 
+Subtitles are available, and a transcript can be borrowed from the information desk. The film begins five minutes past the hour, so there is time to examine the diving equipment first.
+
 When you're ready for a break, our café is located just beside the garden at the rear of the building, where you can sit outside in fine weather.
 
 One final reminder: for the safety of the exhibits, please leave any large bags in the cloakroom near the entrance before you go upstairs.
+
+Small lockers are free, but they are limited in number. Food and drink should remain in the café area, and children must stay with an adult on the upper floor.
 
 Enjoy your visit, and press the green button whenever you'd like me to continue.`,
       questions: [
@@ -223,17 +257,33 @@ MEGAN: We need to write the comprehension questions and get them checked before 
 
 TUTOR: Right. A few final details. Where will you run the tests?
 
+RYAN: Before that, should we match participants by reading ability?
+
+TUTOR: With a small volunteer sample, elaborate matching may create more problems than it solves. Collect a brief baseline measure, allocate participants to conditions using a genuinely random procedure, and report any imbalance. Also decide the sample size before seeing results. Stopping when a difference appears would inflate the chance of a misleading finding.
+
+MEGAN: Should the music be equally loud in both music conditions?
+
+TUTOR: Yes, measure it at the participant's seat. Keep the device and headphones identical too. Lyrics versus no lyrics should be the intended difference, not sound quality or volume.
+
+RYAN: And we should ask whether anyone already knows the reading text.
+
+TUTOR: Exactly. A pilot with people outside the final sample can reveal whether the passage is too easy, the questions are ambiguous or the procedure takes longer than expected. Do not use pilot scores in the final analysis.
+
 RYAN: In a quiet room in the library, away from any noise.
 
 TUTOR: Good. Make sure every passage is the same length, or that becomes another variable. And don't improvise the instructions — read them from a fixed script every time, so each group hears the same thing.
 
 MEGAN: And for the report, we'll show the scores in a bar graph comparing the three groups.
 
-TUTOR: Perfect. One absolute rule: before anyone takes part, you must obtain their written consent. Ethics approval depends on it.
+TUTOR: Perfect. Store the anonymous scores separately from names and contact details, and agree who can access each file. One absolute rule: before anyone takes part, you must obtain their written consent. Ethics approval depends on it.
 
 RYAN: The forms are ready.
 
-TUTOR: Then you're in good shape. Send me the questions by Friday.`,
+TUTOR: Then you're in good shape. Add a short debrief explaining the purpose after participation, and remind volunteers that withdrawing will not affect their course. Before collecting data, write down your predicted comparison and analysis rule. That prevents you from quietly changing the hypothesis after seeing the scores.
+
+MEGAN: We'll add those to the protocol and keep a dated copy.
+
+TUTOR: Good. Send me the questions by Friday, and I will check the wording without seeing any results.`,
       questions: [
         {
           type: 'mcq',
@@ -289,7 +339,7 @@ TUTOR: Then you're in good shape. Send me the questions by Friday.`,
           part: 3,
           text: 'What do the students agree to do next?',
           options: [
-            'prepare and check their test questions',
+            'prepare and test their questions',
             'run a small pilot study',
             'book a quiet room',
           ],
@@ -329,21 +379,25 @@ Let's begin with what controls sleep. As night falls, the brain releases a hormo
 
 Melatonin is governed by our internal body clock, which follows a roughly twenty-four-hour cycle known as the circadian rhythm. This rhythm is reset each day mainly by our exposure to daylight.
 
-Once we're asleep, we pass through two main types of sleep. The first is REM sleep, when the eyes move rapidly and most dreaming occurs; the second is deep sleep, the slow, restorative stage in which the brain waves are at their slowest.
+Once asleep, we cycle through two broad states: REM sleep and non-REM sleep. Non-REM itself contains stages, from lighter sleep to deep slow-wave sleep. Vivid dreams are often reported after REM awakenings, but dreaming is not exclusive to REM. Across a typical night, the balance changes: deep non-REM is concentrated earlier, while REM periods tend to lengthen towards morning.
 
-These stages do different jobs. During deep sleep, the body carries out physical repair — this is when it rebuilds muscle and releases growth hormone.
+These stages overlap in function rather than performing completely separate jobs. During deep non-REM sleep, processes associated with physical restoration are prominent: the body rebuilds muscle and pulses of growth hormone are released. That does not mean repair stops in every other stage.
 
-REM sleep, by contrast, seems to be essential for the brain rather than the body. Research shows that it plays a key role in consolidating memory, helping us to retain what we learned during the day.
+REM sleep contributes to brain function, but it should not be described as the only stage important for learning. Experiments indicate that both REM and non-REM processes contribute to consolidating memory, with effects depending on the type of information and timing of sleep. Sleep also helps regulate attention, so a tired participant may struggle to encode new material before consolidation even begins.
 
-The consequences of not sleeping enough are serious. Even a few nights of poor sleep can weaken the immune system, leaving us more likely to catch infections.
+The consequences of not sleeping enough can be serious. Controlled studies show changes in immune signalling, and chronic short sleep is associated with poorer health. Association does not establish every causal pathway, but sleep can weaken normal immune system responses and reduce resistance to infection.
 
-Sleep loss also has a powerful effect on mood, making people irritable and more prone to anxiety.
+Sleep loss also affects mood, making emotional reactions harder to regulate. The relationship runs both ways: anxiety or depression can disturb sleep, while disturbed sleep can worsen symptoms. This feedback is one reason clinicians ask about both duration and quality.
 
-Different age groups have different needs. Teenagers, for example, require more sleep than adults, partly because their bodies are still undergoing rapid growth during these years.
+Different age groups have different needs. Teenagers generally require more sleep than adults, while biological timing also shifts later during adolescence. Early school or work schedules can therefore conflict with when a teenager naturally becomes sleepy, even when the person intends to rest.
 
 Some people struggle to sleep at all. The most common sleep disorder is insomnia, the persistent inability to fall or stay asleep.
 
-Finally, some practical advice. To sleep well, experts recommend keeping a regular bedtime and avoiding caffeine in the evening, as it can stay in the body for many hours.
+Finally, some practical advice. A regular schedule and morning daylight can reinforce circadian timing. Experts also recommend avoiding caffeine in the evening, as its effects can persist for many hours. Alcohol may make someone feel drowsy but can fragment sleep later, and bright light near bedtime can delay the body clock.
+
+If difficulty persists and impairs daytime life, general advice is not a substitute for assessment. Clinicians consider medication, breathing disorders, pain, mental health and working patterns before deciding on treatment.
+
+Naps illustrate the importance of context. A brief early-afternoon nap may improve alertness, but a long or late nap can reduce sleep pressure and make bedtime harder. Shift workers face different constraints and may need a planned combination of light, darkness and sleep opportunities rather than advice designed for a daytime schedule.
 
 That concludes our overview; next week we'll look at sleep in the animal kingdom.`,
       questions: [
@@ -361,15 +415,15 @@ That concludes our overview; next week we'll look at sleep in the animal kingdom
 
 Types of sleep
 
-• There are two main types: REM sleep and {{33}} sleep.
+• There are two broad states: REM sleep and {{33}} sleep.
 • During deep sleep, the body rebuilds {{34}} and releases growth hormone.
-• REM sleep is important for consolidating {{35}}.
+• Both REM and non-REM processes contribute to consolidating {{35}}.
 
 Effects of poor sleep
 
 • A lack of sleep can weaken the immune {{36}}.
 • Sleep loss also has a strong effect on {{37}}.
-• Teenagers need extra sleep partly because of rapid {{38}}.
+• In adolescence, biological {{38}} shifts later.
 
 Advice
 
@@ -378,12 +432,12 @@ Advice
           blanks: [
             { num: 31, answers: ['melatonin'], maxWords: 1 },
             { num: 32, answers: ['rhythm'], maxWords: 1 },
-            { num: 33, answers: ['deep'], maxWords: 1 },
-            { num: 34, answers: ['muscle', 'muscles'], maxWords: 1 },
-            { num: 35, answers: ['memory', 'memories'], maxWords: 1 },
+            { num: 33, answers: ['non-REM'], maxWords: 1 },
+            { num: 34, answers: ['muscle'], maxWords: 1 },
+            { num: 35, answers: ['memory'], maxWords: 1 },
             { num: 36, answers: ['system'], maxWords: 1 },
             { num: 37, answers: ['mood'], maxWords: 1 },
-            { num: 38, answers: ['growth'], maxWords: 1 },
+            { num: 38, answers: ['timing'], maxWords: 1 },
             { num: 39, answers: ['insomnia'], maxWords: 1 },
             { num: 40, answers: ['caffeine'], maxWords: 1 },
           ],
@@ -397,34 +451,40 @@ Advice
       instructions: 'Read the passage and answer Questions 1–13.',
       passage: `Biomimicry in Design
 
-Nature has spent approximately 3.8 billion years refining its designs through the trial and error of evolution. The result is an extraordinary library of solutions to engineering problems—structures that are simultaneously strong and lightweight, surfaces that repel water without synthetic chemicals, navigation systems that operate without GPS. Biomimicry is the practice of studying and imitating these biological strategies to address human design challenges, and it is increasingly recognised as a powerful tool for innovation across architecture, materials science, and product engineering.
+An engineer looking at a leaf may see neither decoration nor a ready-made blueprint, but a physical strategy that can be tested. Biomimicry is the practice of studying biological forms, processes or systems for ideas relevant to human design. Evolution has produced structures that are light yet strong and surfaces that manage heat or water, but it has not worked towards human objectives. The useful step is therefore translation: identify a function, model the mechanism, build an analogue and measure whether it performs in the intended setting.
 
 The term was popularised by biologist Janine Benyus in her 1997 book Biomimicry: Innovation Inspired by Nature. Benyus argued that rather than merely extracting resources from the natural world, designers and engineers should treat nature as a mentor, learning from the elegance and efficiency of biological systems. The concept was not new—inventors had always drawn inspiration from nature—but Benyus provided a systematic framework for doing so, and her work catalysed a new field of research and practice.
 
-Some of the most celebrated examples of biomimicry involve architecture. The Eastgate Centre in Harare, Zimbabwe, designed by architect Mick Pearce in the 1990s, takes its cues from the ventilation strategies of African termite mounds. Despite the intense heat of the Zimbabwean climate, termite mounds maintain a remarkably stable internal temperature because of a system of vents and tunnels that allow hot air to rise and be expelled while cool air is drawn from below. Pearce replicated this principle in the Eastgate Centre using a passive cooling system that requires no conventional air conditioning, reducing the building's energy consumption by approximately ninety percent compared to a conventional building of similar size.
+Architecture supplies a famous but frequently simplified case. Mick Pearce's Eastgate Centre in Harare was discussed in relation to termite mounds and uses the building's thermal mass, controlled ventilation and cool night air rather than a conventional sealed air-conditioning model. Popular accounts often describe a mound as a fixed chimney in which hot air simply rises. Research on termite nests instead shows several ventilation patterns that depend on species, wind and daily temperature change. Eastgate remains a valuable low-energy design, but a precise claim such as “ninety percent less energy” is meaningless unless the comparison states which buildings, climate loads and services are included.
 
-A second compelling example comes from materials science. The Namib Desert beetle (Stenocara gracilipes) survives in one of the world's driest environments by collecting water from fog. Its back is covered with tiny bumps: the tips of the bumps are hydrophilic (water-attracting) while the sides are hydrophobic (water-repelling). Water droplets from fog collect on the tips and then roll down the hydrophobic slopes toward the beetle's mouth. Engineers have applied this principle to develop fog-collecting surfaces for water harvesting in arid regions and to create self-cleaning glass that channels water efficiently across its surface.
+Materials science shows why the biological observation must also be checked. A 2001 report on a Stenocara beetle proposed that hydrophilic tips on bumps collect fog droplets while surrounding hydrophobic slopes help water move. The mechanism inspired artificial patterned surfaces. Later behavioural work found that the two Namib beetles observed fog-basking belonged to the genus Onymacris; the bumpy Stenocara gracilipes tested in that study was not observed performing the behaviour in nature. Engineers can still test alternating wettability as a useful design. What they should not do is turn one laboratory model into a confident story about the behaviour of a named species.
 
-The aerospace and transport industries have also drawn extensively on biological models. Humpback whale flippers inspired the development of tubercle technology—small bumps on the leading edges of wind turbine blades and aircraft wings that reduce drag and improve efficiency at lower wind or airspeed. The noses of Japan's Shinkansen bullet trains were redesigned based on the beak of the kingfisher, a bird that transitions between air and water with minimal turbulence. The redesign solved an engineering problem (pressure waves caused by the train entering tunnels) while simultaneously reducing energy consumption by fifteen percent.
+Transport provides other testable analogies. Humpback-whale flippers inspired tubercle technology, in which bumps on a leading edge can alter flow and delay stall under some conditions. “Can” is important: performance depends on geometry and operating range. Japan's 500-series Shinkansen is reported to have used the kingfisher's beak as one source of inspiration when engineers reduced tunnel pressure waves. The resulting train was quieter and a 15 percent reduction in energy use was reported, but the final nose emerged from engineering models and trials rather than directly copying a bird.
 
-Critics of biomimicry note that natural selection does not produce optimal designs but rather "good enough" solutions constrained by evolutionary history, available materials, and developmental pathways. A bat's wing, however elegant, is not the most efficient possible wing—it is the most efficient wing achievable given the constraints of the mammalian skeletal system. Nevertheless, even imperfect biological solutions often offer insights that purely mathematical optimisation fails to generate. The growing field of bioinspired computing, in which algorithms modelled on processes such as ant colony optimisation and neural learning are applied to complex engineering and logistics problems, illustrates how broadly biological principles can be applied beyond their original context.`,
+Critics note that natural selection does not produce universal optima. A bat's wing reflects evolutionary history, available materials, development, reproduction and survival—not a specification for the most efficient aircraft. Biological systems may also solve several conflicting problems at once, while an industrial design needs only one function or must obey safety, repair and manufacturing constraints absent from nature.
+
+For that reason, strong biomimicry is a method of generating hypotheses, not an appeal to nature as authority. A conventional design should be tested alongside the bioinspired one, using declared measures and realistic conditions. Failure is informative: it may reveal that researchers copied a visible shape while missing behaviour, scale or material properties. The same discipline applies to bioinspired computing. Ant-colony optimisation and neural learning borrow abstract relationships rather than literal insects or brains. Their value comes from performance and validation, not from the prestige of the biological metaphor.
+
+Scale creates a recurring trap. A microscopic texture may direct a droplet on a small clean sample but clog, wear or cost too much across a roof. A flexible fin in seawater operates at different speeds and forces from a rigid turbine blade. Engineers use dimensionless ratios, prototypes and accelerated ageing tests to determine which relationships survive translation.
+
+Environmental claims need a life-cycle comparison as well. A surface that saves water during use may require rare materials or frequent replacement; a passive building can still consume substantial energy through lighting and equipment. Biomimicry becomes more credible when the biological analogy is documented, alternative explanations are considered and the finished product is assessed from manufacture to disposal.`,
       questions: [
         {
           type: 'formgroup', id: 'r1-tfng', part: 5, qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: Janine Benyus coined the word "biomimicry" in a scientific journal article.\n2. {{2}}: The Eastgate Centre uses a cooling system similar to that found in termite mounds.\n3. {{3}}: The Eastgate Centre consumes about ninety percent less energy than a conventional building.\n4. {{4}}: The Namib Desert beetle collects water from rain using its bumped surface.\n5. {{5}}: Tubercle technology was first applied to wind turbines before aircraft wings.\n6. {{6}}: The Shinkansen's redesigned nose was modelled on the beak of the kingfisher.\n7. {{7}}: Critics argue that natural selection always produces the most mathematically optimal design.`,
+          template: `1. {{1}}: Janine Benyus coined the word "biomimicry" in a scientific journal article.\n2. {{2}}: Eastgate uses thermal mass and controlled ventilation instead of a conventional sealed cooling model.\n3. {{3}}: A percentage saving for a building is meaningful without defining the comparison baseline.\n4. {{4}}: Later field research observed Stenocara gracilipes performing fog-basking behaviour.\n5. {{5}}: Tubercle technology was first applied to wind turbines before aircraft wings.\n6. {{6}}: The Shinkansen redesign reportedly drew inspiration from the kingfisher's beak.\n7. {{7}}: Natural selection produces solutions to a human engineering specification.`,
           blanks: [
-            { num: 1, answers: ['FALSE'] }, { num: 2, answers: ['TRUE'] }, { num: 3, answers: ['TRUE'] },
+            { num: 1, answers: ['FALSE'] }, { num: 2, answers: ['TRUE'] }, { num: 3, answers: ['FALSE'] },
             { num: 4, answers: ['FALSE'] }, { num: 5, answers: ['NOT GIVEN'] }, { num: 6, answers: ['TRUE'] }, { num: 7, answers: ['FALSE'] },
           ],
         },
         {
           type: 'formgroup', id: 'r1-sent', part: 5, qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `8. The bumps on the Namib beetle's back have {{8}} tips that attract water droplets from fog.\n9. Water rolls towards the beetle's mouth along the {{9}} slopes of each bump.\n10. Small bumps on wind turbine blades, inspired by whale flippers, are called {{10}} technology.\n11. The Shinkansen nose redesign reduced energy consumption by {{11}} percent.\n12. Critics note that natural selection is constrained by evolutionary {{12}} and available materials.\n13. Algorithms modelled on biological processes form the basis of {{13}} computing.`,
+          template: `8. The proposed beetle model described {{8}} tips that collect fog droplets.\n9. The surrounding {{9}} slopes were proposed to help water move.\n10. Leading-edge bumps inspired by whale flippers are called {{10}} technology.\n11. The Shinkansen redesign reportedly reduced energy use by {{11}} percent.\n12. Natural designs reflect evolutionary {{12}} as well as present conditions.\n13. Ant-colony algorithms are an example of {{13}} computing.`,
           blanks: [
             { num: 8, answers: ['hydrophilic'] }, { num: 9, answers: ['hydrophobic'] },
-            { num: 10, answers: ['tubercle'] }, { num: 11, answers: ['fifteen'] },
+            { num: 10, answers: ['tubercle'] }, { num: 11, answers: ['15'] },
             { num: 12, answers: ['history'] }, { num: 13, answers: ['bioinspired'] },
           ],
         },
@@ -437,17 +497,23 @@ Critics of biomimicry note that natural selection does not produce optimal desig
       instructions: 'Read the passage and answer Questions 14–26.',
       passage: `Blue Zones — The Science of Longevity
 
-A. In 2004, journalist Dan Buettner, working with demographers and epidemiologists, identified five regions of the world with unusually high concentrations of centenarians—people who live to age one hundred or beyond. Buettner called these regions "Blue Zones," a term derived from the blue ink demographers used to mark areas of interest on maps. The five zones are: Sardinia in Italy; Okinawa in Japan; Loma Linda in California; the Nicoya Peninsula in Costa Rica; and the island of Ikaria in Greece. Despite their geographical and cultural diversity, researchers identified a set of lifestyle characteristics common to all five populations.
+A. “Blue Zone” began as a demographic label for an area of Sardinia marked on a map while researchers investigated unusually high male longevity. Journalist Dan Buettner later popularised a five-region framework: parts of Sardinia, Okinawa, the Nicoya Peninsula and Ikaria, plus the Seventh-day Adventist community around Loma Linda, California. These places differ in boundaries, historical records and the outcome being measured. The branded list is therefore not one controlled experiment. It combines demographic research with a popular attempt to identify habits that might contribute to long and healthy lives.
 
-B. Physical activity in Blue Zone populations is not the vigorous, scheduled exercise of gym culture. Rather, it is embedded in daily routine: walking to village markets, tending gardens, herding animals, kneading bread. Okinawan elders sit on the floor to eat and rest, which means they rise and lower themselves dozens of times daily, engaging muscle groups that sedentary chair-bound living leaves dormant. Sardinian shepherds walk hilly terrain for hours each day as a natural consequence of their occupation. Research suggests that this form of low-intensity, continuous movement may confer health benefits distinct from those of intermittent high-intensity exercise.
+B. One recurring observation is physical activity embedded in daily routine rather than only scheduled exercise: walking to shops, tending gardens or working on hilly terrain. Such descriptions are plausible and consistent with wider evidence that movement benefits health. They are not precise exposure measurements, however. A shepherd who reached old age may differ from someone who left the occupation in income, diet, genetics or access to care. Researchers must also avoid selecting a picturesque habit after knowing the outcome and then treating it as the explanation.
 
-C. Diet in the Blue Zones is overwhelmingly plant-based, though rarely completely vegetarian. Legumes—beans, lentils, and soya—are a dietary staple across all five regions, consumed daily in substantial quantities. Meat, particularly red meat, is eaten sparingly—typically only on festive occasions—and fish consumption varies considerably between populations. Caloric intake is generally moderate: Okinawans follow a cultural practice called hara hachi bu, a Confucian-influenced principle of eating until one is eighty percent full. Moderate alcohol consumption is common in several zones, particularly red wine in Sardinia, though researchers note that this correlation requires careful interpretation.
+C. The popular framework describes largely plant-rich diets in which legumes—beans, lentils or soya—are common, while patterns of meat, fish and dairy vary. Okinawa is associated with the phrase hara hachi bu, interpreted as stopping before complete fullness. Historical diet cannot be reconstructed accurately from a modern menu or the memory of a few residents, and food systems change across generations. Alcohol illustrates the danger of inference: observing wine in one population does not prove that alcohol caused longevity or justify recommending it to someone who does not drink.
 
-D. Social integration appears to be a critical factor. In all five zones, older people are embedded in strong social networks and maintain clear social roles. Okinawans belong to lifelong social support groups called moai, which provide mutual aid in times of difficulty and regular social connection throughout life. Sardinian culture places high value on intergenerational living: elderly grandparents typically live with or very close to adult children and grandchildren, participating actively in family and community life. Research in social epidemiology consistently finds that social isolation is associated with health outcomes comparable in severity to smoking fifteen cigarettes a day.
+D. Social connection is another proposed feature. The Okinawan term moai can refer to mutual-support groups, while intergenerational contact is emphasised in accounts of Sardinian communities. Social epidemiology independently finds associations between isolation and mortality, but popular statements that loneliness is “equivalent to smoking fifteen cigarettes a day” compress different studies and outcomes into a memorable comparison. An association across groups cannot tell an individual exactly how many years a friendship adds, and illness itself can reduce a person's ability to remain socially active.
 
-E. A sense of purpose—articulated in Okinawan culture as ikigai, "the reason for getting up in the morning"—and, separately, stress-reduction practices are features common to all zones. Nicoyans speak of their plan de vida, or life plan, as a core source of meaning. Seventh-day Adventists in Loma Linda observe a weekly Sabbath as a regular pause from the pressures of daily life. Sardinians decompress through daily social rituals, including extended family meals. The mechanisms by which psychological wellbeing translates into longevity are not fully understood, but the connection is robust across multiple research traditions.
+E. Accounts also group several ideas under “purpose” and stress reduction. Ikigai in Japanese has a wider range of everyday meanings than the English slogan “the reason for getting up in the morning”, and plan de vida is used in descriptions of Nicoya. Loma Linda's Adventist community observes a weekly Sabbath, while family and religious routines may structure rest and contact. These practices deserve study, but translating a local concept into a universal prescription can remove its social and historical context. Purpose may affect behaviour and wellbeing, while health and security may also make purpose easier to sustain.
 
-F. Researchers are careful to note the limitations of Blue Zone research. The data on centenarian concentrations, particularly in some regions, may be affected by poor historical record-keeping and inflated claims of age. Confounding variables—genetics, geography, selective migration—make it difficult to isolate the causal effect of any single lifestyle factor. Nonetheless, the convergence of so many independent populations around similar habits has persuaded many public health researchers that the Blue Zone lifestyle represents a meaningful and replicable model for extending healthy life expectancy.`,
+F. The underlying demography is actively debated. Critics argue that errors in birth, death or migration records can create false concentrations of extreme ages. Researchers associated with Blue Zone validation respond that candidate regions are checked against multiple independent records and age-specific population counts. Both positions highlight why a centenarian's document and a regional longevity rate are different claims. Even if an unusual concentration is valid, confounding variables—genetics, geography, migration, cohort history and selection of boundaries—prevent a list of shared habits from isolating causation.
+
+The sensible conclusion is neither that the five regions reveal a formula nor that familiar health behaviours are worthless. Movement, nutritious food and social support can be evaluated through broader evidence without using a trademarked geography as proof. A rigorous intervention would define the population and outcome in advance, compare an appropriate group, record adherence and adverse effects, and distinguish longer life from healthier life. Blue Zones are best treated as sources of questions whose individual claims still require independent testing.
+
+Survivorship can distort the story in another way. Interviews with exceptionally old residents describe people who lived long enough to be interviewed, not peers who followed similar routines but died earlier. Memories of diet decades ago may also be reconstructed through present identity. Prospective cohort studies reduce some of these problems by recording exposure before the outcome, although they still face confounding and loss to follow-up.
+
+Finally, a change in the number of centenarians can reflect both mortality and population structure. A large birth cohort produces more potential centenarians even if each person's chance is unchanged, while migration changes the denominator. Researchers therefore compare age-specific rates and verify residence histories rather than merely counting birthday celebrations.`,
       questions: [
         {
           type: 'matching', id: 'r2-match', part: 6, qRange: [14, 20],
@@ -459,7 +525,7 @@ F. Researchers are careful to note the limitations of Blue Zone research. The da
             { num: 17, stem: 'An explanation of how occupation naturally provides physical activity', answer: 'B' },
             { num: 18, stem: 'A reference to the cultural concept of having a sense of life purpose', answer: 'E' },
             { num: 19, stem: 'The origin of the term "Blue Zone" and the five regions identified', answer: 'A' },
-            { num: 20, stem: 'A comparison between the health risks of social isolation and smoking', answer: 'D' },
+            { num: 20, stem: 'A warning about converting a population association into a memorable individual comparison', answer: 'D' },
           ],
           endings: [
             { letter: 'A', text: 'Paragraph A' }, { letter: 'B', text: 'Paragraph B' },
@@ -469,14 +535,14 @@ F. Researchers are careful to note the limitations of Blue Zone research. The da
         },
         {
           type: 'formgroup', id: 'r2-table', part: 6, qRange: [21, 26],
-          groupLabel: 'Complete the table below. Choose NO MORE THAN TWO WORDS from the passage.',
+          groupLabel: 'Complete the table below. Choose NO MORE THAN THREE WORDS from the passage.',
           title: 'Blue Zones — Key Features',
-          template: `21. Physical activity: Embedded in daily routine; not {{21}} exercise.\n22. Diet staple: {{22}} consumed daily in all five zones.\n23. Okinawan eating principle: Called {{23}}: eating until 80% full.\n24. Okinawan social group: Lifelong support groups called {{24}}.\n25. Okinawan life purpose: Called {{25}}: "the reason for getting up".\n26. Research limitation: {{26}} variables such as genetics make causation hard to isolate.`,
+          template: `21. Physical activity: Embedded in daily routine; not {{21}} exercise.\n22. Plant-rich diets: Beans, lentils and soya are examples of {{22}}.\n23. Okinawan eating principle: {{23}} is interpreted as stopping before complete fullness.\n24. Okinawan social group: Mutual-support groups called {{24}}.\n25. Okinawan life purpose: {{25}} has a wider meaning than a popular English slogan.\n26. Research limitation: {{26}} variables such as genetics make causation hard to isolate.`,
           blanks: [
             { num: 21, answers: ['scheduled'] },
             { num: 22, answers: ['Legumes'] },
             { num: 23, answers: ['hara hachi bu'] },
-            { num: 24, answers: ['moais', 'moai'] },
+            { num: 24, answers: ['moai'] },
             { num: 25, answers: ['ikigai'] },
             { num: 26, answers: ['Confounding'] },
           ],
@@ -490,24 +556,30 @@ F. Researchers are careful to note the limitations of Blue Zone research. The da
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `Linguistic Relativity
 
-The hypothesis of linguistic relativity—the idea that the language one speaks influences how one perceives and thinks about the world—has generated intense debate in linguistics, psychology, and cognitive science for more than a century. In its strongest form, the Sapir-Whorf hypothesis (named after linguists Edward Sapir and Benjamin Lee Whorf) holds that language determines thought: that people who speak different languages inhabit incommensurable cognitive worlds. This strong version has been largely discredited. A weaker but more defensible version—that language influences certain cognitive tendencies and perceptions without determining them—has accumulated considerable empirical support in recent decades.
+Does a language change thought, or does it merely reveal distinctions its speakers already need? Linguistic relativity names a family of hypotheses about relationships between language and cognition. The convenient label “Sapir-Whorf hypothesis” was attached later; Sapir and Whorf did not publish one jointly specified experiment. A strong claim that grammar determines what a person can think has little support. Narrower claims ask whether routinely naming or encoding a distinction changes attention, memory or speed on a particular task. Those claims can be tested, but they do not all rise or fall together.
 
-The evidence comes from a wide range of linguistic domains. Colour perception has been particularly well-studied. Languages vary dramatically in how they partition the colour spectrum: Russian, for example, makes a lexical distinction between light blue (goluboy) and dark blue (siniy) that English does not; the Pirahã language of the Amazon basin has no specific colour terms at all. A series of experiments by researchers including Paul Kay and Terry Regier found that speakers of languages with a specific lexical distinction between two colour categories are faster at discriminating between colours from different categories than speakers of languages without the distinction—but only for stimuli in the right visual field (processed by the left hemisphere, where language is typically located). This asymmetry suggests that language influences real-time perception, though not in an absolute or deterministic way.
+Colour provides a narrow example. Russian uses a separate common term for lighter blue, goluboy, and darker blue, siniy, whereas English normally places both within “blue”. In a speeded discrimination experiment, Russian speakers responded faster when two shades crossed that lexical boundary than when both belonged to the same category; English speakers did not show the same boundary advantage. The Russian effect became smaller under a verbal-interference task, supporting a role for language during the decision rather than a permanently altered eye. Replication, display calibration and the exact range of shades still matter before generalising beyond the task.
 
-Spatial cognition offers another revealing domain. In Kuuk Thaayorre, an Aboriginal Australian language, speakers use absolute cardinal directions (north, south, east, west) for all spatial reference rather than ego-centred terms (left, right, in front, behind). Researchers found that Kuuk Thaayorre speakers maintain a constant, accurate sense of cardinal direction regardless of their orientation—a remarkable navigational ability that is not characteristically observed in speakers of ego-centred languages. Whether this ability is caused by the language or merely correlated with cultural practices that both produce the language and the navigation skill is an ongoing debate.
+Spatial frames offer another domain. Kuuk Thaayorre, spoken at Pormpuraaw in Australia, frequently uses absolute directions rather than relying on left and right. In one study, bilingual speakers arranged picture cards showing a temporal sequence along an east-to-west axis even when their own facing direction changed, while local English monolinguals tended to arrange them left to right. The result aligns spatial language with a non-linguistic time task. It does not by itself isolate whether language, environmental orientation, teaching or other cultural practice caused the difference.
 
-Grammatical gender provides further evidence. In languages where nouns are assigned grammatical gender—German, French, Spanish—the gender of a noun has been shown to influence the adjectives and metaphors speakers use to describe the referent. German speakers, for whom the word for "bridge" (Brücke) is feminine, more often describe bridges using adjectives like "beautiful" and "elegant"; Spanish speakers, for whom puente is masculine, more often use adjectives like "strong" and "sturdy." These effects, while small, are consistent across multiple studies and have been replicated even when the instructions are given in a different language.
+Grammatical gender illustrates why famous demonstrations require replication. A widely repeated report said German and Spanish speakers chose different adjectives for objects such as a bridge, in line with each noun's grammatical gender. The original work appeared with limited methodological detail and small samples. A later preregistered study used the original materials with much larger samples and failed to replicate the central cross-language effect. This does not prove that grammatical gender can never affect any cognitive task; it shows that one memorable result cannot carry that broad conclusion.
 
-Critics of linguistic relativity research raise important methodological objections. Many of the effects reported are small in magnitude and sensitive to experimental conditions. The causal arrow is difficult to establish: rather than language shaping thought, cultural practices may independently shape both language and cognition. There are also concerns about publication bias—the tendency for journals to publish positive results while null findings accumulate unpublished. A comprehensive meta-analysis of linguistic relativity studies published in 2012 found effect sizes were generally modest but significantly above chance, suggesting that while language does not determine thought, it may subtly tune the cognitive tools available for particular tasks.
+Across the field, effects are often small and sensitive to instructions. Translation can change a task; bilingual experience can blur group boundaries; experimenters may select unusually convenient languages after learning their structure. The causal arrow is difficult to establish because culture may shape both language and cognition. Publication bias creates another risk when positive findings appear while null results remain unseen. Preregistration, adequate samples, shared materials and direct replication make a claim more trustworthy, especially when a surprising example has already become popular outside research.
 
-The practical implications of linguistic relativity are modestly significant. In second-language acquisition, understanding that a learner's native language may predispose them to perceive and categorise the world in particular ways can inform pedagogical strategies. In cross-cultural communication, awareness that linguistic structure shapes subtle perceptual and categorical tendencies may promote greater patience with misunderstandings that arise not from logic but from deeply embedded linguistic habits.`,
+Task design is central because a “non-linguistic” response may still invite silent naming. A colour decision made in a fraction of a second differs from remembering colours after a delay. Researchers can add verbal interference, compare category boundaries and use continuous measures rather than asking participants to explain their choices. Each method removes some interpretations and introduces others; no single task measures “thought” as a whole.
+
+Bilingualism complicates group labels. Age of acquisition, proficiency, current language context and frequency of switching may all affect which categories are active. Treating every speaker of a named language as equivalent hides this variation. A strong design measures individual experience and avoids selecting only one community per language, because community and language would otherwise be inseparable.
+
+A failed replication also needs careful interpretation. It lowers confidence in the exact original effect under those conditions; it does not demonstrate a universal absence. Conversely, finding a statistically reliable difference does not reveal its practical size or mechanism. Confidence grows when independent teams predict the same result in advance, share materials and observe it across reasonable variations of the task.
+
+Practical implications should match that evidence. A language teacher can explicitly contrast a distinction learners routinely overlook, but should not assume a student's grammar sets a cognitive limit. In cross-cultural communication, asking how another speaker divided a category may clarify a misunderstanding; attributing disagreement to an entire language may instead create a stereotype. Linguistic relativity is most useful as a programme of precise comparisons between tasks, speakers and contexts—not as a claim that languages imprison their users in different worlds.`,
       questions: [
         {
           type: 'mcq', id: 'r3-q27', part: 7,
           text: 'What does the passage say about the strong version of the Sapir-Whorf hypothesis?',
           options: [
             'It has been confirmed by multiple empirical studies.',
-            'It has been largely rejected, though a weaker version has support.',
+            'It is largely rejected, although weaker claims have support.',
             'It is still debated but has not been tested experimentally.',
             'It applies only to colour perception and spatial cognition.',
           ],
@@ -519,49 +591,49 @@ The practical implications of linguistic relativity are modestly significant. In
           options: [
             'Speakers of all languages discriminate colours at the same speed.',
             'Only languages with no colour terms showed differences in colour perception.',
-            'Speakers whose language distinguishes two colour categories were faster at discriminating those colours, but only in one visual field.',
+            'Russian speakers were faster across the light–dark blue boundary, but verbal interference weakened it.',
             'Colour perception is entirely determined by the number of colour terms in a language.',
           ],
           answer: 2,
         },
         {
           type: 'mcq', id: 'r3-q29', part: 7,
-          text: 'What notable ability have Kuuk Thaayorre speakers been shown to possess?',
+          text: 'What did the study of Kuuk Thaayorre bilinguals find?',
           options: [
-            'The ability to use ego-centred terms more accurately than other speakers.',
-            'A consistently accurate sense of cardinal direction regardless of orientation.',
-            'Superior colour discrimination compared to other Aboriginal language speakers.',
-            'The ability to learn spatial terms in English significantly faster than other groups.',
+            'They always described time using the words for past and future.',
+            'They arranged time east to west despite turning around.',
+            'They performed every navigation task more accurately than English speakers.',
+            'They changed from absolute to body-centred directions when tested in English.',
           ],
           answer: 1,
         },
         {
           type: 'mcq', id: 'r3-q30', part: 7,
-          text: 'What does the research on grammatical gender described in the passage show?',
+          text: 'Why does the passage discuss research on grammatical gender?',
           options: [
-            'That German and Spanish speakers describe all objects identically regardless of grammatical gender.',
-            'That grammatical gender influences the adjectives speakers use to describe things.',
-            'That grammatical gender effects disappear when instructions are given in a different language.',
-            'That French speakers show stronger grammatical gender effects than Spanish or German speakers.',
+            'To prove that grammatical gender never affects cognition.',
+            'To show why an influential result requires successful independent replication.',
+            'To demonstrate that English nouns also have grammatical gender.',
+            'To establish that small studies are more accurate than preregistered studies.',
           ],
           answer: 1,
         },
         {
           type: 'formgroup', id: 'r3-ynng', part: 7, qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: The Pirahã language has a very large number of specific colour terms.\n32. {{32}}: The left hemisphere of the brain is typically where language is processed.\n33. {{33}}: The navigational ability of Kuuk Thaayorre speakers is definitively caused by their language.\n34. {{34}}: The grammatical gender effects reported in research are consistent across multiple studies.\n35. {{35}}: Publication bias means negative findings are less likely to be published than positive ones.\n36. {{36}}: The writer suggests that awareness of linguistic relativity can improve cross-cultural communication.`,
+          template: `31. {{31}}: The strong version of linguistic relativity says grammar determines what a person can think.\n32. {{32}}: Verbal interference reduced the Russian light–dark blue category effect.\n33. {{33}}: The Kuuk Thaayorre study definitively isolated language as the cause of the result.\n34. {{34}}: A preregistered grammatical-gender study reproduced the famous cross-language effect.\n35. {{35}}: Publication bias can make positive findings more visible than null results.\n36. {{36}}: The writer recommends asking about another speaker's categories rather than stereotyping a whole language.`,
           blanks: [
-            { num: 31, answers: ['NO'] }, { num: 32, answers: ['YES'] }, { num: 33, answers: ['NOT GIVEN'] },
-            { num: 34, answers: ['YES'] }, { num: 35, answers: ['YES'] }, { num: 36, answers: ['YES'] },
+            { num: 31, answers: ['YES'] }, { num: 32, answers: ['YES'] }, { num: 33, answers: ['NO'] },
+            { num: 34, answers: ['NO'] }, { num: 35, answers: ['YES'] }, { num: 36, answers: ['YES'] },
           ],
         },
         {
           type: 'formgroup', id: 'r3-sent', part: 7, qRange: [37, 40],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `37. The hypothesis that language influences thought is sometimes called the {{37}} hypothesis.\n38. Russian distinguishes between light blue (goluboy) and dark blue with a different {{38}}.\n39. The 2012 meta-analysis found effect sizes were generally modest but above {{39}}.\n40. In second-language education, understanding linguistic relativity can inform {{40}} strategies.`,
+          template: `37. Linguistic relativity is also conveniently labelled the {{37}} hypothesis.\n38. Russian uses a separate common {{38}} for lighter and darker blue.\n39. The registered grammatical-gender study failed to {{39}} the central effect.\n40. Declaring a study plan in advance is known as {{40}}.`,
           blanks: [
-            { num: 37, answers: ['Sapir-Whorf'] }, { num: 38, answers: ['lexical'] },
-            { num: 39, answers: ['chance'] }, { num: 40, answers: ['pedagogical'] },
+            { num: 37, answers: ['Sapir-Whorf'] }, { num: 38, answers: ['term'] },
+            { num: 39, answers: ['replicate'] }, { num: 40, answers: ['preregistration'] },
           ],
         },
       ],
@@ -573,8 +645,8 @@ The practical implications of linguistic relativity are modestly significant. In
       questions: [{
         type: 'write', id: 'w1', part: 8, taskNumber: 1,
         imageUrl: '/assets/ielts/charts/set7-task1.svg',
-        imageAlt: 'Two pie charts comparing energy sources in Germany and France in 2022',
-        stimulus: 'The pie charts below show the percentage share of electricity generation by energy source in Germany and France in 2022.',
+        imageAlt: 'Two stacked horizontal bars comparing food, paper and card, plastic, glass and other household waste in Alderwick and Brenton in 2025',
+        stimulus: 'The stacked bar charts below show the percentage composition, by collected weight, of household waste in the towns of Alderwick and Brenton in 2025.',
         text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
         minWords: 150,
       }],
@@ -584,8 +656,8 @@ The practical implications of linguistic relativity are modestly significant. In
       instructions: 'You should spend about 40 minutes on this task. Write at least 250 words.',
       questions: [{
         type: 'write', id: 'w2', part: 9, taskNumber: 2,
-        stimulus: 'Some people believe that learning a foreign language should be compulsory for all school children. Others argue that it is more important for children to focus on other subjects.',
-        text: 'To what extent do you agree or disagree? Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
+        stimulus: 'Some universities require every student to complete at least one course taught in a language other than the main language of instruction. To what extent do you agree or disagree with this requirement?',
+        text: 'Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
         minWords: 250,
       }],
     },
@@ -601,12 +673,16 @@ The practical implications of linguistic relativity are modestly significant. In
             'Do you think you are a natural language learner?',
             'What methods have you found most helpful when learning a new language?',
             'Are there any languages you would like to learn in the future? Why?',
+            'When do you feel most confident speaking another language?',
+            'Do you prefer learning from a teacher or studying independently?',
+            'Is pronunciation important to you when you learn a language?',
+            'Have online tools changed the way you practise languages?',
           ],
         },
         {
           type: 'speak', id: 'sp2', part: 10, partNumber: 2,
-          text: 'Part 2 — Individual long turn',
-          cueCard: `Describe an experience you have had communicating with someone who speaks a different language from you.\n\nYou should say:\n• who the person was and where you met\n• what language(s) you used to communicate\n• what challenges or misunderstandings arose\n• and explain what you learned from the experience`,
+          text: 'Part 2 — Individual long turn (3–4 minutes). Prepare for 1 minute, then speak for 1–2 minutes.',
+          cueCard: `Describe an experience you have had communicating with someone who speaks a different language from you.\n\nYou should say:\n• who the person was and where you met\n• what language or other methods you used\n• what challenge or misunderstanding arose\n• how you resolved or managed it\n\nand explain what you learned from the experience.`,
         },
         {
           type: 'speak', id: 'sp3', part: 10, partNumber: 3,
@@ -616,6 +692,8 @@ The practical implications of linguistic relativity are modestly significant. In
             'What are the consequences of having a world lingua franca for speakers of minority languages?',
             'Should governments invest more in foreign language education? Why or why not?',
             'How does losing a language affect a culture?',
+            'When is translation technology helpful, and when can it create problems?',
+            'Should universities teach academic subjects through a second language?',
           ],
         },
       ],
