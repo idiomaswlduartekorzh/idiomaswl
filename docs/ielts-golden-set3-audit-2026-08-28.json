@@ -5,7 +5,13 @@
   "status": "content-golden-audio-deferred",
   "metrics": {
     "listeningResponses": 40,
-    "listeningWords": 2204,
+    "listeningWords": 2897,
+    "listeningPartWords": [
+      723,
+      758,
+      708,
+      708
+    ],
     "readingResponses": 40,
     "readingWords": 2167,
     "writingTasks": 2,
@@ -46,7 +52,11 @@
     "reading: numbering covers 1–40 exactly.",
     "reading: no duplicate response numbers.",
     "Listening has 4 parts and 40 responses.",
-    "Listening has 2204 transcript words.",
+    "Listening has 2897 words and passes the pre-synthesis timing proxy.",
+    "Listening Part 1 has 723 words within 680–760.",
+    "Listening Part 2 has 758 words within 680–760.",
+    "Listening Part 3 has 708 words within 680–760.",
+    "Listening Part 4 has 708 words within 680–760.",
     "Reading has 3 passages and 40 responses.",
     "Reading has 2167 words within 2,150–2,750.",
     "l1-form Q1 has an accepted key.",

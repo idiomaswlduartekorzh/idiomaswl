@@ -45,11 +45,11 @@
   "invoice": {
     "priceUsdPer1000Characters": 0.05,
     "creditsPerCharacter": 0.5,
-    "sourceCharacters": 291475,
-    "sourceEstimatedUsdBeforeTax": 14.5738,
-    "projectedMinimumCharactersAfterEditorialGate": 340845,
-    "projectedMinimumCreditsAfterEditorialGate": 170423,
-    "projectedMinimumUsdBeforeTax": 17.0423,
+    "sourceCharacters": 306373,
+    "sourceEstimatedUsdBeforeTax": 15.3186,
+    "projectedMinimumCharactersAfterEditorialGate": 343741,
+    "projectedMinimumCreditsAfterEditorialGate": 171871,
+    "projectedMinimumUsdBeforeTax": 17.187,
     "retryContingencyNotIncluded": true
   },
   "rows": [
@@ -59,15 +59,15 @@
       "plannedUrl": "/audio/ielts/ielts-listening-set-1.mp3",
       "sourceRef": "src/data/mocks/ielts-set-1.ts",
       "accentTarget": "north-american",
-      "transcriptWords": 2383,
+      "transcriptWords": 2918,
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "minimumTimingTranscriptWords": 2800,
-      "timingAdditionalWordsRequired": 417,
-      "sourceCharacters": 14710,
-      "projectedCharactersAtGate": 17285,
-      "transcriptSha256": "b9737467bd77865896b932459fca5e9f33ce58feda02da467da49dbcf4ecdf1c",
-      "requestSegments": 96,
+      "timingAdditionalWordsRequired": 0,
+      "sourceCharacters": 18097,
+      "projectedCharactersAtGate": 18097,
+      "transcriptSha256": "cd88d2c076fa4c0f727e87267fc49156df48db7fdb453705e5b21ea8ae7fe147",
+      "requestSegments": 109,
       "profiles": [
         "announcer:british",
         "guide:north-american",
@@ -172,6 +172,24 @@
         {
           "kind": "content",
           "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 300,
+          "words": 50,
+          "textSha256": "b0bdae0f4fce3939c9396f9d35ab971e160d1ac55f06acaf527121a8b8b871a8",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-woman:north-american",
+          "characters": 213,
+          "words": 34,
+          "textSha256": "d89f75d9648d1fafa0df1c0d5af0a60a006874bac64f49aae021441e956a1530",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
           "profile": "participant-woman:north-american",
           "characters": 113,
           "words": 21,
@@ -233,6 +251,15 @@
           "pauseAfterSeconds": 0.35
         },
         {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 39,
+          "words": 6,
+          "textSha256": "d6c8afaae8809d121b53a1c7b9156f43b836c1c5f8855cc00de89ed90b2aeaff",
+          "pauseAfterSeconds": 0.35
+        },
+        {
           "kind": "announcer",
           "part": 1,
           "profile": "announcer:british",
@@ -244,10 +271,19 @@
         {
           "kind": "content",
           "part": 1,
+          "profile": "participant-woman:north-american",
+          "characters": 235,
+          "words": 36,
+          "textSha256": "c66265a816564fdec491c483ac6b6e38d5ad915d7f9e6cb8c72412430bc2d6a4",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
           "profile": "service-staff:north-american",
-          "characters": 39,
-          "words": 6,
-          "textSha256": "d6c8afaae8809d121b53a1c7b9156f43b836c1c5f8855cc00de89ed90b2aeaff",
+          "characters": 167,
+          "words": 28,
+          "textSha256": "acaeb4e233f79f998c45a44a681e16fab16778874323548d1c432ef48c96fb3d",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -320,6 +356,24 @@
           "characters": 242,
           "words": 41,
           "textSha256": "0977ebd284d4d8c86904d88dfb34b3b77fe65f81cd8651980cff48152381cd32",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:north-american",
+          "characters": 250,
+          "words": 42,
+          "textSha256": "d7b0ded2457b3cac92ce650df314b193109603139ee41653a020bd8ffea84f48",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-woman:north-american",
+          "characters": 159,
+          "words": 23,
+          "textSha256": "bec512abb99bd11934446a4534637071ecadc22b3db7917abd5efe6ca9dc628d",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -434,6 +488,15 @@
           "kind": "content",
           "part": 2,
           "profile": "guide:north-american",
+          "characters": 443,
+          "words": 65,
+          "textSha256": "49cacf8f40bab4a082c295b9987040fe18382771280cb0cb89ea0114265dd144",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:north-american",
           "characters": 396,
           "words": 67,
           "textSha256": "3c7447f987c66f01dd93566aac5b121ca17ddbf38a7a59152840f47e0c5471ef",
@@ -461,6 +524,15 @@
           "kind": "content",
           "part": 2,
           "profile": "guide:north-american",
+          "characters": 432,
+          "words": 66,
+          "textSha256": "0d21d33fa262acb27590f5c312193eaaae1df3835d35622204b11cf06944e6fa",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:north-american",
           "characters": 337,
           "words": 54,
           "textSha256": "0b4d78977bd1944f43ff79c59199c93e3cddd9c74f8747bee0d3dd1e711f5943",
@@ -473,6 +545,15 @@
           "characters": 371,
           "words": 64,
           "textSha256": "5741f3b31d9a31142c097049c43edf44274e765e1cbbbd78b6f413b6d71f5099",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:north-american",
+          "characters": 419,
+          "words": 64,
+          "textSha256": "6fec736cba3c8b3f532e6d94fddfceba479380f4883a29c2d76b90af268b1404",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -613,6 +694,24 @@
         {
           "kind": "content",
           "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 262,
+          "words": 44,
+          "textSha256": "b4c2a6b8b214ade357b87452f7d999e67e7b5443eaf32304bc60db0542eda1ef",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-woman:north-american",
+          "characters": 162,
+          "words": 24,
+          "textSha256": "ff672737a6e7fc49e9a1792634fd5768331f1fa521dd42e30d0b18f24641434e",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
           "profile": "speaker:north-american",
           "characters": 81,
           "words": 14,
@@ -707,6 +806,24 @@
           "characters": 145,
           "words": 25,
           "textSha256": "1d72bc405846d2f3d1a8199d2588b96939d55b0827c48a51df92f980d37743ce",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-woman:north-american",
+          "characters": 281,
+          "words": 41,
+          "textSha256": "437c4986484431324f09f2ffcb41971c25e0446c82d24b0bda4d0b3b81c595a5",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:north-american",
+          "characters": 64,
+          "words": 8,
+          "textSha256": "7576369decdb6e46ee79c13b7188fe087e31c70a37cd100287d45c93dead0047",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -954,15 +1071,15 @@
       "plannedUrl": "/audio/ielts/ielts-listening-set-2.mp3",
       "sourceRef": "src/data/mocks/ielts-set-2.ts",
       "accentTarget": "australian",
-      "transcriptWords": 2454,
+      "transcriptWords": 2937,
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "minimumTimingTranscriptWords": 2800,
-      "timingAdditionalWordsRequired": 346,
-      "sourceCharacters": 15257,
-      "projectedCharactersAtGate": 17409,
-      "transcriptSha256": "22648b81089ba9660fe591f7055b70e1d5faa77ae5cec9c331438fccff202ed0",
-      "requestSegments": 95,
+      "timingAdditionalWordsRequired": 0,
+      "sourceCharacters": 18323,
+      "projectedCharactersAtGate": 18323,
+      "transcriptSha256": "d8c474715ffb50fdf94c06977c49aa79f2959c760b232781f998543aea31b008",
+      "requestSegments": 106,
       "profiles": [
         "announcer:british",
         "guide:australian",
@@ -1065,6 +1182,24 @@
         {
           "kind": "content",
           "part": 1,
+          "profile": "speaker:australian",
+          "characters": 292,
+          "words": 46,
+          "textSha256": "ba50c2b2add1e1a64ce7121c9865182cb90b44729e0c57c5603a015c9ebbbd26",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-man:australian",
+          "characters": 221,
+          "words": 37,
+          "textSha256": "4bb285ecde40c6a725356a6759322ccc397e11d861cbb4552e3845f69c41b490",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
           "profile": "participant-man:australian",
           "characters": 89,
           "words": 17,
@@ -1135,6 +1270,15 @@
           "pauseAfterSeconds": 0.35
         },
         {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-man:australian",
+          "characters": 258,
+          "words": 38,
+          "textSha256": "7824cc247c784d474bd4ada37d6a0270e3da1b6c5e0e56e74f555e457f7542cc",
+          "pauseAfterSeconds": 0.35
+        },
+        {
           "kind": "announcer",
           "part": 1,
           "profile": "announcer:british",
@@ -1142,6 +1286,15 @@
           "words": 10,
           "textSha256": "245e9cbed281e1a14da39a90722b464cecc40c1c42183840990d7eeee10b8693",
           "pauseAfterSeconds": 30
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "speaker:australian",
+          "characters": 159,
+          "words": 26,
+          "textSha256": "eb2c33152125f3927493a5fd37436252038a5a5e88ca581411662d85e043e975",
+          "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
@@ -1213,6 +1366,24 @@
           "characters": 94,
           "words": 14,
           "textSha256": "e34a4f3719df0390fbd78ba32e5db3b834994cacdc4179bd31502a8504932deb",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "speaker:australian",
+          "characters": 252,
+          "words": 41,
+          "textSha256": "6f9b32922a5bd0acc059bfb53f9c57cbefcf9f4c8781356386ce69fd7b9317da",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-man:australian",
+          "characters": 162,
+          "words": 26,
+          "textSha256": "f5eefc5a8f2c4fa88e9315a136515fe84171cb8c2e57e0a98f0e8bd8d1702c57",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1345,6 +1516,15 @@
           "kind": "content",
           "part": 2,
           "profile": "guide:australian",
+          "characters": 426,
+          "words": 64,
+          "textSha256": "441b6639f4db385f0ce6ec7d036404d7897609fad1168c50beaebfdd094585bc",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:australian",
           "characters": 503,
           "words": 81,
           "textSha256": "2406c1c7e2f95ba48b8e366ce1d1cbd12c1b6e9ab28d967298c70d0152b04943",
@@ -1375,6 +1555,15 @@
           "characters": 399,
           "words": 68,
           "textSha256": "585ab6a9359849b4e82cc0b9eb91f773802fd73c4b6d0ebcf3e13b49b9b01ca2",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:australian",
+          "characters": 412,
+          "words": 64,
+          "textSha256": "7d6e973ccd6599ab7a07e28e11865aa5e09d9c93be6cbae790a70852510c8250",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1549,6 +1738,15 @@
           "pauseAfterSeconds": 0.35
         },
         {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:australian",
+          "characters": 44,
+          "words": 6,
+          "textSha256": "192519ddb299fbf5a63ad057057164a455881f114a676cfafd0932b5f4e43643",
+          "pauseAfterSeconds": 0.35
+        },
+        {
           "kind": "announcer",
           "part": 3,
           "profile": "announcer:british",
@@ -1560,10 +1758,19 @@
         {
           "kind": "content",
           "part": 3,
+          "profile": "speaker:australian",
+          "characters": 256,
+          "words": 43,
+          "textSha256": "c070942f2ec534adcf9f1c719f48874f4738f12c23b577ec9388d5b00b60f19e",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
           "profile": "student-man:australian",
-          "characters": 44,
-          "words": 6,
-          "textSha256": "192519ddb299fbf5a63ad057057164a455881f114a676cfafd0932b5f4e43643",
+          "characters": 164,
+          "words": 25,
+          "textSha256": "d5b6973561df73acd2a4bd4c4e2740002742305eff5ed0a3c3c49912e05159f4",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -1777,6 +1984,15 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:australian",
+          "characters": 464,
+          "words": 65,
+          "textSha256": "edfb600c3962c184ec816b2ecb855f46e08e8e51066d9b0aef84e3cd26342c5e",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 4,
+          "profile": "lecturer:australian",
           "characters": 424,
           "words": 64,
           "textSha256": "4bda4832c307ebe6a72b4f81973e0729774508e898be7c289aa93dab6cb54aac",
@@ -1838,15 +2054,15 @@
       "plannedUrl": "/audio/ielts/ielts-listening-set-3.mp3",
       "sourceRef": "src/data/mocks/ielts-set-3.ts",
       "accentTarget": "new-zealand",
-      "transcriptWords": 2204,
+      "transcriptWords": 2897,
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "minimumTimingTranscriptWords": 2800,
-      "timingAdditionalWordsRequired": 596,
-      "sourceCharacters": 14057,
-      "projectedCharactersAtGate": 17859,
-      "transcriptSha256": "2d2e8decf57b68a5a197589c31fc79946c7927eaa076384ca0e62b9e36285684",
-      "requestSegments": 85,
+      "timingAdditionalWordsRequired": 0,
+      "sourceCharacters": 18581,
+      "projectedCharactersAtGate": 18581,
+      "transcriptSha256": "640198b7e693cffca439cf100fc48281b6980c8e85e3a3ed6242ac410bdc2eb7",
+      "requestSegments": 102,
       "profiles": [
         "announcer:british",
         "guide:new-zealand",
@@ -1949,6 +2165,24 @@
           "kind": "content",
           "part": 1,
           "profile": "speaker:new-zealand",
+          "characters": 292,
+          "words": 45,
+          "textSha256": "bb1f1d23157440970ab782b2269d9918e497717cd466cdf089c09981e0f09fac",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "speaker:new-zealand",
+          "characters": 219,
+          "words": 36,
+          "textSha256": "36480f2d4823c7629e25d9b008ec8025f360b657971b7c8f227beabcb8f3e657",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "speaker:new-zealand",
           "characters": 78,
           "words": 15,
           "textSha256": "434ca8f09948959e5a6fd6f050a0c8feb2db55b15446293a97fbb1e0ec08b4cb",
@@ -2018,6 +2252,15 @@
           "pauseAfterSeconds": 0.35
         },
         {
+          "kind": "content",
+          "part": 1,
+          "profile": "speaker:new-zealand",
+          "characters": 34,
+          "words": 7,
+          "textSha256": "2af67005e6fb9a054c594d60f8efc45da44a6a2906c998d718d634f788a4a870",
+          "pauseAfterSeconds": 0.35
+        },
+        {
           "kind": "announcer",
           "part": 1,
           "profile": "announcer:british",
@@ -2030,9 +2273,18 @@
           "kind": "content",
           "part": 1,
           "profile": "speaker:new-zealand",
-          "characters": 34,
-          "words": 7,
-          "textSha256": "2af67005e6fb9a054c594d60f8efc45da44a6a2906c998d718d634f788a4a870",
+          "characters": 237,
+          "words": 36,
+          "textSha256": "13e6a7eec49ffe85cda6e4c3431dbcb1c86a26dd103b125caab75f2ad1ba1993",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "speaker:new-zealand",
+          "characters": 167,
+          "words": 25,
+          "textSha256": "340fab711cd2ebfc622115a3540378c3d66c603cce97d19bcf18d233182981b6",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2105,6 +2357,24 @@
           "characters": 102,
           "words": 16,
           "textSha256": "9a38e8339c78a29862088f4723593bbbc49b98eea0035244bd72c2e75fe812b0",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "speaker:new-zealand",
+          "characters": 266,
+          "words": 43,
+          "textSha256": "b2c5a254a513eb5caa703fd1aae96603da62cdeec6779e81d7257987e13719a2",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "speaker:new-zealand",
+          "characters": 163,
+          "words": 25,
+          "textSha256": "f636f3d8bc729568d0e32fe5e55b3f76246343ec6b72a8423f771e7a0042f6b8",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2237,6 +2507,15 @@
           "kind": "content",
           "part": 2,
           "profile": "guide:new-zealand",
+          "characters": 436,
+          "words": 60,
+          "textSha256": "fcafc213d7c8b25a7f814257896ec2d25a3857602eb31891a302c299597d6f4c",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:new-zealand",
           "characters": 409,
           "words": 65,
           "textSha256": "f238202579d6dd62bd122fea64394ea60f4a6fb1f76e782985118204acd9a0ce",
@@ -2276,6 +2555,15 @@
           "characters": 384,
           "words": 60,
           "textSha256": "5fbf9175308a96691db7e99c463f68465ea1cd075855e22592a823124ac9f637",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:new-zealand",
+          "characters": 430,
+          "words": 66,
+          "textSha256": "54a88a32f06f427780086b16833c4e827ee8182483e80e4e5e6a8cd7b03e5b08",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2371,6 +2659,24 @@
         {
           "kind": "content",
           "part": 3,
+          "profile": "tutor:new-zealand",
+          "characters": 253,
+          "words": 43,
+          "textSha256": "c0193870afc4dd1fe777c4eff05a2a392baa8256cab56723340682ba91d0ef87",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:new-zealand",
+          "characters": 148,
+          "words": 22,
+          "textSha256": "4a038975cfdb65e03dd95e13a6aaa6fa570fa4f34cbeda3fa4ddf69efdbbd0ec",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
           "profile": "speaker:new-zealand",
           "characters": 249,
           "words": 35,
@@ -2414,6 +2720,15 @@
           "pauseAfterSeconds": 0.35
         },
         {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:new-zealand",
+          "characters": 272,
+          "words": 40,
+          "textSha256": "c11af6d7add667716a18cd0b6010b921e87a459a4d8cb7107b26e0a01821ede6",
+          "pauseAfterSeconds": 0.35
+        },
+        {
           "kind": "announcer",
           "part": 3,
           "profile": "announcer:british",
@@ -2421,6 +2736,15 @@
           "words": 10,
           "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
           "pauseAfterSeconds": 30
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:new-zealand",
+          "characters": 70,
+          "words": 11,
+          "textSha256": "7ee0dda0907438d900781607e436b23983d4c9a4e1283fe730326f3938ffc5eb",
+          "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
@@ -2465,6 +2789,24 @@
           "characters": 183,
           "words": 32,
           "textSha256": "bf53cd2923ae7a5cd3a0d818d20e0e09ff0faa620d806b9737415c846a54d9b7",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "tutor:new-zealand",
+          "characters": 229,
+          "words": 37,
+          "textSha256": "646bd9e14d32a49d555bcc31ba5f220df98f78573f6eadbe1591e6ed6d78e89c",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:new-zealand",
+          "characters": 149,
+          "words": 23,
+          "textSha256": "0affdff9826aea9d4a8afe033feded03a9d8d7a3119e4a9eab9a087063b9d729",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2552,6 +2894,15 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:new-zealand",
+          "characters": 440,
+          "words": 62,
+          "textSha256": "840492795287e1325e823f6c81dd62ba047b5099b7271c08cc595818e507a9f4",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 4,
+          "profile": "lecturer:new-zealand",
           "characters": 197,
           "words": 29,
           "textSha256": "29e2b65439eaf3f73fb6e7d7947d0bd00dbc50c526fa1826c4f74e6efaeaa7bf",
@@ -2579,6 +2930,15 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:new-zealand",
+          "characters": 387,
+          "words": 52,
+          "textSha256": "62e8474b040bbbf1ed935bfea6471124a9cd739c9afb37a0c60ba4a954a65abc",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 4,
+          "profile": "lecturer:new-zealand",
           "characters": 613,
           "words": 86,
           "textSha256": "c8ebee6483d7a283d87ead21d652b3b58361f19089317cfc92c1a496b9f614d9",
@@ -2591,6 +2951,15 @@
           "characters": 406,
           "words": 66,
           "textSha256": "228c0e14fd62529b08d2432bf372e05b184a815e7c57fd3aa8b32e3633463a46",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 4,
+          "profile": "lecturer:new-zealand",
+          "characters": 366,
+          "words": 55,
+          "textSha256": "620791c1cdaeaf2b5a4d6b81d8942a74735d49283318db9d4fc6b5e1d7c3ffb9",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2631,15 +3000,15 @@
       "plannedUrl": "/audio/ielts/ielts-listening-set-4.mp3",
       "sourceRef": "src/data/mocks/ielts-set-4.ts",
       "accentTarget": "british",
-      "transcriptWords": 2255,
+      "transcriptWords": 2866,
       "minimumTranscriptWords": 2200,
       "minimumAdditionalWords": 0,
       "minimumTimingTranscriptWords": 2800,
-      "timingAdditionalWordsRequired": 545,
-      "sourceCharacters": 14369,
-      "projectedCharactersAtGate": 17842,
-      "transcriptSha256": "be132230f4c6698cf5f41b06acef86489c8a8a5b553800b0ccc98ff0cbb4ffe8",
-      "requestSegments": 83,
+      "timingAdditionalWordsRequired": 0,
+      "sourceCharacters": 18290,
+      "projectedCharactersAtGate": 18290,
+      "transcriptSha256": "8c07f685346010b5ae782a64cee0cd39a33b60e833c3ba609578c376db0d3765",
+      "requestSegments": 98,
       "profiles": [
         "announcer:british",
         "guide:british",
@@ -2699,15 +3068,6 @@
           "kind": "content",
           "part": 1,
           "profile": "service-staff:british",
-          "characters": 52,
-          "words": 10,
-          "textSha256": "39effa38926fe3b0b5c15554c638953cb51a4a8b4fbd7dc7bde7cba5915e4d89",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "service-staff:british",
           "characters": 285,
           "words": 46,
           "textSha256": "6715fa6c472916e14a462663208faa9aa6f6639ebff2eb17cd2ce765462b6771",
@@ -2720,6 +3080,15 @@
           "characters": 215,
           "words": 35,
           "textSha256": "d3be9ad2dbf7d85b54809f350ef4bfe590b3c5d0905b4d60d88b69e3408b51fd",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:british",
+          "characters": 52,
+          "words": 10,
+          "textSha256": "39effa38926fe3b0b5c15554c638953cb51a4a8b4fbd7dc7bde7cba5915e4d89",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2738,6 +3107,24 @@
           "characters": 62,
           "words": 13,
           "textSha256": "a2abc86bcd38daf5d818a7a7d303431f4835eeb31ca4815a7e771d6af235e152",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-man:british",
+          "characters": 242,
+          "words": 37,
+          "textSha256": "74d3d21944f7a6b11cc2a909bf20fd89624e294a4e58c0ab576de11d1f2ebbc0",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:british",
+          "characters": 164,
+          "words": 26,
+          "textSha256": "14939e33a85f807fba003c504a7180cdb713759d709dfdd5bddf07d9ed0eb735",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2770,10 +3157,10 @@
         {
           "kind": "content",
           "part": 1,
-          "profile": "participant-man:british",
-          "characters": 242,
-          "words": 37,
-          "textSha256": "74d3d21944f7a6b11cc2a909bf20fd89624e294a4e58c0ab576de11d1f2ebbc0",
+          "profile": "service-staff:british",
+          "characters": 248,
+          "words": 40,
+          "textSha256": "6ddc37fe1478ddd711a5b19fd8a43e3eb0802deb8928a59f51f6429ed610462f",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2788,10 +3175,10 @@
         {
           "kind": "content",
           "part": 1,
-          "profile": "service-staff:british",
-          "characters": 164,
+          "profile": "participant-man:british",
+          "characters": 159,
           "words": 26,
-          "textSha256": "14939e33a85f807fba003c504a7180cdb713759d709dfdd5bddf07d9ed0eb735",
+          "textSha256": "2c11f129333f2677be0aa4d654f120a2fa6d389a44cf3021362ef3f9a41aaa9b",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2824,6 +3211,24 @@
         {
           "kind": "content",
           "part": 1,
+          "profile": "service-staff:british",
+          "characters": 303,
+          "words": 46,
+          "textSha256": "9474fe87b93b5cd4491f5ee0ce6dac3a677f97e4522eed3ff9289f02610df959",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-man:british",
+          "characters": 109,
+          "words": 17,
+          "textSha256": "029106158b4e2478edaf2c026f340446d78de2359d832c7d70fc05ecd5f87f08",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
           "profile": "participant-man:british",
           "characters": 70,
           "words": 14,
@@ -2842,28 +3247,28 @@
         {
           "kind": "content",
           "part": 1,
-          "profile": "service-staff:british",
-          "characters": 248,
-          "words": 40,
-          "textSha256": "6ddc37fe1478ddd711a5b19fd8a43e3eb0802deb8928a59f51f6429ed610462f",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
-          "profile": "participant-man:british",
-          "characters": 159,
-          "words": 26,
-          "textSha256": "2c11f129333f2677be0aa4d654f120a2fa6d389a44cf3021362ef3f9a41aaa9b",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 1,
           "profile": "participant-man:british",
           "characters": 46,
           "words": 11,
           "textSha256": "e3837dfe868719d1b3784fd24ac731ec7337822a2f98551f80bdc02ffcac8ca7",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "participant-man:british",
+          "characters": 175,
+          "words": 31,
+          "textSha256": "e95dd7ea8c9cf7485bf629ed9a9d20510e7e86ce073c6fb73dfdf95058d9ad47",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 1,
+          "profile": "service-staff:british",
+          "characters": 228,
+          "words": 37,
+          "textSha256": "08a788e0428cdf1183b5756b10e5d589999d01176e15d7b837c705b041b4078c",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -2966,6 +3371,15 @@
           "pauseAfterSeconds": 0.35
         },
         {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:british",
+          "characters": 417,
+          "words": 64,
+          "textSha256": "b96cd103f93b527eae144ab254d132f5f1e8cc36a5b593a8a91f481133d1765d",
+          "pauseAfterSeconds": 0.35
+        },
+        {
           "kind": "announcer",
           "part": 2,
           "profile": "announcer:british",
@@ -2987,9 +3401,9 @@
           "kind": "content",
           "part": 2,
           "profile": "guide:british",
-          "characters": 417,
-          "words": 64,
-          "textSha256": "b96cd103f93b527eae144ab254d132f5f1e8cc36a5b593a8a91f481133d1765d",
+          "characters": 314,
+          "words": 57,
+          "textSha256": "4fa0bf070c05d02053fa114a332f75a630e854d0c6d28f25fcad2614590a304d",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3005,9 +3419,9 @@
           "kind": "content",
           "part": 2,
           "profile": "guide:british",
-          "characters": 314,
-          "words": 57,
-          "textSha256": "4fa0bf070c05d02053fa114a332f75a630e854d0c6d28f25fcad2614590a304d",
+          "characters": 338,
+          "words": 50,
+          "textSha256": "cc769723a092c20078e59b223b6c68ccb6db1a6f4d07b2c4fbe5e9499051e59f",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3017,6 +3431,15 @@
           "characters": 204,
           "words": 32,
           "textSha256": "95e686bef27c271ab50330eaa4522af79d3790fd8dba276bcc8e79823024a868",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 2,
+          "profile": "guide:british",
+          "characters": 525,
+          "words": 82,
+          "textSha256": "bbbe14cb9592c72176e0b7528004726fb295f658303b9fa6edccf200bc28dd2d",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3067,24 +3490,6 @@
         {
           "kind": "content",
           "part": 3,
-          "profile": "student-man:british",
-          "characters": 215,
-          "words": 35,
-          "textSha256": "20c2ee33297329c7647cc991f9968a05ff2c53523eccff97897084ec409559da",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "speaker:british",
-          "characters": 175,
-          "words": 27,
-          "textSha256": "988c58794b79d712c2eacba334f6d6b44c233e329a5eaf669972fd81a08beeca",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
           "profile": "speaker:british",
           "characters": 261,
           "words": 44,
@@ -3104,46 +3509,19 @@
           "kind": "content",
           "part": 3,
           "profile": "student-man:british",
-          "characters": 148,
-          "words": 22,
-          "textSha256": "ddb63c6a0eba9a2564567656135bc2f79dabfb506ad7f1261217e553e02c7405",
+          "characters": 215,
+          "words": 35,
+          "textSha256": "20c2ee33297329c7647cc991f9968a05ff2c53523eccff97897084ec409559da",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "speaker:british",
-          "characters": 158,
-          "words": 23,
-          "textSha256": "92e6a53f27972d0b427fc469ad569f74c43322c3ad56fb3866f0ca7089cd5967",
+          "characters": 175,
+          "words": 27,
+          "textSha256": "988c58794b79d712c2eacba334f6d6b44c233e329a5eaf669972fd81a08beeca",
           "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "student-man:british",
-          "characters": 170,
-          "words": 25,
-          "textSha256": "fe262901890e6382534cffb12260b2dbd645d1b404d027db9360abc569c55606",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "speaker:british",
-          "characters": 55,
-          "words": 9,
-          "textSha256": "813cfbfcb16a29a4b9e209ce2f8ccfcda54fddae1f48012083667dc1df8b782e",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "announcer",
-          "part": 3,
-          "profile": "announcer:british",
-          "characters": 61,
-          "words": 10,
-          "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
-          "pauseAfterSeconds": 30
         },
         {
           "kind": "content",
@@ -3167,36 +3545,18 @@
           "kind": "content",
           "part": 3,
           "profile": "student-man:british",
-          "characters": 187,
-          "words": 30,
-          "textSha256": "a1a6f8f81ca7f9c2a5a1b658daca002612854211e7d060f8717ee7a7ca8c5251",
+          "characters": 148,
+          "words": 22,
+          "textSha256": "ddb63c6a0eba9a2564567656135bc2f79dabfb506ad7f1261217e553e02c7405",
           "pauseAfterSeconds": 0.35
         },
         {
           "kind": "content",
           "part": 3,
           "profile": "speaker:british",
-          "characters": 51,
-          "words": 8,
-          "textSha256": "003bf7115bf5a220519895d886362d010cee2eba78ce2155be58f86df807d71b",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "student-man:british",
-          "characters": 116,
-          "words": 15,
-          "textSha256": "602d26df8fe3502e6f6be87ad949e6fbca34d9c0d531e68da2c2b3c58968e8fe",
-          "pauseAfterSeconds": 0.35
-        },
-        {
-          "kind": "content",
-          "part": 3,
-          "profile": "speaker:british",
-          "characters": 79,
-          "words": 11,
-          "textSha256": "2d05ae43037590894920c79cd099ff7c0eafd301fbf58ca64545df51cef75a5d",
+          "characters": 158,
+          "words": 23,
+          "textSha256": "92e6a53f27972d0b427fc469ad569f74c43322c3ad56fb3866f0ca7089cd5967",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3222,8 +3582,125 @@
           "part": 3,
           "profile": "student-man:british",
           "characters": 170,
+          "words": 25,
+          "textSha256": "fe262901890e6382534cffb12260b2dbd645d1b404d027db9360abc569c55606",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "announcer",
+          "part": 3,
+          "profile": "announcer:british",
+          "characters": 61,
+          "words": 10,
+          "textSha256": "6d08aad7265cb0c66f1f766fb5f76a79e97c54689e9929c1f0fc66f6fc41e301",
+          "pauseAfterSeconds": 30
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:british",
+          "characters": 55,
+          "words": 9,
+          "textSha256": "813cfbfcb16a29a4b9e209ce2f8ccfcda54fddae1f48012083667dc1df8b782e",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:british",
+          "characters": 187,
+          "words": 30,
+          "textSha256": "a1a6f8f81ca7f9c2a5a1b658daca002612854211e7d060f8717ee7a7ca8c5251",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:british",
+          "characters": 211,
+          "words": 32,
+          "textSha256": "9f580d95e71e47c843cd1ceb32f88786cc15aa061be77ad42e27ff894203ff25",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:british",
+          "characters": 151,
+          "words": 24,
+          "textSha256": "be7ea6d7308fa441d019b0bb401f3ed1864657035b7d4a1b1c1b5c9c5e884022",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:british",
+          "characters": 51,
+          "words": 8,
+          "textSha256": "003bf7115bf5a220519895d886362d010cee2eba78ce2155be58f86df807d71b",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:british",
+          "characters": 116,
+          "words": 15,
+          "textSha256": "602d26df8fe3502e6f6be87ad949e6fbca34d9c0d531e68da2c2b3c58968e8fe",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:british",
+          "characters": 262,
+          "words": 39,
+          "textSha256": "b6c1755a9d3a54f5de72ab7d382cf32532d92caa588eac4e8b83edd0d135ea23",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:british",
+          "characters": 118,
+          "words": 20,
+          "textSha256": "0830849a634675d6146b6cbec5aea81fcae6577e4e4ab96c1bcc57b9400825eb",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:british",
+          "characters": 79,
+          "words": 11,
+          "textSha256": "2d05ae43037590894920c79cd099ff7c0eafd301fbf58ca64545df51cef75a5d",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:british",
+          "characters": 170,
           "words": 27,
           "textSha256": "642bbf16fe20eb73d446605e4b3a6ba41586ba2cff379233ccc6c4a7e8ab0edf",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "student-man:british",
+          "characters": 138,
+          "words": 24,
+          "textSha256": "9d3c87c585db112fd2eb642dc1a87bdcbb114c6801aa2f6d7f627aa8437fe84a",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 3,
+          "profile": "speaker:british",
+          "characters": 183,
+          "words": 29,
+          "textSha256": "5e511721fc765c31da0f011de7f7b88ec04dedcbdc8c5aeec0551ad5abb28ce8",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3284,6 +3761,15 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:british",
+          "characters": 438,
+          "words": 63,
+          "textSha256": "ded79b1509af098d8cd75feafbc65bea3337e43395ec8d7c6566eef5fbbc76fe",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 4,
+          "profile": "lecturer:british",
           "characters": 413,
           "words": 62,
           "textSha256": "5d90981c91af2f456460c7cdf1792706a788919ace83e773b2a624496333d6d7",
@@ -3293,9 +3779,9 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:british",
-          "characters": 438,
-          "words": 63,
-          "textSha256": "ded79b1509af098d8cd75feafbc65bea3337e43395ec8d7c6566eef5fbbc76fe",
+          "characters": 381,
+          "words": 52,
+          "textSha256": "8baeea07dc9b90fa414183e35f1a50c6140d21080d37ba871dd649c33269ec0d",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3320,9 +3806,9 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:british",
-          "characters": 164,
-          "words": 25,
-          "textSha256": "8d722ac2cb0efc989003a4dfcdd3c1161f1654031a4d85a535c079ae21f6651c",
+          "characters": 355,
+          "words": 52,
+          "textSha256": "6b6bab1499da91febd5d2d899a7001110a9bde0bd215e0df867e568414b361a7",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3338,9 +3824,18 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:british",
-          "characters": 381,
+          "characters": 164,
+          "words": 25,
+          "textSha256": "8d722ac2cb0efc989003a4dfcdd3c1161f1654031a4d85a535c079ae21f6651c",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 4,
+          "profile": "lecturer:british",
+          "characters": 365,
           "words": 52,
-          "textSha256": "8baeea07dc9b90fa414183e35f1a50c6140d21080d37ba871dd649c33269ec0d",
+          "textSha256": "c3c8f97dfca21fa094622441033d634953b952924104f7210baced03e563842a",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3365,9 +3860,9 @@
           "kind": "content",
           "part": 4,
           "profile": "lecturer:british",
-          "characters": 355,
-          "words": 52,
-          "textSha256": "6b6bab1499da91febd5d2d899a7001110a9bde0bd215e0df867e568414b361a7",
+          "characters": 451,
+          "words": 64,
+          "textSha256": "7105cf1d7c3ac88fe4ca4ecbb0180ea995dc0f494a2ac03e82cb101ce8d7ae93",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -3377,6 +3872,15 @@
           "characters": 229,
           "words": 34,
           "textSha256": "a1528649f6778a184661c8d7cf65f22180d4fdfe25d059e706a36e97c6cfbabb",
+          "pauseAfterSeconds": 0.35
+        },
+        {
+          "kind": "content",
+          "part": 4,
+          "profile": "lecturer:british",
+          "characters": 364,
+          "words": 54,
+          "textSha256": "aad6878e9b5172f412aac14b9ce6b83a8b83ecbcb4e4633b8af0a5de1e100917",
           "pauseAfterSeconds": 0.35
         },
         {
@@ -16987,5 +17491,5 @@
       "releaseAction": "generate-after-editorial-and-audio-qa"
     }
   ],
-  "manifestSha256": "6047f8835a006a76cc3b23edbfac9ffd8cf16de268e2661d7f40d6d9e782464f"
+  "manifestSha256": "f4ba4f39d8e0e6e8be2cee7e3846cbe4b912a93cdee3e766a14fe7f9c4603155"
 }

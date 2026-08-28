@@ -45,21 +45,17 @@ const resolved = usedProfiles.map(profile => {
 });
 
 const requiredCredits = plan.invoice.projectedMinimumCreditsAfterEditorialGate;
-const pilotCredits = Math.ceil(
-  plan.rows.find(row => row.setId === 'set-4').sourceCharacters * casting.credits_per_character,
-);
+const pilotCredits = Math.ceil(pilot.source_characters * casting.credits_per_character);
 const postPilotCredits = requiredCredits - pilotCredits;
-const preservedSourceCharacters = plan.rows.find(row => row.setId === 'set-4').sourceCharacters
-  + set5Row.sourceCharacters;
+const preservedSourceCharacters = pilot.source_characters + set5Candidate.sourceCharacters;
 const preservedSourceCreditEquivalent = Math.ceil(preservedSourceCharacters * casting.credits_per_character);
-const providerBillableCharactersForPreservedSynthesis = plan.rows.find(row => row.setId === 'set-4').sourceCharacters
+const providerBillableCharactersForPreservedSynthesis = pilot.source_characters
   + set5Candidate.billableCharacters;
 const estimatedProviderCreditsConsumed = Math.ceil(
   providerBillableCharactersForPreservedSynthesis * casting.credits_per_character,
 );
 const remainingGenerationCharacters = plan.invoice.projectedMinimumCharactersAfterEditorialGate
-  - plan.rows.find(row => row.setId === 'set-4').sourceCharacters
-  - set5Row.sourceCharacters;
+  - preservedSourceCharacters;
 const remainingGenerationCredits = requiredCredits - preservedSourceCreditEquivalent;
 const remainingGenerationUsdBeforeTax = Number(
   (remainingGenerationCharacters / 1000 * casting.api_price_usd_per_1000_characters).toFixed(4),
@@ -73,7 +69,7 @@ if (plan.timingFidelityGate?.status !== 'passed') blockers.push(`Listening scrip
 if (pilot.timing_reassessment?.release_ready_under_current_gate === false) blockers.push('Set 4 historical master fails the current timing-fidelity gate');
 if (set5Candidate.timingQa?.status === 'rejected') blockers.push('Set 5 candidate fails the current timing-fidelity gate');
 if (!pilot.audio_sha256 && availableCredits < pilotCredits) blockers.push(`account has ${availableCredits} credits; Set 4 pilot requires ${pilotCredits}`);
-if (resetCreditLimit < remainingGenerationCredits) blockers.push(`post-reset limit is ${resetCreditLimit}; Sets 1-3 and 6-20 require ${remainingGenerationCredits}`);
+if (resetCreditLimit < remainingGenerationCredits) blockers.push(`post-reset limit is ${resetCreditLimit}; remaining current work requires ${remainingGenerationCredits}`);
 
 console.log(JSON.stringify({
   manifestSha256: plan.manifestSha256,

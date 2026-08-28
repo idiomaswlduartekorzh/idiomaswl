@@ -56,11 +56,10 @@ function segmentSourceSha256(row) {
 
 const acceptedPilotRow = plan.rows.find(row => row.setId === `set-${pilotAcceptance.pilot_set}`);
 assert.ok(acceptedPilotRow, 'accepted pilot set is absent from the current plan');
-assert.equal(
-  pilotAcceptance.segment_source_sha256,
-  segmentSourceSha256(acceptedPilotRow),
-  'accepted pilot speech changed; its reusable segments are no longer valid',
-);
+const acceptedPilotMatchesCurrentSource = pilotAcceptance.segment_source_sha256 === segmentSourceSha256(acceptedPilotRow);
+assert.equal(pilotAcceptance.currentPlan?.manifestSha256, manifestHash, 'Set 4 pilot supersession record belongs to a stale plan');
+assert.equal(pilotAcceptance.currentPlan?.sourceCompatible, acceptedPilotMatchesCurrentSource, 'Set 4 pilot compatibility record is inaccurate');
+assert.equal(acceptedPilotMatchesCurrentSource, false, 'historical Set 4 pilot must not be mistaken for the expanded reference script');
 const set5CandidateRow = plan.rows.find(row => row.setId === 'set-5');
 assert.ok(set5CandidateRow, 'Set 5 candidate is absent from the current plan');
 const set5CandidateMatchesCurrentSource = set5Candidate.segmentSourceSha256 === segmentSourceSha256(set5CandidateRow);
@@ -431,7 +430,7 @@ function isReusableSegment(segmentPath) {
 
 function approvedPilotReusePath(row, segment) {
   const sourceDir = value('--reuse-approved-pilot-segments');
-  if (!sourceDir || row.setId === acceptedPilotRow.setId) return null;
+  if (!sourceDir || row.setId === acceptedPilotRow.setId || !acceptedPilotMatchesCurrentSource) return null;
   assert.equal(pilotAcceptance.status, 'accepted_by_owner', 'pilot segments require owner acceptance');
   const textSha256 = sha256(segment.text);
   const sourceIndex = acceptedPilotRow.segments.findIndex(candidate => (

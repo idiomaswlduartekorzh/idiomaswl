@@ -11,6 +11,8 @@ runGoldenContentAudit({
   expectedMediaStatus: 'legacy-audio-under-review',
   successStatus: 'content-golden-audio-timing-replacement-pending',
   successNote: 'content remains Golden; the historically accepted audio now requires timing replacement',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'The line graph below shows the consumption of 4 kinds of meat in a European country from 1979 to 2004',
     'The best way to solve traffic congestion in cities is to provide free public transport',

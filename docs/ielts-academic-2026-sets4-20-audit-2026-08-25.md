@@ -9,6 +9,8 @@
 > Su guion vigente fue ampliado a 2.909 palabras (729/721/737/722 por parte), por lo que
 > el candidato histórico tampoco coincide con el manifiesto actual; sólo se pueden reciclar
 > segmentos cuyo hash siga siendo idéntico.
+> Sets 1–4 también superan ahora el proxy temporal de 2.800 palabras; esta instantánea no
+> contiene esas revisiones y sigue sin ser una fuente válida de release.
 
 Fecha de contraste: 25 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  

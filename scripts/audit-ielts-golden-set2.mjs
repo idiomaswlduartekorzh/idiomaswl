@@ -62,10 +62,12 @@ for (const skill of ['listening', 'reading']) {
 
 const listeningResponses = skills.listening.flatMap((section) => section.questions).reduce((sum, item) => sum + responseCount(item), 0);
 const readingResponses = skills.reading.flatMap((section) => section.questions).reduce((sum, item) => sum + responseCount(item), 0);
-const listeningWords = skills.listening.reduce((sum, section) => sum + words(section.transcript), 0);
+const listeningPartWords = skills.listening.map((section) => words(section.transcript));
+const listeningWords = listeningPartWords.reduce((sum, count) => sum + count, 0);
 const readingWords = skills.reading.reduce((sum, section) => sum + words(section.passage), 0);
 check(skills.listening.length === 4 && listeningResponses === 40, 'Listening has 4 parts and 40 responses.');
-check(listeningWords >= golden.welearnInternalGates.listening.transcriptWordsMinimum, `Listening has ${listeningWords} transcript words.`);
+check(listeningWords >= golden.welearnInternalGates.listening.preSynthesisTimingWordsMinimum, `Listening has ${listeningWords} words and passes the pre-synthesis timing proxy.`);
+listeningPartWords.forEach((count, index) => check(count >= 680 && count <= 760, `Listening Part ${index + 1} has ${count} words within 680–760.`));
 check(skills.reading.length === 3 && readingResponses === 40, 'Reading has 3 passages and 40 responses.');
 check(readingWords >= 2150 && readingWords <= 2750, `Reading has ${readingWords} words within 2,150–2,750.`);
 
@@ -152,7 +154,7 @@ const report = {
   reportAsOf: '2026-08-28',
   set: 2,
   status: failures.length ? 'blocked' : 'content-golden-audio-deferred',
-  metrics: { listeningResponses, listeningWords, readingResponses, readingWords, writingTasks: writing.length, speakingParts: speaking.length, publicKeys },
+  metrics: { listeningResponses, listeningWords, listeningPartWords, readingResponses, readingWords, writingTasks: writing.length, speakingParts: speaking.length, publicKeys },
   provenanceSearch: {
     method: 'Exact searches of three revised Reading openings returned no exact public match. The pollination query returned only generic definitions, not the authored passage. This supports but cannot mathematically prove original authorship.',
     phrasesChecked: [

@@ -65,10 +65,15 @@ export function runGoldenContentAudit(config) {
   const readingResponses = skills.reading.flatMap((section) => section.questions).reduce((sum, item) => sum + responseCount(item), 0);
   const listeningPartWords = skills.listening.map((section) => words(section.transcript));
   const listeningWords = listeningPartWords.reduce((sum, count) => sum + count, 0);
+  const listeningWordsMinimum = config.listeningWordsMinimum ?? golden.welearnInternalGates.listening.transcriptWordsMinimum;
+  const listeningPartWordsRange = config.listeningPartWordsRange ?? [540, 620];
   const readingWords = skills.reading.reduce((sum, section) => sum + words(section.passage), 0);
   check(skills.listening.length === 4 && listeningResponses === 40, 'Listening has 4 parts and 40 responses.');
-  check(listeningWords >= golden.welearnInternalGates.listening.transcriptWordsMinimum, `Listening has ${listeningWords} transcript words.`);
-  listeningPartWords.forEach((count, index) => check(count >= 540 && count <= 620, `Listening Part ${index + 1} has ${count} words within 540–620.`));
+  check(listeningWords >= listeningWordsMinimum, `Listening has ${listeningWords} transcript words (minimum ${listeningWordsMinimum}).`);
+  listeningPartWords.forEach((count, index) => check(
+    count >= listeningPartWordsRange[0] && count <= listeningPartWordsRange[1],
+    `Listening Part ${index + 1} has ${count} words within ${listeningPartWordsRange[0]}–${listeningPartWordsRange[1]}.`,
+  ));
   check(skills.reading.length === 3 && readingResponses === 40, 'Reading has 3 passages and 40 responses.');
   check(readingWords >= 2150 && readingWords <= 2750, `Reading has ${readingWords} words within 2,150–2,750.`);
 

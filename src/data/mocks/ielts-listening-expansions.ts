@@ -201,6 +201,9 @@ TUTOR: Do that briefly, but do not make the entries identical. Independent recor
 };
 
 const CONTEXTS: Readonly<Record<number, readonly [string, string, string, string]>> = {
+  1: ['pottery-course booking', 'harbour repair-hub briefing', 'campus-garden research project', 'urban-tree cooling lecture'],
+  2: ['sports-facility booking', 'campus orientation talk', 'renewable-energy project', 'coral-reef ecosystems lecture'],
+  3: ['library-membership enquiry', 'recycling-programme briefing', 'urban-farming seminar', 'history-of-writing lecture'],
   4: ['student-housing enquiry', 'natural-history museum visit', 'social-media research project', 'bird-migration lecture'],
   5: ['city-walk booking', 'volunteer induction', 'field-trip planning session', 'urban-beekeeping lecture'],
   6: ['bicycle-rental enquiry', 'leisure-centre tour', 'marketing coursework', 'history-of-tea lecture'],
@@ -238,6 +241,9 @@ function dialoguePartOne(setNumber: number, context: string) {
     `{A}: Let me finish the ${context} by summarising what I have recorded. For this ${context}, I will ${choose(setNumber, 8, ['repeat the selected arrangement', 'review the choices in their final form', 'read back the information in order', 'separate confirmed details from pending ones'])}, spell any unusual word, and explain what happens next. The summary closes the ${context}, so even a minor correction is worth making now.
 
 {B}: Good. During the ${context}, I will listen carefully and ${choose(setNumber, 9, ['interrupt if anything sounds different', 'check it against the notes I brought', 'confirm each point as you read it', 'make sure no assumption has slipped in'])}.`,
+    `{B}: Before we close the ${context}, could you tell me how I should raise a question after today? I would prefer not to repeat the whole enquiry if one detail changes.
+
+{A}: Certainly. Keep the reference on the confirmation and quote it when you contact us. A colleague can then see the agreed record, identify the single point that needs attention and explain whether the change affects anything else.`,
   ];
 }
 
@@ -248,6 +254,7 @@ function monologuePartTwo(setNumber: number, context: string) {
     `As the ${context} continues, ${choose(setNumber, 12, ['access and movement need to remain clear for everyone', 'staff may direct different groups along slightly different routes', 'a shorter route may reach the same principal areas', 'busy points may require visitors to leave additional space'])}. Within the ${context}, a change to a minor detail does not necessarily alter the main programme. If an alternative becomes necessary during the ${context}, wait for the full announcement before moving, because the first place mentioned may be the one that is no longer available.`,
     `Do not try to memorise every detail of the ${context} at once. ${choose(setNumber, 13, ['The key locations and decisions will be repeated in context', 'The most important instructions will return when they become relevant', 'Later examples will clarify the distinctions introduced here', 'The route will make more sense once its main stages are connected'])}. For now, concentrate on where the activity begins, which direction or sequence applies, and the point at which you may need to make a choice or ask a member of staff.`,
     `A final way to follow the ${context} is to separate descriptive information from an instruction that requires action. ${choose(setNumber, 22, ['Descriptions help you build a mental map, whereas instructions tell you when to move or decide', 'Background detail explains the setting, while a direct instruction changes what you should do next', 'Examples make the layout memorable, but only stated directions determine the route', 'General advice supports the visit, while a firm instruction must be followed'])}. Keeping those functions separate will prevent an interesting detail from being mistaken for a change to the programme.`,
+    `If you become uncertain during the ${context}, pause at the next staffed point rather than following another group without checking. Explain the last location or instruction you clearly remember, and staff can reconnect you with the correct sequence. This is especially important when two activities begin near one another or when a temporary diversion changes only one section of the route. The programme is designed to allow questions, so asking for clarification will not make you miss the main activity.`,
   ];
 }
 
@@ -268,6 +275,9 @@ function dialoguePartThree(setNumber: number, context: string) {
     `{A}: Our final review of the ${context} should use the agreed criteria rather than simply whether we like the finished version. We need consistent terminology, evidence for each claim and a conclusion that answers the question without exaggeration.
 
 {B}: I will turn those points into a checklist. Then we can ${choose(setNumber, 23, ['assign one person to verify the data and another to test the explanation', 'sign off each requirement before calling the revision complete', 'compare our independent checks and revise only where they reveal a problem', 'record the remaining action beside the person responsible for it'])}.`,
+    `{B}: We should keep a note of any decision we change during the final review of the ${context}, including the reason for it.
+
+{A}: Agreed. That record will stop us from reopening settled points without new evidence, and it will show which revision corrected a real weakness rather than merely changing the wording.`,
   ];
 }
 
@@ -278,6 +288,7 @@ function monologuePartFour(setNumber: number, context: string) {
     `Scale is especially important when evaluating the ${context}. A process observed in one case, one community or one short trial may behave differently across a region or over several generations. ${choose(setNumber, 20, ['Examples at different scales will therefore be compared', 'The lecture will return to this distinction in each case study', 'No striking individual example should be treated as a universal rule', 'Changes in measurement must not be confused with changes in reality'])}. This comparison helps identify which conditions are essential and which are merely helpful.`,
     `It is also worth noticing the language of certainty used in the ${context}. Some mechanisms are supported by direct observation, while others remain the best explanation available from indirect evidence. ${choose(setNumber, 21, ['Scientific caution does not mean that every account is equally likely', 'A conclusion should be as strong as the evidence allows, but no stronger', 'Uncertainty can be described without abandoning a well-supported explanation', 'The final account should separate established patterns from reasonable inference'])}. Keep that distinction in mind as the examples are brought together.`,
     `The separate examples in the ${context} can finally be organised around three questions: what conditions begin a change, which mechanisms sustain it, and what consequences appear later. For the ${context}, ${choose(setNumber, 24, ['that structure keeps chronology from becoming a list of disconnected facts', 'it also makes similarities visible without pretending that every case is identical', 'returning to those questions will connect evidence gathered at different scales', 'the framework is useful only if exceptions and limits remain visible'])}. The conclusion to the ${context} will use that framework to connect the details without extending them beyond the available evidence.`,
+    `A useful final check is to ask what observation would make the present account of the ${context} less convincing. Identifying such evidence keeps the explanation testable and reveals where future research would be most informative. It also prevents a plausible narrative from being treated as complete merely because its separate examples fit together.`,
   ];
 }
 
@@ -308,11 +319,11 @@ function fillLabels(value: string, labels: { A: string; B: string }) {
 
 export function expandIeltsListeningTranscript(setNumber: number, part: number, transcript: string) {
   const source = transcript.trim();
-  if (setNumber < 4 || setNumber > 20 || !BANKS[part]) return source;
+  if (setNumber < 1 || setNumber > 20 || !BANKS[part]) return source;
   const bank = additionsFor(setNumber, part);
   const labels = dialogueLabels(source);
   const additions: string[] = [];
-  const targetPartWords = setNumber === 5 ? TIMING_REFERENCE_PART_WORDS : TARGET_PART_WORDS;
+  const targetPartWords = setNumber <= 5 ? TIMING_REFERENCE_PART_WORDS : TARGET_PART_WORDS;
   let projectedWords = countWords(source);
 
   for (const candidate of bank) {

@@ -1,6 +1,7 @@
 {
   "manifest_sha256": "024680660790cf1ac6e3431f4ad379c09b73e52cb67e2847484606956dbde187",
   "pilot_set": 4,
+  "source_characters": 14369,
   "segment_source_sha256": "552b6314452324667924bfb39e8a19abf8a1fed523de31f4ad6668b4bb4aa3fa",
   "status": "accepted_by_owner",
   "generated_at": "2026-08-26T00:18:08.562Z",
@@ -33,5 +34,11 @@
       "longestSilence",
       "noArtificialTrailingPadding"
     ]
+  },
+  "currentPlan": {
+    "manifestSha256": "f4ba4f39d8e0e6e8be2cee7e3846cbe4b912a93cdee3e766a14fe7f9c4603155",
+    "sourceCompatible": false,
+    "supersededByExpandedTimingReferenceScript": true,
+    "preserveIndividualSegmentsThroughSourceCacheHashMatching": true
   }
 }
