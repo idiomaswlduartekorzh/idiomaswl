@@ -196,6 +196,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   BFI/Oscars y economía conductual con Nobel/OECD. La gráfica de esperanza de vida usa
   la API oficial del World Bank, pasó QA visual y accesible; el Task 2 sobre autonomía y
   política conductual es original. Sólo queda diferido su audio.
+- El Set 18 superó 243 controles Golden. Listening conserva sus cuatro escenarios y
+  amplía la interacción con evidencia, distractores y matices sobre revitalización lingüística
+  y ecosistemas desérticos. Reading corrige afirmaciones sobre CRISPR, gene drives, crédito
+  social y bilingüismo. El proceso de reciclaje de plástico pasó QA accesible; el Task 2
+  sobre beneficios y riesgos médicos de la edición genética es original. Sólo queda
+  diferido su audio.
 
 ## Auditoría final no-audio
 

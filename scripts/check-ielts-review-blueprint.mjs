@@ -111,4 +111,9 @@ const set17Task1 = set17.sections.flatMap(section => section.questions).find(que
 assert.match(set17Task1.stimulus, /life expectancy at birth.*years.*five World Bank regions.*1990.*2022/i, 'Set 17: la consigna debe declarar medida, unidad, alcance regional y años')
 assert.match(set17Task1.imageAlt, /East Asia.*68\.3.*76\.7.*Europe.*72\.2.*77\.8.*Latin America.*67\.5.*74\.6.*North America.*75\.4.*77\.8.*Sub-Saharan Africa.*50\.0.*61\.9/i, 'Set 17: el texto alternativo debe comunicar todas las regiones y valores')
 
+const { default: set18 } = await import('../src/data/mocks/ielts-set-18.ts')
+const set18Task1 = set18.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set18Task1.stimulus, /stages involved.*recycling of plastic waste.*initial collection.*manufacture of new products/i, 'Set 18: la consigna debe delimitar material, inicio, proceso y salida')
+assert.match(set18Task1.imageAlt, /collection.*sorting by resin type.*shredding and washing.*melting and extrusion.*pellets.*purity testing.*manufacture.*new products.*contaminated.*landfill/i, 'Set 18: el texto alternativo debe comunicar la secuencia y la salida de contaminantes')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif" role="img" aria-labelledby="title description">
+  <title id="title">The plastic recycling process</title>
+  <desc id="description">Plastic is collected, sorted by resin type, shredded and washed, melted and extruded into pellets, tested for purity, manufactured and made into new products. Contaminated material leaves the sorting stage and goes to landfill.</desc>
   <rect width="680" height="400" fill="#fafafa" rx="8"/>
   <text x="340" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">The Plastic Recycling Process</text>
 
