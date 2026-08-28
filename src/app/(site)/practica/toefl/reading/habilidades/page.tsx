@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Brain, Clock, ListChecks } from 'lucide-react';
-import { BreadcrumbJsonLd, FaqJsonLd, JsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import { BreadcrumbJsonLd, JsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import { PRACTICE_BASE_URL, TOEFL_READING_MIXED_DRILLS, TOEFL_READING_SKILLS } from '@/data/practica-exams/seo-catalog';
 
 const ROUTE = TOEFL_READING_SKILLS.find((item) => item.slug === 'habilidades')!;
@@ -35,7 +35,6 @@ export default function Page() {
         teaches={ROUTE.teaches}
         isPartOf={{ name: 'TOEFL Reading', url: `${PRACTICE_BASE_URL}/practica/toefl/reading` }}
       />
-      <FaqJsonLd faqs={ROUTE.faqs} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },

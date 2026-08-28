@@ -134,3 +134,9 @@ test('Task 1 no hereda FAQ schema que sus páginas no muestran', () => {
   assert.match(component, /LearningResourceJsonLd/);
   assert.match(component, /BreadcrumbJsonLd/);
 });
+
+test('la auditoría de producción protege la paridad FAQ de TOEFL Reading', () => {
+  const productionAudit = readFileSync('scripts/audit-seo.mjs', 'utf8');
+
+  assert.match(productionAudit, /practica\\\/toefl\\\/reading/);
+});

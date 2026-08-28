@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import {
   PRACTICE_BASE_URL,
   TOEFL_READING_CURRENT_FORMAT,
@@ -36,7 +36,6 @@ export default function Page() {
         teaches={ROUTE.teaches}
         isPartOf={{ name: 'TOEFL Reading formato actual', url: `${PRACTICE_BASE_URL}/practica/toefl/reading/formato-2026` }}
       />
-      <FaqJsonLd faqs={ROUTE.faqs} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
