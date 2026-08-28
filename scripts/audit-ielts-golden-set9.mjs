@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set9-audit-2026-08-28.json',
   expectedMediaStatus: 'legacy-audio-under-review',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'Today, smallpox has been completely eradicated, polio survives in only a handful of countries',
     'As of 2024, less than 25 percent of the ocean floor',

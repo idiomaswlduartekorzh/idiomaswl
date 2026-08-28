@@ -25,8 +25,8 @@ respuesta, control de longitud de distractores, claves sólo en servidor, proced
 verificada, consentimiento de grabación, acceso mínimo a revisiones y estado incompleto nunca
 mostrado como cero.
 
-Ningún audio nuevo se genera antes de congelar el script y sus respuestas. Sets 1–5 son
-los primeros guiones de referencia que superan el proxy temporal, con 2.866–2.937 palabras
+Ningún audio nuevo se genera antes de congelar el script y sus respuestas. Sets 1–10 son
+los primeros guiones de referencia que superan el proxy temporal, con 2.866–2.963 palabras
 y cada parte dentro de 680–760; esto aprueba los textos para la siguiente auditoría, no sus
 audios históricos ni su generación. Set 4 conserva
 su aprobación y publicación como hechos históricos, pero no es referencia vigente: el gate

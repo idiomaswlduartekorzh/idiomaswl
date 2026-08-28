@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set10-audit-2026-08-28.json',
   expectedMediaStatus: 'legacy-audio-under-review',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     "Plastic pollution has become one of the most visible and alarming symptoms of humanity's impact",
     'The aggregate value of transactions flowing through sharing economy platforms reached an estimated 335 billion US dollars globally in 2025',

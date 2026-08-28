@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set8-audit-2026-08-28.json',
   expectedMediaStatus: 'legacy-audio-under-review',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'The earliest unambiguous fossil evidence for domestic dogs dates to approximately 15,000 years ago',
     'some vertical farms report yields ten to twenty times greater',

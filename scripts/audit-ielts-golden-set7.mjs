@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set7-audit-2026-08-28.json',
   expectedMediaStatus: 'legacy-audio-under-review',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'Nature has spent approximately 3.8 billion years refining its designs',
     'In 2004, journalist Dan Buettner',

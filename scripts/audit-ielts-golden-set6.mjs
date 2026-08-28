@@ -9,6 +9,8 @@ runGoldenContentAudit({
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set6-audit-2026-08-28.json',
   expectedMediaStatus: 'legacy-audio-under-review',
+  listeningWordsMinimum: 2800,
+  listeningPartWordsRange: [680, 760],
   inheritedPhrases: [
     'The term gig economy describes a labour market characterised by short-term contracts',
     'Across the continent of Europe, a quiet revolution in conservation is under way',

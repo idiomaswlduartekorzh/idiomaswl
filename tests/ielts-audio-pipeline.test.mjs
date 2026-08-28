@@ -18,8 +18,8 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.equal(plan.timingFidelityGate.status, 'blocked');
   assert.equal(plan.timingFidelityGate.minimumTranscriptWordsPerSet, 2800);
   assert.equal(plan.timingFidelityGate.targetIntegralDurationSeconds[1], 1800);
-  assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, 343741);
-  assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(343741 * casting.credits_per_character));
+  assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, 348612);
+  assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(348612 * casting.credits_per_character));
   assert.equal(casting.manifest_sha256, plan.manifestSha256);
   const pilotRow = plan.rows.find(row => row.setId === `set-${pilot.pilot_set}`);
   assert.ok(pilotRow);
@@ -110,9 +110,9 @@ test('dry-run source verification is local, deterministic and non-authorizing', 
   assert.equal(output.sourceVerified, true);
   assert.equal(output.full.files, 20);
   assert.equal(output.remainingGeneration.files, 18);
-  assert.equal(output.remainingGeneration.billableCharacters, 270805);
-  assert.equal(output.remainingGeneration.estimatedCredits, 135403);
-  assert.equal(output.remainingGeneration.estimatedUsdBeforeTax, 13.5403);
+  assert.equal(output.remainingGeneration.billableCharacters, 289467);
+  assert.equal(output.remainingGeneration.estimatedCredits, 144734);
+  assert.equal(output.remainingGeneration.estimatedUsdBeforeTax, 14.4733);
   assert.equal(output.full.generationAuthorized, false);
   assert.match(output.note, /No API call/);
 });

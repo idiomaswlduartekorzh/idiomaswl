@@ -181,7 +181,7 @@ test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 word
   }
 });
 
-test('all 20 Listening papers preserve authored evidence while Sets 1–5 pin the timing-density reference', async () => {
+test('all 20 Listening papers preserve authored evidence while Sets 1–10 pin the timing-density reference', async () => {
   const fingerprints = new Set();
   const fiftyWordShingleOwners = new Map();
   for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
@@ -191,7 +191,7 @@ test('all 20 Listening papers preserve authored evidence while Sets 1–5 pin th
     const listening = mock.sections.filter(section => section.skill === 'listening');
     assert.equal(listening.length, 4, `${mock.id} Listening parts`);
     const listeningWords = listening.reduce((total, section) => total + words(section.transcript), 0);
-    assert.ok(listeningWords >= (setNumber <= 5 ? 2800 : 2200), `${mock.id} Listening density`);
+    assert.ok(listeningWords >= (setNumber <= 10 ? 2800 : 2200), `${mock.id} Listening density`);
     for (const [index, section] of listening.entries()) {
       const expectedNumbers = Array.from({ length: 10 }, (_, offset) => index * 10 + offset + 1);
       assert.deepEqual(
@@ -200,7 +200,7 @@ test('all 20 Listening papers preserve authored evidence while Sets 1–5 pin th
         `${mock.id} Part ${section.part} must contain its exact ten-question range`,
       );
       const partWords = words(section.transcript);
-      const partWordRange = setNumber <= 5 ? [680, 760] : [540, 620];
+      const partWordRange = setNumber <= 10 ? [680, 760] : [540, 620];
       assert.ok(partWords >= partWordRange[0] && partWords <= partWordRange[1], `${mock.id} Part ${section.part} has ${partWords} words`);
       for (const block of authored[index].transcript.trim().split(/\n{2,}/)) {
         assert.ok(section.transcript.includes(block.trim()), `${mock.id} Part ${section.part} must preserve authored block`);
