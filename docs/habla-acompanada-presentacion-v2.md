@@ -8,11 +8,13 @@
 ## Estado operativo del prototipo
 
 - **Rama:** `codex/speaking-ux-blueprint-v2-20260827`.
-- **Commit de implementación:** `a79383cf`.
+- **Commit de implementación validado:** `f13c5855`.
 - **Base `origin/main`:** `d89c53a5`.
 - **Ruta compartida:** `/practica/ingles/a1/habla/prototipo`.
 - **Fichas privadas:** `/a` y `/b`; cualquier otro rol devuelve 404.
-- **Preview:** `dpl_8uSBzBUJ4D5VLtqfForJkJP1xLFZ` ·
+- **Preview validada:** `dpl_A7gP7NppGwjE2Bp6aTWoUvTeywRA` ·
+  `https://idiomaswl-r4q5hwxqs-idiomaswlduartekorzhs-projects.vercel.app`.
+- **Alias estable de la rama:**
   `https://idiomaswl-git-codex-speak-c73fbc-idiomaswlduartekorzhs-projects.vercel.app`.
 - **Acceso:** protegido por inicio de sesión de Vercel y marcado `noindex, nofollow, nocache`.
 - **Validación del 28 de agosto de 2026:** catálogo, guardián de Habla, TypeScript, prebuild,
