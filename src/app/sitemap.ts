@@ -5,7 +5,7 @@ import { SAT_GUIDE_SLUGS } from '@/data/satGuides';
 import { grammarRegistry } from '@/data/grammar/registry';
 import { EXAM_PRACTICE_ROUTES } from '@/data/practica-exams/seo-catalog';
 import { publishedReadingExercises } from '@/lib/reading/catalog';
-import { readingExercisePath } from '@/lib/reading/routes';
+import { readingAlternates, readingExerciseLocalePaths } from '@/lib/reading/routes';
 import { SIMULACROS } from '@/data/mocks/icfes-simulacros';
 import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS } from '@/data/icfes/guided-registry';
 import { getVocabLevels } from '@/data/practica/vocabulario/registry';
@@ -21,6 +21,8 @@ import {
 } from '@/data/practica/habla-acompanado';
 import { IDIOMAS_PUBLICADOS } from '@/data/fonetica/idiomas';
 import { EXAM_PODCASTS } from '@/data/practica/exam-podcast-catalog';
+import { QUIZ_LANGUAGES } from '@/data/practica/quiz-language-catalog';
+import { PRONOUN_QUESTS } from '@/data/practica/pronoun-quest-registry';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -63,14 +65,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // dejarlo fuera del sitemap.
     { url: `${BASE}/herramientas`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/herramientas/quizes`, changeFrequency: 'monthly', priority: 0.75 },
-    { url: `${BASE}/herramientas/quizes/italiano`, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/ingles`, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/frances`, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/portugues`, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/aleman`, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/ruso`, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/japones`, changeFrequency: 'monthly', priority: 0.72 },
-    { url: `${BASE}/herramientas/quizes/coreano`, changeFrequency: 'monthly', priority: 0.72 },
+    { url: `${BASE}/herramientas/quizes/pronombres`, changeFrequency: 'monthly', priority: 0.73 },
+    ...QUIZ_LANGUAGES.flatMap((language) => [
+      {
+        url: `${BASE}/herramientas/quizes/idiomas/${language.slug}`,
+        changeFrequency: 'monthly' as const,
+        priority: 0.73,
+      },
+      {
+        url: `${BASE}/herramientas/quizes/${language.slug}`,
+        changeFrequency: 'monthly' as const,
+        priority: 0.72,
+      },
+    ]),
+    ...PRONOUN_QUESTS.map((quest) => ({
+      url: `${BASE}/herramientas/quizes/pronombres/${quest.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.72,
+    })),
     { url: `${BASE}/herramientas/transcripcion-fonetica`, changeFrequency: 'monthly', priority: 0.75 },
     ...IDIOMAS_PUBLICADOS.map((idioma) => ({
       url: `${BASE}/herramientas/transcripcion-fonetica/${idioma.slug}`,
@@ -204,24 +216,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Reading engine — only human-reviewed, published exercises ───────────
     ...publishedReadings.flatMap((exercise) => {
-      const esPath = readingExercisePath('es', exercise.language, exercise.level.cefr, exercise.slug);
-      const enPath = readingExercisePath('en', exercise.language, exercise.level.cefr, exercise.slug);
+      const localePaths = readingExerciseLocalePaths(exercise);
       const lastModified = new Date(exercise.seo.lastModified);
-      // Idiomas con URL canónica unificada (ej. inglés en /practica/...): una sola entrada, sin hreflang duplicado.
-      if (esPath === enPath) {
-        return [{ url: `${BASE}${esPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.72 }];
-      }
       const alternates = {
-        languages: {
-          es: `${BASE}${esPath}`,
-          en: `${BASE}${enPath}`,
-          'x-default': `${BASE}${esPath}`,
-        },
+        languages: Object.fromEntries(
+          Object.entries(readingAlternates(localePaths)).map(([locale, path]) => [locale, `${BASE}${path}`])
+        ),
       };
-      return [
-        { url: `${BASE}${esPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.72, alternates },
-        { url: `${BASE}${enPath}`, lastModified, changeFrequency: 'monthly' as const, priority: 0.7, alternates },
-      ];
+      return localePaths.map(({ locale, path }) => ({
+        url: `${BASE}${path}`,
+        lastModified,
+        changeFrequency: 'monthly' as const,
+        priority: locale === 'es' ? 0.72 : 0.7,
+        alternates,
+      }));
     }),
 
     // ── Practice — Historias: comprensión integrada en los 8 idiomas ─────────
