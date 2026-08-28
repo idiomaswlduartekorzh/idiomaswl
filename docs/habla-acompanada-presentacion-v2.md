@@ -7,7 +7,8 @@
 
 ## Estado operativo del prototipo
 
-- **Rama/SHA:** `codex/speaking-ux-blueprint-v2-20260827` · `a79383cf`.
+- **Rama:** `codex/speaking-ux-blueprint-v2-20260827`.
+- **Commit de implementación:** `a79383cf`.
 - **Base `origin/main`:** `d89c53a5`.
 - **Ruta compartida:** `/practica/ingles/a1/habla/prototipo`.
 - **Fichas privadas:** `/a` y `/b`; cualquier otro rol devuelve 404.
