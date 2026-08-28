@@ -96,4 +96,9 @@ const set14Task1 = set14.sections.flatMap(section => section.questions).find(que
 assert.match(set14Task1.stimulus, /simplified process.*municipal plant.*sludge.*two possible destinations/i, 'Set 14: la consigna debe delimitar proceso, planta, subproducto y salidas')
 assert.match(set14Task1.imageAlt, /screening.*primary settling.*biological treatment.*disinfection.*reuse or discharge.*sludge.*biogas/i, 'Set 14: el texto alternativo debe comunicar etapas, destinos y rama de lodos')
 
+const { default: set15 } = await import('../src/data/mocks/ielts-set-15.ts')
+const set15Task1 = set15.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set15Task1.stimulus, /percentage shares.*total domestic electricity generation.*United Kingdom.*Australia.*2022/i, 'Set 15: la consigna debe declarar medida, alcance, países y año')
+assert.match(set15Task1.imageAlt, /United Kingdom.*38\.5%.*28\.9%.*14\.6%.*12\.8%.*5\.2%.*Australia.*47%.*32%.*19%.*2%/i, 'Set 15: el texto alternativo debe comunicar todas las categorías y valores')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

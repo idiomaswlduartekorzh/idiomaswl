@@ -111,7 +111,9 @@ test('all 20 sets have an explicit editorial certification state', () => {
   assert.equal(IELTS_EDITORIAL_STATUS_2026[13].provenance, 'audited-original-welearn');
   assert.equal(IELTS_EDITORIAL_STATUS_2026[14].certification, 'certified-golden-content');
   assert.equal(IELTS_EDITORIAL_STATUS_2026[14].provenance, 'audited-original-welearn');
-  for (let setNumber = 15; setNumber <= 20; setNumber += 1) {
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[15].certification, 'certified-golden-content');
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[15].provenance, 'audited-original-welearn');
+  for (let setNumber = 16; setNumber <= 20; setNumber += 1) {
     assert.equal(IELTS_EDITORIAL_STATUS_2026[setNumber].certification, 'pending-golden-audit');
   }
 });

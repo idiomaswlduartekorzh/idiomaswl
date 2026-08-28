@@ -178,6 +178,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   alcance del GDPR/AI Act, las relaciones del árbol de nuez de Brasil, carbono, humedad
   y tipping points. El proceso de aguas residuales pasó QA visual y accesible, y el Task
   2 sobre IA en evaluación universitaria es original. Sólo queda diferido su audio.
+- El Set 15 superó 245 controles Golden. Listening conserva sus cuatro escenarios sin
+  expansión genérica e incorpora la evaluación NOAA 2026 del cuarto blanqueamiento
+  global. Reading actualiza sueño con NIH, urbanización con WUP 2025 y hambre/pérdida/
+  desperdicio con SOFI 2025, FAO y UNEP. La gráfica eléctrica corrige los datos oficiales
+  de Reino Unido y Australia, pasó QA visual y accesible; el Task 2 de donación de
+  excedentes es original. Sólo queda diferido su audio.
 
 ## Auditoría final no-audio
 
