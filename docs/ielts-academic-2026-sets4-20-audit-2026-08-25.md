@@ -172,6 +172,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   placebo, efecto específico, historia natural y nocebo. El Task 2 regional es original;
   la gráfica turística pasó QA visual y accesible. Su audio continúa bloqueado hasta
   generación, mastering y QA.
+- El Set 14 superó 236 controles Golden. Listening quedó compuesto por cuatro guiones
+  específicos sin relleno automático y la historia del dinero separa remesas Tang,
+  billetes Song, emisión sueca, convertibilidad, fiat y polímero. Reading corrigió el
+  alcance del GDPR/AI Act, las relaciones del árbol de nuez de Brasil, carbono, humedad
+  y tipping points. El proceso de aguas residuales pasó QA visual y accesible, y el Task
+  2 sobre IA en evaluación universitaria es original. Sólo queda diferido su audio.
 
 ## Auditoría final no-audio
 

@@ -58,6 +58,30 @@ CUSTOMER: And what about a deposit?
 
 COORDINATOR: For either package we ask for £500 to secure the date, with the balance due one month before the wedding.
 
+CUSTOMER: I see. Before I decide between packages, could I check a few things? My grandparents cannot manage many stairs.
+
+COORDINATOR: The hall and garden are both step-free from the east entrance. There is a lift to the bedrooms, although the bridal suite is on the first floor rather than the ground floor. We can reserve two accessible rooms downstairs for other guests.
+
+CUSTOMER: Excellent. Does the quoted price include drinks?
+
+COORDINATOR: It includes sparkling water on the tables and a welcome drink. Wine with the meal is separate. Some couples assume the evening buffet replaces the three-course meal, but it is served later, at about nine, for guests who stay for the dancing.
+
+CUSTOMER: That makes sense. We may bring our own cake. Is there a cutting charge?
+
+COORDINATOR: No. We provide a cake stand and knife at no extra cost. You would only pay if our chef made the cake. Also, you mentioned several vegetarian guests. We need final dietary numbers three weeks before the event, including allergies; “vegetarian” on the booking form is not enough for severe allergies.
+
+CUSTOMER: I'll make a list. What happens if it rains during the ceremony?
+
+COORDINATOR: We decide that morning whether to use the garden. If the forecast is poor, staff move the chairs into the small orangery beside it. The marquee is for photographs and drinks, not the legal ceremony.
+
+CUSTOMER: Ah, thanks for clarifying. Could you hold one Saturday in June while my partner visits?
+
+COORDINATOR: I can hold a date without payment for forty-eight hours. A viewing on Tuesday at six is available, or Thursday at four.
+
+CUSTOMER: Tuesday is difficult. Let's come on Thursday at four.
+
+COORDINATOR: Fine. I'll email the brochure and a provisional booking form today. Nothing becomes binding until you return the signed form and pay the deposit.
+
 CUSTOMER: That all sounds perfect. Thank you.`,
       questions: [
         {
@@ -96,7 +120,7 @@ Accommodation: book the bridal {{6}}`,
             [
               'Classic',
               { num: 7, answers: ['75', '£75'], maxWords: 1 },
-              { num: 8, answers: ['decorations', 'decoration'], maxWords: 1 },
+              { num: 8, answers: ['decorations'], maxWords: 1 },
               'none',
             ],
             [
@@ -124,7 +148,15 @@ Now, the practical details. The run starts at nine thirty in the morning, so ple
 
 A word on safety. The whole route is clearly marked with yellow arrows, and first-aid volunteers are stationed every kilometre. If you feel unwell, stop and wait for a marshal — please don't try to carry on. Dogs, unfortunately, are not allowed this year, for insurance reasons.
 
-On fundraising: all the money we raise this year will go towards a new children's playground in the town. The easiest way to collect donations is through your online sponsorship page. And finally, parking. The park's own car park will be closed for the event, so please use the free parking at the nearby shopping centre and walk across. Thanks again, and let's hope for some sunshine.`,
+On fundraising: all the money we raise this year will go towards a new children's playground in the town. The easiest way to collect donations is through your online sponsorship page. Cash can still be handed in, but please put it in a labelled envelope rather than giving it to a marshal on the course.
+
+Let me explain what happens when you arrive. Registration opens at eight fifteen in the sports pavilion. Competitive runners should use the desks on the left because staff need to attach their timing chips. Fun-run participants use the desks on the right and collect a paper number. If your T-shirt size is wrong, visit the exchange table after registering; doing so beforehand would delay the queue. Bags may be left in the supervised tent, but valuables remain your responsibility.
+
+There are two distances. The family route is five kilometres and turns back at Mill Bridge. The ten-kilometre route continues through the riverside meadows before rejoining the same finish. Please follow the coloured signs for your distance: yellow arrows mark both routes until the bridge, while red signs indicate the longer loop. Although the course is flat, a short section beside the river may be muddy after rain, so ordinary running shoes are preferable to sandals.
+
+At the finish, keep moving beyond the timing mat before stopping to meet friends. Water and medals are handed out in the recovery area. Energy bars are restricted to ten-kilometre entrants because we ordered them according to registration numbers. The café will sell other food from ten o'clock.
+
+And finally, parking. The park's own car park will be closed for the event, so please use the free parking at the nearby shopping centre and walk across. Allow ten minutes for that walk. Buses will operate normally, but the stop beside the main gate moves temporarily to Park Road. Any last-minute route change will be posted online by six on Saturday morning. Thanks again, and let's hope for some sunshine.`,
       questions: [
         {
           type: 'multiselect',
@@ -168,9 +200,9 @@ Safety and other information
             { num: 15, answers: ['river'], maxWords: 1 },
             { num: 16, answers: ['flat'], maxWords: 1 },
             { num: 17, answers: ['water station'], maxWords: 2 },
-            { num: 18, answers: ['arrows', 'arrow'], maxWords: 1 },
+            { num: 18, answers: ['arrows'], maxWords: 1 },
             { num: 19, answers: ['playground'], maxWords: 1 },
-            { num: 20, answers: ['shopping centre', 'shopping center'], maxWords: 2 },
+            { num: 20, answers: ['shopping centre'], maxWords: 2 },
           ],
         },
       ],
@@ -208,7 +240,31 @@ PRIYA: Should we bring cameras as well?
 
 TUTOR: Your phones are fine for photographs — just make sure they're fully charged.
 
-BEN: Great, thanks.`,
+BEN: Great. How should we divide the work once we're there?
+
+TUTOR: Work in threes, but everyone must keep a notebook. Rotate measuring, describing and photographing at each station.
+
+PRIYA: Are we expected to identify every fossil on the beach?
+
+TUTOR: No. Fossils may help you compare layers, but collecting them is not the research aim. Do not hammer material out of the cliff, because that could damage the site and dislodge loose rock. You may pick up small pieces already lying on the beach if they are safe to reach. Record them, photograph them and return them unless I say a sample is needed for laboratory work.
+
+BEN: What measurements go in the notebook?
+
+TUTOR: For each rock unit, note its thickness, grain size and colour, then sketch its boundary. Put a scale in every close-up; a hand lens alone does not show size.
+
+PRIYA: And if the weather is really bad?
+
+TUTOR: Light rain won't cancel the trip, which is why a waterproof is essential. Strong winds or a warning from the coastguard would. I'll check the forecast and tide table the evening before and send a message by seven. If we postpone, keep the risk form on file; you won't need to submit a second one.
+
+BEN: What time will the minibus leave?
+
+TUTOR: At seven forty-five from the science building. Be there by seven thirty so equipment can be loaded. We plan to leave the beach before the tide reaches the cliff and return by six, but bring lunch and an extra drink in case traffic delays us.
+
+PRIYA: Should samples be numbered as well as labelled?
+
+TUTOR: Yes. Use your group letter followed by a number, and copy the same code into your notebook. The exact location matters more than the specimen's appearance. A beautiful but unlabelled rock tells us almost nothing.
+
+BEN: Understood. Thanks.`,
       questions: [
         {
           type: 'matching',
@@ -246,11 +302,11 @@ BEN: Great, thanks.`,
 • label every rock {{29}} with its exact location
 • make sure their {{30}} are charged for taking photographs`,
           blanks: [
-            { num: 26, answers: ['boots', 'boot'], maxWords: 1 },
+            { num: 26, answers: ['boots'], maxWords: 1 },
             { num: 27, answers: ['waterproof'], maxWords: 1 },
             { num: 28, answers: ['form'], maxWords: 1 },
             { num: 29, answers: ['sample'], maxWords: 1 },
-            { num: 30, answers: ['phones', 'phone'], maxWords: 1 },
+            { num: 30, answers: ['phones'], maxWords: 1 },
           ],
         },
       ],
@@ -262,19 +318,23 @@ BEN: Great, thanks.`,
       audioUrl: '/audio/ielts/ielts-listening-set-14.mp3',
       title: 'Listening — Section 4: The history of paper money',
       instructions: 'You will hear a lecture about the history of paper money. Listen and answer Questions 31–40.',
-      transcript: `Good afternoon. In today's lecture I'll trace the history of paper money, from its origins in China right through to the plastic notes of the present day.
+      transcript: `Good afternoon. In today's lecture I'll trace the history of paper money, from early transfer documents in China to the polymer notes used by many countries today. One warning at the outset: historians distinguish a document used to move funds from a note circulating as general payment, even though popular accounts sometimes call both “paper money”.
 
-The story begins in China, more than a thousand years ago. Chinese merchants grew tired of carrying heavy strings of copper coins, so during the Tang dynasty they began leaving their coins with trusted agents, who issued them a paper receipt in exchange. This early paper money was nicknamed "flying money", because a strong wind could easily blow it out of your hands.
+The story begins in China, more than a thousand years ago. Tang-dynasty trade depended on heavy strings of copper coins. To avoid transporting them over long distances, merchants could deposit funds in one place and receive a paper receipt or draft that enabled payment elsewhere. This convenient transfer instrument became known as “flying money”. The name referred to money moving rapidly across distance, not, as a charming but unreliable story claims, to pieces of paper being blown away by the wind.
 
-By the following dynasty, the government itself had taken over the printing of the notes, and paper money became official currency. The idea took a very long time to reach Europe. When the traveller Marco Polo returned home and described it, many readers simply did not believe him.
+The next decisive development came under the Song dynasty. Privately issued notes called jiaozi circulated in Sichuan, and the state later controlled their issue. These notes functioned more like currency than the earlier remittance documents. Government backing helped them circulate, but it did not remove the need to limit supply and maintain confidence.
 
-Europe's first proper banknotes were issued in Sweden in the seventeenth century. Unfortunately, the bank printed far too many, and the notes quickly lost their value — an early lesson in the danger of inflation. For the next two centuries, most banknotes were backed by gold: in theory, a note could always be exchanged at the bank for a fixed weight of the metal.
+Knowledge of Chinese currency reached European readers slowly. Marco Polo described the use of paper under Mongol rule, including the authority that supported it. Many readers did not believe that stamped paper could be accepted in place of metal, although Europe already had written credit instruments of its own.
 
-That link to gold was finally broken in the twentieth century. Since then, paper money has been what economists call "fiat" currency, meaning that its value rests entirely on public trust rather than on any precious metal.
+Europe's first generally recognised banknotes were issued in Sweden in 1661 by Stockholms Banco. The country used extremely cumbersome copper money, so portable notes were attractive. The bank's notes were not all matched by deposited coin, however, and it issued more than it could redeem. Their value fell, confidence weakened and the bank failed. The episode became an early European lesson in over-issue and inflation.
 
-Producing notes that are hard to copy has always been a challenge. Modern notes use a range of security features, such as a watermark, a metallic thread running through the paper, and ink that changes colour when the note is tilted.
+European banknotes subsequently developed in different ways. Many began as promises by a bank to pay the bearer in coin. In Britain, for example, Bank of England notes could for long periods be exchanged for gold, though convertibility was also suspended at times. The gold standard formally linked a currency's value to a fixed quantity of gold; countries adopted and abandoned it on different dates rather than in a single worldwide change.
 
-Most recently, several countries have replaced paper with a thin, flexible plastic, usually a material called polymer. These notes last far longer, survive being washed, and are much harder to forge. Some economists predict that, as digital payments spread, physical cash may one day disappear altogether — but for now, the banknote in your pocket remains a remarkable piece of technology.`,
+Most national currencies today are described as fiat money. A unit is not redeemable for a fixed quantity of gold simply because a holder presents a note. Its acceptance rests on a combination of law, the issuing state's institutions, monetary policy and public confidence—not on paper having an intrinsic value.
+
+The physical note has also evolved. Printers use layered security features: watermarks visible in transmitted light, embedded threads, fine patterns, raised print and ink whose colour changes when tilted. No single feature is expected to defeat every forgery; members of the public and machines check several together.
+
+Finally, the word paper is no longer always literal. Australia pioneered modern circulating notes printed on polymer, a specialised plastic substrate, and other issuing authorities followed. Polymer can incorporate transparent windows, resists dirt and moisture, and generally lasts longer than cotton-based paper, although damaged notes still have to be withdrawn. Digital payments may reduce the number of cash transactions in some places, but patterns differ between countries and cash continues to serve as both payment and backup. The banknote, therefore, is not a relic with one simple history but a technology repeatedly redesigned around portability, confidence and security.`,
       questions: [
         {
           type: 'formgroup',
@@ -324,17 +384,21 @@ The modern note
       instructions: 'Read the passage and answer Questions 1–13.',
       passage: `The Ethics of Artificial Intelligence
 
-Artificial intelligence systems are making consequential decisions with increasing frequency and speed—screening job applicants, evaluating loan applications, recommending criminal sentences, and diagnosing diseases. As these systems become more deeply embedded in the infrastructure of modern life, the ethical questions they raise have moved from the realm of science fiction to urgent policy debate.
+Artificial intelligence is increasingly used to support consequential decisions: ranking job applicants, estimating credit risk, helping clinicians interpret scans and identifying transactions for investigation. Such systems may process more cases consistently and quickly than a person could. Yet speed does not answer the ethical question. A model can be technically accurate on average while producing unacceptable errors for a particular group, and an apparently minor recommendation can become decisive when busy staff routinely accept it.
 
-One of the most widely discussed concerns is algorithmic bias. AI systems learn from historical data, and if that data reflects past patterns of discrimination—in hiring, lending, law enforcement, or healthcare—the models trained on it are likely to perpetuate and, in some cases, amplify those patterns. A prominent example is the COMPAS recidivism algorithm, used in parts of the United States to predict the likelihood that a convicted person would reoffend and inform sentencing recommendations. An investigation by ProPublica in 2016 found that the algorithm was twice as likely to misclassify black defendants as high risk compared with white defendants, raising serious questions about fairness and due process in the justice system.
+One concern is algorithmic bias. A system learns statistical relationships from its training data rather than discovering a neutral account of the world. If historical records reflect unequal access to employment, lending or healthcare, a model may perpetuate those patterns. Bias can also enter when a proxy, such as postcode, is correlated with a protected characteristic, or when one population is poorly represented in the data. Testing only overall accuracy may conceal these differences. Auditors therefore compare error rates across relevant groups, examine whether the data fit the intended population and ask what harm follows from each kind of mistake. No single mathematical definition of fairness resolves every case: reducing one disparity can increase another, so the social purpose of the system matters.
 
-A second concern involves transparency. Many advanced AI systems, particularly those based on deep learning, operate as "black boxes": they produce outputs whose internal reasoning is opaque even to their creators. When an AI system denies a mortgage application or flags a medical image as suspicious, the inability to explain the decision in human-comprehensible terms creates problems for accountability, for the ability to contest decisions, and for the identification and correction of errors. The European Union's General Data Protection Regulation (GDPR) attempted to address this by establishing a right to explanation for automated decisions, though the implementation of this right has proved legally and technically complex.
+Transparency presents a second difficulty. Complex models are often called “black boxes” because the route from inputs to an output may be hard to express in ordinary language. However, transparency is not a single switch. A person affected by a decision may need the principal factors, an operator may need warnings and performance limits, and a regulator may require logs, documentation and access for an audit. Publishing source code alone would not necessarily provide a useful explanation and could expose personal data or security weaknesses. Meaningful transparency should instead enable errors to be found and a decision to be challenged.
 
-The prospect of autonomous weapons systems raises what many consider the most acute ethical challenge in AI development. Systems capable of identifying and targeting human beings without human intervention in the loop—sometimes described as lethal autonomous weapons systems or LAWS—are being developed by several major powers. Critics argue that ceding the decision to use lethal force to an algorithm violates fundamental principles of international humanitarian law, which requires that combatants be able to distinguish between civilians and military targets and apply proportional force. A growing coalition of scientists, ethicists, and governments has called for a preemptive international ban on LAWS, though progress in multilateral negotiations has been slow.
+European data-protection law illustrates the importance of precision. The General Data Protection Regulation (GDPR) generally restricts decisions based solely on automated processing when they produce legal or similarly significant effects, while allowing specified exceptions. Where such processing is permitted, safeguards include the opportunity for human intervention, for the person to express a view and to contest the decision. This is more specific than a universal promise that every output from every algorithm will receive a complete human-comprehensible explanation.
 
-The economic consequences of AI automation represent a further ethical dimension. While economists debate the scale and pace of automation-driven job displacement, there is broad agreement that the transition will be disruptive for some sectors and demographics. Workers performing routine cognitive or physical tasks are most exposed; highly skilled professionals and those in creative, interpersonal, or highly variable roles are generally considered less vulnerable. The distributional consequences—who loses and who gains—depend heavily on policy responses, including investment in retraining, the reform of education systems, and the design of social safety nets capable of supporting workers through technological transitions.
+The European Union's AI Act adds a risk-based framework. It prohibits a limited set of practices judged unacceptable and creates transparency duties for certain systems. It also classifies uses in areas such as employment, education and access to essential services as potentially high-risk. Obligations for high-risk providers include risk management, suitable data governance, technical documentation, logging, information for deployers, human oversight, accuracy, robustness and cybersecurity. The rules enter into application on a staged timetable; the existence of the Act does not mean that every high-risk obligation was already enforceable at the same moment in 2026.
 
-In response to these challenges, governments, companies, and international bodies have developed a range of AI ethics frameworks and guidelines. Most converge on a set of core principles: fairness, transparency, accountability, privacy, and human oversight. The practical implementation of these principles, however, remains highly variable. Critics note that voluntary industry guidelines lack enforcement mechanisms and that there is a risk of "ethics washing"—the superficial adoption of ethical language without meaningful change in practice. The development of robust, enforceable AI governance frameworks is widely regarded as one of the defining regulatory challenges of the twenty-first century.`,
+Human oversight itself must be designed rather than merely promised. A nominal reviewer who lacks time, expertise or authority may simply confirm the model's suggestion—a tendency sometimes called automation bias. Useful oversight gives the reviewer enough context to disagree, records overrides and supplies a route for appeal. Responsibility is shared: developers choose data and objectives, organisations decide how a tool is deployed, and public authorities define and enforce legal limits. A vendor cannot make an unsuitable use ethical simply by adding a warning, while a purchaser cannot assume that buying a reputable model transfers accountability.
+
+The labour effects of AI form another ethical dimension. Systems can automate individual tasks without eliminating an occupation, and they can create new work while changing the skills required for existing jobs. Exposure is not determined only by whether a job is labelled routine or creative; cost, regulation, reliability and the organisation of work all influence adoption. The gains may also be distributed unevenly unless workers have access to training, bargaining power and support during transitions.
+
+Many organisations publish principles such as fairness, transparency, accountability, privacy and human oversight. Principles can guide design, but voluntary statements without measurable requirements, independent scrutiny or remedies risk becoming “ethics washing”: ethical language with little operational change. Trustworthy governance therefore connects broad values to evidence—documented tests, monitoring after deployment, incident reporting, accessible appeal and consequences when standards are breached. The central challenge is not to demand that AI be perfect. It is to decide which errors are tolerable, who bears them, who can question a decision and who must put it right.`,
       questions: [
         {
           type: 'formgroup',
@@ -342,15 +406,15 @@ In response to these challenges, governments, companies, and international bodie
           part: 5,
           qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: The COMPAS algorithm was found to misclassify white defendants as high risk more often than black defendants.\n2. {{2}}: Deep learning AI systems are sometimes described as "black boxes" because their reasoning is difficult to understand.\n3. {{3}}: The GDPR gives citizens the right to a human-comprehensible explanation of automated decisions.\n4. {{4}}: All major world powers have signed an international treaty banning lethal autonomous weapons.\n5. {{5}}: Workers performing highly routine tasks are considered more vulnerable to automation than those in creative roles.\n6. {{6}}: Most AI ethics frameworks include principles of fairness, transparency, and accountability.\n7. {{7}}: Voluntary industry ethics guidelines currently carry legally binding enforcement mechanisms.`,
+          template: `1. {{1}}: A model with good average accuracy may still make unequal errors across population groups.\n2. {{2}}: Publishing a model's source code always provides an affected person with a useful explanation.\n3. {{3}}: The GDPR safeguards described include a person's opportunity to contest certain automated decisions.\n4. {{4}}: Every high-risk obligation in the EU AI Act became enforceable at the same time in 2026.\n5. {{5}}: Introducing AI can alter tasks within an occupation without removing the occupation itself.\n6. {{6}}: Effective human oversight requires a reviewer to have a genuine ability to disagree with a system.\n7. {{7}}: The passage states how many organisations independently audit their published AI principles.`,
           blanks: [
-            { num: 1, answers: ['FALSE'] },
-            { num: 2, answers: ['TRUE'] },
+            { num: 1, answers: ['TRUE'] },
+            { num: 2, answers: ['FALSE'] },
             { num: 3, answers: ['TRUE'] },
             { num: 4, answers: ['FALSE'] },
             { num: 5, answers: ['TRUE'] },
             { num: 6, answers: ['TRUE'] },
-            { num: 7, answers: ['FALSE'] },
+            { num: 7, answers: ['NOT GIVEN'] },
           ],
         },
         {
@@ -359,13 +423,13 @@ In response to these challenges, governments, companies, and international bodie
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. AI systems that learn from historically biased data may {{8}} patterns of discrimination rather than eliminate them.\n9. The COMPAS algorithm was used to inform {{9}} recommendations in parts of the United States.\n10. The EU's GDPR established a right to {{10}} for individuals affected by automated decisions.\n11. Lethal autonomous weapons systems are sometimes abbreviated as {{11}}.\n12. International humanitarian law requires combatants to distinguish between civilians and {{12}} targets.\n13. The adoption of ethical language without genuine change in practice is sometimes described as {{13}}.`,
+          template: `8. A model trained on unequal historical records may {{8}} the patterns in those records.\n9. A feature such as {{9}} can act as a proxy for a protected characteristic.\n10. Under the GDPR safeguards described, an affected person may request {{10}}.\n11. The AI Act requires suitable {{11}} for systems classified as high-risk.\n12. A reviewer who habitually accepts a model's output may be showing {{12}}.\n13. Ethical language that produces little operational change is described as {{13}}.`,
           blanks: [
-            { num: 8, answers: ['perpetuate', 'amplify'] },
-            { num: 9, answers: ['sentencing'] },
-            { num: 10, answers: ['explanation'] },
-            { num: 11, answers: ['LAWS'] },
-            { num: 12, answers: ['military'] },
+            { num: 8, answers: ['perpetuate'] },
+            { num: 9, answers: ['postcode'] },
+            { num: 10, answers: ['human intervention'] },
+            { num: 11, answers: ['human oversight'] },
+            { num: 12, answers: ['automation bias'] },
             { num: 13, answers: ['ethics washing'] },
           ],
         },
@@ -379,19 +443,19 @@ In response to these challenges, governments, companies, and international bodie
       instructions: 'Read the passage and answer Questions 14–26.',
       passage: `The Remarkable Diversity of Tropical Rainforests
 
-A. Tropical rainforests are the most biodiverse terrestrial ecosystems on Earth. Covering approximately six percent of the planet's land surface, they are home to more than half of the world's known plant and animal species—and scientists believe that millions more remain undiscovered. The Amazon basin alone harbours an estimated forty thousand plant species, three thousand freshwater fish species, and over thirteen hundred bird species. This extraordinary concentration of life is the product of a long evolutionary history, a stable climate, and an intricate web of ecological relationships that have developed over tens of millions of years.
+A. Tropical rainforests are among the most biodiverse terrestrial ecosystems on Earth. Although they occupy only a small proportion of the planet's land surface, estimates commonly attribute more than half of known terrestrial species to tropical forests; any exact percentage depends on what is counted and how incompletely many groups have been catalogued. The Amazon basin alone has documented tens of thousands of plant species and an exceptional variety of freshwater fish and birds. This concentration of life reflects a long evolutionary history, warm conditions and an intricate web of ecological relationships. Species are not distributed uniformly: soil, rainfall, flooding and past disturbance create distinct habitats within what a map may show as continuous green forest.
 
 B. The structure of a tropical rainforest is highly layered. The emergent layer, formed by the tallest trees—some reaching sixty metres or more—juts above the main forest canopy and is exposed to full sunlight, strong winds, and dramatic temperature fluctuations. These giants are inhabited by specialised animals, including harpy eagles, scarlet macaws, and various species of monkey adapted to life high above the ground. Below them, the dense canopy layer captures the vast majority of available sunlight, creating a lush closed environment where most of the forest's animal life resides.
 
 C. The understorey, lying between the canopy and the forest floor, is a region of deep shade and high humidity. Here, plants adapted to low-light conditions—large-leafed shrubs, climbers, and shade-tolerant palms—compete for whatever light filters through the canopy above. The forest floor itself receives as little as two percent of the sunlight that falls on the canopy, yet it is teeming with life: leaf-cutter ants harvesting vegetation, decomposer fungi breaking down fallen organic matter, and an extraordinary variety of invertebrates, amphibians, and small mammals.
 
-D. Much of the biological richness of rainforests results from intricate symbiotic relationships between species. The Brazil nut tree provides a striking example: it depends on a specific species of large bee, the orchid bee, for pollination—no other insect is large enough to access the flower. The same tree's seeds are dispersed almost exclusively by agoutis, large rodents equipped with teeth strong enough to crack the tree's extremely tough seed pods. Remove either partner from this relationship and the Brazil nut tree cannot successfully reproduce—a reminder of how profoundly interconnected rainforest species can be.
+D. Much of the biological richness of rainforests results from intricate symbiotic relationships between species. The Brazil nut tree provides a striking example. Its complex flowers are pollinated by several kinds of strong, large-bodied bee, including orchid bees; smaller visitors cannot readily reach the reproductive structures. After a heavy fruit falls, agoutis are among the few animals able to gnaw through its hard casing. They eat some seeds and bury others, occasionally forgetting a cache from which a new tree can grow. The relationship is therefore not a one-insect, one-rodent mechanism, yet the loss of an effective group of pollinators or seed dispersers can sharply reduce successful reproduction. Such dependence helps explain why mature Brazil nut trees may persist in disturbed land while producing few replacements.
 
-E. Rainforests also perform vital services for the global climate system. Through photosynthesis, tropical forests absorb enormous quantities of carbon dioxide, acting as a major carbon sink. It is estimated that the Amazon rainforest alone stores around eighty to one hundred and twenty billion tonnes of carbon—a store that is being partially released as deforestation continues. Rainforests also drive regional weather patterns: through evapotranspiration, forests release vast quantities of water vapour, which condenses to form clouds and precipitation. Studies have shown that the Amazon basin generates its own rainfall system, with "flying rivers" of moisture circulating from the Atlantic coast into the continental interior, sustaining agriculture in Brazil's southern states.
+E. Rainforests also perform vital services for the climate system. Through photosynthesis, growing vegetation removes carbon dioxide, while respiration, decay, drought and fire return it; whether a region acts as a carbon sink in a given period is the balance of these flows. Tropical forests also store vast quantities of carbon in living biomass and soil, so clearing or severe degradation can release part of that stock. Through evapotranspiration, trees transfer water from soil to the atmosphere. Moisture can be recycled in later rainfall and transported beyond the forest, sometimes described informally as “flying rivers”. The metaphor should not suggest a literal airborne channel or a climate generated by trees alone: winds bring Atlantic moisture into the basin, and vegetation influences how that water is recycled and carried onward.
 
-F. The threats facing tropical rainforests are severe. Deforestation—driven by agricultural expansion, cattle ranching, logging, and mining—destroys an estimated ten million hectares of tropical forest each year globally. In the Amazon, analysis of satellite imagery has revealed that in addition to deforestation, large areas are being degraded by selective logging, fire, and fragmentation—processes that weaken the forest's resilience without immediately converting it to a different land use. Scientists warn that the Amazon may be approaching a "tipping point" at which large-scale dieback becomes self-reinforcing: as the forest shrinks, its capacity to generate its own rainfall diminishes, threatening the survival of the remaining forest.
+F. The threats facing tropical rainforests are severe. Agricultural expansion, including cattle ranching and commodity crops, is a major driver of permanent conversion; roads, mining and settlement can open further areas. Logging does not always remove the forest category from a map, but selective extraction, fire and fragmentation still degrade habitat and weaken resilience. This distinction matters because a deforestation statistic alone misses damaged forest that remains standing. The FAO's 2025 global assessment reports that the worldwide rate of deforestation has slowed compared with earlier decades, while warning that forests remain under pressure. Scientists also examine the risk of an Amazon “tipping point”: interactions among clearing, warming, fire and reduced rainfall could make large-scale change self-reinforcing. The phrase describes a risk under particular conditions, not a single universally agreed percentage at which the whole basin suddenly and irreversibly changes.
 
-G. Conservation responses have included the expansion of protected areas, the development of sustainable forestry practices, and payment-for-ecosystem-services schemes that compensate forest-dwelling communities for protecting the forest. Brazil's implementation of the Amazon Fund, financed largely by Norway, was associated with a dramatic reduction in deforestation rates in the 2000s, demonstrating that policy interventions can be effective when properly resourced and enforced. However, political commitment to conservation has fluctuated significantly, and the long-term protection of tropical rainforests ultimately depends on resolving the tension between the economic pressures driving deforestation and the global ecological services these forests provide.`,
+G. Conservation responses include protected and Indigenous territories, enforcement against illegal clearing, supply-chain measures, restoration and payment-for-ecosystem-services programmes that can compensate landholders or communities for verified protection. Brazil's Amazon Fund, supported substantially by international donations, finances projects intended to prevent and monitor deforestation and promote sustainable use. It is one component of policy rather than proof that a single fund caused every historical change in forest loss. Outcomes also depend on land rights, credible monitoring, consistent law enforcement and economic alternatives that local people can use. A protected boundary on paper offers little defence if agencies lack staff or communities are excluded from decisions. Long-term protection therefore requires both ecological evidence and institutions able to address the incentives behind conversion.`,
       questions: [
         {
           type: 'matching',
@@ -400,13 +464,13 @@ G. Conservation responses have included the expansion of protected areas, the de
           qRange: [14, 20],
           groupLabel: 'The passage has seven paragraphs, A–G. Which paragraph contains the following information?',
           items: [
-            { num: 14, stem: 'An example of how the removal of one species can prevent another from reproducing', answer: 'D' },
+            { num: 14, stem: 'An example of animal groups whose loss can reduce a tree\'s successful reproduction', answer: 'D' },
             { num: 15, stem: 'A description of conditions found in the shaded middle layer of the forest', answer: 'C' },
-            { num: 16, stem: 'A reference to a financial scheme that rewarded communities for preserving forest', answer: 'G' },
+            { num: 16, stem: 'A reference to financial mechanisms used to support forest protection', answer: 'G' },
             { num: 17, stem: 'An account of how forests generate and recycle their own rainfall', answer: 'E' },
             { num: 18, stem: 'A description of the animals found in the uppermost forest layer', answer: 'B' },
-            { num: 19, stem: 'A warning about a threshold beyond which forest loss could become irreversible', answer: 'F' },
-            { num: 20, stem: 'Statistics about the total number of species found in the Amazon basin', answer: 'A' },
+            { num: 19, stem: 'A warning that the idea of a forest threshold should not be treated as one fixed number', answer: 'F' },
+            { num: 20, stem: 'An explanation of why biodiversity totals remain estimates', answer: 'A' },
           ],
           endings: [
             { letter: 'A', text: 'Paragraph A' },
@@ -425,7 +489,7 @@ G. Conservation responses have included the expansion of protected areas, the de
           qRange: [21, 26],
           groupLabel: 'Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
           title: 'Rainforest Ecology and Conservation',
-          template: `Tropical rainforests contain more than half of all known species despite covering only six percent of {{21}}. The forest is structured in distinct layers; the {{22}} layer, the tallest, is exposed to full sunlight and strong winds. The Brazil nut tree illustrates {{23}} relationships, depending on orchid bees for pollination and agoutis for seed dispersal. The Amazon acts as a massive {{24}}, storing billions of tonnes of carbon. Deforestation, driven partly by cattle {{25}}, destroys millions of hectares annually and may push the Amazon toward a {{26}} that makes large-scale dieback self-reinforcing.`,
+          template: `Rainforests occupy only a small proportion of the planet's {{21}} but contain exceptional biodiversity. The forest is structured in distinct layers; the {{22}} layer, the tallest, is exposed to full sunlight and strong winds. The Brazil nut tree illustrates {{23}} relationships involving pollinators and seed dispersers. Depending on the balance of carbon flows, forest can act as a {{24}}. Permanent conversion is driven partly by cattle {{25}}, while interacting pressures may increase the risk of a {{26}} that makes large-scale change self-reinforcing.`,
           blanks: [
             { num: 21, answers: ['land surface'] },
             { num: 22, answers: ['emergent'] },
@@ -445,17 +509,17 @@ G. Conservation responses have included the expansion of protected areas, the de
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `The History of Money
 
-Money is so fundamental to modern life that it is easy to forget that it is an invention—a social technology developed by human beings to solve the practical problems of exchange. The history of money is, in a sense, the history of a series of solutions to successive problems: how to facilitate trade between strangers, how to store value across time, how to coordinate economic activity at ever-increasing scales.
+Money is so fundamental to modern life that it is easy to treat it as a natural object rather than a social technology: a set of instruments and conventions used to quote prices, settle obligations and transfer purchasing power. Its history is not a single ladder on which every society moved from barter to coins, then notes and finally digital payment. Different forms have coexisted, disappeared and returned, and historians disagree about how particular transitions should be interpreted.
 
-The popular belief that money evolved from barter has been questioned by economic historians and anthropologists. The barter story—in which primitive societies traded goods directly until the inefficiency of finding someone who simultaneously wanted what you had and had what you wanted prompted the invention of money as a medium of exchange—is intuitively appealing but largely unsupported by historical or ethnographic evidence. Anthropologist David Graeber, in his 2011 book Debt: The First 5,000 Years, argued that what actually preceded monetary economies was a complex system of mutual credit and social obligation. People in early communities kept track of debts and obligations informally, and money emerged not as a solution to barter but as a way to formalise and transfer pre-existing credit relationships.
+The familiar barter story says that direct exchange became impractical because two people had to want one another's goods at the same time. Money then supposedly appeared as a convenient medium. Economic historians and anthropologists have questioned that universal sequence: ethnographic evidence does not reveal a pure barter economy from which all money developed. In one influential account, anthropologist David Graeber emphasised mutual credit and social obligation in early communities. Units of account could record who owed what even when no coin changed hands. This argument does not prove that barter never occurred; it challenges the claim that barter was necessarily the common first stage.
 
-The earliest physical money appears in the form of commodity money—objects that had intrinsic value independent of their use as a medium of exchange. Grain, cattle, shells, and cloth have all served this function at various points in human history. Metal coinage is generally traced to the kingdom of Lydia, in present-day western Turkey, around the seventh century BCE. Lydian coins were made from electrum, a naturally occurring alloy of gold and silver, and were stamped with a symbol guaranteeing their weight and purity. Coinage spread rapidly across the ancient world, adopted by Greek city-states, the Persian Empire, and eventually Rome, where it became integral to the administration of a vast, monetised economy.
+Many societies used commodity money—objects valued for their material or accepted use as well as for exchange. Grain, cattle, cloth and cowrie shells have all served monetary functions, although their roles varied by place. Standardised metal coinage is commonly associated with Lydia in western Anatolia during the seventh century BCE. Surviving early coins were made of electrum, a gold-and-silver alloy, and carried marks linked to authority and weight. Calling any example the uncontested “first coin” is risky because dating is revised and metal currencies developed in more than one region. What stamping achieved was easier recognition: users did not have to test an anonymous lump of metal afresh in every transaction.
 
-Paper money originated in Tang-dynasty China around the seventh century CE, initially as certificates of deposit held by wealthy merchants who found it impractical to carry large amounts of copper coin. These certificates, known as "flying money," could be exchanged for coin at official depositories. By the Song dynasty, the government had begun issuing paper notes directly. When Marco Polo described Chinese paper money to European readers in the thirteenth century, they found the concept almost incomprehensible: the idea that pieces of paper, backed by nothing more tangible than imperial authority, could function as money seemed to defy common sense. European nations did not develop their own paper currencies in earnest until the seventeenth century, with Sweden issuing the first European banknotes in 1661.
+Tang-dynasty China used paper instruments called “flying money” to transfer value without carrying great loads of copper coin across long distances. These remittance documents were important predecessors, but were not identical to later notes circulating generally from person to person. In Song China, privately issued jiaozi developed into a more recognisable paper currency and the state subsequently controlled issue. When Marco Polo described paper currency under Mongol rule, European readers encountered a striking demonstration of authority supporting acceptance. Europe nonetheless had its own changing network of bills, receipts and credit. The first generally recognised European banknotes were issued in Sweden in 1661 by Stockholms Banco. They proved convenient beside heavy copper money, but excessive issue contributed to loss of value and failure of the bank.
 
-The development of central banking in the seventeenth and eighteenth centuries was a further transformation. Central banks such as the Bank of England, founded in 1694, issued banknotes backed initially by gold reserves—the gold standard—providing a disciplined anchor for the money supply. The gold standard was progressively abandoned during the twentieth century, culminating in the United States formally ending gold convertibility in 1971 under President Nixon. Since then, all major currencies have been "fiat" money—backed not by any physical commodity but by government decree and public trust. The stability of fiat money depends on confidence in the issuing authority, as episodes of hyperinflation—in Weimar Germany, Zimbabwe, and Venezuela—have demonstrated when that confidence collapses.
+The development of note-issuing banks and later central banks was another transformation. The Bank of England, founded in 1694, first issued handwritten promises to pay depositors; fixed denominations came later. Convertibility into coin or bullion varied over time and was sometimes suspended. Under a gold standard, the monetary unit was legally tied to a quantity of gold, but countries joined, left and restored such arrangements on different schedules. Britain ended its interwar link in 1931, while the United States halted official dollar convertibility into gold in 1971. Modern fiat money is not redeemable for a fixed amount of a commodity. Its functioning depends on law, institutions, monetary policy and confidence that others will accept it—not on confidence alone or on the physical note's production cost.
 
-The digital revolution has produced new forms of money. Electronic payments, credit cards, and digital wallets have made physical cash increasingly marginal in many economies. Cryptocurrency, beginning with Bitcoin in 2009, attempted to create a form of digital money that operates outside government and banking systems, relying instead on a decentralised computational network to validate transactions. Cryptocurrencies have attracted both enthusiastic adopters who see them as the future of finance and sceptical economists who question whether they can fulfil the core functions of money—medium of exchange, store of value, and unit of account—sufficiently well to challenge conventional currencies at scale.`,
+The digital revolution has changed how claims on money move. A card or bank transfer is not necessarily a new currency: it may simply transfer commercial-bank deposits denominated in the national unit. Cash use has fallen sharply in some economies but remains important in others and provides an offline option during technical failures. Bitcoin, launched in 2009, introduced a cryptoasset whose ledger is maintained through a decentralised computational network rather than a conventional central operator. That design does not place every cryptocurrency wholly outside law or financial intermediaries; users often depend on regulated exchanges and custodians. Supporters value the possibility of transfer without a central ledger keeper, while critics point to price volatility, capacity, energy use in some designs and limited use for ordinary pricing. Whether a cryptoasset performs the three traditional functions—medium of exchange, store of value and unit of account—is an empirical question, not something guaranteed by its code.`,
       questions: [
         {
           type: 'mcq',
@@ -500,10 +564,10 @@ The digital revolution has produced new forms of money. Electronic payments, cre
           type: 'mcq',
           id: 'r3-q30',
           part: 7,
-          text: 'What does "fiat money" mean, according to the passage?',
+          text: 'What does “fiat money” mean, according to the passage?',
           options: [
             'Money that is backed by gold or silver reserves held by a central bank.',
-            'Currency whose value is supported by government decree and public trust.',
+            'Currency that is not redeemable for a fixed quantity of a commodity.',
             'Digital currency that operates outside the banking system.',
             'Money that can be exchanged for a fixed quantity of a physical commodity.',
           ],
@@ -515,11 +579,11 @@ The digital revolution has produced new forms of money. Electronic payments, cre
           part: 7,
           qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: The author describes money as a social technology invented to solve problems of exchange.\n32. {{32}}: Lydian coins were the first coins to be made exclusively from pure gold.\n33. {{33}}: Chinese "flying money" was initially used by wealthy merchants rather than ordinary citizens.\n34. {{34}}: The Bank of England was the first central bank ever established in the world.\n35. {{35}}: The United States formally ended gold convertibility of the dollar in 1971.\n36. {{36}}: The passage suggests that cryptocurrencies have successfully replaced conventional currencies in most economies.`,
+          template: `31. {{31}}: The writer presents money as a social technology rather than a natural object.\n32. {{32}}: Early Lydian coins consisted exclusively of pure gold.\n33. {{33}}: “Flying money” and later generally circulating notes performed exactly the same function.\n34. {{34}}: The Bank of England was the first central bank established anywhere in the world.\n35. {{35}}: The United States halted official dollar convertibility into gold in 1971.\n36. {{36}}: A digital payment always represents a currency different from national money.`,
           blanks: [
             { num: 31, answers: ['YES'] },
             { num: 32, answers: ['NO'] },
-            { num: 33, answers: ['YES'] },
+            { num: 33, answers: ['NO'] },
             { num: 34, answers: ['NOT GIVEN'] },
             { num: 35, answers: ['YES'] },
             { num: 36, answers: ['NO'] },
@@ -531,7 +595,7 @@ The digital revolution has produced new forms of money. Electronic payments, cre
           part: 7,
           qRange: [37, 40],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
-          template: `37. Objects with value independent of their use as money, such as grain or shells, are described as {{37}} money.\n38. The earliest metal coins are generally associated with the kingdom of {{38}} in present-day Turkey.\n39. The abandonment of the {{39}} meant that currencies were no longer tied to a physical commodity.\n40. Bitcoin, launched in 2009, relies on a {{40}} network to validate transactions rather than banks or governments.`,
+          template: `37. Grain, cloth and shells are examples of objects that have served as {{37}} money.\n38. Standardised early coinage is commonly associated with {{38}} in western Anatolia.\n39. Under a {{39}}, a monetary unit was legally tied to a quantity of gold.\n40. Bitcoin records transactions through a {{40}} network rather than a conventional central operator.`,
           blanks: [
             { num: 37, answers: ['commodity'] },
             { num: 38, answers: ['Lydia'] },
@@ -554,8 +618,8 @@ The digital revolution has produced new forms of money. Electronic payments, cre
           part: 8,
           taskNumber: 1,
           imageUrl: '/assets/ielts/charts/set14-task1.svg',
-          imageAlt: 'Process diagram showing how municipal wastewater is treated and reused',
-          stimulus: 'The diagram below illustrates the stages involved in treating municipal wastewater and the ways in which the treated water is subsequently used.',
+          imageAlt: 'A simplified process diagram in which municipal wastewater passes through screening, primary settling, biological treatment and disinfection before reuse or discharge; sludge from settling is sent for biogas recovery',
+          stimulus: 'The diagram below shows a simplified process used by a municipal plant to treat wastewater, including a separate use for the sludge and two possible destinations for the treated water.',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
@@ -573,8 +637,8 @@ The digital revolution has produced new forms of money. Electronic payments, cre
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'Artificial intelligence is increasingly being used to make decisions that significantly affect people\'s lives, such as in hiring, loan applications, and medical diagnosis.',
-          text: 'Do you think this is a positive development? What safeguards, if any, should be put in place? Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
+          stimulus: 'Some people believe that universities should prohibit students from using generative artificial intelligence for assessed work. Others think that students should be taught to use these tools responsibly as part of their education.',
+          text: 'Discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
           minWords: 250,
         },
       ],
@@ -597,6 +661,10 @@ The digital revolution has produced new forms of money. Electronic payments, cre
             'How comfortable are you with technology making decisions on your behalf?',
             'Can you think of an example where technology has made your life more convenient?',
             'Do you ever worry about the amount of personal data that companies collect about you?',
+            'Is there a piece of technology that you find difficult to use?',
+            'Do people in your family use technology in similar ways?',
+            'Would you like to spend less time using digital devices?',
+            'What new technology would you like to learn to use?',
           ],
         },
         {
@@ -618,6 +686,8 @@ The digital revolution has produced new forms of money. Electronic payments, cre
             'Who should be responsible when an AI system makes a mistake that harms someone?',
             'Do you think the benefits of AI technology are distributed fairly across society?',
             'How can societies ensure that technological development serves the public good?',
+            'Why do people sometimes trust a computer recommendation more than advice from another person?',
+            'Should governments regulate new technologies before their long-term effects are fully known?',
           ],
         },
       ],
