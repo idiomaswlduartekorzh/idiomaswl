@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData'
+import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData'
 import WeLearnDownloadButton from '@/components/learning/WeLearnDownloadButton'
 import { IELTS_INTRODUCTION_PDF, WELEARN_PDF_BASE_URL, WELEARN_PDF_NOTICE, WELEARN_PDF_OWNER, WELEARN_PDF_STANDARD_VERSION } from '@/lib/welearn-pdf-standards'
 
@@ -21,11 +21,6 @@ export const metadata: Metadata = {
   },
 }
 
-const faqs = [
-  { question: 'Que incluye este PDF de IELTS Writing Task 1?', answer: 'Incluye una explicacion de la introduccion, tecnicas de paraphrasing, vocabulario, modelos para seis tipos visuales, ejercicios guiados y respuestas explicadas.' },
-  { question: 'Este PDF es oficial de IELTS?', answer: 'No. Es material original de Idiomas WeLearn para estudio independiente y no representa a IELTS ni utiliza sus logotipos oficiales.' },
-]
-
 export default function IeltsIntroductionPdfPage() {
   return (
     <main className="wl-section">
@@ -41,7 +36,6 @@ export default function IeltsIntroductionPdfPage() {
         teaches={['IELTS Academic Writing Task 1', 'paraphrasing', 'introduccion de graficos', 'vocabulario academico']}
         isPartOf={{ name: 'IELTS Academic Writing Task 1', url: `${WELEARN_PDF_BASE_URL}/practica/ielts/academic/writing/task1` }}
       />
-      <FaqJsonLd faqs={faqs} />
       <div className="wrap">
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
           <nav aria-label="Breadcrumb" style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap', marginBottom: '1.5rem', color: 'var(--muted)', fontFamily: 'var(--mono)', fontSize: '0.8rem' }}>

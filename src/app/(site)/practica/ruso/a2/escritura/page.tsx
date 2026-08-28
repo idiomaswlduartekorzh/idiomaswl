@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Escritura en Ruso A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/ruso/a2/escritura"
+        url="https://www.idiomaswl.com/practica/ruso/a2/escritura"
         description="Ejercicios de escritura guiada de Ruso nivel A2 con modelos en cirílico, transliteración, vocabulario y checklist."
       />
       <Content />

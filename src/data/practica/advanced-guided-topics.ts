@@ -1,4 +1,5 @@
 import { DUNNING_KRUGER_GUIDED_LESSON } from './advanced-guided-dunning.ts'
+import { HYPERGAMY_GUIDED_LESSON } from './advanced-guided-hypergamy.ts'
 
 export type GuidedEvidenceClass = 'empirical' | 'contested-social' | 'normative'
 
@@ -99,7 +100,6 @@ export interface GuidedAdvancedLesson {
   openingStatements?: {
     title: string
     instruction: string
-    minimum: number
     statements: GuidedOpeningStatement[]
   }
   discussion: {
@@ -139,13 +139,13 @@ export interface GuidedAdvancedLesson {
 }
 
 export const GUIDED_ADVANCED_PHASES = [
-  { id: 'discussion', label: 'Discussion', shortLabel: 'Discuss', minutes: '20' },
-  { id: 'baseline', label: 'First voice note', shortLabel: 'Voice I', minutes: '4' },
+  { id: 'claims', label: 'Starting claims', shortLabel: 'Choose', minutes: '4' },
+  { id: 'discussion', label: 'Discussion and first voice note', shortLabel: 'Discuss', minutes: '20' },
+  { id: 'vocabulary', label: 'Language preview', shortLabel: 'Words', minutes: '14' },
   { id: 'reading', label: 'Active reading', shortLabel: 'Read', minutes: '28' },
   { id: 'retrieval', label: 'What did you understand?', shortLabel: 'Retrieve', minutes: '10' },
-  { id: 'vocabulary', label: 'Precision vocabulary', shortLabel: 'Words', minutes: '12' },
-  { id: 'ielts', label: 'Evidence practice', shortLabel: 'Practice', minutes: '24' },
   { id: 'listening', label: 'Dual listening lab', shortLabel: 'Listen', minutes: '24' },
+  { id: 'ielts', label: 'Evidence practice', shortLabel: 'Practice', minutes: '24' },
   { id: 'synthesis', label: 'Synthesis and return', shortLabel: 'Return', minutes: '12' },
 ] as const
 
@@ -471,6 +471,7 @@ export const AFFECT_HEURISTIC_GUIDED_LESSON: GuidedAdvancedLesson = {
 export const GUIDED_ADVANCED_LESSONS: GuidedAdvancedLesson[] = [
   DUNNING_KRUGER_GUIDED_LESSON,
   AFFECT_HEURISTIC_GUIDED_LESSON,
+  HYPERGAMY_GUIDED_LESSON,
 ]
 
 export function getGuidedAdvancedLesson(slug: string) {

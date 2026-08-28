@@ -43,7 +43,7 @@ const TOOLS = [
   ['Critical final review', 'habilidades/critical-final-review', 'Check Task Response, logic, cohesion, vocabulary and grammar before finishing.'],
 ] as const;
 
-export default function Task2HubPage() {
+export default function Task2HubPage({ faqs }: { faqs: { question: string; answer: string }[] }) {
   return (
     <div lang="en" className={styles.page}>
       <div className={styles.shell}>
@@ -147,7 +147,7 @@ export default function Task2HubPage() {
           <div className={styles.studyGrid}>{TOOLS.map(([title, slug, detail]) => <Link key={title} href={`/practica/ielts/academic/writing/task2/${slug}`} className={styles.studyCard}><span>Transferable skill</span><h3>{title}</h3><p>{detail}</p><strong>Open the lesson <ArrowRight size={15} /></strong></Link>)}</div>
         </section>
 
-        <section className={styles.section} aria-labelledby="faq-heading"><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2 id="faq-heading">Structure without a rigid formula</h2></div><div className={styles.faqGrid}><article><h3>How many paragraphs should IELTS Writing Task 2 have?</h3><p>IELTS does not prescribe a fixed paragraph count. WeLearn teaches a four-paragraph default while adapting each paragraph to the exact prompt.</p></article><article><h3>Is Body 3 required?</h3><p>No. Add it only when a distinct third idea can be developed fully without weakening the other paragraphs or time control.</p></article><article><h3>Are the five essay types official IELTS task names?</h3><p>No. They are WeLearn teaching categories for recurring instructions within the same official Task 2 essay response.</p></article><article><h3>Where should I start?</h3><p>Start with Prompt Analysis, then build the introduction. The prompt determines the job of every later paragraph.</p></article></div></section>
+        <section className={styles.section} aria-labelledby="faq-heading"><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2 id="faq-heading">Structure without a rigid formula</h2></div><div className={styles.faqGrid}>{faqs.map(({ question, answer }) => <article key={question}><h3>{question}</h3><p>{answer}</p></article>)}</div></section>
       </div>
     </div>
   );

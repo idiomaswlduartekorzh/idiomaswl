@@ -500,7 +500,7 @@ export default function HomePage() {
           {ANSWERS.map((item, index) => (
             <details key={item.question} open={index === 0}>
               <summary>
-                <span>{String(index + 1).padStart(2, '0')}</span>
+                <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
                 {item.question}
                 <i aria-hidden="true">+</i>
               </summary>

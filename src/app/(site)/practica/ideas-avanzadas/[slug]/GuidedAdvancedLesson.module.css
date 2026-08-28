@@ -370,6 +370,25 @@
 .statementGrid .statementSelected > span { background: var(--guided-violet); border-color: var(--guided-violet); color: white; }
 .statementRequirement { color: var(--guided-rust); font-family: var(--mono); font-size: 0.66rem; font-weight: 750; margin: 0.85rem 0 0; }
 
+.statementFallback,
+.recorderLead {
+  align-items: flex-start;
+  background: var(--guided-violet-soft);
+  border: 1px solid color-mix(in srgb, var(--guided-violet) 28%, var(--wlp-line));
+  color: var(--guided-violet);
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.statementFallback strong,
+.recorderLead strong { color: var(--wlp-ink); }
+.statementFallback p,
+.recorderLead p { color: var(--wlp-muted); line-height: 1.55; margin: 0.25rem 0 0; }
+.recorderLead { display: block; margin-top: 1rem; }
+.recorderLead > span { display: block; font-family: var(--mono); font-size: 0.65rem; font-weight: 800; margin-bottom: 0.35rem; text-transform: uppercase; }
+.recorderLead > strong { display: block; font-size: 1.15rem; }
+
 .teacherNoteToggle {
   align-items: center;
   background: transparent;
@@ -404,7 +423,6 @@
 }
 
 .discussionActions button,
-.waitingGate button,
 .submitBar button,
 .phaseFooter button {
   align-items: center;
@@ -422,44 +440,6 @@
 }
 
 .discussionActions button:disabled { cursor: not-allowed; opacity: 0.42; }
-
-.gateClosed,
-.gateOpen {
-  align-items: center;
-  border: 1px solid var(--wlp-line);
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-.gateClosed { background: var(--wlp-raised); }
-.gateOpen { background: var(--guided-teal-soft); border-color: color-mix(in srgb, var(--guided-teal) 35%, var(--wlp-line)); }
-.gateClosed > div,
-.gateOpen > div { align-items: center; display: flex; gap: 0.75rem; }
-.gateClosed svg { color: var(--wlp-muted); }
-.gateOpen svg { color: var(--guided-teal); }
-.gateClosed strong,
-.gateOpen strong { color: var(--wlp-ink); display: block; }
-.gateClosed p,
-.gateOpen p { color: var(--wlp-muted); font-size: 0.82rem; margin: 0.2rem 0 0; }
-.gateClosed button,
-.gateOpen button { background: var(--guided-violet); border: 1px solid var(--guided-violet); border-radius: var(--wlp-r); color: white; font-weight: 800; padding: 0.7rem 0.9rem; }
-.gateOpen button { background: transparent; color: var(--guided-violet); }
-
-.waitingGate {
-  background: var(--wlp-raised);
-  border: 1px dashed var(--wlp-line);
-  color: var(--wlp-muted);
-  padding: 3rem 1.25rem;
-  text-align: center;
-}
-
-.waitingGate > svg { color: var(--guided-violet); }
-.waitingGate h3 { color: var(--wlp-ink); font-size: 1.4rem; margin: 0.8rem 0 0.35rem; }
-.waitingGate p { line-height: 1.6; margin: 0 auto 1.2rem; max-width: 540px; }
-.waitingGate button { background: var(--guided-violet); border: 1px solid var(--guided-violet); color: white; margin: 0 auto; }
 
 .recorder {
   background: var(--wlp-raised);
@@ -834,9 +814,6 @@
 .reset:focus-visible,
 .discussionBoard button:focus-visible,
 .statementGrid button:focus-visible,
-.gateClosed button:focus-visible,
-.gateOpen button:focus-visible,
-.waitingGate button:focus-visible,
 .recorder button:focus-visible,
 .readingBlockHeader:focus-visible,
 .vocabGrid button:focus-visible,
@@ -895,11 +872,7 @@
   .statementIntro { flex-direction: column; }
   .statementGrid { grid-template-columns: 1fr; }
   .sessionCard .reset { margin-right: 3.5rem; }
-  .gateClosed,
-  .gateOpen,
   .submitBar { align-items: stretch; flex-direction: column; }
-  .gateClosed button,
-  .gateOpen button,
   .submitBar button { justify-content: center; width: 100%; }
   .discussionBoard blockquote { font-size: 2rem; }
   .discussionActions { align-items: stretch; flex-direction: column; gap: 0.55rem; }

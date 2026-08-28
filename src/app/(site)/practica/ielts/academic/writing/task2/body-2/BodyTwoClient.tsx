@@ -11,7 +11,7 @@ import BodyTwoPracticeEngine from './BodyTwoPracticeEngine';
 import BodyTwoWorkshop from './BodyTwoWorkshop';
 import styles from '../introduccion/page.module.css';
 
-export default function BodyTwoClient() {
+export default function BodyTwoClient({ faqs }: { faqs: { question: string; answer: string }[] }) {
   const [activeType, setActiveType] = useState<EssayTypeId>('opinion');
   const [activeExample, setActiveExample] = useState(1);
   const lesson = BODY_TWO_LESSONS.find((item) => item.id === activeType) ?? BODY_TWO_LESSONS[0];
@@ -38,7 +38,7 @@ export default function BodyTwoClient() {
 
     <BodyTwoPracticeEngine essayType={activeType} />
 
-    <section className={styles.section}><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2>Make Body 2 progressive rather than repetitive</h2></div><div className={styles.faqGrid}><article><h3>Must Body 2 always present my second reason?</h3><p>No. It may add a second reason, explain the second view, propose solutions, develop the opposite side or answer the second direct question.</p></article><article><h3>Should Body 2 begin with “Secondly”?</h3><p>Not necessarily. The logical relationship should be clear, but a meaningful controlling sentence is more important than a mechanical numbered connector.</p></article><article><h3>Can Body 2 disagree with Body 1?</h3><p>It can contrast with Body 1 when the task requires two views or two sides. The writer’s thesis and final judgement must nevertheless remain consistent.</p></article><article><h3>How long should Body 2 be?</h3><p>IELTS sets no paragraph limit. WeLearn uses roughly 80–110 words as a flexible study target inside a complete response of at least 250 words.</p></article></div></section>
+    <section className={styles.section}><div className={styles.sectionHeading}><p className={styles.kicker}>Frequently asked questions</p><h2>Make Body 2 progressive rather than repetitive</h2></div><div className={styles.faqGrid}>{faqs.map(({ question, answer }) => <article key={question}><h3>{question}</h3><p>{answer}</p></article>)}</div></section>
 
     <nav className={styles.nextLinks}><Link href="/practica/ielts/academic/writing/task2/introduccion"><FilePenLine size={18} /> Build the introduction</Link><Link href="/practica/ielts/academic/writing/task2/body-1"><Layers3 size={18} /> Build Body 1</Link><Link href="/practica/ielts/academic/writing/task2/conclusion">Build the conclusion <ArrowRight size={16} /></Link></nav>
   </div></div>;

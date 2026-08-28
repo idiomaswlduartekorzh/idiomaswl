@@ -1,9 +1,17 @@
 import process from 'node:process'
 import { ADVANCED_CYCLE, ADVANCED_LESSONS, ADVANCED_TOPICS } from '../src/data/practica/advanced-topics.ts'
+import { GUIDED_ADVANCED_LESSONS } from '../src/data/practica/advanced-guided-topics.ts'
 
 // Piso monotónico: estos dos ciclos ya están publicados y no pueden desaparecer.
 const PUBLISHED_FLOOR = 2
 const failures = []
+const publishedTopicSlugs = new Set(ADVANCED_TOPICS.filter(({ status }) => status !== 'planned').map(({ slug }) => slug))
+const publishedGuidedLessons = GUIDED_ADVANCED_LESSONS.filter(({ slug }) => publishedTopicSlugs.has(slug))
+const guidedSlugs = new Set(publishedGuidedLessons.map(({ slug }) => slug))
+const deliveredLessons = [
+  ...ADVANCED_LESSONS.filter(({ slug }) => !guidedSlugs.has(slug)),
+  ...publishedGuidedLessons,
+]
 
 const fail = (message) => failures.push(message)
 const requireText = (value, where) => {
@@ -37,26 +45,35 @@ function validateQuestions(questions, minimum, where) {
 unique(ADVANCED_TOPICS.map(({ slug }) => slug), 'Slugs de temas')
 unique(ADVANCED_LESSONS.map(({ slug }) => slug), 'Slugs de lecciones')
 unique(ADVANCED_LESSONS.map(({ sequence }) => sequence), 'Secuencias de lecciones')
+unique(GUIDED_ADVANCED_LESSONS.map(({ slug }) => slug), 'Slugs de lecciones guiadas')
+unique(deliveredLessons.map(({ sequence }) => sequence), 'Secuencias publicadas')
 if (ADVANCED_CYCLE.length !== 6) fail(`El ciclo debe conservar 6 movimientos; tiene ${ADVANCED_CYCLE.length}.`)
-if (ADVANCED_LESSONS.length < PUBLISHED_FLOOR) fail(`Cayó por debajo del piso de ${PUBLISHED_FLOOR} lecciones.`)
+if (deliveredLessons.length < PUBLISHED_FLOOR) fail(`Cayó por debajo del piso de ${PUBLISHED_FLOOR} lecciones.`)
 
 const publishedTopics = ADVANCED_TOPICS.filter(({ status }) => status !== 'planned')
-if (publishedTopics.length !== ADVANCED_LESSONS.length) {
-  fail(`Hay ${publishedTopics.length} temas publicados y ${ADVANCED_LESSONS.length} lecciones.`)
+if (publishedTopics.length !== deliveredLessons.length) {
+  fail(`Hay ${publishedTopics.length} temas publicados y ${deliveredLessons.length} lecciones activas.`)
 }
-const sequence = ADVANCED_LESSONS.map(({ sequence }) => sequence).sort((a, b) => a - b)
-const expected = Array.from({ length: ADVANCED_LESSONS.length }, (_, index) => index + 1)
+const sequence = deliveredLessons.map(({ sequence }) => sequence).sort((a, b) => a - b)
+const expected = Array.from({ length: deliveredLessons.length }, (_, index) => index + 1)
 if (sequence.join(',') !== expected.join(',')) fail(`La secuencia debe ser ${expected.join(',')}; es ${sequence.join(',')}.`)
 
 for (const topic of publishedTopics) {
-  if (!ADVANCED_LESSONS.some(({ slug }) => slug === topic.slug)) fail(`El tema ${topic.slug} no tiene lección.`)
+  const lesson = deliveredLessons.find(({ slug }) => slug === topic.slug)
+  if (!lesson) {
+    fail(`El tema ${topic.slug} no tiene lección.`)
+    continue
+  }
+  const minutes = 'guidedMinutes' in lesson ? lesson.guidedMinutes : lesson.minutes
+  if (topic.level !== lesson.level || topic.minutes !== minutes) fail(`La lección activa ${topic.slug}: nivel o duración no coincide con el catálogo.`)
+  if ('category' in lesson && topic.category !== lesson.category) fail(`La lección activa ${topic.slug}: categoría no coincide con el catálogo.`)
 }
 
 for (const lesson of ADVANCED_LESSONS) {
   const where = `Lección ${lesson.sequence} (${lesson.slug})`
   const topic = publishedTopics.find(({ slug }) => slug === lesson.slug)
   if (!topic) fail(`${where}: no está disponible en el catálogo.`)
-  if (topic && (topic.level !== lesson.level || topic.minutes !== lesson.minutes || topic.category !== lesson.category)) {
+  if (topic && !guidedSlugs.has(lesson.slug) && (topic.level !== lesson.level || topic.minutes !== lesson.minutes || topic.category !== lesson.category)) {
     fail(`${where}: nivel, duración o categoría no coincide con el catálogo.`)
   }
   for (const [label, value] of [
@@ -98,5 +115,5 @@ if (failures.length) {
   failures.forEach((failure) => console.error(`- ${failure}`))
   process.exitCode = 1
 } else {
-  console.log(`Ideas avanzadas íntegro: ${ADVANCED_LESSONS.length} lecciones y ${ADVANCED_TOPICS.length} temas.`)
+  console.log(`Ideas avanzadas íntegro: ${deliveredLessons.length} lecciones activas y ${ADVANCED_TOPICS.length} temas.`)
 }

@@ -49,14 +49,6 @@ export default async function GrammarTopicPage({ params }: Props) {
         provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
       },
       {
-        '@type': 'FAQPage',
-        mainEntity: topic.seo.map((s) => ({
-          '@type': 'Question',
-          name: s.heading,
-          acceptedAnswer: { '@type': 'Answer', text: s.paragraphs.join(' ') },
-        })),
-      },
-      {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Práctica', item: 'https://www.idiomaswl.com/practica' },

@@ -1,30 +1,12 @@
 import type { Metadata } from 'next';
 
-import { BreadcrumbJsonLd, FaqJsonLd, JsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import { BreadcrumbJsonLd, JsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import { PRACTICE_BASE_URL } from '@/data/practica-exams/seo-catalog';
 
 import EmailPromptBankClient from './EmailPromptBankClient';
 import { EMAIL_PROMPT_BANK } from './prompts';
 
 const URL = `${PRACTICE_BASE_URL}/practica/toefl/writing/write-an-email/banco-de-prompts`;
-
-const FAQS = [
-  {
-    question: '¿Estos prompts de TOEFL Write an Email son oficiales?',
-    answer:
-      'No. Son prompts originales de práctica creados por WeLearn. Usan el formato actual de Write an Email como referencia, pero no son material oficial de ETS.',
-  },
-  {
-    question: '¿Qué debe tener un buen email TOEFL?',
-    answer:
-      'Debe tener propósito claro, tono adecuado para el destinatario, respuesta completa a la situación, detalles suficientes y un cierre accionable como pedir confirmación, proponer una opción o agradecer.',
-  },
-  {
-    question: '¿Integrated Writing forma parte de este banco?',
-    answer:
-      'No. Este banco se enfoca en Write an Email, una tarea actual de TOEFL iBT Writing. Integrated Writing permanece como ruta legacy/síntesis complementaria.',
-  },
-];
 
 export const metadata: Metadata = {
   title: 'TOEFL Write an Email prompts: banco de práctica',
@@ -65,7 +47,6 @@ export default function Page() {
         ]}
         isPartOf={{ name: 'TOEFL Writing', url: `${PRACTICE_BASE_URL}/practica/toefl/writing` }}
       />
-      <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },

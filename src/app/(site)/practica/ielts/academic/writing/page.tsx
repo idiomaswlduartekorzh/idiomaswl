@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData'
+import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData'
 import Content from './Content'
 
 export const metadata: Metadata = {
@@ -16,19 +16,6 @@ export const metadata: Metadata = {
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/academic/writing'
 
-const FAQS = [
-  {
-    question: 'What does IELTS Academic Writing include?',
-    answer:
-      'IELTS Academic Writing includes Task 1, a response of at least 150 words about visual information, and Task 2, an essay of at least 250 words.',
-  },
-  {
-    question: 'How does WeLearn organise Writing practice?',
-    answer:
-      'WeLearn separates the official format from strategy: first understand Task 1 and Task 2, then practise micro-skills, prompt banks, annotated models and rubric-based review.',
-  },
-]
-
 export default function Page() {
   return (
     <>
@@ -39,7 +26,6 @@ export default function Page() {
         teaches={['IELTS Writing Task 1', 'IELTS Writing Task 2', 'essay writing', 'visual data description']}
         isPartOf={{ name: 'IELTS Academic', url: 'https://www.idiomaswl.com/practica/ielts/academic' }}
       />
-      <FaqJsonLd faqs={FAQS} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },

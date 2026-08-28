@@ -37,132 +37,18 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.idiomaswl.com/clases-de-italiano' },
 };
 
-const faqJsonLd = {
+const faqJsonLd = (faqs: ReadonlyArray<{ q: string; a: string }>) => ({
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: '¿Necesito saber italiano para empezar?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. Empezamos desde A1 absoluto. El italiano es el idioma más cercano al español entre las lenguas romances — progresarás más rápido de lo que esperas.',
-      },
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: a,
     },
-    {
-      '@type': 'Question',
-      name: '¿Para qué sirve el CILS?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El CILS (Certificazione di Italiano come Lingua Straniera) es la certificación oficial de la Universidad para Extranjeros de Siena. Es reconocida para ciudadanía italiana, visas de estudio y trabajo en Italia, y universidades italianas.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Qué nivel de italiano necesito para la ciudadanía italiana?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El gobierno italiano exige demostrar nivel B1 de italiano para solicitar la ciudadanía por residencia (ciudadanía por naturalización). El CILS B1 o el CELI 2 son certificados aceptados.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto tiempo toma llegar al CILS B2?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Para hispanohablantes, que parten con una ventaja gramatical y de vocabulario muy alta, alcanzar B2 toma entre 12 y 18 meses con práctica constante. El italiano es el idioma más fácil para hispanohablantes entre las lenguas no hispanas.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuál es la diferencia entre el CILS y el CELI?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El CILS es de la Universidad para Extranjeros de Siena; el CELI es de la Universidad para Extranjeros de Perugia. Ambos son reconocidos oficialmente por el gobierno italiano. WeLearn prepara para los dos.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿El examen B1 de italiano para la ciudadanía se puede hacer online?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. Ni el CILS ni el CELI tienen versión online: son exámenes presenciales que se presentan en un centro autorizado, con documento de identidad. Lo que sí puedes hacer online es toda la preparación, incluidos los simulacros.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Dónde puedo presentar el examen CILS o CELI en Colombia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El CILS se presenta en el Istituto Italiano di Cultura de Bogotá, su sede en Colombia. El PLIDA lo administra la Sociedad Dante Alighieri, con comités en Bogotá y Cartagena, y se presenta también en Medellín a través de la Universidad EAFIT. No hay sede de examen en Bucaramanga ni en Santander, por lo que desde allí es necesario viajar. El calendario de sesiones cambia cada año, así que conviene confirmar fecha y sede antes de inscribirse.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto se demora el resultado del CILS B1?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Cuenta con meses, no con semanas. La corrección del CILS toma alrededor de tres meses y el certificado físico puede llegar medio año después del examen. El CELI publica resultados en torno a los tres meses. Si hay una cita consular con fecha fija, conviene planear hacia atrás desde esa fecha.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto tiempo toma llegar a B1 en italiano si ya hablo español?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Un hispanohablante puede alcanzar el B1 de italiano en 6 a 12 meses estudiando de 3 a 5 horas por semana. Es bastante más rápido que la referencia general del MCER porque compartes gramática y una gran parte del vocabulario.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Dónde puedo estudiar italiano en Bucaramanga?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'En Idiomas WeLearn, en la Calle 47 # 29-33, barrio Sotomayor, Bucaramanga. Hay clases presenciales para Bucaramanga, Floridablanca, Girón y Piedecuesta, y online para el resto del país. Varias universidades de la ciudad ofrecen italiano, pero normalmente en niveles iniciales y dirigido a su propia comunidad. El diagnóstico inicial es gratuito y el contacto es por WhatsApp al 300 500 4253.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Hay consulado de Italia en Bucaramanga?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sí. Italia tiene un consulado honorario en Bucaramanga cuya jurisdicción cubre Santander, Norte de Santander y Arauca, y que atiende con cita previa. El consulado gestiona el trámite, pero el examen de italiano no se presenta allí ni en la ciudad: para eso hay que viajar, normalmente a Bogotá.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Puedo presentar el examen B1 de italiano en Bucaramanga?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. No hay sede de CILS, CELI ni PLIDA en Bucaramanga ni en Santander. El CILS se presenta en Bogotá y el PLIDA en Bogotá, Cartagena o Medellín. La preparación completa sí puede hacerse desde Bucaramanga, presencial u online, viajando únicamente el día del examen.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Todavía existe el examen corto de B1 Ciudadanía en Bogotá?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. La sede de Bogotá administra únicamente los exámenes de los seis niveles del Marco Común Europeo y dejó de ofrecer las versiones hechas a la medida de un trámite, como el B1 de ciudadanía. Quien lo presente allí debe rendir el CILS B1 completo: cinco habilidades, cerca de cuatro horas de prueba escrita más el oral, y un puntaje mínimo exigido en cada habilidad por separado. Buena parte de las guías en español todavía describe el examen anterior.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Necesito certificar italiano si voy por ciudadanía por descendencia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Circula información contradictoria. El requisito de certificar nivel B1 aplica con claridad a las vías por matrimonio y por residencia. Para la vía por descendencia, la Embajada de Italia en Bogotá no lista un requisito de idioma en su información oficial, aunque varios medios lo han dado por hecho. Dado que las reglas cambiaron en 2025 y siguen en discusión, conviene confirmar el caso concreto con el consulado antes de pagar cualquier examen.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '¿Cuánto cuestan las clases de italiano en Bucaramanga?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'El precio depende de la intensidad semanal y de si se toman clases sueltas o un paquete de horas, ya que el valor por hora disminuye a mayor volumen. El diagnóstico inicial es gratuito y en él se define objetivo, nivel y frecuencia para dar el precio exacto de cada caso.',
-      },
-    },
-  ],
-};
+  })),
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -277,7 +163,7 @@ export default function ClasesDeItalianoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(FAQS)) }} />
       <main className={s.page}>
 
         {/* HERO */}

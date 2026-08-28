@@ -16,12 +16,18 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const topic = getAdvancedTopic(slug)
-  if (!topic || topic.status === 'planned') return {}
+  // Algunas lecciones guiadas ya tienen ruta prerenderizada aunque su ficha editorial
+  // siga en `planned`. No devolver `{}` aquí: Next heredaría el `index, follow` global y
+  // expondría una URL del piloto antes de que pase su puerta de publicación.
+  if (!topic || topic.status === 'planned') {
+    return { robots: { index: false, follow: true } }
+  }
 
   return {
     title: `${topic.title} in English B2–C1 | Integrated cycle`,
     description: `${topic.premise} Practise listening, long-form reading, vocabulary, analysis and production in advanced English.`,
     alternates: { canonical: `https://www.idiomaswl.com/practica/ideas-avanzadas/${topic.slug}` },
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${topic.titleEn} — integrated practice`,
       description: topic.premise,

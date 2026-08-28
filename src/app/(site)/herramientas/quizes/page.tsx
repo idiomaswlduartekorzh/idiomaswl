@@ -60,6 +60,10 @@ export default function QuizesPage() {
           ))}
         </ul>
 
+        <nav aria-label="Explorar por tipo de quiz" className="wlp-next">
+          <Link href="/herramientas/quizes/pronombres">Ver todos los quizes de pronombres →</Link>
+        </nav>
+
       </div>
     </div>
   )

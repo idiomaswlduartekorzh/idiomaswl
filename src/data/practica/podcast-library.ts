@@ -1,13 +1,13 @@
 export type PodcastLibraryEpisode = {
   id: string;
   slug: string;
-  examSlug: 'ielts' | 'toefl' | 'icfes' | 'cambridge-b2' | 'sat' | 'topik';
+  examSlug: 'ielts' | 'toefl' | 'icfes' | 'cambridge-b2' | 'sat' | 'topik' | 'goethe';
   title: string;
   description: string;
   duration: string;
   durationIso: string;
   language: 'English' | 'Español' | '한국어';
-  collection: 'IELTS' | 'TOEFL' | 'ICFES' | 'Cambridge B2' | 'SAT' | 'TOPIK';
+  collection: 'IELTS' | 'TOEFL' | 'ICFES' | 'Cambridge B2' | 'SAT' | 'TOPIK' | 'Goethe-Zertifikat';
   href: string;
   hubHref: string;
   audioSrc: string;
@@ -155,5 +155,20 @@ export const PODCAST_LIBRARY: readonly PodcastLibraryEpisode[] = [
     hubHref: '/examenes/topik',
     audioSrc: '/audio/topik/strategy-map/topik-i-7-day-routine-korean.mp3?v=20260826',
     accent: '#c8202e',
+  },
+  {
+    id: 'goethe-zertifikat-strategy-map',
+    slug: 'estrategias-para-aprobar-el-goethe-zertifikat',
+    examSlug: 'goethe',
+    title: 'Estrategias para aprobar el Goethe-Zertifikat',
+    description: 'Un mapa en español para elegir nivel, dominar los cuatro módulos y convertir cada simulacro en decisiones concretas de mejora.',
+    duration: '21:13',
+    durationIso: 'PT21M13S',
+    language: 'Español',
+    collection: 'Goethe-Zertifikat',
+    href: '/examenes/goethe/podcast/estrategias-para-aprobar-el-goethe-zertifikat',
+    hubHref: '/examenes/goethe',
+    audioSrc: '/audio/goethe/strategy-map/estrategias-para-aprobar-el-goethe-zertifikat.mp3?v=20260828',
+    accent: '#00975f',
   },
 ] as const;

@@ -13,7 +13,7 @@ const ESCUCHA = listeningCard(
 export const metadata: Metadata = {
   title: 'Francés B1 — Elige una habilidad',
   description: 'Francés B1: subjonctif, conditionnel, pronoms relatifs y discours indirect, con lectura, escritura, expresión oral, vocabulario y escucha.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/frances/b1' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/frances/b1' },
 };
 
 const HABILIDADES = [
@@ -31,7 +31,7 @@ export default function FrancesB1Page() {
       <CourseSchema
         name="Francés B1 — Lectura, Gramática, Vocabulario y más"
         description="Practica Francés nivel B1: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con subjonctif, conditionnel y feedback inmediato."
-        url="https://idiomaswl.com/practica/frances/b1"
+        url="https://www.idiomaswl.com/practica/frances/b1"
         educationalLevel="B1"
         teaches="Francés, habilidades MCER"
         inLanguage="fr"

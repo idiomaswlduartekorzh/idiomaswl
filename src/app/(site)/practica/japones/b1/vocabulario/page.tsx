@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Japonés B1 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/japones/b1/vocabulario"
+        url="https://www.idiomaswl.com/practica/japones/b1/vocabulario"
         description="Ejercicios de vocabulario de Japonés nivel B1: 8 sets temáticos con kanji, romaji y español. Flashcards, opción múltiple y escritura."
       />
       <Content />

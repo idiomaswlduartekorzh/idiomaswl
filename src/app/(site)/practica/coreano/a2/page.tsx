@@ -13,7 +13,7 @@ const ESCUCHA = listeningCard(
 export const metadata: Metadata = {
   title: 'Coreano A2 — Elige una habilidad',
   description: 'Coreano A2: 았/었어요 (pasado), -(으)려고 하다 (intención), -(으)ㄹ 것 같다 (conjetura), -지만 (contraste), -아/어서 (causa/secuencia). 6 habilidades interactivas.',
-  alternates: { canonical: 'https://idiomaswl.com/practica/coreano/a2' },
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/coreano/a2' },
 };
 
 const HABILIDADES = [
@@ -60,7 +60,7 @@ export default function CoreanoA2Page() {
       <CourseSchema
         name="Coreano A2 — Lectura, Gramática, Vocabulario y más"
         description="Practica Coreano nivel A2: lectura, gramática, vocabulario, escritura, habla y escucha. Ejercicios interactivos con feedback inmediato."
-        url="https://idiomaswl.com/practica/coreano/a2"
+        url="https://www.idiomaswl.com/practica/coreano/a2"
         educationalLevel="A2"
         teaches="Coreano, habilidades MCER"
         inLanguage="ko"

@@ -13,13 +13,13 @@ export const metadata: Metadata = {
   openGraph: { title: 'IELTS Task 2 Body Paragraph 1', description: 'Learn how Body 1 changes across five IELTS Task 2 question families.', url: `https://www.idiomaswl.com${path}`, type: 'article', locale: 'en_US' },
 };
 
-const faqs = [
-  { question: 'How many words should IELTS Task 2 Body Paragraph 1 contain?', answer: 'IELTS sets no paragraph word count. WeLearn uses roughly 80–110 words as a flexible study target within a complete response of at least 250 words.' },
-  { question: 'Must Body 1 always present the writer\'s first reason?', answer: 'No. Its function changes with the prompt: it may support a position, explain the first view, analyse a requested cause or problem, develop an advantage, or answer the first direct question.' },
-  { question: 'Does every IELTS body paragraph need a statistic?', answer: 'No. A clear plausible illustration can develop the reasoning. Writers should not invent a named study, authority or exact statistic.' },
-  { question: 'Can one sentence perform more than one paragraph function?', answer: 'Yes. The WeLearn labels make logic visible during practice, but fluent sentences may combine adjacent functions such as main idea and explanation.' },
+const FAQS = [
+  { question: 'How many words should Body 1 contain?', answer: 'IELTS sets no paragraph word count. WeLearn uses roughly 80–110 words as a study target, then adjusts it to the prompt and the complete 250+ word response.' },
+  { question: 'Must Body 1 always present my first reason?', answer: 'No. It presents the first reason in an opinion essay, but may explain the first view, analyse requested problems or answer the first direct question in other prompts.' },
+  { question: 'Does every paragraph need a real-world statistic?', answer: 'No. A clear, plausible example can illustrate reasoning. Do not invent a named study, authority or exact statistic.' },
+  { question: 'Can one sentence perform two blocks?', answer: 'Yes. The labels make logic visible during practice; fluent writing may combine a main idea with explanation or an example with its link.' },
 ];
 
 export default function Page() {
-  return <><Task2SkillStructuredData name="IELTS Task 2 Body Paragraph 1" path={path} teaches={['topic sentences', 'idea development', 'examples and evidence', 'paragraph cohesion', 'question-type-specific paragraph structure']} faqs={faqs} /><BodyOneClient /></>;
+  return <><Task2SkillStructuredData name="IELTS Task 2 Body Paragraph 1" path={path} teaches={['topic sentences', 'idea development', 'examples and evidence', 'paragraph cohesion', 'question-type-specific paragraph structure']} faqs={FAQS} /><BodyOneClient faqs={FAQS} /></>;
 }

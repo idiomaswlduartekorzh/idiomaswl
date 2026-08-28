@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Escritura en Japonés A2 — Tareas guiadas"
-        url="https://idiomaswl.com/practica/japones/a2/escritura"
+        url="https://www.idiomaswl.com/practica/japones/a2/escritura"
         description="5 tareas de escritura en japonés nivel A2: emails, relatos, comparaciones y más. Con modelo, criterios y checklist."
       />
       <Content />

@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <QuizSchema
         name="Vocabulario de Italiano A2 — Ejercicios interactivos"
-        url="https://idiomaswl.com/practica/italiano/a2/vocabulario"
+        url="https://www.idiomaswl.com/practica/italiano/a2/vocabulario"
         description="Ejercicios de vocabulario de Italiano nivel A2: tarjetas, listas temáticas y práctica activa."
       />
       <Content />
