@@ -31,6 +31,10 @@ const INTENTIONAL_OMISSION_RULES = [
     pattern: /^\/practica\/italiano\/(?:b1\/particelle|b2|b2\/integrato\/oath-of-allegiance|grammatica)$/,
     reason: 'ruta italiana complementaria fuera del catálogo publicado',
   },
+  {
+    pattern: /^\/practica\/ielts-writing-conectores$/,
+    reason: 'actividad IELTS heredada pendiente de retirar la estimación de banda',
+  },
 ];
 
 if (!fs.existsSync(MANIFEST)) {
