@@ -101,7 +101,8 @@ test('el log del MVP es secuencial y mantiene bloqueado el contenido clínico', 
     '../src/data/medical-residency/mvp-audit.ts'
   );
 
-  assert.deepEqual(MEDICAL_MVP_AUDIT_LOG.map(({ sequence }) => sequence), [1, 2, 3, 4]);
-  assert.equal(MEDICAL_MVP_AUDIT_LOG.at(-1)?.status, 'blocked');
-  assert.match(MEDICAL_MVP_AUDIT_LOG.at(-1)?.phase ?? '', /lote clínico/i);
+  assert.deepEqual(MEDICAL_MVP_AUDIT_LOG.map(({ sequence }) => sequence), [1, 2, 3, 4, 5]);
+  const clinicalBatch = MEDICAL_MVP_AUDIT_LOG.find((entry) => entry.id === 'MR-MVP-4');
+  assert.equal(clinicalBatch?.status, 'blocked');
+  assert.match(clinicalBatch?.phase ?? '', /lote clínico/i);
 });

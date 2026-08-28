@@ -101,4 +101,21 @@ export const MEDICAL_MVP_AUDIT_LOG = [
       'Falta persistencia de actas y eventos de auditoría.',
     ],
   },
+  {
+    id: 'MR-MVP-5',
+    sequence: 5,
+    recordedAt: '2026-08-28',
+    phase: 'Consejo automatizado y preparación de arranque',
+    status: 'completed',
+    scope: 'Contratos, prompts, consenso determinista, bloqueo humano y matriz adversarial sin llamadas a modelos.',
+    artifacts: [
+      'src/data/medical-residency/verification-agents.ts',
+      'src/data/medical-residency/verification-evals.ts',
+      'docs/medicina-residencias/AGENTES-VERIFICACION.md',
+      'docs/medicina-residencias/PROTOCOLO-VAMOS.md',
+    ],
+    sourceIds: ['ucaldas-call-2027'],
+    verification: ['check:medical-verification-agents', 'test:medical-verification-agents'],
+    blockers: [],
+  },
 ] as const satisfies readonly MedicalMvpAuditEntry[];

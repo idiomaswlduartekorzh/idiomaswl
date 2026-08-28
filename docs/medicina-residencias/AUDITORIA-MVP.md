@@ -4,7 +4,7 @@ Fecha de corte: 2026-08-28
 
 Rama: `codex/investigacion-qbanks-medicina-colombia`
 
-Estado: fases MR-MVP-1 a MR-MVP-3 completadas; MR-MVP-4 bloqueada.
+Estado: fases MR-MVP-1 a MR-MVP-3 y MR-MVP-5 completadas; MR-MVP-4 bloqueada.
 
 ## 1. Alcance auditado
 
@@ -44,10 +44,20 @@ Los campos ausentes siguen el contrato `value: null` + `status: not-published`. 
 | --- | --- | --- |
 | Contrato de blueprints | Aprobada | 9 perfiles, 10 fuentes, 2 simulacros completos habilitables |
 | Pruebas unitarias | Aprobada | 7 pruebas: evidencia, Atlántico, Libre, plan válido, entrada inválida y log MVP |
+| Consejo automatizado | Aprobada | 7 roles, 11 pruebas del controlador y matriz de 24 evals adversariales |
 | TypeScript | Aprobada | `npx tsc --noEmit` |
 | ESLint focalizado | Aprobada | rutas, datos, guardián y pruebas del subsistema |
-| Catálogo protegido | Pendiente de cierre final | se ejecuta otra vez antes del commit |
+| Catálogo protegido | Aprobada | 465 temas y módulos protegidos verificados antes del commit |
 | Build completo | Diferido | el corte sigue en `noindex`; se evita gastar recursos del equipo hasta preparar una integración o preview |
+
+### Consejo automatizado preparado
+
+- 7 roles versionados: 6 obligatorios y 1 especialista condicional;
+- controlador determinista que no usa un LLM para liberar estados;
+- 24 casos adversariales y umbrales de cero falsos pases;
+- invalidación por digest, prompt/modelo versionados y traza obligatoria;
+- resultado máximo sin médicos: `blocked-human-clinical-signoff`;
+- SDK, API y persistencia deliberadamente diferidos hasta la orden «vamos».
 
 ## 4. Auditoría de navegador
 
@@ -92,3 +102,4 @@ La primera producción de preguntas continúa bloqueada hasta registrar:
 6. prototipo de pregunta, explicación y reporte aprobado en móvil.
 
 Ningún lote clínico se genera, importa o publica antes de cumplir esas seis condiciones.
+La preauditoría por agentes no sustituye los puntos 1 y 2.

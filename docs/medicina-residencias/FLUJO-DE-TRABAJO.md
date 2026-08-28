@@ -77,6 +77,7 @@ La IA puede:
 - detectar ambigüedades, pistas de longitud o claves repetidas;
 - normalizar el formato y preparar tablas de cobertura;
 - comparar el borrador contra fuentes proporcionadas.
+- realizar una preauditoría adversarial versionada y producir un expediente de hallazgos.
 
 La IA no puede:
 
@@ -85,8 +86,11 @@ La IA no puede:
 - aprobar un ítem;
 - usar preguntas recordadas, filtradas o compradas;
 - publicar directamente en el banco.
+- firmar como médico o convertir consenso automatizado en aprobación clínica.
 
-Todo texto generado pasa por revisión humana. El autor no puede ser el único aprobador.
+Todo texto generado pasa por revisión humana. El autor no puede ser el único aprobador. El
+consejo descrito en `AGENTES-VERIFICACION.md` termina, como máximo, en
+`blocked-human-clinical-signoff` mientras falten médicos acreditados.
 
 ## 5. Puertas por pregunta
 
@@ -205,3 +209,11 @@ El primer lote no comienza hasta tener:
 - criterio de suspensión clínica y canal de reporte.
 
 La fase actual cumple la arquitectura de datos y evidencia. Aún faltan responsables clínicos, presupuesto editorial y prototipo UX antes de producir contenido en serie.
+
+### Preparación ya disponible
+
+Los roles y prompts automatizados, el controlador determinista, los contratos de atestación y
+24 casos adversariales ya están definidos sin instalar un runtime remoto. Cuando el usuario
+diga «vamos» se ejecutará primero `PROTOCOLO-VAMOS.md`: gobernanza y evals sintéticos, luego UX
+sintética y solo después un lote de cinco borradores retenidos. Esto no elimina las dos firmas
+médicas humanas exigidas para llegar a piloto.
