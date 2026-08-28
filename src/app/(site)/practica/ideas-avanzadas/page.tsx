@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     'Practise advanced English through integrated discussion, long-form reading, vocabulary, evidence questions, dual listening and original production.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ideas-avanzadas' },
+  robots: { index: false, follow: true },
   openGraph: {
     title: 'Advanced ideas — English B2–C1',
     description: 'One complex idea. Multiple forms of evidence. A cycle that returns to its opening claim.',

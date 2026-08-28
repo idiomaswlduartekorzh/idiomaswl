@@ -49,6 +49,7 @@
     "test:seo-guardrails": "node --test tests/seo-guardrails.test.mjs",
     "audit:seo:prod": "node scripts/audit-seo.mjs",
     "audit:seo:prod:quick": "node scripts/audit-seo.mjs --quick",
+    "audit:seo:coverage": "node scripts/audit-seo-index-coverage.mjs",
     "check:fonetica": "node --experimental-strip-types --no-warnings scripts/check-fonetica.mjs",
     "check:fonetica-coreano": "node --experimental-strip-types --no-warnings scripts/check-fonetica-coreano.mjs",
     "check:fonetica-frances": "node --experimental-strip-types --no-warnings scripts/check-fonetica-frances.mjs",

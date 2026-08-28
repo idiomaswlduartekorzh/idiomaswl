@@ -22,6 +22,32 @@ export function normalizeVisibleText(value) {
     .trim();
 }
 
+function attributeValue(tag, name) {
+  const pattern = new RegExp(`\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`, 'i');
+  const match = tag.match(pattern);
+  return match ? decodeHtml(match[1] ?? match[2] ?? match[3] ?? '') : null;
+}
+
+export function robotsDirectives(html) {
+  const directives = [];
+  for (const match of html.matchAll(/<meta\b[^>]*>/gi)) {
+    const name = attributeValue(match[0], 'name');
+    if (name?.toLowerCase() !== 'robots') continue;
+    const content = attributeValue(match[0], 'content');
+    if (content) directives.push(...content.toLowerCase().split(',').map((item) => item.trim()).filter(Boolean));
+  }
+  return [...new Set(directives)];
+}
+
+export function canonicalHref(html) {
+  for (const match of html.matchAll(/<link\b[^>]*>/gi)) {
+    const rel = attributeValue(match[0], 'rel')?.toLowerCase().split(/\s+/) ?? [];
+    if (!rel.includes('canonical')) continue;
+    return attributeValue(match[0], 'href');
+  }
+  return null;
+}
+
 function hasType(node, expected) {
   const types = Array.isArray(node?.['@type']) ? node['@type'] : [node?.['@type']];
   return types.includes(expected);
