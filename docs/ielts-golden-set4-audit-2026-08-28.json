@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "reportAsOf": "2026-08-28",
   "set": 4,
-  "status": "content-and-audio-golden-reference",
+  "status": "content-golden-audio-timing-replacement-pending",
   "metrics": {
     "listeningResponses": 40,
     "listeningWords": 2255,
@@ -38,7 +38,7 @@
     "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking"
   ],
   "reusedAndImproved": [
-    "All four owner-approved Listening parts, questions, answer evidence, casting and integral master.",
+    "All four owner-approved Listening parts, questions, answer evidence and casting; the published master remains available as historical legacy media.",
     "The three Reading themes and all forty response positions, with targeted factual corrections.",
     "The Writing and Speaking delivery components and their response persistence."
   ],
@@ -47,7 +47,8 @@
     "Replaced a publicly matching traffic-congestion prompt with an original two-view commuting-policy task.",
     "Expanded Speaking Part 1 and Part 3 to official-duration density and consolidated Part 3 into one response unit.",
     "Corrected the 2023 EV registration total, EU recycled-content year and categorical life-cycle emissions claim.",
-    "Removed a disputed exact dog-domestication date and clarified herd-animal benefits."
+    "Removed a disputed exact dog-domestication date and clarified herd-animal benefits.",
+    "Reclassified the published Listening master after the new official-sample timing audit detected a 141.545-second silent tail."
   ],
   "evidence": [
     "listening: numbering covers 1–40 exactly.",
@@ -319,5 +320,7 @@
     "Set 4 exposes the expected Listening media status."
   ],
   "failures": [],
-  "deferred": []
+  "deferred": [
+    "Replace or reassemble Listening only after the expanded script passes the timing-density gate; preserve the owner-acceptance history."
+  ]
 }

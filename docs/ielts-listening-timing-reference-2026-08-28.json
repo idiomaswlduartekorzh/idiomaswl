@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-08-28",
+  "method": {
+    "tool": "ffmpeg silencedetect",
+    "noiseDb": -40,
+    "minimumSilenceSeconds": 0.5,
+    "note": "Silence measurements and thresholds are internal WeLearn QA controls inferred from the cited public official sample; IELTS does not publish silence-ratio limits."
+  },
+  "officialSources": [
+    "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening",
+    "https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/academic/listening",
+    "https://takeielts.britishcouncil.org/blog/ielts-on-paper-vs-computer-how-to-choose",
+    "https://takeielts.britishcouncil.org/sites/default/files/ielts-guide-for-organisations.pdf"
+  ],
+  "thresholds": {
+    "minimumDurationSeconds": 1740,
+    "maximumDurationSeconds": 1800,
+    "minimumAudibleSeconds": 990,
+    "maximumSilenceRatio": 0.45,
+    "maximumSingleSilenceSeconds": 75,
+    "maximumTrailingSilenceSeconds": 5
+  },
+  "measurements": {
+    "officialPublicComputerSample": {
+      "audioSha256": "e80b35b4d18aab72ccac42eca13498909ad532173f532160eaa690c7c4833870",
+      "durationSeconds": 1778.393,
+      "totalSilenceSeconds": 677.693,
+      "audibleSeconds": 1100.7,
+      "silenceRatio": 0.3811,
+      "longestSilenceSeconds": 65.317,
+      "trailingSilenceSeconds": 0,
+      "status": "reference-passes"
+    },
+    "welearnSet4PublishedMaster": {
+      "audioSha256": "4fef56f5678bce1405bfa58cfc4619bf9e81c77a57132ad64173998b37c72ed2",
+      "durationSeconds": 1625,
+      "totalSilenceSeconds": 722.881,
+      "audibleSeconds": 902.119,
+      "silenceRatio": 0.4448,
+      "longestSilenceSeconds": 141.545,
+      "trailingSilenceSeconds": 141.545,
+      "status": "rejected-timing-replacement-required"
+    },
+    "welearnSet5UnpublishedCandidate": {
+      "audioSha256": "17f598cb7d5943f35bbad590ecc4d986dabc5b89703b8e2a17de2b5d098db14c",
+      "durationSeconds": 1740,
+      "totalSilenceSeconds": 1002.934,
+      "audibleSeconds": 737.066,
+      "silenceRatio": 0.5764,
+      "longestSilenceSeconds": 242.318,
+      "trailingSilenceSeconds": 242.318,
+      "status": "rejected-timing-not-publishable"
+    }
+  }
+}

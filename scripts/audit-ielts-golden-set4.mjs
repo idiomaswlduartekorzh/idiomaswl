@@ -8,9 +8,9 @@ runGoldenContentAudit({
   set: 4,
   reportAsOf: '2026-08-28',
   reportFile: 'ielts-golden-set4-audit-2026-08-28.json',
-  expectedMediaStatus: 'ready-existing',
-  successStatus: 'content-and-audio-golden-reference',
-  successNote: 'owner-accepted integral audio remains the release reference',
+  expectedMediaStatus: 'legacy-audio-under-review',
+  successStatus: 'content-golden-audio-timing-replacement-pending',
+  successNote: 'content remains Golden; the historically accepted audio now requires timing replacement',
   inheritedPhrases: [
     'The line graph below shows the consumption of 4 kinds of meat in a European country from 1979 to 2004',
     'The best way to solve traffic congestion in cities is to provide free public transport',
@@ -55,7 +55,7 @@ runGoldenContentAudit({
     'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking',
   ],
   reusedAndImproved: [
-    'All four owner-approved Listening parts, questions, answer evidence, casting and integral master.',
+    'All four owner-approved Listening parts, questions, answer evidence and casting; the published master remains available as historical legacy media.',
     'The three Reading themes and all forty response positions, with targeted factual corrections.',
     'The Writing and Speaking delivery components and their response persistence.',
   ],
@@ -65,6 +65,7 @@ runGoldenContentAudit({
     'Expanded Speaking Part 1 and Part 3 to official-duration density and consolidated Part 3 into one response unit.',
     'Corrected the 2023 EV registration total, EU recycled-content year and categorical life-cycle emissions claim.',
     'Removed a disputed exact dog-domestication date and clarified herd-animal benefits.',
+    'Reclassified the published Listening master after the new official-sample timing audit detected a 141.545-second silent tail.',
   ],
-  deferred: [],
+  deferred: ['Replace or reassemble Listening only after the expanded script passes the timing-density gate; preserve the owner-acceptance history.'],
 });

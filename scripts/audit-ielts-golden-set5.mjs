@@ -117,7 +117,7 @@ check(/liv(?:e|ing)|home/i.test(part2.cueCard) && /living|society/i.test(part3.t
 
 const publicKeys = toPublicIeltsMock(mock).sections.flatMap((section) => section.questions).reduce((sum, item) => sum + keyCount(item), 0);
 check(publicKeys === 0, 'Public payload contains zero objective answer keys.');
-check(mock.ieltsAcademic2026Blueprint.listeningMediaStatus === 'legacy-audio-under-review', 'Set 5 audio remains blocked pending final acceptance.');
+check(mock.ieltsAcademic2026Blueprint.listeningMediaStatus === 'legacy-audio-under-review', 'Set 5 audio remains under review after timing rejection.');
 
 const report = {
   schemaVersion: 1,
@@ -148,7 +148,7 @@ const report = {
   ],
   evidence,
   failures,
-  deferred: ['Listening final master publication and human audio acceptance'],
+  deferred: ['Expand the Listening script to the timing-density floor, reassemble without padding, repeat technical/ASR QA, then request human acceptance.'],
 };
 
 if (process.argv.includes('--write')) {

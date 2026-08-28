@@ -42,9 +42,11 @@ for (const blueprint of [set4Blueprint, set5Blueprint]) {
   assert(skillContract.writing.timeLimitSeconds === format.writing.timeLimitSeconds, `${blueprint.id}: Writing timer drifted from Golden.`);
 }
 
-assert(set4Blueprint.ieltsAcademic2026Blueprint.listeningMediaStatus === 'ready-existing', 'Set 4 must remain the production media reference.');
+assert(set4Blueprint.ieltsAcademic2026Blueprint.listeningMediaStatus === 'legacy-audio-under-review', 'Set 4 must preserve its published master without misclassifying it after timing reassessment.');
 assert(set5Blueprint.ieltsAcademic2026Blueprint.listeningMediaStatus !== 'ready-existing', 'Set 5 must not become Golden by bypassing final acceptance.');
 assert(standard.welearnInternalGates.listening.scriptsFreezeBeforePaidAudio, 'Paid audio must remain deferred until scripts freeze.');
+assert(standard.welearnInternalGates.listening.preSynthesisTimingWordsMinimum === 2800, 'Pre-synthesis scripts must satisfy the calibrated timing-density floor.');
+assert(standard.welearnInternalGates.listening.maximumTrailingSilenceSeconds === 5, 'Artificial trailing padding must fail closed.');
 assert(standard.welearnInternalGates.scoring.objectiveKeysServerOnly, 'Objective answer keys must remain server-only.');
 assert(standard.welearnInternalGates.scoring.overallRequiresAllFourSkills, 'Overall must require L/R/W/S.');
 assert(standard.welearnInternalGates.privacy.explicitRecordingConsent, 'Speaking recording consent must be explicit.');

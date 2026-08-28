@@ -153,10 +153,10 @@
     "Speaking Part 3 has enough abstract prompts.",
     "Speaking Parts 2 and 3 share a coherent topic.",
     "Public payload contains zero objective answer keys.",
-    "Set 5 audio remains blocked pending final acceptance."
+    "Set 5 audio remains under review after timing rejection."
   ],
   "failures": [],
   "deferred": [
-    "Listening final master publication and human audio acceptance"
+    "Expand the Listening script to the timing-density floor, reassemble without padding, repeat technical/ASR QA, then request human acceptance."
   ]
 }

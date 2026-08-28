@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "79a2bee7d889a8a4780c0ba2bdcc57cde82dfda916debf0f23eb58cb3700cb7c",
+  "manifest_sha256": "f9ea031bea843645fd8b4a48dd3f59f3958c546973eb9ba2746e66516e9bbcf3",
   "model_id": "eleven_flash_v2_5",
   "credits_per_character": 0.5,
   "api_price_usd_per_1000_characters": 0.05,
@@ -20,7 +20,7 @@
     "final_channels": 1,
     "final_bitrate": "64k",
     "minimum_duration_seconds": 1740,
-    "maximum_duration_seconds": 1860,
+    "maximum_duration_seconds": 1800,
     "integrated_loudness_lufs": -18,
     "normalization_true_peak_dbfs": -2.2,
     "max_true_peak_dbfs": -1.5,

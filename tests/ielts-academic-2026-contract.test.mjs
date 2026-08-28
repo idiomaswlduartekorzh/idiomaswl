@@ -147,11 +147,11 @@ test('sets whose integral Listening media is absent are visibly blocked, not sil
   assert.ok(listening.every(section => section.comingSoon && !section.audioUrl));
 });
 
-test('only owner-accepted Listening media is marked ready', () => {
+test('historical Listening media remains available but is never mislabeled after timing reassessment', () => {
   const acceptedPilot = withIeltsAcademic2026Blueprint(set4);
   const legacyAudio = withIeltsAcademic2026Blueprint(set5);
-  assert.equal(acceptedPilot.ieltsAcademic2026Blueprint.listeningMediaStatus, 'ready-existing');
-  assert.ok(acceptedPilot.sections.filter(section => section.skill === 'listening').every(section => section.mediaStatus === 'ready-existing'));
+  assert.equal(acceptedPilot.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');
+  assert.ok(acceptedPilot.sections.filter(section => section.skill === 'listening').every(section => section.mediaStatus === 'legacy-audio-under-review'));
   assert.equal(legacyAudio.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');
   const nextLegacyAudio = withIeltsAcademic2026Blueprint(set6);
   assert.equal(nextLegacyAudio.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');

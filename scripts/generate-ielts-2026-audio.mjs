@@ -9,6 +9,7 @@ import process from 'node:process';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { expandIeltsListeningTranscript } from '../src/data/mocks/ielts-listening-expansions.ts';
+import { assertAudioTiming } from './lib/ielts-audio-timing.mjs';
 
 const API = 'https://api.elevenlabs.io';
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -148,19 +149,19 @@ function plannedSegments(section, accent, setNumber) {
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Part ${partName}. First, review Questions ${firstQuestion} to ${midpointQuestion}.`,
-      pauseAfterSeconds: 60,
+      pauseAfterSeconds: 30,
     },
     ...withPauses(content.slice(0, split)),
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Now review Questions ${midpointQuestion + 1} to ${finalQuestion} before the recording continues.`,
-      pauseAfterSeconds: 60,
+      pauseAfterSeconds: 30,
     },
     ...withPauses(content.slice(split)),
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Part ${partName} is complete. Check your answers.`,
-      pauseAfterSeconds: section.part === 4 ? 120 : 45,
+      pauseAfterSeconds: section.part === 4 ? 0 : 20,
     },
   ];
 }
@@ -289,6 +290,11 @@ async function ensureGenerationGate(rows) {
   assert.ok(value('--seed-salt'), 'pass a non-empty --seed-salt for reproducible synthesis');
   const bill = invoice(rows, scopeLabel());
   assert.ok(bill.estimatedUsdBeforeTax <= cap, `estimated USD ${bill.estimatedUsdBeforeTax} exceeds approved ceiling ${cap}`);
+  assert.equal(
+    plan.timingFidelityGate?.status,
+    'passed',
+    'paid generation is blocked until every Listening script passes the official-sample timing-density gate',
+  );
   const ffmpeg = spawnSync('ffmpeg', ['-version'], { encoding: 'utf8' });
   assert.equal(ffmpeg.status, 0, 'ffmpeg is required for assembly');
   if (has('--reuse-only')) {
@@ -358,6 +364,7 @@ function assemble(row, segmentPaths, targetPath) {
   ], { encoding: 'utf8' });
   if (joined.status !== 0) throw new Error(`assembly failed for ${row.mediaId}: ${joined.stderr}`);
   try {
+    assertAudioTiming(wavPath, `${row.mediaId} pre-master assembly`);
     const targetI = casting.target.integrated_loudness_lufs;
     const targetTp = casting.target.normalization_true_peak_dbfs ?? casting.target.max_true_peak_dbfs;
     const analysis = spawnSync('ffmpeg', [
@@ -374,9 +381,8 @@ function assemble(row, segmentPaths, targetPath) {
       `measured_TP=${measured.input_tp}`, `measured_thresh=${measured.input_thresh}`,
       `offset=${measured.target_offset}`, 'linear=true', 'print_format=summary',
     ].join(':');
-    const masteringFilter = `${filter},apad=whole_dur=${casting.target.minimum_duration_seconds}`;
     const normalized = spawnSync('ffmpeg', [
-      '-y', '-hide_banner', '-loglevel', 'error', '-i', wavPath, '-af', masteringFilter,
+      '-y', '-hide_banner', '-loglevel', 'error', '-i', wavPath, '-af', filter,
       '-vn', '-ar', String(casting.target.final_sample_rate_hz), '-ac', String(casting.target.final_channels),
       '-b:a', casting.target.final_bitrate, normalizedPath,
     ], { encoding: 'utf8' });

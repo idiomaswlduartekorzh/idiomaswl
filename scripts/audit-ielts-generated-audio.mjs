@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { analyzeAudioTiming } from './lib/ielts-audio-timing.mjs';
 
 assert.ok(process.argv[2], 'usage: audit-ielts-generated-audio.mjs <generation-directory>');
 const root = path.resolve(process.argv[2]);
@@ -29,6 +30,7 @@ for (const entry of log.files ?? []) {
   const payload = JSON.parse(probe.stdout);
   const stream = payload.streams?.find(candidate => candidate.codec_name === 'mp3');
   const durationSeconds = Number(payload.format?.duration);
+  const timing = analyzeAudioTiming(entry.path);
   const bitRate = Number(payload.format?.bit_rate);
   const measured = spawnSync('ffmpeg', [
     '-hide_banner', '-nostats', '-i', entry.path,
@@ -45,6 +47,10 @@ for (const entry of log.files ?? []) {
     bitRateNear64k: bitRate >= 60000 && bitRate <= 70000,
     officialApproximateDuration: durationSeconds >= casting.target.minimum_duration_seconds
       && durationSeconds <= casting.target.maximum_duration_seconds,
+    audibleDensity: timing.checks.audibleDensity,
+    silenceRatio: timing.checks.silenceRatio,
+    longestSilence: timing.checks.longestSilence,
+    noArtificialTrailingPadding: timing.checks.noArtificialTrailingPadding,
     loudnessNearTarget: Math.abs(Number(loudness.input_i) - casting.target.integrated_loudness_lufs) <= 1,
     truePeakWithinCeiling: Number(loudness.input_tp) <= casting.target.max_true_peak_dbfs + 0.1,
   };
@@ -53,7 +59,14 @@ for (const entry of log.files ?? []) {
   files.push({
     mediaId: entry.mediaId, setId: entry.setId, path: entry.path,
     audioSha256: entry.audioSha256, durationSeconds: Number(durationSeconds.toFixed(3)),
-    bitRate, integratedLoudnessLufs: Number(loudness.input_i), truePeakDbfs: Number(loudness.input_tp), checks,
+    bitRate, integratedLoudnessLufs: Number(loudness.input_i), truePeakDbfs: Number(loudness.input_tp),
+    timing: {
+      audibleSeconds: timing.audibleSeconds,
+      silenceRatio: timing.silenceRatio,
+      longestSilenceSeconds: timing.longestSilenceSeconds,
+      trailingSilenceSeconds: timing.trailingSilenceSeconds,
+    },
+    checks,
   });
 }
 assert.ok(files.length > 0, 'generation log contains no files');

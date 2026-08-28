@@ -130,8 +130,8 @@ function withAuditedListeningDensity(sections: MockSection[], setNumber: number)
  */
 export function withIeltsAcademic2026Blueprint(mock: MockExam): MockExam {
   const setNumber = Number(mock.id.replace(/^set-/, ''));
-  const hasReadyListeningAudio = setNumber === 4;
-  const hasLegacyListeningAudio = setNumber >= 5 && setNumber <= 12;
+  const hasReadyListeningAudio = false;
+  const hasLegacyListeningAudio = setNumber >= 4 && setNumber <= 12;
   const listeningExpandedSections = withAuditedListeningDensity(mock.sections, setNumber);
   const expandedSections = withAuditedReadingLength(listeningExpandedSections, setNumber);
   const balancedSections = withBalancedMcqPositions(expandedSections, setNumber);

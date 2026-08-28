@@ -4,6 +4,8 @@
 > revalidado el 28 de agosto de 2026, está en
 > [`ielts-academic-2026-full-audit-2026-08-28.md`](./ielts-academic-2026-full-audit-2026-08-28.md).
 > Las cifras de bloqueo y UI de este documento ya no deben usarse para liberar producto.
+> En particular, la duración nominal de Sets 4/5 ocultaba colas mudas de 141,545/242,318 s;
+> ambos masters están rechazados por el gate temporal vigente y Set 5 ya no espera escucha.
 
 Fecha de contraste: 25 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  
@@ -65,7 +67,7 @@ palabras entre dos sets.
 El master v2 del Set 4 fue aceptado y publicado con 27:05. El candidato v2 del Set 5 ya
 está ensamblado y auditado con 29:00, pero permanece fuera de `public/` hasta la escucha
 y autorización del propietario. Los siete MP3 heredados 6–12 duran 24,0 minutos y
-contienen pausas extensas; quedan marcados para reemplazo por una simulación de 29–31
+contienen pausas extensas; quedan marcados para reemplazo por una simulación de 29–30
 minutos. Los ocho MP3 13–20 no existen. Los 17 guiones ya superan el gate.
 
 El Set 5 recibió una revisión editorial específica, no relleno genérico: conversación
@@ -248,7 +250,7 @@ eliminar la antigua deriva en la navegación compartida.
    El propietario lo escuchó, aprobó y autorizó explícitamente su publicación; el MP3 público
    coincide con el hash aceptado `4fef56f5678bce1405bfa58cfc4619bf9e81c77a57132ad64173998b37c72ed2`.
 3. Escuchar y autorizar el candidato Set 5; después reemplazar los siete MP3 6–12 y
-   generar los ocho MP3 13–20 con duración 29–31 min, reproducción única, mono 44,1
+   generar los ocho MP3 13–20 con duración 29–30 min, reproducción única, mono 44,1
    kHz/64 kbps, -18 LUFS y pico máximo -1,5 dBFS.
 4. Contrastar los 15 audios restantes transcript↔Whisper, revisar muestras humanas y registrar
    tamaño, hash, duración, loudness, pico y silencios. El plan actualizado proyecta

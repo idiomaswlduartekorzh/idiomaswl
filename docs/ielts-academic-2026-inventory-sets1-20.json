@@ -7,38 +7,21 @@
     "reuseFirst": true,
     "audioDeferredUntilScriptsFrozen": true,
     "noKnownThirdPartyTextAllowed": true,
-    "referenceSet": 4,
+    "referenceSet": null,
+    "historicalPublishedSet": 4,
     "goldenCandidateSet": 5
   },
   "summary": {
     "totalSets": 20,
     "catalogUnlocked": 20,
-    "coveredByExisting2026Gate": 17,
-    "audioDurationGatePass": 1,
-    "setsWithKnownOrPendingProvenanceReview": [
-      1,
-      2,
-      3,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20
-    ],
+    "coveredByExisting2026Gate": 20,
+    "audioDurationGatePass": 0,
+    "setsWithKnownOrPendingProvenanceReview": [],
     "setsWithBlockers": [
       1,
       2,
       3,
+      4,
       5,
       6,
       7,
@@ -62,12 +45,12 @@
       "set": 1,
       "title": "IELTS Academic Set 1",
       "catalogUnlocked": true,
-      "releaseGate2026Coverage": false,
+      "releaseGate2026Coverage": true,
       "authored": {
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1443,
+          "sourceWords": 2383,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -78,7 +61,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 2618,
+          "sourceWords": 2151,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -106,8 +89,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 1443,
-        "readingWords": 2618
+        "listeningWords": 2383,
+        "readingWords": 2151
       },
       "audio": {
         "authoredUrls": [
@@ -115,40 +98,48 @@
         ],
         "fileExists": true,
         "durationMinutes": 23,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 983.262,
+          "silenceRatio": 0.2873,
+          "longestSilenceSeconds": 65.37,
+          "trailingSilenceSeconds": 2.641,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity"
+          ]
+        }
       },
       "reuseDecision": {
-        "state": "blocked-editorial-replacement",
-        "provenance": "blocked-known-third-party-match",
-        "listening": "audit-and-repair-script; replace-or-regenerate-audio-last",
-        "reading": "replace-with-original-welearn-content",
-        "writing": "reuse-after-editorial-and-visual-audit",
-        "speaking": "reuse-after-editorial-and-timing-audit",
-        "reason": "The three Reading passage titles match a known published IELTS preparation test; they cannot be certified as original WeLearn content."
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
       "editorialStatus": {
         "set": 1,
-        "certification": "blocked-known-source-match",
-        "contentCertified": false,
-        "provenance": "blocked-known-third-party-match",
-        "evidence": "Reading titles and passages match a known published IELTS preparation paper; replacement is required."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "All inherited L/R/W/S material was replaced; Golden content audit passed 270 checks on 2026-08-28. Final audio remains deferred."
       },
       "currentBlockers": [
-        "Not covered by the pre-existing IELTS Academic 2026 release audit.",
-        "Editorial certification: blocked-known-source-match.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity."
       ]
     },
     {
       "set": 2,
       "title": "IELTS Academic Set 2",
       "catalogUnlocked": true,
-      "releaseGate2026Coverage": false,
+      "releaseGate2026Coverage": true,
       "authored": {
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1221,
+          "sourceWords": 2454,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -159,7 +150,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1551,
+          "sourceWords": 2151,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -186,8 +177,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 1221,
-        "readingWords": 1551
+        "listeningWords": 2454,
+        "readingWords": 2151
       },
       "audio": {
         "authoredUrls": [
@@ -195,40 +186,47 @@
         ],
         "fileExists": true,
         "durationMinutes": 22.9,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 999.885,
+          "silenceRatio": 0.2734,
+          "longestSilenceSeconds": 50.164,
+          "trailingSilenceSeconds": 1.286,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow"
+          ]
+        }
       },
       "reuseDecision": {
-        "state": "blocked-pending-provenance-and-format-audit",
-        "provenance": "pending-manual-review",
-        "listening": "reuse-structure; audit-and-complete-script; audio-last",
-        "reading": "reuse-if-provenance-and-editorial-audit-pass; otherwise-replace",
-        "writing": "reuse-after-editorial-and-visual-audit",
-        "speaking": "reuse-after-editorial-and-timing-audit",
-        "reason": "Complete authored shell exists, but it was outside the 2026 release gate and has not passed provenance review."
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
       "editorialStatus": {
         "set": 2,
-        "certification": "pending-provenance-review",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Complete authored shell exists but has not passed provenance and Golden editorial review."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused topic shells were rebuilt to Golden density and accuracy; audit passed 262 checks on 2026-08-28. Final audio remains deferred."
       },
       "currentBlockers": [
-        "Not covered by the pre-existing IELTS Academic 2026 release audit.",
-        "Editorial certification: pending-provenance-review.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow."
       ]
     },
     {
       "set": 3,
       "title": "IELTS Academic Set 3",
       "catalogUnlocked": true,
-      "releaseGate2026Coverage": false,
+      "releaseGate2026Coverage": true,
       "authored": {
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1296,
+          "sourceWords": 2204,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -239,7 +237,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1406,
+          "sourceWords": 2167,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -266,8 +264,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 1296,
-        "readingWords": 1406
+        "listeningWords": 2204,
+        "readingWords": 2167
       },
       "audio": {
         "authoredUrls": [
@@ -275,28 +273,35 @@
         ],
         "fileExists": true,
         "durationMinutes": 26,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 1150.248,
+          "silenceRatio": 0.263,
+          "longestSilenceSeconds": 65.392,
+          "trailingSilenceSeconds": 1.607,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow"
+          ]
+        }
       },
       "reuseDecision": {
-        "state": "blocked-pending-provenance-and-format-audit",
-        "provenance": "pending-manual-review",
-        "listening": "reuse-structure; audit-and-complete-script; audio-last",
-        "reading": "reuse-if-provenance-and-editorial-audit-pass; otherwise-replace",
-        "writing": "reuse-after-editorial-and-visual-audit",
-        "speaking": "reuse-after-editorial-and-timing-audit",
-        "reason": "Complete authored shell exists, but it was outside the 2026 release gate and has not passed provenance review."
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
       },
       "editorialStatus": {
         "set": 3,
-        "certification": "pending-provenance-review",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Complete authored shell exists but has not passed provenance and Golden editorial review."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused topic shells were rebuilt and fact-checked; Golden content audit passed 267 checks on 2026-08-28. Final audio remains deferred."
       },
       "currentBlockers": [
-        "Not covered by the pre-existing IELTS Academic 2026 release audit.",
-        "Editorial certification: pending-provenance-review.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow."
       ]
     },
     {
@@ -319,7 +324,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1613,
+          "sourceWords": 1622,
           "questionTypes": [
             "formgroup",
             "mcq"
@@ -345,7 +350,7 @@
       },
       "releaseTransforms": {
         "listeningWords": 2255,
-        "readingWords": 2184
+        "readingWords": 2193
       },
       "audio": {
         "authoredUrls": [
@@ -353,16 +358,28 @@
         ],
         "fileExists": true,
         "durationMinutes": 27.1,
-        "durationGate": "pass"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 902.119,
+          "silenceRatio": 0.4448,
+          "longestSilenceSeconds": 141.545,
+          "trailingSilenceSeconds": 141.545,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "longestSilence",
+            "noArtificialTrailingPadding"
+          ]
+        }
       },
       "reuseDecision": {
-        "state": "reference-ready-preserve",
+        "state": "content-golden-historical-audio-replacement-required",
         "provenance": "audited-original-welearn",
-        "listening": "preserve-script-and-published-master",
+        "listening": "preserve-content-and-owner-acceptance-history; expand-script; replace-audio-last",
         "reading": "preserve-as-reference",
         "writing": "preserve-as-reference",
         "speaking": "preserve-as-reference",
-        "reason": "Current release audit and accepted Listening master make this the stable production reference."
+        "reason": "The published master remains historically owner-accepted, but its 141.545-second silent tail fails the calibrated timing gate."
       },
       "editorialStatus": {
         "set": 4,
@@ -371,7 +388,9 @@
         "provenance": "audited-original-welearn",
         "evidence": "Production reference accepted under the Sets 4–20 structural audit and Listening master QA."
       },
-      "currentBlockers": []
+      "currentBlockers": [
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, longestSilence, noArtificialTrailingPadding."
+      ]
     },
     {
       "set": 5,
@@ -428,16 +447,28 @@
         ],
         "fileExists": true,
         "durationMinutes": 24,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 515.027,
+          "silenceRatio": 0.6423,
+          "longestSilenceSeconds": 133.121,
+          "trailingSilenceSeconds": 0,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "silenceRatio",
+            "longestSilence"
+          ]
+        }
       },
       "reuseDecision": {
-        "state": "golden-candidate-audio-not-published",
+        "state": "content-golden-audio-candidate-rejected-timing",
         "provenance": "audited-original-welearn",
-        "listening": "preserve-script; publish-only-after-final-golden-audit",
+        "listening": "preserve-content; expand-script; reassemble-only-after-timing-gate",
         "reading": "preserve-and-freeze-after-golden-audit",
         "writing": "preserve-and-freeze-after-golden-audit",
         "speaking": "preserve-and-freeze-after-golden-audit",
-        "reason": "Set 5 is the Golden candidate; its generated audio candidate passed technical and ASR checks but the public path still contains legacy media."
+        "reason": "Set 5 passed technical and ASR checks, but its 242.318-second silent tail fails the calibrated timing gate and it is not publishable."
       },
       "editorialStatus": {
         "set": 5,
@@ -447,7 +478,7 @@
         "evidence": "Golden content audit passed 120 checks on 2026-08-28; final audio remains deferred."
       },
       "currentBlockers": [
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, silenceRatio, longestSilence."
       ]
     },
     {
@@ -459,7 +490,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1349,
+          "sourceWords": 2274,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -470,7 +501,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1842,
+          "sourceWords": 2188,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -496,8 +527,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 2333,
-        "readingWords": 2225
+        "listeningWords": 2274,
+        "readingWords": 2188
       },
       "audio": {
         "authoredUrls": [
@@ -505,11 +536,23 @@
         ],
         "fileExists": true,
         "durationMinutes": 24,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 505.753,
+          "silenceRatio": 0.6488,
+          "longestSilenceSeconds": 134.64,
+          "trailingSilenceSeconds": 0,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "silenceRatio",
+            "longestSilence"
+          ]
+        }
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -518,14 +561,13 @@
       },
       "editorialStatus": {
         "set": 6,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 232 checks on 2026-08-28. Legacy audio requires replacement."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, silenceRatio, longestSilence."
       ]
     },
     {
@@ -537,7 +579,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1332,
+          "sourceWords": 2311,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -548,7 +590,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1724,
+          "sourceWords": 2176,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -574,8 +616,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 2326,
-        "readingWords": 2225
+        "listeningWords": 2311,
+        "readingWords": 2176
       },
       "audio": {
         "authoredUrls": [
@@ -583,11 +625,23 @@
         ],
         "fileExists": true,
         "durationMinutes": 24,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 552.027,
+          "silenceRatio": 0.6166,
+          "longestSilenceSeconds": 123.041,
+          "trailingSilenceSeconds": 0,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "silenceRatio",
+            "longestSilence"
+          ]
+        }
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -596,14 +650,13 @@
       },
       "editorialStatus": {
         "set": 7,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 235 checks on 2026-08-28. Legacy audio requires replacement."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, silenceRatio, longestSilence."
       ]
     },
     {
@@ -615,7 +668,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1357,
+          "sourceWords": 2358,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -626,7 +679,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1667,
+          "sourceWords": 2151,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -652,8 +705,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 2404,
-        "readingWords": 2165
+        "listeningWords": 2358,
+        "readingWords": 2151
       },
       "audio": {
         "authoredUrls": [
@@ -661,11 +714,23 @@
         ],
         "fileExists": true,
         "durationMinutes": 24,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 540.028,
+          "silenceRatio": 0.625,
+          "longestSilenceSeconds": 128.668,
+          "trailingSilenceSeconds": 0,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "silenceRatio",
+            "longestSilence"
+          ]
+        }
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -674,14 +739,13 @@
       },
       "editorialStatus": {
         "set": 8,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 236 checks on 2026-08-28. Legacy audio requires replacement."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, silenceRatio, longestSilence."
       ]
     },
     {
@@ -693,7 +757,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1343,
+          "sourceWords": 2297,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -704,7 +768,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1688,
+          "sourceWords": 2154,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -730,8 +794,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 2254,
-        "readingWords": 2187
+        "listeningWords": 2359,
+        "readingWords": 2154
       },
       "audio": {
         "authoredUrls": [
@@ -739,11 +803,23 @@
         ],
         "fileExists": true,
         "durationMinutes": 24,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 514.982,
+          "silenceRatio": 0.6424,
+          "longestSilenceSeconds": 131.811,
+          "trailingSilenceSeconds": 0,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "silenceRatio",
+            "longestSilence"
+          ]
+        }
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -752,14 +828,13 @@
       },
       "editorialStatus": {
         "set": 9,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 237 checks on 2026-08-28. Legacy audio requires replacement."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, silenceRatio, longestSilence."
       ]
     },
     {
@@ -771,7 +846,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1358,
+          "sourceWords": 2408,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -782,7 +857,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1611,
+          "sourceWords": 2150,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -808,8 +883,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 2342,
-        "readingWords": 2171
+        "listeningWords": 2408,
+        "readingWords": 2150
       },
       "audio": {
         "authoredUrls": [
@@ -817,11 +892,23 @@
         ],
         "fileExists": true,
         "durationMinutes": 24,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 533.899,
+          "silenceRatio": 0.6292,
+          "longestSilenceSeconds": 129.184,
+          "trailingSilenceSeconds": 0,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "silenceRatio",
+            "longestSilence"
+          ]
+        }
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -830,14 +917,13 @@
       },
       "editorialStatus": {
         "set": 10,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 235 checks on 2026-08-28. Legacy audio requires replacement."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, silenceRatio, longestSilence."
       ]
     },
     {
@@ -849,7 +935,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1305,
+          "sourceWords": 2452,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -860,7 +946,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1933,
+          "sourceWords": 2169,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -886,8 +972,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 2364,
-        "readingWords": 2151
+        "listeningWords": 2452,
+        "readingWords": 2169
       },
       "audio": {
         "authoredUrls": [
@@ -895,11 +981,23 @@
         ],
         "fileExists": true,
         "durationMinutes": 24,
-        "durationGate": "replace-or-regenerate"
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 526.781,
+          "silenceRatio": 0.6342,
+          "longestSilenceSeconds": 133.682,
+          "trailingSilenceSeconds": 0,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "silenceRatio",
+            "longestSilence"
+          ]
+        }
       },
       "reuseDecision": {
         "state": "reuse-content-replace-legacy-audio",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; replace-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -908,14 +1006,13 @@
       },
       "editorialStatus": {
         "set": 11,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 235 checks on 2026-08-28. Legacy audio requires replacement."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is outside the 27–33 minute simulation gate."
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, silenceRatio, longestSilence."
       ]
     },
     {
@@ -927,7 +1024,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1299,
+          "sourceWords": 2347,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -938,7 +1035,486 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1880,
+          "sourceWords": 2150,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2347,
+        "readingWords": 2150
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-12.mp3"
+        ],
+        "fileExists": true,
+        "durationMinutes": 24,
+        "durationGate": "replace-or-regenerate",
+        "timing": {
+          "audibleSeconds": 498.787,
+          "silenceRatio": 0.6536,
+          "longestSilenceSeconds": 135.919,
+          "trailingSilenceSeconds": 0,
+          "failedChecks": [
+            "durationWithinOfficialSampleWindow",
+            "audibleDensity",
+            "silenceRatio",
+            "longestSilence"
+          ]
+        }
+      },
+      "reuseDecision": {
+        "state": "reuse-content-replace-legacy-audio",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; replace-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
+      },
+      "editorialStatus": {
+        "set": 12,
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 235 checks on 2026-08-28. Legacy audio requires replacement."
+      },
+      "currentBlockers": [
+        "Listening audio fails timing fidelity: durationWithinOfficialSampleWindow, audibleDensity, silenceRatio, longestSilence."
+      ]
+    },
+    {
+      "set": 13,
+      "title": "IELTS Academic Set 13",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 2331,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 2151,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2331,
+        "readingWords": 2151
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-13.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing",
+        "timing": null
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "editorialStatus": {
+        "set": 13,
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 239 checks on 2026-08-28. Final audio remains blocked until generation and QA."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 14,
+      "title": "IELTS Academic Set 14",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 2393,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 2248,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2393,
+        "readingWords": 2248
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-14.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing",
+        "timing": null
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "editorialStatus": {
+        "set": 14,
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 236 checks on 2026-08-28. Final audio remains blocked until generation and QA."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 15,
+      "title": "IELTS Academic Set 15",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 2467,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 2152,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2467,
+        "readingWords": 2152
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-15.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing",
+        "timing": null
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "editorialStatus": {
+        "set": 15,
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 245 checks on 2026-08-28. Final audio remains blocked until generation and QA."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 16,
+      "title": "IELTS Academic Set 16",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 2358,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 2468,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2421,
+        "readingWords": 2468
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-16.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing",
+        "timing": null
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "editorialStatus": {
+        "set": 16,
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 244 checks on 2026-08-28. Final audio remains blocked until generation and QA."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 17,
+      "title": "IELTS Academic Set 17",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 2461,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 2357,
+          "questionTypes": [
+            "formgroup",
+            "matching",
+            "mcq"
+          ]
+        },
+        "writingTasks": [
+          {
+            "task": 1,
+            "minWords": 150,
+            "hasVisual": true
+          },
+          {
+            "task": 2,
+            "minWords": 250,
+            "hasVisual": false
+          }
+        ],
+        "speakingParts": [
+          1,
+          2,
+          3
+        ]
+      },
+      "releaseTransforms": {
+        "listeningWords": 2461,
+        "readingWords": 2357
+      },
+      "audio": {
+        "authoredUrls": [
+          "/audio/ielts/ielts-listening-set-17.mp3"
+        ],
+        "fileExists": false,
+        "durationMinutes": null,
+        "durationGate": "missing",
+        "timing": null
+      },
+      "reuseDecision": {
+        "state": "reuse-content-generate-audio-last",
+        "provenance": "audited-original-welearn",
+        "listening": "preserve-and-audit-script; generate-audio-last",
+        "reading": "preserve-and-verify-against-golden",
+        "writing": "preserve-and-verify-against-golden",
+        "speaking": "preserve-and-verify-against-golden",
+        "reason": "The full authored exam is reusable; no released Listening master exists."
+      },
+      "editorialStatus": {
+        "set": 17,
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 250 checks on 2026-08-28. Final audio remains blocked until generation and QA."
+      },
+      "currentBlockers": [
+        "Listening audio is missing."
+      ]
+    },
+    {
+      "set": 18,
+      "title": "IELTS Academic Set 18",
+      "catalogUnlocked": true,
+      "releaseGate2026Coverage": true,
+      "authored": {
+        "listening": {
+          "sections": 4,
+          "responses": 40,
+          "sourceWords": 2376,
+          "questionTypes": [
+            "formgroup",
+            "mcq",
+            "multiselect",
+            "tablegroup"
+          ]
+        },
+        "reading": {
+          "sections": 3,
+          "responses": 40,
+          "sourceWords": 2150,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -969,483 +1545,16 @@
       },
       "audio": {
         "authoredUrls": [
-          "/audio/ielts/ielts-listening-set-12.mp3"
-        ],
-        "fileExists": true,
-        "durationMinutes": 24,
-        "durationGate": "replace-or-regenerate"
-      },
-      "reuseDecision": {
-        "state": "reuse-content-replace-legacy-audio",
-        "provenance": "pending-manual-review",
-        "listening": "preserve-and-audit-script; replace-audio-last",
-        "reading": "preserve-and-verify-against-golden",
-        "writing": "preserve-and-verify-against-golden",
-        "speaking": "preserve-and-verify-against-golden",
-        "reason": "The full authored exam is reusable; legacy Listening media remains outside the 2026 release gate."
-      },
-      "editorialStatus": {
-        "set": 12,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
-      },
-      "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is outside the 27–33 minute simulation gate."
-      ]
-    },
-    {
-      "set": 13,
-      "title": "IELTS Academic Set 13",
-      "catalogUnlocked": true,
-      "releaseGate2026Coverage": true,
-      "authored": {
-        "listening": {
-          "sections": 4,
-          "responses": 40,
-          "sourceWords": 1302,
-          "questionTypes": [
-            "formgroup",
-            "mcq",
-            "multiselect",
-            "tablegroup"
-          ]
-        },
-        "reading": {
-          "sections": 3,
-          "responses": 40,
-          "sourceWords": 1859,
-          "questionTypes": [
-            "formgroup",
-            "matching",
-            "mcq"
-          ]
-        },
-        "writingTasks": [
-          {
-            "task": 1,
-            "minWords": 150,
-            "hasVisual": true
-          },
-          {
-            "task": 2,
-            "minWords": 250,
-            "hasVisual": false
-          }
-        ],
-        "speakingParts": [
-          1,
-          2,
-          3
-        ]
-      },
-      "releaseTransforms": {
-        "listeningWords": 2344,
-        "readingWords": 2155
-      },
-      "audio": {
-        "authoredUrls": [
-          "/audio/ielts/ielts-listening-set-13.mp3"
-        ],
-        "fileExists": false,
-        "durationMinutes": null,
-        "durationGate": "missing"
-      },
-      "reuseDecision": {
-        "state": "reuse-content-generate-audio-last",
-        "provenance": "pending-manual-review",
-        "listening": "preserve-and-audit-script; generate-audio-last",
-        "reading": "preserve-and-verify-against-golden",
-        "writing": "preserve-and-verify-against-golden",
-        "speaking": "preserve-and-verify-against-golden",
-        "reason": "The full authored exam is reusable; no released Listening master exists."
-      },
-      "editorialStatus": {
-        "set": 13,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
-      },
-      "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is missing."
-      ]
-    },
-    {
-      "set": 14,
-      "title": "IELTS Academic Set 14",
-      "catalogUnlocked": true,
-      "releaseGate2026Coverage": true,
-      "authored": {
-        "listening": {
-          "sections": 4,
-          "responses": 40,
-          "sourceWords": 1290,
-          "questionTypes": [
-            "formgroup",
-            "matching",
-            "multiselect",
-            "tablegroup"
-          ]
-        },
-        "reading": {
-          "sections": 3,
-          "responses": 40,
-          "sourceWords": 1901,
-          "questionTypes": [
-            "formgroup",
-            "matching",
-            "mcq"
-          ]
-        },
-        "writingTasks": [
-          {
-            "task": 1,
-            "minWords": 150,
-            "hasVisual": true
-          },
-          {
-            "task": 2,
-            "minWords": 250,
-            "hasVisual": false
-          }
-        ],
-        "speakingParts": [
-          1,
-          2,
-          3
-        ]
-      },
-      "releaseTransforms": {
-        "listeningWords": 2345,
-        "readingWords": 2179
-      },
-      "audio": {
-        "authoredUrls": [
-          "/audio/ielts/ielts-listening-set-14.mp3"
-        ],
-        "fileExists": false,
-        "durationMinutes": null,
-        "durationGate": "missing"
-      },
-      "reuseDecision": {
-        "state": "reuse-content-generate-audio-last",
-        "provenance": "pending-manual-review",
-        "listening": "preserve-and-audit-script; generate-audio-last",
-        "reading": "preserve-and-verify-against-golden",
-        "writing": "preserve-and-verify-against-golden",
-        "speaking": "preserve-and-verify-against-golden",
-        "reason": "The full authored exam is reusable; no released Listening master exists."
-      },
-      "editorialStatus": {
-        "set": 14,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
-      },
-      "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is missing."
-      ]
-    },
-    {
-      "set": 15,
-      "title": "IELTS Academic Set 15",
-      "catalogUnlocked": true,
-      "releaseGate2026Coverage": true,
-      "authored": {
-        "listening": {
-          "sections": 4,
-          "responses": 40,
-          "sourceWords": 1303,
-          "questionTypes": [
-            "formgroup",
-            "mcq",
-            "multiselect",
-            "tablegroup"
-          ]
-        },
-        "reading": {
-          "sections": 3,
-          "responses": 40,
-          "sourceWords": 1860,
-          "questionTypes": [
-            "formgroup",
-            "matching",
-            "mcq"
-          ]
-        },
-        "writingTasks": [
-          {
-            "task": 1,
-            "minWords": 150,
-            "hasVisual": true
-          },
-          {
-            "task": 2,
-            "minWords": 250,
-            "hasVisual": false
-          }
-        ],
-        "speakingParts": [
-          1,
-          2,
-          3
-        ]
-      },
-      "releaseTransforms": {
-        "listeningWords": 2362,
-        "readingWords": 2150
-      },
-      "audio": {
-        "authoredUrls": [
-          "/audio/ielts/ielts-listening-set-15.mp3"
-        ],
-        "fileExists": false,
-        "durationMinutes": null,
-        "durationGate": "missing"
-      },
-      "reuseDecision": {
-        "state": "reuse-content-generate-audio-last",
-        "provenance": "pending-manual-review",
-        "listening": "preserve-and-audit-script; generate-audio-last",
-        "reading": "preserve-and-verify-against-golden",
-        "writing": "preserve-and-verify-against-golden",
-        "speaking": "preserve-and-verify-against-golden",
-        "reason": "The full authored exam is reusable; no released Listening master exists."
-      },
-      "editorialStatus": {
-        "set": 15,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
-      },
-      "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is missing."
-      ]
-    },
-    {
-      "set": 16,
-      "title": "IELTS Academic Set 16",
-      "catalogUnlocked": true,
-      "releaseGate2026Coverage": true,
-      "authored": {
-        "listening": {
-          "sections": 4,
-          "responses": 40,
-          "sourceWords": 1329,
-          "questionTypes": [
-            "formgroup",
-            "mcq",
-            "multiselect",
-            "tablegroup"
-          ]
-        },
-        "reading": {
-          "sections": 3,
-          "responses": 40,
-          "sourceWords": 1918,
-          "questionTypes": [
-            "formgroup",
-            "matching",
-            "mcq"
-          ]
-        },
-        "writingTasks": [
-          {
-            "task": 1,
-            "minWords": 150,
-            "hasVisual": true
-          },
-          {
-            "task": 2,
-            "minWords": 250,
-            "hasVisual": false
-          }
-        ],
-        "speakingParts": [
-          1,
-          2,
-          3
-        ]
-      },
-      "releaseTransforms": {
-        "listeningWords": 2312,
-        "readingWords": 2154
-      },
-      "audio": {
-        "authoredUrls": [
-          "/audio/ielts/ielts-listening-set-16.mp3"
-        ],
-        "fileExists": false,
-        "durationMinutes": null,
-        "durationGate": "missing"
-      },
-      "reuseDecision": {
-        "state": "reuse-content-generate-audio-last",
-        "provenance": "pending-manual-review",
-        "listening": "preserve-and-audit-script; generate-audio-last",
-        "reading": "preserve-and-verify-against-golden",
-        "writing": "preserve-and-verify-against-golden",
-        "speaking": "preserve-and-verify-against-golden",
-        "reason": "The full authored exam is reusable; no released Listening master exists."
-      },
-      "editorialStatus": {
-        "set": 16,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
-      },
-      "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is missing."
-      ]
-    },
-    {
-      "set": 17,
-      "title": "IELTS Academic Set 17",
-      "catalogUnlocked": true,
-      "releaseGate2026Coverage": true,
-      "authored": {
-        "listening": {
-          "sections": 4,
-          "responses": 40,
-          "sourceWords": 1360,
-          "questionTypes": [
-            "formgroup",
-            "mcq",
-            "multiselect",
-            "tablegroup"
-          ]
-        },
-        "reading": {
-          "sections": 3,
-          "responses": 40,
-          "sourceWords": 1973,
-          "questionTypes": [
-            "formgroup",
-            "matching",
-            "mcq"
-          ]
-        },
-        "writingTasks": [
-          {
-            "task": 1,
-            "minWords": 150,
-            "hasVisual": true
-          },
-          {
-            "task": 2,
-            "minWords": 250,
-            "hasVisual": false
-          }
-        ],
-        "speakingParts": [
-          1,
-          2,
-          3
-        ]
-      },
-      "releaseTransforms": {
-        "listeningWords": 2271,
-        "readingWords": 2151
-      },
-      "audio": {
-        "authoredUrls": [
-          "/audio/ielts/ielts-listening-set-17.mp3"
-        ],
-        "fileExists": false,
-        "durationMinutes": null,
-        "durationGate": "missing"
-      },
-      "reuseDecision": {
-        "state": "reuse-content-generate-audio-last",
-        "provenance": "pending-manual-review",
-        "listening": "preserve-and-audit-script; generate-audio-last",
-        "reading": "preserve-and-verify-against-golden",
-        "writing": "preserve-and-verify-against-golden",
-        "speaking": "preserve-and-verify-against-golden",
-        "reason": "The full authored exam is reusable; no released Listening master exists."
-      },
-      "editorialStatus": {
-        "set": 17,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
-      },
-      "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
-        "Listening audio is missing."
-      ]
-    },
-    {
-      "set": 18,
-      "title": "IELTS Academic Set 18",
-      "catalogUnlocked": true,
-      "releaseGate2026Coverage": true,
-      "authored": {
-        "listening": {
-          "sections": 4,
-          "responses": 40,
-          "sourceWords": 1354,
-          "questionTypes": [
-            "formgroup",
-            "mcq",
-            "multiselect",
-            "tablegroup"
-          ]
-        },
-        "reading": {
-          "sections": 3,
-          "responses": 40,
-          "sourceWords": 2003,
-          "questionTypes": [
-            "formgroup",
-            "matching",
-            "mcq"
-          ]
-        },
-        "writingTasks": [
-          {
-            "task": 1,
-            "minWords": 150,
-            "hasVisual": true
-          },
-          {
-            "task": 2,
-            "minWords": 250,
-            "hasVisual": false
-          }
-        ],
-        "speakingParts": [
-          1,
-          2,
-          3
-        ]
-      },
-      "releaseTransforms": {
-        "listeningWords": 2338,
-        "readingWords": 2172
-      },
-      "audio": {
-        "authoredUrls": [
           "/audio/ielts/ielts-listening-set-18.mp3"
         ],
         "fileExists": false,
         "durationMinutes": null,
-        "durationGate": "missing"
+        "durationGate": "missing",
+        "timing": null
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -1454,13 +1563,12 @@
       },
       "editorialStatus": {
         "set": 18,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 243 checks on 2026-08-28. Final audio remains blocked until generation and QA."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1473,7 +1581,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1383,
+          "sourceWords": 2311,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -1484,7 +1592,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1942,
+          "sourceWords": 2150,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -1510,8 +1618,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 2301,
-        "readingWords": 2151
+        "listeningWords": 2433,
+        "readingWords": 2150
       },
       "audio": {
         "authoredUrls": [
@@ -1519,11 +1627,12 @@
         ],
         "fileExists": false,
         "durationMinutes": null,
-        "durationGate": "missing"
+        "durationGate": "missing",
+        "timing": null
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -1532,13 +1641,12 @@
       },
       "editorialStatus": {
         "set": 19,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 251 checks on 2026-08-28. Final audio remains blocked until generation and QA."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     },
@@ -1551,7 +1659,7 @@
         "listening": {
           "sections": 4,
           "responses": 40,
-          "sourceWords": 1308,
+          "sourceWords": 2408,
           "questionTypes": [
             "formgroup",
             "mcq",
@@ -1562,7 +1670,7 @@
         "reading": {
           "sections": 3,
           "responses": 40,
-          "sourceWords": 1985,
+          "sourceWords": 2161,
           "questionTypes": [
             "formgroup",
             "matching",
@@ -1588,8 +1696,8 @@
         ]
       },
       "releaseTransforms": {
-        "listeningWords": 2339,
-        "readingWords": 2192
+        "listeningWords": 2408,
+        "readingWords": 2161
       },
       "audio": {
         "authoredUrls": [
@@ -1597,11 +1705,12 @@
         ],
         "fileExists": false,
         "durationMinutes": null,
-        "durationGate": "missing"
+        "durationGate": "missing",
+        "timing": null
       },
       "reuseDecision": {
         "state": "reuse-content-generate-audio-last",
-        "provenance": "pending-manual-review",
+        "provenance": "audited-original-welearn",
         "listening": "preserve-and-audit-script; generate-audio-last",
         "reading": "preserve-and-verify-against-golden",
         "writing": "preserve-and-verify-against-golden",
@@ -1610,13 +1719,12 @@
       },
       "editorialStatus": {
         "set": 20,
-        "certification": "pending-golden-audit",
-        "contentCertified": false,
-        "provenance": "pending-manual-review",
-        "evidence": "Authored WeLearn content claim exists, but detailed comparison against the frozen Golden model is pending."
+        "certification": "certified-golden-content",
+        "contentCertified": true,
+        "provenance": "audited-original-welearn",
+        "evidence": "Reused shells were rebuilt and fact-checked; Golden content audit passed 245 checks on 2026-08-28. Final audio remains blocked until generation and QA."
       },
       "currentBlockers": [
-        "Editorial certification: pending-golden-audit.",
         "Listening audio is missing."
       ]
     }

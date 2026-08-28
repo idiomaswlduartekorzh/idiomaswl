@@ -2,10 +2,10 @@
 
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
-import { spawnSync } from 'node:child_process';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
 import { IELTS_EDITORIAL_STATUS_2026 } from '../src/data/mocks/ielts-editorial-status.ts';
 import { toPublicIeltsMock } from '../src/data/mocks/ielts-public-payload.ts';
+import { analyzeAudioTiming } from './lib/ielts-audio-timing.mjs';
 
 const SETS = Array.from({ length: 20 }, (_, index) => index + 1);
 const READING_WORD_RANGE = [2150, 2750];
@@ -13,7 +13,6 @@ const READING_WORD_RANGE = [2150, 2750];
 // uses 55 words per response, below the roughly 72 extracted from 44 response
 // positions across the official 2023 sample-task tapescripts (PDF updated Dec 2025).
 const MIN_LISTENING_TRANSCRIPT_WORDS = 40 * 55;
-const LISTENING_AUDIO_SECONDS_RANGE = [27 * 60, 33 * 60];
 const PUBLIC_KEYS = new Set(['answer', 'answers']);
 
 function words(value = '') {
@@ -79,18 +78,6 @@ function completionAnswerIssues(section, question) {
     .map((blank) => `${question.id} Q${blank.num} (${blank.answers.join(' / ')})`);
 }
 
-function audioDurationSeconds(url) {
-  if (!url) return null;
-  const filePath = path.join(process.cwd(), 'public', url);
-  if (!existsSync(filePath)) return null;
-  const probe = spawnSync('ffprobe', [
-    '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', filePath,
-  ], { encoding: 'utf8' });
-  if (probe.status !== 0) return null;
-  const duration = Number(probe.stdout.trim());
-  return Number.isFinite(duration) ? duration : null;
-}
-
 const rows = [];
 const blockers = [];
 const warnings = [];
@@ -137,9 +124,9 @@ for (const setNumber of SETS) {
   const missingAudio = [...audioUrls].filter((url) => !existsSync(path.join(process.cwd(), 'public', url)));
   const blockedAudio = bySkill.listening.some((section) => section.mediaStatus === 'script-ready-audio-blocked');
   const listeningWords = bySkill.listening.reduce((total, section) => total + words(section.transcript), 0);
-  const audioDuration = audioDurationSeconds([...audioUrls][0]);
-  const audioOutsideTarget = audioDuration !== null
-    && (audioDuration < LISTENING_AUDIO_SECONDS_RANGE[0] || audioDuration > LISTENING_AUDIO_SECONDS_RANGE[1]);
+  const audioPath = audioUrls.size === 1 ? path.join(process.cwd(), 'public', [...audioUrls][0]) : null;
+  const audioTiming = audioPath && existsSync(audioPath) ? analyzeAudioTiming(audioPath) : null;
+  const audioDuration = audioTiming?.durationSeconds ?? null;
   const sourceKeyCount = mock.sections.flatMap((section) => section.questions).reduce(
     (total, question) => total + keyCount(question),
     0,
@@ -198,8 +185,8 @@ for (const setNumber of SETS) {
   if (blockedAudio && missingAudio.length === 0) blockers.push(`Set ${setNumber}: el audio integral sigue bloqueado hasta generación y QA.`);
   else if (audioUrls.size !== 1) blockers.push(`Set ${setNumber}: se esperaba un único audio integral; hay ${audioUrls.size}.`);
   for (const url of missingAudio) blockers.push(`Set ${setNumber}: falta ${url}.`);
-  if (audioOutsideTarget) {
-    blockers.push(`Set ${setNumber}: audio dura ${(audioDuration / 60).toFixed(1)} min; gate de simulación ${LISTENING_AUDIO_SECONDS_RANGE[0] / 60}–${LISTENING_AUDIO_SECONDS_RANGE[1] / 60} min.`);
+  if (audioTiming?.status === 'rejected') {
+    blockers.push(`Set ${setNumber}: audio falla fidelidad temporal (${audioTiming.failedChecks.join(', ')}).`);
   }
 
   if (bySkill.reading.length !== 3) blockers.push(`Set ${setNumber}: Reading debe tener 3 pasajes.`);
@@ -241,7 +228,10 @@ for (const setNumber of SETS) {
     reading: readingResponses,
     readingWords,
     audioMinutes: audioDuration ? Number((audioDuration / 60).toFixed(1)) : null,
-    audio: blockedAudio || missingAudio.length ? 'MISSING' : audioOutsideTarget ? 'REPLACE' : 'OK',
+    audio: blockedAudio || missingAudio.length ? 'MISSING' : audioTiming?.status === 'rejected' ? 'REPLACE' : 'OK',
+    audibleSeconds: audioTiming?.audibleSeconds ?? null,
+    silenceRatio: audioTiming?.silenceRatio ?? null,
+    trailingSilenceSeconds: audioTiming?.trailingSilenceSeconds ?? null,
     sourceKeys: sourceKeyCount,
     publicKeys: publicKeyCount,
   });

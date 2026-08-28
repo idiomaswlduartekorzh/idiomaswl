@@ -2,7 +2,7 @@
 
 Fecha de cierre de la microfase no-audio: 28 de agosto de 2026  
 Rama aislada: `codex/ielts-academic-2026-audit`  
-Dictamen: **APROBADO en contenido, UI/UX y full-stack; BLOQUEADO para release IELTS completo por 22 gates de audio**
+Dictamen: **APROBADO en contenido, UI/UX y full-stack; BLOQUEADO para release IELTS completo por 23 gates de audio**
 
 ## Qué significa este dictamen
 
@@ -11,9 +11,11 @@ familias de tarea, tiempos y dificultad observable de IELTS Academic. No son pre
 gráficos ni grabaciones oficiales; tampoco existe evidencia de equivalencia psicométrica.
 Por eso el producto y cada Set 1–20 muestran una declaración explícita de no oficialidad.
 
-“Aprobado no-audio” significa que Reading, Writing, Speaking, los guiones de Listening,
-las claves privadas, la corrección, la privacidad y la experiencia de uso pasaron sus
-guardianes. No autoriza a afirmar que los 20 mocks ya simulan Listening de punta a punta.
+“Aprobado no-audio” significa que Reading, Writing, Speaking, las respuestas y estructura
+de los guiones Listening, las claves privadas, la corrección, la privacidad y la experiencia
+de uso pasaron sus guardianes. La densidad temporal de esos guiones necesita una segunda
+expansión antes de síntesis. No autoriza a afirmar que los 20 mocks ya simulan Listening de
+punta a punta.
 
 ## Inventario verificado
 
@@ -28,20 +30,21 @@ guardianes. No autoriza a afirmar que los 20 mocks ya simulan Listening de punta
 | Writing | Task 1 + Task 2 en 20/20 |
 | Speaking | Parts 1–3 en 20/20 |
 | Claves objetivas expuestas al cliente | 0 |
-| Sets con audio integral aceptado | 1/20: Set 4 |
+| Sets con audio integral apto bajo el gate actual | 0/20 |
 
 Estado real del audio:
 
 - Sets 1–3: el archivo heredado dura 22,9–26,0 minutos y no está liberado; generación y
   QA pendientes.
-- Set 4: master aceptado, publicado y reproducible; 27:05.
-- Set 5: candidato v2 de 29:00 completo fuera de `public/`; sigue pendiente de escucha y
-  aprobación humana antes de reemplazar el heredado de 24:00.
+- Set 4: master históricamente aceptado y publicado, pero reclasificado como heredado:
+  27:05, sólo 902,119 s audibles y una cola muda de 141,545 s.
+- Set 5: candidato v2 de 29:00 fuera de `public/`, rechazado antes de escucha humana:
+  sólo 737,066 s audibles y una cola muda de 242,318 s.
 - Sets 6–12: MP3 heredados de 24:00; reemplazo obligatorio.
 - Sets 13–20: MP3 integral inexistente; la interfaz excluye Listening de forma explícita.
 
-El auditor global termina deliberadamente `BLOCKED (22)`: dos gates por cada Set 1–3,
-uno por cada Set 5–12 y uno por cada Set 13–20. No existe otro bloqueo editorial,
+El auditor global termina deliberadamente `BLOCKED (23)`: dos gates por cada Set 1–3,
+uno de fidelidad temporal por cada Set 4–12 y uno por cada Set 13–20. No existe otro bloqueo editorial,
 estructural, de claves o de aplicación en su salida.
 
 ## Auditoría por perspectiva
@@ -49,14 +52,14 @@ estructural, de claves o de aplicación en su salida.
 | Perspectiva | Evidencia reproducible | Dictamen |
 |---|---|---|
 | IELTS experto | 20× L40/R40; Reading en rango; scripts densos y con evidencia ordenada; Task 1/2; Speaking 1–3; tiempos 30/60/60/14 en Sets 4–20 | APROBADO no-audio |
-| Modelo Golden | 20 auditorías individuales, 4.784 controles; Set 4 conserva además su QA de audio aceptado | APROBADO no-audio |
+| Modelo Golden | 20 auditorías individuales, 4.784 controles; la aceptación histórica de Set 4 se conserva sin presentarla como release vigente | APROBADO no-audio |
 | Full-stack | 14 contratos Academic 2026, 12 de scoring/review y 11 de entrega/privacidad | 37/37 |
 | Seguridad y privacidad | proyección pública con 0 claves; scoring privado; consulta de resultados ligada a `user_id`; Overall sólo con L/R/W/S | APROBADO |
 | Usuario promedio | 20 enlaces, 0 locks; estados `Audio pendiente`/`Audio en revisión`; errores de reproducción con explicación y reintento | APROBADO |
 | UI/UX | un solo `main`; cards Listening distinguibles; singular/plural correcto; Reading sticky sin ocultarse; móvil sin sticky ni overflow | APROBADO |
 | Accesibilidad | skip link, nombres accesibles, `role=alert`, foco visible de 3 px, reduced motion y navegación por teclado | APROBADO |
 | Integridad del producto | hub compartido y catálogo protegido de 465 temas | APROBADO |
-| Audio integral | Set 4 únicamente; 19 sets aún no liberables en Listening | BLOQUEADO |
+| Audio integral | 0/20 bajo el gate temporal calibrado | BLOQUEADO |
 
 ## Prueba real de navegador
 
@@ -71,8 +74,8 @@ Validación local con Next.js 16.2.6 y Playwright:
 - Móvil 390×844: grid de una columna, pasaje `position: static`, pestañas con scroll
   interno y documento sin overflow horizontal.
 - Teclado: el tab activo presenta outline sólido de 3 px y halo adicional.
-- Set 4: MP3 cargado con `readyState=4`, duración 1.625 segundos (27:05), reproducción iniciada y
-  tiempo avanzando, sin error de audio.
+- Set 4: MP3 histórico cargado con `readyState=4`, duración 1.625 segundos (27:05), reproducción
+  iniciada y tiempo avanzando; la UI lo identifica ahora como audio heredado en revisión.
 - Reproducción única: después de iniciar Set 4 se persiste `consumed=1`; tras recargar,
   no existe `<audio>` ni botón de play y el estado anuncia que la reproducción terminó.
 - Consola de las rutas verificadas: cero errores. Sólo apareció el warning no bloqueante
@@ -81,11 +84,12 @@ Validación local con Next.js 16.2.6 y Playwright:
 ## Gates ejecutados
 
 ```text
-audit:ielts-academic-2026   BLOCKED (22), exclusivamente audio
+audit:ielts-academic-2026   BLOCKED (23), exclusivamente audio
 test:ielts-academic-2026    14/14
 test:ielts-review           12/12
 test:ielts-fullstack        11/11
 test:ielts-audio-pipeline    3/3
+test:ielts-audio-timing      3/3
 check:ielts-review-blueprint 20/20 sets
 check:ielts-golden-standard PASS
 check:ielts-non-audio-closure 20/20 sets, 4.784 live controls
@@ -102,7 +106,8 @@ publicados. Se sustituyeron el gráfico de consumo de carne y la consigna sobre 
 público gratuito por un SVG y una consigna originales de WeLearn. También se ampliaron
 Speaking Parts 1 y 3, se corrigieron afirmaciones factuales de Reading y se eliminaron
 variantes de respuesta que no aparecían literalmente en la fuente. Sus cuatro partes,
-preguntas, evidencias, reparto y master de Listening aceptado permanecieron intactos.
+preguntas, evidencias y reparto permanecieron intactos. El archivo aceptado se conserva
+por trazabilidad, pero dejó de ser referencia de release al fallar el nuevo gate temporal.
 
 La verificación factual de Set 4 se apoyó en la estructura pública de
 [IELTS Speaking](https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking),
@@ -116,7 +121,7 @@ proveniencia y ya no se sirven en el simulacro.
 
 El cierre no-audio está fijado además por el manifiesto
 `docs/ielts-non-audio-closure-2026-08-28.json`, con SHA-256 de cierre
-`9b88e96533e6625c0a389c20a8d66859697cbe9f2ced5ab0334c76ccfb579fa5`. El guardián
+`5a01e99bf29be5688c229772c3cbc4a72ab1e260cb742fae6251da217e4c44a3`. El guardián
 repite las 20 auditorías en vivo y liga cada resultado al mock actual, su auditor, las
 transformaciones compartidas, la proyección pública y el gráfico Task 1. Cualquier cambio
 sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los registros
@@ -125,31 +130,21 @@ sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los
 ## Plan de audio y criterio de salida
 
 El manifiesto de planificación vigente tiene SHA-256
-`79a2bee7d889a8a4780c0ba2bdcc57cde82dfda916debf0f23eb58cb3700cb7c`, 47.310
-palabras fuente y cero palabras adicionales requeridas. Ahora cubre realmente Sets 1–20.
-Su proyección bruta es 287.255 caracteres, 143.628 créditos y USD 14,3628 antes de
-impuestos y reintentos. `generationAuthorized=false`: es una estimación conservadora,
-no una orden de gasto.
+`f9ea031bea843645fd8b4a48dd3f59f3958c546973eb9ba2746e66516e9bbcf3`, 47.310
+palabras fuente y un déficit temporal conservador de 8.690 palabras hasta 2.800 por Set.
+La proyección de los guiones ampliados es 340.074 caracteres, 170.037 créditos y
+USD 17,0037 antes de impuestos y reintentos. `generationAuthorized=false`: el propio
+generador rechaza cualquier llamada al proveedor mientras el gate siga bloqueado.
 
-Set 4 ya está aceptado y el candidato Set 5 conserva exactamente el mismo hash de
-segmentos que el plan con el que fue generado. Excluyendo esas dos síntesis preservadas,
-Sets 1–3 y 6–20 requieren como máximo 259.828 caracteres, 129.914 créditos y USD 12,9914
-antes de impuestos y reintentos. Set 5 sigue fuera de release hasta aprobación humana.
-Las dos síntesis cubren 27.427 caracteres fuente (equivalente de reemplazo: 13.714
-créditos), pero sus logs registran 26.844 caracteres facturables (estimación: 13.422
-créditos) porque Set 5 reutilizó 583 caracteres ya sintetizados en Set 4. El MP3 candidato
-Set 5 fue verificado por SHA-256 en el caché estable
+Set 4 y Set 5 conservan sus segmentos y hashes para reutilización selectiva, pero ninguno
+de sus masters es liberable bajo el gate actual. El MP3 candidato Set 5 permanece en el caché estable
 `/Users/josedavidduartesilva/Developer/idiomaswl-ielts-audio-cache/a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea/sets-5/set-5/ielts-listening-set-5.mp3`.
 La consulta de sólo lectura del 28 de agosto registró 964 créditos disponibles y renovación
 el 5 de septiembre de 2026 a las 18:13:51 (Bogotá); la consulta no consumió créditos.
 
-Con el límite Creator actual de 121.031 créditos, el remanente no cabe en un solo ciclo:
-faltan 8.883 créditos aun partiendo de un saldo mensual completo. Si el propietario amplía
-explícitamente el alcance y el techo de gasto, una secuencia simple conserva el orden del
-catálogo: completar Sets 1–3 y 6–18 consume 115.408 créditos; los 5.623 restantes del ciclo
-pueden dejar parte de Set 19 en caché, y el siguiente ciclo termina Set 19 + Set 20 con unos
-8.887 créditos conservadores. La granularidad real depende del tamaño de los segmentos y
-todo reintento se contabiliza aparte. Sin nueva autorización no se ejecuta esta secuencia.
+El presupuesto anterior dejó de ser válido porque dependía de guiones demasiado breves.
+Los 964 créditos observados no alcanzan para esta fase y no se gastarán: primero se amplían,
+auditan y congelan los 20 guiones; después se recalcula reutilización y factura incremental.
 
 Antes de cualquier nueva llamada a ElevenLabs se debe recalcular la factura incremental
 excluyendo bytes aceptados de Set 4 y caché verificable de Set 5. Después, cada Set debe
@@ -157,7 +152,8 @@ pasar, en una microfase independiente:
 
 1. manifiesto inmutable de texto, casting y coste máximo autorizado;
 2. generación sin exceder el techo del propietario;
-3. ensamblado mono 44,1 kHz/64 kbps, objetivo 29–31 min, loudness y pico validados;
+3. ensamblado sin relleno ciego, mono 44,1 kHz/64 kbps, objetivo 29–30 min, al menos
+   990 s audibles, ≤45 % silencio, ninguna pausa >75 s y cola muda ≤5 s;
 4. transcript↔ASR, 40 evidencias en orden y revisión humana de las cuatro partes;
 5. autorización explícita antes de reemplazar `public/`;
 6. smoke desktop/móvil/teclado y auditor global sin el bloqueo de ese Set.

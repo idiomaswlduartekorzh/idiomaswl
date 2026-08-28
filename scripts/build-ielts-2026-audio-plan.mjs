@@ -10,6 +10,7 @@ import { expandIeltsListeningTranscript } from '../src/data/mocks/ielts-listenin
 
 const SETS = Array.from({ length: 20 }, (_, index) => index + 1);
 const MIN_TRANSCRIPT_WORDS = 2200;
+const MIN_TIMING_TRANSCRIPT_WORDS = 2800;
 const PRICE_USD_PER_1000_CHARACTERS = 0.05;
 const CREDITS_PER_CHARACTER = 0.5;
 const args = new Set(process.argv.slice(2));
@@ -97,19 +98,19 @@ function plannedSegments(section, accent, setNumber) {
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Part ${partName}. First, review Questions ${firstQuestion} to ${midpointQuestion}.`,
-      pauseAfterSeconds: 60,
+      pauseAfterSeconds: 30,
     },
     ...withPauses(content.slice(0, split)).map(segment => ({ ...segment, part: section.part })),
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Now review Questions ${midpointQuestion + 1} to ${finalQuestion} before the recording continues.`,
-      pauseAfterSeconds: 60,
+      pauseAfterSeconds: 30,
     },
     ...withPauses(content.slice(split)).map(segment => ({ ...segment, part: section.part })),
     {
       kind: 'announcer', part: section.part, profile: 'announcer:british',
       text: `Part ${partName} is complete. Check your answers.`,
-      pauseAfterSeconds: section.part === 4 ? 120 : 45,
+      pauseAfterSeconds: section.part === 4 ? 0 : 20,
     },
   ];
 }
@@ -141,7 +142,7 @@ for (const setNumber of SETS) {
   const sourceCharacters = segments.reduce((total, segment) => total + segment.characters, 0);
   const projectedCharactersAtGate = Math.max(
     sourceCharacters,
-    Math.ceil(sourceCharacters * MIN_TRANSCRIPT_WORDS / transcriptWords),
+    Math.ceil(sourceCharacters * MIN_TIMING_TRANSCRIPT_WORDS / transcriptWords),
   );
   const existingDuration = durationSeconds(existingPath);
   rows.push({
@@ -153,6 +154,8 @@ for (const setNumber of SETS) {
     transcriptWords,
     minimumTranscriptWords: MIN_TRANSCRIPT_WORDS,
     minimumAdditionalWords: Math.max(0, MIN_TRANSCRIPT_WORDS - transcriptWords),
+    minimumTimingTranscriptWords: MIN_TIMING_TRANSCRIPT_WORDS,
+    timingAdditionalWordsRequired: Math.max(0, MIN_TIMING_TRANSCRIPT_WORDS - transcriptWords),
     sourceCharacters,
     projectedCharactersAtGate,
     transcriptSha256: sha256(transcript),
@@ -161,9 +164,7 @@ for (const setNumber of SETS) {
     segments,
     existingFile: existsSync(existingPath),
     existingDurationSeconds: existingDuration ? Number(existingDuration.toFixed(3)) : null,
-    releaseAction: setNumber === 4
-      ? 'keep-owner-accepted-master'
-      : existsSync(existingPath)
+    releaseAction: existsSync(existingPath)
         ? 'replace-after-editorial-and-audio-qa'
         : 'generate-after-editorial-and-audio-qa',
   });
@@ -182,8 +183,19 @@ const manifestCore = {
     status: rows.every(row => row.transcriptWords >= MIN_TRANSCRIPT_WORDS) ? 'passed' : 'blocked',
     rationale: 'The 2,200-word threshold is a conservative WeLearn density gate derived from 44 response positions across eight official sample-task tapescripts; IELTS does not publish a transcript word minimum.',
     minimumTranscriptWordsPerSet: MIN_TRANSCRIPT_WORDS,
-    targetIntegralDurationSeconds: [1740, 1860],
+    targetIntegralDurationSeconds: [1740, 1800],
     playback: 'once',
+  },
+  timingFidelityGate: {
+    status: rows.every(row => row.transcriptWords >= MIN_TIMING_TRANSCRIPT_WORDS) ? 'passed' : 'blocked',
+    calibration: 'docs/ielts-listening-timing-reference-2026-08-28.json',
+    rationale: 'The 2,800-word pre-synthesis floor is an internal fail-closed proxy derived from the public official computer sample and the measured ElevenLabs speech density of Sets 4–5. Final release still requires measured audio timing QA; IELTS does not publish a transcript word minimum.',
+    minimumTranscriptWordsPerSet: MIN_TIMING_TRANSCRIPT_WORDS,
+    targetIntegralDurationSeconds: [1740, 1800],
+    minimumAudibleSeconds: 990,
+    maximumSilenceRatio: 0.45,
+    maximumSingleSilenceSeconds: 75,
+    maximumTrailingSilenceSeconds: 5,
   },
   generation: {
     provider: 'ElevenLabs proposed; no provider call made',
@@ -228,11 +240,12 @@ if (args.has('--write')) {
 console.log(JSON.stringify({
   manifestSha256: manifest.manifestSha256,
   sets: rows.length,
-  acceptedExisting: rows.filter(row => row.releaseAction === 'keep-owner-accepted-master').length,
+  releaseReadyExisting: 0,
   existingToReplace: rows.filter(row => row.releaseAction === 'replace-after-editorial-and-audio-qa').length,
   missingToGenerate: rows.filter(row => !row.existingFile).length,
   sourceWords: rows.reduce((total, row) => total + row.transcriptWords, 0),
   additionalWordsRequired: rows.reduce((total, row) => total + row.minimumAdditionalWords, 0),
+  timingAdditionalWordsRequired: rows.reduce((total, row) => total + row.timingAdditionalWordsRequired, 0),
   projectedMinimumCharactersAfterEditorialGate: projectedCharactersAtGate,
   projectedMinimumUsdBeforeTax: manifest.invoice.projectedMinimumUsdBeforeTax,
   generationAuthorized: false,

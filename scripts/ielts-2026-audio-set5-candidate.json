@@ -6,7 +6,7 @@
   "sourceCharacters": 13058,
   "billableCharacters": 12475,
   "reusedPilotCharacters": 583,
-  "status": "technical_and_transcript_qa_passed_pending_owner_listening_review",
+  "status": "rejected_timing_profile_requires_script_revision_and_reassembly",
   "releaseAuthorized": false,
   "cacheArtifactRelativePath": "a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea/sets-5/set-5/ielts-listening-set-5.mp3",
   "generationLogRelativePath": "a3b8302fb89f491ba00388c845346cc08ed40a283963d446e3b5148b9c0bccea/sets-5/generation-log.json",
@@ -22,5 +22,20 @@
   "completionEvidenceInOrder": "33/33",
   "technicalQaFileSha256": "e589b0d319b69eea69bd107fbd0dd8dda3f5e8f87e732476c0873d1edeb7a4de",
   "transcriptQaFileSha256": "deba97da53b23bef1a1c0ddb44df03c1d468192216679d46f42426e342b4b46d",
-  "asrTranscriptSha256": "1e228832131c3019cb028991dc0d2f3ca16377ed273f35fde19daf728e334a78"
+  "asrTranscriptSha256": "1e228832131c3019cb028991dc0d2f3ca16377ed273f35fde19daf728e334a78",
+  "timingQa": {
+    "assessedAt": "2026-08-28",
+    "calibration": "docs/ielts-listening-timing-reference-2026-08-28.json",
+    "status": "rejected",
+    "audibleSeconds": 737.066,
+    "silenceRatio": 0.5764,
+    "longestSilenceSeconds": 242.318,
+    "trailingSilenceSeconds": 242.318,
+    "failedChecks": [
+      "audibleDensity",
+      "silenceRatio",
+      "longestSilence",
+      "noArtificialTrailingPadding"
+    ]
+  }
 }

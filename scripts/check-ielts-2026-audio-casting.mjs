@@ -67,6 +67,9 @@ const availableCredits = casting.account_snapshot.available_credits;
 const resetCreditLimit = casting.account_snapshot.character_limit;
 const blockers = [];
 if (casting.approval !== 'approved_by_owner') blockers.push('voice casting is pending explicit owner approval');
+if (plan.timingFidelityGate?.status !== 'passed') blockers.push(`Listening scripts need ${plan.rows.reduce((total, row) => total + row.timingAdditionalWordsRequired, 0)} additional words before paid synthesis`);
+if (pilot.timing_reassessment?.release_ready_under_current_gate === false) blockers.push('Set 4 historical master fails the current timing-fidelity gate');
+if (set5Candidate.timingQa?.status === 'rejected') blockers.push('Set 5 candidate fails the current timing-fidelity gate');
 if (!pilot.audio_sha256 && availableCredits < pilotCredits) blockers.push(`account has ${availableCredits} credits; Set 4 pilot requires ${pilotCredits}`);
 if (resetCreditLimit < remainingGenerationCredits) blockers.push(`post-reset limit is ${resetCreditLimit}; Sets 1-3 and 6-20 require ${remainingGenerationCredits}`);
 

@@ -105,12 +105,17 @@ export const IELTS_GOLDEN_STANDARD_2026 = {
   },
   welearnInternalGates: {
     listening: {
-      integralAudioSeconds: [27 * 60, 33 * 60],
+      integralAudioSeconds: [29 * 60, 30 * 60],
       transcriptWordsMinimum: 2200,
+      preSynthesisTimingWordsMinimum: 2800,
+      minimumAudibleSeconds: 990,
+      maximumSilenceRatio: 0.45,
+      maximumSingleSilenceSeconds: 75,
+      maximumTrailingSilenceSeconds: 5,
       scriptsFreezeBeforePaidAudio: true,
       noEvidenceAfterAnswer: true,
       noCorrectOptionLengthLeak: true,
-      audioQa: ['duration', 'integrity', 'loudness', 'silence', 'asr-alignment', 'speaker-casting', 'accent-coverage'],
+      audioQa: ['duration', 'audible-density', 'silence-ratio', 'longest-silence', 'trailing-silence', 'integrity', 'loudness', 'asr-alignment', 'speaker-casting', 'accent-coverage'],
     },
     reading: {
       answerMustBeSupportedByPassage: true,
@@ -158,7 +163,8 @@ export const IELTS_GOLDEN_STANDARD_2026 = {
     },
   },
   references: {
-    productionReferenceSet: 4,
+    productionReferenceSet: null,
+    historicalPublishedSet: 4,
     goldenCandidateSet: 5,
     goldenCandidateMayReplaceReferenceOnlyAfter: [
       'structural-audit',

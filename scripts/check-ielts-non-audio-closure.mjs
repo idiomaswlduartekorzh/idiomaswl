@@ -13,7 +13,7 @@ const ROOT = process.cwd();
 const REPORT_AS_OF = '2026-08-28';
 const CLOSURE_PATH = path.join(ROOT, 'docs', 'ielts-non-audio-closure-2026-08-28.json');
 const SET_NUMBERS = Array.from({ length: 20 }, (_, index) => index + 1);
-const AUDIO_READY_SETS = [4];
+const AUDIO_READY_SETS = [];
 const SHARED_INPUTS = [
   'scripts/lib/audit-ielts-golden-content.mjs',
   'src/data/mocks/ielts-academic-2026.ts',
@@ -118,9 +118,7 @@ async function inspectSet(setNumber) {
     publicKeys: 0,
   }, `Set ${setNumber} runtime contract drift.`);
 
-  const expectedMediaStatus = setNumber === 4
-    ? 'ready-existing'
-    : setNumber >= 5 && setNumber <= 12
+  const expectedMediaStatus = setNumber >= 4 && setNumber <= 12
       ? 'legacy-audio-under-review'
       : 'script-ready-audio-blocked';
   assert.equal(mock.ieltsAcademic2026Blueprint.listeningMediaStatus, expectedMediaStatus, `Set ${setNumber} media truth drift.`);
@@ -164,7 +162,7 @@ const closure = {
 };
 
 assert.deepEqual(closure.nonAudioReadySets, SET_NUMBERS, 'Non-audio closure does not cover Sets 1–20 exactly.');
-assert.deepEqual(closure.audioReadySets, [4], 'Only owner-accepted Set 4 may be audio-ready.');
+assert.deepEqual(closure.audioReadySets, [], 'No set may be audio-ready until it passes the calibrated timing gate.');
 assert.equal(closure.totalLiveControls, 4784, 'Golden control-count drift requires an explicit closure refresh.');
 
 if (process.argv.includes('--write')) {

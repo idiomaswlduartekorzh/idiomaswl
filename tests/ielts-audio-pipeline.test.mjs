@@ -14,9 +14,12 @@ test('the checked-in invoice never discounts authored characters', () => {
   const sourceCharacters = plan.rows.reduce((total, row) => total + row.sourceCharacters, 0);
   assert.equal(plan.editorialGate.status, 'passed');
   assert.deepEqual(plan.rows.map(row => row.setId), Array.from({ length: 20 }, (_, index) => `set-${index + 1}`));
-  assert.equal(plan.rows.find(row => row.setId === 'set-4').releaseAction, 'keep-owner-accepted-master');
-  assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, sourceCharacters);
-  assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(sourceCharacters * casting.credits_per_character));
+  assert.equal(plan.rows.find(row => row.setId === 'set-4').releaseAction, 'replace-after-editorial-and-audio-qa');
+  assert.equal(plan.timingFidelityGate.status, 'blocked');
+  assert.equal(plan.timingFidelityGate.minimumTranscriptWordsPerSet, 2800);
+  assert.equal(plan.timingFidelityGate.targetIntegralDurationSeconds[1], 1800);
+  assert.equal(plan.invoice.projectedMinimumCharactersAfterEditorialGate, 340074);
+  assert.equal(plan.invoice.projectedMinimumCreditsAfterEditorialGate, Math.ceil(340074 * casting.credits_per_character));
   assert.equal(casting.manifest_sha256, plan.manifestSha256);
   const pilotRow = plan.rows.find(row => row.setId === `set-${pilot.pilot_set}`);
   assert.ok(pilotRow);
@@ -28,7 +31,7 @@ test('the checked-in invoice never discounts authored characters', () => {
     pilot.segment_source_sha256,
   );
   assert.equal(casting.target.minimum_duration_seconds, 1740);
-  assert.equal(casting.target.maximum_duration_seconds, 1860);
+  assert.equal(casting.target.maximum_duration_seconds, 1800);
   assert.ok(casting.target.normalization_true_peak_dbfs < casting.target.max_true_peak_dbfs);
   assert.equal(casting.target.silence_between_parts_seconds, 15);
   assert.equal(pilot.status, 'accepted_by_owner');
@@ -41,7 +44,7 @@ test('the checked-in invoice never discounts authored characters', () => {
   for (const row of plan.rows) {
     const announcements = row.segments.filter(segment => segment.kind === 'announcer');
     assert.equal(announcements.length, 12, `${row.setId} must announce both question blocks and review time in every part`);
-    assert.equal(announcements.reduce((total, segment) => total + segment.pauseAfterSeconds, 0), 735);
+    assert.equal(announcements.reduce((total, segment) => total + segment.pauseAfterSeconds, 0), 300);
     assert.ok(row.profiles.includes('announcer:british'));
   }
   const set4 = plan.rows.find(row => row.setId === 'set-4');
@@ -66,7 +69,9 @@ test('the checked-in invoice never discounts authored characters', () => {
   assert.equal(set5Candidate.reusedPilotCharacters, 583);
   assert.equal(set5Candidate.billableCharacters + set5Candidate.reusedPilotCharacters, set5.sourceCharacters);
   assert.equal(set5Candidate.releaseAuthorized, false);
-  assert.equal(set5Candidate.status, 'technical_and_transcript_qa_passed_pending_owner_listening_review');
+  assert.equal(set5Candidate.status, 'rejected_timing_profile_requires_script_revision_and_reassembly');
+  assert.equal(set5Candidate.timingQa.status, 'rejected');
+  assert.ok(set5Candidate.timingQa.trailingSilenceSeconds > 240);
   assert.match(
     generatorSource,
     /const textSha256 = sha256\(segment\.text\);/,
@@ -88,6 +93,8 @@ test('the checked-in invoice never discounts authored characters', () => {
     'prior-cache speech remains historically billable; only accepted pilot bytes are free',
   );
   assert.match(generatorSource, /sameAudioBytes\(segmentPath, approvedPilotPath\)/);
+  assert.doesNotMatch(generatorSource, /apad=whole_dur/);
+  assert.match(generatorSource, /assertAudioTiming\(wavPath/);
 });
 
 test('dry-run source verification is local, deterministic and non-authorizing', () => {
@@ -126,8 +133,18 @@ test('paid generation cannot exceed the owner-approved ceiling before any secret
   assert.ok(casting.approval_scope.reserve_override_at);
   assert.equal(casting.approval, 'approved_by_owner');
   assert.equal(pilot.status, 'accepted_by_owner');
+  assert.equal(pilot.timing_reassessment.release_ready_under_current_gate, false);
   assert.ok(pilot.audio_sha256);
   assert.ok(pilot.qa_report_sha256);
   assert.ok(pilot.transcript_qa_report_sha256);
   assert.ok(pilot.approved_at);
+
+  const timingBlocked = spawnSync(process.execPath, [
+    '--experimental-strip-types', '--no-warnings', 'scripts/generate-ielts-2026-audio.mjs',
+    '--generate', '--sets', '5', '--approve-manifest', plan.manifestSha256,
+    '--max-usd', '0.75', '--min-remaining-credits', '0', '--seed-salt', 'test-only',
+  ], { encoding: 'utf8', env: { PATH: process.env.PATH } });
+  assert.notEqual(timingBlocked.status, 0);
+  assert.match(timingBlocked.stderr, /timing-density gate/);
+  assert.doesNotMatch(timingBlocked.stderr, /ELEVENLABS_API_KEY/);
 });

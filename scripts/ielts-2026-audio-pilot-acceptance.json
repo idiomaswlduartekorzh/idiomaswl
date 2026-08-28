@@ -16,5 +16,22 @@
     "word_error_rate": 0.0236,
     "completion_evidence_in_order": "27/27"
   },
-  "approved_at": "2026-08-26T01:32:11Z"
+  "approved_at": "2026-08-26T01:32:11Z",
+  "timing_reassessment": {
+    "assessed_at": "2026-08-28",
+    "calibration": "docs/ielts-listening-timing-reference-2026-08-28.json",
+    "status": "fails_2026_timing_fidelity_gate_replacement_required",
+    "owner_acceptance_preserved_as_historical_fact": true,
+    "release_ready_under_current_gate": false,
+    "audible_seconds": 902.119,
+    "silence_ratio": 0.4448,
+    "longest_silence_seconds": 141.545,
+    "trailing_silence_seconds": 141.545,
+    "failed_checks": [
+      "durationWithinOfficialSampleWindow",
+      "audibleDensity",
+      "longestSilence",
+      "noArtificialTrailingPadding"
+    ]
+  }
 }
