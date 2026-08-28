@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif" role="img" aria-labelledby="set10-title set10-desc">
+  <title id="set10-title">Unemployment rates in Spain, Germany and Brazil, 2008 to 2022</title>
+  <desc id="set10-desc">A line chart shows unemployment as a percentage of the labour force every two years. Spain rises from 11 percent in 2008 to 25 percent in 2012, then falls to 13 percent in 2022. Germany declines from 7.5 to 3 percent with a small rise in 2020. Brazil falls from 8 to 5 percent by 2014, rises to 14 percent in 2020, then falls to 9.5 percent.</desc>
   <rect width="680" height="400" fill="#fafafa" rx="8"/>
   <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Unemployment Rates in Three Countries — 2008 to 2022 (%)</text>
 

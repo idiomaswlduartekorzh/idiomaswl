@@ -149,6 +149,12 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   zoológicos por uno original de ciencia ciudadana. El gráfico de cinco áreas quedó
   alineado en categorías, años y miles, y pasó inspección renderizada y semántica.
   Sólo queda diferido su audio Listening.
+- El Set 10 superó 235 controles Golden. Se eliminaron afirmaciones obsoletas o no
+  sustentadas sobre el tratado de plásticos, valor de la economía de plataformas,
+  lesión de H.M. y memoria digital. Listening quedó completo en fuente, el Task 2
+  público de migración rural fue sustituido por una política original de reparación
+  y uso compartido, y el gráfico de desempleo pasó QA visual y accesible. Sólo queda
+  diferido su audio Listening.
 
 ## Auditoría final no-audio
 

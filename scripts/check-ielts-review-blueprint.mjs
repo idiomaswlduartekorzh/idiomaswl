@@ -71,4 +71,9 @@ assert.match(set9Task1.stimulus, /five university subject areas.*2005.*2023/i, '
 assert.match(set9Task1.stimulus, /in thousands/i, 'Set 9: la consigna debe declarar la unidad del gráfico')
 assert.match(set9Task1.imageAlt, /Business and Management.*Computer Science.*Engineering.*Health Sciences.*Humanities/i, 'Set 9: el texto alternativo debe enumerar las cinco áreas')
 
+const { default: set10 } = await import('../src/data/mocks/ielts-set-10.ts')
+const set10Task1 = set10.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set10Task1.stimulus, /unemployment rate.*percentage.*2008.*2022/i, 'Set 10: la consigna debe declarar medida, unidad y periodo')
+assert.match(set10Task1.imageAlt, /Spain.*Germany.*Brazil.*2008.*2022/i, 'Set 10: el texto alternativo debe enumerar países y periodo')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')
