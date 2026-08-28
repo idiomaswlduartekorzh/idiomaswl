@@ -10,6 +10,7 @@ import set7 from '../src/data/mocks/ielts-set-7.ts';
 import set8 from '../src/data/mocks/ielts-set-8.ts';
 import set9 from '../src/data/mocks/ielts-set-9.ts';
 import set10 from '../src/data/mocks/ielts-set-10.ts';
+import set11 from '../src/data/mocks/ielts-set-11.ts';
 import set13 from '../src/data/mocks/ielts-set-13.ts';
 import { withIeltsAcademic2026Blueprint } from '../src/data/mocks/ielts-academic-2026.ts';
 import { toPublicIeltsMock } from '../src/data/mocks/ielts-public-payload.ts';
@@ -101,7 +102,9 @@ test('all 20 sets have an explicit editorial certification state', () => {
   assert.equal(IELTS_EDITORIAL_STATUS_2026[9].provenance, 'audited-original-welearn');
   assert.equal(IELTS_EDITORIAL_STATUS_2026[10].certification, 'certified-golden-content');
   assert.equal(IELTS_EDITORIAL_STATUS_2026[10].provenance, 'audited-original-welearn');
-  for (let setNumber = 11; setNumber <= 20; setNumber += 1) {
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[11].certification, 'certified-golden-content');
+  assert.equal(IELTS_EDITORIAL_STATUS_2026[11].provenance, 'audited-original-welearn');
+  for (let setNumber = 12; setNumber <= 20; setNumber += 1) {
     assert.equal(IELTS_EDITORIAL_STATUS_2026[setNumber].certification, 'pending-golden-audit');
   }
 });
@@ -144,6 +147,8 @@ test('only owner-accepted Listening media is marked ready', () => {
   assert.equal(ninthAuditedLegacyAudio.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');
   const tenthAuditedLegacyAudio = withIeltsAcademic2026Blueprint(set10);
   assert.equal(tenthAuditedLegacyAudio.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');
+  const eleventhAuditedLegacyAudio = withIeltsAcademic2026Blueprint(set11);
+  assert.equal(eleventhAuditedLegacyAudio.ieltsAcademic2026Blueprint.listeningMediaStatus, 'legacy-audio-under-review');
 });
 
 test('all 17 Academic Reading papers contain 40 responses and 2,150–2,750 words', async () => {

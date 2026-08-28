@@ -76,4 +76,9 @@ const set10Task1 = set10.sections.flatMap(section => section.questions).find(que
 assert.match(set10Task1.stimulus, /unemployment rate.*percentage.*2008.*2022/i, 'Set 10: la consigna debe declarar medida, unidad y periodo')
 assert.match(set10Task1.imageAlt, /Spain.*Germany.*Brazil.*2008.*2022/i, 'Set 10: el texto alternativo debe enumerar países y periodo')
 
+const { default: set11 } = await import('../src/data/mocks/ielts-set-11.ts')
+const set11Task1 = set11.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set11Task1.stimulus, /water consumption per capita.*litres.*2010.*2023/i, 'Set 11: la consigna debe declarar medida, unidad y años')
+assert.match(set11Task1.imageAlt, /Los Angeles.*Singapore.*Cape Town.*Copenhagen/i, 'Set 11: el texto alternativo debe enumerar las cuatro ciudades')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

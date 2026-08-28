@@ -46,6 +46,14 @@ CUSTOMER: I saw an advert in the newspaper — oh, no, sorry, it was actually a 
 
 AGENT: A magazine, great. Now, we run two workshops at the moment. Would you like to hear about them?
 
+CUSTOMER: Yes, but first, are the sessions suitable for somebody who uses a hearing aid?
+
+AGENT: They are. The indoor room has an induction loop, written demonstrations and a screen showing the camera controls. Tell the tutor privately if another adjustment would help. We record that information only for delivering the course, not for advertising.
+
+CUSTOMER: Good. I have a mirrorless camera, but it is an older model.
+
+AGENT: That's fine. The teaching is about exposure and composition rather than one brand. Bring a charged battery and an empty memory card. We lend a camera only when equipment fails during a session; it is not part of the booking.
+
 CUSTOMER: Yes, please.
 
 AGENT: The first is our Beginners' Workshop. You'll learn how to control the light — how much of it reaches the camera — and how to compose a good shot. The sessions are held on Saturday morning.
@@ -56,13 +64,25 @@ AGENT: The second is the Landscape Workshop. For that one, the group travels out
 
 CUSTOMER: I've got one of those, so that's fine.
 
+AGENT: The outdoor day involves about three kilometres of walking on an uneven path. We choose positions with step-free alternatives, although the lakeside ground can be muddy. If severe weather makes the location unsafe, we move the practical work to the following Sunday; light rain by itself does not cancel it.
+
+CUSTOMER: Would I need specialist lenses?
+
+AGENT: No. A standard lens is sufficient. The tutor may demonstrate filters, but nobody is expected to buy extra equipment. Participants can photograph the landscape and buildings. If a person is recognisable, ask permission before making them the main subject, and do not enter private land for a better angle.
+
 AGENT: Let me give you the prices. The Beginners' Workshop is four sessions of three hours each. It costs £120, and that price includes lunch.
 
 CUSTOMER: And the Landscape one?
 
 AGENT: The Landscape Workshop runs over two sessions of five hours each. That one is £150, and the price includes transport to the lake.
 
-CUSTOMER: Great, I'll think about which to choose and call you back.`,
+CUSTOMER: When is payment due, and what happens if I have to cancel?
+
+AGENT: We take a small deposit when you confirm and the balance seven days before the first class. You can transfer to another date without a fee up to a week beforehand. Later changes depend on whether we can fill the place. If the studio cancels, you can choose a full refund or another course.
+
+CUSTOMER: That is clear. I'll compare the dates and call you back rather than paying through a link in an unsolicited message.
+
+AGENT: Sensible. Use the number on our website and quote your name; we never request a card PIN.`,
       questions: [
         {
           type: 'formgroup',
@@ -130,19 +150,29 @@ Landscape Workshop
       instructions: 'You will hear a guide giving a backstage tour of a theatre. Listen and answer Questions 11–20.',
       transcript: `Good morning everyone, and welcome to the backstage tour of the Regent Theatre. Before we set off, let me mention the improvements we've made this year. We've installed a completely new lighting system above the stage, which is now fully computer-controlled. We've also refurbished the dressing rooms downstairs, which the actors are delighted with. Now, some of you asked about the main auditorium — I'm afraid we can't alter that, as the building is protected, and the little café by the entrance is exactly as it has always been. The box office hasn't changed either, though we do hope to modernise it next year.
 
+Please remain with the group. Backstage routes change while scenery is being moved, so a door that was safe ten minutes ago may no longer be part of our tour. Keep drinks in your bag, do not cross a taped line and ask before taking a photograph. Performers and crew may be preparing for this evening and are not exhibits. A step-free route reaches the same principal spaces by a different corridor; I will show its users where we rejoin.
+
 Right, let's begin. The Regent is a medium-sized venue and can seat 900 people. As we walk onto the stage, notice the floor — it's made of pine, a soft wood that has a gentle spring to it, which is kinder to the dancers' feet.
 
+The surface is inspected frequently for splinters, loose fixings and moisture. Marks you can see are temporary positions for this production, not damage. During a changeover, teams work to a plan agreed in advance; speed never removes the obligation to confirm that an area is clear.
+
 Now look up. That tall space above us is the fly tower. Using a system of ropes and pulleys, the crew can raise and lower the scenery quickly between scenes, so the audience never sees it happening.
+
+Only trained staff operate that machinery. Every suspended item has a recorded load and secondary protection, and verbal calls are repeated so the operator knows they were heard. We will look from the marked viewing point rather than standing beneath a moving piece.
 
 Just through this door is the green room. Despite the name, it isn't green — it's simply the comfortable space where the actors relax while they wait to go on.
 
 Next door is the wardrobe department. This is where a small team of skilled staff design and make all the costumes for each production, often by hand.
 
+They also alter, label, clean and repair garments through the run. Reuse is common, but a historical style on stage is an interpretation rather than proof of exactly what every person wore. Materials must work under hot lights, permit movement and be changed quickly without confusing one performer's items with another's.
+
 One important safety feature: in the event of a fire, a heavy safety curtain can be lowered to seal the stage off from the audience. It is tested before every performance.
 
 The large room at the back is the workshop, where the carpenters build the set — everything from walls to furniture.
 
-And finally, our tour ends at the theatre shop, where you can buy posters and other souvenirs from our current show. Do have a look before you leave. Thank you.`,
+Many pieces are designed to look solid from the auditorium while remaining light enough to move. Paints and adhesives are assessed for ventilation and fire performance. Offcuts are sorted for reuse where practical, and measurements are checked against doorways before a finished object reaches the stage.
+
+And finally, our tour ends at the theatre shop, where you can buy posters and other souvenirs from our current show. Purchases are optional; the exit and accessible toilet are beside the shop, and the guide desk can provide route notes in large print. Do have a look before you leave. Thank you.`,
       questions: [
         {
           type: 'multiselect',
@@ -180,10 +210,10 @@ And finally, our tour ends at the theatre shop, where you can buy posters and ot
             { num: 14, answers: ['pine'], maxWords: 1 },
             { num: 15, answers: ['scenery'], maxWords: 1 },
             { num: 16, answers: ['relax', 'wait'], maxWords: 1 },
-            { num: 17, answers: ['costumes', 'costume'], maxWords: 1 },
-            { num: 18, answers: ['safety curtain', 'curtain', 'iron curtain'], maxWords: 2 },
+            { num: 17, answers: ['costumes'], maxWords: 1 },
+            { num: 18, answers: ['safety curtain', 'curtain'], maxWords: 2 },
             { num: 19, answers: ['workshop'], maxWords: 1 },
-            { num: 20, answers: ['posters', 'poster', 'souvenirs'], maxWords: 1 },
+            { num: 20, answers: ['posters', 'souvenirs'], maxWords: 1 },
           ],
         },
       ],
@@ -221,7 +251,23 @@ STUDENT: I'll do that. What about the length overall?
 
 TUTOR: The length is fine. Now, in terms of what to do next. First, you need to strengthen the evidence, so find some newer figures. Second, I'd like you to add a diagram showing how much plastic is recycled — a visual really helps the reader. Then check your referencing, because a couple of citations are missing a date. After that, read the whole thing aloud to catch any awkward sentences. And finally, send me the revised draft by email so I can look at it again before you submit.
 
-STUDENT: Thank you, that's really helpful.`,
+STUDENT: Should I replace every older study?
+
+TUTOR: No. A foundational study may still explain a method or historical change. What matters is whether the claim is time-sensitive. A current collection rate needs a current source; the date a policy began does not change. Record the jurisdiction, measurement and denominator as well as the year. “Plastic recycled” could mean material collected, sorted, reprocessed or used in a new product.
+
+STUDENT: The German example uses the return rate for eligible drink containers. I should not present it as the share of all packaging.
+
+TUTOR: Exactly. Also separate correlation from attribution. A rate may rise after a scheme begins while other rules, prices and public campaigns change too. Compare like periods and acknowledge what your evidence cannot establish.
+
+STUDENT: For the visual, could I copy a chart from the report?
+
+TUTOR: Better to make your own from the cited table, if its licence permits reuse of the numbers. Give the unit, source and any exclusions. Use patterns or direct labels rather than colour alone, and describe the main result in the prose so a reader does not need to see it.
+
+STUDENT: And I should remove the new claim from the conclusion rather than merely repeat it there.
+
+TUTOR: Yes. A conclusion synthesises the supported argument; it should not surprise the reader with fresh evidence. When you revise, keep your original claim qualified: individual choices matter, but their effect depends on the systems manufacturers and governments provide.
+
+STUDENT: Thank you, that's really helpful. I'll keep a change log so I can explain each revision rather than just polishing the wording.`,
       questions: [
         {
           type: 'mcq',
@@ -314,17 +360,25 @@ STUDENT: Thank you, that's really helpful.`,
       instructions: 'You will hear a lecture about Roman aqueducts. Listen and answer Questions 31–40.',
       transcript: `Today I'd like to look at one of the great engineering achievements of the ancient world: the Roman aqueduct. Contrary to popular belief, most of an aqueduct's length ran not on those famous arches but underground, hidden beneath the ground. The tall arches we admire today were used only where the water had to cross a valley.
 
-The whole system depended on a single, simple force: gravity. Because there were no pumps, the channel had to slope gently downhill for its entire length, sometimes for many kilometres. If the slope was too steep, the water moved too fast and damaged the channel; if it was too shallow, the water stopped moving and turned stagnant.
+“Aqueduct” names the complete route, not merely a bridge. Covered channels protected the flow from debris and accidental damage, while inspection shafts allowed access. Routes followed terrain rather than a straight line. The surviving masonry can dominate photographs precisely because buried sections are harder to see, so visibility is a poor guide to their proportion.
 
-To measure these tiny gradients, surveyors used a long wooden instrument, filled with water, that acted as a level. Getting the measurement wrong by even a fraction could ruin the whole project.
+The whole system depended on a single force: gravity. Because there were no pumps along the ordinary channel, it had to slope gently downhill for its entire length, sometimes for many kilometres. If the slope was too steep, the water moved too fast and damaged the channel; if it was too shallow, the water stopped moving and turned stagnant.
+
+Actual gradients varied with the route, and engineers managed changes through settling basins, drops and pressure pipes. “No pumps” does not mean the design was simple. A survey error accumulated over distance, while too much speed could scour a surface and too little could encourage sediment. Builders balanced flow, construction effort and the elevation needed at the destination.
+
+To measure these tiny gradients, surveyors used a long wooden instrument, filled with water, that acted as a level. Getting the measurement wrong by even a fraction could ruin the whole project. The Roman author Vitruvius described the chorobates, although historians should not assume that one written instrument was used identically everywhere. Archaeological slopes, surviving texts and experimental reconstruction provide different evidence. A completed route shows repeated checking, not a single perfect reading.
 
 The water channel itself was usually lined with a special waterproof cement to prevent leaks and to keep the supply clean. When the water finally reached the city, it was collected in a large tank and shared out. The most important users, receiving water first, were the public fountains and baths, where ordinary people came to wash and to collect drinking water.
+
+Clean here is relative to ancient practice, not a claim that the flow met modern microbiological standards. Sources differed in taste and quality, and water could be diverted lawfully or illegally. Distribution tanks, local pipes, storage and overflow made the network more complex than one tank serving users in a fixed order. Public access was vital, but evidence for allocation must be tied to period and source.
 
 Maintaining the aqueducts was a constant task. A serious problem was the build-up of lime, a hard mineral deposit left by the water, which gradually narrowed the channel and had to be chipped away by hand.
 
 The official placed in overall charge of the entire water supply held the important title of curator, a highly respected public office.
 
-Eventually the system declined. In times of war, an enemy could force a city to surrender simply by cutting off its supply. And once the central government grew too weak to pay for repairs, the aqueducts slowly fell into ruin. It was not until the Renaissance that engineers in Rome began to restore them, more than a thousand years later.`,
+Frontinus, who held that office in the late first century CE, documented measurements, legal rights and unauthorised diversions. His account is invaluable but represents an administrator's perspective, not a complete description of every neighbourhood or century.
+
+Eventually the system declined. In times of war, an enemy could force a city to surrender simply by cutting off its supply. And once the central government grew too weak to pay for repairs, the aqueducts slowly fell into ruin. Decline was uneven: wells, the river and some channels continued to serve people, while structures were damaged, abandoned or reused at different dates. It was not until the Renaissance that engineers in Rome began to restore major long-distance routes, more than a thousand years later.`,
       questions: [
         {
           type: 'formgroup',
@@ -357,8 +411,8 @@ People and decline
             { num: 33, answers: ['stagnant'], maxWords: 1 },
             { num: 34, answers: ['level'], maxWords: 1 },
             { num: 35, answers: ['cement'], maxWords: 1 },
-            { num: 36, answers: ['fountains', 'fountain'], maxWords: 1 },
-            { num: 37, answers: ['lime', 'limescale'], maxWords: 1 },
+            { num: 36, answers: ['fountains'], maxWords: 1 },
+            { num: 37, answers: ['lime'], maxWords: 1 },
             { num: 38, answers: ['curator'], maxWords: 1 },
             { num: 39, answers: ['supply'], maxWords: 1 },
             { num: 40, answers: ['Renaissance'], maxWords: 1 },
@@ -376,17 +430,19 @@ People and decline
       instructions: 'Read the passage and answer Questions 1–13.',
       passage: `Engineering Water in Ancient Rome
 
-The Roman Empire's capacity to supply clean water to its cities was, by ancient standards, an extraordinary feat of engineering. At its peak, Rome's water system delivered an estimated one million cubic metres of water daily to a city of around one million inhabitants—a figure that rivals the per capita supply of many modern cities. This achievement rested on an interlocking network of aqueducts, pipes, cisterns, and fountains whose construction and maintenance demanded both technical expertise and substantial political will.
+Rome's capacity to move spring water across difficult terrain was, by ancient standards, an extraordinary feat. A frequently repeated estimate gives the imperial system a nominal capacity near one million cubic metres a day, but leakage, unauthorised diversion, measurement assumptions and an uncertain population make a modern per-capita comparison unreliable. Water quality also varied by source and route, so “aqueduct water” was not one uniform product. The achievement rested on an interlocking network of catchments, channels, bridges, pressure pipes, settling tanks, local distribution and fountains. Construction mattered, but continuing inspection, legal administration and paid labour kept a route useful.
 
-The earliest Roman aqueduct, the Aqua Appia, was built in 312 BCE during the censorship of Appius Claudius Caecus. It ran almost entirely underground, a precaution against both enemy attack and evaporation. Over the following five centuries, ten further aqueducts were constructed, eventually supplying water from sources up to ninety kilometres away. The most celebrated, the Aqua Claudia and the Anio Novus, were completed under the Emperor Claudius in 52 CE. These structures stretched for over sixty kilometres and carried water across dramatic valleys on soaring arcaded bridges, many of which still stand today.
+The earliest Roman aqueduct, the Aqua Appia, was built in 312 BCE during the censorship of Appius Claudius Caecus. It ran almost entirely underground. Security may have been an advantage, but terrain, construction and protection from contamination also matter; one surviving fact does not prove a single intention. Over the following five centuries, ten further aqueducts were constructed. The Aqua Claudia and Anio Novus were completed under Emperor Claudius in 52 CE. Their routes extended for many kilometres, yet arches formed only visible portions where elevation had to be maintained across low ground.
 
-Roman engineers achieved the movement of water through a sophisticated application of gravity. Aqueducts were built with a precisely calculated continuous downward gradient—typically around one in two hundred—ensuring a steady flow without mechanical pumping. Maintaining this gradient over long and varied terrain required skill in surveying and the use of instruments such as the groma and the chorobates, a type of water level. Where valleys interrupted the route, engineers had two options: carry the water across on stone arches, or allow it to descend underground and rise on the far side using an inverted siphon, exploiting the principle that water seeks its own level.
+Roman engineers moved water chiefly through gravity. A channel required a controlled net fall, but gradients varied rather than following one universal ratio. Surveying and repeated checks were needed over changing terrain. Vitruvius described instruments including the chorobates, a water level; the groma was better suited to alignment than fine levelling. Where a valley interrupted a route, builders might maintain height on arches or use an inverted siphon, sending water down and up through sealed pressure pipes. The latter imposed substantial pressure and demanded strong joints; it was not simply an open channel in which water happened to seek its own level.
 
-At their destinations, the aqueducts discharged into distribution tanks called castella aquae. From these, lead and terracotta pipes carried water to the city's three principal consumers: public fountains and baths, which had the highest priority; private houses; and finally the emperor's palace. Poorer citizens collected water from the fountains, which ran continuously—the overflow from upper-level basins cascading into lower ones before flowing into the sewers. Wealthier households paid for a direct connection, and the government occasionally granted private access as a political favour.
+At destinations, some routes discharged through distribution structures often called castella aquae, although archaeologists debate how uniformly a textbook tank model applied across Rome. Lead and terracotta pipes served public basins, baths, imperial properties and authorised private connections. Public fountains provided access for households without a pipe, while continuous overflow could flush drains. Frontinus listed allocations and complained about illegal taps, but his administrative categories do not establish one fixed priority order for every district and period. A private connection depended on permission and resources; it was not available to all citizens on equal terms.
 
-The city's engineers were also responsible for waste removal. The Cloaca Maxima, one of the world's earliest large-scale sewage systems, was originally constructed in the sixth century BCE to drain the marshy valley between Rome's hills. It was later extended and enclosed, channelling sewage from the public latrines and baths directly into the Tiber. Roman latrines were communal, multi-seater facilities supplied with running water; personal privacy was not a cultural expectation. The entire water infrastructure was overseen by a dedicated official known as the curator aquarum, a post created by Augustus in 11 BCE and held at various times by notable figures including the author Sextus Julius Frontinus, who wrote an invaluable technical treatise on the system.
+Reconstructing performance requires several kinds of evidence. A written capacity may describe a legal allocation rather than water actually delivered. Mineral deposits can preserve sequences of flow and repair, while an excavated pipe shows only one location and phase. Modern hydraulic models help test whether a proposed route could work, but their inputs must not be mistaken for observations. Even familiar labels are translations: a Latin term may cover structures that do not fit one modern category. Good estimates therefore publish ranges and assumptions instead of converting every uncertain quantity into a precise daily total.
 
-The eventual decline of Rome's water supply was less a story of engineering failure than of political collapse. As central authority weakened during the third and fourth centuries CE, maintenance became increasingly difficult. Invading armies cut or damaged aqueducts deliberately, knowing that disrupting water supply would hasten surrender. By the sixth century, only a fraction of the aqueducts remained operational, and Rome's population had fallen to perhaps thirty thousand. The infrastructure was not meaningfully restored until the Renaissance, when popes began rebuilding aqueducts to supply the growing city and, less nobly, to power the elaborate fountain displays that became symbols of papal prestige.`,
+Water supply and drainage were connected but not one modern sanitary network. The Cloaca Maxima began as drainage for a low, wet valley and was later enclosed and incorporated into a larger system carrying runoff and waste toward the Tiber. Communal latrines demonstrate one public practice, not the absence of privacy throughout Roman culture. The water infrastructure was overseen by officials including the curator aquarum, an office established under Augustus. Sextus Julius Frontinus held it and wrote a technical-administrative account whose figures and complaints remain invaluable while still reflecting one author's purpose.
+
+The network's contraction was not one sudden engineering failure. Population, funding and administration changed; routes were repaired, abandoned, reused or deliberately cut at different moments. During the Gothic siege of 537 CE, attackers damaged aqueducts, but residents also relied on wells and the Tiber. Exact population estimates are uncertain. Medieval Rome did not simply wait without water until the Renaissance: local sources and some ancient works continued in altered forms. From the late fifteenth century, papal projects restored major long-distance supplies, supporting households, institutions and prominent fountains. Survival therefore depended as much on governance and maintenance as on the original masonry.`,
       questions: [
         {
           type: 'formgroup',
@@ -394,12 +450,12 @@ The eventual decline of Rome's water supply was less a story of engineering fail
           part: 5,
           qRange: [1, 7],
           groupLabel: 'Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.',
-          template: `1. {{1}}: The Aqua Appia was built above ground for most of its length.\n2. {{2}}: The Aqua Claudia and Anio Novus were built during the reign of Emperor Claudius.\n3. {{3}}: Roman aqueducts used mechanical pumps to maintain water flow.\n4. {{4}}: The castella aquae supplied water to public fountains before private homes.\n5. {{5}}: All Roman citizens, regardless of wealth, had access to private water connections.\n6. {{6}}: The Cloaca Maxima was originally designed to drain marshland.\n7. {{7}}: The post of curator aquarum was created during the reign of Augustus.`,
+          template: `1. {{1}}: The Aqua Appia was built above ground for most of its length.\n2. {{2}}: The Aqua Claudia and Anio Novus were completed under Emperor Claudius.\n3. {{3}}: Roman aqueduct channels depended mainly on mechanical pumping.\n4. {{4}}: Archaeologists agree that one standard distribution-tank design was used throughout Rome.\n5. {{5}}: All Roman citizens, regardless of wealth, had access to private water connections.\n6. {{6}}: The Cloaca Maxima began as drainage for low, wet land.\n7. {{7}}: The post of curator aquarum was established under Augustus.`,
           blanks: [
             { num: 1, answers: ['FALSE'] },
             { num: 2, answers: ['TRUE'] },
             { num: 3, answers: ['FALSE'] },
-            { num: 4, answers: ['TRUE'] },
+            { num: 4, answers: ['FALSE'] },
             { num: 5, answers: ['FALSE'] },
             { num: 6, answers: ['TRUE'] },
             { num: 7, answers: ['TRUE'] },
@@ -411,14 +467,14 @@ The eventual decline of Rome's water supply was less a story of engineering fail
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. Roman engineers used instruments such as the groma and the {{8}} to survey terrain accurately.\n9. An {{9}} allowed water to descend into a valley and rise on the other side using water pressure.\n10. Public fountains had the {{10}} priority in the distribution of Rome's water supply.\n11. The {{11}} was one of the world's earliest large-scale sewage systems.\n12. The curator aquarum was an official responsible for overseeing Rome's entire {{12}}.\n13. Rome's aqueducts were deliberately damaged by {{13}} who understood that cutting the water supply would weaken the city.`,
+          template: `8. Vitruvius described the {{8}}, an instrument that used water for levelling.\n9. An {{9}} carried water down and up through sealed pressure pipes.\n10. Frontinus complained about unauthorised connections known as illegal {{10}}.\n11. The {{11}} began as drainage for a low, wet valley.\n12. The curator aquarum was an official responsible for overseeing Rome's {{12}}.\n13. During the 537 CE siege, the aqueducts were damaged by {{13}}.`,
           blanks: [
             { num: 8, answers: ['chorobates'] },
             { num: 9, answers: ['inverted siphon'] },
-            { num: 10, answers: ['highest'] },
+            { num: 10, answers: ['taps'] },
             { num: 11, answers: ['Cloaca Maxima'] },
             { num: 12, answers: ['water infrastructure'] },
-            { num: 13, answers: ['invading armies'] },
+            { num: 13, answers: ['attackers'] },
           ],
         },
       ],
@@ -433,17 +489,19 @@ The eventual decline of Rome's water supply was less a story of engineering fail
 
 A. Cities are measurably warmer than the rural areas that surround them. This phenomenon, known as the urban heat island (UHI) effect, was first documented systematically by the English chemist Luke Howard in the early nineteenth century, who observed that London's city centre was consistently warmer than the countryside around it. Today, the temperature difference between a large city and its rural surroundings can exceed ten degrees Celsius on calm, clear nights, with profound consequences for public health, energy consumption, and environmental quality.
 
-B. The UHI effect is driven by a combination of factors, most of which are direct consequences of urbanisation itself. Buildings, roads, and other impervious surfaces absorb solar radiation during the day and release it as heat at night, whereas vegetation—which is scarce in most city centres—reflects sunlight and cools surfaces through evapotranspiration. Concrete and asphalt have a significantly higher heat capacity and lower albedo than the soil and plant matter they replace. In addition, cities produce enormous quantities of "waste heat" from vehicles, air conditioning units, industrial processes, and human bodies.
+B. The UHI effect is driven by interacting changes in surface, moisture, geometry and human activity. Buildings, roads and other impervious surfaces can store solar energy during the day and release it at night, whereas vegetation provides shade and cools through evapotranspiration when water is available. Dark roofing and asphalt often have lower albedo than lighter or vegetated surfaces, but material, colour and weather matter; “concrete” is not one thermal value. Rapid drainage also leaves less water for evaporation. Cities add anthropogenic waste heat from vehicles, air conditioning units and industrial processes. The relative importance of each mechanism changes by neighbourhood, season and time of day.
 
-C. The health consequences of elevated urban temperatures are well established. During heat waves, cities experience disproportionately high mortality rates relative to rural areas. The European heat wave of 2003 killed an estimated seventy thousand people across the continent, with the elderly and those without access to air conditioning at greatest risk. Urban heat is also associated with increased levels of ground-level ozone, which forms when sunlight reacts with pollutants—a process accelerated by higher temperatures. Ozone causes respiratory irritation and is linked to long-term lung damage and increased rates of asthma, particularly in children.
+C. Heat exposure can increase illness and death, but vulnerability is distributed unevenly within a city. Age, health, housing quality, outdoor work, tree cover, income, social isolation and access to cooling all affect risk. An analysis estimated more than seventy thousand excess deaths across Europe during the summer of 2003; an excess-death estimate is not a list of individually certified causes. Heat can also accelerate chemical reactions that form ground-level ozone when precursor pollutants and sunlight are present. Ozone irritates the respiratory system and can worsen asthma. Temperature, pollution and vulnerability should therefore be measured separately even when they interact.
 
 D. The economic costs are equally significant. Higher temperatures drive up demand for air conditioning, increasing electricity consumption and placing strain on power grids during peak periods. A study in Los Angeles found that each additional degree Celsius of urban warming increased peak electricity demand by approximately two percent. This cycle reinforces the UHI effect itself: as buildings consume more energy to cool their interiors, they discharge more heat into the surrounding streets. The additional burden on power infrastructure also raises the risk of blackouts during extreme heat events.
 
 E. Urban planners and researchers have identified several strategies to reduce the UHI effect. Increasing the proportion of green space—through parks, street trees, and green roofs—can lower surface temperatures significantly. Trees are particularly effective: a mature street tree can reduce the ambient temperature of its immediate surroundings by several degrees through shading and evapotranspiration. Studies in cities from Singapore to Phoenix have demonstrated that well-designed parks create measurable "cool islands" that extend beyond their physical boundaries. Cool pavements and reflective roofing materials, which reflect rather than absorb solar radiation, offer additional benefits.
 
-F. Water features also play a role that is frequently underestimated. Fountains, ponds, and water channels cool the air through evaporation, and several cities—including Medellín in Colombia and Seville in Spain—have incorporated water-based cooling into their heat mitigation strategies. Seville has experimented with deploying misting systems in pedestrian areas during summer months, generating local temperature reductions of up to eight degrees in public spaces. These interventions, while effective, are costly and require ongoing maintenance and water supply, which may be scarce in the drier climates most vulnerable to heat stress.
+The scale and metric of cooling matter. Shade can greatly reduce the radiant heat felt by a pedestrian even when a standard air thermometer changes little; a satellite measures surface temperature rather than the air people breathe. Parks can create cool islands beyond their boundaries, but distance and timing vary. Trees also need soil volume, water and years of care. If investment goes only to already leafy districts, a citywide average can improve while the most exposed residents receive no benefit. Heat mapping should therefore be paired with demographic and street-level evidence.
 
-G. At a systemic level, the most durable solutions involve rethinking the materials and geometry of urban design. Orienting streets to allow prevailing winds to penetrate the city fabric can improve ventilation significantly. Limiting the height and density of buildings in key corridors can reduce the "canyon effect," in which tall buildings trap heat radiating from the street. Long-term, the integration of urban heat island mitigation into planning regulations and building codes represents the most powerful tool available to cities facing a warming future—one in which climate change is expected to intensify the UHI effect by raising baseline temperatures across the globe.`,
+F. Water features can cool surfaces or nearby air through evaporation, and cities including Seville have tested misting in selected pedestrian spaces. A large local reduction reported for a shaded demonstration cannot be treated as an eight-degree fall across a city; sensor position, humidity, wind and the comparison baseline matter. Benefits must also be weighed against energy, maintenance, hygiene and water demand. In dry places facing scarcity, potable water may be a poor choice. Recycled water, timed operation and monitoring can change that judgement, but a visually attractive fountain is not automatically an equitable heat policy.
+
+G. At a systemic level, design must combine materials, shade and urban geometry. Orienting streets and preserving ventilation corridors can improve airflow where prevailing winds are reliable. Limiting the height and density of buildings in selected corridors may reduce heat trapped within a street canyon, yet lower density can also lengthen travel and expand land use. Rules therefore need local modelling rather than one ideal form. Building codes, tree protection, cool roofs, transit and heat-health plans operate at different scales. Climate change raises the baseline on which an urban heat island acts, so adaptation should be tested with air and surface temperatures, exposure and health outcomes—not a single citywide average.`,
       questions: [
         {
           type: 'matching',
@@ -497,19 +555,21 @@ G. At a systemic level, the most durable solutions involve rethinking the materi
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `Cognitive Biases and Decision-Making
 
-Human beings like to think of themselves as rational agents: creatures who weigh evidence, consider alternatives, and reach conclusions through careful deliberation. Research in cognitive psychology and behavioural economics over the past half-century has painted a considerably more complicated picture. Our thinking is shaped, often without our awareness, by a range of systematic errors known as cognitive biases—predictable patterns of deviation from logical reasoning that affect individuals across cultures and educational levels.
+People can reason carefully, yet attention, memory, framing and prior knowledge also shape judgement. Cognitive psychologists use “bias” for a systematic pattern relative to a stated benchmark, not for every mistake or an unchangeable defect in a person. A result can vary with task wording, incentives, experience and culture. The important questions are which benchmark applies, how large an effect is, whether it replicates and whether it predicts consequential behaviour outside a laboratory.
 
-The concept of cognitive bias was brought to prominence by the Israeli psychologists Daniel Kahneman and Amos Tversky, whose series of experiments in the 1970s and 1980s demonstrated that human judgement is reliably distorted in ways that can be mapped and predicted. Their work laid the foundation for what Kahneman later called the dual-process theory of mind: the idea that human cognition operates through two parallel systems. System 1 is fast, intuitive, and automatic—it processes information rapidly and generates feelings, impressions, and gut reactions. System 2 is slow, deliberate, and analytical—it handles complex calculations, evaluates arguments, and applies rules. The problem is that System 2 is cognitively expensive, and we default to System 1 far more often than we realise.
+Daniel Kahneman and Amos Tversky brought heuristics and biases to prominence through experiments beginning in the 1970s. Kahneman later used the labels System 1 and System 2 to contrast relatively fast, automatic processes with slower, effortful reasoning. These are useful families of processes, not two anatomical organs or perfectly separate parallel systems. A fast judgement can be expert and accurate; deliberation can also rationalise a preferred answer. The framework predicts neither that intuition always fails nor that extra time automatically removes bias.
 
-One of the most widely studied biases is confirmation bias: the tendency to search for, interpret, and recall information in a way that confirms one's pre-existing beliefs. Studies consistently show that people evaluate identical evidence more favourably when it supports their views and more critically when it contradicts them. This asymmetry has significant consequences in contexts ranging from medical diagnosis—where clinicians may too readily accept initial assessments—to political belief, where exposure to contradictory information can, paradoxically, entrench rather than revise opinion.
+One widely studied family is confirmation bias: selective search for, interpretation of or memory for information that supports an existing belief. The label covers several mechanisms, and evidence is not identical across all tasks. In diagnosis, an early hypothesis may narrow later search. In political settings, people may scrutinise opposing evidence more severely; under some conditions a challenge can entrench a view, but a general “backfire effect” is not inevitable. Accuracy prompts, incentives and genuine opportunities to revise can alter responses.
 
 The anchoring effect describes the tendency for an initial piece of information to disproportionately influence subsequent judgements. In one famous experiment, subjects were asked to spin a wheel that was rigged to stop at either ten or sixty-five, then estimate what percentage of African countries belonged to the United Nations. Those who spun a high number gave systematically higher estimates than those who had spun a low number—despite the complete irrelevance of the spin. Anchoring influences price negotiations, legal sentences, and medical prognoses, often with substantial real-world consequences.
 
-A third bias—availability heuristic—leads people to judge the likelihood of events based on how easily examples come to mind. Events that are dramatic, recent, or frequently covered in media are perceived as more probable than quieter, more common events. After a well-publicised plane crash, fear of flying spikes even as driving—statistically more dangerous—does not attract comparable anxiety. Conversely, slow-developing risks such as poor diet or sedentary behaviour, which cause the majority of premature deaths, may be chronically underestimated precisely because they generate no memorable events.
+A demonstration establishes an effect under stated conditions, not its size in every setting. Later studies can test different anchors, incentives and expertise, and a successful replication may still yield a smaller estimate. Practical safeguards include asking for an independent estimate before revealing another person's number, considering a plausible range and documenting the reasons for a revision. These steps reduce dependence on one starting value without assuming that any first number is irrelevant; a market quote or clinical baseline may contain genuine information.
+
+The availability heuristic describes judging frequency or probability partly by how easily examples come to mind. Vivid, recent or heavily reported events may be more retrievable than quiet ones. A publicised aircraft accident can raise perceived aviation risk, but comparing flying with driving requires a denominator such as journey, hour or distance and depends on jurisdiction. Availability is therefore an explanation to test, not proof that every person misjudges every dramatic event. Experience and relevant expertise can make accessible examples informative.
 
 Not all researchers accept that biases are as universal or as harmful as the standard account implies. Gerd Gigerenzer, a German psychologist, has argued that many so-called biases are actually ecological rationality in action: heuristics that perform well in the environments in which they evolved. A doctor who relies on a simple decision rule—such as admitting all patients with two or more risk factors—may outperform a statistical algorithm that weighs hundreds of variables, precisely because the simpler rule avoids overfitting to noisy data. Gigerenzer's view is that the bias literature too often tests human reasoning against an inappropriate standard of formal logic and ignores the practical value of fast and frugal thinking.
 
-The applied implications of cognitive bias research have been extensive. In public policy, the concept of "nudging"—designing the context of choice to encourage better decisions without restricting options—draws directly on bias research. Automatic enrolment in pension schemes, calorie labelling on menus, and the placement of healthier foods at eye level in canteens all exploit known biases to promote desired outcomes. In medicine, checklists and structured protocols are designed partly to reduce the impact of availability and confirmation biases on clinical judgement. In law, courts in several jurisdictions have begun considering research on eyewitness reliability and the conditions under which false memories are likely to form. The recognition that human reason is imperfect need not lead to pessimism; rather, it opens the door to the deliberate design of environments that account for—and to some extent compensate for—our cognitive limitations.`,
+Applied work asks whether changing a process improves outcomes. “Nudging” alters choice architecture without forbidding options or substantially changing economic incentives; automatic pension enrolment is a familiar example. Effects vary by population and implementation, and an intervention raises questions about transparency, consent and who defines “better”. In medicine, checklists and structured protocols can support teams but fail when poorly designed or detached from workflow. In law, research on memory has influenced some eyewitness procedures. Bias awareness alone is weak protection: useful safeguards make alternatives visible, invite independent estimates, record confidence before feedback and audit results. The recognition that reasoning has limits supports testable design, not a promise to eliminate bias.`,
       questions: [
         {
           type: 'mcq',
@@ -541,12 +601,12 @@ The applied implications of cognitive bias research have been extensive. In publ
           type: 'mcq',
           id: 'r3-q29',
           part: 7,
-          text: 'How does the availability heuristic explain people\'s responses to aeroplane crashes?',
+          text: 'What caution does the writer add to the aircraft example?',
           options: [
-            'People accurately reassess the risk of flying after hearing of a crash.',
-            'The drama of crashes makes flying seem more dangerous than driving, despite the statistics.',
-            'People increase their fear of driving after hearing about aviation accidents.',
-            'The heuristic causes people to underestimate all forms of transport risk.',
+            'Aircraft accidents do not affect perceived risk at all.',
+            'Flying and driving comparisons depend on the denominator and context used.',
+            'Driving is always safer when risk is measured per journey.',
+            'Availability applies only to people without transport experience.',
           ],
           answer: 1,
         },
@@ -569,7 +629,7 @@ The applied implications of cognitive bias research have been extensive. In publ
           part: 7,
           qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: Kahneman and Tversky conducted their key experiments in the United States.\n32. {{32}}: Confirmation bias can cause people to become more entrenched in their beliefs when exposed to opposing evidence.\n33. {{33}}: Cognitive biases are more common in people with lower levels of formal education.\n34. {{34}}: Gigerenzer argues that simple decision rules can outperform complex statistical models in some situations.\n35. {{35}}: The nudging approach to policy design has been proven to eliminate cognitive biases.\n36. {{36}}: Research on cognitive bias has influenced legal proceedings in some countries.`,
+          template: `31. {{31}}: Kahneman and Tversky conducted their key experiments in the United States.\n32. {{32}}: In some conditions, a challenge to a belief can make that belief more entrenched.\n33. {{33}}: The term cognitive bias applies to every isolated reasoning mistake.\n34. {{34}}: Gigerenzer argues that simple decision rules can outperform complex statistical models in some situations.\n35. {{35}}: The nudging approach to policy design has been proven to eliminate cognitive biases.\n36. {{36}}: Research on cognitive bias has influenced legal proceedings in some countries.`,
           blanks: [
             { num: 31, answers: ['NOT GIVEN'] },
             { num: 32, answers: ['YES'] },
@@ -610,7 +670,7 @@ The applied implications of cognitive bias research have been extensive. In publ
           part: 8,
           taskNumber: 1,
           imageUrl: '/assets/ielts/charts/set11-task1.svg',
-          imageAlt: 'Bar chart comparing average daily water consumption per capita in four cities in 2010 and 2023',
+          imageAlt: 'Grouped bar chart comparing average daily water consumption per person in Los Angeles, Singapore, Cape Town and Copenhagen in 2010 and 2023, measured in litres',
           stimulus: 'The bar chart below shows the average daily water consumption per capita (in litres) in four cities in 2010 and 2023.',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
@@ -629,8 +689,8 @@ The applied implications of cognitive bias research have been extensive. In publ
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'Many cities around the world are experiencing the effects of rapid urbanisation, including traffic congestion, air pollution, and lack of green space.',
-          text: 'What measures can city governments take to make urban areas more sustainable and liveable? Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
+          stimulus: 'Some city governments publish neighbourhood-level heat maps to decide where shade, trees and cooling centres should be funded. Others argue that publishing such maps may stigmatise communities and expose sensitive information.',
+          text: 'Discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
           minWords: 250,
         },
       ],
@@ -655,6 +715,10 @@ The applied implications of cognitive bias research have been extensive. In publ
             'What do you like most about living there?',
             'How has your city or neighbourhood changed in recent years?',
             'Do you think cities today are becoming better or worse places to live? Why?',
+            'Which place in your neighbourhood do you visit most often?',
+            'Is your area comfortable to walk around in hot weather?',
+            'How reliable is public transport where you live?',
+            'Would you prefer to live in a different kind of area in the future?',
           ],
         },
         {
@@ -676,6 +740,8 @@ The applied implications of cognitive bias research have been extensive. In publ
             'How can urban design influence the behaviour and wellbeing of residents?',
             'Should governments have more control over how cities develop, or should market forces decide?',
             'What role can technology play in making cities more efficient and sustainable?',
+            'When should neighbourhood data be made public, and when should it remain private?',
+            'How can planners avoid repeating a popular policy that has weak evidence?',
           ],
         },
       ],

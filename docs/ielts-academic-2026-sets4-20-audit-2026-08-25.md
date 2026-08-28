@@ -155,6 +155,11 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   público de migración rural fue sustituido por una política original de reparación
   y uso compartido, y el gráfico de desempleo pasó QA visual y accesible. Sólo queda
   diferido su audio Listening.
+- El Set 11 superó 235 controles Golden. Se reconstruyeron sus cuatro guiones y se
+  corrigieron la falsa precisión del caudal romano, un modelo universal de distribución,
+  afirmaciones térmicas sin contexto y generalizaciones sobre sesgos y efecto rebote.
+  El Task 2 ahora usa una política original de mapas de calor; la gráfica de consumo
+  hídrico pasó QA visual y accesible. Sólo queda diferido su audio Listening.
 
 ## Auditoría final no-audio
 

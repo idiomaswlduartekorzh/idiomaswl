@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui,sans-serif" role="img" aria-labelledby="set11-title set11-desc">
+  <title id="set11-title">Daily water consumption per person in four cities, 2010 and 2023</title>
+  <desc id="set11-desc">A grouped bar chart measured in litres. Los Angeles falls from 480 to 390 litres, Singapore from 155 to 140, Cape Town from 250 to 175, and Copenhagen from 185 to 160.</desc>
   <rect width="680" height="400" fill="#fafafa" rx="8"/>
   <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a2e">Average Daily Water Consumption Per Capita — 2010 vs 2023 (litres)</text>
 
