@@ -73,5 +73,5 @@ runGoldenContentAudit({
     'Replaced the generic advantages/disadvantages essay with an original school wellbeing-diary and privacy prompt.',
     'Reframed the Task 1 data as one-station illustrative data and added complete accessible semantics, units, years and values.',
   ],
-  deferred: ['Listening audio replacement, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio replacement, mastering and waveform/ASR QA'],
 });

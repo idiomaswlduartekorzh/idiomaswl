@@ -76,5 +76,5 @@ runGoldenContentAudit({
     'Replaced a common generic immigration essay with an original regional-residence policy conflict.',
     'Updated the five-region tourist-arrival visual and added accessible title, description, categories, years, values and units.',
   ],
-  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA'],
 });

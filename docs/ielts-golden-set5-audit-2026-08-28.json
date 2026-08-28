@@ -157,7 +157,6 @@
   ],
   "failures": [],
   "deferred": [
-    "Listening final master publication and audio QA",
-    "Rendered browser and assistive-technology audit in later full-stack phases"
+    "Listening final master publication and human audio acceptance"
   ]
 }

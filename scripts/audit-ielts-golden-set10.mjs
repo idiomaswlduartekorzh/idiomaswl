@@ -75,5 +75,5 @@ runGoldenContentAudit({
     'Replaced the publicly matching rural-migration Task 2 with an original repair-and-sharing policy prompt.',
     'Added accessible semantics and full country/date/unit alignment to the Task 1 SVG and alternative text.',
   ],
-  deferred: ['Listening audio replacement, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio replacement, mastering and waveform/ASR QA'],
 });

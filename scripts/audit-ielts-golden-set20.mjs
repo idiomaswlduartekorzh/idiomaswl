@@ -79,5 +79,5 @@ runGoldenContentAudit({
     'Rebuilt Task 1 from IEA releases with a zero baseline, explicit qualifications, source, title and description.',
     'Reframed Task 2 as an original discuss-both-views conflict about restrictions, alternatives and equitable timing.',
   ],
-  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA'],
 });

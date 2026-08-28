@@ -78,5 +78,5 @@ runGoldenContentAudit({
     'Replaced a generic AI-development essay with an original university-assessment debate.',
     'Corrected and relabelled the wastewater disinfection stage and added an accessible title, description, flow and discharge standard.',
   ],
-  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA'],
 });

@@ -73,5 +73,5 @@ runGoldenContentAudit({
     'Reframed Task 2 as an original discuss-both-views medical-governance conflict.',
     'Added a semantic SVG title/description and a complete text alternative for the plastic-recycling process.',
   ],
-  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA'],
 });

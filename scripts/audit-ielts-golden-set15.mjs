@@ -82,5 +82,5 @@ runGoldenContentAudit({
     'Replaced a generic hunger essay with an original supermarket-donation policy conflict.',
     'Corrected both countries’ 2022 electricity shares and added accessible title, description, labels, values, unit and sources.',
   ],
-  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA'],
 });

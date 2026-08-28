@@ -148,7 +148,7 @@ const report = {
   ],
   evidence,
   failures,
-  deferred: ['Listening final master publication and audio QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening final master publication and human audio acceptance'],
 };
 
 if (process.argv.includes('--write')) {

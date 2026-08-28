@@ -72,5 +72,5 @@ runGoldenContentAudit({
     'Replaced the publicly matching zoo Task 2 with an original citizen-science prompt.',
     'Aligned the Task 1 prompt, units and accessible SVG semantics with the five displayed categories.',
   ],
-  deferred: ['Listening audio replacement, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio replacement, mastering and waveform/ASR QA'],
 });

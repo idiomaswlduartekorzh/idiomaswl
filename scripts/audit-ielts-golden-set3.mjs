@@ -186,7 +186,7 @@ const report = {
   ],
   evidence,
   failures,
-  deferred: ['Listening audio generation, mastering and waveform QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio generation, mastering and waveform/ASR QA'],
 };
 
 if (process.argv.includes('--write')) {

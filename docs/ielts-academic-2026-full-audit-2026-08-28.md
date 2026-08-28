@@ -88,6 +88,7 @@ test:ielts-fullstack        11/11
 test:ielts-audio-pipeline    3/3
 check:ielts-review-blueprint 20/20 sets
 check:ielts-golden-standard PASS
+check:ielts-non-audio-closure 20/20 sets, 4.784 live controls
 check:exam-hub-ui           PASS
 check:practica-catalog      465 temas protegidos
 TypeScript                  PASS
@@ -112,6 +113,14 @@ análisis de ciclo de vida del
 y el [Reglamento europeo de baterías](https://eur-lex.europa.eu/eli/reg/2023/1542/oj).
 Las coincidencias públicas de las consignas antiguas se documentaron sólo como
 proveniencia y ya no se sirven en el simulacro.
+
+El cierre no-audio está fijado además por el manifiesto
+`docs/ielts-non-audio-closure-2026-08-28.json`, con SHA-256 de cierre
+`9b88e96533e6625c0a389c20a8d66859697cbe9f2ced5ab0334c76ccfb579fa5`. El guardián
+repite las 20 auditorías en vivo y liga cada resultado al mock actual, su auditor, las
+transformaciones compartidas, la proyección pública y el gráfico Task 1. Cualquier cambio
+sin una nueva revisión explícita invalida la huella y detiene el prebuild. Los registros
+`deferred` individuales ya contienen exclusivamente trabajo de audio.
 
 ## Plan de audio y criterio de salida
 

@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "reportAsOf": "2026-08-28",
+  "status": "non-audio-ready-audio-release-pending",
+  "sets": 20,
+  "nonAudioReadySets": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "audioReadySets": [
+    4
+  ],
+  "audioReleasePendingSets": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "totalLiveControls": 4784,
+  "sharedInputsSha256": "f9f8e87c6639033079427e3c74a47fa1fafbe80cf1f2243349ea32a05e9dc3be",
+  "setEvidence": [
+    {
+      "set": 1,
+      "status": "non-audio-ready",
+      "controls": 270,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set1-task1.svg",
+      "inputSha256": "6b4bcf32078e6e645da370d5aa2971988976a8ba88d52ef00f57f0a0cebe19a1",
+      "reportSha256": "804d1350585c2717cba105008d370bbf2a3d96a7934d9132fb8de11e07fe49c7"
+    },
+    {
+      "set": 2,
+      "status": "non-audio-ready",
+      "controls": 262,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set2-task1.svg",
+      "inputSha256": "9e12f07be98db2714f1473104e93bf75a0b21589266649b3b9c496fcb752ec04",
+      "reportSha256": "dd15ac51165625af4960cadf3fd307ef1f3f777f5229934fbb87c71f42af3f83"
+    },
+    {
+      "set": 3,
+      "status": "non-audio-ready",
+      "controls": 267,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set3-task1.svg",
+      "inputSha256": "787f2907278f5b707bdc9e00d5997ea6df83997405099a1e86ddd9080fdba2e5",
+      "reportSha256": "d43c3289cd6b98b7b31d91a0f24d3ab0bfe0c570e7f599ebad51df0616a067f1"
+    },
+    {
+      "set": 4,
+      "status": "non-audio-ready",
+      "controls": 267,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "ready-existing",
+      "deferred": [],
+      "task1Asset": "/assets/ielts/charts/set4-task1.svg",
+      "inputSha256": "8b020e0e0411ef56812d826146994ebf0584f04dfe8dcaa92f2189a9f191f03c",
+      "reportSha256": "568827b9d3edbfd191075e3f4cea7499f001c960bc1dcaab3a81622ccb41a89c"
+    },
+    {
+      "set": 5,
+      "status": "non-audio-ready",
+      "controls": 120,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "legacy-audio-under-review",
+      "deferred": [
+        "Listening final master publication and human audio acceptance"
+      ],
+      "task1Asset": "/assets/ielts/charts/set5-task1.svg",
+      "inputSha256": "effc6515e9d68fbe8f7581026b9eade63286460682ec71a24aac4ff077b6fd2f",
+      "reportSha256": "9eb62b732701c5349bd55856ff7dbbe2867e0ce5986d13d9686b66fe4718bc8f"
+    },
+    {
+      "set": 6,
+      "status": "non-audio-ready",
+      "controls": 232,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "legacy-audio-under-review",
+      "deferred": [
+        "Listening audio replacement, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set6-task1.svg",
+      "inputSha256": "d6c3305fe40b3dfe293d4347316fc8a120ff0bcb6ce8ddac7799cbd5ac24f870",
+      "reportSha256": "1649bd174802fd546402874ec8605c457aecc91fe83a6a093b80b74a296715d7"
+    },
+    {
+      "set": 7,
+      "status": "non-audio-ready",
+      "controls": 235,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "legacy-audio-under-review",
+      "deferred": [
+        "Listening audio replacement, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set7-task1.svg",
+      "inputSha256": "5e95953c92f475cb9bfb9caa50041c6d93b2d1c715a028d0d84a2607599a91ab",
+      "reportSha256": "fd2c9dce2b33bd60e418cf00b2a347383d6e8803977d83c541064c2761fe3831"
+    },
+    {
+      "set": 8,
+      "status": "non-audio-ready",
+      "controls": 236,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "legacy-audio-under-review",
+      "deferred": [
+        "Listening audio replacement, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set8-task1.svg",
+      "inputSha256": "c3972c675699bfe56a7a94ebdc29d523ef607ee083bab05610e6819d67ff45ee",
+      "reportSha256": "215f6bf47ad93c6c6b23c9bbb015f521b34c45423c8e26b02530a6961fae7305"
+    },
+    {
+      "set": 9,
+      "status": "non-audio-ready",
+      "controls": 237,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "legacy-audio-under-review",
+      "deferred": [
+        "Listening audio replacement, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set9-task1.svg",
+      "inputSha256": "6f89aa6e3bbe9f668e883f329059e686da071f524e024acc7af32786edc8ada4",
+      "reportSha256": "5fde399c5c27427bd1637a8d8db604d601580722209a8ff7411eedf45e942151"
+    },
+    {
+      "set": 10,
+      "status": "non-audio-ready",
+      "controls": 235,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "legacy-audio-under-review",
+      "deferred": [
+        "Listening audio replacement, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set10-task1.svg",
+      "inputSha256": "72da7e63ac513e20dc7c3f9633ed670ff7ad3a69aa71c0842c28b49d4b957619",
+      "reportSha256": "a95289e922f8f032f70eb89f9dfd6fba701789508f9c5a59bc40603a371f98ea"
+    },
+    {
+      "set": 11,
+      "status": "non-audio-ready",
+      "controls": 235,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "legacy-audio-under-review",
+      "deferred": [
+        "Listening audio replacement, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set11-task1.svg",
+      "inputSha256": "a2bb0fa2604d4bbb59774cb1dd5a4193e471b684fd7da4cca3b25cbbbc99ee57",
+      "reportSha256": "06703ac0f73eb6c49b2b6bdb1d9601df4ba71931a908adbc0769758b8db94e08"
+    },
+    {
+      "set": 12,
+      "status": "non-audio-ready",
+      "controls": 235,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "legacy-audio-under-review",
+      "deferred": [
+        "Listening audio replacement, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set12-task1.svg",
+      "inputSha256": "e1e90007f8f04794fdb0f0ebb3423c83163d734a0d765c8aa474d363e9daeb5f",
+      "reportSha256": "8ec39678d9712590dccc33ab6e2d8a1aafd708d2fecac14646739f7d6620529f"
+    },
+    {
+      "set": 13,
+      "status": "non-audio-ready",
+      "controls": 239,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio casting, generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set13-task1.svg",
+      "inputSha256": "aada2826afc134f406b8c9826031defd8792be410c4c2a13d19303653b30f47c",
+      "reportSha256": "0e1fb6c8544509544478a62b658e8e7cf2a29704fb33c708ca70bb635f56f7d7"
+    },
+    {
+      "set": 14,
+      "status": "non-audio-ready",
+      "controls": 236,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio casting, generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set14-task1.svg",
+      "inputSha256": "c2d4b17812c8be70fd3708a134d92f57cd50df9bf1fd1b4e2ae14c27f3e57dfd",
+      "reportSha256": "19bcf1486ca07c642612ca458705fdf0a4a5a11705e8461b1a2ee5859bd4bbfc"
+    },
+    {
+      "set": 15,
+      "status": "non-audio-ready",
+      "controls": 245,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio casting, generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set15-task1.svg",
+      "inputSha256": "40add88def4d975f8d10f73c31a9771fe39788b9ad0aa7f203de3e0b46085e1a",
+      "reportSha256": "f5099f06136e66a4559fe63692ad670bf9381061d30c40a48d9949280feaca64"
+    },
+    {
+      "set": 16,
+      "status": "non-audio-ready",
+      "controls": 244,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio casting, generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set16-task1.svg",
+      "inputSha256": "9bec826e9e25e668a7fd8e34b1ce0789d603ca549b607f2cf04c72b77f19cc1d",
+      "reportSha256": "64f4cb003b46059f0b97e8aaa1c0ef2db1078608cbf01f46979d67efb2836699"
+    },
+    {
+      "set": 17,
+      "status": "non-audio-ready",
+      "controls": 250,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio casting, generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set17-task1.svg",
+      "inputSha256": "7ade33c15974200409a6fb8a4fa51e2ea2bbdf6edd85fa4397bd5ad605dece3b",
+      "reportSha256": "9c7d0396321ff8194708fd89518542be152655d49e11564c28631e4e4e3fd2e9"
+    },
+    {
+      "set": 18,
+      "status": "non-audio-ready",
+      "controls": 243,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio casting, generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set18-task1.svg",
+      "inputSha256": "d534a3ff7a1234587e90f554f8b0231f9f0d4d7589827d9b07d8020f8e939a52",
+      "reportSha256": "2fdede1fe5277811efd3e50aa98c0eb3bddc1808c2edc586a46cb640428fe42c"
+    },
+    {
+      "set": 19,
+      "status": "non-audio-ready",
+      "controls": 251,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio casting, generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set19-task1.svg",
+      "inputSha256": "34014f011bed38d22076adc106cded576a96bc1e44fc1a2762aad5967d324464",
+      "reportSha256": "24f3b4388001bfd55e243ed4c65ebfd2f42d1d5591502d3ed493480e123da670"
+    },
+    {
+      "set": 20,
+      "status": "non-audio-ready",
+      "controls": 245,
+      "metrics": {
+        "listeningParts": 4,
+        "listeningResponses": 40,
+        "readingPassages": 3,
+        "readingResponses": 40,
+        "writingTasks": 2,
+        "speakingParts": 3,
+        "publicKeys": 0
+      },
+      "listeningMediaStatus": "script-ready-audio-blocked",
+      "deferred": [
+        "Listening audio casting, generation, mastering and waveform/ASR QA"
+      ],
+      "task1Asset": "/assets/ielts/charts/set20-task1.svg",
+      "inputSha256": "e00f6dde652065531b1eb3ba468e69056c76f99e762681bec666178d6eb410eb",
+      "reportSha256": "d02ec8784baca173ed3f75e973f2615c5b39a06aef7ff7eb77988aca18b0c40a"
+    }
+  ],
+  "closureSha256": "9b88e96533e6625c0a389c20a8d66859697cbe9f2ced5ab0334c76ccfb579fa5"
+}

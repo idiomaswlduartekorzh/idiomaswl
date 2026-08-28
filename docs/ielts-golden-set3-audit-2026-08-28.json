@@ -311,7 +311,6 @@
   ],
   "failures": [],
   "deferred": [
-    "Listening audio generation, mastering and waveform QA",
-    "Rendered browser and assistive-technology audit in later full-stack phases"
+    "Listening audio generation, mastering and waveform/ASR QA"
   ]
 }

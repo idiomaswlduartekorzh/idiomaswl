@@ -70,5 +70,5 @@ runGoldenContentAudit({
     'Replaced the generic urbanisation Task 2 with an original neighbourhood heat-map policy prompt.',
     'Added accessible semantics and complete city/year/unit alignment to the Task 1 visual.',
   ],
-  deferred: ['Listening audio replacement, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio replacement, mastering and waveform/ASR QA'],
 });

@@ -61,5 +61,5 @@ runGoldenContentAudit({
     'Updated the EU Platform Work Directive from a 2021 proposal to the adopted 2024 law.',
     'Replaced a publicly matching screen-time prompt and expanded Speaking Parts 1–3.',
   ],
-  deferred: ['Listening audio replacement, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio replacement, mastering and waveform/ASR QA'],
 });

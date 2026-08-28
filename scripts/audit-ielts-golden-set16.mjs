@@ -78,5 +78,5 @@ runGoldenContentAudit({
     'Replaced the generic Task 2 with an original, complete discuss-both-views policy conflict.',
     'Rebuilt Task 1 around official 2015 and 2022 capacities with accessible title, description, exact labels, unit and source note.',
   ],
-  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA'],
 });

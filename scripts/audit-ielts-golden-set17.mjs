@@ -81,5 +81,5 @@ runGoldenContentAudit({
     'Replaced the generic ethical question with an original, complete discuss-both-views policy conflict.',
     'Rebuilt Task 1 with exact World Bank 1990/2022 data, zero baseline, accessible title, description, labels, units and source.',
   ],
-  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA'],
 });

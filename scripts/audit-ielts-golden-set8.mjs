@@ -70,5 +70,5 @@ runGoldenContentAudit({
     'Replaced the publicly matching arts-funding Task 2 with an original museum digitisation prompt.',
     'Added accessible semantics to the solar-process SVG and aligned its prompt and alternative text.',
   ],
-  deferred: ['Listening audio replacement, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio replacement, mastering and waveform/ASR QA'],
 });

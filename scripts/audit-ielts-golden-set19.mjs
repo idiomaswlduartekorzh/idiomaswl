@@ -83,5 +83,5 @@ runGoldenContentAudit({
     'Rebuilt Task 1 from U.S. Census Q4 releases with a zero baseline, exact labels, source, title and description.',
     'Reframed Task 2 as an original discuss-both-views social-impact conflict.',
   ],
-  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio casting, generation, mastering and waveform/ASR QA'],
 });

@@ -69,5 +69,5 @@ runGoldenContentAudit({
     'Replaced a malformed inherited chart and public-match-risk Task 2 prompt with original WeLearn material.',
     'Expanded Speaking Parts 1–3 around one coherent language-and-communication topic.',
   ],
-  deferred: ['Listening audio replacement, mastering and waveform/ASR QA', 'Rendered browser and assistive-technology audit in later full-stack phases'],
+  deferred: ['Listening audio replacement, mastering and waveform/ASR QA'],
 });
