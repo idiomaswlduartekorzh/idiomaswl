@@ -23,6 +23,10 @@ import { IDIOMAS_PUBLICADOS } from '@/data/fonetica/idiomas';
 import { EXAM_PODCASTS } from '@/data/practica/exam-podcast-catalog';
 import { QUIZ_LANGUAGES } from '@/data/practica/quiz-language-catalog';
 import { PRONOUN_QUESTS } from '@/data/practica/pronoun-quest-registry';
+import { PARAPHRASE_TECHNIQUES } from '@/app/(site)/practica/ielts/academic/writing/task2/paraphrasing/paraphrasing-data';
+import { VOCAB_FUNCTIONS } from '@/app/(site)/practica/ielts/academic/writing/task2/academic-vocabulary/vocabulary-data';
+import { TRANSFERABLE_SKILLS } from '@/app/(site)/practica/ielts/academic/writing/task2/habilidades/skills-data';
+import { VOCAB_UNITS } from '@/app/(site)/practica/ielts/academic/writing/vocabulario/vocabulary-index';
 
 // www es el dominio canónico (idiomaswl.com hace 307 → www.idiomaswl.com).
 // Las URLs del sitemap deben ser las canónicas finales, no redirecciones.
@@ -231,6 +235,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates,
       }));
     }),
+    // Los hubs ingleses solo existen para los tres niveles que realmente tienen lecturas
+    // publicadas. Se derivan del mismo catálogo para no volver a fabricar 404 por idioma.
+    ...[...new Set(publishedReadings.flatMap((exercise) =>
+      readingExerciseLocalePaths(exercise)
+        .filter(({ locale }) => locale === 'en')
+        .map(({ path }) => path.replace(/\/[^/]+$/, ''))
+    ))].map((path) => ({
+      url: `${BASE}${path}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.68,
+    })),
 
     // ── Practice — Historias: comprensión integrada en los 8 idiomas ─────────
     // Derivado del registro, no una lista a mano: al añadir una historia entra
@@ -297,6 +312,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.65,
     })),
+    // Estos cuatro clústeres están publicados y protegidos por check:ielts-task2. Sus rutas
+    // salen de los mismos registros que generan las páginas, no de una segunda lista manual.
+    { url: `${BASE}/practica/ielts/academic/writing/task2/paraphrasing`, changeFrequency: 'monthly', priority: 0.66 },
+    ...PARAPHRASE_TECHNIQUES.map((technique) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task2/paraphrasing/${technique.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.62,
+    })),
+    { url: `${BASE}/practica/ielts/academic/writing/task2/academic-vocabulary`, changeFrequency: 'monthly', priority: 0.66 },
+    ...VOCAB_FUNCTIONS.map((vocabFunction) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task2/academic-vocabulary/${vocabFunction.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.62,
+    })),
+    ...TRANSFERABLE_SKILLS.map((skill) => ({
+      url: `${BASE}/practica/ielts/academic/writing/task2/habilidades/${skill.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.62,
+    })),
+    { url: `${BASE}/practica/ielts/academic/writing/vocabulario`, changeFrequency: 'monthly', priority: 0.66 },
+    ...VOCAB_UNITS.map((unit) => ({
+      url: `${BASE}/practica/ielts/academic/writing/vocabulario/${unit.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.62,
+    })),
+    { url: `${BASE}/practica/ielts-writing-conectores`, changeFrequency: 'monthly', priority: 0.61 },
     ...PUBLISHED_EXAM_PRACTICE_ROUTES.map((route) => ({
       url: `${BASE}${route.path}`,
       changeFrequency: route.changeFrequency,
@@ -317,6 +358,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/practica/toefl/writing/write-an-email/banco-de-prompts`, changeFrequency: 'monthly' as const, priority: 0.69 },
 
     // ── Korean lesson steps ────────────────────────────────────────────────────
+    { url: `${BASE}/practica/korean-speaking-1`, changeFrequency: 'monthly' as const, priority: 0.7 },
     ...PUBLISHED_DAYS.map((day) => ({
       url: `${BASE}/courses/korean/step/${day}`,
       changeFrequency: 'monthly' as const,

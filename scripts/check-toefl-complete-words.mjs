@@ -108,6 +108,8 @@ assert.match(publicPage, /<CompleteTheWordsPractice \/>/, 'real CTW is the prima
 assert.doesNotMatch(publicPage, /TOEFL_COMPLETE_WORDS_ITEMS/, 'the CTW route no longer renders the old MCQ bank');
 assert.match(legacyPage, /TOEFL_COMPLETE_WORDS_ITEMS/, 'the 16-item bank remains available');
 assert.match(legacyPage, /no son la interacción Complete the Words/, 'legacy bank is honestly reclassified');
+assert.match(legacyPage, /alternates: \{ canonical: CANONICAL \}/, 'the complementary bank exposes its self-referential canonical');
+assert.match(seoSource, /path: '\/practica\/toefl\/reading\/habilidades\/seleccion-de-palabras-contexto'/, 'the complementary bank remains in the published SEO catalog');
 assert.match(mockSource, /id: TOEFL_CTW_SET1_V3\.id/, 'Set 1 uses the v3 candidate');
 assert.match(mockSource, /missingLength: blank\.missingLength/, 'Set 1 sends lengths, not candidate answers');
 assert.match(routeSource, /TOEFL_CTW_SCORING_BY_OBJECT_ID\[payload\.objectId\]/, 'scoring selects the private key by submitted object id');

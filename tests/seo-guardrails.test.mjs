@@ -1,7 +1,13 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
-import { compareFaqParity, faqSchemaQuestions, normalizeVisibleText } from '../scripts/lib/seo-audit-utils.mjs';
+import {
+  canonicalHref,
+  compareFaqParity,
+  faqSchemaQuestions,
+  normalizeVisibleText,
+  robotsDirectives,
+} from '../scripts/lib/seo-audit-utils.mjs';
 
 const faqSchema = (questions) => JSON.stringify({
   '@context': 'https://schema.org',
@@ -42,6 +48,15 @@ test('el extractor admite FAQPage dentro de @graph y entidades HTML', () => {
   const html = `<script type='application/ld+json'>${schema}</script>`;
   assert.deepEqual(faqSchemaQuestions(html), ['¿Qué incluye & más?']);
   assert.equal(normalizeVisibleText('<strong>Plan&nbsp;local</strong>'), 'Plan local');
+});
+
+test('el auditor extrae canonical y robots sin depender del orden de atributos', () => {
+  const html = `
+    <meta content='follow, NOINDEX' data-owner="next" name="robots">
+    <link href="https://www.idiomaswl.com/practica?a=1&amp;b=2" data-owner="next" rel='alternate canonical'>
+  `;
+  assert.deepEqual(robotsDirectives(html), ['follow', 'noindex']);
+  assert.equal(canonicalHref(html), 'https://www.idiomaswl.com/practica?a=1&b=2');
 });
 
 test('el guardián estático acepta la fundación SEO sin deuda tolerada', () => {

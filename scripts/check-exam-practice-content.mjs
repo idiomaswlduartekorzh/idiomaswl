@@ -60,7 +60,27 @@ function loadCatalog() {
 
 function routeToPagePath(routePath) {
   const segments = routePath.replace(/^\/+|\/+$/g, '').split('/');
-  return path.join(root, 'src/app/(site)', ...segments, 'page.tsx');
+  let directory = path.join(root, 'src/app/(site)');
+
+  for (const segment of segments) {
+    const literal = path.join(directory, segment);
+    if (fs.existsSync(literal)) {
+      directory = literal;
+      continue;
+    }
+
+    // El mapa enumera URLs canónicas concretas, mientras App Router las sirve desde
+    // `[tecnica]`, `[funcion]`, `[habilidad]` o `[unidad]`. Resolver esa carpeta mantiene
+    // la compuerta útil sin exigir un page.tsx duplicado por cada slug publicado.
+    const dynamicDirectories = fs.existsSync(directory)
+      ? fs.readdirSync(directory, { withFileTypes: true })
+        .filter((entry) => entry.isDirectory() && /^\[(?:\.{3})?[^\]]+\]$/.test(entry.name))
+      : [];
+    if (dynamicDirectories.length !== 1) return path.join(literal, 'page.tsx');
+    directory = path.join(directory, dynamicDirectories[0].name);
+  }
+
+  return path.join(directory, 'page.tsx');
 }
 
 function validateSkillReviewSourceComponent() {

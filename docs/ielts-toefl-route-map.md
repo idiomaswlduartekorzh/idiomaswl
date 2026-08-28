@@ -138,6 +138,49 @@ Task 2 uses three layers. `Build the essay` is the response architecture; questi
 | `/practica/ielts/academic/writing/task2/direct-question` | live |
 | `/practica/ielts/academic/writing/task2/model-answers` | live |
 
+#### Published transferable-skill clusters
+
+These routes passed the Task 2 blueprint guard (long explanation, worked examples, guided
+writing and corrected practice). Their child URLs are indexable learning resources, not
+private exercise-state pages.
+
+| Route | Status | Purpose |
+| --- | --- | --- |
+| `/practica/ielts/academic/writing/task2/paraphrasing` | live | Five meaning-safe paraphrasing techniques |
+| `/practica/ielts/academic/writing/task2/paraphrasing/synonyms` | live | Synonym choice without meaning drift |
+| `/practica/ielts/academic/writing/task2/paraphrasing/word-order` | live | Paraphrasing through word order |
+| `/practica/ielts/academic/writing/task2/paraphrasing/word-form` | live | Paraphrasing through word class |
+| `/practica/ielts/academic/writing/task2/paraphrasing/voice` | live | Active/passive voice changes |
+| `/practica/ielts/academic/writing/task2/paraphrasing/sentence-structure` | live | Sentence-structure changes |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary` | live | Academic vocabulary organised by function |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary/hedging` | live | Hedging claims |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary/asserting` | live | Asserting claims |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary/attributing` | live | Attributing ideas and evidence |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary/quantifying` | live | Quantifying without invented precision |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary/causing` | live | Cause-and-effect language |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary/evaluating` | live | Evaluative language |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary/proposing` | live | Proposal language |
+| `/practica/ielts/academic/writing/task2/academic-vocabulary/register` | live | Academic register |
+| `/practica/ielts/academic/writing/task2/habilidades/thesis-and-position` | live | Thesis and position |
+| `/practica/ielts/academic/writing/task2/habilidades/topic-sentences` | live | Topic sentences |
+| `/practica/ielts/academic/writing/task2/habilidades/explanation-and-development` | live | Explanation and development |
+| `/practica/ielts/academic/writing/task2/habilidades/examples-and-evidence` | live | Examples and evidence |
+| `/practica/ielts/academic/writing/task2/habilidades/contrast-and-concession` | live | Contrast and concession |
+| `/practica/ielts/academic/writing/task2/habilidades/sentence-types` | live | Sentence types |
+| `/practica/ielts/academic/writing/task2/habilidades/critical-final-review` | live | Critical final review |
+| `/practica/ielts/academic/writing/vocabulario` | live | Vocabulary superhub for both Academic Writing tasks |
+| `/practica/ielts/academic/writing/vocabulario/task1-introduccion` | live | Task 1 introduction vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task1-overview` | live | Task 1 overview vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task1-tendencias` | live | Task 1 trend vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task1-comparaciones` | live | Task 1 comparison vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task1-procesos` | live | Task 1 process vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task1-mapas` | live | Task 1 map vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task2-introduccion` | live | Task 2 introduction vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task2-body` | live | Task 2 body-paragraph vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task2-conclusion` | live | Task 2 conclusion vocabulary |
+| `/practica/ielts/academic/writing/vocabulario/task2-revision` | live | Task 2 revision vocabulary |
+| `/practica/ielts-writing-conectores` | live | Legacy interactive Task 1 connector practice |
+
 ## 5. IELTS General Training
 
 ### Hubs
@@ -192,6 +235,7 @@ Note: `/practica/toefl/reading/tipos-de-preguntas/*` routes are compatible skill
 | `/practica/toefl/reading/tipos-de-preguntas/rhetorical-purpose` | live | Compatible skill |
 | `/practica/toefl/reading/tipos-de-preguntas/sentence-simplification` | live | Legacy-compatible skill |
 | `/practica/toefl/reading/habilidades/logical-relationships` | live | WeLearn skill, source: `Syllogism .pages` |
+| `/practica/toefl/reading/habilidades/seleccion-de-palabras-contexto` | live | Complementary WeLearn word-choice bank; not the official Complete the Words interaction |
 | `/practica/toefl/reading/habilidades/text-organisation` | live | WeLearn skill |
 | `/practica/toefl/reading/habilidades/time-management` | live | WeLearn skill |
 

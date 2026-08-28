@@ -19,6 +19,8 @@ const readingPageServer = read('src/components/reading/ReadingPageServer.tsx');
 const koreanLanding = read('src/app/(site)/clases-de-coreano/page.tsx');
 const icfesLayout = read('src/app/(site)/practica/icfes-saber-11/layout.tsx');
 const quizzesHub = read('src/app/(site)/herramientas/quizes/page.tsx');
+const claudeRoute = read('src/app/clase-claude/route.ts');
+const ieltsTask1Hub = read('src/app/(site)/practica/ielts/academic/writing/task1/Content.tsx');
 
 requireMatch(sitemap, /const BASE = 'https:\/\/www\.idiomaswl\.com'/, 'sitemap.ts perdió el host canónico con www.');
 requireMatch(robots, /sitemap:\s*'https:\/\/www\.idiomaswl\.com\/sitemap\.xml'/, 'robots.ts dejó de anunciar el sitemap canónico.');
@@ -65,6 +67,10 @@ const DERIVED_SITEMAP_MARKERS = [
   ['PUBLISHED_EXAM_PRACTICE_ROUTES', 'rutas de práctica de exámenes publicadas'],
   ['QUIZ_LANGUAGES.flatMap', 'hubs y quizes de idiomas'],
   ['PRONOUN_QUESTS.map', 'quizes de pronombres'],
+  ['PARAPHRASE_TECHNIQUES.map', 'técnicas publicadas de paráfrasis IELTS'],
+  ['VOCAB_FUNCTIONS.map', 'funciones publicadas de vocabulario IELTS'],
+  ['TRANSFERABLE_SKILLS.map', 'habilidades transversales IELTS'],
+  ['VOCAB_UNITS.map', 'unidades publicadas del superhub de vocabulario IELTS'],
 ];
 
 for (const [marker, label] of DERIVED_SITEMAP_MARKERS) {
@@ -91,6 +97,21 @@ requireMatch(
   /href="\/herramientas\/quizes\/pronombres"/,
   'El catálogo de quizes dejó huérfano el hub de pronombres.',
 );
+requireMatch(
+  sitemap,
+  /\$\{BASE\}\/practica\/korean-speaking-1/,
+  'La práctica oral pública de coreano volvió a quedar fuera del sitemap.',
+);
+requireMatch(
+  claudeRoute,
+  /'X-Robots-Tag':\s*'noindex, nofollow'/,
+  'La clase HTML operativa perdió su protección X-Robots-Tag.',
+);
+requireMatch(
+  ieltsTask1Hub,
+  /href:\s*'\/practica\/ielts-writing-conectores'/,
+  'La práctica indexable de conectores IELTS volvió a quedar huérfana.',
+);
 
 const PRIVATE_NOINDEX = [
   'src/app/(auth)/login/page.tsx',
@@ -101,6 +122,12 @@ const PRIVATE_NOINDEX = [
   'src/app/(site)/practica/icfes-saber-11/repaso-errores/page.tsx',
   'src/app/(site)/practica/ielts/academic/writing/task1/tarea-completa/sesion/page.tsx',
   'src/app/(site)/examenes/toefl/resultado/[submissionId]/page.tsx',
+  'src/app/animation/layout.tsx',
+  'src/app/preview/layout.tsx',
+  'src/app/(site)/practica/live/[setId]/page.tsx',
+  'src/app/(site)/practica/mi-vocabulario/page.tsx',
+  'src/app/(site)/practica/ideas-avanzadas/page.tsx',
+  'src/app/(site)/practica/ideas-avanzadas/[slug]/page.tsx',
 ];
 
 for (const relativePath of PRIVATE_NOINDEX) {

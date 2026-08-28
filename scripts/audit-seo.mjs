@@ -12,7 +12,7 @@
  */
 
 import dns from 'node:dns';
-import { compareFaqParity } from './lib/seo-audit-utils.mjs';
+import { canonicalHref, compareFaqParity, robotsDirectives } from './lib/seo-audit-utils.mjs';
 
 // Evita falsos bloqueos de Undici cuando el resolver entrega primero una ruta IPv6
 // sin salida en runners que sí tienen conectividad IPv4.
@@ -20,6 +20,10 @@ dns.setDefaultResultOrder('ipv4first');
 
 const args = process.argv.slice(2);
 const BASE = (args.find((arg) => arg.startsWith('--base='))?.split('=').slice(1).join('=') || 'https://www.idiomaswl.com').replace(/\/$/, '');
+const BASE_URL = new URL(BASE);
+const CANONICAL_ORIGIN = ['localhost', '127.0.0.1'].includes(BASE_URL.hostname)
+  ? 'https://www.idiomaswl.com'
+  : BASE_URL.origin;
 const QUICK = args.includes('--quick');
 const CONCURRENCY = 4;
 const REQUEST_TIMEOUT_MS = 30_000;
@@ -154,7 +158,21 @@ async function checkSitemapResponses(entries) {
   const responses = await mapLimit(sample, CONCURRENCY, async (entry) => ({ entry, response: await request(`${BASE}${entry.path}`) }));
 
   for (const { entry, response } of responses) {
-    if (response.status === 200) continue;
+    if (response.status === 200) {
+      if (robotsDirectives(response.body).includes('noindex')) {
+        fallo('sitemap-noindex', `${entry.path} declara noindex`);
+      }
+      const canonical = canonicalHref(response.body);
+      if (!canonical) {
+        fallo('sitemap-sin-canonical', `${entry.path} no declara canonical`);
+      } else {
+        const canonicalUrl = new URL(canonical, `${BASE}${entry.path}`);
+        if (canonicalUrl.origin !== CANONICAL_ORIGIN || normalizePath(canonicalUrl.pathname) !== entry.path) {
+          fallo('sitemap-canonical-ajena', `${entry.path} declara ${canonicalUrl.toString()}`);
+        }
+      }
+      continue;
+    }
     if (response.status === 0) fallo('sitemap-red', `${entry.path}: ${response.error || 'sin respuesta'}`);
     else if (response.status >= 500) fallo('sitemap-5xx', `${entry.path} devuelve ${response.status}`);
     else if (response.status === 404) fallo('sitemap-404', `${entry.path} devuelve 404`);
@@ -264,6 +282,9 @@ const RULES = {
   'sitemap-404': 'Errores 404 en sitemap',
   'sitemap-redireccion': 'Redirecciones dentro del sitemap',
   'sitemap-no-200': 'Respuestas no 200 en sitemap',
+  'sitemap-noindex': 'URLs noindex dentro del sitemap',
+  'sitemap-sin-canonical': 'URLs del sitemap sin canonical',
+  'sitemap-canonical-ajena': 'Canonicals divergentes dentro del sitemap',
   'url-critica-inaccesible': 'URLs críticas inaccesibles',
   'cadena-de-redireccion': 'Cadenas de redirección',
   'paridad-faq': 'Paridad entre FAQs visibles y schema',
