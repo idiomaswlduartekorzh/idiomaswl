@@ -116,4 +116,9 @@ const set18Task1 = set18.sections.flatMap(section => section.questions).find(que
 assert.match(set18Task1.stimulus, /stages involved.*recycling of plastic waste.*initial collection.*manufacture of new products/i, 'Set 18: la consigna debe delimitar material, inicio, proceso y salida')
 assert.match(set18Task1.imageAlt, /collection.*sorting by resin type.*shredding and washing.*melting and extrusion.*pellets.*purity testing.*manufacture.*new products.*contaminated.*landfill/i, 'Set 18: el texto alternativo debe comunicar la secuencia y la salida de contaminantes')
 
+const { default: set19 } = await import('../src/data/mocks/ielts-set-19.ts')
+const set19Task1 = set19.sections.flatMap(section => section.questions).find(question => question.type === 'write' && question.taskNumber === 1)
+assert.match(set19Task1.stimulus, /U\.S\. retail e-commerce sales.*percentage of total retail sales.*fourth quarter.*2019.*2024.*seasonally adjusted.*not adjusted/i, 'Set 19: la consigna debe declarar medida, periodo y las dos series')
+assert.match(set19Task1.imageAlt, /11\.4%.*14\.0%.*12\.9%.*14\.7%.*15\.6%.*16\.4%.*12\.8%.*15\.7%.*14\.5%.*16\.0%.*17\.1%.*17\.9%/i, 'Set 19: el texto alternativo debe comunicar todos los valores Census')
+
 console.log('✓ IELTS review blueprint: 20/20 sets, Writing, Speaking y prompt↔asset verificados')

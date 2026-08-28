@@ -60,7 +60,31 @@ COORDINATOR: Noted. Now, let me explain our three membership levels before you d
 
 CALLER: That's really helpful. I think I'll start with the Standard level.
 
-COORDINATOR: An excellent choice. I'll email you the details today.`,
+COORDINATOR: An excellent choice. I'll email you the details today.
+
+CALLER: How quickly do you normally find a partner?
+
+COORDINATOR: Usually within ten days, but we match people by availability as well as level. A fluent speaker who can only meet on Monday would not be useful to you. We also try to pair people with some shared interests, because conversation becomes easier when neither person is struggling for a topic.
+
+CALLER: That makes sense. Does a coordinator come to the first meeting?
+
+COORDINATOR: No, the exchange is informal, but both people receive guidance. Meet in a public place, agree how long to use each language and avoid turning the whole session into a grammar lesson. Many pairs divide an hour equally: half in Spanish and half in English.
+
+CALLER: I work irregular shifts sometimes. What if I need to cancel?
+
+COORDINATOR: Contact your partner directly and give as much notice as possible. After two unexplained absences we pause a membership and check whether a different timetable would help. There is no charge for changing partners.
+
+CALLER: Good. I was worried the Standard membership meant I could only practise at the monthly group event.
+
+COORDINATOR: The group event is an extra. Your individual meetings can be weekly if both of you agree, although we do not guarantee that frequency.
+
+CALLER: I may try that once I feel less nervous.
+
+COORDINATOR: New members often feel the same. The handbook includes opening questions and a short section on giving corrections politely. Reply to my email to confirm the spelling of your details, and we will begin the search.
+
+CALLER: Perfect. Thanks for your help.
+
+COORDINATOR: You're welcome. Goodbye.`,
       questions: [
         {
           type: 'formgroup',
@@ -135,7 +159,17 @@ Photography is welcome throughout the building, but we do ask you to switch off 
 
 Let me point out a few highlights. On the ground floor, our star attraction is a giant model heart, which is so big that you can actually walk right through it. Upstairs, in the space gallery, you'll be able to see a genuine piece of moon rock, brought back by astronauts. And outside in the energy garden, you can try generating electricity yourself by pedalling a bicycle.
 
-Finally, don't leave without visiting our temporary exhibition, which this season is all about robots. It runs until the end of August. Members receive a twenty per cent discount in the shop, and children under five come in free. Enjoy your visit, and please ask any of our staff if you need help.`,
+Finally, don't leave without visiting our temporary exhibition, which this season is all about robots. It runs until the end of August. Members receive a twenty per cent discount in the shop, and children under five come in free.
+
+A few areas operate at fixed times. The planetarium presentation begins on the hour and lasts twenty-five minutes. It is included in your admission, but seats are limited, so collect a ticket rather than simply joining the queue. The electricity demonstration in the energy garden runs at half past each hour unless rain makes the equipment unsafe.
+
+Families may borrow an activity pack from the information desk. There are two versions: one for children aged six to nine and a more demanding trail for older visitors. Please return the pencil and reusable folder, but you can keep the answer sheet. The quietest period is normally after three o'clock, when school groups have left.
+
+Access to the main galleries is step-free. A lift connects all three floors, and lightweight folding seats are available without charge. Anyone who would benefit from lower sound levels should ask about our sensory map; it marks exhibits that use sudden noise or flashing light. The giant heart has an alternative route around it for visitors who prefer not to enter the enclosed model.
+
+If the fire alarm sounds, museum staff will direct you to the assembly point beside the riverside gate. Do not return to the cloakroom first. Staff will secure stored belongings and tell you when the building is safe to re-enter.
+
+The museum closes at five thirty, with the last planetarium show at four. Enjoy your visit, and please ask any of our staff if you need help.`,
       questions: [
         {
           type: 'multiselect',
@@ -173,13 +207,13 @@ Highlights
 • The temporary exhibition is about {{20}}.`,
           blanks: [
             { num: 13, answers: ['forty minutes', '40 minutes'], maxWords: 2 },
-            { num: 14, answers: ['an hour', 'one hour', 'hour'], maxWords: 2 },
+            { num: 14, answers: ['an hour'], maxWords: 2 },
             { num: 15, answers: ['cloakroom'], maxWords: 1 },
             { num: 16, answers: ['two pounds', '£2', '2 pounds'], maxWords: 2 },
             { num: 17, answers: ['flash'], maxWords: 1 },
             { num: 18, answers: ['heart'], maxWords: 1 },
             { num: 19, answers: ['moon rock'], maxWords: 2 },
-            { num: 20, answers: ['robots', 'robot'], maxWords: 1 },
+            { num: 20, answers: ['robots'], maxWords: 1 },
           ],
         },
       ],
@@ -217,7 +251,27 @@ MAYA: Understood. What else should we do before we submit?
 
 TUTOR: Let's agree the next steps. First, re-edit the film to reduce its length. Then add subtitles, because a few of the musicians are quite hard to follow. After that, record a short narration to introduce each performer. You'll also need to obtain written permission from every musician, or we can't screen the film in public. Finally, send me a rough version by next Friday, and I'll give you detailed feedback before the final deadline.
 
-TOM: Great. Thank you so much.`,
+TOM: Great. Thank you so much.
+
+MAYA: Could we ask about the opening? At present we show nearly a minute of empty streets before the first musician appears.
+
+TUTOR: Keep one establishing shot, but a full minute delays the central idea. Let a short piece of music begin before the image changes; that can connect place and performer without another explanation.
+
+MAYA: What about the traffic noise? We could use software to remove all of it.
+
+TUTOR: Reduce the most distracting frequencies, but do not make the street sound like a studio. Some ambient sound establishes the setting. Check that processing does not distort voices, and listen through ordinary laptop speakers as well as headphones.
+
+TOM: For permission, is an email enough?
+
+TUTOR: Use the department's release form. Explain where the documentary may be shown and let each participant choose whether their name appears. Written consent is not just paperwork after filming; if someone declines public screening, you must exclude that material.
+
+MAYA: We'll review every clip against the forms before recording the narration.
+
+TUTOR: Good. Also caption meaningful sounds, not only speech, and leave enough time for someone else to proofread the subtitles. Your rough cut can contain temporary narration, but it should already be close to fifteen minutes so my feedback is useful.
+
+TOM: Understood. We'll send a link next Friday rather than the enormous file itself.
+
+TUTOR: Exactly. I look forward to seeing the tighter version.`,
       questions: [
         {
           type: 'mcq',
@@ -293,7 +347,7 @@ TOM: Great. Thank you so much.`,
 • Send the tutor a rough {{29}} of the film by next Friday.
 • The tutor will provide {{30}} before the final deadline.`,
           blanks: [
-            { num: 26, answers: ['subtitles', 'subtitle'], maxWords: 1 },
+            { num: 26, answers: ['subtitles'], maxWords: 1 },
             { num: 27, answers: ['narration'], maxWords: 1 },
             { num: 28, answers: ['permission'], maxWords: 1 },
             { num: 29, answers: ['version'], maxWords: 1 },
@@ -319,7 +373,13 @@ There are other clever approaches too. In compressed-air storage, surplus electr
 
 Of course, every method has its drawbacks. Batteries, although efficient, remain expensive, and their lifespan is limited, because after a certain number of charges they must be replaced. Worse still, the metals inside them, such as lithium and cobalt, are difficult and sometimes environmentally damaging to mine.
 
-Looking to the future, researchers are pursuing fresh ideas. One is to store spare renewable electricity in the form of hydrogen gas, which can be burned or fed into fuel cells whenever it is needed. Others are designing cheaper batteries that avoid rare metals altogether. With better storage, renewable energy could one day power our homes and cities around the clock.`,
+Looking to the future, researchers are pursuing fresh ideas. One is to use spare renewable electricity to produce hydrogen gas, which can later supply a fuel cell or an industrial process. Others are designing cheaper batteries that use more abundant materials. With a suitable mix of storage, networks and flexible demand, renewable energy can supply a larger share of power reliably.
+
+Comparing technologies requires more than asking how much electricity enters and leaves a device. Duration matters. A battery may respond in fractions of a second and help stabilise the grid, yet providing energy through several windless days would require far more capacity. Pumped hydro can store large quantities for longer, but it needs appropriate terrain, water and substantial construction. Compressed air also depends on suitable geology unless engineers build costly pressure vessels.
+
+Scale and purpose therefore determine what counts as a good solution. A household battery paired with rooftop solar performs a different task from a reservoir serving a national network. Engineers also measure round-trip efficiency, meaning the proportion of electricity recovered after storage. Hydrogen generally loses more energy across conversion steps than a battery, but it may be easier to store for a season or use where direct electrification is difficult.
+
+Environmental assessment must cover the whole life cycle. Mining impacts matter, but so do manufacturing, transport, safety, recycling and the source of the electricity used to charge a system or produce hydrogen. No technology removes every trade-off. The practical goal is a portfolio whose speed, duration, location and cost match the needs of a changing electricity system.`,
       questions: [
         {
           type: 'formgroup',
@@ -351,7 +411,7 @@ The future
             { num: 33, answers: ['batteries', 'battery'], maxWords: 1 },
             { num: 34, answers: ['water'], maxWords: 1 },
             { num: 35, answers: ['turbine'], maxWords: 1 },
-            { num: 36, answers: ['caves', 'cave'], maxWords: 1 },
+            { num: 36, answers: ['caves'], maxWords: 1 },
             { num: 37, answers: ['salt'], maxWords: 1 },
             { num: 38, answers: ['lifespan', 'life'], maxWords: 1 },
             { num: 39, answers: ['cobalt'], maxWords: 1 },
@@ -370,15 +430,15 @@ The future
 
 One of the most profound puzzles in modern physics is the existence of what scientists call dark matter: a form of matter that does not emit, absorb, or reflect light, making it completely invisible to our telescopes, yet which appears to constitute approximately twenty-seven percent of the total energy content of the universe. Together with dark energy—an even more mysterious force thought to drive the accelerating expansion of the universe—dark matter forms part of what cosmologists refer to as the "dark sector," which collectively accounts for about ninety-five percent of the universe. Ordinary matter—everything we can observe: stars, planets, gas, and galaxies—makes up the remaining five percent.
 
-The evidence for dark matter is extensive and comes from multiple independent lines of observation. The most compelling early evidence came from the rotation of galaxies. In the 1970s, astronomer Vera Rubin and her colleague Kent Ford measured the rotational speeds of stars at different distances from the centre of spiral galaxies. According to Newtonian gravitational theory, stars near the outer edges of galaxies should orbit more slowly than those near the centre, because most of the visible mass is concentrated at the centre. Instead, Rubin and Ford found that stars rotate at roughly the same speed regardless of their distance from the galactic centre—a "flat rotation curve" that can only be explained if galaxies contain far more mass than their visible components would suggest. The additional invisible mass that must be present to explain these rotation curves is dark matter.
+The evidence attributed to dark matter is extensive and comes from multiple observations. An influential line of evidence came from the rotation of galaxies. In the 1970s, astronomer Vera Rubin and her colleague Kent Ford measured the rotational speeds of stars at different distances from the centre of spiral galaxies. If the visible material supplied nearly all the gravity and were concentrated towards the centre, stars near the outer edges should orbit more slowly. Instead, Rubin and Ford found unexpectedly high outer speeds and broadly "flat rotation curves". Within the standard gravitational framework, an extended halo containing much more mass than the visible components explains this pattern. Modified-gravity proposals seek to reproduce the same observations without such a halo, so a rotation curve is evidence to interpret rather than a photograph of invisible matter.
 
-Gravitational lensing provides another line of evidence. When light from a distant object passes near a massive body, the gravitational field bends the light's path, acting as a natural lens. By measuring how much distant light is bent around galaxy clusters, astronomers can infer the total mass of the cluster—visible and invisible. In virtually every case, the inferred mass far exceeds the mass of the visible matter. One particularly striking example is the Bullet Cluster, formed by the collision of two galaxy clusters. In this system, the visible matter (primarily hot gas, which slows during the collision) is separated from the bulk of the mass (revealed through gravitational lensing), providing what many physicists consider the most direct evidence that dark matter is a real physical substance rather than a modification of gravitational theory.
+Gravitational lensing provides another line of evidence. When light from a distant object passes near a massive body, gravity bends its path, acting as a natural lens. Measuring the distortion of background galaxies allows astronomers to infer how mass is distributed in a foreground cluster. The inferred mass is much greater than the mass in stars and hot gas. One striking example is the Bullet Cluster, formed by the collision of two galaxy clusters. Most ordinary matter is hot gas that interacted and slowed, whereas lensing maps place much of the gravitating mass nearer the galaxies that passed through. This separation is difficult for many simple modified-gravity accounts and is widely treated as powerful evidence for a dark component, although interpreting the system still involves a physical model.
 
-The nature of dark matter remains unknown. The leading candidate is a class of as-yet-undiscovered particles called WIMPs (Weakly Interacting Massive Particles), which would interact with ordinary matter only through gravity and the weak nuclear force—making them extremely difficult to detect. Experiments designed to detect WIMPs directly—using highly sensitive detectors placed deep underground to shield them from cosmic ray interference—have been running for decades without a confirmed detection. This persistent null result has led some physicists to consider alternative candidates, including axions (extremely light hypothetical particles) and sterile neutrinos.
+The nature of dark matter remains unknown. A long-studied candidate class is WIMPs (Weakly Interacting Massive Particles). In many proposed models, these particles would interact through gravity and perhaps the weak nuclear force, making a collision with ordinary matter rare. Highly sensitive detectors are placed deep underground to reduce cosmic ray interference, yet decades of searches have produced no universally accepted direct detection. The null results have narrowed parts of the WIMP parameter space rather than disproving every possible WIMP. Other candidates include axions, sterile neutrinos and primordial black holes, each with different predicted signatures and constraints.
 
-An alternative class of explanations rejects dark matter particles altogether and proposes modifications to the laws of gravity itself. Modified Newtonian Dynamics (MOND), proposed by physicist Mordecai Milgrom in 1983, suggests that Newton's law of gravity is modified at the very low accelerations typical of the outer parts of galaxies, producing flat rotation curves without requiring additional invisible mass. While MOND accounts for some observations elegantly, it struggles to explain the full range of evidence that standard dark matter models address—particularly the structure of the cosmic microwave background radiation and the large-scale distribution of galaxies across the universe.
+An alternative class of explanations rejects dark matter particles altogether and proposes modifications to the laws of gravity itself. Modified Newtonian Dynamics (MOND), proposed by physicist Mordecai Milgrom in 1983, suggests that Newton's law of gravity is modified at the very low accelerations typical of the outer parts of galaxies, producing flat rotation curves without requiring additional invisible mass. While MOND accounts for some observations elegantly, it struggles to explain the full range of evidence that standard dark matter models address—particularly the structure of the cosmic microwave background radiation and the large-scale distribution of galaxies across the universe. Standard cosmological simulations, however, also rely on assumptions about ordinary processes such as star formation and feedback. Comparing a model with data therefore requires uncertainty on both sides.
 
-Despite decades of research, dark matter remains one of the most significant open questions in physics. Future experiments, including next-generation underground detectors, the Vera Rubin Observatory (named in honour of the pioneering astronomer), and space-based missions to map the distribution of matter across the universe, may finally reveal the nature of this mysterious component of the cosmos.`,
+Despite decades of research, dark matter remains one of the most significant open questions in physics. Underground detectors test particle interactions; collider experiments look for missing energy; astronomical surveys test how structures grow and how light is lensed. The Vera C. Rubin Observatory, named in honour of the astronomer, surveys large areas of sky repeatedly. Weak-lensing measurements from Rubin and space missions can map the distribution of matter statistically across vast regions. Agreement among methods would strengthen a model, while disagreement could expose an incorrect assumption. Until a candidate is directly identified, scientists must distinguish evidence for unexplained gravitating mass from proof of its composition.`,
       questions: [
         {
           type: 'formgroup',
@@ -403,7 +463,7 @@ Despite decades of research, dark matter remains one of the most significant ope
           part: 5,
           qRange: [8, 13],
           groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
-          template: `8. The discovery that galaxy rotation speeds do not decrease with distance from the centre is known as a {{8}} curve.\n9. The bending of light around a massive object is known as gravitational {{9}}.\n10. The leading dark matter candidate particles are called {{10}}, which interact only through gravity and the weak nuclear force.\n11. Underground dark matter detectors are placed deep below the surface to shield them from {{11}} interference.\n12. The alternative to dark matter particles proposed by Mordecai Milgrom is called Modified {{12}} Dynamics.\n13. A future observatory named in honour of Vera Rubin will map the {{13}} of matter across the universe.`,
+          template: `8. The discovery that galaxy rotation speeds do not decrease with distance from the centre is known as a {{8}} curve.\n9. The bending of light around a massive object is known as gravitational {{9}}.\n10. A long-studied class of candidate dark matter particles is called {{10}}.\n11. Underground dark matter detectors are placed deep below the surface to reduce {{11}} interference.\n12. The alternative to dark matter particles proposed by Mordecai Milgrom is called Modified {{12}} Dynamics.\n13. Weak-lensing surveys can map the {{13}} of matter across vast regions.`,
           blanks: [
             { num: 8, answers: ['flat rotation'] },
             { num: 9, answers: ['lensing'] },
@@ -423,19 +483,19 @@ Despite decades of research, dark matter remains one of the most significant ope
       instructions: 'Read the passage and answer Questions 14–26.',
       passage: `The Rise of E-commerce
 
-A. Electronic commerce—the buying and selling of goods and services over the internet—has been one of the most transformative economic phenomena of the past three decades. From its origins in the mid-1990s, when the first secure online transactions were conducted and Amazon launched as an online bookstore, e-commerce has grown to represent a substantial and rising share of global retail sales. In 2023, global e-commerce sales were estimated at approximately $5.8 trillion, and forecasts suggest this figure will approach $8 trillion by 2027.
+A. Electronic commerce broadly covers sales in which an order, or its price and terms, is negotiated over an internet or comparable online system; payment need not occur online. Since consumer internet use expanded in the 1990s, digitally ordered sales have become a substantial part of economic activity. Measurement is difficult, however. Business-to-business transactions make up most reported business e-commerce value, while online retail is only one subset. UN Trade and Development warns that countries use different surveys and definitions, so a single global total often depends on estimation. Comparable claims must state whether they concern retail, all business sales or cross-border transactions.
 
 B. The drivers of e-commerce growth are well understood. Convenience is paramount: online shopping is available twenty-four hours a day, requires no travel, and enables rapid comparison of prices and products from multiple vendors. The expansion of smartphones and mobile internet access has been particularly significant, enabling mobile commerce—shopping via smartphones and tablets—which now accounts for the majority of e-commerce transactions in many markets. The COVID-19 pandemic accelerated adoption dramatically: lockdowns forced both consumers and businesses to shift to online channels, and many of the resulting changes in behaviour appear to have persisted beyond the immediate crisis.
 
-C. The competitive dynamics of e-commerce have produced a high degree of market concentration. Amazon dominates the North American market and is a major force in Europe; Alibaba and its affiliates dominate China; Flipkart leads in India. These platform giants benefit from powerful network effects—the more buyers a platform attracts, the more sellers it attracts, and vice versa—and from the data advantages that come with scale. Vast amounts of data on consumer behaviour, preferences, and price sensitivity allow these platforms to optimise recommendations, personalise marketing, and set prices with precision that independent retailers cannot match.
+C. E-commerce includes independent webshops, retailers combining stores and websites, and large marketplaces. Prominent platforms differ by country and product category, so calling one company the universal market leader obscures local competition. Large marketplaces can benefit from network effects: more buyers may attract more sellers, while a broader selection may attract more buyers. Scale also produces data on searches, purchases and responses to promotions. These data can improve recommendations and logistics, although they do not allow prices or preferences to be predicted with perfect precision. The same platform may simultaneously provide smaller firms with market access and compete with them.
 
-D. The implications for traditional "bricks-and-mortar" retail have been severe. High streets in many countries have experienced significant declines in footfall and the closure of established retail brands. Department stores—once anchors of major shopping districts—have been particularly hard hit: several major chains in the United States and United Kingdom have entered bankruptcy or dramatically reduced their physical presence in the past decade. Research suggests that the decline of physical retail has contributed to the hollowing out of town centres and has disproportionately affected lower-income communities where brick-and-mortar retail provided both employment and accessible shopping options.
+D. The implications for traditional "bricks-and-mortar" retail vary. Some established chains have closed stores or entered bankruptcy, while others use shops for collection, returns, advice and experiences that complement online ordering. Falling footfall can weaken town centres, but e-commerce is not the only cause: rents, household income, planning, transport and changes in where people live also matter. The effects are uneven. A local closure may remove jobs or an accessible source of essentials, particularly for people who face digital, financial or delivery barriers, whereas a remote household may gain access to goods unavailable nearby.
 
 E. The environmental footprint of e-commerce is complex and contested. On one hand, the consolidation of deliveries by logistics companies may be more fuel-efficient than multiple individual trips to physical shops. On the other, the proliferation of packaging—particularly single-use plastic—the high rate of product returns (typically far higher than in physical retail), and the energy demands of large warehouse facilities create significant environmental costs. The "last mile" delivery problem—getting goods from a distribution centre to the consumer's door—is particularly challenging in terms of emissions, as it involves a large number of relatively short vehicle trips across residential areas.
 
-F. Labour conditions in e-commerce supply chains have attracted sustained critical attention. Warehouse workers at major e-commerce operations have reported high rates of work intensity, closely monitored performance targets, and injury rates that exceed the retail industry average. The gig economy of delivery drivers—many of whom are classified as independent contractors rather than employees—has faced criticism for insecure incomes, lack of benefits, and algorithmic management that leaves little room for human judgement. Several jurisdictions have introduced or proposed legislation to strengthen the employment rights of platform workers, though the legal and political battles remain unresolved.
+F. Labour conditions in e-commerce supply chains have attracted sustained attention. Warehousing and delivery can use algorithmic management: tracked data helps assign, monitor and evaluate work. Such systems may streamline operations, but research also identifies intrusive surveillance, intense targets and reduced contact with human managers. Comparisons of injury rates require compatible jobs, periods and reporting systems rather than a casual industry-wide claim. Platform delivery workers may be classified as independent contractors in one jurisdiction and employees in another, affecting pay, insurance and benefits. Governments continue to debate employment status, transparency and the right to challenge automated decisions.
 
-G. The future of e-commerce is likely to be shaped by technological innovation, regulatory responses, and evolving consumer preferences. Augmented reality tools that allow consumers to visualise products in their own homes before purchasing, drone and autonomous vehicle delivery, and the integration of social media and commerce ("social commerce") represent emerging frontiers. Regulators in the European Union, the United States, and China have moved to scrutinise the market power of dominant platforms, with implications for competition, data use, and the terms on which smaller businesses can access these essential marketplaces. The trajectory of e-commerce suggests continued growth—but growth whose social, environmental, and distributional consequences will require active and ongoing governance.`,
+G. The future of e-commerce is likely to be shaped by technological innovation, regulatory responses, and evolving consumer preferences. Augmented reality tools that allow consumers to visualise products in their own homes before purchasing, drone and autonomous vehicle delivery, and the integration of social media and commerce ("social commerce") represent emerging frontiers. Regulators in the European Union, the United States, and China have moved to scrutinise the market power of dominant platforms, with implications for competition, data use, and the terms on which smaller businesses can access these essential marketplaces. Consumer protection also matters when a seller operates abroad: clear prices, secure payment, accessible returns and responsibility for unsafe products cannot be assumed merely because a transaction is convenient. The trajectory of e-commerce suggests continued growth—but growth whose social, environmental, and distributional consequences will require active and ongoing governance.`,
       questions: [
         {
           type: 'matching',
@@ -444,10 +504,10 @@ G. The future of e-commerce is likely to be shaped by technological innovation, 
           qRange: [14, 20],
           groupLabel: 'The passage has seven paragraphs, A–G. Which paragraph contains the following information?',
           items: [
-            { num: 14, stem: 'A reference to concerns about working conditions and injury rates in e-commerce warehouses', answer: 'F' },
-            { num: 15, stem: 'An explanation of how large platforms use data to gain competitive advantages over small retailers', answer: 'C' },
-            { num: 16, stem: 'Statistics on the current and projected value of global e-commerce sales', answer: 'A' },
-            { num: 17, stem: 'Evidence that e-commerce has disproportionately harmed lower-income communities', answer: 'D' },
+            { num: 14, stem: 'A discussion of algorithmic monitoring and reduced contact with human managers', answer: 'F' },
+            { num: 15, stem: 'An explanation of how marketplace scale can improve recommendations and logistics', answer: 'C' },
+            { num: 16, stem: 'A warning that e-commerce totals depend on definitions and estimation', answer: 'A' },
+            { num: 17, stem: 'Reasons why the effects of physical shop closures are uneven', answer: 'D' },
             { num: 18, stem: 'An account of how the COVID-19 pandemic affected consumer shopping behaviour', answer: 'B' },
             { num: 19, stem: 'A discussion of the environmental costs of packaging, returns, and last-mile delivery', answer: 'E' },
             { num: 20, stem: 'A description of emerging technologies such as drones and augmented reality in e-commerce', answer: 'G' },
@@ -473,7 +533,7 @@ G. The future of e-commerce is likely to be shaped by technological innovation, 
           blanks: [
             { num: 21, answers: ['convenience'] },
             { num: 22, answers: ['network'] },
-            { num: 23, answers: ['bricks-and-mortar', 'brick-and-mortar'] },
+            { num: 23, answers: ['bricks-and-mortar'] },
             { num: 24, answers: ['last mile'] },
             { num: 25, answers: ['retail'] },
             { num: 26, answers: ['augmented reality'] },
@@ -489,17 +549,17 @@ G. The future of e-commerce is likely to be shaped by technological innovation, 
       instructions: 'Read the passage and answer Questions 27–40.',
       passage: `Cultural Heritage and Its Preservation
 
-Cultural heritage encompasses the practices, knowledge, artistic expressions, places, and objects that communities inherit from the past and wish to transmit to future generations. It includes the tangible—buildings, archaeological sites, artefacts, manuscripts—and the intangible: oral traditions, performing arts, rituals, craftsmanship, and indigenous knowledge systems. The preservation of cultural heritage is driven by multiple and sometimes competing motivations: the intrinsic value of cultural continuity, the economic value of heritage tourism, the role of heritage in constructing national and community identities, and the scientific value of material remains as records of human history.
+Cultural heritage encompasses the practices, knowledge, artistic expressions, places, and objects that communities inherit from the past and wish to transmit to future generations. It includes the tangible—buildings, archaeological sites, artefacts, manuscripts—and the intangible: oral traditions, performing arts, rituals, craftsmanship, and indigenous knowledge systems. The preservation of cultural heritage is driven by multiple and sometimes competing motivations: the intrinsic value of cultural continuity, the economic value of heritage tourism, the role of heritage in constructing national and community identities, and the scientific value of material remains as records of human history. Safeguarding an intangible practice cannot mean freezing it in one authorised form; transmission may require practitioners to adapt it while retaining meaning for their own community.
 
 The scale of the threat to global heritage is enormous. Natural disasters—earthquakes, floods, fires—have always posed dangers, but climate change is intensifying these risks. Coastal heritage sites face accelerating erosion as sea levels rise and storms become more intense; permafrost regions such as northern Canada and Siberia, where cold conditions have preserved organic materials for thousands of years, are now thawing, causing irreversible deterioration. Armed conflict has been used as a deliberate cultural weapon: the destruction of the ancient city of Palmyra by the Islamic State group in Syria, and the dynamiting of the Bamiyan Buddhas in Afghanistan by the Taliban in 2001, were calculated acts of cultural erasure aimed at destroying communities' connections to their histories.
 
-The international framework for heritage protection is centred on the UNESCO World Heritage Convention, adopted in 1972, which to date has inscribed over 1,100 sites across 167 countries. The Convention obliges signatory states to identify, protect, and transmit to future generations the heritage sites within their territories. Sites on the World Heritage List benefit from increased international attention and often increased funding for conservation, though listing is not a guarantee of safety—a significant number of World Heritage Sites are on the "in danger" list, including the Great Barrier Reef, which faces the compound threats of ocean warming and acidification.
+The international framework for heritage protection is centred on the UNESCO World Heritage Convention, adopted in 1972. UNESCO's live list in 2026 records 1,273 properties in 173 States Parties, while 58 properties are on the List of World Heritage in Danger. States Parties identify and nominate properties and are expected to protect the outstanding universal value of listed sites. Inscription can increase attention, but it is not a guarantee of safety or automatic funding. The Great Barrier Reef faces severe pressure from climate change and poor water quality; UNESCO expressed utmost concern in 2026, but the property is not currently on the danger list. Monitoring a threatened listed site and formally inscribing it as "in danger" are distinct decisions.
 
-The practice of heritage conservation has itself evolved significantly. Early conservation philosophy, influenced by nineteenth-century European traditions, often prioritised the restoration of buildings to an idealised "original" state—sometimes involving the demolition of later additions or the replacement of authentic but deteriorated material with modern replicas. The 1964 Venice Charter established principles that continue to guide the field: authenticity, reversibility of interventions, and the distinction between existing fabric and new additions. More recently, conservation practice has engaged more deeply with the perspectives of the communities whose heritage is being preserved, recognising that definitions of authenticity and significance are culturally constructed rather than universal.
+The practice of heritage conservation has itself evolved significantly. Some nineteenth-century European restoration sought an idealised "original" state, sometimes removing later work. The 1964 Venice Charter took a more cautious position: restoration must be based on respect for original material and authentic documents, must stop where conjecture begins, and must make indispensable replacements distinguishable while integrating them harmoniously. It also says valid contributions from all periods should be respected; unity of style is not the aim. Although reversibility became influential in later conservation debate, the term does not appear in the Charter itself. Later documents, including the 1994 Nara Document, developed a more culturally plural account of authenticity. Contemporary practice increasingly asks communities what they value rather than assuming experts possess the only valid definition.
 
-The repatriation of cultural property is one of the most contested aspects of heritage policy. Many of the world's most significant artefacts—the Elgin Marbles (Parthenon Sculptures) from Greece, the Benin Bronzes from Nigeria, Egyptian artefacts held in museums across Europe—were acquired during the colonial period under conditions that are now widely regarded as exploitative or illegal. The governments and communities from which these objects originated have increasingly demanded their return. Major universal museums, including the British Museum and the Louvre, have historically resisted repatriation, arguing that they serve as guardians of world heritage on behalf of global humanity; critics contend that this argument conveniently serves the interests of the institutions that hold the objects.
+The repatriation of cultural property is one of the most contested aspects of heritage policy. Objects grouped under familiar labels have different histories: some were looted, some excavated under unequal colonial rules, some sold, and some transferred under agreements whose legality or legitimacy is disputed. Greece seeks the return of the Parthenon Sculptures, while institutions and governments have returned a growing number of Benin objects to Nigerian ownership. Holding museums may invoke law, preservation and access to a global collection; source communities may emphasise coercion, cultural rights and the ability to interpret their own heritage. Because facts and legal powers differ, a defensible decision requires object-level provenance rather than assuming every colonial-era acquisition was either clearly legal or clearly illegal.
 
-Digital technologies have created new possibilities for heritage preservation and access. Three-dimensional scanning, photogrammetry, and virtual reality enable the creation of detailed digital records of endangered sites, providing a form of preservation that survives physical destruction. The reconstruction of destroyed sites in virtual form—including Palmyra and Notre-Dame de Paris—has attracted both enthusiasm and scepticism: while digital reconstructions can make heritage accessible globally, critics argue that they risk creating the impression that virtual copies can substitute for authentic physical sites, potentially reducing political pressure for their protection. The relationship between digital heritage and the embodied, place-based experience of authentic heritage remains a genuinely open question for the field.`,
+Digital technologies have created new possibilities for heritage documentation and access. Three-dimensional scanning, photogrammetry and virtual reality can preserve measurements and images even when physical fabric is later damaged. A digital record is not automatically complete: file formats become obsolete, storage fails, access can be restricted, and a model reflects what its creators selected and captured. Reconstructions of damaged places such as Palmyra and Notre-Dame de Paris have attracted enthusiasm and scepticism. They can support research and widen access, but they do not reproduce material, location, ritual use or every community memory. Digital stewardship therefore needs metadata, durable storage, permission and plans for migration, while physical protection and living cultural practice remain essential.`,
       questions: [
         {
           type: 'mcq',
@@ -535,7 +595,7 @@ Digital technologies have created new possibilities for heritage preservation an
           options: [
             'That buildings should always be restored to their original historical state.',
             'That later additions to historical buildings should always be preserved intact.',
-            'That interventions should be reversible and that existing fabric should be distinguished from new additions.',
+            'That valid work from different periods should be respected and necessary replacements distinguishable.',
             'That digital replicas are an acceptable substitute for the preservation of authentic physical sites.',
           ],
           answer: 2,
@@ -559,12 +619,12 @@ Digital technologies have created new possibilities for heritage preservation an
           part: 7,
           qRange: [31, 36],
           groupLabel: 'Do the following statements agree with the claims of the writer? Write YES, NO or NOT GIVEN.',
-          template: `31. {{31}}: Climate change is intensifying existing threats to coastal and permafrost heritage sites.\n32. {{32}}: The UNESCO World Heritage Convention has inscribed over 1,100 sites in more than 160 countries.\n33. {{33}}: The Venice Charter established the principle that heritage interventions should be reversible.\n34. {{34}}: The writer argues that universal museums are correct to resist repatriation of cultural objects.\n35. {{35}}: Digital reconstructions of destroyed heritage sites make it possible for people to experience them as if they were authentic physical places.\n36. {{36}}: The passage suggests that digital records of heritage can provide useful preservation even when physical sites are destroyed.`,
+          template: `31. {{31}}: Climate change is intensifying existing threats to coastal and permafrost heritage sites.\n32. {{32}}: UNESCO's live list records 1,273 World Heritage properties in 173 States Parties.\n33. {{33}}: The term reversibility appears explicitly in the 1964 Venice Charter.\n34. {{34}}: The writer reaches a general conclusion that universal museums are right to resist repatriation.\n35. {{35}}: Digital reconstructions of destroyed heritage sites make it possible for people to experience them as if they were authentic physical places.\n36. {{36}}: The passage suggests that digital records of heritage can preserve useful information even when physical fabric is damaged.`,
           blanks: [
             { num: 31, answers: ['YES'] },
             { num: 32, answers: ['YES'] },
-            { num: 33, answers: ['YES'] },
-            { num: 34, answers: ['NO'] },
+            { num: 33, answers: ['NO'] },
+            { num: 34, answers: ['NOT GIVEN'] },
             { num: 35, answers: ['NOT GIVEN'] },
             { num: 36, answers: ['YES'] },
           ],
@@ -598,8 +658,8 @@ Digital technologies have created new possibilities for heritage preservation an
           part: 8,
           taskNumber: 1,
           imageUrl: '/assets/ielts/charts/set19-task1.svg',
-          imageAlt: 'Line graph showing online retail sales as a percentage of total retail sales in four countries from 2015 to 2023',
-          stimulus: 'The line graph below shows online retail sales as a percentage of total retail sales in four countries from 2015 to 2023.',
+          imageAlt: 'Line graph of U.S. fourth-quarter retail e-commerce shares from 2019 to 2024. Seasonally adjusted: 11.4%, 14.0%, 12.9%, 14.7%, 15.6%, 16.4%. Not adjusted: 12.8%, 15.7%, 14.5%, 16.0%, 17.1%, 17.9%.',
+          stimulus: 'The line graph below shows U.S. retail e-commerce sales as a percentage of total retail sales in the fourth quarter from 2019 to 2024, using seasonally adjusted and not adjusted estimates.',
           text: 'Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
           minWords: 150,
         },
@@ -617,8 +677,8 @@ Digital technologies have created new possibilities for heritage preservation an
           id: 'w2',
           part: 9,
           taskNumber: 2,
-          stimulus: 'The development of e-commerce and online shopping has had significant effects on traditional businesses and communities.',
-          text: 'Do the advantages of online shopping outweigh the disadvantages for society as a whole? Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
+          stimulus: 'Some people believe the growth of online shopping benefits society through convenience, choice and lower costs. Others believe its effects on local shops, workers and the environment are more harmful.',
+          text: 'Discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.',
           minWords: 250,
         },
       ],
@@ -640,7 +700,11 @@ Digital technologies have created new possibilities for heritage preservation an
             'Do you prefer shopping online or in physical shops? Why?',
             'Have your shopping habits changed in recent years?',
             'Are there any traditional markets or shopping areas in your town or city that you like?',
+            'What kind of thing do you usually buy as a gift?',
             'How interested are you in history and visiting historical places?',
+            'Did you learn much about local history at school?',
+            'Is there an old building that people recognise in your hometown?',
+            'Do you prefer visiting museums alone or with other people?',
           ],
         },
         {
@@ -660,8 +724,10 @@ Digital technologies have created new possibilities for heritage preservation an
           followUp: [
             'How important do you think it is for countries to preserve their historical and cultural heritage?',
             'Should artefacts taken from other countries during the colonial period be returned to their places of origin?',
-            'Do you think space exploration or understanding the universe is a good use of scientific resources?',
             'How can governments best balance economic development with the preservation of historical areas?',
+            'Who should decide which buildings or traditions receive public funding?',
+            'Can a digital reconstruction ever replace access to an original site?',
+            'How might mass tourism change the culture that visitors come to experience?',
           ],
         },
       ],

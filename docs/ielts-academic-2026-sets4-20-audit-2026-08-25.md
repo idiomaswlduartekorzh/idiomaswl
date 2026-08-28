@@ -202,6 +202,13 @@ Set 4 (583 caracteres, coste cero) y deja sólo 12.475 caracteres nuevos factura
   social y bilingüismo. El proceso de reciclaje de plástico pasó QA accesible; el Task 2
   sobre beneficios y riesgos médicos de la edición genética es original. Sólo queda
   diferido su audio.
+- El Set 19 superó 251 controles Golden. Listening conserva sus cuatro escenarios y
+  añade políticas, consentimiento, accesibilidad y evaluación técnica específica. Reading
+  corrige inferencias sobre materia oscura, cifras y causalidad de comercio electrónico,
+  el estado UNESCO de la Gran Barrera y la atribución falsa de reversibilidad a la Carta
+  de Venecia. La gráfica usa seis releases Q4 del U.S. Census, pasó QA visual y accesible;
+  el Task 2 sobre impacto social del comercio electrónico es original. Sólo queda diferido
+  su audio.
 
 ## Auditoría final no-audio
 
