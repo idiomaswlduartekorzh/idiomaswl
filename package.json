@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm run check:production-baseline && npm run check:admin-exam-copy && npm run check:site-navigation && npm run check:exam-hub-ui && npm run check:advanced-ideas && npm run check:advanced-guided && npm run check:practica-catalog && npm run check:habla-acompanada && npm run check:habla-release:published && npm run check:tense-quests && npm run check:pronoun-quests && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:ielts-review-blueprint && npm run check:toefl-audio-release && npm run check:toefl-review-blueprint && npm run check:toefl-editorial && npm run check:toefl-payments && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano && npm run check:fonetica-frances && npm run check:pdf-fonts && npm run check:sat-catalog && npm run test:sat-factory && npm run check:sat && npm run check:sat-superhub && npm run check:sat-adaptive",
+    "prebuild": "npm run check:production-baseline && npm run check:admin-exam-copy && npm run check:site-navigation && npm run check:exam-hub-ui && npm run check:advanced-ideas && npm run check:advanced-guided && npm run check:practica-catalog && npm run check:habla-acompanada && npm run check:habla-release:published && npm run check:tense-quests && npm run check:pronoun-quests && npm run check:reading-content && npm run audit:writing-curriculum && npm run check:listening-series && npm run check:ielts-task1 && npm run check:ielts-task2 && npm run check:ielts-review-blueprint && npm run check:toefl-audio-release && npm run check:toefl-review-blueprint && npm run check:toefl-editorial && npm run check:toefl-payments && npm run check:vocabulario && npm run check:historias && npm run check:seo-snippets && npm run check:fonetica && npm run check:fonetica-coreano && npm run check:fonetica-frances && npm run check:pdf-fonts && npm run check:sat-catalog && npm run test:sat-factory && npm run check:sat && npm run check:sat-superhub && npm run check:sat-adaptive && npm run check:medical-residency-blueprints",
     "dev": "NODE_OPTIONS='--max-old-space-size=3072' next dev",
     "dev:audit": "NODE_OPTIONS='--max-old-space-size=3072' next dev --webpack",
     "dev:safe": "node scripts/safe-dev.js",
@@ -61,6 +61,8 @@
     "check:listening-series": "node scripts/validate-listening-series.mjs",
     "test:reading": "node --test tests/reading-content.test.mjs",
     "test:icfes": "node --test tests/icfes-scoring.test.mjs",
+    "check:medical-residency-blueprints": "node --experimental-strip-types --no-warnings scripts/check-medical-residency-blueprints.mjs",
+    "test:medical-residency-blueprints": "node --experimental-strip-types --no-warnings --test tests/medical-residency-blueprints.test.mjs",
     "test:whatsapp": "node --experimental-strip-types --no-warnings --test tests/whatsapp-chatbot.test.mts",
     "test:ielts-review": "node --experimental-strip-types --no-warnings --test tests/ielts-review-scoring.test.mjs",
     "check:ielts-review-blueprint": "node --experimental-strip-types --no-warnings scripts/check-ielts-review-blueprint.mjs",
