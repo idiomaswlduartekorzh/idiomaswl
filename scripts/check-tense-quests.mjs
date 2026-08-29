@@ -18,6 +18,7 @@ import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-qu
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest.ts'
 import { PORTUGUESE_PRESENT_EDITORIAL } from '../src/data/practica/portuguese-present-editorial.ts'
 import { PORTUGUESE_PROGRESSIVE_EDITORIAL } from '../src/data/practica/portuguese-progressive-editorial.ts'
+import { PORTUGUESE_PRETERITE_PERFECT_EDITORIAL } from '../src/data/practica/portuguese-preterite-perfect-editorial.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
 
 const failures = []
@@ -388,6 +389,7 @@ for (const context of frenchFuturePerfectContexts) assert(/(?:d’ici|quand|lors
 const PORTUGUESE_EDITORIAL_PACKS = [
   ['presente', PORTUGUESE_PRESENT_EDITORIAL],
   ['progressivo', PORTUGUESE_PROGRESSIVE_EDITORIAL],
+  ['preterito-perfeito', PORTUGUESE_PRETERITE_PERFECT_EDITORIAL],
 ]
 for (const [formId, pack] of PORTUGUESE_EDITORIAL_PACKS) {
   assert(pack.choices.length === 10 && pack.micro.length === 10, `portuguese/${formId}: se requieren 10 decisiones y 10 microtextos`)
