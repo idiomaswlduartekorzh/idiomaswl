@@ -21,7 +21,7 @@ async function reset(page: import('@playwright/test').Page, route: string) {
 }
 
 async function configureFirstForm(page: import('@playwright/test').Page) {
-  await page.locator('section[aria-labelledby="tense-selector-title"] button[aria-pressed]').first().click()
+  await page.locator('section[aria-labelledby="tense-selector-title"] button[aria-pressed]:not([disabled])').first().click()
   await page.getByRole('button', { name: /Crear mi quiz/ }).click()
 }
 
@@ -40,17 +40,17 @@ test('elegir siempre B ya no aprueba y la reconstrucción individual ofrece dist
   await reset(page, 'coreano')
   await configureFirstForm(page)
 
-  for (let index = 0; index < 3; index += 1) {
+  for (let index = 0; index < 10; index += 1) {
     await page.locator('.wlp-option').nth(1).click()
-    await page.getByRole('button', { name: index === 2 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+    await page.getByRole('button', { name: index === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
   }
-  await expect(page.getByRole('status')).toContainText('1 de 3 puntos correctos')
+  await expect(page.getByRole('status')).toContainText('2 de 10 puntos correctos')
 
   await page.getByRole('tab').nth(5).click()
   await expect(page).toHaveURL(/level=6/)
   await expect(page.locator('button[aria-label^="Espacio "]')).toHaveCount(1)
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
-  await expect(page.getByText('Hay tarjetas distractoras que no se usan.')).toBeVisible()
+  await expect(page.getByText('Cada hueco tiene distractores plausibles del mismo verbo.')).toBeVisible()
 })
 
 test('un intento se restaura y cambiar selección limpia la URL', async ({ page }) => {
