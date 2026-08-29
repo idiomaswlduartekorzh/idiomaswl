@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import type { ListeningUi } from '@/data/practica/listening-ui'
 
 /**
  * Reproductor de los ejercicios de escucha.
@@ -30,6 +31,7 @@ export default function ListeningPlayer({
   onFirstPlay,
   onLineChange,
   label,
+  ui,
 }: {
   src: string
   /** Duración declarada en la serie. Solo se usa hasta que el navegador lee la real. */
@@ -39,6 +41,7 @@ export default function ListeningPlayer({
   onFirstPlay: () => void
   onLineChange: (index: number) => void
   label: string
+  ui: ListeningUi
 }) {
   const audioRef = useRef<HTMLAudioElement>(null)
   const [playing, setPlaying] = useState(false)
@@ -125,7 +128,7 @@ export default function ListeningPlayer({
     return (
       <div className="listen-player listen-player--error" role="alert">
         <span aria-hidden="true">⚠️</span>
-        <p>No se ha podido cargar este audio. Recarga la página; si sigue igual, avísanos y lo revisamos.</p>
+        <p>{ui.audioError}</p>
       </div>
     )
   }
@@ -152,17 +155,17 @@ export default function ListeningPlayer({
         className="listen-play"
         type="button"
         onClick={toggle}
-        aria-label={playing ? `Pausar ${label}` : `Reproducir ${label}`}
+        aria-label={playing ? `${ui.pause} ${label}` : `${ui.play} ${label}`}
       >
         <span aria-hidden="true">{playing ? '❚❚' : '▶'}</span>
-        {playing ? 'Pausa' : current > 0 ? 'Seguir' : 'Escuchar'}
+        {playing ? ui.pause : current > 0 ? ui.resume : ui.play}
       </button>
 
       <button
         className="listen-rewind"
         type="button"
         onClick={() => seek((current - 5) / (duration || 1))}
-        aria-label="Retroceder cinco segundos"
+        aria-label={ui.rewind}
       >
         ↺ 5 s
       </button>
@@ -180,7 +183,7 @@ export default function ListeningPlayer({
         value={Math.round(progreso * 10)}
         onChange={(event) => seek(Number(event.currentTarget.value) / 1000)}
         style={{ ['--progreso' as string]: `${progreso}%` }}
-        aria-label="Posición del audio"
+        aria-label={ui.audioPosition}
         aria-valuetext={`${formatTime(current)} de ${formatTime(duration)}`}
       />
 
@@ -195,7 +198,7 @@ export default function ListeningPlayer({
         type="button"
         onClick={() => setRate((value) => (value === 1 ? 0.75 : 1))}
         aria-pressed={rate !== 1}
-        title="Velocidad de reproducción"
+        title={ui.speed}
       >
         {rate === 1 ? '1×' : '0,75×'}
       </button>
