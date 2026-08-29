@@ -96,6 +96,22 @@ test('italiano ofrece progresivos, diez retos por nivel e informe final', async 
   await expect(page.getByRole('status')).not.toContainText('10 de 10 puntos correctos')
 })
 
+test('italiano usa relatos conectados y un dossier final distinto del nivel uno', async ({ page }) => {
+  await page.goto('/herramientas/quizes/italiano?forms=trapassato-remoto&level=3')
+
+  await expect(page.getByText('Il decreto reale', { exact: true })).toBeVisible()
+  await expect(page.getByText(/Non appena il re/)).toBeVisible()
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+  await expect(page.locator('[class*="proseExercise"]')).not.toContainText(' · ')
+
+  await page.getByRole('tab').nth(5).click()
+  await expect(page).toHaveURL(/level=6/)
+  await expect(page.getByText(/Non appena il notaio/)).toBeVisible()
+  await expect(page.getByText(/Non appena il re ebbe letto il messaggio/)).toHaveCount(0)
+  await expect(page.locator('button[aria-label^="Espacio "]')).toHaveCount(1)
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
 test('un estudiante puede cerrar los 6 niveles sin recibir corrección anticipada', async ({ page }) => {
   await reset(page, 'frances')
   await configureFirstForm(page)
