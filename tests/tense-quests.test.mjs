@@ -53,8 +53,8 @@ test('function maps do not reveal their answer in the hint', () => {
 })
 
 test('declared normative variants survive into every written-answer level', () => {
-  const englishNegative = ENGLISH_TENSE_QUEST.microStories.find((item) => item.id === 'en-micro-present-perfect-3')
-  assert.deepEqual(englishNegative?.gaps[0].answers, ['have not received', "haven't received"])
+  const englishNegative = ENGLISH_TENSE_QUEST.microStories.find((item) => item.gaps.some((gap) => gap.tense === 'present-perfect' && gap.verb === 'not receive'))
+  assert.deepEqual(englishNegative?.gaps.find((gap) => gap.verb === 'not receive')?.answers, ['have not received', "haven't received"])
 
   const japaneseExperience = JAPANESE_STRUCTURE_QUEST.microStories.find((item) => item.id === 'japanese-structure-quest-micro-experience-1')
   assert.ok(japaneseExperience?.gaps[0].answers.includes('行ったことあります'))

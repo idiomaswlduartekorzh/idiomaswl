@@ -55,6 +55,7 @@ type EnglishEditorialPackInput = {
   errors: EnglishEditorialErrorSeed[]
   sequences: EnglishEditorialSequenceSeed[]
   final: EnglishEditorialFinalSeed[]
+  choicePositions?: number[]
 }
 
 function rotate<T>(items: readonly T[], offset: number): T[] {
@@ -66,7 +67,7 @@ export function createEnglishEditorialPack(input: EnglishEditorialPackInput) {
   const prefix = `en-${input.slug}`
   const choices: ChoiceChallenge<EnglishFormId>[] = input.micro.map((seed, index) => {
     const options = [...seed.distractors]
-    const balancedPositions = [0, 1, 2, 3, 1, 2, 0, 1, 2, 3]
+    const balancedPositions = input.choicePositions ?? [0, 1, 2, 3, 1, 2, 0, 1, 2, 3]
     options.splice(balancedPositions[index % balancedPositions.length], 0, seed.answers[0])
     return {
       id: `${prefix}-choice-editorial-${index + 1}`,

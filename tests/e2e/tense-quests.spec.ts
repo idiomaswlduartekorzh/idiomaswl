@@ -58,14 +58,14 @@ test('un intento se restaura y cambiar selección limpia la URL', async ({ page 
   await configureFirstForm(page)
   await page.locator('.wlp-option').first().click()
   await page.getByRole('button', { name: /Guardar y seguir/ }).click()
-  await expect(page.getByText('2 / 3', { exact: true })).toBeVisible()
+  await expect(page.getByText('2 / 10', { exact: true })).toBeVisible()
   await expect.poll(() => page.evaluate(() => {
-    const raw = window.localStorage.getItem('wl-english-tense-quest-v2')
+    const raw = window.localStorage.getItem('wl-english-tense-quest-v3')
     return raw ? JSON.parse(raw).attempt?.itemIndex : -1
   })).toBe(1)
 
   await page.reload()
-  await expect(page.getByText('2 / 3', { exact: true })).toBeVisible()
+  await expect(page.getByText('2 / 10', { exact: true })).toBeVisible()
   await expect(page).toHaveURL(/forms=present-simple/)
 
   page.once('dialog', (dialog) => dialog.accept())
@@ -108,6 +108,22 @@ test('italiano usa relatos conectados y un dossier final distinto del nivel uno'
   await expect(page).toHaveURL(/level=6/)
   await expect(page.getByText(/Non appena il notaio/)).toBeVisible()
   await expect(page.getByText(/Non appena il re ebbe letto il messaggio/)).toHaveCount(0)
+  await expect(page.locator('button[aria-label^="Espacio "]')).toHaveCount(1)
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
+test('los presentes ingleses usan diez bancos editoriales y relatos conectados', async ({ page }) => {
+  await page.goto('/herramientas/quizes/ingles?forms=present-simple&level=3')
+
+  for (let level = 0; level < 6; level += 1) {
+    await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  }
+  await expect(page.getByText('Opening the neighborhood café', { exact: true })).toBeVisible()
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+  await expect(page.locator('[class*="proseExercise"]')).not.toContainText(' · ')
+
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.getByText(/Every dawn the lighthouse keeper/)).toBeVisible()
   await expect(page.locator('button[aria-label^="Espacio "]')).toHaveCount(1)
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })

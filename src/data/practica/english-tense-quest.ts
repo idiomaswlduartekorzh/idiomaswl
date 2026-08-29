@@ -6,6 +6,12 @@ import type {
   TimelineChallenge,
 } from './tense-quest-types'
 import { ENGLISH_PRESENT_SIMPLE_EDITORIAL } from './english-present-simple-editorial.ts'
+import { ENGLISH_PRESENT_CONTINUOUS_EDITORIAL } from './english-present-continuous-editorial.ts'
+import { ENGLISH_PRESENT_PERFECT_EDITORIAL } from './english-present-perfect-editorial.ts'
+import { ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL } from './english-present-perfect-continuous-editorial.ts'
+
+const ENGLISH_EDITORIAL_PACKS = [ENGLISH_PRESENT_SIMPLE_EDITORIAL, ENGLISH_PRESENT_CONTINUOUS_EDITORIAL, ENGLISH_PRESENT_PERFECT_EDITORIAL, ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL]
+const ENGLISH_EDITORIAL_FORMS = new Set<EnglishFormId>(['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous'])
 
 export const ENGLISH_FORMS = [
   { id: 'present-simple', label: 'Present simple', group: 'Present' },
@@ -336,7 +342,7 @@ const FINAL_ROWS: { formId: EnglishFormId; lemma: string; before: string; after:
   { formId: 'imperative', lemma: 'take', before: 'Before you begin, please ', after: ' a seat and silence your phone.', answer: 'take' },
 ]
 
-const LEGACY_FINAL_ROWS = FINAL_ROWS.filter((row) => row.formId !== 'present-simple')
+const LEGACY_FINAL_ROWS = FINAL_ROWS.filter((row) => !ENGLISH_EDITORIAL_FORMS.has(row.formId))
 const legacyFinalAnswers = LEGACY_FINAL_ROWS.map((row, index) => ({ id: `en-final-card-${index + 1}`, text: row.answer }))
 
 export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
@@ -357,11 +363,11 @@ export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
     { number: '05', title: 'Aspect map', short: 'Match functions', description: 'Match complete clauses to their temporal function.' },
     { number: '06', title: 'The workshop file', short: 'Final reconstruction', description: 'Rebuild a complete timeline from a closed word bank.' },
   ],
-  choiceChallenges: [...CHOICES.filter((item) => !item.tenses.includes('present-simple')), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.choices],
-  microStories: [...MICROS.filter((item) => !item.gaps.some((gap) => gap.tense === 'present-simple')), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.micro],
-  longStories: [...STORIES.filter((item) => !item.gaps.some((gap) => gap.tense === 'present-simple')), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.long],
-  errorChallenges: [...ERRORS.filter((item) => item.tense !== 'present-simple'), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.errors],
-  timelineChallenges: [...TIMELINES.filter((item) => !item.slots.some((slot) => slot.tense === 'present-simple')), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.timelines],
+  choiceChallenges: [...CHOICES.filter((item) => !item.tenses.some((id) => ENGLISH_EDITORIAL_FORMS.has(id))), ...ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.choices)],
+  microStories: [...MICROS.filter((item) => !item.gaps.some((gap) => ENGLISH_EDITORIAL_FORMS.has(gap.tense))), ...ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.micro)],
+  longStories: [...STORIES.filter((item) => !item.gaps.some((gap) => ENGLISH_EDITORIAL_FORMS.has(gap.tense))), ...ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.long)],
+  errorChallenges: [...ERRORS.filter((item) => !ENGLISH_EDITORIAL_FORMS.has(item.tense)), ...ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.errors)],
+  timelineChallenges: [...TIMELINES.filter((item) => !item.slots.some((slot) => ENGLISH_EDITORIAL_FORMS.has(slot.tense))), ...ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.timelines)],
   finalChallenges: [{
     id: 'en-final-workshop',
     title: 'The language workshop',
@@ -370,15 +376,19 @@ export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
     gaps: LEGACY_FINAL_ROWS.map((row, index) => ({ id: `en-final-gap-${index + 1}`, tenseId: row.formId, tense: ENGLISH_FORMS.find((form) => form.id === row.formId)?.label ?? row.formId, answerCardId: `en-final-card-${index + 1}` })),
     cards: [...legacyFinalAnswers.slice(7), ...legacyFinalAnswers.slice(0, 7)],
     explanation: 'The file moves from current routines through past background and future plans, then closes with conditional alternatives and an instruction.',
-  }, {
-    id: 'en-final-present-simple-editorial',
-    title: 'Present simple field file',
-    instruction: 'Open each independent scene and choose its verb form from four plausible candidates.',
-    segments: new Array(ENGLISH_PRESENT_SIMPLE_EDITORIAL.finalGaps.length + 1).fill(''),
-    gaps: ENGLISH_PRESENT_SIMPLE_EDITORIAL.finalGaps,
-    cards: ENGLISH_PRESENT_SIMPLE_EDITORIAL.finalCards,
-    explanation: 'Each scene independently tests a routine, fact, process or schedule; no answer depends on another gap.',
-  }],
+  }, ...Array.from({ length: 10 }, (_, index) => {
+    const gaps = ENGLISH_EDITORIAL_PACKS.map((pack) => pack.finalGaps[index])
+    const candidateIds = new Set(gaps.flatMap((gap) => gap.candidateCardIds ?? []))
+    return {
+      id: `en-final-editorial-${index + 1}`,
+      title: `Aspect field file · ${index + 1}`,
+      instruction: 'Open each independent scene and choose its verb form from four plausible candidates.',
+      segments: new Array(gaps.length + 1).fill(''),
+      gaps,
+      cards: ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.finalCards.filter((card) => candidateIds.has(card.id))),
+      explanation: 'Each scene independently supplies the time and aspect evidence needed for one closed decision.',
+    }
+  })],
   copy: {
     languageName: 'Inglés', languageCode: 'en', eyebrow: 'Tense & structure quiz · A2–B2',
     title: 'The aspect control room',

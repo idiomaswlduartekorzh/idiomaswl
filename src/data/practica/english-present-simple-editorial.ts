@@ -34,7 +34,7 @@ const long: EnglishEditorialGapSeed[] = [
 ]
 
 const errors: EnglishEditorialErrorSeed[] = [
-  { title: 'The first café shift', pieces: [['Every morning Priya ', 'raise'], [' the shutters. Her brother ', 'checks'], [' the machines, and the baker ', 'brings']], after: ' fresh bread.', wrong: 0, answers: ['raises'], reason: 'the singular subject Priya requires raises' },
+  { title: 'The first café shift', pieces: [['Every morning Priya ', 'raises'], [' the shutters. Her brother ', 'checks'], [' the machines, and the baker ', 'bring']], after: ' fresh bread.', wrong: 2, answers: ['brings'], reason: 'the singular subject baker requires brings' },
   { title: 'Clinic reception', pieces: [['Dr. Hall ', 'reviews'], [' the list. The receptionist ', 'open'], [' the desk, and patients ', 'wait']], after: ' nearby.', wrong: 1, answers: ['opens'], reason: 'the singular subject receptionist requires opens' },
   { title: 'A scheduled tour', pieces: [['The museum ', 'opens'], [' at ten. The guide ', 'starts'], [' at ten thirty, and the visitors ', 'follows']], after: ' her upstairs.', wrong: 2, answers: ['follow'], reason: 'the plural subject visitors requires the base form follow' },
   { title: 'Leo’s morning ride', pieces: [['Leo ', 'leave'], [' home at seven. He ', 'meets'], [' Nina, and they ', 'cycle']], after: ' to school.', wrong: 0, answers: ['leaves'], reason: 'the singular subject Leo requires leaves' },
