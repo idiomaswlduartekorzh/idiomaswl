@@ -243,6 +243,21 @@ test('portugués brasileño distingue progresivo y futuro compuesto con contexto
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })
 
+test('alemán evalúa la unidad verbal completa y muestra anclas y tratamiento', async ({ page }) => {
+  await page.goto('/herramientas/quizes/aleman?forms=futur-zwei&level=3')
+  for (let level = 0; level < 6; level += 1) await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  await expect(page.getByText('Vor der Messe', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('Bis die Messe öffnet')
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+
+  await page.goto('/herramientas/quizes/aleman?forms=imperativ&level=3')
+  await expect(page.getByText('Pauls Kochschritte', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('Paul')
+
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
 test('parámetros y progreso local corruptos no rompen el quiz', async ({ page }) => {
   await page.goto('/herramientas/quizes/ingles?forms=no-existe&level=99')
   await expect(page.locator('#tense-selector-title')).toBeVisible()

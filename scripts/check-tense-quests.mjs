@@ -12,7 +12,7 @@ import { FRENCH_FUTUR_SIMPLE_EDITORIAL } from '../src/data/practica/french-futur
 import { FRENCH_FUTUR_ANTERIEUR_EDITORIAL } from '../src/data/practica/french-futur-anterieur-editorial.ts'
 import { FRENCH_CONDITIONNEL_PRESENT_EDITORIAL } from '../src/data/practica/french-conditionnel-present-editorial.ts'
 import { FRENCH_CONDITIONNEL_PASSE_EDITORIAL } from '../src/data/practica/french-conditionnel-passe-editorial.ts'
-import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
+import { GERMAN_EDITORIAL_PACKS, GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest-config.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
@@ -441,7 +441,6 @@ const portuguesePastConditionalContexts = [
 for (const context of portuguesePastConditionalContexts) assert(/(?:com|sem|se |mas |não |cancelad|negad|recusad|adiad|fechad|prazo curto|impedid|perdid|faltou)/i.test(context), `portuguese/condicional-passado: falta condición o resultado real explícito («${context}»)`)
 
 const GENERATED_CONFIGS = [
-  GERMAN_STRUCTURE_QUEST,
   RUSSIAN_STRUCTURE_QUEST,
   JAPANESE_STRUCTURE_QUEST,
   KOREAN_STRUCTURE_QUEST,
@@ -453,8 +452,41 @@ for (const config of GENERATED_CONFIGS) {
 
 validate(FRENCH_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(PORTUGUESE_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
+validate(GERMAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 
-const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
+for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
+  const formId = GERMAN_STRUCTURE_QUEST.forms[index].id
+  assert(pack.choices.length === 10 && pack.micro.length === 10, `german/${formId}: se requieren 10 decisiones y 10 microtextos`)
+  assert(pack.long.length === 10 && pack.long.every((item) => item.gaps.length === 3), `german/${formId}: se requieren 10 relatos conectados de tres huecos`)
+  assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `german/${formId}: se requieren 10 reparaciones de tres verbos`)
+  assert(pack.timelines.length === 10 && pack.finalGaps.length === 10, `german/${formId}: faltan secuencias o decisiones finales`)
+  for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido alemán heredado`)
+}
+
+const germanWrittenAnswers = (pack) => [...pack.micro, ...pack.long].flatMap((item) => item.gaps.flatMap((gap) => gap.answers))
+const germanCompositePatterns = [
+  [1, /\b(?:habe|hast|hat|haben|habt)$/i], [2, /\b(?:bin|bist|ist|sind|seid)$/i],
+  [4, /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/i], [5, /\b(?:werde|wirst|wird|werden|werdet)$/i],
+  [6, /\b(?:werde|wirst|wird|werden|werdet)$/i], [7, /\b(?:würde|würdest|würden|würdet)$/i],
+  [8, /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/i],
+]
+for (const [index, pattern] of germanCompositePatterns) for (const answer of germanWrittenAnswers(GERMAN_EDITORIAL_PACKS[index])) assert(pattern.test(answer), `german/${GERMAN_STRUCTURE_QUEST.forms[index].id}: la respuesta no contiene la unidad verbal completa («${answer}»)`)
+
+const germanFutureTwoContexts = [
+  ...GERMAN_EDITORIAL_PACKS[6].micro.map((item) => item.segments.join(' ')),
+  ...GERMAN_EDITORIAL_PACKS[6].long.map((item) => item.segments.join(' ')),
+  ...GERMAN_EDITORIAL_PACKS[6].finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+]
+for (const context of germanFutureTwoContexts) assert(/(?:bis|wenn|bevor|um |bei tagesanbruch|am 31\.|am freitag|vor sonnenuntergang|vor der|vor dem)/i.test(context), `german/futur-zwei: falta plazo o segundo punto futuro («${context}»)`)
+
+const germanImperativeContexts = [
+  ...GERMAN_EDITORIAL_PACKS[9].micro.map((item) => item.segments.join(' ')),
+  ...GERMAN_EDITORIAL_PACKS[9].long.map((item) => item.segments.join(' ')),
+  ...GERMAN_EDITORIAL_PACKS[9].finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+]
+for (const context of germanImperativeContexts) assert(/(?:Paul|Frau|Herr|Kinder|Spieler|Nora|Lea|Amir|Gäste|Ihr|Mara und Tom|Meine Damen)/i.test(context), `german/imperativ: falta destinatario visible («${context}»)`)
+
+const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, GERMAN_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
 assert(new Set(allConfigs.map((config) => config.storageKey)).size === allConfigs.length, 'los storageKey deben ser únicos por idioma')
 assert(allConfigs.every((config) => /-v\d+$/.test(config.storageKey)), 'cada storageKey debe declarar una versión de esquema')
 

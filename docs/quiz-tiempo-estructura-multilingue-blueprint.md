@@ -36,6 +36,14 @@ declara su valor de registro frente a `ir + infinitivo`; el mais-que-perfeito y 
 exigen otro marco temporal; el condicional passado exige condición o resultado real visible. La
 configuración activa no importa la factoría heredada.
 
+Actualización alemana (29 de agosto de 2026): las diez formas usan diez bancos editoriales por
+nivel y la ruta pública importa `german-structure-quest-config.ts`. Los compuestos exigen la
+unidad verbal completa, incluso cuando el orden alemán separaría sus piezas en una oración
+principal; por eso los huecos evaluables usan contextos donde la respuesta puede escribirse sin
+palabras congeladas. Perfekt distingue `haben` y `sein`, Plusquamperfekt y Futur II exigen dos
+planos temporales, Futur I se reserva para predicción o compromiso explícito y cada imperativo
+muestra si la persona destinataria requiere `du`, `ihr` o `Sie`.
+
 ## Principio de producto
 
 No se traduce una lista inglesa de “tiempos”. Cada idioma selecciona las oposiciones que un

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema'
 import TenseQuestEngine from '@/components/practica/TenseQuestEngine'
-import { GERMAN_STRUCTURE_QUEST } from '@/data/practica/german-structure-quest'
+import { GERMAN_STRUCTURE_QUEST } from '@/data/practica/german-structure-quest-config'
 
 const URL = 'https://www.idiomaswl.com/herramientas/quizes/aleman'
 export const metadata: Metadata = {

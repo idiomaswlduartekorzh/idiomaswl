@@ -1,5 +1,7 @@
 import { createStructureQuest, type FinalRow, type StructureSeed } from './create-structure-quest.ts'
 
+// Contenido heredado. La ruta pública usa german-structure-quest-config.ts y sus bancos editoriales auditados.
+
 export const GERMAN_FORMS = [
   { id: 'praesens', label: 'Präsens', group: 'Gegenwart' },
   { id: 'perfekt-haben', label: 'Perfekt mit haben', group: 'Vergangenheit' },

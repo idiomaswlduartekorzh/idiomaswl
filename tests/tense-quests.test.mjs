@@ -3,7 +3,7 @@ import test from 'node:test'
 
 import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest-config.ts'
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest-config.ts'
-import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
+import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest-config.ts'
 import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
@@ -237,4 +237,29 @@ test('Brazilian Portuguese final dossiers are fresh, autonomous and balanced', (
     }
   }
   assert.ok(Math.max(...answerPositions) - Math.min(...answerPositions) <= 1, answerPositions.join('/'))
+})
+
+test('German exposes ten editorial challenges per form and level', () => {
+  for (const form of GERMAN_STRUCTURE_QUEST.forms) {
+    const id = form.id
+    assert.equal(GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(id)).length, 10, `${id}/choice`)
+    assert.equal(GERMAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/micro`)
+    assert.equal(GERMAN_STRUCTURE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/long`)
+    assert.equal(GERMAN_STRUCTURE_QUEST.errorChallenges.filter((item) => item.tense === id).length, 10, `${id}/error`)
+    assert.equal(GERMAN_STRUCTURE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length, 10, `${id}/timeline`)
+    assert.equal(GERMAN_STRUCTURE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length, 10, `${id}/final`)
+  }
+})
+
+test('German final dossiers are autonomous and balance the four answer positions', () => {
+  const positions = [0, 0, 0, 0]
+  for (const form of GERMAN_STRUCTURE_QUEST.forms) {
+    const finals = GERMAN_STRUCTURE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id))
+    assert.equal(new Set(finals.map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)).size, 10, form.id)
+    for (const gap of finals) {
+      assert.equal(gap.candidateCardIds?.length, 4, gap.id)
+      positions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
+    }
+  }
+  assert.ok(Math.max(...positions) - Math.min(...positions) <= 1, positions.join('/'))
 })
