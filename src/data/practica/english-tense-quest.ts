@@ -11,9 +11,11 @@ import { ENGLISH_PRESENT_PERFECT_EDITORIAL } from './english-present-perfect-edi
 import { ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL } from './english-present-perfect-continuous-editorial.ts'
 import { ENGLISH_PAST_SIMPLE_EDITORIAL } from './english-past-simple-editorial.ts'
 import { ENGLISH_PAST_CONTINUOUS_EDITORIAL } from './english-past-continuous-editorial.ts'
+import { ENGLISH_PAST_PERFECT_EDITORIAL } from './english-past-perfect-editorial.ts'
+import { ENGLISH_PAST_PERFECT_CONTINUOUS_EDITORIAL } from './english-past-perfect-continuous-editorial.ts'
 
-const ENGLISH_EDITORIAL_PACKS = [ENGLISH_PRESENT_SIMPLE_EDITORIAL, ENGLISH_PRESENT_CONTINUOUS_EDITORIAL, ENGLISH_PRESENT_PERFECT_EDITORIAL, ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_PAST_SIMPLE_EDITORIAL, ENGLISH_PAST_CONTINUOUS_EDITORIAL]
-const ENGLISH_EDITORIAL_FORMS = new Set<EnglishFormId>(['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous'])
+const ENGLISH_EDITORIAL_PACKS = [ENGLISH_PRESENT_SIMPLE_EDITORIAL, ENGLISH_PRESENT_CONTINUOUS_EDITORIAL, ENGLISH_PRESENT_PERFECT_EDITORIAL, ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_PAST_SIMPLE_EDITORIAL, ENGLISH_PAST_CONTINUOUS_EDITORIAL, ENGLISH_PAST_PERFECT_EDITORIAL, ENGLISH_PAST_PERFECT_CONTINUOUS_EDITORIAL]
+const ENGLISH_EDITORIAL_FORMS = new Set<EnglishFormId>(['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous'])
 
 export const ENGLISH_FORMS = [
   { id: 'present-simple', label: 'Present simple', group: 'Present' },

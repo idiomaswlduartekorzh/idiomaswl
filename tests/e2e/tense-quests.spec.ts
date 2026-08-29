@@ -128,6 +128,21 @@ test('los presentes ingleses usan diez bancos editoriales y relatos conectados',
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })
 
+test('los pasados perfectos ingleses muestran dos planos temporales explícitos', async ({ page }) => {
+  await page.goto('/herramientas/quizes/ingles?forms=past-perfect&level=3')
+
+  for (let level = 0; level < 6; level += 1) {
+    await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  }
+  await expect(page.getByText('Before the conference opened', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('before the doors opened')
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.getByText(/By the time the nurse arrived/)).toBeVisible()
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
 test('un estudiante puede cerrar los 6 niveles sin recibir corrección anticipada', async ({ page }) => {
   await reset(page, 'frances')
   await configureFirstForm(page)
