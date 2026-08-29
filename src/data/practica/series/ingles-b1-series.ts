@@ -378,7 +378,7 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What is at stake on Friday?',
-        ['Hand in the offer before the agent sells', 'Close the café', 'Sign with the council'],
+        ['Hand in the offer', 'Close the café', 'Sign with council'],
         0,
         'Maya says the agent will sell if they miss Friday.',
       ),
@@ -433,7 +433,7 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What are they talking about?',
-        ['What they would do if they owned the place', 'Selling the business', 'Finding a partner'],
+        ['Their possible plans', 'Selling the business', 'Finding a partner'],
         0,
         'They use hypotheses: “If I had,” “if I were,” and “if we lost.”',
       ),
@@ -488,7 +488,7 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What are they organizing?',
-        ['Jobs before the agent visits', 'A protest', 'Monday closing'],
+        ['Documents', 'A protest', 'Monday closing'],
         0,
         'They discuss documents, opening, the map, and what they can promise.',
       ),
@@ -603,7 +603,7 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
         'Leo says the plan “is now on a bank desk.”',
       ),
       details: [
-        q('Who answered at the bank?', ['The woman who visited in May', 'The director', 'Nobody'], 0, 'Maya says it was the woman “who visited us in May.”'),
+        q('Who answered at the bank?', ['The woman from May', 'The director', 'Nobody'], 0, 'Maya says it was the woman “who visited us in May.”'),
         q('What did she say about the file?', ['Papers were missing', 'It was the most complete', 'It arrived late'], 1, 'Maya says it was “the most complete she had seen.”'),
         q('What does the council letter mention?', ['The price', 'The sale date', 'The library agreement'], 2, 'Mrs. Ruiz says: “It mentions the library agreement.”'),
       ],
@@ -770,7 +770,7 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       details: [
         q('What do banks think, according to Ana?', ['The biggest offer is safest', 'The street decides', 'They should wait'], 0, 'Ana says: “the biggest one is always the safest one.”'),
         q('What did the bank woman say about the file?', ['It arrived late', 'It was the year’s most complete', 'It missed a signature'], 1, 'Maya says it is “the most complete file.”'),
-        q('What does Ana call the strongest argument?', ['The money raised', 'The grant', 'The corner is older than the company'], 2, 'Grandpa Sam says the corner is “older than the company.”'),
+        q('What does Ana call the strongest argument?', ['The money raised', 'The council grant', 'The corner is older'], 2, 'Grandpa Sam says the corner is “older than the company.”'),
       ],
       consolidation: q(
         'Complete: This is the ___ file of the year.',
@@ -824,7 +824,7 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       ),
       details: [
         q('How much is missing?', ['Twelve thousand', 'Two thousand', 'Twenty thousand'], 0, 'Ana says: “Twelve thousand.”'),
-        q('Where does most of the jar come from?', ['A loan', 'Several shops giving a little', 'The family'], 1, 'Leo says: “Several shops gave a little each.”'),
+        q('Where does most of the jar come from?', ['A bank loan', 'Several shops', 'The family'], 1, 'Leo says: “Several shops gave a little each.”'),
         q('What does Leo say about banks?', ['They will say yes', 'They need more signatures', 'None lend in five days'], 2, 'Leo says: “none of them lend in five days.”'),
       ],
       consolidation: q(
@@ -873,7 +873,7 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What changed this week?',
-        ['Their story appeared in the newspaper and there is a public meeting', 'The bank answered', 'The agent lowered the price'],
+        ['News story and meeting', 'The bank answered', 'Agent cut the price'],
         0,
         'The article came out on Sunday, and the meeting is at seven.',
       ),
@@ -934,8 +934,8 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       ),
       details: [
         q('When did the bank call?', ['At eight', 'At midnight', 'On Monday'], 0, 'Ana says: “The bank rang up at eight.”'),
-        q('What will Ana do?', ['Talk to the agent', 'Print the file before nine', 'Close the shop'], 1, 'Ana says: “I’ll print out the whole file… before nine.”'),
-        q('What will they do if rejected?', ['Sell furniture', 'Find another shop', 'Find out why and start over'], 2, 'Maya says: “we find out why, and we start over.”'),
+        q('What will Ana do?', ['Talk to the agent', 'Print the file', 'Close the shop'], 1, 'Ana says: “I’ll print out the whole file… before nine.”'),
+        q('What will they do if rejected?', ['Sell furniture', 'Find another shop', 'Start over'], 2, 'Maya says: “we find out why, and we start over.”'),
       ],
       consolidation: q(
         'Complete: Don’t ___ now, we’re almost there.',
@@ -1099,8 +1099,8 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       ),
       details: [
         q('What would Grandma complain about?', ['The coffee', 'The noise', 'The prices'], 0, 'Grandpa Sam says she would “complain about the coffee.”'),
-        q('What did she once tell Grandpa Sam?', ['Sell the shop', 'She wished they had kept the bakery open', 'Move away'], 1, 'He says she “wished we had kept the bakery open.”'),
-        q('What does Ana tell Maya?', ['She is right', 'Talk to Grandpa Sam', 'At fifteen she would not understand'], 2, 'Ana says Maya “wouldn’t have understood.”'),
+        q('What did she once tell Grandpa Sam?', ['Sell the shop', 'Keep the bakery open', 'Move away now'], 1, 'He says she “wished we had kept the bakery open.”'),
+        q('What does Ana tell Maya?', ['She is right', 'Talk to Grandpa Sam', 'Fifteen was too young'], 2, 'Ana says Maya “wouldn’t have understood.”'),
       ],
       consolidation: q(
         'Complete: I wish this week ___ over.',
@@ -1155,7 +1155,7 @@ export const ENGLISH_B1_SERIES: A1ListeningSeries = {
       details: [
         q('How is the amount completed?', ['With the council grant', 'With a new partner', 'With the coin jar'], 0, 'Maya says it is enough “with the council grant.”'),
         q('For how many years is the shop theirs?', ['Five', 'Fifteen', 'Thirty'], 1, 'Ana says it is theirs “for the next fifteen years.”'),
-        q('Why did the council move faster?', ['The press', 'The signatures', 'The library agreement was in the file'], 2, 'Mrs. Ruiz says: “the library agreement was in the file.”'),
+        q('Why did the council move faster?', ['The local press', 'The four hundred signatures', 'The library agreement'], 2, 'Mrs. Ruiz says: “the library agreement was in the file.”'),
       ],
       consolidation: q(
         'Complete: ___ the amount is smaller, it’s enough.',
