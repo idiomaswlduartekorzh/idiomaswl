@@ -1,5 +1,5 @@
 import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest.ts'
-import { ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
+import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { ITALIAN_DRILL_SERIES } from '../src/data/practica/italian-tense-intensive-bank.ts'
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
@@ -151,8 +151,28 @@ function assertItalianInferability() {
   assert(finire?.gaps[0].answers.includes('ha finito'), 'italian/passato-prossimo: «ha finito» debe aceptarse sin exigir «appena»')
 }
 
+function assertItalianEditorialContract() {
+  for (const formId of EDITORIAL_ITALIAN_FORMS) {
+    const micro = ITALIAN_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
+    const long = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
+    const errors = ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === formId)
+    const timelines = ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === formId))
+    for (const item of [...micro, ...long, ...errors, ...timelines]) {
+      assert(item.id.includes('-editorial-'), `${item.id}: una forma declarada editorial no puede usar un reto generado`)
+    }
+    assert(long.every((item) => !item.segments.join('').includes(' · ')), `${formId}: los relatos no pueden pegar escenas con «·»`)
+    assert(long.every((item) => item.gaps.length >= 3), `${formId}: cada relato largo debe integrar al menos tres decisiones conectadas`)
+    assert(errors.every((item) => item.chunks.length === 3), `${formId}: cada edición debe ofrecer tres verbos dentro de un mismo contexto`)
+    assert(timelines.every((item) => item.options.length === 3), `${formId}: cada secuencia debe contrastar tres eventos plausibles`)
+
+    const fingerprints = [...micro, ...long].map((item) => item.segments.join('___').toLocaleLowerCase('it'))
+    assert(new Set(fingerprints).size === fingerprints.length, `${formId}: hay textos repetidos entre niveles escritos`)
+  }
+}
+
 validate(ITALIAN_TENSE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 assertItalianInferability()
+assertItalianEditorialContract()
 validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 
 const GENERATED_CONFIGS = [

@@ -4,7 +4,7 @@ import test from 'node:test'
 import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest.ts'
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
-import { ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
+import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest.ts'
@@ -107,18 +107,19 @@ test('Italian final decisions use autonomous context and same-verb candidate set
   assert.ok(answerPositions[0] / answerPositions.reduce((sum, count) => sum + count, 0) < 0.3)
 })
 
-test('Italian passato prossimo uses a separate editorial bank for every discursive level', () => {
-  const micro = ITALIAN_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === 'passato-prossimo'))
-  const long = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === 'passato-prossimo'))
-  const errors = ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === 'passato-prossimo')
-  const timelines = ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === 'passato-prossimo'))
+test('each migrated Italian form uses independent editorial banks for every discursive level', () => {
+  for (const formId of EDITORIAL_ITALIAN_FORMS) {
+    const micro = ITALIAN_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
+    const long = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
+    const errors = ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === formId)
+    const timelines = ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === formId))
 
-  assert.ok(micro.every((item) => item.id.startsWith('it-pp-micro-editorial-')))
-  assert.ok(long.every((item) => item.id.startsWith('it-pp-long-editorial-')))
-  assert.ok(errors.every((item) => item.id.startsWith('it-pp-error-editorial-')))
-  assert.ok(timelines.every((item) => item.id.startsWith('it-pp-sequence-editorial-')))
-  assert.ok(long.every((item) => item.gaps.length === 3 && !item.segments.join('').includes(' · ')))
+    assert.ok([...micro, ...long, ...errors, ...timelines].every((item) => item.id.includes('-editorial-')), formId)
+    assert.ok(long.every((item) => item.gaps.length >= 3 && !item.segments.join('').includes(' · ')), formId)
+    assert.ok(errors.every((item) => item.chunks.length === 3), formId)
+    assert.ok(timelines.every((item) => item.options.length === 3), formId)
 
-  const fingerprints = [...micro, ...long].map((item) => item.segments.join('___').toLocaleLowerCase('it'))
-  assert.equal(new Set(fingerprints).size, fingerprints.length)
+    const fingerprints = [...micro, ...long].map((item) => item.segments.join('___').toLocaleLowerCase('it'))
+    assert.equal(new Set(fingerprints).size, fingerprints.length, formId)
+  }
 })

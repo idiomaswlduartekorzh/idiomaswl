@@ -5,6 +5,7 @@ import {
   PASSATO_PROSSIMO_MICRO,
   PASSATO_PROSSIMO_TIMELINES,
 } from './italian-passato-prossimo-editorial.ts'
+import { ITALIAN_PRESENTE_EDITORIAL } from './italian-presente-editorial.ts'
 import { LEVEL_META, TENSE_OPTIONS, type TenseId } from './italian-tense-quest.ts'
 import type { BankChallenge, ChoiceChallenge, ErrorChallenge, GapChallenge, TenseQuestConfig, TimelineChallenge } from './tense-quest-types'
 
@@ -13,6 +14,8 @@ const microStories: GapChallenge<TenseId>[] = []
 const longStories: GapChallenge<TenseId>[] = []
 const errorChallenges: ErrorChallenge<TenseId>[] = []
 const timelineChallenges: TimelineChallenge<TenseId>[] = []
+
+export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'passato-prossimo'])
 
 function placeCorrectAnswer(answer: string, alternatives: readonly string[], position: number) {
   const options = [...alternatives]
@@ -156,10 +159,26 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
   ],
   levels: LEVEL_META,
   choiceChallenges,
-  microStories: [...microStories.filter((item) => !item.gaps.some((gap) => gap.tense === 'passato-prossimo')), ...PASSATO_PROSSIMO_MICRO],
-  longStories: [...longStories.filter((item) => !item.gaps.some((gap) => gap.tense === 'passato-prossimo')), ...PASSATO_PROSSIMO_LONG],
-  errorChallenges: [...errorChallenges.filter((item) => item.tense !== 'passato-prossimo'), ...PASSATO_PROSSIMO_ERRORS],
-  timelineChallenges: [...timelineChallenges.filter((item) => !item.slots.some((slot) => slot.tense === 'passato-prossimo')), ...PASSATO_PROSSIMO_TIMELINES],
+  microStories: [
+    ...microStories.filter((item) => !item.gaps.some((gap) => EDITORIAL_ITALIAN_FORMS.has(gap.tense))),
+    ...ITALIAN_PRESENTE_EDITORIAL.micro,
+    ...PASSATO_PROSSIMO_MICRO,
+  ],
+  longStories: [
+    ...longStories.filter((item) => !item.gaps.some((gap) => EDITORIAL_ITALIAN_FORMS.has(gap.tense))),
+    ...ITALIAN_PRESENTE_EDITORIAL.long,
+    ...PASSATO_PROSSIMO_LONG,
+  ],
+  errorChallenges: [
+    ...errorChallenges.filter((item) => !EDITORIAL_ITALIAN_FORMS.has(item.tense)),
+    ...ITALIAN_PRESENTE_EDITORIAL.errors,
+    ...PASSATO_PROSSIMO_ERRORS,
+  ],
+  timelineChallenges: [
+    ...timelineChallenges.filter((item) => !item.slots.some((slot) => EDITORIAL_ITALIAN_FORMS.has(slot.tense))),
+    ...ITALIAN_PRESENTE_EDITORIAL.timelines,
+    ...PASSATO_PROSSIMO_TIMELINES,
+  ],
   finalChallenges,
   copy: {
     languageName: 'Italiano',
