@@ -256,6 +256,31 @@ assertItalianInferability()
 assertItalianEditorialContract()
 validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 
+const ENGLISH_EDITORIAL_FORMS = ['present-simple']
+for (const formId of ENGLISH_EDITORIAL_FORMS) {
+  const choice = ENGLISH_TENSE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(formId))
+  const micro = ENGLISH_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
+  const long = ENGLISH_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
+  const errors = ENGLISH_TENSE_QUEST.errorChallenges.filter((item) => item.tense === formId)
+  const timelines = ENGLISH_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === formId))
+  const final = ENGLISH_TENSE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === formId))
+  for (const [kind, items] of Object.entries({ choice, micro, long, errors, timelines, final })) {
+    assert(items.length === 10, `english/${formId}: el banco editorial ${kind} debe contener 10 ejercicios, no ${items.length}`)
+  }
+  for (const item of [...choice, ...micro, ...long, ...errors, ...timelines]) {
+    assert(item.id.includes('editorial'), `english/${formId}: sobrevivió contenido generado (${item.id})`)
+  }
+  for (const item of long) {
+    assert(item.gaps.length === 3, `${item.id}: el relato editorial debe tener tres huecos conectados`)
+    assert(!item.segments.join('').includes(' · '), `${item.id}: el relato conserva un separador de frases pegadas`)
+  }
+  for (const item of errors) assert(item.chunks.length === 3, `${item.id}: el laboratorio editorial debe mostrar tres verbos`)
+  for (const gap of final) {
+    assert(gap.candidateCardIds?.length === 4, `${gap.id}: el dossier final necesita cuatro candidatos cerrados`)
+    assert(Boolean(gap.standalone?.before.trim() && gap.standalone?.after.trim()), `${gap.id}: el dossier final necesita contexto autónomo completo`)
+  }
+}
+
 const GENERATED_CONFIGS = [
   FRENCH_STRUCTURE_QUEST,
   PORTUGUESE_STRUCTURE_QUEST,

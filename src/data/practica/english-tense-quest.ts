@@ -5,6 +5,7 @@ import type {
   TenseQuestConfig,
   TimelineChallenge,
 } from './tense-quest-types'
+import { ENGLISH_PRESENT_SIMPLE_EDITORIAL } from './english-present-simple-editorial.ts'
 
 export const ENGLISH_FORMS = [
   { id: 'present-simple', label: 'Present simple', group: 'Present' },
@@ -335,11 +336,12 @@ const FINAL_ROWS: { formId: EnglishFormId; lemma: string; before: string; after:
   { formId: 'imperative', lemma: 'take', before: 'Before you begin, please ', after: ' a seat and silence your phone.', answer: 'take' },
 ]
 
-const finalAnswers = FINAL_ROWS.map((row, index) => ({ id: `en-final-card-${index + 1}`, text: row.answer }))
+const LEGACY_FINAL_ROWS = FINAL_ROWS.filter((row) => row.formId !== 'present-simple')
+const legacyFinalAnswers = LEGACY_FINAL_ROWS.map((row, index) => ({ id: `en-final-card-${index + 1}`, text: row.answer }))
 
 export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
   id: 'english-tense-quest',
-  storageKey: 'wl-english-tense-quest-v2',
+  storageKey: 'wl-english-tense-quest-v3',
   forms: ENGLISH_FORMS,
   presets: [
     { label: 'Present', ids: ENGLISH_FORMS.filter((form) => form.group === 'Present').map((form) => form.id) },
@@ -355,19 +357,27 @@ export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
     { number: '05', title: 'Aspect map', short: 'Match functions', description: 'Match complete clauses to their temporal function.' },
     { number: '06', title: 'The workshop file', short: 'Final reconstruction', description: 'Rebuild a complete timeline from a closed word bank.' },
   ],
-  choiceChallenges: CHOICES,
-  microStories: MICROS,
-  longStories: STORIES,
-  errorChallenges: ERRORS,
-  timelineChallenges: TIMELINES,
+  choiceChallenges: [...CHOICES.filter((item) => !item.tenses.includes('present-simple')), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.choices],
+  microStories: [...MICROS.filter((item) => !item.gaps.some((gap) => gap.tense === 'present-simple')), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.micro],
+  longStories: [...STORIES.filter((item) => !item.gaps.some((gap) => gap.tense === 'present-simple')), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.long],
+  errorChallenges: [...ERRORS.filter((item) => item.tense !== 'present-simple'), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.errors],
+  timelineChallenges: [...TIMELINES.filter((item) => !item.slots.some((slot) => slot.tense === 'present-simple')), ...ENGLISH_PRESENT_SIMPLE_EDITORIAL.timelines],
   finalChallenges: [{
     id: 'en-final-workshop',
     title: 'The language workshop',
     instruction: 'Select a gap and then its card. Every card is used once.',
-    segments: [FINAL_ROWS[0].before, ...FINAL_ROWS.map((row, index) => `${row.after}${FINAL_ROWS[index + 1]?.before ?? ''}`)],
-    gaps: FINAL_ROWS.map((row, index) => ({ id: `en-final-gap-${index + 1}`, tenseId: row.formId, tense: ENGLISH_FORMS.find((form) => form.id === row.formId)?.label ?? row.formId, answerCardId: `en-final-card-${index + 1}` })),
-    cards: [...finalAnswers.slice(7), ...finalAnswers.slice(0, 7)],
+    segments: [LEGACY_FINAL_ROWS[0].before, ...LEGACY_FINAL_ROWS.map((row, index) => `${row.after}${LEGACY_FINAL_ROWS[index + 1]?.before ?? ''}`)],
+    gaps: LEGACY_FINAL_ROWS.map((row, index) => ({ id: `en-final-gap-${index + 1}`, tenseId: row.formId, tense: ENGLISH_FORMS.find((form) => form.id === row.formId)?.label ?? row.formId, answerCardId: `en-final-card-${index + 1}` })),
+    cards: [...legacyFinalAnswers.slice(7), ...legacyFinalAnswers.slice(0, 7)],
     explanation: 'The file moves from current routines through past background and future plans, then closes with conditional alternatives and an instruction.',
+  }, {
+    id: 'en-final-present-simple-editorial',
+    title: 'Present simple field file',
+    instruction: 'Open each independent scene and choose its verb form from four plausible candidates.',
+    segments: new Array(ENGLISH_PRESENT_SIMPLE_EDITORIAL.finalGaps.length + 1).fill(''),
+    gaps: ENGLISH_PRESENT_SIMPLE_EDITORIAL.finalGaps,
+    cards: ENGLISH_PRESENT_SIMPLE_EDITORIAL.finalCards,
+    explanation: 'Each scene independently tests a routine, fact, process or schedule; no answer depends on another gap.',
   }],
   copy: {
     languageName: 'Inglés', languageCode: 'en', eyebrow: 'Tense & structure quiz · A2–B2',
