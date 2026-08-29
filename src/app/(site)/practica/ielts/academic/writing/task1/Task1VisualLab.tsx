@@ -1,6 +1,8 @@
 'use client';
 
 import type { ReactElement } from 'react';
+import Task1ApprovedMapVisual from './Task1ApprovedMapVisual';
+import Task1ApprovedProcessVisual from './Task1ApprovedProcessVisual';
 
 type ChartKind = 'line' | 'bar' | 'pie' | 'table' | 'process' | 'map';
 
@@ -213,7 +215,8 @@ function ProcessIcon({ variant, x, y, color }: { variant: number; x: number; y: 
   return <g transform={`translate(${x} ${y})`}><path d="M13 7 H30 L34 13 V37 H9 V13Z" fill="#bfdbfe" stroke={color} strokeWidth="2" /><path d="M17 7 V14 H31" fill="none" stroke={color} strokeWidth="2" /><path d="M15 23 H29 M15 29 H29" stroke={color} strokeWidth="2" /></g>;
 }
 
-export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number }) {
+/** @deprecated Kept only as a readable record of the first code-drawn diagrams. */
+export function LegacyIELTSProcessDiagramVisual({ variant = 0 }: { variant?: number }) {
   const datasets = [
     { title: 'How plastic bottles are recycled', steps: [['Collection', 'Used bottles are collected from public bins.'], ['Sorting', 'Plastic is separated at a recycling centre.'], ['Washing', 'Bottles are cleaned before being cut into flakes.'], ['Melting', 'The flakes are heated into plastic pellets.'], ['Manufacturing', 'The pellets become new products.']] },
     { title: 'How coffee is prepared for sale', steps: [['Harvesting', 'Ripe cherries are picked from coffee plants.'], ['Drying', 'The cherries are spread out in the sun.'], ['Removing skins', 'The outer layers are removed from the fruit.'], ['Roasting', 'The beans are heated to the desired colour.'], ['Packaging', 'The beans are ground and packed for sale.']] },
@@ -273,7 +276,12 @@ export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number })
   );
 }
 
-export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
+export function IELTSProcessDiagramVisual({ variant = 0 }: { variant?: number }) {
+  return <Task1ApprovedProcessVisual variant={variant} />;
+}
+
+/** @deprecated Kept only as a readable record of the first code-drawn maps. */
+export function LegacyIELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
   type MapPosition = 'north-west' | 'north-east' | 'south-west' | 'south-east';
   const datasets = [
     { title: 'Town centre changes, 1990-2020', beforeLabel: '1990', afterLabel: '2020', before: ['Park', 'Factory', 'Small road', 'Car park'], after: ['Housing estate', 'School', 'Dual carriageway', 'Shopping centre'], positions: ['north-west', 'north-east', 'south-west', 'south-east'] as MapPosition[] },
@@ -364,6 +372,10 @@ export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
     </svg>
     </div>
   );
+}
+
+export function IELTSMapDiagramVisual({ variant = 0 }: { variant?: number }) {
+  return <Task1ApprovedMapVisual variant={variant} />;
 }
 
 export function IELTSMixedVisual({ variant = 0 }: { variant?: number }) {

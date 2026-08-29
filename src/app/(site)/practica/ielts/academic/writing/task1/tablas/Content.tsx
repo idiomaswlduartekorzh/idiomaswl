@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import Task1VisualPanel from '../Task1VisualPanel';
+import Task1BrandedVisualGallery from '../Task1BrandedVisualGallery';
 
 type Faq = {
   question: string;
@@ -309,6 +310,8 @@ export default function TablasContent({ faqs }: { faqs: Faq[] }) {
               ))}
             </div>
           </section>
+
+          <Task1BrandedVisualGallery kind="table" />
 
           <section aria-labelledby="practice-heading">
             <h2 id="practice-heading" style={{ fontSize: '1.35rem', letterSpacing: '-0.02em', margin: '1.5rem 0 0.45rem' }}>

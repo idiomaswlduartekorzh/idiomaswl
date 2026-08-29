@@ -278,7 +278,7 @@ export default function Task1HubPage() {
           </div>
         </section>
 
-        <section id="visual-types" className={styles.section} aria-label="Task 1 visual type guide"><Task1ChartTypeGuide /></section>
+        <section id="visual-types" className={styles.section} aria-label="Task 1 visual type guide"><Task1ChartTypeGuide showVisualPreviews /></section>
 
         <section className={styles.section} aria-labelledby="paragraph-toolkit">
           <div className={styles.sectionHeading}><p className={styles.kicker}>Path B · Paragraph toolkit</p><h2 id="paragraph-toolkit">Use a sub-skill to solve a paragraph decision</h2><p>Paragraphs are the response structure. These linked lessons are reusable tools for charts, tables, processes and maps.</p></div>
