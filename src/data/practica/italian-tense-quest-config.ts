@@ -9,6 +9,7 @@ import { ITALIAN_PRESENTE_EDITORIAL } from './italian-presente-editorial.ts'
 import { ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL } from './italian-present-progressive-editorial.ts'
 import { ITALIAN_IMPERFECT_PROGRESSIVE_EDITORIAL } from './italian-imperfect-progressive-editorial.ts'
 import { ITALIAN_IMPERFETTO_EDITORIAL } from './italian-imperfetto-editorial.ts'
+import { ITALIAN_PASSATO_REMOTO_EDITORIAL } from './italian-passato-remoto-editorial.ts'
 import { LEVEL_META, TENSE_OPTIONS, type TenseId } from './italian-tense-quest.ts'
 import type { BankChallenge, ChoiceChallenge, ErrorChallenge, GapChallenge, TenseQuestConfig, TimelineChallenge } from './tense-quest-types'
 
@@ -18,7 +19,7 @@ const longStories: GapChallenge<TenseId>[] = []
 const errorChallenges: ErrorChallenge<TenseId>[] = []
 const timelineChallenges: TimelineChallenge<TenseId>[] = []
 
-export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'presente-progressivo', 'passato-prossimo', 'imperfetto', 'imperfetto-progressivo'])
+export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'presente-progressivo', 'passato-prossimo', 'imperfetto', 'imperfetto-progressivo', 'passato-remoto'])
 
 function placeCorrectAnswer(answer: string, alternatives: readonly string[], position: number) {
   const options = [...alternatives]
@@ -168,6 +169,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL.micro,
     ...ITALIAN_IMPERFECT_PROGRESSIVE_EDITORIAL.micro,
     ...ITALIAN_IMPERFETTO_EDITORIAL.micro,
+    ...ITALIAN_PASSATO_REMOTO_EDITORIAL.micro,
     ...PASSATO_PROSSIMO_MICRO,
   ],
   longStories: [
@@ -176,6 +178,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL.long,
     ...ITALIAN_IMPERFECT_PROGRESSIVE_EDITORIAL.long,
     ...ITALIAN_IMPERFETTO_EDITORIAL.long,
+    ...ITALIAN_PASSATO_REMOTO_EDITORIAL.long,
     ...PASSATO_PROSSIMO_LONG,
   ],
   errorChallenges: [
@@ -184,6 +187,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL.errors,
     ...ITALIAN_IMPERFECT_PROGRESSIVE_EDITORIAL.errors,
     ...ITALIAN_IMPERFETTO_EDITORIAL.errors,
+    ...ITALIAN_PASSATO_REMOTO_EDITORIAL.errors,
     ...PASSATO_PROSSIMO_ERRORS,
   ],
   timelineChallenges: [
@@ -192,6 +196,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL.timelines,
     ...ITALIAN_IMPERFECT_PROGRESSIVE_EDITORIAL.timelines,
     ...ITALIAN_IMPERFETTO_EDITORIAL.timelines,
+    ...ITALIAN_PASSATO_REMOTO_EDITORIAL.timelines,
     ...PASSATO_PROSSIMO_TIMELINES,
   ],
   finalChallenges,
