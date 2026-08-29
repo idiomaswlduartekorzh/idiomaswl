@@ -13,7 +13,7 @@ import { FRENCH_FUTUR_ANTERIEUR_EDITORIAL } from '../src/data/practica/french-fu
 import { FRENCH_CONDITIONNEL_PRESENT_EDITORIAL } from '../src/data/practica/french-conditionnel-present-editorial.ts'
 import { FRENCH_CONDITIONNEL_PASSE_EDITORIAL } from '../src/data/practica/french-conditionnel-passe-editorial.ts'
 import { GERMAN_EDITORIAL_PACKS, GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest-config.ts'
-import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
+import { JAPANESE_EDITORIAL_PACKS, JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest-config.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
 import { PORTUGUESE_PRESENT_EDITORIAL } from '../src/data/practica/portuguese-present-editorial.ts'
@@ -441,7 +441,6 @@ const portuguesePastConditionalContexts = [
 for (const context of portuguesePastConditionalContexts) assert(/(?:com|sem|se |mas |não |cancelad|negad|recusad|adiad|fechad|prazo curto|impedid|perdid|faltou)/i.test(context), `portuguese/condicional-passado: falta condición o resultado real explícito («${context}»)`)
 
 const GENERATED_CONFIGS = [
-  JAPANESE_STRUCTURE_QUEST,
   KOREAN_STRUCTURE_QUEST,
 ]
 
@@ -453,6 +452,7 @@ validate(FRENCH_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, t
 validate(PORTUGUESE_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(GERMAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(RUSSIAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
+validate(JAPANESE_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 
 for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
   const formId = GERMAN_STRUCTURE_QUEST.forms[index].id
@@ -512,7 +512,30 @@ for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[7])) assert(/(?:п
 for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[8])) assert(/(?:до |после|перед|когда|сначала|затем|потом|сразу|один|конкрет|в конце|у ворот|ошибка|в этой|на карте|страниц)/i.test(context), `russian/imperative-perfective: falta resultado único («${context}»)`)
 for (const answer of russianWrittenAnswers(RUSSIAN_EDITORIAL_PACKS[9])) assert(/(?:ть|ти|чь)(?:ся)?$/u.test(answer), `russian/infinitive-aspect: la respuesta no es infinitivo («${answer}»)`)
 
-const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, GERMAN_STRUCTURE_QUEST, RUSSIAN_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
+for (const [index, pack] of JAPANESE_EDITORIAL_PACKS.entries()) {
+  const formId = JAPANESE_STRUCTURE_QUEST.forms[index].id
+  assert(pack.choices.length === 10 && pack.micro.length === 10, `japanese/${formId}: se requieren 10 decisiones y 10 microtextos`)
+  assert(pack.long.length === 10 && pack.long.every((item) => item.gaps.length === 3), `japanese/${formId}: se requieren 10 relatos conectados de tres huecos`)
+  assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `japanese/${formId}: se requieren 10 reparaciones de tres verbos`)
+  assert(pack.timelines.length === 10 && pack.finalGaps.length === 10, `japanese/${formId}: faltan secuencias o decisiones finales`)
+  for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido japonés heredado`)
+}
+const japaneseContexts = (pack) => [...pack.micro.map((item) => item.segments.join(' ')), ...pack.long.map((item) => item.segments.join(' ')), ...pack.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`)]
+const japaneseWrittenGaps = (pack) => [...pack.micro, ...pack.long].flatMap((item) => item.gaps)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[0]).flatMap((gap) => gap.answers)) assert(/ます$/u.test(answer) && !/ています$/u.test(answer), `japanese/nonpast-affirmative: forma no-pasada inválida («${answer}»)`)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[1]).flatMap((gap) => gap.answers)) assert(/ません$/u.test(answer), `japanese/nonpast-negative: falta ません («${answer}»)`)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[2]).flatMap((gap) => gap.answers)) assert(/ました$/u.test(answer), `japanese/past-affirmative: falta ました («${answer}»)`)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[3]).flatMap((gap) => gap.answers)) assert(/ませんでした$/u.test(answer), `japanese/past-negative: falta ませんでした («${answer}»)`)
+for (const context of japaneseContexts(JAPANESE_EDITORIAL_PACKS[4])) assert(/(?:今|現在|今月|今週|今学期|生中継|目の前|進行|この時間)/u.test(context), `japanese/progressive: falta marco de actividad en curso («${context}»)`)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[4]).flatMap((gap) => gap.answers)) assert(/(?:て|で)います$/u.test(answer), `japanese/progressive: falta construcción completa («${answer}»)`)
+for (const context of japaneseContexts(JAPANESE_EDITORIAL_PACKS[5])) assert(/(?:寒|暗|明る|動きません|入れません|事故|後|現在|今|まだ|まま|雨|閉館|故障|準備|停電|冬|開店前|路肩|三列|床|滑り)/u.test(context), `japanese/result-state: falta evidencia del estado resultante («${context}»)`)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[5]).flatMap((gap) => gap.answers)) assert(answer.length > 4 && /(?:て|で)います$/u.test(answer), `japanese/result-state: la respuesta debe contener la construcción completa («${answer}»)`)
+for (const gap of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[6])) assert(gap.answers.length === 2 && gap.answers.every((answer) => /こと(?:が)?あり/u.test(answer)), `japanese/experience: faltan variantes normativas completas (${gap.id})`)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[7]).flatMap((gap) => gap.answers)) assert(/(?:つもり|予定)です$/u.test(answer), `japanese/plan-intention: falta construcción completa («${answer}»)`)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[8]).flatMap((gap) => gap.answers)) assert(answer.length > 2 && /たら$/u.test(answer), `japanese/tara: falta forma condicional completa («${answer}»)`)
+for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[9]).flatMap((gap) => gap.answers)) assert(/ください$/u.test(answer), `japanese/request-prohibition: falta función completa («${answer}»)`)
+
+const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, GERMAN_STRUCTURE_QUEST, RUSSIAN_STRUCTURE_QUEST, JAPANESE_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
 assert(new Set(allConfigs.map((config) => config.storageKey)).size === allConfigs.length, 'los storageKey deben ser únicos por idioma')
 assert(allConfigs.every((config) => /-v\d+$/.test(config.storageKey)), 'cada storageKey debe declarar una versión de esquema')
 

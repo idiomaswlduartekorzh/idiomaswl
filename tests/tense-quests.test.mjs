@@ -5,7 +5,7 @@ import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest-co
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest-config.ts'
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest-config.ts'
 import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
-import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
+import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest-config.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest-config.ts'
@@ -56,7 +56,7 @@ test('declared normative variants survive into every written-answer level', () =
   const englishNegative = ENGLISH_TENSE_QUEST.microStories.find((item) => item.gaps.some((gap) => gap.tense === 'present-perfect' && gap.verb === 'not receive'))
   assert.deepEqual(englishNegative?.gaps.find((gap) => gap.verb === 'not receive')?.answers, ['have not received', "haven't received"])
 
-  const japaneseExperience = JAPANESE_STRUCTURE_QUEST.microStories.find((item) => item.id === 'japanese-structure-quest-micro-experience-1')
+  const japaneseExperience = JAPANESE_STRUCTURE_QUEST.microStories.find((item) => item.gaps.some((gap) => gap.tense === 'experience'))
   assert.ok(japaneseExperience?.gaps[0].answers.includes('行ったことあります'))
 
   const russianYo = RUSSIAN_STRUCTURE_QUEST.microStories.find((item) => item.gaps.some((gap) => gap.verb === 'идти'))
@@ -280,6 +280,28 @@ test('Russian final dossiers are autonomous and balanced', () => {
   const positions = [0, 0, 0, 0]
   for (const form of RUSSIAN_STRUCTURE_QUEST.forms) {
     const finals = RUSSIAN_STRUCTURE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id))
+    assert.equal(new Set(finals.map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)).size, 10, form.id)
+    for (const gap of finals) positions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
+  }
+  assert.ok(Math.max(...positions) - Math.min(...positions) <= 1, positions.join('/'))
+})
+
+test('Japanese exposes ten editorial challenges per contrast and level', () => {
+  for (const form of JAPANESE_STRUCTURE_QUEST.forms) {
+    const id = form.id
+    assert.equal(JAPANESE_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(id)).length, 10, `${id}/choice`)
+    assert.equal(JAPANESE_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/micro`)
+    assert.equal(JAPANESE_STRUCTURE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/long`)
+    assert.equal(JAPANESE_STRUCTURE_QUEST.errorChallenges.filter((item) => item.tense === id).length, 10, `${id}/error`)
+    assert.equal(JAPANESE_STRUCTURE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length, 10, `${id}/timeline`)
+    assert.equal(JAPANESE_STRUCTURE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length, 10, `${id}/final`)
+  }
+})
+
+test('Japanese final dossiers are autonomous and balanced', () => {
+  const positions = [0, 0, 0, 0]
+  for (const form of JAPANESE_STRUCTURE_QUEST.forms) {
+    const finals = JAPANESE_STRUCTURE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id))
     assert.equal(new Set(finals.map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)).size, 10, form.id)
     for (const gap of finals) positions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
   }

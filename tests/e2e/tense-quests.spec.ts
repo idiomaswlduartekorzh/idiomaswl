@@ -276,6 +276,23 @@ test('ruso distingue proceso, contrafactualidad pasada y selección de aspecto',
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })
 
+test('japonés separa progresión y estado resultante con construcciones completas', async ({ page }) => {
+  await page.goto('/herramientas/quizes/japones?forms=progressive&level=3')
+  for (let level = 0; level < 6; level += 1) await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  await expect(page.getByText('生放送の準備中', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('今')
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+
+  await page.goto('/herramientas/quizes/japones?forms=result-state&level=3')
+  await expect(page.getByText('閉館後の博物館', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('閉館後')
+
+  await page.goto('/herramientas/quizes/japones?forms=experience&level=2')
+  await expect(page.getByText('京都の経験', { exact: true })).toBeVisible()
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
 test('parámetros y progreso local corruptos no rompen el quiz', async ({ page }) => {
   await page.goto('/herramientas/quizes/ingles?forms=no-existe&level=99')
   await expect(page.locator('#tense-selector-title')).toBeVisible()

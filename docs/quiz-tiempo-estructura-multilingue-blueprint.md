@@ -52,6 +52,13 @@ la meta comunicativa del aspecto; y la selección de infinitivo contrasta fase c
 guardián conserva variantes normativas con y sin `ё`, exige la construcción analítica futura
 completa y rechaza escenas sin motivación aspectual.
 
+Actualización japonesa (29 de agosto de 2026): los diez contrastes usan diez bancos editoriales
+por nivel y la ruta pública importa `japanese-structure-quest-config.ts`. Se conserva la categoría
+honesta de no-pasado; `〜ています` progresivo exige actividad en curso y el valor resultativo
+exige evidencia posterior al cambio. Experiencia acepta las variantes normativas con y sin `が`,
+pero siempre solicita la construcción completa. `つもり` y `予定`, `たら`, petición y prohibición
+se validan por su función comunicativa y no por una sílaba fija fuera del hueco.
+
 ## Principio de producto
 
 No se traduce una lista inglesa de “tiempos”. Cada idioma selecciona las oposiciones que un

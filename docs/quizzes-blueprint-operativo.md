@@ -46,6 +46,7 @@ japonés y coreano. La familia de pronombres inicia con un piloto italiano bajo
 | `src/data/practica/portuguese-structure-quest-config.ts` | Configuración editorial de portugués brasileño y sus contrastes de registro |
 | `src/data/practica/german-structure-quest-config.ts` | Configuración alemana editorial; preserva unidad verbal, orden, auxiliar y tratamiento |
 | `src/data/practica/russian-structure-quest-config.ts` | Configuración rusa editorial; valida aspecto, anclas de `бы`, imperativo e infinitivo |
+| `src/data/practica/japanese-structure-quest-config.ts` | Configuración japonesa editorial; preserva no-pasado, valores de `ています` y función comunicativa |
 | `src/data/practica/english-tense-quest-config.ts` | Configuración editorial exclusiva de inglés; no importa el generador heredado |
 | `src/data/practica/italian-tense-quest.ts` | Banco editorial de italiano |
 | `src/data/practica/italian-tense-quest-config.ts` | Adaptación del banco italiano al motor común |

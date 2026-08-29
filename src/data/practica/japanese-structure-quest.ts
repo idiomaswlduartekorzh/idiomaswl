@@ -1,5 +1,7 @@
 import { createStructureQuest, type FinalRow, type StructureSeed } from './create-structure-quest.ts'
 
+// Contenido heredado. La ruta pública usa japanese-structure-quest-config.ts y bancos editoriales auditados.
+
 export const JAPANESE_FORMS = [
   { id: 'nonpast-affirmative', label: '非過去・肯定（ます）', group: '時制' },
   { id: 'nonpast-negative', label: '非過去・否定（ません）', group: '時制' },

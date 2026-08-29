@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema'
 import TenseQuestEngine from '@/components/practica/TenseQuestEngine'
-import { JAPANESE_STRUCTURE_QUEST } from '@/data/practica/japanese-structure-quest'
+import { JAPANESE_STRUCTURE_QUEST } from '@/data/practica/japanese-structure-quest-config'
 
 const URL = 'https://www.idiomaswl.com/herramientas/quizes/japones'
 export const metadata: Metadata = {

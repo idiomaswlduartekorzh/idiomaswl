@@ -6,7 +6,7 @@ import {
   type StructureEditorialMicroSeed,
   type StructureEditorialSequenceSeed,
 } from './editorial-structure-builder.ts'
-import type { JapaneseFormId } from './japanese-structure-quest.ts'
+import type { JapaneseFormId } from './japanese-structure-quest-config.ts'
 
 export type JapaneseEditorialMicroSeed = StructureEditorialMicroSeed
 export type JapaneseEditorialGapSeed = StructureEditorialGapSeed
