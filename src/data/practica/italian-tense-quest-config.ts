@@ -6,6 +6,7 @@ import {
   PASSATO_PROSSIMO_TIMELINES,
 } from './italian-passato-prossimo-editorial.ts'
 import { ITALIAN_PRESENTE_EDITORIAL } from './italian-presente-editorial.ts'
+import { ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL } from './italian-present-progressive-editorial.ts'
 import { LEVEL_META, TENSE_OPTIONS, type TenseId } from './italian-tense-quest.ts'
 import type { BankChallenge, ChoiceChallenge, ErrorChallenge, GapChallenge, TenseQuestConfig, TimelineChallenge } from './tense-quest-types'
 
@@ -15,7 +16,7 @@ const longStories: GapChallenge<TenseId>[] = []
 const errorChallenges: ErrorChallenge<TenseId>[] = []
 const timelineChallenges: TimelineChallenge<TenseId>[] = []
 
-export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'passato-prossimo'])
+export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'presente-progressivo', 'passato-prossimo'])
 
 function placeCorrectAnswer(answer: string, alternatives: readonly string[], position: number) {
   const options = [...alternatives]
@@ -162,21 +163,25 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
   microStories: [
     ...microStories.filter((item) => !item.gaps.some((gap) => EDITORIAL_ITALIAN_FORMS.has(gap.tense))),
     ...ITALIAN_PRESENTE_EDITORIAL.micro,
+    ...ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL.micro,
     ...PASSATO_PROSSIMO_MICRO,
   ],
   longStories: [
     ...longStories.filter((item) => !item.gaps.some((gap) => EDITORIAL_ITALIAN_FORMS.has(gap.tense))),
     ...ITALIAN_PRESENTE_EDITORIAL.long,
+    ...ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL.long,
     ...PASSATO_PROSSIMO_LONG,
   ],
   errorChallenges: [
     ...errorChallenges.filter((item) => !EDITORIAL_ITALIAN_FORMS.has(item.tense)),
     ...ITALIAN_PRESENTE_EDITORIAL.errors,
+    ...ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL.errors,
     ...PASSATO_PROSSIMO_ERRORS,
   ],
   timelineChallenges: [
     ...timelineChallenges.filter((item) => !item.slots.some((slot) => EDITORIAL_ITALIAN_FORMS.has(slot.tense))),
     ...ITALIAN_PRESENTE_EDITORIAL.timelines,
+    ...ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL.timelines,
     ...PASSATO_PROSSIMO_TIMELINES,
   ],
   finalChallenges,
