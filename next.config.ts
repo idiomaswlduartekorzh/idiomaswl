@@ -219,6 +219,22 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // ── Alias históricos de DELF ─────────────────────────────────────────
+      // Search Console detectó estas dos rutas como soft 404: el segmento
+      // dinámico [exam] no las reconoce y la página de error terminaba servida
+      // con HTTP 200. Ambas apuntaban a la misma familia de examen que hoy vive
+      // en /examenes/delf-dalf, así que preservamos su señal con un 308.
+      {
+        source: '/examenes/delf-b1',
+        destination: '/examenes/delf-dalf',
+        permanent: true,
+      },
+      {
+        source: '/examenes/delf-b2',
+        destination: '/examenes/delf-dalf',
+        permanent: true,
+      },
+
       // Alemán A1
       g('aleman', 'a1', 'acusativo', 'akkusativ'),
       g('aleman', 'a1', 'articulos-der-die-das', 'artikel'),

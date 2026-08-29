@@ -142,6 +142,19 @@ test('la auditoría de producción protege la paridad FAQ de TOEFL Reading', () 
   assert.match(productionAudit, /practica\\\/toefl\\\/reading/);
 });
 
+test('los alias históricos de DELF no vuelven a convertirse en soft 404', () => {
+  const nextConfig = readFileSync('next.config.ts', 'utf8');
+
+  for (const level of ['b1', 'b2']) {
+    const source = `source: '/examenes/delf-${level}'`;
+    const start = nextConfig.indexOf(source);
+    assert.notEqual(start, -1, `Falta el redirect histórico de DELF ${level.toUpperCase()}`);
+    const redirect = nextConfig.slice(start, start + 180);
+    assert.match(redirect, /destination: '\/examenes\/delf-dalf'/);
+    assert.match(redirect, /permanent: true/);
+  }
+});
+
 test('las plantillas de gramática no presentan secciones editoriales como FAQPage', () => {
   const practiceRoot = 'src/app/(site)/practica';
   const templates = readdirSync(practiceRoot, { recursive: true, encoding: 'utf8' })
