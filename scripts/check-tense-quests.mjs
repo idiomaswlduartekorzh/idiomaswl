@@ -21,6 +21,9 @@ import { PORTUGUESE_PROGRESSIVE_EDITORIAL } from '../src/data/practica/portugues
 import { PORTUGUESE_PRETERITE_PERFECT_EDITORIAL } from '../src/data/practica/portuguese-preterite-perfect-editorial.ts'
 import { PORTUGUESE_PRETERITE_IMPERFECT_EDITORIAL } from '../src/data/practica/portuguese-preterite-imperfect-editorial.ts'
 import { PORTUGUESE_PLUPERFECT_EDITORIAL } from '../src/data/practica/portuguese-pluperfect-editorial.ts'
+import { PORTUGUESE_NEAR_FUTURE_EDITORIAL } from '../src/data/practica/portuguese-near-future-editorial.ts'
+import { PORTUGUESE_FORMAL_FUTURE_EDITORIAL } from '../src/data/practica/portuguese-formal-future-editorial.ts'
+import { PORTUGUESE_FUTURE_PERFECT_EDITORIAL } from '../src/data/practica/portuguese-future-perfect-editorial.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
 
 const failures = []
@@ -394,6 +397,9 @@ const PORTUGUESE_EDITORIAL_PACKS = [
   ['preterito-perfeito', PORTUGUESE_PRETERITE_PERFECT_EDITORIAL],
   ['preterito-imperfeito', PORTUGUESE_PRETERITE_IMPERFECT_EDITORIAL],
   ['mais-que-perfeito', PORTUGUESE_PLUPERFECT_EDITORIAL],
+  ['futuro-proximo', PORTUGUESE_NEAR_FUTURE_EDITORIAL],
+  ['futuro-presente', PORTUGUESE_FORMAL_FUTURE_EDITORIAL],
+  ['futuro-composto', PORTUGUESE_FUTURE_PERFECT_EDITORIAL],
 ]
 for (const [formId, pack] of PORTUGUESE_EDITORIAL_PACKS) {
   assert(pack.choices.length === 10 && pack.micro.length === 10, `portuguese/${formId}: se requieren 10 decisiones y 10 microtextos`)
@@ -410,6 +416,16 @@ const portuguesePluperfectContexts = [
   ...PORTUGUESE_PLUPERFECT_EDITORIAL.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
 ]
 for (const context of portuguesePluperfectContexts) assert(/(?:quando|antes|porque|na véspera|dois anos antes|depois|começo|chegamos|viajamos|conseguimos)/i.test(context), `portuguese/mais-que-perfeito: falta outro marco passado explícito («${context}»)`)
+
+for (const item of [...PORTUGUESE_FORMAL_FUTURE_EDITORIAL.choices, ...PORTUGUESE_FORMAL_FUTURE_EDITORIAL.micro, ...PORTUGUESE_FORMAL_FUTURE_EDITORIAL.long, ...PORTUGUESE_FORMAL_FUTURE_EDITORIAL.errors, ...PORTUGUESE_FORMAL_FUTURE_EDITORIAL.timelines]) assert(/formal/i.test(`${item.focus} ${item.explanation}`), `${item.id}: el futuro sintético brasileño debe declarar su registro`)
+
+const portugueseFuturePerfectContexts = [
+  ...PORTUGUESE_FUTURE_PERFECT_EDITORIAL.micro.map((item) => item.segments.join(' ')),
+  ...PORTUGUESE_FUTURE_PERFECT_EDITORIAL.long.map((item) => item.segments.join(' ')),
+  ...PORTUGUESE_FUTURE_PERFECT_EDITORIAL.errors.map((item) => `${item.title} ${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`),
+  ...PORTUGUESE_FUTURE_PERFECT_EDITORIAL.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+]
+for (const context of portugueseFuturePerfectContexts) assert(/(?:até|quando|antes|à meia-noite|ao meio-dia|às seis|às oito|ao fim)/i.test(context), `portuguese/futuro-composto: falta prazo ou segundo ponto futuro («${context}»)`)
 
 const GENERATED_CONFIGS = [
   PORTUGUESE_STRUCTURE_QUEST,
