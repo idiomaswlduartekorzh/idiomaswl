@@ -16,6 +16,8 @@ import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-qu
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest.ts'
+import { PORTUGUESE_PRESENT_EDITORIAL } from '../src/data/practica/portuguese-present-editorial.ts'
+import { PORTUGUESE_PROGRESSIVE_EDITORIAL } from '../src/data/practica/portuguese-progressive-editorial.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
 
 const failures = []
@@ -382,6 +384,18 @@ const frenchFuturePerfectContexts = [
   ...FRENCH_FUTUR_ANTERIEUR_EDITORIAL.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
 ]
 for (const context of frenchFuturePerfectContexts) assert(/(?:d’ici|quand|lorsque|avant|à (?:la fin|midi|minuit|dix-huit heures|vingt heures)|en juin|en septembre|2030)/i.test(context), `french/futur-anterieur: falta una échéance o un segundo punto futuro («${context}»)`)
+
+const PORTUGUESE_EDITORIAL_PACKS = [
+  ['presente', PORTUGUESE_PRESENT_EDITORIAL],
+  ['progressivo', PORTUGUESE_PROGRESSIVE_EDITORIAL],
+]
+for (const [formId, pack] of PORTUGUESE_EDITORIAL_PACKS) {
+  assert(pack.choices.length === 10 && pack.micro.length === 10, `portuguese/${formId}: se requieren 10 decisiones y 10 microtextos`)
+  assert(pack.long.length === 10 && pack.long.every((item) => item.gaps.length === 3), `portuguese/${formId}: se requieren 10 relatos conectados de tres huecos`)
+  assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `portuguese/${formId}: se requieren 10 reparaciones de tres verbos`)
+  assert(pack.timelines.length === 10, `portuguese/${formId}: se requieren 10 secuencias semánticas`)
+  assert(pack.finalGaps.length === 10 && pack.finalGaps.every((gap) => gap.candidateCardIds?.length === 4 && (gap.standalone?.before.trim() || gap.standalone?.after.trim())), `portuguese/${formId}: se requieren 10 decisiones finales autónomas`)
+}
 
 const GENERATED_CONFIGS = [
   PORTUGUESE_STRUCTURE_QUEST,
