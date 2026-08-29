@@ -19,6 +19,8 @@ import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-stru
 import { PORTUGUESE_PRESENT_EDITORIAL } from '../src/data/practica/portuguese-present-editorial.ts'
 import { PORTUGUESE_PROGRESSIVE_EDITORIAL } from '../src/data/practica/portuguese-progressive-editorial.ts'
 import { PORTUGUESE_PRETERITE_PERFECT_EDITORIAL } from '../src/data/practica/portuguese-preterite-perfect-editorial.ts'
+import { PORTUGUESE_PRETERITE_IMPERFECT_EDITORIAL } from '../src/data/practica/portuguese-preterite-imperfect-editorial.ts'
+import { PORTUGUESE_PLUPERFECT_EDITORIAL } from '../src/data/practica/portuguese-pluperfect-editorial.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
 
 const failures = []
@@ -390,6 +392,8 @@ const PORTUGUESE_EDITORIAL_PACKS = [
   ['presente', PORTUGUESE_PRESENT_EDITORIAL],
   ['progressivo', PORTUGUESE_PROGRESSIVE_EDITORIAL],
   ['preterito-perfeito', PORTUGUESE_PRETERITE_PERFECT_EDITORIAL],
+  ['preterito-imperfeito', PORTUGUESE_PRETERITE_IMPERFECT_EDITORIAL],
+  ['mais-que-perfeito', PORTUGUESE_PLUPERFECT_EDITORIAL],
 ]
 for (const [formId, pack] of PORTUGUESE_EDITORIAL_PACKS) {
   assert(pack.choices.length === 10 && pack.micro.length === 10, `portuguese/${formId}: se requieren 10 decisiones y 10 microtextos`)
@@ -398,6 +402,14 @@ for (const [formId, pack] of PORTUGUESE_EDITORIAL_PACKS) {
   assert(pack.timelines.length === 10, `portuguese/${formId}: se requieren 10 secuencias semánticas`)
   assert(pack.finalGaps.length === 10 && pack.finalGaps.every((gap) => gap.candidateCardIds?.length === 4 && (gap.standalone?.before.trim() || gap.standalone?.after.trim())), `portuguese/${formId}: se requieren 10 decisiones finales autónomas`)
 }
+
+const portuguesePluperfectContexts = [
+  ...PORTUGUESE_PLUPERFECT_EDITORIAL.micro.map((item) => item.segments.join(' ')),
+  ...PORTUGUESE_PLUPERFECT_EDITORIAL.long.map((item) => item.segments.join(' ')),
+  ...PORTUGUESE_PLUPERFECT_EDITORIAL.errors.map((item) => `${item.title} ${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`),
+  ...PORTUGUESE_PLUPERFECT_EDITORIAL.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+]
+for (const context of portuguesePluperfectContexts) assert(/(?:quando|antes|porque|na véspera|dois anos antes|depois|começo|chegamos|viajamos|conseguimos)/i.test(context), `portuguese/mais-que-perfeito: falta outro marco passado explícito («${context}»)`)
 
 const GENERATED_CONFIGS = [
   PORTUGUESE_STRUCTURE_QUEST,
