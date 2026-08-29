@@ -5,14 +5,16 @@
 > concentra en las decisiones curriculares por idioma.
 
 Fuente de verdad para escalar el motor de `/herramientas/quizes` a los ocho idiomas de
-Idiomas WeLearn. Versión 2: 23 de agosto de 2026, endurecida tras auditoría funcional y
+Idiomas WeLearn. Versión 3: 28 de agosto de 2026, endurecida tras auditoría funcional y
 pedagógica.
 
-Actualización italiana (24 de agosto de 2026): el motor admite varios retos finales y entrega
-un informe acumulado al cerrar el nivel 6. El banco italiano fija un mínimo verificable de diez
-retos diferentes por forma en cada nivel e incorpora las perífrasis `stare + gerundio` en
-presente e imperfetto. El guardián `check:tense-quests` debe fallar si esa cobertura baja; no se
-permite completar el cupo repitiendo preguntas.
+Actualización italiana (28 de agosto de 2026): las trece formas usan bancos editoriales
+independientes en los niveles 2–5 y diez escenas finales distintas del nivel 1. El motor admite
+varios retos finales y entrega un informe acumulado al cerrar el nivel 6. El banco fija un mínimo
+verificable de diez retos por forma y nivel e incorpora `stare + gerundio` en presente e
+imperfetto. El guardián `check:tense-quests` falla si reaparece un banco generado, baja la
+cobertura, se repite una escena final o una respuesta escrita no conserva la morfología del
+objetivo.
 
 ## Principio de producto
 
@@ -93,6 +95,7 @@ Cada forma seleccionable nueva declara bancos separados por función pedagógica
 - variantes aceptadas solo cuando son normativas para el mismo significado y registro;
 - relatos y textos de edición escritos como unidades discursivas;
 - una decisión final con contexto autónomo y cuatro formas plausibles del mismo lema.
+- una escena final distinta de los contextos usados para reconocer la forma en el nivel 1.
 
 La factoría puede derivar IDs, balance de claves y envoltorios de interfaz; no puede inventar
 coherencia. Un relato y un texto de reparación se escriben aparte porque la coherencia discursiva
@@ -138,7 +141,8 @@ los ocho idiomas.
 ## QA por publicación
 
 1. `npm run check:tense-quests` valida estructura, respuesta, unicidad, cobertura, distribución de
-   opciones, distribución de errores, variantes normativas y ausencia de pistas literales.
+   opciones, distribución de errores, variantes normativas, morfología objetivo, independencia
+   entre niveles y ausencia de pistas literales.
 2. `npm run check:practica-catalog` protege escucha, IELTS, ICFES y catálogos previos.
 3. `npx tsc --noEmit`, lint de archivos tocados y `npm run build` validan integración.
 4. En navegador se prueba por idioma: selección única, preset, URL compartible, persistencia tras

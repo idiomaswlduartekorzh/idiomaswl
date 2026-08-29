@@ -216,6 +216,39 @@ function assertItalianEditorialContract() {
   assert(negativeTu?.segments[0].trim().endsWith('Non') && negativeTu.gaps[0].answers.includes('premere'), 'imperativo: non + tu debe aceptar el infinitivo')
   const formalLei = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-imperative-micro-editorial-3')
   assert(formalLei?.gaps[0].answers.includes('attenda'), 'imperativo: la forma di cortesia Lei debe conservar attenda')
+
+  const finalContextsByForm = new Map(ITALIAN_TENSE_QUEST.forms.map((form) => [form.id, []]))
+  for (const challenge of ITALIAN_TENSE_QUEST.finalChallenges) {
+    for (const gap of challenge.gaps) finalContextsByForm.get(gap.tenseId)?.push(`${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)
+  }
+  for (const form of ITALIAN_TENSE_QUEST.forms) {
+    const choiceContexts = new Set(ITALIAN_TENSE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(form.id)).map((item) => item.context.toLocaleLowerCase('it')))
+    const finalContexts = finalContextsByForm.get(form.id) ?? []
+    assert(finalContexts.length === 10, `${form.id}: el dossier final necesita diez escenas editoriales`)
+    assert(new Set(finalContexts).size === finalContexts.length, `${form.id}: el dossier final repite escenas`)
+    assert(finalContexts.every((context) => !choiceContexts.has(context.toLocaleLowerCase('it'))), `${form.id}: el dossier final reutiliza una frase del nivel 1`)
+  }
+
+  const answerPatterns = new Map([
+    ['presente-progressivo', /^(?:sto|stai|sta|stiamo|state|stanno) \S+(?:ando|endo)$/iu],
+    ['passato-prossimo', /^(?:(?:mi|ti|si|ci|vi) )?(?:ho|hai|ha|abbiamo|avete|hanno|sono|siamo|siete|è) \S+(?: \S+)?$/iu],
+    ['imperfetto', /^(?:ero|eri|era|eravamo|eravate|erano|(?:(?:mi|ti|si|ci|vi) )?\S+(?:vo|vi|va|vamo|vate|vano))$/iu],
+    ['imperfetto-progressivo', /^(?:stavo|stavi|stava|stavamo|stavate|stavano) \S+(?:ando|endo)$/iu],
+    ['trapassato-prossimo', /^(?:(?:mi|ti|si|ci|vi) )?(?:avevo|avevi|aveva|avevamo|avevate|avevano|ero|eri|era|eravamo|eravate|erano) \S+(?: \S+)?$/iu],
+    ['trapassato-remoto', /^(?:(?:mi|ti|si|ci|vi) )?(?:ebbi|avesti|ebbe|avemmo|aveste|ebbero|fui|fosti|fu|fummo|foste|furono) \S+(?: \S+)?$/iu],
+    ['futuro-semplice', /^\S+(?:rò|rai|rà|remo|rete|ranno)$/iu],
+    ['futuro-anteriore', /^(?:(?:mi|ti|si|ci|vi) )?(?:avrò|avrai|avrà|avremo|avrete|avranno|sarò|sarai|sarà|saremo|sarete|saranno) \S+(?: \S+)?$/iu],
+    ['condizionale-presente', /^\S+(?:rei|resti|rebbe|remmo|reste|rebbero)$/iu],
+    ['condizionale-passato', /^(?:(?:mi|ti|si|ci|vi) )?(?:avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero) \S+(?: \S+)?$/iu],
+  ])
+  const writtenByTense = new Map(ITALIAN_TENSE_QUEST.forms.map((form) => [form.id, []]))
+  for (const challenge of [...ITALIAN_TENSE_QUEST.microStories, ...ITALIAN_TENSE_QUEST.longStories]) {
+    for (const gap of challenge.gaps) writtenByTense.get(gap.tense)?.push(...gap.answers)
+  }
+  for (const challenge of ITALIAN_TENSE_QUEST.errorChallenges) writtenByTense.get(challenge.tense)?.push(...challenge.answers)
+  for (const [tenseId, pattern] of answerPatterns) {
+    for (const answer of writtenByTense.get(tenseId) ?? []) assert(pattern.test(answer), `${tenseId}: «${answer}» no tiene la morfología esperada`)
+  }
 }
 
 validate(ITALIAN_TENSE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })

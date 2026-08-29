@@ -142,6 +142,16 @@ test('Italian final decisions use autonomous context and same-verb candidate set
   assert.ok(answerPositions[0] / answerPositions.reduce((sum, count) => sum + count, 0) < 0.3)
 })
 
+test('Italian final dossiers never repeat level-one scenes', () => {
+  for (const form of ITALIAN_TENSE_QUEST.forms) {
+    const levelOne = new Set(ITALIAN_TENSE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(form.id)).map((item) => item.context.toLocaleLowerCase('it')))
+    const finals = ITALIAN_TENSE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id).map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`))
+    assert.equal(finals.length, 10, form.id)
+    assert.equal(new Set(finals).size, 10, form.id)
+    assert.ok(finals.every((context) => !levelOne.has(context.toLocaleLowerCase('it'))), form.id)
+  }
+})
+
 test('each migrated Italian form uses independent editorial banks for every discursive level', () => {
   assert.deepEqual(new Set(ITALIAN_TENSE_QUEST.forms.map((form) => form.id)), EDITORIAL_ITALIAN_FORMS)
   for (const formId of EDITORIAL_ITALIAN_FORMS) {

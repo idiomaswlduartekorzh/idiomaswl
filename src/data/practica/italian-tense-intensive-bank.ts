@@ -91,7 +91,7 @@ export const ITALIAN_DRILL_SERIES: readonly ItalianDrillSeries[] = [
       d('Mia madre mi ', 'leggeva', ' una storia ogni sera.', 'leggere', 'acción repetida', ['ha letto', 'lesse', 'leggerà']),
       d('Alle sette il negozio ', 'era', ' ancora aperto.', 'essere', 'estado simultáneo', ['è stato', 'fu', 'sarà']),
       d('In quel periodo voi ', 'lavoravate', ' anche il sabato.', 'lavorare', 'rutina en un periodo pasado', ['avete lavorato', 'lavoraste', 'lavorerete']),
-      d('Non ti ho chiamato perché ', 'pensavo', ' che fossi occupato.', 'pensare', 'estado mental pasado', ['ho pensato', 'pensai', 'penserò']),
+      d('Non ti ho chiamato perché ', 'pensavo', ' al tuo turno di lavoro.', 'pensare', 'estado mental pasado', ['ho pensato', 'pensai', 'penserò']),
     ],
   },
   {

@@ -1,7 +1,7 @@
 # Quizzes de idiomas — blueprint operativo para nuevas implementaciones
 
 Fuente canónica para construir o ampliar quizzes en `/herramientas/quizes` sin reconstruir el
-contexto de las sesiones anteriores. Estado verificado: 23 de agosto de 2026.
+contexto de las sesiones anteriores. Estado verificado: 28 de agosto de 2026.
 
 Este documento manda sobre notas históricas cuando describe la arquitectura actual. Para las
 decisiones lingüísticas por idioma sigue mandando
@@ -105,6 +105,8 @@ distintas. Como mínimo declara:
 - textos coherentes con un error real para el nivel 4;
 - decisiones de orden o referencia temporal para el nivel 5;
 - cuatro candidatos del mismo lema para cada decisión del nivel 6.
+- diez escenas finales autónomas por forma en bancos intensivos, sin reutilizar literalmente el
+  contexto del nivel 1.
 
 La factoría deriva por objetivo:
 
@@ -262,7 +264,12 @@ catálogo y cero tarjetas heredadas `wl-catalog-card`.
 - adverbios léxicos ocultos dentro de respuestas de conjugación italianas;
 - retos finales sin contexto autónomo o sin tres distractores del mismo verbo;
 - claves finales concentradas en una sola posición;
-- regreso del banco generado de `passato prossimo` en niveles con contrato editorial.
+- regreso de cualquier banco generado en las trece formas italianas;
+- repetición de escenas entre el nivel 1 y el dossier final italiano;
+- pérdida de la morfología compuesta o progresiva esperada en las respuestas italianas;
+- `trapassato remoto` fuera de una subordinada temporal con consecuencia narrativa;
+- `futuro anteriore` sin límite ni segundo punto futuro explícito;
+- pérdida de `non + infinitivo` para el imperativo negativo de `tu`.
 
 El banco editorial declara los candidatos de cada hueco con IDs estables. El motor no toma
 formas casuales de otros tiempos para completar cuatro tarjetas: muestra únicamente el conjunto
@@ -318,6 +325,12 @@ la suite pasa sobre el dominio, no solo sobre la URL temporal.
   usa acentos cromáticos sobrios y conserva siempre el nombre escrito.
 - Exigir `ha appena finito` cuando el contexto solo permitía inferir `ha finito` producía un falso
   negativo. Los modificadores léxicos ya no se esconden dentro de la respuesta.
+- Reutilizar en el nivel 6 las mismas diez frases del nivel 1 premiaba la memoria del banco en vez
+  de la transferencia. El dossier italiano usa ahora 130 escenas autónomas y un guardián prohíbe
+  ese cruce.
+- Encadenar formas correctas de `trapassato remoto` en oraciones principales seguía siendo
+  pedagógicamente incorrecto. Cada aparición se ancla ahora en una subordinada temporal y una
+  consecuencia en passato remoto.
 - Rotar las mismas diez frases en grupos de tres creó pseudopárrafos y repetición inmediata.
   Los relatos con contrato editorial se escriben como historias completas.
 - Usar tiempos diferentes como distractores del nivel final permitía resolver por silueta verbal.
