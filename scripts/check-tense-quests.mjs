@@ -4,6 +4,9 @@ import { ITALIAN_DRILL_SERIES } from '../src/data/practica/italian-tense-intensi
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
 import { FRENCH_PRESENT_EDITORIAL } from '../src/data/practica/french-present-editorial.ts'
 import { FRENCH_PASSE_COMPOSE_EDITORIAL } from '../src/data/practica/french-passe-compose-editorial.ts'
+import { FRENCH_IMPARFAIT_EDITORIAL } from '../src/data/practica/french-imparfait-editorial.ts'
+import { FRENCH_PLUS_QUE_PARFAIT_EDITORIAL } from '../src/data/practica/french-plus-que-parfait-editorial.ts'
+import { FRENCH_PASSE_SIMPLE_EDITORIAL } from '../src/data/practica/french-passe-simple-editorial.ts'
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
@@ -335,6 +338,9 @@ for (const context of mixedContexts) assert(/\b(?:now|today|yesterday|last|in 20
 const FRENCH_EDITORIAL_PACKS = [
   ['present', FRENCH_PRESENT_EDITORIAL],
   ['passe-compose', FRENCH_PASSE_COMPOSE_EDITORIAL],
+  ['imparfait', FRENCH_IMPARFAIT_EDITORIAL],
+  ['plus-que-parfait', FRENCH_PLUS_QUE_PARFAIT_EDITORIAL],
+  ['passe-simple', FRENCH_PASSE_SIMPLE_EDITORIAL],
 ]
 for (const [formId, pack] of FRENCH_EDITORIAL_PACKS) {
   assert(pack.choices.length === 10, `french/${formId}: se requieren 10 decisiones editoriales`)
@@ -344,6 +350,19 @@ for (const [formId, pack] of FRENCH_EDITORIAL_PACKS) {
   assert(pack.timelines.length === 10, `french/${formId}: se requieren 10 secuencias semánticas`)
   assert(pack.finalGaps.length === 10 && pack.finalGaps.every((gap) => gap.candidateCardIds?.length === 4 && (gap.standalone?.before.trim() || gap.standalone?.after.trim())), `french/${formId}: se requieren 10 decisiones finales autónomas con cuatro candidatos`)
 }
+
+const frenchPlusPastContexts = [
+  ...FRENCH_PLUS_QUE_PARFAIT_EDITORIAL.micro.map((item) => item.segments.join(' ')),
+  ...FRENCH_PLUS_QUE_PARFAIT_EDITORIAL.long.map((item) => item.segments.join(' ')),
+  ...FRENCH_PLUS_QUE_PARFAIT_EDITORIAL.errors.map((item) => `${item.title} ${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`),
+  ...FRENCH_PLUS_QUE_PARFAIT_EDITORIAL.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+]
+for (const context of frenchPlusPastContexts) assert(/(?:quand|lorsque|avant|après|parce que|car|la veille|plus tôt|à (?:l’|notre )arrivée|au début|depuis|sommes partis|ne pouvait|était|préparatifs)/i.test(context), `french/plus-que-parfait: falta un segundo plano pasado explícito («${context}»)`)
+
+for (const item of [...FRENCH_PASSE_SIMPLE_EDITORIAL.choices, ...FRENCH_PASSE_SIMPLE_EDITORIAL.micro, ...FRENCH_PASSE_SIMPLE_EDITORIAL.long, ...FRENCH_PASSE_SIMPLE_EDITORIAL.errors, ...FRENCH_PASSE_SIMPLE_EDITORIAL.timelines]) {
+  assert(/littéraire/i.test(`${item.focus} ${item.explanation}`), `${item.id}: el passé simple debe declarar su registro literario`)
+}
+for (const gap of FRENCH_PASSE_SIMPLE_EDITORIAL.finalGaps) assert(/littéraire/i.test(gap.tense), `${gap.id}: el dossier final debe marcar el passé simple como literario`)
 
 const GENERATED_CONFIGS = [
   FRENCH_STRUCTURE_QUEST,
