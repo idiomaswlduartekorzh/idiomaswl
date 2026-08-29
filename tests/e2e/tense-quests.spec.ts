@@ -143,6 +143,22 @@ test('los pasados perfectos ingleses muestran dos planos temporales explícitos'
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })
 
+test('los futuros perfectos ingleses exponen límite y duración', async ({ page }) => {
+  await page.goto('/herramientas/quizes/ingles?forms=future-perfect-continuous&level=3')
+
+  for (let level = 0; level < 6; level += 1) {
+    await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  }
+  await expect(page.getByText('By the laboratory review', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('By Friday')
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('for six months')
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.getByText(/By October, Maya/)).toBeVisible()
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
 test('un estudiante puede cerrar los 6 niveles sin recibir corrección anticipada', async ({ page }) => {
   await reset(page, 'frances')
   await configureFirstForm(page)

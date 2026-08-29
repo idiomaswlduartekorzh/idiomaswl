@@ -256,7 +256,7 @@ assertItalianInferability()
 assertItalianEditorialContract()
 validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 
-const ENGLISH_EDITORIAL_FORMS = ['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to']
+const ENGLISH_EDITORIAL_FORMS = ['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to', 'future-continuous', 'future-perfect', 'future-perfect-continuous']
 for (const formId of ENGLISH_EDITORIAL_FORMS) {
   const choice = ENGLISH_TENSE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(formId))
   const micro = ENGLISH_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
@@ -291,6 +291,21 @@ for (const formId of ['past-perfect', 'past-perfect-continuous']) {
   for (const context of written) {
     assert(/\b(?:before|when|after|because|since|for|by|so|at midnight|at the)\b/i.test(context), `english/${formId}: falta un segundo punto pasado o una duración explícita («${context}»)`)
   }
+}
+
+const ENGLISH_FUTURE_ANCHORS = new Map([
+  ['future-continuous', /\b(?:at|when|while|during|around|throughout|this time|this afternoon|after lunch|next week)\b/i],
+  ['future-perfect', /\b(?:by|before|when|at the end)\b/i],
+  ['future-perfect-continuous', /\b(?:by|when|at|next|for|since)\b/i],
+])
+for (const [formId, anchor] of ENGLISH_FUTURE_ANCHORS) {
+  const written = [
+    ...ENGLISH_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId)).map((item) => item.segments.join(' ')),
+    ...ENGLISH_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === formId)).map((item) => item.segments.join(' ')),
+    ...ENGLISH_TENSE_QUEST.errorChallenges.filter((item) => item.tense === formId).map((item) => `${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`),
+    ...ENGLISH_TENSE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === formId).map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`)),
+  ]
+  for (const context of written) assert(anchor.test(context), `english/${formId}: falta el punto futuro o la duración explícita («${context}»)`)
 }
 
 const GENERATED_CONFIGS = [
