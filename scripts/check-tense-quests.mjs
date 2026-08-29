@@ -256,7 +256,7 @@ assertItalianInferability()
 assertItalianEditorialContract()
 validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 
-const ENGLISH_EDITORIAL_FORMS = ['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous']
+const ENGLISH_EDITORIAL_FORMS = ['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to']
 for (const formId of ENGLISH_EDITORIAL_FORMS) {
   const choice = ENGLISH_TENSE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(formId))
   const micro = ENGLISH_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
