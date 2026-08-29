@@ -100,6 +100,11 @@ futuro perfectivo; condicional actual y contrafactual pasado; imperativo imperfe
 perfectivo; elección de aspecto tras verbos de fase. El contexto decide el tiempo de бы: la
 morfología por sí sola no inventa una diferencia que el ruso no tiene.
 
+Puerta editorial rusa: cada banco debe nombrar la oposición aspectual que realmente decide la
+respuesta. El guardián rechazará pasados perfectivos sin resultado visible, imperfectivos sin
+proceso/fondo/repetición, futuros perfectivos sin límite de resultado, condicionales sin ancla
+que distinga presente de pasado e imperativos cuya elección de aspecto no esté motivada.
+
 ### Japonés · A2–B1
 
 No-pasado afirmativo y negativo; pasado afirmativo y negativo; ています progresivo;
