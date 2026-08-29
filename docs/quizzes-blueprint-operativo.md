@@ -41,7 +41,7 @@ japonés y coreano. La familia de pronombres inicia con un piloto italiano bajo
 | `src/data/practica/tense-quest-types.ts` | Contrato tipado de configuración y retos |
 | `src/data/practica/create-structure-quest.ts` | Factoría determinista para bancos con tres ejemplos por forma |
 | `src/data/practica/*-structure-quest.ts` | Contenido declarativo de francés, portugués, alemán, ruso, japonés y coreano |
-| `src/data/practica/english-tense-quest.ts` | Banco editorial extendido de inglés |
+| `src/data/practica/english-tense-quest-config.ts` | Configuración editorial exclusiva de inglés; no importa el generador heredado |
 | `src/data/practica/italian-tense-quest.ts` | Banco editorial de italiano |
 | `src/data/practica/italian-tense-quest-config.ts` | Adaptación del banco italiano al motor común |
 | `scripts/check-tense-quests.mjs` | Guardián estructural, pedagógico y de cobertura |

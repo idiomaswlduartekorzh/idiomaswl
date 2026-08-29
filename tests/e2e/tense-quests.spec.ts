@@ -60,7 +60,7 @@ test('un intento se restaura y cambiar selección limpia la URL', async ({ page 
   await page.getByRole('button', { name: /Guardar y seguir/ }).click()
   await expect(page.getByText('2 / 10', { exact: true })).toBeVisible()
   await expect.poll(() => page.evaluate(() => {
-    const raw = window.localStorage.getItem('wl-english-tense-quest-v3')
+    const raw = window.localStorage.getItem('wl-english-tense-quest-v4')
     return raw ? JSON.parse(raw).attempt?.itemIndex : -1
   })).toBe(1)
 
@@ -210,7 +210,7 @@ test('parámetros y progreso local corruptos no rompen el quiz', async ({ page }
   await expect(page.locator('#tense-selector-title')).toBeVisible()
 
   await page.evaluate(() => {
-    window.localStorage.setItem('wl-english-tense-quest-v2', JSON.stringify({
+    window.localStorage.setItem('wl-english-tense-quest-v4', JSON.stringify({
       attempt: {
         selectedTenses: ['present-simple'], activeLevel: 99, itemIndex: 999,
         responses: {}, savedLevelResponses: {}, current: {}, questionResults: {}, summary: false,
@@ -218,6 +218,6 @@ test('parámetros y progreso local corruptos no rompen el quiz', async ({ page }
     }))
   })
   await page.goto('/herramientas/quizes/ingles?forms=present-simple&level=99')
-  await expect(page.getByText('1 / 3', { exact: true })).toBeVisible()
+  await expect(page.getByText('1 / 10', { exact: true })).toBeVisible()
   await expect(page.locator('.wlp-option')).toHaveCount(4)
 })

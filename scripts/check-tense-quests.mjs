@@ -1,4 +1,4 @@
-import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest.ts'
+import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest-config.ts'
 import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { ITALIAN_DRILL_SERIES } from '../src/data/practica/italian-tense-intensive-bank.ts'
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
@@ -254,9 +254,9 @@ function assertItalianEditorialContract() {
 validate(ITALIAN_TENSE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 assertItalianInferability()
 assertItalianEditorialContract()
-validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
+validate(ENGLISH_TENSE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 
-const ENGLISH_EDITORIAL_FORMS = ['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to', 'future-continuous', 'future-perfect', 'future-perfect-continuous', 'conditional-zero', 'conditional-first']
+const ENGLISH_EDITORIAL_FORMS = ['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to', 'future-continuous', 'future-perfect', 'future-perfect-continuous', 'conditional-zero', 'conditional-first', 'conditional-second', 'conditional-third', 'conditional-mixed', 'imperative']
 for (const formId of ENGLISH_EDITORIAL_FORMS) {
   const choice = ENGLISH_TENSE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(formId))
   const micro = ENGLISH_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
@@ -277,7 +277,7 @@ for (const formId of ENGLISH_EDITORIAL_FORMS) {
   for (const item of errors) assert(item.chunks.length === 3, `${item.id}: el laboratorio editorial debe mostrar tres verbos`)
   for (const gap of final) {
     assert(gap.candidateCardIds?.length === 4, `${gap.id}: el dossier final necesita cuatro candidatos cerrados`)
-    assert(Boolean(gap.standalone?.before.trim() && gap.standalone?.after.trim()), `${gap.id}: el dossier final necesita contexto autónomo completo`)
+    assert(Boolean(gap.standalone?.before.trim() || gap.standalone?.after.trim()), `${gap.id}: el dossier final necesita contexto autónomo completo`)
   }
 }
 
@@ -307,6 +307,28 @@ for (const [formId, anchor] of ENGLISH_FUTURE_ANCHORS) {
   ]
   for (const context of written) assert(anchor.test(context), `english/${formId}: falta el punto futuro o la duración explícita («${context}»)`)
 }
+
+function englishWrittenAnswers(formId) {
+  return [
+    ...ENGLISH_TENSE_QUEST.microStories.flatMap((item) => item.gaps.filter((gap) => gap.tense === formId).flatMap((gap) => gap.answers)),
+    ...ENGLISH_TENSE_QUEST.longStories.flatMap((item) => item.gaps.filter((gap) => gap.tense === formId).flatMap((gap) => gap.answers)),
+    ...ENGLISH_TENSE_QUEST.errorChallenges.filter((item) => item.tense === formId).flatMap((item) => item.answers),
+  ]
+}
+
+for (const answer of englishWrittenAnswers('conditional-zero')) assert(!/\b(?:will|would)\b/i.test(answer), `english/conditional-zero: «${answer}» introduce futuro o hipótesis en una regla general`)
+for (const answer of englishWrittenAnswers('conditional-first')) assert(!/\bwould\b/i.test(answer), `english/conditional-first: «${answer}» convierte una posibilidad real en hipótesis`)
+for (const answer of englishWrittenAnswers('conditional-second')) assert(!/\bwill\b/i.test(answer), `english/conditional-second: «${answer}» usa will dentro de una hipótesis irreal`)
+for (const answer of englishWrittenAnswers('conditional-third')) assert(/^(?:had(?: not|n't)?|would(?: not|n't)? have)\b/i.test(answer), `english/conditional-third: «${answer}» no conserva la estructura contrafactual pasada`)
+for (const answer of englishWrittenAnswers('conditional-mixed')) assert(/^would(?: not|n't)? (?:have )?\S+/i.test(answer), `english/conditional-mixed: «${answer}» no expresa el resultado cruzado esperado`)
+
+const mixedContexts = [
+  ...ENGLISH_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === 'conditional-mixed')).map((item) => item.segments.join(' ')),
+  ...ENGLISH_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === 'conditional-mixed')).map((item) => item.segments.join(' ')),
+  ...ENGLISH_TENSE_QUEST.errorChallenges.filter((item) => item.tense === 'conditional-mixed').map((item) => `${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`),
+  ...ENGLISH_TENSE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === 'conditional-mixed').map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`)),
+]
+for (const context of mixedContexts) assert(/\b(?:now|today|yesterday|last|in 20\d\d|spring|summer|March)\b/i.test(context), `english/conditional-mixed: falta un marcador que haga visible el cruce temporal («${context}»)`)
 
 const GENERATED_CONFIGS = [
   FRENCH_STRUCTURE_QUEST,

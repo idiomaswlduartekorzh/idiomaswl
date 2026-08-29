@@ -1,3 +1,8 @@
+/**
+ * @deprecated Archivo heredado conservado temporalmente para compatibilidad histórica.
+ * Producción y guardianes importan exclusivamente `english-tense-quest-config.ts`.
+ * No añadir contenido nuevo aquí.
+ */
 import type {
   ChoiceChallenge,
   ErrorChallenge,
@@ -20,9 +25,13 @@ import { ENGLISH_FUTURE_PERFECT_EDITORIAL } from './english-future-perfect-edito
 import { ENGLISH_FUTURE_PERFECT_CONTINUOUS_EDITORIAL } from './english-future-perfect-continuous-editorial.ts'
 import { ENGLISH_CONDITIONAL_ZERO_EDITORIAL } from './english-conditional-zero-editorial.ts'
 import { ENGLISH_CONDITIONAL_FIRST_EDITORIAL } from './english-conditional-first-editorial.ts'
+import { ENGLISH_CONDITIONAL_SECOND_EDITORIAL } from './english-conditional-second-editorial.ts'
+import { ENGLISH_CONDITIONAL_THIRD_EDITORIAL } from './english-conditional-third-editorial.ts'
+import { ENGLISH_CONDITIONAL_MIXED_EDITORIAL } from './english-conditional-mixed-editorial.ts'
+import { ENGLISH_IMPERATIVE_EDITORIAL } from './english-imperative-editorial.ts'
 
-const ENGLISH_EDITORIAL_PACKS = [ENGLISH_PRESENT_SIMPLE_EDITORIAL, ENGLISH_PRESENT_CONTINUOUS_EDITORIAL, ENGLISH_PRESENT_PERFECT_EDITORIAL, ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_PAST_SIMPLE_EDITORIAL, ENGLISH_PAST_CONTINUOUS_EDITORIAL, ENGLISH_PAST_PERFECT_EDITORIAL, ENGLISH_PAST_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_FUTURE_WILL_EDITORIAL, ENGLISH_FUTURE_GOING_TO_EDITORIAL, ENGLISH_FUTURE_CONTINUOUS_EDITORIAL, ENGLISH_FUTURE_PERFECT_EDITORIAL, ENGLISH_FUTURE_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_CONDITIONAL_ZERO_EDITORIAL, ENGLISH_CONDITIONAL_FIRST_EDITORIAL]
-const ENGLISH_EDITORIAL_FORMS = new Set<EnglishFormId>(['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to', 'future-continuous', 'future-perfect', 'future-perfect-continuous', 'conditional-zero', 'conditional-first'])
+const ENGLISH_EDITORIAL_PACKS = [ENGLISH_PRESENT_SIMPLE_EDITORIAL, ENGLISH_PRESENT_CONTINUOUS_EDITORIAL, ENGLISH_PRESENT_PERFECT_EDITORIAL, ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_PAST_SIMPLE_EDITORIAL, ENGLISH_PAST_CONTINUOUS_EDITORIAL, ENGLISH_PAST_PERFECT_EDITORIAL, ENGLISH_PAST_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_FUTURE_WILL_EDITORIAL, ENGLISH_FUTURE_GOING_TO_EDITORIAL, ENGLISH_FUTURE_CONTINUOUS_EDITORIAL, ENGLISH_FUTURE_PERFECT_EDITORIAL, ENGLISH_FUTURE_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_CONDITIONAL_ZERO_EDITORIAL, ENGLISH_CONDITIONAL_FIRST_EDITORIAL, ENGLISH_CONDITIONAL_SECOND_EDITORIAL, ENGLISH_CONDITIONAL_THIRD_EDITORIAL, ENGLISH_CONDITIONAL_MIXED_EDITORIAL, ENGLISH_IMPERATIVE_EDITORIAL]
+const ENGLISH_EDITORIAL_FORMS = new Set<EnglishFormId>(['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to', 'future-continuous', 'future-perfect', 'future-perfect-continuous', 'conditional-zero', 'conditional-first', 'conditional-second', 'conditional-third', 'conditional-mixed', 'imperative'])
 
 export const ENGLISH_FORMS = [
   { id: 'present-simple', label: 'Present simple', group: 'Present' },
@@ -331,31 +340,6 @@ const TIMELINES: TimelineChallenge<EnglishFormId>[] = SEEDS.map((seed, seedIndex
   explanation: seed.explanation,
 }))
 
-const FINAL_ROWS: { formId: EnglishFormId; lemma: string; before: string; after: string; answer: string }[] = [
-  { formId: 'present-simple', lemma: 'lead', before: 'Every Monday Lena ', after: ' a language workshop. ', answer: 'leads' },
-  { formId: 'present-continuous', lemma: 'check', before: 'Right now she ', after: ' the microphones. ', answer: 'is checking' },
-  { formId: 'present-perfect', lemma: 'organize', before: 'She ', after: ' dozens of sessions so far and ', answer: 'has organized' },
-  { formId: 'present-perfect-continuous', lemma: 'prepare', before: '', after: ' this one since June. ', answer: 'has been preparing' },
-  { formId: 'past-simple', lemma: 'launch', before: 'Last year she ', after: ' the first edition. ', answer: 'launched' },
-  { formId: 'past-continuous', lemma: 'explain', before: 'At nine yesterday she ', after: ' the schedule when the lights failed. ', answer: 'was explaining' },
-  { formId: 'past-perfect', lemma: 'test', before: 'Fortunately, the team ', after: ' the backup system before the guests arrived and ', answer: 'had tested' },
-  { formId: 'past-perfect-continuous', lemma: 'work', before: '', after: ' on it for weeks. ', answer: 'had been working' },
-  { formId: 'future-will', lemma: 'welcome', before: 'Tomorrow Lena ', after: ' a new group. ', answer: 'will welcome' },
-  { formId: 'future-going-to', lemma: 'demonstrate', before: 'She ', after: ' a pronunciation app because the tablets are ready. ', answer: 'is going to demonstrate' },
-  { formId: 'future-continuous', lemma: 'answer', before: 'This time tomorrow, she ', after: ' questions live. ', answer: 'will be answering' },
-  { formId: 'future-perfect', lemma: 'upload', before: 'By Friday, the team ', after: ' every recording, and by next month Lena ', answer: 'will have uploaded' },
-  { formId: 'future-perfect-continuous', lemma: 'teach', before: '', after: ' the course for a full year. ', answer: 'will have been teaching' },
-  { formId: 'conditional-zero', lemma: 'light up', before: 'If students press the blue key, the screen ', after: '. ', answer: 'lights up' },
-  { formId: 'conditional-first', lemma: 'use', before: 'If the network fails, the group ', after: ' printed cards. ', answer: 'will use' },
-  { formId: 'conditional-second', lemma: 'invite', before: 'If the room were larger, Lena ', after: ' more people. ', answer: 'would invite' },
-  { formId: 'conditional-third', lemma: 'book', before: 'If she had known about the demand, she ', after: ' the auditorium. ', answer: 'would have booked' },
-  { formId: 'conditional-mixed', lemma: 'have', before: 'If the school had invested earlier, it ', after: ' better equipment now. ', answer: 'would have' },
-  { formId: 'imperative', lemma: 'take', before: 'Before you begin, please ', after: ' a seat and silence your phone.', answer: 'take' },
-]
-
-const LEGACY_FINAL_ROWS = FINAL_ROWS.filter((row) => !ENGLISH_EDITORIAL_FORMS.has(row.formId))
-const legacyFinalAnswers = LEGACY_FINAL_ROWS.map((row, index) => ({ id: `en-final-card-${index + 1}`, text: row.answer }))
-
 export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
   id: 'english-tense-quest',
   storageKey: 'wl-english-tense-quest-v3',
@@ -379,15 +363,7 @@ export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
   longStories: [...STORIES.filter((item) => !item.gaps.some((gap) => ENGLISH_EDITORIAL_FORMS.has(gap.tense))), ...ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.long)],
   errorChallenges: [...ERRORS.filter((item) => !ENGLISH_EDITORIAL_FORMS.has(item.tense)), ...ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.errors)],
   timelineChallenges: [...TIMELINES.filter((item) => !item.slots.some((slot) => ENGLISH_EDITORIAL_FORMS.has(slot.tense))), ...ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.timelines)],
-  finalChallenges: [{
-    id: 'en-final-workshop',
-    title: 'The language workshop',
-    instruction: 'Select a gap and then its card. Every card is used once.',
-    segments: [LEGACY_FINAL_ROWS[0].before, ...LEGACY_FINAL_ROWS.map((row, index) => `${row.after}${LEGACY_FINAL_ROWS[index + 1]?.before ?? ''}`)],
-    gaps: LEGACY_FINAL_ROWS.map((row, index) => ({ id: `en-final-gap-${index + 1}`, tenseId: row.formId, tense: ENGLISH_FORMS.find((form) => form.id === row.formId)?.label ?? row.formId, answerCardId: `en-final-card-${index + 1}` })),
-    cards: [...legacyFinalAnswers.slice(7), ...legacyFinalAnswers.slice(0, 7)],
-    explanation: 'The file moves from current routines through past background and future plans, then closes with conditional alternatives and an instruction.',
-  }, ...Array.from({ length: 10 }, (_, index) => {
+  finalChallenges: Array.from({ length: 10 }, (_, index) => {
     const gaps = ENGLISH_EDITORIAL_PACKS.map((pack) => pack.finalGaps[index])
     const candidateIds = new Set(gaps.flatMap((gap) => gap.candidateCardIds ?? []))
     return {
@@ -399,7 +375,7 @@ export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
       cards: ENGLISH_EDITORIAL_PACKS.flatMap((pack) => pack.finalCards.filter((card) => candidateIds.has(card.id))),
       explanation: 'Each scene independently supplies the time and aspect evidence needed for one closed decision.',
     }
-  })],
+  }),
   copy: {
     languageName: 'Inglés', languageCode: 'en', eyebrow: 'Tense & structure quiz · A2–B2',
     title: 'The aspect control room',

@@ -5,7 +5,7 @@
 > concentra en las decisiones curriculares por idioma.
 
 Fuente de verdad para escalar el motor de `/herramientas/quizes` a los ocho idiomas de
-Idiomas WeLearn. Versión 3: 28 de agosto de 2026, endurecida tras auditoría funcional y
+Idiomas WeLearn. Versión 4: 28 de agosto de 2026, endurecida tras auditoría funcional y
 pedagógica.
 
 Actualización italiana (28 de agosto de 2026): las trece formas usan bancos editoriales
@@ -15,6 +15,13 @@ verificable de diez retos por forma y nivel e incorpora `stare + gerundio` en pr
 imperfetto. El guardián `check:tense-quests` falla si reaparece un banco generado, baja la
 cobertura, se repite una escena final o una respuesta escrita no conserva la morfología del
 objetivo.
+
+Actualización inglesa (28 de agosto de 2026): las diecinueve formas abandonaron la factoría
+de ejemplos heredados. Cada forma dispone de diez retos editoriales por nivel, relatos
+conectados, planos temporales explícitos para perfectos, contrastes condicionales verificables y
+diez decisiones finales autónomas. Producción importa exclusivamente
+`english-tense-quest-config.ts`; el guardián rechaza contenido generado, cobertura inferior a
+diez o pistas temporales insuficientes.
 
 ## Principio de producto
 
@@ -38,7 +45,7 @@ El estudiante:
 | Fase | Idiomas | Riesgo pedagógico principal | Puerta de salida |
 |---|---|---|---|
 | 0 · Plataforma | Todos | duplicar lógica o filtrar respuestas | factoría tipada, IDs estables, guardián y motor único |
-| 1 · Flexión europea | Francés, portugués BR, alemán | falsas equivalencias con español; orden verbal alemán | 3 ejemplos por forma, registro etiquetado y unidades evaluables completas |
+| 1 · Flexión europea | Francés, portugués BR, alemán | falsas equivalencias con español; orden verbal alemán | 10 retos editoriales por forma y nivel, registro etiquetado y unidades evaluables completas |
 | 2 · Aspecto eslavo | Ruso | llamar “tiempo” a la oposición perfectivo/imperfectivo | proceso/resultado separados en pasado, futuro, imperativo e infinitivo |
 | 3 · Tiempo, aspecto y registro | Japonés, coreano | imponer categorías europeas; confundir progreso y estado | no-pasado y pasado honestos; estado resultante separado; registro visible |
 | 4 · Operación | Ocho idiomas | rutas bonitas sin funcionamiento real | build, navegación móvil, intento completo y verificación en producción |
@@ -88,7 +95,7 @@ progresivo -고 있어요; estado resultante -아/어 있어요; experiencia; co
 
 Cada forma seleccionable nueva declara bancos separados por función pedagógica:
 
-- tres contextos con una sola respuesta inequívoca;
+- diez contextos por forma y nivel, cada uno con una sola respuesta inequívoca;
 - un lema, una pista funcional y una explicación;
 - tres distractores únicos por contexto, todos plausibles a primera vista;
 - una forma errónea explícita para el laboratorio de reparación;

@@ -6,7 +6,7 @@ import type {
   GapChallenge,
   TimelineChallenge,
 } from './tense-quest-types.ts'
-import type { EnglishFormId } from './english-tense-quest.ts'
+import type { EnglishFormId } from './english-tense-quest-config.ts'
 
 export type EnglishEditorialMicroSeed = {
   title: string

@@ -1,6 +1,6 @@
 'use client'
 
-import { ENGLISH_TENSE_QUEST } from '@/data/practica/english-tense-quest'
+import { ENGLISH_TENSE_QUEST } from '@/data/practica/english-tense-quest-config'
 
 import TenseQuestEngine from './TenseQuestEngine'
 
