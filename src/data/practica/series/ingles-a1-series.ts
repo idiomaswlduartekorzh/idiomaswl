@@ -147,7 +147,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What does Maya talk about?',
-        ['Her family in a photo', 'Her job', 'A trip'],
+        ['Her family', 'Her job', 'A trip'],
         0,
         'She talks about her grandfather, parents, and sister.',
       ),
@@ -201,14 +201,14 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
         { speaker: 'Maya', target: 'There’s a lamp on the desk, but there isn’t a chair.', es: 'Hay una lámpara en el escritorio, pero no hay silla.' },
       ],
       gist: q(
-        'What do they describe?',
-        ['Maya’s bedroom', 'The bakery', 'Leo’s living room'],
+        'What room do they describe?',
+        ['Maya’s room', 'The bakery', 'Leo’s room'],
         0,
         'They talk about a desk, shelves, books, and a lamp.',
       ),
       details: [
         q('Where is the desk?', ['Under the window', 'Next to the door', 'In the hall'], 0, 'Maya says: “a small desk under the window.”'),
-        q('What is on the shelves?', ['Clothes', 'Books and a photo box', 'Nothing'], 1, 'Maya says: “books and a box of old photos.”'),
+        q('What is on the shelves?', ['Some clothes', 'Books and photos', 'Nothing here'], 1, 'Maya says: “books and a box of old photos.”'),
         q('What is not in the bedroom?', ['A lamp', 'Shelves', 'A chair'], 2, 'Maya says: “there isn’t a chair.”'),
       ],
       consolidation: q(
@@ -366,8 +366,8 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
         { speaker: 'Maya', target: 'You live next to the school. That’s why.', es: 'Vives al lado del colegio. Por eso.' },
       ],
       gist: q(
-        'What do they talk about?',
-        ['Their morning routines', 'An exam', 'The bakery'],
+        'What do they talk about in the morning?',
+        ['Breakfast', 'An exam', 'The bakery'],
         0,
         'They ask about getting up, breakfast, and leaving home.',
       ),
@@ -422,7 +422,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What do Maya and Leo talk about?',
-        ['Their families’ jobs', 'Their grades', 'A trip'],
+        ['Work', 'Grades', 'A trip'],
         0,
         'They talk about Maya’s parents and grandfather, and Leo’s mother.',
       ),
@@ -477,7 +477,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What do they compare?',
-        ['How often they do things', 'Their grades', 'Gym prices'],
+        ['Always and never', 'Their grades', 'Gym prices'],
         0,
         'They use always, never, usually, often, and hardly ever.',
       ),
@@ -532,7 +532,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What do they talk about?',
-        ['Saturday work and the old bakery', 'A family trip', 'The library'],
+        ['Work and bakery', 'A family trip', 'The library'],
         0,
         'Maya talks about Saturday work, and Grandpa Sam compares his bakery.',
       ),
@@ -592,7 +592,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
         'They talk about English, art, and the weekend.',
       ),
       details: [
-        q('When is Maya’s English class?', ['Tuesday and Thursday at six', 'Only Tuesday', 'Monday morning'], 0, 'Maya says: “Tuesday at six” and “Thursday at the same time.”'),
+        q('When is Maya’s English class?', ['Tuesday and Thursday', 'Only Tuesday', 'Monday morning'], 0, 'Maya says: “Tuesday at six” and “Thursday at the same time.”'),
         q('When is Maya’s art class?', ['Thursday afternoon', 'Monday at nine', 'Saturday'], 1, 'Maya says: “On Monday morning, at nine o’clock.”'),
         q('What does Maya do on Sunday?', ['She works', 'She studies art', 'She sleeps'], 2, 'Maya says: “I sleep on Sunday.”'),
       ],
@@ -648,7 +648,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
       ),
       details: [
         q('What do they not have at home?', ['Eggs', 'Rice', 'Bread'], 0, 'Maya says: “We haven’t got any eggs.”'),
-        q('Who pays for the coffee?', ['Maya', 'Leo', 'Grandpa Sam'], 1, 'Leo says: “I’ve got money for the coffee.”'),
+        q('What does Leo have?', ['Some eggs', 'Coffee money', 'Rice bread'], 1, 'Leo says: “I’ve got money for the coffee.”'),
         q('What cake does Grandpa Sam have?', ['Chocolate cake', 'Cheese cake', 'Banana cake'], 2, 'Maya says: “It’s always the banana cake.”'),
       ],
       consolidation: q(
@@ -697,7 +697,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
       ],
       gist: q(
         'What do they talk about?',
-        ['Food they like and Maya’s job', 'A birthday', 'The library'],
+        ['Soup and job', 'A birthday', 'Library books'],
         0,
         'They talk about soup, rice and beans, and Maya’s café job.',
       ),
@@ -757,8 +757,8 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
         'They talk about trousers, a shirt, a jacket, a scarf, and shoes.',
       ),
       details: [
-        q('What does Maya wear to work?', ['Black trousers and a white shirt', 'Jeans', 'A uniform'], 0, 'Maya says: “I wear black trousers and a white shirt.”'),
-        q('What does Maya wear in winter?', ['A hat', 'A green jacket and a scarf', 'Boots'], 1, 'Maya says: “In winter I wear a green jacket and a scarf.”'),
+        q('What does Maya wear to work?', ['Black clothes', 'Blue jeans', 'A uniform'], 0, 'Maya says: “I wear black trousers and a white shirt.”'),
+        q('What does Maya wear in winter?', ['A red hat', 'Green jacket', 'Black boots'], 1, 'Maya says: “In winter I wear a green jacket and a scarf.”'),
         q('Why does Leo keep his old shoes?', ['They are new', 'They are expensive', 'They are comfortable'], 2, 'Leo says: “They’re comfortable.”'),
       ],
       consolidation: q(
@@ -922,7 +922,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
         'They describe what is happening in front of them.',
       ),
       details: [
-        q('What are the children doing?', ['Playing football near the trees', 'Running with dogs', 'Singing'], 0, 'Maya says: “Children are playing football near the trees.”'),
+        q('What are the children doing?', ['Playing football', 'Running with dogs', 'Singing together'], 0, 'Maya says: “Children are playing football near the trees.”'),
         q('What is the man selling?', ['Coffee', 'Ice cream', 'Newspapers'], 1, 'Leo says: “That man is selling ice cream.”'),
         q('How often does the guitar player play here?', ['Once a month', 'For the first time', 'Every Sunday'], 2, 'Leo says: “He plays here every Sunday.”'),
       ],
@@ -1034,7 +1034,7 @@ export const ENGLISH_A1_SERIES: A1ListeningSeries = {
       details: [
         q('Where do they meet, and when?', ['At the library at four', 'At the park at two', 'At the café at six'], 0, 'Leo says: “We’re meeting at the library at four.”'),
         q('What is Leo’s sister bringing?', ['A cake', 'Her camera', 'Books'], 1, 'Leo says: “My sister is bringing her camera.”'),
-        q('What is Maya doing later?', ['Working another shift', 'Going to sleep', 'Making dinner at her grandfather’s house'], 2, 'Maya says: “I’m making dinner at his house.”'),
+        q('What is Maya doing later?', ['Working late', 'Going home', 'Making dinner'], 2, 'Maya says: “I’m making dinner at his house.”'),
       ],
       consolidation: q(
         'Complete: I ___ working on Saturday morning.',
