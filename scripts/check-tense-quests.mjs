@@ -2,6 +2,8 @@ import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest-co
 import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { ITALIAN_DRILL_SERIES } from '../src/data/practica/italian-tense-intensive-bank.ts'
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
+import { FRENCH_PRESENT_EDITORIAL } from '../src/data/practica/french-present-editorial.ts'
+import { FRENCH_PASSE_COMPOSE_EDITORIAL } from '../src/data/practica/french-passe-compose-editorial.ts'
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
@@ -329,6 +331,19 @@ const mixedContexts = [
   ...ENGLISH_TENSE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === 'conditional-mixed').map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`)),
 ]
 for (const context of mixedContexts) assert(/\b(?:now|today|yesterday|last|in 20\d\d|spring|summer|March)\b/i.test(context), `english/conditional-mixed: falta un marcador que haga visible el cruce temporal («${context}»)`)
+
+const FRENCH_EDITORIAL_PACKS = [
+  ['present', FRENCH_PRESENT_EDITORIAL],
+  ['passe-compose', FRENCH_PASSE_COMPOSE_EDITORIAL],
+]
+for (const [formId, pack] of FRENCH_EDITORIAL_PACKS) {
+  assert(pack.choices.length === 10, `french/${formId}: se requieren 10 decisiones editoriales`)
+  assert(pack.micro.length === 10, `french/${formId}: se requieren 10 microtextos editoriales`)
+  assert(pack.long.length === 10 && pack.long.every((item) => item.gaps.length === 3), `french/${formId}: se requieren 10 relatos conectados de tres huecos`)
+  assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `french/${formId}: se requieren 10 textos de reparación de tres verbos`)
+  assert(pack.timelines.length === 10, `french/${formId}: se requieren 10 secuencias semánticas`)
+  assert(pack.finalGaps.length === 10 && pack.finalGaps.every((gap) => gap.candidateCardIds?.length === 4 && (gap.standalone?.before.trim() || gap.standalone?.after.trim())), `french/${formId}: se requieren 10 decisiones finales autónomas con cuatro candidatos`)
+}
 
 const GENERATED_CONFIGS = [
   FRENCH_STRUCTURE_QUEST,
