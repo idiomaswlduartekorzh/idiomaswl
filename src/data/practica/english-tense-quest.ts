@@ -18,9 +18,11 @@ import { ENGLISH_FUTURE_GOING_TO_EDITORIAL } from './english-future-going-to-edi
 import { ENGLISH_FUTURE_CONTINUOUS_EDITORIAL } from './english-future-continuous-editorial.ts'
 import { ENGLISH_FUTURE_PERFECT_EDITORIAL } from './english-future-perfect-editorial.ts'
 import { ENGLISH_FUTURE_PERFECT_CONTINUOUS_EDITORIAL } from './english-future-perfect-continuous-editorial.ts'
+import { ENGLISH_CONDITIONAL_ZERO_EDITORIAL } from './english-conditional-zero-editorial.ts'
+import { ENGLISH_CONDITIONAL_FIRST_EDITORIAL } from './english-conditional-first-editorial.ts'
 
-const ENGLISH_EDITORIAL_PACKS = [ENGLISH_PRESENT_SIMPLE_EDITORIAL, ENGLISH_PRESENT_CONTINUOUS_EDITORIAL, ENGLISH_PRESENT_PERFECT_EDITORIAL, ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_PAST_SIMPLE_EDITORIAL, ENGLISH_PAST_CONTINUOUS_EDITORIAL, ENGLISH_PAST_PERFECT_EDITORIAL, ENGLISH_PAST_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_FUTURE_WILL_EDITORIAL, ENGLISH_FUTURE_GOING_TO_EDITORIAL, ENGLISH_FUTURE_CONTINUOUS_EDITORIAL, ENGLISH_FUTURE_PERFECT_EDITORIAL, ENGLISH_FUTURE_PERFECT_CONTINUOUS_EDITORIAL]
-const ENGLISH_EDITORIAL_FORMS = new Set<EnglishFormId>(['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to', 'future-continuous', 'future-perfect', 'future-perfect-continuous'])
+const ENGLISH_EDITORIAL_PACKS = [ENGLISH_PRESENT_SIMPLE_EDITORIAL, ENGLISH_PRESENT_CONTINUOUS_EDITORIAL, ENGLISH_PRESENT_PERFECT_EDITORIAL, ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_PAST_SIMPLE_EDITORIAL, ENGLISH_PAST_CONTINUOUS_EDITORIAL, ENGLISH_PAST_PERFECT_EDITORIAL, ENGLISH_PAST_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_FUTURE_WILL_EDITORIAL, ENGLISH_FUTURE_GOING_TO_EDITORIAL, ENGLISH_FUTURE_CONTINUOUS_EDITORIAL, ENGLISH_FUTURE_PERFECT_EDITORIAL, ENGLISH_FUTURE_PERFECT_CONTINUOUS_EDITORIAL, ENGLISH_CONDITIONAL_ZERO_EDITORIAL, ENGLISH_CONDITIONAL_FIRST_EDITORIAL]
+const ENGLISH_EDITORIAL_FORMS = new Set<EnglishFormId>(['present-simple', 'present-continuous', 'present-perfect', 'present-perfect-continuous', 'past-simple', 'past-continuous', 'past-perfect', 'past-perfect-continuous', 'future-will', 'future-going-to', 'future-continuous', 'future-perfect', 'future-perfect-continuous', 'conditional-zero', 'conditional-first'])
 
 export const ENGLISH_FORMS = [
   { id: 'present-simple', label: 'Present simple', group: 'Present' },
