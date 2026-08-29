@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema'
 import TenseQuestEngine from '@/components/practica/TenseQuestEngine'
-import { PORTUGUESE_STRUCTURE_QUEST } from '@/data/practica/portuguese-structure-quest'
+import { PORTUGUESE_STRUCTURE_QUEST } from '@/data/practica/portuguese-structure-quest-config'
 
 const URL = 'https://www.idiomaswl.com/herramientas/quizes/portugues'
 export const metadata: Metadata = {

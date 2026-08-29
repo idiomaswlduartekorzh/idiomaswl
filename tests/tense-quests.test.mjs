@@ -7,7 +7,7 @@ import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-qu
 import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
-import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest.ts'
+import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
 
 const CONFIGS = [
@@ -202,6 +202,36 @@ test('French final dossiers use fresh autonomous contexts and balanced same-verb
       const context = `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`
       assert.ok(gap.standalone?.before || gap.standalone?.after, gap.id)
       assert.ok(!levelOne.has(context.toLocaleLowerCase('fr')), gap.id)
+      assert.equal(gap.candidateCardIds?.length, 4, gap.id)
+      answerPositions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
+    }
+  }
+  assert.ok(Math.max(...answerPositions) - Math.min(...answerPositions) <= 1, answerPositions.join('/'))
+})
+
+test('Brazilian Portuguese exposes ten editorial challenges per form and level', () => {
+  for (const form of PORTUGUESE_STRUCTURE_QUEST.forms) {
+    const id = form.id
+    assert.equal(PORTUGUESE_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(id)).length, 10, `${id}/choice`)
+    assert.equal(PORTUGUESE_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/micro`)
+    assert.equal(PORTUGUESE_STRUCTURE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/long`)
+    assert.equal(PORTUGUESE_STRUCTURE_QUEST.errorChallenges.filter((item) => item.tense === id).length, 10, `${id}/error`)
+    assert.equal(PORTUGUESE_STRUCTURE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length, 10, `${id}/timeline`)
+    assert.equal(PORTUGUESE_STRUCTURE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length, 10, `${id}/final`)
+  }
+})
+
+test('Brazilian Portuguese final dossiers are fresh, autonomous and balanced', () => {
+  const answerPositions = [0, 0, 0, 0]
+  for (const form of PORTUGUESE_STRUCTURE_QUEST.forms) {
+    const levelOne = new Set(PORTUGUESE_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(form.id)).map((item) => item.context.toLocaleLowerCase('pt-BR')))
+    const finals = PORTUGUESE_STRUCTURE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id))
+    assert.equal(finals.length, 10, form.id)
+    assert.equal(new Set(finals.map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)).size, 10, form.id)
+    for (const gap of finals) {
+      const context = `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`
+      assert.ok(gap.standalone?.before || gap.standalone?.after, gap.id)
+      assert.ok(!levelOne.has(context.toLocaleLowerCase('pt-BR')), gap.id)
       assert.equal(gap.candidateCardIds?.length, 4, gap.id)
       answerPositions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
     }

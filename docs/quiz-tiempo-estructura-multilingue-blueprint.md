@@ -30,6 +30,12 @@ explícitos; el `passé simple` declara siempre su registro literario; los compu
 auxiliar y concordancia. Las claves de opción, la posición del error y las tarjetas finales se
 balancean globalmente y fallan el guardián si se degradan.
 
+Actualización portuguesa (29 de agosto de 2026): las diez formas del portugués brasileño usan
+diez bancos editoriales por nivel. `Estar + gerúndio` se separa del presente; el futuro sintético
+declara su valor de registro frente a `ir + infinitivo`; el mais-que-perfeito y el futuro composto
+exigen otro marco temporal; el condicional passado exige condición o resultado real visible. La
+configuración activa no importa la factoría heredada.
+
 ## Principio de producto
 
 No se traduce una lista inglesa de “tiempos”. Cada idioma selecciona las oposiciones que un

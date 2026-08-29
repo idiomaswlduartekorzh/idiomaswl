@@ -15,7 +15,7 @@ import { FRENCH_CONDITIONNEL_PASSE_EDITORIAL } from '../src/data/practica/french
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
-import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest.ts'
+import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
 import { PORTUGUESE_PRESENT_EDITORIAL } from '../src/data/practica/portuguese-present-editorial.ts'
 import { PORTUGUESE_PROGRESSIVE_EDITORIAL } from '../src/data/practica/portuguese-progressive-editorial.ts'
 import { PORTUGUESE_PRETERITE_PERFECT_EDITORIAL } from '../src/data/practica/portuguese-preterite-perfect-editorial.ts'
@@ -24,6 +24,8 @@ import { PORTUGUESE_PLUPERFECT_EDITORIAL } from '../src/data/practica/portuguese
 import { PORTUGUESE_NEAR_FUTURE_EDITORIAL } from '../src/data/practica/portuguese-near-future-editorial.ts'
 import { PORTUGUESE_FORMAL_FUTURE_EDITORIAL } from '../src/data/practica/portuguese-formal-future-editorial.ts'
 import { PORTUGUESE_FUTURE_PERFECT_EDITORIAL } from '../src/data/practica/portuguese-future-perfect-editorial.ts'
+import { PORTUGUESE_FUTURE_IN_PAST_EDITORIAL } from '../src/data/practica/portuguese-future-in-past-editorial.ts'
+import { PORTUGUESE_PAST_CONDITIONAL_EDITORIAL } from '../src/data/practica/portuguese-past-conditional-editorial.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
 
 const failures = []
@@ -400,6 +402,8 @@ const PORTUGUESE_EDITORIAL_PACKS = [
   ['futuro-proximo', PORTUGUESE_NEAR_FUTURE_EDITORIAL],
   ['futuro-presente', PORTUGUESE_FORMAL_FUTURE_EDITORIAL],
   ['futuro-composto', PORTUGUESE_FUTURE_PERFECT_EDITORIAL],
+  ['futuro-preterito', PORTUGUESE_FUTURE_IN_PAST_EDITORIAL],
+  ['condicional-passado', PORTUGUESE_PAST_CONDITIONAL_EDITORIAL],
 ]
 for (const [formId, pack] of PORTUGUESE_EDITORIAL_PACKS) {
   assert(pack.choices.length === 10 && pack.micro.length === 10, `portuguese/${formId}: se requieren 10 decisiones y 10 microtextos`)
@@ -407,6 +411,7 @@ for (const [formId, pack] of PORTUGUESE_EDITORIAL_PACKS) {
   assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `portuguese/${formId}: se requieren 10 reparaciones de tres verbos`)
   assert(pack.timelines.length === 10, `portuguese/${formId}: se requieren 10 secuencias semánticas`)
   assert(pack.finalGaps.length === 10 && pack.finalGaps.every((gap) => gap.candidateCardIds?.length === 4 && (gap.standalone?.before.trim() || gap.standalone?.after.trim())), `portuguese/${formId}: se requieren 10 decisiones finales autónomas`)
+  for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido portugués heredado`)
 }
 
 const portuguesePluperfectContexts = [
@@ -427,8 +432,15 @@ const portugueseFuturePerfectContexts = [
 ]
 for (const context of portugueseFuturePerfectContexts) assert(/(?:até|quando|antes|à meia-noite|ao meio-dia|às seis|às oito|ao fim)/i.test(context), `portuguese/futuro-composto: falta prazo ou segundo ponto futuro («${context}»)`)
 
+const portuguesePastConditionalContexts = [
+  ...PORTUGUESE_PAST_CONDITIONAL_EDITORIAL.micro.map((item) => item.segments.join(' ')),
+  ...PORTUGUESE_PAST_CONDITIONAL_EDITORIAL.long.map((item) => item.segments.join(' ')),
+  ...PORTUGUESE_PAST_CONDITIONAL_EDITORIAL.errors.map((item) => `${item.title} ${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`),
+  ...PORTUGUESE_PAST_CONDITIONAL_EDITORIAL.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+]
+for (const context of portuguesePastConditionalContexts) assert(/(?:com|sem|se |mas |não |cancelad|negad|recusad|adiad|fechad|prazo curto|impedid|perdid|faltou)/i.test(context), `portuguese/condicional-passado: falta condición o resultado real explícito («${context}»)`)
+
 const GENERATED_CONFIGS = [
-  PORTUGUESE_STRUCTURE_QUEST,
   GERMAN_STRUCTURE_QUEST,
   RUSSIAN_STRUCTURE_QUEST,
   JAPANESE_STRUCTURE_QUEST,
@@ -440,8 +452,9 @@ for (const config of GENERATED_CONFIGS) {
 }
 
 validate(FRENCH_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
+validate(PORTUGUESE_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 
-const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
+const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
 assert(new Set(allConfigs.map((config) => config.storageKey)).size === allConfigs.length, 'los storageKey deben ser únicos por idioma')
 assert(allConfigs.every((config) => /-v\d+$/.test(config.storageKey)), 'cada storageKey debe declarar una versión de esquema')
 

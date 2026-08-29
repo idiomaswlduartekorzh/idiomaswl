@@ -227,6 +227,22 @@ test('francés mantiene registro literario y planos temporales explícitos', asy
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })
 
+test('portugués brasileño distingue progresivo y futuro compuesto con contexto', async ({ page }) => {
+  await page.goto('/herramientas/quizes/portugues?forms=progressivo&level=3')
+  for (let level = 0; level < 6; level += 1) await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  await expect(page.getByText('A transmissão ao vivo', { exact: true })).toBeVisible()
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('A repórter')
+
+  await page.goto('/herramientas/quizes/portugues?forms=futuro-composto&level=3')
+  await expect(page.getByText('Até a abertura de sexta', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('Até sexta de manhã')
+
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.getByText(/Até amanhã à noite/)).toBeVisible()
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
 test('parámetros y progreso local corruptos no rompen el quiz', async ({ page }) => {
   await page.goto('/herramientas/quizes/ingles?forms=no-existe&level=99')
   await expect(page.locator('#tense-selector-title')).toBeVisible()

@@ -6,7 +6,7 @@ import {
   type StructureEditorialMicroSeed,
   type StructureEditorialSequenceSeed,
 } from './editorial-structure-builder.ts'
-import type { PortugueseFormId } from './portuguese-structure-quest.ts'
+import type { PortugueseFormId } from './portuguese-structure-quest-config.ts'
 
 export type PortugueseEditorialMicroSeed = StructureEditorialMicroSeed
 export type PortugueseEditorialGapSeed = StructureEditorialGapSeed
