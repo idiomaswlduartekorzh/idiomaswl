@@ -6,7 +6,7 @@ import {
   type StructureEditorialMicroSeed,
   type StructureEditorialSequenceSeed,
 } from './editorial-structure-builder.ts'
-import type { KoreanFormId } from './korean-structure-quest.ts'
+import type { KoreanFormId } from './korean-structure-quest-config.ts'
 
 type KoreanAnswer = string | [string, ...string[]]
 export type KoreanCompactMicro = [string, string, string, string, string, KoreanAnswer, string, string, string]

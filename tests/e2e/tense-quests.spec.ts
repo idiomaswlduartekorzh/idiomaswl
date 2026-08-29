@@ -293,6 +293,27 @@ test('japonés separa progresión y estado resultante con construcciones complet
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })
 
+test('coreano separa nivel de habla, progresión y estado resultante', async ({ page }) => {
+  await page.goto('/herramientas/quizes/coreano?forms=present-formal&level=3')
+  for (let level = 0; level < 6; level += 1) await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  await expect(page.getByText('공식 행사 안내', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('공식적으로')
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+
+  await page.goto('/herramientas/quizes/coreano?forms=progressive&level=3')
+  await expect(page.getByText('조용한 거실', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('지금')
+
+  await page.goto('/herramientas/quizes/coreano?forms=result-state&level=3')
+  await expect(page.getByText('빈 사무실', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('퇴근 뒤')
+
+  await page.goto('/herramientas/quizes/coreano?forms=request-prohibition&level=2')
+  await expect(page.getByText('대기실 자리', { exact: true })).toBeVisible()
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
 test('parámetros y progreso local corruptos no rompen el quiz', async ({ page }) => {
   await page.goto('/herramientas/quizes/ingles?forms=no-existe&level=99')
   await expect(page.locator('#tense-selector-title')).toBeVisible()

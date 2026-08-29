@@ -1,7 +1,7 @@
 # Quizzes de idiomas — blueprint operativo para nuevas implementaciones
 
 Fuente canónica para construir o ampliar quizzes en `/herramientas/quizes` sin reconstruir el
-contexto de las sesiones anteriores. Estado verificado: 28 de agosto de 2026.
+contexto de las sesiones anteriores. Estado verificado: 29 de agosto de 2026.
 
 Este documento manda sobre notas históricas cuando describe la arquitectura actual. Para las
 decisiones lingüísticas por idioma sigue mandando
@@ -39,14 +39,15 @@ japonés y coreano. La familia de pronombres inicia con un piloto italiano bajo
 | `src/components/practica/PronounQuestEngine.tsx` | Motor cerrado de referente, función, posición, reparación, transformación y cadena final |
 | `src/components/practica/TenseQuestEngine.module.css` | Adaptaciones propias del motor sobre el sistema visual de Práctica |
 | `src/data/practica/tense-quest-types.ts` | Contrato tipado de configuración y retos |
-| `src/data/practica/create-structure-quest.ts` | Factoría heredada de tres ejemplos; solo permanece en idiomas aún no migrados |
-| `src/data/practica/*-structure-quest.ts` | Contenido declarativo heredado de ruso, japonés y coreano; los archivos antiguos de idiomas migrados no son fuente pública |
+| `src/data/practica/create-structure-quest.ts` | Factoría heredada de tres ejemplos; ya no alimenta ninguna ruta pública de tiempos |
+| `src/data/practica/*-structure-quest.ts` | Archivos históricos conservados para trazabilidad; ninguna ruta pública los importa |
 | `src/data/practica/editorial-structure-builder.ts` | Constructor neutral de IDs, balance y UI; nunca inventa contenido lingüístico |
 | `src/data/practica/french-structure-quest-config.ts` | Configuración francesa de diez bancos editoriales completos |
 | `src/data/practica/portuguese-structure-quest-config.ts` | Configuración editorial de portugués brasileño y sus contrastes de registro |
 | `src/data/practica/german-structure-quest-config.ts` | Configuración alemana editorial; preserva unidad verbal, orden, auxiliar y tratamiento |
 | `src/data/practica/russian-structure-quest-config.ts` | Configuración rusa editorial; valida aspecto, anclas de `бы`, imperativo e infinitivo |
 | `src/data/practica/japanese-structure-quest-config.ts` | Configuración japonesa editorial; preserva no-pasado, valores de `ています` y función comunicativa |
+| `src/data/practica/korean-structure-quest-config.ts` | Configuración coreana editorial; preserva nivel de habla, aspecto y construcciones funcionales completas |
 | `src/data/practica/english-tense-quest-config.ts` | Configuración editorial exclusiva de inglés; no importa el generador heredado |
 | `src/data/practica/italian-tense-quest.ts` | Banco editorial de italiano |
 | `src/data/practica/italian-tense-quest-config.ts` | Adaptación del banco italiano al motor común |

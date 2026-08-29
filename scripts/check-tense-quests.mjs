@@ -14,7 +14,7 @@ import { FRENCH_CONDITIONNEL_PRESENT_EDITORIAL } from '../src/data/practica/fren
 import { FRENCH_CONDITIONNEL_PASSE_EDITORIAL } from '../src/data/practica/french-conditionnel-passe-editorial.ts'
 import { GERMAN_EDITORIAL_PACKS, GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest-config.ts'
 import { JAPANESE_EDITORIAL_PACKS, JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest-config.ts'
-import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
+import { KOREAN_EDITORIAL_PACKS, KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest-config.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
 import { PORTUGUESE_PRESENT_EDITORIAL } from '../src/data/practica/portuguese-present-editorial.ts'
 import { PORTUGUESE_PROGRESSIVE_EDITORIAL } from '../src/data/practica/portuguese-progressive-editorial.ts'
@@ -440,9 +440,7 @@ const portuguesePastConditionalContexts = [
 ]
 for (const context of portuguesePastConditionalContexts) assert(/(?:com|sem|se |mas |não |cancelad|negad|recusad|adiad|fechad|prazo curto|impedid|perdid|faltou)/i.test(context), `portuguese/condicional-passado: falta condición o resultado real explícito («${context}»)`)
 
-const GENERATED_CONFIGS = [
-  KOREAN_STRUCTURE_QUEST,
-]
+const GENERATED_CONFIGS = []
 
 for (const config of GENERATED_CONFIGS) {
   validate(config, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
@@ -453,6 +451,7 @@ validate(PORTUGUESE_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 1
 validate(GERMAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(RUSSIAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(JAPANESE_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
+validate(KOREAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 
 for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
   const formId = GERMAN_STRUCTURE_QUEST.forms[index].id
@@ -535,7 +534,33 @@ for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[7]).flatMap((g
 for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[8]).flatMap((gap) => gap.answers)) assert(answer.length > 2 && /たら$/u.test(answer), `japanese/tara: falta forma condicional completa («${answer}»)`)
 for (const answer of japaneseWrittenGaps(JAPANESE_EDITORIAL_PACKS[9]).flatMap((gap) => gap.answers)) assert(/ください$/u.test(answer), `japanese/request-prohibition: falta función completa («${answer}»)`)
 
-const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, GERMAN_STRUCTURE_QUEST, RUSSIAN_STRUCTURE_QUEST, JAPANESE_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
+for (const [index, pack] of KOREAN_EDITORIAL_PACKS.entries()) {
+  const formId = KOREAN_STRUCTURE_QUEST.forms[index].id
+  assert(pack.choices.length === 10 && pack.micro.length === 10, `korean/${formId}: se requieren 10 decisiones y 10 microtextos`)
+  assert(pack.long.length === 10 && pack.long.every((item) => item.gaps.length === 3), `korean/${formId}: se requieren 10 relatos conectados de tres huecos`)
+  assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `korean/${formId}: se requieren 10 reparaciones de tres expresiones`)
+  assert(pack.timelines.length === 10 && pack.finalGaps.length === 10, `korean/${formId}: faltan secuencias o decisiones finales`)
+  for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido coreano heredado`)
+}
+const koreanContexts = (pack) => [...pack.micro.map((item) => item.segments.join(' ')), ...pack.long.map((item) => item.segments.join(' ')), ...pack.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`)]
+const koreanWrittenAnswers = (pack) => [...pack.micro, ...pack.long].flatMap((item) => item.gaps.flatMap((gap) => gap.answers))
+for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[0])) assert(/(?:친구|가족|일상|이웃|학생|편하게|아이|동료|손님|집에서)/u.test(context), `korean/present-polite: falta interlocutor cotidiano («${context}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[0])) assert(/요$/u.test(answer) && !/습니다$/u.test(answer), `korean/present-polite: nivel de habla inválido («${answer}»)`)
+for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[1])) assert(/(?:공식|안내|방송|보고|발표|업무|면접|규정|기술|기관|과학|박물관|역 |공항|회사|관리자|기자|행사)/u.test(context), `korean/present-formal: falta situación formal visible («${context}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[1])) assert(/(?:합니다|됩니다|습니다|납니다|립니다)$/u.test(answer), `korean/present-formal: falta 합니다체 completo («${answer}»)`)
+for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[2])) assert(/(?:어제|지난|방금|아까|오늘 아침|한 시간 전|두 시간 전|어젯밤|주말|아침에|점심에)/u.test(context), `korean/past-polite: falta ancla pasada cerrada («${context}»)`)
+for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[3])) assert(/(?:내일|다음|주말|곧|향후|휴가|졸업|저녁|토요일|봄|예보|계획|끝나면|결승|현재)/u.test(context), `korean/future-intention: falta ancla futura o evidencia («${context}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[3])) assert(/^.+ 거예요$/u.test(answer), `korean/future-intention: falta construcción completa («${answer}»)`)
+for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[4])) assert(/(?:지금|현재|요즘|이번|말하는 순간|창밖|눈앞|계속|진행)/u.test(context), `korean/progressive: falta actividad en curso visible («${context}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[4])) assert(/고 있어요$/u.test(answer), `korean/progressive: falta -고 있어요 completo («${answer}»)`)
+for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[5])) assert(/(?:이미|결과|뒤|끝|상태|남|놓|잠|깨|닫|꺼|걸|붙|덮|묻|배치|설치|수리|아무도|벽|열쇠|조각|두고|명찰|대기실|준비해 둔|예약석|정리해서|주차해 두어서|밤이 되어)/u.test(context), `korean/result-state: falta evidencia posterior al cambio («${context}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[5])) assert(answer.length > 5 && / 있어요$/u.test(answer) && !/고 있어요$/u.test(answer), `korean/result-state: falta construcción completa («${answer}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[6])) assert(/적이 (?:있|없)어요$/u.test(answer), `korean/experience: falta construcción completa («${answer}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[7])) assert(answer.length > 1 && /면$/u.test(answer), `korean/conditional: falta -(으)면 completo («${answer}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[8])) assert(/려고 해요$/u.test(answer), `korean/purpose-intention: falta construcción completa («${answer}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[9])) assert(answer.length > 2 && /(?:세요|주세요|마세요)$/u.test(answer) && !/^(?:마세요|주세요)$/u.test(answer), `korean/request-prohibition: falta función completa («${answer}»)`)
+
+const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, GERMAN_STRUCTURE_QUEST, RUSSIAN_STRUCTURE_QUEST, JAPANESE_STRUCTURE_QUEST, KOREAN_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
 assert(new Set(allConfigs.map((config) => config.storageKey)).size === allConfigs.length, 'los storageKey deben ser únicos por idioma')
 assert(allConfigs.every((config) => /-v\d+$/.test(config.storageKey)), 'cada storageKey debe declarar una versión de esquema')
 

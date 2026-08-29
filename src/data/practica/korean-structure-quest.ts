@@ -1,3 +1,4 @@
+/** @deprecated La ruta pública usa korean-structure-quest-config.ts y sus bancos editoriales auditados. */
 import { createStructureQuest, type FinalRow, type StructureSeed } from './create-structure-quest.ts'
 
 export const KOREAN_FORMS = [

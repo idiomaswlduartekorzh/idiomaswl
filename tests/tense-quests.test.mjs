@@ -6,7 +6,7 @@ import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-qu
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest-config.ts'
 import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest-config.ts'
-import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
+import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest-config.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest-config.ts'
 
@@ -304,6 +304,33 @@ test('Japanese final dossiers are autonomous and balanced', () => {
     const finals = JAPANESE_STRUCTURE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id))
     assert.equal(new Set(finals.map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)).size, 10, form.id)
     for (const gap of finals) positions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
+  }
+  assert.ok(Math.max(...positions) - Math.min(...positions) <= 1, positions.join('/'))
+})
+
+test('Korean exposes ten editorial challenges per contrast and level', () => {
+  for (const form of KOREAN_STRUCTURE_QUEST.forms) {
+    const id = form.id
+    assert.equal(KOREAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(id)).length, 10, `${id}/choice`)
+    assert.equal(KOREAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/micro`)
+    assert.equal(KOREAN_STRUCTURE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/long`)
+    assert.equal(KOREAN_STRUCTURE_QUEST.errorChallenges.filter((item) => item.tense === id).length, 10, `${id}/error`)
+    assert.equal(KOREAN_STRUCTURE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length, 10, `${id}/timeline`)
+    assert.equal(KOREAN_STRUCTURE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length, 10, `${id}/final`)
+  }
+})
+
+test('Korean final dossiers are autonomous and balanced', () => {
+  const positions = [0, 0, 0, 0]
+  for (const form of KOREAN_STRUCTURE_QUEST.forms) {
+    const finals = KOREAN_STRUCTURE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id))
+    assert.equal(finals.length, 10, form.id)
+    assert.equal(new Set(finals.map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)).size, 10, form.id)
+    for (const gap of finals) {
+      assert.ok(gap.standalone?.before || gap.standalone?.after, gap.id)
+      assert.equal(gap.candidateCardIds?.length, 4, gap.id)
+      positions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
+    }
   }
   assert.ok(Math.max(...positions) - Math.min(...positions) <= 1, positions.join('/'))
 })

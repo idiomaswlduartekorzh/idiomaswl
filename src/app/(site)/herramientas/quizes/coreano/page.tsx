@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema'
 import TenseQuestEngine from '@/components/practica/TenseQuestEngine'
-import { KOREAN_STRUCTURE_QUEST } from '@/data/practica/korean-structure-quest'
+import { KOREAN_STRUCTURE_QUEST } from '@/data/practica/korean-structure-quest-config'
 
 const URL = 'https://www.idiomaswl.com/herramientas/quizes/coreano'
 export const metadata: Metadata = {
