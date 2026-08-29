@@ -36,6 +36,7 @@ import { fileURLToPath } from 'node:url'
  *
  *   node scripts/audit-listening-content.mjs
  *   node scripts/audit-listening-content.mjs --lang ingles
+ *   node scripts/audit-listening-content.mjs --series ingles/a2
  *   node scripts/audit-listening-content.mjs --verbose
  */
 
@@ -51,6 +52,7 @@ const args = process.argv.slice(2)
 const verbose = args.includes('--verbose')
 const val = (flag) => (args.includes(flag) ? args[args.indexOf(flag) + 1] : null)
 const onlyLang = val('--lang')
+const onlySeries = val('--series')?.toLowerCase()
 
 /** Desfase tolerable entre la duración declarada y la real del mp3. */
 const DESFASE_MAXIMO = 4
@@ -388,8 +390,11 @@ if (problems.length) {
 }
 if (warnings.length) {
   console.log(`\n· ${warnings.length} avisos`)
-  for (const item of warnings.slice(0, 60)) console.log(`  · ${item}`)
-  if (warnings.length > 60) console.log(`  · … y ${warnings.length - 60} más`)
+  const visibleWarnings = onlySeries
+    ? warnings.filter((item) => item.toLowerCase().startsWith(`${onlySeries} `))
+    : warnings
+  for (const item of visibleWarnings.slice(0, 60)) console.log(`  · ${item}`)
+  if (visibleWarnings.length > 60) console.log(`  · … y ${visibleWarnings.length - 60} más`)
 }
 
 console.log(`\n${rows.length} series auditadas. ${problems.length} problemas, ${warnings.length} avisos.`)
