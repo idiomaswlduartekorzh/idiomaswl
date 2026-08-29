@@ -93,6 +93,7 @@ test('italiano ofrece progresivos, diez retos por nivel e informe final', async 
   await expect(page.getByRole('status')).toContainText('Resultado global y próximos pasos')
   await expect(page.getByRole('status')).toContainText('Comentarios de mejora')
   await expect(page.getByRole('status')).toContainText('1 de 6 niveles')
+  await expect(page.getByRole('status')).not.toContainText('10 de 10 puntos correctos')
 })
 
 test('un estudiante puede cerrar los 6 niveles sin recibir corrección anticipada', async ({ page }) => {

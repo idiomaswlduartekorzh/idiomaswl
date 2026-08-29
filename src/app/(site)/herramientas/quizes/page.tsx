@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { QUIZ_LANGUAGES } from '@/data/practica/quiz-language-catalog'
-import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 
 import s from './QuizesHub.module.css'
 
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function QuizesPage() {
   return (
-    <div className="wlp-page" style={{ '--wlp-accent': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
+    <div className="wlp-page">
       <div className="wlp-shell">
         <nav className="wlp-breadcrumb" aria-label="Migas de pan">
           <Link href="/herramientas">Herramientas</Link>
@@ -45,7 +44,11 @@ export default function QuizesPage() {
         <ul className={s.grid}>
           {QUIZ_LANGUAGES.map((quiz) => (
             <li key={quiz.slug}>
-              <Link href={`/herramientas/quizes/idiomas/${quiz.slug}`} className={`wlp-card wlp-card--path ${s.card}`}>
+              <Link
+                href={`/herramientas/quizes/idiomas/${quiz.slug}`}
+                className={`wlp-card wlp-card--path ${s.card}`}
+                style={{ '--wlp-accent': quiz.accent } as React.CSSProperties}
+              >
                 <span className="wlp-eyebrow wlp-eyebrow--card" lang={quiz.languageCode}>
                   {quiz.targetName}
                 </span>

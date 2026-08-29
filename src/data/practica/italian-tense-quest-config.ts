@@ -1,4 +1,10 @@
 import { ITALIAN_DRILL_SERIES } from './italian-tense-intensive-bank.ts'
+import {
+  PASSATO_PROSSIMO_ERRORS,
+  PASSATO_PROSSIMO_LONG,
+  PASSATO_PROSSIMO_MICRO,
+  PASSATO_PROSSIMO_TIMELINES,
+} from './italian-passato-prossimo-editorial.ts'
 import { LEVEL_META, TENSE_OPTIONS, type TenseId } from './italian-tense-quest.ts'
 import type { BankChallenge, ChoiceChallenge, ErrorChallenge, GapChallenge, TenseQuestConfig, TimelineChallenge } from './tense-quest-types'
 
@@ -107,8 +113,15 @@ ITALIAN_DRILL_SERIES.forEach((series, seriesIndex) => {
 })
 
 const finalChallenges: BankChallenge<TenseId>[] = Array.from({ length: 10 }, (_, challengeIndex) => {
-  const drills = ITALIAN_DRILL_SERIES.map((series) => ({ series, drill: series.drills[challengeIndex] }))
-  const cards = drills.map(({ series, drill }) => ({ id: `it-final-card-${challengeIndex + 1}-${series.id}`, text: drill.answer }))
+  const drills = ITALIAN_DRILL_SERIES.map((series, seriesIndex) => {
+    const drill = series.drills[challengeIndex]
+    const answerPosition = (challengeIndex + seriesIndex) % 4
+    return { series, drill, answerPosition, options: placeCorrectAnswer(drill.answer, drill.alternatives, answerPosition) }
+  })
+  const cards = drills.flatMap(({ series, options }) => options.map((text, optionIndex) => ({
+    id: `it-final-card-${challengeIndex + 1}-${series.id}-${optionIndex}`,
+    text,
+  })))
   return {
     id: `it-final-dossier-${challengeIndex + 1}`,
     title: `Dossier finale · ${challengeIndex + 1}`,
@@ -118,20 +131,22 @@ const finalChallenges: BankChallenge<TenseId>[] = Array.from({ length: 10 }, (_,
       ...drills.slice(1).map(({ drill }, index) => `${drills[index].drill.after} · ${drill.before}`),
       drills.at(-1)?.drill.after ?? '',
     ],
-    gaps: drills.map(({ series }, index) => ({
+    gaps: drills.map(({ series, drill, answerPosition }) => ({
       id: `it-final-gap-${challengeIndex + 1}-${series.id}`,
       tenseId: series.id,
       tense: series.label,
-      answerCardId: cards[index].id,
+      answerCardId: `it-final-card-${challengeIndex + 1}-${series.id}-${answerPosition}`,
+      candidateCardIds: [0, 1, 2, 3].map((optionIndex) => `it-final-card-${challengeIndex + 1}-${series.id}-${optionIndex}`),
+      standalone: { before: drill.before, after: drill.after },
     })),
     cards,
-    explanation: 'El dossier mezcla las trece formas en contextos independientes; la selección del alumno determina cuáles debe resolver.',
+    explanation: 'Cada decisión conserva su contexto completo y contrasta cuatro formas del mismo verbo; no se puede resolver descartando vocabulario ajeno.',
   }
 })
 
 export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
   id: 'italian-tense-quest',
-  storageKey: 'wl-italian-tense-quest-v5',
+  storageKey: 'wl-italian-tense-quest-v6',
   forms: TENSE_OPTIONS,
   presets: [
     { label: 'Pasados', ids: ['passato-prossimo', 'imperfetto', 'imperfetto-progressivo', 'passato-remoto', 'trapassato-prossimo', 'trapassato-remoto'] },
@@ -141,15 +156,15 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
   ],
   levels: LEVEL_META,
   choiceChallenges,
-  microStories,
-  longStories,
-  errorChallenges,
-  timelineChallenges,
+  microStories: [...microStories.filter((item) => !item.gaps.some((gap) => gap.tense === 'passato-prossimo')), ...PASSATO_PROSSIMO_MICRO],
+  longStories: [...longStories.filter((item) => !item.gaps.some((gap) => gap.tense === 'passato-prossimo')), ...PASSATO_PROSSIMO_LONG],
+  errorChallenges: [...errorChallenges.filter((item) => item.tense !== 'passato-prossimo'), ...PASSATO_PROSSIMO_ERRORS],
+  timelineChallenges: [...timelineChallenges.filter((item) => !item.slots.some((slot) => slot.tense === 'passato-prossimo')), ...PASSATO_PROSSIMO_TIMELINES],
   finalChallenges,
   copy: {
     languageName: 'Italiano',
     languageCode: 'it',
-    eyebrow: 'Quiz de tiempos · A2–B2',
+    eyebrow: 'Ejercicio de verbos · A2–B2',
     title: 'La macchina del tempo',
     lead: 'Elige las formas que quieres practicar. Cada nivel ofrece como mínimo diez ejercicios distintos y reserva la corrección hasta el final.',
     range: '13 formas',
@@ -165,5 +180,6 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
       { href: '/practica/italiano/b1/gramatica', label: 'Profundizar en B1' },
       { href: '/herramientas/quizes', label: 'Ver más quizes' },
     ],
+    accent: '#16845b',
   },
 }

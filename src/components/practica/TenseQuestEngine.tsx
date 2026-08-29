@@ -282,14 +282,17 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   function finalBankCardsFor(index: number) {
     const challenge = finalChallengeFor(index)
     const gaps = finalGapsFor(index)
+    if (gaps.some((gap) => gap.candidateCardIds?.length)) {
+      const candidateIds = new Set(gaps.flatMap((gap) => gap.candidateCardIds ?? [gap.answerCardId]))
+      return challenge.cards.filter((card) => candidateIds.has(card.id))
+    }
+
     const correctIds = new Set(gaps.map((gap) => gap.answerCardId))
     const minimumSize = Math.min(challenge.cards.length, Math.max(gaps.length, 4))
-    const decoyIds = new Set(
-      challenge.cards
-        .filter((card) => !correctIds.has(card.id))
-        .slice(0, Math.max(0, minimumSize - correctIds.size))
-        .map((card) => card.id),
-    )
+    const decoyIds = new Set(challenge.cards
+      .filter((card) => !correctIds.has(card.id))
+      .slice(0, Math.max(0, minimumSize - correctIds.size))
+      .map((card) => card.id))
     return challenge.cards.filter((card) => correctIds.has(card.id) || decoyIds.has(card.id))
   }
 
@@ -783,17 +786,16 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     return (
       <>
         <p className={s.taskInstruction}>
-          Completa solo las formas o estructuras que elegiste. Las demás ya están resueltas para conservar la historia.
+          Resuelve cada escena con su propio contexto. En el banco aparecen formas plausibles del mismo verbo.
         </p>
-        <div className={s.manuscript} lang={copy.languageCode}>
-          {currentFinalChallenge.segments.map((segment, index) => {
-            const gap = currentFinalChallenge.gaps[index]
-            const isActive = gap ? selectedSet.has(gap.tenseId) : false
-            const activeNumber = gap ? finalGaps.findIndex((item) => item.id === gap.id) + 1 : 0
+        <div className={s.finalScenes} lang={copy.languageCode}>
+          {finalGaps.map((gap, index) => {
+            const activeNumber = index + 1
+            const standalone = gap.standalone
             return (
-              <Fragment key={`final-${index}`}>
-                {segment}
-                {gap && isActive ? (
+              <p className={s.finalScene} key={gap.id}>
+                <span className={s.sceneNumber} aria-hidden="true">{activeNumber}</span>
+                <span>{standalone?.before ?? currentFinalChallenge.segments[currentFinalChallenge.gaps.indexOf(gap)]}</span>
                   <button
                     aria-label={`Espacio ${activeNumber}: ${cardText(bankAnswers[gap.id]) || 'vacío'}`}
                     className={`${s.bankGap} ${activeBankGap === gap.id ? s.bankGapActive : ''}`}
@@ -802,10 +804,8 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
                   >
                     {cardText(bankAnswers[gap.id]) || activeNumber}
                   </button>
-                ) : gap ? (
-                  <span className={s.fixedForm}>{cardText(gap.answerCardId)}</span>
-                ) : null}
-              </Fragment>
+                <span>{standalone?.after ?? currentFinalChallenge.segments[currentFinalChallenge.gaps.indexOf(gap) + 1]}</span>
+              </p>
             )
           })}
         </div>
@@ -815,7 +815,13 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
             <X aria-hidden="true" size={14} /> Vaciar selección
           </button>
         </div>
-        {finalBankCards.length > finalGaps.length ? <p className={s.bankHint}>Hay tarjetas distractoras que no se usan.</p> : null}
+        {finalBankCards.length > finalGaps.length ? (
+          <p className={s.bankHint}>
+            {finalGaps.some((gap) => gap.candidateCardIds?.length)
+              ? 'Cada hueco tiene distractores plausibles del mismo verbo.'
+              : 'Hay tarjetas distractoras que no se usan.'}
+          </p>
+        ) : null}
         <div className={s.wordBank} lang={copy.languageCode}>
           {finalBankCards.map((card) => (
             <button
@@ -853,11 +859,11 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
           ? errorChallenges[itemIndex]?.focus
           : activeLevel === 4
             ? timelineChallenges[itemIndex]?.focus
-            : `${selectedTenses.length} ${copy.selectedLabel}`
+            : selectedTenses.length === 1 ? '1 forma seleccionada' : `${selectedTenses.length} ${copy.selectedLabel}`
   const nextLevel = nextAvailableLevel()
 
   return (
-    <div className="wlp-page" style={{ '--wlp-accent': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
+    <div className="wlp-page" style={{ '--wlp-accent': copy.accent ?? SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
       <div className="wlp-shell">
         <nav aria-label="Migas de pan" className="wlp-breadcrumb">
           <Link href="/herramientas">Herramientas</Link>
@@ -866,7 +872,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
           <span aria-hidden="true">/</span>
           <Link href={`/herramientas/quizes/idiomas/${languageSlug}`}>{copy.languageName}</Link>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">Tiempos y estructuras</span>
+          <span aria-current="page">Verbos</span>
         </nav>
 
         <header className="wlp-hero wlp-hero--compact">

@@ -77,6 +77,8 @@ export type BankGap<FormId extends string> = {
   tenseId: FormId
   tense: string
   answerCardId: string
+  candidateCardIds?: string[]
+  standalone?: { before: string; after: string }
 }
 
 export type BankChallenge<FormId extends string> = {
@@ -111,6 +113,7 @@ export type QuestCopy = {
   levelsLead: string
   mapLabels: [string, string, string, string]
   reviewLinks: { href: string; label: string }[]
+  accent?: string
 }
 
 export type TenseQuestConfig<FormId extends string> = {

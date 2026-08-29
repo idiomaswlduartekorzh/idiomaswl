@@ -84,20 +84,20 @@ progresivo -고 있어요; estado resultante -아/어 있어요; experiencia; co
 
 ## Contrato de contenido
 
-Cada forma seleccionable nueva declara:
+Cada forma seleccionable nueva declara bancos separados por función pedagógica:
 
 - tres contextos con una sola respuesta inequívoca;
 - un lema, una pista funcional y una explicación;
 - tres distractores únicos por contexto, todos plausibles a primera vista;
 - una forma errónea explícita para el laboratorio de reparación;
 - variantes aceptadas solo cuando son normativas para el mismo significado y registro;
-- una aparición en la reconstrucción final.
+- relatos y textos de edición escritos como unidades discursivas;
+- una decisión final con contexto autónomo y cuatro formas plausibles del mismo lema.
 
-La factoría deriva de ese núcleo 3 opciones múltiples, 3 microtextos, 2 bloques de recuperación
-acumulativa, 2 reparaciones y un mapa de 3 funciones. Los bloques acumulativos reutilizan los
-casos de forma deliberada para pasar de reconocimiento a producción; no se anuncian como relatos
-nuevos. El texto final se escribe aparte porque la coherencia discursiva no debe generarse
-combinando frases al azar.
+La factoría puede derivar IDs, balance de claves y envoltorios de interfaz; no puede inventar
+coherencia. Un relato y un texto de reparación se escriben aparte porque la coherencia discursiva
+no se obtiene combinando frases al azar. Cuando una fase usa recuperación deliberada, se etiqueta
+como recuperación y su huella no se presenta como material nuevo.
 
 ## Reglas contra falsos positivos
 
@@ -113,6 +113,10 @@ combinando frases al azar.
   claramente el registro objetivo.
 - La posición correcta se distribuye de forma equilibrada entre A, B, C y D.
 - El token erróneo ocupa de forma equilibrada las tres posiciones seleccionables.
+- Una respuesta no incorpora un adverbio léxico que el contexto no obliga a producir.
+- Cada candidato final pertenece al mismo lema y la clave rota entre las cuatro posiciones.
+- Una estrategia ciega —primera opción, única forma del tiempo seleccionado o coincidencia de
+  vocabulario— no alcanza el aprobado en los tests adversariales.
 - Un mapa funcional muestra una cláusula y pide clasificar su función; la pista nunca reproduce
   literalmente la opción correcta.
 - Una reconstrucción con una sola forma ofrece al menos tres distractores y nunca un banco 1:1.

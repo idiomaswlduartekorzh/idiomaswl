@@ -2,7 +2,6 @@ import Link from 'next/link'
 
 import { PRONOUN_QUEST_BY_SLUG } from '@/data/practica/pronoun-quest-registry'
 import type { QuizLanguageEntry } from '@/data/practica/quiz-language-catalog'
-import { SKILL_ACCENT } from '@/data/practica/skill-accents'
 
 import s from './LanguageQuizHub.module.css'
 
@@ -12,11 +11,11 @@ export default function LanguageQuizHub({ language }: { language: QuizLanguageEn
 
   const quizzes = [
     {
-      eyebrow: 'TIEMPOS Y ESTRUCTURAS',
+      eyebrow: 'VERBOS · TIEMPOS Y ASPECTO',
       href: `/herramientas/quizes/${language.slug}`,
       title: language.tenseTitle,
       description: 'Elige las formas que quieres practicar y avanza por seis niveles: reconocimiento, producción, corrección y reconstrucción.',
-      detail: 'Recorrido configurable · 6 niveles',
+      detail: 'Practicar verbos · 6 niveles',
     },
     {
       eyebrow: 'PRONOMBRES',
@@ -28,7 +27,7 @@ export default function LanguageQuizHub({ language }: { language: QuizLanguageEn
   ]
 
   return (
-    <div className="wlp-page" style={{ '--wlp-accent': SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
+    <div className="wlp-page" style={{ '--wlp-accent': language.accent } as React.CSSProperties}>
       <div className="wlp-shell">
         <nav aria-label="Migas de pan" className="wlp-breadcrumb">
           <Link href="/herramientas">Herramientas</Link><span aria-hidden="true">/</span>

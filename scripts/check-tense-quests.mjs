@@ -1,5 +1,6 @@
 import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest.ts'
 import { ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
+import { ITALIAN_DRILL_SERIES } from '../src/data/practica/italian-tense-intensive-bank.ts'
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
@@ -99,12 +100,21 @@ function validate(config, minimums) {
     const cardIds = challenge.cards.map((card) => card.id)
     assert(challenge.segments.length === challenge.gaps.length + 1, `${challenge.id}: segmentos y huecos no están alineados`)
     assert(new Set(cardIds).size === cardIds.length, `${challenge.id}: tiene tarjetas con IDs duplicados`)
-    assert(new Set(challenge.cards.map((card) => card.text)).size === challenge.cards.length, `${challenge.id}: tiene tarjetas con texto duplicado`)
-    assert(challenge.cards.length === challenge.gaps.length, `${challenge.id}: el banco debe tener una tarjeta por hueco`)
+    const usesCandidateSets = challenge.gaps.some((gap) => gap.candidateCardIds?.length)
+    if (!usesCandidateSets) {
+      assert(new Set(challenge.cards.map((card) => card.text)).size === challenge.cards.length, `${challenge.id}: tiene tarjetas con texto duplicado`)
+      assert(challenge.cards.length === challenge.gaps.length, `${challenge.id}: el banco debe tener una tarjeta por hueco`)
+    }
     assert(new Set(challenge.gaps.map((gap) => gap.id)).size === challenge.gaps.length, `${challenge.id}: tiene huecos duplicados`)
     for (const gap of challenge.gaps) {
       assert(formIds.has(gap.tenseId), `${challenge.id}/${gap.id}: referencia una forma inexistente`)
       assert(cardIds.includes(gap.answerCardId), `${challenge.id}/${gap.id}: su tarjeta correcta no existe`)
+      if (gap.candidateCardIds) {
+        assert(gap.candidateCardIds.length >= 4, `${challenge.id}/${gap.id}: necesita al menos tres distractores plausibles`)
+        assert(gap.candidateCardIds.includes(gap.answerCardId), `${challenge.id}/${gap.id}: sus candidatos excluyen la respuesta`)
+        assert(gap.candidateCardIds.every((id) => cardIds.includes(id)), `${challenge.id}/${gap.id}: referencia candidatos inexistentes`)
+        assert(Boolean(gap.standalone?.before.trim() || gap.standalone?.after.trim()), `${challenge.id}/${gap.id}: necesita contexto autónomo`)
+      }
     }
     assert(new Set(challenge.gaps.map((gap) => gap.answerCardId)).size === challenge.gaps.length, `${challenge.id}: una tarjeta correcta se reutiliza en varios huecos`)
   }
@@ -126,7 +136,23 @@ function validate(config, minimums) {
   }
 }
 
+function assertItalianInferability() {
+  const hiddenLexicalTokens = /\b(?:appena|già|ancora|mai|sempre)\b/iu
+  for (const series of ITALIAN_DRILL_SERIES) {
+    for (const [index, drill] of series.drills.entries()) {
+      assert(
+        !hiddenLexicalTokens.test(drill.answer),
+        `italian/${series.id}/${index + 1}: la respuesta exige un adverbio léxico que no pertenece a la conjugación («${drill.answer}»)` ,
+      )
+    }
+  }
+
+  const finire = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-pp-micro-editorial-5')
+  assert(finire?.gaps[0].answers.includes('ha finito'), 'italian/passato-prossimo: «ha finito» debe aceptarse sin exigir «appena»')
+}
+
 validate(ITALIAN_TENSE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
+assertItalianInferability()
 validate(ENGLISH_TENSE_QUEST, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 
 const GENERATED_CONFIGS = [

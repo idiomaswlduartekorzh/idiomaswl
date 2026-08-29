@@ -90,16 +90,21 @@ datos.
 
 ## 4. Contrato editorial mínimo por forma
 
-Cada objetivo seleccionable declara:
+Cada objetivo seleccionable declara bancos separados por nivel. Una semilla puede servir como
+referencia morfológica, pero no puede reciclarse mecánicamente para fingir seis experiencias
+distintas. Como mínimo declara:
 
 - `id` estable y semántico;
 - etiqueta visible y grupo;
-- exactamente tres ejemplos con un solo marcador `___`;
+- contextos breves con un solo marcador `___`;
 - respuesta, lema, pista funcional y explicación;
 - tres distractores únicos y plausibles por ejemplo;
 - forma incorrecta explícita para el laboratorio de reparación;
 - variantes aceptadas solo si son normativas para el mismo significado y registro;
-- una fila dentro de la reconstrucción final.
+- relatos coherentes escritos como unidades editoriales para el nivel 3;
+- textos coherentes con un error real para el nivel 4;
+- decisiones de orden o referencia temporal para el nivel 5;
+- cuatro candidatos del mismo lema para cada decisión del nivel 6.
 
 La factoría deriva por objetivo:
 
@@ -112,8 +117,10 @@ La factoría deriva por objetivo:
 | 5 | Clasificar función en mapa | 3 ranuras |
 | 6 | Reconstrucción con banco | 1 aparición |
 
-El nivel 3 reutiliza deliberadamente casos anteriores para pasar de reconocimiento a producción.
-Se llama recuperación acumulativa; no se vende como una colección de relatos nuevos.
+El nivel 3 no concatena oraciones semilla. Si el contenido es un relato, sus oraciones comparten
+participantes, situación y progresión causal o temporal. Si son escenas independientes, el modelo
+las declara y la interfaz las presenta como piezas separadas; nunca se usa `·` para simular un
+párrafo.
 
 ## 5. Reglas pedagógicas que no se negocian
 
@@ -132,6 +139,12 @@ Se llama recuperación acumulativa; no se vende como una colección de relatos n
 11. Una pista funcional nunca repite literalmente su respuesta.
 12. Todo banco avanzado se revisa con una fuente primaria o con una persona competente en el
     idioma antes de publicarse.
+13. Una respuesta de conjugación no exige adverbios léxicos invisibles como `appena`, `già` o
+    `ancora`. Si el adverbio importa, aparece fuera del hueco o la instrucción lo pide de forma
+    explícita.
+14. Los bancos discursivos de niveles distintos tienen huellas editoriales distintas; diez
+    semillas rotadas no cuentan como diez relatos nuevos.
+15. En el reto final, elegir siempre la primera tarjeta debe quedar muy por debajo del aprobado.
 
 ## 6. Receta para añadir un idioma o banco nuevo
 
@@ -202,19 +215,21 @@ Los quizzes pertenecen visualmente a Práctica aunque su URL viva bajo Herramien
 
 - El layout de `/herramientas` carga `src/styles/practica-ui.css`.
 - El lienzo usa `wlp-page` y `wlp-shell`.
-- El acento es `SKILL_ACCENT.gramatica.var`.
+- El sistema base sigue siendo el de Gramática; cada idioma aporta un acento cromático estable y
+  accesible mediante `--wlp-accent`.
 - Encabezados: `wlp-hero wlp-hero--compact`.
 - Tarjetas: `wlp-card`; caminos o contenedores principales: `wlp-card--path`.
 - Botones, opciones, niveles, progreso y navegación usan las primitivas `wlp-*` existentes.
 - Radios permitidos: 4, 6, 8 px y píldora mediante variables `--wlp-r-*`.
-- No se reintroducen banderas, emojis, degradados o un color por idioma en el catálogo.
+- No se reintroducen banderas, emojis ni degradados. El color por idioma se limita al borde,
+  foco, etiqueta y acción; no sustituye el nombre escrito del idioma.
 - No se añaden paneles de métricas genéricos al hero.
 - El mapa temporal es la única firma propia del motor y permanece compacto en móvil.
 - Controles táctiles: mínimo 44 × 44 px; foco visible y `prefers-reduced-motion` respetado.
 
 La línea base actual del catálogo es de nueve tarjetas. Al añadir otra, el conteo esperado del E2E
-debe actualizarse deliberadamente. Todas deben usar `wlp-card--path`, un solo acento de Gramática
-y cero tarjetas heredadas `wl-catalog-card`.
+debe actualizarse deliberadamente. Todas deben usar `wlp-card--path`, el acento declarado en el
+catálogo y cero tarjetas heredadas `wl-catalog-card`.
 
 ## 8. Estado, URL y accesibilidad
 
@@ -244,10 +259,14 @@ y cero tarjetas heredadas `wl-catalog-card`.
 - cobertura inferior al mínimo;
 - posiciones correctas o errores desequilibrados;
 - `storageKey` repetido o sin versión.
+- adverbios léxicos ocultos dentro de respuestas de conjugación italianas;
+- retos finales sin contexto autónomo o sin tres distractores del mismo verbo;
+- claves finales concentradas en una sola posición;
+- regreso del banco generado de `passato prossimo` en niveles con contrato editorial.
 
-El motor añade distractores del pool activo hasta completar al menos cuatro tarjetas cuando la
-selección tiene una sola forma. El banco editorial base sigue declarando una tarjeta por hueco;
-no se meten distractores falsos en los datos solo para satisfacer la UI.
+El banco editorial declara los candidatos de cada hueco con IDs estables. El motor no toma
+formas casuales de otros tiempos para completar cuatro tarjetas: muestra únicamente el conjunto
+plausible asociado a esa decisión.
 
 ## 10. Batería obligatoria
 
@@ -295,7 +314,14 @@ la suite pasa sobre el dominio, no solo sobre la URL temporal.
 - Guardar solo `bestScores` borraba el intento activo.
 - Restaurar un índice corrupto en el último ítem ocultaba el problema; ahora vuelve al primero.
 - Usar un `<main>` dentro del motor creaba landmarks anidados.
-- El catálogo multicolor con banderas rompía el sistema visual serio de Práctica.
+- Usar banderas como decoración rompía el sistema visual serio de Práctica; la identidad actual
+  usa acentos cromáticos sobrios y conserva siempre el nombre escrito.
+- Exigir `ha appena finito` cuando el contexto solo permitía inferir `ha finito` producía un falso
+  negativo. Los modificadores léxicos ya no se esconden dentro de la respuesta.
+- Rotar las mismas diez frases en grupos de tres creó pseudopárrafos y repetición inmediata.
+  Los relatos con contrato editorial se escriben como historias completas.
+- Usar tiempos diferentes como distractores del nivel final permitía resolver por silueta verbal.
+  Cada hueco contrasta ahora cuatro formas del mismo lema y distribuye la clave.
 - Un mapa temporal vertical ocupaba demasiado espacio en móvil.
 - Probar por `127.0.0.1` contra un servidor anunciado como `localhost` bloqueaba HMR y generaba
   falsos timeouts en Playwright.

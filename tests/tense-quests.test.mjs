@@ -77,3 +77,48 @@ test('Italian exposes progressive periphrases and ten real challenges per form a
     assert.ok(ITALIAN_TENSE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length >= 10, `${id}/final`)
   }
 })
+
+test('Italian written answers never hide lexical adverbs inside the requested conjugation', () => {
+  const lexicalAdverb = /\b(?:appena|già|ancora|mai|sempre)\b/iu
+  for (const challenge of ITALIAN_TENSE_QUEST.microStories) {
+    for (const gap of challenge.gaps) {
+      for (const answer of gap.answers) assert.doesNotMatch(answer, lexicalAdverb, `${challenge.id}/${gap.id}`)
+    }
+  }
+
+  const finire = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-pp-micro-editorial-5')
+  assert.deepEqual(finire?.gaps[0].answers, ['ha finito'])
+})
+
+test('Italian final decisions use autonomous context and same-verb candidate sets', () => {
+  const answerPositions = [0, 0, 0, 0]
+  for (const challenge of ITALIAN_TENSE_QUEST.finalChallenges) {
+    const cardIds = new Set(challenge.cards.map((card) => card.id))
+    for (const gap of challenge.gaps) {
+      assert.ok(gap.standalone?.before || gap.standalone?.after, gap.id)
+      assert.equal(gap.candidateCardIds?.length, 4, gap.id)
+      assert.ok(gap.candidateCardIds?.includes(gap.answerCardId), gap.id)
+      assert.ok(gap.candidateCardIds?.every((id) => cardIds.has(id)), gap.id)
+      answerPositions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
+    }
+  }
+  assert.ok(answerPositions.every((count) => count > 0), answerPositions.join('/'))
+  assert.ok(Math.max(...answerPositions) - Math.min(...answerPositions) <= 1, answerPositions.join('/'))
+  assert.ok(answerPositions[0] / answerPositions.reduce((sum, count) => sum + count, 0) < 0.3)
+})
+
+test('Italian passato prossimo uses a separate editorial bank for every discursive level', () => {
+  const micro = ITALIAN_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === 'passato-prossimo'))
+  const long = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === 'passato-prossimo'))
+  const errors = ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === 'passato-prossimo')
+  const timelines = ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === 'passato-prossimo'))
+
+  assert.ok(micro.every((item) => item.id.startsWith('it-pp-micro-editorial-')))
+  assert.ok(long.every((item) => item.id.startsWith('it-pp-long-editorial-')))
+  assert.ok(errors.every((item) => item.id.startsWith('it-pp-error-editorial-')))
+  assert.ok(timelines.every((item) => item.id.startsWith('it-pp-sequence-editorial-')))
+  assert.ok(long.every((item) => item.gaps.length === 3 && !item.segments.join('').includes(' · ')))
+
+  const fingerprints = [...micro, ...long].map((item) => item.segments.join('___').toLocaleLowerCase('it'))
+  assert.equal(new Set(fingerprints).size, fingerprints.length)
+})

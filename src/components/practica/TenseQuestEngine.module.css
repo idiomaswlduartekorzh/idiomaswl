@@ -10,6 +10,32 @@
   padding: 0.8rem 1rem;
 }
 
+.finalScenes {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.finalScene {
+  align-items: baseline;
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  color: var(--wlp-ink);
+  display: block;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.9;
+  margin: 0;
+  padding: 0.85rem 1rem;
+}
+
+.sceneNumber {
+  color: var(--wlp-accent);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+  margin-right: 0.65rem;
+}
+
 .timeMap span,
 .timeMap strong {
   color: var(--wlp-muted);
