@@ -16,6 +16,7 @@ import { ITALIAN_FUTURO_SEMPLICE_EDITORIAL } from './italian-futuro-semplice-edi
 import { ITALIAN_FUTURO_ANTERIORE_EDITORIAL } from './italian-futuro-anteriore-editorial.ts'
 import { ITALIAN_CONDIZIONALE_PRESENTE_EDITORIAL } from './italian-condizionale-presente-editorial.ts'
 import { ITALIAN_CONDIZIONALE_PASSATO_EDITORIAL } from './italian-condizionale-passato-editorial.ts'
+import { ITALIAN_IMPERATIVO_EDITORIAL } from './italian-imperativo-editorial.ts'
 import { LEVEL_META, TENSE_OPTIONS, type TenseId } from './italian-tense-quest.ts'
 import type { BankChallenge, ChoiceChallenge, ErrorChallenge, GapChallenge, TenseQuestConfig, TimelineChallenge } from './tense-quest-types'
 
@@ -25,7 +26,7 @@ const longStories: GapChallenge<TenseId>[] = []
 const errorChallenges: ErrorChallenge<TenseId>[] = []
 const timelineChallenges: TimelineChallenge<TenseId>[] = []
 
-export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'presente-progressivo', 'passato-prossimo', 'imperfetto', 'imperfetto-progressivo', 'passato-remoto', 'trapassato-prossimo', 'trapassato-remoto', 'futuro-semplice', 'futuro-anteriore', 'condizionale-presente', 'condizionale-passato'])
+export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'presente-progressivo', 'passato-prossimo', 'imperfetto', 'imperfetto-progressivo', 'passato-remoto', 'trapassato-prossimo', 'trapassato-remoto', 'futuro-semplice', 'futuro-anteriore', 'condizionale-presente', 'condizionale-passato', 'imperativo'])
 
 function placeCorrectAnswer(answer: string, alternatives: readonly string[], position: number) {
   const options = [...alternatives]
@@ -182,6 +183,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_FUTURO_ANTERIORE_EDITORIAL.micro,
     ...ITALIAN_CONDIZIONALE_PRESENTE_EDITORIAL.micro,
     ...ITALIAN_CONDIZIONALE_PASSATO_EDITORIAL.micro,
+    ...ITALIAN_IMPERATIVO_EDITORIAL.micro,
     ...PASSATO_PROSSIMO_MICRO,
   ],
   longStories: [
@@ -197,6 +199,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_FUTURO_ANTERIORE_EDITORIAL.long,
     ...ITALIAN_CONDIZIONALE_PRESENTE_EDITORIAL.long,
     ...ITALIAN_CONDIZIONALE_PASSATO_EDITORIAL.long,
+    ...ITALIAN_IMPERATIVO_EDITORIAL.long,
     ...PASSATO_PROSSIMO_LONG,
   ],
   errorChallenges: [
@@ -212,6 +215,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_FUTURO_ANTERIORE_EDITORIAL.errors,
     ...ITALIAN_CONDIZIONALE_PRESENTE_EDITORIAL.errors,
     ...ITALIAN_CONDIZIONALE_PASSATO_EDITORIAL.errors,
+    ...ITALIAN_IMPERATIVO_EDITORIAL.errors,
     ...PASSATO_PROSSIMO_ERRORS,
   ],
   timelineChallenges: [
@@ -227,6 +231,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_FUTURO_ANTERIORE_EDITORIAL.timelines,
     ...ITALIAN_CONDIZIONALE_PRESENTE_EDITORIAL.timelines,
     ...ITALIAN_CONDIZIONALE_PASSATO_EDITORIAL.timelines,
+    ...ITALIAN_IMPERATIVO_EDITORIAL.timelines,
     ...PASSATO_PROSSIMO_TIMELINES,
   ],
   finalChallenges,

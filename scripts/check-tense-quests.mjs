@@ -160,6 +160,8 @@ function assertItalianInferability() {
 }
 
 function assertItalianEditorialContract() {
+  assert(EDITORIAL_ITALIAN_FORMS.size === ITALIAN_TENSE_QUEST.forms.length, 'italian: las 13 formas deben estar declaradas editoriales')
+  assert(ITALIAN_TENSE_QUEST.forms.every((form) => EDITORIAL_ITALIAN_FORMS.has(form.id)), 'italian: ninguna forma puede conservar bancos generados')
   for (const formId of EDITORIAL_ITALIAN_FORMS) {
     const micro = ITALIAN_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
     const long = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
@@ -209,6 +211,11 @@ function assertItalianEditorialContract() {
   for (const item of futurePerfectTimelines) {
     assert(item.options.every((option) => /\b(?:entro|prima|quando|dopo che|appena|a quest[’']ora)\b/iu.test(option) && option.includes(',')), `${item.id}: cada opción debe relacionar dos puntos futuros`)
   }
+
+  const negativeTu = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-imperative-micro-editorial-4')
+  assert(negativeTu?.segments[0].trim().endsWith('Non') && negativeTu.gaps[0].answers.includes('premere'), 'imperativo: non + tu debe aceptar el infinitivo')
+  const formalLei = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-imperative-micro-editorial-3')
+  assert(formalLei?.gaps[0].answers.includes('attenda'), 'imperativo: la forma di cortesia Lei debe conservar attenda')
 }
 
 validate(ITALIAN_TENSE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })

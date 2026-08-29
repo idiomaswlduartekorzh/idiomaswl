@@ -143,6 +143,7 @@ test('Italian final decisions use autonomous context and same-verb candidate set
 })
 
 test('each migrated Italian form uses independent editorial banks for every discursive level', () => {
+  assert.deepEqual(new Set(ITALIAN_TENSE_QUEST.forms.map((form) => form.id)), EDITORIAL_ITALIAN_FORMS)
   for (const formId of EDITORIAL_ITALIAN_FORMS) {
     const micro = ITALIAN_TENSE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
     const long = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === formId))
@@ -157,4 +158,13 @@ test('each migrated Italian form uses independent editorial banks for every disc
     const fingerprints = [...micro, ...long].map((item) => item.segments.join('___').toLocaleLowerCase('it'))
     assert.equal(new Set(fingerprints).size, fingerprints.length, formId)
   }
+})
+
+test('Italian imperative preserves negative tu and formal Lei', () => {
+  const negativeTu = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-imperative-micro-editorial-4')
+  assert.ok(negativeTu?.segments[0].trim().endsWith('Non'))
+  assert.deepEqual(negativeTu?.gaps[0].answers, ['premere'])
+
+  const formalLei = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-imperative-micro-editorial-3')
+  assert.deepEqual(formalLei?.gaps[0].answers, ['attenda'])
 })
