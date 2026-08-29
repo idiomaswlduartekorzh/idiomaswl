@@ -192,6 +192,23 @@ function assertItalianEditorialContract() {
     const anchors = text.match(/\b(?:dopo che|quando|non appena|appena)\b/giu) ?? []
     assert(anchors.length >= item.chunks.length, `${item.id}: cada forma editable necesita una subordinada temporal propia`)
   }
+
+  const futureAnchor = /\b(?:entro|prima|quando|dopo che|appena|a quest[’']ora)\b/giu
+  const futurePerfectLong = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === 'futuro-anteriore'))
+  for (const item of futurePerfectLong) {
+    const anchors = item.segments.join(' ').match(futureAnchor) ?? []
+    assert(anchors.length >= item.gaps.length, `${item.id}: cada futuro anteriore necesita un límite o punto futuro explícito`)
+  }
+  const futurePerfectErrors = ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === 'futuro-anteriore')
+  for (const item of futurePerfectErrors) {
+    const text = `${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`
+    const anchors = text.match(futureAnchor) ?? []
+    assert(anchors.length >= item.chunks.length, `${item.id}: cada forma editable necesita su propio límite futuro`)
+  }
+  const futurePerfectTimelines = ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === 'futuro-anteriore'))
+  for (const item of futurePerfectTimelines) {
+    assert(item.options.every((option) => /\b(?:entro|prima|quando|dopo che|appena|a quest[’']ora)\b/iu.test(option) && option.includes(',')), `${item.id}: cada opción debe relacionar dos puntos futuros`)
+  }
 }
 
 validate(ITALIAN_TENSE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })

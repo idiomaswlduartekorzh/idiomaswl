@@ -13,6 +13,7 @@ import { ITALIAN_PASSATO_REMOTO_EDITORIAL } from './italian-passato-remoto-edito
 import { ITALIAN_TRAPASSATO_PROSSIMO_EDITORIAL } from './italian-trapassato-prossimo-editorial.ts'
 import { ITALIAN_TRAPASSATO_REMOTO_EDITORIAL } from './italian-trapassato-remoto-editorial.ts'
 import { ITALIAN_FUTURO_SEMPLICE_EDITORIAL } from './italian-futuro-semplice-editorial.ts'
+import { ITALIAN_FUTURO_ANTERIORE_EDITORIAL } from './italian-futuro-anteriore-editorial.ts'
 import { LEVEL_META, TENSE_OPTIONS, type TenseId } from './italian-tense-quest.ts'
 import type { BankChallenge, ChoiceChallenge, ErrorChallenge, GapChallenge, TenseQuestConfig, TimelineChallenge } from './tense-quest-types'
 
@@ -22,7 +23,7 @@ const longStories: GapChallenge<TenseId>[] = []
 const errorChallenges: ErrorChallenge<TenseId>[] = []
 const timelineChallenges: TimelineChallenge<TenseId>[] = []
 
-export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'presente-progressivo', 'passato-prossimo', 'imperfetto', 'imperfetto-progressivo', 'passato-remoto', 'trapassato-prossimo', 'trapassato-remoto', 'futuro-semplice'])
+export const EDITORIAL_ITALIAN_FORMS = new Set<TenseId>(['presente', 'presente-progressivo', 'passato-prossimo', 'imperfetto', 'imperfetto-progressivo', 'passato-remoto', 'trapassato-prossimo', 'trapassato-remoto', 'futuro-semplice', 'futuro-anteriore'])
 
 function placeCorrectAnswer(answer: string, alternatives: readonly string[], position: number) {
   const options = [...alternatives]
@@ -176,6 +177,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_TRAPASSATO_PROSSIMO_EDITORIAL.micro,
     ...ITALIAN_TRAPASSATO_REMOTO_EDITORIAL.micro,
     ...ITALIAN_FUTURO_SEMPLICE_EDITORIAL.micro,
+    ...ITALIAN_FUTURO_ANTERIORE_EDITORIAL.micro,
     ...PASSATO_PROSSIMO_MICRO,
   ],
   longStories: [
@@ -188,6 +190,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_TRAPASSATO_PROSSIMO_EDITORIAL.long,
     ...ITALIAN_TRAPASSATO_REMOTO_EDITORIAL.long,
     ...ITALIAN_FUTURO_SEMPLICE_EDITORIAL.long,
+    ...ITALIAN_FUTURO_ANTERIORE_EDITORIAL.long,
     ...PASSATO_PROSSIMO_LONG,
   ],
   errorChallenges: [
@@ -200,6 +203,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_TRAPASSATO_PROSSIMO_EDITORIAL.errors,
     ...ITALIAN_TRAPASSATO_REMOTO_EDITORIAL.errors,
     ...ITALIAN_FUTURO_SEMPLICE_EDITORIAL.errors,
+    ...ITALIAN_FUTURO_ANTERIORE_EDITORIAL.errors,
     ...PASSATO_PROSSIMO_ERRORS,
   ],
   timelineChallenges: [
@@ -212,6 +216,7 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...ITALIAN_TRAPASSATO_PROSSIMO_EDITORIAL.timelines,
     ...ITALIAN_TRAPASSATO_REMOTO_EDITORIAL.timelines,
     ...ITALIAN_FUTURO_SEMPLICE_EDITORIAL.timelines,
+    ...ITALIAN_FUTURO_ANTERIORE_EDITORIAL.timelines,
     ...PASSATO_PROSSIMO_TIMELINES,
   ],
   finalChallenges,

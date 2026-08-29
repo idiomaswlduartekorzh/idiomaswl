@@ -110,6 +110,21 @@ test('Italian remote pluperfect always exposes its literary temporal anchor', ()
   }
 })
 
+test('Italian future perfect always exposes a deadline or a second future point', () => {
+  const anchor = /\b(?:entro|prima|quando|dopo che|appena|a quest[’']ora)\b/giu
+  const longs = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === 'futuro-anteriore'))
+  for (const item of longs) assert.ok((item.segments.join(' ').match(anchor) ?? []).length >= item.gaps.length, item.id)
+
+  const errors = ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === 'futuro-anteriore')
+  for (const item of errors) {
+    const text = `${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`
+    assert.ok((text.match(anchor) ?? []).length >= item.chunks.length, item.id)
+  }
+
+  const timelines = ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === 'futuro-anteriore'))
+  for (const item of timelines) assert.ok(item.options.every((option) => /\b(?:quando|dopo che|appena)\b/iu.test(option) && option.includes(',')), item.id)
+})
+
 test('Italian final decisions use autonomous context and same-verb candidate sets', () => {
   const answerPositions = [0, 0, 0, 0]
   for (const challenge of ITALIAN_TENSE_QUEST.finalChallenges) {
