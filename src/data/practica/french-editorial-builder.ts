@@ -6,7 +6,7 @@ import {
   type StructureEditorialMicroSeed,
   type StructureEditorialSequenceSeed,
 } from './editorial-structure-builder.ts'
-import type { FrenchFormId } from './french-structure-quest.ts'
+import type { FrenchFormId } from './french-structure-quest-config.ts'
 
 export type FrenchEditorialMicroSeed = StructureEditorialMicroSeed
 export type FrenchEditorialGapSeed = StructureEditorialGapSeed
@@ -27,9 +27,13 @@ export function createFrenchEditorialPack(input: {
   sequences: FrenchEditorialSequenceSeed[]
   final: FrenchEditorialFinalSeed[]
 }) {
+  const secondHalf = new Set(['futur-proche', 'futur-simple', 'futur-anterieur', 'conditionnel-present', 'conditionnel-passe'])
+  const choiceOffset = secondHalf.has(input.slug) ? 0 : 2
   return createStructureEditorialPack({
     namespace: 'fr',
     ...input,
+    choicePositions: Array.from({ length: 10 }, (_, index) => (index + choiceOffset) % 4),
+    finalOffset: choiceOffset,
     ui: {
       choose: (cue) => `Choisis la forme qui exprime ${cue}.`,
       write: (verb) => `Conjugue « ${verb} » et écris toute la forme verbale.`,

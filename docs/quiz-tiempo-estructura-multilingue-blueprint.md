@@ -23,6 +23,13 @@ diez decisiones finales autónomas. Producción importa exclusivamente
 `english-tense-quest-config.ts`; el guardián rechaza contenido generado, cobertura inferior a
 diez o pistas temporales insuficientes.
 
+Actualización francesa (28 de agosto de 2026): las diez formas cuentan con diez retos por nivel
+y contenido independiente para reconocimiento, producción, relato, reparación, secuencia y
+dossier final. El `plus-que-parfait` y el `futur antérieur` exigen dos planos temporales
+explícitos; el `passé simple` declara siempre su registro literario; los compuestos verifican
+auxiliar y concordancia. Las claves de opción, la posición del error y las tarjetas finales se
+balancean globalmente y fallan el guardián si se degradan.
+
 ## Principio de producto
 
 No se traduce una lista inglesa de “tiempos”. Cada idioma selecciona las oposiciones que un

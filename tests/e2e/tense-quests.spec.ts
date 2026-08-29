@@ -163,46 +163,68 @@ test('un estudiante puede cerrar los 6 niveles sin recibir corrección anticipad
   await reset(page, 'frances')
   await configureFirstForm(page)
 
-  for (let item = 0; item < 3; item += 1) {
+  for (let level = 0; level < 6; level += 1) {
+    await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  }
+
+  for (let item = 0; item < 10; item += 1) {
     await expect(page.getByText('Respuesta correcta:', { exact: false })).toHaveCount(0)
     await page.locator('.wlp-option').first().click()
-    await page.getByRole('button', { name: item === 2 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+    await page.getByRole('button', { name: item === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
   }
   await expect(page.getByRole('status')).toContainText('Nivel completado')
 
   await page.getByRole('tab').nth(1).click()
-  for (let item = 0; item < 3; item += 1) {
-    await page.locator('input[name*="micro-gap"]').fill('x')
-    await page.getByRole('button', { name: item === 2 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+  for (let item = 0; item < 10; item += 1) {
+    await page.getByRole('textbox').fill('x')
+    await page.getByRole('button', { name: item === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
   }
-  await expect(page.getByRole('status')).toContainText('0 de 3 puntos correctos')
+  await expect(page.getByRole('status')).toContainText('0 de 10 puntos correctos')
 
   await page.getByRole('tab').nth(2).click()
-  for (let item = 0; item < 2; item += 1) {
-    const fields = page.locator('input[name*="story-gap"]')
+  for (let item = 0; item < 10; item += 1) {
+    const fields = page.getByRole('textbox')
     for (let field = 0; field < await fields.count(); field += 1) await fields.nth(field).fill('x')
-    await page.getByRole('button', { name: item === 1 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+    await page.getByRole('button', { name: item === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
   }
-  await expect(page.getByRole('status')).toContainText('0 de 6 puntos correctos')
+  await expect(page.getByRole('status')).toContainText('0 de 30 puntos correctos')
 
   await page.getByRole('tab').nth(3).click()
-  for (let item = 0; item < 2; item += 1) {
+  for (let item = 0; item < 10; item += 1) {
     await page.locator('button[aria-pressed]').filter({ hasText: /\S/ }).first().click()
     await page.locator('input[name$="-correction"]').fill('x')
-    await page.getByRole('button', { name: item === 1 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+    await page.getByRole('button', { name: item === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
   }
   await expect(page.getByRole('status')).toContainText('Nivel completado')
 
   await page.getByRole('tab').nth(4).click()
-  const selects = page.locator('select')
-  for (let select = 0; select < await selects.count(); select += 1) await selects.nth(select).selectOption({ index: 1 })
-  await page.getByRole('button', { name: /Terminar nivel/ }).click()
+  for (let item = 0; item < 10; item += 1) {
+    await page.locator('select').selectOption({ index: 1 })
+    await page.getByRole('button', { name: item === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+  }
   await expect(page.getByRole('status')).toContainText('Nivel completado')
 
   await page.getByRole('tab').nth(5).click()
-  await page.locator('[class*="wordBank"] button').first().click()
-  await page.getByRole('button', { name: /Terminar nivel/ }).click()
+  for (let item = 0; item < 10; item += 1) {
+    await page.locator('[class*="wordBank"] button').first().click()
+    await page.getByRole('button', { name: item === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+  }
   await expect(page.getByRole('status')).toContainText('Nivel completado')
+})
+
+test('francés mantiene registro literario y planos temporales explícitos', async ({ page }) => {
+  await page.goto('/herramientas/quizes/frances?forms=passe-simple&level=3')
+  await expect(page.getByText('Chapitre I · La lettre', { exact: true })).toBeVisible()
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+  await expect(page.locator('[class*="proseExercise"]')).not.toContainText(' · ')
+
+  await page.goto('/herramientas/quizes/frances?forms=plus-que-parfait&level=3')
+  await expect(page.getByText('Avant l’ouverture du restaurant', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('Quand les premiers clients sont arrivés')
+
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.getByText(/Quand le directeur est arrivé/)).toBeVisible()
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })
 
 test('parámetros y progreso local corruptos no rompen el quiz', async ({ page }) => {

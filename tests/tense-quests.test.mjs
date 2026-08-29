@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 
 import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest-config.ts'
-import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
+import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest-config.ts'
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
 import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
@@ -177,4 +177,34 @@ test('Italian imperative preserves negative tu and formal Lei', () => {
 
   const formalLei = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-imperative-micro-editorial-3')
   assert.deepEqual(formalLei?.gaps[0].answers, ['attenda'])
+})
+
+test('French exposes ten independent editorial challenges per form and level', () => {
+  for (const form of FRENCH_STRUCTURE_QUEST.forms) {
+    const id = form.id
+    assert.equal(FRENCH_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(id)).length, 10, `${id}/choice`)
+    assert.equal(FRENCH_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/micro`)
+    assert.equal(FRENCH_STRUCTURE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/long`)
+    assert.equal(FRENCH_STRUCTURE_QUEST.errorChallenges.filter((item) => item.tense === id).length, 10, `${id}/error`)
+    assert.equal(FRENCH_STRUCTURE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length, 10, `${id}/timeline`)
+    assert.equal(FRENCH_STRUCTURE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length, 10, `${id}/final`)
+  }
+})
+
+test('French final dossiers use fresh autonomous contexts and balanced same-verb decisions', () => {
+  const answerPositions = [0, 0, 0, 0]
+  for (const form of FRENCH_STRUCTURE_QUEST.forms) {
+    const levelOne = new Set(FRENCH_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(form.id)).map((item) => item.context.toLocaleLowerCase('fr')))
+    const finals = FRENCH_STRUCTURE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id))
+    assert.equal(finals.length, 10, form.id)
+    assert.equal(new Set(finals.map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)).size, 10, form.id)
+    for (const gap of finals) {
+      const context = `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`
+      assert.ok(gap.standalone?.before || gap.standalone?.after, gap.id)
+      assert.ok(!levelOne.has(context.toLocaleLowerCase('fr')), gap.id)
+      assert.equal(gap.candidateCardIds?.length, 4, gap.id)
+      answerPositions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
+    }
+  }
+  assert.ok(Math.max(...answerPositions) - Math.min(...answerPositions) <= 1, answerPositions.join('/'))
 })

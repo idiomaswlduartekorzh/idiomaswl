@@ -73,6 +73,7 @@ type StructureEditorialPackInput<FormId extends string> = {
   sequences: StructureEditorialSequenceSeed[]
   final: StructureEditorialFinalSeed[]
   choicePositions?: number[]
+  finalOffset?: number
 }
 
 function rotate<T>(items: readonly T[], offset: number): T[] {
@@ -168,7 +169,7 @@ export function createStructureEditorialPack<FormId extends string>(input: Struc
     tenseId: input.form,
     tense: input.focus,
     answerCardId: `${prefix}-final-${index + 1}-card-1`,
-    candidateCardIds: rotate([1, 2, 3, 4], index).map((candidate) => `${prefix}-final-${index + 1}-card-${candidate}`),
+    candidateCardIds: rotate([1, 2, 3, 4], index + (input.finalOffset ?? 0)).map((candidate) => `${prefix}-final-${index + 1}-card-${candidate}`),
     standalone: { before: seed.before, after: seed.after },
   }))
 

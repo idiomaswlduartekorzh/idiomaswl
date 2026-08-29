@@ -34,9 +34,9 @@ const long: FrenchEditorialGapSeed[] = [
 ]
 
 const errors: FrenchEditorialErrorSeed[] = [
-  { title: 'Dans le premier chapitre', pieces: [['Élise ', 'ouvrit'], [' l’enveloppe, ', 'lisa'], [' les lignes et ', 'sortit']], after: ' dans le jardin.', wrong: 1, answers: ['lut'], reason: 'Dans ce récit littéraire, le passé simple de « lire » est « lut ».' },
-  { title: 'Dans le conte du pont', pieces: [['Le voyageur ', 'traversa'], [' le pont, ', 'entendit'], [' une voix et ', 'tournais']], after: ' sa lanterne.', wrong: 2, answers: ['tourna'], reason: 'La suite narrative exige la troisième personne du passé simple.' },
-  { title: 'Dans la chronique', pieces: [['Les sentinelles ', 'sonnèrent'], [' la cloche. Les habitants ', 'se rassemblèrent'], [' et le maire ', 'annoncèrent']], after: ' la nouvelle.', wrong: 2, answers: ['annonça'], reason: 'Le sujet singulier « le maire » exige « annonça ».' },
+  { title: 'Dans le premier chapitre', pieces: [['Élise ', 'ouvrirent'], [' l’enveloppe, ', 'lut'], [' les lignes et ', 'sortit']], after: ' dans le jardin.', wrong: 0, answers: ['ouvrit'], reason: 'Le sujet singulier « Élise » exige « ouvrit ».' },
+  { title: 'Dans le conte du pont', pieces: [['Le voyageur ', 'traversèrent'], [' le pont, ', 'entendit'], [' une voix et ', 'tourna']], after: ' sa lanterne.', wrong: 0, answers: ['traversa'], reason: 'Le sujet singulier « le voyageur » exige « traversa ».' },
+  { title: 'Dans la chronique', pieces: [['Les sentinelles ', 'sonna'], [' la cloche. Les habitants ', 'se rassemblèrent'], [' et le maire ', 'annonça']], after: ' la nouvelle.', wrong: 0, answers: ['sonnèrent'], reason: 'Le sujet pluriel « les sentinelles » exige « sonnèrent ».' },
   { title: 'Dans la légende', pieces: [['L’orfèvre ', 'chauffa'], [' le métal, puis ', 'brisait'], [' le moule et la couronne ', 'apparut']], after: '.', wrong: 1, answers: ['brisa'], reason: 'Cette action ponctuelle fait avancer le récit et reste au passé simple.' },
   { title: 'Dans le roman de la gare', pieces: [['Le train ', 'entra'], [' en gare. Lucie ', 'descenda'], [' et ', 'reconnut']], after: ' la silhouette.', wrong: 1, answers: ['descendit'], reason: 'Le passé simple de « descendre » à la troisième personne est « descendit ».' },
   { title: 'Dans le récit du naufrage', pieces: [['Une vague ', 'balaya'], [' le pont. Le mât ', 'tomba'], [' et les marins ', 'mettèrent']], after: ' les canots à la mer.', wrong: 2, answers: ['mirent'], reason: 'Le passé simple de « mettre » au pluriel est « mirent ».' },

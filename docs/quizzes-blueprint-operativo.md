@@ -39,8 +39,10 @@ japonés y coreano. La familia de pronombres inicia con un piloto italiano bajo
 | `src/components/practica/PronounQuestEngine.tsx` | Motor cerrado de referente, función, posición, reparación, transformación y cadena final |
 | `src/components/practica/TenseQuestEngine.module.css` | Adaptaciones propias del motor sobre el sistema visual de Práctica |
 | `src/data/practica/tense-quest-types.ts` | Contrato tipado de configuración y retos |
-| `src/data/practica/create-structure-quest.ts` | Factoría determinista para bancos con tres ejemplos por forma |
-| `src/data/practica/*-structure-quest.ts` | Contenido declarativo de francés, portugués, alemán, ruso, japonés y coreano |
+| `src/data/practica/create-structure-quest.ts` | Factoría heredada de tres ejemplos; solo permanece en idiomas aún no migrados |
+| `src/data/practica/*-structure-quest.ts` | Contenido declarativo heredado de portugués, alemán, ruso, japonés y coreano |
+| `src/data/practica/editorial-structure-builder.ts` | Constructor neutral de IDs, balance y UI; nunca inventa contenido lingüístico |
+| `src/data/practica/french-structure-quest-config.ts` | Configuración francesa de diez bancos editoriales completos |
 | `src/data/practica/english-tense-quest-config.ts` | Configuración editorial exclusiva de inglés; no importa el generador heredado |
 | `src/data/practica/italian-tense-quest.ts` | Banco editorial de italiano |
 | `src/data/practica/italian-tense-quest-config.ts` | Adaptación del banco italiano al motor común |

@@ -1,3 +1,7 @@
+/**
+ * @deprecated Banco heredado sin consumidores de producción.
+ * La fuente activa es `french-structure-quest-config.ts` y sus diez paquetes editoriales.
+ */
 import { createStructureQuest, type FinalRow, type StructureSeed } from './create-structure-quest.ts'
 
 export const FRENCH_FORMS = [

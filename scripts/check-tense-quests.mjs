@@ -1,12 +1,17 @@
 import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest-config.ts'
 import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practica/italian-tense-quest-config.ts'
 import { ITALIAN_DRILL_SERIES } from '../src/data/practica/italian-tense-intensive-bank.ts'
-import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest.ts'
+import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest-config.ts'
 import { FRENCH_PRESENT_EDITORIAL } from '../src/data/practica/french-present-editorial.ts'
 import { FRENCH_PASSE_COMPOSE_EDITORIAL } from '../src/data/practica/french-passe-compose-editorial.ts'
 import { FRENCH_IMPARFAIT_EDITORIAL } from '../src/data/practica/french-imparfait-editorial.ts'
 import { FRENCH_PLUS_QUE_PARFAIT_EDITORIAL } from '../src/data/practica/french-plus-que-parfait-editorial.ts'
 import { FRENCH_PASSE_SIMPLE_EDITORIAL } from '../src/data/practica/french-passe-simple-editorial.ts'
+import { FRENCH_FUTUR_PROCHE_EDITORIAL } from '../src/data/practica/french-futur-proche-editorial.ts'
+import { FRENCH_FUTUR_SIMPLE_EDITORIAL } from '../src/data/practica/french-futur-simple-editorial.ts'
+import { FRENCH_FUTUR_ANTERIEUR_EDITORIAL } from '../src/data/practica/french-futur-anterieur-editorial.ts'
+import { FRENCH_CONDITIONNEL_PRESENT_EDITORIAL } from '../src/data/practica/french-conditionnel-present-editorial.ts'
+import { FRENCH_CONDITIONNEL_PASSE_EDITORIAL } from '../src/data/practica/french-conditionnel-passe-editorial.ts'
 import { GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest.ts'
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
@@ -341,6 +346,11 @@ const FRENCH_EDITORIAL_PACKS = [
   ['imparfait', FRENCH_IMPARFAIT_EDITORIAL],
   ['plus-que-parfait', FRENCH_PLUS_QUE_PARFAIT_EDITORIAL],
   ['passe-simple', FRENCH_PASSE_SIMPLE_EDITORIAL],
+  ['futur-proche', FRENCH_FUTUR_PROCHE_EDITORIAL],
+  ['futur-simple', FRENCH_FUTUR_SIMPLE_EDITORIAL],
+  ['futur-anterieur', FRENCH_FUTUR_ANTERIEUR_EDITORIAL],
+  ['conditionnel-present', FRENCH_CONDITIONNEL_PRESENT_EDITORIAL],
+  ['conditionnel-passe', FRENCH_CONDITIONNEL_PASSE_EDITORIAL],
 ]
 for (const [formId, pack] of FRENCH_EDITORIAL_PACKS) {
   assert(pack.choices.length === 10, `french/${formId}: se requieren 10 decisiones editoriales`)
@@ -349,6 +359,7 @@ for (const [formId, pack] of FRENCH_EDITORIAL_PACKS) {
   assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `french/${formId}: se requieren 10 textos de reparación de tres verbos`)
   assert(pack.timelines.length === 10, `french/${formId}: se requieren 10 secuencias semánticas`)
   assert(pack.finalGaps.length === 10 && pack.finalGaps.every((gap) => gap.candidateCardIds?.length === 4 && (gap.standalone?.before.trim() || gap.standalone?.after.trim())), `french/${formId}: se requieren 10 decisiones finales autónomas con cuatro candidatos`)
+  for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido francés heredado`)
 }
 
 const frenchPlusPastContexts = [
@@ -364,8 +375,15 @@ for (const item of [...FRENCH_PASSE_SIMPLE_EDITORIAL.choices, ...FRENCH_PASSE_SI
 }
 for (const gap of FRENCH_PASSE_SIMPLE_EDITORIAL.finalGaps) assert(/littéraire/i.test(gap.tense), `${gap.id}: el dossier final debe marcar el passé simple como literario`)
 
+const frenchFuturePerfectContexts = [
+  ...FRENCH_FUTUR_ANTERIEUR_EDITORIAL.micro.map((item) => item.segments.join(' ')),
+  ...FRENCH_FUTUR_ANTERIEUR_EDITORIAL.long.map((item) => item.segments.join(' ')),
+  ...FRENCH_FUTUR_ANTERIEUR_EDITORIAL.errors.map((item) => `${item.title} ${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`),
+  ...FRENCH_FUTUR_ANTERIEUR_EDITORIAL.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+]
+for (const context of frenchFuturePerfectContexts) assert(/(?:d’ici|quand|lorsque|avant|à (?:la fin|midi|minuit|dix-huit heures|vingt heures)|en juin|en septembre|2030)/i.test(context), `french/futur-anterieur: falta una échéance o un segundo punto futuro («${context}»)`)
+
 const GENERATED_CONFIGS = [
-  FRENCH_STRUCTURE_QUEST,
   PORTUGUESE_STRUCTURE_QUEST,
   GERMAN_STRUCTURE_QUEST,
   RUSSIAN_STRUCTURE_QUEST,
@@ -377,7 +395,9 @@ for (const config of GENERATED_CONFIGS) {
   validate(config, { choice: 3, micro: 3, long: 2, error: 2, timeline: 3, final: 1 })
 }
 
-const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, ...GENERATED_CONFIGS]
+validate(FRENCH_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
+
+const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
 assert(new Set(allConfigs.map((config) => config.storageKey)).size === allConfigs.length, 'los storageKey deben ser únicos por idioma')
 assert(allConfigs.every((config) => /-v\d+$/.test(config.storageKey)), 'cada storageKey debe declarar una versión de esquema')
 
