@@ -258,6 +258,24 @@ test('alemán evalúa la unidad verbal completa y muestra anclas y tratamiento',
   await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
 })
 
+test('ruso distingue proceso, contrafactualidad pasada y selección de aspecto', async ({ page }) => {
+  await page.goto('/herramientas/quizes/ruso?forms=past-imperfective&level=3')
+  for (let level = 0; level < 6; level += 1) await expect(page.getByRole('tab').nth(level)).toContainText('10 retos')
+  await expect(page.getByText('Вечер в мастерской', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('Вчера весь вечер')
+  await expect(page.getByRole('textbox')).toHaveCount(3)
+
+  await page.goto('/herramientas/quizes/ruso?forms=conditional-past&level=3')
+  await expect(page.getByText('Вчерашняя переправа', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('Если бы вчера')
+
+  await page.goto('/herramientas/quizes/ruso?forms=infinitive-aspect&level=3')
+  await expect(page.getByText('Работа над отчётом', { exact: true })).toBeVisible()
+  await expect(page.locator('[class*="proseExercise"]')).toContainText('начала')
+  await page.getByRole('tab').nth(5).click()
+  await expect(page.locator('[class*="wordBank"] button')).toHaveCount(4)
+})
+
 test('parámetros y progreso local corruptos no rompen el quiz', async ({ page }) => {
   await page.goto('/herramientas/quizes/ingles?forms=no-existe&level=99')
   await expect(page.locator('#tense-selector-title')).toBeVisible()

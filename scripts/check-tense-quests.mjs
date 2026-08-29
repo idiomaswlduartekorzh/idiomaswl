@@ -26,7 +26,7 @@ import { PORTUGUESE_FORMAL_FUTURE_EDITORIAL } from '../src/data/practica/portugu
 import { PORTUGUESE_FUTURE_PERFECT_EDITORIAL } from '../src/data/practica/portuguese-future-perfect-editorial.ts'
 import { PORTUGUESE_FUTURE_IN_PAST_EDITORIAL } from '../src/data/practica/portuguese-future-in-past-editorial.ts'
 import { PORTUGUESE_PAST_CONDITIONAL_EDITORIAL } from '../src/data/practica/portuguese-past-conditional-editorial.ts'
-import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
+import { RUSSIAN_EDITORIAL_PACKS, RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest-config.ts'
 
 const failures = []
 
@@ -441,7 +441,6 @@ const portuguesePastConditionalContexts = [
 for (const context of portuguesePastConditionalContexts) assert(/(?:com|sem|se |mas |não |cancelad|negad|recusad|adiad|fechad|prazo curto|impedid|perdid|faltou)/i.test(context), `portuguese/condicional-passado: falta condición o resultado real explícito («${context}»)`)
 
 const GENERATED_CONFIGS = [
-  RUSSIAN_STRUCTURE_QUEST,
   JAPANESE_STRUCTURE_QUEST,
   KOREAN_STRUCTURE_QUEST,
 ]
@@ -453,6 +452,7 @@ for (const config of GENERATED_CONFIGS) {
 validate(FRENCH_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(PORTUGUESE_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(GERMAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
+validate(RUSSIAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 
 for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
   const formId = GERMAN_STRUCTURE_QUEST.forms[index].id
@@ -486,7 +486,33 @@ const germanImperativeContexts = [
 ]
 for (const context of germanImperativeContexts) assert(/(?:Paul|Frau|Herr|Kinder|Spieler|Nora|Lea|Amir|Gäste|Ihr|Mara und Tom|Meine Damen)/i.test(context), `german/imperativ: falta destinatario visible («${context}»)`)
 
-const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, GERMAN_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
+for (const [index, pack] of RUSSIAN_EDITORIAL_PACKS.entries()) {
+  const formId = RUSSIAN_STRUCTURE_QUEST.forms[index].id
+  assert(pack.choices.length === 10 && pack.micro.length === 10, `russian/${formId}: se requieren 10 decisiones y 10 microtextos`)
+  assert(pack.long.length === 10 && pack.long.every((item) => item.gaps.length === 3), `russian/${formId}: se requieren 10 relatos conectados de tres huecos`)
+  assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `russian/${formId}: se requieren 10 reparaciones de tres verbos`)
+  assert(pack.timelines.length === 10 && pack.finalGaps.length === 10, `russian/${formId}: faltan secuencias o decisiones finales`)
+  for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido ruso heredado`)
+}
+
+const russianContexts = (pack) => [
+  ...pack.micro.map((item) => item.segments.join(' ')), ...pack.long.map((item) => item.segments.join(' ')),
+  ...pack.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+]
+const russianWrittenAnswers = (pack) => [...pack.micro, ...pack.long].flatMap((item) => item.gaps.flatMap((gap) => gap.answers))
+
+for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[1])) assert(/(?:весь|всю|кажд|пока|когда|в тот момент|несколько|часто|раньше|в прошлом|по вечерам|во время|до закрытия|с .+ до|два часа|полчаса|в восемь|в полдень)/i.test(context), `russian/past-imperfective: falta proceso, fondo o repetición visible («${context}»)`)
+for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[2])) assert(/(?:наконец|до |к |за | и |затем|потом|сразу|после|когда|в субботу|вчера|один)/i.test(context), `russian/past-perfective: falta resultado o cadena cerrada («${context}»)`)
+for (const answer of russianWrittenAnswers(RUSSIAN_EDITORIAL_PACKS[3])) assert(/^(?:буду|будешь|будет|будем|будете|будут)\s/u.test(answer), `russian/future-imperfective: falta futuro analítico completo («${answer}»)`)
+for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[4])) assert(/(?:к |до |после|когда|перед|скоро|в субботу|приед|сигнал|сразу|началу|захода)/i.test(context), `russian/future-perfective: falta límite o resultado futuro («${context}»)`)
+for (const answer of [...russianWrittenAnswers(RUSSIAN_EDITORIAL_PACKS[5]), ...russianWrittenAnswers(RUSSIAN_EDITORIAL_PACKS[6])]) assert(/\sбы$/u.test(answer), `russian/conditional: la respuesta debe incluir «бы» («${answer}»)`)
+for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[5])) assert(/(?:сейчас|сегодня|на твоём месте|на её месте|при большем|если бы|без |текущ)/i.test(context), `russian/conditional-present: falta ancla actual («${context}»)`)
+for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[6])) assert(/(?:вчера|тогда|прошл|в субботу|ночью|год назад|закрыт|отмен|потер|слом|поздн|не состоя)/i.test(context), `russian/conditional-past: falta ancla pasada cerrada («${context}»)`)
+for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[7])) assert(/(?:пока|кажд|весь|всю|в течение|во время|всегда|не |продолж|регуляр|несколько|по вечерам|никогда)/i.test(context), `russian/imperative-imperfective: falta motivación de proceso o repetición («${context}»)`)
+for (const context of russianContexts(RUSSIAN_EDITORIAL_PACKS[8])) assert(/(?:до |после|перед|когда|сначала|затем|потом|сразу|один|конкрет|в конце|у ворот|ошибка|в этой|на карте|страниц)/i.test(context), `russian/imperative-perfective: falta resultado único («${context}»)`)
+for (const answer of russianWrittenAnswers(RUSSIAN_EDITORIAL_PACKS[9])) assert(/(?:ть|ти|чь)(?:ся)?$/u.test(answer), `russian/infinitive-aspect: la respuesta no es infinitivo («${answer}»)`)
+
+const allConfigs = [ITALIAN_TENSE_QUEST, ENGLISH_TENSE_QUEST, FRENCH_STRUCTURE_QUEST, PORTUGUESE_STRUCTURE_QUEST, GERMAN_STRUCTURE_QUEST, RUSSIAN_STRUCTURE_QUEST, ...GENERATED_CONFIGS]
 assert(new Set(allConfigs.map((config) => config.storageKey)).size === allConfigs.length, 'los storageKey deben ser únicos por idioma')
 assert(allConfigs.every((config) => /-v\d+$/.test(config.storageKey)), 'cada storageKey debe declarar una versión de esquema')
 

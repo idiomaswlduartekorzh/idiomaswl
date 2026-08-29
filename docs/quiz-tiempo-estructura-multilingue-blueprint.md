@@ -44,6 +44,14 @@ palabras congeladas. Perfekt distingue `haben` y `sein`, Plusquamperfekt y Futur
 planos temporales, Futur I se reserva para predicción o compromiso explícito y cada imperativo
 muestra si la persona destinataria requiere `du`, `ihr` o `Sie`.
 
+Actualización rusa (29 de agosto de 2026): los diez contrastes disponen de diez retos por nivel
+y la ruta pública importa `russian-structure-quest-config.ts`. Pasado y futuro separan proceso
+de resultado mediante límites discursivos visibles; los dos condicionales conservan la misma
+morfología con `бы` y se distinguen solo por anclas actuales o pasadas; los imperativos declaran
+la meta comunicativa del aspecto; y la selección de infinitivo contrasta fase con logro. El
+guardián conserva variantes normativas con y sin `ё`, exige la construcción analítica futura
+completa y rechaza escenas sin motivación aspectual.
+
 ## Principio de producto
 
 No se traduce una lista inglesa de “tiempos”. Cada idioma selecciona las oposiciones que un

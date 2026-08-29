@@ -1,5 +1,7 @@
 import { createStructureQuest, type FinalRow, type StructureSeed } from './create-structure-quest.ts'
 
+// Contenido heredado. La ruta pública usa russian-structure-quest-config.ts y bancos editoriales auditados.
+
 export const RUSSIAN_FORMS = [
   { id: 'present-imperfective', label: 'Настоящее время', group: 'Время' },
   { id: 'past-imperfective', label: 'Прошедшее: процесс / фон', group: 'Время и вид' },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { GrammarLessonSchema, QuizSchema } from '@/components/practica/EducationSchema'
 import TenseQuestEngine from '@/components/practica/TenseQuestEngine'
-import { RUSSIAN_STRUCTURE_QUEST } from '@/data/practica/russian-structure-quest'
+import { RUSSIAN_STRUCTURE_QUEST } from '@/data/practica/russian-structure-quest-config'
 
 const URL = 'https://www.idiomaswl.com/herramientas/quizes/ruso'
 export const metadata: Metadata = {

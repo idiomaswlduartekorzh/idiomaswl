@@ -8,7 +8,7 @@ import { EDITORIAL_ITALIAN_FORMS, ITALIAN_TENSE_QUEST } from '../src/data/practi
 import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest.ts'
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
-import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest.ts'
+import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest-config.ts'
 
 const CONFIGS = [
   ITALIAN_TENSE_QUEST,
@@ -59,7 +59,7 @@ test('declared normative variants survive into every written-answer level', () =
   const japaneseExperience = JAPANESE_STRUCTURE_QUEST.microStories.find((item) => item.id === 'japanese-structure-quest-micro-experience-1')
   assert.ok(japaneseExperience?.gaps[0].answers.includes('行ったことあります'))
 
-  const russianYo = RUSSIAN_STRUCTURE_QUEST.microStories.find((item) => item.id === 'russian-structure-quest-micro-past-imperfective-3')
+  const russianYo = RUSSIAN_STRUCTURE_QUEST.microStories.find((item) => item.gaps.some((gap) => gap.verb === 'идти'))
   assert.ok(russianYo?.gaps[0].answers.includes('шел'))
 })
 
@@ -260,6 +260,28 @@ test('German final dossiers are autonomous and balance the four answer positions
       assert.equal(gap.candidateCardIds?.length, 4, gap.id)
       positions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
     }
+  }
+  assert.ok(Math.max(...positions) - Math.min(...positions) <= 1, positions.join('/'))
+})
+
+test('Russian exposes ten editorial challenges per contrast and level', () => {
+  for (const form of RUSSIAN_STRUCTURE_QUEST.forms) {
+    const id = form.id
+    assert.equal(RUSSIAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(id)).length, 10, `${id}/choice`)
+    assert.equal(RUSSIAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/micro`)
+    assert.equal(RUSSIAN_STRUCTURE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/long`)
+    assert.equal(RUSSIAN_STRUCTURE_QUEST.errorChallenges.filter((item) => item.tense === id).length, 10, `${id}/error`)
+    assert.equal(RUSSIAN_STRUCTURE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length, 10, `${id}/timeline`)
+    assert.equal(RUSSIAN_STRUCTURE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length, 10, `${id}/final`)
+  }
+})
+
+test('Russian final dossiers are autonomous and balanced', () => {
+  const positions = [0, 0, 0, 0]
+  for (const form of RUSSIAN_STRUCTURE_QUEST.forms) {
+    const finals = RUSSIAN_STRUCTURE_QUEST.finalChallenges.flatMap((item) => item.gaps.filter((gap) => gap.tenseId === form.id))
+    assert.equal(new Set(finals.map((gap) => `${gap.standalone?.before ?? ''}___${gap.standalone?.after ?? ''}`)).size, 10, form.id)
+    for (const gap of finals) positions[gap.candidateCardIds.indexOf(gap.answerCardId)] += 1
   }
   assert.ok(Math.max(...positions) - Math.min(...positions) <= 1, positions.join('/'))
 })

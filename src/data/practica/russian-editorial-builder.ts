@@ -6,7 +6,7 @@ import {
   type StructureEditorialMicroSeed,
   type StructureEditorialSequenceSeed,
 } from './editorial-structure-builder.ts'
-import type { RussianFormId } from './russian-structure-quest.ts'
+import type { RussianFormId } from './russian-structure-quest-config.ts'
 
 export type RussianEditorialMicroSeed = StructureEditorialMicroSeed
 export type RussianEditorialGapSeed = StructureEditorialGapSeed
@@ -16,7 +16,7 @@ export type RussianEditorialFinalSeed = StructureEditorialFinalSeed
 
 export type RussianCompactMicro = [
   title: string, cue: string, before: string, after: string, verb: string,
-  answer: string, distractor1: string, distractor2: string, distractor3: string,
+  answer: string | [string, ...string[]], distractor1: string, distractor2: string, distractor3: string,
 ]
 export type RussianCompactStory = [
   title: string,
@@ -74,7 +74,7 @@ export function createRussianCompactPack(input: {
   final: RussianCompactFinal[]
 }) {
   const micro: RussianEditorialMicroSeed[] = input.micro.map(([title, cue, before, after, verb, answer, ...distractors]) => ({
-    title, cue, segments: [before, after], verb, answers: [answer], distractors: distractors as [string, string, string],
+    title, cue, segments: [before, after], verb, answers: Array.isArray(answer) ? answer : [answer], distractors: distractors as [string, string, string],
   }))
   const long: RussianEditorialGapSeed[] = input.stories.map(([title, segments, verbs, answers]) => ({
     title, instruction: 'Вставьте три формы в единый связный эпизод.', segments,
