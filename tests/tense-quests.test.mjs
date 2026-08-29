@@ -80,7 +80,7 @@ test('Italian exposes progressive periphrases and ten real challenges per form a
 
 test('Italian written answers never hide lexical adverbs inside the requested conjugation', () => {
   const lexicalAdverb = /\b(?:appena|già|ancora|mai|sempre)\b/iu
-  for (const challenge of ITALIAN_TENSE_QUEST.microStories) {
+  for (const challenge of [...ITALIAN_TENSE_QUEST.microStories, ...ITALIAN_TENSE_QUEST.longStories]) {
     for (const gap of challenge.gaps) {
       for (const answer of gap.answers) assert.doesNotMatch(answer, lexicalAdverb, `${challenge.id}/${gap.id}`)
     }
@@ -88,6 +88,26 @@ test('Italian written answers never hide lexical adverbs inside the requested co
 
   const finire = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-pp-micro-editorial-5')
   assert.deepEqual(finire?.gaps[0].answers, ['ha finito'])
+})
+
+test('Italian remote pluperfect always exposes its literary temporal anchor', () => {
+  const longs = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === 'trapassato-remoto'))
+  for (const item of longs) {
+    const anchors = item.segments.join(' ').match(/\b(?:dopo che|quando|non appena|appena)\b/giu) ?? []
+    assert.ok(anchors.length >= item.gaps.length, item.id)
+  }
+
+  const timelines = ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === 'trapassato-remoto'))
+  for (const item of timelines) {
+    assert.ok(item.options.every((option) => /\b(?:dopo che|quando|non appena|appena)\b/iu.test(option) && option.includes(',')), item.id)
+  }
+
+  const errors = ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === 'trapassato-remoto')
+  for (const item of errors) {
+    const text = `${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`
+    const anchors = text.match(/\b(?:dopo che|quando|non appena|appena)\b/giu) ?? []
+    assert.ok(anchors.length >= item.chunks.length, item.id)
+  }
 })
 
 test('Italian final decisions use autonomous context and same-verb candidate sets', () => {

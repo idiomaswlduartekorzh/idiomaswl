@@ -149,6 +149,14 @@ function assertItalianInferability() {
 
   const finire = ITALIAN_TENSE_QUEST.microStories.find((item) => item.id === 'it-pp-micro-editorial-5')
   assert(finire?.gaps[0].answers.includes('ha finito'), 'italian/passato-prossimo: «ha finito» debe aceptarse sin exigir «appena»')
+
+  for (const challenge of [...ITALIAN_TENSE_QUEST.microStories, ...ITALIAN_TENSE_QUEST.longStories]) {
+    for (const gap of challenge.gaps) {
+      for (const answer of gap.answers) {
+        assert(!hiddenLexicalTokens.test(answer), `${challenge.id}/${gap.id}: la respuesta escrita esconde un adverbio léxico («${answer}»)`)
+      }
+    }
+  }
 }
 
 function assertItalianEditorialContract() {
@@ -167,6 +175,22 @@ function assertItalianEditorialContract() {
 
     const fingerprints = [...micro, ...long].map((item) => item.segments.join('___').toLocaleLowerCase('it'))
     assert(new Set(fingerprints).size === fingerprints.length, `${formId}: hay textos repetidos entre niveles escritos`)
+  }
+
+  const remotePluperfectLong = ITALIAN_TENSE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === 'trapassato-remoto'))
+  for (const item of remotePluperfectLong) {
+    const anchors = item.segments.join(' ').match(/\b(?:dopo che|quando|non appena|appena)\b/giu) ?? []
+    assert(anchors.length >= item.gaps.length, `${item.id}: cada trapassato remoto necesita una subordinada temporal propia`)
+  }
+  const remotePluperfectTimelines = ITALIAN_TENSE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === 'trapassato-remoto'))
+  for (const item of remotePluperfectTimelines) {
+    assert(item.options.every((option) => /\b(?:dopo che|quando|non appena|appena)\b/iu.test(option) && option.includes(',')), `${item.id}: cada opción debe unir anterioridad y consecuencia narrativa`)
+  }
+  const remotePluperfectErrors = ITALIAN_TENSE_QUEST.errorChallenges.filter((item) => item.tense === 'trapassato-remoto')
+  for (const item of remotePluperfectErrors) {
+    const text = `${item.chunks.map((chunk) => chunk.before).join(' ')} ${item.after}`
+    const anchors = text.match(/\b(?:dopo che|quando|non appena|appena)\b/giu) ?? []
+    assert(anchors.length >= item.chunks.length, `${item.id}: cada forma editable necesita una subordinada temporal propia`)
   }
 }
 
