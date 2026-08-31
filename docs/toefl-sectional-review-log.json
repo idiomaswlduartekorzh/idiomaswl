@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "initiative": "toefl-sectional-seo-curation-harness",
+  "reviews": [
+    {
+      "gateId": "HR-01",
+      "reviewer": "Jose David Duarte Silva",
+      "role": "product-owner-final-decision-authority",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-08-31T23:01:07Z",
+      "commitSha": "cc1977d1",
+      "contentDigest": "6f1fd462b9d33c37495fa14af10876747a9909ba658ef9fb252edd584563e442",
+      "evidencePaths": [
+        "docs/toefl-sectional-seo-curation-harness-plan.md"
+      ],
+      "independentReview": false,
+      "notes": "Aprobación humana explícita recibida en la tarea de Codex con el texto 'Apruebo HR-01'. No se nombraron revisores independientes de SEO o ingeniería; el gate se registra como decisión final del dueño del producto y esta ausencia de independencia permanece visible."
+    }
+  ]
+}
