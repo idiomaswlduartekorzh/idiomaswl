@@ -15,6 +15,36 @@
       ],
       "independentReview": false,
       "notes": "Aprobación humana explícita recibida en la tarea de Codex con el texto 'Apruebo HR-01'. No se nombraron revisores independientes de SEO o ingeniería; el gate se registra como decisión final del dueño del producto y esta ausencia de independencia permanece visible."
+    },
+    {
+      "gateId": "HR-02",
+      "reviewer": "Jose David Duarte Silva",
+      "role": "product-owner-final-decision-authority",
+      "decision": "changes_requested",
+      "reviewedAtUtc": "2026-08-31T23:37:21Z",
+      "commitSha": "2d2b1339",
+      "contentDigest": "272bd404c0856d03df3015f2bbd0d4a5c71f8c5cac7cc857f35e59f5be21ad3b",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr02-evidence.json",
+        "docs/toefl-sectional-hr02-ui-spec.md",
+        "docs/prototypes/toefl-sectional-hr02.html"
+      ],
+      "independentReview": false,
+      "notes": "El diseño centraba la entrada en Listening y no representaba el modelo mental solicitado. El hub maestro debe comenzar con Ejercicios, Práctica y Simulacros; Ejercicios abre el catálogo de 12 tipos agrupados por sección. La revisión solicita tomar /practica/ielts como referencia de claridad e intuición."
+    },
+    {
+      "gateId": "HR-01A",
+      "reviewer": "Jose David Duarte Silva",
+      "role": "product-owner-final-decision-authority",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-08-31T23:37:21Z",
+      "commitSha": "2d2b1339",
+      "contentDigest": "5e4dddc103caa44204247b3842e5c60c8b6295564ba0ddd8b85704f8f70bf0a6",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr01a-information-architecture.md"
+      ],
+      "independentReview": false,
+      "notes": "Enmienda arquitectónica derivada de instrucción humana explícita: /practica/toefl presenta tres rutas primarias — Ejercicios, Práctica y Simulacros — y Ejercicios agrupa los 12 tipos TOEFL 2026 por sección."
     }
   ]
 }

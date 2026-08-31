@@ -1,207 +1,226 @@
-# HR-02 — Diseño UI del hub TOEFL por secciones
+# HR-02 v2 — UI del hub TOEFL y catálogo de Ejercicios
 
-**Estado:** listo para revisión humana; no implementado en producción
+**Estado:** revisión solicitada tras `changes_requested`
 
-**Gate anterior:** HR-01 aprobado en `docs/toefl-sectional-review-log.json`
+**Enmienda vigente:** `docs/toefl-sectional-hr01a-information-architecture.md`
 
-**Piloto visual:** TOEFL Listening
+**Referencia visual auditada:** `https://www.idiomaswl.com/practica/ielts`
 
-## 1. Brief de diseño
+## 1. Corrección de enfoque
 
-**Persona:** estudiante hispanohablante que llega desde una búsqueda como “TOEFL Listening practice” y puede no conocer WeLearn.
+La primera propuesta resolvía una página de Listening. Era una pantalla razonable para una etapa posterior, pero no respondía al modelo mental del hub TOEFL.
 
-**Trabajo único de la página:** ayudarle a elegir en menos de diez segundos entre aprender una tarea, practicar Listening por set o hacer el TOEFL completo.
+La nueva propuesta empieza por la pregunta real del usuario:
 
-**Tensión que debe resolver:** ser una página suficientemente clara y verificable para buscadores y asistentes de IA, sin convertirse en un artículo que retrasa la práctica.
+> ¿Quiero hacer un ejercicio específico, seguir una práctica guiada o presentar un simulacro completo?
 
-## 2. Auditoría del estado actual
+Reading, Listening, Writing y Speaking aparecen después de elegir **Ejercicios**, donde organizan los 12 tipos vigentes del TOEFL 2026.
 
-El producto contiene tres lenguajes visuales dentro de la misma familia TOEFL:
+## 2. Qué reutilizamos de la UI de IELTS
 
-- el hub maestro usa vidrio, sombras y una composición inspirada en iOS;
-- Listening y Speaking usan un hero editorial azul oscuro y tarjetas rectangulares;
-- Reading y Writing usan tarjetas globales e importantes cantidades de estilos inline.
+- fondo editorial claro y contenedor amplio;
+- breadcrumb breve;
+- H1 grande que explica la decisión principal;
+- franja factual que resume lo que existe;
+- tarjetas de ruta grandes con estado visible;
+- separación explícita entre contenido disponible y contenido en desarrollo;
+- copy que dice qué encontrará el usuario antes de hacer clic;
+- pocos acentos visuales y ausencia de decoración que compita con la arquitectura.
 
-El rediseño no agrega otra estética. Define una familia TOEFL común, compatible con los tokens globales de WeLearn, y permite que cada sección tenga un color funcional secundario.
+No se copia el contenido de IELTS. Se reutiliza el sistema de jerarquía y estados porque ya pertenece a WeLearn.
 
-## 3. Dirección elegida: “mesa de señal”
+## 3. Dirección visual
 
-Listening se representa como una mesa de trabajo donde cada señal de audio tiene un propósito. La firma visual es un **rail de cuatro señales**, una por familia de tarea. No es una onda decorativa: codifica la estructura que el estudiante va a practicar.
+### Paleta
 
-El riesgo estético deliberado es usar ese rail como pieza dominante del hero en lugar de una ilustración genérica, una foto de audífonos o un panel de estadísticas. La interfaz sigue siendo sobria alrededor de esa pieza.
-
-### Tokens
-
-| Rol | Token | Uso |
-|---|---|---|
-| WeLearn navy | `#14215C` | títulos, navegación y estructura común |
-| WeLearn red | `#C8202E` | acción primaria y estado de grabación/reproducción |
-| Listening teal | `#087F8C` | identificación de sección y estados activos |
-| Signal mint | `#65D6CC` | progreso de audio y énfasis técnico |
-| Canvas | `#F5F7FC` | fondo editorial |
-| Deep ink | `#101938` | texto de máximo contraste |
+| Rol | Color |
+|---|---|
+| Navy WeLearn | `#102E6F` |
+| Rojo WeLearn | `#B42332` |
+| Teal informativo | `#176B87` |
+| Verde disponible | `#18794E` |
+| Fondo editorial | `#F7F8FC` |
+| Texto secundario | `#5C6680` |
 
 ### Tipografía
 
-- **Display:** Geist, 700–780, tracking negativo moderado. Se conserva la fuente instalada y se evita sumar descarga o dependencia.
-- **Cuerpo:** Geist, 430–550, ancho de lectura máximo de 68 caracteres.
-- **Utilidad:** Geist Mono o fallback monoespaciado, solo para set, progreso, duración y etiquetas de formato.
+- Geist para títulos y cuerpo, igual que el producto actual.
+- Geist Mono o fallback monoespaciado para estados, cantidades y etiquetas.
+- H1 entre 40 y 76 px según viewport; cuerpo entre 16 y 18 px.
 
-### Geometría
+### Firma funcional
 
-- Radio de superficie: 16 px; controles: 10–12 px; pills solo para estados breves.
-- Bordes visibles de 1 px y sombras bajas. La jerarquía depende más de espaciado y contraste que del vidrio.
-- Contenedor máximo: 1180 px para hubs; runner: 1280 px.
-- Escala base de espaciado: 4, 8, 12, 16, 24, 32, 48, 72 px.
+La firma de esta página no es una ilustración: son **tres puertas de producto** con el mismo peso visual y estados inequívocos. El riesgo deliberado es no usar un hero promocional ni una CTA única; la elección de producto es el hero.
 
-## 4. Wireframe — hub Listening
+## 4. Pantalla 1 — `/practica/toefl`
+
+### Hero
+
+- Eyebrow: `Práctica TOEFL · Ejercicios, práctica y simulacros`.
+- H1: **“Elige cómo quieres preparar el TOEFL.”**
+- Lead: “Entrena un tipo de ejercicio, sigue una ruta guiada o entra a uno de los 20 simulacros completos. Cada opción te dice exactamente qué encontrarás.”
+
+### Franja factual
+
+- `3 rutas` — ejercicios, práctica guiada y simulacros.
+- `12 tipos` — tareas vigentes agrupadas por sección.
+- `20 simulacros` — mocks completos ya disponibles.
+- `4 secciones` — Reading, Listening, Writing y Speaking.
+
+### Tres rutas
+
+#### Ejercicios — Disponible
+
+**Qué encuentra:** catálogo de los 12 tipos de tarea TOEFL 2026 agrupados en cuatro secciones.
+
+**Acción:** `Ver todos los ejercicios` → `/practica/toefl/ejercicios`.
+
+#### Práctica — Próximamente
+
+**Qué encontrará:** recorridos guiados que combinan explicación, intento, revisión y repetición.
+
+**Acción:** no es un enlace. La tarjeta explica que todavía está en desarrollo.
+
+#### Simulacros — 20 disponibles
+
+**Qué encuentra:** mocks completos con las cuatro secciones.
+
+**Acción:** `Abrir los 20 simulacros` → `/examenes/toefl#simulacros`.
+
+### Vista previa de Ejercicios
+
+Debajo de las tres rutas se muestra una línea compacta:
+
+- Reading · 3 tipos
+- Listening · 4 tipos
+- Writing · 3 tipos
+- Speaking · 2 tipos
+
+Sirve para anticipar la organización sin duplicar el catálogo completo.
+
+## 5. Pantalla 2 — `/practica/toefl/ejercicios`
+
+### Hero
+
+- Eyebrow: `TOEFL 2026 · Catálogo de ejercicios`.
+- H1: **“Todos los ejercicios TOEFL, organizados por sección.”**
+- Lead: “Elige una tarea concreta. Verás qué ejercicios ya tienen práctica individual y cuáles están disponibles dentro de los simulacros mientras construimos su recorrido propio.”
+
+### Navegación por clúster
+
+Una fila de enlaces internos permite saltar a Reading, Listening, Writing o Speaking. No se utiliza un filtro que oculte HTML: los cuatro clústeres permanecen visibles e indexables.
+
+### Clústeres
+
+Los clústeres forman una cuadrícula 2 × 2 en escritorio y una sola columna en móvil. Cada panel incluye:
+
+- nombre de sección;
+- cantidad de tipos;
+- explicación de una línea;
+- lista completa de tareas;
+- estado y acción por tarea.
+
+#### Reading — 3
+
+- Complete the Words — ejercicio disponible.
+- Read in Daily Life — ejercicio disponible.
+- Read an Academic Passage — ejercicio disponible.
+
+#### Listening — 4
+
+- Listen and Choose a Response — disponible en simulacros; individual próximamente.
+- Listen to a Conversation — disponible en simulacros; individual próximamente.
+- Listen to an Announcement — disponible en simulacros; individual próximamente.
+- Listen to an Academic Talk — disponible en simulacros; individual próximamente.
+
+#### Writing — 3
+
+- Build a Sentence — ejercicio disponible.
+- Write an Email — ejercicio disponible.
+- Write for an Academic Discussion — ejercicio disponible.
+
+#### Speaking — 2
+
+- Listen and Repeat — disponible en simulacros; individual próximamente.
+- Take an Interview — disponible en simulacros; individual próximamente.
+
+### Estados
+
+- **Disponible:** tarjeta/fila enlazada al ejercicio individual.
+- **En simulacros:** el tipo existe en el banco y puede practicarse mediante los mocks.
+- **Próximamente:** no se finge una interacción que todavía no existe.
+
+Los estados siempre aparecen escritos; el color es redundante.
+
+## 6. Wireframes
+
+### Hub
 
 ```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│ WeLearn        Práctica  Exámenes  Idiomas                       Acceder     │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ Práctica / TOEFL / Listening                                                │
-│                                                                              │
-│ TOEFL LISTENING PRACTICE              ┌─ Mapa de señales ──────────────────┐ │
-│ Practica Listening por tarea          │ 01  Choose a Response    ▂▅▇▃       │ │
-│ o completa una sección                │ 02  Conversation         ▃▆▂▇       │ │
-│                                      │ 03  Announcement         ▅▃▇▂       │ │
-│ Texto breve + disclosure             │ 04  Academic Talk        ▂▇▅▃       │ │
-│ [Practicar Listening] [Ver tareas]   └─────────────────────────────────────┘ │
-│ Práctica WeLearn · fija · no oficial                                        │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ Elige cómo practicar                                                        │
-│ [Response] [Conversation] [Announcement] [Academic Talk] [20 sets →]        │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ Cómo usar la práctica: aprende → practica → revisa → confirma                │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ Formato y límites         Fuente oficial          Preguntas frecuentes       │
-└──────────────────────────────────────────────────────────────────────────────┘
+Práctica / TOEFL
+
+PRÁCTICA TOEFL · EJERCICIOS, PRÁCTICA Y SIMULACROS
+Elige cómo quieres preparar el TOEFL.
+Texto que explica las tres opciones.
+
+[3 rutas] [12 tipos] [20 simulacros] [4 secciones]
+
+¿Qué quieres hacer hoy?
+
+[ EJERCICIOS         ] [ PRÁCTICA            ] [ SIMULACROS          ]
+[ Disponible         ] [ Próximamente        ] [ 20 disponibles      ]
+[ Ver ejercicios  →  ] [ En desarrollo       ] [ Abrir simulacros →  ]
+
+Dentro de Ejercicios
+[Reading · 3] [Listening · 4] [Writing · 3] [Speaking · 2]
 ```
 
-### Jerarquía de acciones
-
-1. **Primaria:** “Practicar Listening” abre la biblioteca seccional.
-2. **Secundaria:** “Ver las 4 tareas” desplaza a las familias de tarea.
-3. **Terciaria:** “Hacer un TOEFL completo” permanece visible, pero no compite con la intención seccional.
-
-### Copy propuesto
-
-- H1: **“Practica TOEFL Listening por tarea o por simulacro”**.
-- Lead: “Entrena las cuatro tareas vigentes con audio original de WeLearn. Empieza por una habilidad concreta o completa solo la sección de Listening.”
-- Disclosure: “Práctica WeLearn · recorrido fijo · no es una prueba oficial de ETS”.
-
-## 5. Wireframe — biblioteca de 20 sets
+### Catálogo
 
 ```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│ TOEFL / Listening / Simulacros                                              │
-│                                                                              │
-│ 20 prácticas de TOEFL Listening                 Tu progreso: 0 de 20         │
-│ Cada set usa 14 audios y 34 preguntas del banco existente.                  │
-│                                                                              │
-│ [Todos] [Sin empezar] [En curso] [Completados]            Orden: recomendado │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ SET 01  14 audios · 34 preguntas  [Empezar]  │ SET 02 ...                   │
-│ SET 03  ...                                 │ SET 04 ...                   │
-│ ...                                                                         │
-│ SET 20                                                                      │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ ¿Quieres practicar una tarea? [Ver las cuatro tareas de Listening]           │
-└──────────────────────────────────────────────────────────────────────────────┘
+TOEFL / Ejercicios
+
+Todos los ejercicios TOEFL, organizados por sección.
+[Reading] [Listening] [Writing] [Speaking]
+
+┌ Reading · 3 ──────────────┐  ┌ Listening · 4 ───────────────┐
+│ Complete the Words      → │  │ Choose a Response  En mocks  │
+│ Read in Daily Life      → │  │ Conversation       En mocks  │
+│ Academic Passage        → │  │ Announcement       En mocks  │
+└───────────────────────────┘  │ Academic Talk      En mocks  │
+                               └───────────────────────────────┘
+┌ Writing · 3 ──────────────┐  ┌ Speaking · 2 ─────────────────┐
+│ Build a Sentence        → │  │ Listen and Repeat   En mocks  │
+│ Write an Email          → │  │ Take an Interview   En mocks  │
+│ Academic Discussion     → │  └────────────────────────────────┘
+└───────────────────────────┘
 ```
 
-### Reglas
+## 7. Responsive y accesibilidad
 
-- El conteo se lee del adaptador; nunca se escribe manualmente en producción.
-- Sin sesión iniciada se ocultan filtros de progreso y se usa el estado “Disponible”.
-- Un set conserva siempre su ID visible. No se presenta como “nivel” si el banco no tiene dificultad auditada.
-- El primer set es recomendado para usuarios nuevos; no se ordena por popularidad sin datos.
+- Las tres rutas se apilan en móvil conservando este orden: Ejercicios, Práctica, Simulacros.
+- Práctica mantiene `aria-disabled` o se renderiza como artículo, no como enlace falso.
+- Los clústeres pasan de 2 × 2 a una columna.
+- Cada fila enlazada tiene al menos 48 px de alto y foco visible.
+- Los enlaces de salto apuntan a headings reales y no ocultan contenido.
+- “Disponible”, “En simulacros” y “Próximamente” se comunican por texto y no solo color.
+- El catálogo evita carruseles horizontales y acordeones cerrados: la estructura completa permanece legible y rastreable.
 
-## 6. Wireframe — runner Listening
+## 8. Lo que deliberadamente no diseñamos todavía
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│ ← Salir a los sets        LISTENING · SET 01        Audio 03 de 14    21%    │
-│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
-├────────────────────────────────────┬─────────────────────────────────────────┤
-│ Señal 03                           │ Pregunta 07 de 34                       │
-│ Listen to a Conversation           │                                         │
-│                                    │ What does the student imply?            │
-│            [▶ Reproducir]          │ ○ Opción A                              │
-│            00:00 / 00:38           │ ○ Opción B                              │
-│                                    │ ○ Opción C                              │
-│ No cierres esta pestaña mientras   │ ○ Opción D                              │
-│ se reproduce el audio.             │                                         │
-│                                    │ [Marcar para revisar] [Guardar y seguir]│
-└────────────────────────────────────┴─────────────────────────────────────────┘
-```
+- runner seccional;
+- biblioteca de práctica guiada;
+- progreso entre ejercicios;
+- resultados o puntuación;
+- nuevas páginas individuales de Listening y Speaking.
 
-### Principios del runner
+Esos flujos pertenecen a gates posteriores. HR-02 solo debe aprobar la puerta de entrada y la comprensión del catálogo.
 
-- Una tarea por pantalla y un solo botón primario.
-- Progreso doble: estímulo actual y total de preguntas.
-- El audio y la pregunta comparten contexto, pero se apilan en móvil.
-- “Salir” confirma si existe respuesta sin guardar; no se atrapa al usuario.
-- El resultado usa “aciertos de esta práctica”, nunca “puntuación TOEFL oficial”.
+## 9. Decisión solicitada
 
-## 7. Estados obligatorios
-
-| Estado | Mensaje/acción |
-|---|---|
-| Carga | skeleton solo en el bloque pendiente; título y navegación permanecen estables |
-| Audio listo | botón “Reproducir audio” con duración real |
-| Reproduciendo | tiempo transcurrido, estado textual y control accesible |
-| Audio falló | “No pudimos cargar este audio. Comprueba tu conexión o inténtalo de nuevo.” + “Reintentar” + “Marcar y seguir” |
-| Sin respuesta | al continuar, foco en el grupo y mensaje “Elige una respuesta o marca la pregunta para revisarla.” |
-| Sesión recuperada | “Retomamos tu práctica en la pregunta N.” |
-| Set terminado | aciertos, errores por familia y acciones “Revisar errores” / “Volver a los sets” |
-| Sin progreso | “Aún no has empezado un set. Comienza por el Set 01.” |
-
-## 8. Responsive
-
-### Escritorio, ≥ 1024 px
-
-- Hero 7/5 columnas: copy y rail de señales.
-- Biblioteca a dos columnas; runner dividido 5/7.
-- Navegación del sitio completa.
-
-### Tableta, 680–1023 px
-
-- Hero apilado; rail de cuatro señales en dos columnas.
-- Biblioteca a dos columnas cuando cada tarjeta conserve 280 px.
-- Runner apilado y controles de avance pegados al borde inferior del viewport.
-
-### Móvil, 320–679 px
-
-- H1 entre 36 y 44 px, sin cortar “Listening”.
-- CTA primaria a ancho completo; secundaria debajo.
-- Tarjetas en una columna; información secundaria colapsable después de lo esencial.
-- Runner: audio primero, pregunta después; barra de acción sticky sin cubrir opciones.
-
-## 9. Accesibilidad
-
-- Contraste WCAG AA para texto y controles; el teal nunca es el único indicador de estado.
-- Foco visible de 3 px con separación mínima de 2 px.
-- Targets táctiles de al menos 44 × 44 px.
-- Las “ondas” del rail son decorativas para lector de pantalla; cada fila conserva nombre textual de tarea.
-- Estado de reproducción comunicado mediante texto y `aria-live` moderado, no solo animación.
-- `prefers-reduced-motion` elimina movimiento del indicador y conserva el cambio de estado.
-- El orden de tabulación sigue audio → respuestas → revisar → continuar.
-- Los errores se vinculan mediante `aria-describedby` y reciben foco solo cuando bloquean el avance.
-
-## 10. Autocrítica y recorte
-
-La primera exploración consideró vidrio, grandes cifras y gradientes porque el hub actual ya los usa. Se descartó: repetía un patrón genérico y competía con la tarea. También se descartó asignar un color fuerte distinto a cada una de las cuatro tareas; generaba ruido y dificultaba escalar el sistema a las demás secciones.
-
-La versión sometida a revisión concentra la personalidad en un solo elemento —el rail de señales— y mantiene el resto quieto. Se conserva la marca WeLearn, se reduce la decoración y se separan con claridad práctica seccional y examen completo.
-
-## 11. Decisión solicitada en HR-02
-
-- [ ] Apruebo la dirección “mesa de señal”.
-- [ ] Apruebo la jerarquía: práctica seccional primero, examen completo como acción terciaria.
-- [ ] Apruebo el patrón visual compartido para hub, biblioteca y runner.
-- [ ] Apruebo el comportamiento responsive y los estados obligatorios.
-- [ ] Apruebo continuar a HR-03 para diseñar la interconexión real entre páginas.
-
-Hasta esa aprobación, estos artefactos son de diseño y no autorizan cambios de UI en producción.
+- [ ] El hub explica con claridad Ejercicios, Práctica y Simulacros.
+- [ ] Ejercicios conduce a los 12 tipos agrupados en cuatro clústeres.
+- [ ] Práctica se muestra como Próximamente sin enlace engañoso.
+- [ ] Simulacros conduce a los 20 mocks existentes.
+- [ ] La UI se siente parte de la misma familia que `/practica/ielts`.
+- [ ] Se autoriza pasar a HR-03 para bocetar la interconexión entre estas páginas.

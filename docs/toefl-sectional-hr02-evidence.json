@@ -1,39 +1,50 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "gateId": "HR-02",
+  "revision": 2,
   "status": "pending-human-review",
-  "createdAtUtc": "2026-08-31T23:21:05Z",
-  "designDirection": "mesa-de-senal",
+  "createdAtUtc": "2026-08-31T23:50:58Z",
+  "designDirection": "welearn-ielts-reference-three-product-routes",
+  "supersedesCommit": "2d2b1339",
+  "sourceReference": {
+    "url": "https://www.idiomaswl.com/practica/ielts",
+    "inspectedAtUtc": "2026-08-31T23:37:21Z",
+    "observedPatterns": [
+      "editorial light canvas",
+      "large decision-led heading",
+      "fact strip",
+      "large route cards",
+      "visible available and coming-soon states"
+    ]
+  },
   "artifacts": [
     {
+      "path": "docs/toefl-sectional-hr01a-information-architecture.md",
+      "sha256": "5e4dddc103caa44204247b3842e5c60c8b6295564ba0ddd8b85704f8f70bf0a6"
+    },
+    {
       "path": "docs/toefl-sectional-hr02-ui-spec.md",
-      "sha256": "45463b1500fed17775e32fa0c61d82718a7c18cd024bf776c9aa95e6274bcd33"
+      "sha256": "4d5c3db5030bfe3a8f7ec400e43be8fa3155abd8178e0f27c13c05ffb1e7a378"
     },
     {
       "path": "docs/prototypes/toefl-sectional-hr02.html",
-      "sha256": "347a4247d82f9e1a34f0f4529a20048f4e2225b62fbc6d1b0a214da1b359b8ed"
+      "sha256": "30208ff6e332b9d57d203d3daeffcf72aaf3dffba6d5c6ff4a070c5aae165abe"
     },
     {
       "path": "docs/prototypes/screenshots/hr02-hub.png",
-      "sha256": "9276c7f371fb5f9f596b76b76c3ae6abd68733f40e4dfc778b57a3c832fd29fe",
+      "sha256": "59b4462d70a7ce2df6ed9053f6d2b071d45e7685138957bfa5942bb053bc52c8",
       "width": 1440,
-      "height": 1000
+      "height": 1100
     },
     {
-      "path": "docs/prototypes/screenshots/hr02-library.png",
-      "sha256": "d013cfd3fa4cdc14a64aec9fb2be57c7984ab5d0e588ff1f77b34be0330233da",
+      "path": "docs/prototypes/screenshots/hr02-catalog.png",
+      "sha256": "64467047f1a08b0b504eba0eb04b2b38e52cea59a8cfa14acdec38746ac644f5",
       "width": 1440,
-      "height": 1000
-    },
-    {
-      "path": "docs/prototypes/screenshots/hr02-runner.png",
-      "sha256": "5286a159d6ffd911be4b4ba3a0f2268dce0528877680f1e11da1ddf5a7be0ab4",
-      "width": 1440,
-      "height": 1000
+      "height": 1100
     },
     {
       "path": "docs/prototypes/screenshots/hr02-mobile.png",
-      "sha256": "d4ed2c690e521126e5c24248d11c345a50824c38100c46c43e80c7d1568afcee",
+      "sha256": "116676d27f91cc55a3442635e0cf6621dc8a8d77f1a3181b5a4f0f7df6b49b00",
       "width": 1100,
       "height": 1000
     }
@@ -41,18 +52,21 @@
   "checks": {
     "renderMethod": "local Chrome headless from a file URL; no production data or external assets",
     "viewsInspected": [
-      "hub-desktop",
-      "library-desktop",
-      "runner-desktop",
-      "hub-mobile",
-      "runner-mobile"
+      "toefl-hub-desktop",
+      "exercise-catalog-desktop",
+      "toefl-hub-mobile",
+      "exercise-catalog-mobile"
     ],
     "visualInspection": "passed",
     "productionCodeChanged": false,
+    "obsoleteRevisionArtifactsRemoved": [
+      "docs/prototypes/screenshots/hr02-library.png",
+      "docs/prototypes/screenshots/hr02-runner.png"
+    ],
     "knownLimitations": [
-      "The prototype is static and does not validate real audio behavior.",
-      "Keyboard, screen-reader and reduced-motion behavior are specified but require functional validation in HR-05.",
-      "The six visible set cards are a representative sample of the planned 20-set library."
+      "The prototype is static and its review navigation is not the HR-03 product link model.",
+      "Only routes with current individual exercises are represented as available.",
+      "Functional keyboard and screen-reader validation belongs to the implementation gate."
     ]
   }
 }
