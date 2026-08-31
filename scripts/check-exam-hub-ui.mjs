@@ -87,12 +87,14 @@ expectMarkers(cluster, 'Clúster editorial', ['wl-hub-panel', 'wl-hub-heading', 
 
 const podcastLibrary = read('src/data/practica/podcast-library.ts');
 const podcastCatalog = read('src/data/practica/exam-podcast-catalog.ts');
-expectMarkers(podcastLibrary, 'Biblioteca de podcasts', ['topik-i-strategy-map', "examSlug: 'topik'", 'goethe-zertifikat-strategy-map', "examSlug: 'goethe'"]);
-expectMarkers(podcastCatalog, 'Catálogo editorial de podcasts', ['TOPIK_I_STRATEGY_PODCAST', "byId('topik-i-strategy-map')", 'GOETHE_ZERTIFIKAT_STRATEGY_PODCAST', "byId('goethe-zertifikat-strategy-map')"]);
+expectMarkers(podcastLibrary, 'Biblioteca de podcasts', ['topik-i-strategy-map', "examSlug: 'topik'", 'goethe-zertifikat-strategy-map', 'goethe-zertifikat-b1-18-richtige-antworten', "examSlug: 'goethe'"]);
+expectMarkers(podcastCatalog, 'Catálogo editorial de podcasts', ['TOPIK_I_STRATEGY_PODCAST', "byId('topik-i-strategy-map')", 'GOETHE_ZERTIFIKAT_STRATEGY_PODCAST', "byId('goethe-zertifikat-strategy-map')", 'GOETHE_B1_GERMAN_PODCAST', "byId('goethe-zertifikat-b1-18-richtige-antworten')"]);
 expect(exists('src/data/practica/podcasts/estrategias-para-aprobar-el-topik-i.ts'), 'Faltan las notas revisadas del podcast TOPIK.');
 expect(exists('public/audio/topik/strategy-map/estrategias-para-aprobar-el-topik-i.mp3'), 'Falta el audio público del podcast TOPIK.');
 expect(exists('src/data/practica/podcasts/estrategias-para-aprobar-el-goethe-zertifikat.ts'), 'Faltan las notas revisadas del podcast Goethe.');
 expect(exists('public/audio/goethe/strategy-map/estrategias-para-aprobar-el-goethe-zertifikat.mp3'), 'Falta el audio público del podcast Goethe.');
+expect(exists('src/data/practica/podcasts/goethe-zertifikat-b1-18-richtige-antworten.ts'), 'Faltan las notas revisadas del podcast Goethe en alemán.');
+expect(exists('public/audio/goethe/strategy-map/goethe-zertifikat-b1-18-richtige-antworten.mp3'), 'Falta el audio público del podcast Goethe en alemán.');
 
 const jsonLd = read('src/app/(site)/examenes/[exam]/ExamJsonLd.tsx');
 expectMarkers(jsonLd, 'SEO de hubs', ["'@type': 'BreadcrumbList'", "'@type': 'LearningResource'", 'isAccessibleForFree']);

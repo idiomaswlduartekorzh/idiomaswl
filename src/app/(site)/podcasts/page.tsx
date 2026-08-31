@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.idiomaswl.com/podcasts' },
   openGraph: {
     title: 'Biblioteca de podcasts de WeLearn',
-    description: 'Diez guías editoriales en audio para entender el examen antes de practicarlo.',
+    description: 'Once guías editoriales en audio para entender el examen antes de practicarlo.',
     url: 'https://www.idiomaswl.com/podcasts',
     type: 'website',
     locale: 'es_CO',
@@ -31,11 +31,11 @@ export default function PodcastsPage() {
             <p className={styles.eyebrow}><Headphones size={16} aria-hidden="true" /> Biblioteca de audio</p>
             <h1 id="podcast-library-title">Estrategia que se escucha.</h1>
             <p className={styles.lead}>
-              Diez episodios gratuitos para entender el examen antes de practicarlo. Escucha aquí o abre la guía completa con notas, rutas y ejercicios.
+              Once episodios gratuitos para entender el examen antes de practicarlo. Escucha aquí o abre la guía completa con notas, rutas y ejercicios.
             </p>
             <div className={styles.heroStats} aria-label="Resumen de la biblioteca">
-              <span><strong>10</strong> guías en audio</span>
-              <span><strong>3 h 35 min</strong> de orientación</span>
+              <span><strong>11</strong> guías en audio</span>
+              <span><strong>3 h 56 min</strong> de orientación</span>
               <span><strong>7</strong> rutas de examen</span>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function PodcastsPage() {
                 <i key={`${height}-${index}`} style={{ '--wave-height': `${height}%` } as CSSProperties} />
               ))}
             </div>
-            <strong>10</strong>
+            <strong>11</strong>
             <small>episodios publicados</small>
           </div>
         </div>

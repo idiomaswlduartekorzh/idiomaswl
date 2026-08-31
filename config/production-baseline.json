@@ -273,6 +273,7 @@
     { "path": "/audio/topik/strategy-map/estrategias-para-aprobar-el-topik-i.mp3?v=20260825", "contentType": "audio/mpeg", "minimumBytes": 10000000 },
     { "path": "/audio/topik/strategy-map/topik-i-7-day-routine-korean.mp3?v=20260826", "contentType": "audio/mpeg", "minimumBytes": 10000000 },
     { "path": "/audio/goethe/strategy-map/estrategias-para-aprobar-el-goethe-zertifikat.mp3?v=20260828", "contentType": "audio/mpeg", "minimumBytes": 10000000 },
+    { "path": "/audio/goethe/strategy-map/goethe-zertifikat-b1-18-richtige-antworten.mp3?v=20260831", "contentType": "audio/mpeg", "minimumBytes": 10000000 },
     { "path": "/assets/korean/step002/audio/step002-podcast.mp3?v=2", "contentType": "audio/mpeg", "minimumBytes": 5000000 },
     { "path": "/assets/korean/step003/audio/step003-podcast.mp3", "contentType": "audio/mpeg", "minimumBytes": 5000000 },
     { "path": "/assets/korean/step004/audios/step004-podcast.mp3?v=2", "contentType": "audio/mpeg", "minimumBytes": 5000000 },

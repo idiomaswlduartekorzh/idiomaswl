@@ -26,7 +26,9 @@ export async function generateMetadata({ params }: PodcastPageProps): Promise<Me
   return {
     title: episode.locale === 'ko'
       ? `${episode.title}: 팟캐스트와 학습 가이드`
-      : `${episode.title}: podcast y guía escrita`,
+      : episode.locale === 'de'
+        ? `${episode.title}: Podcast und Lernbegleitung`
+        : `${episode.title}: podcast y guía escrita`,
     description: episode.fullDescription,
     keywords: [...episode.keywords],
     alternates: { canonical: url },
@@ -41,7 +43,7 @@ export async function generateMetadata({ params }: PodcastPageProps): Promise<Me
       url,
       type: 'article',
       siteName: 'Idiomas WeLearn',
-      locale: episode.locale === 'es' ? 'es_CO' : episode.locale === 'ko' ? 'ko_KR' : 'en_US',
+      locale: episode.locale === 'es' ? 'es_CO' : episode.locale === 'ko' ? 'ko_KR' : episode.locale === 'de' ? 'de_DE' : 'en_US',
       audio: [{ url: `${BASE}${episode.audioSrc}`, type: 'audio/mpeg' }],
     },
     twitter: {
@@ -61,7 +63,17 @@ export default async function ExamPodcastPage({ params }: PodcastPageProps) {
   const audioUrl = `${BASE}${episode.audioSrc}`;
   const isEnglish = episode.locale === 'en';
   const isKorean = episode.locale === 'ko';
-  const pageCopy = isKorean
+  const isGerman = episode.locale === 'de';
+  const pageCopy = isGerman
+    ? {
+        exams: 'Prüfungen',
+        back: `Zurück zu ${episode.collection}`,
+        nextEyebrow: 'Vom Hören zum gezielten Training',
+        nextTitle: 'Bleib nicht bei der Episode stehen.',
+        nextDescription: 'Nutze die schriftliche Begleitung, um die Methode festzuhalten, und öffne danach genau die Übung, die deine nächste Entscheidung trainiert.',
+        library: 'Alle Audioguides ansehen',
+      }
+    : isKorean
     ? {
         exams: '시험',
         back: `${episode.collection}으로 돌아가기`,

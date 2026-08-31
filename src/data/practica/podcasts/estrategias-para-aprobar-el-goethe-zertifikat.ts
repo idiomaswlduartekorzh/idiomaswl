@@ -43,7 +43,7 @@ export const GOETHE_ZERTIFIKAT_STRATEGY_NOTES: EpisodeSection[] = [
     heading: 'Cómo leer el resultado',
     body: [
       'En B1, cada módulo se evalúa por separado y se supera desde 60 puntos o 60 %. La escritura y la expresión oral se valoran mediante criterios publicados; no basta con contar errores gramaticales ni con estimar una nota global a partir de una impresión general.',
-      'Las producciones de Schreiben y Sprechen son evaluadas por dos personas. Si sus valoraciones se separan más de lo permitido por la normativa, interviene una tercera evaluación. Conocer la rúbrica ayuda a practicar lo que realmente se observa: cumplimiento de la tarea, organización, recursos lingüísticos e interacción, según el módulo.',
+      'Las producciones de Schreiben y Sprechen son evaluadas por dos personas y se calcula el promedio correspondiente. En Schreiben, la normativa B1 contempla una tercera evaluación solamente cuando una valoración queda por debajo de 60, la otra por encima y el promedio también queda por debajo de 60. Conocer la rúbrica ayuda a practicar lo que realmente se observa: cumplimiento de la tarea, organización, recursos lingüísticos e interacción, según el módulo.',
     ],
   },
   {

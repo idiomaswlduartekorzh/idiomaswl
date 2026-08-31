@@ -24,7 +24,7 @@ type PodcastFeatureProps = {
   compact?: boolean;
   accent?: string;
   variant?: 'default' | 'ios';
-  locale?: 'en' | 'es' | 'ko';
+  locale?: 'en' | 'es' | 'ko' | 'de';
   headingLevel?: 1 | 2;
 };
 
@@ -67,6 +67,19 @@ const COPY = {
     links: '오디오 가이드 다음 단계',
     editorialAria: '편집 검토 안내',
     editorial: '편집 검토 완료',
+  },
+  de: {
+    eyebrow: 'Hier starten · Audioguide',
+    duration: 'Episodenlänge',
+    orientation: 'Orientierungsfolge · Deutsch',
+    noAutoplay: 'Kein Autoplay',
+    play: 'Abspielen',
+    fallback: 'Dein Browser unterstützt den Audioplayer nicht.',
+    download: 'Episode herunterladen',
+    outcomes: 'Nach dieser Episode kannst du',
+    links: 'Nach dem Audioguide weiterlernen',
+    editorialAria: 'Hinweis zur redaktionellen Prüfung',
+    editorial: 'Redaktionell geprüft',
   },
 } as const;
 

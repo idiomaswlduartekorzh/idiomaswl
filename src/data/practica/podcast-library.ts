@@ -6,7 +6,7 @@ export type PodcastLibraryEpisode = {
   description: string;
   duration: string;
   durationIso: string;
-  language: 'English' | 'Español' | '한국어';
+  language: 'English' | 'Español' | '한국어' | 'Deutsch';
   collection: 'IELTS' | 'TOEFL' | 'ICFES' | 'Cambridge B2' | 'SAT' | 'TOPIK' | 'Goethe-Zertifikat';
   href: string;
   hubHref: string;
@@ -170,5 +170,20 @@ export const PODCAST_LIBRARY: readonly PodcastLibraryEpisode[] = [
     hubHref: '/examenes/goethe',
     audioSrc: '/audio/goethe/strategy-map/estrategias-para-aprobar-el-goethe-zertifikat.mp3?v=20260828',
     accent: '#00975f',
+  },
+  {
+    id: 'goethe-zertifikat-b1-18-richtige-antworten',
+    slug: 'goethe-zertifikat-b1-18-richtige-antworten',
+    examSlug: 'goethe',
+    title: 'Goethe-Zertifikat B1: Mit 18 richtigen Antworten durch Lesen oder Hören',
+    description: 'Eine deutschsprachige Orientierung zu den B1-Modulen, der 60-Punkte-Grenze und einem evidenzbasierten Übungszyklus.',
+    duration: '21:07',
+    durationIso: 'PT21M7S',
+    language: 'Deutsch',
+    collection: 'Goethe-Zertifikat',
+    href: '/examenes/goethe/podcast/goethe-zertifikat-b1-18-richtige-antworten',
+    hubHref: '/examenes/goethe',
+    audioSrc: '/audio/goethe/strategy-map/goethe-zertifikat-b1-18-richtige-antworten.mp3?v=20260831',
+    accent: '#e7b800',
   },
 ] as const;

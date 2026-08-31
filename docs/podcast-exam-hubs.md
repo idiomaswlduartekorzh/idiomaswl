@@ -15,7 +15,7 @@ La página del episodio contiene el reproductor, una descripción extensa, objet
 `src/data/practica/exam-podcast-catalog.ts` es la fuente de verdad editorial. Amplía el registro breve de `podcast-library.ts` y alimenta:
 
 - la estantería compacta que aparece en los hubs de examen;
-- las nueve páginas editoriales de episodio;
+- las once páginas editoriales de episodio;
 - metadatos, JSON-LD y parámetros estáticos;
 - el sitemap;
 - enlaces del índice `/podcasts`.
@@ -32,7 +32,7 @@ El audio y las notas no se duplican. El catálogo referencia los MP3 y módulos 
 
 ## Protección para despliegues
 
-`config/production-baseline.json` protege el catálogo, el componente de hub, la ruta dinámica, sus estilos y las ocho URLs públicas. El sitemap deriva las URLs del mismo catálogo. Un despliegue que elimine cualquiera de estos elementos debe fallar antes de llegar a producción.
+`config/production-baseline.json` protege el catálogo, el componente de hub, la ruta dinámica, sus estilos y los once audios editoriales. El sitemap deriva las URLs del mismo catálogo. Un despliegue que elimine cualquiera de estos elementos debe fallar antes de llegar a producción.
 
 Antes de integrar una rama:
 
@@ -45,4 +45,4 @@ npx tsc --noEmit
 npm run build
 ```
 
-Después del despliegue se deben probar los seis hubs de examen, `/podcasts`, `/herramientas`, las nueve páginas editoriales y los nueve activos de audio.
+Después del despliegue se deben probar los siete hubs de examen, `/podcasts`, `/herramientas`, las once páginas editoriales y los once activos de audio.

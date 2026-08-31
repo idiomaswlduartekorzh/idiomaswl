@@ -28,6 +28,10 @@ import {
   GOETHE_ZERTIFIKAT_STRATEGY_NOTES,
   GOETHE_ZERTIFIKAT_STRATEGY_PODCAST,
 } from './podcasts/estrategias-para-aprobar-el-goethe-zertifikat';
+import {
+  GOETHE_B1_GERMAN_NOTES,
+  GOETHE_B1_GERMAN_PODCAST,
+} from './podcasts/goethe-zertifikat-b1-18-richtige-antworten';
 import { PODCAST_LIBRARY, type PodcastLibraryEpisode } from './podcast-library';
 
 export type ExamPodcastLink = {
@@ -44,7 +48,7 @@ export type ExamPodcastEpisode = PodcastLibraryEpisode & {
   notes: EpisodeSection[];
   relatedLinks: readonly ExamPodcastLink[];
   keywords: readonly string[];
-  locale: 'en' | 'es' | 'ko';
+  locale: 'en' | 'es' | 'ko' | 'de';
 };
 
 const byId = (id: PodcastLibraryEpisode['id']) => {
@@ -226,6 +230,22 @@ export const EXAM_PODCASTS: readonly ExamPodcastEpisode[] = [
     ],
     keywords: ['podcast Goethe-Zertifikat', 'cómo aprobar Goethe B1', 'estrategias examen Goethe', 'preparación Goethe español', 'Goethe-Zertifikat audio'],
     locale: 'es',
+  },
+  {
+    ...GOETHE_B1_GERMAN_PODCAST,
+    ...byId('goethe-zertifikat-b1-18-richtige-antworten'),
+    fullDescription: GOETHE_B1_GERMAN_PODCAST.description,
+    notes: GOETHE_B1_GERMAN_NOTES,
+    relatedLinks: [
+      { href: '/examenes/goethe', label: 'Zum Goethe-Zertifikat-Hub' },
+      { href: '/examenes/goethe/practica/set-1', label: 'Den ersten Modelltest starten' },
+      { href: '/practica/aleman/b1/lectura', label: 'Lesen auf B1 trainieren' },
+      { href: '/practica/aleman/b1/escucha', label: 'Hören auf B1 trainieren' },
+      { href: '/practica/aleman/b1/escritura', label: 'Schreiben auf B1 trainieren' },
+      { href: '/practica/aleman/b1/habla', label: 'Sprechen auf B1 trainieren' },
+    ],
+    keywords: ['Goethe B1 Podcast Deutsch', 'Goethe-Zertifikat B1 bestehen', '18 richtige Antworten Goethe B1', 'Goethe B1 Lesen Hören Strategie'],
+    locale: 'de',
   },
 ] as const;
 
