@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "gateId": "HR-02",
+  "status": "pending-human-review",
+  "createdAtUtc": "2026-08-31T23:21:05Z",
+  "designDirection": "mesa-de-senal",
+  "artifacts": [
+    {
+      "path": "docs/toefl-sectional-hr02-ui-spec.md",
+      "sha256": "45463b1500fed17775e32fa0c61d82718a7c18cd024bf776c9aa95e6274bcd33"
+    },
+    {
+      "path": "docs/prototypes/toefl-sectional-hr02.html",
+      "sha256": "347a4247d82f9e1a34f0f4529a20048f4e2225b62fbc6d1b0a214da1b359b8ed"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr02-hub.png",
+      "sha256": "9276c7f371fb5f9f596b76b76c3ae6abd68733f40e4dfc778b57a3c832fd29fe",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr02-library.png",
+      "sha256": "d013cfd3fa4cdc14a64aec9fb2be57c7984ab5d0e588ff1f77b34be0330233da",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr02-runner.png",
+      "sha256": "5286a159d6ffd911be4b4ba3a0f2268dce0528877680f1e11da1ddf5a7be0ab4",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr02-mobile.png",
+      "sha256": "d4ed2c690e521126e5c24248d11c345a50824c38100c46c43e80c7d1568afcee",
+      "width": 1100,
+      "height": 1000
+    }
+  ],
+  "checks": {
+    "renderMethod": "local Chrome headless from a file URL; no production data or external assets",
+    "viewsInspected": [
+      "hub-desktop",
+      "library-desktop",
+      "runner-desktop",
+      "hub-mobile",
+      "runner-mobile"
+    ],
+    "visualInspection": "passed",
+    "productionCodeChanged": false,
+    "knownLimitations": [
+      "The prototype is static and does not validate real audio behavior.",
+      "Keyboard, screen-reader and reduced-motion behavior are specified but require functional validation in HR-05.",
+      "The six visible set cards are a representative sample of the planned 20-set library."
+    ]
+  }
+}
