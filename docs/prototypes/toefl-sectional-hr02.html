@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HR-02 · TOEFL Listening UI review</title>
+  <style>
+    :root {
+      --navy: #14215c;
+      --red: #c8202e;
+      --teal: #087f8c;
+      --mint: #65d6cc;
+      --canvas: #f5f7fc;
+      --ink: #101938;
+      --muted: #5f6784;
+      --line: #dfe4f1;
+      --surface: #ffffff;
+      --shadow: 0 24px 70px rgba(20, 33, 92, 0.12);
+      font-family: "Geist", "Avenir Next", Inter, system-ui, sans-serif;
+      color: var(--ink);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #e9edf7; color: var(--ink); }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+
+    .review-bar {
+      align-items: center;
+      background: var(--ink);
+      color: white;
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      min-height: 52px;
+      padding: 10px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .review-bar strong { font-size: 13px; letter-spacing: .04em; }
+    .review-bar span { color: #cbd2ea; font-size: 12px; }
+    .review-links { display: flex; gap: 8px; }
+    .review-links a {
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 12px;
+      padding: 7px 10px;
+    }
+
+    .board {
+      display: grid;
+      gap: 72px;
+      padding: 48px 24px 100px;
+    }
+
+    body:has(#hub:target) .artboard:not(#hub),
+    body:has(#library:target) .artboard:not(#library),
+    body:has(#runner:target) .artboard:not(#runner),
+    body:has(#mobile:target) .artboard:not(#mobile) { display: none; }
+
+    .artboard { margin: 0 auto; max-width: 1440px; scroll-margin-top: 72px; width: 100%; }
+    .label {
+      align-items: center;
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      margin: 0 auto 14px;
+      max-width: 1280px;
+    }
+    .label strong { color: var(--navy); font-size: 14px; }
+    .label span { color: var(--muted); font: 11px ui-monospace, monospace; }
+
+    .browser {
+      background: var(--surface);
+      border: 1px solid #cfd6e8;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      margin: 0 auto;
+      max-width: 1280px;
+      overflow: hidden;
+    }
+
+    .browser-chrome {
+      align-items: center;
+      background: #edf0f7;
+      border-bottom: 1px solid #dfe4ef;
+      display: grid;
+      grid-template-columns: 84px 1fr 84px;
+      min-height: 42px;
+      padding: 0 14px;
+    }
+    .dots { display: flex; gap: 6px; }
+    .dots i { background: #c5cada; border-radius: 50%; display: block; height: 9px; width: 9px; }
+    .address {
+      background: rgba(255,255,255,.78);
+      border: 1px solid #d8ddeb;
+      border-radius: 8px;
+      color: #7a839f;
+      font: 10px ui-monospace, monospace;
+      justify-self: center;
+      max-width: 520px;
+      overflow: hidden;
+      padding: 6px 14px;
+      text-align: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    .site-nav {
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      min-height: 66px;
+      padding: 0 48px;
+    }
+    .brand { color: var(--navy); font-size: 18px; font-weight: 830; letter-spacing: -.04em; }
+    .brand b { color: var(--red); }
+    .site-links { align-items: center; display: flex; gap: 26px; }
+    .site-links span { color: #4b567b; font-size: 13px; font-weight: 620; }
+    .site-links .access { border: 1px solid var(--line); border-radius: 10px; padding: 9px 13px; }
+
+    .page { background: var(--canvas); }
+    .shell { margin: 0 auto; max-width: 1180px; padding: 0 34px; }
+    .crumbs { color: #707a9b; font-size: 12px; padding: 24px 0 0; }
+    .crumbs b { color: var(--navy); }
+
+    .hero {
+      align-items: center;
+      display: grid;
+      gap: 54px;
+      grid-template-columns: 1.05fr .95fr;
+      min-height: 430px;
+      padding: 44px 0 54px;
+    }
+    .eyebrow {
+      color: var(--teal);
+      font: 800 11px ui-monospace, monospace;
+      letter-spacing: .11em;
+      margin: 0 0 14px;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: var(--navy);
+      font-size: clamp(42px, 5vw, 67px);
+      letter-spacing: -.065em;
+      line-height: .98;
+      margin: 0;
+      max-width: 650px;
+    }
+    .lead { color: var(--muted); font-size: 17px; line-height: 1.65; margin: 22px 0 0; max-width: 620px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .button {
+      align-items: center;
+      border: 1px solid var(--navy);
+      border-radius: 11px;
+      display: inline-flex;
+      font-size: 13px;
+      font-weight: 760;
+      min-height: 46px;
+      padding: 0 17px;
+    }
+    .button.primary { background: var(--red); border-color: var(--red); color: white; }
+    .button.secondary { background: white; color: var(--navy); }
+    .button.small { min-height: 38px; padding: 0 13px; }
+    .disclaimer { color: #68718e; font: 10px ui-monospace, monospace; margin-top: 16px; }
+
+    .signal-panel {
+      background: var(--navy);
+      border-radius: 18px;
+      box-shadow: 0 26px 55px rgba(20,33,92,.25);
+      color: white;
+      overflow: hidden;
+      padding: 20px;
+      position: relative;
+    }
+    .signal-panel::after {
+      background: var(--mint);
+      content: "";
+      height: 4px;
+      left: 20px;
+      position: absolute;
+      right: 20px;
+      top: 0;
+    }
+    .signal-head { align-items: center; display: flex; justify-content: space-between; margin-bottom: 12px; }
+    .signal-head strong { font-size: 13px; }
+    .signal-head span { color: #b8c2e7; font: 9px ui-monospace, monospace; letter-spacing: .08em; }
+    .signal-list { display: grid; gap: 7px; }
+    .signal-row {
+      align-items: center;
+      background: rgba(255,255,255,.075);
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 12px;
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 26px 1fr 92px;
+      min-height: 62px;
+      padding: 8px 12px;
+    }
+    .signal-row em { color: var(--mint); font: 10px ui-monospace, monospace; font-style: normal; }
+    .signal-row div strong { display: block; font-size: 12px; }
+    .signal-row div small { color: #b9c3e7; font-size: 9px; }
+    .wave { align-items: center; display: flex; gap: 3px; height: 26px; justify-content: flex-end; }
+    .wave i { background: var(--mint); border-radius: 2px; display: block; opacity: .9; width: 4px; }
+    .wave i:nth-child(1) { height: 8px; }
+    .wave i:nth-child(2) { height: 18px; }
+    .wave i:nth-child(3) { height: 11px; }
+    .wave i:nth-child(4) { height: 24px; }
+    .wave i:nth-child(5) { height: 15px; }
+    .wave i:nth-child(6) { height: 7px; }
+    .wave i:nth-child(7) { height: 20px; }
+    .wave i:nth-child(8) { height: 12px; }
+
+    .section { padding: 52px 0; }
+    .section.white { background: white; }
+    .section-head { align-items: end; display: flex; gap: 28px; justify-content: space-between; margin-bottom: 22px; }
+    .section-head h2 { color: var(--navy); font-size: 31px; letter-spacing: -.045em; margin: 0; }
+    .section-head p { color: var(--muted); font-size: 13px; line-height: 1.55; margin: 0; max-width: 520px; }
+
+    .task-grid { display: grid; gap: 12px; grid-template-columns: repeat(5, 1fr); }
+    .task-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      min-height: 174px;
+      padding: 16px;
+    }
+    .task-card .num { color: var(--teal); font: 10px ui-monospace, monospace; }
+    .task-card h3 { color: var(--navy); font-size: 15px; letter-spacing: -.02em; line-height: 1.18; margin: 28px 0 8px; }
+    .task-card p { color: var(--muted); font-size: 11px; line-height: 1.45; margin: 0; }
+    .task-card b { color: var(--teal); font-size: 11px; margin-top: auto; padding-top: 16px; }
+    .task-card.library { background: var(--teal); border-color: var(--teal); color: white; }
+    .task-card.library .num, .task-card.library h3, .task-card.library p, .task-card.library b { color: white; }
+    .task-card.library h3 { font-size: 22px; }
+
+    .route-strip {
+      align-items: center;
+      background: var(--navy);
+      border-radius: 16px;
+      color: white;
+      display: grid;
+      gap: 0;
+      grid-template-columns: repeat(4,1fr);
+      overflow: hidden;
+    }
+    .route-step { border-right: 1px solid rgba(255,255,255,.14); min-height: 108px; padding: 20px; }
+    .route-step:last-child { border: 0; }
+    .route-step span { color: var(--mint); font: 10px ui-monospace, monospace; }
+    .route-step strong { display: block; font-size: 14px; margin-top: 13px; }
+    .route-step small { color: #c7cee8; display: block; font-size: 10px; line-height: 1.4; margin-top: 5px; }
+
+    .library-hero { align-items: end; display: flex; gap: 34px; justify-content: space-between; padding: 46px 0 30px; }
+    .library-hero h1 { font-size: 54px; max-width: 720px; }
+    .progress-card { background: white; border: 1px solid var(--line); border-radius: 14px; min-width: 220px; padding: 16px; }
+    .progress-card small { color: var(--muted); font-size: 10px; }
+    .progress-card strong { color: var(--navy); display: block; font-size: 24px; margin: 5px 0 10px; }
+    .meter { background: #e4e8f2; border-radius: 10px; height: 6px; overflow: hidden; }
+    .meter i { background: var(--teal); display: block; height: 100%; width: 7%; }
+    .filters { align-items: center; border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); display: flex; gap: 8px; justify-content: space-between; padding: 14px 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip { background: white; border: 1px solid var(--line); border-radius: 9px; color: #536083; font-size: 11px; padding: 8px 11px; }
+    .chip.active { background: var(--navy); border-color: var(--navy); color: white; }
+    .sort { color: var(--muted); font: 10px ui-monospace, monospace; }
+    .set-grid { display: grid; gap: 12px; grid-template-columns: repeat(2,1fr); padding: 24px 0 50px; }
+    .set-card { align-items: center; background: white; border: 1px solid var(--line); border-radius: 15px; display: grid; gap: 18px; grid-template-columns: 56px 1fr auto; padding: 16px; }
+    .set-no { background: #eef1f8; border-radius: 12px; color: var(--navy); display: grid; font: 800 13px ui-monospace, monospace; height: 52px; place-items: center; }
+    .set-copy strong { color: var(--navy); display: block; font-size: 14px; }
+    .set-copy span { color: var(--muted); font-size: 10px; }
+    .recommended { color: var(--teal); font: 800 9px ui-monospace, monospace; letter-spacing: .06em; }
+
+    .runner-page { background: #f2f4f9; min-height: 700px; }
+    .runner-head { align-items: center; background: white; border-bottom: 1px solid var(--line); display: grid; gap: 20px; grid-template-columns: 1fr auto 1fr; min-height: 74px; padding: 0 34px; }
+    .exit { color: #5f6987; font-size: 12px; }
+    .runner-title { color: var(--navy); font: 800 11px ui-monospace, monospace; letter-spacing: .06em; text-align: center; }
+    .runner-count { color: #5f6987; font: 10px ui-monospace, monospace; justify-self: end; }
+    .top-progress { background: #dce2ef; height: 5px; }
+    .top-progress i { background: var(--teal); display: block; height: 100%; width: 21%; }
+    .runner-shell { display: grid; gap: 18px; grid-template-columns: .88fr 1.12fr; margin: 0 auto; max-width: 1120px; padding: 42px 30px 68px; }
+    .audio-card, .question-card { background: white; border: 1px solid var(--line); border-radius: 18px; min-height: 470px; padding: 28px; }
+    .type-label { color: var(--teal); font: 800 10px ui-monospace, monospace; letter-spacing: .08em; }
+    .audio-card h2, .question-card h2 { color: var(--navy); font-size: 22px; letter-spacing: -.035em; line-height: 1.15; margin: 10px 0; }
+    .audio-stage { align-items: center; background: var(--navy); border-radius: 16px; color: white; display: flex; flex-direction: column; justify-content: center; margin-top: 36px; min-height: 190px; }
+    .play { background: var(--red); border: 0; border-radius: 50%; color: white; display: grid; font-size: 20px; height: 58px; place-items: center; width: 58px; }
+    .audio-stage strong { font-size: 12px; margin-top: 12px; }
+    .audio-stage span { color: #bac4e5; font: 10px ui-monospace, monospace; margin-top: 5px; }
+    .hint { color: var(--muted); font-size: 11px; line-height: 1.5; margin-top: 18px; }
+    .question-card h2 { font-size: 26px; margin: 16px 0 24px; }
+    .options { display: grid; gap: 9px; }
+    .option { align-items: center; border: 1px solid var(--line); border-radius: 12px; color: #3c476c; display: flex; font-size: 12px; gap: 11px; min-height: 48px; padding: 10px 13px; }
+    .radio { border: 2px solid #9aa3bc; border-radius: 50%; height: 17px; width: 17px; }
+    .runner-actions { align-items: center; display: flex; gap: 10px; justify-content: space-between; margin-top: 26px; }
+    .mark { color: #5f6987; font-size: 11px; }
+
+    .mobile-row { display: flex; gap: 32px; justify-content: center; padding: 4px 0 32px; }
+    .phone { background: white; border: 8px solid #171b2b; border-radius: 38px; box-shadow: var(--shadow); height: 760px; overflow: hidden; width: 375px; }
+    .phone-top { background: #171b2b; border-radius: 0 0 12px 12px; height: 18px; margin: 0 auto; width: 118px; }
+    .mobile-nav { align-items: center; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; min-height: 52px; padding: 0 16px; }
+    .hamburger { color: var(--navy); font-size: 19px; }
+    .mobile-body { background: var(--canvas); height: calc(100% - 70px); overflow: hidden; padding: 18px 16px; }
+    .mobile-body .crumbs { font-size: 9px; padding: 0 0 20px; }
+    .mobile-body h1 { font-size: 40px; line-height: 1; }
+    .mobile-body .lead { font-size: 14px; line-height: 1.55; margin-top: 16px; }
+    .mobile-body .actions { display: grid; }
+    .mobile-body .button { justify-content: center; }
+    .mini-signal { background: var(--navy); border-radius: 15px; color: white; margin-top: 22px; padding: 14px; }
+    .mini-signal div { align-items: center; border-bottom: 1px solid rgba(255,255,255,.1); display: flex; font-size: 10px; justify-content: space-between; min-height: 38px; }
+    .mini-signal div:last-child { border: 0; }
+    .mini-signal b { color: var(--mint); font: 9px ui-monospace, monospace; }
+    .mobile-runner .mobile-body { background: #f2f4f9; padding: 14px; }
+    .mobile-progress { color: var(--navy); font: 800 9px ui-monospace, monospace; margin-bottom: 10px; }
+    .mobile-runner .audio-card { min-height: 240px; padding: 16px; }
+    .mobile-runner .audio-card h2 { font-size: 17px; }
+    .mobile-runner .audio-stage { margin-top: 14px; min-height: 118px; }
+    .mobile-runner .play { height: 48px; width: 48px; }
+    .mobile-question { background: white; border: 1px solid var(--line); border-radius: 16px; margin-top: 10px; padding: 16px; }
+    .mobile-question h2 { color: var(--navy); font-size: 18px; margin: 6px 0 12px; }
+    .mobile-question .option { min-height: 43px; }
+    .sticky-action { background: white; border-top: 1px solid var(--line); bottom: 0; display: grid; gap: 8px; grid-template-columns: 1fr 1.4fr; left: 0; padding: 10px 14px; position: sticky; right: 0; }
+
+    @media (max-width: 900px) {
+      .site-links span:not(.access) { display: none; }
+      .site-nav { padding: 0 22px; }
+      .hero { grid-template-columns: 1fr; }
+      .task-grid { grid-template-columns: repeat(2,1fr); }
+      .route-strip { grid-template-columns: repeat(2,1fr); }
+      .library-hero { align-items: start; flex-direction: column; }
+      .set-grid, .runner-shell { grid-template-columns: 1fr; }
+      .mobile-row { align-items: center; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="review-bar">
+    <div><strong>HR-02 · DISEÑO UI</strong> <span>Prototipo estático, sin datos ni navegación de producción</span></div>
+    <nav class="review-links" aria-label="Vistas de revisión">
+      <a href="#hub">Hub</a><a href="#library">Biblioteca</a><a href="#runner">Runner</a><a href="#mobile">Móvil</a>
+    </nav>
+  </header>
+
+  <main class="board">
+    <section class="artboard" id="hub">
+      <div class="label"><strong>01 · Hub de TOEFL Listening</strong><span>DESKTOP · 1280 PX</span></div>
+      <div class="browser">
+        <div class="browser-chrome"><span class="dots"><i></i><i></i><i></i></span><span class="address">idiomaswl.com/practica/toefl/listening</span></div>
+        <nav class="site-nav"><span class="brand">WE<b>LEARN</b></span><div class="site-links"><span>Práctica</span><span>Exámenes</span><span>Idiomas</span><span class="access">Acceder</span></div></nav>
+        <div class="page">
+          <div class="shell">
+            <div class="crumbs">Práctica / TOEFL / <b>Listening</b></div>
+            <section class="hero">
+              <div>
+                <p class="eyebrow">TOEFL Listening practice</p>
+                <h1>Practica Listening por tarea o por simulacro</h1>
+                <p class="lead">Entrena las cuatro tareas vigentes con audio original de WeLearn. Empieza por una habilidad concreta o completa solo la sección de Listening.</p>
+                <div class="actions"><span class="button primary">Practicar Listening →</span><span class="button secondary">Ver las 4 tareas</span></div>
+                <p class="disclaimer">PRÁCTICA WELEARN · RECORRIDO FIJO · NO ES UNA PRUEBA OFICIAL DE ETS</p>
+              </div>
+              <aside class="signal-panel">
+                <div class="signal-head"><strong>Mapa de señales</strong><span>4 TAREAS VIGENTES</span></div>
+                <div class="signal-list">
+                  <div class="signal-row"><em>01</em><div><strong>Choose a Response</strong><small>intención y pragmática</small></div><span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+                  <div class="signal-row"><em>02</em><div><strong>Conversation</strong><small>ideas, detalles e inferencias</small></div><span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+                  <div class="signal-row"><em>03</em><div><strong>Announcement</strong><small>propósito y secuencia</small></div><span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+                  <div class="signal-row"><em>04</em><div><strong>Academic Talk</strong><small>organización y contenido</small></div><span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+                </div>
+              </aside>
+            </section>
+          </div>
+          <section class="section white"><div class="shell">
+            <div class="section-head"><h2>Elige cómo practicar</h2><p>Ve directo a una familia de tarea o completa un set que reúne toda la sección de Listening.</p></div>
+            <div class="task-grid">
+              <article class="task-card"><span class="num">TAREA 01</span><h3>Choose a Response</h3><p>Reconoce la intención y elige la respuesta adecuada.</p><b>Practicar tarea →</b></article>
+              <article class="task-card"><span class="num">TAREA 02</span><h3>Conversation</h3><p>Sigue ideas, detalles y lo que implican los hablantes.</p><b>Practicar tarea →</b></article>
+              <article class="task-card"><span class="num">TAREA 03</span><h3>Announcement</h3><p>Identifica propósito, orden e información accionable.</p><b>Practicar tarea →</b></article>
+              <article class="task-card"><span class="num">TAREA 04</span><h3>Academic Talk</h3><p>Conecta la idea central con su organización y ejemplos.</p><b>Practicar tarea →</b></article>
+              <article class="task-card library"><span class="num">SECCIÓN COMPLETA</span><h3>20 sets</h3><p>Practica solo Listening con el banco existente.</p><b>Ver simulacros →</b></article>
+            </div>
+          </div></section>
+          <section class="section"><div class="shell">
+            <div class="section-head"><h2>Usa cada intento para corregir algo</h2></div>
+            <div class="route-strip">
+              <div class="route-step"><span>01 · APRENDE</span><strong>Reconoce la tarea</strong><small>Qué escuchar y qué tipo de decisión tomar.</small></div>
+              <div class="route-step"><span>02 · PRACTICA</span><strong>Completa un set</strong><small>Sin cambiar el banco ni los audios originales.</small></div>
+              <div class="route-step"><span>03 · REVISA</span><strong>Clasifica el error</strong><small>Intención, detalle, inferencia u organización.</small></div>
+              <div class="route-step"><span>04 · CONFIRMA</span><strong>Haz el TOEFL completo</strong><small>Comprueba transferencia entre secciones.</small></div>
+            </div>
+          </div></section>
+        </div>
+      </div>
+    </section>
+
+    <section class="artboard" id="library">
+      <div class="label"><strong>02 · Biblioteca de Listening</strong><span>DESKTOP · 1280 PX</span></div>
+      <div class="browser">
+        <div class="browser-chrome"><span class="dots"><i></i><i></i><i></i></span><span class="address">idiomaswl.com/practica/toefl/listening/simulacros</span></div>
+        <nav class="site-nav"><span class="brand">WE<b>LEARN</b></span><div class="site-links"><span>Práctica</span><span>Exámenes</span><span>Idiomas</span><span class="access">Acceder</span></div></nav>
+        <div class="page"><div class="shell">
+          <div class="crumbs">Práctica / TOEFL / Listening / <b>Simulacros</b></div>
+          <section class="library-hero">
+            <div><p class="eyebrow">Práctica seccional</p><h1>20 prácticas de TOEFL Listening</h1><p class="lead">Completa solo Listening. Cada set reutiliza los audios y preguntas del simulacro completo, sin duplicar el banco.</p></div>
+            <aside class="progress-card"><small>Tu progreso</small><strong>0 de 20</strong><div class="meter"><i></i></div></aside>
+          </section>
+          <div class="filters"><div class="chips"><span class="chip active">Todos</span><span class="chip">Sin empezar</span><span class="chip">En curso</span><span class="chip">Completados</span></div><span class="sort">ORDEN · RECOMENDADO</span></div>
+          <div class="set-grid">
+            <article class="set-card"><span class="set-no">01</span><div class="set-copy"><span class="recommended">RECOMENDADO PARA EMPEZAR</span><strong>Listening Set 01</strong><span>14 audios · 34 preguntas</span></div><span class="button primary small">Empezar</span></article>
+            <article class="set-card"><span class="set-no">02</span><div class="set-copy"><strong>Listening Set 02</strong><span>14 audios · 34 preguntas</span></div><span class="button secondary small">Empezar</span></article>
+            <article class="set-card"><span class="set-no">03</span><div class="set-copy"><strong>Listening Set 03</strong><span>14 audios · 34 preguntas</span></div><span class="button secondary small">Empezar</span></article>
+            <article class="set-card"><span class="set-no">04</span><div class="set-copy"><strong>Listening Set 04</strong><span>14 audios · 34 preguntas</span></div><span class="button secondary small">Empezar</span></article>
+            <article class="set-card"><span class="set-no">05</span><div class="set-copy"><strong>Listening Set 05</strong><span>14 audios · 34 preguntas</span></div><span class="button secondary small">Empezar</span></article>
+            <article class="set-card"><span class="set-no">06</span><div class="set-copy"><strong>Listening Set 06</strong><span>14 audios · 34 preguntas</span></div><span class="button secondary small">Empezar</span></article>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="artboard" id="runner">
+      <div class="label"><strong>03 · Runner seccional</strong><span>DESKTOP · 1280 PX</span></div>
+      <div class="browser">
+        <div class="browser-chrome"><span class="dots"><i></i><i></i><i></i></span><span class="address">idiomaswl.com/practica/toefl/listening/simulacros/practica/set-1</span></div>
+        <div class="runner-page">
+          <header class="runner-head"><span class="exit">← Salir a los sets</span><span class="runner-title">LISTENING · SET 01</span><span class="runner-count">Audio 03 de 14 · 21%</span></header>
+          <div class="top-progress"><i></i></div>
+          <div class="runner-shell">
+            <section class="audio-card"><span class="type-label">SEÑAL 03 · LISTEN TO A CONVERSATION</span><h2>Escucha antes de responder</h2><div class="audio-stage"><button class="play" aria-label="Reproducir">▶</button><strong>Reproducir audio</strong><span>00:00 / 00:38</span></div><p class="hint">No cierres esta pestaña mientras se reproduce el audio. Si hay un problema, podrás reintentar o marcar la pregunta.</p></section>
+            <section class="question-card"><span class="type-label">PREGUNTA 07 DE 34</span><h2>What does the student imply?</h2><div class="options"><div class="option"><i class="radio"></i>She has already submitted the form.</div><div class="option"><i class="radio"></i>She needs help choosing a new course.</div><div class="option"><i class="radio"></i>She plans to visit the office later.</div><div class="option"><i class="radio"></i>She misunderstood the deadline.</div></div><div class="runner-actions"><span class="mark">□ Marcar para revisar</span><span class="button primary">Guardar y seguir →</span></div></section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="artboard" id="mobile">
+      <div class="label"><strong>04 · Comportamiento móvil</strong><span>375 × 760 PX</span></div>
+      <div class="mobile-row">
+        <div class="phone">
+          <div class="phone-top"></div><nav class="mobile-nav"><span class="brand">WE<b>LEARN</b></span><span class="hamburger">☰</span></nav>
+          <div class="mobile-body"><div class="crumbs">Práctica / TOEFL / <b>Listening</b></div><p class="eyebrow">TOEFL Listening practice</p><h1>Practica Listening por tarea o por simulacro</h1><p class="lead">Entrena las cuatro tareas vigentes con audio original de WeLearn.</p><div class="actions"><span class="button primary">Practicar Listening →</span><span class="button secondary">Ver las 4 tareas</span></div><div class="mini-signal"><div><span>Choose a Response</span><b>01 · ▂▅▇▃</b></div><div><span>Conversation</span><b>02 · ▃▆▂▇</b></div><div><span>Announcement</span><b>03 · ▅▃▇▂</b></div><div><span>Academic Talk</span><b>04 · ▂▇▅▃</b></div></div></div>
+        </div>
+        <div class="phone mobile-runner">
+          <div class="phone-top"></div><nav class="mobile-nav"><span class="exit">← Salir</span><span class="runner-title">SET 01</span><span class="runner-count">21%</span></nav>
+          <div class="mobile-body"><div class="mobile-progress">AUDIO 03 DE 14 · PREGUNTA 07 DE 34</div><section class="audio-card"><span class="type-label">CONVERSATION</span><h2>Escucha antes de responder</h2><div class="audio-stage"><button class="play">▶</button><strong>Reproducir audio</strong><span>00:00 / 00:38</span></div></section><section class="mobile-question"><span class="type-label">PREGUNTA 07</span><h2>What does the student imply?</h2><div class="options"><div class="option"><i class="radio"></i>She has submitted the form.</div><div class="option"><i class="radio"></i>She needs help choosing.</div><div class="option"><i class="radio"></i>She will visit later.</div><div class="option"><i class="radio"></i>She missed the deadline.</div></div></section><div class="sticky-action"><span class="button secondary small">Revisar</span><span class="button primary small">Guardar y seguir</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
