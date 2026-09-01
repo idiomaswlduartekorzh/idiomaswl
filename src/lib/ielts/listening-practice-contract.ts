@@ -50,6 +50,35 @@ export interface IeltsListeningTableSource {
   rows: readonly (readonly IeltsListeningTableCellSource[])[];
 }
 
+export interface IeltsListeningNoteTextLineSource {
+  type: 'text';
+  indent: 0 | 1;
+  text: string;
+}
+
+export interface IeltsListeningNoteBlankLineSource {
+  type: 'blank';
+  indent: 0 | 1;
+  before: string;
+  blank: IeltsListeningBlankSource;
+  after: string;
+}
+
+export interface IeltsListeningNoteSectionSource {
+  heading: string;
+  lines: readonly (IeltsListeningNoteTextLineSource | IeltsListeningNoteBlankLineSource)[];
+}
+
+export interface IeltsListeningNoteCompletionGroupSource {
+  type: 'note-completion';
+  id: string;
+  questionRange: readonly [number, number];
+  instruction: string;
+  title: string;
+  maxWords: 1 | 2 | 3;
+  sections: readonly IeltsListeningNoteSectionSource[];
+}
+
 export interface IeltsListeningSingleChoiceQuestionSource extends IeltsListeningAnswerSource {
   prompt: string;
   options: readonly IeltsListeningChoiceOption[];
@@ -106,6 +135,7 @@ export interface IeltsListeningMatchingGroupSource {
 export type IeltsListeningGroupSource =
   | IeltsListeningFormSource
   | IeltsListeningTableSource
+  | IeltsListeningNoteCompletionGroupSource
   | IeltsListeningSingleChoiceGroupSource
   | IeltsListeningMapLabellingGroupSource
   | IeltsListeningMatchingGroupSource;
@@ -195,7 +225,7 @@ export type IeltsListeningPublicGroup =
   | IeltsListeningPublicMapLabellingGroup;
 
 export type IeltsListeningResponseSpec =
-  | { readonly number: number; readonly kind: 'text' }
+  | { readonly number: number; readonly kind: 'text'; readonly maxWords?: number }
   | {
       readonly number: number;
       readonly kind: 'choice';
@@ -271,6 +301,17 @@ function sourceAnswers(source: IeltsListeningPracticeSource): IeltsListeningAnsw
       ));
       continue;
     }
+    if (group.type === 'note-completion') {
+      answers.push(...group.sections.flatMap((section) => section.lines.flatMap((line) =>
+        line.type === 'blank' ? [{
+          number: line.blank.number,
+          expected: line.blank.expected,
+          explanation: line.blank.explanation,
+          mode: 'normalized-text' as const,
+          acceptedValues: line.blank.acceptedAnswers,
+        }] : [])));
+      continue;
+    }
     if (group.type === 'single-choice' || group.type === 'map-labelling') {
       answers.push(...group.questions.map((question) => ({
         number: question.number,
@@ -328,10 +369,14 @@ function assertSourceIntegrity(source: IeltsListeningPracticeSource): void {
   if (source.id !== expectedId) {
     throw new Error(`IELTS Listening practice ID must be ${expectedId}.`);
   }
+  const expectedAudioPath = `/audio/ielts/listening/${source.id}.mp3`;
+  if (source.audio.localPath !== expectedAudioPath) {
+    throw new Error(`IELTS Listening audio path must be ${expectedAudioPath}.`);
+  }
 
-  const groupIds = source.groups.map((group) => group.id);
-  if (new Set(groupIds).size !== groupIds.length) {
-    throw new Error('IELTS Listening practice contains duplicate group IDs.');
+  const groupIds = source.groups.map((group) => group.id.trim().toLocaleLowerCase('en'));
+  if (groupIds.some((groupId) => !groupId) || new Set(groupIds).size !== groupIds.length) {
+    throw new Error('IELTS Listening practice needs unique non-empty group IDs.');
   }
 
   const answers = sourceAnswers(source).sort((a, b) => a.number - b.number);
@@ -351,10 +396,22 @@ function assertSourceIntegrity(source: IeltsListeningPracticeSource): void {
   }
 
   for (const group of source.groups) {
+    if (
+      !Array.isArray(group.questionRange)
+      || group.questionRange.length !== 2
+      || !Number.isInteger(group.questionRange[0])
+      || !Number.isInteger(group.questionRange[1])
+      || group.questionRange[0] > group.questionRange[1]
+    ) {
+      throw new Error(`Question range is invalid in group ${group.id}.`);
+    }
     let groupNumbers: number[];
     if (group.type === 'form') groupNumbers = group.blanks.map((blank) => blank.number);
     else if (group.type === 'table') {
       groupNumbers = group.rows.flatMap((row) => row.flatMap((cell) => cell.type === 'blank' ? [cell.number] : []));
+    } else if (group.type === 'note-completion') {
+      groupNumbers = group.sections.flatMap((section) => section.lines.flatMap((line) =>
+        line.type === 'blank' ? [line.blank.number] : []));
     } else if (
       group.type === 'single-choice'
       || group.type === 'map-labelling'
@@ -393,6 +450,66 @@ function assertSourceIntegrity(source: IeltsListeningPracticeSource): void {
       const tableBlanks = group.rows.flatMap((row) => row.filter((cell) => cell.type === 'blank'));
       if (tableBlanks.some((blank) => !Number.isInteger(blank.maxWords) || blank.maxWords <= 0)) {
         throw new Error(`Table group ${group.id} contains an invalid word limit.`);
+      }
+    } else if (group.type === 'note-completion') {
+      const wordLimitPhrase = {
+        1: 'ONE WORD ONLY',
+        2: 'NO MORE THAN TWO WORDS',
+        3: 'NO MORE THAN THREE WORDS',
+      }[group.maxWords];
+      const expectedInstruction = wordLimitPhrase
+        ? `Complete the notes. Write ${wordLimitPhrase} for each answer.`
+        : '';
+      if (
+        group.instruction.trim() !== expectedInstruction
+        || !group.title.trim()
+        || !group.sections.length
+        || !wordLimitPhrase
+      ) {
+        throw new Error(`Note-completion group ${group.id} is incomplete.`);
+      }
+      const normalizedHeadings = group.sections.map((section) => section.heading.trim().toLocaleLowerCase('en'));
+      if (
+        normalizedHeadings.some((heading) => !heading)
+        || new Set(normalizedHeadings).size !== normalizedHeadings.length
+        || group.sections.some((section) => !section.lines.length)
+      ) {
+        throw new Error(`Note-completion group ${group.id} needs unique headings and non-empty sections.`);
+      }
+      for (const [sectionIndex, section] of group.sections.entries()) {
+        if (section.lines[0]?.indent !== 0) {
+          throw new Error(`Note-completion group ${group.id}, section ${sectionIndex + 1} must begin at indent 0.`);
+        }
+        for (const [lineIndex, line] of section.lines.entries()) {
+          const label = `Note-completion group ${group.id}, section ${sectionIndex + 1}, line ${lineIndex + 1}`;
+          if (line.indent !== 0 && line.indent !== 1) {
+            throw new Error(`${label} has an invalid indent.`);
+          }
+          if (line.type === 'text') {
+            if (!line.text.trim()) throw new Error(`${label} has no text.`);
+            continue;
+          }
+          if (line.type !== 'blank') throw new Error(`${label} has an unsupported line type.`);
+          if (!line.before.trim() && !line.after.trim()) {
+            throw new Error(`${label} needs visible context around its blank.`);
+          }
+          const blank = line.blank;
+          const normalizedAccepted = blank.acceptedAnswers.map(normalizeAnswer);
+          if (
+            !Number.isInteger(blank.maxWords)
+            || blank.maxWords <= 0
+            || blank.maxWords !== group.maxWords
+            || !normalizedAccepted.length
+            || normalizedAccepted.some((answer) => !answer)
+            || blank.expected.length > 80
+            || blank.acceptedAnswers.some((answer) => answer.length > 80)
+            || new Set(normalizedAccepted).size !== normalizedAccepted.length
+            || !normalizedAccepted.includes(normalizeAnswer(blank.expected))
+            || normalizedAccepted.some((answer) => answer.split(' ').length > blank.maxWords)
+          ) {
+            throw new Error(`${label} has invalid answers or word limits.`);
+          }
+        }
       }
     } else if (group.type === 'single-choice') {
       if (!group.instruction.trim() || !group.questions.length) {
@@ -556,6 +673,10 @@ export function projectIeltsListeningPractice(
       throw new Error('IELTS Listening matching is private-stage and cannot be projected before atomic promotion.');
     }
 
+    if (group.type === 'note-completion') {
+      throw new Error('IELTS Listening note completion is private-stage and cannot be projected before atomic promotion.');
+    }
+
     throw new Error('Unsupported IELTS Listening question group type.');
   });
 
@@ -593,7 +714,11 @@ export function validateIeltsListeningResponses(
     return typeof response === 'string'
       && response.trim().length > 0
       && response.length <= 80
-      && (spec.kind === 'text' || spec.allowedValues.includes(response as IeltsListeningOptionKey));
+      && (
+        spec.kind === 'choice'
+          ? spec.allowedValues.includes(response as IeltsListeningOptionKey)
+          : !spec.maxWords || response.trim().split(/\s+/).length <= spec.maxWords
+      );
   });
 }
 
@@ -640,6 +765,15 @@ export function ieltsListeningResponseSpecs(
       specs.push(...group.rows.flatMap((row) => row.flatMap((cell) =>
         cell.type === 'blank' ? [{ number: cell.number, kind: 'text' as const }] : [],
       )));
+      continue;
+    }
+    if (group.type === 'note-completion') {
+      specs.push(...group.sections.flatMap((section) => section.lines.flatMap((line) =>
+        line.type === 'blank' ? [{
+          number: line.blank.number,
+          kind: 'text' as const,
+          maxWords: line.blank.maxWords,
+        }] : [])));
       continue;
     }
     if (group.type === 'single-choice') {

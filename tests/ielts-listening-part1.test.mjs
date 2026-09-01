@@ -42,7 +42,7 @@ const fixture = {
   instructions: 'Listen and answer.',
   transcript: 'Private transcript with every answer.',
   audio: {
-    localPath: '/audio/ielts/listening/welearn-listening-part-1-test.mp3',
+    localPath: '/audio/ielts/listening/welearn-listening-part-1-999.mp3',
     durationSeconds: 120,
     sha256: 'a'.repeat(64),
   },
@@ -172,6 +172,7 @@ test('derives an exact contiguous ten-question window from the declared part', (
   const partTwo = structuredClone(fixture);
   partTwo.id = 'welearn-listening-part-2-999';
   partTwo.part = 2;
+  partTwo.audio.localPath = '/audio/ielts/listening/welearn-listening-part-2-999.mp3';
   for (const group of partTwo.groups) {
     group.questionRange = [group.questionRange[0] + 10, group.questionRange[1] + 10];
     if (group.type === 'form') {
@@ -191,6 +192,7 @@ test('derives an exact contiguous ten-question window from the declared part', (
   const wrongWindow = structuredClone(fixture);
   wrongWindow.id = 'welearn-listening-part-2-999';
   wrongWindow.part = 2;
+  wrongWindow.audio.localPath = '/audio/ielts/listening/welearn-listening-part-2-999.mp3';
   assert.throws(() => projectIeltsListeningPractice(wrongWindow, '/audio.mp3'), /exact question sequence 11–20/i);
   assert.throws(() => scoreIeltsListeningPractice(wrongWindow, {}), /exact question sequence 11–20/i);
 });
@@ -383,7 +385,7 @@ test('fails closed on structural and private-answer mutations', () => {
 
   const duplicateId = structuredClone(fixture);
   duplicateId.groups[1].id = 'form';
-  assert.throws(() => projectIeltsListeningPractice(duplicateId, '/audio.mp3'), /duplicate group/i);
+  assert.throws(() => projectIeltsListeningPractice(duplicateId, '/audio.mp3'), /unique.*group IDs/i);
 
   const placeholder = structuredClone(fixture);
   placeholder.groups[0].template = '{{1}} {{2}} {{3}} {{4}} {{5}} {{5}}';

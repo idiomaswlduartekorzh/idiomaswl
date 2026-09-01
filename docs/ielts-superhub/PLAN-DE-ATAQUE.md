@@ -4,10 +4,11 @@ Estado actual: Fase 0 implementada; Fase 1 construida como piloto original y blo
 para integración hasta una escucha humana final del MP3. Fase 2 ya tiene una candidata
 interna de Part 2 con contenido, MP3, mapa y evidencia ASR originales, pero no tiene ruta,
 catálogo, sitemap, registro ni assets bajo `public/`. Part 3 también existe como candidata
-privada original con tres voces, opción única, matching, MP3 y ASR; el matching permanece
-deliberadamente no proyectable al DTO público. El harness técnico puede aprobar estas
-candidatas aisladas, mientras el gate estricto de release bloquea cualquier promoción sin
-aprobación humana.
+privada original con tres voces, opción única, matching, MP3 y ASR. Part 4 tiene una
+candidata privada de monólogo académico y note completion, con MP3, ASR y diez evidencias
+reconciliadas. Matching y note completion permanecen deliberadamente no proyectables al
+DTO público. El harness técnico puede aprobar estas candidatas aisladas, mientras el gate
+estricto de release bloquea cualquier promoción sin aprobación humana.
 
 Rama: `codex/ielts-superhub`
 
@@ -233,6 +234,39 @@ Part 3 avanza como `welearn-listening-part-3-001` en estado `draft`:
 La promoción de Part 3 también será atómica. Además de escuchar las tres voces, un humano
 debe aprobar su diferenciación, naturalidad musical, ritmo y justicia de distractores; un
 ASR correcto no satisface esas puertas.
+
+Part 4 avanza como `welearn-listening-part-4-001` en estado `draft`:
+
+- un único lecturer desarrolla el tema original
+  `From Fuzz to Wear-Off: Understanding Fabric Pilling` en 14 segmentos y 699 palabras,
+  sin reutilizar bancos IELTS ni TOEFL;
+- Questions 31–40 usan note completion con `ONE WORD ONLY`; el contrato liga el límite
+  visible, el límite de transporte y cada blank, y bloquea instrucciones contradictorias;
+- las claves `surface`, `friction`, `ball`, `attached`, `detach`, `strength`, `contrast`,
+  `lighting`, `procedure` y `balance` están fijadas por test contra el source real;
+- cada clave tiene evidencia inequívoca en el transcript y evidencia observable en ASR,
+  en orden, mientras su contexto visible no contiene la respuesta;
+- source y generador se reconcilian párrafo por párrafo; el ledger fija generador,
+  renderer, Piper, modelo, configuración, speaker y parámetros de voz;
+- el MP3 candidato dura 253.08 segundos, es mono 44.1 kHz/96 kbps y permanece junto con
+  su ASR únicamente en `docs/ielts-superhub/candidates/`;
+- la investigación editorial verificó el mecanismo de pilling y acotó la comparación de
+  muestras sin reproducir un estándar técnico ni exigir conocimiento previo;
+- la candidata no figura en registro, catálogo, sitemap, ruta, canonical, marcador ni
+  asset público; el source conserva duración cero y hash cero;
+- note completion se puede validar y puntuar en servidor, pero su proyección pública
+  falla hasta implementar juntos el DTO allowlist y un renderer accesible;
+- la canonical futura única es `/practica/ielts/listening/part-4`; `Section 4` será un
+  sinónimo visible, no otra URL indexable; el manifiesto prohíbe también variantes de
+  práctica, note completion y tips que competirían con esa canonical;
+- el artículo `/blog/ielts-listening-errores-comunes` conserva la intención de consejos y
+  errores; la futura landing posee práctica, Questions 31–40, audio y academic monologue.
+
+La promoción de Part 4 será atómica y requiere escucha humana completa, revisión humana
+de ciencia textil y justicia editorial, metadata final del source, renderer accesible,
+registro, catálogo, landing, canonical, sitemap y asset público en un mismo cambio. La
+suite Listening actual pasa 56 pruebas; esa evidencia técnica no equivale a aprobación
+humana.
 
 Puerta: `npm run harness:ielts:release` sin bloqueos para el recurso promocionado.
 

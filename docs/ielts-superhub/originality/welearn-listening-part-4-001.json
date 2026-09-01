@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "practiceId": "welearn-listening-part-4-001",
+  "contentVersion": "2026-09-01.draft.1",
+  "createdAt": "2026-09-01",
+  "ownership": {
+    "author": "Idiomas WeLearn",
+    "status": "draft-original-independent-practice",
+    "borrowedQuestions": false,
+    "borrowedTranscript": false,
+    "borrowedAudio": false,
+    "trademarkDisclosure": "IELTS is a protected trademark. This resource is not affiliated with or endorsed by its owners."
+  },
+  "formatSources": [
+    "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+    "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test"
+  ],
+  "scienceSources": [
+    {
+      "title": "The Mechanism of Pilling",
+      "authors": "Gintis and Mead",
+      "purpose": "Background validation of the independent explanation of fuzz formation, entanglement, anchoring and wear-off; no wording was copied into the candidate."
+    },
+    {
+      "title": "ASTM D3514/D3514M-16(2024): Standard Test Method for Pilling Resistance and Other Related Surface Changes of Textile Fabrics",
+      "url": "https://www.astm.org/d3514_d3514m-16r24.html",
+      "purpose": "Background validation that controlled specimen preparation and comparative visual assessment are legitimate textile-testing concepts; the candidate does not reproduce the standard or claim to implement it."
+    }
+  ],
+  "publicationIntent": {
+    "canonicalRoute": "/practica/ielts/listening/part-4",
+    "visibleAlias": "Section 4",
+    "aliasRoute": null,
+    "forbiddenRoutes": [
+      "/practica/ielts/listening/section-4",
+      "/practica/ielts/listening/part-4-practice",
+      "/practica/ielts/listening/part-4-note-completion",
+      "/practica/ielts/listening/part-4-tips"
+    ],
+    "sessionRoute": "/practica/ielts/listening/sesion?practice=welearn-listening-part-4-001&part=4",
+    "sessionIndexing": "noindex, nofollow",
+    "blogBoundary": "/blog/ielts-listening-errores-comunes retains tips and common-error intent; the future Part 4 canonical owns practice, Questions 31–40, audio and academic-monologue intent."
+  },
+  "originalitySearch": {
+    "status": "completed-automated-search-review",
+    "checkedAt": "2026-09-01",
+    "localCorpusScope": "Tracked authored TS/TSX/JS/MJS/JSON/Markdown under src/data and docs, including IELTS, TOEFL and other exam banks; the pronunciation dictionary and candidate/originality directories are explicitly excluded.",
+    "queries": [
+      "\"From Fuzz to Wear-Off: Understanding Fabric Pilling\"",
+      "\"visible pilling reflects a balance\" fabric",
+      "\"anchor fibres keep the pill attached\"",
+      "IELTS listening part 4 fabric pilling note completion"
+    ],
+    "queryUrls": [
+      "https://www.google.com/search?q=%22From+Fuzz+to+Wear-Off%3A+Understanding+Fabric+Pilling%22",
+      "https://www.google.com/search?q=%22visible+pilling+reflects+a+balance%22+fabric",
+      "https://www.google.com/search?q=%22anchor+fibres+keep+the+pill+attached%22",
+      "https://www.google.com/search?q=IELTS+listening+part+4+fabric+pilling+note+completion"
+    ],
+    "formatBoilerplateExcluded": [
+      "Listen and answer Questions 31–40. You may replay the recording in this WeLearn practice mode.",
+      "Complete the notes. Write ONE WORD ONLY for each answer."
+    ],
+    "result": "No local ten-word overlap and no material exact-match result was observed for the four recorded Google queries. Search results showed only factual proximity to textile pilling, not the authored lecture, note stems or answer sequence. This is an automated collision signal, not a legal conclusion or a substitute for final editorial review.",
+    "rejectedConcepts": [
+      {
+        "concept": "Ancient middens as climate records",
+        "reason": "Rejected before authoring because archaeology and environmental reconstruction are already common IELTS lecture fingerprints."
+      },
+      {
+        "concept": "Psychology of waiting lines",
+        "reason": "Rejected before authoring because queues, service design and consumer psychology produced broad public-practice proximity."
+      },
+      {
+        "concept": "Leaf decomposition experiment",
+        "reason": "Rejected before authoring because local and public IELTS-style banks already contain closely adjacent ecology experiments."
+      }
+    ]
+  },
+  "audio": {
+    "candidatePath": "docs/ielts-superhub/candidates/welearn-listening-part-4-001/welearn-listening-part-4-001.mp3",
+    "futurePublicPath": "public/audio/ielts/listening/welearn-listening-part-4-001.mp3",
+    "generator": "scripts/generate-ielts-listening-part4-audio.mjs",
+    "generatorSha256": "1d6a56e499b2f4e62aa912ed6ca98dcb099c400b3f35fb7655f96764d9b98925",
+    "renderer": "scripts/lib/render-ielts-piper-segments.py",
+    "rendererSha256": "7445edddb7193c1178a9d794b85385583e05aadd76cac06a140e05ec22e3a0a0",
+    "engine": {
+      "name": "Piper",
+      "version": "1.7.0",
+      "source": "https://github.com/OHF-Voice/piper1-gpl",
+      "license": "GPL-3.0-or-later"
+    },
+    "voiceModel": {
+      "id": "en_GB-vctk-medium",
+      "sha256": "4e9fc85ab9009385319fc6bae7f55577f8a2d7ee77fd9159a5500eb6531f41e6",
+      "configSha256": "7f85e6391ed0f7f46e4abd19345929a16be931a0c9945086f96692dce2087fa8",
+      "repositoryLicense": "MIT",
+      "repositoryCommit": "39ab474be869e9181350af6a65e4953eef67aaa0",
+      "modelCard": "https://huggingface.co/rhasspy/piper-voices/blob/39ab474be869e9181350af6a65e4953eef67aaa0/en/en_GB/vctk/medium/MODEL_CARD",
+      "modelCardSha256": "53ec6b1fd90d9125d5bebac55261efd27f7e8d6dc962f605a5b5f796df2ec7fb",
+      "modelCardBytes": 326,
+      "trainingDataset": "CSTR VCTK Corpus",
+      "datasetSource": "https://datashare.ed.ac.uk/handle/10283/3443",
+      "datasetLicense": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "VCTK Corpus, University of Edinburgh, used through the Piper en_GB-vctk-medium voice model under CC BY 4.0."
+    },
+    "voices": [
+      { "role": "lecturer", "speaker": "p230", "speakerId": 74, "locale": "en_GB" }
+    ],
+    "rightsReview": {
+      "status": "documented-open-licence",
+      "checkedAt": "2026-09-01",
+      "publicationUse": "permitted-with-attribution",
+      "attributionLocation": "pending future Part 4 landing"
+    },
+    "durationSeconds": 253.0837188208617,
+    "bytes": 3038130,
+    "sha256": "9b0dda211c013968c9c3d858176f96dbbdbb49ec582279ea6a1566467ed5f96c",
+    "channels": 1,
+    "sampleRateHz": 44100,
+    "targetBitRate": 96000,
+    "isolatedPartAsset": true
+  },
+  "automatedAsrAudit": {
+    "status": "candidate-evidence-only",
+    "checkedAt": "2026-09-01",
+    "engine": "OpenAI Whisper small",
+    "language": "en",
+    "inputAudioSha256": "9b0dda211c013968c9c3d858176f96dbbdbb49ec582279ea6a1566467ed5f96c",
+    "path": "docs/ielts-superhub/candidates/welearn-listening-part-4-001/asr/welearn-listening-part-4-001.json",
+    "bytes": 25149,
+    "sha256": "0e8bb9d399b44decce367787efc6fb963c73374506d3187ff7f793e0500258d0",
+    "criticalAnswerEvidence": "10-of-10 answer keywords present in order in ASR output",
+    "answerEvidence": [
+      { "question": 31, "answer": "surface", "transcriptEvidence": "draws them above the fabric surface", "asrEvidence": "draws them above the fabric surface" },
+      { "question": 32, "answer": "friction", "transcriptEvidence": "further friction moves the raised ends", "asrEvidence": "further friction moves the raised ends" },
+      { "question": 33, "answer": "ball", "transcriptEvidence": "tightens the loose material into a small ball", "asrEvidence": "tightens the loose material into a small ball" },
+      { "question": 34, "answer": "attached", "transcriptEvidence": "keep the pill attached to the material", "asrEvidence": "keep the pill attached to the material" },
+      { "question": 35, "answer": "detach", "transcriptEvidence": "the pill can detach from the cloth", "asrEvidence": "the pill can detach from the cloth" },
+      { "question": 36, "answer": "strength", "transcriptEvidence": "Fibre strength affects the time for which a pill remains visible", "asrEvidence": "Fibre strength affects the time for which a pill remains visible" },
+      { "question": 37, "answer": "contrast", "transcriptEvidence": "ignores both size and colour contrast", "asrEvidence": "ignores both size and colour contrast" },
+      { "question": 38, "answer": "lighting", "transcriptEvidence": "photographed with the same lighting", "asrEvidence": "photographed with the same lighting" },
+      { "question": 39, "answer": "procedure", "transcriptEvidence": "pass through the same washing procedure", "asrEvidence": "pass through the same washing procedure" },
+      { "question": 40, "answer": "balance", "transcriptEvidence": "visible pilling reflects a balance", "asrEvidence": "visible pilling reflects a balance" }
+    ],
+    "observedCautions": [
+      "The staple-fibre phrase was decoded as fabric see-staple fibre.",
+      "Fewer visible pills was decoded as here are visible pills.",
+      "Cluster was decoded as cost to and pill persistence as hill persistence in the Question 36 context; fibre strength remains explicit.",
+      "A lamp placed too low was decoded as a lump placed too low.",
+      "Garment life was decoded as garment left and wear-off is slow as wear-off is low; neither phrase supplies an answer."
+    ],
+    "disclosure": "Automated ASR is diagnostic evidence only and cannot satisfy the required human pronunciation, pacing and intelligibility review."
+  },
+  "contentAudit": {
+    "speakerCount": 1,
+    "academicMonologue": true,
+    "questionRange": [31, 40],
+    "noteCompletionRange": [31, 40],
+    "noteCompletionMaxWords": 1,
+    "answerKeys": ["surface", "friction", "ball", "attached", "detach", "strength", "contrast", "lighting", "procedure", "balance"],
+    "difficultyProfile": "guided-initial-part-4-candidate",
+    "rawScoreOnly": true,
+    "bandPrediction": false
+  },
+  "automatedChecks": {
+    "tenContinuousQuestions": "pass",
+    "staticSourceAstAudit": "pass",
+    "privateProjectionGate": "pass",
+    "serverOnlyScoring": "pass",
+    "answerEvidenceInTranscript": "10-of-10-pass",
+    "answerKeywordsInAsr": "10-of-10-present-in-order",
+    "visibleBlankContextsDoNotContainAnswers": "pass",
+    "postSubmitExplanations": "authored-pending-promotion",
+    "audioChecksum": "candidate-recorded",
+    "legacySetImported": false
+  },
+  "release": {
+    "status": "draft",
+    "blockers": [
+      "Complete a human pronunciation, pacing and intelligibility review.",
+      "Complete a human textile-science and editorial-fairness review.",
+      "Replace non-release-ready audio metadata in the server source.",
+      "Implement and audit the public note-completion DTO and renderer only during atomic promotion.",
+      "Enforce the single canonical Part 4 route and keep Section 4 as visible wording without an alias route.",
+      "Promote the approved MP3 to public only in the same change that registers, routes and tests Part 4."
+    ],
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}
