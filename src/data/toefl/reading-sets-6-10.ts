@@ -17,7 +17,7 @@ interface PublicSetDefinition {
   supplementary: PublicQuestion;
 }
 
-const CONTENT_VERSION = '2026-08-14.w5';
+const CONTENT_VERSION = '2026-08-31.length-v1';
 const DISCLOSURE = 'Práctica fija WeLearn. Reproduce una familia de lectura y corrección local; no es adaptativa ni genera una puntuación oficial de ETS.';
 
 function options(itemId: string, values: readonly string[]): ToeflReadingExpansionOption[] {
@@ -70,8 +70,8 @@ A major development was the rebus principle: a sign could represent the sound of
 Independent inventions are generally recognized in Mesopotamia, China, and Mesoamerica, while scholars debate influences on some early systems. Repeated invention suggests that large settled societies faced similar needs for administration and communication. Once established, writing expanded beyond accounts. It preserved laws, stories, rituals, and observations, allowing information to travel across distances and generations without depending on one human memory.`,
   questions: [
     { prompt: 'What was an early use of writing in Mesopotamia?', options: ['Tracking goods and administrative accounts', 'Writing novels for entertainment', 'Sending private letters across oceans', 'Recording only military victories'] },
-    { prompt: 'Why did later cuneiform signs look less like pictures?', options: ['Scribes wanted to hide their meaning.', 'They were standardized as faster wedge-shaped marks.', 'Clay erased every curved line.', 'Different cities prohibited pictures.'] },
-    { prompt: 'What is the rebus principle?', options: ['Translating a text into another language', 'Using a sign for the sound of a word, not only the pictured object', 'Pressing clay into a wooden mold', 'Drawing only objects that can be touched'] },
+    { prompt: 'Why did later cuneiform signs look less like pictures?', options: ['Scribes deliberately hid their meaning by replacing every familiar object with a secret mark.', 'They were standardized as faster wedge-shaped marks.', 'Clay erased every curved line.', 'Different cities prohibited pictures.'] },
+    { prompt: 'What is the rebus principle?', options: ['Translating a text into another language by replacing each picture with its literal name', 'Using a sign for the sound of a word, not only the pictured object', 'Pressing clay into a wooden mold', 'Drawing only objects that can be touched'] },
     { prompt: 'Why does the passage mention independent inventions of writing?', options: ['To show that every system used identical signs', 'To claim that chronology is fully settled', 'To prove that literature caused urban growth', 'To suggest that different settled societies faced similar needs'] },
     { prompt: 'What did writing make possible after it expanded beyond accounting?', options: ['Preserving and transmitting information across distances and generations', 'Replacing every form of spoken language', 'Ending disagreement about history', 'Removing the need for administration'] },
   ],
@@ -112,8 +112,8 @@ Modern plate tectonics does not treat continents as isolated rafts. Continents f
     { prompt: 'What did Alfred Wegener propose?', options: ['Earthquakes are caused by the Moon.', 'Continents have always remained fixed.', 'Continents were once joined and later moved apart.', 'Ocean basins are continuously shrinking.'] },
     { prompt: 'Which evidence is NOT listed as part of Wegener’s case?', options: ['Written records from ancient sailors', 'Related fossils on separated continents', 'Matching rocks and mountain belts', 'Continental outlines that appeared to fit'] },
     { prompt: 'Why did many geologists remain unconvinced by continental drift?', options: ['Wegener lacked a plausible mechanism for moving continents.', 'Every fossil had been misidentified.', 'The continental outlines did not fit at all.', 'Ancient climates never changed.'] },
-    { prompt: 'Which later development helped supply the missing mechanism?', options: ['Discovery of a new continent', 'Evidence for seafloor spreading at mid-ocean ridges', 'Translation of ancient maps', 'Measurements of lunar gravity'] },
-    { prompt: 'How do continents move in modern plate tectonics?', options: ['They float freely on ocean water.', 'They are pushed only by surface currents.', 'They form parts of rigid plates that move relative to one another.', 'They remain fixed while oceans move around them.'] },
+    { prompt: 'Which later development helped supply the missing mechanism?', options: ['Discovery of a previously unknown continent beneath the modern Atlantic Ocean', 'Evidence for seafloor spreading at mid-ocean ridges', 'Translation of ancient maps', 'Measurements of lunar gravity'] },
+    { prompt: 'How do continents move in modern plate tectonics?', options: ['They float freely on ocean water and drift independently from the oceanic crust below them.', 'They are pushed only by surface currents.', 'They form parts of rigid plates that move relative to one another.', 'They remain fixed while oceans move around them.'] },
   ],
   supplementary: { prompt: 'Select the TWO statements supported by the passage.', options: ['Wegener’s proposal was immediately accepted.', 'Related fossils occur on continents now separated by oceans.', 'Plate tectonics connects continental movement with earthquakes and volcanoes.', 'Seafloor spreading was documented before Wegener proposed drift.'] },
 });
@@ -147,8 +147,8 @@ Photosynthesis also affects the global carbon cycle. Growing vegetation removes 
 
 Oxygenic photosynthesis also transformed the atmosphere of Earth. Geological evidence shows a major, persistent rise in atmospheric oxygen about 2.4 billion years ago, known as the Great Oxidation Event. Oxygen-producing microorganisms existed by that time, although researchers continue to debate exactly when the process evolved and why oxygen accumulated when it did. The modern atmosphere and most ecosystems remain deeply dependent on photosynthetic life.`,
   questions: [
-    { prompt: 'Why is photosynthesis essential to most food webs?', options: ['It occurs only in deep oceans.', 'It consumes all atmospheric oxygen.', 'It is performed by animals.', 'It stores light energy in compounds made by producers.'] },
-    { prompt: 'What does oxygenic photosynthesis form and release?', options: ['It forms sugars and releases oxygen as a by-product.', 'It forms only carbon dioxide.', 'It creates chlorophyll from oxygen.', 'It releases only water.'] },
+    { prompt: 'Why is photosynthesis essential to most food webs?', options: ['It occurs only in deep oceans.', 'It consumes atmospheric oxygen to make compounds that every producer must obtain from animals.', 'It is performed by animals.', 'It stores light energy in compounds made by producers.'] },
+    { prompt: 'What does oxygenic photosynthesis form and release?', options: ['It forms sugars and releases oxygen as a by-product.', 'It forms only carbon dioxide.', 'It creates chlorophyll from oxygen and releases carbon dioxide as its only product.', 'It releases only water.'] },
     { prompt: 'When can a forest act as a carbon sink?', options: ['When it releases more carbon than it absorbs', 'When it absorbs more carbon than it releases', 'Only after every tree dies', 'When photosynthesis stops'] },
     { prompt: 'What was the Great Oxidation Event?', options: ['The disappearance of oxygen from the atmosphere', 'The first use of carbon by forests', 'A major persistent rise in atmospheric oxygen about 2.4 billion years ago', 'The human invention of oxygenic photosynthesis'] },
     { prompt: 'What uncertainty does the passage acknowledge?', options: ['Whether light exists', 'Whether plants contain pigments', 'Whether photosynthesis affects food webs', 'Exactly when oxygenic photosynthesis evolved and why oxygen accumulated when it did'] },

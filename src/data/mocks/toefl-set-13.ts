@@ -33,7 +33,7 @@ const mock: MockExam = {
       questions: [
         { type: 'mcq', id: 't13-r-dl1', part: 2, text: 'How often should the patient take the medicine?', options: ['Three times a day', 'Only when in pain', 'Once a day', 'Twice a day'], answer: 0 },
         { type: 'mcq', id: 't13-r-dl2', part: 2, text: 'What should the patient do even if they feel better?', options: ['Complete the full course', 'Double the dose', 'Take it without food', 'Stop taking the medicine'], answer: 0 },
-        { type: 'mcq', id: 't13-r-dl3', part: 2, text: 'What should the patient do if they get a rash?', options: ['Take another capsule', 'Stop taking the medicine and contact a doctor immediately', 'Wait a week', 'Store it in the fridge'], answer: 1 },
+        { type: 'mcq', id: 't13-r-dl3', part: 2, text: 'What should the patient do if they get a rash?', options: ['Take another capsule and continue the same dose until the rash disappears without medical advice', 'Stop taking the medicine and contact a doctor immediately', 'Wait a week', 'Store it in the fridge'], answer: 1 },
       ],
     },
     {

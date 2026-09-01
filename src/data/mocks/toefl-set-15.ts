@@ -42,8 +42,8 @@ const mock: MockExam = {
       passage: `From: Team Leader\nTo: Project Team\nSubject: Monday meeting moved\n\nHi everyone,\n\nQuick update: our weekly project meeting on Monday is being moved from 10:00 a.m. to 2:00 p.m. because the meeting room is being used for a training session in the morning.\n\nPlease bring a short update on your part of the project — no more than five minutes each. If you cannot attend in person, you can join by video call using the usual link. If you have anything you'd like added to the agenda, send it to me by Friday afternoon.\n\nThanks,\nDana`,
       passageTitle: 'Work email',
       questions: [
-        { type: 'mcq', id: 't15-r-dl4', part: 3, text: 'Why is the meeting being moved?', options: ['Because the meeting room is used for training in the morning', 'Because there is no work to discuss', 'Because of a public holiday', 'Because the team leader is away'], answer: 0 },
-        { type: 'mcq', id: 't15-r-dl5', part: 3, text: 'What should team members send by Friday afternoon?', options: ['Their finished projects', 'Any items they want added to the agenda', 'A payment', 'Their holiday requests'], answer: 1 },
+        { type: 'mcq', id: 't15-r-dl4', part: 3, text: 'Why is the meeting being moved?', options: ['Because the meeting room is used for training in the morning', 'Because there is no work to discuss and the entire team has completed every current project', 'Because of a public holiday', 'Because the team leader is away'], answer: 0 },
+        { type: 'mcq', id: 't15-r-dl5', part: 3, text: 'What should team members send by Friday afternoon?', options: ['Their finished projects together with a complete written report on all work from the previous month', 'Any items they want added to the agenda', 'A payment', 'Their holiday requests'], answer: 1 },
       ],
     },
     {

@@ -31,8 +31,8 @@ const mock: MockExam = {
       passage: `SUNRISE CAFÉ — STAFF NOTICE\n\nWe are looking for a part-time weekend server.\n\n• Hours: Saturdays and Sundays, 8:00 a.m. – 2:00 p.m.\n• Duties: taking orders, serving food and drinks, and clearing tables.\n• A friendly, reliable attitude is essential; no experience necessary — full training given.\n• Free lunch and drinks provided during shifts.\n\nTo apply, hand your details to the manager at the counter, or email us. Applications close on the 15th.`,
       passageTitle: 'Café job notice',
       questions: [
-        { type: 'mcq', id: 't20-r-dl1', part: 2, text: 'What are the working hours?', options: ['Every evening', 'Full-time', 'Weekdays only', 'Saturdays and Sundays, 8 a.m. to 2 p.m.'], answer: 3 },
-        { type: 'mcq', id: 't20-r-dl2', part: 2, text: 'What does the notice say about experience?', options: ['No experience is necessary; full training is given.', 'Only experienced servers may apply.', 'Experience in cooking is needed.', 'Two years are required.'], answer: 0 },
+        { type: 'mcq', id: 't20-r-dl1', part: 2, text: 'What are the working hours?', options: ['Every evening from six until the café closes, including all weekday and weekend shifts', 'Full-time', 'Weekdays only', 'Saturdays and Sundays, 8 a.m. to 2 p.m.'], answer: 3 },
+        { type: 'mcq', id: 't20-r-dl2', part: 2, text: 'What does the notice say about experience?', options: ['No experience is necessary; full training is given.', 'Only experienced servers who have already worked in a café for at least two years may apply.', 'Experience in cooking is needed.', 'Two years are required.'], answer: 0 },
         { type: 'mcq', id: 't20-r-dl3', part: 2, text: 'How can someone apply?', options: ['Only by phone', 'By handing details to the manager or by email', 'By filling in an online form only', 'By visiting after closing time'], answer: 1 },
       ],
     },
@@ -42,7 +42,7 @@ const mock: MockExam = {
       passage: `LEILA: Do you want to meet to study for the chemistry test this weekend?\n\nTOM: Yes, definitely. Saturday or Sunday?\n\nLEILA: Saturday works better for me. Morning or afternoon?\n\nTOM: Let's do the afternoon — say, two o'clock? Where should we meet?\n\nLEILA: The library is closed on Saturday afternoons, so how about the study room in the student center? It's usually quiet.\n\nTOM: Perfect. I'll bring my notes and the practice questions. See you at two.`,
       passageTitle: 'Study group messages',
       questions: [
-        { type: 'mcq', id: 't20-r-dl4', part: 3, text: 'When do they agree to meet?', options: ['Friday evening', 'Sunday morning', 'Saturday afternoon at two o\'clock', 'Saturday morning'], answer: 2 },
+        { type: 'mcq', id: 't20-r-dl4', part: 3, text: 'When do they agree to meet?', options: ['Friday evening after the library closes and before the weekend chemistry test begins', 'Sunday morning', 'Saturday afternoon at two o\'clock', 'Saturday morning'], answer: 2 },
         { type: 'mcq', id: 't20-r-dl5', part: 3, text: 'Why do they choose the student center instead of the library?', options: ['The library is too noisy.', 'The student center has free food.', 'It is closer.', 'The library is closed on Saturday afternoons.'], answer: 3 },
       ],
     },

@@ -32,7 +32,7 @@ const mock: MockExam = {
       passageTitle: 'Station sign',
       questions: [
         { type: 'mcq', id: 't16-r-dl1', part: 2, text: 'Until what time is the ticket office open?', options: ['9:00 p.m.', '10:00 p.m.', 'It is always open.', '6:00 a.m.'], answer: 1 },
-        { type: 'mcq', id: 't16-r-dl2', part: 2, text: 'When are bicycles NOT allowed on trains?', options: ['At night', 'During peak hours (7–9 a.m. and 5–7 p.m.)', 'On weekends', 'They are never allowed.'], answer: 1 },
+        { type: 'mcq', id: 't16-r-dl2', part: 2, text: 'When are bicycles NOT allowed on trains?', options: ['At night after the final peak period has ended and trains are less crowded', 'During peak hours (7–9 a.m. and 5–7 p.m.)', 'On weekends', 'They are never allowed.'], answer: 1 },
         { type: 'mcq', id: 't16-r-dl3', part: 2, text: 'Where should a passenger go for lost property?', options: ['The café', 'Platform 2', 'The office near Platform 1', 'The ticket machines'], answer: 2 },
       ],
     },

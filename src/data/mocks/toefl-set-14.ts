@@ -42,8 +42,8 @@ const mock: MockExam = {
       passage: `From: Bright Ideas Bookshop\nTo: Customer\nSubject: About your recent order\n\nDear Customer,\n\nWe are sorry to inform you that one item from your order — "The History of Maps" — is currently out of stock and will not be available for three weeks. The rest of your order has already been shipped and should arrive within three days.\n\nYou have two options for the out-of-stock item: we can send it separately once it arrives at no extra cost, or we can cancel it and refund you immediately. Please reply to let us know which you prefer. We apologize for the inconvenience and thank you for your patience.`,
       passageTitle: 'Apology email',
       questions: [
-        { type: 'mcq', id: 't14-r-dl4', part: 3, text: 'What is the problem with the order?', options: ['The whole order is delayed.', 'One item is out of stock for three weeks.', 'The order was lost.', 'The customer was charged twice.'], answer: 1 },
-        { type: 'mcq', id: 't14-r-dl5', part: 3, text: 'What are the customer\'s two options?', options: ['Return everything', 'Wait or complain', 'Receive the item separately later at no extra cost, or cancel it for a refund', 'Pay extra or wait'], answer: 2 },
+        { type: 'mcq', id: 't14-r-dl4', part: 3, text: 'What is the problem with the order?', options: ['The whole order is delayed because every item is currently unavailable from the supplier.', 'One item is out of stock for three weeks.', 'The order was lost.', 'The customer was charged twice.'], answer: 1 },
+        { type: 'mcq', id: 't14-r-dl5', part: 3, text: 'What are the customer\'s two options?', options: ['Return everything in the order immediately and place a completely new order with another supplier', 'Wait or complain', 'Receive the item separately later at no extra cost, or cancel it for a refund', 'Pay extra or wait'], answer: 2 },
       ],
     },
     {

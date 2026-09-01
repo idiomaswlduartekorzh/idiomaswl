@@ -30,8 +30,8 @@ const mock: MockExam = {
       passageTitle: 'Museum sign',
       questions: [
         { type: 'mcq', id: 't9-r-dl1', part: 2, text: 'When is the museum closed?', options: ['Mondays', 'The first Sunday of each month', 'Weekends', 'Sundays'], answer: 0 },
-        { type: 'mcq', id: 't9-r-dl2', part: 2, text: 'Where is photography NOT allowed?', options: ['Anywhere in the museum', 'In the special exhibition on the second floor', 'Near the entrance', 'In the cloakroom'], answer: 1 },
-        { type: 'mcq', id: 't9-r-dl3', part: 2, text: 'What does the sign say about guided tours?', options: ['They are only on weekends.', 'They must be booked in advance.', 'They begin at 11:00 a.m. and 2:00 p.m. and need no booking.', 'They cost extra.'], answer: 2 },
+        { type: 'mcq', id: 't9-r-dl2', part: 2, text: 'Where is photography NOT allowed?', options: ['Anywhere in the museum, including the entrance hall and every permanent gallery', 'In the special exhibition on the second floor', 'Near the entrance', 'In the cloakroom'], answer: 1 },
+        { type: 'mcq', id: 't9-r-dl3', part: 2, text: 'What does the sign say about guided tours?', options: ['They are only available on weekends and must be reserved through the museum website before visitors arrive.', 'They must be booked in advance.', 'They begin at 11:00 a.m. and 2:00 p.m. and need no booking.', 'They cost extra.'], answer: 2 },
       ],
     },
     {
@@ -41,7 +41,7 @@ const mock: MockExam = {
       passageTitle: 'Reminder email',
       questions: [
         { type: 'mcq', id: 't9-r-dl4', part: 3, text: 'Why should Marco arrive ten minutes early?', options: ['To meet another doctor', 'To take a test', 'To pay a fee', 'To complete a short form'], answer: 3 },
-        { type: 'mcq', id: 't9-r-dl5', part: 3, text: 'What may happen if Marco cancels late?', options: ['He may have to pay a small fee.', 'He cannot make future appointments.', 'Nothing happens.', 'His appointment is moved automatically.'], answer: 0 },
+        { type: 'mcq', id: 't9-r-dl5', part: 3, text: 'What may happen if Marco cancels late?', options: ['He may have to pay a small fee.', 'He cannot make future appointments at the clinic for the rest of the year.', 'Nothing happens.', 'His appointment is moved automatically.'], answer: 0 },
       ],
     },
     {
