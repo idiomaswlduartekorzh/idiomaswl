@@ -3,6 +3,10 @@ import Link from 'next/link';
 import { ArrowRight, Check, Headphones, LockKeyhole, Radio, Waves } from 'lucide-react';
 
 import { BreadcrumbJsonLd, JsonLd } from '@/components/exam-practice/StructuredData';
+import {
+  IELTS_LISTENING_OFFICIAL_MAP_GUIDE_URL,
+  IELTS_LISTENING_QUESTION_TYPE_ENTITIES,
+} from '@/data/ielts/listening-question-type-entities';
 import styles from './ListeningHub.module.css';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/listening';
@@ -87,45 +91,6 @@ const PARTS: readonly ListeningPartSummary[] = [
   },
 ];
 
-const QUESTION_TYPES = [
-  {
-    number: '01',
-    title: 'Multiple choice',
-    detail: 'Choose one answer or, when the instruction says so, more than one answer from a longer list.',
-    skill: 'Main ideas, specific details and careful option tracking.',
-  },
-  {
-    number: '02',
-    title: 'Matching',
-    detail: 'Connect items heard in the recording with a fixed list of options.',
-    skill: 'Following speakers and recognising how facts connect.',
-  },
-  {
-    number: '03',
-    title: 'Plan, map or diagram labelling',
-    detail: 'Place labels on a visual by following a description, route or process.',
-    skill: 'Spatial language, directions and visual orientation.',
-  },
-  {
-    number: '04',
-    title: 'Form, note, table, flow-chart or summary completion',
-    detail: 'Fill gaps in an outline while respecting the exact word and number limit.',
-    skill: 'Key facts, categories and the main points worth recording.',
-  },
-  {
-    number: '05',
-    title: 'Sentence completion',
-    detail: 'Complete statements that summarise important information from the recording.',
-    skill: 'Important details and relationships such as cause and effect.',
-  },
-  {
-    number: '06',
-    title: 'Short-answer questions',
-    detail: 'Write brief facts from the recording within the stated word limit.',
-    skill: 'Places, prices, times and other precise information.',
-  },
-] as const;
-
 const SCORE_GUIDE = [
   { band: '5', averageCorrect: '16' },
   { band: '6', averageCorrect: '23' },
@@ -154,7 +119,13 @@ export default function IeltsListeningHubPage() {
           isAccessibleForFree: true,
           learningResourceType: ['Guide', 'Practice'],
           educationalUse: ['self-study', 'practice'],
-          teaches: ['IELTS Listening format', 'IELTS Listening question types', 'IELTS Listening scoring', 'listening for detail', 'answer prediction'],
+          teaches: [
+            'IELTS Listening format',
+            ...IELTS_LISTENING_QUESTION_TYPE_ENTITIES.map((questionType) => questionType.officialName),
+            'IELTS Listening scoring',
+            'listening for detail',
+            'answer prediction',
+          ],
           provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
           isPartOf: { '@type': 'Course', name: 'IELTS Practice', url: 'https://www.idiomaswl.com/practica/ielts' },
         }}
@@ -220,22 +191,81 @@ export default function IeltsListeningHubPage() {
           <section id="question-types" className={styles.section} aria-labelledby="question-types-heading">
             <div className={styles.sectionHeading}>
               <p className={styles.kicker}>Official task families</p>
-              <h2 id="question-types-heading">Six IELTS Listening question types</h2>
-              <p>IELTS groups the tasks into six families. The exact mix varies, so train the decision each format demands instead of memorising one worksheet pattern.</p>
+              <h2 id="question-types-heading">Which question types appear in IELTS Listening?</h2>
+              <p>IELTS groups Listening tasks into six official families. Use this index to identify the answer shape, the first decision and the most common trap before opening a practice.</p>
             </div>
-            <div className={styles.typeGrid}>
-              {QUESTION_TYPES.map((questionType) => (
-                <article className={styles.typeCard} key={questionType.number}>
-                  <span className={styles.typeNumber}>{questionType.number}</span>
-                  <h3>{questionType.title}</h3>
-                  <p>{questionType.detail}</p>
-                  <small>{questionType.skill}</small>
+
+            <nav className={styles.typeIndex} aria-label="IELTS Listening question types">
+              {IELTS_LISTENING_QUESTION_TYPE_ENTITIES.map((questionType) => (
+                <a href={`#${questionType.id}`} key={questionType.id}>
+                  <span>{String(questionType.officialOrder).padStart(2, '0')}</span>
+                  {questionType.officialName}
+                </a>
+              ))}
+            </nav>
+
+            <aside className={styles.taxonomyNote}>
+              <strong>Why some guides count 9 or 10 types</strong>
+              <p>They often split completion into form, note, table, flow-chart and summary tasks, or count plan, map and diagram labels separately. IELTS presents those variants inside six broader families, so this hub keeps one stable taxonomy and names the subformats inside it.</p>
+            </aside>
+
+            <div className={styles.typeEntityList}>
+              {IELTS_LISTENING_QUESTION_TYPE_ENTITIES.map((questionType) => (
+                <article className={styles.typeEntity} id={questionType.id} key={questionType.id}>
+                  <header className={styles.typeEntityHeader}>
+                    <span className={styles.typeNumber}>{String(questionType.officialOrder).padStart(2, '0')}</span>
+                    <div>
+                      <p className={styles.typeAliases}>{questionType.aliases.join(' · ')}</p>
+                      <h3>{questionType.officialName}</h3>
+                      <p>{questionType.directDefinition}</p>
+                    </div>
+                  </header>
+
+                  <dl className={styles.typeDecisionGrid}>
+                    <div><dt>Answer shape</dt><dd>{questionType.answerShape}</dd></div>
+                    <div><dt>First decision</dt><dd>{questionType.firstDecision}</dd></div>
+                    <div><dt>Common trap</dt><dd>{questionType.commonTrap}</dd></div>
+                  </dl>
+
+                  <div className={styles.instructionSignals}>
+                    <strong>Read the instruction for</strong>
+                    <ul>{questionType.instructionSignals.map((signal) => <li key={signal}>{signal}</li>)}</ul>
+                  </div>
+
+                  <details className={styles.workedExample}>
+                    <summary>Open an original {questionType.officialName} worked example</summary>
+                    <div>
+                      <p><strong>Context:</strong> {questionType.workedExample.context}</p>
+                      <p><strong>Prompt:</strong> {questionType.workedExample.prompt}</p>
+                      <blockquote>{questionType.workedExample.spokenEvidence}</blockquote>
+                      <p><strong>Resolution:</strong> {questionType.workedExample.resolution}</p>
+                      <p>{questionType.workedExample.rationale}</p>
+                    </div>
+                  </details>
+
+                  <footer className={styles.typeEntityLinks}>
+                    {questionType.availablePracticeHref && (
+                      <Link href={questionType.availablePracticeHref}>Practise form and table completion in Part 1 <ArrowRight size={15} aria-hidden="true" /></Link>
+                    )}
+                    {questionType.sourceUrls.map((sourceUrl) => {
+                      const sourceLabel = sourceUrl === IELTS_LISTENING_OFFICIAL_MAP_GUIDE_URL
+                        ? 'Official map guidance'
+                        : 'Official format source';
+                      return (
+                        <a
+                          aria-label={`${sourceLabel} for ${questionType.officialName} (opens in a new tab)`}
+                          href={sourceUrl}
+                          key={sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {sourceLabel}
+                        </a>
+                      );
+                    })}
+                  </footer>
                 </article>
               ))}
-            </div>
-            <div className={styles.practiceBridge}>
-              <div><strong>Practise a completion task now</strong><p>Part 1 Practice 001 combines form and table completion with original audio and feedback after submission.</p></div>
-              <Link href="/practica/ielts/listening/part-1">Open Questions 1–10 <ArrowRight size={16} aria-hidden="true" /></Link>
             </div>
           </section>
 

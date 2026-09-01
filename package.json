@@ -17,7 +17,7 @@
     "check:ielts:scope": "node scripts/check-ielts-scope.mjs",
     "check:ielts:release-env": "node scripts/check-ielts-release-environment.mjs",
     "test:ielts:superhub": "node --test tests/ielts-superhub-harness.test.mjs",
-    "test:ielts:listening": "node --experimental-strip-types --no-warnings --test tests/ielts-listening-mp3-metadata.test.mjs tests/ielts-listening-part1.test.mjs tests/ielts-listening-part2-candidate.test.mjs tests/ielts-listening-public-registry.test.mjs",
+    "test:ielts:listening": "node --experimental-strip-types --no-warnings --test tests/ielts-listening-mp3-metadata.test.mjs tests/ielts-listening-part1.test.mjs tests/ielts-listening-part2-candidate.test.mjs tests/ielts-listening-public-registry.test.mjs tests/ielts-listening-question-type-entities.test.mjs",
     "check:ielts:listening-release": "node scripts/check-ielts-listening-release.mjs",
     "harness:ielts": "node scripts/run-ielts-superhub-harness.mjs",
     "harness:ielts:release": "node scripts/run-ielts-superhub-harness.mjs --release",

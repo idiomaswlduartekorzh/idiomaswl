@@ -29,6 +29,7 @@ import {
   assertListeningReleaseMarkerStructure,
   extractListeningReleaseBlocks,
 } from '../scripts/lib/ielts-listening-release-scope.mjs';
+import { IELTS_LISTENING_QUESTION_TYPE_ENTITIES } from '../src/data/ielts/listening-question-type-entities.ts';
 
 const root = process.cwd();
 const fixture = {
@@ -609,12 +610,11 @@ test('indexable landings make truthful, non-cannibalizing search promises', () =
   assert.match(hub, /IELTS Listening Practice with Audio: Part 1 \+ Format Guide/);
   assert.match(hub, /transcript after submission/);
   assert.doesNotMatch(hub, /Parts 1–4 with Audio/);
-  const questionTypeBlock = hub.slice(hub.indexOf('const QUESTION_TYPES'), hub.indexOf('const SCORE_GUIDE'));
-  assert.equal([...questionTypeBlock.matchAll(/title: '/g)].length, 6);
+  assert.equal(IELTS_LISTENING_QUESTION_TYPE_ENTITIES.length, 6);
   for (const title of ['Multiple choice', 'Matching', 'Plan, map or diagram labelling', 'Form, note, table, flow-chart or summary completion', 'Sentence completion', 'Short-answer questions']) {
-    assert.match(questionTypeBlock, new RegExp(title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+    assert.equal(IELTS_LISTENING_QUESTION_TYPE_ENTITIES.some((questionType) => questionType.officialName === title), true);
   }
-  assert.match(hub, /QUESTION_TYPES\.map\(\(questionType\) =>/);
+  assert.match(hub, /IELTS_LISTENING_QUESTION_TYPE_ENTITIES\.map\(\(questionType\) =>/);
   assert.match(hub, /SCORE_GUIDE\.map\(\(row\) =>/);
   assert.match(hub, /href=\{IELTS_SCORE_URL\}/);
   assert.match(hub, /Each correct answer receives one mark/);

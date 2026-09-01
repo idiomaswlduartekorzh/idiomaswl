@@ -75,7 +75,7 @@ qué sostuvo la decisión editorial, pero no reconstruir una SERP idéntica.
 | `ielts listening part 1`, `section 1`, `questions 1–10` | `/practica/ielts/listening/part-1` | **merge** | Una sola entidad y canonical. `Section 1` aparece en texto visible; no se crea `/section-1`. |
 | `part 2`, `part 3`, `part 4` | `/practica/ielts/listening/part-{n}` | **defer** | Crear sólo cuando cada parte tenga guion, audio, preguntas, scoring y QA originales. |
 | `practice test`, `mock test`, `with audio and answers` | `/practica/ielts/listening/practice-tests` | **defer** | La promesa exige al menos dos pruebas originales completas de cuatro partes y 40 preguntas. |
-| `question types`, `types practice`, `examples` | `/practica/ielts/listening#question-types` | **merge / implementado** | El hub cubre las seis familias oficiales y enlaza una práctica de completion. Una ruta independiente sigue diferida hasta tener ejemplos y prácticas originales por tipo. |
+| `question types`, `types practice`, `examples` | `/practica/ielts/listening#question-types` | **merge / implementado** | El hub cubre las seis familias con anchors, decisiones, trampas, señales de instrucción y microejemplos originales; sólo completion enlaza a una práctica disponible. Una ruta independiente sigue diferida hasta tener prácticas originales por tipo. |
 | `score`, `band score`, `calculator`, `conversion` | `/practica/ielts/listening#scoring` | **merge / implementado parcialmente** | El hub explica raw score, referencias oficiales y variación por versión. Una calculadora o guía separada sigue diferida y nunca usará el resultado /10 como banda. |
 | `tips`, `strategies`, `band 9` | páginas de parte/tipo | **merge** | Integrar consejos contextuales donde existe la tarea; evitar una lista genérica y una promesa de banda. |
 | `PDF`, `worksheets` | ninguna por ahora | **defer** | No existe un artefacto descargable auditado; no usar el modificador para atraer un clic que el producto no satisface. |
@@ -89,6 +89,11 @@ audio y respuestas. En consecuencia, el title temporal declara de forma explíci
 `Part 1 + Format Guide`; no afirma audio para Parts 2–4. La description puede mencionar
 respuestas, explicaciones y transcript porque la sesión los entrega después de una
 entrega completa, nunca en el payload previo.
+
+La intención `question types` permanece fusionada en esta canonical. Sus seis entidades
+se renderizan en servidor y explican la forma de respuesta, la primera decisión, la trampa
+típica y un ejemplo original. No se añadieron rutas por sinónimo ni schema FAQ; abrir una
+URL separada exige evidencia de Search Console y suficiente inventario práctico propio.
 
 Cuando las cuatro partes tengan práctica original aprobada, se puede reevaluar el title
 `IELTS Listening Practice: Parts 1–4 with Audio`. Antes de ese hito, esa frase queda

@@ -167,6 +167,8 @@ Puerta: `npm run harness:ielts -- --compare-git-ref=origin/main`.
 Entregables:
 
 - hub `/practica/ielts/listening`;
+- capa SSR de seis entidades oficiales de tipos de pregunta, con anchors estables,
+  decisiones, trampas, ejemplos originales y fuentes primarias en la misma canonical;
 - landing Part 1 sin páginas vacías para Part 2–4;
 - contrato público allowlist independiente del banco histórico;
 - DTO público sin `answer` ni `answers`;
