@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "gateId": "HR-04-source-revalidation",
+  "initiative": "toefl-sectional-seo-curation-harness",
+  "status": "pending-academic-human-review",
+  "generatedAtUtc": "2026-09-01T12:57:59Z",
+  "branchCommitBeforeArtifact": "0f653222b2bb0e6c6f314617598c076774c5c2ec",
+  "revalidationDraft": {
+    "path": "docs/toefl-sectional-hr04-official-source-revalidation-draft.md",
+    "sha256": "fc32e495916054af4d8c65f0a050ad46c417a2abaa3d9291796e702f3d88fe5f"
+  },
+  "officialSources": [
+    {
+      "id": "ETS-CONTENT",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/about/content.html",
+      "sha256": "2a7877f6450ce7d0a166ae1cd37feef9f8c5462a40bfcb512a4e24555b1c25ea"
+    },
+    {
+      "id": "ETS-SPEC",
+      "url": "https://www.ets.org/content/dam/ets-india/pdfs/toefl/toefl-ibt-test-specifications-2026.pdf",
+      "sha256": "72196bd328b2e2eb7e08ee031382fa174b1b80ca23b3073b9bd8743c6f39289f"
+    },
+    {
+      "id": "ETS-OVERVIEW",
+      "url": "https://www.ets.org/pdfs/toefl/toefl-ibt-test-overview.pdf",
+      "sha256": "ce5e0eef3ea47b9964b0b1b034e96fa3b2aa0681347f17b381196cb0661249f0"
+    },
+    {
+      "id": "ETS-READING",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html",
+      "sha256": "cb855cff5751da901202f5ba90f41272d823ce853378f62be7926ed91d256ceb"
+    },
+    {
+      "id": "ETS-LISTENING",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/about/content/listening.html",
+      "sha256": "0227402a7547b1bdef76629f590af74f0b64ead1410fddc7cac28aba31c9e827"
+    },
+    {
+      "id": "ETS-WRITING",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/about/content/writing.html",
+      "sha256": "81a9494ae4ab97748f556418942cff28b94aa2d4f0b72f80877e42d2795877ea"
+    },
+    {
+      "id": "ETS-SPEAKING",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/about/content/speaking.html",
+      "sha256": "340dcf2c2906302ec1e6cafc598bd2e49e3f96fe8dc4fc207eba25d541fb4abb"
+    },
+    {
+      "id": "ETS-SCORES",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html",
+      "sha256": "ba202eeb3a5a87ade9cebcb9374bd75df58f450d7539133d19010f357794182d"
+    }
+  ],
+  "claimStatus": {
+    "readyForAcademicReview": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C10"
+    ],
+    "blockedPendingResolution": [
+      "C09"
+    ]
+  },
+  "sourceInconsistencies": [
+    "ETS-CONTENT publishes base item/time figures with an adaptation caveat while ETS-OVERVIEW uses 'up to'.",
+    "ETS-LISTENING says 'two task types' but enumerates four; ETS-CONTENT and ETS-SPEC also enumerate four.",
+    "ETS-SPEC retains a pre-launch note that minor revisions could occur before launch."
+  ],
+  "gateConditions": {
+    "D7": "A named human academic reviewer must decide the claims; no reviewer is currently recorded.",
+    "D8": "HR-04 claims remain blocked until this artifact is reviewed and the decision is logged.",
+    "productionMutationAuthorized": false,
+    "normativeRegistryRestorationAuthorized": false
+  },
+  "limitations": [
+    "Source hashes identify retrieved responses and are not evidence that the pages will remain unchanged.",
+    "This evidence does not validate WeLearn item quality, psychometrics, score equivalence or affiliation.",
+    "No product page, metadata, schema, sitemap or production route was changed."
+  ]
+}
