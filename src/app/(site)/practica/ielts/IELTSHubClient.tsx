@@ -24,6 +24,7 @@ const MODALITIES = [
 ];
 
 const AVAILABLE_SKILLS = [
+  // ielts-listening-release:welearn-listening-part-1-001:start
   {
     id: 'listening',
     name: 'Listening',
@@ -33,6 +34,7 @@ const AVAILABLE_SKILLS = [
     href: '/practica/ielts/listening',
     icon: Headphones,
   },
+  // ielts-listening-release:welearn-listening-part-1-001:end
   {
     id: 'reading',
     name: 'Reading',
@@ -69,7 +71,9 @@ export default function IELTSHubClient() {
           <p className={styles.heroLead}>Start with Listening, Academic or General Training, then move into the skill you need. Every available route separates official format from WeLearn strategy and connects explanation to real practice.</p>
           <div className={styles.factGrid} aria-label="IELTS practice at a glance">
             <div className={styles.fact}><strong>2 routes</strong><span>Academic and General Training pathways</span></div>
+            {/* ielts-listening-release:welearn-listening-part-1-001:start */}
             <div className={styles.fact}><strong>2 live + 1 pilot</strong><span>Reading and Writing live; Listening release-gated</span></div>
+            {/* ielts-listening-release:welearn-listening-part-1-001:end */}
             <div className={styles.fact}><strong>20+ paths</strong><span>question formats and transferable skills</span></div>
             <div className={styles.fact}><strong>English-first</strong><span>international learning experience</span></div>
           </div>

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "practices": [
+    {
+      "practiceId": "welearn-listening-part-1-001",
+      "contentVersion": "2026-09-01.1",
+      "part": 1,
+      "practiceNumber": 1,
+      "publication": "public",
+      "sourcePath": "src/data/ielts/listening-part1-welearn-001.server.ts",
+      "manifestPath": "docs/ielts-superhub/originality/welearn-listening-part-1-001.json",
+      "guidePath": "src/app/(site)/practica/ielts/listening/part-1/page.tsx",
+      "guideRoute": "/practica/ielts/listening/part-1",
+      "sessionRoute": "/practica/ielts/listening/sesion?practice=welearn-listening-part-1-001&part=1",
+      "editorialStateKey": "original-listening-part-1",
+      "publicSurfacePaths": [
+        "src/app/(site)/practica/ielts/IELTSHubClient.tsx",
+        "src/app/(site)/practica/ielts/listening/page.tsx",
+        "src/app/(site)/practica/ielts/listening/part-1/page.tsx"
+      ]
+    }
+  ]
+}

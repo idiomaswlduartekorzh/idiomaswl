@@ -6,6 +6,8 @@ export interface IeltsListeningBlankSource {
   maxWords: number;
 }
 
+export type IeltsListeningPart = 1 | 2 | 3 | 4;
+
 export interface IeltsListeningFormSource {
   type: 'form';
   id: string;
@@ -44,6 +46,8 @@ export type IeltsListeningGroupSource = IeltsListeningFormSource | IeltsListenin
 export interface IeltsListeningPracticeSource {
   id: string;
   contentVersion: string;
+  part: IeltsListeningPart;
+  practiceNumber: number;
   title: string;
   scenario: string;
   instructions: string;
@@ -92,10 +96,13 @@ export type IeltsListeningPublicGroup =
 export interface IeltsListeningPublicPractice {
   id: string;
   contentVersion: string;
+  part: IeltsListeningPart;
+  practiceNumber: number;
   title: string;
   scenario: string;
   instructions: string;
   questionCount: number;
+  questionRange: readonly [number, number];
   audio: {
     url: string;
     durationSeconds: number;
@@ -128,13 +135,27 @@ function normalizeAnswer(value: string): string {
 function sourceBlanks(source: IeltsListeningPracticeSource): IeltsListeningBlankSource[] {
   return source.groups.flatMap((group) => {
     if (group.type === 'form') return [...group.blanks];
-    return group.rows.flatMap((row) =>
-      row.flatMap((cell) => cell.type === 'blank' ? [cell] : []),
-    );
+    if (group.type === 'table') {
+      return group.rows.flatMap((row) =>
+        row.flatMap((cell) => cell.type === 'blank' ? [cell] : []),
+      );
+    }
+    throw new Error('Unsupported IELTS Listening question group type.');
   });
 }
 
 function assertSourceIntegrity(source: IeltsListeningPracticeSource): void {
+  if (![1, 2, 3, 4].includes(source.part)) {
+    throw new Error('IELTS Listening practice part must be an integer from 1 to 4.');
+  }
+  if (!Number.isInteger(source.practiceNumber) || source.practiceNumber <= 0) {
+    throw new Error('IELTS Listening practice number must be a positive integer.');
+  }
+  const expectedId = `welearn-listening-part-${source.part}-${String(source.practiceNumber).padStart(3, '0')}`;
+  if (source.id !== expectedId) {
+    throw new Error(`IELTS Listening practice ID must be ${expectedId}.`);
+  }
+
   const groupIds = source.groups.map((group) => group.id);
   if (new Set(groupIds).size !== groupIds.length) {
     throw new Error('IELTS Listening practice contains duplicate group IDs.');
@@ -142,8 +163,10 @@ function assertSourceIntegrity(source: IeltsListeningPracticeSource): void {
 
   const blanks = sourceBlanks(source).sort((a, b) => a.number - b.number);
   const numbers = blanks.map((blank) => blank.number);
-  if (numbers.length !== 10 || numbers.some((number, index) => number !== index + 1)) {
-    throw new Error('IELTS Listening Part 1 must contain the exact question sequence 1–10.');
+  const firstQuestion = (source.part - 1) * 10 + 1;
+  const lastQuestion = source.part * 10;
+  if (numbers.length !== 10 || numbers.some((number, index) => number !== firstQuestion + index)) {
+    throw new Error(`IELTS Listening Part ${source.part} must contain the exact question sequence ${firstQuestion}–${lastQuestion}.`);
   }
   if (blanks.some((blank) =>
     !blank.expected.trim()
@@ -174,13 +197,15 @@ function assertSourceIntegrity(source: IeltsListeningPracticeSource): void {
       if (placeholders.length !== sorted.length || placeholders.some((number, index) => number !== sorted[index])) {
         throw new Error(`Template placeholders do not match blanks in group ${group.id}.`);
       }
-    } else if (
+    } else if (group.type === 'table' && (
       !group.headers.length
       || group.headers.some((header) => !header.trim())
       || !group.rows.length
       || group.rows.some((row) => row.length !== group.headers.length)
-    ) {
+    )) {
       throw new Error(`Table rows do not match headers in group ${group.id}.`);
+    } else if (group.type !== 'table') {
+      throw new Error('Unsupported IELTS Listening question group type.');
     }
   }
 
@@ -212,7 +237,7 @@ export function projectIeltsListeningPractice(
       };
     }
 
-    return {
+    if (group.type === 'table') return {
       type: 'table',
       id: group.id,
       questionRange: group.questionRange,
@@ -224,15 +249,22 @@ export function projectIeltsListeningPractice(
           : { type: 'blank' as const, number: cell.number, maxWords: cell.maxWords },
       )),
     };
+
+    throw new Error('Unsupported IELTS Listening question group type.');
   });
+
+  const questionRange = [(source.part - 1) * 10 + 1, source.part * 10] as const;
 
   return {
     id: source.id,
     contentVersion: source.contentVersion,
+    part: source.part,
+    practiceNumber: source.practiceNumber,
     title: source.title,
     scenario: source.scenario,
     instructions: source.instructions,
     questionCount: sourceBlanks(source).length,
+    questionRange,
     audio: {
       url: resolvedAudioUrl,
       durationSeconds: source.audio.durationSeconds,
@@ -261,6 +293,7 @@ export function scoreIeltsListeningPractice(
   source: IeltsListeningPracticeSource,
   responses: Readonly<Record<string, string>>,
 ): IeltsListeningScoreResult {
+  assertSourceIntegrity(source);
   const blanks = sourceBlanks(source).sort((a, b) => a.number - b.number);
   const outcomes = blanks.map((blank) => ({
     number: blank.number,

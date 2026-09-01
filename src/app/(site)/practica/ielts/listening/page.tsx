@@ -58,6 +58,7 @@ interface ListeningPartSummary {
 }
 
 const PARTS: readonly ListeningPartSummary[] = [
+  // ielts-listening-release:welearn-listening-part-1-001:start
   {
     number: '01',
     title: 'Everyday conversation',
@@ -65,6 +66,7 @@ const PARTS: readonly ListeningPartSummary[] = [
     status: 'Audited pilot',
     href: '/practica/ielts/listening/part-1',
   },
+  // ielts-listening-release:welearn-listening-part-1-001:end
   {
     number: '02',
     title: 'Everyday monologue',
@@ -187,7 +189,9 @@ export default function IeltsListeningHubPage() {
                 <div><dt>Parts</dt><dd>4</dd></div>
                 <div><dt>Questions</dt><dd>40</dd></div>
                 <div><dt>Playback</dt><dd>Once in the test</dd></div>
-              <div><dt>First practice</dt><dd>Part 1 pilot</dd></div>
+                {/* ielts-listening-release:welearn-listening-part-1-001:start */}
+                <div><dt>First practice</dt><dd>Part 1 pilot</dd></div>
+                {/* ielts-listening-release:welearn-listening-part-1-001:end */}
               </dl>
             </aside>
           </header>

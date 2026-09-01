@@ -11,12 +11,29 @@ import {
   validateIeltsListeningResponses,
 } from '../src/lib/ielts/listening-practice-contract.ts';
 import { readBoundedJson } from '../src/lib/http/read-bounded-json.ts';
+import {
+  ieltsListeningPublicQuestionNumbers,
+  ieltsListeningStorageKey,
+} from '../src/lib/ielts/listening-public-contract.ts';
+import { createIeltsListeningScoreResponse } from '../src/lib/ielts/listening-score-route-contract.ts';
+import {
+  assertIeltsListeningRegistrationBundle,
+  assertIeltsListeningRegistryCatalog,
+  assertIeltsListeningRegistryEntries,
+  assertIeltsListeningScoringIdentity,
+} from '../src/lib/ielts/listening-registry-contract.ts';
 import { validateListeningReleaseApproval } from '../scripts/lib/ielts-listening-release-approval.mjs';
+import {
+  assertListeningReleaseMarkerStructure,
+  extractListeningReleaseBlocks,
+} from '../scripts/lib/ielts-listening-release-scope.mjs';
 
 const root = process.cwd();
 const fixture = {
-  id: 'welearn-listening-part-1-test',
+  id: 'welearn-listening-part-1-999',
   contentVersion: 'test-v1',
+  part: 1,
+  practiceNumber: 999,
   title: 'Original test fixture',
   scenario: 'A booking conversation.',
   instructions: 'Listen and answer.',
@@ -81,7 +98,112 @@ test('projects a serializable allowlist DTO with no private transcript or answer
   assert.deepEqual(JSON.parse(JSON.stringify(dto)), dto);
   assert.deepEqual(fixture, before);
   assert.equal(dto.questionCount, 10);
+  assert.equal(dto.part, 1);
+  assert.equal(dto.practiceNumber, 999);
+  assert.deepEqual(dto.questionRange, [1, 10]);
   assert.deepEqual(ieltsListeningQuestionNumbers(fixture), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+});
+
+test('derives an exact contiguous ten-question window from the declared part', () => {
+  const partTwo = structuredClone(fixture);
+  partTwo.id = 'welearn-listening-part-2-999';
+  partTwo.part = 2;
+  for (const group of partTwo.groups) {
+    group.questionRange = [group.questionRange[0] + 10, group.questionRange[1] + 10];
+    if (group.type === 'form') {
+      group.template = group.template.replace(/\{\{(\d+)\}\}/g, (_, value) => `{{${Number(value) + 10}}}`);
+      for (const blank of group.blanks) blank.number += 10;
+    } else {
+      for (const row of group.rows) {
+        for (const cell of row) if (cell.type === 'blank') cell.number += 10;
+      }
+    }
+  }
+  const dto = projectIeltsListeningPractice(partTwo, '/audio.mp3');
+  assert.equal(dto.part, 2);
+  assert.deepEqual(dto.questionRange, [11, 20]);
+  assert.deepEqual(ieltsListeningQuestionNumbers(partTwo), [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
+
+  const wrongWindow = structuredClone(fixture);
+  wrongWindow.id = 'welearn-listening-part-2-999';
+  wrongWindow.part = 2;
+  assert.throws(() => projectIeltsListeningPractice(wrongWindow, '/audio.mp3'), /exact question sequence 11–20/i);
+  assert.throws(() => scoreIeltsListeningPractice(wrongWindow, {}), /exact question sequence 11–20/i);
+});
+
+test('the server registry contract rejects crossed and duplicate identities', () => {
+  const first = {
+    key: 'welearn-listening-part-1-001',
+    identity: { id: 'welearn-listening-part-1-001', contentVersion: 'v1', part: 1, practiceNumber: 1 },
+  };
+  const second = {
+    key: 'welearn-listening-part-2-001',
+    identity: { id: 'welearn-listening-part-2-001', contentVersion: 'v1', part: 2, practiceNumber: 1 },
+  };
+  assert.doesNotThrow(() => assertIeltsListeningRegistryEntries([first, second]));
+  assert.throws(() => assertIeltsListeningRegistryEntries([]), /cannot be empty/i);
+  assert.throws(() => assertIeltsListeningRegistryEntries([{ ...first, key: 'crossed' }]), /key mismatch/i);
+  assert.throws(() => assertIeltsListeningRegistryEntries([first, first]), /duplicate.*key/i);
+  assert.throws(() => assertIeltsListeningRegistryEntries([first, { ...second, identity: { ...second.identity, id: first.identity.id } }]), /key mismatch/i);
+  assert.throws(() => assertIeltsListeningRegistryEntries([first, {
+    key: 'welearn-listening-part-1-002',
+    identity: { id: 'welearn-listening-part-1-002', contentVersion: 'v2', part: 1, practiceNumber: 1 },
+  }]), /duplicate.*part\/practice/i);
+  assert.throws(() => assertIeltsListeningRegistryEntries([{ ...first, identity: { ...first.identity, contentVersion: '' } }]), /content version/i);
+  assert.throws(() => assertIeltsListeningRegistryEntries([{ ...first, identity: { ...first.identity, part: 5 } }]), /invalid part/i);
+  assert.throws(() => assertIeltsListeningRegistryEntries([{ ...first, identity: { ...first.identity, practiceNumber: 0 } }]), /invalid practice number/i);
+  assert.throws(() => assertIeltsListeningRegistryEntries([{
+    ...first,
+    key: 'welearn-listening-part-1-002',
+    identity: { ...first.identity, id: 'welearn-listening-part-1-002' },
+  }]), /identity must be/i);
+});
+
+test('the registry reconciles public DTO, question range, scorer and release catalog', () => {
+  const identity = { id: 'welearn-listening-part-2-001', contentVersion: 'v2', part: 2, practiceNumber: 1 };
+  const bundle = {
+    key: identity.id,
+    identity,
+    publicPractice: { ...identity, questionCount: 10, questionRange: [11, 20] },
+    publicQuestionNumbers: Array.from({ length: 10 }, (_, index) => index + 11),
+    questionNumbers: Array.from({ length: 10 }, (_, index) => index + 11),
+    scoreProbe: {
+      total: 10,
+      outcomes: Array.from({ length: 10 }, (_, index) => ({ number: index + 11 })),
+    },
+  };
+  const registry = [{ key: identity.id, identity }];
+  const catalog = [{
+    practiceId: identity.id,
+    contentVersion: identity.contentVersion,
+    part: identity.part,
+    practiceNumber: identity.practiceNumber,
+    publication: 'public',
+  }];
+
+  assert.doesNotThrow(() => assertIeltsListeningRegistrationBundle(bundle));
+  assert.doesNotThrow(() => assertIeltsListeningRegistryCatalog(registry, catalog));
+  assert.doesNotThrow(() => assertIeltsListeningScoringIdentity(identity, identity));
+  assert.throws(() => assertIeltsListeningScoringIdentity(identity, { ...identity, practiceNumber: 2 }), /scorer identity mismatch/i);
+  assert.throws(() => assertIeltsListeningRegistrationBundle({
+    ...bundle,
+    publicPractice: { ...bundle.publicPractice, part: 1 },
+  }), /public projection mismatch/i);
+  assert.throws(() => assertIeltsListeningRegistrationBundle({
+    ...bundle,
+    publicQuestionNumbers: Array.from({ length: 10 }, (_, index) => index + 1),
+  }), /public group questions.*11–20/i);
+  assert.throws(() => assertIeltsListeningRegistrationBundle({
+    ...bundle,
+    questionNumbers: Array.from({ length: 10 }, (_, index) => index + 1),
+  }), /scorer question range.*11–20/i);
+  assert.throws(() => assertIeltsListeningRegistrationBundle({
+    ...bundle,
+    scoreProbe: { total: 10, outcomes: Array.from({ length: 10 }, (_, index) => ({ number: index + 1 })) },
+  }), /scorer outcomes.*11–20/i);
+  assert.throws(() => assertIeltsListeningRegistryCatalog(registry, []), /catalog cannot be empty/i);
+  assert.throws(() => assertIeltsListeningRegistryCatalog(registry, [{ ...catalog[0], contentVersion: 'crossed' }]), /catalog identity mismatch/i);
+  assert.throws(() => assertIeltsListeningRegistryCatalog(registry, [catalog[0], catalog[0]]), /duplicate.*catalog/i);
 });
 
 test('scores on the server contract without returning a band or accepted values', () => {
@@ -128,6 +250,14 @@ test('accepts only a complete bounded response map for questions 1–10', () => 
 });
 
 test('fails closed on structural and private-answer mutations', () => {
+  const invalidPracticeNumber = structuredClone(fixture);
+  invalidPracticeNumber.practiceNumber = 0;
+  assert.throws(() => projectIeltsListeningPractice(invalidPracticeNumber, '/audio.mp3'), /positive integer/i);
+
+  const mismatchedId = structuredClone(fixture);
+  mismatchedId.id = 'welearn-listening-part-1-998';
+  assert.throws(() => projectIeltsListeningPractice(mismatchedId, '/audio.mp3'), /practice ID/i);
+
   const gap = structuredClone(fixture);
   gap.groups[0].blanks[5].number = 7;
   assert.throws(() => projectIeltsListeningPractice(gap, '/audio.mp3'), /exact question sequence/i);
@@ -157,6 +287,10 @@ test('fails closed on structural and private-answer mutations', () => {
   const unevenTable = structuredClone(fixture);
   unevenTable.groups[1].rows[0].push({ type: 'text', text: 'Unexpected third cell' });
   assert.throws(() => projectIeltsListeningPractice(unevenTable, '/audio.mp3'), /table rows/i);
+
+  const unknownGroup = structuredClone(fixture);
+  unknownGroup.groups[1] = { type: 'multiple-choice', id: 'unsupported', questionRange: [7, 10] };
+  assert.throws(() => projectIeltsListeningPractice(unknownGroup, '/audio.mp3'), /unsupported.*group type/i);
 });
 
 test('bounds streamed JSON even when no Content-Length header is available', async () => {
@@ -181,6 +315,54 @@ test('bounds streamed JSON even when no Content-Length header is available', asy
   assert.deepEqual(oversized, { ok: false, code: 'payload_too_large', status: 413 });
 });
 
+test('the executable score handler freezes private headers and fail-closed routing', async () => {
+  const questionNumbers = Array.from({ length: 10 }, (_, index) => index + 1);
+  const responses = Object.fromEntries(questionNumbers.map((number) => [String(number), `answer-${number}`]));
+  const scoreResult = {
+    correct: 0,
+    total: 10,
+    transcript: 'Released only after a complete submission.',
+    outcomes: questionNumbers.map((number) => ({
+      number,
+      correct: false,
+      expected: `expected-${number}`,
+      explanation: `explanation-${number}`,
+    })),
+    disclosure: 'Not an official band score.',
+  };
+  const lookup = (practiceId) => practiceId === 'welearn-listening-part-1-001'
+    ? { identity: { contentVersion: 'v1' }, questionNumbers, score: () => scoreResult }
+    : null;
+  const request = (body, contentType = 'application/json') => new Request('https://example.test/api/practica/ielts/listening/score', {
+    method: 'POST',
+    headers: { 'content-type': contentType },
+    body: JSON.stringify(body),
+  });
+
+  const unknown = await createIeltsListeningScoreResponse(request({
+    practiceId: 'unknown', contentVersion: 'v1', responses,
+  }), lookup);
+  assert.equal(unknown.status, 404);
+  assert.deepEqual(await unknown.json(), { code: 'unknown_practice' });
+  assert.equal(unknown.headers.get('cache-control'), 'private, no-store, max-age=0');
+  assert.equal(unknown.headers.get('x-robots-tag'), 'noindex, nofollow, noarchive');
+  assert.equal(unknown.headers.get('referrer-policy'), 'strict-origin-when-cross-origin');
+
+  const crossed = await createIeltsListeningScoreResponse(request({
+    practiceId: 'welearn-listening-part-1-001', contentVersion: 'crossed', responses,
+  }), lookup);
+  assert.equal(crossed.status, 404);
+
+  const valid = await createIeltsListeningScoreResponse(request({
+    practiceId: 'welearn-listening-part-1-001', contentVersion: 'v1', responses,
+  }), lookup);
+  assert.equal(valid.status, 200);
+  assert.deepEqual(await valid.json(), scoreResult);
+
+  const unsupported = await createIeltsListeningScoreResponse(request({}, 'text/plain'), lookup);
+  assert.equal(unsupported.status, 415);
+});
+
 test('release approval mutations fail closed', () => {
   const release = {
     status: 'approved',
@@ -193,6 +375,7 @@ test('release approval mutations fail closed', () => {
     release: overrides.release ?? release,
     editorialState: overrides.editorialState ?? 'published',
     publicFiles: overrides.publicFiles ?? publicFiles,
+    forbiddenApprovedLabels: overrides.forbiddenApprovedLabels,
     releaseMode: true,
   });
 
@@ -201,25 +384,93 @@ test('release approval mutations fail closed', () => {
   assert.match(validate({ release: { ...release, approvedAt: null } }).join('\n'), /approval timestamp/i);
   assert.match(validate({ editorialState: 'pilot' }).join('\n'), /editorial state/i);
   assert.match(validate({ publicFiles: [{ path: 'part-1.tsx', contents: 'Release-gated pilot' }] }).join('\n'), /pilot labels/i);
+  assert.match(validate({
+    publicFiles: [{ path: 'part-1.tsx', contents: 'A newly worded pilot badge' }],
+    forbiddenApprovedLabels: ['Old exact label'],
+  }).join('\n'), /pilot labels/i);
+  const sharedSurface = [
+    '// ielts-listening-release:welearn-listening-part-1-001:start',
+    'Published listening practice',
+    '// ielts-listening-release:welearn-listening-part-1-001:end',
+    '// ielts-listening-release:welearn-listening-part-1-002:start',
+    'Second practice pilot',
+    '// ielts-listening-release:welearn-listening-part-1-002:end',
+  ].join('\n');
+  const firstBlocks = extractListeningReleaseBlocks(sharedSurface, 'welearn-listening-part-1-001');
+  const secondBlocks = extractListeningReleaseBlocks(sharedSurface, 'welearn-listening-part-1-002');
+  assert.equal(firstBlocks.length, 1);
+  assert.match(firstBlocks[0], /Published listening practice/);
+  assert.doesNotMatch(firstBlocks[0], /pilot/i);
+  assert.deepEqual(validate({ publicFiles: [{ path: 'shared.tsx', contents: firstBlocks.join('\n') }] }), []);
+  assert.match(validate({ publicFiles: [{ path: 'shared.tsx', contents: secondBlocks.join('\n') }] }).join('\n'), /pilot labels/i);
+  assert.throws(() => assertListeningReleaseMarkerStructure(`${sharedSurface}\nielts-listening-release:welearn-listening-part-1-001:start`), /orphan.*start/i);
+  assert.throws(() => assertListeningReleaseMarkerStructure(`ielts-listening-release:welearn-listening-part-1-001:end\n${sharedSurface}`), /orphan.*end/i);
+  assert.throws(() => assertListeningReleaseMarkerStructure([
+    'ielts-listening-release:welearn-listening-part-1-001:start',
+    'ielts-listening-release:welearn-listening-part-2-001:start',
+    'nested',
+    'ielts-listening-release:welearn-listening-part-1-001:end',
+    'ielts-listening-release:welearn-listening-part-2-001:end',
+  ].join('\n')), /nested|crossed/i);
+  assert.throws(() => assertListeningReleaseMarkerStructure([
+    'ielts-listening-release:welearn-listening-part-1-001:start',
+    'ielts-listening-release:welearn-listening-part-1-001:end',
+  ].join('')), /empty.*block/i);
   assert.match(validate({ release: { ...release, status: 'pilot' }, editorialState: 'pilot' }).join('\n'), /release approval is pilot/i);
 });
 
 test('the real source is server-only and uses a dedicated original asset', () => {
   const source = fs.readFileSync(path.join(root, 'src/data/ielts/listening-part1-welearn-001.server.ts'), 'utf8');
+  const registry = fs.readFileSync(path.join(root, 'src/data/ielts/listening-practice-registry.server.ts'), 'utf8');
   const route = fs.readFileSync(path.join(root, 'src/app/api/practica/ielts/listening/score/route.ts'), 'utf8');
+  const scoreHandler = fs.readFileSync(path.join(root, 'src/lib/ielts/listening-score-route-contract.ts'), 'utf8');
+  const releaseGate = fs.readFileSync(path.join(root, 'scripts/check-ielts-listening-release.mjs'), 'utf8');
+  const sessionPage = fs.readFileSync(path.join(root, 'src/app/(site)/practica/ielts/listening/sesion/page.tsx'), 'utf8');
+  const sessionClient = fs.readFileSync(path.join(root, 'src/app/(site)/practica/ielts/listening/sesion/ListeningSession.tsx'), 'utf8');
   assert.match(source, /^import 'server-only';/);
+  assert.match(registry, /^import 'server-only';/);
+  assert.match(registry, /new Map<string, ValidatedServerPracticeRegistration>/);
+  assert.match(registry, /\['welearn-listening-part-1-001'/);
+  assert.match(registry, /registration\.identity\.id !== practiceId/);
+  assert.match(registry, /assertIeltsListeningRegistrationBundle/);
+  assert.match(registry, /assertIeltsListeningRegistryCatalog/);
+  assert.match(registry, /assertIeltsListeningScoringIdentity/);
+  assert.match(releaseGate, /spawnSync\(process\.execPath/);
+  assert.match(releaseGate, /check-ielts-listening-public-registry\.mjs/);
+  assert.match(releaseGate, /extractListeningReleaseBlocks/);
+  assert.doesNotMatch(registry, /import\s*\(|ielts-set-|data\/mocks|toefl|getMock/);
   assert.match(source, /welearn-listening-part-1-001\.mp3/);
   assert.doesNotMatch(source, /ielts-set-1|data\/mocks\/index|getMock|loadIeltsMock/);
-  assert.match(route, /Cache-Control.*private, no-store/);
-  assert.match(route, /X-Robots-Tag.*noindex, nofollow, noarchive/);
-  assert.doesNotMatch(route, /acceptedAnswers|transcript/);
-  assert.match(route, /getIeltsListeningPart1Identity/);
+  assert.match(scoreHandler, /Cache-Control.*private, no-store/);
+  assert.match(scoreHandler, /X-Robots-Tag.*noindex, nofollow, noarchive/);
+  assert.doesNotMatch(route + scoreHandler, /acceptedAnswers|transcript/);
+  assert.match(route, /getIeltsListeningScorer/);
+  assert.doesNotMatch(route, /getIeltsListeningPart1|listening-part1-welearn/);
   assert.doesNotMatch(route, /const CONTENT_VERSION/);
-  assert.match(route, /readBoundedJson\(request, MAX_BODY_BYTES\)/);
-  assert.doesNotMatch(route, /request\.json\(\)/);
+  assert.match(scoreHandler, /readBoundedJson\(request, MAX_BODY_BYTES\)/);
+  assert.doesNotMatch(route + scoreHandler, /request\.json\(\)/);
   assert.match(source, /'16th'/);
   assert.match(source, /'2\.5 hours'/);
   assert.match(source, /'44 pounds'/);
+  assert.match(sessionPage, /getIeltsListeningPracticeForSession/);
+  assert.match(sessionPage, /getIeltsListeningPracticeIdentityForSession/);
+  assert.doesNotMatch(sessionPage, /getIeltsListeningPart1|listening-part1-welearn/);
+  assert.equal(
+    ieltsListeningStorageKey({
+      id: 'welearn-listening-part-1-001',
+      contentVersion: '2026-09-01.1',
+      part: 1,
+    }),
+    'welearn:ielts:listening:part1:welearn-listening-part-1-001:2026-09-01.1',
+  );
+  assert.deepEqual(ieltsListeningPublicQuestionNumbers(projectIeltsListeningPractice(fixture, '/audio.mp3')), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  assert.match(sessionClient, /part-\$\{practice\.part\}/);
+  assert.doesNotMatch(sessionClient, /Part 1 guide|Listening Practice 001|Submit 10 answers|Complete all ten/);
+  const clientRegistryImports = listFilesRecursively(path.join(root, 'src'))
+    .filter((filePath) => /\.(?:ts|tsx)$/.test(filePath))
+    .filter((filePath) => fs.readFileSync(filePath, 'utf8').includes("'use client'"))
+    .filter((filePath) => fs.readFileSync(filePath, 'utf8').includes('listening-practice-registry.server'));
+  assert.deepEqual(clientRegistryImports, []);
 });
 
 test('indexable landings make truthful, non-cannibalizing search promises', () => {

@@ -2,6 +2,7 @@ export function validateListeningReleaseApproval({
   release,
   editorialState,
   publicFiles,
+  forbiddenApprovedLabels,
   releaseMode,
 }) {
   const failures = [];
@@ -19,8 +20,11 @@ export function validateListeningReleaseApproval({
       failures.push('Approved release has no valid approval timestamp.');
     }
 
+    const labels = Array.isArray(forbiddenApprovedLabels) ? forbiddenApprovedLabels : [];
     const lingeringPilotLabels = publicFiles
-      .filter(({ contents }) => /\bpilot\b|release-gated/i.test(contents))
+      .filter(({ contents }) =>
+        /\bpilot\b|release-gated/i.test(contents)
+        || labels.some((label) => contents.includes(label)))
       .map(({ path }) => path);
     if (lingeringPilotLabels.length) {
       failures.push(`Approved release still exposes pilot labels in: ${lingeringPilotLabels.join(', ')}.`);

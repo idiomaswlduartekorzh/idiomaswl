@@ -46,12 +46,19 @@
     "src/app/(site)/practica/ielts/listening/sesion/ListeningSession.tsx",
     "src/app/api/practica/ielts/listening/score/route.ts",
     "src/data/ielts/listening-part1-welearn-001.server.ts",
+    "src/data/ielts/listening-practice-registry.server.ts",
+    "config/ielts-listening-practices.json",
     "src/lib/http/read-bounded-json.ts",
     "src/lib/ielts/listening-practice-contract.ts",
+    "src/lib/ielts/listening-public-contract.ts",
+    "src/lib/ielts/listening-score-route-contract.ts",
+    "src/lib/ielts/listening-registry-contract.ts",
     "public/audio/ielts/listening/welearn-listening-part-1-001.mp3",
     "tests/ielts-listening-part1.test.mjs",
     "scripts/check-ielts-listening-release.mjs",
+    "scripts/check-ielts-listening-public-registry.mjs",
     "scripts/lib/ielts-listening-release-approval.mjs",
+    "scripts/lib/ielts-listening-release-scope.mjs",
     "scripts/generate-ielts-listening-part1-audio.mjs",
     "scripts/lib/render-ielts-piper-segments.py",
     "docs/ielts-superhub/originality/welearn-listening-part-1-001.json",
@@ -90,9 +97,17 @@
       "welearn-listening-part-1-001"
     ],
     "src/app/(site)/practica/ielts/listening/sesion/page.tsx": [
-      "robots: { index: false, follow: false",
+      "const ROBOTS = { index: false, follow: false, nocache: true }",
+      "robots: ROBOTS",
       "await searchParams",
-      "getIeltsListeningPart1Practice"
+      "getIeltsListeningPracticeForSession"
+    ],
+    "src/data/ielts/listening-practice-registry.server.ts": [
+      "import 'server-only'",
+      "welearn-listening-part-1-001",
+      "assertIeltsListeningRegistryEntries",
+      "assertIeltsListeningScoringIdentity",
+      "getIeltsListeningScorer"
     ],
     "src/data/ielts/listening-part1-welearn-001.server.ts": [
       "import 'server-only'",
@@ -105,6 +120,10 @@
       "CC BY 4.0"
     ],
     "src/app/api/practica/ielts/listening/score/route.ts": [
+      "createIeltsListeningScoreResponse",
+      "getIeltsListeningScorer"
+    ],
+    "src/lib/ielts/listening-score-route-contract.ts": [
       "private, no-store, max-age=0",
       "noindex, nofollow, noarchive",
       "validateIeltsListeningResponses"

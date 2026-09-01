@@ -11,6 +11,10 @@ import type {
   IeltsListeningPublicTableGroup,
   IeltsListeningScoreResult,
 } from '@/lib/ielts/listening-practice-contract';
+import {
+  ieltsListeningPublicQuestionNumbers,
+  ieltsListeningStorageKey,
+} from '@/lib/ielts/listening-public-contract';
 import styles from './ListeningSession.module.css';
 
 type Phase = 'active' | 'submitting' | 'review';
@@ -26,20 +30,10 @@ interface StoredAttempt {
   updatedAt: string;
 }
 
-const STORAGE_PREFIX = 'welearn:ielts:listening:part1:';
-
 function createAttemptId() {
   return typeof crypto !== 'undefined' && 'randomUUID' in crypto
     ? crypto.randomUUID()
     : `attempt-${Date.now()}-${Math.random().toString(16).slice(2)}`;
-}
-
-function responseNumbers(practice: IeltsListeningPublicPractice) {
-  return practice.groups.flatMap((group) =>
-    group.type === 'form'
-      ? group.blanks.map((blank) => blank.number)
-      : group.rows.flatMap((row) => row.flatMap((cell) => cell.type === 'blank' ? [cell.number] : [])),
-  ).sort((a, b) => a - b);
 }
 
 function AnswerInput({
@@ -149,8 +143,10 @@ function TableGroup({ group, responses, disabled, outcomes, onAnswer }: {
 }
 
 export default function ListeningSession({ practice }: { practice: IeltsListeningPublicPractice }) {
-  const numbers = useMemo(() => responseNumbers(practice), [practice]);
-  const storageKey = `${STORAGE_PREFIX}${practice.id}:${practice.contentVersion}`;
+  const numbers = useMemo(() => ieltsListeningPublicQuestionNumbers(practice), [practice]);
+  const practiceLabel = String(practice.practiceNumber).padStart(3, '0');
+  const guideHref = `/practica/ielts/listening/part-${practice.part}`;
+  const storageKey = ieltsListeningStorageKey(practice);
   const createdAt = useRef(new Date().toISOString());
   const [attemptId, setAttemptId] = useState(createAttemptId);
   const [responses, setResponses] = useState<Record<string, string>>({});
@@ -257,9 +253,9 @@ export default function ListeningSession({ practice }: { practice: IeltsListenin
   return (
     <div className={styles.page} lang="en">
       <div className={styles.shell}>
-        <nav className={styles.topNav} aria-label="Practice navigation"><Link href="/practica/ielts/listening/part-1"><ArrowLeft size={16} aria-hidden="true" /> Part 1 guide</Link><span>Practice 001 · {practice.contentVersion}</span></nav>
+        <nav className={styles.topNav} aria-label="Practice navigation"><Link href={guideHref}><ArrowLeft size={16} aria-hidden="true" /> Part {practice.part} guide</Link><span>Practice {practiceLabel} · {practice.contentVersion}</span></nav>
         <header className={styles.header}>
-          <div><p className={styles.eyebrow}><Headphones size={15} aria-hidden="true" /> Focused listening desk</p><h1>Listening Practice 001 — Part 1</h1><p>{practice.scenario}</p></div>
+          <div><p className={styles.eyebrow}><Headphones size={15} aria-hidden="true" /> Focused listening desk</p><h1>Listening Practice {practiceLabel} — Part {practice.part}</h1><p>{practice.scenario}</p></div>
           <div className={styles.progress} aria-label={`${answered} of ${practice.questionCount} answers complete`}><strong>{answered}/{practice.questionCount}</strong><span>answers recorded</span><div><i style={{ width: `${(answered / practice.questionCount) * 100}%` }} /></div></div>
         </header>
 
@@ -298,8 +294,8 @@ export default function ListeningSession({ practice }: { practice: IeltsListenin
         )}
 
         <footer className={styles.submitBar} aria-live="polite">
-          <div>{phase === 'review' && result ? <><strong>{result.correct}/{result.total} correct</strong><span>{result.disclosure}</span></> : <><strong>{complete ? 'All answers recorded' : `${practice.questionCount - answered} answer${practice.questionCount - answered === 1 ? '' : 's'} remaining`}</strong><span>Complete all ten fields before submitting this attempt.</span></>}</div>
-          <div className={styles.submitActions}>{phase === 'review' ? <><Link href="/practica/ielts/listening/part-1">Review the method</Link><button type="button" onClick={retry}><RotateCcw size={16} aria-hidden="true" /> New attempt</button></> : <button type="button" disabled={!complete || phase === 'submitting' || audioError} onClick={submit}><Send size={16} aria-hidden="true" /> {phase === 'submitting' ? 'Scoring…' : 'Submit 10 answers'}</button>}</div>
+          <div>{phase === 'review' && result ? <><strong>{result.correct}/{result.total} correct</strong><span>{result.disclosure}</span></> : <><strong>{complete ? 'All answers recorded' : `${practice.questionCount - answered} answer${practice.questionCount - answered === 1 ? '' : 's'} remaining`}</strong><span>Complete all {practice.questionCount} fields before submitting this attempt.</span></>}</div>
+          <div className={styles.submitActions}>{phase === 'review' ? <><Link href={guideHref}>Review the method</Link><button type="button" onClick={retry}><RotateCcw size={16} aria-hidden="true" /> New attempt</button></> : <button type="button" disabled={!complete || phase === 'submitting' || audioError} onClick={submit}><Send size={16} aria-hidden="true" /> {phase === 'submitting' ? 'Scoring…' : `Submit ${practice.questionCount} answers`}</button>}</div>
         </footer>
         {error && <p className={styles.error} role="alert">{error}</p>}
 

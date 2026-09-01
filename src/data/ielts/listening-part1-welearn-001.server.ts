@@ -11,6 +11,8 @@ import {
 const SOURCE: IeltsListeningPracticeSource = {
   id: 'welearn-listening-part-1-001',
   contentVersion: '2026-09-01.1',
+  part: 1,
+  practiceNumber: 1,
   title: 'Harbour City Photography Walk',
   scenario: 'A customer calls a local studio to book a guided photography walk.',
   instructions: 'Listen and answer Questions 1–10. You may replay the recording in this WeLearn practice mode.',
@@ -125,7 +127,12 @@ export function getIeltsListeningPart1Practice() {
 }
 
 export function getIeltsListeningPart1Identity() {
-  return { id: SOURCE.id, contentVersion: SOURCE.contentVersion } as const;
+  return {
+    id: SOURCE.id,
+    contentVersion: SOURCE.contentVersion,
+    part: SOURCE.part,
+    practiceNumber: SOURCE.practiceNumber,
+  } as const;
 }
 
 export function getIeltsListeningPart1QuestionNumbers() {
@@ -134,4 +141,11 @@ export function getIeltsListeningPart1QuestionNumbers() {
 
 export function scoreIeltsListeningPart1Practice(responses: Readonly<Record<string, string>>) {
   return scoreIeltsListeningPractice(SOURCE, responses);
+}
+
+export function scoreIeltsListeningPart1Registration(responses: Readonly<Record<string, string>>) {
+  return {
+    identity: getIeltsListeningPart1Identity(),
+    result: scoreIeltsListeningPart1Practice(responses),
+  } as const;
 }

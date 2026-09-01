@@ -6,7 +6,9 @@ import { BreadcrumbJsonLd, JsonLd } from '@/components/exam-practice/StructuredD
 import styles from '../ListeningHub.module.css';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/listening/part-1';
+// ielts-listening-release:welearn-listening-part-1-001:start
 const SESSION_URL = '/practica/ielts/listening/sesion?practice=welearn-listening-part-1-001&part=1';
+// ielts-listening-release:welearn-listening-part-1-001:end
 const IELTS_FORMAT_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening';
 const PIPER_MODEL_CARD_URL = 'https://huggingface.co/rhasspy/piper-voices/blob/39ab474be869e9181350af6a65e4953eef67aaa0/en/en_GB/vctk/medium/MODEL_CARD';
 const CC_BY_URL = 'https://creativecommons.org/licenses/by/4.0/';
