@@ -345,6 +345,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Practice — TOEFL ──────────────────────────────────────────────────────
     { url: `${BASE}/practica/toefl`, changeFrequency: 'weekly'  as const, priority: 0.84 },
+    { url: `${BASE}/practica/toefl/ejercicios`, changeFrequency: 'weekly' as const, priority: 0.82 },
     { url: `${BASE}/practica/toefl/reading`, changeFrequency: 'weekly'  as const, priority: 0.78 },
     { url: `${BASE}/practica/toefl/reading/tipos-de-preguntas`, changeFrequency: 'weekly'  as const, priority: 0.76 },
     { url: `${BASE}/practica/toefl/listening`, changeFrequency: 'weekly'  as const, priority: 0.78 },

@@ -16,7 +16,7 @@ interface ExamEntry {
 
 const EXAMS: ExamEntry[] = [
   { slug: 'ielts',  flag: '🇬🇧', name: 'IELTS Academic', tagline: 'Reading T/F/NG · Writing Task 1 y Task 2 · Feedback inmediato — Band 6–8.',          color: 'var(--wl-on-panel-link, #0f3d8c)', href: '/practica/ielts',         tools: '3 tipos de ejercicio' },
-  { slug: 'toefl',  flag: '🇺🇸', name: 'TOEFL iBT',      tagline: 'Lectura académica con opción múltiple y explicaciones detalladas — Nivel B2–C1.',    color: 'var(--wl-on-panel-link, #1a4fcc)', href: '/practica/toefl',         tools: '1 pasaje · 6 preguntas'  },
+  { slug: 'toefl',  flag: '🇺🇸', name: 'TOEFL iBT',      tagline: 'Ejercicios por tipo, rutas guiadas en desarrollo y simulacros completos de Reading, Listening, Writing y Speaking.', color: 'var(--wl-on-panel-link, #1a4fcc)', href: '/practica/toefl', tools: '12 tipos · 20 simulacros' },
   { slug: 'icfes',  flag: '🇨🇴', name: 'ICFES Saber 11', tagline: 'Gramática, conectores, sinónimos, inferencia, ruta adaptativa y cuadernillos oficiales.',       color: 'var(--wl-on-panel-alert, #dc2626)', href: '/practica/icfes-saber-11', tools: 'Gramática + Simulacros' },
 ];
 

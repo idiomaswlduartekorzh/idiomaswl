@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Brain, MessageSquareText, Target } from 'lucide-react';
 import AcademicDiscussionWorkbench from '@/components/exam-practice/AcademicDiscussionWorkbench';
 import TimedWritingTask from '@/components/toefl/TimedWritingTask';
+import ToeflExerciseReturnLinks from '@/components/toefl/ToeflExerciseReturnLinks';
 import { getToeflWritingConstructedTask } from '@/data/toefl/writing-constructed-set-1';
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import {
@@ -46,6 +47,7 @@ export default function Page() {
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
           { name: 'TOEFL', url: `${PRACTICE_BASE_URL}/practica/toefl` },
+          { name: 'Ejercicios', url: `${PRACTICE_BASE_URL}/practica/toefl/ejercicios` },
           { name: 'Writing', url: `${PRACTICE_BASE_URL}/practica/toefl/writing` },
           { name: 'Academic Discussion', url: URL },
         ]}
@@ -57,6 +59,8 @@ export default function Page() {
             <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
             <span>/</span>
             <Link href="/practica/toefl" style={{ color: 'var(--muted)', textDecoration: 'none' }}>TOEFL</Link>
+            <span>/</span>
+            <Link href="/practica/toefl/ejercicios#writing" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Ejercicios</Link>
             <span>/</span>
             <Link href="/practica/toefl/writing" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Writing</Link>
             <span>/</span>
@@ -184,6 +188,7 @@ export default function Page() {
               ))}
             </div>
           </section>
+          <ToeflExerciseReturnLinks section="writing" />
         </div>
       </section>
     </>

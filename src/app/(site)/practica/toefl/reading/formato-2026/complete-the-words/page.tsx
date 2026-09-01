@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { BreadcrumbJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
+import ToeflExerciseReturnLinks from '@/components/toefl/ToeflExerciseReturnLinks';
 import {
   PRACTICE_BASE_URL,
   TOEFL_READING_CURRENT_FORMAT,
@@ -40,6 +41,7 @@ export default function Page() {
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
           { name: 'TOEFL', url: `${PRACTICE_BASE_URL}/practica/toefl` },
+          { name: 'Ejercicios', url: `${PRACTICE_BASE_URL}/practica/toefl/ejercicios` },
           { name: 'Reading', url: `${PRACTICE_BASE_URL}/practica/toefl/reading` },
           { name: 'Formato actual', url: `${PRACTICE_BASE_URL}/practica/toefl/reading/formato-2026` },
           { name: 'Complete the Words', url: URL },
@@ -49,6 +51,8 @@ export default function Page() {
       <section className="wl-section">
         <div className="wrap exam-practice-wrap" style={{ width: '100%', maxWidth: 1040, minWidth: 0, overflowX: 'clip' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem', fontSize: '0.82rem', fontFamily: 'var(--mono)', color: 'var(--muted)', flexWrap: 'wrap' }}>
+            <Link href="/practica/toefl/ejercicios#reading" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Ejercicios</Link>
+            <span>/</span>
             <Link href="/practica/toefl/reading/formato-2026" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Formato actual</Link>
             <span>/</span>
             <span style={{ color: 'var(--ink)', fontWeight: 800 }}>Complete the Words</span>
@@ -91,6 +95,7 @@ export default function Page() {
               <Link href="/practica/toefl/reading/formato-2026" className="btn btn-ghost btn-sm">Volver al formato actual</Link>
             </div>
           </section>
+          <ToeflExerciseReturnLinks section="reading" />
         </div>
       </section>
     </>
