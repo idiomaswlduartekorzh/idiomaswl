@@ -3,7 +3,7 @@
   "gateId": "HR-03",
   "initiative": "toefl-sectional-seo-curation-harness",
   "status": "pending-human-review",
-  "generatedAtUtc": "2026-09-01T04:35:38Z",
+  "generatedAtUtc": "2026-09-01T04:53:14Z",
   "baseCommitSha": "5cfbfec1",
   "approvedInputs": [
     {
@@ -27,6 +27,11 @@
       "kind": "code-interconnection-audit-draft",
       "path": "docs/toefl-sectional-hr03-code-audit-draft.md",
       "sha256": "df9e6e86637ffdeb6f8be5640acfd09ffa6af77c333bdeddd76e2a9c0592dae2"
+    },
+    {
+      "kind": "seo-geo-ai-url-ownership-draft",
+      "path": "docs/toefl-sectional-hr03-seo-ownership-draft.md",
+      "sha256": "a42e68bd93b632bf20c30fcb570e3f9a116b88844d25e41542c3b244718c0264"
     }
   ],
   "routeAudit": {
@@ -55,7 +60,9 @@
     "non-linked-unavailable-listening-speaking-tasks",
     "mock-result-return-to-exercise-catalog",
     "editorial-exercises-parent-in-breadcrumbs-without-url-migration",
-    "bidirectional-links-between-practice-and-mocks"
+    "bidirectional-links-between-practice-and-mocks",
+    "indexing-treatment-for-historical-reading-question-types-and-integrated-writing",
+    "differentiated-writing-card-copy"
   ],
   "technicalFindings": [
     "The existing mock inventory anchor is #practica; #simulacros does not exist.",
