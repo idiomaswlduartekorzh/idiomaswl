@@ -148,6 +148,44 @@
       ],
       "independentReview": false,
       "notes": "Aprobación humana explícita recibida con el texto 'HR-05 aprobado.'. Se registra como aprobación ejecutiva del gate completo por David Duarte, CEO, con la identidad y fecha comunicadas previamente. No se infiere que el cargo de CEO sustituya las atestaciones específicas de QA humano, ingeniería y académico exigidas por el harness. Hasta registrar esos alcances con sus revisores, HR-05 no se considera cerrado y no habilita HR-06. C09 continúa bloqueado; tampoco se autoriza integración en main, despliegue ni release."
+    },
+    {
+      "gateId": "HR-05-QA-ENGINEERING",
+      "reviewer": "David Duarte",
+      "role": "chief-executive-officer-acting-as-qa-and-engineering-reviewer",
+      "decision": "approved_with_notes",
+      "reviewedAtUtc": "2026-09-01T17:03:32Z",
+      "commitSha": "758966144efd4e593e4888b9e9a77a83c897f629",
+      "contentDigest": "0bff855bc408508dc9c1d08fdaadbe5dc18da1d6e1603b54f2f751c27ef38708",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr05-review-packet.md",
+        "docs/toefl-sectional-hr05-evidence.json",
+        "docs/prototypes/screenshots/hr05-library-desktop.png",
+        "docs/prototypes/screenshots/hr05-library-mobile.png",
+        "docs/prototypes/screenshots/hr05-runner-intro-desktop.png",
+        "docs/prototypes/screenshots/hr05-runner-step1-mobile.png"
+      ],
+      "independentReview": false,
+      "notes": "Aprobación humana explícita recibida con el texto 'David Duarte aprueba QA e ingeniería; Zhanna Korzh aprueba académico. C09 sigue bloqueado.'. David Duarte cubre conjuntamente QA humano e ingeniería; se registra la falta de independencia entre ambos alcances y su rol ejecutivo. Se acepta para este preview la deuda de build documentada, que continúa siendo obligatoria antes de integrar. Esta decisión no autoriza integración en main, despliegue ni release."
+    },
+    {
+      "gateId": "HR-05",
+      "reviewer": "Zhanna Korzh",
+      "role": "academic-director",
+      "decision": "approved_with_notes",
+      "reviewedAtUtc": "2026-09-01T17:03:32Z",
+      "commitSha": "758966144efd4e593e4888b9e9a77a83c897f629",
+      "contentDigest": "0bff855bc408508dc9c1d08fdaadbe5dc18da1d6e1603b54f2f751c27ef38708",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr05-review-packet.md",
+        "docs/toefl-sectional-hr05-evidence.json",
+        "docs/prototypes/screenshots/hr05-library-desktop.png",
+        "docs/prototypes/screenshots/hr05-library-mobile.png",
+        "docs/prototypes/screenshots/hr05-runner-intro-desktop.png",
+        "docs/prototypes/screenshots/hr05-runner-step1-mobile.png"
+      ],
+      "independentReview": true,
+      "notes": "Aprobación académica explícita comunicada con el texto 'David Duarte aprueba QA e ingeniería; Zhanna Korzh aprueba académico. C09 sigue bloqueado.'. En combinación con HR-05-QA-ENGINEERING, esta decisión cierra HR-05 y habilita la preparación de HR-06. C09 conserva el bloqueo académico: no se publican tiempos ni conteos como hechos del formato oficial. La deuda de build permanece obligatoria antes de integrar. No se autoriza integración en main, despliegue ni release."
     }
   ]
 }
