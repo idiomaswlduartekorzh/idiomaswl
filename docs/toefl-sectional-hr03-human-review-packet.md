@@ -86,6 +86,10 @@ Mientras se decide, permanecen explícitas como habilidades compatibles/legacy y
 
 `check:exam-practice-content` tiene 12 fallos preexistentes y no corre en `prebuild`. No se bajan controles. La implementación deberá reparar o aislar con dueño esos fallos antes de convertir el check en requisito obligatorio.
 
+### D10 — reconciliación con `main`
+
+La rama quedó 85 commits detrás de `origin/main` durante el loop nocturno. La comparación no encontró cambios upstream en los archivos TOEFL/producto/registros auditados, por lo que el paquete HR-03 sigue siendo evaluable. Aun así, antes de modificar producto se debe rebasar o integrar `origin/main` y repetir la auditoría; no se implementa sobre esta base antigua.
+
 ## Evidencia disponible
 
 - `docs/toefl-sectional-hr03-interconnection.md`
@@ -99,6 +103,6 @@ Mientras se decide, permanecen explícitas como habilidades compatibles/legacy y
 
 Una aprobación inequívoca puede expresarse así:
 
-> Apruebo HR-03: D1–D6. D7 queda para revisión SEO/académica; D8 bloquea claims de HR-04 hasta revalidación; D9 se conserva como deuda visible sin bajar controles.
+> Apruebo HR-03: D1–D6. D7 queda para revisión SEO/académica; D8 bloquea claims de HR-04 hasta revalidación; D9 se conserva como deuda visible sin bajar controles; D10 exige reconciliar con main antes de implementar.
 
 La aprobación del dueño de producto no sustituye revisiones independientes de SEO, UX o academia. Si una persona cubre varios roles, el review log debe conservar esa falta de independencia.

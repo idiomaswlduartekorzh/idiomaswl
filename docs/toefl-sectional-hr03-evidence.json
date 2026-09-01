@@ -3,7 +3,7 @@
   "gateId": "HR-03",
   "initiative": "toefl-sectional-seo-curation-harness",
   "status": "pending-human-review",
-  "generatedAtUtc": "2026-09-01T05:50:47Z",
+  "generatedAtUtc": "2026-09-01T06:09:49Z",
   "baseCommitSha": "5cfbfec1",
   "approvedInputs": [
     {
@@ -46,7 +46,7 @@
     {
       "kind": "human-review-decision-packet",
       "path": "docs/toefl-sectional-hr03-human-review-packet.md",
-      "sha256": "3cb5cb7dd600dc7399664ba9940275a683a3c9d4c67fafa6480384ee3904791f"
+      "sha256": "f64f79fe62d6d705236a067103fa4fda2f22ec72bc2852f52cb1e54ab516592a"
     }
   ],
   "routeAudit": {
@@ -69,6 +69,16 @@
     "currentExplicitSitemapEntriesObserved": 11,
     "mockInventoryAnchorObserved": "#practica",
     "missingConceptualAnchorObserved": "#simulacros"
+  },
+  "upstreamAudit": {
+    "checkedAtUtc": "2026-09-01T06:09:49Z",
+    "branchHeadBeforeAudit": "17081277049022cac0b5d3d73734d2656b94bcb6",
+    "mergeBase": "063873b1ae9804e130e6d5819691a0d104f9dd99",
+    "originMainHead": "8350ddf1a5a5a4e4f6345da2717a7bb7e0f1e4d3",
+    "originMainCommitsAhead": 85,
+    "branchCommitsAhead": 11,
+    "scopedProductOrRegistryFilesChangedUpstream": 0,
+    "requiredBeforeImplementation": "Rebase or merge origin/main after HR-03 approval and rerun the scoped audit before changing product code."
   },
   "humanDecisionRequired": [
     "hub-catalog-section-task-relationship",
@@ -95,6 +105,7 @@
     "No production pages or routes were changed.",
     "The zero-orphan result applies to the proposed TOEFL flow, not to a full crawl of the deployed site.",
     "Mock-result deep-linking by error type remains deferred until a reliable error classification contract exists.",
-    "Independent SEO and UX reviewers have not been recorded."
+    "Independent SEO and UX reviewers have not been recorded.",
+    "The branch is 85 commits behind origin/main; no scoped TOEFL product or registry files changed in those commits, but reconciliation remains mandatory before implementation."
   ]
 }
