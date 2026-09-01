@@ -115,6 +115,24 @@
       ],
       "independentReview": false,
       "notes": "Aprobación humana explícita recibida con los textos 'Está aprobado la renderización y la revisión SEO' y 'Yo aprobe rederizacion y SEO david duarte'. David Duarte cubre en esta decisión la renderización y SEO/editorial; se registra la falta de independencia entre producto y SEO. No se atribuye a Zhanna Korzh una revisión académica de la plantilla renderizada que no fue comunicada. HR-04 conserva pendiente únicamente esa revisión académica de copy/IU; C09 sigue bloqueado y esta aprobación no autoriza HR-05, integración ni release."
+    },
+    {
+      "gateId": "HR-04",
+      "reviewer": "Zhanna Korzh",
+      "role": "academic-director",
+      "decision": "approved_with_notes",
+      "reviewedAtUtc": "2026-09-01T15:56:46Z",
+      "commitSha": "53e0539825030f42751dd8376e6f620d96b746b9",
+      "contentDigest": "3f6c9f2e61c23173eeb7d9cf1865b5b7cf506870c3aa3379d4f0fdc60225fbec",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr04-implementation-review-packet.md",
+        "docs/toefl-sectional-hr04-implementation-evidence.json",
+        "docs/prototypes/screenshots/hr04-hub-desktop.png",
+        "docs/prototypes/screenshots/hr04-catalog-desktop.png",
+        "docs/prototypes/screenshots/hr04-catalog-mobile.png"
+      ],
+      "independentReview": true,
+      "notes": "Aprobación académica explícita comunicada con el texto 'Zhanna Korzh aprueba la plantilla HR-04 renderizada. C09 continúa bloqueado.'. En combinación con HR-04-UI-SEO, esta decisión cierra HR-04 y habilita la preparación del piloto funcional HR-05. C09 conserva el bloqueo académico: no se publican conteos ni tiempos oficiales. Esta aprobación no autoriza integración en main, despliegue, release ni el cruce de HR-05 sin su propia revisión humana."
     }
   ]
 }
