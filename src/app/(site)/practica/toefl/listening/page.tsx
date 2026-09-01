@@ -85,6 +85,8 @@ export default function ToeflListeningPage() {
       weLearnSummary="Veinte recorridos de las cuatro secciones con audios originales, preguntas objetivas y una estructura fija que permite comparar el mismo tipo de exigencia entre intentos."
       officialUrl="https://www.ets.org/toefl/test-takers/ibt/about/content/listening.html"
       faqs={[...faqs]}
+      practiceHref="/practica/toefl/listening/simulacros"
+      practiceLabel="Practicar Listening por secciones"
     />
   );
 }

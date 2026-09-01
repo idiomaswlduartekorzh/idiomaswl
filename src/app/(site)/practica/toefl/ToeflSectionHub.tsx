@@ -30,6 +30,8 @@ type Props = {
   weLearnSummary: string;
   officialUrl: string;
   faqs: ToeflSectionFaq[];
+  practiceHref?: string;
+  practiceLabel?: string;
 };
 
 export default function ToeflSectionHub({
@@ -44,6 +46,8 @@ export default function ToeflSectionHub({
   weLearnSummary,
   officialUrl,
   faqs,
+  practiceHref = '/examenes/toefl#practica',
+  practiceLabel = 'Elegir un simulacro TOEFL',
 }: Props) {
   return (
     <>
@@ -138,7 +142,7 @@ export default function ToeflSectionHub({
                 {practiceSteps.map((step) => <li key={step}>{step}</li>)}
               </ol>
               <div className={styles.actionRow}>
-                <Link href="/examenes/toefl#practica" className="btn">Elegir un simulacro TOEFL</Link>
+                <Link href={practiceHref} className="btn">{practiceLabel}</Link>
                 <Link href="/practica/toefl/ejercicios" className="btn btn-ghost">Volver a los 12 tipos de ejercicio</Link>
               </div>
             </div>

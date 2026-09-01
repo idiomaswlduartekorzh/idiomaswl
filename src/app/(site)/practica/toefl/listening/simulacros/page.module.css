@@ -1,0 +1,361 @@
+.page {
+  --navy: #102e6f;
+  --teal: #176b87;
+  --green: #18794e;
+  --red: #b42332;
+  color: var(--ink);
+  background: #f7f8fc;
+}
+
+.hero {
+  padding: clamp(2rem, 5vw, 5rem) 0 3rem;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgb(16 46 111 / 98%), rgb(11 80 113 / 96%)),
+    repeating-linear-gradient(90deg, transparent 0 79px, rgb(255 255 255 / 8%) 80px);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  margin-bottom: 2.3rem;
+  color: rgb(255 255 255 / 72%);
+  font-size: 0.78rem;
+}
+
+.breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(250px, 0.55fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: end;
+}
+
+.kicker,
+.sectionHeading > p {
+  margin: 0 0 0.8rem;
+  color: #ff9ca7;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 820px;
+  margin: 0;
+  font-size: clamp(2.6rem, 6vw, 5.8rem);
+  font-weight: 520;
+  letter-spacing: -0.065em;
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.lead {
+  max-width: 760px;
+  margin: 1.4rem 0 0;
+  color: rgb(255 255 255 / 82%);
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.7;
+}
+
+.scopeNote {
+  padding: 1.25rem;
+  border-left: 3px solid #56c4d9;
+  background: rgb(255 255 255 / 8%);
+}
+
+.scopeNote svg {
+  width: 24px;
+  color: #8ce3ef;
+}
+
+.scopeNote strong {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.scopeNote p {
+  margin: 0.45rem 0 0;
+  color: rgb(255 255 255 / 72%);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.library {
+  padding: clamp(3rem, 7vw, 6rem) 0;
+}
+
+.sectionHeading {
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+.sectionHeading > p,
+.faq .kicker {
+  color: var(--red);
+}
+
+.sectionHeading h2,
+.faq h2 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(2rem, 4.4vw, 3.8rem);
+  font-weight: 520;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  scroll-margin-top: 6rem;
+  text-wrap: balance;
+}
+
+.sectionHeading > span {
+  display: block;
+  margin-top: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.setCard {
+  overflow: hidden;
+  border: 1px solid #d9deea;
+  border-top: 4px solid var(--teal);
+  background: #fff;
+  box-shadow: 0 24px 60px rgb(16 46 111 / 8%);
+}
+
+.setIdentity {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border-bottom: 1px solid #e1e5ee;
+}
+
+.setIcon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  color: var(--teal);
+  background: #e7f5f8;
+}
+
+.setIdentity p,
+.setIdentity h3 {
+  margin: 0;
+}
+
+.setIdentity p {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.setIdentity h3 {
+  margin-top: 0.2rem;
+  color: var(--navy);
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
+}
+
+.status {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid #7dc4a4;
+  border-radius: 999px;
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 0.67rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.setCard ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.setCard li {
+  padding: 1.1rem clamp(1.2rem, 3vw, 2rem);
+  border-bottom: 1px solid #e1e5ee;
+  color: #28334a;
+  font-weight: 720;
+}
+
+.setCard li:nth-child(odd) {
+  border-right: 1px solid #e1e5ee;
+}
+
+.setFooter {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.setFooter p {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.setFooter p svg {
+  width: 18px;
+  color: var(--green);
+}
+
+.setFooter a {
+  display: inline-flex;
+  min-height: 48px;
+  gap: 0.55rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.05rem;
+  color: #fff;
+  background: var(--teal);
+  font-weight: 850;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.setFooter a svg {
+  width: 18px;
+}
+
+.setFooter a:focus-visible,
+.breadcrumb a:focus-visible {
+  outline: 3px solid #f2a900;
+  outline-offset: 3px;
+}
+
+.setFooter a:hover {
+  background: var(--navy);
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.nextSets {
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid #aab4c8;
+  color: var(--muted);
+  background: #eef1f7;
+}
+
+.nextSets strong {
+  color: var(--navy);
+}
+
+.nextSets p {
+  margin: 0.3rem 0 0;
+  line-height: 1.6;
+}
+
+.faq {
+  padding: clamp(3rem, 7vw, 6rem) 0;
+  border-top: 1px solid #dfe3ed;
+  background: #fff;
+}
+
+.faq > div > div {
+  margin-top: 2rem;
+  border-top: 1px solid #dfe3ed;
+}
+
+.faq details {
+  border-bottom: 1px solid #dfe3ed;
+}
+
+.faq summary {
+  padding: 1rem 0;
+  color: #202b42;
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.faq summary:hover {
+  color: var(--teal);
+}
+
+.faq summary:focus-visible {
+  outline: 3px solid #f2a900;
+  outline-offset: 3px;
+}
+
+.faq details p {
+  max-width: 760px;
+  margin: 0 0 1rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+@media (min-width: 761px) {
+  .setIdentity {
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHeading {
+    padding-right: 3.75rem;
+  }
+
+  .setIdentity {
+    grid-template-columns: auto 1fr;
+  }
+
+  .status {
+    grid-column: 1 / -1;
+    width: fit-content;
+  }
+
+  .setCard ul {
+    grid-template-columns: 1fr;
+  }
+
+  .setCard li:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .setFooter {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .setFooter a {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page *,
+  .page *::before,
+  .page *::after {
+    scroll-behavior: auto !important;
+  }
+}
