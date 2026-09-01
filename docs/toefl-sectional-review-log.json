@@ -101,7 +101,7 @@
     {
       "gateId": "HR-04-UI-SEO",
       "reviewer": "David Duarte",
-      "role": "product-owner-final-decision-authority-and-seo-editorial-reviewer",
+      "role": "chief-executive-officer-and-seo-editorial-reviewer",
       "decision": "approved",
       "reviewedAtUtc": "2026-09-01T15:53:36Z",
       "commitSha": "53e0539825030f42751dd8376e6f620d96b746b9",
@@ -114,7 +114,7 @@
         "docs/prototypes/screenshots/hr04-catalog-mobile.png"
       ],
       "independentReview": false,
-      "notes": "Aprobación humana explícita recibida con los textos 'Está aprobado la renderización y la revisión SEO' y 'Yo aprobe rederizacion y SEO david duarte'. David Duarte cubre en esta decisión la renderización y SEO/editorial; se registra la falta de independencia entre producto y SEO. No se atribuye a Zhanna Korzh una revisión académica de la plantilla renderizada que no fue comunicada. HR-04 conserva pendiente únicamente esa revisión académica de copy/IU; C09 sigue bloqueado y esta aprobación no autoriza HR-05, integración ni release."
+      "notes": "Aprobación humana explícita recibida con los textos 'Está aprobado la renderización y la revisión SEO' y 'Yo aprobe rederizacion y SEO david duarte'. La identidad y fecha fueron completadas posteriormente como 'David Duarte - CEO - 1 sep 2026'. David Duarte cubre en esta decisión la renderización y SEO/editorial; se registra la falta de independencia entre dirección ejecutiva y SEO. El audio adjunto 'Carrera 38A 3.m4a' no contiene una decisión sobre TOEFL y no se usa como evidencia de aprobación. No se atribuye a Zhanna Korzh una revisión académica de la plantilla renderizada que no fue comunicada. HR-04 conserva pendiente únicamente esa revisión académica de copy/IU; C09 sigue bloqueado y esta aprobación no autoriza HR-05, integración ni release."
     },
     {
       "gateId": "HR-04",
