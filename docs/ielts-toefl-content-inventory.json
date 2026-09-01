@@ -236,6 +236,35 @@
       ]
     },
     {
+      "id": "toefl-sectional-exercise-catalog",
+      "exam": "toefl",
+      "section": "multi-skill",
+      "route": "/practica/toefl/ejercicios",
+      "status": "release-candidate",
+      "liveRoutes": [
+        "/practica/toefl/reading/formato-2026/complete-the-words",
+        "/practica/toefl/reading/formato-2026/read-in-daily-life",
+        "/practica/toefl/reading/formato-2026/read-an-academic-passage",
+        "/practica/toefl/writing/build-a-sentence",
+        "/practica/toefl/writing/write-an-email",
+        "/practica/toefl/writing/academic-discussion"
+      ],
+      "mockOnlyTaskFamilies": [
+        "Listen and Choose a Response",
+        "Listen to a Conversation",
+        "Listen to an Announcement",
+        "Listen to an Academic Talk",
+        "Listen and Repeat",
+        "Take an Interview"
+      ],
+      "plannedRoutes": [],
+      "qualityGaps": [
+        "individual Listening and Speaking runners remain gated",
+        "Complete the Words keeps its visible check:exam-practice-content debt until repaired without lowering controls",
+        "release-candidate must be changed to live only after merge, deployment and production verification"
+      ]
+    },
+    {
       "id": "toefl-writing-current",
       "exam": "toefl",
       "section": "writing",
