@@ -3,7 +3,7 @@
   "gateId": "HR-03",
   "initiative": "toefl-sectional-seo-curation-harness",
   "status": "pending-human-review",
-  "generatedAtUtc": "2026-09-01T04:53:14Z",
+  "generatedAtUtc": "2026-09-01T05:12:29Z",
   "baseCommitSha": "5cfbfec1",
   "approvedInputs": [
     {
@@ -31,7 +31,12 @@
     {
       "kind": "seo-geo-ai-url-ownership-draft",
       "path": "docs/toefl-sectional-hr03-seo-ownership-draft.md",
-      "sha256": "a42e68bd93b632bf20c30fcb570e3f9a116b88844d25e41542c3b244718c0264"
+      "sha256": "e472544b162b1902006f5d5fe11e820d0ae034d25e7fb18200c1cb95541c9ab8"
+    },
+    {
+      "kind": "test-and-guardian-contract-draft",
+      "path": "docs/toefl-sectional-hr03-test-contract-draft.md",
+      "sha256": "8393dd54271414f1a5254a8b5505ad70969ea266f7154fa64ce25ae00478ddce"
     }
   ],
   "routeAudit": {
@@ -68,7 +73,10 @@
     "The existing mock inventory anchor is #practica; #simulacros does not exist.",
     "Both the immediate result and the private paid report currently lack a return link to exercise practice.",
     "Write an Email and Academic Discussion open editorial guides before their prompt banks; catalog copy must make that interaction depth explicit.",
-    "TOEFLHubClient.tsx appears unreferenced and is reserved as a DELETE-CANDIDATE for HR-08, not removed now."
+    "TOEFLHubClient.tsx appears unreferenced and is reserved as a DELETE-CANDIDATE for HR-08, not removed now.",
+    "The existing check:exam-practice-content guard currently fails with 12 pre-existing findings and is not part of prebuild.",
+    "The existing IELTS/TOEFL route map, content inventory, keyword map and SEO catalog are the permanent sources to reconcile after approval; HR-03 annexes are not parallel registries.",
+    "seleccion-de-palabras-contexto appears in the route map and SEO catalog but is absent from the Reading inventory cluster and keyword map."
   ],
   "limitations": [
     "No production pages or routes were changed.",
