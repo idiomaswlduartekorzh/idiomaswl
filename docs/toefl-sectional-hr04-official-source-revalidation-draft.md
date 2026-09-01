@@ -2,6 +2,7 @@
 
 > Estado: **PENDIENTE DE REVISIÓN ACADÉMICA HUMANA**  
 > Fecha de consulta: 2026-09-01  
+> Revisora académica designada: **Zhanna Korzh** — decisión pendiente
 > Alcance: claims editoriales del hub y catálogo de ejercicios; no autoriza implementación, publicación ni equivalencia con ETS.  
 > Gate: D8 permanece bloqueante hasta que D7 registre una revisión académica humana identificada.
 
@@ -75,9 +76,8 @@ Este copy es un borrador de curaduría. No se incorpora a producto hasta la deci
 
 ## 7. Decisión humana necesaria
 
-El revisor académico debe registrar nombre, rol, fecha, SHA/digest revisado y una decisión explícita sobre C01–C10. Puede aprobar C01–C08 y C10 dejando C09 bloqueado. Sin ese registro:
+Zhanna Korzh es la revisora académica designada. Su designación no constituye aprobación: todavía debe registrar rol, fecha, SHA/digest revisado y una decisión explícita sobre C01–C10. Puede aprobar C01–C08 y C10 dejando C09 bloqueado. Sin esa decisión:
 
 - HR-04 permanece `pending-human-review`;
 - no se restaurará `docs/toefl-ibt-2026-official-format.md` como registro normativo;
 - no se implementarán claims sensibles ni se cruzará el gate editorial.
-

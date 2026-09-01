@@ -5,9 +5,23 @@
   "status": "pending-academic-human-review",
   "generatedAtUtc": "2026-09-01T12:57:59Z",
   "branchCommitBeforeArtifact": "0f653222b2bb0e6c6f314617598c076774c5c2ec",
+  "academicReviewerAssignment": {
+    "reviewer": "Zhanna Korzh",
+    "role": "academic-reviewer",
+    "assignedAtUtc": "2026-09-01T14:07:11Z",
+    "assignedBy": "Jose David Duarte Silva",
+    "assignmentSource": "Explicit user instruction: 'Zhanna Korzh es la revisora'.",
+    "decisionStatus": "pending",
+    "approvalImpliedByAssignment": false,
+    "scope": [
+      "D7",
+      "D8",
+      "C01-C10"
+    ]
+  },
   "revalidationDraft": {
     "path": "docs/toefl-sectional-hr04-official-source-revalidation-draft.md",
-    "sha256": "fc32e495916054af4d8c65f0a050ad46c417a2abaa3d9291796e702f3d88fe5f"
+    "sha256": "0b9de4aa0f0f394c4eafc0e64f2080e7826dbcca495e4ca485b0ac73d2f28bc2"
   },
   "officialSources": [
     {
@@ -73,7 +87,7 @@
     "ETS-SPEC retains a pre-launch note that minor revisions could occur before launch."
   ],
   "gateConditions": {
-    "D7": "A named human academic reviewer must decide the claims; no reviewer is currently recorded.",
+    "D7": "Zhanna Korzh is the named academic reviewer; her explicit claim decision is still pending.",
     "D8": "HR-04 claims remain blocked until this artifact is reviewed and the decision is logged.",
     "productionMutationAuthorized": false,
     "normativeRegistryRestorationAuthorized": false
