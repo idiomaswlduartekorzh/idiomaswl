@@ -3,7 +3,7 @@
   "gateId": "HR-03",
   "initiative": "toefl-sectional-seo-curation-harness",
   "status": "pending-human-review",
-  "generatedAtUtc": "2026-09-01T05:31:42Z",
+  "generatedAtUtc": "2026-09-01T05:50:47Z",
   "baseCommitSha": "5cfbfec1",
   "approvedInputs": [
     {
@@ -42,6 +42,11 @@
       "kind": "catalog-presentation-data-contract-draft",
       "path": "docs/toefl-sectional-hr03-catalog-data-contract-draft.md",
       "sha256": "8e1f28c9a6c0b1743e4b6f70ca11d5c96764d8856e0a2156008031ca0a31524e"
+    },
+    {
+      "kind": "human-review-decision-packet",
+      "path": "docs/toefl-sectional-hr03-human-review-packet.md",
+      "sha256": "3cb5cb7dd600dc7399664ba9940275a683a3c9d4c67fafa6480384ee3904791f"
     }
   ],
   "routeAudit": {
