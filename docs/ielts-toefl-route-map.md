@@ -20,7 +20,8 @@ Status: canonical planning map
 | `/practica/ielts/academic` | live | IELTS Academic hub |
 | `/practica/ielts/general-training` | live | IELTS General Training hub |
 | `/examenes/toefl` | live | Primary Spanish landing for simulacro/examen TOEFL intent and the 20 four-section mocks |
-| `/practica/toefl` | live | TOEFL practice hub |
+| `/practica/toefl` | release-candidate | TOEFL mode-selection hub: Ejercicios, Práctica and Simulacros |
+| `/practica/toefl/ejercicios` | release-candidate | Directory of the twelve current task families grouped by section |
 
 ## 3. IELTS Academic Reading
 

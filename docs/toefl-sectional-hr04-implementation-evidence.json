@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "gateId": "HR-04",
+  "initiative": "toefl-sectional-seo-curation-harness",
+  "status": "pending-human-review",
+  "generatedAtUtc": "2026-09-01T15:35:12Z",
+  "implementationCommitSha": "ff23bb175cad4d74dc1e0106dad558d784118624",
+  "catalogContractCommitSha": "9228c4ab72ed6ca4c35e235576830186e9a5315f",
+  "approvedInputs": [
+    {
+      "gateId": "HR-02-v2",
+      "path": "docs/toefl-sectional-hr02-evidence.json",
+      "sha256": "7446f43ee8a291bd3bbb8e60134de98b9997ea31f2b02afad622975a379808b3"
+    },
+    {
+      "gateId": "HR-03",
+      "path": "docs/toefl-sectional-hr03-evidence.json",
+      "decisionScope": "D1-D6 approved; D9 visible; D10 reconciled before implementation"
+    },
+    {
+      "gateId": "HR-04-SOURCE",
+      "path": "docs/toefl-sectional-hr04-source-evidence.json",
+      "contentDigest": "b73b5528c5af3ec4ebd0c11b78e97656c2d40849d5a2a5688fdd0d423eebc503",
+      "reviewer": "Zhanna Korzh",
+      "role": "academic-director",
+      "claimScope": ["C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C10"],
+      "blockedClaims": ["C09"]
+    }
+  ],
+  "artifacts": [
+    {
+      "kind": "presentation-registry",
+      "path": "src/data/practica/toefl-exercise-catalog.ts",
+      "sha256": "b82db3cf4688c6649ec71785a24de3fb8581f65a35974db30980c27f3cf8ded8"
+    },
+    {
+      "kind": "mode-selection-hub",
+      "path": "src/app/(site)/practica/toefl/page.tsx",
+      "sha256": "f2d8768f9983e631cc5e41d87d652e0dfbfe949511654f62cb5e59159f2490b7"
+    },
+    {
+      "kind": "exercise-catalog",
+      "path": "src/app/(site)/practica/toefl/ejercicios/page.tsx",
+      "sha256": "0a38c6666f965fe26bd63d92bd14f6c119c5b415fd9f90c7fb35516fcae2d5c2"
+    },
+    {
+      "kind": "exercise-catalog-styles",
+      "path": "src/app/(site)/practica/toefl/ejercicios/page.module.css",
+      "sha256": "724f655b158f4f7ae2a6325065a8a3a7982822746167a77da3d4971ce969fc5c"
+    },
+    {
+      "kind": "individual-exercise-return-navigation",
+      "path": "src/components/toefl/ToeflExerciseReturnLinks.tsx",
+      "sha256": "6509529e4057441b088866496c8eaef28517e87fc7078fc4c9429f6de4c76cb8"
+    }
+  ],
+  "visualEvidence": [
+    {
+      "path": "docs/prototypes/screenshots/hr04-hub-desktop.png",
+      "viewport": "1440x1000",
+      "browser": "Chromium 1.62.1",
+      "sha256": "bd510d57ba42abf04424775ef765f7dbfd8f0bb8df5b1ffbd1f7415d1cca24f8"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr04-catalog-desktop.png",
+      "viewport": "1440x1000",
+      "browser": "Chromium 1.62.1",
+      "sha256": "4c316447c1237dfe83e2235eb70d918ff293fef5cbd4373a8f05480a24800cdf"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr04-catalog-mobile.png",
+      "viewport": "390x844",
+      "browser": "Chromium 1.62.1",
+      "sha256": "84c4cb181d60a51d192cf34414ee4dd576e4e4a15813e47e2ac031ca3202a36b"
+    }
+  ],
+  "routeAudit": {
+    "indexableRoutesAdded": ["/practica/toefl/ejercicios"],
+    "canonical": "https://www.idiomaswl.com/practica/toefl/ejercicios",
+    "sitemapIncluded": true,
+    "taskFamilies": 12,
+    "distribution": {"reading": 3, "listening": 4, "writing": 3, "speaking": 2},
+    "individualRoutes": 6,
+    "mockOnlyFamilies": 6,
+    "placeholderLinks": 0,
+    "individualRoutesHttp200": 6,
+    "returnLinksVerified": 12,
+    "mockAnchor": "/examenes/toefl#practica"
+  },
+  "claimAudit": {
+    "implemented": ["C03", "C04", "C05", "C06", "C10"],
+    "notNeededInThisSlice": ["C01", "C02", "C07", "C08"],
+    "blockedAndAbsent": ["C09"]
+  },
+  "checks": [
+    {"command": "npm run check:toefl-sectional-catalog", "status": "passed"},
+    {"command": "npx tsc --noEmit --pretty false --incremental false", "status": "passed"},
+    {"command": "npm run check:practica-catalog", "status": "passed"},
+    {"command": "npm run check:production-baseline", "status": "passed"},
+    {"command": "npm run check:toefl-editorial", "status": "passed"},
+    {"command": "npm run check:seo-foundation", "status": "passed"},
+    {"command": "npm run check:exam-practice-content", "status": "expected-failure", "findingCount": 12, "controlChanged": false}
+  ],
+  "limitations": [
+    "HR-04 source approval does not approve this rendered implementation.",
+    "C09 remains blocked and is absent from the implementation scope.",
+    "Mock runners and result screens were not modified; result-to-catalog navigation remains for the functional pilot gate.",
+    "No production deployment, main integration or remote configuration change was performed.",
+    "The global build remains mandatory before integration and was not substituted by the local render audit."
+  ],
+  "humanReviewRequired": [
+    "academic-rendered-copy-and-disclosure",
+    "seo-editorial-intent-and-schema-parity",
+    "ux-accessibility-desktop-and-mobile"
+  ]
+}
