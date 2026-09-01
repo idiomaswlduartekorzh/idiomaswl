@@ -62,6 +62,26 @@
       ],
       "independentReview": false,
       "notes": "Aprobación humana explícita recibida en la tarea de Codex con el texto 'Apruebo HR-02 v2'. Queda aprobada la IU con tres rutas primarias y el catálogo de 12 tipos agrupados por sección."
+    },
+    {
+      "gateId": "HR-03",
+      "reviewer": "Jose David Duarte Silva",
+      "role": "product-owner-final-decision-authority",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-01T12:50:00Z",
+      "commitSha": "6d972d894df5fa21f22e53aa1405fe03c4c43644",
+      "contentDigest": "450a31ff4f0219eb27af6e4cea2805751117dbe6678fbd78005b8df50b1be876",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr03-evidence.json",
+        "docs/toefl-sectional-hr03-interconnection.md",
+        "docs/toefl-sectional-hr03-human-review-packet.md",
+        "docs/toefl-sectional-hr03-code-audit-draft.md",
+        "docs/toefl-sectional-hr03-seo-ownership-draft.md",
+        "docs/toefl-sectional-hr03-test-contract-draft.md",
+        "docs/toefl-sectional-hr03-catalog-data-contract-draft.md"
+      ],
+      "independentReview": false,
+      "notes": "Aprobación humana explícita recibida con este alcance: D1–D6 aprobadas. D7 queda para revisión CO académico y no constituye aprobación académica. D8 bloquea los claims de HR-04 hasta revalidación. D9 se conserva como deuda visible sin bajar controles. D10 exige reconciliar con main antes de implementar. La aprobación cierra la arquitectura de interconexión, pero no levanta estas condiciones obligatorias."
     }
   ]
 }
