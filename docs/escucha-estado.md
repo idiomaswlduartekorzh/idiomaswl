@@ -1,7 +1,7 @@
 # Escucha (`/practica/*/escucha`) — estado y comprobaciones
 
 Documento de traspaso. Si vas a tocar algo de escucha —contenido, audio, reproductor o
-estilos— empieza por aquí. Última revisión completa: **7 de agosto de 2026**.
+estilos— empieza por aquí. Última revisión completa: **31 de agosto de 2026**.
 
 ## Qué hay publicado
 
@@ -33,23 +33,31 @@ La serie es la **única fuente de verdad**: el script que genera el audio lee lo
 turnos que se pintan en pantalla, así que audio y transcripción no pueden desincronizarse.
 Nunca edites un fichero `*-listening.ts` para cambiar contenido; deriva de su serie.
 
-## Las cuatro comprobaciones
+## Las comprobaciones
 
 ```bash
 node scripts/validate-listening-series.mjs      # estructura y contenido (corre en prebuild)
+node scripts/check-listening-target-language.mjs # idioma de preguntas, opciones y feedback
 node scripts/audit-listening-content.mjs        # coherencia pregunta ↔ audio
 node scripts/audit-listening-audio.mjs          # ensamblado de los mp3
 node scripts/sync-listening-durations.mjs       # duración declarada vs mp3 real
 ```
 
-Estado a 7 de agosto de 2026: **las cuatro en verde.** El audio son 480 episodios con
-0 problemas y 4 avisos, y los cuatro avisos son pausas de prosodia dentro de un turno.
+Estado a 31 de agosto de 2026: **todas en verde.** Las 21 series no inglesas conservan
+preguntas, opciones y feedback íntegramente en el idioma objetivo: el guardián comprueba
+10.500 campos visibles y corre dentro de `check:listening-series`. La auditoría de contenido
+termina con 0 problemas y 0 avisos en las 24 series. El audio son 480 episodios con 0
+problemas y 4 avisos, y los cuatro avisos son pausas de prosodia dentro de un turno.
 
 ### Lo que cada una atrapa, y por qué existe
 
 - **validate-listening-series** — 20 episodios por serie, 4–8 turnos, 5–8 palabras clave,
   rangos de unidades léxicas por nivel, que las palabras clave **se oigan de verdad** en el
-  episodio, y el reparto A/B/C. Falla el build.
+  episodio, el reparto A/B/C y el techo de siluetas por longitud. Falla el build y encadena
+  el control del idioma objetivo.
+- **check-listening-target-language** — revisa enunciados, tres opciones y feedback de las
+  2.100 preguntas no inglesas; detecta puntuación o marcadores españoles y exige escritura
+  cirílica, hangul o japonesa donde corresponde.
 - **audit-listening-content** — que el feedback cite una línea que existe, que la respuesta
   correcta se pueda deducir de lo que se dice, que la duración declarada sea la del archivo,
   y que A1 < A2 < B1 medido sobre el texto y no sobre la etiqueta.
@@ -79,19 +87,20 @@ pausa.
 
 ## Lo que queda pendiente
 
-**Sesgo por longitud de las opciones.** En **362 de las 2400 preguntas** una opción es tres
-o más palabras más larga que las demás, y en el **96,7 %** de esos casos es la correcta.
-Es el mismo problema que el sesgo A/B/C pero por otro eje, y este **no se arregla
-barajando**: hay que reescribir los distractores para que sean tan específicos como la
-respuesta buena.
+**Sesgo por longitud de las opciones.** La revisión multilingüe redujo de **362 a 81** las
+preguntas donde una opción es tres o más palabras más larga que las demás. El auditor
+completo simula la estrategia real «si una destaca, marcarla; si no, elegir A»: obtiene
+**35,8 %**, cerca del azar de 33 % y muy por debajo del límite de 55 %. Ya no permite
+aprobar sin escuchar.
 
 Se concentra por igual en idea general (180) y detalle (176). Patrón típico:
 
 > ✗ «Emma se despide de Berlín» · «Emma busca un piso» · ✓«Emma se presenta a una vecina
 > el día que llega»
 
-El validador lo tiene puesto como **techo de 362**: puede bajar, y si sube el build se para.
-Al reescribir una serie, baja el número en `TECHO_SILUETA`.
+El validador fija **81 como techo nuevo**: puede bajar, y si sube el build se para. Las 81
+siluetas restantes siguen siendo deuda editorial mejorable, aunque ya no forman un atajo
+sistemático.
 
 **Los cuatro avisos de prosodia.** Pausas de 1,6–2,0 s dentro de un turno, donde el actor
 hace un silencio dramático. No son fallo de montaje; si molestan hay que regenerar ese turno,
