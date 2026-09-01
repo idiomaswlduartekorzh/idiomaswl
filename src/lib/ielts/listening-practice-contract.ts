@@ -86,11 +86,29 @@ export interface IeltsListeningMapLabellingGroupSource {
   questions: readonly IeltsListeningMapQuestionSource[];
 }
 
+export interface IeltsListeningMatchingQuestionSource {
+  number: number;
+  prompt: string;
+  correctOptionKey: IeltsListeningOptionKey;
+  explanation: string;
+}
+
+export interface IeltsListeningMatchingGroupSource {
+  type: 'matching';
+  id: string;
+  questionRange: readonly [number, number];
+  instruction: string;
+  optionReuse: 'once-only' | 'may-repeat';
+  options: readonly IeltsListeningChoiceOption[];
+  questions: readonly IeltsListeningMatchingQuestionSource[];
+}
+
 export type IeltsListeningGroupSource =
   | IeltsListeningFormSource
   | IeltsListeningTableSource
   | IeltsListeningSingleChoiceGroupSource
-  | IeltsListeningMapLabellingGroupSource;
+  | IeltsListeningMapLabellingGroupSource
+  | IeltsListeningMatchingGroupSource;
 
 export interface IeltsListeningPracticeSource {
   id: string;
@@ -263,6 +281,16 @@ function sourceAnswers(source: IeltsListeningPracticeSource): IeltsListeningAnsw
       })));
       continue;
     }
+    if (group.type === 'matching') {
+      answers.push(...group.questions.map((question) => ({
+        number: question.number,
+        expected: question.correctOptionKey,
+        explanation: question.explanation,
+        mode: 'exact-option' as const,
+        acceptedValues: [question.correctOptionKey],
+      })));
+      continue;
+    }
     throw new Error('Unsupported IELTS Listening question group type.');
   }
   return answers;
@@ -327,7 +355,11 @@ function assertSourceIntegrity(source: IeltsListeningPracticeSource): void {
     if (group.type === 'form') groupNumbers = group.blanks.map((blank) => blank.number);
     else if (group.type === 'table') {
       groupNumbers = group.rows.flatMap((row) => row.flatMap((cell) => cell.type === 'blank' ? [cell.number] : []));
-    } else if (group.type === 'single-choice' || group.type === 'map-labelling') {
+    } else if (
+      group.type === 'single-choice'
+      || group.type === 'map-labelling'
+      || group.type === 'matching'
+    ) {
       groupNumbers = group.questions.map((question) => question.number);
     } else {
       throw new Error('Unsupported IELTS Listening question group type.');
@@ -412,6 +444,36 @@ function assertSourceIntegrity(source: IeltsListeningPracticeSource): void {
           throw new Error(`Map question ${question.number} model response contradicts its correct option.`);
         }
       }
+    } else if (group.type === 'matching') {
+      if (!group.instruction.trim() || !group.questions.length) {
+        throw new Error(`Matching group ${group.id} is incomplete.`);
+      }
+      assertChoiceOptions(group.options, `Matching group ${group.id}`);
+      const optionKeys = group.options.map((option) => option.key);
+      const expectedOptionKeys = (['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] as const)
+        .slice(0, optionKeys.length);
+      if (
+        optionKeys.length < 2
+        || optionKeys.some((key, index) => key !== expectedOptionKeys[index])
+      ) {
+        throw new Error(`Matching group ${group.id} must use at least two contiguous option keys beginning with A.`);
+      }
+      if (group.optionReuse !== 'once-only' && group.optionReuse !== 'may-repeat') {
+        throw new Error(`Matching group ${group.id} has an invalid option reuse policy.`);
+      }
+      const correctOptionKeys = group.questions.map((question) => question.correctOptionKey);
+      if (
+        group.optionReuse === 'once-only'
+        && new Set(correctOptionKeys).size !== correctOptionKeys.length
+      ) {
+        throw new Error(`Matching group ${group.id} repeats an answer despite its once-only policy.`);
+      }
+      for (const question of group.questions) {
+        if (!question.prompt.trim()) throw new Error(`Matching question ${question.number} has no prompt.`);
+        if (!group.options.some((option) => option.key === question.correctOptionKey)) {
+          throw new Error(`Matching question ${question.number} has an unknown correct option.`);
+        }
+      }
     } else {
       throw new Error('Unsupported IELTS Listening question group type.');
     }
@@ -489,6 +551,10 @@ export function projectIeltsListeningPractice(
         prompt: question.prompt,
       })),
     };
+
+    if (group.type === 'matching') {
+      throw new Error('IELTS Listening matching is private-stage and cannot be projected before atomic promotion.');
+    }
 
     throw new Error('Unsupported IELTS Listening question group type.');
   });
@@ -585,6 +651,14 @@ export function ieltsListeningResponseSpecs(
       continue;
     }
     if (group.type === 'map-labelling') {
+      specs.push(...group.questions.map((question) => ({
+        number: question.number,
+        kind: 'choice' as const,
+        allowedValues: group.options.map((option) => option.key),
+      })));
+      continue;
+    }
+    if (group.type === 'matching') {
       specs.push(...group.questions.map((question) => ({
         number: question.number,
         kind: 'choice' as const,

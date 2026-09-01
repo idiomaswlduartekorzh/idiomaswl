@@ -176,12 +176,25 @@ function writeMapAsset(root, svg, overrides = {}) {
 test('inverse publication inventory is IELTS-only and detects every uncatalogued public surface', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-listening-public-registry-'));
   try {
+    const privateCandidateBytes = Buffer.from('private Part 3 audio fingerprint');
     writeFixture(root, PART_ONE_GUIDE, releaseBlock(PART_ONE_ID));
     writeFixture(root, PART_TWO_GUIDE, releaseBlock(PART_TWO_ID));
     writeFixture(root, PART_ONE_AUDIO);
     writeFixture(root, PART_TWO_AUDIO);
     writeFixture(root, PART_TWO_MAP, validMapSvg());
     writeFixture(root, 'public/audio/ielts/listening/unrelated.mp3');
+    writeFixture(
+      root,
+      'docs/ielts-superhub/candidates/welearn-listening-part-3-001/candidate.mp3',
+      privateCandidateBytes,
+    );
+    writeFixture(root, 'public/audio/ielts/listening/renamed-private-audio.mp3', privateCandidateBytes);
+    writeFixture(root, 'public/audio/ielts/listening/draft-welearn-listening-part-3-001.mp3');
+    writeFixture(
+      root,
+      'public/leaks/answer-key.json',
+      JSON.stringify({ practiceId: 'welearn-listening-part-3-001', answers: ['A'] }),
+    );
     writeFixture(
       root,
       'src/app/(site)/practica/toefl/listening/page.tsx',
@@ -204,6 +217,11 @@ test('inverse publication inventory is IELTS-only and detects every uncatalogued
     assert.deepEqual(inventory.physicalGuidePaths, [PART_ONE_GUIDE, PART_TWO_GUIDE]);
     assert.deepEqual(inventory.publicAudioPaths, [PART_ONE_AUDIO, PART_TWO_AUDIO]);
     assert.deepEqual(inventory.publicMapPaths, [PART_TWO_MAP]);
+    assert.deepEqual(inventory.unexpectedPublicPracticePaths, [
+      'public/audio/ielts/listening/draft-welearn-listening-part-3-001.mp3',
+      'public/audio/ielts/listening/renamed-private-audio.mp3',
+      'public/leaks/answer-key.json',
+    ]);
     assert.deepEqual(inventory.sitemapGuideRoutes, [PART_ONE_ROUTE, PART_TWO_ROUTE]);
     assert.deepEqual(inventory.releaseMarkerIds, [PART_ONE_ID, PART_TWO_ID]);
     assert.deepEqual(inventory.markerStructureFailures, []);
@@ -218,6 +236,9 @@ test('inverse publication inventory is IELTS-only and detects every uncatalogued
     assert.match(failures, new RegExp(PART_TWO_GUIDE.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
     assert.match(failures, new RegExp(PART_TWO_AUDIO.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
     assert.match(failures, new RegExp(PART_TWO_MAP.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+    assert.match(failures, /Unrecognized public IELTS Listening practice artifact: public\/audio\/ielts\/listening\/draft-welearn-listening-part-3-001\.mp3/i);
+    assert.match(failures, /Unrecognized public IELTS Listening practice artifact: public\/audio\/ielts\/listening\/renamed-private-audio\.mp3/i);
+    assert.match(failures, /Unrecognized public IELTS Listening practice artifact: public\/leaks\/answer-key\.json/i);
     assert.match(failures, /sitemap route is not catalogued: \/practica\/ielts\/listening\/part-2/i);
     assert.match(failures, new RegExp(`uncatalogued practice: ${PART_TWO_ID}`, 'i'));
     assert.doesNotMatch(failures, /part-4-999|part-3-999|TOEFL|ICFES/);
@@ -230,7 +251,11 @@ test('inverse publication inventory is IELTS-only and detects every uncatalogued
       catalogAudioPaths: [PART_ONE_AUDIO, PART_TWO_AUDIO],
       catalogMapPaths: [PART_TWO_MAP],
       inventory,
-    }), []);
+    }), [
+      'Unrecognized public IELTS Listening practice artifact: public/audio/ielts/listening/draft-welearn-listening-part-3-001.mp3.',
+      'Unrecognized public IELTS Listening practice artifact: public/audio/ielts/listening/renamed-private-audio.mp3.',
+      'Unrecognized public IELTS Listening practice artifact: public/leaks/answer-key.json.',
+    ]);
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }

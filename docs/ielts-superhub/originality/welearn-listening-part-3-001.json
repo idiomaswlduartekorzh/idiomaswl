@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "practiceId": "welearn-listening-part-3-001",
+  "contentVersion": "2026-09-01.draft.1",
+  "createdAt": "2026-09-01",
+  "ownership": {
+    "author": "Idiomas WeLearn",
+    "status": "draft-original-independent-practice",
+    "borrowedQuestions": false,
+    "borrowedTranscript": false,
+    "borrowedAudio": false,
+    "trademarkDisclosure": "IELTS is a protected trademark. This resource is not affiliated with or endorsed by its owners."
+  },
+  "formatSources": [
+    "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening",
+    "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test"
+  ],
+  "originalitySearch": {
+    "status": "completed-automated-search-review",
+    "checkedAt": "2026-09-01",
+    "localCorpusScope": "Tracked authored TS/TSX/JS/MJS/JSON/Markdown under src/data and docs, including IELTS, TOEFL and other exam banks; the pronunciation dictionary, candidate/originality directories and three operational instruction templates are explicitly excluded.",
+    "queries": [
+      "\"Mereford Ensemble Feedback Trial\"",
+      "\"rehearsal feedback cards\" ensemble timing balance entries",
+      "\"treated green as a compliment\" \"amber as a warning\"",
+      "\"after each four-minute performance\" \"ninety seconds\""
+    ],
+    "queryUrls": [
+      "https://www.google.com/search?q=%22Mereford+Ensemble+Feedback+Trial%22",
+      "https://www.google.com/search?q=%22rehearsal+feedback+cards%22+ensemble+timing+balance+entries",
+      "https://www.google.com/search?q=%22treated+green+as+a+compliment%22+%22amber+as+a+warning%22",
+      "https://www.google.com/search?q=%22after+each+four-minute+performance%22+%22ninety+seconds%22"
+    ],
+    "formatBoilerplateExcluded": [
+      "Listen and answer Questions 21–30. You may replay the recording in this WeLearn practice mode.",
+      "Select one option, A, B or C, for each question.",
+      "Match each action with the person responsible. Choose A, B or C. You may use each letter more than once."
+    ],
+    "result": "No local match and no material exact-match result was observed for the four recorded Google phrase queries. This is an automated collision signal, not a legal conclusion or a substitute for final editorial review.",
+    "rejectedConcepts": [
+      {
+        "concept": "University library quiet-booth pilot",
+        "reason": "Rejected before authoring because local WeLearn content and a public university pilot shared the library, quiet-space, booking and student-evaluation fingerprint."
+      },
+      {
+        "concept": "Geology teaching collection",
+        "reason": "Rejected before authoring because an existing local IELTS Part 3 already uses geology fieldwork and another IELTS set uses a geological gallery."
+      }
+    ]
+  },
+  "audio": {
+    "candidatePath": "docs/ielts-superhub/candidates/welearn-listening-part-3-001/welearn-listening-part-3-001.mp3",
+    "futurePublicPath": "public/audio/ielts/listening/welearn-listening-part-3-001.mp3",
+    "generator": "scripts/generate-ielts-listening-part3-audio.mjs",
+    "generatorSha256": "b66d4c3ef61edfb52b7057667634778e966acdfe39661389ed555d24bdfebf4a",
+    "renderer": "scripts/lib/render-ielts-piper-segments.py",
+    "rendererSha256": "7445edddb7193c1178a9d794b85385583e05aadd76cac06a140e05ec22e3a0a0",
+    "engine": {
+      "name": "Piper",
+      "version": "1.7.0",
+      "source": "https://github.com/OHF-Voice/piper1-gpl",
+      "license": "GPL-3.0-or-later"
+    },
+    "voiceModel": {
+      "id": "en_GB-vctk-medium",
+      "sha256": "4e9fc85ab9009385319fc6bae7f55577f8a2d7ee77fd9159a5500eb6531f41e6",
+      "configSha256": "7f85e6391ed0f7f46e4abd19345929a16be931a0c9945086f96692dce2087fa8",
+      "repositoryLicense": "MIT",
+      "repositoryCommit": "39ab474be869e9181350af6a65e4953eef67aaa0",
+      "modelCard": "https://huggingface.co/rhasspy/piper-voices/blob/39ab474be869e9181350af6a65e4953eef67aaa0/en/en_GB/vctk/medium/MODEL_CARD",
+      "modelCardSha256": "53ec6b1fd90d9125d5bebac55261efd27f7e8d6dc962f605a5b5f796df2ec7fb",
+      "modelCardBytes": 326,
+      "trainingDataset": "CSTR VCTK Corpus",
+      "datasetSource": "https://datashare.ed.ac.uk/handle/10283/3443",
+      "datasetLicense": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "VCTK Corpus, University of Edinburgh, used through the Piper en_GB-vctk-medium voice model under CC BY 4.0."
+    },
+    "voices": [
+      { "role": "tutor", "speaker": "p230", "speakerId": 74, "locale": "en_GB" },
+      { "role": "lara", "speaker": "p225", "speakerId": 107, "locale": "en_GB" },
+      { "role": "jonah", "speaker": "p226", "speakerId": 95, "locale": "en_GB" }
+    ],
+    "rightsReview": {
+      "status": "documented-open-licence",
+      "checkedAt": "2026-09-01",
+      "publicationUse": "permitted-with-attribution",
+      "attributionLocation": "pending future Part 3 landing"
+    },
+    "durationSeconds": 293.249887,
+    "bytes": 3519917,
+    "sha256": "1e39cc939b1bf95ef08762a432f44c3e69682e78aea45d9dfbe4890afca5db27",
+    "channels": 1,
+    "sampleRateHz": 44100,
+    "targetBitRate": 96000,
+    "isolatedPartAsset": true
+  },
+  "automatedAsrAudit": {
+    "status": "candidate-evidence-only",
+    "checkedAt": "2026-09-01",
+    "engine": "OpenAI Whisper small",
+    "language": "en",
+    "path": "docs/ielts-superhub/candidates/welearn-listening-part-3-001/asr/welearn-listening-part-3-001.json",
+    "bytes": 33664,
+    "sha256": "a3956b985e975b47e6d24e67d197e68edff1a658fb6c09436eeec72d9beafb35",
+    "criticalAnswerEvidence": "10-of-10 present and non-contradictory in ASR output",
+    "observedCautions": [
+      "Mereford was decoded as Mayerford.",
+      "Lara was sometimes decoded as Laura and the opening Lara and Jonah became Lauren Jonah.",
+      "Compliment was decoded as complement; the decisive green-versus-amber colour interpretation remains explicit.",
+      "The tutor's explanation of why balance attracted most comments was imperfectly decoded, but the decisive louder-or-quieter evidence for Question 21 remains explicit.",
+      "Select two and time them was decoded as select two in time than; Jonah's timed-extract confirmation remains explicit.",
+      "The closing Lara confirmation was decoded as La and that comparison as their comparison; the visual responsibility remains semantically explicit."
+    ],
+    "disclosure": "Automated ASR is diagnostic evidence only and cannot satisfy the required human pronunciation, pacing, voice differentiation and intelligibility review."
+  },
+  "contentAudit": {
+    "speakerCount": 3,
+    "educationalContext": true,
+    "questionRange": [21, 30],
+    "singleChoiceRange": [21, 25],
+    "matchingRange": [26, 30],
+    "singleChoiceOptionsPerQuestion": 3,
+    "matchingOptionKeys": ["A", "B", "C"],
+    "matchingOptionReuse": "may-repeat",
+    "difficultyProfile": "guided-initial-part-3-candidate",
+    "answerKeys": ["A", "B", "A", "C", "B", "A", "B", "C", "B", "A"],
+    "rawScoreOnly": true,
+    "bandPrediction": false
+  },
+  "automatedChecks": {
+    "tenContinuousQuestions": "pass",
+    "staticSourceAstAudit": "pass",
+    "privateProjectionGate": "pass",
+    "serverOnlyScoring": "pass",
+    "postSubmitExplanations": "authored-pending-promotion",
+    "audioChecksum": "candidate-recorded",
+    "asrEvidence": "10-of-10-present",
+    "legacySetImported": false
+  },
+  "release": {
+    "status": "draft",
+    "blockers": [
+      "Complete a human pronunciation, pacing, voice differentiation and intelligibility review.",
+      "Complete an editorial review of musical naturalness and distractor fairness.",
+      "Replace non-release-ready audio metadata in the server source.",
+      "Implement and audit the public matching DTO and renderer only during atomic promotion.",
+      "Promote the approved MP3 to public only in the same change that registers and tests Part 3."
+    ],
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}

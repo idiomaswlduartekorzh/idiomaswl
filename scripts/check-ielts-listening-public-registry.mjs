@@ -16,6 +16,8 @@ const IELTS_PRACTICE_ROOT = 'src/app/(site)/practica/ielts';
 const IELTS_PART_GUIDE_PATTERN = /^src\/app\/\(site\)\/practica\/ielts\/listening\/part-[1-4]\/page\.tsx$/;
 const IELTS_ORIGINAL_AUDIO_PATTERN = /^public\/audio\/ielts\/listening\/welearn-listening-part-[1-4]-\d{3,}\.mp3$/;
 const IELTS_ORIGINAL_MAP_PATTERN = /^public\/images\/ielts\/listening\/welearn-listening-part-[1-4]-\d{3,}-map\.svg$/;
+const IELTS_LISTENING_PRACTICE_ID_PATTERN = /welearn-listening-part-[1-4]-\d{3,}/;
+const PUBLIC_TEXT_ASSET_PATTERN = /\.(?:css|csv|html?|js|json|jsx|md|mjs|svg|ts|tsx|txt|xml)$/i;
 const IELTS_RELEASE_MARKER_PATTERN = /ielts-listening-release:([^:\s]+):(start|end)/g;
 const IELTS_SITEMAP_PART_ROUTE_PATTERN = /\/practica\/ielts\/listening\/part-[1-4](?=[`'"])/g;
 
@@ -29,6 +31,10 @@ function walkFiles(directory) {
 
 function repoRelative(root, absolutePath) {
   return path.relative(root, absolutePath).split(path.sep).join('/');
+}
+
+function fileSha256(absolutePath) {
+  return createHash('sha256').update(fs.readFileSync(absolutePath)).digest('hex');
 }
 
 function sortedUnique(values) {
@@ -621,6 +627,35 @@ function uniqueSourceObject(source) {
   return parsed.sourceObject;
 }
 
+function staticSourceValue(node, label) {
+  if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) return node.text;
+  if (ts.isNumericLiteral(node)) return staticNumberNode(node, label);
+  if (node.kind === ts.SyntaxKind.TrueKeyword) return true;
+  if (node.kind === ts.SyntaxKind.FalseKeyword) return false;
+  if (node.kind === ts.SyntaxKind.NullKeyword) return null;
+  if (ts.isArrayLiteralExpression(node)) {
+    return node.elements.map((element, index) => {
+      if (ts.isSpreadElement(element) || ts.isOmittedExpression(element)) {
+        throw new Error(`${label} cannot contain spreads or omitted values.`);
+      }
+      return staticSourceValue(element, `${label}[${index}]`);
+    });
+  }
+  if (ts.isObjectLiteralExpression(node)) {
+    return Object.fromEntries(
+      [...directStaticProperties(node, label)].map(([propertyName, initializer]) => [
+        propertyName,
+        staticSourceValue(initializer, `${label}.${propertyName}`),
+      ]),
+    );
+  }
+  throw new Error(`${label} is not a supported static value.`);
+}
+
+export function inspectIeltsListeningStaticSource(source) {
+  return staticSourceValue(uniqueSourceObject(source), 'SOURCE');
+}
+
 function extractStaticSourceAudio(source) {
   const sourceProperties = directStaticProperties(uniqueSourceObject(source), 'SOURCE');
   const audio = staticObjectNode(requiredStaticProperty(sourceProperties, 'audio', 'SOURCE'), 'SOURCE.audio');
@@ -908,19 +943,53 @@ export function collectIeltsListeningPublicationInventory(root, sitemapSource) {
 
   const publicAudioRoot = path.join(root, 'public/audio/ielts/listening');
   const publicMapRoot = path.join(root, 'public/images/ielts/listening');
+  const publicFiles = walkFiles(path.join(root, 'public'));
+  const privateCandidateFilesBySize = new Map();
+  for (const absolutePath of walkFiles(path.join(root, 'docs/ielts-superhub/candidates'))) {
+    const size = fs.statSync(absolutePath).size;
+    const candidates = privateCandidateFilesBySize.get(size) ?? [];
+    candidates.push({
+      sha256: fileSha256(absolutePath),
+      relativePath: repoRelative(root, absolutePath),
+    });
+    privateCandidateFilesBySize.set(size, candidates);
+  }
+  const publicAudioPaths = sortedUnique(
+    walkFiles(publicAudioRoot).map((absolutePath) => repoRelative(root, absolutePath)).filter((relativePath) =>
+      IELTS_ORIGINAL_AUDIO_PATTERN.test(relativePath)),
+  );
+  const publicMapPaths = sortedUnique(
+    walkFiles(publicMapRoot).map((absolutePath) => repoRelative(root, absolutePath)).filter((relativePath) =>
+      IELTS_ORIGINAL_MAP_PATTERN.test(relativePath)),
+  );
+  const canonicalPublicArtifacts = new Set([...publicAudioPaths, ...publicMapPaths]);
+  const unexpectedPublicPracticePaths = sortedUnique(publicFiles.flatMap((absolutePath) => {
+    const relativePath = repoRelative(root, absolutePath);
+    const sameSizeCandidates = privateCandidateFilesBySize.get(fs.statSync(absolutePath).size) ?? [];
+    if (
+      sameSizeCandidates.length
+      && sameSizeCandidates.some((candidate) => candidate.sha256 === fileSha256(absolutePath))
+    ) {
+      return [relativePath];
+    }
+    if (canonicalPublicArtifacts.has(relativePath)) return [];
+    if (IELTS_LISTENING_PRACTICE_ID_PATTERN.test(relativePath)) return [relativePath];
+    if (
+      PUBLIC_TEXT_ASSET_PATTERN.test(relativePath)
+      && IELTS_LISTENING_PRACTICE_ID_PATTERN.test(fs.readFileSync(absolutePath, 'utf8'))
+    ) {
+      return [relativePath];
+    }
+    return [];
+  }));
   return {
     physicalGuidePaths: sortedUnique(
       ieltsSurfaceFiles.map((absolutePath) => repoRelative(root, absolutePath)).filter((relativePath) =>
         IELTS_PART_GUIDE_PATTERN.test(relativePath)),
     ),
-    publicAudioPaths: sortedUnique(
-      walkFiles(publicAudioRoot).map((absolutePath) => repoRelative(root, absolutePath)).filter((relativePath) =>
-        IELTS_ORIGINAL_AUDIO_PATTERN.test(relativePath)),
-    ),
-    publicMapPaths: sortedUnique(
-      walkFiles(publicMapRoot).map((absolutePath) => repoRelative(root, absolutePath)).filter((relativePath) =>
-        IELTS_ORIGINAL_MAP_PATTERN.test(relativePath)),
-    ),
+    publicAudioPaths,
+    publicMapPaths,
+    unexpectedPublicPracticePaths,
     sitemapGuideRoutes: sortedUnique([...sitemapSource.matchAll(IELTS_SITEMAP_PART_ROUTE_PATTERN)].map((match) => match[0])),
     releaseMarkerIds: sortedUnique(markerIds),
     markerStructureFailures,
@@ -942,6 +1011,8 @@ export function findIeltsListeningInversePublicationFailures({
 
   return [
     ...(inventory.markerStructureFailures ?? []),
+    ...(inventory.unexpectedPublicPracticePaths ?? [])
+      .map((artifactPath) => `Unrecognized public IELTS Listening practice artifact: ${artifactPath}.`),
     ...setParityFailures(
       inventory.physicalGuidePaths ?? [],
       catalogGuidePaths,

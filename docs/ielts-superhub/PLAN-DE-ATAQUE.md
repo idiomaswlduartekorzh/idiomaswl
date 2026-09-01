@@ -3,8 +3,11 @@
 Estado actual: Fase 0 implementada; Fase 1 construida como piloto original y bloqueada
 para integración hasta una escucha humana final del MP3. Fase 2 ya tiene una candidata
 interna de Part 2 con contenido, MP3, mapa y evidencia ASR originales, pero no tiene ruta,
-catálogo, sitemap, registro ni assets bajo `public/`. El build y CI estrictos fallan
-mientras los manifiestos continúen sin aprobación humana.
+catálogo, sitemap, registro ni assets bajo `public/`. Part 3 también existe como candidata
+privada original con tres voces, opción única, matching, MP3 y ASR; el matching permanece
+deliberadamente no proyectable al DTO público. El harness técnico puede aprobar estas
+candidatas aisladas, mientras el gate estricto de release bloquea cualquier promoción sin
+aprobación humana.
 
 Rama: `codex/ielts-superhub`
 
@@ -205,6 +208,31 @@ Part 2 avanza como `welearn-listening-part-2-001` en estado `draft`:
 La promoción de Part 2 será atómica: assets aprobados, source con metadata final,
 manifiesto aprobado, entrada de catálogo, registro estático, landing, sitemap, enlaces y
 marcadores entran en el mismo cambio o el gate falla.
+
+Part 3 avanza como `welearn-listening-part-3-001` en estado `draft`:
+
+- Questions 21–25 usan opción única A–C; Questions 26–30 usan matching reutilizable A–C;
+- el escenario educativo, el guion, las preguntas y las explicaciones son originales y
+  fueron contrastados contra el corpus local con ventanas de diez palabras;
+- el concepto inicial de cabinas silenciosas fue descartado por colisión temática local y
+  pública antes de redactar la candidata definitiva;
+- 48 turnos de tres roles se reconcilian por AST con el transcript y tres IDs Piper únicos;
+- un ledger independiente fija el generador completo, renderer, modelo, configuración y
+  versión de Piper; cualquier deriva cambia la huella y bloquea la reproducción;
+- MP3 y ASR viven sólo en `docs/ielts-superhub/candidates/`; diez evidencias críticas están
+  presentes, con errores de ASR documentados como cautelas y no como aprobación humana;
+- el inventario inverso compara las huellas de candidatos privados contra todo `public/`,
+  por lo que renombrar un binario no evita la detección de una filtración;
+- el source mantiene audio `0`/hash cero y está fuera de catálogo, registro, sitemap,
+  landings y `public/`;
+- matching se valida y califica internamente, pero `projectIeltsListeningPractice` lo
+  rechaza hasta que DTO público, renderer accesible y promoción se auditen juntos;
+- el inspector AST canónico convierte únicamente fuentes profundas y estáticas; código
+  dinámico, referencias desviadas o adaptadores no canónicos bloquean.
+
+La promoción de Part 3 también será atómica. Además de escuchar las tres voces, un humano
+debe aprobar su diferenciación, naturalidad musical, ritmo y justicia de distractores; un
+ASR correcto no satisface esas puertas.
 
 Puerta: `npm run harness:ielts:release` sin bloqueos para el recurso promocionado.
 
