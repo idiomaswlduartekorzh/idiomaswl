@@ -3,6 +3,7 @@ import 'server-only';
 import { resolveAudioUrl } from '@/lib/examAudio';
 import {
   ieltsListeningQuestionNumbers,
+  ieltsListeningResponseSpecs,
   projectIeltsListeningPractice,
   scoreIeltsListeningPractice,
   type IeltsListeningPracticeSource,
@@ -137,6 +138,10 @@ export function getIeltsListeningPart1Identity() {
 
 export function getIeltsListeningPart1QuestionNumbers() {
   return ieltsListeningQuestionNumbers(SOURCE);
+}
+
+export function getIeltsListeningPart1ResponseSpecs() {
+  return ieltsListeningResponseSpecs(SOURCE);
 }
 
 export function scoreIeltsListeningPart1Practice(responses: Readonly<Record<string, string>>) {

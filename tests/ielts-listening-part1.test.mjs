@@ -6,6 +6,7 @@ import test from 'node:test';
 
 import {
   ieltsListeningQuestionNumbers,
+  ieltsListeningResponseSpecs,
   projectIeltsListeningPractice,
   scoreIeltsListeningPractice,
   validateIeltsListeningResponses,
@@ -13,6 +14,7 @@ import {
 import { readBoundedJson } from '../src/lib/http/read-bounded-json.ts';
 import {
   ieltsListeningPublicQuestionNumbers,
+  ieltsListeningPublicResponseSpecs,
   ieltsListeningStorageKey,
 } from '../src/lib/ielts/listening-public-contract.ts';
 import { createIeltsListeningScoreResponse } from '../src/lib/ielts/listening-score-route-contract.ts';
@@ -73,12 +75,73 @@ const fixture = {
   ],
 };
 
+const partTwoChoiceFixture = {
+  id: 'welearn-listening-part-2-998',
+  contentVersion: 'test-v2',
+  part: 2,
+  practiceNumber: 998,
+  title: 'Original Part 2 contract fixture',
+  scenario: 'One speaker explains a fictional community venue.',
+  instructions: 'Listen and answer Questions 11–20.',
+  transcript: 'Private original fixture transcript with evidence in question order.',
+  audio: {
+    localPath: '/audio/ielts/listening/welearn-listening-part-2-998.mp3',
+    durationSeconds: 150,
+    sha256: 'b'.repeat(64),
+  },
+  groups: [
+    {
+      type: 'single-choice',
+      id: 'choice',
+      questionRange: [11, 15],
+      instruction: 'Select one option, A, B or C, for each question.',
+      questions: Array.from({ length: 5 }, (_, index) => ({
+        number: index + 11,
+        prompt: `Original question ${index + 11}?`,
+        options: [
+          { key: 'A', label: `Option A${index}` },
+          { key: 'B', label: `Option B${index}` },
+          { key: 'C', label: `Option C${index}` },
+        ],
+        correctOptionKey: ['A', 'B', 'C', 'A', 'B'][index],
+        expected: ['A', 'B', 'C', 'A', 'B'][index],
+        explanation: `The speaker resolves the distractors for question ${index + 11} explicitly.`,
+      })),
+    },
+    {
+      type: 'map-labelling',
+      id: 'map',
+      questionRange: [16, 20],
+      instruction: 'Match each place to the correct letter, A–H.',
+      map: {
+        url: '/images/ielts/listening/welearn-listening-part-2-998-map.svg',
+        width: 1000,
+        height: 650,
+        alt: 'North-up fictional venue plan with eight lettered candidate rooms around a central courtyard.',
+        longDescription: 'The entrance is centred on the south wall. Candidate rooms A to C are along the north side, D and E flank the courtyard, and F to H are along the south side.',
+        areaKeys: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'],
+      },
+      options: Array.from({ length: 8 }, (_, index) => ({
+        key: String.fromCharCode(65 + index),
+        label: `Candidate ${String.fromCharCode(65 + index)} spatial description`,
+      })),
+      questions: Array.from({ length: 5 }, (_, index) => ({
+        number: index + 16,
+        prompt: `Original map place ${index + 16}`,
+        correctOptionKey: ['H', 'F', 'A', 'E', 'C'][index],
+        expected: ['H', 'F', 'A', 'E', 'C'][index],
+        explanation: `The route language identifies the location for question ${index + 16} without ambiguity.`,
+      })),
+    },
+  ],
+};
+
 function forbiddenPaths(value, pathName = '$') {
   if (!value || typeof value !== 'object') return [];
   return Object.entries(value).flatMap(([key, child]) => {
     const childPath = `${pathName}.${key}`;
     return [
-      ...(['answer', 'answers', 'acceptedAnswers', 'transcript'].includes(key) ? [childPath] : []),
+      ...(['answer', 'answers', 'acceptedAnswers', 'correctOptionKey', 'expected', 'explanation', 'transcript'].includes(key) ? [childPath] : []),
       ...forbiddenPaths(child, childPath),
     ];
   });
@@ -131,6 +194,46 @@ test('derives an exact contiguous ten-question window from the declared part', (
   assert.throws(() => scoreIeltsListeningPractice(wrongWindow, {}), /exact question sequence 11–20/i);
 });
 
+test('projects and scores exact-option Part 2 MCQ and map groups without leaking keys', () => {
+  const dto = projectIeltsListeningPractice(partTwoChoiceFixture, '/resolved/part-2.mp3');
+  assert.deepEqual(forbiddenPaths(dto), []);
+  assert.deepEqual(ieltsListeningPublicQuestionNumbers(dto), [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
+  const publicSpecs = ieltsListeningPublicResponseSpecs(dto);
+  const sourceSpecs = ieltsListeningResponseSpecs(partTwoChoiceFixture);
+  assert.deepEqual(publicSpecs, sourceSpecs);
+  assert.deepEqual(publicSpecs[0], { number: 11, kind: 'choice', allowedValues: ['A', 'B', 'C'] });
+  assert.deepEqual(publicSpecs[5], { number: 16, kind: 'choice', allowedValues: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] });
+
+  const answers = { 11: 'A', 12: 'B', 13: 'C', 14: 'A', 15: 'B', 16: 'H', 17: 'F', 18: 'A', 19: 'E', 20: 'C' };
+  assert.equal(validateIeltsListeningResponses(answers, sourceSpecs), true);
+  assert.equal(scoreIeltsListeningPractice(partTwoChoiceFixture, answers).correct, 10);
+  assert.equal(validateIeltsListeningResponses({ ...answers, 11: 'a' }, sourceSpecs), false);
+  assert.equal(validateIeltsListeningResponses({ ...answers, 16: 'Z' }, sourceSpecs), false);
+  assert.equal(scoreIeltsListeningPractice(partTwoChoiceFixture, { ...answers, 11: 'a' }).correct, 9);
+
+  const invalidChoice = structuredClone(partTwoChoiceFixture);
+  invalidChoice.groups[0].questions[0].options.pop();
+  assert.throws(() => projectIeltsListeningPractice(invalidChoice, '/audio.mp3'), /exact option sequence A, B, C/i);
+  const unknownChoice = structuredClone(partTwoChoiceFixture);
+  unknownChoice.groups[0].questions[0].correctOptionKey = 'H';
+  assert.throws(() => projectIeltsListeningPractice(unknownChoice, '/audio.mp3'), /unknown correct option/i);
+  const contradictoryChoice = structuredClone(partTwoChoiceFixture);
+  contradictoryChoice.groups[0].questions[0].expected = 'B';
+  assert.throws(() => projectIeltsListeningPractice(contradictoryChoice, '/audio.mp3'), /model response contradicts/i);
+  const invalidMap = structuredClone(partTwoChoiceFixture);
+  invalidMap.groups[1].map.url = '/images/ielts/listening/wrong-map.svg';
+  assert.throws(() => projectIeltsListeningPractice(invalidMap, '/audio.mp3'), /map asset metadata/i);
+  const duplicateMapOption = structuredClone(partTwoChoiceFixture);
+  duplicateMapOption.groups[1].options[1].key = 'A';
+  assert.throws(() => projectIeltsListeningPractice(duplicateMapOption, '/audio.mp3'), /unique non-empty option/i);
+  const mismatchedAreaKeys = structuredClone(partTwoChoiceFixture);
+  mismatchedAreaKeys.groups[1].map.areaKeys[7] = 'G';
+  assert.throws(() => projectIeltsListeningPractice(mismatchedAreaKeys, '/audio.mp3'), /matching contiguous area keys/i);
+  const contradictoryMap = structuredClone(partTwoChoiceFixture);
+  contradictoryMap.groups[1].questions[0].expected = 'A';
+  assert.throws(() => projectIeltsListeningPractice(contradictoryMap, '/audio.mp3'), /model response contradicts/i);
+});
+
 test('the server registry contract rejects crossed and duplicate identities', () => {
   const first = {
     key: 'welearn-listening-part-1-001',
@@ -167,6 +270,8 @@ test('the registry reconciles public DTO, question range, scorer and release cat
     publicPractice: { ...identity, questionCount: 10, questionRange: [11, 20] },
     publicQuestionNumbers: Array.from({ length: 10 }, (_, index) => index + 11),
     questionNumbers: Array.from({ length: 10 }, (_, index) => index + 11),
+    publicResponseSpecs: Array.from({ length: 10 }, (_, index) => ({ number: index + 11, kind: 'text' })),
+    responseSpecs: Array.from({ length: 10 }, (_, index) => ({ number: index + 11, kind: 'text' })),
     scoreProbe: {
       total: 10,
       outcomes: Array.from({ length: 10 }, (_, index) => ({ number: index + 11 })),
@@ -199,6 +304,12 @@ test('the registry reconciles public DTO, question range, scorer and release cat
   }), /scorer question range.*11–20/i);
   assert.throws(() => assertIeltsListeningRegistrationBundle({
     ...bundle,
+    responseSpecs: bundle.responseSpecs.map((spec, index) => index === 0
+      ? { number: spec.number, kind: 'choice', allowedValues: ['A', 'B', 'C'] }
+      : spec),
+  }), /response spec mismatch/i);
+  assert.throws(() => assertIeltsListeningRegistrationBundle({
+    ...bundle,
     scoreProbe: { total: 10, outcomes: Array.from({ length: 10 }, (_, index) => ({ number: index + 1 })) },
   }), /scorer outcomes.*11–20/i);
   assert.throws(() => assertIeltsListeningRegistryCatalog(registry, []), /catalog cannot be empty/i);
@@ -215,7 +326,7 @@ test('scores on the server contract without returning a band or accepted values'
   assert.equal(result.disclosure, 'WeLearn practice result. It is not an official IELTS band score.');
   assert.ok(result.outcomes.every((outcome) =>
     JSON.stringify(Object.keys(outcome).sort()) === JSON.stringify(['correct', 'expected', 'explanation', 'number'])));
-  assert.deepEqual(forbiddenPaths(result).filter((entry) => !entry.endsWith('.transcript')), []);
+  assert.deepEqual(forbiddenPaths(result).filter((entry) => !/\.(?:transcript|expected|explanation)$/.test(entry)), []);
   assert.deepEqual((function findBandKeys(value, pathName = '$') {
     if (!value || typeof value !== 'object') return [];
     return Object.entries(value).flatMap(([key, child]) => [
@@ -243,10 +354,11 @@ test('accepts reasonable number-and-word variants allowed by the displayed instr
 
 test('accepts only a complete bounded response map for questions 1–10', () => {
   const complete = Object.fromEntries(Array.from({ length: 10 }, (_, index) => [String(index + 1), 'response']));
-  assert.equal(validateIeltsListeningResponses(complete, ieltsListeningQuestionNumbers(fixture)), true);
-  assert.equal(validateIeltsListeningResponses({ ...complete, 11: 'extra' }, ieltsListeningQuestionNumbers(fixture)), false);
-  assert.equal(validateIeltsListeningResponses({ ...complete, 5: '' }, ieltsListeningQuestionNumbers(fixture)), false);
-  assert.equal(validateIeltsListeningResponses({ ...complete, 5: 'x'.repeat(81) }, ieltsListeningQuestionNumbers(fixture)), false);
+  const responseSpecs = ieltsListeningResponseSpecs(fixture);
+  assert.equal(validateIeltsListeningResponses(complete, responseSpecs), true);
+  assert.equal(validateIeltsListeningResponses({ ...complete, 11: 'extra' }, responseSpecs), false);
+  assert.equal(validateIeltsListeningResponses({ ...complete, 5: '' }, responseSpecs), false);
+  assert.equal(validateIeltsListeningResponses({ ...complete, 5: 'x'.repeat(81) }, responseSpecs), false);
 });
 
 test('fails closed on structural and private-answer mutations', () => {
@@ -282,7 +394,7 @@ test('fails closed on structural and private-answer mutations', () => {
 
   const invalidWordLimit = structuredClone(fixture);
   invalidWordLimit.groups[0].blanks[0].maxWords = 0;
-  assert.throws(() => projectIeltsListeningPractice(invalidWordLimit, '/audio.mp3'), /model response/i);
+  assert.throws(() => projectIeltsListeningPractice(invalidWordLimit, '/audio.mp3'), /invalid word limit/i);
 
   const unevenTable = structuredClone(fixture);
   unevenTable.groups[1].rows[0].push({ type: 'text', text: 'Unexpected third cell' });
@@ -330,8 +442,9 @@ test('the executable score handler freezes private headers and fail-closed routi
     })),
     disclosure: 'Not an official band score.',
   };
+  const responseSpecs = questionNumbers.map((number) => ({ number, kind: 'text' }));
   const lookup = (practiceId) => practiceId === 'welearn-listening-part-1-001'
-    ? { identity: { contentVersion: 'v1' }, questionNumbers, score: () => scoreResult }
+    ? { identity: { contentVersion: 'v1' }, questionNumbers, responseSpecs, score: () => scoreResult }
     : null;
   const request = (body, contentType = 'application/json') => new Request('https://example.test/api/practica/ielts/listening/score', {
     method: 'POST',
@@ -466,6 +579,18 @@ test('the real source is server-only and uses a dedicated original asset', () =>
   assert.deepEqual(ieltsListeningPublicQuestionNumbers(projectIeltsListeningPractice(fixture, '/audio.mp3')), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   assert.match(sessionClient, /part-\$\{practice\.part\}/);
   assert.doesNotMatch(sessionClient, /Part 1 guide|Listening Practice 001|Submit 10 answers|Complete all ten/);
+  assert.match(sessionClient, /switch \(group\.type\)/);
+  assert.match(sessionClient, /case 'single-choice'/);
+  assert.match(sessionClient, /case 'map-labelling'/);
+  assert.match(sessionClient, /<fieldset/);
+  assert.match(sessionClient, /<legend>/);
+  assert.match(sessionClient, /type="radio"/);
+  assert.match(sessionClient, /<input\s+type="radio"\s+autoComplete="off"/);
+  assert.match(sessionClient, /<select/);
+  assert.match(sessionClient, /<select[\s\S]{0,160}autoComplete="off"/);
+  assert.match(sessionClient, /Text description of the floor plan/);
+  assert.match(sessionClient, /alt=\{group\.map\.alt\}/);
+  assert.doesNotMatch(sessionClient, /dangerouslySetInnerHTML|foreignObject/);
   const clientRegistryImports = listFilesRecursively(path.join(root, 'src'))
     .filter((filePath) => /\.(?:ts|tsx)$/.test(filePath))
     .filter((filePath) => fs.readFileSync(filePath, 'utf8').includes("'use client'"))

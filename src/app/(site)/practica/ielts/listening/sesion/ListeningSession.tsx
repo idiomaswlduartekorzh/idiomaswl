@@ -1,24 +1,36 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, Check, Headphones, RotateCcw, Send, ShieldCheck, X } from 'lucide-react';
 
 import type {
   IeltsListeningPublicBlank,
   IeltsListeningPublicFormGroup,
+  IeltsListeningPublicGroup,
+  IeltsListeningPublicMapLabellingGroup,
   IeltsListeningPublicPractice,
+  IeltsListeningPublicSingleChoiceGroup,
   IeltsListeningPublicTableGroup,
   IeltsListeningScoreResult,
 } from '@/lib/ielts/listening-practice-contract';
 import {
   ieltsListeningPublicQuestionNumbers,
+  ieltsListeningPublicResponseSpecs,
   ieltsListeningStorageKey,
 } from '@/lib/ielts/listening-public-contract';
 import styles from './ListeningSession.module.css';
 
 type Phase = 'active' | 'submitting' | 'review';
 type OutcomeMap = Record<string, boolean>;
+
+interface GroupResponseProps {
+  responses: Record<string, string>;
+  disabled: boolean;
+  outcomes: OutcomeMap;
+  onAnswer: (number: number, value: string) => void;
+}
 
 interface StoredAttempt {
   schemaVersion: 1;
@@ -104,11 +116,7 @@ function TemplateLine({
 
 function FormGroup({ group, ...props }: {
   group: IeltsListeningPublicFormGroup;
-  responses: Record<string, string>;
-  disabled: boolean;
-  outcomes: OutcomeMap;
-  onAnswer: (number: number, value: string) => void;
-}) {
+} & GroupResponseProps) {
   const blanks = useMemo(() => new Map(group.blanks.map((blank) => [blank.number, blank])), [group.blanks]);
   return (
     <section className={styles.questionGroup} aria-labelledby={`${group.id}-title`}>
@@ -124,11 +132,7 @@ function FormGroup({ group, ...props }: {
 
 function TableGroup({ group, responses, disabled, outcomes, onAnswer }: {
   group: IeltsListeningPublicTableGroup;
-  responses: Record<string, string>;
-  disabled: boolean;
-  outcomes: OutcomeMap;
-  onAnswer: (number: number, value: string) => void;
-}) {
+} & GroupResponseProps) {
   return (
     <section className={styles.questionGroup} aria-labelledby={`${group.id}-title`}>
       <header><span>Questions {group.questionRange[0]}–{group.questionRange[1]}</span><p id={`${group.id}-title`}>{group.instruction}</p></header>
@@ -142,8 +146,116 @@ function TableGroup({ group, responses, disabled, outcomes, onAnswer }: {
   );
 }
 
+function SingleChoiceGroup({ group, responses, disabled, outcomes, onAnswer }: {
+  group: IeltsListeningPublicSingleChoiceGroup;
+} & GroupResponseProps) {
+  return (
+    <section className={styles.questionGroup} aria-labelledby={`${group.id}-title`}>
+      <header><span>Questions {group.questionRange[0]}–{group.questionRange[1]}</span><p id={`${group.id}-title`}>{group.instruction}</p></header>
+      <div className={styles.choiceList}>
+        {group.questions.map((question) => {
+          const outcome = outcomes[String(question.number)];
+          const statusId = `${group.id}-${question.number}-status`;
+          return (
+            <fieldset
+              className={`${styles.choiceQuestion} ${outcome === true ? styles.answerCorrect : outcome === false ? styles.answerIncorrect : ''}`}
+              key={question.number}
+              aria-describedby={outcome === undefined ? undefined : statusId}
+              aria-invalid={outcome === false ? true : undefined}
+            >
+              <legend><span>{question.number}</span>{question.prompt}</legend>
+              <div className={styles.choiceOptions}>
+                {question.options.map((option) => (
+                  <label key={option.key}>
+                    <input
+                      type="radio"
+                      autoComplete="off"
+                      name={`answer-${question.number}`}
+                      value={option.key}
+                      checked={responses[String(question.number)] === option.key}
+                      disabled={disabled}
+                      onChange={() => onAnswer(question.number, option.key)}
+                    />
+                    <strong>{option.key}</strong>
+                    <span>{option.label}</span>
+                  </label>
+                ))}
+              </div>
+              {outcome !== undefined && <span className={styles.answerStatus} id={statusId}>{outcome ? <Check size={15} aria-hidden="true" /> : <X size={15} aria-hidden="true" />}{outcome ? 'Correct' : 'Incorrect'}</span>}
+            </fieldset>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+function MapLabellingGroup({ group, responses, disabled, outcomes, onAnswer }: {
+  group: IeltsListeningPublicMapLabellingGroup;
+} & GroupResponseProps) {
+  const descriptionId = `${group.id}-map-description`;
+  return (
+    <section className={styles.questionGroup} aria-labelledby={`${group.id}-title`}>
+      <header><span>Questions {group.questionRange[0]}–{group.questionRange[1]}</span><p id={`${group.id}-title`}>{group.instruction}</p></header>
+      <div className={styles.mapExercise}>
+        <div>
+          <figure className={styles.mapFigure} aria-describedby={descriptionId}>
+            <Image src={group.map.url} width={group.map.width} height={group.map.height} alt={group.map.alt} sizes="(max-width: 760px) 100vw, 58vw" unoptimized />
+            <figcaption>Use the lettered areas {group.map.areaKeys[0]}–{group.map.areaKeys.at(-1)} to label each place.</figcaption>
+          </figure>
+          <details className={styles.mapDescription} open>
+            <summary>Text description of the floor plan</summary>
+            <p id={descriptionId}>{group.map.longDescription}</p>
+          </details>
+        </div>
+        <ol className={styles.mapQuestions} start={group.questionRange[0]}>
+          {group.questions.map((question) => {
+            const outcome = outcomes[String(question.number)];
+            const selectId = `${group.id}-answer-${question.number}`;
+            const statusId = `${selectId}-status`;
+            return (
+              <li className={outcome === true ? styles.answerCorrect : outcome === false ? styles.answerIncorrect : ''} key={question.number} value={question.number}>
+                <label htmlFor={selectId}>{question.prompt}</label>
+                <select
+                  id={selectId}
+                  autoComplete="off"
+                  name={`answer-${question.number}`}
+                  value={responses[String(question.number)] ?? ''}
+                  disabled={disabled}
+                  aria-describedby={outcome === undefined ? undefined : statusId}
+                  aria-invalid={outcome === false ? true : undefined}
+                  onChange={(event) => onAnswer(question.number, event.target.value)}
+                >
+                  <option value="">Choose a letter</option>
+                  {group.options.map((option) => <option key={option.key} value={option.key}>{option.key} — {option.label}</option>)}
+                </select>
+                {outcome !== undefined && <span className={styles.answerStatus} id={statusId}>{outcome ? <Check size={15} aria-hidden="true" /> : <X size={15} aria-hidden="true" />}{outcome ? 'Correct' : 'Incorrect'}</span>}
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+    </section>
+  );
+}
+
+function assertNeverGroup(group: never): never {
+  throw new Error(`Unsupported IELTS Listening public group: ${JSON.stringify(group)}`);
+}
+
+function QuestionGroup({ group, ...props }: { group: IeltsListeningPublicGroup } & GroupResponseProps) {
+  switch (group.type) {
+    case 'form': return <FormGroup group={group} {...props} />;
+    case 'table': return <TableGroup group={group} {...props} />;
+    case 'single-choice': return <SingleChoiceGroup group={group} {...props} />;
+    case 'map-labelling': return <MapLabellingGroup group={group} {...props} />;
+    default: return assertNeverGroup(group);
+  }
+}
+
 export default function ListeningSession({ practice }: { practice: IeltsListeningPublicPractice }) {
   const numbers = useMemo(() => ieltsListeningPublicQuestionNumbers(practice), [practice]);
+  const responseSpecs = useMemo(() => ieltsListeningPublicResponseSpecs(practice), [practice]);
   const practiceLabel = String(practice.practiceNumber).padStart(3, '0');
   const guideHref = `/practica/ielts/listening/part-${practice.part}`;
   const storageKey = ieltsListeningStorageKey(practice);
@@ -170,7 +282,12 @@ export default function ListeningSession({ practice }: { practice: IeltsListenin
       if (raw) {
         const stored = JSON.parse(raw) as Partial<StoredAttempt>;
         if (stored.schemaVersion === 1 && stored.contentVersion === practice.contentVersion && stored.phase === 'active' && stored.responses && typeof stored.responses === 'object') {
-          restoredResponses = Object.fromEntries(numbers.map((number) => [String(number), typeof stored.responses?.[String(number)] === 'string' ? stored.responses[String(number)] : '']));
+          restoredResponses = Object.fromEntries(responseSpecs.map((spec) => {
+            const storedValue = stored.responses?.[String(spec.number)];
+            if (typeof storedValue !== 'string') return [String(spec.number), ''];
+            if (spec.kind === 'choice' && !spec.allowedValues.some((value) => value === storedValue)) return [String(spec.number), ''];
+            return [String(spec.number), storedValue.slice(0, 80)];
+          }));
           if (typeof stored.attemptId === 'string') restoredAttemptId = stored.attemptId;
           if (typeof stored.createdAt === 'string') restoredCreatedAt = stored.createdAt;
         }
@@ -186,7 +303,7 @@ export default function ListeningSession({ practice }: { practice: IeltsListenin
       setHydrated(true);
     });
     return () => { cancelled = true; };
-  }, [numbers, practice.contentVersion, storageKey]);
+  }, [practice.contentVersion, responseSpecs, storageKey]);
 
   useEffect(() => {
     if (!hydrated || phase !== 'active') return;
@@ -216,7 +333,13 @@ export default function ListeningSession({ practice }: { practice: IeltsListenin
   }
 
   async function submit() {
-    if (!complete || phase !== 'active') return;
+    if (phase !== 'active') return;
+    if (!complete) {
+      const firstIncomplete = numbers.find((number) => !responses[String(number)]?.trim());
+      setError(`Complete every answer before submitting. ${firstIncomplete ? `Question ${firstIncomplete} is the first one still empty.` : ''}`.trim());
+      if (firstIncomplete) requestAnimationFrame(() => document.querySelector<HTMLElement>(`[name="answer-${firstIncomplete}"]`)?.focus());
+      return;
+    }
     setPhase('submitting');
     setError('');
     try {
@@ -269,9 +392,7 @@ export default function ListeningSession({ practice }: { practice: IeltsListenin
         </section>
 
         <div className={styles.questionStack}>
-          {practice.groups.map((group) => group.type === 'form'
-            ? <FormGroup key={group.id} group={group} responses={responses} disabled={phase !== 'active'} outcomes={outcomes} onAnswer={answer} />
-            : <TableGroup key={group.id} group={group} responses={responses} disabled={phase !== 'active'} outcomes={outcomes} onAnswer={answer} />)}
+          {practice.groups.map((group) => <QuestionGroup key={group.id} group={group} responses={responses} disabled={phase !== 'active'} outcomes={outcomes} onAnswer={answer} />)}
         </div>
 
         {phase === 'review' && result && (
@@ -295,7 +416,7 @@ export default function ListeningSession({ practice }: { practice: IeltsListenin
 
         <footer className={styles.submitBar} aria-live="polite">
           <div>{phase === 'review' && result ? <><strong>{result.correct}/{result.total} correct</strong><span>{result.disclosure}</span></> : <><strong>{complete ? 'All answers recorded' : `${practice.questionCount - answered} answer${practice.questionCount - answered === 1 ? '' : 's'} remaining`}</strong><span>Complete all {practice.questionCount} fields before submitting this attempt.</span></>}</div>
-          <div className={styles.submitActions}>{phase === 'review' ? <><Link href={guideHref}>Review the method</Link><button type="button" onClick={retry}><RotateCcw size={16} aria-hidden="true" /> New attempt</button></> : <button type="button" disabled={!complete || phase === 'submitting' || audioError} onClick={submit}><Send size={16} aria-hidden="true" /> {phase === 'submitting' ? 'Scoring…' : `Submit ${practice.questionCount} answers`}</button>}</div>
+          <div className={styles.submitActions}>{phase === 'review' ? <><Link href={guideHref}>Review the method</Link><button type="button" onClick={retry}><RotateCcw size={16} aria-hidden="true" /> New attempt</button></> : <button type="button" disabled={phase === 'submitting' || audioError} onClick={submit}><Send size={16} aria-hidden="true" /> {phase === 'submitting' ? 'Scoring…' : `Submit ${practice.questionCount} answers`}</button>}</div>
         </footer>
         {error && <p className={styles.error} role="alert">{error}</p>}
 

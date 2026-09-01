@@ -1,4 +1,7 @@
-import type { IeltsListeningPart } from './listening-practice-contract';
+import type {
+  IeltsListeningPart,
+  IeltsListeningResponseSpec,
+} from './listening-practice-contract';
 
 export interface IeltsListeningRegistryIdentity {
   readonly id: string;
@@ -23,6 +26,8 @@ export interface IeltsListeningRegistryBundleSnapshot extends IeltsListeningRegi
   };
   readonly publicQuestionNumbers: readonly number[];
   readonly questionNumbers: readonly number[];
+  readonly publicResponseSpecs: readonly IeltsListeningResponseSpec[];
+  readonly responseSpecs: readonly IeltsListeningResponseSpec[];
   readonly scoreProbe: {
     readonly total: number;
     readonly outcomes: ReadonlyArray<{ readonly number: number }>;
@@ -100,6 +105,36 @@ function assertExactNumbers(actual: readonly number[], expected: readonly number
   }
 }
 
+function assertResponseSpecs(
+  actual: readonly IeltsListeningResponseSpec[],
+  expectedNumbers: readonly number[],
+  label: string,
+): void {
+  assertExactNumbers(actual.map((spec) => spec.number), expectedNumbers, `${label} numbers`);
+  for (const spec of actual) {
+    if (spec.kind === 'choice' && (
+      !spec.allowedValues.length
+      || new Set(spec.allowedValues).size !== spec.allowedValues.length
+    )) {
+      throw new Error(`${label} has invalid choice values for question ${spec.number}.`);
+    }
+  }
+}
+
+function responseSpecsEqual(
+  left: readonly IeltsListeningResponseSpec[],
+  right: readonly IeltsListeningResponseSpec[],
+): boolean {
+  return left.length === right.length && left.every((spec, index) => {
+    const candidate = right[index];
+    if (!candidate || spec.number !== candidate.number || spec.kind !== candidate.kind) return false;
+    return spec.kind === 'text'
+      || (candidate.kind === 'choice'
+        && spec.allowedValues.length === candidate.allowedValues.length
+        && spec.allowedValues.every((value, valueIndex) => value === candidate.allowedValues[valueIndex]));
+  });
+}
+
 export function assertIeltsListeningRegistrationBundle(
   snapshot: IeltsListeningRegistryBundleSnapshot,
 ): void {
@@ -121,6 +156,11 @@ export function assertIeltsListeningRegistrationBundle(
   assertExactNumbers(publicPractice.questionRange, [expected[0], expected.at(-1)!], 'IELTS Listening public range');
   assertExactNumbers(snapshot.publicQuestionNumbers, expected, 'IELTS Listening public group questions');
   assertExactNumbers(snapshot.questionNumbers, expected, 'IELTS Listening scorer question range');
+  assertResponseSpecs(snapshot.publicResponseSpecs, expected, 'IELTS Listening public response specs');
+  assertResponseSpecs(snapshot.responseSpecs, expected, 'IELTS Listening server response specs');
+  if (!responseSpecsEqual(snapshot.publicResponseSpecs, snapshot.responseSpecs)) {
+    throw new Error(`IELTS Listening public/server response spec mismatch for ${identity.id}.`);
+  }
   if (scoreProbe.total !== expected.length) {
     throw new Error(`IELTS Listening scorer total mismatch for ${identity.id}.`);
   }

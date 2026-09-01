@@ -1,8 +1,10 @@
 # Plan de ataque — IELTS Practice Superhub
 
 Estado actual: Fase 0 implementada; Fase 1 construida como piloto original y bloqueada
-para integración hasta una escucha humana final del MP3. El build y CI estrictos fallan
-mientras el manifiesto continúe en estado `pilot`.
+para integración hasta una escucha humana final del MP3. Fase 2 ya tiene una candidata
+interna de Part 2 con contenido, MP3, mapa y evidencia ASR originales, pero no tiene ruta,
+catálogo, sitemap, registro ni assets bajo `public/`. El build y CI estrictos fallan
+mientras los manifiestos continúen sin aprobación humana.
 
 Rama: `codex/ielts-superhub`
 
@@ -184,6 +186,23 @@ misma aprobación reemplaza las etiquetas visibles de piloto.
 
 Se replica el contrato con guiones y audios originales. Los Sets 1–12 históricos siguen
 preservados como deuda separada y no se convierten automáticamente en landings.
+
+Part 2 avanza como `welearn-listening-part-2-001` en estado `draft`:
+
+- Questions 11–15 usan opción única A–C con scoring exacto en servidor;
+- Questions 16–20 usan etiquetado de mapa A–H con SVG original y controles HTML nativos;
+- source, MP3, SVG y ASR viven fuera de toda superficie pública;
+- el audio candidato se valida por hash y por metadata MPEG leída sin binarios externos;
+- el source se audita por AST y sólo puede llegar a la UI/scorer mediante adaptadores
+  canónicos; cualquier expresión dinámica, mutación o referencia no autorizada bloquea;
+- catálogo, source, manifiesto y SVG deben reconciliar URL, path, dimensiones y `areaKeys`;
+- landings, MP3, SVG, sitemap y marcadores huérfanos bloquean el gate inverso;
+- transcript, guion del generador y claves 11–20 tienen pruebas de deriva y mutación;
+- escucha humana y revisión visual/accesible siguen siendo bloqueos no delegables.
+
+La promoción de Part 2 será atómica: assets aprobados, source con metadata final,
+manifiesto aprobado, entrada de catálogo, registro estático, landing, sitemap, enlaces y
+marcadores entran en el mismo cambio o el gate falla.
 
 Puerta: `npm run harness:ielts:release` sin bloqueos para el recurso promocionado.
 

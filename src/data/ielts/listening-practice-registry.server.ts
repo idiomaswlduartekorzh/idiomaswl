@@ -5,13 +5,18 @@ import {
   getIeltsListeningPart1Identity,
   getIeltsListeningPart1Practice,
   getIeltsListeningPart1QuestionNumbers,
+  getIeltsListeningPart1ResponseSpecs,
   scoreIeltsListeningPart1Registration,
 } from '@/data/ielts/listening-part1-welearn-001.server';
 import type {
   IeltsListeningPublicPractice,
+  IeltsListeningResponseSpec,
   IeltsListeningScoreResult,
 } from '@/lib/ielts/listening-practice-contract';
-import { ieltsListeningPublicQuestionNumbers } from '@/lib/ielts/listening-public-contract';
+import {
+  ieltsListeningPublicQuestionNumbers,
+  ieltsListeningPublicResponseSpecs,
+} from '@/lib/ielts/listening-public-contract';
 import {
   assertIeltsListeningRegistrationBundle,
   assertIeltsListeningRegistryCatalog,
@@ -25,6 +30,7 @@ interface ServerPracticeRegistration {
   getIdentity: () => IeltsListeningRegistryIdentity;
   getPublicPractice: () => IeltsListeningPublicPractice;
   getQuestionNumbers: () => number[];
+  getResponseSpecs: () => IeltsListeningResponseSpec[];
   score: (responses: Readonly<Record<string, string>>) => {
     readonly identity: IeltsListeningRegistryIdentity;
     readonly result: IeltsListeningScoreResult;
@@ -35,6 +41,7 @@ interface ValidatedServerPracticeRegistration {
   readonly identity: IeltsListeningRegistryIdentity;
   readonly publicPractice: IeltsListeningPublicPractice;
   readonly questionNumbers: readonly number[];
+  readonly responseSpecs: readonly IeltsListeningResponseSpec[];
   readonly score: (responses: Readonly<Record<string, string>>) => IeltsListeningScoreResult;
 }
 
@@ -43,6 +50,7 @@ const REGISTRATION_ENTRIES: readonly (readonly [string, ServerPracticeRegistrati
     getIdentity: getIeltsListeningPart1Identity,
     getPublicPractice: getIeltsListeningPart1Practice,
     getQuestionNumbers: getIeltsListeningPart1QuestionNumbers,
+    getResponseSpecs: getIeltsListeningPart1ResponseSpecs,
     score: scoreIeltsListeningPart1Registration,
   }],
 ];
@@ -65,20 +73,34 @@ function validatedRegistration(
   const identity = registration.getIdentity();
   const publicPractice = registration.getPublicPractice();
   const publicQuestionNumbers = Object.freeze(ieltsListeningPublicQuestionNumbers(publicPractice));
+  const publicResponseSpecs = Object.freeze(ieltsListeningPublicResponseSpecs(publicPractice));
   const questionNumbers = Object.freeze([...registration.getQuestionNumbers()]);
+  const responseSpecs = Object.freeze(registration.getResponseSpecs().map((spec) =>
+    spec.kind === 'text' ? { ...spec } : { ...spec, allowedValues: [...spec.allowedValues] },
+  ));
   const probeResponses = Object.fromEntries(
     Array.from({ length: 10 }, (_, index) => [String((identity.part - 1) * 10 + index + 1), `__registry_probe_${index}__`]),
   );
   const scoreEnvelope = registration.score(probeResponses);
   assertIeltsListeningScoringIdentity(identity, scoreEnvelope.identity);
   const scoreProbe = scoreEnvelope.result;
-  const snapshot = { key, identity, publicPractice, publicQuestionNumbers, questionNumbers, scoreProbe } as const;
+  const snapshot = {
+    key,
+    identity,
+    publicPractice,
+    publicQuestionNumbers,
+    questionNumbers,
+    publicResponseSpecs,
+    responseSpecs,
+    scoreProbe,
+  } as const;
   assertIeltsListeningRegistrationBundle(snapshot);
 
   return Object.freeze({
     identity,
     publicPractice,
     questionNumbers,
+    responseSpecs,
     score(responses: Readonly<Record<string, string>>) {
       const scoreEnvelope = registration.score(responses);
       assertIeltsListeningScoringIdentity(identity, scoreEnvelope.identity);
@@ -124,6 +146,7 @@ export function getIeltsListeningScorer(practiceId: unknown) {
   return {
     identity: registration.identity,
     questionNumbers: registration.questionNumbers,
+    responseSpecs: registration.responseSpecs,
     score: registration.score,
   } as const;
 }

@@ -1,6 +1,7 @@
 import { readBoundedJson } from '../http/read-bounded-json.ts';
 import {
   validateIeltsListeningResponses,
+  type IeltsListeningResponseSpec,
   type IeltsListeningScoreResult,
 } from './listening-practice-contract.ts';
 
@@ -15,6 +16,7 @@ const RESPONSE_HEADERS = {
 interface IeltsListeningRequestScorer {
   readonly identity: { readonly contentVersion: string };
   readonly questionNumbers: readonly number[];
+  readonly responseSpecs: readonly IeltsListeningResponseSpec[];
   readonly score: (responses: Readonly<Record<string, string>>) => IeltsListeningScoreResult;
 }
 
@@ -49,7 +51,7 @@ export async function createIeltsListeningScoreResponse(
   if (!scorer || candidate.contentVersion !== scorer.identity.contentVersion) {
     return json({ code: 'unknown_practice' }, 404);
   }
-  if (!validateIeltsListeningResponses(candidate.responses, scorer.questionNumbers)) {
+  if (!validateIeltsListeningResponses(candidate.responses, scorer.responseSpecs)) {
     return json({ code: 'invalid_responses' }, 400);
   }
   return json(scorer.score(candidate.responses));

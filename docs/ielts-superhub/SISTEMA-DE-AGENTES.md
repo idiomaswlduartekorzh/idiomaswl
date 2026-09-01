@@ -72,6 +72,24 @@ cambios en `shared-seo` se hacen al final de una vertical slice ya aprobada.
 `check:ielts:truth` comprueba que la implementación coincide con estos estados. El gate
 estricto rechaza `pilot`, `blocked` o `legacy` cuando se intenta promocionar el recurso.
 
+## Controles fail-closed de una práctica Listening
+
+El Release Guardian no confía en un único manifiesto. Antes de una promoción reconcilia:
+
+- identidad, versión, parte y número entre catálogo, registro, DTO y scorer;
+- diez preguntas contiguas y response specs exactos para texto u opciones;
+- ausencia de transcript, claves y explicaciones en el DTO previo al submit;
+- MP3 físico, bytes, SHA-256, duración, canales, frecuencia y bitrate MPEG;
+- source parseado con el AST oficial de TypeScript: un único objeto literal `SOURCE`,
+  propiedades estáticas únicas, adaptadores canónicos y cero mutaciones, alias o escapes;
+- mapa físico, bytes, SHA-256, autoría, seguridad SVG, `viewBox`, textos accesibles y
+  `areaKeys` entre catálogo, source, manifiesto y SVG;
+- paridad inversa: ninguna landing, ruta de sitemap, MP3, SVG o marcador de release puede
+  existir sin una entrada pública completa en catálogo;
+- bloqueo humano de escucha y revisión visual sin autoaprobaciones de agentes.
+
+Las pruebas de mutación demuestran cada rechazo; no basta con que el caso feliz pase.
+
 ## Prohibiciones
 
 - No editar rutas, mocks, audio, scripts o tests exclusivos de TOEFL.

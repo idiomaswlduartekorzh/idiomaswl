@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "practiceId": "welearn-listening-part-2-001",
+  "contentVersion": "2026-09-01.draft.2",
+  "createdAt": "2026-09-01",
+  "ownership": {
+    "author": "Idiomas WeLearn",
+    "status": "draft-original-independent-practice",
+    "borrowedQuestions": false,
+    "borrowedTranscript": false,
+    "borrowedAudio": false,
+    "borrowedMap": false,
+    "trademarkDisclosure": "IELTS is a protected trademark. This resource is not affiliated with or endorsed by its owners."
+  },
+  "formatSources": [
+    "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening",
+    "https://ielts.org/take-a-test/test-types/ielts-general-training-test",
+    "https://ielts.org/news-and-insights/10-tips-for-answering-map-or-plan-questions-in-ielts-listening"
+  ],
+  "originalitySearch": {
+    "status": "completed-automated-search-review",
+    "checkedAt": "2026-09-01",
+    "queries": [
+      "\"Larkspur Repair House\" \"Fix and Share Day\"",
+      "\"six bicycle stands\" \"delivery van\" repair",
+      "\"The room farther along the same northern corridor\" sewing",
+      "\"glass-fronted room\" \"materials shop\" courtyard"
+    ],
+    "result": "No material exact match was observed for the four recorded phrase queries. Returned results were unrelated lexical overlaps; final editorial approval remains part of release review.",
+    "representativeUnrelatedResults": [
+      {
+        "title": "86—EIGHTY-SIX, Vol. 1",
+        "url": "https://lnori.com/book/19629/86eighty-six-vol-1",
+        "reason": "Generic corridor and room vocabulary only; no scenario, questions or answer sequence match."
+      },
+      {
+        "title": "Mrs. Dalloway — University of Virginia anthology",
+        "url": "https://anthology.lib.virginia.edu/work/Woolf/woolf-dalloway",
+        "reason": "Generic sewing and corridor vocabulary only; no assessment-content match."
+      }
+    ]
+  },
+  "audio": {
+    "candidatePath": "docs/ielts-superhub/candidates/welearn-listening-part-2-001/welearn-listening-part-2-001.mp3",
+    "futurePublicPath": "public/audio/ielts/listening/welearn-listening-part-2-001.mp3",
+    "generator": "scripts/generate-ielts-listening-part2-audio.mjs",
+    "renderer": "scripts/lib/render-ielts-piper-segments.py",
+    "engine": {
+      "name": "Piper",
+      "version": "1.7.0",
+      "source": "https://github.com/OHF-Voice/piper1-gpl",
+      "license": "GPL-3.0-or-later"
+    },
+    "voiceModel": {
+      "id": "en_GB-vctk-medium",
+      "sha256": "4e9fc85ab9009385319fc6bae7f55577f8a2d7ee77fd9159a5500eb6531f41e6",
+      "repositoryLicense": "MIT",
+      "repositoryCommit": "39ab474be869e9181350af6a65e4953eef67aaa0",
+      "modelCard": "https://huggingface.co/rhasspy/piper-voices/blob/39ab474be869e9181350af6a65e4953eef67aaa0/en/en_GB/vctk/medium/MODEL_CARD",
+      "modelCardSha256": "53ec6b1fd90d9125d5bebac55261efd27f7e8d6dc962f605a5b5f796df2ec7fb",
+      "modelCardBytes": 326,
+      "trainingDataset": "CSTR VCTK Corpus",
+      "datasetSource": "https://datashare.ed.ac.uk/handle/10283/3443",
+      "datasetLicense": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "VCTK Corpus, University of Edinburgh, used through the Piper en_GB-vctk-medium voice model under CC BY 4.0."
+    },
+    "voices": [
+      { "role": "coordinator", "speaker": "p226", "speakerId": 95, "locale": "en_GB" }
+    ],
+    "rightsReview": {
+      "status": "documented-open-licence",
+      "checkedAt": "2026-09-01",
+      "publicationUse": "permitted-with-attribution",
+      "attributionLocation": "pending future Part 2 landing"
+    },
+    "durationSeconds": 231.482404,
+    "bytes": 2778867,
+    "sha256": "6ed0f9f1038a2ab6cf4f257b587e4d1ac6afc9213c2625fe9a4fb71b879f60a7",
+    "channels": 1,
+    "sampleRateHz": 44100,
+    "targetBitRate": 96000,
+    "isolatedPartAsset": true
+  },
+  "map": {
+    "candidatePath": "docs/ielts-superhub/candidates/welearn-listening-part-2-001/welearn-listening-part-2-001-map.svg",
+    "futurePublicPath": "public/images/ielts/listening/welearn-listening-part-2-001-map.svg",
+    "status": "candidate-original-vector",
+    "author": "Idiomas WeLearn",
+    "borrowedArtwork": false,
+    "width": 1000,
+    "height": 650,
+    "bytes": 3358,
+    "sha256": "eb50548a5df2c48d018c719c72dbef797e2b77d35da89cac3e5a18d9a4a633b3",
+    "areaKeys": ["A", "B", "C", "D", "E", "F", "G", "H"],
+    "altReviewed": false,
+    "visualAmbiguityReview": "pending"
+  },
+  "automatedAsrAudit": {
+    "status": "candidate-evidence-only",
+    "checkedAt": "2026-09-01",
+    "engine": "OpenAI Whisper small",
+    "language": "en",
+    "path": "docs/ielts-superhub/candidates/welearn-listening-part-2-001/asr/welearn-listening-part-2-001.json",
+    "bytes": 29444,
+    "sha256": "a2d7cf677273e8761dfdfa9d37ec48c4cf6810608303748334ad780ad8ac6ebb",
+    "criticalAnswerEvidence": "10-of-10 present and non-contradictory in ASR output",
+    "observedCautions": [
+      "Amira was transcribed as Amir.",
+      "Children under twelve was imperfectly decoded as 'one under 12'; the participation and adult-supervision evidence remains explicit.",
+      "Several non-answer compounds were imperfectly decoded, including inner-tube, upper-left and glass-fronted."
+    ],
+    "disclosure": "Automated ASR is diagnostic evidence only and cannot satisfy the required human pronunciation, pacing and intelligibility review."
+  },
+  "contentAudit": {
+    "speakerCount": 1,
+    "socialEverydayContext": true,
+    "questionRange": [11, 20],
+    "singleChoiceRange": [11, 15],
+    "mapLabellingRange": [16, 20],
+    "singleChoiceOptionsPerQuestion": 3,
+    "mapOptionKeys": ["A", "B", "C", "D", "E", "F", "G", "H"],
+    "rawScoreOnly": true,
+    "bandPrediction": false
+  },
+  "automatedChecks": {
+    "tenContinuousQuestions": "authored-pending-runtime-validation",
+    "publicDtoAllowlist": "pending-registration",
+    "serverOnlyScoring": "pending-registration",
+    "postSubmitExplanations": "authored-pending-runtime-validation",
+    "audioChecksum": "candidate-recorded",
+    "mapChecksum": "candidate-recorded-pending-visual-approval",
+    "legacySetImported": false
+  },
+  "release": {
+    "status": "draft",
+    "blockers": [
+      "Complete a human pronunciation, pacing and intelligibility review.",
+      "Complete a visual and accessibility review of the candidate map.",
+      "Replace non-release-ready audio metadata in the server source.",
+      "Promote approved assets to public only in the same change that registers and tests Part 2."
+    ],
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}
