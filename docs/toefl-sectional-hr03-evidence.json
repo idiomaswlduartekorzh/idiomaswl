@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "gateId": "HR-03",
+  "initiative": "toefl-sectional-seo-curation-harness",
+  "status": "pending-human-review",
+  "generatedAtUtc": "2026-09-01T01:21:31Z",
+  "baseCommitSha": "5cfbfec1",
+  "approvedInputs": [
+    {
+      "gateId": "HR-01A",
+      "path": "docs/toefl-sectional-hr01a-information-architecture.md",
+      "sha256": "5e4dddc103caa44204247b3842e5c60c8b6295564ba0ddd8b85704f8f70bf0a6"
+    },
+    {
+      "gateId": "HR-02-v2",
+      "path": "docs/toefl-sectional-hr02-evidence.json",
+      "sha256": "7446f43ee8a291bd3bbb8e60134de98b9997ea31f2b02afad622975a379808b3"
+    }
+  ],
+  "artifacts": [
+    {
+      "kind": "interconnection-spec-and-flow-map",
+      "path": "docs/toefl-sectional-hr03-interconnection.md",
+      "sha256": "0631d806fa86eab5456688e1364d4e8475bbdf9879b5a88319b45e2726dfd83c"
+    }
+  ],
+  "routeAudit": {
+    "newIndexableRoutesProposed": [
+      "/practica/toefl/ejercicios"
+    ],
+    "existingRouteFamiliesPreserved": [
+      "/practica/toefl",
+      "/practica/toefl/{section}",
+      "/practica/toefl/reading/formato-2026/{task}",
+      "/practica/toefl/writing/{task}",
+      "/examenes/toefl",
+      "/examenes/toefl/practica/{mockId}"
+    ],
+    "placeholderRoutesProposed": [],
+    "massMigrationsProposed": false,
+    "indexableOrphansInProposedFlow": 0
+  },
+  "humanDecisionRequired": [
+    "hub-catalog-section-task-relationship",
+    "non-linked-unavailable-listening-speaking-tasks",
+    "mock-result-return-to-exercise-catalog",
+    "editorial-exercises-parent-in-breadcrumbs-without-url-migration",
+    "bidirectional-links-between-practice-and-mocks"
+  ],
+  "limitations": [
+    "No production pages or routes were changed.",
+    "The zero-orphan result applies to the proposed TOEFL flow, not to a full crawl of the deployed site.",
+    "Mock-result deep-linking by error type remains deferred until a reliable error classification contract exists.",
+    "Independent SEO and UX reviewers have not been recorded."
+  ]
+}
