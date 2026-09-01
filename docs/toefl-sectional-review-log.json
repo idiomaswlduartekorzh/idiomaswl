@@ -133,6 +133,21 @@
       ],
       "independentReview": true,
       "notes": "Aprobación académica explícita comunicada con el texto 'Zhanna Korzh aprueba la plantilla HR-04 renderizada. C09 continúa bloqueado.'. En combinación con HR-04-UI-SEO, esta decisión cierra HR-04 y habilita la preparación del piloto funcional HR-05. C09 conserva el bloqueo académico: no se publican conteos ni tiempos oficiales. Esta aprobación no autoriza integración en main, despliegue, release ni el cruce de HR-05 sin su propia revisión humana."
+    },
+    {
+      "gateId": "HR-05-EXECUTIVE",
+      "reviewer": "David Duarte",
+      "role": "chief-executive-officer",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-01T16:58:40Z",
+      "commitSha": "758966144efd4e593e4888b9e9a77a83c897f629",
+      "contentDigest": "0bff855bc408508dc9c1d08fdaadbe5dc18da1d6e1603b54f2f751c27ef38708",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr05-review-packet.md",
+        "docs/toefl-sectional-hr05-evidence.json"
+      ],
+      "independentReview": false,
+      "notes": "Aprobación humana explícita recibida con el texto 'HR-05 aprobado.'. Se registra como aprobación ejecutiva del gate completo por David Duarte, CEO, con la identidad y fecha comunicadas previamente. No se infiere que el cargo de CEO sustituya las atestaciones específicas de QA humano, ingeniería y académico exigidas por el harness. Hasta registrar esos alcances con sus revisores, HR-05 no se considera cerrado y no habilita HR-06. C09 continúa bloqueado; tampoco se autoriza integración en main, despliegue ni release."
     }
   ]
 }
