@@ -100,6 +100,12 @@ El primer universo de investigación de Listening es:
 | IELTS listening score / band score | guía explicativa, nunca calculadora “oficial” | no crear aún |
 | IELTS listening tips | integrar por parte/habilidad; evitar una landing genérica duplicada | no crear aún |
 
+El corte de evidencia observable y las decisiones `create / merge / defer` del 1 de
+septiembre de 2026 están documentados en
+[`SEO-DEMAND-MAP-2026-09-01.md`](SEO-DEMAND-MAP-2026-09-01.md). Autocomplete y la SERP
+sirven para descubrir lenguaje e intención, no para afirmar volumen; Search Console,
+Trends y Keyword Planner siguen siendo puertas de cuantificación antes de escalar rutas.
+
 Cada página indexable debe tener H1 y title alineados con la consulta, respuesta directa,
 ejemplo original, práctica funcional, explicación posterior, enlaces a la siguiente
 acción y una razón real para existir separada. Las sesiones, filtros y resultados no son

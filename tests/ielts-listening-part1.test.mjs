@@ -67,6 +67,13 @@ function forbiddenPaths(value, pathName = '$') {
   });
 }
 
+function listFilesRecursively(directory) {
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const absolutePath = path.join(directory, entry.name);
+    return entry.isDirectory() ? listFilesRecursively(absolutePath) : [absolutePath];
+  });
+}
+
 test('projects a serializable allowlist DTO with no private transcript or answer keys', () => {
   const before = structuredClone(fixture);
   const dto = projectIeltsListeningPractice(fixture, '/resolved/audio.mp3');
@@ -203,6 +210,26 @@ test('the real source is server-only and uses a dedicated original asset', () =>
   assert.match(source, /'16th'/);
   assert.match(source, /'2\.5 hours'/);
   assert.match(source, /'44 pounds'/);
+});
+
+test('indexable landings make truthful, non-cannibalizing search promises', () => {
+  const listeningRoot = path.join(root, 'src/app/(site)/practica/ielts/listening');
+  const hub = fs.readFileSync(path.join(root, 'src/app/(site)/practica/ielts/listening/page.tsx'), 'utf8');
+  const partOne = fs.readFileSync(path.join(root, 'src/app/(site)/practica/ielts/listening/part-1/page.tsx'), 'utf8');
+  const sitemap = fs.readFileSync(path.join(root, 'src/app/sitemap.ts'), 'utf8');
+  const sectionAliasPages = listFilesRecursively(listeningRoot)
+    .map((filePath) => path.relative(listeningRoot, filePath).split(path.sep).join('/'))
+    .filter((filePath) => /^section-\d+\/page\.tsx$/.test(filePath));
+  assert.match(hub, /IELTS Listening Practice with Audio: Part 1 \+ Format Guide/);
+  assert.match(hub, /transcript after submission/);
+  assert.doesNotMatch(hub, /Parts 1–4 with Audio/);
+  assert.match(partOne, /const URL = 'https:\/\/www\.idiomaswl\.com\/practica\/ielts\/listening\/part-1'/);
+  assert.match(partOne, /alternates: { canonical: URL }/);
+  assert.match(partOne, /Is IELTS Listening Part 1 the same as Section 1\?/);
+  assert.match(partOne, /keeps both names on one canonical URL/);
+  assert.match(partOne, /answers, explanations and transcript after submission/);
+  assert.deepEqual(sectionAliasPages, []);
+  assert.doesNotMatch(sitemap, /\/practica\/ielts\/listening\/section-\d+/);
 });
 
 test('the audited audio file matches the server manifest', () => {

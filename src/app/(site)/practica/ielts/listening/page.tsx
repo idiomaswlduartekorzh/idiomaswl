@@ -9,9 +9,9 @@ const URL = 'https://www.idiomaswl.com/practica/ielts/listening';
 const IELTS_FORMAT_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening';
 
 export const metadata: Metadata = {
-  title: 'IELTS Listening Practice: Parts 1–4 with Audio',
+  title: 'IELTS Listening Practice with Audio: Part 1 + Format Guide',
   description:
-    'Learn the four IELTS Listening parts, then practise Part 1 with original WeLearn audio, 10 questions and server-scored feedback.',
+    'Practise Part 1 with original audio, 10 questions, answers, explanations and transcript after submission, and learn how Parts 2–4 work.',
   keywords: ['IELTS Listening practice', 'IELTS Listening parts', 'IELTS Listening exercises', 'IELTS Listening with audio'],
   robots: { index: true, follow: true },
   alternates: { canonical: URL },

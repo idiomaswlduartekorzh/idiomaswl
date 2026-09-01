@@ -14,7 +14,7 @@ const CC_BY_URL = 'https://creativecommons.org/licenses/by/4.0/';
 export const metadata: Metadata = {
   title: 'IELTS Listening Part 1 Practice: Questions 1–10',
   description:
-    'Practise IELTS Listening Part 1 with an original two-person everyday conversation, 10 questions, audio and server-scored feedback.',
+    'Practise IELTS Listening Part 1 with original audio, Questions 1–10, instant scoring, answers, explanations and transcript after submission.',
   keywords: ['IELTS Listening Part 1 practice', 'IELTS Listening Section 1', 'IELTS Listening questions 1 to 10'],
   robots: { index: true, follow: true },
   alternates: { canonical: URL },
@@ -28,6 +28,7 @@ export const metadata: Metadata = {
 
 const FAQS = [
   { question: 'What happens in IELTS Listening Part 1?', answer: 'You hear two people speaking in an everyday social situation, such as arranging or booking a service.' },
+  { question: 'Is IELTS Listening Part 1 the same as Section 1?', answer: 'Yes. Many preparation searches and older materials use “Section 1” for the first ten-question segment. This page uses the current “Part 1” wording and keeps both names on one canonical URL.' },
   { question: 'How many questions are in Part 1?', answer: 'Part 1 contains 10 questions. In this WeLearn practice, they are form and table completion items.' },
   { question: 'Can I replay this practice audio?', answer: 'Yes. Replay is enabled for deliberate learning. In the IELTS test itself, you hear the recording once.' },
   { question: 'Does this practice predict an IELTS band score?', answer: 'No. The /10 result measures only this independent WeLearn exercise and does not award or predict an official IELTS band.' },
@@ -61,7 +62,7 @@ export default function IeltsListeningPart1Page() {
               <p className={styles.eyebrow}><Headphones size={15} aria-hidden="true" /> Listening Part 1 · Questions 1–10</p>
               <h1>IELTS Listening Part 1 Practice: Questions 1–10</h1>
               <p className={styles.lead}>Train the detail-heavy opening conversation with an original booking scenario, a dedicated audio track and a complete ten-answer submission.</p>
-              <p className={styles.directAnswer}><strong>Direct answer:</strong> In IELTS Listening Part 1, you hear a conversation between two people in an everyday social situation and answer 10 questions in recording order. You hear the recording once. This original WeLearn practice enables replay so you can build the method before adding exam pressure.</p>
+              <p className={styles.directAnswer}><strong>Direct answer:</strong> IELTS Listening Part 1—also called Section 1 in many preparation searches—is a conversation between two people in an everyday social situation. You answer 10 questions in recording order and hear the recording once. This original WeLearn practice enables replay so you can build the method before adding exam pressure.</p>
               <div className={styles.actions}><Link className={styles.primaryAction} href={SESSION_URL}>Start Practice 001 <ArrowRight size={17} aria-hidden="true" /></Link><Link className={styles.secondaryAction} href="/practica/ielts/listening">Back to all four parts</Link></div>
             </div>
             <aside className={styles.practiceTicket} aria-label="Practice 001 details">
