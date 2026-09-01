@@ -4,6 +4,8 @@
 
 **Corte técnico:** `ee125032`
 
+**Naturaleza:** overlay de decisión para HR-03, no una fuente de verdad paralela. Después de aprobación, las decisiones deben reconciliarse en `docs/ielts-toefl-route-map.md`, `docs/ielts-toefl-content-inventory.json`, `docs/ielts-toefl-keyword-map.csv` y `src/data/practica-exams/seo-catalog.ts`; este anexo se conserva solo como evidencia del gate.
+
 ## 1. Principio de propiedad
 
 Cada página debe responder una intención primaria distinta. El hub no intenta ser la mejor respuesta para cada tarea; el catálogo no reemplaza las guías; una página de habilidad compatible no se presenta como tarea vigente; y los simulacros no compiten con los ejercicios individuales.
