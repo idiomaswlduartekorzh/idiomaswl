@@ -7,6 +7,7 @@ import styles from './ListeningHub.module.css';
 
 const URL = 'https://www.idiomaswl.com/practica/ielts/listening';
 const IELTS_FORMAT_URL = 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening';
+const IELTS_SCORE_URL = 'https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail';
 
 export const metadata: Metadata = {
   title: 'IELTS Listening Practice with Audio: Part 1 + Format Guide',
@@ -84,6 +85,52 @@ const PARTS: readonly ListeningPartSummary[] = [
   },
 ];
 
+const QUESTION_TYPES = [
+  {
+    number: '01',
+    title: 'Multiple choice',
+    detail: 'Choose one answer or, when the instruction says so, more than one answer from a longer list.',
+    skill: 'Main ideas, specific details and careful option tracking.',
+  },
+  {
+    number: '02',
+    title: 'Matching',
+    detail: 'Connect items heard in the recording with a fixed list of options.',
+    skill: 'Following speakers and recognising how facts connect.',
+  },
+  {
+    number: '03',
+    title: 'Plan, map or diagram labelling',
+    detail: 'Place labels on a visual by following a description, route or process.',
+    skill: 'Spatial language, directions and visual orientation.',
+  },
+  {
+    number: '04',
+    title: 'Form, note, table, flow-chart or summary completion',
+    detail: 'Fill gaps in an outline while respecting the exact word and number limit.',
+    skill: 'Key facts, categories and the main points worth recording.',
+  },
+  {
+    number: '05',
+    title: 'Sentence completion',
+    detail: 'Complete statements that summarise important information from the recording.',
+    skill: 'Important details and relationships such as cause and effect.',
+  },
+  {
+    number: '06',
+    title: 'Short-answer questions',
+    detail: 'Write brief facts from the recording within the stated word limit.',
+    skill: 'Places, prices, times and other precise information.',
+  },
+] as const;
+
+const SCORE_GUIDE = [
+  { band: '5', averageCorrect: '16' },
+  { band: '6', averageCorrect: '23' },
+  { band: '7', averageCorrect: '30' },
+  { band: '8', averageCorrect: '35' },
+] as const;
+
 export default function IeltsListeningHubPage() {
   return (
     <>
@@ -105,7 +152,7 @@ export default function IeltsListeningHubPage() {
           isAccessibleForFree: true,
           learningResourceType: ['Guide', 'Practice'],
           educationalUse: ['self-study', 'practice'],
-          teaches: ['IELTS Listening format', 'listening for detail', 'answer prediction'],
+          teaches: ['IELTS Listening format', 'IELTS Listening question types', 'IELTS Listening scoring', 'listening for detail', 'answer prediction'],
           provider: { '@type': 'Organization', name: 'Idiomas WeLearn', url: 'https://www.idiomaswl.com' },
           isPartOf: { '@type': 'Course', name: 'IELTS Practice', url: 'https://www.idiomaswl.com/practica/ielts' },
         }}
@@ -166,6 +213,54 @@ export default function IeltsListeningHubPage() {
             </div>
           </section>
 
+          <section id="question-types" className={styles.section} aria-labelledby="question-types-heading">
+            <div className={styles.sectionHeading}>
+              <p className={styles.kicker}>Official task families</p>
+              <h2 id="question-types-heading">Six IELTS Listening question types</h2>
+              <p>IELTS groups the tasks into six families. The exact mix varies, so train the decision each format demands instead of memorising one worksheet pattern.</p>
+            </div>
+            <div className={styles.typeGrid}>
+              {QUESTION_TYPES.map((questionType) => (
+                <article className={styles.typeCard} key={questionType.number}>
+                  <span className={styles.typeNumber}>{questionType.number}</span>
+                  <h3>{questionType.title}</h3>
+                  <p>{questionType.detail}</p>
+                  <small>{questionType.skill}</small>
+                </article>
+              ))}
+            </div>
+            <div className={styles.practiceBridge}>
+              <div><strong>Practise a completion task now</strong><p>Part 1 Practice 001 combines form and table completion with original audio and feedback after submission.</p></div>
+              <Link href="/practica/ielts/listening/part-1">Open Questions 1–10 <ArrowRight size={16} aria-hidden="true" /></Link>
+            </div>
+          </section>
+
+          <section id="scoring" className={styles.section} aria-labelledby="scoring-heading">
+            <div className={styles.sectionHeading}>
+              <p className={styles.kicker}>Raw score boundary</p>
+              <h2 id="scoring-heading">How IELTS Listening scoring works</h2>
+              <p>Each correct answer receives one mark. IELTS converts the resulting score out of 40 to a band reported in whole or half bands.</p>
+            </div>
+            <div className={styles.scoreLayout}>
+              <div className={styles.scoreExplanation}>
+                <span>Official scoring path</span>
+                <p className={styles.scoreFormula}><strong>40 questions</strong><i aria-hidden="true">→</i><strong>raw score /40</strong><i aria-hidden="true">→</i><strong>IELTS band</strong></p>
+                <p>The official figures are average reference points. The precise raw mark needed for a band can vary slightly from one test version to another.</p>
+              </div>
+              <div className={styles.scoreTableWrap}>
+                <table className={styles.scoreTable}>
+                  <caption>Official average Listening marks at selected band levels</caption>
+                  <thead><tr><th scope="col">Band</th><th scope="col">Average correct /40</th></tr></thead>
+                  <tbody>{SCORE_GUIDE.map((row) => <tr key={row.band}><th scope="row">{row.band}</th><td>{row.averageCorrect}</td></tr>)}</tbody>
+                </table>
+              </div>
+            </div>
+            <aside className={styles.scoreBoundary}>
+              <strong>A 10-question practice is not a band calculator.</strong>
+              <p>WeLearn reports Practice 001 as a raw result out of 10. It does not multiply, convert or present that short exercise as an official IELTS band.</p>
+            </aside>
+          </section>
+
           <section className={styles.section} aria-labelledby="official-practice-heading">
             <div className={styles.sectionHeading}>
               <p className={styles.kicker}>Know the boundary</p>
@@ -197,7 +292,7 @@ export default function IeltsListeningHubPage() {
 
           <aside className={styles.sourceNote} aria-label="Sources and editorial note">
             <strong>Source boundary · reviewed 1 September 2026</strong>
-            <p>Format facts are checked against the <a href={IELTS_FORMAT_URL} target="_blank" rel="noopener noreferrer" aria-label="official IELTS Listening format (opens in a new tab)">official IELTS Listening format</a>. Practice scripts and questions are independently created by Idiomas WeLearn; every audio asset must also carry a documented publication licence. IELTS is a protected trademark; this resource is not affiliated with or endorsed by its owners.</p>
+            <p>Format and task-type facts are checked against the <a href={IELTS_FORMAT_URL} target="_blank" rel="noopener noreferrer" aria-label="official IELTS Listening format (opens in a new tab)">official IELTS Listening format</a>. Raw-score reference points and their version caveat come from <a href={IELTS_SCORE_URL} target="_blank" rel="noopener noreferrer" aria-label="official IELTS scoring explanation (opens in a new tab)">IELTS scoring in detail</a>. Practice scripts and questions are independently created by Idiomas WeLearn; every audio asset must also carry a documented publication licence. IELTS is a protected trademark; this resource is not affiliated with or endorsed by its owners.</p>
           </aside>
         </div>
       </div>

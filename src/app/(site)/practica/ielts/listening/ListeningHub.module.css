@@ -195,6 +195,38 @@
 .liveBadge { color: var(--listen-signal); }
 .lockedBadge { color: var(--listen-muted); }
 
+.typeGrid { display: grid; gap: 1px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.6rem; }
+.typeCard { background: var(--listen-card); border: 1px solid var(--listen-line); min-height: 250px; padding: 1.35rem; }
+.typeNumber { color: var(--listen-accent); font-family: var(--mono, ui-monospace, monospace); font-size: .78rem; font-weight: 850; }
+.typeCard h3 { font-size: 1.12rem; line-height: 1.25; margin: 1rem 0 .55rem; }
+.typeCard p { color: var(--listen-muted); line-height: 1.58; margin: 0; }
+.typeCard small { border-top: 1px solid var(--listen-line); color: var(--listen-signal); display: block; font-size: .77rem; font-weight: 750; line-height: 1.5; margin-top: 1.1rem; padding-top: .8rem; }
+
+.practiceBridge { align-items: center; background: var(--listen-panel); border-top: 4px solid var(--listen-accent); color: #fff; display: flex; gap: 1.25rem; justify-content: space-between; margin-top: 1px; padding: 1.25rem 1.4rem; }
+.practiceBridge strong { font-size: 1rem; }
+.practiceBridge p { color: #c8dce5; line-height: 1.55; margin: .35rem 0 0; max-width: 720px; }
+.practiceBridge a { align-items: center; border: 1px solid #fff; border-radius: 5px; color: #fff; display: inline-flex; flex: 0 0 auto; font-size: .85rem; font-weight: 800; gap: .4rem; min-height: 44px; padding: .65rem .85rem; text-decoration: none; }
+.practiceBridge a:hover,
+.practiceBridge a:focus-visible { box-shadow: 0 0 0 3px rgba(159,218,224,.3); }
+
+.scoreLayout { display: grid; gap: 1px; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr); margin-top: 1.5rem; }
+.scoreExplanation,
+.scoreTableWrap { background: var(--listen-card); border: 1px solid var(--listen-line); padding: clamp(1.25rem, 3vw, 2rem); }
+.scoreExplanation > span { color: var(--listen-accent); font-family: var(--mono, ui-monospace, monospace); font-size: .7rem; font-weight: 850; text-transform: uppercase; }
+.scoreFormula { align-items: center; display: flex; flex-wrap: wrap; font-size: clamp(1.05rem, 2.4vw, 1.35rem); gap: .6rem; margin: 1rem 0; }
+.scoreFormula i { color: var(--listen-accent); font-style: normal; }
+.scoreExplanation > p:last-child { color: var(--listen-muted); line-height: 1.65; margin: 0; }
+.scoreTable { border-collapse: collapse; width: 100%; }
+.scoreTable caption { color: var(--listen-muted); font-size: .8rem; line-height: 1.45; padding-bottom: .75rem; text-align: left; }
+.scoreTable th,
+.scoreTable td { border-bottom: 1px solid var(--listen-line); font-variant-numeric: tabular-nums; padding: .68rem .4rem; text-align: left; }
+.scoreTable thead th { color: var(--listen-muted); font-family: var(--mono, ui-monospace, monospace); font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; }
+.scoreTable tbody th { color: var(--listen-accent); font-size: 1.05rem; }
+.scoreTable td { font-weight: 800; }
+.scoreBoundary { background: var(--listen-soft); border-left: 4px solid var(--listen-signal); padding: 1rem 1.15rem; }
+.scoreBoundary strong { color: var(--listen-ink); }
+.scoreBoundary p { color: var(--listen-muted); line-height: 1.6; margin: .35rem 0 0; }
+
 .comparison { display: grid; gap: 1px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1.5rem; }
 .comparison > div { background: var(--listen-card); border: 1px solid var(--listen-line); padding: clamp(1.25rem, 3vw, 2rem); }
 .comparison > div:last-child { background: var(--listen-panel); color: #fff; }
@@ -255,6 +287,7 @@
   .practiceTicket { min-height: auto; }
   .briefGrid { grid-template-columns: 1fr; }
   .briefGrid article { min-height: auto; }
+  .typeGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 680px) {
@@ -266,11 +299,15 @@
   .actions a { width: 100%; }
   .partGrid,
   .comparison,
-  .prepareList { grid-template-columns: 1fr; }
+  .prepareList,
+  .scoreLayout,
+  .typeGrid { grid-template-columns: 1fr; }
   .partCard { grid-template-columns: 42px 1fr; min-height: auto; }
   .section { padding-top: 3.35rem; }
   .resultPanel { align-items: start; grid-template-columns: auto 1fr; }
   .resultPanel > a { grid-column: 1 / -1; width: 100%; }
+  .practiceBridge { align-items: stretch; flex-direction: column; }
+  .practiceBridge a { justify-content: center; width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

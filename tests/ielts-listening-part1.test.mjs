@@ -89,9 +89,19 @@ test('scores on the server contract without returning a band or accepted values'
   const result = scoreIeltsListeningPractice(fixture, responses);
   assert.equal(result.correct, 10);
   assert.equal(result.total, 10);
-  assert.equal('band' in result, false);
-  assert.equal(result.transcript, fixture.transcript);
+  assert.deepEqual(Object.keys(result).sort(), ['correct', 'disclosure', 'outcomes', 'total', 'transcript']);
+  assert.equal(result.disclosure, 'WeLearn practice result. It is not an official IELTS band score.');
+  assert.ok(result.outcomes.every((outcome) =>
+    JSON.stringify(Object.keys(outcome).sort()) === JSON.stringify(['correct', 'expected', 'explanation', 'number'])));
   assert.deepEqual(forbiddenPaths(result).filter((entry) => !entry.endsWith('.transcript')), []);
+  assert.deepEqual((function findBandKeys(value, pathName = '$') {
+    if (!value || typeof value !== 'object') return [];
+    return Object.entries(value).flatMap(([key, child]) => [
+      ...(/band/i.test(key) ? [`${pathName}.${key}`] : []),
+      ...findBandKeys(child, `${pathName}.${key}`),
+    ]);
+  })(result), []);
+  assert.equal(result.transcript, fixture.transcript);
 
   const nearMiss = { ...responses, 4: 'different' };
   assert.equal(scoreIeltsListeningPractice(fixture, nearMiss).correct, 9);
@@ -223,6 +233,25 @@ test('indexable landings make truthful, non-cannibalizing search promises', () =
   assert.match(hub, /IELTS Listening Practice with Audio: Part 1 \+ Format Guide/);
   assert.match(hub, /transcript after submission/);
   assert.doesNotMatch(hub, /Parts 1–4 with Audio/);
+  const questionTypeBlock = hub.slice(hub.indexOf('const QUESTION_TYPES'), hub.indexOf('const SCORE_GUIDE'));
+  assert.equal([...questionTypeBlock.matchAll(/title: '/g)].length, 6);
+  for (const title of ['Multiple choice', 'Matching', 'Plan, map or diagram labelling', 'Form, note, table, flow-chart or summary completion', 'Sentence completion', 'Short-answer questions']) {
+    assert.match(questionTypeBlock, new RegExp(title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  }
+  assert.match(hub, /QUESTION_TYPES\.map\(\(questionType\) =>/);
+  assert.match(hub, /SCORE_GUIDE\.map\(\(row\) =>/);
+  assert.match(hub, /href=\{IELTS_SCORE_URL\}/);
+  assert.match(hub, /Each correct answer receives one mark/);
+  assert.match(hub, /precise raw mark needed for a band can vary slightly/);
+  for (const row of ["{ band: '5', averageCorrect: '16' }", "{ band: '6', averageCorrect: '23' }", "{ band: '7', averageCorrect: '30' }", "{ band: '8', averageCorrect: '35' }"]) {
+    assert.match(hub, new RegExp(row.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  }
+  assert.match(hub, /ielts-scoring-in-detail/);
+  assert.match(hub, /A 10-question practice is not a band calculator/);
+  const scoreContract = fs.readFileSync(path.join(root, 'src/lib/ielts/listening-practice-contract.ts'), 'utf8');
+  const sessionClient = fs.readFileSync(path.join(root, 'src/app/(site)/practica/ielts/listening/sesion/ListeningSession.tsx'), 'utf8');
+  assert.doesNotMatch(scoreContract, /estimatedBand|predictedBand|convertedBand|bandScore/);
+  assert.doesNotMatch(sessionClient, /estimatedBand|predictedBand|convertedBand|bandScore/);
   assert.match(partOne, /const URL = 'https:\/\/www\.idiomaswl\.com\/practica\/ielts\/listening\/part-1'/);
   assert.match(partOne, /alternates: { canonical: URL }/);
   assert.match(partOne, /Is IELTS Listening Part 1 the same as Section 1\?/);
