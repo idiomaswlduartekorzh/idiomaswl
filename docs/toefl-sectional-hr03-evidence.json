@@ -3,7 +3,7 @@
   "gateId": "HR-03",
   "initiative": "toefl-sectional-seo-curation-harness",
   "status": "pending-human-review",
-  "generatedAtUtc": "2026-09-01T01:21:31Z",
+  "generatedAtUtc": "2026-09-01T04:35:38Z",
   "baseCommitSha": "5cfbfec1",
   "approvedInputs": [
     {
@@ -21,7 +21,12 @@
     {
       "kind": "interconnection-spec-and-flow-map",
       "path": "docs/toefl-sectional-hr03-interconnection.md",
-      "sha256": "0631d806fa86eab5456688e1364d4e8475bbdf9879b5a88319b45e2726dfd83c"
+      "sha256": "4478ec8f411c27e9445c445c29b590dac4dcaaab9dedabfdb236c2c72f9499d3"
+    },
+    {
+      "kind": "code-interconnection-audit-draft",
+      "path": "docs/toefl-sectional-hr03-code-audit-draft.md",
+      "sha256": "df9e6e86637ffdeb6f8be5640acfd09ffa6af77c333bdeddd76e2a9c0592dae2"
     }
   ],
   "routeAudit": {
@@ -38,7 +43,12 @@
     ],
     "placeholderRoutesProposed": [],
     "massMigrationsProposed": false,
-    "indexableOrphansInProposedFlow": 0
+    "indexableOrphansInProposedFlow": 0,
+    "currentToeflPracticePageFiles": 29,
+    "currentCanonicalPagesObserved": 29,
+    "currentExplicitSitemapEntriesObserved": 11,
+    "mockInventoryAnchorObserved": "#practica",
+    "missingConceptualAnchorObserved": "#simulacros"
   },
   "humanDecisionRequired": [
     "hub-catalog-section-task-relationship",
@@ -46,6 +56,12 @@
     "mock-result-return-to-exercise-catalog",
     "editorial-exercises-parent-in-breadcrumbs-without-url-migration",
     "bidirectional-links-between-practice-and-mocks"
+  ],
+  "technicalFindings": [
+    "The existing mock inventory anchor is #practica; #simulacros does not exist.",
+    "Both the immediate result and the private paid report currently lack a return link to exercise practice.",
+    "Write an Email and Academic Discussion open editorial guides before their prompt banks; catalog copy must make that interaction depth explicit.",
+    "TOEFLHubClient.tsx appears unreferenced and is reserved as a DELETE-CANDIDATE for HR-08, not removed now."
   ],
   "limitations": [
     "No production pages or routes were changed.",
