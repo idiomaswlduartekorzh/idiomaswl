@@ -37,7 +37,7 @@ export const TOEFL_READING_MODULE2_SCORING_SETS_11_TO_15_BY_OBJECT_ID = Object.f
     const items = [...set.dailyLife.flatMap((block) => block.items), ...set.academic.items];
     const labels = READING_KEY_LABELS[set.setNumber] ?? [];
     return [set.readingObjectId, {
-      scoringVersion: `toefl-reading-fixed-set${set.setNumber}@2026-08-14.m2-v1`,
+      scoringVersion: `toefl-reading-fixed-set${set.setNumber}@2026-08-31.m2-v2`,
       disclosure: TOEFL_FIXED_READING_DISCLOSURE,
       items: items.map<ToeflReadingScoringItem>((item, index) => ({
         itemId: item.id,

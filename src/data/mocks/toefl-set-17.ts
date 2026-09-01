@@ -32,8 +32,8 @@ const mock: MockExam = {
       passageTitle: 'Laundry notice',
       questions: [
         { type: 'mcq', id: 't17-r-dl1', part: 2, text: 'How can residents pay for the machines?', options: ['With a bank transfer', 'They are free.', 'Only with cash', 'With coins or the laundry app'], answer: 3 },
-        { type: 'mcq', id: 't17-r-dl2', part: 2, text: 'What should residents do when a cycle ends?', options: ['Remove their clothes promptly so others can use the machine', 'Start another cycle', 'Turn off the lights', 'Leave the clothes for a day'], answer: 0 },
-        { type: 'mcq', id: 't17-r-dl3', part: 2, text: 'What should a resident do if a machine is broken?', options: ['Repair it themselves', 'Report it to the building manager using the form by the door', 'Ignore it', 'Use a different building'], answer: 1 },
+        { type: 'mcq', id: 't17-r-dl2', part: 2, text: 'What should residents do when a cycle ends?', options: ['Remove their clothes promptly so others can use the machine', 'Start another cycle immediately and leave the finished clothes inside until the following day', 'Turn off the lights', 'Leave the clothes for a day'], answer: 0 },
+        { type: 'mcq', id: 't17-r-dl3', part: 2, text: 'What should a resident do if a machine is broken?', options: ['Repair the machine themselves before telling the building manager or completing the form by the door', 'Report it to the building manager using the form by the door', 'Ignore it', 'Use a different building'], answer: 1 },
       ],
     },
     {
@@ -43,7 +43,7 @@ const mock: MockExam = {
       passageTitle: 'Volunteer email',
       questions: [
         { type: 'mcq', id: 't17-r-dl4', part: 3, text: 'What should volunteers bring?', options: ['A tent', 'Their own tools and gloves', 'Old clothes, sturdy shoes, and a water bottle', 'A snack for everyone'], answer: 2 },
-        { type: 'mcq', id: 't17-r-dl5', part: 3, text: 'What happens if it rains heavily?', options: ['Volunteers must bring umbrellas.', 'The event moves indoors.', 'The event continues as normal.', 'The event will be postponed, and volunteers will be emailed by 7:00 a.m.'], answer: 3 },
+        { type: 'mcq', id: 't17-r-dl5', part: 3, text: 'What happens if it rains heavily?', options: ['Volunteers must bring umbrellas and continue the outdoor cleanup at the original time without waiting for an email.', 'The event moves indoors.', 'The event continues as normal.', 'The event will be postponed, and volunteers will be emailed by 7:00 a.m.'], answer: 3 },
       ],
     },
     {

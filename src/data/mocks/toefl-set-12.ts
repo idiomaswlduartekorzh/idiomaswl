@@ -32,7 +32,7 @@ const mock: MockExam = {
       passageTitle: 'Park sign',
       questions: [
         { type: 'mcq', id: 't12-r-dl1', part: 2, text: 'When does the park close?', options: ['At sunset', 'At midnight', 'It never closes.', 'At 6:00 a.m.'], answer: 0 },
-        { type: 'mcq', id: 't12-r-dl2', part: 2, text: 'Where must dogs be kept on a lead?', options: ['Everywhere in the park', 'In the children\'s play area and near the pond', 'Only on the marked paths', 'Nowhere; dogs are not allowed'], answer: 1 },
+        { type: 'mcq', id: 't12-r-dl2', part: 2, text: 'Where must dogs be kept on a lead?', options: ['Everywhere in the park, including the open field and every marked walking path', 'In the children\'s play area and near the pond', 'Only on the marked paths', 'Nowhere; dogs are not allowed'], answer: 1 },
         { type: 'mcq', id: 't12-r-dl3', part: 2, text: 'What does the sign say about barbecues?', options: ['They are allowed after sunset.', 'They are banned everywhere.', 'They are permitted only in the designated picnic zone.', 'They are allowed anywhere on the grass.'], answer: 2 },
       ],
     },
@@ -43,7 +43,7 @@ const mock: MockExam = {
       passageTitle: 'Group message',
       questions: [
         { type: 'mcq', id: 't12-r-dl4', part: 3, text: 'What part will Tariq present?', options: ['The conclusion', 'The slides', 'The introduction', 'The main findings'], answer: 3 },
-        { type: 'mcq', id: 't12-r-dl5', part: 3, text: 'What do they plan to do on Wednesday?', options: ['Meet at 4 in the study room to practise', 'Give the presentation', 'Choose a new topic', 'Finish the slides'], answer: 0 },
+        { type: 'mcq', id: 't12-r-dl5', part: 3, text: 'What do they plan to do on Wednesday?', options: ['Meet at 4 in the study room to practise', 'Give the final presentation to the class before they have had time to practise together', 'Choose a new topic', 'Finish the slides'], answer: 0 },
       ],
     },
     {

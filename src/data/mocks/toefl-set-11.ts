@@ -43,7 +43,7 @@ const mock: MockExam = {
       passageTitle: 'Confirmation email',
       questions: [
         { type: 'mcq', id: 't11-r-dl4', part: 3, text: 'What time is check-out?', options: ['By 2:00 p.m.', 'By 9:30 a.m.', 'By 10:00 p.m.', 'By 11:00 a.m.'], answer: 3 },
-        { type: 'mcq', id: 't11-r-dl5', part: 3, text: 'What should Lucia do if she arrives after 10:00 p.m.?', options: ['Sleep outside', 'Let the hostel know in advance so they can arrange her key', 'Pay an extra fee', 'Cancel the booking'], answer: 1 },
+        { type: 'mcq', id: 't11-r-dl5', part: 3, text: 'What should Lucia do if she arrives after 10:00 p.m.?', options: ['Wait outside until the regular reception desk opens again the following morning', 'Let the hostel know in advance so they can arrange her key', 'Pay an extra fee', 'Cancel the booking'], answer: 1 },
       ],
     },
     {

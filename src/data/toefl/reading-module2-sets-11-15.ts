@@ -185,7 +185,7 @@ Researchers compare flower visits with fruit or seed production and sometimes ex
       fixedReadingItem(15, 'ap2', 'How can pollinator diversity help?', ['Different species may work under different conditions or contact flowers differently.', 'It removes the need for water and nutrients.', 'It makes every crop dependent on insects.', 'It prevents all pest damage.']),
       fixedReadingItem(15, 'ap3', 'Why does diversity not guarantee high crop yield?', ['Wild insects never carry pollen.', 'Farmers cannot observe flower visits.', 'Other biological and management factors can limit production.', 'All crops use identical varieties.']),
       fixedReadingItem(15, 'ap4', 'What can excluding insects from selected flowers help estimate?', ['The age of the surrounding soil', 'The number of farms in a country', 'Only the temperature at flowering', 'The contribution of animal pollination under local conditions']),
-      fixedReadingItem(15, 'ap5', 'What planning approach does the passage support?', ['Using results from one region everywhere', 'Combining crop needs, local evidence, and protection of managed and wild pollinators', 'Replacing all wild pollinators with one species', 'Ignoring habitat outside the flowering period']),
+      fixedReadingItem(15, 'ap5', 'What planning approach does the passage support?', ['Using results from one region everywhere without checking differences in crops, landscapes, or local pollinator communities', 'Combining crop needs, local evidence, and protection of managed and wild pollinators', 'Replacing all wild pollinators with one species', 'Ignoring habitat outside the flowering period']),
     ]),
 });
 

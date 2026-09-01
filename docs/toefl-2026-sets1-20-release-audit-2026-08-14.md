@@ -4,6 +4,8 @@ Fecha: 14 de agosto de 2026
 
 Revalidación de producto: 21 de agosto de 2026
 
+Revalidación de longitud de opciones: 31 de agosto de 2026
+
 Owner y firma de derechos: José David Duarte Silva
 
 Dictamen actualizado: **los 20 sets tienen contenido, navegación, 400/400 audios y
@@ -73,6 +75,24 @@ pero su botón quedaba inerte mientras la navegación esperaba que terminara. El
 `155f8828` asigna identidad por medio a cada panel, remonta el reproductor al cambiar
 de audio y etiqueta los medios realmente pendientes con una acción explícita de
 omisión. Ningún MP3 fue abierto ni modificado.
+
+## Revisión transversal de longitud de opciones — 31 de agosto de 2026
+
+El owner detectó en Reading Set 2 que la respuesta correcta podía reconocerse con
+frecuencia por ser la opción más larga. La medición se hizo sobre las 400 preguntas de
+selección única que ve el estudiante en los módulos 1 y 2 de Sets 1–20, resolviendo
+también las claves que sólo existen en el registro privado del servidor.
+
+Antes de la corrección, marcar siempre la única opción más larga acertaba 14/20 en Set
+2 y entre 55 % y 85 % en otros trece sets. Se reescribieron distractores conservando las
+claves y la evidencia de cada pasaje. Después de la corrección, todos los sets quedan
+entre 8/20 y 10/20; Set 2 queda en 9/20. Ninguna clave supera por ocho palabras o más al
+mejor distractor.
+
+`npm run check:toefl-option-length` reproduce la medición y forma parte de `prebuild`.
+Falla cerrado si no encuentra exactamente 20 preguntas auditables por set, si la
+estrategia de la opción más larga supera 50 % o si reaparece un outlier de ocho palabras.
+Los bancos editados avanzaron su versión de contenido sin cambiar IDs ni respuestas.
 
 ## Inventario verificado por set
 

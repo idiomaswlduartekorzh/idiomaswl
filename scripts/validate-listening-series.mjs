@@ -541,17 +541,15 @@ if (pending.length) console.log(`Audio pendiente (páginas en modo «en preparac
  * Techo de preguntas donde la respuesta correcta se delata por su silueta.
  *
  * Cuando una opción es tres o más palabras más larga que la siguiente, se distingue sin
- * leerla. Medido sobre las 24 series: eso pasa en 362 de las 2400 preguntas, y en el 96,7 %
- * de esos casos la opción que destaca es la correcta —o sea, ahí la longitud es la
- * respuesta—. Las causas son dos: la buena es la única específica («Emma se presenta a una
- * vecina el día que llega») mientras los distractores son telegráficos («Emma busca un
- * piso»), y en las de detalle el redactor solo desarrolló la que sabía cierta.
+ * leerla. La primera medición encontró 362 de las 2400 preguntas. La localización y
+ * reescritura editorial de agosto de 2026 redujo esa silueta a 81; ese valor pasa a ser el
+ * nuevo techo para que una edición futura no recupere el sesgo ya eliminado.
  *
  * Es primo del sesgo de posición que ya corrige listening-shuffle.ts, pero por el eje de la
  * longitud, y ese no se puede arreglar barajando: hay que reescribir los distractores.
  * Mientras se hace, este número solo puede bajar. Si sube, el build se para.
  */
-const TECHO_SILUETA = 362
+const TECHO_SILUETA = 81
 const DESTAQUE = 3
 
 let silueta = 0

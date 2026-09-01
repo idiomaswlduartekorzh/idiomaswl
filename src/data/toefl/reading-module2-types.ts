@@ -1,6 +1,6 @@
 import type { ToeflReadingExpansionSingleItem } from './reading-sets-2-5.ts';
 
-export const TOEFL_FIXED_READING_M2_VERSION = '2026-08-14.m2-v1';
+export const TOEFL_FIXED_READING_M2_VERSION = '2026-08-31.m2-v2';
 export const TOEFL_FIXED_READING_DISCLOSURE =
   'Práctica fija WeLearn basada en la composición publicada del TOEFL iBT 2026. No es adaptativa, no replica el banco ETS y no produce una puntuación oficial.';
 
