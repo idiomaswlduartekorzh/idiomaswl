@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "initiative": "toefl-sectional-seo-curation-harness",
+  "artifactKind": "post-approval-operational-evidence",
+  "status": "reconciled-pending-hr04-source-revalidation",
+  "generatedAtUtc": "2026-09-01T12:54:10Z",
+  "approvedGate": {
+    "gateId": "HR-03",
+    "approvedArtifactCommitSha": "6d972d894df5fa21f22e53aa1405fe03c4c43644",
+    "approvalRecordCommitSha": "b95d08013b67d87468fa9f083d93e484075b4685",
+    "evidencePath": "docs/toefl-sectional-hr03-evidence.json",
+    "evidenceSha256": "450a31ff4f0219eb27af6e4cea2805751117dbe6678fbd78005b8df50b1be876",
+    "approvedArtifactsModifiedByReconciliation": false
+  },
+  "mainReconciliation": {
+    "method": "merge",
+    "reason": "Preserve the approved HR-03 commit and its reviewable history without force-push or rebasing.",
+    "originMainSha": "8350ddf1a5a5a4e4f6345da2717a7bb7e0f1e4d3",
+    "mergeCommitSha": "431bf2ba209891d56b423434b813e949f30382aa",
+    "conflicts": 0,
+    "commitsBehindOriginMainAfterMerge": 0,
+    "filesIntroducedOrChangedFromMain": 48,
+    "toeflScopedFilesIntroducedOrChangedFromMain": 22
+  },
+  "toeflChangeAudit": {
+    "finding": "Main changed TOEFL Reading content versions and distractor wording, and added an option-length guardian. The earlier HR-03 upstream query was too narrow and did not surface these bank paths; D10 reconciliation corrected that blind spot before implementation.",
+    "affectedFamilies": [
+      "src/data/mocks/toefl-set-9.ts",
+      "src/data/mocks/toefl-set-{11..17}.ts",
+      "src/data/mocks/toefl-set-20.ts",
+      "src/data/toefl/reading-*.ts",
+      "src/server/toefl/reading-module2-*.ts",
+      "scripts/check-toefl-option-length.mjs"
+    ],
+    "contractImpact": "No approved route or navigation decision changed. Future sectional adapters must consume current bank objects and stable IDs; copying approved-era question text is prohibited.",
+    "verifiedInvariant": "Fixed Reading, Listening and Speaking checks passed for Sets 1–20; Writing, audio release and review blueprint checks also passed."
+  },
+  "validations": [
+    {
+      "command": "npm run check:practica-catalog",
+      "status": "passed",
+      "summary": "465 grammar topics and protected modules verified."
+    },
+    {
+      "command": "npm run check:production-baseline",
+      "status": "passed",
+      "summary": "144 practice routes, 480 Listening files and 17 podcast assets verified."
+    },
+    {
+      "command": "npx tsc --noEmit --pretty false",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:toefl-option-length",
+      "status": "passed",
+      "summary": "20 Reading sets checked; no systematic answer-length cues."
+    },
+    {
+      "command": "npm run check:toefl-fixed-reading",
+      "status": "passed",
+      "summary": "Sets 1–20 retain 20 interactions, private keys and required shape."
+    },
+    {
+      "command": "npm run check:toefl-fixed-listening",
+      "status": "passed",
+      "summary": "Sets 1–20 retain 19 new items per set, 280 released media IDs and private keys."
+    },
+    {
+      "command": "npm run check:toefl-fixed-speaking",
+      "status": "passed",
+      "summary": "Sets 1–20 retain 7 Repeat, 4 Interview and 120 released new media."
+    },
+    {
+      "command": "npm run check:toefl-writing",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:toefl-audio-release",
+      "status": "passed",
+      "summary": "400/400 exact files verified."
+    },
+    {
+      "command": "npm run check:toefl-review-blueprint",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:exam-practice-content",
+      "status": "failed-pre-existing-debt-preserved",
+      "summary": "12 findings remain visible: 5 IELTS hub findings, 2 TOEFL legacy/synthesis disclosure findings and 5 Complete the Words findings. No threshold or assertion was removed."
+    }
+  ],
+  "humanConditions": {
+    "D7": "Pending named academic review; no academic reviewer has been invented or recorded.",
+    "D8": "All HR-04 format and official-family claims remain blocked until official-source revalidation is complete and academically reviewed.",
+    "D9": "The 12 check:exam-practice-content findings remain visible debt; controls are unchanged.",
+    "D10": "Satisfied operationally by the merge and post-merge validation recorded here."
+  },
+  "storage": {
+    "worktree": "2.1G",
+    "docs": "4.0M",
+    "usbAvailable": "73Gi",
+    "dependenciesInstalledOrCopied": false,
+    "temporaryNodeModulesSymlinkRemoved": true
+  },
+  "nextStop": "Prepare official-source revalidation evidence for HR-04. Do not implement or publish sensitive claims until D7 and D8 are resolved by a human academic review."
+}
