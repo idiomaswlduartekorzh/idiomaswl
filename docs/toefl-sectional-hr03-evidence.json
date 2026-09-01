@@ -3,7 +3,7 @@
   "gateId": "HR-03",
   "initiative": "toefl-sectional-seo-curation-harness",
   "status": "pending-human-review",
-  "generatedAtUtc": "2026-09-01T05:12:29Z",
+  "generatedAtUtc": "2026-09-01T05:31:42Z",
   "baseCommitSha": "5cfbfec1",
   "approvedInputs": [
     {
@@ -37,6 +37,11 @@
       "kind": "test-and-guardian-contract-draft",
       "path": "docs/toefl-sectional-hr03-test-contract-draft.md",
       "sha256": "8393dd54271414f1a5254a8b5505ad70969ea266f7154fa64ce25ae00478ddce"
+    },
+    {
+      "kind": "catalog-presentation-data-contract-draft",
+      "path": "docs/toefl-sectional-hr03-catalog-data-contract-draft.md",
+      "sha256": "8e1f28c9a6c0b1743e4b6f70ca11d5c96764d8856e0a2156008031ca0a31524e"
     }
   ],
   "routeAudit": {
@@ -67,7 +72,8 @@
     "editorial-exercises-parent-in-breadcrumbs-without-url-migration",
     "bidirectional-links-between-practice-and-mocks",
     "indexing-treatment-for-historical-reading-question-types-and-integrated-writing",
-    "differentiated-writing-card-copy"
+    "differentiated-writing-card-copy",
+    "academic-resolution-for-missing-versioned-official-format-registry"
   ],
   "technicalFindings": [
     "The existing mock inventory anchor is #practica; #simulacros does not exist.",
@@ -76,7 +82,9 @@
     "TOEFLHubClient.tsx appears unreferenced and is reserved as a DELETE-CANDIDATE for HR-08, not removed now.",
     "The existing check:exam-practice-content guard currently fails with 12 pre-existing findings and is not part of prebuild.",
     "The existing IELTS/TOEFL route map, content inventory, keyword map and SEO catalog are the permanent sources to reconcile after approval; HR-03 annexes are not parallel registries.",
-    "seleccion-de-palabras-contexto appears in the route map and SEO catalog but is absent from the Reading inventory cluster and keyword map."
+    "seleccion-de-palabras-contexto appears in the route map and SEO catalog but is absent from the Reading inventory cluster and keyword map.",
+    "Twenty mock sources and two audit documents reference docs/toefl-ibt-2026-official-format.md, which is absent from the current tree but recoverable from archive commit 7da796a4; it must be academically revalidated, not silently restored.",
+    "The proposed catalog should use a small public presentation registry and must not derive UI from the 20 mock banks or server-only scoring registries."
   ],
   "limitations": [
     "No production pages or routes were changed.",
