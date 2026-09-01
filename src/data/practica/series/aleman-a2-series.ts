@@ -708,7 +708,7 @@ export const GERMAN_A2_SERIES: A1ListeningSeries = {
         'Was ist Oma Annas Überraschung?',
         ['Ein Foto von 1961 aus ihrem Café', 'Ein besonderes Geschenk für Lukas', 'Sie zieht in eine andere Wohnung'],
         0,
-        'Enseña la foto y cuenta que trabajó dos años en ese café.',
+        'Sie zeigt das Foto und erzählt, dass sie zwei Jahre in diesem Café gearbeitet hat.',
       ),
       details: [
         q('Wie lange arbeitete Oma Anna dort?', ['Zwei Jahre', 'Sechs Monate', 'Zehn Jahre'], 0, 'Oma Anna antwortet: «Zwei Jahre».'),

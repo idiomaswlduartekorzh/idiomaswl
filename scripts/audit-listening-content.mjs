@@ -149,6 +149,11 @@ const files = fs
   .readdirSync(seriesDir)
   .filter((name) => name.endsWith('-series.ts'))
   .filter((name) => !onlyLang || name.startsWith(`${onlyLang}-`))
+  .filter((name) => {
+    if (!onlySeries) return true
+    const match = name.match(/^(.+)-(a1|a2|b1)-series\.ts$/u)
+    return match ? `${match[1]}/${match[2]}` === onlySeries : false
+  })
   .sort()
 
 for (const name of files) {
@@ -163,6 +168,8 @@ for (const name of files) {
   const letras = { 'idea general': [0, 0, 0], detalle: [0, 0, 0], consolidación: [0, 0, 0] }
   const estrategiaLarga = { intentos: 0, aciertos: 0 }
   const estrategiaCorta = { intentos: 0, aciertos: 0 }
+  let destacadasLargas = 0
+  let destacadasCortas = 0
   let sinAnclaje = 0
   let sinRespuesta = 0
   let pistaLongitud = 0
@@ -263,14 +270,22 @@ for (const name of files) {
        * El atajo existe cuando una opción destaca: al menos DESTAQUE palabras por encima
        * de la segunda más larga. Eso ya es una silueta que se distingue sin leer.
        */
-      if (maximo - ordenados[1] >= DESTAQUE) {
-        estrategiaLarga.intentos += 1
-        if (largos[cruda.answer] === maximo) estrategiaLarga.aciertos += 1
-      }
-      if (ordenados[ordenados.length - 2] - minimo >= DESTAQUE) {
-        estrategiaCorta.intentos += 1
-        if (largos[cruda.answer] === minimo) estrategiaCorta.aciertos += 1
-      }
+      /**
+       * La estrategia se puntúa sobre TODAS las preguntas, igual que un examen real.
+       * Si hay una opción que destaca, se marca esa; si no la hay, se usa la primera
+       * opción visible como desempate determinista. Medir solo los casos destacados
+       * responde «¿cuán fiable es la pista cuando aparece?», pero no «¿se aprueba con
+       * esta estrategia?»: 78 aciertos en 87 siluetas no equivalen a 78/87 cuando el
+       * examen tiene 2400 preguntas.
+       */
+      const largaDestaca = maximo - ordenados[1] >= DESTAQUE
+      const cortaDestaca = ordenados[ordenados.length - 2] - minimo >= DESTAQUE
+      estrategiaLarga.intentos += 1
+      estrategiaCorta.intentos += 1
+      if (largaDestaca) destacadasLargas += 1
+      if (cortaDestaca) destacadasCortas += 1
+      if (largaDestaca ? largos[cruda.answer] === maximo : pintada.options[0].correct) estrategiaLarga.aciertos += 1
+      if (cortaDestaca ? largos[cruda.answer] === minimo : pintada.options[0].correct) estrategiaCorta.aciertos += 1
 
       const largoCorrecta = largos[cruda.answer]
       const largoMedio = distractores.reduce((total, item) => total + strip(item).split(' ').filter(Boolean).length, 0) / Math.max(distractores.length, 1)
@@ -306,6 +321,8 @@ for (const name of files) {
     letras,
     estrategiaLarga,
     estrategiaCorta,
+    destacadasLargas,
+    destacadasCortas,
     sinAnclaje,
     sinRespuesta,
     pistaLongitud,
@@ -328,11 +345,13 @@ for (const row of rows) {
 console.log('\n── Se puede aprobar sin escuchar? (el azar da 33 %) ──')
 const totalLarga = rows.reduce((acc, row) => ({ intentos: acc.intentos + row.estrategiaLarga.intentos, aciertos: acc.aciertos + row.estrategiaLarga.aciertos }), { intentos: 0, aciertos: 0 })
 const totalCorta = rows.reduce((acc, row) => ({ intentos: acc.intentos + row.estrategiaCorta.intentos, aciertos: acc.aciertos + row.estrategiaCorta.aciertos }), { intentos: 0, aciertos: 0 })
+const totalDestacadasLargas = rows.reduce((total, row) => total + row.destacadasLargas, 0)
+const totalDestacadasCortas = rows.reduce((total, row) => total + row.destacadasCortas, 0)
 const pct = (item) => (item.intentos ? (item.aciertos / item.intentos) * 100 : 0)
 const preguntas = rows.reduce((total, row) => total + row.letras['idea general'].reduce((a, b) => a + b, 0) + row.letras.detalle.reduce((a, b) => a + b, 0) + row.letras.consolidación.reduce((a, b) => a + b, 0), 0)
-console.log(`  preguntas donde una opción destaca por ${DESTAQUE}+ palabras: ${totalLarga.intentos} de ${preguntas}`)
-console.log(`  de esas, marcar la más larga acierta: ${pct(totalLarga).toFixed(1)} % (${totalLarga.aciertos}/${totalLarga.intentos})`)
-console.log(`  de las que tienen una notablemente más corta, marcarla acierta: ${pct(totalCorta).toFixed(1)} % (${totalCorta.aciertos}/${totalCorta.intentos})`)
+console.log(`  preguntas donde una opción destaca por ${DESTAQUE}+ palabras: ${totalDestacadasLargas} de ${preguntas}`)
+console.log(`  estrategia «más larga si destaca; si no, A»: ${pct(totalLarga).toFixed(1)} % (${totalLarga.aciertos}/${totalLarga.intentos})`)
+console.log(`  estrategia «más corta si destaca; si no, A»: ${pct(totalCorta).toFixed(1)} % (${totalCorta.aciertos}/${totalCorta.intentos}; ${totalDestacadasCortas} destacan)`)
 const peorLarga = [...rows].sort((a, b) => pct(b.estrategiaLarga) - pct(a.estrategiaLarga)).slice(0, 3)
 console.log(`  series más explotables por longitud: ${peorLarga.map((row) => `${row.label} ${pct(row.estrategiaLarga).toFixed(0)} %`).join(', ')}`)
 // Por encima de este umbral la estrategia deja de ser azar y se convierte en un atajo.
