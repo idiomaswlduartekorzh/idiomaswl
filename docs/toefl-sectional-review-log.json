@@ -82,6 +82,21 @@
       ],
       "independentReview": false,
       "notes": "Aprobación humana explícita recibida con este alcance: D1–D6 aprobadas. D7 queda para revisión CO académico y no constituye aprobación académica. D8 bloquea los claims de HR-04 hasta revalidación. D9 se conserva como deuda visible sin bajar controles. D10 exige reconciliar con main antes de implementar. La aprobación cierra la arquitectura de interconexión, pero no levanta estas condiciones obligatorias."
+    },
+    {
+      "gateId": "HR-04-SOURCE",
+      "reviewer": "Zhanna Korzh",
+      "role": "academic-director",
+      "decision": "approved_with_notes",
+      "reviewedAtUtc": "2026-09-01T14:55:00Z",
+      "commitSha": "423afd58240aacaaa4b776c01114c13b52a742a5",
+      "contentDigest": "b73b5528c5af3ec4ebd0c11b78e97656c2d40849d5a2a5688fdd0d423eebc503",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr04-source-evidence.json",
+        "docs/toefl-sectional-hr04-official-source-revalidation-draft.md"
+      ],
+      "independentReview": true,
+      "notes": "Aprobación académica comunicada explícitamente por el dueño de producto con el texto 'aprobado por Zhanna - directora academica, 1 sep 2026'. Se habilitan para la plantilla editorial los claims C01–C08 y C10 dentro del alcance y los disclosures del artefacto revisado. C09 conserva el estado bloqueado definido en el paquete aprobado porque no se comunicó una resolución específica para publicar conteos o tiempos. Esta decisión resuelve D7 y levanta D8 únicamente para los claims habilitados; no aprueba todavía la plantilla editorial completa HR-04 ni un release."
     }
   ]
 }
