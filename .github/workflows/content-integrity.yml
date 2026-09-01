@@ -25,6 +25,8 @@ jobs:
       - name: Verify production baseline
         if: github.event_name != 'pull_request'
         run: npm run check:production-baseline
+      - name: Verify IELTS superhub truth
+        run: npm run check:ielts:truth
       - run: npm run check:practica-catalog
       - run: npx tsc --noEmit --pretty false
 

@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "recordedAt": "2026-08-31",
+  "sourceRef": "origin/main",
+  "minimums": {
+    "canonicalRoutes": 106,
+    "routePageFiles": 74,
+    "registeredMocks": 20,
+    "listeningPartsPerMock": 4,
+    "listeningAnswersPerMock": 40,
+    "physicalListeningAudioSets": 12,
+    "minimumListeningAudioBytes": 10000000,
+    "podcastsOnHub": 3
+  },
+  "routeInventory": {
+    "documentedCanonicalFloor": 96,
+    "noindexQueryRoutes": [
+      "/practica/ielts/academic/writing/task1/tarea-completa/sesion?task=<id>"
+    ],
+    "knownSitemapOnlyRoutes": [
+      "/practica/ielts/reading/mixed-practice",
+      "/practica/ielts/academic/writing/task2/linking-language/addition",
+      "/practica/ielts/academic/writing/task2/linking-language/contrast",
+      "/practica/ielts/academic/writing/task2/linking-language/cause-and-effect",
+      "/practica/ielts/academic/writing/task2/linking-language/examples",
+      "/practica/ielts/academic/writing/task2/linking-language/concession",
+      "/practica/ielts/academic/writing/task2/linking-language/comparison",
+      "/practica/ielts/academic/writing/task2/linking-language/conclusion",
+      "/practica/ielts/academic/writing/task2/linking-language/condition",
+      "/practica/ielts/academic/writing/task2/linking-language/correlative"
+    ]
+  },
+  "requiredFiles": [
+    "src/app/(site)/practica/ielts/page.tsx",
+    "src/app/(site)/practica/ielts/IELTSHubClient.tsx",
+    "src/app/(site)/practica/ielts/reading/page.tsx",
+    "src/app/(site)/practica/ielts/academic/writing/task1/page.tsx",
+    "src/app/(site)/practica/ielts/academic/writing/task2/page.tsx",
+    "src/app/(site)/practica/ielts/general-training/page.tsx",
+    "src/app/(site)/practica/ielts/academic/writing/task1/tarea-completa/sesion/page.tsx",
+    "src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx",
+    "src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx",
+    "src/data/mocks/index.ts",
+    "src/data/mocks/types.ts",
+    "src/app/sitemap.ts",
+    "config/production-baseline.json"
+  ],
+  "requiredMarkers": {
+    "src/app/(site)/practica/ielts/page.tsx": [
+      "CourseSchema",
+      "https://www.idiomaswl.com/practica/ielts"
+    ],
+    "src/app/(site)/practica/ielts/IELTSHubClient.tsx": [
+      "IELTS Academic",
+      "IELTS General Training",
+      "ExamPodcastShelf",
+      "getExamPodcasts('ielts')",
+      "/practica/ielts/reading",
+      "/practica/ielts/academic/writing"
+    ],
+    "src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx": [
+      "robots: { index: false, follow: false }",
+      "IELTSPracticeClient"
+    ],
+    "src/app/(site)/practica/ielts/academic/writing/task1/tarea-completa/sesion/page.tsx": [
+      "robots: { index: false, follow: false }",
+      "PracticeSession"
+    ],
+    "src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx": [
+      "const SKILL_ORDER = ['listening','reading','writing','speaking']",
+      "beforeunload",
+      "IELTSSubmission"
+    ],
+    "src/data/practica/podcast-library.ts": [
+      "id: 'ielts-reading-strategies'",
+      "id: 'ielts-writing-task-1'",
+      "id: 'ielts-writing-task-2'"
+    ]
+  },
+  "editorialState": {
+    "reading": "published",
+    "academic-writing": "published",
+    "general-training": "published",
+    "listening": "blocked",
+    "speaking": "blocked"
+  },
+  "listeningSets": {
+    "assetPresentUnverified": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "assetMissingBlocked": [13, 14, 15, 16, 17, 18, 19, 20],
+    "published": []
+  },
+  "knownListeningStructureDebt": {
+    "4": {
+      "partAnswerSlots": [10, 10, 7, 13],
+      "reason": "Existing origin/main content assigns questions 21-27 to Part 3 and 28-40 to Part 4. It remains unverified and cannot be promoted as section practice."
+    }
+  },
+  "forbiddenScopePrefixes": [
+    "src/app/(site)/practica/toefl/",
+    "src/data/mocks/toefl",
+    "src/components/exams/TOEFL",
+    "src/app/(site)/examenes/[exam]/practica/[mockId]/TOEFL",
+    "src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl",
+    "scripts/check-toefl",
+    "scripts/audit-toefl",
+    "tests/toefl"
+  ],
+  "sharedFilesDeferredUntilIntegration": [
+    "docs/ielts-toefl-route-map.md",
+    "docs/ielts-toefl-keyword-map.csv",
+    "docs/ielts-toefl-content-inventory.json",
+    "src/data/practica-exams/seo-catalog.ts"
+  ],
+  "knownBaselineDebt": [
+    "check:exam-practice-content already fails on main for three IELTS hub assertions and multiple TOEFL assertions",
+    "ten IELTS sitemap routes are not represented in the mixed route/keyword control documents",
+    "sets 13-20 reference missing listening MP3 files",
+    "the current full mock sends answer keys to the client",
+    "the current full mock counts multiselect completion inconsistently",
+    "IELTS Set 4 has a declared 10/10/7/13 Listening split and cannot be promoted until editorial repair"
+  ]
+}

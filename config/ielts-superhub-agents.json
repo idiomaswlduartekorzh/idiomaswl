@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "scope": "ielts-superhub",
+  "requiredHandoffFields": [
+    "revision",
+    "changedPaths",
+    "searchIntent",
+    "sources",
+    "commands",
+    "openDebt",
+    "nextOwner"
+  ],
+  "agents": [
+    {
+      "id": "orchestrator",
+      "mode": "coordination",
+      "mission": "Sequence phases, assign exclusive write locks and reject unsupported completion claims.",
+      "owns": ["plan", "run-state", "handoffs"],
+      "gates": ["scope", "truth", "release"],
+      "handoffTo": ["preservation-guardian", "seo-intelligence", "release-guardian"]
+    },
+    {
+      "id": "preservation-guardian",
+      "mode": "read-only",
+      "mission": "Protect every live IELTS route, podcast, mock, session and submission contract.",
+      "owns": ["baseline", "regression-invariants"],
+      "gates": ["production-baseline", "ielts-truth"],
+      "handoffTo": ["content-architect", "adversarial-qa"]
+    },
+    {
+      "id": "seo-intelligence",
+      "mode": "read-only",
+      "mission": "Assign one search intent per canonical route and prevent cannibalization.",
+      "owns": ["keyword-map", "canonical-map", "internal-link-graph"],
+      "gates": ["route-parity", "seo-rendered"],
+      "handoffTo": ["content-architect", "analytics-steward"]
+    },
+    {
+      "id": "content-architect",
+      "mode": "writer",
+      "mission": "Define route contracts, direct answers, source boundaries and learning progression.",
+      "owns": ["ielts-route-catalog", "editorial-briefs"],
+      "gates": ["official-versus-welearn", "content-depth"],
+      "handoffTo": ["assessment-editor"]
+    },
+    {
+      "id": "assessment-editor",
+      "mode": "writer",
+      "mission": "Validate task structure, answer keys, distractors, feedback and scoring boundaries.",
+      "owns": ["question-contracts", "answer-rationales"],
+      "gates": ["four-by-ten", "unique-question-ids", "answer-evidence"],
+      "handoffTo": ["audio-qa", "implementer"]
+    },
+    {
+      "id": "audio-qa",
+      "mode": "writer",
+      "mission": "Certify media existence, duration, section boundaries, transcript alignment and playback accessibility.",
+      "owns": ["audio-manifest", "cue-points", "transcript-evidence"],
+      "gates": ["media-exists", "timing-valid", "transcript-aligned"],
+      "handoffTo": ["implementer"]
+    },
+    {
+      "id": "implementer",
+      "mode": "writer",
+      "mission": "Build one complete vertical slice without changing the existing full exam journey.",
+      "owns": ["hub-ui", "section-extractor", "public-dto", "partial-session"],
+      "gates": ["typescript", "component-tests", "browser-success-path"],
+      "handoffTo": ["adversarial-qa", "analytics-steward"]
+    },
+    {
+      "id": "adversarial-qa",
+      "mode": "read-only",
+      "mission": "Prove that indexation, privacy, scoring, navigation, mobile and keyboard failures are caught.",
+      "owns": ["mutation-cases", "browser-regressions"],
+      "gates": ["no-answer-leak", "session-noindex", "mobile-keyboard"],
+      "handoffTo": ["release-guardian"]
+    },
+    {
+      "id": "analytics-steward",
+      "mode": "writer",
+      "mission": "Measure acquisition and learning without recording response content or personal audio.",
+      "owns": ["event-contracts", "measurement-qa"],
+      "gates": ["event-schema", "no-sensitive-payload"],
+      "handoffTo": ["release-guardian"]
+    },
+    {
+      "id": "release-guardian",
+      "mode": "read-only",
+      "mission": "Run the aggregate harness, compare against main and authorize integration only with evidence.",
+      "owns": ["release-report", "rollback-note"],
+      "gates": ["scope", "truth", "catalog", "types", "build", "runtime"],
+      "handoffTo": ["orchestrator"]
+    }
+  ]
+}
