@@ -45,6 +45,23 @@
       ],
       "independentReview": false,
       "notes": "Enmienda arquitectónica derivada de instrucción humana explícita: /practica/toefl presenta tres rutas primarias — Ejercicios, Práctica y Simulacros — y Ejercicios agrupa los 12 tipos TOEFL 2026 por sección."
+    },
+    {
+      "gateId": "HR-02-v2",
+      "reviewer": "Jose David Duarte Silva",
+      "role": "product-owner-final-decision-authority",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-01T01:18:08Z",
+      "commitSha": "0464d9db",
+      "contentDigest": "7446f43ee8a291bd3bbb8e60134de98b9997ea31f2b02afad622975a379808b3",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr01a-information-architecture.md",
+        "docs/toefl-sectional-hr02-evidence.json",
+        "docs/toefl-sectional-hr02-ui-spec.md",
+        "docs/prototypes/toefl-sectional-hr02.html"
+      ],
+      "independentReview": false,
+      "notes": "Aprobación humana explícita recibida en la tarea de Codex con el texto 'Apruebo HR-02 v2'. Queda aprobada la IU con tres rutas primarias y el catálogo de 12 tipos agrupados por sección."
     }
   ]
 }
