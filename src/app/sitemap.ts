@@ -349,6 +349,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/practica/toefl/reading`, changeFrequency: 'weekly'  as const, priority: 0.78 },
     { url: `${BASE}/practica/toefl/reading/tipos-de-preguntas`, changeFrequency: 'weekly'  as const, priority: 0.76 },
     { url: `${BASE}/practica/toefl/listening`, changeFrequency: 'weekly'  as const, priority: 0.78 },
+    { url: `${BASE}/practica/toefl/listening/simulacros`, changeFrequency: 'weekly' as const, priority: 0.76 },
     { url: `${BASE}/practica/toefl/writing`, changeFrequency: 'weekly'  as const, priority: 0.78 },
     { url: `${BASE}/practica/toefl/speaking`, changeFrequency: 'weekly'  as const, priority: 0.78 },
     { url: `${BASE}/practica/toefl/writing/model-answers`, changeFrequency: 'monthly' as const, priority: 0.68 },
