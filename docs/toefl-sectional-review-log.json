@@ -97,6 +97,24 @@
       ],
       "independentReview": true,
       "notes": "Aprobación académica comunicada explícitamente por el dueño de producto con el texto 'aprobado por Zhanna - directora academica, 1 sep 2026'. Se habilitan para la plantilla editorial los claims C01–C08 y C10 dentro del alcance y los disclosures del artefacto revisado. C09 conserva el estado bloqueado definido en el paquete aprobado porque no se comunicó una resolución específica para publicar conteos o tiempos. Esta decisión resuelve D7 y levanta D8 únicamente para los claims habilitados; no aprueba todavía la plantilla editorial completa HR-04 ni un release."
+    },
+    {
+      "gateId": "HR-04-UI-SEO",
+      "reviewer": "David Duarte",
+      "role": "product-owner-final-decision-authority-and-seo-editorial-reviewer",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-01T15:53:36Z",
+      "commitSha": "53e0539825030f42751dd8376e6f620d96b746b9",
+      "contentDigest": "3f6c9f2e61c23173eeb7d9cf1865b5b7cf506870c3aa3379d4f0fdc60225fbec",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr04-implementation-review-packet.md",
+        "docs/toefl-sectional-hr04-implementation-evidence.json",
+        "docs/prototypes/screenshots/hr04-hub-desktop.png",
+        "docs/prototypes/screenshots/hr04-catalog-desktop.png",
+        "docs/prototypes/screenshots/hr04-catalog-mobile.png"
+      ],
+      "independentReview": false,
+      "notes": "Aprobación humana explícita recibida con los textos 'Está aprobado la renderización y la revisión SEO' y 'Yo aprobe rederizacion y SEO david duarte'. David Duarte cubre en esta decisión la renderización y SEO/editorial; se registra la falta de independencia entre producto y SEO. No se atribuye a Zhanna Korzh una revisión académica de la plantilla renderizada que no fue comunicada. HR-04 conserva pendiente únicamente esa revisión académica de copy/IU; C09 sigue bloqueado y esta aprobación no autoriza HR-05, integración ni release."
     }
   ]
 }
