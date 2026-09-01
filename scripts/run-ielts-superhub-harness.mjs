@@ -25,11 +25,14 @@ const stages = [
   },
   { id: 'ielts-truth', command: 'npm', args: ['run', 'check:ielts:truth'] },
   { id: 'harness-mutations', command: 'npm', args: ['run', 'test:ielts:superhub'] },
+  { id: 'listening-original-part1', command: 'npm', args: ['run', 'test:ielts:listening'] },
+  { id: 'listening-candidate-rights', command: 'npm', args: ['run', 'check:ielts:listening-release'] },
   { id: 'practice-catalog', command: 'npm', args: ['run', 'check:practica-catalog'] },
 ];
 
 if (releaseMode) {
   stages.push(
+    { id: 'listening-release-approval', command: 'npm', args: ['run', 'check:ielts:listening-release', '--', '--release'] },
     { id: 'release-environment', command: process.execPath, args: ['scripts/check-ielts-release-environment.mjs'] },
     { id: 'ielts-task1', command: 'npm', args: ['run', 'check:ielts-task1'] },
     { id: 'ielts-task2', command: 'npm', args: ['run', 'check:ielts-task2'] },

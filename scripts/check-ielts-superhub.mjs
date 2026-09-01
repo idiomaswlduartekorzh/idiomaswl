@@ -29,7 +29,10 @@ if (pageFiles.length < harness.minimums.routePageFiles) {
   failures.push(`El árbol IELTS tiene ${pageFiles.length} page.tsx; el mínimo protegido es ${harness.minimums.routePageFiles}.`);
 }
 
-const routeMapSource = fs.readFileSync(path.join(repoRoot, 'docs/ielts-toefl-route-map.md'), 'utf8');
+const routeMapSource = [
+  fs.readFileSync(path.join(repoRoot, 'docs/ielts-toefl-route-map.md'), 'utf8'),
+  fs.readFileSync(path.join(repoRoot, 'docs/ielts-superhub/ROUTE-INVENTORY.md'), 'utf8'),
+].join('\n');
 const sitemapSource = fs.readFileSync(path.join(repoRoot, 'src/app/sitemap.ts'), 'utf8');
 failures.push(...validateRouteInventory(routeMapSource, sitemapSource, harness));
 

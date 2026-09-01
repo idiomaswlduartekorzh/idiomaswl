@@ -280,6 +280,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Practice — IELTS ──────────────────────────────────────────────────────
     { url: `${BASE}/practica/ielts`, changeFrequency: 'weekly'  as const, priority: 0.85 },
+    { url: `${BASE}/practica/ielts/listening`, changeFrequency: 'weekly' as const, priority: 0.82 },
+    { url: `${BASE}/practica/ielts/listening/part-1`, changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: `${BASE}/practica/ielts/general-training`, changeFrequency: 'weekly'  as const, priority: 0.78 },
     { url: `${BASE}/practica/ielts/general-training/reading`, changeFrequency: 'monthly' as const, priority: 0.67 },
     { url: `${BASE}/practica/ielts/general-training/writing/task1`, changeFrequency: 'monthly' as const, priority: 0.66 },

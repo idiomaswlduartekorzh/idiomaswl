@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "practiceId": "welearn-listening-part-1-001",
+  "contentVersion": "2026-09-01.1",
+  "createdAt": "2026-09-01",
+  "ownership": {
+    "author": "Idiomas WeLearn",
+    "status": "original-independent-practice",
+    "borrowedQuestions": false,
+    "borrowedTranscript": false,
+    "borrowedAudio": false,
+    "trademarkDisclosure": "IELTS is a protected trademark. This resource is not affiliated with or endorsed by its owners."
+  },
+  "formatSources": [
+    "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening",
+    "https://ielts.org/take-a-test/test-types/ielts-general-training-test"
+  ],
+  "originalitySearch": {
+    "checkedAt": "2026-08-31",
+    "queries": [
+      "\"Harbour City Photo Studio\" \"photography walk\"",
+      "\"The old buildings are the reason I’m coming\" architecture photography",
+      "\"We used to charge forty-two\" \"boat operator\"",
+      "\"Photography walk booking\" \"Found the walk\" newsletter"
+    ],
+    "result": "No material exact match observed in the reviewed web results."
+  },
+  "audio": {
+    "path": "public/audio/ielts/listening/welearn-listening-part-1-001.mp3",
+    "generator": "scripts/generate-ielts-listening-part1-audio.mjs",
+    "renderer": "scripts/lib/render-ielts-piper-segments.py",
+    "engine": {
+      "name": "Piper",
+      "version": "1.7.0",
+      "source": "https://github.com/OHF-Voice/piper1-gpl",
+      "license": "GPL-3.0-or-later"
+    },
+    "voiceModel": {
+      "id": "en_GB-vctk-medium",
+      "sha256": "4e9fc85ab9009385319fc6bae7f55577f8a2d7ee77fd9159a5500eb6531f41e6",
+      "repositoryLicense": "MIT",
+      "repositoryCommit": "39ab474be869e9181350af6a65e4953eef67aaa0",
+      "modelCard": "https://huggingface.co/rhasspy/piper-voices/blob/39ab474be869e9181350af6a65e4953eef67aaa0/en/en_GB/vctk/medium/MODEL_CARD",
+      "modelCardSha256": "53ec6b1fd90d9125d5bebac55261efd27f7e8d6dc962f605a5b5f796df2ec7fb",
+      "modelCardBytes": 326,
+      "trainingDataset": "CSTR VCTK Corpus",
+      "datasetSource": "https://datashare.ed.ac.uk/handle/10283/3443",
+      "datasetLicense": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "VCTK Corpus, University of Edinburgh, used through the Piper en_GB-vctk-medium voice model under CC BY 4.0."
+    },
+    "voices": [
+      { "role": "host", "speaker": "p226", "speakerId": 95, "locale": "en_GB" },
+      { "role": "customer", "speaker": "p225", "speakerId": 107, "locale": "en_GB" }
+    ],
+    "rightsReview": {
+      "status": "documented-open-licence",
+      "checkedAt": "2026-09-01",
+      "publicationUse": "permitted-with-attribution",
+      "attributionLocation": "src/app/(site)/practica/ielts/listening/part-1/page.tsx"
+    },
+    "durationSeconds": 134.325578,
+    "bytes": 1613052,
+    "sha256": "1c31df90a3a64751bd7842c03f4e778584e8fdec1119f114ee6ef7308ba4cb8a",
+    "channels": 1,
+    "sampleRateHz": 44100,
+    "bitRate": 96051,
+    "isolatedPartAsset": true
+  },
+  "automatedChecks": {
+    "tenContinuousQuestions": "pass",
+    "publicDtoAllowlist": "pass",
+    "serverOnlyScoring": "pass",
+    "postSubmitExplanations": "pass",
+    "audioChecksum": "pass",
+    "legacySetImported": false
+  },
+  "release": {
+    "status": "pilot",
+    "blocker": "Human listening review of pronunciation, pacing and intelligibility is still required; pilot labels must be promoted only in the same approval change.",
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}

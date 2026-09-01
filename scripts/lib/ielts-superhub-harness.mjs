@@ -255,6 +255,8 @@ export function validateRouteInventory(routeMapSource, sitemapSource, manifest) 
   }
   for (const route of inventory.knownSitemapOnlyRoutes) {
     if (documented.has(route)) failures.push(`${route} ya está documentada: debe salir de knownSitemapOnlyRoutes al integrar el mapa.`);
+    const directRouteToken = '`${BASE}' + route + '`';
+    if (sitemapSource.includes(directRouteToken)) continue;
     if (route.endsWith('/mixed-practice')) {
       if (!sitemapSource.includes('`${BASE}/practica/ielts/reading/mixed-practice`')) {
         failures.push('El sitemap perdió IELTS Reading mixed-practice.');

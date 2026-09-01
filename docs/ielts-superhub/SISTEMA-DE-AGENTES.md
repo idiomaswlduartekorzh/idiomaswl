@@ -64,7 +64,8 @@ cambios en `shared-seo` se hacen al final de una vertical slice ya aprobada.
 ## Estados editoriales
 
 - `published`: indexable y con todos los gates verdes.
-- `pilot`: disponible únicamente para QA; no enlazado desde producción ni sitemap.
+- `pilot`: disponible únicamente para QA. Una candidata puede preparar su sitemap, pero
+  CI y `prebuild` deben bloquear cualquier publicación hasta que el estado sea aprobado.
 - `blocked`: existe material parcial, pero falta una condición obligatoria.
 - `legacy`: se preserva por compatibilidad y no se presenta como formato vigente.
 
@@ -79,5 +80,7 @@ estricto rechaza `pilot`, `blocked` o `legacy` cuando se intenta promocionar el 
   evidencia actual.
 - No exponer `answer` o `answers` en un payload público nuevo.
 - No añadir una ruta al sitemap para “reservar” la URL.
+- No generar audio publicable con voces del sistema operativo ni con un modelo sin
+  MODEL_CARD, licencia compatible y atribución comprobable.
 - No reducir umbrales de guardianes para obtener verde.
 - No publicar directamente desde el worktree USB.

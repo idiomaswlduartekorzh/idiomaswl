@@ -38,7 +38,7 @@
 .pathGrid,
 .skillGrid { display: grid; gap: 1rem; }
 .pathGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.skillGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.skillGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 .pathCard,
 .skillCard,

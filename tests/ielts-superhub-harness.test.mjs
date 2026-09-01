@@ -13,6 +13,7 @@ import {
   validateAgentsManifest,
   validateHarnessManifest,
   validateListeningMock,
+  validateRouteInventory,
 } from '../scripts/lib/ielts-superhub-harness.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -110,6 +111,23 @@ test('detecta si una sesión pierde el marcador noindex', () => {
     requiredMarkers: { [relativePath]: ['robots: { index: false, follow: false }'] },
   });
   assert.match(failures.join('\n'), /perdió el marcador.*robots/i);
+});
+
+test('reconoce rutas IELTS estáticas añadidas directamente al sitemap', () => {
+  const manifest = clone(harness);
+  manifest.minimums.canonicalRoutes = 3;
+  manifest.routeInventory.documentedCanonicalFloor = 1;
+  manifest.routeInventory.knownSitemapOnlyRoutes = [
+    '/practica/ielts/listening',
+    '/practica/ielts/listening/part-1',
+  ];
+  manifest.routeInventory.noindexQueryRoutes = [
+    '/practica/ielts/listening/sesion?practice=pilot&part=1',
+  ];
+  const routeMap = '`/practica/ielts`\n`/practica/ielts/listening/sesion?practice=pilot&part=1`';
+  const sitemap = '`${BASE}/practica/ielts/listening`\n`${BASE}/practica/ielts/listening/part-1`';
+  assert.deepEqual(validateRouteInventory(routeMap, sitemap, manifest), []);
+  assert.match(validateRouteInventory(routeMap, sitemap.replace('/part-1', '/missing'), manifest).join('\n'), /part-1/);
 });
 
 test('el auditor de DTO público detecta claves answer y answers a cualquier profundidad', () => {

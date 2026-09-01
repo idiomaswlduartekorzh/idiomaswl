@@ -1,6 +1,8 @@
 # Plan de ataque — IELTS Practice Superhub
 
-Estado inicial: Fase 0 implementada; Fase 1 bloqueada hasta certificar el piloto
+Estado actual: Fase 0 implementada; Fase 1 construida como piloto original y bloqueada
+para integración hasta una escucha humana final del MP3. El build y CI estrictos fallan
+mientras el manifiesto continúe en estado `pilot`.
 
 Rama: `codex/ielts-superhub`
 
@@ -25,9 +27,9 @@ permanecen fuera del índice.
 
 ## Línea base que no puede disminuir
 
-- 106 URLs IELTS actualmente indexables: 96 documentadas y 10 publicadas que deben
-  reconciliarse con el catálogo antes de expandir.
-- 74 archivos `page.tsx` bajo el árbol IELTS, incluidos templates dinámicos.
+- 108 URLs IELTS protegidas en la candidata: 96 documentadas y 12 publicadas en sitemap
+  que deben reconciliarse con el catálogo compartido antes de integrar.
+- 77 archivos `page.tsx` bajo el árbol IELTS, incluidos templates dinámicos.
 - Academic, General Training, Reading, Writing Task 1 y Writing Task 2.
 - 14 tipos de pregunta y 6 habilidades de Reading.
 - Tres podcasts IELTS dentro del hub mediante `ExamPodcastShelf`.
@@ -37,16 +39,25 @@ permanecen fuera del índice.
 - MP3 presentes para Sets 1–12. Sets 13–20 permanecen bloqueados hasta que exista y se
   certifique su audio.
 
+## Decisión editorial irreversible de Fase 1
+
+El Set 1 histórico no se usa como fuente del superhub. La auditoría encontró que su Part
+1 reproduce la estructura y gran parte de los datos de Cambridge IELTS 10 Test 1. Se
+preserva para no romper el sistema existente, pero no se enlaza, proyecta ni reutiliza en
+una URL indexable nueva.
+
+El piloto usa `welearn-listening-part-1-001`: guion, diez preguntas y explicaciones
+originales de WeLearn. El MP3 se genera con Piper y el modelo VCTK, cuyo MODEL_CARD
+declara el corpus de entrenamiento bajo CC BY 4.0; la atribución es visible en la landing.
+Su manifiesto de procedencia y derechos está en
+`docs/ielts-superhub/originality/welearn-listening-part-1-001.json`.
+
 ## Arquitectura objetivo
 
 ```text
 /practica/ielts
 ├── /listening
-│   ├── /part-1
-│   ├── /part-2
-│   ├── /part-3
-│   ├── /part-4
-│   └── /practice-tests
+│   └── /part-1                    (piloto construido)
 ├── /reading                         (preservado)
 ├── /writing                         (puente futuro, sin mover rutas actuales)
 ├── /speaking
@@ -54,8 +65,12 @@ permanecen fuera del índice.
 └── /general-training                (preservado)
 
 /examenes/ielts/practica/set-*       (preservado, noindex)
-/practica/ielts/listening/sesion     (futuro, noindex)
+/practica/ielts/listening/sesion     (piloto construido, noindex)
 ```
+
+No se crean `/part-2`, `/part-3`, `/part-4` ni `/practice-tests` hasta que cada URL tenga
+contenido original completo. Una biblioteca de tests requiere al menos dos pruebas de
+cuatro partes y 40 preguntas; no se publican placeholders para reservar keywords.
 
 Listening y Speaking son compartidos por Academic y General Training. No se crearán
 duplicados bajo ambas modalidades. Las rutas nuevas se publican sólo cuando su práctica,
@@ -139,25 +154,30 @@ Entregables:
 
 Puerta: `npm run harness:ielts -- --compare-git-ref=origin/main`.
 
-### Fase 1 — Piloto Listening Set 1 / Part 1
+### Fase 1 — Piloto original Listening Part 1
 
 Entregables:
 
 - hub `/practica/ielts/listening`;
-- hubs Part 1–4 y biblioteca de tests;
-- extractor puro que consume `MockExam.sections` sin copiar preguntas;
+- landing Part 1 sin páginas vacías para Part 2–4;
+- contrato público allowlist independiente del banco histórico;
 - DTO público sin `answer` ni `answers`;
-- audio segmentado o cue points auditados;
+- audio aislado, con duración, checksum, generador reproducible y derechos de voz
+  documentados; las voces de sistema de macOS están expresamente prohibidas;
 - sesión parcial `noindex` con intento versionado;
-- enlaces desde el hub IELTS, Academic, General Training y contenido relacionado.
+- scoring de las diez respuestas exclusivamente en servidor;
+- explicación y modelo de respuesta únicamente después de una entrega completa;
+- enlace desde el hub IELTS sin cambiar rutas ni runners de simulacros existentes.
 
-Puerta: preservación del full mock Set 1 + pruebas de payload + auditoría de audio + SEO
-renderizado + recorrido móvil/escritorio.
+Puerta técnica: preservación del full mock Set 1 + pruebas de payload + checksum y
+licencia de audio + SEO renderizado + recorrido móvil/escritorio. Puerta humana: escuchar
+el MP3 completo y aprobar pronunciación, ritmo e inteligibilidad en el manifiesto; esa
+misma aprobación reemplaza las etiquetas visibles de piloto.
 
-### Fase 2 — Sets 1–12
+### Fase 2 — Partes 2–4 originales
 
-Se expanden únicamente los sets con MP3 físico. Cada promoción de estado exige cuatro
-partes de diez preguntas, transcript, clave válida, rango de audio y revisión editorial.
+Se replica el contrato con guiones y audios originales. Los Sets 1–12 históricos siguen
+preservados como deuda separada y no se convierten automáticamente en landings.
 
 Puerta: `npm run harness:ielts:release` sin bloqueos para el recurso promocionado.
 
@@ -184,9 +204,11 @@ automática y no se presenta una estimación como evaluación oficial.
 5. `Official IELTS format` y `WeLearn practice strategy` deben distinguirse visiblemente.
 6. Todo contenido interactivo debe mostrar respuesta explicada después de entregar.
 7. No se copian preguntas, audios ni marcas de terceros.
-8. No se despliega desde el worktree: producción sale únicamente de un commit integrado
+8. Toda voz sintética requiere MODEL_CARD, licencia compatible y atribución visible; no
+   se publican salidas de voces del sistema operativo.
+9. No se despliega desde el worktree: producción sale únicamente de un commit integrado
    en `main`.
-9. TOEFL no se modifica en esta rama.
+10. TOEFL no se modifica en esta rama.
 
 ## Orden de verificación por cambio
 
@@ -194,7 +216,7 @@ automática y no se presenta una estimación como evaluación oficial.
 2. `npm run check:ielts:truth`
 3. prueba estrecha del componente o dato modificado
 4. `npm run check:practica-catalog`
-5. `npx tsc --noEmit --pretty false`
+5. `npx tsc --noEmit --pretty false --incremental false`
 6. recorrido de navegador de la historia modificada
 7. `npm run harness:ielts:release` antes de integrar
 

@@ -3,8 +3,8 @@
   "recordedAt": "2026-08-31",
   "sourceRef": "origin/main",
   "minimums": {
-    "canonicalRoutes": 106,
-    "routePageFiles": 74,
+    "canonicalRoutes": 108,
+    "routePageFiles": 77,
     "registeredMocks": 20,
     "listeningPartsPerMock": 4,
     "listeningAnswersPerMock": 40,
@@ -15,10 +15,13 @@
   "routeInventory": {
     "documentedCanonicalFloor": 96,
     "noindexQueryRoutes": [
-      "/practica/ielts/academic/writing/task1/tarea-completa/sesion?task=<id>"
+      "/practica/ielts/academic/writing/task1/tarea-completa/sesion?task=<id>",
+      "/practica/ielts/listening/sesion?practice=welearn-listening-part-1-001&part=1"
     ],
     "knownSitemapOnlyRoutes": [
       "/practica/ielts/reading/mixed-practice",
+      "/practica/ielts/listening",
+      "/practica/ielts/listening/part-1",
       "/practica/ielts/academic/writing/task2/linking-language/addition",
       "/practica/ielts/academic/writing/task2/linking-language/contrast",
       "/practica/ielts/academic/writing/task2/linking-language/cause-and-effect",
@@ -37,6 +40,22 @@
     "src/app/(site)/practica/ielts/academic/writing/task1/page.tsx",
     "src/app/(site)/practica/ielts/academic/writing/task2/page.tsx",
     "src/app/(site)/practica/ielts/general-training/page.tsx",
+    "src/app/(site)/practica/ielts/listening/page.tsx",
+    "src/app/(site)/practica/ielts/listening/part-1/page.tsx",
+    "src/app/(site)/practica/ielts/listening/sesion/page.tsx",
+    "src/app/(site)/practica/ielts/listening/sesion/ListeningSession.tsx",
+    "src/app/api/practica/ielts/listening/score/route.ts",
+    "src/data/ielts/listening-part1-welearn-001.server.ts",
+    "src/lib/http/read-bounded-json.ts",
+    "src/lib/ielts/listening-practice-contract.ts",
+    "public/audio/ielts/listening/welearn-listening-part-1-001.mp3",
+    "tests/ielts-listening-part1.test.mjs",
+    "scripts/check-ielts-listening-release.mjs",
+    "scripts/lib/ielts-listening-release-approval.mjs",
+    "scripts/generate-ielts-listening-part1-audio.mjs",
+    "scripts/lib/render-ielts-piper-segments.py",
+    "docs/ielts-superhub/originality/welearn-listening-part-1-001.json",
+    "docs/ielts-superhub/ROUTE-INVENTORY.md",
     "src/app/(site)/practica/ielts/academic/writing/task1/tarea-completa/sesion/page.tsx",
     "src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx",
     "src/app/(site)/examenes/[exam]/practica/[mockId]/IELTSPracticeClient.tsx",
@@ -56,7 +75,39 @@
       "ExamPodcastShelf",
       "getExamPodcasts('ielts')",
       "/practica/ielts/reading",
-      "/practica/ielts/academic/writing"
+      "/practica/ielts/academic/writing",
+      "/practica/ielts/listening"
+    ],
+    "src/app/(site)/practica/ielts/listening/page.tsx": [
+      "IELTS Listening Practice by Part",
+      "robots: { index: true, follow: true }",
+      "https://www.idiomaswl.com/practica/ielts/listening",
+      "not affiliated with or endorsed by IELTS"
+    ],
+    "src/app/(site)/practica/ielts/listening/part-1/page.tsx": [
+      "IELTS Listening Part 1 Practice: Questions 1–10",
+      "robots: { index: true, follow: true }",
+      "welearn-listening-part-1-001"
+    ],
+    "src/app/(site)/practica/ielts/listening/sesion/page.tsx": [
+      "robots: { index: false, follow: false",
+      "await searchParams",
+      "getIeltsListeningPart1Practice"
+    ],
+    "src/data/ielts/listening-part1-welearn-001.server.ts": [
+      "import 'server-only'",
+      "welearn-listening-part-1-001.mp3",
+      "1c31df90a3a64751bd7842c03f4e778584e8fdec1119f114ee6ef7308ba4cb8a"
+    ],
+    "scripts/generate-ielts-listening-part1-audio.mjs": [
+      "PIPER_PYTHON",
+      "PIPER_MODEL",
+      "CC BY 4.0"
+    ],
+    "src/app/api/practica/ielts/listening/score/route.ts": [
+      "private, no-store, max-age=0",
+      "noindex, nofollow, noarchive",
+      "validateIeltsListeningResponses"
     ],
     "src/app/(site)/examenes/[exam]/practica/[mockId]/page.tsx": [
       "robots: { index: false, follow: false }",
@@ -82,6 +133,7 @@
     "academic-writing": "published",
     "general-training": "published",
     "listening": "blocked",
+    "original-listening-part-1": "pilot",
     "speaking": "blocked"
   },
   "listeningSets": {
@@ -113,10 +165,11 @@
   ],
   "knownBaselineDebt": [
     "check:exam-practice-content already fails on main for three IELTS hub assertions and multiple TOEFL assertions",
-    "ten IELTS sitemap routes are not represented in the mixed route/keyword control documents",
+    "twelve IELTS sitemap routes are not represented in the mixed route/keyword control documents",
     "sets 13-20 reference missing listening MP3 files",
     "the current full mock sends answer keys to the client",
     "the current full mock counts multiselect completion inconsistently",
+    "legacy IELTS Set 1 Part 1 matches Cambridge IELTS 10 Test 1 structure and is excluded from every new indexable practice route",
     "IELTS Set 4 has a declared 10/10/7/13 Listening split and cannot be promoted until editorial repair"
   ]
 }

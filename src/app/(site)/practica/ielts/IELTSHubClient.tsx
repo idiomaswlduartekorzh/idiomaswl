@@ -25,6 +25,15 @@ const MODALITIES = [
 
 const AVAILABLE_SKILLS = [
   {
+    id: 'listening',
+    name: 'Listening',
+    label: 'Listening comprehension',
+    desc: 'Understand the four-part format, then practise Part 1 with original WeLearn audio, 10 questions and server-scored feedback.',
+    count: '4-part map · release-gated Part 1 pilot',
+    href: '/practica/ielts/listening',
+    icon: Headphones,
+  },
+  {
     id: 'reading',
     name: 'Reading',
     label: 'Reading comprehension',
@@ -45,7 +54,6 @@ const AVAILABLE_SKILLS = [
 ];
 
 const COMING_SKILLS = [
-  { name: 'Listening', label: 'Listening comprehension', desc: 'Four sections with native-speaker audio.', icon: Headphones },
   { name: 'Speaking', label: 'Speaking production', desc: 'Personal questions, a long turn and discussion.', icon: Mic2 },
 ];
 
@@ -58,10 +66,10 @@ export default function IELTSHubClient() {
         <header className={styles.hero}>
           <p className={styles.eyebrow}>IELTS practice · Format, method & transfer</p>
           <h1>Choose the exam route. Build the skill behind it.</h1>
-          <p className={styles.heroLead}>Start with Academic or General Training, then move into Reading or Writing. Every available route separates official format from WeLearn strategy and connects explanation to real practice.</p>
+          <p className={styles.heroLead}>Start with Listening, Academic or General Training, then move into the skill you need. Every available route separates official format from WeLearn strategy and connects explanation to real practice.</p>
           <div className={styles.factGrid} aria-label="IELTS practice at a glance">
             <div className={styles.fact}><strong>2 routes</strong><span>Academic and General Training pathways</span></div>
-            <div className={styles.fact}><strong>2 live skills</strong><span>Reading and Writing available now</span></div>
+            <div className={styles.fact}><strong>2 live + 1 pilot</strong><span>Reading and Writing live; Listening release-gated</span></div>
             <div className={styles.fact}><strong>20+ paths</strong><span>question formats and transferable skills</span></div>
             <div className={styles.fact}><strong>English-first</strong><span>international learning experience</span></div>
           </div>
@@ -88,7 +96,7 @@ export default function IELTSHubClient() {
         />
 
         <section className={styles.section} aria-labelledby="skills-heading">
-          <div className={styles.sectionHeading}><p className={styles.kicker}>Choose a live skill</p><h2 id="skills-heading">Learn the method, practise it, then transfer it</h2><p>Reading and Writing now use the same product structure: clear architecture, focused sub-skills, guided practice and a route into independent work.</p></div>
+          <div className={styles.sectionHeading}><p className={styles.kicker}>Choose a skill route</p><h2 id="skills-heading">Learn the method, practise it, then transfer it</h2><p>Listening, Reading and Writing use one product structure: clear architecture, focused sub-skills, guided practice and a route into independent work.</p></div>
           <div className={styles.skillGrid}>
             {AVAILABLE_SKILLS.map(({ icon: Icon, ...skill }) => (
               <Link key={skill.id} href={skill.href} className={styles.skillCard}>
