@@ -14,7 +14,7 @@ flowchart TD
 
     H -->|"Ver todos los ejercicios"| E["/practica/toefl/ejercicios<br/>12 tipos · 4 clústeres"]
     H -.->|"Práctica · próximamente<br/>sin enlace"| G["Ruta guiada futura"]
-    H -->|"Abrir los 20 simulacros"| M["/examenes/toefl#simulacros<br/>Mocks completos"]
+    H -->|"Abrir los 20 simulacros"| M["/examenes/toefl#practica<br/>Mocks completos"]
 
     E -->|"Ver guía"| R["/practica/toefl/reading"]
     E -->|"Ver guía"| L["/practica/toefl/listening"]
@@ -66,7 +66,7 @@ El heading o CTA secundario `Ver guía de Reading` apunta a la página seccional
 Al terminar o abandonar un ejercicio, el usuario puede:
 
 1. volver al clúster correspondiente en `/practica/toefl/ejercicios#seccion`;
-2. aplicar lo aprendido en `/examenes/toefl#simulacros`.
+2. aplicar lo aprendido en `/examenes/toefl#practica`.
 
 ### D6 — El simulacro devuelve al entrenamiento específico
 
@@ -79,17 +79,17 @@ La pantalla de resultado ofrece `Reforzar errores con ejercicios`, inicialmente 
 | `/practica` | `TOEFL` | `/practica/toefl` | enlace |
 | `/practica/toefl` | `Ver todos los ejercicios` | `/practica/toefl/ejercicios` | enlace primario |
 | `/practica/toefl` | `Práctica · Próximamente` | ninguno | artículo no interactivo |
-| `/practica/toefl` | `Abrir los 20 simulacros` | `/examenes/toefl#simulacros` | enlace primario |
+| `/practica/toefl` | `Abrir los 20 simulacros` | `/examenes/toefl#practica` | enlace primario |
 | catálogo | chips `Reading/Listening/Writing/Speaking` | anchors del mismo documento | enlaces de salto |
 | catálogo | `Ver guía de …` | hub seccional existente | enlace secundario |
 | catálogo Reading | nombre de tarea disponible | ejercicio Reading correspondiente | enlace |
 | catálogo Writing | nombre de tarea disponible | ejercicio Writing correspondiente | enlace |
 | catálogo Listening/Speaking | nombres de tareas | ninguno | texto con estado |
-| catálogo Listening/Speaking | `Practicar … en simulacros` | `/examenes/toefl#simulacros` | un CTA por clúster |
+| catálogo Listening/Speaking | `Practicar … en simulacros` | `/examenes/toefl#practica` | un CTA por clúster |
 | ejercicio individual | `Ver todos los ejercicios` | catálogo + anchor de sección | enlace secundario |
-| ejercicio individual | `Hacer un simulacro completo` | `/examenes/toefl#simulacros` | enlace contextual |
+| ejercicio individual | `Hacer un simulacro completo` | `/examenes/toefl#practica` | enlace contextual |
 | resultado de simulacro | `Reforzar errores con ejercicios` | `/practica/toefl/ejercicios` | enlace de retorno |
-| resultado de simulacro | `Intentar otro simulacro` | `/examenes/toefl#simulacros` | enlace de repetición |
+| resultado de simulacro | `Intentar otro simulacro` | `/examenes/toefl#practica` | enlace de repetición |
 
 ## 4. URLs de ejercicios disponibles
 
@@ -140,6 +140,10 @@ Reglas:
 - los anchors del catálogo no son páginas SEO independientes;
 - se mantienen las URLs existentes durante el piloto.
 
+### Contrato de anchor para Simulacros
+
+HR-01A y HR-02 v2 usaron `#simulacros` como nombre conceptual. La auditoría del código confirmó que el destino existente se identifica como `id="practica"` en `MockGrid.tsx`; `#simulacros` no existe. HR-03 normaliza todos los CTAs implementables a `/examenes/toefl#practica` para que el salto funcione sin renombrar ni romper anchors actuales.
+
 ## 7. Recorridos que deben pasar la revisión humana
 
 ### Búsqueda específica
@@ -187,4 +191,3 @@ Catálogo → Listening/Speaking → estado visible → simulacros, sin 404, enl
 - [ ] Se aprueba usar Ejercicios como padre editorial en breadcrumbs sin migrar URLs.
 - [ ] Se aprueba mantener Simulacros en `/examenes/toefl` y enlazarlo en ambos sentidos.
 - [ ] Se autoriza pasar a HR-04 para el primer slice editorial de Listening.
-
