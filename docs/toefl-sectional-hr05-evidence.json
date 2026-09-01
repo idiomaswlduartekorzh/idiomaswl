@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "gateId": "HR-05",
+  "initiative": "toefl-sectional-seo-curation-harness",
+  "status": "pending-human-review",
+  "generatedAtUtc": "2026-09-01T16:46:11Z",
+  "implementationCommitSha": "758966144efd4e593e4888b9e9a77a83c897f629",
+  "approvedInputs": [
+    {
+      "gateId": "HR-04",
+      "reviewLogPath": "docs/toefl-sectional-review-log.json",
+      "academicReviewer": "Zhanna Korzh",
+      "seoReviewer": "David Duarte",
+      "blockedClaims": ["C09"]
+    }
+  ],
+  "scope": {
+    "sourceMock": "toefl/set-1",
+    "skill": "listening",
+    "indexableLibrary": "/practica/toefl/listening/simulacros",
+    "noindexRunner": "/practica/toefl/listening/simulacros/practica/set-1",
+    "unsupportedRunnerSample": "/practica/toefl/listening/simulacros/practica/set-99",
+    "taskFamilies": 4,
+    "sourceSections": 8,
+    "sourceQuestions": 34,
+    "uniqueAudioAssets": 22,
+    "copiedQuestionBanks": 0,
+    "serverScoringEndpoint": "/api/practica/toefl/listening/score"
+  },
+  "artifacts": [
+    {
+      "kind": "sectional-adapter",
+      "path": "src/data/toefl/sectional-listening-adapter.ts",
+      "sha256": "1585d1c68d4aa01a55ceb3a38b27feabfd1511d8d53d1f372c8e0be52adf72da"
+    },
+    {
+      "kind": "indexable-library",
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/page.tsx",
+      "sha256": "e3835f0724024d9b947c5aa302068ae497ea24ff6dc3cb3702b07968e37aa317"
+    },
+    {
+      "kind": "indexable-library-styles",
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/page.module.css",
+      "sha256": "9f9d436471a4fe7cf099325ac4f0fa3275209d79134c3f2dbd8e9505112b521d"
+    },
+    {
+      "kind": "runner-route",
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/page.tsx",
+      "sha256": "6aec171da6a24f48743df2eb76cdf5bf025bedd0a3bc976d87b5499e9d190889"
+    },
+    {
+      "kind": "runner-client",
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/ToeflListeningSectionRunner.tsx",
+      "sha256": "03fb9b6c656fe9b64a5fa5f194e1b146aea12c1d319f6a42230389d7db345995"
+    },
+    {
+      "kind": "runner-styles",
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/runner.module.css",
+      "sha256": "d6c410fcc944623ed2de67a7e162208c608e0e8b26ae2ab8b7fe059e7085443f"
+    },
+    {
+      "kind": "parity-test",
+      "path": "tests/toefl-sectional-listening-set1.test.mjs",
+      "sha256": "3483ea934cb79b4ba2e512777871222d4c28a3ce337ffc7c42ab235779e7da24"
+    },
+    {
+      "kind": "test-path-loader",
+      "path": "tests/ts-paths-loader.mjs",
+      "sha256": "df58b39b93f8a6c13cc6d91dba29953069d8ec55cf3709f13b39e1faa695b534"
+    }
+  ],
+  "visualEvidence": [
+    {
+      "path": "docs/prototypes/screenshots/hr05-library-desktop.png",
+      "viewport": "1280x900",
+      "browser": "Chromium",
+      "sha256": "a7b6da5986cc4ef5aade8b8be1ec19e31c31dbf32a1776b14c070cc8adb6e165"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr05-library-mobile.png",
+      "viewport": "390x844",
+      "browser": "Chromium",
+      "sha256": "8f44b9ca97d6b7c1baea006c68284a4c4e5df502fecd9bf228b1cee4c4d49a10"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr05-runner-intro-desktop.png",
+      "viewport": "1280x900",
+      "browser": "Chromium",
+      "sha256": "f4db566f64c49d95d4298d1a70a32cc0f64dd51cfb89b53d6995b3246b70b1ab"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr05-runner-step1-mobile.png",
+      "viewport": "390x844",
+      "browser": "Chromium",
+      "sha256": "142416fc7d41e32e50ebee52738f5eca8583a50d450275d5b20d6048e5f20a47"
+    }
+  ],
+  "dataIntegrity": {
+    "exactSourceSectionOrder": true,
+    "exactSourceQuestionOrder": true,
+    "sourceIdsPreserved": true,
+    "objectIdsPreserved": true,
+    "mediaIdsPreserved": true,
+    "audioUrlsPreserved": true,
+    "allAudioFilesPresent": true,
+    "clientAnswerKeysFound": 0,
+    "privateServerRegistryReused": true
+  },
+  "runtimeAudit": {
+    "libraryHttpStatus": 200,
+    "runnerHttpStatus": 200,
+    "unsupportedRunnerHttpStatus": 404,
+    "runnerRobots": "noindex, follow",
+    "runnerIncludedInSitemap": false,
+    "validScoreHttpStatus": 200,
+    "validScoreCorrect": 0,
+    "validScoreDenominator": 34,
+    "validScoreOutcomes": 34,
+    "invalidScoreHttpStatus": 400,
+    "browserMainLandmarks": 1,
+    "mobileWhatsappVisibleInRunner": false,
+    "radiosDisabledBeforeAudioEnds": true,
+    "radiosEnabledAfterAudioEnds": true,
+    "browserConsoleErrors": 0
+  },
+  "checks": [
+    {"command": "npm run test:toefl-sectional-listening", "status": "passed", "tests": 3},
+    {"command": "npx tsc --noEmit --pretty false --incremental false", "status": "passed"},
+    {"command": "npm run check:toefl-sectional-catalog", "status": "passed"},
+    {"command": "npm run check:toefl-editorial", "status": "passed"},
+    {"command": "npm run check:practica-catalog", "status": "passed"},
+    {"command": "npm run check:production-baseline", "status": "passed"},
+    {"command": "npm run check:seo-foundation", "status": "passed"},
+    {"command": "npm run check:toefl-fixed-listening", "status": "passed"},
+    {"command": "npm run test:toefl-fixed-listening", "status": "passed", "tests": 3},
+    {"command": "npm run check:toefl-audio-release", "status": "passed"},
+    {"command": "npm run check:exam-practice-content", "status": "expected-failure", "findingCount": 12, "controlChanged": false}
+  ],
+  "buildAudit": {
+    "status": "deferred-before-integration",
+    "webpackTempAttempt": "failed-process-memory-limit-at-approximately-2GB",
+    "turbopackTempAttempt": "failed-because-ephemeral-node_modules-symlink-points-outside-project-root",
+    "productCompileErrorsObserved": false,
+    "nextAction": "Run the mandatory full build after HR-05 approval in an integration-capable worktree with real dependencies or an adequate heap; do not treat the preview build constraints as a pass."
+  },
+  "claimAudit": {
+    "implemented": ["C03", "C04", "C05", "C06", "C10"],
+    "blockedAndAbsentAsOfficialClaim": ["C09"],
+    "practiceOnlyCountersVisible": true,
+    "officialScoreClaimPresent": false,
+    "adaptiveClaimPresent": false,
+    "etsAffiliationClaimPresent": false
+  },
+  "limitations": [
+    "Only Listening Set 1 is exposed; Sets 2-20 remain outside this gate.",
+    "The runner reports raw practice outcomes only and does not calculate an ETS band or overall score.",
+    "The runner is fixed and does not reproduce official adaptive routing.",
+    "C09 remains blocked; visible step and answer counters describe only this WeLearn practice session.",
+    "The full repository build is still mandatory before integration and did not pass in the symlinked ephemeral preview environment.",
+    "No production deployment, main integration, remote change, authentication change, payment change or full-exam submission change was performed."
+  ],
+  "humanReviewRequired": [
+    "qa-end-to-end-audio-mobile-keyboard-and-resume",
+    "engineering-data-boundary-error-handling-and-regression",
+    "academic-task-family-copy-disclosures-and-c09-absence"
+  ]
+}
