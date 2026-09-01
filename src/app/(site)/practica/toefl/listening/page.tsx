@@ -67,15 +67,15 @@ export default function ToeflListeningPage() {
       title="TOEFL Listening 2026: formato y práctica"
       lead="Entiende las cuatro tareas actuales, aprende cuándo un audio corto es correcto y aplica la estrategia en los 20 simulacros originales de WeLearn."
       facts={[
-        { value: '≈ 29 min', label: 'tiempo base publicado por ETS' },
-        { value: '47', label: 'ítems base en la estructura vigente' },
         { value: '4', label: 'familias de tarea actuales' },
         { value: 'Adaptativo', label: 'por módulos en el examen oficial' },
+        { value: 'Fijo', label: 'recorrido de práctica WeLearn' },
+        { value: 'Original', label: 'audio creado por WeLearn' },
       ]}
       tasks={[...tasks]}
       officialSummary={[
         'La sección oficial usa fragmentos breves y audios más desarrollados. Por eso no se debe auditar toda la experiencia mirando solo el primer clip: cada familia de tarea exige una longitud y una carga de comprensión distintas.',
-        'ETS publica 47 ítems y unos 29 minutos como estructura base, pero aclara que, al adaptarse el examen, el tiempo y la cantidad pueden variar. Una práctica no adaptativa debe decirlo de forma visible.',
+        'ETS identifica Reading y Listening como secciones adaptativas. Una práctica fija como la de WeLearn debe decir de forma visible que no reproduce ese enrutamiento ni la puntuación oficial.',
       ]}
       practiceSteps={[
         'Haz un primer recorrido sin pausar y registra si fallaste por vocabulario, intención, detalle u organización.',

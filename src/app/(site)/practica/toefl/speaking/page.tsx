@@ -36,8 +36,8 @@ const faqs = [
     answer: 'La sección vigente usa dos familias: Listen and Repeat y Take an Interview. Las antiguas tareas integradas no son la estructura principal del examen posterior al 21 de enero de 2026.',
   },
   {
-    question: '¿Cuánto dura TOEFL Speaking?',
-    answer: 'ETS publica aproximadamente 8 minutos y 11 ítems para la estructura base. El tiempo de instrucciones y preparación general no forma parte de esa cifra.',
+    question: '¿Dónde puedo practicar TOEFL Speaking en WeLearn?',
+    answer: 'Listen and Repeat y Take an Interview están disponibles dentro de los 20 simulacros WeLearn. La práctica individual por tarea todavía está en desarrollo.',
   },
   {
     question: '¿TOEFL Speaking 2026 es adaptativo?',
@@ -57,15 +57,15 @@ export default function ToeflSpeakingPage() {
       title="TOEFL Speaking 2026: tareas y práctica"
       lead="Practica Listen and Repeat y Take an Interview, graba tus respuestas y entrena claridad, memoria oral y desarrollo espontáneo dentro de los 20 simulacros WeLearn."
       facts={[
-        { value: '≈ 8 min', label: 'tiempo base publicado por ETS' },
-        { value: '11', label: 'ítems en la estructura vigente' },
         { value: '2', label: 'familias de tarea actuales' },
         { value: 'Fijo', label: 'no es una sección adaptativa' },
+        { value: '20', label: 'recorridos WeLearn disponibles' },
+        { value: 'Privada', label: 'grabación para revisión' },
       ]}
       tasks={[...tasks]}
       officialSummary={[
         'El cambio de 2026 sustituyó el mapa anterior por dos familias. Listen and Repeat exige conservar el mensaje que acabas de oír; Take an Interview exige producir respuestas propias sin preparar un discurso memorizado.',
-        'La sección es breve, pero no superficial. Once intervenciones en unos ocho minutos obligan a procesar, planear y hablar sin detener el flujo. Practicar una sola respuesta larga no reproduce esa presión.',
+        'La sección exige procesar, planear y hablar sin convertir la respuesta en un discurso memorizado. Practicar una sola respuesta larga no reproduce la variedad entre repetición precisa y entrevista espontánea.',
       ]}
       practiceSteps={[
         'Comprueba el micrófono antes de iniciar y usa una distancia constante para que el volumen no cambie entre respuestas.',

@@ -66,6 +66,7 @@ export default function ToeflSectionHub({
         items={[
           { name: 'Práctica', url: `${BASE_URL}/practica` },
           { name: 'TOEFL', url: `${BASE_URL}/practica/toefl` },
+          { name: 'Ejercicios', url: `${BASE_URL}/practica/toefl/ejercicios` },
           { name: section, url },
         ]}
       />
@@ -77,6 +78,7 @@ export default function ToeflSectionHub({
             <nav className={styles.breadcrumb} aria-label="Breadcrumb">
               <Link href="/practica">Práctica</Link><span>›</span>
               <Link href="/practica/toefl">TOEFL</Link><span>›</span>
+              <Link href="/practica/toefl/ejercicios">Ejercicios</Link><span>›</span>
               <span>{section}</span>
             </nav>
             <p className={styles.kicker}>TOEFL iBT · formato vigente desde el 21 de enero de 2026</p>
@@ -93,7 +95,7 @@ export default function ToeflSectionHub({
         <section className={styles.routes} aria-labelledby="task-types-heading">
           <div className="wrap">
             <div className={styles.sectionHeading}>
-              <p>Formato oficial 2026</p>
+              <p>Tareas vigentes según ETS</p>
               <h2 id="task-types-heading">Tareas actuales de TOEFL {section}</h2>
               <span>Estas son las familias que ETS publica para el examen posterior al 21 de enero de 2026.</span>
             </div>
@@ -136,8 +138,8 @@ export default function ToeflSectionHub({
                 {practiceSteps.map((step) => <li key={step}>{step}</li>)}
               </ol>
               <div className={styles.actionRow}>
-                <Link href="/examenes/toefl#simulacros" className="btn">Elegir un simulacro TOEFL</Link>
-                <Link href="/practica/toefl" className="btn btn-ghost">Volver al mapa de las 4 secciones</Link>
+                <Link href="/examenes/toefl#practica" className="btn">Elegir un simulacro TOEFL</Link>
+                <Link href="/practica/toefl/ejercicios" className="btn btn-ghost">Volver a los 12 tipos de ejercicio</Link>
               </div>
             </div>
 

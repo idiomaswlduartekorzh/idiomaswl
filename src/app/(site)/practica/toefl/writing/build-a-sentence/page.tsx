@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Braces, GitBranch, PenLine } from 'lucide-react';
 import SentenceBuildWorkbench from '@/components/exam-practice/SentenceBuildWorkbench';
 import BuildSentenceSet1Practice from '@/components/toefl/BuildSentenceSet1Practice';
+import ToeflExerciseReturnLinks from '@/components/toefl/ToeflExerciseReturnLinks';
 import { BreadcrumbJsonLd, FaqJsonLd, LearningResourceJsonLd } from '@/components/exam-practice/StructuredData';
 import {
   PRACTICE_BASE_URL,
@@ -45,6 +46,7 @@ export default function Page() {
         items={[
           { name: 'Práctica', url: `${PRACTICE_BASE_URL}/practica` },
           { name: 'TOEFL', url: `${PRACTICE_BASE_URL}/practica/toefl` },
+          { name: 'Ejercicios', url: `${PRACTICE_BASE_URL}/practica/toefl/ejercicios` },
           { name: 'Writing', url: `${PRACTICE_BASE_URL}/practica/toefl/writing` },
           { name: 'Build a Sentence', url: URL },
         ]}
@@ -56,6 +58,8 @@ export default function Page() {
             <Link href="/practica" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Práctica</Link>
             <span>/</span>
             <Link href="/practica/toefl" style={{ color: 'var(--muted)', textDecoration: 'none' }}>TOEFL</Link>
+            <span>/</span>
+            <Link href="/practica/toefl/ejercicios#writing" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Ejercicios</Link>
             <span>/</span>
             <Link href="/practica/toefl/writing" style={{ color: 'var(--muted)', textDecoration: 'none' }}>Writing</Link>
             <span>/</span>
@@ -241,6 +245,7 @@ export default function Page() {
               ))}
             </div>
           </section>
+          <ToeflExerciseReturnLinks section="writing" />
         </div>
       </section>
     </>
