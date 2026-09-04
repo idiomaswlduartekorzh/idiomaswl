@@ -95,6 +95,7 @@ export default function ToeflListeningSectionRunner({
 }: {
   practice: ToeflListeningSectionPractice;
 }) {
+  const setLabel = practice.sourceMockId.replace('set-', 'Set ');
   const frames = useMemo(() => buildFrames(practice), [practice]);
   const questions = useMemo(
     () => practice.sections.flatMap((section) => listeningQuestions(section)),
@@ -237,7 +238,7 @@ export default function ToeflListeningSectionRunner({
     return (
       <div className={styles.shell}>
         <section className={styles.intro} aria-labelledby="listening-runner-title">
-          <p className={styles.kicker}>TOEFL Listening · Set 1</p>
+          <p className={styles.kicker}>TOEFL Listening · {setLabel}</p>
           <h1 id="listening-runner-title">Una sesión enfocada. Solo Listening.</h1>
           <p className={styles.lead}>
             Escucharás cada audio una vez y avanzarás sin volver a bloques anteriores. Tus respuestas se corrigen con
@@ -252,7 +253,7 @@ export default function ToeflListeningSectionRunner({
             <article>
               <ShieldCheck aria-hidden="true" />
               <strong>Banco único</strong>
-              <span>Este recorrido proyecta el mismo Set 1 del simulacro completo.</span>
+              <span>Este recorrido proyecta el mismo {setLabel} del simulacro completo.</span>
             </article>
           </div>
           <p className={styles.disclosure}>{practice.disclosure}</p>
@@ -272,7 +273,7 @@ export default function ToeflListeningSectionRunner({
         <section className={styles.results} aria-labelledby="listening-result-title">
           <p className={styles.kicker}>Resultado de práctica fija</p>
           <CheckCircle2 className={styles.resultIcon} aria-hidden="true" />
-          <h1 id="listening-result-title">Completaste Listening Set 1.</h1>
+          <h1 id="listening-result-title">Completaste Listening {setLabel}.</h1>
           <p className={styles.rawScore}>{result.correct}/{result.denominator} aciertos de práctica</p>
           <p className={styles.disclosure}>{result.disclosure} No es una banda, overall ni equivalencia ETS.</p>
           <div className={styles.breakdown}>
@@ -284,7 +285,7 @@ export default function ToeflListeningSectionRunner({
             ))}
           </div>
           <div className={styles.actions}>
-            <button type="button" onClick={reset}><RotateCcw aria-hidden="true" /> Repetir Set 1</button>
+            <button type="button" onClick={reset}><RotateCcw aria-hidden="true" /> Repetir {setLabel}</button>
             <Link href="/practica/toefl/ejercicios#listening">Reforzar por tipo de ejercicio</Link>
             <Link href="/examenes/toefl#practica">Hacer un simulacro completo</Link>
           </div>
@@ -299,7 +300,7 @@ export default function ToeflListeningSectionRunner({
     <div className={styles.shell}>
       <header className={styles.runnerHeader}>
         <div>
-          <p>Listening Set 1</p>
+          <p>Listening {setLabel}</p>
           <strong>{activeFrame.label}</strong>
         </div>
         <div className={styles.progressCopy} aria-live="polite">

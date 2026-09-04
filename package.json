@@ -91,7 +91,7 @@
     "check:toefl-fixed-reading": "node --experimental-strip-types --no-warnings scripts/check-toefl-fixed-reading.mjs",
     "check:toefl-option-length": "node --experimental-strip-types --no-warnings scripts/check-toefl-option-length.mjs",
     "check:toefl-sectional-catalog": "node --experimental-strip-types --no-warnings scripts/check-toefl-sectional-catalog.mjs",
-    "test:toefl-sectional-listening": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/toefl-sectional-listening-set1.test.mjs",
+    "test:toefl-sectional-listening": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/toefl-sectional-listening.test.mjs",
     "test:toefl-fixed-reading": "node --experimental-strip-types --no-warnings --test tests/toefl-fixed-reading.test.mjs",
     "check:toefl-fixed-listening": "node --experimental-strip-types --no-warnings scripts/check-toefl-fixed-listening.mjs",
     "test:toefl-fixed-listening": "node --experimental-strip-types --no-warnings --test tests/toefl-fixed-listening.test.mjs",
