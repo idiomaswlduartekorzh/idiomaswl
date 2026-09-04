@@ -7,6 +7,7 @@ import {
   FaqJsonLd,
   LearningResourceJsonLd,
 } from '@/components/exam-practice/StructuredData';
+import { TOEFL_SECTIONAL_LISTENING_SET_IDS } from '@/data/toefl/sectional-listening-adapter';
 
 import styles from './page.module.css';
 
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   alternates: { canonical: URL },
   openGraph: {
     title: 'Práctica TOEFL Listening por secciones',
-    description: 'Un piloto completo de Listening con audios originales y corrección privada en servidor.',
+    description: 'Elige un recorrido de Listening con audios originales y corrección privada en servidor.',
     url: URL,
     type: 'website',
     locale: 'es_CO',
@@ -30,7 +31,7 @@ const faqs = [
   {
     question: '¿Esta práctica de Listening es adaptativa?',
     answer:
-      'No. Es un recorrido fijo de WeLearn construido con el subconjunto Listening del mismo Set 1 usado en los simulacros completos.',
+      'No. Cada recorrido es fijo y usa el subconjunto Listening del set correspondiente en los simulacros completos de WeLearn.',
   },
   {
     question: '¿Recibo una puntuación oficial del TOEFL?',
@@ -50,6 +51,10 @@ const tasks = [
   'Listen to an Announcement',
   'Listen to an Academic Talk',
 ];
+
+function setNumberFromId(mockId: string) {
+  return mockId.replace('set-', '');
+}
 
 export default function ToeflListeningLibraryPage() {
   return (
@@ -88,16 +93,16 @@ export default function ToeflListeningLibraryPage() {
             <div className={styles.heroGrid}>
               <div>
                 <p className={styles.kicker}>TOEFL Listening · práctica enfocada</p>
-                <h1>Entrena Listening sin presentar el simulacro completo.</h1>
+                <h1>Elige un set. Entrena solo Listening.</h1>
                 <p className={styles.lead}>
-                  El piloto toma únicamente los bloques Listening del Set 1 canónico. Conserva los mismos IDs,
-                  audios y corrección privada sin copiar el banco.
+                  Cada recorrido toma únicamente los bloques Listening de su simulacro completo. Conserva los mismos
+                  IDs, audios y corrección privada sin copiar el banco.
                 </p>
               </div>
               <aside className={styles.scopeNote}>
                 <Radio aria-hidden="true" />
-                <strong>Recorrido fijo WeLearn</strong>
-                <p>No reproduce el enrutamiento adaptativo ni genera una puntuación oficial del TOEFL iBT.</p>
+                <strong>Colección fija WeLearn</strong>
+                <p>Cada set es independiente. Ninguno reproduce el enrutamiento adaptativo ni genera una puntuación oficial.</p>
               </aside>
             </div>
           </div>
@@ -106,35 +111,45 @@ export default function ToeflListeningLibraryPage() {
         <section className={styles.library} aria-labelledby="listening-library-heading">
           <div className="wrap">
             <div className={styles.sectionHeading}>
-              <p>Disponible ahora</p>
-              <h2 id="listening-library-heading">Piloto funcional · Set 1</h2>
-              <span>Completa las cuatro familias en una sesión o deja el progreso guardado en este navegador.</span>
+              <p>Biblioteca Listening</p>
+              <h2 id="listening-library-heading">20 recorridos para practicar por set</h2>
+              <span>Elige cualquiera. Puedes completar sus cuatro familias en una sesión o continuar luego en este navegador.</span>
             </div>
 
-            <article className={styles.setCard}>
-              <div className={styles.setIdentity}>
-                <span className={styles.setIcon}><Headphones aria-hidden="true" /></span>
-                <div>
-                  <p>TOEFL Listening</p>
-                  <h3>Set 1 · recorrido seccional</h3>
-                </div>
-                <span className={styles.status}>Disponible</span>
+            <aside className={styles.taskKey} aria-labelledby="listening-task-key">
+              <div>
+                <Headphones aria-hidden="true" />
+                <strong id="listening-task-key">Qué encuentras en cada set</strong>
               </div>
               <ul>
                 {tasks.map((task) => <li key={task}>{task}</li>)}
               </ul>
-              <div className={styles.setFooter}>
-                <p><LockKeyhole aria-hidden="true" /> Las respuestas correctas permanecen en el servidor.</p>
-                <Link href="/practica/toefl/listening/simulacros/practica/set-1">
-                  Iniciar Listening Set 1 <ArrowRight aria-hidden="true" />
-                </Link>
-              </div>
-            </article>
-
-            <aside className={styles.nextSets}>
-              <strong>Próxima etapa</strong>
-              <p>Los demás sets se incorporarán solo después de aprobar la integridad, el audio, el móvil y el teclado de este piloto.</p>
             </aside>
+
+            <div className={styles.setGrid}>
+              {TOEFL_SECTIONAL_LISTENING_SET_IDS.map((mockId, index) => {
+                const setNumber = setNumberFromId(mockId);
+                return (
+                  <article className={styles.setCard} key={mockId}>
+                    <div className={styles.setIdentity}>
+                      <span className={styles.setNumber} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+                      <div>
+                        <p>TOEFL Listening</p>
+                        <h3>Set {setNumber}</h3>
+                      </div>
+                      <span className={styles.status}>Disponible</span>
+                    </div>
+                    <p className={styles.setSummary}>Recorrido fijo con progreso guardado en este navegador.</p>
+                    <div className={styles.setFooter}>
+                      <p><LockKeyhole aria-hidden="true" /> Corrección privada</p>
+                      <Link href={`/practica/toefl/listening/simulacros/practica/${mockId}`}>
+                        Iniciar Set {setNumber} <ArrowRight aria-hidden="true" />
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
           </div>
         </section>
 

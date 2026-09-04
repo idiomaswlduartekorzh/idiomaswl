@@ -13,6 +13,16 @@ export type ToeflListeningSectionPractice = {
   sections: MockSection[];
 };
 
+export const TOEFL_SECTIONAL_LISTENING_SET_IDS = Object.freeze(
+  Array.from({ length: 20 }, (_, index) => `set-${index + 1}`),
+);
+
+const TOEFL_SECTIONAL_LISTENING_SET_ID_LOOKUP = new Set(TOEFL_SECTIONAL_LISTENING_SET_IDS);
+
+export function isToeflSectionalListeningSetId(mockId: string): boolean {
+  return TOEFL_SECTIONAL_LISTENING_SET_ID_LOOKUP.has(mockId);
+}
+
 function cloneQuestion(question: ToeflListeningSingleQuestion): ToeflListeningSingleQuestion {
   return {
     ...question,

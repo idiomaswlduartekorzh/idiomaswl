@@ -122,30 +122,95 @@
   line-height: 1.65;
 }
 
+.taskKey {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.75fr) minmax(0, 2fr);
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1.15rem;
+  border: 1px solid #cbd5e5;
+  border-left: 4px solid var(--teal);
+  color: #26334d;
+  background: #edf6f8;
+}
+
+.taskKey > div {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  color: var(--navy);
+}
+
+.taskKey svg {
+  width: 22px;
+  color: var(--teal);
+}
+
+.taskKey ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.taskKey li {
+  position: relative;
+  padding-left: 0.8rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.taskKey li::before {
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--red);
+  content: '';
+}
+
+.setGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 1rem;
+}
+
 .setCard {
+  display: flex;
+  min-width: 0;
   overflow: hidden;
   border: 1px solid #d9deea;
-  border-top: 4px solid var(--teal);
+  border-top: 3px solid var(--teal);
   background: #fff;
-  box-shadow: 0 24px 60px rgb(16 46 111 / 8%);
+  box-shadow: 0 14px 34px rgb(16 46 111 / 7%);
+  flex-direction: column;
 }
 
 .setIdentity {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 1rem;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
   align-items: center;
-  padding: clamp(1.2rem, 3vw, 2rem);
+  padding: 1.1rem 1.1rem 0.9rem;
   border-bottom: 1px solid #e1e5ee;
 }
 
-.setIcon {
+.setNumber {
   display: grid;
-  width: 54px;
-  height: 54px;
+  width: 48px;
+  height: 48px;
   place-items: center;
   color: var(--teal);
   background: #e7f5f8;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
 }
 
 .setIdentity p,
@@ -164,10 +229,12 @@
 .setIdentity h3 {
   margin-top: 0.2rem;
   color: var(--navy);
-  font-size: clamp(1.3rem, 2.8vw, 2rem);
+  font-size: 1.45rem;
 }
 
 .status {
+  grid-column: 1 / -1;
+  width: fit-content;
   padding: 0.4rem 0.65rem;
   border: 1px solid #7dc4a4;
   border-radius: 999px;
@@ -178,32 +245,21 @@
   text-transform: uppercase;
 }
 
-.setCard ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0;
+.setSummary {
   margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.setCard li {
-  padding: 1.1rem clamp(1.2rem, 3vw, 2rem);
-  border-bottom: 1px solid #e1e5ee;
-  color: #28334a;
-  font-weight: 720;
-}
-
-.setCard li:nth-child(odd) {
-  border-right: 1px solid #e1e5ee;
+  padding: 1rem 1.1rem 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
 }
 
 .setFooter {
   display: flex;
   gap: 1rem;
-  align-items: center;
-  justify-content: space-between;
-  padding: clamp(1.2rem, 3vw, 2rem);
+  align-items: stretch;
+  margin-top: auto;
+  padding: 1rem 1.1rem 1.1rem;
+  flex-direction: column;
 }
 
 .setFooter p {
@@ -254,23 +310,6 @@
   text-underline-offset: 0.2em;
 }
 
-.nextSets {
-  margin-top: 1rem;
-  padding: 1rem 1.2rem;
-  border-left: 3px solid #aab4c8;
-  color: var(--muted);
-  background: #eef1f7;
-}
-
-.nextSets strong {
-  color: var(--navy);
-}
-
-.nextSets p {
-  margin: 0.3rem 0 0;
-  line-height: 1.6;
-}
-
 .faq {
   padding: clamp(3rem, 7vw, 6rem) 0;
   border-top: 1px solid #dfe3ed;
@@ -310,12 +349,6 @@
   line-height: 1.65;
 }
 
-@media (min-width: 761px) {
-  .setIdentity {
-    padding-right: 5rem;
-  }
-}
-
 @media (max-width: 760px) {
   .heroGrid {
     grid-template-columns: 1fr;
@@ -325,26 +358,12 @@
     padding-right: 3.75rem;
   }
 
-  .setIdentity {
-    grid-template-columns: auto 1fr;
-  }
-
-  .status {
-    grid-column: 1 / -1;
-    width: fit-content;
-  }
-
-  .setCard ul {
+  .taskKey {
     grid-template-columns: 1fr;
   }
 
-  .setCard li:nth-child(odd) {
-    border-right: 0;
-  }
-
-  .setFooter {
-    align-items: stretch;
-    flex-direction: column;
+  .taskKey ul {
+    grid-template-columns: 1fr;
   }
 
   .setFooter a {
