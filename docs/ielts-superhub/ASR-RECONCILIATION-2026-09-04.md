@@ -1,9 +1,9 @@
 # Nuevas ejecuciones ASR privadas — 4 de septiembre de 2026
 
-Estado: evidencia nueva generada y revisada por agentes, pendiente de incorporación
-auditada a las candidatas. No hay aprobación humana, promoción ni publicación.
-Los manifests y ASR canónicos anteriores permanecen intactos. Sus decisiones técnicas
-siguen bloqueadas por el vínculo de entrada ausente; este informe no cambia esos gates.
+Estado: evidencia nueva incorporada y validada técnicamente en las candidatas privadas.
+No hay aprobación humana, promoción pública ni publicación.
+Los ASR anteriores se conservan byte a byte en `asr/archive/`; no se les añadió un hash
+de entrada retrospectivo. Los manifests ahora señalan los ASR nuevos y su procedencia.
 
 ## Procedencia y verificación
 
@@ -114,19 +114,40 @@ Cautelas actualizadas:
   Have the ensemble performed; one question → when question; Yes → Thus; minute → minutes.
   La aclaración posterior conserva la comparación de Q24.
 
-## Siguiente incremento y fronteras
+## Incorporación y fronteras
 
 1. No volver a transcribir estos audios sin una causa nueva; no hay procesos pendientes.
-2. Preservar los ASR anteriores en un archivo histórico privado antes de incorporar los
-   nuevos ASR y sus provenance. No rellenar un hash de entrada en la evidencia vieja.
-3. Incorporar los artefactos nuevos, bytes, hashes, fecha, cautelas y contrato de
-   procedencia juntos. Mantener la limitación contextual de Q30 visible.
-4. Actualizar las aserciones canónicas de Part 3 y del guardián privado sólo con esta
-   evidencia; conservar mutaciones de hash ausente/incorrecto y todos los gates humanos.
-5. Ejecutar las suites pertinentes y la revisión independiente del cambio exacto.
-   No basta con editar manifests para obtener READY.
+2. Se archivaron los ASR anteriores en `asr/archive/<practiceId>.2026-09-01.json` antes
+   de reemplazar los actuales. Se comprobaron contra el contenido Git anterior byte a byte.
+3. Se incorporaron ASR y `<practiceId>.provenance.json` sin alterar sus bytes. Los paths
+   `input.mp3` y `asr.json` dentro de provenance describen el run histórico: el guardián
+   no los resuelve ni depende de `tmp/` o de otro MP3 duplicado para validar la candidata.
+4. El guardián liga los documentos con el audio, ASR y runner canónicos, valida schema,
+   tiempos UTC, modelo/runtime/opciones y gates humanos. No es una firma o atestación
+   criptográfica de ejecución. Los archivos históricos son obligatorios sólo para los
+   dos IDs 001 reemplazados; una candidata nueva no debe inventar historia.
+5. Las pruebas individuales Parts 2/3 pasaron 10/10; un agente independiente revisó el
+   diff de evidencia/manifests/pruebas y el contrato nuevo sin hallazgos P0/P1/P2.
+   Suite común + CLI: 34/34 aprobadas (213 s). El script Listening conserva todas las
+   pruebas y ejecuta sus archivos serialmente por la limitación de I/O USB.
+   Harness técnico agregado: APPROVE, nueve etapas completas; 90 pruebas Listening,
+   15 Speaking y 9 mutaciones del harness aprobadas. Informe terminado el
+   2026-09-04 a las 15:32:29.335 UTC, en `tmp/ielts-superhub-harness/latest-truth.json`
+   (SHA-256 `e4d4b9d80b4c862eeca275663172f6c270ea1446b76f77b01d16e08df1466739`).
 6. Ninguna landing, catálogo, sitemap, asset público, source de práctica ni archivo TOEFL
    cambia en este incremento. Escucha humana, revisión editorial y promoción siguen pendientes.
+
+La ausencia o discrepancia de hashes, provenance o archivos históricos obligatorios
+sigue siendo un bloqueo comprobable. Q30 mantiene su cautela contextual y ninguna
+decisión técnica habilita publicación ni reemplaza escucha/revisión humana.
+
+El auditor privado devuelve `integrity: PASS`, `machineReadiness: READY` y
+`publicationDecision: BLOCK` para Parts 2–4. El gate estricto de publicación de Part 1
+sigue terminando con exit 1 por la escucha humana pendiente, como corresponde. La
+preservación certificada incluye 480 audios de Escucha, 108 URLs IELTS, 20 mocks y tres
+podcasts IELTS. No se ejecutó un build global ni se certificó un despliegue.
+ESLint del contrato común y las tres pruebas modificadas: exit 0. No hubo cambios de
+TypeScript de aplicación o UI; no se repitieron navegador ni build de producción.
 
 El respaldo remoto del runner `d393bbc0` continúa pendiente de autorización tras el rechazo
 del control automático. No se reintentó ni se usó un canal alternativo. Este informe y los

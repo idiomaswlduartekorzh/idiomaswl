@@ -10,6 +10,8 @@ import { auditIeltsListeningPrivateCandidates } from '../scripts/lib/ielts-liste
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ZERO_SHA256 = '0'.repeat(64);
+const ASR_RUNNER_PATH = 'scripts/transcribe-ielts-listening-candidate.py';
+const ASR_RUNNER_BYTES = fs.readFileSync(path.join(repositoryRoot, ASR_RUNNER_PATH));
 
 function privateFixtureTranscript(part) {
   return {
@@ -32,7 +34,31 @@ function candidateArtifacts(part, number = '001') {
     audio: Buffer.concat([frame, frame]),
     asr: Buffer.from(JSON.stringify({ text: privateFixtureTranscript(part), language: 'en',
       segments: [{ start: 0, end: 0.05, text: privateFixtureTranscript(part) }] })),
+    archive: Buffer.from(JSON.stringify({ text: `Previous evidence. ${privateFixtureTranscript(part)}`, language: 'en',
+      segments: [{ start: 0, end: 0.05, text: `Previous evidence. ${privateFixtureTranscript(part)}` }] })),
     map: Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><title>Private ${practiceId} map</title><desc>Three lettered areas.</desc><rect data-option-key="A"/><rect data-option-key="B"/><rect data-option-key="C"/></svg>`),
+  };
+}
+
+function syntheticProvenance(part, number = '001') {
+  const practiceId = `welearn-listening-part-${part}-${number}`;
+  const artifacts = candidateArtifacts(part, number);
+  return {
+    schemaVersion: 1, candidateId: practiceId,
+    startedAt: '2026-09-04T14:45:08.476317+00:00', completedAt: '2026-09-04T14:46:20.770917+00:00',
+    engine: { name: 'openai-whisper', version: '20250625', model: 'small',
+      modelSha256: '9ecf779972d90ba49c06d968637d720dd632c55bbf19d441fb42bf17a411e794', modelBytes: 483617219 },
+    runtime: { python: '3.9.6', implementation: 'cpython', torch: '2.8.0', numpy: '2.0.2',
+      ffmpeg: { binaryPath: '/opt/homebrew/Cellar/ffmpeg/8.1.1/bin/ffmpeg',
+        sha256: '00d01197255300c02122c783dd0126a9e7f47d6c6a19faafae2e6610efd071d3', bytes: 441728 } },
+    script: { path: ASR_RUNNER_PATH, sha256: sha256(ASR_RUNNER_BYTES), bytes: ASR_RUNNER_BYTES.length },
+    input: { sourcePath: `docs/ielts-superhub/candidates/${practiceId}/${practiceId}.mp3`,
+      snapshotPath: 'input.mp3', bytes: artifacts.audio.length, sha256: sha256(artifacts.audio) },
+    inputAudioSha256: sha256(artifacts.audio),
+    options: { device: 'cpu', threads: 2, fp16: false, language: 'en', task: 'transcribe', temperature: 0, verbose: false },
+    output: { path: 'asr.json', bytes: artifacts.asr.length, sha256: sha256(artifacts.asr) },
+    review: { humanApproval: null, publicationDecision: 'BLOCK',
+      limitation: 'Machine transcription evidence only; not an accuracy or release approval.' },
   };
 }
 
@@ -139,6 +165,7 @@ export function scoreIeltsListeningPart${part}Registration(responses: Readonly<R
 function manifest(part, number = '001') {
   const practiceId = `welearn-listening-part-${part}-${number}`;
   const artifacts = candidateArtifacts(part, number);
+  const provenance = Buffer.from(JSON.stringify(syntheticProvenance(part, number)));
   return {
     schemaVersion: 1,
     practiceId,
@@ -158,6 +185,15 @@ function manifest(part, number = '001') {
       sha256: sha256(artifacts.asr),
       inputAudioSha256: sha256(artifacts.audio),
       language: 'en',
+      checkedAt: '2026-09-04',
+      ...([2, 3].includes(part) ? {
+        provenance: { path: `docs/ielts-superhub/candidates/${practiceId}/asr/${practiceId}.provenance.json`,
+          bytes: provenance.length, sha256: sha256(provenance) },
+        ...(number === '001' ? {
+          supersededEvidence: { path: `docs/ielts-superhub/candidates/${practiceId}/asr/archive/${practiceId}.2026-09-01.json`,
+            bytes: artifacts.archive.length, sha256: sha256(artifacts.archive), checkedAt: '2026-09-01' },
+        } : {}),
+      } : {}),
     },
     release: {
       status: 'draft',
@@ -192,7 +228,7 @@ function installFixtureMap(root) {
 function replaceArtifactWithUpdatedHash(root, part, role, value) {
   const manifestPath = path.join(root, `docs/ielts-superhub/originality/welearn-listening-part-${part}-001.json`);
   const declaration = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-  const metadata = declaration[role];
+  const metadata = declaration[role] ?? declaration.automatedAsrAudit[role];
   const buffer = Buffer.isBuffer(value) ? value : Buffer.from(value);
   writeFixture(root, metadata.candidatePath ?? metadata.path, buffer);
   metadata.bytes = buffer.length;
@@ -201,10 +237,24 @@ function replaceArtifactWithUpdatedHash(root, part, role, value) {
   fs.writeFileSync(manifestPath, JSON.stringify(declaration));
 }
 
+function mutateFixtureManifest(root, part, mutate) {
+  const manifestPath = path.join(root, `docs/ielts-superhub/originality/welearn-listening-part-${part}-001.json`);
+  const declaration = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  mutate(declaration);
+  fs.writeFileSync(manifestPath, JSON.stringify(declaration));
+}
+
+function mutateProvenance(root, part, mutate) {
+  const value = syntheticProvenance(part);
+  mutate(value);
+  replaceArtifactWithUpdatedHash(root, part, 'provenance', JSON.stringify(value));
+}
+
 function createPrivateCandidateFixture(t) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-private-readiness-'));
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   fs.mkdirSync(path.join(root, 'public'), { recursive: true });
+  writeFixture(root, ASR_RUNNER_PATH, ASR_RUNNER_BYTES);
   for (const part of [2, 3, 4]) {
     const practiceId = `welearn-listening-part-${part}-001`;
     const artifacts = candidateArtifacts(part);
@@ -228,6 +278,12 @@ function createPrivateCandidateFixture(t) {
       `docs/ielts-superhub/candidates/${practiceId}/asr/${practiceId}.json`,
       artifacts.asr,
     );
+    if ([2, 3].includes(part)) {
+      writeFixture(root, `docs/ielts-superhub/candidates/${practiceId}/asr/${practiceId}.provenance.json`,
+        JSON.stringify(syntheticProvenance(part)));
+      writeFixture(root, `docs/ielts-superhub/candidates/${practiceId}/asr/archive/${practiceId}.2026-09-01.json`,
+        artifacts.archive);
+    }
   }
   return root;
 }
@@ -243,7 +299,7 @@ test('real Parts 2–4 discover one private source, manifest and candidate direc
   const report = auditIeltsListeningPrivateCandidates({ root: repositoryRoot });
 
   assert.equal(report.integrity, 'PASS');
-  assert.equal(report.machineReadiness, 'BLOCKED');
+  assert.equal(report.machineReadiness, 'READY');
   assert.equal(report.publicationDecision, 'BLOCK');
   assert.deepEqual(
     report.candidates.map(({ practiceId, part }) => [practiceId, part]),
@@ -254,13 +310,7 @@ test('real Parts 2–4 discover one private source, manifest and candidate direc
     ],
   );
   assert.deepEqual(report.failures, []);
-  assert.deepEqual(
-    report.machineIssues.map(({ code, practiceId }) => [code, practiceId]),
-    [
-      ['ASR_INPUT_AUDIO_SHA256_MISSING', 'welearn-listening-part-2-001'],
-      ['ASR_INPUT_AUDIO_SHA256_MISSING', 'welearn-listening-part-3-001'],
-    ],
-  );
+  assert.deepEqual(report.machineIssues, []);
 });
 
 test('AST values defeat audio placeholder comments used as decoys', (t) => {
@@ -673,4 +723,191 @@ test('the report is serializable and never contains private source, answer or ma
   assert.doesNotMatch(serialized, /PRIVATE SECRET/);
   assert.doesNotMatch(serialized, /correctOptionKey|expected|explanation|PRIVATE SECRET HUMAN BLOCKER/i);
   assert.doesNotThrow(() => JSON.parse(serialized));
+});
+
+test('Parts 2/3 require canonical provenance and archived evidence even if both declarations and files are removed', (t) => {
+  for (const part of [2, 3]) {
+    for (const role of ['provenance', 'supersededEvidence']) {
+      const root = createPrivateCandidateFixture(t);
+      mutateFixtureManifest(root, part, (declaration) => {
+        fs.rmSync(path.join(root, declaration.automatedAsrAudit[role].path));
+        delete declaration.automatedAsrAudit[role];
+      });
+      const report = auditIeltsListeningPrivateCandidates({ root });
+      assertFailure(report, 'ASR_PROVENANCE_DECLARATION_INVALID');
+      assertFailure(report, 'CANDIDATE_ARTIFACT_MISSING');
+    }
+  }
+  const root = createPrivateCandidateFixture(t);
+  mutateFixtureManifest(root, 2, (declaration) => {
+    declaration.automatedAsrAudit.provenance.path = 'PRIVATE SECRET/provenance.json';
+    declaration.automatedAsrAudit.supersededEvidence.path = 'PRIVATE SECRET/archive.json';
+  });
+  const report = auditIeltsListeningPrivateCandidates({ root });
+  assertFailure(report, 'CANDIDATE_ARTIFACT_PATH_NONCANONICAL');
+  assert.doesNotMatch(JSON.stringify(report), /PRIVATE SECRET/);
+});
+
+test('a new Part 2 candidate requires provenance but must not invent a superseded archive', (t) => {
+  const root = createPrivateCandidateFixture(t);
+  const practiceId = 'welearn-listening-part-2-002';
+  const artifacts = candidateArtifacts(2, '002');
+  const declaration = manifest(2, '002');
+  const manifestPath = `docs/ielts-superhub/originality/${practiceId}.json`;
+  writeFixture(root, 'src/data/ielts/listening-part2-welearn-002.server.ts',
+    sourceModule(2, '002').replace(privateFixtureTranscript(2), 'A wholly separate specimen.'));
+  writeFixture(root, manifestPath, JSON.stringify(declaration));
+  writeFixture(root, declaration.audio.candidatePath, artifacts.audio);
+  writeFixture(root, declaration.automatedAsrAudit.path, artifacts.asr);
+  writeFixture(root, declaration.automatedAsrAudit.provenance.path, JSON.stringify(syntheticProvenance(2, '002')));
+  const validReport = auditIeltsListeningPrivateCandidates({ root });
+  assert.equal(validReport.integrity, 'PASS', JSON.stringify(validReport.failures));
+  assert.equal(validReport.machineReadiness, 'READY');
+  assert.equal(validReport.publicationDecision, 'BLOCK');
+  assert.equal(declaration.automatedAsrAudit.supersededEvidence, undefined);
+  assert.equal(fs.existsSync(path.join(root, `docs/ielts-superhub/candidates/${practiceId}/asr/archive`)), false);
+
+  declaration.automatedAsrAudit.supersededEvidence = {
+    path: `docs/ielts-superhub/candidates/${practiceId}/asr/archive/${practiceId}.2026-09-01.json`,
+    bytes: artifacts.archive.length, sha256: sha256(artifacts.archive), checkedAt: '2026-09-01',
+  };
+  writeFixture(root, manifestPath, JSON.stringify(declaration));
+  assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_DECLARATION_INVALID');
+  delete declaration.automatedAsrAudit.supersededEvidence;
+  delete declaration.automatedAsrAudit.provenance;
+  writeFixture(root, manifestPath, JSON.stringify(declaration));
+  assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_DECLARATION_INVALID');
+});
+
+test('provenance schema, identity and deleted fields cannot be blessed with fresh hashes', (t) => {
+  for (const field of Object.keys(syntheticProvenance(2))) {
+    const root = createPrivateCandidateFixture(t);
+    mutateProvenance(root, 2, (value) => { delete value[field]; });
+    assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_SCHEMA_INVALID');
+  }
+  for (const value of ['not JSON', '[]', '{}', JSON.stringify({ ...syntheticProvenance(2), schemaVersion: 2 }),
+    JSON.stringify({ ...syntheticProvenance(2), candidateId: 'welearn-listening-part-3-001' })]) {
+    const root = createPrivateCandidateFixture(t);
+    replaceArtifactWithUpdatedHash(root, 2, 'provenance', value);
+    assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_SCHEMA_INVALID');
+  }
+});
+
+test('provenance requires valid ordered UTC instants and the new checkedAt date', (t) => {
+  for (const mutate of [
+    (value) => { value.startedAt = '2026-09-04T14:45:08-05:00'; },
+    (value) => { value.startedAt = '2026-02-30T14:45:08Z'; },
+    (value) => { value.completedAt = value.startedAt; },
+    (value) => { value.startedAt = value.completedAt; value.completedAt = '2026-09-04T14:45:08Z'; },
+    (value) => { value.completedAt = '2026-09-05T14:46:20Z'; },
+    (value) => { value.startedAt = '2026-09-01T14:45:08Z'; },
+  ]) {
+    const root = createPrivateCandidateFixture(t);
+    mutateProvenance(root, 2, mutate);
+    assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_TIMELINE_INVALID');
+  }
+  for (const date of [undefined, '2026-09-01', '2026-09-05', 'September 4, 2026']) {
+    const root = createPrivateCandidateFixture(t);
+    mutateFixtureManifest(root, 2, (declaration) => { declaration.automatedAsrAudit.checkedAt = date; });
+    assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_TIMELINE_INVALID');
+  }
+});
+
+test('engine, pinned model, runtime/options and human gates stay closed under provenance mutations', (t) => {
+  const mutations = [
+    ['ASR_PROVENANCE_ENGINE_INVALID', (value) => { value.engine.version = '20240930'; }],
+    ['ASR_PROVENANCE_ENGINE_INVALID', (value) => { value.engine.modelSha256 = 'f'.repeat(64); }],
+    ['ASR_PROVENANCE_ENGINE_INVALID', (value) => { value.engine.modelBytes -= 1; }],
+    ['ASR_PROVENANCE_ENGINE_INVALID', (value) => { delete value.engine.model; }],
+    ['ASR_PROVENANCE_RUNTIME_INVALID', (value) => { value.options.device = 'cuda'; }],
+    ['ASR_PROVENANCE_RUNTIME_INVALID', (value) => { value.options.fp16 = true; }],
+    ['ASR_PROVENANCE_RUNTIME_INVALID', (value) => { value.options.remoteEndpoint = 'PRIVATE SECRET'; }],
+    ['ASR_PROVENANCE_RUNTIME_INVALID', (value) => { value.runtime.python = '0.0.0'; }],
+    ['ASR_PROVENANCE_RUNTIME_INVALID', (value) => { value.runtime.ffmpeg.sha256 = 'f'.repeat(64); }],
+    ['ASR_PROVENANCE_REVIEW_INVALID', (value) => { value.review.humanApproval = 'self-approved'; }],
+    ['ASR_PROVENANCE_REVIEW_INVALID', (value) => { value.review.publicationDecision = 'APPROVE'; }],
+  ];
+  for (const [code, mutate] of mutations) {
+    const root = createPrivateCandidateFixture(t);
+    mutateProvenance(root, 2, mutate);
+    const report = auditIeltsListeningPrivateCandidates({ root });
+    assertFailure(report, code);
+    assert.doesNotMatch(JSON.stringify(report), /PRIVATE SECRET|self-approved/);
+  }
+});
+
+test('provenance binds actual canonical audio/ASR bytes and never follows historical run paths', (t) => {
+  const mutations = [
+    ['ASR_PROVENANCE_INPUT_MISMATCH', (value) => { value.input.sourcePath = 'tmp/PRIVATE SECRET/input.mp3'; }],
+    ['ASR_PROVENANCE_INPUT_MISMATCH', (value) => { value.input.snapshotPath = '/PRIVATE SECRET/input.mp3'; }],
+    ['ASR_PROVENANCE_INPUT_MISMATCH', (value) => { value.input.sha256 = 'f'.repeat(64); }],
+    ['ASR_PROVENANCE_INPUT_MISMATCH', (value) => { value.input.bytes += 1; }],
+    ['ASR_PROVENANCE_INPUT_MISMATCH', (value) => { value.inputAudioSha256 = 'f'.repeat(64); }],
+    ['ASR_PROVENANCE_OUTPUT_MISMATCH', (value) => { value.output.path = '/PRIVATE SECRET/asr.json'; }],
+    ['ASR_PROVENANCE_OUTPUT_MISMATCH', (value) => { value.output.bytes += 1; }],
+    ['ASR_PROVENANCE_OUTPUT_MISMATCH', (value) => { value.output.sha256 = 'f'.repeat(64); }],
+  ];
+  for (const [code, mutate] of mutations) {
+    const root = createPrivateCandidateFixture(t);
+    mutateProvenance(root, 2, mutate);
+    const report = auditIeltsListeningPrivateCandidates({ root });
+    assertFailure(report, code);
+    assert.doesNotMatch(JSON.stringify(report), /PRIVATE SECRET/);
+  }
+  const root = createPrivateCandidateFixture(t);
+  replaceArtifactWithUpdatedHash(root, 2, 'automatedAsrAudit', candidateArtifacts(3).asr);
+  assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_OUTPUT_MISMATCH');
+});
+
+test('runner fingerprint is tied to its real canonical file, without symlink or parent shortcuts', (t) => {
+  for (const target of [ASR_RUNNER_PATH, 'scripts']) {
+    const root = createPrivateCandidateFixture(t);
+    const original = path.join(root, target);
+    const outside = path.join(root, 'outside-runner');
+    fs.renameSync(original, outside);
+    fs.symlinkSync(outside, original);
+    assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_SCRIPT_MISMATCH');
+  }
+  const root = createPrivateCandidateFixture(t);
+  fs.appendFileSync(path.join(root, ASR_RUNNER_PATH), '\n# changed after the evidence run\n');
+  assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'ASR_PROVENANCE_SCRIPT_MISMATCH');
+  const pathRoot = createPrivateCandidateFixture(t);
+  mutateProvenance(pathRoot, 2, (value) => { value.script.path = 'PRIVATE SECRET/runner.py'; });
+  assertFailure(auditIeltsListeningPrivateCandidates({ root: pathRoot }), 'ASR_PROVENANCE_SCRIPT_MISMATCH');
+});
+
+test('provenance and archived ASR retain canonical symlink, format and historical-date gates', (t) => {
+  for (const target of ['asr/welearn-listening-part-2-001.provenance.json',
+    'asr/archive/welearn-listening-part-2-001.2026-09-01.json', 'asr/archive']) {
+    const root = createPrivateCandidateFixture(t);
+    const original = path.join(root, 'docs/ielts-superhub/candidates/welearn-listening-part-2-001', target);
+    const outside = path.join(root, 'outside-evidence');
+    fs.renameSync(original, outside);
+    fs.symlinkSync(outside, original);
+    assertFailure(auditIeltsListeningPrivateCandidates({ root }), 'CANDIDATE_PATH_SYMLINK');
+  }
+  const corruptRoot = createPrivateCandidateFixture(t);
+  replaceArtifactWithUpdatedHash(corruptRoot, 2, 'supersededEvidence', '{}');
+  assertFailure(auditIeltsListeningPrivateCandidates({ root: corruptRoot }), 'CANDIDATE_ASR_FORMAT_INVALID');
+  const dateRoot = createPrivateCandidateFixture(t);
+  mutateFixtureManifest(dateRoot, 2, (declaration) => {
+    declaration.automatedAsrAudit.supersededEvidence.checkedAt = '2026-09-04';
+  });
+  assertFailure(auditIeltsListeningPrivateCandidates({ root: dateRoot }), 'ASR_PROVENANCE_DECLARATION_INVALID');
+});
+
+test('missing and incorrect manifest input-audio hashes remain blocked for every private part', (t) => {
+  for (const part of [2, 3, 4]) {
+    const missingRoot = createPrivateCandidateFixture(t);
+    mutateFixtureManifest(missingRoot, part, (declaration) => { delete declaration.automatedAsrAudit.inputAudioSha256; });
+    const report = auditIeltsListeningPrivateCandidates({ root: missingRoot });
+    assert.equal(report.integrity, 'PASS');
+    assert.equal(report.machineReadiness, 'BLOCKED');
+    assert.equal(report.publicationDecision, 'BLOCK');
+    assert.equal(report.machineIssues.some((issue) => issue.code === 'ASR_INPUT_AUDIO_SHA256_MISSING'
+      && issue.practiceId === `welearn-listening-part-${part}-001`), true);
+    const incorrectRoot = createPrivateCandidateFixture(t);
+    mutateFixtureManifest(incorrectRoot, part, (declaration) => { declaration.automatedAsrAudit.inputAudioSha256 = 'f'.repeat(64); });
+    assertFailure(auditIeltsListeningPrivateCandidates({ root: incorrectRoot }), 'ASR_INPUT_AUDIO_SHA256_MISMATCH');
+  }
 });

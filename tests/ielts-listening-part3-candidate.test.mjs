@@ -366,20 +366,33 @@ function assertPart3ManifestContract(manifest, source, generatorAudit) {
 
   assert.deepEqual(manifest.automatedAsrAudit, {
     status: 'candidate-evidence-only',
-    checkedAt: '2026-09-01',
+    checkedAt: '2026-09-04',
     engine: 'OpenAI Whisper small',
     language: 'en',
     path: `docs/ielts-superhub/candidates/${practiceId}/asr/${practiceId}.json`,
-    bytes: 33664,
-    sha256: 'a3956b985e975b47e6d24e67d197e68edff1a658fb6c09436eeec72d9beafb35',
-    criticalAnswerEvidence: '10-of-10 present and non-contradictory in ASR output',
+    bytes: 46708,
+    sha256: '5a3032fc7fc5125648b8093ca97509a7290bb5f25e50e242872a38c5ea5679dd',
+    inputAudioSha256: '1e39cc939b1bf95ef08762a432f44c3e69682e78aea45d9dfbe4890afca5db27',
+    provenance: {
+      path: `docs/ielts-superhub/candidates/${practiceId}/asr/${practiceId}.provenance.json`,
+      bytes: 1736,
+      sha256: 'd3ad47941b3ce88c9496980aaf605a0be6016e45aceb266baadada7914895e2b',
+    },
+    supersededEvidence: {
+      path: `docs/ielts-superhub/candidates/${practiceId}/asr/archive/${practiceId}.2026-09-01.json`,
+      bytes: 33664,
+      sha256: 'a3956b985e975b47e6d24e67d197e68edff1a658fb6c09436eeec72d9beafb35',
+      checkedAt: '2026-09-01',
+    },
+    criticalAnswerEvidence: 'Questions 21–29 have direct ASR evidence; Question 30 is contextual with a truncated name and requires human listening.',
     observedCautions: [
       'Mereford was decoded as Mayerford.',
-      'Lara was sometimes decoded as Laura and the opening Lara and Jonah became Lauren Jonah.',
+      'The opening Lara and Jonah became Lauren Jonah; the intermediate Lara assignments are recognized in this run.',
       'Compliment was decoded as complement; the decisive green-versus-amber colour interpretation remains explicit.',
-      "The tutor's explanation of why balance attracted most comments was imperfectly decoded, but the decisive louder-or-quieter evidence for Question 21 remains explicit.",
-      "Select two and time them was decoded as select two in time than; Jonah's timed-extract confirmation remains explicit.",
-      'The closing Lara confirmation was decoded as La and that comparison as their comparison; the visual responsibility remains semantically explicit.',
+      "Jonah's Volume was simply became while you were simply; the tutor's summary and the decisive louder-or-quieter evidence for Question 21 remain explicit.",
+      "Select two and time them is recognized in this run; do not copy the previous run's timing caution.",
+      'The closing Lara confirmation became La and that comparison became their comparison. Question 30 is supported by context, not a fully recognized name or diarization; focused human listening at 274–287 seconds remains required.',
+      'Other distortions include new variable as any variable, Have the ensemble perform as Have the ensemble performed, one question as when question, Yes as Thus, and minute as minutes; the later clarification preserves Question 24.',
     ],
     disclosure: 'Automated ASR is diagnostic evidence only and cannot satisfy the required human pronunciation, pacing, voice differentiation and intelligibility review.',
   });
@@ -405,7 +418,7 @@ function assertPart3ManifestContract(manifest, source, generatorAudit) {
     serverOnlyScoring: 'pass',
     postSubmitExplanations: 'authored-pending-promotion',
     audioChecksum: 'candidate-recorded',
-    asrEvidence: '10-of-10-present',
+    asrEvidence: '9-direct-plus-1-contextual',
     legacySetImported: false,
   });
   assert.deepEqual(manifest.release, {
@@ -621,7 +634,7 @@ test('Part 3 generator and manifest mutations fail closed', () => {
   }
 });
 
-test('Part 3 candidate MP3 and ASR match the draft manifest with ten answer evidences', () => {
+test('Part 3 candidate MP3 and traced ASR preserve direct and contextual answer evidence', () => {
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
   const audio = fs.readFileSync(candidateAudioPath);
   const asr = fs.readFileSync(candidateAsrPath);
@@ -638,6 +651,18 @@ test('Part 3 candidate MP3 and ASR match the draft manifest with ten answer evid
   assert.equal(asr.length, manifest.automatedAsrAudit.bytes);
   assert.equal(sha256(asr), manifest.automatedAsrAudit.sha256);
   assert.equal(asrJson.language, manifest.automatedAsrAudit.language);
+  assert.equal(sha256(audio), manifest.automatedAsrAudit.inputAudioSha256);
+  const archivedAsr = fs.readFileSync(path.join(root, manifest.automatedAsrAudit.supersededEvidence.path));
+  assert.equal(archivedAsr.length, manifest.automatedAsrAudit.supersededEvidence.bytes);
+  assert.equal(sha256(archivedAsr), manifest.automatedAsrAudit.supersededEvidence.sha256);
+  const provenanceBytes = fs.readFileSync(path.join(root, manifest.automatedAsrAudit.provenance.path));
+  assert.equal(provenanceBytes.length, manifest.automatedAsrAudit.provenance.bytes);
+  assert.equal(sha256(provenanceBytes), manifest.automatedAsrAudit.provenance.sha256);
+  const provenance = JSON.parse(provenanceBytes);
+  assert.equal(provenance.inputAudioSha256, sha256(audio));
+  assert.equal(provenance.output.sha256, sha256(asr));
+  assert.equal(provenance.review.humanApproval, null);
+  assert.equal(provenance.review.publicationDecision, 'BLOCK');
   assert.equal(manifest.release.status, 'draft');
   assert.equal(manifest.release.approvedBy, null);
   assert.equal(manifest.release.approvedAt, null);
@@ -648,14 +673,17 @@ test('Part 3 candidate MP3 and ASR match the draft manifest with ten answer evid
     'after each four minute performance allow 90 seconds',
     'performed the same short passage twice',
     'problem identified after the first performance is reduced in the repeated performance',
-    'laura should take the headings forward and turn those drafts into the final set',
+    'lara should take the headings forward and turn those drafts into the final set',
     'jonah bring me two timed extracts by friday',
     'that remains your task dr harlow',
     'jonah you ll handle the rehearsal materials and keep both rounds apart',
-    'take responsibility for presenting their comparison visually',
+    'la take responsibility for presenting their comparison visually',
   ]) {
     assert.match(asrText, new RegExp(spokenText(evidence)));
   }
+  // Q30 has contextual support, not a fully recognized name or diarized speaker.
+  assert.match(asrText, /i ll already be timing the passages and organising the cards i can design the visual/);
+  assert.match(manifest.automatedAsrAudit.criticalAnswerEvidence, /Question 30 is contextual/);
 });
 
 test('Part 3 authored content has no ten-word overlap with the tracked local data corpus', () => {

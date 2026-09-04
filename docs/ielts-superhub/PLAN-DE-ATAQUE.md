@@ -27,7 +27,7 @@ Rama: `codex/ielts-superhub`
 - Integración: aplazada. SHA integrado en main, deployment y smoke de producción:
   no aplican a este incremento privado.
 
-Resultado del checkpoint de reanudación:
+Resultado histórico del checkpoint de reanudación, anterior a los ASR nuevos:
 
 - `npm run harness:ielts`: `APPROVE` técnico; nueve etapas completas, incluidas
   preservación, alcance, catálogo, 9 mutaciones del harness, 81 pruebas Listening y
@@ -257,8 +257,8 @@ Part 3 avanza como `welearn-listening-part-3-001` en estado `draft`:
 - 48 turnos de tres roles se reconcilian por AST con el transcript y tres IDs Piper únicos;
 - un ledger independiente fija el generador completo, renderer, modelo, configuración y
   versión de Piper; cualquier deriva cambia la huella y bloquea la reproducción;
-- MP3 y ASR viven sólo en `docs/ielts-superhub/candidates/`; diez evidencias críticas están
-  presentes, con errores de ASR documentados como cautelas y no como aprobación humana;
+- MP3 y ASR viven sólo en `docs/ielts-superhub/candidates/`; el ASR actual contiene nueve
+  evidencias directas y apoyo contextual para Q30, con cautelas y sin aprobación humana;
 - el inventario inverso compara las huellas de candidatos privados contra todo `public/`,
   por lo que renombrar un binario no evita la detección de una filtración;
 - el source mantiene audio `0`/hash cero y está fuera de catálogo, registro, sitemap,
@@ -337,10 +337,12 @@ integridad/aislamiento; `--require-machine-ready` exige además evidencia técni
 Los errores se reportan como códigos e identificadores, sin contenido privado ni mensajes
 de excepciones. Ningún modo sustituye la escucha o revisión editorial humana.
 
-Deuda observada al reanudar: Parts 2 y 3 carecen del campo `inputAudioSha256` en el
-manifiesto ASR. Permanecen `machineReadiness: BLOCKED`. No se rellena retrospectivamente
-ese vínculo sin evidencia de la entrada exacta; el ASR existente y sus hashes se preservan.
-Part 4 ya tiene ese vínculo, pero también permanece bloqueada para publicación humana.
+Deuda observada al reanudar: Parts 2 y 3 carecían del campo `inputAudioSha256` en el
+manifiesto ASR. Se generaron ejecuciones nuevas con la entrada exacta, se preservó la
+evidencia anterior en un archivo histórico y se incorporó la procedencia nueva junto
+con el contrato y sus pruebas. La incorporación pasó el harness técnico; no se rellenaron
+hashes retrospectivos en los ASR anteriores. Part 4 conserva su vínculo previo.
+Todas las candidatas permanecen bloqueadas para publicación humana.
 
 #### Reproducción ASR sin modificar candidatas
 
@@ -356,8 +358,8 @@ juntos los contratos y los hashes; ejecutar el runner por sí solo no elimina lo
 
 Preparación local del 4 de septiembre: instalación finalizada con exit 0 en el entorno
 aislado `tmp/ielts-whisper-venv`, `openai-whisper==20250625`. Las ejecuciones reales de
-Parts 2 y 3 finalizaron con exit 0, con snapshots y procedencia verificadas. No se
-incorporaron aún a los manifests canónicos ni se declaró preparación para publicación.
+Parts 2 y 3 finalizaron con exit 0, con snapshots y procedencia verificadas. Se
+incorporaron a los manifests privados sin declarar preparación para publicación.
 
 Verificación del runner: ocho pruebas stdlib aprobadas con Python 3.9.6, revisión
 adversarial independiente y `check:ielts:scope` aprobados. Se cerró una filtración
@@ -374,10 +376,31 @@ ese cierre requiere escucha humana y no certifica diferenciación de voces.
 
 Registro de hashes, tiempos, evidencia y cautelas nuevas:
 [`ASR-RECONCILIATION-2026-09-04.md`](ASR-RECONCILIATION-2026-09-04.md).
-Siguiente incremento: archivar la evidencia anterior e incorporar ASR/procedencia nuevos
-junto con sus contratos y pruebas, sin cambiar los gates humanos ni las superficies
-públicas. Las Parts 2/3 canónicas siguen `machineReadiness: BLOCKED` hasta ese cambio
-auditado. Serializar pruebas y ASR por las esperas de I/O observadas en la USB.
+Incorporación actual: evidencia anterior archivada, ASR/procedencia nuevos y contratos
+conectados; pruebas individuales Parts 2/3, suite común y harness técnico aprobados.
+No cambiaron los gates humanos, MP3, mapa, source ni superficies públicas.
+El archivo histórico se exige sólo para las dos candidatas 001 reemplazadas; candidatas
+nuevas requieren procedencia, no historia inventada. Serializar pruebas y ASR por las
+esperas de I/O observadas en la USB.
+
+Validación estrecha terminada: 34/34 pruebas privadas readiness+CLI aprobadas (213 s,
+con esperas de I/O USB, sin fallos). Sesión `71487` completada; no reanudar ni duplicar.
+Además, Part2/Part3 aprobaron 10/10. `test:ielts:listening` conserva todos sus archivos
+y ahora usa `--test-concurrency=1` para que el harness también limite el I/O simultáneo.
+Harness técnico terminado (sesión `75925` completada): APPROVE, nueve etapas completas;
+90 pruebas Listening, 15 Speaking y 9 mutaciones del harness aprobadas. Informe nuevo
+terminado a las 15:32:29.335 UTC. CLI privada: Parts 2–4 con integridad PASS y preparación
+técnica READY, siempre con publicación BLOCK. El gate humano estricto terminó con exit 1
+por la escucha pendiente de Part 1, como se esperaba. No repetir harness ni ASR sin
+cambios nuevos. ESLint de los cuatro archivos modificados del contrato/pruebas aprobó
+con exit 0. Se guarda un checkpoint local; el push sigue pendiente de autorización y no
+se reintenta por otra vía. No hay procesos de validación pendientes de este incremento.
+
+Próximo avance de producto: preparar un paquete privado de revisión de Listening 1–4,
+con enlaces a los audios existentes, checklist de escucha/editorial/mapa y referencias
+a la evidencia, para facilitar la revisión humana sin escribir aprobaciones automáticas.
+No crear páginas públicas ni volver a generar audio; después retomar interfaces y SEO
+según sus puertas. La cuantificación de demanda sigue pendiente de datos verificables.
 
 El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
 el control automático y se solicitó autorización explícita para enviarlo al repositorio

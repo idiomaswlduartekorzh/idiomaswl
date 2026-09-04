@@ -97,20 +97,33 @@
   },
   "automatedAsrAudit": {
     "status": "candidate-evidence-only",
-    "checkedAt": "2026-09-01",
+    "checkedAt": "2026-09-04",
     "engine": "OpenAI Whisper small",
     "language": "en",
     "path": "docs/ielts-superhub/candidates/welearn-listening-part-3-001/asr/welearn-listening-part-3-001.json",
-    "bytes": 33664,
-    "sha256": "a3956b985e975b47e6d24e67d197e68edff1a658fb6c09436eeec72d9beafb35",
-    "criticalAnswerEvidence": "10-of-10 present and non-contradictory in ASR output",
+    "bytes": 46708,
+    "sha256": "5a3032fc7fc5125648b8093ca97509a7290bb5f25e50e242872a38c5ea5679dd",
+    "inputAudioSha256": "1e39cc939b1bf95ef08762a432f44c3e69682e78aea45d9dfbe4890afca5db27",
+    "provenance": {
+      "path": "docs/ielts-superhub/candidates/welearn-listening-part-3-001/asr/welearn-listening-part-3-001.provenance.json",
+      "bytes": 1736,
+      "sha256": "d3ad47941b3ce88c9496980aaf605a0be6016e45aceb266baadada7914895e2b"
+    },
+    "supersededEvidence": {
+      "path": "docs/ielts-superhub/candidates/welearn-listening-part-3-001/asr/archive/welearn-listening-part-3-001.2026-09-01.json",
+      "bytes": 33664,
+      "sha256": "a3956b985e975b47e6d24e67d197e68edff1a658fb6c09436eeec72d9beafb35",
+      "checkedAt": "2026-09-01"
+    },
+    "criticalAnswerEvidence": "Questions 21–29 have direct ASR evidence; Question 30 is contextual with a truncated name and requires human listening.",
     "observedCautions": [
       "Mereford was decoded as Mayerford.",
-      "Lara was sometimes decoded as Laura and the opening Lara and Jonah became Lauren Jonah.",
+      "The opening Lara and Jonah became Lauren Jonah; the intermediate Lara assignments are recognized in this run.",
       "Compliment was decoded as complement; the decisive green-versus-amber colour interpretation remains explicit.",
-      "The tutor's explanation of why balance attracted most comments was imperfectly decoded, but the decisive louder-or-quieter evidence for Question 21 remains explicit.",
-      "Select two and time them was decoded as select two in time than; Jonah's timed-extract confirmation remains explicit.",
-      "The closing Lara confirmation was decoded as La and that comparison as their comparison; the visual responsibility remains semantically explicit."
+      "Jonah's Volume was simply became while you were simply; the tutor's summary and the decisive louder-or-quieter evidence for Question 21 remain explicit.",
+      "Select two and time them is recognized in this run; do not copy the previous run's timing caution.",
+      "The closing Lara confirmation became La and that comparison became their comparison. Question 30 is supported by context, not a fully recognized name or diarization; focused human listening at 274–287 seconds remains required.",
+      "Other distortions include new variable as any variable, Have the ensemble perform as Have the ensemble performed, one question as when question, Yes as Thus, and minute as minutes; the later clarification preserves Question 24."
     ],
     "disclosure": "Automated ASR is diagnostic evidence only and cannot satisfy the required human pronunciation, pacing, voice differentiation and intelligibility review."
   },
@@ -135,7 +148,7 @@
     "serverOnlyScoring": "pass",
     "postSubmitExplanations": "authored-pending-promotion",
     "audioChecksum": "candidate-recorded",
-    "asrEvidence": "10-of-10-present",
+    "asrEvidence": "9-direct-plus-1-contextual",
     "legacySetImported": false
   },
   "release": {

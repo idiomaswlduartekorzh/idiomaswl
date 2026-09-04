@@ -15,6 +15,12 @@ const PUBLIC_TEXT_FILE_PATTERN = /\.(?:[cm]?[jt]sx?|css|csv|html?|json|md|svg|tx
 const ZERO_SHA256 = '0'.repeat(64);
 const REQUIRED_PARTS = [2, 3, 4];
 const TRANSCRIPT_WINDOW_SIZE = 12;
+const ASR_RUNNER_PATH = 'scripts/transcribe-ielts-listening-candidate.py';
+const ASR_ARCHIVE_DATE = '2026-09-01';
+const ASR_REPLACED_CANDIDATES = new Set(['welearn-listening-part-2-001', 'welearn-listening-part-3-001']);
+const WHISPER_SMALL_SHA256 = '9ecf779972d90ba49c06d968637d720dd632c55bbf19d441fb42bf17a411e794';
+const WHISPER_SMALL_BYTES = 483617219;
+const ASR_OPTIONS = { device: 'cpu', threads: 2, fp16: false, language: 'en', task: 'transcribe', temperature: 0, verbose: false };
 
 function repoRelative(root, absolutePath) {
   return path.relative(root, absolutePath).split(path.sep).join('/');
@@ -278,6 +284,7 @@ function validateSourceShape(record, manifest, failures) {
 
 function candidateArtifactSpecs(practiceId, manifest, source, failures) {
   const candidateRoot = `docs/ielts-superhub/candidates/${practiceId}`;
+  const requiresProvenance = [2, 3].includes(candidatePart(practiceId));
   const sourceUsesMap = source?.groups?.some((group) => group?.type === 'map-labelling') === true;
   const mapIsDeclared = manifest?.map && typeof manifest.map === 'object' && !Array.isArray(manifest.map);
   if (sourceUsesMap && !mapIsDeclared) addFailure(failures, 'CANDIDATE_MAP_REQUIRED', { practiceId });
@@ -296,6 +303,22 @@ function candidateArtifactSpecs(practiceId, manifest, source, failures) {
       declaredPath: manifest?.automatedAsrAudit?.path,
       metadata: manifest?.automatedAsrAudit,
     },
+    ...(requiresProvenance ? [
+      {
+        role: 'provenance',
+        canonicalPath: `${candidateRoot}/asr/${practiceId}.provenance.json`,
+        declaredPath: manifest?.automatedAsrAudit?.provenance?.path,
+        metadata: manifest?.automatedAsrAudit?.provenance,
+      },
+    ] : []),
+    ...(ASR_REPLACED_CANDIDATES.has(practiceId) ? [
+      {
+        role: 'asr-archive',
+        canonicalPath: `${candidateRoot}/asr/archive/${practiceId}.${ASR_ARCHIVE_DATE}.json`,
+        declaredPath: manifest?.automatedAsrAudit?.supersededEvidence?.path,
+        metadata: manifest?.automatedAsrAudit?.supersededEvidence,
+      },
+    ] : []),
     ...(sourceUsesMap ? [{
       role: 'map',
       canonicalPath: `${candidateRoot}/${practiceId}-map.svg`,
@@ -351,6 +374,95 @@ function isRecord(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
 
+function exactFields(value, fields) {
+  return isRecord(value) && Object.keys(value).sort().join(',') === [...fields].sort().join(',');
+}
+
+function exactRecord(value, expected) {
+  return exactFields(value, Object.keys(expected))
+    && Object.entries(expected).every(([key, expectedValue]) => value[key] === expectedValue);
+}
+
+function utcMicroseconds(value) {
+  if (typeof value !== 'string') return null;
+  const match = /^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})(?:\.(\d{1,6}))?(?:Z|\+00:00)$/.exec(value);
+  if (!match) return null;
+  const milliseconds = Date.parse(`${match[1]}Z`);
+  if (!Number.isFinite(milliseconds) || new Date(milliseconds).toISOString().slice(0, 19) !== match[1]) return null;
+  return BigInt(milliseconds) * 1000n + BigInt((match[2] ?? '').padEnd(6, '0'));
+}
+
+function validateAsrProvenance(root, practiceId, manifest, provenance, roleFingerprints, failures) {
+  const context = { practiceId, relativePath: `docs/ielts-superhub/candidates/${practiceId}/asr/${practiceId}.provenance.json` };
+  const audit = manifest?.automatedAsrAudit;
+  const requiresArchive = ASR_REPLACED_CANDIDATES.has(practiceId);
+  if (!exactFields(audit?.provenance, ['path', 'bytes', 'sha256'])
+    || (requiresArchive && (!exactFields(audit?.supersededEvidence, ['path', 'bytes', 'sha256', 'checkedAt'])
+      || audit.supersededEvidence.checkedAt !== ASR_ARCHIVE_DATE))
+    || (!requiresArchive && audit?.supersededEvidence !== undefined)) {
+    addFailure(failures, 'ASR_PROVENANCE_DECLARATION_INVALID', context);
+  }
+  if (!exactFields(provenance, ['schemaVersion', 'candidateId', 'startedAt', 'completedAt', 'engine', 'runtime', 'script', 'input', 'inputAudioSha256', 'options', 'output', 'review'])
+    || provenance.schemaVersion !== 1 || provenance.candidateId !== practiceId) {
+    addFailure(failures, 'ASR_PROVENANCE_SCHEMA_INVALID', context);
+    return;
+  }
+  const start = utcMicroseconds(provenance.startedAt);
+  const end = utcMicroseconds(provenance.completedAt);
+  const checkedAt = audit?.checkedAt;
+  if (start === null || end === null || start >= end
+    || typeof checkedAt !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(checkedAt)
+    || provenance.completedAt.slice(0, 10) !== checkedAt
+    || (requiresArchive && (checkedAt <= ASR_ARCHIVE_DATE || provenance.startedAt.slice(0, 10) <= ASR_ARCHIVE_DATE))) {
+    addFailure(failures, 'ASR_PROVENANCE_TIMELINE_INVALID', context);
+  }
+  if (!exactRecord(provenance.engine, {
+    name: 'openai-whisper', version: '20250625', model: 'small',
+    modelSha256: WHISPER_SMALL_SHA256, modelBytes: WHISPER_SMALL_BYTES,
+  })) addFailure(failures, 'ASR_PROVENANCE_ENGINE_INVALID', context);
+
+  const runtime = provenance.runtime;
+  if (!exactFields(runtime, ['python', 'implementation', 'torch', 'numpy', 'ffmpeg'])
+    || runtime.python !== '3.9.6' || runtime.implementation !== 'cpython'
+    || runtime.torch !== '2.8.0' || runtime.numpy !== '2.0.2'
+    || !exactRecord(runtime.ffmpeg, {
+      binaryPath: '/opt/homebrew/Cellar/ffmpeg/8.1.1/bin/ffmpeg',
+      sha256: '00d01197255300c02122c783dd0126a9e7f47d6c6a19faafae2e6610efd071d3', bytes: 441728,
+    }) || !exactRecord(provenance.options, ASR_OPTIONS)) {
+    addFailure(failures, 'ASR_PROVENANCE_RUNTIME_INVALID', context);
+  }
+  if (!exactRecord(provenance.review, {
+    humanApproval: null, publicationDecision: 'BLOCK',
+    limitation: 'Machine transcription evidence only; not an accuracy or release approval.',
+  })) addFailure(failures, 'ASR_PROVENANCE_REVIEW_INVALID', context);
+
+  const audio = roleFingerprints.get('audio');
+  const asr = roleFingerprints.get('asr');
+  // snapshotPath/output.path identify the historical run. Never read either path,
+  // nor any model/ffmpeg path supplied by a provenance document.
+  if (!audio || !exactRecord(provenance.input, {
+    sourcePath: `docs/ielts-superhub/candidates/${practiceId}/${practiceId}.mp3`,
+    snapshotPath: 'input.mp3', bytes: audio?.bytes, sha256: audio?.sha256,
+  }) || provenance.inputAudioSha256 !== audio?.sha256) {
+    addFailure(failures, 'ASR_PROVENANCE_INPUT_MISMATCH', context);
+  }
+  if (!asr || !exactRecord(provenance.output, { path: 'asr.json', bytes: asr?.bytes, sha256: asr?.sha256 })) {
+    addFailure(failures, 'ASR_PROVENANCE_OUTPUT_MISMATCH', context);
+  }
+  const scriptPath = path.join(root, ASR_RUNNER_PATH);
+  let scriptMatches = false;
+  try {
+    if (!pathContainsSymlink(root, scriptPath) && fs.lstatSync(scriptPath).isFile()) {
+      scriptMatches = exactRecord(provenance.script, {
+        path: ASR_RUNNER_PATH, bytes: fs.statSync(scriptPath).size, sha256: fileSha256(scriptPath),
+      });
+    }
+  } catch {
+    // Missing/unreadable script is an integrity failure, not an exception with private paths.
+  }
+  if (!scriptMatches) addFailure(failures, 'ASR_PROVENANCE_SCRIPT_MISMATCH', context);
+}
+
 function isWellFormedSafeSvgSubset(svg) {
   const stack = [];
   let cursor = 0;
@@ -377,6 +489,7 @@ function isWellFormedSafeSvgSubset(svg) {
 
 function validateRoleFormat(spec, buffer, source, manifest, failures, practiceId) {
   const context = { practiceId, relativePath: spec.canonicalPath };
+  if (spec.role === 'provenance') return;
   if (spec.role === 'audio') {
     let metadata;
     try {
@@ -396,7 +509,7 @@ function validateRoleFormat(spec, buffer, source, manifest, failures, practiceId
     ) addFailure(failures, 'CANDIDATE_AUDIO_METADATA_MISMATCH', context);
     return;
   }
-  if (spec.role === 'asr') {
+  if (spec.role === 'asr' || spec.role === 'asr-archive') {
     let asr;
     try {
       asr = JSON.parse(buffer.toString('utf8'));
@@ -406,7 +519,7 @@ function validateRoleFormat(spec, buffer, source, manifest, failures, practiceId
     }
     if (
       !isRecord(asr) || typeof asr.text !== 'string' || !asr.text.trim()
-      || asr.language !== 'en' || asr.language !== spec.metadata?.language
+      || asr.language !== 'en' || asr.language !== manifest?.automatedAsrAudit?.language
       || !Array.isArray(asr.segments) || !asr.segments.length
       || asr.segments.some((segment, index) => !isRecord(segment)
         || typeof segment.text !== 'string' || !segment.text.trim()
@@ -480,6 +593,8 @@ function validateCandidateArtifacts(root, practiceId, manifest, source, failures
 
   const resolvedRolePaths = [];
   const actualPaths = [];
+  const roleFingerprints = new Map();
+  let provenance = null;
   let audioSha256 = null;
   for (const spec of specs) {
     if (spec.declaredPath !== spec.canonicalPath) {
@@ -503,6 +618,14 @@ function validateCandidateArtifacts(root, practiceId, manifest, source, failures
     actualPaths.push(spec.canonicalPath);
     const buffer = fs.readFileSync(absolutePath);
     const actualSha256 = sha256(buffer);
+    roleFingerprints.set(spec.role, { bytes: buffer.length, sha256: actualSha256 });
+    if (spec.role === 'provenance') {
+      try {
+        provenance = JSON.parse(buffer.toString('utf8'));
+      } catch {
+        addFailure(failures, 'ASR_PROVENANCE_SCHEMA_INVALID', { practiceId, relativePath: spec.canonicalPath });
+      }
+    }
     if (!Number.isInteger(spec.metadata?.bytes) || spec.metadata.bytes !== buffer.length) {
       addFailure(failures, 'CANDIDATE_ARTIFACT_BYTES_MISMATCH', {
         practiceId,
@@ -520,6 +643,9 @@ function validateCandidateArtifacts(root, practiceId, manifest, source, failures
   }
   if (new Set(resolvedRolePaths).size !== resolvedRolePaths.length) {
     addFailure(failures, 'CANDIDATE_ARTIFACT_ROLE_ALIAS', { practiceId });
+  }
+  if ([2, 3].includes(candidatePart(practiceId))) {
+    validateAsrProvenance(root, practiceId, manifest, provenance, roleFingerprints, failures);
   }
 
   const asrInputAudioSha256 = manifest?.automatedAsrAudit?.inputAudioSha256;

@@ -81,6 +81,32 @@ test('candidate audio, map and generator are reproducibly documented outside pub
   assert.equal(sha256(candidateMapPath), manifest.map.sha256);
   assert.equal(fs.statSync(candidateAsrPath).size, manifest.automatedAsrAudit.bytes);
   assert.equal(sha256(candidateAsrPath), manifest.automatedAsrAudit.sha256);
+  assert.equal(manifest.automatedAsrAudit.checkedAt, '2026-09-04');
+  assert.equal(manifest.automatedAsrAudit.bytes, 42541);
+  assert.equal(manifest.automatedAsrAudit.sha256, 'a9009128d06a5271d81bebb4b64c6e75f111c80618d7ddf3d26c24c752db3ec0');
+  assert.equal(manifest.automatedAsrAudit.inputAudioSha256, sha256(candidateAudioPath));
+  assert.deepEqual(manifest.automatedAsrAudit.supersededEvidence, {
+    path: `docs/ielts-superhub/candidates/${practiceId}/asr/archive/${practiceId}.2026-09-01.json`,
+    bytes: 29444,
+    sha256: 'a2d7cf677273e8761dfdfa9d37ec48c4cf6810608303748334ad780ad8ac6ebb',
+    checkedAt: '2026-09-01',
+  });
+  assert.deepEqual(manifest.automatedAsrAudit.provenance, {
+    path: `docs/ielts-superhub/candidates/${practiceId}/asr/${practiceId}.provenance.json`,
+    bytes: 1736,
+    sha256: '6d6c8bf653c4ee50271ac77876f44ddaff01b1a4ae1fcd7fc0f3e55ac8660e22',
+  });
+  const archivedAsrPath = path.join(root, manifest.automatedAsrAudit.supersededEvidence.path);
+  assert.equal(fs.statSync(archivedAsrPath).size, manifest.automatedAsrAudit.supersededEvidence.bytes);
+  assert.equal(sha256(archivedAsrPath), manifest.automatedAsrAudit.supersededEvidence.sha256);
+  const provenancePath = path.join(root, manifest.automatedAsrAudit.provenance.path);
+  assert.equal(fs.statSync(provenancePath).size, manifest.automatedAsrAudit.provenance.bytes);
+  assert.equal(sha256(provenancePath), manifest.automatedAsrAudit.provenance.sha256);
+  const provenance = JSON.parse(fs.readFileSync(provenancePath, 'utf8'));
+  assert.equal(provenance.inputAudioSha256, sha256(candidateAudioPath));
+  assert.equal(provenance.output.sha256, sha256(candidateAsrPath));
+  assert.equal(provenance.review.humanApproval, null);
+  assert.equal(provenance.review.publicationDecision, 'BLOCK');
   assert.equal(manifest.release.status, 'draft');
   assert.equal(manifest.map.altReviewed, false);
   assert.equal(manifest.map.visualAmbiguityReview, 'pending');
@@ -103,6 +129,11 @@ test('candidate audio, map and generator are reproducibly documented outside pub
     'textile studio',
     'testing bench',
     'community kitchen',
+    'turn immediately to your right',
+    'large room in the far south west corner',
+    'immediately to the right of the toilets',
+    'directly opposite the courtyard s western materials shop',
+    'immediately to the left of that exit',
   ]) {
     assert.match(asrText, new RegExp(spokenText(evidence)));
   }

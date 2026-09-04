@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "welearn-listening-part-3-001",
+  "startedAt": "2026-09-04T15:03:07.546067+00:00",
+  "completedAt": "2026-09-04T15:04:22.921462+00:00",
+  "engine": {
+    "name": "openai-whisper",
+    "version": "20250625",
+    "model": "small",
+    "modelSha256": "9ecf779972d90ba49c06d968637d720dd632c55bbf19d441fb42bf17a411e794",
+    "modelBytes": 483617219
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "implementation": "cpython",
+    "torch": "2.8.0",
+    "numpy": "2.0.2",
+    "ffmpeg": {
+      "binaryPath": "/opt/homebrew/Cellar/ffmpeg/8.1.1/bin/ffmpeg",
+      "sha256": "00d01197255300c02122c783dd0126a9e7f47d6c6a19faafae2e6610efd071d3",
+      "bytes": 441728
+    }
+  },
+  "script": {
+    "path": "scripts/transcribe-ielts-listening-candidate.py",
+    "sha256": "4dcfa08bee81b5ac8a2684bda7d2822cc00a04ece8a85343c9609f95d2db2c9f",
+    "bytes": 9034
+  },
+  "input": {
+    "sourcePath": "docs/ielts-superhub/candidates/welearn-listening-part-3-001/welearn-listening-part-3-001.mp3",
+    "snapshotPath": "input.mp3",
+    "sha256": "1e39cc939b1bf95ef08762a432f44c3e69682e78aea45d9dfbe4890afca5db27",
+    "bytes": 3519917
+  },
+  "inputAudioSha256": "1e39cc939b1bf95ef08762a432f44c3e69682e78aea45d9dfbe4890afca5db27",
+  "options": {
+    "device": "cpu",
+    "threads": 2,
+    "fp16": false,
+    "language": "en",
+    "task": "transcribe",
+    "temperature": 0,
+    "verbose": false
+  },
+  "output": {
+    "path": "asr.json",
+    "sha256": "5a3032fc7fc5125648b8093ca97509a7290bb5f25e50e242872a38c5ea5679dd",
+    "bytes": 46708
+  },
+  "review": {
+    "humanApproval": null,
+    "publicationDecision": "BLOCK",
+    "limitation": "Machine transcription evidence only; not an accuracy or release approval."
+  }
+}
