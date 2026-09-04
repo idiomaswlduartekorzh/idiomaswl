@@ -69,21 +69,22 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 ### Atribución WhatsApp — 4 de septiembre de 2026
 
-- Rama: `codex/whatsapp-attribution-admin`; base `96e817fc` de `origin/main`.
-- Estado: `EN_VALIDACION`. Responsable: Codex, tarea de tags y panel de José.
+- Rama: `codex/whatsapp-attribution-admin`; base `09d82c99` de `origin/main`.
+- Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex, tarea de tags y panel de José.
 - Alcance: captura de origen en enlaces públicos de WhatsApp, referencias de contacto,
   confirmación manual o por webhook y vista privada `/dashboard/admin/contactos`.
 - Compartidos reservados: `src/app/layout.tsx`, `WhatsAppFloat.tsx`, cabecera de
   `JoseDashboard.tsx`, webhook WhatsApp, `config/production-baseline.json` y una migración aditiva de Supabase.
 - Dependencias: no modificar ni activar la IA nativa de WhatsApp; no tocar precios/pagos.
-- Producción: pendiente de migración, validaciones y autorización de activación;
-  no hay SHA integrado ni deployment de este cambio.
-- Decisión de integración: `MERGE` solo tras actualizar desde `origin/main` y validar.
-- Validado: 17 pruebas de contrato/API/SQL/chatbot, TypeScript acotado, ESLint,
-  guardianes completos de prebuild y vista local en móvil/escritorio.
-- Pendiente real: TypeScript/build globales (detenidos por contención con otra
-  compilación), repetir QA de caída de DB y autorizar migración/activación productiva.
-  Detalle: [`whatsapp-attribution.md`](whatsapp-attribution.md).
+- Producción: flag de Vercel configurado para el siguiente build; pendiente aplicar
+  la migración exacta, integrar en `main`, esperar el deployment y ejecutar smoke.
+- Decisión de integración: `MERGE`; rama actualizada desde `origin/main` y validada.
+- Validado: 17 pruebas de contrato/API/SQL/chatbot, TypeScript global y acotado,
+  ESLint, guardianes completos, build de 2.515 páginas y QA local de éxito, permisos,
+  móvil/escritorio y caída/recuperación de DB.
+- Pendiente real: autenticación operativa para aplicar la migración en el proyecto
+  Supabase canónico, merge, deployment y smoke productivo. Detalle:
+  [`whatsapp-attribution.md`](whatsapp-attribution.md).
 
 | Trabajo | Rama/SHA de corte | Estado observado | Condición para publicar |
 |---|---|---|---|

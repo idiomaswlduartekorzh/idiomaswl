@@ -1,6 +1,7 @@
 # Origen de contactos WhatsApp
 
-Estado: EN_VALIDACION. Rama `codex/whatsapp-attribution-admin`, base `96e817fc`.
+Estado: LISTO_PARA_INTEGRAR. Rama `codex/whatsapp-attribution-admin`, base
+`09d82c99` de `origin/main` tras rebase.
 No desplegado. No cambia precios, pagos, horarios ni la IA nativa de WhatsApp.
 
 ## Resultado de la verificación — 4 de septiembre de 2026
@@ -17,15 +18,15 @@ No desplegado. No cambia precios, pagos, horarios ni la IA nativa de WhatsApp.
   prueba no administrador no puede ejecutar la confirmación ni recibe el informe.
 - El adaptador local de Auth genera errores CSP en la barra de navegación porque
   su URL localhost no está en la lista productiva; no se debilitó la CSP del sitio.
-- La prueba visual de caída de DB agotó el tiempo durante recargas de desarrollo;
-  queda por repetir. Se añadieron límites de 5 s para registrar clics y 8 s para
-  consultas/confirmaciones/webhook. El fallo de persistencia del handler sí está
-  cubierto por su prueba automatizada.
-- `tsc --noEmit` global y la compilación optimizada fueron iniciados y detenidos
-  por contención de recursos con otra compilación del portátil; **no tienen resultado
-  aprobado**. La comprobación acotada no sustituye estas puertas de integración.
-- No hay migración aplicada, variables productivas cambiadas, merge, publicación
-  ni prueba real de recepción de WhatsApp. No declarar listo para integrar todavía.
+- La prueba visual de caída de DB fue repetida y aprobada: el panel muestra una
+  indisponibilidad explícita, oculta los agregados para no fingir ceros y recupera
+  el resumen al volver la conexión. Se mantienen límites de 5 s para registrar
+  clics y 8 s para consultas/confirmaciones/webhook.
+- `npx tsc --noEmit --pretty false` global: aprobado. `npm run build`: aprobado
+  sobre Next 16.2.6, con los guardianes completos y 2.515 páginas generadas.
+- Vercel producción ya tiene `NEXT_PUBLIC_WHATSAPP_ATTRIBUTION_ENABLED=true`; el
+  valor solo se incorpora al siguiente build de `main`. La migración, el merge,
+  el despliegue y la prueba real de recepción de WhatsApp siguen pendientes.
 
 ## Uso del panel
 
