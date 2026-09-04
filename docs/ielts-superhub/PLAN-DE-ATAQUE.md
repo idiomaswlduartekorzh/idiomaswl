@@ -406,11 +406,43 @@ No cambia aprobaciones, manifests, audios ni superficies públicas. No se repite
 aprobado por este incremento exclusivamente documental. `git diff --check` y
 `check:ielts:scope -- --compare-git-ref=origin/main` aprobaron sin cambios en TOEFL.
 
-Próximo avance acotado: preparar el contrato y pruebas de interfaz para matching y
-note completion de Parts 3/4, conservando bloqueada su proyección pública y sin registrar
-rutas o candidatas. Antes de editar componentes, leer las guías locales de Next y probar
-el camino exacto sin build global. La promoción seguirá esperando revisión humana y
-sus gates. La cuantificación de demanda sigue pendiente de datos verificables.
+Contrato privado de controles preparado en `src/lib/ielts/listening-draft-input-contract.ts`:
+matching y note completion reciben únicamente specs de entrada, sin importar fuentes,
+audio ni claves. Hay estados `incomplete`/`invalid`/`ready`, errores por pregunta, límite
+de 80 caracteres y de una a tres palabras según el spec, política de reutilización
+explícita e IDs/nombres por instancia.
+`ready` significa sólo que ese bloque tiene entradas válidas; no evalúa respuestas ni
+certifica un intento, accesibilidad, contenido o publicación. No hay renderer conectado,
+proyección nueva, persistencia, red o cambios en el endpoint. La política `once-only` es
+una ayuda privada adicional: el validador de transporte actual no comprueba esa política.
+
+Verificación estrecha: 16/16 pruebas aprobadas (10 nuevas y 6 existentes de matching y
+notes), incluyendo los rechazos de proyección pública vigentes. TypeScript aislado del
+nuevo módulo, sin emisión ni caché incremental: exit 0. Revisión adversarial independiente:
+un P2 reproducido por getters heredados en arrays se cerró exigiendo `Array.prototype`;
+ambas mutaciones comprueban cero ejecuciones y error genérico. No se copiarán estos
+resultados como prueba de accesibilidad: controles nativos, asociaciones reales, foco,
+teclado y recorrido de navegador todavía deben implementarse y probarse.
+
+Validación ampliada terminada: sesión `68922` completada con exit 0; no reanudar ni
+duplicar. Harness técnico APPROVE, nueve etapas PASS: 100 pruebas Listening (incluidas
+las diez nuevas), 15 Speaking y nueve mutaciones. Las 108 URLs IELTS, 20 mocks, 480
+audios generales y el catálogo protegido siguen íntegros. Parts 2–4 conservan integridad
+PASS y preparación técnica READY, siempre con publicación BLOCK.
+Informe de esta ejecución: `tmp/ielts-superhub-harness/latest-truth.json`, desde
+`2026-09-04T16:15:19.549Z` hasta `2026-09-04T16:21:06.685Z`; SHA-256
+`47dc9eda1c71aac19c111aa09baca1ea3ba240a10c9006c645ccd136933d6175`.
+ESLint del código final, TypeScript aislado del módulo y `git diff --check`: exit 0.
+No se ejecutaron build global, navegador, TypeScript global ni release harness; el
+incremento no cambia interfaces activas ni aprobaciones humanas. Checkpoint sólo local
+en la USB: cuatro archivos, sin cambios ajenos ni TOEFL. El respaldo remoto sigue
+pendiente de autorización; no hubo push, merge, PR ni despliegue.
+
+Próximo avance acotado: renderer privado con fixtures sintéticos para matching, seguido
+de notes, sin importar candidatas ni habilitar rutas. Mantener los rechazos del projector
+y el estado humano pendiente. Antes de editar componentes, leer guías locales de Next
+y diseño; probar el camino exacto sin build global. La cuantificación de demanda sigue
+pendiente de datos verificables.
 
 El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
 el control automático y se solicitó autorización explícita para enviarlo al repositorio
