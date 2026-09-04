@@ -33,6 +33,24 @@ function isCorrect(input: string, accepted: string[]): boolean {
   return accepted.some(answer => normalizeAnswer(answer) === normalized);
 }
 
+/** Maximum one-to-one matching for blanks whose official answers may appear in either order. */
+export function scoreIeltsUnorderedFillGroup(inputs: readonly string[], acceptedByTarget: readonly (readonly string[])[]): number {
+  const adjacency = inputs.map(input => acceptedByTarget.map(accepted => isCorrect(input, [...accepted])));
+  const search = (inputIndex: number, usedTargets: Set<number>): number => {
+    if (inputIndex >= adjacency.length) return 0;
+    let best = search(inputIndex + 1, usedTargets);
+    for (let target = 0; target < acceptedByTarget.length; target += 1) {
+      if (!usedTargets.has(target) && adjacency[inputIndex][target]) {
+        usedTargets.add(target);
+        best = Math.max(best, 1 + search(inputIndex + 1, usedTargets));
+        usedTargets.delete(target);
+      }
+    }
+    return best;
+  };
+  return search(0, new Set());
+}
+
 /** IELTS awards one mark per selected correct answer, in either order. */
 export function scoreIeltsMultiSelect(selected: readonly string[], accepted: readonly string[], limit: number): number {
   const unique = new Set(selected);
@@ -62,7 +80,20 @@ function scoreObjectiveSkill(
       if (question.type === 'formgroup') {
         const item = question as FormGroupQuestion;
         total += item.blanks.length;
-        for (const blank of item.blanks) {
+        const groupedNumbers = new Set<number>();
+        for (const group of item.unorderedAnswerGroups ?? []) {
+          const blanks = group.map(number => item.blanks.find(blank => blank.num === number));
+          if (blanks.some(blank => !blank) || new Set(group).size !== group.length) throw new Error(`${item.id}: invalid unordered answer group`);
+          for (const number of group) {
+            if (groupedNumbers.has(number)) throw new Error(`${item.id}: blank ${number} belongs to multiple unordered answer groups`);
+            groupedNumbers.add(number);
+          }
+          correct += scoreIeltsUnorderedFillGroup(
+            group.map(number => answers.fills[blankKey(item.id, number)] ?? ''),
+            blanks.map(blank => blank!.answers),
+          );
+        }
+        for (const blank of item.blanks.filter(blank => !groupedNumbers.has(blank.num))) {
           if (isCorrect(answers.fills[blankKey(item.id, blank.num)] ?? '', blank.answers)) correct += 1;
         }
       } else if (question.type === 'tablegroup') {

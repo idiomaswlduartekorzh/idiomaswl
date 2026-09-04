@@ -97,6 +97,9 @@ export interface FormGroupQuestion {
   imageAlt?: string;
   template: string;          // text with {{n}} markers, use \n for line breaks
   blanks: FormBlank[];
+  // Some official keys accept a set of answers in either order across multiple blanks.
+  // Scoring must consume each target once so repeating one answer cannot earn both marks.
+  unorderedAnswerGroups?: number[][];
 }
 
 export type TableCell = string | { num: number; answers: string[]; maxWords?: number };
