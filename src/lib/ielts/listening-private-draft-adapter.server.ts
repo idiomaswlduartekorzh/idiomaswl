@@ -8,6 +8,7 @@ import type {
   IeltsListeningPart,
 } from './listening-practice-contract';
 import type { IeltsListeningDraftInputSpec } from './listening-draft-input-contract';
+import type { IeltsListeningDraftControlDescriptor } from './listening-draft-control-descriptor';
 
 type PrivateDraftGroupSource =
   | IeltsListeningMatchingGroupSource
@@ -302,5 +303,34 @@ export function prepareIeltsListeningPrivateDraftGroup(
             after: line.after,
           }),
     })),
+  };
+}
+
+/** Select only fields used by the client-owned controls; keep identity and hierarchy server-side. */
+export function prepareIeltsListeningPrivateDraftControls(
+  envelope: IeltsListeningPrivateDraftGroupEnvelope,
+): IeltsListeningDraftControlDescriptor {
+  const descriptor = prepareIeltsListeningPrivateDraftGroup(envelope);
+  if (descriptor.type === 'matching') {
+    return {
+      type: 'matching',
+      inputSpec: {
+        ...descriptor.inputSpec,
+        questionNumbers: [...descriptor.inputSpec.questionNumbers],
+        options: descriptor.inputSpec.options.map((option) => ({ ...option })),
+      },
+      prompts: [...descriptor.prompts],
+    };
+  }
+
+  return {
+    type: 'note-completion',
+    inputSpec: {
+      ...descriptor.inputSpec,
+      questionNumbers: [...descriptor.inputSpec.questionNumbers],
+    },
+    notes: descriptor.sections.flatMap((section) => section.lines.flatMap((line) =>
+      line.type === 'blank' ? [{ before: line.before, after: line.after }] : [],
+    )),
   };
 }

@@ -30,8 +30,9 @@ function assertNotes(notes: NoteCompletionDraftFieldsProps['notes'], length: num
     for (const key of ['before', 'after']) {
       const field = Object.getOwnPropertyDescriptor(note, key);
       if (!field || !('value' in field) || !field.enumerable || typeof field.value !== 'string'
-        || field.value.length > 500 || (key === 'before' && !field.value.trim())) reject();
+        || field.value.length > 500) reject();
     }
+    if (!note.before.trim() && !note.after.trim()) reject();
   }
 }
 

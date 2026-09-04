@@ -48,6 +48,18 @@ test('notes render native labelled fields with context, word instruction and def
   assert.doesNotMatch(html, /aria-invalid|Write an answer for this gap|maxLength|placeholder/);
 });
 
+test('a blank at the start of a note accepts after-context and rejects context-free gaps', () => {
+  const props = fixture();
+  props.notes[0] = { before: '', after: 'Begins the note.' };
+  const html = render(props);
+  assert.match(html, /31/);
+  assert.match(html, /Begins the note\./);
+  assert.equal((html.match(/<textarea /g) ?? []).length, 2);
+
+  props.notes[0] = { before: ' ', after: ' ' };
+  assert.throws(() => render(props), /Invalid IELTS Listening note context\./);
+});
+
 test('all three supported word limits have matching visible instructions and errors', () => {
   for (const [maxWords, instruction] of [[1, 'ONE WORD ONLY'], [2, 'NO MORE THAN TWO WORDS'], [3, 'NO MORE THAN THREE WORDS']]) {
     const props = fixture(); props.spec.maxWords = maxWords; props.showErrors = true;
@@ -132,7 +144,6 @@ test('note context rejects source fields, drift, prototypes and executable gette
   const inherited = fixture().notes; Object.setPrototypeOf(inherited, Object.create(Array.prototype));
   for (const notes of [[], [fixture().notes[0]], [access, fixture().notes[1]], arrayAccess, inherited,
     [{ before: 'visible', after: '', answer: 'PRIVATE' }, fixture().notes[1]],
-    [{ before: ' ', after: 'safe' }, fixture().notes[1]],
     [{ before: 'x'.repeat(501), after: '' }, fixture().notes[1]],
     [{ before: 'safe', after: 'x'.repeat(501) }, fixture().notes[1]],
     [Object.assign(Object.create({ hidden: 'PRIVATE' }), { before: 'safe', after: '' }), fixture().notes[1]]]) {

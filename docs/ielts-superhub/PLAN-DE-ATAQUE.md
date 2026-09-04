@@ -635,6 +635,59 @@ descriptores y reutilice los dos controles ya auditados, todavía sin conectar c
 rutas o DTO público. La escucha humana y la cuantificación de demanda siguen pendientes;
 el respaldo remoto requiere autorización. No hubo push, merge, PR ni deploy.
 
+#### Composición privada de controles matching/notes — 4 de septiembre de 2026
+
+Incremento basado en `ca78eac5`. `ListeningDraftGroupFields.tsx` selecciona por
+discriminante los renderers ya auditados de matching y note completion, sin estado,
+efectos, persistencia, scoring ni acceso a red. Permanece por debajo de un contenedor
+cliente: el callback nace dentro del fixture y no cruza RSC. El nuevo descriptor cliente
+conserva únicamente `type`, `inputSpec` y prompts o contextos visibles; identidad,
+versiones, transcript, audio, soluciones y explicaciones permanecen en el adaptador
+`server-only`. No se conectó ninguna candidata, ruta, registro o DTO público.
+
+El fixture sintético combinado añade dos preguntas matching y dos huecos de notas. El
+preview acepta `--composed`; sin opción conserva matching y `--notes` conserva el modo de
+notas. Los tres modos se compilaron con las dependencias existentes. La compilación final
+del modo combinado, después de la corrección adversarial, quedó en
+`tmp/ielts-draft-ui-LfRZby`; no es una ruta Next ni contenido publicable.
+
+La revisión adversarial independiente detectó un P2 de contrato: el adaptador permitía un
+hueco al inicio (`before: ''`) con contexto posterior, pero el renderer rechazaba todo
+`before` vacío. Se alineó el leaf para aceptar el hueco cuando cualquiera de los dos lados
+aporta contexto y rechazar únicamente ambos lados vacíos o whitespace. Las regresiones lo
+cubren en adaptador/selector, renderer y fixture. El mismo revisor confirmó el cierre sin
+hallazgo residual accionable.
+
+Evidencia final del incremento:
+
+- 27/27 pruebas estrechas aprobadas para adaptador, composición y note completion; ESLint
+  focalizado de las cinco superficies finales terminó con exit 0.
+- La primera inspección del fixture compuesto cubrió validación vacía, retención de cuatro
+  respuestas, estado disabled, orden Tab, Reset por teclado, foco visible de 3 px y móvil
+  390×844 sin overflow. Después del P2 se repitió sólo la historia afectada: dos selects y
+  dos textareas, Q31 como `… Begins the schedule.`, cuatro errores enlazados por
+  `aria-describedby`, foco en Q26, escritura normal en Q31 y consola sin mensajes. La
+  pestaña se cerró y el servidor efímero terminó con exit 0; no quedan previews activos.
+- Harness técnico `APPROVE`, nueve etapas PASS: 134/134 pruebas Listening, 15/15 Speaking
+  y 9/9 mutaciones. Ejecución `2026-09-04T19:19:47.207Z`–
+  `2026-09-04T19:25:07.147Z`; `latest-truth.json` SHA-256
+  `847ea2b87f7fbb3485891b50dfe22cff3eba7cf680d0a5a1d63d25c6d96bf9f3`.
+- Alcance: 104 rutas cambiadas frente a `origin/main`, ninguna TOEFL. Permanecen íntegros
+  144 rutas base de Práctica, 480 audios, 17 activos de podcast, 108 URLs IELTS, 77
+  páginas, 20 mocks y 465 temas de gramática. Parts 2–4 conservan integridad `PASS`,
+  preparación técnica `READY` y publicación `BLOCK`.
+
+El intento final de TypeScript global agotó el heap de Node de 2 GB (exit 134) después de
+que las 27 pruebas ya habían pasado; no se aumentó memoria ni se repitió para no presionar
+el equipo. El fixture final compila y el harness aprueba, pero esto no se declara como un
+`tsc` global aprobado. Tampoco se ejecutaron build global ni release harness.
+
+Siguen pendientes la escucha humana de Part 1 y las aprobaciones humanas de las candidatas,
+la cuantificación de demanda con Search Console/Trends/Keyword Planner y el respaldo
+remoto autorizado. La rama está cinco commits detrás de `origin/main`; debe actualizarse y
+repetir los guardianes obligatorios antes de cualquier integración. No hubo push, merge,
+PR ni deploy.
+
 El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
 el control automático y se solicitó autorización explícita para enviarlo al repositorio
 canónico. No reintentar ese envío mientras siga pendiente la autorización.

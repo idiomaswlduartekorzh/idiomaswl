@@ -22,7 +22,10 @@ vm.runInNewContext(
   `(function(require,module,exports){${compiled}\n})`,
   { Array, Error, Map, Number, Object, Reflect, RegExp, Set, String },
 )(localRequire, evaluatedModule, evaluatedModule.exports);
-const { prepareIeltsListeningPrivateDraftGroup: prepare } = evaluatedModule.exports;
+const {
+  prepareIeltsListeningPrivateDraftGroup: prepare,
+  prepareIeltsListeningPrivateDraftControls: prepareControls,
+} = evaluatedModule.exports;
 const plain = (value) => JSON.parse(JSON.stringify(value));
 
 const option = (key, label) => ({ key, label });
@@ -133,6 +136,27 @@ test('note adapter keeps the visible hierarchy but strips answer material', () =
       ],
     }],
   });
+});
+
+test('control selector minimizes matching and note payloads for the client boundary', () => {
+  const matching = plain(prepareControls(matchingEnvelope()));
+  assert.deepEqual(Object.keys(matching).sort(), ['inputSpec', 'prompts', 'type']);
+  assert.deepEqual(matching.prompts, ['Revise the consent note', 'Check the booking records']);
+  assert.equal(matching.inputSpec.scope, 'welearn-listening-part-3-001-next-actions');
+
+  const notes = plain(prepareControls(notesEnvelope()));
+  assert.deepEqual(Object.keys(notes).sort(), ['inputSpec', 'notes', 'type']);
+  assert.deepEqual(notes.notes, [
+    { before: 'First finding:', after: '.' },
+    { before: 'Second finding:', after: '.' },
+  ]);
+  const serialized = JSON.stringify([matching, notes]);
+  assert.doesNotMatch(serialized, /identity|contentVersion|instruction|heading|text|expected|acceptedAnswers|explanation|correctOptionKey/);
+
+  const leadingGap = notesEnvelope();
+  leadingGap.group.sections[0].lines[1].before = '';
+  leadingGap.group.sections[0].lines[1].after = 'Begins the note.';
+  assert.deepEqual(plain(prepareControls(leadingGap)).notes[0], { before: '', after: 'Begins the note.' });
 });
 
 test('private answer sentinels and forbidden fields never enter either descriptor', () => {
