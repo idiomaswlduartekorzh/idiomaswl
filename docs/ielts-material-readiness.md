@@ -1,10 +1,16 @@
 # IELTS: inventario y puertas de calidad
 
 Fecha de revisión: 4 de septiembre de 2026. Base canónica: `96e817fcee534d70ef3039d8d2e68aa5b9a735d9`.
-Estado de esta entrega: EN_VALIDACION. No equivale a aprobación académica de los 20 sets.
+Estado académico: inventario completo; revisión integral pendiente. No equivale a aprobación de los 20 sets.
 Rama: `codex/ielts-material-readiness-20260904`. Sin migraciones ni cambios de claves, bandas o resultados históricos.
 Archivos compartidos reservados: `package.json` (comandos de auditoría/guardián) y cliente IELTS.
 El registro de publicación debe incluir SHA de main, deployment READY y comprobación pública.
+
+Validación de código realizada: catálogo y baseline protegidos, claves de Set 1, 8 pruebas objetivas,
+11 pruebas de revisión, guardián de diagramas, TypeScript y build Webpack (2515 páginas).
+La captura previa de producción conserva un fallo ya existente en el smoke de Ideas avanzadas:
+el marcador espera `Calibration, competence...` y la página dice `Confidence, competence...`.
+No se modifica ni silencia ese check; no está causado por los cambios de IELTS.
 
 ## Inventario verificado
 
