@@ -43,7 +43,7 @@ Resultado del checkpoint de reanudación:
 - `node scripts/check-ielts-listening-release.mjs --release`: `BLOCK` esperado por
   escucha humana pendiente de Part 1. No se ejecutó build completo ni release harness;
   no se infiere aptitud para producción de las pruebas locales.
-- Continuación horaria en esta tarea configurada como `continuar-ielts-superhub-en-usb`.
+- Continuación cada cinco minutos en esta tarea: `continuar-ielts-superhub-en-usb`.
   Requiere USB montada y equipo/app disponibles; no integra ni despliega. Próximo trabajo
   útil: generar evidencia ASR nueva y trazable para Parts 2/3 con la cadena existente,
   sin completar hashes retroactivamente; luego avanzar la siguiente pieza privada del
@@ -341,6 +341,36 @@ Deuda observada al reanudar: Parts 2 y 3 carecen del campo `inputAudioSha256` en
 manifiesto ASR. Permanecen `machineReadiness: BLOCKED`. No se rellena retrospectivamente
 ese vínculo sin evidencia de la entrada exacta; el ASR existente y sus hashes se preservan.
 Part 4 ya tiene ese vínculo, pero también permanece bloqueada para publicación humana.
+
+#### Reproducción ASR sin modificar candidatas
+
+El runner `scripts/transcribe-ielts-listening-candidate.py` prepara una ejecución nueva
+para Part 2, 3 o 4 bajo `tmp/ielts-asr-runs/`. Conserva una copia exacta del MP3 de entrada,
+comprueba el modelo local Whisper small y genera `asr.json` + `provenance.json` con hashes,
+fechas y opciones. No sustituye el ASR anterior, no edita manifiestos y no aprueba contenido.
+
+La ejecución utiliza CPU y dos threads; dependencias, temporales y cachés nuevos viven
+en la USB. El checkpoint del modelo ya existente se lee sin modificarlo. La promoción de
+esta evidencia exige revisar el resultado, conservar los artefactos anteriores y actualizar
+juntos los contratos y los hashes; ejecutar el runner por sí solo no elimina los bloqueos.
+
+Preparación local del 4 de septiembre: entorno aislado
+`tmp/ielts-whisper-venv`, paquete solicitado `openai-whisper==20250625`. La instalación y
+las transcripciones reales todavía deben verificarse antes de afirmar trazabilidad completa.
+
+Verificación del runner: ocho pruebas stdlib aprobadas con Python 3.9.6, revisión
+adversarial independiente y `check:ielts:scope` aprobados. Se cerró una filtración
+reproducible por stderr; se comprueba silencio de ambos streams en éxito y excepción.
+La evidencia incluye versiones de Python, Torch y NumPy y huella del binario FFmpeg.
+Estas pruebas usan un backend simulado: no se presentan como ASR real ni cambian
+`machineReadiness` de las candidatas. No se añadió Python al build de la aplicación web.
+
+Siguiente ejecución: comprobar primero que terminó la instalación en
+`tmp/ielts-whisper-venv`; después ejecutar ese Python con el runner, `--part 2` y
+`--model-path` apuntando al checkpoint small local ya comprobado. Revisar la salida antes
+de repetir para Part 3. Si existe un proceso propio de instalación o transcripción,
+continuarlo; no duplicarlo. Serializar instalación, pruebas y ASR: el ciclo observó
+esperas de I/O en la USB al ejecutarlos simultáneamente.
 
 ### Fase 4 — Autoridad y medición
 
