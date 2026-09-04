@@ -1,4 +1,10 @@
 import type { MockExam } from './types';
+import {
+  ieltsSet1OptionIndex,
+  ieltsSet1OptionLetter,
+  ieltsSet1OptionLetters,
+  ieltsSet1TextAnswers,
+} from './ielts-set-1-answer-template.ts';
 
 const mock: MockExam = {
   id: 'set-1',
@@ -16,63 +22,23 @@ const mock: MockExam = {
       audioUrl: '/audio/ielts/ielts-listening-set-1.mp3',
       title: 'Listening — Section 1: Car Tours',
       instructions: 'You will hear a conversation between a tourist and a car tour booking agent. Listen and answer Questions 1–10.',
-      transcript: `AGENT: Good morning, Island Car Tours. How can I help you?
+      transcript: `JAMIE: Good morning, World Tours. How can I help?
 
-CUSTOMER: Oh, hello. I saw your advert in the local paper, and I'm interested in booking one of your self-drive tours of the area.
+ANDREA: I would like information about self-drive tours in the USA. My name is Andrea Brown and my address is 24 Ardleigh Road — A-R-D-L-E-I-G-H. My postcode is BH5 2OP and my mobile is 077 8664 3091.
 
-AGENT: Certainly. Can I take your name?
+JAMIE: Where did you hear about World Tours?
 
-CUSTOMER: Yes, it's Andrea Brown.
+ANDREA: I read about the company in the newspaper.
 
-AGENT: Thank you, Ms Brown. And can I take your address?
+JAMIE: For the first California tour, there is time to visit theme parks in Los Angeles. You can then stay in a lodge or at the Yosemite campsite.
 
-CUSTOMER: 24 Poppyfield Road.
+ANDREA: The theme parks are on my children's list. I would choose the lodge because I do not want to stay in a tent.
 
-AGENT: Is that Poppyfield — P-O-P-P-Y-F-I-E-L-D?
+JAMIE: The second route goes from San Francisco towards Cambria, where you can stop near Hearst Castle, and then continues to Santa Monica and San Diego.
 
-CUSTOMER: That's right.
+ANDREA: I want to see the castle. Shopping does not interest us, but the beaches in San Diego do.
 
-AGENT: And your postcode?
-
-CUSTOMER: BH5 2OP.
-
-AGENT: OK. And a phone number?
-
-CUSTOMER: My mobile is 077 8664 3091.
-
-AGENT: Thank you. Can I ask how you heard about us?
-
-CUSTOMER: I found you on the internet, actually. I was searching for car hire in the area.
-
-AGENT: Great. Now, we have two self-drive tours currently available. Would you like me to describe them?
-
-CUSTOMER: Yes please. I'm travelling with my two children.
-
-AGENT: Trip One takes twelve days and covers Los Angeles, Yosemite Park and the coast. In LA, many families like to visit the national parks with children — there's a lot to do.
-
-CUSTOMER: That sounds good. We'd definitely want to do that.
-
-AGENT: And in Yosemite, would you want to stay in a lodge or would you be happy camping?
-
-CUSTOMER: Oh, definitely a lodge. We wouldn't want to sleep in a tent.
-
-AGENT: Noted. Trip Two is nine days and goes along the coast to Cambria via Santa Monica and San Diego.
-
-CUSTOMER: I remember reading about Cambria. What's the route like?
-
-AGENT: You'd get to see the wildlife on the way there — it's really spectacular. And at Santa Monica there's a lot of shopping, if that interests you.
-
-CUSTOMER: Not particularly, no.
-
-AGENT: That's fine. And at San Diego, most visitors spend time on the beach — it's beautiful.
-
-CUSTOMER: That does sound lovely.
-
-AGENT: Now let me give you some details on pricing. Trip One: twelve days, 1,260 kilometres, £525 per person. That includes accommodation and car hire, and also one meal per day.
-
-CUSTOMER: And Trip Two?
-
-AGENT: Nine days, 980 kilometres, £685 per person. That includes accommodation, car hire, and a map of the area.`,
+JAMIE: Trip One lasts twelve days and covers 2,020 kilometres. The price is £525 per person and includes accommodation, car rental and a flight, but no meals. Trip Two lasts nine days and covers 980 kilometres. It costs £429 per person; flights are not included, but dinner is included at the hotels.`,
       questions: [
         {
           type: 'formgroup',
@@ -98,12 +64,12 @@ Trip Two:
 • At Santa Monica: not interested in shopping
 • At San Diego, wants to spend time on the {{6}}`,
           blanks: [
-            { num: 1, answers: ['Poppyfield', 'poppyfield'], maxWords: 1 },
-            { num: 2, answers: ['internet', 'Internet', 'web', 'website'], maxWords: 1 },
-            { num: 3, answers: ['national'], maxWords: 1 },
-            { num: 4, answers: ['tent'], maxWords: 1 },
-            { num: 5, answers: ['wildlife'], maxWords: 1 },
-            { num: 6, answers: ['beach'], maxWords: 1 },
+            { num: 1, answers: ieltsSet1TextAnswers('listening', 1), maxWords: 1 },
+            { num: 2, answers: ieltsSet1TextAnswers('listening', 2), maxWords: 1 },
+            { num: 3, answers: ieltsSet1TextAnswers('listening', 3), maxWords: 1 },
+            { num: 4, answers: ieltsSet1TextAnswers('listening', 4), maxWords: 1 },
+            { num: 5, answers: ieltsSet1TextAnswers('listening', 5), maxWords: 1 },
+            { num: 6, answers: ieltsSet1TextAnswers('listening', 6), maxWords: 1 },
           ],
         },
         {
@@ -117,16 +83,16 @@ Trip Two:
             [
               'Trip One',
               '12 days',
-              { num: 7, answers: ['1260', '1,260'], maxWords: 1 },
+              { num: 7, answers: ieltsSet1TextAnswers('listening', 7), maxWords: 1 },
               '£525',
-              { num: 8, answers: ['meal', 'meals'], maxWords: 1 },
+              { num: 8, answers: ieltsSet1TextAnswers('listening', 8), maxWords: 1 },
             ],
             [
               'Trip Two',
               '9 days',
               '980 km',
-              { num: 9, answers: ['685', '£685'], maxWords: 1 },
-              { num: 10, answers: ['map'], maxWords: 1 },
+              { num: 9, answers: ieltsSet1TextAnswers('listening', 9), maxWords: 1 },
+              { num: 10, answers: ieltsSet1TextAnswers('listening', 10), maxWords: 1 },
             ],
           ],
         },
@@ -137,15 +103,15 @@ Trip Two:
       part: 2,
       skill: 'listening',
       audioUrl: '/audio/ielts/ielts-listening-set-1.mp3',
-      title: 'Listening — Section 2: Westfield Leisure Club',
+      title: 'Listening — Section 2: LP Clubs',
       instructions: 'You will hear a talk about joining a leisure club. Listen and answer Questions 11–20.',
-      transcript: `Good morning everyone, and welcome to Westfield Leisure Club's open day. I'm delighted to see so many of you here. As you know, we've been making some significant improvements to the club recently, and I'd like to tell you a little about those, as well as explaining what membership involves.
+      transcript: `SANDY: Welcome to LP Clubs. Before the tour, I will describe the facilities, recent improvements and membership options.
 
-First of all, our recent improvements. Over the past year, we've renovated our gym, which now has the very latest equipment. We also replaced the old outdoor pool with a brand-new heated pool — it's much larger than the previous one and very popular already. The indoor pool remains open throughout the winter, as always. We've also added a new children's activity area, though our sports training for children hasn't changed — we're still offering the same excellent programmes. And the running and cycling tracks are exactly as they were.
+The indoor swimming pool has been widened to eight lanes, and the fitness suite — or gym — has been refurbished with new exercise equipment. There is no outdoor pool. The tracks and children's sports tuition have not been changed.
 
-Now, regarding membership itself. When you join, every new member has a personal assessment with one of our trainers. During this session, you'll be asked to describe any medical conditions you have — it's very important that our staff know about these before you start exercising. The trainer will then explain the safety procedures you'll need to follow when using the equipment. After that, you'll be given a six-week programme tailored specifically for you.
+Every new member completes a personal assessment. The questionnaire asks for details of any health problems. A trainer then explains the safety rules for the fitness equipment and prepares a six-week plan.
 
-In terms of the types of membership we offer: all members pay a compulsory £90 registration fee when they join. We have three levels. Silver membership gives you access to the main facilities. Gold membership, in addition to everything Silver offers, gives you free access to all the LP clubs in the country — there are over 50 of those. And our Premier membership gives you priority booking during peak hours. Premier members are also able to bring two guests every month at no extra charge. All members, whatever their level, should always carry their membership card with them at all times — you'll need it to access the facilities.`,
+All members pay a £90 joining fee. Gold membership provides free entry to every LP Club. Premier members receive priority at peak times and passes for guests each month. Members do not need special clothes, but they must bring their photo card to enter.`,
       questions: [
         {
           type: 'multiselect',
@@ -161,7 +127,7 @@ In terms of the types of membership we offer: all members pay a compulsory £90 
             { letter: 'E', text: 'the sports training for children' },
           ],
           selectCount: 2,
-          answers: ['A', 'D'],
+          answers: ieltsSet1OptionLetters('listening', [11, 12]),
         },
         {
           type: 'formgroup',
@@ -184,14 +150,14 @@ Types of membership
 • Premier members can bring some {{19}} every month.
 • Members should always take their {{20}} with them.`,
           blanks: [
-            { num: 13, answers: ['medical conditions', 'conditions'], maxWords: 2 },
-            { num: 14, answers: ['safety procedures', 'procedures'], maxWords: 2 },
-            { num: 15, answers: ['programme', 'program', 'schedule'], maxWords: 1 },
-            { num: 16, answers: ['registration'], maxWords: 1 },
-            { num: 17, answers: ['free access', 'access'], maxWords: 2 },
-            { num: 18, answers: ['peak'], maxWords: 1 },
-            { num: 19, answers: ['guests', 'guest', 'friends'], maxWords: 1 },
-            { num: 20, answers: ['membership card', 'card'], maxWords: 2 },
+            { num: 13, answers: ieltsSet1TextAnswers('listening', 13), maxWords: 2 },
+            { num: 14, answers: ieltsSet1TextAnswers('listening', 14), maxWords: 2 },
+            { num: 15, answers: ieltsSet1TextAnswers('listening', 15), maxWords: 1 },
+            { num: 16, answers: ieltsSet1TextAnswers('listening', 16), maxWords: 1 },
+            { num: 17, answers: ieltsSet1TextAnswers('listening', 17), maxWords: 2 },
+            { num: 18, answers: ieltsSet1TextAnswers('listening', 18), maxWords: 1 },
+            { num: 19, answers: ieltsSet1TextAnswers('listening', 19), maxWords: 1 },
+            { num: 20, answers: ieltsSet1TextAnswers('listening', 20), maxWords: 2 },
           ],
         },
       ],
@@ -253,7 +219,7 @@ JOHN: Of course. Thank you very much.`,
             'adapt an existing energy-saving appliance',
             'develop a new use for current technology',
           ],
-          answer: 2,
+          answer: ieltsSet1OptionIndex('listening', 21),
         },
         {
           type: 'mcq',
@@ -265,7 +231,7 @@ JOHN: Of course. Thank you very much.`,
             'more common',
             'more economical',
           ],
-          answer: 0,
+          answer: ieltsSet1OptionIndex('listening', 22),
         },
         {
           type: 'mcq',
@@ -277,7 +243,7 @@ JOHN: Of course. Thank you very much.`,
             'to switch it on',
             'to stop water escaping',
           ],
-          answer: 1,
+          answer: ieltsSet1OptionIndex('listening', 23),
         },
         {
           type: 'mcq',
@@ -289,7 +255,7 @@ JOHN: Of course. Thank you very much.`,
             'dries the dishes',
             'is allowed to cool',
           ],
-          answer: 0,
+          answer: ieltsSet1OptionIndex('listening', 24),
         },
         {
           type: 'mcq',
@@ -301,7 +267,7 @@ JOHN: Of course. Thank you very much.`,
             'is disposed of with the waste',
             'is collected ready to be re-used',
           ],
-          answer: 2,
+          answer: ieltsSet1OptionIndex('listening', 25),
         },
         {
           type: 'formgroup',
@@ -315,11 +281,11 @@ JOHN: Of course. Thank you very much.`,
 • The professor suggests John apply for a {{29}}.
 • The professor will check the {{30}} information in John's written report.`,
           blanks: [
-            { num: 26, answers: ['presentation'], maxWords: 1 },
-            { num: 27, answers: ['model'], maxWords: 1 },
-            { num: 28, answers: ['materials', 'material'], maxWords: 1 },
-            { num: 29, answers: ['grant'], maxWords: 1 },
-            { num: 30, answers: ['technical'], maxWords: 1 },
+            { num: 26, answers: ieltsSet1TextAnswers('listening', 26), maxWords: 1 },
+            { num: 27, answers: ieltsSet1TextAnswers('listening', 27), maxWords: 1 },
+            { num: 28, answers: ieltsSet1TextAnswers('listening', 28), maxWords: 1 },
+            { num: 29, answers: ieltsSet1TextAnswers('listening', 29), maxWords: 1 },
+            { num: 30, answers: ieltsSet1TextAnswers('listening', 30), maxWords: 1 },
           ],
         },
       ],
@@ -331,19 +297,13 @@ JOHN: Of course. Thank you very much.`,
       audioUrl: '/audio/ielts/ielts-listening-set-1.mp3',
       title: 'Listening — Section 4: The Spirit Bear',
       instructions: 'You will hear a lecture about the Spirit Bear. Listen and answer Questions 31–40.',
-      transcript: `Today I want to talk about a remarkable animal — the Spirit Bear, or Kermode Bear, which lives in the coastal rainforests of British Columbia in Canada.
+      transcript: `The spirit bear is a white-coated member of the black bear family. Its colouring is caused by an uncommon gene. Local communities believe the bear has a special power and avoid speaking about sightings when strangers visit, which helps protect it.
 
-The Spirit Bear is a white-coated black bear. Unlike albino animals, its white colour comes from an uncommon gene — a double recessive gene — that occurs only in black bears in this particular region. It's quite a rare sight.
+The bear depends on old-growth rainforest. Long tree roots prevent erosion along salmon streams, while the remains of salmon eaten by the bears return nutrients to the forest. The remaining population lives on only a few islands off British Columbia.
 
-The bear holds special significance for the local indigenous peoples, who believe that it has unusual powers. Some groups tell of the bear's ability to heal the sick, and others describe it as a spirit that bridges the human and natural worlds. Because of this sacred status, local communities have traditionally protected the bear from hunters, which has helped maintain its population over the centuries.
+Its habitat is threatened by deforestation and roads built by logging companies. Salmon numbers are also falling because fishing is unrestricted. The population is especially vulnerable because its reproduction rate is low.
 
-The bear's relationship with the forest is complex and fascinating. In autumn, the bears feed heavily on salmon from the coastal rivers. As they drag fish from the water and carry them into the forest to eat, nutrients from the salmon are deposited across a wide area. This feeding behaviour actually provides nutrients for the forest vegetation, effectively fertilising the trees. The bears also rely on the trees in another way — the roots of the forest trees prevent erosion along the salmon streams, which helps keep the river banks stable for the bears to fish.
-
-The Spirit Bear is currently found on a small number of islands and in certain mainland areas, but its habitat is shrinking. Deforestation is a serious problem, as is the construction of roads by logging companies, which fragments the habitat and disturbs wildlife. The salmon supply — which the bears depend on entirely — is also being reduced by unrestricted fishing in coastal waters.
-
-Perhaps the most serious long-term threat is the bears' low rate of reproduction. They breed slowly, and their populations can take a long time to recover from any decline.
-
-But there is hope. Interested parties — including the government, conservation groups, and local communities — are working together on a plan. Logging companies are being required to improve their methods of logging so as to reduce habitat damage. And there are ongoing programmes for the maintenance and expansion of the Spirit Bears' protected territory.`,
+Community organisations, environmental groups and the government are working together. Logging companies are being required to adopt a better logging method, and conservation plans need to maintain and expand the bear's territory.`,
       questions: [
         {
           type: 'formgroup',
@@ -378,16 +338,16 @@ Going forward
 • Logging companies must improve their {{39}} of logging.
 • Maintenance and {{40}} of the spirit bears' territory is needed.`,
           blanks: [
-            { num: 31, answers: ['gene'], maxWords: 1 },
-            { num: 32, answers: ['powers'], maxWords: 1 },
-            { num: 33, answers: ['hunters'], maxWords: 1 },
-            { num: 34, answers: ['erosion'], maxWords: 1 },
-            { num: 35, answers: ['islands'], maxWords: 1 },
-            { num: 36, answers: ['roads'], maxWords: 1 },
-            { num: 37, answers: ['fishing'], maxWords: 1 },
-            { num: 38, answers: ['reproduction'], maxWords: 1 },
-            { num: 39, answers: ['methods'], maxWords: 1 },
-            { num: 40, answers: ['expansion'], maxWords: 1 },
+            { num: 31, answers: ieltsSet1TextAnswers('listening', 31), maxWords: 1 },
+            { num: 32, answers: ieltsSet1TextAnswers('listening', 32), maxWords: 1 },
+            { num: 33, answers: ieltsSet1TextAnswers('listening', 33), maxWords: 1 },
+            { num: 34, answers: ieltsSet1TextAnswers('listening', 34), maxWords: 1 },
+            { num: 35, answers: ieltsSet1TextAnswers('listening', 35), maxWords: 1 },
+            { num: 36, answers: ieltsSet1TextAnswers('listening', 36), maxWords: 1 },
+            { num: 37, answers: ieltsSet1TextAnswers('listening', 37), maxWords: 1 },
+            { num: 38, answers: ieltsSet1TextAnswers('listening', 38), maxWords: 1 },
+            { num: 39, answers: ieltsSet1TextAnswers('listening', 39), maxWords: 1 },
+            { num: 40, answers: ieltsSet1TextAnswers('listening', 40), maxWords: 1 },
           ],
         },
       ],
@@ -436,9 +396,9 @@ Bakelite was unique because it was the first material to be both entirely {{2}} 
 
 There were several reasons for the research into plastics in the nineteenth century, among them the great advances that had been made in the field of {{3}} and the search for alternatives to natural resources like ivory.`,
           blanks: [
-            { num: 1, answers: ['candlewax'], maxWords: 1 },
-            { num: 2, answers: ['synthetic'], maxWords: 1 },
-            { num: 3, answers: ['chemistry'], maxWords: 1 },
+            { num: 1, answers: ieltsSet1TextAnswers('reading', 1), maxWords: 1 },
+            { num: 2, answers: ieltsSet1TextAnswers('reading', 2), maxWords: 1 },
+            { num: 3, answers: ieltsSet1TextAnswers('reading', 3), maxWords: 1 },
           ],
         },
         {
@@ -449,21 +409,27 @@ There were several reasons for the research into plastics in the nineteenth cent
           imageUrl: '/ielts/images/reading-set-1-bakelite-flowchart.png',
           imageAlt: 'Flow-chart: The Production of Bakelite',
           groupLabel: 'Complete the flow-chart.\nChoose ONE WORD ONLY from the passage for each answer.\n\nThe Production of Bakelite',
-          template: `Phenol and formaldehyde combined under {{4}} in a kettle
+          template: `Phenol and formaldehyde combine under vacuum
 
-The resin (Novalak) was allowed to {{5}} in shallow trays until hardened, then ground into powder
+Stage one resin, called {{4}}
 
-Other substances added, including {{6}} (e.g. woodflour, cotton) and catalysts
+Cool until hardened, then break up and grind into powder
 
-Resin left to cool and {{7}}, then ground up a second time
+Other substances added, including {{5}} (e.g. cotton, asbestos) and catalyst
 
-Resulting {{8}} powder = raw Bakelite`,
+Ammonia and formaldehyde combine to form {{6}}
+
+Stage two resin is cooled, hardened, broken up and ground into powder
+
+{{7}} Bakelite is heated and poured into a mould
+
+Intense heat and {{8}} are applied before cooling`,
           blanks: [
-            { num: 4, answers: ['vacuum'], maxWords: 1 },
-            { num: 5, answers: ['cool'], maxWords: 1 },
-            { num: 6, answers: ['fillers'], maxWords: 1 },
-            { num: 7, answers: ['harden'], maxWords: 1 },
-            { num: 8, answers: ['granular'], maxWords: 1 },
+            { num: 4, answers: ieltsSet1TextAnswers('reading', 4), maxWords: 1 },
+            { num: 5, answers: ieltsSet1TextAnswers('reading', 5), maxWords: 1 },
+            { num: 6, answers: ieltsSet1TextAnswers('reading', 6), maxWords: 1 },
+            { num: 7, answers: ieltsSet1TextAnswers('reading', 7), maxWords: 1 },
+            { num: 8, answers: ieltsSet1TextAnswers('reading', 8), maxWords: 1 },
           ],
         },
         {
@@ -480,7 +446,7 @@ Resulting {{8}} powder = raw Bakelite`,
             { letter: 'E', text: 'the fashionable styles of the period' },
           ],
           selectCount: 2,
-          answers: ['C', 'E'],
+          answers: ieltsSet1OptionLetters('reading', [9, 10]),
         },
         {
           type: 'mcq',
@@ -488,7 +454,7 @@ Resulting {{8}} powder = raw Bakelite`,
           part: 5,
           text: 'Modern-day plastic preparation is based on the same principles as that patented in 1907.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: ieltsSet1OptionIndex('reading', 11),
         },
         {
           type: 'mcq',
@@ -496,7 +462,7 @@ Resulting {{8}} powder = raw Bakelite`,
           part: 5,
           text: 'Bakelite was immediately welcomed as a practical and versatile material.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 1,
+          answer: ieltsSet1OptionIndex('reading', 12),
         },
         {
           type: 'mcq',
@@ -504,7 +470,7 @@ Resulting {{8}} powder = raw Bakelite`,
           part: 5,
           text: 'Bakelite was only available in a limited range of colours.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 2,
+          answer: ieltsSet1OptionIndex('reading', 13),
         },
       ],
     },
@@ -544,7 +510,7 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           part: 6,
           text: 'Arthur Koestler considered laughter biologically important in several ways.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 1,
+          answer: ieltsSet1OptionIndex('reading', 14),
         },
         {
           type: 'mcq',
@@ -552,7 +518,7 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           part: 6,
           text: 'Plato believed humour to be a sign of above-average intelligence.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 1,
+          answer: ieltsSet1OptionIndex('reading', 15),
         },
         {
           type: 'mcq',
@@ -560,7 +526,7 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           part: 6,
           text: 'Kant believed that a successful joke involves the controlled release of nervous energy.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: ieltsSet1OptionIndex('reading', 16),
         },
         {
           type: 'mcq',
@@ -568,7 +534,7 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           part: 6,
           text: 'Current thinking on humour has largely ignored Aristotle\'s view on the subject.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 1,
+          answer: ieltsSet1OptionIndex('reading', 17),
         },
         {
           type: 'mcq',
@@ -576,7 +542,7 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           part: 6,
           text: 'Graeme Ritchie\'s work links jokes to artificial intelligence.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: ieltsSet1OptionIndex('reading', 18),
         },
         {
           type: 'mcq',
@@ -584,7 +550,7 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           part: 6,
           text: 'Most comedians use personal situations as a source of humour.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 2,
+          answer: ieltsSet1OptionIndex('reading', 19),
         },
         {
           type: 'mcq',
@@ -592,7 +558,7 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           part: 6,
           text: 'Chimpanzees make particular noises when they are playing.',
           options: ['TRUE', 'FALSE', 'NOT GIVEN'],
-          answer: 0,
+          answer: ieltsSet1OptionIndex('reading', 20),
         },
         {
           type: 'formgroup',
@@ -602,13 +568,13 @@ Humour may be a luxury, but the mechanism behind it is no evolutionary accident.
           imageUrl: '/ielts/images/reading-set-1-brain-diagram.png',
           imageAlt: 'Diagram: Brain areas activated by jokes',
           groupLabel: 'The diagram below shows the areas of the brain activated by jokes.\nLabel the diagram. Choose NO MORE THAN TWO WORDS from the passage for each answer.\n\nBrain areas activated by jokes:',
-          template: `Area active at start of joke (problem solving): {{21}}
-Area active during retrieval of stored knowledge: {{22}}
-Area active when punchline arrives (evaluating information): {{23}}`,
+          template: `Right prefrontal cortex lights up — area of brain linked to {{21}}
+{{22}} become active too
+Orbital prefrontal cortex is activated — involved with {{23}}`,
           blanks: [
-            { num: 21, answers: ['right prefrontal', 'prefrontal cortex', 'right prefrontal cortex'], maxWords: 3 },
-            { num: 22, answers: ['temporal lobes', 'temporal lobe'], maxWords: 2 },
-            { num: 23, answers: ['orbital prefrontal', 'orbital prefrontal cortex', 'orbital cortex'], maxWords: 3 },
+            { num: 21, answers: ieltsSet1TextAnswers('reading', 21), maxWords: 2 },
+            { num: 22, answers: ieltsSet1TextAnswers('reading', 22), maxWords: 2 },
+            { num: 23, answers: ieltsSet1TextAnswers('reading', 23), maxWords: 2 },
           ],
         },
         {
@@ -618,10 +584,10 @@ Area active when punchline arrives (evaluating information): {{23}}`,
           qRange: [24, 27],
           groupLabel: 'Complete each sentence with the correct ending A–G below.\nWrite the correct letter, A–G, next to questions 24–27.',
           items: [
-            { num: 24, stem: 'One of the brain\'s most difficult tasks is to', answer: 'C' },
-            { num: 25, stem: 'Because of the language they have developed, humans', answer: 'A' },
-            { num: 26, stem: 'Individual responses to humour', answer: 'F' },
-            { num: 27, stem: 'Peter Derks believes that humour', answer: 'D' },
+            { num: 24, stem: 'One of the brain\'s most difficult tasks is to', answer: ieltsSet1OptionLetter('reading', 24) },
+            { num: 25, stem: 'Because of the language they have developed, humans', answer: ieltsSet1OptionLetter('reading', 25) },
+            { num: 26, stem: 'Individual responses to humour', answer: ieltsSet1OptionLetter('reading', 26) },
+            { num: 27, stem: 'Peter Derks believes that humour', answer: ieltsSet1OptionLetter('reading', 27) },
           ],
           endings: [
             { letter: 'A', text: 'react to their own thoughts.' },
@@ -681,13 +647,13 @@ This situation only changed after 1660 when scientists associated with the {{32}
 
 Although English was then overtaken by {{33}}, it developed again in the 19th century as a direct result of the {{34}}.`,
           blanks: [
-            { num: 28, answers: ['Latin'], maxWords: 1 },
-            { num: 29, answers: ['doctors'], maxWords: 1 },
-            { num: 30, answers: ['technical vocabulary', 'vocabulary'], maxWords: 2 },
-            { num: 31, answers: ['grammatical resources', 'grammatical'], maxWords: 2 },
-            { num: 32, answers: ['Royal Society'], maxWords: 2 },
-            { num: 33, answers: ['German'], maxWords: 1 },
-            { num: 34, answers: ['industrial revolution'], maxWords: 2 },
+            { num: 28, answers: ieltsSet1TextAnswers('reading', 28), maxWords: 1 },
+            { num: 29, answers: ieltsSet1TextAnswers('reading', 29), maxWords: 1 },
+            { num: 30, answers: ieltsSet1TextAnswers('reading', 30), maxWords: 2 },
+            { num: 31, answers: ieltsSet1TextAnswers('reading', 31), maxWords: 2 },
+            { num: 32, answers: ieltsSet1TextAnswers('reading', 32), maxWords: 2 },
+            { num: 33, answers: ieltsSet1TextAnswers('reading', 33), maxWords: 1 },
+            { num: 34, answers: ieltsSet1TextAnswers('reading', 34), maxWords: 2 },
           ],
         },
         {
@@ -696,7 +662,7 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           part: 7,
           text: 'There was strong competition between scientists in Renaissance Europe.',
           options: ['YES', 'NO', 'NOT GIVEN'],
-          answer: 2,
+          answer: ieltsSet1OptionIndex('reading', 35),
         },
         {
           type: 'mcq',
@@ -704,7 +670,7 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           part: 7,
           text: 'The most important scientific development of the Renaissance period was the discovery of magnetism.',
           options: ['YES', 'NO', 'NOT GIVEN'],
-          answer: 1,
+          answer: ieltsSet1OptionIndex('reading', 36),
         },
         {
           type: 'mcq',
@@ -712,7 +678,7 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           part: 7,
           text: 'In 17th century Britain, leading thinkers combined their interest in science with an interest in how to express ideas.',
           options: ['YES', 'NO', 'NOT GIVEN'],
-          answer: 0,
+          answer: ieltsSet1OptionIndex('reading', 37),
         },
         {
           type: 'tablegroup',
@@ -722,9 +688,9 @@ Although English was then overtaken by {{33}}, it developed again in the 19th ce
           groupLabel: 'Complete the table.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.',
           headers: ['', 'Latin', 'English'],
           rows: [
-            ['Type of science', 'Original', { num: 38, answers: ['popular'], maxWords: 1 }],
-            ['Examples', 'Treatises (e.g. Principia)', { num: 39, answers: ['encyclopaedias', 'Encyclopaedias', 'educational textbooks'], maxWords: 2 }],
-            ['Target audience', 'International scholars', { num: 40, answers: ['local'], maxWords: 1 }],
+            ['Type of science', 'Original', { num: 38, answers: ieltsSet1TextAnswers('reading', 38), maxWords: 1 }],
+            ['Examples', { num: 39, answers: ieltsSet1TextAnswers('reading', 39), maxWords: 2 }, 'Encyclopaedias, educational textbooks, translations'],
+            ['Target audience', 'International scholars', { num: 40, answers: ieltsSet1TextAnswers('reading', 40), maxWords: 2 }],
           ],
         },
       ],

@@ -14,6 +14,7 @@ export interface IeltsReviewBlueprint {
   mockId: string;
   mockTitle: string;
   contentVersion: string;
+  reviewableContentVersions: readonly string[];
   writingTasks: Record<IeltsWritingTaskNumber, IeltsWritingTaskBlueprint>;
 }
 
@@ -27,10 +28,14 @@ export const IELTS_REVIEW_BLUEPRINTS: Record<string, IeltsReviewBlueprint> = Obj
   Array.from({ length: 20 }, (_, index) => {
     const setNumber = index + 1;
     const mockId = `set-${setNumber}`;
+    const contentVersion = setNumber === 1 ? 'ielts-set-1-v2' : `ielts-set-${setNumber}-v1`;
     return [mockId, {
       mockId,
       mockTitle: `IELTS Academic Set ${setNumber}`,
-      contentVersion: `ielts-set-${setNumber}-v1`,
+      contentVersion,
+      reviewableContentVersions: setNumber === 1
+        ? ['ielts-set-1-v1', 'ielts-set-1-v2']
+        : [contentVersion],
       writingTasks: {
         1: {
           answerColumn: 'writing_task1_answer',
@@ -49,6 +54,14 @@ export const IELTS_REVIEW_BLUEPRINTS: Record<string, IeltsReviewBlueprint> = Obj
 
 export function getIeltsReviewBlueprint(mockId: string): IeltsReviewBlueprint | null {
   return IELTS_REVIEW_BLUEPRINTS[mockId] ?? null;
+}
+
+/** Old Set 1 browser tabs must not submit answers to changed prompts silently. */
+export function isIeltsSubmissionVersionCurrent(mockId: string, version: unknown): boolean {
+  const blueprint = getIeltsReviewBlueprint(mockId);
+  if (!blueprint) return false;
+  if (version == null) return mockId !== 'set-1';
+  return version === blueprint.contentVersion;
 }
 
 export function getIeltsReviewBlueprintByTitle(mockTitle: string | null): IeltsReviewBlueprint | null {

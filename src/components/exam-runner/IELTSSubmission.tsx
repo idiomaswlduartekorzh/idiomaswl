@@ -14,7 +14,7 @@ import {
   type IeltsSpeakingPromptRef,
 } from '@/lib/ielts/submission';
 import type { IeltsSpeakingRecording } from './IELTSSpeakingRecorder';
-import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
+import { getIeltsReviewBlueprint, type IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
 
 interface Props {
   mockId: string;
@@ -110,6 +110,7 @@ export function IELTSSubmission({
     if (!consent) return showError('Debes autorizar el envío y la evaluación académica.');
 
     const payload: IeltsSubmissionPayload = {
+      contentVersion: getIeltsReviewBlueprint(mockId)?.contentVersion,
       name: trimmedName,
       email: trimmedEmail,
       consentVersion: IELTS_SUBMISSION_CONSENT_VERSION,

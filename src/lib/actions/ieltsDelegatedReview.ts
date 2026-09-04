@@ -120,7 +120,7 @@ export async function createIeltsDelegatedReviewInvite(
     const blueprint = getIeltsReviewBlueprint(submission.mock_id ?? '')
       ?? getIeltsReviewBlueprintByTitle(submission.mock_title)
     if (!blueprint) return { ok: false, error: 'Este simulacro todavía no está conectado al blueprint de revisión.' }
-    if (submission.content_version && submission.content_version !== blueprint.contentVersion) {
+    if (submission.content_version && !blueprint.reviewableContentVersions.includes(submission.content_version)) {
       return { ok: false, error: 'La versión del contenido no coincide con el blueprint actual. Conserva la entrega y revisa su snapshot antes de crear el llamado.' }
     }
 

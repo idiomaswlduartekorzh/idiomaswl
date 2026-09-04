@@ -14,6 +14,7 @@ import {
 import { isFreeIeltsMock, isReviewableIeltsMock } from '@/lib/labs/exam-bridge/ielts';
 import { useWritingAssessment } from '@/lib/labs/hooks/useWritingAssessment';
 import type { IeltsSubmissionReceipt } from '@/lib/ielts/review-blueprint';
+import { scoreIeltsObjectiveAnswers, scoreIeltsMultiSelect } from '@/lib/ielts/mock-scoring';
 import {
   Timer, AudioPlayer, SkillTabs,
   countWords, isCorrect, blankKey,
@@ -26,21 +27,6 @@ import type {
   MultiSelectQuestion, MatchingGroupQuestion,
 } from '@/data/mocks/types';
 
-// ── Band tables ───────────────────────────────────────────────────────────────
-
-const L_BAND: [number, number][] = [
-  [39,9],[37,8.5],[35,8],[33,7.5],[30,7],[27,6.5],
-  [23,6],[20,5.5],[16,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5],[0,1],
-];
-const R_BAND: [number, number][] = [
-  [39,9],[37,8.5],[35,8],[33,7.5],[30,7],[27,6.5],
-  [23,6],[19,5.5],[15,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5],[0,1],
-];
-
-function rawToBand(raw: number, table: [number, number][]): number {
-  for (const [min, band] of table) if (raw >= min) return band;
-  return 1;
-}
 const SKILL_ORDER = ['listening','reading','writing','speaking'];
 const SKILL_LABEL: Record<string,string> = {
   listening:'Listening', reading:'Reading', writing:'Writing', speaking:'Speaking',
@@ -548,8 +534,8 @@ function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: numbe
       total += cells.length;
       done += cells.filter(c=>(ans.fills[blankKey(tg.id,c.num)]??'').trim()).length;
     } else if (q.type === 'multiselect') {
-      total += 1; // counts as one "question answered" when at least one selected
-      if ((ans.ms[q.id]??[]).length>0) done++;
+      total += q.selectCount;
+      done += Math.min(new Set(ans.ms[q.id] ?? []).size, q.selectCount);
     } else if (q.type === 'matching') {
       const mg = q as MatchingGroupQuestion;
       total += mg.items.length;
@@ -565,32 +551,6 @@ function countGroupAnswers(section: MockSection, ans: AllAnswers): { done: numbe
   return { done, total };
 }
 
-function scoreSection(section: MockSection, ans: AllAnswers): number {
-  let correct = 0;
-  for (const q of section.questions) {
-    if (q.type === 'formgroup') {
-      const fg = q as FormGroupQuestion;
-      for (const b of fg.blanks) if (isCorrect(ans.fills[blankKey(fg.id,b.num)]??'',b.answers)) correct++;
-    } else if (q.type === 'tablegroup') {
-      const tg = q as TableGroupQuestion;
-      for (const row of tg.rows) for (const cell of row) {
-        if (typeof cell!=='string' && isCorrect(ans.fills[blankKey(tg.id,cell.num)]??'',cell.answers)) correct++;
-      }
-    } else if (q.type === 'multiselect') {
-      const ms = q as MultiSelectQuestion;
-      const sel = ans.ms[ms.id]??[];
-      const correct_ms = ms.answers.every(a=>sel.includes(a)) && sel.every(s=>ms.answers.includes(s));
-      if (correct_ms) correct += ms.selectCount;
-    } else if (q.type === 'matching') {
-      const mg = q as MatchingGroupQuestion;
-      for (const item of mg.items) if ((ans.match[blankKey(mg.id,item.num)]??'')===item.answer) correct++;
-    } else if (q.type === 'mcq' || q.type === 'dialog') {
-      const mq = q as MCQQuestion;
-      if (ans.mcq[mq.id]===mq.answer) correct++;
-    }
-  }
-  return correct;
-}
 
 // ── IELTSResults — new admin-review flow ─────────────────────────────────────
 
@@ -615,18 +575,14 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
     try { setLeadCaptured(!!localStorage.getItem('wl_lead_captured')); } catch {}
   }
 
-  const lSections = getSkillSections(mock,'listening').filter(s=>!s.comingSoon);
-  const rSections = getSkillSections(mock,'reading');
-  const lCorrect = lSections.reduce((a,s)=>a+scoreSection(s,ans),0);
-  const rCorrect = rSections.reduce((a,s)=>a+scoreSection(s,ans),0);
-
-  let lTotal=0, rTotal=0;
-  for (const s of lSections) lTotal += countGroupAnswers(s,ans).total;
-  for (const s of rSections) rTotal += countGroupAnswers(s,ans).total;
-
-  const hasListening = lSections.length > 0;
-  const rBand = rawToBand(rCorrect, R_BAND);
-  const lBand = hasListening ? rawToBand(lCorrect, L_BAND) : null;
+  const objectiveScore = scoreIeltsObjectiveAnswers(mock, ans);
+  const lCorrect = objectiveScore.listening?.correct ?? 0;
+  const rCorrect = objectiveScore.reading.correct;
+  const lTotal = objectiveScore.listening?.total ?? 0;
+  const rTotal = objectiveScore.reading.total;
+  const hasListening = objectiveScore.listening !== null;
+  const rBand = objectiveScore.reading.band;
+  const lBand = objectiveScore.listening?.band ?? null;
 
   const writeQs = getSkillSections(mock,'writing').flatMap(s=>s.questions) as WriteQuestion[];
   const speakQs = getSkillSections(mock,'speaking').flatMap(s=>s.questions) as SpeakQuestion[];
@@ -829,13 +785,14 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
               if (q.type==='multiselect') {
                 const ms=q as MultiSelectQuestion;
                 const sel=ans.ms[ms.id]??[];
-                const ok=ms.answers.every(a=>sel.includes(a))&&sel.every(s=>ms.answers.includes(s));
+                const marks=scoreIeltsMultiSelect(sel, ms.answers, ms.selectCount);
+                const ok=marks===ms.selectCount;
                 return (
                   <div key={ms.id} className={`prac-review-item${ok?' prac-review-item--correct':' prac-review-item--wrong'}`}>
                     <div className="prac-review-item__header">
                       <span className="prac-review-item__num">Q{ms.qRange[0]}–{ms.qRange[1]}</span>
                       <span className={`prac-review-item__badge${ok?' prac-review-item__badge--ok':' prac-review-item__badge--err'}`}>
-                        {ok?'✓ Correct':'✗ Incorrect'}
+                        {ok?'✓ Correct':marks>0?`Partial credit: ${marks}/${ms.selectCount}`:'✗ Incorrect'}
                       </span>
                     </div>
                     <p className="ielts-review__fill-ans">Your answer: <strong>{sel.join(', ')||'(none)'}</strong></p>
@@ -875,7 +832,7 @@ function IELTSResults({ mock, exam, ans, receipt, onRetry }: {
                 return (
                   <div key={mq.id} className={`prac-review-item${ok?' prac-review-item--correct':' prac-review-item--wrong'}`}>
                     <div className="prac-review-item__header">
-                      <span className="prac-review-item__num">Q</span>
+                      <span className="prac-review-item__num">Q{mq.id.match(/q(\d+)$/i)?.[1] ?? ''}</span>
                       <span className={`prac-review-item__badge${ok?' prac-review-item__badge--ok':' prac-review-item__badge--err'}`}>
                         {ok?'✓ Correct':'✗ Incorrect'}
                       </span>

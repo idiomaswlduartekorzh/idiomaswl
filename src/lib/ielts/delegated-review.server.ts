@@ -137,7 +137,7 @@ async function authorizeDelegatedReview(token: string): Promise<
     return { ok: false, status: 409, message: 'No pudimos abrir la entrega vinculada.' };
   }
   if (!submissionData) return { ok: false, status: 404, message: 'La entrega vinculada ya no está disponible.' };
-  if (submissionData.content_version !== blueprint.contentVersion) {
+  if (!blueprint.reviewableContentVersions.includes(submissionData.content_version ?? '')) {
     return { ok: false, status: 409, message: 'La versión de contenido de la entrega no coincide con el llamado.' };
   }
   if (submissionData.reviewed_at) {

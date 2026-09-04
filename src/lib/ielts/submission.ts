@@ -23,6 +23,7 @@ export interface IeltsSpeakingPromptRef {
 }
 
 export interface IeltsSubmissionPayload {
+  contentVersion?: string;
   name: string;
   email: string;
   consentVersion: typeof IELTS_SUBMISSION_CONSENT_VERSION;
