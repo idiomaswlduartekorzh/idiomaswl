@@ -354,9 +354,10 @@ en la USB. El checkpoint del modelo ya existente se lee sin modificarlo. La prom
 esta evidencia exige revisar el resultado, conservar los artefactos anteriores y actualizar
 juntos los contratos y los hashes; ejecutar el runner por sí solo no elimina los bloqueos.
 
-Preparación local del 4 de septiembre: entorno aislado
-`tmp/ielts-whisper-venv`, paquete solicitado `openai-whisper==20250625`. La instalación y
-las transcripciones reales todavía deben verificarse antes de afirmar trazabilidad completa.
+Preparación local del 4 de septiembre: instalación finalizada con exit 0 en el entorno
+aislado `tmp/ielts-whisper-venv`, `openai-whisper==20250625`. Las ejecuciones reales de
+Parts 2 y 3 finalizaron con exit 0, con snapshots y procedencia verificadas. No se
+incorporaron aún a los manifests canónicos ni se declaró preparación para publicación.
 
 Verificación del runner: ocho pruebas stdlib aprobadas con Python 3.9.6, revisión
 adversarial independiente y `check:ielts:scope` aprobados. Se cerró una filtración
@@ -365,12 +366,22 @@ La evidencia incluye versiones de Python, Torch y NumPy y huella del binario FFm
 Estas pruebas usan un backend simulado: no se presentan como ASR real ni cambian
 `machineReadiness` de las candidatas. No se añadió Python al build de la aplicación web.
 
-Siguiente ejecución: comprobar primero que terminó la instalación en
-`tmp/ielts-whisper-venv`; después ejecutar ese Python con el runner, `--part 2` y
-`--model-path` apuntando al checkpoint small local ya comprobado. Revisar la salida antes
-de repetir para Part 3. Si existe un proceso propio de instalación o transcripción,
-continuarlo; no duplicarlo. Serializar instalación, pruebas y ASR: el ciclo observó
-esperas de I/O en la USB al ejecutarlos simultáneamente.
+Las ejecuciones nuevas están en `tmp/ielts-asr-runs/part-2-w991_efa` y
+`tmp/ielts-asr-runs/part-3-w1feknit`; no hay procesos ASR pendientes ni razón para repetirlas.
+La revisión independiente encontró diez claves respaldadas en Part 2. En Part 3, Q21–29
+tienen evidencia directa y Q30 apoyo contextual con el nombre Lara truncado como La;
+ese cierre requiere escucha humana y no certifica diferenciación de voces.
+
+Registro de hashes, tiempos, evidencia y cautelas nuevas:
+[`ASR-RECONCILIATION-2026-09-04.md`](ASR-RECONCILIATION-2026-09-04.md).
+Siguiente incremento: archivar la evidencia anterior e incorporar ASR/procedencia nuevos
+junto con sus contratos y pruebas, sin cambiar los gates humanos ni las superficies
+públicas. Las Parts 2/3 canónicas siguen `machineReadiness: BLOCKED` hasta ese cambio
+auditado. Serializar pruebas y ASR por las esperas de I/O observadas en la USB.
+
+El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
+el control automático y se solicitó autorización explícita para enviarlo al repositorio
+canónico. No reintentar ese envío mientras siga pendiente la autorización.
 
 ### Fase 4 — Autoridad y medición
 
