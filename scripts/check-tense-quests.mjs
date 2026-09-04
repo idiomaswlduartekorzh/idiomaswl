@@ -462,6 +462,29 @@ for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
   for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido alemán heredado`)
 }
 
+const germanPresentParadigms = [
+  ['wohne', 'wohnst', 'wohnt', 'wohnen'], ['lerne', 'lernst', 'lernt', 'lernen'],
+  ['trinke', 'trinkst', 'trinkt', 'trinken'], ['koche', 'kochst', 'kocht', 'kochen'],
+  ['spiele', 'spielst', 'spielt', 'spielen'], ['lese', 'liest', 'lest', 'lesen'],
+  ['stehe', 'stehst', 'steht', 'stehen'], ['mache', 'machst', 'macht', 'machen'],
+  ['kaufe', 'kaufst', 'kauft', 'kaufen'], ['fahre', 'fährst', 'fährt', 'fahren'],
+]
+const germanPresentPack = GERMAN_EDITORIAL_PACKS[0]
+for (const [index, item] of germanPresentPack.choices.entries()) {
+  const expected = germanPresentParadigms[index]
+  assert(expected?.length === 4 && item.options.every((option) => expected.includes(option)), `${item.id}: las cuatro opciones deben ser conjugaciones del mismo verbo en Präsens`)
+}
+const germanPresentChoices = new Set(germanPresentPack.choices.map((item) => item.context.replace('___', '').toLocaleLowerCase('de')))
+for (const item of germanPresentPack.micro) assert(!germanPresentChoices.has(item.segments.join('').toLocaleLowerCase('de')), `${item.id}: el nivel 2 no puede reciclar la escena del nivel 1`)
+const germanSeparableParticles = new Map([['aufstehen', 'auf'], ['anrufen', 'an'], ['fernsehen', 'fern'], ['mitbringen', 'mit']])
+for (const item of germanPresentPack.micro) {
+  const gap = item.gaps[0]
+  const particle = germanSeparableParticles.get(gap.verb)
+  if (!particle) continue
+  assert(new RegExp(`\\b${particle}\\.`, 'iu').test(item.segments[1]), `${item.id}: la partícula separable debe permanecer visible al final`)
+  assert(gap.answers.every((answer) => !answer.split(/\s+/u).includes(particle)), `${item.id}: la respuesta no puede duplicar la partícula separable`)
+}
+
 const germanWrittenAnswers = (pack) => [...pack.micro, ...pack.long].flatMap((item) => item.gaps.flatMap((gap) => gap.answers))
 const germanCompositePatterns = [
   [1, /\b(?:habe|hast|hat|haben|habt)$/i], [2, /\b(?:bin|bist|ist|sind|seid)$/i],

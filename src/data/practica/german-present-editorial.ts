@@ -1,5 +1,6 @@
 import {
   createGermanEditorialPack,
+  type GermanEditorialChoiceSeed,
   type GermanEditorialErrorSeed,
   type GermanEditorialFinalSeed,
   type GermanEditorialGapSeed,
@@ -7,17 +8,30 @@ import {
   type GermanEditorialSequenceSeed,
 } from './german-editorial-builder.ts'
 
+const choices: GermanEditorialChoiceSeed[] = [
+  { cue: '„ich“ mit wohnen', segments: ['Ich ', ' in Köln.'], answer: 'wohne', distractors: ['wohnst', 'wohnt', 'wohnen'] },
+  { cue: '„du“ mit lernen', segments: ['Du ', ' jeden Tag Deutsch.'], answer: 'lernst', distractors: ['lerne', 'lernt', 'lernen'] },
+  { cue: '„Mia“ mit trinken', segments: ['Mia ', ' morgens Tee.'], answer: 'trinkt', distractors: ['trinke', 'trinkst', 'trinken'] },
+  { cue: '„wir“ mit kochen', segments: ['Wir ', ' heute zusammen.'], answer: 'kochen', distractors: ['koche', 'kochst', 'kocht'] },
+  { cue: '„ihr“ mit spielen', segments: ['Ihr ', ' nach der Schule Fußball.'], answer: 'spielt', distractors: ['spiele', 'spielst', 'spielen'] },
+  { cue: '„die Kinder“ mit lesen', segments: ['Die Kinder ', ' ein kurzes Buch.'], answer: 'lesen', distractors: ['lese', 'liest', 'lest'] },
+  { cue: '„Paul“ mit aufstehen', segments: ['Paul ', ' um sieben Uhr auf.'], answer: 'steht', distractors: ['stehe', 'stehst', 'stehen'] },
+  { cue: '„du“ mit aufmachen', segments: ['Du ', ' das Fenster auf.'], answer: 'machst', distractors: ['mache', 'macht', 'machen'] },
+  { cue: '„Anna und Leo“ mit einkaufen', segments: ['Anna und Leo ', ' heute ein.'], answer: 'kaufen', distractors: ['kaufe', 'kaufst', 'kauft'] },
+  { cue: '„der Bus“ mit abfahren', segments: ['Der Bus ', ' um acht Uhr ab.'], answer: 'fährt', distractors: ['fahre', 'fährst', 'fahren'] },
+]
+
 const micro: GermanEditorialMicroSeed[] = [
-  { title: 'Der erste Bus', cue: 'einen festen Fahrplan', segments: ['Der erste Bus ', ' werktags um 5:40 Uhr ab.'], verb: 'abfahren', answers: ['fährt ab'], distractors: ['ist abgefahren', 'fuhr ab', 'wird abfahren'] },
-  { title: 'Im Übergangsquartier', cue: 'eine gegenwärtige Situation', segments: ['Während der Renovierung ', ' wir bei unseren Nachbarn.'], verb: 'wohnen', answers: ['wohnen'], distractors: ['haben gewohnt', 'wohnten', 'werden wohnen'] },
-  { title: 'Der Wasserkreislauf', cue: 'eine allgemeine Tatsache', segments: ['Bei Wärme ', ' Wasser schneller.'], verb: 'verdunsten', answers: ['verdunstet'], distractors: ['ist verdunstet', 'verdunstete', 'wird verdunsten'] },
-  { title: 'Der Mittwochsmarkt', cue: 'eine regelmäßige Gewohnheit', segments: ['Jeden Mittwoch ', ' Aylin frisches Brot auf dem Markt.'], verb: 'kaufen', answers: ['kauft'], distractors: ['hat gekauft', 'kaufte', 'wird kaufen'] },
-  { title: 'Die Bibliotheksregel', cue: 'eine geltende Regel', segments: ['Die Bibliothek ', ' Getränke nur im Foyer.'], verb: 'erlauben', answers: ['erlaubt'], distractors: ['hat erlaubt', 'erlaubte', 'wird erlauben'] },
-  { title: 'Der Küstenzug', cue: 'eine planmäßige Verbindung', segments: ['Der Regionalzug ', ' in zwölf Küstenorten.'], verb: 'halten', answers: ['hält'], distractors: ['hat gehalten', 'hielt', 'wird halten'] },
-  { title: 'Aktuelle Zuständigkeit', cue: 'eine Aufgabe im aktuellen Monat', segments: ['Diesen Monat ', ' du die Frühschicht.'], verb: 'übernehmen', answers: ['übernimmst'], distractors: ['hast übernommen', 'übernahmst', 'wirst übernehmen'] },
-  { title: 'Der Solarsensor', cue: 'eine dauerhafte Funktionsweise', segments: ['Dieser Sensor ', ' Licht in elektrische Energie um.'], verb: 'umwandeln', answers: ['wandelt um'], distractors: ['hat umgewandelt', 'wandelte um', 'wird umwandeln'] },
-  { title: 'Sonntag bei Oma', cue: 'eine familiäre Gewohnheit', segments: ['Meine Cousins ', ' sonntags bei ihrer Großmutter zu Mittag.'], verb: 'essen', answers: ['essen'], distractors: ['haben gegessen', 'aßen', 'werden essen'] },
-  { title: 'Semesterbeginn', cue: 'einen offiziellen Kalendertermin', segments: ['Das Wintersemester ', ' am 7. Oktober.'], verb: 'beginnen', answers: ['beginnt'], distractors: ['hat begonnen', 'begann', 'wird beginnen'] },
+  { title: 'Zu Hause', cue: '„ich“ im Präsens', segments: ['Ich ', ' aus Kolumbien.'], verb: 'kommen', answers: ['komme'], distractors: ['kommst', 'kommt', 'kommen'] },
+  { title: 'Heute', cue: '„du“ im Präsens', segments: ['Du ', ' heute zu Hause.'], verb: 'arbeiten', answers: ['arbeitest'], distractors: ['arbeite', 'arbeitet', 'arbeiten'] },
+  { title: 'Ein Buch', cue: '„er“ im Präsens', segments: ['Er ', ' ein Buch.'], verb: 'lesen', answers: ['liest'], distractors: ['lese', 'lest', 'lesen'] },
+  { title: 'Das Abendessen', cue: '„wir“ im Präsens', segments: ['Wir ', ' am Abend Reis.'], verb: 'essen', answers: ['essen'], distractors: ['esse', 'isst', 'esst'] },
+  { title: 'Zeit', cue: '„ihr“ im Präsens', segments: ['Ihr ', ' heute viel Zeit.'], verb: 'haben', answers: ['habt'], distractors: ['habe', 'hast', 'haben'] },
+  { title: 'Mit dem Bus', cue: 'ein Plural im Präsens', segments: ['Lena und Ben ', ' mit dem Bus.'], verb: 'fahren', answers: ['fahren'], distractors: ['fahre', 'fährst', 'fährt'] },
+  { title: 'Früh am Morgen', cue: 'ein trennbares Verb', segments: ['Lena ', ' früh auf.'], verb: 'aufstehen', answers: ['steht'], distractors: ['stehe', 'stehst', 'stehen'] },
+  { title: 'Ein Anruf', cue: 'ein trennbares Verb', segments: ['Ich ', ' meine Mutter an.'], verb: 'anrufen', answers: ['rufe'], distractors: ['rufst', 'ruft', 'rufen'] },
+  { title: 'Am Abend', cue: 'ein trennbares Verb', segments: ['Tom ', ' am Abend fern.'], verb: 'fernsehen', answers: ['sieht'], distractors: ['sehe', 'siehst', 'sehen'] },
+  { title: 'Für die Klasse', cue: 'ein trennbares Verb', segments: ['Wir ', ' Wasser mit.'], verb: 'mitbringen', answers: ['bringen'], distractors: ['bringe', 'bringst', 'bringt'] },
 ]
 
 const long: GermanEditorialGapSeed[] = [
@@ -74,6 +88,6 @@ const final: GermanEditorialFinalSeed[] = [
 
 export const GERMAN_PRESENT_EDITORIAL = createGermanEditorialPack({
   slug: 'praesens', form: 'praesens', focus: 'Präsens',
-  rule: 'Das Präsens bezeichnet Gewohnheiten, geltende Regeln, allgemeine Tatsachen und offiziell festgelegte Termine; ein trennbarer Verbzusatz gehört zur vollständigen Antwort.',
-  micro, long, errors, sequences, final,
+  rule: 'Im Präsens stimmt das finite Verb mit Person und Zahl des Subjekts überein. Bei einem trennbaren Verb bleibt der bereits sichtbare Verbzusatz am Satzende.',
+  choices, micro, long, errors, sequences, final,
 })

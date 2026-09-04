@@ -5,8 +5,22 @@
 > concentra en las decisiones curriculares por idioma.
 
 Fuente de verdad para escalar el motor de `/herramientas/quizes` a los ocho idiomas de
-Idiomas WeLearn. Versión 4: 28 de agosto de 2026, endurecida tras auditoría funcional y
+Idiomas WeLearn. Versión 5: 4 de septiembre de 2026, endurecida tras auditoría funcional y
 pedagógica.
+
+Actualización del contrato de reconocimiento (4 de septiembre de 2026): el nivel 1 ya no
+contrasta tiempos cuando el estudiante seleccionó una sola forma. Sus cuatro opciones son
+realizaciones de esa misma forma y del mismo lema; tres fallan por persona, número, auxiliar,
+concordancia o construcción. Nivel 1 y nivel 2 tienen bancos editoriales separados. En alemán,
+un verbo separable muestra el prefijo en su posición real y el hueco evalúa la parte finita;
+nunca se inserta una respuesta contigua que duplique el prefijo.
+
+Estado de migración de este contrato: `Präsens` alemán es el primer banco conforme y está
+protegido por regresiones morfológicas, de independencia entre niveles y de partículas
+separables. Los demás bancos conservan temporalmente la compatibilidad anterior del constructor;
+no se declaran conformes hasta recibir distractores del mismo paradigma y escenas propias por
+nivel. La migración se hace forma por forma porque ruso, japonés y coreano requieren guardianes
+de aspecto, construcción y registro, no una copia de la flexión europea.
 
 Actualización italiana (28 de agosto de 2026): las trece formas usan bancos editoriales
 independientes en los niveles 2–5 y diez escenas finales distintas del nivel 1. El motor admite
@@ -36,11 +50,12 @@ declara su valor de registro frente a `ir + infinitivo`; el mais-que-perfeito y 
 exigen otro marco temporal; el condicional passado exige condición o resultado real visible. La
 configuración activa no importa la factoría heredada.
 
-Actualización alemana (29 de agosto de 2026): las diez formas usan diez bancos editoriales por
+Actualización alemana (4 de septiembre de 2026): las diez formas usan diez bancos editoriales por
 nivel y la ruta pública importa `german-structure-quest-config.ts`. Los compuestos exigen la
 unidad verbal completa, incluso cuando el orden alemán separaría sus piezas en una oración
-principal; por eso los huecos evaluables usan contextos donde la respuesta puede escribirse sin
-palabras congeladas. Perfekt distingue `haben` y `sein`, Plusquamperfekt y Futur II exigen dos
+principal. Los verbos separables son la excepción visual necesaria: el prefijo ya visible al
+final no se repite dentro del hueco y la instrucción dice que se escriba exactamente la parte
+ausente. Perfekt distingue `haben` y `sein`, Plusquamperfekt y Futur II exigen dos
 planos temporales, Futur I se reserva para predicción o compromiso explícito y cada imperativo
 muestra si la persona destinataria requiere `du`, `ihr` o `Sie`.
 
@@ -153,8 +168,12 @@ como recuperación y su huella no se presenta como material nuevo.
 ## Reglas contra falsos positivos
 
 - Un ejemplo contiene exactamente un marcador `___`.
-- Partículas, negación, auxiliares o componentes móviles pertenecen a la respuesta cuando su
-  posición es parte del objetivo.
+- Partículas, negación, auxiliares o componentes móviles pertenecen a la respuesta cuando ocupan
+  el hueco. Si una partícula separable ya está visible en su posición sintáctica, se evalúa solo
+  la parte finita y el guardián prohíbe duplicarla.
+- En el nivel 1, los cuatro candidatos pertenecen a la forma seleccionada y al mismo lema; la
+  decisión es morfológica, no una identificación encubierta de tiempos.
+- Los contextos de los niveles 1 y 2 tienen huellas distintas y provienen de bancos separados.
 - No se acepta similitud, autocorrección ni distancia de edición.
 - Mayúsculas no significativas, Unicode, apóstrofos y espacios se normalizan; las palabras no.
 - Japonés y coreano no dependen de espacios artificiales para validar una forma.

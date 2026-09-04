@@ -251,6 +251,49 @@ test('German exposes ten editorial challenges per form and level', () => {
   }
 })
 
+test('German Präsens level 1 tests agreement inside Präsens and does not recycle level 2', () => {
+  const choices = GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes('praesens'))
+  const micros = GERMAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === 'praesens'))
+  const paradigms = [
+    ['wohne', 'wohnst', 'wohnt', 'wohnen'],
+    ['lerne', 'lernst', 'lernt', 'lernen'],
+    ['trinke', 'trinkst', 'trinkt', 'trinken'],
+    ['koche', 'kochst', 'kocht', 'kochen'],
+    ['spiele', 'spielst', 'spielt', 'spielen'],
+    ['lese', 'liest', 'lest', 'lesen'],
+    ['stehe', 'stehst', 'steht', 'stehen'],
+    ['mache', 'machst', 'macht', 'machen'],
+    ['kaufe', 'kaufst', 'kauft', 'kaufen'],
+    ['fahre', 'fährst', 'fährt', 'fahren'],
+  ]
+
+  assert.equal(choices.length, paradigms.length)
+  choices.forEach((item, index) => assert.deepEqual([...item.options].sort(), [...paradigms[index]].sort(), item.id))
+
+  const choiceContexts = new Set(choices.map((item) => item.context.replace('___', '').toLocaleLowerCase('de')))
+  for (const item of micros) {
+    assert.ok(!choiceContexts.has(item.segments.join('').toLocaleLowerCase('de')), item.id)
+  }
+})
+
+test('German Präsens separable verbs keep the visible particle outside the answer', () => {
+  const separable = new Map([
+    ['aufstehen', 'auf'],
+    ['anrufen', 'an'],
+    ['fernsehen', 'fern'],
+    ['mitbringen', 'mit'],
+  ])
+  const micros = GERMAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === 'praesens'))
+
+  for (const item of micros) {
+    const gap = item.gaps[0]
+    const particle = separable.get(gap.verb)
+    if (!particle) continue
+    assert.match(item.segments[1], new RegExp(`\\b${particle}\\.`, 'iu'), item.id)
+    assert.ok(gap.answers.every((answer) => !answer.split(/\\s+/u).includes(particle)), item.id)
+  }
+})
+
 test('German final dossiers are autonomous and balance the four answer positions', () => {
   const positions = [0, 0, 0, 0]
   for (const form of GERMAN_STRUCTURE_QUEST.forms) {

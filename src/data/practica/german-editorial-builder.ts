@@ -1,5 +1,6 @@
 import {
   createStructureEditorialPack,
+  type StructureEditorialChoiceSeed,
   type StructureEditorialErrorSeed,
   type StructureEditorialFinalSeed,
   type StructureEditorialGapSeed,
@@ -9,6 +10,7 @@ import {
 import type { GermanFormId } from './german-structure-quest-config.ts'
 
 export type GermanEditorialMicroSeed = StructureEditorialMicroSeed
+export type GermanEditorialChoiceSeed = StructureEditorialChoiceSeed
 export type GermanEditorialGapSeed = StructureEditorialGapSeed
 export type GermanEditorialErrorSeed = StructureEditorialErrorSeed
 export type GermanEditorialSequenceSeed = StructureEditorialSequenceSeed
@@ -38,6 +40,7 @@ export function createGermanEditorialPack(input: {
   form: GermanFormId
   focus: string
   rule: string
+  choices?: GermanEditorialChoiceSeed[]
   micro: GermanEditorialMicroSeed[]
   long: GermanEditorialGapSeed[]
   errors: GermanEditorialErrorSeed[]
@@ -53,14 +56,14 @@ export function createGermanEditorialPack(input: {
     finalOffset: choiceOffset,
     ui: {
       choose: (cue) => `Wähle die vollständige Verbform für ${cue}.`,
-      write: (verb) => `Konjugiere „${verb}“ und schreibe die vollständige Verbgruppe.`,
+      write: (verb) => `Konjugiere „${verb}“ und schreibe genau die Form, die in die Lücke gehört.`,
       error: 'Wähle die einzige falsche Verbgruppe und schreibe sie vollständig richtig.',
       sequenceTitle: (index) => `Logische Abfolge · ${index}`,
       sequenceContext: ([first, second, third]) => `${first}. Danach: ${second}. Zum Schluss: ${third}.`,
       sequenceQuestion: (position) => `Welches Ereignis ${positionLabels[position]}?`,
       sequenceHint: 'Alle Optionen verwenden die Zielform. Entscheide nach Bedeutung und Ablauf, nicht nach einem einzelnen Hilfsverb.',
       sequenceExplanation: (answer) => `„${answer}“ passt an diese Stelle wegen des vollständigen Handlungsablaufs.`,
-      writtenSuffix: 'Der Kontext liefert alle Wörter außerhalb der verlangten Verbgruppe; trennbare Teile und Hilfsverben gehören zur Antwort, wenn sie Teil der Verbform sind.',
+      writtenSuffix: 'Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition.',
     },
   })
 }

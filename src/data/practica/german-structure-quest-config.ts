@@ -32,15 +32,15 @@ export const GERMAN_EDITORIAL_PACKS = [
 ]
 
 export const GERMAN_STRUCTURE_QUEST: TenseQuestConfig<GermanFormId> = {
-  id: 'german-structure-quest', storageKey: 'wl-german-structure-quest-v3', forms: GERMAN_FORMS,
+  id: 'german-structure-quest', storageKey: 'wl-german-structure-quest-v4', forms: GERMAN_FORMS,
   presets: [
     { label: 'Vergangenheit', ids: GERMAN_FORMS.filter((form) => form.group === 'Vergangenheit').map((form) => form.id) },
     { label: 'Zukunft', ids: GERMAN_FORMS.filter((form) => form.group === 'Zukunft').map((form) => form.id) },
     { label: 'Hypothese', ids: GERMAN_FORMS.filter((form) => form.group === 'Hypothese').map((form) => form.id) },
   ],
   levels: [
-    { number:'01', title:'Schnelle Wahl', short:'Im Kontext wählen', description:'Erkenne die vollständige Verbform anhand einer eindeutigen Funktion.' },
-    { number:'02', title:'Mikrotexte', short:'Verbgruppe bilden', description:'Schreibe Hilfsverb, Verbteil und Partikel vollständig.' },
+    { number:'01', title:'Schnelle Wahl', short:'Richtig konjugieren', description:'Wähle die passende Konjugation; alle vier Optionen stehen in der ausgewählten Form.' },
+    { number:'02', title:'Mikrotexte', short:'Form im Satz bilden', description:'Schreibe genau den fehlenden Teil. Sichtbare trennbare Zusätze bleiben an ihrer Satzposition.' },
     { number:'03', title:'Verbundene Szenen', short:'Drei Entscheidungen', description:'Ergänze drei Formen in einer zusammenhängenden Handlung.' },
     { number:'04', title:'Korrekturwerkstatt', short:'Finden und reparieren', description:'Finde die einzige falsche Verbgruppe und korrigiere sie.' },
     { number:'05', title:'Sinnvolle Abfolge', short:'Bedeutung rekonstruieren', description:'Ordne Ereignisse, obwohl alle Optionen dieselbe Zielform verwenden.' },
@@ -63,7 +63,7 @@ export const GERMAN_STRUCTURE_QUEST: TenseQuestConfig<GermanFormId> = {
     }
   }),
   copy: {
-    languageName:'Alemán', languageCode:'de', eyebrow:'Quiz de Zeitformen und Satzlogik · A2–B2', title:'Die Zeitwerkstatt',
+    languageName:'Alemán', languageCode:'de', eyebrow:'Quiz de Zeitformen und Satzlogik · A1–B2', title:'Die Zeitwerkstatt',
     lead:'Entrena tiempo, auxiliar, unidad verbal completa, orden sintáctico e hipótesis con diez decisiones reales por nivel.',
     range:'10 estructuras', selectedLabel:'Strukturen ausgewählt', selectorTitle:'¿Qué estructuras del alemán quieres practicar?',
     selectorLead:'Perfekt con haben y sein se separan; los compuestos se escriben completos y el imperativo siempre muestra el tratamiento.',

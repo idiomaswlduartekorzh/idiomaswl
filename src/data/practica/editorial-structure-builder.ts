@@ -16,6 +16,13 @@ export type StructureEditorialMicroSeed = {
   distractors: [string, string, string]
 }
 
+export type StructureEditorialChoiceSeed = {
+  cue: string
+  segments: [string, string]
+  answer: string
+  distractors: [string, string, string]
+}
+
 export type StructureEditorialGapSeed = {
   title: string
   instruction: string
@@ -67,6 +74,7 @@ type StructureEditorialPackInput<FormId extends string> = {
   focus: string
   rule: string
   ui: EditorialUi
+  choices?: StructureEditorialChoiceSeed[]
   micro: StructureEditorialMicroSeed[]
   long: StructureEditorialGapSeed[]
   errors: StructureEditorialErrorSeed[]
@@ -84,9 +92,15 @@ function rotate<T>(items: readonly T[], offset: number): T[] {
 export function createStructureEditorialPack<FormId extends string>(input: StructureEditorialPackInput<FormId>) {
   const prefix = `${input.namespace}-${input.slug}`
   const positions = input.choicePositions ?? [0, 1, 2, 3, 1, 2, 0, 1, 2, 3]
-  const choices: ChoiceChallenge<FormId>[] = input.micro.map((seed, index) => {
+  const choiceSeeds: StructureEditorialChoiceSeed[] = input.choices ?? input.micro.map((seed) => ({
+    cue: seed.cue,
+    segments: seed.segments,
+    answer: seed.answers[0],
+    distractors: seed.distractors,
+  }))
+  const choices: ChoiceChallenge<FormId>[] = choiceSeeds.map((seed, index) => {
     const options = [...seed.distractors]
-    options.splice(positions[index % positions.length], 0, seed.answers[0])
+    options.splice(positions[index % positions.length], 0, seed.answer)
     return {
       id: `${prefix}-choice-editorial-${index + 1}`,
       tenses: [input.form],
@@ -94,7 +108,7 @@ export function createStructureEditorialPack<FormId extends string>(input: Struc
       prompt: input.ui.choose(seed.cue),
       context: `${seed.segments[0]}___${seed.segments[1]}`,
       options,
-      answer: seed.answers[0],
+      answer: seed.answer,
       explanation: input.rule,
     }
   })
