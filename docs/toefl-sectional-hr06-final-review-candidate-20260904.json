@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "human-review-candidate",
+  "gateId": "HR-06",
+  "status": "PENDING_HUMAN_REVIEW",
+  "preparedAt": "2026-09-04",
+  "branch": "codex/toefl-sectional-seo-harness-20260831",
+  "snapshotCommit": "125bbe154e738f25a59b022f0e04598b0cbaf70f",
+  "implementationCommit": "f8395a0af9f17833fadaccf13832fb38ecc1bd21",
+  "originMainCommit": "96e817fcee534d70ef3039d8d2e68aa5b9a735d9",
+  "scope": {
+    "section": "TOEFL Listening",
+    "sets": [
+      "set-1",
+      "set-2",
+      "set-3",
+      "set-4",
+      "set-5",
+      "set-6",
+      "set-7",
+      "set-8",
+      "set-9",
+      "set-10",
+      "set-11",
+      "set-12",
+      "set-13",
+      "set-14",
+      "set-15",
+      "set-16",
+      "set-17",
+      "set-18",
+      "set-19",
+      "set-20"
+    ],
+    "requiredHumanSample": [
+      "set-1",
+      "set-5",
+      "set-10",
+      "set-15",
+      "set-20",
+      "set-9"
+    ],
+    "randomSample": {
+      "set": "set-9",
+      "selectionMethod": "crypto.randomInt entre los 15 sets no incluidos en la muestra fija",
+      "lockedBeforeReview": true
+    }
+  },
+  "alreadyApprovedSubscope": {
+    "set1OptionTextCandidateSha256": "6afedc554facae03c12103f7f238a0253292de9ea9d0b206fff44096e8f2ad5d",
+    "set1OrderCandidateSha256": "25cb54f3f6610376520904f4eb7ed549430bfb27f7fb276135f6e2a788219f42",
+    "limits": "Estas aprobaciones cubren únicamente las opciones de Set 1 y las permutaciones Q4/Q6/Q8; no cierran HR-06."
+  },
+  "requiredDecisions": [
+    {
+      "reviewType": "product",
+      "reviewer": null,
+      "requiredChecks": [
+        "identidad visual alineada con la memoria de Idiomas WeLearn",
+        "biblioteca y rutas intuitivas",
+        "recorrido, reanudación, resultados y retorno",
+        "móvil, teclado y foco visible",
+        "progreso y respuestas aislados entre sets"
+      ]
+    },
+    {
+      "reviewType": "academic",
+      "reviewer": null,
+      "requiredChecks": [
+        "audios completos de la muestra",
+        "instrucciones, opciones y corrección",
+        "cuatro familias de tareas",
+        "resultados brutos coherentes por set",
+        "disclosures fijo, no adaptativo y sin score oficial"
+      ]
+    }
+  ],
+  "technicalEvidence": {
+    "typescript": "PASS",
+    "unitTests": {
+      "status": "PASS",
+      "passed": 31,
+      "failed": 0
+    },
+    "runtime": {
+      "status": "PASS",
+      "validRoutes": "20/20",
+      "validScorers": "20/20",
+      "invalidRoutes": "4/4 returned 404",
+      "invalidPayload": "returned 400"
+    },
+    "browser": {
+      "status": "PASS_WITH_DOCUMENTED_LIMITS",
+      "newSet1Order": {
+        "q4": "D",
+        "q6": "D",
+        "q8": "B"
+      },
+      "legacyAttemptOrderPreserved": true,
+      "reloadPersistenceVerified": true,
+      "consoleErrorsOrWarnings": 0
+    },
+    "build": "PENDING_BEFORE_INTEGRATION"
+  },
+  "evidence": [
+    {
+      "path": "docs/toefl-sectional-hr06-review-packet.md",
+      "sha256": "5ea9cffb1751c5f26a73ff88e990010d7d8cc69ab8778b49797da94cfa279e93"
+    },
+    {
+      "path": "docs/toefl-sectional-hr06-evidence.json",
+      "sha256": "cea4f3cfff7bbb2de3ee8e0bf4c9c7acf5949da2b85d99c49c0328e980ac92da"
+    },
+    {
+      "path": "docs/toefl-sectional-hr06-runtime-evidence.json",
+      "sha256": "bc23fa1a03cab7f815838b693703acde5bc4089fb0ba7e0668ecb86d4d461ca5"
+    },
+    {
+      "path": "docs/toefl-listening-set1-order-browser-qa-20260904.md",
+      "sha256": "c449d64f38f16bba0433573d4f3c44ed4051f9a87b3c8c6930f462a36f175ef6"
+    },
+    {
+      "path": "docs/toefl-listening-order-runtime-qa-20260904.json",
+      "sha256": "d11976e2679682fb6708b142d916eb0967c4cd80b7ed32a43402cae5a5e427cf"
+    },
+    {
+      "path": "src/data/toefl/listening-option-order.ts",
+      "sha256": "f93c348bc55d1790216216c81a8debeae35d97a4e5cbe9dc262609fd1421b44a"
+    },
+    {
+      "path": "src/app/(site)/examenes/[exam]/practica/[mockId]/Toefl2026PracticeClient.tsx",
+      "sha256": "c1d605c2924bfc7081202f724fd21b1c1b2792231f72d059c7c4d5618bb015ad"
+    },
+    {
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/ToeflListeningSectionRunner.tsx",
+      "sha256": "268bfa014c0ebac1cfa704c604e437b8431e310a817ed601a5d95a5942aedaab"
+    },
+    {
+      "path": "scripts/check-toefl-sectional-listening-runtime.mjs",
+      "sha256": "f8e548330efbc55ecf3ca09fc199f1d39a07c41bc2378a46bc9ee4a3724fc38d"
+    }
+  ],
+  "controls": {
+    "c09": "BLOCKED",
+    "d9": "VISIBLE_DEBT_WITH_CONTROLS_UNCHANGED",
+    "d10": "RECONCILED_WITH_ORIGIN_MAIN_BEFORE_IMPLEMENTATION",
+    "productionModified": false,
+    "deployed": false,
+    "mergedToMain": false,
+    "nextGateAllowed": false
+  },
+  "approvalBinding": {
+    "requiredFields": [
+      "reviewer name",
+      "role",
+      "date",
+      "review type",
+      "sample actually completed",
+      "snapshot commit",
+      "candidate SHA-256"
+    ],
+    "silenceIsApproval": false,
+    "codexMayApprove": false
+  }
+}
