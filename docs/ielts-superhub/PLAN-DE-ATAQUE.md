@@ -593,11 +593,47 @@ La ejecución comenzó `2026-09-04T17:54:16.448Z`, terminó
 siguen en estado técnico `READY` pero con publicación `BLOCK`; este incremento no cambia
 ese gate. No se ha hecho push, merge, PR ni deploy.
 
-Próximo avance acotado: definir los adaptadores privados de matching/notes y las pruebas
-de su futura promoción, sin cambiar los rechazos del projector público, habilitar
-candidatas ni crear rutas.
-La escucha humana y la
-cuantificación de demanda siguen pendientes; el respaldo remoto requiere autorización.
+#### Adaptador privado de grupos matching/notes — 4 de septiembre de 2026
+
+`listening-private-draft-adapter.server.ts` establece una capa de acceso a datos
+`server-only` para la futura composición de los dos controles. Recibe exclusivamente la
+identidad mínima y un grupo privado, deriva el scope desde practice+group y devuelve un
+descriptor nuevo, plano y serializable. Matching conserva instrucción, opciones y prompts;
+notes conserva título, instrucción, secciones, indentación y contexto visible. Se omiten
+transcript, audio, hashes, claves, respuestas aceptadas y explicaciones.
+
+El adaptador no está importado por ninguna fuente, componente o ruta activa. No cambia el
+DTO público: las pruebas existentes siguen exigiendo que `projectIeltsListeningPractice`
+rechace matching y note completion. Un fixture TypeScript negativo falla si cualquiera de
+los dos discriminantes entra anticipadamente a `IeltsListeningPublicGroup`; por tanto,
+ninguna promoción parcial puede confundirse con este descriptor privado.
+
+La revisión adversarial encontró un P2 reproducible: un `Proxy` podía presentar
+descriptores planos y suministrar texto privado sólo al leerse durante la copia. Se cerró
+rechazando proxies mediante `node:util/types` antes de toda reflexión sobre objetos o
+arrays, incluidos proxies revocados. La regresión recorre envelope, grupo, opciones,
+preguntas, secciones, líneas, blanks y respuestas aceptadas, y exige cero traps `get` y un
+error genérico. No quedaron otros hallazgos concretos en fuga, alias, gate TypeScript,
+conexión activa o colisión de scope bajo el uso previsto.
+
+Evidencia final del incremento:
+
+- 10/10 pruebas nuevas del adaptador; 26/26 en la suite estrecha junto con contratos de
+  entrada y los dos rechazos públicos. TypeScript aislado y ESLint: exit 0.
+- `check:ielts:scope`, `check:ielts:truth` y `check:practica-catalog`: PASS. Alcance: 100
+  rutas frente a `origin/main`, ninguna TOEFL; 108 URLs, 77 páginas, 20 mocks, 480 audios
+  generales y 465 temas de gramática preservados.
+- Harness técnico `APPROVE`, nueve etapas PASS: 127 pruebas Listening, 15 Speaking y nueve
+  mutaciones. Ejecución `2026-09-04T18:26:38.306Z`–`2026-09-04T18:29:19.434Z`;
+  `latest-truth.json` SHA-256
+  `1eba7629542969f2de87119a469439445c370f25074004204b6b13609d61dfe0`.
+
+No se ejecutaron build global, navegador ni release harness: no existe una superficie de
+usuario nueva. Parts 2–4 conservan integridad PASS, preparación técnica READY y publicación
+BLOCK. Próximo avance seguro: una composición privada y sintética que consuma estos
+descriptores y reutilice los dos controles ya auditados, todavía sin conectar candidatas,
+rutas o DTO público. La escucha humana y la cuantificación de demanda siguen pendientes;
+el respaldo remoto requiere autorización. No hubo push, merge, PR ni deploy.
 
 El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
 el control automático y se solicitó autorización explícita para enviarlo al repositorio
