@@ -262,6 +262,9 @@ export default function JoseDashboard({ data }: { data: DashboardData }) {
 
         {/* CONTENT */}
         <main style={{ flex: 1, overflowY: 'auto', padding: '22px 24px', display: 'flex', flexDirection: 'column', gap: 14 }}>
+          <Link href="/dashboard/admin/contactos" style={{ alignSelf: 'flex-start', color: '#9b4e21', fontWeight: 700, fontSize: 14, padding: '10px 0' }}>
+            Origen de contactos WhatsApp →
+          </Link>
 
           {/* ── STUDENTS TAB ── */}
           {activeTab === 'students' && (

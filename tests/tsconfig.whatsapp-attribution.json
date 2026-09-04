@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": { "incremental": false },
+  "files": ["../node_modules/next/types/global.d.ts"],
+  "include": [
+    "../src/components/WhatsAppFloat.tsx",
+    "../src/lib/whatsapp/attribution.ts",
+    "../src/lib/whatsapp/attribution.server.ts",
+    "../src/components/WhatsAppAttribution.tsx",
+    "../src/app/api/whatsapp/attribution/route.ts",
+    "../src/app/(site)/dashboard/admin/contactos/**/*.tsx",
+    "../src/app/(site)/dashboard/admin/contactos/**/*.ts"
+  ],
+  "exclude": ["../node_modules"]
+}

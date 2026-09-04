@@ -1,4 +1,5 @@
 import { decideBotReply } from '@/lib/whatsapp/chatbot';
+import { recordMessageAttribution } from '@/lib/whatsapp/attribution.server';
 import {
   getWhatsAppAppSecret,
   getWhatsAppVerifyToken,
@@ -22,6 +23,7 @@ export const maxDuration = 30;
 const MAX_WEBHOOK_BYTES = 1_000_000;
 
 async function processInboundMessage(message: InboundWhatsAppMessage): Promise<void> {
+  await recordMessageAttribution(message);
   const conversation = await getOrCreateConversation(message);
   const claimed = await claimInboundMessage(message);
   if (!claimed) return;

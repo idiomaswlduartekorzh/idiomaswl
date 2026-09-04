@@ -43,6 +43,15 @@
     "japones"
   ],
   "protectedFiles": [
+    "src/components/WhatsAppAttribution.tsx",
+    "src/lib/whatsapp/attribution.ts",
+    "src/lib/whatsapp/attribution.server.ts",
+    "src/app/api/whatsapp/attribution/route.ts",
+    "src/app/(site)/dashboard/admin/contactos/page.tsx",
+    "src/app/(site)/dashboard/admin/contactos/actions.ts",
+    "src/app/(site)/dashboard/admin/contactos/ConfirmContact.tsx",
+    "src/app/(site)/dashboard/admin/contactos/contactos.module.css",
+    "supabase/migrations/20260904163657_whatsapp_contact_attribution.sql",
     "src/app/(site)/page.tsx",
     "src/components/SiteNav.tsx",
     "scripts/check-site-navigation.mjs",
