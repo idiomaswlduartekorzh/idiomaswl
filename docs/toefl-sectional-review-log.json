@@ -238,6 +238,58 @@
       ],
       "independentReview": true,
       "notes": "Aprobación académica explícita comunicada por David Duarte mediante la respuesta si a la pregunta confirmas que Zhanna también aprueba académicamente estas nuevas opciones. Alcance: las 34 preguntas de Listening Set 1 del candidato con este digest, incluido el riesgo residual documentado. No se extiende a los otros 19 sets, criterio de cribado, cierre de HR-06, identidad gráfica, integración ni despliegue. C09 permanece bloqueado; D9 conserva controles y D10 exige reconciliar main antes de implementar. Las aprobaciones ejecutiva y académica habilitan aplicar exactamente estas opciones y verificar su integración local, conservando claves, audios y orden."
+    },
+    {
+      "gateId": "HR-06-SET1-ORDER-PRODUCT",
+      "reviewer": "David Duarte",
+      "role": "product-owner-and-engineering-reviewer",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-04T16:38:26Z",
+      "timestampBasis": "Hora de registro, no hora humana proporcionada.",
+      "commitSha": "bc773314c250ca45ed9b1aa4218506bf11c0a178",
+      "contentDigest": "25cb54f3f6610376520904f4eb7ed549430bfb27f7fb276135f6e2a788219f42",
+      "contentDigestMethod": "SHA-256 de bytes del único evidencePath.",
+      "evidencePaths": [
+        "docs/toefl-listening-set1-order-candidate.json"
+      ],
+      "supportingEvidence": [
+        {
+          "path": "docs/toefl-listening-set1-order-review-draft.md",
+          "sha256": "b5e3ab490374c99b07aba9893c67b6ee788676a5ba5453c9dddb18d23b44a56e"
+        },
+        {
+          "path": "docs/toefl-listening-set1-order-evidence-draft.json",
+          "sha256": "02086e5ca54f1dbf5ff076dfd978fa08864a3a2e3a7a18b607c0e9c6801e8fd8"
+        }
+      ],
+      "independentReview": false,
+      "notes": "El usuario respondió confirmo a la solicitud de aprobación de David y Zhanna para el cambio de orden. Se aprueban únicamente las permutaciones de las preguntas 4, 6 y 8 del Set 1, con IDs/textos/claves intactos y orden versionado por intento: los ya iniciados conservan su orden. No se extiende a otros sets, cierre de HR-06, C09, identidad visual, integración ni despliegue. D9 conserva controles y D10 exige reconciliar main antes de implementar."
+    },
+    {
+      "gateId": "HR-06-SET1-ORDER-ACADEMIC",
+      "reviewer": "Zhanna Korzh",
+      "role": "academic-director",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-04T16:38:26Z",
+      "timestampBasis": "Hora de registro, no hora humana proporcionada.",
+      "commitSha": "bc773314c250ca45ed9b1aa4218506bf11c0a178",
+      "contentDigest": "25cb54f3f6610376520904f4eb7ed549430bfb27f7fb276135f6e2a788219f42",
+      "contentDigestMethod": "SHA-256 de bytes del único evidencePath.",
+      "evidencePaths": [
+        "docs/toefl-listening-set1-order-candidate.json"
+      ],
+      "supportingEvidence": [
+        {
+          "path": "docs/toefl-listening-set1-order-review-draft.md",
+          "sha256": "b5e3ab490374c99b07aba9893c67b6ee788676a5ba5453c9dddb18d23b44a56e"
+        },
+        {
+          "path": "docs/toefl-listening-set1-order-evidence-draft.json",
+          "sha256": "02086e5ca54f1dbf5ff076dfd978fa08864a3a2e3a7a18b607c0e9c6801e8fd8"
+        }
+      ],
+      "independentReview": true,
+      "notes": "El usuario respondió confirmo a la solicitud de aprobación de David y Zhanna para el cambio de orden. Se aprueban únicamente las permutaciones de las preguntas 4, 6 y 8 del Set 1, con IDs/textos/claves intactos y orden versionado por intento: los ya iniciados conservan su orden. No se extiende a otros sets, cierre de HR-06, C09, identidad visual, integración ni despliegue. D9 conserva controles y D10 exige reconciliar main antes de implementar."
     }
   ]
 }
