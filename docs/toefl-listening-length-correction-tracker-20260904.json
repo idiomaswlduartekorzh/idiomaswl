@@ -3,7 +3,7 @@
   "status": "IN_PROGRESS",
   "preparedAt": "2026-09-04",
   "branch": "codex/toefl-sectional-seo-harness-20260831",
-  "reconciledOriginMain": "09d82c990ec33a65d6203be59fbf1121ccccdbcb",
+  "reconciledOriginMain": "5af12736a991f3dc1ecbc5f691faf166f02299f9",
   "finding": "Human product review reported that correct answers still stand out by length across the sampled sets.",
   "baseline": {
     "questions": 680,
@@ -29,7 +29,7 @@
     {"set":2,"baselineCharsLongestRate":0.824,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set2-options-candidate.json","candidateSha256":"bd120b0705020c28d1d67915e799db144b480425f18d26640e9d8a161b23dab7"},
     {"set":3,"baselineCharsLongestRate":0.882,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set3-options-candidate.json","candidateSha256":"5bfb933ffd9cb5ef554ba66f3d8fe52807c137715e142cb4c571015b9b5dd1aa"},
     {"set":4,"baselineCharsLongestRate":0.824,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set4-options-candidate.json","candidateSha256":"08064b72dc286472704ad4e606ab5f080787b8168a2d3150b09290505d578d0e"},
-    {"set":5,"baselineCharsLongestRate":0.735,"status":"PENDING_CURATION"},
+    {"set":5,"baselineCharsLongestRate":0.735,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set5-options-candidate.json","candidateSha256":"50f61b8559e2220695788ef717d37103240e384b50679f04f4340cca2c11273c"},
     {"set":6,"baselineCharsLongestRate":0.779,"status":"PENDING_CURATION"},
     {"set":7,"baselineCharsLongestRate":0.853,"status":"PENDING_CURATION"},
     {"set":8,"baselineCharsLongestRate":0.809,"status":"PENDING_CURATION"},
