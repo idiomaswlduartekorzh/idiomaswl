@@ -150,6 +150,12 @@ Una fila solo pasa a `DESPLEGADO` cuando contiene:
 
 Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview.
 
+### Actualización TOEFL — 4 de septiembre de 2026
+
+| Trabajo | Rama / snapshot reconciliado | Base origin/main | Estado | Responsable / alcance | Entrega y pendiente |
+| --- | --- | --- | --- | --- | --- |
+| TOEFL sectional: orden de opciones Set 1 aprobado | `codex/toefl-sectional-seo-harness-20260831` / `1baa8706af276e3ba6760874d393957ca93603fd` antes del parche | `96e817fcee534d70ef3039d8d2e68aa5b9a735d9` | `EN_VALIDACION` | Codex; presentación y persistencia en runners seccional/completo. Compartidos: `package.json`, `Toefl2026PracticeClient.tsx`, registro central. | 19 pruebas y guardianes pasan. TypeScript interrumpido por recursos; navegador no validado; build pendiente. Sin migraciones ni despliegue. Integración aplazada; SHA main/deployment/smoke: no aplican. Ver [entrega técnica](toefl-listening-set1-order-implementation-20260904.md). |
+
 ## 10. Bitácora de ejecución
 
 ### 25 de agosto de 2026

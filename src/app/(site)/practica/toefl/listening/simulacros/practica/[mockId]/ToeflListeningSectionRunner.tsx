@@ -8,6 +8,7 @@ import { AudioPlayer } from '@/components/exam-runner/primitives';
 import type { MockSection, ToeflListeningSingleQuestion } from '@/data/mocks/types';
 import type { ToeflListeningSectionPractice } from '@/data/toefl/sectional-listening-adapter';
 import type { ToeflListeningScoreResult } from '@/lib/toefl/listening-contract';
+import { CURRENT_LISTENING_ORDER, LEGACY_LISTENING_ORDER, listeningDisplayOptions, restoreListeningOrderVersion, type ListeningOrderVersion } from '@/data/toefl/listening-option-order';
 
 import styles from './runner.module.css';
 
@@ -103,6 +104,7 @@ export default function ToeflListeningSectionRunner({
   );
   const storageKey = `wl:toefl:sectional:listening:${practice.sourceMockId}:v1`;
   const [phase, setPhase] = useState<Phase>('intro');
+  const [listeningOrderVersion, setListeningOrderVersion] = useState<ListeningOrderVersion>(LEGACY_LISTENING_ORDER);
   const [frameIndex, setFrameIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [startedMediaIds, setStartedMediaIds] = useState<string[]>([]);
@@ -137,8 +139,10 @@ export default function ToeflListeningSectionRunner({
           startedMediaIds?: string[];
           completedMediaIds?: string[];
           attemptId?: string;
+          listeningOrderVersion?: unknown;
         };
         if (saved.version === 1 && saved.attemptId) {
+          setListeningOrderVersion(restoreListeningOrderVersion(saved.listeningOrderVersion));
           const started = saved.startedMediaIds ?? [];
           setFrameIndex(Math.min(Math.max(saved.frameIndex ?? 0, 0), frames.length - 1));
           setAnswers(saved.answers ?? {});
@@ -159,6 +163,7 @@ export default function ToeflListeningSectionRunner({
     try {
       window.localStorage.setItem(storageKey, JSON.stringify({
         version: 1,
+        listeningOrderVersion,
         frameIndex,
         answers,
         startedMediaIds,
@@ -168,12 +173,14 @@ export default function ToeflListeningSectionRunner({
     } catch {
       // Practice remains usable when storage is unavailable.
     }
-  }, [answers, attemptId, completedMediaIds, frameIndex, hydrated, phase, startedMediaIds, storageKey]);
+  }, [answers, attemptId, completedMediaIds, frameIndex, hydrated, listeningOrderVersion, phase, startedMediaIds, storageKey]);
 
   const begin = useCallback(() => {
+    if (!hydrated) return;
+    setListeningOrderVersion(CURRENT_LISTENING_ORDER);
     setAttemptId(createAttemptId());
     setPhase('practice');
-  }, []);
+  }, [hydrated]);
 
   const scoreAttempt = useCallback(async () => {
     setPhase('scoring');
@@ -258,7 +265,7 @@ export default function ToeflListeningSectionRunner({
           </div>
           <p className={styles.disclosure}>{practice.disclosure}</p>
           <div className={styles.actions}>
-            <button type="button" onClick={begin}>Iniciar práctica <ArrowRight aria-hidden="true" /></button>
+            <button type="button" onClick={begin} disabled={!hydrated}>Iniciar práctica <ArrowRight aria-hidden="true" /></button>
             <Link href="/practica/toefl/listening/simulacros">Volver a la biblioteca</Link>
           </div>
         </section>
@@ -366,7 +373,7 @@ export default function ToeflListeningSectionRunner({
                 {question.text}
               </legend>
               <div>
-                {question.options.map((option) => (
+                {listeningDisplayOptions(question, listeningOrderVersion).map((option) => (
                   <label key={option.id}>
                     <input
                       type="radio"

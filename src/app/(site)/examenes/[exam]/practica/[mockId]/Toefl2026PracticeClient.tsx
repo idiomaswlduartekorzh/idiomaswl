@@ -15,6 +15,7 @@ import type { CompleteWordsScoreResult } from '@/data/toefl/complete-the-words-s
 import type { ToeflReadingScoreResult } from '@/lib/toefl/reading-contract';
 import type { ToeflBuildSentenceScoreResult } from '@/lib/toefl/build-sentence-contract';
 import type { ToeflListeningScoreResult } from '@/lib/toefl/listening-contract';
+import { CURRENT_LISTENING_ORDER, LEGACY_LISTENING_ORDER, listeningDisplayOptions, restoreListeningOrderVersion, type ListeningOrderVersion } from '@/data/toefl/listening-option-order';
 import BuildSentenceItem from '@/components/toefl/BuildSentenceItem';
 import { ReadingMultiChoiceGroup, ReadingSingleChoiceGroup } from '@/components/toefl/ReadingChoiceGroup';
 import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
@@ -132,13 +133,14 @@ interface AudioLifecycle {
   onPlaybackError: () => void;
 }
 
-function ListeningSingleView({ q, index, value, onChange, audio, responseEnabled = true }: {
+function ListeningSingleView({ q, index, value, onChange, audio, responseEnabled = true, orderVersion }: {
   q: ToeflListeningSingleQuestion;
   index: number;
   value: string | undefined;
   onChange: (optionId: string) => void;
   audio?: AudioLifecycle;
   responseEnabled?: boolean;
+  orderVersion: ListeningOrderVersion;
 }) {
   const blocked = q.mediaStatus === 'script-ready-audio-blocked';
   const waitingForAudio = !blocked && (!responseEnabled || (q.task === 'choose-response' && !audio?.completed));
@@ -164,7 +166,7 @@ function ListeningSingleView({ q, index, value, onChange, audio, responseEnabled
         {waitingForAudio && <p className="t26-section-note" role="status">Escucha el audio completo antes de responder.</p>}
         <p className="ielts-mcq__text">{q.text}</p>
         <div className="prac-options" role="radiogroup" aria-label={`Listening question ${index}`}>
-          {q.options.map((option) => (
+          {listeningDisplayOptions(q, orderVersion).map((option) => (
             <button
               key={option.id}
               type="button"
@@ -423,7 +425,7 @@ function renderQuestion(q: Question, index: number, ans: Answers, h: Handlers) {
         onFocus={h.onReadingFocus}
       />;
     case 'toefl-listening-single':
-      return <ListeningSingleView key={q.id} q={q} index={index} value={ans.listening[q.id]} onChange={(optionId) => h.onListening(q.id, optionId)} />;
+      return <ListeningSingleView key={q.id} q={q} index={index} value={ans.listening[q.id]} onChange={(optionId) => h.onListening(q.id, optionId)} orderVersion={h.listeningOrderVersion} />;
     case 'sentencebuild':
       return <SentenceBuildView key={q.id} q={q} order={ans.build[q.id] ?? []} onChange={o => h.onBuild(q.id, o)} />;
     case 'toefl-build-sentence':
@@ -555,6 +557,7 @@ function ForwardItemPanel({
           onChange={(optionId) => handlers.onListening(question.id, optionId)}
           audio={question.task === 'choose-response' ? audio : undefined}
           responseEnabled={blocked || Boolean(audio?.completed)}
+          orderVersion={handlers.listeningOrderVersion}
         />
       )}
       {question.type === 'repeat' && <RepeatView q={question} audio={audio} />}
@@ -719,6 +722,7 @@ function Results({ mock, exam, ans, wordScores, readingScore, listeningScore, bu
 // ── Handlers type ────────────────────────────────────────────────────────────────
 
 interface Handlers {
+  listeningOrderVersion: ListeningOrderVersion;
   onMCQ: (id: string, i: number) => void;
   onWord: (id: string, num: number, v: string) => void;
   onWordFocus: (inputId: string) => void;
@@ -746,6 +750,7 @@ function createClientId(prefix: string) {
 
 export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const [phase, setPhase] = useState<Phase>('intro');
+  const [listeningOrderVersion, setListeningOrderVersion] = useState<ListeningOrderVersion>(LEGACY_LISTENING_ORDER);
   const stages = useMemo(() => buildToeflFixedStages(mock), [mock]);
   const [stageIndex, setStageIndex] = useState(0);
   const [forwardItemIndex, setForwardItemIndex] = useState(0);
@@ -790,6 +795,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
           const saved = JSON.parse(raw) as {
             version?: number;
             attemptId?: string;
+            listeningOrderVersion?: unknown;
             ans?: Answers;
             wordScores?: WordScoreMap;
             readingScore?: ToeflReadingScoreResult;
@@ -806,6 +812,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
             lastBuildFocusId?: string;
           };
           if ([1, 2, 3, 4].includes(saved.version ?? 0) && saved.attemptId && saved.ans) {
+            setListeningOrderVersion(restoreListeningOrderVersion(saved.listeningOrderVersion));
             setAttemptId(saved.attemptId);
             setAns({
               ...EMPTY,
@@ -865,6 +872,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     try {
       window.localStorage.setItem(storageKey, JSON.stringify({
         version: 4,
+        listeningOrderVersion,
         attemptId,
         ans,
         wordScores,
@@ -883,7 +891,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
     } catch {
       // Anonymous practice continues without local restoration.
     }
-  }, [ans, attemptId, buildScore, completedMediaIds, forwardItemIndex, hydrated, lastBuildFocusId, lastReadingFocusId, lastWordFocusId, listeningScore, phase, readingScore, stageDeadlineAt, stageIndex, startedMediaIds, storageKey, wordScores]);
+  }, [ans, attemptId, buildScore, completedMediaIds, forwardItemIndex, hydrated, lastBuildFocusId, lastReadingFocusId, lastWordFocusId, listeningOrderVersion, listeningScore, phase, readingScore, stageDeadlineAt, stageIndex, startedMediaIds, storageKey, wordScores]);
 
   useEffect(() => {
     if (phase !== 'exam') return;
@@ -895,6 +903,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   }, [lastBuildFocusId, lastReadingFocusId, lastWordFocusId, phase, stageIndex, stages]);
 
   const handlers: Handlers = {
+    listeningOrderVersion,
     onMCQ: useCallback((id, i) => setAns(p => ({ ...p, mcq: { ...p.mcq, [id]: i } })), []),
     onWord: useCallback((id, num, v) => setAns(p => ({ ...p, word: { ...p.word, [id]: { ...(p.word[id] ?? {}), [num]: v } } })), []),
     onWordFocus: useCallback((inputId) => setLastWordFocusId(inputId), []),
@@ -1099,12 +1108,14 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
   }, [storageKey]);
 
   const beginExam = useCallback(() => {
+    if (!hydrated) return;
+    setListeningOrderVersion(CURRENT_LISTENING_ORDER);
     const firstStage = stages[0];
     setStageIndex(0);
     setForwardItemIndex(0);
     setStageDeadlineAt(firstStage?.timeLimitSeconds ? Date.now() + firstStage.timeLimitSeconds * 1000 : null);
     setPhase('exam');
-  }, [stages]);
+  }, [hydrated, stages]);
 
   const closeStage = useCallback(async (expired = false) => {
     const activeStage = stages[stageIndex];
@@ -1231,7 +1242,7 @@ export default function Toefl2026PracticeClient({ exam, mock }: { exam: Exam; mo
               {blockedAudioItems > 0 && ' Los ítems sin medio se muestran sólo para revisión y no se califican.'}
             </p>
           </div>
-          <button className="btn prac-intro__start" onClick={beginExam}>Empezar práctica fija</button>
+          <button className="btn prac-intro__start" onClick={beginExam} disabled={!hydrated}>Empezar práctica fija</button>
           <Link href={`/examenes/${exam.slug}`} className="prac-intro__back">Volver a {exam.name}</Link>
         </div>
       </div>
