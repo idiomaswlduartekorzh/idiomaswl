@@ -20,6 +20,10 @@ export type GermanCompactMicro = [
   title: string, cue: string, before: string, after: string, verb: string,
   answer: string, distractor1: string, distractor2: string, distractor3: string,
 ]
+export type GermanCompactChoice = [
+  cue: string, before: string, after: string,
+  answer: string, distractor1: string, distractor2: string, distractor3: string,
+]
 export type GermanCompactStory = [
   title: string,
   segments: [string, string, string, string],
@@ -73,10 +77,15 @@ export function createGermanCompactPack(input: {
   form: GermanFormId
   focus: string
   rule: string
+  choices: GermanCompactChoice[]
   micro: GermanCompactMicro[]
   stories: GermanCompactStory[]
   final: GermanCompactFinal[]
 }) {
+  const choices: GermanEditorialChoiceSeed[] = input.choices.map(([cue, before, after, answer, ...distractors]) => ({
+    cue, segments: [before, after], answer,
+    distractors: distractors as [string, string, string],
+  }))
   const micro: GermanEditorialMicroSeed[] = input.micro.map(([title, cue, before, after, verb, answer, ...distractors]) => ({
     title, cue, segments: [before, after], verb, answers: [answer],
     distractors: distractors as [string, string, string],
@@ -100,5 +109,5 @@ export function createGermanCompactPack(input: {
   const final: GermanEditorialFinalSeed[] = input.final.map(([before, after, answer, ...distractors]) => ({
     before, after, answer, distractors: distractors as [string, string, string],
   }))
-  return createGermanEditorialPack({ ...input, micro, long, errors, sequences, final })
+  return createGermanEditorialPack({ ...input, choices, micro, long, errors, sequences, final })
 }

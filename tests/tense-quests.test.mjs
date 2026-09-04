@@ -294,6 +294,35 @@ test('German Präsens separable verbs keep the visible particle outside the answ
   }
 })
 
+test('Every German level 1 bank is independent from level 2', () => {
+  for (const form of GERMAN_STRUCTURE_QUEST.forms) {
+    const choices = GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(form.id))
+    const micros = GERMAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === form.id))
+    const levelOneContexts = new Set(choices.map((item) => item.context.replace('___', '').toLocaleLowerCase('de')))
+    for (const item of micros) assert.ok(!levelOneContexts.has(item.segments.join('').toLocaleLowerCase('de')), `${form.id}/${item.id}`)
+  }
+})
+
+test('German compound level 1 distractors stay inside the selected construction', () => {
+  const endings = new Map([
+    ['perfekt-haben', /\b(?:habe|hast|hat|haben|habt)$/iu],
+    ['perfekt-sein', /\b(?:bin|bist|ist|sind|seid)$/iu],
+    ['plusquamperfekt', /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/iu],
+    ['futur-eins', /\b(?:werde|wirst|wird|werden|werdet)$/iu],
+    ['futur-zwei', /\b(?:werde|wirst|wird|werden|werdet)$/iu],
+    ['wuerde-form', /\b(?:würde|würdest|würden|würdet)$/iu],
+    ['konjunktiv-vergangenheit', /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/iu],
+  ])
+
+  for (const [formId, ending] of endings) {
+    const choices = GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(formId))
+    for (const item of choices) {
+      assert.ok(item.options.every((option) => ending.test(option)), item.id)
+      assert.equal(new Set(item.options.map((option) => option.replace(ending, '').trim())).size, 1, item.id)
+    }
+  }
+})
+
 test('German final dossiers are autonomous and balance the four answer positions', () => {
   const positions = [0, 0, 0, 0]
   for (const form of GERMAN_STRUCTURE_QUEST.forms) {

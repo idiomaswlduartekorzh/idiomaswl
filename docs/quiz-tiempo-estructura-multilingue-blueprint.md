@@ -15,12 +15,12 @@ concordancia o construcción. Nivel 1 y nivel 2 tienen bancos editoriales separa
 un verbo separable muestra el prefijo en su posición real y el hueco evalúa la parte finita;
 nunca se inserta una respuesta contigua que duplique el prefijo.
 
-Estado de migración de este contrato: `Präsens` alemán es el primer banco conforme y está
-protegido por regresiones morfológicas, de independencia entre niveles y de partículas
-separables. Los demás bancos conservan temporalmente la compatibilidad anterior del constructor;
-no se declaran conformes hasta recibir distractores del mismo paradigma y escenas propias por
-nivel. La migración se hace forma por forma porque ruso, japonés y coreano requieren guardianes
-de aspecto, construcción y registro, no una copia de la flexión europea.
+Estado de migración de este contrato: las diez formas alemanas son conformes y están protegidas
+por regresiones morfológicas, de independencia entre niveles y de partículas separables. Los
+demás idiomas conservan temporalmente la compatibilidad anterior del constructor; no se declaran
+conformes hasta recibir distractores de su propio paradigma y escenas propias por nivel. La
+migración se hace forma por forma porque ruso, japonés y coreano requieren guardianes de aspecto,
+construcción y registro, no una copia de la flexión europea.
 
 Actualización italiana (28 de agosto de 2026): las trece formas usan bancos editoriales
 independientes en los niveles 2–5 y diez escenas finales distintas del nivel 1. El motor admite

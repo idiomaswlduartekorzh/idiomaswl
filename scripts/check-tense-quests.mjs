@@ -460,6 +460,22 @@ for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
   assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `german/${formId}: se requieren 10 reparaciones de tres verbos`)
   assert(pack.timelines.length === 10 && pack.finalGaps.length === 10, `german/${formId}: faltan secuencias o decisiones finales`)
   for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido alemán heredado`)
+  const levelOneContexts = new Set(pack.choices.map((item) => item.context.replace('___', '').toLocaleLowerCase('de')))
+  for (const item of pack.micro) assert(!levelOneContexts.has(item.segments.join('').toLocaleLowerCase('de')), `${item.id}: el nivel 2 no puede reciclar la escena del nivel 1`)
+}
+
+const germanCompoundChoiceEndings = new Map([
+  [1, /\b(?:habe|hast|hat|haben|habt)$/iu], [2, /\b(?:bin|bist|ist|sind|seid)$/iu],
+  [4, /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/iu],
+  [5, /\b(?:werde|wirst|wird|werden|werdet)$/iu], [6, /\b(?:werde|wirst|wird|werden|werdet)$/iu],
+  [7, /\b(?:würde|würdest|würden|würdet)$/iu], [8, /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/iu],
+])
+for (const [packIndex, ending] of germanCompoundChoiceEndings) {
+  for (const item of GERMAN_EDITORIAL_PACKS[packIndex].choices) {
+    assert(item.options.every((option) => ending.test(option)), `${item.id}: un distractor salió de la forma alemana seleccionada`)
+    const lexicalUnits = new Set(item.options.map((option) => option.replace(ending, '').trim()))
+    assert(lexicalUnits.size === 1, `${item.id}: los cuatro candidatos deben conservar el mismo verbo o construcción`)
+  }
 }
 
 const germanPresentParadigms = [

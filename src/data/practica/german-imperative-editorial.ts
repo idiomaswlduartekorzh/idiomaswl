@@ -1,4 +1,16 @@
-import { createGermanCompactPack, type GermanCompactFinal, type GermanCompactMicro, type GermanCompactStory } from './german-editorial-builder.ts'
+import { createGermanCompactPack, type GermanCompactChoice, type GermanCompactFinal, type GermanCompactMicro, type GermanCompactStory } from './german-editorial-builder.ts'
+const choices: GermanCompactChoice[] = [
+  ['eine Aufforderung an Paul','Paul, ', ' bitte her!','komm','kommt','kommen Sie','kommen wir'],
+  ['eine Aufforderung an zwei Kinder','Kinder, ', ' bitte leise!','seid','sei','seien Sie','seien wir'],
+  ['eine höfliche Aufforderung an Frau Klein','Frau Klein, ', ' bitte kurz!','warten Sie','warte','wartet','warten wir'],
+  ['eine Aufforderung an Nora','Nora, ', ' bitte das Fenster!','öffne','öffnet','öffnen Sie','öffnen wir'],
+  ['eine Aufforderung an mehrere Freunde','Freunde, ', ' bitte langsam!','fahrt','fahr','fahren Sie','fahren wir'],
+  ['eine höfliche Aufforderung an Herrn Wolf','Herr Wolf, ', ' bitte hier Platz!','nehmen Sie','nimm','nehmt','nehmen wir'],
+  ['eine Aufforderung an Amir','Amir, ', ' bitte ehrlich!','sei','seid','seien Sie','seien wir'],
+  ['eine Aufforderung an zwei Spieler','Spieler, ', ' bitte Wasser!','trinkt','trink','trinken Sie','trinken wir'],
+  ['eine höfliche Aufforderung an Frau Koch','Frau Koch, ', ' bitte die Tür!','schließen Sie','schließ','schließt','schließen wir'],
+  ['eine Aufforderung an Lea','Lea, ', ' bitte deinen Ausweis mit!','nimm','nehmt','nehmen Sie','nehmen wir'],
+]
 const micro: GermanCompactMicro[] = [
   ['Langsamer sprechen','eine Aufforderung an Paul mit „du“','Paul, ', ' bitte langsamer!','sprechen','sprich','sprecht','sprechen Sie','spricht'],['Am Empfang','eine höfliche Aufforderung an Frau Berger mit „Sie“','Frau Berger, ', ' bitte hier Platz!','nehmen','nehmen Sie','nimm','nehmt','nimmt'],['Vorsicht, Kinder','eine Aufforderung an mehrere Kinder mit „ihr“','Kinder, ', ' bitte vorsichtig!','sein','seid','sei','seien Sie','sind'],['Die Tür','eine Aufforderung an Nora mit „du“','Nora, ', ' bitte die Tür!','schließen','schließ','schließt','schließen Sie','geschlossen'],['Der Lageplan','eine höfliche Aufforderung an die Besucher mit „Sie“','Meine Damen und Herren, ', ' bitte dem markierten Weg!','folgen','folgen Sie','folge','folgt','folgen'],['Die Taschenlampen','eine Aufforderung an zwei Freunde mit „ihr“','Lina und Paul, ', ' eure Taschenlampen mit!','mitnehmen','nehmt mit','nimm mit','nehmen Sie mit','mitgenommen'],['Ruhig bleiben','eine Aufforderung an Amir mit „du“','Amir, ', ' bitte ruhig!','bleiben','bleib','bleibt','bleiben Sie','geblieben'],['Das Formular','eine höfliche Aufforderung an Herrn Klein mit „Sie“','Herr Klein, ', ' bitte dieses Formular aus!','ausfüllen','füllen Sie aus','füll aus','füllt aus','ausgefüllt'],['Der Ball','eine Aufforderung an mehrere Spieler mit „ihr“','Spieler, ', ' den Ball schneller ab!','abgeben','gebt ab','gib ab','geben Sie ab','abgegeben'],['Nicht vergessen','eine Aufforderung an Lea mit „du“','Lea, ', ' deinen Ausweis nicht!','vergessen','vergiss','vergesst','vergessen Sie','vergisst'],
 ]
@@ -8,4 +20,4 @@ const stories: GermanCompactStory[] = [
 const final: GermanCompactFinal[] = [
   ['Paul, ', ' bitte sofort her!','komm','kommt','kommen Sie','gekommen'],['Frau Winter, ', ' bitte das Fenster!','öffnen Sie','öffne','öffnet','geöffnet'],['Kinder, ', ' eure Hefte auf!','schlagt','schlag','schlagen Sie','geschlagen'],['Nora, ', ' bitte ehrlich!','sei','seid','seien Sie','bist'],['Herr Bauer, ', ' hier rechts ab!','biegen Sie','bieg','biegt','abgebogen'],['Ihr beiden, ', ' bitte leiser!','sprecht','sprich','sprechen Sie','gesprochen'],['Amir, ', ' deinen Schlüssel mit!','nimm','nehmt','nehmen Sie','genommen'],['Frau Koch, ', ' bitte kurz!','warten Sie','warte','wartet','gewartet'],['Spieler, ', ' euch in zwei Reihen auf!','stellt','stell','stellen Sie','gestellt'],['Lea, ', ' das Licht aus!','mach','macht','machen Sie','gemacht'],
 ]
-export const GERMAN_IMPERATIVE_EDITORIAL = createGermanCompactPack({ slug:'imperativ', form:'imperativ', focus:'Imperativ', rule:'Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen.', micro, stories, final })
+export const GERMAN_IMPERATIVE_EDITORIAL = createGermanCompactPack({ slug:'imperativ', form:'imperativ', focus:'Imperativ', rule:'Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen.', choices, micro, stories, final })
