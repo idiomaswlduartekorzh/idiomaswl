@@ -1,0 +1,260 @@
+{
+  "status": "draft-tested-not-approved-or-applied",
+  "candidateSha256": "25cb54f3f6610376520904f4eb7ed549430bfb27f7fb276135f6e2a788219f42",
+  "tests": {
+    "scoredOptions": 136,
+    "unchangedIdTextPairs": 136,
+    "invalidPermutationsRejected": 3,
+    "inputNotMutated": true
+  },
+  "before": {
+    "firstFive": {
+      "questions": 5,
+      "distribution": {
+        "A": 3,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      }
+    },
+    "firstEight": {
+      "questions": 8,
+      "distribution": {
+        "A": 4,
+        "B": 1,
+        "C": 3,
+        "D": 0
+      }
+    },
+    "fullSet": {
+      "questions": 34,
+      "distribution": {
+        "A": 10,
+        "B": 7,
+        "C": 10,
+        "D": 7
+      }
+    }
+  },
+  "after": {
+    "firstFive": {
+      "questions": 5,
+      "distribution": {
+        "A": 2,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      }
+    },
+    "firstEight": {
+      "questions": 8,
+      "distribution": {
+        "A": 2,
+        "B": 2,
+        "C": 2,
+        "D": 2
+      }
+    },
+    "fullSet": {
+      "questions": 34,
+      "distribution": {
+        "A": 8,
+        "B": 8,
+        "C": 9,
+        "D": 9
+      }
+    }
+  },
+  "changedItems": [
+    {
+      "id": "item:t1-l-cr4-fixed-v1",
+      "questionNumber": 4,
+      "correctLabelBefore": "A",
+      "correctLabelAfter": "D",
+      "correctOptionId": "item:t1-l-cr4-fixed-v1:option-a",
+      "proposedDisplay": [
+        {
+          "label": "A",
+          "id": "item:t1-l-cr4-fixed-v1:option-d",
+          "text": "The speaker asked us to arrive early."
+        },
+        {
+          "label": "B",
+          "id": "item:t1-l-cr4-fixed-v1:option-b",
+          "text": "The workshop covered a different topic."
+        },
+        {
+          "label": "C",
+          "id": "item:t1-l-cr4-fixed-v1:option-c",
+          "text": "I sent my application in last Tuesday."
+        },
+        {
+          "label": "D",
+          "id": "item:t1-l-cr4-fixed-v1:option-a",
+          "text": "Of course—I'll email you the details."
+        }
+      ]
+    },
+    {
+      "id": "item:t1-l-m1-cr6-v1",
+      "questionNumber": 6,
+      "correctLabelBefore": "C",
+      "correctLabelAfter": "D",
+      "correctOptionId": "item:t1-l-m1-cr6-v1:option-c",
+      "proposedDisplay": [
+        {
+          "label": "A",
+          "id": "item:t1-l-m1-cr6-v1:option-a",
+          "text": "The tutoring session lasts an hour."
+        },
+        {
+          "label": "B",
+          "id": "item:t1-l-m1-cr6-v1:option-b",
+          "text": "I went there to study yesterday."
+        },
+        {
+          "label": "C",
+          "id": "item:t1-l-m1-cr6-v1:option-d",
+          "text": "Your tutor called this morning."
+        },
+        {
+          "label": "D",
+          "id": "item:t1-l-m1-cr6-v1:option-c",
+          "text": "It's across from the main library."
+        }
+      ]
+    },
+    {
+      "id": "item:t1-l-m1-cr8-v1",
+      "questionNumber": 8,
+      "correctLabelBefore": "A",
+      "correctLabelAfter": "B",
+      "correctOptionId": "item:t1-l-m1-cr8-v1:option-a",
+      "proposedDisplay": [
+        {
+          "label": "A",
+          "id": "item:t1-l-m1-cr8-v1:option-b",
+          "text": "This bag has a pocket for my watch."
+        },
+        {
+          "label": "B",
+          "id": "item:t1-l-m1-cr8-v1:option-a",
+          "text": "Not at all. I'll keep an eye on it."
+        },
+        {
+          "label": "C",
+          "id": "item:t1-l-m1-cr8-v1:option-c",
+          "text": "I bought my bag at the station."
+        },
+        {
+          "label": "D",
+          "id": "item:t1-l-m1-cr8-v1:option-d",
+          "text": "The café closes in a few minutes."
+        }
+      ]
+    }
+  ],
+  "lengthScreen": {
+    "before": {
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 5,
+          "tied": 13,
+          "expectedRate": 0.2867647058823529,
+          "firstRate": 0.2647058823529412,
+          "flagged": false
+        },
+        "words_shortest": {
+          "unique": 5,
+          "tied": 7,
+          "expectedRate": 0.21813725490196081,
+          "firstRate": 0.23529411764705882,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 8,
+          "tied": 4,
+          "expectedRate": 0.28431372549019607,
+          "firstRate": 0.29411764705882354,
+          "flagged": false
+        },
+        "chars_shortest": {
+          "unique": 13,
+          "tied": 2,
+          "expectedRate": 0.4117647058823529,
+          "firstRate": 0.4117647058823529,
+          "flagged": false
+        }
+      }
+    },
+    "after": {
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 5,
+          "tied": 13,
+          "expectedRate": 0.2867647058823529,
+          "firstRate": 0.23529411764705882,
+          "flagged": false
+        },
+        "words_shortest": {
+          "unique": 5,
+          "tied": 7,
+          "expectedRate": 0.21813725490196081,
+          "firstRate": 0.23529411764705882,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 8,
+          "tied": 4,
+          "expectedRate": 0.28431372549019607,
+          "firstRate": 0.2647058823529412,
+          "flagged": false
+        },
+        "chars_shortest": {
+          "unique": 13,
+          "tied": 2,
+          "expectedRate": 0.4117647058823529,
+          "firstRate": 0.38235294117647056,
+          "flagged": false
+        }
+      }
+    }
+  },
+  "caveat": "Exact quotas here describe one editorial proposal, not a general fixed quota rule, significance test, randomization strategy or certification of absence of bias. Existing attempts need explicit order-version compatibility before implementation.",
+  "sourceHashes": [
+    {
+      "path": "src/data/mocks/toefl-set-1.ts",
+      "sha256": "fea4118e98d05ed877e04ead8fe7c5e3651d28b533df8d32c76f0ea732f70254"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-1-5.ts",
+      "sha256": "d68683e726549a6192526afff91891b97f16ab28ecde341e1e06ab10032f8529"
+    },
+    {
+      "path": "src/data/mocks/toefl-fixed-form.ts",
+      "sha256": "4dbe1f021af465519c88d647469dd98518c84ce49e6e42b0929f006506285e89"
+    },
+    {
+      "path": "src/lib/toefl/listening-contract.ts",
+      "sha256": "035753ef81e2a14b9425cbe1e7ac330a837e0cb3492a7d83dca62a73b4fe2839"
+    },
+    {
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/ToeflListeningSectionRunner.tsx",
+      "sha256": "ddcd0bab4bb515275aa018ff8ddb456785178731146248ea68f8efb6917ffb19"
+    },
+    {
+      "path": "docs/toefl-listening-set1-options-candidate.json",
+      "sha256": "6afedc554facae03c12103f7f238a0253292de9ea9d0b206fff44096e8f2ad5d"
+    },
+    {
+      "path": "docs/toefl-listening-set1-order-check-draft.mjs",
+      "sha256": "9d3482edc5849d3078a676f4ca159934ab2a9090b5b2a49d1a6fd39c1a30551b"
+    }
+  ]
+}
