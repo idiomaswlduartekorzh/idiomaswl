@@ -1,0 +1,634 @@
+{
+  "status": "diagnostic-draft-not-human-approval",
+  "scope": "Current USB branch; 20 normalized Listening sets, 34 items each; not verified deployed production.",
+  "definitions": {
+    "unique": "Correct option strictly longer than all distractors; ties excluded.",
+    "words": "English alphabetic tokens with optional straight/curly apostrophes.",
+    "chars": "NFC Unicode code points in trimmed text, including internal spaces and punctuation.",
+    "heuristic": "Choose longest; break ties by first displayed option. Deterministic calculation, not learner results."
+  },
+  "overall": {
+    "questions": 680,
+    "uniqueWords": 513,
+    "tiedWords": 84,
+    "uniqueChars": 552,
+    "tiedChars": 16,
+    "firstLongestWordsWins": 548,
+    "firstLongestCharsWins": 560,
+    "largeAdvantage": 156
+  },
+  "bySet": [
+    {
+      "set": 1,
+      "questions": 34,
+      "uniqueWords": 29,
+      "tiedWords": 1,
+      "uniqueChars": 29,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 30,
+      "firstLongestCharsWins": 29,
+      "largeAdvantage": 8
+    },
+    {
+      "set": 2,
+      "questions": 34,
+      "uniqueWords": 27,
+      "tiedWords": 5,
+      "uniqueChars": 28,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 29,
+      "firstLongestCharsWins": 28,
+      "largeAdvantage": 12
+    },
+    {
+      "set": 3,
+      "questions": 34,
+      "uniqueWords": 29,
+      "tiedWords": 3,
+      "uniqueChars": 30,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 31,
+      "firstLongestCharsWins": 30,
+      "largeAdvantage": 8
+    },
+    {
+      "set": 4,
+      "questions": 34,
+      "uniqueWords": 28,
+      "tiedWords": 2,
+      "uniqueChars": 28,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 28,
+      "firstLongestCharsWins": 28,
+      "largeAdvantage": 11
+    },
+    {
+      "set": 5,
+      "questions": 34,
+      "uniqueWords": 23,
+      "tiedWords": 5,
+      "uniqueChars": 25,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 26,
+      "firstLongestCharsWins": 25,
+      "largeAdvantage": 3
+    },
+    {
+      "set": 6,
+      "questions": 34,
+      "uniqueWords": 23,
+      "tiedWords": 5,
+      "uniqueChars": 26,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 26,
+      "firstLongestCharsWins": 26,
+      "largeAdvantage": 4
+    },
+    {
+      "set": 7,
+      "questions": 34,
+      "uniqueWords": 29,
+      "tiedWords": 3,
+      "uniqueChars": 28,
+      "tiedChars": 2,
+      "firstLongestWordsWins": 30,
+      "firstLongestCharsWins": 28,
+      "largeAdvantage": 4
+    },
+    {
+      "set": 8,
+      "questions": 34,
+      "uniqueWords": 25,
+      "tiedWords": 4,
+      "uniqueChars": 27,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 25,
+      "firstLongestCharsWins": 27,
+      "largeAdvantage": 8
+    },
+    {
+      "set": 9,
+      "questions": 34,
+      "uniqueWords": 25,
+      "tiedWords": 5,
+      "uniqueChars": 29,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 27,
+      "firstLongestCharsWins": 30,
+      "largeAdvantage": 7
+    },
+    {
+      "set": 10,
+      "questions": 34,
+      "uniqueWords": 27,
+      "tiedWords": 2,
+      "uniqueChars": 27,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 28,
+      "firstLongestCharsWins": 27,
+      "largeAdvantage": 12
+    },
+    {
+      "set": 11,
+      "questions": 34,
+      "uniqueWords": 27,
+      "tiedWords": 5,
+      "uniqueChars": 30,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 30,
+      "firstLongestCharsWins": 30,
+      "largeAdvantage": 8
+    },
+    {
+      "set": 12,
+      "questions": 34,
+      "uniqueWords": 26,
+      "tiedWords": 4,
+      "uniqueChars": 27,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 28,
+      "firstLongestCharsWins": 28,
+      "largeAdvantage": 9
+    },
+    {
+      "set": 13,
+      "questions": 34,
+      "uniqueWords": 26,
+      "tiedWords": 5,
+      "uniqueChars": 27,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 29,
+      "firstLongestCharsWins": 27,
+      "largeAdvantage": 8
+    },
+    {
+      "set": 14,
+      "questions": 34,
+      "uniqueWords": 22,
+      "tiedWords": 8,
+      "uniqueChars": 28,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 26,
+      "firstLongestCharsWins": 29,
+      "largeAdvantage": 5
+    },
+    {
+      "set": 15,
+      "questions": 34,
+      "uniqueWords": 24,
+      "tiedWords": 4,
+      "uniqueChars": 27,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 25,
+      "firstLongestCharsWins": 28,
+      "largeAdvantage": 6
+    },
+    {
+      "set": 16,
+      "questions": 34,
+      "uniqueWords": 23,
+      "tiedWords": 5,
+      "uniqueChars": 26,
+      "tiedChars": 2,
+      "firstLongestWordsWins": 24,
+      "firstLongestCharsWins": 27,
+      "largeAdvantage": 8
+    },
+    {
+      "set": 17,
+      "questions": 34,
+      "uniqueWords": 24,
+      "tiedWords": 5,
+      "uniqueChars": 26,
+      "tiedChars": 1,
+      "firstLongestWordsWins": 26,
+      "firstLongestCharsWins": 27,
+      "largeAdvantage": 7
+    },
+    {
+      "set": 18,
+      "questions": 34,
+      "uniqueWords": 26,
+      "tiedWords": 3,
+      "uniqueChars": 25,
+      "tiedChars": 3,
+      "firstLongestWordsWins": 26,
+      "firstLongestCharsWins": 27,
+      "largeAdvantage": 11
+    },
+    {
+      "set": 19,
+      "questions": 34,
+      "uniqueWords": 24,
+      "tiedWords": 6,
+      "uniqueChars": 29,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 27,
+      "firstLongestCharsWins": 29,
+      "largeAdvantage": 8
+    },
+    {
+      "set": 20,
+      "questions": 34,
+      "uniqueWords": 26,
+      "tiedWords": 4,
+      "uniqueChars": 30,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 27,
+      "firstLongestCharsWins": 30,
+      "largeAdvantage": 9
+    }
+  ],
+  "byOrigin": [
+    {
+      "origin": "legacy",
+      "questions": 300,
+      "uniqueWords": 273,
+      "tiedWords": 14,
+      "uniqueChars": 283,
+      "tiedChars": 3,
+      "firstLongestWordsWins": 280,
+      "firstLongestCharsWins": 286,
+      "largeAdvantage": 155
+    },
+    {
+      "origin": "expansion",
+      "questions": 380,
+      "uniqueWords": 240,
+      "tiedWords": 70,
+      "uniqueChars": 269,
+      "tiedChars": 13,
+      "firstLongestWordsWins": 268,
+      "firstLongestCharsWins": 274,
+      "largeAdvantage": 1
+    }
+  ],
+  "byFamily": [
+    {
+      "family": "response",
+      "questions": 320,
+      "uniqueWords": 255,
+      "tiedWords": 38,
+      "uniqueChars": 266,
+      "tiedChars": 11,
+      "firstLongestWordsWins": 273,
+      "firstLongestCharsWins": 270,
+      "largeAdvantage": 30
+    },
+    {
+      "family": "conversation",
+      "questions": 120,
+      "uniqueWords": 89,
+      "tiedWords": 11,
+      "uniqueChars": 95,
+      "tiedChars": 3,
+      "firstLongestWordsWins": 91,
+      "firstLongestCharsWins": 97,
+      "largeAdvantage": 49
+    },
+    {
+      "family": "announcement",
+      "questions": 80,
+      "uniqueWords": 49,
+      "tiedWords": 15,
+      "uniqueChars": 54,
+      "tiedChars": 0,
+      "firstLongestWordsWins": 56,
+      "firstLongestCharsWins": 54,
+      "largeAdvantage": 18
+    },
+    {
+      "family": "academic",
+      "questions": 160,
+      "uniqueWords": 120,
+      "tiedWords": 20,
+      "uniqueChars": 137,
+      "tiedChars": 2,
+      "firstLongestWordsWins": 128,
+      "firstLongestCharsWins": 139,
+      "largeAdvantage": 59
+    }
+  ],
+  "firstFiveSet1": {
+    "questions": 5,
+    "uniqueWords": 5,
+    "tiedWords": 0,
+    "uniqueChars": 5,
+    "tiedChars": 0,
+    "firstLongestWordsWins": 5,
+    "firstLongestCharsWins": 5,
+    "largeAdvantage": 2
+  },
+  "firstTenAuditRows": [
+    {
+      "set": 1,
+      "id": "item:t1-l-cr1-fixed-v1",
+      "origin": "legacy",
+      "family": "response",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": true
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-cr2-fixed-v1",
+      "origin": "legacy",
+      "family": "response",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": false
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-cr3-fixed-v1",
+      "origin": "legacy",
+      "family": "response",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": true
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-cr4-fixed-v1",
+      "origin": "legacy",
+      "family": "response",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": false
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-cr5-fixed-v1",
+      "origin": "legacy",
+      "family": "response",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": false
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-m1-cr6-v1",
+      "origin": "expansion",
+      "family": "response",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": false
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-m1-cr7-v1",
+      "origin": "expansion",
+      "family": "response",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": false,
+        "tied": false,
+        "firstLongestWins": false
+      },
+      "largeAdvantage": false
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-m1-cr8-v1",
+      "origin": "expansion",
+      "family": "response",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": false
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-cv1-fixed-v1",
+      "origin": "legacy",
+      "family": "conversation",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": false
+    },
+    {
+      "set": 1,
+      "id": "item:t1-l-cv2-fixed-v1",
+      "origin": "legacy",
+      "family": "conversation",
+      "module": "listening-1",
+      "words": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "chars": {
+        "unique": true,
+        "tied": false,
+        "firstLongestWins": true
+      },
+      "largeAdvantage": true
+    }
+  ],
+  "sourceHashes": [
+    {
+      "path": "src/server/toefl/listening-fixed-sets-1-5.ts",
+      "sha256": "60249146781643d10fc6292e3d587d06a76978e09160d554fc610ab593040e8a"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-1-5.ts",
+      "sha256": "d1524d85ec496bde89f9038a6c9f9e62c6da654a3338b7d6687ec93bba5a758a"
+    },
+    {
+      "path": "src/server/toefl/listening-fixed-sets-6-10.ts",
+      "sha256": "978486d113aff6b8bce0fec9aab16a444f29280aa8b94fc6e1194d54ebf11ce2"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-6-10.ts",
+      "sha256": "d58479a899552bdb4e579adeb4495b4dd02e7551b9881c098f207459c22e5aa8"
+    },
+    {
+      "path": "src/server/toefl/listening-fixed-sets-11-15.ts",
+      "sha256": "82d6381624689bc9306911786e62a22a155cb5d3663f1321ceb253003ed8c6e0"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-11-15.ts",
+      "sha256": "a37b4dcfc3ae4f0e0c9bcd535e5e37441e88e88c2be9dbd4af0a12c74641699d"
+    },
+    {
+      "path": "src/server/toefl/listening-fixed-sets-16-20.ts",
+      "sha256": "58b3ced574e3d29aa0b199d0ac0d9d34a2dd9e64d718f764147bae4434739802"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-16-20.ts",
+      "sha256": "fd50b6945707d2720e02772939ec3be7fbb86e0a968794926cdd9f1d3528553c"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-1.ts",
+      "sha256": "d9d85d5de26c739ed437fe4816c61c085c0f171d1567b07774cebef2cc12c78a"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-2.ts",
+      "sha256": "e23361fe4b3774f518937898abc78129db9a79ddb06ea0c7d6ffb0f806b3b678"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-3.ts",
+      "sha256": "21963d9ee6106a42755e21f14c555dc32b65d56a42b38662367c38005772c308"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-4.ts",
+      "sha256": "4bc697f43d84f5f475fe4b47b9075ddb7d33b882848a62472fb63d92449ed060"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-5.ts",
+      "sha256": "5be7c464a5264067ac0e6feaaa5ec12d4af6a22ddec55cd80ff62295c4affedd"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-6.ts",
+      "sha256": "46796db844725ee0117314334ca760494d3326b977c70f98a5d0f6ca00f3cfd8"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-7.ts",
+      "sha256": "462f59bf87f451bdec72b2076680e318ecb6cd8821b5ec2a894d6cfff8c720c1"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-8.ts",
+      "sha256": "e55d7fb3e72a86319964a7ee0f043efc3d0a5823dc2a6e18d9b2cb1f3e0ffd0f"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-9.ts",
+      "sha256": "a9c11d967ab17b82b05e7a3a4257973bee6fb43a1a1ff1b3a44bc7900ef4310f"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-10.ts",
+      "sha256": "2b9a47e0a4600c7aec6802f37731adcfda2092540023e8d0b79d207cd393376b"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-11.ts",
+      "sha256": "4fe79b4bc8d39c340bebc2a67b2f482af03bccde809e6dc51744213561ae2b31"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-12.ts",
+      "sha256": "700ebd47e4e9e580887a85e021c60f73c945b123ad3f3a66c2ae67deffd14f48"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-13.ts",
+      "sha256": "2ead50769b4f3cdf75f6f1c37b84dbdf50fa1747481b5e639252b46965624459"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-14.ts",
+      "sha256": "24dcf17715007116e70f1a0f3a64764773bf2be550fd171459c798b5eb84a8ac"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-15.ts",
+      "sha256": "0dd3d7a4de30fd11164ca5ea22c3bdb601c46678afa603ced3f88ab3a4a35d0e"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-16.ts",
+      "sha256": "744769bb5ea2195d689aae8e80cd0010cb325ca2988adf94f0ece362c528a965"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-17.ts",
+      "sha256": "8a1e6b1f0c2d9dbd4452f2ceed6512b1130170396990d4a103088bdc48dcbd4c"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-18.ts",
+      "sha256": "f73c4aac88e90f7257be85ba79ff19543443b309215fc9453a12961b38e9524e"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-19.ts",
+      "sha256": "c40944420c184e2d6e3b6efee1f398e27e4ec7d1dcec6912d515a20a5308b0dd"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-20.ts",
+      "sha256": "7a0aa1ab5452e8bb1c5a89a5ec6b0c815b826aafc079f3fec50b359721809a75"
+    },
+    {
+      "path": "src/server/toefl/listening-registry.ts",
+      "sha256": "612a1a2b0408b2654a96fb42691c3fe91445ca6a55184b0ad78378e4ced9cf73"
+    },
+    {
+      "path": "src/data/mocks/toefl-fixed-form.ts",
+      "sha256": "4dbe1f021af465519c88d647469dd98518c84ce49e6e42b0929f006506285e89"
+    },
+    {
+      "path": "src/data/toefl/sectional-listening-adapter.ts",
+      "sha256": "ecc15cf0a80c61c5f132fc7091190dd940b6f357648df9c3a7917f82be717bb0"
+    },
+    {
+      "path": "scripts/check-toefl-fixed-listening.mjs",
+      "sha256": "0c855f05f28c7d4b22d93eb8400cfe912d5077f86d016535f0257a65240258d7"
+    }
+  ]
+}

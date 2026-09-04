@@ -1,0 +1,1277 @@
+{
+  "status": "draft-not-academic-approval",
+  "selfTests": "passed",
+  "screeningPolicy": "Proposed editorial flag: n >= 16 and >45% expected accuracy for either random tie-break or first-option tie-break, for longest or shortest, by words or chars. Not statistical significance, not ETS guidance. Small groups still require review.",
+  "candidateSha256": "6afedc554facae03c12103f7f238a0253292de9ea9d0b206fff44096e8f2ad5d",
+  "baseline": {
+    "questions": 34,
+    "automaticScreenEligible": true,
+    "academicReviewRequired": true,
+    "totals": {
+      "words_longest": {
+        "unique": 29,
+        "tied": 1,
+        "expectedRate": 0.8676470588235294,
+        "firstRate": 0.8823529411764706,
+        "flagged": true
+      },
+      "words_shortest": {
+        "unique": 1,
+        "tied": 1,
+        "expectedRate": 0.0392156862745098,
+        "firstRate": 0.029411764705882353,
+        "flagged": false
+      },
+      "chars_longest": {
+        "unique": 29,
+        "tied": 0,
+        "expectedRate": 0.8529411764705882,
+        "firstRate": 0.8529411764705882,
+        "flagged": true
+      },
+      "chars_shortest": {
+        "unique": 3,
+        "tied": 0,
+        "expectedRate": 0.08823529411764706,
+        "firstRate": 0.08823529411764706,
+        "flagged": false
+      }
+    }
+  },
+  "candidate": {
+    "questions": 34,
+    "automaticScreenEligible": true,
+    "academicReviewRequired": true,
+    "totals": {
+      "words_longest": {
+        "unique": 5,
+        "tied": 13,
+        "expectedRate": 0.2867647058823529,
+        "firstRate": 0.2647058823529412,
+        "flagged": false
+      },
+      "words_shortest": {
+        "unique": 5,
+        "tied": 7,
+        "expectedRate": 0.21813725490196081,
+        "firstRate": 0.23529411764705882,
+        "flagged": false
+      },
+      "chars_longest": {
+        "unique": 8,
+        "tied": 4,
+        "expectedRate": 0.28431372549019607,
+        "firstRate": 0.29411764705882354,
+        "flagged": false
+      },
+      "chars_shortest": {
+        "unique": 13,
+        "tied": 2,
+        "expectedRate": 0.4117647058823529,
+        "firstRate": 0.4117647058823529,
+        "flagged": false
+      }
+    }
+  },
+  "allSetsBaseline": {
+    "questions": 680,
+    "automaticScreenEligible": true,
+    "academicReviewRequired": true,
+    "totals": {
+      "words_longest": {
+        "unique": 513,
+        "tied": 84,
+        "expectedRate": 0.8077205882352939,
+        "firstRate": 0.8058823529411765,
+        "flagged": true
+      },
+      "words_shortest": {
+        "unique": 16,
+        "tied": 34,
+        "expectedRate": 0.04154411764705882,
+        "firstRate": 0.03529411764705882,
+        "flagged": false
+      },
+      "chars_longest": {
+        "unique": 552,
+        "tied": 16,
+        "expectedRate": 0.82328431372549,
+        "firstRate": 0.8235294117647058,
+        "flagged": true
+      },
+      "chars_shortest": {
+        "unique": 26,
+        "tied": 7,
+        "expectedRate": 0.04264705882352941,
+        "firstRate": 0.041176470588235294,
+        "flagged": false
+      }
+    }
+  },
+  "bySetBaseline": [
+    {
+      "set": 1,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 29,
+          "tied": 1,
+          "expectedRate": 0.8676470588235294,
+          "firstRate": 0.8823529411764706,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 1,
+          "expectedRate": 0.0392156862745098,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 29,
+          "tied": 0,
+          "expectedRate": 0.8529411764705882,
+          "firstRate": 0.8529411764705882,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 3,
+          "tied": 0,
+          "expectedRate": 0.08823529411764706,
+          "firstRate": 0.08823529411764706,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 2,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 27,
+          "tied": 5,
+          "expectedRate": 0.8553921568627451,
+          "firstRate": 0.8529411764705882,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 1,
+          "expectedRate": 0.007352941176470588,
+          "firstRate": 0,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 28,
+          "tied": 0,
+          "expectedRate": 0.8235294117647058,
+          "firstRate": 0.8235294117647058,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 0,
+          "tied": 0,
+          "expectedRate": 0,
+          "firstRate": 0,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 3,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 29,
+          "tied": 3,
+          "expectedRate": 0.8970588235294118,
+          "firstRate": 0.9117647058823529,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 2,
+          "tied": 0,
+          "expectedRate": 0.058823529411764705,
+          "firstRate": 0.058823529411764705,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 30,
+          "tied": 0,
+          "expectedRate": 0.8823529411764706,
+          "firstRate": 0.8823529411764706,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 3,
+          "tied": 0,
+          "expectedRate": 0.08823529411764706,
+          "firstRate": 0.08823529411764706,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 4,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 28,
+          "tied": 2,
+          "expectedRate": 0.8480392156862745,
+          "firstRate": 0.8235294117647058,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 3,
+          "expectedRate": 0.06862745098039215,
+          "firstRate": 0.058823529411764705,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 28,
+          "tied": 0,
+          "expectedRate": 0.8235294117647058,
+          "firstRate": 0.8235294117647058,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 3,
+          "tied": 0,
+          "expectedRate": 0.08823529411764706,
+          "firstRate": 0.08823529411764706,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 5,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 23,
+          "tied": 5,
+          "expectedRate": 0.7450980392156863,
+          "firstRate": 0.7647058823529411,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 2,
+          "tied": 1,
+          "expectedRate": 0.06862745098039216,
+          "firstRate": 0.08823529411764706,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 25,
+          "tied": 0,
+          "expectedRate": 0.7352941176470589,
+          "firstRate": 0.7352941176470589,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 3,
+          "tied": 0,
+          "expectedRate": 0.08823529411764706,
+          "firstRate": 0.08823529411764706,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 6,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 23,
+          "tied": 5,
+          "expectedRate": 0.7426470588235294,
+          "firstRate": 0.7647058823529411,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 4,
+          "expectedRate": 0.0661764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 26,
+          "tied": 1,
+          "expectedRate": 0.7794117647058824,
+          "firstRate": 0.7647058823529411,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 7,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 29,
+          "tied": 3,
+          "expectedRate": 0.877450980392157,
+          "firstRate": 0.8823529411764706,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 4,
+          "expectedRate": 0.0392156862745098,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 28,
+          "tied": 2,
+          "expectedRate": 0.8529411764705882,
+          "firstRate": 0.8235294117647058,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 0,
+          "tied": 2,
+          "expectedRate": 0.024509803921568624,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 8,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 25,
+          "tied": 4,
+          "expectedRate": 0.784313725490196,
+          "firstRate": 0.7352941176470589,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 1,
+          "expectedRate": 0.0392156862745098,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 27,
+          "tied": 1,
+          "expectedRate": 0.8088235294117647,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 9,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 25,
+          "tied": 5,
+          "expectedRate": 0.7990196078431372,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 1,
+          "expectedRate": 0.0392156862745098,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 29,
+          "tied": 1,
+          "expectedRate": 0.8676470588235294,
+          "firstRate": 0.8823529411764706,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 10,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 27,
+          "tied": 2,
+          "expectedRate": 0.8235294117647058,
+          "firstRate": 0.8235294117647058,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 2,
+          "expectedRate": 0.053921568627450976,
+          "firstRate": 0.058823529411764705,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 27,
+          "tied": 0,
+          "expectedRate": 0.7941176470588235,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 11,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 27,
+          "tied": 5,
+          "expectedRate": 0.8578431372549019,
+          "firstRate": 0.8823529411764706,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 0,
+          "expectedRate": 0,
+          "firstRate": 0,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 30,
+          "tied": 1,
+          "expectedRate": 0.8970588235294118,
+          "firstRate": 0.8823529411764706,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 0,
+          "tied": 1,
+          "expectedRate": 0.014705882352941176,
+          "firstRate": 0,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 12,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 26,
+          "tied": 4,
+          "expectedRate": 0.8161764705882353,
+          "firstRate": 0.8235294117647058,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 2,
+          "expectedRate": 0.04656862745098039,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 27,
+          "tied": 1,
+          "expectedRate": 0.8088235294117647,
+          "firstRate": 0.8235294117647058,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 13,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 26,
+          "tied": 5,
+          "expectedRate": 0.8284313725490197,
+          "firstRate": 0.8529411764705882,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 2,
+          "expectedRate": 0.024509803921568624,
+          "firstRate": 0,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 27,
+          "tied": 1,
+          "expectedRate": 0.8088235294117647,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 14,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 22,
+          "tied": 8,
+          "expectedRate": 0.7549019607843137,
+          "firstRate": 0.7647058823529411,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 1,
+          "expectedRate": 0.00980392156862745,
+          "firstRate": 0,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 28,
+          "tied": 1,
+          "expectedRate": 0.8382352941176471,
+          "firstRate": 0.8529411764705882,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 0,
+          "tied": 0,
+          "expectedRate": 0,
+          "firstRate": 0,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 15,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 24,
+          "tied": 4,
+          "expectedRate": 0.7598039215686274,
+          "firstRate": 0.7352941176470589,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 2,
+          "expectedRate": 0.058823529411764705,
+          "firstRate": 0.058823529411764705,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 27,
+          "tied": 1,
+          "expectedRate": 0.8088235294117647,
+          "firstRate": 0.8235294117647058,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 2,
+          "expectedRate": 0.058823529411764705,
+          "firstRate": 0.058823529411764705,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 16,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 23,
+          "tied": 5,
+          "expectedRate": 0.7401960784313726,
+          "firstRate": 0.7058823529411765,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 1,
+          "tied": 1,
+          "expectedRate": 0.0392156862745098,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 26,
+          "tied": 2,
+          "expectedRate": 0.7941176470588235,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 2,
+          "expectedRate": 0.04901960784313725,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 17,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 24,
+          "tied": 5,
+          "expectedRate": 0.7622549019607843,
+          "firstRate": 0.7647058823529411,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 3,
+          "expectedRate": 0.03676470588235294,
+          "firstRate": 0.058823529411764705,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 26,
+          "tied": 1,
+          "expectedRate": 0.7745098039215687,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 18,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 26,
+          "tied": 3,
+          "expectedRate": 0.7941176470588235,
+          "firstRate": 0.7647058823529411,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 3,
+          "tied": 3,
+          "expectedRate": 0.11764705882352941,
+          "firstRate": 0.08823529411764706,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 25,
+          "tied": 3,
+          "expectedRate": 0.7794117647058824,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 3,
+          "tied": 0,
+          "expectedRate": 0.08823529411764706,
+          "firstRate": 0.08823529411764706,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 19,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 24,
+          "tied": 6,
+          "expectedRate": 0.7843137254901961,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 0,
+          "expectedRate": 0,
+          "firstRate": 0,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 29,
+          "tied": 0,
+          "expectedRate": 0.8529411764705882,
+          "firstRate": 0.8529411764705882,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "set": 20,
+      "questions": 34,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 26,
+          "tied": 4,
+          "expectedRate": 0.8161764705882353,
+          "firstRate": 0.7941176470588235,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 2,
+          "expectedRate": 0.017156862745098037,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 30,
+          "tied": 0,
+          "expectedRate": 0.8823529411764706,
+          "firstRate": 0.8823529411764706,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.029411764705882353,
+          "firstRate": 0.029411764705882353,
+          "flagged": false
+        }
+      }
+    }
+  ],
+  "byFamilyBaseline": [
+    {
+      "family": "response",
+      "questions": 320,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 255,
+          "tied": 38,
+          "expectedRate": 0.8505208333333336,
+          "firstRate": 0.853125,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 4,
+          "tied": 9,
+          "expectedRate": 0.023437499999999997,
+          "firstRate": 0.021875,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 266,
+          "tied": 11,
+          "expectedRate": 0.8484375,
+          "firstRate": 0.84375,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 9,
+          "tied": 1,
+          "expectedRate": 0.0296875,
+          "firstRate": 0.028125,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "family": "conversation",
+      "questions": 120,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 89,
+          "tied": 11,
+          "expectedRate": 0.7798611111111112,
+          "firstRate": 0.7583333333333333,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 6,
+          "tied": 8,
+          "expectedRate": 0.07569444444444445,
+          "firstRate": 0.058333333333333334,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 95,
+          "tied": 3,
+          "expectedRate": 0.8027777777777777,
+          "firstRate": 0.8083333333333333,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 8,
+          "tied": 3,
+          "expectedRate": 0.0763888888888889,
+          "firstRate": 0.075,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "family": "announcement",
+      "questions": 80,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 49,
+          "tied": 15,
+          "expectedRate": 0.6916666666666667,
+          "firstRate": 0.7,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 3,
+          "tied": 9,
+          "expectedRate": 0.08125,
+          "firstRate": 0.05,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 54,
+          "tied": 0,
+          "expectedRate": 0.675,
+          "firstRate": 0.675,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 5,
+          "tied": 2,
+          "expectedRate": 0.075,
+          "firstRate": 0.0625,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "family": "academic",
+      "questions": 160,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 120,
+          "tied": 20,
+          "expectedRate": 0.8010416666666668,
+          "firstRate": 0.8,
+          "flagged": true
+        },
+        "words_shortest": {
+          "unique": 3,
+          "tied": 8,
+          "expectedRate": 0.03229166666666666,
+          "firstRate": 0.0375,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 137,
+          "tied": 2,
+          "expectedRate": 0.8625,
+          "firstRate": 0.86875,
+          "flagged": true
+        },
+        "chars_shortest": {
+          "unique": 4,
+          "tied": 1,
+          "expectedRate": 0.02708333333333333,
+          "firstRate": 0.03125,
+          "flagged": false
+        }
+      }
+    }
+  ],
+  "candidateByFamily": [
+    {
+      "family": "response",
+      "questions": 16,
+      "automaticScreenEligible": true,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 2,
+          "tied": 9,
+          "expectedRate": 0.33854166666666663,
+          "firstRate": 0.375,
+          "flagged": false
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 3,
+          "expectedRate": 0.05729166666666666,
+          "firstRate": 0.125,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 4,
+          "tied": 2,
+          "expectedRate": 0.3125,
+          "firstRate": 0.3125,
+          "flagged": false
+        },
+        "chars_shortest": {
+          "unique": 4,
+          "tied": 2,
+          "expectedRate": 0.3125,
+          "firstRate": 0.3125,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "family": "conversation",
+      "questions": 6,
+      "automaticScreenEligible": false,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 1,
+          "tied": 1,
+          "expectedRate": 0.2222222222222222,
+          "firstRate": 0.16666666666666666,
+          "flagged": false
+        },
+        "words_shortest": {
+          "unique": 0,
+          "tied": 2,
+          "expectedRate": 0.13888888888888887,
+          "firstRate": 0,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.16666666666666666,
+          "firstRate": 0.16666666666666666,
+          "flagged": false
+        },
+        "chars_shortest": {
+          "unique": 3,
+          "tied": 0,
+          "expectedRate": 0.5,
+          "firstRate": 0.5,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "family": "announcement",
+      "questions": 4,
+      "automaticScreenEligible": false,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 0,
+          "tied": 1,
+          "expectedRate": 0.08333333333333333,
+          "firstRate": 0,
+          "flagged": false
+        },
+        "words_shortest": {
+          "unique": 3,
+          "tied": 0,
+          "expectedRate": 0.75,
+          "firstRate": 0.75,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 1,
+          "tied": 0,
+          "expectedRate": 0.25,
+          "firstRate": 0.25,
+          "flagged": false
+        },
+        "chars_shortest": {
+          "unique": 2,
+          "tied": 0,
+          "expectedRate": 0.5,
+          "firstRate": 0.5,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "family": "academic",
+      "questions": 8,
+      "automaticScreenEligible": false,
+      "academicReviewRequired": true,
+      "totals": {
+        "words_longest": {
+          "unique": 2,
+          "tied": 2,
+          "expectedRate": 0.3333333333333333,
+          "firstRate": 0.25,
+          "flagged": false
+        },
+        "words_shortest": {
+          "unique": 2,
+          "tied": 2,
+          "expectedRate": 0.3333333333333333,
+          "firstRate": 0.375,
+          "flagged": false
+        },
+        "chars_longest": {
+          "unique": 2,
+          "tied": 2,
+          "expectedRate": 0.3333333333333333,
+          "firstRate": 0.375,
+          "flagged": false
+        },
+        "chars_shortest": {
+          "unique": 4,
+          "tied": 0,
+          "expectedRate": 0.5,
+          "firstRate": 0.5,
+          "flagged": false
+        }
+      }
+    }
+  ],
+  "audioHashes": [
+    {
+      "path": "public/audio/toefl/set-1/listen-choose-1.mp3",
+      "sha256": "5c397a1458bbc2def111e50648c9e742c4a074fbbfdc742a3478faa6fd6fd076"
+    },
+    {
+      "path": "public/audio/toefl/set-1/listen-choose-2.mp3",
+      "sha256": "8d276425d7a469d4280462c64cface44531b009a6a8aa12035e7d81357e745ad"
+    },
+    {
+      "path": "public/audio/toefl/set-1/listen-choose-3.mp3",
+      "sha256": "03fcd6e06d67a8aade21f2492326d1b50fc697ba8a4e1b2e93d165a8f2f7172a"
+    },
+    {
+      "path": "public/audio/toefl/set-1/listen-choose-4.mp3",
+      "sha256": "11944be706b6c2165c5b11575adf8e45a556dd6b00d86d72c654107ec4979758"
+    },
+    {
+      "path": "public/audio/toefl/set-1/listen-choose-5.mp3",
+      "sha256": "3f2c2190bd33607ec3d0a8669b90f0e5e841e9c891585b5a0085a181439d9bee"
+    }
+  ],
+  "sourceHashes": [
+    {
+      "path": "src/server/toefl/listening-fixed-sets-1-5.ts",
+      "sha256": "60249146781643d10fc6292e3d587d06a76978e09160d554fc610ab593040e8a"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-1-5.ts",
+      "sha256": "d1524d85ec496bde89f9038a6c9f9e62c6da654a3338b7d6687ec93bba5a758a"
+    },
+    {
+      "path": "src/server/toefl/listening-fixed-sets-6-10.ts",
+      "sha256": "978486d113aff6b8bce0fec9aab16a444f29280aa8b94fc6e1194d54ebf11ce2"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-6-10.ts",
+      "sha256": "d58479a899552bdb4e579adeb4495b4dd02e7551b9881c098f207459c22e5aa8"
+    },
+    {
+      "path": "src/server/toefl/listening-fixed-sets-11-15.ts",
+      "sha256": "82d6381624689bc9306911786e62a22a155cb5d3663f1321ceb253003ed8c6e0"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-11-15.ts",
+      "sha256": "a37b4dcfc3ae4f0e0c9bcd535e5e37441e88e88c2be9dbd4af0a12c74641699d"
+    },
+    {
+      "path": "src/server/toefl/listening-fixed-sets-16-20.ts",
+      "sha256": "58b3ced574e3d29aa0b199d0ac0d9d34a2dd9e64d718f764147bae4434739802"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-16-20.ts",
+      "sha256": "fd50b6945707d2720e02772939ec3be7fbb86e0a968794926cdd9f1d3528553c"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-1.ts",
+      "sha256": "d9d85d5de26c739ed437fe4816c61c085c0f171d1567b07774cebef2cc12c78a"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-2.ts",
+      "sha256": "e23361fe4b3774f518937898abc78129db9a79ddb06ea0c7d6ffb0f806b3b678"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-3.ts",
+      "sha256": "21963d9ee6106a42755e21f14c555dc32b65d56a42b38662367c38005772c308"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-4.ts",
+      "sha256": "4bc697f43d84f5f475fe4b47b9075ddb7d33b882848a62472fb63d92449ed060"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-5.ts",
+      "sha256": "5be7c464a5264067ac0e6feaaa5ec12d4af6a22ddec55cd80ff62295c4affedd"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-6.ts",
+      "sha256": "46796db844725ee0117314334ca760494d3326b977c70f98a5d0f6ca00f3cfd8"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-7.ts",
+      "sha256": "462f59bf87f451bdec72b2076680e318ecb6cd8821b5ec2a894d6cfff8c720c1"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-8.ts",
+      "sha256": "e55d7fb3e72a86319964a7ee0f043efc3d0a5823dc2a6e18d9b2cb1f3e0ffd0f"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-9.ts",
+      "sha256": "a9c11d967ab17b82b05e7a3a4257973bee6fb43a1a1ff1b3a44bc7900ef4310f"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-10.ts",
+      "sha256": "2b9a47e0a4600c7aec6802f37731adcfda2092540023e8d0b79d207cd393376b"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-11.ts",
+      "sha256": "4fe79b4bc8d39c340bebc2a67b2f482af03bccde809e6dc51744213561ae2b31"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-12.ts",
+      "sha256": "700ebd47e4e9e580887a85e021c60f73c945b123ad3f3a66c2ae67deffd14f48"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-13.ts",
+      "sha256": "2ead50769b4f3cdf75f6f1c37b84dbdf50fa1747481b5e639252b46965624459"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-14.ts",
+      "sha256": "24dcf17715007116e70f1a0f3a64764773bf2be550fd171459c798b5eb84a8ac"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-15.ts",
+      "sha256": "0dd3d7a4de30fd11164ca5ea22c3bdb601c46678afa603ced3f88ab3a4a35d0e"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-16.ts",
+      "sha256": "744769bb5ea2195d689aae8e80cd0010cb325ca2988adf94f0ece362c528a965"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-17.ts",
+      "sha256": "8a1e6b1f0c2d9dbd4452f2ceed6512b1130170396990d4a103088bdc48dcbd4c"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-18.ts",
+      "sha256": "f73c4aac88e90f7257be85ba79ff19543443b309215fc9453a12961b38e9524e"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-19.ts",
+      "sha256": "c40944420c184e2d6e3b6efee1f398e27e4ec7d1dcec6912d515a20a5308b0dd"
+    },
+    {
+      "path": "src/data/mocks/toefl-set-20.ts",
+      "sha256": "7a0aa1ab5452e8bb1c5a89a5ec6b0c815b826aafc079f3fec50b359721809a75"
+    },
+    {
+      "path": "src/server/toefl/listening-registry.ts",
+      "sha256": "612a1a2b0408b2654a96fb42691c3fe91445ca6a55184b0ad78378e4ced9cf73"
+    },
+    {
+      "path": "src/data/mocks/toefl-fixed-form.ts",
+      "sha256": "4dbe1f021af465519c88d647469dd98518c84ce49e6e42b0929f006506285e89"
+    },
+    {
+      "path": "src/data/toefl/sectional-listening-adapter.ts",
+      "sha256": "ecc15cf0a80c61c5f132fc7091190dd940b6f357648df9c3a7917f82be717bb0"
+    },
+    {
+      "path": "scripts/check-toefl-fixed-listening.mjs",
+      "sha256": "0c855f05f28c7d4b22d93eb8400cfe912d5077f86d016535f0257a65240258d7"
+    }
+  ]
+}
