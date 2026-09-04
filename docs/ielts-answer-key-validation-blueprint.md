@@ -1,7 +1,7 @@
 # Blueprint de validación del motor IELTS
 
 Fecha: 2026-09-04. Responsable operativo: Codex para José David.
-Estado inicial de esta corrección: EN_VALIDACION.
+Estado de validación del código: LISTO_PARA_INTEGRAR (2026-09-04).
 Rama: codex/ielts-live-key-20260904. Base: origin/main en 8350ddf1.
 Alcance compartido reservado: package.json, motor objetivo IELTS, submission,
 review-blueprint y sus guardianes. Sin migraciones ni nuevas variables.
@@ -15,6 +15,8 @@ y un contador visual de 39 preguntas por destreza.
 
 Esta corrección conecta resultados y persistencia al mismo calculador,
 recupera la clave aprobada del Set 1 y registra ielts-set-1-v2.
+El cálculo por punto y los contadores son compartidos por todos los sets;
+las claves de los demás sets no se modifican ni se dan por auditadas.
 Los datos históricos v1 no se sobrescriben ni se etiquetan como v2.
 Writing/Speaking v1 sigue siendo revisable porque sus consignas no cambiaron.
 Una pestaña antigua del Set 1 no puede enviar silenciosamente bajo v2: recibe 409.
@@ -93,7 +95,29 @@ diferencias respecto al resultado original. Nunca incluir PII en fixtures, Git o
 Enviar a Zhanna requiere autorización vigente para los archivos concretos y
 confirmación del registro de envío; esta reparación web no envía correos.
 
-## Registro de cierre
+## Evidencia anterior a la publicación
 
-Pendiente al crear este documento: build completo, integración, deployment y
-comprobación pública. Actualizar el estado con evidencia al cerrar la tarea.
+Revisión de código: 2fbf78aa15c4eb07dd7e1a757aaba25e01cba86a.
+El registro de publicación debe distinguir esta revisión de un deployment realmente READY.
+
+- Guardianes de clave: 78 bloques, 80 puntos, opciones y numeración exactas.
+- Pruebas objetivo: 8/8; cada variante, todos los resultados crudos 0–40,
+  omisiones, multiselección y regresiones intencionales.
+- Pruebas de revisión: 11/11; registro administrativo: 20/20 (no aprobación de sus claves).
+- Baseline y catálogo protegidos: aprobados, sin reducir umbrales.
+- TypeScript explícito: aprobado; build completo con todos los prebuild: aprobado,
+  Node 24, 4 GB de heap, Webpack, 2.515 páginas generadas.
+- El intento local con Turbopack no avanzó; Webpack con el límite predeterminado
+  de 2 GB agotó memoria. La repetición limpia con 4 GB terminó con exit 0.
+  No se cambió la configuración de producción para sortear estas limitaciones locales.
+- Navegador local: Reading y Listening sobre 40, navegación y captura visual verificadas;
+  cero errores de consola, avisos de precarga de fuente existentes.
+- Página local extraída por HTTP: coincide con el fixture completo.
+- Endpoint local: v1 devuelve 409; v2 incompleto devuelve 400 por datos faltantes,
+  no por versión. No se crearon registros de estudiantes.
+- Captura pública anterior: rechazada por el guardián; --set=2: NOT_AUDITED.
+- Blueprint personal: validación de formato y BLUEPRINT_APPROVED, assets v1 intactos.
+
+Esta sección registra validación, NO demuestra despliegue. Para declarar DESPLEGADO,
+conservar además SHA final de main, deployment ID/URL y smoke posterior en el
+registro de entrega de la tarea. Siempre verificar producción de nuevo en futuras auditorías.
