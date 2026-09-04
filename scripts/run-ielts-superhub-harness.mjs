@@ -26,6 +26,8 @@ const stages = [
   { id: 'ielts-truth', command: 'npm', args: ['run', 'check:ielts:truth'] },
   { id: 'harness-mutations', command: 'npm', args: ['run', 'test:ielts:superhub'] },
   { id: 'listening-original-part1', command: 'npm', args: ['run', 'test:ielts:listening'] },
+  { id: 'listening-private-integrity', command: 'npm', args: ['run', 'check:ielts:listening-private'] },
+  { id: 'speaking-private-candidate', command: 'npm', args: ['run', 'test:ielts:speaking'] },
   { id: 'listening-candidate-rights', command: 'npm', args: ['run', 'check:ielts:listening-release'] },
   { id: 'practice-catalog', command: 'npm', args: ['run', 'check:practica-catalog'] },
 ];

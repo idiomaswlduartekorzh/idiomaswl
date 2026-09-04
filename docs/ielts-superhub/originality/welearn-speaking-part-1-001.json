@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "artifactId": "welearn-speaking-part-1-bank-001",
+  "practiceId": "welearn-speaking-part-1-001",
+  "contentVersion": "2026-09-01.1",
+  "createdAt": "2026-09-01",
+  "artifactKind": "private-text-only",
+  "ownership": {
+    "author": "Idiomas WeLearn",
+    "status": "draft-original-independent-practice",
+    "borrowedQuestions": false,
+    "borrowedAnswers": false,
+    "borrowedAudio": false,
+    "trademarkDisclosure": "IELTS is a protected trademark. This independent practice resource is not affiliated with or endorsed by its owners."
+  },
+  "officialSources": [
+    {
+      "kind": "speaking-format",
+      "url": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking",
+      "observedConstraint": "Speaking Part 1 is a four-to-five-minute introduction and interview using familiar topics."
+    },
+    {
+      "kind": "band-descriptors-boundary",
+      "url": "https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf",
+      "observedConstraint": "The official descriptors are reference material only; this private text candidate performs no assessment and predicts no band."
+    }
+  ],
+  "scope": {
+    "part": 1,
+    "locale": "en",
+    "title": "Small Everyday Choices",
+    "topicPackCount": 6,
+    "questionsPerPack": 4,
+    "questionCount": 24,
+    "pilotTopicPackIds": ["seat-choices", "indoor-light"],
+    "pilotQuestionCount": 8,
+    "officialPartDurationSeconds": [240, 300]
+  },
+  "originalitySearch": {
+    "status": "completed-research-agent-review",
+    "checkedAt": "2026-09-01",
+    "questionCount": 24,
+    "exactQuestionQueriesChecked": 24,
+    "exactQuestionMatchesFound": 0,
+    "result": "No exact-match collision was observed for any of the 24 independently authored questions in the recorded research pass.",
+    "caveat": "Search coverage is a collision signal, not a legal conclusion or a substitute for final human editorial and originality review."
+  },
+  "boundaries": {
+    "artifactMode": "private-text-only",
+    "identityCheck": "omitted",
+    "personalDataCollection": "none",
+    "responseCapture": "none",
+    "persistence": "none",
+    "networkTransfer": "none",
+    "assessment": "none",
+    "feedback": "none",
+    "modelAnswers": "none"
+  },
+  "seoPlan": {
+    "futureCanonicalPath": "/practica/ielts/speaking/part-1",
+    "futureHubPath": "/practica/ielts/speaking",
+    "packPagesAllowed": false,
+    "sessionIndexingAllowed": false,
+    "forbiddenRoutes": [
+      "/practica/ielts/speaking/part1",
+      "/practica/ielts/speaking/task-1",
+      "/practica/ielts/speaking/part-1/practice-1",
+      "/practica/ielts/speaking/part-1/topics",
+      "/practica/ielts/speaking/part-1/seat-choices",
+      "/practica/ielts/speaking/part-1/indoor-light",
+      "/practica/ielts/speaking/part-1/answers",
+      "/practica/ielts/speaking/part-1/model-answers",
+      "/practica/ielts/speaking/part-1/band-score",
+      "/practica/ielts/speaking/part-1/ai-score"
+    ]
+  },
+  "release": {
+    "status": "private-candidate",
+    "publicReleaseAllowed": false,
+    "blockers": [
+      "Complete human editorial, fairness and originality review.",
+      "Design and audit a public text-only renderer without response capture or assessment.",
+      "Promote the source, canonical route, navigation and indexing controls atomically.",
+      "Keep topic-pack, answer, band-score and AI-score routes blocked."
+    ],
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}

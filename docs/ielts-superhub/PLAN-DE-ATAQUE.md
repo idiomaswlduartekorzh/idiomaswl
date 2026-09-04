@@ -12,6 +12,43 @@ estricto de release bloquea cualquier promoción sin aprobación humana.
 
 Rama: `codex/ielts-superhub`
 
+### Reanudación operativa — 4 de septiembre de 2026
+
+- Estado: `EN_VALIDACION`; no listo para integrar ni desplegado.
+- Checkpoint remoto recuperado: `2e0ec45d`; base `origin/main` verificada:
+  `8350ddf1a5a5a4e4f6345da2717a7bb7e0f1e4d3`.
+- Workspace: `/Volumes/WELEARN_DEV/idiomaswl-ielts-superhub`, dentro de la imagen de
+  desarrollo de la USB. El volumen pasó verificación APFS de solo lectura al reanudar.
+- Pendientes recuperados: contrato de candidatas privadas Listening y banco privado
+  Speaking Part 1. Sus pruebas anteriores no sustituyen la nueva auditoría adversarial.
+- Reserva de compartidos en esta fase: sólo scripts IELTS de `package.json`, runner
+  `scripts/run-ielts-superhub-harness.mjs` y este documento; no se cambia sitemap,
+  navegación, catálogos mixtos, configuración de despliegue ni código TOEFL.
+- Integración: aplazada. SHA integrado en main, deployment y smoke de producción:
+  no aplican a este incremento privado.
+
+Resultado del checkpoint de reanudación:
+
+- `npm run harness:ielts`: `APPROVE` técnico; nueve etapas completas, incluidas
+  preservación, alcance, catálogo, 9 mutaciones del harness, 81 pruebas Listening y
+  15 pruebas Speaking. Informe reproducible: `tmp/ielts-superhub-harness/latest-truth.json`.
+- TypeScript `--noEmit --incremental false`: exit 0. ESLint de las superficies
+  modificadas y `git diff --check`: exit 0.
+- Auditorías independientes: cerrados los hallazgos reproducidos de imports escapados,
+  rutas dinámicas, config mutable, manifests incompletos, getter generador, rutas API
+  alternativas, archivos públicos con NUL y symlinks de fuentes/manifests/artefactos.
+- CLI privada: integridad `PASS`; preparación técnica `BLOCKED` exclusivamente por
+  `ASR_INPUT_AUDIO_SHA256_MISSING` en Parts 2/3. Part 4: `READY`. Publicación: `BLOCK`
+  en las tres candidatas, sin autoaprobaciones ni cambios de los manifests Listening.
+- `node scripts/check-ielts-listening-release.mjs --release`: `BLOCK` esperado por
+  escucha humana pendiente de Part 1. No se ejecutó build completo ni release harness;
+  no se infiere aptitud para producción de las pruebas locales.
+- Continuación horaria en esta tarea configurada como `continuar-ielts-superhub-en-usb`.
+  Requiere USB montada y equipo/app disponibles; no integra ni despliega. Próximo trabajo
+  útil: generar evidencia ASR nueva y trazable para Parts 2/3 con la cadena existente,
+  sin completar hashes retroactivamente; luego avanzar la siguiente pieza privada del
+  producto, conservando las revisiones humanas. No repetir auditorías sin cambios.
+
 Base obligatoria: `origin/main` del repositorio canónico `idiomaswl`
 
 Fuera de alcance: cualquier ruta, dato, componente, prueba o documento exclusivo de TOEFL
@@ -265,15 +302,45 @@ Part 4 avanza como `welearn-listening-part-4-001` en estado `draft`:
 La promoción de Part 4 será atómica y requiere escucha humana completa, revisión humana
 de ciencia textil y justicia editorial, metadata final del source, renderer accesible,
 registro, catálogo, landing, canonical, sitemap y asset público en un mismo cambio. La
-suite Listening actual pasa 56 pruebas; esa evidencia técnica no equivale a aprobación
+suite Listening del checkpoint de Part 4 pasó 56 pruebas; esa evidencia no equivale a aprobación
 humana.
 
 Puerta: `npm run harness:ielts:release` sin bloqueos para el recurso promocionado.
 
 ### Fase 3 — Speaking y consolidación
 
-Se replica el patrón de landing indexable + sesión noindex. No se promete una banda
-automática y no se presenta una estimación como evaluación oficial.
+El primer incremento es exclusivamente privado y textual:
+
+- banco `welearn-speaking-part-1-bank-001`: seis topic packs y 24 preguntas originales;
+- receta `welearn-speaking-part-1-001`: `seat-choices` + `indoor-light`, ocho preguntas
+  en orden fijo; estos conteos son diseño WeLearn, no una regla oficial IELTS;
+- duración de referencia de Part 1 completo: 4–5 minutos, sin tiempo oficial por pregunta;
+- no captura de respuestas, audio, grabación, persistencia, red, identidad, banda,
+  evaluación, feedback automático ni respuestas modelo;
+- fuente `server-only`, contrato de campos permitidos, manifiesto no aprobado y pruebas
+  de mutación de estructura, privacidad y aislamiento;
+- futura canonical única `/practica/ielts/speaking/part-1`; los packs no tienen páginas
+  independientes. No se crea el hub padre hasta disponer de inventario suficiente;
+- no se conecta al recorder, submission ni evaluador de los mocks existentes.
+
+La implementación de landing indexable + sesión noindex será otra promoción auditada.
+No se promete una banda automática ni se presenta una estimación como evaluación oficial.
+
+### Contrato transversal de candidatas privadas
+
+El auditor común de Listening reconcilia source ↔ manifiesto ↔ directorio de candidata y
+devuelve tres decisiones distintas: `integrity`, `machineReadiness` y
+`publicationDecision`. La última siempre es `BLOCK` en este contrato privado.
+
+El comando `node scripts/check-ielts-listening-private-candidates.mjs` certifica sólo
+integridad/aislamiento; `--require-machine-ready` exige además evidencia técnica completa.
+Los errores se reportan como códigos e identificadores, sin contenido privado ni mensajes
+de excepciones. Ningún modo sustituye la escucha o revisión editorial humana.
+
+Deuda observada al reanudar: Parts 2 y 3 carecen del campo `inputAudioSha256` en el
+manifiesto ASR. Permanecen `machineReadiness: BLOCKED`. No se rellena retrospectivamente
+ese vínculo sin evidencia de la entrada exacta; el ASR existente y sus hashes se preservan.
+Part 4 ya tiene ese vínculo, pero también permanece bloqueada para publicación humana.
 
 ### Fase 4 — Autoridad y medición
 

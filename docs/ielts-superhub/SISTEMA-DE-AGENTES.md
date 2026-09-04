@@ -90,6 +90,27 @@ El Release Guardian no confía en un único manifiesto. Antes de una promoción 
 
 Las pruebas de mutación demuestran cada rechazo; no basta con que el caso feliz pase.
 
+## Contrato de candidatas privadas (Listening Parts 2–4 y Speaking Part 1)
+
+El harness ejecuta `check:ielts:listening-private` y `test:ielts:speaking` además de
+los guardianes existentes. Estos controles también forman parte de `prebuild`.
+
+Listening separa tres decisiones: integridad de archivos y contratos, preparación
+técnica y permiso de publicación. La CLI normal falla si la integridad falla;
+`--require-machine-ready` también falla si falta trazabilidad ASR. Ninguna variante
+otorga permiso de publicación: `publicationDecision` permanece `BLOCK`. Un error de
+lectura devuelve códigos seguros, sin imprimir transcripciones ni rutas del manifiesto.
+
+Speaking permanece como banco privado de texto: seis packs, una receta de ocho
+preguntas, sin captura de respuesta ni evaluación. Se sellan el manifiesto completo,
+el módulo estático, los imports y los árboles App/Pages (incluidos APIs alternativos),
+los archivos públicos por contenido y la huella de los controles de routing. Cambiar
+esa huella exige revisión independiente; no se actualiza para silenciar un fallo.
+
+En cada incremento: escritor con paths asignados → revisión adversarial read-only →
+mutación reproducible por hallazgo → suites completas → checkpoint remoto. La revisión
+humana de audio/editorial sigue siendo un gate independiente que ningún agente suplanta.
+
 ## Prohibiciones
 
 - No editar rutas, mocks, audio, scripts o tests exclusivos de TOEFL.
