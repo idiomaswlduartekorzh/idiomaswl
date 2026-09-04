@@ -14,9 +14,10 @@ Había además dos calculadores independientes, selección doble todo-o-nada
 y un contador visual de 39 preguntas por destreza.
 
 Esta corrección conecta resultados y persistencia al mismo calculador
-y recupera la clave aprobada del Set 1. La revisión externa posterior registra
+y recupera la clave aprobada del Set 1. La revisión externa registra
 `ielts-set-1-v3` para aplicar Q30–Q31 de Reading en cualquier orden sin conceder
-dos puntos cuando se repite una sola respuesta.
+dos puntos cuando se repite una sola respuesta. `ielts-set-1-v4` conserva ese
+scoring y corrige la paráfrasis del guion Listening Q40 para usar `expansion`.
 El cálculo por punto y los contadores son compartidos por todos los sets;
 las claves de los demás sets no se modifican ni se dan por auditadas.
 Los datos históricos v1 no se sobrescriben ni se etiquetan como versiones posteriores.

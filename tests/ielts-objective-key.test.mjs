@@ -93,9 +93,9 @@ test('guardian rejects old key, missing questions and shuffled options', () => {
   assert.throws(()=>auditObjectiveKey(shuffled,fixture));
 });
 test('Set 1 old tabs fail closed; historical W/S remains reviewable', () => {
-  for (const version of [undefined,null,'ielts-set-1-v1','ielts-set-1-v2',{},'ielts-set-1-v4']) assert.equal(isIeltsSubmissionVersionCurrent('set-1',version),false);
-  assert.equal(isIeltsSubmissionVersionCurrent('set-1','ielts-set-1-v3'),true);
-  assert.deepEqual(getIeltsReviewBlueprint('set-1').reviewableContentVersions, ['ielts-set-1-v1', 'ielts-set-1-v2', 'ielts-set-1-v3']);
+  for (const version of [undefined,null,'ielts-set-1-v1','ielts-set-1-v2','ielts-set-1-v3',{},'ielts-set-1-v5']) assert.equal(isIeltsSubmissionVersionCurrent('set-1',version),false);
+  assert.equal(isIeltsSubmissionVersionCurrent('set-1','ielts-set-1-v4'),true);
+  assert.deepEqual(getIeltsReviewBlueprint('set-1').reviewableContentVersions, ['ielts-set-1-v1', 'ielts-set-1-v2', 'ielts-set-1-v3', 'ielts-set-1-v4']);
   assert.equal(isIeltsSubmissionVersionCurrent('set-2','ielts-set-2-v1'),true);
 });
 test('browser and persistence use shared scorer; stale check precedes writes', () => {
