@@ -1,8 +1,8 @@
 import { expect, test } from '@playwright/test'
 import { GERMAN_STRUCTURE_QUEST as quest } from '../../src/data/practica/german-structure-quest-config'
 
-for (const form of ['praesens', 'imperativ'] as const) {
-  test(`alemán ${form}: seis niveles, recarga y corrección de partículas`, async ({ page }) => {
+for (const { id: form } of quest.forms) {
+  test(`alemán ${form}: seis niveles, recarga y contrato propio`, async ({ page }) => {
     const errors: string[] = []
     page.on('pageerror', (error) => errors.push(error.message))
     await page.setViewportSize({ width: 390, height: 844 })
