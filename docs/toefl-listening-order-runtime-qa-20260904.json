@@ -1,0 +1,216 @@
+{
+  "auditedAtUtc": "2026-09-04T17:50:45.107Z",
+  "baseUrl": "http://127.0.0.1:3026",
+  "libraryStatus": 200,
+  "rows": [
+    {
+      "mockId": "set-1",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "1bb5e6071789de20339876a111b4927cd21fe3babac86e23d024adb26064720b"
+    },
+    {
+      "mockId": "set-2",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "cf7804faaafd5979cada168639fcf88c1cd9b851c2a6d6539a71aea9302d2c49"
+    },
+    {
+      "mockId": "set-3",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "60de0b95b1eeb56f8d9201214a7f30ec9faa4909b46d045b4c11113bc55e5272"
+    },
+    {
+      "mockId": "set-4",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "9a3d424e28cbd1da2eacd78357751ef07df87afb91d2b7cae4d80082f0ae54bc"
+    },
+    {
+      "mockId": "set-5",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "f23564dd1534872885153541aeec5bab617ee932a218efea56addf40a19f05b4"
+    },
+    {
+      "mockId": "set-6",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "a16c2af3170ddabe7168f27c81cb6961b581f8b5e6ef051e8b3c4159c23c3046"
+    },
+    {
+      "mockId": "set-7",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "2eb2f01d157204f54fb2d01ec14baf59d3a8f2312b362859e04717f4baaee0b5"
+    },
+    {
+      "mockId": "set-8",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "88c7d173e14e6757273ac3cd8276a32a3a09a64138da175bd54874ff386254e9"
+    },
+    {
+      "mockId": "set-9",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "9b7e7474f3b478d37c00fa352ef5c2eccc1b89701b0fde298660bc084229fa23"
+    },
+    {
+      "mockId": "set-10",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "9d9d621f061e52ce373ab20aa60cbe829014bc93f99ccbb59bd44e3c54996e7e"
+    },
+    {
+      "mockId": "set-11",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "96f10ab67c04ca2b96092f0c0042929b8638bb96feb98e290b764da3ae17c8bc"
+    },
+    {
+      "mockId": "set-12",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "1fb31349d622e830b671a6b4d0e493aaf9f4f205fa9e521b845794422750a60d"
+    },
+    {
+      "mockId": "set-13",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "186b6e604dfdc5158b127e76179c553b2cfc05f675dac0cbff1e08049168d6ee"
+    },
+    {
+      "mockId": "set-14",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "7c05a711c8b19dc4c162b4e94dabd5f3cd5b4cb285c0f027de12731dab94111b"
+    },
+    {
+      "mockId": "set-15",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "c5fc6009697e91f2160d933c8c897577076017a22fbef7c376bd0864e1d1a243"
+    },
+    {
+      "mockId": "set-16",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "627032eac3736f746a3b41ff5c49ce3de0c7fa9228ebdeeed2b2a9eea377cad4"
+    },
+    {
+      "mockId": "set-17",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "0fb02337a3b8d1ee205885ffca6a5fa8091373254d0efd30f9d078136733eb92"
+    },
+    {
+      "mockId": "set-18",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "39ffb875aa1a40a3b29603d06b9f4078cd02a177d83cdb6580cb843b7f301026"
+    },
+    {
+      "mockId": "set-19",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "95eb23fe08e615eb965059145fa121d66a80741f25d20fe486cd867270acbf8b"
+    },
+    {
+      "mockId": "set-20",
+      "routeStatus": 200,
+      "scoreStatus": 200,
+      "sections": 8,
+      "questions": 34,
+      "media": 22,
+      "sourceParitySha256": "263c7c86cb7a72845d59526c0c4569027c4d8faea208172936e51e2d79ae49fd"
+    }
+  ],
+  "invalidRoutes": [
+    {
+      "mockId": "set-0",
+      "status": 404
+    },
+    {
+      "mockId": "set-01",
+      "status": 404
+    },
+    {
+      "mockId": "set-21",
+      "status": 404
+    },
+    {
+      "mockId": "set-99",
+      "status": 404
+    }
+  ],
+  "invalidScoreStatus": 400,
+  "approvedOrderProbe": {
+    "status": 200,
+    "correct": 3,
+    "denominator": 34,
+    "itemIds": [
+      "item:t1-l-cr4-fixed-v1",
+      "item:t1-l-m1-cr6-v1",
+      "item:t1-l-m1-cr8-v1"
+    ]
+  }
+}

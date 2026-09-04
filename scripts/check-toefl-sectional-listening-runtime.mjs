@@ -67,5 +67,36 @@ const invalidScore = await request('/api/practica/toefl/listening/score', {
   method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}',
 });
 assert.equal(invalidScore.status, 400);
+
+// Approved Set 1 display moves must preserve the server's canonical option identities.
+const orderPractice = selectToeflListeningPractice(getMock('toefl', 'set-1'));
+const orderResponses = {
+  'item:t1-l-cr4-fixed-v1': 'item:t1-l-cr4-fixed-v1:option-a',
+  'item:t1-l-m1-cr6-v1': 'item:t1-l-m1-cr6-v1:option-c',
+  'item:t1-l-m1-cr8-v1': 'item:t1-l-m1-cr8-v1:option-a',
+};
+const orderResponse = await request('/api/practica/toefl/listening/score', {
+  method: 'POST', headers: { 'content-type': 'application/json' },
+  body: JSON.stringify({
+    objectId: orderPractice.objectId,
+    attemptId: 'approved-order-audit:set-1',
+    closeId: 'approved-order-audit-close:set-1',
+    presentedItemIds: orderPractice.sections.flatMap(section => section.questions.map(question => question.id)),
+    responses: orderResponses,
+  }),
+});
+assert.equal(orderResponse.status, 200);
+const orderScore = await orderResponse.json();
+assert.equal(orderScore.correct, 3);
+assert.equal(orderScore.denominator, 34);
+for (const [itemId, optionId] of Object.entries(orderResponses)) {
+  const outcome = orderScore.outcomes.find(item => item.itemId === itemId);
+  assert.equal(outcome?.status, 'scored', itemId);
+  assert.equal(outcome?.selectedOptionId, optionId, itemId);
+  assert.equal(outcome?.rawPoints, 1, itemId);
+}
 console.log(JSON.stringify({ auditedAtUtc: new Date().toISOString(), baseUrl: base.origin,
-  libraryStatus: library.status, rows, invalidRoutes, invalidScoreStatus: invalidScore.status }, null, 2));
+  libraryStatus: library.status, rows, invalidRoutes, invalidScoreStatus: invalidScore.status,
+  approvedOrderProbe: { status: orderResponse.status, correct: orderScore.correct,
+    denominator: orderScore.denominator, itemIds: Object.keys(orderResponses) },
+}, null, 2));
