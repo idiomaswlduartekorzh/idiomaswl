@@ -429,7 +429,8 @@ duplicar. Harness técnico APPROVE, nueve etapas PASS: 100 pruebas Listening (in
 las diez nuevas), 15 Speaking y nueve mutaciones. Las 108 URLs IELTS, 20 mocks, 480
 audios generales y el catálogo protegido siguen íntegros. Parts 2–4 conservan integridad
 PASS y preparación técnica READY, siempre con publicación BLOCK.
-Informe de esta ejecución: `tmp/ielts-superhub-harness/latest-truth.json`, desde
+Informe histórico (el archivo latest se sustituye en cada ejecución):
+`tmp/ielts-superhub-harness/latest-truth.json`, desde
 `2026-09-04T16:15:19.549Z` hasta `2026-09-04T16:21:06.685Z`; SHA-256
 `47dc9eda1c71aac19c111aa09baca1ea3ba240a10c9006c645ccd136933d6175`.
 ESLint del código final, TypeScript aislado del módulo y `git diff --check`: exit 0.
@@ -438,11 +439,71 @@ incremento no cambia interfaces activas ni aprobaciones humanas. Checkpoint sól
 en la USB: cuatro archivos, sin cambios ajenos ni TOEFL. El respaldo remoto sigue
 pendiente de autorización; no hubo push, merge, PR ni despliegue.
 
-Próximo avance acotado: renderer privado con fixtures sintéticos para matching, seguido
-de notes, sin importar candidatas ni habilitar rutas. Mantener los rechazos del projector
-y el estado humano pendiente. Antes de editar componentes, leer guías locales de Next
-y diseño; probar el camino exacto sin build global. La cuantificación de demanda sigue
-pendiente de datos verificables.
+#### Renderer privado de matching — 4 de septiembre de 2026
+
+`src/components/ielts/MatchingDraftFields.tsx` implementa un componente controlado con
+selects nativos, instrucciones de reutilización siempre visibles, IDs por instancia y
+errores asociados a cada pregunta. No elimina opciones al repetir una letra, no evalúa
+respuestas y no mueve el foco por su cuenta. Se importa bajo una frontera cliente; no
+se pasan callbacks a través de RSC. No hay imports desde rutas activas, fuentes privadas,
+audio, registro ni projector público. Los bloqueos de matching y notes se conservan.
+
+El fixture `tests/fixtures/ielts-matching-draft-preview.tsx` repite tres prompts sintéticos
+en dos instancias y no es un examen. Su contenedor valida, enfoca el primer error después
+del commit, permite reiniciar o deshabilitar controles y cuenta cambios observados. La
+revisión adversarial independiente detectó un P2 de foco anterior al commit; se corrigió
+con un único efecto de layout en el contenedor, sin introducir efectos en el componente.
+
+Evidencia estrecha del código final:
+
+- 17/17 pruebas aprobadas: diez del contrato de entradas y siete del renderer, incluidas
+  asociaciones SSR, repetición, aislamiento de IDs, escape, rechazo de getters y callbacks
+  únicos que no cambian respuestas al estar deshabilitados. Sesión `19454` completada.
+- TypeScript aislado de componente y fixture, con tipos CSS de Next, sin emisión ni caché
+  incremental: exit 0. ESLint de los cinco archivos JS/TS nuevos: exit 0; la última prueba
+  de callbacks se revisó de nuevo con ESLint, sesión `1027` completada con exit 0.
+- Preview compilado con el webpack y TypeScript ya instalados, sin dependencias nuevas,
+  build global ni caché. El loader final ESM compiló con exit 0 en la sesión `47611`.
+  Artefacto: `tmp/ielts-draft-ui-i6k1DT`. Los temporales están únicamente en la USB.
+
+Reproducción del fixture: `node scripts/preview-ielts-listening-draft-ui.mjs` compila en
+un directorio temporal único y sirve únicamente `/` y `/fixture.js` en un puerto efímero
+de `127.0.0.1`; `--build-only` no inicia servidor. Tiene noindex, no-store y autoapagado
+a los 30 minutos. No es una ruta de la aplicación ni sustituye su integración Next.
+
+Navegador real: al no estar disponibles los CLI de agent-browser y Playwright se usó CUA,
+sin instalarlos. Se verificaron seis controles etiquetados, ausencia inicial de errores,
+seis errores tras validar y foco en Q26 con las descripciones ya presentes. A/A/C marcó
+las dos repeticiones bajo once-only; A/A/A no produjo error bajo may-repeat. Corregir,
+borrar y reponer elecciones mantuvo un callback por cambio y terminó sin errores.
+Se inspeccionaron capturas a 390×844 y 1280×900: sin overflow horizontal, selects de
+46 px de altura, una columna móvil y dos columnas de escritorio.
+
+Límite de esta evidencia: los eventos CDP de ratón/teclado expiraron repetidamente al
+alternar el checkbox. No se certifican el toggle disabled en navegador, el recorrido
+completo por teclado, lector de pantalla ni navegación/RSC de Next. Las pruebas unitarias
+de disabled no sustituyen esa comprobación real. La consola observada sólo mostró un
+error de una extensión ajena al fixture. El viewport se restableció, la pestaña se cerró
+y el servidor anterior terminó con exit 0 (sesión `9453`); no dejarlo ni duplicarlo.
+
+Auditoría técnica ampliada terminada sobre estos cambios: sesión `75755` completada
+con exit 0; no reanudar ni duplicar. El comando
+`npm run harness:ielts -- --compare-git-ref=origin/main`, con TMPDIR en la USB, produjo
+APPROVE técnico y nueve etapas PASS: 107 pruebas Listening, 15 Speaking y nueve mutaciones
+del harness. Las 108 URLs IELTS, 20 mocks, 480 audios y el catálogo protegido permanecen
+íntegros. Parts 2–4 tienen integridad PASS y preparación técnica READY; publicación BLOCK.
+Informe vigente: `tmp/ielts-superhub-harness/latest-truth.json`, desde
+`2026-09-04T17:13:43.770Z` hasta `2026-09-04T17:21:48.326Z`, SHA-256
+`efca394946e6437fdcbf463e8b9bbc152c54395d7346a8158c45b9e4daf00e39`.
+No se ejecutaron build global, TypeScript global ni release harness para este incremento.
+Este APPROVE no cierra la prueba de navegador pendiente ni las aprobaciones humanas.
+
+Checkpoint privado de ocho archivos, únicamente en la USB. `git diff --check` aprobado.
+No hay procesos de validación pendientes de este incremento.
+Próximo avance acotado: retomar la comprobación de teclado/disabled si los eventos del navegador funcionan;
+después, renderer privado de notes. No habilitar rutas ni importar candidatas. La escucha
+humana y la cuantificación de demanda siguen pendientes, y el respaldo remoto continúa
+requiriendo autorización. No hay push, merge, PR ni despliegue de este incremento.
 
 El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
 el control automático y se solicitó autorización explícita para enviarlo al repositorio

@@ -1,0 +1,39 @@
+.group {
+  --matching-ink: var(--wl-on-panel, #102c46);
+  --matching-muted: var(--wl-on-panel-soft, #566a7b);
+  --matching-line: var(--wl-panel-line, #d3dee5);
+  --matching-paper: var(--wl-surface-card, #fff);
+  --matching-soft: var(--wl-panel-raised, #edf3f5);
+  --matching-error: var(--wl-on-panel-alert, #b83243);
+  --matching-focus: var(--wl-on-panel-teal, #137b82);
+  background: var(--matching-paper);
+  border: 1px solid var(--matching-line);
+  color: var(--matching-ink);
+  min-width: 0;
+  font-family: inherit;
+}
+.header { background: var(--matching-soft); padding: 1.2rem; }
+.header h2 { font-size: 1.5rem; letter-spacing: -.025em; margin: .35rem 0 .6rem; }
+.header p { color: var(--matching-muted); line-height: 1.6; margin: 0; }
+.header .range { color: var(--matching-error); font: 700 .75rem var(--mono, ui-monospace, monospace); }
+.key { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; list-style: none; margin: 0; padding: 1rem 1.2rem; }
+.key li { align-items: baseline; display: flex; gap: .6rem; min-width: 0; }
+.key b { color: var(--matching-error); font-family: var(--mono, ui-monospace, monospace); }
+.key span { overflow-wrap: anywhere; }
+.tasks { list-style: none; margin: 0; padding: 0; }
+.task { align-items: start; border-top: 1px solid var(--matching-line); display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr) minmax(12rem, .85fr); padding: 1.2rem; }
+.label { align-items: baseline; display: flex; font-weight: 700; gap: .7rem; line-height: 1.6; min-width: 0; overflow-wrap: anywhere; }
+.number { background: var(--matching-ink); color: #fff; flex: 0 0 auto; font: 700 .75rem var(--mono, ui-monospace, monospace); padding: .35rem; }
+.response { min-width: 0; }
+.response select { background: var(--matching-paper); border: 1px solid var(--matching-muted); border-radius: 4px; color: var(--matching-ink); cursor: pointer; font: inherit; font-size: 1rem; min-height: 46px; padding: .55rem .65rem; width: 100%; }
+.response select:focus-visible { outline: 3px solid var(--matching-focus); outline-offset: 3px; }
+.response select[aria-invalid='true'] { border: 2px solid var(--matching-error); }
+.response select:disabled { cursor: not-allowed; opacity: .65; }
+.error { color: var(--matching-error); font-size: .875rem; line-height: 1.5; margin: .6rem 0 0; }
+@media (max-width: 600px) {
+  .task { grid-template-columns: minmax(0, 1fr); gap: .75rem; }
+}
+@media (forced-colors: active) {
+  .number { border: 1px solid CanvasText; }
+  .response select:focus-visible { outline-color: Highlight; }
+}
