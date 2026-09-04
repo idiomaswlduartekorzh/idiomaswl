@@ -67,6 +67,24 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 ## 4. Trabajos activos que todavía no deben desplegarse
 
+### Atribución WhatsApp — 4 de septiembre de 2026
+
+- Rama: `codex/whatsapp-attribution-admin`; base `96e817fc` de `origin/main`.
+- Estado: `EN_VALIDACION`. Responsable: Codex, tarea de tags y panel de José.
+- Alcance: captura de origen en enlaces públicos de WhatsApp, referencias de contacto,
+  confirmación manual o por webhook y vista privada `/dashboard/admin/contactos`.
+- Compartidos reservados: `src/app/layout.tsx`, `WhatsAppFloat.tsx`, cabecera de
+  `JoseDashboard.tsx`, webhook WhatsApp, `config/production-baseline.json` y una migración aditiva de Supabase.
+- Dependencias: no modificar ni activar la IA nativa de WhatsApp; no tocar precios/pagos.
+- Producción: pendiente de migración, validaciones y autorización de activación;
+  no hay SHA integrado ni deployment de este cambio.
+- Decisión de integración: `MERGE` solo tras actualizar desde `origin/main` y validar.
+- Validado: 17 pruebas de contrato/API/SQL/chatbot, TypeScript acotado, ESLint,
+  guardianes completos de prebuild y vista local en móvil/escritorio.
+- Pendiente real: TypeScript/build globales (detenidos por contención con otra
+  compilación), repetir QA de caída de DB y autorizar migración/activación productiva.
+  Detalle: [`whatsapp-attribution.md`](whatsapp-attribution.md).
+
 | Trabajo | Rama/SHA de corte | Estado observado | Condición para publicar |
 |---|---|---|---|
 | Habla acompañada Ruso A2 | `main` · `58152f88`; artefacto `dpl_41Vp3YvdCacAqMXmPvuWm8cZrDPp` | `INTEGRADO`; 20 escenarios y artefacto Vercel `READY`. La promoción chocó con la cuota diaria y los tres alias se devolvieron al deployment público anterior. | Promover el artefacto exacto o un deployment posterior de `main`; exigir 64 rutas rusas, dos inválidas y regresiones públicas antes de marcar `DESPLEGADO`. |

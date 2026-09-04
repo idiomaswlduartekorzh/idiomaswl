@@ -48,6 +48,8 @@ export default function WhatsAppFloat() {
   const href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
   function handleClick() {
+    // The global listener tracks every public CTA when attribution is enabled.
+    if (process.env.NEXT_PUBLIC_WHATSAPP_ATTRIBUTION_ENABLED === 'true') return;
     window.dataLayer = window.dataLayer ?? [];
     window.dataLayer.push({
       event: 'click_whatsapp',

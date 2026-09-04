@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import RouteThemeScope from "@/components/RouteThemeScope";
+import WhatsAppAttribution from "@/components/WhatsAppAttribution";
 
 const GTM_ID = 'GTM-57NXLPZV';
 
@@ -130,6 +131,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <Suspense fallback={null}><RouteThemeScope /></Suspense>
+        <Suspense fallback={null}><WhatsAppAttribution /></Suspense>
         {/* Google Tag Manager (noscript) — immediately after <body> open */}
         {CARGAR_GTM && (
           <noscript>
