@@ -17,6 +17,9 @@ for (const key of Object.keys(args)) {
 }
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const words = text => (text ?? '').trim().split(/\s+/).filter(Boolean).length;
+// IELTS treats a phone number or numeric range as a number even when visual
+// grouping inserts spaces. Do not misreport those groups as multiple words.
+const answerUnits = text => /^\s*[\d\s()+./–—-]+\s*$/u.test(String(text)) ? 1 : words(text);
 const normal = text => String(text).toLowerCase().normalize('NFKC')
   .replace(/[’']/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 const cachedAssets = new Map();
@@ -93,7 +96,7 @@ for (let n = 1; n <= 20; n++) {
         if (!b.answers?.length || b.answers.some(a => !String(a).trim())) add('EMPTY_ANSWER', `${q.id}:${b.num}`, 'critical');
         const writtenLimit = q.groupLabel?.match(/(?:NO MORE THAN |WRITE |CHOOSE )?(ONE|TWO|THREE) WORDS?/i)?.[1]?.toUpperCase();
         const limit = b.maxWords ?? ({ ONE: 1, TWO: 2, THREE: 3 })[writtenLimit];
-        if (limit && b.answers.some(a => words(a) > limit)) add('ANSWER_WORD_LIMIT_REVIEW', `${section.skill} ${b.num}: at least one accepted variant exceeds ${limit} words; check the displayed instruction and hyphen/number rules`, 'high');
+        if (limit && b.answers.some(a => answerUnits(a) > limit)) add('ANSWER_WORD_LIMIT_REVIEW', `${section.skill} ${b.num}: at least one accepted variant exceeds ${limit} words; check the displayed instruction and hyphen/number rules`, 'high');
         // Judgement answers describe the passage; they need not occur in it.
         if (b.answers.every(a => ['true', 'false', 'yes', 'no', 'not given'].includes(normal(a)))) continue;
         const textual = b.answers.filter(a => /[a-z]/i.test(a) && !/\d/.test(a));

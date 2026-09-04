@@ -80,7 +80,9 @@ test('Set 1 old tabs fail closed; historical W/S remains reviewable', () => {
   for (const version of [undefined,null,'ielts-set-1-v1',{},'ielts-set-1-v3']) assert.equal(isIeltsSubmissionVersionCurrent('set-1',version),false);
   assert.equal(isIeltsSubmissionVersionCurrent('set-1','ielts-set-1-v2'),true);
   assert.ok(getIeltsReviewBlueprint('set-1').reviewableContentVersions.includes('ielts-set-1-v1'));
-  assert.equal(isIeltsSubmissionVersionCurrent('set-2','ielts-set-2-v1'),true);
+  for (const version of [undefined,null,'ielts-set-2-v1',{},'ielts-set-2-v3']) assert.equal(isIeltsSubmissionVersionCurrent('set-2',version),false);
+  assert.equal(isIeltsSubmissionVersionCurrent('set-2','ielts-set-2-v2'),true);
+  assert.ok(getIeltsReviewBlueprint('set-2').reviewableContentVersions.includes('ielts-set-2-v1'));
 });
 test('browser and persistence use shared scorer; stale check precedes writes', () => {
   const read = path => fs.readFileSync(new URL(path,import.meta.url),'utf8');

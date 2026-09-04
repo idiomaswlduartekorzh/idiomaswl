@@ -1,0 +1,42 @@
+{
+  "content_version": "ielts-set-2-v2",
+  "model_id": "eleven_flash_v2_5",
+  "credits_per_character": 0.5,
+  "api_price_usd_per_1000_characters": 0.05,
+  "voice_settings": {
+    "stability": 0.55,
+    "similarity_boost": 0.75,
+    "style": 0.08,
+    "use_speaker_boost": true
+  },
+  "profiles": {
+    "announcer": {
+      "voice_id": "onwK4e9ZLuTAKqWW03F9",
+      "voice_name": "Daniel - Steady Broadcaster"
+    },
+    "receptionist": {
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "voice_name": "Sarah - Mature, Reassuring, Confident"
+    },
+    "customer": {
+      "voice_id": "iP95p4xoKVk53GoZ742B",
+      "voice_name": "Chris - Charming, Down-to-Earth"
+    },
+    "adviser": {
+      "voice_id": "cjVigY5qzO86Huf0OWal",
+      "voice_name": "Eric - Smooth, Trustworthy"
+    },
+    "student_woman": {
+      "voice_id": "PBjLN8WJmwHEGB1u1UzI",
+      "voice_name": "WL en · Maya"
+    },
+    "student_man": {
+      "voice_id": "mWRBtRP92mUXZzi4RZ0Y",
+      "voice_name": "WL en · Leo"
+    },
+    "lecturer": {
+      "voice_id": "XrExE9yKIg1WjnnlVkGX",
+      "voice_name": "Matilda - Knowledgeable, Professional"
+    }
+  }
+}

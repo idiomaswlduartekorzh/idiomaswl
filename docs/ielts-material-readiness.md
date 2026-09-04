@@ -17,7 +17,8 @@ No se modifica ni silencia ese check; no está causado por los cambios de IELTS.
 | Sets | MP3 local/público | Textos Reading / imagen Writing 1 | Correspondencia del audio | Decisión académica |
 |---|---|---|---|---|
 | 1 | Sí / 200 | 3 / sí | Muestra inicial coherente; clave objetiva fijada por auditoría anterior | Primera prioridad de pulido; no certificación integral |
-| 2–4 | Sí / 200 | 3 por set / sí | **Desajuste confirmado en la primera conversación** | No recomendar sus bandas como diagnóstico válido |
+| 2 | Sí / 200, pero MP3 antiguo | Reading v2: 3 / sí | **MP3 antiguo desalineado; v2 original pendiente de generación** | Candidato v2 no publicable todavía |
+| 3–4 | Sí / 200 | 3 por set / sí | **Desajuste confirmado en la primera conversación** | No recomendar sus bandas como diagnóstico válido |
 | 5–12 | Sí / 200 | 3 por set / sí | Fragmento 02:00–04:00 coherente con el guion | Candidatos siguientes, NO aprobados |
 | 13–20 | No / 404 | 3 por set / sí | No evaluable sin audio | Incompletos |
 
@@ -31,7 +32,7 @@ Conteo orientativo de Reading (separación por espacios; incluye títulos incrus
 | Set | Palabras | Set | Palabras |
 |---:|---:|---:|---:|
 | 1 | 2618 | 11 | 1933 |
-| 2 | 1551 | 12 | 1880 |
+| 2 | 2557 (candidato v2) | 12 | 1880 |
 | 3 | 1406 | 13 | 1859 |
 | 4 | 1613 | 14 | 1901 |
 | 5 | 1933 | 15 | 1860 |
@@ -41,7 +42,7 @@ Conteo orientativo de Reading (separación por espacios; incluye títulos incrus
 | 9 | 1688 | 19 | 1942 |
 | 10 | 1611 | 20 | 1985 |
 
-Solo Set 1 entra en el rango de 2150–2750 palabras del [formato Academic Reading](https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading).
+Set 1 y el candidato v2 de Set 2 entran en el rango de 2150–2750 palabras del [formato Academic Reading](https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading).
 No basta con alargar textos: cambia la dificultad y obliga a revisar de nuevo sus preguntas y clave.
 
 ## Hallazgos con trazabilidad
@@ -52,7 +53,8 @@ No basta con alargar textos: cambia la dificultad y obliga a revisar de nuevo su
 - Set 7, Reading 21: admite `formal`, `organised`, `structured`, pero ninguna aparece en el pasaje aunque exige palabras del texto.
 - Set 7, Reading 23: admite `hara hachi bu` (tres palabras) pero la consigna limita a dos. Debe revisarse junto con todo el grupo, no cambiar una banda a ciegas.
 - Set 1, Listening 40: la clave aprobada es `expansion`; el guion abreviado dice `expand`. Es una limitación del guion, NO evidencia para reemplazar la clave. Queda pendiente transcripción íntegra fiel al audio.
-- El filtro léxico también señala Set 2 L6 y R30. L6 es un falso positivo por la expresión `two pounds fifty` frente a `2.50`; R30 requiere revisión contextual.
+- El candidato v2 de Set 2 ya resuelve las banderas anteriores: L6 conserva solo formatos
+  numéricos compatibles con el campo `£`; R30 ahora exige `mind`, palabra literal del pasaje.
 - La UI numeraba MCQ por posición en la sección, no por el número global. Se corrige usando el mismo número del identificador que emplea el contrato de calificación.
 
 Las comprobaciones de audio usaron transcripción automática LOCAL de fragmentos, contrastada con guiones y preguntas. No se tomó ASR como clave oficial ni se aprobó todo un audio por una muestra. Las repeticiones de ASR durante pausas silenciosas se descartaron como artefactos de transcripción.
@@ -79,6 +81,11 @@ Cada set avanza por separado. Ningún contador de archivos aprueba contenido.
 
 Orden sugerido: cerrar Set 1, luego auditar 5, después 6–12 uno por uno; reconstruir 2–4 y completar 13–20 antes de usarlos como simulacros completos.
 Pendiente de decisión: bloqueo temporal o advertencia para los 11 sets con audio ausente/desalineado. No se ha modificado el acceso a los sets en esta entrega.
+
+La reconstrucción de Set 2 se documenta en
+[`ielts-set2-rebuild-2026-09-04.md`](ielts-set2-rebuild-2026-09-04.md). Aunque su Reading,
+guion y clave candidata ya pasan la revisión estructural, `check-ielts-answer-keys -- --set=2`
+debe permanecer en `NOT_AUDITED` hasta generar, escuchar y mapear el MP3 v2 completo.
 
 ## Límites de esta entrega
 

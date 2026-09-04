@@ -16,57 +16,75 @@ const mock: MockExam = {
       audioUrl: '/audio/ielts/ielts-listening-set-2.mp3',
       title: 'Listening — Section 1: Booking a Sports Facility',
       instructions: 'You will hear a conversation between a customer and a sports centre receptionist. Listen and answer Questions 1–10.',
-      transcript: `RECEPTIONIST: Good morning, Riverside Sports Centre. How can I help?
+      transcript: `RECEPTIONIST: Good morning, Riverside Sports Centre. This is Emma speaking. How can I help?
 
-CUSTOMER: Hello, I'd like to book one of your tennis courts for this weekend, please.
+CUSTOMER: Hello. I'd like to book one of your tennis courts for this weekend, please. I tried the website, but it kept asking me for a membership number and I don't have one yet.
 
-RECEPTIONIST: Certainly. Can I take your name?
+RECEPTIONIST: That's fine. Non-members can book by phone. Before I check availability, can I take your name?
 
-CUSTOMER: Yes, it's Daniel Harris.
+CUSTOMER: Yes, it's Daniel Harris. Harris is H-A-R-R-I-S.
 
-RECEPTIONIST: And a contact number?
+RECEPTIONIST: Thank you. I can see a Daniel Harris in our system with a number ending in 820, but that may be someone else.
 
-CUSTOMER: My mobile is 078 5501 3742.
+CUSTOMER: It must be. My mobile is 078 5501 3742.
 
-RECEPTIONIST: Thank you. What day were you thinking?
+RECEPTIONIST: Let me read that back: 078 5501 3742.
 
-CUSTOMER: Saturday, if possible. In the afternoon.
+CUSTOMER: That's correct.
 
-RECEPTIONIST: Let me check. We have Court 3 free from two o'clock to four o'clock.
+RECEPTIONIST: Now, were you hoping to play on Sunday?
 
-CUSTOMER: That would be perfect. We're a group of four players.
+CUSTOMER: Sunday was my first thought, but two members of the group are working then. Could we make it Saturday instead, preferably in the afternoon?
 
-RECEPTIONIST: Great. The cost for that slot is twelve pounds per hour, so that's twenty-four pounds in total.
+RECEPTIONIST: Certainly. The indoor courts are busy, although Court 3 is free from two o'clock to four. There is also an outdoor court at five, but the weather forecast is uncertain.
 
-CUSTOMER: I see. Do you offer any kind of membership discount?
+CUSTOMER: Court 3 sounds safer. There'll be four players. A fifth friend may come to watch, but he won't be playing.
 
-RECEPTIONIST: Yes, members receive a twenty percent discount, bringing it to just over nineteen pounds.
+RECEPTIONIST: Four players, then. The normal court fee is twelve pounds per hour. As you want two hours, the booking itself comes to twenty-four pounds.
 
-CUSTOMER: I'm not a member yet. Is it easy to join?
+CUSTOMER: Right. Does that include use of the changing rooms?
 
-RECEPTIONIST: Very straightforward. You fill in a form online or in person. Annual membership is sixty-five pounds and includes unlimited use of the gym and swimming pool, as well as discounted court hire.
+RECEPTIONIST: Yes. Lockers are free if you bring a one-pound coin as a refundable deposit. Towels cost extra.
 
-CUSTOMER: That sounds good. Can I also book a coach for a session?
+CUSTOMER: And do you offer any kind of membership discount on the court?
 
-RECEPTIONIST: Absolutely. Our head coach, Mr Patel, is available on Saturday from ten to twelve in the morning.
+RECEPTIONIST: Members receive twenty percent off court hire. That would bring today's booking to nineteen pounds twenty, but you would first need to join.
 
-CUSTOMER: I'd prefer the afternoon, to match our court booking.
+CUSTOMER: Is it difficult?
 
-RECEPTIONIST: In that case, our other coach, Ms Carter, is available from half past two.
+RECEPTIONIST: Not at all. You fill in a form online or here at reception. Annual membership is sixty-five pounds. We used to charge seventy, so the website may still show the old amount on one of its information pages.
 
-CUSTOMER: Brilliant. We'll take that.
+CUSTOMER: What does the membership cover?
 
-RECEPTIONIST: Shall I put you down for thirty minutes or a full hour?
+RECEPTIONIST: Unlimited use of the gym and swimming pool at off-peak times, plus the court discount. Exercise classes, coaching, and equipment hire are charged separately.
 
-CUSTOMER: A full hour, please.
+CUSTOMER: I'll think about joining. For this booking, can I also arrange a coach for us?
 
-RECEPTIONIST: Done. Is there anything else you need?
+RECEPTIONIST: Of course. Our head coach, Mr Patel, is available on Saturday from ten until twelve in the morning.
 
-CUSTOMER: Do you have racket hire?
+CUSTOMER: That's too early for two of us. We need someone during the afternoon court booking.
 
-RECEPTIONIST: We do — two pounds fifty per racket per session. You can collect them from the equipment room near the main entrance.
+RECEPTIONIST: Then Ms Carter would be the best option. She had an opening at two, but another customer has just taken it. Her next session begins at half past two.
 
-CUSTOMER: Perfect. Thank you very much.`,
+CUSTOMER: Half past two is fine.
+
+RECEPTIONIST: Coaching can be booked for thirty minutes or a full hour. Beginners often start with half an hour.
+
+CUSTOMER: We have played before, and there are four of us, so a full hour would be better.
+
+RECEPTIONIST: All right. One hour with Ms Carter from two thirty, while you keep the court until four. She'll meet you beside Court 3.
+
+CUSTOMER: Great. Two of us need rackets as well. Are they available to hire?
+
+RECEPTIONIST: Yes, they're two pounds fifty per racket for the session. That isn't included in membership, by the way. Reserve them now and collect them from the equipment room near the main entrance. Please don't queue at reception for them.
+
+CUSTOMER: The equipment room — got it. Do we pay everything today?
+
+RECEPTIONIST: Just the court fee today. Coaching and racket hire can be paid when you arrive. Please come fifteen minutes early so there is time to collect the equipment and change.
+
+CUSTOMER: Perfect. Thank you very much.
+
+RECEPTIONIST: You're welcome. I'll send the confirmation to your phone now.`,
       questions: [
         {
           type: 'formgroup',
@@ -93,7 +111,7 @@ Racket hire: £{{6}} per racket`,
             { num: 3, answers: ['four', '4'], maxWords: 1 },
             { num: 4, answers: ['12', 'twelve'], maxWords: 1 },
             { num: 5, answers: ['65', 'sixty-five', 'sixty five'], maxWords: 2 },
-            { num: 6, answers: ['2.50', '2½', 'two fifty'], maxWords: 2 },
+            { num: 6, answers: ['2.50', '2.5', '2½'], maxWords: 1 },
           ],
         },
         {
@@ -101,11 +119,13 @@ Racket hire: £{{6}} per racket`,
           id: 'l1-table',
           part: 1,
           qRange: [7, 10],
-          groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
-          headers: ['Coach', 'Availability on Saturday', 'Session length booked', 'Included with membership'],
+          groupLabel: 'Complete the table below.\nWrite NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.',
+          headers: ['Item', 'Booking detail'],
           rows: [
-            ['Mr Patel', { num: 7, answers: ['morning', '10–12', '10 to 12'], maxWords: 1 }, 'N/A', 'No'],
-            ['Ms Carter', { num: 8, answers: ['2:30', 'half past two', '14:30'], maxWords: 3 }, { num: 9, answers: ['one hour', '1 hour', 'hour'], maxWords: 2 }, { num: 10, answers: ['no', 'No'], maxWords: 1 }],
+            ['Mr Patel — available', { num: 7, answers: ['morning', '10–12', '10-12'], maxWords: 1 }],
+            ['Ms Carter — session starts', { num: 8, answers: ['2:30', '14:30'], maxWords: 1 }],
+            ['Coaching session booked for', { num: 9, answers: ['one hour', '1 hour', 'hour'], maxWords: 2 }],
+            ['Rackets collected from', { num: 10, answers: ['equipment room'], maxWords: 2 }],
           ],
         },
       ],
@@ -117,19 +137,27 @@ Racket hire: £{{6}} per racket`,
       audioUrl: '/audio/ielts/ielts-listening-set-2.mp3',
       title: 'Listening — Section 2: Campus Orientation Talk',
       instructions: 'You will hear a talk given to new students during a campus orientation. Listen and answer Questions 11–20.',
-      transcript: `Welcome, everyone, to Greenfield University. I'm James, one of the student advisors, and I'll be giving you a quick overview of the campus and the services available to you.
+      transcript: `Welcome to Greenfield University. I'm James, one of the student advisers, and this short orientation is about services you may need during your first few weeks. You will receive a campus map at the end, so for now concentrate on what each service does and when it is available.
 
-Let's start with the library. The main library is open seven days a week — from eight in the morning until ten at night on weekdays, and nine to six on weekends. You'll need your student card to access the building after six in the evening. The library holds over 400,000 physical books and gives you access to more than 200 academic databases online. If a book you need isn't available here, you can request an inter-library loan, which usually takes three to five working days.
+I'll begin with the main library, the tall brick building opposite the science laboratories. It opens seven days a week. From Monday to Friday, the hours are eight in the morning until ten at night. At weekends, it opens an hour later, at nine, and closes at six. During examinations we sometimes extend the weekday closing time to midnight, but the normal closing time is ten p.m.
 
-Next, the Student Support Centre. This is located in the Fleming Building, just to the left of the main gate as you come in. It handles a wide range of services — academic advice, welfare support, and financial guidance. They also run a peer mentoring programme where second and third-year students are paired with first-years to help with the transition to university life.
+You can enter freely during the day. After six p.m., however, the doors operate electronically and you must use your student card. A passport or a photograph of your enrolment letter will not open them. If your card has not arrived, staff at the security desk can issue a temporary pass.
 
-The health centre is on the south side of the campus, next to the sports hall. You should register as soon as possible — appointments can be booked online or by phone. There is a pharmacist on site on Tuesdays and Thursdays.
+The library holds more than four hundred thousand printed books and provides access to over two hundred academic databases. Many first-year texts have several copies in the short-loan collection. When a title is not held here, you can request an inter-library loan. An ordinary request usually arrives within three to five working days. There is a one-day express service, but it carries a fee and is intended for urgent research rather than routine reading.
 
-Regarding accommodation: if you're in university halls, your warden is your first point of contact for any issues. Each hall also has a common room that stays open until midnight.
+Now, the Student Support Centre. A few of you visited its old office beside the cafeteria during the summer. It has moved to the Fleming Building, immediately to the left of the main gate. The centre provides academic advice, welfare support, and financial guidance. Sports memberships are handled at the sports hall, while book loans remain the library's responsibility, so please go to the correct desk.
 
-Finally, transport. The university operates a free shuttle bus between the north campus, the main campus, and the train station. It runs every fifteen minutes from seven in the morning until eleven at night. You don't need to book — just turn up and show your student card.
+The centre also runs our peer mentoring programme. Volunteer students in their second or third year are paired with newcomers. A mentor cannot change your course registration, but can explain university routines, introduce clubs, and help you decide whom to contact when a problem arises. Registration for mentoring closes next Friday.
 
-Please feel free to ask questions at the end — we want to make sure your first weeks here go smoothly.`,
+For medical care, use the health centre on the south side of campus. It is next to the sports hall, not inside the hospital building across the road. New students should register now rather than wait until they become ill. Routine appointments can be booked online or by telephone, and urgent cases are assessed at reception. A pharmacist is on site on Tuesdays and Thursdays. The leaflet printed last month says Wednesday, but that session has now moved to Thursday.
+
+Students in university accommodation should remember that the central accommodation office deals mainly with contracts and payments. If a heater stops working, a neighbour is making excessive noise, or you lose access to your room, your hall warden is the first person to contact. Every hall has a warden on duty overnight. Common rooms remain open until midnight, although kitchens on residential floors close at eleven for safety checks.
+
+Finally, transport. The university operates a free shuttle linking the north campus, the main campus, and the train station. Buses run every fifteen minutes from seven in the morning. At peak times you may see an extra bus after only seven or eight minutes, but the published frequency is fifteen minutes. The final service leaves the main campus at eleven p.m. A separate city bus continues after midnight, but that one is not free.
+
+There is no need to reserve a seat on the university shuttle. Show your student card when you board. Bicycles cannot be carried inside, although there are secure cycle racks at each stop. Details of accessibility and the weekend timetable are on the transport page.
+
+That covers the main services. Please keep your questions until the campus tour finishes, when advisers will be available in the entrance hall.`,
       questions: [
         {
           type: 'multiselect',
@@ -172,8 +200,8 @@ Transport
           blanks: [
             { num: 13, answers: ['10 p.m.', '10pm', 'ten'], maxWords: 2 },
             { num: 14, answers: ['6', 'six'], maxWords: 1 },
-            { num: 15, answers: ['3–5', 'three to five', 'three-five'], maxWords: 3 },
-            { num: 16, answers: ['sports hall', 'sports centre'], maxWords: 2 },
+            { num: 15, answers: ['3–5', '3-5'], maxWords: 1 },
+            { num: 16, answers: ['sports hall'], maxWords: 2 },
             { num: 17, answers: ['Thursdays', 'Thursday'], maxWords: 1 },
             { num: 18, answers: ['warden'], maxWords: 1 },
             { num: 19, answers: ['15', 'fifteen'], maxWords: 1 },
@@ -189,39 +217,73 @@ Transport
       audioUrl: '/audio/ielts/ielts-listening-set-2.mp3',
       title: 'Listening — Section 3: Discussion about Renewable Energy Project',
       instructions: 'You will hear two students discussing their group project on renewable energy. Listen and answer Questions 21–30.',
-      transcript: `SARAH: Hi Tom. Have you had a chance to look at the feedback from Professor Jenkins on our renewable energy project?
+      transcript: `SARAH: Hi, Tom. Have you had a chance to read Professor Jenkins's feedback on our renewable energy project?
 
-TOM: Yes — overall I thought it was quite positive. She liked the section on solar power, but said we need to develop our argument about wind energy more.
+TOM: Yes. I expected far more criticism, actually. She thought the structure was clear and she particularly liked the solar-power section. The problem is our treatment of wind energy. She says it needs to be developed.
 
-SARAH: I agree. I think we relied too much on statistics and not enough on case studies. Real-world examples would make it more convincing.
+SARAH: I saw that. At first I thought she meant we needed more statistics, but her note says almost the opposite. We already have several pages of figures and hardly any case studies. She wants real-world examples to show what the statistics mean.
 
-TOM: That's a good point. I found a report from the Danish government on their offshore wind programme — apparently they now get over 50% of their electricity from wind. That's a compelling example.
+TOM: That makes sense. I found a report from the Danish government about its offshore wind programme. It says the country now gets over fifty percent of its electricity from wind.
 
-SARAH: Perfect. Should we add a new section or revise what we already have?
+SARAH: Over fifty percent from wind? That's stronger than the solar example I found for Spain.
 
-TOM: I think revise. Adding a new section might make the report too long. Professor Jenkins also commented that our introduction was too vague.
+TOM: Yes. The report also discusses public ownership and the cost of connecting offshore farms, but those details may take us away from our main argument.
 
-SARAH: Right, she wants a clearer thesis statement from the start.
+SARAH: We could use Denmark as a short case study and keep the connection costs for the limitations section. Should we create a completely new section for it?
 
-TOM: Exactly. Now, what about the conclusion? I felt it was quite weak.
+TOM: I don't think so. We're already close to the word limit. I'd revise the existing wind section: remove one of the tables, then use that space for the case study.
 
-SARAH: Yes, we basically just summarised what we'd said. We need to make some stronger recommendations.
+SARAH: Agreed. So we're revising what we have, not adding another section. What did you make of her comment on the introduction?
 
-TOM: Like what?
+TOM: She called it vague. We begin with a general statement about climate change, but we don't tell the reader what the report will argue.
 
-SARAH: Well, we could recommend that governments set mandatory renewable energy targets — say, sixty percent renewables by 2035.
+SARAH: Then I'll rewrite the final sentence as a clearer thesis statement. Perhaps we should say that a reliable transition needs a mixture of technologies rather than presenting solar and wind as competitors.
 
-TOM: Good idea. We could also suggest increased investment in grid infrastructure, since that's often the bottleneck.
+TOM: Good. She also circled the second paragraph because it repeats the background, so that can be shortened. Did she say anything about our research method?
 
-SARAH: Agreed. One thing I wanted to ask you about is the map we were asked to include showing wind farm locations. Did you manage to create it?
+SARAH: Only that we should explain why we compared national data with two local projects. I can add one sentence on that.
 
-TOM: I started it but I'm having trouble with the software. The labels aren't positioning correctly.
+TOM: Fine. The conclusion worries me more. It feels weak.
 
-SARAH: I can help with that. I used the same programme for my geography project.
+SARAH: It is weak. We basically repeat the introduction and summarise everything we've already said. A conclusion should draw the evidence together and make recommendations.
 
-TOM: That would be great. Can we meet Thursday to work on it together?
+TOM: What kind of recommendations? More research funding?
 
-SARAH: Sure. Let's meet at the library at two o'clock.`,
+SARAH: Research is important, but it's too general. We could recommend that governments set mandatory renewable-energy targets — perhaps sixty percent renewable electricity by 2035.
+
+TOM: Would sixty percent be realistic for every country?
+
+SARAH: Not necessarily. We can present the figure as an example and say targets must reflect local resources. The important point is that the targets should be mandatory rather than voluntary.
+
+TOM: All right. I also think we should recommend increased investment in grid infrastructure. Several sources describe the grid as the bottleneck: generating more power is no use if the network cannot move it to consumers.
+
+SARAH: That's more specific. Let's make those our two principal recommendations and mention household conservation only briefly.
+
+TOM: One more thing: Professor Jenkins asked for a map showing wind-farm locations in the regions we compare. Did you see the draft I uploaded?
+
+SARAH: I saw an outline, but it didn't have any place names on it.
+
+TOM: That's the problem. I created the base map and plotted the locations, but the labels are not positioning correctly. Some cover the symbols and others disappear beyond the edge.
+
+SARAH: Which software did you use?
+
+TOM: GeoPlot. I considered moving the map into a drawing program, but that would make the scale less reliable.
+
+SARAH: Keep it in GeoPlot. I used the same programme for my geography project last term. There is a setting that places labels on separate layers, so I should be able to fix it.
+
+TOM: Excellent. Could we work on it on Wednesday afternoon?
+
+SARAH: I have a laboratory class then. Thursday would be better. I can book a computer with the programme installed.
+
+TOM: The media room has large screens, but it closes early on Thursdays.
+
+SARAH: Let's use the library instead. The second floor has the right software, and it's usually quiet at two o'clock.
+
+TOM: Thursday at the library at two, then. Before we meet, I'll revise the wind section and send you the government report.
+
+SARAH: And I'll rewrite the introduction and draft the recommendations. If we finish the map on Thursday, we can proofread the whole report on Friday.
+
+TOM: Perfect. That still gives us two days before the deadline.`,
       questions: [
         {
           type: 'mcq',
@@ -298,7 +360,7 @@ SARAH: Sure. Let's meet at the library at two o'clock.`,
             { num: 26, answers: ['grid'], maxWords: 1 },
             { num: 27, answers: ['locations'], maxWords: 1 },
             { num: 28, answers: ['labels', 'label'], maxWords: 1 },
-            { num: 29, answers: ['programme', 'program', 'software'], maxWords: 1 },
+            { num: 29, answers: ['programme', 'program'], maxWords: 1 },
             { num: 30, answers: ['library'], maxWords: 1 },
           ],
         },
@@ -311,19 +373,29 @@ SARAH: Sure. Let's meet at the library at two o'clock.`,
       audioUrl: '/audio/ielts/ielts-listening-set-2.mp3',
       title: 'Listening — Section 4: Lecture on Coral Reef Ecosystems',
       instructions: 'You will hear a lecture about coral reef ecosystems. Listen and answer Questions 31–40.',
-      transcript: `Today I want to discuss one of the planet's most diverse and threatened ecosystems: coral reefs.
+      transcript: `Today I want to examine one of the planet's most diverse and threatened ecosystems: coral reefs. I will begin with the organisms that build a reef, then explain bleaching and other pressures, and finally consider what conservation can and cannot achieve.
 
-Coral reefs cover less than one percent of the ocean floor, yet they support approximately 25% of all known marine species. This extraordinary concentration of biodiversity makes them one of the most ecologically important environments on Earth.
+People sometimes compare reefs with underwater cities, and the comparison is useful because so many organisms find food and shelter there. Coral reefs cover less than one percent of the ocean floor, yet they support approximately twenty-five percent of all known marine species. That figure includes fish that remain on a reef throughout life as well as species that use it only while they are young. Reefs also reduce wave energy before it reaches a coast, so their value is ecological, social, and economic.
 
-Corals are animals, not plants — a common misconception. Each individual coral is called a polyp. Polyps secrete a hard calcium carbonate skeleton, and over thousands of years these skeletons accumulate to form the reef structure. Inside each polyp live tiny algae called zooxanthellae. This is a symbiotic relationship: the algae photosynthesise, providing the coral with up to 90% of its energy, while the coral provides the algae with nutrients and shelter.
+We should first correct a common misconception: corals are animals, not plants or coloured rocks. Each individual coral animal is called a polyp. A polyp has a simple body with a mouth surrounded by tentacles. Many reef-building polyps live together in colonies. They secrete a hard calcium carbonate skeleton beneath their living tissue. Over thousands of years, new layers grow upon the remains of earlier colonies and gradually form the reef structure.
 
-When water temperatures rise even slightly above normal — sometimes by just one degree Celsius — the coral expels the zooxanthellae. This is known as coral bleaching. Without the algae, the coral turns white and, if temperatures remain high, the coral eventually dies. Mass bleaching events have become far more frequent due to climate change.
+The animal alone does not explain the rapid growth of tropical reefs. Inside its tissues live tiny algae commonly called zooxanthellae. The relationship is symbiotic, which means both partners benefit. Through photosynthesis, the algae provide the coral with up to ninety percent of its energy. The coral, in return, gives the algae nutrients, carbon dioxide, and a protected position close to sunlight. This arrangement explains why major reef-building corals are generally found in clear, shallow water rather than in dark ocean depths.
 
-Other major threats include ocean acidification, which reduces the availability of calcium carbonate and weakens reef structures; physical damage from boat anchors, tourist divers, and destructive fishing practices such as blast fishing; and the spread of invasive species such as the crown-of-thorns starfish, which feeds on coral tissue.
+The partnership is productive but sensitive. If water temperature remains even slightly above the usual summer maximum — sometimes by only one degree Celsius — the coral becomes stressed and expels the algae. The event is known as coral bleaching. Because much of a coral's colour comes from the algae, the transparent tissue then reveals the white skeleton below. In other words, the coral turns white.
 
-Conservation efforts are varied. Marine protected areas restrict human activities in key reef zones. Coral gardening programmes grow coral fragments in underwater nurseries and then transplant them onto damaged reefs. Scientists are also developing heat-resistant strains of coral through selective breeding.
+Bleaching does not mean that every affected coral is already dead. If normal conditions return quickly, algae can recolonise the tissue and the colony may recover. Prolonged heat, however, leaves the coral without its principal energy source. Growth and reproduction slow, disease becomes more likely, and the colony may eventually die. Marine heatwaves have made mass bleaching events more frequent, and a reef that survives one event may have too little time to recover before the next.
 
-The challenge is significant, but many conservationists argue that with immediate action on carbon emissions and local pollution, the worst outcomes can still be avoided.`,
+Temperature is not the only pressure. As the ocean absorbs carbon dioxide, its chemistry changes in a process called ocean acidification. This reduces the availability of the chemical components corals use to build calcium carbonate and can weaken reef growth. Acidification is different from bleaching, although the two stresses can occur together.
+
+Local physical damage can be equally visible. Boat anchors may break branching corals in seconds. Careless tourist divers can strike or stand on living colonies. Destructive fishing practices, including blast fishing, damage the reef framework while killing the target fish. Run-off from land adds sediment and nutrients, reducing light or encouraging algae that compete with young corals.
+
+Biological threats also matter. The crown-of-thorns starfish is a natural coral predator, but population outbreaks can remove living tissue across large areas. The animal should not be confused with an invasive plant; it is a native starfish on many Indo-Pacific reefs. Outbreaks may become more severe when excess nutrients increase survival of its larvae or when predators are removed, although the causes vary among locations.
+
+Conservation therefore operates at several scales. Marine protected areas can restrict fishing, anchoring, and other damaging activities in important zones. Better wastewater treatment can improve water quality, while visitor moorings give boats an alternative to dropping anchors. These local measures cannot stop an ocean heatwave, but they may leave a reef healthier and better able to recover.
+
+Restoration is another approach. In coral gardening programmes, fragments are grown in underwater or land-based nurseries and later transplanted onto damaged reefs. Scientists are also testing heat-tolerant corals and assisted breeding. Such projects can restore selected sites, but they are expensive and cover only small areas compared with the scale of reef loss.
+
+The central lesson is that restoration is not a substitute for prevention. Local pollution and physical damage must be reduced, while global carbon emissions determine the long-term intensity of warming and acidification. The challenge is significant, but many conservationists argue that immediate action at both levels can still prevent the worst outcomes.`,
       questions: [
         {
           type: 'formgroup',
@@ -384,13 +456,21 @@ For centuries, glass objects were luxury items, affordable only by the wealthy. 
 
 The fall of the Roman Empire slowed innovation in the West, and the centre of glassmaking shifted to the Islamic world. Craftsmen in what are now Iran, Iraq, and Syria developed new techniques, including the use of coloured enamels and gilding, which produced objects of extraordinary beauty.
 
+Glass also travelled through long-distance trade. Fragments found far from the furnaces where they were made show that finished vessels and raw glass moved between workshops around the Mediterranean. Production was therefore not a single local craft: primary centres could melt the basic material, while secondary workshops reheated and shaped it for regional customers. Because broken glass could be melted again, cullet — clean fragments from earlier objects — became a valuable part of the batch. Reusing it lowered the temperature needed in the furnace and reduced demand for new raw materials.
+
 By the eleventh century, Venice had established itself as the European capital of glassmaking. The island of Murano, to which the glassblowers were relocated in 1291 — ostensibly to reduce the risk of fire in Venice itself — became synonymous with high-quality glass. Venetian craftsmen jealously guarded their techniques; it was reportedly punishable by death to reveal the secrets of the trade to outsiders.
 
 The next great innovation came in 1674, when Englishman George Ravenscroft added lead oxide to the glass mixture. The resulting lead crystal glass was heavier and had a higher refractive index, giving it exceptional brilliance and making it ideal for decorative pieces such as chandeliers and fine tableware.
 
 The industrialisation of glass production in the nineteenth and twentieth centuries made glass ubiquitous. The development of plate glass through the float glass process — in which molten glass is floated on a bed of molten tin to produce perfectly flat sheets — transformed architecture, making possible the vast glass facades of modern buildings.
 
-Today, glass science continues to advance. Borosilicate glass, developed in the late nineteenth century, resists thermal shock and is used in laboratory equipment and cookware. Optical fibre, made from extremely pure glass, has revolutionised telecommunications. And scientists are developing smart glass that can change its transparency in response to electrical signals, with applications ranging from privacy windows to energy-efficient building design.`,
+Before the float process, making a large window with an even surface was slow and expensive. Cylinders of blown glass were cut open and flattened, or sheets were ground and polished after casting. Both methods required skilled labour and could leave visual distortions. Continuous float production removed much of that finishing work. The ribbon of glass advances steadily across the tin, where gravity and surface tension create parallel faces, before it enters a controlled cooling chamber. Thickness can be adjusted without abandoning continuous production, which helps explain why the method serves buildings, vehicles, mirrors, and many other industries.
+
+Today, glass science continues to advance. Borosilicate glass, developed in the late nineteenth century, resists thermal shock and is used in laboratory equipment and cookware. Optical fibre, made from extremely pure glass, has revolutionised telecommunications. And scientists are developing smart glass that can change its transparency in response to electrical signals, with applications ranging from privacy windows to energy-efficient building design.
+
+This versatility comes from controlling composition and cooling rather than from relying on one universal recipe. Small changes in ingredients can alter colour, strength, refractive behaviour, or resistance to chemicals. Cooling is equally important: if the outer surface contracts much faster than the interior, stresses may remain in the finished object. Manufacturers manage those stresses through carefully timed heating and cooling, or deliberately create them when producing strengthened glass.
+
+Glass presents an environmental trade-off. Furnaces require high temperatures and consequently large amounts of energy, yet the material can be recycled repeatedly if colours and contaminants are properly separated. A recycled bottle does not have to become another bottle; it may be used in insulation or construction products. However, specialised coatings and mixed materials can make recovery difficult. The long history of glass is thus not simply a sequence of inventions. It is also a continuing attempt to balance optical quality, mechanical performance, production cost, and the resources consumed in manufacture.`,
       questions: [
         {
           type: 'formgroup',
@@ -495,9 +575,17 @@ To attract bees, flowers have evolved a remarkable array of features. Many produ
 
 Different bee species show marked preferences for particular types of flowers. Long-tongued bees, such as certain bumblebee species, are able to access nectar from deep, tubular flowers that short-tongued bees cannot reach. This specialisation means that some plants depend almost entirely on a single bee species for pollination.
 
+Pollination is not guaranteed whenever a bee lands on a flower. Pollen must be collected from the male part of one flower and deposited on a receptive female surface of another compatible flower. A visitor that takes nectar without touching these structures may contribute little. Body size, hair density, foraging behaviour, and the frequency with which an insect moves between plants all influence effectiveness. For this reason, a farm may receive a better service from a diverse community of wild and managed bees than from a large population of one species alone.
+
+Honeybees have one advantage that humans have learned to exploit: colonies can be transported in hives and placed beside crops during flowering. Their communication also helps workers concentrate on profitable food sources. A returning forager performs movements commonly described as a waggle dance, which convey information about the direction and approximate distance of a resource. Yet honeybees are not the best pollinators in every setting. Some bumblebees release firmly held pollen by vibrating their flight muscles, a technique known as buzz pollination that is especially effective for crops such as tomatoes. Other native bees remain active in cooler conditions when honeybee activity is limited.
+
 Bee populations globally are under considerable pressure. Among the key threats are habitat loss due to agricultural intensification, the widespread use of pesticides — particularly neonicotinoids, which impair bees' navigation and memory — and the spread of pathogens such as the Varroa mite, which parasitises honeybee colonies. Climate change adds further stress, disrupting the synchrony between bee emergence and flower bloom.
 
-The decline in bee populations has prompted urgent conservation efforts. These include the creation of wildflower corridors along roads and field margins; the banning or restriction of certain pesticides in several countries; and the promotion of garden planting schemes to support urban bee populations. Research into disease-resistant honeybee strains and the development of artificial pollination technologies also continues, though many scientists argue that these cannot substitute for natural pollinator communities.`,
+Measuring decline is complicated. Managed honeybee colonies are counted by beekeepers, but those figures can rise when new colonies replace lost ones and therefore do not directly reveal the condition of wild species. Wild bees are much harder to monitor because many nest underground, live alone, or are active for only a short period each year. A reduction in total abundance can also hide a shift in composition, with a few adaptable species becoming common while specialists disappear. Long-term surveys must consequently record both the number of insects and which species are present.
+
+The decline in bee populations has prompted urgent conservation efforts. These include the creation of wildflower corridors along roads and field margins; the banning or restriction of certain pesticides in several countries; and the promotion of garden planting schemes to support urban bee populations. Research into disease-resistant honeybee strains and the development of artificial pollination technologies also continues, though many scientists argue that these cannot substitute for natural pollinator communities.
+
+Effective conservation needs continuity as well as quantity. A field margin that flowers for two weeks may provide a temporary feast but leave insects without food later in the season. Planners therefore try to combine plants with different flowering periods and preserve nesting sites such as bare ground, hollow stems, and undisturbed banks. The wider lesson is that crop production and biodiversity are not separate concerns. Protecting a range of pollinators can make food systems more resilient when weather, disease, or land use reduces the contribution of any single species.`,
       questions: [
         {
           type: 'mcq',
@@ -557,7 +645,7 @@ Flower adaptations to attract bees
           blanks: [
             { num: 19, answers: ['carbohydrates'], maxWords: 1 },
             { num: 20, answers: ['fats'], maxWords: 1 },
-            { num: 21, answers: ['guides', 'patterns'], maxWords: 1 },
+            { num: 21, answers: ['patterns'], maxWords: 1 },
             { num: 22, answers: ['scent'], maxWords: 1 },
             { num: 23, answers: ['mate'], maxWords: 1 },
           ],
@@ -604,7 +692,13 @@ Kahneman later organised his thinking around a distinction between two systems o
 
 Understanding these biases has practical applications. In the field of public policy, the concept of 'nudging' — designing choice environments to steer people towards better decisions while preserving their freedom to choose — has gained significant traction. By changing the default option in pension enrolment (so that employees are enrolled unless they opt out, rather than having to opt in), governments have dramatically increased pension savings rates. Menu designs, energy bills, and health communications have all been reimagined with behavioural insights in mind.
 
-Critics of nudging argue that it is paternalistic, manipulating people's choices without their knowledge or consent. Others question whether short-term nudges can address deeply ingrained habits. Nonetheless, the field of behavioural economics — which applies insights from psychology to economic models — has transformed our understanding of human behaviour and is now firmly embedded in government, business, and healthcare policy worldwide.`,
+The way a choice is described can matter as much as its default. A medical treatment may appear more attractive when its outcome is expressed as a survival rate than when the same evidence is presented as a mortality rate. This framing effect creates a problem for the ideal of stable preference: if two descriptions are logically equivalent, a strictly rational decision-maker should treat them alike. In practice, the reference point made prominent by the wording can change what feels like a gain or a loss.
+
+Researchers have also asked whether experience eliminates bias. Expertise helps when people receive repeated, timely feedback and can learn regular patterns, as may happen in some technical tasks. It is less protective when outcomes are rare, delayed, or influenced by chance. Confidence can then grow faster than accuracy. Organisations sometimes respond by using checklists, independent estimates, or structured comparisons that make the reasoning process visible before a group reaches a decision. These methods do not remove intuition; they create occasions for slower analysis to test it.
+
+Critics of nudging argue that it is paternalistic, manipulating people's choices without their knowledge or consent. Others question whether short-term nudges can address deeply ingrained habits. A further concern is transparency: an intervention designed to help can also serve the interests of the organisation that controls the choice environment. Supporters reply that no environment is neutral, because options must always be ordered, labelled, or given defaults. On this view, the relevant questions are who sets the design, what evidence supports it, and whether people can easily choose otherwise.
+
+The debate has shifted attention from whether humans are perfectly rational to when particular decision tools succeed or fail. Behavioural economics — which applies insights from psychology to economic models — has transformed the study of human behaviour and is now embedded in government, business, and healthcare policy. Its strongest claim is not that one bias explains every choice. Rather, predictable features of attention, memory, and comparison should be tested alongside incentives and information when institutions design decisions.`,
       questions: [
         {
           type: 'formgroup',
@@ -616,20 +710,20 @@ Critics of nudging argue that it is paternalistic, manipulating people's choices
 
 Research by Kahneman and Tversky showed that humans use mental shortcuts called {{28}}, leading to systematic errors known as {{29}}.
 
-The availability heuristic means people overestimate events that are easy to {{30}}.
+The availability heuristic means people overestimate events whose examples come easily to {{30}}.
 
 {{31}} aversion explains why people often keep failing investments longer than they should.
 
-Kahneman distinguished between System 1 — fast and {{32}} — and System 2, which is slow and deliberate.
+System 1 operates largely outside {{32}} awareness, whereas System 2 is slow and deliberate.
 
 The idea of {{33}} involves designing choice environments to promote better decisions.`,
           blanks: [
-            { num: 27, answers: ['rational choice', 'rational'], maxWords: 2 },
+            { num: 27, answers: ['rational'], maxWords: 1 },
             { num: 28, answers: ['heuristics'], maxWords: 1 },
-            { num: 29, answers: ['cognitive biases', 'biases'], maxWords: 2 },
-            { num: 30, answers: ['recall', 'remember', 'retrieve'], maxWords: 1 },
-            { num: 31, answers: ['Loss', 'loss'], maxWords: 1 },
-            { num: 32, answers: ['intuitive', 'automatic'], maxWords: 1 },
+            { num: 29, answers: ['cognitive biases'], maxWords: 2 },
+            { num: 30, answers: ['mind'], maxWords: 1 },
+            { num: 31, answers: ['loss'], maxWords: 1 },
+            { num: 32, answers: ['conscious'], maxWords: 1 },
             { num: 33, answers: ['nudging'], maxWords: 1 },
           ],
         },
