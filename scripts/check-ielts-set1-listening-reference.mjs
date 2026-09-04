@@ -23,6 +23,8 @@ const live = objectiveRows(mock).filter(row => row.skill === 'listening').map(ro
 });
 const expected = reference.answerBlocks.map(row => ({ number: row.number, weight: row.weight, accepted: canonicalSet(row.accepted) }));
 assert.deepEqual(live, expected, 'Set 1 live Listening key or grouping differs from the independently sourced Cambridge 10 Test 1 reference');
+const part4 = mock.sections.find(section => section.skill === 'listening' && section.part === 4);
+assert.match(part4?.transcript ?? '', /more emphasis on its expansion/i, 'Set 1 Listening Q40 transcript must preserve the audible answer “expansion”');
 const points = live.flatMap(row => Array.from({ length: row.weight }, (_, index) => row.number + index));
 assert.deepEqual(points, Array.from({ length: 40 }, (_, index) => index + 1));
 console.log(`✓ IELTS Set 1 Listening: 40/40 points match the pinned Cambridge 10 Test 1 reference (${expectedSha256.slice(0, 12)}…)`);

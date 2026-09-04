@@ -8,7 +8,7 @@ const args = Object.fromEntries(process.argv.slice(2).map(a => { const [k,...v] 
 for (const key of Object.keys(args)) assert.ok(['set','url','html'].includes(key), `Unknown flag: ${key}`);
 const mockId = `set-${args.set ?? '1'}`;
 // Extend only after a separate content audit; never derive a new fixture from the live key being tested.
-const registry = { 'set-1': { version:'ielts-set-1-v3', sha256:'d0df0d94e2e39bdf4af4ec8281bee039f5219db261b73a3dcc9cd9a90b069f1e' } };
+const registry = { 'set-1': { version:'ielts-set-1-v4', sha256:'d0df0d94e2e39bdf4af4ec8281bee039f5219db261b73a3dcc9cd9a90b069f1e' } };
 const approved = registry[mockId];
 assert.ok(approved, `${mockId}: NOT_AUDITED — independent evidence and approval required`);
 const bytes = fs.readFileSync(new URL(`../tests/fixtures/ielts/${mockId}-approved.json`, import.meta.url));
