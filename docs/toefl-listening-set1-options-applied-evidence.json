@@ -1,0 +1,91 @@
+{
+  "status": "APLICADO_EN_RAMA_NO_DESPLEGADO",
+  "recordedDate": "2026-09-04",
+  "branch": "codex/toefl-sectional-seo-harness-20260831",
+  "approvedCandidateSha256": "6afedc554facae03c12103f7f238a0253292de9ea9d0b206fff44096e8f2ad5d",
+  "approvalGates": [
+    "HR-06-SET1-OPTIONS-EXECUTIVE",
+    "HR-06-SET1-OPTIONS-ACADEMIC"
+  ],
+  "mainReconciledSha": "8c955322b406fcb3458b01ec5f76999740c38c98",
+  "mergeCommit": "3fcf95b5cad993469e60c10f91f7a342a6869cd3",
+  "rollbackReference": "archive/toefl-before-main-20260904",
+  "scope": {
+    "approvedItems": 34,
+    "legacyItems": 15,
+    "expandedItems": 19,
+    "audiosPreserved": 22,
+    "otherSetsUnchanged": 19,
+    "changes": "Only option text in the two canonical source files; test command extended without lowering controls."
+  },
+  "checks": [
+    {
+      "command": "node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs --test tests/toefl-listening-set1-approved-options.test.mjs tests/toefl-sectional-listening.test.mjs tests/toefl-fixed-listening.test.mjs",
+      "result": "11 passed; 0 failed"
+    },
+    {
+      "command": "npm run check:practica-catalog",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check:toefl-fixed-listening",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check:toefl-sectional-catalog",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check:toefl-audio-release",
+      "result": "passed; 400/400 exact files"
+    },
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "result": "passed"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    },
+    {
+      "command": "git merge-base --is-ancestor origin/main HEAD",
+      "result": "passed"
+    }
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:3026/practica/toefl/listening/simulacros/practica/set-1",
+    "observed": "The hydrated runner restored saved step 3/22 and displayed all four approved cr3 options, no options selected in that block. No reset or answer submission was performed.",
+    "limitation": "Read-only rendering smoke after hydration; not a new end-to-end score run or a new human audio/UX review. Same-origin tabs share saved localStorage progress, so no further test actions were taken."
+  },
+  "residualRisk": "Choosing shortest text by character count still yields 14/34 expected correct with random tie-break; approved risk remains visible. Other 19 sets retain diagnosed length bias.",
+  "gates": "HR-06 remains open; C09 blocked; D9 unchanged; D10 satisfied for this application against the stated main SHA. No integration into main or deploy.",
+  "build": "Not run; mandatory before release/integration. No dependencies installed or copied.",
+  "disk": {
+    "usbAvailableGiB": 73,
+    "worktree": "2.2 GiB",
+    "existingNextCache": "125 MiB",
+    "internalAvailableGiBAtLastMeasurement": 16
+  },
+  "sourceHashes": [
+    {
+      "path": "src/data/mocks/toefl-set-1.ts",
+      "sha256": "fea4118e98d05ed877e04ead8fe7c5e3651d28b533df8d32c76f0ea732f70254"
+    },
+    {
+      "path": "src/data/toefl/listening-fixed-sets-1-5.ts",
+      "sha256": "d68683e726549a6192526afff91891b97f16ab28ecde341e1e06ab10032f8529"
+    },
+    {
+      "path": "tests/toefl-listening-set1-approved-options.test.mjs",
+      "sha256": "54ec172ad413cae46e63bdabb46ff5d059b7fe7251ffe5b063b8e5d293d28554"
+    },
+    {
+      "path": "docs/toefl-listening-set1-options-integrity-baseline.json",
+      "sha256": "df5ea2a4ba8571d23598babaacca8f7681ceb5075a46fe4f69e18c997ca4141f"
+    },
+    {
+      "path": "package.json",
+      "sha256": "2d3b1920c21374717e661099fe0a7d822a7c256ff7b652c35ffdcee2ddcafb76"
+    }
+  ]
+}
