@@ -212,6 +212,32 @@
       ],
       "independentReview": false,
       "notes": "Aprobación humana explícita recibida con el texto 'aprobado', en respuesta al paquete de nuevas opciones de las 34 preguntas de Listening Set 1. Se registra como aprobación ejecutiva de David Duarte, identidad comunicada previamente; no se infiere una nueva firma académica de Zhanna Korzh. La confirmación académica de estas redacciones sigue pendiente. El riesgo residual hacia respuestas cortas permanece visible en el paquete; la aprobación no certifica ausencia de sesgo. No se aprueban los otros 19 sets, el cierre de HR-06, la identidad gráfica, el criterio automático propuesto, integración ni despliegue. C09 continúa bloqueado; D9 conserva controles y D10 exige reconciliar main antes de implementar. El candidato y el runtime no se modifican con este registro."
+    },
+    {
+      "gateId": "HR-06-SET1-OPTIONS-ACADEMIC",
+      "reviewer": "Zhanna Korzh",
+      "role": "academic-director",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-04T16:06:19Z",
+      "timestampBasis": "Hora de registro; el mensaje humano no incluye una hora propia.",
+      "commitSha": "6474cd1845b8c419f004ad2b0ae18c07299c971a",
+      "contentDigest": "6afedc554facae03c12103f7f238a0253292de9ea9d0b206fff44096e8f2ad5d",
+      "contentDigestMethod": "SHA-256 de los bytes del único archivo indicado en evidencePaths.",
+      "evidencePaths": [
+        "docs/toefl-listening-set1-options-candidate.json"
+      ],
+      "supportingEvidence": [
+        {
+          "path": "docs/toefl-listening-set1-options-review.md",
+          "sha256": "f3d2316b36a497c4b2979a18d18c6dccba5ed972f89162e26a643a698c9e2f7e"
+        },
+        {
+          "path": "docs/toefl-listening-set1-candidate-evidence.json",
+          "sha256": "7321aed35d16f0037a2cf093507a91cf872d562a507807c4ee7fe638f99c28f6"
+        }
+      ],
+      "independentReview": true,
+      "notes": "Aprobación académica explícita comunicada por David Duarte mediante la respuesta si a la pregunta confirmas que Zhanna también aprueba académicamente estas nuevas opciones. Alcance: las 34 preguntas de Listening Set 1 del candidato con este digest, incluido el riesgo residual documentado. No se extiende a los otros 19 sets, criterio de cribado, cierre de HR-06, identidad gráfica, integración ni despliegue. C09 permanece bloqueado; D9 conserva controles y D10 exige reconciliar main antes de implementar. Las aprobaciones ejecutiva y académica habilitan aplicar exactamente estas opciones y verificar su integración local, conservando claves, audios y orden."
     }
   ]
 }
