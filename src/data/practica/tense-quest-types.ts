@@ -128,5 +128,6 @@ export type TenseQuestConfig<FormId extends string> = {
   errorChallenges: ErrorChallenge<FormId>[]
   timelineChallenges: TimelineChallenge<FormId>[]
   finalChallenges: BankChallenge<FormId>[]
+  finalStories?: GapChallenge<FormId>[]
   copy: QuestCopy
 }

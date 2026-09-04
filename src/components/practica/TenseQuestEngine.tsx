@@ -122,6 +122,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     copy,
     errorChallenges: allErrorChallenges,
     finalChallenges,
+    finalStories: allFinalStories = [],
     forms,
     levels,
     longStories: allLongStories,
@@ -187,8 +188,12 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       allMicroStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length,
       allLongStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length,
       allErrorChallenges.filter((challenge) => validSet.has(challenge.tense)).length,
-      allTimelineChallenges.filter((challenge) => challenge.slots.some((slot) => validSet.has(slot.tense))).length,
-      finalChallenges.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tenseId))).length,
+      allFinalStories.length
+        ? finalChallenges.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tenseId))).length
+        : allTimelineChallenges.filter((challenge) => challenge.slots.some((slot) => validSet.has(slot.tense))).length,
+      allFinalStories.length
+        ? allFinalStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length
+        : finalChallenges.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tenseId))).length,
     ]
     const restoredItem = canRestore
       && Number.isInteger(attempt!.itemIndex)
@@ -230,6 +235,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   }, [
     allChoiceChallenges,
     allErrorChallenges,
+    allFinalStories,
     allLongStories,
     allMicroStories,
     allTimelineChallenges,
@@ -269,6 +275,11 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   const activeFinalChallenges = useMemo(
     () => finalChallenges.filter((challenge) => challenge.gaps.some((gap) => selectedSet.has(gap.tenseId))),
     [finalChallenges, selectedSet],
+  )
+  const writtenFinalMode = allFinalStories.length > 0
+  const finalStories = useMemo(
+    () => allFinalStories.filter((challenge) => challenge.gaps.some((gap) => selectedSet.has(gap.tense))),
+    [allFinalStories, selectedSet],
   )
 
   function finalChallengeFor(index: number) {
@@ -351,8 +362,8 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     microStories.length,
     longStories.length,
     errorChallenges.length,
-    timelineChallenges.length,
-    activeFinalChallenges.length,
+    writtenFinalMode ? activeFinalChallenges.length : timelineChallenges.length,
+    writtenFinalMode ? finalStories.length : activeFinalChallenges.length,
   ]
   const total = levelCounts[activeLevel]
   const meta = levels[activeLevel]
@@ -435,10 +446,25 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     }
 
     if (activeLevel === 4) {
+      if (writtenFinalMode) {
+        const targetGaps = finalGapsFor(index)
+        return {
+          correct: targetGaps.filter((gap) => response.bankAnswers?.[gap.id] === gap.answerCardId).length,
+          total: targetGaps.length,
+        }
+      }
       const slots = activeTimelineSlots(index)
       return {
         correct: slots.filter((slot) => response.timelineAnswers?.[slot.id] === slot.answer).length,
         total: slots.length,
+      }
+    }
+
+    if (writtenFinalMode) {
+      const gaps = activeGaps(finalStories[index])
+      return {
+        correct: gaps.filter((gap) => accepts(response.gapAnswers?.[gap.id] ?? '', gap.answers, copy.languageCode)).length,
+        total: gaps.length,
       }
     }
 
@@ -460,8 +486,11 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 3) return Boolean(selectedError && correction.trim())
 
     if (activeLevel === 4) {
+      if (writtenFinalMode) return finalGaps.every((gap) => Boolean(bankAnswers[gap.id]))
       return activeTimelineSlots(itemIndex).every((slot) => Boolean(timelineAnswers[slot.id]))
     }
+
+    if (writtenFinalMode) return activeGaps(finalStories[itemIndex]).every((gap) => Boolean(gapAnswers[gap.id]?.trim()))
 
     return finalGaps.every((gap) => Boolean(bankAnswers[gap.id]))
   }
@@ -637,7 +666,8 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 1) return microStories[index].title
     if (activeLevel === 2) return longStories[index].title
     if (activeLevel === 3) return errorChallenges[index].title
-    if (activeLevel === 4) return timelineChallenges[index].title
+    if (activeLevel === 4) return writtenFinalMode ? finalChallengeFor(index).title : timelineChallenges[index].title
+    if (writtenFinalMode) return finalStories[index].title
     return finalChallengeFor(index).title
   }
 
@@ -646,7 +676,8 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 1) return microStories[index].explanation
     if (activeLevel === 2) return longStories[index].explanation
     if (activeLevel === 3) return errorChallenges[index].explanation
-    if (activeLevel === 4) return timelineChallenges[index].explanation
+    if (activeLevel === 4) return writtenFinalMode ? finalChallengeFor(index).explanation : timelineChallenges[index].explanation
+    if (writtenFinalMode) return finalStories[index].explanation
     return finalChallengeFor(index).explanation
   }
 
@@ -657,7 +688,11 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       return activeGaps(challenge).map((gap) => `${gap.verb}: ${gap.answers[0]}`).join(' · ')
     }
     if (activeLevel === 3) return errorChallenges[index].answers[0]
-    if (activeLevel === 4) return activeTimelineSlots(index).map((slot) => slot.answer).join(' · ')
+    if (activeLevel === 4) {
+      if (writtenFinalMode) return finalGapsFor(index).map((gap) => cardText(gap.answerCardId, index)).join(' · ')
+      return activeTimelineSlots(index).map((slot) => slot.answer).join(' · ')
+    }
+    if (writtenFinalMode) return activeGaps(finalStories[index]).map((gap) => `${gap.verb}: ${gap.answers[0]}`).join(' · ')
     return finalGapsFor(index).map((gap) => cardText(gap.answerCardId, index)).join(' · ')
   }
 
@@ -672,7 +707,11 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     }
     if (activeLevel === 3) return response.correction || 'Sin corrección'
     if (activeLevel === 4) {
+      if (writtenFinalMode) return finalGapsFor(index).map((gap) => cardText(response.bankAnswers?.[gap.id], index) || '—').join(' · ')
       return activeTimelineSlots(index).map((slot) => response.timelineAnswers?.[slot.id] || '—').join(' · ')
+    }
+    if (writtenFinalMode) {
+      return activeGaps(finalStories[index]).map((gap) => `${gap.verb}: ${response.gapAnswers?.[gap.id] || '—'}`).join(' · ')
     }
     return finalGapsFor(index).map((gap) => cardText(response.bankAnswers?.[gap.id], index) || '—').join(' · ')
   }
@@ -844,7 +883,8 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 1) return renderGapLevel(microStories[itemIndex])
     if (activeLevel === 2) return renderGapLevel(longStories[itemIndex])
     if (activeLevel === 3) return renderErrorHunt()
-    if (activeLevel === 4) return renderTimeline()
+    if (activeLevel === 4) return writtenFinalMode ? renderFinal() : renderTimeline()
+    if (writtenFinalMode) return renderGapLevel(finalStories[itemIndex])
     return renderFinal()
   }
 
@@ -858,7 +898,9 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
         : activeLevel === 3
           ? errorChallenges[itemIndex]?.focus
           : activeLevel === 4
-            ? timelineChallenges[itemIndex]?.focus
+            ? writtenFinalMode ? finalChallengeFor(itemIndex)?.title : timelineChallenges[itemIndex]?.focus
+            : writtenFinalMode
+              ? finalStories[itemIndex]?.focus
             : selectedTenses.length === 1 ? '1 forma seleccionada' : `${selectedTenses.length} ${copy.selectedLabel}`
   const nextLevel = nextAvailableLevel()
 

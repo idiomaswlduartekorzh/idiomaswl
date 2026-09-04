@@ -8,6 +8,7 @@ import {
   type StructureEditorialSequenceSeed,
 } from './editorial-structure-builder.ts'
 import type { GermanFormId } from './german-structure-quest-config.ts'
+import { createGermanCorrectionChallenges } from './german-advanced-editorial.ts'
 
 export type GermanEditorialMicroSeed = StructureEditorialMicroSeed
 export type GermanEditorialChoiceSeed = StructureEditorialChoiceSeed
@@ -53,7 +54,7 @@ export function createGermanEditorialPack(input: {
 }) {
   const secondHalf = new Set(['futur-eins', 'futur-zwei', 'wuerde-form', 'konjunktiv-vergangenheit', 'imperativ'])
   const choiceOffset = secondHalf.has(input.slug) ? 0 : 2
-  return createStructureEditorialPack({
+  const pack = createStructureEditorialPack({
     namespace: 'de',
     ...input,
     choicePositions: Array.from({ length: 10 }, (_, index) => (index + choiceOffset) % 4),
@@ -70,6 +71,7 @@ export function createGermanEditorialPack(input: {
       writtenSuffix: 'Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition.',
     },
   })
+  return { ...pack, errors: createGermanCorrectionChallenges(input.form, input.focus, input.rule) }
 }
 
 export function createGermanCompactPack(input: {

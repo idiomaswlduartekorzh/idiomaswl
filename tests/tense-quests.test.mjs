@@ -239,7 +239,7 @@ test('Brazilian Portuguese final dossiers are fresh, autonomous and balanced', (
   assert.ok(Math.max(...answerPositions) - Math.min(...answerPositions) <= 1, answerPositions.join('/'))
 })
 
-test('German exposes ten editorial challenges per form and level', () => {
+test('German exposes ten drills per form before a long written final story', () => {
   for (const form of GERMAN_STRUCTURE_QUEST.forms) {
     const id = form.id
     assert.equal(GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(id)).length, 10, `${id}/choice`)
@@ -248,6 +248,10 @@ test('German exposes ten editorial challenges per form and level', () => {
     assert.equal(GERMAN_STRUCTURE_QUEST.errorChallenges.filter((item) => item.tense === id).length, 10, `${id}/error`)
     assert.equal(GERMAN_STRUCTURE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length, 10, `${id}/timeline`)
     assert.equal(GERMAN_STRUCTURE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length, 10, `${id}/final`)
+    const finalStories = GERMAN_STRUCTURE_QUEST.finalStories?.filter((item) => item.gaps.some((gap) => gap.tense === id)) ?? []
+    assert.equal(finalStories.length, 1, `${id}/written-final-story`)
+    assert.ok(finalStories[0].gaps.length >= 10, `${id}/written-final-story-gaps`)
+    assert.equal(finalStories[0].segments.length, finalStories[0].gaps.length + 1, `${id}/written-final-story-shape`)
   }
 })
 
@@ -338,10 +342,23 @@ test('German separable verbs render complete sentences without repeated or mispl
     assert.equal(rendered, expected, id)
   }
 
-  const repair = GERMAN_STRUCTURE_QUEST.errorChallenges.find((item) => item.id === 'de-praesens-error-editorial-5')
-  assert.ok(repair)
-  const corrected = repair.chunks.map((chunk) => chunk.before + (chunk.id === repair.wrongId ? repair.answers[0] : chunk.form)).join('') + repair.after
-  assert.equal(corrected, 'Der Produzent wählt die Themen aus. Die Redakteurin prüft die Fakten, und der Moderator liest die Meldungen vor.')
+  const correctedRepairs = GERMAN_STRUCTURE_QUEST.errorChallenges
+    .filter((item) => item.tense === 'praesens')
+    .map((repair) => repair.chunks.map((chunk) => chunk.before + (chunk.id === repair.wrongId ? repair.answers[0] : chunk.form)).join('') + repair.after)
+  assert.ok(correctedRepairs.some((sentence) => sentence.includes('Yusuf die Werkstatt auf.')))
+})
+
+test('German level 3 and level 4 use independent sentence banks', () => {
+  const normalize = (value) => value.toLocaleLowerCase('de').replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
+  const levelThree = new Set(GERMAN_STRUCTURE_QUEST.longStories.map((item) => normalize(
+    item.segments.map((segment, index) => segment + (item.gaps[index]?.answers[0] ?? '')).join(''),
+  )))
+  for (const repair of GERMAN_STRUCTURE_QUEST.errorChallenges) {
+    const corrected = repair.chunks
+      .map((chunk) => chunk.before + (chunk.id === repair.wrongId ? repair.answers[0] : chunk.form))
+      .join('') + repair.after
+    assert.ok(!levelThree.has(normalize(corrected)), repair.id)
+  }
 })
 
 test('German final dossiers are autonomous and balance the four answer positions', () => {

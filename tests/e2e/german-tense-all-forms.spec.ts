@@ -11,13 +11,14 @@ for (const { id: form } of quest.forms) {
     const micro = quest.microStories.filter((item) => item.gaps.some((gap) => gap.tense === form))
     const stories = quest.longStories.filter((item) => item.gaps.some((gap) => gap.tense === form))
     const repairs = quest.errorChallenges.filter((item) => item.tense === form)
-    const timelines = quest.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === form))
+    const writtenFinal = quest.finalStories!.find((item) => item.gaps.some((gap) => gap.tense === form))!
 
     for (let level = 0; level < 6; level += 1) {
       await page.getByRole('tab').nth(level).click()
       await page.waitForLoadState('networkidle')
-      for (let index = 0; index < 10; index += 1) {
-        await expect(page.getByText(`${index + 1} / 10`, { exact: true })).toBeVisible()
+      const itemTotal = level === 5 ? 1 : 10
+      for (let index = 0; index < itemTotal; index += 1) {
+        await expect(page.getByText(`${index + 1} / ${itemTotal}`, { exact: true })).toBeVisible()
         if (level === 0) {
           await page.locator('.wlp-option').filter({ hasText: new RegExp(`^.[\\s]*${choices[index].answer}$`) }).click()
         } else if (level === 1 || level === 2) {
@@ -34,12 +35,12 @@ for (const { id: form } of quest.forms) {
           await page.locator('[class*="errorToken"]').nth(item.chunks.findIndex((chunk) => chunk.id === item.wrongId)).click()
           await page.getByRole('textbox').fill(item.answers[0])
         } else if (level === 4) {
-          await page.getByRole('combobox').selectOption(timelines[index].slots[0].answer)
-        } else {
           const item = quest.finalChallenges[index]
           const gap = item.gaps.find((gap) => gap.tenseId === form)!
           const card = item.cards.find((card) => gap.answerCardId === card.id)!
           await page.locator('[class*="wordBank"] button').filter({ hasText: new RegExp(`^${card.text}$`) }).click()
+        } else {
+          for (const [gapIndex, gap] of writtenFinal.gaps.entries()) await page.getByRole('textbox').nth(gapIndex).fill(gap.answers[0])
         }
         await expect(page.getByRole('status')).toHaveCount(0)
         if (level === 1 && index === 5) {
@@ -47,9 +48,10 @@ for (const { id: form } of quest.forms) {
           await page.reload()
           await expect(page.getByRole('textbox')).toHaveValue(micro[index].gaps[0].answers[0])
         }
-        await page.getByRole('button', { name: index === 9 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
+        await page.getByRole('button', { name: index === itemTotal - 1 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
       }
-      await expect(page.getByRole('status')).toContainText(level === 2 ? '30 de 30 puntos correctos' : '10 de 10 puntos correctos')
+      const expectedPoints = level === 2 ? 30 : level === 5 ? writtenFinal.gaps.length : 10
+      await expect(page.getByRole('status')).toContainText(`${expectedPoints} de ${expectedPoints} puntos correctos`)
     }
     await expect(page.getByRole('status')).toContainText('Completaste los seis niveles con un promedio de 100%.')
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
