@@ -1,0 +1,28 @@
+{
+  "status": "candidate-passes-automatic-screen-academic-review-still-required",
+  "selfTests": "passed",
+  "set": 10,
+  "candidateSha256": "1d912db1ad03564a0967d848ca730cd9c3fd607b8a5034f2c8178154499e99b8",
+  "before": {
+    "questions": 34,
+    "automaticScreenEligible": true,
+    "academicReviewRequired": true,
+    "totals": {
+      "words_longest": {"unique": 27, "tied": 2, "expectedRate": 0.8235294117647058, "firstRate": 0.8235294117647058, "flagged": true},
+      "words_shortest": {"unique": 1, "tied": 2, "expectedRate": 0.053921568627450976, "firstRate": 0.058823529411764705, "flagged": false},
+      "chars_longest": {"unique": 27, "tied": 0, "expectedRate": 0.7941176470588235, "firstRate": 0.7941176470588235, "flagged": true},
+      "chars_shortest": {"unique": 1, "tied": 0, "expectedRate": 0.029411764705882353, "firstRate": 0.029411764705882353, "flagged": false}
+    }
+  },
+  "after": {
+    "questions": 34,
+    "automaticScreenEligible": true,
+    "academicReviewRequired": true,
+    "totals": {
+      "words_longest": {"unique": 3, "tied": 15, "expectedRate": 0.21813725490196076, "firstRate": 0.23529411764705882, "flagged": false},
+      "words_shortest": {"unique": 3, "tied": 19, "expectedRate": 0.2818627450980392, "firstRate": 0.3235294117647059, "flagged": false},
+      "chars_longest": {"unique": 4, "tied": 4, "expectedRate": 0.17647058823529413, "firstRate": 0.20588235294117646, "flagged": false},
+      "chars_shortest": {"unique": 11, "tied": 1, "expectedRate": 0.3382352941176471, "firstRate": 0.35294117647058826, "flagged": false}
+    }
+  }
+}
