@@ -1,0 +1,1331 @@
+{
+  "mockId": "set-1",
+  "contentVersion": "ielts-set-1-v1",
+  "title": "IELTS Academic Set 1",
+  "generatedFrom": "audited canonical source: src/data/mocks/ielts-set-1.ts",
+  "questions": [
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q1",
+      "sortNumber": 1,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l1-form__1",
+      "prompt": "Car Tours in the USA - Address: 24 [___] Road",
+      "acceptedAnswers": [
+        "Ardleigh"
+      ],
+      "correctDisplay": "Ardleigh",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q2",
+      "sortNumber": 2,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l1-form__2",
+      "prompt": "Car Tours in the USA - Heard about company from: [___]",
+      "acceptedAnswers": [
+        "newspaper"
+      ],
+      "correctDisplay": "newspaper",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q3",
+      "sortNumber": 3,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l1-form__3",
+      "prompt": "Car Tours in the USA - • Los Angeles: customer wants to visit some [___] parks with her children",
+      "acceptedAnswers": [
+        "theme"
+      ],
+      "correctDisplay": "theme",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q4",
+      "sortNumber": 4,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l1-form__4",
+      "prompt": "Car Tours in the USA - • Yosemite Park: customer wants to stay in a lodge, not a [___]",
+      "acceptedAnswers": [
+        "tent"
+      ],
+      "correctDisplay": "tent",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q5",
+      "sortNumber": 5,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l1-form__5",
+      "prompt": "Car Tours in the USA - • Customer wants to see the [___] on the way to Cambria",
+      "acceptedAnswers": [
+        "castle"
+      ],
+      "correctDisplay": "castle",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q6",
+      "sortNumber": 6,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l1-form__6",
+      "prompt": "Car Tours in the USA - • At San Diego, wants to spend time on the [___]",
+      "acceptedAnswers": [
+        "beach",
+        "beaches"
+      ],
+      "correctDisplay": "beach",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q7",
+      "sortNumber": 7,
+      "type": "Completar tabla",
+      "responseKind": "fill",
+      "responseKey": "l1-table__7",
+      "prompt": "Total distance - Trip: Trip One | Number of days: 12 days | Price per person: £525",
+      "acceptedAnswers": [
+        "2020",
+        "2,020"
+      ],
+      "correctDisplay": "2020",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q8",
+      "sortNumber": 8,
+      "type": "Completar tabla",
+      "responseKind": "fill",
+      "responseKey": "l1-table__8",
+      "prompt": "Includes - Trip: Trip One | Number of days: 12 days | Price per person: £525",
+      "acceptedAnswers": [
+        "flight"
+      ],
+      "correctDisplay": "flight",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q9",
+      "sortNumber": 9,
+      "type": "Completar tabla",
+      "responseKind": "fill",
+      "responseKey": "l1-table__9",
+      "prompt": "Price per person - Trip: Trip Two | Number of days: 9 days | Total distance: 980 km",
+      "acceptedAnswers": [
+        "429"
+      ],
+      "correctDisplay": "429",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 1: Car Tours",
+      "numberLabel": "Q10",
+      "sortNumber": 10,
+      "type": "Completar tabla",
+      "responseKind": "fill",
+      "responseKey": "l1-table__10",
+      "prompt": "Includes - Trip: Trip Two | Number of days: 9 days | Total distance: 980 km",
+      "acceptedAnswers": [
+        "dinner"
+      ],
+      "correctDisplay": "dinner",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q11-12",
+      "sortNumber": 11,
+      "type": "Selección múltiple",
+      "responseKind": "multiselect",
+      "responseKey": "l2-multi",
+      "prompt": "Which TWO facilities at the leisure club have recently been improved?",
+      "acceptedAnswers": [
+        "A",
+        "C"
+      ],
+      "correctDisplay": "A. the gym | C. the indoor pool",
+      "optionMap": {
+        "A": "A. the gym",
+        "B": "B. the tracks",
+        "C": "C. the indoor pool",
+        "D": "D. the outdoor pool",
+        "E": "E. the sports training for children"
+      },
+      "weight": 2
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q13",
+      "sortNumber": 13,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l2-form__13",
+      "prompt": "Joining the leisure club - • New members should describe any [___].",
+      "acceptedAnswers": [
+        "health problems"
+      ],
+      "correctDisplay": "health problems",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q14",
+      "sortNumber": 14,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l2-form__14",
+      "prompt": "Joining the leisure club - • The [___] will be explained to you before you use the equipment.",
+      "acceptedAnswers": [
+        "safety rules"
+      ],
+      "correctDisplay": "safety rules",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q15",
+      "sortNumber": 15,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l2-form__15",
+      "prompt": "Joining the leisure club - • You will be given a six-week [___].",
+      "acceptedAnswers": [
+        "plan"
+      ],
+      "correctDisplay": "plan",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q16",
+      "sortNumber": 16,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l2-form__16",
+      "prompt": "Joining the leisure club - • There is a compulsory £90 [___] fee for members.",
+      "acceptedAnswers": [
+        "joining"
+      ],
+      "correctDisplay": "joining",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q17",
+      "sortNumber": 17,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l2-form__17",
+      "prompt": "Joining the leisure club - • Gold members are given [___] to all the LP clubs.",
+      "acceptedAnswers": [
+        "free entry"
+      ],
+      "correctDisplay": "free entry",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q18",
+      "sortNumber": 18,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l2-form__18",
+      "prompt": "Joining the leisure club - • Premier members are given priority during [___] hours.",
+      "acceptedAnswers": [
+        "peak"
+      ],
+      "correctDisplay": "peak",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q19",
+      "sortNumber": 19,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l2-form__19",
+      "prompt": "Joining the leisure club - • Premier members can bring some [___] every month.",
+      "acceptedAnswers": [
+        "guests"
+      ],
+      "correctDisplay": "guests",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 2: LP Clubs",
+      "numberLabel": "Q20",
+      "sortNumber": 20,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l2-form__20",
+      "prompt": "Joining the leisure club - • Members should always take their [___] with them.",
+      "acceptedAnswers": [
+        "photo card",
+        "photo cards"
+      ],
+      "correctDisplay": "photo card",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q21",
+      "sortNumber": 21,
+      "type": "Opción múltiple",
+      "responseKind": "mcq",
+      "responseKey": "l3q21",
+      "prompt": "Students entering the design competition have to",
+      "acceptedAnswers": [
+        2
+      ],
+      "correctDisplay": "develop a new use for current technology",
+      "options": [
+        "produce an energy-efficient design",
+        "adapt an existing energy-saving appliance",
+        "develop a new use for current technology"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q22",
+      "sortNumber": 22,
+      "type": "Opción múltiple",
+      "responseKind": "mcq",
+      "responseKey": "l3q22",
+      "prompt": "John chose a dishwasher because he wanted to make dishwashers",
+      "acceptedAnswers": [
+        0
+      ],
+      "correctDisplay": "more appealing",
+      "options": [
+        "more appealing",
+        "more common",
+        "more economical"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q23",
+      "sortNumber": 23,
+      "type": "Opción múltiple",
+      "responseKind": "mcq",
+      "responseKey": "l3q23",
+      "prompt": "The stone in John's 'Rockpool' design is used",
+      "acceptedAnswers": [
+        1
+      ],
+      "correctDisplay": "to switch it on",
+      "options": [
+        "for decoration",
+        "to switch it on",
+        "to stop water escaping"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q24",
+      "sortNumber": 24,
+      "type": "Opción múltiple",
+      "responseKind": "mcq",
+      "responseKey": "l3q24",
+      "prompt": "In the holding chamber, the carbon dioxide",
+      "acceptedAnswers": [
+        0
+      ],
+      "correctDisplay": "changes back to a gas",
+      "options": [
+        "changes back to a gas",
+        "dries the dishes",
+        "is allowed to cool"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q25",
+      "sortNumber": 25,
+      "type": "Opción múltiple",
+      "responseKind": "mcq",
+      "responseKey": "l3q25",
+      "prompt": "At the end of the cleaning process, the carbon dioxide",
+      "acceptedAnswers": [
+        2
+      ],
+      "correctDisplay": "is collected ready to be re-used",
+      "options": [
+        "is released into the air",
+        "is disposed of with the waste",
+        "is collected ready to be re-used"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q26",
+      "sortNumber": 26,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l3-form__26",
+      "prompt": "• John needs help preparing for his [___].",
+      "acceptedAnswers": [
+        "presentation"
+      ],
+      "correctDisplay": "presentation",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q27",
+      "sortNumber": 27,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l3-form__27",
+      "prompt": "• The professor advises John to make a [___] of his design.",
+      "acceptedAnswers": [
+        "model"
+      ],
+      "correctDisplay": "model",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q28",
+      "sortNumber": 28,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l3-form__28",
+      "prompt": "• John's main problem is getting good quality [___].",
+      "acceptedAnswers": [
+        "material",
+        "materials"
+      ],
+      "correctDisplay": "material",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q29",
+      "sortNumber": 29,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l3-form__29",
+      "prompt": "• The professor suggests John apply for a [___].",
+      "acceptedAnswers": [
+        "grant"
+      ],
+      "correctDisplay": "grant",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 3: Global Design Competition",
+      "numberLabel": "Q30",
+      "sortNumber": 30,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l3-form__30",
+      "prompt": "• The professor will check the [___] information in John's written report.",
+      "acceptedAnswers": [
+        "technical"
+      ],
+      "correctDisplay": "technical",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q31",
+      "sortNumber": 31,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__31",
+      "prompt": "THE SPIRIT BEAR - • Its colour comes from an uncommon [___].",
+      "acceptedAnswers": [
+        "gene"
+      ],
+      "correctDisplay": "gene",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q32",
+      "sortNumber": 32,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__32",
+      "prompt": "THE SPIRIT BEAR - • Local people believe that it has unusual [___].",
+      "acceptedAnswers": [
+        "power",
+        "powers"
+      ],
+      "correctDisplay": "power",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q33",
+      "sortNumber": 33,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__33",
+      "prompt": "THE SPIRIT BEAR - • They protect the bear from [___].",
+      "acceptedAnswers": [
+        "strangers"
+      ],
+      "correctDisplay": "strangers",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q34",
+      "sortNumber": 34,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__34",
+      "prompt": "THE SPIRIT BEAR - • Tree roots prevent [___] along salmon streams.",
+      "acceptedAnswers": [
+        "erosion"
+      ],
+      "correctDisplay": "erosion",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q35",
+      "sortNumber": 35,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__35",
+      "prompt": "THE SPIRIT BEAR - • It is currently found on a small number of [___].",
+      "acceptedAnswers": [
+        "islands"
+      ],
+      "correctDisplay": "islands",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q36",
+      "sortNumber": 36,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__36",
+      "prompt": "THE SPIRIT BEAR - • Habitat is being lost due to deforestation and construction of [___] by logging companies.",
+      "acceptedAnswers": [
+        "roads"
+      ],
+      "correctDisplay": "roads",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q37",
+      "sortNumber": 37,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__37",
+      "prompt": "THE SPIRIT BEAR - • Unrestricted [___] is affecting the salmon supply.",
+      "acceptedAnswers": [
+        "fishing"
+      ],
+      "correctDisplay": "fishing",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q38",
+      "sortNumber": 38,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__38",
+      "prompt": "THE SPIRIT BEAR - • The bears' existence is also threatened by their low rate of [___].",
+      "acceptedAnswers": [
+        "reproduction"
+      ],
+      "correctDisplay": "reproduction",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q39",
+      "sortNumber": 39,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__39",
+      "prompt": "THE SPIRIT BEAR - • Logging companies must improve their [___] of logging.",
+      "acceptedAnswers": [
+        "method",
+        "methods"
+      ],
+      "correctDisplay": "method",
+      "weight": 1
+    },
+    {
+      "skill": "listening",
+      "section": "Listening — Section 4: The Spirit Bear",
+      "numberLabel": "Q40",
+      "sortNumber": 40,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "l4-form__40",
+      "prompt": "THE SPIRIT BEAR - • Maintenance and [___] of the spirit bears' territory is needed.",
+      "acceptedAnswers": [
+        "expansion"
+      ],
+      "correctDisplay": "expansion",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q1",
+      "sortNumber": 1,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r1-summary__1",
+      "prompt": "Some plastics behave in a similar way to [___] in that they melt under heat and can be moulded into new forms.",
+      "acceptedAnswers": [
+        "candlewax"
+      ],
+      "correctDisplay": "candlewax",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q2",
+      "sortNumber": 2,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r1-summary__2",
+      "prompt": "Bakelite was unique because it was the first material to be both entirely [___] in origin and thermosetting.",
+      "acceptedAnswers": [
+        "synthetic"
+      ],
+      "correctDisplay": "synthetic",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q3",
+      "sortNumber": 3,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r1-summary__3",
+      "prompt": "There were several reasons for the research into plastics in the nineteenth century, among them the great advances that had been made in the field of [___] and the search for alternatives to natural resources like ivory.",
+      "acceptedAnswers": [
+        "chemistry"
+      ],
+      "correctDisplay": "chemistry",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q4",
+      "sortNumber": 4,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r1-flowchart__4",
+      "prompt": "Stage one resin, called [___]",
+      "acceptedAnswers": [
+        "Novalak"
+      ],
+      "correctDisplay": "Novalak",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q5",
+      "sortNumber": 5,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r1-flowchart__5",
+      "prompt": "Other substances added, including [___] (e.g. cotton, asbestos) and catalyst",
+      "acceptedAnswers": [
+        "fillers"
+      ],
+      "correctDisplay": "fillers",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q6",
+      "sortNumber": 6,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r1-flowchart__6",
+      "prompt": "Ammonia and formaldehyde combine to form [___]",
+      "acceptedAnswers": [
+        "hexa"
+      ],
+      "correctDisplay": "hexa",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q7",
+      "sortNumber": 7,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r1-flowchart__7",
+      "prompt": "[___] Bakelite is heated and poured into a mould",
+      "acceptedAnswers": [
+        "raw"
+      ],
+      "correctDisplay": "raw",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q8",
+      "sortNumber": 8,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r1-flowchart__8",
+      "prompt": "Intense heat and [___] are applied before cooling",
+      "acceptedAnswers": [
+        "pressure"
+      ],
+      "correctDisplay": "pressure",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q9-10",
+      "sortNumber": 9,
+      "type": "Selección múltiple",
+      "responseKind": "multiselect",
+      "responseKey": "r1-multi",
+      "prompt": "Which TWO of the following factors influencing the design of Bakelite objects are mentioned in the text?",
+      "acceptedAnswers": [
+        "B",
+        "C"
+      ],
+      "correctDisplay": "B. the ease with which the resin could fill the mould | C. the facility with which the object could be removed from the mould",
+      "optionMap": {
+        "A": "A. the function which the object would serve",
+        "B": "B. the ease with which the resin could fill the mould",
+        "C": "C. the facility with which the object could be removed from the mould",
+        "D": "D. the limitations of the materials used to manufacture the mould",
+        "E": "E. the fashionable styles of the period"
+      },
+      "weight": 2
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q11",
+      "sortNumber": 11,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r1q11",
+      "prompt": "Modern-day plastic preparation is based on the same principles as that patented in 1907.",
+      "acceptedAnswers": [
+        0
+      ],
+      "correctDisplay": "TRUE",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q12",
+      "sortNumber": 12,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r1q12",
+      "prompt": "Bakelite was immediately welcomed as a practical and versatile material.",
+      "acceptedAnswers": [
+        1
+      ],
+      "correctDisplay": "FALSE",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 1: Bakelite",
+      "numberLabel": "Q13",
+      "sortNumber": 13,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r1q13",
+      "prompt": "Bakelite was only available in a limited range of colours.",
+      "acceptedAnswers": [
+        1
+      ],
+      "correctDisplay": "FALSE",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q14",
+      "sortNumber": 14,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r2q14",
+      "prompt": "Arthur Koestler considered laughter biologically important in several ways.",
+      "acceptedAnswers": [
+        1
+      ],
+      "correctDisplay": "FALSE",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q15",
+      "sortNumber": 15,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r2q15",
+      "prompt": "Plato believed humour to be a sign of above-average intelligence.",
+      "acceptedAnswers": [
+        2
+      ],
+      "correctDisplay": "NOT GIVEN",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q16",
+      "sortNumber": 16,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r2q16",
+      "prompt": "Kant believed that a successful joke involves the controlled release of nervous energy.",
+      "acceptedAnswers": [
+        0
+      ],
+      "correctDisplay": "TRUE",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q17",
+      "sortNumber": 17,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r2q17",
+      "prompt": "Current thinking on humour has largely ignored Aristotle's view on the subject.",
+      "acceptedAnswers": [
+        1
+      ],
+      "correctDisplay": "FALSE",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q18",
+      "sortNumber": 18,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r2q18",
+      "prompt": "Graeme Ritchie's work links jokes to artificial intelligence.",
+      "acceptedAnswers": [
+        0
+      ],
+      "correctDisplay": "TRUE",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q19",
+      "sortNumber": 19,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r2q19",
+      "prompt": "Most comedians use personal situations as a source of humour.",
+      "acceptedAnswers": [
+        2
+      ],
+      "correctDisplay": "NOT GIVEN",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q20",
+      "sortNumber": 20,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r2q20",
+      "prompt": "Chimpanzees make particular noises when they are playing.",
+      "acceptedAnswers": [
+        0
+      ],
+      "correctDisplay": "TRUE",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q21",
+      "sortNumber": 21,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r2-diagram__21",
+      "prompt": "Right prefrontal cortex lights up — area of brain linked to [___]",
+      "acceptedAnswers": [
+        "problem solving"
+      ],
+      "correctDisplay": "problem solving",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q22",
+      "sortNumber": 22,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r2-diagram__22",
+      "prompt": "[___] become active too",
+      "acceptedAnswers": [
+        "temporal lobes"
+      ],
+      "correctDisplay": "temporal lobes",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q23",
+      "sortNumber": 23,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r2-diagram__23",
+      "prompt": "Orbital prefrontal cortex is activated — involved with [___]",
+      "acceptedAnswers": [
+        "evaluating information"
+      ],
+      "correctDisplay": "evaluating information",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q24",
+      "sortNumber": 24,
+      "type": "Relacionar",
+      "responseKind": "match",
+      "responseKey": "r2-match__24",
+      "prompt": "One of the brain's most difficult tasks is to",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "correctDisplay": "C. respond instantly to whatever is happening.",
+      "optionMap": {
+        "A": "A. react to their own thoughts.",
+        "B": "B. helped create language in humans.",
+        "C": "C. respond instantly to whatever is happening.",
+        "D": "D. may provide valuable information about the operation of the brain.",
+        "E": "E. cope with difficult situations.",
+        "F": "F. relate to a person's subjective views.",
+        "G": "G. led our ancestors to smile and then laugh."
+      },
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q25",
+      "sortNumber": 25,
+      "type": "Relacionar",
+      "responseKind": "match",
+      "responseKey": "r2-match__25",
+      "prompt": "Because of the language they have developed, humans",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "correctDisplay": "A. react to their own thoughts.",
+      "optionMap": {
+        "A": "A. react to their own thoughts.",
+        "B": "B. helped create language in humans.",
+        "C": "C. respond instantly to whatever is happening.",
+        "D": "D. may provide valuable information about the operation of the brain.",
+        "E": "E. cope with difficult situations.",
+        "F": "F. relate to a person's subjective views.",
+        "G": "G. led our ancestors to smile and then laugh."
+      },
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q26",
+      "sortNumber": 26,
+      "type": "Relacionar",
+      "responseKind": "match",
+      "responseKey": "r2-match__26",
+      "prompt": "Individual responses to humour",
+      "acceptedAnswers": [
+        "F"
+      ],
+      "correctDisplay": "F. relate to a person's subjective views.",
+      "optionMap": {
+        "A": "A. react to their own thoughts.",
+        "B": "B. helped create language in humans.",
+        "C": "C. respond instantly to whatever is happening.",
+        "D": "D. may provide valuable information about the operation of the brain.",
+        "E": "E. cope with difficult situations.",
+        "F": "F. relate to a person's subjective views.",
+        "G": "G. led our ancestors to smile and then laugh."
+      },
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 2: What's so funny?",
+      "numberLabel": "Q27",
+      "sortNumber": 27,
+      "type": "Relacionar",
+      "responseKind": "match",
+      "responseKey": "r2-match__27",
+      "prompt": "Peter Derks believes that humour",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "correctDisplay": "D. may provide valuable information about the operation of the brain.",
+      "optionMap": {
+        "A": "A. react to their own thoughts.",
+        "B": "B. helped create language in humans.",
+        "C": "C. respond instantly to whatever is happening.",
+        "D": "D. may provide valuable information about the operation of the brain.",
+        "E": "E. cope with difficult situations.",
+        "F": "F. relate to a person's subjective views.",
+        "G": "G. led our ancestors to smile and then laugh."
+      },
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q28",
+      "sortNumber": 28,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r3-summary__28",
+      "prompt": "In Europe modern science emerged at the same time as the nation state. At first, the scientific language of choice remained [___].",
+      "acceptedAnswers": [
+        "Latin"
+      ],
+      "correctDisplay": "Latin",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q29",
+      "sortNumber": 29,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r3-summary__29",
+      "prompt": "Sometimes the desire to protect ideas seems to have been stronger than the desire to communicate them, particularly in the case of mathematicians and [___].",
+      "acceptedAnswers": [
+        "doctors"
+      ],
+      "correctDisplay": "doctors",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q30",
+      "sortNumber": 30,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r3-summary__30",
+      "prompt": "In Britain, moreover, scientists worried that English had neither the [___] nor the [___] to express their ideas.",
+      "acceptedAnswers": [
+        "technical vocabulary"
+      ],
+      "correctDisplay": "technical vocabulary",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q31",
+      "sortNumber": 31,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r3-summary__31",
+      "prompt": "In Britain, moreover, scientists worried that English had neither the [___] nor the [___] to express their ideas.",
+      "acceptedAnswers": [
+        "grammatical resources"
+      ],
+      "correctDisplay": "grammatical resources",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q32",
+      "sortNumber": 32,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r3-summary__32",
+      "prompt": "This situation only changed after 1660 when scientists associated with the [___] set about developing English.",
+      "acceptedAnswers": [
+        "Royal Society"
+      ],
+      "correctDisplay": "Royal Society",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q33",
+      "sortNumber": 33,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r3-summary__33",
+      "prompt": "Although English was then overtaken by [___], it developed again in the 19th century as a direct result of the [___].",
+      "acceptedAnswers": [
+        "German"
+      ],
+      "correctDisplay": "German",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q34",
+      "sortNumber": 34,
+      "type": "Completar",
+      "responseKind": "fill",
+      "responseKey": "r3-summary__34",
+      "prompt": "Although English was then overtaken by [___], it developed again in the 19th century as a direct result of the [___].",
+      "acceptedAnswers": [
+        "industrial revolution"
+      ],
+      "correctDisplay": "industrial revolution",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q35",
+      "sortNumber": 35,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r3q35",
+      "prompt": "There was strong competition between scientists in Renaissance Europe.",
+      "acceptedAnswers": [
+        2
+      ],
+      "correctDisplay": "NOT GIVEN",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q36",
+      "sortNumber": 36,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r3q36",
+      "prompt": "The most important scientific development of the Renaissance period was the discovery of magnetism.",
+      "acceptedAnswers": [
+        1
+      ],
+      "correctDisplay": "NO",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q37",
+      "sortNumber": 37,
+      "type": "Clasificación",
+      "responseKind": "mcq",
+      "responseKey": "r3q37",
+      "prompt": "In 17th century Britain, leading thinkers combined their interest in science with an interest in how to express ideas.",
+      "acceptedAnswers": [
+        0
+      ],
+      "correctDisplay": "YES",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q38",
+      "sortNumber": 38,
+      "type": "Completar tabla",
+      "responseKind": "fill",
+      "responseKey": "r3-table__38",
+      "prompt": "English - : Type of science | Latin: Original",
+      "acceptedAnswers": [
+        "popular"
+      ],
+      "correctDisplay": "popular",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q39",
+      "sortNumber": 39,
+      "type": "Completar tabla",
+      "responseKind": "fill",
+      "responseKey": "r3-table__39",
+      "prompt": "Latin - : Examples | English: Encyclopaedias, educational textbooks, translations",
+      "acceptedAnswers": [
+        "Principia",
+        "the Principia",
+        "Newton's Principia",
+        "mathematical treatise"
+      ],
+      "correctDisplay": "Principia",
+      "weight": 1
+    },
+    {
+      "skill": "reading",
+      "section": "Reading Passage 3: The Birth of Scientific English",
+      "numberLabel": "Q40",
+      "sortNumber": 40,
+      "type": "Completar tabla",
+      "responseKind": "fill",
+      "responseKey": "r3-table__40",
+      "prompt": "English - : Target audience | Latin: International scholars",
+      "acceptedAnswers": [
+        "local",
+        "more local",
+        "local audience"
+      ],
+      "correctDisplay": "local",
+      "weight": 1
+    }
+  ]
+}

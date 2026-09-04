@@ -8,7 +8,7 @@ import {
   getIeltsWritingAssignment,
   loadIeltsMock,
 } from '@/lib/labs/exam-bridge/ielts';
-import { getIeltsReviewBlueprint } from './review-blueprint';
+import { getIeltsReviewBlueprint, isIeltsSubmissionVersionCurrent } from './review-blueprint';
 import { scoreIeltsObjectiveAnswers } from './mock-scoring';
 import { consumeIeltsRateLimit } from './rate-limit.server';
 import {
@@ -190,6 +190,11 @@ async function prepareSubmission(request: Request, mockId: string, rawPayload: u
     return jsonError('Este simulacro no está conectado al blueprint verificable de IELTS.', 404);
   }
 
+  const clientVersion = rawPayload && typeof rawPayload === 'object'
+    ? (rawPayload as { contentVersion?: unknown }).contentVersion : undefined;
+  if (!isIeltsSubmissionVersionCurrent(mockId, clientVersion)) {
+    return jsonError('Este examen se abrió con una versión anterior. Conserva una copia de tus respuestas y vuelve a abrir el simulacro actualizado antes de enviarlo.', 409);
+  }
   const validated = validatePayload(rawPayload, speakingAssignment);
   if (!validated.ok) return jsonError(validated.error, 400);
   const payload = validated.payload;
@@ -256,6 +261,7 @@ async function prepareSubmission(request: Request, mockId: string, rawPayload: u
     mock_title: blueprint.mockTitle,
     content_version: blueprint.contentVersion,
     assignment_snapshot: {
+      objectiveScoring: { contentVersion: blueprint.contentVersion, policyVersion: 'ielts-objective-v2' },
       writing: { task1: writingTask1, task2: writingTask2 },
       speaking: speakingAssignment,
     },

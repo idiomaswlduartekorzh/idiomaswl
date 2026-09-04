@@ -33,6 +33,13 @@ function isCorrect(input: string, accepted: string[]): boolean {
   return accepted.some(answer => normalizeAnswer(answer) === normalized);
 }
 
+/** IELTS awards one mark per selected correct answer, in either order. */
+export function scoreIeltsMultiSelect(selected: readonly string[], accepted: readonly string[], limit: number): number {
+  const unique = new Set(selected);
+  if (unique.size !== selected.length || selected.length > limit) return 0;
+  return new Set(accepted.filter(answer => unique.has(answer))).size;
+}
+
 export function rawIeltsScoreToBand(
   raw: number,
   table: readonly (readonly [number, number])[],
@@ -71,9 +78,7 @@ function scoreObjectiveSkill(
         const item = question as MultiSelectQuestion;
         total += item.selectCount;
         const selected = answers.ms[item.id] ?? [];
-        if (item.answers.every(answer => selected.includes(answer)) && selected.every(answer => item.answers.includes(answer))) {
-          correct += item.selectCount;
-        }
+        correct += scoreIeltsMultiSelect(selected, item.answers, item.selectCount);
       } else if (question.type === 'matching') {
         const item = question as MatchingGroupQuestion;
         total += item.items.length;
