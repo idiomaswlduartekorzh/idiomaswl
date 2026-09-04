@@ -1,0 +1,37 @@
+{
+  "status": "draft-product-academic-review-required",
+  "reviewer": null,
+  "sourceCommit": "d7e8eab74198465e20babaf963a3bb6d63eaf278",
+  "setId": "set-1",
+  "scope": "Three display-order permutations only; no content, item order, audio, canonical option ID or scoring key changes. Not imported into runtime.",
+  "attemptPolicy": "After approval: apply only to fresh attempts, record the order version per attempt, preserve old presentation for already-started attempts. Do not clear user storage or regenerate IDs from display letters.",
+  "items": [
+    {
+      "itemId": "item:t1-l-cr4-fixed-v1",
+      "proposedOptionIds": [
+        "item:t1-l-cr4-fixed-v1:option-d",
+        "item:t1-l-cr4-fixed-v1:option-b",
+        "item:t1-l-cr4-fixed-v1:option-c",
+        "item:t1-l-cr4-fixed-v1:option-a"
+      ]
+    },
+    {
+      "itemId": "item:t1-l-m1-cr6-v1",
+      "proposedOptionIds": [
+        "item:t1-l-m1-cr6-v1:option-a",
+        "item:t1-l-m1-cr6-v1:option-b",
+        "item:t1-l-m1-cr6-v1:option-d",
+        "item:t1-l-m1-cr6-v1:option-c"
+      ]
+    },
+    {
+      "itemId": "item:t1-l-m1-cr8-v1",
+      "proposedOptionIds": [
+        "item:t1-l-m1-cr8-v1:option-b",
+        "item:t1-l-m1-cr8-v1:option-a",
+        "item:t1-l-m1-cr8-v1:option-c",
+        "item:t1-l-m1-cr8-v1:option-d"
+      ]
+    }
+  ]
+}
