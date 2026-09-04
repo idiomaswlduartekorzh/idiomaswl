@@ -27,7 +27,7 @@
   "sets": [
     {"set":1,"baselineCharsLongestRate":0.294,"status":"APPLIED_AND_AUTOMATIC_SCREEN_PASS","academicScope":"Previously approved Set 1 options only; transversal HR-06 review remains open."},
     {"set":2,"baselineCharsLongestRate":0.824,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set2-options-candidate.json","candidateSha256":"bd120b0705020c28d1d67915e799db144b480425f18d26640e9d8a161b23dab7"},
-    {"set":3,"baselineCharsLongestRate":0.882,"status":"PENDING_CURATION"},
+    {"set":3,"baselineCharsLongestRate":0.882,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set3-options-candidate.json","candidateSha256":"5bfb933ffd9cb5ef554ba66f3d8fe52807c137715e142cb4c571015b9b5dd1aa"},
     {"set":4,"baselineCharsLongestRate":0.824,"status":"PENDING_CURATION"},
     {"set":5,"baselineCharsLongestRate":0.735,"status":"PENDING_CURATION"},
     {"set":6,"baselineCharsLongestRate":0.779,"status":"PENDING_CURATION"},
