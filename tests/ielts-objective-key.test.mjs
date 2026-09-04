@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import mock from '../src/data/mocks/ielts-set-1.ts';
 import { auditObjectiveKey } from '../scripts/lib/ielts-answer-key-audit.mjs';
-import { scoreIeltsObjectiveAnswers, scoreIeltsMultiSelect } from '../src/lib/ielts/mock-scoring.ts';
+import { scoreIeltsObjectiveAnswers, scoreIeltsMultiSelect, scoreIeltsUnorderedFillGroup } from '../src/lib/ielts/mock-scoring.ts';
 import { getIeltsReviewBlueprint, isIeltsSubmissionVersionCurrent } from '../src/lib/ielts/review-blueprint.ts';
 
 const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/ielts/set-1-approved.json', import.meta.url)));
@@ -50,6 +50,22 @@ test('multiselect: permutations, partial credit, duplicates and excess choices',
     }
   }
 });
+test('Reading Q30-Q31 accept either order but consume each answer once', () => {
+  assert.equal(scoreIeltsUnorderedFillGroup(['technical vocabulary', 'grammatical resources'], [['technical vocabulary'], ['grammatical resources']]), 2);
+  assert.equal(scoreIeltsUnorderedFillGroup(['grammatical resources', 'technical vocabulary'], [['technical vocabulary'], ['grammatical resources']]), 2);
+  assert.equal(scoreIeltsUnorderedFillGroup(['technical vocabulary', 'technical vocabulary'], [['technical vocabulary'], ['grammatical resources']]), 1);
+  for (const [first, second, expected] of [
+    ['technical vocabulary', 'grammatical resources', 2],
+    ['grammatical resources', 'technical vocabulary', 2],
+    ['technical vocabulary', 'technical vocabulary', 1],
+    ['grammatical resources', 'grammatical resources', 1],
+  ]) {
+    const answers = empty();
+    answers.fills['r3-summary__30'] = first;
+    answers.fills['r3-summary__31'] = second;
+    assert.equal(scoreIeltsObjectiveAnswers(mock, answers).reading.correct, expected);
+  }
+});
 test('all raw scores 0–40 match pinned diagnostic bands', () => {
   const tables = {
     listening:[[39,9],[37,8.5],[35,8],[33,7.5],[30,7],[27,6.5],[23,6],[20,5.5],[16,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5],[0,1]],
@@ -77,9 +93,9 @@ test('guardian rejects old key, missing questions and shuffled options', () => {
   assert.throws(()=>auditObjectiveKey(shuffled,fixture));
 });
 test('Set 1 old tabs fail closed; historical W/S remains reviewable', () => {
-  for (const version of [undefined,null,'ielts-set-1-v1',{},'ielts-set-1-v3']) assert.equal(isIeltsSubmissionVersionCurrent('set-1',version),false);
-  assert.equal(isIeltsSubmissionVersionCurrent('set-1','ielts-set-1-v2'),true);
-  assert.ok(getIeltsReviewBlueprint('set-1').reviewableContentVersions.includes('ielts-set-1-v1'));
+  for (const version of [undefined,null,'ielts-set-1-v1','ielts-set-1-v2',{},'ielts-set-1-v4']) assert.equal(isIeltsSubmissionVersionCurrent('set-1',version),false);
+  assert.equal(isIeltsSubmissionVersionCurrent('set-1','ielts-set-1-v3'),true);
+  assert.deepEqual(getIeltsReviewBlueprint('set-1').reviewableContentVersions, ['ielts-set-1-v1', 'ielts-set-1-v2', 'ielts-set-1-v3']);
   assert.equal(isIeltsSubmissionVersionCurrent('set-2','ielts-set-2-v1'),true);
 });
 test('browser and persistence use shared scorer; stale check precedes writes', () => {

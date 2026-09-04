@@ -28,13 +28,13 @@ export const IELTS_REVIEW_BLUEPRINTS: Record<string, IeltsReviewBlueprint> = Obj
   Array.from({ length: 20 }, (_, index) => {
     const setNumber = index + 1;
     const mockId = `set-${setNumber}`;
-    const contentVersion = setNumber === 1 ? 'ielts-set-1-v2' : `ielts-set-${setNumber}-v1`;
+    const contentVersion = setNumber === 1 ? 'ielts-set-1-v3' : `ielts-set-${setNumber}-v1`;
     return [mockId, {
       mockId,
       mockTitle: `IELTS Academic Set ${setNumber}`,
       contentVersion,
       reviewableContentVersions: setNumber === 1
-        ? ['ielts-set-1-v1', 'ielts-set-1-v2']
+        ? ['ielts-set-1-v1', 'ielts-set-1-v2', 'ielts-set-1-v3']
         : [contentVersion],
       writingTasks: {
         1: {

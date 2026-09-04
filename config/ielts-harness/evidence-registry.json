@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "policy": {
+    "purpose": "Observed state and independent approval evidence. Observations never constitute release approval.",
+    "releaseRequiresFreshFingerprints": true,
+    "selfApprovalForbidden": true
+  },
+  "sets": [
+    { "set": 1, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "references": ["Cambridge IELTS 10 Academic, Test 1, Listening", "tests/fixtures/ielts/set-1-listening-cambridge10-test1-reference.json", "Cambridge IELTS 5 Academic, Test 2, Reading", "tests/fixtures/ielts/set-1-reading-cambridge5-test2-reference.json"], "objectiveKey": { "status": "APPROVED", "objectiveSha256": "a1deb94c79dcefc7b28740994df775a16fe9facc2c7709064ef99013c52fcc3f", "evidencePath": "tests/fixtures/ielts/set-1-approved.json", "evidenceSha256": "d0df0d94e2e39bdf4af4ec8281bee039f5219db261b73a3dcc9cd9a90b069f1e", "reviewer": { "kind": "human", "id": "owner-reviewed-set1-key" }, "reviewedAt": "2026-09-04" }, "notes": ["Objective key and Set 1 diagram guards exist independently.", "Listening Q1-Q40 matches a separately pinned Cambridge 10 Test 1 answer reference.", "Reading Q1-Q40 matches a separately pinned Cambridge 5 Test 2 answer reference; Q30-Q31 are scored in either order with one-time answer consumption.", "Listening Q40 key is expansion; abbreviated transcript says expand; full audio evidence remains pending."] },
+    { "set": 2, "knownAudioStatus": "CONFIRMED_MISMATCH", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["MP3 contains the Louisa Hardie transport survey; screen/script describe Daniel Harris court booking."] },
+    { "set": 3, "knownAudioStatus": "CONFIRMED_MISMATCH", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["MP3 contains nursery registration; screen/script describe library membership."] },
+    { "set": 4, "knownAudioStatus": "CONFIRMED_MISMATCH", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["MP3 contains a call to a builder; screen/script describe university accommodation."] },
+    { "set": 5, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 6, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 7, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" }, "notes": ["Reading Q21 and Q23 require content repair before approval."] },
+    { "set": 8, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 9, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 10, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 11, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 12, "knownAudioStatus": "SAMPLE_MATCH_ONLY", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 13, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 14, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 15, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 16, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 17, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 18, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 19, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } },
+    { "set": 20, "knownAudioStatus": "MISSING", "provenance": { "source": "docs/ielts-material-readiness.md", "observedAt": "2026-09-04" } }
+  ]
+}
