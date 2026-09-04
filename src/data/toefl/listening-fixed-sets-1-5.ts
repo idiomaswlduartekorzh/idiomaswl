@@ -14,20 +14,20 @@ const item = (setNumber: number, code: string, prompt: string, options: readonly
 
 export const TOEFL_FIXED_LISTENING_SET1 = fixedListeningSet(1, {
   module1ChooseAdditions: [
-    fixedListeningChoose(1, 'm1', 6, 'woman', 'Could you remind me where the tutoring center is?', ['It closes after the final exam.', 'I studied there yesterday.', 'It is across from the main library.', 'The tutor called this morning.']),
-    fixedListeningChoose(1, 'm1', 7, 'man', 'I am afraid the printer has run out of paper again.', ['The report I printed earlier has only three pages.', 'I will bring a new package from the supply room.', 'Printing at the library costs ten cents per page.', 'The paper in that article was easy to read.']),
-    fixedListeningChoose(1, 'm1', 8, 'woman', 'Would you mind watching my bag for a minute?', ['Not at all. I will keep it here.', 'The bag was on sale.', 'I missed the last minute.', 'You can watch the news online.']),
+    fixedListeningChoose(1, 'm1', 6, 'woman', 'Could you remind me where the tutoring center is?', ["The tutoring session lasts an hour.","I went there to study yesterday.","It's across from the main library.","Your tutor called this morning."]),
+    fixedListeningChoose(1, 'm1', 7, 'man', 'I am afraid the printer has run out of paper again.', ["The report was printed yesterday.","I'll get more from the supply room.","We pay ten cents for each page.","I finished reading that paper."]),
+    fixedListeningChoose(1, 'm1', 8, 'woman', 'Would you mind watching my bag for a minute?', ["Not at all. I'll keep an eye on it.","This bag has a pocket for my watch.","I bought my bag at the station.","The café closes in a few minutes."]),
   ],
   module2: {
     choose: [
-      fixedListeningChoose(1, 'm2', 1, 'man', 'How long will the chemistry lab stay open tonight?', ['The experiment took two hours.', 'It is in the science building.', 'We opened the windows.', 'Until nine o’clock.']),
-      fixedListeningChoose(1, 'm2', 2, 'woman', 'I thought Maya was presenting first.', ['Her presentation was clear.', 'The schedule was changed this morning.', 'The first chapter is short.', 'Maya studies engineering.']),
-      fixedListeningChoose(1, 'm2', 3, 'man', 'Why do we not take the earlier train?', ['The station is underground.', 'I bought the ticket online.', 'Good idea. Then we will avoid the rush.', 'The train was painted blue.']),
-      fixedListeningChoose(1, 'm2', 4, 'woman', 'Could I exchange this shirt without the receipt?', ['Let me ask the manager what we can do.', 'The changing room is over there.', 'I usually wear a medium.', 'The receipt lists two items.']),
-      fixedListeningChoose(1, 'm2', 5, 'man', 'The lecture was more interesting than I expected.', ['The professor arrived by bus.', 'My expectations are written down.', 'The lecture hall has new seats.', 'I thought so too, especially the final example.']),
-      fixedListeningChoose(1, 'm2', 6, 'woman', 'Did you not reserve a study room?', ['The library has many books.', 'I did, but my confirmation was cancelled.', 'We studied the first chapter.', 'The room has a large table.']),
-      fixedListeningChoose(1, 'm2', 7, 'man', 'I am sorry I missed your call.', ['That is all right. I sent the information by email.', 'The call lasted ten minutes.', 'My phone is on the desk.', 'I missed the morning bus.']),
-      fixedListeningChoose(1, 'm2', 8, 'woman', 'Where should I leave the completed form?', ['It took me an hour to complete.', 'The form has two pages.', 'Put it in the tray beside the office door.', 'I left campus after lunch.']),
+      fixedListeningChoose(1, 'm2', 1, 'man', 'How long will the chemistry lab stay open tonight?', ["The experiment lasted two hours.","The lab opened at eight today.","We finish chemistry after lunch.","It will close at nine tonight."]),
+      fixedListeningChoose(1, 'm2', 2, 'woman', 'I thought Maya was presenting first.', ["Her first slide has the schedule.","They changed the order this morning.","She was first to arrive today.","Her topic was changed yesterday."]),
+      fixedListeningChoose(1, 'm2', 3, 'man', 'Why do we not take the earlier train?', ["The train from yesterday was late.","My return ticket is for tomorrow.","Good idea; we'll avoid the rush.","The station clock is ten minutes fast."]),
+      fixedListeningChoose(1, 'm2', 4, 'woman', 'Could I exchange this shirt without the receipt?', ["Let me check our exchange policy.","The receipt shows the original price.","The changing room is just over there.","This shirt was made from cotton."]),
+      fixedListeningChoose(1, 'm2', 5, 'man', 'The lecture was more interesting than I expected.', ["I wrote the lecture time in my diary.","The example appears on the last slide.","The lecturer arrived a little early.","Me too—the final example was fascinating."]),
+      fixedListeningChoose(1, 'm2', 6, 'woman', 'Did you not reserve a study room?', ["We studied in that room last Tuesday.","I did, but the booking was cancelled.","My library card expires next month.","The room was renovated last summer."]),
+      fixedListeningChoose(1, 'm2', 7, 'man', 'I am sorry I missed your call.', ["No problem; I emailed you the information.","I keep my phone beside the computer.","The call yesterday lasted ten minutes.","I left the meeting before it finished."]),
+      fixedListeningChoose(1, 'm2', 8, 'woman', 'Where should I leave the completed form?', ["Before the office closes this evening.","With your full name on the first page.","In the tray beside the office door.","After your adviser has signed it."]),
     ],
     conversation: fixedListeningStimulus(
       1, 'm2-conversation', 'conversation', 'Borrowing a recording kit', CONVERSATION_INSTRUCTIONS,
@@ -39,16 +39,16 @@ STUDENT: That is fine. I can borrow a tripod from my classmate.
 
 STAFF MEMBER: Great. I will change the reservation. Please return everything by four tomorrow.`,
       ['student', 'announcer'], [
-        item(1, 'm2-cv1', 'Why can the student not collect the originally assigned kit now?', ['The student reserved the wrong building.', 'It has not yet been returned.', 'The assignment deadline changed.', 'The staff member cannot find the reservation.']),
-        item(1, 'm2-cv2', 'What will the student obtain from a classmate?', ['A microphone', 'A recorder', 'A confirmation email', 'A tripod']),
+        item(1, 'm2-cv1', 'Why can the student not collect the originally assigned kit now?', ["The kit was sent away for repairs.","Another borrower still has the kit.","The student missed the collection time.","The reservation lacks a confirmation."]),
+        item(1, 'm2-cv2', 'What will the student obtain from a classmate?', ["A microphone","A recorder","A carrying case","A tripod"]),
       ],
     ),
     announcement: fixedListeningStimulus(
       1, 'm2-announcement', 'announcement', 'Pool maintenance notice', ANNOUNCEMENT_INSTRUCTIONS,
       `ANNOUNCER: The campus pool will close at six this evening instead of nine because technicians must inspect the ventilation system. The morning schedule tomorrow is unchanged, and the pool will reopen at seven. Tonight’s beginner swimming class has been moved to Thursday at the same time. Registered students will keep their places automatically, so they do not need to enroll again.`,
       ['announcer'], [
-        item(1, 'm2-an1', 'Why will the pool close early?', ['Technicians need to inspect the ventilation system.', 'A swimming competition begins tonight.', 'The morning schedule has changed.', 'The instructors are attending a meeting.']),
-        item(1, 'm2-an2', 'What must registered beginners do to attend the rescheduled class?', ['Pay a second registration fee', 'Choose a different instructor', 'Nothing; their places will be kept.', 'Arrive at seven tomorrow morning']),
+        item(1, 'm2-an1', 'Why will the pool close early?', ["To inspect the ventilation system","To prepare the pool for a competition","To repair the equipment used in lessons","To clean the pool before morning classes"]),
+        item(1, 'm2-an2', 'What must registered beginners do to attend the rescheduled class?', ["Confirm attendance at the front desk.","Choose another class on the website.","Nothing; their places are reserved.","Bring a new registration form Thursday."]),
       ],
     ),
     academic: fixedListeningStimulus(
@@ -59,10 +59,10 @@ This partnership also helps explain coral bleaching. Heat or another source of s
 
 Not every coral depends on these algae. Deep-sea corals live without sunlight and obtain energy by capturing plankton and organic particles. So the familiar coral-algae partnership is extremely important in shallow reefs, but it is not a definition that applies to every coral species.`,
       ['professor'], [
-        item(1, 'm2-at1', 'What is the talk mainly about?', ['Why all corals live in deep water', 'A beneficial partnership in many shallow-water corals', 'How coral skeletons move between reefs', 'Why algae are classified as animals']),
-        item(1, 'm2-at2', 'What do the algae provide to the coral?', ['A colder ocean current', 'Protection from every disease', 'Oxygen and energy-rich materials', 'A new limestone skeleton each day']),
-        item(1, 'm2-at3', 'Why does a bleached coral appear pale?', ['The coral has lost much of the algae that contribute color.', 'Its skeleton has dissolved completely.', 'It has moved into deep water.', 'The algae have produced extra pigments.']),
-        item(1, 'm2-at4', 'Why does the professor mention deep-sea corals?', ['To show that they receive more sunlight', 'To argue that plankton causes bleaching', 'To explain why every coral needs algae', 'To qualify the partnership as important but not universal']),
+        item(1, 'm2-at1', 'What is the talk mainly about?', ["How deep-sea corals reproduce without light","How a coral-algae partnership works","How reef skeletons are formed from algae","Why corals and plankton compete for sunlight"]),
+        item(1, 'm2-at2', 'What do the algae provide to the coral?', ["Shelter from strong ocean currents","Compounds used during photosynthesis","Oxygen and energy-rich materials","Plankton and other organic particles"]),
+        item(1, 'm2-at3', 'Why does a bleached coral appear pale?', ["It has lost the algae that give it color.","The pale skeleton has dissolved away.","Its tissue has grown much thicker.","Its algae have made new pale pigments."]),
+        item(1, 'm2-at4', 'Why does the professor mention deep-sea corals?', ["To show how they adapt to warmer water","To link bleaching to a shortage of plankton","To explain how they use algae without light","To show that the partnership has exceptions"]),
       ],
     ),
   },

@@ -1,0 +1,178 @@
+{
+  "status": "pre-application-integrity-baseline",
+  "commitSha": "3fcf95b5cad993469e60c10f91f7a342a6869cd3",
+  "mainSha": "8c955322b406fcb3458b01ec5f76999740c38c98",
+  "normalization": "Only text of the 34 approved Set 1 option IDs is replaced by <approved-option-text>. All other mock fields and all 19 other mocks remain hashed.",
+  "sets": [
+    {
+      "setId": "set-1",
+      "sha256": "7466cbf5be0d7f31c9e01379cbe59b8a0fd49ac1caaf35db636ce42687158cfd"
+    },
+    {
+      "setId": "set-2",
+      "sha256": "a208f8efac8e26c97dd64b478a4bcfed4c3ce57c3d8daa4c1b24b0904f202828"
+    },
+    {
+      "setId": "set-3",
+      "sha256": "13bbff4d537fc06eea36e6cdd040ab0c9106db45d7c13edb3c14908fdae245c2"
+    },
+    {
+      "setId": "set-4",
+      "sha256": "0b1856c6dd2b3617f48c47083f57207ff4457d99bc48f317e252a21f79518846"
+    },
+    {
+      "setId": "set-5",
+      "sha256": "21f13ae954b8d0f871d6cc60b9106f4772a4f11548e4e99752f7c422ed1bce6b"
+    },
+    {
+      "setId": "set-6",
+      "sha256": "fd1762f94c45f230663d9820fe742c672f97df02d86c616c604c13afe2fa64e1"
+    },
+    {
+      "setId": "set-7",
+      "sha256": "29e3a1f3013f88568b70583e9cb7c9e6fc19b20eb39e7d3883352e96f65fb3eb"
+    },
+    {
+      "setId": "set-8",
+      "sha256": "298b17eb3b1d6e4eda633c332102e02d4a6f8244a70caac1acce06ee4c0bee23"
+    },
+    {
+      "setId": "set-9",
+      "sha256": "88a7d7b371e4c30b686dbcc9f4525cc54ea16ec22281d07c8999b009c61d789c"
+    },
+    {
+      "setId": "set-10",
+      "sha256": "6d3c18d09ae842d33d15179a4d0193644daadd8796b29146f8971713199fd1ac"
+    },
+    {
+      "setId": "set-11",
+      "sha256": "4f24ed3a866a213007ee89eda55d4414a16f9875115f8274c29f94c445678978"
+    },
+    {
+      "setId": "set-12",
+      "sha256": "00a9b8f02c34adefe60415a97b356a0ddfc0ed4c46d2098d3631af25c4467f20"
+    },
+    {
+      "setId": "set-13",
+      "sha256": "dd35917d8257b9a05ec1f527ce4132d6979386d8ca246d73058b804874cfd0ae"
+    },
+    {
+      "setId": "set-14",
+      "sha256": "9361acc90c9d9b1615f3bea0f37ea9d19ea1d16e7bbb1f54a03b435b9c8d2be4"
+    },
+    {
+      "setId": "set-15",
+      "sha256": "967600699ce02f89785b6a6433581192a452603d55d5cf6c7b3b1c4595f34244"
+    },
+    {
+      "setId": "set-16",
+      "sha256": "40dd9ecd1312b4577f56b5f4a81c4936f54bfdf778e35fc72eedc7ac7f7756fc"
+    },
+    {
+      "setId": "set-17",
+      "sha256": "c351ffd5c513440958ff43e561373eb5d229d998b90d19b34a41dd9a0b22507f"
+    },
+    {
+      "setId": "set-18",
+      "sha256": "e37d8a8c611c78590662dce79934221b62ea93a22941ba8c3f193af2af1e942c"
+    },
+    {
+      "setId": "set-19",
+      "sha256": "9d1a244b4f4079b7a4d4dcb79d6574efc49ed29cbdb361b02e65a91e55c2f0f4"
+    },
+    {
+      "setId": "set-20",
+      "sha256": "e7e38411f73a3370e3271d31e595c8ae689bfbfe3a58adc80362190a6417c29d"
+    }
+  ],
+  "audioHashes": [
+    {
+      "url": "/audio/toefl/set-1/academic-talk.mp3",
+      "sha256": "77c55ddb0db398c3372372a401664812ae2ff2ad01505cbbd843e493690e91d9"
+    },
+    {
+      "url": "/audio/toefl/set-1/announcement.mp3",
+      "sha256": "379645912b17f6a6ca37d66f0b5e5599bc435ed6775331da1150431e656448dd"
+    },
+    {
+      "url": "/audio/toefl/set-1/conversation.mp3",
+      "sha256": "dfe47b5aacf092cdeaad940111968c1413856b9c184c529abd92ea06a21c645b"
+    },
+    {
+      "url": "/audio/toefl/set-1/listen-choose-1.mp3",
+      "sha256": "5c397a1458bbc2def111e50648c9e742c4a074fbbfdc742a3478faa6fd6fd076"
+    },
+    {
+      "url": "/audio/toefl/set-1/listen-choose-2.mp3",
+      "sha256": "8d276425d7a469d4280462c64cface44531b009a6a8aa12035e7d81357e745ad"
+    },
+    {
+      "url": "/audio/toefl/set-1/listen-choose-3.mp3",
+      "sha256": "03fcd6e06d67a8aade21f2492326d1b50fc697ba8a4e1b2e93d165a8f2f7172a"
+    },
+    {
+      "url": "/audio/toefl/set-1/listen-choose-4.mp3",
+      "sha256": "11944be706b6c2165c5b11575adf8e45a556dd6b00d86d72c654107ec4979758"
+    },
+    {
+      "url": "/audio/toefl/set-1/listen-choose-5.mp3",
+      "sha256": "3f2c2190bd33607ec3d0a8669b90f0e5e841e9c891585b5a0085a181439d9bee"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m1-choose-6.mp3",
+      "sha256": "227a098344d22a957c6132020967430d7362981a0f858aae04367f9388d29e06"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m1-choose-7.mp3",
+      "sha256": "0a3a82e9d357aee4332042bd756da2a2763523bf18c415557f386f0ea044f36d"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m1-choose-8.mp3",
+      "sha256": "7a833387b6152a3ddf35d49bd2ff3445d7c70b2d75026221f6f922cbe8980eea"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-academic-talk.mp3",
+      "sha256": "b5ace393e033dd86883f8cedfe2b21b1f25900352af23ddc37b4d6c1ce0289fd"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-announcement.mp3",
+      "sha256": "fced9537cc6f3f0ec4c98c2f707cbbb2eb05127186ddd7dd63eac19b736e50ac"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-choose-1.mp3",
+      "sha256": "8080a678f18fb29826805229e1447080ce3e779af8167fac8ea965419202051d"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-choose-2.mp3",
+      "sha256": "6c0cbf8bf7efd1a00b4a50a0ac395318061beb557e37202425be0c10e642ecf0"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-choose-3.mp3",
+      "sha256": "fdc9695ade583a6acef577d0457975b862c6899d80b1d6e8043a5e92dbd38db0"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-choose-4.mp3",
+      "sha256": "36f720ed0ef18543a0a0c2d8297c5eaa7cd72cc611132fb0be17c735e621bb19"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-choose-5.mp3",
+      "sha256": "40470d5564f3cbcd00a82f113dbc374d9c86b4ef0e45c091defad1a9d5555b4c"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-choose-6.mp3",
+      "sha256": "d39043b23f4f08aba7c35e14c34881360c23b348f00ccc07743d6ba648ed0e53"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-choose-7.mp3",
+      "sha256": "584e787efde89a67265c9730e2635e3a02f6b9bc131dcb76373d7768c1724b5d"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-choose-8.mp3",
+      "sha256": "4545cad6bad3c48ff30bc44990b8350ce1eee97782d951183ecb7e9d3bd7a553"
+    },
+    {
+      "url": "/audio/toefl/set-1/listening-m2-conversation.mp3",
+      "sha256": "e55703011cbdae0dac23b690dba3dfb9453bcfaf4a73c9643284b3561973a699"
+    }
+  ]
+}
