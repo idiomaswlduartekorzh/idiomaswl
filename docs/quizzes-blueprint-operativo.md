@@ -1,7 +1,7 @@
 # Quizzes de idiomas — blueprint operativo para nuevas implementaciones
 
 Fuente canónica para construir o ampliar quizzes en `/herramientas/quizes` sin reconstruir el
-contexto de las sesiones anteriores. Estado verificado: 29 de agosto de 2026.
+contexto de las sesiones anteriores. Base operativa: 29 de agosto de 2026. Contrato alemán actualizado localmente el 4 de septiembre; pendiente de integración.
 
 Este documento manda sobre notas históricas cuando describe la arquitectura actual. Para las
 decisiones lingüísticas por idioma sigue mandando
@@ -136,8 +136,9 @@ párrafo.
 1. El contexto debe hacer inequívoca la respuesta. Si dos formas son defendibles, se reescribe.
 2. No se importan categorías europeas a idiomas que no las tienen. Japonés usa no-pasado;
    ruso explicita aspecto; coreano explicita nivel de habla.
-3. Partículas, auxiliares, negación y adverbios móviles entran en el hueco cuando su posición es
-   parte del objetivo. No se deja un fragmento fijo que pueda duplicarse o quedar mal ordenado.
+3. Partículas, auxiliares, negación y adverbios móviles entran en el hueco cuando ocupan esa
+   posición. En alemán, si el prefijo separable ya aparece al final de la oración, el hueco pide
+   solo la parte finita y el guardián impide que la respuesta vuelva a incluir el prefijo.
 4. Las variantes normativas se enumeran en `accepted`; nunca se infieren por similitud.
 5. La normalización solo aplica NFKC, apóstrofos, mayúsculas no significativas y espacios.
 6. Cada hueco puntúa una decisión lingüística. Un texto con tres huecos vale tres puntos.
@@ -154,6 +155,10 @@ párrafo.
 14. Los bancos discursivos de niveles distintos tienen huellas editoriales distintas; diez
     semillas rotadas no cuentan como diez relatos nuevos.
 15. En el reto final, elegir siempre la primera tarjeta debe quedar muy por debajo del aprobado.
+16. En el nivel 1, las cuatro opciones realizan la misma forma y el mismo lema; los distractores
+    fallan por persona, número, auxiliar, concordancia o construcción, nunca por cambiar de tiempo.
+17. Nivel 1 y nivel 2 usan bancos editoriales distintos; compartir una semilla entre ambos es una
+    regresión, aunque cambie el título o la posición de la respuesta.
 
 ## 6. Receta para añadir un idioma o banco nuevo
 

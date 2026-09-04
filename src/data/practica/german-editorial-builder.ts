@@ -1,5 +1,6 @@
 import {
   createStructureEditorialPack,
+  type StructureEditorialChoiceSeed,
   type StructureEditorialErrorSeed,
   type StructureEditorialFinalSeed,
   type StructureEditorialGapSeed,
@@ -9,6 +10,7 @@ import {
 import type { GermanFormId } from './german-structure-quest-config.ts'
 
 export type GermanEditorialMicroSeed = StructureEditorialMicroSeed
+export type GermanEditorialChoiceSeed = StructureEditorialChoiceSeed
 export type GermanEditorialGapSeed = StructureEditorialGapSeed
 export type GermanEditorialErrorSeed = StructureEditorialErrorSeed
 export type GermanEditorialSequenceSeed = StructureEditorialSequenceSeed
@@ -16,6 +18,10 @@ export type GermanEditorialFinalSeed = StructureEditorialFinalSeed
 
 export type GermanCompactMicro = [
   title: string, cue: string, before: string, after: string, verb: string,
+  answer: string, distractor1: string, distractor2: string, distractor3: string,
+]
+export type GermanCompactChoice = [
+  cue: string, before: string, after: string,
   answer: string, distractor1: string, distractor2: string, distractor3: string,
 ]
 export type GermanCompactStory = [
@@ -38,6 +44,7 @@ export function createGermanEditorialPack(input: {
   form: GermanFormId
   focus: string
   rule: string
+  choices?: GermanEditorialChoiceSeed[]
   micro: GermanEditorialMicroSeed[]
   long: GermanEditorialGapSeed[]
   errors: GermanEditorialErrorSeed[]
@@ -52,15 +59,15 @@ export function createGermanEditorialPack(input: {
     choicePositions: Array.from({ length: 10 }, (_, index) => (index + choiceOffset) % 4),
     finalOffset: choiceOffset,
     ui: {
-      choose: (cue) => `Wähle die vollständige Verbform für ${cue}.`,
-      write: (verb) => `Konjugiere „${verb}“ und schreibe die vollständige Verbgruppe.`,
+      choose: (cue) => `Wähle die passende Form für ${cue}.`,
+      write: (verb) => `Konjugiere „${verb}“ und schreibe genau die Form, die in die Lücke gehört.`,
       error: 'Wähle die einzige falsche Verbgruppe und schreibe sie vollständig richtig.',
       sequenceTitle: (index) => `Logische Abfolge · ${index}`,
       sequenceContext: ([first, second, third]) => `${first}. Danach: ${second}. Zum Schluss: ${third}.`,
       sequenceQuestion: (position) => `Welches Ereignis ${positionLabels[position]}?`,
       sequenceHint: 'Alle Optionen verwenden die Zielform. Entscheide nach Bedeutung und Ablauf, nicht nach einem einzelnen Hilfsverb.',
       sequenceExplanation: (answer) => `„${answer}“ passt an diese Stelle wegen des vollständigen Handlungsablaufs.`,
-      writtenSuffix: 'Der Kontext liefert alle Wörter außerhalb der verlangten Verbgruppe; trennbare Teile und Hilfsverben gehören zur Antwort, wenn sie Teil der Verbform sind.',
+      writtenSuffix: 'Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition.',
     },
   })
 }
@@ -70,17 +77,22 @@ export function createGermanCompactPack(input: {
   form: GermanFormId
   focus: string
   rule: string
+  choices: GermanCompactChoice[]
   micro: GermanCompactMicro[]
   stories: GermanCompactStory[]
   final: GermanCompactFinal[]
 }) {
+  const choices: GermanEditorialChoiceSeed[] = input.choices.map(([cue, before, after, answer, ...distractors]) => ({
+    cue, segments: [before, after], answer,
+    distractors: distractors as [string, string, string],
+  }))
   const micro: GermanEditorialMicroSeed[] = input.micro.map(([title, cue, before, after, verb, answer, ...distractors]) => ({
     title, cue, segments: [before, after], verb, answers: [answer],
     distractors: distractors as [string, string, string],
   }))
   const long: GermanEditorialGapSeed[] = input.stories.map(([title, segments, verbs, answers]) => ({
     title,
-    instruction: 'Ergänze die drei vollständigen Verbgruppen in dieser zusammenhängenden Szene.',
+    instruction: 'Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.',
     segments,
     entries: [
       [verbs[0], [answers[0]]],
@@ -97,5 +109,5 @@ export function createGermanCompactPack(input: {
   const final: GermanEditorialFinalSeed[] = input.final.map(([before, after, answer, ...distractors]) => ({
     before, after, answer, distractors: distractors as [string, string, string],
   }))
-  return createGermanEditorialPack({ ...input, micro, long, errors, sequences, final })
+  return createGermanEditorialPack({ ...input, choices, micro, long, errors, sequences, final })
 }

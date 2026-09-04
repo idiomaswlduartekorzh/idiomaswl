@@ -251,6 +251,99 @@ test('German exposes ten editorial challenges per form and level', () => {
   }
 })
 
+test('German Präsens level 1 tests agreement inside Präsens and does not recycle level 2', () => {
+  const choices = GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes('praesens'))
+  const micros = GERMAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === 'praesens'))
+  const paradigms = [
+    ['wohne', 'wohnst', 'wohnt', 'wohnen'],
+    ['lerne', 'lernst', 'lernt', 'lernen'],
+    ['trinke', 'trinkst', 'trinkt', 'trinken'],
+    ['koche', 'kochst', 'kocht', 'kochen'],
+    ['spiele', 'spielst', 'spielt', 'spielen'],
+    ['lese', 'liest', 'lest', 'lesen'],
+    ['stehe', 'stehst', 'steht', 'stehen'],
+    ['mache', 'machst', 'macht', 'machen'],
+    ['kaufe', 'kaufst', 'kauft', 'kaufen'],
+    ['fahre', 'fährst', 'fährt', 'fahren'],
+  ]
+
+  assert.equal(choices.length, paradigms.length)
+  choices.forEach((item, index) => assert.deepEqual([...item.options].sort(), [...paradigms[index]].sort(), item.id))
+
+  const choiceContexts = new Set(choices.map((item) => item.context.replace('___', '').toLocaleLowerCase('de')))
+  for (const item of micros) {
+    assert.ok(!choiceContexts.has(item.segments.join('').toLocaleLowerCase('de')), item.id)
+  }
+})
+
+test('German Präsens separable verbs keep the visible particle outside the answer', () => {
+  const separable = new Map([
+    ['aufstehen', 'auf'],
+    ['anrufen', 'an'],
+    ['fernsehen', 'fern'],
+    ['mitbringen', 'mit'],
+  ])
+  const micros = GERMAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === 'praesens'))
+
+  for (const item of micros) {
+    const gap = item.gaps[0]
+    const particle = separable.get(gap.verb)
+    if (!particle) continue
+    assert.match(item.segments[1], new RegExp(`\\b${particle}\\.`, 'iu'), item.id)
+    assert.ok(gap.answers.every((answer) => !answer.split(/\s+/u).includes(particle)), item.id)
+  }
+})
+
+test('Every German level 1 bank is independent from level 2', () => {
+  for (const form of GERMAN_STRUCTURE_QUEST.forms) {
+    const choices = GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(form.id))
+    const micros = GERMAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === form.id))
+    const levelOneContexts = new Set(choices.map((item) => item.context.replace('___', '').toLocaleLowerCase('de')))
+    for (const item of micros) assert.ok(!levelOneContexts.has(item.segments.join('').toLocaleLowerCase('de')), `${form.id}/${item.id}`)
+  }
+})
+
+test('German compound level 1 distractors stay inside the selected construction', () => {
+  const endings = new Map([
+    ['perfekt-haben', /\b(?:habe|hast|hat|haben|habt)$/iu],
+    ['perfekt-sein', /\b(?:bin|bist|ist|sind|seid)$/iu],
+    ['plusquamperfekt', /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/iu],
+    ['futur-eins', /\b(?:werde|wirst|wird|werden|werdet)$/iu],
+    ['futur-zwei', /\b(?:werde|wirst|wird|werden|werdet)$/iu],
+    ['wuerde-form', /\b(?:würde|würdest|würden|würdet)$/iu],
+    ['konjunktiv-vergangenheit', /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/iu],
+  ])
+
+  for (const [formId, ending] of endings) {
+    const choices = GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(formId))
+    for (const item of choices) {
+      assert.ok(item.options.every((option) => ending.test(option)), item.id)
+      assert.equal(new Set(item.options.map((option) => option.replace(ending, '').trim())).size, 1, item.id)
+    }
+  }
+})
+
+test('German separable verbs render complete sentences without repeated or misplaced particles', () => {
+  const sentences = new Map([
+    ['de-imperativ-micro-editorial-6', 'Lina und Paul, nehmt eure Taschenlampen mit!'],
+    ['de-imperativ-micro-editorial-8', 'Herr Klein, füllen Sie bitte dieses Formular aus!'],
+    ['de-imperativ-micro-editorial-9', 'Spieler, gebt den Ball schneller ab!'],
+    ['de-praesens-long-editorial-4', 'Der Produzent wählt um fünf Uhr die Themen aus. Die Redakteurin überprüft jeden Namen, und der Moderator liest um sechs Uhr die Meldungen vor.'],
+  ])
+  const challenges = [...GERMAN_STRUCTURE_QUEST.microStories, ...GERMAN_STRUCTURE_QUEST.longStories]
+  for (const [id, expected] of sentences) {
+    const item = challenges.find((item) => item.id === id)
+    assert.ok(item, id)
+    const rendered = item.segments.map((segment, index) => segment + (item.gaps[index]?.answers[0] ?? '')).join('')
+    assert.equal(rendered, expected, id)
+  }
+
+  const repair = GERMAN_STRUCTURE_QUEST.errorChallenges.find((item) => item.id === 'de-praesens-error-editorial-5')
+  assert.ok(repair)
+  const corrected = repair.chunks.map((chunk) => chunk.before + (chunk.id === repair.wrongId ? repair.answers[0] : chunk.form)).join('') + repair.after
+  assert.equal(corrected, 'Der Produzent wählt die Themen aus. Die Redakteurin prüft die Fakten, und der Moderator liest die Meldungen vor.')
+})
+
 test('German final dossiers are autonomous and balance the four answer positions', () => {
   const positions = [0, 0, 0, 0]
   for (const form of GERMAN_STRUCTURE_QUEST.forms) {

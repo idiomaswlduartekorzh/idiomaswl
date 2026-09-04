@@ -1,5 +1,6 @@
 import {
   createGermanEditorialPack,
+  type GermanEditorialChoiceSeed,
   type GermanEditorialErrorSeed,
   type GermanEditorialFinalSeed,
   type GermanEditorialGapSeed,
@@ -7,24 +8,37 @@ import {
   type GermanEditorialSequenceSeed,
 } from './german-editorial-builder.ts'
 
+const choices: GermanEditorialChoiceSeed[] = [
+  { cue: '„ich“ mit wohnen', segments: ['Ich ', ' in Köln.'], answer: 'wohne', distractors: ['wohnst', 'wohnt', 'wohnen'] },
+  { cue: '„du“ mit lernen', segments: ['Du ', ' jeden Tag Deutsch.'], answer: 'lernst', distractors: ['lerne', 'lernt', 'lernen'] },
+  { cue: '„Mia“ mit trinken', segments: ['Mia ', ' morgens Tee.'], answer: 'trinkt', distractors: ['trinke', 'trinkst', 'trinken'] },
+  { cue: '„wir“ mit kochen', segments: ['Wir ', ' heute zusammen.'], answer: 'kochen', distractors: ['koche', 'kochst', 'kocht'] },
+  { cue: '„ihr“ mit spielen', segments: ['Ihr ', ' nach der Schule Fußball.'], answer: 'spielt', distractors: ['spiele', 'spielst', 'spielen'] },
+  { cue: '„die Kinder“ mit lesen', segments: ['Die Kinder ', ' ein kurzes Buch.'], answer: 'lesen', distractors: ['lese', 'liest', 'lest'] },
+  { cue: '„Paul“ mit aufstehen', segments: ['Paul ', ' um sieben Uhr auf.'], answer: 'steht', distractors: ['stehe', 'stehst', 'stehen'] },
+  { cue: '„du“ mit aufmachen', segments: ['Du ', ' das Fenster auf.'], answer: 'machst', distractors: ['mache', 'macht', 'machen'] },
+  { cue: '„Anna und Leo“ mit einkaufen', segments: ['Anna und Leo ', ' heute ein.'], answer: 'kaufen', distractors: ['kaufe', 'kaufst', 'kauft'] },
+  { cue: '„der Bus“ mit abfahren', segments: ['Der Bus ', ' um acht Uhr ab.'], answer: 'fährt', distractors: ['fahre', 'fährst', 'fahren'] },
+]
+
 const micro: GermanEditorialMicroSeed[] = [
-  { title: 'Der erste Bus', cue: 'einen festen Fahrplan', segments: ['Der erste Bus ', ' werktags um 5:40 Uhr ab.'], verb: 'abfahren', answers: ['fährt ab'], distractors: ['ist abgefahren', 'fuhr ab', 'wird abfahren'] },
-  { title: 'Im Übergangsquartier', cue: 'eine gegenwärtige Situation', segments: ['Während der Renovierung ', ' wir bei unseren Nachbarn.'], verb: 'wohnen', answers: ['wohnen'], distractors: ['haben gewohnt', 'wohnten', 'werden wohnen'] },
-  { title: 'Der Wasserkreislauf', cue: 'eine allgemeine Tatsache', segments: ['Bei Wärme ', ' Wasser schneller.'], verb: 'verdunsten', answers: ['verdunstet'], distractors: ['ist verdunstet', 'verdunstete', 'wird verdunsten'] },
-  { title: 'Der Mittwochsmarkt', cue: 'eine regelmäßige Gewohnheit', segments: ['Jeden Mittwoch ', ' Aylin frisches Brot auf dem Markt.'], verb: 'kaufen', answers: ['kauft'], distractors: ['hat gekauft', 'kaufte', 'wird kaufen'] },
-  { title: 'Die Bibliotheksregel', cue: 'eine geltende Regel', segments: ['Die Bibliothek ', ' Getränke nur im Foyer.'], verb: 'erlauben', answers: ['erlaubt'], distractors: ['hat erlaubt', 'erlaubte', 'wird erlauben'] },
-  { title: 'Der Küstenzug', cue: 'eine planmäßige Verbindung', segments: ['Der Regionalzug ', ' in zwölf Küstenorten.'], verb: 'halten', answers: ['hält'], distractors: ['hat gehalten', 'hielt', 'wird halten'] },
-  { title: 'Aktuelle Zuständigkeit', cue: 'eine Aufgabe im aktuellen Monat', segments: ['Diesen Monat ', ' du die Frühschicht.'], verb: 'übernehmen', answers: ['übernimmst'], distractors: ['hast übernommen', 'übernahmst', 'wirst übernehmen'] },
-  { title: 'Der Solarsensor', cue: 'eine dauerhafte Funktionsweise', segments: ['Dieser Sensor ', ' Licht in elektrische Energie um.'], verb: 'umwandeln', answers: ['wandelt um'], distractors: ['hat umgewandelt', 'wandelte um', 'wird umwandeln'] },
-  { title: 'Sonntag bei Oma', cue: 'eine familiäre Gewohnheit', segments: ['Meine Cousins ', ' sonntags bei ihrer Großmutter zu Mittag.'], verb: 'essen', answers: ['essen'], distractors: ['haben gegessen', 'aßen', 'werden essen'] },
-  { title: 'Semesterbeginn', cue: 'einen offiziellen Kalendertermin', segments: ['Das Wintersemester ', ' am 7. Oktober.'], verb: 'beginnen', answers: ['beginnt'], distractors: ['hat begonnen', 'begann', 'wird beginnen'] },
+  { title: 'Zu Hause', cue: '„ich“ im Präsens', segments: ['Ich ', ' aus Kolumbien.'], verb: 'kommen', answers: ['komme'], distractors: ['kommst', 'kommt', 'kommen'] },
+  { title: 'Heute', cue: '„du“ im Präsens', segments: ['Du ', ' heute zu Hause.'], verb: 'arbeiten', answers: ['arbeitest'], distractors: ['arbeite', 'arbeitet', 'arbeiten'] },
+  { title: 'Ein Buch', cue: '„er“ im Präsens', segments: ['Er ', ' ein Buch.'], verb: 'lesen', answers: ['liest'], distractors: ['lese', 'lest', 'lesen'] },
+  { title: 'Das Abendessen', cue: '„wir“ im Präsens', segments: ['Wir ', ' am Abend Reis.'], verb: 'essen', answers: ['essen'], distractors: ['esse', 'isst', 'esst'] },
+  { title: 'Zeit', cue: '„ihr“ im Präsens', segments: ['Ihr ', ' heute viel Zeit.'], verb: 'haben', answers: ['habt'], distractors: ['habe', 'hast', 'haben'] },
+  { title: 'Mit dem Bus', cue: 'ein Plural im Präsens', segments: ['Lena und Ben ', ' mit dem Bus.'], verb: 'fahren', answers: ['fahren'], distractors: ['fahre', 'fährst', 'fährt'] },
+  { title: 'Früh am Morgen', cue: 'ein trennbares Verb', segments: ['Lena ', ' früh auf.'], verb: 'aufstehen', answers: ['steht'], distractors: ['stehe', 'stehst', 'stehen'] },
+  { title: 'Ein Anruf', cue: 'ein trennbares Verb', segments: ['Ich ', ' meine Mutter an.'], verb: 'anrufen', answers: ['rufe'], distractors: ['rufst', 'ruft', 'rufen'] },
+  { title: 'Am Abend', cue: 'ein trennbares Verb', segments: ['Tom ', ' am Abend fern.'], verb: 'fernsehen', answers: ['sieht'], distractors: ['sehe', 'siehst', 'sehen'] },
+  { title: 'Für die Klasse', cue: 'ein trennbares Verb', segments: ['Wir ', ' Wasser mit.'], verb: 'mitbringen', answers: ['bringen'], distractors: ['bringe', 'bringst', 'bringt'] },
 ]
 
 const long: GermanEditorialGapSeed[] = [
   { title: 'Morgen in der Bäckerei', instruction: 'Ergänze diesen zusammenhängenden Arbeitsablauf.', segments: ['Jeden Morgen ', ' Ines um sechs Uhr die Rollläden. Ihr Bruder ', ' die Öfen, während die Bäckerin die erste Lieferung ', '.'], entries: [['öffnen', ['öffnet']], ['prüfen', ['prüft']], ['annehmen', ['annimmt']]] },
   { title: 'Die Frühschicht im Gesundheitszentrum', instruction: 'Ergänze diesen zusammenhängenden Arbeitsablauf.', segments: ['Vor acht Uhr ', ' die Ärztin ihre Termine. Danach ', ' die Sekretärin den Empfang, und der erste Patient ', ' wenige Minuten später.'], entries: [['prüfen', ['prüft']], ['öffnen', ['öffnet']], ['kommen', ['kommt']]] },
   { title: 'Der Museumsrundgang', instruction: 'Ergänze diesen öffentlichen Zeitplan.', segments: ['Das Museum ', ' um zehn Uhr. Eine Führerin ', ' um halb elf die erste Gruppe, und das Café ', ' ab zwölf Uhr Mittagessen an.'], entries: [['öffnen', ['öffnet']], ['empfangen', ['empfängt']], ['bieten', ['bietet']]] },
-  { title: 'Die Sechs-Uhr-Nachrichten', instruction: 'Ergänze diese Redaktionsroutine.', segments: ['Der Produzent ', ' um fünf Uhr die Themen. Die Redakteurin ', ' jeden Namen, und der Moderator ', ' um sechs Uhr die Meldungen vor.'], entries: [['auswählen', ['wählt aus']], ['überprüfen', ['überprüft']], ['vorlesen', ['liest vor']]] },
+  { title: 'Die Sechs-Uhr-Nachrichten', instruction: 'Ergänze diese Redaktionsroutine.', segments: ['Der Produzent ', ' um fünf Uhr die Themen aus. Die Redakteurin ', ' jeden Namen, und der Moderator ', ' um sechs Uhr die Meldungen vor.'], entries: [['auswählen', ['wählt']], ['überprüfen', ['überprüft']], ['vorlesen', ['liest']]] },
   { title: 'Das automatische Gewächshaus', instruction: 'Ergänze die Funktionsbeschreibung.', segments: ['Ein Sensor ', ' jede Minute die Temperatur. Bei zu großer Hitze ', ' ein Ventilator automatisch, und die Gärtnerin ', ' eine Warnung.'], entries: [['messen', ['misst']], ['starten', ['startet']], ['erhalten', ['erhält']]] },
   { title: 'Das Samstagstraining', instruction: 'Ergänze diese Sportroutine.', segments: ['Die Mannschaft ', ' sich samstags um neun Uhr. Die Trainerin ', ' das Aufwärmen, danach ', ' die Spieler kurze Pässe.'], entries: [['treffen', ['trifft']], ['leiten', ['leitet']], ['üben', ['üben']]] },
   { title: 'Die Sortieranlage', instruction: 'Ergänze diesen technischen Prozess.', segments: ['Ein Förderband ', ' den Abfall nach vorn. Ein Magnet ', ' den Stahl heraus, und zwei Fachkräfte ', ' den Rest von Hand.'], entries: [['transportieren', ['transportiert']], ['ziehen', ['zieht']], ['sortieren', ['sortieren']]] },
@@ -38,7 +52,7 @@ const errors: GermanEditorialErrorSeed[] = [
   { title: 'Am Empfang', pieces: [['Die Ärztin ', 'prüft'], [' die Liste. Die Sekretärin ', 'öffnen'], [' den Empfang, und die Patienten ', 'warten']], after: ' im Flur.', wrong: 1, answers: ['öffnet'], reason: 'Zum Singular „die Sekretärin“ gehört „öffnet“.' },
   { title: 'Die erste Führung', pieces: [['Das Museum ', 'öffnen'], [' um zehn Uhr. Die Führerin ', 'begrüßt'], [' die Gruppe, und die Gäste ', 'folgen']], after: ' ihr nach oben.', wrong: 0, answers: ['öffnet'], reason: 'Zum Singular „das Museum“ gehört „öffnet“.' },
   { title: 'Maliks Arbeitsweg', pieces: [['Malik ', 'verlassen'], [' um sieben Uhr die Wohnung. Er ', 'trifft'], [' Zoe im Park, und beide ', 'fahren']], after: ' gemeinsam weiter.', wrong: 0, answers: ['verlässt'], reason: 'Zum Singular „Malik“ gehört „verlässt“.' },
-  { title: 'Die Lokalnachrichten', pieces: [['Der Produzent ', 'wählen aus'], [' die Themen. Die Redakteurin ', 'prüft'], [' die Fakten, und der Moderator ', 'liest vor']], after: ' die Meldungen.', wrong: 0, answers: ['wählt aus'], reason: 'Das finite Verb stimmt mit „der Produzent“ überein; der Verbzusatz bleibt am Satzende.' },
+  { title: 'Die Lokalnachrichten', pieces: [['Der Produzent ', 'wählen'], [' die Themen aus. Die Redakteurin ', 'prüft'], [' die Fakten, und der Moderator ', 'liest']], after: ' die Meldungen vor.', wrong: 0, answers: ['wählt'], reason: 'Das finite Verb stimmt mit „der Produzent“ überein; der Verbzusatz bleibt am Satzende.' },
   { title: 'Die Gewächshaussteuerung', pieces: [['Der Sensor ', 'misst'], [' die Wärme. Der Ventilator ', 'startet'], [', und zwei Fenster ', 'öffnet sich']], after: ' im Dach.', wrong: 2, answers: ['öffnen sich'], reason: 'Das Pluralsubjekt „zwei Fenster“ verlangt „öffnen sich“.' },
   { title: 'Samstag im Stadion', pieces: [['Die Mannschaft ', 'trifft'], [' sich um neun Uhr. Die Trainerin ', 'leiten'], [' das Aufwärmen, und die Spieler ', 'laufen']], after: ' um den Platz.', wrong: 1, answers: ['leitet'], reason: 'Zum Singular „die Trainerin“ gehört „leitet“.' },
   { title: 'Im Sortierzentrum', pieces: [['Das Band ', 'transportiert'], [' den Abfall. Ein Magnet ', 'ziehen'], [' den Stahl heraus, und die Fachkräfte ', 'sortieren']], after: ' den Rest.', wrong: 1, answers: ['zieht'], reason: 'Zum Singular „ein Magnet“ gehört „zieht“.' },
@@ -74,6 +88,6 @@ const final: GermanEditorialFinalSeed[] = [
 
 export const GERMAN_PRESENT_EDITORIAL = createGermanEditorialPack({
   slug: 'praesens', form: 'praesens', focus: 'Präsens',
-  rule: 'Das Präsens bezeichnet Gewohnheiten, geltende Regeln, allgemeine Tatsachen und offiziell festgelegte Termine; ein trennbarer Verbzusatz gehört zur vollständigen Antwort.',
-  micro, long, errors, sequences, final,
+  rule: 'Im Präsens stimmt das finite Verb mit Person und Zahl des Subjekts überein. Bei einem trennbaren Verb bleibt der bereits sichtbare Verbzusatz am Satzende.',
+  choices, micro, long, errors, sequences, final,
 })
