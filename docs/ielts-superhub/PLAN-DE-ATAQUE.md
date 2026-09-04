@@ -529,11 +529,75 @@ La pestaña se cerró y el proceso del servidor se identificó por puerto, coman
 antes de detenerlo: sesión `56065` completada con exit 0. No quedan servidores o pruebas
 pendientes de este fixture. No se repitió el harness ni ASR: sólo cambia este registro.
 
-Próximo avance acotado: renderer privado de notes con fixtures sintéticos y pruebas de
-entradas, errores, conservación de texto y teclado. No habilitar rutas ni importar
-candidatas. La escucha
-humana y la cuantificación de demanda siguen pendientes, y el respaldo remoto continúa
-requiriendo autorización. No hay push, merge, PR ni despliegue de este incremento.
+#### Renderer privado de note completion — 4 de septiembre de 2026
+
+Incremento basado en `68784bc7`: `NoteCompletionDraftFields.tsx` y su CSS añaden controles
+nativos para completar notas, bajo una frontera cliente propiedad del contenedor. Sólo
+reciben spec, contextos `before`/`after` y respuestas; los contextos rechazan campos extra,
+prototipos ajenos, arrays dispersos y getters. No se importan candidatas, scoring ni DTO
+público. El contrato de entradas y los rechazos del projector no cambian.
+
+Las guías frontend-design, Next y React mantuvieron los tokens de la mesa Listening,
+numeración real, labels explícitos, errores diferidos y el estado derivado durante render.
+El componente no mueve el foco, no persiste y no transforma texto. Hay instrucciones
+coherentes de una, dos o tres palabras y validación de 80 unidades de longitud de string;
+no se usa maxlength para evitar recortar el texto pegado. `ready` sigue describiendo el
+bloque de entradas, nunca la corrección de respuestas ni preparación para publicación.
+
+La revisión adversarial independiente encontró un P2: input de texto elimina saltos de
+línea y puede unir dos palabras al editarlas. Se contrastó el
+[algoritmo del HTML Standard](https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search))
+y se cambió a textarea de una fila, redimensionable verticalmente. La aplicación conserva
+el texto recibido del control; no promete conservar bytes CRLF previos a la normalización
+nativa del navegador. Se añadió regresión de `two\nwords`, manteniendo su separador y error.
+
+Pruebas estrechas: 23/23 aprobadas (diez del renderer, diez de entradas y tres del contrato
+privado de notes), sesión `75234` completada con exit 0. TypeScript aislado final y ESLint
+de los cuatro archivos JS/TS modificados: exit 0, sesión `60102` completada. Se incorporaron
+las diez pruebas al comando Listening sin retirar ninguna anterior. No se ejecutó build
+global ni TypeScript global.
+
+El preview existente acepta `--notes`; sin esa opción conserva matching. Compilar ambos
+modos terminó correctamente, sin nuevas dependencias: `tmp/ielts-draft-ui-HWgDHN`
+(matching) y `tmp/ielts-draft-ui-M6Mjel` (notes). Sólo se inició el servidor notes en
+`127.0.0.1:54428`, con los mismos límites de rutas/métodos, noindex y autoapagado.
+
+Verificación real con Chrome/CUA, sin instalar CLI:
+
+- `two\nwords` conservado en el textarea y rechazado bajo una palabra; el foco tras
+  validar encontró su instrucción y error asociados.
+- 81 caracteres conservados y rechazados; espacios y `Café-au-lait` intactos; tres
+  palabras válidas en el segundo bloque y cuatro palabras rechazadas.
+- Disabled bloqueó los cuatro controles, conservando todos los textos y el contador;
+  Tab los omitió y espacio los reactivó sin cambios extras.
+- Tab y Shift+Tab recorrieron los campos y acciones en orden. Enter dentro del textarea
+  añadió LF sin validar; Enter en Validate completó la comprobación de entradas.
+- Reset y validación vacía por teclado dejaron cuatro errores, contador cero y foco en
+  Q31 con ambas descripciones y outline de 3 px.
+- Capturas de escritorio y móvil inspeccionadas. A 390×844, scrollWidth=390 y los cuatro
+  campos midieron 317.61×46 px; sin overflow horizontal. El viewport se restableció.
+- La consola mostró un error de `chrome-extension://.../share-modal.js`, no del fixture;
+  no se declara consola global libre de errores. No se certificaron lector de pantalla,
+  otros navegadores, IME completo ni integración Next/RSC o intento real.
+
+La pestaña se cerró; el servidor se identificó por puerto, cwd y comando y terminó con
+exit 0 (sesión `24189`). No quedan previews activos. `git diff --check` aprobado.
+
+La auditoría ampliada terminó en la sesión `81941` con decisión `APPROVE`: nueve etapas
+`PASS`, `117/117` pruebas Listening, `15/15` pruebas Speaking y `9/9` mutaciones del
+harness. Se preservaron los marcadores globales protegidos (108 URLs IELTS, 77 páginas,
+20 mocks y 480 audios de escucha general), el catálogo y el alcance sin cambios TOEFL.
+La ejecución comenzó `2026-09-04T17:54:16.448Z`, terminó
+`2026-09-04T17:58:31.333Z` y dejó `latest-truth.json` con SHA-256
+`810d6260f847861fac91370be3372ae9f30bcc525a850d668d6e17b7332f7249`. Parts 2–4
+siguen en estado técnico `READY` pero con publicación `BLOCK`; este incremento no cambia
+ese gate. No se ha hecho push, merge, PR ni deploy.
+
+Próximo avance acotado: definir los adaptadores privados de matching/notes y las pruebas
+de su futura promoción, sin cambiar los rechazos del projector público, habilitar
+candidatas ni crear rutas.
+La escucha humana y la
+cuantificación de demanda siguen pendientes; el respaldo remoto requiere autorización.
 
 El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
 el control automático y se solicitó autorización explícita para enviarlo al repositorio

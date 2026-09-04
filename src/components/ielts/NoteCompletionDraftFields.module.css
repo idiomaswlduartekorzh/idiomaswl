@@ -1,0 +1,31 @@
+.group {
+  --notes-ink: var(--wl-on-panel, #102c46);
+  --notes-muted: var(--wl-on-panel-soft, #566a7b);
+  --notes-line: var(--wl-panel-line, #d3dee5);
+  --notes-paper: var(--wl-surface-card, #fff);
+  --notes-soft: var(--wl-panel-raised, #edf3f5);
+  --notes-error: var(--wl-on-panel-alert, #b83243);
+  --notes-focus: var(--wl-on-panel-teal, #137b82);
+  background: var(--notes-paper);
+  border: 1px solid var(--notes-line);
+  color: var(--notes-ink);
+  min-width: 0;
+  font-family: inherit;
+}
+.header { background: var(--notes-soft); padding: 1.2rem; }
+.header h2 { font-size: 1.5rem; letter-spacing: -.025em; margin: .35rem 0 .6rem; }
+.header p { color: var(--notes-muted); line-height: 1.6; margin: 0; }
+.header .range { color: var(--notes-error); font: 700 .75rem var(--mono, ui-monospace, monospace); }
+.notes { list-style: none; margin: 0; padding: 0; }
+.note { border-top: 1px solid var(--notes-line); padding: 1.2rem; }
+.label { align-items: baseline; display: flex; gap: .7rem; line-height: 1.7; overflow-wrap: anywhere; }
+.number { background: var(--notes-ink); color: #fff; flex: 0 0 auto; font: 700 .75rem var(--mono, ui-monospace, monospace); padding: .35rem; }
+.gap { border-bottom: 1px dashed var(--notes-muted); color: var(--notes-muted); padding: 0 .45rem; }
+.response { margin: .75rem 0 0 2.3rem; min-width: 0; }
+.response textarea { background: var(--notes-paper); border: 1px solid var(--notes-muted); border-radius: 4px; box-sizing: border-box; color: var(--notes-ink); font: inherit; font-size: 1rem; max-width: 100%; min-height: 46px; padding: .55rem .65rem; resize: vertical; width: 24rem; }
+.response textarea:focus-visible { outline: 3px solid var(--notes-focus); outline-offset: 3px; }
+.response textarea[aria-invalid='true'] { border: 2px solid var(--notes-error); }
+.response textarea:disabled { cursor: not-allowed; opacity: .65; }
+.error { color: var(--notes-error); font-size: .875rem; line-height: 1.5; margin: .6rem 0 0; }
+@media (max-width: 600px) { .response { margin-left: 0; } .response textarea { width: 100%; } }
+@media (forced-colors: active) { .number { border: 1px solid CanvasText; } .response textarea:focus-visible { outline-color: Highlight; } }
