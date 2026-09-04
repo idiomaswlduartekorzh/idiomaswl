@@ -76,14 +76,14 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 - Compartidos reservados: `src/app/layout.tsx`, `WhatsAppFloat.tsx`, cabecera de
   `JoseDashboard.tsx`, webhook WhatsApp, `config/production-baseline.json` y una migración aditiva de Supabase.
 - Dependencias: no modificar ni activar la IA nativa de WhatsApp; no tocar precios/pagos.
-- Producción: flag de Vercel configurado para el siguiente build; pendiente aplicar
-  la migración exacta, integrar en `main`, esperar el deployment y ejecutar smoke.
+- Producción: migración exacta aplicada y auditada en `ivqeokuxgxemhydvopdd`; flag
+  de Vercel configurado para el siguiente build. Pendiente integrar en `main`,
+  esperar el deployment y ejecutar smoke.
 - Decisión de integración: `MERGE`; rama actualizada desde `origin/main` y validada.
 - Validado: 17 pruebas de contrato/API/SQL/chatbot, TypeScript global y acotado,
   ESLint, guardianes completos, build de 2.515 páginas y QA local de éxito, permisos,
   móvil/escritorio y caída/recuperación de DB.
-- Pendiente real: autenticación operativa para aplicar la migración en el proyecto
-  Supabase canónico, merge, deployment y smoke productivo. Detalle:
+- Pendiente real: merge, deployment y smoke productivo. Detalle:
   [`whatsapp-attribution.md`](whatsapp-attribution.md).
 
 | Trabajo | Rama/SHA de corte | Estado observado | Condición para publicar |

@@ -50,5 +50,6 @@ test('real SQL: service-only access, immutable retries, quota, late arrival, man
     assert.equal((await report(1, ref(1))).total, 1);
     assert.equal((await db.query('select count(*)::int as n from public.whatsapp_contact_manual_events')).rows[0].n, 3);
     await assert.rejects(db.query('update public.whatsapp_contact_intents set source_page=$1', ['/tampered']), /permission denied/);
+    await assert.rejects(db.query("select setval('public.whatsapp_contact_manual_events_id_seq', 99)"), /permission denied/);
   } finally { await db.close(); }
 });

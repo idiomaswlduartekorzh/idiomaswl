@@ -24,9 +24,14 @@ No desplegado. No cambia precios, pagos, horarios ni la IA nativa de WhatsApp.
   clics y 8 s para consultas/confirmaciones/webhook.
 - `npx tsc --noEmit --pretty false` global: aprobado. `npm run build`: aprobado
   sobre Next 16.2.6, con los guardianes completos y 2.515 páginas generadas.
+- La migración aditiva se aplicó al proyecto Supabase canónico
+  `ivqeokuxgxemhydvopdd`. La auditoría posterior confirmó RLS, funciones
+  `SECURITY INVOKER`, `search_path` vacío, roles públicos sin acceso y
+  `service_role` limitado a SELECT/INSERT; los asesores de seguridad y rendimiento
+  mostraron 0 errores. Las tres tablas empezaron vacías.
 - Vercel producción ya tiene `NEXT_PUBLIC_WHATSAPP_ATTRIBUTION_ENABLED=true`; el
-  valor solo se incorpora al siguiente build de `main`. La migración, el merge,
-  el despliegue y la prueba real de recepción de WhatsApp siguen pendientes.
+  valor solo se incorpora al siguiente build de `main`. El merge, el despliegue
+  y la prueba real de recepción de WhatsApp siguen pendientes.
 
 ## Uso del panel
 
@@ -99,8 +104,8 @@ el anterior. No hay importación retroactiva de conversaciones privadas.
 1. Actualizar la rama desde `origin/main`, validar y revisar la migración
    `supabase/migrations/20260904163657_whatsapp_contact_attribution.sql` en staging.
 2. Confirmar respaldo y retención con el responsable; aplicar exclusivamente esa
-   migración aditiva en el proyecto canónico. No ejecutar un push indiscriminado de
-   migraciones históricas locales. No alterar tablas de pagos ni conversaciones.
+   migración aditiva en el proyecto canónico. **Aplicado el 4 de septiembre de
+   2026** sin ejecutar migraciones históricas ni alterar pagos o conversaciones.
 3. Configurar `NEXT_PUBLIC_WHATSAPP_ATTRIBUTION_ENABLED=true` antes del build.
    URL Supabase + clave service-role quedan únicamente en los servicios habituales
    del servidor. La clave service-role nunca se usa en cliente.

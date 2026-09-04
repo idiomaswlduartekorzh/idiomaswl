@@ -34,8 +34,10 @@ alter table public.whatsapp_contact_intents enable row level security;
 alter table public.whatsapp_contact_messages enable row level security;
 alter table public.whatsapp_contact_manual_events enable row level security;
 revoke all on public.whatsapp_contact_intents, public.whatsapp_contact_messages, public.whatsapp_contact_manual_events from public, anon, authenticated;
+revoke all on public.whatsapp_contact_intents, public.whatsapp_contact_messages, public.whatsapp_contact_manual_events from service_role;
 grant select, insert on public.whatsapp_contact_intents, public.whatsapp_contact_messages, public.whatsapp_contact_manual_events to service_role;
 revoke all on sequence public.whatsapp_contact_manual_events_id_seq from public, anon, authenticated;
+revoke all on sequence public.whatsapp_contact_manual_events_id_seq from service_role;
 grant usage, select on sequence public.whatsapp_contact_manual_events_id_seq to service_role;
 
 -- Atomic cross-instance quota, daily HMAC of trusted platform IP (not the raw IP).
