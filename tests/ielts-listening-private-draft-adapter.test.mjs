@@ -53,6 +53,30 @@ const matchingEnvelope = () => ({
   },
 });
 
+const singleChoiceQuestion = (number, prompt, key) => ({
+  number,
+  expected: key,
+  explanation: `Private evidence for Question ${number} identifies the expected option.`,
+  prompt,
+  options: [option('A', `First option ${number}`), option('B', `Second option ${number}`), option('C', `Third option ${number}`)],
+  correctOptionKey: key,
+});
+const singleChoiceEnvelope = () => ({
+  practiceId: 'welearn-listening-part-3-001',
+  contentVersion: '2099-01-01.test.1',
+  part: 3,
+  group: {
+    type: 'single-choice',
+    id: 'discussion-questions',
+    questionRange: [21, 22],
+    instruction: 'Choose the correct letter, A, B or C.',
+    questions: [
+      singleChoiceQuestion(21, 'Which room will the group use?', 'B'),
+      singleChoiceQuestion(22, 'What should the student bring?', 'C'),
+    ],
+  },
+});
+
 const blank = (number, expected) => ({
   number,
   acceptedAnswers: [expected],
@@ -115,6 +139,26 @@ test('matching adapter emits a minimal serializable descriptor with derived scop
   assert.deepEqual(JSON.parse(JSON.stringify(descriptor)), descriptor);
 });
 
+test('single-choice adapter exposes visible A–C questions without answer material', () => {
+  const descriptor = plain(prepare(singleChoiceEnvelope()));
+  assert.deepEqual(descriptor, {
+    type: 'single-choice',
+    identity: {
+      practiceId: 'welearn-listening-part-3-001', contentVersion: '2099-01-01.test.1', part: 3, groupId: 'discussion-questions',
+    },
+    instruction: 'Choose the correct letter, A, B or C.',
+    inputSpec: {
+      type: 'single-choice', scope: 'welearn-listening-part-3-001-discussion-questions',
+      questionNumbers: [21, 22], optionKeys: ['A', 'B', 'C'],
+    },
+    questions: [
+      { prompt: 'Which room will the group use?', options: [option('A', 'First option 21'), option('B', 'Second option 21'), option('C', 'Third option 21')] },
+      { prompt: 'What should the student bring?', options: [option('A', 'First option 22'), option('B', 'Second option 22'), option('C', 'Third option 22')] },
+    ],
+  });
+  assert.doesNotMatch(JSON.stringify(descriptor), /correctOptionKey|expected|explanation/);
+});
+
 test('note adapter keeps the visible hierarchy but strips answer material', () => {
   const descriptor = plain(prepare(notesEnvelope()));
   assert.deepEqual(descriptor, {
@@ -138,7 +182,14 @@ test('note adapter keeps the visible hierarchy but strips answer material', () =
   });
 });
 
-test('control selector minimizes matching and note payloads for the client boundary', () => {
+test('control selector minimizes single-choice, matching and note payloads for the client boundary', () => {
+  const single = plain(prepareControls(singleChoiceEnvelope()));
+  assert.deepEqual(Object.keys(single).sort(), ['inputSpec', 'questions', 'type']);
+  assert.deepEqual(single.inputSpec.optionKeys, ['A', 'B', 'C']);
+  assert.deepEqual(single.questions[0], {
+    prompt: 'Which room will the group use?',
+    options: [option('A', 'First option 21'), option('B', 'Second option 21'), option('C', 'Third option 21')],
+  });
   const matching = plain(prepareControls(matchingEnvelope()));
   assert.deepEqual(Object.keys(matching).sort(), ['inputSpec', 'prompts', 'type']);
   assert.deepEqual(matching.prompts, ['Revise the consent note', 'Check the booking records']);
@@ -150,7 +201,7 @@ test('control selector minimizes matching and note payloads for the client bound
     { before: 'First finding:', after: '.' },
     { before: 'Second finding:', after: '.' },
   ]);
-  const serialized = JSON.stringify([matching, notes]);
+  const serialized = JSON.stringify([single, matching, notes]);
   assert.doesNotMatch(serialized, /identity|contentVersion|instruction|heading|text|expected|acceptedAnswers|explanation|correctOptionKey/);
 
   const leadingGap = notesEnvelope();
@@ -160,6 +211,10 @@ test('control selector minimizes matching and note payloads for the client bound
 });
 
 test('private answer sentinels and forbidden fields never enter either descriptor', () => {
+  const single = singleChoiceEnvelope();
+  single.group.questions[0].correctOptionKey = 'A';
+  single.group.questions[0].expected = 'A';
+  single.group.questions[0].explanation = 'PRIVATE_SINGLE_SENTINEL remains server-side for this question.';
   const matching = matchingEnvelope();
   matching.group.questions[0].correctOptionKey = 'B';
   matching.group.questions[0].explanation = 'PRIVATE_MATCHING_SENTINEL remains server-side for this question.';
@@ -167,9 +222,9 @@ test('private answer sentinels and forbidden fields never enter either descripto
   notes.group.sections[0].lines[1].blank.expected = 'PRIVATE_NOTE_SENTINEL';
   notes.group.sections[0].lines[1].blank.acceptedAnswers = ['PRIVATE_NOTE_SENTINEL'];
 
-  for (const descriptor of [prepare(matching), prepare(notes)]) {
+  for (const descriptor of [prepare(single), prepare(matching), prepare(notes)]) {
     const serialized = JSON.stringify(descriptor);
-    assert.doesNotMatch(serialized, /PRIVATE_(?:MATCHING|NOTE)_SENTINEL/);
+    assert.doesNotMatch(serialized, /PRIVATE_(?:SINGLE|MATCHING|NOTE)_SENTINEL/);
     const keys = outputKeys(descriptor);
     for (const forbidden of ['expected', 'acceptedAnswers', 'explanation', 'correctOptionKey', 'transcript', 'audio', 'sha256']) {
       assert.equal(keys.includes(forbidden), false, `${forbidden} escaped the server adapter`);
@@ -178,6 +233,15 @@ test('private answer sentinels and forbidden fields never enter either descripto
 });
 
 test('outputs are copies: source and descriptor mutations cannot cross the boundary', () => {
+  const singleSource = singleChoiceEnvelope();
+  const singleDescriptor = prepareControls(singleSource);
+  singleDescriptor.questions[0].options[0].label = 'Changed output choice';
+  singleDescriptor.questions[0].prompt = 'Changed output choice prompt';
+  assert.equal(singleSource.group.questions[0].options[0].label, 'First option 21');
+  assert.equal(singleSource.group.questions[0].prompt, 'Which room will the group use?');
+  singleSource.group.questions[1].options[1].label = 'Changed source choice';
+  assert.equal(singleDescriptor.questions[1].options[1].label, 'Second option 22');
+
   const sourceEnvelope = matchingEnvelope();
   const descriptor = prepare(sourceEnvelope);
   descriptor.inputSpec.options[0].label = 'Changed output';
@@ -192,6 +256,16 @@ test('outputs are copies: source and descriptor mutations cannot cross the bound
 });
 
 test('identity, range, option and note invariants fail closed', () => {
+  for (const mutate of [
+    (value) => { value.group.questionRange = [20, 22]; },
+    (value) => { value.group.questions[1].number = 23; },
+    (value) => { value.group.questions[0].options[1].key = 'C'; },
+    (value) => { value.group.questions[0].options[1].label = ' first OPTION 21 '; },
+    (value) => { value.group.questions[0].correctOptionKey = 'D'; value.group.questions[0].expected = 'D'; },
+    (value) => { value.group.questions[0].expected = 'A'; },
+  ]) {
+    const value = singleChoiceEnvelope(); mutate(value); expectGenericRejection(value);
+  }
   for (const mutate of [
     (value) => { value.part = 2; },
     (value) => { value.practiceId = 'welearn-listening-part-3-000'; },
@@ -220,6 +294,8 @@ test('identity, range, option and note invariants fail closed', () => {
 });
 
 test('unknown fields, foreign prototypes, sparse arrays and symbols are rejected', () => {
+  const privateChoice = singleChoiceEnvelope(); privateChoice.group.questions[0].answer = 'PRIVATE'; expectGenericRejection(privateChoice);
+  const sparseChoice = singleChoiceEnvelope(); delete sparseChoice.group.questions[0].options[1]; expectGenericRejection(sparseChoice);
   const unknown = matchingEnvelope(); unknown.group.questions[0].answer = 'PRIVATE'; expectGenericRejection(unknown);
   const symbol = matchingEnvelope(); symbol.group[Symbol('private')] = 'PRIVATE'; expectGenericRejection(symbol);
   const inherited = matchingEnvelope(); Object.setPrototypeOf(inherited.group, { private: true }); expectGenericRejection(inherited);
@@ -228,6 +304,15 @@ test('unknown fields, foreign prototypes, sparse arrays and symbols are rejected
 });
 
 test('accessors at every trust level execute zero times and errors reveal no private text', () => {
+  for (const locate of [
+    (value) => [value.group.questions[0], 'prompt'],
+    (value) => [value.group.questions[0], 'correctOptionKey'],
+    (value) => [value.group.questions[0].options[0], 'label'],
+  ]) {
+    let reads = 0; const value = singleChoiceEnvelope(); const [target, key] = locate(value);
+    Object.defineProperty(target, key, { enumerable: true, get() { reads++; return 'PRIVATE_ACCESSOR'; } });
+    expectGenericRejection(value); assert.equal(reads, 0);
+  }
   const targets = [
     (value) => [value, 'practiceId'],
     (value) => [value, 'group'],
@@ -256,6 +341,14 @@ test('proxies and revoked proxies are rejected before any get trap can supply pr
     {
       create: matchingEnvelope,
       locate: (value) => ({ parent: null, key: null, target: value }),
+    },
+    {
+      create: singleChoiceEnvelope,
+      locate: (value) => ({ parent: value.group.questions, key: 0, target: value.group.questions[0] }),
+    },
+    {
+      create: singleChoiceEnvelope,
+      locate: (value) => ({ parent: value.group.questions[0], key: 'options', target: value.group.questions[0].options }),
     },
     {
       create: matchingEnvelope,

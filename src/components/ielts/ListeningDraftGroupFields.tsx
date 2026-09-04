@@ -2,6 +2,7 @@
 import type { IeltsListeningDraftControlDescriptor } from '../../lib/ielts/listening-draft-control-descriptor';
 import MatchingDraftFields from './MatchingDraftFields';
 import NoteCompletionDraftFields from './NoteCompletionDraftFields';
+import SingleChoiceDraftFields from './SingleChoiceDraftFields';
 
 export interface ListeningDraftGroupFieldsProps {
   descriptor: IeltsListeningDraftControlDescriptor;
@@ -14,6 +15,18 @@ export interface ListeningDraftGroupFieldsProps {
 export default function ListeningDraftGroupFields({
   descriptor, responses, disabled = false, showErrors = false, onAnswer,
 }: ListeningDraftGroupFieldsProps) {
+  if (descriptor.type === 'single-choice') {
+    return (
+      <SingleChoiceDraftFields
+        spec={descriptor.inputSpec}
+        questions={descriptor.questions}
+        responses={responses}
+        disabled={disabled}
+        showErrors={showErrors}
+        onAnswer={onAnswer}
+      />
+    );
+  }
   if (descriptor.type === 'matching') {
     return (
       <MatchingDraftFields

@@ -17,6 +17,10 @@ export type IeltsListeningDraftInputSpec = DraftInputBase & (
       options: readonly { key: DraftOptionKey; label: string }[];
       optionReuse: 'once-only' | 'may-repeat';
     }
+  | {
+      type: 'single-choice';
+      optionKeys: readonly DraftOptionKey[];
+    }
   | { type: 'note-completion'; maxWords: 1 | 2 | 3 }
 );
 
@@ -78,7 +82,12 @@ function assertSpec(value: unknown): asserts value is IeltsListeningDraftInputSp
   if (!dataRecord(value)) rejectSpec();
   const fields = value.type === 'matching'
     ? ['type', 'scope', 'questionNumbers', 'options', 'optionReuse']
-    : ['type', 'scope', 'questionNumbers', 'maxWords'];
+    : value.type === 'single-choice'
+      ? ['type', 'scope', 'questionNumbers', 'optionKeys']
+      : value.type === 'note-completion'
+        ? ['type', 'scope', 'questionNumbers', 'maxWords']
+        : null;
+  if (!fields) rejectSpec();
   if (!exactFields(value, fields)
     || typeof value.scope !== 'string'
     || !/^[a-z][a-z0-9-]{0,63}$/.test(value.scope)
@@ -105,6 +114,11 @@ function assertSpec(value: unknown): asserts value is IeltsListeningDraftInputSp
     if (value.optionReuse === 'once-only' && numbers.length > value.options.length) rejectSpec();
     return;
   }
+  if (value.type === 'single-choice') {
+    if (!denseArray(value.optionKeys, 3, 3)
+      || value.optionKeys.some((key, index) => key !== 'ABC'[index])) rejectSpec();
+    return;
+  }
   if (value.type !== 'note-completion' || typeof value.maxWords !== 'number'
     || ![1, 2, 3].includes(value.maxWords)) rejectSpec();
 }
@@ -126,6 +140,8 @@ export function inspectIeltsListeningDraftInputs(
     if (!value.trim()) issue = 'missing';
     else if (value.length > 80) issue = 'too-long';
     else if (spec.type === 'matching' && !spec.options.some((option) => option.key === value)) {
+      issue = 'invalid-choice';
+    } else if (spec.type === 'single-choice' && !spec.optionKeys.includes(value as DraftOptionKey)) {
       issue = 'invalid-choice';
     } else if (spec.type === 'note-completion' && value.trim().split(/\s+/).length > spec.maxWords) {
       issue = 'too-many-words';

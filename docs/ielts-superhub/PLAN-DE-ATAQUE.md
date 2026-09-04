@@ -688,6 +688,54 @@ remoto autorizado. La rama está cinco commits detrás de `origin/main`; debe ac
 repetir los guardianes obligatorios antes de cualquier integración. No hubo push, merge,
 PR ni deploy.
 
+#### Control privado de opción única — 4 de septiembre de 2026
+
+Incremento basado en `4fb10fa8`. `SingleChoiceDraftFields.tsx` añade radios nativos A–C
+agrupados por `fieldset`/`legend`, nombres e IDs por pregunta, errores diferidos, estado
+disabled y callback controlado. No conoce respuestas correctas, scoring, outcomes,
+persistencia ni red. Se implementó separado del `SingleChoiceGroup` de la sesión pública
+para no modificar el sistema activo ni acoplar este borrador a resultados o rutas.
+
+El contrato privado ahora valida exclusivamente `optionKeys: ['A', 'B', 'C']`; las
+preguntas visibles viajan en el descriptor cliente mínimo. El adaptador `server-only`
+valida el source completo y copia sólo prompt, key y label: `correctOptionKey`, `expected`
+y `explanation` permanecen fuera de ambos descriptores. La frontera TypeScript demuestra
+que el descriptor privado no es asignable al DTO público homónimo. No se conectó ninguna
+candidata real, ruta, registro, catálogo, endpoint, sitemap, MP3, SVG ni archivo público.
+
+Este control y matching permiten representar los dos tipos de entrada de Part 3; significa
+sólo topología privada de diez controles, no una práctica lista, integrada o publicable.
+También resuelve el primer tipo de Part 2; map labelling continúa pendiente.
+
+Evidencia final del incremento:
+
+- 36/36 pruebas estrechas de contrato, adaptador, leaf y compositor; incluyen A–C exacto,
+  paridad con el validador de transporte, campos/prototipos/getters/arrays dispersos,
+  proxies del adaptador, copias profundas, sentinels privados y frontera TypeScript.
+- Revisión adversarial independiente sin hallazgos accionables y 54/54 pruebas focalizadas,
+  incluyendo las regresiones existentes de matching y note completion.
+- ESLint de las seis superficies finales con `--max-warnings=0`: exit 0. El primer lint
+  detectó `aria-invalid` no permitido en el rol radio; se eliminó del input y se conservó
+  el estado en el fieldset y el mensaje mediante `aria-describedby`.
+- Fixture combinado final compilado sin dependencias nuevas en
+  `tmp/ielts-draft-ui-moYzeh`. Navegador real: seis radios en dos grupos, labels y nombres
+  correctos, validación vacía enfocando Q21 y outline visible de 3 px en su label,
+  selección por clic y flecha, seis radios y diez controles totales deshabilitados sin
+  perder B/C, y validación conjunta de los tres tipos sin errores ni evaluación. Consola
+  limpia, pestaña cerrada y servidor terminado con exit 0. Se inspeccionó escritorio; no
+  se declara una nueva prueba móvil, lector de pantalla, otros navegadores o integración
+  Next/RSC.
+- `check:ielts:scope`: PASS con 107 rutas frente a `origin/main` y ninguna TOEFL;
+  `check:ielts:truth`: PASS con 108 URLs, 77 páginas y 20 mocks; catálogo: PASS con 465
+  temas de gramática. `git diff --check`: exit 0.
+
+No se repitió el harness integral recién aprobado, ASR, TypeScript global, build global ni
+release harness. El último harness de 134 Listening no incluye este incremento y no se
+presenta como su certificación. El siguiente avance privado seguro es map labelling con
+asset sintético y contrato accesible, sin reutilizar el mapa candidato ni conectarlo a
+publicación. Los gates humanos, la cuantificación SEO y el respaldo remoto autorizado
+siguen pendientes. No hubo push, merge, PR ni deploy.
+
 El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
 el control automático y se solicitó autorización explícita para enviarlo al repositorio
 canónico. No reintentar ese envío mientras siga pendiente la autorización.

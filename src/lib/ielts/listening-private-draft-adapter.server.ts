@@ -6,11 +6,13 @@ import type {
   IeltsListeningMatchingGroupSource,
   IeltsListeningNoteCompletionGroupSource,
   IeltsListeningPart,
+  IeltsListeningSingleChoiceGroupSource,
 } from './listening-practice-contract';
 import type { IeltsListeningDraftInputSpec } from './listening-draft-input-contract';
 import type { IeltsListeningDraftControlDescriptor } from './listening-draft-control-descriptor';
 
 type PrivateDraftGroupSource =
+  | IeltsListeningSingleChoiceGroupSource
   | IeltsListeningMatchingGroupSource
   | IeltsListeningNoteCompletionGroupSource;
 
@@ -29,6 +31,16 @@ interface IeltsListeningPrivateDraftIdentity {
 }
 
 export type IeltsListeningPrivateDraftGroupDescriptor =
+  | {
+      type: 'single-choice';
+      identity: IeltsListeningPrivateDraftIdentity;
+      instruction: string;
+      inputSpec: Extract<IeltsListeningDraftInputSpec, { type: 'single-choice' }>;
+      questions: ReadonlyArray<{
+        prompt: string;
+        options: readonly { key: 'A' | 'B' | 'C'; label: string }[];
+      }>;
+    }
   | {
       type: 'matching';
       identity: IeltsListeningPrivateDraftIdentity;
@@ -163,6 +175,48 @@ function assertMatchingGroup(
   if (value.optionReuse === 'once-only' && new Set(correctKeys).size !== correctKeys.length) reject();
 }
 
+function assertSingleChoiceGroup(
+  value: unknown,
+  part: IeltsListeningPart,
+): asserts value is IeltsListeningSingleChoiceGroupSource {
+  if (!exactFields(value, ['type', 'id', 'questionRange', 'instruction', 'questions'])
+    || value.type !== 'single-choice'
+    || !/^[a-z][a-z0-9-]{0,63}$/.test(typeof value.id === 'string' ? value.id : '')
+    || !boundedText(value.instruction, 400)
+    || !denseArray(value.questions, 1, 10)) reject();
+
+  const numbers: number[] = [];
+  for (const question of value.questions) {
+    if (!exactFields(question, [
+      'number', 'expected', 'explanation', 'prompt', 'options', 'correctOptionKey',
+    ])
+      || typeof question.number !== 'number'
+      || !Number.isInteger(question.number)
+      || !boundedText(question.expected, 80)
+      || !boundedText(question.explanation, 1000)
+      || question.explanation.trim().length < 20
+      || !boundedText(question.prompt, 500)
+      || !denseArray(question.options, 3, 3)
+      || typeof question.correctOptionKey !== 'string') reject();
+
+    const labels = new Set<string>();
+    const optionKeys: string[] = [];
+    for (const [index, option] of question.options.entries()) {
+      if (!exactFields(option, ['key', 'label'])
+        || option.key !== 'ABC'[index]
+        || !boundedText(option.label, 200)) reject();
+      const label = option.label.trim().toLocaleLowerCase('en');
+      if (labels.has(label)) reject();
+      labels.add(label);
+      optionKeys.push(option.key);
+    }
+    if (question.expected.trim() !== question.correctOptionKey
+      || !optionKeys.includes(question.correctOptionKey)) reject();
+    numbers.push(question.number);
+  }
+  assertQuestionRange(value.questionRange, numbers, part);
+}
+
 function assertNoteBlank(value: unknown, maxWords: 1 | 2 | 3): asserts value is Record<string, unknown> {
   if (!exactFields(value, ['number', 'acceptedAnswers', 'expected', 'explanation', 'maxWords'])
     || typeof value.number !== 'number'
@@ -240,7 +294,8 @@ function assertEnvelope(value: unknown): asserts value is IeltsListeningPrivateD
   const idMatch = /^welearn-listening-part-([1-4])-([0-9]{3})$/.exec(value.practiceId);
   if (!idMatch || Number(idMatch[1]) !== value.part || idMatch[2] === '000') reject();
   if (!dataRecord(value.group)) reject();
-  if (value.group.type === 'matching') assertMatchingGroup(value.group, value.part);
+  if (value.group.type === 'single-choice') assertSingleChoiceGroup(value.group, value.part);
+  else if (value.group.type === 'matching') assertMatchingGroup(value.group, value.part);
   else if (value.group.type === 'note-completion') assertNoteGroup(value.group, value.part);
   else reject();
 
@@ -260,6 +315,27 @@ export function prepareIeltsListeningPrivateDraftGroup(
     groupId: group.id,
   };
   const scope = `${envelope.practiceId}-${group.id}`;
+
+  if (group.type === 'single-choice') {
+    return {
+      type: 'single-choice',
+      identity,
+      instruction: group.instruction,
+      inputSpec: {
+        type: 'single-choice',
+        scope,
+        questionNumbers: group.questions.map((question) => question.number),
+        optionKeys: group.questions[0].options.map((option) => option.key),
+      },
+      questions: group.questions.map((question) => ({
+        prompt: question.prompt,
+        options: question.options.map((option) => ({
+          key: option.key as 'A' | 'B' | 'C',
+          label: option.label,
+        })),
+      })),
+    };
+  }
 
   if (group.type === 'matching') {
     const options = group.options.map((option) => ({ key: option.key, label: option.label }));
@@ -311,6 +387,20 @@ export function prepareIeltsListeningPrivateDraftControls(
   envelope: IeltsListeningPrivateDraftGroupEnvelope,
 ): IeltsListeningDraftControlDescriptor {
   const descriptor = prepareIeltsListeningPrivateDraftGroup(envelope);
+  if (descriptor.type === 'single-choice') {
+    return {
+      type: 'single-choice',
+      inputSpec: {
+        ...descriptor.inputSpec,
+        questionNumbers: [...descriptor.inputSpec.questionNumbers],
+        optionKeys: [...descriptor.inputSpec.optionKeys],
+      },
+      questions: descriptor.questions.map((question) => ({
+        prompt: question.prompt,
+        options: question.options.map((option) => ({ ...option })),
+      })),
+    };
+  }
   if (descriptor.type === 'matching') {
     return {
       type: 'matching',

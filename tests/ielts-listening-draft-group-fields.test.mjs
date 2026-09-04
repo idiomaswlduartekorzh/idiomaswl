@@ -16,11 +16,13 @@ const output = ts.transpileModule(source, { compilerOptions: {
 } }).outputText;
 const MatchingProbe = () => React.createElement('div');
 const NotesProbe = () => React.createElement('div');
+const SingleChoiceProbe = () => React.createElement('div');
 const evaluatedModule = { exports: {} };
 const localRequire = (name) => {
   if (name === 'react/jsx-runtime') return require(name);
   if (name === './MatchingDraftFields') return { __esModule: true, default: MatchingProbe };
   if (name === './NoteCompletionDraftFields') return { __esModule: true, default: NotesProbe };
+  if (name === './SingleChoiceDraftFields') return { __esModule: true, default: SingleChoiceProbe };
   throw new Error('Unexpected draft composition dependency.');
 };
 vm.runInNewContext(
@@ -41,6 +43,31 @@ const notes = () => ({
   type: 'note-completion',
   inputSpec: { type: 'note-completion', scope: 'fixture-composed-notes', questionNumbers: [31, 32], maxWords: 1 },
   notes: [{ before: 'Collect a', after: 'at the desk.' }, { before: 'Put the item in the', after: '.' }],
+});
+const singleChoice = () => ({
+  type: 'single-choice',
+  inputSpec: { type: 'single-choice', scope: 'fixture-composed-single', questionNumbers: [21, 22], optionKeys: ['A', 'B', 'C'] },
+  questions: [
+    { prompt: 'Choose the room', options: [{ key: 'A', label: 'Room one' }, { key: 'B', label: 'Room two' }, { key: 'C', label: 'Room three' }] },
+    { prompt: 'Choose the time', options: [{ key: 'A', label: 'Early' }, { key: 'B', label: 'Midday' }, { key: 'C', label: 'Late' }] },
+  ],
+});
+
+test('single-choice descriptor is forwarded only to the audited radio leaf', () => {
+  const descriptor = singleChoice();
+  const responses = { 21: 'B' };
+  const calls = [];
+  const onAnswer = (...args) => calls.push(args);
+  const element = Fields({ descriptor, responses, disabled: true, showErrors: true, onAnswer });
+  assert.equal(element.type, SingleChoiceProbe);
+  assert.deepEqual(Object.keys(element.props).sort(), ['disabled', 'onAnswer', 'questions', 'responses', 'showErrors', 'spec']);
+  assert.equal(element.props.spec, descriptor.inputSpec);
+  assert.equal(element.props.questions, descriptor.questions);
+  assert.equal(element.props.responses, responses);
+  assert.equal(element.props.onAnswer, onAnswer);
+  assert.equal(element.props.disabled, true);
+  assert.equal(element.props.showErrors, true);
+  assert.deepEqual(calls, []);
 });
 
 test('matching descriptor is forwarded only to the audited matching leaf', () => {
@@ -88,7 +115,7 @@ test('the composition does not rewrite state or invoke callbacks while selecting
 
 test('unsupported discriminants fail without falling through to a renderer', () => {
   assert.throws(
-    () => Fields({ descriptor: { type: 'single-choice', private: 'SENTINEL' }, responses: {}, onAnswer() {} }),
+    () => Fields({ descriptor: { type: 'map-labelling', private: 'SENTINEL' }, responses: {}, onAnswer() {} }),
     (error) => error?.message === 'Unsupported IELTS Listening draft control descriptor.',
   );
 });
@@ -99,4 +126,5 @@ test('the composition stays below a client owner and imports no server or scorin
   assert.match(source, /import type \{ IeltsListeningDraftControlDescriptor \}/);
   assert.match(source, /MatchingDraftFields/);
   assert.match(source, /NoteCompletionDraftFields/);
+  assert.match(source, /SingleChoiceDraftFields/);
 });

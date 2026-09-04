@@ -1,0 +1,35 @@
+.group {
+  --choice-ink: var(--wl-on-panel, #102c46);
+  --choice-muted: var(--wl-on-panel-soft, #566a7b);
+  --choice-line: var(--wl-panel-line, #d3dee5);
+  --choice-paper: var(--wl-surface-card, #fff);
+  --choice-soft: var(--wl-panel-raised, #edf3f5);
+  --choice-error: var(--wl-on-panel-alert, #b83243);
+  --choice-focus: var(--wl-on-panel-teal, #137b82);
+  background: var(--choice-paper);
+  border: 1px solid var(--choice-line);
+  color: var(--choice-ink);
+  font-family: inherit;
+  min-width: 0;
+}
+.header { background: var(--choice-soft); padding: 1.2rem; }
+.header h2 { font-size: 1.5rem; letter-spacing: -.025em; margin: .35rem 0 .6rem; }
+.header p { color: var(--choice-muted); line-height: 1.6; margin: 0; }
+.header .range { color: var(--choice-error); font: 700 .75rem var(--mono, ui-monospace, monospace); }
+.questions { display: grid; }
+.question { border: 0; border-top: 1px solid var(--choice-line); margin: 0; min-width: 0; padding: 1.2rem; }
+.question[aria-invalid='true'] { box-shadow: inset 4px 0 0 var(--choice-error); }
+.question legend { align-items: baseline; display: flex; font-weight: 700; gap: .7rem; line-height: 1.6; max-width: 100%; padding: 0; }
+.number { background: var(--choice-ink); color: #fff; flex: 0 0 auto; font: 700 .75rem var(--mono, ui-monospace, monospace); padding: .35rem; }
+.options { display: grid; gap: .55rem; margin-top: .8rem; }
+.options label { align-items: center; border: 1px solid var(--choice-line); cursor: pointer; display: grid; gap: .65rem; grid-template-columns: auto auto minmax(0, 1fr); min-height: 48px; padding: .65rem .75rem; }
+.options label:focus-within { border-color: var(--choice-focus); outline: 3px solid var(--choice-focus); outline-offset: 2px; }
+.options input { accent-color: var(--choice-focus); height: 20px; width: 20px; }
+.options input:disabled { cursor: not-allowed; }
+.options label:has(input:disabled) { cursor: not-allowed; opacity: .65; }
+.options strong { color: var(--choice-error); font-family: var(--mono, ui-monospace, monospace); }
+.error { color: var(--choice-error); font-size: .875rem; line-height: 1.5; margin: .7rem 0 0; }
+@media (forced-colors: active) {
+  .number { border: 1px solid CanvasText; }
+  .options label:focus-within { outline-color: Highlight; }
+}

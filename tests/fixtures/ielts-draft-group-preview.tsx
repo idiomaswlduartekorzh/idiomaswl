@@ -6,6 +6,20 @@ import ListeningDraftGroupFields from '../../src/components/ielts/ListeningDraft
 import type { IeltsListeningDraftControlDescriptor } from '../../src/lib/ielts/listening-draft-control-descriptor';
 import { inspectIeltsListeningDraftInputs } from '../../src/lib/ielts/listening-draft-input-contract';
 
+const singleChoice = {
+  type: 'single-choice',
+  inputSpec: { type: 'single-choice', scope: 'fixture-composed-single', questionNumbers: [21, 22], optionKeys: ['A', 'B', 'C'] },
+  questions: [
+    {
+      prompt: 'Which room will host the workshop?',
+      options: [{ key: 'A', label: 'Room 12' }, { key: 'B', label: 'Room 14' }, { key: 'C', label: 'Room 18' }],
+    },
+    {
+      prompt: 'When should the group arrive?',
+      options: [{ key: 'A', label: '8:30' }, { key: 'B', label: '9:00' }, { key: 'C', label: '9:30' }],
+    },
+  ],
+} as const satisfies IeltsListeningDraftControlDescriptor;
 const matching = {
   type: 'matching',
   inputSpec: {
@@ -21,6 +35,7 @@ const notes = {
 } as const satisfies IeltsListeningDraftControlDescriptor;
 
 function Preview() {
+  const [singleResponses, setSingleResponses] = useState<Record<string, string>>({});
   const [matchingResponses, setMatchingResponses] = useState<Record<string, string>>({});
   const [noteResponses, setNoteResponses] = useState<Record<string, string>>({});
   const [showErrors, setShowErrors] = useState(false);
@@ -36,14 +51,16 @@ function Preview() {
     if (target && !disabled) document.getElementById(target)?.focus();
   }, [validationPass, disabled]);
 
-  const answer = (kind: 'matching' | 'notes', number: number, value: string) => {
-    const setResponses = kind === 'matching' ? setMatchingResponses : setNoteResponses;
-    setResponses((previous) => ({ ...previous, [number]: value }));
+  const answer = (kind: 'single' | 'matching' | 'notes', number: number, value: string) => {
+    if (kind === 'single') setSingleResponses((previous) => ({ ...previous, [number]: value }));
+    else if (kind === 'matching') setMatchingResponses((previous) => ({ ...previous, [number]: value }));
+    else setNoteResponses((previous) => ({ ...previous, [number]: value }));
     setChanges((previous) => previous + 1);
     setNotice('');
   };
   const validate = () => {
     const states = [
+      inspectIeltsListeningDraftInputs(singleChoice.inputSpec, singleResponses),
       inspectIeltsListeningDraftInputs(matching.inputSpec, matchingResponses),
       inspectIeltsListeningDraftInputs(notes.inputSpec, noteResponses),
     ];
@@ -55,6 +72,7 @@ function Preview() {
   };
   const reset = () => {
     pendingFocus.current = null;
+    setSingleResponses({});
     setMatchingResponses({});
     setNoteResponses({});
     setShowErrors(false);
@@ -67,7 +85,7 @@ function Preview() {
       <header>
         <p>PRIVATE COMPOSITION FIXTURE · no audio or assessment</p>
         <h1>Listening draft controls</h1>
-        <p>Two synthetic groups verify the shared composition. This is not an IELTS practice test.</p>
+        <p>Three synthetic groups verify the shared composition. This is not an IELTS practice test.</p>
       </header>
       <div className="fixture-tools">
         <button type="button" onClick={validate}>Validate fields</button>
@@ -76,6 +94,7 @@ function Preview() {
         <output>Changes observed: {changes}</output>
       </div>
       <p role="status" aria-live="polite">{notice}</p>
+      <ListeningDraftGroupFields descriptor={singleChoice} responses={singleResponses} disabled={disabled} showErrors={showErrors} onAnswer={(number, value) => answer('single', number, value)} />
       <ListeningDraftGroupFields descriptor={matching} responses={matchingResponses} disabled={disabled} showErrors={showErrors} onAnswer={(number, value) => answer('matching', number, value)} />
       <ListeningDraftGroupFields descriptor={notes} responses={noteResponses} disabled={disabled} showErrors={showErrors} onAnswer={(number, value) => answer('notes', number, value)} />
     </main>
