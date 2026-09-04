@@ -4333,7 +4333,8 @@ button {
 }
 .ielts-form__input {
   display: inline-block;
-  min-width: 6ch;
+  /* Reserve room for the full “Answer…” placeholder plus horizontal padding. */
+  min-width: calc(9ch + 0.9rem);
   max-width: 18ch;
   padding: 0.15rem 0.45rem;
   border: none;
@@ -4585,13 +4586,13 @@ button {
 /* Reading split-pane */
 .ielts-split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 1.5rem;
   margin-bottom: 1.5rem;
   align-items: start;
 }
 @media (max-width: 900px) {
-  .ielts-split { grid-template-columns: 1fr; }
+  .ielts-split { grid-template-columns: minmax(0, 1fr); }
 }
 .ielts-split__passage {
   background: var(--surface);
@@ -4602,6 +4603,9 @@ button {
   top: 1rem;
   max-height: calc(100vh - 160px);
   overflow-y: auto;
+}
+@media (max-width: 900px) {
+  .ielts-split__passage { position: static; }
 }
 .ielts-split__passage-label {
   font-size: 0.72rem;

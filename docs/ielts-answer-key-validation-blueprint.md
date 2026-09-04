@@ -73,6 +73,26 @@ El control público lee únicamente HTML/RSC y no crea entregas de estudiantes.
 Para una captura guardada: --html=/ruta/absoluta/pagina.html, sin --url.
 Un set no registrado (por ejemplo --set=2) falla con NOT_AUDITED.
 
+## Guardián visual de campos de respuesta
+
+La clave correcta no garantiza que la interfaz sea legible. Después de cambios de
+CSS, comprobar también los campos `.ielts-form__input` en formulario y tabla:
+
+- Abrir Listening y Reading sin enviar el examen; esperar `document.fonts.ready`.
+- Probar anchuras de 320, 390 y 1280 px. En Set 1 deben inspeccionarse 33 campos
+  de texto de Listening y 21 de Reading; las otras respuestas usan otros controles.
+- Medir `Answer…` con canvas usando fontStyle, fontWeight, fontSize y fontFamily
+  de `getComputedStyle(input, '::placeholder')`. No basta con leer el atributo.
+- Exigir que `clientWidth - paddingLeft - paddingRight` sea mayor o igual que
+  el ancho medido. Las columnas deben caber y las tablas anchas tener scroll interno.
+- Revisar capturas reales: en móvil el pasaje no debe tapar las respuestas al
+  desplazarse. No usar estilos inyectados para la verificación final.
+- Repetir sobre producción después de READY; registrar viewport, cantidad,
+  medidas, captura y cualquier defecto preexistente fuera del alcance.
+
+El mínimo del campo incluye el padding; no reducir la fuente ni cambiar el texto,
+la clave o el motor de calificación para solucionar un recorte visual.
+
 ## Ampliación a otro set
 
 1. Abrir alcance para UN set, sin copiar la clave del Set 1.
