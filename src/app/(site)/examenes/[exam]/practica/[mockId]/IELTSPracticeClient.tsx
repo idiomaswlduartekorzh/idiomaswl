@@ -7,6 +7,9 @@ import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { IELTSSummaryReport } from '@/components/labs/IELTSSummaryReport';
 import { IELTSWritingReportPanel } from '@/components/labs/IELTSWritingReportPanel';
 import { IELTSSubmission } from '@/components/exam-runner/IELTSSubmission';
+import { IELTSAnswerDiagram } from '@/components/exam-runner/IELTSAnswerDiagram';
+import { getIeltsDiagramLayout } from '@/data/ielts/set1-diagram-layouts';
+import { ieltsQuestionNumber } from '@/data/ielts/question-number';
 import {
   IELTSSpeakingRecorder,
   type IeltsSpeakingRecording,
@@ -108,20 +111,24 @@ function renderFormTemplate(
 function FormGroupView({
   q, fills, onChange,
 }: { q: FormGroupQuestion; fills: FillMap; onChange: (k: string, v: string) => void }) {
+  const diagramLayout = getIeltsDiagramLayout(q.id, q.imageUrl);
   return (
     <div className="ielts-form">
       <div className="ielts-group__label">
         <span className="ielts-group__range">Questions {q.qRange[0]}–{q.qRange[1]}</span>
         {q.groupLabel.split('\n').map((line, i) => <p key={i}>{line}</p>)}
       </div>
-      {q.imageUrl && (
+      {q.imageUrl && !diagramLayout && (
         <div className="ielts-form__diagram">
           <Image src={q.imageUrl} alt={q.imageAlt ?? 'Diagram'} width={700} height={400} style={{width:'100%',height:'auto'}} />
         </div>
       )}
       {q.title && <p className="ielts-form__title">{q.title}</p>}
       {q.example && <p className="ielts-form__example"><em>Example</em><br />{q.example}</p>}
-      {renderFormTemplate(q.template, q.blanks, fills, q.id, onChange)}
+      {diagramLayout ? (
+        <IELTSAnswerDiagram question={q} layout={diagramLayout} fills={fills} onChange={onChange}
+          textView={renderFormTemplate(q.template, q.blanks, fills, q.id, onChange)} />
+      ) : renderFormTemplate(q.template, q.blanks, fills, q.id, onChange)}
     </div>
   );
 }
@@ -444,7 +451,7 @@ function renderQuestion(
       return <MatchingView key={q.id} q={q as MatchingGroupQuestion} matchMap={ans.match} onChange={handlers.onMatch} />;
     case 'mcq':
     case 'dialog':
-      return <MCQView key={q.id} q={q as MCQQuestion} index={idx+1} selected={ans.mcq[q.id]} onChange={i=>handlers.onMCQ(q.id,i)} />;
+      return <MCQView key={q.id} q={q as MCQQuestion} index={ieltsQuestionNumber(q.id)} selected={ans.mcq[q.id]} onChange={i=>handlers.onMCQ(q.id,i)} />;
     case 'write':
       return <WriteView key={q.id} q={q as WriteQuestion} value={ans.write[q.id]??''} onChange={v=>handlers.onWrite(q.id,v)} />;
     case 'speak':

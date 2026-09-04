@@ -141,3 +141,8 @@ El registro de publicación debe distinguir esta revisión de un deployment real
 Esta sección registra validación, NO demuestra despliegue. Para declarar DESPLEGADO,
 conservar además SHA final de main, deployment ID/URL y smoke posterior en el
 registro de entrega de la tarea. Siempre verificar producción de nuevo en futuras auditorías.
+# Inventario y revisión integral de materiales
+
+La disponibilidad de audio, pasajes e imágenes y el plan de aprobación por fases están en
+[`ielts-material-readiness.md`](ielts-material-readiness.md). Los checks de estructura no aprueban
+las claves de los sets 2–20. Los diagramas de Set 1 tienen guardián propio (`check:ielts-diagrams`).
