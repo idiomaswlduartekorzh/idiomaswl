@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "gateId": "HR-06",
+  "status": "pending-human-review",
+  "implementationCommitSha": "10b0e8c02c51f4440e09fd64108349fc8ea983b7",
+  "baseMainSha": "8350ddf1a5a5a4e4f6345da2717a7bb7e0f1e4d3",
+  "validatedOn": "2026-09-04",
+  "approvedInput": {
+    "gateId": "HR-05",
+    "commitSha": "758966144efd4e593e4888b9e9a77a83c897f629",
+    "reviewLog": "docs/toefl-sectional-review-log.json"
+  },
+  "artifacts": [
+    {
+      "path": "package.json",
+      "sha256": "b309fca1b6c500d3b35c3cad58586457b215579c28ae13b8fb7c45fab07f0995"
+    },
+    {
+      "path": "src/data/toefl/sectional-listening-adapter.ts",
+      "sha256": "ecc15cf0a80c61c5f132fc7091190dd940b6f357648df9c3a7917f82be717bb0"
+    },
+    {
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/page.tsx",
+      "sha256": "d552fd551aec6aea3d8744d6888afbdc3808b7d55a4a8fde4246f84e09efa72a"
+    },
+    {
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/page.module.css",
+      "sha256": "27be0e4de1174c3616beee695164f6ad1d0844539f7c977b48e56cc46f835d08"
+    },
+    {
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/page.tsx",
+      "sha256": "b146680cb26fd170efc1a4a921ca2b9ae10548e0727fd380a6331ee540db807b"
+    },
+    {
+      "path": "src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/ToeflListeningSectionRunner.tsx",
+      "sha256": "ddcd0bab4bb515275aa018ff8ddb456785178731146248ea68f8efb6917ffb19"
+    },
+    {
+      "path": "tests/toefl-sectional-listening.test.mjs",
+      "sha256": "9a883963e049cc4818ee80a5906879674951ca2e286c9834da5206a82b833096"
+    },
+    {
+      "path": "scripts/check-toefl-sectional-listening-runtime.mjs",
+      "sha256": "9c28ef9225d05651d7794a365cf9f8e642dc3200ec22e35521a54786ccd95996"
+    },
+    {
+      "path": "docs/toefl-sectional-hr06-runtime-evidence.json",
+      "sha256": "bc23fa1a03cab7f815838b693703acde5bc4089fb0ba7e0668ecb86d4d461ca5"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr06-library-desktop.png",
+      "sha256": "7869c3825f83c90399f6635b7de598bd8bb98fd75916e8e9e33c1ff23c812a85"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr06-library-mobile.png",
+      "sha256": "f3b71f3f8b7ae06915ecbad864ca603cf1db03c65e20eb7582711dd2924b55b2"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr06-runner-set1-mobile.png",
+      "sha256": "4819057719775c725c02ba91b7460cb077abf66c2046cb2ad0b39cae058ed571"
+    },
+    {
+      "path": "docs/prototypes/screenshots/hr06-runner-set20-desktop.png",
+      "sha256": "73b1128feaab18ca0f483a96f45a1bccd39734708ce3fea6573ae5df059cd167"
+    }
+  ],
+  "scope": {
+    "sets": 20,
+    "source": "Existing normalized TOEFL mocks, not a copied bank",
+    "indexableLibrary": "/practica/toefl/listening/simulacros",
+    "runnerRobots": "noindex, follow",
+    "runnerSitemapEntries": 0,
+    "blockedClaims": [
+      "C09"
+    ]
+  },
+  "checks": [
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --pretty false --incremental false",
+      "status": "passed-final"
+    },
+    {
+      "command": "npm run test:toefl-sectional-listening",
+      "status": "passed",
+      "tests": 4
+    },
+    {
+      "command": "npm run check:toefl-fixed-listening",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:toefl-audio-release",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:toefl-sectional-catalog",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:toefl-editorial",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:practica-catalog",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:production-baseline",
+      "status": "passed"
+    },
+    {
+      "command": "npm run check:seo-foundation",
+      "status": "passed"
+    },
+    {
+      "command": "npm run test:toefl-fixed-listening",
+      "status": "passed",
+      "tests": 3
+    },
+    {
+      "command": "npm run check:exam-practice-content",
+      "status": "known-failure",
+      "findings": 12,
+      "controlChanged": false
+    }
+  ],
+  "runtime": {
+    "report": "docs/toefl-sectional-hr06-runtime-evidence.json",
+    "setRoutesPassed": 20,
+    "blankResponseScoreRequestsPassed": 20,
+    "invalidRoutes404": 4,
+    "invalidPayload400": true,
+    "fullSourceFieldParity": true
+  },
+  "browser": {
+    "tool": "agent-browser 0.34.0 / installed Chrome",
+    "library": {
+      "desktop": "1280x900",
+      "mobile": "390x844",
+      "singleH1": true,
+      "singleMain": true,
+      "horizontalOverflow": false,
+      "pageErrorsObserved": 0
+    },
+    "introSmokeSets": [
+      1,
+      5,
+      9,
+      10,
+      15,
+      20
+    ],
+    "set1RealAudio": {
+      "durationSeconds": 3.04,
+      "disabledBeforeEnd": true,
+      "enabledAfterEnd": true,
+      "responseSelectionAndAdvance": true
+    },
+    "set9KeyboardStart": true,
+    "set9InitiallyCheckedAnswers": 0,
+    "returnFromSet20": "link clicked; server logged library 200; final settled browser snapshot not captured",
+    "limitations": [
+      "Not a full end-to-end traversal of every audio in every sample.",
+      "No automated contrast/axe or production Core Web Vitals certification.",
+      "Cold local compilation caused an initial navigation timeout; warmed navigation succeeded."
+    ]
+  },
+  "humanReview": {
+    "status": "pending",
+    "requiredRoles": [
+      "product",
+      "academic"
+    ],
+    "fixedSample": [
+      1,
+      5,
+      10,
+      15,
+      20
+    ],
+    "randomSample": [
+      9
+    ],
+    "selection": "Single crypto.randomInt draw from the other 15 sets, retained before evaluating the sample."
+  },
+  "build": {
+    "status": "not-run-for-HR06",
+    "mandatoryBeforeIntegration": true,
+    "priorDebt": "HR-05 preview build limitations remain visible; no pass inferred."
+  },
+  "storage": {
+    "worktreeGiB": 2.1,
+    "volumeFreeGiB": 73,
+    "temporaryNextCacheRemovedMiB": 122,
+    "dependencyCopies": 0,
+    "temporaryDependencySymlinkRemoved": true
+  },
+  "prohibitions": {
+    "mainIntegration": false,
+    "deployment": false,
+    "release": false,
+    "claimC09Unblocked": false
+  }
+}
