@@ -31,7 +31,7 @@
     {"set":4,"baselineCharsLongestRate":0.824,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set4-options-candidate.json","candidateSha256":"08064b72dc286472704ad4e606ab5f080787b8168a2d3150b09290505d578d0e"},
     {"set":5,"baselineCharsLongestRate":0.735,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set5-options-candidate.json","candidateSha256":"50f61b8559e2220695788ef717d37103240e384b50679f04f4340cca2c11273c"},
     {"set":6,"baselineCharsLongestRate":0.779,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set6-options-candidate.json","candidateSha256":"5492da69210a564f5cc5b22c55ed0aed24ee9499d6616f33263384bad7082548"},
-    {"set":7,"baselineCharsLongestRate":0.853,"status":"PENDING_CURATION"},
+    {"set":7,"baselineCharsLongestRate":0.853,"status":"DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING","candidate":"docs/toefl-listening-set7-options-candidate.json","candidateSha256":"7c09ba8003d900ee00a6b2d07475c913444538a8813bda2265eea5075f912b6b"},
     {"set":8,"baselineCharsLongestRate":0.809,"status":"PENDING_CURATION"},
     {"set":9,"baselineCharsLongestRate":0.882,"status":"PENDING_CURATION"},
     {"set":10,"baselineCharsLongestRate":0.794,"status":"PENDING_CURATION"},
