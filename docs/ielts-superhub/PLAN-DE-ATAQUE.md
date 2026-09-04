@@ -479,8 +479,8 @@ borrar y reponer elecciones mantuvo un callback por cambio y terminó sin errore
 Se inspeccionaron capturas a 390×844 y 1280×900: sin overflow horizontal, selects de
 46 px de altura, una columna móvil y dos columnas de escritorio.
 
-Límite de esta evidencia: los eventos CDP de ratón/teclado expiraron repetidamente al
-alternar el checkbox. No se certifican el toggle disabled en navegador, el recorrido
+Límite de la primera sesión: los eventos CDP de ratón/teclado expiraron repetidamente al
+alternar el checkbox. En esa sesión no se certificaron el toggle disabled en navegador, el recorrido
 completo por teclado, lector de pantalla ni navegación/RSC de Next. Las pruebas unitarias
 de disabled no sustituyen esa comprobación real. La consola observada sólo mostró un
 error de una extensión ajena al fixture. El viewport se restableció, la pestaña se cerró
@@ -496,12 +496,42 @@ Informe vigente: `tmp/ielts-superhub-harness/latest-truth.json`, desde
 `2026-09-04T17:13:43.770Z` hasta `2026-09-04T17:21:48.326Z`, SHA-256
 `efca394946e6437fdcbf463e8b9bbc152c54395d7346a8158c45b9e4daf00e39`.
 No se ejecutaron build global, TypeScript global ni release harness para este incremento.
-Este APPROVE no cierra la prueba de navegador pendiente ni las aprobaciones humanas.
+Ese APPROVE técnico no cerraba la prueba de navegador pendiente ni las aprobaciones humanas.
 
 Checkpoint privado de ocho archivos, únicamente en la USB. `git diff --check` aprobado.
 No hay procesos de validación pendientes de este incremento.
-Próximo avance acotado: retomar la comprobación de teclado/disabled si los eventos del navegador funcionan;
-después, renderer privado de notes. No habilitar rutas ni importar candidatas. La escucha
+
+Revalidación de navegador terminada el 4 de septiembre, cierre a las 17:35 UTC, sobre
+`9a3ea42e` sin cambios de código. El fixture se recompiló con el loader ESM en
+`tmp/ielts-draft-ui-zmOiFU` y se sirvió sólo en `127.0.0.1:53551`. Esta vez los eventos
+funcionaron y se cerraron los dos pendientes concretos de la primera sesión:
+
+- Disabled: elegir B produjo un cambio; marcar el checkbox deshabilitó los seis selects.
+  Tab los omitió. Espacio reactivó los seis, conservando B y el contador en uno.
+- Teclado: Tab recorrió las seis preguntas en orden; las letras seleccionaron opciones
+  sin ratón y cada elección produjo exactamente un cambio. Shift+Tab volvió en orden
+  por los seis controles, checkbox y Reset hasta Validate. El foco tenía outline de 3 px.
+- Enter validó C/A/B y A/A/A sin errores ni evaluación de respuestas. Tab y Enter sobre
+  Reset borraron las seis elecciones, errores y contador. Shift+Tab y Enter validaron
+  vacío: seis errores y foco en Q26, con instrucción y mensaje ya presentes en el DOM.
+- La corrección posterior por teclado dejó A/B/C y A/A/A: los errores bajaron de seis a
+  cero y el contador subió de cero a seis, manteniendo el foco en cada control. La última
+  validación confirmó únicamente que había elecciones completas, nunca su corrección.
+- Se inspeccionó una captura del estado final; sin página vacía ni overlay. No hubo
+  warnings/errores capturados en el tramo final de la sesión. No se modificó el viewport.
+
+Alcance exacto: recorrido con Tab, Shift+Tab, letras, Enter y espacio, en Chrome/macOS y
+fixture sintético. Las flechas inyectadas no cambiaron la elección; ese gesto no se da
+por verificado. No se certifican lectores de pantalla, otros navegadores, navegación/RSC
+ni integración en un intento real. Se conservan las pruebas móviles/escritorio previas;
+esta revalidación no las sustituye ni aprueba contenido/audio.
+La pestaña se cerró y el proceso del servidor se identificó por puerto, comando y cwd
+antes de detenerlo: sesión `56065` completada con exit 0. No quedan servidores o pruebas
+pendientes de este fixture. No se repitió el harness ni ASR: sólo cambia este registro.
+
+Próximo avance acotado: renderer privado de notes con fixtures sintéticos y pruebas de
+entradas, errores, conservación de texto y teclado. No habilitar rutas ni importar
+candidatas. La escucha
 humana y la cuantificación de demanda siguen pendientes, y el respaldo remoto continúa
 requiriendo autorización. No hay push, merge, PR ni despliegue de este incremento.
 
