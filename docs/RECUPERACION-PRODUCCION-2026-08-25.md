@@ -65,21 +65,22 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 | P2 | Correcciones locales de Inglés A2 | árbol principal sin commit | 2 microcopias de apertura de tarjeta y cambios asociados | `RESPALDAR_SEPARAR` | Reimplementar sobre `main` y correr guardianes de Habla. |
 | P3 | Ajustes locales de blog/lectura | árbol principal sin commit | Blog difiere; Lectura añade un emoji al H1 | `DECIDIR` | Comparación editorial; no integrar el árbol completo. |
 
-## 4. Trabajos activos que todavía no deben desplegarse
+## 4. Trabajos activos y despliegues recientes
 
 ### Atribución WhatsApp — 4 de septiembre de 2026
 
-- Rama: `codex/whatsapp-attribution-admin`; base `09d82c99` de `origin/main`.
-- Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex, tarea de tags y panel de José.
+- Rama de origen: `codex/whatsapp-attribution-admin`; integrada en `main`.
+- Estado: `DESPLEGADO`. Responsable: Codex, tarea de tags y panel de José.
 - Alcance: captura de origen en enlaces públicos de WhatsApp, referencias de contacto,
   confirmación manual o por webhook y vista privada `/dashboard/admin/contactos`.
 - Compartidos reservados: `src/app/layout.tsx`, `WhatsAppFloat.tsx`, cabecera de
   `JoseDashboard.tsx`, webhook WhatsApp, `config/production-baseline.json` y una migración aditiva de Supabase.
 - Dependencias: no modificar ni activar la IA nativa de WhatsApp; no tocar precios/pagos.
 - Producción: migración exacta aplicada y auditada en `ivqeokuxgxemhydvopdd`; flag
-  de Vercel configurado para el siguiente build. Pendiente integrar en `main`,
-  esperar el deployment y ejecutar smoke.
-- Decisión de integración: `MERGE`; rama actualizada desde `origin/main` y validada.
+  de Vercel activo. Main `5af12736a991f3dc1ecbc5f691faf166f02299f9`, deployment
+  `dpl_4ebGom6Yhpm9KDqvktucHsCTnJnp` en estado `READY`, dominios canónicos actualizados.
+- Decisión de integración: `MERGE` ejecutada por fast-forward; rama actualizada desde
+  `origin/main` y validada antes de publicar.
 - Validado: 17 pruebas de contrato/API/SQL/chatbot, TypeScript global y acotado,
   ESLint, guardianes completos, build de 2.515 páginas y QA local de éxito, permisos,
   móvil/escritorio y caída/recuperación de DB.

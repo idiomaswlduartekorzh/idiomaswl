@@ -1,8 +1,9 @@
 # Origen de contactos WhatsApp
 
-Estado: LISTO_PARA_INTEGRAR. Rama `codex/whatsapp-attribution-admin`, base
-`09d82c99` de `origin/main` tras rebase.
-No desplegado. No cambia precios, pagos, horarios ni la IA nativa de WhatsApp.
+Estado: DESPLEGADO. Integrado en `main` en `5af12736a991f3dc1ecbc5f691faf166f02299f9`.
+Producción: `dpl_4ebGom6Yhpm9KDqvktucHsCTnJnp` (`READY`), publicado en
+`www.idiomaswl.com` e `idiomaswl.com` el 4 de septiembre de 2026.
+No cambia precios, pagos, horarios ni la IA nativa de WhatsApp.
 
 ## Resultado de la verificación — 4 de septiembre de 2026
 
@@ -29,9 +30,17 @@ No desplegado. No cambia precios, pagos, horarios ni la IA nativa de WhatsApp.
   `SECURITY INVOKER`, `search_path` vacío, roles públicos sin acceso y
   `service_role` limitado a SELECT/INSERT; los asesores de seguridad y rendimiento
   mostraron 0 errores. Las tres tablas empezaron vacías.
-- Vercel producción ya tiene `NEXT_PUBLIC_WHATSAPP_ATTRIBUTION_ENABLED=true`; el
-  valor solo se incorpora al siguiente build de `main`. El merge, el despliegue
-  y la prueba real de recepción de WhatsApp siguen pendientes.
+- Vercel producción tiene `NEXT_PUBLIC_WHATSAPP_ATTRIBUTION_ENABLED=true`; el build
+  canónico de `main` terminó correctamente y los tres dominios de producción apuntan
+  al deployment `dpl_4ebGom6Yhpm9KDqvktucHsCTnJnp`.
+- Humo productivo aprobado: `/links` 200; panel privado redirige a `/login` sin
+  sesión; POST inválido 400; origen ajeno 403; webhook sin firma 401; clic etiquetado
+  204. La referencia QA `WL-4F59B3823FFCE3ADF9BEC3AD` quedó una sola vez con
+  `/links`, `qa_codex`, `release_smoke` y la campaña esperada, sin mensajes asociados.
+  Los logs del deployment no mostraron errores después de la prueba.
+- No se envió ningún WhatsApp. Sigue pendiente comprobar recepción firmada con un
+  mensaje real de Meta Cloud API; esta limitación no afecta el registro de clics ni
+  la confirmación manual por referencia.
 
 ## Uso del panel
 
@@ -99,7 +108,7 @@ en su chat en “Confirmar un mensaje”. Esto solo registra su confirmación; n
 WhatsApp ni asigna un teléfono. Retirarla genera otro evento de auditoría, no borra
 el anterior. No hay importación retroactiva de conversaciones privadas.
 
-## Activación (requiere autorización de producción)
+## Activación de producción ejecutada
 
 1. Actualizar la rama desde `origin/main`, validar y revisar la migración
    `supabase/migrations/20260904163657_whatsapp_contact_attribution.sql` en staging.
@@ -117,9 +126,11 @@ el anterior. No hay importación retroactiva de conversaciones privadas.
    No activar ni reemplazar el agente de la otra tarea para conseguir esta prueba.
 7. Registrar SHA de main, deployment y humo antes de declarar DESPLEGADO.
 
-No se han ejecutado estos pasos en producción. No hay reporte diario automático
-programado en esta rama. La vista ofrece consulta de hoy; un envío diario se puede
-configurar después de validar cobertura y destino del reporte.
+Los pasos 1 a 5 y el humo de clic/persistencia del paso 6 se ejecutaron en producción
+el 4 de septiembre de 2026. No se simuló ni envió un mensaje firmado de Meta y no se
+tocó el agente de la otra tarea. No hay reporte diario automático programado. La
+vista ofrece consulta de hoy; un envío diario se puede configurar después de validar
+cobertura y destino del reporte.
 
 ## Seguridad, fallos y recuperación
 
