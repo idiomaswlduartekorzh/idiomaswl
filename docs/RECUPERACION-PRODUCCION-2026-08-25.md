@@ -226,3 +226,7 @@ Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview
 - Japonés A2 llegó a 20 escenarios y 100 simulaciones en `codex/habla-japones-a2`.
   Rebasado sobre `77476a11`, pasó release guard, guardián profundo (10/24, 200/480),
   catálogo, TypeScript y build Webpack de 2.499 páginas; queda listo para fast-forward.
+
+### Continuidad TOEFL Mac mini — Set 8, 2026-09-04
+
+Estado EN_CURSO. Rama exclusiva `codex/toefl-curation-mac-mini-20260904`, continuación de `1f7a3c39a9f2a0dd5ae8bbfba6bfed6f6336e3a7`; base main `5af12736a991f3dc1ecbc5f691faf166f02299f9`. Ambas referencias confirmadas en GitHub en este turno. Responsable: Codex. Alcance: candidato documental Set 8, tracker y evidencia; compartido reservado: este registro. Sin cambios de runtime. Candidato de 34 ítems pasa cuatro métricas de longitud; hash y resultados en `toefl-listening-set8-screen-20260904.json`. Revisión de transcripciones legacy de conversación/anuncio/charla y scripts de las 19 adiciones; no se escucharon audios ni se certificó revisión académica. Las primeras cinco respuestas legacy requieren contraste auditivo humano. Próximo paso: Set 9, después 10–20. HR-06, revisión académica, build e integración siguen pendientes; sin migraciones, nuevas variables, push, deployment o smoke de producción.

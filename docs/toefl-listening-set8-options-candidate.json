@@ -1,0 +1,349 @@
+{
+  "status": "draft-academic-review-required",
+  "setId": "set-8",
+  "sourceCommit": "1f7a3c39a9f2a0dd5ae8bbfba6bfed6f6336e3a7",
+  "policy": "Options-only proposal. Preserve item IDs, option IDs/order, keys, prompts and audio. Never import before academic approval.",
+  "reviewer": null,
+  "items": [
+    {
+      "id": "item:t8-l-cr1-fixed-v1",
+      "options": [
+        "She left the building about an hour ago.",
+        "No, I don't usually drink tea with breakfast.",
+        "Yes, room 110 is down the hall on the left.",
+        "It costs eight dollars at the campus store."
+      ],
+      "rationale": "Conserva habitación 110 y dirección izquierda. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-cr2-fixed-v1",
+      "options": [
+        "That sounds like a lot of fun — count me in!",
+        "He comes from Brazil.",
+        "It rained all afternoon.",
+        "The chair beside the window is broken."
+      ],
+      "rationale": "Conserva aceptación entusiasta de invitación. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-cr3-fixed-v1",
+      "options": [
+        "Ask at the information desk near the entrance.",
+        "The cake needs a little more sugar in it.",
+        "She plays the piano in the school orchestra.",
+        "It measures about twenty meters from end to end."
+      ],
+      "rationale": "Conserva consulta en información junto a entrada. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-cr4-fixed-v1",
+      "options": [
+        "Yes, she lives nearby.",
+        "It is made of cotton.",
+        "No problem — I can lend you mine.",
+        "The movie starts at eight in the evening."
+      ],
+      "rationale": "Conserva ofrecimiento de préstamo. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-cr5-fixed-v1",
+      "options": [
+        "He drives a red car.",
+        "It is about three hours away by car.",
+        "Yes, I passed with a good grade!",
+        "The store is closed today."
+      ],
+      "rationale": "Conserva aprobado con buena nota. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m1-cr6-v1",
+      "options": [
+        "She helped me choose courses for next term.",
+        "We met in her office.",
+        "My adviser teaches biology.",
+        "Next term begins in the first week of January."
+      ],
+      "rationale": "Conserva ayuda para elegir cursos del próximo periodo. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m1-cr7-v1",
+      "options": [
+        "The package arrived at my house before noon.",
+        "The cable measures about two meters in length.",
+        "It should have; ask the seller for the cable.",
+        "I included the receipt inside the original packaging."
+      ],
+      "rationale": "Conserva expectativa del cable y consulta al vendedor. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m1-cr8-v1",
+      "options": [
+        "The exit is at the end of the hall.",
+        "Of course. I will close it behind me.",
+        "The old door was replaced during last year's renovation.",
+        "I am leaving after the meeting has finished."
+      ],
+      "rationale": "Conserva compromiso de cerrar la puerta. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-cv1-fixed-v1",
+      "options": [
+        "A database is charging her for articles.",
+        "The library is closed.",
+        "Her student ID is missing.",
+        "She is unable to access her university email account."
+      ],
+      "rationale": "Conserva solicitud de pago por artículos. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-cv2-fixed-v1",
+      "options": [
+        "Her student account has expired.",
+        "She entered the database directly, bypassing the university portal.",
+        "The university has stopped paying for its subscription to the database.",
+        "The database is temporarily broken."
+      ],
+      "rationale": "Conserva acceso directo sin portal universitario. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-cv3-fixed-v1",
+      "options": [
+        "Return to the library tomorrow and ask for assistance with the search",
+        "Pay the requested fee to download the articles directly from the database",
+        "Open the library's Databases tab and sign in with her student ID",
+        "Try a different search engine to locate the articles for her paper"
+      ],
+      "rationale": "Conserva pestaña Databases e identificación estudiantil. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-cv4-fixed-v1",
+      "options": [
+        "Older articles are always more reliable; their age guarantees the accuracy of their information.",
+        "Only articles published this year are acceptable, regardless of the historical period being studied.",
+        "Old articles should never be used; they cannot provide useful evidence for a history paper.",
+        "Older primary sources can be valuable; check whether each source is primary or secondary."
+      ],
+      "rationale": "Conserva valor de fuentes primarias y distinción primaria/secundaria. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-an1-fixed-v1",
+      "options": [
+        "A professor joining the department",
+        "A change to student grading",
+        "The department's closure during an upcoming public holiday",
+        "A new date for the economics final exam"
+      ],
+      "rationale": "Conserva cambio de fecha del final de economía. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-an2-fixed-v1",
+      "options": [
+        "The time of day and the room assigned",
+        "The date: December 17 instead of December 15",
+        "The question format used throughout the entire examination",
+        "The total time allowed for completing the examination"
+      ],
+      "rationale": "Conserva ambas fechas, 15 y 17 de diciembre. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-at1-fixed-v1",
+      "options": [
+        "The stages in the life cycle of wasps",
+        "The different ways that insects communicate with others",
+        "The hunting methods used by several animal predators",
+        "Two different kinds of mimicry found in animals"
+      ],
+      "rationale": "Conserva dos tipos de mimetismo animal. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-at2-fixed-v1",
+      "options": [
+        "A harmless species resembles a harmful one.",
+        "Both species are harmful.",
+        "The mimic is more dangerous than its model.",
+        "Both species are harmless."
+      ],
+      "rationale": "Conserva especie inofensiva que se parece a especie dañina. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-at3-fixed-v1",
+      "options": [
+        "It rapidly changes color.",
+        "It appears dangerous but has no actual defense.",
+        "It attacks predators directly.",
+        "It avoids detection by hiding beneath the ground."
+      ],
+      "rationale": "Conserva apariencia peligrosa sin defensa real. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-at4-fixed-v1",
+      "options": [
+        "To attract potential mates through matching patterns and colors",
+        "To make it harder for the species to recognize one another",
+        "To share a warning predators learn faster, protecting them all",
+        "To compete more successfully for food within the same habitat"
+      ],
+      "rationale": "Conserva aprendizaje más rápido de señal compartida y beneficio colectivo. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cr1-v1",
+      "options": [
+        "The library building has four floors in total.",
+        "The crowd came in through the western entrance.",
+        "The library's evening hours extend until twelve tonight.",
+        "Final examinations are scheduled to begin next week."
+      ],
+      "rationale": "Conserva exámenes la próxima semana como causa. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cr2-v1",
+      "options": [
+        "The paragraph is on page two.",
+        "Yes, send the paragraph to me now.",
+        "Lunch is served downstairs.",
+        "I finished reading that article yesterday afternoon."
+      ],
+      "rationale": "Conserva aceptación y envío inmediato del texto. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cr3-v1",
+      "options": [
+        "The photograph is too dark.",
+        "Your old card expires soon.",
+        "At the service desk in Central Hall.",
+        "The card fits neatly inside this small wallet."
+      ],
+      "rationale": "Conserva service desk y Central Hall. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cr4-v1",
+      "options": [
+        "Check the recovery folder before making another copy.",
+        "The spreadsheet contains five columns of numerical data.",
+        "I deleted several old messages from my inbox.",
+        "The incorrect answer was corrected before the final submission."
+      ],
+      "rationale": "Conserva recuperar antes de crear otra copia. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cr5-v1",
+      "options": [
+        "It stops beside the stadium.",
+        "I rode it after class.",
+        "The driver begins the afternoon shift at noon.",
+        "The last one leaves at eleven thirty."
+      ],
+      "rationale": "Conserva salida final a las once y media. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cr6-v1",
+      "options": [
+        "The discussion is about urban planning in growing cities.",
+        "Marcus leads a local hiking club on the weekends.",
+        "Yes, but he asked me to prepare the slides.",
+        "We agreed on a date for the next meeting."
+      ],
+      "rationale": "Conserva aceptación de Marcus y encargo de diapositivas. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cr7-v1",
+      "options": [
+        "The soup comes with bread.",
+        "Perhaps the cook changed the recipe.",
+        "Yesterday’s meal was inexpensive.",
+        "The spices are kept in the cabinet over there."
+      ],
+      "rationale": "Conserva cambio de receta como hipótesis. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cr8-v1",
+      "options": [
+        "Yes, you need it for the first exercise.",
+        "The workshop is in Room 210.",
+        "My laptop battery is charged.",
+        "The first speaker is due to arrive tomorrow morning."
+      ],
+      "rationale": "Conserva necesidad del portátil para el primer ejercicio. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cv1-v1",
+      "options": [
+        "The student record has expired.",
+        "The student followed an outdated database address.",
+        "The library has removed its collection of older articles.",
+        "The campus network is down."
+      ],
+      "rationale": "Conserva dirección obsoleta como causa. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-cv2-v1",
+      "options": [
+        "They can be accessed after paying an additional fee.",
+        "They are restricted to readers using computers on campus.",
+        "They remain accessible through the new database link.",
+        "They have been transferred into the library's main catalog."
+      ],
+      "rationale": "Conserva disponibilidad por enlace nuevo. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-an1-v1",
+      "options": [
+        "At noon today",
+        "After the performance on Friday",
+        "At the box office's closing time this evening",
+        "At four in the afternoon on Friday"
+      ],
+      "rationale": "Conserva viernes a las cuatro de la tarde. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-an2-v1",
+      "options": [
+        "The confirmation message for their reservation",
+        "A printed map of the university campus",
+        "Evidence of arriving before the other students",
+        "A new selection of seats for the performance"
+      ],
+      "rationale": "Conserva mensaje de confirmación sin restringir soporte. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-at1-v1",
+      "options": [
+        "Dry soil that contains plenty of oxygen year-round",
+        "An environment where salt is entirely absent from the water",
+        "Waterlogged soil with little oxygen in a tidal zone",
+        "Temperatures that remain below freezing throughout the entire year"
+      ],
+      "rationale": "Conserva suelo inundado con poco oxígeno y mareas. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-at2-v1",
+      "options": [
+        "They slow water and trap suspended sediment.",
+        "They eliminate all storm waves.",
+        "They prevent sediment from accumulating.",
+        "They raise oxygen levels throughout all of the coastal water."
+      ],
+      "rationale": "Conserva ralentización del agua y retención de sedimento. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-at3-v1",
+      "options": [
+        "To show that mangrove leaves provide food for every fish",
+        "To compare tropical and polar coasts",
+        "To explain carbon release from roots",
+        "To illustrate the habitat offered by the complex roots"
+      ],
+      "rationale": "Conserva función de hábitat de raíces complejas. Se equilibran alternativas; revisión académica pendiente."
+    },
+    {
+      "id": "item:t8-l-m2-at4-v1",
+      "options": [
+        "It requires clearing the mangrove forest.",
+        "Its effectiveness depends on the forest and local conditions.",
+        "It provides a guarantee that the shoreline will never erode.",
+        "It is unrelated to storm strength."
+      ],
+      "rationale": "Conserva dependencia de condiciones locales y bosque. Se equilibran alternativas; revisión académica pendiente."
+    }
+  ]
+}
