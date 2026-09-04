@@ -396,11 +396,21 @@ cambios nuevos. ESLint de los cuatro archivos modificados del contrato/pruebas a
 con exit 0. Se guarda un checkpoint local; el push sigue pendiente de autorización y no
 se reintenta por otra vía. No hay procesos de validación pendientes de este incremento.
 
-Próximo avance de producto: preparar un paquete privado de revisión de Listening 1–4,
-con enlaces a los audios existentes, checklist de escucha/editorial/mapa y referencias
-a la evidencia, para facilitar la revisión humana sin escribir aprobaciones automáticas.
-No crear páginas públicas ni volver a generar audio; después retomar interfaces y SEO
-según sus puertas. La cuantificación de demanda sigue pendiente de datos verificables.
+Paquete privado preparado: [`REVISION-HUMANA-LISTENING.md`](REVISION-HUMANA-LISTENING.md),
+basado en `70648c0b`. Reúne los cuatro audios existentes (15:12 acumulados, no un mock
+completo), fuentes, manifests, mapa y ASR vigente; checklist y ficha empiezan pendientes.
+Se verificaron los 18 enlaces locales, las ocho huellas audio/source y la del mapa.
+Una revisión independiente confirmó los bloqueos específicos y Q30 contextual; se
+incorporaron identidad del mapa y confirmación explícita de la persona revisora.
+No cambia aprobaciones, manifests, audios ni superficies públicas. No se repite el harness
+aprobado por este incremento exclusivamente documental. `git diff --check` y
+`check:ielts:scope -- --compare-git-ref=origin/main` aprobaron sin cambios en TOEFL.
+
+Próximo avance acotado: preparar el contrato y pruebas de interfaz para matching y
+note completion de Parts 3/4, conservando bloqueada su proyección pública y sin registrar
+rutas o candidatas. Antes de editar componentes, leer las guías locales de Next y probar
+el camino exacto sin build global. La promoción seguirá esperando revisión humana y
+sus gates. La cuantificación de demanda sigue pendiente de datos verificables.
 
 El checkpoint del runner `d393bbc0` está únicamente en la USB: su push fue rechazado por
 el control automático y se solicitó autorización explícita para enviarlo al repositorio
