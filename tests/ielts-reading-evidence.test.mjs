@@ -6,6 +6,14 @@ test('Reading evidence ranking ignores common instruction words', () => {
   assert.deepEqual(readingTokens('Choose ONE WORD ONLY from the passage for each answer.'), ['word', 'answer']);
 });
 
+test('Reading evidence normalizes inflections and controlled paraphrases', () => {
+  assert.deepEqual(
+    readingTokens('Comedians described situations, noises while playing, and subjective views.'),
+    ['comedian', 'describ', 'situation', 'noise', 'while', 'play', 'perspective', 'perspective'],
+  );
+  assert.deepEqual(readingTokens('analysis status processes'), ['analysis', 'status', 'process']);
+});
+
 test('literal answers outrank merely related paragraphs', () => {
   const passage = `Researchers used several brain scans to study jokes.\n\nThe orbital prefrontal cortex is associated with evaluating information.\n\nOther experiments investigated memory and language.`;
   const ranked = rankReadingParagraphs(passage, 'Orbital prefrontal cortex is involved with evaluation', ['evaluating information']);
@@ -17,5 +25,11 @@ test('semantic overlap still proposes a paragraph when no literal answer applies
   const passage = `The first theory concerns social status.\n\nChimpanzees make a panting noise while they play.`;
   const ranked = rankReadingParagraphs(passage, 'Chimpanzees make particular noises when playing');
   assert.equal(ranked[0].paragraph, 2);
-  assert.ok(ranked[0].overlappingTerms.includes('chimpanzees'));
+  assert.ok(ranked[0].overlappingTerms.includes('chimpanzee'));
+});
+
+test('controlled paraphrases locate matching-headings evidence without pretending approval', () => {
+  const passage = `The brain has many expressive circuits.\n\nMaking a rapid emotional assessment of events is a demanding job for the brain.\n\nWhether pleasure occurs depends on a person's outlook.`;
+  assert.equal(rankReadingParagraphs(passage, "One of the brain's difficult tasks is to respond instantly to whatever is happening")[0].paragraph, 2);
+  assert.equal(rankReadingParagraphs(passage, 'Individual responses relate to subjective views')[0].paragraph, 3);
 });
