@@ -81,8 +81,12 @@ export function AudioPlayer({
   const [current, setCurrent] = useState(0);
   const [duration, setDuration] = useState(0);
 
-  function play() {
-    if (!audioRef.current || playing || (!replayable && (started || alreadyPlayed))) return;
+  function togglePlayback() {
+    if (!audioRef.current || (!replayable && (started || alreadyPlayed))) return;
+    if (replayable && playing) {
+      audioRef.current.pause();
+      return;
+    }
     if (done) audioRef.current.currentTime = 0;
     setDone(false);
     void audioRef.current.play().then(() => {
@@ -135,11 +139,11 @@ export function AudioPlayer({
       <div className="ielts-audio__player">
         <button
           className={`ielts-audio__btn${done ? ' ielts-audio__btn--done' : ''}`}
-          onClick={play}
-          aria-label={done && replayable ? 'Play again' : 'Play'}
-          disabled={playing || (!replayable && (started || alreadyPlayed))}
+          onClick={togglePlayback}
+          aria-label={playing ? 'Pause' : done && replayable ? 'Play again' : started && replayable ? 'Resume' : 'Play'}
+          disabled={!replayable && (started || alreadyPlayed)}
         >
-          {done && !replayable ? '✓' : '▶'}
+          {playing ? 'Ⅱ' : done && !replayable ? '✓' : '▶'}
         </button>
         <div className="ielts-audio__info">
           <span className="ielts-audio__label">

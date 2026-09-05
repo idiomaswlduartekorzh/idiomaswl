@@ -87,6 +87,12 @@ const speakingPracticeSource = await readFile(
 );
 assert.ok(speakingPracticeSource.includes('replayable'), 'Speaking practice audio must be replayable.');
 assert.ok(speakingPracticeSource.includes('You may continue without listening or recording.'), 'Speaking practice must not block navigation on audio or recording.');
+const audioPlayerSource = await readFile(
+  path.join(ROOT, 'src/components/exam-runner/primitives.tsx'),
+  'utf8',
+);
+assert.ok(audioPlayerSource.includes("aria-label={playing ? 'Pause'"), 'Replayable practice audio must support pause and resume.');
+assert.ok(audioPlayerSource.includes('disabled={!replayable &&'), 'Replayable audio controls must never enter a disabled state.');
 
 await assert.rejects(
   access(path.join(ROOT, 'src/app/(site)/practica/toefl/TOEFLHubClient.tsx')),
