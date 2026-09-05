@@ -25,7 +25,7 @@ const IELTS_CONTENT_REVISIONS: Readonly<Record<number, number>> = {
   6: 3,
   7: 3,
   8: 2,
-  9: 2,
+  9: 3,
   10: 2,
   11: 2,
   12: 2,
