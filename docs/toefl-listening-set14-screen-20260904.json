@@ -1,0 +1,16 @@
+{
+  "status":"candidate-passes-automatic-screen-academic-review-still-required","selfTests":"passed","set":14,
+  "candidateSha256":"8a4be388c3f89a4ad28fcfacc249b6b3817e4d8e5ce9d80ba838921885cec38d",
+  "before":{"questions":34,"automaticScreenEligible":true,"academicReviewRequired":true,"totals":{
+    "words_longest":{"unique":22,"tied":8,"expectedRate":0.7549019607843137,"firstRate":0.7647058823529411,"flagged":true},
+    "words_shortest":{"unique":0,"tied":1,"expectedRate":0.00980392156862745,"firstRate":0,"flagged":false},
+    "chars_longest":{"unique":28,"tied":1,"expectedRate":0.8382352941176471,"firstRate":0.8529411764705882,"flagged":true},
+    "chars_shortest":{"unique":0,"tied":0,"expectedRate":0,"firstRate":0,"flagged":false}
+  }},
+  "after":{"questions":34,"automaticScreenEligible":true,"academicReviewRequired":true,"totals":{
+    "words_longest":{"unique":3,"tied":11,"expectedRate":0.20098039215686272,"firstRate":0.23529411764705882,"flagged":false},
+    "words_shortest":{"unique":9,"tied":10,"expectedRate":0.3627450980392157,"firstRate":0.38235294117647056,"flagged":false},
+    "chars_longest":{"unique":6,"tied":0,"expectedRate":0.17647058823529413,"firstRate":0.17647058823529413,"flagged":false},
+    "chars_shortest":{"unique":13,"tied":3,"expectedRate":0.4264705882352941,"firstRate":0.38235294117647056,"flagged":false}
+  }}
+}
