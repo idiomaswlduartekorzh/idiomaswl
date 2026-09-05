@@ -460,7 +460,7 @@ F. International governance of the deep ocean remains incomplete. The high seasâ
           blanks: [
             { num: 21, answers: ['1,086', 'one thousand'] }, { num: 22, answers: ['chemosynthesis'] },
             { num: 23, answers: ['copper'] }, { num: 24, answers: ['centuries'] },
-            { num: 25, answers: ['months'] }, { num: 26, answers: ['ratify and enforce', 'enforce'] },
+            { num: 25, answers: ['months'] }, { num: 26, answers: ['enforce'] },
           ],
         },
       ],

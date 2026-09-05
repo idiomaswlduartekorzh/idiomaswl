@@ -146,7 +146,8 @@ for (let n = 1; n <= 20; n++) {
         if (!b.answers?.length || b.answers.some(a => !String(a).trim())) add('EMPTY_ANSWER', `${q.id}:${b.num}`, 'critical');
         const writtenLimit = q.groupLabel?.match(/(?:NO MORE THAN |WRITE |CHOOSE )?(ONE|TWO|THREE) WORDS?/i)?.[1]?.toUpperCase();
         const limit = b.maxWords ?? ({ ONE: 1, TWO: 2, THREE: 3 })[writtenLimit];
-        if (limit && b.answers.some(a => ieltsAnswerUnits(a) > limit)) add('ANSWER_WORD_LIMIT_REVIEW', `${section.skill} ${b.num}: at least one accepted variant exceeds ${limit} words/numbers; check the displayed instruction and hyphen/number rules`, 'high');
+        const overLimit = limit ? b.answers.filter(answer => ieltsAnswerUnits(answer) > limit) : [];
+        if (overLimit.length) add('ANSWER_WORD_LIMIT_REVIEW', `${section.skill} ${b.num}: accepted variant(s) ${overLimit.map(answer => JSON.stringify(answer)).join(', ')} exceed ${limit} words/numbers; check the displayed instruction and hyphen/number rules`, 'high');
         // Judgement answers describe the passage; they need not occur in it.
         if (b.answers.every(a => ['true', 'false', 'yes', 'no', 'not given'].includes(normal(a)))) continue;
         const textual = b.answers.filter(a => /[a-z]/i.test(a) && !/\d/.test(a));

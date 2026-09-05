@@ -422,7 +422,7 @@ Responses to reef decline range from local interventions to global policy ambiti
           id: 'r1-sent',
           part: 5,
           qRange: [8, 13],
-          groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
+          groupLabel: 'Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.',
           template: `8. The algae living inside coral tissue are called {{8}} and they are expelled during bleaching events.\n9. The {{9}} experienced five mass bleaching events between 2016 and 2024.\n10. When corals lose their algae, they appear white because their {{10}} becomes visible.\n11. Agricultural runoff promotes {{11}} that cover reefs and block sunlight.\n12. Coral reefs protect coastlines from erosion by acting as a physical {{12}} that absorbs wave energy.\n13. Scientists are developing {{13}} coral strains that may survive higher ocean temperatures.`,
           blanks: [
             { num: 8, answers: ['zooxanthellae'] },

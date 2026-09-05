@@ -18,6 +18,20 @@ export interface IeltsReviewBlueprint {
   writingTasks: Record<IeltsWritingTaskNumber, IeltsWritingTaskBlueprint>;
 }
 
+const IELTS_CONTENT_REVISIONS: Readonly<Record<number, number>> = {
+  1: 4,
+  2: 2,
+  5: 2,
+  6: 2,
+  7: 2,
+  9: 2,
+  10: 2,
+  11: 2,
+  12: 2,
+  16: 2,
+  20: 2,
+};
+
 /**
  * Source of truth for connecting an IELTS mock to the shared review pipeline.
  * The same submission endpoint, receipt, scoring formula and admin panel serve
@@ -28,20 +42,16 @@ export const IELTS_REVIEW_BLUEPRINTS: Record<string, IeltsReviewBlueprint> = Obj
   Array.from({ length: 20 }, (_, index) => {
     const setNumber = index + 1;
     const mockId = `set-${setNumber}`;
-    const contentVersion = setNumber === 1
-      ? 'ielts-set-1-v4'
-      : setNumber === 2
-        ? 'ielts-set-2-v2'
-        : `ielts-set-${setNumber}-v1`;
+    const revision = IELTS_CONTENT_REVISIONS[setNumber] ?? 1;
+    const contentVersion = `ielts-set-${setNumber}-v${revision}`;
     return [mockId, {
       mockId,
       mockTitle: `IELTS Academic Set ${setNumber}`,
       contentVersion,
-      reviewableContentVersions: setNumber === 1
-        ? ['ielts-set-1-v1', 'ielts-set-1-v2', 'ielts-set-1-v3', 'ielts-set-1-v4']
-        : setNumber === 2
-          ? ['ielts-set-2-v1', 'ielts-set-2-v2']
-          : [contentVersion],
+      reviewableContentVersions: Array.from(
+        { length: revision },
+        (_, versionIndex) => `ielts-set-${setNumber}-v${versionIndex + 1}`,
+      ),
       writingTasks: {
         1: {
           answerColumn: 'writing_task1_answer',
@@ -62,11 +72,11 @@ export function getIeltsReviewBlueprint(mockId: string): IeltsReviewBlueprint | 
   return IELTS_REVIEW_BLUEPRINTS[mockId] ?? null;
 }
 
-/** Old Set 1 browser tabs must not submit answers to changed prompts silently. */
+/** Old browser tabs must not submit answers to a revised set silently. */
 export function isIeltsSubmissionVersionCurrent(mockId: string, version: unknown): boolean {
   const blueprint = getIeltsReviewBlueprint(mockId);
   if (!blueprint) return false;
-  if (version == null) return mockId !== 'set-1';
+  if (version == null) return blueprint.contentVersion.endsWith('-v1');
   return version === blueprint.contentVersion;
 }
 
