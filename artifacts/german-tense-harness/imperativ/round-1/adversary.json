@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "formId": "imperativ",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "c1469c42024cb09582bc95a61a19654a7db25b6916dbf34901433d32b8e633da",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "688bcebfada2bdab301a4dcbec2a767257e41e51e6ce8ed0cb0edefc7146d627",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "baseline-valid",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "id": "final-answer-linkage",
+      "status": "PASS",
+      "mutation": "prüfe/prüf → prüft",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-imperativ-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-imperativ-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n4-answer-linkage",
+      "status": "PASS",
+      "mutation": "Sustitución aislada de la corrección declarada en N4",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-imperativ-independent-error-1: accepted no coincide con las respuestas del runtime",
+        "de-imperativ-independent-error-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n5-answer-linkage",
+      "status": "PASS",
+      "mutation": "Sustitución aislada de la oración completa declarada en N5",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-imperativ-separation-1: accepted no coincide con las respuestas del runtime",
+        "de-imperativ-separation-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "context-fingerprint",
+      "status": "PASS",
+      "mutation": "Eliminación del ancla o destinatario de la primera decisión de N6 sin tocar la respuesta",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-imperativ-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "classification-fingerprint",
+      "status": "PASS",
+      "mutation": "Intercambio de una etiqueta separable y una inseparable manteniendo el balance 5/5",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-imperativ-separation-1: runtimeFingerprint no coincide con el reto materializado",
+        "de-imperativ-separation-3: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "imperative-e-variant-linkage",
+      "status": "PASS",
+      "mutation": "Eliminación de „prüf“ dejando solo „prüfe“ en runtime mientras la anotación conserva ambas variantes",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-imperativ-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-imperativ-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "content-alternatives",
+      "status": "PASS",
+      "evidence": "Las variantes productivas estándar con -(e) están declaradas; las formas con cambio vocálico y las personas ihr/Sie se mantienen diferenciadas."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "ADVERSARIAL-GATES-CLOSED",
+      "detail": "Las mutaciones de respuesta, contexto y clasificación fueron rechazadas; el runtimeFingerprint por ítem y el enlace de respuestas protegen el candidato."
+    }
+  ],
+  "generatedAt": "2026-09-05T15:32:02.747Z"
+}

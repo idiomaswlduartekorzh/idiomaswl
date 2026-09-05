@@ -1,0 +1,2826 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-sein",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "345b3e0ccddf9a3b06a7c7b4921417e1f2311dba9b1f0f4863417f04dde632cb",
+  "specFingerprint": "f7eb72c48b2e0a91f74605ad20ed1e97e04e8224eb86e070021cf0a72f3fc625",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "baselineContentFingerprint": "7b8b2cd4d6975f482e3a262ed07294736f06ab520d39bc65654b3aff638a111f",
+  "candidate": {
+    "formId": "perfekt-sein",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-perfekt-sein-choice-editorial-1",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „ich“ mit gehen.",
+          "context": "Ich sage, dass ich nach Hause ___.",
+          "options": [
+            "gegangen bist",
+            "gegangen ist",
+            "gegangen bin",
+            "gegangen sind"
+          ],
+          "answer": "gegangen bin",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-2",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „du“ mit kommen.",
+          "context": "Du sagst, dass du früh ___.",
+          "options": [
+            "gekommen bin",
+            "gekommen ist",
+            "gekommen seid",
+            "gekommen bist"
+          ],
+          "answer": "gekommen bist",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-3",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „Lena“ mit fahren.",
+          "context": "Lena erzählt, dass sie nach Bonn ___.",
+          "options": [
+            "gefahren ist",
+            "gefahren bin",
+            "gefahren bist",
+            "gefahren sind"
+          ],
+          "answer": "gefahren ist",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-4",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „wir“ mit laufen.",
+          "context": "Wir sagen, dass wir zum Park ___.",
+          "options": [
+            "gelaufen bin",
+            "gelaufen sind",
+            "gelaufen ist",
+            "gelaufen seid"
+          ],
+          "answer": "gelaufen sind",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-5",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „ihr“ mit bleiben.",
+          "context": "Ihr sagt, dass ihr zu Hause ___.",
+          "options": [
+            "geblieben bin",
+            "geblieben ist",
+            "geblieben seid",
+            "geblieben sind"
+          ],
+          "answer": "geblieben seid",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-6",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „die Gäste“ mit ankommen.",
+          "context": "Die Gäste melden, dass sie pünktlich ___.",
+          "options": [
+            "angekommen bin",
+            "angekommen bist",
+            "angekommen ist",
+            "angekommen sind"
+          ],
+          "answer": "angekommen sind",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-7",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „ich“ mit aufstehen.",
+          "context": "Ich sage, dass ich früh ___.",
+          "options": [
+            "aufgestanden bin",
+            "aufgestanden bist",
+            "aufgestanden ist",
+            "aufgestanden sind"
+          ],
+          "answer": "aufgestanden bin",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-8",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „du“ mit einschlafen.",
+          "context": "Du sagst, dass du schnell ___.",
+          "options": [
+            "eingeschlafen bin",
+            "eingeschlafen bist",
+            "eingeschlafen ist",
+            "eingeschlafen seid"
+          ],
+          "answer": "eingeschlafen bist",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-9",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „das Kind“ mit wachsen.",
+          "context": "Die Mutter sagt, dass das Kind schnell ___.",
+          "options": [
+            "gewachsen bin",
+            "gewachsen bist",
+            "gewachsen ist",
+            "gewachsen sind"
+          ],
+          "answer": "gewachsen ist",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        },
+        {
+          "id": "de-perfekt-sein-choice-editorial-10",
+          "tenses": [
+            "perfekt-sein"
+          ],
+          "focus": "Perfekt mit sein",
+          "prompt": "Wähle die passende Form für „wir“ mit zurückkommen.",
+          "context": "Wir erzählen, dass wir spät ___.",
+          "options": [
+            "zurückgekommen bin",
+            "zurückgekommen ist",
+            "zurückgekommen seid",
+            "zurückgekommen sind"
+          ],
+          "answer": "zurückgekommen sind",
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-perfekt-sein-micro-editorial-1",
+          "title": "Ankunft in Berlin",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „ankommen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wir hören, dass Nora am Samstag in Berlin ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-1-gap",
+              "tense": "perfekt-sein",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-2",
+          "title": "Der Nachtzug",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „fahren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Sie wissen, dass wir mit dem Nachtzug ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-2-gap",
+              "tense": "perfekt-sein",
+              "verb": "fahren",
+              "answers": [
+                "gefahren sind"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-3",
+          "title": "Das müde Kind",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „einschlafen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Gut, dass das Kind sofort ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-3-gap",
+              "tense": "perfekt-sein",
+              "verb": "einschlafen",
+              "answers": [
+                "eingeschlafen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-4",
+          "title": "Der frühe Aufbruch",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „aufbrechen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Lina sagt, dass sie vor Sonnenaufgang ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-4-gap",
+              "tense": "perfekt-sein",
+              "verb": "aufbrechen",
+              "answers": [
+                "aufgebrochen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-5",
+          "title": "Der nasse Boden",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „schmelzen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Der Hausmeister merkt, dass das Eis vollständig ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-5-gap",
+              "tense": "perfekt-sein",
+              "verb": "schmelzen",
+              "answers": [
+                "geschmolzen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-6",
+          "title": "Die Rückkehr",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „zurückkehren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Amir bestätigt, dass seine Eltern gestern ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-6-gap",
+              "tense": "perfekt-sein",
+              "verb": "zurückkehren",
+              "answers": [
+                "zurückgekehrt sind"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-7",
+          "title": "Das schnelle Wachstum",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „wachsen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Ärztin erklärt, dass das Kind stark ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-7-gap",
+              "tense": "perfekt-sein",
+              "verb": "wachsen",
+              "answers": [
+                "gewachsen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-8",
+          "title": "Der Treppensturz",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „stürzen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Sie berichtet, dass ihr Bruder auf der Treppe ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-8-gap",
+              "tense": "perfekt-sein",
+              "verb": "stürzen",
+              "answers": [
+                "gestürzt ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-9",
+          "title": "Der Flug nach Oslo",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „fliegen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Gäste sagen, dass sie direkt nach Oslo ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-9-gap",
+              "tense": "perfekt-sein",
+              "verb": "fliegen",
+              "answers": [
+                "geflogen sind"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-micro-editorial-10",
+          "title": "Das verstummte Radio",
+          "focus": "Perfekt mit sein",
+          "instruction": "Konjugiere „verstummen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Plötzlich merken wir, dass das alte Radio ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-micro-editorial-10-gap",
+              "tense": "perfekt-sein",
+              "verb": "verstummen",
+              "answers": [
+                "verstummt ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-perfekt-sein-long-editorial-1",
+          "title": "Die Bergtour",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Gruppe berichtet, dass sie früh ",
+            "; danach sagt sie, dass sie am See ",
+            "; schließlich bestätigt sie, dass alle sicher ins Tal ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-1-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "losgehen",
+              "answers": [
+                "losgegangen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-1-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-1-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "zurückkehren",
+              "answers": [
+                "zurückgekehrt sind"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-2",
+          "title": "Der erste Schultag",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Mutter erzählt, dass ihr Sohn früh ",
+            "; dann sagt sie, dass er allein in den Bus ",
+            "; zuletzt bestätigt sie, dass er pünktlich ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-2-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "aufstehen",
+              "answers": [
+                "aufgestanden ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-2-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "einsteigen",
+              "answers": [
+                "eingestiegen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-2-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-3",
+          "title": "Der Wintermorgen",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Nachbarin merkt, dass die Temperatur stark ",
+            "; anschließend sieht sie, dass der Teich ",
+            "; mittags stellt sie fest, dass das Eis wieder ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-3-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "sinken",
+              "answers": [
+                "gesunken ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-3-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "zufrieren",
+              "answers": [
+                "zugefroren ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-3-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "schmelzen",
+              "answers": [
+                "geschmolzen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-4",
+          "title": "Die Dienstreise",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mara sagt, dass sie nach Wien ",
+            "; danach berichtet sie, dass sie zum Hotel ",
+            "; am Abend bestätigt sie, dass ihre Kollegin ebenfalls ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-4-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "fliegen",
+              "answers": [
+                "geflogen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-4-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "gehen",
+              "answers": [
+                "gegangen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-4-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-5",
+          "title": "Der Stromausfall",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Techniker erklärt, dass das Licht plötzlich ",
+            "; danach sagt er, dass alle Geräte ",
+            "; schließlich bestätigt er, dass das System wieder ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-5-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "ausgehen",
+              "answers": [
+                "ausgegangen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-5-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "stehen bleiben",
+              "answers": [
+                "stehen geblieben sind"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-5-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "anspringen",
+              "answers": [
+                "angesprungen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-6",
+          "title": "Der Marathon",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Läuferin erzählt, dass sie langsam ",
+            "; nach zehn Kilometern sagt sie, dass sie schneller ",
+            "; im Ziel bestätigt sie, dass sie unter vier Stunden ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-6-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "starten",
+              "answers": [
+                "gestartet ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-6-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "werden",
+              "answers": [
+                "geworden ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-6-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "bleiben",
+              "answers": [
+                "geblieben ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-7",
+          "title": "Der Flughafentag",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Familie berichtet, dass sie früh ",
+            "; dann sagt sie, dass sie in Frankfurt ",
+            "; schließlich bestätigt sie, dass sie nach Kanada ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-7-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "abfahren",
+              "answers": [
+                "abgefahren ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-7-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "umsteigen",
+              "answers": [
+                "umgestiegen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-7-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "weiterfliegen",
+              "answers": [
+                "weitergeflogen ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-8",
+          "title": "Die Genesung",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Arzt erklärt, dass das Fieber ",
+            "; danach sagt er, dass die Patientin kräftiger ",
+            "; schließlich bestätigt er, dass sie vollständig gesund ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-8-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "sinken",
+              "answers": [
+                "gesunken ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-8-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "werden",
+              "answers": [
+                "geworden ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-8-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "werden",
+              "answers": [
+                "geworden ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-9",
+          "title": "Die Evakuierung",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Feuerwehr berichtet, dass der Alarm ",
+            "; dann sagt sie, dass alle Bewohner nach draußen ",
+            "; zuletzt bestätigt sie, dass niemand im Haus ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-9-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "losgehen",
+              "answers": [
+                "losgegangen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-9-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "laufen",
+              "answers": [
+                "gelaufen sind"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-9-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "bleiben",
+              "answers": [
+                "geblieben ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-sein-long-editorial-10",
+          "title": "Der Hafenspaziergang",
+          "focus": "Perfekt mit sein",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Juri erzählt, dass er zum Hafen ",
+            "; dort sagt er, dass er lange am Wasser ",
+            "; später bestätigt er, dass er durch die Altstadt ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-long-editorial-10-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "radeln",
+              "answers": [
+                "geradelt ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-10-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "bleiben",
+              "answers": [
+                "geblieben ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-long-editorial-10-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "zurückkehren",
+              "answers": [
+                "zurückgekehrt ist"
+              ]
+            }
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-perfekt-sein-independent-error-1",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 1",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Nora schreibt, dass sie sicher in Basel ",
+              "form": "angekommen ist",
+              "id": "de-perfekt-sein-independent-error-1-token-1"
+            },
+            {
+              "before": ". Das Kind ist froh, dass es schnell ",
+              "form": "eingeschlafen ist",
+              "id": "de-perfekt-sein-independent-error-1-token-2"
+            },
+            {
+              "before": ". Der Pegel zeigt, dass das Wasser stark ",
+              "form": "gestiegen hat",
+              "id": "de-perfekt-sein-independent-error-1-token-3"
+            },
+            {
+              "before": ". Der Zugbegleiter bestätigt, dass der Zug pünktlich ",
+              "form": "abgefahren ist",
+              "id": "de-perfekt-sein-independent-error-1-token-4"
+            },
+            {
+              "before": ". Mila erzählt, dass sie zu Hause ",
+              "form": "geblieben ist",
+              "id": "de-perfekt-sein-independent-error-1-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-1-token-3",
+          "answers": [
+            "gestiegen ist"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-2",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 2",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Wanderer berichten, dass sie früh ",
+              "form": "aufgebrochen sind",
+              "id": "de-perfekt-sein-independent-error-2-token-1"
+            },
+            {
+              "before": ". Wir erzählen, dass wir am Fluss entlang ",
+              "form": "gegangen sind",
+              "id": "de-perfekt-sein-independent-error-2-token-2"
+            },
+            {
+              "before": ". Ihr sagt, dass ihr bis zur Hütte ",
+              "form": "gelaufen seid",
+              "id": "de-perfekt-sein-independent-error-2-token-3"
+            },
+            {
+              "before": ". Die Blätter sind braun, weil sie früh ",
+              "form": "gefallen haben",
+              "id": "de-perfekt-sein-independent-error-2-token-4"
+            },
+            {
+              "before": ". Die Gäste melden, dass sie gerade ",
+              "form": "zurückgekommen sind",
+              "id": "de-perfekt-sein-independent-error-2-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-2-token-4",
+          "answers": [
+            "gefallen sind"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-3",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 3",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Das Kind ist froh, dass es schnell ",
+              "form": "eingeschlafen ist",
+              "id": "de-perfekt-sein-independent-error-3-token-1"
+            },
+            {
+              "before": ". Der Pegel zeigt, dass das Wasser stark ",
+              "form": "gestiegen ist",
+              "id": "de-perfekt-sein-independent-error-3-token-2"
+            },
+            {
+              "before": ". Der Zugbegleiter bestätigt, dass der Zug pünktlich ",
+              "form": "abgefahren ist",
+              "id": "de-perfekt-sein-independent-error-3-token-3"
+            },
+            {
+              "before": ". Mila erzählt, dass sie zu Hause ",
+              "form": "geblieben ist",
+              "id": "de-perfekt-sein-independent-error-3-token-4"
+            },
+            {
+              "before": ". Nora schreibt, dass sie sicher in Basel ",
+              "form": "angekommen hat",
+              "id": "de-perfekt-sein-independent-error-3-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-3-token-5",
+          "answers": [
+            "angekommen ist"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-4",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 4",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wir erzählen, dass wir am Fluss entlang ",
+              "form": "gegangen haben",
+              "id": "de-perfekt-sein-independent-error-4-token-1"
+            },
+            {
+              "before": ". Ihr sagt, dass ihr bis zur Hütte ",
+              "form": "gelaufen seid",
+              "id": "de-perfekt-sein-independent-error-4-token-2"
+            },
+            {
+              "before": ". Die Blätter sind braun, weil sie früh ",
+              "form": "gefallen sind",
+              "id": "de-perfekt-sein-independent-error-4-token-3"
+            },
+            {
+              "before": ". Die Gäste melden, dass sie gerade ",
+              "form": "zurückgekommen sind",
+              "id": "de-perfekt-sein-independent-error-4-token-4"
+            },
+            {
+              "before": ". Die Wanderer berichten, dass sie früh ",
+              "form": "aufgebrochen sind",
+              "id": "de-perfekt-sein-independent-error-4-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-4-token-1",
+          "answers": [
+            "gegangen sind"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-5",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 5",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Der Pegel zeigt, dass das Wasser stark ",
+              "form": "gestiegen ist",
+              "id": "de-perfekt-sein-independent-error-5-token-1"
+            },
+            {
+              "before": ". Der Zugbegleiter bestätigt, dass der Zug pünktlich ",
+              "form": "abgefahren hat",
+              "id": "de-perfekt-sein-independent-error-5-token-2"
+            },
+            {
+              "before": ". Mila erzählt, dass sie zu Hause ",
+              "form": "geblieben ist",
+              "id": "de-perfekt-sein-independent-error-5-token-3"
+            },
+            {
+              "before": ". Nora schreibt, dass sie sicher in Basel ",
+              "form": "angekommen ist",
+              "id": "de-perfekt-sein-independent-error-5-token-4"
+            },
+            {
+              "before": ". Das Kind ist froh, dass es schnell ",
+              "form": "eingeschlafen ist",
+              "id": "de-perfekt-sein-independent-error-5-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-5-token-2",
+          "answers": [
+            "abgefahren ist"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-6",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 6",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Ihr sagt, dass ihr bis zur Hütte ",
+              "form": "gelaufen seid",
+              "id": "de-perfekt-sein-independent-error-6-token-1"
+            },
+            {
+              "before": ". Die Blätter sind braun, weil sie früh ",
+              "form": "gefallen sind",
+              "id": "de-perfekt-sein-independent-error-6-token-2"
+            },
+            {
+              "before": ". Die Gäste melden, dass sie gerade ",
+              "form": "zurückgekommen haben",
+              "id": "de-perfekt-sein-independent-error-6-token-3"
+            },
+            {
+              "before": ". Die Wanderer berichten, dass sie früh ",
+              "form": "aufgebrochen sind",
+              "id": "de-perfekt-sein-independent-error-6-token-4"
+            },
+            {
+              "before": ". Wir erzählen, dass wir am Fluss entlang ",
+              "form": "gegangen sind",
+              "id": "de-perfekt-sein-independent-error-6-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-6-token-3",
+          "answers": [
+            "zurückgekommen sind"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-7",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 7",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Der Zugbegleiter bestätigt, dass der Zug pünktlich ",
+              "form": "abgefahren ist",
+              "id": "de-perfekt-sein-independent-error-7-token-1"
+            },
+            {
+              "before": ". Mila erzählt, dass sie zu Hause ",
+              "form": "geblieben ist",
+              "id": "de-perfekt-sein-independent-error-7-token-2"
+            },
+            {
+              "before": ". Nora schreibt, dass sie sicher in Basel ",
+              "form": "angekommen ist",
+              "id": "de-perfekt-sein-independent-error-7-token-3"
+            },
+            {
+              "before": ". Das Kind ist froh, dass es schnell ",
+              "form": "eingeschlafen hat",
+              "id": "de-perfekt-sein-independent-error-7-token-4"
+            },
+            {
+              "before": ". Der Pegel zeigt, dass das Wasser stark ",
+              "form": "gestiegen ist",
+              "id": "de-perfekt-sein-independent-error-7-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-7-token-4",
+          "answers": [
+            "eingeschlafen ist"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-8",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 8",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Blätter sind braun, weil sie früh ",
+              "form": "gefallen sind",
+              "id": "de-perfekt-sein-independent-error-8-token-1"
+            },
+            {
+              "before": ". Die Gäste melden, dass sie gerade ",
+              "form": "zurückgekommen sind",
+              "id": "de-perfekt-sein-independent-error-8-token-2"
+            },
+            {
+              "before": ". Die Wanderer berichten, dass sie früh ",
+              "form": "aufgebrochen sind",
+              "id": "de-perfekt-sein-independent-error-8-token-3"
+            },
+            {
+              "before": ". Wir erzählen, dass wir am Fluss entlang ",
+              "form": "gegangen sind",
+              "id": "de-perfekt-sein-independent-error-8-token-4"
+            },
+            {
+              "before": ". Ihr sagt, dass ihr bis zur Hütte ",
+              "form": "gelaufen habt",
+              "id": "de-perfekt-sein-independent-error-8-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-8-token-5",
+          "answers": [
+            "gelaufen seid"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-9",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 9",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Mila erzählt, dass sie zu Hause ",
+              "form": "geblieben hat",
+              "id": "de-perfekt-sein-independent-error-9-token-1"
+            },
+            {
+              "before": ". Nora schreibt, dass sie sicher in Basel ",
+              "form": "angekommen ist",
+              "id": "de-perfekt-sein-independent-error-9-token-2"
+            },
+            {
+              "before": ". Das Kind ist froh, dass es schnell ",
+              "form": "eingeschlafen ist",
+              "id": "de-perfekt-sein-independent-error-9-token-3"
+            },
+            {
+              "before": ". Der Pegel zeigt, dass das Wasser stark ",
+              "form": "gestiegen ist",
+              "id": "de-perfekt-sein-independent-error-9-token-4"
+            },
+            {
+              "before": ". Der Zugbegleiter bestätigt, dass der Zug pünktlich ",
+              "form": "abgefahren ist",
+              "id": "de-perfekt-sein-independent-error-9-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-9-token-1",
+          "answers": [
+            "geblieben ist"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-sein-independent-error-10",
+          "tense": "perfekt-sein",
+          "title": "Korrekturrunde · 10",
+          "focus": "Perfekt mit sein",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Gäste melden, dass sie gerade ",
+              "form": "zurückgekommen sind",
+              "id": "de-perfekt-sein-independent-error-10-token-1"
+            },
+            {
+              "before": ". Die Wanderer berichten, dass sie früh ",
+              "form": "aufgebrochen haben",
+              "id": "de-perfekt-sein-independent-error-10-token-2"
+            },
+            {
+              "before": ". Wir erzählen, dass wir am Fluss entlang ",
+              "form": "gegangen sind",
+              "id": "de-perfekt-sein-independent-error-10-token-3"
+            },
+            {
+              "before": ". Ihr sagt, dass ihr bis zur Hütte ",
+              "form": "gelaufen seid",
+              "id": "de-perfekt-sein-independent-error-10-token-4"
+            },
+            {
+              "before": ". Die Blätter sind braun, weil sie früh ",
+              "form": "gefallen sind",
+              "id": "de-perfekt-sein-independent-error-10-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-sein-independent-error-10-token-2",
+          "answers": [
+            "aufgebrochen sind"
+          ],
+          "explanation": "Ortswechsel und Zustandsänderungen bilden das Perfekt meist mit „sein“; im Nebensatz stehen Partizip und Hilfsverb gemeinsam am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-perfekt-sein-separation-1",
+          "tense": "perfekt-sein",
+          "title": "aufstehen · 1",
+          "focus": "perfekt-sein",
+          "verb": "aufstehen",
+          "separation": "separable",
+          "prompt": "Mila erzählt, dass sie sehr früh ___.",
+          "answers": [
+            "Mila erzählt, dass sie sehr früh aufgestanden ist.",
+            "Mila erzählt, dass sie sehr früh aufgestanden ist"
+          ],
+          "explanation": "„aufstehen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-sein-separation-2",
+          "tense": "perfekt-sein",
+          "title": "geschehen · 2",
+          "focus": "perfekt-sein",
+          "verb": "geschehen",
+          "separation": "inseparable",
+          "prompt": "Niemand weiß genau, was in der Nacht ___.",
+          "answers": [
+            "Niemand weiß genau, was in der Nacht geschehen ist.",
+            "Niemand weiß genau, was in der Nacht geschehen ist"
+          ],
+          "explanation": "„geschehen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-sein-separation-3",
+          "tense": "perfekt-sein",
+          "title": "erscheinen · 3",
+          "focus": "perfekt-sein",
+          "verb": "erscheinen",
+          "separation": "inseparable",
+          "prompt": "Die Autorin bestätigt, dass ihr neuer Roman ___.",
+          "answers": [
+            "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist.",
+            "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist"
+          ],
+          "explanation": "„erscheinen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-sein-separation-4",
+          "tense": "perfekt-sein",
+          "title": "abfahren · 4",
+          "focus": "perfekt-sein",
+          "verb": "abfahren",
+          "separation": "separable",
+          "prompt": "Der Zugbegleiter bestätigt, dass der Zug ___.",
+          "answers": [
+            "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist.",
+            "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist"
+          ],
+          "explanation": "„abfahren“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-sein-separation-5",
+          "tense": "perfekt-sein",
+          "title": "verunglücken · 5",
+          "focus": "perfekt-sein",
+          "verb": "verunglücken",
+          "separation": "inseparable",
+          "prompt": "Die Zeitung berichtet, dass ein Fahrer ___.",
+          "answers": [
+            "Die Zeitung berichtet, dass ein Fahrer verunglückt ist.",
+            "Die Zeitung berichtet, dass ein Fahrer verunglückt ist"
+          ],
+          "explanation": "„verunglücken“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-sein-separation-6",
+          "tense": "perfekt-sein",
+          "title": "ausgehen · 6",
+          "focus": "perfekt-sein",
+          "verb": "ausgehen",
+          "separation": "separable",
+          "prompt": "Wir sagen, dass wir gestern zusammen ___.",
+          "answers": [
+            "Wir sagen, dass wir gestern zusammen ausgegangen sind.",
+            "Wir sagen, dass wir gestern zusammen ausgegangen sind"
+          ],
+          "explanation": "„ausgehen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-sein-separation-7",
+          "tense": "perfekt-sein",
+          "title": "entkommen · 7",
+          "focus": "perfekt-sein",
+          "verb": "entkommen",
+          "separation": "inseparable",
+          "prompt": "Die Polizei meldet, dass das Tier ___.",
+          "answers": [
+            "Die Polizei meldet, dass das Tier entkommen ist.",
+            "Die Polizei meldet, dass das Tier entkommen ist"
+          ],
+          "explanation": "„entkommen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-sein-separation-8",
+          "tense": "perfekt-sein",
+          "title": "zurückkehren · 8",
+          "focus": "perfekt-sein",
+          "verb": "zurückkehren",
+          "separation": "separable",
+          "prompt": "Die Wanderer melden, dass sie sicher ___.",
+          "answers": [
+            "Die Wanderer melden, dass sie sicher zurückgekehrt sind.",
+            "Die Wanderer melden, dass sie sicher zurückgekehrt sind"
+          ],
+          "explanation": "„zurückkehren“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-sein-separation-9",
+          "tense": "perfekt-sein",
+          "title": "ankommen · 9",
+          "focus": "perfekt-sein",
+          "verb": "ankommen",
+          "separation": "separable",
+          "prompt": "Nora schreibt, dass sie pünktlich ___.",
+          "answers": [
+            "Nora schreibt, dass sie pünktlich angekommen ist.",
+            "Nora schreibt, dass sie pünktlich angekommen ist"
+          ],
+          "explanation": "„ankommen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-sein-separation-10",
+          "tense": "perfekt-sein",
+          "title": "verschwinden · 10",
+          "focus": "perfekt-sein",
+          "verb": "verschwinden",
+          "separation": "inseparable",
+          "prompt": "Der Hausmeister berichtet, dass der Schlüssel ___.",
+          "answers": [
+            "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist.",
+            "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist"
+          ],
+          "explanation": "„verschwinden“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-perfekt-sein-written-final-story",
+          "title": "Eine Reise durch die Alpen",
+          "focus": "perfekt-sein",
+          "instruction": "Lies die ganze Geschichte. Ergänze alle vollständigen Verbgruppen im Perfekt mit „sein“; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Nora erzählt, dass sie am Freitag sehr früh ",
+            ". Ihr Bruder berichtet, dass er erst später am Bahnhof ",
+            ". Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ",
+            ". Dort erzählt Nora, dass sie sofort in einen Regionalzug ",
+            ". Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ",
+            ". Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ",
+            ". Unterwegs merken alle, dass das Wetter plötzlich schlechter ",
+            ". Der Leiter bestätigt jedoch, dass niemand ",
+            ". Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ",
+            ". Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-1",
+              "tense": "perfekt-sein",
+              "verb": "aufstehen",
+              "answers": [
+                "aufgestanden ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-2",
+              "tense": "perfekt-sein",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-3",
+              "tense": "perfekt-sein",
+              "verb": "fahren",
+              "answers": [
+                "gefahren sind"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-4",
+              "tense": "perfekt-sein",
+              "verb": "umsteigen",
+              "answers": [
+                "umgestiegen ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-5",
+              "tense": "perfekt-sein",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen sind"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-6",
+              "tense": "perfekt-sein",
+              "verb": "gehen",
+              "answers": [
+                "gegangen sind"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-7",
+              "tense": "perfekt-sein",
+              "verb": "werden",
+              "answers": [
+                "geworden ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-8",
+              "tense": "perfekt-sein",
+              "verb": "stehen bleiben",
+              "answers": [
+                "stehen geblieben ist"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-9",
+              "tense": "perfekt-sein",
+              "verb": "gelangen",
+              "answers": [
+                "gelangt sind"
+              ]
+            },
+            {
+              "id": "de-perfekt-sein-written-final-story-gap-10",
+              "tense": "perfekt-sein",
+              "verb": "absteigen",
+              "answers": [
+                "abgestiegen ist"
+              ]
+            }
+          ],
+          "explanation": "Jede Lücke enthält Partizip II und die zum Subjekt passende Präsensform von „sein“. Bewegung, Ortswechsel und Zustandsänderung lizenzieren das Hilfsverb."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-1",
+        "level": 1,
+        "lemma": "gehen",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-1",
+        "targetForm": "perfekt-sein",
+        "person": "first",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "gegangen bin",
+        "accepted": [
+          "gegangen bin"
+        ],
+        "distractorRationale": [
+          "„gegangen bist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gegangen ist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gegangen sind“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "bc0bd43a15386270e80cc34c53dbc3e1b7445088776c6549c4b0480ce1238a88"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-2",
+        "level": 1,
+        "lemma": "kommen",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-2",
+        "targetForm": "perfekt-sein",
+        "person": "second",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "gekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekommen bist",
+        "accepted": [
+          "gekommen bist"
+        ],
+        "distractorRationale": [
+          "„gekommen bin“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekommen ist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekommen seid“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "c9d0f81887edc082c6617cd6cc45797b973261b29edbcf5cc771d127d9cee526"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-3",
+        "level": 1,
+        "lemma": "fahren",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-3",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefahren ist",
+        "accepted": [
+          "gefahren ist"
+        ],
+        "distractorRationale": [
+          "„gefahren bin“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gefahren bist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gefahren sind“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "0bfeca67c6cdc25ae352c40d5638258dde56818e3ddd654931b0b1c0ec8955c4"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-4",
+        "level": 1,
+        "lemma": "laufen",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-4",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gelaufen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelaufen sind",
+        "accepted": [
+          "gelaufen sind"
+        ],
+        "distractorRationale": [
+          "„gelaufen bin“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gelaufen ist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gelaufen seid“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "3307f2f281f0f5a2cd8fe3cc9af86dc7b019c22444606bdec3f2cb2ebd4345cf"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-5",
+        "level": 1,
+        "lemma": "bleiben",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-5",
+        "targetForm": "perfekt-sein",
+        "person": "second",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "geblieben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geblieben seid",
+        "accepted": [
+          "geblieben seid"
+        ],
+        "distractorRationale": [
+          "„geblieben bin“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„geblieben ist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„geblieben sind“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "c6379e929f10aedd8d30e4ccb9db123c0b39aa31a279ca4e5261fc97079a8410"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-6",
+        "level": 1,
+        "lemma": "ankommen",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-6",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "angekommen",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "angekommen sind",
+        "accepted": [
+          "angekommen sind"
+        ],
+        "distractorRationale": [
+          "„angekommen bin“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„angekommen bist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„angekommen ist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "50fa8375f2f3f783387e5f5072f1178eef0f5754d4c1aad987eea70861265459"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-7",
+        "level": 1,
+        "lemma": "aufstehen",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-7",
+        "targetForm": "perfekt-sein",
+        "person": "first",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "aufgestanden",
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "aufgestanden bin",
+        "accepted": [
+          "aufgestanden bin"
+        ],
+        "distractorRationale": [
+          "„aufgestanden bist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„aufgestanden ist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„aufgestanden sind“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "06f3c07beb29837c468967fa274fcd5294bef8f18b088e838b63f23e88746882"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-8",
+        "level": 1,
+        "lemma": "einschlafen",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-8",
+        "targetForm": "perfekt-sein",
+        "person": "second",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "eingeschlafen",
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "eingeschlafen bist",
+        "accepted": [
+          "eingeschlafen bist"
+        ],
+        "distractorRationale": [
+          "„eingeschlafen bin“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„eingeschlafen ist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„eingeschlafen seid“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "645759f09316bd644823f9751468a9ad0728219aa19b95e2b7fe387e8c341155"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-9",
+        "level": 1,
+        "lemma": "wachsen",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-9",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "gewachsen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gewachsen ist",
+        "accepted": [
+          "gewachsen ist"
+        ],
+        "distractorRationale": [
+          "„gewachsen bin“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gewachsen bist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gewachsen sind“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "d00f74f63f4d72602892d8d1577a4289908d0a61bf976140db1595d1620dd566"
+      },
+      {
+        "itemId": "de-perfekt-sein-choice-editorial-10",
+        "level": 1,
+        "lemma": "zurückkommen",
+        "senseId": "perfekt-sein:perfekt-sein-choice-editorial-10",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "zurückgekommen",
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "zurückgekommen sind",
+        "accepted": [
+          "zurückgekommen sind"
+        ],
+        "distractorRationale": [
+          "„zurückgekommen bin“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„zurückgekommen ist“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„zurückgekommen seid“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "e9c5020f2104a1d59f76f3dd4775501358b248c489ea2669e31e1401a75e416c"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-1",
+        "level": 2,
+        "lemma": "ankommen",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-1",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "angekommen",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "angekommen ist",
+        "accepted": [
+          "angekommen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "42a4dbdcb3f0834ddc08f7db18a8a70ccdbce8f5b0b761d51475414d841f6b9d"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-2",
+        "level": 2,
+        "lemma": "fahren",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-2",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefahren sind",
+        "accepted": [
+          "gefahren sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2063849edd39f8133e50b06d6b2de2ae3cf980d0e1d29f9ebde081fdbcfb3100"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-3",
+        "level": 2,
+        "lemma": "einschlafen",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-3",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "eingeschlafen",
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "eingeschlafen ist",
+        "accepted": [
+          "eingeschlafen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f64b9bac06135caa510a0f30ecabee69a637397f0cc6fd0329a5b9707dbf9c98"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-4",
+        "level": 2,
+        "lemma": "aufbrechen",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-4",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "aufgebrochen",
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "aufgebrochen ist",
+        "accepted": [
+          "aufgebrochen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "cb206eed3ed4126fcde3f63d0606c1cd6cdf576763f850168d5b1930487ec0f9"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-5",
+        "level": 2,
+        "lemma": "schmelzen",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-5",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "geschmolzen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschmolzen ist",
+        "accepted": [
+          "geschmolzen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "85aff7a6b141a64b2b484028e493257ad731c67899886c947917d5e8ecbb5d79"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-6",
+        "level": 2,
+        "lemma": "zurückkehren",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-6",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "zurückgekehrt",
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "zurückgekehrt sind",
+        "accepted": [
+          "zurückgekehrt sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "61e3f5fb5a7330e2511c6c6e6a20fceb97d4447330e0876c56358ba61e83caba"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-7",
+        "level": 2,
+        "lemma": "wachsen",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-7",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "gewachsen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gewachsen ist",
+        "accepted": [
+          "gewachsen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "82b24416666c264717860350355b62c4f510059e2e4d374c72b0f023ee2e35c1"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-8",
+        "level": 2,
+        "lemma": "stürzen",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-8",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gestürzt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gestürzt ist",
+        "accepted": [
+          "gestürzt ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "9e013d696063a56851cf57323302544ef43f226cb739d7982f4c244bd1c60589"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-9",
+        "level": 2,
+        "lemma": "fliegen",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-9",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "geflogen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geflogen sind",
+        "accepted": [
+          "geflogen sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "36bcaa6a7dbcbcc25e04f1da50a74d3bf6e99a8241acc61ef78812e7b9dee061"
+      },
+      {
+        "itemId": "de-perfekt-sein-micro-editorial-10",
+        "level": 2,
+        "lemma": "verstummen",
+        "senseId": "perfekt-sein:perfekt-sein-micro-editorial-10",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "verstummt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "verstummt ist",
+        "accepted": [
+          "verstummt ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "01751806e518adfe22864a86c91e0e2f91ecadf93f1935ad21f8b433c6ad4f0d"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-1",
+        "level": 3,
+        "lemma": "losgehen; ankommen; zurückkehren",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-1",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "losgegangen ist | angekommen ist | zurückgekehrt sind",
+        "accepted": [
+          "losgegangen ist",
+          "angekommen ist",
+          "zurückgekehrt sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "26302067936bba32e876c7b0f2c0dfd209172ab796832982ac3200a4f3384b53"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-2",
+        "level": 3,
+        "lemma": "aufstehen; einsteigen; ankommen",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-2",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "aufgestanden ist | eingestiegen ist | angekommen ist",
+        "accepted": [
+          "aufgestanden ist",
+          "eingestiegen ist",
+          "angekommen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "95aaaff59a75f159e85d268c6354f006ef9855d796dd1b780d90466cf947a373"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-3",
+        "level": 3,
+        "lemma": "sinken; zufrieren; schmelzen",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-3",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "gesunken; geschmolzen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesunken ist | zugefroren ist | geschmolzen ist",
+        "accepted": [
+          "gesunken ist",
+          "zugefroren ist",
+          "geschmolzen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "57dff4122fb2ed7779d216e0538f9353c24a1f34137ecabe3ec7aca656a4975d"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-4",
+        "level": 3,
+        "lemma": "fliegen; gehen; ankommen",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-4",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "geflogen; gegangen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geflogen ist | gegangen ist | angekommen ist",
+        "accepted": [
+          "geflogen ist",
+          "gegangen ist",
+          "angekommen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "91208080eabac3777daf67a844b2c57af6fb4ef6441f4cbe65a1f9103c60365d"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-5",
+        "level": 3,
+        "lemma": "ausgehen; stehen bleiben; anspringen",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-5",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "ausgegangen; stehen geblieben; angesprungen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "ausgegangen ist | stehen geblieben sind | angesprungen ist",
+        "accepted": [
+          "ausgegangen ist",
+          "stehen geblieben sind",
+          "angesprungen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7a2aba3492f7b8d109ff1b17c6c1b9ac02ff62246b54ea2f1d8ebbb72bde1c89"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-6",
+        "level": 3,
+        "lemma": "starten; werden; bleiben",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-6",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "geworden; geblieben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gestartet ist | geworden ist | geblieben ist",
+        "accepted": [
+          "gestartet ist",
+          "geworden ist",
+          "geblieben ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f3e01fea603eaab10509715ae177ddfb423c9a6a6d8e0178421d77b7517c443a"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-7",
+        "level": 3,
+        "lemma": "abfahren; umsteigen; weiterfliegen",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-7",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "abgefahren ist | umgestiegen ist | weitergeflogen ist",
+        "accepted": [
+          "abgefahren ist",
+          "umgestiegen ist",
+          "weitergeflogen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "9a7a077701816dedff2b8df0a5ec5d7f9328caad9474bcc61f4b79772afb449d"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-8",
+        "level": 3,
+        "lemma": "sinken; werden; werden",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-8",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "gesunken; geworden; geworden",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesunken ist | geworden ist | geworden ist",
+        "accepted": [
+          "gesunken ist",
+          "geworden ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "80b1d1e71e5177e22ed46a2be32339b8da2edc49b492639e307f5dcdb02b7615"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-9",
+        "level": 3,
+        "lemma": "losgehen; laufen; bleiben",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-9",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gelaufen; geblieben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "losgegangen ist | gelaufen sind | geblieben ist",
+        "accepted": [
+          "losgegangen ist",
+          "gelaufen sind",
+          "geblieben ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "d2c8f3c2855ddf5cd9fcc7d601b5eb7872a8d73acfdd46f4e7ab9181ac26deef"
+      },
+      {
+        "itemId": "de-perfekt-sein-long-editorial-10",
+        "level": 3,
+        "lemma": "radeln; bleiben; zurückkehren",
+        "senseId": "perfekt-sein:perfekt-sein-long-editorial-10",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "geblieben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geradelt ist | geblieben ist | zurückgekehrt ist",
+        "accepted": [
+          "geradelt ist",
+          "geblieben ist",
+          "zurückgekehrt ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "9d905a83660fa7f892d03fd56b87f75fb4a5c7bb843cd762a45a2c45b9634994"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-1",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 1",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-1",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gestiegen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gestiegen ist",
+        "accepted": [
+          "gestiegen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "148e127be07df7200053062a4e39bd7c6e37bd8b82d90e2218e26abb0d3f9e7d"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-2",
+        "level": 4,
+        "lemma": "fallen",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-2",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefallen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefallen sind",
+        "accepted": [
+          "gefallen sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "9c22c574ceaf2d14249141b9fd775f38c2c2fadeb5e605f3542ea848d2e64bee"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-3",
+        "level": 4,
+        "lemma": "kommen",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-3",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "angekommen ist",
+        "accepted": [
+          "angekommen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3bed7979e8db007c4737c2df130cda29fb08a30b708b6b2b363451c260f5a2ef"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-4",
+        "level": 4,
+        "lemma": "gehen",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-4",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "gegangen sind",
+        "accepted": [
+          "gegangen sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8d1a04990210da2e862ba5d682c6a16f431890a37401f8ba002b11e1c5e6ca32"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-5",
+        "level": 4,
+        "lemma": "fahren",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-5",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "abgefahren ist",
+        "accepted": [
+          "abgefahren ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2de04daf73e5f6af70f9e37fac0e411f69066b4c510605550f970b51aea96225"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-6",
+        "level": 4,
+        "lemma": "kommen",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-6",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "gekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "zurückgekommen sind",
+        "accepted": [
+          "zurückgekommen sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "47e7ef7e539ccf2a652afc52fe841f4f812b6d7c45f305ecb79512d4446baa36"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-7",
+        "level": 4,
+        "lemma": "einschlafen",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-7",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "eingeschlafen",
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "eingeschlafen ist",
+        "accepted": [
+          "eingeschlafen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3c68e603784f35058fbf44c4190e2b438a5f23e820e24bb604fa0e5fc281b762"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-8",
+        "level": 4,
+        "lemma": "laufen",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-8",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "gelaufen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelaufen seid",
+        "accepted": [
+          "gelaufen seid"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "dceab874ce1b9f147157648330b390fdc23b1e153773bf3f5e78f894af20b836"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-9",
+        "level": 4,
+        "lemma": "bleiben",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-9",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "geblieben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geblieben ist",
+        "accepted": [
+          "geblieben ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "ed614a96b458141f7a5b8e56885da50886fbfb081c7eafda8f3c296a94cf80c8"
+      },
+      {
+        "itemId": "de-perfekt-sein-independent-error-10",
+        "level": 4,
+        "lemma": "brechen",
+        "senseId": "perfekt-sein:perfekt-sein-independent-error-10",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "gebrochen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "aufgebrochen sind",
+        "accepted": [
+          "aufgebrochen sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "ced38e1f03b2dc30fd2a8d933b97bcf225483cf89df0caa17a4468791d57d90d"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-1",
+        "level": 5,
+        "lemma": "aufstehen",
+        "senseId": "perfekt-sein:perfekt-sein-separation-1",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "erzählt",
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "Mila erzählt, dass sie sehr früh aufgestanden ist. | Mila erzählt, dass sie sehr früh aufgestanden ist",
+        "accepted": [
+          "Mila erzählt, dass sie sehr früh aufgestanden ist.",
+          "Mila erzählt, dass sie sehr früh aufgestanden ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4c075074e600e8d66a43323d22efec8f565ca5e88c7026cc5c685b40e730ed3d"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-2",
+        "level": 5,
+        "lemma": "geschehen",
+        "senseId": "perfekt-sein:perfekt-sein-separation-2",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "geschehen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Niemand weiß genau, was in der Nacht geschehen ist. | Niemand weiß genau, was in der Nacht geschehen ist",
+        "accepted": [
+          "Niemand weiß genau, was in der Nacht geschehen ist.",
+          "Niemand weiß genau, was in der Nacht geschehen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3adc6138e92c5d17397d93bafe52802bd47e936e4721a5608932f3ae74335030"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-3",
+        "level": 5,
+        "lemma": "erscheinen",
+        "senseId": "perfekt-sein:perfekt-sein-separation-3",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "erschienen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist. | Die Autorin bestätigt, dass ihr neuer Roman erschienen ist",
+        "accepted": [
+          "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist.",
+          "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "49d447ccee0aba08889eb4b9678b9a85dd6b584d0649e700dd5d7c98bb3a173c"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-4",
+        "level": 5,
+        "lemma": "abfahren",
+        "senseId": "perfekt-sein:perfekt-sein-separation-4",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "bestätigt",
+        "separation": "separable",
+        "prefix": "ab",
+        "expectedUnit": "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist. | Der Zugbegleiter bestätigt, dass der Zug abgefahren ist",
+        "accepted": [
+          "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist.",
+          "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "fc2d3af540e1f9ba347a94ed53f6e5f2c060466977b366770a8aee1431e96126"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-5",
+        "level": 5,
+        "lemma": "verunglücken",
+        "senseId": "perfekt-sein:perfekt-sein-separation-5",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "verunglückt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Die Zeitung berichtet, dass ein Fahrer verunglückt ist. | Die Zeitung berichtet, dass ein Fahrer verunglückt ist",
+        "accepted": [
+          "Die Zeitung berichtet, dass ein Fahrer verunglückt ist.",
+          "Die Zeitung berichtet, dass ein Fahrer verunglückt ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4d9a0d3d620e1f541a852f7b8a0f9a1c9347a7a654fcd9cfeccd4ad62c58ba48"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-6",
+        "level": 5,
+        "lemma": "ausgehen",
+        "senseId": "perfekt-sein:perfekt-sein-separation-6",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "sagen",
+        "separation": "separable",
+        "prefix": "aus",
+        "expectedUnit": "Wir sagen, dass wir gestern zusammen ausgegangen sind. | Wir sagen, dass wir gestern zusammen ausgegangen sind",
+        "accepted": [
+          "Wir sagen, dass wir gestern zusammen ausgegangen sind.",
+          "Wir sagen, dass wir gestern zusammen ausgegangen sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e4c8326b05858ea1e41b85ee05959cb594392fa4b32d5817cc3a7437912bca70"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-7",
+        "level": 5,
+        "lemma": "entkommen",
+        "senseId": "perfekt-sein:perfekt-sein-separation-7",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "entkommen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Die Polizei meldet, dass das Tier entkommen ist. | Die Polizei meldet, dass das Tier entkommen ist",
+        "accepted": [
+          "Die Polizei meldet, dass das Tier entkommen ist.",
+          "Die Polizei meldet, dass das Tier entkommen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "18301f7b98fdbc5057de3a7321b545389fcfc3ee8b98800098dfb809fd15e077"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-8",
+        "level": 5,
+        "lemma": "zurückkehren",
+        "senseId": "perfekt-sein:perfekt-sein-separation-8",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "melden",
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "Die Wanderer melden, dass sie sicher zurückgekehrt sind. | Die Wanderer melden, dass sie sicher zurückgekehrt sind",
+        "accepted": [
+          "Die Wanderer melden, dass sie sicher zurückgekehrt sind.",
+          "Die Wanderer melden, dass sie sicher zurückgekehrt sind"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "eb03503741813a6864eec48183aef3dfef071a4f256309afd2fc3536d028d357"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-9",
+        "level": 5,
+        "lemma": "ankommen",
+        "senseId": "perfekt-sein:perfekt-sein-separation-9",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "directed-movement-or-sein-lexeme"
+        ],
+        "auxiliary": "sein",
+        "participle": "schreibt",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "Nora schreibt, dass sie pünktlich angekommen ist. | Nora schreibt, dass sie pünktlich angekommen ist",
+        "accepted": [
+          "Nora schreibt, dass sie pünktlich angekommen ist.",
+          "Nora schreibt, dass sie pünktlich angekommen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3657fefd43eb2cda05a58d23788cf60e7962e988ee8074657f7d77142f29d587"
+      },
+      {
+        "itemId": "de-perfekt-sein-separation-10",
+        "level": 5,
+        "lemma": "verschwinden",
+        "senseId": "perfekt-sein:perfekt-sein-separation-10",
+        "targetForm": "perfekt-sein",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state"
+        ],
+        "auxiliary": "sein",
+        "participle": "verschwunden",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist. | Der Hausmeister berichtet, dass der Schlüssel verschwunden ist",
+        "accepted": [
+          "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist.",
+          "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "b3b26a161925ae9b809fb29cb354b70925c9490550d2390978d649681bbfcb40"
+      },
+      {
+        "itemId": "de-perfekt-sein-written-final-story",
+        "level": 6,
+        "lemma": "aufstehen; ankommen; fahren; umsteigen; ankommen; gehen; werden; stehen bleiben; gelangen; absteigen",
+        "senseId": "perfekt-sein:perfekt-sein-written-final-story",
+        "targetForm": "perfekt-sein",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis mit gerichteter Bewegung, Zustandsänderung oder festem sein-Lexem",
+        "anchorIds": [
+          "change-of-state",
+          "completed-past-event"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren; gegangen; geworden; stehen geblieben; gelangt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "aufgestanden ist | angekommen ist | gefahren sind | umgestiegen ist | angekommen sind | gegangen sind | geworden ist | stehen geblieben ist | gelangt sind | abgestiegen ist",
+        "accepted": [
+          "aufgestanden ist",
+          "angekommen ist",
+          "gefahren sind",
+          "umgestiegen ist",
+          "angekommen sind",
+          "gegangen sind",
+          "geworden ist",
+          "stehen geblieben ist",
+          "gelangt sind",
+          "abgestiegen ist"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "456ca373f04849cf3f4aab0d09c5b5865aab37be4307d99cd38ddc6e0eeb12f2"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Bestimmung des Perfekthilfsverbs",
+        "url": "https://grammis.ids-mannheim.de/systematische-grammatik/1219",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Tempus",
+        "url": "https://grammis.ids-mannheim.de/progr%40mm/6905",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Infinitiv Perfekt",
+        "url": "https://grammis.ids-mannheim.de/terms/view/979",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "work-order-fingerprints",
+      "status": "PASS",
+      "detail": "El informe conserva las huellas exactas de la orden."
+    },
+    {
+      "id": "six-level-coverage",
+      "status": "PASS",
+      "detail": "Diez retos en niveles 1–5 y una historia final de diez huecos."
+    },
+    {
+      "id": "final-verbal-units",
+      "status": "PASS",
+      "detail": "Cada respuesta final cumple el mínimo de 2 palabras."
+    },
+    {
+      "id": "auxiliary-policy",
+      "status": "PASS",
+      "detail": "fixed-sein"
+    },
+    {
+      "id": "source-review",
+      "status": "PASS",
+      "detail": "Auxiliares y complejos verbales contrastados con grammis/IDS."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "PRESERVED-BASELINE",
+      "detail": "Los bancos de los niveles 1–5 se conservaron sin cambios."
+    },
+    {
+      "severity": "FIXED",
+      "code": "LEVEL-6-COMPLETE-UNITS",
+      "detail": "La historia final ahora coloca la unidad verbal completa dentro de cada hueco."
+    },
+    {
+      "severity": "FIXED",
+      "code": "UNAMBIGUOUS-SEIN-LEXEME",
+      "detail": "En de-perfekt-sein-long-editorial-5, stehen bleiben sustituye stillstehen; la respuesta inequívoca es stehen geblieben sind."
+    }
+  ],
+  "generatedAt": "2026-09-05T15:25:03.122Z",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3"
+}

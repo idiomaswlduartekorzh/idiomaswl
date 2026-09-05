@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "wuerde-form",
+  "baseCommit": "dab197cece8c940869c05a4426badd6e5f394db7",
+  "createdAt": "2026-09-05T15:30:08.812Z",
+  "baselineContentFingerprint": "f26845f4ded31c852959efc7c070776b5219605640a456ba1271e81afba3cf4c",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "c158450ee0c6969f6903ff5c74943869074d17df509e56fa081eb37ed3e0243d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "spec": {
+    "id": "wuerde-form",
+    "label": "würde + Infinitiv",
+    "sourceFile": "src/data/practica/german-would-editorial.ts",
+    "stage": "queued",
+    "cefr": "B1",
+    "construction": "finite würde + Infinitiv",
+    "auxiliaryPolicy": "fixed-wuerde",
+    "allowedAuxiliaries": [
+      "würde"
+    ],
+    "minimumFinalUnitTokens": 2,
+    "morphology": [
+      "würde agrees with person and number",
+      "lexical verb remains infinitive"
+    ],
+    "wordOrder": [
+      "finite würde in V2 and infinitive at clause end"
+    ],
+    "contextContract": [
+      "explicit hypothesis, polite request or conditional result",
+      "exclude a plain future reading"
+    ],
+    "separableContract": [
+      "the infinitive remains joined",
+      "classify without a detached-particle clue"
+    ],
+    "knownRisks": [
+      "confusion with Futur I",
+      "participial answer instead of infinitive"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-would-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

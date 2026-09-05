@@ -1,0 +1,1091 @@
+{
+  "schemaVersion": 1,
+  "formId": "plusquamperfekt",
+  "role": "auxiliary",
+  "verdict": "PASS",
+  "candidateFingerprint": "5d4e12be4a741f936027e538f9368a0e374b789736c9d95bb3359d37de372c52",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "4eded267f0a0d02134ca0f7ed05b5c84f4288799bc38b5143ff1283ab71954be",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "de-plusquamperfekt-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "machen",
+          "sense": "Vor dem Essen sagte ich, dass ich die Arbeit ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kaufen",
+          "sense": "Du hattest Brot, weil du es schon ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "lernen",
+          "sense": "Lena verstand alles, weil sie gut ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kochen",
+          "sense": "Als die Gäste kamen, erzählten wir, dass wir schon ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "spielen",
+          "sense": "Ihr wart müde, weil ihr lange ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "schlafen",
+          "sense": "Die Kinder waren wach, nachdem sie genug ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "Als du ankamst, sagte man, dass ich schon ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kommen",
+          "sense": "Wir sahen, dass du früh ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fahren",
+          "sense": "Paul kannte den Weg, weil er dort schon ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bleiben",
+          "sense": "Vor dem Umzug sagten wir, dass wir lange dort ___.",
+          "valency": "Excepción léxica/licencia de permanencia con sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "essen",
+          "sense": "Als die Gäste kamen, merkten sie, dass wir schon ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "Sie fand Paul nicht, weil er bereits ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "vergessen",
+          "sense": "Ich musste umkehren, weil ich den Schlüssel ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verteilen",
+          "sense": "Als die Sitzung begann, sahen alle, dass die Assistentin die Unterlagen ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ausziehen",
+          "sense": "Als wir ankamen, stellten wir fest, dass die Mieter schon ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "löschen",
+          "sense": "Nora konnte die Datei nicht öffnen, weil ihr Kollege sie versehentlich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sichern",
+          "sense": "Als der Sturm begann, sah man, dass die Fischer ihre Boote ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "lesen",
+          "sense": "Wir kehrten um, nachdem wir das falsche Schild ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "Als das Interview begann, erfuhren wir, dass die Reporterin gerade ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "hören",
+          "sense": "Paul erkannte das Stück, weil er es als Kind oft ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "hängen",
+          "sense": "Als sich die Türen öffneten, sah man, dass das Team die Bilder schon ___; die Techniker erklärten, dass sie die Lampen ___; und die Kuratorin sagte, dass sie kurz zuvor ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "prüfen",
+          "sense": "Als sich die Türen öffneten, sah man, dass das Team die Bilder schon ___; die Techniker erklärten, dass sie die Lampen ___; und die Kuratorin sagte, dass sie kurz zuvor ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Als sich die Türen öffneten, sah man, dass das Team die Bilder schon ___; die Techniker erklärten, dass sie die Lampen ___; und die Kuratorin sagte, dass sie kurz zuvor ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abfahren",
+          "sense": "Als Mara den Bahnsteig erreichte, merkte sie, dass der Zug ___; ein Mitarbeiter sagte, dass er das Tor ___; und die Anzeige zeigte, dass sie den nächsten Zug bereits ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "schließen",
+          "sense": "Als Mara den Bahnsteig erreichte, merkte sie, dass der Zug ___; ein Mitarbeiter sagte, dass er das Tor ___; und die Anzeige zeigte, dass sie den nächsten Zug bereits ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "anzeigen",
+          "sense": "Als Mara den Bahnsteig erreichte, merkte sie, dass der Zug ___; ein Mitarbeiter sagte, dass er das Tor ___; und die Anzeige zeigte, dass sie den nächsten Zug bereits ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "speichern",
+          "sense": "Bevor das Licht ausging, bestätigte Nina, dass sie die Datei ___; ihr Kollege sagte, dass er eine Kopie ___; und das Protokoll zeigte, dass der Server in den Ruhemodus ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "erstellen",
+          "sense": "Bevor das Licht ausging, bestätigte Nina, dass sie die Datei ___; ihr Kollege sagte, dass er eine Kopie ___; und das Protokoll zeigte, dass der Server in den Ruhemodus ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "wechseln",
+          "sense": "Bevor das Licht ausging, bestätigte Nina, dass sie die Datei ___; ihr Kollege sagte, dass er eine Kopie ___; und das Protokoll zeigte, dass der Server in den Ruhemodus ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verpacken",
+          "sense": "Als der Kunde anrief, zeigte das System, dass das Lager das Paket ___; der Fahrer sagte, dass er die Adresse ___; aber später wurde klar, dass er zur falschen Straße ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "notieren",
+          "sense": "Als der Kunde anrief, zeigte das System, dass das Lager das Paket ___; der Fahrer sagte, dass er die Adresse ___; aber später wurde klar, dass er zur falschen Straße ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "fahren",
+          "sense": "Als der Kunde anrief, zeigte das System, dass das Lager das Paket ___; der Fahrer sagte, dass er die Adresse ___; aber später wurde klar, dass er zur falschen Straße ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "stimmen",
+          "sense": "Als das Publikum eintrat, hörte es, dass die Musiker ihre Instrumente ___; der Dirigent erklärte, dass er den Ablauf ___; und alle sahen, dass die Solistin schon auf die Bühne ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ändern",
+          "sense": "Als das Publikum eintrat, hörte es, dass die Musiker ihre Instrumente ___; der Dirigent erklärte, dass er den Ablauf ___; und alle sahen, dass die Solistin schon auf die Bühne ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "gehen",
+          "sense": "Als das Publikum eintrat, hörte es, dass die Musiker ihre Instrumente ___; der Dirigent erklärte, dass er den Ablauf ___; und alle sahen, dass die Solistin schon auf die Bühne ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "trinken",
+          "sense": "Als wir kochen wollten, merkten wir, dass jemand die Milch ___; die Kinder gaben zu, dass sie das Gemüse ___; und wir erfuhren, dass unser Gast noch nicht ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "verwenden",
+          "sense": "Als wir kochen wollten, merkten wir, dass jemand die Milch ___; die Kinder gaben zu, dass sie das Gemüse ___; und wir erfuhren, dass unser Gast noch nicht ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Als wir kochen wollten, merkten wir, dass jemand die Milch ___; die Kinder gaben zu, dass sie das Gemüse ___; und wir erfuhren, dass unser Gast noch nicht ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sortieren",
+          "sense": "Als die Prüfer kamen, zeigte sich, dass die Firma alle Belege ___; die Buchhalterin bestätigte, dass sie die Summen ___; und der Leiter sagte, dass er früh ins Büro ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "vergleichen",
+          "sense": "Als die Prüfer kamen, zeigte sich, dass die Firma alle Belege ___; die Buchhalterin bestätigte, dass sie die Summen ___; und der Leiter sagte, dass er früh ins Büro ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "kommen",
+          "sense": "Als die Prüfer kamen, zeigte sich, dass die Firma alle Belege ___; die Buchhalterin bestätigte, dass sie die Summen ___; und der Leiter sagte, dass er früh ins Büro ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abschließen",
+          "sense": "Als die Wanderer eintrafen, merkten sie, dass der Wirt die Tür ___; ein Foto zeigte, dass er ein Schild ___; und ein Nachbar sagte, dass seine Familie ins Tal ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "aufhängen",
+          "sense": "Als die Wanderer eintrafen, merkten sie, dass der Wirt die Tür ___; ein Foto zeigte, dass er ein Schild ___; und ein Nachbar sagte, dass seine Familie ins Tal ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "fahren",
+          "sense": "Als die Wanderer eintrafen, merkten sie, dass der Wirt die Tür ___; ein Foto zeigte, dass er ein Schild ___; und ein Nachbar sagte, dass seine Familie ins Tal ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "riechen",
+          "sense": "Als der Alarm ertönte, sagte der Wachmann, dass er Rauch ___; das System zeigte, dass eine Kamera Bewegung ___; und später wurde klar, dass zwei Besucher schon ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "registrieren",
+          "sense": "Als der Alarm ertönte, sagte der Wachmann, dass er Rauch ___; das System zeigte, dass eine Kamera Bewegung ___; und später wurde klar, dass zwei Besucher schon ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "hinauslaufen",
+          "sense": "Als der Alarm ertönte, sagte der Wachmann, dass er Rauch ___; das System zeigte, dass eine Kamera Bewegung ___; und später wurde klar, dass zwei Besucher schon ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "vergessen",
+          "sense": "Als sie sich wiedertrafen, gab Lea zu, dass sie den Namen ___; Amir erzählte, dass er die Stadt ___; und beide erfuhren, dass ihre Lehrerin längst in Rente ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "verlassen",
+          "sense": "Als sie sich wiedertrafen, gab Lea zu, dass sie den Namen ___; Amir erzählte, dass er die Stadt ___; und beide erfuhren, dass ihre Lehrerin längst in Rente ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "gehen",
+          "sense": "Als sie sich wiedertrafen, gab Lea zu, dass sie den Namen ___; Amir erzählte, dass er die Stadt ___; und beide erfuhren, dass ihre Lehrerin längst in Rente ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "entdecken",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "brechen",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "laufen",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "auslagern",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "schließen",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "notieren",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "prüfen",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "untersuchen",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "festlegen",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "aktualisieren",
+          "sense": "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ___. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ___ und dass Wasser in den kleinen Saal ___. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ___. Das Technikteam erklärte, dass es die Hauptleitung schon ___. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ___. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ___. Nachdem Fachleute den Boden ___, begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ___ und alle Hinweise rechtzeitig ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ziehen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «waren» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abfahren",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «war» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kalibrieren",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «hatten» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "schließen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «geschlossen hatte» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kopieren",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «hatte» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fahren",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «gefahren war» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "essen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «gegessen hatten» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abheben",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «abgehoben hatte» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "regnen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «geregnet hatte» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "vergeben",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «hatte» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verlassen",
+          "sense": "Die Straße war leer, weil alle das Fest ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "vorbereiten",
+          "sense": "Als die Sitzung begann, hatten wir alles ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "erreichen",
+          "sense": "Als es dunkel wurde, hatten die Wanderer die Hütte ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "wegfahren",
+          "sense": "Als ich ankam, war der Lieferwagen schon ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bestellen",
+          "sense": "Das Material lag bereit, denn die Firma hatte es früh ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückrufen",
+          "sense": "Paul war beruhigt, weil die Ärztin ihn ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abschließen",
+          "sense": "Bevor die Gäste kamen, hatte Mara die Tür ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bezahlen",
+          "sense": "Wir gingen hinaus, nachdem wir die Rechnung ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "einsteigen",
+          "sense": "Der Bus fuhr los, nachdem alle ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-plusquamperfekt-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "entdecken",
+          "sense": "Der Techniker kannte die Ursache, weil er den Defekt ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:34:39.953Z"
+}

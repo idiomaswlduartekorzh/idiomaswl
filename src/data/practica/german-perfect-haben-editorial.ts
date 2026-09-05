@@ -40,4 +40,11 @@ const stories: GermanCompactStory[] = [
 const final: GermanCompactFinal[] = [
   ['Die Redaktion bestätigt, dass sie den Fehler rechtzeitig ',' hat.','bemerkt','bemerken','bemerkt ist','bemerkte'],['Paul sagt, dass er die Rechnung bereits ',' hat.','bezahlt','bezahlen','bezahlt ist','bezahlte'],['Wir wissen, dass ihr alle Fenster ',' habt.','geschlossen','schließen','geschlossen seid','schlosst'],['Die Kundin erklärt, dass sie das Paket nicht ',' hat.','bestellt','bestellen','bestellt ist','bestellte'],['Der Trainer sagt, dass die Mannschaft konzentriert ',' hat.','trainiert','trainieren','trainiert ist','trainierte'],['Mia bestätigt, dass sie den Schlüssel wieder ',' hat.','gefunden','finden','gefunden ist','fand'],['Die Forscher berichten, dass sie die Probe zweimal ',' haben.','analysiert','analysieren','analysiert sind','analysierten'],['Du sagst, dass du den Termin ',' hast.','verschoben','verschieben','verschoben bist','verschobst'],['Die Nachbarn erzählen, dass sie den Lärm ebenfalls ',' haben.','gehört','hören','gehört sind','hörten'],['Der Verein meldet, dass er genug Spenden ',' hat.','gesammelt','sammeln','gesammelt ist','sammelte'],
 ]
-export const GERMAN_PERFECT_HABEN_EDITORIAL = createGermanCompactPack({ slug:'perfekt-haben', form:'perfekt-haben', focus:'Perfekt mit haben', rule:'Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende.', choices, micro, stories, final })
+const perfektHabenPack = createGermanCompactPack({ slug:'perfekt-haben', form:'perfekt-haben', focus:'Perfekt mit haben', rule:'Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende.', choices, micro, stories, final })
+
+export const GERMAN_PERFECT_HABEN_EDITORIAL = {
+  ...perfektHabenPack,
+  micro: perfektHabenPack.micro.map((item) => item.id === 'de-perfekt-haben-micro-editorial-10'
+    ? { ...item, gaps: item.gaps.map((gap) => ({ ...gap, answers: ['gesendet hat', 'gesandt hat'] })) }
+    : item),
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "praeteritum",
+  "baseCommit": "dab197cece8c940869c05a4426badd6e5f394db7",
+  "createdAt": "2026-09-05T15:30:08.497Z",
+  "baselineContentFingerprint": "f0492b7956349f557a5223d8fea60a271212f40b8499d08c2e7a9a0f3cfd322c",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "df2d954761b05ac2be0d66100a659fe33dd0784055eefc5ed2110d8dfd654b57",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "spec": {
+    "id": "praeteritum",
+    "label": "Präteritum",
+    "sourceFile": "src/data/practica/german-preterite-editorial.ts",
+    "stage": "queued",
+    "cefr": "A2–B1",
+    "construction": "finite simple past",
+    "auxiliaryPolicy": "none",
+    "allowedAuxiliaries": [],
+    "minimumFinalUnitTokens": 1,
+    "morphology": [
+      "weak -te forms",
+      "strong ablaut forms",
+      "mixed verbs",
+      "high-frequency haben, sein and modal forms"
+    ],
+    "wordOrder": [
+      "finite verb in V2",
+      "detached particle at clause end for separable verbs"
+    ],
+    "contextContract": [
+      "closed narrative past or conventional written report"
+    ],
+    "separableContract": [
+      "hide the detached particle in level 5",
+      "write the complete sentence"
+    ],
+    "knownRisks": [
+      "invented regular forms for strong verbs",
+      "contexts that equally admit Perfekt"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-preterite-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

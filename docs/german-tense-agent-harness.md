@@ -53,17 +53,18 @@ El máximo es cuatro agentes activos. Los autores nunca editan en paralelo
 
 ## Huellas y estados
 
-Cada orden congela tres huellas SHA-256:
+Cada orden congela cuatro huellas SHA-256:
 
 - `baselineContentFingerprint`: contenido materializado al abrir la orden;
 - `specFingerprint`: reglas de la forma;
 - `promptFingerprint`: conjunto de instrucciones de los agentes.
+- `harnessFingerprint`: núcleo, política y schemas que juzgan la evidencia.
 
 El autor entrega `candidate` con `runtime`, anotaciones y fuentes, además de su
 `candidateFingerprint`. Todos los auditores deben usar esa misma huella. El integrador demuestra
 que `runtimeContentFingerprint` coincide con la huella de `candidate.runtime`; el candidato completo
 no se compara con el runtime. Cambiar
-contenido, especificación o prompts invalida los dictámenes anteriores.
+contenido, especificación, prompts o validadores invalida los dictámenes anteriores.
 
 El validador del candidato exige diez anotaciones por nivel del 1 al 5, una anotación para la
 historia del nivel 6, cobertura runtime completa y el mínimo de palabras de la unidad verbal definido

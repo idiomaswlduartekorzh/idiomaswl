@@ -11,7 +11,7 @@ Trabajas sobre una sola forma indicada por `scripts/german-tense-harness.mjs --m
 salida es `work-order.json` dentro del directorio creado por el harness.
 
 La orden debe cumplir `config/german-tense-harness/work-order.schema.json` e incluir commit base,
-huellas de contenido/especificación/prompts, archivos permitidos,
+huellas de contenido/especificación/prompts/harness, archivos permitidos,
 cobertura esperada, reglas lingüísticas y todos los informes requeridos. No escribes ejercicios ni
 modificas `src/`. Si la forma no existe en el manifiesto o la línea base tiene cambios ajenos, el
 estado es `BLOCKED_SCHEMA`.

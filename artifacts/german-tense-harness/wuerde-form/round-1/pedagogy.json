@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "formId": "wuerde-form",
+  "role": "pedagogy",
+  "verdict": "PASS",
+  "candidateFingerprint": "b737f636483dc7ddfea0e5a6ce30dcd14068a02d09185c21dcc9b5070eca4b14",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "c158450ee0c6969f6903ff5c74943869074d17df509e56fa081eb37ed3e0243d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "reference-comparison",
+      "status": "PASS",
+      "evidence": "Cobertura 10/10/10/10/10/1 y progresión de seis niveles alineadas con el Präsens aprobado."
+    },
+    {
+      "id": "level-1-recognition",
+      "status": "PASS",
+      "evidence": "Diez retos de reconocimiento con una respuesta objetivo enlazada por ítem."
+    },
+    {
+      "id": "level-2-production",
+      "status": "PASS",
+      "evidence": "Diez microtextos con contexto suficiente y producción de la unidad verbal exigida."
+    },
+    {
+      "id": "level-3-connected-scenes",
+      "status": "PASS",
+      "evidence": "Diez escenas conectadas de tres decisiones; los contextos y sujetos permiten reconstruir cada forma."
+    },
+    {
+      "id": "level-4-unambiguous-correction",
+      "status": "PASS",
+      "evidence": "Los 50 enunciados de N4 presentan una condición explícita con „wenn“ y el error indicativo queda inequívocamente fuera del contrato hipotético. Oraciones por texto: 5/5/5/5/5/5/5/5/5/5; posiciones: 2/3/4/0/1/2/3/4/0/1."
+    },
+    {
+      "id": "level-5-mix",
+      "status": "PASS",
+      "evidence": "Separables=5, inseparables=5, cambios=7, racha máxima=2; infinitivos unidos, partícula oculta y oración completa."
+    },
+    {
+      "id": "level-5-context-contract",
+      "status": "PASS",
+      "evidence": "Los 10 retos N5 incluyen un marco hipotético explícito: ohne, mit, an deiner Stelle, wenn, bei o vor Freunden."
+    },
+    {
+      "id": "level-6-story",
+      "status": "PASS",
+      "evidence": "10 decisiones dentro de una historia continua; cada hueco exige la unidad verbal completa."
+    },
+    {
+      "id": "cross-level-originality",
+      "status": "PASS",
+      "evidence": "No se detectaron duplicados textuales exactos entre niveles; N4 usa la rotación controlada permitida con orden y posición del error variables."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "PEDAGOGY-ALIGNED",
+      "detail": "La progresión, la inequívocidad de N4, la mezcla de N5 y la continuidad de N6 cumplen el blueprint aprobado."
+    }
+  ],
+  "generatedAt": "2026-09-05T15:32:02.747Z"
+}

@@ -34,12 +34,13 @@
     "item": {
       "type": "object",
       "required": [
-        "itemId", "level", "lemma", "senseId", "targetForm", "person", "number",
+        "itemId", "runtimeFingerprint", "level", "lemma", "senseId", "targetForm", "person", "number",
         "clauseType", "function", "anchorIds", "auxiliary", "participle", "separation",
         "prefix", "expectedUnit", "accepted", "distractorRationale"
       ],
       "properties": {
         "itemId": { "type": "string", "minLength": 1 },
+        "runtimeFingerprint": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
         "level": { "type": "integer", "minimum": 1, "maximum": 6 },
         "lemma": { "type": "string", "minLength": 1 },
         "senseId": { "type": "string", "minLength": 1 },

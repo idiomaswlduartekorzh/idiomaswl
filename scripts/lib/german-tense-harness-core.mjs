@@ -49,12 +49,21 @@ export function loadHarness(repoRoot) {
   }))
   const promptFingerprints = Object.fromEntries(Object.entries(promptContents).map(([id, content]) => [id, content ? fingerprint(content) : null]))
   const promptNames = Object.fromEntries(Object.entries(promptContents).map(([id, content]) => [id, content?.match(/^name:\s*(.+)$/m)?.[1]?.trim() ?? null]))
-  return { approvals, campaign, forms, policy, promptFingerprints, promptNames, repoRoot }
+  const harnessFiles = [
+    'scripts/lib/german-tense-harness-core.mjs',
+    'config/german-tense-harness/policy.json',
+    ...Object.values(policy.schemas),
+  ]
+  const harnessFingerprint = fingerprint(Object.fromEntries(
+    harnessFiles.map((file) => [file, readFileSync(path.join(repoRoot, file), 'utf8')]),
+  ))
+  return { approvals, campaign, forms, harnessFingerprint, policy, promptFingerprints, promptNames, repoRoot }
 }
 
 export function fingerprintsForForm(harness, config, formId) {
   return {
     contentFingerprint: fingerprint(materializeFormContent(config, formId)),
+    harnessFingerprint: harness.harnessFingerprint,
     specFingerprint: fingerprint(harness.forms[formId]),
     promptFingerprint: fingerprint(harness.promptFingerprints),
   }
@@ -73,6 +82,16 @@ function isNonEmptyString(value) {
 
 function tokenCount(value) {
   return String(value).trim().split(/\s+/u).filter(Boolean).length
+}
+
+const FINAL_UNIT_PATTERNS = {
+  'perfekt-haben': /\b(?:habe|hast|hat|haben|habt)$/iu,
+  'perfekt-sein': /\b(?:bin|bist|ist|sind|seid)$/iu,
+  plusquamperfekt: /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/iu,
+  'futur-eins': /\b(?:werde|wirst|wird|werden|werdet)$/iu,
+  'futur-zwei': /\b(?:haben|sein)\s+(?:werde|wirst|wird|werden|werdet)$/iu,
+  'wuerde-form': /\b(?:würde|würdest|würden|würdet)$/iu,
+  'konjunktiv-vergangenheit': /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/iu,
 }
 
 export function validateCandidate(candidate, spec, policy) {
@@ -100,6 +119,8 @@ export function validateCandidate(candidate, spec, policy) {
       fail(Array.isArray(gap.answers) && gap.answers.length > 0, `${gap.id ?? 'hueco final'}: faltan respuestas`)
       for (const answer of gap.answers ?? []) {
         fail(tokenCount(answer) >= spec.minimumFinalUnitTokens, `${gap.id ?? 'hueco final'}: "${answer}" no contiene la unidad verbal completa (${spec.minimumFinalUnitTokens} palabras)`)
+        const unitPattern = FINAL_UNIT_PATTERNS[spec.id]
+        if (unitPattern) fail(unitPattern.test(answer), `${gap.id ?? 'hueco final'}: "${answer}" no cumple la construcción ${spec.construction}`)
       }
     }
     fail(candidate.runtime.separation.filter((item) => item.separation === 'separable').length === coverage.separable, `candidate.runtime: balance separable ${coverage.separable}`)
@@ -109,7 +130,7 @@ export function validateCandidate(candidate, spec, policy) {
   fail(Array.isArray(candidate.annotations), 'candidate: annotations debe ser un array')
   if (Array.isArray(candidate.annotations)) {
     const requiredAnnotationFields = [
-      'itemId', 'level', 'lemma', 'senseId', 'targetForm', 'person', 'number',
+      'itemId', 'runtimeFingerprint', 'level', 'lemma', 'senseId', 'targetForm', 'person', 'number',
       'clauseType', 'function', 'anchorIds', 'auxiliary', 'participle', 'separation',
       'prefix', 'expectedUnit', 'accepted', 'distractorRationale',
     ]
@@ -124,6 +145,7 @@ export function validateCandidate(candidate, spec, policy) {
       fail(item.targetForm === spec.id, `${item.itemId ?? 'anotación'}: targetForm debe ser ${spec.id}`)
       fail(Array.isArray(item.anchorIds), `${item.itemId ?? 'anotación'}: anchorIds debe ser un array`)
       fail(Array.isArray(item.accepted) && item.accepted.length > 0, `${item.itemId ?? 'anotación'}: accepted vacío`)
+      fail(Array.isArray(item.accepted) && new Set(item.accepted).size === item.accepted.length, `${item.itemId ?? 'anotación'}: accepted debe contener variantes únicas`)
       fail(Array.isArray(item.distractorRationale), `${item.itemId ?? 'anotación'}: distractorRationale debe ser un array`)
       if (spec.allowedAuxiliaries.length > 0) {
         fail(spec.allowedAuxiliaries.includes(item.auxiliary), `${item.itemId ?? 'anotación'}: auxiliar ${item.auxiliary ?? 'nulo'} fuera del contrato`)
@@ -133,6 +155,26 @@ export function validateCandidate(candidate, spec, policy) {
       fail(candidate.annotations.filter((item) => item?.level === level).length === 10, `candidate.annotations: nivel ${level} requiere 10 entradas`)
     }
     fail(candidate.annotations.filter((item) => item?.level === 6).length === coverage.finalStories, `candidate.annotations: nivel 6 requiere ${coverage.finalStories} entrada por historia`)
+
+    const annotatedRuntime = [
+      ['choice', 1, (item) => [item.answer]],
+      ['micro', 2, (item) => item.gaps.flatMap((gap) => gap.answers)],
+      ['long', 3, (item) => item.gaps.flatMap((gap) => gap.answers)],
+      ['error', 4, (item) => item.answers],
+      ['separation', 5, (item) => item.answers],
+      ['finalStories', 6, (item) => item.gaps.flatMap((gap) => gap.answers)],
+    ]
+    for (const [runtimeKey, level, answersFor] of annotatedRuntime) {
+      for (const runtimeItem of candidate.runtime?.[runtimeKey] ?? []) {
+        const annotation = candidate.annotations.find((item) => item?.level === level && item.itemId === runtimeItem.id)
+        fail(Boolean(annotation), `${runtimeItem.id}: falta anotación enlazada del nivel ${level}`)
+        if (!annotation) continue
+        const runtimeAnswers = answersFor(runtimeItem)
+        const uniqueRuntimeAnswers = [...new Set(runtimeAnswers)]
+        fail(Array.isArray(annotation.accepted) && sameMembers(annotation.accepted, uniqueRuntimeAnswers), `${runtimeItem.id}: accepted no coincide con las respuestas del runtime`)
+        fail(annotation.runtimeFingerprint === fingerprint(runtimeItem), `${runtimeItem.id}: runtimeFingerprint no coincide con el reto materializado`)
+      }
+    }
   }
 
   fail(Array.isArray(candidate.sources) && candidate.sources.length > 0, 'candidate: sources debe incluir al menos una fuente')
@@ -157,6 +199,7 @@ export function validateReport(report, roleId, formId) {
   fail(report.formId === formId, `${roleId}: formId no coincide`)
   fail(report.verdict === 'PASS' || report.verdict === 'FAIL', `${roleId}: verdict debe ser PASS o FAIL`)
   fail(hash(report.candidateFingerprint), `${roleId}: candidateFingerprint inválida`)
+  fail(hash(report.harnessFingerprint), `${roleId}: harnessFingerprint inválida`)
   fail(hash(report.specFingerprint), `${roleId}: specFingerprint inválida`)
   fail(hash(report.promptFingerprint), `${roleId}: promptFingerprint inválida`)
   fail(Array.isArray(report.checks), `${roleId}: checks debe ser un array`)
@@ -248,6 +291,7 @@ export function createWorkOrder(harness, config, formId, baseCommit) {
     baseCommit,
     createdAt: new Date().toISOString(),
     baselineContentFingerprint: fingerprints.contentFingerprint,
+    harnessFingerprint: fingerprints.harnessFingerprint,
     specFingerprint: fingerprints.specFingerprint,
     promptFingerprint: fingerprints.promptFingerprint,
     spec,
@@ -270,6 +314,7 @@ export function deriveState({ approval, fingerprints, policy, reports, requiredR
   if (spec.stage === 'approved-reference' && approvalMatches) return 'APPROVED'
   if (!workOrder) return 'NEEDS_DRAFT'
   const workOrderMatches = workOrder.formId === spec.id
+    && workOrder.harnessFingerprint === fingerprints.harnessFingerprint
     && workOrder.specFingerprint === fingerprints.specFingerprint
     && workOrder.promptFingerprint === fingerprints.promptFingerprint
   if (!workOrderMatches) return 'BLOCKED_SCHEMA'
@@ -283,6 +328,7 @@ export function deriveState({ approval, fingerprints, policy, reports, requiredR
   const authorMatches = author.formId === spec.id
     && author.verdict === 'PASS'
     && author.baselineContentFingerprint === workOrder.baselineContentFingerprint
+    && author.harnessFingerprint === fingerprints.harnessFingerprint
     && author.specFingerprint === fingerprints.specFingerprint
     && author.promptFingerprint === fingerprints.promptFingerprint
     && author.candidateFingerprint === candidateFingerprint
@@ -291,6 +337,7 @@ export function deriveState({ approval, fingerprints, policy, reports, requiredR
   const matching = (report, roleId) => report
     && validateReport(report, roleId, spec.id).length === 0
     && report.candidateFingerprint === candidateFingerprint
+    && report.harnessFingerprint === fingerprints.harnessFingerprint
     && report.specFingerprint === fingerprints.specFingerprint
     && report.promptFingerprint === fingerprints.promptFingerprint
 

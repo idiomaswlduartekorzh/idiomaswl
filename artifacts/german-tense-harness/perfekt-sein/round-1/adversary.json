@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-sein",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "345b3e0ccddf9a3b06a7c7b4921417e1f2311dba9b1f0f4863417f04dde632cb",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "f7eb72c48b2e0a91f74605ad20ed1e97e04e8224eb86e070021cf0a72f3fc625",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "answer-mutation",
+      "status": "PASS",
+      "itemId": "de-perfekt-sein-written-final-story-gap-1",
+      "mutation": "aufgestanden ist → aufgestanden hat",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorMessages": [
+        "de-perfekt-sein-written-final-story-gap-1: \"aufgestanden hat\" no cumple la construcción finite sein + Partizip II",
+        "de-perfekt-sein-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-perfekt-sein-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "context-mutation",
+      "status": "PASS",
+      "itemId": "de-perfekt-sein-micro-editorial-1",
+      "mutation": "Wir hören, dass Nora am Samstag in Berlin  → Wir hören, dass Nora am Samstag in Berlin  plötzlich",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorMessages": [
+        "de-perfekt-sein-micro-editorial-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "classification-mutation",
+      "status": "PASS",
+      "itemId": "de-perfekt-sein-separation-1",
+      "mutation": "separable → inseparable",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorMessages": [
+        "candidate.runtime: balance separable 5",
+        "candidate.runtime: balance inseparable 5",
+        "de-perfekt-sein-separation-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "always-first-option",
+      "status": "PASS",
+      "firstChoiceHits": 2,
+      "total": 10,
+      "detail": "Elegir siempre A queda muy por debajo del aprobado."
+    },
+    {
+      "id": "separation-leak",
+      "status": "PASS",
+      "detail": "Los prompts del nivel 5 no dejan una partícula separada visible; la clase no se deduce por esa pista."
+    },
+    {
+      "id": "content-alternatives",
+      "status": "PASS",
+      "findings": []
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:33:00.951Z"
+}

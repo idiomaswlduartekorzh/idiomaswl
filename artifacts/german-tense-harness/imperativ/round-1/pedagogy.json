@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "formId": "imperativ",
+  "role": "pedagogy",
+  "verdict": "PASS",
+  "candidateFingerprint": "c1469c42024cb09582bc95a61a19654a7db25b6916dbf34901433d32b8e633da",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "688bcebfada2bdab301a4dcbec2a767257e41e51e6ce8ed0cb0edefc7146d627",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "reference-comparison",
+      "status": "PASS",
+      "evidence": "Cobertura 10/10/10/10/10/1 y progresión de seis niveles alineadas con el Präsens aprobado."
+    },
+    {
+      "id": "level-1-recognition",
+      "status": "PASS",
+      "evidence": "Diez retos de reconocimiento con una respuesta objetivo enlazada por ítem."
+    },
+    {
+      "id": "level-2-production",
+      "status": "PASS",
+      "evidence": "Diez microtextos con contexto suficiente y producción de la unidad verbal exigida."
+    },
+    {
+      "id": "level-3-connected-scenes",
+      "status": "PASS",
+      "evidence": "Diez escenas conectadas de tres decisiones; los contextos y sujetos permiten reconstruir cada forma."
+    },
+    {
+      "id": "level-4-unambiguous-correction",
+      "status": "PASS",
+      "evidence": "Los 50 enunciados de N4 identifican al destinatario como du, ihr o Sie; cada forma errónea contradice esa persona de manera inequívoca. Oraciones por texto: 5/5/5/5/5/5/5/5/5/5; posiciones: 4/0/1/2/3/4/0/1/2/3."
+    },
+    {
+      "id": "level-5-mix",
+      "status": "PASS",
+      "evidence": "Separables=5, inseparables=5, cambios=7, racha máxima=2; infinitivos unidos, partícula oculta y oración completa."
+    },
+    {
+      "id": "level-5-context-contract",
+      "status": "PASS",
+      "evidence": "Las tareas productivas declaran las variantes estándar con -(e) cuando proceden: prüf/prüfe, wasch/wasche, heiz/heize, rühr/rühre, schließ/schließe, bleib/bleibe, ruf/rufe, besuch/besuche y benutz/benutze."
+    },
+    {
+      "id": "level-6-story",
+      "status": "PASS",
+      "evidence": "10 decisiones dentro de una historia continua; cada hueco exige la unidad verbal completa."
+    },
+    {
+      "id": "cross-level-originality",
+      "status": "PASS",
+      "evidence": "No se detectaron duplicados textuales exactos entre niveles; N4 usa la rotación controlada permitida con orden y posición del error variables."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "PEDAGOGY-ALIGNED",
+      "detail": "La progresión, la inequívocidad de N4, la mezcla de N5 y la continuidad de N6 cumplen el blueprint aprobado."
+    }
+  ],
+  "generatedAt": "2026-09-05T15:32:02.747Z"
+}

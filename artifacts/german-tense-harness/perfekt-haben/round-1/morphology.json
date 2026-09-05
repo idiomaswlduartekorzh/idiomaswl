@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-haben",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "5e490ed6611c9f76f3029b29109c2885e2edaa0db0ab837172693d85cfbd70be",
+  "specFingerprint": "3d7b8ef8e01a2fc75f30264f984cfe33e46442a6ddd997db94afe207481d9ef8",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "de-perfekt-haben-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "gemacht habe",
+      "declaredAnswer": "gemacht habe",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Ich sage, dass ich die Hausaufgaben gemacht habe."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "gekauft hast",
+      "declaredAnswer": "gekauft hast",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Du sagst, dass du Brot gekauft hast."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "gelernt hat",
+      "declaredAnswer": "gelernt hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Mia sagt, dass sie Deutsch gelernt hat."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "gekocht haben",
+      "declaredAnswer": "gekocht haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Wir erzählen, dass wir Suppe gekocht haben."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "gespielt habt",
+      "declaredAnswer": "gespielt habt",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Ihr sagt, dass ihr Fußball gespielt habt."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "gemalt haben",
+      "declaredAnswer": "gemalt haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Kinder zeigen, dass sie ein Bild gemalt haben."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "geöffnet habe",
+      "declaredAnswer": "geöffnet habe",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Ich erkläre, dass ich das Fenster geöffnet habe."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "gelesen hast",
+      "declaredAnswer": "gelesen hast",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Du sagst, dass du das Buch gelesen hast."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "angerufen hat",
+      "declaredAnswer": "angerufen hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Paul sagt, dass er seine Mutter angerufen hat."
+    },
+    {
+      "id": "de-perfekt-haben-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "aufgeräumt haben",
+      "declaredAnswer": "aufgeräumt haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Wir sagen, dass wir das Zimmer aufgeräumt haben."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "geschrieben hat",
+      "declaredAnswer": "geschrieben hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Lea bestätigt, dass sie den Bericht gestern geschrieben hat."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "gegessen haben",
+      "declaredAnswer": "gegessen haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Mia sagt, dass wir schon zu Abend gegessen haben."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "gesehen hast",
+      "declaredAnswer": "gesehen hast",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Es stimmt, dass du den Film zweimal gesehen hast."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "repariert hat",
+      "declaredAnswer": "repariert hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Der Hausmeister erklärt, dass er die Heizung repariert hat."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "geantwortet hat",
+      "declaredAnswer": "geantwortet hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Nora merkt, dass ihr Bruder noch nicht geantwortet hat."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "gelesen hat",
+      "declaredAnswer": "gelesen hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Paul erzählt, dass er heute drei Kapitel gelesen hat."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "gebucht haben",
+      "declaredAnswer": "gebucht haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Rezeption bestätigt, dass wir ein Doppelzimmer gebucht haben."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "verloren hat",
+      "declaredAnswer": "verloren hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Aylin sagt, dass sie ihren Ausweis verloren hat."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "ausprobiert hat",
+      "declaredAnswer": "ausprobiert hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Der Koch erklärt, dass er heute ein neues Rezept ausprobiert hat."
+    },
+    {
+      "id": "de-perfekt-haben-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "gesendet hat | gesandt hat",
+      "declaredAnswer": "gesendet hat | gesandt hat",
+      "rule": "„senden“ admite los participios normativos „gesendet“ y „gesandt“ en el sentido de enviar; ambas variantes están declaradas y enlazadas con la anotación.",
+      "evidence": "Runtime: gesendet hat / gesandt hat; la anotación declara el mismo conjunto."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "geschrieben hat | geprüft hat | hochgeladen hat",
+      "declaredAnswer": "geschrieben hat | geprüft hat | hochgeladen hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Mara erklärt, dass sie den Entwurf geschrieben hat; danach sagt sie, dass ihr Kollege die Zahlen geprüft hat; schließlich bestätigt sie, dass das Team die Datei hochgeladen hat."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "gekauft hat | gekocht hat | gedeckt haben",
+      "declaredAnswer": "gekauft hat | gekocht hat | gedeckt haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Tom erzählt, dass er Gemüse gekauft hat; anschließend berichtet er, dass seine Schwester die Suppe gekocht hat; zum Schluss sagt er, dass beide den Tisch gedeckt haben."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "kontrolliert hat | geölt hat | gemacht hat",
+      "declaredAnswer": "kontrolliert hat | geölt hat | gemacht hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Mechanikerin sagt, dass sie zuerst die Bremsen kontrolliert hat; dann erklärt sie, dass sie die Kette geölt hat; zuletzt bestätigt sie, dass sie eine Probefahrt gemacht hat."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "sortiert hat | beschriftet hat | fotografiert hat",
+      "declaredAnswer": "sortiert hat | beschriftet hat | fotografiert hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Lina berichtet, dass sie die Bücher sortiert hat; danach sagt sie, dass ihr Vater die Kisten beschriftet hat; schließlich erklärt sie, dass ihre Mutter alles fotografiert hat."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "aufgenommen hat | gemischt hat | veröffentlicht hat",
+      "declaredAnswer": "aufgenommen hat | gemischt hat | veröffentlicht hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Der Produzent bestätigt, dass er das Gespräch aufgenommen hat; dann sagt er, dass die Technikerin den Ton gemischt hat; zuletzt erklärt er, dass sie die Folge veröffentlicht hat."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "gestaltet hat | gebacken haben | eingebracht hat",
+      "declaredAnswer": "gestaltet hat | gebacken haben | eingebracht hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Lehrerin erzählt, dass die Klasse Plakate gestaltet hat; danach berichtet sie, dass die Eltern Kuchen gebacken haben; am Ende sagt sie, dass der Basar viel Geld eingebracht hat."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "verbunden hat | markiert hat | freigegeben hat",
+      "declaredAnswer": "verbunden hat | markiert hat | freigegeben hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Nina erklärt, dass sie die Tabellen verbunden hat; anschließend sagt sie, dass Amir die Ausreißer markiert hat; schließlich bestätigt sie, dass der Chef die Ergebnisse freigegeben hat."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "geschmückt hat | ausgewählt haben | aufgeräumt haben",
+      "declaredAnswer": "geschmückt hat | ausgewählt haben | aufgeräumt haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Juri sagt, dass er den Raum geschmückt hat; dann berichtet er, dass seine Freunde Musik ausgewählt haben; zuletzt erklärt er, dass alle gemeinsam aufgeräumt haben."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "vereinbart hat | fotografiert hat | gestellt hat",
+      "declaredAnswer": "vereinbart hat | fotografiert hat | gestellt hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Maklerin bestätigt, dass sie den Termin vereinbart hat; danach sagt sie, dass das Paar alle Zimmer fotografiert hat; schließlich erklärt sie, dass es viele Fragen gestellt hat."
+    },
+    {
+      "id": "de-perfekt-haben-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "ausgefüllt hat | notiert hat | gefunden hat",
+      "declaredAnswer": "ausgefüllt hat | notiert hat | gefunden hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Der Reisende berichtet, dass er das Formular ausgefüllt hat; dann sagt er, dass die Mitarbeiterin die Nummer notiert hat; zuletzt bestätigt er, dass die Fluggesellschaft den Koffer gefunden hat."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "ausgetauscht hat",
+      "declaredAnswer": "ausgetauscht hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Lina erzählt, dass sie den Vertrag gelesen hat. Der Techniker sagt, dass er die Sicherung ausgetauscht hat. Die Redaktion meldet, dass sie den Titel geändert hat. Die Köchin sagt, dass sie das Menü vorbereitet hat. Omar bestätigt, dass er den Fehler entdeckt hat."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "gelöscht hast",
+      "declaredAnswer": "gelöscht hast",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Wir bestätigen, dass wir alle Belege gesammelt haben. Ihr erklärt, dass ihr den Raum reserviert habt. Du hast berichtet, dass du die Datei gelöscht hast. Die Kinder erzählen, dass sie ein Modell gebaut haben. Die Gäste sagen, dass sie den Schlüssel abgegeben haben."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "entdeckt hat",
+      "declaredAnswer": "entdeckt hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Der Techniker sagt, dass er die Sicherung ausgetauscht hat. Die Redaktion meldet, dass sie den Titel geändert hat. Die Köchin sagt, dass sie das Menü vorbereitet hat. Omar bestätigt, dass er den Fehler entdeckt hat. Lina erzählt, dass sie den Vertrag gelesen hat."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "gesammelt haben",
+      "declaredAnswer": "gesammelt haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Ihr erklärt, dass ihr den Raum reserviert habt. Du hast berichtet, dass du die Datei gelöscht hast. Die Kinder erzählen, dass sie ein Modell gebaut haben. Die Gäste sagen, dass sie den Schlüssel abgegeben haben. Wir bestätigen, dass wir alle Belege gesammelt haben."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "geändert hat",
+      "declaredAnswer": "geändert hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Redaktion meldet, dass sie den Titel geändert hat. Die Köchin sagt, dass sie das Menü vorbereitet hat. Omar bestätigt, dass er den Fehler entdeckt hat. Lina erzählt, dass sie den Vertrag gelesen hat. Der Techniker sagt, dass er die Sicherung ausgetauscht hat."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "gebaut haben",
+      "declaredAnswer": "gebaut haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Du hast berichtet, dass du die Datei gelöscht hast. Die Kinder erzählen, dass sie ein Modell gebaut haben. Die Gäste sagen, dass sie den Schlüssel abgegeben haben. Wir bestätigen, dass wir alle Belege gesammelt haben. Ihr erklärt, dass ihr den Raum reserviert habt."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "gelesen hat",
+      "declaredAnswer": "gelesen hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Köchin sagt, dass sie das Menü vorbereitet hat. Omar bestätigt, dass er den Fehler entdeckt hat. Lina erzählt, dass sie den Vertrag gelesen hat. Der Techniker sagt, dass er die Sicherung ausgetauscht hat. Die Redaktion meldet, dass sie den Titel geändert hat."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "reserviert habt",
+      "declaredAnswer": "reserviert habt",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Kinder erzählen, dass sie ein Modell gebaut haben. Die Gäste sagen, dass sie den Schlüssel abgegeben haben. Wir bestätigen, dass wir alle Belege gesammelt haben. Ihr erklärt, dass ihr den Raum reserviert habt. Du hast berichtet, dass du die Datei gelöscht hast."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "vorbereitet hat",
+      "declaredAnswer": "vorbereitet hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Omar bestätigt, dass er den Fehler entdeckt hat. Lina erzählt, dass sie den Vertrag gelesen hat. Der Techniker sagt, dass er die Sicherung ausgetauscht hat. Die Redaktion meldet, dass sie den Titel geändert hat. Die Köchin sagt, dass sie das Menü vorbereitet hat."
+    },
+    {
+      "id": "de-perfekt-haben-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "abgegeben haben",
+      "declaredAnswer": "abgegeben haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Gäste sagen, dass sie den Schlüssel abgegeben haben. Wir bestätigen, dass wir alle Belege gesammelt haben. Ihr erklärt, dass ihr den Raum reserviert habt. Du hast berichtet, dass du die Datei gelöscht hast. Die Kinder erzählen, dass sie ein Modell gebaut haben."
+    },
+    {
+      "id": "de-perfekt-haben-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Nora sagt, dass sie ihre Tante besucht hat. | Nora sagt, dass sie ihre Tante besucht hat",
+      "declaredAnswer": "Nora sagt, dass sie ihre Tante besucht hat. | Nora sagt, dass sie ihre Tante besucht hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Nora sagt, dass sie ihre Tante besucht hat."
+    },
+    {
+      "id": "de-perfekt-haben-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt. | Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt",
+      "declaredAnswer": "Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt. | Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt."
+    },
+    {
+      "id": "de-perfekt-haben-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Zeugin erklärt, dass sie alles erzählt hat. | Die Zeugin erklärt, dass sie alles erzählt hat",
+      "declaredAnswer": "Die Zeugin erklärt, dass sie alles erzählt hat. | Die Zeugin erklärt, dass sie alles erzählt hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Zeugin erklärt, dass sie alles erzählt hat."
+    },
+    {
+      "id": "de-perfekt-haben-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Du bestätigst, dass du die Aufgabe verstanden hast. | Du bestätigst, dass du die Aufgabe verstanden hast",
+      "declaredAnswer": "Du bestätigst, dass du die Aufgabe verstanden hast. | Du bestätigst, dass du die Aufgabe verstanden hast",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Du bestätigst, dass du die Aufgabe verstanden hast."
+    },
+    {
+      "id": "de-perfekt-haben-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Der Arzt bestätigt, dass er den Patienten angerufen hat. | Der Arzt bestätigt, dass er den Patienten angerufen hat",
+      "declaredAnswer": "Der Arzt bestätigt, dass er den Patienten angerufen hat. | Der Arzt bestätigt, dass er den Patienten angerufen hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Der Arzt bestätigt, dass er den Patienten angerufen hat."
+    },
+    {
+      "id": "de-perfekt-haben-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Das Team meldet, dass es den Fehler entdeckt hat. | Das Team meldet, dass es den Fehler entdeckt hat",
+      "declaredAnswer": "Das Team meldet, dass es den Fehler entdeckt hat. | Das Team meldet, dass es den Fehler entdeckt hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Das Team meldet, dass es den Fehler entdeckt hat."
+    },
+    {
+      "id": "de-perfekt-haben-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Milan erzählt, dass er am Workshop teilgenommen hat. | Milan erzählt, dass er am Workshop teilgenommen hat",
+      "declaredAnswer": "Milan erzählt, dass er am Workshop teilgenommen hat. | Milan erzählt, dass er am Workshop teilgenommen hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Milan erzählt, dass er am Workshop teilgenommen hat."
+    },
+    {
+      "id": "de-perfekt-haben-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Gewinner sagen, dass sie ihre Urkunden bekommen haben. | Die Gewinner sagen, dass sie ihre Urkunden bekommen haben",
+      "declaredAnswer": "Die Gewinner sagen, dass sie ihre Urkunden bekommen haben. | Die Gewinner sagen, dass sie ihre Urkunden bekommen haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Die Gewinner sagen, dass sie ihre Urkunden bekommen haben."
+    },
+    {
+      "id": "de-perfekt-haben-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Wir berichten, dass wir die Sitzung vorbereitet haben. | Wir berichten, dass wir die Sitzung vorbereitet haben",
+      "declaredAnswer": "Wir berichten, dass wir die Sitzung vorbereitet haben. | Wir berichten, dass wir die Sitzung vorbereitet haben",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Wir berichten, dass wir die Sitzung vorbereitet haben."
+    },
+    {
+      "id": "de-perfekt-haben-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Lea sagt, dass sie das Lager aufgeräumt hat. | Lea sagt, dass sie das Lager aufgeräumt hat",
+      "declaredAnswer": "Lea sagt, dass sie das Lager aufgeräumt hat. | Lea sagt, dass sie das Lager aufgeräumt hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Lea sagt, dass sie das Lager aufgeräumt hat."
+    },
+    {
+      "id": "de-perfekt-haben-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": "geplant hat | gesammelt haben | entworfen hat | geliefert hat | aufgebaut haben | geprüft hat | dekoriert haben | gemacht haben | veröffentlicht hat | gedankt hat",
+      "declaredAnswer": "geplant hat | gesammelt haben | entworfen hat | geliefert hat | aufgebaut haben | geprüft hat | dekoriert haben | gemacht haben | veröffentlicht hat | gedankt hat",
+      "rule": "Partizip II correcto con „haben“ concordado; grupo final en subordinada y partícula integrada en el participio.",
+      "evidence": "Am Sonntagabend erzählt Mara, dass der Verein das Fest monatelang geplant hat. Zuerst berichtet sie, dass mehrere Nachbarn Spenden gesammelt haben. Dann erklärt sie, dass ein Designer die Plakate entworfen hat und eine Druckerei sie rechtzeitig geliefert hat. Für den Festtag bestätigt Mara, dass Freiwillige alle Stände aufgebaut haben. Eine Elektrikerin bestätigt, dass sie jede Leitung geprüft hat. Die Jugendlichen sagen, dass sie die Bühne dekoriert haben und später viele Fotos gemacht haben. Schließlich meldet Mara, dass sie den Bericht veröffentlicht hat und der Vorstand allen Helfern persönlich gedankt hat."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "MORPHOLOGY-AND-SENDEN-VARIANTS-COMPLETE",
+      "detail": "Se verificaron los 51 retos y todas las unidades completas; el contexto de correo acepta tanto „gesendet hat“ como „gesandt hat“. "
+    }
+  ],
+  "generatedAt": "2026-09-05T15:32:02.747Z",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3"
+}

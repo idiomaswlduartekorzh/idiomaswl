@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "futur-zwei",
+  "baseCommit": "dab197cece8c940869c05a4426badd6e5f394db7",
+  "createdAt": "2026-09-05T15:30:08.734Z",
+  "baselineContentFingerprint": "0cf6f019a8606d747e6bda0af64f179e6a1c351f573a720c6bbe707f7ab166c2",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "561bbcc5f629adcc03344e533987efcb73b987f9d6552097b4dd85a65181c92d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "spec": {
+    "id": "futur-zwei",
+    "label": "Futur II",
+    "sourceFile": "src/data/practica/german-future-two-editorial.ts",
+    "stage": "queued",
+    "cefr": "B1–B2",
+    "construction": "finite werden + Partizip II + haben/sein",
+    "auxiliaryPolicy": "inherits-perfect-auxiliary",
+    "allowedAuxiliaries": [
+      "haben",
+      "sein",
+      "werden"
+    ],
+    "minimumFinalUnitTokens": 3,
+    "morphology": [
+      "correct Partizip II",
+      "correct perfect auxiliary in infinitive",
+      "finite werden agrees with the subject"
+    ],
+    "wordOrder": [
+      "Partizip II + haben/sein at clause end",
+      "finite werden occupies V2 in main clauses"
+    ],
+    "contextContract": [
+      "completion before an explicit future deadline or second future point"
+    ],
+    "separableContract": [
+      "test participle formation",
+      "write the full three-part verbal complex in the sentence"
+    ],
+    "knownRisks": [
+      "wrong haben/sein",
+      "missing future deadline",
+      "Futur I distractor accidentally valid"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "auxiliary",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "auxiliary.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-future-two-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

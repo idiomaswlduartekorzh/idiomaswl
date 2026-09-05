@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "formId": "plusquamperfekt",
+  "role": "pedagogy",
+  "verdict": "PASS",
+  "candidateFingerprint": "5d4e12be4a741f936027e538f9368a0e374b789736c9d95bb3359d37de372c52",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "4eded267f0a0d02134ca0f7ed05b5c84f4288799bc38b5143ff1283ab71954be",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "coverage",
+      "status": "PASS",
+      "percentage": 100,
+      "detail": "10 retos en cada nivel 1–5 y una historia final."
+    },
+    {
+      "id": "originality",
+      "status": "PASS",
+      "percentage": 100,
+      "duplicateCount": 0
+    },
+    {
+      "id": "level-4",
+      "status": "PASS",
+      "percentage": 100,
+      "detail": "Cinco oraciones, un error identificable y corrección explícita."
+    },
+    {
+      "id": "level-5",
+      "status": "PASS",
+      "percentage": 100,
+      "balance": {
+        "separable": 5,
+        "inseparable": 5
+      },
+      "maximumRun": 2,
+      "detail": "Orden estable, partícula oculta y respuesta en oración completa."
+    },
+    {
+      "id": "level-6",
+      "status": "PASS",
+      "percentage": 100,
+      "gapCount": 10,
+      "detail": "Historia continua y unidades verbales completas."
+    },
+    {
+      "id": "inferability-and-language",
+      "status": "PASS",
+      "percentage": 100,
+      "detail": "Los contextos hacen visible la función y la concordancia objetivo."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:35:00.945Z"
+}

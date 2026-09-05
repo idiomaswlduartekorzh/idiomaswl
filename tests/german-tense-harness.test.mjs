@@ -20,9 +20,10 @@ import {
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const harness = loadHarness(repoRoot)
 
-function validAnnotation(formId, level, index, auxiliary) {
+function validAnnotation(formId, level, runtimeItem, accepted, auxiliary) {
   return {
-    itemId: `${formId}-level-${level}-${index}`,
+    itemId: runtimeItem.id,
+    runtimeFingerprint: fingerprint(runtimeItem),
     level,
     lemma: 'machen',
     senseId: 'machen.1',
@@ -36,8 +37,8 @@ function validAnnotation(formId, level, index, auxiliary) {
     participle: auxiliary ? 'gemacht' : null,
     separation: 'not-applicable',
     prefix: null,
-    expectedUnit: auxiliary ? `gemacht ${auxiliary}` : 'macht',
-    accepted: [auxiliary ? `gemacht ${auxiliary}` : 'macht'],
+    expectedUnit: accepted.join(' | '),
+    accepted,
     distractorRationale: [],
   }
 }
@@ -59,11 +60,12 @@ function validCandidate(formId) {
     formId,
     runtime,
     annotations: [
-      ...Array.from({ length: 5 }, (_, levelIndex) => Array.from(
-        { length: 10 },
-        (_, index) => validAnnotation(formId, levelIndex + 1, index + 1, auxiliary),
-      )).flat(),
-      validAnnotation(formId, 6, 1, auxiliary),
+      ...runtime.choice.map((item) => validAnnotation(formId, 1, item, [item.answer], auxiliary)),
+      ...runtime.micro.map((item) => validAnnotation(formId, 2, item, item.gaps.flatMap((gap) => gap.answers), auxiliary)),
+      ...runtime.long.map((item) => validAnnotation(formId, 3, item, item.gaps.flatMap((gap) => gap.answers), auxiliary)),
+      ...runtime.error.map((item) => validAnnotation(formId, 4, item, item.answers, auxiliary)),
+      ...runtime.separation.map((item) => validAnnotation(formId, 5, item, item.answers, auxiliary)),
+      ...runtime.finalStories.map((item) => validAnnotation(formId, 6, item, item.gaps.flatMap((gap) => gap.answers), auxiliary)),
     ],
     sources: [{ title: 'Goethe', url: 'https://www.goethe.de/', checkedAt: '2026-09-05' }],
   }
@@ -111,7 +113,7 @@ test('static harness rejects a missing form and a wrong Perfekt auxiliary policy
   assert.ok(validateHarness(wrongPrompt, GERMAN_STRUCTURE_QUEST).includes('author: el name del prompt no coincide con policy'))
 })
 
-test('work order is keyed by form and freezes all three fingerprints', () => {
+test('work order is keyed by form and freezes all four fingerprints', () => {
   const order = createWorkOrder(harness, GERMAN_STRUCTURE_QUEST, 'perfekt-sein', 'abc123')
   assert.equal(order.formId, 'perfekt-sein')
   assert.equal(order.baseCommit, 'abc123')
@@ -120,6 +122,7 @@ test('work order is keyed by form and freezes all three fingerprints', () => {
   assert.ok(order.requiredReports.includes('auxiliary.json'))
   assert.equal(order.requiredCoverage.finalStoryMinimumGaps, 10)
   assert.match(order.baselineContentFingerprint, /^[a-f0-9]{64}$/)
+  assert.match(order.harnessFingerprint, /^[a-f0-9]{64}$/)
   assert.match(order.specFingerprint, /^[a-f0-9]{64}$/)
   assert.match(order.promptFingerprint, /^[a-f0-9]{64}$/)
 })
@@ -133,6 +136,21 @@ test('candidate contract rejects incomplete level 6 units and malformed evidence
   const incomplete = structuredClone(candidate)
   incomplete.runtime.finalStories[0].gaps[0].answers = ['gemacht']
   assert.ok(validateCandidate(incomplete, spec, harness.policy).some((failure) => failure.includes('unidad verbal completa')))
+
+  const wrongConstruction = structuredClone(candidate)
+  wrongConstruction.runtime.finalStories[0].gaps[0].answers = ['geplant ist']
+  assert.ok(validateCandidate(wrongConstruction, spec, harness.policy).some((failure) => failure.includes('no cumple la construcción')))
+
+  const strippedContext = structuredClone(candidate)
+  strippedContext.runtime.finalStories[0].segments[0] = ''
+  assert.ok(validateCandidate(strippedContext, spec, harness.policy).some((failure) => failure.includes('runtimeFingerprint no coincide')))
+
+  const swappedSeparation = structuredClone(candidate)
+  const firstSeparable = swappedSeparation.runtime.separation.find((item) => item.separation === 'separable')
+  const firstInseparable = swappedSeparation.runtime.separation.find((item) => item.separation === 'inseparable')
+  firstSeparable.separation = 'inseparable'
+  firstInseparable.separation = 'separable'
+  assert.ok(validateCandidate(swappedSeparation, spec, harness.policy).some((failure) => failure.includes('runtimeFingerprint no coincide')))
 
   const wrongForm = structuredClone(candidate)
   wrongForm.formId = 'perfekt-sein'
@@ -154,6 +172,13 @@ test('candidate contract rejects incomplete level 6 units and malformed evidence
   const futureSpec = harness.forms['futur-zwei']
   futureTwo.runtime.finalStories[0].gaps[0].answers = ['gemacht haben']
   assert.ok(validateCandidate(futureTwo, futureSpec, harness.policy).some((failure) => failure.includes('unidad verbal completa')))
+
+  futureTwo.runtime.finalStories[0].gaps[0].answers = ['veranstaltet hat wird']
+  assert.ok(validateCandidate(futureTwo, futureSpec, harness.policy).some((failure) => failure.includes('no cumple la construcción')))
+
+  const imperative = validCandidate('imperativ')
+  imperative.runtime.finalStories[0].gaps[0].answers = ['prüft']
+  assert.ok(validateCandidate(imperative, harness.forms.imperativ, harness.policy).some((failure) => failure.includes('accepted no coincide')))
 })
 
 test('state is derived from matching evidence and stale evidence is invalidated', () => {
@@ -170,6 +195,7 @@ test('state is derived from matching evidence and stale evidence is invalidated'
     formId,
     verdict: 'PASS',
     candidateFingerprint,
+    harnessFingerprint: fingerprints.harnessFingerprint,
     specFingerprint: fingerprints.specFingerprint,
     promptFingerprint: fingerprints.promptFingerprint,
     checks: [],
@@ -179,6 +205,7 @@ test('state is derived from matching evidence and stale evidence is invalidated'
   const workOrder = {
     formId,
     baselineContentFingerprint: fingerprints.contentFingerprint,
+    harnessFingerprint: fingerprints.harnessFingerprint,
     specFingerprint: fingerprints.specFingerprint,
     promptFingerprint: fingerprints.promptFingerprint,
   }

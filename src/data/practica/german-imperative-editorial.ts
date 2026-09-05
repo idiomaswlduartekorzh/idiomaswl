@@ -20,4 +20,26 @@ const stories: GermanCompactStory[] = [
 const final: GermanCompactFinal[] = [
   ['Paul, ', ' bitte sofort her!','komm','kommt','kommen Sie','gekommen'],['Frau Winter, ', ' bitte das Fenster!','öffnen Sie','öffne','öffnet','geöffnet'],['Kinder, ', ' eure Hefte auf!','schlagt','schlag','schlagen Sie','geschlagen'],['Nora, ', ' bitte ehrlich!','sei','seid','seien Sie','bist'],['Herr Bauer, ', ' hier rechts ab!','biegen Sie','bieg','biegt','abgebogen'],['Ihr beiden, ', ' bitte leiser!','sprecht','sprich','sprechen Sie','gesprochen'],['Amir, ', ' deinen Schlüssel mit!','nimm','nehmt','nehmen Sie','genommen'],['Frau Koch, ', ' bitte kurz!','warten Sie','warte','wartet','gewartet'],['Spieler, ', ' euch in zwei Reihen auf!','stellt','stell','stellen Sie','gestellt'],['Lea, ', ' das Licht aus!','mach','macht','machen Sie','gemacht'],
 ]
-export const GERMAN_IMPERATIVE_EDITORIAL = createGermanCompactPack({ slug:'imperativ', form:'imperativ', focus:'Imperativ', rule:'Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen.', choices, micro, stories, final })
+const imperativePack = createGermanCompactPack({ slug:'imperativ', form:'imperativ', focus:'Imperativ', rule:'Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen.', choices, micro, stories, final })
+const imperativeAnswers: Record<string, string[]> = {
+  'de-imperativ-micro-editorial-4-gap': ['schließ', 'schließe'],
+  'de-imperativ-micro-editorial-7-gap': ['bleib', 'bleibe'],
+  'de-imperativ-long-editorial-1-gap-1': ['wasch', 'wasche'],
+  'de-imperativ-long-editorial-1-gap-2': ['heiz', 'heize'],
+  'de-imperativ-long-editorial-1-gap-3': ['rühr', 'rühre'],
+  'de-imperativ-long-editorial-4-gap-2': ['zieh', 'ziehe'],
+  'de-imperativ-long-editorial-4-gap-3': ['erstell', 'erstelle'],
+  'de-imperativ-long-editorial-7-gap-3': ['schick', 'schicke'],
+  'de-imperativ-long-editorial-10-gap-1': ['prüf', 'prüfe'],
+  'de-imperativ-long-editorial-10-gap-3': ['fahr', 'fahre'],
+}
+const withImperativeAnswers = <T extends { gaps: Array<{ id: string; answers: string[] }> }>(items: T[]) => items.map((item) => ({
+  ...item,
+  gaps: item.gaps.map((gap) => imperativeAnswers[gap.id] ? { ...gap, answers: imperativeAnswers[gap.id] } : gap),
+}))
+
+export const GERMAN_IMPERATIVE_EDITORIAL = {
+  ...imperativePack,
+  micro: withImperativeAnswers(imperativePack.micro),
+  long: withImperativeAnswers(imperativePack.long),
+}

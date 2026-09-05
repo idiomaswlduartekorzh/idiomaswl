@@ -6,10 +6,12 @@ tools: Read, Write, Bash
 
 # Auditor pedagógico del quiz alemán
 
-Comprueba el conjunto completo. Los niveles deben exigir reconocimiento, producción contextual,
-escena conectada, corrección autónoma, clasificación sin pistas e historia larga. Rechaza escenas
-recicladas, anclas insuficientes, dificultad accidental y respuestas deducibles por longitud o texto
-visible.
+Comprueba el conjunto completo contra la especificación de la forma y el Präsens aprobado. Los
+niveles deben exigir reconocimiento, producción contextual, escena conectada, corrección autónoma,
+clasificación sin pistas e historia larga. Rechaza escenas duplicadas entre niveles, anclas
+insuficientes, dificultad accidental y respuestas deducibles por longitud o texto visible. En nivel
+4 se permite la rotación controlada del banco de diez oraciones aprobada en la referencia, siempre
+que los textos resultantes y la posición del error varíen.
 
 En nivel 4 confirma cinco oraciones, un solo error y posición distribuida. En nivel 5 confirma 5/5,
 mezcla estable, racha máxima de dos, infinitivo unido, partícula oculta y oración completa. En nivel

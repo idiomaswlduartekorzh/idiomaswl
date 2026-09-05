@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-haben",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "5e490ed6611c9f76f3029b29109c2885e2edaa0db0ab837172693d85cfbd70be",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "3d7b8ef8e01a2fc75f30264f984cfe33e46442a6ddd997db94afe207481d9ef8",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "mutated-context",
+      "mutation": "de-perfekt-haben-choice-editorial-1: contexto sustituido por hueco desnudo",
+      "expected": "REJECTED",
+      "resultObserved": "REJECTED",
+      "status": "PASS",
+      "validatorFailures": [
+        "de-perfekt-haben-choice-editorial-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "mutated-classification",
+      "mutation": "de-perfekt-haben-separation-2↔de-perfekt-haben-separation-1",
+      "expected": "REJECTED",
+      "resultObserved": "REJECTED",
+      "status": "PASS",
+      "validatorFailures": [
+        "de-perfekt-haben-separation-1: runtimeFingerprint no coincide con el reto materializado",
+        "de-perfekt-haben-separation-2: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "mutated-answer",
+      "mutation": "geplant hat → planen hat",
+      "expected": "REJECTED",
+      "resultObserved": "REJECTED",
+      "status": "PASS",
+      "validatorFailures": [
+        "de-perfekt-haben-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-perfekt-haben-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "mutated-annotation",
+      "mutation": "de-perfekt-haben-choice-editorial-1: annotations.accepted alterado",
+      "expected": "REJECTED",
+      "resultObserved": "REJECTED",
+      "status": "PASS",
+      "validatorFailures": [
+        "de-perfekt-haben-choice-editorial-1: accepted no coincide con las respuestas del runtime"
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:32:18.918Z"
+}

@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 1,
+  "formId": "konjunktiv-vergangenheit",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "2fa5e70cfd06e2ceae170e453c6eb527b473833d188ff2541d55e1975a4cca23",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "113d59bab4f02609782c3aaa297b9b2be92a48307d5bab4137f118442aea76e1",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekauft hätte"
+      ],
+      "declaredAnswer": [
+        "gekauft hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gemacht hättest"
+      ],
+      "declaredAnswer": [
+        "gemacht hättest"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gelernt hätte"
+      ],
+      "declaredAnswer": [
+        "gelernt hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gesehen hätten"
+      ],
+      "declaredAnswer": [
+        "gesehen hätten"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefunden hättet"
+      ],
+      "declaredAnswer": [
+        "gefunden hättet"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gespielt hätten"
+      ],
+      "declaredAnswer": [
+        "gespielt hätten"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegangen wäre"
+      ],
+      "declaredAnswer": [
+        "gegangen wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekommen wärst"
+      ],
+      "declaredAnswer": [
+        "gekommen wärst"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "geblieben wäre"
+      ],
+      "declaredAnswer": [
+        "geblieben wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefahren wären"
+      ],
+      "declaredAnswer": [
+        "gefahren wären"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "geschickt hätte"
+      ],
+      "declaredAnswer": [
+        "geschickt hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "angekommen wäre"
+      ],
+      "declaredAnswer": [
+        "angekommen wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "vermieden hätten"
+      ],
+      "declaredAnswer": [
+        "vermieden hätten"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufgestanden wäre"
+      ],
+      "declaredAnswer": [
+        "aufgestanden wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekauft hätte"
+      ],
+      "declaredAnswer": [
+        "gekauft hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "zurückgekehrt wäre"
+      ],
+      "declaredAnswer": [
+        "zurückgekehrt wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gesendet hätte",
+        "gesandt hätte"
+      ],
+      "declaredAnswer": [
+        "gesendet hätte",
+        "gesandt hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "teilgenommen hätte"
+      ],
+      "declaredAnswer": [
+        "teilgenommen hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "geschlossen hätte"
+      ],
+      "declaredAnswer": [
+        "geschlossen hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekommen wäre"
+      ],
+      "declaredAnswer": [
+        "gekommen wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "erreicht hätte",
+        "genommen hätte",
+        "angekommen wäre"
+      ],
+      "declaredAnswer": [
+        "erreicht hätte",
+        "genommen hätte",
+        "angekommen wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gerettet hätte",
+        "gestartet hätte",
+        "verloren hätte"
+      ],
+      "declaredAnswer": [
+        "gerettet hätte",
+        "gestartet hätte",
+        "verloren hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gestartet wäre",
+        "verbessert hätte",
+        "erreicht hätte"
+      ],
+      "declaredAnswer": [
+        "gestartet wäre",
+        "verbessert hätte",
+        "erreicht hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefunden hätte",
+        "gespart hätte",
+        "angekommen wäre"
+      ],
+      "declaredAnswer": [
+        "gefunden hätte",
+        "gespart hätte",
+        "angekommen wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "wiederholt hätte",
+        "geblieben wäre",
+        "bestanden hätte"
+      ],
+      "declaredAnswer": [
+        "wiederholt hätte",
+        "geblieben wäre",
+        "bestanden hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekauft hätte",
+        "verpackt hätte",
+        "zurückgekehrt wäre"
+      ],
+      "declaredAnswer": [
+        "gekauft hätte",
+        "verpackt hätte",
+        "zurückgekehrt wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekommen wäre",
+        "gestellt hätte",
+        "beendet hätte"
+      ],
+      "declaredAnswer": [
+        "gekommen wäre",
+        "gestellt hätte",
+        "beendet hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "repariert hätte",
+        "geworden wäre",
+        "gezogen wäre"
+      ],
+      "declaredAnswer": [
+        "repariert hätte",
+        "geworden wäre",
+        "gezogen wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gesperrt hätte",
+        "evakuiert hätte",
+        "verletzt worden wäre"
+      ],
+      "declaredAnswer": [
+        "gesperrt hätte",
+        "evakuiert hätte",
+        "verletzt worden wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "belegt hätte",
+        "erkannt hätte",
+        "vermieden hätte"
+      ],
+      "declaredAnswer": [
+        "belegt hätte",
+        "erkannt hätte",
+        "vermieden hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "wäre"
+      ],
+      "declaredAnswer": [
+        "wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "wäre"
+      ],
+      "declaredAnswer": [
+        "wäre"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hätte"
+      ],
+      "declaredAnswer": [
+        "hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hättet"
+      ],
+      "declaredAnswer": [
+        "hättet"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hätten"
+      ],
+      "declaredAnswer": [
+        "hätten"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "wären"
+      ],
+      "declaredAnswer": [
+        "wären"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hättest"
+      ],
+      "declaredAnswer": [
+        "hättest"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hätte"
+      ],
+      "declaredAnswer": [
+        "hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hätte"
+      ],
+      "declaredAnswer": [
+        "hätte"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "wären"
+      ],
+      "declaredAnswer": [
+        "wären"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit dem früheren Zug hätten sie das Ziel erreicht.",
+        "Mit dem früheren Zug hätten sie das Ziel erreicht"
+      ],
+      "declaredAnswer": [
+        "Mit dem früheren Zug hätten sie das Ziel erreicht.",
+        "Mit dem früheren Zug hätten sie das Ziel erreicht"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Ohne den Sturm wären die Schiffe früher zurückgekehrt.",
+        "Ohne den Sturm wären die Schiffe früher zurückgekehrt"
+      ],
+      "declaredAnswer": [
+        "Ohne den Sturm wären die Schiffe früher zurückgekehrt.",
+        "Ohne den Sturm wären die Schiffe früher zurückgekehrt"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit einem Telefon hätte ich dich sofort angerufen.",
+        "Mit einem Telefon hätte ich dich sofort angerufen"
+      ],
+      "declaredAnswer": [
+        "Mit einem Telefon hätte ich dich sofort angerufen.",
+        "Mit einem Telefon hätte ich dich sofort angerufen"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit einer Einladung hätte Nora die Ausstellung besucht.",
+        "Mit einer Einladung hätte Nora die Ausstellung besucht"
+      ],
+      "declaredAnswer": [
+        "Mit einer Einladung hätte Nora die Ausstellung besucht.",
+        "Mit einer Einladung hätte Nora die Ausstellung besucht"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Bei gutem Wetter wären wir mitgekommen.",
+        "Bei gutem Wetter wären wir mitgekommen"
+      ],
+      "declaredAnswer": [
+        "Bei gutem Wetter wären wir mitgekommen.",
+        "Bei gutem Wetter wären wir mitgekommen"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Ohne das Versprechen hätte ich alles erzählt.",
+        "Ohne das Versprechen hätte ich alles erzählt"
+      ],
+      "declaredAnswer": [
+        "Ohne das Versprechen hätte ich alles erzählt.",
+        "Ohne das Versprechen hätte ich alles erzählt"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Nach einer Erklärung hätte er die Aufgabe verstanden.",
+        "Nach einer Erklärung hätte er die Aufgabe verstanden"
+      ],
+      "declaredAnswer": [
+        "Nach einer Erklärung hätte er die Aufgabe verstanden.",
+        "Nach einer Erklärung hätte er die Aufgabe verstanden"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit der Warnung hättest du besser aufgepasst.",
+        "Mit der Warnung hättest du besser aufgepasst"
+      ],
+      "declaredAnswer": [
+        "Mit der Warnung hättest du besser aufgepasst.",
+        "Mit der Warnung hättest du besser aufgepasst"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Ohne das neue Tor wäre das Tier entkommen.",
+        "Ohne das neue Tor wäre das Tier entkommen"
+      ],
+      "declaredAnswer": [
+        "Ohne das neue Tor wäre das Tier entkommen.",
+        "Ohne das neue Tor wäre das Tier entkommen"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit mehr Platz hättet ihr alle Bücher eingepackt.",
+        "Mit mehr Platz hättet ihr alle Bücher eingepackt"
+      ],
+      "declaredAnswer": [
+        "Mit mehr Platz hättet ihr alle Bücher eingepackt.",
+        "Mit mehr Platz hättet ihr alle Bücher eingepackt"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufgebrochen wäre",
+        "angekommen wären",
+        "geändert hätte",
+        "umgekehrt wären",
+        "mitgebracht hättest",
+        "erreicht hätten",
+        "gemacht hätte",
+        "übernachtet hätte",
+        "gewartet hätte",
+        "zurückgekehrt wären"
+      ],
+      "declaredAnswer": [
+        "aufgebrochen wäre",
+        "angekommen wären",
+        "geändert hätte",
+        "umgekehrt wären",
+        "mitgebracht hättest",
+        "erreicht hätten",
+        "gemacht hätte",
+        "übernachtet hätte",
+        "gewartet hätte",
+        "zurückgekehrt wären"
+      ],
+      "rule": "hätte/wäre + Partizip II",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:33:00.951Z"
+}

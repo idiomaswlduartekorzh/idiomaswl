@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-eins",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "8be91645c57ff32412b3210e94f09e0f7fd4fdafb6ddc14baab7351c92cb580c",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "d3bcddf78e68010b90bb3dac29b1f56ffa1b1ee22910723504189802809003df",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "mutated-context",
+      "mutation": "de-futur-eins-choice-editorial-1: contexto sustituido por hueco desnudo",
+      "expected": "REJECTED",
+      "resultObserved": "REJECTED",
+      "status": "PASS",
+      "validatorFailures": [
+        "de-futur-eins-choice-editorial-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "mutated-classification",
+      "mutation": "de-futur-eins-separation-1↔de-futur-eins-separation-2",
+      "expected": "REJECTED",
+      "resultObserved": "REJECTED",
+      "status": "PASS",
+      "validatorFailures": [
+        "de-futur-eins-separation-1: runtimeFingerprint no coincide con el reto materializado",
+        "de-futur-eins-separation-2: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "mutated-answer",
+      "mutation": "veranstalten wird → veranstalten werden",
+      "expected": "REJECTED",
+      "resultObserved": "REJECTED",
+      "status": "PASS",
+      "validatorFailures": [
+        "de-futur-eins-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-futur-eins-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "mutated-annotation",
+      "mutation": "de-futur-eins-choice-editorial-1: annotations.accepted alterado",
+      "expected": "REJECTED",
+      "resultObserved": "REJECTED",
+      "status": "PASS",
+      "validatorFailures": [
+        "de-futur-eins-choice-editorial-1: accepted no coincide con las respuestas del runtime"
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:32:18.926Z"
+}

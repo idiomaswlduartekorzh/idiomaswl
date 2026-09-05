@@ -1,0 +1,1091 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-zwei",
+  "role": "auxiliary",
+  "verdict": "PASS",
+  "candidateFingerprint": "f348114f5017d903e912bbaea94d9457a94d79a9228e007b6c3eaf999e962e2e",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "561bbcc5f629adcc03344e533987efcb73b987f9d6552097b4dd85a65181c92d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "de-futur-zwei-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "machen",
+          "sense": "Morgen werde ich sagen können, dass ich alles ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "lesen",
+          "sense": "Bis Freitag wirst du sagen, dass du das Buch ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "lernen",
+          "sense": "Bis Juni wird klar sein, dass Mia viel ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kochen",
+          "sense": "Wenn ihr kommt, wird klar sein, dass wir schon ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "arbeiten",
+          "sense": "Bis acht Uhr wird klar sein, dass ihr lange ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "schlafen",
+          "sense": "Bis Mittag wird klar sein, dass die Kinder genug ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "Vor deiner Ankunft wird klar sein, dass ich ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "Bis zehn Uhr wird klar sein, dass du ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fahren",
+          "sense": "Vor Mittag wird klar sein, dass Paul nach Hause ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückkommen",
+          "sense": "Bis Sonntag wird klar sein, dass wir ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "beenden",
+          "sense": "Sie erwarten, dass wir den Bericht bis Freitag ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "Wenn du ankommst, wird klar sein, dass Mia schon ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "speichern",
+          "sense": "Um Mitternacht steht fest, dass die Techniker alle Daten ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "montieren",
+          "sense": "Bevor das Museum öffnet, erwartet man, dass das Team alle Schilder ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sammeln",
+          "sense": "Bis Ende Juni erwartet die Stiftung, dass sie eine Million Euro ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "weiterziehen",
+          "sense": "Wenn der Winter beginnt, wird klar sein, dass die Zugvögel längst ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "wiederholen",
+          "sense": "Bis zur Prüfung erwartet die Lehrerin, dass du alle Kapitel ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "produzieren",
+          "sense": "Um acht Uhr morgen wird die Anzeige zeigen, dass die Maschine zehntausend Teile ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "auswerten",
+          "sense": "Wenn der nächste Bericht erscheint, werden die Forscher bestätigen, dass sie die Daten erneut ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "reparieren",
+          "sense": "Bis Nora zurückkehrt, erwarten wir, dass der Techniker die Heizung ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufbauen",
+          "sense": "Bis die Messe öffnet, erwartet man, dass das Team den Stand ___; die Logistik bestätigt, dass sie alle Kisten ___; und die Direktorin sagt, dass sie dann in Berlin ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "liefern",
+          "sense": "Bis die Messe öffnet, erwartet man, dass das Team den Stand ___; die Logistik bestätigt, dass sie alle Kisten ___; und die Direktorin sagt, dass sie dann in Berlin ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Bis die Messe öffnet, erwartet man, dass das Team den Stand ___; die Logistik bestätigt, dass sie alle Kisten ___; und die Direktorin sagt, dass sie dann in Berlin ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "markieren",
+          "sense": "Wenn das Spiel beginnt, wird klar sein, dass der Platzwart den Rasen ___; die Trainer erwarten, dass sie die Aufstellung ___; und die Polizei rechnet damit, dass die Fans ins Stadion ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "besprechen",
+          "sense": "Wenn das Spiel beginnt, wird klar sein, dass der Platzwart den Rasen ___; die Trainer erwarten, dass sie die Aufstellung ___; und die Polizei rechnet damit, dass die Fans ins Stadion ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "strömen",
+          "sense": "Wenn das Spiel beginnt, wird klar sein, dass der Platzwart den Rasen ___; die Trainer erwarten, dass sie die Aufstellung ___; und die Polizei rechnet damit, dass die Fans ins Stadion ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "eröffnen",
+          "sense": "Am 31. Dezember erwartet die Firma, dass sie drei Filialen ___; sie prognostiziert, dass sie hundert Stellen ___; und sie geht davon aus, dass ihr Umsatz deutlich ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "schaffen",
+          "sense": "Am 31. Dezember erwartet die Firma, dass sie drei Filialen ___; sie prognostiziert, dass sie hundert Stellen ___; und sie geht davon aus, dass ihr Umsatz deutlich ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "steigen",
+          "sense": "Am 31. Dezember erwartet die Firma, dass sie drei Filialen ___; sie prognostiziert, dass sie hundert Stellen ___; und sie geht davon aus, dass ihr Umsatz deutlich ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kontrollieren",
+          "sense": "Wenn das Flugzeug landet, erwartet man, dass die Crew die Kabine ___; der Kapitän bestätigt, dass er den Bericht ___; und die Leitstelle rechnet damit, dass die Bodenmannschaft am Gate ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "senden",
+          "sense": "Wenn das Flugzeug landet, erwartet man, dass die Crew die Kabine ___; der Kapitän bestätigt, dass er den Bericht ___; und die Leitstelle rechnet damit, dass die Bodenmannschaft am Gate ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "eintreffen",
+          "sense": "Wenn das Flugzeug landet, erwartet man, dass die Crew die Kabine ___; der Kapitän bestätigt, dass er den Bericht ___; und die Leitstelle rechnet damit, dass die Bodenmannschaft am Gate ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sehen",
+          "sense": "Bevor die Preise vergeben werden, erwartet man, dass die Jury alle Filme ___; sie versichert, dass sie ihre Entscheidung ___; und der Veranstalter rechnet damit, dass mehrere Gäste aus dem Ausland ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "begründen",
+          "sense": "Bevor die Preise vergeben werden, erwartet man, dass die Jury alle Filme ___; sie versichert, dass sie ihre Entscheidung ___; und der Veranstalter rechnet damit, dass mehrere Gäste aus dem Ausland ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "anreisen",
+          "sense": "Bevor die Preise vergeben werden, erwartet man, dass die Jury alle Filme ___; sie versichert, dass sie ihre Entscheidung ___; und der Veranstalter rechnet damit, dass mehrere Gäste aus dem Ausland ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "weiterziehen",
+          "sense": "Bei Tagesanbruch wird klar sein, dass der Sturm ___; die Feuerwehr erwartet, dass sie alle Straßen ___; und die Stadt rechnet damit, dass viele Bewohner nach Hause ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "prüfen",
+          "sense": "Bei Tagesanbruch wird klar sein, dass der Sturm ___; die Feuerwehr erwartet, dass sie alle Straßen ___; und die Stadt rechnet damit, dass viele Bewohner nach Hause ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "zurückkehren",
+          "sense": "Bei Tagesanbruch wird klar sein, dass der Sturm ___; die Feuerwehr erwartet, dass sie alle Straßen ___; und die Stadt rechnet damit, dass viele Bewohner nach Hause ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "überarbeiten",
+          "sense": "Am Freitag erwartet Mara, dass sie den Text ___; ihr Kollege sagt, dass er alle Quellen ___; und die Redaktion bestätigt, dass sie die Seiten ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "prüfen",
+          "sense": "Am Freitag erwartet Mara, dass sie den Text ___; ihr Kollege sagt, dass er alle Quellen ___; und die Redaktion bestätigt, dass sie die Seiten ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "freigeben",
+          "sense": "Am Freitag erwartet Mara, dass sie den Text ___; ihr Kollege sagt, dass er alle Quellen ___; und die Redaktion bestätigt, dass sie die Seiten ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "schützen",
+          "sense": "Wenn der erste Frost kommt, erwartet man, dass die Gärtner die Pflanzen ___; sie versichern, dass sie die Leitungen ___; und der Wetterdienst rechnet damit, dass die Vögel nach Süden ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "leeren",
+          "sense": "Wenn der erste Frost kommt, erwartet man, dass die Gärtner die Pflanzen ___; sie versichern, dass sie die Leitungen ___; und der Wetterdienst rechnet damit, dass die Vögel nach Süden ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ziehen",
+          "sense": "Wenn der erste Frost kommt, erwartet man, dass die Gärtner die Pflanzen ___; sie versichern, dass sie die Leitungen ___; und der Wetterdienst rechnet damit, dass die Vögel nach Süden ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kopieren",
+          "sense": "Um Mitternacht zeigt das Protokoll, dass das System alle Dateien ___; die Techniker bestätigen, dass sie das Update ___; und die Anzeige meldet, dass der Hauptserver neu ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "testen",
+          "sense": "Um Mitternacht zeigt das Protokoll, dass das System alle Dateien ___; die Techniker bestätigen, dass sie das Update ___; und die Anzeige meldet, dass der Hauptserver neu ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "starten",
+          "sense": "Um Mitternacht zeigt das Protokoll, dass das System alle Dateien ___; die Techniker bestätigen, dass sie das Update ___; und die Anzeige meldet, dass der Hauptserver neu ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "reinigen",
+          "sense": "Wenn die Gäste zurückkommen, erwartet man, dass das Hotel die Zimmer ___; die Küche versichert, dass sie das Menü ___; und die Rezeption rechnet damit, dass der Shuttlebus am Flughafen ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "vorbereiten",
+          "sense": "Wenn die Gäste zurückkommen, erwartet man, dass das Hotel die Zimmer ___; die Küche versichert, dass sie das Menü ___; und die Rezeption rechnet damit, dass der Shuttlebus am Flughafen ___ .",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Wenn die Gäste zurückkommen, erwartet man, dass das Hotel die Zimmer ___; die Küche versichert, dass sie das Menü ___; und die Rezeption rechnet damit, dass der Shuttlebus am Flughafen ___ .",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abschließen",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "prüfen",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "testen",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "gestalten",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "pflanzen",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Vorgangspassiv abgeschlossen: worden sein; werden conserva el Futur II.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "einziehen",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "montieren",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "proben",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "erledigen",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "beenden",
+          "sense": "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ___. Die Leitung erwartet, dass die Elektriker alle Leitungen ___ und dass das Sicherheitsteam jedes Notfallsystem ___. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ___. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ___. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ___. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ___. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ___. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ___. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "erneuern",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «erneuert haben» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verdunsten",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «verdunstet sein» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "montieren",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «montiert haben» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «werden» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "wiederholen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «wiederholt haben» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "einschlafen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «eingeschlafen sein» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abschließen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «wird» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abfahren",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «wird» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sparen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "La corrección declarada «gespart haben» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "weiterziehen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «sein» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bestellen",
+          "sense": "Vor dem Fest wird die Küche alle Zutaten ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "einreichen",
+          "sense": "Am Monatsende wirst du den Antrag ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "erreichen",
+          "sense": "Am Gipfeltag wird die Gruppe ihr Ziel ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückkehren",
+          "sense": "Bis zum Abend werden die Wanderer ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abschließen",
+          "sense": "Bis Freitag wird Lea den Vertrag ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bezahlen",
+          "sense": "Vor der Abreise werden wir jede Rechnung ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "Wenn wir starten, wird der Nachtzug bereits ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "entdecken",
+          "sense": "Bis dahin wird das Labor die Ursache ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verlassen",
+          "sense": "Wenn du eintriffst, werden die Gäste das Gebäude ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-futur-zwei-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufbauen",
+          "sense": "Vor der Eröffnung werden die Helfer alle Stände ___.",
+          "valency": "Uso transitivo, actividad o evento sin desplazamiento dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:32:18.913Z"
+}

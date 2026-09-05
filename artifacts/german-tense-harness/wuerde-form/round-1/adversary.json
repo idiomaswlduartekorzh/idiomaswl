@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "formId": "wuerde-form",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "b737f636483dc7ddfea0e5a6ce30dcd14068a02d09185c21dcc9b5070eca4b14",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "c158450ee0c6969f6903ff5c74943869074d17df509e56fa081eb37ed3e0243d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "baseline-valid",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "id": "final-answer-linkage",
+      "status": "PASS",
+      "mutation": "eröffnen würde → eröffnen wird",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-wuerde-form-written-final-story-gap-1: \"eröffnen wird\" no cumple la construcción finite würde + Infinitiv",
+        "de-wuerde-form-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-wuerde-form-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n4-answer-linkage",
+      "status": "PASS",
+      "mutation": "Sustitución aislada de la corrección declarada en N4",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-wuerde-form-independent-error-1: accepted no coincide con las respuestas del runtime",
+        "de-wuerde-form-independent-error-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n5-answer-linkage",
+      "status": "PASS",
+      "mutation": "Sustitución aislada de la oración completa declarada en N5",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-wuerde-form-separation-1: accepted no coincide con las respuestas del runtime",
+        "de-wuerde-form-separation-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "context-fingerprint",
+      "status": "PASS",
+      "mutation": "Eliminación del ancla o destinatario de la primera decisión de N6 sin tocar la respuesta",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-wuerde-form-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "classification-fingerprint",
+      "status": "PASS",
+      "mutation": "Intercambio de una etiqueta separable y una inseparable manteniendo el balance 5/5",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-wuerde-form-separation-1: runtimeFingerprint no coincide con el reto materializado",
+        "de-wuerde-form-separation-2: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "form-variant-linkage",
+      "status": "PASS",
+      "mutation": "Cambio de una forma würde por una forma finita no concordada",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-wuerde-form-micro-editorial-1: accepted no coincide con las respuestas del runtime",
+        "de-wuerde-form-micro-editorial-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "content-alternatives",
+      "status": "PASS",
+      "evidence": "N4 y N5 contienen hipótesis explícitas que excluyen una lectura meramente futura del indicativo."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "ADVERSARIAL-GATES-CLOSED",
+      "detail": "Las mutaciones de respuesta, contexto y clasificación fueron rechazadas; el runtimeFingerprint por ítem y el enlace de respuestas protegen el candidato."
+    }
+  ],
+  "generatedAt": "2026-09-05T15:32:02.747Z"
+}

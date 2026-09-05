@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-haben",
+  "role": "pedagogy",
+  "verdict": "PASS",
+  "candidateFingerprint": "5e490ed6611c9f76f3029b29109c2885e2edaa0db0ab837172693d85cfbd70be",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "3d7b8ef8e01a2fc75f30264f984cfe33e46442a6ddd997db94afe207481d9ef8",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "coverage-and-progression",
+      "status": "PASS",
+      "percentage": 100,
+      "evidence": "10 retos en N1–N5 y una historia N6; reconocimiento, producción, escena, corrección, separación e integración aparecen en orden."
+    },
+    {
+      "id": "clause-distribution",
+      "status": "PASS",
+      "percentage": 100,
+      "evidence": "N2 y N3 usan el tipo de cláusula que hace inequívoca la forma; el contrato corregido no impone alternancia artificial."
+    },
+    {
+      "id": "cross-level-originality",
+      "status": "PASS",
+      "percentage": 100,
+      "duplicates": [],
+      "evidence": "No hay textos completos idénticos entre niveles."
+    },
+    {
+      "id": "level-4-controlled-rotation",
+      "status": "PASS",
+      "percentage": 100,
+      "errorPositions": [
+        2,
+        3,
+        4,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "evidence": "Cada texto contiene cinco oraciones, un solo error y las posiciones 1–5 aparecen dos veces; la rotación controlada está permitida."
+    },
+    {
+      "id": "level-5-no-leak",
+      "status": "PASS",
+      "percentage": 100,
+      "sequence": [
+        "inseparable",
+        "separable",
+        "inseparable",
+        "inseparable",
+        "separable",
+        "inseparable",
+        "separable",
+        "inseparable",
+        "separable",
+        "separable"
+      ],
+      "classChanges": 7,
+      "longestRun": 2,
+      "visibleLeaks": [],
+      "evidence": "Balance 5/5, al menos seis cambios, racha máxima dos, infinitivo unido y respuesta como oración completa."
+    },
+    {
+      "id": "level-6-integrated-story",
+      "status": "PASS",
+      "percentage": 100,
+      "gaps": 10,
+      "minimumAnswerTokens": 2,
+      "evidence": "Historia continua con diez o más decisiones y la unidad exigida por la especificación en cada hueco."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:32:18.915Z"
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-zwei",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "f348114f5017d903e912bbaea94d9457a94d79a9228e007b6c3eaf999e962e2e",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "561bbcc5f629adcc03344e533987efcb73b987f9d6552097b4dd85a65181c92d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "answer-mutation",
+      "status": "PASS",
+      "itemId": "de-futur-zwei-written-final-story-gap-1",
+      "mutation": "abgeschlossen haben werden → abgeschlossen werden",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorMessages": [
+        "de-futur-zwei-written-final-story-gap-1: \"abgeschlossen werden\" no contiene la unidad verbal completa (3 palabras)",
+        "de-futur-zwei-written-final-story-gap-1: \"abgeschlossen werden\" no cumple la construcción finite werden + Partizip II + haben/sein",
+        "de-futur-zwei-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-futur-zwei-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "context-mutation",
+      "status": "PASS",
+      "itemId": "de-futur-zwei-micro-editorial-1",
+      "mutation": "Sie erwarten, dass wir den Bericht bis Freitag  → Sie erwarten, dass wir den Bericht bis Freitag  plötzlich",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorMessages": [
+        "de-futur-zwei-micro-editorial-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "classification-mutation",
+      "status": "PASS",
+      "itemId": "de-futur-zwei-separation-1",
+      "mutation": "inseparable → separable",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorMessages": [
+        "candidate.runtime: balance separable 5",
+        "candidate.runtime: balance inseparable 5",
+        "de-futur-zwei-separation-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "always-first-option",
+      "status": "PASS",
+      "firstChoiceHits": 3,
+      "total": 10,
+      "detail": "Elegir siempre A queda muy por debajo del aprobado."
+    },
+    {
+      "id": "separation-leak",
+      "status": "PASS",
+      "detail": "Los prompts del nivel 5 no dejan una partícula separada visible; la clase no se deduce por esa pista."
+    },
+    {
+      "id": "content-alternatives",
+      "status": "PASS",
+      "findings": []
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:33:00.951Z"
+}

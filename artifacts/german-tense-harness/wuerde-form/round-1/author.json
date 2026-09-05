@@ -1,0 +1,2826 @@
+{
+  "schemaVersion": 1,
+  "formId": "wuerde-form",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "b737f636483dc7ddfea0e5a6ce30dcd14068a02d09185c21dcc9b5070eca4b14",
+  "specFingerprint": "c158450ee0c6969f6903ff5c74943869074d17df509e56fa081eb37ed3e0243d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "baselineContentFingerprint": "f26845f4ded31c852959efc7c070776b5219605640a456ba1271e81afba3cf4c",
+  "candidate": {
+    "formId": "wuerde-form",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-wuerde-form-choice-editorial-1",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „ich“ mit reisen.",
+          "context": "Mit mehr Zeit sage ich, dass ich öfter ___.",
+          "options": [
+            "reisen würde",
+            "reisen würdest",
+            "reisen würdet",
+            "reisen würden"
+          ],
+          "answer": "reisen würde",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-2",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „du“ mit helfen.",
+          "context": "An meiner Stelle sagst du, dass du sofort ___.",
+          "options": [
+            "helfen würde",
+            "helfen würdest",
+            "helfen würdet",
+            "helfen würden"
+          ],
+          "answer": "helfen würdest",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-3",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „Mia“ mit kommen.",
+          "context": "Mit einem Auto sagt Mia, dass sie früher ___.",
+          "options": [
+            "kommen würdest",
+            "kommen würdet",
+            "kommen würde",
+            "kommen würden"
+          ],
+          "answer": "kommen würde",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-4",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „wir“ mit kochen.",
+          "context": "Mit einer Küche sagen wir, dass wir selbst ___.",
+          "options": [
+            "kochen würde",
+            "kochen würdest",
+            "kochen würdet",
+            "kochen würden"
+          ],
+          "answer": "kochen würden",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-5",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „ihr“ mit bleiben.",
+          "context": "Ohne den Regen sagt ihr, dass ihr länger ___.",
+          "options": [
+            "bleiben würdet",
+            "bleiben würde",
+            "bleiben würdest",
+            "bleiben würden"
+          ],
+          "answer": "bleiben würdet",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-6",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „die Kinder“ mit spielen.",
+          "context": "Bei Sonne glaube ich, dass die Kinder draußen ___.",
+          "options": [
+            "spielen würde",
+            "spielen würden",
+            "spielen würdest",
+            "spielen würdet"
+          ],
+          "answer": "spielen würden",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-7",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „ich“ mit kaufen.",
+          "context": "Mit genug Geld sage ich, dass ich das Rad ___.",
+          "options": [
+            "kaufen würdest",
+            "kaufen würdet",
+            "kaufen würde",
+            "kaufen würden"
+          ],
+          "answer": "kaufen würde",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-8",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „du“ mit arbeiten.",
+          "context": "Ohne Lärm sagst du, dass du besser ___.",
+          "options": [
+            "arbeiten würde",
+            "arbeiten würdet",
+            "arbeiten würden",
+            "arbeiten würdest"
+          ],
+          "answer": "arbeiten würdest",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-9",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „Paul“ mit wohnen.",
+          "context": "In Berlin sagt Paul, dass er zentral ___.",
+          "options": [
+            "wohnen würde",
+            "wohnen würdest",
+            "wohnen würdet",
+            "wohnen würden"
+          ],
+          "answer": "wohnen würde",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        },
+        {
+          "id": "de-wuerde-form-choice-editorial-10",
+          "tenses": [
+            "wuerde-form"
+          ],
+          "focus": "würde + Infinitiv",
+          "prompt": "Wähle die passende Form für „wir“ mit aufräumen.",
+          "context": "Mit Hilfe sagen wir, dass wir schneller ___.",
+          "options": [
+            "aufräumen würde",
+            "aufräumen würden",
+            "aufräumen würdest",
+            "aufräumen würdet"
+          ],
+          "answer": "aufräumen würden",
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-wuerde-form-micro-editorial-1",
+          "title": "Mehr freie Zeit",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „reisen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Mit mehr freier Zeit sagt Lea, dass sie öfter ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-1-gap",
+              "tense": "wuerde-form",
+              "verb": "reisen",
+              "answers": [
+                "reisen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-2",
+          "title": "Im Restaurant",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „reservieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wir sagen dem Kellner, dass wir gern einen Tisch ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-2-gap",
+              "tense": "wuerde-form",
+              "verb": "reservieren",
+              "answers": [
+                "reservieren würden"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-3",
+          "title": "An deiner Stelle",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „annehmen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ich glaube, dass Mara an deiner Stelle das Angebot ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-3-gap",
+              "tense": "wuerde-form",
+              "verb": "annehmen",
+              "answers": [
+                "annehmen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-4",
+          "title": "Ein ruhigeres Viertel",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „schlafen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ohne den Verkehr meint Paul, dass er besser ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-4-gap",
+              "tense": "wuerde-form",
+              "verb": "schlafen",
+              "answers": [
+                "schlafen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-5",
+          "title": "Die höfliche Anfrage",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „warten“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Kundin erklärt, dass sie gern länger ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-5-gap",
+              "tense": "wuerde-form",
+              "verb": "warten",
+              "answers": [
+                "warten würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-6",
+          "title": "Ein größeres Budget",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „finanzieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Mit mehr Geld sagt das Team, dass es eine zweite Studie ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-6-gap",
+              "tense": "wuerde-form",
+              "verb": "finanzieren",
+              "answers": [
+                "finanzieren würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-7",
+          "title": "Der andere Weg",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „wählen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "An deiner Stelle denke ich, dass Amir den Küstenweg ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-7-gap",
+              "tense": "wuerde-form",
+              "verb": "wählen",
+              "answers": [
+                "wählen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-8",
+          "title": "Eine Bitte",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „helfen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Nora fragt, ob ich ihr kurz ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-8-gap",
+              "tense": "wuerde-form",
+              "verb": "helfen",
+              "answers": [
+                "helfen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-9",
+          "title": "Ohne Zeitdruck",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „prüfen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ohne Zeitdruck sagt die Redaktion, dass sie jeden Artikel zweimal ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-9-gap",
+              "tense": "wuerde-form",
+              "verb": "prüfen",
+              "answers": [
+                "prüfen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-micro-editorial-10",
+          "title": "Das Traumhaus",
+          "focus": "würde + Infinitiv",
+          "instruction": "Konjugiere „wohnen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wenn alles möglich wäre, erklärt Mia, dass sie am Meer ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-micro-editorial-10-gap",
+              "tense": "wuerde-form",
+              "verb": "wohnen",
+              "answers": [
+                "wohnen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-wuerde-form-long-editorial-1",
+          "title": "Ein freier Monat",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit einem freien Monat sagt Lina, dass sie nach Island ",
+            "; ihr Bruder meint, dass er ein Wohnmobil ",
+            "; und beide erklären, dass sie ohne festen Plan ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-1-gap-1",
+              "tense": "wuerde-form",
+              "verb": "fliegen",
+              "answers": [
+                "fliegen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-1-gap-2",
+              "tense": "wuerde-form",
+              "verb": "mieten",
+              "answers": [
+                "mieten würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-1-gap-3",
+              "tense": "wuerde-form",
+              "verb": "reisen",
+              "answers": [
+                "reisen würden"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-2",
+          "title": "Die höfliche Umbuchung",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Gast fragt, ob das Hotel den Termin ",
+            "; er sagt, dass er auch ein kleineres Zimmer ",
+            "; und die Rezeption erklärt, dass sie gern eine Lösung ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-2-gap-1",
+              "tense": "wuerde-form",
+              "verb": "verschieben",
+              "answers": [
+                "verschieben würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-2-gap-2",
+              "tense": "wuerde-form",
+              "verb": "nehmen",
+              "answers": [
+                "nehmen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-2-gap-3",
+              "tense": "wuerde-form",
+              "verb": "suchen",
+              "answers": [
+                "suchen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-3",
+          "title": "Ohne Baustelle",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Ohne die Baustelle meint die Ladenbesitzerin, dass mehr Kunden ",
+            "; sie glaubt, dass der Umsatz ",
+            "; und sie sagt, dass sie zusätzliches Personal ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-3-gap-1",
+              "tense": "wuerde-form",
+              "verb": "kommen",
+              "answers": [
+                "kommen würden"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-3-gap-2",
+              "tense": "wuerde-form",
+              "verb": "steigen",
+              "answers": [
+                "steigen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-3-gap-3",
+              "tense": "wuerde-form",
+              "verb": "einstellen",
+              "answers": [
+                "einstellen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-4",
+          "title": "Der ideale Arbeitstag",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Bei freier Wahl sagt Amir, dass er später ",
+            "; seine Kollegin meint, dass sie mittags Sport ",
+            "; und beide erklären, dass sie abends früher ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-4-gap-1",
+              "tense": "wuerde-form",
+              "verb": "beginnen",
+              "answers": [
+                "beginnen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-4-gap-2",
+              "tense": "wuerde-form",
+              "verb": "machen",
+              "answers": [
+                "machen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-4-gap-3",
+              "tense": "wuerde-form",
+              "verb": "aufhören",
+              "answers": [
+                "aufhören würden"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-5",
+          "title": "Ein besseres Verkehrssystem",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit häufigeren Zügen meint die Stadt, dass weniger Menschen Auto ",
+            "; sie erwartet, dass die Luft sauberer ",
+            "; und sie glaubt, dass das Zentrum ruhiger ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-5-gap-1",
+              "tense": "wuerde-form",
+              "verb": "fahren",
+              "answers": [
+                "fahren würden"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-5-gap-2",
+              "tense": "wuerde-form",
+              "verb": "werden",
+              "answers": [
+                "werden würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-5-gap-3",
+              "tense": "wuerde-form",
+              "verb": "werden",
+              "answers": [
+                "werden würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-6",
+          "title": "Die Beratung",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Beraterin sagt, dass sie an Pauls Stelle zuerst Kosten ",
+            "; dann erklärt sie, dass sie mehrere Angebote ",
+            "; schließlich meint sie, dass sie erst danach ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-6-gap-1",
+              "tense": "wuerde-form",
+              "verb": "vergleichen",
+              "answers": [
+                "vergleichen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-6-gap-2",
+              "tense": "wuerde-form",
+              "verb": "einholen",
+              "answers": [
+                "einholen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-6-gap-3",
+              "tense": "wuerde-form",
+              "verb": "entscheiden",
+              "answers": [
+                "entscheiden würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-7",
+          "title": "Das größere Labor",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit mehr Raum sagt die Forscherin, dass ihr Team neue Geräte ",
+            "; sie meint, dass es mehr Proben ",
+            "; und sie glaubt, dass es schneller Ergebnisse ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-7-gap-1",
+              "tense": "wuerde-form",
+              "verb": "installieren",
+              "answers": [
+                "installieren würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-7-gap-2",
+              "tense": "wuerde-form",
+              "verb": "lagern",
+              "answers": [
+                "lagern würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-7-gap-3",
+              "tense": "wuerde-form",
+              "verb": "liefern",
+              "answers": [
+                "liefern würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-8",
+          "title": "Die höfliche Reklamation",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Kundin fragt, ob der Händler das Gerät ",
+            "; sie erklärt, dass sie einen Gutschein ",
+            "; und der Mitarbeiter sagt, dass er den Fall sofort ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-8-gap-1",
+              "tense": "wuerde-form",
+              "verb": "ersetzen",
+              "answers": [
+                "ersetzen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-8-gap-2",
+              "tense": "wuerde-form",
+              "verb": "akzeptieren",
+              "answers": [
+                "akzeptieren würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-8-gap-3",
+              "tense": "wuerde-form",
+              "verb": "prüfen",
+              "answers": [
+                "prüfen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-9",
+          "title": "Ein Jahr auf dem Land",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Wenn sie ortsunabhängig wäre, sagt Nora, dass sie aufs Land ",
+            "; sie meint, dass sie einen Garten ",
+            "; und sie glaubt, dass ihre Kinder draußen mehr ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-9-gap-1",
+              "tense": "wuerde-form",
+              "verb": "ziehen",
+              "answers": [
+                "ziehen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-9-gap-2",
+              "tense": "wuerde-form",
+              "verb": "anlegen",
+              "answers": [
+                "anlegen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-9-gap-3",
+              "tense": "wuerde-form",
+              "verb": "spielen",
+              "answers": [
+                "spielen würden"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-wuerde-form-long-editorial-10",
+          "title": "Der andere Entwurf",
+          "focus": "würde + Infinitiv",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit mehr Zeit sagt der Architekt, dass er den Eingang ",
+            "; er meint, dass er größere Fenster ",
+            "; und er erklärt, dass er den Hof stärker ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-long-editorial-10-gap-1",
+              "tense": "wuerde-form",
+              "verb": "verlegen",
+              "answers": [
+                "verlegen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-10-gap-2",
+              "tense": "wuerde-form",
+              "verb": "planen",
+              "answers": [
+                "planen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-long-editorial-10-gap-3",
+              "tense": "wuerde-form",
+              "verb": "begrünen",
+              "answers": [
+                "begrünen würde"
+              ]
+            }
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-wuerde-form-independent-error-1",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 1",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn ich mehr Zeit hätte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-1-token-1"
+            },
+            {
+              "before": " ich täglich kochen. Wenn wir ein ruhigeres Zimmer bekämen, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-1-token-2"
+            },
+            {
+              "before": " wir gern ein ruhigeres Zimmer buchen. Wenn Sie kurz warten könnten, ",
+              "form": "werde",
+              "id": "de-wuerde-form-independent-error-1-token-3"
+            },
+            {
+              "before": " ich sofort den Leiter holen. Wenn der Verein mehr Geld hätte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-1-token-4"
+            },
+            {
+              "before": " der Verein das Projekt mit einer Spende unterstützen. Wenn ich wählen dürfte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-1-token-5"
+            }
+          ],
+          "after": " ich bitte einen Tee nehmen.",
+          "wrongId": "de-wuerde-form-independent-error-1-token-3",
+          "answers": [
+            "würde"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-2",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 2",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn Lena an deiner Stelle wäre, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-2-token-1"
+            },
+            {
+              "before": " sie den Vertrag prüfen. Wenn es nicht so laut wäre, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-2-token-2"
+            },
+            {
+              "before": " die Kinder besser schlafen. Wenn das Wetter besser wäre, ",
+              "form": "würdet",
+              "id": "de-wuerde-form-independent-error-2-token-3"
+            },
+            {
+              "before": " ihr länger draußen bleiben. Wenn Nora die Erlaubnis bekäme, ",
+              "form": "wird",
+              "id": "de-wuerde-form-independent-error-2-token-4"
+            },
+            {
+              "before": " sie allein reisen. Wenn wir einen größeren Saal hätten, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-2-token-5"
+            }
+          ],
+          "after": " wir mehr Gäste einladen.",
+          "wrongId": "de-wuerde-form-independent-error-2-token-4",
+          "answers": [
+            "würde"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-3",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 3",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn wir ein ruhigeres Zimmer bekämen, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-3-token-1"
+            },
+            {
+              "before": " wir gern ein ruhigeres Zimmer buchen. Wenn Sie kurz warten könnten, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-3-token-2"
+            },
+            {
+              "before": " ich sofort den Leiter holen. Wenn der Verein mehr Geld hätte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-3-token-3"
+            },
+            {
+              "before": " der Verein das Projekt mit einer Spende unterstützen. Wenn ich wählen dürfte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-3-token-4"
+            },
+            {
+              "before": " ich bitte einen Tee nehmen. Wenn ich mehr Zeit hätte, ",
+              "form": "werde",
+              "id": "de-wuerde-form-independent-error-3-token-5"
+            }
+          ],
+          "after": " ich täglich kochen.",
+          "wrongId": "de-wuerde-form-independent-error-3-token-5",
+          "answers": [
+            "würde"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-4",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 4",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn es nicht so laut wäre, ",
+              "form": "werden",
+              "id": "de-wuerde-form-independent-error-4-token-1"
+            },
+            {
+              "before": " die Kinder besser schlafen. Wenn das Wetter besser wäre, ",
+              "form": "würdet",
+              "id": "de-wuerde-form-independent-error-4-token-2"
+            },
+            {
+              "before": " ihr länger draußen bleiben. Wenn Nora die Erlaubnis bekäme, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-4-token-3"
+            },
+            {
+              "before": " sie allein reisen. Wenn wir einen größeren Saal hätten, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-4-token-4"
+            },
+            {
+              "before": " wir mehr Gäste einladen. Wenn Lena an deiner Stelle wäre, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-4-token-5"
+            }
+          ],
+          "after": " sie den Vertrag prüfen.",
+          "wrongId": "de-wuerde-form-independent-error-4-token-1",
+          "answers": [
+            "würden"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-5",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 5",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn Sie kurz warten könnten, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-5-token-1"
+            },
+            {
+              "before": " ich sofort den Leiter holen. Wenn der Verein mehr Geld hätte, ",
+              "form": "wird",
+              "id": "de-wuerde-form-independent-error-5-token-2"
+            },
+            {
+              "before": " der Verein das Projekt mit einer Spende unterstützen. Wenn ich wählen dürfte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-5-token-3"
+            },
+            {
+              "before": " ich bitte einen Tee nehmen. Wenn ich mehr Zeit hätte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-5-token-4"
+            },
+            {
+              "before": " ich täglich kochen. Wenn wir ein ruhigeres Zimmer bekämen, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-5-token-5"
+            }
+          ],
+          "after": " wir gern ein ruhigeres Zimmer buchen.",
+          "wrongId": "de-wuerde-form-independent-error-5-token-2",
+          "answers": [
+            "würde"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-6",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 6",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn das Wetter besser wäre, ",
+              "form": "würdet",
+              "id": "de-wuerde-form-independent-error-6-token-1"
+            },
+            {
+              "before": " ihr länger draußen bleiben. Wenn Nora die Erlaubnis bekäme, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-6-token-2"
+            },
+            {
+              "before": " sie allein reisen. Wenn wir einen größeren Saal hätten, ",
+              "form": "werden",
+              "id": "de-wuerde-form-independent-error-6-token-3"
+            },
+            {
+              "before": " wir mehr Gäste einladen. Wenn Lena an deiner Stelle wäre, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-6-token-4"
+            },
+            {
+              "before": " sie den Vertrag prüfen. Wenn es nicht so laut wäre, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-6-token-5"
+            }
+          ],
+          "after": " die Kinder besser schlafen.",
+          "wrongId": "de-wuerde-form-independent-error-6-token-3",
+          "answers": [
+            "würden"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-7",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 7",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn der Verein mehr Geld hätte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-7-token-1"
+            },
+            {
+              "before": " der Verein das Projekt mit einer Spende unterstützen. Wenn ich wählen dürfte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-7-token-2"
+            },
+            {
+              "before": " ich bitte einen Tee nehmen. Wenn ich mehr Zeit hätte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-7-token-3"
+            },
+            {
+              "before": " ich täglich kochen. Wenn wir ein ruhigeres Zimmer bekämen, ",
+              "form": "werden",
+              "id": "de-wuerde-form-independent-error-7-token-4"
+            },
+            {
+              "before": " wir gern ein ruhigeres Zimmer buchen. Wenn Sie kurz warten könnten, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-7-token-5"
+            }
+          ],
+          "after": " ich sofort den Leiter holen.",
+          "wrongId": "de-wuerde-form-independent-error-7-token-4",
+          "answers": [
+            "würden"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-8",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 8",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn Nora die Erlaubnis bekäme, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-8-token-1"
+            },
+            {
+              "before": " sie allein reisen. Wenn wir einen größeren Saal hätten, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-8-token-2"
+            },
+            {
+              "before": " wir mehr Gäste einladen. Wenn Lena an deiner Stelle wäre, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-8-token-3"
+            },
+            {
+              "before": " sie den Vertrag prüfen. Wenn es nicht so laut wäre, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-8-token-4"
+            },
+            {
+              "before": " die Kinder besser schlafen. Wenn das Wetter besser wäre, ",
+              "form": "werdet",
+              "id": "de-wuerde-form-independent-error-8-token-5"
+            }
+          ],
+          "after": " ihr länger draußen bleiben.",
+          "wrongId": "de-wuerde-form-independent-error-8-token-5",
+          "answers": [
+            "würdet"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-9",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 9",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn ich wählen dürfte, ",
+              "form": "werde",
+              "id": "de-wuerde-form-independent-error-9-token-1"
+            },
+            {
+              "before": " ich bitte einen Tee nehmen. Wenn ich mehr Zeit hätte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-9-token-2"
+            },
+            {
+              "before": " ich täglich kochen. Wenn wir ein ruhigeres Zimmer bekämen, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-9-token-3"
+            },
+            {
+              "before": " wir gern ein ruhigeres Zimmer buchen. Wenn Sie kurz warten könnten, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-9-token-4"
+            },
+            {
+              "before": " ich sofort den Leiter holen. Wenn der Verein mehr Geld hätte, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-9-token-5"
+            }
+          ],
+          "after": " der Verein das Projekt mit einer Spende unterstützen.",
+          "wrongId": "de-wuerde-form-independent-error-9-token-1",
+          "answers": [
+            "würde"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-wuerde-form-independent-error-10",
+          "tense": "wuerde-form",
+          "title": "Korrekturrunde · 10",
+          "focus": "würde + Infinitiv",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn wir einen größeren Saal hätten, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-10-token-1"
+            },
+            {
+              "before": " wir mehr Gäste einladen. Wenn Lena an deiner Stelle wäre, ",
+              "form": "wird",
+              "id": "de-wuerde-form-independent-error-10-token-2"
+            },
+            {
+              "before": " sie den Vertrag prüfen. Wenn es nicht so laut wäre, ",
+              "form": "würden",
+              "id": "de-wuerde-form-independent-error-10-token-3"
+            },
+            {
+              "before": " die Kinder besser schlafen. Wenn das Wetter besser wäre, ",
+              "form": "würdet",
+              "id": "de-wuerde-form-independent-error-10-token-4"
+            },
+            {
+              "before": " ihr länger draußen bleiben. Wenn Nora die Erlaubnis bekäme, ",
+              "form": "würde",
+              "id": "de-wuerde-form-independent-error-10-token-5"
+            }
+          ],
+          "after": " sie allein reisen.",
+          "wrongId": "de-wuerde-form-independent-error-10-token-2",
+          "answers": [
+            "würde"
+          ],
+          "explanation": "„würde + Infinitiv“ formuliert eine hypothetische Folge, einen Rat oder eine höfliche Bitte; eine sichtbare Bedingung oder Gesprächsfunktion grenzt sie von Futur I ab. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-wuerde-form-separation-1",
+          "tense": "wuerde-form",
+          "title": "teilnehmen · 1",
+          "focus": "wuerde-form",
+          "verb": "teilnehmen",
+          "separation": "separable",
+          "prompt": "Ohne den Termin ___ ihr am Kurs teilnehmen.",
+          "answers": [
+            "Ohne den Termin würdet ihr am Kurs teilnehmen.",
+            "Ohne den Termin würdet ihr am Kurs teilnehmen"
+          ],
+          "explanation": "„teilnehmen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-wuerde-form-separation-2",
+          "tense": "wuerde-form",
+          "title": "bekommen · 2",
+          "focus": "wuerde-form",
+          "verb": "bekommen",
+          "separation": "inseparable",
+          "prompt": "Mit dem Stipendium ___ die Studierenden mehr Unterstützung bekommen.",
+          "answers": [
+            "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen.",
+            "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen"
+          ],
+          "explanation": "„bekommen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-wuerde-form-separation-3",
+          "tense": "wuerde-form",
+          "title": "vorbereiten · 3",
+          "focus": "wuerde-form",
+          "verb": "vorbereiten",
+          "separation": "separable",
+          "prompt": "An deiner Stelle ___ ich das Gespräch vorbereiten.",
+          "answers": [
+            "An deiner Stelle würde ich das Gespräch vorbereiten.",
+            "An deiner Stelle würde ich das Gespräch vorbereiten"
+          ],
+          "explanation": "„vorbereiten“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-wuerde-form-separation-4",
+          "tense": "wuerde-form",
+          "title": "anrufen · 4",
+          "focus": "wuerde-form",
+          "verb": "anrufen",
+          "separation": "separable",
+          "prompt": "Mit deiner Nummer ___ ich die Werkstatt sofort anrufen.",
+          "answers": [
+            "Mit deiner Nummer würde ich die Werkstatt sofort anrufen.",
+            "Mit deiner Nummer würde ich die Werkstatt sofort anrufen"
+          ],
+          "explanation": "„anrufen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-wuerde-form-separation-5",
+          "tense": "wuerde-form",
+          "title": "besuchen · 5",
+          "focus": "wuerde-form",
+          "verb": "besuchen",
+          "separation": "inseparable",
+          "prompt": "Wenn Nora mehr Zeit hätte, ___ sie in Berlin mehrere Museen besuchen.",
+          "answers": [
+            "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen.",
+            "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen"
+          ],
+          "explanation": "„besuchen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-wuerde-form-separation-6",
+          "tense": "wuerde-form",
+          "title": "mitkommen · 6",
+          "focus": "wuerde-form",
+          "verb": "mitkommen",
+          "separation": "separable",
+          "prompt": "Bei gutem Wetter ___ wir gern mitkommen.",
+          "answers": [
+            "Bei gutem Wetter würden wir gern mitkommen.",
+            "Bei gutem Wetter würden wir gern mitkommen"
+          ],
+          "explanation": "„mitkommen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-wuerde-form-separation-7",
+          "tense": "wuerde-form",
+          "title": "erzählen · 7",
+          "focus": "wuerde-form",
+          "verb": "erzählen",
+          "separation": "inseparable",
+          "prompt": "Vor Freunden ___ er die Geschichte anders erzählen.",
+          "answers": [
+            "Vor Freunden würde er die Geschichte anders erzählen.",
+            "Vor Freunden würde er die Geschichte anders erzählen"
+          ],
+          "explanation": "„erzählen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-wuerde-form-separation-8",
+          "tense": "wuerde-form",
+          "title": "verstehen · 8",
+          "focus": "wuerde-form",
+          "verb": "verstehen",
+          "separation": "inseparable",
+          "prompt": "Mit einem Beispiel ___ du die Regel besser verstehen.",
+          "answers": [
+            "Mit einem Beispiel würdest du die Regel besser verstehen.",
+            "Mit einem Beispiel würdest du die Regel besser verstehen"
+          ],
+          "explanation": "„verstehen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-wuerde-form-separation-9",
+          "tense": "wuerde-form",
+          "title": "aufräumen · 9",
+          "focus": "wuerde-form",
+          "verb": "aufräumen",
+          "separation": "separable",
+          "prompt": "Mit mehr Zeit ___ Lea den Keller aufräumen.",
+          "answers": [
+            "Mit mehr Zeit würde Lea den Keller aufräumen.",
+            "Mit mehr Zeit würde Lea den Keller aufräumen"
+          ],
+          "explanation": "„aufräumen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-wuerde-form-separation-10",
+          "tense": "wuerde-form",
+          "title": "entdecken · 10",
+          "focus": "wuerde-form",
+          "verb": "entdecken",
+          "separation": "inseparable",
+          "prompt": "Bei klarem Himmel ___ das Team mehr Details entdecken.",
+          "answers": [
+            "Bei klarem Himmel würde das Team mehr Details entdecken.",
+            "Bei klarem Himmel würde das Team mehr Details entdecken"
+          ],
+          "explanation": "„entdecken“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-wuerde-form-written-final-story",
+          "title": "Ein Kulturhaus für das Viertel",
+          "focus": "wuerde-form",
+          "instruction": "Lies die ganze Geschichte. Ergänze jede vollständige Verbgruppe aus Infinitiv und passender würde-Form; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Mit einem leer stehenden Gebäude erklärt der Verein, dass er ein Kulturhaus ",
+            ". Im Erdgeschoss sagt er, dass er ein kleines Café ",
+            ". Die Ehrenamtlichen erklären, dass sie dort Sprachkurse ",
+            ", und eine Musikerin sagt, dass sie jeden Freitag Proben ",
+            ". Mit einem größeren Budget meinen wir, dass wir auch die Bühne ",
+            ". Die Nachbarn sagen, dass sie den Innenhof gemeinsam ",
+            ". Die Planer glauben, dass ein ruhiger Leseraum vielen Jugendlichen beim Lernen ",
+            ". Ich sage, dass ich gern die Öffentlichkeitsarbeit ",
+            ". Die Nachbarn fragen, ob ihr am Wochenende beim Umbau ",
+            ". Unter diesen Bedingungen glaubt der Verein, dass das Haus schnell zu einem Treffpunkt ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-wuerde-form-written-final-story-gap-1",
+              "tense": "wuerde-form",
+              "verb": "eröffnen",
+              "answers": [
+                "eröffnen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-2",
+              "tense": "wuerde-form",
+              "verb": "einrichten",
+              "answers": [
+                "einrichten würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-3",
+              "tense": "wuerde-form",
+              "verb": "anbieten",
+              "answers": [
+                "anbieten würden"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-4",
+              "tense": "wuerde-form",
+              "verb": "leiten",
+              "answers": [
+                "leiten würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-5",
+              "tense": "wuerde-form",
+              "verb": "renovieren",
+              "answers": [
+                "renovieren würden"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-6",
+              "tense": "wuerde-form",
+              "verb": "bepflanzen",
+              "answers": [
+                "bepflanzen würden"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-7",
+              "tense": "wuerde-form",
+              "verb": "helfen",
+              "answers": [
+                "helfen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-8",
+              "tense": "wuerde-form",
+              "verb": "übernehmen",
+              "answers": [
+                "übernehmen würde"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-9",
+              "tense": "wuerde-form",
+              "verb": "helfen",
+              "answers": [
+                "helfen würdet"
+              ]
+            },
+            {
+              "id": "de-wuerde-form-written-final-story-gap-10",
+              "tense": "wuerde-form",
+              "verb": "werden",
+              "answers": [
+                "werden würde"
+              ]
+            }
+          ],
+          "explanation": "Jede Lücke verlangt die vollständige Einheit „Infinitiv + würde“; die Bedingung verhindert eine Lesart als bloße Zukunft."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-wuerde-form-choice-editorial-1",
+        "level": 1,
+        "lemma": "reisen",
+        "senseId": "reisen.context-1-1",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "reisen würde",
+        "accepted": [
+          "reisen würde"
+        ],
+        "distractorRationale": [
+          "«reisen würdest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«reisen würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«reisen würden» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "c87a9a9b0dde730d8c0da40071e57f79c5044a78c50b2f587a6f68f2a86b8b81"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-2",
+        "level": 1,
+        "lemma": "helfen",
+        "senseId": "helfen.context-1-2",
+        "targetForm": "wuerde-form",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "helfen würdest",
+        "accepted": [
+          "helfen würdest"
+        ],
+        "distractorRationale": [
+          "«helfen würde» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«helfen würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«helfen würden» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "690b00845a8ffa314579f01b02bc8f604174f72377e5603b1d58a346d4533f96"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-3",
+        "level": 1,
+        "lemma": "kommen",
+        "senseId": "kommen.context-1-3",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kommen würde",
+        "accepted": [
+          "kommen würde"
+        ],
+        "distractorRationale": [
+          "«kommen würdest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«kommen würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«kommen würden» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "238dee842e9b1ad385076232d3cb9f61284026fbc4beba9bbf0e0ca85b4b2d20"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-4",
+        "level": 1,
+        "lemma": "kochen",
+        "senseId": "kochen.context-1-4",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kochen würden",
+        "accepted": [
+          "kochen würden"
+        ],
+        "distractorRationale": [
+          "«kochen würde» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«kochen würdest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«kochen würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "e2e02b9f0fbfd89aa14c2dc2bbced77bd34e841d32a83d57f7bb4265dbcfaab2"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-5",
+        "level": 1,
+        "lemma": "bleiben",
+        "senseId": "bleiben.context-1-5",
+        "targetForm": "wuerde-form",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "bleiben würdet",
+        "accepted": [
+          "bleiben würdet"
+        ],
+        "distractorRationale": [
+          "«bleiben würde» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«bleiben würdest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«bleiben würden» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "9d2adad127a647c24df1dea0162e63cae5de63636f678e9a8ffd3e75d7870609"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-6",
+        "level": 1,
+        "lemma": "spielen",
+        "senseId": "spielen.context-1-6",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "spielen würden",
+        "accepted": [
+          "spielen würden"
+        ],
+        "distractorRationale": [
+          "«spielen würde» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«spielen würdest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«spielen würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "ac5ab796993042d352fdb8568a449b754663f355b5982b5a72d02dfb6e0fbd82"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-7",
+        "level": 1,
+        "lemma": "kaufen",
+        "senseId": "kaufen.context-1-7",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kaufen würde",
+        "accepted": [
+          "kaufen würde"
+        ],
+        "distractorRationale": [
+          "«kaufen würdest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«kaufen würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«kaufen würden» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "8795f4f628f9b5c238b54ec2c420538a96d378ae319bfae8b203133475d46e80"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-8",
+        "level": 1,
+        "lemma": "arbeiten",
+        "senseId": "arbeiten.context-1-8",
+        "targetForm": "wuerde-form",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "arbeiten würdest",
+        "accepted": [
+          "arbeiten würdest"
+        ],
+        "distractorRationale": [
+          "«arbeiten würde» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«arbeiten würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«arbeiten würden» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "a4a36e9d4bd386f0e0c87ec99e346797a264d0d0fe0ce84fb69886e09e04e123"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-9",
+        "level": 1,
+        "lemma": "wohnen",
+        "senseId": "wohnen.context-1-9",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wohnen würde",
+        "accepted": [
+          "wohnen würde"
+        ],
+        "distractorRationale": [
+          "«wohnen würdest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«wohnen würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«wohnen würden» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "3511b1889ec1fb93e5ecd09c817c889b3034459ef50e196fa1da39eb46256fd7"
+      },
+      {
+        "itemId": "de-wuerde-form-choice-editorial-10",
+        "level": 1,
+        "lemma": "aufräumen",
+        "senseId": "aufräumen.context-1-10",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "aufräumen würden",
+        "accepted": [
+          "aufräumen würden"
+        ],
+        "distractorRationale": [
+          "«aufräumen würde» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«aufräumen würdest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«aufräumen würdet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "24492551241783da5697858c44068ee486160947da2f36c5bf724e59423c6595"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-1",
+        "level": 2,
+        "lemma": "reisen",
+        "senseId": "reisen.context-2-1",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "reisen würde",
+        "accepted": [
+          "reisen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8e37e96b822ab873178fe0d7cd34a92ae5667ad85ed25ca42b77e8e90b46ed3b"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-2",
+        "level": 2,
+        "lemma": "reservieren",
+        "senseId": "reservieren.context-2-2",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "reservieren würden",
+        "accepted": [
+          "reservieren würden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "d86fdabbda573337122792dea7538ac8cd86c8e3a8c93755e07e5b2289891bc9"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-3",
+        "level": 2,
+        "lemma": "annehmen",
+        "senseId": "annehmen.context-2-3",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "annehmen würde",
+        "accepted": [
+          "annehmen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f934db331d4a0b5f3cdb5bda31947659543e8207e93815727b3d0601f2ab1de3"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-4",
+        "level": 2,
+        "lemma": "schlafen",
+        "senseId": "schlafen.context-2-4",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "schlafen würde",
+        "accepted": [
+          "schlafen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "ad7e8dfba23e20e89eb04c92560c24c262f165d14505369482f039311bde8f49"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-5",
+        "level": 2,
+        "lemma": "warten",
+        "senseId": "warten.context-2-5",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "warten würde",
+        "accepted": [
+          "warten würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "da13525ca22586d2c9f3b59eb20504e8dbb752e5d73a21b1ca0078f75118107b"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-6",
+        "level": 2,
+        "lemma": "finanzieren",
+        "senseId": "finanzieren.context-2-6",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "finanzieren würde",
+        "accepted": [
+          "finanzieren würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "04014d4bdd4d360e6a16b171bbbe3a62dd5f2688fe1668bd601ba90a0702f941"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-7",
+        "level": 2,
+        "lemma": "wählen",
+        "senseId": "wählen.context-2-7",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wählen würde",
+        "accepted": [
+          "wählen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "6dde04500104c7113369c67182b382cadcbfe2eb37b6356a78e37c74f1e37b36"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-8",
+        "level": 2,
+        "lemma": "helfen",
+        "senseId": "helfen.context-2-8",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "helfen würde",
+        "accepted": [
+          "helfen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f209b04e55235f06779b2ceafa2f4b2606595839d1db1f1c103d8b92d556e0d3"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-9",
+        "level": 2,
+        "lemma": "prüfen",
+        "senseId": "prüfen.context-2-9",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "prüfen würde",
+        "accepted": [
+          "prüfen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "64e48c696a3908d1b7b38ab225eda8d920c8f18bd5b22c467f49e43f741b811f"
+      },
+      {
+        "itemId": "de-wuerde-form-micro-editorial-10",
+        "level": 2,
+        "lemma": "wohnen",
+        "senseId": "wohnen.context-2-10",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wohnen würde",
+        "accepted": [
+          "wohnen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7fede6e1123623bb6c4d74c6d9566481404c2cecf528016e0eb8c24e41efabf1"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-1",
+        "level": 3,
+        "lemma": "fliegen",
+        "senseId": "fliegen.context-3-1",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "fliegen würde",
+        "accepted": [
+          "fliegen würde",
+          "mieten würde",
+          "reisen würden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "81c0ed66eff421b3be1c4cff27709db22b893e92817a9410a1e8760b7c9cb76b"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-2",
+        "level": 3,
+        "lemma": "verschieben",
+        "senseId": "verschieben.context-3-2",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "verschieben würde",
+        "accepted": [
+          "verschieben würde",
+          "nehmen würde",
+          "suchen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "313801efd10565d0a66cee801729ccd46d61fe62dfab426d78e8a1bbf12b4eea"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-3",
+        "level": 3,
+        "lemma": "kommen",
+        "senseId": "kommen.context-3-3",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kommen würden",
+        "accepted": [
+          "kommen würden",
+          "steigen würde",
+          "einstellen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e306ab79cedf59c73285c63eae55d6311f30d19b3e494e12bca870e0565c4813"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-4",
+        "level": 3,
+        "lemma": "beginnen",
+        "senseId": "beginnen.context-3-4",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "beginnen würde",
+        "accepted": [
+          "beginnen würde",
+          "machen würde",
+          "aufhören würden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4cf2cb7e201d680d2e5cbf89f0bc703d7d4d4140e94e332e787bd7d458b6dbec"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-5",
+        "level": 3,
+        "lemma": "fahren",
+        "senseId": "fahren.context-3-5",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "fahren würden",
+        "accepted": [
+          "fahren würden",
+          "werden würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "85960fa06414a671c545e3559db3eb12d0fb44d204624f6a42b6f3e9c29290f5"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-6",
+        "level": 3,
+        "lemma": "vergleichen",
+        "senseId": "vergleichen.context-3-6",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "vergleichen würde",
+        "accepted": [
+          "vergleichen würde",
+          "einholen würde",
+          "entscheiden würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "90385530d2eb9aceaf81eb68a9dfd30d55ef2a2438bc1bb0ad438887d571016a"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-7",
+        "level": 3,
+        "lemma": "installieren",
+        "senseId": "installieren.context-3-7",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "installieren würde",
+        "accepted": [
+          "installieren würde",
+          "lagern würde",
+          "liefern würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "32f0ee46c421032f526802614bd073b72e17d203eb566c4d77ee72c645577918"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-8",
+        "level": 3,
+        "lemma": "ersetzen",
+        "senseId": "ersetzen.context-3-8",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "ersetzen würde",
+        "accepted": [
+          "ersetzen würde",
+          "akzeptieren würde",
+          "prüfen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "923889e12ad6ade173c7e15ed09b027aa0a22ea1513b6ea7d16cf743aa5d5720"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-9",
+        "level": 3,
+        "lemma": "ziehen",
+        "senseId": "ziehen.context-3-9",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "ziehen würde",
+        "accepted": [
+          "ziehen würde",
+          "anlegen würde",
+          "spielen würden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "9f629c5fba018ec58bde70e6c436d3bb1a7b83ea3317144c4d121d5b2eb538c4"
+      },
+      {
+        "itemId": "de-wuerde-form-long-editorial-10",
+        "level": 3,
+        "lemma": "verlegen",
+        "senseId": "verlegen.context-3-10",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "verlegen würde",
+        "accepted": [
+          "verlegen würde",
+          "planen würde",
+          "begrünen würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "856de47dd3fcef1abe28eec33cf9fc7ffc36420983a3172f145bd2e44f7a191a"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-1",
+        "level": 4,
+        "lemma": "holen",
+        "senseId": "holen.context-4-1",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würde … holen",
+        "accepted": [
+          "würde"
+        ],
+        "distractorRationale": [
+          "«werde» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "bd6fcd19801871d3333d0976e2be07a5618b9661e50974927e074ece38b3c05c"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-2",
+        "level": 4,
+        "lemma": "reisen",
+        "senseId": "reisen.context-4-2",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würde … reisen",
+        "accepted": [
+          "würde"
+        ],
+        "distractorRationale": [
+          "«wird» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "482156e7f178cf1e3538eb0191033acd6015d42a74fcd38bb87d15504e572144"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-3",
+        "level": 4,
+        "lemma": "kochen",
+        "senseId": "kochen.context-4-3",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würde … kochen",
+        "accepted": [
+          "würde"
+        ],
+        "distractorRationale": [
+          "«werde» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "5b66bea7176bccf2093ebc6672499c0cc71c8c199d1dae779163de61204c92b8"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-4",
+        "level": 4,
+        "lemma": "schlafen",
+        "senseId": "schlafen.context-4-4",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würden … schlafen",
+        "accepted": [
+          "würden"
+        ],
+        "distractorRationale": [
+          "«werden» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "224c4c74aa4fe25b4a81187975b372765b95199d014a529879edf3e329d87396"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-5",
+        "level": 4,
+        "lemma": "unterstützen",
+        "senseId": "unterstützen.context-4-5",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "unter",
+        "expectedUnit": "würde … unterstützen",
+        "accepted": [
+          "würde"
+        ],
+        "distractorRationale": [
+          "«wird» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "60cc1aa7d2b431f26e33dd7084522a80a83f8b10b426c018158cb83399b552e3"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-6",
+        "level": 4,
+        "lemma": "einladen",
+        "senseId": "einladen.context-4-6",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würden … einladen",
+        "accepted": [
+          "würden"
+        ],
+        "distractorRationale": [
+          "«werden» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "52109ed253e0ff9fd72858bf2c41ff1bdaf311a9f4f6f6ca25c60f3b1af63eef"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-7",
+        "level": 4,
+        "lemma": "buchen",
+        "senseId": "buchen.context-4-7",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würden … buchen",
+        "accepted": [
+          "würden"
+        ],
+        "distractorRationale": [
+          "«werden» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "863c72bdb4303267081335fc48a36243b7b1e64454622ae52979fd260ab6a2a7"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-8",
+        "level": 4,
+        "lemma": "bleiben",
+        "senseId": "bleiben.context-4-8",
+        "targetForm": "wuerde-form",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würdet … bleiben",
+        "accepted": [
+          "würdet"
+        ],
+        "distractorRationale": [
+          "«werdet» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "378a5e469886e59ea090e4c70087febe4c3b2177d459fad5acc25a64fdf531b6"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-9",
+        "level": 4,
+        "lemma": "nehmen",
+        "senseId": "nehmen.context-4-9",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würde … nehmen",
+        "accepted": [
+          "würde"
+        ],
+        "distractorRationale": [
+          "«werde» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "1e3bb9c758353afef30169d87b9289bbaa76bb7b4b0f66b29ecc5cac318ac04c"
+      },
+      {
+        "itemId": "de-wuerde-form-independent-error-10",
+        "level": 4,
+        "lemma": "prüfen",
+        "senseId": "prüfen.context-4-10",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "würde … prüfen",
+        "accepted": [
+          "würde"
+        ],
+        "distractorRationale": [
+          "«wird» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "bf326cdc943c2c4aa3167dd1464d1b6dec8b0025cf417941dfafeb9cc34cf091"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-1",
+        "level": 5,
+        "lemma": "teilnehmen",
+        "senseId": "teilnehmen.context-5-1",
+        "targetForm": "wuerde-form",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "teil",
+        "expectedUnit": "Ohne den Termin würdet ihr am Kurs teilnehmen.",
+        "accepted": [
+          "Ohne den Termin würdet ihr am Kurs teilnehmen.",
+          "Ohne den Termin würdet ihr am Kurs teilnehmen"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «teilnehmen»."
+        ],
+        "runtimeFingerprint": "ea93f35b380f1d777d3cea75334d24cf08da0cfb7f80ae0393751dd6ba8e43f3"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-2",
+        "level": 5,
+        "lemma": "bekommen",
+        "senseId": "bekommen.context-5-2",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen.",
+        "accepted": [
+          "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen.",
+          "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «bekommen»."
+        ],
+        "runtimeFingerprint": "a47eaa130af48b2498fc61686aef243a88fabd61c2e3e258873f5eb5881d4e39"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-3",
+        "level": 5,
+        "lemma": "vorbereiten",
+        "senseId": "vorbereiten.context-5-3",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "vor",
+        "expectedUnit": "An deiner Stelle würde ich das Gespräch vorbereiten.",
+        "accepted": [
+          "An deiner Stelle würde ich das Gespräch vorbereiten.",
+          "An deiner Stelle würde ich das Gespräch vorbereiten"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «vorbereiten»."
+        ],
+        "runtimeFingerprint": "dd8fdda8a7005da6dfe0147d52948b05d1814491e3fb857be7c2bc6edf228e14"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-4",
+        "level": 5,
+        "lemma": "anrufen",
+        "senseId": "anrufen.context-5-4",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "Mit deiner Nummer würde ich die Werkstatt sofort anrufen.",
+        "accepted": [
+          "Mit deiner Nummer würde ich die Werkstatt sofort anrufen.",
+          "Mit deiner Nummer würde ich die Werkstatt sofort anrufen"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «anrufen»."
+        ],
+        "runtimeFingerprint": "228b61fd8db377fa2a22f53c83d6b49293f673fb34be9bcc3c10a9bad6bde3be"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-5",
+        "level": 5,
+        "lemma": "besuchen",
+        "senseId": "besuchen.context-5-5",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen.",
+        "accepted": [
+          "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen.",
+          "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «besuchen»."
+        ],
+        "runtimeFingerprint": "e965c29d73817705123ace59b9c9ff2b7926b474c60fcafa98cf143426f81461"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-6",
+        "level": 5,
+        "lemma": "mitkommen",
+        "senseId": "mitkommen.context-5-6",
+        "targetForm": "wuerde-form",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "mit",
+        "expectedUnit": "Bei gutem Wetter würden wir gern mitkommen.",
+        "accepted": [
+          "Bei gutem Wetter würden wir gern mitkommen.",
+          "Bei gutem Wetter würden wir gern mitkommen"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «mitkommen»."
+        ],
+        "runtimeFingerprint": "c5e42d0769282b9c0f7100a650f80b1181a19ea866ce593a654a2da3a76d68df"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-7",
+        "level": 5,
+        "lemma": "erzählen",
+        "senseId": "erzählen.context-5-7",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "Vor Freunden würde er die Geschichte anders erzählen.",
+        "accepted": [
+          "Vor Freunden würde er die Geschichte anders erzählen.",
+          "Vor Freunden würde er die Geschichte anders erzählen"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «erzählen»."
+        ],
+        "runtimeFingerprint": "f95ef3588a22cc03f2a935eb695c7cc54477290afc22bf5d2508f1d2871e7787"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-8",
+        "level": 5,
+        "lemma": "verstehen",
+        "senseId": "verstehen.context-5-8",
+        "targetForm": "wuerde-form",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "Mit einem Beispiel würdest du die Regel besser verstehen.",
+        "accepted": [
+          "Mit einem Beispiel würdest du die Regel besser verstehen.",
+          "Mit einem Beispiel würdest du die Regel besser verstehen"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «verstehen»."
+        ],
+        "runtimeFingerprint": "c5315798ce8349a6646b9a28a7ef938a49058faf7dd60877f791bae907d07068"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-9",
+        "level": 5,
+        "lemma": "aufräumen",
+        "senseId": "aufräumen.context-5-9",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "Mit mehr Zeit würde Lea den Keller aufräumen.",
+        "accepted": [
+          "Mit mehr Zeit würde Lea den Keller aufräumen.",
+          "Mit mehr Zeit würde Lea den Keller aufräumen"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «aufräumen»."
+        ],
+        "runtimeFingerprint": "8b7141c972217c8785829934a206bcde7745a1f4238d6a0ce622a4b22f01ee6b"
+      },
+      {
+        "itemId": "de-wuerde-form-separation-10",
+        "level": 5,
+        "lemma": "entdecken",
+        "senseId": "entdecken.context-5-10",
+        "targetForm": "wuerde-form",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ent",
+        "expectedUnit": "Bei klarem Himmel würde das Team mehr Details entdecken.",
+        "accepted": [
+          "Bei klarem Himmel würde das Team mehr Details entdecken.",
+          "Bei klarem Himmel würde das Team mehr Details entdecken"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «entdecken»."
+        ],
+        "runtimeFingerprint": "d8172378d705916839193e8c13c8aba4c6c13ea028acada99cde6c1316fc3f80"
+      },
+      {
+        "itemId": "de-wuerde-form-written-final-story",
+        "level": 6,
+        "lemma": "eröffnen; einrichten; anbieten; leiten; renovieren; bepflanzen; helfen; übernehmen; helfen; werden",
+        "senseId": "eröffnen;-einrichten;-anbieten;-leiten;-renovieren;-bepflanzen;-helfen;-übernehmen;-helfen;-werden.context-6-1",
+        "targetForm": "wuerde-form",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "hypothetical consequence, advice or polite request",
+        "anchorIds": [
+          "explicit-hypothesis-or-polite-request"
+        ],
+        "auxiliary": "würde",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "eröffnen würde | einrichten würde | anbieten würden | leiten würde | renovieren würden | bepflanzen würden | helfen würde | übernehmen würde | helfen würdet | werden würde",
+        "accepted": [
+          "eröffnen würde",
+          "einrichten würde",
+          "anbieten würden",
+          "leiten würde",
+          "renovieren würden",
+          "bepflanzen würden",
+          "helfen würde",
+          "übernehmen würde",
+          "helfen würdet",
+          "werden würde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4d99c1a2efde58a9893e877c5743f840300ec0bf219703ee05e9686706fabec5"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Goethe-Institut — Deutsche Grammatik",
+        "url": "https://www.goethe.de/ins/de/de/m/prf/grm.html",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Perfektbildung mit haben oder sein",
+        "url": "https://grammis.ids-mannheim.de/progr%40mm/5316",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Duden — Verzeichnis der Fachausdrücke: Verbpartikel und Verbpräfix",
+        "url": "https://www.duden.de/Fachausdr%C3%BCcke-Buchstabe-T-V",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "candidate-schema",
+      "status": "PASS",
+      "detail": "Cobertura 10/10/10/10/10 y una historia final validada por validateCandidate."
+    },
+    {
+      "id": "linguistic-annotations",
+      "status": "PASS",
+      "detail": "51 anotaciones con forma, persona, número, cláusula, función, auxiliar, participio y separación."
+    },
+    {
+      "id": "level-6-unit",
+      "status": "PASS",
+      "detail": "Cada hueco contiene Infinitiv + würde flexionado."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "corrected",
+      "level": 6,
+      "detail": "El runtime base dejaba sólo el auxiliar dentro del hueco; el candidato mueve la unidad verbal completa a la respuesta."
+    }
+  ],
+  "generatedAt": "2026-09-05T14:59:42.799Z",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3"
+}

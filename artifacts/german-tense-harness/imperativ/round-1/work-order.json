@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "imperativ",
+  "baseCommit": "dab197cece8c940869c05a4426badd6e5f394db7",
+  "createdAt": "2026-09-05T15:30:08.973Z",
+  "baselineContentFingerprint": "5638a23653f8dd491096e22242693f347d4d027b3637e239d37fd44efc45c02b",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "688bcebfada2bdab301a4dcbec2a767257e41e51e6ce8ed0cb0edefc7146d627",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "spec": {
+    "id": "imperativ",
+    "label": "Imperativ",
+    "sourceFile": "src/data/practica/german-imperative-editorial.ts",
+    "stage": "queued",
+    "cefr": "A1–A2",
+    "construction": "du/ihr/Sie imperative",
+    "auxiliaryPolicy": "none",
+    "allowedAuxiliaries": [],
+    "minimumFinalUnitTokens": 1,
+    "morphology": [
+      "du stem including licensed vowel behavior",
+      "ihr form without pronoun",
+      "Sie infinitive form with visible Sie"
+    ],
+    "wordOrder": [
+      "imperative first unless a vocative precedes it",
+      "detached particle at clause end for separable verbs"
+    ],
+    "contextContract": [
+      "the addressee and register must be visible"
+    ],
+    "separableContract": [
+      "hide the detached particle in level 5",
+      "write the complete command"
+    ],
+    "knownRisks": [
+      "wrong treatment",
+      "missing Sie",
+      "prefix left attached in a finite command"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-imperative-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

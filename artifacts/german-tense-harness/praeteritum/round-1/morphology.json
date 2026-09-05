@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "formId": "praeteritum",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "e949348eb6b250377116a578b9cce947c8e198238a387e53dc6612180a5c0beb",
+  "specFingerprint": "df2d954761b05ac2be0d66100a659fe33dd0784055eefc5ed2110d8dfd654b57",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "de-praeteritum-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "wohnte",
+      "declaredAnswer": "wohnte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Früher wohnte ich in Köln."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "lerntest",
+      "declaredAnswer": "lerntest",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Damals lerntest du jeden Abend."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "spielte",
+      "declaredAnswer": "spielte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Als Kind spielte Mia oft draußen."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "arbeiteten",
+      "declaredAnswer": "arbeiteten",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Im Sommer arbeiteten wir im Café."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "machtet",
+      "declaredAnswer": "machtet",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Gestern machtet ihr einen Kuchen."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "fragten",
+      "declaredAnswer": "fragten",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Die Kinder fragten nach dem Weg."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "hatte",
+      "declaredAnswer": "hatte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Als Student hatte ich wenig Geld."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "warst",
+      "declaredAnswer": "warst",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Gestern warst du sehr müde."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "brauchte",
+      "declaredAnswer": "brauchte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Paul brauchte Hilfe."
+    },
+    {
+      "id": "de-praeteritum-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": "warteten",
+      "declaredAnswer": "warteten",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Wir warteten vor der Tür."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "wohnten",
+      "declaredAnswer": "wohnten",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Damals wohnten wir in einem kleinen Dorf."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "öffnete",
+      "declaredAnswer": "öffnete",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Plötzlich öffnete jemand die Tür."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "hatte",
+      "declaredAnswer": "hatte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Als Student hatte er kein Auto."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "war",
+      "declaredAnswer": "war",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Der Bahnhof war damals fast leer."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "erhielt",
+      "declaredAnswer": "erhielt",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Am nächsten Morgen erhielt sie eine unerwartete Nachricht."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "arbeitete",
+      "declaredAnswer": "arbeitete",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Jeden Nachmittag arbeitete Paul bis zur Schließung im Lesesaal."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "prüfte",
+      "declaredAnswer": "prüfte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Wenig später prüfte der Techniker die Hauptleitung."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "konnten",
+      "declaredAnswer": "konnten",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Ohne Ausweis konnten wir das Gebäude nicht betreten."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "wählte",
+      "declaredAnswer": "wählte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Nach langem Zögern wählte die Jury den zweiten Entwurf."
+    },
+    {
+      "id": "de-praeteritum-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "kehrte",
+      "declaredAnswer": "kehrte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Bei Einbruch der Dunkelheit kehrte die Gruppe zum Lager zurück."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "hielt | öffnete | stieg",
+      "declaredAnswer": "hielt | öffnete | stieg",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Zuerst hielt der Zug am leeren Bahnsteig. Dann öffnete der Schaffner eine Tür. Schließlich stieg eine Frau aus."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "legte | öffnete | war",
+      "declaredAnswer": "legte | öffnete | war",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Mara legte die Karte auf den Tisch. Kurz darauf öffnete ein Windstoß das Fenster. Am Ende war die Karte verschwunden."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "klingelte | wachte | nannte",
+      "declaredAnswer": "klingelte | wachte | nannte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Um Mitternacht klingelte das Telefon. Paul wachte sofort auf, und eine fremde Stimme nannte seinen Namen."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "gehörte | reinigte | lag",
+      "declaredAnswer": "gehörte | reinigte | lag",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Früher gehörte die Werkstatt einem Uhrmacher. Er reinigte jeden Morgen das Schaufenster, und sein Hund lag neben der Tür."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "entdeckte | hob | lagen",
+      "declaredAnswer": "entdeckte | hob | lagen",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Lina entdeckte unter dem Baum eine Metallkiste. Sie hob vorsichtig den Deckel, und darin lagen alte Briefe."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "war | wartete | fand",
+      "declaredAnswer": "war | wartete | fand",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Jonas war zu früh im Büro. Er wartete lange vor der falschen Tür, bis eine Kollegin ihn fand ."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "wurde | fielen | sperrte",
+      "declaredAnswer": "wurde | fielen | sperrte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Am Abend wurde der Wind stärker. Mehrere Äste fielen auf die Straße, und die Feuerwehr sperrte die Zufahrt."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "kam | wurden | blieb",
+      "declaredAnswer": "kam | wurden | blieb",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Die Fähre kam erst nach Sonnenuntergang. Die Passagiere wurden unruhig, doch der Kapitän blieb ruhig."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "wirkten | wurde | löste",
+      "declaredAnswer": "wirkten | wurde | löste",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Zunächst wirkten die Aufgaben leicht. Dann wurde die Zeit knapp, und niemand löste die letzte Frage."
+    },
+    {
+      "id": "de-praeteritum-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "hörte | lief | sah",
+      "declaredAnswer": "hörte | lief | sah",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Der Wächter hörte ein leises Geräusch. Er lief in den Saal und sah dort ein offenes Fenster."
+    },
+    {
+      "id": "de-praeteritum-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "rief",
+      "declaredAnswer": "rief",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Im alten Hafen wartete ein Fischer auf das Signal. Damals besaß das Dorf nur ein Telefon. Der Hausmeister trug die Nachricht nach oben. Eine leise Stimme rief meinen Namen. Vor dem Sturm lagen die Boote noch am Ufer."
+    },
+    {
+      "id": "de-praeteritum-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "verließ",
+      "declaredAnswer": "verließ",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Die beiden Schwestern fanden unter der Treppe eine Kiste. Plötzlich erlosch das Licht im ganzen Haus. Wir wussten nichts von dem zweiten Eingang. Die Zeugin beschrieb einen roten Lieferwagen. Am Ende verließ der Fremde das Gasthaus."
+    },
+    {
+      "id": "de-praeteritum-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "besaß",
+      "declaredAnswer": "besaß",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Damals besaß das Dorf nur ein Telefon. Der Hausmeister trug die Nachricht nach oben. Eine leise Stimme rief meinen Namen. Vor dem Sturm lagen die Boote noch am Ufer. Im alten Hafen wartete ein Fischer auf das Signal."
+    },
+    {
+      "id": "de-praeteritum-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "wussten",
+      "declaredAnswer": "wussten",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Plötzlich erlosch das Licht im ganzen Haus. Wir wussten nichts von dem zweiten Eingang. Die Zeugin beschrieb einen roten Lieferwagen. Am Ende verließ der Fremde das Gasthaus. Die beiden Schwestern fanden unter der Treppe eine Kiste."
+    },
+    {
+      "id": "de-praeteritum-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "lagen",
+      "declaredAnswer": "lagen",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Der Hausmeister trug die Nachricht nach oben. Eine leise Stimme rief meinen Namen. Vor dem Sturm lagen die Boote noch am Ufer. Im alten Hafen wartete ein Fischer auf das Signal. Damals besaß das Dorf nur ein Telefon."
+    },
+    {
+      "id": "de-praeteritum-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "fanden",
+      "declaredAnswer": "fanden",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Wir wussten nichts von dem zweiten Eingang. Die Zeugin beschrieb einen roten Lieferwagen. Am Ende verließ der Fremde das Gasthaus. Die beiden Schwestern fanden unter der Treppe eine Kiste. Plötzlich erlosch das Licht im ganzen Haus."
+    },
+    {
+      "id": "de-praeteritum-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "trug",
+      "declaredAnswer": "trug",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Eine leise Stimme rief meinen Namen. Vor dem Sturm lagen die Boote noch am Ufer. Im alten Hafen wartete ein Fischer auf das Signal. Damals besaß das Dorf nur ein Telefon. Der Hausmeister trug die Nachricht nach oben."
+    },
+    {
+      "id": "de-praeteritum-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "beschrieb",
+      "declaredAnswer": "beschrieb",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Die Zeugin beschrieb einen roten Lieferwagen. Am Ende verließ der Fremde das Gasthaus. Die beiden Schwestern fanden unter der Treppe eine Kiste. Plötzlich erlosch das Licht im ganzen Haus. Wir wussten nichts von dem zweiten Eingang."
+    },
+    {
+      "id": "de-praeteritum-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "wartete",
+      "declaredAnswer": "wartete",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Vor dem Sturm lagen die Boote noch am Ufer. Im alten Hafen wartete ein Fischer auf das Signal. Damals besaß das Dorf nur ein Telefon. Der Hausmeister trug die Nachricht nach oben. Eine leise Stimme rief meinen Namen."
+    },
+    {
+      "id": "de-praeteritum-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "erlosch",
+      "declaredAnswer": "erlosch",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Am Ende verließ der Fremde das Gasthaus. Die beiden Schwestern fanden unter der Treppe eine Kiste. Plötzlich erlosch das Licht im ganzen Haus. Wir wussten nichts von dem zweiten Eingang. Die Zeugin beschrieb einen roten Lieferwagen."
+    },
+    {
+      "id": "de-praeteritum-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Wir vergaßen damals oft die Wegbeschreibung. | Wir vergaßen damals oft die Wegbeschreibung",
+      "declaredAnswer": "Wir vergaßen damals oft die Wegbeschreibung. | Wir vergaßen damals oft die Wegbeschreibung",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Wir vergaßen damals oft die Wegbeschreibung."
+    },
+    {
+      "id": "de-praeteritum-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Der Buchhändler empfahl einen kurzen Roman. | Der Buchhändler empfahl einen kurzen Roman",
+      "declaredAnswer": "Der Buchhändler empfahl einen kurzen Roman. | Der Buchhändler empfahl einen kurzen Roman",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Der Buchhändler empfahl einen kurzen Roman."
+    },
+    {
+      "id": "de-praeteritum-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Direktorin lud alle Mitarbeitenden ein. | Die Direktorin lud alle Mitarbeitenden ein",
+      "declaredAnswer": "Die Direktorin lud alle Mitarbeitenden ein. | Die Direktorin lud alle Mitarbeitenden ein",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Die Direktorin lud alle Mitarbeitenden ein."
+    },
+    {
+      "id": "de-praeteritum-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Im Dunkeln erkannte er die Stimme sofort. | Im Dunkeln erkannte er die Stimme sofort",
+      "declaredAnswer": "Im Dunkeln erkannte er die Stimme sofort. | Im Dunkeln erkannte er die Stimme sofort",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Im Dunkeln erkannte er die Stimme sofort."
+    },
+    {
+      "id": "de-praeteritum-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Am Abend gab ich den Schlüssel zurück. | Am Abend gab ich den Schlüssel zurück",
+      "declaredAnswer": "Am Abend gab ich den Schlüssel zurück. | Am Abend gab ich den Schlüssel zurück",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Am Abend gab ich den Schlüssel zurück."
+    },
+    {
+      "id": "de-praeteritum-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Zeugin beschrieb den Wagen sehr genau. | Die Zeugin beschrieb den Wagen sehr genau",
+      "declaredAnswer": "Die Zeugin beschrieb den Wagen sehr genau. | Die Zeugin beschrieb den Wagen sehr genau",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Die Zeugin beschrieb den Wagen sehr genau."
+    },
+    {
+      "id": "de-praeteritum-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Lehrerin las den Brief laut vor. | Die Lehrerin las den Brief laut vor",
+      "declaredAnswer": "Die Lehrerin las den Brief laut vor. | Die Lehrerin las den Brief laut vor",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Die Lehrerin las den Brief laut vor."
+    },
+    {
+      "id": "de-praeteritum-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Kurz vor Sonnenaufgang wachte das ganze Dorf auf. | Kurz vor Sonnenaufgang wachte das ganze Dorf auf",
+      "declaredAnswer": "Kurz vor Sonnenaufgang wachte das ganze Dorf auf. | Kurz vor Sonnenaufgang wachte das ganze Dorf auf",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Kurz vor Sonnenaufgang wachte das ganze Dorf auf."
+    },
+    {
+      "id": "de-praeteritum-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Vorstellung begann ohne Verspätung. | Die Vorstellung begann ohne Verspätung",
+      "declaredAnswer": "Die Vorstellung begann ohne Verspätung. | Die Vorstellung begann ohne Verspätung",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Die Vorstellung begann ohne Verspätung."
+    },
+    {
+      "id": "de-praeteritum-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Jonas nahm seinen kleinen Bruder mit. | Jonas nahm seinen kleinen Bruder mit",
+      "declaredAnswer": "Jonas nahm seinen kleinen Bruder mit. | Jonas nahm seinen kleinen Bruder mit",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Jonas nahm seinen kleinen Bruder mit."
+    },
+    {
+      "id": "de-praeteritum-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": "fuhr | saßen | flackerte | pfiff | klopfte | nahm | ging | fand | zitterte | erschien | dankte",
+      "declaredAnswer": "fuhr | saßen | flackerte | pfiff | klopfte | nahm | ging | fand | zitterte | erschien | dankte",
+      "rule": "Forma finita de Präteritum concordada; ablaut o -te correcto y partícula separada al final cuando corresponde.",
+      "evidence": "Der letzte Zug fuhr kurz vor Mitternacht ab. Im Wartesaal saßen nur noch drei Reisende. Eine Lampe flackerte unruhig, während draußen der Wind durch die Türen pfiff. Plötzlich klopfte jemand an ein Fenster. Der Bahnhofsvorsteher nahm seine Taschenlampe und ging langsam über den Bahnsteig. Hinter einem Gepäckwagen fand er einen verirrten Hund. Das Tier zitterte vor Kälte, ließ sich aber ruhig tragen. Wenig später erschien sein Besitzer und dankte dem Bahnhofsvorsteher erleichtert."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "MORPHOLOGY-COMPLETE",
+      "detail": "Se reconstruyeron y verificaron los 51 retos, incluidos los contextos inequívocos de N4, la mezcla de N5 y todos los huecos de N6."
+    }
+  ],
+  "generatedAt": "2026-09-05T15:32:02.747Z",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3"
+}

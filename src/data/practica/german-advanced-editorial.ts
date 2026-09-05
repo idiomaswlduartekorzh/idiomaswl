@@ -1,7 +1,8 @@
 import type { ErrorChallenge, GapChallenge, SeparationChallenge } from './tense-quest-types.ts'
 import type { GermanFormId } from './german-structure-quest-config.ts'
 
-type CorrectionLine = [before: string, answer: string, wrong: string, after: string]
+type AnswerSeed = string | string[]
+type CorrectionLine = [before: string, answer: AnswerSeed, wrong: string, after: string]
 
 const CORRECTION_LINES: Record<GermanFormId, CorrectionLine[]> = {
   praesens: [
@@ -89,28 +90,28 @@ const CORRECTION_LINES: Record<GermanFormId, CorrectionLine[]> = {
     ['In einer Stunde wird der Sturm weitergezogen ', 'sein', 'haben', '.'],
   ],
   'wuerde-form': [
-    ['Mit mehr Zeit ', 'würde', 'werde', ' ich täglich kochen.'],
-    ['An deiner Stelle ', 'würde', 'wird', ' Lena den Vertrag prüfen.'],
-    ['Wir ', 'würden', 'werden', ' gern ein ruhigeres Zimmer buchen.'],
-    ['Ohne den Lärm ', 'würden', 'werden', ' die Kinder besser schlafen.'],
-    ['Könnten Sie warten? Ich ', 'würde', 'werde', ' sofort den Leiter holen.'],
-    ['Bei gutem Wetter ', 'würdet', 'werdet', ' ihr länger draußen bleiben.'],
-    ['Der Verein ', 'würde', 'wird', ' das Projekt mit einer Spende unterstützen.'],
-    ['Wenn sie dürfte, ', 'würde', 'wird', ' Nora allein reisen.'],
-    ['Ich ', 'würde', 'werde', ' bitte einen Tee nehmen.'],
-    ['Mit einem größeren Saal ', 'würden', 'werden', ' wir mehr Gäste einladen.'],
+    ['Wenn ich mehr Zeit hätte, ', 'würde', 'werde', ' ich täglich kochen.'],
+    ['Wenn Lena an deiner Stelle wäre, ', 'würde', 'wird', ' sie den Vertrag prüfen.'],
+    ['Wenn wir ein ruhigeres Zimmer bekämen, ', 'würden', 'werden', ' wir gern ein ruhigeres Zimmer buchen.'],
+    ['Wenn es nicht so laut wäre, ', 'würden', 'werden', ' die Kinder besser schlafen.'],
+    ['Wenn Sie kurz warten könnten, ', 'würde', 'werde', ' ich sofort den Leiter holen.'],
+    ['Wenn das Wetter besser wäre, ', 'würdet', 'werdet', ' ihr länger draußen bleiben.'],
+    ['Wenn der Verein mehr Geld hätte, ', 'würde', 'wird', ' der Verein das Projekt mit einer Spende unterstützen.'],
+    ['Wenn Nora die Erlaubnis bekäme, ', 'würde', 'wird', ' sie allein reisen.'],
+    ['Wenn ich wählen dürfte, ', 'würde', 'werde', ' ich bitte einen Tee nehmen.'],
+    ['Wenn wir einen größeren Saal hätten, ', 'würden', 'werden', ' wir mehr Gäste einladen.'],
   ],
   'konjunktiv-vergangenheit': [
-    ['Mit deiner Nachricht ', 'hätte', 'hatte', ' ich den Termin nicht verpasst.'],
-    ['Ohne den Stau ', 'wären', 'waren', ' die Gäste pünktlich angekommen.'],
-    ['Mit mehr Vorsicht ', 'hätte', 'hatte', ' er die Vase nicht zerbrochen.'],
-    ['Bei besserem Wetter ', 'wären', 'waren', ' wir zum Gipfel gegangen.'],
-    ['Du ', 'hättest', 'hattest', ' den Fehler früher bemerkt.'],
-    ['Mit einer Karte ', 'hättet', 'hattet', ' ihr euch nicht verlaufen.'],
-    ['Ohne die Warnung ', 'wäre', 'war', ' das Schiff ausgelaufen.'],
-    ['Ich ', 'hätte', 'hatte', ' dir unter anderen Umständen geholfen.'],
-    ['Mit genug Personal ', 'hätten', 'hatten', ' sie den Auftrag angenommen.'],
-    ['Ohne den Defekt ', 'wäre', 'war', ' der Zug rechtzeitig abgefahren.'],
+    ['Ich habe den Termin tatsächlich verpasst; mit deiner Nachricht ', 'hätte', 'hatte', ' ich den Termin nicht verpasst.'],
+    ['Die Gäste sind wegen des Staus tatsächlich zu spät angekommen; ohne den Stau ', 'wären', 'waren', ' die Gäste pünktlich angekommen.'],
+    ['Er hat die Vase tatsächlich zerbrochen; mit mehr Vorsicht ', 'hätte', 'hatte', ' er die Vase nicht zerbrochen.'],
+    ['Wir sind wegen des schlechten Wetters tatsächlich nicht zum Gipfel gegangen; bei besserem Wetter ', 'wären', 'waren', ' wir zum Gipfel gegangen.'],
+    ['Du hast den Fehler tatsächlich nicht bemerkt; du ', 'hättest', 'hattest', ' den Fehler früher bemerkt.'],
+    ['Ihr habt euch tatsächlich verlaufen; mit einer Karte ', 'hättet', 'hattet', ' ihr euch nicht verlaufen.'],
+    ['Das Schiff ist tatsächlich nicht ausgelaufen; ohne die Warnung ', 'wäre', 'war', ' das Schiff ausgelaufen.'],
+    ['Ich habe dir tatsächlich nicht geholfen; unter anderen Umständen ', 'hätte', 'hatte', ' ich dir geholfen.'],
+    ['Sie haben den Auftrag tatsächlich abgelehnt; mit genug Personal ', 'hätten', 'hatten', ' sie den Auftrag angenommen.'],
+    ['Der Zug ist wegen des Defekts tatsächlich zu spät abgefahren; ohne den Defekt ', 'wäre', 'war', ' der Zug rechtzeitig abgefahren.'],
   ],
   imperativ: [
     ['Mara, ', 'öffne', 'öffnet', ' bitte das Fenster!'],
@@ -130,6 +131,7 @@ const FORM_ORDER: GermanFormId[] = [
   'praesens', 'perfekt-haben', 'perfekt-sein', 'praeteritum', 'plusquamperfekt',
   'futur-eins', 'futur-zwei', 'wuerde-form', 'konjunktiv-vergangenheit', 'imperativ',
 ]
+const answerVariants = (answer: AnswerSeed): string[] => Array.isArray(answer) ? answer : [answer]
 
 export function createGermanCorrectionChallenges(form: GermanFormId, focus: string, rule: string): ErrorChallenge<GermanFormId>[] {
   const lines = CORRECTION_LINES[form]
@@ -145,12 +147,12 @@ export function createGermanCorrectionChallenges(form: GermanFormId, focus: stri
       instruction: 'Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.',
       chunks: selected.map((entry, entryIndex) => ({
         before: `${entryIndex ? selected[entryIndex - 1][3] + ' ' : ''}${entry[0]}`,
-        form: entryIndex === wrong ? entry[2] : entry[1],
+        form: entryIndex === wrong ? entry[2] : answerVariants(entry[1])[0],
         id: `de-${form}-independent-error-${index + 1}-token-${entryIndex + 1}`,
       })),
       after: selected[4][3],
       wrongId: `de-${form}-independent-error-${index + 1}-token-${wrong + 1}`,
-      answers: [selected[wrong][1]],
+      answers: answerVariants(selected[wrong][1]),
       explanation: `${rule} Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen.`,
     }
   })
@@ -161,7 +163,7 @@ type SeparationSeed = [
   separation: 'separable' | 'inseparable',
   before: string,
   after: string,
-  answer: string,
+  answer: AnswerSeed,
 ]
 
 const SEPARATION_SEEDS: Record<GermanFormId, SeparationSeed[]> = {
@@ -255,7 +257,7 @@ const SEPARATION_SEEDS: Record<GermanFormId, SeparationSeed[]> = {
     ['mitkommen', 'separable', 'Bei gutem Wetter ', ' wir gern mitkommen.', 'würden'],
     ['vorbereiten', 'separable', 'An deiner Stelle ', ' ich das Gespräch vorbereiten.', 'würde'],
     ['teilnehmen', 'separable', 'Ohne den Termin ', ' ihr am Kurs teilnehmen.', 'würdet'],
-    ['besuchen', 'inseparable', 'In Berlin ', ' Nora mehrere Museen besuchen.', 'würde'],
+    ['besuchen', 'inseparable', 'Wenn Nora mehr Zeit hätte, ', ' sie in Berlin mehrere Museen besuchen.', 'würde'],
     ['verstehen', 'inseparable', 'Mit einem Beispiel ', ' du die Regel besser verstehen.', 'würdest'],
     ['erzählen', 'inseparable', 'Vor Freunden ', ' er die Geschichte anders erzählen.', 'würde'],
     ['bekommen', 'inseparable', 'Mit dem Stipendium ', ' die Studierenden mehr Unterstützung bekommen.', 'würden'],
@@ -274,15 +276,15 @@ const SEPARATION_SEEDS: Record<GermanFormId, SeparationSeed[]> = {
     ['entkommen', 'inseparable', 'Ohne das neue Tor ', ' das Tier entkommen.', 'wäre'],
   ],
   imperativ: [
-    ['aufstehen', 'separable', 'Mara, ', ' bitte sofort auf!', 'steh'],
-    ['anrufen', 'separable', 'Paul, ', ' morgen die Ärztin an!', 'ruf'],
+    ['aufstehen', 'separable', 'Mara, ', ' bitte sofort auf!', ['steh', 'stehe']],
+    ['anrufen', 'separable', 'Paul, ', ' morgen die Ärztin an!', ['ruf', 'rufe']],
     ['mitbringen', 'separable', 'Kinder, ', ' eure Hefte mit!', 'bringt'],
     ['vorlesen', 'separable', 'Frau Klein, ', ' Sie den Absatz laut vor!', 'lesen'],
     ['teilnehmen', 'separable', 'Jonas, ', ' an der Besprechung teil!', 'nimm'],
-    ['besuchen', 'inseparable', 'Mara, ', ' deine Großeltern am Sonntag!', 'besuche'],
+    ['besuchen', 'inseparable', 'Mara, ', ' deine Großeltern am Sonntag!', ['besuche', 'besuch']],
     ['vergessen', 'inseparable', 'Leute, ', ' eure Tickets nicht!', 'vergesst'],
     ['erklären', 'inseparable', 'Herr Roth, ', ' Sie bitte den nächsten Schritt!', 'erklären'],
-    ['benutzen', 'inseparable', 'Lina, ', ' den hinteren Eingang!', 'benutze'],
+    ['benutzen', 'inseparable', 'Lina, ', ' den hinteren Eingang!', ['benutze', 'benutz']],
     ['entfernen', 'inseparable', 'Helfer, ', ' alle leeren Kisten!', 'entfernt'],
   ],
 }
@@ -305,7 +307,6 @@ export const GERMAN_SEPARATION_CHALLENGES: SeparationChallenge<GermanFormId>[] =
     const order = [...SEPARATION_MIX_ORDER.slice(rotation), ...SEPARATION_MIX_ORDER.slice(0, rotation)]
     return order.map((seedIndex, index) => {
       const [verb, separation, before, after, answer] = seeds[seedIndex]
-      const completeSentence = `${before}${answer}${after}`.replace(/\s+/g, ' ').trim()
       return {
         id: `de-${form}-separation-${index + 1}`,
         tense: form as GermanFormId,
@@ -314,7 +315,10 @@ export const GERMAN_SEPARATION_CHALLENGES: SeparationChallenge<GermanFormId>[] =
         verb,
         separation,
         prompt: sentencePrompt(verb, separation, before, after),
-        answers: [completeSentence, completeSentence.replace(/[.!?]$/, '')],
+        answers: answerVariants(answer).flatMap((variant) => {
+          const completeSentence = `${before}${variant}${after}`.replace(/\s+/g, ' ').trim()
+          return [completeSentence, completeSentence.replace(/[.!?]$/, '')]
+        }),
         explanation: separation === 'separable'
           ? `„${verb}“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen.`
           : `„${verb}“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden.`,
@@ -324,9 +328,10 @@ export const GERMAN_SEPARATION_CHALLENGES: SeparationChallenge<GermanFormId>[] =
 
 type StorySeed = {
   title: string
+  instruction?: string
   segments: string[]
   verbs: string[]
-  answers: string[]
+  answers: AnswerSeed[]
   explanation: string
 }
 
@@ -340,17 +345,18 @@ const FINAL_STORY_SEEDS: Record<GermanFormId, StorySeed> = {
   },
   'perfekt-haben': {
     title: 'Das Nachbarschaftsfest ist vorbei',
-    segments: ['Am Sonntagabend erzählt Mara, dass der Verein das Fest monatelang ', '. Zuerst berichtet sie, dass mehrere Nachbarn Spenden ', '. Dann erklärt sie, dass ein Designer die Plakate ', ' und eine Druckerei sie rechtzeitig ', '. Am Festtag haben Freiwillige alle Stände ', '. Eine Elektrikerin bestätigt, dass sie jede Leitung ', '. Die Jugendlichen sagen, dass sie die Bühne ', ' und später viele Fotos ', '. Schließlich meldet Mara, dass sie den Bericht ', ' und der Vorstand allen Helfern persönlich ', '.'],
+    segments: ['Am Sonntagabend erzählt Mara, dass der Verein das Fest monatelang ', '. Zuerst berichtet sie, dass mehrere Nachbarn Spenden ', '. Dann erklärt sie, dass ein Designer die Plakate ', ' und eine Druckerei sie rechtzeitig ', '. Für den Festtag bestätigt Mara, dass Freiwillige alle Stände ', '. Eine Elektrikerin bestätigt, dass sie jede Leitung ', '. Die Jugendlichen sagen, dass sie die Bühne ', ' und später viele Fotos ', '. Schließlich meldet Mara, dass sie den Bericht ', ' und der Vorstand allen Helfern persönlich ', '.'],
     verbs: ['planen', 'sammeln', 'entwerfen', 'liefern', 'aufbauen', 'prüfen', 'dekorieren', 'machen', 'veröffentlichen', 'danken'],
-    answers: ['geplant hat', 'gesammelt haben', 'entworfen hat', 'geliefert hat', 'aufgebaut', 'geprüft hat', 'dekoriert haben', 'gemacht haben', 'veröffentlicht hat', 'gedankt hat'],
+    answers: ['geplant hat', 'gesammelt haben', 'entworfen hat', 'geliefert hat', 'aufgebaut haben', 'geprüft hat', 'dekoriert haben', 'gemacht haben', 'veröffentlicht hat', 'gedankt hat'],
     explanation: 'Schreibe jede vollständige Perfektgruppe mit dem passenden Präsens von „haben“ und dem Partizip II.',
   },
   'perfekt-sein': {
     title: 'Eine Reise durch die Alpen',
-    segments: ['Nora erzählt, dass sie am Freitag sehr früh ', '. Ihr Bruder berichtet, dass er erst später zum Bahnhof ', '. Trotzdem sind beide mit demselben Zug ', '. In Innsbruck sagt Nora, dass sie sofort in einen Regionalzug ', '. Nach einer Stunde sind sie in einem kleinen Dorf ', '. Sie erzählen, dass sie von dort aus zu Fuß bis zu einer Hütte ', '. Unterwegs ist das Wetter plötzlich schlechter ', ', doch niemand ist stehen ', '. Kurz vor Einbruch der Dunkelheit sind alle sicher oben ', '. Am nächsten Morgen berichtet Nora, dass die Gruppe früh ins Tal ', '.'],
-    verbs: ['aufstehen', 'kommen', 'fahren', 'umsteigen', 'ankommen', 'gehen', 'werden', 'bleiben', 'gelangen', 'zurücksteigen'],
-    answers: ['aufgestanden ist', 'gekommen ist', 'gefahren', 'umgestiegen ist', 'angekommen', 'gegangen sind', 'geworden', 'geblieben', 'gelangt', 'zurückgestiegen ist'],
-    explanation: 'Setze bei Bewegung und Zustandsänderung das passende Präsens von „sein“ mit dem Partizip II ein.',
+    instruction: 'Lies die ganze Geschichte. Ergänze alle vollständigen Verbgruppen im Perfekt mit „sein“; die Auswertung erscheint erst am Ende.',
+    segments: ['Nora erzählt, dass sie am Freitag sehr früh ', '. Ihr Bruder berichtet, dass er erst später am Bahnhof ', '. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ', '. Dort erzählt Nora, dass sie sofort in einen Regionalzug ', '. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ', '. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ', '. Unterwegs merken alle, dass das Wetter plötzlich schlechter ', '. Der Leiter bestätigt jedoch, dass niemand ', '. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ', '. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ', '.'],
+    verbs: ['aufstehen', 'ankommen', 'fahren', 'umsteigen', 'ankommen', 'gehen', 'werden', 'stehen bleiben', 'gelangen', 'absteigen'],
+    answers: ['aufgestanden ist', 'angekommen ist', 'gefahren sind', 'umgestiegen ist', 'angekommen sind', 'gegangen sind', 'geworden ist', 'stehen geblieben ist', 'gelangt sind', 'abgestiegen ist'],
+    explanation: 'Jede Lücke enthält Partizip II und die zum Subjekt passende Präsensform von „sein“. Bewegung, Ortswechsel und Zustandsänderung lizenzieren das Hilfsverb.',
   },
   praeteritum: {
     title: 'Die Nacht im alten Bahnhof',
@@ -361,59 +367,65 @@ const FINAL_STORY_SEEDS: Record<GermanFormId, StorySeed> = {
   },
   plusquamperfekt: {
     title: 'Warum die Ausstellung später öffnete',
-    segments: ['Als die Museumsleiterin eintraf, ', ' der Nachtwächter bereits einen Wasserschaden entdeckt. Eine Leitung ', ' hinter der Wand gebrochen, und Wasser ', ' in den kleinen Saal gelaufen. Zum Glück ', ' eine Restauratorin die wertvollsten Bilder am Vorabend ausgelagert. Das Technikteam ', ' die Hauptleitung schon geschlossen, bevor weitere Räume betroffen waren. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ', '. Die Feuerwehr kannte den Zugang, denn sie ', ' den Plan im Frühjahr geprüft. Nachdem Fachleute den Boden ', ', begann die Reinigung. Bis die Presse kam, ', ' die Leitung eine neue Öffnungszeit festgelegt und alle Hinweise ', '.'],
-    verbs: ['haben', 'sein', 'sein', 'haben', 'haben', 'notieren', 'haben', 'untersuchen', 'haben', 'aktualisieren'],
-    answers: ['hatte', 'war', 'war', 'hatte', 'hatte', 'notiert hatte', 'hatte', 'untersucht hatten', 'hatte', 'aktualisiert'],
-    explanation: 'Markiere in jedem Abschnitt, was schon vor dem nächsten vergangenen Ereignis abgeschlossen war.',
+    instruction: 'Lies die ganze Geschichte. Ergänze jede vollständige Verbgruppe im Plusquamperfekt; die Auswertung erscheint erst am Ende.',
+    segments: ['Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ', '. Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ', ' und dass Wasser in den kleinen Saal ', '. Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ', '. Das Technikteam erklärte, dass es die Hauptleitung schon ', '. Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ', '. Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ', '. Nachdem Fachleute den Boden ', ', begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ', ' und alle Hinweise rechtzeitig ', '.'],
+    verbs: ['entdecken', 'brechen', 'laufen', 'auslagern', 'schließen', 'notieren', 'prüfen', 'untersuchen', 'festlegen', 'aktualisieren'],
+    answers: ['entdeckt hatte', 'gebrochen war', 'gelaufen war', 'ausgelagert hatte', 'geschlossen hatte', 'notiert hatte', 'geprüft hatte', 'untersucht hatten', 'festgelegt hatte', 'aktualisiert hatte'],
+    explanation: 'Jede Lücke nennt ein Geschehen, das vor einem zweiten vergangenen Zeitpunkt abgeschlossen war. Das Plusquamperfekt übernimmt „haben“ oder „sein“ aus dem Perfekt des jeweiligen Verbs.',
   },
   'futur-eins': {
     title: 'Die Stadt plant ein Kulturwochenende',
-    segments: ['Im kommenden Mai ', ' die Stadt ein großes Kulturwochenende veranstalten. Der Bürgermeister verspricht, dass alle Stadtteile eigene Bühnen ', '. Ein neues Shuttle ', ' die Veranstaltungsorte miteinander verbinden. Freiwillige ', ' Besucher am Bahnhof begrüßen und ihnen Programme geben. Laut Wetterdienst ', ' es wahrscheinlich mild bleiben. Falls es regnet, ', ' die Konzerte in Hallen stattfinden. Mehrere Restaurants kündigen an, dass sie regionale Gerichte ', '. Die Bibliothek ', ' bis Mitternacht geöffnet sein. Am Sonntagabend ', ' ein Orchester das Abschlusskonzert spielen, und die Stadt ', ' die besten Projekte im folgenden Jahr weiter fördern.'],
-    verbs: ['werden', 'erhalten', 'werden', 'werden', 'werden', 'werden', 'anbieten', 'werden', 'werden', 'werden'],
-    answers: ['wird', 'erhalten werden', 'wird', 'werden', 'wird', 'werden', 'anbieten werden', 'wird', 'wird', 'wird'],
+    segments: ['Die Stadt kündigt an, dass sie im kommenden Mai ein großes Kulturwochenende ', '. Der Bürgermeister verspricht, dass alle Stadtteile eigene Bühnen ', '. Die Verkehrsplanung sieht vor, dass ein neues Shuttle die Veranstaltungsorte miteinander ', '. Die Organisatoren erklären, dass Freiwillige die Besucher am Bahnhof ', '. Der Wetterdienst prognostiziert, dass es wahrscheinlich mild ', '. Für Regen versichert das Team, dass die Konzerte in Hallen ', '. Mehrere Restaurants kündigen an, dass sie regionale Gerichte ', '. Die Bibliotheksleitung kündigt an, dass das Haus bis Mitternacht geöffnet ', '. Das Programm bestätigt, dass ein Orchester am Sonntagabend das Abschlusskonzert ', '. Die Stadt verspricht außerdem, dass sie die besten Projekte im folgenden Jahr ', '.'],
+    verbs: ['veranstalten', 'erhalten', 'verbinden', 'begrüßen', 'bleiben', 'stattfinden', 'anbieten', 'sein', 'spielen', 'weiter fördern'],
+    answers: ['veranstalten wird', 'erhalten werden', 'verbinden wird', 'begrüßen werden', 'bleiben wird', 'stattfinden werden', 'anbieten werden', 'sein wird', 'spielen wird', 'weiter fördern wird'],
     explanation: 'Bilde in jeder Prognose oder Zusage „werden + Infinitiv“ und passe „werden“ an das Subjekt an.',
   },
   'futur-zwei': {
     title: 'Bilanz am Tag der Eröffnung',
-    segments: ['Wenn das Forschungszentrum im Oktober öffnet, ', ' die Bauleute den Rohbau seit Monaten abgeschlossen haben. Die Elektriker ', ' alle Leitungen geprüft haben, und das Sicherheitsteam ', ' jedes Notfallsystem getestet haben. Bis dahin wird die Stadt den Vorplatz ', ' haben. Mehr als hundert Bäume ', ' gepflanzt worden sein. Die ersten Forschenden ', ' bereits in ihre Büros eingezogen sein. Bevor die Gäste eintreffen, ', ' das Kommunikationsteam alle Wegweiser montiert haben. Die Direktorin ', ' ihre Eröffnungsrede mehrfach geprobt haben. Auch die Cafeteria wird den ersten Einkauf ', ' haben. Am Abend wird das Zentrum seinen ersten öffentlichen Tag erfolgreich ', ' haben.'],
-    verbs: ['werden', 'werden', 'werden', 'gestalten', 'werden', 'werden', 'werden', 'werden', 'erledigen', 'beenden'],
-    answers: ['werden', 'werden', 'wird', 'gestaltet', 'werden', 'werden', 'wird', 'wird', 'erledigt', 'beendet'],
-    explanation: 'Vervollständige jede Zukunftsbilanz mit Partizip II, „haben/sein“ und der passenden Form von „werden“ im Satz.',
+    instruction: 'Lies die ganze Geschichte. Ergänze jede vollständige Verbgruppe im Futur II; die Auswertung erscheint erst am Ende.',
+    segments: ['Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ', '. Die Leitung erwartet, dass die Elektriker alle Leitungen ', ' und dass das Sicherheitsteam jedes Notfallsystem ', '. Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ', '. Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ', '. Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ', '. Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ', '. Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ', '. Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ', '. Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ', '.'],
+    verbs: ['abschließen', 'prüfen', 'testen', 'gestalten', 'pflanzen', 'einziehen', 'montieren', 'proben', 'erledigen', 'beenden'],
+    answers: ['abgeschlossen haben werden', 'geprüft haben werden', 'getestet haben wird', 'gestaltet haben wird', 'gepflanzt worden sein werden', 'eingezogen sein werden', 'montiert haben wird', 'geprobt haben wird', 'erledigt haben wird', 'beendet haben wird'],
+    explanation: 'Jede Lücke enthält Partizip II, den passenden Perfektinfinitiv mit „haben“ oder „sein“ und die zum Subjekt passende Form von „werden“. Alle Ergebnisse liegen vor einem ausdrücklich genannten künftigen Zeitpunkt.',
   },
   'wuerde-form': {
     title: 'Ein Kulturhaus für das Viertel',
-    segments: ['Mit einem leer stehenden Gebäude ', ' der Verein ein Kulturhaus eröffnen. Im Erdgeschoss ', ' er ein kleines Café einrichten. Ehrenamtliche ', ' dort Sprachkurse anbieten, und eine Musikerin ', ' jeden Freitag Proben leiten. Mit einem größeren Budget ', ' wir auch die Bühne renovieren. Die Nachbarn ', ' den Innenhof gemeinsam bepflanzen. Ein ruhiger Leseraum ', ' vielen Jugendlichen beim Lernen helfen. Ich ', ' gern die Öffentlichkeitsarbeit übernehmen. Würdet ihr am Wochenende Zeit haben, ', ' ihr beim Umbau helfen? Unter diesen Bedingungen ', ' das Haus schnell zu einem Treffpunkt werden.'],
-    verbs: ['werden', 'werden', 'werden', 'werden', 'werden', 'werden', 'werden', 'werden', 'werden', 'werden'],
-    answers: ['würde', 'würde', 'würden', 'würde', 'würden', 'würden', 'würde', 'würde', 'würdet', 'würde'],
-    explanation: 'Passe „würde“ an das Subjekt an und lasse den bedeutungstragenden Infinitiv am Satzende stehen.',
+    instruction: 'Lies die ganze Geschichte. Ergänze jede vollständige Verbgruppe aus Infinitiv und passender würde-Form; die Auswertung erscheint erst am Ende.',
+    segments: ['Mit einem leer stehenden Gebäude erklärt der Verein, dass er ein Kulturhaus ', '. Im Erdgeschoss sagt er, dass er ein kleines Café ', '. Die Ehrenamtlichen erklären, dass sie dort Sprachkurse ', ', und eine Musikerin sagt, dass sie jeden Freitag Proben ', '. Mit einem größeren Budget meinen wir, dass wir auch die Bühne ', '. Die Nachbarn sagen, dass sie den Innenhof gemeinsam ', '. Die Planer glauben, dass ein ruhiger Leseraum vielen Jugendlichen beim Lernen ', '. Ich sage, dass ich gern die Öffentlichkeitsarbeit ', '. Die Nachbarn fragen, ob ihr am Wochenende beim Umbau ', '. Unter diesen Bedingungen glaubt der Verein, dass das Haus schnell zu einem Treffpunkt ', '.'],
+    verbs: ['eröffnen', 'einrichten', 'anbieten', 'leiten', 'renovieren', 'bepflanzen', 'helfen', 'übernehmen', 'helfen', 'werden'],
+    answers: ['eröffnen würde', 'einrichten würde', 'anbieten würden', 'leiten würde', 'renovieren würden', 'bepflanzen würden', 'helfen würde', 'übernehmen würde', 'helfen würdet', 'werden würde'],
+    explanation: 'Jede Lücke verlangt die vollständige Einheit „Infinitiv + würde“; die Bedingung verhindert eine Lesart als bloße Zukunft.',
   },
   'konjunktiv-vergangenheit': {
     title: 'Die abgesagte Bergtour',
-    segments: ['Mit einer besseren Wetterprognose ', ' die Gruppe früher aufgebrochen. Ohne den Defekt am Bus ', ' alle rechtzeitig am Ausgangspunkt angekommen. Der Leiter ', ' die Route nicht geändert, wenn der obere Weg sicher gewesen wäre. Mit wärmerer Kleidung ', ' zwei Teilnehmer nicht umgekehrt. Hättest du die Warnung gelesen, ', ' du zusätzliche Ausrüstung mitgebracht. Ohne den starken Nebel ', ' wir den Gipfel erreicht. Die Fotografin ', ' eindrucksvolle Bilder gemacht, wenn die Sicht frei gewesen wäre. Mit einer offenen Hütte ', ' die Gruppe dort übernachtet. Der Fahrer ', ' nicht so lange im Tal gewartet, wenn er eine Nachricht erhalten hätte. Unter normalen Bedingungen ', ' alle am Abend zufrieden zurückgekehrt.'],
-    verbs: ['sein', 'sein', 'haben', 'sein', 'haben', 'haben', 'haben', 'haben', 'haben', 'sein'],
-    answers: ['wäre', 'wären', 'hätte', 'wären', 'hättest', 'hätten', 'hätte', 'hätte', 'hätte', 'wären'],
-    explanation: 'Bilde jede nicht eingetretene Vergangenheit mit „hätte/wäre + Partizip II“ und achte auf das Hilfsverb.',
+    instruction: 'Lies die ganze Geschichte. Ergänze jede vollständige Verbgruppe aus Partizip II und passender hätte-/wäre-Form; die Auswertung erscheint erst am Ende.',
+    segments: ['Mit einer besseren Wetterprognose meint der Leiter, dass die Gruppe früher ', '. Ohne den Defekt am Bus glaubt er, dass alle rechtzeitig am Ausgangspunkt ', '. Der Leiter sagt, dass er die Route nicht ', ', wenn der obere Weg sicher gewesen wäre. Mit wärmerer Kleidung steht fest, dass zwei Teilnehmer nicht ', '. Hättest du die Warnung gelesen, wäre klar, dass du zusätzliche Ausrüstung ', '. Ohne den starken Nebel meinen wir, dass wir den Gipfel ', '. Die Fotografin sagt, dass sie eindrucksvolle Bilder ', ', wenn die Sicht frei gewesen wäre. Mit einer offenen Hütte glaubt die Gruppe, dass sie dort ', '. Der Fahrer erklärt, dass er nicht so lange im Tal ', ', wenn er eine Nachricht erhalten hätte. Unter normalen Bedingungen meint der Leiter, dass alle am Abend zufrieden ', '.'],
+    verbs: ['aufbrechen', 'ankommen', 'ändern', 'umkehren', 'mitbringen', 'erreichen', 'machen', 'übernachten', 'warten', 'zurückkehren'],
+    answers: ['aufgebrochen wäre', 'angekommen wären', 'geändert hätte', 'umgekehrt wären', 'mitgebracht hättest', 'erreicht hätten', 'gemacht hätte', 'übernachtet hätte', 'gewartet hätte', 'zurückgekehrt wären'],
+    explanation: 'Jede Lücke exige Partizip II y Konjunktiv II del auxiliar heredado: sein para los cambios o desplazamientos indicados y haben para los demás verbos de esta historia.',
   },
   imperativ: {
     title: 'Anweisungen vor dem Schulfest',
     segments: ['Die Koordinatorin verteilt Aufgaben: „Mara, ', ' zuerst die Gästeliste! Jonas und Elif, ', ' die Schilder am Eingang auf! Herr Klein, ', ' Sie bitte die Technik! Nina, ', ' die Kabel nicht im Durchgang liegen! Helfer, ', ' vorsichtig mit den Gläsern! Frau Roth, ', ' Sie die Lieferanten zum Hof! Kinder, ', ' während der Probe leise! Paul, ', ' die Seitentür nach draußen nicht ab! Gäste, ', ' Sie bitte dem markierten Weg! Und jetzt, Team, ', ' mit dem Aufbau an!“'],
     verbs: ['prüfen (du)', 'hängen (ihr)', 'testen (Sie)', 'lassen (du)', 'sein (ihr)', 'führen (Sie)', 'bleiben (ihr)', 'schließen (du)', 'folgen (Sie)', 'fangen (ihr)'],
-    answers: ['prüfe', 'hängt', 'testen', 'lass', 'seid', 'führen', 'bleibt', 'schließ', 'folgen', 'fangt'],
+    answers: [['prüfe', 'prüf'], 'hängt', 'testen', 'lass', 'seid', 'führen', 'bleibt', ['schließ', 'schließe'], 'folgen', 'fangt'],
     explanation: 'Erkenne die Anrede in jedem Satz und schreibe die passende Imperativform; sichtbare Zusätze bleiben im Text.',
   },
 }
+
+const DEFAULT_FINAL_INSTRUCTION = 'Lies die ganze Geschichte. Ergänze alle Verbgruppen schriftlich; die Auswertung erscheint erst am Ende.'
 
 export const GERMAN_FINAL_STORIES: GapChallenge<GermanFormId>[] = Object.entries(FINAL_STORY_SEEDS).map(([form, seed]) => ({
   id: `de-${form}-written-final-story`,
   title: seed.title,
   focus: form,
-  instruction: 'Lies die ganze Geschichte. Ergänze alle Verbgruppen schriftlich; die Auswertung erscheint erst am Ende.',
+  instruction: seed.instruction ?? DEFAULT_FINAL_INSTRUCTION,
   segments: seed.segments,
   gaps: seed.verbs.map((verb, index) => ({
     id: `de-${form}-written-final-story-gap-${index + 1}`,
     tense: form as GermanFormId,
     verb,
-    answers: [seed.answers[index]],
+    answers: answerVariants(seed.answers[index]),
   })),
   explanation: seed.explanation,
 }))

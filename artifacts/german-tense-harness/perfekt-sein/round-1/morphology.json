@@ -1,0 +1,755 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-sein",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "345b3e0ccddf9a3b06a7c7b4921417e1f2311dba9b1f0f4863417f04dde632cb",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "f7eb72c48b2e0a91f74605ad20ed1e97e04e8224eb86e070021cf0a72f3fc625",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "de-perfekt-sein-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegangen bin"
+      ],
+      "declaredAnswer": [
+        "gegangen bin"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekommen bist"
+      ],
+      "declaredAnswer": [
+        "gekommen bist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefahren ist"
+      ],
+      "declaredAnswer": [
+        "gefahren ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gelaufen sind"
+      ],
+      "declaredAnswer": [
+        "gelaufen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "geblieben seid"
+      ],
+      "declaredAnswer": [
+        "geblieben seid"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "angekommen sind"
+      ],
+      "declaredAnswer": [
+        "angekommen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufgestanden bin"
+      ],
+      "declaredAnswer": [
+        "aufgestanden bin"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "eingeschlafen bist"
+      ],
+      "declaredAnswer": [
+        "eingeschlafen bist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gewachsen ist"
+      ],
+      "declaredAnswer": [
+        "gewachsen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "zurückgekommen sind"
+      ],
+      "declaredAnswer": [
+        "zurückgekommen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "angekommen ist"
+      ],
+      "declaredAnswer": [
+        "angekommen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefahren sind"
+      ],
+      "declaredAnswer": [
+        "gefahren sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "eingeschlafen ist"
+      ],
+      "declaredAnswer": [
+        "eingeschlafen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufgebrochen ist"
+      ],
+      "declaredAnswer": [
+        "aufgebrochen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "geschmolzen ist"
+      ],
+      "declaredAnswer": [
+        "geschmolzen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "zurückgekehrt sind"
+      ],
+      "declaredAnswer": [
+        "zurückgekehrt sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gewachsen ist"
+      ],
+      "declaredAnswer": [
+        "gewachsen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gestürzt ist"
+      ],
+      "declaredAnswer": [
+        "gestürzt ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "geflogen sind"
+      ],
+      "declaredAnswer": [
+        "geflogen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "verstummt ist"
+      ],
+      "declaredAnswer": [
+        "verstummt ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "losgegangen ist",
+        "angekommen ist",
+        "zurückgekehrt sind"
+      ],
+      "declaredAnswer": [
+        "losgegangen ist",
+        "angekommen ist",
+        "zurückgekehrt sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufgestanden ist",
+        "eingestiegen ist",
+        "angekommen ist"
+      ],
+      "declaredAnswer": [
+        "aufgestanden ist",
+        "eingestiegen ist",
+        "angekommen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gesunken ist",
+        "zugefroren ist",
+        "geschmolzen ist"
+      ],
+      "declaredAnswer": [
+        "gesunken ist",
+        "zugefroren ist",
+        "geschmolzen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "geflogen ist",
+        "gegangen ist",
+        "angekommen ist"
+      ],
+      "declaredAnswer": [
+        "geflogen ist",
+        "gegangen ist",
+        "angekommen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "ausgegangen ist",
+        "stehen geblieben sind",
+        "angesprungen ist"
+      ],
+      "declaredAnswer": [
+        "ausgegangen ist",
+        "stehen geblieben sind",
+        "angesprungen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "«alle Geräte stehen geblieben sind» conserva el lema complejo unido semánticamente y flexiona sein en plural."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gestartet ist",
+        "geworden ist",
+        "geblieben ist"
+      ],
+      "declaredAnswer": [
+        "gestartet ist",
+        "geworden ist",
+        "geblieben ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "abgefahren ist",
+        "umgestiegen ist",
+        "weitergeflogen ist"
+      ],
+      "declaredAnswer": [
+        "abgefahren ist",
+        "umgestiegen ist",
+        "weitergeflogen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gesunken ist",
+        "geworden ist",
+        "geworden ist"
+      ],
+      "declaredAnswer": [
+        "gesunken ist",
+        "geworden ist",
+        "geworden ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "losgegangen ist",
+        "gelaufen sind",
+        "geblieben ist"
+      ],
+      "declaredAnswer": [
+        "losgegangen ist",
+        "gelaufen sind",
+        "geblieben ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "geradelt ist",
+        "geblieben ist",
+        "zurückgekehrt ist"
+      ],
+      "declaredAnswer": [
+        "geradelt ist",
+        "geblieben ist",
+        "zurückgekehrt ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "gestiegen ist"
+      ],
+      "declaredAnswer": [
+        "gestiegen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefallen sind"
+      ],
+      "declaredAnswer": [
+        "gefallen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "angekommen ist"
+      ],
+      "declaredAnswer": [
+        "angekommen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegangen sind"
+      ],
+      "declaredAnswer": [
+        "gegangen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "abgefahren ist"
+      ],
+      "declaredAnswer": [
+        "abgefahren ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "zurückgekommen sind"
+      ],
+      "declaredAnswer": [
+        "zurückgekommen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "eingeschlafen ist"
+      ],
+      "declaredAnswer": [
+        "eingeschlafen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "gelaufen seid"
+      ],
+      "declaredAnswer": [
+        "gelaufen seid"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "geblieben ist"
+      ],
+      "declaredAnswer": [
+        "geblieben ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufgebrochen sind"
+      ],
+      "declaredAnswer": [
+        "aufgebrochen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mila erzählt, dass sie sehr früh aufgestanden ist.",
+        "Mila erzählt, dass sie sehr früh aufgestanden ist"
+      ],
+      "declaredAnswer": [
+        "Mila erzählt, dass sie sehr früh aufgestanden ist.",
+        "Mila erzählt, dass sie sehr früh aufgestanden ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Niemand weiß genau, was in der Nacht geschehen ist.",
+        "Niemand weiß genau, was in der Nacht geschehen ist"
+      ],
+      "declaredAnswer": [
+        "Niemand weiß genau, was in der Nacht geschehen ist.",
+        "Niemand weiß genau, was in der Nacht geschehen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist.",
+        "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist"
+      ],
+      "declaredAnswer": [
+        "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist.",
+        "Die Autorin bestätigt, dass ihr neuer Roman erschienen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist.",
+        "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist"
+      ],
+      "declaredAnswer": [
+        "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist.",
+        "Der Zugbegleiter bestätigt, dass der Zug abgefahren ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Die Zeitung berichtet, dass ein Fahrer verunglückt ist.",
+        "Die Zeitung berichtet, dass ein Fahrer verunglückt ist"
+      ],
+      "declaredAnswer": [
+        "Die Zeitung berichtet, dass ein Fahrer verunglückt ist.",
+        "Die Zeitung berichtet, dass ein Fahrer verunglückt ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Wir sagen, dass wir gestern zusammen ausgegangen sind.",
+        "Wir sagen, dass wir gestern zusammen ausgegangen sind"
+      ],
+      "declaredAnswer": [
+        "Wir sagen, dass wir gestern zusammen ausgegangen sind.",
+        "Wir sagen, dass wir gestern zusammen ausgegangen sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Die Polizei meldet, dass das Tier entkommen ist.",
+        "Die Polizei meldet, dass das Tier entkommen ist"
+      ],
+      "declaredAnswer": [
+        "Die Polizei meldet, dass das Tier entkommen ist.",
+        "Die Polizei meldet, dass das Tier entkommen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Die Wanderer melden, dass sie sicher zurückgekehrt sind.",
+        "Die Wanderer melden, dass sie sicher zurückgekehrt sind"
+      ],
+      "declaredAnswer": [
+        "Die Wanderer melden, dass sie sicher zurückgekehrt sind.",
+        "Die Wanderer melden, dass sie sicher zurückgekehrt sind"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Nora schreibt, dass sie pünktlich angekommen ist.",
+        "Nora schreibt, dass sie pünktlich angekommen ist"
+      ],
+      "declaredAnswer": [
+        "Nora schreibt, dass sie pünktlich angekommen ist.",
+        "Nora schreibt, dass sie pünktlich angekommen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist.",
+        "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist"
+      ],
+      "declaredAnswer": [
+        "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist.",
+        "Der Hausmeister berichtet, dass der Schlüssel verschwunden ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-perfekt-sein-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufgestanden ist",
+        "angekommen ist",
+        "gefahren sind",
+        "umgestiegen ist",
+        "angekommen sind",
+        "gegangen sind",
+        "geworden ist",
+        "stehen geblieben ist",
+        "gelangt sind",
+        "abgestiegen ist"
+      ],
+      "declaredAnswer": [
+        "aufgestanden ist",
+        "angekommen ist",
+        "gefahren sind",
+        "umgestiegen ist",
+        "angekommen sind",
+        "gegangen sind",
+        "geworden ist",
+        "stehen geblieben ist",
+        "gelangt sind",
+        "abgestiegen ist"
+      ],
+      "rule": "Partizip II + sein flexionado; V-final en subordinada y concordancia con el sujeto.",
+      "evidence": "10 unidades completas verificadas en orden dentro de una historia continua."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T15:32:18.907Z"
+}

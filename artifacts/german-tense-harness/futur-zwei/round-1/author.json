@@ -1,0 +1,2879 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-zwei",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "f348114f5017d903e912bbaea94d9457a94d79a9228e007b6c3eaf999e962e2e",
+  "specFingerprint": "561bbcc5f629adcc03344e533987efcb73b987f9d6552097b4dd85a65181c92d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "baselineContentFingerprint": "0cf6f019a8606d747e6bda0af64f179e6a1c351f573a720c6bbe707f7ab166c2",
+  "candidate": {
+    "formId": "futur-zwei",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-futur-zwei-choice-editorial-1",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „ich“ mit machen.",
+          "context": "Morgen werde ich sagen können, dass ich alles ___.",
+          "options": [
+            "gemacht haben werde",
+            "gemacht haben wirst",
+            "gemacht haben wird",
+            "gemacht haben werden"
+          ],
+          "answer": "gemacht haben werde",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-2",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „du“ mit lesen.",
+          "context": "Bis Freitag wirst du sagen, dass du das Buch ___.",
+          "options": [
+            "gelesen haben werde",
+            "gelesen haben wirst",
+            "gelesen haben wird",
+            "gelesen haben werdet"
+          ],
+          "answer": "gelesen haben wirst",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-3",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „Mia“ mit lernen.",
+          "context": "Bis Juni wird klar sein, dass Mia viel ___.",
+          "options": [
+            "gelernt haben werde",
+            "gelernt haben wirst",
+            "gelernt haben wird",
+            "gelernt haben werden"
+          ],
+          "answer": "gelernt haben wird",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-4",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „wir“ mit kochen.",
+          "context": "Wenn ihr kommt, wird klar sein, dass wir schon ___.",
+          "options": [
+            "gekocht haben werde",
+            "gekocht haben wird",
+            "gekocht haben werdet",
+            "gekocht haben werden"
+          ],
+          "answer": "gekocht haben werden",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-5",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „ihr“ mit arbeiten.",
+          "context": "Bis acht Uhr wird klar sein, dass ihr lange ___.",
+          "options": [
+            "gearbeitet haben werdet",
+            "gearbeitet haben werde",
+            "gearbeitet haben wird",
+            "gearbeitet haben werden"
+          ],
+          "answer": "gearbeitet haben werdet",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-6",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „die Kinder“ mit schlafen.",
+          "context": "Bis Mittag wird klar sein, dass die Kinder genug ___.",
+          "options": [
+            "geschlafen haben werde",
+            "geschlafen haben werden",
+            "geschlafen haben wird",
+            "geschlafen haben werdet"
+          ],
+          "answer": "geschlafen haben werden",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-7",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „ich“ mit gehen.",
+          "context": "Vor deiner Ankunft wird klar sein, dass ich ___.",
+          "options": [
+            "gegangen sein wirst",
+            "gegangen sein wird",
+            "gegangen sein werde",
+            "gegangen sein werden"
+          ],
+          "answer": "gegangen sein werde",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-8",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „du“ mit ankommen.",
+          "context": "Bis zehn Uhr wird klar sein, dass du ___.",
+          "options": [
+            "angekommen sein werde",
+            "angekommen sein wird",
+            "angekommen sein werdet",
+            "angekommen sein wirst"
+          ],
+          "answer": "angekommen sein wirst",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-9",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „Paul“ mit fahren.",
+          "context": "Vor Mittag wird klar sein, dass Paul nach Hause ___.",
+          "options": [
+            "gefahren sein wird",
+            "gefahren sein werde",
+            "gefahren sein wirst",
+            "gefahren sein werden"
+          ],
+          "answer": "gefahren sein wird",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        },
+        {
+          "id": "de-futur-zwei-choice-editorial-10",
+          "tenses": [
+            "futur-zwei"
+          ],
+          "focus": "Futur II",
+          "prompt": "Wähle die passende Form für „wir“ mit zurückkommen.",
+          "context": "Bis Sonntag wird klar sein, dass wir ___.",
+          "options": [
+            "zurückgekommen sein werde",
+            "zurückgekommen sein werden",
+            "zurückgekommen sein wird",
+            "zurückgekommen sein werdet"
+          ],
+          "answer": "zurückgekommen sein werden",
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-futur-zwei-micro-editorial-1",
+          "title": "Bis Freitag",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „beenden“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Sie erwarten, dass wir den Bericht bis Freitag ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-1-gap",
+              "tense": "futur-zwei",
+              "verb": "beenden",
+              "answers": [
+                "beendet haben werden"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-2",
+          "title": "Vor deiner Ankunft",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „gehen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wenn du ankommst, wird klar sein, dass Mia schon ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-2-gap",
+              "tense": "futur-zwei",
+              "verb": "gehen",
+              "answers": [
+                "gegangen sein wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-3",
+          "title": "Bilanz um Mitternacht",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „speichern“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Um Mitternacht steht fest, dass die Techniker alle Daten ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-3-gap",
+              "tense": "futur-zwei",
+              "verb": "speichern",
+              "answers": [
+                "gespeichert haben werden"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-4",
+          "title": "Vor der Eröffnung",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „montieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Bevor das Museum öffnet, erwartet man, dass das Team alle Schilder ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-4-gap",
+              "tense": "futur-zwei",
+              "verb": "montieren",
+              "answers": [
+                "montiert haben wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-5",
+          "title": "Bis Ende Juni",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „sammeln“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Bis Ende Juni erwartet die Stiftung, dass sie eine Million Euro ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-5-gap",
+              "tense": "futur-zwei",
+              "verb": "sammeln",
+              "answers": [
+                "gesammelt haben wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-6",
+          "title": "Wenn der Winter beginnt",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „weiterziehen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wenn der Winter beginnt, wird klar sein, dass die Zugvögel längst ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-6-gap",
+              "tense": "futur-zwei",
+              "verb": "weiterziehen",
+              "answers": [
+                "weitergezogen sein werden"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-7",
+          "title": "Vor der Prüfung",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „wiederholen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Bis zur Prüfung erwartet die Lehrerin, dass du alle Kapitel ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-7-gap",
+              "tense": "futur-zwei",
+              "verb": "wiederholen",
+              "answers": [
+                "wiederholt haben wirst"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-8",
+          "title": "Um acht Uhr morgen",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „produzieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Um acht Uhr morgen wird die Anzeige zeigen, dass die Maschine zehntausend Teile ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-8-gap",
+              "tense": "futur-zwei",
+              "verb": "produzieren",
+              "answers": [
+                "produziert haben wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-9",
+          "title": "Vor dem nächsten Bericht",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „auswerten“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wenn der nächste Bericht erscheint, werden die Forscher bestätigen, dass sie die Daten erneut ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-9-gap",
+              "tense": "futur-zwei",
+              "verb": "auswerten",
+              "answers": [
+                "ausgewertet haben werden"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-micro-editorial-10",
+          "title": "Bis zu ihrer Rückkehr",
+          "focus": "Futur II",
+          "instruction": "Konjugiere „reparieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Bis Nora zurückkehrt, erwarten wir, dass der Techniker die Heizung ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-micro-editorial-10-gap",
+              "tense": "futur-zwei",
+              "verb": "reparieren",
+              "answers": [
+                "repariert haben wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-futur-zwei-long-editorial-1",
+          "title": "Vor der Messe",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Bis die Messe öffnet, erwartet man, dass das Team den Stand ",
+            "; die Logistik bestätigt, dass sie alle Kisten ",
+            "; und die Direktorin sagt, dass sie dann in Berlin ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-1-gap-1",
+              "tense": "futur-zwei",
+              "verb": "aufbauen",
+              "answers": [
+                "aufgebaut haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-1-gap-2",
+              "tense": "futur-zwei",
+              "verb": "liefern",
+              "answers": [
+                "geliefert haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-1-gap-3",
+              "tense": "futur-zwei",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen sein wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-2",
+          "title": "Bis zum Anpfiff",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Wenn das Spiel beginnt, wird klar sein, dass der Platzwart den Rasen ",
+            "; die Trainer erwarten, dass sie die Aufstellung ",
+            "; und die Polizei rechnet damit, dass die Fans ins Stadion ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-2-gap-1",
+              "tense": "futur-zwei",
+              "verb": "markieren",
+              "answers": [
+                "markiert haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-2-gap-2",
+              "tense": "futur-zwei",
+              "verb": "besprechen",
+              "answers": [
+                "besprochen haben werden"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-2-gap-3",
+              "tense": "futur-zwei",
+              "verb": "strömen",
+              "answers": [
+                "geströmt sein werden"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-3",
+          "title": "Die Bilanz am Jahresende",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Am 31. Dezember erwartet die Firma, dass sie drei Filialen ",
+            "; sie prognostiziert, dass sie hundert Stellen ",
+            "; und sie geht davon aus, dass ihr Umsatz deutlich ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-3-gap-1",
+              "tense": "futur-zwei",
+              "verb": "eröffnen",
+              "answers": [
+                "eröffnet haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-3-gap-2",
+              "tense": "futur-zwei",
+              "verb": "schaffen",
+              "answers": [
+                "geschaffen haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-3-gap-3",
+              "tense": "futur-zwei",
+              "verb": "steigen",
+              "answers": [
+                "gestiegen sein wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-4",
+          "title": "Vor der Landung",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Wenn das Flugzeug landet, erwartet man, dass die Crew die Kabine ",
+            "; der Kapitän bestätigt, dass er den Bericht ",
+            "; und die Leitstelle rechnet damit, dass die Bodenmannschaft am Gate ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-4-gap-1",
+              "tense": "futur-zwei",
+              "verb": "kontrollieren",
+              "answers": [
+                "kontrolliert haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-4-gap-2",
+              "tense": "futur-zwei",
+              "verb": "senden",
+              "answers": [
+                "gesendet haben wird",
+                "gesandt haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-4-gap-3",
+              "tense": "futur-zwei",
+              "verb": "eintreffen",
+              "answers": [
+                "eingetroffen sein wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-5",
+          "title": "Bis zur Preisverleihung",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Bevor die Preise vergeben werden, erwartet man, dass die Jury alle Filme ",
+            "; sie versichert, dass sie ihre Entscheidung ",
+            "; und der Veranstalter rechnet damit, dass mehrere Gäste aus dem Ausland ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-5-gap-1",
+              "tense": "futur-zwei",
+              "verb": "sehen",
+              "answers": [
+                "gesehen haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-5-gap-2",
+              "tense": "futur-zwei",
+              "verb": "begründen",
+              "answers": [
+                "begründet haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-5-gap-3",
+              "tense": "futur-zwei",
+              "verb": "anreisen",
+              "answers": [
+                "angereist sein werden"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-6",
+          "title": "Der Morgen nach dem Sturm",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Bei Tagesanbruch wird klar sein, dass der Sturm ",
+            "; die Feuerwehr erwartet, dass sie alle Straßen ",
+            "; und die Stadt rechnet damit, dass viele Bewohner nach Hause ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-6-gap-1",
+              "tense": "futur-zwei",
+              "verb": "weiterziehen",
+              "answers": [
+                "weitergezogen sein wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-6-gap-2",
+              "tense": "futur-zwei",
+              "verb": "prüfen",
+              "answers": [
+                "geprüft haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-6-gap-3",
+              "tense": "futur-zwei",
+              "verb": "zurückkehren",
+              "answers": [
+                "zurückgekehrt sein werden"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-7",
+          "title": "Bis zum Abgabetermin",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Am Freitag erwartet Mara, dass sie den Text ",
+            "; ihr Kollege sagt, dass er alle Quellen ",
+            "; und die Redaktion bestätigt, dass sie die Seiten ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-7-gap-1",
+              "tense": "futur-zwei",
+              "verb": "überarbeiten",
+              "answers": [
+                "überarbeitet haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-7-gap-2",
+              "tense": "futur-zwei",
+              "verb": "prüfen",
+              "answers": [
+                "geprüft haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-7-gap-3",
+              "tense": "futur-zwei",
+              "verb": "freigeben",
+              "answers": [
+                "freigegeben haben wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-8",
+          "title": "Vor dem ersten Frost",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Wenn der erste Frost kommt, erwartet man, dass die Gärtner die Pflanzen ",
+            "; sie versichern, dass sie die Leitungen ",
+            "; und der Wetterdienst rechnet damit, dass die Vögel nach Süden ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-8-gap-1",
+              "tense": "futur-zwei",
+              "verb": "schützen",
+              "answers": [
+                "geschützt haben werden"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-8-gap-2",
+              "tense": "futur-zwei",
+              "verb": "leeren",
+              "answers": [
+                "geleert haben werden"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-8-gap-3",
+              "tense": "futur-zwei",
+              "verb": "ziehen",
+              "answers": [
+                "gezogen sein werden"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-9",
+          "title": "Um Mitternacht im Rechenzentrum",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Um Mitternacht zeigt das Protokoll, dass das System alle Dateien ",
+            "; die Techniker bestätigen, dass sie das Update ",
+            "; und die Anzeige meldet, dass der Hauptserver neu ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-9-gap-1",
+              "tense": "futur-zwei",
+              "verb": "kopieren",
+              "answers": [
+                "kopiert haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-9-gap-2",
+              "tense": "futur-zwei",
+              "verb": "testen",
+              "answers": [
+                "getestet haben werden"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-9-gap-3",
+              "tense": "futur-zwei",
+              "verb": "starten",
+              "answers": [
+                "gestartet sein wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-zwei-long-editorial-10",
+          "title": "Bis zur Rückkehr der Gäste",
+          "focus": "Futur II",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Wenn die Gäste zurückkommen, erwartet man, dass das Hotel die Zimmer ",
+            "; die Küche versichert, dass sie das Menü ",
+            "; und die Rezeption rechnet damit, dass der Shuttlebus am Flughafen ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-long-editorial-10-gap-1",
+              "tense": "futur-zwei",
+              "verb": "reinigen",
+              "answers": [
+                "gereinigt haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-10-gap-2",
+              "tense": "futur-zwei",
+              "verb": "vorbereiten",
+              "answers": [
+                "vorbereitet haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-long-editorial-10-gap-3",
+              "tense": "futur-zwei",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen sein wird"
+              ]
+            }
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-futur-zwei-independent-error-1",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 1",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Bis Freitag ",
+              "form": "wird",
+              "id": "de-futur-zwei-independent-error-1-token-1"
+            },
+            {
+              "before": " Lea den Bericht abgeschlossen haben. Bis zum Winter wird die Stadt die Brücke ",
+              "form": "erneuert sein",
+              "id": "de-futur-zwei-independent-error-1-token-2"
+            },
+            {
+              "before": ". Vor der Prüfung werdet ihr alle Kapitel ",
+              "form": "wiederholt haben",
+              "id": "de-futur-zwei-independent-error-1-token-3"
+            },
+            {
+              "before": ". Am Monatsende werden wir genug Geld ",
+              "form": "gespart haben",
+              "id": "de-futur-zwei-independent-error-1-token-4"
+            },
+            {
+              "before": ". Bis zur Eröffnung wird das Team jedes Schild ",
+              "form": "montiert haben",
+              "id": "de-futur-zwei-independent-error-1-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-zwei-independent-error-1-token-2",
+          "answers": [
+            "erneuert haben"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-2",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 2",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn wir eintreffen, ",
+              "form": "werden",
+              "id": "de-futur-zwei-independent-error-2-token-1"
+            },
+            {
+              "before": " die Gäste schon gegangen sein. Um acht Uhr ",
+              "form": "wird",
+              "id": "de-futur-zwei-independent-error-2-token-2"
+            },
+            {
+              "before": " der letzte Zug abgefahren sein. Bis dahin wird das Wasser vollständig ",
+              "form": "verdunstet haben",
+              "id": "de-futur-zwei-independent-error-2-token-3"
+            },
+            {
+              "before": ". Wenn du zurückkommst, wird Mia bereits ",
+              "form": "eingeschlafen sein",
+              "id": "de-futur-zwei-independent-error-2-token-4"
+            },
+            {
+              "before": ". In einer Stunde wird der Sturm weitergezogen ",
+              "form": "sein",
+              "id": "de-futur-zwei-independent-error-2-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-zwei-independent-error-2-token-3",
+          "answers": [
+            "verdunstet sein"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-3",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 3",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Bis zum Winter wird die Stadt die Brücke ",
+              "form": "erneuert haben",
+              "id": "de-futur-zwei-independent-error-3-token-1"
+            },
+            {
+              "before": ". Vor der Prüfung werdet ihr alle Kapitel ",
+              "form": "wiederholt haben",
+              "id": "de-futur-zwei-independent-error-3-token-2"
+            },
+            {
+              "before": ". Am Monatsende werden wir genug Geld ",
+              "form": "gespart haben",
+              "id": "de-futur-zwei-independent-error-3-token-3"
+            },
+            {
+              "before": ". Bis zur Eröffnung wird das Team jedes Schild ",
+              "form": "montiert sein",
+              "id": "de-futur-zwei-independent-error-3-token-4"
+            },
+            {
+              "before": ". Bis Freitag ",
+              "form": "wird",
+              "id": "de-futur-zwei-independent-error-3-token-5"
+            }
+          ],
+          "after": " Lea den Bericht abgeschlossen haben.",
+          "wrongId": "de-futur-zwei-independent-error-3-token-4",
+          "answers": [
+            "montiert haben"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-4",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 4",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Um acht Uhr ",
+              "form": "wird",
+              "id": "de-futur-zwei-independent-error-4-token-1"
+            },
+            {
+              "before": " der letzte Zug abgefahren sein. Bis dahin wird das Wasser vollständig ",
+              "form": "verdunstet sein",
+              "id": "de-futur-zwei-independent-error-4-token-2"
+            },
+            {
+              "before": ". Wenn du zurückkommst, wird Mia bereits ",
+              "form": "eingeschlafen sein",
+              "id": "de-futur-zwei-independent-error-4-token-3"
+            },
+            {
+              "before": ". In einer Stunde wird der Sturm weitergezogen ",
+              "form": "sein",
+              "id": "de-futur-zwei-independent-error-4-token-4"
+            },
+            {
+              "before": ". Wenn wir eintreffen, ",
+              "form": "würden",
+              "id": "de-futur-zwei-independent-error-4-token-5"
+            }
+          ],
+          "after": " die Gäste schon gegangen sein.",
+          "wrongId": "de-futur-zwei-independent-error-4-token-5",
+          "answers": [
+            "werden"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-5",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 5",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Vor der Prüfung werdet ihr alle Kapitel ",
+              "form": "wiederholt sein",
+              "id": "de-futur-zwei-independent-error-5-token-1"
+            },
+            {
+              "before": ". Am Monatsende werden wir genug Geld ",
+              "form": "gespart haben",
+              "id": "de-futur-zwei-independent-error-5-token-2"
+            },
+            {
+              "before": ". Bis zur Eröffnung wird das Team jedes Schild ",
+              "form": "montiert haben",
+              "id": "de-futur-zwei-independent-error-5-token-3"
+            },
+            {
+              "before": ". Bis Freitag ",
+              "form": "wird",
+              "id": "de-futur-zwei-independent-error-5-token-4"
+            },
+            {
+              "before": " Lea den Bericht abgeschlossen haben. Bis zum Winter wird die Stadt die Brücke ",
+              "form": "erneuert haben",
+              "id": "de-futur-zwei-independent-error-5-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-zwei-independent-error-5-token-1",
+          "answers": [
+            "wiederholt haben"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-6",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 6",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Bis dahin wird das Wasser vollständig ",
+              "form": "verdunstet sein",
+              "id": "de-futur-zwei-independent-error-6-token-1"
+            },
+            {
+              "before": ". Wenn du zurückkommst, wird Mia bereits ",
+              "form": "eingeschlafen haben",
+              "id": "de-futur-zwei-independent-error-6-token-2"
+            },
+            {
+              "before": ". In einer Stunde wird der Sturm weitergezogen ",
+              "form": "sein",
+              "id": "de-futur-zwei-independent-error-6-token-3"
+            },
+            {
+              "before": ". Wenn wir eintreffen, ",
+              "form": "werden",
+              "id": "de-futur-zwei-independent-error-6-token-4"
+            },
+            {
+              "before": " die Gäste schon gegangen sein. Um acht Uhr ",
+              "form": "wird",
+              "id": "de-futur-zwei-independent-error-6-token-5"
+            }
+          ],
+          "after": " der letzte Zug abgefahren sein.",
+          "wrongId": "de-futur-zwei-independent-error-6-token-2",
+          "answers": [
+            "eingeschlafen sein"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-7",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 7",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Am Monatsende werden wir genug Geld ",
+              "form": "gespart haben",
+              "id": "de-futur-zwei-independent-error-7-token-1"
+            },
+            {
+              "before": ". Bis zur Eröffnung wird das Team jedes Schild ",
+              "form": "montiert haben",
+              "id": "de-futur-zwei-independent-error-7-token-2"
+            },
+            {
+              "before": ". Bis Freitag ",
+              "form": "würde",
+              "id": "de-futur-zwei-independent-error-7-token-3"
+            },
+            {
+              "before": " Lea den Bericht abgeschlossen haben. Bis zum Winter wird die Stadt die Brücke ",
+              "form": "erneuert haben",
+              "id": "de-futur-zwei-independent-error-7-token-4"
+            },
+            {
+              "before": ". Vor der Prüfung werdet ihr alle Kapitel ",
+              "form": "wiederholt haben",
+              "id": "de-futur-zwei-independent-error-7-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-zwei-independent-error-7-token-3",
+          "answers": [
+            "wird"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-8",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 8",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wenn du zurückkommst, wird Mia bereits ",
+              "form": "eingeschlafen sein",
+              "id": "de-futur-zwei-independent-error-8-token-1"
+            },
+            {
+              "before": ". In einer Stunde wird der Sturm weitergezogen ",
+              "form": "sein",
+              "id": "de-futur-zwei-independent-error-8-token-2"
+            },
+            {
+              "before": ". Wenn wir eintreffen, ",
+              "form": "werden",
+              "id": "de-futur-zwei-independent-error-8-token-3"
+            },
+            {
+              "before": " die Gäste schon gegangen sein. Um acht Uhr ",
+              "form": "würde",
+              "id": "de-futur-zwei-independent-error-8-token-4"
+            },
+            {
+              "before": " der letzte Zug abgefahren sein. Bis dahin wird das Wasser vollständig ",
+              "form": "verdunstet sein",
+              "id": "de-futur-zwei-independent-error-8-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-zwei-independent-error-8-token-4",
+          "answers": [
+            "wird"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-9",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 9",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Bis zur Eröffnung wird das Team jedes Schild ",
+              "form": "montiert haben",
+              "id": "de-futur-zwei-independent-error-9-token-1"
+            },
+            {
+              "before": ". Bis Freitag ",
+              "form": "wird",
+              "id": "de-futur-zwei-independent-error-9-token-2"
+            },
+            {
+              "before": " Lea den Bericht abgeschlossen haben. Bis zum Winter wird die Stadt die Brücke ",
+              "form": "erneuert haben",
+              "id": "de-futur-zwei-independent-error-9-token-3"
+            },
+            {
+              "before": ". Vor der Prüfung werdet ihr alle Kapitel ",
+              "form": "wiederholt haben",
+              "id": "de-futur-zwei-independent-error-9-token-4"
+            },
+            {
+              "before": ". Am Monatsende werden wir genug Geld ",
+              "form": "gespart sein",
+              "id": "de-futur-zwei-independent-error-9-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-zwei-independent-error-9-token-5",
+          "answers": [
+            "gespart haben"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-zwei-independent-error-10",
+          "tense": "futur-zwei",
+          "title": "Korrekturrunde · 10",
+          "focus": "Futur II",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "In einer Stunde wird der Sturm weitergezogen ",
+              "form": "haben",
+              "id": "de-futur-zwei-independent-error-10-token-1"
+            },
+            {
+              "before": ". Wenn wir eintreffen, ",
+              "form": "werden",
+              "id": "de-futur-zwei-independent-error-10-token-2"
+            },
+            {
+              "before": " die Gäste schon gegangen sein. Um acht Uhr ",
+              "form": "wird",
+              "id": "de-futur-zwei-independent-error-10-token-3"
+            },
+            {
+              "before": " der letzte Zug abgefahren sein. Bis dahin wird das Wasser vollständig ",
+              "form": "verdunstet sein",
+              "id": "de-futur-zwei-independent-error-10-token-4"
+            },
+            {
+              "before": ". Wenn du zurückkommst, wird Mia bereits ",
+              "form": "eingeschlafen sein",
+              "id": "de-futur-zwei-independent-error-10-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-zwei-independent-error-10-token-1",
+          "answers": [
+            "sein"
+          ],
+          "explanation": "Futur II betrachtet mit „werden + Partizip II + haben/sein“ ein Ergebnis als vor einer ausdrücklich genannten künftigen Frist oder einem zweiten Zukunftspunkt abgeschlossen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-futur-zwei-separation-1",
+          "tense": "futur-zwei",
+          "title": "bestellen · 1",
+          "focus": "futur-zwei",
+          "verb": "bestellen",
+          "separation": "inseparable",
+          "prompt": "Vor dem Fest wird die Küche alle Zutaten ___.",
+          "answers": [
+            "Vor dem Fest wird die Küche alle Zutaten bestellt haben.",
+            "Vor dem Fest wird die Küche alle Zutaten bestellt haben"
+          ],
+          "explanation": "„bestellen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-zwei-separation-2",
+          "tense": "futur-zwei",
+          "title": "einreichen · 2",
+          "focus": "futur-zwei",
+          "verb": "einreichen",
+          "separation": "separable",
+          "prompt": "Am Monatsende wirst du den Antrag ___.",
+          "answers": [
+            "Am Monatsende wirst du den Antrag eingereicht haben.",
+            "Am Monatsende wirst du den Antrag eingereicht haben"
+          ],
+          "explanation": "„einreichen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-zwei-separation-3",
+          "tense": "futur-zwei",
+          "title": "erreichen · 3",
+          "focus": "futur-zwei",
+          "verb": "erreichen",
+          "separation": "inseparable",
+          "prompt": "Am Gipfeltag wird die Gruppe ihr Ziel ___.",
+          "answers": [
+            "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben.",
+            "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben"
+          ],
+          "explanation": "„erreichen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-zwei-separation-4",
+          "tense": "futur-zwei",
+          "title": "zurückkehren · 4",
+          "focus": "futur-zwei",
+          "verb": "zurückkehren",
+          "separation": "separable",
+          "prompt": "Bis zum Abend werden die Wanderer ___.",
+          "answers": [
+            "Bis zum Abend werden die Wanderer zurückgekehrt sein.",
+            "Bis zum Abend werden die Wanderer zurückgekehrt sein"
+          ],
+          "explanation": "„zurückkehren“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-zwei-separation-5",
+          "tense": "futur-zwei",
+          "title": "abschließen · 5",
+          "focus": "futur-zwei",
+          "verb": "abschließen",
+          "separation": "separable",
+          "prompt": "Bis Freitag wird Lea den Vertrag ___.",
+          "answers": [
+            "Bis Freitag wird Lea den Vertrag abgeschlossen haben.",
+            "Bis Freitag wird Lea den Vertrag abgeschlossen haben"
+          ],
+          "explanation": "„abschließen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-zwei-separation-6",
+          "tense": "futur-zwei",
+          "title": "bezahlen · 6",
+          "focus": "futur-zwei",
+          "verb": "bezahlen",
+          "separation": "inseparable",
+          "prompt": "Vor der Abreise werden wir jede Rechnung ___.",
+          "answers": [
+            "Vor der Abreise werden wir jede Rechnung bezahlt haben.",
+            "Vor der Abreise werden wir jede Rechnung bezahlt haben"
+          ],
+          "explanation": "„bezahlen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-zwei-separation-7",
+          "tense": "futur-zwei",
+          "title": "ankommen · 7",
+          "focus": "futur-zwei",
+          "verb": "ankommen",
+          "separation": "separable",
+          "prompt": "Wenn wir starten, wird der Nachtzug bereits ___.",
+          "answers": [
+            "Wenn wir starten, wird der Nachtzug bereits angekommen sein.",
+            "Wenn wir starten, wird der Nachtzug bereits angekommen sein"
+          ],
+          "explanation": "„ankommen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-zwei-separation-8",
+          "tense": "futur-zwei",
+          "title": "entdecken · 8",
+          "focus": "futur-zwei",
+          "verb": "entdecken",
+          "separation": "inseparable",
+          "prompt": "Bis dahin wird das Labor die Ursache ___.",
+          "answers": [
+            "Bis dahin wird das Labor die Ursache entdeckt haben.",
+            "Bis dahin wird das Labor die Ursache entdeckt haben"
+          ],
+          "explanation": "„entdecken“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-zwei-separation-9",
+          "tense": "futur-zwei",
+          "title": "verlassen · 9",
+          "focus": "futur-zwei",
+          "verb": "verlassen",
+          "separation": "inseparable",
+          "prompt": "Wenn du eintriffst, werden die Gäste das Gebäude ___.",
+          "answers": [
+            "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben.",
+            "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben"
+          ],
+          "explanation": "„verlassen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-zwei-separation-10",
+          "tense": "futur-zwei",
+          "title": "aufbauen · 10",
+          "focus": "futur-zwei",
+          "verb": "aufbauen",
+          "separation": "separable",
+          "prompt": "Vor der Eröffnung werden die Helfer alle Stände ___.",
+          "answers": [
+            "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben.",
+            "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben"
+          ],
+          "explanation": "„aufbauen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-futur-zwei-written-final-story",
+          "title": "Bilanz am Tag der Eröffnung",
+          "focus": "futur-zwei",
+          "instruction": "Lies die ganze Geschichte. Ergänze jede vollständige Verbgruppe im Futur II; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Wenn das Forschungszentrum im Oktober öffnet, wird feststehen, dass die Bauleute den Rohbau seit Monaten ",
+            ". Die Leitung erwartet, dass die Elektriker alle Leitungen ",
+            " und dass das Sicherheitsteam jedes Notfallsystem ",
+            ". Der Bürgermeister verspricht, dass die Stadt den Vorplatz bis dahin ",
+            ". Die Gärtner versichern, dass vor der Eröffnung mehr als hundert Bäume ",
+            ". Die Verwaltung rechnet damit, dass die ersten Forschenden bereits in ihre Büros ",
+            ". Bevor die Gäste eintreffen, wird die Direktorin prüfen, ob das Kommunikationsteam alle Wegweiser ",
+            ". Außerdem erwartet sie, dass sie ihre Eröffnungsrede mehrfach ",
+            ". Auch die Cafeteria meldet, dass sie den ersten Einkauf bis zum Vorabend ",
+            ". Am Abend wird die Stadt feststellen, dass das Zentrum seinen ersten öffentlichen Tag erfolgreich ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-zwei-written-final-story-gap-1",
+              "tense": "futur-zwei",
+              "verb": "abschließen",
+              "answers": [
+                "abgeschlossen haben werden"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-2",
+              "tense": "futur-zwei",
+              "verb": "prüfen",
+              "answers": [
+                "geprüft haben werden"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-3",
+              "tense": "futur-zwei",
+              "verb": "testen",
+              "answers": [
+                "getestet haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-4",
+              "tense": "futur-zwei",
+              "verb": "gestalten",
+              "answers": [
+                "gestaltet haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-5",
+              "tense": "futur-zwei",
+              "verb": "pflanzen",
+              "answers": [
+                "gepflanzt worden sein werden"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-6",
+              "tense": "futur-zwei",
+              "verb": "einziehen",
+              "answers": [
+                "eingezogen sein werden"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-7",
+              "tense": "futur-zwei",
+              "verb": "montieren",
+              "answers": [
+                "montiert haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-8",
+              "tense": "futur-zwei",
+              "verb": "proben",
+              "answers": [
+                "geprobt haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-9",
+              "tense": "futur-zwei",
+              "verb": "erledigen",
+              "answers": [
+                "erledigt haben wird"
+              ]
+            },
+            {
+              "id": "de-futur-zwei-written-final-story-gap-10",
+              "tense": "futur-zwei",
+              "verb": "beenden",
+              "answers": [
+                "beendet haben wird"
+              ]
+            }
+          ],
+          "explanation": "Jede Lücke enthält Partizip II, den passenden Perfektinfinitiv mit „haben“ oder „sein“ und die zum Subjekt passende Form von „werden“. Alle Ergebnisse liegen vor einem ausdrücklich genannten künftigen Zeitpunkt."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-futur-zwei-choice-editorial-1",
+        "level": 1,
+        "lemma": "machen",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-1",
+        "targetForm": "futur-zwei",
+        "person": "first",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "gemacht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gemacht haben werde",
+        "accepted": [
+          "gemacht haben werde"
+        ],
+        "distractorRationale": [
+          "„gemacht haben wirst“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gemacht haben wird“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gemacht haben werden“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "aa5ff7fefbaf4af782964bd691ba572acface2e78a239d06bac8963539bd5ca3"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-2",
+        "level": 1,
+        "lemma": "lesen",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-2",
+        "targetForm": "futur-zwei",
+        "person": "second",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelesen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelesen haben wirst",
+        "accepted": [
+          "gelesen haben wirst"
+        ],
+        "distractorRationale": [
+          "„gelesen haben werde“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gelesen haben wird“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gelesen haben werdet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "4093c90a99bdd1c5f33e2e917e82436436cd0f551991ebf4a74bf3bce9efa894"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-3",
+        "level": 1,
+        "lemma": "lernen",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-3",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelernt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelernt haben wird",
+        "accepted": [
+          "gelernt haben wird"
+        ],
+        "distractorRationale": [
+          "„gelernt haben werde“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gelernt haben wirst“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gelernt haben werden“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "1c995f1c6f08a13d69ef4c609146cb80d362d250a00cc81c6d89644a5550132f"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-4",
+        "level": 1,
+        "lemma": "kochen",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-4",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "gekocht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekocht haben werden",
+        "accepted": [
+          "gekocht haben werden"
+        ],
+        "distractorRationale": [
+          "„gekocht haben werde“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekocht haben wird“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekocht haben werdet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "62e776fea9a77167220cb1d0f80fe3a88ca6e81ad83cdda97bc387ac57847cbe"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-5",
+        "level": 1,
+        "lemma": "arbeiten",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-5",
+        "targetForm": "futur-zwei",
+        "person": "second",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "gearbeitet",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gearbeitet haben werdet",
+        "accepted": [
+          "gearbeitet haben werdet"
+        ],
+        "distractorRationale": [
+          "„gearbeitet haben werde“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gearbeitet haben wird“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gearbeitet haben werden“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "2b75a66b8ee9056eac8b1cdd4d3a8db9d39ea27c6a22fd1edc78367a465bf1d4"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-6",
+        "level": 1,
+        "lemma": "schlafen",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-6",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "geschlafen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschlafen haben werden",
+        "accepted": [
+          "geschlafen haben werden"
+        ],
+        "distractorRationale": [
+          "„geschlafen haben werde“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„geschlafen haben wird“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„geschlafen haben werdet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "5c927635bb7835db903caa37af659a20360b303437c9937e72cf7de792f8a07a"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-7",
+        "level": 1,
+        "lemma": "gehen",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-7",
+        "targetForm": "futur-zwei",
+        "person": "first",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "gegangen sein werde",
+        "accepted": [
+          "gegangen sein werde"
+        ],
+        "distractorRationale": [
+          "„gegangen sein wirst“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gegangen sein wird“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gegangen sein werden“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "13ba6fdb234ac1239d203ec4bf85f3d068abcbf660f2402acec2cdf90bd230ba"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-8",
+        "level": 1,
+        "lemma": "ankommen",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-8",
+        "targetForm": "futur-zwei",
+        "person": "second",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": "angekommen",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "angekommen sein wirst",
+        "accepted": [
+          "angekommen sein wirst"
+        ],
+        "distractorRationale": [
+          "„angekommen sein werde“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„angekommen sein wird“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„angekommen sein werdet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "63e4de5eaff3ac723504950efc43ee547c6cb3aaadd973c5e6dcb938d78350a1"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-9",
+        "level": 1,
+        "lemma": "fahren",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-9",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefahren sein wird",
+        "accepted": [
+          "gefahren sein wird"
+        ],
+        "distractorRationale": [
+          "„gefahren sein werde“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gefahren sein wirst“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gefahren sein werden“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "a3b9a74e4a6f5bfb2beca3798386ca7ca48e27617303e487fcd8e6276676d475"
+      },
+      {
+        "itemId": "de-futur-zwei-choice-editorial-10",
+        "level": 1,
+        "lemma": "zurückkommen",
+        "senseId": "futur-zwei:futur-zwei-choice-editorial-10",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": "zurückgekommen",
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "zurückgekommen sein werden",
+        "accepted": [
+          "zurückgekommen sein werden"
+        ],
+        "distractorRationale": [
+          "„zurückgekommen sein werde“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„zurückgekommen sein wird“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„zurückgekommen sein werdet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "aac2e00315a269cfcc6c8f483d91e695882c80fa18a7af153a881d711fb0b7cd"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-1",
+        "level": 2,
+        "lemma": "beenden",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-1",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "beendet",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "beendet haben werden",
+        "accepted": [
+          "beendet haben werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "6cd8cf198e4219800e074e18a8e87157f382bff00c5306cae69271bfb5ca3dd9"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-2",
+        "level": 2,
+        "lemma": "gehen",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-2",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "gegangen sein wird",
+        "accepted": [
+          "gegangen sein wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e6785a60ff5f7fa1c8aaee4d2f485910fd825fb294179d4edc930775578ecb92"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-3",
+        "level": 2,
+        "lemma": "speichern",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-3",
+        "targetForm": "futur-zwei",
+        "person": "third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "explicit-subject:die-techniker"
+        ],
+        "auxiliary": "haben",
+        "participle": "gespeichert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gespeichert haben werden",
+        "accepted": [
+          "gespeichert haben werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "81a7c0dc050d0f0a09f1a888eba35b3b6127719ad37987964a6457779b506ebd"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-4",
+        "level": 2,
+        "lemma": "montieren",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-4",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "before-future-event"
+        ],
+        "auxiliary": "haben",
+        "participle": "montiert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "montiert haben wird",
+        "accepted": [
+          "montiert haben wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "43c7830e810671cadc319ebbfb571181c55f594f54e64440f4a1cf1eb11dbcb3"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-5",
+        "level": 2,
+        "lemma": "sammeln",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-5",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "gesammelt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesammelt haben wird",
+        "accepted": [
+          "gesammelt haben wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8bc6d884ef2a33a2aba3861468f2671a3958856b75bf86c5ffd4a8eeb3591f49"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-6",
+        "level": 2,
+        "lemma": "weiterziehen",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-6",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "weitergezogen",
+        "separation": "separable",
+        "prefix": "weiter",
+        "expectedUnit": "weitergezogen sein werden",
+        "accepted": [
+          "weitergezogen sein werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "b16e11fbd91652e500e67f30d44f8ca621b4c58d4ff05a09ee1c8cc27684c98a"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-7",
+        "level": 2,
+        "lemma": "wiederholen",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-7",
+        "targetForm": "futur-zwei",
+        "person": "second",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "wiederholt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wiederholt haben wirst",
+        "accepted": [
+          "wiederholt haben wirst"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "97918bcab359077d3f8ff7cc61f510fbdc4a06a6c2d6647f08978ffe5ac4cceb"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-8",
+        "level": 2,
+        "lemma": "produzieren",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-8",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "produziert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "produziert haben wird",
+        "accepted": [
+          "produziert haben wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "bb2c7160a96c33a3ce2d9f5367eb57605afd8c548be46abb2e29e6dc4b7e396b"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-9",
+        "level": 2,
+        "lemma": "auswerten",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-9",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "ausgewertet",
+        "separation": "separable",
+        "prefix": "aus",
+        "expectedUnit": "ausgewertet haben werden",
+        "accepted": [
+          "ausgewertet haben werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "c4aaadfebc9e5a835c74b672b84d97e2e9efb7869533185d243cbd1133bf3c51"
+      },
+      {
+        "itemId": "de-futur-zwei-micro-editorial-10",
+        "level": 2,
+        "lemma": "reparieren",
+        "senseId": "futur-zwei:futur-zwei-micro-editorial-10",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "repariert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "repariert haben wird",
+        "accepted": [
+          "repariert haben wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "b101ea7a50cfc336b131e752f8164f56b9809e1f60e03471a3e7ff1419471e34"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-1",
+        "level": 3,
+        "lemma": "aufbauen; liefern; ankommen",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-1",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "aufgebaut haben wird | geliefert haben wird | angekommen sein wird",
+        "accepted": [
+          "aufgebaut haben wird",
+          "geliefert haben wird",
+          "angekommen sein wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f91fc2a40b835c38a29a3787faba74431703c693d265a4ef0381a57ea00633a5"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-2",
+        "level": 3,
+        "lemma": "markieren; besprechen; strömen",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-2",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "markiert haben wird | besprochen haben werden | geströmt sein werden",
+        "accepted": [
+          "markiert haben wird",
+          "besprochen haben werden",
+          "geströmt sein werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "d9da148916e838534426f04ad3f54e31790de0e27e0414add5f37fa597cd10bd"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-3",
+        "level": 3,
+        "lemma": "eröffnen; schaffen; steigen",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-3",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "eröffnet haben wird | geschaffen haben wird | gestiegen sein wird",
+        "accepted": [
+          "eröffnet haben wird",
+          "geschaffen haben wird",
+          "gestiegen sein wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "37da20a7f2b3ac9cf750a8a32370637682d79ca84c05af3dca23253517d0f07e"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-4",
+        "level": 3,
+        "lemma": "kontrollieren; senden; eintreffen",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-4",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "kontrolliert; gesendet/gesandt; eingetroffen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kontrolliert haben wird | gesendet haben wird / gesandt haben wird | eingetroffen sein wird",
+        "accepted": [
+          "kontrolliert haben wird",
+          "gesendet haben wird",
+          "eingetroffen sein wird",
+          "gesandt haben wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "c32c5e5bdfc5077fb726d1096e3d53ca0c72ae52dbc73db98a1e0caaa8d76c92"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-5",
+        "level": 3,
+        "lemma": "sehen; begründen; anreisen",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-5",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "before-future-event"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesehen haben wird | begründet haben wird | angereist sein werden",
+        "accepted": [
+          "gesehen haben wird",
+          "begründet haben wird",
+          "angereist sein werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4d3d67f9fc743f20e3cd68acf70ff4ab52e4ef69c2a54b9c6a2500d1e466c3cd"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-6",
+        "level": 3,
+        "lemma": "weiterziehen; prüfen; zurückkehren",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-6",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "geprüft",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "weitergezogen sein wird | geprüft haben wird | zurückgekehrt sein werden",
+        "accepted": [
+          "weitergezogen sein wird",
+          "geprüft haben wird",
+          "zurückgekehrt sein werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4538b796a5d3867029799c160a7246ed1831224fa3c6804327e973670b11155c"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-7",
+        "level": 3,
+        "lemma": "überarbeiten; prüfen; freigeben",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-7",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "geprüft",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "überarbeitet haben wird | geprüft haben wird | freigegeben haben wird",
+        "accepted": [
+          "überarbeitet haben wird",
+          "geprüft haben wird",
+          "freigegeben haben wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "000c1679fb5d3c9c3cfac8250eebce2dd26dcccf13bc6694a01ec8e1dd725300"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-8",
+        "level": 3,
+        "lemma": "schützen; leeren; ziehen",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-8",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "gezogen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschützt haben werden | geleert haben werden | gezogen sein werden",
+        "accepted": [
+          "geschützt haben werden",
+          "geleert haben werden",
+          "gezogen sein werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e01b44e830efdd9089a1843ca8433c8bbbcda395cb5af13574907418c7422252"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-9",
+        "level": 3,
+        "lemma": "kopieren; testen; starten",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-9",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "getestet",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kopiert haben wird | getestet haben werden | gestartet sein wird",
+        "accepted": [
+          "kopiert haben wird",
+          "getestet haben werden",
+          "gestartet sein wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "389a013518c7c0195c706fe956282e3f22017b6f7ba2394a96bfbd1f8b5d2e3c"
+      },
+      {
+        "itemId": "de-futur-zwei-long-editorial-10",
+        "level": 3,
+        "lemma": "reinigen; vorbereiten; ankommen",
+        "senseId": "futur-zwei:futur-zwei-long-editorial-10",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gereinigt haben wird | vorbereitet haben wird | angekommen sein wird",
+        "accepted": [
+          "gereinigt haben wird",
+          "vorbereitet haben wird",
+          "angekommen sein wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "dc9b50c4e69184c524611d52545efaaa852cf1137cb7d10904d1d857051b0cc5"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-1",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 1",
+        "senseId": "futur-zwei:futur-zwei-independent-error-1",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "before-future-event",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "erneuert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "erneuert haben",
+        "accepted": [
+          "erneuert haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "23d15db73b1fce49fb8ba0433950a67db361621b5fd91d8318e417b7460218fa"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-2",
+        "level": 4,
+        "lemma": "verdunsten",
+        "senseId": "futur-zwei:futur-zwei-independent-error-2",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "wenn-future-reference",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": "verdunstet",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "verdunstet sein",
+        "accepted": [
+          "verdunstet sein"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e94033740a02b4815a363d03086465026fdacc66c9c82361b236ccecc3754393"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-3",
+        "level": 4,
+        "lemma": "montieren",
+        "senseId": "futur-zwei:futur-zwei-independent-error-3",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "before-future-event",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "montiert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "montiert haben",
+        "accepted": [
+          "montiert haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "a50861960851b49fbe6214364a2d5e34a41ebcd75a8c4c58c493e7f2b7f64cf5"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-4",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 4",
+        "senseId": "futur-zwei:futur-zwei-independent-error-4",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "wenn-future-reference",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": "werden",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "werden",
+        "accepted": [
+          "werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7a06d8d52d0e4b2a91eb8a50f5b8aaf969f9d9cbcbea078d4715d8a38a1ec530"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-5",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 5",
+        "senseId": "futur-zwei:futur-zwei-independent-error-5",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "before-future-event",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "wiederholt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wiederholt haben",
+        "accepted": [
+          "wiederholt haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "312fed30fcc14e2927ed485fab77886b5e915cca3da4e9f045b3620b4df966ef"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-6",
+        "level": 4,
+        "lemma": "einschlafen",
+        "senseId": "futur-zwei:futur-zwei-independent-error-6",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "wenn-future-reference",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": "eingeschlafen",
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "eingeschlafen sein",
+        "accepted": [
+          "eingeschlafen sein"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "41437e7ddfdd82621ba819a550af517e15f9d102d5c26a1cc2e9ab8e8388f879"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-7",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 7",
+        "senseId": "futur-zwei:futur-zwei-independent-error-7",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "before-future-event",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wird",
+        "accepted": [
+          "wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "70946cfcd806680a4e47b9fbf4075c71b0acb624f46fc7e23717339ee32a630a"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-8",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 8",
+        "senseId": "futur-zwei:futur-zwei-independent-error-8",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "wenn-future-reference",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wird",
+        "accepted": [
+          "wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "baee4060120d6d2520671b4e6cfa10e6ba309c94ecd37c57e2d0bb4d3991ba81"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-9",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 9",
+        "senseId": "futur-zwei:futur-zwei-independent-error-9",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "before-future-event",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "gespart",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gespart haben",
+        "accepted": [
+          "gespart haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f6923806592f3608bd914ced68c56d59a5bc239524a53b8d50bc81110eb2e595"
+      },
+      {
+        "itemId": "de-futur-zwei-independent-error-10",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 10",
+        "senseId": "futur-zwei:futur-zwei-independent-error-10",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "wenn-future-reference",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sein",
+        "accepted": [
+          "sein"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "a562281643044c12192c363da70b9181c00867b39600c3751fad98cd4c08d437"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-1",
+        "level": 5,
+        "lemma": "bestellen",
+        "senseId": "futur-zwei:futur-zwei-separation-1",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "before-future-event"
+        ],
+        "auxiliary": "haben",
+        "participle": "bestellt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Vor dem Fest wird die Küche alle Zutaten bestellt haben. | Vor dem Fest wird die Küche alle Zutaten bestellt haben",
+        "accepted": [
+          "Vor dem Fest wird die Küche alle Zutaten bestellt haben.",
+          "Vor dem Fest wird die Küche alle Zutaten bestellt haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3a8a8831ddcda92b225853c36afab6d002ffc1d6344fb2c51cbe20929c3ad61e"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-2",
+        "level": 5,
+        "lemma": "einreichen",
+        "senseId": "futur-zwei:futur-zwei-separation-2",
+        "targetForm": "futur-zwei",
+        "person": "second",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "clock-or-period-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "wirst",
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "Am Monatsende wirst du den Antrag eingereicht haben. | Am Monatsende wirst du den Antrag eingereicht haben",
+        "accepted": [
+          "Am Monatsende wirst du den Antrag eingereicht haben.",
+          "Am Monatsende wirst du den Antrag eingereicht haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "d009ee8a60a8b7032c0adfe9e5ac09b27c13a5173155dd696a8ef97c66d55c27"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-3",
+        "level": 5,
+        "lemma": "erreichen",
+        "senseId": "futur-zwei:futur-zwei-separation-3",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "erreicht",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben. | Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben",
+        "accepted": [
+          "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben.",
+          "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "b0c978b9fccc1e082d0e6c0d226e3a27ea7fea4b76419628443ee1e25450f4a4"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-4",
+        "level": 5,
+        "lemma": "zurückkehren",
+        "senseId": "futur-zwei:futur-zwei-separation-4",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "sein",
+        "participle": "werden",
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "Bis zum Abend werden die Wanderer zurückgekehrt sein. | Bis zum Abend werden die Wanderer zurückgekehrt sein",
+        "accepted": [
+          "Bis zum Abend werden die Wanderer zurückgekehrt sein.",
+          "Bis zum Abend werden die Wanderer zurückgekehrt sein"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "a019f7fd45d0819ad3b8e1c0781423af17a65e1231c2d64ef41a5f3c03fd5fd0"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-5",
+        "level": 5,
+        "lemma": "abschließen",
+        "senseId": "futur-zwei:futur-zwei-separation-5",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "den",
+        "separation": "separable",
+        "prefix": "ab",
+        "expectedUnit": "Bis Freitag wird Lea den Vertrag abgeschlossen haben. | Bis Freitag wird Lea den Vertrag abgeschlossen haben",
+        "accepted": [
+          "Bis Freitag wird Lea den Vertrag abgeschlossen haben.",
+          "Bis Freitag wird Lea den Vertrag abgeschlossen haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "359082afd35c585f4f50b1b42d5ba88f0d3c929fd6fd82352190655fef054d3b"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-6",
+        "level": 5,
+        "lemma": "bezahlen",
+        "senseId": "futur-zwei:futur-zwei-separation-6",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "before-future-event"
+        ],
+        "auxiliary": "haben",
+        "participle": "bezahlt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Vor der Abreise werden wir jede Rechnung bezahlt haben. | Vor der Abreise werden wir jede Rechnung bezahlt haben",
+        "accepted": [
+          "Vor der Abreise werden wir jede Rechnung bezahlt haben.",
+          "Vor der Abreise werden wir jede Rechnung bezahlt haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "79409c0b8aa0faba76f74bdf9edc92ea9f863a974c72b227aa3f5bcd7d3003a2"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-7",
+        "level": 5,
+        "lemma": "ankommen",
+        "senseId": "futur-zwei:futur-zwei-separation-7",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "starten",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "Wenn wir starten, wird der Nachtzug bereits angekommen sein. | Wenn wir starten, wird der Nachtzug bereits angekommen sein",
+        "accepted": [
+          "Wenn wir starten, wird der Nachtzug bereits angekommen sein.",
+          "Wenn wir starten, wird der Nachtzug bereits angekommen sein"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "ff2c6e6882cd999fdffe16817d52dbc39955be578f6e6730d50ab2afeba7950d"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-8",
+        "level": 5,
+        "lemma": "entdecken",
+        "senseId": "futur-zwei:futur-zwei-separation-8",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline"
+        ],
+        "auxiliary": "haben",
+        "participle": "entdeckt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Bis dahin wird das Labor die Ursache entdeckt haben. | Bis dahin wird das Labor die Ursache entdeckt haben",
+        "accepted": [
+          "Bis dahin wird das Labor die Ursache entdeckt haben.",
+          "Bis dahin wird das Labor die Ursache entdeckt haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "d6cfe387bb00788417001768b8e675afe8ef564cb250a831f221ad25c97621a1"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-9",
+        "level": 5,
+        "lemma": "verlassen",
+        "senseId": "futur-zwei:futur-zwei-separation-9",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "verlassen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben. | Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben",
+        "accepted": [
+          "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben.",
+          "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "36bbbe1bbff32de0ba073aaf2145c332b228276e11b34a4fcd923840d7477867"
+      },
+      {
+        "itemId": "de-futur-zwei-separation-10",
+        "level": 5,
+        "lemma": "aufbauen",
+        "senseId": "futur-zwei:futur-zwei-separation-10",
+        "targetForm": "futur-zwei",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "before-future-event"
+        ],
+        "auxiliary": "haben",
+        "participle": "werden",
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben. | Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben",
+        "accepted": [
+          "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben.",
+          "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "d3181f75194356c2b7cce2995215b65f800c6cc6f7b587ac0e8b43be666ba257"
+      },
+      {
+        "itemId": "de-futur-zwei-written-final-story",
+        "level": 6,
+        "lemma": "abschließen; prüfen; testen; gestalten; pflanzen; einziehen; montieren; proben; erledigen; beenden",
+        "senseId": "futur-zwei:futur-zwei-written-final-story",
+        "targetForm": "futur-zwei",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ergebnis vor einer ausdrücklichen zukünftigen Frist",
+        "anchorIds": [
+          "completed-before-future-reference",
+          "bis-deadline",
+          "before-future-event",
+          "wenn-future-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "geprüft; getestet; gestaltet; gepflanzt; montiert; geprobt; erledigt; beendet",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "abgeschlossen haben werden | geprüft haben werden | getestet haben wird | gestaltet haben wird | gepflanzt worden sein werden | eingezogen sein werden | montiert haben wird | geprobt haben wird | erledigt haben wird | beendet haben wird",
+        "accepted": [
+          "abgeschlossen haben werden",
+          "geprüft haben werden",
+          "getestet haben wird",
+          "gestaltet haben wird",
+          "gepflanzt worden sein werden",
+          "eingezogen sein werden",
+          "montiert haben wird",
+          "geprobt haben wird",
+          "erledigt haben wird",
+          "beendet haben wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f95a615ac00233cbb3e7b92ca59797bb222547466c26beb1fe314f729834a554"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Bestimmung des Perfekthilfsverbs",
+        "url": "https://grammis.ids-mannheim.de/systematische-grammatik/1219",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Tempus",
+        "url": "https://grammis.ids-mannheim.de/progr%40mm/6905",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Infinitiv Perfekt",
+        "url": "https://grammis.ids-mannheim.de/terms/view/979",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "work-order-fingerprints",
+      "status": "PASS",
+      "detail": "El informe conserva las huellas exactas de la orden."
+    },
+    {
+      "id": "six-level-coverage",
+      "status": "PASS",
+      "detail": "Diez retos en niveles 1–5 y una historia final de diez huecos."
+    },
+    {
+      "id": "final-verbal-units",
+      "status": "PASS",
+      "detail": "Cada respuesta final cumple el mínimo de 3 palabras."
+    },
+    {
+      "id": "auxiliary-policy",
+      "status": "PASS",
+      "detail": "inherits-perfect-auxiliary"
+    },
+    {
+      "id": "source-review",
+      "status": "PASS",
+      "detail": "Auxiliares y complejos verbales contrastados con grammis/IDS."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "PRESERVED-BASELINE",
+      "detail": "Los bancos de los niveles 1–5 se conservaron sin cambios."
+    },
+    {
+      "severity": "FIXED",
+      "code": "LEVEL-6-COMPLETE-UNITS",
+      "detail": "La historia final ahora coloca la unidad verbal completa dentro de cada hueco."
+    },
+    {
+      "severity": "FIXED",
+      "code": "UNAMBIGUOUS-SUBJECT",
+      "detail": "de-futur-zwei-micro-editorial-3 nombra «die Techniker» y mantiene la concordancia plural «werden»."
+    },
+    {
+      "severity": "FIXED",
+      "code": "SENDEN-PARTICIPLE-VARIANT",
+      "detail": "de-futur-zwei-long-editorial-4 acepta «gesendet haben wird» y «gesandt haben wird»."
+    }
+  ],
+  "generatedAt": "2026-09-05T15:13:22.317Z",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3"
+}

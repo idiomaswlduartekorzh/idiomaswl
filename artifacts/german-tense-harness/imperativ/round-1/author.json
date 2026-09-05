@@ -1,0 +1,2861 @@
+{
+  "schemaVersion": 1,
+  "formId": "imperativ",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "c1469c42024cb09582bc95a61a19654a7db25b6916dbf34901433d32b8e633da",
+  "specFingerprint": "688bcebfada2bdab301a4dcbec2a767257e41e51e6ce8ed0cb0edefc7146d627",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "baselineContentFingerprint": "5638a23653f8dd491096e22242693f347d4d027b3637e239d37fd44efc45c02b",
+  "candidate": {
+    "formId": "imperativ",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-imperativ-choice-editorial-1",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine Aufforderung an Paul.",
+          "context": "Paul, ___ bitte her!",
+          "options": [
+            "komm",
+            "kommt",
+            "kommen Sie",
+            "kommen wir"
+          ],
+          "answer": "komm",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-2",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine Aufforderung an zwei Kinder.",
+          "context": "Kinder, ___ bitte leise!",
+          "options": [
+            "sei",
+            "seid",
+            "seien Sie",
+            "seien wir"
+          ],
+          "answer": "seid",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-3",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine höfliche Aufforderung an Frau Klein.",
+          "context": "Frau Klein, ___ bitte kurz!",
+          "options": [
+            "warte",
+            "wartet",
+            "warten Sie",
+            "warten wir"
+          ],
+          "answer": "warten Sie",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-4",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine Aufforderung an Nora.",
+          "context": "Nora, ___ bitte das Fenster!",
+          "options": [
+            "öffnet",
+            "öffnen Sie",
+            "öffnen wir",
+            "öffne"
+          ],
+          "answer": "öffne",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-5",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine Aufforderung an mehrere Freunde.",
+          "context": "Freunde, ___ bitte langsam!",
+          "options": [
+            "fahrt",
+            "fahr",
+            "fahren Sie",
+            "fahren wir"
+          ],
+          "answer": "fahrt",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-6",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine höfliche Aufforderung an Herrn Wolf.",
+          "context": "Herr Wolf, ___ bitte hier Platz!",
+          "options": [
+            "nimm",
+            "nehmen Sie",
+            "nehmt",
+            "nehmen wir"
+          ],
+          "answer": "nehmen Sie",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-7",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine Aufforderung an Amir.",
+          "context": "Amir, ___ bitte ehrlich!",
+          "options": [
+            "seid",
+            "seien Sie",
+            "sei",
+            "seien wir"
+          ],
+          "answer": "sei",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-8",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine Aufforderung an zwei Spieler.",
+          "context": "Spieler, ___ bitte Wasser!",
+          "options": [
+            "trink",
+            "trinken Sie",
+            "trinken wir",
+            "trinkt"
+          ],
+          "answer": "trinkt",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-9",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine höfliche Aufforderung an Frau Koch.",
+          "context": "Frau Koch, ___ bitte die Tür!",
+          "options": [
+            "schließen Sie",
+            "schließ",
+            "schließt",
+            "schließen wir"
+          ],
+          "answer": "schließen Sie",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        },
+        {
+          "id": "de-imperativ-choice-editorial-10",
+          "tenses": [
+            "imperativ"
+          ],
+          "focus": "Imperativ",
+          "prompt": "Wähle die passende Form für eine Aufforderung an Lea.",
+          "context": "Lea, ___ bitte deinen Ausweis mit!",
+          "options": [
+            "nehmt",
+            "nimm",
+            "nehmen Sie",
+            "nehmen wir"
+          ],
+          "answer": "nimm",
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-imperativ-micro-editorial-1",
+          "title": "Langsamer sprechen",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „sprechen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Paul, ",
+            " bitte langsamer!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-1-gap",
+              "tense": "imperativ",
+              "verb": "sprechen",
+              "answers": [
+                "sprich"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-2",
+          "title": "Am Empfang",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „nehmen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Frau Berger, ",
+            " bitte hier Platz!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-2-gap",
+              "tense": "imperativ",
+              "verb": "nehmen",
+              "answers": [
+                "nehmen Sie"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-3",
+          "title": "Vorsicht, Kinder",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „sein“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Kinder, ",
+            " bitte vorsichtig!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-3-gap",
+              "tense": "imperativ",
+              "verb": "sein",
+              "answers": [
+                "seid"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-4",
+          "title": "Die Tür",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „schließen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Nora, ",
+            " bitte die Tür!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-4-gap",
+              "tense": "imperativ",
+              "verb": "schließen",
+              "answers": [
+                "schließ",
+                "schließe"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-5",
+          "title": "Der Lageplan",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „folgen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Meine Damen und Herren, ",
+            " bitte dem markierten Weg!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-5-gap",
+              "tense": "imperativ",
+              "verb": "folgen",
+              "answers": [
+                "folgen Sie"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-6",
+          "title": "Die Taschenlampen",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „mitnehmen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Lina und Paul, ",
+            " eure Taschenlampen mit!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-6-gap",
+              "tense": "imperativ",
+              "verb": "mitnehmen",
+              "answers": [
+                "nehmt"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-7",
+          "title": "Ruhig bleiben",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „bleiben“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Amir, ",
+            " bitte ruhig!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-7-gap",
+              "tense": "imperativ",
+              "verb": "bleiben",
+              "answers": [
+                "bleib",
+                "bleibe"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-8",
+          "title": "Das Formular",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „ausfüllen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Herr Klein, ",
+            " bitte dieses Formular aus!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-8-gap",
+              "tense": "imperativ",
+              "verb": "ausfüllen",
+              "answers": [
+                "füllen Sie"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-9",
+          "title": "Der Ball",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „abgeben“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Spieler, ",
+            " den Ball schneller ab!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-9-gap",
+              "tense": "imperativ",
+              "verb": "abgeben",
+              "answers": [
+                "gebt"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-micro-editorial-10",
+          "title": "Nicht vergessen",
+          "focus": "Imperativ",
+          "instruction": "Konjugiere „vergessen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Lea, ",
+            " deinen Ausweis nicht!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-micro-editorial-10-gap",
+              "tense": "imperativ",
+              "verb": "vergessen",
+              "answers": [
+                "vergiss"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-imperativ-long-editorial-1",
+          "title": "Pauls Kochschritte",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Paul, ",
+            " zuerst das Gemüse! Danach ",
+            " die Pfanne vor und ",
+            " zum Schluss alles gut um!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-1-gap-1",
+              "tense": "imperativ",
+              "verb": "waschen",
+              "answers": [
+                "wasch",
+                "wasche"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-1-gap-2",
+              "tense": "imperativ",
+              "verb": "heizen",
+              "answers": [
+                "heiz",
+                "heize"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-1-gap-3",
+              "tense": "imperativ",
+              "verb": "rühren",
+              "answers": [
+                "rühr",
+                "rühre"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-2",
+          "title": "Hinweise für die Reisegruppe",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Meine Damen und Herren, ",
+            " zuerst Ihre Tickets! Danach ",
+            " dem grünen Schild und ",
+            " am Ausgang auf den Bus!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-2-gap-1",
+              "tense": "imperativ",
+              "verb": "zeigen",
+              "answers": [
+                "zeigen Sie"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-2-gap-2",
+              "tense": "imperativ",
+              "verb": "folgen",
+              "answers": [
+                "folgen Sie"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-2-gap-3",
+              "tense": "imperativ",
+              "verb": "warten",
+              "answers": [
+                "warten Sie"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-3",
+          "title": "Training für die Kinder",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Kinder, ",
+            " euch zuerst auf! Dann ",
+            " zwei Runden und ",
+            " zum Schluss Wasser!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-3-gap-1",
+              "tense": "imperativ",
+              "verb": "wärmen",
+              "answers": [
+                "wärmt"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-3-gap-2",
+              "tense": "imperativ",
+              "verb": "laufen",
+              "answers": [
+                "lauft"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-3-gap-3",
+              "tense": "imperativ",
+              "verb": "trinken",
+              "answers": [
+                "trinkt"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-4",
+          "title": "Noras Dateisicherung",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Nora, ",
+            " zuerst den Ordner! Dann ",
+            " die Dateien hinein und ",
+            " zum Schluss eine Kopie!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-4-gap-1",
+              "tense": "imperativ",
+              "verb": "öffnen",
+              "answers": [
+                "öffne"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-4-gap-2",
+              "tense": "imperativ",
+              "verb": "ziehen",
+              "answers": [
+                "zieh",
+                "ziehe"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-4-gap-3",
+              "tense": "imperativ",
+              "verb": "erstellen",
+              "answers": [
+                "erstell",
+                "erstelle"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-5",
+          "title": "Sicherheitsanweisung",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Frau Sommer, ",
+            " bitte zuerst den Alarm! Danach ",
+            " das Gebäude und ",
+            " draußen auf Hilfe!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-5-gap-1",
+              "tense": "imperativ",
+              "verb": "aktivieren",
+              "answers": [
+                "aktivieren Sie"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-5-gap-2",
+              "tense": "imperativ",
+              "verb": "verlassen",
+              "answers": [
+                "verlassen Sie"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-5-gap-3",
+              "tense": "imperativ",
+              "verb": "warten",
+              "answers": [
+                "warten Sie"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-6",
+          "title": "Aufbau durch zwei Helfer",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mara und Tom, ",
+            " zuerst den Tisch hierher! Dann ",
+            " die Beine fest und ",
+            " die Fläche mit einem Tuch ab!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-6-gap-1",
+              "tense": "imperativ",
+              "verb": "stellen",
+              "answers": [
+                "stellt"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-6-gap-2",
+              "tense": "imperativ",
+              "verb": "schrauben",
+              "answers": [
+                "schraubt"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-6-gap-3",
+              "tense": "imperativ",
+              "verb": "wischen",
+              "answers": [
+                "wischt"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-7",
+          "title": "Amirs Bewerbung",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Amir, ",
+            " zuerst die Anzeige genau! Danach ",
+            " deinen Lebenslauf und ",
+            " die Unterlagen heute noch ab!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-7-gap-1",
+              "tense": "imperativ",
+              "verb": "lesen",
+              "answers": [
+                "lies"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-7-gap-2",
+              "tense": "imperativ",
+              "verb": "aktualisieren",
+              "answers": [
+                "aktualisiere"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-7-gap-3",
+              "tense": "imperativ",
+              "verb": "schicken",
+              "answers": [
+                "schick",
+                "schicke"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-8",
+          "title": "Anweisung an die Gäste",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Liebe Gäste, ",
+            " Ihre Taschen an der Garderobe ab! Danach ",
+            " die Treppe und ",
+            " im ersten Saal nach links!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-8-gap-1",
+              "tense": "imperativ",
+              "verb": "geben",
+              "answers": [
+                "geben Sie"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-8-gap-2",
+              "tense": "imperativ",
+              "verb": "nehmen",
+              "answers": [
+                "nehmen Sie"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-8-gap-3",
+              "tense": "imperativ",
+              "verb": "gehen",
+              "answers": [
+                "gehen Sie"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-9",
+          "title": "Aufräumen im Team",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Ihr beiden, ",
+            " zuerst die Bücher ins Regal! Dann ",
+            " den Boden und ",
+            " zum Schluss das Licht aus!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-9-gap-1",
+              "tense": "imperativ",
+              "verb": "stellen",
+              "answers": [
+                "stellt"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-9-gap-2",
+              "tense": "imperativ",
+              "verb": "fegen",
+              "answers": [
+                "fegt"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-9-gap-3",
+              "tense": "imperativ",
+              "verb": "machen",
+              "answers": [
+                "macht"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-imperativ-long-editorial-10",
+          "title": "Leas Fahrradcheck",
+          "focus": "Imperativ",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Lea, ",
+            " zuerst die Reifen! Dann ",
+            " die Bremse und ",
+            " danach vorsichtig los!"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-long-editorial-10-gap-1",
+              "tense": "imperativ",
+              "verb": "prüfen",
+              "answers": [
+                "prüf",
+                "prüfe"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-10-gap-2",
+              "tense": "imperativ",
+              "verb": "testen",
+              "answers": [
+                "teste"
+              ]
+            },
+            {
+              "id": "de-imperativ-long-editorial-10-gap-3",
+              "tense": "imperativ",
+              "verb": "fahren",
+              "answers": [
+                "fahr",
+                "fahre"
+              ]
+            }
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-imperativ-independent-error-1",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 1",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Mara, ",
+              "form": "öffne",
+              "id": "de-imperativ-independent-error-1-token-1"
+            },
+            {
+              "before": " bitte das Fenster! Herr Klein, ",
+              "form": "nehmen",
+              "id": "de-imperativ-independent-error-1-token-2"
+            },
+            {
+              "before": " Sie bitte Platz! Leute, ",
+              "form": "seid",
+              "id": "de-imperativ-independent-error-1-token-3"
+            },
+            {
+              "before": " heute besonders vorsichtig! Nina, ",
+              "form": "vergiss",
+              "id": "de-imperativ-independent-error-1-token-4"
+            },
+            {
+              "before": " deinen Ausweis nicht! Herr und Frau Roth, ",
+              "form": "wartet",
+              "id": "de-imperativ-independent-error-1-token-5"
+            }
+          ],
+          "after": " Sie bitte hier!",
+          "wrongId": "de-imperativ-independent-error-1-token-5",
+          "answers": [
+            "warten"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-2",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 2",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Kinder, ",
+              "form": "bleiben",
+              "id": "de-imperativ-independent-error-2-token-1"
+            },
+            {
+              "before": " hinter der Markierung! Jonas, ",
+              "form": "lies",
+              "id": "de-imperativ-independent-error-2-token-2"
+            },
+            {
+              "before": " die Nachricht laut vor! Frau Özdemir, ",
+              "form": "rufen",
+              "id": "de-imperativ-independent-error-2-token-3"
+            },
+            {
+              "before": " Sie mich morgen an! Gäste, ",
+              "form": "folgt",
+              "id": "de-imperativ-independent-error-2-token-4"
+            },
+            {
+              "before": " dem blauen Schild! Paul, ",
+              "form": "sprich",
+              "id": "de-imperativ-independent-error-2-token-5"
+            }
+          ],
+          "after": " etwas langsamer!",
+          "wrongId": "de-imperativ-independent-error-2-token-1",
+          "answers": [
+            "bleibt"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-3",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 3",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Herr Klein, ",
+              "form": "nehmen",
+              "id": "de-imperativ-independent-error-3-token-1"
+            },
+            {
+              "before": " Sie bitte Platz! Leute, ",
+              "form": "sei",
+              "id": "de-imperativ-independent-error-3-token-2"
+            },
+            {
+              "before": " heute besonders vorsichtig! Nina, ",
+              "form": "vergiss",
+              "id": "de-imperativ-independent-error-3-token-3"
+            },
+            {
+              "before": " deinen Ausweis nicht! Herr und Frau Roth, ",
+              "form": "warten",
+              "id": "de-imperativ-independent-error-3-token-4"
+            },
+            {
+              "before": " Sie bitte hier! Mara, ",
+              "form": "öffne",
+              "id": "de-imperativ-independent-error-3-token-5"
+            }
+          ],
+          "after": " bitte das Fenster!",
+          "wrongId": "de-imperativ-independent-error-3-token-2",
+          "answers": [
+            "seid"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-4",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 4",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Jonas, ",
+              "form": "lies",
+              "id": "de-imperativ-independent-error-4-token-1"
+            },
+            {
+              "before": " die Nachricht laut vor! Frau Özdemir, ",
+              "form": "rufen",
+              "id": "de-imperativ-independent-error-4-token-2"
+            },
+            {
+              "before": " Sie mich morgen an! Gäste, ",
+              "form": "folgen",
+              "id": "de-imperativ-independent-error-4-token-3"
+            },
+            {
+              "before": " dem blauen Schild! Paul, ",
+              "form": "sprich",
+              "id": "de-imperativ-independent-error-4-token-4"
+            },
+            {
+              "before": " etwas langsamer! Kinder, ",
+              "form": "bleibt",
+              "id": "de-imperativ-independent-error-4-token-5"
+            }
+          ],
+          "after": " hinter der Markierung!",
+          "wrongId": "de-imperativ-independent-error-4-token-3",
+          "answers": [
+            "folgt"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-5",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 5",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Leute, ",
+              "form": "seid",
+              "id": "de-imperativ-independent-error-5-token-1"
+            },
+            {
+              "before": " heute besonders vorsichtig! Nina, ",
+              "form": "vergiss",
+              "id": "de-imperativ-independent-error-5-token-2"
+            },
+            {
+              "before": " deinen Ausweis nicht! Herr und Frau Roth, ",
+              "form": "warten",
+              "id": "de-imperativ-independent-error-5-token-3"
+            },
+            {
+              "before": " Sie bitte hier! Mara, ",
+              "form": "öffnet",
+              "id": "de-imperativ-independent-error-5-token-4"
+            },
+            {
+              "before": " bitte das Fenster! Herr Klein, ",
+              "form": "nehmen",
+              "id": "de-imperativ-independent-error-5-token-5"
+            }
+          ],
+          "after": " Sie bitte Platz!",
+          "wrongId": "de-imperativ-independent-error-5-token-4",
+          "answers": [
+            "öffne"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-6",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 6",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Frau Özdemir, ",
+              "form": "rufen",
+              "id": "de-imperativ-independent-error-6-token-1"
+            },
+            {
+              "before": " Sie mich morgen an! Gäste, ",
+              "form": "folgt",
+              "id": "de-imperativ-independent-error-6-token-2"
+            },
+            {
+              "before": " dem blauen Schild! Paul, ",
+              "form": "sprich",
+              "id": "de-imperativ-independent-error-6-token-3"
+            },
+            {
+              "before": " etwas langsamer! Kinder, ",
+              "form": "bleibt",
+              "id": "de-imperativ-independent-error-6-token-4"
+            },
+            {
+              "before": " hinter der Markierung! Jonas, ",
+              "form": "lest",
+              "id": "de-imperativ-independent-error-6-token-5"
+            }
+          ],
+          "after": " die Nachricht laut vor!",
+          "wrongId": "de-imperativ-independent-error-6-token-5",
+          "answers": [
+            "lies"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-7",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 7",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Nina, ",
+              "form": "vergesst",
+              "id": "de-imperativ-independent-error-7-token-1"
+            },
+            {
+              "before": " deinen Ausweis nicht! Herr und Frau Roth, ",
+              "form": "warten",
+              "id": "de-imperativ-independent-error-7-token-2"
+            },
+            {
+              "before": " Sie bitte hier! Mara, ",
+              "form": "öffne",
+              "id": "de-imperativ-independent-error-7-token-3"
+            },
+            {
+              "before": " bitte das Fenster! Herr Klein, ",
+              "form": "nehmen",
+              "id": "de-imperativ-independent-error-7-token-4"
+            },
+            {
+              "before": " Sie bitte Platz! Leute, ",
+              "form": "seid",
+              "id": "de-imperativ-independent-error-7-token-5"
+            }
+          ],
+          "after": " heute besonders vorsichtig!",
+          "wrongId": "de-imperativ-independent-error-7-token-1",
+          "answers": [
+            "vergiss"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-8",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 8",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Gäste, ",
+              "form": "folgt",
+              "id": "de-imperativ-independent-error-8-token-1"
+            },
+            {
+              "before": " dem blauen Schild! Paul, ",
+              "form": "sprecht",
+              "id": "de-imperativ-independent-error-8-token-2"
+            },
+            {
+              "before": " etwas langsamer! Kinder, ",
+              "form": "bleibt",
+              "id": "de-imperativ-independent-error-8-token-3"
+            },
+            {
+              "before": " hinter der Markierung! Jonas, ",
+              "form": "lies",
+              "id": "de-imperativ-independent-error-8-token-4"
+            },
+            {
+              "before": " die Nachricht laut vor! Frau Özdemir, ",
+              "form": "rufen",
+              "id": "de-imperativ-independent-error-8-token-5"
+            }
+          ],
+          "after": " Sie mich morgen an!",
+          "wrongId": "de-imperativ-independent-error-8-token-2",
+          "answers": [
+            "sprich"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-9",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 9",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Herr und Frau Roth, ",
+              "form": "warten",
+              "id": "de-imperativ-independent-error-9-token-1"
+            },
+            {
+              "before": " Sie bitte hier! Mara, ",
+              "form": "öffne",
+              "id": "de-imperativ-independent-error-9-token-2"
+            },
+            {
+              "before": " bitte das Fenster! Herr Klein, ",
+              "form": "nimm",
+              "id": "de-imperativ-independent-error-9-token-3"
+            },
+            {
+              "before": " Sie bitte Platz! Leute, ",
+              "form": "seid",
+              "id": "de-imperativ-independent-error-9-token-4"
+            },
+            {
+              "before": " heute besonders vorsichtig! Nina, ",
+              "form": "vergiss",
+              "id": "de-imperativ-independent-error-9-token-5"
+            }
+          ],
+          "after": " deinen Ausweis nicht!",
+          "wrongId": "de-imperativ-independent-error-9-token-3",
+          "answers": [
+            "nehmen"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-imperativ-independent-error-10",
+          "tense": "imperativ",
+          "title": "Korrekturrunde · 10",
+          "focus": "Imperativ",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Paul, ",
+              "form": "sprich",
+              "id": "de-imperativ-independent-error-10-token-1"
+            },
+            {
+              "before": " etwas langsamer! Kinder, ",
+              "form": "bleibt",
+              "id": "de-imperativ-independent-error-10-token-2"
+            },
+            {
+              "before": " hinter der Markierung! Jonas, ",
+              "form": "lies",
+              "id": "de-imperativ-independent-error-10-token-3"
+            },
+            {
+              "before": " die Nachricht laut vor! Frau Özdemir, ",
+              "form": "ruf",
+              "id": "de-imperativ-independent-error-10-token-4"
+            },
+            {
+              "before": " Sie mich morgen an! Gäste, ",
+              "form": "folgt",
+              "id": "de-imperativ-independent-error-10-token-5"
+            }
+          ],
+          "after": " dem blauen Schild!",
+          "wrongId": "de-imperativ-independent-error-10-token-4",
+          "answers": [
+            "rufen"
+          ],
+          "explanation": "Der Imperativ richtet sich sichtbar an „du“, „ihr“ oder die höfliche Anrede „Sie“; Endung, Pronomen und Stellung müssen zur genannten Zielperson passen. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-imperativ-separation-1",
+          "tense": "imperativ",
+          "title": "vorlesen · 1",
+          "focus": "imperativ",
+          "verb": "vorlesen",
+          "separation": "separable",
+          "prompt": "Frau Klein, ___ Sie den Absatz laut!",
+          "answers": [
+            "Frau Klein, lesen Sie den Absatz laut vor!",
+            "Frau Klein, lesen Sie den Absatz laut vor"
+          ],
+          "explanation": "„vorlesen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-imperativ-separation-2",
+          "tense": "imperativ",
+          "title": "aufstehen · 2",
+          "focus": "imperativ",
+          "verb": "aufstehen",
+          "separation": "separable",
+          "prompt": "Mara, ___ bitte sofort!",
+          "answers": [
+            "Mara, steh bitte sofort auf!",
+            "Mara, steh bitte sofort auf",
+            "Mara, stehe bitte sofort auf!",
+            "Mara, stehe bitte sofort auf"
+          ],
+          "explanation": "„aufstehen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-imperativ-separation-3",
+          "tense": "imperativ",
+          "title": "besuchen · 3",
+          "focus": "imperativ",
+          "verb": "besuchen",
+          "separation": "inseparable",
+          "prompt": "Mara, ___ deine Großeltern am Sonntag!",
+          "answers": [
+            "Mara, besuche deine Großeltern am Sonntag!",
+            "Mara, besuche deine Großeltern am Sonntag",
+            "Mara, besuch deine Großeltern am Sonntag!",
+            "Mara, besuch deine Großeltern am Sonntag"
+          ],
+          "explanation": "„besuchen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-imperativ-separation-4",
+          "tense": "imperativ",
+          "title": "mitbringen · 4",
+          "focus": "imperativ",
+          "verb": "mitbringen",
+          "separation": "separable",
+          "prompt": "Kinder, ___ eure Hefte!",
+          "answers": [
+            "Kinder, bringt eure Hefte mit!",
+            "Kinder, bringt eure Hefte mit"
+          ],
+          "explanation": "„mitbringen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-imperativ-separation-5",
+          "tense": "imperativ",
+          "title": "erklären · 5",
+          "focus": "imperativ",
+          "verb": "erklären",
+          "separation": "inseparable",
+          "prompt": "Herr Roth, ___ Sie bitte den nächsten Schritt!",
+          "answers": [
+            "Herr Roth, erklären Sie bitte den nächsten Schritt!",
+            "Herr Roth, erklären Sie bitte den nächsten Schritt"
+          ],
+          "explanation": "„erklären“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-imperativ-separation-6",
+          "tense": "imperativ",
+          "title": "vergessen · 6",
+          "focus": "imperativ",
+          "verb": "vergessen",
+          "separation": "inseparable",
+          "prompt": "Leute, ___ eure Tickets nicht!",
+          "answers": [
+            "Leute, vergesst eure Tickets nicht!",
+            "Leute, vergesst eure Tickets nicht"
+          ],
+          "explanation": "„vergessen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-imperativ-separation-7",
+          "tense": "imperativ",
+          "title": "anrufen · 7",
+          "focus": "imperativ",
+          "verb": "anrufen",
+          "separation": "separable",
+          "prompt": "Paul, ___ morgen die Ärztin!",
+          "answers": [
+            "Paul, ruf morgen die Ärztin an!",
+            "Paul, ruf morgen die Ärztin an",
+            "Paul, rufe morgen die Ärztin an!",
+            "Paul, rufe morgen die Ärztin an"
+          ],
+          "explanation": "„anrufen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-imperativ-separation-8",
+          "tense": "imperativ",
+          "title": "entfernen · 8",
+          "focus": "imperativ",
+          "verb": "entfernen",
+          "separation": "inseparable",
+          "prompt": "Helfer, ___ alle leeren Kisten!",
+          "answers": [
+            "Helfer, entfernt alle leeren Kisten!",
+            "Helfer, entfernt alle leeren Kisten"
+          ],
+          "explanation": "„entfernen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-imperativ-separation-9",
+          "tense": "imperativ",
+          "title": "teilnehmen · 9",
+          "focus": "imperativ",
+          "verb": "teilnehmen",
+          "separation": "separable",
+          "prompt": "Jonas, ___ an der Besprechung!",
+          "answers": [
+            "Jonas, nimm an der Besprechung teil!",
+            "Jonas, nimm an der Besprechung teil"
+          ],
+          "explanation": "„teilnehmen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-imperativ-separation-10",
+          "tense": "imperativ",
+          "title": "benutzen · 10",
+          "focus": "imperativ",
+          "verb": "benutzen",
+          "separation": "inseparable",
+          "prompt": "Lina, ___ den hinteren Eingang!",
+          "answers": [
+            "Lina, benutze den hinteren Eingang!",
+            "Lina, benutze den hinteren Eingang",
+            "Lina, benutz den hinteren Eingang!",
+            "Lina, benutz den hinteren Eingang"
+          ],
+          "explanation": "„benutzen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-imperativ-written-final-story",
+          "title": "Anweisungen vor dem Schulfest",
+          "focus": "imperativ",
+          "instruction": "Lies die ganze Geschichte. Ergänze alle Verbgruppen schriftlich; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Die Koordinatorin verteilt Aufgaben: „Mara, ",
+            " zuerst die Gästeliste! Jonas und Elif, ",
+            " die Schilder am Eingang auf! Herr Klein, ",
+            " Sie bitte die Technik! Nina, ",
+            " die Kabel nicht im Durchgang liegen! Helfer, ",
+            " vorsichtig mit den Gläsern! Frau Roth, ",
+            " Sie die Lieferanten zum Hof! Kinder, ",
+            " während der Probe leise! Paul, ",
+            " die Seitentür nach draußen nicht ab! Gäste, ",
+            " Sie bitte dem markierten Weg! Und jetzt, Team, ",
+            " mit dem Aufbau an!“"
+          ],
+          "gaps": [
+            {
+              "id": "de-imperativ-written-final-story-gap-1",
+              "tense": "imperativ",
+              "verb": "prüfen (du)",
+              "answers": [
+                "prüfe",
+                "prüf"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-2",
+              "tense": "imperativ",
+              "verb": "hängen (ihr)",
+              "answers": [
+                "hängt"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-3",
+              "tense": "imperativ",
+              "verb": "testen (Sie)",
+              "answers": [
+                "testen"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-4",
+              "tense": "imperativ",
+              "verb": "lassen (du)",
+              "answers": [
+                "lass"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-5",
+              "tense": "imperativ",
+              "verb": "sein (ihr)",
+              "answers": [
+                "seid"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-6",
+              "tense": "imperativ",
+              "verb": "führen (Sie)",
+              "answers": [
+                "führen"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-7",
+              "tense": "imperativ",
+              "verb": "bleiben (ihr)",
+              "answers": [
+                "bleibt"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-8",
+              "tense": "imperativ",
+              "verb": "schließen (du)",
+              "answers": [
+                "schließ",
+                "schließe"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-9",
+              "tense": "imperativ",
+              "verb": "folgen (Sie)",
+              "answers": [
+                "folgen"
+              ]
+            },
+            {
+              "id": "de-imperativ-written-final-story-gap-10",
+              "tense": "imperativ",
+              "verb": "fangen (ihr)",
+              "answers": [
+                "fangt"
+              ]
+            }
+          ],
+          "explanation": "Erkenne die Anrede in jedem Satz und schreibe die passende Imperativform; sichtbare Zusätze bleiben im Text."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-imperativ-choice-editorial-1",
+        "level": 1,
+        "lemma": "kommen",
+        "senseId": "kommen.context-1-1",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "komm",
+        "accepted": [
+          "komm"
+        ],
+        "distractorRationale": [
+          "«kommt» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«kommen Sie» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«kommen wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "d7bc87e5d65bd1eea3043c0f910687f38b0f1e3ead736a1f2418dff6ecd680e5"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-2",
+        "level": 1,
+        "lemma": "sein",
+        "senseId": "sein.context-1-2",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "seid",
+        "accepted": [
+          "seid"
+        ],
+        "distractorRationale": [
+          "«sei» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«seien Sie» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«seien wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "f6d469cb34fec996d0dbecfc749679872736c7f28657137d64546b223027b6b1"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-3",
+        "level": 1,
+        "lemma": "warten",
+        "senseId": "warten.context-1-3",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "warten Sie",
+        "accepted": [
+          "warten Sie"
+        ],
+        "distractorRationale": [
+          "«warte» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«wartet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«warten wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "fc8b0ced07a1090c10a6e3b2e5d853c71a2b552b135f75f02a9373b5852261f9"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-4",
+        "level": 1,
+        "lemma": "öffnen",
+        "senseId": "öffnen.context-1-4",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "öffne",
+        "accepted": [
+          "öffne"
+        ],
+        "distractorRationale": [
+          "«öffnet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«öffnen Sie» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«öffnen wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "d80319437d36beadf363deaaea66614ed26ccca222beb86755fc3edb1ab400f1"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-5",
+        "level": 1,
+        "lemma": "fahren",
+        "senseId": "fahren.context-1-5",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "fahrt",
+        "accepted": [
+          "fahrt"
+        ],
+        "distractorRationale": [
+          "«fahr» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«fahren Sie» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«fahren wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "8dcdd4e3543866a48500725b9fe055f2217d18fdff704318dd57282c50c532de"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-6",
+        "level": 1,
+        "lemma": "nehmen",
+        "senseId": "nehmen.context-1-6",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "nehmen Sie",
+        "accepted": [
+          "nehmen Sie"
+        ],
+        "distractorRationale": [
+          "«nimm» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«nehmt» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«nehmen wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "878d88413db99d7d1cae5ee9e7213d475836481a77ec3e35a10da365f5f1825c"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-7",
+        "level": 1,
+        "lemma": "sein",
+        "senseId": "sein.context-1-7",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sei",
+        "accepted": [
+          "sei"
+        ],
+        "distractorRationale": [
+          "«seid» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«seien Sie» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«seien wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "c9a67984ca2d78e5399b2578eca9e53368f07799a8796a58bb981b32df90ef45"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-8",
+        "level": 1,
+        "lemma": "trinken",
+        "senseId": "trinken.context-1-8",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "trinkt",
+        "accepted": [
+          "trinkt"
+        ],
+        "distractorRationale": [
+          "«trink» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«trinken Sie» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«trinken wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "bc544f0a464565c94b4520cba22267239ca06a2a5bc7544fed348a53da9de8bc"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-9",
+        "level": 1,
+        "lemma": "schließen",
+        "senseId": "schließen.context-1-9",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "schließen Sie",
+        "accepted": [
+          "schließen Sie"
+        ],
+        "distractorRationale": [
+          "«schließ» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«schließt» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«schließen wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "7298257d38c503ece00e25d4ee39859ca1246bec4d5bf2b857627d9e221ce264"
+      },
+      {
+        "itemId": "de-imperativ-choice-editorial-10",
+        "level": 1,
+        "lemma": "mitnehmen",
+        "senseId": "mitnehmen.context-1-10",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "mit",
+        "expectedUnit": "nimm",
+        "accepted": [
+          "nimm"
+        ],
+        "distractorRationale": [
+          "«nehmt» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«nehmen Sie» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«nehmen wir» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "e0051951538272ce991e1dcd4d65fa15024f22390635430c40614ea048584af5"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-1",
+        "level": 2,
+        "lemma": "sprechen",
+        "senseId": "sprechen.context-2-1",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sprich",
+        "accepted": [
+          "sprich"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "70da9f06990780f00033023a64f091a7ee3f840f46c5eba5e8afce64279881a1"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-2",
+        "level": 2,
+        "lemma": "nehmen",
+        "senseId": "nehmen.context-2-2",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "nehmen Sie",
+        "accepted": [
+          "nehmen Sie"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8592c71a06d1e7ea6f83d653d821b070fc7c5c4391fb91b0cb8fe8a0d07316b3"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-3",
+        "level": 2,
+        "lemma": "sein",
+        "senseId": "sein.context-2-3",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "seid",
+        "accepted": [
+          "seid"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "41de82071857ab31f140a4130d187123ac6a894a73c291e3a3096ed8919c3dc6"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-4",
+        "level": 2,
+        "lemma": "schließen",
+        "senseId": "schließen.context-2-4",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "schließ",
+        "accepted": [
+          "schließ",
+          "schließe"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "0579e4f0745cfe667720dba2c9df864aeb59d43305e4c75ea738606b1db24238"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-5",
+        "level": 2,
+        "lemma": "folgen",
+        "senseId": "folgen.context-2-5",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "folgen Sie",
+        "accepted": [
+          "folgen Sie"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2fe2065b195344dc0b8db4dac52fe35aa246a4986f685587d841bacdeba99751"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-6",
+        "level": 2,
+        "lemma": "mitnehmen",
+        "senseId": "mitnehmen.context-2-6",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "mit",
+        "expectedUnit": "nehmt",
+        "accepted": [
+          "nehmt"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "309c59fe939cca5eca20ed1a55d163c815b499bf9cfa8eacd3d459ec4a49d022"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-7",
+        "level": 2,
+        "lemma": "bleiben",
+        "senseId": "bleiben.context-2-7",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "bleib",
+        "accepted": [
+          "bleib",
+          "bleibe"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "6bebded56f30525011bb0fcee2e0bce58b1c590a845b34ad8ffc9087288a3f9a"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-8",
+        "level": 2,
+        "lemma": "ausfüllen",
+        "senseId": "ausfüllen.context-2-8",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "aus",
+        "expectedUnit": "füllen Sie",
+        "accepted": [
+          "füllen Sie"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "97bc69ea04e0ca8819dfa0237fd912210fc047b32f1942d4cbe3944d3368aad7"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-9",
+        "level": 2,
+        "lemma": "abgeben",
+        "senseId": "abgeben.context-2-9",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "ab",
+        "expectedUnit": "gebt",
+        "accepted": [
+          "gebt"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "239194a362839542f234e7f0884f97dba9159cbe0cc06f6a11194db90d1ce85d"
+      },
+      {
+        "itemId": "de-imperativ-micro-editorial-10",
+        "level": 2,
+        "lemma": "vergessen",
+        "senseId": "vergessen.context-2-10",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "vergiss",
+        "accepted": [
+          "vergiss"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "47d11e8a235b16365fbaf5eeae891e25c98d2bd60603dd47244b417000ded698"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-1",
+        "level": 3,
+        "lemma": "waschen",
+        "senseId": "waschen.context-3-1",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wasch",
+        "accepted": [
+          "wasch",
+          "wasche",
+          "heiz",
+          "heize",
+          "rühr",
+          "rühre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7dd4d4f3a820e646281f61d3647d8b562a8c422870c6ce5f29ab5f95ad285f56"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-2",
+        "level": 3,
+        "lemma": "zeigen",
+        "senseId": "zeigen.context-3-2",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "zeigen Sie",
+        "accepted": [
+          "zeigen Sie",
+          "folgen Sie",
+          "warten Sie"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e80ca2f97d6d153086bbd5710f9b00d8ebcfd7ce76914e89c825b300d4651ddd"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-3",
+        "level": 3,
+        "lemma": "wärmen",
+        "senseId": "wärmen.context-3-3",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wärmt",
+        "accepted": [
+          "wärmt",
+          "lauft",
+          "trinkt"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5ef4ba438e6cab9826e18adf61249f8ce4f6fa9f308b9025608a851a14b8eaf8"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-4",
+        "level": 3,
+        "lemma": "öffnen",
+        "senseId": "öffnen.context-3-4",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "öffne",
+        "accepted": [
+          "öffne",
+          "zieh",
+          "ziehe",
+          "erstell",
+          "erstelle"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "6675d8486bc2c603bcdccc504667477a23d4ff525733b8f993f61bcc52c8f3a2"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-5",
+        "level": 3,
+        "lemma": "aktivieren",
+        "senseId": "aktivieren.context-3-5",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "aktivieren Sie",
+        "accepted": [
+          "aktivieren Sie",
+          "verlassen Sie",
+          "warten Sie"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "23e5ffb7ebf132942f7d7a676f1fe4e6e776357e64a0a4b89a5ae2274f52e944"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-6",
+        "level": 3,
+        "lemma": "stellen",
+        "senseId": "stellen.context-3-6",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "stellt",
+        "accepted": [
+          "stellt",
+          "schraubt",
+          "wischt"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5adb681d3796a8302e12c0ade3f8aee27a214f9ebc257d414a58407bcdc23c4b"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-7",
+        "level": 3,
+        "lemma": "lesen",
+        "senseId": "lesen.context-3-7",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "lies",
+        "accepted": [
+          "lies",
+          "aktualisiere",
+          "schick",
+          "schicke"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "21accfb70b0eb25e37f72175d362ec4a53e9c66ac9fdf11b992df961d8447afd"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-8",
+        "level": 3,
+        "lemma": "geben",
+        "senseId": "geben.context-3-8",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geben Sie",
+        "accepted": [
+          "geben Sie",
+          "nehmen Sie",
+          "gehen Sie"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "82876e6b7803547d074b39383ed6e62554c9117e50aca887d4ca53ca8175c490"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-9",
+        "level": 3,
+        "lemma": "stellen",
+        "senseId": "stellen.context-3-9",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "stellt",
+        "accepted": [
+          "stellt",
+          "fegt",
+          "macht"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4364d82c8c9d439d6df68e11cba175eb2f02cb0e775eb0d437d9a4fad093ecc8"
+      },
+      {
+        "itemId": "de-imperativ-long-editorial-10",
+        "level": 3,
+        "lemma": "prüfen",
+        "senseId": "prüfen.context-3-10",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "prüf",
+        "accepted": [
+          "prüf",
+          "prüfe",
+          "teste",
+          "fahr",
+          "fahre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "c3297f952f1848be36d49bb608857a70b2e3b304d163cdef107f336751fd45a1"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-1",
+        "level": 4,
+        "lemma": "warten",
+        "senseId": "warten.context-4-1",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "warten",
+        "accepted": [
+          "warten"
+        ],
+        "distractorRationale": [
+          "«wartet» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "9e4d5857bebe92376b5198049c68d92e8644245f5c8ad791d70ccfa869d5cb95"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-2",
+        "level": 4,
+        "lemma": "bleiben",
+        "senseId": "bleiben.context-4-2",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "bleibt",
+        "accepted": [
+          "bleibt"
+        ],
+        "distractorRationale": [
+          "«bleiben» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "04ba4449cf3c8b99e44eae8bdd361c82df6e686dc16a39aa41fbb0ba31d4ef9e"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-3",
+        "level": 4,
+        "lemma": "sein",
+        "senseId": "sein.context-4-3",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "seid",
+        "accepted": [
+          "seid"
+        ],
+        "distractorRationale": [
+          "«sei» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "98a800b4c090650363964c60191cbeaa6c9278f9d9843c3479907ed3b5464581"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-4",
+        "level": 4,
+        "lemma": "folgen",
+        "senseId": "folgen.context-4-4",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "folgt",
+        "accepted": [
+          "folgt"
+        ],
+        "distractorRationale": [
+          "«folgen» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "921056dd9b9f48f190dcf37b619523e1c1186750a62fda8687acc25dee808242"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-5",
+        "level": 4,
+        "lemma": "öffnen",
+        "senseId": "öffnen.context-4-5",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "öffne",
+        "accepted": [
+          "öffne"
+        ],
+        "distractorRationale": [
+          "«öffnet» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "f404dc7015df29b1bbb20b59f0fb84c7404ee9ee32c9dab6134854dbcfc05bca"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-6",
+        "level": 4,
+        "lemma": "lesen",
+        "senseId": "lesen.context-4-6",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "lies",
+        "accepted": [
+          "lies"
+        ],
+        "distractorRationale": [
+          "«lest» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "6613cd0d93756f2c4b957dddbb8740543bd8cb896ebfc49bbff926387c370b19"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-7",
+        "level": 4,
+        "lemma": "vergessen",
+        "senseId": "vergessen.context-4-7",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "vergiss",
+        "accepted": [
+          "vergiss"
+        ],
+        "distractorRationale": [
+          "«vergesst» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "dc6d524df3fb3d14d5014816357c0fc9bb04b12bb4f328608e9e9af2f0b46471"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-8",
+        "level": 4,
+        "lemma": "sprechen",
+        "senseId": "sprechen.context-4-8",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sprich",
+        "accepted": [
+          "sprich"
+        ],
+        "distractorRationale": [
+          "«sprecht» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "173e602e42647372f0f54088fc1acd56cd76ebb61e1f1c53332bf11c5081e610"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-9",
+        "level": 4,
+        "lemma": "nehmen",
+        "senseId": "nehmen.context-4-9",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "nehmen",
+        "accepted": [
+          "nehmen"
+        ],
+        "distractorRationale": [
+          "«nimm» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "b159e10e7eb923163b6f00cfdb1d6040f358afcc80bc3579ecb6d254f3091d16"
+      },
+      {
+        "itemId": "de-imperativ-independent-error-10",
+        "level": 4,
+        "lemma": "anrufen",
+        "senseId": "anrufen.context-4-10",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "imperative",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "rufen",
+        "accepted": [
+          "rufen"
+        ],
+        "distractorRationale": [
+          "«ruf» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "8b3e2fa6956732a69151e9d159c023a307b9acaeed53d3803dc10ec58a7d4c02"
+      },
+      {
+        "itemId": "de-imperativ-separation-1",
+        "level": 5,
+        "lemma": "vorlesen",
+        "senseId": "vorlesen.context-5-1",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "vor",
+        "expectedUnit": "Frau Klein, lesen Sie den Absatz laut vor!",
+        "accepted": [
+          "Frau Klein, lesen Sie den Absatz laut vor!",
+          "Frau Klein, lesen Sie den Absatz laut vor"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «vorlesen»."
+        ],
+        "runtimeFingerprint": "dce897f6b35370344df74f9860bb98da3308945a95631652cb285a64e83d650b"
+      },
+      {
+        "itemId": "de-imperativ-separation-2",
+        "level": 5,
+        "lemma": "aufstehen",
+        "senseId": "aufstehen.context-5-2",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "Mara, steh bitte sofort auf!",
+        "accepted": [
+          "Mara, steh bitte sofort auf!",
+          "Mara, steh bitte sofort auf",
+          "Mara, stehe bitte sofort auf!",
+          "Mara, stehe bitte sofort auf"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «aufstehen»."
+        ],
+        "runtimeFingerprint": "5a562b2fa1a7b23343885de2a18678992bacfe8c6f7c00511d29beff16088ffc"
+      },
+      {
+        "itemId": "de-imperativ-separation-3",
+        "level": 5,
+        "lemma": "besuchen",
+        "senseId": "besuchen.context-5-3",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Mara, besuche deine Großeltern am Sonntag!",
+        "accepted": [
+          "Mara, besuche deine Großeltern am Sonntag!",
+          "Mara, besuche deine Großeltern am Sonntag",
+          "Mara, besuch deine Großeltern am Sonntag!",
+          "Mara, besuch deine Großeltern am Sonntag"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «besuchen»."
+        ],
+        "runtimeFingerprint": "63cfc67598032aeb3a47448f45893b0619310e3562f083846282bfce6f581d2a"
+      },
+      {
+        "itemId": "de-imperativ-separation-4",
+        "level": 5,
+        "lemma": "mitbringen",
+        "senseId": "mitbringen.context-5-4",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "mit",
+        "expectedUnit": "Kinder, bringt eure Hefte mit!",
+        "accepted": [
+          "Kinder, bringt eure Hefte mit!",
+          "Kinder, bringt eure Hefte mit"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «mitbringen»."
+        ],
+        "runtimeFingerprint": "6f628ef4d20de2af0f912f6ffea03526fcd909d5014f1e35a21226e7b6509704"
+      },
+      {
+        "itemId": "de-imperativ-separation-5",
+        "level": 5,
+        "lemma": "erklären",
+        "senseId": "erklären.context-5-5",
+        "targetForm": "imperativ",
+        "person": "formal",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "Herr Roth, erklären Sie bitte den nächsten Schritt!",
+        "accepted": [
+          "Herr Roth, erklären Sie bitte den nächsten Schritt!",
+          "Herr Roth, erklären Sie bitte den nächsten Schritt"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «erklären»."
+        ],
+        "runtimeFingerprint": "2442c40f72a4546316ff0554a5bd56871a066ae8bd704835920a30552e5b7cbd"
+      },
+      {
+        "itemId": "de-imperativ-separation-6",
+        "level": 5,
+        "lemma": "vergessen",
+        "senseId": "vergessen.context-5-6",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "Leute, vergesst eure Tickets nicht!",
+        "accepted": [
+          "Leute, vergesst eure Tickets nicht!",
+          "Leute, vergesst eure Tickets nicht"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «vergessen»."
+        ],
+        "runtimeFingerprint": "02fd22b01139b3b36f8545a5ee9b56c5558889dd9e302ebb30f801129fa930a1"
+      },
+      {
+        "itemId": "de-imperativ-separation-7",
+        "level": 5,
+        "lemma": "anrufen",
+        "senseId": "anrufen.context-5-7",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "Paul, ruf morgen die Ärztin an!",
+        "accepted": [
+          "Paul, ruf morgen die Ärztin an!",
+          "Paul, ruf morgen die Ärztin an",
+          "Paul, rufe morgen die Ärztin an!",
+          "Paul, rufe morgen die Ärztin an"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «anrufen»."
+        ],
+        "runtimeFingerprint": "e0608e4d95ad6fafbe4b5e174698191a09e8cfdb1817bb220c1b5f02d6361937"
+      },
+      {
+        "itemId": "de-imperativ-separation-8",
+        "level": 5,
+        "lemma": "entfernen",
+        "senseId": "entfernen.context-5-8",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ent",
+        "expectedUnit": "Helfer, entfernt alle leeren Kisten!",
+        "accepted": [
+          "Helfer, entfernt alle leeren Kisten!",
+          "Helfer, entfernt alle leeren Kisten"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «entfernen»."
+        ],
+        "runtimeFingerprint": "c7c6a31a385f1989429c54139b6a4d802a302b8e712099d2d122e6a116027692"
+      },
+      {
+        "itemId": "de-imperativ-separation-9",
+        "level": 5,
+        "lemma": "teilnehmen",
+        "senseId": "teilnehmen.context-5-9",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "teil",
+        "expectedUnit": "Jonas, nimm an der Besprechung teil!",
+        "accepted": [
+          "Jonas, nimm an der Besprechung teil!",
+          "Jonas, nimm an der Besprechung teil"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «teilnehmen»."
+        ],
+        "runtimeFingerprint": "7a33384c11c706b236a6a722f1cb0d9a0093bfc1caf744e560e09c26699073ad"
+      },
+      {
+        "itemId": "de-imperativ-separation-10",
+        "level": 5,
+        "lemma": "benutzen",
+        "senseId": "benutzen.context-5-10",
+        "targetForm": "imperativ",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Lina, benutze den hinteren Eingang!",
+        "accepted": [
+          "Lina, benutze den hinteren Eingang!",
+          "Lina, benutze den hinteren Eingang",
+          "Lina, benutz den hinteren Eingang!",
+          "Lina, benutz den hinteren Eingang"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «benutzen»."
+        ],
+        "runtimeFingerprint": "d5bf98308140720e441c7fcd9bf75b69c7e3fc69a262c43abde9989cfdd7ad83"
+      },
+      {
+        "itemId": "de-imperativ-written-final-story",
+        "level": 6,
+        "lemma": "prüfen; hängen; testen; lassen; sein; führen; bleiben; schließen; folgen; fangen",
+        "senseId": "prüfen;-hängen;-testen;-lassen;-sein;-führen;-bleiben;-schließen;-folgen;-fangen.context-6-1",
+        "targetForm": "imperativ",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "direct instruction to a visible addressee",
+        "anchorIds": [
+          "visible-addressee-and-register"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "prüfe | hängt | testen | lass | seid | führen | bleibt | schließ | folgen | fangt",
+        "accepted": [
+          "prüfe",
+          "prüf",
+          "hängt",
+          "testen",
+          "lass",
+          "seid",
+          "führen",
+          "bleibt",
+          "schließ",
+          "schließe",
+          "folgen",
+          "fangt"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e010a74aefa5c0d2556c46a87a9f732061711ea88887d52723709959e40ef4e8"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Goethe-Institut — Deutsche Grammatik",
+        "url": "https://www.goethe.de/ins/de/de/m/prf/grm.html",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Perfektbildung mit haben oder sein",
+        "url": "https://grammis.ids-mannheim.de/progr%40mm/5316",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Duden — Verzeichnis der Fachausdrücke: Verbpartikel und Verbpräfix",
+        "url": "https://www.duden.de/Fachausdr%C3%BCcke-Buchstabe-T-V",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "candidate-schema",
+      "status": "PASS",
+      "detail": "Cobertura 10/10/10/10/10 y una historia final validada por validateCandidate."
+    },
+    {
+      "id": "linguistic-annotations",
+      "status": "PASS",
+      "detail": "51 anotaciones con forma, persona, número, cláusula, función, auxiliar, participio y separación."
+    },
+    {
+      "id": "level-6-unit",
+      "status": "PASS",
+      "detail": "Cada mandato conserva destinatario y tratamiento visible."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-05T14:59:42.805Z",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3"
+}

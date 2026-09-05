@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "formId": "konjunktiv-vergangenheit",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "2fa5e70cfd06e2ceae170e453c6eb527b473833d188ff2541d55e1975a4cca23",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "113d59bab4f02609782c3aaa297b9b2be92a48307d5bab4137f118442aea76e1",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "baseline-valid",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "id": "final-answer-linkage",
+      "status": "PASS",
+      "mutation": "aufgebrochen wäre → aufgebrochen ist",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-konjunktiv-vergangenheit-written-final-story-gap-1: \"aufgebrochen ist\" no cumple la construcción hätte/wäre + Partizip II",
+        "de-konjunktiv-vergangenheit-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-konjunktiv-vergangenheit-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n4-answer-linkage",
+      "status": "PASS",
+      "mutation": "Sustitución aislada de la corrección declarada en N4",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-konjunktiv-vergangenheit-independent-error-1: accepted no coincide con las respuestas del runtime",
+        "de-konjunktiv-vergangenheit-independent-error-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n5-answer-linkage",
+      "status": "PASS",
+      "mutation": "Sustitución aislada de la oración completa declarada en N5",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-konjunktiv-vergangenheit-separation-1: accepted no coincide con las respuestas del runtime",
+        "de-konjunktiv-vergangenheit-separation-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "context-fingerprint",
+      "status": "PASS",
+      "mutation": "Eliminación del ancla o destinatario de la primera decisión de N6 sin tocar la respuesta",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-konjunktiv-vergangenheit-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "classification-fingerprint",
+      "status": "PASS",
+      "mutation": "Intercambio de una etiqueta separable y una inseparable manteniendo el balance 5/5",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-konjunktiv-vergangenheit-separation-1: runtimeFingerprint no coincide con el reto materializado",
+        "de-konjunktiv-vergangenheit-separation-2: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "form-variant-linkage",
+      "status": "PASS",
+      "mutation": "Eliminación de „gesandt hätte“ del runtime manteniéndolo en annotations",
+      "expected": "validateCandidate devuelve al menos un fallo",
+      "observed": [
+        "de-konjunktiv-vergangenheit-micro-editorial-7: accepted no coincide con las respuestas del runtime",
+        "de-konjunktiv-vergangenheit-micro-editorial-7: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "content-alternatives",
+      "status": "PASS",
+      "evidence": "„gesendet hätte“ y „gesandt hätte“ están declaradas, y N4 fija el resultado real contrario."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "ADVERSARIAL-GATES-CLOSED",
+      "detail": "Las mutaciones de respuesta, contexto y clasificación fueron rechazadas; el runtimeFingerprint por ítem y el enlace de respuestas protegen el candidato."
+    }
+  ],
+  "generatedAt": "2026-09-05T15:32:02.747Z"
+}
