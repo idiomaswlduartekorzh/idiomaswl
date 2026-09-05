@@ -203,6 +203,56 @@
   background: #fff;
 }
 
+.frameNav {
+  display: grid;
+  width: min(100%, 960px);
+  grid-template-columns: repeat(auto-fit, minmax(74px, 1fr));
+  gap: 0.45rem;
+  margin: 0 auto 1rem;
+}
+
+.frameNav button {
+  display: grid;
+  min-height: 54px;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #cdd8e8;
+  color: #42506b;
+  background: #fff;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.frameNav button[aria-current='step'] {
+  border-color: #176b87;
+  color: #102e6f;
+  background: #edf8fa;
+  box-shadow: inset 0 -3px #176b87;
+}
+
+.frameNav span {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  color: #fff;
+  background: #176b87;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.frameNav small {
+  overflow: hidden;
+  font-size: 0.68rem;
+  font-weight: 760;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .frameHeading h1 {
   font-size: clamp(1.8rem, 4vw, 3.2rem);
 }
@@ -322,6 +372,17 @@
   cursor: not-allowed;
 }
 
+.navActions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.navActions button:first-child:not(:disabled) {
+  color: #102e6f;
+  background: transparent;
+}
+
 .confirmation,
 .error {
   margin-top: 1rem;
@@ -439,6 +500,11 @@
   .runnerFooter button,
   .actions > * {
     width: 100%;
+  }
+
+  .navActions {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .error {

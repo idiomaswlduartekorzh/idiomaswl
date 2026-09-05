@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { AlertTriangle, ArrowRight, CheckCircle2, Headphones, RotateCcw, ShieldCheck } from 'lucide-react';
+import { AlertTriangle, ArrowLeft, ArrowRight, CheckCircle2, Headphones, RotateCcw, ShieldCheck } from 'lucide-react';
 
 import { AudioPlayer } from '@/components/exam-runner/primitives';
 import type { MockSection, ToeflListeningSingleQuestion } from '@/data/mocks/types';
@@ -71,6 +71,12 @@ function createAttemptId() {
   return `sectional-listening:${suffix}`;
 }
 
+function openPracticeInstructions(instructions: string) {
+  return instructions
+    .replace('Listen to each short exchange once.', 'Listen to each short exchange.')
+    .replace(/\s*(?:Each|The) audio plays once\./g, '');
+}
+
 function taskBreakdown(
   practice: ToeflListeningSectionPractice,
   result: ToeflListeningScoreResult,
@@ -114,13 +120,9 @@ export default function ToeflListeningSectionRunner({
   const [audioError, setAudioError] = useState(false);
   const [audioRetryNonce, setAudioRetryNonce] = useState(0);
   const [scoringError, setScoringError] = useState(false);
-  const [confirmAdvance, setConfirmAdvance] = useState(false);
   const [hydrated, setHydrated] = useState(false);
 
   const activeFrame = frames[frameIndex];
-  const audioCompleted = activeFrame
-    ? completedMediaIds.includes(activeFrame.mediaId)
-    : false;
   const answeredInFrame = activeFrame
     ? activeFrame.questions.filter((question) => answers[question.id]).length
     : 0;
@@ -211,12 +213,7 @@ export default function ToeflListeningSectionRunner({
   }, [answers, attemptId, practice.id, practice.objectId, questions, storageKey]);
 
   const advance = useCallback(() => {
-    if (!activeFrame || !audioCompleted) return;
-    if (missingResponses > 0 && !confirmAdvance) {
-      setConfirmAdvance(true);
-      return;
-    }
-    setConfirmAdvance(false);
+    if (!activeFrame) return;
     setAudioError(false);
     setAudioRetryNonce(0);
     if (frameIndex === frames.length - 1) {
@@ -224,7 +221,13 @@ export default function ToeflListeningSectionRunner({
       return;
     }
     setFrameIndex((index) => index + 1);
-  }, [activeFrame, audioCompleted, confirmAdvance, frameIndex, frames.length, missingResponses, scoreAttempt]);
+  }, [activeFrame, frameIndex, frames.length, scoreAttempt]);
+
+  const goToFrame = useCallback((nextIndex: number) => {
+    setFrameIndex(Math.min(Math.max(nextIndex, 0), frames.length - 1));
+    setAudioError(false);
+    setAudioRetryNonce(0);
+  }, [frames.length]);
 
   const reset = useCallback(() => {
     setPhase('intro');
@@ -237,7 +240,6 @@ export default function ToeflListeningSectionRunner({
     setAudioError(false);
     setAudioRetryNonce(0);
     setScoringError(false);
-    setConfirmAdvance(false);
     try { window.localStorage.removeItem(storageKey); } catch { /* local-only reset */ }
   }, [storageKey]);
 
@@ -248,7 +250,7 @@ export default function ToeflListeningSectionRunner({
           <p className={styles.kicker}>TOEFL Listening · {setLabel}</p>
           <h1 id="listening-runner-title">One focused Listening session.</h1>
           <p className={styles.lead}>
-            You will hear each audio once and move forward without returning to earlier blocks. Answers are scored with private server-side keys. No official TOEFL score is calculated.
+            This is open practice: replay any audio, move between blocks freely, and leave questions unanswered. Answers are scored with private server-side keys. No official TOEFL score is calculated.
           </p>
           <div className={styles.introGrid}>
             <article>
@@ -317,19 +319,34 @@ export default function ToeflListeningSectionRunner({
         </div>
       </header>
 
+      <nav className={styles.frameNav} aria-label="Listening blocks">
+        {frames.map((frame, index) => (
+          <button
+            key={frame.id}
+            type="button"
+            aria-current={index === frameIndex ? 'step' : undefined}
+            onClick={() => goToFrame(index)}
+          >
+            <span>{index + 1}</span>
+            <small>{frame.label}</small>
+          </button>
+        ))}
+      </nav>
+
       <section className={styles.runnerBody} aria-labelledby="active-listening-title">
         <div className={styles.frameHeading}>
           <p className={styles.kicker}>{activeFrame.label}</p>
           <h1 id="active-listening-title">{activeFrame.title.replace(/^Listening Módulo \d — /, '')}</h1>
-          <p>{activeFrame.instructions}</p>
+          <p>{openPracticeInstructions(activeFrame.instructions)}</p>
         </div>
 
         <div className={styles.audioPanel}>
           <AudioPlayer
             key={`${activeFrame.id}:${audioRetryNonce}`}
             src={activeFrame.audioUrl}
-            label="Practice audio · plays once"
+            label="Practice audio · replay allowed"
             alreadyPlayed={completedMediaIds.includes(activeFrame.mediaId)}
+            replayable
             onPlaybackStart={() => {
               setAudioError(false);
               setStartedMediaIds((ids) => ids.includes(activeFrame.mediaId) ? ids : [...ids, activeFrame.mediaId]);
@@ -342,7 +359,7 @@ export default function ToeflListeningSectionRunner({
             }}
           />
           {!activeFrame.audioUrl && (
-            <p className={styles.error} role="alert">Audio is unavailable. This block remains closed.</p>
+            <p className={styles.error} role="alert">Audio is unavailable. You can still review the questions or continue to another block.</p>
           )}
           {audioError && (
             <p className={styles.error} role="alert">
@@ -359,14 +376,12 @@ export default function ToeflListeningSectionRunner({
               </button>
             </p>
           )}
-          {!audioCompleted && !audioError && (
-            <p className={styles.audioHint} role="status">Answer choices unlock when the audio ends.</p>
-          )}
+          {!audioError && <p className={styles.audioHint}>Replay the audio as often as you need. Playback never locks the questions or navigation.</p>}
         </div>
 
-        <div className={styles.questions} aria-disabled={!audioCompleted}>
+        <div className={styles.questions}>
           {activeFrame.questions.map((question, questionIndex) => (
-            <fieldset key={question.id} disabled={!audioCompleted}>
+            <fieldset key={question.id}>
               <legend>
                 <span>Question {questionIndex + 1}</span>
                 {question.text}
@@ -381,7 +396,6 @@ export default function ToeflListeningSectionRunner({
                       checked={answers[question.id] === option.id}
                       onChange={() => {
                         setAnswers((current) => ({ ...current, [question.id]: option.id }));
-                        setConfirmAdvance(false);
                         setScoringError(false);
                       }}
                     />
@@ -394,15 +408,6 @@ export default function ToeflListeningSectionRunner({
           ))}
         </div>
 
-        {confirmAdvance && (
-          <div className={styles.confirmation} role="alert">
-            <strong>{missingResponses === 1 ? 'One answer is missing.' : `${missingResponses} answers are missing.`}</strong>
-            <p>If you continue, they will remain unanswered and you cannot return to this block.</p>
-            <button type="button" onClick={advance}>Continue without answering</button>
-            <button type="button" onClick={() => setConfirmAdvance(false)}>Review this block</button>
-          </div>
-        )}
-
         {scoringError && (
           <div className={styles.error} role="alert">
             <AlertTriangle aria-hidden="true" /> Scoring did not respond. Your answers are saved; please try again.
@@ -410,15 +415,20 @@ export default function ToeflListeningSectionRunner({
         )}
 
         <footer className={styles.runnerFooter}>
-          <p>{answeredInFrame} of {activeFrame.questions.length} answered in this block</p>
-          <button type="button" onClick={advance} disabled={!audioCompleted || phase === 'scoring'}>
-            {phase === 'scoring'
-              ? 'Checking…'
-              : frameIndex === frames.length - 1
-                ? 'Submit answers'
-                : 'Continue to next block'}
-            {phase !== 'scoring' && <ArrowRight aria-hidden="true" />}
-          </button>
+          <p>{answeredInFrame} of {activeFrame.questions.length} answered · unanswered questions are allowed</p>
+          <div className={styles.navActions}>
+            <button type="button" onClick={() => goToFrame(frameIndex - 1)} disabled={frameIndex === 0 || phase === 'scoring'}>
+              <ArrowLeft aria-hidden="true" /> Previous block
+            </button>
+            <button type="button" onClick={advance} disabled={phase === 'scoring'}>
+              {phase === 'scoring'
+                ? 'Checking…'
+                : frameIndex === frames.length - 1
+                  ? `Check answers${missingResponses > 0 ? ' (including blanks)' : ''}`
+                  : 'Next block'}
+              {phase !== 'scoring' && <ArrowRight aria-hidden="true" />}
+            </button>
+          </div>
         </footer>
       </section>
     </div>

@@ -21,6 +21,7 @@ const activeUiFiles = [
   'src/app/(site)/practica/toefl/writing/write-an-email/page.tsx',
   'src/app/(site)/practica/toefl/writing/academic-discussion/page.tsx',
   'src/app/(site)/practica/toefl/speaking/page.tsx',
+  'src/components/toefl/SpeakingPracticeSet.tsx',
   'src/components/toefl/ToeflPracticeSetCatalog.tsx',
   'src/app/(site)/practica/toefl/reading/formato-2026/complete-the-words/CompleteTheWordsPractice.tsx',
   'src/components/toefl/BuildSentenceSet1Practice.tsx',
@@ -64,6 +65,22 @@ assert.ok(
   whatsappSource.includes("['/practica/toefl'"),
   'TOEFL practice routes must use the English WhatsApp message.',
 );
+
+const listeningRunnerSource = await readFile(
+  path.join(ROOT, 'src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/ToeflListeningSectionRunner.tsx'),
+  'utf8',
+);
+assert.ok(listeningRunnerSource.includes('replayable'), 'Listening practice audio must be replayable.');
+assert.ok(listeningRunnerSource.includes('Previous block'), 'Listening practice must support backward navigation.');
+assert.ok(listeningRunnerSource.includes('unanswered questions are allowed'), 'Listening practice must allow blank responses.');
+assert.ok(!listeningRunnerSource.includes('Answer choices unlock'), 'Listening choices must not wait for audio playback.');
+
+const speakingPageSource = await readFile(
+  path.join(ROOT, 'src/app/(site)/practica/toefl/speaking/page.tsx'),
+  'utf8',
+);
+assert.ok(speakingPageSource.includes('SpeakingPracticeSet'), 'Speaking must open as independent practice.');
+assert.ok(speakingPageSource.includes('href: `${PATH}?set=${index + 1}`'), 'Speaking sets must stay inside the practice route.');
 
 await assert.rejects(
   access(path.join(ROOT, 'src/app/(site)/practica/toefl/TOEFLHubClient.tsx')),

@@ -14,6 +14,7 @@ interface Props {
   maxSeconds?: number;
   onChange: (recording: IeltsSpeakingRecording | undefined) => void;
   onRecordingStateChange?: (recording: boolean) => void;
+  english?: boolean;
 }
 
 type RecorderState = 'idle' | 'requesting' | 'recording' | 'processing' | 'done';
@@ -34,14 +35,20 @@ function formatDuration(seconds: number): string {
   return `${minutes}:${String(remainder).padStart(2, '0')}`;
 }
 
-function microphoneError(error: unknown): string {
+function microphoneError(error: unknown, english: boolean): string {
   if (error instanceof DOMException && (error.name === 'NotAllowedError' || error.name === 'SecurityError')) {
-    return 'El navegador bloqueó el micrófono. Permite el acceso en la barra de direcciones e inténtalo otra vez.';
+    return english
+      ? 'The browser blocked the microphone. Allow access in the address bar and try again.'
+      : 'El navegador bloqueó el micrófono. Permite el acceso en la barra de direcciones e inténtalo otra vez.';
   }
   if (error instanceof DOMException && error.name === 'NotFoundError') {
-    return 'No se encontró un micrófono. Conecta uno o revisa la entrada de audio del dispositivo.';
+    return english
+      ? 'No microphone was found. Connect one or check the device audio input.'
+      : 'No se encontró un micrófono. Conecta uno o revisa la entrada de audio del dispositivo.';
   }
-  return 'No pudimos iniciar la grabación. Revisa el micrófono e inténtalo otra vez.';
+  return english
+    ? 'We could not start recording. Check the microphone and try again.'
+    : 'No pudimos iniciar la grabación. Revisa el micrófono e inténtalo otra vez.';
 }
 
 export function IELTSSpeakingRecorder({
@@ -50,6 +57,7 @@ export function IELTSSpeakingRecorder({
   maxSeconds = 180,
   onChange,
   onRecordingStateChange,
+  english = false,
 }: Props) {
   const [state, setState] = useState<RecorderState>(recording ? 'done' : 'idle');
   const [elapsed, setElapsed] = useState(recording?.durationSeconds ?? 0);
@@ -114,7 +122,9 @@ export function IELTSSpeakingRecorder({
   async function startRecording() {
     setError('');
     if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === 'undefined') {
-      setError('Este navegador no permite grabar audio. Abre el simulacro en Safari, Chrome, Edge o Firefox actualizado.');
+      setError(english
+        ? 'This browser cannot record audio. Open the practice in an up-to-date version of Safari, Chrome, Edge, or Firefox.'
+        : 'Este navegador no permite grabar audio. Abre el simulacro en Safari, Chrome, Edge o Firefox actualizado.');
       return;
     }
 
@@ -144,7 +154,9 @@ export function IELTSSpeakingRecorder({
         if (event.data.size > 0) chunksRef.current.push(event.data);
       };
       recorder.onerror = () => {
-        setError('La grabación se interrumpió. Conservamos tus textos; vuelve a grabar esta respuesta.');
+        setError(english
+          ? 'Recording was interrupted. Please record this response again.'
+          : 'La grabación se interrumpió. Conservamos tus textos; vuelve a grabar esta respuesta.');
         if (mountedRef.current) setState('idle');
         recordingStateCallbackRef.current?.(false);
         stopTracks();
@@ -155,7 +167,9 @@ export function IELTSSpeakingRecorder({
         stopTracks();
         recordingStateCallbackRef.current?.(false);
         if (blob.size === 0) {
-          setError('La grabación quedó vacía. Revisa el micrófono y vuelve a intentarlo.');
+          setError(english
+            ? 'The recording is empty. Check the microphone and try again.'
+            : 'La grabación quedó vacía. Revisa el micrófono y vuelve a intentarlo.');
           if (mountedRef.current) setState('idle');
           return;
         }
@@ -174,7 +188,7 @@ export function IELTSSpeakingRecorder({
       stopTracks();
       recordingStateCallbackRef.current?.(false);
       setState(recording ? 'done' : 'idle');
-      setError(microphoneError(caught));
+      setError(microphoneError(caught, english));
     }
   }
 
@@ -194,12 +208,12 @@ export function IELTSSpeakingRecorder({
   }
 
   return (
-    <div className="ielts-recorder" aria-label={`Grabación de ${questionId}`}>
+    <div className="ielts-recorder" aria-label={english ? `Recording for ${questionId}` : `Grabación de ${questionId}`}>
       <div className="ielts-speak__record-row">
         {state === 'recording' ? (
           <button type="button" className="ielts-speak__rec-btn ielts-speak__rec-btn--recording" onClick={stopRecording}>
             <span className="ielts-speak__rec-dot ielts-speak__rec-dot--live" aria-hidden="true" />
-            Detener · {formatDuration(elapsed)}
+            {english ? 'Stop' : 'Detener'} · {formatDuration(elapsed)}
           </button>
         ) : (
           <button
@@ -209,26 +223,34 @@ export function IELTSSpeakingRecorder({
             disabled={state === 'requesting' || state === 'processing'}
           >
             <span className={`ielts-speak__rec-dot${recording ? ' ielts-speak__rec-dot--done' : ''}`} aria-hidden="true" />
-            {state === 'requesting' ? 'Solicitando micrófono…' : state === 'processing' ? 'Procesando…' : recording ? 'Volver a grabar' : 'Grabar respuesta'}
+            {state === 'requesting'
+              ? (english ? 'Requesting microphone…' : 'Solicitando micrófono…')
+              : state === 'processing'
+                ? (english ? 'Processing…' : 'Procesando…')
+                : recording
+                  ? (english ? 'Record again' : 'Volver a grabar')
+                  : (english ? 'Record response' : 'Grabar respuesta')}
           </button>
         )}
 
         {recording && state !== 'recording' ? (
-          <span className="ielts-speak__rec-status">Audio listo · {formatDuration(recording.durationSeconds)}</span>
+          <span className="ielts-speak__rec-status">{english ? 'Audio ready' : 'Audio listo'} · {formatDuration(recording.durationSeconds)}</span>
         ) : state === 'idle' ? (
-          <span className="ielts-speak__rec-hint">Máximo {Math.floor(maxSeconds / 60)} minutos</span>
+          <span className="ielts-speak__rec-hint">{english ? 'Maximum' : 'Máximo'} {Math.floor(maxSeconds / 60)} {english ? 'minutes' : 'minutos'}</span>
         ) : null}
       </div>
 
       {previewUrl && state !== 'recording' && (
         <div className="ielts-recorder__preview">
-          <audio controls preload="metadata" src={previewUrl} aria-label={`Escuchar respuesta ${questionId}`} />
-          <button type="button" className="ielts-recorder__remove" onClick={removeRecording}>Eliminar audio</button>
+          <audio controls preload="metadata" src={previewUrl} aria-label={english ? `Listen to response ${questionId}` : `Escuchar respuesta ${questionId}`} />
+          <button type="button" className="ielts-recorder__remove" onClick={removeRecording}>{english ? 'Delete recording' : 'Eliminar audio'}</button>
         </div>
       )}
 
       <p className="ielts-recorder__message" role="status" aria-live="polite">
-        {error || (state === 'recording' ? 'Grabando. Habla con claridad y detén la grabación al terminar.' : '')}
+        {error || (state === 'recording'
+          ? (english ? 'Recording. Speak clearly and stop when you finish.' : 'Grabando. Habla con claridad y detén la grabación al terminar.')
+          : '')}
       </p>
     </div>
   );

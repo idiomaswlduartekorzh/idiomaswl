@@ -143,6 +143,7 @@ export default function BuildSentenceSet1Practice({ practice, setNumber }: { pra
         <div className={styles.summary} role="status" aria-live="polite">
           <h3>Exercise result</h3>
           <p><strong>{result.correct} of {result.denominator}</strong> sentences correct.</p>
+          <p>Each item is now marked as correct or incorrect below. Choose “Try again” to rebuild the sentences.</p>
           <p className={styles.disclosure}>This local result is not an official TOEFL score.</p>
           <button type="button" className="btn btn-ghost btn-sm" onClick={retry}>Try again</button>
         </div>
@@ -150,7 +151,7 @@ export default function BuildSentenceSet1Practice({ practice, setNumber }: { pra
         <div className={styles.actions}>
           <p>Completed: {complete} of {practice.items.length}</p>
           <button type="button" className="btn" disabled={!hydrated || submitting} onClick={() => { void submit(); }}>
-            {submitting ? 'Checking…' : 'Submit answers'}
+            {submitting ? 'Checking…' : 'Check my answers'}
           </button>
         </div>
       )}

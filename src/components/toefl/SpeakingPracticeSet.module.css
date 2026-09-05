@@ -1,0 +1,38 @@
+.shell { display: grid; gap: 1rem; color: #1e293b; }
+.header { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: end; padding: clamp(1.25rem, 4vw, 2.4rem); border: 1px solid #d7deea; border-top: 5px solid #7c3aed; background: #fff; }
+.header p { margin: 0 0 .55rem; color: #7c3aed; font-family: var(--mono); font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.header h1 { max-width: 760px; margin: 0; color: #102e6f; font-size: clamp(2rem, 5vw, 4rem); font-weight: 560; letter-spacing: -.055em; line-height: 1; text-wrap: balance; }
+.header div > span { display: block; max-width: 720px; margin-top: 1rem; color: #5c6680; line-height: 1.65; }
+.header aside { display: grid; min-width: 150px; padding: 1rem; border: 1px solid #ddd6fe; color: #5b21b6; background: #f5f3ff; text-align: center; }
+.header aside strong { font-size: 2rem; font-variant-numeric: tabular-nums; }
+.header aside span { font-size: .78rem; font-weight: 800; }
+.rail { display: grid; grid-template-columns: repeat(11, minmax(54px, 1fr)); gap: .4rem; overflow-x: auto; padding-bottom: .2rem; }
+.rail button { display: grid; min-width: 62px; min-height: 52px; gap: .15rem; place-items: center; border: 1px solid #d7deea; color: #42506b; background: #fff; font: inherit; cursor: pointer; }
+.rail button[aria-current='step'] { border-color: #7c3aed; color: #5b21b6; background: #f5f3ff; box-shadow: inset 0 -3px #7c3aed; }
+.rail button[data-recorded='true'] span::after { content: ' ✓'; color: #18794e; }
+.rail span { font-family: var(--mono); font-size: .78rem; font-weight: 900; }
+.rail small { font-size: .64rem; font-weight: 750; }
+.practiceCard { padding: clamp(1rem, 3vw, 2rem); border: 1px solid #d7deea; background: #fff; box-shadow: 0 18px 50px rgb(16 46 111 / 8%); }
+.identity { display: grid; grid-template-columns: auto 1fr auto; gap: .8rem; align-items: center; margin-bottom: 1rem; }
+.identity > span { display: grid; width: 44px; height: 44px; place-items: center; color: #fff; background: #7c3aed; }
+.identity svg { width: 22px; }
+.identity p, .identity h2 { margin: 0; }
+.identity p { color: #7c3aed; font-size: .7rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; }
+.identity h2 { color: #102e6f; font-size: 1.5rem; }
+.identity > strong { color: #5c6680; font-family: var(--mono); font-size: .72rem; }
+.prompt { margin: 1rem 0; padding: 1rem; border-left: 4px solid #7c3aed; background: #f8f7ff; }
+.prompt > p { margin: 0; color: #42506b; line-height: 1.6; }
+.prompt blockquote { margin: .9rem 0 0; padding: .8rem 1rem; border: 1px solid #ddd6fe; color: #202b42; background: #fff; font-size: 1.02rem; line-height: 1.65; }
+.transcriptButton { margin-top: .8rem; padding: .55rem .75rem; border: 1px solid #7c3aed; color: #5b21b6; background: #fff; font: inherit; font-weight: 800; cursor: pointer; }
+.recorder { margin-top: 1rem; padding: 1rem; border: 1px solid #dce2ed; background: #f8f9fc; }
+.recorder h3, .recorder p { margin: 0; }
+.recorder h3 { color: #102e6f; }
+.recorder p { margin: .35rem 0 .9rem; color: #5c6680; font-size: .86rem; line-height: 1.5; }
+.notice { padding: .85rem 1rem; border-left: 4px solid #b7791f; color: #6b4c16; background: #fff8e8; line-height: 1.55; }
+.footer { display: flex; gap: 1rem; align-items: center; justify-content: space-between; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #dce2ed; }
+.footer p { margin: 0; color: #5c6680; font-size: .84rem; }
+.footer div { display: flex; gap: .65rem; }
+.footer button { display: inline-flex; min-height: 44px; gap: .45rem; align-items: center; padding: .65rem .85rem; border: 1px solid #7c3aed; color: #fff; background: #7c3aed; font: inherit; font-weight: 820; cursor: pointer; }
+.footer button:first-child:not(:disabled) { color: #5b21b6; background: transparent; }
+.footer button:disabled { border-color: #bac2d0; color: #fff; background: #bac2d0; cursor: not-allowed; }
+@media (max-width: 720px) { .header { grid-template-columns: 1fr; } .header aside { justify-self: stretch; } .identity { grid-template-columns: auto 1fr; } .identity > strong { grid-column: 2; } .footer { align-items: stretch; flex-direction: column; } .footer div { display: grid; grid-template-columns: 1fr 1fr; } }

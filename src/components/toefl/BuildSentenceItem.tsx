@@ -126,7 +126,7 @@ export default function BuildSentenceItem({
       <p id={statusId} className={styles.srOnly} aria-live="polite">{announcement}</p>
       {outcome && (
         <p className={outcome.rawPoints === 1 ? styles.correct : styles.incorrect} role="status">
-          {outcome.rawPoints === 1 ? 'Correct order.' : 'Incorrect or incomplete order.'}
+          {outcome.rawPoints === 1 ? 'Correct order.' : 'Incorrect or incomplete order. Try the set again to rebuild this sentence.'}
         </p>
       )}
     </fieldset>

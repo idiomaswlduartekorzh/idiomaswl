@@ -61,6 +61,7 @@ export function AudioPlayer({
   src,
   label = 'Listening',
   alreadyPlayed = false,
+  replayable = false,
   onPlaybackStart,
   onEnded,
   onPlaybackError,
@@ -68,6 +69,7 @@ export function AudioPlayer({
   src?: string;
   label?: string;
   alreadyPlayed?: boolean;
+  replayable?: boolean;
   onPlaybackStart?: () => void;
   onEnded?: () => void;
   onPlaybackError?: () => void;
@@ -75,24 +77,33 @@ export function AudioPlayer({
   const audioRef = useRef<HTMLAudioElement>(null);
   const [started, setStarted] = useState(false);
   const [done, setDone] = useState(false);
+  const [playing, setPlaying] = useState(false);
   const [current, setCurrent] = useState(0);
   const [duration, setDuration] = useState(0);
 
   function play() {
-    if (!audioRef.current || started || alreadyPlayed) return;
+    if (!audioRef.current || playing || (!replayable && (started || alreadyPlayed))) return;
+    if (done) audioRef.current.currentTime = 0;
+    setDone(false);
     void audioRef.current.play().then(() => {
       setStarted(true);
+      setPlaying(true);
       onPlaybackStart?.();
     }).catch(() => {
+      setPlaying(false);
       onPlaybackError?.();
     });
   }
 
   const pct = duration > 0 ? (current / duration) * 100 : 0;
+  const updateDuration = () => {
+    const nextDuration = audioRef.current?.duration ?? 0;
+    setDuration(Number.isFinite(nextDuration) ? nextDuration : 0);
+  };
 
   if (!src) return null;
 
-  if (alreadyPlayed && !started) {
+  if (alreadyPlayed && !started && !replayable) {
     return (
       <div className="ielts-audio" role="status">
         <div className="ielts-audio__player">
@@ -111,32 +122,45 @@ export function AudioPlayer({
         ref={audioRef}
         src={resolveAudioUrl(src)}
         onTimeUpdate={() => setCurrent(audioRef.current?.currentTime ?? 0)}
-        onLoadedMetadata={() => setDuration(audioRef.current?.duration ?? 0)}
+        onLoadedMetadata={updateDuration}
+        onDurationChange={updateDuration}
         onEnded={() => {
           setDone(true);
+          setPlaying(false);
           onEnded?.();
         }}
+        onPause={() => setPlaying(false)}
         onError={onPlaybackError}
       />
       <div className="ielts-audio__player">
         <button
-          className={`ielts-audio__btn${started ? ' ielts-audio__btn--done' : ''}`}
+          className={`ielts-audio__btn${done ? ' ielts-audio__btn--done' : ''}`}
           onClick={play}
-          aria-label="Play"
-          disabled={started || alreadyPlayed}
+          aria-label={done && replayable ? 'Play again' : 'Play'}
+          disabled={playing || (!replayable && (started || alreadyPlayed))}
         >
-          {done ? '✓' : '▶'}
+          {done && !replayable ? '✓' : '▶'}
         </button>
         <div className="ielts-audio__info">
           <span className="ielts-audio__label">
-            {done ? `${label} — completed` : started ? `${label} — playing…` : `${label} — press play to begin`}
+            {done && replayable
+              ? `${label} — completed · play again whenever you want`
+              : done
+                ? `${label} — completed`
+                : playing
+                  ? `${label} — playing…`
+                  : started
+                    ? `${label} — paused · press play to continue`
+                    : `${label} — press play to begin`}
           </span>
           <div className="ielts-audio__progress-wrap">
             <div
               className="ielts-audio__progress-bar"
               style={{ '--pct': `${pct}%` } as React.CSSProperties}
             />
-            <span className="ielts-audio__time">{formatTime(Math.floor(current))} / {formatTime(Math.floor(duration))}</span>
+            <span className="ielts-audio__time">
+              {formatTime(Math.floor(current))}{duration > 0 ? ` / ${formatTime(Math.floor(duration))}` : ''}
+            </span>
           </div>
         </div>
       </div>

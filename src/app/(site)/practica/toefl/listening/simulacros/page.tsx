@@ -41,7 +41,7 @@ const faqs = [
   {
     question: 'Can I replay the audio?',
     answer:
-      'Each audio plays once during an attempt. You can start a new attempt after completing the set.',
+      'Yes. This is practice, so you can replay every audio, move backward or forward, and continue without answering.',
   },
 ];
 
