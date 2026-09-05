@@ -84,6 +84,8 @@ Set 10 avanzó después a v3: Reading se amplió dentro de los párrafos existen
 
 Set 11 avanzó después a v3: Reading se amplió dentro de los párrafos existentes sin cambiar la clave objetiva ni los destinos A–G. La evidencia automática conserva candidatos localizables para las 40 preguntas. La revisión humana y la alineación completa del audio siguen pendientes.
 
+Set 12 avanzó después a v3: Reading se amplió dentro de los párrafos existentes. La cronología de ajedrez ahora denomina formal al campeonato de 1886 y comienza la serie de campeones apoyados por el sistema soviético con Botvinnik; Q17 identifica directamente el renacimiento moderno. La distinción regulatoria entre la ley australiana y el proyecto noruego se comprobó contra fuentes gubernamentales vigentes y quedó registrada. La revisión humana y la alineación completa del audio siguen pendientes.
+
 ## Referencia independiente de Set 1
 
 Las cuatro partes de Listening de Set 1 se identificaron como Cambridge IELTS 10 Academic, Test 1. El fixture `set-1-listening-cambridge10-test1-reference.json` conserva únicamente la identidad, las referencias consultadas y los 40 resultados esperados; no copia el transcript. Su hash está fijado en `check-ielts-set1-listening-reference.mjs`. El check convierte índices MCQ a letras, normaliza variantes de formato como `2020`/`2,020` y exige la misma cobertura Q1–Q40. Esto confirma la clave; la correspondencia completa del archivo de audio sigue necesitando ASR y timecodes.
