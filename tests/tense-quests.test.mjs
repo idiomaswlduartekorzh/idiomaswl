@@ -251,6 +251,16 @@ test('German exposes ten drills per form before a long written final story', () 
     assert.equal(separation.length, 10, `${id}/separation`)
     assert.equal(separation.filter((item) => item.separation === 'separable').length, 5, `${id}/separable`)
     assert.equal(separation.filter((item) => item.separation === 'inseparable').length, 5, `${id}/inseparable`)
+    const sequence = separation.map((item) => item.separation)
+    const changes = sequence.slice(1).filter((value, index) => value !== sequence[index]).length
+    const runs = sequence.reduce((lengths, value) => {
+      const previous = lengths.at(-1)
+      if (previous?.value === value) previous.length += 1
+      else lengths.push({ value, length: 1 })
+      return lengths
+    }, [])
+    assert.ok(changes >= 6, `${id}/mixed-separation-order`)
+    assert.ok(Math.max(...runs.map((run) => run.length)) <= 2, `${id}/separation-run`)
     for (const item of separation) {
       assert.match(item.prompt, /___/, `${item.id}/prompt`)
       assert.ok(item.answers[0].split(/\s+/).length >= 4, `${item.id}/complete-sentence`)

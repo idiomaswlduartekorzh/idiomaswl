@@ -99,7 +99,6 @@ export type SeparationChallenge<FormId extends string> = {
   verb: string
   separation: 'separable' | 'inseparable'
   prompt: string
-  segments: [string, string]
   answers: string[]
   explanation: string
 }

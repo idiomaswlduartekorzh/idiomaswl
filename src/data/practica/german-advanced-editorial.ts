@@ -287,34 +287,40 @@ const SEPARATION_SEEDS: Record<GermanFormId, SeparationSeed[]> = {
   ],
 }
 
-const SEPARABLE_PREFIXES = ['zurück', 'vor', 'teil', 'mit', 'ein', 'aus', 'auf', 'weg', 'ab', 'an'] as const
-
 function sentencePrompt(verb: string, separation: SeparationSeed[1], before: string, after: string) {
   if (separation === 'inseparable') return `${before}___${after}`
-  const prefix = SEPARABLE_PREFIXES.find((candidate) => verb.startsWith(candidate))
-  if (!prefix) return `${before}___${after}`
-  const hiddenParticle = new RegExp(`\\s${prefix}([.!?])$`)
-  return `${before}___${after.replace(hiddenParticle, '$1')}`
+  const finalWord = after.match(/\s([\p{L}-]+)([.!?])$/u)
+  const particle = finalWord?.[1]
+  const exposesDetachedParticle = particle && particle.length < verb.length && verb.startsWith(particle)
+  return `${before}___${exposesDetachedParticle ? after.replace(/\s[\p{L}-]+([.!?])$/u, '$1') : after}`
 }
 
+// Los bancos editoriales declaran cinco verbos de cada clase. Este orden estable
+// evita tanto los bloques 5+5 como una alternancia mecánica fácil de anticipar.
+const SEPARATION_MIX_ORDER = [0, 5, 2, 7, 6, 1, 9, 4, 8, 3] as const
+
 export const GERMAN_SEPARATION_CHALLENGES: SeparationChallenge<GermanFormId>[] = Object.entries(SEPARATION_SEEDS)
-  .flatMap(([form, seeds]) => seeds.map(([verb, separation, before, after, answer], index) => {
-    const completeSentence = `${before}${answer}${after}`.replace(/\\s+/g, ' ').trim()
-    return {
-      id: `de-${form}-separation-${index + 1}`,
-      tense: form as GermanFormId,
-      title: `${verb} · ${index + 1}`,
-      focus: form,
-      verb,
-      separation,
-      prompt: sentencePrompt(verb, separation, before, after),
-      segments: [before, after],
-      answers: [completeSentence, completeSentence.replace(/[.!?]$/, '')],
-      explanation: separation === 'separable'
-        ? `„${verb}“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen.`
-        : `„${verb}“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden.`,
-    }
-  }))
+  .flatMap(([form, seeds], formIndex) => {
+    const rotation = formIndex % SEPARATION_MIX_ORDER.length
+    const order = [...SEPARATION_MIX_ORDER.slice(rotation), ...SEPARATION_MIX_ORDER.slice(0, rotation)]
+    return order.map((seedIndex, index) => {
+      const [verb, separation, before, after, answer] = seeds[seedIndex]
+      const completeSentence = `${before}${answer}${after}`.replace(/\s+/g, ' ').trim()
+      return {
+        id: `de-${form}-separation-${index + 1}`,
+        tense: form as GermanFormId,
+        title: `${verb} · ${index + 1}`,
+        focus: form,
+        verb,
+        separation,
+        prompt: sentencePrompt(verb, separation, before, after),
+        answers: [completeSentence, completeSentence.replace(/[.!?]$/, '')],
+        explanation: separation === 'separable'
+          ? `„${verb}“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen.`
+          : `„${verb}“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden.`,
+      }
+    })
+  })
 
 type StorySeed = {
   title: string

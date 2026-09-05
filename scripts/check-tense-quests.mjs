@@ -46,6 +46,8 @@ function checkUniqueIds(config) {
     ...config.errorChallenges.map((item) => item.id),
     ...config.timelineChallenges.map((item) => item.id),
     ...config.finalChallenges.map((item) => item.id),
+    ...(config.separationChallenges ?? []).map((item) => item.id),
+    ...(config.finalStories ?? []).map((item) => item.id),
   ]
   assert(new Set(ids).size === ids.length, `${config.id}: hay IDs de retos duplicados`)
 }
@@ -59,7 +61,10 @@ function assertBalancedPositions(config) {
   assert(choicePositions.every((count) => count > 0), `${config.id}: la respuesta múltiple no usa las cuatro posiciones (${choicePositions.join('/')})`)
   assert(Math.max(...choicePositions) - Math.min(...choicePositions) <= 1, `${config.id}: distribución múltiple desequilibrada (${choicePositions.join('/')})`)
 
-  const errorPositions = [0, 0, 0]
+  const errorPositions = Array.from(
+    { length: Math.max(...config.errorChallenges.map((challenge) => challenge.chunks.length)) },
+    () => 0,
+  )
   for (const challenge of config.errorChallenges) {
     const position = challenge.chunks.findIndex((chunk) => chunk.id === challenge.wrongId)
     if (position >= 0 && position < errorPositions.length) errorPositions[position] += 1
@@ -85,7 +90,7 @@ function validate(config, minimums) {
     assert(challenge.tenses.length > 0 && challenge.tenses.every((id) => formIds.has(id)), `${challenge.id}: referencia una forma inexistente`)
   }
 
-  for (const challenge of [...config.microStories, ...config.longStories]) {
+  for (const challenge of [...config.microStories, ...config.longStories, ...(config.finalStories ?? [])]) {
     assert(challenge.segments.length === challenge.gaps.length + 1, `${challenge.id}: segmentos y huecos no están alineados`)
     assert(new Set(challenge.gaps.map((gap) => gap.id)).size === challenge.gaps.length, `${challenge.id}: tiene IDs de hueco duplicados`)
     for (const gap of challenge.gaps) {
@@ -116,6 +121,13 @@ function validate(config, minimums) {
     }
   }
 
+  for (const challenge of config.separationChallenges ?? []) {
+    assert(formIds.has(challenge.tense), `${challenge.id}: referencia una forma inexistente`)
+    assert(challenge.prompt.split('___').length === 2, `${challenge.id}: debe contener exactamente un hueco orientativo`)
+    assert(challenge.answers.length > 0 && challenge.answers.every(Boolean), `${challenge.id}: no tiene oración completa válida`)
+    assert(challenge.answers[0].split(/\s+/u).length >= 4, `${challenge.id}: la respuesta debe ser una oración completa`)
+  }
+
   for (const challenge of config.finalChallenges) {
     const cardIds = challenge.cards.map((card) => card.id)
     assert(challenge.segments.length === challenge.gaps.length + 1, `${challenge.id}: segmentos y huecos no están alineados`)
@@ -144,8 +156,12 @@ function validate(config, minimums) {
     micro: countByForm(config, (id) => config.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length),
     long: countByForm(config, (id) => config.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length),
     error: countByForm(config, (id) => config.errorChallenges.filter((item) => item.tense === id).length),
-    timeline: countByForm(config, (id) => config.timelineChallenges.reduce((sum, item) => sum + item.slots.filter((slot) => slot.tense === id).length, 0)),
-    final: countByForm(config, (id) => config.finalChallenges.reduce((sum, item) => sum + item.gaps.filter((gap) => gap.tenseId === id).length, 0)),
+    timeline: countByForm(config, (id) => config.separationChallenges?.length
+      ? config.separationChallenges.filter((item) => item.tense === id).length
+      : config.timelineChallenges.reduce((sum, item) => sum + item.slots.filter((slot) => slot.tense === id).length, 0)),
+    final: countByForm(config, (id) => config.finalStories?.length
+      ? config.finalStories.reduce((sum, item) => sum + item.gaps.filter((gap) => gap.tense === id).length, 0)
+      : config.finalChallenges.reduce((sum, item) => sum + item.gaps.filter((gap) => gap.tenseId === id).length, 0)),
   }
 
   for (const form of config.forms) {
@@ -453,13 +469,49 @@ validate(RUSSIAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, 
 validate(JAPANESE_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 validate(KOREAN_STRUCTURE_QUEST, { choice: 10, micro: 10, long: 10, error: 10, timeline: 10, final: 10 })
 
+for (const form of GERMAN_STRUCTURE_QUEST.forms) {
+  const items = GERMAN_STRUCTURE_QUEST.separationChallenges?.filter((item) => item.tense === form.id) ?? []
+  const sequence = items.map((item) => item.separation)
+  const classChanges = sequence.slice(1).filter((value, index) => value !== sequence[index]).length
+  let longestRun = 0
+  let currentRun = 0
+  let previous = ''
+  for (const value of sequence) {
+    currentRun = value === previous ? currentRun + 1 : 1
+    longestRun = Math.max(longestRun, currentRun)
+    previous = value
+  }
+
+  assert(items.length === 10, `german/${form.id}: el nivel 5 necesita diez retos`)
+  assert(sequence.filter((value) => value === 'separable').length === 5, `german/${form.id}: el nivel 5 necesita cinco verbos separables`)
+  assert(sequence.filter((value) => value === 'inseparable').length === 5, `german/${form.id}: el nivel 5 necesita cinco verbos inseparables`)
+  assert(classChanges >= 6 && longestRun <= 2, `german/${form.id}: separables e inseparables deben aparecer mezclados (${sequence.join('/')})`)
+  assert(new Set(items.map((item) => item.verb)).size === items.length, `german/${form.id}: el nivel 5 repite infinitivos`)
+  assert(new Set(items.map((item) => item.prompt)).size === items.length, `german/${form.id}: el nivel 5 repite Satzgerüste`)
+
+  for (const [index, item] of items.entries()) {
+    assert(item.title.endsWith(`· ${index + 1}`), `${item.id}: el número visible no coincide con el orden mezclado`)
+    const finalWord = item.prompt.match(/\s([\p{L}-]+)[.!?]$/u)?.[1]
+    const leaksParticle = item.separation === 'separable'
+      && finalWord
+      && finalWord.length < item.verb.length
+      && item.verb.startsWith(finalWord)
+    assert(!leaksParticle, `${item.id}: el Satzgerüst revela la partícula separada «${finalWord}»`)
+  }
+
+  const finalStories = GERMAN_STRUCTURE_QUEST.finalStories?.filter((item) => item.gaps.some((gap) => gap.tense === form.id)) ?? []
+  assert(finalStories.length === 1, `german/${form.id}: el nivel 6 necesita una historia larga propia`)
+  assert(finalStories[0]?.gaps.length >= 10, `german/${form.id}: la historia final necesita al menos diez decisiones`)
+}
+
 for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
   const formId = GERMAN_STRUCTURE_QUEST.forms[index].id
   assert(pack.choices.length === 10 && pack.micro.length === 10, `german/${formId}: se requieren 10 decisiones y 10 microtextos`)
   assert(pack.long.length === 10 && pack.long.every((item) => item.gaps.length === 3), `german/${formId}: se requieren 10 relatos conectados de tres huecos`)
-  assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 3), `german/${formId}: se requieren 10 reparaciones de tres verbos`)
+  assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 5), `german/${formId}: se requieren 10 reparaciones de cinco oraciones`)
   assert(pack.timelines.length === 10 && pack.finalGaps.length === 10, `german/${formId}: faltan secuencias o decisiones finales`)
-  for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.errors, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido alemán heredado`)
+  for (const item of [...pack.choices, ...pack.micro, ...pack.long, ...pack.timelines]) assert(item.id.includes('editorial'), `${item.id}: sobrevivió contenido alemán heredado`)
+  for (const item of pack.errors) assert(item.id.includes('independent-error'), `${item.id}: el nivel 4 debe usar el banco alemán independiente`)
   const levelOneContexts = new Set(pack.choices.map((item) => item.context.replace('___', '').toLocaleLowerCase('de')))
   for (const item of pack.micro) assert(!levelOneContexts.has(item.segments.join('').toLocaleLowerCase('de')), `${item.id}: el nivel 2 no puede reciclar la escena del nivel 1`)
 }

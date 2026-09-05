@@ -45,6 +45,7 @@ japonés y coreano. La familia de pronombres inicia con un piloto italiano bajo
 | `src/data/practica/french-structure-quest-config.ts` | Configuración francesa de diez bancos editoriales completos |
 | `src/data/practica/portuguese-structure-quest-config.ts` | Configuración editorial de portugués brasileño y sus contrastes de registro |
 | `src/data/practica/german-structure-quest-config.ts` | Configuración alemana editorial; preserva unidad verbal, orden, auxiliar y tratamiento |
+| `src/data/practica/german-advanced-editorial.ts` | Niveles alemanes 4–6: corrección autónoma, separación sin pistas e historia larga |
 | `src/data/practica/russian-structure-quest-config.ts` | Configuración rusa editorial; valida aspecto, anclas de `бы`, imperativo e infinitivo |
 | `src/data/practica/japanese-structure-quest-config.ts` | Configuración japonesa editorial; preserva no-pasado, valores de `ています` y función comunicativa |
 | `src/data/practica/korean-structure-quest-config.ts` | Configuración coreana editorial; preserva nivel de habla, aspecto y construcciones funcionales completas |
@@ -126,6 +127,10 @@ La factoría deriva por objetivo:
 | 5 | Clasificar función en mapa | 3 ranuras |
 | 6 | Reconstrucción con banco | 1 aparición |
 
+El alemán reemplaza las mecánicas genéricas de los niveles 4–6 mediante los campos opcionales
+del mismo contrato. Su especificación ejecutable y el proceso para añadir formas están en
+[`quiz-tiempos-aleman-blueprint.md`](quiz-tiempos-aleman-blueprint.md).
+
 El nivel 3 no concatena oraciones semilla. Si el contenido es un relato, sus oraciones comparten
 participantes, situación y progresión causal o temporal. Si son escenas independientes, el modelo
 las declara y la interfaz las presenta como piezas separadas; nunca se usa `·` para simular un
@@ -137,15 +142,16 @@ párrafo.
 2. No se importan categorías europeas a idiomas que no las tienen. Japonés usa no-pasado;
    ruso explicita aspecto; coreano explicita nivel de habla.
 3. Partículas, auxiliares, negación y adverbios móviles entran en el hueco cuando ocupan esa
-   posición. En alemán, si el prefijo separable ya aparece al final de la oración, el hueco pide
-   solo la parte finita y el guardián impide que la respuesta vuelva a incluir el prefijo.
+   posición. En los niveles alemanes 2 y 3, si el prefijo separable ya aparece al final, el hueco
+   pide solo la parte finita. En el nivel 5, el prefijo se oculta por completo y la respuesta es la
+   oración completa.
 4. Las variantes normativas se enumeran en `accepted`; nunca se infieren por similitud.
 5. La normalización solo aplica NFKC, apóstrofos, mayúsculas no significativas y espacios.
 6. Cada hueco puntúa una decisión lingüística. Un texto con tres huecos vale tres puntos.
 7. No se muestra ninguna señal de corrección antes de terminar el nivel.
 8. Una selección de una sola forma conserva al menos tres distractores en el nivel final.
 9. La respuesta correcta de opción múltiple se distribuye entre A, B, C y D.
-10. El token erróneo se distribuye entre las tres posiciones seleccionables.
+10. El token erróneo se distribuye entre todas las posiciones presentadas por la mecánica activa.
 11. Una pista funcional nunca repite literalmente su respuesta.
 12. Todo banco avanzado se revisa con una fuente primaria o con una persona competente en el
     idioma antes de publicarse.

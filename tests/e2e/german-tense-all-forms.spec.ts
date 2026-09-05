@@ -20,6 +20,9 @@ test('alemán: modo de revisión deja los seis niveles resueltos al 100% y permi
   await expect(page.getByLabel('Escribe la oración completa')).toHaveValue('Mara steht jeden Werktag um sechs Uhr auf.')
   await expect(page.getByText('trennbar · Mara steht jeden Werktag um sechs Uhr auf.')).toBeVisible()
   await expect(page.getByRole('button', { name: 'Siguiente reto' })).toBeEnabled()
+  await page.getByRole('button', { name: 'Siguiente reto' }).click()
+  await expect(page.getByRole('heading', { name: 'besuchen · 2' })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Untrennbar', exact: true })).toHaveAttribute('aria-pressed', 'true')
 
   await page.getByRole('tab', { name: /Lange Geschichte/ }).click()
   await expect(page.getByText(/beginnen: beginnt/)).toBeVisible()

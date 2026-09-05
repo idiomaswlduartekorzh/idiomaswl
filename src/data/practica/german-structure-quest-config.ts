@@ -33,7 +33,7 @@ export const GERMAN_EDITORIAL_PACKS = [
 ]
 
 export const GERMAN_STRUCTURE_QUEST: TenseQuestConfig<GermanFormId> = {
-  id: 'german-structure-quest', storageKey: 'wl-german-structure-quest-v8', forms: GERMAN_FORMS,
+  id: 'german-structure-quest', storageKey: 'wl-german-structure-quest-v9', forms: GERMAN_FORMS,
   presets: [
     { label: 'Vergangenheit', ids: GERMAN_FORMS.filter((form) => form.group === 'Vergangenheit').map((form) => form.id) },
     { label: 'Zukunft', ids: GERMAN_FORMS.filter((form) => form.group === 'Zukunft').map((form) => form.id) },
