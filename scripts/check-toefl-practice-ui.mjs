@@ -81,6 +81,12 @@ const speakingPageSource = await readFile(
 );
 assert.ok(speakingPageSource.includes('SpeakingPracticeSet'), 'Speaking must open as independent practice.');
 assert.ok(speakingPageSource.includes('href: `${PATH}?set=${index + 1}`'), 'Speaking sets must stay inside the practice route.');
+const speakingPracticeSource = await readFile(
+  path.join(ROOT, 'src/components/toefl/SpeakingPracticeSet.tsx'),
+  'utf8',
+);
+assert.ok(speakingPracticeSource.includes('replayable'), 'Speaking practice audio must be replayable.');
+assert.ok(speakingPracticeSource.includes('You may continue without listening or recording.'), 'Speaking practice must not block navigation on audio or recording.');
 
 await assert.rejects(
   access(path.join(ROOT, 'src/app/(site)/practica/toefl/TOEFLHubClient.tsx')),
