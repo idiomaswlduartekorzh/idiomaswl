@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "IN_PROGRESS",
+  "status": "AUTOMATIC_SCREEN_COMPLETE_ACADEMIC_PENDING",
   "preparedAt": "2026-09-04",
   "branch": "codex/toefl-curation-mac-mini-20260904",
   "reconciledOriginMain": "5af12736a991f3dc1ecbc5f691faf166f02299f9",
@@ -160,7 +160,9 @@
     {
       "set": 20,
       "baselineCharsLongestRate": 0.882,
-      "status": "PENDING_CURATION"
+      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "candidate": "docs/toefl-listening-set20-options-candidate.json",
+      "candidateSha256": "4375b416bb87ef35550ca7484bed676696a8e9b4b2abf0bad02dc7009d552f1f"
     }
   ],
   "controls": {
@@ -172,5 +174,5 @@
     "deployed": false,
     "mergedToMain": false
   },
-  "nextAction": "Prepare and automatically screen the candidate for Set 20, then validate candidates 2-20 and the 680-item projection before requesting academic review."
+  "nextAction": "Prepare the updated HR-06 package and request product and academic review before importing any candidate into runtime."
 }

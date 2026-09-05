@@ -1,0 +1,40 @@
+{
+  "status":"candidates-2-20-and-680-item-projection-pass",
+  "selfTests":"passed",
+  "threshold":0.45,
+  "questions":680,
+  "candidateSets":19,
+  "set1":"already applied baseline",
+  "candidates":[
+    [2,"bd120b0705020c28d1d67915e799db144b480425f18d26640e9d8a161b23dab7"],
+    [3,"5bfb933ffd9cb5ef554ba66f3d8fe52807c137715e142cb4c571015b9b5dd1aa"],
+    [4,"08064b72dc286472704ad4e606ab5f080787b8168a2d3150b09290505d578d0e"],
+    [5,"50f61b8559e2220695788ef717d37103240e384b50679f04f4340cca2c11273c"],
+    [6,"5492da69210a564f5cc5b22c55ed0aed24ee9499d6616f33263384bad7082548"],
+    [7,"7c09ba8003d900ee00a6b2d07475c913444538a8813bda2265eea5075f912b6b"],
+    [8,"48db2b9c3883b48c7da4fdffe86bc7e12f047cf16da521ec4cffbfb33b075bc1"],
+    [9,"2f7a0b89c9bf314e3655aa581cfe58048f259a4a9088bf5fa15ae8bdccb23d58"],
+    [10,"1d912db1ad03564a0967d848ca730cd9c3fd607b8a5034f2c8178154499e99b8"],
+    [11,"61fd8f9556f1727788b40d839b9accb1c037fb20460a29f028c5fd521ee6d971"],
+    [12,"5d739c9acf8c7b1b5534f8ed16564e8b1f6abcf17da6271db4980ba558f9978c"],
+    [13,"7abaf06d3c1b8c553e29eb3188374735e75195b9500d3971d89785b78bc546d9"],
+    [14,"8a4be388c3f89a4ad28fcfacc249b6b3817e4d8e5ce9d80ba838921885cec38d"],
+    [15,"929d5fbe28a64df53a3a80ef434ca72c19b1bbf74a31b1c1dbe7d7502a43a964"],
+    [16,"2fd291949684c763ba17a43f4d33f9195f17517afc649b3ebd00b7692735f544"],
+    [17,"92b071b996be9f689d14a0b8375de818831412be0929340a5388ef9077d8a624"],
+    [18,"df7ddd3f277c85da006b1cbd58a2221080aee219a3509fd6622feda8b088d727"],
+    [19,"a4f800753bc867295361e2555b85eedadf81cbdf9992d497f497048c54fa955f"],
+    [20,"4375b416bb87ef35550ca7484bed676696a8e9b4b2abf0bad02dc7009d552f1f"]
+  ],
+  "beforeWorstRates":{"words_longest":0.778676470588235,"words_shortest":0.05049019607843137,"chars_longest":0.7955882352941176,"chars_shortest":0.058823529411764705},
+  "after":{"words_longest":0.2838235294117647,"words_shortest":0.2691176470588235,"chars_longest":0.21176470588235294,"chars_shortest":0.3568627450980392},
+  "perSetWorst":[
+    [1,"chars_shortest",0.4117647058823529],[2,"chars_shortest",0.35294117647058826],[3,"chars_shortest",0.38235294117647056],[4,"words_longest",0.3872549019607843],[5,"chars_shortest",0.4117647058823529],
+    [6,"chars_shortest",0.29411764705882354],[7,"words_shortest",0.32598039215686275],[8,"words_shortest",0.17647058823529413],[9,"chars_shortest",0.4264705882352941],[10,"chars_shortest",0.35294117647058826],
+    [11,"chars_shortest",0.3088235294117647],[12,"chars_shortest",0.40686274509803916],[13,"words_longest",0.38235294117647056],[14,"chars_shortest",0.4264705882352941],[15,"chars_shortest",0.4117647058823529],
+    [16,"words_longest",0.4362745098039216],[17,"chars_shortest",0.4411764705882353],[18,"words_longest",0.37254901960784315],[19,"chars_shortest",0.4117647058823529],[20,"words_longest",0.4068627450980392]
+  ],
+  "academicReviewRequired":true,
+  "runtimeModified":false,
+  "reproduce":"node --experimental-strip-types --no-warnings --experimental-loader ./tests/ts-paths-loader.mjs scripts/check-toefl-listening-all-candidates.mjs"
+}
