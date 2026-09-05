@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "toefl-listening-length-correction-human-review-candidate",
+  "gateId": "HR-06",
+  "status": "PENDING_HUMAN_REVIEW",
+  "preparedAt": "2026-09-04",
+  "branch": "codex/toefl-curation-mac-mini-20260904",
+  "sourceSnapshotCommit": "2b6bd7f9d911e4551ceac988e495a904f5e76f96",
+  "scope": {
+    "section": "TOEFL Listening",
+    "questions": 680,
+    "alreadyAppliedSet": "set-1",
+    "documentaryCandidateSets": ["set-2","set-3","set-4","set-5","set-6","set-7","set-8","set-9","set-10","set-11","set-12","set-13","set-14","set-15","set-16","set-17","set-18","set-19","set-20"],
+    "requiredHumanSample": ["set-1","set-5","set-10","set-15","set-20","set-9"],
+    "randomSample": {
+      "set": "set-9",
+      "selectionMethod": "Previously locked random sample; cannot be replaced for convenience.",
+      "lockedBeforeReview": true
+    }
+  },
+  "automaticEvidence": {
+    "status": "PASS",
+    "candidateSetsValidated": 19,
+    "candidateItemsValidated": 646,
+    "projectedQuestions": 680,
+    "uniqueProjectedIds": 680,
+    "maximumAllowedWorstRate": 0.45,
+    "aggregateWorstRates": {
+      "words_longest": 0.2838235294117647,
+      "words_shortest": 0.2691176470588235,
+      "chars_longest": 0.21176470588235294,
+      "chars_shortest": 0.3568627450980392
+    },
+    "everySetPasses": true,
+    "evidencePath": "docs/toefl-listening-all-candidates-screen-20260904.json",
+    "evidenceSha256": "6e83fcb5de925510e1daf13423df6a0e4e95666a93debbfae95cf939ad7d201b",
+    "checkerPath": "scripts/check-toefl-listening-all-candidates.mjs",
+    "checkerSha256": "fde4a76dea721777c2425eb30d37a87328f15f88f494044d847841efaa128f56",
+    "trackerSha256": "f6fe78fec82a70e190d60eb7b3ba8780a9fd3382bf102ff428227bc7539998df"
+  },
+  "sampleCandidateHashes": {
+    "set-1": "6afedc554facae03c12103f7f238a0253292de9ea9d0b206fff44096e8f2ad5d",
+    "set-5": "50f61b8559e2220695788ef717d37103240e384b50679f04f4340cca2c11273c",
+    "set-10": "1d912db1ad03564a0967d848ca730cd9c3fd607b8a5034f2c8178154499e99b8",
+    "set-15": "929d5fbe28a64df53a3a80ef434ca72c19b1bbf74a31b1c1dbe7d7502a43a964",
+    "set-20": "4375b416bb87ef35550ca7484bed676696a8e9b4b2abf0bad02dc7009d552f1f",
+    "set-9": "2f7a0b89c9bf314e3655aa581cfe58048f259a4a9088bf5fa15ae8bdccb23d58"
+  },
+  "requiredDecisions": [
+    {
+      "reviewType": "academic-candidate-approval",
+      "status": "REQUIRED_BEFORE_RUNTIME_IMPORT",
+      "reviewer": null,
+      "scope": "All documentary candidates Sets 2-20; all 646 items, including audio contrast where required.",
+      "checks": ["correct option preserves source meaning","distractors remain plausible but unambiguously incorrect","wording is natural and level-appropriate","audio and option meaning agree","IDs, option order and keys remain unchanged"]
+    },
+    {
+      "reviewType": "product-hr06",
+      "status": "REQUIRED_AFTER_APPROVED_IMPORT",
+      "reviewer": null,
+      "scope": "Fixed sample Set 1/5/10/15/20/9 in the runtime.",
+      "checks": ["runner flow and navigation","option readability","mobile and keyboard behavior","progress and persistence","results isolated by set"]
+    },
+    {
+      "reviewType": "academic-hr06-end-to-end",
+      "status": "REQUIRED_AFTER_APPROVED_IMPORT",
+      "reviewer": null,
+      "scope": "Fixed sample Set 1/5/10/15/20/9 in the runtime.",
+      "checks": ["complete audio correspondence","instructions and four task families","answer correction and raw results","fixed non-adaptive disclosure","no official TOEFL score claim"]
+    }
+  ],
+  "limitations": [
+    "The options for Sets 2-20 are documentary candidates and are not present in the runtime.",
+    "The five initial legacy response audios in each Set 8-20 were not heard during this continuation and require human audio contrast.",
+    "Automatic length screening does not certify academic correctness or audio equivalence.",
+    "Historical browser, TypeScript, test and build results do not validate this new candidate snapshot."
+  ],
+  "controls": {
+    "c09": "BLOCKED",
+    "d9": "CONTROLS_NOT_LOWERED",
+    "runtimeModified": false,
+    "productionModified": false,
+    "deployed": false,
+    "mergedToMain": false,
+    "nextGateAllowed": false
+  },
+  "approvalBinding": {
+    "requiredFields": ["reviewer name","role","date","review type","scope actually completed","source snapshot commit","candidate contract SHA-256","observations or no observations"],
+    "silenceIsApproval": false,
+    "codexMayApprove": false
+  }
+}

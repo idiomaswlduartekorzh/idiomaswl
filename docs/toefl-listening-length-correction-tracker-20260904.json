@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "AUTOMATIC_SCREEN_COMPLETE_ACADEMIC_PENDING",
+  "status": "AWAITING_ACADEMIC_REVIEW_BEFORE_RUNTIME_IMPORT",
   "preparedAt": "2026-09-04",
   "branch": "codex/toefl-curation-mac-mini-20260904",
   "reconciledOriginMain": "5af12736a991f3dc1ecbc5f691faf166f02299f9",
@@ -166,7 +166,7 @@
     }
   ],
   "controls": {
-    "hr06": "REOPENED_FOR_TRANSVERSAL_LENGTH_BIAS_CORRECTION",
+    "hr06": "UPDATED_REVIEW_PACKAGE_PENDING_HUMAN_DECISIONS",
     "c09": "BLOCKED",
     "d9": "CONTROLS_NOT_LOWERED",
     "runtimeChangedByThisBatch": false,
@@ -174,5 +174,5 @@
     "deployed": false,
     "mergedToMain": false
   },
-  "nextAction": "Prepare the updated HR-06 package and request product and academic review before importing any candidate into runtime."
+  "nextAction": "Obtain academic approval for candidates Sets 2-20 before runtime import; after an approved import, complete product and academic HR-06 review on fixed sample Sets 1/5/10/15/20/9."
 }
