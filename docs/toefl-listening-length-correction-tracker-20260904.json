@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "AWAITING_ACADEMIC_REVIEW_BEFORE_RUNTIME_IMPORT",
+  "status": "EXECUTIVE_APPROVED_AWAITING_ACADEMIC_REVIEW_BEFORE_RUNTIME_IMPORT",
   "preparedAt": "2026-09-04",
   "branch": "codex/toefl-curation-mac-mini-20260904",
   "reconciledOriginMain": "5af12736a991f3dc1ecbc5f691faf166f02299f9",
@@ -23,6 +23,20 @@
     "maximumWorstHeuristicRate": 0.45,
     "academicReviewRequired": true,
     "keysPromptsAudioAndOptionIdsMustRemainStable": true
+  },
+  "humanReviews": {
+    "executiveCandidateReview": {
+      "status": "APPROVED",
+      "reviewer": "David Duarte",
+      "role": "chief-executive-officer-and-product-owner",
+      "reviewedAtUtc": "2026-09-05T13:56:30Z",
+      "sourceStatement": "chat yo lo veo bien, aprobado",
+      "scope": "Documentary candidates Sets 2-20, 646 items, contract SHA-256 5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820."
+    },
+    "academicCandidateReview": {
+      "status": "PENDING",
+      "reviewer": null
+    }
   },
   "sets": [
     {
@@ -166,7 +180,7 @@
     }
   ],
   "controls": {
-    "hr06": "UPDATED_REVIEW_PACKAGE_PENDING_HUMAN_DECISIONS",
+    "hr06": "EXECUTIVE_CANDIDATE_APPROVAL_RECORDED_ACADEMIC_PENDING",
     "c09": "BLOCKED",
     "d9": "CONTROLS_NOT_LOWERED",
     "runtimeChangedByThisBatch": false,

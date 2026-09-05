@@ -290,6 +290,32 @@
       ],
       "independentReview": true,
       "notes": "El usuario respondió confirmo a la solicitud de aprobación de David y Zhanna para el cambio de orden. Se aprueban únicamente las permutaciones de las preguntas 4, 6 y 8 del Set 1, con IDs/textos/claves intactos y orden versionado por intento: los ya iniciados conservan su orden. No se extiende a otros sets, cierre de HR-06, C09, identidad visual, integración ni despliegue. D9 conserva controles y D10 exige reconciliar main antes de implementar."
+    },
+    {
+      "gateId": "HR-06-LENGTH-CANDIDATES-EXECUTIVE",
+      "reviewer": "David Duarte",
+      "role": "chief-executive-officer-and-product-owner",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-05T13:56:30Z",
+      "timestampBasis": "Hora de registro; el mensaje humano no incluye una hora propia.",
+      "commitSha": "2b6bd7f9d911e4551ceac988e495a904f5e76f96",
+      "contentDigest": "5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820",
+      "contentDigestMethod": "SHA-256 del contrato que fija los candidatos documentales Sets 2-20 y su evidencia automática.",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr06-length-review-candidate-20260904.json"
+      ],
+      "supportingEvidence": [
+        {
+          "path": "docs/toefl-hr06-review.html",
+          "sha256": "73f438a1933b25c9a1cae64c659584fc8724eefb61f9aa5a2e73406ef56d186f"
+        },
+        {
+          "path": "docs/toefl-sectional-hr06-length-review-packet-20260904.md",
+          "sha256": "645d6a5262761498353692ac71a84346b7c492009c934662b9d657f63c671af5"
+        }
+      ],
+      "independentReview": false,
+      "notes": "Aprobación humana explícita recibida con el texto 'chat yo lo veo bien, aprobado', inmediatamente después de presentar la interfaz concreta con audio, opciones anteriores y nuevas, clave esperada y controles de revisión. Se registra como aprobación ejecutiva y de producto de David Duarte para el paquete documental de 646 ítems de Sets 2-20 fijado por el contrato 59438939. No se atribuye a David ni a Zhanna Korzh una aprobación académica no comunicada. Por tanto, la importación al runtime y el cierre de HR-06 siguen pendientes de una decisión académica explícita. C09 continúa bloqueado; D9 conserva los cuatro controles de longitud; no se autoriza integración en main ni despliegue."
     }
   ]
 }

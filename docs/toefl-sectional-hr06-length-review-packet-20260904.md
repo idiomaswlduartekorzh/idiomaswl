@@ -1,6 +1,8 @@
 # HR-06 — revisión de corrección del sesgo de longitud
 
-Estado: **PENDIENTE DE REVISIÓN HUMANA**. Preparado el 4 de septiembre de 2026. Este paquete organiza la revisión y no constituye una aprobación.
+Estado: **APROBACIÓN EJECUTIVA REGISTRADA; REVISIÓN ACADÉMICA PENDIENTE**. Preparado el 4 de septiembre de 2026 y actualizado el 5 de septiembre de 2026.
+
+David Duarte aprobó ejecutivamente el paquete documental de Sets 2–20 con el texto “chat yo lo veo bien, aprobado”. La decisión está vinculada al contrato SHA-256 `5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820`. No sustituye la firma académica requerida antes de importar al runtime.
 
 ## Abrir la revisión concreta
 
