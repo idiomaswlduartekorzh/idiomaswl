@@ -6,6 +6,13 @@ const TOKEN_EQUIVALENTS = new Map([
   ['outlook', 'perspective'], ['subjective', 'perspective'], ['view', 'perspective'],
   ['individual', 'person'], ['person', 'person'],
   ['react', 'respond'], ['reaction', 'respond'], ['response', 'respond'], ['respond', 'respond'],
+  ['association', 'organization'], ['organisation', 'organization'], ['organization', 'organization'],
+  ['certify', 'certify'],
+  ['confirm', 'verify'], ['verify', 'verify'],
+  ['migratory', 'migrate'], ['migration', 'migrate'], ['migrate', 'migrate'],
+  ['collid', 'collision'], ['collision', 'collision'],
+  ['death', 'death'], ['kill', 'death'], ['mortality', 'death'],
+  ['statistical', 'statistic'], ['statistic', 'statistic'],
 ]);
 
 const canonicalToken = value => {
@@ -13,6 +20,7 @@ const canonicalToken = value => {
   if (token.endsWith('ies') && token.length > 4) token = `${token.slice(0, -3)}y`;
   else if (token.endsWith('sses') && token.length > 5) token = token.slice(0, -2);
   else if (token.endsWith('ing') && token.length > 5) token = token.slice(0, -3);
+  else if (token.endsWith('ied') && token.length > 4) token = `${token.slice(0, -3)}y`;
   else if (token.endsWith('ed') && token.length > 4) token = token.slice(0, -2);
   else if (token.endsWith('ly') && token.length > 4) token = token.slice(0, -2);
   else if (token.endsWith('s') && !/(ss|us|is)$/.test(token) && token.length > 3) token = token.slice(0, -1);
