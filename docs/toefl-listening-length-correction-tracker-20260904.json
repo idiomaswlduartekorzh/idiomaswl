@@ -146,7 +146,9 @@
     {
       "set": 18,
       "baselineCharsLongestRate": 0.794,
-      "status": "PENDING_CURATION"
+      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "candidate": "docs/toefl-listening-set18-options-candidate.json",
+      "candidateSha256": "df7ddd3f277c85da006b1cbd58a2221080aee219a3509fd6622feda8b088d727"
     },
     {
       "set": 19,
@@ -168,5 +170,5 @@
     "deployed": false,
     "mergedToMain": false
   },
-  "nextAction": "Prepare and automatically screen candidates for Sets 18-20, then request academic review before importing any candidate into runtime."
+  "nextAction": "Prepare and automatically screen candidates for Sets 19-20, then request academic review before importing any candidate into runtime."
 }
