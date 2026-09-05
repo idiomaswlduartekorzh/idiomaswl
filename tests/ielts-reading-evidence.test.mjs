@@ -13,6 +13,7 @@ test('Reading evidence normalizes inflections and controlled paraphrases', () =>
     ['comedian', 'describ', 'situation', 'noise', 'while', 'play', 'perspective', 'perspective'],
   );
   assert.deepEqual(readingTokens('analysis status processes'), ['analysis', 'status', 'process']);
+  assert.deepEqual(readingTokens('certified organisations confirmed migratory collision deaths'), ['certify', 'organization', 'verify', 'migrate', 'collision', 'death']);
 });
 
 test('literal answers outrank merely related paragraphs', () => {
