@@ -2,6 +2,12 @@
 
 Estado: **PENDIENTE DE REVISIÓN HUMANA**. Preparado el 4 de septiembre de 2026. Este paquete organiza la revisión y no constituye una aprobación.
 
+## Abrir la revisión concreta
+
+Usar [`toefl-hr06-review.html`](toefl-hr06-review.html). Esa pantalla contiene el reproductor, la pregunta, las cuatro opciones nuevas, la clave esperada, la comparación con el texto anterior y los controles para registrar cada decisión. Empieza seleccionando **65 audios prioritarios**.
+
+En cada ítem hay que confirmar que el audio corresponde, que la opción verde conserva la respuesta correcta, que las otras tres opciones son claramente incorrectas y que el ajuste de longitud suena natural.
+
 ## Resultado automático listo para revisar
 
 Los candidatos documentales de Sets 2–20 contienen 646 preguntas. Junto con el Set 1 ya aplicado, la proyección cubre 680 preguntas con IDs únicos. Cada set y el banco completo pasan las cuatro métricas de longitud con límite 45 %.
