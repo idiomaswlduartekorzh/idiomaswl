@@ -74,6 +74,8 @@ Set 5 avanzó después a v3: Reading tiene 2.164 palabras distribuidas en 700/75
 
 Set 6 avanzó después a v3: sus tres pasajes se ampliaron dentro de la estructura existente y se precisaron los enunciados de emparejamiento Q15–Q19. Q15 describe el efecto indirecto sobre las condiciones del río, Q16 conserva la medición de caudal del texto, Q17–Q18 expresan las ideas culturales y de conservación que deben localizarse y Q19 identifica correctamente un objetivo de superficie. La revisión humana y la alineación completa del audio siguen pendientes.
 
+Set 7 avanzó después a v3: Reading supera el mínimo sin añadir destinos nuevos para preguntas. Q1 ahora evalúa la afirmación respaldada sobre la publicación de 1997, Q16 identifica la estructura social `moai`, Q33 usa `NO` porque el pasaje niega una causalidad definitiva y Q38 completa gramaticalmente `lexical distinction`. La evidencia automática localiza las 40 respuestas, pero la adjudicación humana y la alineación completa del audio siguen pendientes.
+
 ## Referencia independiente de Set 1
 
 Las cuatro partes de Listening de Set 1 se identificaron como Cambridge IELTS 10 Academic, Test 1. El fixture `set-1-listening-cambridge10-test1-reference.json` conserva únicamente la identidad, las referencias consultadas y los 40 resultados esperados; no copia el transcript. Su hash está fijado en `check-ielts-set1-listening-reference.mjs`. El check convierte índices MCQ a letras, normaliza variantes de formato como `2020`/`2,020` y exige la misma cobertura Q1–Q40. Esto confirma la clave; la correspondencia completa del archivo de audio sigue necesitando ASR y timecodes.
