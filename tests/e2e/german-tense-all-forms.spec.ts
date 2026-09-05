@@ -1,6 +1,24 @@
 import { expect, test } from '@playwright/test'
 import { GERMAN_STRUCTURE_QUEST as quest } from '../../src/data/practica/german-structure-quest-config'
 
+test('alemán: modo de revisión muestra respuestas y permite avanzar sin contestar', async ({ page }) => {
+  await page.goto('/herramientas/quizes/aleman?forms=praesens&level=4&review=1')
+  await expect(page.getByText('Respuesta para revisión')).toBeVisible()
+  await expect(page.locator('[class*="errorToken"]')).toHaveCount(0)
+  await expect(page.getByRole('textbox')).toHaveCount(2)
+  await expect(page.getByText('arbeiten → arbeitet')).toBeVisible()
+  await page.getByRole('button', { name: 'Siguiente reto' }).click()
+  await expect(page.getByText('2 / 10', { exact: true })).toBeVisible()
+
+  await page.getByRole('tab', { name: /Trennbar oder untrennbar/ }).click()
+  await expect(page.getByText('trennbar · steht')).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Siguiente reto' })).toBeEnabled()
+
+  await page.getByRole('tab', { name: /Lange Geschichte/ }).click()
+  await expect(page.getByText(/beginnen: beginnt/)).toBeVisible()
+  await expect(page.getByRole('textbox')).toHaveCount(11)
+})
+
 for (const { id: form } of quest.forms) {
   test(`alemán ${form}: seis niveles, recarga y contrato propio`, async ({ page }) => {
     const errors: string[] = []
@@ -11,6 +29,7 @@ for (const { id: form } of quest.forms) {
     const micro = quest.microStories.filter((item) => item.gaps.some((gap) => gap.tense === form))
     const stories = quest.longStories.filter((item) => item.gaps.some((gap) => gap.tense === form))
     const repairs = quest.errorChallenges.filter((item) => item.tense === form)
+    const separation = quest.separationChallenges!.filter((item) => item.tense === form)
     const writtenFinal = quest.finalStories!.find((item) => item.gaps.some((gap) => gap.tense === form))!
 
     for (let level = 0; level < 6; level += 1) {
@@ -32,13 +51,13 @@ for (const { id: form } of quest.forms) {
           }
         } else if (level === 3) {
           const item = repairs[index]
-          await page.locator('[class*="errorToken"]').nth(item.chunks.findIndex((chunk) => chunk.id === item.wrongId)).click()
-          await page.getByRole('textbox').fill(item.answers[0])
+          const wrongForm = item.chunks.find((chunk) => chunk.id === item.wrongId)!.form
+          await page.getByLabel('Forma que está mal').fill(wrongForm)
+          await page.getByLabel('Forma corregida').fill(item.answers[0])
         } else if (level === 4) {
-          const item = quest.finalChallenges[index]
-          const gap = item.gaps.find((gap) => gap.tenseId === form)!
-          const card = item.cards.find((card) => gap.answerCardId === card.id)!
-          await page.locator('[class*="wordBank"] button').filter({ hasText: new RegExp(`^${card.text}$`) }).click()
+          const item = separation[index]
+          await page.getByRole('button', { name: item.separation === 'separable' ? 'Trennbar' : 'Untrennbar', exact: true }).click()
+          await page.getByRole('textbox').fill(item.answers[0])
         } else {
           for (const [gapIndex, gap] of writtenFinal.gaps.entries()) await page.getByRole('textbox').nth(gapIndex).fill(gap.answers[0])
         }
@@ -50,7 +69,7 @@ for (const { id: form } of quest.forms) {
         }
         await page.getByRole('button', { name: index === itemTotal - 1 ? /Terminar nivel/ : /Guardar y seguir/ }).click()
       }
-      const expectedPoints = level === 2 ? 30 : level === 5 ? writtenFinal.gaps.length : 10
+      const expectedPoints = level === 2 ? 30 : level === 4 ? 20 : level === 5 ? writtenFinal.gaps.length : 10
       await expect(page.getByRole('status')).toContainText(`${expectedPoints} de ${expectedPoints} puntos correctos`)
     }
     await expect(page.getByRole('status')).toContainText('Completaste los seis niveles con un promedio de 100%.')

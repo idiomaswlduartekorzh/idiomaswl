@@ -515,6 +515,12 @@
   margin-top: 1rem;
 }
 
+.errorInputGrid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .correctionField span {
   color: var(--wlp-muted);
   font-family: var(--mono);
@@ -531,6 +537,81 @@
   font: inherit;
   min-height: 46px;
   padding: 0.65rem 0.75rem;
+}
+
+.separationPanel {
+  align-items: center;
+  background: var(--wlp-surface);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.separationPanel > div:first-child span,
+.reviewAnswer > span {
+  color: var(--wlp-muted);
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 750;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.separationPanel > div:first-child strong {
+  color: var(--wlp-ink);
+  font-size: 1.2rem;
+}
+
+.separationChoices {
+  display: flex;
+  gap: 0.55rem;
+}
+
+.separationChoices button {
+  background: var(--wlp-raised);
+  border: 1px solid var(--wlp-line);
+  border-radius: var(--wlp-r-pill);
+  color: var(--wlp-ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 750;
+  padding: 0.55rem 0.85rem;
+}
+
+.separationChoices button[aria-pressed='true'] {
+  background: color-mix(in srgb, var(--wlp-accent) 14%, var(--wlp-raised));
+  border-color: var(--wlp-accent);
+}
+
+.separationChoices button:focus-visible {
+  outline: 2px solid var(--wlp-accent);
+  outline-offset: 2px;
+}
+
+.reviewAnswer {
+  background: color-mix(in srgb, var(--wlp-accent) 8%, var(--wlp-surface));
+  border: 1px solid color-mix(in srgb, var(--wlp-accent) 42%, var(--wlp-line));
+  border-radius: var(--wlp-r);
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+}
+
+.reviewAnswer strong {
+  color: var(--wlp-ink);
+  overflow-wrap: anywhere;
+}
+
+.reviewAnswer small {
+  color: var(--wlp-muted);
+  line-height: 1.5;
 }
 
 .timelineBoard {
@@ -1011,6 +1092,19 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .errorInputGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .separationPanel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .separationChoices button {
+    flex: 1;
   }
 }
 

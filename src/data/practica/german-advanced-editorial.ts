@@ -1,4 +1,4 @@
-import type { ErrorChallenge, GapChallenge } from './tense-quest-types.ts'
+import type { ErrorChallenge, GapChallenge, SeparationChallenge } from './tense-quest-types.ts'
 import type { GermanFormId } from './german-structure-quest-config.ts'
 
 type CorrectionLine = [before: string, answer: string, wrong: string, after: string]
@@ -135,26 +135,172 @@ export function createGermanCorrectionChallenges(form: GermanFormId, focus: stri
   const lines = CORRECTION_LINES[form]
   const formOffset = FORM_ORDER.indexOf(form)
   return lines.map((line, index) => {
-    const selected = [line, lines[(index + 3) % lines.length], lines[(index + 7) % lines.length]]
-    const wrong = (index + formOffset) % 3
+    const selected = [line, lines[(index + 2) % lines.length], lines[(index + 4) % lines.length], lines[(index + 6) % lines.length], lines[(index + 8) % lines.length]]
+    const wrong = (index + formOffset) % 5
     return {
       id: `de-${form}-independent-error-${index + 1}`,
       tense: form,
       title: `Korrekturrunde · ${index + 1}`,
       focus,
-      instruction: 'Lies drei unabhängige Sätze. Wähle nur die falsche Verbgruppe und schreibe sie richtig.',
+      instruction: 'Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.',
       chunks: selected.map((entry, entryIndex) => ({
         before: `${entryIndex ? selected[entryIndex - 1][3] + ' ' : ''}${entry[0]}`,
         form: entryIndex === wrong ? entry[2] : entry[1],
         id: `de-${form}-independent-error-${index + 1}-token-${entryIndex + 1}`,
       })),
-      after: selected[2][3],
+      after: selected[4][3],
       wrongId: `de-${form}-independent-error-${index + 1}-token-${wrong + 1}`,
       answers: [selected[wrong][1]],
       explanation: `${rule} Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen.`,
     }
   })
 }
+
+type SeparationSeed = [
+  verb: string,
+  separation: 'separable' | 'inseparable',
+  before: string,
+  after: string,
+  answer: string,
+]
+
+const SEPARATION_SEEDS: Record<GermanFormId, SeparationSeed[]> = {
+  praesens: [
+    ['aufstehen', 'separable', 'Mara ', ' jeden Werktag um sechs Uhr auf.', 'steht'],
+    ['anrufen', 'separable', 'Der Leiter ', ' die Kundin am Nachmittag an.', 'ruft'],
+    ['mitbringen', 'separable', 'Ihr ', ' morgen eure Ausweise mit.', 'bringt'],
+    ['vorbereiten', 'separable', 'Wir ', ' den Seminarraum gemeinsam vor.', 'bereiten'],
+    ['teilnehmen', 'separable', 'Jonas ', ' jeden Mittwoch am Training teil.', 'nimmt'],
+    ['besuchen', 'inseparable', 'Meine Schwester ', ' heute das Stadtmuseum.', 'besucht'],
+    ['verstehen', 'inseparable', 'Du ', ' die neue Regel sofort.', 'verstehst'],
+    ['erzählen', 'inseparable', 'Die Nachbarin ', ' uns eine lange Geschichte.', 'erzählt'],
+    ['bekommen', 'inseparable', 'Die Gäste ', ' am Eingang ein Programm.', 'bekommen'],
+    ['entdecken', 'inseparable', 'Ein Kind ', ' eine seltene Pflanze.', 'entdeckt'],
+  ],
+  'perfekt-haben': [
+    ['aufräumen', 'separable', 'Lea sagt, dass sie das Lager ', '.', 'aufgeräumt hat'],
+    ['anrufen', 'separable', 'Der Arzt bestätigt, dass er den Patienten ', '.', 'angerufen hat'],
+    ['mitbringen', 'separable', 'Ihr erklärt, dass ihr alle Unterlagen ', '.', 'mitgebracht habt'],
+    ['vorbereiten', 'separable', 'Wir berichten, dass wir die Sitzung ', '.', 'vorbereitet haben'],
+    ['teilnehmen', 'separable', 'Milan erzählt, dass er am Workshop ', '.', 'teilgenommen hat'],
+    ['besuchen', 'inseparable', 'Nora sagt, dass sie ihre Tante ', '.', 'besucht hat'],
+    ['verstehen', 'inseparable', 'Du bestätigst, dass du die Aufgabe ', '.', 'verstanden hast'],
+    ['erzählen', 'inseparable', 'Die Zeugin erklärt, dass sie alles ', '.', 'erzählt hat'],
+    ['bekommen', 'inseparable', 'Die Gewinner sagen, dass sie ihre Urkunden ', '.', 'bekommen haben'],
+    ['entdecken', 'inseparable', 'Das Team meldet, dass es den Fehler ', '.', 'entdeckt hat'],
+  ],
+  'perfekt-sein': [
+    ['ankommen', 'separable', 'Nora schreibt, dass sie pünktlich ', '.', 'angekommen ist'],
+    ['abfahren', 'separable', 'Der Zugbegleiter bestätigt, dass der Zug ', '.', 'abgefahren ist'],
+    ['aufstehen', 'separable', 'Mila erzählt, dass sie sehr früh ', '.', 'aufgestanden ist'],
+    ['zurückkehren', 'separable', 'Die Wanderer melden, dass sie sicher ', '.', 'zurückgekehrt sind'],
+    ['ausgehen', 'separable', 'Wir sagen, dass wir gestern zusammen ', '.', 'ausgegangen sind'],
+    ['verschwinden', 'inseparable', 'Der Hausmeister berichtet, dass der Schlüssel ', '.', 'verschwunden ist'],
+    ['erscheinen', 'inseparable', 'Die Autorin bestätigt, dass ihr neuer Roman ', '.', 'erschienen ist'],
+    ['geschehen', 'inseparable', 'Niemand weiß genau, was in der Nacht ', '.', 'geschehen ist'],
+    ['entkommen', 'inseparable', 'Die Polizei meldet, dass das Tier ', '.', 'entkommen ist'],
+    ['verunglücken', 'inseparable', 'Die Zeitung berichtet, dass ein Fahrer ', '.', 'verunglückt ist'],
+  ],
+  praeteritum: [
+    ['aufwachen', 'separable', 'Kurz vor Sonnenaufgang ', ' das ganze Dorf auf.', 'wachte'],
+    ['einladen', 'separable', 'Die Direktorin ', ' alle Mitarbeitenden ein.', 'lud'],
+    ['mitnehmen', 'separable', 'Jonas ', ' seinen kleinen Bruder mit.', 'nahm'],
+    ['vorlesen', 'separable', 'Die Lehrerin ', ' den Brief laut vor.', 'las'],
+    ['zurückgeben', 'separable', 'Am Abend ', ' ich den Schlüssel zurück.', 'gab'],
+    ['beginnen', 'inseparable', 'Die Vorstellung ', ' ohne Verspätung.', 'begann'],
+    ['empfehlen', 'inseparable', 'Der Buchhändler ', ' einen kurzen Roman.', 'empfahl'],
+    ['vergessen', 'inseparable', 'Wir ', ' damals oft die Wegbeschreibung.', 'vergaßen'],
+    ['beschreiben', 'inseparable', 'Die Zeugin ', ' den Wagen sehr genau.', 'beschrieb'],
+    ['erkennen', 'inseparable', 'Im Dunkeln ', ' er die Stimme sofort.', 'erkannte'],
+  ],
+  plusquamperfekt: [
+    ['abschließen', 'separable', 'Bevor die Gäste kamen, hatte Mara die Tür ', '.', 'abgeschlossen'],
+    ['vorbereiten', 'separable', 'Als die Sitzung begann, hatten wir alles ', '.', 'vorbereitet'],
+    ['einsteigen', 'separable', 'Der Bus fuhr los, nachdem alle ', '.', 'eingestiegen waren'],
+    ['zurückrufen', 'separable', 'Paul war beruhigt, weil die Ärztin ihn ', '.', 'zurückgerufen hatte'],
+    ['wegfahren', 'separable', 'Als ich ankam, war der Lieferwagen schon ', '.', 'weggefahren'],
+    ['bezahlen', 'inseparable', 'Wir gingen hinaus, nachdem wir die Rechnung ', '.', 'bezahlt hatten'],
+    ['verlassen', 'inseparable', 'Die Straße war leer, weil alle das Fest ', '.', 'verlassen hatten'],
+    ['entdecken', 'inseparable', 'Der Techniker kannte die Ursache, weil er den Defekt ', '.', 'entdeckt hatte'],
+    ['bestellen', 'inseparable', 'Das Material lag bereit, denn die Firma hatte es früh ', '.', 'bestellt'],
+    ['erreichen', 'inseparable', 'Als es dunkel wurde, hatten die Wanderer die Hütte ', '.', 'erreicht'],
+  ],
+  'futur-eins': [
+    ['anmelden', 'separable', 'Mara verspricht, dass sie das Team morgen ', '.', 'anmelden wird'],
+    ['aufbauen', 'separable', 'Die Helfer bestätigen, dass sie die Bühne ', '.', 'aufbauen werden'],
+    ['mitfahren', 'separable', 'Ich bin sicher, dass du am Samstag ', '.', 'mitfahren wirst'],
+    ['vorstellen', 'separable', 'Der Forscher kündigt an, dass er die Ergebnisse ', '.', 'vorstellen wird'],
+    ['zurückkommen', 'separable', 'Nora schreibt, dass sie im Mai ', '.', 'zurückkommen wird'],
+    ['besuchen', 'inseparable', 'Wir versprechen, dass wir euch bald ', '.', 'besuchen werden'],
+    ['veröffentlichen', 'inseparable', 'Die Redaktion meldet, dass sie den Artikel ', '.', 'veröffentlichen wird'],
+    ['erklären', 'inseparable', 'Der Trainer sagt, dass er die neue Regel ', '.', 'erklären wird'],
+    ['bekommen', 'inseparable', 'Ihr werdet sehen, dass ihr rechtzeitig Hilfe ', '.', 'bekommen werdet'],
+    ['entdecken', 'inseparable', 'Die Prognose sagt, dass das Teleskop neue Sterne ', '.', 'entdecken wird'],
+  ],
+  'futur-zwei': [
+    ['abschließen', 'separable', 'Bis Freitag wird Lea den Vertrag ', '.', 'abgeschlossen haben'],
+    ['aufbauen', 'separable', 'Vor der Eröffnung werden die Helfer alle Stände ', '.', 'aufgebaut haben'],
+    ['ankommen', 'separable', 'Wenn wir starten, wird der Nachtzug bereits ', '.', 'angekommen sein'],
+    ['zurückkehren', 'separable', 'Bis zum Abend werden die Wanderer ', '.', 'zurückgekehrt sein'],
+    ['einreichen', 'separable', 'Am Monatsende wirst du den Antrag ', '.', 'eingereicht haben'],
+    ['bezahlen', 'inseparable', 'Vor der Abreise werden wir jede Rechnung ', '.', 'bezahlt haben'],
+    ['verlassen', 'inseparable', 'Wenn du eintriffst, werden die Gäste das Gebäude ', '.', 'verlassen haben'],
+    ['entdecken', 'inseparable', 'Bis dahin wird das Labor die Ursache ', '.', 'entdeckt haben'],
+    ['erreichen', 'inseparable', 'Am Gipfeltag wird die Gruppe ihr Ziel ', '.', 'erreicht haben'],
+    ['bestellen', 'inseparable', 'Vor dem Fest wird die Küche alle Zutaten ', '.', 'bestellt haben'],
+  ],
+  'wuerde-form': [
+    ['anrufen', 'separable', 'Mit deiner Nummer ', ' ich die Werkstatt sofort an.', 'würde'],
+    ['aufräumen', 'separable', 'Mit mehr Zeit ', ' Lea den Keller aufräumen.', 'würde'],
+    ['mitkommen', 'separable', 'Bei gutem Wetter ', ' wir gern mitkommen.', 'würden'],
+    ['vorbereiten', 'separable', 'An deiner Stelle ', ' ich das Gespräch vorbereiten.', 'würde'],
+    ['teilnehmen', 'separable', 'Ohne den Termin ', ' ihr am Kurs teilnehmen.', 'würdet'],
+    ['besuchen', 'inseparable', 'In Berlin ', ' Nora mehrere Museen besuchen.', 'würde'],
+    ['verstehen', 'inseparable', 'Mit einem Beispiel ', ' du die Regel besser verstehen.', 'würdest'],
+    ['erzählen', 'inseparable', 'Vor Freunden ', ' er die Geschichte anders erzählen.', 'würde'],
+    ['bekommen', 'inseparable', 'Mit dem Stipendium ', ' die Studierenden mehr Unterstützung bekommen.', 'würden'],
+    ['entdecken', 'inseparable', 'Bei klarem Himmel ', ' das Team mehr Details entdecken.', 'würde'],
+  ],
+  'konjunktiv-vergangenheit': [
+    ['anrufen', 'separable', 'Mit einem Telefon ', ' ich dich sofort angerufen.', 'hätte'],
+    ['aufpassen', 'separable', 'Mit der Warnung ', ' du besser aufgepasst.', 'hättest'],
+    ['mitkommen', 'separable', 'Bei gutem Wetter ', ' wir mitgekommen.', 'wären'],
+    ['zurückkehren', 'separable', 'Ohne den Sturm ', ' die Schiffe früher zurückgekehrt.', 'wären'],
+    ['einpacken', 'separable', 'Mit mehr Platz ', ' ihr alle Bücher eingepackt.', 'hättet'],
+    ['besuchen', 'inseparable', 'Mit einer Einladung ', ' Nora die Ausstellung besucht.', 'hätte'],
+    ['verstehen', 'inseparable', 'Nach einer Erklärung ', ' er die Aufgabe verstanden.', 'hätte'],
+    ['erzählen', 'inseparable', 'Ohne das Versprechen ', ' ich alles erzählt.', 'hätte'],
+    ['erreichen', 'inseparable', 'Mit dem früheren Zug ', ' sie das Ziel erreicht.', 'hätten'],
+    ['entkommen', 'inseparable', 'Ohne das neue Tor ', ' das Tier entkommen.', 'wäre'],
+  ],
+  imperativ: [
+    ['aufstehen', 'separable', 'Mara, ', ' bitte sofort auf!', 'steh'],
+    ['anrufen', 'separable', 'Paul, ', ' morgen die Ärztin an!', 'ruf'],
+    ['mitbringen', 'separable', 'Kinder, ', ' eure Hefte mit!', 'bringt'],
+    ['vorlesen', 'separable', 'Frau Klein, ', ' Sie den Absatz laut vor!', 'lesen'],
+    ['teilnehmen', 'separable', 'Jonas, ', ' an der Besprechung teil!', 'nimm'],
+    ['besuchen', 'inseparable', 'Mara, ', ' deine Großeltern am Sonntag!', 'besuche'],
+    ['vergessen', 'inseparable', 'Leute, ', ' eure Tickets nicht!', 'vergesst'],
+    ['erklären', 'inseparable', 'Herr Roth, ', ' Sie bitte den nächsten Schritt!', 'erklären'],
+    ['benutzen', 'inseparable', 'Lina, ', ' den hinteren Eingang!', 'benutze'],
+    ['entfernen', 'inseparable', 'Helfer, ', ' alle leeren Kisten!', 'entfernt'],
+  ],
+}
+
+export const GERMAN_SEPARATION_CHALLENGES: SeparationChallenge<GermanFormId>[] = Object.entries(SEPARATION_SEEDS)
+  .flatMap(([form, seeds]) => seeds.map(([verb, separation, before, after, answer], index) => ({
+    id: `de-${form}-separation-${index + 1}`,
+    tense: form as GermanFormId,
+    title: `${verb} · ${index + 1}`,
+    focus: form,
+    verb,
+    separation,
+    segments: [before, after],
+    answers: [answer],
+    explanation: separation === 'separable'
+      ? `„${verb}“ ist trennbar. Achte darauf, wo Vorsilbe und Verbstamm in diesem Satz stehen.`
+      : `„${verb}“ ist untrennbar. Die Vorsilbe bleibt mit dem Verbstamm verbunden.`,
+  })))
 
 type StorySeed = {
   title: string

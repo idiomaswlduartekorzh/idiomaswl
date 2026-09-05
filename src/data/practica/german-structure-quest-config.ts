@@ -9,7 +9,7 @@ import { GERMAN_FUTURE_TWO_EDITORIAL } from './german-future-two-editorial.ts'
 import { GERMAN_WOULD_EDITORIAL } from './german-would-editorial.ts'
 import { GERMAN_UNREAL_PAST_EDITORIAL } from './german-unreal-past-editorial.ts'
 import { GERMAN_IMPERATIVE_EDITORIAL } from './german-imperative-editorial.ts'
-import { GERMAN_FINAL_STORIES } from './german-advanced-editorial.ts'
+import { GERMAN_FINAL_STORIES, GERMAN_SEPARATION_CHALLENGES } from './german-advanced-editorial.ts'
 
 export const GERMAN_FORMS = [
   { id: 'praesens', label: 'Präsens', group: 'Gegenwart' },
@@ -33,7 +33,7 @@ export const GERMAN_EDITORIAL_PACKS = [
 ]
 
 export const GERMAN_STRUCTURE_QUEST: TenseQuestConfig<GermanFormId> = {
-  id: 'german-structure-quest', storageKey: 'wl-german-structure-quest-v6', forms: GERMAN_FORMS,
+  id: 'german-structure-quest', storageKey: 'wl-german-structure-quest-v7', forms: GERMAN_FORMS,
   presets: [
     { label: 'Vergangenheit', ids: GERMAN_FORMS.filter((form) => form.group === 'Vergangenheit').map((form) => form.id) },
     { label: 'Zukunft', ids: GERMAN_FORMS.filter((form) => form.group === 'Zukunft').map((form) => form.id) },
@@ -43,8 +43,8 @@ export const GERMAN_STRUCTURE_QUEST: TenseQuestConfig<GermanFormId> = {
     { number:'01', title:'Schnelle Wahl', short:'Richtig konjugieren', description:'Wähle die passende Konjugation; alle vier Optionen stehen in der ausgewählten Form.' },
     { number:'02', title:'Mikrotexte', short:'Form im Satz bilden', description:'Schreibe genau den fehlenden Teil. Sichtbare trennbare Zusätze bleiben an ihrer Satzposition.' },
     { number:'03', title:'Verbundene Szenen', short:'Drei Entscheidungen', description:'Ergänze drei Formen in einer zusammenhängenden Handlung.' },
-    { number:'04', title:'Korrekturwerkstatt', short:'Finden und reparieren', description:'Finde die einzige falsche Verbgruppe und korrigiere sie.' },
-    { number:'05', title:'Kontextentscheidung', short:'Form im Kontext wählen', description:'Wähle in zehn eigenständigen Situationen die vollständige Verbform, die zu Bedeutung und Satzbau passt.' },
+    { number:'04', title:'Fehler im Text', short:'Selbstständig entdecken', description:'Lies einen längeren Text ohne Markierungen, finde die falsche Verbform und korrigiere sie.' },
+    { number:'05', title:'Trennbar oder untrennbar?', short:'Erkennen und konjugieren', description:'Entscheide, ob das Verb trennbar ist, und schreibe danach die passende Form im Satz.' },
     { number:'06', title:'Lange Geschichte', short:'Alle Formen selbst schreiben', description:'Lies einen zusammenhängenden Text und schreibe jede fehlende Verbgruppe vollständig.' },
   ],
   choiceChallenges: GERMAN_EDITORIAL_PACKS.flatMap((pack) => pack.choices),
@@ -64,6 +64,8 @@ export const GERMAN_STRUCTURE_QUEST: TenseQuestConfig<GermanFormId> = {
     }
   }),
   finalStories: GERMAN_FINAL_STORIES,
+  separationChallenges: GERMAN_SEPARATION_CHALLENGES,
+  errorIdentificationMode: 'write',
   copy: {
     languageName:'Alemán', languageCode:'de', eyebrow:'Quiz de Zeitformen und Satzlogik · A1–B2', title:'Die Zeitwerkstatt',
     lead:'Entrena tiempo, auxiliar, unidad verbal completa, orden sintáctico e hipótesis con diez decisiones reales por nivel.',

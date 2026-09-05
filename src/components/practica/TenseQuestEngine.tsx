@@ -121,6 +121,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     choiceChallenges: allChoiceChallenges,
     copy,
     errorChallenges: allErrorChallenges,
+    errorIdentificationMode = 'select',
     finalChallenges,
     finalStories: allFinalStories = [],
     forms,
@@ -128,6 +129,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     longStories: allLongStories,
     microStories: allMicroStories,
     presets,
+    separationChallenges: allSeparationChallenges = [],
     timelineChallenges: allTimelineChallenges,
   } = config
   const allTenses = forms.map((tense) => tense.id)
@@ -149,6 +151,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   const [summary, setSummary] = useState(false)
   const [bestScores, setBestScores] = useState<Record<string, number>>({})
   const [levelScores, setLevelScores] = useState<Record<string, number>>({})
+  const [reviewMode, setReviewMode] = useState(false)
   const [hydrated, setHydrated] = useState(false)
   const taskHeadingRef = useRef<HTMLHeadingElement>(null)
   const resultHeadingRef = useRef<HTMLHeadingElement>(null)
@@ -163,6 +166,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     }
 
     const url = new URL(window.location.href)
+    const requestedReviewMode = url.searchParams.get('review') === '1'
     const requested = url.searchParams.get('forms')?.split(',') ?? []
     const valid = forms.filter((form) => requested.includes(form.id)).map((form) => form.id)
     const requestedLevel = Number(url.searchParams.get('level')) - 1
@@ -171,7 +175,8 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       : 0
     const attempt = saved.attempt
     const canRestore = Boolean(
-      valid.length
+      !requestedReviewMode
+      && valid.length
       && attempt
       && valid.length === attempt.selectedTenses?.length
       && valid.every((id, index) => attempt.selectedTenses[index] === id),
@@ -188,8 +193,8 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       allMicroStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length,
       allLongStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length,
       allErrorChallenges.filter((challenge) => validSet.has(challenge.tense)).length,
-      allFinalStories.length
-        ? finalChallenges.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tenseId))).length
+      allSeparationChallenges.length
+        ? allSeparationChallenges.filter((challenge) => validSet.has(challenge.tense)).length
         : allTimelineChallenges.filter((challenge) => challenge.slots.some((slot) => validSet.has(slot.tense))).length,
       allFinalStories.length
         ? allFinalStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length
@@ -208,6 +213,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     queueMicrotask(() => {
       if (cancelled) return
       if (saved.bestScores && typeof saved.bestScores === 'object') setBestScores(saved.bestScores)
+      setReviewMode(requestedReviewMode)
       if (saved.levelScores && typeof saved.levelScores === 'object') setLevelScores(saved.levelScores)
       if (valid.length) {
         setDraftTenses(valid)
@@ -238,6 +244,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     allFinalStories,
     allLongStories,
     allMicroStories,
+    allSeparationChallenges,
     allTimelineChallenges,
     config.storageKey,
     finalChallenges,
@@ -271,6 +278,10 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   const timelineChallenges = useMemo(
     () => allTimelineChallenges.filter((challenge) => challenge.slots.some((slot) => selectedSet.has(slot.tense))),
     [allTimelineChallenges, selectedSet],
+  )
+  const separationChallenges = useMemo(
+    () => allSeparationChallenges.filter((challenge) => selectedSet.has(challenge.tense)),
+    [allSeparationChallenges, selectedSet],
   )
   const activeFinalChallenges = useMemo(
     () => finalChallenges.filter((challenge) => challenge.gaps.some((gap) => selectedSet.has(gap.tenseId))),
@@ -362,7 +373,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     microStories.length,
     longStories.length,
     errorChallenges.length,
-    writtenFinalMode ? activeFinalChallenges.length : timelineChallenges.length,
+    allSeparationChallenges.length ? separationChallenges.length : timelineChallenges.length,
     writtenFinalMode ? finalStories.length : activeFinalChallenges.length,
   ]
   const total = levelCounts[activeLevel]
@@ -441,16 +452,21 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
 
     if (activeLevel === 3) {
       const challenge = errorChallenges[index]
-      const correct = response.selectedError === challenge.wrongId && accepts(response.correction ?? '', challenge.answers, copy.languageCode)
+      const wrongForm = challenge.chunks.find((chunk) => chunk.id === challenge.wrongId)?.form ?? ''
+      const identified = errorIdentificationMode === 'write'
+        ? normalize(response.selectedError ?? '', copy.languageCode) === normalize(wrongForm, copy.languageCode)
+        : response.selectedError === challenge.wrongId
+      const correct = identified && accepts(response.correction ?? '', challenge.answers, copy.languageCode)
       return { correct: correct ? 1 : 0, total: 1 }
     }
 
     if (activeLevel === 4) {
-      if (writtenFinalMode) {
-        const targetGaps = finalGapsFor(index)
+      if (allSeparationChallenges.length) {
+        const challenge = separationChallenges[index]
         return {
-          correct: targetGaps.filter((gap) => response.bankAnswers?.[gap.id] === gap.answerCardId).length,
-          total: targetGaps.length,
+          correct: Number(response.choice === challenge.separation)
+            + Number(accepts(response.gapAnswers?.[challenge.id] ?? '', challenge.answers, copy.languageCode)),
+          total: 2,
         }
       }
       const slots = activeTimelineSlots(index)
@@ -483,10 +499,13 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       return activeGaps(challenge).every((gap) => Boolean(gapAnswers[gap.id]?.trim()))
     }
 
-    if (activeLevel === 3) return Boolean(selectedError && correction.trim())
+    if (activeLevel === 3) return Boolean(selectedError.trim() && correction.trim())
 
     if (activeLevel === 4) {
-      if (writtenFinalMode) return finalGaps.every((gap) => Boolean(bankAnswers[gap.id]))
+      if (allSeparationChallenges.length) {
+        const challenge = separationChallenges[itemIndex]
+        return Boolean(choice && gapAnswers[challenge.id]?.trim())
+      }
       return activeTimelineSlots(itemIndex).every((slot) => Boolean(timelineAnswers[slot.id]))
     }
 
@@ -538,6 +557,19 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     setResponses(nextResponses)
     setItemIndex(previousIndex)
     loadResponse(nextResponses[previousIndex], previousIndex)
+  }
+
+  function goForwardForReview() {
+    const nextResponses = { ...responses, [itemIndex]: snapshotResponse() }
+    if (itemIndex < total - 1) {
+      const nextIndex = itemIndex + 1
+      setResponses(nextResponses)
+      setItemIndex(nextIndex)
+      loadResponse(nextResponses[nextIndex], nextIndex)
+      return
+    }
+    const nextLevel = nextAvailableLevel()
+    if (nextLevel >= 0) goToLevel(nextLevel)
   }
 
   function goToLevel(index: number) {
@@ -666,7 +698,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 1) return microStories[index].title
     if (activeLevel === 2) return longStories[index].title
     if (activeLevel === 3) return errorChallenges[index].title
-    if (activeLevel === 4) return writtenFinalMode ? finalChallengeFor(index).title : timelineChallenges[index].title
+    if (activeLevel === 4) return allSeparationChallenges.length ? separationChallenges[index].title : timelineChallenges[index].title
     if (writtenFinalMode) return finalStories[index].title
     return finalChallengeFor(index).title
   }
@@ -676,7 +708,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 1) return microStories[index].explanation
     if (activeLevel === 2) return longStories[index].explanation
     if (activeLevel === 3) return errorChallenges[index].explanation
-    if (activeLevel === 4) return writtenFinalMode ? finalChallengeFor(index).explanation : timelineChallenges[index].explanation
+    if (activeLevel === 4) return allSeparationChallenges.length ? separationChallenges[index].explanation : timelineChallenges[index].explanation
     if (writtenFinalMode) return finalStories[index].explanation
     return finalChallengeFor(index).explanation
   }
@@ -687,9 +719,17 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       const challenge = activeLevel === 1 ? microStories[index] : longStories[index]
       return activeGaps(challenge).map((gap) => `${gap.verb}: ${gap.answers[0]}`).join(' · ')
     }
-    if (activeLevel === 3) return errorChallenges[index].answers[0]
+    if (activeLevel === 3) {
+      const challenge = errorChallenges[index]
+      const wrongForm = challenge.chunks.find((chunk) => chunk.id === challenge.wrongId)?.form ?? ''
+      return errorIdentificationMode === 'write' ? `${wrongForm} → ${challenge.answers[0]}` : challenge.answers[0]
+    }
     if (activeLevel === 4) {
-      if (writtenFinalMode) return finalGapsFor(index).map((gap) => cardText(gap.answerCardId, index)).join(' · ')
+      if (allSeparationChallenges.length) {
+        const challenge = separationChallenges[index]
+        const label = challenge.separation === 'separable' ? 'trennbar' : 'untrennbar'
+        return `${label} · ${challenge.answers[0]}`
+      }
       return activeTimelineSlots(index).map((slot) => slot.answer).join(' · ')
     }
     if (writtenFinalMode) return activeGaps(finalStories[index]).map((gap) => `${gap.verb}: ${gap.answers[0]}`).join(' · ')
@@ -705,9 +745,14 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
         .map((gap) => `${gap.verb}: ${response.gapAnswers?.[gap.id] || '—'}`)
         .join(' · ')
     }
-    if (activeLevel === 3) return response.correction || 'Sin corrección'
+    if (activeLevel === 3) return errorIdentificationMode === 'write'
+      ? `${response.selectedError || '—'} → ${response.correction || '—'}`
+      : response.correction || 'Sin corrección'
     if (activeLevel === 4) {
-      if (writtenFinalMode) return finalGapsFor(index).map((gap) => cardText(response.bankAnswers?.[gap.id], index) || '—').join(' · ')
+      if (allSeparationChallenges.length) {
+        const challenge = separationChallenges[index]
+        return `${response.choice || '—'} · ${response.gapAnswers?.[challenge.id] || '—'}`
+      }
       return activeTimelineSlots(index).map((slot) => response.timelineAnswers?.[slot.id] || '—').join(' · ')
     }
     if (writtenFinalMode) {
@@ -757,36 +802,91 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
 
   function renderErrorHunt() {
     const challenge = errorChallenges[itemIndex]
+    const plainText = challenge.chunks.map((chunk) => chunk.before + chunk.form).join('') + challenge.after
     return (
       <>
         <p className={s.taskInstruction}>{challenge.instruction}</p>
-        <div className={s.errorSentence} lang={copy.languageCode}>
-          {challenge.chunks.map((chunk) => (
-            <Fragment key={chunk.id}>
-              {chunk.before}
-              <button
-                aria-pressed={selectedError === chunk.id}
-                className={`${s.errorToken} ${selectedError === chunk.id ? s.errorTokenSelected : ''}`}
-                onClick={() => setSelectedError(chunk.id)}
-                type="button"
-              >
-                {chunk.form}
-              </button>
-            </Fragment>
-          ))}
-          {challenge.after}
+        {errorIdentificationMode === 'write' ? (
+          <div className={s.errorSentence} lang={copy.languageCode}>{plainText}</div>
+        ) : (
+          <div className={s.errorSentence} lang={copy.languageCode}>
+            {challenge.chunks.map((chunk) => (
+              <Fragment key={chunk.id}>
+                {chunk.before}
+                <button
+                  aria-pressed={selectedError === chunk.id}
+                  className={`${s.errorToken} ${selectedError === chunk.id ? s.errorTokenSelected : ''}`}
+                  onClick={() => setSelectedError(chunk.id)}
+                  type="button"
+                >
+                  {chunk.form}
+                </button>
+              </Fragment>
+            ))}
+            {challenge.after}
+          </div>
+        )}
+        <div className={s.errorInputGrid}>
+          {errorIdentificationMode === 'write' ? (
+            <label className={s.correctionField}>
+              <span>Forma que está mal</span>
+              <input
+                autoComplete="off"
+                name={`${config.id}-identified-error`}
+                onChange={(event) => setSelectedError(event.target.value)}
+                placeholder="Copia únicamente la forma incorrecta…"
+                spellCheck={false}
+                value={selectedError}
+              />
+            </label>
+          ) : null}
+          <label className={s.correctionField}>
+            <span>Forma corregida</span>
+            <input
+              autoComplete="off"
+              name={`${config.id}-correction`}
+              onChange={(event) => setCorrection(event.target.value)}
+              placeholder={selectedError ? 'Escribe la forma corregida…' : 'Primero identifica el verbo…'}
+              spellCheck={false}
+              value={correction}
+            />
+          </label>
         </div>
-        <label className={s.correctionField}>
-          <span>Reescribe el verbo</span>
-          <input
-            autoComplete="off"
-            name={`${config.id}-correction`}
-            onChange={(event) => setCorrection(event.target.value)}
-            placeholder={selectedError ? 'Escribe la forma corregida…' : 'Primero selecciona el verbo…'}
-            spellCheck={false}
-            value={correction}
-          />
-        </label>
+      </>
+    )
+  }
+
+  function renderSeparation() {
+    const challenge = separationChallenges[itemIndex]
+    const gapChallenge: GapChallenge<string> = {
+      id: challenge.id,
+      title: challenge.title,
+      focus: challenge.focus,
+      instruction: '',
+      segments: challenge.segments,
+      gaps: [{ id: challenge.id, tense: challenge.tense, verb: challenge.verb, answers: challenge.answers }],
+      explanation: challenge.explanation,
+    }
+    return (
+      <>
+        <p className={s.taskInstruction}>Entscheide zuerst, ob das Verb trennbar ist. Konjugiere es danach passend zum Satz.</p>
+        <div className={s.separationPanel}>
+          <div lang={copy.languageCode}>
+            <span>Infinitiv</span>
+            <strong>{challenge.verb}</strong>
+          </div>
+          <div aria-label={`Clasifica ${challenge.verb}`} className={s.separationChoices} role="group">
+            <button aria-pressed={choice === 'separable'} onClick={() => setChoice('separable')} type="button">Trennbar</button>
+            <button aria-pressed={choice === 'inseparable'} onClick={() => setChoice('inseparable')} type="button">Untrennbar</button>
+          </div>
+        </div>
+        <GapText
+          activeTenses={selectedSet}
+          answers={gapAnswers}
+          challenge={gapChallenge}
+          languageCode={copy.languageCode}
+          onChange={(id, value) => setGapAnswers((current) => ({ ...current, [id]: value }))}
+        />
       </>
     )
   }
@@ -883,7 +983,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 1) return renderGapLevel(microStories[itemIndex])
     if (activeLevel === 2) return renderGapLevel(longStories[itemIndex])
     if (activeLevel === 3) return renderErrorHunt()
-    if (activeLevel === 4) return writtenFinalMode ? renderFinal() : renderTimeline()
+    if (activeLevel === 4) return allSeparationChallenges.length ? renderSeparation() : renderTimeline()
     if (writtenFinalMode) return renderGapLevel(finalStories[itemIndex])
     return renderFinal()
   }
@@ -898,7 +998,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
         : activeLevel === 3
           ? errorChallenges[itemIndex]?.focus
           : activeLevel === 4
-            ? writtenFinalMode ? finalChallengeFor(itemIndex)?.title : timelineChallenges[itemIndex]?.focus
+            ? allSeparationChallenges.length ? separationChallenges[itemIndex]?.focus : timelineChallenges[itemIndex]?.focus
             : writtenFinalMode
               ? finalStories[itemIndex]?.focus
             : selectedTenses.length === 1 ? '1 forma seleccionada' : `${selectedTenses.length} ${copy.selectedLabel}`
@@ -1150,17 +1250,32 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
 
                   <div className={s.exerciseBody}>{renderCurrentExercise()}</div>
 
-                  <p className={s.deferNote}>
-                    <EyeOff aria-hidden="true" size={16} />
-                    Sin corrección inmediata: tus resultados aparecen al terminar el nivel.
-                  </p>
+                  {reviewMode ? (
+                    <aside className={s.reviewAnswer}>
+                      <span>Respuesta para revisión</span>
+                      <strong lang={copy.languageCode}>{expectedAnswer(itemIndex)}</strong>
+                      <small>{itemExplanation(itemIndex)}</small>
+                    </aside>
+                  ) : (
+                    <p className={s.deferNote}>
+                      <EyeOff aria-hidden="true" size={16} />
+                      Sin corrección inmediata: tus resultados aparecen al terminar el nivel.
+                    </p>
+                  )}
 
                   <div className={s.quizActions}>
                     <button className="wlp-btn wlp-btn--secondary" disabled={itemIndex === 0} onClick={goBack} type="button">
                       <ArrowLeft size={16} /> Anterior
                     </button>
-                    <button className="wlp-btn" disabled={!currentIsComplete()} onClick={submitCurrent} type="button">
-                      {itemIndex === total - 1 ? 'Terminar nivel' : 'Guardar y seguir'} <ArrowRight size={16} />
+                    <button
+                      className="wlp-btn"
+                      disabled={reviewMode ? itemIndex === total - 1 && nextLevel < 0 : !currentIsComplete()}
+                      onClick={reviewMode ? goForwardForReview : submitCurrent}
+                      type="button"
+                    >
+                      {reviewMode
+                        ? itemIndex === total - 1 ? nextLevel >= 0 ? 'Siguiente nivel' : 'Fin de revisión' : 'Siguiente reto'
+                        : itemIndex === total - 1 ? 'Terminar nivel' : 'Guardar y seguir'} <ArrowRight size={16} />
                     </button>
                   </div>
                 </>

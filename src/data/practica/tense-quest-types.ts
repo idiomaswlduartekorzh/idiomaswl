@@ -91,6 +91,18 @@ export type BankChallenge<FormId extends string> = {
   explanation: string
 }
 
+export type SeparationChallenge<FormId extends string> = {
+  id: string
+  tense: FormId
+  title: string
+  focus: string
+  verb: string
+  separation: 'separable' | 'inseparable'
+  segments: [string, string]
+  answers: string[]
+  explanation: string
+}
+
 export type LevelMeta = {
   number: string
   title: string
@@ -129,5 +141,7 @@ export type TenseQuestConfig<FormId extends string> = {
   timelineChallenges: TimelineChallenge<FormId>[]
   finalChallenges: BankChallenge<FormId>[]
   finalStories?: GapChallenge<FormId>[]
+  separationChallenges?: SeparationChallenge<FormId>[]
+  errorIdentificationMode?: 'select' | 'write'
   copy: QuestCopy
 }

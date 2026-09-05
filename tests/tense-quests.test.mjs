@@ -30,9 +30,9 @@ test('multiple-choice answers are balanced across A, B, C and D', () => {
   }
 })
 
-test('error targets are balanced across all three selectable verbs', () => {
+test('error targets are balanced across every presented verb position', () => {
   for (const config of CONFIGS) {
-    const positions = [0, 0, 0]
+    const positions = new Array(Math.max(...config.errorChallenges.map((challenge) => challenge.chunks.length))).fill(0)
     for (const challenge of config.errorChallenges) {
       positions[challenge.chunks.findIndex((chunk) => chunk.id === challenge.wrongId)] += 1
     }
@@ -246,8 +246,11 @@ test('German exposes ten drills per form before a long written final story', () 
     assert.equal(GERMAN_STRUCTURE_QUEST.microStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/micro`)
     assert.equal(GERMAN_STRUCTURE_QUEST.longStories.filter((item) => item.gaps.some((gap) => gap.tense === id)).length, 10, `${id}/long`)
     assert.equal(GERMAN_STRUCTURE_QUEST.errorChallenges.filter((item) => item.tense === id).length, 10, `${id}/error`)
-    assert.equal(GERMAN_STRUCTURE_QUEST.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === id)).length, 10, `${id}/timeline`)
     assert.equal(GERMAN_STRUCTURE_QUEST.finalChallenges.filter((item) => item.gaps.some((gap) => gap.tenseId === id)).length, 10, `${id}/final`)
+    const separation = GERMAN_STRUCTURE_QUEST.separationChallenges?.filter((item) => item.tense === id) ?? []
+    assert.equal(separation.length, 10, `${id}/separation`)
+    assert.equal(separation.filter((item) => item.separation === 'separable').length, 5, `${id}/separable`)
+    assert.equal(separation.filter((item) => item.separation === 'inseparable').length, 5, `${id}/inseparable`)
     const finalStories = GERMAN_STRUCTURE_QUEST.finalStories?.filter((item) => item.gaps.some((gap) => gap.tense === id)) ?? []
     assert.equal(finalStories.length, 1, `${id}/written-final-story`)
     assert.ok(finalStories[0].gaps.length >= 10, `${id}/written-final-story-gaps`)
@@ -359,6 +362,14 @@ test('German level 3 and level 4 use independent sentence banks', () => {
       .join('') + repair.after
     assert.ok(!levelThree.has(normalize(corrected)), repair.id)
   }
+})
+
+test('German level 4 presents five-sentence texts with no selectable verb hints', () => {
+  for (const repair of GERMAN_STRUCTURE_QUEST.errorChallenges) {
+    assert.equal(repair.chunks.length, 5, repair.id)
+    assert.ok(repair.chunks.some((chunk) => chunk.id === repair.wrongId), repair.id)
+  }
+  assert.equal(GERMAN_STRUCTURE_QUEST.errorIdentificationMode, 'write')
 })
 
 test('German final dossiers are autonomous and balance the four answer positions', () => {
