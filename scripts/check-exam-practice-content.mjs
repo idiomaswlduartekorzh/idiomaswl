@@ -361,23 +361,17 @@ function validateIeltsTask2DirectQuestionRoute() {
 function validateToeflAcademicDiscussionRoutes() {
   const guidePath = routeToPagePath('/practica/toefl/writing/academic-discussion');
   const guideText = fs.existsSync(guidePath) ? fs.readFileSync(guidePath, 'utf8') : '';
-  if (!guideText.includes('AcademicDiscussionWorkbench')) {
-    fail('TOEFL Academic Discussion guide must render AcademicDiscussionWorkbench.');
+  if (!guideText.includes('ToeflPracticeSetCatalog')) {
+    fail('TOEFL Academic Discussion must present a practice catalog first.');
   }
-  if (!guideText.includes('TOEFL_ACADEMIC_DISCUSSION_PROMPTS')) {
-    fail('TOEFL Academic Discussion guide must use TOEFL_ACADEMIC_DISCUSSION_PROMPTS.');
+  if (!guideText.includes('Array.from({ length: 20 }')) {
+    fail('TOEFL Academic Discussion must expose all 20 sets.');
   }
-  if (!guideText.includes('/practica/toefl/writing/academic-discussion/banco-de-prompts')) {
-    fail('TOEFL Academic Discussion guide must link to the prompt bank.');
+  if (!guideText.includes('TimedWritingTask')) {
+    fail('TOEFL Academic Discussion must open one timed task after selection.');
   }
-  if (!guideText.includes('Formato oficial vs estrategia WeLearn')) {
-    fail('TOEFL Academic Discussion guide must distinguish official format from WeLearn strategy.');
-  }
-  if (!guideText.includes('ETS_WRITING_URL')) {
-    fail('TOEFL Academic Discussion guide must cite the ETS TOEFL Writing source.');
-  }
-  if (!guideText.includes('Integrated Writing se mantiene como legacy/síntesis complementaria')) {
-    fail('TOEFL Academic Discussion guide must keep Integrated Writing marked as legacy/synthesis.');
+  if (!guideText.includes('taskNumber === 2')) {
+    fail('TOEFL Academic Discussion must select the discussion task from each canonical mock.');
   }
 
   const bankPath = routeToPagePath('/practica/toefl/writing/academic-discussion/banco-de-prompts');
@@ -388,31 +382,22 @@ function validateToeflAcademicDiscussionRoutes() {
   if (!bankText.includes('ACADEMIC_DISCUSSION_PROMPTS')) {
     fail('TOEFL Academic Discussion prompt bank must use ACADEMIC_DISCUSSION_PROMPTS.');
   }
-  if (!bankText.includes('Integrated Writing permanece como ruta legacy/síntesis complementaria')) {
-    fail('TOEFL Academic Discussion prompt bank FAQ must keep Integrated Writing marked as legacy/synthesis.');
-  }
 }
 
 function validateToeflEmailRoutes() {
   const guidePath = routeToPagePath('/practica/toefl/writing/write-an-email');
   const guideText = fs.existsSync(guidePath) ? fs.readFileSync(guidePath, 'utf8') : '';
-  if (!guideText.includes('EmailWritingWorkbench')) {
-    fail('TOEFL Write an Email guide must render EmailWritingWorkbench.');
+  if (!guideText.includes('ToeflPracticeSetCatalog')) {
+    fail('TOEFL Write an Email must present a practice catalog first.');
   }
-  if (!guideText.includes('TOEFL_EMAIL_PROMPTS')) {
-    fail('TOEFL Write an Email guide must use TOEFL_EMAIL_PROMPTS.');
+  if (!guideText.includes('Array.from({ length: 20 }')) {
+    fail('TOEFL Write an Email must expose all 20 sets.');
   }
-  if (!guideText.includes('/practica/toefl/writing/write-an-email/banco-de-prompts')) {
-    fail('TOEFL Write an Email guide must link to the prompt bank.');
+  if (!guideText.includes('TimedWritingTask')) {
+    fail('TOEFL Write an Email must open one timed task after selection.');
   }
-  if (!guideText.includes('Formato oficial vs estrategia WeLearn')) {
-    fail('TOEFL Write an Email guide must distinguish official format from WeLearn strategy.');
-  }
-  if (!guideText.includes('ETS_WRITING_URL')) {
-    fail('TOEFL Write an Email guide must cite the ETS TOEFL Writing source.');
-  }
-  if (!guideText.includes('Integrated Writing se mantiene como legacy/síntesis complementaria')) {
-    fail('TOEFL Write an Email guide must keep Integrated Writing marked as legacy/synthesis.');
+  if (!guideText.includes('taskNumber === 1')) {
+    fail('TOEFL Write an Email must select the email task from each canonical mock.');
   }
 
   const bankPath = routeToPagePath('/practica/toefl/writing/write-an-email/banco-de-prompts');
@@ -423,28 +408,19 @@ function validateToeflEmailRoutes() {
   if (!bankText.includes('EMAIL_PROMPT_BANK')) {
     fail('TOEFL Write an Email prompt bank must use EMAIL_PROMPT_BANK.');
   }
-  if (!bankText.includes('Integrated Writing permanece como ruta legacy/síntesis complementaria')) {
-    fail('TOEFL Write an Email prompt bank FAQ must keep Integrated Writing marked as legacy/synthesis.');
-  }
 }
 
 function validateToeflBuildSentenceRoute() {
   const guidePath = routeToPagePath('/practica/toefl/writing/build-a-sentence');
   const guideText = fs.existsSync(guidePath) ? fs.readFileSync(guidePath, 'utf8') : '';
-  if (!guideText.includes('SentenceBuildWorkbench')) {
-    fail('TOEFL Build a Sentence guide must render SentenceBuildWorkbench.');
+  if (!guideText.includes('ToeflPracticeSetCatalog')) {
+    fail('TOEFL Build a Sentence must present a practice catalog first.');
   }
-  if (!guideText.includes('TOEFL_SENTENCE_BUILD_ITEMS')) {
-    fail('TOEFL Build a Sentence guide must use TOEFL_SENTENCE_BUILD_ITEMS.');
+  if (!guideText.includes('TOEFL_BUILD_SENTENCE_PRACTICE_SETS.map')) {
+    fail('TOEFL Build a Sentence must expose the canonical set catalog.');
   }
-  if (!guideText.includes('TOEFL_BUILD_A_SENTENCE_PROMPT_BANK')) {
-    fail('TOEFL Build a Sentence guide must render TOEFL_BUILD_A_SENTENCE_PROMPT_BANK.');
-  }
-  if (!guideText.includes('Formato oficial vs estrategia WeLearn')) {
-    fail('TOEFL Build a Sentence guide must distinguish official format from WeLearn strategy.');
-  }
-  if (!guideText.includes('Integrated Writing, que aquí se mantiene como síntesis/legacy')) {
-    fail('TOEFL Build a Sentence guide must keep Integrated Writing marked as legacy/synthesis.');
+  if (!guideText.includes('BuildSentenceSet1Practice practice={practice}')) {
+    fail('TOEFL Build a Sentence must open the selected set.');
   }
 }
 
@@ -468,18 +444,18 @@ function validateToeflReadingCurrentFormatRoutes() {
   const currentTaskRoutes = [
     {
       path: '/practica/toefl/reading/formato-2026/complete-the-words',
-      dataExport: 'TOEFL_COMPLETE_WORDS_ITEMS',
-      requiredText: 'Banco inicial: completa cada oración',
+      dataExport: 'TOEFL_COMPLETE_WORDS_PRACTICE_SETS',
+      requiredText: 'CompleteTheWordsPractice practice={practice}',
     },
     {
       path: '/practica/toefl/reading/formato-2026/read-in-daily-life',
-      dataExport: 'TOEFL_DAILY_LIFE_TEXTS',
-      requiredText: 'Banco inicial de textos funcionales',
+      dataExport: 'TOEFL_READING_PRACTICE_SETS',
+      requiredText: 'ReadingPracticeSet',
     },
     {
       path: '/practica/toefl/reading/formato-2026/read-an-academic-passage',
-      dataExport: 'TOEFL_ACADEMIC_PASSAGES',
-      requiredText: 'Banco inicial de pasajes académicos',
+      dataExport: 'TOEFL_READING_PRACTICE_SETS',
+      requiredText: 'ReadingPracticeSet',
     },
   ];
 
@@ -487,15 +463,9 @@ function validateToeflReadingCurrentFormatRoutes() {
     const pagePath = routeToPagePath(route.path);
     const pageText = fs.existsSync(pagePath) ? fs.readFileSync(pagePath, 'utf8') : '';
     if (!pageText.includes(route.dataExport)) fail(`${route.path} must use ${route.dataExport}.`);
-    if (!pageText.includes(route.requiredText)) fail(`${route.path} must render its guided practice bank.`);
-    if (!pageText.includes('Formato oficial vs estrategia WeLearn')) {
-      fail(`${route.path} must distinguish official format from WeLearn strategy.`);
-    }
-    if (!pageText.includes('ETS_TEST_CONTENT_URL')) fail(`${route.path} must cite the ETS TOEFL test content source.`);
-    if (!pageText.includes('Respuestas explicadas')) fail(`${route.path} must render explained answers.`);
-    if (!pageText.includes('/practica/toefl/reading/formato-2026')) {
-      fail(`${route.path} must link back to the current-format hub.`);
-    }
+    if (!pageText.includes(route.requiredText)) fail(`${route.path} must open the selected practice set.`);
+    if (!pageText.includes('ToeflPracticeSetCatalog')) fail(`${route.path} must present the practice catalog before an exercise.`);
+    if (!pageText.includes('practiceSetNumber')) fail(`${route.path} must validate the requested set number.`);
   }
 }
 

@@ -127,6 +127,7 @@ assert.match(client, /buildObjectId/, 'The full mock must submit the Build objec
 assert.match(route, /scoreToeflBuildSentenceAttempt/, 'The scoring route must call the shared exact-order contract.');
 assert.match(route, /TOEFL_BUILD_SENTENCE_SCORING_BY_OBJECT_ID/, 'The scoring route must resolve the server-only key registry.');
 assert.match(practice, /localStorage/, 'The public pilot must persist an anonymous attempt.');
-assert.match(practice, /fallo técnico/, 'Technical scoring failures must not become academic errors.');
+assert.match(practice, /technical error/, 'Technical scoring failures must remain clearly separate from academic errors.');
+assert.match(practice, /practice\.objectId/, 'The standalone runner must score the selected set identity.');
 
 console.log('✓ TOEFL 2026 Build a Sentence Sets 1–20: 200 contextual items, server-only exact scoring, persistence and accessible controls verified.');

@@ -10,8 +10,8 @@ import {
 import ToeflListeningSectionRunner from './ToeflListeningSectionRunner';
 
 export const metadata: Metadata = {
-  title: 'TOEFL Listening — práctica enfocada por set',
-  description: 'Runner de práctica fija TOEFL Listening creado por WeLearn.',
+  title: 'TOEFL Listening — Focused Practice Set',
+  description: 'Fixed TOEFL Listening practice created by WeLearn.',
   robots: { index: false, follow: true },
 };
 

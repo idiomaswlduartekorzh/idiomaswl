@@ -126,7 +126,7 @@ export function ReadingMultiChoiceGroup({
       className={`${styles.group} ${styles.multi}${supplementary ? ` ${styles.supplementary}` : ''}`}
       aria-describedby={`${hintId} ${countId}${limitMessage ? ` ${errorId}` : ''}${outcome ? ` ${resultId}` : ''}`}
     >
-      {supplementary && <p className={styles.badge}>Práctica complementaria WeLearn · fuera de las 5 preguntas del piloto oficial</p>}
+      {supplementary && <p className={styles.badge}>Additional WeLearn practice · reported separately</p>}
       <legend className={styles.legend}><span aria-hidden="true">{number}.</span> {prompt}</legend>
       <p id={hintId} className={styles.hint}>Choose exactly {selectCount} answers. Full credit requires the exact set.</p>
       <p id={countId} className={styles.count} aria-live="polite">Selected {selectedOptionIds.length} of {selectCount}.</p>

@@ -334,6 +334,22 @@
       ],
       "independentReview": true,
       "notes": "Aprobación académica explícita de Zhanna Korzh comunicada por David Duarte mediante la respuesta 'si' a la pregunta completa '¿Confirmas que Zhanna Korzh también aprueba académicamente los candidatos de los Sets 2–20, 646 ítems, sin observaciones?'. Cubre exactamente los 646 ítems del contrato 59438939 y autoriza su importación al runtime conservando claves, IDs, orden, audios y enunciados. No cierra por sí sola la revisión final HR-06 posterior a la importación, no libera C09 y no autoriza integración en main ni despliegue."
+    },
+    {
+      "gateId": "HR-06-POST-IMPORT-PRODUCT",
+      "reviewer": "David Duarte",
+      "role": "chief-executive-officer-and-product-owner",
+      "decision": "changes_requested",
+      "reviewedAtUtc": "2026-09-05T14:48:09Z",
+      "timestampBasis": "Hora de registro; el mensaje humano no incluye una hora propia.",
+      "commitSha": "9efd3c3bf2e3d11eabcd0f1934fbab4d3018c852",
+      "contentDigest": "bc23fa1a03cab7f815838b693703acde5bc4089fb0ba7e0668ecb86d4d461ca5",
+      "contentDigestMethod": "SHA-256 de los bytes del único archivo indicado en evidencePaths.",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr06-runtime-evidence.json"
+      ],
+      "independentReview": false,
+      "notes": "Revisión humana del producto posterior a la importación. David Duarte solicitó reemplazar la IU antigua observada en Bioluminescence y Complete the Words, eliminar lenguaje ambiguo como laboratorio y transferencia, mostrar primero un listado de ejercicios para cada familia, hacer visibles los ejercicios de Listening, presentar Write an Email ejercicio por ejercicio y mantener toda la experiencia de práctica en inglés. Esta decisión rechaza el cierre final de HR-06 sobre el runtime revisado y abre una iteración de interfaz; no revoca las aprobaciones académicas de las opciones Listening ni altera claves, IDs, audios o enunciados. No autoriza integración en main ni despliegue."
     }
   ]
 }

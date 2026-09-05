@@ -14,13 +14,13 @@ import styles from './page.module.css';
 const URL = 'https://www.idiomaswl.com/practica/toefl/listening/simulacros';
 
 export const metadata: Metadata = {
-  title: 'Práctica TOEFL Listening por secciones',
+  title: 'TOEFL Listening Practice Sets',
   description:
-    'Practica TOEFL Listening en un recorrido fijo de WeLearn con audios originales, cuatro familias de tarea y corrección bruta sin puntuación oficial.',
+    'Practice TOEFL Listening with original audio, four current task families, and private raw scoring.',
   alternates: { canonical: URL },
   openGraph: {
-    title: 'Práctica TOEFL Listening por secciones',
-    description: 'Elige un recorrido de Listening con audios originales y corrección privada en servidor.',
+    title: 'TOEFL Listening Practice Sets',
+    description: 'Choose a Listening set with original audio and private server-side scoring.',
     url: URL,
     type: 'website',
     locale: 'es_CO',
@@ -29,19 +29,19 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: '¿Esta práctica de Listening es adaptativa?',
+    question: 'Is this Listening practice adaptive?',
     answer:
-      'No. Cada recorrido es fijo y usa el subconjunto Listening del set correspondiente en los simulacros completos de WeLearn.',
+      'No. Each exercise follows a fixed path and uses the Listening content from the corresponding WeLearn set.',
   },
   {
-    question: '¿Recibo una puntuación oficial del TOEFL?',
+    question: 'Will I receive an official TOEFL score?',
     answer:
-      'No. Al terminar ves aciertos brutos de esta práctica. WeLearn no calcula banda ETS, overall ni equivalencias de admisión.',
+      'No. You will see the number of correct answers in this practice. WeLearn does not calculate an ETS score or admission equivalency.',
   },
   {
-    question: '¿Puedo volver a escuchar los audios?',
+    question: 'Can I replay the audio?',
     answer:
-      'Cada audio se reproduce una vez dentro del intento. Si deseas repetir todo el recorrido, puedes iniciar un intento nuevo al terminar.',
+      'Each audio plays once during an attempt. You can start a new attempt after completing the set.',
   },
 ];
 
@@ -60,9 +60,9 @@ export default function ToeflListeningLibraryPage() {
   return (
     <>
       <LearningResourceJsonLd
-        name="Práctica TOEFL Listening por secciones"
+        name="TOEFL Listening Practice Sets"
         url={URL}
-        description="Biblioteca seccional de práctica fija TOEFL Listening creada por WeLearn."
+        description="Fixed TOEFL Listening practice library created by WeLearn."
         teaches={tasks}
         isPartOf={{
           name: 'TOEFL Listening Practice',
@@ -71,11 +71,11 @@ export default function ToeflListeningLibraryPage() {
       />
       <BreadcrumbJsonLd
         items={[
-          { name: 'Práctica', url: 'https://www.idiomaswl.com/practica' },
+          { name: 'Practice', url: 'https://www.idiomaswl.com/practica' },
           { name: 'TOEFL', url: 'https://www.idiomaswl.com/practica/toefl' },
-          { name: 'Ejercicios', url: 'https://www.idiomaswl.com/practica/toefl/ejercicios' },
+          { name: 'Exercises', url: 'https://www.idiomaswl.com/practica/toefl/ejercicios' },
           { name: 'Listening', url: 'https://www.idiomaswl.com/practica/toefl/listening' },
-          { name: 'Simulacros seccionales', url: URL },
+          { name: 'Listening sets', url: URL },
         ]}
       />
       <FaqJsonLd faqs={faqs} />
@@ -84,25 +84,24 @@ export default function ToeflListeningLibraryPage() {
         <header className={styles.hero}>
           <div className="wrap">
             <nav className={styles.breadcrumb} aria-label="Breadcrumb">
-              <Link href="/practica/toefl/ejercicios">Ejercicios</Link>
+              <Link href="/practica/toefl/ejercicios">Exercises</Link>
               <span aria-hidden="true">›</span>
               <Link href="/practica/toefl/listening">Listening</Link>
               <span aria-hidden="true">›</span>
-              <span>Práctica por sets</span>
+              <span>Practice sets</span>
             </nav>
             <div className={styles.heroGrid}>
               <div>
-                <p className={styles.kicker}>TOEFL Listening · práctica enfocada</p>
-                <h1>Elige un set. Entrena solo Listening.</h1>
+                <p className={styles.kicker}>TOEFL Listening · focused practice</p>
+                <h1>Choose a set. Practice Listening.</h1>
                 <p className={styles.lead}>
-                  Cada recorrido toma únicamente los bloques Listening de su simulacro completo. Conserva los mismos
-                  IDs, audios y corrección privada sin copiar el banco.
+                  Each exercise contains the four Listening task families from one WeLearn set. The exercise opens only after you choose it.
                 </p>
               </div>
               <aside className={styles.scopeNote}>
                 <Radio aria-hidden="true" />
-                <strong>Colección fija WeLearn</strong>
-                <p>Cada set es independiente. Ninguno reproduce el enrutamiento adaptativo ni genera una puntuación oficial.</p>
+                <strong>Fixed WeLearn collection</strong>
+                <p>Each set is independent. It does not reproduce adaptive routing or generate an official TOEFL score.</p>
               </aside>
             </div>
           </div>
@@ -111,15 +110,15 @@ export default function ToeflListeningLibraryPage() {
         <section className={styles.library} aria-labelledby="listening-library-heading">
           <div className="wrap">
             <div className={styles.sectionHeading}>
-              <p>Biblioteca Listening</p>
-              <h2 id="listening-library-heading">20 recorridos para practicar por set</h2>
-              <span>Elige cualquiera. Puedes completar sus cuatro familias en una sesión o continuar luego en este navegador.</span>
+              <p>Listening library</p>
+              <h2 id="listening-library-heading">20 Listening sets</h2>
+              <span>Choose any set. You can complete all four task families now or continue later in this browser.</span>
             </div>
 
             <aside className={styles.taskKey} aria-labelledby="listening-task-key">
               <div>
                 <Headphones aria-hidden="true" />
-                <strong id="listening-task-key">Qué encuentras en cada set</strong>
+                <strong id="listening-task-key">Included in every set</strong>
               </div>
               <ul>
                 {tasks.map((task) => <li key={task}>{task}</li>)}
@@ -137,13 +136,13 @@ export default function ToeflListeningLibraryPage() {
                         <p>TOEFL Listening</p>
                         <h3>Set {setNumber}</h3>
                       </div>
-                      <span className={styles.status}>Disponible</span>
+                      <span className={styles.status}>Available</span>
                     </div>
-                    <p className={styles.setSummary}>Recorrido fijo con progreso guardado en este navegador.</p>
+                    <p className={styles.setSummary}>Fixed exercise with progress saved in this browser.</p>
                     <div className={styles.setFooter}>
-                      <p><LockKeyhole aria-hidden="true" /> Corrección privada</p>
+                      <p><LockKeyhole aria-hidden="true" /> Private scoring</p>
                       <Link href={`/practica/toefl/listening/simulacros/practica/${mockId}`}>
-                        Iniciar Set {setNumber} <ArrowRight aria-hidden="true" />
+                        Open Set {setNumber} <ArrowRight aria-hidden="true" />
                       </Link>
                     </div>
                   </article>
@@ -155,8 +154,8 @@ export default function ToeflListeningLibraryPage() {
 
         <section className={styles.faq} aria-labelledby="listening-library-faq">
           <div className="wrap">
-            <p className={styles.kicker}>Antes de comenzar</p>
-            <h2 id="listening-library-faq">Cómo funciona esta práctica</h2>
+            <p className={styles.kicker}>Before you begin</p>
+            <h2 id="listening-library-faq">How this practice works</h2>
             <div>
               {faqs.map((faq) => (
                 <details key={faq.question}>

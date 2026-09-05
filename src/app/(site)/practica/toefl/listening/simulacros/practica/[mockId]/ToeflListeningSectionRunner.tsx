@@ -246,27 +246,26 @@ export default function ToeflListeningSectionRunner({
       <div className={styles.shell}>
         <section className={styles.intro} aria-labelledby="listening-runner-title">
           <p className={styles.kicker}>TOEFL Listening · {setLabel}</p>
-          <h1 id="listening-runner-title">Una sesión enfocada. Solo Listening.</h1>
+          <h1 id="listening-runner-title">One focused Listening session.</h1>
           <p className={styles.lead}>
-            Escucharás cada audio una vez y avanzarás sin volver a bloques anteriores. Tus respuestas se corrigen con
-            claves privadas en el servidor; no se calcula una puntuación oficial.
+            You will hear each audio once and move forward without returning to earlier blocks. Answers are scored with private server-side keys. No official TOEFL score is calculated.
           </p>
           <div className={styles.introGrid}>
             <article>
               <Headphones aria-hidden="true" />
-              <strong>Cuatro familias</strong>
-              <span>Respuestas, conversaciones, anuncios y charlas académicas.</span>
+              <strong>Four task families</strong>
+              <span>Responses, conversations, announcements, and academic talks.</span>
             </article>
             <article>
               <ShieldCheck aria-hidden="true" />
-              <strong>Banco único</strong>
-              <span>Este recorrido proyecta el mismo {setLabel} del simulacro completo.</span>
+              <strong>One source set</strong>
+              <span>This exercise uses the same {setLabel} content as the full mock.</span>
             </article>
           </div>
-          <p className={styles.disclosure}>{practice.disclosure}</p>
+          <p className={styles.disclosure}>Fixed WeLearn practice. It does not reproduce adaptive routing or official TOEFL scoring.</p>
           <div className={styles.actions}>
-            <button type="button" onClick={begin} disabled={!hydrated}>Iniciar práctica <ArrowRight aria-hidden="true" /></button>
-            <Link href="/practica/toefl/listening/simulacros">Volver a la biblioteca</Link>
+            <button type="button" onClick={begin} disabled={!hydrated}>Start practice <ArrowRight aria-hidden="true" /></button>
+            <Link href="/practica/toefl/listening/simulacros">Back to the library</Link>
           </div>
         </section>
       </div>
@@ -278,11 +277,11 @@ export default function ToeflListeningSectionRunner({
     return (
       <div className={styles.shell}>
         <section className={styles.results} aria-labelledby="listening-result-title">
-          <p className={styles.kicker}>Resultado de práctica fija</p>
+          <p className={styles.kicker}>Practice result</p>
           <CheckCircle2 className={styles.resultIcon} aria-hidden="true" />
-          <h1 id="listening-result-title">Completaste Listening {setLabel}.</h1>
-          <p className={styles.rawScore}>{result.correct}/{result.denominator} aciertos de práctica</p>
-          <p className={styles.disclosure}>{result.disclosure} No es una banda, overall ni equivalencia ETS.</p>
+          <h1 id="listening-result-title">You completed Listening {setLabel}.</h1>
+          <p className={styles.rawScore}>{result.correct}/{result.denominator} correct</p>
+          <p className={styles.disclosure}>This practice result is not an official TOEFL score or admission equivalency.</p>
           <div className={styles.breakdown}>
             {breakdown.map((entry) => (
               <article key={entry.task}>
@@ -292,9 +291,9 @@ export default function ToeflListeningSectionRunner({
             ))}
           </div>
           <div className={styles.actions}>
-            <button type="button" onClick={reset}><RotateCcw aria-hidden="true" /> Repetir {setLabel}</button>
-            <Link href="/practica/toefl/ejercicios#listening">Reforzar por tipo de ejercicio</Link>
-            <Link href="/examenes/toefl#practica">Hacer un simulacro completo</Link>
+            <button type="button" onClick={reset}><RotateCcw aria-hidden="true" /> Repeat {setLabel}</button>
+            <Link href="/practica/toefl/listening/simulacros">Choose another set</Link>
+            <Link href="/examenes/toefl#practica">Open a full mock</Link>
           </div>
         </section>
       </div>
@@ -311,7 +310,7 @@ export default function ToeflListeningSectionRunner({
           <strong>{activeFrame.label}</strong>
         </div>
         <div className={styles.progressCopy} aria-live="polite">
-          Paso {frameIndex + 1} de {frames.length}
+          Step {frameIndex + 1} of {frames.length}
         </div>
         <div className={styles.progressTrack} aria-hidden="true">
           <span style={{ width: `${((frameIndex + 1) / frames.length) * 100}%` }} />
@@ -329,7 +328,7 @@ export default function ToeflListeningSectionRunner({
           <AudioPlayer
             key={`${activeFrame.id}:${audioRetryNonce}`}
             src={activeFrame.audioUrl}
-            label="Audio de práctica · reproducción única"
+            label="Practice audio · plays once"
             alreadyPlayed={completedMediaIds.includes(activeFrame.mediaId)}
             onPlaybackStart={() => {
               setAudioError(false);
@@ -343,12 +342,12 @@ export default function ToeflListeningSectionRunner({
             }}
           />
           {!activeFrame.audioUrl && (
-            <p className={styles.error} role="alert">El audio no está disponible. Este bloque permanece cerrado.</p>
+            <p className={styles.error} role="alert">Audio is unavailable. This block remains closed.</p>
           )}
           {audioError && (
             <p className={styles.error} role="alert">
               <AlertTriangle aria-hidden="true" />
-              <span>No pudimos reproducir el audio. Comprueba la conexión.</span>
+              <span>We could not play the audio. Check your connection.</span>
               <button
                 type="button"
                 onClick={() => {
@@ -356,12 +355,12 @@ export default function ToeflListeningSectionRunner({
                   setAudioRetryNonce((nonce) => nonce + 1);
                 }}
               >
-                Reintentar audio
+                Retry audio
               </button>
             </p>
           )}
           {!audioCompleted && !audioError && (
-            <p className={styles.audioHint} role="status">Las opciones se habilitan cuando termina el audio.</p>
+            <p className={styles.audioHint} role="status">Answer choices unlock when the audio ends.</p>
           )}
         </div>
 
@@ -369,7 +368,7 @@ export default function ToeflListeningSectionRunner({
           {activeFrame.questions.map((question, questionIndex) => (
             <fieldset key={question.id} disabled={!audioCompleted}>
               <legend>
-                <span>Pregunta {questionIndex + 1}</span>
+                <span>Question {questionIndex + 1}</span>
                 {question.text}
               </legend>
               <div>
@@ -397,27 +396,27 @@ export default function ToeflListeningSectionRunner({
 
         {confirmAdvance && (
           <div className={styles.confirmation} role="alert">
-            <strong>{missingResponses === 1 ? 'Falta una respuesta.' : `Faltan ${missingResponses} respuestas.`}</strong>
-            <p>Si continúas, quedarán como no respondidas y no podrás volver a este bloque.</p>
-            <button type="button" onClick={advance}>Continuar sin responder</button>
-            <button type="button" onClick={() => setConfirmAdvance(false)}>Revisar este bloque</button>
+            <strong>{missingResponses === 1 ? 'One answer is missing.' : `${missingResponses} answers are missing.`}</strong>
+            <p>If you continue, they will remain unanswered and you cannot return to this block.</p>
+            <button type="button" onClick={advance}>Continue without answering</button>
+            <button type="button" onClick={() => setConfirmAdvance(false)}>Review this block</button>
           </div>
         )}
 
         {scoringError && (
           <div className={styles.error} role="alert">
-            <AlertTriangle aria-hidden="true" /> La corrección no respondió. Tus respuestas siguen guardadas; intenta finalizar otra vez.
+            <AlertTriangle aria-hidden="true" /> Scoring did not respond. Your answers are saved; please try again.
           </div>
         )}
 
         <footer className={styles.runnerFooter}>
-          <p>{answeredInFrame} de {activeFrame.questions.length} respondidas en este bloque</p>
+          <p>{answeredInFrame} of {activeFrame.questions.length} answered in this block</p>
           <button type="button" onClick={advance} disabled={!audioCompleted || phase === 'scoring'}>
             {phase === 'scoring'
-              ? 'Corrigiendo…'
+              ? 'Checking…'
               : frameIndex === frames.length - 1
-                ? 'Finalizar y corregir'
-                : 'Cerrar bloque y continuar'}
+                ? 'Submit answers'
+                : 'Continue to next block'}
             {phase !== 'scoring' && <ArrowRight aria-hidden="true" />}
           </button>
         </footer>

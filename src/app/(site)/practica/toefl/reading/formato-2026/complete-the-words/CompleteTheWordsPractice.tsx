@@ -1,15 +1,18 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import {
-  TOEFL_CTW_SET1_V3,
-  type CompleteWordsScoreResult,
-} from '@/data/toefl/complete-the-words-set-1';
+import type { CompleteWordsScoreResult } from '@/data/toefl/complete-the-words-set-1';
 import { validateMissingLetters } from '@/lib/toefl/complete-words-contract';
 import styles from './complete-the-words.module.css';
 
-const STORAGE_KEY = 'wl:toefl:ctw:t1-r-cw2-v3:v1';
-const HISTORY_KEY = 'wl:toefl:ctw:t1-r-cw2-v3:history:v1';
+type CompleteWordsPracticeSet = {
+  id: string;
+  objectId: string;
+  title: string;
+  instructions: string;
+  template: string;
+  blanks: readonly { id: string; num: number; prefix: string; missingLength: number }[];
+};
 
 interface LocalAttempt {
   version: 1;
@@ -27,9 +30,9 @@ function createId(prefix: string) {
   return `${prefix}:${id}`;
 }
 
-function readAttempt(): LocalAttempt | null {
+function readAttempt(storageKey: string): LocalAttempt | null {
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const raw = window.localStorage.getItem(storageKey);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as Partial<LocalAttempt>;
     if (parsed.version !== 1 || typeof parsed.attemptId !== 'string' || !parsed.values || typeof parsed.values !== 'object') return null;
@@ -39,36 +42,38 @@ function readAttempt(): LocalAttempt | null {
   }
 }
 
-function writeAttempt(attempt: LocalAttempt) {
+function writeAttempt(storageKey: string, attempt: LocalAttempt) {
   try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(attempt));
+    window.localStorage.setItem(storageKey, JSON.stringify(attempt));
   } catch {
     // Anonymous practice remains usable when local storage is unavailable.
   }
 }
 
-function archiveAttempt(attempt: LocalAttempt) {
+function archiveAttempt(historyKey: string, attempt: LocalAttempt) {
   if (!attempt.result) return;
   try {
-    const current = JSON.parse(window.localStorage.getItem(HISTORY_KEY) ?? '[]') as LocalAttempt[];
+    const current = JSON.parse(window.localStorage.getItem(historyKey) ?? '[]') as LocalAttempt[];
     if (current.some((item) => item.attemptId === attempt.attemptId)) return;
-    window.localStorage.setItem(HISTORY_KEY, JSON.stringify([...current.slice(-9), attempt]));
+    window.localStorage.setItem(historyKey, JSON.stringify([...current.slice(-9), attempt]));
   } catch {
     // History is optional and local only.
   }
 }
 
 function outcomeLabel(outcome: CompleteWordsScoreResult['outcomes'][number]) {
-  if (outcome.outcome === 'scored') return 'Correcta';
-  if (outcome.outcome === 'mismatch') return 'No coincide';
-  if (outcome.outcome === 'unanswered') return 'Sin responder';
-  if (outcome.outcome === 'invalid_input') return 'Entrada no válida';
-  if (outcome.outcome === 'technical_failure') return 'Fallo técnico, no puntuado';
-  if (outcome.outcome === 'invalidated') return 'Ítem invalidado, no puntuado';
-  return 'No presentado, fuera del denominador';
+  if (outcome.outcome === 'scored') return 'Correct';
+  if (outcome.outcome === 'mismatch') return 'Incorrect';
+  if (outcome.outcome === 'unanswered') return 'Unanswered';
+  if (outcome.outcome === 'invalid_input') return 'Invalid entry';
+  if (outcome.outcome === 'technical_failure') return 'Technical failure, not scored';
+  if (outcome.outcome === 'invalidated') return 'Invalidated item, not scored';
+  return 'Not presented';
 }
 
-export default function CompleteTheWordsPractice() {
+export default function CompleteTheWordsPractice({ practice, setNumber }: { practice: CompleteWordsPracticeSet; setNumber: number }) {
+  const storageKey = `wl:toefl:ctw:${practice.id}:v1`;
+  const historyKey = `wl:toefl:ctw:${practice.id}:history:v1`;
   const [attemptId, setAttemptId] = useState('');
   const [closeId, setCloseId] = useState<string>();
   const [values, setValues] = useState<Record<string, string>>({});
@@ -80,7 +85,7 @@ export default function CompleteTheWordsPractice() {
   const resultRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const saved = readAttempt();
+    const saved = readAttempt(storageKey);
     const frame = window.requestAnimationFrame(() => {
       if (saved) {
         setAttemptId(saved.attemptId);
@@ -97,30 +102,30 @@ export default function CompleteTheWordsPractice() {
       setHydrated(true);
     });
     return () => window.cancelAnimationFrame(frame);
-  }, []);
+  }, [storageKey]);
 
   useEffect(() => {
     if (!hydrated || !attemptId) return;
-    writeAttempt({ version: 1, attemptId, closeId, values, lastFocusId, result });
-  }, [attemptId, closeId, hydrated, lastFocusId, result, values]);
+    writeAttempt(storageKey, { version: 1, attemptId, closeId, values, lastFocusId, result });
+  }, [attemptId, closeId, hydrated, lastFocusId, result, storageKey, values]);
 
   useEffect(() => {
     if (result) resultRef.current?.focus();
   }, [result]);
 
   const blanksByNumber = useMemo(
-    () => Object.fromEntries(TOEFL_CTW_SET1_V3.blanks.map((blank) => [blank.num, blank])),
-    [],
+    () => Object.fromEntries(practice.blanks.map((blank) => [blank.num, blank])),
+    [practice.blanks],
   );
-  const parts = useMemo(() => TOEFL_CTW_SET1_V3.template.split(/(\{\{\d+\}\})/), []);
-  const filled = TOEFL_CTW_SET1_V3.blanks.filter((blank) => (values[blank.id] ?? '').trim()).length;
+  const parts = useMemo(() => practice.template.split(/(\{\{\d+\}\})/), [practice.template]);
+  const filled = practice.blanks.filter((blank) => (values[blank.id] ?? '').trim()).length;
 
   function inputError(blankId: string, missingLength: number) {
     const value = values[blankId] ?? '';
     if (!value) return '';
     const validation = validateMissingLetters(value, missingLength);
     if (validation.valid || validation.reason === 'length') return '';
-    return 'Usa únicamente letras de la A a la Z, sin espacios internos, números ni puntuación.';
+    return 'Use only letters A–Z. Do not enter spaces, numbers, or punctuation.';
   }
 
   async function closeBlock() {
@@ -134,11 +139,11 @@ export default function CompleteTheWordsPractice() {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
-          objectId: TOEFL_CTW_SET1_V3.objectId,
+          objectId: practice.objectId,
           attemptId,
           closeId: stableCloseId,
           responses: values,
-          presentedBlankIds: TOEFL_CTW_SET1_V3.blanks.map((blank) => blank.id),
+          presentedBlankIds: practice.blanks.map((blank) => blank.id),
         }),
       });
       if (!response.ok) throw new Error('score_unavailable');
@@ -152,7 +157,7 @@ export default function CompleteTheWordsPractice() {
   }
 
   function startNewAttempt() {
-    archiveAttempt({ version: 1, attemptId, closeId, values, lastFocusId, result });
+    archiveAttempt(historyKey, { version: 1, attemptId, closeId, values, lastFocusId, result });
     const nextAttemptId = createId('attempt');
     setAttemptId(nextAttemptId);
     setCloseId(undefined);
@@ -160,33 +165,33 @@ export default function CompleteTheWordsPractice() {
     setLastFocusId(undefined);
     setResult(undefined);
     setTechnicalError(false);
-    try { window.localStorage.removeItem(STORAGE_KEY); } catch { /* local-only reset */ }
-    window.requestAnimationFrame(() => document.getElementById(`${TOEFL_CTW_SET1_V3.id}-blank-1`)?.focus());
+    try { window.localStorage.removeItem(storageKey); } catch { /* local-only reset */ }
+    window.requestAnimationFrame(() => document.getElementById(`${practice.id}-blank-1`)?.focus());
   }
 
   return (
-    <section className={styles.practice} aria-labelledby="ctw-practice-title" data-object-id={TOEFL_CTW_SET1_V3.objectId}>
+    <section className={styles.practice} aria-labelledby="ctw-practice-title" data-object-id={practice.objectId}>
       <div className={styles.practiceHeader}>
         <div>
-          <p className={styles.kicker}>Práctica A · interacción parcial WeLearn</p>
-          <h2 id="ctw-practice-title">Completa las letras que faltan</h2>
+          <p className={styles.kicker}>Set {setNumber} · Complete the Words</p>
+          <h2 id="ctw-practice-title">Complete the missing letters</h2>
         </div>
-        <span className={styles.progress} aria-label={`${filled} de 10 respuestas iniciadas`}>{filled}/10</span>
+        <span className={styles.progress} aria-label={`${filled} of ${practice.blanks.length} answers started`}>{filled}/{practice.blanks.length}</span>
       </div>
 
-      <p className={styles.instructions}>{TOEFL_CTW_SET1_V3.instructions}</p>
+      <p className={styles.instructions}>{practice.instructions}</p>
       <p className={styles.disclosure}>
-        Esta práctica fija reproduce la mecánica de letras faltantes, no la adaptación ni la puntuación oficial del TOEFL. Tu intento se conserva solo en este navegador; no se envía a una cuenta ni se guarda en el servidor.
+        This fixed WeLearn exercise practices the missing-letter interaction. It does not reproduce TOEFL adaptive routing or official scoring. Your attempt stays in this browser.
       </p>
 
-      <h3 className={styles.passageTitle}>{TOEFL_CTW_SET1_V3.title}</h3>
+      <h3 className={styles.passageTitle}>{practice.title}</h3>
       <div className={styles.passage} lang="en">
         {parts.map((part, index) => {
           const marker = part.match(/^\{\{(\d+)\}\}$/);
           if (!marker) return <span key={index}>{part}</span>;
           const num = Number(marker[1]);
           const blank = blanksByNumber[num];
-          const inputId = `${TOEFL_CTW_SET1_V3.id}-blank-${num}`;
+          const inputId = `${practice.id}-blank-${num}`;
           const error = inputError(blank.id, blank.missingLength);
           const itemOutcome = result?.outcomes.find((item) => item.blankId === blank.id);
           return (
@@ -232,21 +237,21 @@ export default function CompleteTheWordsPractice() {
       {!result ? (
         <div className={styles.actions}>
           <button type="button" className="btn" onClick={closeBlock} disabled={!hydrated || !attemptId || submitting}>
-            {submitting ? 'Comprobando…' : 'Cerrar bloque y comprobar'}
+            {submitting ? 'Checking…' : 'Submit answers'}
           </button>
-          <span className={styles.actionHint}>{10 - filled} por completar; los vacíos contarán como sin responder.</span>
+          <span className={styles.actionHint}>{practice.blanks.length - filled} remaining. Empty fields count as unanswered.</span>
         </div>
       ) : (
         <div ref={resultRef} tabIndex={-1} className={styles.result} role="status" aria-live="polite">
-          <p className={styles.resultLabel}>Resultado de esta práctica</p>
+          <p className={styles.resultLabel}>Exercise result</p>
           <strong>{result.correct}/{result.denominator}</strong>
-          <p>{result.disclosure}</p>
-          <button type="button" className="btn btn-ghost btn-sm" onClick={startNewAttempt}>Empezar otro intento</button>
+          <p>This result is for local practice and is not an official TOEFL score.</p>
+          <button type="button" className="btn btn-ghost btn-sm" onClick={startNewAttempt}>Try again</button>
         </div>
       )}
 
       <div className={styles.live} role="status" aria-live="polite">
-        {technicalError ? 'No pudimos corregir el bloque por un fallo técnico. Ninguna respuesta se contó como error académico; conserva tus respuestas e inténtalo de nuevo.' : ''}
+        {technicalError ? 'We could not score this exercise because of a technical error. Your answers are still saved. Please try again.' : ''}
       </div>
     </section>
   );

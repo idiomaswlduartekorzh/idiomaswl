@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { TOEFL_BUILD_SENTENCE_SET1 } from '@/data/toefl/build-sentence-set-1';
+import type { ToeflBuildSentenceItem } from '@/data/toefl/build-sentence-set-1';
 import type { ToeflBuildSentenceScoreResult } from '@/lib/toefl/build-sentence-contract';
 import BuildSentenceItem from './BuildSentenceItem';
 import styles from './BuildSentenceSet1.module.css';
@@ -16,6 +16,12 @@ interface SavedAttempt {
   lastFocusId?: string;
 }
 
+type BuildSentencePracticeSet = {
+  id: string;
+  objectId: string;
+  items: readonly ToeflBuildSentenceItem[];
+};
+
 function createClientId(prefix: string) {
   const value = typeof crypto !== 'undefined' && 'randomUUID' in crypto
     ? crypto.randomUUID()
@@ -23,8 +29,8 @@ function createClientId(prefix: string) {
   return `${prefix}:${value}`;
 }
 
-export default function BuildSentenceSet1Practice() {
-  const storageKey = 'wl:toefl:build-sentence:set1:attempt:v1';
+export default function BuildSentenceSet1Practice({ practice, setNumber }: { practice: BuildSentencePracticeSet; setNumber: number }) {
+  const storageKey = `wl:toefl:build-sentence:set${setNumber}:attempt:v1`;
   const [attemptId, setAttemptId] = useState('');
   const [answers, setAnswers] = useState<Answers>({});
   const [result, setResult] = useState<ToeflBuildSentenceScoreResult>();
@@ -55,7 +61,7 @@ export default function BuildSentenceSet1Practice() {
       setHydrated(true);
     });
     return () => window.cancelAnimationFrame(frame);
-  }, []);
+  }, [storageKey]);
 
   useEffect(() => {
     if (!hydrated || !attemptId) return;
@@ -65,7 +71,7 @@ export default function BuildSentenceSet1Practice() {
     } catch {
       // Anonymous practice remains usable without local storage.
     }
-  }, [answers, attemptId, hydrated, lastFocusId, result]);
+  }, [answers, attemptId, hydrated, lastFocusId, result, storageKey]);
 
   async function submit() {
     if (submitting || !attemptId) return;
@@ -76,11 +82,11 @@ export default function BuildSentenceSet1Practice() {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
-          objectId: TOEFL_BUILD_SENTENCE_SET1.objectId,
+          objectId: practice.objectId,
           attemptId,
-          closeId: `close:${attemptId}:build-sentence-set1`,
+          closeId: `close:${attemptId}:build-sentence-set${setNumber}`,
           responses: answers,
-          presentedItemIds: TOEFL_BUILD_SENTENCE_SET1.items.map((item) => item.id),
+          presentedItemIds: practice.items.map((item) => item.id),
         }),
       });
       if (!response.ok) throw new Error('build_sentence_scoring_unavailable');
@@ -101,17 +107,17 @@ export default function BuildSentenceSet1Practice() {
     setTechnicalError(false);
   }
 
-  const complete = TOEFL_BUILD_SENTENCE_SET1.items.filter((item) => (answers[item.id] ?? []).length === item.blankCount).length;
+  const complete = practice.items.filter((item) => (answers[item.id] ?? []).length === item.blankCount).length;
   return (
     <section className={styles.shell} aria-labelledby="build-sentence-set1-title">
       <div className={styles.header}>
-        <h2 id="build-sentence-set1-title">Piloto Set 1 · 10 Build a Sentence</h2>
-        <p>{TOEFL_BUILD_SENTENCE_SET1.disclosure}</p>
-        <p className={styles.disclosure}>{TOEFL_BUILD_SENTENCE_SET1.interactionDisclosure}</p>
+        <p className={styles.disclosure}>Set {setNumber} · {practice.items.length} exercises</p>
+        <h2 id="build-sentence-set1-title">Build a Sentence</h2>
+        <p>Arrange the fragments to form a complete, grammatical response. One fragment is not used.</p>
       </div>
 
       <div className={styles.items}>
-        {TOEFL_BUILD_SENTENCE_SET1.items.map((item, index) => (
+        {practice.items.map((item, index) => (
           <BuildSentenceItem
             key={item.id}
             item={item}
@@ -129,22 +135,22 @@ export default function BuildSentenceSet1Practice() {
 
       {technicalError && (
         <div className={styles.technical} role="status" aria-live="polite">
-          No pudimos corregir por un fallo técnico. Tus órdenes siguen guardados y no se convirtieron en errores académicos. Intenta finalizar otra vez.
+          We could not score this exercise because of a technical error. Your answers are still saved. Please try again.
         </div>
       )}
 
       {result ? (
         <div className={styles.summary} role="status" aria-live="polite">
-          <h3>Resultado de práctica</h3>
-          <p><strong>{result.correct} de {result.denominator}</strong> órdenes correctos.</p>
-          <p className={styles.disclosure}>Corrección local fija; no equivale a una puntuación oficial de ETS.</p>
-          <button type="button" className="btn btn-ghost btn-sm" onClick={retry}>Intentar de nuevo</button>
+          <h3>Exercise result</h3>
+          <p><strong>{result.correct} of {result.denominator}</strong> sentences correct.</p>
+          <p className={styles.disclosure}>This local result is not an official TOEFL score.</p>
+          <button type="button" className="btn btn-ghost btn-sm" onClick={retry}>Try again</button>
         </div>
       ) : (
         <div className={styles.actions}>
-          <p>Completados: {complete} de {TOEFL_BUILD_SENTENCE_SET1.items.length}</p>
+          <p>Completed: {complete} of {practice.items.length}</p>
           <button type="button" className="btn" disabled={!hydrated || submitting} onClick={() => { void submit(); }}>
-            {submitting ? 'Corrigiendo…' : 'Finalizar y corregir'}
+            {submitting ? 'Checking…' : 'Submit answers'}
           </button>
         </div>
       )}

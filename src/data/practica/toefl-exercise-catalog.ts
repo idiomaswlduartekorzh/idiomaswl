@@ -11,13 +11,13 @@ export type ToeflExerciseAvailability =
   | {
       kind: 'mock-only';
       href: typeof TOEFL_MOCK_LIBRARY_HREF;
-      actionLabel: 'Practicar en simulacros';
+      actionLabel: 'Practice in full mocks';
     };
 
 export type ToeflExerciseCatalogItem = {
   id: string;
   officialName: string;
-  spanishExplanation: string;
+  explanation: string;
   availability: ToeflExerciseAvailability;
   sourceClaimIds: readonly string[];
 };
@@ -35,40 +35,40 @@ export const TOEFL_EXERCISE_SECTIONS = [
   {
     id: 'reading',
     label: 'Reading',
-    description: 'Vocabulario en contexto, textos cotidianos y comprensión académica.',
+    description: 'Context vocabulary, everyday texts, and academic reading.',
     guideHref: '/practica/toefl/reading',
     sourceClaimId: 'C03',
     items: [
       {
         id: 'reading-complete-words',
         officialName: 'Complete the Words',
-        spanishExplanation: 'Completa palabras parcialmente ocultas usando vocabulario, gramática y contexto.',
+        explanation: 'Complete partially hidden words by using grammar, vocabulary, and context.',
         availability: {
           kind: 'individual',
           href: '/practica/toefl/reading/formato-2026/complete-the-words',
-          actionLabel: 'Practicar ahora',
+          actionLabel: 'Choose an exercise',
         },
         sourceClaimIds: ['C03'],
       },
       {
         id: 'reading-daily-life',
         officialName: 'Read in Daily Life',
-        spanishExplanation: 'Lee avisos, mensajes y textos informativos breves de situaciones cotidianas.',
+        explanation: 'Read notices, messages, and short informational texts from everyday situations.',
         availability: {
           kind: 'individual',
           href: '/practica/toefl/reading/formato-2026/read-in-daily-life',
-          actionLabel: 'Practicar ahora',
+          actionLabel: 'Choose an exercise',
         },
         sourceClaimIds: ['C03'],
       },
       {
         id: 'reading-academic-passage',
         officialName: 'Read an Academic Passage',
-        spanishExplanation: 'Trabaja ideas principales, detalles, inferencias y vocabulario en un texto académico.',
+        explanation: 'Practice main ideas, details, inference, and vocabulary in academic passages.',
         availability: {
           kind: 'individual',
           href: '/practica/toefl/reading/formato-2026/read-an-academic-passage',
-          actionLabel: 'Practicar ahora',
+          actionLabel: 'Choose an exercise',
         },
         sourceClaimIds: ['C03'],
       },
@@ -77,51 +77,51 @@ export const TOEFL_EXERCISE_SECTIONS = [
   {
     id: 'listening',
     label: 'Listening',
-    description: 'Respuestas apropiadas, conversaciones, anuncios y charlas académicas.',
+    description: 'Appropriate responses, conversations, announcements, and academic talks.',
     guideHref: '/practica/toefl/listening',
     sourceClaimId: 'C04',
     items: [
       {
         id: 'listening-choose-response',
         officialName: 'Listen and Choose a Response',
-        spanishExplanation: 'Escucha una intervención breve y elige la respuesta que mejor encaja.',
+        explanation: 'Listen to a short exchange and choose the response that fits best.',
         availability: {
-          kind: 'mock-only',
-          href: TOEFL_MOCK_LIBRARY_HREF,
-          actionLabel: 'Practicar en simulacros',
+          kind: 'individual',
+          href: '/practica/toefl/listening/simulacros',
+          actionLabel: 'Choose a Listening set',
         },
         sourceClaimIds: ['C04'],
       },
       {
         id: 'listening-conversation',
         officialName: 'Listen to a Conversation',
-        spanishExplanation: 'Identifica ideas, detalles e intención en una conversación de contexto universitario.',
+        explanation: 'Identify ideas, details, and speaker intent in a campus conversation.',
         availability: {
-          kind: 'mock-only',
-          href: TOEFL_MOCK_LIBRARY_HREF,
-          actionLabel: 'Practicar en simulacros',
+          kind: 'individual',
+          href: '/practica/toefl/listening/simulacros',
+          actionLabel: 'Choose a Listening set',
         },
         sourceClaimIds: ['C04'],
       },
       {
         id: 'listening-announcement',
         officialName: 'Listen to an Announcement',
-        spanishExplanation: 'Reconoce propósito, información clave y próximos pasos en un anuncio.',
+        explanation: 'Identify purpose, key information, and next steps in an announcement.',
         availability: {
-          kind: 'mock-only',
-          href: TOEFL_MOCK_LIBRARY_HREF,
-          actionLabel: 'Practicar en simulacros',
+          kind: 'individual',
+          href: '/practica/toefl/listening/simulacros',
+          actionLabel: 'Choose a Listening set',
         },
         sourceClaimIds: ['C04'],
       },
       {
         id: 'listening-academic-talk',
         officialName: 'Listen to an Academic Talk',
-        spanishExplanation: 'Sigue la organización, las ideas y los ejemplos de una charla académica breve.',
+        explanation: 'Follow the organization, ideas, and examples in a short academic talk.',
         availability: {
-          kind: 'mock-only',
-          href: TOEFL_MOCK_LIBRARY_HREF,
-          actionLabel: 'Practicar en simulacros',
+          kind: 'individual',
+          href: '/practica/toefl/listening/simulacros',
+          actionLabel: 'Choose a Listening set',
         },
         sourceClaimIds: ['C04'],
       },
@@ -130,40 +130,40 @@ export const TOEFL_EXERCISE_SECTIONS = [
   {
     id: 'writing',
     label: 'Writing',
-    description: 'Construcción de oraciones, escritura funcional y discusión académica.',
+    description: 'Sentence building, functional writing, and academic discussion.',
     guideHref: '/practica/toefl/writing',
     sourceClaimId: 'C05',
     items: [
       {
         id: 'writing-build-sentence',
         officialName: 'Build a Sentence',
-        spanishExplanation: 'Ordena palabras y frases para formar una oración o pregunta completa.',
+        explanation: 'Arrange words and phrases to form a complete sentence or question.',
         availability: {
           kind: 'individual',
           href: '/practica/toefl/writing/build-a-sentence',
-          actionLabel: 'Practicar ahora',
+          actionLabel: 'Choose an exercise',
         },
         sourceClaimIds: ['C05'],
       },
       {
         id: 'writing-email',
         officialName: 'Write an Email',
-        spanishExplanation: 'Escribe un correo claro para solicitar, informar o proponer una solución.',
+        explanation: 'Write a clear email to request information, explain a situation, or propose a solution.',
         availability: {
           kind: 'individual',
           href: '/practica/toefl/writing/write-an-email',
-          actionLabel: 'Abrir guía y banco de prompts',
+          actionLabel: 'Choose an email prompt',
         },
         sourceClaimIds: ['C05'],
       },
       {
         id: 'writing-academic-discussion',
         officialName: 'Write for an Academic Discussion',
-        spanishExplanation: 'Presenta y respalda una opinión dentro de una conversación académica.',
+        explanation: 'State and support an opinion within an academic class discussion.',
         availability: {
           kind: 'individual',
           href: '/practica/toefl/writing/academic-discussion',
-          actionLabel: 'Abrir guía y banco de prompts',
+          actionLabel: 'Choose a discussion prompt',
         },
         sourceClaimIds: ['C05'],
       },
@@ -172,29 +172,29 @@ export const TOEFL_EXERCISE_SECTIONS = [
   {
     id: 'speaking',
     label: 'Speaking',
-    description: 'Repetición precisa y respuestas espontáneas en una entrevista simulada.',
+    description: 'Accurate repetition and spontaneous answers in a simulated interview.',
     guideHref: '/practica/toefl/speaking',
     sourceClaimId: 'C06',
     items: [
       {
         id: 'speaking-repeat',
         officialName: 'Listen and Repeat',
-        spanishExplanation: 'Escucha una oración y repítela con precisión e inteligibilidad.',
+        explanation: 'Listen to a sentence and repeat it accurately and clearly.',
         availability: {
-          kind: 'mock-only',
-          href: TOEFL_MOCK_LIBRARY_HREF,
-          actionLabel: 'Practicar en simulacros',
+          kind: 'individual',
+          href: '/practica/toefl/speaking',
+          actionLabel: 'Choose a Speaking set',
         },
         sourceClaimIds: ['C06'],
       },
       {
         id: 'speaking-interview',
         officialName: 'Take an Interview',
-        spanishExplanation: 'Responde preguntas sobre experiencias y opiniones con claridad y ritmo natural.',
+        explanation: 'Answer questions about experiences and opinions with clarity and natural pacing.',
         availability: {
-          kind: 'mock-only',
-          href: TOEFL_MOCK_LIBRARY_HREF,
-          actionLabel: 'Practicar en simulacros',
+          kind: 'individual',
+          href: '/practica/toefl/speaking',
+          actionLabel: 'Choose a Speaking set',
         },
         sourceClaimIds: ['C06'],
       },

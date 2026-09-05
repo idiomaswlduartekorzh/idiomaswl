@@ -104,7 +104,9 @@ assert.doesNotMatch(publicSets2To5, /expectedMissing|answer\s*:/, 'public Set 2�
 assert.doesNotMatch(publicSets6To10, /expectedMissing|answer\s*:/, 'public Set 6–10 objects contain no answer key');
 assert.doesNotMatch(publicSets11To15, /expectedMissing|answer\s*:/, 'public Set 11–15 objects contain no answer key');
 assert.doesNotMatch(publicSets16To20, /expectedMissing|answer\s*:/, 'public Set 16–20 objects contain no answer key');
-assert.match(publicPage, /<CompleteTheWordsPractice \/>/, 'real CTW is the primary public interaction');
+assert.match(publicPage, /<ToeflPracticeSetCatalog/, 'the CTW route presents a practice library before opening an exercise');
+assert.match(publicPage, /<CompleteTheWordsPractice practice=\{practice\}/, 'a selected CTW set opens the real interaction');
+assert.match(publicPage, /TOEFL_COMPLETE_WORDS_PRACTICE_SETS\.map/, 'the public CTW library exposes all canonical sets');
 assert.doesNotMatch(publicPage, /TOEFL_COMPLETE_WORDS_ITEMS/, 'the CTW route no longer renders the old MCQ bank');
 assert.match(legacyPage, /TOEFL_COMPLETE_WORDS_ITEMS/, 'the 16-item bank remains available');
 assert.match(legacyPage, /no son la interacción Complete the Words/, 'legacy bank is honestly reclassified');
