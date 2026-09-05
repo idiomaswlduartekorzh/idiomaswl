@@ -36,8 +36,8 @@ test('Set 1 text matches the immutable candidate with both explicit approvals', 
   assert.deepEqual(selectToeflListeningPractice(source).sections, source.sections.filter(s => s.skill === 'listening'));
 });
 
-test('all other mock fields and the other 19 sets retain their pre-change digest', () => {
-  for (const entry of baseline.sets) {
+test('all non-option fields in Set 1 retain their pre-change digest', () => {
+  for (const entry of baseline.sets.filter(entry => entry.setId === 'set-1')) {
     const value = JSON.stringify(getMock('toefl', entry.setId), function(key, value) {
       if (key === 'text' && typeof this.id === 'string' && approvedIds.has(this.id.split(':option-')[0]) && this.label) {
         return '<approved-option-text>';

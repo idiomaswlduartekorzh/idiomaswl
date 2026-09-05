@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "EXECUTIVE_APPROVED_AWAITING_ACADEMIC_REVIEW_BEFORE_RUNTIME_IMPORT",
+  "status": "RUNTIME_IMPORT_VALIDATED_FINAL_HR06_SAMPLE_PENDING",
   "preparedAt": "2026-09-04",
   "branch": "codex/toefl-curation-mac-mini-20260904",
   "reconciledOriginMain": "5af12736a991f3dc1ecbc5f691faf166f02299f9",
@@ -34,8 +34,12 @@
       "scope": "Documentary candidates Sets 2-20, 646 items, contract SHA-256 5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820."
     },
     "academicCandidateReview": {
-      "status": "PENDING",
-      "reviewer": null
+      "status": "APPROVED",
+      "reviewer": "Zhanna Korzh",
+      "role": "academic-director",
+      "reviewedAtUtc": "2026-09-05T14:00:01Z",
+      "sourceStatement": "si",
+      "scope": "Documentary candidates Sets 2-20, 646 items, without observations; contract SHA-256 5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820."
     }
   },
   "sets": [
@@ -48,145 +52,145 @@
     {
       "set": 2,
       "baselineCharsLongestRate": 0.824,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set2-options-candidate.json",
       "candidateSha256": "bd120b0705020c28d1d67915e799db144b480425f18d26640e9d8a161b23dab7"
     },
     {
       "set": 3,
       "baselineCharsLongestRate": 0.882,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set3-options-candidate.json",
       "candidateSha256": "5bfb933ffd9cb5ef554ba66f3d8fe52807c137715e142cb4c571015b9b5dd1aa"
     },
     {
       "set": 4,
       "baselineCharsLongestRate": 0.824,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set4-options-candidate.json",
       "candidateSha256": "08064b72dc286472704ad4e606ab5f080787b8168a2d3150b09290505d578d0e"
     },
     {
       "set": 5,
       "baselineCharsLongestRate": 0.735,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set5-options-candidate.json",
       "candidateSha256": "50f61b8559e2220695788ef717d37103240e384b50679f04f4340cca2c11273c"
     },
     {
       "set": 6,
       "baselineCharsLongestRate": 0.779,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set6-options-candidate.json",
       "candidateSha256": "5492da69210a564f5cc5b22c55ed0aed24ee9499d6616f33263384bad7082548"
     },
     {
       "set": 7,
       "baselineCharsLongestRate": 0.853,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set7-options-candidate.json",
       "candidateSha256": "7c09ba8003d900ee00a6b2d07475c913444538a8813bda2265eea5075f912b6b"
     },
     {
       "set": 8,
       "baselineCharsLongestRate": 0.809,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set8-options-candidate.json",
       "candidateSha256": "48db2b9c3883b48c7da4fdffe86bc7e12f047cf16da521ec4cffbfb33b075bc1"
     },
     {
       "set": 9,
       "baselineCharsLongestRate": 0.882,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set9-options-candidate.json",
       "candidateSha256": "2f7a0b89c9bf314e3655aa581cfe58048f259a4a9088bf5fa15ae8bdccb23d58"
     },
     {
       "set": 10,
       "baselineCharsLongestRate": 0.794,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set10-options-candidate.json",
       "candidateSha256": "1d912db1ad03564a0967d848ca730cd9c3fd607b8a5034f2c8178154499e99b8"
     },
     {
       "set": 11,
       "baselineCharsLongestRate": 0.897,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set11-options-candidate.json",
       "candidateSha256": "61fd8f9556f1727788b40d839b9accb1c037fb20460a29f028c5fd521ee6d971"
     },
     {
       "set": 12,
       "baselineCharsLongestRate": 0.824,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set12-options-candidate.json",
       "candidateSha256": "5d739c9acf8c7b1b5534f8ed16564e8b1f6abcf17da6271db4980ba558f9978c"
     },
     {
       "set": 13,
       "baselineCharsLongestRate": 0.809,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set13-options-candidate.json",
       "candidateSha256": "7abaf06d3c1b8c553e29eb3188374735e75195b9500d3971d89785b78bc546d9"
     },
     {
       "set": 14,
       "baselineCharsLongestRate": 0.853,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set14-options-candidate.json",
       "candidateSha256": "8a4be388c3f89a4ad28fcfacc249b6b3817e4d8e5ce9d80ba838921885cec38d"
     },
     {
       "set": 15,
       "baselineCharsLongestRate": 0.824,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set15-options-candidate.json",
       "candidateSha256": "929d5fbe28a64df53a3a80ef434ca72c19b1bbf74a31b1c1dbe7d7502a43a964"
     },
     {
       "set": 16,
       "baselineCharsLongestRate": 0.794,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set16-options-candidate.json",
       "candidateSha256": "2fd291949684c763ba17a43f4d33f9195f17517afc649b3ebd00b7692735f544"
     },
     {
       "set": 17,
       "baselineCharsLongestRate": 0.794,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set17-options-candidate.json",
       "candidateSha256": "92b071b996be9f689d14a0b8375de818831412be0929340a5388ef9077d8a624"
     },
     {
       "set": 18,
       "baselineCharsLongestRate": 0.794,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set18-options-candidate.json",
       "candidateSha256": "df7ddd3f277c85da006b1cbd58a2221080aee219a3509fd6622feda8b088d727"
     },
     {
       "set": 19,
       "baselineCharsLongestRate": 0.853,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set19-options-candidate.json",
       "candidateSha256": "a4f800753bc867295361e2555b85eedadf81cbdf9992d497f497048c54fa955f"
     },
     {
       "set": 20,
       "baselineCharsLongestRate": 0.882,
-      "status": "DRAFT_CANDIDATE_AUTOMATIC_SCREEN_PASS_ACADEMIC_PENDING",
+      "status": "APPLIED_AND_AUTOMATIC_SCREEN_PASS",
       "candidate": "docs/toefl-listening-set20-options-candidate.json",
       "candidateSha256": "4375b416bb87ef35550ca7484bed676696a8e9b4b2abf0bad02dc7009d552f1f"
     }
   ],
   "controls": {
-    "hr06": "EXECUTIVE_CANDIDATE_APPROVAL_RECORDED_ACADEMIC_PENDING",
+    "hr06": "CANDIDATES_IMPORTED_FINAL_SAMPLE_REVIEW_PENDING",
     "c09": "BLOCKED",
     "d9": "CONTROLS_NOT_LOWERED",
-    "runtimeChangedByThisBatch": false,
+    "runtimeChangedByThisBatch": true,
     "productionModified": false,
     "deployed": false,
     "mergedToMain": false
   },
-  "nextAction": "Obtain academic approval for candidates Sets 2-20 before runtime import; after an approved import, complete product and academic HR-06 review on fixed sample Sets 1/5/10/15/20/9."
+  "nextAction": "Complete product and academic HR-06 review on the imported runtime using fixed sample Sets 1/5/10/15/20/9."
 }

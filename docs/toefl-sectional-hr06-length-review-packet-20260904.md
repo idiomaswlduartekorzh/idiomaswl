@@ -1,8 +1,10 @@
 # HR-06 — revisión de corrección del sesgo de longitud
 
-Estado: **APROBACIÓN EJECUTIVA REGISTRADA; REVISIÓN ACADÉMICA PENDIENTE**. Preparado el 4 de septiembre de 2026 y actualizado el 5 de septiembre de 2026.
+Estado: **IMPORTACIÓN APLICADA Y VALIDADA; REVISIÓN FINAL HR-06 PENDIENTE**. Preparado el 4 de septiembre de 2026 y actualizado el 5 de septiembre de 2026.
 
-David Duarte aprobó ejecutivamente el paquete documental de Sets 2–20 con el texto “chat yo lo veo bien, aprobado”. La decisión está vinculada al contrato SHA-256 `5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820`. No sustituye la firma académica requerida antes de importar al runtime.
+David Duarte aprobó ejecutivamente el paquete documental de Sets 2–20 con el texto “chat yo lo veo bien, aprobado”. David confirmó además la aprobación académica de Zhanna Korzh, sin observaciones, mediante la respuesta “si” a la pregunta que nombraba el alcance completo de 646 ítems. Ambas decisiones están vinculadas al contrato SHA-256 `5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820` y autorizan importar exactamente esos candidatos al runtime.
+
+Los 646 ítems se importaron en las fuentes del runtime. La verificación posterior confirma correspondencia exacta de las 680 listas de opciones de Sets 1–20, 680 IDs únicos, claves y audios conservados, y las cuatro métricas de longitud por debajo del límite del 45 %. La build de producción con webpack también pasa. Falta la revisión final de producto y académica sobre la muestra fija Set 1/5/10/15/20/9 en el runtime ya importado.
 
 ## Abrir la revisión concreta
 

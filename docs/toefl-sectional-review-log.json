@@ -308,14 +308,32 @@
         {
           "path": "docs/toefl-hr06-review.html",
           "sha256": "73f438a1933b25c9a1cae64c659584fc8724eefb61f9aa5a2e73406ef56d186f"
-        },
-        {
-          "path": "docs/toefl-sectional-hr06-length-review-packet-20260904.md",
-          "sha256": "645d6a5262761498353692ac71a84346b7c492009c934662b9d657f63c671af5"
         }
       ],
       "independentReview": false,
       "notes": "Aprobación humana explícita recibida con el texto 'chat yo lo veo bien, aprobado', inmediatamente después de presentar la interfaz concreta con audio, opciones anteriores y nuevas, clave esperada y controles de revisión. Se registra como aprobación ejecutiva y de producto de David Duarte para el paquete documental de 646 ítems de Sets 2-20 fijado por el contrato 59438939. No se atribuye a David ni a Zhanna Korzh una aprobación académica no comunicada. Por tanto, la importación al runtime y el cierre de HR-06 siguen pendientes de una decisión académica explícita. C09 continúa bloqueado; D9 conserva los cuatro controles de longitud; no se autoriza integración en main ni despliegue."
+    },
+    {
+      "gateId": "HR-06-LENGTH-CANDIDATES-ACADEMIC",
+      "reviewer": "Zhanna Korzh",
+      "role": "academic-director",
+      "decision": "approved",
+      "reviewedAtUtc": "2026-09-05T14:00:01Z",
+      "timestampBasis": "Hora de registro; el mensaje humano no incluye una hora propia.",
+      "commitSha": "2b6bd7f9d911e4551ceac988e495a904f5e76f96",
+      "contentDigest": "5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820",
+      "contentDigestMethod": "SHA-256 del contrato que fija los candidatos documentales Sets 2-20 y su evidencia automática.",
+      "evidencePaths": [
+        "docs/toefl-sectional-hr06-length-review-candidate-20260904.json"
+      ],
+      "supportingEvidence": [
+        {
+          "path": "docs/toefl-hr06-review.html",
+          "sha256": "73f438a1933b25c9a1cae64c659584fc8724eefb61f9aa5a2e73406ef56d186f"
+        }
+      ],
+      "independentReview": true,
+      "notes": "Aprobación académica explícita de Zhanna Korzh comunicada por David Duarte mediante la respuesta 'si' a la pregunta completa '¿Confirmas que Zhanna Korzh también aprueba académicamente los candidatos de los Sets 2–20, 646 ítems, sin observaciones?'. Cubre exactamente los 646 ítems del contrato 59438939 y autoriza su importación al runtime conservando claves, IDs, orden, audios y enunciados. No cierra por sí sola la revisión final HR-06 posterior a la importación, no libera C09 y no autoriza integración en main ni despliegue."
     }
   ]
 }
