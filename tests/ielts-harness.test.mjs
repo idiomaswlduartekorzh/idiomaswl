@@ -187,7 +187,11 @@ test('missing and mismatched audio remain hard blockers', () => {
   try {
     const missing = material();
     missing.audio[0] = { ...missing.audio[0], exists: false, sha256: undefined };
-    assert.equal(evaluateSet(missing, completeRecord(root, missing), root).state, 'BLOCKED_ASSET');
+    const missingResult = evaluateSet(missing, completeRecord(root, missing), root);
+    assert.equal(missingResult.state, 'BLOCKED_ASSET');
+    assert.match(missingResult.nextAction, /^Producir el MP3 desde el guion congelado/);
+    missing.issues.push({ code: 'READING_LENGTH', detail: '1000 words', severity: 'high' });
+    assert.match(evaluateSet(missing, completeRecord(root, missing), root).nextAction, /^Corregir y congelar guiones/);
     const current = material();
     const mismatch = completeRecord(root, current);
     mismatch.knownAudioStatus = 'CONFIRMED_MISMATCH';

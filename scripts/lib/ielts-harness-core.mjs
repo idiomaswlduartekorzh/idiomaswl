@@ -204,6 +204,9 @@ function evidenceCoverage(material, record, root) {
 function remediation(material, record, coverage) {
   const contentCodes = material.issues.filter(issue => CONTENT_BLOCKERS.has(issue.code)).map(issue => issue.code);
   if (material.audio.some(asset => !asset.exists) || record.knownAudioStatus === 'MISSING') {
+    if (contentCodes.length === 0) {
+      return 'Producir el MP3 desde el guion congelado y ejecutar ASR, timecodes Q1–Q40 y revisión humana.';
+    }
     return 'Corregir y congelar guiones/preguntas; después producir el MP3 y ejecutar ASR, timecodes Q1–Q40 y revisión humana.';
   }
   if (record.knownAudioStatus === 'CONFIRMED_MISMATCH') {
