@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "artifactType": "toefl-listening-approved-options-runtime-import-evidence",
+  "status": "PASS_FINAL_HR06_SAMPLE_REVIEW_PENDING",
+  "preparedAt": "2026-09-05",
+  "branch": "codex/toefl-curation-mac-mini-20260904",
+  "applicationCommit": "9efd3c3bf2e3d11eabcd0f1934fbab4d3018c852",
+  "reconciledOriginMain": "5af12736a991f3dc1ecbc5f691faf166f02299f9",
+  "approvedContract": {
+    "path": "docs/toefl-sectional-hr06-length-review-candidate-20260904.json",
+    "sha256": "5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820",
+    "executiveGate": "HR-06-LENGTH-CANDIDATES-EXECUTIVE",
+    "academicGate": "HR-06-LENGTH-CANDIDATES-ACADEMIC"
+  },
+  "application": {
+    "candidateSetsImported": 19,
+    "candidateItemsImported": 646,
+    "totalRuntimeSets": 20,
+    "totalRuntimeItems": 680,
+    "runtimeSourceFilesChanged": 23,
+    "fieldsChanged": [
+      "option text"
+    ],
+    "preserved": [
+      "item IDs",
+      "option IDs",
+      "answer keys",
+      "question prompts",
+      "audio references",
+      "item order"
+    ]
+  },
+  "validation": {
+    "exactCandidateMatch": "PASS: 680/680 runtime option lists match candidates",
+    "focusedTests": "PASS: 14/14",
+    "lengthGuard": {
+      "status": "PASS",
+      "maximumAllowedWorstRate": 0.45,
+      "wordsLongest": 0.2838235294117647,
+      "wordsShortest": 0.2691176470588235,
+      "charsLongest": 0.21176470588235294,
+      "charsShortest": 0.3568627450980392,
+      "everySetPasses": true
+    },
+    "audioRelease": "PASS: 400/400 exact files",
+    "fixedListening": "PASS: Sets 1-20, 19 new items per set, private keys",
+    "sectionalCatalog": "PASS: 12 unique tasks and live routes",
+    "practiceCatalog": "PASS: 465 grammar topics and protected modules",
+    "typescript": "PASS",
+    "productionBuild": "PASS: Next.js 16.2.6 webpack, 2517/2517 static pages"
+  },
+  "preview": {
+    "status": "RUNNING_AT_PREPARATION_TIME",
+    "url": "http://127.0.0.1:3027/practica/toefl/listening/simulacros",
+    "httpStatus": 200,
+    "requiredSample": [
+      "set-1",
+      "set-5",
+      "set-10",
+      "set-15",
+      "set-20",
+      "set-9"
+    ]
+  },
+  "controls": {
+    "hr06": "FINAL_PRODUCT_AND_ACADEMIC_SAMPLE_REVIEW_PENDING",
+    "c09": "BLOCKED",
+    "d9": "CONTROLS_NOT_LOWERED",
+    "mergedToMain": false,
+    "deployed": false,
+    "nextGateAllowed": false
+  }
+}
