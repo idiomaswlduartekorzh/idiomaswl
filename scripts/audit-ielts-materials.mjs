@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { objectiveRows, mockFromPublicHtml } from './lib/ielts-answer-key-audit.mjs';
+import { ieltsAnswerUnits, whitespaceWords } from './lib/ielts-text-metrics.mjs';
 
 // Inventory and screening, NOT academic approval. Never derives a trusted key
 // from the same key being tested. Generated evidence belongs outside product code.
@@ -16,7 +17,7 @@ for (const key of Object.keys(args)) {
   if (!['output', 'public', 'media'].includes(key)) throw Error(`Unknown flag ${key}`);
 }
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
-const words = text => (text ?? '').trim().split(/\s+/).filter(Boolean).length;
+const words = whitespaceWords;
 const commandPath = command => {
   try { return execFileSync('/usr/bin/which', [command], { encoding: 'utf8' }).trim(); }
   catch { return null; }
@@ -145,7 +146,7 @@ for (let n = 1; n <= 20; n++) {
         if (!b.answers?.length || b.answers.some(a => !String(a).trim())) add('EMPTY_ANSWER', `${q.id}:${b.num}`, 'critical');
         const writtenLimit = q.groupLabel?.match(/(?:NO MORE THAN |WRITE |CHOOSE )?(ONE|TWO|THREE) WORDS?/i)?.[1]?.toUpperCase();
         const limit = b.maxWords ?? ({ ONE: 1, TWO: 2, THREE: 3 })[writtenLimit];
-        if (limit && b.answers.some(a => words(a) > limit)) add('ANSWER_WORD_LIMIT_REVIEW', `${section.skill} ${b.num}: at least one accepted variant exceeds ${limit} words; check the displayed instruction and hyphen/number rules`, 'high');
+        if (limit && b.answers.some(a => ieltsAnswerUnits(a) > limit)) add('ANSWER_WORD_LIMIT_REVIEW', `${section.skill} ${b.num}: at least one accepted variant exceeds ${limit} words/numbers; check the displayed instruction and hyphen/number rules`, 'high');
         // Judgement answers describe the passage; they need not occur in it.
         if (b.answers.every(a => ['true', 'false', 'yes', 'no', 'not given'].includes(normal(a)))) continue;
         const textual = b.answers.filter(a => /[a-z]/i.test(a) && !/\d/.test(a));

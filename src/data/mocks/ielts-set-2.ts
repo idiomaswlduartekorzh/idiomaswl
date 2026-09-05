@@ -93,7 +93,7 @@ Racket hire: £{{6}} per racket`,
             { num: 3, answers: ['four', '4'], maxWords: 1 },
             { num: 4, answers: ['12', 'twelve'], maxWords: 1 },
             { num: 5, answers: ['65', 'sixty-five', 'sixty five'], maxWords: 2 },
-            { num: 6, answers: ['2.50', '2½', 'two fifty'], maxWords: 2 },
+            { num: 6, answers: ['2.50', '2.5', '2½'], maxWords: 1 },
           ],
         },
         {
@@ -104,7 +104,7 @@ Racket hire: £{{6}} per racket`,
           groupLabel: 'Complete the table below.\nWrite ONE WORD AND/OR A NUMBER for each answer.',
           headers: ['Coach', 'Availability on Saturday', 'Session length booked', 'Included with membership'],
           rows: [
-            ['Mr Patel', { num: 7, answers: ['morning', '10–12', '10 to 12'], maxWords: 1 }, 'N/A', 'No'],
+            ['Mr Patel', { num: 7, answers: ['morning', '10–12', '10-12'], maxWords: 1 }, 'N/A', 'No'],
             ['Ms Carter', { num: 8, answers: ['2:30', 'half past two', '14:30'], maxWords: 3 }, { num: 9, answers: ['one hour', '1 hour', 'hour'], maxWords: 2 }, { num: 10, answers: ['no', 'No'], maxWords: 1 }],
           ],
         },
@@ -616,7 +616,7 @@ Critics of nudging argue that it is paternalistic, manipulating people's choices
 
 Research by Kahneman and Tversky showed that humans use mental shortcuts called {{28}}, leading to systematic errors known as {{29}}.
 
-The availability heuristic means people overestimate events that are easy to {{30}}.
+The availability heuristic means people overestimate events whose examples come easily to {{30}}.
 
 {{31}} aversion explains why people often keep failing investments longer than they should.
 
@@ -627,7 +627,7 @@ The idea of {{33}} involves designing choice environments to promote better deci
             { num: 27, answers: ['rational choice', 'rational'], maxWords: 2 },
             { num: 28, answers: ['heuristics'], maxWords: 1 },
             { num: 29, answers: ['cognitive biases', 'biases'], maxWords: 2 },
-            { num: 30, answers: ['recall', 'remember', 'retrieve'], maxWords: 1 },
+            { num: 30, answers: ['mind'], maxWords: 1 },
             { num: 31, answers: ['Loss', 'loss'], maxWords: 1 },
             { num: 32, answers: ['intuitive', 'automatic'], maxWords: 1 },
             { num: 33, answers: ['nudging'], maxWords: 1 },
