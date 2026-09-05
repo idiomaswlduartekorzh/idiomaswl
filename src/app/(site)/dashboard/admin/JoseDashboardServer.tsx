@@ -101,6 +101,12 @@ function leadExamLabel(examSlug: string | null, source: string | null): string |
   return EXAMS[slug]?.name ?? slug.toUpperCase()
 }
 
+function leadIdentity(email: string | null, examSlug: string | null): string | null {
+  const cleanEmail = email?.trim().toLowerCase()
+  const cleanSlug = examSlug?.trim().toLowerCase()
+  return cleanEmail && cleanSlug ? `${cleanEmail}::${cleanSlug}` : null
+}
+
 export default async function JoseDashboardServer() {
   // All reads in the owner dashboard stay server-side. Authorization is based
   // on the immutable email registry, never on a user-editable profile role.
@@ -290,10 +296,53 @@ export default async function JoseDashboardServer() {
     leadsData = fallback.data
   }
 
-  const leads: LeadRow[] = ((leadsData ?? []) as Omit<LeadRow, 'exam_label'>[]).map(l => ({
+  const storedLeads: LeadRow[] = ((leadsData ?? []) as Omit<LeadRow, 'exam_label'>[]).map(l => ({
     ...l,
     exam_label: leadExamLabel(l.exam_slug, l.source),
   }))
+
+  // Antes de septiembre de 2026, IELTS y TOEFL sí guardaban nombre/correo en
+  // exam_submissions, pero no creaban una fila en leads. Recuperamos esos
+  // contactos históricos en la vista sin inventar el WhatsApp que nunca se pidió.
+  const storedIdentities = new Set(
+    storedLeads.flatMap(lead => {
+      const identity = leadIdentity(lead.email, leadExamSlug(lead.exam_slug, lead.source))
+      return identity ? [identity] : []
+    })
+  )
+  const submissionMap = new Map<string, ExamSubmission>()
+  for (const submission of [
+    ...rows,
+    ...((ieltsSubmissionRows ?? []) as ExamSubmission[]),
+    ...((toeflSubmissionRows ?? []) as ExamSubmission[]),
+  ]) {
+    if (!submissionMap.has(submission.id)) submissionMap.set(submission.id, submission)
+  }
+
+  const recoveredIdentities = new Set(storedIdentities)
+  const historicalSubmissionLeads: LeadRow[] = Array.from(submissionMap.values())
+    .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+    .filter(submission => {
+      const identity = leadIdentity(submission.user_email, submission.exam_slug)
+      if (!identity || recoveredIdentities.has(identity)) return false
+      recoveredIdentities.add(identity)
+      return true
+    })
+    .map(submission => ({
+      id: `submission-${submission.id}`,
+      name: submission.user_name,
+      whatsapp: null,
+      email: submission.user_email,
+      exam_slug: submission.exam_slug,
+      exam_score: submission.total_label,
+      source: 'exam_submission_historic',
+      created_at: submission.created_at,
+      exam_label: leadExamLabel(submission.exam_slug, 'exam_submission_historic'),
+    }))
+
+  const leads = [...storedLeads, ...historicalSubmissionLeads]
+    .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+    .slice(0, 300)
 
   const dashboardData: DashboardData = {
     submissions: rows,

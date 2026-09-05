@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { saveLead } from '@/lib/actions/saveLead';
+import { isPlausibleEmail, isPlausibleWhatsapp } from '@/lib/leads/contact';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection, QuestionInsight } from '@/data/mocks/types';
 import { hasGuidedMock } from '@/data/icfes/guided-registry';
@@ -1115,13 +1116,17 @@ function LeadGateView({
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!name.trim()) { setError('Ingresa tu nombre'); return; }
-    if (!email.trim() || !email.includes('@')) { setError('Ingresa un correo válido'); return; }
-    if (!whatsapp.trim() || whatsapp.replace(/\D/g, '').length < 7) { setError('Ingresa un WhatsApp válido'); return; }
+    if (name.trim().length < 2) { setError('Ingresa tu nombre completo'); return; }
+    if (!isPlausibleEmail(email)) { setError('Ingresa un correo válido'); return; }
+    if (!isPlausibleWhatsapp(whatsapp)) { setError('Ingresa un WhatsApp válido de 10 a 15 dígitos'); return; }
     setLoading(true);
     setError('');
-    await onSubmit({ name: name.trim(), email: email.trim(), whatsapp: whatsapp.trim() });
-    setLoading(false);
+    try {
+      await onSubmit({ name: name.trim(), email: email.trim(), whatsapp: whatsapp.trim() });
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : 'No pudimos guardar tus datos. Intenta de nuevo.');
+      setLoading(false);
+    }
   }
 
   return (
@@ -1299,23 +1304,26 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   const handleLeadSubmit = useCallback(async (lead: { name: string; email: string; whatsapp: string }) => {
     const qs = allQuestions as MCQQuestion[];
     const { correct, total, score } = pendingResultRef.current ?? { correct: 0, total: qs.length, score: 0 };
-    // Save lead + exam result in parallel
+    // El lead se confirma primero: nunca se abre el resultado si el contacto no
+    // quedó persistido. El historial académico sigue siendo de mejor esfuerzo.
+    const leadResult = await saveLead({
+      name: lead.name,
+      whatsapp: lead.whatsapp,
+      email: lead.email,
+      examSlug: exam.slug,
+      // El SAT no tiene escala de 100: guardar «63/100» ahí hace que en el panel se lea
+      // como un puntaje ICFES, que sí va de 0 a 100. Para el SAT va el bruto y nada más.
+      examScore: exam.slug === 'sat'
+        ? `${correct}/${total} correctas${routedTo ? ` · M2 ${routedTo === 'high' ? 'exigente' : 'estándar'}` : ''}`
+        : `${score}/100 (${correct}/${total} correctas)`,
+      // El balde del lead es el del examen que acaba de hacer. Estuvo fijo en
+      // 'icfes-practica' hasta el 19 ago 2026, así que todo aspirante al SAT caía en la
+      // lista del ICFES. Para el ICFES el valor no cambia (su slug es 'icfes').
+      source: `${exam.slug}-practica`,
+    });
+    if (!leadResult.ok) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.');
+
     await Promise.allSettled([
-      saveLead({
-        name: lead.name,
-        whatsapp: lead.whatsapp,
-        email: lead.email,
-        examSlug: exam.slug,
-        // El SAT no tiene escala de 100: guardar «63/100» ahí hace que en el panel se lea
-        // como un puntaje ICFES, que sí va de 0 a 100. Para el SAT va el bruto y nada más.
-        examScore: exam.slug === 'sat'
-          ? `${correct}/${total} correctas${routedTo ? ` · M2 ${routedTo === 'high' ? 'exigente' : 'estándar'}` : ''}`
-          : `${score}/100 (${correct}/${total} correctas)`,
-        // El balde del lead es el del examen que acaba de hacer. Estuvo fijo en
-        // 'icfes-practica' hasta el 19 ago 2026, así que todo aspirante al SAT caía en la
-        // lista del ICFES. Para el ICFES el valor no cambia (su slug es 'icfes').
-        source: `${exam.slug}-practica`,
-      }),
       saveExamResult({
         examSlug: exam.slug,
         examName: exam.name,

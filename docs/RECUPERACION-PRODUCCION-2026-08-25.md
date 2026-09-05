@@ -67,6 +67,24 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 ## 4. Trabajos activos que todavía no deben desplegarse
 
+### Captura unificada de leads de exámenes — 5 de septiembre de 2026
+
+- Rama: `codex/unify-exam-leads-20260905`; base `5af12736` de `origin/main`.
+- Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex, corrección del panel de José.
+- Causa verificada: ICFES/SAT bloqueaban el resultado hasta guardar contacto; IELTS y
+  TOEFL guardaban nombre/correo solo en `exam_submissions`; Goethe, DELF, CILS/CELI,
+  CELPE-Bras, Cambridge y la mayoría de TOPIK no tenían compuerta de contacto.
+- Alcance: nombre, correo válido y WhatsApp plausible obligatorios antes del resultado
+  para los diez exámenes; el lead se confirma antes de avanzar; el panel recupera las
+  entregas históricas con correo sin inventar teléfonos ausentes; se rechazan teléfonos
+  cortos, excesivos o formados por un solo dígito repetido.
+- Sin migración de Supabase: reutiliza la tabla `leads` y sus políticas actuales.
+- Validado: 3 pruebas nuevas del contrato de captura, TypeScript global, ESLint acotado
+  sin errores, guardianes de catálogo/admin/hub, regresiones IELTS/TOEFL y build Webpack
+  de 2.515 páginas.
+- Pendiente real: integrar en `main`, esperar el deployment de Vercel y ejecutar smoke
+  productivo con un lead controlado por tipo de runner.
+
 ### Atribución WhatsApp — 4 de septiembre de 2026
 
 - Rama: `codex/whatsapp-attribution-admin`; base `09d82c99` de `origin/main`.

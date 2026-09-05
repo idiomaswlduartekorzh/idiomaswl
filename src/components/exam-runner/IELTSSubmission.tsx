@@ -2,6 +2,8 @@
 
 import { useRef, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
+import { saveLead } from '@/lib/actions/saveLead';
+import { isPlausibleWhatsapp } from '@/lib/leads/contact';
 import {
   IELTS_SPEAKING_BUCKET,
   IELTS_SUBMISSION_CONSENT_VERSION,
@@ -29,7 +31,7 @@ interface Props {
   onSuccess: (receipt: IeltsSubmissionReceipt) => void;
 }
 
-type SubmitState = 'idle' | 'preparing' | 'uploading' | 'confirming';
+type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming';
 
 function formatDuration(seconds: number): string {
   const minutes = Math.floor(seconds / 60);
@@ -63,11 +65,13 @@ export function IELTSSubmission({
 }: Props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
   const [consent, setConsent] = useState(false);
   const [state, setState] = useState<SubmitState>('idle');
   const [uploadProgress, setUploadProgress] = useState({ current: 0, total: 0 });
   const [error, setError] = useState('');
   const errorRef = useRef<HTMLParagraphElement>(null);
+  const leadSavedRef = useRef(false);
 
   const task1Words = countEssayWords(writingTask1);
   const task2Words = countEssayWords(writingTask2);
@@ -83,7 +87,9 @@ export function IELTSSubmission({
   }));
   const speakingIssues = ieltsSpeakingEvidenceIssues(speakingPrompts, audioDescriptors);
   const isSubmitting = state !== 'idle';
-  const statusText = state === 'preparing'
+  const statusText = state === 'capturing'
+    ? 'Guardando tus datos de contacto…'
+    : state === 'preparing'
     ? 'Verificando respuestas y preparando tu entrega privada…'
     : state === 'uploading'
       ? `Subiendo audio ${uploadProgress.current} de ${uploadProgress.total}…`
@@ -104,6 +110,7 @@ export function IELTSSubmission({
     const trimmedEmail = email.trim().toLowerCase();
     if (trimmedName.length < 2) return showError('Escribe el nombre completo de la estudiante.');
     if (!/^\S+@\S+\.\S+$/.test(trimmedEmail)) return showError('Escribe un correo válido, por ejemplo estudiante@correo.com.');
+    if (!isPlausibleWhatsapp(whatsapp)) return showError('Escribe un WhatsApp válido de 10 a 15 dígitos.');
     if (task1Words < 150) return showError('Writing Task 1 necesita al menos 150 palabras. Vuelve al examen para completarlo.');
     if (task2Words < 250) return showError('Writing Task 2 necesita al menos 250 palabras. Vuelve al examen para completarlo.');
     if (speakingIssues.length > 0) return showError(speakingIssues[0]);
@@ -123,6 +130,20 @@ export function IELTSSubmission({
     const endpoint = `/api/ielts/${encodeURIComponent(mockId)}/submissions`;
 
     try {
+      if (!leadSavedRef.current) {
+        setState('capturing');
+        const leadResult = await saveLead({
+          name: trimmedName,
+          email: trimmedEmail,
+          whatsapp,
+          examSlug: 'ielts',
+          examScore: 'Simulacro enviado para evaluación',
+          source: 'ielts-practica',
+        });
+        if (!leadResult.ok) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos de contacto.');
+        leadSavedRef.current = true;
+      }
+
       setState('preparing');
       const prepareResponse = await fetch(endpoint, {
         method: 'POST',
@@ -228,6 +249,12 @@ export function IELTSSubmission({
             <input id="ielts-student-email" name="student_email" type="email" inputMode="email" autoComplete="email"
               spellCheck={false} value={email} onChange={event => setEmail(event.target.value)}
               placeholder="Ej.: estudiante@correo.com…" maxLength={254} required />
+          </div>
+          <div className="ielts-submit__field">
+            <label htmlFor="ielts-student-whatsapp">WhatsApp</label>
+            <input id="ielts-student-whatsapp" name="student_whatsapp" type="tel" inputMode="tel" autoComplete="tel"
+              value={whatsapp} onChange={event => setWhatsapp(event.target.value)}
+              placeholder="Ej.: +57 300 123 4567" maxLength={24} required />
           </div>
 
           <label className="ielts-submit__consent">

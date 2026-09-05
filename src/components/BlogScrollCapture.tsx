@@ -50,7 +50,7 @@ export function BlogScrollCapture({ slug, category, waMsg }: Props) {
     if (!phone.trim()) { setErr('El WhatsApp es requerido.'); return; }
     setStatus('loading'); setErr('');
     const params = new URLSearchParams(window.location.search);
-    await saveLead({
+    const result = await saveLead({
       name,
       whatsapp: phone,
       source: 'blog',
@@ -60,6 +60,11 @@ export function BlogScrollCapture({ slug, category, waMsg }: Props) {
       utmMedium:   params.get('utm_medium') ?? undefined,
       utmCampaign: params.get('utm_campaign') ?? undefined,
     });
+    if (!result.ok) {
+      setStatus('idle');
+      setErr(result.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.');
+      return;
+    }
     try { localStorage.setItem('wl_blog_lead_captured', '1'); } catch {}
     window.dataLayer = window.dataLayer ?? [];
     window.dataLayer.push({ event: 'lead_blog', blog_slug: slug, blog_category: category });

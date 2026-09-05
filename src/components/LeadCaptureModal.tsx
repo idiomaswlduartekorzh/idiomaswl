@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { saveLead } from '@/lib/actions/saveLead';
+import { isPlausibleEmail, isPlausibleWhatsapp } from '@/lib/leads/contact';
 
 const WA_NUMBER = '573005004253';
 
@@ -14,9 +15,11 @@ interface Props {
   examScore: string;   // e.g. "Overall Band 6.0" or "Total 94/120"
   examName:  string;
   onClose:   () => void;
+  /** Bloquea el resultado hasta guardar nombre, correo y WhatsApp. */
+  mandatory?: boolean;
 }
 
-export function LeadCaptureModal({ examSlug, examScore, examName, onClose }: Props) {
+export function LeadCaptureModal({ examSlug, examScore, examName, onClose, mandatory = false }: Props) {
   const [name, setName]       = useState('');
   const [phone, setPhone]     = useState('');
   const [email, setEmail]     = useState('');
@@ -29,14 +32,19 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose }: Pro
 
   // Close on Escape
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && (!mandatory || status === 'success')) onClose();
+    };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [onClose]);
+  }, [mandatory, onClose, status]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!phone.trim()) { setErrorMsg('El WhatsApp es requerido.'); return; }
+    if (mandatory && name.trim().length < 2) { setErrorMsg('Escribe tu nombre completo.'); return; }
+    if (!isPlausibleWhatsapp(phone)) { setErrorMsg('Ingresa un WhatsApp válido de 10 a 15 dígitos.'); return; }
+    if (mandatory && !isPlausibleEmail(email)) { setErrorMsg('Ingresa un correo electrónico válido.'); return; }
+    if (email.trim() && !isPlausibleEmail(email)) { setErrorMsg('Ingresa un correo electrónico válido.'); return; }
 
     setStatus('loading');
     setErrorMsg('');
@@ -218,17 +226,21 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose }: Pro
         }
       `}</style>
 
-      {/* Overlay — click outside to close */}
+      {/* En simulacros obligatorios el overlay no permite saltar el registro. */}
       <div
         className="wl-lead-overlay"
         role="dialog"
         aria-modal="true"
         aria-label="Obtén tu plan de preparación"
-        onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+        onClick={(e) => {
+          if (e.target === e.currentTarget && (!mandatory || status === 'success')) onClose();
+        }}
       >
         <div className="wl-lead-card">
           {/* Close */}
-          <button className="wl-lead-close" onClick={onClose} aria-label="Cerrar">✕</button>
+          {(!mandatory || status === 'success') && (
+            <button className="wl-lead-close" onClick={onClose} aria-label="Cerrar">✕</button>
+          )}
 
           {status === 'success' ? (
             <div className="wl-lead-success">
@@ -245,7 +257,9 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose }: Pro
                 </svg>
                 Escribir por WhatsApp
               </a>
-              <button className="wl-lead-skip" onClick={onClose}>Cerrar</button>
+              <button className="wl-lead-skip" onClick={onClose}>
+                {mandatory ? 'Ver mis resultados →' : 'Cerrar'}
+              </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} noValidate>
@@ -274,6 +288,7 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose }: Pro
                   onChange={e => setName(e.target.value)}
                   maxLength={100}
                   autoComplete="name"
+                  required={mandatory}
                 />
               </div>
 
@@ -293,7 +308,9 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose }: Pro
               </div>
 
               <div className="wl-lead-field">
-                <label htmlFor="lead-email" className="wl-lead-label">Email <span style={{ opacity: 0.5 }}>(opcional)</span></label>
+                <label htmlFor="lead-email" className="wl-lead-label">
+                  Email {!mandatory && <span style={{ opacity: 0.5 }}>(opcional)</span>}
+                </label>
                 <input
                   id="lead-email"
                   className="wl-lead-input"
@@ -303,6 +320,7 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose }: Pro
                   onChange={e => setEmail(e.target.value)}
                   maxLength={120}
                   autoComplete="email"
+                  required={mandatory}
                 />
               </div>
 
@@ -316,9 +334,11 @@ export function LeadCaptureModal({ examSlug, examScore, examName, onClose }: Pro
                 {status === 'loading' ? 'Enviando…' : 'Quiero mi plan personalizado →'}
               </button>
 
-              <button type="button" className="wl-lead-skip" onClick={onClose}>
-                Omitir por ahora
-              </button>
+              {!mandatory && (
+                <button type="button" className="wl-lead-skip" onClick={onClose}>
+                  Omitir por ahora
+                </button>
+              )}
             </form>
           )}
         </div>

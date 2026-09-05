@@ -395,6 +395,7 @@ export default function TOPIKPracticeClient({ exam, mock }: Props) {
             examScore={examScoreStr}
             examName="TOPIK I (Coreano)"
             onClose={handleLeadClose}
+            mandatory
           />
         )}
       </>

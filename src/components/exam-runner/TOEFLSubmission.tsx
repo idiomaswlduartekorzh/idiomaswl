@@ -2,6 +2,8 @@
 
 import { useRef, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
+import { saveLead } from '@/lib/actions/saveLead';
+import { isPlausibleWhatsapp } from '@/lib/leads/contact';
 import {
   TOEFL_SPEAKING_BUCKET,
   TOEFL_SUBMISSION_CONSENT_VERSION,
@@ -29,7 +31,7 @@ interface Props {
   onSuccess: (receipt: ToeflSubmissionReceipt) => void;
 }
 
-type SubmitState = 'idle' | 'preparing' | 'uploading' | 'confirming';
+type SubmitState = 'idle' | 'capturing' | 'preparing' | 'uploading' | 'confirming';
 
 function readError(error: unknown): string {
   return error instanceof Error ? error.message : 'No pudimos enviar la entrega. Tus respuestas siguen en esta pantalla.';
@@ -61,11 +63,13 @@ export function TOEFLSubmission({
 }: Props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
   const [consent, setConsent] = useState(false);
   const [state, setState] = useState<SubmitState>('idle');
   const [progress, setProgress] = useState({ current: 0, total: 0 });
   const [error, setError] = useState('');
   const errorRef = useRef<HTMLParagraphElement>(null);
+  const leadSavedRef = useRef(false);
 
   const recordedEntries = speakingPrompts.flatMap(prompt => {
     const recording = recordings[prompt.questionId];
@@ -82,7 +86,9 @@ export function TOEFLSubmission({
   const discussionWords = countToeflWords(writingDiscussion);
   const writingReady = writingEmail.trim().length >= 150 && writingDiscussion.trim().length >= 150;
   const isSubmitting = state !== 'idle';
-  const statusText = state === 'preparing'
+  const statusText = state === 'capturing'
+    ? 'Guardando tus datos de contacto…'
+    : state === 'preparing'
     ? 'Verificando respuestas y preparando la entrega privada…'
     : state === 'uploading'
       ? `Subiendo audio ${progress.current} de ${progress.total}…`
@@ -102,6 +108,7 @@ export function TOEFLSubmission({
     const cleanEmail = email.trim().toLowerCase();
     if (cleanName.length < 2) return showError('Escribe el nombre completo de la estudiante.');
     if (!/^\S+@\S+\.\S+$/.test(cleanEmail)) return showError('Escribe un correo válido.');
+    if (!isPlausibleWhatsapp(whatsapp)) return showError('Escribe un WhatsApp válido de 10 a 15 dígitos.');
     if (writingEmail.trim().length < 150) return showError('Write an Email necesita al menos 150 caracteres para entrar al corrector. No es un mínimo oficial de ETS.');
     if (writingDiscussion.trim().length < 150) return showError('Academic Discussion necesita al menos 150 caracteres para entrar al corrector.');
     if (speakingIssues.length > 0) return showError(speakingIssues[0]);
@@ -119,6 +126,20 @@ export function TOEFLSubmission({
     };
     const endpoint = `/api/toefl/${encodeURIComponent(mockId)}/submissions`;
     try {
+      if (!leadSavedRef.current) {
+        setState('capturing');
+        const leadResult = await saveLead({
+          name: cleanName,
+          email: cleanEmail,
+          whatsapp,
+          examSlug: 'toefl',
+          examScore: 'Simulacro enviado para corrección',
+          source: 'toefl-practica',
+        });
+        if (!leadResult.ok) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos de contacto.');
+        leadSavedRef.current = true;
+      }
+
       setState('preparing');
       const prepareResponse = await fetch(endpoint, {
         method: 'POST',
@@ -204,6 +225,10 @@ export function TOEFLSubmission({
           <div className="ielts-submit__field">
             <label htmlFor="toefl-student-email">Correo electrónico</label>
             <input id="toefl-student-email" name="studentEmail" type="email" inputMode="email" autoComplete="email" spellCheck={false} value={email} onChange={event => setEmail(event.target.value)} maxLength={254} required />
+          </div>
+          <div className="ielts-submit__field">
+            <label htmlFor="toefl-student-whatsapp">WhatsApp</label>
+            <input id="toefl-student-whatsapp" name="studentWhatsapp" type="tel" inputMode="tel" autoComplete="tel" value={whatsapp} onChange={event => setWhatsapp(event.target.value)} placeholder="Ej.: +57 300 123 4567" maxLength={24} required />
           </div>
           <label className="ielts-submit__consent">
             <input name="reviewConsent" type="checkbox" checked={consent} onChange={event => setConsent(event.target.checked)} required />

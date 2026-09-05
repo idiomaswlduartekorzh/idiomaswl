@@ -177,20 +177,13 @@ export function ExamReport({ data, onRetry, backHref, skipSave }: {
   backHref?: string;
   skipSave?: boolean;
 }) {
-  const [showLead, setShowLead] = useState(false);
+  const [showLead, setShowLead] = useState(true);
 
   useEffect(() => {
     if (skipSave) return;
     saveExamResult(data).catch(() => {/* silently ignore save failures */});
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [skipSave]);
-
-  // Show lead capture modal after 2s — skip if already captured this session
-  useEffect(() => {
-    try { if (localStorage.getItem('wl_lead_captured')) return; } catch {}
-    const t = setTimeout(() => setShowLead(true), 2000);
-    return () => clearTimeout(t);
-  }, []);
 
   const accent = data.accentColor ?? '#c8202e';
   const pct = data.totalMax > 0 ? data.totalScore / data.totalMax : 0;
@@ -204,6 +197,7 @@ export function ExamReport({ data, onRetry, backHref, skipSave }: {
         examScore={data.totalLabel}
         examName={data.examName}
         onClose={() => setShowLead(false)}
+        mandatory
       />
     )}
     <div className="exam-report">

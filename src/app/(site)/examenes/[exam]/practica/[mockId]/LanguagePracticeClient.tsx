@@ -3,6 +3,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
+import { LeadCaptureModal } from '@/components/LeadCaptureModal';
 import { Timer, SkillTabs } from '@/components/exam-runner/primitives';
 import { resolveAudioUrl } from '@/lib/examAudio';
 import { WritingAssessmentPanel } from '@/components/labs/WritingAssessmentPanel';
@@ -890,7 +891,7 @@ function ResultsView({ mock, exam, mcqAnswers, writeAnswers, speakingAnswers, fo
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-type Phase = 'intro' | 'exam' | 'results';
+type Phase = 'intro' | 'exam' | 'lead' | 'results';
 
 export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; mock: MockExam }) {
   const skills = orderedSkills(mock);
@@ -958,6 +959,10 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
   }));
   const totalAnswered = Object.values(progressMap).reduce((a, p) => a + p.done, 0);
   const totalQs = Object.values(progressMap).reduce((a, p) => a + p.total, 0);
+  const leadObjectiveSections = getObjectiveScores(mock, mcqAnswers, formAnswers, multiAnswers, matchAnswers);
+  const leadCorrect = leadObjectiveSections.reduce((sum, section) => sum + section.correct, 0);
+  const leadTotal = leadObjectiveSections.reduce((sum, section) => sum + section.total, 0);
+  const leadScore = leadTotal > 0 ? Math.round((leadCorrect / leadTotal) * 100) : 0;
 
   // Save to Supabase when entering results phase
   useEffect(() => {
@@ -1005,6 +1010,20 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
     ).catch(() => {/* silent — don't block UI */});
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
+
+  if (phase === 'lead') {
+    return (
+      <div className="prac-shell">
+        <LeadCaptureModal
+          examSlug={exam.slug}
+          examScore={`${leadScore}/100 (${leadCorrect}/${leadTotal} correctas)`}
+          examName={exam.name}
+          onClose={() => setPhase('results')}
+          mandatory
+        />
+      </div>
+    );
+  }
 
   if (phase === 'results') {
     return (
@@ -1073,7 +1092,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
         </div>
         <div className="prac-topbar__right">
           <span className="ielts-topbar__progress">{totalAnswered}/{totalQs}</span>
-          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase('results')} />
+          <Timer totalSecs={mock.timeMinutes * 60} onExpire={() => setPhase('lead')} />
         </div>
       </header>
 
@@ -1112,7 +1131,7 @@ export default function LanguagePracticeClient({ exam, mock }: { exam: Exam; moc
                     ? <button onClick={() => setActiveSkill(next)} className="btn btn-sm">{SKILL_LABEL[next]} →</button>
                     : <button onClick={() => {
                         if (unanswered > 0 && !confirm(`${unanswered} pregunta(s) sin responder. ¿Finalizar de todas formas?`)) return;
-                        setPhase('results');
+                        setPhase('lead');
                       }} className="btn">Finalizar práctica</button>
                   }
                 </span>

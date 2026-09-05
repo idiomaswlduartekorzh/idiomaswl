@@ -71,6 +71,7 @@
     "test:reading": "node --test tests/reading-content.test.mjs",
     "test:icfes": "node --test tests/icfes-scoring.test.mjs",
     "test:whatsapp": "node --experimental-strip-types --no-warnings --test tests/whatsapp-chatbot.test.mts",
+    "test:exam-leads": "node --experimental-strip-types --no-warnings --test tests/exam-lead-capture.test.mts",
     "test:ielts-review": "node --experimental-strip-types --no-warnings --test tests/ielts-review-scoring.test.mjs",
     "check:ielts-review-blueprint": "node --experimental-strip-types --no-warnings scripts/check-ielts-review-blueprint.mjs && npm run check:ielts-answer-keys && npm run check:ielts-set1-answer-key && npm run test:ielts-objective && npm run check:ielts-diagrams",
     "check:ielts-diagrams": "node --experimental-strip-types --no-warnings scripts/check-ielts-diagrams.mjs",
