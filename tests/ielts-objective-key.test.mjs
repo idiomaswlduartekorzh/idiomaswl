@@ -141,6 +141,9 @@ test('Set 1 old tabs fail closed; historical W/S remains reviewable', () => {
   assert.equal(isIeltsSubmissionVersionCurrent('set-17', 'ielts-set-17-v1'), false);
   assert.equal(isIeltsSubmissionVersionCurrent('set-17', 'ielts-set-17-v2'), true);
   assert.deepEqual(getIeltsReviewBlueprint('set-17').reviewableContentVersions, ['ielts-set-17-v1', 'ielts-set-17-v2']);
+  assert.equal(isIeltsSubmissionVersionCurrent('set-18', 'ielts-set-18-v1'), false);
+  assert.equal(isIeltsSubmissionVersionCurrent('set-18', 'ielts-set-18-v2'), true);
+  assert.deepEqual(getIeltsReviewBlueprint('set-18').reviewableContentVersions, ['ielts-set-18-v1', 'ielts-set-18-v2']);
   for (const setNumber of [20]) {
     assert.equal(isIeltsSubmissionVersionCurrent(`set-${setNumber}`, null), false);
     assert.equal(isIeltsSubmissionVersionCurrent(`set-${setNumber}`, `ielts-set-${setNumber}-v1`), false);
