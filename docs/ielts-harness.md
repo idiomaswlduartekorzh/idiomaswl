@@ -45,7 +45,7 @@ Todo cambio en contenido, clave, audio o visual produce una huella nueva. Las ap
    npm run scaffold:ielts-reading-evidence -- --set=1 --output=/ruta/set-1-reading-candidates.json
    ```
 
-   El ranking combina coincidencias literales y términos del enunciado. Sirve para reducir búsqueda manual; todas las filas quedan `PENDING_HUMAN_REVIEW`.
+   El ranking combina coincidencias literales, flexiones frecuentes y un conjunto controlado de paráfrasis del enunciado. Sirve para reducir búsqueda manual; todas las filas quedan `PENDING_HUMAN_REVIEW`.
 4. Incorporar la evidencia revisada al registro `config/ielts-harness/evidence-registry.json` sin copiar respuestas desde el mock para aprobarlas.
 5. Ejecutar el gate estricto:
 
