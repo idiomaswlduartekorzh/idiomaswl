@@ -77,12 +77,14 @@ function GapText({
   activeTenses,
   onChange,
   languageCode,
+  readOnly = false,
 }: {
   challenge: GapChallenge<string>
   answers: Record<string, string>
   activeTenses: ReadonlySet<string>
   onChange: (id: string, value: string) => void
   languageCode: string
+  readOnly?: boolean
 }) {
   return (
     <div className={s.proseExercise} lang={languageCode}>
@@ -101,6 +103,7 @@ function GapText({
                   className={s.gapInput}
                   name={gap.id}
                   onChange={(event) => onChange(gap.id, event.target.value)}
+                  readOnly={readOnly}
                   spellCheck={false}
                   value={answers[gap.id] ?? ''}
                 />
@@ -380,7 +383,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   const meta = levels[activeLevel]
   const levelCorrect = Object.values(questionResults).reduce((sum, result) => sum + result.correct, 0)
   const levelPoints = Object.values(questionResults).reduce((sum, result) => sum + result.total, 0)
-  const progress = summary ? 100 : total ? (itemIndex / total) * 100 : 0
+  const progress = reviewMode || summary ? 100 : total ? (itemIndex / total) * 100 : 0
   const selectionKey = forms
     .filter((tense) => selectedSet.has(tense.id))
     .map((tense) => tense.id)
@@ -763,6 +766,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
 
   function renderChoice() {
     const challenge = choiceChallenges[itemIndex]
+    const displayedChoice = reviewMode ? challenge.answer : choice
     return (
       <>
         <p className={s.taskInstruction}>{challenge.prompt}</p>
@@ -770,10 +774,11 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
         <div className="wlp-option-grid" lang={copy.languageCode}>
           {challenge.options.map((option, index) => (
             <button
-              aria-pressed={option === choice}
-              className={`wlp-option ${option === choice ? 'wlp-option--selected' : ''}`}
+              aria-disabled={reviewMode}
+              aria-pressed={option === displayedChoice}
+              className={`wlp-option ${option === displayedChoice ? 'wlp-option--selected' : ''}`}
               key={option}
-              onClick={() => setChoice(option)}
+              onClick={() => { if (!reviewMode) setChoice(option) }}
               type="button"
             >
               <span>{String.fromCharCode(65 + index)}</span>
@@ -786,15 +791,19 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   }
 
   function renderGapLevel(challenge: GapChallenge<string>) {
+    const displayedAnswers = reviewMode
+      ? Object.fromEntries(activeGaps(challenge).map((gap) => [gap.id, gap.answers[0]]))
+      : gapAnswers
     return (
       <>
         <p className={s.taskInstruction}>{challenge.instruction}</p>
         <GapText
           activeTenses={selectedSet}
-          answers={gapAnswers}
+          answers={displayedAnswers}
           challenge={challenge}
           languageCode={copy.languageCode}
           onChange={(id, value) => setGapAnswers((current) => ({ ...current, [id]: value }))}
+          readOnly={reviewMode}
         />
       </>
     )
@@ -803,6 +812,9 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   function renderErrorHunt() {
     const challenge = errorChallenges[itemIndex]
     const plainText = challenge.chunks.map((chunk) => chunk.before + chunk.form).join('') + challenge.after
+    const wrongForm = challenge.chunks.find((chunk) => chunk.id === challenge.wrongId)?.form ?? ''
+    const displayedError = reviewMode ? (errorIdentificationMode === 'write' ? wrongForm : challenge.wrongId) : selectedError
+    const displayedCorrection = reviewMode ? challenge.answers[0] : correction
     return (
       <>
         <p className={s.taskInstruction}>{challenge.instruction}</p>
@@ -814,9 +826,10 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
               <Fragment key={chunk.id}>
                 {chunk.before}
                 <button
-                  aria-pressed={selectedError === chunk.id}
-                  className={`${s.errorToken} ${selectedError === chunk.id ? s.errorTokenSelected : ''}`}
-                  onClick={() => setSelectedError(chunk.id)}
+                  aria-disabled={reviewMode}
+                  aria-pressed={displayedError === chunk.id}
+                  className={`${s.errorToken} ${displayedError === chunk.id ? s.errorTokenSelected : ''}`}
+                  onClick={() => { if (!reviewMode) setSelectedError(chunk.id) }}
                   type="button"
                 >
                   {chunk.form}
@@ -835,8 +848,9 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
                 name={`${config.id}-identified-error`}
                 onChange={(event) => setSelectedError(event.target.value)}
                 placeholder="Copia únicamente la forma incorrecta…"
+                readOnly={reviewMode}
                 spellCheck={false}
-                value={selectedError}
+                value={displayedError}
               />
             </label>
           ) : null}
@@ -847,8 +861,9 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
               name={`${config.id}-correction`}
               onChange={(event) => setCorrection(event.target.value)}
               placeholder={selectedError ? 'Escribe la forma corregida…' : 'Primero identifica el verbo…'}
+              readOnly={reviewMode}
               spellCheck={false}
-              value={correction}
+              value={displayedCorrection}
             />
           </label>
         </div>
@@ -858,35 +873,40 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
 
   function renderSeparation() {
     const challenge = separationChallenges[itemIndex]
-    const gapChallenge: GapChallenge<string> = {
-      id: challenge.id,
-      title: challenge.title,
-      focus: challenge.focus,
-      instruction: '',
-      segments: challenge.segments,
-      gaps: [{ id: challenge.id, tense: challenge.tense, verb: challenge.verb, answers: challenge.answers }],
-      explanation: challenge.explanation,
-    }
+    const displayedChoice = reviewMode ? challenge.separation : choice
+    const displayedSentence = reviewMode ? challenge.answers[0] : gapAnswers[challenge.id] ?? ''
     return (
       <>
-        <p className={s.taskInstruction}>Entscheide zuerst, ob das Verb trennbar ist. Konjugiere es danach passend zum Satz.</p>
+        <p className={s.taskInstruction}>Entscheide zuerst, ob das Verb trennbar ist. Schreibe danach den vollständigen Satz.</p>
         <div className={s.separationPanel}>
           <div lang={copy.languageCode}>
             <span>Infinitiv</span>
             <strong>{challenge.verb}</strong>
           </div>
           <div aria-label={`Clasifica ${challenge.verb}`} className={s.separationChoices} role="group">
-            <button aria-pressed={choice === 'separable'} onClick={() => setChoice('separable')} type="button">Trennbar</button>
-            <button aria-pressed={choice === 'inseparable'} onClick={() => setChoice('inseparable')} type="button">Untrennbar</button>
+            <button aria-disabled={reviewMode} aria-pressed={displayedChoice === 'separable'} onClick={() => { if (!reviewMode) setChoice('separable') }} type="button">Trennbar</button>
+            <button aria-disabled={reviewMode} aria-pressed={displayedChoice === 'inseparable'} onClick={() => { if (!reviewMode) setChoice('inseparable') }} type="button">Untrennbar</button>
           </div>
         </div>
-        <GapText
-          activeTenses={selectedSet}
-          answers={gapAnswers}
-          challenge={gapChallenge}
-          languageCode={copy.languageCode}
-          onChange={(id, value) => setGapAnswers((current) => ({ ...current, [id]: value }))}
-        />
+        <div className={s.separationPrompt} lang={copy.languageCode}>
+          <span>Satzgerüst</span>
+          <strong>{challenge.prompt}</strong>
+          <small>Der Verbzusatz ist absichtlich nicht vorgegeben.</small>
+        </div>
+        <label className={s.sentenceField}>
+          <span>Vollständiger Satz</span>
+          <textarea
+            aria-label="Escribe la oración completa"
+            autoComplete="off"
+            name={`${config.id}-${challenge.id}-sentence`}
+            onChange={(event) => setGapAnswers((current) => ({ ...current, [challenge.id]: event.target.value }))}
+            placeholder="Schreibe den ganzen Satz…"
+            readOnly={reviewMode}
+            rows={3}
+            spellCheck={false}
+            value={displayedSentence}
+          />
+        </label>
       </>
     )
   }
@@ -908,7 +928,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
               <select
                 name={slot.id}
                 onChange={(event) => setTimelineAnswers((current) => ({ ...current, [slot.id]: event.target.value }))}
-                value={timelineAnswers[slot.id] ?? ''}
+                value={reviewMode ? slot.answer : timelineAnswers[slot.id] ?? ''}
               >
                 <option value="">Elige la cláusula…</option>
                 {challenge.options.map((option) => <option key={option}>{option}</option>)}
@@ -1103,7 +1123,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
 
             <div aria-label="Niveles del ejercicio" className={s.levelGrid} role="tablist">
               {levels.map((level, index) => {
-                const best = bestScores[scoreKey(index)]
+                const best = reviewMode ? 100 : bestScores[scoreKey(index)]
                 const available = levelCounts[index] > 0
                 return (
                   <button

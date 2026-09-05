@@ -1,22 +1,30 @@
 import { expect, test } from '@playwright/test'
 import { GERMAN_STRUCTURE_QUEST as quest } from '../../src/data/practica/german-structure-quest-config'
 
-test('alemán: modo de revisión muestra respuestas y permite avanzar sin contestar', async ({ page }) => {
+test('alemán: modo de revisión deja los seis niveles resueltos al 100% y permite avanzar', async ({ page }) => {
   await page.goto('/herramientas/quizes/aleman?forms=praesens&level=4&review=1')
   await expect(page.getByText('Respuesta para revisión')).toBeVisible()
+  await expect(page.getByRole('tab')).toHaveCount(6)
+  for (const tab of await page.getByRole('tab').all()) await expect(tab).toContainText('100%')
   await expect(page.locator('[class*="errorToken"]')).toHaveCount(0)
   await expect(page.getByRole('textbox')).toHaveCount(2)
+  await expect(page.getByLabel('Forma que está mal')).toHaveValue('arbeiten')
+  await expect(page.getByLabel('Forma corregida')).toHaveValue('arbeitet')
   await expect(page.getByText('arbeiten → arbeitet')).toBeVisible()
   await page.getByRole('button', { name: 'Siguiente reto' }).click()
   await expect(page.getByText('2 / 10', { exact: true })).toBeVisible()
 
   await page.getByRole('tab', { name: /Trennbar oder untrennbar/ }).click()
-  await expect(page.getByText('trennbar · steht')).toBeVisible()
+  await expect(page.getByText('Mara ___ jeden Werktag um sechs Uhr.', { exact: true })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Trennbar', exact: true })).toHaveAttribute('aria-pressed', 'true')
+  await expect(page.getByLabel('Escribe la oración completa')).toHaveValue('Mara steht jeden Werktag um sechs Uhr auf.')
+  await expect(page.getByText('trennbar · Mara steht jeden Werktag um sechs Uhr auf.')).toBeVisible()
   await expect(page.getByRole('button', { name: 'Siguiente reto' })).toBeEnabled()
 
   await page.getByRole('tab', { name: /Lange Geschichte/ }).click()
   await expect(page.getByText(/beginnen: beginnt/)).toBeVisible()
   await expect(page.getByRole('textbox')).toHaveCount(11)
+  await expect(page.getByRole('textbox').first()).toHaveValue('beginnt')
 })
 
 for (const { id: form } of quest.forms) {
@@ -57,7 +65,7 @@ for (const { id: form } of quest.forms) {
         } else if (level === 4) {
           const item = separation[index]
           await page.getByRole('button', { name: item.separation === 'separable' ? 'Trennbar' : 'Untrennbar', exact: true }).click()
-          await page.getByRole('textbox').fill(item.answers[0])
+          await page.getByLabel('Escribe la oración completa').fill(item.answers[0])
         } else {
           for (const [gapIndex, gap] of writtenFinal.gaps.entries()) await page.getByRole('textbox').nth(gapIndex).fill(gap.answers[0])
         }

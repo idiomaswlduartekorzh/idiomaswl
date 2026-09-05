@@ -251,6 +251,13 @@ test('German exposes ten drills per form before a long written final story', () 
     assert.equal(separation.length, 10, `${id}/separation`)
     assert.equal(separation.filter((item) => item.separation === 'separable').length, 5, `${id}/separable`)
     assert.equal(separation.filter((item) => item.separation === 'inseparable').length, 5, `${id}/inseparable`)
+    for (const item of separation) {
+      assert.match(item.prompt, /___/, `${item.id}/prompt`)
+      assert.ok(item.answers[0].split(/\s+/).length >= 4, `${item.id}/complete-sentence`)
+      if (item.separation === 'separable' && ['praesens', 'praeteritum', 'imperativ'].includes(id)) {
+        assert.ok(!/\s(?:auf|an|mit|vor|teil|zurück|weg|ab|ein|aus)[.!?]$/.test(item.prompt), `${item.id}/hidden-particle`)
+      }
+    }
     const finalStories = GERMAN_STRUCTURE_QUEST.finalStories?.filter((item) => item.gaps.some((gap) => gap.tense === id)) ?? []
     assert.equal(finalStories.length, 1, `${id}/written-final-story`)
     assert.ok(finalStories[0].gaps.length >= 10, `${id}/written-final-story-gaps`)

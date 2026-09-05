@@ -529,7 +529,8 @@
   text-transform: uppercase;
 }
 
-.correctionField input {
+.correctionField input,
+.sentenceField textarea {
   background: var(--wlp-surface);
   border: 1px solid var(--wlp-line);
   border-radius: var(--wlp-r);
@@ -537,6 +538,32 @@
   font: inherit;
   min-height: 46px;
   padding: 0.65rem 0.75rem;
+}
+
+.sentenceField {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.sentenceField > span,
+.separationPrompt > span {
+  color: var(--wlp-muted);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.sentenceField textarea {
+  line-height: 1.55;
+  min-height: 92px;
+  resize: vertical;
+}
+
+.sentenceField textarea:focus-visible {
+  outline: 2px solid var(--wlp-accent);
+  outline-offset: 2px;
 }
 
 .separationPanel {
@@ -592,6 +619,25 @@
 .separationChoices button:focus-visible {
   outline: 2px solid var(--wlp-accent);
   outline-offset: 2px;
+}
+
+.separationPrompt {
+  background: var(--wlp-surface);
+  border-left: 3px solid var(--wlp-accent);
+  border-radius: var(--wlp-r-sm);
+  display: grid;
+  gap: 0.4rem;
+  padding: 1rem;
+}
+
+.separationPrompt strong {
+  color: var(--wlp-ink);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.65;
+}
+
+.separationPrompt small {
+  color: var(--wlp-muted);
 }
 
 .reviewAnswer {

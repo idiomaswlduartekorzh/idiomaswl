@@ -250,7 +250,7 @@ const SEPARATION_SEEDS: Record<GermanFormId, SeparationSeed[]> = {
     ['bestellen', 'inseparable', 'Vor dem Fest wird die Küche alle Zutaten ', '.', 'bestellt haben'],
   ],
   'wuerde-form': [
-    ['anrufen', 'separable', 'Mit deiner Nummer ', ' ich die Werkstatt sofort an.', 'würde'],
+    ['anrufen', 'separable', 'Mit deiner Nummer ', ' ich die Werkstatt sofort anrufen.', 'würde'],
     ['aufräumen', 'separable', 'Mit mehr Zeit ', ' Lea den Keller aufräumen.', 'würde'],
     ['mitkommen', 'separable', 'Bei gutem Wetter ', ' wir gern mitkommen.', 'würden'],
     ['vorbereiten', 'separable', 'An deiner Stelle ', ' ich das Gespräch vorbereiten.', 'würde'],
@@ -287,20 +287,34 @@ const SEPARATION_SEEDS: Record<GermanFormId, SeparationSeed[]> = {
   ],
 }
 
+const SEPARABLE_PREFIXES = ['zurück', 'vor', 'teil', 'mit', 'ein', 'aus', 'auf', 'weg', 'ab', 'an'] as const
+
+function sentencePrompt(verb: string, separation: SeparationSeed[1], before: string, after: string) {
+  if (separation === 'inseparable') return `${before}___${after}`
+  const prefix = SEPARABLE_PREFIXES.find((candidate) => verb.startsWith(candidate))
+  if (!prefix) return `${before}___${after}`
+  const hiddenParticle = new RegExp(`\\s${prefix}([.!?])$`)
+  return `${before}___${after.replace(hiddenParticle, '$1')}`
+}
+
 export const GERMAN_SEPARATION_CHALLENGES: SeparationChallenge<GermanFormId>[] = Object.entries(SEPARATION_SEEDS)
-  .flatMap(([form, seeds]) => seeds.map(([verb, separation, before, after, answer], index) => ({
-    id: `de-${form}-separation-${index + 1}`,
-    tense: form as GermanFormId,
-    title: `${verb} · ${index + 1}`,
-    focus: form,
-    verb,
-    separation,
-    segments: [before, after],
-    answers: [answer],
-    explanation: separation === 'separable'
-      ? `„${verb}“ ist trennbar. Achte darauf, wo Vorsilbe und Verbstamm in diesem Satz stehen.`
-      : `„${verb}“ ist untrennbar. Die Vorsilbe bleibt mit dem Verbstamm verbunden.`,
-  })))
+  .flatMap(([form, seeds]) => seeds.map(([verb, separation, before, after, answer], index) => {
+    const completeSentence = `${before}${answer}${after}`.replace(/\\s+/g, ' ').trim()
+    return {
+      id: `de-${form}-separation-${index + 1}`,
+      tense: form as GermanFormId,
+      title: `${verb} · ${index + 1}`,
+      focus: form,
+      verb,
+      separation,
+      prompt: sentencePrompt(verb, separation, before, after),
+      segments: [before, after],
+      answers: [completeSentence, completeSentence.replace(/[.!?]$/, '')],
+      explanation: separation === 'separable'
+        ? `„${verb}“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen.`
+        : `„${verb}“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden.`,
+    }
+  }))
 
 type StorySeed = {
   title: string

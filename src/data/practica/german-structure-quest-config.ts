@@ -33,7 +33,7 @@ export const GERMAN_EDITORIAL_PACKS = [
 ]
 
 export const GERMAN_STRUCTURE_QUEST: TenseQuestConfig<GermanFormId> = {
-  id: 'german-structure-quest', storageKey: 'wl-german-structure-quest-v7', forms: GERMAN_FORMS,
+  id: 'german-structure-quest', storageKey: 'wl-german-structure-quest-v8', forms: GERMAN_FORMS,
   presets: [
     { label: 'Vergangenheit', ids: GERMAN_FORMS.filter((form) => form.group === 'Vergangenheit').map((form) => form.id) },
     { label: 'Zukunft', ids: GERMAN_FORMS.filter((form) => form.group === 'Zukunft').map((form) => form.id) },
@@ -44,7 +44,7 @@ export const GERMAN_STRUCTURE_QUEST: TenseQuestConfig<GermanFormId> = {
     { number:'02', title:'Mikrotexte', short:'Form im Satz bilden', description:'Schreibe genau den fehlenden Teil. Sichtbare trennbare Zusätze bleiben an ihrer Satzposition.' },
     { number:'03', title:'Verbundene Szenen', short:'Drei Entscheidungen', description:'Ergänze drei Formen in einer zusammenhängenden Handlung.' },
     { number:'04', title:'Fehler im Text', short:'Selbstständig entdecken', description:'Lies einen längeren Text ohne Markierungen, finde die falsche Verbform und korrigiere sie.' },
-    { number:'05', title:'Trennbar oder untrennbar?', short:'Erkennen und konjugieren', description:'Entscheide, ob das Verb trennbar ist, und schreibe danach die passende Form im Satz.' },
+    { number:'05', title:'Trennbar oder untrennbar?', short:'Erkennen und ganzen Satz schreiben', description:'Entscheide, ob das Verb trennbar ist, und schreibe danach den vollständigen Satz ohne sichtbaren Verbzusatz.' },
     { number:'06', title:'Lange Geschichte', short:'Alle Formen selbst schreiben', description:'Lies einen zusammenhängenden Text und schreibe jede fehlende Verbgruppe vollständig.' },
   ],
   choiceChallenges: GERMAN_EDITORIAL_PACKS.flatMap((pack) => pack.choices),
