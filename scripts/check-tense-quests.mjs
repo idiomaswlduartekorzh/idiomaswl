@@ -12,7 +12,7 @@ import { FRENCH_FUTUR_SIMPLE_EDITORIAL } from '../src/data/practica/french-futur
 import { FRENCH_FUTUR_ANTERIEUR_EDITORIAL } from '../src/data/practica/french-futur-anterieur-editorial.ts'
 import { FRENCH_CONDITIONNEL_PRESENT_EDITORIAL } from '../src/data/practica/french-conditionnel-present-editorial.ts'
 import { FRENCH_CONDITIONNEL_PASSE_EDITORIAL } from '../src/data/practica/french-conditionnel-passe-editorial.ts'
-import { GERMAN_EDITORIAL_PACKS, GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest-config.ts'
+import { GERMAN_EDITORIAL_PACKS_BY_FORM, GERMAN_STRUCTURE_QUEST } from '../src/data/practica/german-structure-quest-config.ts'
 import { JAPANESE_EDITORIAL_PACKS, JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structure-quest-config.ts'
 import { KOREAN_EDITORIAL_PACKS, KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest-config.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
@@ -504,8 +504,8 @@ for (const form of GERMAN_STRUCTURE_QUEST.forms) {
   assert(finalStories[0]?.gaps.length >= 10, `german/${form.id}: la historia final necesita al menos diez decisiones`)
 }
 
-for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
-  const formId = GERMAN_STRUCTURE_QUEST.forms[index].id
+for (const { id: formId } of GERMAN_STRUCTURE_QUEST.forms) {
+  const pack = GERMAN_EDITORIAL_PACKS_BY_FORM[formId]
   assert(pack.choices.length === 10 && pack.micro.length === 10, `german/${formId}: se requieren 10 decisiones y 10 microtextos`)
   assert(pack.long.length === 10 && pack.long.every((item) => item.gaps.length === 3), `german/${formId}: se requieren 10 relatos conectados de tres huecos`)
   assert(pack.errors.length === 10 && pack.errors.every((item) => item.chunks.length === 5), `german/${formId}: se requieren 10 reparaciones de cinco oraciones`)
@@ -517,13 +517,13 @@ for (const [index, pack] of GERMAN_EDITORIAL_PACKS.entries()) {
 }
 
 const germanCompoundChoiceEndings = new Map([
-  [1, /\b(?:habe|hast|hat|haben|habt)$/iu], [2, /\b(?:bin|bist|ist|sind|seid)$/iu],
-  [4, /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/iu],
-  [5, /\b(?:werde|wirst|wird|werden|werdet)$/iu], [6, /\b(?:werde|wirst|wird|werden|werdet)$/iu],
-  [7, /\b(?:würde|würdest|würden|würdet)$/iu], [8, /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/iu],
+  ['perfekt-haben', /\b(?:habe|hast|hat|haben|habt)$/iu], ['perfekt-sein', /\b(?:bin|bist|ist|sind|seid)$/iu],
+  ['plusquamperfekt', /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/iu],
+  ['futur-eins', /\b(?:werde|wirst|wird|werden|werdet)$/iu], ['futur-zwei', /\b(?:werde|wirst|wird|werden|werdet)$/iu],
+  ['wuerde-form', /\b(?:würde|würdest|würden|würdet)$/iu], ['konjunktiv-vergangenheit', /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/iu],
 ])
-for (const [packIndex, ending] of germanCompoundChoiceEndings) {
-  for (const item of GERMAN_EDITORIAL_PACKS[packIndex].choices) {
+for (const [formId, ending] of germanCompoundChoiceEndings) {
+  for (const item of GERMAN_EDITORIAL_PACKS_BY_FORM[formId].choices) {
     assert(item.options.every((option) => ending.test(option)), `${item.id}: un distractor salió de la forma alemana seleccionada`)
     const lexicalUnits = new Set(item.options.map((option) => option.replace(ending, '').trim()))
     assert(lexicalUnits.size === 1, `${item.id}: los cuatro candidatos deben conservar el mismo verbo o construcción`)
@@ -537,7 +537,7 @@ const germanPresentParadigms = [
   ['stehe', 'stehst', 'steht', 'stehen'], ['mache', 'machst', 'macht', 'machen'],
   ['kaufe', 'kaufst', 'kauft', 'kaufen'], ['fahre', 'fährst', 'fährt', 'fahren'],
 ]
-const germanPresentPack = GERMAN_EDITORIAL_PACKS[0]
+const germanPresentPack = GERMAN_EDITORIAL_PACKS_BY_FORM.praesens
 for (const [index, item] of germanPresentPack.choices.entries()) {
   const expected = germanPresentParadigms[index]
   assert(expected?.length === 4 && item.options.every((option) => expected.includes(option)), `${item.id}: las cuatro opciones deben ser conjugaciones del mismo verbo en Präsens`)
@@ -575,24 +575,24 @@ for (const item of GERMAN_STRUCTURE_QUEST.errorChallenges) {
 
 const germanWrittenAnswers = (pack) => [...pack.micro, ...pack.long].flatMap((item) => item.gaps.flatMap((gap) => gap.answers))
 const germanCompositePatterns = [
-  [1, /\b(?:habe|hast|hat|haben|habt)$/i], [2, /\b(?:bin|bist|ist|sind|seid)$/i],
-  [4, /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/i], [5, /\b(?:werde|wirst|wird|werden|werdet)$/i],
-  [6, /\b(?:werde|wirst|wird|werden|werdet)$/i], [7, /\b(?:würde|würdest|würden|würdet)$/i],
-  [8, /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/i],
+  ['perfekt-haben', /\b(?:habe|hast|hat|haben|habt)$/i], ['perfekt-sein', /\b(?:bin|bist|ist|sind|seid)$/i],
+  ['plusquamperfekt', /\b(?:hatte|hattest|hatten|hattet|war|warst|waren|wart)$/i], ['futur-eins', /\b(?:werde|wirst|wird|werden|werdet)$/i],
+  ['futur-zwei', /\b(?:werde|wirst|wird|werden|werdet)$/i], ['wuerde-form', /\b(?:würde|würdest|würden|würdet)$/i],
+  ['konjunktiv-vergangenheit', /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/i],
 ]
-for (const [index, pattern] of germanCompositePatterns) for (const answer of germanWrittenAnswers(GERMAN_EDITORIAL_PACKS[index])) assert(pattern.test(answer), `german/${GERMAN_STRUCTURE_QUEST.forms[index].id}: la respuesta no contiene la unidad verbal completa («${answer}»)`)
+for (const [formId, pattern] of germanCompositePatterns) for (const answer of germanWrittenAnswers(GERMAN_EDITORIAL_PACKS_BY_FORM[formId])) assert(pattern.test(answer), `german/${formId}: la respuesta no contiene la unidad verbal completa («${answer}»)`)
 
 const germanFutureTwoContexts = [
-  ...GERMAN_EDITORIAL_PACKS[6].micro.map((item) => item.segments.join(' ')),
-  ...GERMAN_EDITORIAL_PACKS[6].long.map((item) => item.segments.join(' ')),
-  ...GERMAN_EDITORIAL_PACKS[6].finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+  ...GERMAN_EDITORIAL_PACKS_BY_FORM['futur-zwei'].micro.map((item) => item.segments.join(' ')),
+  ...GERMAN_EDITORIAL_PACKS_BY_FORM['futur-zwei'].long.map((item) => item.segments.join(' ')),
+  ...GERMAN_EDITORIAL_PACKS_BY_FORM['futur-zwei'].finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
 ]
 for (const context of germanFutureTwoContexts) assert(/(?:bis|wenn|bevor|um |bei tagesanbruch|am 31\.|am freitag|vor sonnenuntergang|vor der|vor dem)/i.test(context), `german/futur-zwei: falta plazo o segundo punto futuro («${context}»)`)
 
 const germanImperativeContexts = [
-  ...GERMAN_EDITORIAL_PACKS[9].micro.map((item) => item.segments.join(' ')),
-  ...GERMAN_EDITORIAL_PACKS[9].long.map((item) => item.segments.join(' ')),
-  ...GERMAN_EDITORIAL_PACKS[9].finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
+  ...GERMAN_EDITORIAL_PACKS_BY_FORM.imperativ.micro.map((item) => item.segments.join(' ')),
+  ...GERMAN_EDITORIAL_PACKS_BY_FORM.imperativ.long.map((item) => item.segments.join(' ')),
+  ...GERMAN_EDITORIAL_PACKS_BY_FORM.imperativ.finalGaps.map((gap) => `${gap.standalone?.before ?? ''} ${gap.standalone?.after ?? ''}`),
 ]
 for (const context of germanImperativeContexts) assert(/(?:Paul|Frau|Herr|Kinder|Spieler|Nora|Lea|Amir|Gäste|Ihr|Mara und Tom|Meine Damen)/i.test(context), `german/imperativ: falta destinatario visible («${context}»)`)
 

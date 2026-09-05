@@ -1,0 +1,16 @@
+{
+  "id": "futur-zwei",
+  "label": "Futur II",
+  "sourceFile": "src/data/practica/german-future-two-editorial.ts",
+  "stage": "queued",
+  "cefr": "B1–B2",
+  "construction": "finite werden + Partizip II + haben/sein",
+  "auxiliaryPolicy": "inherits-perfect-auxiliary",
+  "allowedAuxiliaries": ["haben", "sein", "werden"],
+  "minimumFinalUnitTokens": 3,
+  "morphology": ["correct Partizip II", "correct perfect auxiliary in infinitive", "finite werden agrees with the subject"],
+  "wordOrder": ["Partizip II + haben/sein at clause end", "finite werden occupies V2 in main clauses"],
+  "contextContract": ["completion before an explicit future deadline or second future point"],
+  "separableContract": ["test participle formation", "write the full three-part verbal complex in the sentence"],
+  "knownRisks": ["wrong haben/sein", "missing future deadline", "Futur I distractor accidentally valid"]
+}

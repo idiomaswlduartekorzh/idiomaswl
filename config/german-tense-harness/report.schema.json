@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://idiomaswl.com/schemas/german-tense-report-v1.json",
+  "type": "object",
+  "required": ["schemaVersion", "formId", "role", "verdict", "candidateFingerprint", "specFingerprint", "promptFingerprint", "checks", "findings", "generatedAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "formId": { "type": "string", "minLength": 1 },
+    "role": { "type": "string", "minLength": 1 },
+    "verdict": { "enum": ["PASS", "FAIL"] },
+    "candidateFingerprint": { "$ref": "#/$defs/hash" },
+    "specFingerprint": { "$ref": "#/$defs/hash" },
+    "promptFingerprint": { "$ref": "#/$defs/hash" },
+    "baselineContentFingerprint": { "$ref": "#/$defs/hash" },
+    "runtimeContentFingerprint": { "$ref": "#/$defs/hash" },
+    "candidate": { "$ref": "candidate.schema.json" },
+    "checks": { "type": "array", "items": { "type": "object" } },
+    "findings": { "type": "array", "items": { "type": "object" } },
+    "generatedAt": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

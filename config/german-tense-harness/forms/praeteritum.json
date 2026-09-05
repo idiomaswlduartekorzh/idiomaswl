@@ -1,0 +1,16 @@
+{
+  "id": "praeteritum",
+  "label": "Präteritum",
+  "sourceFile": "src/data/practica/german-preterite-editorial.ts",
+  "stage": "queued",
+  "cefr": "A2–B1",
+  "construction": "finite simple past",
+  "auxiliaryPolicy": "none",
+  "allowedAuxiliaries": [],
+  "minimumFinalUnitTokens": 1,
+  "morphology": ["weak -te forms", "strong ablaut forms", "mixed verbs", "high-frequency haben, sein and modal forms"],
+  "wordOrder": ["finite verb in V2", "detached particle at clause end for separable verbs"],
+  "contextContract": ["closed narrative past or conventional written report"],
+  "separableContract": ["hide the detached particle in level 5", "write the complete sentence"],
+  "knownRisks": ["invented regular forms for strong verbs", "contexts that equally admit Perfekt"]
+}

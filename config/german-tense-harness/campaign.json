@@ -1,0 +1,21 @@
+{
+  "campaignId": "german-tense-alignment-v1",
+  "goal": "Alinear cada forma alemana con el recorrido de seis niveles aprobado en Präsens.",
+  "referenceForm": "praesens",
+  "queue": [
+    "perfekt-haben",
+    "perfekt-sein",
+    "praeteritum",
+    "plusquamperfekt",
+    "futur-eins",
+    "futur-zwei",
+    "wuerde-form",
+    "konjunktiv-vergangenheit",
+    "imperativ"
+  ],
+  "parallelism": {
+    "maximumAgents": 4,
+    "authoringRule": "Los autores escriben artefactos aislados por forma; solo el integrador modifica src/data/practica.",
+    "sharedFile": "src/data/practica/german-advanced-editorial.ts"
+  }
+}

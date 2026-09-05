@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "perfekt-haben",
+  "baseCommit": "df0798a2cf00bf8bcceef9e7d1eca718f7789343",
+  "createdAt": "2026-09-05T14:46:54.152Z",
+  "baselineContentFingerprint": "66ad1828c2cfb1b4898baedaa066a80df22b01572071e84f0967f94241339415",
+  "specFingerprint": "3d7b8ef8e01a2fc75f30264f984cfe33e46442a6ddd997db94afe207481d9ef8",
+  "promptFingerprint": "cea07094c9b70851b74500a3ffc2758ccdc7a09e0134ac0248a41b565089929c",
+  "spec": {
+    "id": "perfekt-haben",
+    "label": "Perfekt mit haben",
+    "sourceFile": "src/data/practica/german-perfect-haben-editorial.ts",
+    "stage": "queued",
+    "cefr": "A1–A2",
+    "construction": "finite haben + Partizip II",
+    "auxiliaryPolicy": "fixed-haben",
+    "allowedAuxiliaries": [
+      "haben"
+    ],
+    "minimumFinalUnitTokens": 2,
+    "morphology": [
+      "weak, strong and mixed participles",
+      "no ge- for inseparable prefixes and -ieren",
+      "ge- between particle and stem for separable verbs"
+    ],
+    "wordOrder": [
+      "finite haben in V2 and participle at clause end",
+      "verbal complex final in subordinate clauses"
+    ],
+    "contextContract": [
+      "completed past event with present or conversational relevance"
+    ],
+    "separableContract": [
+      "classify the infinitive",
+      "test participle formation",
+      "write the complete sentence"
+    ],
+    "knownRisks": [
+      "incorrect sein auxiliary",
+      "duplicated ge-",
+      "particle shown as a clue"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "auxiliary",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "auxiliary.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-perfect-haben-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

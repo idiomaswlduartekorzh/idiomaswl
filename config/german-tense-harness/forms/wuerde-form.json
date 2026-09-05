@@ -1,0 +1,16 @@
+{
+  "id": "wuerde-form",
+  "label": "würde + Infinitiv",
+  "sourceFile": "src/data/practica/german-would-editorial.ts",
+  "stage": "queued",
+  "cefr": "B1",
+  "construction": "finite würde + Infinitiv",
+  "auxiliaryPolicy": "fixed-wuerde",
+  "allowedAuxiliaries": ["würde"],
+  "minimumFinalUnitTokens": 2,
+  "morphology": ["würde agrees with person and number", "lexical verb remains infinitive"],
+  "wordOrder": ["finite würde in V2 and infinitive at clause end"],
+  "contextContract": ["explicit hypothesis, polite request or conditional result", "exclude a plain future reading"],
+  "separableContract": ["the infinitive remains joined", "classify without a detached-particle clue"],
+  "knownRisks": ["confusion with Futur I", "participial answer instead of infinitive"]
+}

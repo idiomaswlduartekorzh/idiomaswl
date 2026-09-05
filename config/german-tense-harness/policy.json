@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "systemId": "german-tense-quest-editorial-pipeline",
+  "referenceForm": "praesens",
+  "approvedReferenceCommit": "df0798a2",
+  "artifactRoot": "artifacts/german-tense-harness",
+  "schemas": {
+    "workOrder": "config/german-tense-harness/work-order.schema.json",
+    "report": "config/german-tense-harness/report.schema.json",
+    "candidate": "config/german-tense-harness/candidate.schema.json"
+  },
+  "states": [
+    "MISSING_SPEC",
+    "NEEDS_DRAFT",
+    "BLOCKED_SCHEMA",
+    "BLOCKED_LINGUISTIC",
+    "BLOCKED_PEDAGOGY",
+    "BLOCKED_RUNTIME",
+    "READY_FOR_HUMAN_REVIEW",
+    "APPROVED"
+  ],
+  "roles": [
+    {
+      "id": "coordinator",
+      "agent": "german-tense-coordinator",
+      "prompt": ".claude/agents/german-tense-coordinator.md",
+      "output": "work-order.json",
+      "mayEditRuntime": false
+    },
+    {
+      "id": "author",
+      "agent": "german-tense-author",
+      "prompt": ".claude/agents/german-tense-author.md",
+      "output": "author.json",
+      "mayEditRuntime": false
+    },
+    {
+      "id": "morphology",
+      "agent": "german-morphology-auditor",
+      "prompt": ".claude/agents/german-morphology-auditor.md",
+      "output": "morphology.json",
+      "mayEditRuntime": false
+    },
+    {
+      "id": "auxiliary",
+      "agent": "german-auxiliary-auditor",
+      "prompt": ".claude/agents/german-auxiliary-auditor.md",
+      "output": "auxiliary.json",
+      "mayEditRuntime": false,
+      "requiredFor": ["perfekt-haben", "perfekt-sein", "plusquamperfekt", "futur-zwei", "konjunktiv-vergangenheit"]
+    },
+    {
+      "id": "pedagogy",
+      "agent": "german-pedagogy-auditor",
+      "prompt": ".claude/agents/german-pedagogy-auditor.md",
+      "output": "pedagogy.json",
+      "mayEditRuntime": false
+    },
+    {
+      "id": "adversary",
+      "agent": "german-adversarial-auditor",
+      "prompt": ".claude/agents/german-adversarial-auditor.md",
+      "output": "adversary.json",
+      "mayEditRuntime": false
+    },
+    {
+      "id": "integrator",
+      "agent": "german-tense-integrator",
+      "prompt": ".claude/agents/german-tense-integrator.md",
+      "output": "integration.json",
+      "mayEditRuntime": true
+    },
+    {
+      "id": "warden",
+      "agent": "german-tense-release-warden",
+      "prompt": ".claude/agents/german-tense-release-warden.md",
+      "output": "release.json",
+      "mayEditRuntime": false
+    }
+  ],
+  "pipeline": ["coordinator", "author", "morphology", "auxiliary", "pedagogy", "adversary", "integrator", "warden"],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ]
+}

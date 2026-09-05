@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://idiomaswl.com/schemas/german-tense-candidate-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formId", "runtime", "annotations", "sources"],
+  "properties": {
+    "formId": { "type": "string", "minLength": 1 },
+    "runtime": {
+      "type": "object",
+      "required": ["choice", "micro", "long", "error", "separation", "finalStories"]
+    },
+    "annotations": {
+      "type": "array",
+      "minItems": 51,
+      "items": { "$ref": "#/$defs/item" }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title", "url", "checkedAt"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "checkedAt": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nullableString": { "type": ["string", "null"] },
+    "item": {
+      "type": "object",
+      "required": [
+        "itemId", "level", "lemma", "senseId", "targetForm", "person", "number",
+        "clauseType", "function", "anchorIds", "auxiliary", "participle", "separation",
+        "prefix", "expectedUnit", "accepted", "distractorRationale"
+      ],
+      "properties": {
+        "itemId": { "type": "string", "minLength": 1 },
+        "level": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "lemma": { "type": "string", "minLength": 1 },
+        "senseId": { "type": "string", "minLength": 1 },
+        "targetForm": { "type": "string", "minLength": 1 },
+        "person": { "$ref": "#/$defs/nullableString" },
+        "number": { "$ref": "#/$defs/nullableString" },
+        "clauseType": { "enum": ["main", "subordinate", "question", "imperative", "mixed"] },
+        "function": { "type": "string", "minLength": 1 },
+        "anchorIds": { "type": "array", "items": { "type": "string" } },
+        "auxiliary": { "$ref": "#/$defs/nullableString" },
+        "participle": { "$ref": "#/$defs/nullableString" },
+        "separation": { "enum": ["separable", "inseparable", "not-applicable"] },
+        "prefix": { "$ref": "#/$defs/nullableString" },
+        "expectedUnit": { "type": "string", "minLength": 1 },
+        "accepted": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "distractorRationale": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

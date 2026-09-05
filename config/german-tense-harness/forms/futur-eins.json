@@ -1,0 +1,16 @@
+{
+  "id": "futur-eins",
+  "label": "Futur I",
+  "sourceFile": "src/data/practica/german-future-one-editorial.ts",
+  "stage": "queued",
+  "cefr": "A2–B1",
+  "construction": "finite werden + Infinitiv",
+  "auxiliaryPolicy": "fixed-werden",
+  "allowedAuxiliaries": ["werden"],
+  "minimumFinalUnitTokens": 2,
+  "morphology": ["werden agrees with person and number", "lexical verb remains infinitive"],
+  "wordOrder": ["finite werden in V2 and infinitive at clause end", "infinitive before finite werden in ordinary subordinate order"],
+  "contextContract": ["future prediction, promise or explicit prospective reference"],
+  "separableContract": ["the infinitive remains joined", "classify without a detached-particle clue"],
+  "knownRisks": ["confusion with würde", "future meaning expressed by Präsens without requiring Futur I"]
+}

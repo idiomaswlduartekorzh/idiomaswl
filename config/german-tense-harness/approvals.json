@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "approvals": {
+    "praesens": {
+      "approvedBy": "product-owner",
+      "approvedAt": "2026-09-05",
+      "referenceCommit": "df0798a2",
+      "contentFingerprint": "11d6ba2203ef394ea724fe711215d496745d4b05aec98b30bede5c4bd0e048e5",
+      "specFingerprint": "01912ac54d60c203cb445b09bb242308f5799161b7a0ef96680c7e2f1b0455fb"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "praesens",
+  "label": "Präsens",
+  "sourceFile": "src/data/practica/german-present-editorial.ts",
+  "stage": "approved-reference",
+  "cefr": "A1–A2",
+  "construction": "finite lexical verb",
+  "auxiliaryPolicy": "none",
+  "allowedAuxiliaries": [],
+  "minimumFinalUnitTokens": 1,
+  "morphology": ["person-number agreement", "strong-verb vowel change where required"],
+  "wordOrder": ["finite verb in V2 in main clauses", "finite verb final in subordinate clauses", "detached particle at clause end for separable verbs"],
+  "contextContract": ["habit, current state or scheduled fact must be explicit"],
+  "separableContract": ["classify by lexeme and meaning", "hide the detached particle in level 5", "write the complete sentence"],
+  "knownRisks": ["infinitive used instead of finite form", "visible particle reveals level-5 answer"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "perfekt-sein",
+  "label": "Perfekt mit sein",
+  "sourceFile": "src/data/practica/german-perfect-sein-editorial.ts",
+  "stage": "queued",
+  "cefr": "A1–A2",
+  "construction": "finite sein + Partizip II",
+  "auxiliaryPolicy": "fixed-sein",
+  "allowedAuxiliaries": ["sein"],
+  "minimumFinalUnitTokens": 2,
+  "morphology": ["correct Partizip II", "sein agrees with person and number"],
+  "wordOrder": ["finite sein in V2 and participle at clause end", "verbal complex final in subordinate clauses"],
+  "contextContract": ["directed movement, change of state or licensed lexical exception", "avoid regionally variable Ruheverben unless variants are explicit"],
+  "separableContract": ["classify the infinitive", "test participle formation", "write the complete sentence"],
+  "knownRisks": ["transitive use incorrectly assigned sein", "regional haben/sein variation treated as an error"]
+}

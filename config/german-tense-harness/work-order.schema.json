@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://idiomaswl.com/schemas/german-tense-work-order-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion", "campaignId", "formId", "baseCommit", "createdAt",
+    "baselineContentFingerprint", "specFingerprint", "promptFingerprint", "spec",
+    "requiredRoles", "requiredReports", "requiredCoverage", "runtimeGates", "allowedRuntimeFiles"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "campaignId": { "type": "string", "minLength": 1 },
+    "formId": { "type": "string", "minLength": 1 },
+    "baseCommit": { "type": "string", "pattern": "^[a-f0-9]{7,40}$" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "baselineContentFingerprint": { "$ref": "#/$defs/hash" },
+    "specFingerprint": { "$ref": "#/$defs/hash" },
+    "promptFingerprint": { "$ref": "#/$defs/hash" },
+    "spec": { "type": "object" },
+    "requiredRoles": { "type": "array", "minItems": 7, "uniqueItems": true, "items": { "type": "string" } },
+    "requiredReports": { "type": "array", "minItems": 7, "uniqueItems": true, "items": { "type": "string", "pattern": "\\.json$" } },
+    "requiredCoverage": { "type": "object" },
+    "runtimeGates": { "type": "array", "minItems": 7, "items": { "type": "string" } },
+    "allowedRuntimeFiles": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

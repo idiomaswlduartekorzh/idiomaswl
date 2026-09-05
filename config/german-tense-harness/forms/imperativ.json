@@ -1,0 +1,16 @@
+{
+  "id": "imperativ",
+  "label": "Imperativ",
+  "sourceFile": "src/data/practica/german-imperative-editorial.ts",
+  "stage": "queued",
+  "cefr": "A1–A2",
+  "construction": "du/ihr/Sie imperative",
+  "auxiliaryPolicy": "none",
+  "allowedAuxiliaries": [],
+  "minimumFinalUnitTokens": 1,
+  "morphology": ["du stem including licensed vowel behavior", "ihr form without pronoun", "Sie infinitive form with visible Sie"],
+  "wordOrder": ["imperative first unless a vocative precedes it", "detached particle at clause end for separable verbs"],
+  "contextContract": ["the addressee and register must be visible"],
+  "separableContract": ["hide the detached particle in level 5", "write the complete command"],
+  "knownRisks": ["wrong treatment", "missing Sie", "prefix left attached in a finite command"]
+}

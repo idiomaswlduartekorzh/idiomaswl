@@ -1,0 +1,16 @@
+{
+  "id": "plusquamperfekt",
+  "label": "Plusquamperfekt",
+  "sourceFile": "src/data/practica/german-pluperfect-editorial.ts",
+  "stage": "queued",
+  "cefr": "B1",
+  "construction": "hatte/war + Partizip II",
+  "auxiliaryPolicy": "inherits-perfect-auxiliary",
+  "allowedAuxiliaries": ["haben", "sein"],
+  "minimumFinalUnitTokens": 2,
+  "morphology": ["Präteritum of the licensed auxiliary", "correct Partizip II"],
+  "wordOrder": ["finite auxiliary in V2 and participle at clause end", "verbal complex final in subordinate clauses"],
+  "contextContract": ["an event completed before a second explicit past reference point"],
+  "separableContract": ["test participle formation without exposing the class", "write the complete sentence"],
+  "knownRisks": ["missing second past point", "auxiliary inconsistent with the lexical verb"]
+}

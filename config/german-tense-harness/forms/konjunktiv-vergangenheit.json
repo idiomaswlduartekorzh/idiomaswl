@@ -1,0 +1,16 @@
+{
+  "id": "konjunktiv-vergangenheit",
+  "label": "Irreale Vergangenheit",
+  "sourceFile": "src/data/practica/german-unreal-past-editorial.ts",
+  "stage": "queued",
+  "cefr": "B1–B2",
+  "construction": "hätte/wäre + Partizip II",
+  "auxiliaryPolicy": "inherits-perfect-auxiliary",
+  "allowedAuxiliaries": ["haben", "sein"],
+  "minimumFinalUnitTokens": 2,
+  "morphology": ["Konjunktiv II of the licensed auxiliary", "correct Partizip II"],
+  "wordOrder": ["finite hätte/wäre in V2 and participle at clause end"],
+  "contextContract": ["counterfactual past condition or consequence with the real outcome recoverable"],
+  "separableContract": ["test participle formation", "write the complete sentence"],
+  "knownRisks": ["present hypothesis instead of past counterfactual", "wrong inherited auxiliary"]
+}

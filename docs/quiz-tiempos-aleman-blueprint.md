@@ -4,6 +4,9 @@ Fuente de verdad para ampliar el quiz alemán con nuevas formas sin degradar los
 Este contrato complementa `quizzes-blueprint-operativo.md` y describe las excepciones alemanas
 que el motor común activa mediante configuración.
 
+La operación multiagente, las huellas y los estados de aceptación están en
+[`german-tense-agent-harness.md`](german-tense-agent-harness.md).
+
 ## Objetivo y cobertura
 
 Cada forma seleccionable aporta contenido propio a los seis niveles. La cobertura mínima actual
