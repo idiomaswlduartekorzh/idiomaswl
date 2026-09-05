@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { rankReadingParagraphs, readingTokens } from '../scripts/lib/ielts-reading-evidence.mjs';
+import set2 from '../src/data/mocks/ielts-set-2.ts';
 
 test('Reading evidence ranking ignores common instruction words', () => {
   assert.deepEqual(readingTokens('Choose ONE WORD ONLY from the passage for each answer.'), ['word', 'answer']);
@@ -32,4 +33,13 @@ test('controlled paraphrases locate matching-headings evidence without pretendin
   const passage = `The brain has many expressive circuits.\n\nMaking a rapid emotional assessment of events is a demanding job for the brain.\n\nWhether pleasure occurs depends on a person's outlook.`;
   assert.equal(rankReadingParagraphs(passage, "One of the brain's difficult tasks is to respond instantly to whatever is happening")[0].paragraph, 2);
   assert.equal(rankReadingParagraphs(passage, 'Individual responses relate to subjective views')[0].paragraph, 3);
+});
+
+test('Set 2 Reading Q30 uses a grammatical answer copied from its passage', () => {
+  const section = set2.sections.find(candidate => candidate.skill === 'reading' && candidate.part === 7);
+  const group = section?.questions.find(candidate => candidate.id === 'r3-summary');
+  assert.equal(group?.type, 'formgroup');
+  assert.match(section?.passage ?? '', /examples come to mind/i);
+  assert.match(group?.template ?? '', /examples come easily to \{\{30\}\}/i);
+  assert.deepEqual(group?.blanks.find(blank => blank.num === 30)?.answers, ['mind']);
 });

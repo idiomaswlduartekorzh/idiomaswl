@@ -15,7 +15,8 @@ for (let setNumber = 1; setNumber <= 20; setNumber += 1) {
   assert.equal(mock.id, mockId, `${mockId}: el id del mock no coincide`)
   assert.equal(mock.title, `IELTS Academic Set ${setNumber}`, `${mockId}: título no canónico`)
   assert.equal(blueprint.mockTitle, mock.title, `${mockId}: título del blueprint desalineado`)
-  assert.equal(blueprint.contentVersion, setNumber === 1 ? 'ielts-set-1-v4' : `ielts-set-${setNumber}-v1`, `${mockId}: versión de contenido inesperada`)
+  const expectedVersion = setNumber === 1 ? 'ielts-set-1-v4' : setNumber === 2 ? 'ielts-set-2-v2' : `ielts-set-${setNumber}-v1`
+  assert.equal(blueprint.contentVersion, expectedVersion, `${mockId}: versión de contenido inesperada`)
   assert.ok(blueprint.reviewableContentVersions.includes(blueprint.contentVersion), `${mockId}: no admite su versión activa`)
 
   const writing = mock.sections
