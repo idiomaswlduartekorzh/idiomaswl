@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-zwei",
+  "role": "warden",
+  "verdict": "PASS",
+  "candidateFingerprint": "f348114f5017d903e912bbaea94d9457a94d79a9228e007b6c3eaf999e962e2e",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "561bbcc5f629adcc03344e533987efcb73b987f9d6552097b4dd85a65181c92d",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "work-order-fingerprints",
+      "status": "PASS",
+      "harnessFingerprintMatches": true,
+      "specFingerprintMatches": true,
+      "promptFingerprintMatches": true
+    },
+    {
+      "id": "required-reports",
+      "status": "PASS",
+      "reports": [
+        {
+          "role": "author",
+          "output": "author.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "morphology",
+          "output": "morphology.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "auxiliary",
+          "output": "auxiliary.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "pedagogy",
+          "output": "pedagogy.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "adversary",
+          "output": "adversary.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "integrator",
+          "output": "integration.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "candidate-runtime-equality",
+      "status": "PASS",
+      "candidateRuntimeFingerprint": "d5910f5cf6eb45ff29b9dc937331bf000d9b8628ab969e57b6c94761179abb4b",
+      "currentRuntimeFingerprint": "d5910f5cf6eb45ff29b9dc937331bf000d9b8628ab969e57b6c94761179abb4b"
+    },
+    {
+      "id": "integration-commit",
+      "status": "PASS",
+      "expectedCommit": "349daeec65c38c618417d2b1e46a855ef0ae77ec",
+      "reportedCommit": "349daeec65c38c618417d2b1e46a855ef0ae77ec"
+    },
+    {
+      "id": "runtime-gate-1",
+      "status": "PASS",
+      "command": "npm run check:german-tense-harness",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-1"
+    },
+    {
+      "id": "runtime-gate-2",
+      "status": "PASS",
+      "command": "npm run check:tense-quests",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-2"
+    },
+    {
+      "id": "runtime-gate-3",
+      "status": "PASS",
+      "command": "npm run test:german-tense-harness",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-3"
+    },
+    {
+      "id": "runtime-gate-4",
+      "status": "PASS",
+      "command": "npx tsc --noEmit",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-4"
+    },
+    {
+      "id": "runtime-gate-5",
+      "status": "PASS",
+      "command": "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-5"
+    },
+    {
+      "id": "runtime-gate-6",
+      "status": "PASS",
+      "command": "npm run check:practica-catalog",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-6"
+    },
+    {
+      "id": "runtime-gate-7",
+      "status": "PASS",
+      "command": "npx playwright test tests/e2e/german-tense-all-forms.spec.ts",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-7"
+    },
+    {
+      "id": "local-review-url",
+      "status": "PASS",
+      "url": "http://localhost:3037/herramientas/quizes/aleman?forms=futur-zwei&level=1&review=1"
+    }
+  ],
+  "findings": [],
+  "blockers": [],
+  "reviewUrl": "http://localhost:3037/herramientas/quizes/aleman?forms=futur-zwei&level=1&review=1",
+  "generatedAt": "2026-09-05T16:02:35.689Z"
+}

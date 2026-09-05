@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "formId": "plusquamperfekt",
+  "role": "warden",
+  "verdict": "PASS",
+  "candidateFingerprint": "5d4e12be4a741f936027e538f9368a0e374b789736c9d95bb3359d37de372c52",
+  "harnessFingerprint": "dafbc13ddbae101d8941131b4ad30b794f0db3d92a8923d8e20f3577a2458ac3",
+  "specFingerprint": "4eded267f0a0d02134ca0f7ed05b5c84f4288799bc38b5143ff1283ab71954be",
+  "promptFingerprint": "8491db8999fd7dc0484da18a98c1599e0149592d26695ea784d9d1f809115d04",
+  "checks": [
+    {
+      "id": "work-order-fingerprints",
+      "status": "PASS",
+      "harnessFingerprintMatches": true,
+      "specFingerprintMatches": true,
+      "promptFingerprintMatches": true
+    },
+    {
+      "id": "required-reports",
+      "status": "PASS",
+      "reports": [
+        {
+          "role": "author",
+          "output": "author.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "morphology",
+          "output": "morphology.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "auxiliary",
+          "output": "auxiliary.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "pedagogy",
+          "output": "pedagogy.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "adversary",
+          "output": "adversary.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "integrator",
+          "output": "integration.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "candidate-runtime-equality",
+      "status": "PASS",
+      "candidateRuntimeFingerprint": "09f99f7e3b314f8ed22b43ab1052c6c9dcbec598b4ae09fdc5efbabfe8711789",
+      "currentRuntimeFingerprint": "09f99f7e3b314f8ed22b43ab1052c6c9dcbec598b4ae09fdc5efbabfe8711789"
+    },
+    {
+      "id": "integration-commit",
+      "status": "PASS",
+      "expectedCommit": "349daeec65c38c618417d2b1e46a855ef0ae77ec",
+      "reportedCommit": "349daeec65c38c618417d2b1e46a855ef0ae77ec"
+    },
+    {
+      "id": "runtime-gate-1",
+      "status": "PASS",
+      "command": "npm run check:german-tense-harness",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-1"
+    },
+    {
+      "id": "runtime-gate-2",
+      "status": "PASS",
+      "command": "npm run check:tense-quests",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-2"
+    },
+    {
+      "id": "runtime-gate-3",
+      "status": "PASS",
+      "command": "npm run test:german-tense-harness",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-3"
+    },
+    {
+      "id": "runtime-gate-4",
+      "status": "PASS",
+      "command": "npx tsc --noEmit",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-4"
+    },
+    {
+      "id": "runtime-gate-5",
+      "status": "PASS",
+      "command": "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-5"
+    },
+    {
+      "id": "runtime-gate-6",
+      "status": "PASS",
+      "command": "npm run check:practica-catalog",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-6"
+    },
+    {
+      "id": "runtime-gate-7",
+      "status": "PASS",
+      "command": "npx playwright test tests/e2e/german-tense-all-forms.spec.ts",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-7"
+    },
+    {
+      "id": "local-review-url",
+      "status": "PASS",
+      "url": "http://localhost:3037/herramientas/quizes/aleman?forms=plusquamperfekt&level=1&review=1"
+    }
+  ],
+  "findings": [],
+  "blockers": [],
+  "reviewUrl": "http://localhost:3037/herramientas/quizes/aleman?forms=plusquamperfekt&level=1&review=1",
+  "generatedAt": "2026-09-05T16:02:35.684Z"
+}
