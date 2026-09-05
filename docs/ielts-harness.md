@@ -68,6 +68,8 @@ El modo `inventory` termina correctamente aunque existan bloqueos y genera la co
 
 Las observaciones históricas del registro describen el riesgo conocido. No son aprobaciones y no pueden promover por sí solas ningún set.
 
+El barrido de límites del 5 de septiembre corrigió respuestas que excedían la instrucción visible y dos huecos sin una respuesta literal defendible. Los sets 2, 5, 6, 7, 9, 10, 11, 12, 16 y 20 avanzaron a una nueva versión de contenido; las versiones anteriores siguen revisables como historial, pero no pueden recibir intentos nuevos. El inventario queda sin alertas `ANSWER_WORD_LIMIT_REVIEW` ni `lexicalFlags`. Esto no resuelve la extensión insuficiente de Reading, la falta/desalineación de audio ni la revisión académica.
+
 ## Referencia independiente de Set 1
 
 Las cuatro partes de Listening de Set 1 se identificaron como Cambridge IELTS 10 Academic, Test 1. El fixture `set-1-listening-cambridge10-test1-reference.json` conserva únicamente la identidad, las referencias consultadas y los 40 resultados esperados; no copia el transcript. Su hash está fijado en `check-ielts-set1-listening-reference.mjs`. El check convierte índices MCQ a letras, normaliza variantes de formato como `2020`/`2,020` y exige la misma cobertura Q1–Q40. Esto confirma la clave; la correspondencia completa del archivo de audio sigue necesitando ASR y timecodes.

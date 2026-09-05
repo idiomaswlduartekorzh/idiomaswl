@@ -378,7 +378,7 @@ The regulatory response to microplastic pollution has been partial and slow. Sev
         },
         {
           type: 'formgroup', id: 'r1-sent', part: 5, qRange: [8, 13],
-          groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage.',
+          groupLabel: 'Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage.',
           template: `8. Plastic does not {{8}} but instead breaks into progressively smaller fragments.\n9. Fragmentation of larger plastics occurs through ultraviolet radiation, wave action, and {{9}}.\n10. Microplastics scavenge {{10}} from seawater, concentrating toxins that enter the food chain.\n11. Certain plastic additives are known {{11}} that interfere with hormonal regulation.\n12. Microbead bans address only a small proportion of microplastic input compared to {{12}} microplastics.\n13. The 2022 plastic pollution treaty was described as the most significant environmental agreement since the {{13}}.`,
           blanks: [
             { num: 8, answers: ['biodegrade'] }, { num: 9, answers: ['mechanical abrasion'] },

@@ -474,11 +474,11 @@ G. The International Dark-Sky Association campaigns globally for better lighting
           qRange: [21, 26],
           groupLabel: 'Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
           title: 'The Impact of Light Pollution on Wildlife',
-          template: `Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings are drawn towards {{22}} areas rather than the sea. In birds, the problem of {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.`,
+          template: `Artificial light disrupts the production of {{21}}, a hormone that governs sleep cycles and reproduction. Sea turtles are severely affected because hatchlings are drawn towards {{22}} areas rather than the sea. In birds, the problem of fatal {{23}} occurs when they circle lit buildings during migration. Insects are attracted to light in a process called positive {{24}}, and many do not survive. Studies show that illuminated {{25}} have fewer nocturnal pollinators than unlit ones. Despite the severity of the problem, light pollution is considered highly {{26}} because its effects stop almost immediately once lights are turned off.`,
           blanks: [
             { num: 21, answers: ['melatonin'] },
             { num: 22, answers: ['lit', 'illuminated', 'developed'] },
-            { num: 23, answers: ['fatal light attraction'] },
+            { num: 23, answers: ['light attraction'] },
             { num: 24, answers: ['phototaxis'] },
             { num: 25, answers: ['hedgerows'] },
             { num: 26, answers: ['reversible'] },

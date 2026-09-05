@@ -172,7 +172,7 @@ Finally, before you leave, do go up to the viewing platform on the top floor, wh
 • Guided tours last about {{19}}.
 • Visitors are asked to complete a {{20}}.`,
           blanks: [
-            { num: 13, answers: ['four thirty', '4.30', '4:30', 'half past four'], maxWords: 2 },
+            { num: 13, answers: ['four thirty', '4.30', '4:30'], maxWords: 2 },
             { num: 14, answers: ['model railway'], maxWords: 2 },
             { num: 15, answers: ['gift shop', 'shop'], maxWords: 2 },
             { num: 16, answers: ['worksheet'], maxWords: 1 },

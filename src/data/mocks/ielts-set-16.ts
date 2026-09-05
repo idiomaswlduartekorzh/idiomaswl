@@ -176,7 +176,7 @@ Goals
           blanks: [
             { num: 13, answers: ['green'], maxWords: 2 },
             { num: 14, answers: ['Wednesday'], maxWords: 2 },
-            { num: 15, answers: ['fortnightly', 'every two weeks', 'two weeks'], maxWords: 2 },
+            { num: 15, answers: ['fortnightly', 'two weeks'], maxWords: 2 },
             { num: 16, answers: ['30 June', 'June'], maxWords: 2 },
             { num: 17, answers: ['helpline', 'recycling helpline'], maxWords: 2 },
             { num: 18, answers: ['voucher', 'shopping voucher'], maxWords: 2 },
@@ -411,7 +411,7 @@ Achieving full decarbonisation of energy systems by mid-century—as required by
           id: 'r1-sent',
           part: 5,
           qRange: [8, 13],
-          groupLabel: 'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.',
+          groupLabel: 'Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.',
           template: `8. The process of cost reduction through accumulated manufacturing experience is known as {{8}}.\n9. Power stations that can generate electricity on demand are described in the passage as {{9}} sources.\n10. Electric vehicles could potentially help balance electricity grids through {{10}} charging systems.\n11. The {{11}} process uses renewable electricity to split water into hydrogen and oxygen.\n12. Countries in which fossil fuels are a major source of {{12}} face the most complex energy transitions.\n13. The global climate agreement requiring mid-century decarbonisation is known as the {{13}}.`,
           blanks: [
             { num: 8, answers: ['learning by doing', 'Wright\'s Law'] },
