@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "perfekt-sein",
+  "baseCommit": "da911c57197a6898bbfb1c2659616b7d6a83710b",
+  "createdAt": "2026-09-06T22:35:02.361Z",
+  "baselineContentFingerprint": "6e468f8ad012f5120cc21e5cee87c2adfd8d5d11a419026673fff6a0e670ff1e",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "e9888a3a5cd899657f824311f1d608252fe66042286c00337661271cf414417c",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "spec": {
+    "id": "perfekt-sein",
+    "label": "Perfekt mit sein",
+    "sourceFile": "src/data/practica/german-perfect-sein-editorial.ts",
+    "stage": "queued",
+    "cefr": "A1–A2",
+    "construction": "finite sein + Partizip II",
+    "auxiliaryPolicy": "fixed-sein",
+    "allowedAuxiliaries": [
+      "sein"
+    ],
+    "minimumFinalUnitTokens": 2,
+    "levelOneClauseContract": {
+      "allowedConnectors": [
+        "dass",
+        "weil",
+        "obwohl",
+        "wenn",
+        "nachdem",
+        "bevor",
+        "ob"
+      ],
+      "minimumDistinctConnectors": 4,
+      "maximumUsesPerConnector": 3,
+      "minimumInterrogativeContexts": 2,
+      "minimumMatrixObQuestions": 2,
+      "minimumPreposedTargetClauses": 2,
+      "requireContiguousVerbalUnit": true
+    },
+    "morphology": [
+      "correct Partizip II",
+      "sein agrees with person and number"
+    ],
+    "wordOrder": [
+      "finite sein in V2 and participle at clause end",
+      "verbal complex final in subordinate clauses"
+    ],
+    "contextContract": [
+      "directed movement, change of state or licensed lexical exception",
+      "avoid regionally variable Ruheverben unless variants are explicit"
+    ],
+    "separableContract": [
+      "classify the infinitive",
+      "test participle formation",
+      "write the complete sentence"
+    ],
+    "knownRisks": [
+      "transitive use incorrectly assigned sein",
+      "regional haben/sein variation treated as an error"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "auxiliary",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "auxiliary.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-perfect-sein-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

@@ -8,6 +8,15 @@
   "auxiliaryPolicy": "fixed-wuerde",
   "allowedAuxiliaries": ["würde"],
   "minimumFinalUnitTokens": 2,
+  "levelOneClauseContract": {
+    "allowedConnectors": ["dass", "weil", "obwohl", "wenn", "ob"],
+    "minimumDistinctConnectors": 4,
+    "maximumUsesPerConnector": 3,
+    "minimumInterrogativeContexts": 2,
+    "minimumMatrixObQuestions": 2,
+    "minimumPreposedTargetClauses": 2,
+    "requireContiguousVerbalUnit": true
+  },
   "morphology": ["würde agrees with person and number", "lexical verb remains infinitive"],
   "wordOrder": ["finite würde in V2 and infinitive at clause end"],
   "contextContract": ["explicit hypothesis, polite request or conditional result", "exclude a plain future reading"],

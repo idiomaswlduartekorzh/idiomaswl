@@ -26,3 +26,13 @@ hueco debe contener una unidad verbal contigua. Nivel 4 contiene cinco oraciones
 verbales completas en `runtime.finalStories[].gaps[].answers`, no auxiliares o participios aislados.
 Cada respuesta debe alcanzar `spec.minimumFinalUnitTokens`. Declara las fuentes consultadas y cualquier
 variante regional; una duda sin resolver bloquea la entrega.
+
+En nivel 1 cumple `spec.levelOneClauseContract` cuando exista. Usa al menos el número indicado de
+conectores distintos, no superes el máximo por conector y escribe como mínimo los contextos
+interrogativos exigidos. El conector cuenta solo si abre la cláusula que contiene `___`; un conector
+de una cláusula anterior no cumple el contrato. Entrega como mínimo `minimumMatrixObQuestions`
+preguntas matrices que introduzcan la cláusula objetivo con `ob` y
+`minimumPreposedTargetClauses` subordinadas objetivo antepuestas, antes de su cláusula matriz. En
+tiempos compuestos o perifrásticos, el hueco permanece dentro de la subordinada para que la respuesta
+y cada distractor contengan la unidad verbal completa y contigua. Completa el banco con subordinadas
+incrustadas y no conviertas los diez retos en variantes del mismo molde con `dass`.

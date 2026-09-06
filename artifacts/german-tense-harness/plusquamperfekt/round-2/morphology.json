@@ -1,0 +1,755 @@
+{
+  "schemaVersion": 1,
+  "formId": "plusquamperfekt",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "d76c25e6c53f4bc59c75a7907ad0634cfd65250b8283d9c86b191592291f7164",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "5c0ae26a4fda234882b9e42f9cb9037dfef9f203ff282caaa5946e457eae97c6",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gemacht hatte"
+      ],
+      "declaredAnswer": [
+        "gemacht hatte"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Beim Gespräch erklärte ich, dass ich die Arbeit schon gemacht hatte."
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekauft hattest"
+      ],
+      "declaredAnswer": [
+        "gekauft hattest"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Du hattest Brot, weil du es am Morgen gekauft hattest."
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gelernt hatte"
+      ],
+      "declaredAnswer": [
+        "gelernt hatte"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Lena verstand die Aufgabe, obwohl sie nur kurz gelernt hatte."
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekocht hatten"
+      ],
+      "declaredAnswer": [
+        "gekocht hatten"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Kannst du bestätigen, ob wir schon gekocht hatten, bevor die Gäste ankamen?"
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gespielt hattet"
+      ],
+      "declaredAnswer": [
+        "gespielt hattet"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Nachdem ihr lange Fußball gespielt hattet, wart ihr müde."
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "geschlafen hatten"
+      ],
+      "declaredAnswer": [
+        "geschlafen hatten"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Bevor die Kinder genug geschlafen hatten, weckte der Lärm sie."
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegangen war"
+      ],
+      "declaredAnswer": [
+        "gegangen war"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Die Nachbarin sagte, dass ich vor dem Alarm schon gegangen war."
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekommen warst"
+      ],
+      "declaredAnswer": [
+        "gekommen warst"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Weißt du, ob du vor dem Beginn gekommen warst?"
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefahren war"
+      ],
+      "declaredAnswer": [
+        "gefahren war"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Paul kannte den Weg zum See, weil er schon einmal dorthin gefahren war."
+    },
+    {
+      "itemId": "de-plusquamperfekt-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "geblieben waren"
+      ],
+      "declaredAnswer": [
+        "geblieben waren"
+      ],
+      "rule": "Partizip II correcto seguido de hatte/war concordado en la subordinada; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "Obwohl wir lange dort geblieben waren, kannten wir kaum jemanden."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegessen hatten"
+      ],
+      "declaredAnswer": [
+        "gegessen hatten"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegangen war"
+      ],
+      "declaredAnswer": [
+        "gegangen war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "vergessen hatte"
+      ],
+      "declaredAnswer": [
+        "vergessen hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "verteilt hatte"
+      ],
+      "declaredAnswer": [
+        "verteilt hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "ausgezogen waren"
+      ],
+      "declaredAnswer": [
+        "ausgezogen waren"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gelöscht hatte"
+      ],
+      "declaredAnswer": [
+        "gelöscht hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gesichert hatten"
+      ],
+      "declaredAnswer": [
+        "gesichert hatten"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gelesen hatten"
+      ],
+      "declaredAnswer": [
+        "gelesen hatten"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "angekommen war"
+      ],
+      "declaredAnswer": [
+        "angekommen war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gehört hatte"
+      ],
+      "declaredAnswer": [
+        "gehört hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gehängt hatte",
+        "geprüft hatten",
+        "angekommen war"
+      ],
+      "declaredAnswer": [
+        "gehängt hatte",
+        "geprüft hatten",
+        "angekommen war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "«Als sich die Türen öffneten» concuerda con el sujeto plural reflexivo; las tres unidades objetivo usan participio, auxiliar heredado y orden final correctos."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "abgefahren war",
+        "geschlossen hatte",
+        "angezeigt hatte"
+      ],
+      "declaredAnswer": [
+        "abgefahren war",
+        "geschlossen hatte",
+        "angezeigt hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gespeichert hatte",
+        "erstellt hatte",
+        "gewechselt war"
+      ],
+      "declaredAnswer": [
+        "gespeichert hatte",
+        "erstellt hatte",
+        "gewechselt war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "verpackt hatte",
+        "notiert hatte",
+        "gefahren war"
+      ],
+      "declaredAnswer": [
+        "verpackt hatte",
+        "notiert hatte",
+        "gefahren war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gestimmt hatten",
+        "geändert hatte",
+        "gegangen war"
+      ],
+      "declaredAnswer": [
+        "gestimmt hatten",
+        "geändert hatte",
+        "gegangen war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "getrunken hatte",
+        "verwendet hatten",
+        "angekommen war"
+      ],
+      "declaredAnswer": [
+        "getrunken hatte",
+        "verwendet hatten",
+        "angekommen war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "sortiert hatte",
+        "verglichen hatte",
+        "gekommen war"
+      ],
+      "declaredAnswer": [
+        "sortiert hatte",
+        "verglichen hatte",
+        "gekommen war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "abgeschlossen hatte",
+        "aufgehängt hatte",
+        "gefahren war"
+      ],
+      "declaredAnswer": [
+        "abgeschlossen hatte",
+        "aufgehängt hatte",
+        "gefahren war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gerochen hatte",
+        "registriert hatte",
+        "hinausgelaufen waren"
+      ],
+      "declaredAnswer": [
+        "gerochen hatte",
+        "registriert hatte",
+        "hinausgelaufen waren"
+      ],
+      "rule": "El Partizip II de „hinauslaufen“ se escribe unido; sein concuerda con el sujeto plural.",
+      "evidence": "La reconstrucción produce «dass zwei Besucher schon hinausgelaufen waren». Prefijo, participio y auxiliar quedan completos y unidos."
+    },
+    {
+      "id": "de-plusquamperfekt-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "vergessen hatte",
+        "verlassen hatte",
+        "gegangen war"
+      ],
+      "declaredAnswer": [
+        "vergessen hatte",
+        "verlassen hatte",
+        "gegangen war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "waren"
+      ],
+      "declaredAnswer": [
+        "waren"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "war"
+      ],
+      "declaredAnswer": [
+        "war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hatten"
+      ],
+      "declaredAnswer": [
+        "hatten"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "geschlossen hatte"
+      ],
+      "declaredAnswer": [
+        "geschlossen hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hatte"
+      ],
+      "declaredAnswer": [
+        "hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefahren war"
+      ],
+      "declaredAnswer": [
+        "gefahren war"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegessen hatten"
+      ],
+      "declaredAnswer": [
+        "gegessen hatten"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "abgehoben hatte"
+      ],
+      "declaredAnswer": [
+        "abgehoben hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "geregnet hatte"
+      ],
+      "declaredAnswer": [
+        "geregnet hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "hatte"
+      ],
+      "declaredAnswer": [
+        "hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Die Straße war leer, weil alle das Fest verlassen hatten.",
+        "Die Straße war leer, weil alle das Fest verlassen hatten"
+      ],
+      "declaredAnswer": [
+        "Die Straße war leer, weil alle das Fest verlassen hatten.",
+        "Die Straße war leer, weil alle das Fest verlassen hatten"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Als die Sitzung begann, hatten wir alles vorbereitet.",
+        "Als die Sitzung begann, hatten wir alles vorbereitet"
+      ],
+      "declaredAnswer": [
+        "Als die Sitzung begann, hatten wir alles vorbereitet.",
+        "Als die Sitzung begann, hatten wir alles vorbereitet"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht.",
+        "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht"
+      ],
+      "declaredAnswer": [
+        "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht.",
+        "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Als ich ankam, war der Lieferwagen schon weggefahren.",
+        "Als ich ankam, war der Lieferwagen schon weggefahren"
+      ],
+      "declaredAnswer": [
+        "Als ich ankam, war der Lieferwagen schon weggefahren.",
+        "Als ich ankam, war der Lieferwagen schon weggefahren"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Das Material lag bereit, denn die Firma hatte es früh bestellt.",
+        "Das Material lag bereit, denn die Firma hatte es früh bestellt"
+      ],
+      "declaredAnswer": [
+        "Das Material lag bereit, denn die Firma hatte es früh bestellt.",
+        "Das Material lag bereit, denn die Firma hatte es früh bestellt"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte.",
+        "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte"
+      ],
+      "declaredAnswer": [
+        "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte.",
+        "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen.",
+        "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen"
+      ],
+      "declaredAnswer": [
+        "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen.",
+        "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten.",
+        "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten"
+      ],
+      "declaredAnswer": [
+        "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten.",
+        "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Der Bus fuhr los, nachdem alle eingestiegen waren.",
+        "Der Bus fuhr los, nachdem alle eingestiegen waren"
+      ],
+      "declaredAnswer": [
+        "Der Bus fuhr los, nachdem alle eingestiegen waren.",
+        "Der Bus fuhr los, nachdem alle eingestiegen waren"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte.",
+        "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte"
+      ],
+      "declaredAnswer": [
+        "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte.",
+        "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-plusquamperfekt-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": [
+        "entdeckt hatte",
+        "gebrochen war",
+        "gelaufen war",
+        "ausgelagert hatte",
+        "geschlossen hatte",
+        "notiert hatte",
+        "geprüft hatte",
+        "untersucht hatten",
+        "festgelegt hatte",
+        "aktualisiert hatte"
+      ],
+      "declaredAnswer": [
+        "entdeckt hatte",
+        "gebrochen war",
+        "gelaufen war",
+        "ausgelagert hatte",
+        "geschlossen hatte",
+        "notiert hatte",
+        "geprüft hatte",
+        "untersucht hatten",
+        "festgelegt hatte",
+        "aktualisiert hatte"
+      ],
+      "rule": "Partizip II + hatte/war flexionado; el auxiliar hereda la selección del Perfekt.",
+      "evidence": "10 unidades completas verificadas en orden dentro de una historia continua."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:42:24.258946Z"
+}

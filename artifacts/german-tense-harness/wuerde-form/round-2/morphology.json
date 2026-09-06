@@ -1,0 +1,755 @@
+{
+  "schemaVersion": 1,
+  "formId": "wuerde-form",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "9737dc5aa962b0270fffb64071bab9efad899abdd9c5743005450dfe22fa2fae",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "59ad4063aef397be84d6cff1aa9157acc237456f3f05578a7ff8804eb7ae23c9",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "itemId": "de-wuerde-form-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "reisen würde"
+      ],
+      "declaredAnswer": [
+        "reisen würde"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Ich glaube, dass ich mit mehr Zeit öfter reisen würde."
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "helfen würdest"
+      ],
+      "declaredAnswer": [
+        "helfen würdest"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Ich würde dich anrufen, weil du mir in dieser Lage sofort helfen würdest."
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "kommen würde"
+      ],
+      "declaredAnswer": [
+        "kommen würde"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Obwohl Mia mit einem Auto früher kommen würde, nähme sie lieber den Zug."
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "kochen würden"
+      ],
+      "declaredAnswer": [
+        "kochen würden"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Kannst du sagen, ob wir mit einer eigenen Küche selbst kochen würden?"
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "bleiben würdet"
+      ],
+      "declaredAnswer": [
+        "bleiben würdet"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Wenn ihr ohne den Regen länger bleiben würdet, könnten wir noch spazieren gehen."
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "spielen würden"
+      ],
+      "declaredAnswer": [
+        "spielen würden"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Ich glaube, dass die Kinder bei Sonnenschein draußen spielen würden."
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "kaufen würde"
+      ],
+      "declaredAnswer": [
+        "kaufen würde"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Meine Eltern wären einverstanden, wenn ich das Rad mit eigenem Geld kaufen würde."
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "arbeiten würdest"
+      ],
+      "declaredAnswer": [
+        "arbeiten würdest"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Weißt du, ob du ohne Lärm besser arbeiten würdest?"
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "wohnen würde"
+      ],
+      "declaredAnswer": [
+        "wohnen würde"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Mit einem Stipendium könnte Paul sparen, weil er günstig im Wohnheim wohnen würde."
+    },
+    {
+      "itemId": "de-wuerde-form-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufräumen würden"
+      ],
+      "declaredAnswer": [
+        "aufräumen würden"
+      ],
+      "rule": "Infinitivo léxico seguido de würde concordado en la subordinada; la respuesta conserva la unidad perifrástica completa.",
+      "evidence": "Obwohl wir mit Hilfe schneller aufräumen würden, bliebe noch viel Arbeit."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "reisen würde"
+      ],
+      "declaredAnswer": [
+        "reisen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "reservieren würden"
+      ],
+      "declaredAnswer": [
+        "reservieren würden"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "annehmen würde"
+      ],
+      "declaredAnswer": [
+        "annehmen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "schlafen würde"
+      ],
+      "declaredAnswer": [
+        "schlafen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "warten würde"
+      ],
+      "declaredAnswer": [
+        "warten würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "finanzieren würde"
+      ],
+      "declaredAnswer": [
+        "finanzieren würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "wählen würde"
+      ],
+      "declaredAnswer": [
+        "wählen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "helfen würde"
+      ],
+      "declaredAnswer": [
+        "helfen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "prüfen würde"
+      ],
+      "declaredAnswer": [
+        "prüfen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "wohnen würde"
+      ],
+      "declaredAnswer": [
+        "wohnen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "fliegen würde",
+        "mieten würde",
+        "reisen würden"
+      ],
+      "declaredAnswer": [
+        "fliegen würde",
+        "mieten würde",
+        "reisen würden"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "verschieben würde",
+        "nehmen würde",
+        "suchen würde"
+      ],
+      "declaredAnswer": [
+        "verschieben würde",
+        "nehmen würde",
+        "suchen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "kommen würden",
+        "steigen würde",
+        "einstellen würde"
+      ],
+      "declaredAnswer": [
+        "kommen würden",
+        "steigen würde",
+        "einstellen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "beginnen würde",
+        "machen würde",
+        "aufhören würden"
+      ],
+      "declaredAnswer": [
+        "beginnen würde",
+        "machen würde",
+        "aufhören würden"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "fahren würden",
+        "werden würde",
+        "werden würde"
+      ],
+      "declaredAnswer": [
+        "fahren würden",
+        "werden würde",
+        "werden würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "vergleichen würde",
+        "einholen würde",
+        "entscheiden würde"
+      ],
+      "declaredAnswer": [
+        "vergleichen würde",
+        "einholen würde",
+        "entscheiden würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "installieren würde",
+        "lagern würde",
+        "liefern würde"
+      ],
+      "declaredAnswer": [
+        "installieren würde",
+        "lagern würde",
+        "liefern würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "ersetzen würde",
+        "akzeptieren würde",
+        "prüfen würde"
+      ],
+      "declaredAnswer": [
+        "ersetzen würde",
+        "akzeptieren würde",
+        "prüfen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "ziehen würde",
+        "anlegen würde",
+        "spielen würden"
+      ],
+      "declaredAnswer": [
+        "ziehen würde",
+        "anlegen würde",
+        "spielen würden"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "verlegen würde",
+        "planen würde",
+        "begrünen würde"
+      ],
+      "declaredAnswer": [
+        "verlegen würde",
+        "planen würde",
+        "begrünen würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würde"
+      ],
+      "declaredAnswer": [
+        "würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würde"
+      ],
+      "declaredAnswer": [
+        "würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würde"
+      ],
+      "declaredAnswer": [
+        "würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würden"
+      ],
+      "declaredAnswer": [
+        "würden"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würde"
+      ],
+      "declaredAnswer": [
+        "würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würden"
+      ],
+      "declaredAnswer": [
+        "würden"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würden"
+      ],
+      "declaredAnswer": [
+        "würden"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würdet"
+      ],
+      "declaredAnswer": [
+        "würdet"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würde"
+      ],
+      "declaredAnswer": [
+        "würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "würde"
+      ],
+      "declaredAnswer": [
+        "würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Ohne den Termin würdet ihr am Kurs teilnehmen.",
+        "Ohne den Termin würdet ihr am Kurs teilnehmen"
+      ],
+      "declaredAnswer": [
+        "Ohne den Termin würdet ihr am Kurs teilnehmen.",
+        "Ohne den Termin würdet ihr am Kurs teilnehmen"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen.",
+        "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen"
+      ],
+      "declaredAnswer": [
+        "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen.",
+        "Mit dem Stipendium würden die Studierenden mehr Unterstützung bekommen"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "An deiner Stelle würde ich das Gespräch vorbereiten.",
+        "An deiner Stelle würde ich das Gespräch vorbereiten"
+      ],
+      "declaredAnswer": [
+        "An deiner Stelle würde ich das Gespräch vorbereiten.",
+        "An deiner Stelle würde ich das Gespräch vorbereiten"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit deiner Nummer würde ich die Werkstatt sofort anrufen.",
+        "Mit deiner Nummer würde ich die Werkstatt sofort anrufen"
+      ],
+      "declaredAnswer": [
+        "Mit deiner Nummer würde ich die Werkstatt sofort anrufen.",
+        "Mit deiner Nummer würde ich die Werkstatt sofort anrufen"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen.",
+        "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen"
+      ],
+      "declaredAnswer": [
+        "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen.",
+        "Wenn Nora mehr Zeit hätte, würde sie in Berlin mehrere Museen besuchen"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Bei gutem Wetter würden wir gern mitkommen.",
+        "Bei gutem Wetter würden wir gern mitkommen"
+      ],
+      "declaredAnswer": [
+        "Bei gutem Wetter würden wir gern mitkommen.",
+        "Bei gutem Wetter würden wir gern mitkommen"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Vor Freunden würde er die Geschichte anders erzählen.",
+        "Vor Freunden würde er die Geschichte anders erzählen"
+      ],
+      "declaredAnswer": [
+        "Vor Freunden würde er die Geschichte anders erzählen.",
+        "Vor Freunden würde er die Geschichte anders erzählen"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit einem Beispiel würdest du die Regel besser verstehen.",
+        "Mit einem Beispiel würdest du die Regel besser verstehen"
+      ],
+      "declaredAnswer": [
+        "Mit einem Beispiel würdest du die Regel besser verstehen.",
+        "Mit einem Beispiel würdest du die Regel besser verstehen"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mit mehr Zeit würde Lea den Keller aufräumen.",
+        "Mit mehr Zeit würde Lea den Keller aufräumen"
+      ],
+      "declaredAnswer": [
+        "Mit mehr Zeit würde Lea den Keller aufräumen.",
+        "Mit mehr Zeit würde Lea den Keller aufräumen"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Bei klarem Himmel würde das Team mehr Details entdecken.",
+        "Bei klarem Himmel würde das Team mehr Details entdecken"
+      ],
+      "declaredAnswer": [
+        "Bei klarem Himmel würde das Team mehr Details entdecken.",
+        "Bei klarem Himmel würde das Team mehr Details entdecken"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-wuerde-form-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": [
+        "eröffnen würde",
+        "einrichten würde",
+        "anbieten würden",
+        "leiten würde",
+        "renovieren würden",
+        "bepflanzen würden",
+        "helfen würde",
+        "übernehmen würde",
+        "helfen würdet",
+        "werden würde"
+      ],
+      "declaredAnswer": [
+        "eröffnen würde",
+        "einrichten würde",
+        "anbieten würden",
+        "leiten würde",
+        "renovieren würden",
+        "bepflanzen würden",
+        "helfen würde",
+        "übernehmen würde",
+        "helfen würdet",
+        "werden würde"
+      ],
+      "rule": "finite würde + Infinitiv",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:42:24.258946Z"
+}

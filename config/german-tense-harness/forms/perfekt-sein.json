@@ -8,6 +8,15 @@
   "auxiliaryPolicy": "fixed-sein",
   "allowedAuxiliaries": ["sein"],
   "minimumFinalUnitTokens": 2,
+  "levelOneClauseContract": {
+    "allowedConnectors": ["dass", "weil", "obwohl", "wenn", "nachdem", "bevor", "ob"],
+    "minimumDistinctConnectors": 4,
+    "maximumUsesPerConnector": 3,
+    "minimumInterrogativeContexts": 2,
+    "minimumMatrixObQuestions": 2,
+    "minimumPreposedTargetClauses": 2,
+    "requireContiguousVerbalUnit": true
+  },
   "morphology": ["correct Partizip II", "sein agrees with person and number"],
   "wordOrder": ["finite sein in V2 and participle at clause end", "verbal complex final in subordinate clauses"],
   "contextContract": ["directed movement, change of state or licensed lexical exception", "avoid regionally variable Ruheverben unless variants are explicit"],

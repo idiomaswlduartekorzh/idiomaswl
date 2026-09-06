@@ -1,15 +1,15 @@
 import { createGermanCompactPack, type GermanCompactChoice, type GermanCompactFinal, type GermanCompactMicro, type GermanCompactStory } from './german-editorial-builder.ts'
 const choices: GermanCompactChoice[] = [
-  ['„ich“ mit gehen','Ich sage, dass ich nach Hause ','.','gegangen bin','gegangen bist','gegangen ist','gegangen sind'],
-  ['„du“ mit kommen','Du sagst, dass du früh ','.','gekommen bist','gekommen bin','gekommen ist','gekommen seid'],
-  ['„Lena“ mit fahren','Lena erzählt, dass sie nach Bonn ','.','gefahren ist','gefahren bin','gefahren bist','gefahren sind'],
-  ['„wir“ mit laufen','Wir sagen, dass wir zum Park ','.','gelaufen sind','gelaufen bin','gelaufen ist','gelaufen seid'],
-  ['„ihr“ mit bleiben','Ihr sagt, dass ihr zu Hause ','.','geblieben seid','geblieben bin','geblieben ist','geblieben sind'],
-  ['„die Gäste“ mit ankommen','Die Gäste melden, dass sie pünktlich ','.','angekommen sind','angekommen bin','angekommen bist','angekommen ist'],
-  ['„ich“ mit aufstehen','Ich sage, dass ich früh ','.','aufgestanden bin','aufgestanden bist','aufgestanden ist','aufgestanden sind'],
-  ['„du“ mit einschlafen','Du sagst, dass du schnell ','.','eingeschlafen bist','eingeschlafen bin','eingeschlafen ist','eingeschlafen seid'],
-  ['„das Kind“ mit wachsen','Die Mutter sagt, dass das Kind schnell ','.','gewachsen ist','gewachsen bin','gewachsen bist','gewachsen sind'],
-  ['„wir“ mit zurückkommen','Wir erzählen, dass wir spät ','.','zurückgekommen sind','zurückgekommen bin','zurückgekommen ist','zurückgekommen seid'],
+  ['„ich“ mit gehen','Mara bestätigt, dass ich nach Hause ','.','gegangen bin','gegangen bist','gegangen ist','gegangen sind'],
+  ['„du“ mit kommen','Du bist schon hier, weil du früh ','.','gekommen bist','gekommen bin','gekommen ist','gekommen seid'],
+  ['„Lena“ mit fahren','Obwohl Lena nach Bonn ',', nimmt sie online an der Sitzung teil.','gefahren ist','gefahren bin','gefahren bist','gefahren sind'],
+  ['„wir“ mit laufen','Kannst du bestätigen, ob wir zum Park ','?','gelaufen sind','gelaufen bin','gelaufen ist','gelaufen seid'],
+  ['„ihr“ mit bleiben','Wenn ihr zu Hause ',', habt ihr den Sturm vermieden.','geblieben seid','geblieben bin','geblieben ist','geblieben sind'],
+  ['„die Gäste“ mit ankommen','Die Rezeption meldet, dass die Gäste pünktlich ','.','angekommen sind','angekommen bin','angekommen bist','angekommen ist'],
+  ['„ich“ mit aufstehen','Bevor ich früh ',', habe ich den Wecker ausgeschaltet.','aufgestanden bin','aufgestanden bist','aufgestanden ist','aufgestanden sind'],
+  ['„du“ mit einschlafen','Weißt du, ob du schnell ','?','eingeschlafen bist','eingeschlafen bin','eingeschlafen ist','eingeschlafen seid'],
+  ['„das Kind“ mit wachsen','Die Mutter kauft neue Kleidung, weil das Kind schnell ','.','gewachsen ist','gewachsen bin','gewachsen bist','gewachsen sind'],
+  ['„wir“ mit zurückkommen','Obwohl wir spät ',', hatte die Sitzung noch nicht begonnen.','zurückgekommen sind','zurückgekommen bin','zurückgekommen ist','zurückgekommen seid'],
 ]
 const micro: GermanCompactMicro[] = [
   ['Ankunft in Berlin','einen abgeschlossenen Ortswechsel','Wir hören, dass Nora am Samstag in Berlin ','.','ankommen','angekommen ist','angekommen hat','ankam','angekommen war'],['Der Nachtzug','eine vollendete Bewegung','Sie wissen, dass wir mit dem Nachtzug ','.','fahren','gefahren sind','gefahren haben','fuhren','gefahren waren'],['Das müde Kind','eine Zustandsänderung','Gut, dass das Kind sofort ','.','einschlafen','eingeschlafen ist','eingeschlafen hat','einschlief','eingeschlafen war'],['Der frühe Aufbruch','einen abgeschlossenen Ortswechsel','Lina sagt, dass sie vor Sonnenaufgang ','.','aufbrechen','aufgebrochen ist','aufgebrochen hat','brach auf','aufgebrochen war'],['Der nasse Boden','eine eingetretene Zustandsänderung','Der Hausmeister merkt, dass das Eis vollständig ','.','schmelzen','geschmolzen ist','geschmolzen hat','schmolz','geschmolzen war'],['Die Rückkehr','eine Bewegung zum Ausgangspunkt','Amir bestätigt, dass seine Eltern gestern ','.','zurückkehren','zurückgekehrt sind','zurückgekehrt haben','kehrten zurück','zurückgekehrt waren'],['Das schnelle Wachstum','eine abgeschlossene Zustandsänderung','Die Ärztin erklärt, dass das Kind stark ','.','wachsen','gewachsen ist','gewachsen hat','wuchs','gewachsen war'],['Der Treppensturz','ein eingetretenes Ereignis ohne Objekt','Sie berichtet, dass ihr Bruder auf der Treppe ','.','stürzen','gestürzt ist','gestürzt hat','stürzte','gestürzt war'],['Der Flug nach Oslo','eine abgeschlossene gerichtete Bewegung','Die Gäste sagen, dass sie direkt nach Oslo ','.','fliegen','geflogen sind','geflogen haben','flogen','geflogen waren'],['Das verstummte Radio','eine Zustandsänderung','Plötzlich merken wir, dass das alte Radio ','.','verstummen','verstummt ist','verstummt hat','verstummte','verstummt war'],

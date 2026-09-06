@@ -1,0 +1,1101 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-sein",
+  "role": "auxiliary",
+  "verdict": "PASS",
+  "candidateFingerprint": "f85c2964ae14ff1153ae4ba0c62e8bde60c3c7a2e9fec8c790f49dec6e0dd9c8",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "e9888a3a5cd899657f824311f1d608252fe66042286c00337661271cf414417c",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "Mara bestätigt, dass ich nach Hause gegangen bin.",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gegangen bin» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kommen",
+          "sense": "Du bist schon hier, weil du früh gekommen bist.",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gekommen bist» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fahren",
+          "sense": "Obwohl Lena nach Bonn gefahren ist, nimmt sie online an der Sitzung teil.",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gefahren ist» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "laufen",
+          "sense": "Kannst du bestätigen, ob wir zum Park gelaufen sind?",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gelaufen sind» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bleiben",
+          "sense": "Wenn ihr zu Hause geblieben seid, habt ihr den Sturm vermieden.",
+          "valency": "Excepción léxica estable del sistema de Perfekt; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «geblieben seid» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "Die Rezeption meldet, dass die Gäste pünktlich angekommen sind.",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «angekommen sind» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufstehen",
+          "sense": "Bevor ich früh aufgestanden bin, habe ich den Wecker ausgeschaltet.",
+          "valency": "Cambio de estado intransitivo; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «aufgestanden bin» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "einschlafen",
+          "sense": "Weißt du, ob du schnell eingeschlafen bist?",
+          "valency": "Cambio de estado intransitivo; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «eingeschlafen bist» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "wachsen",
+          "sense": "Die Mutter kauft neue Kleidung, weil das Kind schnell gewachsen ist.",
+          "valency": "Cambio de estado intransitivo; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gewachsen ist» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-perfekt-sein-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückkommen",
+          "sense": "Obwohl wir spät zurückgekommen sind, hatte die Sitzung noch nicht begonnen.",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «zurückgekommen sind» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "Wir hören, dass Nora am Samstag in Berlin ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fahren",
+          "sense": "Sie wissen, dass wir mit dem Nachtzug ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "einschlafen",
+          "sense": "Gut, dass das Kind sofort ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufbrechen",
+          "sense": "Lina sagt, dass sie vor Sonnenaufgang ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "schmelzen",
+          "sense": "Der Hausmeister merkt, dass das Eis vollständig ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückkehren",
+          "sense": "Amir bestätigt, dass seine Eltern gestern ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "wachsen",
+          "sense": "Die Ärztin erklärt, dass das Kind stark ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "stürzen",
+          "sense": "Sie berichtet, dass ihr Bruder auf der Treppe ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fliegen",
+          "sense": "Die Gäste sagen, dass sie direkt nach Oslo ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verstummen",
+          "sense": "Plötzlich merken wir, dass das alte Radio ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "losgehen",
+          "sense": "Die Gruppe berichtet, dass sie früh ___; danach sagt sie, dass sie am See ___; schließlich bestätigt sie, dass alle sicher ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Die Gruppe berichtet, dass sie früh ___; danach sagt sie, dass sie am See ___; schließlich bestätigt sie, dass alle sicher ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "zurückkehren",
+          "sense": "Die Gruppe berichtet, dass sie früh ___; danach sagt sie, dass sie am See ___; schließlich bestätigt sie, dass alle sicher ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufstehen",
+          "sense": "Die Mutter erzählt, dass ihr Sohn früh ___; dann sagt sie, dass er allein in den Bus ___; zuletzt bestätigt sie, dass er pünktlich ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "einsteigen",
+          "sense": "Die Mutter erzählt, dass ihr Sohn früh ___; dann sagt sie, dass er allein in den Bus ___; zuletzt bestätigt sie, dass er pünktlich ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Die Mutter erzählt, dass ihr Sohn früh ___; dann sagt sie, dass er allein in den Bus ___; zuletzt bestätigt sie, dass er pünktlich ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sinken",
+          "sense": "Die Nachbarin merkt, dass die Temperatur stark ___; anschließend sieht sie, dass der Teich ___; mittags stellt sie fest, dass das Eis wieder ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "zufrieren",
+          "sense": "Die Nachbarin merkt, dass die Temperatur stark ___; anschließend sieht sie, dass der Teich ___; mittags stellt sie fest, dass das Eis wieder ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "schmelzen",
+          "sense": "Die Nachbarin merkt, dass die Temperatur stark ___; anschließend sieht sie, dass der Teich ___; mittags stellt sie fest, dass das Eis wieder ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fliegen",
+          "sense": "Mara sagt, dass sie nach Wien ___; danach berichtet sie, dass sie zum Hotel ___; am Abend bestätigt sie, dass ihre Kollegin ebenfalls ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "gehen",
+          "sense": "Mara sagt, dass sie nach Wien ___; danach berichtet sie, dass sie zum Hotel ___; am Abend bestätigt sie, dass ihre Kollegin ebenfalls ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Mara sagt, dass sie nach Wien ___; danach berichtet sie, dass sie zum Hotel ___; am Abend bestätigt sie, dass ihre Kollegin ebenfalls ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ausgehen",
+          "sense": "Der Techniker erklärt, dass das Licht plötzlich ___; danach sagt er, dass alle Geräte ___; schließlich bestätigt er, dass das System wieder ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "stehen bleiben",
+          "sense": "Der Techniker erklärt, dass das Licht plötzlich ___; danach sagt er, dass alle Geräte ___; schließlich bestätigt er, dass das System wieder ___.",
+          "valency": "Excepción léxica/licencia de permanencia con sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "anspringen",
+          "sense": "Der Techniker erklärt, dass das Licht plötzlich ___; danach sagt er, dass alle Geräte ___; schließlich bestätigt er, dass das System wieder ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "starten",
+          "sense": "Die Läuferin erzählt, dass sie langsam ___; nach zehn Kilometern sagt sie, dass sie schneller ___; im Ziel bestätigt sie, dass sie unter vier Stunden ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "werden",
+          "sense": "Die Läuferin erzählt, dass sie langsam ___; nach zehn Kilometern sagt sie, dass sie schneller ___; im Ziel bestätigt sie, dass sie unter vier Stunden ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "bleiben",
+          "sense": "Die Läuferin erzählt, dass sie langsam ___; nach zehn Kilometern sagt sie, dass sie schneller ___; im Ziel bestätigt sie, dass sie unter vier Stunden ___.",
+          "valency": "Excepción léxica/licencia de permanencia con sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abfahren",
+          "sense": "Die Familie berichtet, dass sie früh ___; dann sagt sie, dass sie in Frankfurt ___; schließlich bestätigt sie, dass sie nach Kanada ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "umsteigen",
+          "sense": "Die Familie berichtet, dass sie früh ___; dann sagt sie, dass sie in Frankfurt ___; schließlich bestätigt sie, dass sie nach Kanada ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "weiterfliegen",
+          "sense": "Die Familie berichtet, dass sie früh ___; dann sagt sie, dass sie in Frankfurt ___; schließlich bestätigt sie, dass sie nach Kanada ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sinken",
+          "sense": "Der Arzt erklärt, dass das Fieber ___; danach sagt er, dass die Patientin kräftiger ___; schließlich bestätigt er, dass sie vollständig gesund ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "werden",
+          "sense": "Der Arzt erklärt, dass das Fieber ___; danach sagt er, dass die Patientin kräftiger ___; schließlich bestätigt er, dass sie vollständig gesund ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "werden",
+          "sense": "Der Arzt erklärt, dass das Fieber ___; danach sagt er, dass die Patientin kräftiger ___; schließlich bestätigt er, dass sie vollständig gesund ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "losgehen",
+          "sense": "Die Feuerwehr berichtet, dass der Alarm ___; dann sagt sie, dass alle Bewohner nach draußen ___; zuletzt bestätigt sie, dass niemand im Haus ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "laufen",
+          "sense": "Die Feuerwehr berichtet, dass der Alarm ___; dann sagt sie, dass alle Bewohner nach draußen ___; zuletzt bestätigt sie, dass niemand im Haus ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "bleiben",
+          "sense": "Die Feuerwehr berichtet, dass der Alarm ___; dann sagt sie, dass alle Bewohner nach draußen ___; zuletzt bestätigt sie, dass niemand im Haus ___.",
+          "valency": "Excepción léxica/licencia de permanencia con sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "radeln",
+          "sense": "Juri erzählt, dass er zum Hafen ___; dort sagt er, dass er lange am Wasser ___; später bestätigt er, dass er durch die Altstadt ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "bleiben",
+          "sense": "Juri erzählt, dass er zum Hafen ___; dort sagt er, dass er lange am Wasser ___; später bestätigt er, dass er durch die Altstadt ___.",
+          "valency": "Excepción léxica/licencia de permanencia con sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "zurückkehren",
+          "sense": "Juri erzählt, dass er zum Hafen ___; dort sagt er, dass er lange am Wasser ___; später bestätigt er, dass er durch die Altstadt ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufstehen",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "fahren",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "umsteigen",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "gehen",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "werden",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "stehen bleiben",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Excepción léxica/licencia de permanencia con sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "gelangen",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        },
+        {
+          "lemma": "absteigen",
+          "sense": "Nora erzählt, dass sie am Freitag sehr früh ___. Ihr Bruder berichtet, dass er erst später am Bahnhof ___. Beide sagen, dass sie trotzdem mit demselben Zug nach Innsbruck ___. Dort erzählt Nora, dass sie sofort in einen Regionalzug ___. Nach einer Stunde berichten sie, dass sie in einem kleinen Dorf ___. Sie erklären, dass sie von dort zu Fuß bis zu einer Hütte ___. Unterwegs merken alle, dass das Wetter plötzlich schlechter ___. Der Leiter bestätigt jedoch, dass niemand ___. Kurz vor Einbruch der Dunkelheit melden sie, dass alle sicher oben ___. Am nächsten Morgen erzählt Nora, dass die Gruppe früh ins Tal ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "steigen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «gestiegen ist» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fallen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «gefallen sind» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «angekommen ist» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «gegangen sind» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abfahren",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «abgefahren ist» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückkommen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «zurückgekommen sind» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "einschlafen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «eingeschlafen ist» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "laufen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «gelaufen seid» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bleiben",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Excepción léxica/licencia de permanencia con sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «geblieben ist» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufbrechen",
+          "sense": "Forma errónea identificada dentro del texto completo de cinco oraciones.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "La corrección declarada «aufgebrochen sind» restablece auxiliar, tiempo o concordancia sin crear una segunda clave."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufstehen",
+          "sense": "Mila erzählt, dass sie sehr früh ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "geschehen",
+          "sense": "Niemand weiß genau, was in der Nacht ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "erscheinen",
+          "sense": "Die Autorin bestätigt, dass ihr neuer Roman ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abfahren",
+          "sense": "Der Zugbegleiter bestätigt, dass der Zug ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verunglücken",
+          "sense": "Die Zeitung berichtet, dass ein Fahrer ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ausgehen",
+          "sense": "Wir sagen, dass wir gestern zusammen ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "entkommen",
+          "sense": "Die Polizei meldet, dass das Tier ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückkehren",
+          "sense": "Die Wanderer melden, dass sie sicher ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "Nora schreibt, dass sie pünktlich ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    },
+    {
+      "id": "de-perfekt-sein-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verschwinden",
+          "sense": "Der Hausmeister berichtet, dass der Schlüssel ___.",
+          "valency": "Movimiento dirigido o cambio de estado intransitivo sin objeto acusativo.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "status": "PASS",
+          "evidence": "Selección resuelta por sentido y valencia; después se comparó con la cadena declarada."
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:42:24.258946Z"
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-sein",
+  "role": "pedagogy",
+  "verdict": "PASS",
+  "candidateFingerprint": "f85c2964ae14ff1153ae4ba0c62e8bde60c3c7a2e9fec8c790f49dec6e0dd9c8",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "e9888a3a5cd899657f824311f1d608252fe66042286c00337661271cf414417c",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "id": "level-one-naturality-and-context-logic",
+      "status": "PASS",
+      "percentage": 100,
+      "evidence": "10/10 contextos son naturales; movimiento, llegada, permanencia y cambio de estado son coherentes con el auxiliar sein."
+    },
+    {
+      "id": "level-one-connector-and-format-variety",
+      "status": "PASS",
+      "percentage": 100,
+      "connectors": {
+        "dass": 2,
+        "weil": 2,
+        "obwohl": 2,
+        "ob": 2,
+        "wenn": 1,
+        "bevor": 1
+      },
+      "questions": 2,
+      "placements": {
+        "embedded": 4,
+        "preposed": 4,
+        "matrix-ob": 2
+      },
+      "evidence": "Los 10 conectores detectados introducen realmente la cláusula del hueco; hay dos preguntas matrices con ob y al menos dos subordinadas objetivo antepuestas."
+    },
+    {
+      "id": "level-one-distractors",
+      "status": "PASS",
+      "percentage": 100,
+      "evidence": "10/10 retos contienen cuatro opciones únicas, incluyen la respuesta y contrastan persona/número mediante unidades verbales completas de longitud comparable."
+    },
+    {
+      "id": "levels-two-through-six-preserved",
+      "status": "PASS",
+      "percentage": 100,
+      "preserved": {
+        "micro": true,
+        "long": true,
+        "error": true,
+        "separation": true,
+        "finalStories": true
+      },
+      "evidence": "Microhistorias, escenas largas, corrección, separación e historia final coinciden estructuralmente con el candidato aprobado de round-1."
+    },
+    {
+      "id": "cross-level-originality",
+      "status": "PASS",
+      "percentage": 100,
+      "duplicates": [],
+      "evidence": "No aparecen textos completos idénticos entre niveles."
+    },
+    {
+      "id": "level-4-controlled-rotation",
+      "status": "PASS",
+      "percentage": 100,
+      "errorPositions": [
+        3,
+        4,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        1,
+        2
+      ],
+      "evidence": "Cada reto contiene cinco oraciones y un solo error; las posiciones 1–5 aparecen dos veces."
+    },
+    {
+      "id": "level-5-no-leak",
+      "status": "PASS",
+      "percentage": 100,
+      "sequence": [
+        "separable",
+        "inseparable",
+        "inseparable",
+        "separable",
+        "inseparable",
+        "separable",
+        "inseparable",
+        "separable",
+        "separable",
+        "inseparable"
+      ],
+      "classChanges": 7,
+      "longestRun": 2,
+      "evidence": "Balance 5/5, al menos seis cambios, racha máxima dos, infinitivos unidos, partículas ocultas y respuestas como oraciones completas."
+    },
+    {
+      "id": "level-6-integrated-story",
+      "status": "PASS",
+      "percentage": 100,
+      "gaps": 10,
+      "minimumAnswerTokens": 2,
+      "evidence": "La historia es continua, contiene diez decisiones y cada hueco exige la unidad verbal completa especificada."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:42:22.732Z"
+}

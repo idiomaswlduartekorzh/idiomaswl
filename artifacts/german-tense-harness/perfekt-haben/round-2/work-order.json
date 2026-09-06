@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "perfekt-haben",
+  "baseCommit": "da911c57197a6898bbfb1c2659616b7d6a83710b",
+  "createdAt": "2026-09-06T22:35:02.217Z",
+  "baselineContentFingerprint": "49c96471a7cb1a641a30647dcd1640e9feb465095824597dde94d88ee3fdd160",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "b203e9c08642b6eea8be73cd74b64a026a6a1ea27f742b606c29403f79269025",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "spec": {
+    "id": "perfekt-haben",
+    "label": "Perfekt mit haben",
+    "sourceFile": "src/data/practica/german-perfect-haben-editorial.ts",
+    "stage": "queued",
+    "cefr": "A1–A2",
+    "construction": "finite haben + Partizip II",
+    "auxiliaryPolicy": "fixed-haben",
+    "allowedAuxiliaries": [
+      "haben"
+    ],
+    "minimumFinalUnitTokens": 2,
+    "levelOneClauseContract": {
+      "allowedConnectors": [
+        "dass",
+        "weil",
+        "obwohl",
+        "wenn",
+        "nachdem",
+        "bevor",
+        "ob"
+      ],
+      "minimumDistinctConnectors": 4,
+      "maximumUsesPerConnector": 3,
+      "minimumInterrogativeContexts": 2,
+      "minimumMatrixObQuestions": 2,
+      "minimumPreposedTargetClauses": 2,
+      "requireContiguousVerbalUnit": true
+    },
+    "morphology": [
+      "weak, strong and mixed participles",
+      "no ge- for inseparable prefixes and -ieren",
+      "ge- between particle and stem for separable verbs"
+    ],
+    "wordOrder": [
+      "finite haben in V2 and participle at clause end",
+      "verbal complex final in subordinate clauses"
+    ],
+    "contextContract": [
+      "completed past event with present or conversational relevance"
+    ],
+    "separableContract": [
+      "classify the infinitive",
+      "test participle formation",
+      "write the complete sentence"
+    ],
+    "knownRisks": [
+      "incorrect sein auxiliary",
+      "duplicated ge-",
+      "particle shown as a clue"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "auxiliary",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "auxiliary.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-perfect-haben-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

@@ -1,14 +1,14 @@
 import { createGermanCompactPack, type GermanCompactChoice, type GermanCompactFinal, type GermanCompactMicro, type GermanCompactStory } from './german-editorial-builder.ts'
 const choices: GermanCompactChoice[] = [
-  ['„ich“ mit anrufen','Ich verspreche, dass ich morgen ','.','anrufen werde','anrufen wirst','anrufen wird','anrufen werden'],
-  ['„du“ mit helfen','Du versprichst, dass du mir ','.','helfen wirst','helfen werde','helfen wird','helfen werdet'],
-  ['„Mia“ mit kommen','Mia sagt, dass sie morgen ','.','kommen wird','kommen werde','kommen wirst','kommen werden'],
-  ['„wir“ mit kochen','Wir versprechen, dass wir später ','.','kochen werden','kochen werde','kochen wird','kochen werdet'],
-  ['„ihr“ mit lernen','Ihr sagt, dass ihr mehr ','.','lernen werdet','lernen werde','lernen wird','lernen werden'],
-  ['„die Kinder“ mit spielen','Es ist sicher, dass die Kinder draußen ','.','spielen werden','spielen werde','spielen wird','spielen werdet'],
-  ['„ich“ mit bleiben','Ich verspreche, dass ich hier ','.','bleiben werde','bleiben wirst','bleiben wird','bleiben werden'],
-  ['„du“ mit arbeiten','Du sagst, dass du morgen ','.','arbeiten wirst','arbeiten werde','arbeiten wird','arbeiten werdet'],
-  ['„der Bus“ mit fahren','Die Anzeige sagt, dass der Bus bald ','.','fahren wird','fahren werde','fahren wirst','fahren werden'],
+  ['„ich“ mit anrufen','Die Kundin weiß, dass ich sie morgen ','.','anrufen werde','anrufen wirst','anrufen wird','anrufen werden'],
+  ['„du“ mit helfen','Die Leiterin plant dich ein, weil du ihr morgen ','.','helfen wirst','helfen werde','helfen wird','helfen werdet'],
+  ['„Mia“ mit kommen','Die Agentur erwartet, dass Mia morgen ','.','kommen wird','kommen werde','kommen wirst','kommen werden'],
+  ['„wir“ mit kochen','Kannst du abschätzen, ob wir später ','?','kochen werden','kochen werde','kochen wird','kochen werdet'],
+  ['„ihr“ mit lernen','Obwohl ihr für die Prüfung mehr ',', bleibt Zeit für Pausen.','lernen werdet','lernen werde','lernen wird','lernen werden'],
+  ['„die Kinder“ mit spielen','Der Trainer reserviert den Platz, weil die Kinder draußen ','.','spielen werden','spielen werde','spielen wird','spielen werdet'],
+  ['„ich“ mit bleiben','Obwohl ich morgen allein ',', fühle ich mich sicher.','bleiben werde','bleiben wirst','bleiben wird','bleiben werden'],
+  ['„du“ mit arbeiten','Weißt du schon, ob du morgen ','?','arbeiten wirst','arbeiten werde','arbeiten wird','arbeiten werdet'],
+  ['„der Bus“ mit fahren','Die Fahrgäste warten, weil der Bus wegen des Staus wohl später ','.','fahren wird','fahren werde','fahren wirst','fahren werden'],
   ['„wir“ mit aufräumen','Wir versprechen, dass wir später ','.','aufräumen werden','aufräumen werde','aufräumen wird','aufräumen werdet'],
 ]
 const micro: GermanCompactMicro[] = [

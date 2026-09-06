@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "konjunktiv-vergangenheit",
+  "baseCommit": "da911c57197a6898bbfb1c2659616b7d6a83710b",
+  "createdAt": "2026-09-06T22:35:03.112Z",
+  "baselineContentFingerprint": "878ae761fb34c0747cd179d30a5abb0db6bf00e448ff36fda9f90703d4641827",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "778f87246a6885129b2d001a1db9ab31431e616ff854ec4f5a57f9216e57deae",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "spec": {
+    "id": "konjunktiv-vergangenheit",
+    "label": "Irreale Vergangenheit",
+    "sourceFile": "src/data/practica/german-unreal-past-editorial.ts",
+    "stage": "queued",
+    "cefr": "B1–B2",
+    "construction": "hätte/wäre + Partizip II",
+    "auxiliaryPolicy": "inherits-perfect-auxiliary",
+    "allowedAuxiliaries": [
+      "haben",
+      "sein"
+    ],
+    "minimumFinalUnitTokens": 2,
+    "levelOneClauseContract": {
+      "allowedConnectors": [
+        "dass",
+        "weil",
+        "obwohl",
+        "wenn",
+        "ob"
+      ],
+      "minimumDistinctConnectors": 4,
+      "maximumUsesPerConnector": 3,
+      "minimumInterrogativeContexts": 2,
+      "minimumMatrixObQuestions": 2,
+      "minimumPreposedTargetClauses": 2,
+      "requireContiguousVerbalUnit": true
+    },
+    "morphology": [
+      "Konjunktiv II of the licensed auxiliary",
+      "correct Partizip II"
+    ],
+    "wordOrder": [
+      "finite hätte/wäre in V2 and participle at clause end"
+    ],
+    "contextContract": [
+      "counterfactual past condition or consequence with the real outcome recoverable"
+    ],
+    "separableContract": [
+      "test participle formation",
+      "write the complete sentence"
+    ],
+    "knownRisks": [
+      "present hypothesis instead of past counterfactual",
+      "wrong inherited auxiliary"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "auxiliary",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "auxiliary.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-unreal-past-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

@@ -1,0 +1,2816 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-eins",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "732049234f0a82f78ece0b1e6f4b73436e70917ce638ca3e9b86a682745d1674",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "d9be74f117df23c6c7f2bb3d9e701aa71385cc0594deb81c05fb03bf3db80970",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "baselineContentFingerprint": "c27d88e1b089a84bd2d02f6e482370c3906b5be5d05c57f4124df634edf5a661",
+  "candidate": {
+    "formId": "futur-eins",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-futur-eins-choice-editorial-1",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „ich“ mit anrufen.",
+          "context": "Die Kundin weiß, dass ich sie morgen ___.",
+          "options": [
+            "anrufen werde",
+            "anrufen wirst",
+            "anrufen wird",
+            "anrufen werden"
+          ],
+          "answer": "anrufen werde",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-2",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „du“ mit helfen.",
+          "context": "Die Leiterin plant dich ein, weil du ihr morgen ___.",
+          "options": [
+            "helfen werde",
+            "helfen wirst",
+            "helfen wird",
+            "helfen werdet"
+          ],
+          "answer": "helfen wirst",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-3",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „Mia“ mit kommen.",
+          "context": "Die Agentur erwartet, dass Mia morgen ___.",
+          "options": [
+            "kommen werde",
+            "kommen wirst",
+            "kommen wird",
+            "kommen werden"
+          ],
+          "answer": "kommen wird",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-4",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „wir“ mit kochen.",
+          "context": "Kannst du abschätzen, ob wir später ___?",
+          "options": [
+            "kochen werde",
+            "kochen wird",
+            "kochen werdet",
+            "kochen werden"
+          ],
+          "answer": "kochen werden",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-5",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „ihr“ mit lernen.",
+          "context": "Obwohl ihr für die Prüfung mehr ___, bleibt Zeit für Pausen.",
+          "options": [
+            "lernen werdet",
+            "lernen werde",
+            "lernen wird",
+            "lernen werden"
+          ],
+          "answer": "lernen werdet",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-6",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „die Kinder“ mit spielen.",
+          "context": "Der Trainer reserviert den Platz, weil die Kinder draußen ___.",
+          "options": [
+            "spielen werde",
+            "spielen werden",
+            "spielen wird",
+            "spielen werdet"
+          ],
+          "answer": "spielen werden",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-7",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „ich“ mit bleiben.",
+          "context": "Obwohl ich morgen allein ___, fühle ich mich sicher.",
+          "options": [
+            "bleiben wirst",
+            "bleiben wird",
+            "bleiben werde",
+            "bleiben werden"
+          ],
+          "answer": "bleiben werde",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-8",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „du“ mit arbeiten.",
+          "context": "Weißt du schon, ob du morgen ___?",
+          "options": [
+            "arbeiten werde",
+            "arbeiten wird",
+            "arbeiten werdet",
+            "arbeiten wirst"
+          ],
+          "answer": "arbeiten wirst",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-9",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „der Bus“ mit fahren.",
+          "context": "Die Fahrgäste warten, weil der Bus wegen des Staus wohl später ___.",
+          "options": [
+            "fahren wird",
+            "fahren werde",
+            "fahren wirst",
+            "fahren werden"
+          ],
+          "answer": "fahren wird",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        },
+        {
+          "id": "de-futur-eins-choice-editorial-10",
+          "tenses": [
+            "futur-eins"
+          ],
+          "focus": "Futur I",
+          "prompt": "Wähle die passende Form für „wir“ mit aufräumen.",
+          "context": "Wir versprechen, dass wir später ___.",
+          "options": [
+            "aufräumen werde",
+            "aufräumen werden",
+            "aufräumen wird",
+            "aufräumen werdet"
+          ],
+          "answer": "aufräumen werden",
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-futur-eins-micro-editorial-1",
+          "title": "Das Versprechen",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „anrufen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ich verspreche, dass ich dich morgen ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-1-gap",
+              "tense": "futur-eins",
+              "verb": "anrufen",
+              "answers": [
+                "anrufen werde"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-2",
+          "title": "Die Preisprognose",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „steigen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Prognose sagt, dass die Preise nächstes Jahr ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-2-gap",
+              "tense": "futur-eins",
+              "verb": "steigen",
+              "answers": [
+                "steigen werden"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-3",
+          "title": "Die Nachtschicht",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „arbeiten“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Es ist sicher, dass Lea um diese Zeit noch ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-3-gap",
+              "tense": "futur-eins",
+              "verb": "arbeiten",
+              "answers": [
+                "arbeiten wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-4",
+          "title": "Die offizielle Zusage",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „sanieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Stadt garantiert, dass sie die Brücke bis Herbst ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-4-gap",
+              "tense": "futur-eins",
+              "verb": "sanieren",
+              "answers": [
+                "sanieren wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-5",
+          "title": "Das Unwettermodell",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „erreichen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Das Modell zeigt, dass der Sturm die Küste am Abend ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-5-gap",
+              "tense": "futur-eins",
+              "verb": "erreichen",
+              "answers": [
+                "erreichen wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-6",
+          "title": "Die feierliche Ankündigung",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „eröffnen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Direktorin kündigt an, dass das Institut zwei neue Labore ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-6-gap",
+              "tense": "futur-eins",
+              "verb": "eröffnen",
+              "answers": [
+                "eröffnen wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-7",
+          "title": "Die persönliche Zusicherung",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „einhalten“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Keine Sorge: Ich weiß, dass ich die Frist ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-7-gap",
+              "tense": "futur-eins",
+              "verb": "einhalten",
+              "answers": [
+                "einhalten werde"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-8",
+          "title": "Die Wahlhochrechnung",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „zunehmen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Hochrechnung deutet darauf hin, dass die Beteiligung deutlich ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-8-gap",
+              "tense": "futur-eins",
+              "verb": "zunehmen",
+              "answers": [
+                "zunehmen wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-9",
+          "title": "Die technische Erwartung",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „halten“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Ingenieurin erwartet, dass der neue Akku doppelt so lange ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-9-gap",
+              "tense": "futur-eins",
+              "verb": "halten",
+              "answers": [
+                "halten wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-micro-editorial-10",
+          "title": "Die förmliche Verpflichtung",
+          "focus": "Futur I",
+          "instruction": "Konjugiere „übertragen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Im Vertrag steht, dass der Anbieter alle Daten verschlüsselt ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-micro-editorial-10-gap",
+              "tense": "futur-eins",
+              "verb": "übertragen",
+              "answers": [
+                "übertragen wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-futur-eins-long-editorial-1",
+          "title": "Die Klimaprognose",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Bericht sagt voraus, dass die Sommer heißer ",
+            "; die Forschung erwartet, dass der Wasserbedarf ",
+            "; und die Stadt verspricht, dass sie neue Speicher ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-1-gap-1",
+              "tense": "futur-eins",
+              "verb": "werden",
+              "answers": [
+                "werden werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-1-gap-2",
+              "tense": "futur-eins",
+              "verb": "steigen",
+              "answers": [
+                "steigen wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-1-gap-3",
+              "tense": "futur-eins",
+              "verb": "bauen",
+              "answers": [
+                "bauen wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-2",
+          "title": "Die Produkteinführung",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Firma kündigt an, dass sie das Gerät im Mai ",
+            "; sie erwartet, dass viele Kunden es sofort ",
+            "; und sie garantiert, dass der Support rund um die Uhr ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-2-gap-1",
+              "tense": "futur-eins",
+              "verb": "veröffentlichen",
+              "answers": [
+                "veröffentlichen wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-2-gap-2",
+              "tense": "futur-eins",
+              "verb": "bestellen",
+              "answers": [
+                "bestellen werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-2-gap-3",
+              "tense": "futur-eins",
+              "verb": "arbeiten",
+              "answers": [
+                "arbeiten wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-3",
+          "title": "Die Sturmwarnung",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Wetterdienst warnt, dass der Wind am Nachmittag ",
+            "; das Modell zeigt, dass hohe Wellen die Mole ",
+            "; und die Hafenleitung versichert, dass sie den Zugang ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-3-gap-1",
+              "tense": "futur-eins",
+              "verb": "zunehmen",
+              "answers": [
+                "zunehmen wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-3-gap-2",
+              "tense": "futur-eins",
+              "verb": "erreichen",
+              "answers": [
+                "erreichen werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-3-gap-3",
+              "tense": "futur-eins",
+              "verb": "sperren",
+              "answers": [
+                "sperren wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-4",
+          "title": "Der Forschungsplan",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Das Institut verpflichtet sich, dass es neue Proben ",
+            "; die Leitung erwartet, dass die Analyse Monate ",
+            "; und sie kündigt an, dass sie die Ergebnisse öffentlich ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-4-gap-1",
+              "tense": "futur-eins",
+              "verb": "sammeln",
+              "answers": [
+                "sammeln wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-4-gap-2",
+              "tense": "futur-eins",
+              "verb": "dauern",
+              "answers": [
+                "dauern wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-4-gap-3",
+              "tense": "futur-eins",
+              "verb": "vorstellen",
+              "answers": [
+                "vorstellen wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-5",
+          "title": "Die Verkehrsprognose",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Behörde rechnet damit, dass der Verkehr morgens ",
+            "; sie erwartet, dass viele Pendler die Bahn ",
+            "; und sie verspricht, dass zusätzliches Personal am Bahnhof ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-5-gap-1",
+              "tense": "futur-eins",
+              "verb": "stocken",
+              "answers": [
+                "stocken wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-5-gap-2",
+              "tense": "futur-eins",
+              "verb": "nehmen",
+              "answers": [
+                "nehmen werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-5-gap-3",
+              "tense": "futur-eins",
+              "verb": "helfen",
+              "answers": [
+                "helfen wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-6",
+          "title": "Die Wahlkampfzusage",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Kandidatin verspricht, dass sie Schulen besser ",
+            "; sie erklärt, dass sie die Verfahren ",
+            "; und sie garantiert, dass ihr Büro monatlich Bericht ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-6-gap-1",
+              "tense": "futur-eins",
+              "verb": "finanzieren",
+              "answers": [
+                "finanzieren wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-6-gap-2",
+              "tense": "futur-eins",
+              "verb": "vereinfachen",
+              "answers": [
+                "vereinfachen wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-6-gap-3",
+              "tense": "futur-eins",
+              "verb": "erstatten",
+              "answers": [
+                "erstatten wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-7",
+          "title": "Die Energieanalyse",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Studie prognostiziert, dass Solarstrom günstiger ",
+            "; sie erwartet, dass Speicher wichtiger ",
+            "; und sie sagt voraus, dass alte Anlagen schrittweise ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-7-gap-1",
+              "tense": "futur-eins",
+              "verb": "werden",
+              "answers": [
+                "werden wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-7-gap-2",
+              "tense": "futur-eins",
+              "verb": "werden",
+              "answers": [
+                "werden werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-7-gap-3",
+              "tense": "futur-eins",
+              "verb": "verschwinden",
+              "answers": [
+                "verschwinden werden"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-8",
+          "title": "Die medizinische Prognose",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Ärztin ist überzeugt, dass die Therapie bald ",
+            "; sie erwartet, dass der Patient besser ",
+            "; und sie versichert, dass das Team ihn eng ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-8-gap-1",
+              "tense": "futur-eins",
+              "verb": "wirken",
+              "answers": [
+                "wirken wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-8-gap-2",
+              "tense": "futur-eins",
+              "verb": "schlafen",
+              "answers": [
+                "schlafen wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-8-gap-3",
+              "tense": "futur-eins",
+              "verb": "begleiten",
+              "answers": [
+                "begleiten wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-9",
+          "title": "Die Sicherheitszusage",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Betreiber garantiert, dass das System Angriffe ",
+            "; er kündigt an, dass neue Sensoren Anomalien ",
+            "; und er verspricht, dass Fachkräfte jeden Vorfall sofort ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-9-gap-1",
+              "tense": "futur-eins",
+              "verb": "erkennen",
+              "answers": [
+                "erkennen wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-9-gap-2",
+              "tense": "futur-eins",
+              "verb": "melden",
+              "answers": [
+                "melden werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-9-gap-3",
+              "tense": "futur-eins",
+              "verb": "prüfen",
+              "answers": [
+                "prüfen werden"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-futur-eins-long-editorial-10",
+          "title": "Die Wirtschaftsvorschau",
+          "focus": "Futur I",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Bank prognostiziert, dass die Inflation langsam ",
+            "; sie erwartet, dass die Löhne später ",
+            "; und sie sagt voraus, dass der Konsum stabil ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-long-editorial-10-gap-1",
+              "tense": "futur-eins",
+              "verb": "sinken",
+              "answers": [
+                "sinken wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-10-gap-2",
+              "tense": "futur-eins",
+              "verb": "folgen",
+              "answers": [
+                "folgen werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-long-editorial-10-gap-3",
+              "tense": "futur-eins",
+              "verb": "bleiben",
+              "answers": [
+                "bleiben wird"
+              ]
+            }
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-futur-eins-independent-error-1",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 1",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Ärztin verspricht, dass sie später ",
+              "form": "anrufen würde",
+              "id": "de-futur-eins-independent-error-1-token-1"
+            },
+            {
+              "before": ". Ich bin sicher, dass ihr die Aufgabe ",
+              "form": "lösen werdet",
+              "id": "de-futur-eins-independent-error-1-token-2"
+            },
+            {
+              "before": ". Wir versprechen, dass wir die Kosten ",
+              "form": "übernehmen werden",
+              "id": "de-futur-eins-independent-error-1-token-3"
+            },
+            {
+              "before": ". Du wirst sehen, dass dir die neue Methode ",
+              "form": "helfen wird",
+              "id": "de-futur-eins-independent-error-1-token-4"
+            },
+            {
+              "before": ". Morgen um diese Zeit ",
+              "form": "werde",
+              "id": "de-futur-eins-independent-error-1-token-5"
+            }
+          ],
+          "after": " ich noch im Zug sitzen.",
+          "wrongId": "de-futur-eins-independent-error-1-token-1",
+          "answers": [
+            "anrufen wird"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-2",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 2",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Laut Prognose ",
+              "form": "werden",
+              "id": "de-futur-eins-independent-error-2-token-1"
+            },
+            {
+              "before": " die Temperaturen deutlich sinken. Der Veranstalter erklärt, dass das Konzert draußen ",
+              "form": "stattfinden würde",
+              "id": "de-futur-eins-independent-error-2-token-2"
+            },
+            {
+              "before": ". Der Bericht sagt voraus, dass der Verkehr ",
+              "form": "zunehmen wird",
+              "id": "de-futur-eins-independent-error-2-token-3"
+            },
+            {
+              "before": ". Die Firma kündigt an, dass sie neue Stellen ",
+              "form": "schaffen wird",
+              "id": "de-futur-eins-independent-error-2-token-4"
+            },
+            {
+              "before": ". Die Forschenden erwarten, dass der Versuch ",
+              "form": "gelingen wird",
+              "id": "de-futur-eins-independent-error-2-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-eins-independent-error-2-token-2",
+          "answers": [
+            "stattfinden wird"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-3",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 3",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Ich bin sicher, dass ihr die Aufgabe ",
+              "form": "lösen werdet",
+              "id": "de-futur-eins-independent-error-3-token-1"
+            },
+            {
+              "before": ". Wir versprechen, dass wir die Kosten ",
+              "form": "übernehmen werden",
+              "id": "de-futur-eins-independent-error-3-token-2"
+            },
+            {
+              "before": ". Du wirst sehen, dass dir die neue Methode ",
+              "form": "helfen werden",
+              "id": "de-futur-eins-independent-error-3-token-3"
+            },
+            {
+              "before": ". Morgen um diese Zeit ",
+              "form": "werde",
+              "id": "de-futur-eins-independent-error-3-token-4"
+            },
+            {
+              "before": " ich noch im Zug sitzen. Die Ärztin verspricht, dass sie später ",
+              "form": "anrufen wird",
+              "id": "de-futur-eins-independent-error-3-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-eins-independent-error-3-token-3",
+          "answers": [
+            "helfen wird"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-4",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 4",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Der Veranstalter erklärt, dass das Konzert draußen ",
+              "form": "stattfinden wird",
+              "id": "de-futur-eins-independent-error-4-token-1"
+            },
+            {
+              "before": ". Der Bericht sagt voraus, dass der Verkehr ",
+              "form": "zunehmen wird",
+              "id": "de-futur-eins-independent-error-4-token-2"
+            },
+            {
+              "before": ". Die Firma kündigt an, dass sie neue Stellen ",
+              "form": "schaffen wird",
+              "id": "de-futur-eins-independent-error-4-token-3"
+            },
+            {
+              "before": ". Die Forschenden erwarten, dass der Versuch ",
+              "form": "gelingen würde",
+              "id": "de-futur-eins-independent-error-4-token-4"
+            },
+            {
+              "before": ". Laut Prognose ",
+              "form": "werden",
+              "id": "de-futur-eins-independent-error-4-token-5"
+            }
+          ],
+          "after": " die Temperaturen deutlich sinken.",
+          "wrongId": "de-futur-eins-independent-error-4-token-4",
+          "answers": [
+            "gelingen wird"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-5",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 5",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wir versprechen, dass wir die Kosten ",
+              "form": "übernehmen werden",
+              "id": "de-futur-eins-independent-error-5-token-1"
+            },
+            {
+              "before": ". Du wirst sehen, dass dir die neue Methode ",
+              "form": "helfen wird",
+              "id": "de-futur-eins-independent-error-5-token-2"
+            },
+            {
+              "before": ". Morgen um diese Zeit ",
+              "form": "werde",
+              "id": "de-futur-eins-independent-error-5-token-3"
+            },
+            {
+              "before": " ich noch im Zug sitzen. Die Ärztin verspricht, dass sie später ",
+              "form": "anrufen wird",
+              "id": "de-futur-eins-independent-error-5-token-4"
+            },
+            {
+              "before": ". Ich bin sicher, dass ihr die Aufgabe ",
+              "form": "lösen werden",
+              "id": "de-futur-eins-independent-error-5-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-eins-independent-error-5-token-5",
+          "answers": [
+            "lösen werdet"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-6",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 6",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Der Bericht sagt voraus, dass der Verkehr ",
+              "form": "zunehmen würde",
+              "id": "de-futur-eins-independent-error-6-token-1"
+            },
+            {
+              "before": ". Die Firma kündigt an, dass sie neue Stellen ",
+              "form": "schaffen wird",
+              "id": "de-futur-eins-independent-error-6-token-2"
+            },
+            {
+              "before": ". Die Forschenden erwarten, dass der Versuch ",
+              "form": "gelingen wird",
+              "id": "de-futur-eins-independent-error-6-token-3"
+            },
+            {
+              "before": ". Laut Prognose ",
+              "form": "werden",
+              "id": "de-futur-eins-independent-error-6-token-4"
+            },
+            {
+              "before": " die Temperaturen deutlich sinken. Der Veranstalter erklärt, dass das Konzert draußen ",
+              "form": "stattfinden wird",
+              "id": "de-futur-eins-independent-error-6-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-eins-independent-error-6-token-1",
+          "answers": [
+            "zunehmen wird"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-7",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 7",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Du wirst sehen, dass dir die neue Methode ",
+              "form": "helfen wird",
+              "id": "de-futur-eins-independent-error-7-token-1"
+            },
+            {
+              "before": ". Morgen um diese Zeit ",
+              "form": "würde",
+              "id": "de-futur-eins-independent-error-7-token-2"
+            },
+            {
+              "before": " ich noch im Zug sitzen. Die Ärztin verspricht, dass sie später ",
+              "form": "anrufen wird",
+              "id": "de-futur-eins-independent-error-7-token-3"
+            },
+            {
+              "before": ". Ich bin sicher, dass ihr die Aufgabe ",
+              "form": "lösen werdet",
+              "id": "de-futur-eins-independent-error-7-token-4"
+            },
+            {
+              "before": ". Wir versprechen, dass wir die Kosten ",
+              "form": "übernehmen werden",
+              "id": "de-futur-eins-independent-error-7-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-eins-independent-error-7-token-2",
+          "answers": [
+            "werde"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-8",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 8",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Firma kündigt an, dass sie neue Stellen ",
+              "form": "schaffen wird",
+              "id": "de-futur-eins-independent-error-8-token-1"
+            },
+            {
+              "before": ". Die Forschenden erwarten, dass der Versuch ",
+              "form": "gelingen wird",
+              "id": "de-futur-eins-independent-error-8-token-2"
+            },
+            {
+              "before": ". Laut Prognose ",
+              "form": "würden",
+              "id": "de-futur-eins-independent-error-8-token-3"
+            },
+            {
+              "before": " die Temperaturen deutlich sinken. Der Veranstalter erklärt, dass das Konzert draußen ",
+              "form": "stattfinden wird",
+              "id": "de-futur-eins-independent-error-8-token-4"
+            },
+            {
+              "before": ". Der Bericht sagt voraus, dass der Verkehr ",
+              "form": "zunehmen wird",
+              "id": "de-futur-eins-independent-error-8-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-eins-independent-error-8-token-3",
+          "answers": [
+            "werden"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-9",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 9",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Morgen um diese Zeit ",
+              "form": "werde",
+              "id": "de-futur-eins-independent-error-9-token-1"
+            },
+            {
+              "before": " ich noch im Zug sitzen. Die Ärztin verspricht, dass sie später ",
+              "form": "anrufen wird",
+              "id": "de-futur-eins-independent-error-9-token-2"
+            },
+            {
+              "before": ". Ich bin sicher, dass ihr die Aufgabe ",
+              "form": "lösen werdet",
+              "id": "de-futur-eins-independent-error-9-token-3"
+            },
+            {
+              "before": ". Wir versprechen, dass wir die Kosten ",
+              "form": "übernehmen würden",
+              "id": "de-futur-eins-independent-error-9-token-4"
+            },
+            {
+              "before": ". Du wirst sehen, dass dir die neue Methode ",
+              "form": "helfen wird",
+              "id": "de-futur-eins-independent-error-9-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-eins-independent-error-9-token-4",
+          "answers": [
+            "übernehmen werden"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-futur-eins-independent-error-10",
+          "tense": "futur-eins",
+          "title": "Korrekturrunde · 10",
+          "focus": "Futur I",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Forschenden erwarten, dass der Versuch ",
+              "form": "gelingen wird",
+              "id": "de-futur-eins-independent-error-10-token-1"
+            },
+            {
+              "before": ". Laut Prognose ",
+              "form": "werden",
+              "id": "de-futur-eins-independent-error-10-token-2"
+            },
+            {
+              "before": " die Temperaturen deutlich sinken. Der Veranstalter erklärt, dass das Konzert draußen ",
+              "form": "stattfinden wird",
+              "id": "de-futur-eins-independent-error-10-token-3"
+            },
+            {
+              "before": ". Der Bericht sagt voraus, dass der Verkehr ",
+              "form": "zunehmen wird",
+              "id": "de-futur-eins-independent-error-10-token-4"
+            },
+            {
+              "before": ". Die Firma kündigt an, dass sie neue Stellen ",
+              "form": "schaffen würde",
+              "id": "de-futur-eins-independent-error-10-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-futur-eins-independent-error-10-token-5",
+          "answers": [
+            "schaffen wird"
+          ],
+          "explanation": "„werden + Infinitiv“ markiert hier ausdrücklich Prognosen, Versprechen oder formelle Verpflichtungen; für bloße Fahrpläne und feste Termine genügt im Deutschen meist das Präsens. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-futur-eins-separation-1",
+          "tense": "futur-eins",
+          "title": "aufbauen · 1",
+          "focus": "futur-eins",
+          "verb": "aufbauen",
+          "separation": "separable",
+          "prompt": "Die Helfer bestätigen, dass sie die Bühne ___.",
+          "answers": [
+            "Die Helfer bestätigen, dass sie die Bühne aufbauen werden.",
+            "Die Helfer bestätigen, dass sie die Bühne aufbauen werden"
+          ],
+          "explanation": "„aufbauen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-eins-separation-2",
+          "tense": "futur-eins",
+          "title": "entdecken · 2",
+          "focus": "futur-eins",
+          "verb": "entdecken",
+          "separation": "inseparable",
+          "prompt": "Die Prognose sagt, dass das Teleskop neue Sterne ___.",
+          "answers": [
+            "Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird.",
+            "Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird"
+          ],
+          "explanation": "„entdecken“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-eins-separation-3",
+          "tense": "futur-eins",
+          "title": "zurückkommen · 3",
+          "focus": "futur-eins",
+          "verb": "zurückkommen",
+          "separation": "separable",
+          "prompt": "Nora schreibt, dass sie im Mai ___.",
+          "answers": [
+            "Nora schreibt, dass sie im Mai zurückkommen wird.",
+            "Nora schreibt, dass sie im Mai zurückkommen wird"
+          ],
+          "explanation": "„zurückkommen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-eins-separation-4",
+          "tense": "futur-eins",
+          "title": "bekommen · 4",
+          "focus": "futur-eins",
+          "verb": "bekommen",
+          "separation": "inseparable",
+          "prompt": "Ihr werdet sehen, dass ihr rechtzeitig Hilfe ___.",
+          "answers": [
+            "Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet.",
+            "Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet"
+          ],
+          "explanation": "„bekommen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-eins-separation-5",
+          "tense": "futur-eins",
+          "title": "vorstellen · 5",
+          "focus": "futur-eins",
+          "verb": "vorstellen",
+          "separation": "separable",
+          "prompt": "Der Forscher kündigt an, dass er die Ergebnisse ___.",
+          "answers": [
+            "Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird.",
+            "Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird"
+          ],
+          "explanation": "„vorstellen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-eins-separation-6",
+          "tense": "futur-eins",
+          "title": "anmelden · 6",
+          "focus": "futur-eins",
+          "verb": "anmelden",
+          "separation": "separable",
+          "prompt": "Mara verspricht, dass sie das Team morgen ___.",
+          "answers": [
+            "Mara verspricht, dass sie das Team morgen anmelden wird.",
+            "Mara verspricht, dass sie das Team morgen anmelden wird"
+          ],
+          "explanation": "„anmelden“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-eins-separation-7",
+          "tense": "futur-eins",
+          "title": "besuchen · 7",
+          "focus": "futur-eins",
+          "verb": "besuchen",
+          "separation": "inseparable",
+          "prompt": "Wir versprechen, dass wir euch bald ___.",
+          "answers": [
+            "Wir versprechen, dass wir euch bald besuchen werden.",
+            "Wir versprechen, dass wir euch bald besuchen werden"
+          ],
+          "explanation": "„besuchen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-eins-separation-8",
+          "tense": "futur-eins",
+          "title": "mitfahren · 8",
+          "focus": "futur-eins",
+          "verb": "mitfahren",
+          "separation": "separable",
+          "prompt": "Ich bin sicher, dass du am Samstag ___.",
+          "answers": [
+            "Ich bin sicher, dass du am Samstag mitfahren wirst.",
+            "Ich bin sicher, dass du am Samstag mitfahren wirst"
+          ],
+          "explanation": "„mitfahren“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-futur-eins-separation-9",
+          "tense": "futur-eins",
+          "title": "erklären · 9",
+          "focus": "futur-eins",
+          "verb": "erklären",
+          "separation": "inseparable",
+          "prompt": "Der Trainer sagt, dass er die neue Regel ___.",
+          "answers": [
+            "Der Trainer sagt, dass er die neue Regel erklären wird.",
+            "Der Trainer sagt, dass er die neue Regel erklären wird"
+          ],
+          "explanation": "„erklären“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-futur-eins-separation-10",
+          "tense": "futur-eins",
+          "title": "veröffentlichen · 10",
+          "focus": "futur-eins",
+          "verb": "veröffentlichen",
+          "separation": "inseparable",
+          "prompt": "Die Redaktion meldet, dass sie den Artikel ___.",
+          "answers": [
+            "Die Redaktion meldet, dass sie den Artikel veröffentlichen wird.",
+            "Die Redaktion meldet, dass sie den Artikel veröffentlichen wird"
+          ],
+          "explanation": "„veröffentlichen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-futur-eins-written-final-story",
+          "title": "Die Stadt plant ein Kulturwochenende",
+          "focus": "futur-eins",
+          "instruction": "Lies die ganze Geschichte. Ergänze alle Verbgruppen schriftlich; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Die Stadt kündigt an, dass sie im kommenden Mai ein großes Kulturwochenende ",
+            ". Der Bürgermeister verspricht, dass alle Stadtteile eigene Bühnen ",
+            ". Die Verkehrsplanung sieht vor, dass ein neues Shuttle die Veranstaltungsorte miteinander ",
+            ". Die Organisatoren erklären, dass Freiwillige die Besucher am Bahnhof ",
+            ". Der Wetterdienst prognostiziert, dass es wahrscheinlich mild ",
+            ". Für Regen versichert das Team, dass die Konzerte in Hallen ",
+            ". Mehrere Restaurants kündigen an, dass sie regionale Gerichte ",
+            ". Die Bibliotheksleitung kündigt an, dass das Haus bis Mitternacht geöffnet ",
+            ". Das Programm bestätigt, dass ein Orchester am Sonntagabend das Abschlusskonzert ",
+            ". Die Stadt verspricht außerdem, dass sie die besten Projekte im folgenden Jahr ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-futur-eins-written-final-story-gap-1",
+              "tense": "futur-eins",
+              "verb": "veranstalten",
+              "answers": [
+                "veranstalten wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-2",
+              "tense": "futur-eins",
+              "verb": "erhalten",
+              "answers": [
+                "erhalten werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-3",
+              "tense": "futur-eins",
+              "verb": "verbinden",
+              "answers": [
+                "verbinden wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-4",
+              "tense": "futur-eins",
+              "verb": "begrüßen",
+              "answers": [
+                "begrüßen werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-5",
+              "tense": "futur-eins",
+              "verb": "bleiben",
+              "answers": [
+                "bleiben wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-6",
+              "tense": "futur-eins",
+              "verb": "stattfinden",
+              "answers": [
+                "stattfinden werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-7",
+              "tense": "futur-eins",
+              "verb": "anbieten",
+              "answers": [
+                "anbieten werden"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-8",
+              "tense": "futur-eins",
+              "verb": "sein",
+              "answers": [
+                "sein wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-9",
+              "tense": "futur-eins",
+              "verb": "spielen",
+              "answers": [
+                "spielen wird"
+              ]
+            },
+            {
+              "id": "de-futur-eins-written-final-story-gap-10",
+              "tense": "futur-eins",
+              "verb": "weiter fördern",
+              "answers": [
+                "weiter fördern wird"
+              ]
+            }
+          ],
+          "explanation": "Bilde in jeder Prognose oder Zusage „werden + Infinitiv“ und passe „werden“ an das Subjekt an."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-futur-eins-choice-editorial-1",
+        "level": 1,
+        "lemma": "anrufen",
+        "senseId": "futur-eins-l1-1-anrufen",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-dass",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "anrufen werde",
+        "accepted": [
+          "anrufen werde"
+        ],
+        "distractorRationale": [
+          "anrufen wirst: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "anrufen wird: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "anrufen werden: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "b1b9b62c49da7b321392385956a6f5de1ea53e94aad6549fcf6b2644e4066be8"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-2",
+        "level": 1,
+        "lemma": "helfen",
+        "senseId": "futur-eins-l1-2-helfen",
+        "targetForm": "futur-eins",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-weil",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "helfen wirst",
+        "accepted": [
+          "helfen wirst"
+        ],
+        "distractorRationale": [
+          "helfen werde: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "helfen wird: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "helfen werdet: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "9140797277c8ff5d3412b5b149f1e16f0cca74c9189cfffbcdc9a0e40de1caca"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-3",
+        "level": 1,
+        "lemma": "kommen",
+        "senseId": "futur-eins-l1-3-kommen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-dass",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kommen wird",
+        "accepted": [
+          "kommen wird"
+        ],
+        "distractorRationale": [
+          "kommen werde: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "kommen wirst: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "kommen werden: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "4328cefa1675b07f18e9257704350950f97c4ebd34f1b220b5dd1dc6546c2c7d"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-4",
+        "level": 1,
+        "lemma": "kochen",
+        "senseId": "futur-eins-l1-4-kochen",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "question",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-ob",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kochen werden",
+        "accepted": [
+          "kochen werden"
+        ],
+        "distractorRationale": [
+          "kochen werde: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "kochen wird: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "kochen werdet: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "f58ea1a296f51fec9147c246f0bebe835fab81d282844c73d28fb41f7f8fc092"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-5",
+        "level": 1,
+        "lemma": "lernen",
+        "senseId": "futur-eins-l1-5-lernen",
+        "targetForm": "futur-eins",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-obwohl",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "lernen werdet",
+        "accepted": [
+          "lernen werdet"
+        ],
+        "distractorRationale": [
+          "lernen werde: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "lernen wird: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "lernen werden: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "6cf72b43311ba7cf243301784bb6eb2414786e43e3d639cd2125a71ac4e68112"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-6",
+        "level": 1,
+        "lemma": "spielen",
+        "senseId": "futur-eins-l1-6-spielen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-weil",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "spielen werden",
+        "accepted": [
+          "spielen werden"
+        ],
+        "distractorRationale": [
+          "spielen werde: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "spielen wird: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "spielen werdet: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "dcbf304f4d8a3f9ff804451efa09eb7714d6f0ab9411d9a9a939f5fad9c0110d"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-7",
+        "level": 1,
+        "lemma": "bleiben",
+        "senseId": "futur-eins-l1-7-bleiben",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-obwohl",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "bleiben werde",
+        "accepted": [
+          "bleiben werde"
+        ],
+        "distractorRationale": [
+          "bleiben wirst: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "bleiben wird: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "bleiben werden: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "f9d5d09722926969e39bca03115d86fcbddd1370f815b0e4648e895786fdbb32"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-8",
+        "level": 1,
+        "lemma": "arbeiten",
+        "senseId": "futur-eins-l1-8-arbeiten",
+        "targetForm": "futur-eins",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "question",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-ob",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "arbeiten wirst",
+        "accepted": [
+          "arbeiten wirst"
+        ],
+        "distractorRationale": [
+          "arbeiten werde: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "arbeiten wird: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "arbeiten werdet: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "c2024c31826b442c1b10e1315dfcbb2d24103a1be820a9581a4e7aa52d5ef34f"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-9",
+        "level": 1,
+        "lemma": "fahren",
+        "senseId": "futur-eins-l1-9-fahren",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-weil",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "fahren wird",
+        "accepted": [
+          "fahren wird"
+        ],
+        "distractorRationale": [
+          "fahren werde: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "fahren wirst: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "fahren werden: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "cfe213221e17eca44c72a18eef72c8d8737bc7a8abe1798a15d4a559748a6e9f"
+      },
+      {
+        "itemId": "de-futur-eins-choice-editorial-10",
+        "level": 1,
+        "lemma": "aufräumen",
+        "senseId": "futur-eins-l1-10-aufra-umen",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "connector-dass",
+          "explicit-prospective-reference"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "aufräumen werden",
+        "accepted": [
+          "aufräumen werden"
+        ],
+        "distractorRationale": [
+          "aufräumen werde: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "aufräumen wird: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "aufräumen werdet: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "30647a05c8c43502b6edb272e1c19c9a30db7c0d6fa5e220a584a140abf6c731"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-1",
+        "level": 2,
+        "lemma": "anrufen",
+        "senseId": "futur-eins-l2-1-anrufen",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "morgen"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "anrufen werde",
+        "accepted": [
+          "anrufen werde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "36eb9373b52cfa9d3445bfd9090f7431811041ecc1d38abd7d3e80145e6bb611"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-2",
+        "level": 2,
+        "lemma": "steigen",
+        "senseId": "futur-eins-l2-2-steigen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "steigen werden",
+        "accepted": [
+          "steigen werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "24fbe13ddf9b2adfe59f8ad5f2d0594e48172f4769dc16e0baae46f9dbbc03d3"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-3",
+        "level": 2,
+        "lemma": "arbeiten",
+        "senseId": "futur-eins-l2-3-arbeiten",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "arbeiten wird",
+        "accepted": [
+          "arbeiten wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "0cd8949c8aada39b7bd142c50275e6ef948287f4d53ee47e26105bda1a4f244b"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-4",
+        "level": 2,
+        "lemma": "sanieren",
+        "senseId": "futur-eins-l2-4-sanieren",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "bis"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sanieren wird",
+        "accepted": [
+          "sanieren wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "af0b3c38e6294db2d30a46e8a2e2961059d4fee1ab88567781cd84dd2996084a"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-5",
+        "level": 2,
+        "lemma": "erreichen",
+        "senseId": "futur-eins-l2-5-erreichen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "erreichen wird",
+        "accepted": [
+          "erreichen wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2b30a737751105c207ec8c898c2469fd5956b8d4aa7f13dd66178c34131a53ca"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-6",
+        "level": 2,
+        "lemma": "eröffnen",
+        "senseId": "futur-eins-l2-6-ero-ffnen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "eröffnen wird",
+        "accepted": [
+          "eröffnen wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5a773917ee3112b69fc31569f8e0cacabed13b4d91946375e3e0928c7bb971f4"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-7",
+        "level": 2,
+        "lemma": "einhalten",
+        "senseId": "futur-eins-l2-7-einhalten",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "einhalten werde",
+        "accepted": [
+          "einhalten werde"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "56ac3fe8b1812719fa840f5a2d739a0ee639259f787e34bb3b6261106aa442c2"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-8",
+        "level": 2,
+        "lemma": "zunehmen",
+        "senseId": "futur-eins-l2-8-zunehmen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "zu",
+        "expectedUnit": "zunehmen wird",
+        "accepted": [
+          "zunehmen wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "26fdb260239fed2930c227b71189112219b99f742b3370951e5a806bdb6cb016"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-9",
+        "level": 2,
+        "lemma": "halten",
+        "senseId": "futur-eins-l2-9-halten",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "halten wird",
+        "accepted": [
+          "halten wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "85225708c0835a91a8a16372c7ae904c339003dce0ae865da2ba2dab3f085ed6"
+      },
+      {
+        "itemId": "de-futur-eins-micro-editorial-10",
+        "level": 2,
+        "lemma": "übertragen",
+        "senseId": "futur-eins-l2-10-u-bertragen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "übertragen wird",
+        "accepted": [
+          "übertragen wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "dfa04c48c972e2d5467f15b0b695b4f3e25c8986cdc3e82af0500e2e8debd9ff"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-1",
+        "level": 3,
+        "lemma": "werden + steigen + bauen",
+        "senseId": "futur-eins-l3-1-werden",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose",
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "werden werden | steigen wird | bauen wird",
+        "accepted": [
+          "werden werden",
+          "steigen wird",
+          "bauen wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "a582b2b03cd3cf8787b3b4d7f68aaa3da7785e5a9bb10dfc3e825d713486d915"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-2",
+        "level": 3,
+        "lemma": "veröffentlichen + bestellen + arbeiten",
+        "senseId": "futur-eins-l3-2-vero-ffentlichen",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose",
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "veröffentlichen wird | bestellen werden | arbeiten wird",
+        "accepted": [
+          "veröffentlichen wird",
+          "bestellen werden",
+          "arbeiten wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3e82be4e51def1a7a9c870959be4cb8f64fb1446feb4b35fa986b3cdad822988"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-3",
+        "level": 3,
+        "lemma": "zunehmen + erreichen + sperren",
+        "senseId": "futur-eins-l3-3-zunehmen",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "zunehmen wird | erreichen werden | sperren wird",
+        "accepted": [
+          "zunehmen wird",
+          "erreichen werden",
+          "sperren wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "44ce7ddc7fd7bc6a36f9dc7de35b84c03f72fd9de50837cfbdb03ceed78043e3"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-4",
+        "level": 3,
+        "lemma": "sammeln + dauern + vorstellen",
+        "senseId": "futur-eins-l3-4-sammeln",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose",
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sammeln wird | dauern wird | vorstellen wird",
+        "accepted": [
+          "sammeln wird",
+          "dauern wird",
+          "vorstellen wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "d352a1e7612b8e66be081d2f1ea4b81e1cdd2c29a0d4911fccd1b454e428a296"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-5",
+        "level": 3,
+        "lemma": "stocken + nehmen + helfen",
+        "senseId": "futur-eins-l3-5-stocken",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose",
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "stocken wird | nehmen werden | helfen wird",
+        "accepted": [
+          "stocken wird",
+          "nehmen werden",
+          "helfen wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "b3fa5d1762d8ee4edcbaa5264747c4ec99138b4f0b7966700576c11504787d17"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-6",
+        "level": 3,
+        "lemma": "finanzieren + vereinfachen + erstatten",
+        "senseId": "futur-eins-l3-6-finanzieren",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "finanzieren wird | vereinfachen wird | erstatten wird",
+        "accepted": [
+          "finanzieren wird",
+          "vereinfachen wird",
+          "erstatten wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "074f46d7cfefd8e30ef1a18d1509fe1fb8a46086d5b915cc915869efbc2a9efa"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-7",
+        "level": 3,
+        "lemma": "werden + verschwinden",
+        "senseId": "futur-eins-l3-7-werden",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "werden wird | werden werden | verschwinden werden",
+        "accepted": [
+          "werden wird",
+          "werden werden",
+          "verschwinden werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8e87ab4e1cf295e6b3c95e2f9f6350556c2d5b644c5f1104213dfbcf8a93cebc"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-8",
+        "level": 3,
+        "lemma": "wirken + schlafen + begleiten",
+        "senseId": "futur-eins-l3-8-wirken",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wirken wird | schlafen wird | begleiten wird",
+        "accepted": [
+          "wirken wird",
+          "schlafen wird",
+          "begleiten wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "77b8072d50af7cec764a2b0cc6ba946842dc36b9ac70ed9faa370ef6c24c4de5"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-9",
+        "level": 3,
+        "lemma": "erkennen + melden + prüfen",
+        "senseId": "futur-eins-l3-9-erkennen",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "erkennen wird | melden werden | prüfen werden",
+        "accepted": [
+          "erkennen wird",
+          "melden werden",
+          "prüfen werden"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "a6dfbfe3ac5765ae9dfb30432ede900d8e172acdcb90c99de4fd15970f938773"
+      },
+      {
+        "itemId": "de-futur-eins-long-editorial-10",
+        "level": 3,
+        "lemma": "sinken + folgen + bleiben",
+        "senseId": "futur-eins-l3-10-sinken",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "später",
+          "laut-prognose"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sinken wird | folgen werden | bleiben wird",
+        "accepted": [
+          "sinken wird",
+          "folgen werden",
+          "bleiben wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "55bf1401c0651eb10b527681e9165575ee2f9d2b7ef23f3d2d614f3d60fe2bb0"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-1",
+        "level": 4,
+        "lemma": "anrufen",
+        "senseId": "futur-eins-l4-1-anrufen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "später",
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "anrufen wird",
+        "accepted": [
+          "anrufen wird"
+        ],
+        "distractorRationale": [
+          "anrufen würde: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "b574ee63adb91b7b2055a67934da01707e99a009dd31deed2155ca5b61d294ae"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-2",
+        "level": 4,
+        "lemma": "stattfinden",
+        "senseId": "futur-eins-l4-2-stattfinden",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "statt",
+        "expectedUnit": "stattfinden wird",
+        "accepted": [
+          "stattfinden wird"
+        ],
+        "distractorRationale": [
+          "stattfinden würde: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "cb18a49728fcb473592a34ee25041bfdb62843ee5251dea311a2151c412a9f8f"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-3",
+        "level": 4,
+        "lemma": "helfen",
+        "senseId": "futur-eins-l4-3-helfen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "helfen wird",
+        "accepted": [
+          "helfen wird"
+        ],
+        "distractorRationale": [
+          "helfen werden: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "ebfbca691dcf58407b8156c8899f41bf1dc8e43c577c0ce230c3bfdc2d9572ea"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-4",
+        "level": 4,
+        "lemma": "gelingen",
+        "senseId": "futur-eins-l4-4-gelingen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ge",
+        "expectedUnit": "gelingen wird",
+        "accepted": [
+          "gelingen wird"
+        ],
+        "distractorRationale": [
+          "gelingen würde: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "fffb4ca8a2ce9dac0b5d89a50369d91a2b4ccdd759496bea6ea0722915bcd5e1"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-5",
+        "level": 4,
+        "lemma": "lösen",
+        "senseId": "futur-eins-l4-5-lo-sen",
+        "targetForm": "futur-eins",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "lösen werdet",
+        "accepted": [
+          "lösen werdet"
+        ],
+        "distractorRationale": [
+          "lösen werden: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "8516bbdea27ec0175148388f2c96699f612369ab998b7d0d9b027ba148c36296"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-6",
+        "level": 4,
+        "lemma": "zunehmen",
+        "senseId": "futur-eins-l4-6-zunehmen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "zu",
+        "expectedUnit": "zunehmen wird",
+        "accepted": [
+          "zunehmen wird"
+        ],
+        "distractorRationale": [
+          "zunehmen würde: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "32c0afe748909be9367dcd009a3ccbc577eae0fd6fd4b1d1bcdd4f62ad71331a"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-7",
+        "level": 4,
+        "lemma": "sitzen",
+        "senseId": "futur-eins-l4-7-sitzen",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "morgen"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "werde",
+        "accepted": [
+          "werde"
+        ],
+        "distractorRationale": [
+          "würde: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "02a396ce49e0388c5689780ef8ab3f02f8eeb86bc24ad5e12dd5509c69f867eb"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-8",
+        "level": 4,
+        "lemma": "sinken",
+        "senseId": "futur-eins-l4-8-sinken",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "werden",
+        "accepted": [
+          "werden"
+        ],
+        "distractorRationale": [
+          "würden: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "9ca3449b9e062e3cbeb5a6f8919e157d3a0673e92c3365f3e9cf3fa80793ad68"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-9",
+        "level": 4,
+        "lemma": "übernehmen",
+        "senseId": "futur-eins-l4-9-u-bernehmen",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "übernehmen werden",
+        "accepted": [
+          "übernehmen werden"
+        ],
+        "distractorRationale": [
+          "übernehmen würden: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "44e296190252985a4c5de694d9b0ee1cc626768feec0b1bfee9ffd16f3ab7b0d"
+      },
+      {
+        "itemId": "de-futur-eins-independent-error-10",
+        "level": 4,
+        "lemma": "schaffen",
+        "senseId": "futur-eins-l4-10-schaffen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "schaffen wird",
+        "accepted": [
+          "schaffen wird"
+        ],
+        "distractorRationale": [
+          "schaffen würde: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "3571408e3bb8cb541f5208c24a0620d1eb7c67f9ce8a5ba19df4e9f3ba215e03"
+      },
+      {
+        "itemId": "de-futur-eins-separation-1",
+        "level": 5,
+        "lemma": "aufbauen",
+        "senseId": "futur-eins-l5-1-aufbauen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "Die Helfer bestätigen, dass sie die Bühne aufbauen werden. | Die Helfer bestätigen, dass sie die Bühne aufbauen werden",
+        "accepted": [
+          "Die Helfer bestätigen, dass sie die Bühne aufbauen werden.",
+          "Die Helfer bestätigen, dass sie die Bühne aufbauen werden"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von aufbauen."
+        ],
+        "runtimeFingerprint": "9f42289cefb5a197189bd21f11ea06a544aa4696cf269a62b287682d6fb2b1d6"
+      },
+      {
+        "itemId": "de-futur-eins-separation-2",
+        "level": 5,
+        "lemma": "entdecken",
+        "senseId": "futur-eins-l5-2-entdecken",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "laut-prognose"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ent",
+        "expectedUnit": "Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird. | Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird",
+        "accepted": [
+          "Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird.",
+          "Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von entdecken."
+        ],
+        "runtimeFingerprint": "67621ca295e8c37113251e96c8d4b8e3513b459ede5b55f622f3dc7cbfd8353c"
+      },
+      {
+        "itemId": "de-futur-eins-separation-3",
+        "level": 5,
+        "lemma": "zurückkommen",
+        "senseId": "futur-eins-l5-3-zuru-ckkommen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "Nora schreibt, dass sie im Mai zurückkommen wird. | Nora schreibt, dass sie im Mai zurückkommen wird",
+        "accepted": [
+          "Nora schreibt, dass sie im Mai zurückkommen wird.",
+          "Nora schreibt, dass sie im Mai zurückkommen wird"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von zurückkommen."
+        ],
+        "runtimeFingerprint": "c69c3b001e5cc3619cdf0ad7729e5965e92afea0094a5c3a45f32af57ef952cc"
+      },
+      {
+        "itemId": "de-futur-eins-separation-4",
+        "level": 5,
+        "lemma": "bekommen",
+        "senseId": "futur-eins-l5-4-bekommen",
+        "targetForm": "futur-eins",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet. | Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet",
+        "accepted": [
+          "Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet.",
+          "Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von bekommen."
+        ],
+        "runtimeFingerprint": "cf1915bf5d1ffa39ce8e38c9353fb43e63e1279531d0c12ac7b518b6b5be8fcf"
+      },
+      {
+        "itemId": "de-futur-eins-separation-5",
+        "level": 5,
+        "lemma": "vorstellen",
+        "senseId": "futur-eins-l5-5-vorstellen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "vor",
+        "expectedUnit": "Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird. | Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird",
+        "accepted": [
+          "Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird.",
+          "Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von vorstellen."
+        ],
+        "runtimeFingerprint": "92fe599141edc3bcd543a551fe65a453630a6db8b683f2bf2f57d5637abb34a6"
+      },
+      {
+        "itemId": "de-futur-eins-separation-6",
+        "level": 5,
+        "lemma": "anmelden",
+        "senseId": "futur-eins-l5-6-anmelden",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "morgen",
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "Mara verspricht, dass sie das Team morgen anmelden wird. | Mara verspricht, dass sie das Team morgen anmelden wird",
+        "accepted": [
+          "Mara verspricht, dass sie das Team morgen anmelden wird.",
+          "Mara verspricht, dass sie das Team morgen anmelden wird"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von anmelden."
+        ],
+        "runtimeFingerprint": "a155c83a154605357baeb69c8be7c00df8e327df2496f5046346548ba00b6202"
+      },
+      {
+        "itemId": "de-futur-eins-separation-7",
+        "level": 5,
+        "lemma": "besuchen",
+        "senseId": "futur-eins-l5-7-besuchen",
+        "targetForm": "futur-eins",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Wir versprechen, dass wir euch bald besuchen werden. | Wir versprechen, dass wir euch bald besuchen werden",
+        "accepted": [
+          "Wir versprechen, dass wir euch bald besuchen werden.",
+          "Wir versprechen, dass wir euch bald besuchen werden"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von besuchen."
+        ],
+        "runtimeFingerprint": "09baedb69f243261fd3d054b379302e6f9c9c386b7d166662624da8e92ac8bcc"
+      },
+      {
+        "itemId": "de-futur-eins-separation-8",
+        "level": 5,
+        "lemma": "mitfahren",
+        "senseId": "futur-eins-l5-8-mitfahren",
+        "targetForm": "futur-eins",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "separable",
+        "prefix": "mit",
+        "expectedUnit": "Ich bin sicher, dass du am Samstag mitfahren wirst. | Ich bin sicher, dass du am Samstag mitfahren wirst",
+        "accepted": [
+          "Ich bin sicher, dass du am Samstag mitfahren wirst.",
+          "Ich bin sicher, dass du am Samstag mitfahren wirst"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von mitfahren."
+        ],
+        "runtimeFingerprint": "6d17ff606f047a2db21e476427fafd42f309e4f5ce8f6bdcdb0ceb335e3bca3e"
+      },
+      {
+        "itemId": "de-futur-eins-separation-9",
+        "level": 5,
+        "lemma": "erklären",
+        "senseId": "futur-eins-l5-9-erkla-ren",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "Der Trainer sagt, dass er die neue Regel erklären wird. | Der Trainer sagt, dass er die neue Regel erklären wird",
+        "accepted": [
+          "Der Trainer sagt, dass er die neue Regel erklären wird.",
+          "Der Trainer sagt, dass er die neue Regel erklären wird"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von erklären."
+        ],
+        "runtimeFingerprint": "8a5044dfeb29fba8be33b8c47d4226d1611c3a2496a637a3f0ba137fbb32205a"
+      },
+      {
+        "itemId": "de-futur-eins-separation-10",
+        "level": 5,
+        "lemma": "veröffentlichen",
+        "senseId": "futur-eins-l5-10-vero-ffentlichen",
+        "targetForm": "futur-eins",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "Die Redaktion meldet, dass sie den Artikel veröffentlichen wird. | Die Redaktion meldet, dass sie den Artikel veröffentlichen wird",
+        "accepted": [
+          "Die Redaktion meldet, dass sie den Artikel veröffentlichen wird.",
+          "Die Redaktion meldet, dass sie den Artikel veröffentlichen wird"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von veröffentlichen."
+        ],
+        "runtimeFingerprint": "22e9ade47323d77dad386ace327d3c50c9b3f0695eb9b36b4ce24a5e0322e268"
+      },
+      {
+        "itemId": "de-futur-eins-written-final-story",
+        "level": 6,
+        "lemma": "veranstalten + erhalten + verbinden + begrüßen + bleiben + stattfinden + anbieten + sein + spielen + weiter fördern",
+        "senseId": "futur-eins-l6-1-veranstalten",
+        "targetForm": "futur-eins",
+        "person": null,
+        "number": null,
+        "clauseType": "mixed",
+        "function": "explizite Prognose, Zusage oder prospektive Festlegung",
+        "anchorIds": [
+          "kommend",
+          "bis",
+          "laut-prognose",
+          "zusage"
+        ],
+        "auxiliary": "werden",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "veranstalten wird | erhalten werden | verbinden wird | begrüßen werden | bleiben wird | stattfinden werden | anbieten werden | sein wird | spielen wird | weiter fördern wird",
+        "accepted": [
+          "veranstalten wird",
+          "erhalten werden",
+          "verbinden wird",
+          "begrüßen werden",
+          "bleiben wird",
+          "stattfinden werden",
+          "anbieten werden",
+          "sein wird",
+          "spielen wird",
+          "weiter fördern wird"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "02e3b0abd70b0a344f14c0aad31053951075c1367b975594183e8bcb68dd6cfb"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Futur — grammis (IDS)",
+        "url": "https://grammis.ids-mannheim.de/vggf/2229?termini=term",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Tempus — grammis (IDS)",
+        "url": "https://grammis.ids-mannheim.de/progr%40mm/6905",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "level-one-contexts",
+      "status": "PASS",
+      "evidence": "El ítem N1-1 usa un contexto distinto del micro N2-1; ID, verbo, respuesta y opciones permanecen idénticos."
+    },
+    {
+      "id": "connector-contract",
+      "status": "PASS",
+      "evidence": {
+        "dass": 3,
+        "weil": 3,
+        "ob": 2,
+        "obwohl": 2
+      }
+    },
+    {
+      "id": "levels-two-through-six-unchanged",
+      "status": "PASS",
+      "evidence": "micro, long, error, separation y finalStories permanecen estructuralmente idénticos al candidato anterior."
+    },
+    {
+      "id": "annotation-binding",
+      "status": "PASS",
+      "evidence": "La anotación N1-1 enlaza con la nueva huella del reto; las demás anotaciones permanecen válidas."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "CROSS-LEVEL-DUPLICATION-RESOLVED",
+      "detail": "Choice N1-1 y micro N2-1 ya no comparten literalmente el mismo contexto."
+    }
+  ],
+  "generatedAt": "2026-09-06T22:44:24.432Z"
+}

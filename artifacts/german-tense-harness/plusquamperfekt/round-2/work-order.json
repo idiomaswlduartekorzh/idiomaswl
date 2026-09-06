@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "plusquamperfekt",
+  "baseCommit": "da911c57197a6898bbfb1c2659616b7d6a83710b",
+  "createdAt": "2026-09-06T22:35:02.512Z",
+  "baselineContentFingerprint": "09f99f7e3b314f8ed22b43ab1052c6c9dcbec598b4ae09fdc5efbabfe8711789",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "5c0ae26a4fda234882b9e42f9cb9037dfef9f203ff282caaa5946e457eae97c6",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "spec": {
+    "id": "plusquamperfekt",
+    "label": "Plusquamperfekt",
+    "sourceFile": "src/data/practica/german-pluperfect-editorial.ts",
+    "stage": "queued",
+    "cefr": "B1",
+    "construction": "hatte/war + Partizip II",
+    "auxiliaryPolicy": "inherits-perfect-auxiliary",
+    "allowedAuxiliaries": [
+      "haben",
+      "sein"
+    ],
+    "minimumFinalUnitTokens": 2,
+    "levelOneClauseContract": {
+      "allowedConnectors": [
+        "dass",
+        "weil",
+        "obwohl",
+        "wenn",
+        "nachdem",
+        "bevor",
+        "ob"
+      ],
+      "minimumDistinctConnectors": 4,
+      "maximumUsesPerConnector": 3,
+      "minimumInterrogativeContexts": 2,
+      "minimumMatrixObQuestions": 2,
+      "minimumPreposedTargetClauses": 2,
+      "requireContiguousVerbalUnit": true
+    },
+    "morphology": [
+      "Präteritum of the licensed auxiliary",
+      "correct Partizip II"
+    ],
+    "wordOrder": [
+      "finite auxiliary in V2 and participle at clause end",
+      "verbal complex final in subordinate clauses"
+    ],
+    "contextContract": [
+      "an event completed before a second explicit past reference point"
+    ],
+    "separableContract": [
+      "test participle formation without exposing the class",
+      "write the complete sentence"
+    ],
+    "knownRisks": [
+      "missing second past point",
+      "auxiliary inconsistent with the lexical verb"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "auxiliary",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "auxiliary.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-pluperfect-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

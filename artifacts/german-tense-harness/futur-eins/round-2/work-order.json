@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "german-tense-alignment-v1",
+  "formId": "futur-eins",
+  "baseCommit": "da911c57197a6898bbfb1c2659616b7d6a83710b",
+  "createdAt": "2026-09-06T22:35:02.667Z",
+  "baselineContentFingerprint": "c27d88e1b089a84bd2d02f6e482370c3906b5be5d05c57f4124df634edf5a661",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "d9be74f117df23c6c7f2bb3d9e701aa71385cc0594deb81c05fb03bf3db80970",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "spec": {
+    "id": "futur-eins",
+    "label": "Futur I",
+    "sourceFile": "src/data/practica/german-future-one-editorial.ts",
+    "stage": "queued",
+    "cefr": "A2–B1",
+    "construction": "finite werden + Infinitiv",
+    "auxiliaryPolicy": "fixed-werden",
+    "allowedAuxiliaries": [
+      "werden"
+    ],
+    "minimumFinalUnitTokens": 2,
+    "levelOneClauseContract": {
+      "allowedConnectors": [
+        "dass",
+        "weil",
+        "obwohl",
+        "wenn",
+        "bevor",
+        "ob"
+      ],
+      "minimumDistinctConnectors": 4,
+      "maximumUsesPerConnector": 3,
+      "minimumInterrogativeContexts": 2,
+      "minimumMatrixObQuestions": 2,
+      "minimumPreposedTargetClauses": 2,
+      "requireContiguousVerbalUnit": true
+    },
+    "morphology": [
+      "werden agrees with person and number",
+      "lexical verb remains infinitive"
+    ],
+    "wordOrder": [
+      "finite werden in V2 and infinitive at clause end",
+      "infinitive before finite werden in ordinary subordinate order"
+    ],
+    "contextContract": [
+      "future prediction, promise or explicit prospective reference"
+    ],
+    "separableContract": [
+      "the infinitive remains joined",
+      "classify without a detached-particle clue"
+    ],
+    "knownRisks": [
+      "confusion with würde",
+      "future meaning expressed by Präsens without requiring Futur I"
+    ]
+  },
+  "requiredRoles": [
+    "coordinator",
+    "author",
+    "morphology",
+    "pedagogy",
+    "adversary",
+    "integrator",
+    "warden"
+  ],
+  "requiredReports": [
+    "work-order.json",
+    "author.json",
+    "morphology.json",
+    "pedagogy.json",
+    "adversary.json",
+    "integration.json",
+    "release.json"
+  ],
+  "requiredCoverage": {
+    "choice": 10,
+    "micro": 10,
+    "long": 10,
+    "error": 10,
+    "separation": 10,
+    "finalStories": 1,
+    "finalStoryMinimumGaps": 10,
+    "separable": 5,
+    "inseparable": 5
+  },
+  "runtimeGates": [
+    "npm run check:german-tense-harness",
+    "npm run check:tense-quests",
+    "npm run test:german-tense-harness",
+    "npx tsc --noEmit",
+    "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+    "npm run check:practica-catalog",
+    "npx playwright test tests/e2e/german-tense-all-forms.spec.ts"
+  ],
+  "allowedRuntimeFiles": [
+    "src/data/practica/german-future-one-editorial.ts",
+    "src/data/practica/german-advanced-editorial.ts",
+    "src/data/practica/german-structure-quest-config.ts"
+  ]
+}

@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-zwei",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "70ff7ee73c7bc2058c8e4905333509283b345ae2ae94626d4a07f28e79d03197",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "43db139af6e3a451c9b7eb67df893272cc6e563e12535dcab37d72113327674d",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "itemId": "de-futur-zwei-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gemacht haben werde"
+      ],
+      "declaredAnswer": [
+        "gemacht haben werde"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Morgen werde ich bestätigen, dass ich bis dahin alles gemacht haben werde."
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gelesen haben wirst"
+      ],
+      "declaredAnswer": [
+        "gelesen haben wirst"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Die Prüfung wird dir leichter fallen, weil du bis Freitag das Buch gelesen haben wirst."
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gelernt haben wird"
+      ],
+      "declaredAnswer": [
+        "gelernt haben wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Die Lehrerin erwartet, dass Mia bis Juni viel gelernt haben wird."
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gekocht haben werden"
+      ],
+      "declaredAnswer": [
+        "gekocht haben werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Kannst du abschätzen, ob wir vor deiner Ankunft schon gekocht haben werden?"
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gearbeitet haben werdet"
+      ],
+      "declaredAnswer": [
+        "gearbeitet haben werdet"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Obwohl ihr bis acht Uhr bereits lange gearbeitet haben werdet, beginnt danach noch eine Sitzung."
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "geschlafen haben werden"
+      ],
+      "declaredAnswer": [
+        "geschlafen haben werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Der Trainer plant die Probe, weil die Kinder bis Mittag genug geschlafen haben werden."
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegangen sein werde"
+      ],
+      "declaredAnswer": [
+        "gegangen sein werde"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Obwohl ich vor deiner Ankunft gegangen sein werde, bleibt der Schlüssel bei Nora."
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "angekommen sein wirst"
+      ],
+      "declaredAnswer": [
+        "angekommen sein wirst"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Weißt du, ob du bis zehn Uhr angekommen sein wirst?"
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "gefahren sein wird"
+      ],
+      "declaredAnswer": [
+        "gefahren sein wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Die Polizei wird Paul zu Hause suchen, weil er vor Mittag nach Hause gefahren sein wird."
+    },
+    {
+      "itemId": "de-futur-zwei-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "zurückgekommen sein werden"
+      ],
+      "declaredAnswer": [
+        "zurückgekommen sein werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden concordado; la cadena subordinada completa termina en la forma finita de werden.",
+      "evidence": "Die Leitung erwartet, dass wir bis Sonntag zurückgekommen sein werden."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "beendet haben werden"
+      ],
+      "declaredAnswer": [
+        "beendet haben werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gegangen sein wird"
+      ],
+      "declaredAnswer": [
+        "gegangen sein wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gespeichert haben werden"
+      ],
+      "declaredAnswer": [
+        "gespeichert haben werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "montiert haben wird"
+      ],
+      "declaredAnswer": [
+        "montiert haben wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gesammelt haben wird"
+      ],
+      "declaredAnswer": [
+        "gesammelt haben wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "weitergezogen sein werden"
+      ],
+      "declaredAnswer": [
+        "weitergezogen sein werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "wiederholt haben wirst"
+      ],
+      "declaredAnswer": [
+        "wiederholt haben wirst"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "produziert haben wird"
+      ],
+      "declaredAnswer": [
+        "produziert haben wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "ausgewertet haben werden"
+      ],
+      "declaredAnswer": [
+        "ausgewertet haben werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "repariert haben wird"
+      ],
+      "declaredAnswer": [
+        "repariert haben wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufgebaut haben wird",
+        "geliefert haben wird",
+        "angekommen sein wird"
+      ],
+      "declaredAnswer": [
+        "aufgebaut haben wird",
+        "geliefert haben wird",
+        "angekommen sein wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "markiert haben wird",
+        "besprochen haben werden",
+        "geströmt sein werden"
+      ],
+      "declaredAnswer": [
+        "markiert haben wird",
+        "besprochen haben werden",
+        "geströmt sein werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "eröffnet haben wird",
+        "geschaffen haben wird",
+        "gestiegen sein wird"
+      ],
+      "declaredAnswer": [
+        "eröffnet haben wird",
+        "geschaffen haben wird",
+        "gestiegen sein wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "kontrolliert haben wird",
+        "gesendet haben wird",
+        "gesandt haben wird",
+        "eingetroffen sein wird"
+      ],
+      "declaredAnswer": [
+        "kontrolliert haben wird",
+        "gesendet haben wird",
+        "gesandt haben wird",
+        "eingetroffen sein wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "Para senden se declaran las dos variantes normativas «gesendet haben wird» y «gesandt haben wird»; el sujeto singular fija wird."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gesehen haben wird",
+        "begründet haben wird",
+        "angereist sein werden"
+      ],
+      "declaredAnswer": [
+        "gesehen haben wird",
+        "begründet haben wird",
+        "angereist sein werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "weitergezogen sein wird",
+        "geprüft haben wird",
+        "zurückgekehrt sein werden"
+      ],
+      "declaredAnswer": [
+        "weitergezogen sein wird",
+        "geprüft haben wird",
+        "zurückgekehrt sein werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "überarbeitet haben wird",
+        "geprüft haben wird",
+        "freigegeben haben wird"
+      ],
+      "declaredAnswer": [
+        "überarbeitet haben wird",
+        "geprüft haben wird",
+        "freigegeben haben wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "geschützt haben werden",
+        "geleert haben werden",
+        "gezogen sein werden"
+      ],
+      "declaredAnswer": [
+        "geschützt haben werden",
+        "geleert haben werden",
+        "gezogen sein werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "kopiert haben wird",
+        "getestet haben werden",
+        "gestartet sein wird"
+      ],
+      "declaredAnswer": [
+        "kopiert haben wird",
+        "getestet haben werden",
+        "gestartet sein wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "gereinigt haben wird",
+        "vorbereitet haben wird",
+        "angekommen sein wird"
+      ],
+      "declaredAnswer": [
+        "gereinigt haben wird",
+        "vorbereitet haben wird",
+        "angekommen sein wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "3 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "erneuert haben"
+      ],
+      "declaredAnswer": [
+        "erneuert haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "verdunstet sein"
+      ],
+      "declaredAnswer": [
+        "verdunstet sein"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "montiert haben"
+      ],
+      "declaredAnswer": [
+        "montiert haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "werden"
+      ],
+      "declaredAnswer": [
+        "werden"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "wiederholt haben"
+      ],
+      "declaredAnswer": [
+        "wiederholt haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "eingeschlafen sein"
+      ],
+      "declaredAnswer": [
+        "eingeschlafen sein"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "wird"
+      ],
+      "declaredAnswer": [
+        "wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "wird"
+      ],
+      "declaredAnswer": [
+        "wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "gespart haben"
+      ],
+      "declaredAnswer": [
+        "gespart haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "sein"
+      ],
+      "declaredAnswer": [
+        "sein"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "1 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Vor dem Fest wird die Küche alle Zutaten bestellt haben.",
+        "Vor dem Fest wird die Küche alle Zutaten bestellt haben"
+      ],
+      "declaredAnswer": [
+        "Vor dem Fest wird die Küche alle Zutaten bestellt haben.",
+        "Vor dem Fest wird die Küche alle Zutaten bestellt haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Am Monatsende wirst du den Antrag eingereicht haben.",
+        "Am Monatsende wirst du den Antrag eingereicht haben"
+      ],
+      "declaredAnswer": [
+        "Am Monatsende wirst du den Antrag eingereicht haben.",
+        "Am Monatsende wirst du den Antrag eingereicht haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben.",
+        "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben"
+      ],
+      "declaredAnswer": [
+        "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben.",
+        "Am Gipfeltag wird die Gruppe ihr Ziel erreicht haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Bis zum Abend werden die Wanderer zurückgekehrt sein.",
+        "Bis zum Abend werden die Wanderer zurückgekehrt sein"
+      ],
+      "declaredAnswer": [
+        "Bis zum Abend werden die Wanderer zurückgekehrt sein.",
+        "Bis zum Abend werden die Wanderer zurückgekehrt sein"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Bis Freitag wird Lea den Vertrag abgeschlossen haben.",
+        "Bis Freitag wird Lea den Vertrag abgeschlossen haben"
+      ],
+      "declaredAnswer": [
+        "Bis Freitag wird Lea den Vertrag abgeschlossen haben.",
+        "Bis Freitag wird Lea den Vertrag abgeschlossen haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Vor der Abreise werden wir jede Rechnung bezahlt haben.",
+        "Vor der Abreise werden wir jede Rechnung bezahlt haben"
+      ],
+      "declaredAnswer": [
+        "Vor der Abreise werden wir jede Rechnung bezahlt haben.",
+        "Vor der Abreise werden wir jede Rechnung bezahlt haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Wenn wir starten, wird der Nachtzug bereits angekommen sein.",
+        "Wenn wir starten, wird der Nachtzug bereits angekommen sein"
+      ],
+      "declaredAnswer": [
+        "Wenn wir starten, wird der Nachtzug bereits angekommen sein.",
+        "Wenn wir starten, wird der Nachtzug bereits angekommen sein"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Bis dahin wird das Labor die Ursache entdeckt haben.",
+        "Bis dahin wird das Labor die Ursache entdeckt haben"
+      ],
+      "declaredAnswer": [
+        "Bis dahin wird das Labor die Ursache entdeckt haben.",
+        "Bis dahin wird das Labor die Ursache entdeckt haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben.",
+        "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben"
+      ],
+      "declaredAnswer": [
+        "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben.",
+        "Wenn du eintriffst, werden die Gäste das Gebäude verlassen haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben.",
+        "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben"
+      ],
+      "declaredAnswer": [
+        "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben.",
+        "Vor der Eröffnung werden die Helfer alle Stände aufgebaut haben"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "2 respuesta(s) reconstruida(s): flexión, participio, orden y partícula compatibles con el contexto."
+    },
+    {
+      "id": "de-futur-zwei-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": [
+        "abgeschlossen haben werden",
+        "geprüft haben werden",
+        "getestet haben wird",
+        "gestaltet haben wird",
+        "gepflanzt worden sein werden",
+        "eingezogen sein werden",
+        "montiert haben wird",
+        "geprobt haben wird",
+        "erledigt haben wird",
+        "beendet haben wird"
+      ],
+      "declaredAnswer": [
+        "abgeschlossen haben werden",
+        "geprüft haben werden",
+        "getestet haben wird",
+        "gestaltet haben wird",
+        "gepflanzt worden sein werden",
+        "eingezogen sein werden",
+        "montiert haben wird",
+        "geprobt haben wird",
+        "erledigt haben wird",
+        "beendet haben wird"
+      ],
+      "rule": "Partizip II + haben/sein + werden; en subordinada la cadena termina en werden y en principal werden ocupa V2.",
+      "evidence": "Las diez unidades concuerdan con sus sujetos; el pasivo completo «gepflanzt worden sein werden» conserva Partizip II + worden + sein + werden."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:42:24.258946Z"
+}

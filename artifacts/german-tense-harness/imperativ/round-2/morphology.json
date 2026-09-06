@@ -1,0 +1,795 @@
+{
+  "schemaVersion": 1,
+  "formId": "imperativ",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "c1469c42024cb09582bc95a61a19654a7db25b6916dbf34901433d32b8e633da",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "688bcebfada2bdab301a4dcbec2a767257e41e51e6ce8ed0cb0edefc7146d627",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "itemId": "de-imperativ-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "komm"
+      ],
+      "declaredAnswer": [
+        "komm"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Paul, komm bitte her!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "seid"
+      ],
+      "declaredAnswer": [
+        "seid"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Kinder, seid bitte leise!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "warten Sie"
+      ],
+      "declaredAnswer": [
+        "warten Sie"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Frau Klein, warten Sie bitte kurz!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "öffne"
+      ],
+      "declaredAnswer": [
+        "öffne"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Nora, öffne bitte das Fenster!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "fahrt"
+      ],
+      "declaredAnswer": [
+        "fahrt"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Freunde, fahrt bitte langsam!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "nehmen Sie"
+      ],
+      "declaredAnswer": [
+        "nehmen Sie"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Herr Wolf, nehmen Sie bitte hier Platz!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "sei"
+      ],
+      "declaredAnswer": [
+        "sei"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Amir, sei bitte ehrlich!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "trinkt"
+      ],
+      "declaredAnswer": [
+        "trinkt"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Spieler, trinkt bitte Wasser!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "schließen Sie"
+      ],
+      "declaredAnswer": [
+        "schließen Sie"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Frau Koch, schließen Sie bitte die Tür!"
+    },
+    {
+      "itemId": "de-imperativ-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "nimm"
+      ],
+      "declaredAnswer": [
+        "nimm"
+      ],
+      "rule": "Forma imperativa correcta para du, ihr o Sie; se comprueban flexión, pronombre de cortesía y posición de partículas separables.",
+      "evidence": "Lea, nimm bitte deinen Ausweis mit!"
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "sprich"
+      ],
+      "declaredAnswer": [
+        "sprich"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "nehmen Sie"
+      ],
+      "declaredAnswer": [
+        "nehmen Sie"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "seid"
+      ],
+      "declaredAnswer": [
+        "seid"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "schließ",
+        "schließe"
+      ],
+      "declaredAnswer": [
+        "schließ",
+        "schließe"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "folgen Sie"
+      ],
+      "declaredAnswer": [
+        "folgen Sie"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "nehmt"
+      ],
+      "declaredAnswer": [
+        "nehmt"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "bleib",
+        "bleibe"
+      ],
+      "declaredAnswer": [
+        "bleib",
+        "bleibe"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "füllen Sie"
+      ],
+      "declaredAnswer": [
+        "füllen Sie"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "gebt"
+      ],
+      "declaredAnswer": [
+        "gebt"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": [
+        "vergiss"
+      ],
+      "declaredAnswer": [
+        "vergiss"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "wasch",
+        "wasche",
+        "heiz",
+        "heize",
+        "rühr",
+        "rühre"
+      ],
+      "declaredAnswer": [
+        "wasch",
+        "wasche",
+        "heiz",
+        "heize",
+        "rühr",
+        "rühre"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "zeigen Sie",
+        "folgen Sie",
+        "warten Sie"
+      ],
+      "declaredAnswer": [
+        "zeigen Sie",
+        "folgen Sie",
+        "warten Sie"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "wärmt",
+        "lauft",
+        "trinkt"
+      ],
+      "declaredAnswer": [
+        "wärmt",
+        "lauft",
+        "trinkt"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "öffne",
+        "zieh",
+        "ziehe",
+        "erstell",
+        "erstelle"
+      ],
+      "declaredAnswer": [
+        "öffne",
+        "zieh",
+        "ziehe",
+        "erstell",
+        "erstelle"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "aktivieren Sie",
+        "verlassen Sie",
+        "warten Sie"
+      ],
+      "declaredAnswer": [
+        "aktivieren Sie",
+        "verlassen Sie",
+        "warten Sie"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "stellt",
+        "schraubt",
+        "wischt"
+      ],
+      "declaredAnswer": [
+        "stellt",
+        "schraubt",
+        "wischt"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "lies",
+        "aktualisiere",
+        "schick",
+        "schicke"
+      ],
+      "declaredAnswer": [
+        "lies",
+        "aktualisiere",
+        "schick",
+        "schicke"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "geben Sie",
+        "nehmen Sie",
+        "gehen Sie"
+      ],
+      "declaredAnswer": [
+        "geben Sie",
+        "nehmen Sie",
+        "gehen Sie"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "stellt",
+        "fegt",
+        "macht"
+      ],
+      "declaredAnswer": [
+        "stellt",
+        "fegt",
+        "macht"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": [
+        "prüf",
+        "prüfe",
+        "teste",
+        "fahr",
+        "fahre"
+      ],
+      "declaredAnswer": [
+        "prüf",
+        "prüfe",
+        "teste",
+        "fahr",
+        "fahre"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "warten"
+      ],
+      "declaredAnswer": [
+        "warten"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "bleibt"
+      ],
+      "declaredAnswer": [
+        "bleibt"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "seid"
+      ],
+      "declaredAnswer": [
+        "seid"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "folgt"
+      ],
+      "declaredAnswer": [
+        "folgt"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "öffne"
+      ],
+      "declaredAnswer": [
+        "öffne"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "lies"
+      ],
+      "declaredAnswer": [
+        "lies"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "vergiss"
+      ],
+      "declaredAnswer": [
+        "vergiss"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "sprich"
+      ],
+      "declaredAnswer": [
+        "sprich"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "nehmen"
+      ],
+      "declaredAnswer": [
+        "nehmen"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": [
+        "rufen"
+      ],
+      "declaredAnswer": [
+        "rufen"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Frau Klein, lesen Sie den Absatz laut vor!",
+        "Frau Klein, lesen Sie den Absatz laut vor"
+      ],
+      "declaredAnswer": [
+        "Frau Klein, lesen Sie den Absatz laut vor!",
+        "Frau Klein, lesen Sie den Absatz laut vor"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mara, steh bitte sofort auf!",
+        "Mara, steh bitte sofort auf",
+        "Mara, stehe bitte sofort auf!",
+        "Mara, stehe bitte sofort auf"
+      ],
+      "declaredAnswer": [
+        "Mara, steh bitte sofort auf!",
+        "Mara, steh bitte sofort auf",
+        "Mara, stehe bitte sofort auf!",
+        "Mara, stehe bitte sofort auf"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Mara, besuche deine Großeltern am Sonntag!",
+        "Mara, besuche deine Großeltern am Sonntag",
+        "Mara, besuch deine Großeltern am Sonntag!",
+        "Mara, besuch deine Großeltern am Sonntag"
+      ],
+      "declaredAnswer": [
+        "Mara, besuche deine Großeltern am Sonntag!",
+        "Mara, besuche deine Großeltern am Sonntag",
+        "Mara, besuch deine Großeltern am Sonntag!",
+        "Mara, besuch deine Großeltern am Sonntag"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Kinder, bringt eure Hefte mit!",
+        "Kinder, bringt eure Hefte mit"
+      ],
+      "declaredAnswer": [
+        "Kinder, bringt eure Hefte mit!",
+        "Kinder, bringt eure Hefte mit"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Herr Roth, erklären Sie bitte den nächsten Schritt!",
+        "Herr Roth, erklären Sie bitte den nächsten Schritt"
+      ],
+      "declaredAnswer": [
+        "Herr Roth, erklären Sie bitte den nächsten Schritt!",
+        "Herr Roth, erklären Sie bitte den nächsten Schritt"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Leute, vergesst eure Tickets nicht!",
+        "Leute, vergesst eure Tickets nicht"
+      ],
+      "declaredAnswer": [
+        "Leute, vergesst eure Tickets nicht!",
+        "Leute, vergesst eure Tickets nicht"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Paul, ruf morgen die Ärztin an!",
+        "Paul, ruf morgen die Ärztin an",
+        "Paul, rufe morgen die Ärztin an!",
+        "Paul, rufe morgen die Ärztin an"
+      ],
+      "declaredAnswer": [
+        "Paul, ruf morgen die Ärztin an!",
+        "Paul, ruf morgen die Ärztin an",
+        "Paul, rufe morgen die Ärztin an!",
+        "Paul, rufe morgen die Ärztin an"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Helfer, entfernt alle leeren Kisten!",
+        "Helfer, entfernt alle leeren Kisten"
+      ],
+      "declaredAnswer": [
+        "Helfer, entfernt alle leeren Kisten!",
+        "Helfer, entfernt alle leeren Kisten"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Jonas, nimm an der Besprechung teil!",
+        "Jonas, nimm an der Besprechung teil"
+      ],
+      "declaredAnswer": [
+        "Jonas, nimm an der Besprechung teil!",
+        "Jonas, nimm an der Besprechung teil"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": [
+        "Lina, benutze den hinteren Eingang!",
+        "Lina, benutze den hinteren Eingang",
+        "Lina, benutz den hinteren Eingang!",
+        "Lina, benutz den hinteren Eingang"
+      ],
+      "declaredAnswer": [
+        "Lina, benutze den hinteren Eingang!",
+        "Lina, benutze den hinteren Eingang",
+        "Lina, benutz den hinteren Eingang!",
+        "Lina, benutz den hinteren Eingang"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    },
+    {
+      "itemId": "de-imperativ-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": [
+        "prüfe",
+        "prüf",
+        "hängt",
+        "testen",
+        "lass",
+        "seid",
+        "führen",
+        "bleibt",
+        "schließ",
+        "schließe",
+        "folgen",
+        "fangt"
+      ],
+      "declaredAnswer": [
+        "prüfe",
+        "prüf",
+        "hängt",
+        "testen",
+        "lass",
+        "seid",
+        "führen",
+        "bleibt",
+        "schließ",
+        "schließe",
+        "folgen",
+        "fangt"
+      ],
+      "rule": "du/ihr/Sie imperative",
+      "evidence": "Reconstrucción completa confirma flexión, orden y partícula declarados."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:46:02.179951Z"
+}

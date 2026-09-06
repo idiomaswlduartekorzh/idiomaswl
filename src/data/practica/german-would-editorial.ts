@@ -1,15 +1,15 @@
 import { createGermanCompactPack, type GermanCompactChoice, type GermanCompactFinal, type GermanCompactMicro, type GermanCompactStory } from './german-editorial-builder.ts'
 const choices: GermanCompactChoice[] = [
-  ['„ich“ mit reisen','Mit mehr Zeit sage ich, dass ich öfter ','.','reisen würde','reisen würdest','reisen würdet','reisen würden'],
-  ['„du“ mit helfen','An meiner Stelle sagst du, dass du sofort ','.','helfen würdest','helfen würde','helfen würdet','helfen würden'],
-  ['„Mia“ mit kommen','Mit einem Auto sagt Mia, dass sie früher ','.','kommen würde','kommen würdest','kommen würdet','kommen würden'],
-  ['„wir“ mit kochen','Mit einer Küche sagen wir, dass wir selbst ','.','kochen würden','kochen würde','kochen würdest','kochen würdet'],
-  ['„ihr“ mit bleiben','Ohne den Regen sagt ihr, dass ihr länger ','.','bleiben würdet','bleiben würde','bleiben würdest','bleiben würden'],
-  ['„die Kinder“ mit spielen','Bei Sonne glaube ich, dass die Kinder draußen ','.','spielen würden','spielen würde','spielen würdest','spielen würdet'],
-  ['„ich“ mit kaufen','Mit genug Geld sage ich, dass ich das Rad ','.','kaufen würde','kaufen würdest','kaufen würdet','kaufen würden'],
-  ['„du“ mit arbeiten','Ohne Lärm sagst du, dass du besser ','.','arbeiten würdest','arbeiten würde','arbeiten würdet','arbeiten würden'],
-  ['„Paul“ mit wohnen','In Berlin sagt Paul, dass er zentral ','.','wohnen würde','wohnen würdest','wohnen würdet','wohnen würden'],
-  ['„wir“ mit aufräumen','Mit Hilfe sagen wir, dass wir schneller ','.','aufräumen würden','aufräumen würde','aufräumen würdest','aufräumen würdet'],
+  ['„ich“ mit reisen','Ich glaube, dass ich mit mehr Zeit öfter ','.','reisen würde','reisen würdest','reisen würdet','reisen würden'],
+  ['„du“ mit helfen','Ich würde dich anrufen, weil du mir in dieser Lage sofort ','.','helfen würdest','helfen würde','helfen würdet','helfen würden'],
+  ['„Mia“ mit kommen','Obwohl Mia mit einem Auto früher ',', nähme sie lieber den Zug.','kommen würde','kommen würdest','kommen würdet','kommen würden'],
+  ['„wir“ mit kochen','Kannst du sagen, ob wir mit einer eigenen Küche selbst ','?','kochen würden','kochen würde','kochen würdest','kochen würdet'],
+  ['„ihr“ mit bleiben','Wenn ihr ohne den Regen länger ',', könnten wir noch spazieren gehen.','bleiben würdet','bleiben würde','bleiben würdest','bleiben würden'],
+  ['„die Kinder“ mit spielen','Ich glaube, dass die Kinder bei Sonnenschein draußen ','.','spielen würden','spielen würde','spielen würdest','spielen würdet'],
+  ['„ich“ mit kaufen','Meine Eltern wären einverstanden, wenn ich das Rad mit eigenem Geld ','.','kaufen würde','kaufen würdest','kaufen würdet','kaufen würden'],
+  ['„du“ mit arbeiten','Weißt du, ob du ohne Lärm besser ','?','arbeiten würdest','arbeiten würde','arbeiten würdet','arbeiten würden'],
+  ['„Paul“ mit wohnen','Mit einem Stipendium könnte Paul sparen, weil er günstig im Wohnheim ','.','wohnen würde','wohnen würdest','wohnen würdet','wohnen würden'],
+  ['„wir“ mit aufräumen','Obwohl wir mit Hilfe schneller ',', bliebe noch viel Arbeit.','aufräumen würden','aufräumen würde','aufräumen würdest','aufräumen würdet'],
 ]
 const micro: GermanCompactMicro[] = [
   ['Mehr freie Zeit','eine hypothetische Folge in der Gegenwart','Mit mehr freier Zeit sagt Lea, dass sie öfter ','.','reisen','reisen würde','reisen wird','gereist ist','reiste'],['Im Restaurant','einen höflichen Wunsch','Wir sagen dem Kellner, dass wir gern einen Tisch ','.','reservieren','reservieren würden','reservieren werden','reserviert haben','reservierten'],['An deiner Stelle','einen hypothetischen Rat','Ich glaube, dass Mara an deiner Stelle das Angebot ','.','annehmen','annehmen würde','annehmen wird','angenommen hat','annahm'],['Ein ruhigeres Viertel','eine gedachte gegenwärtige Folge','Ohne den Verkehr meint Paul, dass er besser ','.','schlafen','schlafen würde','schlafen wird','geschlafen hat','schlief'],['Die höfliche Anfrage','eine höflich formulierte Bereitschaft','Die Kundin erklärt, dass sie gern länger ','.','warten','warten würde','warten wird','gewartet hat','wartete'],['Ein größeres Budget','eine hypothetische Möglichkeit','Mit mehr Geld sagt das Team, dass es eine zweite Studie ','.','finanzieren','finanzieren würde','finanzieren wird','finanziert hat','finanzierte'],['Der andere Weg','eine gedachte Entscheidung','An deiner Stelle denke ich, dass Amir den Küstenweg ','.','wählen','wählen würde','wählen wird','gewählt hat','wählte'],['Eine Bitte','eine höfliche Bitte in indirekter Form','Nora fragt, ob ich ihr kurz ','.','helfen','helfen würde','helfen werde','geholfen habe','half'],['Ohne Zeitdruck','eine hypothetische Arbeitsweise','Ohne Zeitdruck sagt die Redaktion, dass sie jeden Artikel zweimal ','.','prüfen','prüfen würde','prüfen wird','geprüft hat','prüfte'],['Das Traumhaus','einen nicht realen Wunsch','Wenn alles möglich wäre, erklärt Mia, dass sie am Meer ','.','wohnen','wohnen würde','wohnen wird','gewohnt hat','wohnte'],

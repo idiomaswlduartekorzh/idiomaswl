@@ -8,6 +8,15 @@
   "auxiliaryPolicy": "inherits-perfect-auxiliary",
   "allowedAuxiliaries": ["haben", "sein"],
   "minimumFinalUnitTokens": 2,
+  "levelOneClauseContract": {
+    "allowedConnectors": ["dass", "weil", "obwohl", "wenn", "ob"],
+    "minimumDistinctConnectors": 4,
+    "maximumUsesPerConnector": 3,
+    "minimumInterrogativeContexts": 2,
+    "minimumMatrixObQuestions": 2,
+    "minimumPreposedTargetClauses": 2,
+    "requireContiguousVerbalUnit": true
+  },
   "morphology": ["Konjunktiv II of the licensed auxiliary", "correct Partizip II"],
   "wordOrder": ["finite hätte/wäre in V2 and participle at clause end"],
   "contextContract": ["counterfactual past condition or consequence with the real outcome recoverable"],

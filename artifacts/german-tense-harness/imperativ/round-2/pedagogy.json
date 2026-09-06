@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "formId": "imperativ",
+  "role": "pedagogy",
+  "verdict": "PASS",
+  "candidateFingerprint": "c1469c42024cb09582bc95a61a19654a7db25b6916dbf34901433d32b8e633da",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "688bcebfada2bdab301a4dcbec2a767257e41e51e6ce8ed0cb0edefc7146d627",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "id": "coverage-and-progression",
+      "status": "PASS",
+      "percentage": 100,
+      "evidence": "Cobertura 10/10/10/10/10 + historia final; reconocimiento, producción, escena, corrección, separación e integración aumentan la exigencia de forma gradual."
+    },
+    {
+      "id": "level-one-naturality-and-format-variety",
+      "status": "PASS",
+      "percentage": 100,
+      "registerDistribution": {
+        "du": 4,
+        "ihr": 3,
+        "Sie": 3
+      },
+      "evidence": "10/10 consignas son naturales y el vocativo hace inequívoco el destinatario; se distribuyen cuatro imperativos du, tres ihr y tres Sie."
+    },
+    {
+      "id": "level-one-distractors",
+      "status": "PASS",
+      "percentage": 100,
+      "evidence": "10/10 retos contienen cuatro opciones únicas, incluyen la respuesta y presentan contrastes morfológicos de longitud comparable."
+    },
+    {
+      "id": "cross-level-originality",
+      "status": "PASS",
+      "percentage": 100,
+      "duplicates": [],
+      "evidence": "La corrección elimina la repetición anterior y no aparecen textos completos idénticos entre niveles."
+    },
+    {
+      "id": "levels-two-through-six-preserved",
+      "status": "PASS",
+      "percentage": 100,
+      "preserved": {
+        "micro": true,
+        "long": true,
+        "error": true,
+        "separation": true,
+        "finalStories": true
+      },
+      "evidence": "Los niveles 2–6 coinciden estructuralmente con el candidato de round-1."
+    },
+    {
+      "id": "level-4-controlled-rotation",
+      "status": "PASS",
+      "percentage": 100,
+      "errorPositions": [
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "evidence": "Cada reto contiene cinco oraciones y un único error; cada posición aparece dos veces."
+    },
+    {
+      "id": "level-5-no-leak",
+      "status": "PASS",
+      "percentage": 100,
+      "sequence": [
+        "separable",
+        "separable",
+        "inseparable",
+        "separable",
+        "inseparable",
+        "inseparable",
+        "separable",
+        "inseparable",
+        "separable",
+        "inseparable"
+      ],
+      "classChanges": 7,
+      "longestRun": 2,
+      "evidence": "Balance 5/5, al menos seis cambios, racha máxima dos, infinitivo unido, partícula oculta y respuesta como oración completa."
+    },
+    {
+      "id": "level-6-integrated-story",
+      "status": "PASS",
+      "percentage": 100,
+      "gaps": 10,
+      "minimumAnswerTokens": 1,
+      "evidence": "La historia es continua y cada hueco exige la unidad completa definida para la forma."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:47:05.332Z"
+}

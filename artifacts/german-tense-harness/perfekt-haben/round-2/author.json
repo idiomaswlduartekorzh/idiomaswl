@@ -1,0 +1,2832 @@
+{
+  "schemaVersion": 1,
+  "formId": "perfekt-haben",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "0b49115635f4462091d1ca4abbc10b31af3418eb82d4b64f2996656fd0c2cdc6",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "b203e9c08642b6eea8be73cd74b64a026a6a1ea27f742b606c29403f79269025",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "baselineContentFingerprint": "49c96471a7cb1a641a30647dcd1640e9feb465095824597dde94d88ee3fdd160",
+  "candidate": {
+    "formId": "perfekt-haben",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-perfekt-haben-choice-editorial-1",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „ich“ mit machen.",
+          "context": "Mara bestätigt, dass ich die Hausaufgaben ___.",
+          "options": [
+            "gemacht hast",
+            "gemacht hat",
+            "gemacht habe",
+            "gemacht haben"
+          ],
+          "answer": "gemacht habe",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-2",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „du“ mit kaufen.",
+          "context": "Du hattest genug Brot, weil du es gestern ___.",
+          "options": [
+            "gekauft habe",
+            "gekauft hat",
+            "gekauft habt",
+            "gekauft hast"
+          ],
+          "answer": "gekauft hast",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-3",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „Mia“ mit lernen.",
+          "context": "Mia freut sich über das Ergebnis, obwohl sie nur kurz für die Prüfung ___.",
+          "options": [
+            "gelernt hat",
+            "gelernt habe",
+            "gelernt hast",
+            "gelernt haben"
+          ],
+          "answer": "gelernt hat",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-4",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „wir“ mit kochen.",
+          "context": "Kannst du bestätigen, ob wir die Suppe schon ___?",
+          "options": [
+            "gekocht habe",
+            "gekocht haben",
+            "gekocht hast",
+            "gekocht habt"
+          ],
+          "answer": "gekocht haben",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-5",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „ihr“ mit spielen.",
+          "context": "Wenn ihr lange Fußball ___, braucht ihr jetzt eine Pause.",
+          "options": [
+            "gespielt habe",
+            "gespielt hat",
+            "gespielt habt",
+            "gespielt haben"
+          ],
+          "answer": "gespielt habt",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-6",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „die Kinder“ mit malen.",
+          "context": "Die Lehrerin sieht, dass die Kinder ein Bild ___.",
+          "options": [
+            "gemalt habe",
+            "gemalt hast",
+            "gemalt hat",
+            "gemalt haben"
+          ],
+          "answer": "gemalt haben",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-7",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „ich“ mit öffnen.",
+          "context": "Bevor ich das Fenster ___, war es im Zimmer stickig.",
+          "options": [
+            "geöffnet habe",
+            "geöffnet hast",
+            "geöffnet hat",
+            "geöffnet haben"
+          ],
+          "answer": "geöffnet habe",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-8",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „du“ mit lesen.",
+          "context": "Weißt du noch, ob du das Buch schon ___?",
+          "options": [
+            "gelesen habe",
+            "gelesen hast",
+            "gelesen hat",
+            "gelesen habt"
+          ],
+          "answer": "gelesen hast",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-9",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „Paul“ mit anrufen.",
+          "context": "Paul kennt die Neuigkeit, weil er seine Mutter ___.",
+          "options": [
+            "angerufen habe",
+            "angerufen hast",
+            "angerufen hat",
+            "angerufen haben"
+          ],
+          "answer": "angerufen hat",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        },
+        {
+          "id": "de-perfekt-haben-choice-editorial-10",
+          "tenses": [
+            "perfekt-haben"
+          ],
+          "focus": "Perfekt mit haben",
+          "prompt": "Wähle die passende Form für „wir“ mit aufräumen.",
+          "context": "Obwohl wir das Zimmer ___, liegt noch Staub im Flur.",
+          "options": [
+            "aufgeräumt habe",
+            "aufgeräumt hat",
+            "aufgeräumt habt",
+            "aufgeräumt haben"
+          ],
+          "answer": "aufgeräumt haben",
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-perfekt-haben-micro-editorial-1",
+          "title": "Der fertige Bericht",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „schreiben“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Lea bestätigt, dass sie den Bericht gestern ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-1-gap",
+              "tense": "perfekt-haben",
+              "verb": "schreiben",
+              "answers": [
+                "geschrieben hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-2",
+          "title": "Das gemeinsame Abendessen",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „essen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Mia sagt, dass wir schon zu Abend ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-2-gap",
+              "tense": "perfekt-haben",
+              "verb": "essen",
+              "answers": [
+                "gegessen haben"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-3",
+          "title": "Zweimal im Kino",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „sehen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Es stimmt, dass du den Film zweimal ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-3-gap",
+              "tense": "perfekt-haben",
+              "verb": "sehen",
+              "answers": [
+                "gesehen hast"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-4",
+          "title": "Die reparierte Heizung",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „reparieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Der Hausmeister erklärt, dass er die Heizung ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-4-gap",
+              "tense": "perfekt-haben",
+              "verb": "reparieren",
+              "answers": [
+                "repariert hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-5",
+          "title": "Keine Nachricht",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „antworten“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Nora merkt, dass ihr Bruder noch nicht ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-5-gap",
+              "tense": "perfekt-haben",
+              "verb": "antworten",
+              "answers": [
+                "geantwortet hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-6",
+          "title": "Drei Kapitel",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „lesen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Paul erzählt, dass er heute drei Kapitel ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-6-gap",
+              "tense": "perfekt-haben",
+              "verb": "lesen",
+              "answers": [
+                "gelesen hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-7",
+          "title": "Die Reservierung",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „buchen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Rezeption bestätigt, dass wir ein Doppelzimmer ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-7-gap",
+              "tense": "perfekt-haben",
+              "verb": "buchen",
+              "answers": [
+                "gebucht haben"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-8",
+          "title": "Der verlorene Ausweis",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „verlieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Aylin sagt, dass sie ihren Ausweis ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-8-gap",
+              "tense": "perfekt-haben",
+              "verb": "verlieren",
+              "answers": [
+                "verloren hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-9",
+          "title": "Das neue Rezept",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „ausprobieren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Der Koch erklärt, dass er heute ein neues Rezept ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-9-gap",
+              "tense": "perfekt-haben",
+              "verb": "ausprobieren",
+              "answers": [
+                "ausprobiert hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-micro-editorial-10",
+          "title": "Die E-Mail",
+          "focus": "Perfekt mit haben",
+          "instruction": "Konjugiere „senden“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Jonas bestätigt, dass er die E-Mail ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-micro-editorial-10-gap",
+              "tense": "perfekt-haben",
+              "verb": "senden",
+              "answers": [
+                "gesendet hat",
+                "gesandt hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-perfekt-haben-long-editorial-1",
+          "title": "Die Abgabe",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mara erklärt, dass sie den Entwurf ",
+            "; danach sagt sie, dass ihr Kollege die Zahlen ",
+            "; schließlich bestätigt sie, dass das Team die Datei ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-1-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "schreiben",
+              "answers": [
+                "geschrieben hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-1-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "prüfen",
+              "answers": [
+                "geprüft hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-1-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "hochladen",
+              "answers": [
+                "hochgeladen hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-2",
+          "title": "Das Abendessen",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Tom erzählt, dass er Gemüse ",
+            "; anschließend berichtet er, dass seine Schwester die Suppe ",
+            "; zum Schluss sagt er, dass beide den Tisch ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-2-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "kaufen",
+              "answers": [
+                "gekauft hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-2-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "kochen",
+              "answers": [
+                "gekocht hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-2-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "decken",
+              "answers": [
+                "gedeckt haben"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-3",
+          "title": "Der Fahrradservice",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Mechanikerin sagt, dass sie zuerst die Bremsen ",
+            "; dann erklärt sie, dass sie die Kette ",
+            "; zuletzt bestätigt sie, dass sie eine Probefahrt ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-3-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "kontrollieren",
+              "answers": [
+                "kontrolliert hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-3-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "ölen",
+              "answers": [
+                "geölt hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-3-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "machen",
+              "answers": [
+                "gemacht hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-4",
+          "title": "Der Umzugskarton",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Lina berichtet, dass sie die Bücher ",
+            "; danach sagt sie, dass ihr Vater die Kisten ",
+            "; schließlich erklärt sie, dass ihre Mutter alles ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-4-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "sortieren",
+              "answers": [
+                "sortiert hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-4-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "beschriften",
+              "answers": [
+                "beschriftet hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-4-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "fotografieren",
+              "answers": [
+                "fotografiert hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-5",
+          "title": "Die Podcastfolge",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Produzent bestätigt, dass er das Gespräch ",
+            "; dann sagt er, dass die Technikerin den Ton ",
+            "; zuletzt erklärt er, dass sie die Folge ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-5-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "aufnehmen",
+              "answers": [
+                "aufgenommen hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-5-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "mischen",
+              "answers": [
+                "gemischt hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-5-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "veröffentlichen",
+              "answers": [
+                "veröffentlicht hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-6",
+          "title": "Der Klassenbasar",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Lehrerin erzählt, dass die Klasse Plakate ",
+            "; danach berichtet sie, dass die Eltern Kuchen ",
+            "; am Ende sagt sie, dass der Basar viel Geld ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-6-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "gestalten",
+              "answers": [
+                "gestaltet hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-6-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "backen",
+              "answers": [
+                "gebacken haben"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-6-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "einbringen",
+              "answers": [
+                "eingebracht hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-7",
+          "title": "Die Datenanalyse",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Nina erklärt, dass sie die Tabellen ",
+            "; anschließend sagt sie, dass Amir die Ausreißer ",
+            "; schließlich bestätigt sie, dass der Chef die Ergebnisse ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-7-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "verbinden",
+              "answers": [
+                "verbunden hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-7-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "markieren",
+              "answers": [
+                "markiert hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-7-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "freigeben",
+              "answers": [
+                "freigegeben hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-8",
+          "title": "Die Geburtstagsfeier",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Juri sagt, dass er den Raum ",
+            "; dann berichtet er, dass seine Freunde Musik ",
+            "; zuletzt erklärt er, dass alle gemeinsam ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-8-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "schmücken",
+              "answers": [
+                "geschmückt hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-8-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "auswählen",
+              "answers": [
+                "ausgewählt haben"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-8-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "aufräumen",
+              "answers": [
+                "aufgeräumt haben"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-9",
+          "title": "Die Wohnungsbesichtigung",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Maklerin bestätigt, dass sie den Termin ",
+            "; danach sagt sie, dass das Paar alle Zimmer ",
+            "; schließlich erklärt sie, dass es viele Fragen ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-9-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "vereinbaren",
+              "answers": [
+                "vereinbart hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-9-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "fotografieren",
+              "answers": [
+                "fotografiert hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-9-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "stellen",
+              "answers": [
+                "gestellt hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-perfekt-haben-long-editorial-10",
+          "title": "Die Gepäcksuche",
+          "focus": "Perfekt mit haben",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Reisende berichtet, dass er das Formular ",
+            "; dann sagt er, dass die Mitarbeiterin die Nummer ",
+            "; zuletzt bestätigt er, dass die Fluggesellschaft den Koffer ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-long-editorial-10-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "ausfüllen",
+              "answers": [
+                "ausgefüllt hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-10-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "notieren",
+              "answers": [
+                "notiert hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-long-editorial-10-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "finden",
+              "answers": [
+                "gefunden hat"
+              ]
+            }
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-perfekt-haben-independent-error-1",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 1",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Lina erzählt, dass sie den Vertrag ",
+              "form": "gelesen hat",
+              "id": "de-perfekt-haben-independent-error-1-token-1"
+            },
+            {
+              "before": ". Der Techniker sagt, dass er die Sicherung ",
+              "form": "ausgetauscht ist",
+              "id": "de-perfekt-haben-independent-error-1-token-2"
+            },
+            {
+              "before": ". Die Redaktion meldet, dass sie den Titel ",
+              "form": "geändert hat",
+              "id": "de-perfekt-haben-independent-error-1-token-3"
+            },
+            {
+              "before": ". Die Köchin sagt, dass sie das Menü ",
+              "form": "vorbereitet hat",
+              "id": "de-perfekt-haben-independent-error-1-token-4"
+            },
+            {
+              "before": ". Omar bestätigt, dass er den Fehler ",
+              "form": "entdeckt hat",
+              "id": "de-perfekt-haben-independent-error-1-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-1-token-2",
+          "answers": [
+            "ausgetauscht hat"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-2",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 2",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wir bestätigen, dass wir alle Belege ",
+              "form": "gesammelt haben",
+              "id": "de-perfekt-haben-independent-error-2-token-1"
+            },
+            {
+              "before": ". Ihr erklärt, dass ihr den Raum ",
+              "form": "reserviert habt",
+              "id": "de-perfekt-haben-independent-error-2-token-2"
+            },
+            {
+              "before": ". Du hast berichtet, dass du die Datei ",
+              "form": "gelöscht bist",
+              "id": "de-perfekt-haben-independent-error-2-token-3"
+            },
+            {
+              "before": ". Die Kinder erzählen, dass sie ein Modell ",
+              "form": "gebaut haben",
+              "id": "de-perfekt-haben-independent-error-2-token-4"
+            },
+            {
+              "before": ". Die Gäste sagen, dass sie den Schlüssel ",
+              "form": "abgegeben haben",
+              "id": "de-perfekt-haben-independent-error-2-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-2-token-3",
+          "answers": [
+            "gelöscht hast"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-3",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 3",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Der Techniker sagt, dass er die Sicherung ",
+              "form": "ausgetauscht hat",
+              "id": "de-perfekt-haben-independent-error-3-token-1"
+            },
+            {
+              "before": ". Die Redaktion meldet, dass sie den Titel ",
+              "form": "geändert hat",
+              "id": "de-perfekt-haben-independent-error-3-token-2"
+            },
+            {
+              "before": ". Die Köchin sagt, dass sie das Menü ",
+              "form": "vorbereitet hat",
+              "id": "de-perfekt-haben-independent-error-3-token-3"
+            },
+            {
+              "before": ". Omar bestätigt, dass er den Fehler ",
+              "form": "entdeckt ist",
+              "id": "de-perfekt-haben-independent-error-3-token-4"
+            },
+            {
+              "before": ". Lina erzählt, dass sie den Vertrag ",
+              "form": "gelesen hat",
+              "id": "de-perfekt-haben-independent-error-3-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-3-token-4",
+          "answers": [
+            "entdeckt hat"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-4",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 4",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Ihr erklärt, dass ihr den Raum ",
+              "form": "reserviert habt",
+              "id": "de-perfekt-haben-independent-error-4-token-1"
+            },
+            {
+              "before": ". Du hast berichtet, dass du die Datei ",
+              "form": "gelöscht hast",
+              "id": "de-perfekt-haben-independent-error-4-token-2"
+            },
+            {
+              "before": ". Die Kinder erzählen, dass sie ein Modell ",
+              "form": "gebaut haben",
+              "id": "de-perfekt-haben-independent-error-4-token-3"
+            },
+            {
+              "before": ". Die Gäste sagen, dass sie den Schlüssel ",
+              "form": "abgegeben haben",
+              "id": "de-perfekt-haben-independent-error-4-token-4"
+            },
+            {
+              "before": ". Wir bestätigen, dass wir alle Belege ",
+              "form": "gesammelt sind",
+              "id": "de-perfekt-haben-independent-error-4-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-4-token-5",
+          "answers": [
+            "gesammelt haben"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-5",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 5",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Redaktion meldet, dass sie den Titel ",
+              "form": "geändert ist",
+              "id": "de-perfekt-haben-independent-error-5-token-1"
+            },
+            {
+              "before": ". Die Köchin sagt, dass sie das Menü ",
+              "form": "vorbereitet hat",
+              "id": "de-perfekt-haben-independent-error-5-token-2"
+            },
+            {
+              "before": ". Omar bestätigt, dass er den Fehler ",
+              "form": "entdeckt hat",
+              "id": "de-perfekt-haben-independent-error-5-token-3"
+            },
+            {
+              "before": ". Lina erzählt, dass sie den Vertrag ",
+              "form": "gelesen hat",
+              "id": "de-perfekt-haben-independent-error-5-token-4"
+            },
+            {
+              "before": ". Der Techniker sagt, dass er die Sicherung ",
+              "form": "ausgetauscht hat",
+              "id": "de-perfekt-haben-independent-error-5-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-5-token-1",
+          "answers": [
+            "geändert hat"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-6",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 6",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Du hast berichtet, dass du die Datei ",
+              "form": "gelöscht hast",
+              "id": "de-perfekt-haben-independent-error-6-token-1"
+            },
+            {
+              "before": ". Die Kinder erzählen, dass sie ein Modell ",
+              "form": "gebaut sind",
+              "id": "de-perfekt-haben-independent-error-6-token-2"
+            },
+            {
+              "before": ". Die Gäste sagen, dass sie den Schlüssel ",
+              "form": "abgegeben haben",
+              "id": "de-perfekt-haben-independent-error-6-token-3"
+            },
+            {
+              "before": ". Wir bestätigen, dass wir alle Belege ",
+              "form": "gesammelt haben",
+              "id": "de-perfekt-haben-independent-error-6-token-4"
+            },
+            {
+              "before": ". Ihr erklärt, dass ihr den Raum ",
+              "form": "reserviert habt",
+              "id": "de-perfekt-haben-independent-error-6-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-6-token-2",
+          "answers": [
+            "gebaut haben"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-7",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 7",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Köchin sagt, dass sie das Menü ",
+              "form": "vorbereitet hat",
+              "id": "de-perfekt-haben-independent-error-7-token-1"
+            },
+            {
+              "before": ". Omar bestätigt, dass er den Fehler ",
+              "form": "entdeckt hat",
+              "id": "de-perfekt-haben-independent-error-7-token-2"
+            },
+            {
+              "before": ". Lina erzählt, dass sie den Vertrag ",
+              "form": "gelesen ist",
+              "id": "de-perfekt-haben-independent-error-7-token-3"
+            },
+            {
+              "before": ". Der Techniker sagt, dass er die Sicherung ",
+              "form": "ausgetauscht hat",
+              "id": "de-perfekt-haben-independent-error-7-token-4"
+            },
+            {
+              "before": ". Die Redaktion meldet, dass sie den Titel ",
+              "form": "geändert hat",
+              "id": "de-perfekt-haben-independent-error-7-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-7-token-3",
+          "answers": [
+            "gelesen hat"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-8",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 8",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Kinder erzählen, dass sie ein Modell ",
+              "form": "gebaut haben",
+              "id": "de-perfekt-haben-independent-error-8-token-1"
+            },
+            {
+              "before": ". Die Gäste sagen, dass sie den Schlüssel ",
+              "form": "abgegeben haben",
+              "id": "de-perfekt-haben-independent-error-8-token-2"
+            },
+            {
+              "before": ". Wir bestätigen, dass wir alle Belege ",
+              "form": "gesammelt haben",
+              "id": "de-perfekt-haben-independent-error-8-token-3"
+            },
+            {
+              "before": ". Ihr erklärt, dass ihr den Raum ",
+              "form": "reserviert seid",
+              "id": "de-perfekt-haben-independent-error-8-token-4"
+            },
+            {
+              "before": ". Du hast berichtet, dass du die Datei ",
+              "form": "gelöscht hast",
+              "id": "de-perfekt-haben-independent-error-8-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-8-token-4",
+          "answers": [
+            "reserviert habt"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-9",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 9",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Omar bestätigt, dass er den Fehler ",
+              "form": "entdeckt hat",
+              "id": "de-perfekt-haben-independent-error-9-token-1"
+            },
+            {
+              "before": ". Lina erzählt, dass sie den Vertrag ",
+              "form": "gelesen hat",
+              "id": "de-perfekt-haben-independent-error-9-token-2"
+            },
+            {
+              "before": ". Der Techniker sagt, dass er die Sicherung ",
+              "form": "ausgetauscht hat",
+              "id": "de-perfekt-haben-independent-error-9-token-3"
+            },
+            {
+              "before": ". Die Redaktion meldet, dass sie den Titel ",
+              "form": "geändert hat",
+              "id": "de-perfekt-haben-independent-error-9-token-4"
+            },
+            {
+              "before": ". Die Köchin sagt, dass sie das Menü ",
+              "form": "vorbereitet ist",
+              "id": "de-perfekt-haben-independent-error-9-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-9-token-5",
+          "answers": [
+            "vorbereitet hat"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-perfekt-haben-independent-error-10",
+          "tense": "perfekt-haben",
+          "title": "Korrekturrunde · 10",
+          "focus": "Perfekt mit haben",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Gäste sagen, dass sie den Schlüssel ",
+              "form": "abgegeben sind",
+              "id": "de-perfekt-haben-independent-error-10-token-1"
+            },
+            {
+              "before": ". Wir bestätigen, dass wir alle Belege ",
+              "form": "gesammelt haben",
+              "id": "de-perfekt-haben-independent-error-10-token-2"
+            },
+            {
+              "before": ". Ihr erklärt, dass ihr den Raum ",
+              "form": "reserviert habt",
+              "id": "de-perfekt-haben-independent-error-10-token-3"
+            },
+            {
+              "before": ". Du hast berichtet, dass du die Datei ",
+              "form": "gelöscht hast",
+              "id": "de-perfekt-haben-independent-error-10-token-4"
+            },
+            {
+              "before": ". Die Kinder erzählen, dass sie ein Modell ",
+              "form": "gebaut haben",
+              "id": "de-perfekt-haben-independent-error-10-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-perfekt-haben-independent-error-10-token-1",
+          "answers": [
+            "abgegeben haben"
+          ],
+          "explanation": "Das Perfekt mit „haben“ besteht aus dem konjugierten Hilfsverb und dem Partizip II; im Nebensatz steht die vollständige Verbgruppe am Ende. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-perfekt-haben-separation-1",
+          "tense": "perfekt-haben",
+          "title": "besuchen · 1",
+          "focus": "perfekt-haben",
+          "verb": "besuchen",
+          "separation": "inseparable",
+          "prompt": "Nora sagt, dass sie ihre Tante ___.",
+          "answers": [
+            "Nora sagt, dass sie ihre Tante besucht hat.",
+            "Nora sagt, dass sie ihre Tante besucht hat"
+          ],
+          "explanation": "„besuchen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-haben-separation-2",
+          "tense": "perfekt-haben",
+          "title": "mitbringen · 2",
+          "focus": "perfekt-haben",
+          "verb": "mitbringen",
+          "separation": "separable",
+          "prompt": "Ihr erklärt, dass ihr alle Unterlagen ___.",
+          "answers": [
+            "Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt.",
+            "Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt"
+          ],
+          "explanation": "„mitbringen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-haben-separation-3",
+          "tense": "perfekt-haben",
+          "title": "erzählen · 3",
+          "focus": "perfekt-haben",
+          "verb": "erzählen",
+          "separation": "inseparable",
+          "prompt": "Die Zeugin erklärt, dass sie alles ___.",
+          "answers": [
+            "Die Zeugin erklärt, dass sie alles erzählt hat.",
+            "Die Zeugin erklärt, dass sie alles erzählt hat"
+          ],
+          "explanation": "„erzählen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-haben-separation-4",
+          "tense": "perfekt-haben",
+          "title": "verstehen · 4",
+          "focus": "perfekt-haben",
+          "verb": "verstehen",
+          "separation": "inseparable",
+          "prompt": "Du bestätigst, dass du die Aufgabe ___.",
+          "answers": [
+            "Du bestätigst, dass du die Aufgabe verstanden hast.",
+            "Du bestätigst, dass du die Aufgabe verstanden hast"
+          ],
+          "explanation": "„verstehen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-haben-separation-5",
+          "tense": "perfekt-haben",
+          "title": "anrufen · 5",
+          "focus": "perfekt-haben",
+          "verb": "anrufen",
+          "separation": "separable",
+          "prompt": "Der Arzt bestätigt, dass er den Patienten ___.",
+          "answers": [
+            "Der Arzt bestätigt, dass er den Patienten angerufen hat.",
+            "Der Arzt bestätigt, dass er den Patienten angerufen hat"
+          ],
+          "explanation": "„anrufen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-haben-separation-6",
+          "tense": "perfekt-haben",
+          "title": "entdecken · 6",
+          "focus": "perfekt-haben",
+          "verb": "entdecken",
+          "separation": "inseparable",
+          "prompt": "Das Team meldet, dass es den Fehler ___.",
+          "answers": [
+            "Das Team meldet, dass es den Fehler entdeckt hat.",
+            "Das Team meldet, dass es den Fehler entdeckt hat"
+          ],
+          "explanation": "„entdecken“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-haben-separation-7",
+          "tense": "perfekt-haben",
+          "title": "teilnehmen · 7",
+          "focus": "perfekt-haben",
+          "verb": "teilnehmen",
+          "separation": "separable",
+          "prompt": "Milan erzählt, dass er am Workshop ___.",
+          "answers": [
+            "Milan erzählt, dass er am Workshop teilgenommen hat.",
+            "Milan erzählt, dass er am Workshop teilgenommen hat"
+          ],
+          "explanation": "„teilnehmen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-haben-separation-8",
+          "tense": "perfekt-haben",
+          "title": "bekommen · 8",
+          "focus": "perfekt-haben",
+          "verb": "bekommen",
+          "separation": "inseparable",
+          "prompt": "Die Gewinner sagen, dass sie ihre Urkunden ___.",
+          "answers": [
+            "Die Gewinner sagen, dass sie ihre Urkunden bekommen haben.",
+            "Die Gewinner sagen, dass sie ihre Urkunden bekommen haben"
+          ],
+          "explanation": "„bekommen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-perfekt-haben-separation-9",
+          "tense": "perfekt-haben",
+          "title": "vorbereiten · 9",
+          "focus": "perfekt-haben",
+          "verb": "vorbereiten",
+          "separation": "separable",
+          "prompt": "Wir berichten, dass wir die Sitzung ___.",
+          "answers": [
+            "Wir berichten, dass wir die Sitzung vorbereitet haben.",
+            "Wir berichten, dass wir die Sitzung vorbereitet haben"
+          ],
+          "explanation": "„vorbereiten“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-perfekt-haben-separation-10",
+          "tense": "perfekt-haben",
+          "title": "aufräumen · 10",
+          "focus": "perfekt-haben",
+          "verb": "aufräumen",
+          "separation": "separable",
+          "prompt": "Lea sagt, dass sie das Lager ___.",
+          "answers": [
+            "Lea sagt, dass sie das Lager aufgeräumt hat.",
+            "Lea sagt, dass sie das Lager aufgeräumt hat"
+          ],
+          "explanation": "„aufräumen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-perfekt-haben-written-final-story",
+          "title": "Das Nachbarschaftsfest ist vorbei",
+          "focus": "perfekt-haben",
+          "instruction": "Lies die ganze Geschichte. Ergänze alle Verbgruppen schriftlich; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Am Sonntagabend erzählt Mara, dass der Verein das Fest monatelang ",
+            ". Zuerst berichtet sie, dass mehrere Nachbarn Spenden ",
+            ". Dann erklärt sie, dass ein Designer die Plakate ",
+            " und eine Druckerei sie rechtzeitig ",
+            ". Für den Festtag bestätigt Mara, dass Freiwillige alle Stände ",
+            ". Eine Elektrikerin bestätigt, dass sie jede Leitung ",
+            ". Die Jugendlichen sagen, dass sie die Bühne ",
+            " und später viele Fotos ",
+            ". Schließlich meldet Mara, dass sie den Bericht ",
+            " und der Vorstand allen Helfern persönlich ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-1",
+              "tense": "perfekt-haben",
+              "verb": "planen",
+              "answers": [
+                "geplant hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-2",
+              "tense": "perfekt-haben",
+              "verb": "sammeln",
+              "answers": [
+                "gesammelt haben"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-3",
+              "tense": "perfekt-haben",
+              "verb": "entwerfen",
+              "answers": [
+                "entworfen hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-4",
+              "tense": "perfekt-haben",
+              "verb": "liefern",
+              "answers": [
+                "geliefert hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-5",
+              "tense": "perfekt-haben",
+              "verb": "aufbauen",
+              "answers": [
+                "aufgebaut haben"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-6",
+              "tense": "perfekt-haben",
+              "verb": "prüfen",
+              "answers": [
+                "geprüft hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-7",
+              "tense": "perfekt-haben",
+              "verb": "dekorieren",
+              "answers": [
+                "dekoriert haben"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-8",
+              "tense": "perfekt-haben",
+              "verb": "machen",
+              "answers": [
+                "gemacht haben"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-9",
+              "tense": "perfekt-haben",
+              "verb": "veröffentlichen",
+              "answers": [
+                "veröffentlicht hat"
+              ]
+            },
+            {
+              "id": "de-perfekt-haben-written-final-story-gap-10",
+              "tense": "perfekt-haben",
+              "verb": "danken",
+              "answers": [
+                "gedankt hat"
+              ]
+            }
+          ],
+          "explanation": "Schreibe jede vollständige Perfektgruppe mit dem passenden Präsens von „haben“ und dem Partizip II."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-1",
+        "level": 1,
+        "lemma": "machen",
+        "senseId": "perfekt-haben-l1-1-machen",
+        "targetForm": "perfekt-haben",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-dass",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "gemacht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gemacht habe",
+        "accepted": [
+          "gemacht habe"
+        ],
+        "distractorRationale": [
+          "gemacht hast: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gemacht hat: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gemacht haben: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "21a15c47c766d00e1e064e274f4005bf1c6453210654b5a0431da67cbf1379a1"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-2",
+        "level": 1,
+        "lemma": "kaufen",
+        "senseId": "perfekt-haben-l1-2-kaufen",
+        "targetForm": "perfekt-haben",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-weil",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "gekauft",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekauft hast",
+        "accepted": [
+          "gekauft hast"
+        ],
+        "distractorRationale": [
+          "gekauft habe: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gekauft hat: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gekauft habt: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "dba740661f2bf03df21635ccf6b7f67763e32e2846e69862e55e3f822eb253f6"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-3",
+        "level": 1,
+        "lemma": "lernen",
+        "senseId": "perfekt-haben-l1-3-lernen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-obwohl",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelernt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelernt hat",
+        "accepted": [
+          "gelernt hat"
+        ],
+        "distractorRationale": [
+          "gelernt habe: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gelernt hast: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gelernt haben: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "93b234dcb60bd0177b3be1cb17960ba386495b3331ba2437860d3f57378b369b"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-4",
+        "level": 1,
+        "lemma": "kochen",
+        "senseId": "perfekt-haben-l1-4-kochen",
+        "targetForm": "perfekt-haben",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "question",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-ob",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "gekocht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekocht haben",
+        "accepted": [
+          "gekocht haben"
+        ],
+        "distractorRationale": [
+          "gekocht habe: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gekocht hast: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gekocht habt: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "d701ea5e2c2e65eef11e88484dca1c97579f30c5795081766ef1b914620d3c3d"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-5",
+        "level": 1,
+        "lemma": "spielen",
+        "senseId": "perfekt-haben-l1-5-spielen",
+        "targetForm": "perfekt-haben",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-wenn",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "gespielt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gespielt habt",
+        "accepted": [
+          "gespielt habt"
+        ],
+        "distractorRationale": [
+          "gespielt habe: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gespielt hat: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gespielt haben: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "94770ef2b712f81e4b16d4b1a11170a77fe51da013c305adc447545c0ef40be3"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-6",
+        "level": 1,
+        "lemma": "malen",
+        "senseId": "perfekt-haben-l1-6-malen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-dass",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "gemalt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gemalt haben",
+        "accepted": [
+          "gemalt haben"
+        ],
+        "distractorRationale": [
+          "gemalt habe: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gemalt hast: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gemalt hat: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "4fc40ea16b2d7970c5200ebdfc406f28fc0806541fc272a385e7106349f35345"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-7",
+        "level": 1,
+        "lemma": "öffnen",
+        "senseId": "perfekt-haben-l1-7-o-ffnen",
+        "targetForm": "perfekt-haben",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-bevor",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "geöffnet",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geöffnet habe",
+        "accepted": [
+          "geöffnet habe"
+        ],
+        "distractorRationale": [
+          "geöffnet hast: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "geöffnet hat: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "geöffnet haben: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "6663f91a23deef6e5b17fa3c2349d0c1be7818504cd35f77e9ce096ece07a680"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-8",
+        "level": 1,
+        "lemma": "lesen",
+        "senseId": "perfekt-haben-l1-8-lesen",
+        "targetForm": "perfekt-haben",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "question",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-ob",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelesen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelesen hast",
+        "accepted": [
+          "gelesen hast"
+        ],
+        "distractorRationale": [
+          "gelesen habe: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gelesen hat: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "gelesen habt: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "406545bc6761110fba63404460297555a074364f794448746659f60981674a02"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-9",
+        "level": 1,
+        "lemma": "anrufen",
+        "senseId": "perfekt-haben-l1-9-anrufen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-weil",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "angerufen",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "angerufen hat",
+        "accepted": [
+          "angerufen hat"
+        ],
+        "distractorRationale": [
+          "angerufen habe: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "angerufen hast: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "angerufen haben: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "d90073913a5f2470d691473497abcc4889cb90a0fbb53034fc3554857e27a781"
+      },
+      {
+        "itemId": "de-perfekt-haben-choice-editorial-10",
+        "level": 1,
+        "lemma": "aufräumen",
+        "senseId": "perfekt-haben-l1-10-aufra-umen",
+        "targetForm": "perfekt-haben",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "connector-obwohl",
+          "completed-event",
+          "auxiliary-haben"
+        ],
+        "auxiliary": "haben",
+        "participle": "aufgeräumt",
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "aufgeräumt haben",
+        "accepted": [
+          "aufgeräumt haben"
+        ],
+        "distractorRationale": [
+          "aufgeräumt habe: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "aufgeräumt hat: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "aufgeräumt habt: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "2b23fe8deb62612b107fbc96debff82911530fba21174d854b4d0e20f674d997"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-1",
+        "level": 2,
+        "lemma": "schreiben",
+        "senseId": "perfekt-haben-l2-1-schreiben",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "gestern",
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "geschrieben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschrieben hat",
+        "accepted": [
+          "geschrieben hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "b5cb004896ff40e14ec6c1beaef6b4601f4116163541161f0b327a0c37b1cc30"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-2",
+        "level": 2,
+        "lemma": "essen",
+        "senseId": "perfekt-haben-l2-2-essen",
+        "targetForm": "perfekt-haben",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "schon"
+        ],
+        "auxiliary": "haben",
+        "participle": "gegessen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gegessen haben",
+        "accepted": [
+          "gegessen haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5015b2bed76225538789da299441a0e02e88bdeea3e4dd4da8069e0a81443609"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-3",
+        "level": 2,
+        "lemma": "sehen",
+        "senseId": "perfekt-haben-l2-3-sehen",
+        "targetForm": "perfekt-haben",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "gesehen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesehen hast",
+        "accepted": [
+          "gesehen hast"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "001b755807d983d9b33ab9e65b406d6a34dc57103ea7cb94eed26dc0763382ed"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-4",
+        "level": 2,
+        "lemma": "reparieren",
+        "senseId": "perfekt-haben-l2-4-reparieren",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "repariert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "repariert hat",
+        "accepted": [
+          "repariert hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "26e444d6bf53ac09ca912688bae2c4d70ea72f184f2fba1a9ccfa73d82400478"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-5",
+        "level": 2,
+        "lemma": "antworten",
+        "senseId": "perfekt-haben-l2-5-antworten",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "geantwortet",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "geantwortet hat",
+        "accepted": [
+          "geantwortet hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7f05c2b7dde5861a036ced67efb7de2a0cc5de442af18f9c5688f18094193553"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-6",
+        "level": 2,
+        "lemma": "lesen",
+        "senseId": "perfekt-haben-l2-6-lesen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "heute"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelesen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelesen hat",
+        "accepted": [
+          "gelesen hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8e112215dd40492a354504198aad88a2317ce068eaaab10a85d0d505cf8598a2"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-7",
+        "level": 2,
+        "lemma": "buchen",
+        "senseId": "perfekt-haben-l2-7-buchen",
+        "targetForm": "perfekt-haben",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "gebucht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gebucht haben",
+        "accepted": [
+          "gebucht haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "df7bc9666f79f331b04b8ec251f1303119107c52c2fa86f24f49b9267e9d28cc"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-8",
+        "level": 2,
+        "lemma": "verlieren",
+        "senseId": "perfekt-haben-l2-8-verlieren",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "verloren",
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "verloren hat",
+        "accepted": [
+          "verloren hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "230eadfb107e5382c636c0eb23bb1bd5e01fc4182fb035c71ed04e73d34954ec"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-9",
+        "level": 2,
+        "lemma": "ausprobieren",
+        "senseId": "perfekt-haben-l2-9-ausprobieren",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "heute"
+        ],
+        "auxiliary": "haben",
+        "participle": "ausprobiert",
+        "separation": "separable",
+        "prefix": "aus",
+        "expectedUnit": "ausprobiert hat",
+        "accepted": [
+          "ausprobiert hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5ca930fd9c5c84306f11ca99f9bffb6e4ea9f02cfd9014fb41937cac3e51c25d"
+      },
+      {
+        "itemId": "de-perfekt-haben-micro-editorial-10",
+        "level": 2,
+        "lemma": "senden",
+        "senseId": "perfekt-haben-l2-10-senden",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "gesendet; gesandt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesendet hat | gesandt hat",
+        "accepted": [
+          "gesendet hat",
+          "gesandt hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7ca1000a52fbd27df98ffd62ef79bcdc8acfc496fdb7d32df19083890d025d9d"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-1",
+        "level": 3,
+        "lemma": "schreiben + prüfen + hochladen",
+        "senseId": "perfekt-haben-l3-1-schreiben",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "danach",
+          "schließlich",
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "geschrieben; geprüft; hochgeladen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschrieben hat | geprüft hat | hochgeladen hat",
+        "accepted": [
+          "geschrieben hat",
+          "geprüft hat",
+          "hochgeladen hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "9900ea2f3c8166ab31b591bc32dae732566ad54a13d175b20484cabe100ecd71"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-2",
+        "level": 3,
+        "lemma": "kaufen + kochen + decken",
+        "senseId": "perfekt-haben-l3-2-kaufen",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "gekauft; gekocht; gedeckt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekauft hat | gekocht hat | gedeckt haben",
+        "accepted": [
+          "gekauft hat",
+          "gekocht hat",
+          "gedeckt haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "26fdb21a8f303f012d5d3da18a3406f04f52de3a6a813f534b26aa9e72937670"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-3",
+        "level": 3,
+        "lemma": "kontrollieren + ölen + machen",
+        "senseId": "perfekt-haben-l3-3-kontrollieren",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "zuerst",
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "kontrolliert; geölt; gemacht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kontrolliert hat | geölt hat | gemacht hat",
+        "accepted": [
+          "kontrolliert hat",
+          "geölt hat",
+          "gemacht hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5098bc19e996eb474a0cabec96987b3a90fc5983169e14844c46f2f56cf17e93"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-4",
+        "level": 3,
+        "lemma": "sortieren + beschriften + fotografieren",
+        "senseId": "perfekt-haben-l3-4-sortieren",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "danach",
+          "schließlich"
+        ],
+        "auxiliary": "haben",
+        "participle": "sortiert; beschriftet; fotografiert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sortiert hat | beschriftet hat | fotografiert hat",
+        "accepted": [
+          "sortiert hat",
+          "beschriftet hat",
+          "fotografiert hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "c754385f904cb116d92aad4c3962ea064a12fb7899440c7383f068fca0d61881"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-5",
+        "level": 3,
+        "lemma": "aufnehmen + mischen + veröffentlichen",
+        "senseId": "perfekt-haben-l3-5-aufnehmen",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "aufgenommen; gemischt; veröffentlicht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "aufgenommen hat | gemischt hat | veröffentlicht hat",
+        "accepted": [
+          "aufgenommen hat",
+          "gemischt hat",
+          "veröffentlicht hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5c92641b1676698c859deb50474d057f6df5f6fae97d40331de378f2e50495f4"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-6",
+        "level": 3,
+        "lemma": "gestalten + backen + einbringen",
+        "senseId": "perfekt-haben-l3-6-gestalten",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "danach"
+        ],
+        "auxiliary": "haben",
+        "participle": "gestaltet; gebacken; eingebracht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gestaltet hat | gebacken haben | eingebracht hat",
+        "accepted": [
+          "gestaltet hat",
+          "gebacken haben",
+          "eingebracht hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "58bfdaf6d3d3bf4ac73c397b27d968395143ed534bd5ff00c8786ffa6d11b5bf"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-7",
+        "level": 3,
+        "lemma": "verbinden + markieren + freigeben",
+        "senseId": "perfekt-haben-l3-7-verbinden",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "schließlich",
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "verbunden; markiert; freigegeben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "verbunden hat | markiert hat | freigegeben hat",
+        "accepted": [
+          "verbunden hat",
+          "markiert hat",
+          "freigegeben hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "43274adedb31b483c36af9d82baccc827c36ae623776ef87be9798dc74adcaa8"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-8",
+        "level": 3,
+        "lemma": "schmücken + auswählen + aufräumen",
+        "senseId": "perfekt-haben-l3-8-schmu-cken",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "geschmückt; ausgewählt; aufgeräumt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschmückt hat | ausgewählt haben | aufgeräumt haben",
+        "accepted": [
+          "geschmückt hat",
+          "ausgewählt haben",
+          "aufgeräumt haben"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "854ffb8611d2645e3be2f5f0e106dc2addeb1294cbe046b442e24594b4dc46c6"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-9",
+        "level": 3,
+        "lemma": "vereinbaren + fotografieren + stellen",
+        "senseId": "perfekt-haben-l3-9-vereinbaren",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "danach",
+          "schließlich",
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "vereinbart; fotografiert; gestellt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "vereinbart hat | fotografiert hat | gestellt hat",
+        "accepted": [
+          "vereinbart hat",
+          "fotografiert hat",
+          "gestellt hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "629f948e59548c3427d8396f3eb97af4174574a6c8a15243dbf1c94fe69168ea"
+      },
+      {
+        "itemId": "de-perfekt-haben-long-editorial-10",
+        "level": 3,
+        "lemma": "ausfüllen + notieren + finden",
+        "senseId": "perfekt-haben-l3-10-ausfu-llen",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "ausgefüllt; notiert; gefunden",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "ausgefüllt hat | notiert hat | gefunden hat",
+        "accepted": [
+          "ausgefüllt hat",
+          "notiert hat",
+          "gefunden hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "365c6c09f25ce67676118180953d125b5607a108a5d4be26bd7584a45fec60de"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-1",
+        "level": 4,
+        "lemma": "austauschen",
+        "senseId": "perfekt-haben-l4-1-austauschen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "ausgetauscht",
+        "separation": "separable",
+        "prefix": "aus",
+        "expectedUnit": "ausgetauscht hat",
+        "accepted": [
+          "ausgetauscht hat"
+        ],
+        "distractorRationale": [
+          "ausgetauscht ist: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "f78f097ea36259723409d4849217af896f196285631ecb77700739c078d60811"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-2",
+        "level": 4,
+        "lemma": "löschen",
+        "senseId": "perfekt-haben-l4-2-lo-schen",
+        "targetForm": "perfekt-haben",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "gelöscht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelöscht hast",
+        "accepted": [
+          "gelöscht hast"
+        ],
+        "distractorRationale": [
+          "gelöscht bist: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "6f80131b907877150eb43e89264b6433e71e44360d74bf9adb50ea9498ca61cc"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-3",
+        "level": 4,
+        "lemma": "entdecken",
+        "senseId": "perfekt-haben-l4-3-entdecken",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "entdeckt",
+        "separation": "inseparable",
+        "prefix": "ent",
+        "expectedUnit": "entdeckt hat",
+        "accepted": [
+          "entdeckt hat"
+        ],
+        "distractorRationale": [
+          "entdeckt ist: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "2d8260289ae614a161f3fc52e9e50e96f7be82761c33d37976630adb05280722"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-4",
+        "level": 4,
+        "lemma": "sammeln",
+        "senseId": "perfekt-haben-l4-4-sammeln",
+        "targetForm": "perfekt-haben",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "gesammelt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesammelt haben",
+        "accepted": [
+          "gesammelt haben"
+        ],
+        "distractorRationale": [
+          "gesammelt sind: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "c487e0ec10037e2e7e3e56a178c94047611aa0295acb0e3c7784425c51eb1d10"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-5",
+        "level": 4,
+        "lemma": "ändern",
+        "senseId": "perfekt-haben-l4-5-a-ndern",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "geändert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geändert hat",
+        "accepted": [
+          "geändert hat"
+        ],
+        "distractorRationale": [
+          "geändert ist: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "46d01105e790922fd662cd354190531f4fb06dfec129c14a5288a8c98ab46390"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-6",
+        "level": 4,
+        "lemma": "bauen",
+        "senseId": "perfekt-haben-l4-6-bauen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "gebaut",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gebaut haben",
+        "accepted": [
+          "gebaut haben"
+        ],
+        "distractorRationale": [
+          "gebaut sind: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "cdc8d10352151cf5fb58c59a26f3de9542ac8350c89445da9743819c4d0f498d"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-7",
+        "level": 4,
+        "lemma": "lesen",
+        "senseId": "perfekt-haben-l4-7-lesen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "gelesen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelesen hat",
+        "accepted": [
+          "gelesen hat"
+        ],
+        "distractorRationale": [
+          "gelesen ist: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "17aad19cc9b44f11cb3ca795f0b3d6fc9872a2422e8b34ddf35276b728ebf515"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-8",
+        "level": 4,
+        "lemma": "reservieren",
+        "senseId": "perfekt-haben-l4-8-reservieren",
+        "targetForm": "perfekt-haben",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "reserviert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "reserviert habt",
+        "accepted": [
+          "reserviert habt"
+        ],
+        "distractorRationale": [
+          "reserviert seid: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "c0956f0cd4ff14aeeb920aec5737ed49512a9e1f8c80da5f4423215f3efbc520"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-9",
+        "level": 4,
+        "lemma": "vorbereiten",
+        "senseId": "perfekt-haben-l4-9-vorbereiten",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "vorbereitet",
+        "separation": "separable",
+        "prefix": "vor",
+        "expectedUnit": "vorbereitet hat",
+        "accepted": [
+          "vorbereitet hat"
+        ],
+        "distractorRationale": [
+          "vorbereitet ist: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "83ba264376889e75b6fccb5afa0e01afe5a03d581f23adb772b227bde65c384d"
+      },
+      {
+        "itemId": "de-perfekt-haben-independent-error-10",
+        "level": 4,
+        "lemma": "abgeben",
+        "senseId": "perfekt-haben-l4-10-abgeben",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "abgegeben",
+        "separation": "separable",
+        "prefix": "ab",
+        "expectedUnit": "abgegeben haben",
+        "accepted": [
+          "abgegeben haben"
+        ],
+        "distractorRationale": [
+          "abgegeben sind: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "102f989f74923562d08bd8ad89ee86ef9fe226b404c16af3edf623128c43ffac"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-1",
+        "level": 5,
+        "lemma": "besuchen",
+        "senseId": "perfekt-haben-l5-1-besuchen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "besucht",
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Nora sagt, dass sie ihre Tante besucht hat. | Nora sagt, dass sie ihre Tante besucht hat",
+        "accepted": [
+          "Nora sagt, dass sie ihre Tante besucht hat.",
+          "Nora sagt, dass sie ihre Tante besucht hat"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von besuchen."
+        ],
+        "runtimeFingerprint": "6afcfe9f50fc027cc63a9f9b0ca5db1af9503340b14463215ac1d777d47e3b82"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-2",
+        "level": 5,
+        "lemma": "mitbringen",
+        "senseId": "perfekt-haben-l5-2-mitbringen",
+        "targetForm": "perfekt-haben",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "mitgebracht",
+        "separation": "separable",
+        "prefix": "mit",
+        "expectedUnit": "Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt. | Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt",
+        "accepted": [
+          "Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt.",
+          "Ihr erklärt, dass ihr alle Unterlagen mitgebracht habt"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von mitbringen."
+        ],
+        "runtimeFingerprint": "86e22d1a4cc2c98be1b238ab80710f6d7802c932ceba23752971f735e67c9355"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-3",
+        "level": 5,
+        "lemma": "erzählen",
+        "senseId": "perfekt-haben-l5-3-erza-hlen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "erzählt",
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "Die Zeugin erklärt, dass sie alles erzählt hat. | Die Zeugin erklärt, dass sie alles erzählt hat",
+        "accepted": [
+          "Die Zeugin erklärt, dass sie alles erzählt hat.",
+          "Die Zeugin erklärt, dass sie alles erzählt hat"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von erzählen."
+        ],
+        "runtimeFingerprint": "b56e71cd03350f600ae37c5f11ec6b0fc40994ac0e6e1b795f0994c33724643a"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-4",
+        "level": 5,
+        "lemma": "verstehen",
+        "senseId": "perfekt-haben-l5-4-verstehen",
+        "targetForm": "perfekt-haben",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "verstanden",
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "Du bestätigst, dass du die Aufgabe verstanden hast. | Du bestätigst, dass du die Aufgabe verstanden hast",
+        "accepted": [
+          "Du bestätigst, dass du die Aufgabe verstanden hast.",
+          "Du bestätigst, dass du die Aufgabe verstanden hast"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von verstehen."
+        ],
+        "runtimeFingerprint": "33269d06b62d3c6220893ae5106751a1cc4be09fd938de47a95ecb14deac63e5"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-5",
+        "level": 5,
+        "lemma": "anrufen",
+        "senseId": "perfekt-haben-l5-5-anrufen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "angerufen",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "Der Arzt bestätigt, dass er den Patienten angerufen hat. | Der Arzt bestätigt, dass er den Patienten angerufen hat",
+        "accepted": [
+          "Der Arzt bestätigt, dass er den Patienten angerufen hat.",
+          "Der Arzt bestätigt, dass er den Patienten angerufen hat"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von anrufen."
+        ],
+        "runtimeFingerprint": "d483edcfc4bbaf32b43b4e5d04766435ea2c01aa27cb924a42347b26b28e0dfc"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-6",
+        "level": 5,
+        "lemma": "entdecken",
+        "senseId": "perfekt-haben-l5-6-entdecken",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "entdeckt",
+        "separation": "inseparable",
+        "prefix": "ent",
+        "expectedUnit": "Das Team meldet, dass es den Fehler entdeckt hat. | Das Team meldet, dass es den Fehler entdeckt hat",
+        "accepted": [
+          "Das Team meldet, dass es den Fehler entdeckt hat.",
+          "Das Team meldet, dass es den Fehler entdeckt hat"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von entdecken."
+        ],
+        "runtimeFingerprint": "5fcd9484985c14be10e99efa195c01dcced752327bace9f89a833764c99039b7"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-7",
+        "level": 5,
+        "lemma": "teilnehmen",
+        "senseId": "perfekt-haben-l5-7-teilnehmen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "teilgenommen",
+        "separation": "separable",
+        "prefix": "teil",
+        "expectedUnit": "Milan erzählt, dass er am Workshop teilgenommen hat. | Milan erzählt, dass er am Workshop teilgenommen hat",
+        "accepted": [
+          "Milan erzählt, dass er am Workshop teilgenommen hat.",
+          "Milan erzählt, dass er am Workshop teilgenommen hat"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von teilnehmen."
+        ],
+        "runtimeFingerprint": "8f5581a662bf23d1b37696486aa4ed4f2b68e65e2914891803fbd9f361700787"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-8",
+        "level": 5,
+        "lemma": "bekommen",
+        "senseId": "perfekt-haben-l5-8-bekommen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "bekommen",
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Die Gewinner sagen, dass sie ihre Urkunden bekommen haben. | Die Gewinner sagen, dass sie ihre Urkunden bekommen haben",
+        "accepted": [
+          "Die Gewinner sagen, dass sie ihre Urkunden bekommen haben.",
+          "Die Gewinner sagen, dass sie ihre Urkunden bekommen haben"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von bekommen."
+        ],
+        "runtimeFingerprint": "0201cdd178ca63a37b596f291c1d339a4f23cefa6af916a43b7caa67fbaa27f6"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-9",
+        "level": 5,
+        "lemma": "vorbereiten",
+        "senseId": "perfekt-haben-l5-9-vorbereiten",
+        "targetForm": "perfekt-haben",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "vorbereitet",
+        "separation": "separable",
+        "prefix": "vor",
+        "expectedUnit": "Wir berichten, dass wir die Sitzung vorbereitet haben. | Wir berichten, dass wir die Sitzung vorbereitet haben",
+        "accepted": [
+          "Wir berichten, dass wir die Sitzung vorbereitet haben.",
+          "Wir berichten, dass wir die Sitzung vorbereitet haben"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von vorbereiten."
+        ],
+        "runtimeFingerprint": "924de1bb61f848c9c479c6302743f3094d384104aa697f40284327f1f77f62e7"
+      },
+      {
+        "itemId": "de-perfekt-haben-separation-10",
+        "level": 5,
+        "lemma": "aufräumen",
+        "senseId": "perfekt-haben-l5-10-aufra-umen",
+        "targetForm": "perfekt-haben",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [],
+        "auxiliary": "haben",
+        "participle": "aufgeräumt",
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "Lea sagt, dass sie das Lager aufgeräumt hat. | Lea sagt, dass sie das Lager aufgeräumt hat",
+        "accepted": [
+          "Lea sagt, dass sie das Lager aufgeräumt hat.",
+          "Lea sagt, dass sie das Lager aufgeräumt hat"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von aufräumen."
+        ],
+        "runtimeFingerprint": "856630fa6b6513bf3e3b23cf27640fc9e6e890bb3fa30102fe05b6e6dcc658d7"
+      },
+      {
+        "itemId": "de-perfekt-haben-written-final-story",
+        "level": 6,
+        "lemma": "planen + sammeln + entwerfen + liefern + aufbauen + prüfen + dekorieren + machen + veröffentlichen + danken",
+        "senseId": "perfekt-haben-l6-1-planen",
+        "targetForm": "perfekt-haben",
+        "person": null,
+        "number": null,
+        "clauseType": "mixed",
+        "function": "abgeschlossene vergangene Handlung mit Gesprächs- oder Gegenwartsbezug",
+        "anchorIds": [
+          "später",
+          "zuerst",
+          "schließlich",
+          "zusage"
+        ],
+        "auxiliary": "haben",
+        "participle": "geplant; gesammelt; entworfen; geliefert; aufgebaut; geprüft; dekoriert; gemacht; veröffentlicht; gedankt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geplant hat | gesammelt haben | entworfen hat | geliefert hat | aufgebaut haben | geprüft hat | dekoriert haben | gemacht haben | veröffentlicht hat | gedankt hat",
+        "accepted": [
+          "geplant hat",
+          "gesammelt haben",
+          "entworfen hat",
+          "geliefert hat",
+          "aufgebaut haben",
+          "geprüft hat",
+          "dekoriert haben",
+          "gemacht haben",
+          "veröffentlicht hat",
+          "gedankt hat"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3cee9e9cfc084a34b2b95fa0c864281102e0e47896cdb0bfd956841c8cdfa292"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rektion und Funktion der Hilfsverben — grammis (IDS)",
+        "url": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Partizip II — grammis (IDS)",
+        "url": "https://grammis.ids-mannheim.de/terminologie/181",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Haben oder sein? — grammis (IDS)",
+        "url": "https://grammis.ids-mannheim.de/systematische-grammatik/1218",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "level-one-contexts",
+      "status": "PASS",
+      "evidence": "Se aplicaron los ajustes lingüísticos finales en N1 (ítem 3); IDs, answers y options permanecen idénticos."
+    },
+    {
+      "id": "connector-contract",
+      "status": "PASS",
+      "evidence": {
+        "dass": 2,
+        "weil": 2,
+        "obwohl": 2,
+        "ob": 2,
+        "wenn": 1,
+        "bevor": 1
+      }
+    },
+    {
+      "id": "interrogative-contexts",
+      "status": "PASS",
+      "evidence": [
+        "de-perfekt-haben-choice-editorial-4",
+        "de-perfekt-haben-choice-editorial-8"
+      ]
+    },
+    {
+      "id": "levels-two-through-six-unchanged",
+      "status": "PASS",
+      "evidence": "micro, long, error, separation y finalStories permanecen estructuralmente idénticos al candidato anterior."
+    },
+    {
+      "id": "annotations-scope",
+      "status": "PASS",
+      "evidence": "Se recalcularon runtimeFingerprint, clauseType y anchorIds de las 10 anotaciones N1; accepted y N2–N6 permanecen idénticos."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "LEVEL-ONE-LINGUISTIC-AUDIT-RESOLVED",
+      "detail": "Los contextos N1 incorporan los fixes bloqueantes y el pulido recomendado, conservan la construcción objetivo y cumplen las cuotas de conector y posición."
+    }
+  ],
+  "generatedAt": "2026-09-06T22:37:49.870Z"
+}

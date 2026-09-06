@@ -1,16 +1,16 @@
 import { createGermanCompactPack, type GermanCompactChoice, type GermanCompactFinal, type GermanCompactMicro, type GermanCompactStory } from './german-editorial-builder.ts'
 
 const choices: GermanCompactChoice[] = [
-  ['„ich“ mit machen','Ich sage, dass ich die Hausaufgaben ','.','gemacht habe','gemacht hast','gemacht hat','gemacht haben'],
-  ['„du“ mit kaufen','Du sagst, dass du Brot ','.','gekauft hast','gekauft habe','gekauft hat','gekauft habt'],
-  ['„Mia“ mit lernen','Mia sagt, dass sie Deutsch ','.','gelernt hat','gelernt habe','gelernt hast','gelernt haben'],
-  ['„wir“ mit kochen','Wir erzählen, dass wir Suppe ','.','gekocht haben','gekocht habe','gekocht hast','gekocht habt'],
-  ['„ihr“ mit spielen','Ihr sagt, dass ihr Fußball ','.','gespielt habt','gespielt habe','gespielt hat','gespielt haben'],
-  ['„die Kinder“ mit malen','Die Kinder zeigen, dass sie ein Bild ','.','gemalt haben','gemalt habe','gemalt hast','gemalt hat'],
-  ['„ich“ mit öffnen','Ich erkläre, dass ich das Fenster ','.','geöffnet habe','geöffnet hast','geöffnet hat','geöffnet haben'],
-  ['„du“ mit lesen','Du sagst, dass du das Buch ','.','gelesen hast','gelesen habe','gelesen hat','gelesen habt'],
-  ['„Paul“ mit anrufen','Paul sagt, dass er seine Mutter ','.','angerufen hat','angerufen habe','angerufen hast','angerufen haben'],
-  ['„wir“ mit aufräumen','Wir sagen, dass wir das Zimmer ','.','aufgeräumt haben','aufgeräumt habe','aufgeräumt hat','aufgeräumt habt'],
+  ['„ich“ mit machen','Mara bestätigt, dass ich die Hausaufgaben ','.','gemacht habe','gemacht hast','gemacht hat','gemacht haben'],
+  ['„du“ mit kaufen','Du hattest genug Brot, weil du es gestern ','.','gekauft hast','gekauft habe','gekauft hat','gekauft habt'],
+  ['„Mia“ mit lernen','Mia freut sich über das Ergebnis, obwohl sie nur kurz für die Prüfung ','.','gelernt hat','gelernt habe','gelernt hast','gelernt haben'],
+  ['„wir“ mit kochen','Kannst du bestätigen, ob wir die Suppe schon ','?','gekocht haben','gekocht habe','gekocht hast','gekocht habt'],
+  ['„ihr“ mit spielen','Wenn ihr lange Fußball ',', braucht ihr jetzt eine Pause.','gespielt habt','gespielt habe','gespielt hat','gespielt haben'],
+  ['„die Kinder“ mit malen','Die Lehrerin sieht, dass die Kinder ein Bild ','.','gemalt haben','gemalt habe','gemalt hast','gemalt hat'],
+  ['„ich“ mit öffnen','Bevor ich das Fenster ',', war es im Zimmer stickig.','geöffnet habe','geöffnet hast','geöffnet hat','geöffnet haben'],
+  ['„du“ mit lesen','Weißt du noch, ob du das Buch schon ','?','gelesen hast','gelesen habe','gelesen hat','gelesen habt'],
+  ['„Paul“ mit anrufen','Paul kennt die Neuigkeit, weil er seine Mutter ','.','angerufen hat','angerufen habe','angerufen hast','angerufen haben'],
+  ['„wir“ mit aufräumen','Obwohl wir das Zimmer ',', liegt noch Staub im Flur.','aufgeräumt haben','aufgeräumt habe','aufgeräumt hat','aufgeräumt habt'],
 ]
 
 const micro: GermanCompactMicro[] = [

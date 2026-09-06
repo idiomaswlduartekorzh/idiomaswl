@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "formId": "imperativ",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "c1469c42024cb09582bc95a61a19654a7db25b6916dbf34901433d32b8e633da",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "688bcebfada2bdab301a4dcbec2a767257e41e51e6ce8ed0cb0edefc7146d627",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "id": "current-fingerprints-and-schema",
+      "status": "PASS",
+      "authorReportFailures": [],
+      "fingerprintChecks": {
+        "candidate": true,
+        "harness": true,
+        "spec": true,
+        "prompt": true,
+        "baseline": true
+      }
+    },
+    {
+      "id": "real-candidate-valid",
+      "status": "PASS",
+      "validatorFailures": []
+    },
+    {
+      "id": "coverage-level-one",
+      "status": "PASS",
+      "mutation": "Se elimina un reto N1 y la cobertura queda en 9/10.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: choice 9/10"
+      ]
+    },
+    {
+      "id": "missing-level-two-annotation",
+      "status": "PASS",
+      "mutation": "Se elimina la anotacion enlazada de un reto N2.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.annotations: nivel 2 requiere 10 entradas",
+        "de-imperativ-micro-editorial-1: falta anotación enlazada del nivel 2"
+      ]
+    },
+    {
+      "id": "n4-answer-linkage",
+      "status": "PASS",
+      "mutation": "Se altera una correccion N4 sin modificar su anotacion.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "de-imperativ-independent-error-1: accepted no coincide con las respuestas del runtime",
+        "de-imperativ-independent-error-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n5-answer-linkage",
+      "status": "PASS",
+      "mutation": "Se altera una oracion completa N5 sin modificar su anotacion.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "de-imperativ-separation-1: accepted no coincide con las respuestas del runtime",
+        "de-imperativ-separation-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n6-answer-linkage",
+      "status": "PASS",
+      "mutation": "Se altera la primera respuesta N6 sin modificar la anotacion de la historia.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "de-imperativ-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-imperativ-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "n6-minimum-gap-coverage",
+      "status": "PASS",
+      "mutation": "La historia N6 se reduce a nueve decisiones.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: nivel 6 requiere al menos 10 decisiones",
+        "de-imperativ-written-final-story: accepted no coincide con las respuestas del runtime",
+        "de-imperativ-written-final-story: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "separation-balance",
+      "status": "PASS",
+      "mutation": "Se invierte una sola clase separable/inseparable y se rompe el balance 5/5.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: balance separable 5",
+        "candidate.runtime: balance inseparable 5",
+        "de-imperativ-separation-1: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    },
+    {
+      "id": "balanced-separation-swap",
+      "status": "PASS",
+      "mutation": "Se intercambian dos clases conservando 5/5; las huellas enlazadas deben detectar el cambio.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "de-imperativ-separation-1: runtimeFingerprint no coincide con el reto materializado",
+        "de-imperativ-separation-3: runtimeFingerprint no coincide con el reto materializado"
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:47:33.975Z"
+}

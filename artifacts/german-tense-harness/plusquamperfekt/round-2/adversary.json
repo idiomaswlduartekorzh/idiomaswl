@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "formId": "plusquamperfekt",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "d76c25e6c53f4bc59c75a7907ad0634cfd65250b8283d9c86b191592291f7164",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "5c0ae26a4fda234882b9e42f9cb9037dfef9f203ff282caaa5946e457eae97c6",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "id": "current-fingerprints-and-schema",
+      "status": "PASS",
+      "authorReportFailures": [],
+      "fingerprintChecks": {
+        "candidate": true,
+        "harness": true,
+        "spec": true,
+        "prompt": true,
+        "baseline": true
+      }
+    },
+    {
+      "id": "real-candidate-level-one-contract",
+      "status": "PASS",
+      "validatorFailures": [],
+      "connectorCounts": {
+        "bevor": 1,
+        "dass": 2,
+        "nachdem": 1,
+        "ob": 2,
+        "obwohl": 2,
+        "weil": 2
+      },
+      "placementCounts": {
+        "embedded": 5,
+        "matrix-ob": 2,
+        "preposed": 3
+      },
+      "interrogativeContexts": 2,
+      "required": {
+        "minimumDistinctConnectors": 4,
+        "maximumUsesPerConnector": 3,
+        "minimumInterrogativeContexts": 2,
+        "minimumMatrixObQuestions": 2,
+        "minimumPreposedTargetClauses": 2,
+        "requireContiguousVerbalUnit": true
+      }
+    },
+    {
+      "id": "all-dass",
+      "status": "PASS",
+      "mutation": "Los 10 contextos N1 usan dass en la clausula objetivo, con huellas de item sincronizadas.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: nivel 1 requiere al menos 4 conectores distintos (1)",
+        "candidate.runtime: nivel 1 usa dass 10/3",
+        "candidate.runtime: nivel 1 requiere al menos 2 contextos interrogativos (0)",
+        "candidate.runtime: nivel 1 requiere al menos 2 preguntas matrices con ob (0)",
+        "candidate.runtime: nivel 1 requiere al menos 2 subordinadas objetivo antepuestas (0)"
+      ]
+    },
+    {
+      "id": "connector-only-in-previous-clause",
+      "status": "PASS",
+      "mutation": "El conector aparece solo en la clausula anterior al hueco; la clausula objetivo queda sin conector.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "de-plusquamperfekt-choice-editorial-1: falta un conector antes del hueco de nivel 1"
+      ]
+    },
+    {
+      "id": "questions-without-target-ob",
+      "status": "PASS",
+      "mutation": "Las preguntas matrices sustituyen ob por dass en la clausula objetivo.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: nivel 1 usa dass 4/3",
+        "candidate.runtime: nivel 1 requiere al menos 2 preguntas matrices con ob (0)"
+      ]
+    },
+    {
+      "id": "no-preposed-target-clauses",
+      "status": "PASS",
+      "mutation": "Todas las subordinadas objetivo antepuestas se convierten en contextos incrustados.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: nivel 1 requiere al menos 2 subordinadas objetivo antepuestas (0)"
+      ]
+    },
+    {
+      "id": "truncated-answer-and-option",
+      "status": "PASS",
+      "mutation": "Se trunca la unidad verbal completa tanto en answer como en la opcion correcta, con accepted y runtimeFingerprint sincronizados.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "de-plusquamperfekt-choice-editorial-1: \"gemacht\" no contiene la unidad verbal completa (2 palabras)",
+        "de-plusquamperfekt-choice-editorial-1: \"gemacht\" no cumple la construcción hatte/war + Partizip II"
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:42:11.025Z"
+}

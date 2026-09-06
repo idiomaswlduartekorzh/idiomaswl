@@ -1,0 +1,2868 @@
+{
+  "schemaVersion": 1,
+  "formId": "konjunktiv-vergangenheit",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "21e6e84cfdae31b96ac8b5c3d78f4a8798eab4f0e0576086cbd5aad7c206d955",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "778f87246a6885129b2d001a1db9ab31431e616ff854ec4f5a57f9216e57deae",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "baselineContentFingerprint": "878ae761fb34c0747cd179d30a5abb0db6bf00e448ff36fda9f90703d4641827",
+  "candidate": {
+    "formId": "konjunktiv-vergangenheit",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-1",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „ich“ mit kaufen.",
+          "context": "Ich hatte nicht genug Geld; später erklärte ich, dass ich das Rad sonst ___.",
+          "options": [
+            "gekauft hätte",
+            "gekauft hättest",
+            "gekauft hättet",
+            "gekauft hätten"
+          ],
+          "answer": "gekauft hätte",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-2",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „du“ mit machen.",
+          "context": "Die Frist war zu kurz; du ärgerst dich, weil du die Arbeit mit mehr Zeit ___.",
+          "options": [
+            "gemacht hätte",
+            "gemacht hättest",
+            "gemacht hättet",
+            "gemacht hätten"
+          ],
+          "answer": "gemacht hättest",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-3",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „Mia“ mit lernen.",
+          "context": "Mia bestand die Prüfung, obwohl sie ohne das Buch weniger ___.",
+          "options": [
+            "gelernt hättest",
+            "gelernt hättet",
+            "gelernt hätte",
+            "gelernt hätten"
+          ],
+          "answer": "gelernt hätte",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-4",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „wir“ mit sehen.",
+          "context": "Kannst du einschätzen, ob wir den Berg ohne Nebel ___?",
+          "options": [
+            "gesehen hätte",
+            "gesehen hättest",
+            "gesehen hättet",
+            "gesehen hätten"
+          ],
+          "answer": "gesehen hätten",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-5",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „ihr“ mit finden.",
+          "context": "Wenn ihr mit einer Karte den Weg ___, wäret ihr früher angekommen.",
+          "options": [
+            "gefunden hättet",
+            "gefunden hätte",
+            "gefunden hättest",
+            "gefunden hätten"
+          ],
+          "answer": "gefunden hättet",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-6",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „die Kinder“ mit spielen.",
+          "context": "Es regnete; die Mutter sagt, dass die Kinder ohne Regen draußen ___.",
+          "options": [
+            "gespielt hätte",
+            "gespielt hätten",
+            "gespielt hättest",
+            "gespielt hättet"
+          ],
+          "answer": "gespielt hätten",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-7",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „ich“ mit gehen.",
+          "context": "Wenn ich ohne Fieber zur Arbeit ___, hätte ich die Sitzung geleitet.",
+          "options": [
+            "gegangen wärst",
+            "gegangen wärt",
+            "gegangen wäre",
+            "gegangen wären"
+          ],
+          "answer": "gegangen wäre",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-8",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „du“ mit kommen.",
+          "context": "Weißt du, ob du mit dem Bus früher ___?",
+          "options": [
+            "gekommen wäre",
+            "gekommen wärt",
+            "gekommen wären",
+            "gekommen wärst"
+          ],
+          "answer": "gekommen wärst",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-9",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „Paul“ mit bleiben.",
+          "context": "Der Anruf änderte alles, weil Paul sonst zu Hause ___.",
+          "options": [
+            "geblieben wäre",
+            "geblieben wärst",
+            "geblieben wärt",
+            "geblieben wären"
+          ],
+          "answer": "geblieben wäre",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-choice-editorial-10",
+          "tenses": [
+            "konjunktiv-vergangenheit"
+          ],
+          "focus": "Irreale Vergangenheit",
+          "prompt": "Wähle die passende Form für „wir“ mit fahren.",
+          "context": "Weil wir ohne den Defekt ans Meer ___, bedauerten wir die Absage besonders.",
+          "options": [
+            "gefahren wäre",
+            "gefahren wären",
+            "gefahren wärst",
+            "gefahren wärt"
+          ],
+          "answer": "gefahren wären",
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-1",
+          "title": "Die fehlende Adresse",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „schicken“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Mit deiner Adresse sagt er, dass er den Brief ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-1-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "schicken",
+              "answers": [
+                "geschickt hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-2",
+          "title": "Ohne den Stau",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „ankommen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ohne den Stau steht fest, dass Lea pünktlich ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-2-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-3",
+          "title": "Die zusätzliche Kontrolle",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „vermeiden“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Die Prüfung zeigt, dass wir den Fehler mit einer Kontrolle ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-3-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "vermeiden",
+              "answers": [
+                "vermieden hätten"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-4",
+          "title": "Der verpasste Wecker",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „aufstehen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wenn der Wecker geklingelt hätte, sagt Paul, dass er rechtzeitig ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-4-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "aufstehen",
+              "answers": [
+                "aufgestanden wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-5",
+          "title": "Das fehlende Geld",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „kaufen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Mit genug Geld erklärt Mia, dass sie das Gemälde ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-5-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "kaufen",
+              "answers": [
+                "gekauft hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-6",
+          "title": "Die gesperrte Straße",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „zurückkehren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ohne die Sperrung meint der Fahrer, dass er früher ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-6-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "zurückkehren",
+              "answers": [
+                "zurückgekehrt wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-7",
+          "title": "Der ungeprüfte Anhang",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „senden“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Hätte Nora den Anhang geprüft, weiß sie, dass sie die falsche Datei nicht ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-7-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "senden",
+              "answers": [
+                "gesendet hätte",
+                "gesandt hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-8",
+          "title": "Das verletzte Knie",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „teilnehmen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ohne die Verletzung sagt Amir, dass er am Finale ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-8-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "teilnehmen",
+              "answers": [
+                "teilgenommen hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-9",
+          "title": "Die frühere Warnung",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „schließen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Bei einer früheren Warnung erklärt die Stadt, dass sie den Tunnel ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-9-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "schließen",
+              "answers": [
+                "geschlossen hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-micro-editorial-10",
+          "title": "Der verlorene Schlüssel",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Konjugiere „kommen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ohne den verlorenen Schlüssel sagt Lea, dass sie nicht zu spät ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-micro-editorial-10-gap",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "kommen",
+              "answers": [
+                "gekommen wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-1",
+          "title": "Die verpasste Fähre",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit einem früheren Bus sagt Nora, dass sie den Hafen ",
+            "; sie meint, dass sie die Fähre ",
+            "; und sie glaubt, dass sie noch am selben Abend auf der Insel ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-1-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "erreichen",
+              "answers": [
+                "erreicht hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-1-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "nehmen",
+              "answers": [
+                "genommen hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-1-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-2",
+          "title": "Der Datenverlust",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit einer Sicherung erklärt das Team, dass es die Dateien ",
+            "; der Techniker sagt, dass er das System schneller ",
+            "; und die Firma meint, dass sie keinen Arbeitstag ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-2-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "retten",
+              "answers": [
+                "gerettet hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-2-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "starten",
+              "answers": [
+                "gestartet hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-2-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "verlieren",
+              "answers": [
+                "verloren hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-3",
+          "title": "Der abgesagte Lauf",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Ohne das Unwetter sagt die Läuferin, dass sie ",
+            "; ihr Trainer meint, dass sie ihre Bestzeit ",
+            "; und beide glauben, dass sie das Ziel sicher ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-3-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "starten",
+              "answers": [
+                "gestartet wäre"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-3-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "verbessern",
+              "answers": [
+                "verbessert hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-3-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "erreichen",
+              "answers": [
+                "erreicht hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-4",
+          "title": "Die falsche Abfahrt",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit einer Karte sagt Paul, dass er die richtige Ausfahrt ",
+            "; er meint, dass er eine Stunde ",
+            "; und er glaubt, dass er pünktlich ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-4-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "finden",
+              "answers": [
+                "gefunden hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-4-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "sparen",
+              "answers": [
+                "gespart hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-4-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-5",
+          "title": "Die nicht bestandene Prüfung",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit mehr Vorbereitung sagt Lina, dass sie alle Kapitel ",
+            "; sie meint, dass sie ruhiger ",
+            "; und sie glaubt, dass sie die Prüfung ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-5-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "wiederholen",
+              "answers": [
+                "wiederholt hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-5-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "bleiben",
+              "answers": [
+                "geblieben wäre"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-5-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "bestehen",
+              "answers": [
+                "bestanden hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-6",
+          "title": "Der geschlossene Laden",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Bei einer früheren Ankunft sagt Amir, dass er das Geschenk ",
+            "; er meint, dass er es sofort ",
+            "; und er glaubt, dass er rechtzeitig nach Hause ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-6-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "kaufen",
+              "answers": [
+                "gekauft hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-6-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "verpacken",
+              "answers": [
+                "verpackt hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-6-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "zurückkehren",
+              "answers": [
+                "zurückgekehrt wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-7",
+          "title": "Das verpasste Gespräch",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit einer Nachricht erklärt die Journalistin, dass sie zum Termin ",
+            "; sie sagt, dass sie Fragen ",
+            "; und sie meint, dass sie den Artikel rechtzeitig ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-7-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "kommen",
+              "answers": [
+                "gekommen wäre"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-7-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "stellen",
+              "answers": [
+                "gestellt hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-7-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "beenden",
+              "answers": [
+                "beendet hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-8",
+          "title": "Die kaputte Heizung",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit dem Ersatzteil sagt der Techniker, dass er die Anlage ",
+            "; die Familie meint, dass das Haus warm ",
+            "; und sie glaubt, dass sie nicht ins Hotel ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-8-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "reparieren",
+              "answers": [
+                "repariert hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-8-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "werden",
+              "answers": [
+                "geworden wäre"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-8-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "ziehen",
+              "answers": [
+                "gezogen wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-9",
+          "title": "Die verspätete Warnung",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Bei einer früheren Meldung erklärt die Feuerwehr, dass sie die Straße ",
+            "; sie sagt, dass sie Bewohner ",
+            "; und sie meint, dass niemand verletzt ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-9-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "sperren",
+              "answers": [
+                "gesperrt hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-9-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "evakuieren",
+              "answers": [
+                "evakuiert hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-9-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "werden",
+              "answers": [
+                "verletzt worden wäre"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-long-editorial-10",
+          "title": "Der verlorene Vertrag",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mit einer Kopie sagt die Firma, dass sie die Klausel ",
+            "; der Anwalt meint, dass er den Fehler ",
+            "; und beide glauben, dass sie den Streit ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-10-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "belegen",
+              "answers": [
+                "belegt hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-10-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "erkennen",
+              "answers": [
+                "erkannt hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-long-editorial-10-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "vermeiden",
+              "answers": [
+                "vermieden hätte"
+              ]
+            }
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-1",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 1",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Ich habe den Termin tatsächlich verpasst; mit deiner Nachricht ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-1-token-1"
+            },
+            {
+              "before": " ich den Termin nicht verpasst. Er hat die Vase tatsächlich zerbrochen; mit mehr Vorsicht ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-1-token-2"
+            },
+            {
+              "before": " er die Vase nicht zerbrochen. Du hast den Fehler tatsächlich nicht bemerkt; du ",
+              "form": "hättest",
+              "id": "de-konjunktiv-vergangenheit-independent-error-1-token-3"
+            },
+            {
+              "before": " den Fehler früher bemerkt. Das Schiff ist tatsächlich nicht ausgelaufen; ohne die Warnung ",
+              "form": "war",
+              "id": "de-konjunktiv-vergangenheit-independent-error-1-token-4"
+            },
+            {
+              "before": " das Schiff ausgelaufen. Sie haben den Auftrag tatsächlich abgelehnt; mit genug Personal ",
+              "form": "hätten",
+              "id": "de-konjunktiv-vergangenheit-independent-error-1-token-5"
+            }
+          ],
+          "after": " sie den Auftrag angenommen.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-1-token-4",
+          "answers": [
+            "wäre"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-2",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 2",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Gäste sind wegen des Staus tatsächlich zu spät angekommen; ohne den Stau ",
+              "form": "wären",
+              "id": "de-konjunktiv-vergangenheit-independent-error-2-token-1"
+            },
+            {
+              "before": " die Gäste pünktlich angekommen. Wir sind wegen des schlechten Wetters tatsächlich nicht zum Gipfel gegangen; bei besserem Wetter ",
+              "form": "wären",
+              "id": "de-konjunktiv-vergangenheit-independent-error-2-token-2"
+            },
+            {
+              "before": " wir zum Gipfel gegangen. Ihr habt euch tatsächlich verlaufen; mit einer Karte ",
+              "form": "hättet",
+              "id": "de-konjunktiv-vergangenheit-independent-error-2-token-3"
+            },
+            {
+              "before": " ihr euch nicht verlaufen. Ich habe dir tatsächlich nicht geholfen; unter anderen Umständen ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-2-token-4"
+            },
+            {
+              "before": " ich dir geholfen. Der Zug ist wegen des Defekts tatsächlich zu spät abgefahren; ohne den Defekt ",
+              "form": "war",
+              "id": "de-konjunktiv-vergangenheit-independent-error-2-token-5"
+            }
+          ],
+          "after": " der Zug rechtzeitig abgefahren.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-2-token-5",
+          "answers": [
+            "wäre"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-3",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 3",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Er hat die Vase tatsächlich zerbrochen; mit mehr Vorsicht ",
+              "form": "hatte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-3-token-1"
+            },
+            {
+              "before": " er die Vase nicht zerbrochen. Du hast den Fehler tatsächlich nicht bemerkt; du ",
+              "form": "hättest",
+              "id": "de-konjunktiv-vergangenheit-independent-error-3-token-2"
+            },
+            {
+              "before": " den Fehler früher bemerkt. Das Schiff ist tatsächlich nicht ausgelaufen; ohne die Warnung ",
+              "form": "wäre",
+              "id": "de-konjunktiv-vergangenheit-independent-error-3-token-3"
+            },
+            {
+              "before": " das Schiff ausgelaufen. Sie haben den Auftrag tatsächlich abgelehnt; mit genug Personal ",
+              "form": "hätten",
+              "id": "de-konjunktiv-vergangenheit-independent-error-3-token-4"
+            },
+            {
+              "before": " sie den Auftrag angenommen. Ich habe den Termin tatsächlich verpasst; mit deiner Nachricht ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-3-token-5"
+            }
+          ],
+          "after": " ich den Termin nicht verpasst.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-3-token-1",
+          "answers": [
+            "hätte"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-4",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 4",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wir sind wegen des schlechten Wetters tatsächlich nicht zum Gipfel gegangen; bei besserem Wetter ",
+              "form": "wären",
+              "id": "de-konjunktiv-vergangenheit-independent-error-4-token-1"
+            },
+            {
+              "before": " wir zum Gipfel gegangen. Ihr habt euch tatsächlich verlaufen; mit einer Karte ",
+              "form": "hattet",
+              "id": "de-konjunktiv-vergangenheit-independent-error-4-token-2"
+            },
+            {
+              "before": " ihr euch nicht verlaufen. Ich habe dir tatsächlich nicht geholfen; unter anderen Umständen ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-4-token-3"
+            },
+            {
+              "before": " ich dir geholfen. Der Zug ist wegen des Defekts tatsächlich zu spät abgefahren; ohne den Defekt ",
+              "form": "wäre",
+              "id": "de-konjunktiv-vergangenheit-independent-error-4-token-4"
+            },
+            {
+              "before": " der Zug rechtzeitig abgefahren. Die Gäste sind wegen des Staus tatsächlich zu spät angekommen; ohne den Stau ",
+              "form": "wären",
+              "id": "de-konjunktiv-vergangenheit-independent-error-4-token-5"
+            }
+          ],
+          "after": " die Gäste pünktlich angekommen.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-4-token-2",
+          "answers": [
+            "hättet"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-5",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 5",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Du hast den Fehler tatsächlich nicht bemerkt; du ",
+              "form": "hättest",
+              "id": "de-konjunktiv-vergangenheit-independent-error-5-token-1"
+            },
+            {
+              "before": " den Fehler früher bemerkt. Das Schiff ist tatsächlich nicht ausgelaufen; ohne die Warnung ",
+              "form": "wäre",
+              "id": "de-konjunktiv-vergangenheit-independent-error-5-token-2"
+            },
+            {
+              "before": " das Schiff ausgelaufen. Sie haben den Auftrag tatsächlich abgelehnt; mit genug Personal ",
+              "form": "hatten",
+              "id": "de-konjunktiv-vergangenheit-independent-error-5-token-3"
+            },
+            {
+              "before": " sie den Auftrag angenommen. Ich habe den Termin tatsächlich verpasst; mit deiner Nachricht ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-5-token-4"
+            },
+            {
+              "before": " ich den Termin nicht verpasst. Er hat die Vase tatsächlich zerbrochen; mit mehr Vorsicht ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-5-token-5"
+            }
+          ],
+          "after": " er die Vase nicht zerbrochen.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-5-token-3",
+          "answers": [
+            "hätten"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-6",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 6",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Ihr habt euch tatsächlich verlaufen; mit einer Karte ",
+              "form": "hättet",
+              "id": "de-konjunktiv-vergangenheit-independent-error-6-token-1"
+            },
+            {
+              "before": " ihr euch nicht verlaufen. Ich habe dir tatsächlich nicht geholfen; unter anderen Umständen ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-6-token-2"
+            },
+            {
+              "before": " ich dir geholfen. Der Zug ist wegen des Defekts tatsächlich zu spät abgefahren; ohne den Defekt ",
+              "form": "wäre",
+              "id": "de-konjunktiv-vergangenheit-independent-error-6-token-3"
+            },
+            {
+              "before": " der Zug rechtzeitig abgefahren. Die Gäste sind wegen des Staus tatsächlich zu spät angekommen; ohne den Stau ",
+              "form": "waren",
+              "id": "de-konjunktiv-vergangenheit-independent-error-6-token-4"
+            },
+            {
+              "before": " die Gäste pünktlich angekommen. Wir sind wegen des schlechten Wetters tatsächlich nicht zum Gipfel gegangen; bei besserem Wetter ",
+              "form": "wären",
+              "id": "de-konjunktiv-vergangenheit-independent-error-6-token-5"
+            }
+          ],
+          "after": " wir zum Gipfel gegangen.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-6-token-4",
+          "answers": [
+            "wären"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-7",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 7",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Das Schiff ist tatsächlich nicht ausgelaufen; ohne die Warnung ",
+              "form": "wäre",
+              "id": "de-konjunktiv-vergangenheit-independent-error-7-token-1"
+            },
+            {
+              "before": " das Schiff ausgelaufen. Sie haben den Auftrag tatsächlich abgelehnt; mit genug Personal ",
+              "form": "hätten",
+              "id": "de-konjunktiv-vergangenheit-independent-error-7-token-2"
+            },
+            {
+              "before": " sie den Auftrag angenommen. Ich habe den Termin tatsächlich verpasst; mit deiner Nachricht ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-7-token-3"
+            },
+            {
+              "before": " ich den Termin nicht verpasst. Er hat die Vase tatsächlich zerbrochen; mit mehr Vorsicht ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-7-token-4"
+            },
+            {
+              "before": " er die Vase nicht zerbrochen. Du hast den Fehler tatsächlich nicht bemerkt; du ",
+              "form": "hattest",
+              "id": "de-konjunktiv-vergangenheit-independent-error-7-token-5"
+            }
+          ],
+          "after": " den Fehler früher bemerkt.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-7-token-5",
+          "answers": [
+            "hättest"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-8",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 8",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Ich habe dir tatsächlich nicht geholfen; unter anderen Umständen ",
+              "form": "hatte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-8-token-1"
+            },
+            {
+              "before": " ich dir geholfen. Der Zug ist wegen des Defekts tatsächlich zu spät abgefahren; ohne den Defekt ",
+              "form": "wäre",
+              "id": "de-konjunktiv-vergangenheit-independent-error-8-token-2"
+            },
+            {
+              "before": " der Zug rechtzeitig abgefahren. Die Gäste sind wegen des Staus tatsächlich zu spät angekommen; ohne den Stau ",
+              "form": "wären",
+              "id": "de-konjunktiv-vergangenheit-independent-error-8-token-3"
+            },
+            {
+              "before": " die Gäste pünktlich angekommen. Wir sind wegen des schlechten Wetters tatsächlich nicht zum Gipfel gegangen; bei besserem Wetter ",
+              "form": "wären",
+              "id": "de-konjunktiv-vergangenheit-independent-error-8-token-4"
+            },
+            {
+              "before": " wir zum Gipfel gegangen. Ihr habt euch tatsächlich verlaufen; mit einer Karte ",
+              "form": "hättet",
+              "id": "de-konjunktiv-vergangenheit-independent-error-8-token-5"
+            }
+          ],
+          "after": " ihr euch nicht verlaufen.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-8-token-1",
+          "answers": [
+            "hätte"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-9",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 9",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Sie haben den Auftrag tatsächlich abgelehnt; mit genug Personal ",
+              "form": "hätten",
+              "id": "de-konjunktiv-vergangenheit-independent-error-9-token-1"
+            },
+            {
+              "before": " sie den Auftrag angenommen. Ich habe den Termin tatsächlich verpasst; mit deiner Nachricht ",
+              "form": "hatte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-9-token-2"
+            },
+            {
+              "before": " ich den Termin nicht verpasst. Er hat die Vase tatsächlich zerbrochen; mit mehr Vorsicht ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-9-token-3"
+            },
+            {
+              "before": " er die Vase nicht zerbrochen. Du hast den Fehler tatsächlich nicht bemerkt; du ",
+              "form": "hättest",
+              "id": "de-konjunktiv-vergangenheit-independent-error-9-token-4"
+            },
+            {
+              "before": " den Fehler früher bemerkt. Das Schiff ist tatsächlich nicht ausgelaufen; ohne die Warnung ",
+              "form": "wäre",
+              "id": "de-konjunktiv-vergangenheit-independent-error-9-token-5"
+            }
+          ],
+          "after": " das Schiff ausgelaufen.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-9-token-2",
+          "answers": [
+            "hätte"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-independent-error-10",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "Korrekturrunde · 10",
+          "focus": "Irreale Vergangenheit",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Der Zug ist wegen des Defekts tatsächlich zu spät abgefahren; ohne den Defekt ",
+              "form": "wäre",
+              "id": "de-konjunktiv-vergangenheit-independent-error-10-token-1"
+            },
+            {
+              "before": " der Zug rechtzeitig abgefahren. Die Gäste sind wegen des Staus tatsächlich zu spät angekommen; ohne den Stau ",
+              "form": "wären",
+              "id": "de-konjunktiv-vergangenheit-independent-error-10-token-2"
+            },
+            {
+              "before": " die Gäste pünktlich angekommen. Wir sind wegen des schlechten Wetters tatsächlich nicht zum Gipfel gegangen; bei besserem Wetter ",
+              "form": "waren",
+              "id": "de-konjunktiv-vergangenheit-independent-error-10-token-3"
+            },
+            {
+              "before": " wir zum Gipfel gegangen. Ihr habt euch tatsächlich verlaufen; mit einer Karte ",
+              "form": "hättet",
+              "id": "de-konjunktiv-vergangenheit-independent-error-10-token-4"
+            },
+            {
+              "before": " ihr euch nicht verlaufen. Ich habe dir tatsächlich nicht geholfen; unter anderen Umständen ",
+              "form": "hätte",
+              "id": "de-konjunktiv-vergangenheit-independent-error-10-token-5"
+            }
+          ],
+          "after": " ich dir geholfen.",
+          "wrongId": "de-konjunktiv-vergangenheit-independent-error-10-token-3",
+          "answers": [
+            "wären"
+          ],
+          "explanation": "„hätte/wäre + Partizip II“ bezeichnet ein vergangenes Ergebnis, das wegen einer sichtbaren nicht erfüllten Bedingung tatsächlich nicht eingetreten ist. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-1",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "erreichen · 1",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "erreichen",
+          "separation": "inseparable",
+          "prompt": "Mit dem früheren Zug ___ sie das Ziel erreicht.",
+          "answers": [
+            "Mit dem früheren Zug hätten sie das Ziel erreicht.",
+            "Mit dem früheren Zug hätten sie das Ziel erreicht"
+          ],
+          "explanation": "„erreichen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-2",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "zurückkehren · 2",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "zurückkehren",
+          "separation": "separable",
+          "prompt": "Ohne den Sturm ___ die Schiffe früher zurückgekehrt.",
+          "answers": [
+            "Ohne den Sturm wären die Schiffe früher zurückgekehrt.",
+            "Ohne den Sturm wären die Schiffe früher zurückgekehrt"
+          ],
+          "explanation": "„zurückkehren“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-3",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "anrufen · 3",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "anrufen",
+          "separation": "separable",
+          "prompt": "Mit einem Telefon ___ ich dich sofort angerufen.",
+          "answers": [
+            "Mit einem Telefon hätte ich dich sofort angerufen.",
+            "Mit einem Telefon hätte ich dich sofort angerufen"
+          ],
+          "explanation": "„anrufen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-4",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "besuchen · 4",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "besuchen",
+          "separation": "inseparable",
+          "prompt": "Mit einer Einladung ___ Nora die Ausstellung besucht.",
+          "answers": [
+            "Mit einer Einladung hätte Nora die Ausstellung besucht.",
+            "Mit einer Einladung hätte Nora die Ausstellung besucht"
+          ],
+          "explanation": "„besuchen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-5",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "mitkommen · 5",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "mitkommen",
+          "separation": "separable",
+          "prompt": "Bei gutem Wetter ___ wir mitgekommen.",
+          "answers": [
+            "Bei gutem Wetter wären wir mitgekommen.",
+            "Bei gutem Wetter wären wir mitgekommen"
+          ],
+          "explanation": "„mitkommen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-6",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "erzählen · 6",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "erzählen",
+          "separation": "inseparable",
+          "prompt": "Ohne das Versprechen ___ ich alles erzählt.",
+          "answers": [
+            "Ohne das Versprechen hätte ich alles erzählt.",
+            "Ohne das Versprechen hätte ich alles erzählt"
+          ],
+          "explanation": "„erzählen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-7",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "verstehen · 7",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "verstehen",
+          "separation": "inseparable",
+          "prompt": "Nach einer Erklärung ___ er die Aufgabe verstanden.",
+          "answers": [
+            "Nach einer Erklärung hätte er die Aufgabe verstanden.",
+            "Nach einer Erklärung hätte er die Aufgabe verstanden"
+          ],
+          "explanation": "„verstehen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-8",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "aufpassen · 8",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "aufpassen",
+          "separation": "separable",
+          "prompt": "Mit der Warnung ___ du besser aufgepasst.",
+          "answers": [
+            "Mit der Warnung hättest du besser aufgepasst.",
+            "Mit der Warnung hättest du besser aufgepasst"
+          ],
+          "explanation": "„aufpassen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-9",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "entkommen · 9",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "entkommen",
+          "separation": "inseparable",
+          "prompt": "Ohne das neue Tor ___ das Tier entkommen.",
+          "answers": [
+            "Ohne das neue Tor wäre das Tier entkommen.",
+            "Ohne das neue Tor wäre das Tier entkommen"
+          ],
+          "explanation": "„entkommen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-konjunktiv-vergangenheit-separation-10",
+          "tense": "konjunktiv-vergangenheit",
+          "title": "einpacken · 10",
+          "focus": "konjunktiv-vergangenheit",
+          "verb": "einpacken",
+          "separation": "separable",
+          "prompt": "Mit mehr Platz ___ ihr alle Bücher eingepackt.",
+          "answers": [
+            "Mit mehr Platz hättet ihr alle Bücher eingepackt.",
+            "Mit mehr Platz hättet ihr alle Bücher eingepackt"
+          ],
+          "explanation": "„einpacken“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-konjunktiv-vergangenheit-written-final-story",
+          "title": "Die abgesagte Bergtour",
+          "focus": "konjunktiv-vergangenheit",
+          "instruction": "Lies die ganze Geschichte. Ergänze jede vollständige Verbgruppe aus Partizip II und passender hätte-/wäre-Form; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Mit einer besseren Wetterprognose meint der Leiter, dass die Gruppe früher ",
+            ". Ohne den Defekt am Bus glaubt er, dass alle rechtzeitig am Ausgangspunkt ",
+            ". Der Leiter sagt, dass er die Route nicht ",
+            ", wenn der obere Weg sicher gewesen wäre. Mit wärmerer Kleidung steht fest, dass zwei Teilnehmer nicht ",
+            ". Hättest du die Warnung gelesen, wäre klar, dass du zusätzliche Ausrüstung ",
+            ". Ohne den starken Nebel meinen wir, dass wir den Gipfel ",
+            ". Die Fotografin sagt, dass sie eindrucksvolle Bilder ",
+            ", wenn die Sicht frei gewesen wäre. Mit einer offenen Hütte glaubt die Gruppe, dass sie dort ",
+            ". Der Fahrer erklärt, dass er nicht so lange im Tal ",
+            ", wenn er eine Nachricht erhalten hätte. Unter normalen Bedingungen meint der Leiter, dass alle am Abend zufrieden ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-1",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "aufbrechen",
+              "answers": [
+                "aufgebrochen wäre"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-2",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen wären"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-3",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "ändern",
+              "answers": [
+                "geändert hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-4",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "umkehren",
+              "answers": [
+                "umgekehrt wären"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-5",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "mitbringen",
+              "answers": [
+                "mitgebracht hättest"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-6",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "erreichen",
+              "answers": [
+                "erreicht hätten"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-7",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "machen",
+              "answers": [
+                "gemacht hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-8",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "übernachten",
+              "answers": [
+                "übernachtet hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-9",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "warten",
+              "answers": [
+                "gewartet hätte"
+              ]
+            },
+            {
+              "id": "de-konjunktiv-vergangenheit-written-final-story-gap-10",
+              "tense": "konjunktiv-vergangenheit",
+              "verb": "zurückkehren",
+              "answers": [
+                "zurückgekehrt wären"
+              ]
+            }
+          ],
+          "explanation": "Jede Lücke exige Partizip II y Konjunktiv II del auxiliar heredado: sein para los cambios o desplazamientos indicados y haben para los demás verbos de esta historia."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-1",
+        "level": 1,
+        "lemma": "kaufen",
+        "senseId": "kaufen.context-1-1",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-dass",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "haben",
+        "participle": "gekauft",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekauft hätte",
+        "accepted": [
+          "gekauft hätte"
+        ],
+        "distractorRationale": [
+          "«gekauft hättest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gekauft hättet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gekauft hätten» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "f8303e53ce481003170f5bf7a2a6a20918554cd84dd3a5713c58555d45438b8b"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-2",
+        "level": 1,
+        "lemma": "machen",
+        "senseId": "machen.context-1-2",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-weil",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "haben",
+        "participle": "gemacht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gemacht hättest",
+        "accepted": [
+          "gemacht hättest"
+        ],
+        "distractorRationale": [
+          "«gemacht hätte» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gemacht hättet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gemacht hätten» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "14044c125724bf6772a88b5d8c9afec7154098f514e6a80e528c08b73ff09946"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-3",
+        "level": 1,
+        "lemma": "lernen",
+        "senseId": "lernen.context-1-3",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-obwohl",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelernt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelernt hätte",
+        "accepted": [
+          "gelernt hätte"
+        ],
+        "distractorRationale": [
+          "«gelernt hättest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gelernt hättet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gelernt hätten» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "32196dcc5ae03369530a14ba491f5a1183efce61895856d07be424bdcfb7b32d"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-4",
+        "level": 1,
+        "lemma": "sehen",
+        "senseId": "sehen.context-1-4",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "question",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-ob",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "haben",
+        "participle": "gesehen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesehen hätten",
+        "accepted": [
+          "gesehen hätten"
+        ],
+        "distractorRationale": [
+          "«gesehen hätte» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gesehen hättest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gesehen hättet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "7702e44db313a016d0ad22931efb3f8c9f843a49b90d05ece7f99f2593831c8c"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-5",
+        "level": 1,
+        "lemma": "finden",
+        "senseId": "finden.context-1-5",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-wenn",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "haben",
+        "participle": "gefunden",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefunden hättet",
+        "accepted": [
+          "gefunden hättet"
+        ],
+        "distractorRationale": [
+          "«gefunden hätte» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gefunden hättest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gefunden hätten» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "ec2a26e3db57e794f0558f504cafa0849c2c7df940acae6ff43148321bc380b2"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-6",
+        "level": 1,
+        "lemma": "spielen",
+        "senseId": "spielen.context-1-6",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-dass",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "haben",
+        "participle": "gespielt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gespielt hätten",
+        "accepted": [
+          "gespielt hätten"
+        ],
+        "distractorRationale": [
+          "«gespielt hätte» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gespielt hättest» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gespielt hättet» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "492c8ed7f5978fcc7dd4d2750649ac6b387f5626db27818ce6fec4e86af4942f"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-7",
+        "level": 1,
+        "lemma": "gehen",
+        "senseId": "gehen.context-1-7",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-wenn",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gegangen wäre",
+        "accepted": [
+          "gegangen wäre"
+        ],
+        "distractorRationale": [
+          "«gegangen wärst» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gegangen wärt» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gegangen wären» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "f77423529798cf4e39bdab0f41214a793222f1e862547f4f1d443916054be5b1"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-8",
+        "level": 1,
+        "lemma": "kommen",
+        "senseId": "kommen.context-1-8",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "question",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-ob",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "sein",
+        "participle": "gekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekommen wärst",
+        "accepted": [
+          "gekommen wärst"
+        ],
+        "distractorRationale": [
+          "«gekommen wäre» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gekommen wärt» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gekommen wären» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "b99de610264f7e8f64cce0545387dab9a6384f21797976fa5542d2901e6f9db9"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-9",
+        "level": 1,
+        "lemma": "bleiben",
+        "senseId": "bleiben.context-1-9",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-weil",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "sein",
+        "participle": "geblieben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geblieben wäre",
+        "accepted": [
+          "geblieben wäre"
+        ],
+        "distractorRationale": [
+          "«geblieben wärst» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«geblieben wärt» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«geblieben wären» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "0d903bbb3b8fcf8b489cebc71450b70ce8391fa5b7391c3200a7c45e62cdbc83"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-choice-editorial-10",
+        "level": 1,
+        "lemma": "fahren",
+        "senseId": "fahren.context-1-10",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "connector-weil",
+          "unreal-past-condition",
+          "contrary-result"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefahren wären",
+        "accepted": [
+          "gefahren wären"
+        ],
+        "distractorRationale": [
+          "«gefahren wäre» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gefahren wärst» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto.",
+          "«gefahren wärt» no concuerda con la persona, el tratamiento o la construcción exigida por el contexto."
+        ],
+        "runtimeFingerprint": "8fc27cb333df4627ce8fd0b34de67362afb8702b8bf153158fedb5f09c69c2ae"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-1",
+        "level": 2,
+        "lemma": "schicken",
+        "senseId": "schicken.context-2-1",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "geschickt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschickt hätte",
+        "accepted": [
+          "geschickt hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "0d86e5005f05b57a910707232326dcc3c3f1795616c0d7df861cd65ce4922bc0"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-2",
+        "level": 2,
+        "lemma": "ankommen",
+        "senseId": "ankommen.context-2-2",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "angekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "angekommen wäre",
+        "accepted": [
+          "angekommen wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3e375eaf6f4cb1a5a4db9cd85c0179c5d297428582e68ccdd2564131e4ab0871"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-3",
+        "level": 2,
+        "lemma": "vermeiden",
+        "senseId": "vermeiden.context-2-3",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "vermieden",
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "vermieden hätten",
+        "accepted": [
+          "vermieden hätten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4a719146a7e589e9f04eaec1804717a105f57e811abbfa08a8b2ebe93881c723"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-4",
+        "level": 2,
+        "lemma": "aufstehen",
+        "senseId": "aufstehen.context-2-4",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "aufgestanden",
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "aufgestanden wäre",
+        "accepted": [
+          "aufgestanden wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "54e38f3946ba8ae0992920be4c6f2b3056f9afa96477dd176b84c14cb77bd2a9"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-5",
+        "level": 2,
+        "lemma": "kaufen",
+        "senseId": "kaufen.context-2-5",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "gekauft",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekauft hätte",
+        "accepted": [
+          "gekauft hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "30d96cfc816a600bee621cecdc727456d2eccd102f19b438c0981a25036ff84a"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-6",
+        "level": 2,
+        "lemma": "zurückkehren",
+        "senseId": "zurückkehren.context-2-6",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "zurückgekehrt",
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "zurückgekehrt wäre",
+        "accepted": [
+          "zurückgekehrt wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "6b26eb1e67c6bfea8d3234cc43546f0fc1e7ae68a4e0b106c41837e0a9ace277"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-7",
+        "level": 2,
+        "lemma": "senden",
+        "senseId": "senden.context-2-7",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "gesendet/gesandt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesendet hätte / gesandt hätte",
+        "accepted": [
+          "gesendet hätte",
+          "gesandt hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2e80b5e4138b494cfda4b0254d27f9a0d2baae851a36b78cd69d126cf8ee3db1"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-8",
+        "level": 2,
+        "lemma": "teilnehmen",
+        "senseId": "teilnehmen.context-2-8",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "teilgenommen",
+        "separation": "separable",
+        "prefix": "teil",
+        "expectedUnit": "teilgenommen hätte",
+        "accepted": [
+          "teilgenommen hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4e04599ac5e38105f2eada6423b362efdffc047acc8ad1e67678071a9908a07d"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-9",
+        "level": 2,
+        "lemma": "schließen",
+        "senseId": "schließen.context-2-9",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "geschlossen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschlossen hätte",
+        "accepted": [
+          "geschlossen hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5d3435a0f32a692c620aa6b15b1b1487fc3b71db71f9062d381da6ec4cc7ddac"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-micro-editorial-10",
+        "level": 2,
+        "lemma": "kommen",
+        "senseId": "kommen.context-2-10",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "gekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekommen wäre",
+        "accepted": [
+          "gekommen wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4608e6c4a709527621693a8ddaa9659bfb86656482ee60999ee40afba9d9afef"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-1",
+        "level": 3,
+        "lemma": "erreichen",
+        "senseId": "erreichen.context-3-1",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "erreicht",
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "erreicht hätte",
+        "accepted": [
+          "erreicht hätte",
+          "genommen hätte",
+          "angekommen wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5e78e5bf8808b92f3ff313fe5fcbddae9afd3b3ed0badc63abfa5259adfcf681"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-2",
+        "level": 3,
+        "lemma": "retten",
+        "senseId": "retten.context-3-2",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "gerettet",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gerettet hätte",
+        "accepted": [
+          "gerettet hätte",
+          "gestartet hätte",
+          "verloren hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e0c027a3889fd4f50b79278e10b1458b7cd65c96ee4b5cc8ce7d23a84634dcb7"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-3",
+        "level": 3,
+        "lemma": "starten",
+        "senseId": "starten.context-3-3",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "gestartet",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gestartet wäre",
+        "accepted": [
+          "gestartet wäre",
+          "verbessert hätte",
+          "erreicht hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "95ab99bab7ec9cfa55210d8e8bfdb6a508ea0f548733285f5d89cbc8801230f0"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-4",
+        "level": 3,
+        "lemma": "finden",
+        "senseId": "finden.context-3-4",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "gefunden",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefunden hätte",
+        "accepted": [
+          "gefunden hätte",
+          "gespart hätte",
+          "angekommen wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2cd8e2456a94e706f599af990232cd7c729b7ea6706e06368ec527ba9e63fb22"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-5",
+        "level": 3,
+        "lemma": "wiederholen",
+        "senseId": "wiederholen.context-3-5",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "wiederholt",
+        "separation": "inseparable",
+        "prefix": "wieder",
+        "expectedUnit": "wiederholt hätte",
+        "accepted": [
+          "wiederholt hätte",
+          "geblieben wäre",
+          "bestanden hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "56208c7f5439650a2e0e1c4510958fcfd0cced2122efa4dae7239a276b9c801a"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-6",
+        "level": 3,
+        "lemma": "kaufen",
+        "senseId": "kaufen.context-3-6",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "gekauft",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekauft hätte",
+        "accepted": [
+          "gekauft hätte",
+          "verpackt hätte",
+          "zurückgekehrt wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2877a2e0399e3a67a228480413ae3b3cab6e3c12191508bba994afd3e8606841"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-7",
+        "level": 3,
+        "lemma": "kommen",
+        "senseId": "kommen.context-3-7",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "gekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekommen wäre",
+        "accepted": [
+          "gekommen wäre",
+          "gestellt hätte",
+          "beendet hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "b67b8cf57ef8a9f628e3b728bd8c4d9dbf21098b72fef560bc2a558198a27d58"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-8",
+        "level": 3,
+        "lemma": "reparieren",
+        "senseId": "reparieren.context-3-8",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "repariert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "repariert hätte",
+        "accepted": [
+          "repariert hätte",
+          "geworden wäre",
+          "gezogen wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "23872c8e1c091745fcfd9b19eba557a5b6de75e85cbf8383e0fd967a6237d2d0"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-9",
+        "level": 3,
+        "lemma": "sperren",
+        "senseId": "sperren.context-3-9",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "gesperrt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesperrt hätte",
+        "accepted": [
+          "gesperrt hätte",
+          "evakuiert hätte",
+          "verletzt worden wäre"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2a6cf2cee83459ab20afbede7e494aa73ed74ce61de1bddbb488c6713876ea84"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-long-editorial-10",
+        "level": 3,
+        "lemma": "belegen",
+        "senseId": "belegen.context-3-10",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "belegt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "belegt hätte",
+        "accepted": [
+          "belegt hätte",
+          "erkannt hätte",
+          "vermieden hätte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3dfa29582616bf12e3564fe9fb79db6c4b2606e7c34e2c70127ceda28ed61496"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-1",
+        "level": 4,
+        "lemma": "auslaufen",
+        "senseId": "auslaufen.context-4-1",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "ausgelaufen",
+        "separation": "separable",
+        "prefix": "aus",
+        "expectedUnit": "ausgelaufen wäre",
+        "accepted": [
+          "wäre"
+        ],
+        "distractorRationale": [
+          "«war» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "110f38c602efc3232524bee91f26ceec3bb66529ce6fe4b08454c1506679729f"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-2",
+        "level": 4,
+        "lemma": "abfahren",
+        "senseId": "abfahren.context-4-2",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "abgefahren",
+        "separation": "separable",
+        "prefix": "ab",
+        "expectedUnit": "abgefahren wäre",
+        "accepted": [
+          "wäre"
+        ],
+        "distractorRationale": [
+          "«war» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "dce5fc2385b84ee4aa608ef4401be9cd4f7333ce2ec7d52e58eea8f3c01de828"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-3",
+        "level": 4,
+        "lemma": "zerbrechen",
+        "senseId": "zerbrechen.context-4-3",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "zerbrochen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "zerbrochen hätte",
+        "accepted": [
+          "hätte"
+        ],
+        "distractorRationale": [
+          "«hatte» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "1699725557ffb9770567431d06b7cde1daf5d1409bbb07c29d62580e29acfd61"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-4",
+        "level": 4,
+        "lemma": "sich verlaufen",
+        "senseId": "sich-verlaufen.context-4-4",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "verlaufen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "verlaufen hättet",
+        "accepted": [
+          "hättet"
+        ],
+        "distractorRationale": [
+          "«hattet» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "61c591a18f495ab004cb835fe98064b09f19b471b2da5888a72e56a7c0278f32"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-5",
+        "level": 4,
+        "lemma": "annehmen",
+        "senseId": "annehmen.context-4-5",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "angenommen",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "angenommen hätten",
+        "accepted": [
+          "hätten"
+        ],
+        "distractorRationale": [
+          "«hatten» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "71cb748493f9492cf251bdd66b936d5c96a7edf3a404a41c1e67b7dc49228076"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-6",
+        "level": 4,
+        "lemma": "ankommen",
+        "senseId": "ankommen.context-4-6",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "angekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "angekommen wären",
+        "accepted": [
+          "wären"
+        ],
+        "distractorRationale": [
+          "«waren» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "2bd3a15bd11b61c552c9c26030a9f77d78f73be72770bc5b38bc1df963337107"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-7",
+        "level": 4,
+        "lemma": "bemerken",
+        "senseId": "bemerken.context-4-7",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "bemerkt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "bemerkt hättest",
+        "accepted": [
+          "hättest"
+        ],
+        "distractorRationale": [
+          "«hattest» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "defba4a6d600c0478c979d27861ec7664ba7ccdd641bc5722ce949495ae68541"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-8",
+        "level": 4,
+        "lemma": "helfen",
+        "senseId": "helfen.context-4-8",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "geholfen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geholfen hätte",
+        "accepted": [
+          "hätte"
+        ],
+        "distractorRationale": [
+          "«hatte» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "639104539bc1df5d11f27cd1872ae2e87946b4cc9d86e7c5deab9f1655896e5b"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-9",
+        "level": 4,
+        "lemma": "verpassen",
+        "senseId": "verpassen.context-4-9",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "verpasst",
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "verpasst hätte",
+        "accepted": [
+          "hätte"
+        ],
+        "distractorRationale": [
+          "«hatte» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "021fab433a9da1fa4ba47eeaeadb4550ae660ce2bed0f54cb017514f0628ba14"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-independent-error-10",
+        "level": 4,
+        "lemma": "gehen",
+        "senseId": "gehen.context-4-10",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gegangen wären",
+        "accepted": [
+          "wären"
+        ],
+        "distractorRationale": [
+          "«waren» pertenece a otra construcción o no concuerda con el destinatario."
+        ],
+        "runtimeFingerprint": "16cb72a75d85c93e76b590a55c3b011ee2dadee4e460244fb2eb984d3b8c83fa"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-1",
+        "level": 5,
+        "lemma": "erreichen",
+        "senseId": "erreichen.context-5-1",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "erreicht",
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "Mit dem früheren Zug hätten sie das Ziel erreicht.",
+        "accepted": [
+          "Mit dem früheren Zug hätten sie das Ziel erreicht.",
+          "Mit dem früheren Zug hätten sie das Ziel erreicht"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «erreichen»."
+        ],
+        "runtimeFingerprint": "9d803aaf330267eada9cac4a57d7508a6e0f76151f39e8c2b04aaf63c937dc5d"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-2",
+        "level": 5,
+        "lemma": "zurückkehren",
+        "senseId": "zurückkehren.context-5-2",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "zurückgekehrt",
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "Ohne den Sturm wären die Schiffe früher zurückgekehrt.",
+        "accepted": [
+          "Ohne den Sturm wären die Schiffe früher zurückgekehrt.",
+          "Ohne den Sturm wären die Schiffe früher zurückgekehrt"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «zurückkehren»."
+        ],
+        "runtimeFingerprint": "3ab5f72e2d5d1e7f322c7c47225cac62b5492af4af14db6a4309dc6c1885ede4"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-3",
+        "level": 5,
+        "lemma": "anrufen",
+        "senseId": "anrufen.context-5-3",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "angerufen",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "Mit einem Telefon hätte ich dich sofort angerufen.",
+        "accepted": [
+          "Mit einem Telefon hätte ich dich sofort angerufen.",
+          "Mit einem Telefon hätte ich dich sofort angerufen"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «anrufen»."
+        ],
+        "runtimeFingerprint": "8a08c4070a50477e792ba360f908042df45f0a958e0d053d8c1670fb2062d41d"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-4",
+        "level": 5,
+        "lemma": "besuchen",
+        "senseId": "besuchen.context-5-4",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "besucht",
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Mit einer Einladung hätte Nora die Ausstellung besucht.",
+        "accepted": [
+          "Mit einer Einladung hätte Nora die Ausstellung besucht.",
+          "Mit einer Einladung hätte Nora die Ausstellung besucht"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «besuchen»."
+        ],
+        "runtimeFingerprint": "264bfdf3130d8830a31ee6d7421ccbf0e243fb466089e8a4af0d2f12845b98a5"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-5",
+        "level": 5,
+        "lemma": "mitkommen",
+        "senseId": "mitkommen.context-5-5",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "mitgekommen",
+        "separation": "separable",
+        "prefix": "mit",
+        "expectedUnit": "Bei gutem Wetter wären wir mitgekommen.",
+        "accepted": [
+          "Bei gutem Wetter wären wir mitgekommen.",
+          "Bei gutem Wetter wären wir mitgekommen"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «mitkommen»."
+        ],
+        "runtimeFingerprint": "f33c09c723177d07638e5788f2350115c91f0d012b3c19faad9df86e1e1d6af8"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-6",
+        "level": 5,
+        "lemma": "erzählen",
+        "senseId": "erzählen.context-5-6",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "erzählt",
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "Ohne das Versprechen hätte ich alles erzählt.",
+        "accepted": [
+          "Ohne das Versprechen hätte ich alles erzählt.",
+          "Ohne das Versprechen hätte ich alles erzählt"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «erzählen»."
+        ],
+        "runtimeFingerprint": "881cf24ff233451c07fc8103191606059106f7e5bdbee2634a93c84fdd2f11ae"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-7",
+        "level": 5,
+        "lemma": "verstehen",
+        "senseId": "verstehen.context-5-7",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "verstanden",
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "Nach einer Erklärung hätte er die Aufgabe verstanden.",
+        "accepted": [
+          "Nach einer Erklärung hätte er die Aufgabe verstanden.",
+          "Nach einer Erklärung hätte er die Aufgabe verstanden"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «verstehen»."
+        ],
+        "runtimeFingerprint": "f46e146d59dd54362e919a9e780216421d15f2ec482c014a42a09e5fcb3a5be2"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-8",
+        "level": 5,
+        "lemma": "aufpassen",
+        "senseId": "aufpassen.context-5-8",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "aufgepasst",
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "Mit der Warnung hättest du besser aufgepasst.",
+        "accepted": [
+          "Mit der Warnung hättest du besser aufgepasst.",
+          "Mit der Warnung hättest du besser aufgepasst"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «aufpassen»."
+        ],
+        "runtimeFingerprint": "01188528831960a0eb1db99afe3d1295e6fa347d0242dd8c215e3c13a13cb4db"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-9",
+        "level": 5,
+        "lemma": "entkommen",
+        "senseId": "entkommen.context-5-9",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "entkommen",
+        "separation": "inseparable",
+        "prefix": "ent",
+        "expectedUnit": "Ohne das neue Tor wäre das Tier entkommen.",
+        "accepted": [
+          "Ohne das neue Tor wäre das Tier entkommen.",
+          "Ohne das neue Tor wäre das Tier entkommen"
+        ],
+        "distractorRationale": [
+          "Trennbar contradice la estructura léxica de «entkommen»."
+        ],
+        "runtimeFingerprint": "ed8f8c39e39ab7eccd2068c7dea3ef8089f4630fe6368f9662bf99f16c51d3c1"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-separation-10",
+        "level": 5,
+        "lemma": "einpacken",
+        "senseId": "einpacken.context-5-10",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "haben",
+        "participle": "eingepackt",
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "Mit mehr Platz hättet ihr alle Bücher eingepackt.",
+        "accepted": [
+          "Mit mehr Platz hättet ihr alle Bücher eingepackt.",
+          "Mit mehr Platz hättet ihr alle Bücher eingepackt"
+        ],
+        "distractorRationale": [
+          "Untrennbar contradice la estructura léxica de «einpacken»."
+        ],
+        "runtimeFingerprint": "2c2838042767ba0506fdd578a2c768118b3e75d34b2c1c2e96125448e7e2ee24"
+      },
+      {
+        "itemId": "de-konjunktiv-vergangenheit-written-final-story",
+        "level": 6,
+        "lemma": "aufbrechen; ankommen; ändern; umkehren; mitbringen; erreichen; machen; übernachten; warten; zurückkehren",
+        "senseId": "aufbrechen;-ankommen;-ändern;-umkehren;-mitbringen;-erreichen;-machen;-übernachten;-warten;-zurückkehren.context-6-1",
+        "targetForm": "konjunktiv-vergangenheit",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "counterfactual past condition or consequence",
+        "anchorIds": [
+          "recoverable-counterfactual-past"
+        ],
+        "auxiliary": "sein",
+        "participle": "aufgebrochen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "aufgebrochen wäre | angekommen wären | geändert hätte | umgekehrt wären | mitgebracht hättest | erreicht hätten | gemacht hätte | übernachtet hätte | gewartet hätte | zurückgekehrt wären",
+        "accepted": [
+          "aufgebrochen wäre",
+          "angekommen wären",
+          "geändert hätte",
+          "umgekehrt wären",
+          "mitgebracht hättest",
+          "erreicht hätten",
+          "gemacht hätte",
+          "übernachtet hätte",
+          "gewartet hätte",
+          "zurückgekehrt wären"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "bdae10da48f1652b369ef46d314f5ac0160e1dc899f6b66e01d1bab7404781b3"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Goethe-Institut — Deutsche Grammatik",
+        "url": "https://www.goethe.de/ins/de/de/m/prf/grm.html",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Perfektbildung mit haben oder sein",
+        "url": "https://grammis.ids-mannheim.de/progr%40mm/5316",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Duden — Verzeichnis der Fachausdrücke: Verbpartikel und Verbpräfix",
+        "url": "https://www.duden.de/Fachausdr%C3%BCcke-Buchstabe-T-V",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "level-one-contexts",
+      "status": "PASS",
+      "evidence": "Se aplicaron los ajustes lingüísticos finales en N1 (ítem 1, ítem 4, ítem 10); IDs, answers y options permanecen idénticos."
+    },
+    {
+      "id": "connector-contract",
+      "status": "PASS",
+      "evidence": {
+        "dass": 2,
+        "weil": 3,
+        "obwohl": 1,
+        "ob": 2,
+        "wenn": 2
+      }
+    },
+    {
+      "id": "interrogative-contexts",
+      "status": "PASS",
+      "evidence": [
+        "de-konjunktiv-vergangenheit-choice-editorial-4",
+        "de-konjunktiv-vergangenheit-choice-editorial-8"
+      ]
+    },
+    {
+      "id": "levels-two-through-six-unchanged",
+      "status": "PASS",
+      "evidence": "micro, long, error, separation y finalStories permanecen estructuralmente idénticos al candidato anterior."
+    },
+    {
+      "id": "annotations-scope",
+      "status": "PASS",
+      "evidence": "Se recalcularon runtimeFingerprint, clauseType y anchorIds de las 10 anotaciones N1; accepted y N2–N6 permanecen idénticos."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "LEVEL-ONE-LINGUISTIC-AUDIT-RESOLVED",
+      "detail": "Los contextos N1 incorporan los fixes bloqueantes y el pulido recomendado, conservan la construcción objetivo y cumplen las cuotas de conector y posición."
+    }
+  ],
+  "generatedAt": "2026-09-06T22:37:49.881Z"
+}

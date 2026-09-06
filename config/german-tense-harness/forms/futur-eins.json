@@ -8,6 +8,15 @@
   "auxiliaryPolicy": "fixed-werden",
   "allowedAuxiliaries": ["werden"],
   "minimumFinalUnitTokens": 2,
+  "levelOneClauseContract": {
+    "allowedConnectors": ["dass", "weil", "obwohl", "wenn", "bevor", "ob"],
+    "minimumDistinctConnectors": 4,
+    "maximumUsesPerConnector": 3,
+    "minimumInterrogativeContexts": 2,
+    "minimumMatrixObQuestions": 2,
+    "minimumPreposedTargetClauses": 2,
+    "requireContiguousVerbalUnit": true
+  },
   "morphology": ["werden agrees with person and number", "lexical verb remains infinitive"],
   "wordOrder": ["finite werden in V2 and infinitive at clause end", "infinitive before finite werden in ordinary subordinate order"],
   "contextContract": ["future prediction, promise or explicit prospective reference"],

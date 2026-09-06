@@ -1,0 +1,1101 @@
+{
+  "schemaVersion": 1,
+  "formId": "konjunktiv-vergangenheit",
+  "role": "auxiliary",
+  "verdict": "PASS",
+  "candidateFingerprint": "21e6e84cfdae31b96ac8b5c3d78f4a8798eab4f0e0576086cbd5aad7c206d955",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "778f87246a6885129b2d001a1db9ab31431e616ff854ec4f5a57f9216e57deae",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kaufen",
+          "sense": "Ich hatte nicht genug Geld; später erklärte ich, dass ich das Rad sonst gekauft hätte.",
+          "valency": "Uso transitivo con complemento acusativo; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gekauft hätte» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "machen",
+          "sense": "Die Frist war zu kurz; du ärgerst dich, weil du die Arbeit mit mehr Zeit gemacht hättest.",
+          "valency": "Uso transitivo con complemento acusativo; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gemacht hättest» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "lernen",
+          "sense": "Mia bestand die Prüfung, obwohl sie ohne das Buch weniger gelernt hätte.",
+          "valency": "Actividad o proceso sin cambio dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gelernt hätte» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sehen",
+          "sense": "Kannst du einschätzen, ob wir den Berg ohne Nebel gesehen hätten?",
+          "valency": "Uso transitivo con complemento acusativo; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gesehen hätten» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "finden",
+          "sense": "Wenn ihr mit einer Karte den Weg gefunden hättet, wäret ihr früher angekommen.",
+          "valency": "Uso transitivo con complemento acusativo; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gefunden hättet» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "spielen",
+          "sense": "Es regnete; die Mutter sagt, dass die Kinder ohne Regen draußen gespielt hätten.",
+          "valency": "Actividad o proceso sin cambio dirigido; selecciona haben.",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gespielt hätten» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "Wenn ich ohne Fieber zur Arbeit gegangen wäre, hätte ich die Sitzung geleitet.",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gegangen wäre» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kommen",
+          "sense": "Weißt du, ob du mit dem Bus früher gekommen wärst?",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gekommen wärst» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bleiben",
+          "sense": "Der Anruf änderte alles, weil Paul sonst zu Hause geblieben wäre.",
+          "valency": "Excepción léxica estable del sistema de Perfekt; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «geblieben wäre» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "fahren",
+          "sense": "Weil wir ohne den Defekt ans Meer gefahren wären, bedauerten wir die Absage besonders.",
+          "valency": "Movimiento dirigido o llegada intransitiva; selecciona sein.",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "Regla de selección: transitivos y actividades usan haben; movimiento dirigido, cambio de estado y bleiben usan sein.",
+          "status": "PASS",
+          "evidence": "La unidad declarada «gefahren wären» conserva el auxiliar exigido por el sentido del verbo."
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "schicken",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "vermeiden",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufstehen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kaufen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückkehren",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "senden",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "teilnehmen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "schließen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "erreichen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "nehmen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "retten",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "starten",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "verlieren",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "starten",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "verbessern",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "erreichen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "finden",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "sparen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "wiederholen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "bleiben",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "bestehen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kaufen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "verpacken",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "zurückkehren",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "kommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "stellen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "beenden",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "reparieren",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "werden",
+          "sense": "werden-Passiv im irrealen pasado",
+          "valency": "pasiva perifrástica",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "El Perfekt del werden-Passiv usa «sein + worden».",
+          "status": "PASS"
+        },
+        {
+          "lemma": "ziehen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sperren",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "evakuieren",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "werden",
+          "sense": "werden-Passiv im irrealen pasado",
+          "valency": "pasiva perifrástica",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "El Perfekt del werden-Passiv usa «sein + worden».",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "belegen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "erkennen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "vermeiden",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "auslaufen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "abfahren",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zerbrechen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "sich verlaufen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "annehmen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "ankommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "bemerken",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "helfen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verpassen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "gehen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "erreichen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "zurückkehren",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "anrufen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "besuchen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "mitkommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "erzählen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "verstehen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufpassen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "entkommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "einpacken",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "itemId": "de-konjunktiv-vergangenheit-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "decisions": [
+        {
+          "lemma": "aufbrechen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "ankommen",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "ändern",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "umkehren",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "mitbringen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "erreichen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "machen",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "übernachten",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "warten",
+          "sense": "transitive, reflexive oder nicht gerichtete Tätigkeit",
+          "valency": "transitivo/reflexivo/actividad según el contexto",
+          "correctAuxiliary": "haben",
+          "usedAuxiliary": "haben",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        },
+        {
+          "lemma": "zurückkehren",
+          "sense": "gerichtete Bewegung, Zustandswechsel oder lexikalische sein-Klasse",
+          "valency": "intransitivo en el sentido contextual",
+          "correctAuxiliary": "sein",
+          "usedAuxiliary": "sein",
+          "sourceOrRule": "https://grammis.ids-mannheim.de/systematische-grammatik/1612",
+          "status": "PASS"
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:42:24.258946Z"
+}

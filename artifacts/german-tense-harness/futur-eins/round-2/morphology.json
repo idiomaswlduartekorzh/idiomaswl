@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-eins",
+  "role": "morphology",
+  "verdict": "PASS",
+  "candidateFingerprint": "732049234f0a82f78ece0b1e6f4b73436e70917ce638ca3e9b86a682745d1674",
+  "specFingerprint": "d9be74f117df23c6c7f2bb3d9e701aa71385cc0594deb81c05fb03bf3db80970",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "itemId": "de-futur-eins-choice-editorial-1",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "anrufen werde"
+      ],
+      "declaredAnswer": [
+        "anrufen werde"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Die Kundin weiß, dass ich sie morgen anrufen werde."
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-2",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "helfen wirst"
+      ],
+      "declaredAnswer": [
+        "helfen wirst"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Die Leiterin plant dich ein, weil du ihr morgen helfen wirst."
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-3",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "kommen wird"
+      ],
+      "declaredAnswer": [
+        "kommen wird"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Die Agentur erwartet, dass Mia morgen kommen wird."
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-4",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "kochen werden"
+      ],
+      "declaredAnswer": [
+        "kochen werden"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Kannst du abschätzen, ob wir später kochen werden?"
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-5",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "lernen werdet"
+      ],
+      "declaredAnswer": [
+        "lernen werdet"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Obwohl ihr für die Prüfung mehr lernen werdet, bleibt Zeit für Pausen."
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-6",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "spielen werden"
+      ],
+      "declaredAnswer": [
+        "spielen werden"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Der Trainer reserviert den Platz, weil die Kinder draußen spielen werden."
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-7",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "bleiben werde"
+      ],
+      "declaredAnswer": [
+        "bleiben werde"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Obwohl ich morgen allein bleiben werde, fühle ich mich sicher."
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-8",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "arbeiten wirst"
+      ],
+      "declaredAnswer": [
+        "arbeiten wirst"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Weißt du schon, ob du morgen arbeiten wirst?"
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-9",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "fahren wird"
+      ],
+      "declaredAnswer": [
+        "fahren wird"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Die Fahrgäste warten, weil der Bus wegen des Staus wohl später fahren wird."
+    },
+    {
+      "itemId": "de-futur-eins-choice-editorial-10",
+      "level": 1,
+      "status": "PASS",
+      "independentAnswer": [
+        "aufräumen werden"
+      ],
+      "declaredAnswer": [
+        "aufräumen werden"
+      ],
+      "rule": "Infinitivo léxico seguido de werden concordado en la subordinada; la respuesta conserva la unidad perifrástica completa y contigua.",
+      "evidence": "Wir versprechen, dass wir später aufräumen werden."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-1",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "anrufen werde",
+      "declaredAnswer": "anrufen werde",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Ich verspreche, dass ich dich morgen anrufen werde."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-2",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "steigen werden",
+      "declaredAnswer": "steigen werden",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Prognose sagt, dass die Preise nächstes Jahr steigen werden."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-3",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "arbeiten wird",
+      "declaredAnswer": "arbeiten wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Es ist sicher, dass Lea um diese Zeit noch arbeiten wird."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-4",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "sanieren wird",
+      "declaredAnswer": "sanieren wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Stadt garantiert, dass sie die Brücke bis Herbst sanieren wird."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-5",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "erreichen wird",
+      "declaredAnswer": "erreichen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Das Modell zeigt, dass der Sturm die Küste am Abend erreichen wird."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-6",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "eröffnen wird",
+      "declaredAnswer": "eröffnen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Direktorin kündigt an, dass das Institut zwei neue Labore eröffnen wird."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-7",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "einhalten werde",
+      "declaredAnswer": "einhalten werde",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Keine Sorge: Ich weiß, dass ich die Frist einhalten werde."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-8",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "zunehmen wird",
+      "declaredAnswer": "zunehmen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Hochrechnung deutet darauf hin, dass die Beteiligung deutlich zunehmen wird."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-9",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "halten wird",
+      "declaredAnswer": "halten wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Ingenieurin erwartet, dass der neue Akku doppelt so lange halten wird."
+    },
+    {
+      "id": "de-futur-eins-micro-editorial-10",
+      "level": 2,
+      "status": "PASS",
+      "independentAnswer": "übertragen wird",
+      "declaredAnswer": "übertragen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Im Vertrag steht, dass der Anbieter alle Daten verschlüsselt übertragen wird."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-1",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "werden werden | steigen wird | bauen wird",
+      "declaredAnswer": "werden werden | steigen wird | bauen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Der Bericht sagt voraus, dass die Sommer heißer werden werden; die Forschung erwartet, dass der Wasserbedarf steigen wird; und die Stadt verspricht, dass sie neue Speicher bauen wird ."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-2",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "veröffentlichen wird | bestellen werden | arbeiten wird",
+      "declaredAnswer": "veröffentlichen wird | bestellen werden | arbeiten wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Firma kündigt an, dass sie das Gerät im Mai veröffentlichen wird; sie erwartet, dass viele Kunden es sofort bestellen werden; und sie garantiert, dass der Support rund um die Uhr arbeiten wird ."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-3",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "zunehmen wird | erreichen werden | sperren wird",
+      "declaredAnswer": "zunehmen wird | erreichen werden | sperren wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Der Wetterdienst warnt, dass der Wind am Nachmittag zunehmen wird; das Modell zeigt, dass hohe Wellen die Mole erreichen werden; und die Hafenleitung versichert, dass sie den Zugang sperren wird ."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-4",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "sammeln wird | dauern wird | vorstellen wird",
+      "declaredAnswer": "sammeln wird | dauern wird | vorstellen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Das Institut verpflichtet sich, dass es neue Proben sammeln wird; die Leitung erwartet, dass die Analyse Monate dauern wird; und sie kündigt an, dass sie die Ergebnisse öffentlich vorstellen wird ."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-5",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "stocken wird | nehmen werden | helfen wird",
+      "declaredAnswer": "stocken wird | nehmen werden | helfen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Behörde rechnet damit, dass der Verkehr morgens stocken wird; sie erwartet, dass viele Pendler die Bahn nehmen werden; und sie verspricht, dass zusätzliches Personal am Bahnhof helfen wird ."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-6",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "finanzieren wird | vereinfachen wird | erstatten wird",
+      "declaredAnswer": "finanzieren wird | vereinfachen wird | erstatten wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Kandidatin verspricht, dass sie Schulen besser finanzieren wird; sie erklärt, dass sie die Verfahren vereinfachen wird; und sie garantiert, dass ihr Büro monatlich Bericht erstatten wird ."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-7",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "werden wird | werden werden | verschwinden werden",
+      "declaredAnswer": "werden wird | werden werden | verschwinden werden",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Studie prognostiziert, dass Solarstrom günstiger werden wird; sie erwartet, dass Speicher wichtiger werden werden; und sie sagt voraus, dass alte Anlagen schrittweise verschwinden werden ."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-8",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "wirken wird | schlafen wird | begleiten wird",
+      "declaredAnswer": "wirken wird | schlafen wird | begleiten wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Ärztin ist überzeugt, dass die Therapie bald wirken wird; sie erwartet, dass der Patient besser schlafen wird; und sie versichert, dass das Team ihn eng begleiten wird."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-9",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "erkennen wird | melden werden | prüfen werden",
+      "declaredAnswer": "erkennen wird | melden werden | prüfen werden",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Der Betreiber garantiert, dass das System Angriffe erkennen wird; er kündigt an, dass neue Sensoren Anomalien melden werden; und er verspricht, dass Fachkräfte jeden Vorfall sofort prüfen werden ."
+    },
+    {
+      "id": "de-futur-eins-long-editorial-10",
+      "level": 3,
+      "status": "PASS",
+      "independentAnswer": "sinken wird | folgen werden | bleiben wird",
+      "declaredAnswer": "sinken wird | folgen werden | bleiben wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Bank prognostiziert, dass die Inflation langsam sinken wird; sie erwartet, dass die Löhne später folgen werden; und sie sagt voraus, dass der Konsum stabil bleiben wird ."
+    },
+    {
+      "id": "de-futur-eins-independent-error-1",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "anrufen wird",
+      "declaredAnswer": "anrufen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Ärztin verspricht, dass sie später anrufen wird. Ich bin sicher, dass ihr die Aufgabe lösen werdet. Wir versprechen, dass wir die Kosten übernehmen werden. Du wirst sehen, dass dir die neue Methode helfen wird. Morgen um diese Zeit werde ich noch im Zug sitzen."
+    },
+    {
+      "id": "de-futur-eins-independent-error-2",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "stattfinden wird",
+      "declaredAnswer": "stattfinden wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Laut Prognose werden die Temperaturen deutlich sinken. Der Veranstalter erklärt, dass das Konzert draußen stattfinden wird. Der Bericht sagt voraus, dass der Verkehr zunehmen wird. Die Firma kündigt an, dass sie neue Stellen schaffen wird. Die Forschenden erwarten, dass der Versuch gelingen wird."
+    },
+    {
+      "id": "de-futur-eins-independent-error-3",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "helfen wird",
+      "declaredAnswer": "helfen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Ich bin sicher, dass ihr die Aufgabe lösen werdet. Wir versprechen, dass wir die Kosten übernehmen werden. Du wirst sehen, dass dir die neue Methode helfen wird. Morgen um diese Zeit werde ich noch im Zug sitzen. Die Ärztin verspricht, dass sie später anrufen wird."
+    },
+    {
+      "id": "de-futur-eins-independent-error-4",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "gelingen wird",
+      "declaredAnswer": "gelingen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Der Veranstalter erklärt, dass das Konzert draußen stattfinden wird. Der Bericht sagt voraus, dass der Verkehr zunehmen wird. Die Firma kündigt an, dass sie neue Stellen schaffen wird. Die Forschenden erwarten, dass der Versuch gelingen wird. Laut Prognose werden die Temperaturen deutlich sinken."
+    },
+    {
+      "id": "de-futur-eins-independent-error-5",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "lösen werdet",
+      "declaredAnswer": "lösen werdet",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Wir versprechen, dass wir die Kosten übernehmen werden. Du wirst sehen, dass dir die neue Methode helfen wird. Morgen um diese Zeit werde ich noch im Zug sitzen. Die Ärztin verspricht, dass sie später anrufen wird. Ich bin sicher, dass ihr die Aufgabe lösen werdet."
+    },
+    {
+      "id": "de-futur-eins-independent-error-6",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "zunehmen wird",
+      "declaredAnswer": "zunehmen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Der Bericht sagt voraus, dass der Verkehr zunehmen wird. Die Firma kündigt an, dass sie neue Stellen schaffen wird. Die Forschenden erwarten, dass der Versuch gelingen wird. Laut Prognose werden die Temperaturen deutlich sinken. Der Veranstalter erklärt, dass das Konzert draußen stattfinden wird."
+    },
+    {
+      "id": "de-futur-eins-independent-error-7",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "werde",
+      "declaredAnswer": "werde",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Du wirst sehen, dass dir die neue Methode helfen wird. Morgen um diese Zeit werde ich noch im Zug sitzen. Die Ärztin verspricht, dass sie später anrufen wird. Ich bin sicher, dass ihr die Aufgabe lösen werdet. Wir versprechen, dass wir die Kosten übernehmen werden."
+    },
+    {
+      "id": "de-futur-eins-independent-error-8",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "werden",
+      "declaredAnswer": "werden",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Firma kündigt an, dass sie neue Stellen schaffen wird. Die Forschenden erwarten, dass der Versuch gelingen wird. Laut Prognose werden die Temperaturen deutlich sinken. Der Veranstalter erklärt, dass das Konzert draußen stattfinden wird. Der Bericht sagt voraus, dass der Verkehr zunehmen wird."
+    },
+    {
+      "id": "de-futur-eins-independent-error-9",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "übernehmen werden",
+      "declaredAnswer": "übernehmen werden",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Morgen um diese Zeit werde ich noch im Zug sitzen. Die Ärztin verspricht, dass sie später anrufen wird. Ich bin sicher, dass ihr die Aufgabe lösen werdet. Wir versprechen, dass wir die Kosten übernehmen werden. Du wirst sehen, dass dir die neue Methode helfen wird."
+    },
+    {
+      "id": "de-futur-eins-independent-error-10",
+      "level": 4,
+      "status": "PASS",
+      "independentAnswer": "schaffen wird",
+      "declaredAnswer": "schaffen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Forschenden erwarten, dass der Versuch gelingen wird. Laut Prognose werden die Temperaturen deutlich sinken. Der Veranstalter erklärt, dass das Konzert draußen stattfinden wird. Der Bericht sagt voraus, dass der Verkehr zunehmen wird. Die Firma kündigt an, dass sie neue Stellen schaffen wird."
+    },
+    {
+      "id": "de-futur-eins-separation-1",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Helfer bestätigen, dass sie die Bühne aufbauen werden. | Die Helfer bestätigen, dass sie die Bühne aufbauen werden",
+      "declaredAnswer": "Die Helfer bestätigen, dass sie die Bühne aufbauen werden. | Die Helfer bestätigen, dass sie die Bühne aufbauen werden",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Helfer bestätigen, dass sie die Bühne aufbauen werden."
+    },
+    {
+      "id": "de-futur-eins-separation-2",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird. | Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird",
+      "declaredAnswer": "Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird. | Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Prognose sagt, dass das Teleskop neue Sterne entdecken wird."
+    },
+    {
+      "id": "de-futur-eins-separation-3",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Nora schreibt, dass sie im Mai zurückkommen wird. | Nora schreibt, dass sie im Mai zurückkommen wird",
+      "declaredAnswer": "Nora schreibt, dass sie im Mai zurückkommen wird. | Nora schreibt, dass sie im Mai zurückkommen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Nora schreibt, dass sie im Mai zurückkommen wird."
+    },
+    {
+      "id": "de-futur-eins-separation-4",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet. | Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet",
+      "declaredAnswer": "Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet. | Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Ihr werdet sehen, dass ihr rechtzeitig Hilfe bekommen werdet."
+    },
+    {
+      "id": "de-futur-eins-separation-5",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird. | Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird",
+      "declaredAnswer": "Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird. | Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Der Forscher kündigt an, dass er die Ergebnisse vorstellen wird."
+    },
+    {
+      "id": "de-futur-eins-separation-6",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Mara verspricht, dass sie das Team morgen anmelden wird. | Mara verspricht, dass sie das Team morgen anmelden wird",
+      "declaredAnswer": "Mara verspricht, dass sie das Team morgen anmelden wird. | Mara verspricht, dass sie das Team morgen anmelden wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Mara verspricht, dass sie das Team morgen anmelden wird."
+    },
+    {
+      "id": "de-futur-eins-separation-7",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Wir versprechen, dass wir euch bald besuchen werden. | Wir versprechen, dass wir euch bald besuchen werden",
+      "declaredAnswer": "Wir versprechen, dass wir euch bald besuchen werden. | Wir versprechen, dass wir euch bald besuchen werden",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Wir versprechen, dass wir euch bald besuchen werden."
+    },
+    {
+      "id": "de-futur-eins-separation-8",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Ich bin sicher, dass du am Samstag mitfahren wirst. | Ich bin sicher, dass du am Samstag mitfahren wirst",
+      "declaredAnswer": "Ich bin sicher, dass du am Samstag mitfahren wirst. | Ich bin sicher, dass du am Samstag mitfahren wirst",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Ich bin sicher, dass du am Samstag mitfahren wirst."
+    },
+    {
+      "id": "de-futur-eins-separation-9",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Der Trainer sagt, dass er die neue Regel erklären wird. | Der Trainer sagt, dass er die neue Regel erklären wird",
+      "declaredAnswer": "Der Trainer sagt, dass er die neue Regel erklären wird. | Der Trainer sagt, dass er die neue Regel erklären wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Der Trainer sagt, dass er die neue Regel erklären wird."
+    },
+    {
+      "id": "de-futur-eins-separation-10",
+      "level": 5,
+      "status": "PASS",
+      "independentAnswer": "Die Redaktion meldet, dass sie den Artikel veröffentlichen wird. | Die Redaktion meldet, dass sie den Artikel veröffentlichen wird",
+      "declaredAnswer": "Die Redaktion meldet, dass sie den Artikel veröffentlichen wird. | Die Redaktion meldet, dass sie den Artikel veröffentlichen wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Redaktion meldet, dass sie den Artikel veröffentlichen wird."
+    },
+    {
+      "id": "de-futur-eins-written-final-story",
+      "level": 6,
+      "status": "PASS",
+      "independentAnswer": "veranstalten wird | erhalten werden | verbinden wird | begrüßen werden | bleiben wird | stattfinden werden | anbieten werden | sein wird | spielen wird | weiter fördern wird",
+      "declaredAnswer": "veranstalten wird | erhalten werden | verbinden wird | begrüßen werden | bleiben wird | stattfinden werden | anbieten werden | sein wird | spielen wird | weiter fördern wird",
+      "rule": "Infinitivo léxico seguido de la forma concordada de „werden“ en subordinada; V2 y pinza verbal en principal.",
+      "evidence": "Die Stadt kündigt an, dass sie im kommenden Mai ein großes Kulturwochenende veranstalten wird. Der Bürgermeister verspricht, dass alle Stadtteile eigene Bühnen erhalten werden. Die Verkehrsplanung sieht vor, dass ein neues Shuttle die Veranstaltungsorte miteinander verbinden wird. Die Organisatoren erklären, dass Freiwillige die Besucher am Bahnhof begrüßen werden. Der Wetterdienst prognostiziert, dass es wahrscheinlich mild bleiben wird. Für Regen versichert das Team, dass die Konzerte in Hallen stattfinden werden. Mehrere Restaurants kündigen an, dass sie regionale Gerichte anbieten werden. Die Bibliotheksleitung kündigt an, dass das Haus bis Mitternacht geöffnet sein wird. Das Programm bestätigt, dass ein Orchester am Sonntagabend das Abschlusskonzert spielen wird. Die Stadt verspricht außerdem, dass sie die besten Projekte im folgenden Jahr weiter fördern wird."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "MORPHOLOGY-COMPLETE",
+      "detail": "Se reconstruyeron y verificaron los 51 retos, incluidos los contextos inequívocos de N4, la mezcla de N5 y todos los huecos de N6."
+    }
+  ],
+  "generatedAt": "2026-09-06T22:46:02.179951Z",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0"
+}

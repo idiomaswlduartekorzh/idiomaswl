@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict'
+import path from 'node:path'
 import test from 'node:test'
+import { fileURLToPath } from 'node:url'
 
 import { ENGLISH_TENSE_QUEST } from '../src/data/practica/english-tense-quest-config.ts'
 import { FRENCH_STRUCTURE_QUEST } from '../src/data/practica/french-structure-quest-config.ts'
@@ -9,6 +11,10 @@ import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structur
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest-config.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest-config.ts'
+import { levelOneConnector, levelOnePlacement, loadHarness } from '../scripts/lib/german-tense-harness-core.mjs'
+
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
+const germanHarness = loadHarness(repoRoot)
 
 const CONFIGS = [
   ITALIAN_TENSE_QUEST,
@@ -344,6 +350,27 @@ test('German compound level 1 distractors stay inside the selected construction'
       assert.ok(item.options.every((option) => ending.test(option)), item.id)
       assert.equal(new Set(item.options.map((option) => option.replace(ending, '').trim())).size, 1, item.id)
     }
+  }
+})
+
+test('German compound level 1 varies target-clause connectors and placement in the runtime', () => {
+  for (const [formId, spec] of Object.entries(germanHarness.forms)) {
+    const contract = spec.levelOneClauseContract
+    if (!contract) continue
+
+    const choices = GERMAN_STRUCTURE_QUEST.choiceChallenges.filter((item) => item.tenses.includes(formId))
+    const connectors = choices.map((item) => levelOneConnector(item.context))
+    const counts = new Map()
+    for (const connector of connectors) counts.set(connector, (counts.get(connector) ?? 0) + 1)
+    const placements = choices.map((item) => levelOnePlacement(item.context))
+
+    assert.equal(choices.length, 10, `${formId}/choice`)
+    assert.ok(connectors.every((connector) => contract.allowedConnectors.includes(connector)), `${formId}/connectors`)
+    assert.ok(counts.size >= contract.minimumDistinctConnectors, `${formId}/distinct-connectors`)
+    assert.ok([...counts.values()].every((count) => count <= contract.maximumUsesPerConnector), `${formId}/connector-frequency`)
+    assert.ok(choices.filter((item) => /\?\s*$/u.test(item.context)).length >= contract.minimumInterrogativeContexts, `${formId}/questions`)
+    assert.ok(placements.filter((placement) => placement === 'matrix-ob').length >= contract.minimumMatrixObQuestions, `${formId}/matrix-ob`)
+    assert.ok(placements.filter((placement) => placement === 'preposed').length >= contract.minimumPreposedTargetClauses, `${formId}/preposed`)
   }
 })
 

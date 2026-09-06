@@ -1,0 +1,2873 @@
+{
+  "schemaVersion": 1,
+  "formId": "plusquamperfekt",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "d76c25e6c53f4bc59c75a7907ad0634cfd65250b8283d9c86b191592291f7164",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "5c0ae26a4fda234882b9e42f9cb9037dfef9f203ff282caaa5946e457eae97c6",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "baselineContentFingerprint": "09f99f7e3b314f8ed22b43ab1052c6c9dcbec598b4ae09fdc5efbabfe8711789",
+  "candidate": {
+    "formId": "plusquamperfekt",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-plusquamperfekt-choice-editorial-1",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „ich“ mit machen.",
+          "context": "Beim Gespräch erklärte ich, dass ich die Arbeit schon ___.",
+          "options": [
+            "gemacht hattest",
+            "gemacht hattet",
+            "gemacht hatte",
+            "gemacht hatten"
+          ],
+          "answer": "gemacht hatte",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-2",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „du“ mit kaufen.",
+          "context": "Du hattest Brot, weil du es am Morgen ___.",
+          "options": [
+            "gekauft hatte",
+            "gekauft hattet",
+            "gekauft hatten",
+            "gekauft hattest"
+          ],
+          "answer": "gekauft hattest",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-3",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „Lena“ mit lernen.",
+          "context": "Lena verstand die Aufgabe, obwohl sie nur kurz ___.",
+          "options": [
+            "gelernt hatte",
+            "gelernt hattest",
+            "gelernt hattet",
+            "gelernt hatten"
+          ],
+          "answer": "gelernt hatte",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-4",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „wir“ mit kochen.",
+          "context": "Kannst du bestätigen, ob wir schon ___, bevor die Gäste ankamen?",
+          "options": [
+            "gekocht hatte",
+            "gekocht hatten",
+            "gekocht hattest",
+            "gekocht hattet"
+          ],
+          "answer": "gekocht hatten",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-5",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „ihr“ mit spielen.",
+          "context": "Nachdem ihr lange Fußball ___, wart ihr müde.",
+          "options": [
+            "gespielt hatte",
+            "gespielt hattest",
+            "gespielt hattet",
+            "gespielt hatten"
+          ],
+          "answer": "gespielt hattet",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-6",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „die Kinder“ mit schlafen.",
+          "context": "Bevor die Kinder genug ___, weckte der Lärm sie.",
+          "options": [
+            "geschlafen hatte",
+            "geschlafen hattest",
+            "geschlafen hattet",
+            "geschlafen hatten"
+          ],
+          "answer": "geschlafen hatten",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-7",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „ich“ mit gehen.",
+          "context": "Die Nachbarin sagte, dass ich vor dem Alarm schon ___.",
+          "options": [
+            "gegangen war",
+            "gegangen warst",
+            "gegangen wart",
+            "gegangen waren"
+          ],
+          "answer": "gegangen war",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-8",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „du“ mit kommen.",
+          "context": "Weißt du, ob du vor dem Beginn ___?",
+          "options": [
+            "gekommen war",
+            "gekommen warst",
+            "gekommen wart",
+            "gekommen waren"
+          ],
+          "answer": "gekommen warst",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-9",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „Paul“ mit fahren.",
+          "context": "Paul kannte den Weg zum See, weil er schon einmal dorthin ___.",
+          "options": [
+            "gefahren warst",
+            "gefahren wart",
+            "gefahren war",
+            "gefahren waren"
+          ],
+          "answer": "gefahren war",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        },
+        {
+          "id": "de-plusquamperfekt-choice-editorial-10",
+          "tenses": [
+            "plusquamperfekt"
+          ],
+          "focus": "Plusquamperfekt",
+          "prompt": "Wähle die passende Form für „wir“ mit bleiben.",
+          "context": "Obwohl wir lange dort ___, kannten wir kaum jemanden.",
+          "options": [
+            "geblieben war",
+            "geblieben warst",
+            "geblieben wart",
+            "geblieben waren"
+          ],
+          "answer": "geblieben waren",
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-plusquamperfekt-micro-editorial-1",
+          "title": "Vor den Gästen",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „essen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Als die Gäste kamen, merkten sie, dass wir schon ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-1-gap",
+              "tense": "plusquamperfekt",
+              "verb": "essen",
+              "answers": [
+                "gegessen hatten"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-2",
+          "title": "Vor der Suche",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „gehen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Sie fand Paul nicht, weil er bereits ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-2-gap",
+              "tense": "plusquamperfekt",
+              "verb": "gehen",
+              "answers": [
+                "gegangen war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-3",
+          "title": "Der vergessene Schlüssel",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „vergessen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ich musste umkehren, weil ich den Schlüssel ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-3-gap",
+              "tense": "plusquamperfekt",
+              "verb": "vergessen",
+              "answers": [
+                "vergessen hatte"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-4",
+          "title": "Vor der Sitzung",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „verteilen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Als die Sitzung begann, sahen alle, dass die Assistentin die Unterlagen ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-4-gap",
+              "tense": "plusquamperfekt",
+              "verb": "verteilen",
+              "answers": [
+                "verteilt hatte"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-5",
+          "title": "Die leere Wohnung",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „ausziehen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Als wir ankamen, stellten wir fest, dass die Mieter schon ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-5-gap",
+              "tense": "plusquamperfekt",
+              "verb": "ausziehen",
+              "answers": [
+                "ausgezogen waren"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-6",
+          "title": "Der gelöschte Entwurf",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „löschen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Nora konnte die Datei nicht öffnen, weil ihr Kollege sie versehentlich ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-6-gap",
+              "tense": "plusquamperfekt",
+              "verb": "löschen",
+              "answers": [
+                "gelöscht hatte"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-7",
+          "title": "Vor dem Gewitter",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „sichern“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Als der Sturm begann, sah man, dass die Fischer ihre Boote ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-7-gap",
+              "tense": "plusquamperfekt",
+              "verb": "sichern",
+              "answers": [
+                "gesichert hatten"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-8",
+          "title": "Die verpasste Ausfahrt",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „lesen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wir kehrten um, nachdem wir das falsche Schild ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-8-gap",
+              "tense": "plusquamperfekt",
+              "verb": "lesen",
+              "answers": [
+                "gelesen hatten"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-9",
+          "title": "Vor dem Interview",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „ankommen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Als das Interview begann, erfuhren wir, dass die Reporterin gerade ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-9-gap",
+              "tense": "plusquamperfekt",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-micro-editorial-10",
+          "title": "Die bekannte Melodie",
+          "focus": "Plusquamperfekt",
+          "instruction": "Konjugiere „hören“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Paul erkannte das Stück, weil er es als Kind oft ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-micro-editorial-10-gap",
+              "tense": "plusquamperfekt",
+              "verb": "hören",
+              "answers": [
+                "gehört hatte"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-plusquamperfekt-long-editorial-1",
+          "title": "Vor der Ausstellung",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als sich die Türen öffneten, sah man, dass das Team die Bilder schon ",
+            "; die Techniker erklärten, dass sie die Lampen ",
+            "; und die Kuratorin sagte, dass sie kurz zuvor ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-1-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "hängen",
+              "answers": [
+                "gehängt hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-1-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "prüfen",
+              "answers": [
+                "geprüft hatten"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-1-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-2",
+          "title": "Der verpasste Zug",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als Mara den Bahnsteig erreichte, merkte sie, dass der Zug ",
+            "; ein Mitarbeiter sagte, dass er das Tor ",
+            "; und die Anzeige zeigte, dass sie den nächsten Zug bereits ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-2-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "abfahren",
+              "answers": [
+                "abgefahren war"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-2-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "schließen",
+              "answers": [
+                "geschlossen hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-2-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "anzeigen",
+              "answers": [
+                "angezeigt hatte"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-3",
+          "title": "Vor dem Stromausfall",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Bevor das Licht ausging, bestätigte Nina, dass sie die Datei ",
+            "; ihr Kollege sagte, dass er eine Kopie ",
+            "; und das Protokoll zeigte, dass der Server in den Ruhemodus ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-3-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "speichern",
+              "answers": [
+                "gespeichert hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-3-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "erstellen",
+              "answers": [
+                "erstellt hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-3-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "wechseln",
+              "answers": [
+                "gewechselt war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-4",
+          "title": "Die verspätete Lieferung",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als der Kunde anrief, zeigte das System, dass das Lager das Paket ",
+            "; der Fahrer sagte, dass er die Adresse ",
+            "; aber später wurde klar, dass er zur falschen Straße ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-4-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "verpacken",
+              "answers": [
+                "verpackt hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-4-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "notieren",
+              "answers": [
+                "notiert hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-4-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "fahren",
+              "answers": [
+                "gefahren war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-5",
+          "title": "Vor dem Konzert",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als das Publikum eintrat, hörte es, dass die Musiker ihre Instrumente ",
+            "; der Dirigent erklärte, dass er den Ablauf ",
+            "; und alle sahen, dass die Solistin schon auf die Bühne ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-5-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "stimmen",
+              "answers": [
+                "gestimmt hatten"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-5-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "ändern",
+              "answers": [
+                "geändert hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-5-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "gehen",
+              "answers": [
+                "gegangen war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-6",
+          "title": "Der leere Kühlschrank",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als wir kochen wollten, merkten wir, dass jemand die Milch ",
+            "; die Kinder gaben zu, dass sie das Gemüse ",
+            "; und wir erfuhren, dass unser Gast noch nicht ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-6-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "trinken",
+              "answers": [
+                "getrunken hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-6-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "verwenden",
+              "answers": [
+                "verwendet hatten"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-6-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "ankommen",
+              "answers": [
+                "angekommen war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-7",
+          "title": "Vor der Kontrolle",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als die Prüfer kamen, zeigte sich, dass die Firma alle Belege ",
+            "; die Buchhalterin bestätigte, dass sie die Summen ",
+            "; und der Leiter sagte, dass er früh ins Büro ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-7-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "sortieren",
+              "answers": [
+                "sortiert hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-7-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "vergleichen",
+              "answers": [
+                "verglichen hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-7-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "kommen",
+              "answers": [
+                "gekommen war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-8",
+          "title": "Die geschlossene Hütte",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als die Wanderer eintrafen, merkten sie, dass der Wirt die Tür ",
+            "; ein Foto zeigte, dass er ein Schild ",
+            "; und ein Nachbar sagte, dass seine Familie ins Tal ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-8-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "abschließen",
+              "answers": [
+                "abgeschlossen hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-8-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "aufhängen",
+              "answers": [
+                "aufgehängt hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-8-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "fahren",
+              "answers": [
+                "gefahren war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-9",
+          "title": "Vor dem Alarm",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als der Alarm ertönte, sagte der Wachmann, dass er Rauch ",
+            "; das System zeigte, dass eine Kamera Bewegung ",
+            "; und später wurde klar, dass zwei Besucher schon ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-9-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "riechen",
+              "answers": [
+                "gerochen hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-9-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "registrieren",
+              "answers": [
+                "registriert hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-9-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "hinauslaufen",
+              "answers": [
+                "hinausgelaufen waren"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-plusquamperfekt-long-editorial-10",
+          "title": "Die alte Bekanntschaft",
+          "focus": "Plusquamperfekt",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Als sie sich wiedertrafen, gab Lea zu, dass sie den Namen ",
+            "; Amir erzählte, dass er die Stadt ",
+            "; und beide erfuhren, dass ihre Lehrerin längst in Rente ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-long-editorial-10-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "vergessen",
+              "answers": [
+                "vergessen hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-10-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "verlassen",
+              "answers": [
+                "verlassen hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-long-editorial-10-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "gehen",
+              "answers": [
+                "gegangen war"
+              ]
+            }
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-plusquamperfekt-independent-error-1",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 1",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Bevor die Sitzung begann, ",
+              "form": "hatte",
+              "id": "de-plusquamperfekt-independent-error-1-token-1"
+            },
+            {
+              "before": " Eva alle Unterlagen kopiert. Die Straße war nass, weil es nachts stark ",
+              "form": "geregnet hatte",
+              "id": "de-plusquamperfekt-independent-error-1-token-2"
+            },
+            {
+              "before": ". Vor der Kontrolle ",
+              "form": "hatten",
+              "id": "de-plusquamperfekt-independent-error-1-token-3"
+            },
+            {
+              "before": " die Fachleute den Sensor kalibriert. Niemand war hungrig, weil alle schon ",
+              "form": "gegessen hatten",
+              "id": "de-plusquamperfekt-independent-error-1-token-4"
+            },
+            {
+              "before": ". Bevor der Schnee kam, ",
+              "form": "sind",
+              "id": "de-plusquamperfekt-independent-error-1-token-5"
+            }
+          ],
+          "after": " die Tiere ins Tal gezogen.",
+          "wrongId": "de-plusquamperfekt-independent-error-1-token-5",
+          "answers": [
+            "waren"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-2",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 2",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Als wir den Bahnsteig erreichten, ",
+              "form": "ist",
+              "id": "de-plusquamperfekt-independent-error-2-token-1"
+            },
+            {
+              "before": " der Zug schon abgefahren. Jonas kannte den Weg, weil er die Strecke vorher ",
+              "form": "gefahren war",
+              "id": "de-plusquamperfekt-independent-error-2-token-2"
+            },
+            {
+              "before": ". Als der Gast anrief, ",
+              "form": "hatte",
+              "id": "de-plusquamperfekt-independent-error-2-token-3"
+            },
+            {
+              "before": " das Hotel das Zimmer bereits vergeben. Die Tür stand offen, obwohl ich sie zuvor ",
+              "form": "geschlossen hatte",
+              "id": "de-plusquamperfekt-independent-error-2-token-4"
+            },
+            {
+              "before": ". Sie konnte zahlen, weil sie vorher Geld ",
+              "form": "abgehoben hatte",
+              "id": "de-plusquamperfekt-independent-error-2-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-plusquamperfekt-independent-error-2-token-1",
+          "answers": [
+            "war"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-3",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 3",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Straße war nass, weil es nachts stark ",
+              "form": "geregnet hatte",
+              "id": "de-plusquamperfekt-independent-error-3-token-1"
+            },
+            {
+              "before": ". Vor der Kontrolle ",
+              "form": "haben",
+              "id": "de-plusquamperfekt-independent-error-3-token-2"
+            },
+            {
+              "before": " die Fachleute den Sensor kalibriert. Niemand war hungrig, weil alle schon ",
+              "form": "gegessen hatten",
+              "id": "de-plusquamperfekt-independent-error-3-token-3"
+            },
+            {
+              "before": ". Bevor der Schnee kam, ",
+              "form": "waren",
+              "id": "de-plusquamperfekt-independent-error-3-token-4"
+            },
+            {
+              "before": " die Tiere ins Tal gezogen. Bevor die Sitzung begann, ",
+              "form": "hatte",
+              "id": "de-plusquamperfekt-independent-error-3-token-5"
+            }
+          ],
+          "after": " Eva alle Unterlagen kopiert.",
+          "wrongId": "de-plusquamperfekt-independent-error-3-token-2",
+          "answers": [
+            "hatten"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-4",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 4",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Jonas kannte den Weg, weil er die Strecke vorher ",
+              "form": "gefahren war",
+              "id": "de-plusquamperfekt-independent-error-4-token-1"
+            },
+            {
+              "before": ". Als der Gast anrief, ",
+              "form": "hatte",
+              "id": "de-plusquamperfekt-independent-error-4-token-2"
+            },
+            {
+              "before": " das Hotel das Zimmer bereits vergeben. Die Tür stand offen, obwohl ich sie zuvor ",
+              "form": "geschlossen habe",
+              "id": "de-plusquamperfekt-independent-error-4-token-3"
+            },
+            {
+              "before": ". Sie konnte zahlen, weil sie vorher Geld ",
+              "form": "abgehoben hatte",
+              "id": "de-plusquamperfekt-independent-error-4-token-4"
+            },
+            {
+              "before": ". Als wir den Bahnsteig erreichten, ",
+              "form": "war",
+              "id": "de-plusquamperfekt-independent-error-4-token-5"
+            }
+          ],
+          "after": " der Zug schon abgefahren.",
+          "wrongId": "de-plusquamperfekt-independent-error-4-token-3",
+          "answers": [
+            "geschlossen hatte"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-5",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 5",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Vor der Kontrolle ",
+              "form": "hatten",
+              "id": "de-plusquamperfekt-independent-error-5-token-1"
+            },
+            {
+              "before": " die Fachleute den Sensor kalibriert. Niemand war hungrig, weil alle schon ",
+              "form": "gegessen hatten",
+              "id": "de-plusquamperfekt-independent-error-5-token-2"
+            },
+            {
+              "before": ". Bevor der Schnee kam, ",
+              "form": "waren",
+              "id": "de-plusquamperfekt-independent-error-5-token-3"
+            },
+            {
+              "before": " die Tiere ins Tal gezogen. Bevor die Sitzung begann, ",
+              "form": "hat",
+              "id": "de-plusquamperfekt-independent-error-5-token-4"
+            },
+            {
+              "before": " Eva alle Unterlagen kopiert. Die Straße war nass, weil es nachts stark ",
+              "form": "geregnet hatte",
+              "id": "de-plusquamperfekt-independent-error-5-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-plusquamperfekt-independent-error-5-token-4",
+          "answers": [
+            "hatte"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-6",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 6",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Als der Gast anrief, ",
+              "form": "hatte",
+              "id": "de-plusquamperfekt-independent-error-6-token-1"
+            },
+            {
+              "before": " das Hotel das Zimmer bereits vergeben. Die Tür stand offen, obwohl ich sie zuvor ",
+              "form": "geschlossen hatte",
+              "id": "de-plusquamperfekt-independent-error-6-token-2"
+            },
+            {
+              "before": ". Sie konnte zahlen, weil sie vorher Geld ",
+              "form": "abgehoben hatte",
+              "id": "de-plusquamperfekt-independent-error-6-token-3"
+            },
+            {
+              "before": ". Als wir den Bahnsteig erreichten, ",
+              "form": "war",
+              "id": "de-plusquamperfekt-independent-error-6-token-4"
+            },
+            {
+              "before": " der Zug schon abgefahren. Jonas kannte den Weg, weil er die Strecke vorher ",
+              "form": "gefahren ist",
+              "id": "de-plusquamperfekt-independent-error-6-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-plusquamperfekt-independent-error-6-token-5",
+          "answers": [
+            "gefahren war"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-7",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 7",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Niemand war hungrig, weil alle schon ",
+              "form": "gegessen haben",
+              "id": "de-plusquamperfekt-independent-error-7-token-1"
+            },
+            {
+              "before": ". Bevor der Schnee kam, ",
+              "form": "waren",
+              "id": "de-plusquamperfekt-independent-error-7-token-2"
+            },
+            {
+              "before": " die Tiere ins Tal gezogen. Bevor die Sitzung begann, ",
+              "form": "hatte",
+              "id": "de-plusquamperfekt-independent-error-7-token-3"
+            },
+            {
+              "before": " Eva alle Unterlagen kopiert. Die Straße war nass, weil es nachts stark ",
+              "form": "geregnet hatte",
+              "id": "de-plusquamperfekt-independent-error-7-token-4"
+            },
+            {
+              "before": ". Vor der Kontrolle ",
+              "form": "hatten",
+              "id": "de-plusquamperfekt-independent-error-7-token-5"
+            }
+          ],
+          "after": " die Fachleute den Sensor kalibriert.",
+          "wrongId": "de-plusquamperfekt-independent-error-7-token-1",
+          "answers": [
+            "gegessen hatten"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-8",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 8",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Tür stand offen, obwohl ich sie zuvor ",
+              "form": "geschlossen hatte",
+              "id": "de-plusquamperfekt-independent-error-8-token-1"
+            },
+            {
+              "before": ". Sie konnte zahlen, weil sie vorher Geld ",
+              "form": "abgehoben hat",
+              "id": "de-plusquamperfekt-independent-error-8-token-2"
+            },
+            {
+              "before": ". Als wir den Bahnsteig erreichten, ",
+              "form": "war",
+              "id": "de-plusquamperfekt-independent-error-8-token-3"
+            },
+            {
+              "before": " der Zug schon abgefahren. Jonas kannte den Weg, weil er die Strecke vorher ",
+              "form": "gefahren war",
+              "id": "de-plusquamperfekt-independent-error-8-token-4"
+            },
+            {
+              "before": ". Als der Gast anrief, ",
+              "form": "hatte",
+              "id": "de-plusquamperfekt-independent-error-8-token-5"
+            }
+          ],
+          "after": " das Hotel das Zimmer bereits vergeben.",
+          "wrongId": "de-plusquamperfekt-independent-error-8-token-2",
+          "answers": [
+            "abgehoben hatte"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-9",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 9",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Bevor der Schnee kam, ",
+              "form": "waren",
+              "id": "de-plusquamperfekt-independent-error-9-token-1"
+            },
+            {
+              "before": " die Tiere ins Tal gezogen. Bevor die Sitzung begann, ",
+              "form": "hatte",
+              "id": "de-plusquamperfekt-independent-error-9-token-2"
+            },
+            {
+              "before": " Eva alle Unterlagen kopiert. Die Straße war nass, weil es nachts stark ",
+              "form": "geregnet hat",
+              "id": "de-plusquamperfekt-independent-error-9-token-3"
+            },
+            {
+              "before": ". Vor der Kontrolle ",
+              "form": "hatten",
+              "id": "de-plusquamperfekt-independent-error-9-token-4"
+            },
+            {
+              "before": " die Fachleute den Sensor kalibriert. Niemand war hungrig, weil alle schon ",
+              "form": "gegessen hatten",
+              "id": "de-plusquamperfekt-independent-error-9-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-plusquamperfekt-independent-error-9-token-3",
+          "answers": [
+            "geregnet hatte"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-plusquamperfekt-independent-error-10",
+          "tense": "plusquamperfekt",
+          "title": "Korrekturrunde · 10",
+          "focus": "Plusquamperfekt",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Sie konnte zahlen, weil sie vorher Geld ",
+              "form": "abgehoben hatte",
+              "id": "de-plusquamperfekt-independent-error-10-token-1"
+            },
+            {
+              "before": ". Als wir den Bahnsteig erreichten, ",
+              "form": "war",
+              "id": "de-plusquamperfekt-independent-error-10-token-2"
+            },
+            {
+              "before": " der Zug schon abgefahren. Jonas kannte den Weg, weil er die Strecke vorher ",
+              "form": "gefahren war",
+              "id": "de-plusquamperfekt-independent-error-10-token-3"
+            },
+            {
+              "before": ". Als der Gast anrief, ",
+              "form": "hat",
+              "id": "de-plusquamperfekt-independent-error-10-token-4"
+            },
+            {
+              "before": " das Hotel das Zimmer bereits vergeben. Die Tür stand offen, obwohl ich sie zuvor ",
+              "form": "geschlossen hatte",
+              "id": "de-plusquamperfekt-independent-error-10-token-5"
+            }
+          ],
+          "after": ".",
+          "wrongId": "de-plusquamperfekt-independent-error-10-token-4",
+          "answers": [
+            "hatte"
+          ],
+          "explanation": "Das Plusquamperfekt markiert mit „hatte/war + Partizip II“ einen abgeschlossenen Vorgang vor einem ausdrücklich genannten zweiten Vergangenheitsmoment. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-plusquamperfekt-separation-1",
+          "tense": "plusquamperfekt",
+          "title": "verlassen · 1",
+          "focus": "plusquamperfekt",
+          "verb": "verlassen",
+          "separation": "inseparable",
+          "prompt": "Die Straße war leer, weil alle das Fest ___.",
+          "answers": [
+            "Die Straße war leer, weil alle das Fest verlassen hatten.",
+            "Die Straße war leer, weil alle das Fest verlassen hatten"
+          ],
+          "explanation": "„verlassen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-2",
+          "tense": "plusquamperfekt",
+          "title": "vorbereiten · 2",
+          "focus": "plusquamperfekt",
+          "verb": "vorbereiten",
+          "separation": "separable",
+          "prompt": "Als die Sitzung begann, hatten wir alles ___.",
+          "answers": [
+            "Als die Sitzung begann, hatten wir alles vorbereitet.",
+            "Als die Sitzung begann, hatten wir alles vorbereitet"
+          ],
+          "explanation": "„vorbereiten“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-3",
+          "tense": "plusquamperfekt",
+          "title": "erreichen · 3",
+          "focus": "plusquamperfekt",
+          "verb": "erreichen",
+          "separation": "inseparable",
+          "prompt": "Als es dunkel wurde, hatten die Wanderer die Hütte ___.",
+          "answers": [
+            "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht.",
+            "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht"
+          ],
+          "explanation": "„erreichen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-4",
+          "tense": "plusquamperfekt",
+          "title": "wegfahren · 4",
+          "focus": "plusquamperfekt",
+          "verb": "wegfahren",
+          "separation": "separable",
+          "prompt": "Als ich ankam, war der Lieferwagen schon ___.",
+          "answers": [
+            "Als ich ankam, war der Lieferwagen schon weggefahren.",
+            "Als ich ankam, war der Lieferwagen schon weggefahren"
+          ],
+          "explanation": "„wegfahren“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-5",
+          "tense": "plusquamperfekt",
+          "title": "bestellen · 5",
+          "focus": "plusquamperfekt",
+          "verb": "bestellen",
+          "separation": "inseparable",
+          "prompt": "Das Material lag bereit, denn die Firma hatte es früh ___.",
+          "answers": [
+            "Das Material lag bereit, denn die Firma hatte es früh bestellt.",
+            "Das Material lag bereit, denn die Firma hatte es früh bestellt"
+          ],
+          "explanation": "„bestellen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-6",
+          "tense": "plusquamperfekt",
+          "title": "zurückrufen · 6",
+          "focus": "plusquamperfekt",
+          "verb": "zurückrufen",
+          "separation": "separable",
+          "prompt": "Paul war beruhigt, weil die Ärztin ihn ___.",
+          "answers": [
+            "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte.",
+            "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte"
+          ],
+          "explanation": "„zurückrufen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-7",
+          "tense": "plusquamperfekt",
+          "title": "abschließen · 7",
+          "focus": "plusquamperfekt",
+          "verb": "abschließen",
+          "separation": "separable",
+          "prompt": "Bevor die Gäste kamen, hatte Mara die Tür ___.",
+          "answers": [
+            "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen.",
+            "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen"
+          ],
+          "explanation": "„abschließen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-8",
+          "tense": "plusquamperfekt",
+          "title": "bezahlen · 8",
+          "focus": "plusquamperfekt",
+          "verb": "bezahlen",
+          "separation": "inseparable",
+          "prompt": "Wir gingen hinaus, nachdem wir die Rechnung ___.",
+          "answers": [
+            "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten.",
+            "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten"
+          ],
+          "explanation": "„bezahlen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-9",
+          "tense": "plusquamperfekt",
+          "title": "einsteigen · 9",
+          "focus": "plusquamperfekt",
+          "verb": "einsteigen",
+          "separation": "separable",
+          "prompt": "Der Bus fuhr los, nachdem alle ___.",
+          "answers": [
+            "Der Bus fuhr los, nachdem alle eingestiegen waren.",
+            "Der Bus fuhr los, nachdem alle eingestiegen waren"
+          ],
+          "explanation": "„einsteigen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-plusquamperfekt-separation-10",
+          "tense": "plusquamperfekt",
+          "title": "entdecken · 10",
+          "focus": "plusquamperfekt",
+          "verb": "entdecken",
+          "separation": "inseparable",
+          "prompt": "Der Techniker kannte die Ursache, weil er den Defekt ___.",
+          "answers": [
+            "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte.",
+            "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte"
+          ],
+          "explanation": "„entdecken“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-plusquamperfekt-written-final-story",
+          "title": "Warum die Ausstellung später öffnete",
+          "focus": "plusquamperfekt",
+          "instruction": "Lies die ganze Geschichte. Ergänze jede vollständige Verbgruppe im Plusquamperfekt; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Als die Museumsleiterin eintraf, stellte sie fest, dass der Nachtwächter bereits einen Wasserschaden ",
+            ". Eine erste Prüfung zeigte, dass eine Leitung hinter der Wand ",
+            " und dass Wasser in den kleinen Saal ",
+            ". Zum Glück erfuhr die Leiterin, dass eine Restauratorin die wertvollsten Bilder am Vorabend ",
+            ". Das Technikteam erklärte, dass es die Hauptleitung schon ",
+            ". Ein Mitarbeiter konnte die Gäste informieren, weil er ihre Adressen vorher ",
+            ". Die Feuerwehr kannte den Zugang, weil sie den Plan im Frühjahr ",
+            ". Nachdem Fachleute den Boden ",
+            ", begann die Reinigung. Später berichtete die Leiterin, dass sie vor der Pressekonferenz eine neue Öffnungszeit ",
+            " und alle Hinweise rechtzeitig ",
+            "."
+          ],
+          "gaps": [
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-1",
+              "tense": "plusquamperfekt",
+              "verb": "entdecken",
+              "answers": [
+                "entdeckt hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-2",
+              "tense": "plusquamperfekt",
+              "verb": "brechen",
+              "answers": [
+                "gebrochen war"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-3",
+              "tense": "plusquamperfekt",
+              "verb": "laufen",
+              "answers": [
+                "gelaufen war"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-4",
+              "tense": "plusquamperfekt",
+              "verb": "auslagern",
+              "answers": [
+                "ausgelagert hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-5",
+              "tense": "plusquamperfekt",
+              "verb": "schließen",
+              "answers": [
+                "geschlossen hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-6",
+              "tense": "plusquamperfekt",
+              "verb": "notieren",
+              "answers": [
+                "notiert hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-7",
+              "tense": "plusquamperfekt",
+              "verb": "prüfen",
+              "answers": [
+                "geprüft hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-8",
+              "tense": "plusquamperfekt",
+              "verb": "untersuchen",
+              "answers": [
+                "untersucht hatten"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-9",
+              "tense": "plusquamperfekt",
+              "verb": "festlegen",
+              "answers": [
+                "festgelegt hatte"
+              ]
+            },
+            {
+              "id": "de-plusquamperfekt-written-final-story-gap-10",
+              "tense": "plusquamperfekt",
+              "verb": "aktualisieren",
+              "answers": [
+                "aktualisiert hatte"
+              ]
+            }
+          ],
+          "explanation": "Jede Lücke nennt ein Geschehen, das vor einem zweiten vergangenen Zeitpunkt abgeschlossen war. Das Plusquamperfekt übernimmt „haben“ oder „sein“ aus dem Perfekt des jeweiligen Verbs."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-1",
+        "level": 1,
+        "lemma": "machen",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-1",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-dass",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "gemacht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gemacht hatte",
+        "accepted": [
+          "gemacht hatte"
+        ],
+        "distractorRationale": [
+          "„gemacht hattest“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gemacht hattet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gemacht hatten“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "0e3bfa0bc74e032bdbb254679e65f3989f618a7dcafe7ff2fe7ab93512fe6373"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-2",
+        "level": 1,
+        "lemma": "kaufen",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-2",
+        "targetForm": "plusquamperfekt",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-weil",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "gekauft",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekauft hattest",
+        "accepted": [
+          "gekauft hattest"
+        ],
+        "distractorRationale": [
+          "„gekauft hatte“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekauft hattet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekauft hatten“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "94837326dc1023f6e6bc240942679d196fbfbba242d786af4b492b25c43595ff"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-3",
+        "level": 1,
+        "lemma": "lernen",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-3",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-obwohl",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelernt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelernt hatte",
+        "accepted": [
+          "gelernt hatte"
+        ],
+        "distractorRationale": [
+          "„gelernt hattest“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gelernt hattet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gelernt hatten“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "fbad55b16c7d291e853c677a2c6b7018a8ded4a6d74701c7df2a11f0df1cc8bd"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-4",
+        "level": 1,
+        "lemma": "kochen",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-4",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "question",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-ob",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "gekocht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekocht hatten",
+        "accepted": [
+          "gekocht hatten"
+        ],
+        "distractorRationale": [
+          "„gekocht hatte“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekocht hattest“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekocht hattet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "2741d62a23fc46de6fe63cf2982f9e9ebb9d92dcd700738f19af2a63c73d6987"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-5",
+        "level": 1,
+        "lemma": "spielen",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-5",
+        "targetForm": "plusquamperfekt",
+        "person": null,
+        "number": null,
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-nachdem",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "gespielt",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gespielt hattet",
+        "accepted": [
+          "gespielt hattet"
+        ],
+        "distractorRationale": [
+          "„gespielt hatte“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gespielt hattest“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gespielt hatten“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "e4c2e0485d727735fa1dd753a9a545e4e79879eba0f8da1d4717bbdb7aab9874"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-6",
+        "level": 1,
+        "lemma": "schlafen",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-6",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-bevor",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "geschlafen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschlafen hatten",
+        "accepted": [
+          "geschlafen hatten"
+        ],
+        "distractorRationale": [
+          "„geschlafen hatte“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„geschlafen hattest“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„geschlafen hattet“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "f339aac9683b7c90a899017e6640d30bf20c99005a1f0e456cd0559c6da4f661"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-7",
+        "level": 1,
+        "lemma": "gehen",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-7",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-dass",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "gegangen war",
+        "accepted": [
+          "gegangen war"
+        ],
+        "distractorRationale": [
+          "„gegangen warst“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gegangen wart“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gegangen waren“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "40eab57dd2d5af6ca37c246592a221416b13ffef95bd547f9af2c7bbe245b758"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-8",
+        "level": 1,
+        "lemma": "kommen",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-8",
+        "targetForm": "plusquamperfekt",
+        "person": "second",
+        "number": "singular",
+        "clauseType": "question",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-ob",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "gekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gekommen warst",
+        "accepted": [
+          "gekommen warst"
+        ],
+        "distractorRationale": [
+          "„gekommen war“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekommen wart“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gekommen waren“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "5b6b301177387cdec421539ee4213d9ee54049fa8707ae2e75177dd7bc02b05b"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-9",
+        "level": 1,
+        "lemma": "fahren",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-9",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-weil",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefahren war",
+        "accepted": [
+          "gefahren war"
+        ],
+        "distractorRationale": [
+          "„gefahren warst“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gefahren wart“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„gefahren waren“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "c46ed5a223158194c5247edd4e95413d1a99657a487c137d208b8107ba356794"
+      },
+      {
+        "itemId": "de-plusquamperfekt-choice-editorial-10",
+        "level": 1,
+        "lemma": "bleiben",
+        "senseId": "plusquamperfekt:plusquamperfekt-choice-editorial-10",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "connector-obwohl",
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "geblieben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geblieben waren",
+        "accepted": [
+          "geblieben waren"
+        ],
+        "distractorRationale": [
+          "„geblieben war“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„geblieben warst“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs.",
+          "„geblieben wart“ verwendet eine unpassende Personen- oder Numerusform des Hilfsverbs."
+        ],
+        "runtimeFingerprint": "94fccaabe20eed2a70fdc21ca3001e1acdcc62519f163498487efa18a40792c8"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-1",
+        "level": 2,
+        "lemma": "essen",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-1",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "haben",
+        "participle": "gegessen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gegessen hatten",
+        "accepted": [
+          "gegessen hatten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "49967c0cf4d66c30de94b75454b489d3d3e8af5e8dce3a3ea2dd861f25f0ede0"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-2",
+        "level": 2,
+        "lemma": "gehen",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-2",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "gegangen war",
+        "accepted": [
+          "gegangen war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "bc70eaaf4408641048ee33cf75276cc1f1151a64279b2be17a0792f2328a9fdd"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-3",
+        "level": 2,
+        "lemma": "vergessen",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-3",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "vergessen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "vergessen hatte",
+        "accepted": [
+          "vergessen hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "9c135582916710b646e1b16a725e375f78661c8212967268e09b425ad0fd30ea"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-4",
+        "level": 2,
+        "lemma": "verteilen",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-4",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "haben",
+        "participle": "verteilt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "verteilt hatte",
+        "accepted": [
+          "verteilt hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "6aac5ccd0ec707c3216c5979afbfeee141851aff97cde860daa538494ea4d032"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-5",
+        "level": 2,
+        "lemma": "ausziehen",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-5",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "ausgezogen",
+        "separation": "separable",
+        "prefix": "aus",
+        "expectedUnit": "ausgezogen waren",
+        "accepted": [
+          "ausgezogen waren"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "203722a85c00162af8d318816a05efc9119f91b54c60bb7a6554d5ab61f58ef3"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-6",
+        "level": 2,
+        "lemma": "löschen",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-6",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelöscht",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelöscht hatte",
+        "accepted": [
+          "gelöscht hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "1199b957016beedb9ccb94ccd674079712920cbc7c42427923d458f882e5b435"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-7",
+        "level": 2,
+        "lemma": "sichern",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-7",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "haben",
+        "participle": "gesichert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gesichert hatten",
+        "accepted": [
+          "gesichert hatten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "1d2179dc9ebcb8efaa8698df983e5fb311f8d35199c56473c6438517cac69ccc"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-8",
+        "level": 2,
+        "lemma": "lesen",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-8",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "nachdem",
+          "als"
+        ],
+        "auxiliary": "haben",
+        "participle": "gelesen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gelesen hatten",
+        "accepted": [
+          "gelesen hatten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8bb8ec875a1b6e7079d83af26a40a01792ba373ae571a6d8a28b3ac9fe629581"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-9",
+        "level": 2,
+        "lemma": "ankommen",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-9",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "sein",
+        "participle": "angekommen",
+        "separation": "separable",
+        "prefix": "an",
+        "expectedUnit": "angekommen war",
+        "accepted": [
+          "angekommen war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "05ed80ab2a53d8100f08763d4aa70835a16d4683322cee06f45cbc09708c4465"
+      },
+      {
+        "itemId": "de-plusquamperfekt-micro-editorial-10",
+        "level": 2,
+        "lemma": "hören",
+        "senseId": "plusquamperfekt:plusquamperfekt-micro-editorial-10",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "haben",
+        "participle": "gehört",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gehört hatte",
+        "accepted": [
+          "gehört hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "bd7b817ad934f3f24835427e69e19066c3d3e20a8776c3a51b36dd1b6454f43a"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-1",
+        "level": 3,
+        "lemma": "hängen; prüfen; ankommen",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-1",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker",
+          "second-past-event:sich-oeffnen"
+        ],
+        "auxiliary": "sein",
+        "participle": "geprüft",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gehängt hatte | geprüft hatten | angekommen war",
+        "accepted": [
+          "gehängt hatte",
+          "geprüft hatten",
+          "angekommen war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "85bdcd805e406849ceb7a2a090738ed671357c5e6f89656757b6dbc3ef647ba6"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-2",
+        "level": 3,
+        "lemma": "abfahren; schließen; anzeigen",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-2",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "geschlossen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "abgefahren war | geschlossen hatte | angezeigt hatte",
+        "accepted": [
+          "abgefahren war",
+          "geschlossen hatte",
+          "angezeigt hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "4a8597865d8d164805af6562628933a791b9d262438db0ae8017c08ec60cc649"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-3",
+        "level": 3,
+        "lemma": "speichern; erstellen; wechseln",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-3",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "bevor"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gespeichert hatte | erstellt hatte | gewechselt war",
+        "accepted": [
+          "gespeichert hatte",
+          "erstellt hatte",
+          "gewechselt war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "64f88031ab4948311916042df4b2dce3646fe3b59d9e4c860b23d788e4cf301f"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-4",
+        "level": 3,
+        "lemma": "verpacken; notieren; fahren",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-4",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "sein",
+        "participle": "notiert; gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "verpackt hatte | notiert hatte | gefahren war",
+        "accepted": [
+          "verpackt hatte",
+          "notiert hatte",
+          "gefahren war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "0e809b0e304e791b45a5c32e54f3bff3fdd70993701ba51441c1f98446051734"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-5",
+        "level": 3,
+        "lemma": "stimmen; ändern; gehen",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-5",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "gegangen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gestimmt hatten | geändert hatte | gegangen war",
+        "accepted": [
+          "gestimmt hatten",
+          "geändert hatte",
+          "gegangen war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "5c993b34a918139d7660e56dca0f919f246048b2d9aa05a440e688b34d43d839"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-6",
+        "level": 3,
+        "lemma": "trinken; verwenden; ankommen",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-6",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "getrunken hatte | verwendet hatten | angekommen war",
+        "accepted": [
+          "getrunken hatte",
+          "verwendet hatten",
+          "angekommen war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "91cfce681ce6f8a910e5ec98ab61e52629a966df1024fd266f98a6be2faf5066"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-7",
+        "level": 3,
+        "lemma": "sortieren; vergleichen; kommen",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-7",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "sein",
+        "participle": "gekommen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "sortiert hatte | verglichen hatte | gekommen war",
+        "accepted": [
+          "sortiert hatte",
+          "verglichen hatte",
+          "gekommen war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "6f9cb7e7822252f01b0cde74719ba867ee5dff5840278e4ca42b51dcd4cc4652"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-8",
+        "level": 3,
+        "lemma": "abschließen; aufhängen; fahren",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-8",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "abgeschlossen hatte | aufgehängt hatte | gefahren war",
+        "accepted": [
+          "abgeschlossen hatte",
+          "aufgehängt hatte",
+          "gefahren war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "d647e7bf1171644dc24d37d8e4a073ba1155aae0cac930006fe54bc312e81a31"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-9",
+        "level": 3,
+        "lemma": "riechen; registrieren; hinauslaufen",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-9",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "gerochen; registriert; hinausgelaufen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gerochen hatte | registriert hatte | hinausgelaufen waren",
+        "accepted": [
+          "gerochen hatte",
+          "registriert hatte",
+          "hinausgelaufen waren"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "097ad3e0f3a3e3cc1e90c232cac73e38fb88e339dcf4157aef4a5568febf1f81"
+      },
+      {
+        "itemId": "de-plusquamperfekt-long-editorial-10",
+        "level": 3,
+        "lemma": "vergessen; verlassen; gehen",
+        "senseId": "plusquamperfekt:plusquamperfekt-long-editorial-10",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "sein",
+        "participle": "verlassen; gegangen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "vergessen hatte | verlassen hatte | gegangen war",
+        "accepted": [
+          "vergessen hatte",
+          "verlassen hatte",
+          "gegangen war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f4329700af7c70f4c8488cbe1156b0c1af2446054e61392114afbaa7fc32f009"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-1",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 1",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-1",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "bevor",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "waren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "waren",
+        "accepted": [
+          "waren"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "fef69f31b234e67329bda7e015b9b80502dc73eae2f891b6f4cff4bb01e81f7e"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-2",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 2",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-2",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "war",
+        "accepted": [
+          "war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "c18af1c03f9f0fba6534038443ddf30b1389dbf5a2666d953dba50df9cd1adc8"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-3",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 3",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-3",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "bevor",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "haben",
+        "participle": "hatten",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "hatten",
+        "accepted": [
+          "hatten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "11afc8591ea91801768d376fba68ad380b1701475dd3a4e683fa49372430bb30"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-4",
+        "level": 4,
+        "lemma": "schließen",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-4",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "haben",
+        "participle": "geschlossen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geschlossen hatte",
+        "accepted": [
+          "geschlossen hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "6dc0527591b020eece407e7bb7ab2c56b5256cb8d5749a4757f211ee375d5cdb"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-5",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 5",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-5",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "bevor",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "haben",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "hatte",
+        "accepted": [
+          "hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8ed249dd126c8405436839f9b1b2044b446cfcf3dc49c71df1eb9a4543f1b580"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-6",
+        "level": 4,
+        "lemma": "fahren",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-6",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "gefahren",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gefahren war",
+        "accepted": [
+          "gefahren war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "ff38964c008fb51254c6f8c522abaaf0855820cdd5e3dfba9d7e693b4b33c4c0"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-7",
+        "level": 4,
+        "lemma": "essen",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-7",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "bevor",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "haben",
+        "participle": "gegessen",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gegessen hatten",
+        "accepted": [
+          "gegessen hatten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "88d9eabc23eb4992930b4ce8ef1fc8e819eb162061d01a30f95b1afd80fc7160"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-8",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 8",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-8",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "haben",
+        "participle": "abgehoben",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "abgehoben hatte",
+        "accepted": [
+          "abgehoben hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "1464a629a2fdfbc902c0b2cf5405c2e89c416698b6cc64c76920804930f4a187"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-9",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 9",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-9",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "bevor",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "haben",
+        "participle": "geregnet",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "geregnet hatte",
+        "accepted": [
+          "geregnet hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "07bdad24c565c46983f9df7fa9252e14fb263e606a454d752d75bae9b65ec534"
+      },
+      {
+        "itemId": "de-plusquamperfekt-independent-error-10",
+        "level": 4,
+        "lemma": "Zielverb aus Korrekturrunde · 10",
+        "senseId": "plusquamperfekt:plusquamperfekt-independent-error-10",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "haben",
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "hatte",
+        "accepted": [
+          "hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "ae62061f83b81fb616c874afc1ea6e4d5d03d138f85a2a7d87dd1373b37ca44c"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-1",
+        "level": 5,
+        "lemma": "verlassen",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-1",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "verlassen",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Die Straße war leer, weil alle das Fest verlassen hatten. | Die Straße war leer, weil alle das Fest verlassen hatten",
+        "accepted": [
+          "Die Straße war leer, weil alle das Fest verlassen hatten.",
+          "Die Straße war leer, weil alle das Fest verlassen hatten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "a4f16172b9186506d2e9981dd2914fd73e7d8aedfcaa9f3410ca928003c9c73f"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-2",
+        "level": 5,
+        "lemma": "vorbereiten",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-2",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "haben",
+        "participle": "hatten",
+        "separation": "separable",
+        "prefix": "vor",
+        "expectedUnit": "Als die Sitzung begann, hatten wir alles vorbereitet. | Als die Sitzung begann, hatten wir alles vorbereitet",
+        "accepted": [
+          "Als die Sitzung begann, hatten wir alles vorbereitet.",
+          "Als die Sitzung begann, hatten wir alles vorbereitet"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "a2fd7ba154472eb4f46569e3eb53186d28c2891dfc43975a10e796d10652729b"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-3",
+        "level": 5,
+        "lemma": "erreichen",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-3",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als"
+        ],
+        "auxiliary": "haben",
+        "participle": "erreicht",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht. | Als es dunkel wurde, hatten die Wanderer die Hütte erreicht",
+        "accepted": [
+          "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht.",
+          "Als es dunkel wurde, hatten die Wanderer die Hütte erreicht"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "b72b34eececb2d523dd847ac356efe9f90ec58f19586a88bd553248e90e40962"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-4",
+        "level": 5,
+        "lemma": "wegfahren",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-4",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "Lieferwagen",
+        "separation": "separable",
+        "prefix": "weg",
+        "expectedUnit": "Als ich ankam, war der Lieferwagen schon weggefahren. | Als ich ankam, war der Lieferwagen schon weggefahren",
+        "accepted": [
+          "Als ich ankam, war der Lieferwagen schon weggefahren.",
+          "Als ich ankam, war der Lieferwagen schon weggefahren"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "fbd573afb5d8b3d9664f45258867769ef4e124881df3af64d1ce60207b7f74fd"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-5",
+        "level": 5,
+        "lemma": "bestellen",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-5",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "bestellt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Das Material lag bereit, denn die Firma hatte es früh bestellt. | Das Material lag bereit, denn die Firma hatte es früh bestellt",
+        "accepted": [
+          "Das Material lag bereit, denn die Firma hatte es früh bestellt.",
+          "Das Material lag bereit, denn die Firma hatte es früh bestellt"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "8faf58f5d93ee7ce35aac4e8033830c16100fefbed469c78ca638e1f995ea76d"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-6",
+        "level": 5,
+        "lemma": "zurückrufen",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-6",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "sein",
+        "participle": "beruhigt",
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte. | Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte",
+        "accepted": [
+          "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte.",
+          "Paul war beruhigt, weil die Ärztin ihn zurückgerufen hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "030f7b08b6007397f26759ce0033fd9e468c0700dfec8d8a1a4c8d0592648e91"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-7",
+        "level": 5,
+        "lemma": "abschließen",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-7",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "bevor"
+        ],
+        "auxiliary": "haben",
+        "participle": "kamen",
+        "separation": "separable",
+        "prefix": "ab",
+        "expectedUnit": "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen. | Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen",
+        "accepted": [
+          "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen.",
+          "Bevor die Gäste kamen, hatte Mara die Tür abgeschlossen"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "bb7c163e22d6b56bf37c5a8f67c4d2f563a420c8630e99d589b4c0d0a9087ee9"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-8",
+        "level": 5,
+        "lemma": "bezahlen",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-8",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "nachdem"
+        ],
+        "auxiliary": "haben",
+        "participle": "bezahlt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten. | Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten",
+        "accepted": [
+          "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten.",
+          "Wir gingen hinaus, nachdem wir die Rechnung bezahlt hatten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2cea8ffc091bf67631e541eb7c27141c3a0ef0c6b664b964cc46a7ea6eba7b79"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-9",
+        "level": 5,
+        "lemma": "einsteigen",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-9",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "plural",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "nachdem"
+        ],
+        "auxiliary": "sein",
+        "participle": "eingestiegen",
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "Der Bus fuhr los, nachdem alle eingestiegen waren. | Der Bus fuhr los, nachdem alle eingestiegen waren",
+        "accepted": [
+          "Der Bus fuhr los, nachdem alle eingestiegen waren.",
+          "Der Bus fuhr los, nachdem alle eingestiegen waren"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7753a614f40b77d9c31e7865405228ac4b33246bfa2027ea21074845c5517442"
+      },
+      {
+        "itemId": "de-plusquamperfekt-separation-10",
+        "level": 5,
+        "lemma": "entdecken",
+        "senseId": "plusquamperfekt:plusquamperfekt-separation-10",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed-first-third",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference"
+        ],
+        "auxiliary": "haben",
+        "participle": "entdeckt",
+        "separation": "inseparable",
+        "prefix": null,
+        "expectedUnit": "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte. | Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte",
+        "accepted": [
+          "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte.",
+          "Der Techniker kannte die Ursache, weil er den Defekt entdeckt hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7a663b7d80687dc882b14ae691ee87d1666b834945b26daec9d3810efea9abf6"
+      },
+      {
+        "itemId": "de-plusquamperfekt-written-final-story",
+        "level": 6,
+        "lemma": "entdecken; brechen; laufen; auslagern; schließen; notieren; prüfen; untersuchen; festlegen; aktualisieren",
+        "senseId": "plusquamperfekt:plusquamperfekt-written-final-story",
+        "targetForm": "plusquamperfekt",
+        "person": "mixed",
+        "number": "mixed",
+        "clauseType": "mixed",
+        "function": "abgeschlossenes Ereignis vor einem zweiten vergangenen Bezugspunkt",
+        "anchorIds": [
+          "earlier-than-past-reference",
+          "nachdem",
+          "als",
+          "explicit-priority-marker"
+        ],
+        "auxiliary": "sein",
+        "participle": "entdeckt; gebrochen; gelaufen; geschlossen; notiert; geprüft; untersucht; aktualisiert",
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "entdeckt hatte | gebrochen war | gelaufen war | ausgelagert hatte | geschlossen hatte | notiert hatte | geprüft hatte | untersucht hatten | festgelegt hatte | aktualisiert hatte",
+        "accepted": [
+          "entdeckt hatte",
+          "gebrochen war",
+          "gelaufen war",
+          "ausgelagert hatte",
+          "geschlossen hatte",
+          "notiert hatte",
+          "geprüft hatte",
+          "untersucht hatten",
+          "festgelegt hatte",
+          "aktualisiert hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "470185578d9068c036cb2586b998fdcf4b4e504cfe0de53a2e0c9d43cdf2ed55"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Bestimmung des Perfekthilfsverbs",
+        "url": "https://grammis.ids-mannheim.de/systematische-grammatik/1219",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Tempus",
+        "url": "https://grammis.ids-mannheim.de/progr%40mm/6905",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Leibniz-Institut für Deutsche Sprache — Infinitiv Perfekt",
+        "url": "https://grammis.ids-mannheim.de/terms/view/979",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "level-one-contexts",
+      "status": "PASS",
+      "evidence": "Se aplicaron los ajustes lingüísticos finales en N1 (ítem 4, ítem 9); IDs, answers y options permanecen idénticos."
+    },
+    {
+      "id": "connector-contract",
+      "status": "PASS",
+      "evidence": {
+        "dass": 2,
+        "weil": 2,
+        "obwohl": 2,
+        "ob": 2,
+        "nachdem": 1,
+        "bevor": 1
+      }
+    },
+    {
+      "id": "interrogative-contexts",
+      "status": "PASS",
+      "evidence": [
+        "de-plusquamperfekt-choice-editorial-4",
+        "de-plusquamperfekt-choice-editorial-8"
+      ]
+    },
+    {
+      "id": "levels-two-through-six-unchanged",
+      "status": "PASS",
+      "evidence": "micro, long, error, separation y finalStories permanecen estructuralmente idénticos al candidato anterior."
+    },
+    {
+      "id": "annotations-scope",
+      "status": "PASS",
+      "evidence": "Se recalcularon runtimeFingerprint, clauseType y anchorIds de las 10 anotaciones N1; accepted y N2–N6 permanecen idénticos."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "INFO",
+      "code": "LEVEL-ONE-LINGUISTIC-AUDIT-RESOLVED",
+      "detail": "Los contextos N1 incorporan los fixes bloqueantes y el pulido recomendado, conservan la construcción objetivo y cumplen las cuotas de conector y posición."
+    }
+  ],
+  "generatedAt": "2026-09-06T22:37:49.875Z"
+}

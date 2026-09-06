@@ -1,0 +1,2763 @@
+{
+  "schemaVersion": 1,
+  "formId": "praeteritum",
+  "role": "author",
+  "verdict": "PASS",
+  "candidateFingerprint": "e949348eb6b250377116a578b9cce947c8e198238a387e53dc6612180a5c0beb",
+  "specFingerprint": "df2d954761b05ac2be0d66100a659fe33dd0784055eefc5ed2110d8dfd654b57",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "baselineContentFingerprint": "f0492b7956349f557a5223d8fea60a271212f40b8499d08c2e7a9a0f3cfd322c",
+  "candidate": {
+    "formId": "praeteritum",
+    "runtime": {
+      "choice": [
+        {
+          "id": "de-praeteritum-choice-editorial-1",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „ich“ mit wohnen.",
+          "context": "Früher ___ ich in Köln.",
+          "options": [
+            "wohntest",
+            "wohntet",
+            "wohnte",
+            "wohnten"
+          ],
+          "answer": "wohnte",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-2",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „du“ mit lernen.",
+          "context": "Damals ___ du jeden Abend.",
+          "options": [
+            "lernte",
+            "lerntet",
+            "lernten",
+            "lerntest"
+          ],
+          "answer": "lerntest",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-3",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „Mia“ mit spielen.",
+          "context": "Als Kind ___ Mia oft draußen.",
+          "options": [
+            "spielte",
+            "spieltest",
+            "spieltet",
+            "spielten"
+          ],
+          "answer": "spielte",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-4",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „wir“ mit arbeiten.",
+          "context": "Im Sommer ___ wir im Café.",
+          "options": [
+            "arbeitete",
+            "arbeiteten",
+            "arbeitetest",
+            "arbeitetet"
+          ],
+          "answer": "arbeiteten",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-5",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „ihr“ mit machen.",
+          "context": "Gestern ___ ihr einen Kuchen.",
+          "options": [
+            "machte",
+            "machtest",
+            "machtet",
+            "machten"
+          ],
+          "answer": "machtet",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-6",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „die Kinder“ mit fragen.",
+          "context": "Die Kinder ___ nach dem Weg.",
+          "options": [
+            "fragte",
+            "fragtest",
+            "fragtet",
+            "fragten"
+          ],
+          "answer": "fragten",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-7",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „ich“ mit haben.",
+          "context": "Als Student ___ ich wenig Geld.",
+          "options": [
+            "hatte",
+            "hattest",
+            "hattet",
+            "hatten"
+          ],
+          "answer": "hatte",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-8",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „du“ mit sein.",
+          "context": "Gestern ___ du sehr müde.",
+          "options": [
+            "war",
+            "warst",
+            "wart",
+            "waren"
+          ],
+          "answer": "warst",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-9",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „Paul“ mit brauchen.",
+          "context": "Paul ___ Hilfe.",
+          "options": [
+            "brauchtest",
+            "brauchtet",
+            "brauchte",
+            "brauchten"
+          ],
+          "answer": "brauchte",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        },
+        {
+          "id": "de-praeteritum-choice-editorial-10",
+          "tenses": [
+            "praeteritum"
+          ],
+          "focus": "Präteritum",
+          "prompt": "Wähle die passende Form für „wir“ mit warten.",
+          "context": "Wir ___ vor der Tür.",
+          "options": [
+            "wartete",
+            "wartetest",
+            "wartetet",
+            "warteten"
+          ],
+          "answer": "warteten",
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig."
+        }
+      ],
+      "micro": [
+        {
+          "id": "de-praeteritum-micro-editorial-1",
+          "title": "Das Dorf",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „wohnen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Damals ",
+            " wir in einem kleinen Dorf."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-1-gap",
+              "tense": "praeteritum",
+              "verb": "wohnen",
+              "answers": [
+                "wohnten"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-2",
+          "title": "Die offene Tür",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „öffnen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Plötzlich ",
+            " jemand die Tür."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-2-gap",
+              "tense": "praeteritum",
+              "verb": "öffnen",
+              "answers": [
+                "öffnete"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-3",
+          "title": "Ohne Auto",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „haben“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Als Student ",
+            " er kein Auto."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-3-gap",
+              "tense": "praeteritum",
+              "verb": "haben",
+              "answers": [
+                "hatte"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-4",
+          "title": "Der alte Bahnhof",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „sein“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Der Bahnhof ",
+            " damals fast leer."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-4-gap",
+              "tense": "praeteritum",
+              "verb": "sein",
+              "answers": [
+                "war"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-5",
+          "title": "Die unerwartete Nachricht",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „erhalten“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Am nächsten Morgen ",
+            " sie eine unerwartete Nachricht."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-5-gap",
+              "tense": "praeteritum",
+              "verb": "erhalten",
+              "answers": [
+                "erhielt"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-6",
+          "title": "Im Lesesaal",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „arbeiten“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Jeden Nachmittag ",
+            " Paul bis zur Schließung im Lesesaal."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-6-gap",
+              "tense": "praeteritum",
+              "verb": "arbeiten",
+              "answers": [
+                "arbeitete"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-7",
+          "title": "Der Stromausfall",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „prüfen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Wenig später ",
+            " der Techniker die Hauptleitung."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-7-gap",
+              "tense": "praeteritum",
+              "verb": "prüfen",
+              "answers": [
+                "prüfte"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-8",
+          "title": "Kein Zutritt",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „können“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Ohne Ausweis ",
+            " wir das Gebäude nicht betreten."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-8-gap",
+              "tense": "praeteritum",
+              "verb": "können",
+              "answers": [
+                "konnten"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-9",
+          "title": "Die Entscheidung",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „wählen“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Nach langem Zögern ",
+            " die Jury den zweiten Entwurf."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-9-gap",
+              "tense": "praeteritum",
+              "verb": "wählen",
+              "answers": [
+                "wählte"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-micro-editorial-10",
+          "title": "Der Rückweg",
+          "focus": "Präteritum",
+          "instruction": "Konjugiere „kehren“ und schreibe genau die Form, die in die Lücke gehört.",
+          "segments": [
+            "Bei Einbruch der Dunkelheit ",
+            " die Gruppe zum Lager zurück."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-micro-editorial-10-gap",
+              "tense": "praeteritum",
+              "verb": "kehren",
+              "answers": [
+                "kehrte"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "long": [
+        {
+          "id": "de-praeteritum-long-editorial-1",
+          "title": "Die verlassene Station",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Zuerst ",
+            " der Zug am leeren Bahnsteig. Dann ",
+            " der Schaffner eine Tür. Schließlich ",
+            " eine Frau aus."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-1-gap-1",
+              "tense": "praeteritum",
+              "verb": "halten",
+              "answers": [
+                "hielt"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-1-gap-2",
+              "tense": "praeteritum",
+              "verb": "öffnen",
+              "answers": [
+                "öffnete"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-1-gap-3",
+              "tense": "praeteritum",
+              "verb": "steigen",
+              "answers": [
+                "stieg"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-2",
+          "title": "Die verschwundene Karte",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Mara ",
+            " die Karte auf den Tisch. Kurz darauf ",
+            " ein Windstoß das Fenster. Am Ende ",
+            " die Karte verschwunden."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-2-gap-1",
+              "tense": "praeteritum",
+              "verb": "legen",
+              "answers": [
+                "legte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-2-gap-2",
+              "tense": "praeteritum",
+              "verb": "öffnen",
+              "answers": [
+                "öffnete"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-2-gap-3",
+              "tense": "praeteritum",
+              "verb": "sein",
+              "answers": [
+                "war"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-3",
+          "title": "Der nächtliche Anruf",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Um Mitternacht ",
+            " das Telefon. Paul ",
+            " sofort auf, und eine fremde Stimme ",
+            " seinen Namen."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-3-gap-1",
+              "tense": "praeteritum",
+              "verb": "klingeln",
+              "answers": [
+                "klingelte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-3-gap-2",
+              "tense": "praeteritum",
+              "verb": "wachen",
+              "answers": [
+                "wachte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-3-gap-3",
+              "tense": "praeteritum",
+              "verb": "nennen",
+              "answers": [
+                "nannte"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-4",
+          "title": "Die alte Werkstatt",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Früher ",
+            " die Werkstatt einem Uhrmacher. Er ",
+            " jeden Morgen das Schaufenster, und sein Hund ",
+            " neben der Tür."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-4-gap-1",
+              "tense": "praeteritum",
+              "verb": "gehören",
+              "answers": [
+                "gehörte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-4-gap-2",
+              "tense": "praeteritum",
+              "verb": "reinigen",
+              "answers": [
+                "reinigte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-4-gap-3",
+              "tense": "praeteritum",
+              "verb": "liegen",
+              "answers": [
+                "lag"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-5",
+          "title": "Der Fund im Garten",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Lina ",
+            " unter dem Baum eine Metallkiste. Sie ",
+            " vorsichtig den Deckel, und darin ",
+            " alte Briefe."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-5-gap-1",
+              "tense": "praeteritum",
+              "verb": "entdecken",
+              "answers": [
+                "entdeckte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-5-gap-2",
+              "tense": "praeteritum",
+              "verb": "heben",
+              "answers": [
+                "hob"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-5-gap-3",
+              "tense": "praeteritum",
+              "verb": "liegen",
+              "answers": [
+                "lagen"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-6",
+          "title": "Der erste Arbeitstag",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Jonas ",
+            " zu früh im Büro. Er ",
+            " lange vor der falschen Tür, bis eine Kollegin ihn ",
+            " ."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-6-gap-1",
+              "tense": "praeteritum",
+              "verb": "sein",
+              "answers": [
+                "war"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-6-gap-2",
+              "tense": "praeteritum",
+              "verb": "warten",
+              "answers": [
+                "wartete"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-6-gap-3",
+              "tense": "praeteritum",
+              "verb": "finden",
+              "answers": [
+                "fand"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-7",
+          "title": "Der Sturmbericht",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Am Abend ",
+            " der Wind stärker. Mehrere Äste ",
+            " auf die Straße, und die Feuerwehr ",
+            " die Zufahrt."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-7-gap-1",
+              "tense": "praeteritum",
+              "verb": "werden",
+              "answers": [
+                "wurde"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-7-gap-2",
+              "tense": "praeteritum",
+              "verb": "fallen",
+              "answers": [
+                "fielen"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-7-gap-3",
+              "tense": "praeteritum",
+              "verb": "sperren",
+              "answers": [
+                "sperrte"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-8",
+          "title": "Die verspätete Fähre",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Die Fähre ",
+            " erst nach Sonnenuntergang. Die Passagiere ",
+            " unruhig, doch der Kapitän ",
+            " ruhig."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-8-gap-1",
+              "tense": "praeteritum",
+              "verb": "kommen",
+              "answers": [
+                "kam"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-8-gap-2",
+              "tense": "praeteritum",
+              "verb": "werden",
+              "answers": [
+                "wurden"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-8-gap-3",
+              "tense": "praeteritum",
+              "verb": "bleiben",
+              "answers": [
+                "blieb"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-9",
+          "title": "Die Prüfung",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Zunächst ",
+            " die Aufgaben leicht. Dann ",
+            " die Zeit knapp, und niemand ",
+            " die letzte Frage."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-9-gap-1",
+              "tense": "praeteritum",
+              "verb": "wirken",
+              "answers": [
+                "wirkten"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-9-gap-2",
+              "tense": "praeteritum",
+              "verb": "werden",
+              "answers": [
+                "wurde"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-9-gap-3",
+              "tense": "praeteritum",
+              "verb": "lösen",
+              "answers": [
+                "löste"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        },
+        {
+          "id": "de-praeteritum-long-editorial-10",
+          "title": "Der Museumsdiebstahl",
+          "focus": "Präteritum",
+          "instruction": "Ergänze die drei Lücken in dieser zusammenhängenden Szene. Schreibe sichtbare Verbzusätze nicht noch einmal.",
+          "segments": [
+            "Der Wächter ",
+            " ein leises Geräusch. Er ",
+            " in den Saal und ",
+            " dort ein offenes Fenster."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-long-editorial-10-gap-1",
+              "tense": "praeteritum",
+              "verb": "hören",
+              "answers": [
+                "hörte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-10-gap-2",
+              "tense": "praeteritum",
+              "verb": "laufen",
+              "answers": [
+                "lief"
+              ]
+            },
+            {
+              "id": "de-praeteritum-long-editorial-10-gap-3",
+              "tense": "praeteritum",
+              "verb": "sehen",
+              "answers": [
+                "sah"
+              ]
+            }
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition."
+        }
+      ],
+      "error": [
+        {
+          "id": "de-praeteritum-independent-error-1",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 1",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Im alten Hafen ",
+              "form": "wartete",
+              "id": "de-praeteritum-independent-error-1-token-1"
+            },
+            {
+              "before": " ein Fischer auf das Signal. Damals ",
+              "form": "besaß",
+              "id": "de-praeteritum-independent-error-1-token-2"
+            },
+            {
+              "before": " das Dorf nur ein Telefon. Der Hausmeister ",
+              "form": "trug",
+              "id": "de-praeteritum-independent-error-1-token-3"
+            },
+            {
+              "before": " die Nachricht nach oben. Eine leise Stimme ",
+              "form": "rufte",
+              "id": "de-praeteritum-independent-error-1-token-4"
+            },
+            {
+              "before": " meinen Namen. Vor dem Sturm ",
+              "form": "lagen",
+              "id": "de-praeteritum-independent-error-1-token-5"
+            }
+          ],
+          "after": " die Boote noch am Ufer.",
+          "wrongId": "de-praeteritum-independent-error-1-token-4",
+          "answers": [
+            "rief"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-2",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 2",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die beiden Schwestern ",
+              "form": "fanden",
+              "id": "de-praeteritum-independent-error-2-token-1"
+            },
+            {
+              "before": " unter der Treppe eine Kiste. Plötzlich ",
+              "form": "erlosch",
+              "id": "de-praeteritum-independent-error-2-token-2"
+            },
+            {
+              "before": " das Licht im ganzen Haus. Wir ",
+              "form": "wussten",
+              "id": "de-praeteritum-independent-error-2-token-3"
+            },
+            {
+              "before": " nichts von dem zweiten Eingang. Die Zeugin ",
+              "form": "beschrieb",
+              "id": "de-praeteritum-independent-error-2-token-4"
+            },
+            {
+              "before": " einen roten Lieferwagen. Am Ende ",
+              "form": "verlasste",
+              "id": "de-praeteritum-independent-error-2-token-5"
+            }
+          ],
+          "after": " der Fremde das Gasthaus.",
+          "wrongId": "de-praeteritum-independent-error-2-token-5",
+          "answers": [
+            "verließ"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-3",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 3",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Damals ",
+              "form": "besitzte",
+              "id": "de-praeteritum-independent-error-3-token-1"
+            },
+            {
+              "before": " das Dorf nur ein Telefon. Der Hausmeister ",
+              "form": "trug",
+              "id": "de-praeteritum-independent-error-3-token-2"
+            },
+            {
+              "before": " die Nachricht nach oben. Eine leise Stimme ",
+              "form": "rief",
+              "id": "de-praeteritum-independent-error-3-token-3"
+            },
+            {
+              "before": " meinen Namen. Vor dem Sturm ",
+              "form": "lagen",
+              "id": "de-praeteritum-independent-error-3-token-4"
+            },
+            {
+              "before": " die Boote noch am Ufer. Im alten Hafen ",
+              "form": "wartete",
+              "id": "de-praeteritum-independent-error-3-token-5"
+            }
+          ],
+          "after": " ein Fischer auf das Signal.",
+          "wrongId": "de-praeteritum-independent-error-3-token-1",
+          "answers": [
+            "besaß"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-4",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 4",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Plötzlich ",
+              "form": "erlosch",
+              "id": "de-praeteritum-independent-error-4-token-1"
+            },
+            {
+              "before": " das Licht im ganzen Haus. Wir ",
+              "form": "wusste",
+              "id": "de-praeteritum-independent-error-4-token-2"
+            },
+            {
+              "before": " nichts von dem zweiten Eingang. Die Zeugin ",
+              "form": "beschrieb",
+              "id": "de-praeteritum-independent-error-4-token-3"
+            },
+            {
+              "before": " einen roten Lieferwagen. Am Ende ",
+              "form": "verließ",
+              "id": "de-praeteritum-independent-error-4-token-4"
+            },
+            {
+              "before": " der Fremde das Gasthaus. Die beiden Schwestern ",
+              "form": "fanden",
+              "id": "de-praeteritum-independent-error-4-token-5"
+            }
+          ],
+          "after": " unter der Treppe eine Kiste.",
+          "wrongId": "de-praeteritum-independent-error-4-token-2",
+          "answers": [
+            "wussten"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-5",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 5",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Der Hausmeister ",
+              "form": "trug",
+              "id": "de-praeteritum-independent-error-5-token-1"
+            },
+            {
+              "before": " die Nachricht nach oben. Eine leise Stimme ",
+              "form": "rief",
+              "id": "de-praeteritum-independent-error-5-token-2"
+            },
+            {
+              "before": " meinen Namen. Vor dem Sturm ",
+              "form": "lag",
+              "id": "de-praeteritum-independent-error-5-token-3"
+            },
+            {
+              "before": " die Boote noch am Ufer. Im alten Hafen ",
+              "form": "wartete",
+              "id": "de-praeteritum-independent-error-5-token-4"
+            },
+            {
+              "before": " ein Fischer auf das Signal. Damals ",
+              "form": "besaß",
+              "id": "de-praeteritum-independent-error-5-token-5"
+            }
+          ],
+          "after": " das Dorf nur ein Telefon.",
+          "wrongId": "de-praeteritum-independent-error-5-token-3",
+          "answers": [
+            "lagen"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-6",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 6",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Wir ",
+              "form": "wussten",
+              "id": "de-praeteritum-independent-error-6-token-1"
+            },
+            {
+              "before": " nichts von dem zweiten Eingang. Die Zeugin ",
+              "form": "beschrieb",
+              "id": "de-praeteritum-independent-error-6-token-2"
+            },
+            {
+              "before": " einen roten Lieferwagen. Am Ende ",
+              "form": "verließ",
+              "id": "de-praeteritum-independent-error-6-token-3"
+            },
+            {
+              "before": " der Fremde das Gasthaus. Die beiden Schwestern ",
+              "form": "fand",
+              "id": "de-praeteritum-independent-error-6-token-4"
+            },
+            {
+              "before": " unter der Treppe eine Kiste. Plötzlich ",
+              "form": "erlosch",
+              "id": "de-praeteritum-independent-error-6-token-5"
+            }
+          ],
+          "after": " das Licht im ganzen Haus.",
+          "wrongId": "de-praeteritum-independent-error-6-token-4",
+          "answers": [
+            "fanden"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-7",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 7",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Eine leise Stimme ",
+              "form": "rief",
+              "id": "de-praeteritum-independent-error-7-token-1"
+            },
+            {
+              "before": " meinen Namen. Vor dem Sturm ",
+              "form": "lagen",
+              "id": "de-praeteritum-independent-error-7-token-2"
+            },
+            {
+              "before": " die Boote noch am Ufer. Im alten Hafen ",
+              "form": "wartete",
+              "id": "de-praeteritum-independent-error-7-token-3"
+            },
+            {
+              "before": " ein Fischer auf das Signal. Damals ",
+              "form": "besaß",
+              "id": "de-praeteritum-independent-error-7-token-4"
+            },
+            {
+              "before": " das Dorf nur ein Telefon. Der Hausmeister ",
+              "form": "tragte",
+              "id": "de-praeteritum-independent-error-7-token-5"
+            }
+          ],
+          "after": " die Nachricht nach oben.",
+          "wrongId": "de-praeteritum-independent-error-7-token-5",
+          "answers": [
+            "trug"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-8",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 8",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Die Zeugin ",
+              "form": "beschreibte",
+              "id": "de-praeteritum-independent-error-8-token-1"
+            },
+            {
+              "before": " einen roten Lieferwagen. Am Ende ",
+              "form": "verließ",
+              "id": "de-praeteritum-independent-error-8-token-2"
+            },
+            {
+              "before": " der Fremde das Gasthaus. Die beiden Schwestern ",
+              "form": "fanden",
+              "id": "de-praeteritum-independent-error-8-token-3"
+            },
+            {
+              "before": " unter der Treppe eine Kiste. Plötzlich ",
+              "form": "erlosch",
+              "id": "de-praeteritum-independent-error-8-token-4"
+            },
+            {
+              "before": " das Licht im ganzen Haus. Wir ",
+              "form": "wussten",
+              "id": "de-praeteritum-independent-error-8-token-5"
+            }
+          ],
+          "after": " nichts von dem zweiten Eingang.",
+          "wrongId": "de-praeteritum-independent-error-8-token-1",
+          "answers": [
+            "beschrieb"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-9",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 9",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Vor dem Sturm ",
+              "form": "lagen",
+              "id": "de-praeteritum-independent-error-9-token-1"
+            },
+            {
+              "before": " die Boote noch am Ufer. Im alten Hafen ",
+              "form": "warteten",
+              "id": "de-praeteritum-independent-error-9-token-2"
+            },
+            {
+              "before": " ein Fischer auf das Signal. Damals ",
+              "form": "besaß",
+              "id": "de-praeteritum-independent-error-9-token-3"
+            },
+            {
+              "before": " das Dorf nur ein Telefon. Der Hausmeister ",
+              "form": "trug",
+              "id": "de-praeteritum-independent-error-9-token-4"
+            },
+            {
+              "before": " die Nachricht nach oben. Eine leise Stimme ",
+              "form": "rief",
+              "id": "de-praeteritum-independent-error-9-token-5"
+            }
+          ],
+          "after": " meinen Namen.",
+          "wrongId": "de-praeteritum-independent-error-9-token-2",
+          "answers": [
+            "wartete"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        },
+        {
+          "id": "de-praeteritum-independent-error-10",
+          "tense": "praeteritum",
+          "title": "Korrekturrunde · 10",
+          "focus": "Präteritum",
+          "instruction": "Lies den ganzen Text ohne Markierungen. Schreibe die falsche Verbform und danach ihre Korrektur.",
+          "chunks": [
+            {
+              "before": "Am Ende ",
+              "form": "verließ",
+              "id": "de-praeteritum-independent-error-10-token-1"
+            },
+            {
+              "before": " der Fremde das Gasthaus. Die beiden Schwestern ",
+              "form": "fanden",
+              "id": "de-praeteritum-independent-error-10-token-2"
+            },
+            {
+              "before": " unter der Treppe eine Kiste. Plötzlich ",
+              "form": "erlöschte",
+              "id": "de-praeteritum-independent-error-10-token-3"
+            },
+            {
+              "before": " das Licht im ganzen Haus. Wir ",
+              "form": "wussten",
+              "id": "de-praeteritum-independent-error-10-token-4"
+            },
+            {
+              "before": " nichts von dem zweiten Eingang. Die Zeugin ",
+              "form": "beschrieb",
+              "id": "de-praeteritum-independent-error-10-token-5"
+            }
+          ],
+          "after": " einen roten Lieferwagen.",
+          "wrongId": "de-praeteritum-independent-error-10-token-3",
+          "answers": [
+            "erlosch"
+          ],
+          "explanation": "Das Präteritum trägt zusammenhängende schriftliche Erzählungen; „sein“, „haben“ und Modalverben sind auch in gesprochener Rückschau häufig. Im markierten Satz muss die Verbgruppe zu Subjekt, Zeitbezug und Satzbau passen."
+        }
+      ],
+      "separation": [
+        {
+          "id": "de-praeteritum-separation-1",
+          "tense": "praeteritum",
+          "title": "vergessen · 1",
+          "focus": "praeteritum",
+          "verb": "vergessen",
+          "separation": "inseparable",
+          "prompt": "Wir ___ damals oft die Wegbeschreibung.",
+          "answers": [
+            "Wir vergaßen damals oft die Wegbeschreibung.",
+            "Wir vergaßen damals oft die Wegbeschreibung"
+          ],
+          "explanation": "„vergessen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-praeteritum-separation-2",
+          "tense": "praeteritum",
+          "title": "empfehlen · 2",
+          "focus": "praeteritum",
+          "verb": "empfehlen",
+          "separation": "inseparable",
+          "prompt": "Der Buchhändler ___ einen kurzen Roman.",
+          "answers": [
+            "Der Buchhändler empfahl einen kurzen Roman.",
+            "Der Buchhändler empfahl einen kurzen Roman"
+          ],
+          "explanation": "„empfehlen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-praeteritum-separation-3",
+          "tense": "praeteritum",
+          "title": "einladen · 3",
+          "focus": "praeteritum",
+          "verb": "einladen",
+          "separation": "separable",
+          "prompt": "Die Direktorin ___ alle Mitarbeitenden.",
+          "answers": [
+            "Die Direktorin lud alle Mitarbeitenden ein.",
+            "Die Direktorin lud alle Mitarbeitenden ein"
+          ],
+          "explanation": "„einladen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-praeteritum-separation-4",
+          "tense": "praeteritum",
+          "title": "erkennen · 4",
+          "focus": "praeteritum",
+          "verb": "erkennen",
+          "separation": "inseparable",
+          "prompt": "Im Dunkeln ___ er die Stimme sofort.",
+          "answers": [
+            "Im Dunkeln erkannte er die Stimme sofort.",
+            "Im Dunkeln erkannte er die Stimme sofort"
+          ],
+          "explanation": "„erkennen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-praeteritum-separation-5",
+          "tense": "praeteritum",
+          "title": "zurückgeben · 5",
+          "focus": "praeteritum",
+          "verb": "zurückgeben",
+          "separation": "separable",
+          "prompt": "Am Abend ___ ich den Schlüssel.",
+          "answers": [
+            "Am Abend gab ich den Schlüssel zurück.",
+            "Am Abend gab ich den Schlüssel zurück"
+          ],
+          "explanation": "„zurückgeben“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-praeteritum-separation-6",
+          "tense": "praeteritum",
+          "title": "beschreiben · 6",
+          "focus": "praeteritum",
+          "verb": "beschreiben",
+          "separation": "inseparable",
+          "prompt": "Die Zeugin ___ den Wagen sehr genau.",
+          "answers": [
+            "Die Zeugin beschrieb den Wagen sehr genau.",
+            "Die Zeugin beschrieb den Wagen sehr genau"
+          ],
+          "explanation": "„beschreiben“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-praeteritum-separation-7",
+          "tense": "praeteritum",
+          "title": "vorlesen · 7",
+          "focus": "praeteritum",
+          "verb": "vorlesen",
+          "separation": "separable",
+          "prompt": "Die Lehrerin ___ den Brief laut.",
+          "answers": [
+            "Die Lehrerin las den Brief laut vor.",
+            "Die Lehrerin las den Brief laut vor"
+          ],
+          "explanation": "„vorlesen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-praeteritum-separation-8",
+          "tense": "praeteritum",
+          "title": "aufwachen · 8",
+          "focus": "praeteritum",
+          "verb": "aufwachen",
+          "separation": "separable",
+          "prompt": "Kurz vor Sonnenaufgang ___ das ganze Dorf.",
+          "answers": [
+            "Kurz vor Sonnenaufgang wachte das ganze Dorf auf.",
+            "Kurz vor Sonnenaufgang wachte das ganze Dorf auf"
+          ],
+          "explanation": "„aufwachen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        },
+        {
+          "id": "de-praeteritum-separation-9",
+          "tense": "praeteritum",
+          "title": "beginnen · 9",
+          "focus": "praeteritum",
+          "verb": "beginnen",
+          "separation": "inseparable",
+          "prompt": "Die Vorstellung ___ ohne Verspätung.",
+          "answers": [
+            "Die Vorstellung begann ohne Verspätung.",
+            "Die Vorstellung begann ohne Verspätung"
+          ],
+          "explanation": "„beginnen“ ist untrennbar. Schreibe den ganzen Satz; die Vorsilbe bleibt mit dem Verbstamm verbunden."
+        },
+        {
+          "id": "de-praeteritum-separation-10",
+          "tense": "praeteritum",
+          "title": "mitnehmen · 10",
+          "focus": "praeteritum",
+          "verb": "mitnehmen",
+          "separation": "separable",
+          "prompt": "Jonas ___ seinen kleinen Bruder.",
+          "answers": [
+            "Jonas nahm seinen kleinen Bruder mit.",
+            "Jonas nahm seinen kleinen Bruder mit"
+          ],
+          "explanation": "„mitnehmen“ ist trennbar. Schreibe den ganzen Satz und setze Vorsilbe und Verbstamm an ihre richtigen Positionen."
+        }
+      ],
+      "finalStories": [
+        {
+          "id": "de-praeteritum-written-final-story",
+          "title": "Die Nacht im alten Bahnhof",
+          "focus": "praeteritum",
+          "instruction": "Lies die ganze Geschichte. Ergänze alle Verbgruppen schriftlich; die Auswertung erscheint erst am Ende.",
+          "segments": [
+            "Der letzte Zug ",
+            " kurz vor Mitternacht ab. Im Wartesaal ",
+            " nur noch drei Reisende. Eine Lampe ",
+            " unruhig, während draußen der Wind durch die Türen ",
+            ". Plötzlich ",
+            " jemand an ein Fenster. Der Bahnhofsvorsteher ",
+            " seine Taschenlampe und ",
+            " langsam über den Bahnsteig. Hinter einem Gepäckwagen ",
+            " er einen verirrten Hund. Das Tier ",
+            " vor Kälte, ließ sich aber ruhig tragen. Wenig später ",
+            " sein Besitzer und ",
+            " dem Bahnhofsvorsteher erleichtert."
+          ],
+          "gaps": [
+            {
+              "id": "de-praeteritum-written-final-story-gap-1",
+              "tense": "praeteritum",
+              "verb": "fahren",
+              "answers": [
+                "fuhr"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-2",
+              "tense": "praeteritum",
+              "verb": "sitzen",
+              "answers": [
+                "saßen"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-3",
+              "tense": "praeteritum",
+              "verb": "flackern",
+              "answers": [
+                "flackerte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-4",
+              "tense": "praeteritum",
+              "verb": "pfeifen",
+              "answers": [
+                "pfiff"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-5",
+              "tense": "praeteritum",
+              "verb": "klopfen",
+              "answers": [
+                "klopfte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-6",
+              "tense": "praeteritum",
+              "verb": "nehmen",
+              "answers": [
+                "nahm"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-7",
+              "tense": "praeteritum",
+              "verb": "gehen",
+              "answers": [
+                "ging"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-8",
+              "tense": "praeteritum",
+              "verb": "finden",
+              "answers": [
+                "fand"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-9",
+              "tense": "praeteritum",
+              "verb": "zittern",
+              "answers": [
+                "zitterte"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-10",
+              "tense": "praeteritum",
+              "verb": "erscheinen",
+              "answers": [
+                "erschien"
+              ]
+            },
+            {
+              "id": "de-praeteritum-written-final-story-gap-11",
+              "tense": "praeteritum",
+              "verb": "danken",
+              "answers": [
+                "dankte"
+              ]
+            }
+          ],
+          "explanation": "Halte die zusammenhängende Erzählung konsequent im Präteritum und beachte starke Verben."
+        }
+      ]
+    },
+    "annotations": [
+      {
+        "itemId": "de-praeteritum-choice-editorial-1",
+        "level": 1,
+        "lemma": "wohnen",
+        "senseId": "praeteritum-l1-1-wohnen",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "früher"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wohnte",
+        "accepted": [
+          "wohnte"
+        ],
+        "distractorRationale": [
+          "wohntest: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "wohntet: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "wohnten: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "262a1ae37df2062628d029914ead489dfd1c5ebe717dd530d180a64e42d6af7a"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-2",
+        "level": 1,
+        "lemma": "lernen",
+        "senseId": "praeteritum-l1-2-lernen",
+        "targetForm": "praeteritum",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "damals"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "lerntest",
+        "accepted": [
+          "lerntest"
+        ],
+        "distractorRationale": [
+          "lernte: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "lerntet: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "lernten: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "30f9021e3826d7d82769e8a08dc509dd11a5b25cc64b5813c0b8d6c6d8bbcd42"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-3",
+        "level": 1,
+        "lemma": "spielen",
+        "senseId": "praeteritum-l1-3-spielen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "spielte",
+        "accepted": [
+          "spielte"
+        ],
+        "distractorRationale": [
+          "spieltest: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "spieltet: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "spielten: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "44133a2a23ada4f441357425c7451282a2f3bb8996122a8e482e510fb6c9df0e"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-4",
+        "level": 1,
+        "lemma": "arbeiten",
+        "senseId": "praeteritum-l1-4-arbeiten",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "arbeiteten",
+        "accepted": [
+          "arbeiteten"
+        ],
+        "distractorRationale": [
+          "arbeitete: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "arbeitetest: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "arbeitetet: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "8b0be2aeeef075786bded78f320ac1077f1c5d40ec1ad7e3869af8f2c8476aef"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-5",
+        "level": 1,
+        "lemma": "machen",
+        "senseId": "praeteritum-l1-5-machen",
+        "targetForm": "praeteritum",
+        "person": "2",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "gestern"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "machtet",
+        "accepted": [
+          "machtet"
+        ],
+        "distractorRationale": [
+          "machte: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "machtest: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "machten: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "1dce0ae7f03fe1369b7e6fd5f495ac6927084a340563b32f69b2e4ad0bc9c8ae"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-6",
+        "level": 1,
+        "lemma": "fragen",
+        "senseId": "praeteritum-l1-6-fragen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "fragten",
+        "accepted": [
+          "fragten"
+        ],
+        "distractorRationale": [
+          "fragte: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "fragtest: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "fragtet: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "3be3028789d4380301ee7eb69c6b91e57337d99075b15bd77316c8c18fc0d1c0"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-7",
+        "level": 1,
+        "lemma": "haben",
+        "senseId": "praeteritum-l1-7-haben",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "hatte",
+        "accepted": [
+          "hatte"
+        ],
+        "distractorRationale": [
+          "hattest: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "hattet: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "hatten: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "8f5b453e24af08796887ac0f2cdb710b5a41e62f60e92a9396d0b1a8f225b396"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-8",
+        "level": 1,
+        "lemma": "sein",
+        "senseId": "praeteritum-l1-8-sein",
+        "targetForm": "praeteritum",
+        "person": "2",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "gestern"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "warst",
+        "accepted": [
+          "warst"
+        ],
+        "distractorRationale": [
+          "war: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "wart: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "waren: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "ff4e59e8df435c2f56d5e2bba30be2327bc3a76373d966c06c704d8e5b1aa8f7"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-9",
+        "level": 1,
+        "lemma": "brauchen",
+        "senseId": "praeteritum-l1-9-brauchen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "brauchte",
+        "accepted": [
+          "brauchte"
+        ],
+        "distractorRationale": [
+          "brauchtest: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "brauchtet: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "brauchten: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "b6ce3f5f3ea425e55ec59ef28134327a9afd3c7506c9de11b284dfe2d218a56d"
+      },
+      {
+        "itemId": "de-praeteritum-choice-editorial-10",
+        "level": 1,
+        "lemma": "warten",
+        "senseId": "praeteritum-l1-10-warten",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "warteten",
+        "accepted": [
+          "warteten"
+        ],
+        "distractorRationale": [
+          "wartete: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "wartetest: Person oder Numerus passt nicht zum Subjekt des Kontexts.",
+          "wartetet: Person oder Numerus passt nicht zum Subjekt des Kontexts."
+        ],
+        "runtimeFingerprint": "3b1f8ced895a420570fd4166192b336951603189fc5962449e640b8db6232964"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-1",
+        "level": 2,
+        "lemma": "wohnen",
+        "senseId": "praeteritum-l2-1-wohnen",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "damals"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wohnten",
+        "accepted": [
+          "wohnten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "db29fba1d4cb844846d0d088c628c7ce7889fc3a2f6e84f070403c33603147b8"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-2",
+        "level": 2,
+        "lemma": "öffnen",
+        "senseId": "praeteritum-l2-2-o-ffnen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "öffnete",
+        "accepted": [
+          "öffnete"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "a58075b6030909a7c4ec49f4d0e400ab2a5e48377744f87e220fb798c2157f94"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-3",
+        "level": 2,
+        "lemma": "haben",
+        "senseId": "praeteritum-l2-3-haben",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "hatte",
+        "accepted": [
+          "hatte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "077997060dabad091b4e0abc1e0827da53b3c60aa4abbe44e9d8427e3eadd573"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-4",
+        "level": 2,
+        "lemma": "sein",
+        "senseId": "praeteritum-l2-4-sein",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "damals"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "war",
+        "accepted": [
+          "war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e0e909c0047a918f221201a7ea6ba4effa89d103fc427f93becdc3847cd3c067"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-5",
+        "level": 2,
+        "lemma": "erhalten",
+        "senseId": "praeteritum-l2-5-erhalten",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "morgen"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "erhielt",
+        "accepted": [
+          "erhielt"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3944272cbaca216a437bd00c57cd609c767a8577d95b7a1b4517f4aa3b970839"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-6",
+        "level": 2,
+        "lemma": "arbeiten",
+        "senseId": "praeteritum-l2-6-arbeiten",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "subordinate",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "bis"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "arbeitete",
+        "accepted": [
+          "arbeitete"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "151a099858b3df7e372d6437a42f7fe23d0d3578db6d5cad52da0b43b650f2dd"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-7",
+        "level": 2,
+        "lemma": "prüfen",
+        "senseId": "praeteritum-l2-7-pru-fen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "später"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "prüfte",
+        "accepted": [
+          "prüfte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "17515b8535fbdebfada8b622622565fdf95a3459ca23fe69522963eeb7cb7a20"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-8",
+        "level": 2,
+        "lemma": "können",
+        "senseId": "praeteritum-l2-8-ko-nnen",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "konnten",
+        "accepted": [
+          "konnten"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "aed85277a86336affe56d350f09c64a5dc1d31b3e08dedcf5eff33813b9d0499"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-9",
+        "level": 2,
+        "lemma": "wählen",
+        "senseId": "praeteritum-l2-9-wa-hlen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wählte",
+        "accepted": [
+          "wählte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "7abed2820cde1d56ae4adddc277b6458f40443353f33359f7268fcb13d5b80bd"
+      },
+      {
+        "itemId": "de-praeteritum-micro-editorial-10",
+        "level": 2,
+        "lemma": "kehren",
+        "senseId": "praeteritum-l2-10-kehren",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kehrte",
+        "accepted": [
+          "kehrte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "2d0576d578927d8aefe46201f7fe8b1812b63d7af418e652b6aed4241117f433"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-1",
+        "level": 3,
+        "lemma": "halten + öffnen + steigen",
+        "senseId": "praeteritum-l3-1-halten",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "zuerst",
+          "schließlich"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "hielt | öffnete | stieg",
+        "accepted": [
+          "hielt",
+          "öffnete",
+          "stieg"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "9dd374620848f38dd6d4eff7081bc9b1ae50d52dd6a66133d2cbeb32384dc194"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-2",
+        "level": 3,
+        "lemma": "legen + öffnen + sein",
+        "senseId": "praeteritum-l3-2-legen",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "legte | öffnete | war",
+        "accepted": [
+          "legte",
+          "öffnete",
+          "war"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "1162f974e0383f981a7b3498b0af3a5408d2f87b8db87aa6731032b269069966"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-3",
+        "level": 3,
+        "lemma": "klingeln + wachen + nennen",
+        "senseId": "praeteritum-l3-3-klingeln",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "klingelte | wachte | nannte",
+        "accepted": [
+          "klingelte",
+          "wachte",
+          "nannte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "f3ad76dfdba01b1b45a394bc1ed1228c2ccb6b0478567a951377ab54a4c2c047"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-4",
+        "level": 3,
+        "lemma": "gehören + reinigen + liegen",
+        "senseId": "praeteritum-l3-4-geho-ren",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "früher",
+          "morgen"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "gehörte | reinigte | lag",
+        "accepted": [
+          "gehörte",
+          "reinigte",
+          "lag"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "bc3ece5e648cd959984713767179a28ac5538b51579cb75642a45edb50a40a46"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-5",
+        "level": 3,
+        "lemma": "entdecken + heben + liegen",
+        "senseId": "praeteritum-l3-5-entdecken",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "entdeckte | hob | lagen",
+        "accepted": [
+          "entdeckte",
+          "hob",
+          "lagen"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "0d550b3196e14cceadaa5231d9e87f3437103efa5ab91cff723395136f3ee71f"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-6",
+        "level": 3,
+        "lemma": "sein + warten + finden",
+        "senseId": "praeteritum-l3-6-sein",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "bis"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "war | wartete | fand",
+        "accepted": [
+          "war",
+          "wartete",
+          "fand"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "3ca7abdf5b64fea3a978557328d720e5b061518c6f94bc2a1e1d6251c4628c15"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-7",
+        "level": 3,
+        "lemma": "werden + fallen + sperren",
+        "senseId": "praeteritum-l3-7-werden",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wurde | fielen | sperrte",
+        "accepted": [
+          "wurde",
+          "fielen",
+          "sperrte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "1c132dcb8ab86f8b7bb22dc25e0aaf1f33ada84eaa6b44cfe13bc917c8121253"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-8",
+        "level": 3,
+        "lemma": "kommen + werden + bleiben",
+        "senseId": "praeteritum-l3-8-kommen",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "kam | wurden | blieb",
+        "accepted": [
+          "kam",
+          "wurden",
+          "blieb"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "395fffdbd182cf0f06012c27e2a8cb5f5299aa80b49cd20d96cd641861641ded"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-9",
+        "level": 3,
+        "lemma": "wirken + werden + lösen",
+        "senseId": "praeteritum-l3-9-wirken",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wirkten | wurde | löste",
+        "accepted": [
+          "wirkten",
+          "wurde",
+          "löste"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "910237f629aae51361f482483551cec020cb0409806189e962cde12a562aa303"
+      },
+      {
+        "itemId": "de-praeteritum-long-editorial-10",
+        "level": 3,
+        "lemma": "hören + laufen + sehen",
+        "senseId": "praeteritum-l3-10-ho-ren",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "hörte | lief | sah",
+        "accepted": [
+          "hörte",
+          "lief",
+          "sah"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "e0af92bc1476d65348aad873eec8d8f4288bf17147808bb9d6e1148309e9f8da"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-1",
+        "level": 4,
+        "lemma": "rufen",
+        "senseId": "praeteritum-l4-1-rufen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "rief",
+        "accepted": [
+          "rief"
+        ],
+        "distractorRationale": [
+          "rufte: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "b7559c82e9206f652d6ee7d5f83c6ead970737c3f4673a2aa050f9eb988c210e"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-2",
+        "level": 4,
+        "lemma": "verlassen",
+        "senseId": "praeteritum-l4-2-verlassen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "verließ",
+        "accepted": [
+          "verließ"
+        ],
+        "distractorRationale": [
+          "verlasste: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "b870401cd8efe71acad1811cc738d7fbc251a429b6e1d1a14c0ec2c2ad7d6ef9"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-3",
+        "level": 4,
+        "lemma": "besitzen",
+        "senseId": "praeteritum-l4-3-besitzen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "damals"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "besaß",
+        "accepted": [
+          "besaß"
+        ],
+        "distractorRationale": [
+          "besitzte: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "144e12cc890e1d0c69ec45d2e98510d2ed70607a65474a2e63f20d2d187fa2de"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-4",
+        "level": 4,
+        "lemma": "wissen",
+        "senseId": "praeteritum-l4-4-wissen",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wussten",
+        "accepted": [
+          "wussten"
+        ],
+        "distractorRationale": [
+          "wusste: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "e192ea812546397c240c2e8f44ad18f2bc6f4429cbb2c69068dae7bfc8305e9b"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-5",
+        "level": 4,
+        "lemma": "liegen",
+        "senseId": "praeteritum-l4-5-liegen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "lagen",
+        "accepted": [
+          "lagen"
+        ],
+        "distractorRationale": [
+          "lag: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "de42f970a0d4323c6b1395a7bc651a615a70f81644b3d574c9bb12987004d87a"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-6",
+        "level": 4,
+        "lemma": "finden",
+        "senseId": "praeteritum-l4-6-finden",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "fanden",
+        "accepted": [
+          "fanden"
+        ],
+        "distractorRationale": [
+          "fand: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "994141fdcdae004c16a93fbab7b6b5f4ab65089fde4855cb6141c6d428334009"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-7",
+        "level": 4,
+        "lemma": "tragen",
+        "senseId": "praeteritum-l4-7-tragen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "trug",
+        "accepted": [
+          "trug"
+        ],
+        "distractorRationale": [
+          "tragte: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "9884a059ce4eee14059b569bf109624f6fbdffc11cca3cf0e90f075a76a8dc62"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-8",
+        "level": 4,
+        "lemma": "beschreiben",
+        "senseId": "praeteritum-l4-8-beschreiben",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "beschrieb",
+        "accepted": [
+          "beschrieb"
+        ],
+        "distractorRationale": [
+          "beschreibte: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "12e719b0f2f7f9fe4cf2ae07a1cbccce7dbc1c3f569005a1e51084f48e2eac4a"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-9",
+        "level": 4,
+        "lemma": "warten",
+        "senseId": "praeteritum-l4-9-warten",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "wartete",
+        "accepted": [
+          "wartete"
+        ],
+        "distractorRationale": [
+          "warteten: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "601b6ca1681d3a4f05efe59f3cc6e1eaaa63ae2c739cc6d404c9d03ebb289a03"
+      },
+      {
+        "itemId": "de-praeteritum-independent-error-10",
+        "level": 4,
+        "lemma": "erlöschen",
+        "senseId": "praeteritum-l4-10-erlo-schen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "erlosch",
+        "accepted": [
+          "erlosch"
+        ],
+        "distractorRationale": [
+          "erlöschte: verletzt Morphologie, Auxiliarwahl oder Kongruenz der Zielform."
+        ],
+        "runtimeFingerprint": "25e5af43f5ebae467932631fc91b268e7fb820a3493c63195210abfff7c05a8f"
+      },
+      {
+        "itemId": "de-praeteritum-separation-1",
+        "level": 5,
+        "lemma": "vergessen",
+        "senseId": "praeteritum-l5-1-vergessen",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "plural",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "damals"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "ver",
+        "expectedUnit": "Wir vergaßen damals oft die Wegbeschreibung. | Wir vergaßen damals oft die Wegbeschreibung",
+        "accepted": [
+          "Wir vergaßen damals oft die Wegbeschreibung.",
+          "Wir vergaßen damals oft die Wegbeschreibung"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von vergessen."
+        ],
+        "runtimeFingerprint": "7b3a6893929fd6238aab33363c906556acad1e180c2dc37fc3b278cdeefaa6c9"
+      },
+      {
+        "itemId": "de-praeteritum-separation-2",
+        "level": 5,
+        "lemma": "empfehlen",
+        "senseId": "praeteritum-l5-2-empfehlen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "emp",
+        "expectedUnit": "Der Buchhändler empfahl einen kurzen Roman. | Der Buchhändler empfahl einen kurzen Roman",
+        "accepted": [
+          "Der Buchhändler empfahl einen kurzen Roman.",
+          "Der Buchhändler empfahl einen kurzen Roman"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von empfehlen."
+        ],
+        "runtimeFingerprint": "cf9dcab1b9fc5b3accce216f404caa02d3a54fd2b967f3cc9bdcf0921e2d876a"
+      },
+      {
+        "itemId": "de-praeteritum-separation-3",
+        "level": 5,
+        "lemma": "einladen",
+        "senseId": "praeteritum-l5-3-einladen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "ein",
+        "expectedUnit": "Die Direktorin lud alle Mitarbeitenden ein. | Die Direktorin lud alle Mitarbeitenden ein",
+        "accepted": [
+          "Die Direktorin lud alle Mitarbeitenden ein.",
+          "Die Direktorin lud alle Mitarbeitenden ein"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von einladen."
+        ],
+        "runtimeFingerprint": "93f531bf9282abf92ebd3294098e7e99eb4727154f2cb862b1bba4250d3bc2d0"
+      },
+      {
+        "itemId": "de-praeteritum-separation-4",
+        "level": 5,
+        "lemma": "erkennen",
+        "senseId": "praeteritum-l5-4-erkennen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "er",
+        "expectedUnit": "Im Dunkeln erkannte er die Stimme sofort. | Im Dunkeln erkannte er die Stimme sofort",
+        "accepted": [
+          "Im Dunkeln erkannte er die Stimme sofort.",
+          "Im Dunkeln erkannte er die Stimme sofort"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von erkennen."
+        ],
+        "runtimeFingerprint": "d90da9915938423067b7ee6142c65bba6a3b6a443f9983198976397c0f84613a"
+      },
+      {
+        "itemId": "de-praeteritum-separation-5",
+        "level": 5,
+        "lemma": "zurückgeben",
+        "senseId": "praeteritum-l5-5-zuru-ckgeben",
+        "targetForm": "praeteritum",
+        "person": "1",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "zurück",
+        "expectedUnit": "Am Abend gab ich den Schlüssel zurück. | Am Abend gab ich den Schlüssel zurück",
+        "accepted": [
+          "Am Abend gab ich den Schlüssel zurück.",
+          "Am Abend gab ich den Schlüssel zurück"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von zurückgeben."
+        ],
+        "runtimeFingerprint": "45a91275e8cbc9b74e865150f78fabb5b329ca3b47663f8dde1a4e27a9b04818"
+      },
+      {
+        "itemId": "de-praeteritum-separation-6",
+        "level": 5,
+        "lemma": "beschreiben",
+        "senseId": "praeteritum-l5-6-beschreiben",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Die Zeugin beschrieb den Wagen sehr genau. | Die Zeugin beschrieb den Wagen sehr genau",
+        "accepted": [
+          "Die Zeugin beschrieb den Wagen sehr genau.",
+          "Die Zeugin beschrieb den Wagen sehr genau"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von beschreiben."
+        ],
+        "runtimeFingerprint": "44120700a437900cf136f481d8e96652967fa307b50eeaadc7d544bfdd94e365"
+      },
+      {
+        "itemId": "de-praeteritum-separation-7",
+        "level": 5,
+        "lemma": "vorlesen",
+        "senseId": "praeteritum-l5-7-vorlesen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "laut-prognose"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "vor",
+        "expectedUnit": "Die Lehrerin las den Brief laut vor. | Die Lehrerin las den Brief laut vor",
+        "accepted": [
+          "Die Lehrerin las den Brief laut vor.",
+          "Die Lehrerin las den Brief laut vor"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von vorlesen."
+        ],
+        "runtimeFingerprint": "40dcd2e67d06792fa58d4b223cde8b3eee836b41ea1e5a27908d6fc0eaa567bb"
+      },
+      {
+        "itemId": "de-praeteritum-separation-8",
+        "level": 5,
+        "lemma": "aufwachen",
+        "senseId": "praeteritum-l5-8-aufwachen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "auf",
+        "expectedUnit": "Kurz vor Sonnenaufgang wachte das ganze Dorf auf. | Kurz vor Sonnenaufgang wachte das ganze Dorf auf",
+        "accepted": [
+          "Kurz vor Sonnenaufgang wachte das ganze Dorf auf.",
+          "Kurz vor Sonnenaufgang wachte das ganze Dorf auf"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von aufwachen."
+        ],
+        "runtimeFingerprint": "83d91e549858300e0cb1a5773e8d7fed1263bb96dc0ea41d81685987e74b9798"
+      },
+      {
+        "itemId": "de-praeteritum-separation-9",
+        "level": 5,
+        "lemma": "beginnen",
+        "senseId": "praeteritum-l5-9-beginnen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "inseparable",
+        "prefix": "be",
+        "expectedUnit": "Die Vorstellung begann ohne Verspätung. | Die Vorstellung begann ohne Verspätung",
+        "accepted": [
+          "Die Vorstellung begann ohne Verspätung.",
+          "Die Vorstellung begann ohne Verspätung"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: trennbar widerspricht der lexikalischen Präfixklasse von beginnen."
+        ],
+        "runtimeFingerprint": "75c845db11cd221cec6f3579d566efc10ebe97a360d5b87273414c5b608a38b9"
+      },
+      {
+        "itemId": "de-praeteritum-separation-10",
+        "level": 5,
+        "lemma": "mitnehmen",
+        "senseId": "praeteritum-l5-10-mitnehmen",
+        "targetForm": "praeteritum",
+        "person": "3",
+        "number": "singular",
+        "clauseType": "main",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "separable",
+        "prefix": "mit",
+        "expectedUnit": "Jonas nahm seinen kleinen Bruder mit. | Jonas nahm seinen kleinen Bruder mit",
+        "accepted": [
+          "Jonas nahm seinen kleinen Bruder mit.",
+          "Jonas nahm seinen kleinen Bruder mit"
+        ],
+        "distractorRationale": [
+          "Gegenklasse: untrennbar widerspricht der lexikalischen Präfixklasse von mitnehmen."
+        ],
+        "runtimeFingerprint": "f635fde843c1cc8d995ba881b4dde1dd46c2c9b0b3ef5df6535d0bbcd32619c4"
+      },
+      {
+        "itemId": "de-praeteritum-written-final-story",
+        "level": 6,
+        "lemma": "fahren + sitzen + flackern + pfeifen + klopfen + nehmen + gehen + finden + zittern + erscheinen + danken",
+        "senseId": "praeteritum-l6-1-fahren",
+        "targetForm": "praeteritum",
+        "person": null,
+        "number": null,
+        "clauseType": "mixed",
+        "function": "abgeschlossene Vergangenheit in schriftlicher Erzählung oder Bericht",
+        "anchorIds": [
+          "später"
+        ],
+        "auxiliary": null,
+        "participle": null,
+        "separation": "not-applicable",
+        "prefix": null,
+        "expectedUnit": "fuhr | saßen | flackerte | pfiff | klopfte | nahm | ging | fand | zitterte | erschien | dankte",
+        "accepted": [
+          "fuhr",
+          "saßen",
+          "flackerte",
+          "pfiff",
+          "klopfte",
+          "nahm",
+          "ging",
+          "fand",
+          "zitterte",
+          "erschien",
+          "dankte"
+        ],
+        "distractorRationale": [],
+        "runtimeFingerprint": "09ad1a8b249d69009602341615aee7c7e2ca3661afab7d95c6490f9fd8bdc973"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Präteritum — grammis (IDS)",
+        "url": "https://grammis.ids-mannheim.de/terminologie/211",
+        "checkedAt": "2026-09-05"
+      },
+      {
+        "title": "Formenbestand des deutschen Tempussystems — grammis (IDS)",
+        "url": "https://grammis.ids-mannheim.de/systematische-grammatik/232",
+        "checkedAt": "2026-09-05"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "runtime-snapshot",
+      "status": "PASS",
+      "evidence": "El candidato copia exactamente el runtime materializado actual (f0492b7956349f557a5223d8fea60a271212f40b8499d08c2e7a9a0f3cfd322c)."
+    },
+    {
+      "id": "coverage",
+      "status": "PASS",
+      "evidence": "Cobertura 10/10/10/10/10 y una historia final completa."
+    },
+    {
+      "id": "annotation-binding",
+      "status": "PASS",
+      "evidence": "Las 51 anotaciones están enlazadas mediante runtimeFingerprint a los retos materializados."
+    },
+    {
+      "id": "work-order-binding",
+      "status": "PASS",
+      "evidence": "Las huellas de harness, spec, prompt y baseline coinciden con el work-order de round 2."
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:44:24.435Z",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0"
+}

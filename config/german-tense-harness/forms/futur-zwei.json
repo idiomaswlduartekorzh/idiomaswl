@@ -8,6 +8,15 @@
   "auxiliaryPolicy": "inherits-perfect-auxiliary",
   "allowedAuxiliaries": ["haben", "sein", "werden"],
   "minimumFinalUnitTokens": 3,
+  "levelOneClauseContract": {
+    "allowedConnectors": ["dass", "weil", "obwohl", "wenn", "bevor", "ob"],
+    "minimumDistinctConnectors": 4,
+    "maximumUsesPerConnector": 3,
+    "minimumInterrogativeContexts": 2,
+    "minimumMatrixObQuestions": 2,
+    "minimumPreposedTargetClauses": 2,
+    "requireContiguousVerbalUnit": true
+  },
   "morphology": ["correct Partizip II", "correct perfect auxiliary in infinitive", "finite werden agrees with the subject"],
   "wordOrder": ["Partizip II + haben/sein at clause end", "finite werden occupies V2 in main clauses"],
   "contextContract": ["completion before an explicit future deadline or second future point"],

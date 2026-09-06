@@ -8,6 +8,15 @@
   "auxiliaryPolicy": "fixed-haben",
   "allowedAuxiliaries": ["haben"],
   "minimumFinalUnitTokens": 2,
+  "levelOneClauseContract": {
+    "allowedConnectors": ["dass", "weil", "obwohl", "wenn", "nachdem", "bevor", "ob"],
+    "minimumDistinctConnectors": 4,
+    "maximumUsesPerConnector": 3,
+    "minimumInterrogativeContexts": 2,
+    "minimumMatrixObQuestions": 2,
+    "minimumPreposedTargetClauses": 2,
+    "requireContiguousVerbalUnit": true
+  },
   "morphology": ["weak, strong and mixed participles", "no ge- for inseparable prefixes and -ieren", "ge- between particle and stem for separable verbs"],
   "wordOrder": ["finite haben in V2 and participle at clause end", "verbal complex final in subordinate clauses"],
   "contextContract": ["completed past event with present or conversational relevance"],

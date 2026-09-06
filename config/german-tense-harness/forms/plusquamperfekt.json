@@ -8,6 +8,15 @@
   "auxiliaryPolicy": "inherits-perfect-auxiliary",
   "allowedAuxiliaries": ["haben", "sein"],
   "minimumFinalUnitTokens": 2,
+  "levelOneClauseContract": {
+    "allowedConnectors": ["dass", "weil", "obwohl", "wenn", "nachdem", "bevor", "ob"],
+    "minimumDistinctConnectors": 4,
+    "maximumUsesPerConnector": 3,
+    "minimumInterrogativeContexts": 2,
+    "minimumMatrixObQuestions": 2,
+    "minimumPreposedTargetClauses": 2,
+    "requireContiguousVerbalUnit": true
+  },
   "morphology": ["Präteritum of the licensed auxiliary", "correct Partizip II"],
   "wordOrder": ["finite auxiliary in V2 and participle at clause end", "verbal complex final in subordinate clauses"],
   "contextContract": ["an event completed before a second explicit past reference point"],

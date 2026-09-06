@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-eins",
+  "role": "adversary",
+  "verdict": "PASS",
+  "candidateFingerprint": "732049234f0a82f78ece0b1e6f4b73436e70917ce638ca3e9b86a682745d1674",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "d9be74f117df23c6c7f2bb3d9e701aa71385cc0594deb81c05fb03bf3db80970",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "id": "current-fingerprints-and-schema",
+      "status": "PASS",
+      "authorReportFailures": [],
+      "fingerprintChecks": {
+        "candidate": true,
+        "harness": true,
+        "spec": true,
+        "prompt": true,
+        "baseline": true
+      }
+    },
+    {
+      "id": "real-candidate-valid",
+      "status": "PASS",
+      "validatorFailures": []
+    },
+    {
+      "id": "real-candidate-level-one-contract",
+      "status": "PASS",
+      "connectorCounts": {
+        "dass": 3,
+        "ob": 2,
+        "obwohl": 2,
+        "weil": 3
+      },
+      "placementCounts": {
+        "embedded": 6,
+        "matrix-ob": 2,
+        "preposed": 2
+      },
+      "interrogativeContexts": 2
+    },
+    {
+      "id": "n1-n2-originality",
+      "status": "PASS",
+      "exactSentenceDuplicates": [],
+      "gapTemplateDuplicates": [],
+      "sharedTargetUnits": [
+        "anrufen werde"
+      ],
+      "detail": "Una unidad verbal puede repetirse para practicar la misma forma; el contexto completo y la plantilla de la oracion deben ser distintos."
+    },
+    {
+      "id": "all-dass",
+      "status": "PASS",
+      "mutation": "Los diez contextos N1 usan dass en la clausula objetivo; las huellas de item se sincronizan.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: nivel 1 requiere al menos 4 conectores distintos (1)",
+        "candidate.runtime: nivel 1 usa dass 10/3",
+        "candidate.runtime: nivel 1 requiere al menos 2 contextos interrogativos (0)",
+        "candidate.runtime: nivel 1 requiere al menos 2 preguntas matrices con ob (0)",
+        "candidate.runtime: nivel 1 requiere al menos 2 subordinadas objetivo antepuestas (0)"
+      ]
+    },
+    {
+      "id": "connector-only-in-previous-clause",
+      "status": "PASS",
+      "mutation": "El conector queda solo en la clausula anterior al hueco.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "de-futur-eins-choice-editorial-1: falta un conector antes del hueco de nivel 1"
+      ]
+    },
+    {
+      "id": "questions-without-target-ob",
+      "status": "PASS",
+      "mutation": "Las preguntas matrices sustituyen ob por dass en la clausula objetivo.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: nivel 1 requiere al menos 4 conectores distintos (3)",
+        "candidate.runtime: nivel 1 usa dass 5/3",
+        "candidate.runtime: nivel 1 requiere al menos 2 preguntas matrices con ob (0)"
+      ]
+    },
+    {
+      "id": "no-preposed-target-clauses",
+      "status": "PASS",
+      "mutation": "Las subordinadas objetivo antepuestas se convierten en contextos incrustados.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "candidate.runtime: nivel 1 requiere al menos 2 subordinadas objetivo antepuestas (0)"
+      ]
+    },
+    {
+      "id": "truncated-answer-and-option",
+      "status": "PASS",
+      "mutation": "Se trunca la unidad verbal en answer y en la opcion correcta, sincronizando accepted y runtimeFingerprint.",
+      "expected": "REJECTED",
+      "observed": "REJECTED",
+      "validatorFailures": [
+        "de-futur-eins-choice-editorial-1: \"anrufen\" no contiene la unidad verbal completa (2 palabras)",
+        "de-futur-eins-choice-editorial-1: \"anrufen\" no cumple la construcción finite werden + Infinitiv"
+      ]
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:47:33.955Z"
+}

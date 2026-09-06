@@ -94,6 +94,59 @@ const FINAL_UNIT_PATTERNS = {
   'konjunktiv-vergangenheit': /\b(?:hätte|hättest|hätten|hättet|wäre|wärst|wären|wärt)$/iu,
 }
 
+const LEVEL_ONE_CONTRACT_FORMS = new Set(Object.keys(FINAL_UNIT_PATTERNS))
+const LEVEL_ONE_CONNECTORS = new Set(['dass', 'weil', 'obwohl', 'wenn', 'nachdem', 'bevor', 'ob'])
+const LEVEL_ONE_CONNECTOR_PATTERN = [...LEVEL_ONE_CONNECTORS]
+  .map((connector) => connector.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&'))
+  .join('|')
+
+function levelOneTargetClause(context) {
+  if (!isNonEmptyString(context)) return null
+  const gapIndex = context.indexOf('___')
+  if (gapIndex < 0) return null
+
+  const beforeGap = context.slice(0, gapIndex)
+  const lastSentenceBoundary = Math.max(
+    beforeGap.lastIndexOf('.'),
+    beforeGap.lastIndexOf('!'),
+    beforeGap.lastIndexOf('?'),
+  )
+  const lastClauseBoundary = Math.max(
+    lastSentenceBoundary,
+    beforeGap.lastIndexOf(','),
+    beforeGap.lastIndexOf(';'),
+    beforeGap.lastIndexOf(':'),
+  )
+  const sentenceStart = lastSentenceBoundary + 1
+  const clauseStart = lastClauseBoundary + 1
+  const prefix = context.slice(clauseStart, gapIndex).trim()
+  const connector = prefix.match(new RegExp(`^(?:[„“«»"']\\s*)?(${LEVEL_ONE_CONNECTOR_PATTERN})\\b`, 'iu'))?.[1]
+    ?.toLocaleLowerCase('de') ?? null
+  const terminal = context.slice(gapIndex + 3).match(/[.!?]/u)?.[0] ?? null
+  const followedByClauseBoundary = /^\s*,/u.test(context.slice(gapIndex + 3))
+
+  return { clauseStart, connector, followedByClauseBoundary, gapIndex, sentenceStart, terminal }
+}
+
+export function levelOneConnector(context) {
+  return levelOneTargetClause(context)?.connector ?? null
+}
+
+export function levelOnePlacement(context) {
+  const targetClause = levelOneTargetClause(context)
+  if (!targetClause?.connector) return null
+  if (
+    targetClause.connector === 'ob'
+    && targetClause.clauseStart > targetClause.sentenceStart
+    && targetClause.terminal === '?'
+  ) return 'matrix-ob'
+  if (
+    targetClause.clauseStart === targetClause.sentenceStart
+    && targetClause.followedByClauseBoundary
+  ) return 'preposed'
+  return 'embedded'
+}
+
 export function validateCandidate(candidate, spec, policy) {
   const failures = []
   const fail = (condition, message) => { if (!condition) failures.push(message) }
@@ -111,6 +164,42 @@ export function validateCandidate(candidate, spec, policy) {
   if (runtimeKeys.every((key) => Array.isArray(candidate.runtime?.[key]))) {
     for (const key of ['choice', 'micro', 'long', 'error', 'separation', 'finalStories']) {
       fail(candidate.runtime[key].length === coverage[key], `candidate.runtime: ${key} ${candidate.runtime[key].length}/${coverage[key]}`)
+    }
+    const levelOneContract = spec.levelOneClauseContract
+    if (levelOneContract) {
+      const connectors = candidate.runtime.choice.map((item) => levelOneConnector(item.context))
+      for (const [index, connector] of connectors.entries()) {
+        const itemId = candidate.runtime.choice[index]?.id ?? `choice ${index + 1}`
+        fail(Boolean(connector), `${itemId}: falta un conector antes del hueco de nivel 1`)
+        if (connector) fail(levelOneContract.allowedConnectors.includes(connector), `${itemId}: conector ${connector} fuera del contrato de nivel 1`)
+      }
+      const connectorCounts = new Map()
+      for (const connector of connectors.filter(Boolean)) connectorCounts.set(connector, (connectorCounts.get(connector) ?? 0) + 1)
+      fail(connectorCounts.size >= levelOneContract.minimumDistinctConnectors, `candidate.runtime: nivel 1 requiere al menos ${levelOneContract.minimumDistinctConnectors} conectores distintos (${connectorCounts.size})`)
+      for (const [connector, count] of connectorCounts) {
+        fail(count <= levelOneContract.maximumUsesPerConnector, `candidate.runtime: nivel 1 usa ${connector} ${count}/${levelOneContract.maximumUsesPerConnector}`)
+      }
+      const interrogativeContexts = candidate.runtime.choice.filter((item) => isNonEmptyString(item.context) && /\?\s*$/u.test(item.context)).length
+      fail(interrogativeContexts >= levelOneContract.minimumInterrogativeContexts, `candidate.runtime: nivel 1 requiere al menos ${levelOneContract.minimumInterrogativeContexts} contextos interrogativos (${interrogativeContexts})`)
+      const placements = candidate.runtime.choice.map((item) => levelOnePlacement(item.context))
+      const matrixObQuestions = placements.filter((placement) => placement === 'matrix-ob').length
+      fail(matrixObQuestions >= levelOneContract.minimumMatrixObQuestions, `candidate.runtime: nivel 1 requiere al menos ${levelOneContract.minimumMatrixObQuestions} preguntas matrices con ob (${matrixObQuestions})`)
+      const preposedTargetClauses = placements.filter((placement) => placement === 'preposed').length
+      fail(preposedTargetClauses >= levelOneContract.minimumPreposedTargetClauses, `candidate.runtime: nivel 1 requiere al menos ${levelOneContract.minimumPreposedTargetClauses} subordinadas objetivo antepuestas (${preposedTargetClauses})`)
+
+      if (levelOneContract.requireContiguousVerbalUnit) {
+        const unitPattern = FINAL_UNIT_PATTERNS[spec.id]
+        for (const item of candidate.runtime.choice) {
+          fail(Array.isArray(item.options) && item.options.length > 0, `${item.id ?? 'reto de nivel 1'}: faltan opciones`)
+          const responses = [...new Set([item.answer, ...(Array.isArray(item.options) ? item.options : [])])]
+          for (const response of responses) {
+            fail(isNonEmptyString(response), `${item.id ?? 'reto de nivel 1'}: respuesta u opción vacía`)
+            if (!isNonEmptyString(response)) continue
+            fail(tokenCount(response) >= spec.minimumFinalUnitTokens, `${item.id ?? 'reto de nivel 1'}: "${response}" no contiene la unidad verbal completa (${spec.minimumFinalUnitTokens} palabras)`)
+            if (unitPattern) fail(unitPattern.test(response), `${item.id ?? 'reto de nivel 1'}: "${response}" no cumple la construcción ${spec.construction}`)
+          }
+        }
+      }
     }
     const finalGaps = candidate.runtime.finalStories.flatMap((story) => Array.isArray(story.gaps) ? story.gaps : [])
     fail(finalGaps.length >= coverage.finalStoryMinimumGaps, `candidate.runtime: nivel 6 requiere al menos ${coverage.finalStoryMinimumGaps} decisiones`)
@@ -256,6 +345,21 @@ export function validateHarness(harness, config) {
     fail(Array.isArray(spec.contextContract) && spec.contextContract.length > 0, `${id}: faltan anclas o funciones`)
     fail(Array.isArray(spec.separableContract) && spec.separableContract.length > 0, `${id}: falta contrato de separación`)
     fail(Number.isInteger(spec.minimumFinalUnitTokens) && spec.minimumFinalUnitTokens >= 1, `${id}: minimumFinalUnitTokens inválido`)
+    if (LEVEL_ONE_CONTRACT_FORMS.has(id)) {
+      const contract = spec.levelOneClauseContract
+      fail(contract && typeof contract === 'object' && !Array.isArray(contract), `${id}: falta levelOneClauseContract`)
+      if (contract && typeof contract === 'object' && !Array.isArray(contract)) {
+        fail(Array.isArray(contract.allowedConnectors) && contract.allowedConnectors.length >= 4, `${id}: levelOneClauseContract requiere al menos cuatro conectores permitidos`)
+        fail(Array.isArray(contract.allowedConnectors) && new Set(contract.allowedConnectors).size === contract.allowedConnectors.length, `${id}: allowedConnectors contiene duplicados`)
+        fail(Array.isArray(contract.allowedConnectors) && contract.allowedConnectors.every((connector) => LEVEL_ONE_CONNECTORS.has(connector)), `${id}: allowedConnectors contiene un conector desconocido`)
+        fail(Number.isInteger(contract.minimumDistinctConnectors) && contract.minimumDistinctConnectors >= 4 && contract.minimumDistinctConnectors <= contract.allowedConnectors?.length, `${id}: minimumDistinctConnectors inválido`)
+        fail(Number.isInteger(contract.maximumUsesPerConnector) && contract.maximumUsesPerConnector >= 1 && contract.maximumUsesPerConnector <= 3, `${id}: maximumUsesPerConnector inválido`)
+        fail(Number.isInteger(contract.minimumInterrogativeContexts) && contract.minimumInterrogativeContexts >= 2 && contract.minimumInterrogativeContexts <= policy.requiredCoverage.choice, `${id}: minimumInterrogativeContexts inválido`)
+        fail(Number.isInteger(contract.minimumMatrixObQuestions) && contract.minimumMatrixObQuestions >= 2 && contract.minimumMatrixObQuestions <= policy.requiredCoverage.choice, `${id}: minimumMatrixObQuestions inválido`)
+        fail(Number.isInteger(contract.minimumPreposedTargetClauses) && contract.minimumPreposedTargetClauses >= 2 && contract.minimumPreposedTargetClauses <= policy.requiredCoverage.choice, `${id}: minimumPreposedTargetClauses inválido`)
+        fail(contract.requireContiguousVerbalUnit === true, `${id}: nivel 1 debe exigir la unidad verbal contigua`)
+      }
+    }
     fail(id === policy.referenceForm ? spec.stage === 'approved-reference' : spec.stage === 'queued', `${id}: stage inválido`)
 
     const content = materializeFormContent(config, id)
