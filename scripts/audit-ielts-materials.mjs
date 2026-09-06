@@ -5,6 +5,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { objectiveRows, mockFromPublicHtml } from './lib/ielts-answer-key-audit.mjs';
 import { ieltsAnswerUnits, whitespaceWords } from './lib/ielts-text-metrics.mjs';
+import { withIeltsListeningProductionTranscript } from '../src/data/mocks/ielts-listening-production.ts';
 
 // Inventory and screening, NOT academic approval. Never derives a trusted key
 // from the same key being tested. Generated evidence belongs outside product code.
@@ -105,7 +106,8 @@ async function asset(url, kind) {
 const sets = [];
 for (let n = 1; n <= 20; n++) {
   const source = `src/data/mocks/ielts-set-${n}.ts`;
-  const mock = (await import(new URL(`../${source}`, import.meta.url))).default;
+  const authoredMock = (await import(new URL(`../${source}`, import.meta.url))).default;
+  const mock = withIeltsListeningProductionTranscript(authoredMock);
   const sections = skill => mock.sections.filter(s => s.skill === skill);
   const L = sections('listening'), R = sections('reading'), W = sections('writing').flatMap(s => s.questions);
   const issues = [];

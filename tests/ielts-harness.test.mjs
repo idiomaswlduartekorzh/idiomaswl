@@ -46,16 +46,26 @@ function completeRecord(root, current = material()) {
     completionEvidenceTotal: 24,
   })}\n`);
   fs.writeFileSync(path.join(root, 'asr.json'), asrReport);
+  const technicalReport = Buffer.from(`${JSON.stringify({
+    schemaVersion: 1,
+    releaseAuthorized: false,
+    status: 'PASS',
+    audioSha256: 'audio',
+    checks: { decode: true, format: true, loudness: true, timing: true },
+  })}\n`);
+  fs.writeFileSync(path.join(root, 'technical.json'), technicalReport);
   const reviewer = human('academic-reviewer');
   const reviewedAt = '2026-09-04T12:00:00.000Z';
   const evidenceFile = { evidencePath: 'fixture.json', evidenceSha256: sha256(fixture) };
   const asrEvidenceFile = { evidencePath: 'asr.json', evidenceSha256: sha256(asrReport) };
+  const technicalEvidenceFile = { evidencePath: 'technical.json', evidenceSha256: sha256(technicalReport) };
   return {
     set: 1,
     knownAudioStatus: 'FULL_MATCH_REVIEWED',
     provenance: { source: 'review-log', observedAt: '2026-09-04' },
     listening: {
       binding: { audioSha256: 'audio', transcriptSha256: 'transcript', objectiveSha256: 'objective' },
+      technicalQa: { status: 'PASS', audioSha256: 'audio', ...technicalEvidenceFile },
       machineAlignment: { status: 'PASS', audioSha256: 'audio', transcriptSha256: 'transcript', wordErrorRate: 0.03, maximumWordErrorRate: 0.08, ...asrEvidenceFile },
       questions: Array.from({ length: 40 }, (_, index) => ({ question: index + 1, startSeconds: index * 10, endSeconds: index * 10 + 5, audiblePhrase: `audible evidence ${index + 1}`, rationale: 'Audio supports the keyed response.', status: 'APPROVED', reviewer, reviewedAt })),
     },
@@ -160,6 +170,20 @@ test('machine alignment fields must agree with the hashed ASR report', () => {
     const current = material();
     const record = completeRecord(root, current);
     record.listening.machineAlignment.wordErrorRate = 0.01;
+    const result = evaluateSet(current, record, root);
+    assert.equal(result.coverage.listening, false);
+    assert.equal(result.state, 'NEEDS_FULL_EVIDENCE');
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('Listening evidence cannot pass without a hash-bound technical audio report', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ielts-harness-test-'));
+  try {
+    const current = material();
+    const record = completeRecord(root, current);
+    record.listening.technicalQa.audioSha256 = 'other-audio';
     const result = evaluateSet(current, record, root);
     assert.equal(result.coverage.listening, false);
     assert.equal(result.state, 'NEEDS_FULL_EVIDENCE');

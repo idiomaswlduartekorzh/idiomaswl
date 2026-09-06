@@ -1,5 +1,7 @@
 # Harness de consolidación de mocks IELTS
 
+La producción y conservación de audio se controlan por separado en [Producción fiable de audio IELTS](./ielts-audio-production.md). Ese pipeline debe completar sus gates antes de que la evidencia Listening pueda contar para release.
+
 El harness convierte el inventario de los 20 sets en un proceso de release reproducible. Separa las comprobaciones automáticas de la aprobación académica: un archivo existente, una coincidencia léxica o una clave que coincide consigo misma nunca hacen que un set quede listo.
 
 ## Estados
@@ -59,7 +61,7 @@ El modo `inventory` termina correctamente aunque existan bloqueos y genera la co
 
 ## Criterio mínimo de evidencia
 
-- Listening: un solo registro por Q1–Q40, timecodes, frase audible y decisión humana; además, alineación automática ASR ligada al hash del MP3 y del guion.
+- Listening: un solo registro por Q1–Q40, timecodes, frase audible y decisión humana; además, QA técnico y alineación automática ASR ligados al hash del MP3 y del guion.
 - Reading: un solo registro por Q1–Q40 con ubicación y razonamiento ligados al hash del pasaje y de la clave.
 - Writing: Task 1 compara visual, título, unidades, fechas, leyenda y legibilidad con la consigna; Task 2 revisa integridad y modalidad de respuesta.
 - Clave: fixture externo al código operativo, hash fijo y revisor humano identificado.
