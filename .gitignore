@@ -15,6 +15,10 @@
 
 # Private generated reports (student names, emails and submission evidence)
 /output/pdf/
+/output/tools/
+/output/ielts-asr/
+/output/ielts-audio/
+/output/ielts-audio-repairs/
 
 # next.js
 /.next/

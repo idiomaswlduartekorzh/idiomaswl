@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "purpose": "ASR-only phonetic variants. These values must never enter student scoring.",
+  "sets": {
+    "1": {
+      "1": {
+        "variants": ["Ardley", "Ard L E I G H"],
+        "rationale": "Whisper renders the spoken surname phonetically and splits only the final spelled letters; the canonical scored answer remains Ardleigh."
+      }
+    },
+    "7": {
+      "14": {
+        "variants": ["ship spell"],
+        "rationale": "Whisper renders the audible phrase ship's bell as the homophone-like phrase ship spell; the canonical scored answer remains bell."
+      }
+    }
+  }
+}

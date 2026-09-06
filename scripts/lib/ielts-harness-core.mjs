@@ -96,6 +96,25 @@ function verifyMachineAlignmentEvidence(root, alignment, expected) {
   }
 }
 
+function verifyTechnicalAudioEvidence(root, technical, expectedAudioSha256) {
+  if (!verifyEvidenceFile(root, technical)) return false;
+  try {
+    const report = JSON.parse(fs.readFileSync(path.resolve(root, technical.evidencePath), 'utf8'));
+    const file = Array.isArray(report.files)
+      ? report.files.find(candidate => candidate.audioSha256 === expectedAudioSha256)
+      : report;
+    return report.schemaVersion === 1
+      && report.releaseAuthorized === false
+      && ['PASS', 'technical_qa_passed_pending_transcript_and_owner_listening_review'].includes(report.status)
+      && file?.audioSha256 === expectedAudioSha256
+      && file.checks
+      && Object.keys(file.checks).length > 0
+      && Object.values(file.checks).every(Boolean);
+  } catch {
+    return false;
+  }
+}
+
 export function hydrateRegistry(registry, root) {
   validateRegistry(registry);
   return {
@@ -145,6 +164,9 @@ function evidenceCoverage(material, record, root) {
       && nonempty(entry.rationale)
     ))
     && sameBinding(record.listening.binding, listeningBinding)
+    && record.listening.technicalQa?.status === 'PASS'
+    && record.listening.technicalQa?.audioSha256 === audioSha256
+    && verifyTechnicalAudioEvidence(root, record.listening.technicalQa, audioSha256)
     && record.listening.machineAlignment?.status === 'PASS'
     && record.listening.machineAlignment?.audioSha256 === audioSha256
     && record.listening.machineAlignment?.transcriptSha256 === material.listeningTranscriptSha256
@@ -355,6 +377,7 @@ export function evidenceScaffold(material) {
     },
     listening: {
       binding: { audioSha256, transcriptSha256: material.listeningTranscriptSha256, objectiveSha256: material.objectiveSha256 },
+      technicalQa: { status: 'PENDING', evidencePath: '', evidenceSha256: '', audioSha256 },
       machineAlignment: { status: 'PENDING', engine: '', evidencePath: '', evidenceSha256: '', audioSha256, transcriptSha256: material.listeningTranscriptSha256, wordErrorRate: null, maximumWordErrorRate: 0.08 },
       questions: Array.from({ length: 40 }, (_, index) => {
         const question = index + 1;

@@ -60,6 +60,8 @@ RECEPTIONIST: Shall I put you down for thirty minutes or a full hour?
 
 CUSTOMER: A full hour, please.
 
+RECEPTIONIST: Just so it is clear, no, coaching is not included with membership; it is charged separately.
+
 RECEPTIONIST: Done. Is there anything else you need?
 
 CUSTOMER: Do you have racket hire?
