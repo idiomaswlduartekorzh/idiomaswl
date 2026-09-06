@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "formId": "futur-zwei",
+  "role": "integrator",
+  "verdict": "PASS",
+  "candidateFingerprint": "70ff7ee73c7bc2058c8e4905333509283b345ae2ae94626d4a07f28e79d03197",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "43db139af6e3a451c9b7eb67df893272cc6e563e12535dcab37d72113327674d",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "runtimeContentFingerprint": "8fddbfcaff0e14ec012cf3ae2e8f549ff124f92be2179ecc70e633a68361b580",
+  "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047",
+  "checks": [
+    {
+      "id": "candidate-runtime-equality",
+      "status": "PASS",
+      "command": "node --experimental-strip-types --no-warnings scripts/compare-german-author-runtime.mjs --run=round-2",
+      "exitCode": 0,
+      "output": "futur-zwei: MATCH; changed=0, missing=0, extra=0, order=ok.",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-1",
+      "status": "PASS",
+      "command": "npm run check:german-tense-harness",
+      "exitCode": 0,
+      "output": "PASS: 10 formas, 8 agentes, cobertura 10/10/10/10/10 + historia final.",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-2",
+      "status": "PASS",
+      "command": "npm run check:tense-quests",
+      "exitCode": 0,
+      "output": "PASS: estructura, respuestas y cobertura; 32/32 tests.",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-3",
+      "status": "PASS",
+      "command": "npm run test:german-tense-harness",
+      "exitCode": 0,
+      "output": "PASS: 9/9 tests.",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-4",
+      "status": "PASS",
+      "command": "npx tsc --noEmit",
+      "exitCode": 0,
+      "output": "PASS: TypeScript sin errores.",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-5",
+      "status": "PASS",
+      "command": "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+      "exitCode": 0,
+      "output": "PASS: ESLint sin errores.",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-6",
+      "status": "PASS",
+      "command": "npm run check:practica-catalog",
+      "exitCode": 0,
+      "output": "PASS: 465 temas y módulos protegidos verificados.",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-7",
+      "status": "PASS",
+      "command": "BASE_URL=http://localhost:3037 npx playwright test tests/e2e/german-tense-all-forms.spec.ts",
+      "exitCode": 0,
+      "output": "PASS: 11/11 recorridos Chromium en 2.7m; evidencia ejecutada por el coordinador contra localhost:3037.",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    }
+  ],
+  "findings": [],
+  "generatedAt": "2026-09-06T22:53:41.200Z"
+}

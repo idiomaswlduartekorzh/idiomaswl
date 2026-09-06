@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "formId": "plusquamperfekt",
+  "role": "warden",
+  "verdict": "PASS",
+  "candidateFingerprint": "d76c25e6c53f4bc59c75a7907ad0634cfd65250b8283d9c86b191592291f7164",
+  "harnessFingerprint": "f6d12869a5226cf6a710215599a67ce482a5ade7bc851eb5886ab49426737bf0",
+  "specFingerprint": "5c0ae26a4fda234882b9e42f9cb9037dfef9f203ff282caaa5946e457eae97c6",
+  "promptFingerprint": "041a4431812e0a19ed883bfb401a14abe8b5cb41673558a0f9ddbb75748fe87c",
+  "checks": [
+    {
+      "id": "work-order-fingerprints",
+      "status": "PASS",
+      "harnessFingerprintMatches": true,
+      "specFingerprintMatches": true,
+      "promptFingerprintMatches": true
+    },
+    {
+      "id": "required-reports",
+      "status": "PASS",
+      "reports": [
+        {
+          "role": "author",
+          "output": "author.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "morphology",
+          "output": "morphology.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "auxiliary",
+          "output": "auxiliary.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "pedagogy",
+          "output": "pedagogy.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "adversary",
+          "output": "adversary.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        },
+        {
+          "role": "integrator",
+          "output": "integration.json",
+          "verdict": "PASS",
+          "schemaValid": true,
+          "fingerprintsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "candidate-runtime-equality",
+      "status": "PASS",
+      "candidateRuntimeFingerprint": "34e92a7b1e926d5da9081239f7c45f14219acec4da8594ad005a27191d19d63b",
+      "currentRuntimeFingerprint": "34e92a7b1e926d5da9081239f7c45f14219acec4da8594ad005a27191d19d63b"
+    },
+    {
+      "id": "integration-commit",
+      "status": "PASS",
+      "expectedCommit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047",
+      "reportedCommit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "integration-candidate-runtime-equality",
+      "status": "PASS",
+      "command": "node --experimental-strip-types --no-warnings scripts/compare-german-author-runtime.mjs --run=round-2",
+      "exitCode": 0,
+      "integrationCheckId": "candidate-runtime-equality",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-1",
+      "status": "PASS",
+      "command": "npm run check:german-tense-harness",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-1",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-2",
+      "status": "PASS",
+      "command": "npm run check:tense-quests",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-2",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-3",
+      "status": "PASS",
+      "command": "npm run test:german-tense-harness",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-3",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-4",
+      "status": "PASS",
+      "command": "npx tsc --noEmit",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-4",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-5",
+      "status": "PASS",
+      "command": "npx eslint src/components/practica/TenseQuestEngine.tsx src/data/practica/german-*.ts scripts/german-tense-harness.mjs scripts/lib/german-tense-harness-core.mjs",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-5",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-6",
+      "status": "PASS",
+      "command": "npm run check:practica-catalog",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-6",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "runtime-gate-7",
+      "status": "PASS",
+      "command": "BASE_URL=http://localhost:3037 npx playwright test tests/e2e/german-tense-all-forms.spec.ts",
+      "exitCode": 0,
+      "integrationCheckId": "runtime-gate-7",
+      "commit": "87f7e09e8c7d6ac7b3f4996d5a5fd5dc0739e047"
+    },
+    {
+      "id": "local-review-url",
+      "status": "PASS",
+      "httpStatus": 200,
+      "url": "http://localhost:3037/herramientas/quizes/aleman?forms=plusquamperfekt&level=1&review=1"
+    }
+  ],
+  "findings": [],
+  "blockers": [],
+  "reviewUrl": "http://localhost:3037/herramientas/quizes/aleman?forms=plusquamperfekt&level=1&review=1",
+  "generatedAt": "2026-09-06T22:58:37.015Z"
+}
