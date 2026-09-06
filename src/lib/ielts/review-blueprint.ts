@@ -20,7 +20,7 @@ export interface IeltsReviewBlueprint {
 
 const IELTS_CONTENT_REVISIONS: Readonly<Record<number, number>> = {
   1: 4,
-  2: 2,
+  2: 3,
   5: 3,
   6: 3,
   7: 3,
