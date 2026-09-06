@@ -6,7 +6,7 @@ import { TOEFL_EXERCISE_COUNT, TOEFL_EXERCISE_SECTIONS } from '@/data/practica/t
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'TOEFL Practice Exercises: Reading, Listening, Writing, and Speaking',
+  title: 'TOEFL Practice: Reading, Listening, Writing & Speaking',
   description: 'Choose a TOEFL task family, then select one of the available practice sets.',
 };
 
