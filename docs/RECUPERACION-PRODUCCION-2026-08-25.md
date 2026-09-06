@@ -67,24 +67,6 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 ## 4. Trabajos activos que todavía no deben desplegarse
 
-### Captura unificada de leads de exámenes — 5 de septiembre de 2026
-
-- Rama: `codex/unify-exam-leads-20260905`; base `5af12736` de `origin/main`.
-- Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex, corrección del panel de José.
-- Causa verificada: ICFES/SAT bloqueaban el resultado hasta guardar contacto; IELTS y
-  TOEFL guardaban nombre/correo solo en `exam_submissions`; Goethe, DELF, CILS/CELI,
-  CELPE-Bras, Cambridge y la mayoría de TOPIK no tenían compuerta de contacto.
-- Alcance: nombre, correo válido y WhatsApp plausible obligatorios antes del resultado
-  para los diez exámenes; el lead se confirma antes de avanzar; el panel recupera las
-  entregas históricas con correo sin inventar teléfonos ausentes; se rechazan teléfonos
-  cortos, excesivos o formados por un solo dígito repetido.
-- Sin migración de Supabase: reutiliza la tabla `leads` y sus políticas actuales.
-- Validado: 3 pruebas nuevas del contrato de captura, TypeScript global, ESLint acotado
-  sin errores, guardianes de catálogo/admin/hub, regresiones IELTS/TOEFL y build Webpack
-  de 2.515 páginas.
-- Pendiente real: integrar en `main`, esperar el deployment de Vercel y ejecutar smoke
-  productivo con un lead controlado por tipo de runner.
-
 ### Atribución WhatsApp — 4 de septiembre de 2026
 
 - Rama: `codex/whatsapp-attribution-admin`; base `09d82c99` de `origin/main`.
@@ -220,3 +202,23 @@ Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview
 - Japonés A2 llegó a 20 escenarios y 100 simulaciones en `codex/habla-japones-a2`.
   Rebasado sobre `77476a11`, pasó release guard, guardián profundo (10/24, 200/480),
   catálogo, TypeScript y build Webpack de 2.499 páginas; queda listo para fast-forward.
+
+### 6 de septiembre de 2026
+
+- La captura unificada de leads quedó `DESPLEGADA`. ICFES/SAT ya no son los únicos
+  runners que bloquean el resultado hasta guardar contacto: IELTS, TOEFL, Goethe,
+  DELF, CILS/CELI, CELPE-Bras, Cambridge y TOPIK exigen nombre, correo válido y
+  WhatsApp plausible. El panel también recupera entregas históricas con correo sin
+  inventar teléfonos ausentes.
+- La rama local `codex/unify-exam-leads-20260905`, basada en `5af12736`, se integró en
+  `main` como `3a12afb2`. No se publicó una rama remota separada.
+- No hubo migración de Supabase: se reutilizaron la tabla `leads` y sus políticas.
+- Pasaron 3 pruebas nuevas del contrato de captura, TypeScript global, ESLint acotado
+  sin errores, guardianes de catálogo/admin/hub, regresiones IELTS/TOEFL y el build
+  Webpack de 2.515 páginas.
+- El deployment Vercel `BzFtiYxJbynNtcbaRCNMDb9DBKjN`
+  (`idiomaswl-5fubkrjhg-idiomaswlduartekorzhs-projects.vercel.app`) quedó `READY` en
+  12 min 4 s.
+- El smoke productivo devolvió HTTP 200 en IELTS Set 1, TOEFL Set 1 y Goethe A1-1; el
+  panel administrativo redirigió correctamente a `/login` y terminó en HTTP 200. No
+  se creó ningún lead ficticio en producción.
