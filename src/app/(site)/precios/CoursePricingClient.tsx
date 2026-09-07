@@ -9,7 +9,7 @@ import {
 import CourseEnrollmentForm from './CourseEnrollmentForm';
 import styles from './course-pricing.module.css';
 
-export default function CoursePricingClient({ initialSelection, corrected }: { initialSelection: Selection; corrected: boolean }) {
+export default function CoursePricingClient({ initialSelection, corrected, salesEnabled }: { initialSelection: Selection; corrected: boolean; salesEnabled: boolean }) {
   const [selection, setSelection] = useState(initialSelection);
   const [reviewing, setReviewing] = useState(false);
   const [copyStatus, setCopyStatus] = useState('');
@@ -118,7 +118,7 @@ export default function CoursePricingClient({ initialSelection, corrected }: { i
           <div><dt>Precio del ciclo</dt><dd>{formatCOP(plan.price)} COP</dd></div>
         </dl>
         <p className={styles.small}>El horario se coordina después del pago. La preparación de exámenes no incluye la inscripción al examen oficial.</p>
-        <CourseEnrollmentForm key={selectionPath(selection)} selection={selection} />
+        <CourseEnrollmentForm key={selectionPath(selection)} selection={selection} salesEnabled={salesEnabled} />
         <a className={styles.secondary} href={whatsappLink(selection)} target="_blank" rel="noopener noreferrer">Necesito orientación por WhatsApp <span aria-hidden="true">↗</span></a>
         <p className={styles.small}>Se abre el mensaje para que lo revises y lo envíes tú.</p>
         <div className={styles.actions}>

@@ -19,7 +19,7 @@ function emphasizedText(text: string, highlights: readonly string[]) {
   return result.map((part, index) => <Fragment key={index}>{part}</Fragment>);
 }
 
-export default function CourseEnrollmentForm({ selection }: { selection: Selection }) {
+export default function CourseEnrollmentForm({ selection, salesEnabled }: { selection: Selection; salesEnabled: boolean }) {
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
   const [acceptedRules, setAcceptedRules] = useState(false);
@@ -27,7 +27,7 @@ export default function CourseEnrollmentForm({ selection }: { selection: Selecti
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (busy || !acceptedRules) return;
+    if (busy || !acceptedRules || !salesEnabled) return;
     const form = new FormData(event.currentTarget);
     setBusy(true);
     setMessage('');
@@ -104,8 +104,8 @@ export default function CourseEnrollmentForm({ selection }: { selection: Selecti
         <label><input name="privacy" type="checkbox" required /> {PRIVACY_NOTICE}</label>
         <label><input name="adult" type="checkbox" required /> Soy mayor de edad y tengo autorización para inscribirme o representar al estudiante y proporcionar sus datos.</label>
       </div>
-      {!COURSE_LEGAL_READY && <p className={styles.pendingLaunch}>Vista de preparación: el pago permanece desactivado hasta completar los datos legales y las pruebas de Wompi.</p>}
-      <button className={styles.primary} disabled={busy || !COURSE_LEGAL_READY}>{busy ? 'Preparando pago…' : 'Continuar al pago seguro'}</button>
+      {(!COURSE_LEGAL_READY || !salesEnabled) && <p className={styles.pendingLaunch}>Las inscripciones están temporalmente cerradas mientras terminamos la verificación del pago y los correos. Puedes revisar el plan y el reglamento; habilitaremos este botón cuando la prueba integral esté aprobada.</p>}
+      <button className={styles.primary} disabled={busy || !COURSE_LEGAL_READY || !salesEnabled}>{busy ? 'Preparando pago…' : salesEnabled ? 'Continuar al pago seguro' : 'Inscripciones temporalmente cerradas'}</button>
       <p className={styles.small}>La cuenta se crea solamente cuando Wompi confirme el pago. No almacenamos los datos de tu tarjeta.</p>
     </div>}
     <p role="status" className={styles.small}>{message}</p>

@@ -40,7 +40,8 @@ export const metadata: Metadata = candidate ? {
 export default async function PreciosPage({ searchParams }: { searchParams: Promise<Query> }) {
   if (candidate) {
     const { selection, corrected } = parseSelection(await searchParams);
-    return <CoursePricingClient key={JSON.stringify(selection)} initialSelection={selection} corrected={corrected} />;
+    const salesEnabled = process.env.COURSE_SALES_ENABLED === 'true';
+    return <CoursePricingClient key={JSON.stringify(selection)} initialSelection={selection} corrected={corrected} salesEnabled={salesEnabled} />;
   }
   return (
     <>
