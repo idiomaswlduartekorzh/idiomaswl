@@ -4,6 +4,10 @@ Esta plantilla define cómo se presentan las bibliotecas de ejercicios y las ses
 individuales. Se creó a partir de la unificación de TOEFL y puede reutilizarse en otros
 exámenes o idiomas sin copiar estilos de TOEFL.
 
+El contrato completo para expandir sets, familias, idiomas y exámenes está en
+[EXAM-PRACTICE-EXPANSION-BLUEPRINT.md](./EXAM-PRACTICE-EXPANSION-BLUEPRINT.md). Esta
+página resume únicamente la capa visual.
+
 ## Piezas compartidas
 
 - `src/components/exam-practice/PracticeRouteShell.tsx`: marco de página, ancho,
