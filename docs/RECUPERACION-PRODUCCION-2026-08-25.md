@@ -67,24 +67,6 @@ Plan estable: [`PLAN-COMUNICACION-RAMAS-Y-PRODUCCION.md`](PLAN-COMUNICACION-RAMA
 
 ## 4. Trabajos activos que todavía no deben desplegarse
 
-### Captura unificada de leads de exámenes — 5 de septiembre de 2026
-
-- Rama: `codex/unify-exam-leads-20260905`; base `5af12736` de `origin/main`.
-- Estado: `LISTO_PARA_INTEGRAR`. Responsable: Codex, corrección del panel de José.
-- Causa verificada: ICFES/SAT bloqueaban el resultado hasta guardar contacto; IELTS y
-  TOEFL guardaban nombre/correo solo en `exam_submissions`; Goethe, DELF, CILS/CELI,
-  CELPE-Bras, Cambridge y la mayoría de TOPIK no tenían compuerta de contacto.
-- Alcance: nombre, correo válido y WhatsApp plausible obligatorios antes del resultado
-  para los diez exámenes; el lead se confirma antes de avanzar; el panel recupera las
-  entregas históricas con correo sin inventar teléfonos ausentes; se rechazan teléfonos
-  cortos, excesivos o formados por un solo dígito repetido.
-- Sin migración de Supabase: reutiliza la tabla `leads` y sus políticas actuales.
-- Validado: 3 pruebas nuevas del contrato de captura, TypeScript global, ESLint acotado
-  sin errores, guardianes de catálogo/admin/hub, regresiones IELTS/TOEFL y build Webpack
-  de 2.515 páginas.
-- Pendiente real: integrar en `main`, esperar el deployment de Vercel y ejecutar smoke
-  productivo con un lead controlado por tipo de runner.
-
 ### Atribución WhatsApp — 4 de septiembre de 2026
 
 - Rama: `codex/whatsapp-attribution-admin`; base `09d82c99` de `origin/main`.
@@ -286,3 +268,22 @@ Los candidatos documentales Sets 2–20 coinciden con sus 19 hashes del tracker,
 ### Continuidad TOEFL Mac mini — paquete HR-06 actualizado, 2026-09-04
 
 Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-length-review-candidate-20260904.json` liga la revisión al snapshot `2b6bd7f9d911e4551ceac988e495a904f5e76f96`; SHA-256 `5943893930224895b1d0878abbb075a61460030442a2888ffa3bb8eddaf6a820`. El paquete `toefl-sectional-hr06-length-review-packet-20260904.md` conserva la muestra fija Set 1/5/10/15/20/9. Se requiere aprobación académica de los 646 ítems candidatos Sets 2–20 antes de importarlos. Como aún no están en el runtime, producto y académico deben completar la muestra de extremo a extremo después de una importación autorizada. La automatización de curaduría se pausa al cerrar este paquete.
+### 6 de septiembre de 2026
+
+- La captura unificada de leads quedó `DESPLEGADA`. ICFES/SAT ya no son los únicos
+  runners que bloquean el resultado hasta guardar contacto: IELTS, TOEFL, Goethe,
+  DELF, CILS/CELI, CELPE-Bras, Cambridge y TOPIK exigen nombre, correo válido y
+  WhatsApp plausible. El panel también recupera entregas históricas con correo sin
+  inventar teléfonos ausentes.
+- La rama local `codex/unify-exam-leads-20260905`, basada en `5af12736`, se integró en
+  `main` como `3a12afb2`. No se publicó una rama remota separada.
+- No hubo migración de Supabase: se reutilizaron la tabla `leads` y sus políticas.
+- Pasaron 3 pruebas nuevas del contrato de captura, TypeScript global, ESLint acotado
+  sin errores, guardianes de catálogo/admin/hub, regresiones IELTS/TOEFL y el build
+  Webpack de 2.515 páginas.
+- El deployment Vercel `BzFtiYxJbynNtcbaRCNMDb9DBKjN`
+  (`idiomaswl-5fubkrjhg-idiomaswlduartekorzhs-projects.vercel.app`) quedó `READY` en
+  12 min 4 s.
+- El smoke productivo devolvió HTTP 200 en IELTS Set 1, TOEFL Set 1 y Goethe A1-1; el
+  panel administrativo redirigió correctamente a `/login` y terminó en HTTP 200. No
+  se creó ningún lead ficticio en producción.
