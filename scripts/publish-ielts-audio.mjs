@@ -21,22 +21,30 @@ for (const entry of log.files ?? []) {
   const technicalFile = technical.files.find(file => file.setId === entry.setId);
   assert.ok(technicalFile && Object.values(technicalFile.checks).every(Boolean), `${entry.setId} technical checks are incomplete`);
   assert.equal(sha256(readFileSync(entry.path)), entry.audioSha256, `${entry.setId} staged audio changed after QA`);
-  const asrPath = path.join(generationRoot, `asr-report-set-${entry.set}.json`);
-  const humanPath = path.join(generationRoot, `human-review-set-${entry.set}.json`);
+  const setDirectory = path.dirname(entry.path);
+  const asrPath = path.join(setDirectory, `staged-asr-qa-set-${entry.set}.json`);
+  const humanPath = path.join(setDirectory, `human-review-set-${entry.set}.json`);
   assert.ok(existsSync(asrPath), `${entry.setId} ASR report is missing`);
   assert.ok(existsSync(humanPath), `${entry.setId} human review is missing`);
   const asr = JSON.parse(readFileSync(asrPath, 'utf8'));
   const human = JSON.parse(readFileSync(humanPath, 'utf8'));
   assert.equal(asr.status, 'PASS', `${entry.setId} ASR has not passed`);
   assert.equal(asr.audioSha256, entry.audioSha256, `${entry.setId} ASR belongs to another audio file`);
-  assert.equal(asr.productionManifestSha256, manifest.manifestSha256, `${entry.setId} ASR belongs to another manifest`);
+  assert.equal(asr.manifestSha256, manifest.manifestSha256, `${entry.setId} ASR belongs to another manifest`);
   assert.equal(human.status, 'APPROVED', `${entry.setId} human review has not approved the audio`);
+  assert.equal(human.set, entry.set, `${entry.setId} human review belongs to another set`);
   assert.equal(human.reviewer?.kind, 'human', `${entry.setId} requires a human reviewer`);
-  assert.notEqual(human.reviewer?.id, 'ielts-harness', `${entry.setId} cannot be self-approved by the harness`);
+  assert.ok(typeof human.reviewer?.id === 'string' && human.reviewer.id.trim()
+    && !['harness', 'ielts-harness', 'generator', 'self'].includes(human.reviewer.id.trim().toLowerCase()), `${entry.setId} requires an independent reviewer`);
+  assert.ok(typeof human.reviewedAt === 'string' && !Number.isNaN(Date.parse(human.reviewedAt)), `${entry.setId} human review needs a valid reviewedAt timestamp`);
   assert.equal(human.audioSha256, entry.audioSha256, `${entry.setId} human review belongs to another audio file`);
   assert.equal(human.manifestSha256, manifest.manifestSha256, `${entry.setId} human review belongs to another manifest`);
   assert.equal(human.listenedComplete, true, `${entry.setId} needs a complete listen-through`);
   assert.deepEqual(human.questionEvidence?.map(item => item.question), Array.from({ length: 40 }, (_, index) => index + 1), `${entry.setId} needs Q1-Q40 evidence`);
+  assert.ok(human.questionEvidence.every(item => item.status === 'APPROVED'
+    && Number.isFinite(item.startSeconds) && Number.isFinite(item.endSeconds) && item.startSeconds >= 0 && item.endSeconds > item.startSeconds
+    && typeof item.audiblePhrase === 'string' && item.audiblePhrase.trim()
+    && typeof item.rationale === 'string' && item.rationale.trim()), `${entry.setId} Q1-Q40 evidence must include approved timecodes, audible phrase and rationale`);
 
   const row = manifest.rows.find(candidate => candidate.set === entry.set);
   const destination = path.join(root, 'public', row.audioUrl);

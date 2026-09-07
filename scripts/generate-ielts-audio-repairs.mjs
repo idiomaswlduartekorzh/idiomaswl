@@ -7,6 +7,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { mediaBinary } from './lib/ielts-audio-timing.mjs';
 import { sha256, ttsText } from './lib/ielts-audio-production.mjs';
+import { elevenLabsApiKey } from './lib/elevenlabs-api-key.mjs';
 
 const API = 'https://api.elevenlabs.io';
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -143,8 +144,7 @@ const cap = Number(value('--max-usd'));
 assert.ok(Number.isFinite(cap) && cap >= requestedUsd && cap <= casting.approval_scope.approved_max_usd_before_tax, `Repair cost ${requestedUsd.toFixed(4)} exceeds cap or authorization`);
 const reserve = Number(value('--min-remaining-credits'));
 assert.ok(Number.isFinite(reserve) && reserve >= casting.approval_scope.minimum_remaining_credits, 'Protected credit reserve is too low');
-const apiKey = process.env.ELEVENLABS_API_KEY;
-assert.ok(apiKey, 'ELEVENLABS_API_KEY is required only for paid repair generation');
+const apiKey = elevenLabsApiKey(root);
 const account = await accountSnapshot(apiKey);
 const estimatedCredits = Math.ceil(requestedCharacters * casting.credits_per_character);
 assert.ok(account.availableCredits >= estimatedCredits + reserve, `Need ${estimatedCredits} credits plus ${reserve} reserve; only ${account.availableCredits} available`);

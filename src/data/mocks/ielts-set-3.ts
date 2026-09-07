@@ -40,7 +40,7 @@ ASSISTANT: Do you have an email address?
 
 MEMBER: Yes, it's sophie.marsh@greenmail.co.uk.
 
-ASSISTANT: What type of membership are you interested in? We offer standard, which gives you up to eight books for three weeks, or premium, which gives you twelve books and access to our digital archive.
+ASSISTANT: What type of membership are you interested in? We offer standard, which gives you up to eight books for three weeks.
 
 MEMBER: I think standard is fine for now.
 
@@ -49,6 +49,8 @@ ASSISTANT: Great. There's a one-off registration fee of two pounds.
 MEMBER: That's fine. Can I also reserve books online?
 
 ASSISTANT: Yes, with standard membership you can reserve up to three books at a time through our website.
+
+ASSISTANT: Premium membership gives you twelve books and access to our digital archive.
 
 ASSISTANT: Are you interested in any particular subject area? We can send you newsletters about new arrivals.
 
@@ -192,7 +194,7 @@ Support resources
       instructions: 'You will hear a seminar discussion between a tutor and two students about urban farming. Listen and answer Questions 21–30.',
       transcript: `TUTOR: Right, let's begin. You've both looked at the reading on urban farming. What were your initial impressions?
 
-LEE: I found it really interesting. I hadn't realised how many different forms urban farming can take — rooftop gardens, vertical farms, community allotments.
+LEE: I found it really interesting. I hadn't realised how many different forms urban farming can take — rooftop gardens, vertical farms with stacked layers, and community allotments.
 
 ANNA: Yes. What struck me most was the potential for urban farming to address food security issues in cities. If residents can grow some of their own produce, that reduces dependence on supply chains that can be disrupted.
 
@@ -319,7 +321,7 @@ Key challenges
 
 The earliest known writing system is cuneiform, developed by the Sumerians of ancient Mesopotamia around 3200 BCE. Originally pictographic — that is, based on simple pictures representing objects — cuneiform evolved over centuries into a more abstract system of wedge-shaped marks pressed into clay tablets with a reed stylus. It was used mainly for administrative and commercial record-keeping: lists of goods, taxes, and transactions.
 
-Independently, and around the same time, hieroglyphics emerged in ancient Egypt. Like early cuneiform, Egyptian hieroglyphics began as a pictographic system but also developed symbols representing sounds, making it a mixed system. Hieroglyphics were used not only for administration but also for religious texts, royal inscriptions, and later, literary works.
+Independently, and around the same time, hieroglyphics emerged in ancient Egypt. Like early cuneiform, Egyptian hieroglyphics began as a pictographic system but also developed sound symbols, making it a mixed system. Hieroglyphics were used not only for administration but also for religious texts, royal inscriptions, and later, literary works.
 
 Both systems were highly complex and required years of specialist training to master. Literacy was therefore restricted to a small professional class of scribes, who held considerable social power.
 

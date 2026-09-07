@@ -121,13 +121,20 @@ export function auditScript(mock, expandedSections, policy) {
   const failures = [];
   if (JSON.stringify(numbers) !== JSON.stringify(expected)) failures.push('Listening numbering is not exactly Q1-Q40');
   const completionSupport = [];
+  const cursors = new Map(expandedSections.map(section => [section.part, 0]));
   for (const row of rows.filter(candidate => candidate.kind === 'fill').sort((a, b) => a.number - b.number)) {
     const section = sectionForObjectiveRow(expandedSections, row);
     const haystack = normalizedEvidenceText(section?.transcript);
     const variants = row.accepted.map(normalizedEvidenceText).filter(Boolean);
     const found = variants.some(variant => ` ${haystack} `.includes(` ${variant} `));
-    completionSupport.push({ question: row.number, part: section?.part ?? null, accepted: row.accepted, found });
+    const cursor = cursors.get(section?.part) ?? 0;
+    const orderedMatches = variants.map(variant => ({ variant, index: ` ${haystack} `.indexOf(` ${variant} `, cursor) })).filter(match => match.index >= 0).sort((left, right) => left.index - right.index);
+    const orderedMatch = orderedMatches[0] ?? null;
+    const foundInOrder = Boolean(orderedMatch);
+    if (orderedMatch) cursors.set(section.part, orderedMatch.index + orderedMatch.variant.length + 2);
+    completionSupport.push({ question: row.number, part: section?.part ?? null, accepted: row.accepted, found, foundInOrder, sourceCharacterOffset: orderedMatch?.index ?? null });
     if (!found) failures.push(`Q${row.number} completion answer absent from Part ${section?.part ?? '?'}`);
+    else if (!foundInOrder) failures.push(`Q${row.number} completion answer occurs before the preceding completion answer in Part ${section?.part ?? '?'}`);
   }
   const partWords = expandedSections.map(section => ({ part: section.part, words: wordCount(section.transcript) }));
   for (const part of partWords) {
@@ -155,7 +162,11 @@ export function buildInvoice(rows, policy, modelId = policy.generation.defaultMo
   const usdRate = Number(policy.generation.apiPriceUsdPer1000Characters[modelId]);
   assert.ok(Number.isFinite(rate) && Number.isFinite(usdRate), `Missing pricing policy for ${modelId}`);
   const billableCharacters = rows.reduce((total, row) => total + (row.billableCharacters ?? row.sourceCharacters), 0);
-  const estimatedCredits = rows.reduce((total, row) => total + row.segments.reduce((sum, segment) => sum + Math.ceil((segment.billableCharacters ?? segment.characters) * rate), 0), 0);
+  const estimatedCredits = rows.reduce((total, row) => total + row.segments.reduce((sum, segment) => {
+    const characters = Number(segment.billableCharacters ?? segment.characters);
+    assert.ok(Number.isFinite(characters) && characters >= 0, 'Invoice segments require a finite non-negative character count');
+    return sum + Math.ceil(characters * rate);
+  }, 0), 0);
   const contingencyCredits = Math.ceil(estimatedCredits * Number(policy.generation.budgetContingencyRatio));
   return {
     modelId,
@@ -166,5 +177,24 @@ export function buildInvoice(rows, policy, modelId = policy.generation.defaultMo
     maximumPlannedCredits: estimatedCredits + contingencyCredits,
     estimatedUsdBeforeTax: Number((billableCharacters / 1000 * usdRate).toFixed(4)),
     generationAuthorized: false,
+  };
+}
+
+export function reviewPaddingPlan(baseDurationSeconds, minimumDurationSeconds, maximumDurationSeconds, slots) {
+  for (const [label, value] of Object.entries({ baseDurationSeconds, minimumDurationSeconds, maximumDurationSeconds, slots })) {
+    assert.ok(Number.isFinite(value) && value >= 0, `${label} must be finite and non-negative`);
+  }
+  assert.ok(maximumDurationSeconds >= minimumDurationSeconds, 'maximum duration must be at least the minimum duration');
+  if (baseDurationSeconds >= minimumDurationSeconds) {
+    return { targetDurationSeconds: baseDurationSeconds, totalPaddingSeconds: 0, paddingPerSlotSeconds: 0, slots };
+  }
+  assert.ok(slots > 0, 'at least one review-pause slot is required when padding is needed');
+  const targetDurationSeconds = Math.min(maximumDurationSeconds, minimumDurationSeconds + 5);
+  const totalPaddingSeconds = targetDurationSeconds - baseDurationSeconds;
+  return {
+    targetDurationSeconds,
+    totalPaddingSeconds,
+    paddingPerSlotSeconds: totalPaddingSeconds / slots,
+    slots,
   };
 }

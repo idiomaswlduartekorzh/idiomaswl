@@ -51,7 +51,7 @@ for (const entry of log.files ?? []) {
     silenceRatio: timing.checks.silenceRatio,
     longestSilence: timing.checks.longestSilence,
     noArtificialTrailingPadding: timing.checks.noArtificialTrailingPadding,
-    loudnessNearTarget: Math.abs(Number(loudness.input_i) - casting.target.integrated_loudness_lufs) <= 1,
+    loudnessNearTarget: Math.abs(Number(loudness.input_i) - casting.target.integrated_loudness_lufs) <= casting.target.integrated_loudness_tolerance_lu,
     truePeakWithinCeiling: Number(loudness.input_tp) <= casting.target.max_true_peak_dbfs + 0.1,
   };
   const failedChecks = Object.entries(checks).filter(([, passed]) => !passed).map(([name]) => name);

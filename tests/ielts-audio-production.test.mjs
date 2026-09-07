@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
-import { integerToEnglish, ttsText } from '../scripts/lib/ielts-audio-production.mjs';
+import { buildInvoice, integerToEnglish, reviewPaddingPlan, ttsText } from '../scripts/lib/ielts-audio-production.mjs';
 
 const manifest = JSON.parse(readFileSync('config/ielts-audio/production-manifest.json', 'utf8'));
 const casting = JSON.parse(readFileSync('config/ielts-audio/voice-casting.json', 'utf8'));
@@ -12,15 +12,39 @@ test('production scope preserves reusable audio and queues only known missing or
   assert.deepEqual(manifest.rows.filter(row => row.action === 'REPLACE_CONFIRMED_MISMATCH').map(row => row.set), [2, 3, 4]);
   assert.deepEqual(manifest.rows.filter(row => row.action === 'CREATE_MISSING').map(row => row.set), [13, 14, 15, 16, 17, 18, 19, 20]);
   assert.ok(manifest.rows.filter(row => ['REPLACE_CONFIRMED_MISMATCH', 'CREATE_MISSING'].includes(row.action)).every(row => row.scriptAudit.status === 'PASS'));
+  assert.ok(manifest.rows.every(row => row.scriptAudit.completionSupport.every(item => item.foundInOrder === true)));
   assert.equal(casting.manifest_sha256, manifest.manifestSha256);
 });
 
 test('invoice is conservative and Flash remains cheaper than batch Multilingual', () => {
   assert.equal(manifest.invoice.requiredProduction.files, 11);
-  assert.equal(manifest.invoice.requiredProduction.estimatedCredits, 105489);
-  assert.equal(manifest.invoice.requiredProduction.maximumPlannedCredits, 126587);
-  assert.equal(manifest.invoice.fallbackAllMultilingual.estimatedCredits, 210420);
+  assert.equal(manifest.invoice.requiredProduction.estimatedCredits, 105076);
+  assert.equal(manifest.invoice.requiredProduction.maximumPlannedCredits, 126092);
+  assert.equal(manifest.invoice.fallbackAllMultilingual.estimatedCredits, 209598);
   assert.ok(manifest.invoice.requiredProduction.estimatedCredits < manifest.invoice.fallbackAllMultilingual.estimatedCredits);
+});
+
+test('invoice fails closed when a generated segment has no character count', () => {
+  const policy = {
+    generation: {
+      defaultModelId: 'test-model',
+      creditsPerCharacter: { 'test-model': 0.5 },
+      apiPriceUsdPer1000Characters: { 'test-model': 0.05 },
+      budgetContingencyRatio: 0.2,
+    },
+  };
+  assert.throws(
+    () => buildInvoice([{ sourceCharacters: 10, segments: [{ text: 'missing frozen count' }] }], policy),
+    /finite non-negative character count/,
+  );
+});
+
+test('short assemblies distribute enough review time to enter the official duration window', () => {
+  const plan = reviewPaddingPlan(1494.467, 1740, 1800, 11);
+  assert.equal(plan.targetDurationSeconds, 1745);
+  assert.equal(Number(plan.totalPaddingSeconds.toFixed(3)), 250.533);
+  assert.ok(plan.paddingPerSlotSeconds < 23);
+  assert.equal(reviewPaddingPlan(1750, 1740, 1800, 11).totalPaddingSeconds, 0);
 });
 
 test('Flash text normalization makes numbers, phones, currency and spelling explicit', () => {

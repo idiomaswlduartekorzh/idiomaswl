@@ -9,8 +9,9 @@ import process from 'node:process';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { withIeltsListeningProductionTranscript } from '../src/data/mocks/ielts-listening-production.ts';
-import { buildInvoice, plannedSegments, sha256, ttsText } from './lib/ielts-audio-production.mjs';
+import { buildInvoice, plannedSegments, reviewPaddingPlan, sha256, ttsText } from './lib/ielts-audio-production.mjs';
 import { mediaBinary } from './lib/ielts-audio-timing.mjs';
+import { elevenLabsApiKey } from './lib/elevenlabs-api-key.mjs';
 
 const API = 'https://api.elevenlabs.io';
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -71,8 +72,7 @@ async function accountSnapshot(apiKey) {
 }
 
 async function showReadOnlyData() {
-  const apiKey = process.env.ELEVENLABS_API_KEY;
-  assert.ok(apiKey, 'ELEVENLABS_API_KEY is required for read-only account or voice queries');
+  const apiKey = elevenLabsApiKey(root);
   if (has('--account')) console.log(JSON.stringify(await accountSnapshot(apiKey), null, 2));
   if (has('--list-voices')) {
     const payload = await apiJson('/v2/voices?page_size=100', apiKey);
@@ -90,7 +90,11 @@ async function hydrate(row) {
   const authored = (await import(`../src/data/mocks/ielts-set-${row.set}.ts`)).default;
   const mock = withIeltsListeningProductionTranscript(authored);
   const sections = mock.sections.filter(section => section.skill === 'listening').sort((a, b) => a.part - b.part);
-  const segments = sections.flatMap(section => plannedSegments(section, row.accentTarget, row.set, policy));
+  const segments = sections.flatMap(section => plannedSegments(section, row.accentTarget, row.set, policy)).map(segment => ({
+    ...segment,
+    characters: segment.text.length,
+    billableCharacters: ttsText(segment.text).length,
+  }));
   assert.deepEqual(segments.map(segment => ({
     kind: segment.kind,
     part: segment.part,
@@ -134,8 +138,7 @@ async function generationGate(rows) {
   const reserve = Number(value('--min-remaining-credits'));
   assert.ok(Number.isFinite(reserve) && reserve >= Number(casting.approval_scope.minimum_remaining_credits), 'Credit reserve is below policy');
   assert.ok(commandAvailable('ffmpeg') && commandAvailable('ffprobe'), 'ffmpeg and ffprobe are required before any provider call');
-  const apiKey = process.env.ELEVENLABS_API_KEY;
-  assert.ok(apiKey, 'ELEVENLABS_API_KEY is required only for paid generation');
+  const apiKey = elevenLabsApiKey(root);
   const account = await accountSnapshot(apiKey);
   assert.ok(invoice.estimatedCredits + reserve <= account.availableCredits, `Need ${invoice.estimatedCredits} credits plus ${reserve} reserve; only ${account.availableCredits} available`);
   const voices = await apiJson('/v2/voices?page_size=100', apiKey);
@@ -186,12 +189,21 @@ function prepareSegment(source, target) {
 }
 
 function silenceFile(directory, seconds) {
-  const file = path.join(directory, `silence-${String(seconds).replace('.', '_')}.wav`);
+  const roundedSeconds = Number(seconds.toFixed(3));
+  const file = path.join(directory, `silence-${roundedSeconds.toFixed(3).replace('.', '_')}.wav`);
   if (existsSync(file)) return file;
-  const result = spawnSync(mediaBinary('ffmpeg'), ['-y', '-hide_banner', '-loglevel', 'error', '-f', 'lavfi', '-t', String(seconds),
+  const result = spawnSync(mediaBinary('ffmpeg'), ['-y', '-hide_banner', '-loglevel', 'error', '-f', 'lavfi', '-t', String(roundedSeconds),
     '-i', 'anullsrc=r=44100:cl=mono', '-c:a', 'pcm_s16le', file], { encoding: 'utf8' });
   assert.equal(result.status, 0, `Silence generation failed: ${result.stderr}`);
   return file;
+}
+
+function durationSeconds(file) {
+  const probe = spawnSync(mediaBinary('ffprobe'), ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', file], { encoding: 'utf8' });
+  assert.equal(probe.status, 0, `Duration probe failed for ${file}: ${probe.stderr}`);
+  const duration = Number(probe.stdout.trim());
+  assert.ok(Number.isFinite(duration) && duration > 0, `Invalid duration for ${file}`);
+  return duration;
 }
 
 function assemble(row, segmentPaths, target, workDirectory) {
@@ -201,11 +213,20 @@ function assemble(row, segmentPaths, target, workDirectory) {
     if (!existsSync(file)) prepareSegment(source, file);
     return file;
   });
+  const reviewSlots = row.segments.filter(segment => segment.kind === 'announcer' && segment.pauseAfterSeconds > 0).length;
+  const plannedSilenceSeconds = row.segments.reduce((total, segment, index) => {
+    const next = row.segments[index + 1];
+    return total + segment.pauseAfterSeconds + (next && next.part !== segment.part ? casting.target.silence_between_parts_seconds : 0);
+  }, 0);
+  const baseDurationSeconds = prepared.reduce((total, file) => total + durationSeconds(file), plannedSilenceSeconds);
+  const padding = reviewPaddingPlan(baseDurationSeconds, casting.target.minimum_duration_seconds, casting.target.maximum_duration_seconds, reviewSlots);
   const list = [];
   prepared.forEach((file, index) => {
     list.push(`file '${file.replaceAll("'", "'\\''")}'`);
     const segment = row.segments[index];
-    if (segment.pauseAfterSeconds > 0) list.push(`file '${silenceFile(workDirectory, segment.pauseAfterSeconds)}'`);
+    const reviewPadding = segment.kind === 'announcer' && segment.pauseAfterSeconds > 0 ? padding.paddingPerSlotSeconds : 0;
+    const pauseAfterSeconds = segment.pauseAfterSeconds + reviewPadding;
+    if (pauseAfterSeconds > 0) list.push(`file '${silenceFile(workDirectory, pauseAfterSeconds)}'`);
     const next = row.segments[index + 1];
     if (next && next.part !== segment.part) list.push(`file '${silenceFile(workDirectory, casting.target.silence_between_parts_seconds)}'`);
   });
@@ -224,10 +245,17 @@ function assemble(row, segmentPaths, target, workDirectory) {
   const filter = [`loudnorm=I=${casting.target.integrated_loudness_lufs}`, 'LRA=7', `TP=${casting.target.normalization_true_peak_dbfs}`,
     `measured_I=${measured.input_i}`, `measured_LRA=${measured.input_lra}`, `measured_TP=${measured.input_tp}`,
     `measured_thresh=${measured.input_thresh}`, `offset=${measured.target_offset}`, 'linear=true'].join(':');
-  const encoded = spawnSync(mediaBinary('ffmpeg'), ['-y', '-hide_banner', '-loglevel', 'error', '-i', wav, '-af', filter,
+  const encoded = spawnSync(mediaBinary('ffmpeg'), ['-y', '-hide_banner', '-loglevel', 'error', '-i', wav, '-af', `${filter},alimiter=limit=0.63:attack=5:release=50:level=false:latency=1`,
     '-ar', String(casting.target.final_sample_rate_hz), '-ac', String(casting.target.final_channels), '-b:a', casting.target.final_bitrate, target], { encoding: 'utf8' });
   if (existsSync(wav)) unlinkSync(wav);
   assert.equal(encoded.status, 0, `Final encoding failed: ${encoded.stderr}`);
+  return {
+    baseDurationSeconds: Number(baseDurationSeconds.toFixed(3)),
+    targetDurationSeconds: Number(padding.targetDurationSeconds.toFixed(3)),
+    distributedReviewPaddingSeconds: Number(padding.totalPaddingSeconds.toFixed(3)),
+    reviewPauseSlots: padding.slots,
+    addedSecondsPerReviewPause: Number(padding.paddingPerSlotSeconds.toFixed(3)),
+  };
 }
 
 async function generate(rows) {
@@ -241,7 +269,7 @@ async function generate(rows) {
   const logPath = path.join(output, 'generation-log.json');
   const previous = existsSync(logPath) ? JSON.parse(readFileSync(logPath, 'utf8')) : null;
   if (previous) assert.equal(previous.manifestSha256, manifest.manifestSha256, 'Resume log belongs to a stale manifest');
-  const files = previous?.files ?? [];
+  let files = previous?.files ?? [];
   const complete = new Set(files.map(file => file.set));
   let conservativeAvailableCredits = gate.account.availableCredits;
   const writeLog = status => writeFileSync(logPath, `${JSON.stringify({
@@ -250,7 +278,7 @@ async function generate(rows) {
     accountAtStart: gate.account, invoiceAtStart: gate.invoice, files,
   }, null, 2)}\n`);
   writeLog('in_progress');
-  for (const row of hydrated.filter(candidate => !complete.has(candidate.set))) {
+  for (const row of hydrated.filter(candidate => has('--reassemble') || !complete.has(candidate.set))) {
     const setDirectory = path.join(output, row.setId);
     const segmentDirectory = path.join(setDirectory, '.segments');
     mkdirSync(segmentDirectory, { recursive: true });
@@ -272,11 +300,13 @@ async function generate(rows) {
       segmentPaths.push(setSegment);
     }
     const target = path.join(setDirectory, path.basename(row.audioUrl));
+    if (has('--reassemble') && existsSync(target)) unlinkSync(target);
     assert.ok(!existsSync(target), `Refusing to overwrite staged target ${target}`);
-    assemble(row, segmentPaths, target, path.join(setDirectory, '.assembly'));
+    const assemblyTiming = assemble(row, segmentPaths, target, path.join(setDirectory, '.assembly'));
     const audioSha256 = sha256(readFileSync(target));
+    files = files.filter(file => file.set !== row.set);
     files.push({ set: row.set, setId: row.setId, mediaId: row.mediaId, path: target, audioSha256,
-      sourceCharacters: row.sourceCharacters, requestSegments: row.requestSegments, status: 'GENERATED_STAGING' });
+      sourceCharacters: row.sourceCharacters, requestSegments: row.requestSegments, assemblyTiming, status: 'GENERATED_STAGING' });
     writeLog('in_progress');
   }
   writeLog('complete_pending_qa');
