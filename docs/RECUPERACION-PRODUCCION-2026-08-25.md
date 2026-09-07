@@ -287,3 +287,29 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
 - El smoke productivo devolvió HTTP 200 en IELTS Set 1, TOEFL Set 1 y Goethe A1-1; el
   panel administrativo redirigió correctamente a `/login` y terminó en HTTP 200. No
   se creó ningún lead ficticio en producción.
+
+### 7 de septiembre de 2026
+
+- La curaduría y la nueva experiencia de práctica TOEFL quedaron `DESPLEGADAS`. Los
+  candidatos de Listening de los Sets 2–20 (646 ítems) y el conjunto completo de 680
+  listas conservan las opciones aprobadas académicamente por Zhanna Korzh; los
+  guardianes verifican texto, claves, orden, persistencia y ausencia de pistas
+  sistemáticas por longitud.
+- La biblioteca de práctica abre primero el catálogo y los sets. Reading, Listening,
+  Writing y Speaking usan la interfaz nueva en inglés; Listening y Speaking permiten
+  reproducir, pausar, continuar y repetir audios, avanzar o retroceder libremente y
+  continuar sin respuesta, escucha ni grabación.
+- La rama `codex/toefl-curation-mac-mini-20260904` quedó respaldada en GitHub e integrada
+  en `main` mediante `6fc6cd14ad06fbd43c22f4302aecc1174d8cf675`, después de incorporar
+  `3106450d` y conservar ambos registros de continuidad.
+- Pasaron el `prebuild` completo, el catálogo protegido, TypeScript, SEO, los guardianes
+  TOEFL, 14 pruebas sobre las 680 listas de Listening y el build Turbopack de 2.517
+  páginas.
+- El deployment Vercel `i4af6f7B34vxmCtZtAuc4H9PMJhf`
+  (`idiomaswl-rb1ff17g5-idiomaswlduartekorzhs-projects.vercel.app`) quedó `READY` en
+  11 min 33 s con fuente GitHub `main`.
+- El smoke productivo devolvió HTTP 200 en `/practica/toefl/ejercicios`,
+  `/practica/toefl/speaking?set=3` y
+  `/practica/toefl/reading/formato-2026/complete-the-words`. En Speaking Set 3 se
+  verificó el estado `Pause` durante reproducción y navegación a la frase 2 mientras
+  el audio seguía activo.
