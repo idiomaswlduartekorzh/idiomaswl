@@ -1,7 +1,7 @@
 .shell {
   display: grid;
   gap: 1rem;
-  margin: 1.25rem 0;
+  margin: 0;
 }
 
 .header,
@@ -9,7 +9,6 @@
 .summary,
 .technical {
   border: 1px solid var(--line-soft, #d9dee7);
-  border-radius: 16px;
   background: var(--bg, #fff);
   color: var(--ink, #172033);
 }
@@ -44,6 +43,7 @@
 .item {
   min-width: 0;
   padding: 1rem;
+  border-top: 3px solid var(--practice-accent, #b42332);
 }
 
 .item legend {

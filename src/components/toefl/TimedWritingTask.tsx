@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ToeflConstructedWritingTask } from '@/data/toefl/writing-constructed-set-1';
 import { reconcileTimedWritingState, remainingWritingSeconds } from '@/lib/toefl/writing-time-contract';
+import PracticeSessionHeader from '@/components/exam-practice/PracticeSessionHeader';
 import styles from './TimedWritingTask.module.css';
 
 type Phase = 'ready' | 'active' | 'closed';
@@ -69,7 +70,16 @@ export default function TimedWritingTask({ task }: { task:ToeflConstructedWritin
   function retry() { try{window.localStorage.removeItem(storageKey);}catch{} setAttemptId(clientId());setPhase('ready');setResponse('');setDeadlineMs(undefined);setCloseReason(undefined);setRubricChecks({});setLastFocusId('');setRemaining(task.timeLimitSeconds); }
 
   return <section className={styles.shell} aria-labelledby={`${task.id}-title`} data-object-id={task.id}>
-    <div className={styles.header}><div><h2 id={`${task.id}-title`}>{task.title}</h2><p>Fixed WeLearn practice with the published time limit for this task family.</p><p className={styles.disclosure}>Your response stays in this browser. It is not sent to a server or an AI model.</p></div><div className={styles.timer} role="timer" aria-live="off"><span>{phase==='ready'?'Time limit':phase==='closed'?'Final time':'Time left'}</span><strong>{clock(remaining)}</strong></div></div>
+    <PracticeSessionHeader
+      section="writing"
+      eyebrow={`${task.kind === 'email' ? 'Write an Email' : 'Academic Discussion'} · open practice`}
+      title={task.title}
+      description="Fixed WeLearn practice with the published time limit for this task family. Your response stays in this browser."
+      titleId={`${task.id}-title`}
+      metric={clock(remaining)}
+      metricLabel={phase==='ready'?'time limit':phase==='closed'?'final time':'time left'}
+      metricRole="timer"
+    />
     <div className={styles.stimulus}>{task.stimulus.split('\n\n').map((p,i)=><p key={i}>{p}</p>)}<p className={styles.prompt}>{task.prompt}</p></div>
     {phase==='ready' && <div className={styles.start}><p>The timer starts when you press the button. Submitting or reaching 00:00 closes the response; reloading does not reset the clock.</p><button type="button" className="btn" disabled={!hydrated} onClick={start}>Start {task.timeLimitSeconds/60}-minute task</button></div>}
     {phase!=='ready' && <div className={styles.editor}><label htmlFor={`${task.id}-response`}>Your response</label><textarea id={`${task.id}-response`} value={response} disabled={phase==='closed'} onChange={e=>setResponse(e.target.value)} onFocus={e=>setLastFocusId(e.currentTarget.id)} spellCheck={false} autoCorrect="off" autoCapitalize="sentences" aria-describedby={`${task.id}-meta`} /><div id={`${task.id}-meta`} className={styles.meta}><span>{wordCount} words{task.recommendedMinimumWords?` · recommended minimum ${task.recommendedMinimumWords}`:' · no published minimum for Email'}</span><span>Spellcheck off</span></div></div>}

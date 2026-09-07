@@ -1,0 +1,123 @@
+.page {
+  --practice-accent: #1a4fcc;
+  --practice-accent-dark: #102e6f;
+  --practice-accent-soft: #eef3ff;
+  min-height: calc(100vh - 72px);
+  padding: clamp(1.15rem, 3vw, 2.5rem) 0 clamp(3.5rem, 8vw, 6rem);
+  color: #172033;
+  background:
+    linear-gradient(90deg, rgb(16 46 111 / 2.5%) 1px, transparent 1px),
+    linear-gradient(rgb(16 46 111 / 2.5%) 1px, transparent 1px),
+    #f6f8fc;
+  background-size: 28px 28px;
+}
+
+.page[data-practice-section='listening'] {
+  --practice-accent: #176b87;
+  --practice-accent-dark: #104e66;
+  --practice-accent-soft: #edf8fa;
+}
+
+.page[data-practice-section='writing'] {
+  --practice-accent: #b42332;
+  --practice-accent-dark: #861c29;
+  --practice-accent-soft: #fff1f2;
+}
+
+.page[data-practice-section='speaking'] {
+  --practice-accent: #6d43b5;
+  --practice-accent-dark: #4d278e;
+  --practice-accent-soft: #f5f1ff;
+}
+
+.wrap {
+  width: min(100%, 1120px);
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 32px;
+  margin-bottom: 1rem;
+  color: #69738a;
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 0.7rem;
+  font-weight: 760;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.crumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.crumb a {
+  color: var(--practice-accent-dark);
+  text-decoration: none;
+}
+
+.crumb strong {
+  color: #28334a;
+  font-weight: 850;
+}
+
+.separator {
+  color: #a2aabd;
+}
+
+.contextBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid #d7deea;
+  border-left: 4px solid var(--practice-accent);
+  background: rgb(255 255 255 / 88%);
+}
+
+.contextBar > span {
+  color: #69738a;
+  font-size: 0.76rem;
+}
+
+.backLink {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--practice-accent-dark);
+  font-size: 0.82rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.backLink svg {
+  width: 17px;
+  height: 17px;
+}
+
+.crumb a:focus-visible,
+.backLink:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--practice-accent) 30%, transparent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding-top: 0.8rem;
+  }
+
+  .contextBar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

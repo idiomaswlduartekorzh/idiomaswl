@@ -1,31 +1,30 @@
 .shell {
-  min-height: calc(100vh - 72px);
-  padding: clamp(1rem, 3vw, 2.4rem);
+  --practice-accent: #176b87;
+  --practice-accent-dark: #104e66;
   color: #1e293b;
-  background: #f3f6fb;
 }
 
 .intro,
 .results,
 .runnerBody,
 .runnerHeader {
-  width: min(100%, 960px);
+  width: 100%;
   margin-inline: auto;
 }
 
 .intro,
 .results {
-  margin-top: clamp(1rem, 5vw, 4rem);
+  margin-top: 0;
   padding: clamp(1.3rem, 4vw, 3rem);
   border: 1px solid #d7deea;
   border-top: 5px solid #176b87;
   background: #fff;
-  box-shadow: 0 24px 70px rgb(16 46 111 / 10%);
+  box-shadow: 0 20px 55px rgb(16 46 111 / 8%);
 }
 
 .kicker {
   margin: 0 0 0.65rem;
-  color: #b42332;
+  color: var(--practice-accent);
   font-family: var(--mono);
   font-size: 0.72rem;
   font-weight: 900;
@@ -114,9 +113,9 @@
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1rem;
-  border: 1px solid #176b87;
+  border: 1px solid var(--practice-accent);
   color: #fff;
-  background: #176b87;
+  background: var(--practice-accent);
   font: inherit;
   font-weight: 850;
   text-decoration: none;
@@ -160,7 +159,7 @@
   margin-bottom: 1rem;
   padding: 1rem 1.2rem;
   color: #fff;
-  background: #102e6f;
+  background: var(--practice-accent-dark);
 }
 
 .runnerHeader p,

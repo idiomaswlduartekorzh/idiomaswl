@@ -1,0 +1,98 @@
+.header {
+  --session-accent: var(--practice-accent, #1a4fcc);
+  --session-accent-dark: var(--practice-accent-dark, #102e6f);
+  --session-accent-soft: var(--practice-accent-soft, #eef3ff);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: end;
+  padding: clamp(1.2rem, 4vw, 2.4rem);
+  border: 1px solid #d7deea;
+  border-top: 5px solid var(--session-accent);
+  background: #fff;
+  box-shadow: 0 20px 55px rgb(16 46 111 / 7%);
+}
+
+.header[data-practice-section='listening'] {
+  --session-accent: #176b87;
+  --session-accent-dark: #104e66;
+  --session-accent-soft: #edf8fa;
+}
+
+.header[data-practice-section='writing'] {
+  --session-accent: #b42332;
+  --session-accent-dark: #861c29;
+  --session-accent-soft: #fff1f2;
+}
+
+.header[data-practice-section='speaking'] {
+  --session-accent: #6d43b5;
+  --session-accent-dark: #4d278e;
+  --session-accent-soft: #f5f1ff;
+}
+
+.header p {
+  margin: 0 0 0.55rem;
+  color: var(--session-accent);
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  max-width: 820px;
+  margin: 0;
+  color: #102e6f;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 590;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.header div > span {
+  display: block;
+  max-width: 760px;
+  margin-top: 0.9rem;
+  color: #5c6680;
+  line-height: 1.65;
+}
+
+.header aside {
+  display: grid;
+  min-width: 148px;
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--session-accent) 25%, white);
+  color: var(--session-accent-dark);
+  background: var(--session-accent-soft);
+  text-align: center;
+}
+
+.header aside strong {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.header aside span {
+  margin-top: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 820;
+}
+
+@media (max-width: 680px) {
+  .header {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .header aside {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    text-align: left;
+  }
+}

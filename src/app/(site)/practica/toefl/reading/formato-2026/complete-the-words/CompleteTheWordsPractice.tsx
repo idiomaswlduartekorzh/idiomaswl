@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CompleteWordsScoreResult } from '@/data/toefl/complete-the-words-set-1';
 import { validateMissingLetters } from '@/lib/toefl/complete-words-contract';
+import PracticeSessionHeader from '@/components/exam-practice/PracticeSessionHeader';
 import styles from './complete-the-words.module.css';
 
 type CompleteWordsPracticeSet = {
@@ -171,15 +172,16 @@ export default function CompleteTheWordsPractice({ practice, setNumber }: { prac
 
   return (
     <section className={styles.practice} aria-labelledby="ctw-practice-title" data-object-id={practice.objectId}>
-      <div className={styles.practiceHeader}>
-        <div>
-          <p className={styles.kicker}>Set {setNumber} · Complete the Words</p>
-          <h2 id="ctw-practice-title">Complete the missing letters</h2>
-        </div>
-        <span className={styles.progress} aria-label={`${filled} of ${practice.blanks.length} answers started`}>{filled}/{practice.blanks.length}</span>
-      </div>
-
-      <p className={styles.instructions}>{practice.instructions}</p>
+      <PracticeSessionHeader
+        section="reading"
+        eyebrow={`Set ${setNumber} · Complete the Words`}
+        title="Complete the missing letters"
+        description={practice.instructions}
+        titleId="ctw-practice-title"
+        metric={`${filled}/${practice.blanks.length}`}
+        metricLabel="answers completed"
+        metricRole="status"
+      />
       <p className={styles.disclosure}>
         This fixed WeLearn exercise practices the missing-letter interaction. It does not reproduce TOEFL adaptive routing or official scoring. Your attempt stays in this browser.
       </p>

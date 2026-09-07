@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import type { ToeflBuildSentenceItem } from '@/data/toefl/build-sentence-set-1';
 import type { ToeflBuildSentenceScoreResult } from '@/lib/toefl/build-sentence-contract';
+import PracticeSessionHeader from '@/components/exam-practice/PracticeSessionHeader';
 import BuildSentenceItem from './BuildSentenceItem';
 import styles from './BuildSentenceSet1.module.css';
 
@@ -110,11 +111,16 @@ export default function BuildSentenceSet1Practice({ practice, setNumber }: { pra
   const complete = practice.items.filter((item) => (answers[item.id] ?? []).length === item.blankCount).length;
   return (
     <section className={styles.shell} aria-labelledby="build-sentence-set1-title">
-      <div className={styles.header}>
-        <p className={styles.disclosure}>Set {setNumber} · {practice.items.length} exercises</p>
-        <h2 id="build-sentence-set1-title">Build a Sentence</h2>
-        <p>Arrange the fragments to form a complete, grammatical response. One fragment is not used.</p>
-      </div>
+      <PracticeSessionHeader
+        section="writing"
+        eyebrow={`Set ${setNumber} · ${practice.items.length} exercises`}
+        title="Build a Sentence"
+        description="Arrange the fragments to form a complete, grammatical response. One fragment is not used."
+        titleId="build-sentence-set1-title"
+        metric={`${complete}/${practice.items.length}`}
+        metricLabel="sentences completed"
+        metricRole="status"
+      />
 
       <div className={styles.items}>
         {practice.items.map((item, index) => (

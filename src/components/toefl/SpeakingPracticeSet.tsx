@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, Headphones, Mic2 } from 'lucide-react';
 
 import { IELTSSpeakingRecorder, type IeltsSpeakingRecording } from '@/components/exam-runner/IELTSSpeakingRecorder';
 import { AudioPlayer } from '@/components/exam-runner/primitives';
+import PracticeSessionHeader from '@/components/exam-practice/PracticeSessionHeader';
 import type { RepeatQuestion, SpeakQuestion } from '@/data/mocks/types';
 
 import styles from './SpeakingPracticeSet.module.css';
@@ -37,14 +38,16 @@ export default function SpeakingPracticeSet({
 
   return (
     <section className={styles.shell} aria-labelledby="speaking-practice-title">
-      <header className={styles.header}>
-        <div>
-          <p>Speaking Set {setNumber} · open practice</p>
-          <h1 id="speaking-practice-title">Practice speaking inside this section.</h1>
-          <span>Replay prompts, move freely, skip items, and record a response whenever you are ready.</span>
-        </div>
-        <aside><strong>{completed}/{questions.length}</strong><span>responses recorded</span></aside>
-      </header>
+      <PracticeSessionHeader
+        section="speaking"
+        eyebrow={`Speaking Set ${setNumber} · open practice`}
+        title="Practice speaking inside this section."
+        description="Replay prompts, move freely, skip items, and record a response whenever you are ready."
+        titleId="speaking-practice-title"
+        metric={`${completed}/${questions.length}`}
+        metricLabel="responses recorded"
+        metricRole="status"
+      />
 
       <nav className={styles.rail} aria-label="Speaking prompts">
         {questions.map((question, index) => (

@@ -27,6 +27,9 @@ const activeUiFiles = [
   'src/components/toefl/BuildSentenceSet1Practice.tsx',
   'src/components/toefl/ReadingPracticeSet.tsx',
   'src/components/toefl/TimedWritingTask.tsx',
+  'src/components/exam-practice/PracticeRouteShell.tsx',
+  'src/components/exam-practice/PracticeSessionHeader.tsx',
+  'src/components/exam-practice/PracticeSetCatalog.tsx',
 ];
 const bannedOldCopy = [
   'Finalizar y corregir',
@@ -49,11 +52,32 @@ for (const relativePath of activeUiFiles) {
 }
 
 const catalogSource = await readFile(
-  path.join(ROOT, 'src/components/toefl/ToeflPracticeSetCatalog.tsx'),
+  path.join(ROOT, 'src/components/exam-practice/PracticeSetCatalog.tsx'),
   'utf8',
 );
 assert.ok(catalogSource.includes('Choose a {task} exercise.'), 'The shared catalog must ask the learner to choose first.');
 assert.ok(catalogSource.includes('Open exercise'), 'The shared catalog must label each exercise action.');
+
+const toeflCatalogSource = await readFile(
+  path.join(ROOT, 'src/components/toefl/ToeflPracticeSetCatalog.tsx'),
+  'utf8',
+);
+assert.ok(toeflCatalogSource.includes('PracticeSetCatalog'), 'TOEFL must use the reusable practice catalog template.');
+
+for (const relativePath of [
+  'src/app/(site)/practica/toefl/listening/simulacros/page.tsx',
+  'src/app/(site)/practica/toefl/listening/simulacros/practica/[mockId]/page.tsx',
+  'src/app/(site)/practica/toefl/reading/formato-2026/complete-the-words/page.tsx',
+  'src/app/(site)/practica/toefl/reading/formato-2026/read-in-daily-life/page.tsx',
+  'src/app/(site)/practica/toefl/reading/formato-2026/read-an-academic-passage/page.tsx',
+  'src/app/(site)/practica/toefl/writing/build-a-sentence/page.tsx',
+  'src/app/(site)/practica/toefl/writing/write-an-email/page.tsx',
+  'src/app/(site)/practica/toefl/writing/academic-discussion/page.tsx',
+  'src/app/(site)/practica/toefl/speaking/page.tsx',
+]) {
+  const source = await readFile(path.join(ROOT, relativePath), 'utf8');
+  assert.ok(source.includes('PracticeRouteShell'), `${relativePath} must use the shared practice route shell.`);
+}
 
 const siteNavSource = await readFile(path.join(ROOT, 'src/components/SiteNav.tsx'), 'utf8');
 assert.ok(

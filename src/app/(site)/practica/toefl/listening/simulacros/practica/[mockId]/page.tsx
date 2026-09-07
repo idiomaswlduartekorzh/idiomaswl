@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
+import PracticeRouteShell from '@/components/exam-practice/PracticeRouteShell';
 import { getMock } from '@/data/mocks';
 import {
   isToeflSectionalListeningSetId,
@@ -27,5 +28,20 @@ export default async function ToeflListeningPracticePage({
   const practice = mock ? selectToeflListeningPractice(mock) : null;
   if (!practice) notFound();
 
-  return <ToeflListeningSectionRunner key={practice.id} practice={practice} />;
+  const setLabel = practice.sourceMockId.replace('set-', 'Set ');
+
+  return (
+    <PracticeRouteShell
+      section="listening"
+      breadcrumbs={[
+        { label: 'Exercises', href: '/practica/toefl/ejercicios#listening' },
+        { label: 'Listening', href: '/practica/toefl/listening/simulacros' },
+        { label: setLabel },
+      ]}
+      backHref="/practica/toefl/listening/simulacros"
+      backLabel="Choose another Listening exercise"
+    >
+      <ToeflListeningSectionRunner key={practice.id} practice={practice} />
+    </PracticeRouteShell>
+  );
 }

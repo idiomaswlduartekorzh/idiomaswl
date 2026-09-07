@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 import type { ToeflFixedReadingPassage } from '@/data/toefl/reading-module2-types';
 import type { ToeflReadingScoreResult } from '@/lib/toefl/reading-contract';
+import PracticeSessionHeader from '@/components/exam-practice/PracticeSessionHeader';
 import { ReadingSingleChoiceGroup, type ReadingChoiceOutcome } from './ReadingChoiceGroup';
 import styles from './ReadingSet1Practice.module.css';
 
@@ -108,11 +109,16 @@ export default function ReadingPracticeSet({
 
   return (
     <section className={styles.shell} aria-labelledby="reading-practice-title">
-      <div className={styles.header}>
-        <p className={styles.eyebrow}>Set {setNumber} · Interactive practice</p>
-        <h2 id="reading-practice-title">{task}</h2>
-        <p>Read each text and answer the questions. Your attempt stays in this browser.</p>
-      </div>
+      <PracticeSessionHeader
+        section="reading"
+        eyebrow={`Set ${setNumber} · interactive practice`}
+        title={task}
+        description="Read each text and answer the questions. Your attempt stays in this browser."
+        titleId="reading-practice-title"
+        metric={`${answered}/${items.length}`}
+        metricLabel="answers completed"
+        metricRole="status"
+      />
 
       <div className={styles.blocks}>
         {passages.map((passage) => (
