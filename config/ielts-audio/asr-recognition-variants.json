@@ -13,6 +13,38 @@
         "variants": ["ship spell"],
         "rationale": "Whisper renders the audible phrase ship's bell as the homophone-like phrase ship spell; the canonical scored answer remains bell."
       }
+    },
+    "9": {
+      "1": {
+        "variants": ["Whitcomb"],
+        "rationale": "Whisper drops the final e from the spoken surname even though the audio immediately spells W-H-I-T-C-O-M-B-E; the canonical scored answer remains Whitcombe."
+      }
+    },
+    "2": {
+      "6": {
+        "variants": ["two pounds fifty"],
+        "rationale": "The form already supplies the pound sign, while the recording and ASR include the currency unit; the canonical scored answer remains 2.50."
+      },
+      "8": {
+        "variants": ["half pass two", "half-pass two"],
+        "rationale": "Whisper renders the clearly spoken phrase half past two as half pass two; the canonical scored answer remains 2:30 or half past two."
+      }
+    },
+    "3": {
+      "2": {
+        "variants": ["Berkeley"],
+        "rationale": "Whisper normalizes the spoken street name Berkley to the more common spelling Berkeley; the canonical scored answer remains Berkley."
+      },
+      "3": {
+        "variants": ["sophie marsh at greenmail co uk"],
+        "rationale": "Whisper expands the clearly spoken email punctuation into words and removes dots; the canonical scored answer remains sophie.marsh@greenmail.co.uk."
+      }
+    },
+    "14": {
+      "39": {
+        "variants": ["fought"],
+        "rationale": "Whisper renders the clearly spoken economic term fiat as the similar-sounding word fought; the canonical scored answer remains fiat."
+      }
     }
   }
 }

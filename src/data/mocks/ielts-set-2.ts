@@ -48,6 +48,10 @@ RECEPTIONIST: Very straightforward. You fill in a form online or in person. Annu
 
 CUSTOMER: That sounds good. Can I also book a coach for a session?
 
+CUSTOMER: Do you have racket hire?
+
+RECEPTIONIST: We do — two pounds fifty per racket per session. You can collect them from the equipment room near the main entrance.
+
 RECEPTIONIST: Absolutely. Our head coach, Mr Patel, is available on Saturday from ten to twelve in the morning.
 
 CUSTOMER: I'd prefer the afternoon, to match our court booking.
@@ -63,10 +67,6 @@ CUSTOMER: A full hour, please.
 RECEPTIONIST: Just so it is clear, no, coaching is not included with membership; it is charged separately.
 
 RECEPTIONIST: Done. Is there anything else you need?
-
-CUSTOMER: Do you have racket hire?
-
-RECEPTIONIST: We do — two pounds fifty per racket per session. You can collect them from the equipment room near the main entrance.
 
 CUSTOMER: Perfect. Thank you very much.`,
       questions: [

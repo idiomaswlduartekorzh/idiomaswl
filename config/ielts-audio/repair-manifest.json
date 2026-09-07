@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06",
+  "generatedAt": "2026-09-07",
   "repairSpecsSha256": "76028a0c11549cb068b0b80563a31be81fd5a6e480d2c7fadf46632a4a4ee56d",
-  "productionManifestSha256": "6358026db00a89aac753060421673b1e2c6267c936e9d61538737edfc137fcbc",
+  "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
   "modelId": "eleven_flash_v2_5",
   "rows": [
     {
@@ -23,8 +23,8 @@
       ],
       "audioUrl": "/audio/ielts/ielts-listening-set-1.mp3",
       "sourceAudioSha256": "0617e45b7a9678a7e9e3a8c20a968ad9339020501bbdbed519cddeeb05d83d3f",
-      "discoveryAsrReportSha256": "c73af0203a47a35d5be726c0936a11de3200524f80c520a97c7491d69c956850",
-      "productionManifestSha256": "6358026db00a89aac753060421673b1e2c6267c936e9d61538737edfc137fcbc",
+      "discoveryAsrReportSha256": "b45ea54912f0af90fa084584cfdb12d1ea47f06ff007e1aee2c6438eda1b8f71",
+      "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
       "gapDurationSeconds": 26.22,
       "billableCharacters": 117
     },
@@ -60,8 +60,8 @@
       ],
       "audioUrl": "/audio/ielts/ielts-listening-set-9.mp3",
       "sourceAudioSha256": "01d2ae92113a1be419c061b817790ae0f95eba1aa5d32cd64bdc9c30494790f2",
-      "discoveryAsrReportSha256": "b728a459c55c1355698cc3e7a4e5464e7e9fbcf6b3f4d7c2f452b7139d9f121e",
-      "productionManifestSha256": "6358026db00a89aac753060421673b1e2c6267c936e9d61538737edfc137fcbc",
+      "discoveryAsrReportSha256": "b7c84c4401d47973f65bfc6fefca2f6b494fdb4b006de7f817324d2883a09a66",
+      "productionManifestSha256": "bdb6139e665f18feeda722df61717aba3ff1ecfaf12c73b929769c5e339c4818",
       "gapDurationSeconds": 29.5,
       "billableCharacters": 241
     }
@@ -72,5 +72,5 @@
     "estimatedUsdBeforeTax": 0.0179
   },
   "releaseAuthorized": false,
-  "repairManifestSha256": "e2f519b953593f08d3e63895e1ee4c8e5a8069ebc564dd777acd742fc8f1a244"
+  "repairManifestSha256": "f88807d9f290544d10db5095f61bde220404f5eef91d1fd9f03fbb15453424ab"
 }
