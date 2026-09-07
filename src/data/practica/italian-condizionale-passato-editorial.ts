@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Avrei letto la richiesta', 'avrei controllato i dati', 'avrei risposto al cliente'], target: 0 },
-  { events: ['Marta avrebbe scelto la ricetta', 'avrebbe comprato gli ingredienti', 'avrebbe preparato la cena'], target: 1 },
-  { events: ['Noi avremmo ritirato le chiavi', 'avremmo portato i mobili', 'ci saremmo sistemati nella casa'], target: 2 },
-  { events: ['Il tecnico avrebbe spento il server', 'avrebbe sostituito il disco', 'avrebbe riavviato il sistema'], target: 0 },
-  { events: ['Voi avreste letto il regolamento', 'avreste compilato il modulo', 'avreste consegnato la domanda'], target: 1 },
-  { events: ['La guida avrebbe accolto il gruppo', 'avrebbe mostrato la collezione', 'avrebbe accompagnato tutti all’uscita'], target: 2 },
-  { events: ['Io avrei controllato l’indirizzo', 'avrei preso la metropolitana', 'sarei arrivato allo studio'], target: 0 },
-  { events: ['Gli studenti avrebbero raccolto le fonti', 'avrebbero scritto la relazione', 'avrebbero presentato i risultati'], target: 1 },
-  { events: ['Paolo avrebbe montato lo scaffale', 'avrebbe ordinato i libri', 'avrebbe pulito la stanza'], target: 2 },
-  { events: ['La squadra avrebbe fatto riscaldamento', 'avrebbe provato gli schemi', 'sarebbe entrata in campo'], target: 0 },
+  { events: ['Avrei letto la richiesta', 'avrei controllato i dati', 'avrei risposto al cliente'], target: 0, production: { sentence: 'Avrei letto la richiesta', verb: 'leggere', answers: ['avrei letto'] } },
+  { events: ['Marta avrebbe scelto la ricetta', 'Avrebbe comprato gli ingredienti', 'avrebbe preparato la cena'], target: 1, production: { sentence: 'Avrebbe comprato gli ingredienti', verb: 'comprare', answers: ['avrebbe comprato'] } },
+  { events: ['Noi avremmo ritirato le chiavi', 'avremmo portato i mobili', 'Ci saremmo sistemati nella casa'], target: 2, production: { sentence: 'Ci saremmo sistemati nella casa', verb: 'sistemarsi', answers: ['ci saremmo sistemati'] } },
+  { events: ['Il tecnico avrebbe spento il server', 'avrebbe sostituito il disco', 'avrebbe riavviato il sistema'], target: 0, production: { sentence: 'Il tecnico avrebbe spento il server', verb: 'spegnere', answers: ['avrebbe spento'] } },
+  { events: ['Voi avreste letto il regolamento', 'Avreste compilato il modulo', 'avreste consegnato la domanda'], target: 1, production: { sentence: 'Avreste compilato il modulo', verb: 'compilare', answers: ['avreste compilato'] } },
+  { events: ['La guida avrebbe accolto il gruppo', 'avrebbe mostrato la collezione', 'Avrebbe accompagnato tutti all’uscita'], target: 2, production: { sentence: 'Avrebbe accompagnato tutti all’uscita', verb: 'accompagnare', answers: ['avrebbe accompagnato'] } },
+  { events: ['Io avrei controllato l’indirizzo', 'avrei preso la metropolitana', 'sarei arrivato allo studio'], target: 0, production: { sentence: 'Io avrei controllato l’indirizzo', verb: 'controllare', answers: ['avrei controllato'] } },
+  { events: ['Gli studenti avrebbero raccolto le fonti', 'Avrebbero scritto la relazione', 'avrebbero presentato i risultati'], target: 1, production: { sentence: 'Avrebbero scritto la relazione', verb: 'scrivere', answers: ['avrebbero scritto'] } },
+  { events: ['Paolo avrebbe montato lo scaffale', 'avrebbe ordinato i libri', 'Avrebbe pulito la stanza'], target: 2, production: { sentence: 'Avrebbe pulito la stanza', verb: 'pulire', answers: ['avrebbe pulito'] } },
+  { events: ['La squadra avrebbe fatto riscaldamento', 'avrebbe provato gli schemi', 'sarebbe entrata in campo'], target: 0, production: { sentence: 'La squadra avrebbe fatto riscaldamento', verb: 'fare', answers: ['avrebbe fatto'] } },
 ]
 
 export const ITALIAN_CONDIZIONALE_PASSATO_EDITORIAL = createItalianEditorialPack({

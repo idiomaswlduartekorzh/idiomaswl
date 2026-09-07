@@ -38,6 +38,15 @@ function countByForm(config, selector) {
   return new Map(config.forms.map((form) => [form.id, selector(form.id)]))
 }
 
+function germanLevelFiveTopology(prompt) {
+  const value = prompt.trim()
+  if (value.endsWith('?')) return 'question'
+  if (/^(?:Wenn|Falls|Nachdem|Obwohl|Weil|Sobald|Als)\b/u.test(value)) return 'fronted-subordinate'
+  if (/\b(?:dass|weil|was)\b/u.test(value)) return 'embedded-clause'
+  if (/^(?:Am|Im|Nach|Vor|Seit|Bei|Zum|Bis|Gestern|Heute|Morgen)\b/u.test(value)) return 'fronted-adverbial'
+  return 'main-clause'
+}
+
 function checkUniqueIds(config) {
   const ids = [
     ...config.choiceChallenges.map((item) => item.id),
@@ -123,7 +132,8 @@ function validate(config, minimums) {
 
   for (const challenge of config.separationChallenges ?? []) {
     assert(formIds.has(challenge.tense), `${challenge.id}: referencia una forma inexistente`)
-    assert(challenge.prompt.split('___').length === 2, `${challenge.id}: debe contener exactamente un hueco orientativo`)
+    const expectedPromptGaps = ['wuerde-form', 'konjunktiv-vergangenheit'].includes(challenge.tense) ? 2 : 1
+    assert(challenge.prompt.split('___').length === expectedPromptGaps + 1, `${challenge.id}: debe ocultar la unidad verbal completa en ${expectedPromptGaps} hueco(s)`)
     assert(challenge.answers.length > 0 && challenge.answers.every(Boolean), `${challenge.id}: no tiene oración completa válida`)
     assert(challenge.answers[0].split(/\s+/u).length >= 4, `${challenge.id}: la respuesta debe ser una oración completa`)
   }
@@ -489,6 +499,13 @@ for (const form of GERMAN_STRUCTURE_QUEST.forms) {
   assert(new Set(items.map((item) => item.verb)).size === items.length, `german/${form.id}: el nivel 5 repite infinitivos`)
   assert(new Set(items.map((item) => item.prompt)).size === items.length, `german/${form.id}: el nivel 5 repite Satzgerüste`)
 
+  if (['perfekt-haben', 'perfekt-sein', 'futur-eins'].includes(form.id)) {
+    const dassCount = items.filter((item) => /\bdass\b/u.test(item.prompt)).length
+    const topologies = new Set(items.map((item) => germanLevelFiveTopology(item.prompt)))
+    assert(dassCount <= 4, `german/${form.id}: el nivel 5 abusa de dass (${dassCount}/10)`)
+    assert(topologies.size >= 4, `german/${form.id}: el nivel 5 necesita cuatro topologías sintácticas (${[...topologies].join('/')})`)
+  }
+
   for (const [index, item] of items.entries()) {
     assert(item.title.endsWith(`· ${index + 1}`), `${item.id}: el número visible no coincide con el orden mezclado`)
     const finalWord = item.prompt.match(/\s([\p{L}-]+)[.!?]$/u)?.[1]
@@ -497,6 +514,14 @@ for (const form of GERMAN_STRUCTURE_QUEST.forms) {
       && finalWord.length < item.verb.length
       && item.verb.startsWith(finalWord)
     assert(!leaksParticle, `${item.id}: el Satzgerüst revela la partícula separada «${finalWord}»`)
+
+    if (['wuerde-form', 'konjunktiv-vergangenheit'].includes(form.id)) {
+      const blankCount = item.prompt.match(/___/g)?.length ?? 0
+      const answerWords = item.answers[0].match(/[\p{L}-]+/gu) ?? []
+      const verbalTail = answerWords.at(-1) ?? ''
+      assert(blankCount === 2, `${item.id}: deben ocultarse auxiliar y verbo léxico`)
+      assert(Boolean(verbalTail) && !item.prompt.includes(verbalTail), `${item.id}: el Satzgerüst revela «${verbalTail}»`)
+    }
   }
 
   const finalStories = GERMAN_STRUCTURE_QUEST.finalStories?.filter((item) => item.gaps.some((gap) => gap.tense === form.id)) ?? []
@@ -658,7 +683,7 @@ const koreanWrittenAnswers = (pack) => [...pack.micro, ...pack.long].flatMap((it
 for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[0])) assert(/(?:친구|가족|일상|이웃|학생|편하게|아이|동료|손님|집에서)/u.test(context), `korean/present-polite: falta interlocutor cotidiano («${context}»)`)
 for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[0])) assert(/요$/u.test(answer) && !/습니다$/u.test(answer), `korean/present-polite: nivel de habla inválido («${answer}»)`)
 for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[1])) assert(/(?:공식|안내|방송|보고|발표|업무|면접|규정|기술|기관|과학|박물관|역 |공항|회사|관리자|기자|행사)/u.test(context), `korean/present-formal: falta situación formal visible («${context}»)`)
-for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[1])) assert(/(?:합니다|됩니다|습니다|납니다|립니다)$/u.test(answer), `korean/present-formal: falta 합니다체 completo («${answer}»)`)
+for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[1])) assert(/니다$/u.test(answer), `korean/present-formal: falta 합니다체 completo («${answer}»)`)
 for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[2])) assert(/(?:어제|지난|방금|아까|오늘 아침|한 시간 전|두 시간 전|어젯밤|주말|아침에|점심에)/u.test(context), `korean/past-polite: falta ancla pasada cerrada («${context}»)`)
 for (const context of koreanContexts(KOREAN_EDITORIAL_PACKS[3])) assert(/(?:내일|다음|주말|곧|향후|휴가|졸업|저녁|토요일|봄|예보|계획|끝나면|결승|현재)/u.test(context), `korean/future-intention: falta ancla futura o evidencia («${context}»)`)
 for (const answer of koreanWrittenAnswers(KOREAN_EDITORIAL_PACKS[3])) assert(/^.+ 거예요$/u.test(answer), `korean/future-intention: falta construcción completa («${answer}»)`)

@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Domani aprirò il documento', 'controllerò i dati', 'invierò il rapporto'], target: 0 },
-  { events: ['Marta sceglierà la ricetta', 'comprerà gli ingredienti', 'preparerà la cena'], target: 1 },
-  { events: ['Noi ritireremo le chiavi', 'porteremo i mobili', 'dormiremo nella nuova casa'], target: 2 },
-  { events: ['Il tecnico spegnerà il server', 'sostituirà il disco', 'riavvierà il sistema'], target: 0 },
-  { events: ['Voi leggerete il regolamento', 'compilerete il modulo', 'consegnerete la domanda'], target: 1 },
-  { events: ['La guida accoglierà il gruppo', 'mostrerà la collezione', 'accompagnerà tutti all’uscita'], target: 2 },
-  { events: ['Io controllerò l’indirizzo', 'prenderò la metropolitana', 'raggiungerò lo studio'], target: 0 },
-  { events: ['Gli studenti raccoglieranno le fonti', 'scriveranno la relazione', 'presenteranno i risultati'], target: 1 },
-  { events: ['Paolo monterà lo scaffale', 'ordinerà i libri', 'pulirà la stanza'], target: 2 },
-  { events: ['La squadra farà riscaldamento', 'proverà gli schemi', 'entrerà in campo'], target: 0 },
+  { events: ['Domani aprirò il documento', 'controllerò i dati', 'invierò il rapporto'], target: 0, production: { sentence: 'Domani aprirò il documento', verb: 'aprire', answers: ['aprirò'] } },
+  { events: ['Marta sceglierà la ricetta', 'Comprerà gli ingredienti', 'preparerà la cena'], target: 1, production: { sentence: 'Comprerà gli ingredienti', verb: 'comprare', answers: ['comprerà'] } },
+  { events: ['Noi ritireremo le chiavi', 'porteremo i mobili', 'Dormiremo nella nuova casa'], target: 2, production: { sentence: 'Dormiremo nella nuova casa', verb: 'dormire', answers: ['dormiremo'] } },
+  { events: ['Il tecnico spegnerà il server', 'sostituirà il disco', 'riavvierà il sistema'], target: 0, production: { sentence: 'Il tecnico spegnerà il server', verb: 'spegnere', answers: ['spegnerà'] } },
+  { events: ['Voi leggerete il regolamento', 'Compilerete il modulo', 'consegnerete la domanda'], target: 1, production: { sentence: 'Compilerete il modulo', verb: 'compilare', answers: ['compilerete'] } },
+  { events: ['La guida accoglierà il gruppo', 'mostrerà la collezione', 'Accompagnerà tutti all’uscita'], target: 2, production: { sentence: 'Accompagnerà tutti all’uscita', verb: 'accompagnare', answers: ['accompagnerà'] } },
+  { events: ['Io controllerò l’indirizzo', 'prenderò la metropolitana', 'raggiungerò lo studio'], target: 0, production: { sentence: 'Io controllerò l’indirizzo', verb: 'controllare', answers: ['controllerò'] } },
+  { events: ['Gli studenti raccoglieranno le fonti', 'Scriveranno la relazione', 'presenteranno i risultati'], target: 1, production: { sentence: 'Scriveranno la relazione', verb: 'scrivere', answers: ['scriveranno'] } },
+  { events: ['Paolo monterà lo scaffale', 'ordinerà i libri', 'Pulirà la stanza'], target: 2, production: { sentence: 'Pulirà la stanza', verb: 'pulire', answers: ['pulirà'] } },
+  { events: ['La squadra farà riscaldamento', 'proverà gli schemi', 'entrerà in campo'], target: 0, production: { sentence: 'La squadra farà riscaldamento', verb: 'fare', answers: ['farà'] } },
 ]
 
 export const ITALIAN_FUTURO_SEMPLICE_EDITORIAL = createItalianEditorialPack({

@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Guests before arrival', cue: 'an event completed before I arrived', segments: ['By the time I arrived, the guests ', '.'], verb: 'leave', answers: ['had left'], distractors: ['left', 'have left', 'were leaving'] },
@@ -40,29 +40,41 @@ const errors: EnglishEditorialErrorSeed[] = [
 ]
 
 const sequences: EnglishEditorialSequenceSeed[] = [
-  { events: ['The staff had printed the badges', 'Technicians had tested the microphones', 'The director had approved the schedule'], target: 0 },
-  { events: ['The hikers had taken the wrong trail', 'They had used most of their water', 'Fog had covered the ridge'], target: 1 },
-  { events: ['The tenants had removed the boxes', 'A cleaner had washed the floors', 'The owner had replaced the window'], target: 2 },
-  { events: ['Teachers had checked the exits', 'Students had read the instructions', 'Security had unlocked the gates'], target: 0 },
-  { events: ['Marta had finished the soup', 'Her brother had set the table', 'They had warmed the bread'], target: 1 },
-  { events: ['The technician had created a backup', 'She had replaced the disk', 'The team had restored the files'], target: 2 },
-  { events: ['Detectives had reviewed footage', 'An analyst had identified the car', 'Officers had contacted its owner'], target: 0 },
-  { events: ['Weeds had grown over the path', 'Branches had fallen', 'The pond had dried'], target: 1 },
-  { events: ['Students had submitted papers', 'Teachers had marked essays', 'The board had verified scores'], target: 2 },
-  { events: ['The crew had secured cargo', 'An officer had checked the list', 'Engineers had inspected engines'], target: 0 },
+  { events: ['The staff had printed the badges', 'Technicians had tested the microphones', 'The director had approved the schedule'], target: 0, productionSentence: 'Before the doors opened, the staff had printed the badges' },
+  { events: ['The hikers had taken the wrong trail', 'They had used most of their water', 'Fog had covered the ridge'], target: 1, productionSentence: 'Before rescuers found them, they had used most of their water' },
+  { events: ['The tenants had removed the boxes', 'A cleaner had washed the floors', 'The owner had replaced the window'], target: 2, productionSentence: 'Before the new tenant arrived, the owner had replaced the window' },
+  { events: ['Teachers had checked the exits', 'Students had read the instructions', 'Security had unlocked the gates'], target: 0, productionSentence: 'Before the drill began, teachers had checked the exits' },
+  { events: ['Marta had finished the soup', 'Her brother had set the table', 'They had warmed the bread'], target: 1, productionSentence: 'Before the guests arrived, her brother had set the table' },
+  { events: ['The technician had created a backup', 'She had replaced the disk', 'The team had restored the files'], target: 2, productionSentence: 'Before the system restarted, the team had restored the files' },
+  { events: ['Detectives had reviewed footage', 'An analyst had identified the car', 'Officers had contacted its owner'], target: 0, productionSentence: 'Before the witness arrived, detectives had reviewed the footage' },
+  { events: ['Weeds had grown over the path', 'Branches had fallen', 'The pond had dried'], target: 1, productionSentence: 'Before the family returned, branches had fallen across the path' },
+  { events: ['Students had submitted papers', 'Teachers had marked essays', 'The board had verified scores'], target: 2, productionSentence: 'Before results were announced, the board had verified the scores' },
+  { events: ['The crew had secured cargo', 'An officer had checked the list', 'Engineers had inspected engines'], target: 0, productionSentence: 'Before the ferry departed, the crew had secured the cargo' },
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'By the time the nurse arrived, the patient ', after: ' consciousness.', answer: 'had regained', distractors: ['regained', 'has regained', 'was regaining'] },
-  { before: 'Maya understood the reference because she ', after: ' the original article.', answer: 'had read', distractors: ['read yesterday', 'has read', 'was reading'] },
-  { before: 'Before the storm reached us, we ', after: ' every window.', answer: 'had closed', distractors: ['closed', 'have closed', 'were closing'] },
-  { before: 'At the audit, the company still ', after: ' the missing invoice.', answer: 'had not found', distractors: ['did not find', 'has not found', 'was not finding'] },
-  { before: 'The road was clear because crews ', after: ' the fallen tree earlier.', answer: 'had removed', distractors: ['removed', 'have removed', 'were removing'] },
-  { before: 'When the curtain rose, the orchestra ', after: ' its final tuning.', answer: 'had completed', distractors: ['completed', 'has completed', 'was completing'] },
-  { before: 'They recognized the village although they ', after: ' it only once before.', answer: 'had visited', distractors: ['visited', 'have visited', 'were visiting'] },
-  { before: 'Before prices increased, Nora ', after: ' a yearly pass.', answer: 'had bought', distractors: ['bought', 'has bought', 'was buying'] },
-  { before: 'The room smelled fresh because someone ', after: ' the floor.', answer: 'had cleaned', distractors: ['cleaned', 'has cleaned', 'was cleaning'] },
-  { before: 'By midnight, the final team ', after: ' its application.', answer: 'had submitted', distractors: ['submitted', 'has submitted', 'was submitting'] },
+  { verb: 'regain', before: 'By the time the nurse arrived, the patient ', after: ' consciousness.', answer: 'had regained', distractors: ['regained', 'has regained', 'was regaining'] },
+  { verb: 'read', before: 'Maya understood the reference because she ', after: ' the original article.', answer: 'had read', distractors: ['read', 'has read', 'was reading'] },
+  { verb: 'close', before: 'Before the storm reached us, we ', after: ' every window.', answer: 'had closed', distractors: ['closed', 'have closed', 'were closing'] },
+  { verb: 'find', before: 'At the audit, the company still ', after: ' the missing invoice.', answer: 'had not found', distractors: ['did not find', 'has not found', 'was not finding'] },
+  { verb: 'remove', before: 'The road was clear because crews ', after: ' the fallen tree earlier.', answer: 'had removed', distractors: ['removed', 'have removed', 'were removing'] },
+  { verb: 'complete', before: 'When the curtain rose, the orchestra ', after: ' its final tuning.', answer: 'had completed', distractors: ['completed', 'has completed', 'was completing'] },
+  { verb: 'visit', before: 'They recognized the village although they ', after: ' it only once before.', answer: 'had visited', distractors: ['visited', 'have visited', 'were visiting'] },
+  { verb: 'buy', before: 'Before prices increased, Nora ', after: ' a yearly pass.', answer: 'had bought', distractors: ['bought', 'has bought', 'was buying'] },
+  { verb: 'clean', before: 'The room smelled fresh because someone ', after: ' the floor.', answer: 'had cleaned', distractors: ['cleaned', 'has cleaned', 'was cleaning'] },
+  { verb: 'submit', before: 'By midnight, the final team ', after: ' its application.', answer: 'had submitted', distractors: ['submitted', 'has submitted', 'was submitting'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a completed event before another past event', segments: ['The guide found Elena alert because she ', ' consciousness before the rescue team reached camp.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'an earlier completed action', segments: ['Nora recognized the argument because she ', ' the original report.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a completed action before a past deadline', segments: ['Before the storm reached shore, the crew ', ' every hatch.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'an earlier negative result', segments: ['When the search ended, volunteers ', ' the missing dog.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a completed action before another past action', segments: ['The technician started the test after she ', ' the damaged fuse.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'completion before a later past event', segments: ['When the afternoon review began, the editor ', ' the first proof.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'experience before a past point', segments: ['I knew the layout because I ', ' the gallery once before.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a prior action explaining a past possession', segments: ['He already owned a helmet because he ', ' one for the cycling course.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'completion before another past event', segments: ['Before the tenants returned, the crew ', ' the ventilation system.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a completed earlier deadline', segments: ['When the portal closed, Mina ', ' her application.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_PAST_PERFECT_EDITORIAL = createEnglishEditorialPack({ slug: 'past-perfect', form: 'past-perfect', focus: 'Past perfect', rule: 'Use the past perfect for an action already completed before another explicit past event or reference point.', micro, long, errors, sequences, final })
+export const ENGLISH_PAST_PERFECT_EDITORIAL = createEnglishEditorialPack({ slug: 'past-perfect', form: 'past-perfect', focus: 'Past perfect', rule: 'Use the past perfect for an action already completed before another explicit past event or reference point.', choices, micro, long, errors, sequences, final })

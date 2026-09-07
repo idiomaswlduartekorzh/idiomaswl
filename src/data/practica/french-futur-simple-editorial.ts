@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -8,17 +9,37 @@ import {
 } from './french-editorial-builder.ts'
 
 const micro: FrenchEditorialMicroSeed[] = [
-  { title: 'La promesse après la réunion', cue: 'une promesse future', segments: ['Demain, je te ', ' après la réunion.'], verb: 'rappeler', answers: ['rappellerai'], distractors: ['rappelle', 'vais rappeler', 'rappellerais'] },
-  { title: 'La météo de lundi', cue: 'une prévision future', segments: ['Selon la météo, les températures ', ' lundi.'], verb: 'baisser', answers: ['baisseront'], distractors: ['baissent', 'vont baisser', 'baisseraient'] },
-  { title: 'Les résultats datés', cue: 'un fait futur annoncé', segments: ['Vous ', ' les résultats la semaine prochaine.'], verb: 'recevoir', answers: ['recevrez'], distractors: ['recevez', 'allez recevoir', 'recevriez'] },
-  { title: 'Le choix du jury', cue: 'une décision à venir', segments: ['Le jury ', ' le projet gagnant vendredi.'], verb: 'choisir', answers: ['choisira'], distractors: ['choisit', 'va choisir', 'choisirait'] },
-  { title: 'Notre aide promise', cue: 'un engagement futur', segments: ['Ne t’inquiète pas, nous vous ', ' pendant le déménagement.'], verb: 'aider', answers: ['aiderons'], distractors: ['aidons', 'allons aider', 'aiderions'] },
-  { title: 'Le prochain hiver', cue: 'une projection future', segments: ['D’après les experts, cet hiver ', ' plus sec que le précédent.'], verb: 'être', answers: ['sera'], distractors: ['est', 'va être', 'serait'] },
-  { title: 'Le rendez-vous officiel', cue: 'un événement futur daté', segments: ['La ministre ', ' les représentants mardi prochain.'], verb: 'rencontrer', answers: ['rencontrera'], distractors: ['rencontre', 'va rencontrer', 'rencontrerait'] },
-  { title: 'La réponse certaine', cue: 'une assurance concernant l’avenir', segments: ['Je suis sûr qu’ils ', ' avant la fin du mois.'], verb: 'répondre', answers: ['répondront'], distractors: ['répondent', 'vont répondre', 'répondraient'] },
-  { title: 'Les nouvelles consignes', cue: 'une conséquence future annoncée', segments: ['À partir de janvier, tu ', ' un badge pour entrer.'], verb: 'devoir porter', answers: ['devras porter'], distractors: ['dois porter', 'vas devoir porter', 'devrais porter'] },
-  { title: 'Le calendrier culturel', cue: 'un programme futur officiel', segments: ['La ville ', ' le festival en octobre prochain.'], verb: 'accueillir', answers: ['accueillera'], distractors: ['accueille', 'va accueillir', 'accueillerait'] },
+  { title: 'La promesse après la réunion', cue: 'une promesse future', segments: ['Demain, je te ', ' après la réunion.'], verb: 'rappeler', answers: ['rappellerai'], distractors: ['ai rappelé', 'rappelais', 'rappellerais'] },
+  { title: 'La météo de lundi', cue: 'une prévision future', segments: ['Selon la météo, les températures ', ' lundi.'], verb: 'baisser', answers: ['baisseront'], distractors: ['ont baissé', 'baissaient', 'baisseraient'] },
+  { title: 'Les résultats datés', cue: 'un fait futur annoncé', segments: ['Vous ', ' les résultats la semaine prochaine.'], verb: 'recevoir', answers: ['recevrez'], distractors: ['avez reçu', 'receviez', 'recevriez'] },
+  { title: 'Le choix du jury', cue: 'une décision à venir', segments: ['Le jury ', ' le projet gagnant vendredi.'], verb: 'choisir', answers: ['choisira'], distractors: ['a choisi', 'choisissait', 'choisirait'] },
+  { title: 'Notre aide promise', cue: 'un engagement futur', segments: ['Ne t’inquiète pas, nous vous ', ' pendant le déménagement.'], verb: 'aider', answers: ['aiderons'], distractors: ['avons aidé', 'aidions', 'aiderions'] },
+  { title: 'Le prochain hiver', cue: 'une projection future', segments: ['D’après les experts, cet hiver ', ' plus sec que le précédent.'], verb: 'être', answers: ['sera'], distractors: ['a été', 'était', 'serait'] },
+  { title: 'Le rendez-vous officiel', cue: 'un événement futur daté', segments: ['La ministre ', ' les représentants mardi prochain.'], verb: 'rencontrer', answers: ['rencontrera'], distractors: ['a rencontré', 'rencontrait', 'rencontrerait'] },
+  { title: 'La réponse certaine', cue: 'une assurance concernant l’avenir', segments: ['Je suis sûr qu’ils ', ' avant la fin du mois.'], verb: 'répondre', answers: ['répondront'], distractors: ['ont répondu', 'répondaient', 'répondraient'] },
+  { title: 'Les nouvelles consignes', cue: 'une conséquence future annoncée', segments: ['À partir de janvier, tu ', ' un badge pour entrer.'], verb: 'devoir porter', answers: ['devras porter'], distractors: ['as dû porter', 'devais porter', 'devrais porter'] },
+  { title: 'Le calendrier culturel', cue: 'un programme futur officiel', segments: ['La ville ', ' le festival en octobre prochain.'], verb: 'accueillir', answers: ['accueillera'], distractors: ['a accueilli', 'accueillait', 'accueillerait'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Après le rendez-vous de demain, je te ', ' avec la décision.'],
+  ['La nuit prochaine, les températures ', ' sous zéro.'],
+  ['À la fin du stage, vous ', ' votre attestation par courrier.'],
+  ['Après les auditions de demain, le jury ', ' trois finalistes.'],
+  ['Samedi, nous vous ', ' à installer les meubles.'],
+  ['Selon les climatologues, le prochain hiver ', ' particulièrement humide.'],
+  ['Jeudi matin, la ministre ', ' les maires de la région.'],
+  ['Dès qu’ils auront vérifié les chiffres, ils ', ' à nos questions.'],
+  ['À partir de lundi, dans le nouvel atelier, tu ', ' des lunettes de protection.'],
+  ['En mai prochain, la ville ', ' un congrès international.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'La conférence de demain', instruction: 'Complète ce programme futur cohérent.', segments: ['Demain, la directrice ', ' la séance à neuf heures. Deux chercheurs ', ' leurs résultats, puis le public ', ' des questions.'], entries: [['ouvrir', ['ouvrira']], ['présenter', ['présenteront']], ['poser', ['posera']]] },
@@ -48,7 +69,7 @@ const errors: FrenchEditorialErrorSeed[] = [
 
 const sequences: FrenchEditorialSequenceSeed[] = [
   { events: ['La directrice ouvrira la séance', 'Les chercheurs présenteront leurs résultats', 'Le public posera des questions'], target: 0 },
-  { events: ['La ville construira une école', 'Le bus la reliera au centre', 'Les familles profiteront du parc'], target: 1 },
+  { events: ['La ville construira une école', 'Le bus reliera la gare au centre', 'Les familles profiteront du parc'], target: 1 },
   { events: ['Nous irons à Nantes', 'Nous passerons deux jours sur la côte', 'Nous reviendrons par la Loire'], target: 2 },
   { events: ['Le club recrutera deux joueuses', 'Elles s’entraîneront avec l’équipe', 'Le public les découvrira'], target: 0 },
   { events: ['Notre équipe apportera le matériel', 'Le technicien l’installera', 'Vous recevrez une formation'], target: 1 },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'Demain, je ', after: ' le contrat à votre avocat.', answer: 'transmettrai', distractors: ['transmets', 'vais transmettre', 'transmettrais'] },
-  { before: 'Selon les prévisions, la rivière ', after: ' son niveau maximal mardi.', answer: 'atteindra', distractors: ['atteint', 'va atteindre', 'atteindrait'] },
-  { before: 'L’an prochain, nous ', after: ' une antenne à Toulouse.', answer: 'ouvrirons', distractors: ['ouvrons', 'allons ouvrir', 'ouvririons'] },
-  { before: 'Je te promets que vous ', after: ' une réponse avant vendredi.', answer: 'aurez', distractors: ['avez', 'allez avoir', 'auriez'] },
-  { before: 'Le nouveau train ', after: ' cette distance en deux heures.', answer: 'parcourra', distractors: ['parcourt', 'va parcourir', 'parcourrait'] },
-  { before: 'À partir de septembre, les bureaux ', after: ' à dix-huit heures.', answer: 'fermeront', distractors: ['ferment', 'vont fermer', 'fermeraient'] },
-  { before: 'Tu verras : elle ', after: ' rapidement la solution.', answer: 'comprendra', distractors: ['comprend', 'va comprendre', 'comprendrait'] },
-  { before: 'La semaine prochaine, vous ', after: ' les nouveaux membres.', answer: 'accueillerez', distractors: ['accueillez', 'allez accueillir', 'accueilleriez'] },
-  { before: 'Dans dix ans, cette technologie ', after: ' beaucoup moins d’énergie.', answer: 'consommera', distractors: ['consomme', 'va consommer', 'consommerait'] },
-  { before: 'Après la pause, ils ', after: ' les résultats au comité.', answer: 'présenteront', distractors: ['présentent', 'vont présenter', 'présenteraient'] },
+  { verb: 'transmettre', before: 'Demain, je ', after: ' le contrat à votre avocat.', answer: 'transmettrai', distractors: ['ai transmis', 'transmettais', 'transmettrais'] },
+  { verb: 'atteindre', before: 'Selon les prévisions, la rivière ', after: ' son niveau maximal mardi.', answer: 'atteindra', distractors: ['a atteint', 'atteignait', 'atteindrait'] },
+  { verb: 'ouvrir', before: 'L’an prochain, nous ', after: ' une antenne à Toulouse.', answer: 'ouvrirons', distractors: ['avons ouvert', 'ouvrions', 'ouvririons'] },
+  { verb: 'avoir', before: 'Je vous promets que vous ', after: ' une réponse avant vendredi.', answer: 'aurez', distractors: ['avez eu', 'aviez', 'auriez'] },
+  { verb: 'parcourir', before: 'Lors de sa mise en service l’an prochain, le nouveau train ', after: ' cette distance en deux heures.', answer: 'parcourra', distractors: ['a parcouru', 'parcourait', 'parcourrait'] },
+  { verb: 'fermer', before: 'À partir de septembre prochain, les bureaux ', after: ' à dix-huit heures.', answer: 'fermeront', distractors: ['ont fermé', 'fermaient', 'fermeraient'] },
+  { verb: 'comprendre', before: 'Tu verras : elle ', after: ' rapidement la solution.', answer: 'comprendra', distractors: ['a compris', 'comprenait', 'comprendrait'] },
+  { verb: 'accueillir', before: 'La semaine prochaine, vous ', after: ' les nouveaux membres.', answer: 'accueillerez', distractors: ['avez accueilli', 'accueilliez', 'accueilleriez'] },
+  { verb: 'consommer', before: 'Dans dix ans, cette technologie ', after: ' beaucoup moins d’énergie.', answer: 'consommera', distractors: ['a consommé', 'consommait', 'consommerait'] },
+  { verb: 'présenter', before: 'Après la pause de demain, ils ', after: ' les résultats au comité.', answer: 'présenteront', distractors: ['ont présenté', 'présentaient', 'présenteraient'] },
 ]
 
 export const FRENCH_FUTUR_SIMPLE_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_FUTUR_SIMPLE_EDITORIAL = createFrenchEditorialPack({
   form: 'futur-simple',
   focus: 'Futur simple',
   rule: 'Le futur simple situe une prévision, une promesse ou un fait annoncé dans un avenir explicitement repéré.',
+  choices,
   micro,
   long,
   errors,

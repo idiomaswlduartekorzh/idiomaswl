@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Supplies for the kitchen', cue: 'a prior plan supported by purchased supplies', segments: ['We bought the supplies because we ', ' the kitchen.'], verb: 'paint', answers: ['are going to paint'], distractors: ['will paint', 'paint', 'are painting'] },
@@ -46,23 +46,35 @@ const sequences: EnglishEditorialSequenceSeed[] = [
   { events: ['We are going to stay by the lake', 'Dad is going to bring bicycles', 'The children are going to take lessons'], target: 0 },
   { events: ['The top box is going to slide', 'The books are going to fall', 'The frame is going to break'], target: 1 },
   { events: ['The company is going to launch a portal', 'Engineers are going to integrate it', 'Trainers are going to prepare staff'], target: 2 },
-  { events: ['Leo is going to apply', 'His sister is going to study abroad', 'Nina is going to start a business'], target: 0 },
+  { events: ['Leo is going to apply for the internship', 'His sister is going to study abroad', 'Nina is going to start a business'], target: 0 },
   { events: ['We are going to invite guests', 'A restaurant is going to provide dinner', 'Musicians are going to perform'], target: 1 },
   { events: ['The queue is going to reach the bridge', 'Buses are going to experience delays', 'Commuters are going to miss trains'], target: 2 },
-  { events: ['I am going to expand the bed', 'Maya is going to repair the fence', 'We are going to add a barrel'], target: 0 },
+  { events: ['I am going to expand the flower bed', 'Maya is going to repair the fence', 'We are going to add a barrel'], target: 0 },
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'We have signed the lease and ', after: ' offices next month.', answer: 'are going to move', distractors: ['will move', 'move', 'are moving now'] },
-  { before: 'Watch that cyclist—he ', after: ' the open gate.', answer: 'is going to hit', distractors: ['will hit', 'hits', 'is hitting already'] },
-  { before: 'Nora has chosen her topic and ', after: ' urban transport.', answer: 'is going to research', distractors: ['will research', 'researches', 'is researching now'] },
-  { before: 'The shelf is bending; it ', after: ' under that weight.', answer: 'is going to collapse', distractors: ['will collapse', 'collapses', 'is collapsing already'] },
-  { before: 'They bought camping equipment because they ', after: ' in the national park.', answer: 'are going to stay', distractors: ['will stay', 'stay', 'are staying now'] },
-  { before: 'I have made my decision: I ', after: ' the evening course.', answer: 'am going to join', distractors: ['will join', 'join', 'am joining now'] },
-  { before: 'The pan is smoking. The oil ', after: ' if you do not lower the heat.', answer: 'is going to burn', distractors: ['will burn', 'burns', 'is burning already'] },
-  { before: 'The board decided it ', after: ' the branch this year.', answer: 'is not going to close', distractors: ['will not close', 'does not close', 'is not closing now'] },
-  { before: 'Mina has laid out her tools; she ', after: ' the bicycle this afternoon.', answer: 'is going to repair', distractors: ['will repair', 'repairs', 'is repairing now'] },
-  { before: 'The team has rehearsed the announcement and ', after: ' it after lunch.', answer: 'is going to record', distractors: ['will record', 'records', 'is recording now'] },
+  { verb: 'move', before: 'We have signed the lease and ', after: ' offices next month.', answer: 'are going to move', distractors: ['have moved', 'move', 'moved'] },
+  { verb: 'hit', before: 'Watch that cyclist—he ', after: ' the open gate.', answer: 'is going to hit', distractors: ['has hit', 'hits', 'hit'] },
+  { verb: 'research', before: 'Nora has chosen her topic and ', after: ' urban transport.', answer: 'is going to research', distractors: ['has researched', 'researches', 'researched'] },
+  { verb: 'collapse', before: 'The shelf is bending; it ', after: ' under that weight.', answer: 'is going to collapse', distractors: ['has collapsed', 'collapses', 'collapsed'] },
+  { verb: 'stay', before: 'They bought camping equipment because they ', after: ' in the national park.', answer: 'are going to stay', distractors: ['have stayed', 'stay', 'stayed'] },
+  { verb: 'join', before: 'I have made my decision: I ', after: ' the evening course.', answer: 'am going to join', distractors: ['have joined', 'join', 'joined'] },
+  { verb: 'burn', before: 'The pan is smoking. The oil ', after: ' if you do not lower the heat.', answer: 'is going to burn', distractors: ['has burned', 'burns', 'burned'] },
+  { verb: 'close', before: 'The board decided it ', after: ' the branch this year.', answer: 'is not going to close', distractors: ['has not closed', 'does not close', 'did not close'] },
+  { verb: 'repair', before: 'Mina has laid out her tools; she ', after: ' the bicycle this afternoon.', answer: 'is going to repair', distractors: ['has repaired', 'repairs', 'repaired'] },
+  { verb: 'record', before: 'The team has rehearsed the announcement and ', after: ' it after lunch.', answer: 'is going to record', distractors: ['has recorded', 'records', 'recorded'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a prior plan', segments: ['We have booked the removal company and ', ' to the new studio in July.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a prediction from present evidence', segments: ['Look at that loose branch—it ', ' the greenhouse roof.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'an intention based on a decision', segments: ['Iris has selected her question and ', ' coastal erosion.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a prediction from visible evidence', segments: ['That cracked beam ', ' under the load.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'an arranged intention', segments: ['They rented two tents because they ', ' beside the lake.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a personal decision already made', segments: ['I have chosen: I ', ' the weekend orchestra.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a prediction from present evidence', segments: ['The toast is smoking; it ', ' unless you unplug the toaster.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a decided negative plan', segments: ['The committee agreed it ', ' the rural office this year.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'an intention shown by preparation', segments: ['Ava has brought the spare parts; she ', ' the scooter after lunch.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a prepared intention', segments: ['The production team has tested the microphones and ', ' the episode tonight.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_FUTURE_GOING_TO_EDITORIAL = createEnglishEditorialPack({ slug: 'future-going-to', form: 'future-going-to', focus: 'Be going to', rule: 'Use be going to for an intention decided before speaking or a prediction grounded in present evidence.', micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })
+export const ENGLISH_FUTURE_GOING_TO_EDITORIAL = createEnglishEditorialPack({ slug: 'future-going-to', form: 'future-going-to', focus: 'Be going to', rule: 'Use be going to for an intention decided before speaking or a prediction grounded in present evidence.', choices, micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })

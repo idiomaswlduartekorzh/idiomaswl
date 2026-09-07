@@ -558,7 +558,9 @@
 .sentenceField textarea {
   line-height: 1.55;
   min-height: 92px;
+  min-width: 0;
   resize: vertical;
+  width: 100%;
 }
 
 .sentenceField textarea:focus-visible {
@@ -658,6 +660,25 @@
 .reviewAnswer small {
   color: var(--wlp-muted);
   line-height: 1.5;
+}
+
+.reviewModeNotice {
+  align-items: center;
+  background: color-mix(in srgb, var(--wlp-accent) 7%, var(--wlp-surface));
+  border: 1px solid color-mix(in srgb, var(--wlp-accent) 30%, var(--wlp-line));
+  border-radius: var(--wlp-r);
+  color: var(--wlp-muted);
+  display: flex;
+  font-size: 0.86rem;
+  gap: 0.55rem;
+  line-height: 1.45;
+  margin: 1rem 0 0;
+  padding: 0.75rem 0.9rem;
+}
+
+.reviewModeNotice svg {
+  color: var(--wlp-accent);
+  flex: 0 0 auto;
 }
 
 .timelineBoard {
@@ -1062,6 +1083,7 @@
     grid-template-columns: 34px 1fr;
   }
 
+  .timelineRow .sentenceField,
   .timelineRow select,
   .rowCorrection {
     grid-column: 1 / -1;

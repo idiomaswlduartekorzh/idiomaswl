@@ -1,11 +1,11 @@
 import { expect, test } from '@playwright/test'
 import { GERMAN_STRUCTURE_QUEST as quest } from '../../src/data/practica/german-structure-quest-config'
 
-test('alemán: modo de revisión deja los seis niveles resueltos al 100% y permite avanzar', async ({ page }) => {
+test('alemán: modo de revisión precarga los seis niveles y permite avanzar', async ({ page }) => {
   await page.goto('/herramientas/quizes/aleman?forms=praesens&level=4&review=1')
   await expect(page.getByText('Respuesta para revisión')).toBeVisible()
   await expect(page.getByRole('tab')).toHaveCount(6)
-  for (const tab of await page.getByRole('tab').all()) await expect(tab).toContainText('100%')
+  for (const tab of await page.getByRole('tab').all()) await expect(tab).toContainText('Revisión')
   await expect(page.locator('[class*="errorToken"]')).toHaveCount(0)
   await expect(page.getByRole('textbox')).toHaveCount(2)
   await expect(page.getByLabel('Forma que está mal')).toHaveValue('arbeiten')

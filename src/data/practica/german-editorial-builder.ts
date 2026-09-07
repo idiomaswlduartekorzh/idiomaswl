@@ -69,6 +69,10 @@ export function createGermanEditorialPack(input: {
       sequenceHint: 'Alle Optionen verwenden die Zielform. Entscheide nach Bedeutung und Ablauf, nicht nach einem einzelnen Hilfsverb.',
       sequenceExplanation: (answer) => `„${answer}“ passt an diese Stelle wegen des vollständigen Handlungsablaufs.`,
       writtenSuffix: 'Schreibe Wörter, die bereits außerhalb der Lücke stehen, nicht noch einmal. Bei trennbaren Verben bleibt der sichtbare Verbzusatz an seiner Satzposition.',
+      finalTitle: `Abschlussdossier · ${input.focus}`,
+      finalInstruction: 'Schreibe alle zehn vollständigen Verbgruppen. Jede Notiz enthält ihren eigenen Hinweis auf Zeit, Funktion oder Satzbau.',
+      finalIntro: 'Die erste Feldnotiz lautet: ',
+      finalBridge: (index) => ` Notiz ${index + 1}: `,
     },
   })
   return { ...pack, errors: createGermanCorrectionChallenges(input.form, input.focus, input.rule) }

@@ -1,6 +1,7 @@
 import {
   createStructureEditorialPack,
   type StructureEditorialErrorSeed,
+  type StructureEditorialChoiceSeed,
   type StructureEditorialFinalSeed,
   type StructureEditorialGapSeed,
   type StructureEditorialMicroSeed,
@@ -9,6 +10,7 @@ import {
 import type { FrenchFormId } from './french-structure-quest-config.ts'
 
 export type FrenchEditorialMicroSeed = StructureEditorialMicroSeed
+export type FrenchEditorialChoiceSeed = StructureEditorialChoiceSeed
 export type FrenchEditorialGapSeed = StructureEditorialGapSeed
 export type FrenchEditorialErrorSeed = StructureEditorialErrorSeed
 export type FrenchEditorialSequenceSeed = StructureEditorialSequenceSeed
@@ -21,6 +23,7 @@ export function createFrenchEditorialPack(input: {
   form: FrenchFormId
   focus: string
   rule: string
+  choices?: FrenchEditorialChoiceSeed[]
   micro: FrenchEditorialMicroSeed[]
   long: FrenchEditorialGapSeed[]
   errors: FrenchEditorialErrorSeed[]
@@ -39,11 +42,15 @@ export function createFrenchEditorialPack(input: {
       write: (verb) => `Conjugue « ${verb} » et écris toute la forme verbale.`,
       error: 'Sélectionne l’unique forme verbale incorrecte, puis réécris-la correctement.',
       sequenceTitle: (index) => `Suite cohérente · ${index}`,
-      sequenceContext: ([first, second, third]) => `${first}. Ensuite, ${second.charAt(0).toLocaleLowerCase('fr')}${second.slice(1)}. Enfin, ${third.charAt(0).toLocaleLowerCase('fr')}${third.slice(1)}.`,
+      sequenceContext: () => 'Reconstitue la suite à partir de la préparation, de l’action et du résultat. Le récit ordonné est volontairement masqué.',
       sequenceQuestion: (position) => `Quel événement ${positionLabels[position]} la suite ?`,
       sequenceHint: 'Toutes les options emploient la même forme cible : reconstruis le sens et l’ordre du récit.',
       sequenceExplanation: (answer) => `« ${answer} » se repère grâce à la progression du récit, pas grâce à une forme verbale isolée.`,
       writtenSuffix: 'Le contexte fournit tous les mots qui ne font pas partie du groupe verbal demandé.',
+      finalTitle: `Dossier final · ${input.focus}`,
+      finalInstruction: 'Écris les dix groupes verbaux complets. Chaque note fournit son propre repère de temps, d’aspect ou de registre.',
+      finalIntro: 'Dans le dossier de terrain, la première note indique : ',
+      finalBridge: (index) => ` Note ${index + 1} : `,
     },
   })
 }

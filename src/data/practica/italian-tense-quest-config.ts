@@ -19,7 +19,7 @@ import { ITALIAN_CONDIZIONALE_PASSATO_EDITORIAL } from './italian-condizionale-p
 import { ITALIAN_IMPERATIVO_EDITORIAL } from './italian-imperativo-editorial.ts'
 import { ITALIAN_FINAL_EDITORIAL_CONTEXTS } from './italian-final-editorial-contexts.ts'
 import { LEVEL_META, TENSE_OPTIONS, type TenseId } from './italian-tense-quest.ts'
-import type { BankChallenge, ChoiceChallenge, TenseQuestConfig } from './tense-quest-types'
+import type { BankChallenge, ChoiceChallenge, GapChallenge, TenseQuestConfig } from './tense-quest-types'
 
 const choiceChallenges: ChoiceChallenge<TenseId>[] = []
 
@@ -31,9 +31,9 @@ function placeCorrectAnswer(answer: string, alternatives: readonly string[], pos
   return options
 }
 
-let globalChoiceIndex = 0
+const CHOICE_ANSWER_POSITIONS = [1, 0, 3, 0, 2, 1, 3, 2, 0, 1] as const
 
-ITALIAN_DRILL_SERIES.forEach((series) => {
+ITALIAN_DRILL_SERIES.forEach((series, seriesIndex) => {
   series.drills.forEach((drill, index) => {
     const number = index + 1
     choiceChallenges.push({
@@ -42,11 +42,10 @@ ITALIAN_DRILL_SERIES.forEach((series) => {
       focus: series.label,
       prompt: `Elige la forma de ${drill.verb} que corresponde a ${drill.cue}.`,
       context: `${drill.before}___${drill.after}`,
-      options: placeCorrectAnswer(drill.answer, drill.alternatives, globalChoiceIndex % 4),
+      options: placeCorrectAnswer(drill.answer, drill.alternatives, (CHOICE_ANSWER_POSITIONS[index] + seriesIndex) % 4),
       answer: drill.answer,
       explanation: `${series.rule} Aquí la pista decisiva es «${drill.cue}».`,
     })
-    globalChoiceIndex += 1
   })
 })
 
@@ -78,9 +77,30 @@ const finalChallenges: BankChallenge<TenseId>[] = Array.from({ length: 10 }, (_,
   }
 })
 
+const finalStories: GapChallenge<TenseId>[] = ITALIAN_DRILL_SERIES.map((series) => {
+  const contexts = ITALIAN_FINAL_EDITORIAL_CONTEXTS[series.id]
+  const segments = contexts.map((context, index) => `${index === 0 ? 'Nel dossier finale, la prima nota dice: ' : ` Nota ${index + 1}: `}${context.before}`)
+    .concat(contexts.at(-1)?.after ?? '')
+  for (let index = 0; index < contexts.length - 1; index += 1) segments[index + 1] = `${contexts[index].after}${segments[index + 1]}`
+  return {
+    id: `it-final-story-${series.id}`,
+    title: `Dossier finale · ${series.label}`,
+    focus: series.label,
+    instruction: 'Scrivi tutte e dieci le forme verbali complete. Ogni nota contiene il proprio indizio temporale o funzionale.',
+    segments,
+    gaps: series.drills.map((drill, index) => ({
+      id: `it-final-story-${series.id}-gap-${index + 1}`,
+      tense: series.id,
+      verb: drill.verb,
+      answers: [drill.answer],
+    })),
+    explanation: `${series.rule} Ogni risposta contiene soltanto la forma verbale richiesta.`,
+  }
+})
+
 export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
   id: 'italian-tense-quest',
-  storageKey: 'wl-italian-tense-quest-v7',
+  storageKey: 'wl-italian-tense-quest-v8',
   forms: TENSE_OPTIONS,
   presets: [
     { label: 'Pasados', ids: ['passato-prossimo', 'imperfetto', 'imperfetto-progressivo', 'passato-remoto', 'trapassato-prossimo', 'trapassato-remoto'] },
@@ -151,6 +171,8 @@ export const ITALIAN_TENSE_QUEST: TenseQuestConfig<TenseId> = {
     ...PASSATO_PROSSIMO_TIMELINES,
   ],
   finalChallenges,
+  finalStories,
+  errorIdentificationMode: 'write',
   copy: {
     languageName: 'Italiano',
     languageCode: 'it',

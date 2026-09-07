@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: FrenchEditorialMicroSeed[] = [
   { title: 'Les inscriptions avant lundi', cue: 'une clôture antérieure à une date future', segments: ['Avant lundi, nous ', ' toutes les inscriptions.'], verb: 'clore', answers: ['aurons clos'], distractors: ['clorons', 'avions clos', 'aurions clos'] },
   { title: 'Le départ des invités', cue: 'un départ achevé avant un futur constat', segments: ['Quand nous rentrerons, nos invités ', '.'], verb: 'partir', answers: ['seront partis'], distractors: ['partiront', 'étaient partis', 'seraient partis'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Avant la présentation de lundi, nous ', ' toutes les diapositives.'],
+  ['D’ici vingt-deux heures, elle ', ' pour prendre son train de nuit.'],
+  ['Avant la maintenance nocturne, ils ', ' chaque fichier.'],
+  ['Au moment de l’examen final, tu ', ' les douze modules.'],
+  ['Quand le soleil se couchera, les randonneuses ', ' au camp.'],
+  ['Avant notre entretien de demain, j’', ' votre dossier complet.'],
+  ['D’ici l’ouverture du festival, la ville ', ' la place centrale.'],
+  ['Quand la conférence commencera, votre avion ', ' à Québec.'],
+  ['D’ici la fin de la journée, nous ', ' la période de candidature.'],
+  ['Lorsque l’équipe de nettoyage arrivera, nos invités ', '.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'Avant l’ouverture de vendredi', instruction: 'Complète les tâches qui seront achevées avant l’ouverture.', segments: ['D’ici vendredi matin, l’équipe ', ' les vitrines. La responsable ', ' les prix et les techniciens ', ' le nouvel éclairage.'], entries: [['installer', ['aura installé']], ['vérifier', ['aura vérifié']], ['tester', ['auront testé']]] },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'D’ici demain soir, je ', after: ' tous les formulaires.', answer: 'aurai rempli', distractors: ['remplirai', 'avais rempli', 'aurais rempli'] },
-  { before: 'Quand tu ouvriras la salle, les techniciennes ', after: ' leur installation.', answer: 'auront terminé', distractors: ['termineront', 'avaient terminé', 'auraient terminé'] },
-  { before: 'À la fin du mois, nous ', after: ' cette somme en totalité.', answer: 'aurons payé', distractors: ['paierons', 'avions payé', 'aurions payé'] },
-  { before: 'Avant le prochain contrôle, le moteur ', after: ' mille heures.', answer: 'aura fonctionné', distractors: ['fonctionnera', 'avait fonctionné', 'aurait fonctionné'] },
-  { before: 'Lorsque vous arriverez au refuge, Léa ', after: ' depuis longtemps.', answer: 'sera arrivée', distractors: ['arrivera', 'était arrivée', 'serait arrivée'] },
-  { before: 'D’ici 2030, la ville ', after: ' toutes ces lignes.', answer: 'aura prolongé', distractors: ['prolongera', 'avait prolongé', 'aurait prolongé'] },
-  { before: 'Avant le discours, ils ', after: ' le texte deux fois.', answer: 'auront relu', distractors: ['reliront', 'avaient relu', 'auraient relu'] },
-  { before: 'À vingt heures, tu ', after: ' les derniers invités.', answer: 'auras accueilli', distractors: ['accueilleras', 'avais accueilli', 'aurais accueilli'] },
-  { before: 'Quand le soleil se lèvera, les bateaux ', after: ' le port.', answer: 'auront quitté', distractors: ['quitteront', 'avaient quitté', 'auraient quitté'] },
-  { before: 'D’ici la remise des prix, le jury ', after: ' chaque dossier.', answer: 'aura évalué', distractors: ['évaluera', 'avait évalué', 'aurait évalué'] },
+  { verb: 'remplir', before: 'D’ici demain soir, je ', after: ' tous les formulaires.', answer: 'aurai rempli', distractors: ['remplirai', 'avais rempli', 'aurais rempli'] },
+  { verb: 'terminer', before: 'Quand tu ouvriras la salle, les techniciennes ', after: ' leur installation.', answer: 'auront terminé', distractors: ['termineront', 'avaient terminé', 'auraient terminé'] },
+  { verb: 'payer', before: 'D’ici la fin du mois, nous ', after: ' cette somme en totalité.', answer: 'aurons payé', distractors: ['paierons', 'avions payé', 'aurions payé'] },
+  { verb: 'fonctionner', before: 'Avant le prochain contrôle, le moteur ', after: ' mille heures.', answer: 'aura fonctionné', distractors: ['fonctionnera', 'avait fonctionné', 'aurait fonctionné'] },
+  { verb: 'arriver', before: 'Lorsque vous arriverez au refuge, Léa ', after: ' depuis longtemps.', answer: 'sera arrivée', distractors: ['arrivera', 'était arrivée', 'serait arrivée'] },
+  { verb: 'prolonger', before: 'D’ici 2030, la ville ', after: ' toutes ces lignes.', answer: 'aura prolongé', distractors: ['prolongera', 'avait prolongé', 'aurait prolongé'] },
+  { verb: 'relire', before: 'Avant le discours, ils ', after: ' le texte deux fois.', answer: 'auront relu', distractors: ['reliront', 'avaient relu', 'auraient relu'] },
+  { verb: 'accueillir', before: 'D’ici vingt heures, tu ', after: ' les derniers invités.', answer: 'auras accueilli', distractors: ['accueilleras', 'avais accueilli', 'aurais accueilli'] },
+  { verb: 'quitter', before: 'Quand le soleil se lèvera, les bateaux ', after: ' le port.', answer: 'auront quitté', distractors: ['quitteront', 'avaient quitté', 'auraient quitté'] },
+  { verb: 'évaluer', before: 'D’ici la remise des prix, le jury ', after: ' chaque dossier.', answer: 'aura évalué', distractors: ['évaluera', 'avait évalué', 'aurait évalué'] },
 ]
 
 export const FRENCH_FUTUR_ANTERIEUR_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_FUTUR_ANTERIEUR_EDITORIAL = createFrenchEditorialPack({
   form: 'futur-anterieur',
   focus: 'Futur antérieur',
   rule: 'Le futur antérieur présente un fait accompli avant une échéance ou un autre moment explicitement futur.',
+  choices,
   micro,
   long,
   errors,

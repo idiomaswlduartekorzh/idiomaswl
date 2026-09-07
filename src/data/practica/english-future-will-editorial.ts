@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'A personal prediction', cue: 'a prediction introduced by I think', segments: ['I think the plan ', '.'], verb: 'work', answers: ['will work'], distractors: ['works', 'is working', 'has worked'] },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'I think this route ', after: ' us at least twenty minutes.', answer: 'will save', distractors: ['saves', 'is saving', 'has saved'] },
-  { before: 'The kettle is boiling; I ', after: ' the tea.', answer: 'will make', distractors: ['make', 'am making', 'have made'] },
-  { before: 'I promise I ', after: ' you as soon as the results arrive.', answer: 'will call', distractors: ['call', 'am calling', 'have called'] },
-  { before: 'Those bags are heavy. We ', after: ' them upstairs.', answer: 'will carry', distractors: ['carry', 'are carrying', 'have carried'] },
-  { before: 'Analysts expect fuel prices ', after: ' again next quarter.', answer: 'will rise', distractors: ['rise', 'are rising', 'have risen'] },
-  { before: 'The lock is frozen and ', after: ', despite all our attempts.', answer: 'will not open', distractors: ['does not open', 'is not opening', 'has not opened'] },
-  { before: 'You forgot your umbrella? I ', after: ' mine with you.', answer: 'will share', distractors: ['share', 'am sharing', 'have shared'] },
-  { before: 'I am certain the judges ', after: ' her final design.', answer: 'will admire', distractors: ['admire', 'are admiring', 'have admired'] },
-  { before: 'Our support team ', after: ' within twenty-four hours.', answer: 'will respond', distractors: ['responds', 'is responding', 'has responded'] },
-  { before: 'You cooked tonight, so I ', after: ' the kitchen.', answer: 'will clean', distractors: ['clean', 'am cleaning', 'have cleaned'] },
+  { verb: 'save', before: 'I think this route ', after: ' us at least twenty minutes.', answer: 'will save', distractors: ['saves', 'is saving', 'has saved'] },
+  { verb: 'make', before: 'The kettle is boiling; I ', after: ' the tea.', answer: 'will make', distractors: ['make', 'am making', 'have made'] },
+  { verb: 'call', before: 'I promise I ', after: ' you as soon as the results arrive.', answer: 'will call', distractors: ['call', 'am calling', 'have called'] },
+  { verb: 'carry', before: 'Those bags are heavy. We ', after: ' them upstairs.', answer: 'will carry', distractors: ['carry', 'are carrying', 'have carried'] },
+  { verb: 'rise', before: 'Analysts expect fuel prices ', after: ' again next quarter.', answer: 'will rise', distractors: ['rise', 'are rising', 'have risen'] },
+  { verb: 'open', before: 'The lock is frozen and ', after: ', despite all our attempts.', answer: 'will not open', distractors: ['does not open', 'is not opening', 'has not opened'] },
+  { verb: 'share', before: 'You forgot your umbrella? I ', after: ' mine with you.', answer: 'will share', distractors: ['share', 'am sharing', 'have shared'] },
+  { verb: 'admire', before: 'I am certain the judges ', after: ' her final design.', answer: 'will admire', distractors: ['admire', 'are admiring', 'have admired'] },
+  { verb: 'respond', before: 'Our support team ', after: ' within twenty-four hours.', answer: 'will respond', distractors: ['responds', 'is responding', 'has responded'] },
+  { verb: 'clean', before: 'You cooked tonight, so I ', after: ' the kitchen.', answer: 'will clean', distractors: ['clean', 'am cleaning', 'have cleaned'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a spontaneous prediction', segments: ['I think the shortcut ', ' us nearly half an hour.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a decision made now', segments: ['The guests are here; I ', ' some coffee.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a promise', segments: ['I promise I ', ' as soon as the doctor replies.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'an offer made now', segments: ['Those crates look heavy. We ', ' them to the storeroom.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a neutral forecast', segments: ['Economists expect rental costs ', ' again this winter.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a prediction about refusal or failure', segments: ['The jammed drawer ', ' despite our efforts.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a spontaneous offer', segments: ['You left your charger at home? I ', ' mine with you.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a confident prediction', segments: ['I am sure the audience ', ' his new composition.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a formal future commitment', segments: ['Our admissions office ', ' within three working days.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a decision made at the moment of speaking', segments: ['You prepared lunch, so I ', ' the dishes.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_FUTURE_WILL_EDITORIAL = createEnglishEditorialPack({ slug: 'future-will', form: 'future-will', focus: 'Future with will', rule: 'Use will for neutral predictions, spontaneous decisions, offers, promises, refusals and formal assurances.', micro, long, errors, sequences, final })
+export const ENGLISH_FUTURE_WILL_EDITORIAL = createEnglishEditorialPack({ slug: 'future-will', form: 'future-will', focus: 'Future with will', rule: 'Use will for neutral predictions, spontaneous decisions, offers, promises, refusals and formal assurances.', choices, micro, long, errors, sequences, final })

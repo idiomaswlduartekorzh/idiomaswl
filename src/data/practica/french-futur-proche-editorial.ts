@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -8,17 +9,37 @@ import {
 } from './french-editorial-builder.ts'
 
 const micro: FrenchEditorialMicroSeed[] = [
-  { title: 'Les nuages noirs', cue: 'une prédiction immédiate fondée sur un indice', segments: ['Regarde ces nuages : il ', '.'], verb: 'pleuvoir', answers: ['va pleuvoir'], distractors: ['pleut', 'pleuvra', 'pleuvrait'] },
-  { title: 'Les billets achetés', cue: 'un projet déjà décidé', segments: ['Nous avons les billets ; nous ', ' vendredi matin.'], verb: 'partir', answers: ['allons partir'], distractors: ['partons', 'partirons', 'partirions'] },
-  { title: 'Le verre au bord', cue: 'un événement imminent', segments: ['Attention, ce verre ', ' !'], verb: 'tomber', answers: ['va tomber'], distractors: ['tombe', 'tombera', 'tomberait'] },
-  { title: 'Le rendez-vous confirmé', cue: 'une intention organisée', segments: ['J’ai confirmé l’heure : je ', ' la directrice à quinze heures.'], verb: 'rencontrer', answers: ['vais rencontrer'], distractors: ['rencontre', 'rencontrerai', 'rencontrerais'] },
-  { title: 'La batterie rouge', cue: 'une conséquence très proche visible', segments: ['La batterie est à 1 % ; le téléphone ', '.'], verb: 's’éteindre', answers: ['va s’éteindre', "va s'éteindre"], distractors: ["s’éteint", "s’éteindra", "s’éteindrait"] },
-  { title: 'Le dîner prévu', cue: 'un plan collectif déjà préparé', segments: ['Tout est acheté ; ce soir, nous ', ' pour dix personnes.'], verb: 'cuisiner', answers: ['allons cuisiner'], distractors: ['cuisinons', 'cuisinerons', 'cuisinerions'] },
-  { title: 'La valise prête', cue: 'un départ décidé et proche', segments: ['Sa valise est dans l’entrée : Lina ', ' pour Bruxelles.'], verb: 'partir', answers: ['va partir'], distractors: ['part', 'partira', 'partirait'] },
-  { title: 'Les outils sur la table', cue: 'une action imminente préparée', segments: ['Les outils sont prêts ; vous ', ' l’étagère maintenant.'], verb: 'réparer', answers: ['allez réparer'], distractors: ['réparez', 'réparerez', 'répareriez'] },
-  { title: 'La salle réservée', cue: 'un événement proche déjà organisé', segments: ['La salle est réservée : ils ', ' le projet demain.'], verb: 'présenter', answers: ['vont présenter'], distractors: ['présentent', 'présenteront', 'présenteraient'] },
-  { title: 'Le four préchauffé', cue: 'une action sur le point de commencer', segments: ['Le four est chaud ; tu ', ' le gâteau.'], verb: 'enfourner', answers: ['vas enfourner'], distractors: ['enfournes', 'enfourneras', 'enfournerais'] },
+  { title: 'Les nuages noirs', cue: 'une prédiction immédiate fondée sur un indice', segments: ['Regarde ces nuages : il ', '.'], verb: 'pleuvoir', answers: ['va pleuvoir'], distractors: ['a plu', 'pleuvait', 'pleuvrait'] },
+  { title: 'Les billets achetés', cue: 'un projet déjà décidé', segments: ['Nous avons les billets ; nous ', ' vendredi matin.'], verb: 'partir', answers: ['allons partir'], distractors: ['sommes partis', 'partions', 'partirions'] },
+  { title: 'Le verre au bord', cue: 'un événement imminent', segments: ['Attention, ce verre ', ' !'], verb: 'tomber', answers: ['va tomber'], distractors: ['est tombé', 'tombait', 'tomberait'] },
+  { title: 'Le rendez-vous confirmé', cue: 'une intention organisée', segments: ['J’ai confirmé l’heure : je ', ' la directrice à quinze heures.'], verb: 'rencontrer', answers: ['vais rencontrer'], distractors: ['ai rencontré', 'rencontrais', 'rencontrerais'] },
+  { title: 'La batterie rouge', cue: 'une conséquence très proche visible', segments: ['La batterie est à 1 % ; le téléphone ', '.'], verb: 's’éteindre', answers: ['va s’éteindre', "va s'éteindre"], distractors: ["s’est éteint", "s’éteignait", "s’éteindrait"] },
+  { title: 'Le dîner prévu', cue: 'un plan collectif déjà préparé', segments: ['Tout est acheté ; ce soir, nous ', ' pour dix personnes.'], verb: 'cuisiner', answers: ['allons cuisiner'], distractors: ['avons cuisiné', 'cuisinions', 'cuisinerions'] },
+  { title: 'La valise prête', cue: 'un départ décidé et proche', segments: ['Sa valise est dans l’entrée : Lina ', ' pour Bruxelles.'], verb: 'partir', answers: ['va partir'], distractors: ['est partie', 'partait', 'partirait'] },
+  { title: 'Les outils sur la table', cue: 'une action imminente préparée', segments: ['Les outils sont prêts ; vous ', ' l’étagère maintenant.'], verb: 'réparer', answers: ['allez réparer'], distractors: ['avez réparé', 'répariez', 'répareriez'] },
+  { title: 'La salle réservée', cue: 'un événement proche déjà organisé', segments: ['La salle est réservée : ils ', ' le projet demain.'], verb: 'présenter', answers: ['vont présenter'], distractors: ['ont présenté', 'présentaient', 'présenteraient'] },
+  { title: 'Le four préchauffé', cue: 'une action sur le point de commencer', segments: ['Le four est chaud ; tu ', ' le gâteau.'], verb: 'enfourner', answers: ['vas enfourner'], distractors: ['as enfourné', 'enfournais', 'enfournerais'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Le tonnerre se rapproche : il ', ' d’un instant à l’autre.'],
+  ['Le taxi nous attend devant l’hôtel ; nous ', ' dans deux minutes.'],
+  ['La table penche : ce vase ', ' si personne ne le retient.'],
+  ['Mon badge visiteur est prêt : je ', ' l’équipe à quatorze heures.'],
+  ['L’écran clignote et le téléphone ', ' faute de batterie.'],
+  ['Les invités sont en route ; nous ', ' dès leur arrivée.'],
+  ['Le train entre en gare : Lina ', ' pour Lille.'],
+  ['La pièce neuve est arrivée ; vous ', ' le moteur immédiatement.'],
+  ['Les ingénieurs rejoignent la scène : ils ', ' leur prototype dans un instant.'],
+  ['La pâte est prête et tu ', ' les biscuits maintenant.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'Le départ en randonnée', instruction: 'Complète ce projet immédiat et cohérent.', segments: ['Les sacs sont prêts. Nous ', ' la maison dans cinq minutes, puis nous ', ' le bus de six heures et nous ', ' le sentier avant huit heures.'], entries: [['quitter', ['allons quitter']], ['prendre', ['allons prendre']], ['commencer', ['allons commencer']]] },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'La valise est prête : je ', after: ' dans quelques minutes.', answer: 'vais partir', distractors: ['pars', 'partirai', 'partirais'] },
-  { before: 'Regarde la fumée : l’alarme ', after: ' !', answer: 'va sonner', distractors: ['sonne', 'sonnera', 'sonnerait'] },
-  { before: 'Nous avons réservé la salle ; nous ', after: ' la cérémonie demain.', answer: 'allons organiser', distractors: ['organisons', 'organiserons', 'organiserions'] },
-  { before: 'Les joueurs sont sur le terrain : le match ', after: '.', answer: 'va commencer', distractors: ['commence', 'commencera', 'commencerait'] },
-  { before: 'Le voyant rouge clignote ; les machines ', after: '.', answer: 'vont s’arrêter', distractors: ["s’arrêtent", "s’arrêteront", "s’arrêteraient"] },
-  { before: 'Tu as déjà choisi les couleurs ; tu ', after: ' le mur cet après-midi.', answer: 'vas peindre', distractors: ['peins', 'peindras', 'peindrais'] },
-  { before: 'Le contrat est signé : elle ', after: ' lundi prochain.', answer: 'va commencer', distractors: ['commence', 'commencera', 'commencerait'] },
-  { before: 'Les billets sont imprimés ; vous ', after: ' à huit heures.', answer: 'allez embarquer', distractors: ['embarquez', 'embarquerez', 'embarqueriez'] },
-  { before: 'Le micro est ouvert : le maire ', after: ' les résultats.', answer: 'va annoncer', distractors: ['annonce', 'annoncera', 'annoncerait'] },
-  { before: 'J’ai sorti tous les ingrédients ; nous ', after: ' la pâte maintenant.', answer: 'allons préparer', distractors: ['préparons', 'préparerons', 'préparerions'] },
+  { verb: 'partir', before: 'La valise est prête : je ', after: ' dans quelques minutes.', answer: 'vais partir', distractors: ['suis parti', 'partais', 'partirais'] },
+  { verb: 'sonner', before: 'Regarde la fumée : l’alarme ', after: ' !', answer: 'va sonner', distractors: ['a sonné', 'sonnait', 'sonnerait'] },
+  { verb: 'organiser', before: 'Nous avons réservé la salle ; nous ', after: ' la cérémonie demain.', answer: 'allons organiser', distractors: ['avons organisé', 'organisions', 'organiserions'] },
+  { verb: 'commencer', before: 'Les joueurs sont sur le terrain : le match ', after: '.', answer: 'va commencer', distractors: ['a commencé', 'commençait', 'commencerait'] },
+  { verb: 's’arrêter', before: 'Le voyant rouge clignote ; les machines ', after: '.', answer: 'vont s’arrêter', distractors: ["se sont arrêtées", "s’arrêtaient", "s’arrêteraient"] },
+  { verb: 'peindre', before: 'Tu as déjà choisi les couleurs ; tu ', after: ' le mur cet après-midi.', answer: 'vas peindre', distractors: ['as peint', 'peignais', 'peindrais'] },
+  { verb: 'commencer', before: 'Le contrat est signé : elle ', after: ' lundi prochain.', answer: 'va commencer', distractors: ['a commencé', 'commençait', 'commencerait'] },
+  { verb: 'embarquer', before: 'Les billets sont imprimés ; vous ', after: ' à huit heures.', answer: 'allez embarquer', distractors: ['avez embarqué', 'embarquiez', 'embarqueriez'] },
+  { verb: 'annoncer', before: 'Le micro est ouvert : le maire ', after: ' les résultats.', answer: 'va annoncer', distractors: ['a annoncé', 'annonçait', 'annoncerait'] },
+  { verb: 'préparer', before: 'J’ai sorti tous les ingrédients ; nous ', after: ' la pâte maintenant.', answer: 'allons préparer', distractors: ['avons préparé', 'préparions', 'préparerions'] },
 ]
 
 export const FRENCH_FUTUR_PROCHE_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_FUTUR_PROCHE_EDITORIAL = createFrenchEditorialPack({
   form: 'futur-proche',
   focus: 'Futur proche',
   rule: 'Aller au présent suivi de l’infinitif exprime un projet décidé, une action imminente ou une prédiction fondée sur un indice présent.',
+  choices,
   micro,
   long,
   errors,

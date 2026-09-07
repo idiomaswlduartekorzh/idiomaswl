@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Melting ice', cue: 'a general physical result', segments: ['If you heat ice, it ', '.'], verb: 'melt', answers: ['melts'], distractors: ['will melt', 'would melt', 'melted'] },
@@ -45,7 +45,7 @@ const sequences: EnglishEditorialSequenceSeed[] = [
   { events: ['When sunlight heats water, it evaporates', 'If vapor cools, clouds form', 'When droplets become heavy, rain falls'], target: 2 },
   { events: ['If smoke appears, the alarm activates', 'When it sounds, lifts stop', 'If pressure falls, lights switch on'], target: 0 },
   { events: ['If swimmers lack caps, staff ask them to leave', 'When a lane closes, a sign appears', 'If children attend, an adult stays'], target: 1 },
-  { events: ['If a card fails twice, the terminal cancels', 'When payment succeeds, it prints a receipt', 'If offline, purchases remain queued'], target: 2 },
+  { events: ['If a card fails twice, the terminal cancels the transaction', 'When payment succeeds, it prints a receipt', 'If offline, purchases remain queued'], target: 2 },
   { events: ['If water is too hot, yeast dies', 'When dough rests, it rises', 'If the oven is cool, crust remains pale'], target: 0 },
   { events: ['If a student is late, the office records it', 'When absences accumulate, the system sends an alert', 'After an update, the warning disappears'], target: 1 },
   { events: ['If metal reaches the magnet, it moves upward', 'When glass passes, jets push it aside', 'If an item is unclear, workers inspect it'], target: 2 },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'If iron stays in damp air, it ', after: '.', answer: 'rusts', distractors: ['will rust', 'would rust', 'rusted'] },
-  { before: 'The gate opens when a valid badge ', after: ' the sensor.', answer: 'touches', distractors: ['will touch', 'would touch', 'touched'] },
-  { before: 'If users enter the wrong code three times, the account ', after: '.', answer: 'locks', distractors: ['will lock', 'would lock', 'locked'] },
-  { before: 'Seeds do not germinate if they ', after: ' enough moisture.', answer: 'do not receive', distractors: ['will not receive', 'would not receive', 'did not receive'] },
-  { before: 'When the pressure reaches this level, the valve ', after: ' automatically.', answer: 'opens', distractors: ['will open', 'would open', 'opened'] },
-  { before: 'If the temperature drops, this material ', after: '.', answer: 'contracts', distractors: ['will contract', 'would contract', 'contracted'] },
-  { before: 'The register prints a copy whenever a customer ', after: ' by card.', answer: 'pays', distractors: ['will pay', 'would pay', 'paid'] },
-  { before: 'If batteries remain unused for years, they ', after: ' capacity.', answer: 'lose', distractors: ['will lose', 'would lose', 'lost'] },
-  { before: 'When a file exceeds the limit, the server ', after: ' it.', answer: 'rejects', distractors: ['will reject', 'would reject', 'rejected'] },
-  { before: 'People feel dehydrated if they ', after: ' enough water.', answer: 'do not drink', distractors: ['will not drink', 'would not drink', 'did not drink'] },
+  { verb: 'rust', before: 'If iron stays in damp air, it ', after: '.', answer: 'rusts', distractors: ['will rust', 'would rust', 'rusted'] },
+  { verb: 'touch', before: 'The gate opens when a valid badge ', after: ' the sensor.', answer: 'touches', distractors: ['will touch', 'would touch', 'touched'] },
+  { verb: 'lock', before: 'If users enter the wrong code three times, the account ', after: '.', answer: 'locks', distractors: ['will lock', 'would lock', 'locked'] },
+  { verb: 'receive', before: 'Seeds do not germinate if they ', after: ' enough moisture.', answer: 'do not receive', distractors: ['will not receive', 'would not receive', 'did not receive'] },
+  { verb: 'open', before: 'When the pressure reaches this level, the valve ', after: ' automatically.', answer: 'opens', distractors: ['will open', 'would open', 'opened'] },
+  { verb: 'contract', before: 'If the temperature drops, this material ', after: '.', answer: 'contracts', distractors: ['will contract', 'would contract', 'contracted'] },
+  { verb: 'pay', before: 'The register prints a copy whenever a customer ', after: ' by card.', answer: 'pays', distractors: ['will pay', 'would pay', 'paid'] },
+  { verb: 'lose', before: 'If batteries remain unused for years, they ', after: ' capacity.', answer: 'lose', distractors: ['will lose', 'would lose', 'lost'] },
+  { verb: 'reject', before: 'When a file exceeds the limit, the server ', after: ' it.', answer: 'rejects', distractors: ['will reject', 'would reject', 'rejected'] },
+  { verb: 'drink', before: 'People feel dehydrated if they ', after: ' enough water.', answer: 'do not drink', distractors: ['will not drink', 'would not drink', 'did not drink'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a general physical result', segments: ['If untreated steel remains outdoors, it ', '.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'an automatic system response', segments: ['The turnstile releases when a registered card ', ' the reader.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a standard security rule', segments: ['If someone enters an invalid PIN repeatedly, the device ', '.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a biological requirement', segments: ['Young plants wilt if their roots ', ' enough water.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'an automatic mechanism', segments: ['When steam reaches the set pressure, the safety vent ', '.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a general material property', segments: ['If cold air reaches this seal, it ', '.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a regular transaction process', segments: ['The kiosk emails a ticket whenever a passenger ', ' online.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a general long-term result', segments: ['If rechargeable cells sit empty too long, they ', ' capacity.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'an automatic digital rule', segments: ['When an attachment exceeds ten megabytes, the portal ', ' it.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a general health result', segments: ['Athletes become dehydrated if they ', ' enough water.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_CONDITIONAL_ZERO_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-zero', form: 'conditional-zero', focus: 'Zero conditional', rule: 'Use the zero conditional for general truths, standing rules and automatic results: present simple in both clauses.', micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 1] })
+export const ENGLISH_CONDITIONAL_ZERO_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-zero', form: 'conditional-zero', focus: 'Zero conditional', rule: 'Use the zero conditional for general truths, standing rules and automatic results: present simple in both clauses.', choices, micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 3] })

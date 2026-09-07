@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'The crying baby', cue: 'an action happening now', segments: ['Listen—the baby ', ' upstairs.'], verb: 'cry', answers: ['is crying'], distractors: ['cries', 'cried', 'has cried'] },
@@ -10,7 +10,7 @@ const micro: EnglishEditorialMicroSeed[] = [
   { title: 'A short university course', cue: 'a temporary course this semester', segments: ['They ', ' Arabic this semester.'], verb: 'study', answers: ['are studying'], distractors: ['study', 'studied', 'have studied'] },
   { title: 'Tonight’s flight', cue: 'a fixed personal travel arrangement', segments: ['Mina ', ' to Quito tonight; her ticket is confirmed.'], verb: 'fly', answers: ['is flying'], distractors: ['flies', 'flew', 'has flown'] },
   { title: 'The current discussion', cue: 'an activity taking place now', segments: ['You ', ' the wrong document at the moment.'], verb: 'read', answers: ['are reading'], distractors: ['read', 'have read', 'were reading'] },
-  { title: 'A temporary road closure', cue: 'a temporary present restriction', segments: ['The city ', ' this bridge to cars for two weeks.'], verb: 'close', answers: ['is closing'], distractors: ['closes', 'closed', 'has closed'] },
+  { title: 'A temporary road closure', cue: 'a temporary planned restriction', segments: ['Starting Monday, the city ', ' this bridge to cars for two weeks.'], verb: 'close', answers: ['is closing'], distractors: ['closes', 'closed', 'has closed'] },
 ]
 
 const long: EnglishEditorialGapSeed[] = [
@@ -23,7 +23,7 @@ const long: EnglishEditorialGapSeed[] = [
   { title: 'Repairing the town clock', instruction: 'Complete the connected temporary project.', segments: ['Engineers ', ' the old mechanism this month. One specialist ', ' the gears while another ', ' the wooden case.'], entries: [['restore', ['are restoring']], ['clean', ['is cleaning']], ['repair', ['is repairing']]] },
   { title: 'The school play rehearsal', instruction: 'Complete the connected action in progress.', segments: ['The actors ', ' the final scene. The director ', ' their positions, and the orchestra ', ' the closing music.'], entries: [['rehearse', ['are rehearsing']], ['correct', ['is correcting']], ['play', ['is playing']]] },
   { title: 'A changing shopping street', instruction: 'Complete the connected developing changes.', segments: ['More families ', ' into the district. Small cafés ', ' near the station, and rents ', ' quickly.'], entries: [['move', ['are moving']], ['open', ['are opening']], ['rise', ['are rising']]] },
-  { title: 'Leaving for the airport', instruction: 'Complete the connected immediate scene.', segments: ['Mina ', ' her passport now. Her brother ', ' the taxi, and their parents ', ' the suitcases downstairs.'], entries: [['find', ['is finding']], ['call', ['is calling']], ['carry', ['are carrying']]] },
+  { title: 'Leaving for the airport', instruction: 'Complete the connected immediate scene.', segments: ['Mina ', ' her passport now. Her brother ', ' the taxi, and their parents ', ' the suitcases downstairs.'], entries: [['look for', ['is looking for']], ['call', ['is calling']], ['carry', ['are carrying']]] },
 ]
 
 const errors: EnglishEditorialErrorSeed[] = [
@@ -36,7 +36,7 @@ const errors: EnglishEditorialErrorSeed[] = [
   { title: 'Clock restoration', pieces: [['Engineers ', 'are restoring'], [' the clock. One specialist ', 'are cleaning'], [' the gears, and another ', 'is repairing']], after: ' the case.', wrong: 1, answers: ['is cleaning'], reason: 'the singular subject specialist requires is cleaning' },
   { title: 'Play rehearsal', pieces: [['The actors ', 'are rehearsing'], ['. The director ', 'is correcting'], [' positions, and the orchestra ', 'are playing']], after: ' the finale.', wrong: 2, answers: ['is playing'], reason: 'orchestra is treated as a singular unit in this text' },
   { title: 'A changing district', pieces: [['Families ', 'is moving'], [' into the area. Cafés ', 'are opening'], [' nearby, and rents ', 'are rising']], after: '.', wrong: 0, answers: ['are moving'], reason: 'the plural subject families requires are moving' },
-  { title: 'Airport departure', pieces: [['Mina ', 'is finding'], [' her passport. Her brother ', 'are calling'], [' a taxi, and their parents ', 'are carrying']], after: ' the bags.', wrong: 1, answers: ['is calling'], reason: 'the singular subject brother requires is calling' },
+  { title: 'Airport departure', pieces: [['Mina ', 'is looking for'], [' her passport. Her brother ', 'are calling'], [' a taxi, and their parents ', 'are carrying']], after: ' the bags.', wrong: 1, answers: ['is calling'], reason: 'the singular subject brother requires is calling' },
 ]
 
 const sequences: EnglishEditorialSequenceSeed[] = [
@@ -48,21 +48,33 @@ const sequences: EnglishEditorialSequenceSeed[] = [
   { events: ['We are meeting at Rosa’s', 'She is preparing dinner', 'I am bringing dessert'], target: 2 },
   { events: ['Engineers are opening the clock', 'A specialist is cleaning the gears', 'Another is repairing the case'], target: 0 },
   { events: ['The actors are rehearsing', 'The director is correcting positions', 'The orchestra is playing the finale'], target: 1 },
-  { events: ['Families are moving into the district', 'Cafés are opening nearby', 'Rents are rising'], target: 2 },
-  { events: ['Mina is finding her passport', 'Her brother is calling a taxi', 'Their parents are carrying the bags'], target: 0 },
+  { events: ['Families are moving into the district', 'Cafés are opening nearby', 'Rents are rising across the district'], target: 2 },
+  { events: ['Mina is looking for her passport', 'Her brother is calling a taxi', 'Their parents are carrying the bags'], target: 0 },
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'At this moment the rescue team ', after: ' the northern trail.', answer: 'is searching', distractors: ['searches', 'searched', 'has searched'] },
-  { before: 'For this semester, I ', after: ' with a host family near campus.', answer: 'am living', distractors: ['live', 'lived', 'have lived'] },
-  { before: 'We ', after: ' the architect tomorrow morning; the appointment is confirmed.', answer: 'are meeting', distractors: ['meet', 'met', 'have met'] },
-  { before: 'Look—the tide ', after: ' much faster than expected.', answer: 'is rising', distractors: ['rises', 'rose', 'has risen'] },
-  { before: 'The company ', after: ' its customer service system this month.', answer: 'is changing', distractors: ['changes', 'changed', 'has changed'] },
-  { before: 'Right now two volunteers ', after: ' the donated books by age group.', answer: 'are sorting', distractors: ['sort', 'sorted', 'have sorted'] },
-  { before: 'Tonight Elena ', after: ' with the city orchestra; her seat is reserved.', answer: 'is performing', distractors: ['performs', 'performed', 'has performed'] },
-  { before: 'The mechanic ', after: ' the engine, so please wait outside.', answer: 'is testing', distractors: ['tests', 'tested', 'has tested'] },
-  { before: 'You ', after: ' much more confidently these days.', answer: 'are speaking', distractors: ['speak', 'spoke', 'have spoken'] },
-  { before: 'This week the south entrance ', after: ' as the main access point.', answer: 'is serving', distractors: ['serves', 'served', 'has served'] },
+  { verb: 'search', before: 'At this moment the rescue team ', after: ' the northern trail.', answer: 'is searching', distractors: ['searches', 'searched', 'has searched'] },
+  { verb: 'live', before: 'For this semester, I ', after: ' with a host family near campus.', answer: 'am living', distractors: ['live', 'lived', 'have lived'] },
+  { verb: 'meet', before: 'We ', after: ' the architect tomorrow morning; the appointment is confirmed.', answer: 'are meeting', distractors: ['meet', 'met', 'have met'] },
+  { verb: 'rise', before: 'Look—the tide ', after: ' much faster than expected.', answer: 'is rising', distractors: ['rises', 'rose', 'has risen'] },
+  { verb: 'change', before: 'The company ', after: ' its customer service system this month.', answer: 'is changing', distractors: ['changes', 'changed', 'has changed'] },
+  { verb: 'sort', before: 'Right now two volunteers ', after: ' the donated books by age group.', answer: 'are sorting', distractors: ['sort', 'sorted', 'have sorted'] },
+  { verb: 'perform', before: 'Tonight Elena ', after: ' with the city orchestra; her seat is reserved.', answer: 'is performing', distractors: ['performs', 'performed', 'has performed'] },
+  { verb: 'test', before: 'The mechanic ', after: ' the engine, so please wait outside.', answer: 'is testing', distractors: ['tests', 'tested', 'has tested'] },
+  { verb: 'speak', before: 'You ', after: ' much more confidently these days.', answer: 'are speaking', distractors: ['speak', 'spoke', 'have spoken'] },
+  { verb: 'serve', before: 'This week the south entrance ', after: ' as the main access point.', answer: 'is serving', distractors: ['serves', 'served', 'has served'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'an action happening now', segments: ['Right now, the ranger ', ' for a missing radio.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a temporary current situation', segments: ['This month, I ', ' with relatives near campus.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a fixed near-future arrangement', segments: ['We ', ' the architect at ten tomorrow.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a developing situation', segments: ['The reservoir level ', ' quickly after the rain.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a current trend', segments: ['Online booking ', ' the way visitors enter the museum.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'an activity happening now', segments: ['At the moment, volunteers ', ' donated books by subject.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'an action in progress', segments: ['Listen—the quartet ', ' the final movement.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a temporary test in progress', segments: ['This week, the laboratory ', ' a new filtration method.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'an action occurring around now', segments: ['More residents ', ' at tonight’s public hearing.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a temporary current service', segments: ['While the main kitchen is closed, a food truck ', ' lunch outside.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_PRESENT_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'present-continuous', form: 'present-continuous', focus: 'Present continuous', rule: 'Use the present continuous for actions in progress, temporary situations, developing changes and confirmed personal arrangements.', micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })
+export const ENGLISH_PRESENT_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'present-continuous', form: 'present-continuous', focus: 'Present continuous', rule: 'Use the present continuous for actions in progress, temporary situations, developing changes and confirmed personal arrangements.', choices, micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })

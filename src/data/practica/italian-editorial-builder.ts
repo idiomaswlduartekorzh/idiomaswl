@@ -1,5 +1,6 @@
 import type { ErrorChallenge, GapChallenge, TimelineChallenge } from './tense-quest-types.ts'
 import type { TenseId } from './italian-tense-quest.ts'
+import { createSentenceProduction } from './sentence-production.ts'
 
 export type EditorialGapSeed = {
   title: string
@@ -20,6 +21,11 @@ export type EditorialErrorSeed = {
 export type EditorialSequenceSeed = {
   events: [string, string, string]
   target: 0 | 1 | 2
+  production: {
+    sentence: string
+    verb: string
+    answers: readonly string[]
+  }
 }
 
 type EditorialPackInput = {
@@ -77,24 +83,27 @@ export function createItalianEditorialPack(input: EditorialPackInput) {
     explanation: `${input.rule} En este texto, ${seed.reason}.`,
   }))
   const timelines: TimelineChallenge<TenseId>[] = input.sequences.map((seed, index) => {
-    const [first, second, third] = seed.events
     const answer = seed.events[seed.target]
     const labels = ['apre', 'occupa il punto intermedio', 'chiude']
-    const optionOrder: Array<[number, number, number]> = [[1, 2, 0], [2, 0, 1], [0, 2, 1]]
-    const order = optionOrder[index % optionOrder.length]
+    const answerPositions = [1, 0, 2, 0, 2, 1, 2, 1, 0, 1]
+    const positionOffset = [...input.slug].reduce((sum, character) => sum + (character.codePointAt(0) ?? 0), 0) % 3
+    const distractors = seed.events.filter((_, eventIndex) => eventIndex !== seed.target)
+    const options = [...distractors]
+    options.splice((answerPositions[index % answerPositions.length] + positionOffset) % 3, 0, answer)
     return {
       id: `${prefix}-sequence-editorial-${index + 1}`,
       title: `Sequenza contestuale · ${index + 1}`,
       focus: input.focus,
-      context: `${first}. Poi ${second.charAt(0).toLocaleLowerCase('it')}${second.slice(1)}. Infine ${third.charAt(0).toLocaleLowerCase('it')}${third.slice(1)}.`,
+      context: 'Ricostruisci la sequenza in base a preparazione, azione e risultato. Il racconto ordinato è volutamente nascosto.',
       slots: [{
         id: `${prefix}-sequence-editorial-${index + 1}-slot`,
         tense: input.tense,
         label: `Quale evento ${labels[seed.target]} la sequenza?`,
         hint: 'Tutte le opzioni usano la stessa forma: ricostruisci il significato e l’ordine del testo.',
         answer,
+        production: createSentenceProduction(seed.production.sentence, seed.production.verb, seed.production.answers),
       }],
-      options: order.map((position) => seed.events[position]),
+      options,
       explanation: `La risposta è «${answer}»: si ricava dalla progressione del racconto, non dal tempo verbale delle alternative.`,
     }
   })

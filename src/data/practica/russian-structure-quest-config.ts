@@ -33,7 +33,7 @@ export const RUSSIAN_EDITORIAL_PACKS = [
 ]
 
 export const RUSSIAN_STRUCTURE_QUEST: TenseQuestConfig<RussianFormId> = {
-  id:'russian-structure-quest', storageKey:'wl-russian-structure-quest-v3', forms:RUSSIAN_FORMS,
+  id:'russian-structure-quest', storageKey:'wl-russian-structure-quest-v4', forms:RUSSIAN_FORMS,
   presets:[
     { label:'Время и вид', ids:RUSSIAN_FORMS.filter((form) => form.group.includes('Время')).map((form) => form.id) },
     { label:'Условность', ids:RUSSIAN_FORMS.filter((form) => form.group === 'Условность').map((form) => form.id) },
@@ -44,14 +44,15 @@ export const RUSSIAN_STRUCTURE_QUEST: TenseQuestConfig<RussianFormId> = {
     { number:'02', title:'Микротексты', short:'Поставить форму', description:'Напишите всю глагольную форму или конструкцию.' },
     { number:'03', title:'Связные эпизоды', short:'Три решения', description:'Заполните три формы в одном осмысленном эпизоде.' },
     { number:'04', title:'Редакторская', short:'Найти и исправить', description:'Найдите единственную форму, нарушающую смысл эпизода.' },
-    { number:'05', title:'Смысловая цепочка', short:'Восстановить порядок', description:'Определите порядок по развитию событий, а не по внешнему виду формы.' },
-    { number:'06', title:'Итоговое досье', short:'Закрытые решения', description:'Решите десять автономных сцен с четырьмя правдоподобными формами.' },
+    { number:'05', title:'Мастерская предложения', short:'Составить предложение', description:'Расставьте элементы по порядку и напишите полное предложение.' },
+    { number:'06', title:'Итоговое досье', short:'Самостоятельное письмо', description:'Напишите десять полных глагольных форм в развёрнутом досье.' },
   ],
   choiceChallenges:RUSSIAN_EDITORIAL_PACKS.flatMap((pack) => pack.choices),
   microStories:RUSSIAN_EDITORIAL_PACKS.flatMap((pack) => pack.micro),
   longStories:RUSSIAN_EDITORIAL_PACKS.flatMap((pack) => pack.long),
   errorChallenges:RUSSIAN_EDITORIAL_PACKS.flatMap((pack) => pack.errors),
   timelineChallenges:RUSSIAN_EDITORIAL_PACKS.flatMap((pack) => pack.timelines),
+  errorIdentificationMode:'write',
   finalChallenges:Array.from({ length:10 }, (_, index) => {
     const gaps = RUSSIAN_EDITORIAL_PACKS.map((pack) => pack.finalGaps[index])
     const candidateIds = new Set(gaps.flatMap((gap) => gap.candidateCardIds ?? []))
@@ -63,6 +64,7 @@ export const RUSSIAN_STRUCTURE_QUEST: TenseQuestConfig<RussianFormId> = {
       explanation:'Каждая сцена самостоятельно показывает время, процесс, предел, условие или коммуникативную цель.',
     }
   }),
+  finalStories:RUSSIAN_EDITORIAL_PACKS.map((pack) => pack.finalStory),
   copy:{
     languageName:'Ruso', languageCode:'ru', eyebrow:'Quiz de tiempo, aspecto y modalidad · A2–B1', title:'Мастерская вида',
     lead:'Practica la decisión central del ruso con diez contextos reales por nivel: proceso, resultado, condición y propósito comunicativo.',

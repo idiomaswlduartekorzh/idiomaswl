@@ -16,6 +16,8 @@ import {
 } from 'lucide-react'
 
 import { SKILL_ACCENT } from '@/data/practica/skill-accents'
+import { normalizeSentenceAnswer } from '@/data/practica/sentence-production'
+import { selectMixedChallenges } from '@/data/practica/tense-quest-selection'
 import type { GapChallenge, TenseQuestConfig } from '@/data/practica/tense-quest-types'
 
 import s from './TenseQuestEngine.module.css'
@@ -32,6 +34,7 @@ type ResponseSnapshot = {
 type QuestionResult = { correct: number; total: number }
 
 type StoredAttempt = {
+  sequenceVersion?: number
   selectedTenses: string[]
   activeLevel: number
   itemIndex: number
@@ -48,7 +51,7 @@ type StoredQuest = {
   attempt?: StoredAttempt
 }
 
-const LEVEL_GUIDANCE = [
+const DEFAULT_LEVEL_GUIDANCE = [
   'Contrasta marcadores temporales y significado antes de mirar la terminación verbal.',
   'Repasa persona, auxiliar, participio y concordancia; después vuelve a producir la forma completa.',
   'Fija primero el punto de referencia del relato y comprueba qué acción ocurre antes, durante o después.',
@@ -56,6 +59,73 @@ const LEVEL_GUIDANCE = [
   'Explica en voz alta la función de cada forma antes de asignarle una etiqueta temporal.',
   'Repite la reconstrucción con menos formas y vuelve a integrarlas cuando cada contraste sea estable.',
 ] as const
+
+const LANGUAGE_LEVEL_GUIDANCE: Record<string, readonly [string, string, string, string, string, string]> = {
+  de: [
+    'Contrasta significado, sujeto y posición de la cláusula antes de elegir la forma.',
+    'Comprueba persona, auxiliar, participio o infinitivo y la posición de los elementos separables.',
+    'Fija el punto temporal y revisa el orden verbal de cada oración conectada.',
+    'Busca el error sin marcas y comprueba caso, concordancia, auxiliar y orden de palabras.',
+    'Clasifica el prefijo por el verbo completo y después reconstruye toda la oración.',
+    'Relee la historia completa y escribe cada unidad verbal, incluidos auxiliares y partículas.',
+  ],
+  en: [
+    'Contrasta el marco temporal y el tipo de situación antes de elegir el aspecto.',
+    'Comprueba sujeto, auxiliar, negación y forma léxica antes de escribir el grupo completo.',
+    'Mantén estable el punto de referencia en las tres decisiones del relato.',
+    'Busca el error sin marcas y comprueba tiempo, aspecto, modalidad y concordancia.',
+    'Reconstruye preparación, acción y resultado por su significado, no por la posición visual.',
+    'Justifica cada forma por sus anclas antes de escribir las diez respuestas completas.',
+  ],
+  fr: [
+    'Contrasta anclas temporales, aspecto y registro antes de elegir.',
+    'Comprueba auxiliar, participio, persona y los acuerdos exigidos por el contexto.',
+    'Mantén el mismo plano temporal a través de las tres decisiones conectadas.',
+    'Busca el error sin marcas y revisa auxiliar, acuerdo, aspecto y registro literario.',
+    'Reconstruye la relación entre preparación, acción y resultado.',
+    'Escribe cada grupo completo y vuelve a comprobar los acuerdos del participio.',
+  ],
+  it: [
+    'Contrasta anclas temporales, aspecto y registro antes de elegir.',
+    'Comprueba auxiliar, persona, participio y concordancia con essere.',
+    'Mantén el punto de referencia del relato en las tres decisiones.',
+    'Busca el error sin marcas y revisa auxiliar, acuerdo y registro narrativo.',
+    'Reconstruye la relación entre preparación, acción y resultado.',
+    'Escribe cada grupo completo y verifica de nuevo auxiliar y concordancia.',
+  ],
+  'pt-BR': [
+    'Contrasta tiempo, aspecto y grado de certeza antes de elegir.',
+    'Comprueba persona, auxiliar y perífrasis completa; con ter, conserva invariable el participio.',
+    'Mantén coherentes las tres decisiones dentro del mismo episodio.',
+    'Busca el error sin marcas y revisa tiempo, aspecto, persona y registro brasileño.',
+    'Reconstruye preparación, acción y resultado por su sentido.',
+    'Escribe cada grupo completo y revisa auxiliares, infinitivos y gerundios.',
+  ],
+  ru: [
+    'Separa la pista temporal de la pista aspectual antes de elegir.',
+    'Comprueba aspecto, persona, género, número y régimen de caso.',
+    'Mantén el punto temporal y la cadena aspectual en las tres decisiones.',
+    'Busca el error sin marcas y revisa aspecto, caso, negación y valencia.',
+    'Reconstruye preparación, proceso y resultado por el significado de los eventos.',
+    'Escribe las diez formas y confirma que cada una tenga ancla temporal y aspectual.',
+  ],
+  ja: [
+    'Decide primero si el contexto expresa tiempo, progreso, resultado, experiencia o intención.',
+    'Comprueba la clase verbal, la forma de enlace y la expresión completa en registro cortés.',
+    'Mantén coherentes aspecto, partículas y nivel de cortesía en las tres decisiones.',
+    'Busca el error sin marcas y revisa morfología, función, partículas y escritura.',
+    'Reconstruye preparación, acción y resultado por el sentido de los eventos.',
+    'Escribe las diez expresiones completas y conserva las variantes normativas indicadas.',
+  ],
+  ko: [
+    'Decide primero si la pista expresa tiempo, progreso, resultado, experiencia o intención.',
+    'Comprueba 받침, irregularidad, contracción, espaciado y nivel de habla.',
+    'Mantén coherentes aspecto, valencia, honorífico y destinatario en las tres decisiones.',
+    'Busca el error sin marcas y revisa morfología, espaciado, voz y registro.',
+    'Reconstruye preparación, acción y resultado por el sentido de los eventos.',
+    'Escribe las diez expresiones completas y conserva el nivel de habla de cada nota.',
+  ],
+}
 
 function normalize(value: string, locale: string) {
   return value
@@ -69,6 +139,11 @@ function normalize(value: string, locale: string) {
 function accepts(value: string, answers: string[], locale: string) {
   const normalized = normalize(value, locale)
   return answers.some((answer) => normalize(answer, locale) === normalized)
+}
+
+function acceptsSentence(value: string, answers: string[], locale: string) {
+  const normalized = normalizeSentenceAnswer(value, locale)
+  return answers.some((answer) => normalizeSentenceAnswer(answer, locale) === normalized)
 }
 
 function GapText({
@@ -119,6 +194,25 @@ function GapText({
   )
 }
 
+const EMPTY_OPTIONAL_CHALLENGES: never[] = []
+const QUEST_SEQUENCE_VERSION = 3
+const NEUTRAL_TASK_LABELS = [
+  'Decisión en contexto',
+  'Microhistoria',
+  'Escena conectada',
+  'Revisión del texto',
+  'Función y estructura',
+  'Historia final',
+] as const
+const MIXED_LEVEL_INSTRUCTIONS = [
+  'Elige la opción que encaja con el significado y las pistas del contexto.',
+  'Completa cada espacio según el contexto y el verbo indicado entre paréntesis.',
+  'Completa la escena manteniendo coherentes el tiempo, el aspecto y la secuencia.',
+  'Localiza la forma incorrecta dentro del texto y escribe su corrección.',
+  'Resuelve cada relación por su función dentro del contexto.',
+  'Completa la historia usando todas las pistas del relato.',
+] as const
+
 export default function TenseQuestEngine({ config, languageSlug }: { config: TenseQuestConfig<string>; languageSlug: string }) {
   const {
     choiceChallenges: allChoiceChallenges,
@@ -126,15 +220,16 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     errorChallenges: allErrorChallenges,
     errorIdentificationMode = 'select',
     finalChallenges,
-    finalStories: allFinalStories = [],
+    finalStories: allFinalStories = EMPTY_OPTIONAL_CHALLENGES,
     forms,
     levels,
     longStories: allLongStories,
     microStories: allMicroStories,
     presets,
-    separationChallenges: allSeparationChallenges = [],
+    separationChallenges: allSeparationChallenges = EMPTY_OPTIONAL_CHALLENGES,
     timelineChallenges: allTimelineChallenges,
   } = config
+  const levelGuidance = LANGUAGE_LEVEL_GUIDANCE[copy.languageCode] ?? DEFAULT_LEVEL_GUIDANCE
   const allTenses = forms.map((tense) => tense.id)
   const [configured, setConfigured] = useState(false)
   const [draftTenses, setDraftTenses] = useState<string[]>([])
@@ -181,6 +276,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       !requestedReviewMode
       && valid.length
       && attempt
+      && attempt.sequenceVersion === QUEST_SEQUENCE_VERSION
       && valid.length === attempt.selectedTenses?.length
       && valid.every((id, index) => attempt.selectedTenses[index] === id),
     )
@@ -190,18 +286,17 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       && attempt!.activeLevel < levels.length
       ? attempt!.activeLevel
       : level
-    const validSet = new Set(valid)
     const restoredTotals = [
-      allChoiceChallenges.filter((challenge) => challenge.tenses.some((id) => validSet.has(id))).length,
-      allMicroStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length,
-      allLongStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length,
-      allErrorChallenges.filter((challenge) => validSet.has(challenge.tense)).length,
+      selectMixedChallenges(allChoiceChallenges, valid, (challenge, tense) => challenge.tenses.includes(tense), `${config.id}:level-1`).length,
+      selectMixedChallenges(allMicroStories, valid, (challenge, tense) => challenge.gaps.some((gap) => gap.tense === tense), `${config.id}:level-2`).length,
+      selectMixedChallenges(allLongStories, valid, (challenge, tense) => challenge.gaps.some((gap) => gap.tense === tense), `${config.id}:level-3`).length,
+      selectMixedChallenges(allErrorChallenges, valid, (challenge, tense) => challenge.tense === tense, `${config.id}:level-4`).length,
       allSeparationChallenges.length
-        ? allSeparationChallenges.filter((challenge) => validSet.has(challenge.tense)).length
-        : allTimelineChallenges.filter((challenge) => challenge.slots.some((slot) => validSet.has(slot.tense))).length,
+        ? selectMixedChallenges(allSeparationChallenges, valid, (challenge, tense) => challenge.tense === tense, `${config.id}:level-5`).length
+        : selectMixedChallenges(allTimelineChallenges, valid, (challenge, tense) => challenge.slots.some((slot) => slot.tense === tense), `${config.id}:level-5`).length,
       allFinalStories.length
-        ? allFinalStories.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tense))).length
-        : finalChallenges.filter((challenge) => challenge.gaps.some((gap) => validSet.has(gap.tenseId))).length,
+        ? selectMixedChallenges(allFinalStories, valid, (challenge, tense) => challenge.gaps.some((gap) => gap.tense === tense), `${config.id}:level-6`).length
+        : selectMixedChallenges(finalChallenges, valid, (challenge, tense) => challenge.gaps.some((gap) => gap.tenseId === tense), `${config.id}:level-6`).length,
     ]
     const restoredItem = canRestore
       && Number.isInteger(attempt!.itemIndex)
@@ -249,6 +344,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     allMicroStories,
     allSeparationChallenges,
     allTimelineChallenges,
+    config.id,
     config.storageKey,
     finalChallenges,
     forms,
@@ -263,37 +359,37 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   const selectedSet = useMemo(() => new Set(selectedTenses), [selectedTenses])
 
   const choiceChallenges = useMemo(
-    () => allChoiceChallenges.filter((challenge) => challenge.tenses.some((tense) => selectedSet.has(tense))),
-    [allChoiceChallenges, selectedSet],
+    () => selectMixedChallenges(allChoiceChallenges, selectedTenses, (challenge, tense) => challenge.tenses.includes(tense), `${config.id}:level-1`),
+    [allChoiceChallenges, config.id, selectedTenses],
   )
   const microStories = useMemo(
-    () => allMicroStories.filter((challenge) => challenge.gaps.some((gap) => selectedSet.has(gap.tense))),
-    [allMicroStories, selectedSet],
+    () => selectMixedChallenges(allMicroStories, selectedTenses, (challenge, tense) => challenge.gaps.some((gap) => gap.tense === tense), `${config.id}:level-2`),
+    [allMicroStories, config.id, selectedTenses],
   )
   const longStories = useMemo(
-    () => allLongStories.filter((challenge) => challenge.gaps.some((gap) => selectedSet.has(gap.tense))),
-    [allLongStories, selectedSet],
+    () => selectMixedChallenges(allLongStories, selectedTenses, (challenge, tense) => challenge.gaps.some((gap) => gap.tense === tense), `${config.id}:level-3`),
+    [allLongStories, config.id, selectedTenses],
   )
   const errorChallenges = useMemo(
-    () => allErrorChallenges.filter((challenge) => selectedSet.has(challenge.tense)),
-    [allErrorChallenges, selectedSet],
+    () => selectMixedChallenges(allErrorChallenges, selectedTenses, (challenge, tense) => challenge.tense === tense, `${config.id}:level-4`),
+    [allErrorChallenges, config.id, selectedTenses],
   )
   const timelineChallenges = useMemo(
-    () => allTimelineChallenges.filter((challenge) => challenge.slots.some((slot) => selectedSet.has(slot.tense))),
-    [allTimelineChallenges, selectedSet],
+    () => selectMixedChallenges(allTimelineChallenges, selectedTenses, (challenge, tense) => challenge.slots.some((slot) => slot.tense === tense), `${config.id}:level-5`),
+    [allTimelineChallenges, config.id, selectedTenses],
   )
   const separationChallenges = useMemo(
-    () => allSeparationChallenges.filter((challenge) => selectedSet.has(challenge.tense)),
-    [allSeparationChallenges, selectedSet],
+    () => selectMixedChallenges(allSeparationChallenges, selectedTenses, (challenge, tense) => challenge.tense === tense, `${config.id}:level-5`),
+    [allSeparationChallenges, config.id, selectedTenses],
   )
   const activeFinalChallenges = useMemo(
-    () => finalChallenges.filter((challenge) => challenge.gaps.some((gap) => selectedSet.has(gap.tenseId))),
-    [finalChallenges, selectedSet],
+    () => selectMixedChallenges(finalChallenges, selectedTenses, (challenge, tense) => challenge.gaps.some((gap) => gap.tenseId === tense), `${config.id}:level-6`),
+    [config.id, finalChallenges, selectedTenses],
   )
   const writtenFinalMode = allFinalStories.length > 0
   const finalStories = useMemo(
-    () => allFinalStories.filter((challenge) => challenge.gaps.some((gap) => selectedSet.has(gap.tense))),
-    [allFinalStories, selectedSet],
+    () => selectMixedChallenges(allFinalStories, selectedTenses, (challenge, tense) => challenge.gaps.some((gap) => gap.tense === tense), `${config.id}:level-6`),
+    [allFinalStories, config.id, selectedTenses],
   )
 
   function finalChallengeFor(index: number) {
@@ -331,6 +427,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       bestScores,
       levelScores,
       attempt: configured ? {
+        sequenceVersion: QUEST_SEQUENCE_VERSION,
         selectedTenses,
         activeLevel,
         itemIndex,
@@ -474,7 +571,11 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       }
       const slots = activeTimelineSlots(index)
       return {
-        correct: slots.filter((slot) => response.timelineAnswers?.[slot.id] === slot.answer).length,
+        correct: slots.filter((slot) => acceptsSentence(
+          response.timelineAnswers?.[slot.id] ?? '',
+          slot.production?.answers ?? [slot.answer],
+          copy.languageCode,
+        )).length,
         total: slots.length,
       }
     }
@@ -701,7 +802,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 1) return microStories[index].title
     if (activeLevel === 2) return longStories[index].title
     if (activeLevel === 3) return errorChallenges[index].title
-    if (activeLevel === 4) return allSeparationChallenges.length ? separationChallenges[index].title : timelineChallenges[index].title
+    if (activeLevel === 4) return allSeparationChallenges.length ? separationChallenges[index].title : `Construye la oración · ${index + 1}`
     if (writtenFinalMode) return finalStories[index].title
     return finalChallengeFor(index).title
   }
@@ -711,7 +812,15 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     if (activeLevel === 1) return microStories[index].explanation
     if (activeLevel === 2) return longStories[index].explanation
     if (activeLevel === 3) return errorChallenges[index].explanation
-    if (activeLevel === 4) return allSeparationChallenges.length ? separationChallenges[index].explanation : timelineChallenges[index].explanation
+    if (activeLevel === 4) {
+      if (allSeparationChallenges.length) return separationChallenges[index].explanation
+      return activeTimelineSlots(index).map((slot) => {
+        const form = forms.find((candidate) => candidate.id === slot.tense)?.label ?? slot.tense
+        return slot.production?.verb
+          ? `«${slot.production.verb}» se transforma según ${form}; comprueba la conjugación y el orden completo de la oración.`
+          : `Comprueba la forma ${form} y el orden completo de la oración.`
+      }).join(' ')
+    }
     if (writtenFinalMode) return finalStories[index].explanation
     return finalChallengeFor(index).explanation
   }
@@ -733,7 +842,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
         const label = challenge.separation === 'separable' ? 'trennbar' : 'untrennbar'
         return `${label} · ${challenge.answers[0]}`
       }
-      return activeTimelineSlots(index).map((slot) => slot.answer).join(' · ')
+      return activeTimelineSlots(index).map((slot) => slot.production?.answers[0] ?? slot.answer).join(' · ')
     }
     if (writtenFinalMode) return activeGaps(finalStories[index]).map((gap) => `${gap.verb}: ${gap.answers[0]}`).join(' · ')
     return finalGapsFor(index).map((gap) => cardText(gap.answerCardId, index)).join(' · ')
@@ -769,7 +878,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     const displayedChoice = reviewMode ? challenge.answer : choice
     return (
       <>
-        <p className={s.taskInstruction}>{challenge.prompt}</p>
+        <p className={s.taskInstruction}>{selectedTenses.length > 1 ? MIXED_LEVEL_INSTRUCTIONS[0] : challenge.prompt}</p>
         <p className={s.choiceContext} lang={copy.languageCode}>{challenge.context}</p>
         <div className="wlp-option-grid" lang={copy.languageCode}>
           {challenge.options.map((option, index) => (
@@ -796,7 +905,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
       : gapAnswers
     return (
       <>
-        <p className={s.taskInstruction}>{challenge.instruction}</p>
+        <p className={s.taskInstruction}>{selectedTenses.length > 1 ? MIXED_LEVEL_INSTRUCTIONS[activeLevel] : challenge.instruction}</p>
         <GapText
           activeTenses={selectedSet}
           answers={displayedAnswers}
@@ -817,7 +926,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     const displayedCorrection = reviewMode ? challenge.answers[0] : correction
     return (
       <>
-        <p className={s.taskInstruction}>{challenge.instruction}</p>
+        <p className={s.taskInstruction}>{selectedTenses.length > 1 ? MIXED_LEVEL_INSTRUCTIONS[3] : challenge.instruction}</p>
         {errorIdentificationMode === 'write' ? (
           <div className={s.errorSentence} lang={copy.languageCode}>{plainText}</div>
         ) : (
@@ -912,28 +1021,37 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
   }
 
   function renderTimeline() {
-    const challenge = timelineChallenges[itemIndex]
     const slots = activeTimelineSlots(itemIndex)
     return (
       <>
-        <p className={s.taskInstruction}>{challenge.context}</p>
+        <p className={s.taskInstruction}>Uno de los elementos es el verbo en forma base: conjúgalo según el contexto y ordena las demás piezas para escribir la oración completa.</p>
         <div className={s.timelineBoard} lang={copy.languageCode}>
           {slots.map((slot, index) => (
-            <label className={s.timelineRow} key={slot.id}>
+            <div className={s.timelineRow} key={slot.id}>
               <span className={s.timelineMarker}>{index + 1}</span>
-              <span className={s.timelineLabel}>
-                <strong>{slot.label}</strong>
-                <small>{slot.hint}</small>
-              </span>
-              <select
-                name={slot.id}
-                onChange={(event) => setTimelineAnswers((current) => ({ ...current, [slot.id]: event.target.value }))}
-                value={reviewMode ? slot.answer : timelineAnswers[slot.id] ?? ''}
-              >
-                <option value="">Elige la cláusula…</option>
-                {challenge.options.map((option) => <option key={option}>{option}</option>)}
-              </select>
-            </label>
+              <div className={s.timelineLabel}>
+                <strong>{slot.production?.tokens.join(' · ') ?? slot.answer}</strong>
+                <small>
+                  {slot.production?.verb
+                    ? <>El elemento <b>{slot.production.verb}</b> está en forma base: debes conjugarlo. Los demás aparecen una sola vez.</>
+                    : 'Todos los elementos necesarios están incluidos una sola vez.'}
+                </small>
+              </div>
+              <label className={s.sentenceField}>
+                <span>{reviewMode ? 'Respuesta completada para revisión' : 'Oración completa'}</span>
+                <textarea
+                  aria-label="Escribe la oración completa"
+                  autoComplete="off"
+                  name={slot.id}
+                  onChange={(event) => setTimelineAnswers((current) => ({ ...current, [slot.id]: event.target.value }))}
+                  placeholder="Escribe la oración completa…"
+                  readOnly={reviewMode}
+                  rows={3}
+                  spellCheck={false}
+                  value={reviewMode ? slot.production?.answers[0] ?? slot.answer : timelineAnswers[slot.id] ?? ''}
+                />
+              </label>
+            </div>
           ))}
         </div>
       </>
@@ -1008,8 +1126,9 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
     return renderFinal()
   }
 
-  const currentTitle = total ? itemTitle(itemIndex) : ''
-  const currentFocus = activeLevel === 0
+  const sentenceProductionLevel = activeLevel === 4 && !allSeparationChallenges.length
+  const authoredTitle = total ? itemTitle(itemIndex) : ''
+  const authoredFocus = activeLevel === 0
     ? choiceChallenges[itemIndex]?.focus
     : activeLevel === 1
       ? microStories[itemIndex]?.focus
@@ -1021,11 +1140,21 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
             ? allSeparationChallenges.length ? separationChallenges[itemIndex]?.focus : timelineChallenges[itemIndex]?.focus
             : writtenFinalMode
               ? finalStories[itemIndex]?.focus
-            : selectedTenses.length === 1 ? '1 forma seleccionada' : `${selectedTenses.length} ${copy.selectedLabel}`
+              : selectedTenses.length === 1 ? '1 forma seleccionada' : `${selectedTenses.length} ${copy.selectedLabel}`
+  const normalizedTitle = normalize(authoredTitle, copy.languageCode)
+  const titleRevealsTarget = forms.some((form) => (
+    selectedSet.has(form.id) && normalizedTitle.includes(normalize(form.label, copy.languageCode))
+  ))
+  const currentTitle = selectedTenses.length > 1 && titleRevealsTarget
+    ? `${NEUTRAL_TASK_LABELS[activeLevel]} ${itemIndex + 1}`
+    : authoredTitle
+  const currentFocus = sentenceProductionLevel
+    ? 'PRODUCCIÓN DE LA ORACIÓN'
+    : selectedTenses.length > 1 ? 'CONTRASTE ENTRE FORMAS' : authoredFocus
   const nextLevel = nextAvailableLevel()
 
   return (
-    <div className="wlp-page" style={{ '--wlp-accent': copy.accent ?? SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
+    <div className="wlp-page" data-quest-hydrated={hydrated} style={{ '--wlp-accent': copy.accent ?? SKILL_ACCENT.gramatica.var } as React.CSSProperties}>
       <div className="wlp-shell">
         <nav aria-label="Migas de pan" className="wlp-breadcrumb">
           <Link href="/herramientas">Herramientas</Link>
@@ -1123,7 +1252,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
 
             <div aria-label="Niveles del ejercicio" className={s.levelGrid} role="tablist">
               {levels.map((level, index) => {
-                const best = reviewMode ? 100 : bestScores[scoreKey(index)]
+                const best = reviewMode ? undefined : bestScores[scoreKey(index)]
                 const available = levelCounts[index] > 0
                 return (
                   <button
@@ -1142,7 +1271,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
                     <span>{typeof best === 'number' ? <Check size={15} /> : level.number}</span>
                     <strong>
                       {level.title}
-                      <small>{available ? (typeof best === 'number' ? `${best}%` : `${levelCounts[index]} reto${levelCounts[index] === 1 ? '' : 's'}`) : 'Sin retos'}</small>
+                      <small>{available ? (reviewMode ? 'Revisión' : typeof best === 'number' ? `${best}%` : `${levelCounts[index]} reto${levelCounts[index] === 1 ? '' : 's'}`) : 'Sin retos'}</small>
                     </strong>
                   </button>
                 )
@@ -1172,6 +1301,13 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
               >
                 <span style={{ width: `${progress}%` }} />
               </div>
+
+              {reviewMode && !summary ? (
+                <p className={s.reviewModeNotice} role="note">
+                  <CheckCircle2 aria-hidden="true" size={18} />
+                  Vista de revisión: las respuestas están precargadas y estos controles no modifican tu progreso.
+                </p>
+              ) : null}
 
               {summary ? (
                 <div aria-live="polite" className={s.summary} role="status">
@@ -1216,7 +1352,7 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
                         <ul>
                           {reportPriorities.map(({ index, score }) => (
                             <li key={levels[index].number}>
-                              <strong>{levels[index].short} · {score}%.</strong> {LEVEL_GUIDANCE[index]}
+                              <strong>{levels[index].short} · {score}%.</strong> {levelGuidance[index]}
                             </li>
                           ))}
                           {completedReportScores.length < levels.length ? <li>Completa los niveles pendientes antes de aumentar el número de formas seleccionadas.</li> : null}
@@ -1273,7 +1409,9 @@ export default function TenseQuestEngine({ config, languageSlug }: { config: Ten
                   {reviewMode ? (
                     <aside className={s.reviewAnswer}>
                       <span>Respuesta para revisión</span>
-                      <strong lang={copy.languageCode}>{expectedAnswer(itemIndex)}</strong>
+                      <strong lang={copy.languageCode}>
+                        {activeLevel === 4 ? 'La solución ya está completada en el ejercicio.' : expectedAnswer(itemIndex)}
+                      </strong>
                       <small>{itemExplanation(itemIndex)}</small>
                     </aside>
                   ) : (

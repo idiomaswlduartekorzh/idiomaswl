@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -11,7 +12,7 @@ const micro: PortugueseEditorialMicroSeed[] = [
   { title: 'O primeiro ônibus', cue: 'um horário regular', segments: ['O primeiro ônibus ', ' do terminal às 5h40 todos os dias.'], verb: 'sair', answers: ['sai'], distractors: ['saiu', 'saía', 'sairá'] },
   { title: 'Uma verdade física', cue: 'um fato geral', segments: ['A água ', ' a 100 °C ao nível do mar.'], verb: 'ferver', answers: ['ferve'], distractors: ['ferveu', 'fervia', 'ferverá'] },
   { title: 'O trajeto de Bia', cue: 'um hábito atual', segments: ['Bia ', ' ao trabalho de bicicleta três vezes por semana.'], verb: 'ir', answers: ['vai'], distractors: ['foi', 'ia', 'irá'] },
-  { title: 'A moradia temporária', cue: 'uma situação atual', segments: ['Neste mês, nós ', ' na casa da nossa tia por causa da reforma.'], verb: 'morar', answers: ['moramos'], distractors: ['moramos ontem', 'morávamos', 'moraremos'] },
+  { title: 'A moradia temporária', cue: 'uma situação atual', segments: ['Neste mês, Clara ', ' na casa da tia por causa da reforma.'], verb: 'morar', answers: ['mora'], distractors: ['tinha morado', 'morava', 'morará'] },
   { title: 'A regra do laboratório', cue: 'uma regra permanente', segments: ['O laboratório não ', ' bebidas perto dos aparelhos.'], verb: 'permitir', answers: ['permite'], distractors: ['permitiu', 'permitia', 'permitirá'] },
   { title: 'A linha do litoral', cue: 'um fato estável sobre uma rota', segments: ['Essa linha de ônibus ', ' doze bairros antes do centro.'], verb: 'atender', answers: ['atende'], distractors: ['atendeu', 'atendia', 'atenderá'] },
   { title: 'O plantão de terça', cue: 'uma organização recorrente', segments: ['Toda terça-feira, vocês ', ' o atendimento até o meio-dia.'], verb: 'assumir', answers: ['assumem'], distractors: ['assumiram', 'assumiam', 'assumirão'] },
@@ -19,6 +20,26 @@ const micro: PortugueseEditorialMicroSeed[] = [
   { title: 'Os domingos da família', cue: 'um costume regular', segments: ['Meus primos ', ' almoçar com os avós aos domingos.'], verb: 'vir', answers: ['vêm'], distractors: ['vieram', 'vinham', 'virão'] },
   { title: 'O calendário da faculdade', cue: 'uma data oficial programada', segments: ['O semestre letivo ', ' no dia 4 de março.'], verb: 'começar', answers: ['começa'], distractors: ['começou', 'começava', 'começará'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['No itinerário de inverno, a balsa ', ' do cais às seis.'],
+  ['Em grandes altitudes, a água ', ' a uma temperatura menor.'],
+  ['Nos dias sem chuva, Bia ', ' à faculdade a pé.'],
+  ['Durante o estágio atual em Belém, Clara ', ' perto do mercado.'],
+  ['O regulamento não ', ' fotografias dentro do arquivo.'],
+  ['A linha circular ', ' todos os hospitais da região.'],
+  ['Nas manhãs de sábado, vocês ', ' o balcão de informações.'],
+  ['O inversor ', ' corrente contínua em alternada.'],
+  ['Nas festas de junho, meus primos ', ' jantar conosco.'],
+  ['Todos os anos, o curso intensivo ', ' na primeira segunda-feira de julho.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'A abertura da padaria', instruction: 'Complete esta rotina matinal coerente.', segments: ['Toda manhã, Inês ', ' as portas às seis. O irmão dela ', ' os fornos enquanto ela ', ' a primeira entrega.'], entries: [['abrir', ['abre']], ['verificar', ['verifica']], ['receber', ['recebe']]] },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Toda segunda-feira, a gerente ', after: ' o estoque antes de abrir.', answer: 'confere', distractors: ['conferiu', 'conferia', 'conferirá'] },
-  { before: 'O ônibus do aeroporto ', after: ' a cada vinte minutos.', answer: 'passa', distractors: ['passou', 'passava', 'passará'] },
-  { before: 'Este sistema ', after: ' um recibo depois de cada pagamento.', answer: 'gera', distractors: ['gerou', 'gerava', 'gerará'] },
-  { before: 'Meus vizinhos ', after: ' uma barraca na feira aos sábados.', answer: 'mantêm', distractors: ['mantiveram', 'mantinham', 'manterão'] },
-  { before: 'A Lua ', after: ' a luz do Sol.', answer: 'reflete', distractors: ['refletiu', 'refletia', 'refletirá'] },
-  { before: 'Esta porta ', after: ' quando o sinal fica verde.', answer: 'destrava', distractors: ['destravou', 'destravava', 'destravará'] },
-  { before: 'A trilha costeira ', after: ' perto do farol antigo.', answer: 'termina', distractors: ['terminou', 'terminava', 'terminará'] },
-  { before: 'Nosso coral ', after: ' no centro cultural toda quinta-feira.', answer: 'ensaia', distractors: ['ensaiou', 'ensaiava', 'ensaiará'] },
-  { before: 'Dois técnicos ', after: ' o gerador uma vez por mês.', answer: 'testam', distractors: ['testaram', 'testavam', 'testarão'] },
-  { before: 'A exposição de inverno ', after: ' na primeira segunda-feira de julho.', answer: 'abre', distractors: ['abriu', 'abria', 'abrirá'] },
+  { verb: 'conferir', before: 'Toda segunda-feira, a gerente ', after: ' o estoque antes de abrir.', answer: 'confere', distractors: ['conferiu', 'conferia', 'conferirá'] },
+  { verb: 'passar', before: 'O ônibus do aeroporto ', after: ' a cada vinte minutos.', answer: 'passa', distractors: ['passou', 'passava', 'passará'] },
+  { verb: 'gerar', before: 'Este sistema ', after: ' um recibo depois de cada pagamento.', answer: 'gera', distractors: ['gerou', 'gerava', 'gerará'] },
+  { verb: 'manter', before: 'Meus vizinhos ', after: ' uma barraca na feira aos sábados.', answer: 'mantêm', distractors: ['mantiveram', 'mantinham', 'manterão'] },
+  { verb: 'refletir', before: 'A Lua ', after: ' a luz do Sol.', answer: 'reflete', distractors: ['refletiu', 'refletia', 'refletirá'] },
+  { verb: 'destravar', before: 'Esta porta ', after: ' quando o sinal fica verde.', answer: 'destrava', distractors: ['destravou', 'destravava', 'destravará'] },
+  { verb: 'terminar', before: 'A trilha costeira ', after: ' perto do farol antigo.', answer: 'termina', distractors: ['terminou', 'terminava', 'terminará'] },
+  { verb: 'ensaiar', before: 'Nosso coral ', after: ' no centro cultural toda quinta-feira.', answer: 'ensaia', distractors: ['ensaiou', 'ensaiava', 'ensaiará'] },
+  { verb: 'testar', before: 'Dois técnicos ', after: ' o gerador uma vez por mês.', answer: 'testam', distractors: ['testaram', 'testavam', 'testarão'] },
+  { verb: 'abrir', before: 'Todos os anos, a exposição de inverno ', after: ' na primeira segunda-feira de julho.', answer: 'abre', distractors: ['abriu', 'abria', 'abrirá'] },
 ]
 
 export const PORTUGUESE_PRESENT_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_PRESENT_EDITORIAL = createPortugueseEditorialPack({
   form: 'presente',
   focus: 'Presente',
   rule: 'O presente expressa hábitos, fatos estáveis, regras, situações atuais e horários oficiais.',
+  choices,
   micro,
   long,
   errors,

@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Ogni mattina aprivo le finestre', 'preparavo il caffè', 'leggevo il giornale'], target: 0 },
-  { events: ['Marta prendeva il registro', 'chiamava gli studenti', 'spiegava la lezione'], target: 1 },
-  { events: ['Noi sceglievamo il sentiero', 'riempivamo le borracce', 'partivamo all’alba'], target: 2 },
-  { events: ['Il fornaio accendeva il forno', 'impastava il pane', 'apriva il negozio'], target: 0 },
-  { events: ['Voi raccoglievate i dati', 'li ordinavate', 'scrivevate il rapporto'], target: 1 },
-  { events: ['Il custode controllava le sale', 'spegneva le luci', 'chiudeva il portone'], target: 2 },
-  { events: ['Io sceglievo una fotografia', 'la sviluppavo', 'la lasciavo asciugare'], target: 0 },
-  { events: ['I bambini prendevano i colori', 'disegnavano la scena', 'mostravano il foglio alla maestra'], target: 1 },
-  { events: ['La squadra si riscaldava', 'provava gli schemi', 'entrava in campo'], target: 2 },
-  { events: ['Mio padre controllava la mappa', 'caricava le valigie', 'metteva in moto'], target: 0 },
+  { events: ['Ogni mattina aprivo le finestre', 'preparavo il caffè', 'leggevo il giornale'], target: 0, production: { sentence: 'Ogni mattina aprivo le finestre', verb: 'aprire', answers: ['aprivo'] } },
+  { events: ['Marta prendeva il registro', 'Chiamava gli studenti', 'spiegava la lezione'], target: 1, production: { sentence: 'Chiamava gli studenti', verb: 'chiamare', answers: ['chiamava'] } },
+  { events: ['Noi sceglievamo il sentiero', 'riempivamo le borracce', 'Noi partivamo all’alba ogni sabato'], target: 2, production: { sentence: 'Noi partivamo all’alba ogni sabato', verb: 'partire', answers: ['partivamo'] } },
+  { events: ['Il fornaio accendeva il forno', 'impastava il pane', 'apriva il negozio'], target: 0, production: { sentence: 'Il fornaio accendeva il forno', verb: 'accendere', answers: ['accendeva'] } },
+  { events: ['Voi raccoglievate i dati', 'Voi ordinavate i dati per argomento', 'scrivevate il rapporto'], target: 1, production: { sentence: 'Voi ordinavate i dati per argomento', verb: 'ordinare', answers: ['ordinavate'] } },
+  { events: ['Il custode controllava le sale', 'spegneva le luci', 'Chiudeva il portone'], target: 2, production: { sentence: 'Chiudeva il portone', verb: 'chiudere', answers: ['chiudeva'] } },
+  { events: ['Io sceglievo una fotografia', 'la sviluppavo', 'la lasciavo asciugare'], target: 0, production: { sentence: 'Io sceglievo una fotografia', verb: 'scegliere', answers: ['sceglievo'] } },
+  { events: ['I bambini prendevano i colori', 'Disegnavano la scena', 'mostravano il foglio alla maestra'], target: 1, production: { sentence: 'Disegnavano la scena', verb: 'disegnare', answers: ['disegnavano'] } },
+  { events: ['La squadra si riscaldava', 'provava gli schemi', 'Entrava in campo'], target: 2, production: { sentence: 'Entrava in campo', verb: 'entrare', answers: ['entrava'] } },
+  { events: ['Mio padre controllava la mappa', 'caricava le valigie', 'metteva in moto'], target: 0, production: { sentence: 'Mio padre controllava la mappa', verb: 'controllare', answers: ['controllava'] } },
 ]
 
 export const ITALIAN_IMPERFETTO_EDITORIAL = createItalianEditorialPack({

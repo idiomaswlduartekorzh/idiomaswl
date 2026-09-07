@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 3,
+  "systemId": "multilingual-tense-quest-editorial-pipeline",
+  "languages": ["italian", "english", "french", "portuguese", "german", "russian", "japanese", "korean"],
+  "pipeline": ["coordinator", "author", "linguist", "pedagogy", "adversary", "user", "integrator", "warden"],
+  "roles": {
+    "coordinator": ".claude/agents/tense-quest-coordinator.md",
+    "author": ".claude/agents/tense-quest-author.md",
+    "linguist": ".claude/agents/tense-quest-linguist.md",
+    "pedagogy": ".claude/agents/tense-quest-pedagogy.md",
+    "adversary": ".claude/agents/tense-quest-adversary.md",
+    "user": ".claude/agents/tense-quest-user.md",
+    "integrator": ".claude/agents/tense-quest-integrator.md",
+    "warden": ".claude/agents/tense-quest-warden.md"
+  },
+  "contracts": {
+    "itemsPerFormPerLevel": 10,
+    "levelOneLevelTwoExactOverlap": 0,
+    "levelOneLevelTwoMaximumSimilarity": 0.59,
+    "levelOneLevelSixExactOverlap": 0,
+    "levelThreeLevelFourExactOverlap": 0,
+    "nonGermanLevelFiveMode": "reconstruct-complete-sentence",
+    "levelFiveRequiresScrambledElements": true,
+    "levelFiveRequiresCompleteSentence": true,
+    "choiceMaximumAnswerPositionRun": 2,
+    "choiceMinimumAnswerPositionsPerForm": 3,
+    "choiceMaximumPeriodicAccuracy": 0.6,
+    "errorIdentificationMode": "write",
+    "maximumRepeatedConnectorPerTen": 6,
+    "minimumSyntacticFamiliesPerTen": 4,
+    "mixedLevelMinimumItems": 12,
+    "mixedLevelMaximumItems": 20,
+    "mixedLevelMaximumSameFormRun": 2,
+    "mixedLevelMustCoverEverySelectedForm": true,
+    "mixedLevelMayRevealTargetForm": false
+  },
+  "languageSpecificReview": {
+    "italian": ["essere agreement", "remote-past register", "future anchors"],
+    "english": ["aspect uniqueness", "conditional alternatives", "stative compatibility"],
+    "french": ["être agreement", "avoir agreement with preceding object", "telic depuis compatibility"],
+    "portuguese": ["ter plus invariant participle", "Brazilian register", "periphrastic future"],
+    "german": ["haben/sein", "separable prefix", "verb-final order", "dass diversity"],
+    "russian": ["case government", "aspect uniqueness", "separate time and aspect anchors"],
+    "japanese": ["verb class", "aktionsart of ている", "politeness", "kana/kanji variants"],
+    "korean": ["batchim and irregular morphology", "speech level", "honorific target", "curated spacing variants"]
+  }
+}

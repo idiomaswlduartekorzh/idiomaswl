@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'This time tomorrow', cue: 'an action in progress at this time tomorrow', segments: ['This time tomorrow, we ', ' across the desert.'], verb: 'travel', answers: ['will be traveling', 'will be travelling'], distractors: ['will travel', 'travel', 'will have traveled'] },
@@ -41,28 +41,40 @@ const errors: EnglishEditorialErrorSeed[] = [
 
 const sequences: EnglishEditorialSequenceSeed[] = [
   { events: ['Marta will be collecting samples', 'Students will be repairing equipment', 'I will be recording observations'], target: 0 },
-  { events: ['The train will be crossing the mountains', 'Passengers will be sleeping', 'The conductor will be checking tickets'], target: 1 },
+  { events: ['The train will be crossing the mountains', 'Passengers will be sleeping in their cabins', 'The conductor will be checking tickets'], target: 1 },
   { events: ['Interpreters will be translating', 'Reporters will be taking notes', 'Technicians will be streaming the session'], target: 2 },
-  { events: ['Our team will be working upstairs', 'Designers will be renovating downstairs', 'Visitors will be entering in the east'], target: 0 },
+  { events: ['Our team will be working upstairs', 'Designers will be renovating downstairs', 'Visitors will be entering through the east entrance'], target: 0 },
   { events: ['Crews will be monitoring roads', 'The coast guard will be assisting boats', 'Radio will be broadcasting updates'], target: 1 },
   { events: ['Actors will be performing', 'The orchestra will be playing', 'Ushers will be guiding guests'], target: 2 },
   { events: ['We will be traveling along the coast', 'Marta will be interviewing fishers', 'Biologists will be measuring water'], target: 0 },
   { events: ['Travelers will be queuing', 'Staff will be inspecting passports', 'Crews will be preparing aircraft'], target: 1 },
   { events: ['Engineers will be transferring accounts', 'The server will be handling requests', 'Agents will be answering calls'], target: 2 },
-  { events: ['Families will be picnicking', 'Children will be playing', 'Musicians will be performing'], target: 0 },
+  { events: ['Families will be picnicking beside the lake', 'Children will be playing', 'Musicians will be performing'], target: 0 },
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'At this time tomorrow, the crew ', after: ' the final section of the bridge.', answer: 'will be painting', distractors: ['will paint', 'paint', 'will have painted'] },
-  { before: 'At eleven tonight, I ', after: ' over the Pacific.', answer: 'will be flying', distractors: ['will fly', 'fly', 'will have flown'] },
-  { before: 'Do not visit at three; we ', after: ' the safety drill.', answer: 'will be conducting', distractors: ['will conduct', 'conduct', 'will have conducted'] },
-  { before: 'When you reach the cabin, Maya ', after: ' dinner.', answer: 'will be preparing', distractors: ['will prepare', 'prepares', 'will have prepared'] },
-  { before: 'Throughout August, they ', after: ' from a temporary studio.', answer: 'will be broadcasting', distractors: ['will broadcast', 'broadcast', 'will have broadcast'] },
-  { before: 'At dawn, the rescue teams ', after: ' the eastern slope.', answer: 'will be searching', distractors: ['will search', 'search', 'will have searched'] },
-  { before: 'Will you ', after: ' the projector after lunch?', answer: 'be using', distractors: ['use', 'have used', 'be used'] },
-  { before: 'At midnight, the public entrance ', after: ' during maintenance.', answer: 'will not be operating', distractors: ['will not operate', 'does not operate', 'will not have operated'] },
-  { before: 'This time Saturday, we ', after: ' through the old quarter.', answer: 'will be walking', distractors: ['will walk', 'walk', 'will have walked'] },
-  { before: 'When the results arrive, the board ', after: ' in the upstairs room.', answer: 'will be meeting', distractors: ['will meet', 'meets', 'will have met'] },
+  { verb: 'paint', before: 'At this time tomorrow, the crew ', after: ' the final section of the bridge.', answer: 'will be painting', distractors: ['will paint', 'paint', 'will have painted'] },
+  { verb: 'fly', before: 'At eleven tonight, I ', after: ' over the Pacific.', answer: 'will be flying', distractors: ['will fly', 'fly', 'will have flown'] },
+  { verb: 'conduct', before: 'Do not visit at three; we ', after: ' the safety drill.', answer: 'will be conducting', distractors: ['will conduct', 'conduct', 'will have conducted'] },
+  { verb: 'prepare', before: 'When you reach the cabin, Maya ', after: ' dinner.', answer: 'will be preparing', distractors: ['will prepare', 'prepares', 'will have prepared'] },
+  { verb: 'broadcast', before: 'Throughout August, they ', after: ' from a temporary studio.', answer: 'will be broadcasting', distractors: ['will broadcast', 'broadcast', 'will have broadcast'] },
+  { verb: 'search', before: 'At dawn, the rescue teams ', after: ' the eastern slope.', answer: 'will be searching', distractors: ['will search', 'search', 'will have searched'] },
+  { verb: 'use', before: 'Will you ', after: ' the projector after lunch?', answer: 'be using', distractors: ['use', 'have used', 'have been using'] },
+  { verb: 'operate', before: 'At midnight, the public entrance ', after: ' during maintenance.', answer: 'will not be operating', distractors: ['will not operate', 'does not operate', 'will not have operated'] },
+  { verb: 'walk', before: 'This time Saturday, we ', after: ' through the old quarter.', answer: 'will be walking', distractors: ['will walk', 'walk', 'will have walked'] },
+  { verb: 'meet', before: 'When the results arrive, the board ', after: ' in the upstairs room.', answer: 'will be meeting', distractors: ['will meet', 'meets', 'will have met'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'an activity in progress at a future time', segments: ['At two tomorrow afternoon, the decorators ', ' the theater lobby.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'an activity underway at a future hour', segments: ['At sunrise on Monday, I ', ' over the Andes.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a scheduled activity in progress', segments: ['Do not call at ten; we ', ' the evacuation exercise.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'an action underway when another occurs', segments: ['When you arrive at the cottage, Priya ', ' breakfast.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'an extended temporary activity', segments: ['Throughout September, the station ', ' from its mobile unit.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'an activity in progress at a future moment', segments: ['At first light, volunteers ', ' the western shoreline.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a polite question about a future activity', segments: ['Will you ', ' the conference room after four?'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'an interrupted future operation', segments: ['At one in the morning, the ticket machine ', ' during the upgrade.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'an activity underway at a stated time', segments: ['This time next Sunday, we ', ' beside the canal.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a simultaneous future activity', segments: ['When the vote is announced, the trustees ', ' in the main hall.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_FUTURE_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'future-continuous', form: 'future-continuous', focus: 'Future continuous', rule: 'Use the future continuous for an activity expected to be in progress at or around an explicit future time.', micro, long, errors, sequences, final })
+export const ENGLISH_FUTURE_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'future-continuous', form: 'future-continuous', focus: 'Future continuous', rule: 'Use the future continuous for an activity expected to be in progress at or around an explicit future time.', choices, micro, long, errors, sequences, final })

@@ -1,10 +1,10 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
-  { title: 'Ten years by June', cue: 'duration continuing up to June', segments: ['In June, I ', ' here for ten years.'], verb: 'work', answers: ['will have been working'], distractors: ['will work', 'will have worked', 'will be working'] },
+  { title: 'Ten years by June', cue: 'duration continuing up to June', segments: ['In June, I ', ' here for ten years.'], verb: 'work', answers: ['will have been working'], distractors: ['will work', 'will be working', 'worked'] },
   { title: 'Six hours by noon', cue: 'duration continuing up to noon', segments: ['By noon, they ', ' for six hours.'], verb: 'hike', answers: ['will have been hiking'], distractors: ['will hike', 'will have hiked', 'will be hiking'] },
-  { title: 'A full year next month', cue: 'duration continuing up to next month', segments: ['Next month, she ', ' the course for a full year.'], verb: 'teach', answers: ['will have been teaching'], distractors: ['will teach', 'will have taught', 'will be teaching'] },
-  { title: 'Waiting until four', cue: 'duration up to a future clock time', segments: ['At four, we ', ' for the results for three hours.'], verb: 'wait', answers: ['will have been waiting'], distractors: ['will wait', 'will have waited', 'will be waiting'] },
+  { title: 'A full year next month', cue: 'duration continuing up to next month', segments: ['Next month, she ', ' the course for a full year.'], verb: 'teach', answers: ['will have been teaching'], distractors: ['will teach', 'will be teaching', 'taught'] },
+  { title: 'Waiting until four', cue: 'duration up to a future clock time', segments: ['At four, we ', ' for the results for three hours.'], verb: 'wait', answers: ['will have been waiting'], distractors: ['will wait', 'will be waiting', 'waited'] },
   { title: 'Training by race day', cue: 'repeated activity continuing until race day', segments: ['By race day, Leo ', ' every morning for five months.'], verb: 'train', answers: ['will have been training'], distractors: ['will train', 'will have trained', 'will be training'] },
   { title: 'Travel duration at arrival', cue: 'duration continuing until a future arrival', segments: ['When we reach Quito, we ', ' for nearly twelve hours.'], verb: 'travel', answers: ['will have been traveling', 'will have been travelling'], distractors: ['will travel', 'will have traveled', 'will be traveling'] },
   { title: 'Rain by midnight', cue: 'ongoing duration up to midnight', segments: ['By midnight, it ', ' for two days.'], verb: 'rain', answers: ['will have been raining'], distractors: ['will rain', 'will have rained', 'will be raining'] },
@@ -15,7 +15,7 @@ const micro: EnglishEditorialMicroSeed[] = [
 
 const long: EnglishEditorialGapSeed[] = [
   { title: 'By the laboratory review', instruction: 'Complete the durations up to next Friday.', segments: ['By Friday, our team ', ' samples for six months. Marta ', ' water quality for twelve weeks, and I ', ' field notes since January.'], entries: [['collect', ['will have been collecting']], ['monitor', ['will have been monitoring']], ['organize', ['will have been organizing']]] },
-  { title: 'At the end of the charity walk', instruction: 'Complete the activities measured at the finish.', segments: ['At the finish, participants ', ' for eight hours. Volunteers ', ' water all day, and medics ', ' every checkpoint since dawn.'], entries: [['walk', ['will have been walking']], ['distribute', ['will have been distributing']], ['staff', ['will have been staffing']]] },
+  { title: 'At the end of the charity walk', instruction: 'Complete the activities measured at the finish.', segments: ['By the finish, participants ', ' for eight hours. Volunteers ', ' water all day, and medics ', ' every checkpoint since dawn.'], entries: [['walk', ['will have been walking']], ['distribute', ['will have been distributing']], ['staff', ['will have been staffing']]] },
   { title: 'The theater’s anniversary', instruction: 'Complete the durations reached next May.', segments: ['Next May, actors ', ' there for a decade. The orchestra ', ' monthly concerts for five years, and volunteers ', ' the archive since 2024.'], entries: [['perform', ['will have been performing']], ['give', ['will have been giving']], ['maintain', ['will have been maintaining']]] },
   { title: 'When the overnight train arrives', instruction: 'Complete the durations at arrival.', segments: ['At arrival, the driver ', ' for nine hours. Attendants ', ' passengers throughout the night, and the kitchen crew ', ' meals since midnight.'], entries: [['work', ['will have been working']], ['assist', ['will have been assisting']], ['prepare', ['will have been preparing']]] },
   { title: 'By the software launch', instruction: 'Complete the continuing work up to launch day.', segments: ['By launch, engineers ', ' the platform for a year. Testers ', ' weekly builds for months, and trainers ', ' staff since March.'], entries: [['develop', ['will have been developing']], ['review', ['will have been reviewing']], ['prepare', ['will have been preparing']]] },
@@ -40,29 +40,41 @@ const errors: EnglishEditorialErrorSeed[] = [
 ]
 
 const sequences: EnglishEditorialSequenceSeed[] = [
-  { events: ['We will have been collecting samples for six months by Friday', 'Marta will have been monitoring water for twelve weeks by Friday', 'I will have been organizing notes since January by Friday'], target: 0 },
-  { events: ['Participants will have been walking for eight hours at the finish', 'Volunteers will have been distributing water all day', 'Medics will have been staffing checkpoints since dawn'], target: 1 },
-  { events: ['Actors will have been performing there for a decade by May', 'The orchestra will have been giving concerts for five years', 'Volunteers will have been maintaining the archive since 2024'], target: 2 },
-  { events: ['The driver will have been working for nine hours', 'Attendants will have been assisting passengers all night', 'The crew will have been preparing meals since midnight'], target: 0 },
-  { events: ['Engineers will have been developing for a year', 'Testers will have been reviewing builds for months', 'Trainers will have been preparing staff since March'], target: 1 },
-  { events: ['Workers will have been cultivating for four months', 'The system will have been operating daily', 'Researchers will have been measuring moisture since April'], target: 2 },
-  { events: ['We will have been studying for two years', 'Marta will have been attending weekly classes', 'I will have been practicing daily'], target: 0 },
-  { events: ['Crews will have been rebuilding for eighteen months', 'Engineers will have been monitoring vibration', 'Divers will have been examining foundations since June'], target: 1 },
-  { events: ['Forecasters will have been tracking the storm for thirty hours', 'Radio teams will have been broadcasting all night', 'Crews will have been patrolling since evening'], target: 2 },
-  { events: ['Historians will have been cataloging for three years', 'Assistants will have been scanning since phase one', 'Editors will have been verifying captions for eighteen months'], target: 0 },
+  { events: ['We will have been collecting samples for six months by Friday', 'Marta will have been monitoring water for twelve weeks by Friday', 'I will have been organizing notes since January by Friday'], target: 0, productionSentence: 'By Friday, we will have been collecting samples for six months' },
+  { events: ['By the finish, participants will have been walking for eight hours', 'Volunteers will have been distributing water all day', 'Medics will have been staffing checkpoints since dawn'], target: 1, productionSentence: 'By the finish, volunteers will have been distributing water all day' },
+  { events: ['Actors will have been performing there for a decade by May', 'The orchestra will have been giving concerts for five years', 'Volunteers will have been maintaining the archive since 2024'], target: 2, productionSentence: 'By May, volunteers will have been maintaining the archive since 2024' },
+  { events: ['The driver will have been working for nine hours', 'Attendants will have been assisting passengers all night', 'The crew will have been preparing meals since midnight'], target: 0, productionSentence: 'By the end of the shift, the driver will have been working for nine hours' },
+  { events: ['Engineers will have been developing the platform for a year', 'Testers will have been reviewing builds for months', 'Trainers will have been preparing staff since March'], target: 1, productionSentence: 'By launch day, testers will have been reviewing builds for months' },
+  { events: ['Workers will have been cultivating the fields for four months', 'The system will have been operating daily', 'Researchers will have been measuring moisture since April'], target: 2, productionSentence: 'By the harvest inspection, researchers will have been measuring moisture since April' },
+  { events: ['We will have been studying for two years', 'Marta will have been attending weekly classes', 'I will have been practicing daily'], target: 0, productionSentence: 'By graduation, we will have been studying for two years' },
+  { events: ['Crews will have been rebuilding for eighteen months', 'Engineers will have been monitoring vibration', 'Divers will have been examining foundations since June'], target: 1, productionSentence: 'By the bridge reopening, engineers will have been monitoring vibration for eighteen months' },
+  { events: ['Forecasters will have been tracking the storm for thirty hours', 'Radio teams will have been broadcasting all night', 'Crews will have been patrolling since evening'], target: 2, productionSentence: 'By dawn, crews will have been patrolling since evening' },
+  { events: ['Historians will have been cataloging for three years', 'Assistants will have been scanning since phase one', 'Editors will have been verifying captions for eighteen months'], target: 0, productionSentence: 'By winter, historians will have been cataloging the collection for three years' },
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'By October, Maya ', after: ' at the clinic for five years.', answer: 'will have been working', distractors: ['will work', 'will have worked', 'will be working'] },
-  { before: 'At noon, we ', after: ' for the ferry for three hours.', answer: 'will have been waiting', distractors: ['will wait', 'will have waited', 'will be waiting'] },
-  { before: 'Next term, the professor ', after: ' this seminar for a decade.', answer: 'will have been teaching', distractors: ['will teach', 'will have taught', 'will be teaching'] },
-  { before: 'When the ship docks, it ', after: ' for twenty-one days.', answer: 'will have been sailing', distractors: ['will sail', 'will have sailed', 'will be sailing'] },
-  { before: 'By the final, the choir ', after: ' twice a week for six months.', answer: 'will have been rehearsing', distractors: ['will rehearse', 'will have rehearsed', 'will be rehearsing'] },
-  { before: 'At dawn, the technicians ', after: ' for sixteen hours without a break.', answer: 'will have been working', distractors: ['will work', 'will have worked', 'will be working'] },
-  { before: 'By December, local groups ', after: ' funds for the library for a full year.', answer: 'will have been raising', distractors: ['will raise', 'will have raised', 'will be raising'] },
-  { before: 'At the summit, Leo ', after: ' for nearly seven hours.', answer: 'will have been climbing', distractors: ['will climb', 'will have climbed', 'will be climbing'] },
-  { before: 'By midnight, the storm ', after: ' the coast for two days.', answer: 'will have been affecting', distractors: ['will affect', 'will have affected', 'will be affecting'] },
-  { before: 'When the study ends, researchers ', after: ' the same families for three years.', answer: 'will have been interviewing', distractors: ['will interview', 'will have interviewed', 'will be interviewing'] },
+  { verb: 'work', before: 'By October, Maya ', after: ' at the clinic for five years.', answer: 'will have been working', distractors: ['will work', 'will be working', 'worked'] },
+  { verb: 'wait', before: 'At noon, we ', after: ' for the ferry for three hours.', answer: 'will have been waiting', distractors: ['will wait', 'will be waiting', 'waited'] },
+  { verb: 'teach', before: 'Next term, the professor ', after: ' this seminar for a decade.', answer: 'will have been teaching', distractors: ['will teach', 'will be teaching', 'taught'] },
+  { verb: 'sail', before: 'When the ship docks, it ', after: ' for twenty-one days.', answer: 'will have been sailing', distractors: ['will sail', 'will be sailing', 'sailed'] },
+  { verb: 'rehearse', before: 'By the final, the choir ', after: ' twice a week for six months.', answer: 'will have been rehearsing', distractors: ['will rehearse', 'will be rehearsing', 'rehearsed'] },
+  { verb: 'work', before: 'At dawn, the technicians ', after: ' for sixteen hours without a break.', answer: 'will have been working', distractors: ['will work', 'will be working', 'worked'] },
+  { verb: 'raise', before: 'By December, local groups ', after: ' funds for the library for a full year.', answer: 'will have been raising', distractors: ['will raise', 'will be raising', 'raised'] },
+  { verb: 'climb', before: 'At the summit, Leo ', after: ' for nearly seven hours.', answer: 'will have been climbing', distractors: ['will climb', 'will be climbing', 'climbed'] },
+  { verb: 'affect', before: 'By midnight, the storm ', after: ' the coast for two days.', answer: 'will have been affecting', distractors: ['will affect', 'will be affecting', 'affected'] },
+  { verb: 'interview', before: 'When the study ends, researchers ', after: ' the same families for three years.', answer: 'will have been interviewing', distractors: ['will interview', 'will be interviewing', 'interviewed'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'duration up to a future point', segments: ['By February, Jonah ', ' at the observatory for six years.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'duration before a future time', segments: ['At four, we ', ' outside the consulate for two hours.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'duration continuing to a future point', segments: ['Next spring, Dr. Chen ', ' this module for twelve years.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'ongoing duration completed at a future event', segments: ['When the yacht reaches port, it ', ' for eighteen days.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'duration accumulated by a future event', segments: ['By opening night, the actors ', ' every evening for four months.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'duration before a future moment', segments: ['At midnight, the engineers ', ' for fourteen hours without rest.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'ongoing effort measured at a future point', segments: ['By November, volunteers ', ' money for the shelter for a full year.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'duration up to a future destination', segments: ['At the ridge, Amira ', ' for almost five hours.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'an ongoing effect measured later', segments: ['By dawn, the heat wave ', ' the valley for three days.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a continuing study measured at its endpoint', segments: ['When the project closes, scientists ', ' the same coastal residents for four years.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_FUTURE_PERFECT_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'future-perfect-continuous', form: 'future-perfect-continuous', focus: 'Future perfect continuous', rule: 'Use the future perfect continuous to measure an ongoing or repeated activity up to an explicit future point.', micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 1] })
+export const ENGLISH_FUTURE_PERFECT_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'future-perfect-continuous', form: 'future-perfect-continuous', focus: 'Future perfect continuous', rule: 'Use the future perfect continuous to measure an ongoing or repeated activity up to an explicit future point.', choices, micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 3] })

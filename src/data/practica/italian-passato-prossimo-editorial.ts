@@ -1,5 +1,6 @@
 import type { ErrorChallenge, GapChallenge, TimelineChallenge } from './tense-quest-types.ts'
 import type { TenseId } from './italian-tense-quest.ts'
+import { createSentenceProduction } from './sentence-production.ts'
 
 const tense: TenseId = 'passato-prossimo'
 const focus = 'Passato prossimo'
@@ -28,7 +29,7 @@ export const PASSATO_PROSSIMO_MICRO: GapChallenge<TenseId>[] = [
   gap('it-pp-micro-editorial-2', 'La porta del laboratorio', 'Conjuga chiudere en passato prossimo.', ['Poco fa noi ', ' tutte le finestre del laboratorio.'], [['chiudere', 'abbiamo chiuso']]),
   gap('it-pp-micro-editorial-3', 'Una buona notizia', 'Conjuga ricevere en passato prossimo.', ['In questi giorni loro ', ' una risposta positiva.'], [['ricevere', 'hanno ricevuto']]),
   gap('it-pp-micro-editorial-4', 'Il nuovo indirizzo', 'Conjuga trasferirsi en passato prossimo.', ['Da gennaio Elisa ', ' in un appartamento più vicino.'], [['trasferirsi', 'si è trasferita']]),
-  gap('it-pp-micro-editorial-5', 'La relazione', 'Conjuga finire en passato prossimo.', ['Paolo ', ' la relazione poco fa.'], [['finire', 'ha finito']]),
+  gap('it-pp-micro-editorial-5', 'La relazione', 'Conjuga finire en passato prossimo.', ['Poco prima della riunione, Paolo ', ' la relazione.'], [['finire', 'ha finito']]),
   gap('it-pp-micro-editorial-6', 'Il computer', 'Conjuga spegnere en passato prossimo.', ['Il computer non risponde perché io ', ' il sistema per errore.'], [['spegnere', 'ho spento']]),
   gap('it-pp-micro-editorial-7', 'La prima neve', 'Conjuga cadere en passato prossimo.', ['Stanotte ', ' la prima neve dell’anno.'], [['cadere', 'è caduta']]),
   gap('it-pp-micro-editorial-8', 'Gli appunti', 'Conjuga condividere en passato prossimo.', ['Per la lezione di oggi tu ', ' gli appunti con tutti.'], [['condividere', 'hai condiviso']]),
@@ -85,35 +86,51 @@ export const PASSATO_PROSSIMO_ERRORS: ErrorChallenge<TenseId>[] = errorSeeds.map
   explanation: `${rule} Qui ${seed.reason}.`,
 }))
 
-const sequences: Array<[string, string, string, 'prima' | 'poi' | 'infine']> = [
-  ['Luca ha comprato il biglietto', 'è salito sul treno', 'ha trovato il suo posto', 'poi'],
-  ['Marta ha acceso il computer', 'ha aperto il documento', 'ha inviato il file', 'infine'],
-  ['Noi abbiamo scelto la ricetta', 'abbiamo comprato gli ingredienti', 'abbiamo preparato la cena', 'prima'],
-  ['Paolo ha cercato l’indirizzo', 'ha preso l’autobus', 'è arrivato allo studio', 'infine'],
-  ['Le ragazze hanno montato il tavolo', 'hanno disposto i libri', 'hanno aperto la sala', 'poi'],
-  ['Io ho letto l’avviso', 'ho compilato il modulo', 'l’ho consegnato in segreteria', 'prima'],
-  ['Voi avete acceso le luci', 'avete provato i microfoni', 'avete iniziato lo spettacolo', 'poi'],
-  ['Il medico ha visitato Anna', 'ha scritto la ricetta', 'ha spiegato la terapia', 'infine'],
-  ['Gli studenti hanno raccolto i dati', 'hanno creato il grafico', 'hanno presentato i risultati', 'prima'],
-  ['Sara è uscita di casa', 'ha incontrato Giulia', 'sono entrate al cinema', 'poi'],
+type PassatoProssimoSequence = {
+  events: [string, string, string]
+  target: 'prima' | 'poi' | 'infine'
+  production: {
+    sentence: string
+    verb: string
+    answers: readonly string[]
+  }
+}
+
+const sequences: PassatoProssimoSequence[] = [
+  { events: ['Luca ha comprato il biglietto', 'Luca è salito sul treno', 'Luca ha trovato il suo posto'], target: 'poi', production: { sentence: 'Luca è salito sul treno', verb: 'salire', answers: ['è salito'] } },
+  { events: ['Marta ha acceso il computer', 'Marta ha aperto il documento', 'Marta ha inviato il file'], target: 'infine', production: { sentence: 'Marta ha inviato il file', verb: 'inviare', answers: ['ha inviato'] } },
+  { events: ['Noi abbiamo scelto la ricetta', 'Noi abbiamo comprato gli ingredienti', 'Noi abbiamo preparato la cena'], target: 'prima', production: { sentence: 'Noi abbiamo scelto la ricetta', verb: 'scegliere', answers: ['abbiamo scelto'] } },
+  { events: ['Paolo ha cercato l’indirizzo', 'Paolo ha preso l’autobus', 'Paolo è arrivato allo studio'], target: 'infine', production: { sentence: 'Paolo è arrivato allo studio', verb: 'arrivare', answers: ['è arrivato'] } },
+  { events: ['Le ragazze hanno montato il tavolo', 'Le ragazze hanno disposto i libri', 'Le ragazze hanno aperto la sala'], target: 'poi', production: { sentence: 'Le ragazze hanno disposto i libri', verb: 'disporre', answers: ['hanno disposto'] } },
+  { events: ['Io ho letto l’avviso', 'Io ho compilato il modulo', 'Io l’ho consegnato in segreteria'], target: 'prima', production: { sentence: 'Io ho letto l’avviso', verb: 'leggere', answers: ['ho letto'] } },
+  { events: ['Voi avete acceso le luci', 'Voi avete provato i microfoni', 'Voi avete iniziato lo spettacolo'], target: 'poi', production: { sentence: 'Voi avete provato i microfoni', verb: 'provare', answers: ['avete provato'] } },
+  { events: ['Il medico ha visitato Anna', 'Il medico ha scritto la ricetta', 'Il medico ha spiegato la terapia'], target: 'infine', production: { sentence: 'Il medico ha spiegato la terapia', verb: 'spiegare', answers: ['ha spiegato'] } },
+  { events: ['Gli studenti hanno raccolto i dati', 'Gli studenti hanno creato il grafico', 'Gli studenti hanno presentato i risultati'], target: 'prima', production: { sentence: 'Gli studenti hanno raccolto i dati', verb: 'raccogliere', answers: ['hanno raccolto'] } },
+  { events: ['Sara è uscita di casa', 'Sara ha incontrato Giulia', 'Sara e Giulia sono entrate al cinema'], target: 'poi', production: { sentence: 'Sara ha incontrato Giulia', verb: 'incontrare', answers: ['ha incontrato'] } },
 ]
 
-export const PASSATO_PROSSIMO_TIMELINES: TimelineChallenge<TenseId>[] = sequences.map((events, index) => {
-  const [first, second, third, target] = events
+export const PASSATO_PROSSIMO_TIMELINES: TimelineChallenge<TenseId>[] = sequences.map(({ events, production, target }, index) => {
+  const [first, second, third] = events
   const answer = target === 'prima' ? first : target === 'poi' ? second : third
+  const answerPositions = [1, 0, 2, 0, 2, 1, 2, 1, 0, 1]
+  const targetIndex = target === 'prima' ? 0 : target === 'poi' ? 1 : 2
+  const distractors = [first, second, third].filter((_, eventIndex) => eventIndex !== targetIndex)
+  const options = [...distractors]
+  options.splice(answerPositions[index], 0, answer)
   return {
     id: `it-pp-sequence-editorial-${index + 1}`,
     title: `Sequenza conclusa · ${index + 1}`,
     focus,
-    context: `${first}. Poi ${second.charAt(0).toLocaleLowerCase('it')}${second.slice(1)}. Infine ${third.charAt(0).toLocaleLowerCase('it')}${third.slice(1)}.`,
+    context: 'Ricostruisci la sequenza in base a preparazione, azione e risultato. Il racconto ordinato è volutamente nascosto.',
     slots: [{
       id: `it-pp-sequence-editorial-${index + 1}-slot`,
       tense,
       label: target === 'prima' ? 'Quale evento apre la sequenza?' : target === 'poi' ? 'Quale evento occupa il punto intermedio?' : 'Quale evento chiude la sequenza?',
       hint: 'Usa prima, poi e infine: la forma verbale da sola non basta.',
       answer,
+      production: createSentenceProduction(production.sentence, production.verb, production.answers),
     }],
-    options: [second, third, first],
+    options,
     explanation: `La risposta è «${answer}»: la posizione si ricava dall’ordine del racconto, non eliminando altri tempi verbali.`,
   }
 })

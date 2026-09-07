@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: PortugueseEditorialMicroSeed[] = [
   { title: 'O salão preparado', cue: 'uma preparação concluída antes da chegada', segments: ['Quando os convidados chegaram, a equipe já ', ' todo o salão.'], verb: 'preparar', answers: ['tinha preparado'], distractors: ['preparou', 'preparava', 'terá preparado'] },
   { title: 'A volta antes da chuva', cue: 'um retorno concluído antes da tempestade', segments: ['Quando a tempestade começou, os caminhantes já ', ' ao abrigo.'], verb: 'voltar', answers: ['tinham voltado'], distractors: ['voltaram', 'voltavam', 'terão voltado'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Antes do fiscal entrar no vagão, nós já ', ' os assentos corretos.'],
+  ['Ela orientou o grupo em Lisboa porque ', ' lá no ano anterior.'],
+  ['A equipe abriu o depósito porque Rui ', ' a chave na recepção.'],
+  ['Quando a gerente pediu o contrato, um estagiário já o ', ' sem querer.'],
+  ['Quando chegamos ao porto, as vizinhas já ', ' para a ilha.'],
+  ['O equipamento falhou porque a bateria ', ' durante o transporte.'],
+  ['Eu entendi as críticas porque ', ' o parecer antes da audiência.'],
+  ['Na estação, vocês não se preocuparam porque ', ' os bilhetes em dezembro.'],
+  ['Antes da cerimônia, a equipe já ', ' o palco inteiro.'],
+  ['Quando o granizo começou, os ciclistas já ', ' ao ginásio.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'Antes da abertura do restaurante', instruction: 'Complete os preparativos anteriores ao serviço.', segments: ['Quando os primeiros clientes chegaram, o chef ', ' o cardápio. A equipe ', ' os legumes e a gerente ', ' todas as reservas.'], entries: [['finalizar', ['tinha finalizado']], ['preparar', ['tinha preparado']], ['confirmar', ['tinha confirmado']]] },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Quando o diretor chegou, nós já ', after: ' o problema.', answer: 'tínhamos resolvido', distractors: ['resolvemos', 'resolvíamos', 'teremos resolvido'] },
-  { before: 'Ela reconheceu a rua onde ', after: ' dez anos antes.', answer: 'tinha morado', distractors: ['morou', 'morava', 'terá morado'] },
-  { before: 'A porta estava aberta porque o porteiro a ', after: ' antes de sair.', answer: 'tinha destravado', distractors: ['destravou', 'destravava', 'terá destravado'] },
-  { before: 'Quando abri a caixa de entrada, você já me ', after: ' três mensagens.', answer: 'tinha enviado', distractors: ['enviou', 'enviava', 'terá enviado'] },
-  { before: 'No começo da reunião, as convidadas já ', after: ' no salão.', answer: 'tinham entrado', distractors: ['entraram', 'entravam', 'terão entrado'] },
-  { before: 'Ele não conseguiu pagar porque ', after: ' a carteira em casa.', answer: 'tinha esquecido', distractors: ['esqueceu', 'esquecia', 'terá esquecido'] },
-  { before: 'Quando chegamos, vocês já ', after: ' todos os documentos.', answer: 'tinham organizado', distractors: ['organizaram', 'organizavam', 'terão organizado'] },
-  { before: 'O jardim estava encharcado porque ', after: ' a noite toda.', answer: 'tinha chovido', distractors: ['choveu', 'chovia', 'terá chovido'] },
-  { before: 'Quando o alarme tocou, os alunos já ', after: ' do prédio.', answer: 'tinham saído', distractors: ['saíram', 'saíam', 'terão saído'] },
-  { before: 'O cliente aceitou a oferta que nós ', after: ' na véspera.', answer: 'tínhamos enviado', distractors: ['enviamos', 'enviávamos', 'teremos enviado'] },
+  { verb: 'resolver', before: 'Quando o diretor chegou, nós já ', after: ' o problema.', answer: 'tínhamos resolvido', distractors: ['resolvemos', 'resolvíamos', 'teremos resolvido'] },
+  { verb: 'morar', before: 'Ela reconheceu a rua onde ', after: ' dez anos antes.', answer: 'tinha morado', distractors: ['morou', 'morava', 'terá morado'] },
+  { verb: 'destravar', before: 'A porta estava aberta porque o porteiro a ', after: ' antes de sair.', answer: 'tinha destravado', distractors: ['destravou', 'destravava', 'terá destravado'] },
+  { verb: 'enviar', before: 'Quando abri a caixa de entrada, você já me ', after: ' três mensagens.', answer: 'tinha enviado', distractors: ['enviou', 'enviava', 'terá enviado'] },
+  { verb: 'entrar', before: 'No começo da reunião, as convidadas já ', after: ' no salão.', answer: 'tinham entrado', distractors: ['entraram', 'entravam', 'terão entrado'] },
+  { verb: 'esquecer', before: 'Ele não conseguiu pagar porque ', after: ' a carteira em casa.', answer: 'tinha esquecido', distractors: ['esqueceu', 'esquecia', 'terá esquecido'] },
+  { verb: 'organizar', before: 'Quando chegamos, vocês já ', after: ' todos os documentos.', answer: 'tinham organizado', distractors: ['organizaram', 'organizavam', 'terão organizado'] },
+  { verb: 'chover', before: 'O jardim estava encharcado porque ', after: ' a noite toda.', answer: 'tinha chovido', distractors: ['choveu', 'chovia', 'terá chovido'] },
+  { verb: 'sair', before: 'Quando o alarme tocou, os alunos já ', after: ' do prédio.', answer: 'tinham saído', distractors: ['saíram', 'saíam', 'terão saído'] },
+  { verb: 'enviar', before: 'O cliente aceitou a oferta que nós ', after: ' na véspera.', answer: 'tínhamos enviado', distractors: ['enviamos', 'enviávamos', 'teremos enviado'] },
 ]
 
 export const PORTUGUESE_PLUPERFECT_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_PLUPERFECT_EDITORIAL = createPortugueseEditorialPack({
   form: 'mais-que-perfeito',
   focus: 'Mais-que-perfeito composto',
   rule: 'Ter no imperfeito + particípio situa uma ação concluída antes de outro marco explicitamente passado.',
+  choices,
   micro,
   long,
   errors,

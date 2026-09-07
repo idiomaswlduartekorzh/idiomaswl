@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'The missed call', cue: 'an unreal past result', segments: ['If you had called, I ', ' about the delay.'], verb: 'know', answers: ['would have known'], distractors: ['would know', 'will have known', 'knew'] },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'If we had booked in March, we ', after: ' less.', answer: 'would have paid', distractors: ['would pay', 'paid', 'will have paid'] },
-  { before: 'Maya would have recognized him if she ', after: ' the photograph.', answer: 'had seen', distractors: ['saw', 'would see', 'has seen'] },
-  { before: 'If the alarm had worked, staff ', after: ' the building sooner.', answer: 'would have left', distractors: ['would leave', 'left', 'will have left'] },
-  { before: 'The parcel would have arrived if the courier ', after: ' the correct address.', answer: 'had received', distractors: ['received', 'would receive', 'has received'] },
-  { before: 'If they had checked the forecast, they ', after: ' the trip.', answer: 'would have postponed', distractors: ['would postpone', 'postponed', 'will have postponed'] },
-  { before: 'We would not have lost the draft if I ', after: ' a backup.', answer: 'had saved', distractors: ['saved', 'would save', 'have saved'] },
-  { before: 'If Leo had left on time, he ', after: ' the opening speech.', answer: 'would have heard', distractors: ['would hear', 'heard', 'will have heard'] },
-  { before: 'The team would have qualified if it ', after: ' the final match.', answer: 'had won', distractors: ['won', 'would win', 'has won'] },
-  { before: 'If the valve had closed, water ', after: ' the lower floor.', answer: 'would not have reached', distractors: ['would not reach', 'did not reach', 'will not reach'] },
-  { before: 'Mina would have accepted the offer if it ', after: ' remote work.', answer: 'had included', distractors: ['included', 'would include', 'has included'] },
+  { verb: 'pay', before: 'If we had booked in March, we ', after: ' less.', answer: 'would have paid', distractors: ['would pay', 'paid', 'will have paid'] },
+  { verb: 'see', before: 'Maya would have recognized him if she ', after: ' the photograph.', answer: 'had seen', distractors: ['saw', 'would see', 'has seen'] },
+  { verb: 'leave', before: 'If the alarm had worked, staff ', after: ' the building sooner.', answer: 'would have left', distractors: ['would leave', 'left', 'will have left'] },
+  { verb: 'receive', before: 'The parcel would have arrived if the courier ', after: ' the correct address.', answer: 'had received', distractors: ['received', 'would receive', 'has received'] },
+  { verb: 'postpone', before: 'If they had checked the forecast, they ', after: ' the trip.', answer: 'would have postponed', distractors: ['would postpone', 'postponed', 'will have postponed'] },
+  { verb: 'save', before: 'We would not have lost the draft if I ', after: ' a backup.', answer: 'had saved', distractors: ['saved', 'would save', 'have saved'] },
+  { verb: 'hear', before: 'If Leo had left on time, he ', after: ' the opening speech.', answer: 'would have heard', distractors: ['would hear', 'heard', 'will have heard'] },
+  { verb: 'win', before: 'The team would have qualified if it ', after: ' the final match.', answer: 'had won', distractors: ['won', 'would win', 'has won'] },
+  { verb: 'reach', before: 'If the valve had closed, water ', after: ' the lower floor.', answer: 'would not have reached', distractors: ['would not reach', 'did not reach', 'will not reach'] },
+  { verb: 'include', before: 'Mina would have accepted the offer if it ', after: ' remote work.', answer: 'had included', distractors: ['included', 'would include', 'has included'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'an unreal past result', segments: ['If we had reserved during the sale, we ', ' much less.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'an unreal past condition', segments: ['Elena would have identified the witness if she ', ' the security image.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a missed past consequence', segments: ['If the siren had sounded, everyone ', ' the tunnel earlier.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'an unreal delivery outcome', segments: ['The medication would have arrived if the driver ', ' the updated directions.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a missed precaution', segments: ['If the climbers had checked the warning, they ', ' the ascent.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'an unreal past safeguard', segments: ['We would not have erased the recording if I ', ' a copy.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a missed past opportunity', segments: ['If Noah had caught the first bus, he ', ' the keynote address.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'an unreal competition result', segments: ['The squad would have advanced if it ', ' the semifinal.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a prevented past result', segments: ['If the barrier had held, seawater ', ' the storage room.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'an unmet past condition', segments: ['Dara would have signed the contract if it ', ' childcare support.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_CONDITIONAL_THIRD_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-third', form: 'conditional-third', focus: 'Third conditional', rule: 'Use the third conditional for an unreal past: had plus participle in the condition and would have plus participle in the result.', micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 2] })
+export const ENGLISH_CONDITIONAL_THIRD_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-third', form: 'conditional-third', focus: 'Third conditional', rule: 'Use the third conditional for an unreal past: had plus participle in the condition and would have plus participle in the result.', choices, micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 2] })

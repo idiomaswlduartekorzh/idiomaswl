@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Controllerei la richiesta', 'cercherei i dati', 'risponderei al cliente'], target: 0 },
-  { events: ['Marta sceglierebbe la ricetta', 'comprerebbe gli ingredienti', 'preparerebbe la cena'], target: 1 },
-  { events: ['Noi ritireremmo le chiavi', 'porteremmo i mobili', 'sistemeremmo la nuova casa'], target: 2 },
-  { events: ['Il tecnico spegnerebbe il server', 'sostituirebbe il disco', 'riavvierebbe il sistema'], target: 0 },
-  { events: ['Voi leggereste il regolamento', 'compilereste il modulo', 'consegnereste la domanda'], target: 1 },
-  { events: ['La guida accoglierebbe il gruppo', 'mostrerebbe la collezione', 'accompagnerebbe tutti all’uscita'], target: 2 },
-  { events: ['Io controllerei l’indirizzo', 'prenderei la metropolitana', 'raggiungerei lo studio'], target: 0 },
-  { events: ['Gli studenti raccoglierebbero le fonti', 'scriverebbero la relazione', 'presenterebbero i risultati'], target: 1 },
-  { events: ['Paolo monterebbe lo scaffale', 'ordinerebbe i libri', 'pulirebbe la stanza'], target: 2 },
-  { events: ['La squadra farebbe riscaldamento', 'proverebbe gli schemi', 'entrerebbe in campo'], target: 0 },
+  { events: ['Controllerei la richiesta', 'cercherei i dati', 'risponderei al cliente'], target: 0, production: { sentence: 'Controllerei la richiesta', verb: 'controllare', answers: ['controllerei'] } },
+  { events: ['Marta sceglierebbe la ricetta', 'Comprerebbe gli ingredienti', 'preparerebbe la cena'], target: 1, production: { sentence: 'Comprerebbe gli ingredienti', verb: 'comprare', answers: ['comprerebbe'] } },
+  { events: ['Noi ritireremmo le chiavi', 'porteremmo i mobili', 'Sistemeremmo la nuova casa'], target: 2, production: { sentence: 'Sistemeremmo la nuova casa', verb: 'sistemare', answers: ['sistemeremmo'] } },
+  { events: ['Il tecnico spegnerebbe il server', 'sostituirebbe il disco', 'riavvierebbe il sistema'], target: 0, production: { sentence: 'Il tecnico spegnerebbe il server', verb: 'spegnere', answers: ['spegnerebbe'] } },
+  { events: ['Voi leggereste il regolamento', 'Compilereste il modulo', 'consegnereste la domanda'], target: 1, production: { sentence: 'Compilereste il modulo', verb: 'compilare', answers: ['compilereste'] } },
+  { events: ['La guida accoglierebbe il gruppo', 'mostrerebbe la collezione', 'Accompagnerebbe tutti all’uscita'], target: 2, production: { sentence: 'Accompagnerebbe tutti all’uscita', verb: 'accompagnare', answers: ['accompagnerebbe'] } },
+  { events: ['Io controllerei l’indirizzo', 'prenderei la metropolitana', 'raggiungerei lo studio'], target: 0, production: { sentence: 'Io controllerei l’indirizzo', verb: 'controllare', answers: ['controllerei'] } },
+  { events: ['Gli studenti raccoglierebbero le fonti', 'Scriverebbero la relazione', 'presenterebbero i risultati'], target: 1, production: { sentence: 'Scriverebbero la relazione', verb: 'scrivere', answers: ['scriverebbero'] } },
+  { events: ['Paolo monterebbe lo scaffale', 'ordinerebbe i libri', 'Pulirebbe la stanza'], target: 2, production: { sentence: 'Pulirebbe la stanza', verb: 'pulire', answers: ['pulirebbe'] } },
+  { events: ['La squadra farebbe riscaldamento', 'proverebbe gli schemi', 'entrerebbe in campo'], target: 0, production: { sentence: 'La squadra farebbe riscaldamento', verb: 'fare', answers: ['farebbe'] } },
 ]
 
 export const ITALIAN_CONDIZIONALE_PRESENTE_EDITORIAL = createItalianEditorialPack({

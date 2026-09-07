@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'More vacation time', cue: 'an unreal present result', segments: ['If I had more vacation time, I ', ' more.'], verb: 'travel', answers: ['would travel'], distractors: ['will travel', 'traveled', 'would have traveled'] },
@@ -27,7 +27,7 @@ const long: EnglishEditorialGapSeed[] = [
 ]
 
 const errors: EnglishEditorialErrorSeed[] = [
-  { title: 'Car-free center', pieces: [['If the avenue closed, buses ', 'will move'], [' faster. People would cycle if lanes ', 'were'], [' safer, and cafés ', 'would gain']], after: ' space.', wrong: 0, answers: ['would move'], reason: 'an unreal present result uses would, not will' },
+  { title: 'Car-free center', pieces: [['If the avenue were closed to cars, buses ', 'will move'], [' faster. People would cycle if lanes ', 'were'], [' safer, and cafés ', 'would gain']], after: ' space.', wrong: 0, answers: ['would move'], reason: 'an unreal present result uses would, not will' },
   { title: 'Bigger library', pieces: [['If the library had space, it ', 'would create'], [' a lab. Students would stay if rooms ', 'are'], [' available, and staff ', 'would offer']], after: ' workshops.', wrong: 1, answers: ['were'], reason: 'the hypothetical if-clause uses a past form' },
   { title: 'Island work', pieces: [['If I lived there, I ', 'would work'], [' early. I would use satellite service if it ', 'were'], [' stable, and my team ', 'will meet']], after: ' me online.', wrong: 2, answers: ['would meet'], reason: 'an unreal present result uses would, not will' },
   { title: 'School garden', pieces: [['If the school owned land, students ', 'will grow'], [' food. Teachers would teach outside if weather ', 'remained'], [' mild, and families ', 'would organize']], after: ' markets.', wrong: 0, answers: ['would grow'], reason: 'an unreal present result uses would, not will' },
@@ -40,7 +40,7 @@ const errors: EnglishEditorialErrorSeed[] = [
 ]
 
 const sequences: EnglishEditorialSequenceSeed[] = [
-  { events: ['If the avenue closed, buses would move faster', 'If lanes were safer, more people would cycle', 'If space opened, cafés would add tables'], target: 0 },
+  { events: ['If the avenue were closed to cars, buses would move faster', 'If lanes were safer, more people would cycle', 'If space opened, cafés would add tables'], target: 0 },
   { events: ['If the library had space, it would create a lab', 'If rooms were available, students would stay', 'If attendance grew, staff would offer workshops'], target: 1 },
   { events: ['If I lived on the island, I would work early', 'If the signal were stable, I would use satellite internet', 'If schedules aligned, my team would meet me online'], target: 2 },
   { events: ['If the school owned land, students would grow food', 'If weather remained mild, teachers would work outside', 'If families joined, they would organize markets'], target: 0 },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'If I spoke Mandarin, I ', after: ' for that position.', answer: 'would apply', distractors: ['will apply', 'applied', 'would have applied'] },
-  { before: 'The garden would produce more food if it ', after: ' sunnier.', answer: 'were', distractors: ['is', 'will be', 'had been'] },
-  { before: 'If we owned a larger van, we ', after: ' all the equipment at once.', answer: 'would carry', distractors: ['will carry', 'carried', 'would have carried'] },
-  { before: 'Maya would cycle to work if the route ', after: ' safer.', answer: 'were', distractors: ['is', 'will be', 'had been'] },
-  { before: 'If the town had a theater, local groups ', after: ' there.', answer: 'would perform', distractors: ['will perform', 'performed', 'would have performed'] },
-  { before: 'I would take the earlier train if it ', after: ' at our station.', answer: 'stopped', distractors: ['stops', 'will stop', 'had stopped'] },
-  { before: 'If the software were simpler, more customers ', after: ' it.', answer: 'would use', distractors: ['will use', 'used', 'would have used'] },
-  { before: 'We would spend more time outside if the air ', after: ' cleaner.', answer: 'were', distractors: ['is', 'will be', 'had been'] },
-  { before: 'If Leo knew the director, he ', after: ' for an introduction.', answer: 'would ask', distractors: ['will ask', 'asked', 'would have asked'] },
-  { before: 'The clinic would open later if demand ', after: ' higher.', answer: 'were', distractors: ['is', 'will be', 'had been'] },
+  { verb: 'apply', before: 'If I spoke Mandarin, I ', after: ' for that position.', answer: 'would apply', distractors: ['will apply', 'applied', 'would have applied'] },
+  { verb: 'be', before: 'The garden would produce more food if it ', after: ' sunnier.', answer: 'were', distractors: ['is', 'will be', 'had been'] },
+  { verb: 'carry', before: 'If we owned a larger van, we ', after: ' all the equipment at once.', answer: 'would carry', distractors: ['will carry', 'carried', 'would have carried'] },
+  { verb: 'be', before: 'Maya would cycle to work if the route ', after: ' safer.', answer: 'were', distractors: ['is', 'will be', 'had been'] },
+  { verb: 'perform', before: 'If the town had a theater, local groups ', after: ' there.', answer: 'would perform', distractors: ['will perform', 'performed', 'would have performed'] },
+  { verb: 'stop', before: 'I would take the earlier train if it ', after: ' at our station.', answer: 'stopped', distractors: ['stops', 'will stop', 'had stopped'] },
+  { verb: 'use', before: 'If the software were simpler, more customers ', after: ' it.', answer: 'would use', distractors: ['will use', 'used', 'would have used'] },
+  { verb: 'be', before: 'We would spend more time outside if the air ', after: ' cleaner.', answer: 'were', distractors: ['is', 'will be', 'had been'] },
+  { verb: 'ask', before: 'If Leo knew the director, he ', after: ' for an introduction.', answer: 'would ask', distractors: ['will ask', 'asked', 'would have asked'] },
+  { verb: 'be', before: 'The clinic would open later if demand ', after: ' higher.', answer: 'were', distractors: ['is', 'will be', 'had been'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'an unlikely present ability', segments: ['If I spoke Arabic, I ', ' for the overseas post.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'an unreal present condition', segments: ['The courtyard would support more plants if it ', ' brighter.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'an imagined possession', segments: ['If we owned a cargo trailer, we ', ' every instrument together.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'an unreal condition', segments: ['Rina would walk to campus if the footpath ', ' safer.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'an imagined local facility', segments: ['If the village had an auditorium, youth orchestras ', ' there.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a hypothetical condition', segments: ['I would choose the direct bus if it ', ' near my neighborhood.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'an unreal present change', segments: ['If the interface were clearer, more volunteers ', ' it confidently.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a hypothetical state', segments: ['We would eat on the balcony more often if the air ', ' cleaner.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'an imagined connection', segments: ['If Tariq knew the curator, he ', ' for a private tour.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'an unreal present condition', segments: ['The pharmacy would stay open overnight if demand ', ' higher.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_CONDITIONAL_SECOND_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-second', form: 'conditional-second', focus: 'Second conditional', rule: 'Use the second conditional for unreal or unlikely present and future situations: past form in the condition and would plus base verb in the result.', micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 1, 2, 3, 1, 2, 3] })
+export const ENGLISH_CONDITIONAL_SECOND_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-second', form: 'conditional-second', focus: 'Second conditional', rule: 'Use the second conditional for unreal or unlikely present and future situations: past form in the condition and would plus base verb in the result.', choices, micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 1, 2, 3, 1, 0, 3] })

@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Marta aveva letto l’avviso', 'aveva compilato il modulo', 'lo aveva consegnato in segreteria'], target: 0 },
-  { events: ['Noi avevamo scelto la meta', 'avevamo prenotato il treno', 'avevamo preparato le valigie'], target: 1 },
-  { events: ['Il tecnico aveva spento il server', 'aveva sostituito il disco', 'aveva riavviato il sistema'], target: 2 },
-  { events: ['Io avevo ricevuto i dati', 'li avevo controllati', 'avevo scritto il rapporto'], target: 0 },
-  { events: ['Gli ospiti erano arrivati', 'avevano lasciato i cappotti', 'si erano seduti in salotto'], target: 1 },
-  { events: ['Voi avevate letto la ricetta', 'avevate comprato gli ingredienti', 'avevate preparato la cena'], target: 2 },
-  { events: ['La guida aveva aperto il museo', 'aveva acceso le luci', 'aveva accolto il gruppo'], target: 0 },
-  { events: ['Paolo aveva trovato l’indirizzo', 'aveva preso la metropolitana', 'era arrivato allo studio'], target: 1 },
-  { events: ['Le studentesse avevano raccolto le fonti', 'avevano creato le schede', 'avevano presentato la ricerca'], target: 2 },
-  { events: ['Il custode aveva controllato le sale', 'aveva chiuso le finestre', 'aveva attivato l’allarme'], target: 0 },
+  { events: ['Marta aveva letto attentamente l’avviso della segreteria', 'Marta aveva compilato il modulo', 'Marta lo aveva consegnato in segreteria'], target: 0, production: { sentence: 'Marta aveva letto attentamente l’avviso della segreteria', verb: 'leggere', answers: ['aveva letto'] } },
+  { events: ['Noi avevamo scelto la meta', 'Avevamo prenotato il treno', 'avevamo preparato le valigie'], target: 1, production: { sentence: 'Avevamo prenotato il treno', verb: 'prenotare', answers: ['avevamo prenotato'] } },
+  { events: ['Il tecnico aveva spento il server', 'aveva sostituito il disco', 'Aveva riavviato il sistema'], target: 2, production: { sentence: 'Aveva riavviato il sistema', verb: 'riavviare', answers: ['aveva riavviato'] } },
+  { events: ['Io avevo ricevuto i dati', 'li avevo controllati', 'avevo scritto il rapporto'], target: 0, production: { sentence: 'Io avevo ricevuto i dati', verb: 'ricevere', answers: ['avevo ricevuto'] } },
+  { events: ['Gli ospiti erano arrivati prima di cena', 'Gli ospiti avevano lasciato i cappotti nel guardaroba', 'Gli ospiti si erano seduti in salotto'], target: 1, production: { sentence: 'Gli ospiti avevano lasciato i cappotti nel guardaroba', verb: 'lasciare', answers: ['avevano lasciato'] } },
+  { events: ['Voi avevate letto la ricetta', 'avevate comprato gli ingredienti', 'Avevate preparato la cena'], target: 2, production: { sentence: 'Avevate preparato la cena', verb: 'preparare', answers: ['avevate preparato'] } },
+  { events: ['La guida aveva aperto il museo', 'aveva acceso le luci', 'aveva accolto il gruppo'], target: 0, production: { sentence: 'La guida aveva aperto il museo', verb: 'aprire', answers: ['aveva aperto'] } },
+  { events: ['Paolo aveva trovato l’indirizzo', 'Aveva preso la metropolitana', 'era arrivato allo studio'], target: 1, production: { sentence: 'Aveva preso la metropolitana', verb: 'prendere', answers: ['aveva preso'] } },
+  { events: ['Le studentesse avevano raccolto le fonti', 'avevano creato le schede', 'Avevano presentato la ricerca'], target: 2, production: { sentence: 'Avevano presentato la ricerca', verb: 'presentare', answers: ['avevano presentato'] } },
+  { events: ['Il custode aveva controllato le sale', 'aveva chiuso le finestre', 'aveva attivato l’allarme'], target: 0, production: { sentence: 'Il custode aveva controllato le sale', verb: 'controllare', answers: ['aveva controllato'] } },
 ]
 
 export const ITALIAN_TRAPASSATO_PROSSIMO_EDITORIAL = createItalianEditorialPack({

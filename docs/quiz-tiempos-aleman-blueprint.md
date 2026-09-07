@@ -61,7 +61,7 @@ otros niveles.
 ## Modo de revisión
 
 `review=1` es una herramienta editorial. Ignora intentos guardados, abre el nivel indicado por la
-URL, marca los seis niveles al 100% y coloca la respuesta correcta dentro de cada control. También
+URL, identifica los seis niveles como «Revisión» y coloca la respuesta correcta dentro de cada control. También
 muestra la explicación y permite avanzar sin editar ni enviar respuestas.
 
 Ejemplo:
@@ -101,8 +101,8 @@ revelar el resultado antes de terminar el nivel.
 - versión explícita y única de `storageKey`.
 
 `tests/tense-quests.test.mjs` conserva las regresiones editoriales. El E2E alemán completa las seis
-mecánicas para cada forma y comprueba que el modo de revisión muestre todos los controles resueltos
-al 100%.
+mecánicas para cada forma y comprueba que el modo de revisión muestre todos los controles con las
+respuestas precargadas, sin registrarlas como progreso real.
 
 Comandos requeridos antes de integrar:
 

@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: PortugueseEditorialMicroSeed[] = [
   { title: 'As chaves encontradas', cue: 'uma descoberta pontual concluída', segments: ['Finalmente, elas ', ' as chaves embaixo do sofá.'], verb: 'encontrar', answers: ['encontraram'], distractors: ['encontravam', 'tinham encontrado', 'encontrarão'] },
   { title: 'A subida ao abrigo', cue: 'um deslocamento concluído após o almoço', segments: ['Depois do almoço, Lia e Joana ', ' até o abrigo.'], verb: 'subir', answers: ['subiram'], distractors: ['subiam', 'tinham subido', 'subirão'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Após a reunião de ontem, nós ', ' a ata ao conselho.'],
+  ['Camila ', ' ao laboratório pouco antes das oito.'],
+  ['Na sessão de sábado, você ', ' o novo documentário.'],
+  ['Durante o plantão, o técnico ', ' o projetor em vinte minutos.'],
+  ['Minhas vizinhas ', ' para o interior depois do café.'],
+  ['Ao fim da entrevista, eu ', ' aceitar a bolsa.'],
+  ['Na mudança, vocês ', ' o espelho do corredor.'],
+  ['Mateus ', ' do congresso na madrugada de terça.'],
+  ['No estacionamento, elas ', ' a carteira junto ao elevador.'],
+  ['Depois da visita, Lia e Joana ', ' até o mirante.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'A entrega urgente', instruction: 'Complete este relato coerente no pretérito perfeito.', segments: ['Ontem cedo, Nora ', ' o pacote no depósito. Ela ', ' o recibo ao responsável e ', ' ao escritório antes do meio-dia.'], entries: [['levar', ['levou']], ['entregar', ['entregou']], ['voltar', ['voltou']]] },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Ontem à noite, Lia ', after: ' a porta antes de sair.', answer: 'fechou', distractors: ['fechava', 'tinha fechado', 'fechará'] },
-  { before: 'No sábado passado, as duas irmãs ', after: ' a Brasília de ônibus.', answer: 'foram', distractors: ['iam', 'tinham ido', 'irão'] },
-  { before: 'Hoje cedo, nós ', after: ' a confirmação por e-mail.', answer: 'recebemos', distractors: ['recebíamos', 'tínhamos recebido', 'receberemos'] },
-  { before: 'Durante a pane, o sistema ', after: ' três vezes.', answer: 'reiniciou', distractors: ['reiniciava', 'tinha reiniciado', 'reiniciará'] },
-  { before: 'No domingo, Paulo ', after: ' para casa antes do almoço.', answer: 'voltou', distractors: ['voltava', 'tinha voltado', 'voltará'] },
-  { before: 'Nesta semana, vocês ', after: ' quatro contratos novos.', answer: 'assinaram', distractors: ['assinavam', 'tinham assinado', 'assinarão'] },
-  { before: 'No fim do show, as musicistas ', after: ' ao palco para agradecer.', answer: 'voltaram', distractors: ['voltavam', 'tinham voltado', 'voltarão'] },
-  { before: 'Ontem, o laboratório ', after: ' os resultados finais.', answer: 'publicou', distractors: ['publicava', 'tinha publicado', 'publicará'] },
-  { before: 'Depois do jantar, tu ', after: ' toda a louça.', answer: 'guardaste', distractors: ['guardavas', 'tinhas guardado', 'guardarás'] },
-  { before: 'Na segunda de manhã, as crianças ', after: ' cedo para a excursão.', answer: 'acordaram', distractors: ['acordavam', 'tinham acordado', 'acordarão'] },
+  { verb: 'fechar', before: 'Ontem à noite, Lia ', after: ' a porta antes de sair.', answer: 'fechou', distractors: ['fechava', 'tinha fechado', 'fechará'] },
+  { verb: 'ir', before: 'No sábado passado, as duas irmãs ', after: ' a Brasília de ônibus.', answer: 'foram', distractors: ['iam', 'tinham ido', 'irão'] },
+  { verb: 'receber', before: 'Hoje cedo, nós ', after: ' a confirmação por e-mail.', answer: 'recebemos', distractors: ['recebíamos', 'tínhamos recebido', 'receberemos'] },
+  { verb: 'reiniciar', before: 'Durante a pane, o sistema ', after: ' três vezes.', answer: 'reiniciou', distractors: ['reiniciava', 'tinha reiniciado', 'reiniciará'] },
+  { verb: 'voltar', before: 'No domingo, Paulo ', after: ' para casa antes do almoço.', answer: 'voltou', distractors: ['voltava', 'tinha voltado', 'voltará'] },
+  { verb: 'assinar', before: 'Nesta semana, vocês ', after: ' quatro contratos novos.', answer: 'assinaram', distractors: ['assinavam', 'tinham assinado', 'assinarão'] },
+  { verb: 'voltar', before: 'No fim do show, as musicistas ', after: ' ao palco para agradecer.', answer: 'voltaram', distractors: ['voltavam', 'tinham voltado', 'voltarão'] },
+  { verb: 'publicar', before: 'Ontem, o laboratório ', after: ' os resultados finais.', answer: 'publicou', distractors: ['publicava', 'tinha publicado', 'publicará'] },
+  { verb: 'guardar', before: 'Depois do jantar, tu ', after: ' toda a louça.', answer: 'guardaste', distractors: ['guardavas', 'tinhas guardado', 'guardarás'] },
+  { verb: 'acordar', before: 'Na segunda de manhã, as crianças ', after: ' cedo para a excursão.', answer: 'acordaram', distractors: ['acordavam', 'tinham acordado', 'acordarão'] },
 ]
 
 export const PORTUGUESE_PRETERITE_PERFECT_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_PRETERITE_PERFECT_EDITORIAL = createPortugueseEditorialP
   form: 'preterito-perfeito',
   focus: 'Pretérito perfeito',
   rule: 'O pretérito perfeito apresenta um evento concluído e delimitado no passado.',
+  choices,
   micro,
   long,
   errors,

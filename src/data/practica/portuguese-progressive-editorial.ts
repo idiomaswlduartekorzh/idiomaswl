@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -8,17 +9,37 @@ import {
 } from './portuguese-editorial-builder.ts'
 
 const micro: PortugueseEditorialMicroSeed[] = [
-  { title: 'A chamada agora', cue: 'uma ação em andamento neste momento', segments: ['Agora, eu ', ' com a cliente por vídeo.'], verb: 'falar', answers: ['estou falando'], distractors: ['falo', 'falei', 'falava'] },
-  { title: 'A chuva na janela', cue: 'um evento em curso agora', segments: ['Olhe pela janela: ', ' muito.'], verb: 'chover', answers: ['está chovendo'], distractors: ['chove', 'choveu', 'chovia'] },
-  { title: 'O relatório desta semana', cue: 'uma atividade temporária em andamento', segments: ['Nesta semana, nós ', ' o relatório anual.'], verb: 'revisar', answers: ['estamos revisando'], distractors: ['revisamos', 'revisamos ontem', 'revisávamos'] },
-  { title: 'A espera no saguão', cue: 'uma ação em curso no momento da fala', segments: ['Neste momento, vocês ', ' no saguão principal.'], verb: 'esperar', answers: ['estão esperando'], distractors: ['esperam', 'esperaram', 'esperavam'] },
-  { title: 'A cidade em mudança', cue: 'uma mudança gradual atual', segments: ['A cidade ', ' rapidamente com a nova linha de metrô.'], verb: 'crescer', answers: ['está crescendo'], distractors: ['cresce', 'cresceu', 'crescia'] },
-  { title: 'O curso temporário', cue: 'uma situação limitada ao período atual', segments: ['Neste semestre, Lia ', ' japonês à noite.'], verb: 'estudar', answers: ['está estudando'], distractors: ['estuda', 'estudou', 'estudava'] },
-  { title: 'Os técnicos no telhado', cue: 'uma ação visível em andamento', segments: ['Veja: os técnicos ', ' o painel do telhado.'], verb: 'instalar', answers: ['estão instalando'], distractors: ['instalam', 'instalaram', 'instalavam'] },
-  { title: 'A fila aumentando', cue: 'um processo atual em desenvolvimento', segments: ['A fila ', ' a cada minuto.'], verb: 'aumentar', answers: ['está aumentando'], distractors: ['aumenta', 'aumentou', 'aumentava'] },
-  { title: 'A viagem desta tarde', cue: 'uma ação em curso neste período', segments: ['Hoje à tarde, tu ', ' de trem para Curitiba.'], verb: 'viajar', answers: ['estás viajando'], distractors: ['viajas', 'viajaste', 'viajavas'] },
-  { title: 'As crianças na cozinha', cue: 'uma atividade acontecendo agora', segments: ['Agora, as crianças ', ' o bolo com a avó.'], verb: 'preparar', answers: ['estão preparando'], distractors: ['preparam', 'prepararam', 'preparavam'] },
+  { title: 'A chamada agora', cue: 'uma ação em andamento neste momento', segments: ['Agora, eu ', ' com a cliente por vídeo.'], verb: 'falar', answers: ['estou falando'], distractors: ['falo', 'estava falando', 'falava'] },
+  { title: 'A chuva na janela', cue: 'um evento em curso agora', segments: ['Olhe pela janela: ', ' muito.'], verb: 'chover', answers: ['está chovendo'], distractors: ['chove', 'estava chovendo', 'chovia'] },
+  { title: 'O relatório desta semana', cue: 'uma atividade temporária em andamento', segments: ['Nesta semana, nós ', ' o relatório anual.'], verb: 'revisar', answers: ['estamos revisando'], distractors: ['revisamos', 'estávamos revisando', 'revisávamos'] },
+  { title: 'A espera no saguão', cue: 'uma ação em curso no momento da fala', segments: ['Neste momento, vocês ', ' no saguão principal.'], verb: 'esperar', answers: ['estão esperando'], distractors: ['esperam', 'estavam esperando', 'esperavam'] },
+  { title: 'A cidade em mudança', cue: 'uma mudança gradual atual', segments: ['A cidade ', ' rapidamente com a nova linha de metrô.'], verb: 'crescer', answers: ['está crescendo'], distractors: ['cresce', 'estava crescendo', 'crescia'] },
+  { title: 'O curso temporário', cue: 'uma situação limitada ao período atual', segments: ['Neste semestre, Lia ', ' japonês à noite.'], verb: 'estudar', answers: ['está estudando'], distractors: ['estuda', 'estava estudando', 'estudava'] },
+  { title: 'Os técnicos no telhado', cue: 'uma ação visível em andamento', segments: ['Veja: os técnicos ', ' o painel do telhado.'], verb: 'instalar', answers: ['estão instalando'], distractors: ['instalam', 'estavam instalando', 'instalavam'] },
+  { title: 'A fila aumentando', cue: 'um processo atual em desenvolvimento', segments: ['A fila ', ' a cada minuto.'], verb: 'aumentar', answers: ['está aumentando'], distractors: ['aumenta', 'estava aumentando', 'aumentava'] },
+  { title: 'A viagem desta tarde', cue: 'uma ação em curso neste período', segments: ['Hoje à tarde, tu ', ' de trem para Curitiba.'], verb: 'viajar', answers: ['estás viajando'], distractors: ['viajas', 'estavas viajando', 'viajavas'] },
+  { title: 'As crianças na cozinha', cue: 'uma atividade acontecendo agora', segments: ['Agora, as crianças ', ' o bolo com a avó.'], verb: 'preparar', answers: ['estão preparando'], distractors: ['preparam', 'estavam preparando', 'preparavam'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Enquanto você prepara o contrato, eu ', ' com o fornecedor ao telefone.'],
+  ['Escute o telhado: ', ' sem parar.'],
+  ['Durante este mês, nós ', ' os manuais do novo sistema.'],
+  ['A recepcionista avisou que vocês ', ' na sala azul.'],
+  ['Com a chegada de novas empresas, o bairro ', ' depressa.'],
+  ['Neste trimestre, Lia ', ' francês para a mudança.'],
+  ['Pela câmera, vemos que os técnicos ', ' a antena principal.'],
+  ['Depois que o segundo guichê fechou, a fila ', ' rapidamente.'],
+  ['Nesta parte do percurso, tu ', ' pela serra.'],
+  ['Não entre ainda: as crianças ', ' uma surpresa.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'A transmissão ao vivo', instruction: 'Complete esta cena que acontece agora.', segments: ['A repórter ', ' da praça. O cinegrafista ', ' a entrada do prédio e a produtora ', ' o áudio no estúdio.'], entries: [['falar', ['está falando']], ['filmar', ['está filmando']], ['monitorar', ['está monitorando']]] },
@@ -43,7 +64,7 @@ const errors: PortugueseEditorialErrorSeed[] = [
   { title: 'O resgate neste momento', pieces: [['Os bombeiros ', 'está baixando'], [' um barco. Um mergulhador ', 'está examinando'], [' e a polícia ', 'está isolando']], after: ' a ponte.', wrong: 0, answers: ['estão baixando'], reason: 'O sujeito plural “os bombeiros” exige “estão baixando”.' },
   { title: 'O palco agora', pieces: [['Os músicos ', 'estão afinando'], [' os instrumentos. A técnica ', 'estão regulando'], [' os refletores e o diretor ', 'está conferindo']], after: ' as cenas.', wrong: 1, answers: ['está regulando'], reason: 'O sujeito singular “a técnica” exige “está regulando”.' },
   { title: 'A feira abrindo', pieces: [['Os feirantes ', 'estão montando'], [' as barracas. Clientes ', 'estão escolhendo'], [' e um fiscal ', 'estão verificando']], after: ' as licenças.', wrong: 2, answers: ['está verificando'], reason: 'O sujeito singular “um fiscal” exige “está verificando”.' },
-  { title: 'A tempestade se aproxima', pieces: [['Nuvens escuras ', 'está avançando'], [' do oeste. O vento ', 'está aumentando'], [' e os pescadores ', 'estão voltando']], after: ' ao porto.', wrong: 0, answers: ['estão avançando'], reason: 'O sujeito plural “nuvens escuras” exige “estão avançando”.' },
+  { title: 'A montagem acelerada', pieces: [['Duas equipes ', 'está avançando'], [' na montagem. O ritmo ', 'está aumentando'], [' e os supervisores ', 'estão voltando']], after: ' à sala de controle.', wrong: 0, answers: ['estão avançando'], reason: 'O sujeito plural “duas equipes” exige “estão avançando”.' },
 ]
 
 const sequences: PortugueseEditorialSequenceSeed[] = [
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Agora, a equipe ', after: ' os últimos dados.', answer: 'está conferindo', distractors: ['confere', 'conferiu', 'conferia'] },
-  { before: 'Olhe: as crianças ', after: ' no jardim.', answer: 'estão correndo', distractors: ['correm', 'correram', 'corriam'] },
-  { before: 'Nesta semana, nós ', after: ' em outra sala.', answer: 'estamos trabalhando', distractors: ['trabalhamos', 'trabalhamos ontem', 'trabalhávamos'] },
-  { before: 'Neste momento, você ', after: ' a versão atualizada.', answer: 'está baixando', distractors: ['baixa', 'baixou', 'baixava'] },
-  { before: 'A cada dia, o nível do rio ', after: ' por causa da chuva.', answer: 'está subindo', distractors: ['sobe', 'subiu', 'subia'] },
-  { before: 'Hoje, eu ', after: ' da casa da minha irmã.', answer: 'estou cuidando', distractors: ['cuido', 'cuidei', 'cuidava'] },
-  { before: 'Agora, os técnicos ', after: ' o servidor.', answer: 'estão reiniciando', distractors: ['reiniciam', 'reiniciaram', 'reiniciavam'] },
-  { before: 'Neste semestre, Lia ', after: ' duas disciplinas extras.', answer: 'está cursando', distractors: ['cursa', 'cursou', 'cursava'] },
-  { before: 'Ouça: alguém ', after: ' na porta.', answer: 'está batendo', distractors: ['bate', 'bateu', 'batia'] },
-  { before: 'Agora, vocês ', after: ' a saída de emergência.', answer: 'estão procurando', distractors: ['procuram', 'procuraram', 'procuravam'] },
+  { verb: 'conferir', before: 'Agora, a equipe ', after: ' os últimos dados.', answer: 'está conferindo', distractors: ['confere', 'estava conferindo', 'conferia'] },
+  { verb: 'correr', before: 'Olhe: as crianças ', after: ' no jardim.', answer: 'estão correndo', distractors: ['correm', 'estavam correndo', 'corriam'] },
+  { verb: 'trabalhar', before: 'Nesta semana, nós ', after: ' em outra sala.', answer: 'estamos trabalhando', distractors: ['trabalhamos', 'estávamos trabalhando', 'trabalhávamos'] },
+  { verb: 'baixar', before: 'Neste momento, você ', after: ' a versão atualizada.', answer: 'está baixando', distractors: ['baixa', 'estava baixando', 'baixava'] },
+  { verb: 'subir', before: 'A cada dia, o nível do rio ', after: ' por causa da chuva.', answer: 'está subindo', distractors: ['sobe', 'estava subindo', 'subia'] },
+  { verb: 'cuidar', before: 'Hoje, eu ', after: ' da casa da minha irmã.', answer: 'estou cuidando', distractors: ['cuido', 'estava cuidando', 'cuidava'] },
+  { verb: 'reiniciar', before: 'Agora, os técnicos ', after: ' o servidor.', answer: 'estão reiniciando', distractors: ['reiniciam', 'estavam reiniciando', 'reiniciavam'] },
+  { verb: 'cursar', before: 'Neste semestre, Lia ', after: ' duas disciplinas extras.', answer: 'está cursando', distractors: ['cursa', 'estava cursando', 'cursava'] },
+  { verb: 'bater', before: 'Ouça: alguém ', after: ' na porta.', answer: 'está batendo', distractors: ['bate', 'estava batendo', 'batia'] },
+  { verb: 'procurar', before: 'Agora, vocês ', after: ' a saída de emergência.', answer: 'estão procurando', distractors: ['procuram', 'estavam procurando', 'procuravam'] },
 ]
 
 export const PORTUGUESE_PROGRESSIVE_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_PROGRESSIVE_EDITORIAL = createPortugueseEditorialPack({
   form: 'progressivo',
   focus: 'Estar + gerúndio',
   rule: 'No português brasileiro, estar no presente + gerúndio expressa ação em andamento, situação temporária ou mudança atual.',
+  choices,
   micro,
   long,
   errors,

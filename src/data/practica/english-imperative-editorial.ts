@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'The next corner', cue: 'a direct navigation instruction', segments: ['', ' left at the next corner.'], verb: 'turn', answers: ['Turn'], distractors: ['Turns', 'To turn', 'Will turn'] },
@@ -46,23 +46,35 @@ const sequences: EnglishEditorialSequenceSeed[] = [
   { events: ['Use the marked exit', 'Do not use the lifts', 'Wait at the assembly point'], target: 0 },
   { events: ['Test the microphone', 'Choose a quiet room', 'Open the link early'], target: 1 },
   { events: ['Disconnect the machine', 'Wash the tray', 'Do not pour water into the motor'], target: 2 },
-  { events: ['Show identification', 'Complete the form', 'Wait by the blue sign'], target: 0 },
+  { events: ['Show your identification at reception', 'Complete the form', 'Wait by the blue sign'], target: 0 },
   { events: ['Wrap the object', 'Place it in the box', 'Fill empty spaces'], target: 1 },
-  { events: ['Stay in the walkway', 'Do not approach equipment', 'Follow the supervisor’s signals'], target: 2 },
-  { events: ['Confirm permission', 'Place the recorder securely', 'Save the file'], target: 0 },
+  { events: ['Stay on the walkway', 'Do not approach equipment', 'Follow the supervisor’s signals'], target: 2 },
+  { events: ['Confirm permission before recording', 'Place the recorder securely', 'Save the file'], target: 0 },
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: '', after: ' the blue button to begin.', answer: 'Press', distractors: ['Presses', 'To press', 'Pressed'] },
-  { before: '', after: ' this medicine on an empty stomach.', answer: 'Do not take', distractors: ['Not take', 'Does not take', 'To not take'] },
-  { before: 'Please ', after: ' your name at the top of the page.', answer: 'write', distractors: ['writes', 'to write', 'wrote'] },
-  { before: '', after: ' the emergency exit clear at all times.', answer: 'Keep', distractors: ['Keeps', 'To keep', 'Kept'] },
-  { before: '', after: ' the lid while the machine is running.', answer: 'Do not open', distractors: ['Not open', 'Does not open', 'To not open'] },
-  { before: 'Please ', after: ' behind the yellow line.', answer: 'stand', distractors: ['stands', 'to stand', 'stood'] },
-  { before: '', after: ' both sides of the document.', answer: 'Scan', distractors: ['Scans', 'To scan', 'Scanned'] },
-  { before: '', after: ' personal information in this field.', answer: 'Do not enter', distractors: ['Not enter', 'Does not enter', 'To not enter'] },
-  { before: '', after: ' the receipt until the refund is complete.', answer: 'Keep', distractors: ['Keeps', 'To keep', 'Kept'] },
-  { before: 'Please ', after: ' the door quietly when you leave.', answer: 'close', distractors: ['closes', 'to close', 'closed'] },
+  { verb: 'press', before: '', after: ' the blue button to begin.', answer: 'Press', distractors: ['Presses', 'To press', 'Pressed'] },
+  { verb: 'take', before: '', after: ' this medicine on an empty stomach.', answer: 'Do not take', distractors: ['Not take', 'Does not take', 'To not take'] },
+  { verb: 'write', before: 'Please ', after: ' your name at the top of the page.', answer: 'write', distractors: ['writes', 'to write', 'wrote'] },
+  { verb: 'keep', before: '', after: ' the emergency exit clear at all times.', answer: 'Keep', distractors: ['Keeps', 'To keep', 'Kept'] },
+  { verb: 'open', before: '', after: ' the lid while the machine is running.', answer: 'Do not open', distractors: ['Not open', 'Does not open', 'To not open'] },
+  { verb: 'stand', before: 'Please ', after: ' behind the yellow line.', answer: 'stand', distractors: ['stands', 'to stand', 'stood'] },
+  { verb: 'scan', before: '', after: ' both sides of the document.', answer: 'Scan', distractors: ['Scans', 'To scan', 'Scanned'] },
+  { verb: 'enter', before: '', after: ' personal information in this field.', answer: 'Do not enter', distractors: ['Not enter', 'Does not enter', 'To not enter'] },
+  { verb: 'keep', before: '', after: ' the receipt until the refund is complete.', answer: 'Keep', distractors: ['Keeps', 'To keep', 'Kept'] },
+  { verb: 'close', before: 'Please ', after: ' the door quietly when you leave.', answer: 'close', distractors: ['closes', 'to close', 'closed'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a direct instruction', segments: ['', ' the red switch before removing the cover.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a negative health instruction', segments: ['', ' these tablets with grapefruit juice.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a polite instruction', segments: ['Please ', ' your initials beside each correction.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a safety instruction', segments: ['', ' the stairwell free of boxes.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a prohibition', segments: ['', ' the battery compartment while the device is on.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a polite direction', segments: ['Please ', ' to the right of the entrance.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a direct technical instruction', segments: ['', ' the barcode on the back of the package.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a privacy warning', segments: ['', ' your bank details in the comment box.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a direct instruction', segments: ['', ' the confirmation email until your account is active.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a polite request', segments: ['Please ', ' the window gently before you go.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_IMPERATIVE_EDITORIAL = createEnglishEditorialPack({ slug: 'imperative', form: 'imperative', focus: 'Imperative', rule: 'Use the base verb for direct instructions and do not plus the base verb for negative commands; please changes tone, not grammar.', micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })
+export const ENGLISH_IMPERATIVE_EDITORIAL = createEnglishEditorialPack({ slug: 'imperative', form: 'imperative', focus: 'Imperative', rule: 'Use the base verb for direct instructions and do not plus the base verb for negative commands; please changes tone, not grammar.', choices, micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })

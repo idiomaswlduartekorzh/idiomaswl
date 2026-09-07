@@ -100,8 +100,8 @@ export const LEVEL_META = [
   { number: '02', title: 'Microstorie', short: 'Textos cortos', description: 'Escribe la conjugación exacta indicada por el contexto.' },
   { number: '03', title: 'Racconti', short: 'Textos largos', description: 'Mantén la coherencia temporal a lo largo de un relato.' },
   { number: '04', title: 'Caccia all’errore', short: 'Detectar y reparar', description: 'Señala el verbo defectuoso y reescríbelo correctamente.' },
-  { number: '05', title: 'Regia temporale', short: 'Orden del relato', description: 'Reconstruye el orden de los hechos usando las señales del relato.' },
-  { number: '06', title: 'Il manoscritto', short: 'Reto final', description: 'Resuelve cada contexto con distractores plausibles del mismo verbo.' },
+  { number: '05', title: 'Officina della frase', short: 'Costruire la frase', description: 'Riordina gli elementi e scrivi la frase completa.' },
+  { number: '06', title: 'Il manoscritto', short: 'Produzione finale', description: 'Scrivi dieci forme verbali complete in un dossier esteso.' },
 ] as const
 
 export const CHOICE_CHALLENGES: ChoiceChallenge[] = [

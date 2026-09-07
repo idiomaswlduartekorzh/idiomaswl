@@ -40,7 +40,7 @@ const EDITORIAL_PACKS = [
 
 export const PORTUGUESE_STRUCTURE_QUEST: TenseQuestConfig<PortugueseFormId> = {
   id: 'portuguese-structure-quest',
-  storageKey: 'wl-portuguese-structure-quest-v3',
+  storageKey: 'wl-portuguese-structure-quest-v4',
   forms: PORTUGUESE_FORMS,
   presets: [
     { label: 'Passado', ids: PORTUGUESE_FORMS.filter((form) => form.group === 'Passado').map((form) => form.id) },
@@ -52,14 +52,15 @@ export const PORTUGUESE_STRUCTURE_QUEST: TenseQuestConfig<PortugueseFormId> = {
     { number: '02', title: 'Microtextos', short: 'Produzir a forma', description: 'Escreva todo o grupo verbal a partir de um contexto preciso.' },
     { number: '03', title: 'Histórias conectadas', short: 'Três decisões', description: 'Complete uma única cena coerente com três formas-alvo.' },
     { number: '04', title: 'Oficina de correção', short: 'Detectar e corrigir', description: 'Encontre a única forma que rompe um texto coerente.' },
-    { number: '05', title: 'Sequência semântica', short: 'Recuperar o sentido', description: 'Reconstrua a ordem quando todas as opções usam a mesma forma.' },
-    { number: '06', title: 'Dossiê final', short: 'Decisões fechadas', description: 'Resolva dez cenas autônomas com quatro formas plausíveis do mesmo verbo.' },
+    { number: '05', title: 'Oficina da frase', short: 'Construir a frase', description: 'Reordene os elementos e escreva a frase completa.' },
+    { number: '06', title: 'Dossiê final', short: 'Produção autônoma', description: 'Escreva dez grupos verbais completos em um dossiê extenso.' },
   ],
   choiceChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.choices),
   microStories: EDITORIAL_PACKS.flatMap((pack) => pack.micro),
   longStories: EDITORIAL_PACKS.flatMap((pack) => pack.long),
   errorChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.errors),
   timelineChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.timelines),
+  errorIdentificationMode: 'write',
   finalChallenges: Array.from({ length: 10 }, (_, index) => {
     const gaps = EDITORIAL_PACKS.map((pack) => pack.finalGaps[index])
     const candidateIds = new Set(gaps.flatMap((gap) => gap.candidateCardIds ?? []))
@@ -73,6 +74,7 @@ export const PORTUGUESE_STRUCTURE_QUEST: TenseQuestConfig<PortugueseFormId> = {
       explanation: 'Cada cena fornece sozinha as pistas de tempo, aspecto, registro e hipótese necessárias.',
     }
   }),
+  finalStories: EDITORIAL_PACKS.map((pack) => pack.finalStory),
   copy: {
     languageName: 'Portugués', languageCode: 'pt-BR', eyebrow: 'Quiz de tempo e estrutura · A2–B2', title: 'A central da narrativa',
     lead: 'Practica portugués brasileño con diez decisiones reales por nivel, desde el reconocimiento hasta escenas finales independientes.',

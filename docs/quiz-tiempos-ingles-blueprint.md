@@ -120,29 +120,28 @@ El estudiante selecciona la forma defectuosa y escribe su corrección.
 - los demás verbos deben ser indiscutiblemente correctos;
 - la solución no aparece hasta cerrar el nivel.
 
-### Nivel 5 — Time director
+### Nivel 5 — Sentence workshop
 
-Cláusulas cerradas que se asignan a funciones temporales: background, interrupted event,
-earlier event, duration, prediction, prior future result, hypothetical result, entre otras.
+El estudiante recibe los elementos de una oración en orden mezclado y escribe la oración completa.
+La tarea sigue siendo válida cuando practica un solo tiempo porque debe reconstruir sujeto,
+auxiliar, forma léxica, negación y orden de palabras.
 
-- mínimo **2 apariciones por forma** en el banco total;
-- cada ranura vale un punto;
-- las opciones funcionales cambian de orden de forma determinista entre estructuras;
-- cada mapa contiene tres cláusulas y al menos dos funciones plausibles;
-- la pista nunca reproduce la cláusula correcta con un hueco cosmético.
+- hay **10 oraciones por forma**;
+- todos los elementos necesarios aparecen una sola vez y en orden mezclado;
+- el encabezado no sustituye la tarea por el nombre del tiempo;
+- la respuesta incluye la oración completa y admite las variantes normativas declaradas;
+- el modo de revisión muestra el texto ya resuelto y lo identifica claramente como respuesta.
 
-### Nivel 6 — Final reconstruction
+### Nivel 6 — Aspect field file
 
-Texto completo con banco cerrado. No hay escritura libre: se selecciona un espacio y luego una
-tarjeta.
+Un texto largo exige escribir diez grupos verbales completos a partir del lema y las pistas del
+relato.
 
-- el texto maestro incluye una aparición de las 19 formas;
-- las formas no seleccionadas se muestran resueltas;
-- el banco usa el orden editorial mezclado, nunca el orden de los huecos;
-- una selección de una sola forma mantiene tres distractores; algunas tarjetas sobran;
-- dos tarjetas con el mismo texto siguen siendo dos entidades distintas;
-- cada hueco vale un punto;
-- se puede vaciar o reemplazar cualquier asignación antes de terminar.
+- existe un dossier independiente por forma;
+- cada dossier contiene al menos diez huecos escritos;
+- auxiliar, partícula, concordancia o construcción completa forman parte de la respuesta;
+- el contexto del nivel 1 no se reutiliza;
+- la corrección aparece al terminar el nivel o de inmediato en el modo de revisión.
 
 ## 4. Corrección sin IA
 
@@ -305,12 +304,12 @@ El primer release no sale con una muestra de una pregunta por forma.
 | Nivel 2 | 57 microtextos: 3 × 19 formas |
 | Nivel 3 | 38 bloques acumulativos: 2 × 19 formas |
 | Nivel 4 | 38 errores: 2 × 19 formas |
-| Nivel 5 | 19 mapas de 3 funciones |
-| Nivel 6 | 1 reconstrucción maestra de 19 huecos con distractores adaptativos |
+| Nivel 5 | 190 producciones de oración completa: 10 × 19 formas |
+| Nivel 6 | 19 dossiers escritos de 10 huecos: uno por forma |
 
-El motor muestra todos los retos de las formas seleccionadas y conserva el intento completo en
-localStorage. Esto permite sesiones breves con una forma y recorridos acumulativos largos sin
-perder el avance al recargar.
+El motor conserva los diez retos cuando se selecciona una sola forma. En práctica mixta construye
+un recorrido equilibrado e intercalado de 12 a 20 retos, cubre todas las formas elegidas cuando
+es posible y conserva el intento completo en localStorage.
 
 ## 10. Guardián obligatorio
 

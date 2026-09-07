@@ -1,5 +1,6 @@
 import {
   createEnglishEditorialPack,
+  type EnglishEditorialChoiceSeed,
   type EnglishEditorialErrorSeed,
   type EnglishEditorialFinalSeed,
   type EnglishEditorialGapSeed,
@@ -60,16 +61,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'Every dawn the lighthouse keeper ', after: ' the main lens before checking the radio.', answer: 'cleans', distractors: ['is cleaning', 'cleaned', 'will clean'] },
-  { before: 'The university shuttle ', after: ' outside the library every twenty minutes.', answer: 'stops', distractors: ['is stopping', 'stopped', 'has stopped'] },
-  { before: 'Our accounting system automatically ', after: ' a receipt after each payment.', answer: 'creates', distractors: ['is creating', 'created', 'will create'] },
-  { before: 'My neighbors ', after: ' their vegetable stall on Saturdays.', answer: 'run', distractors: ['are running', 'ran', 'have run'] },
-  { before: 'The moon ', after: ' light from the sun rather than producing its own.', answer: 'reflects', distractors: ['is reflecting', 'reflected', 'has reflected'] },
-  { before: 'This door ', after: ' when the green indicator appears.', answer: 'unlocks', distractors: ['is unlocking', 'unlocked', 'will unlock'] },
-  { before: 'The coastal path ', after: ' at the old watchtower.', answer: 'ends', distractors: ['is ending', 'ended', 'has ended'] },
-  { before: 'Our choir ', after: ' in the community hall every Thursday.', answer: 'rehearses', distractors: ['is rehearsing', 'rehearsed', 'will rehearse'] },
-  { before: 'Two technicians ', after: ' the backup generator once a month.', answer: 'test', distractors: ['are testing', 'tested', 'have tested'] },
-  { before: 'The winter exhibition ', after: ' on the first Monday of December.', answer: 'opens', distractors: ['is opening', 'opened', 'will open'] },
+  { verb: 'clean', before: 'Every dawn the lighthouse keeper ', after: ' the main lens before checking the radio.', answer: 'cleans', distractors: ['is cleaning', 'cleaned', 'will clean'] },
+  { verb: 'stop', before: 'The university shuttle ', after: ' outside the library every twenty minutes.', answer: 'stops', distractors: ['is stopping', 'stopped', 'has stopped'] },
+  { verb: 'create', before: 'Our accounting system automatically ', after: ' a receipt after each payment.', answer: 'creates', distractors: ['is creating', 'created', 'will create'] },
+  { verb: 'run', before: 'My neighbors ', after: ' their vegetable stall on Saturdays.', answer: 'run', distractors: ['are running', 'ran', 'have run'] },
+  { verb: 'reflect', before: 'The moon ', after: ' light from the sun rather than producing its own.', answer: 'reflects', distractors: ['is reflecting', 'reflected', 'has reflected'] },
+  { verb: 'unlock', before: 'This door ', after: ' when the green indicator appears.', answer: 'unlocks', distractors: ['is unlocking', 'unlocked', 'will unlock'] },
+  { verb: 'end', before: 'The coastal path ', after: ' at the old watchtower.', answer: 'ends', distractors: ['is ending', 'ended', 'has ended'] },
+  { verb: 'rehearse', before: 'Our choir ', after: ' in the community hall every Thursday.', answer: 'rehearses', distractors: ['is rehearsing', 'rehearsed', 'will rehearse'] },
+  { verb: 'test', before: 'Two technicians ', after: ' the backup generator once a month.', answer: 'test', distractors: ['are testing', 'tested', 'have tested'] },
+  { verb: 'open', before: 'The winter exhibition ', after: ' on the first Monday of December.', answer: 'opens', distractors: ['is opening', 'opened', 'will open'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a regular maintenance routine', segments: ['Every evening the telescope operator ', ' the primary mirror.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a fixed public schedule', segments: ['The island ferry ', ' at the east pier every half hour.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'an automatic process', segments: ['This booking platform ', ' a reference number after each reservation.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a repeated weekend activity', segments: ['My cousins ', ' a craft stall at the Sunday market.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a scientific fact', segments: ['A polished surface ', ' most incoming light.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a permanent device function', segments: ['The cabinet ', ' when the correct code is entered.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a stable route fact', segments: ['The forest trail ', ' beside the ranger station.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a regular group activity', segments: ['The youth orchestra ', ' at the arts center on Wednesdays.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a recurring work duty', segments: ['Three engineers ', ' the fire alarm every quarter.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a fixed calendar event', segments: ['The spring book fair ', ' on the second Saturday of April.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
 export const ENGLISH_PRESENT_SIMPLE_EDITORIAL = createEnglishEditorialPack({
@@ -77,7 +90,7 @@ export const ENGLISH_PRESENT_SIMPLE_EDITORIAL = createEnglishEditorialPack({
   form: 'present-simple',
   focus: 'Present simple',
   rule: 'Use the present simple for routines, stable facts, regular processes and official schedules.',
-  micro,
+  choices, micro,
   long,
   errors,
   sequences,

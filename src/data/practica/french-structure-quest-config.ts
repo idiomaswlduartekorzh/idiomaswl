@@ -40,7 +40,7 @@ const EDITORIAL_PACKS = [
 
 export const FRENCH_STRUCTURE_QUEST: TenseQuestConfig<FrenchFormId> = {
   id: 'french-structure-quest',
-  storageKey: 'wl-french-structure-quest-v3',
+  storageKey: 'wl-french-structure-quest-v4',
   forms: FRENCH_FORMS,
   presets: [
     { label: 'Passé', ids: FRENCH_FORMS.filter((form) => form.group.startsWith('Passé')).map((form) => form.id) },
@@ -52,14 +52,15 @@ export const FRENCH_STRUCTURE_QUEST: TenseQuestConfig<FrenchFormId> = {
     { number: '02', title: 'Microtextes', short: 'Produire la forme', description: 'Écris tout le groupe verbal à partir d’un contexte précis.' },
     { number: '03', title: 'Récits connectés', short: 'Trois décisions', description: 'Complète une seule scène cohérente avec trois formes cibles.' },
     { number: '04', title: 'Atelier de réparation', short: 'Détecter et corriger', description: 'Repère l’unique forme qui brise un texte cohérent.' },
-    { number: '05', title: 'Suite sémantique', short: 'Reconstruire le sens', description: 'Retrouve l’ordre quand toutes les options emploient la même forme.' },
-    { number: '06', title: 'Dossier final', short: 'Décisions fermées', description: 'Résous dix scènes autonomes avec quatre formes plausibles du même verbe.' },
+    { number: '05', title: 'Atelier de la phrase', short: 'Construire la phrase', description: 'Remets les éléments dans l’ordre et écris la phrase complète.' },
+    { number: '06', title: 'Dossier final', short: 'Production autonome', description: 'Écris dix groupes verbaux complets dans un dossier étendu.' },
   ],
   choiceChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.choices),
   microStories: EDITORIAL_PACKS.flatMap((pack) => pack.micro),
   longStories: EDITORIAL_PACKS.flatMap((pack) => pack.long),
   errorChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.errors),
   timelineChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.timelines),
+  errorIdentificationMode: 'write',
   finalChallenges: Array.from({ length: 10 }, (_, index) => {
     const gaps = EDITORIAL_PACKS.map((pack) => pack.finalGaps[index])
     const candidateIds = new Set(gaps.flatMap((gap) => gap.candidateCardIds ?? []))
@@ -73,6 +74,7 @@ export const FRENCH_STRUCTURE_QUEST: TenseQuestConfig<FrenchFormId> = {
       explanation: 'Chaque scène fournit seule les repères de temps, de registre et d’accord nécessaires.',
     }
   }),
+  finalStories: EDITORIAL_PACKS.map((pack) => pack.finalStory),
   copy: {
     languageName: 'Francés',
     languageCode: 'fr',

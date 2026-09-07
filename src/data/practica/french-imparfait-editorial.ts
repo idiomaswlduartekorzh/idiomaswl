@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: FrenchEditorialMicroSeed[] = [
   { title: 'Le chien du voisin', cue: 'un comportement répété dans le passé', segments: ['Chaque fois que le facteur arrivait, le chien ', '.'], verb: 'aboyer', answers: ['aboyait'], distractors: ['a aboyé', 'avait aboyé', 'aboiera'] },
   { title: 'La salle avant le concert', cue: 'un arrière-plan visuel passé', segments: ['Avant l’ouverture des portes, des lumières bleues ', ' la scène.'], verb: 'éclairer', answers: ['éclairaient'], distractors: ['ont éclairé', 'avaient éclairé', 'éclaireront'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Au collège, je ', ' mes mercredis à la bibliothèque.'],
+  ['Ce soir-là, il ', ' doucement sur le port.'],
+  ['Quand l’alarme a sonné, nous ', ' dans la salle du fond.'],
+  ['La chambre de l’hôtel ', ' sur une place animée.'],
+  ['Après chaque répétition, elles ', ' le dernier métro.'],
+  ['À dix ans, tu ', ' que ce château était hanté.'],
+  ['Lors de l’inspection, le générateur ', ' sans aucun bruit.'],
+  ['Avant votre déménagement, vous ', ' le bus de sept heures.'],
+  ['Dès que la cloche sonnait, le chien ', ' devant la grille.'],
+  ['Pendant la cérémonie, des bougies ', ' l’allée centrale.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'Les étés au village', instruction: 'Complète ce souvenir cohérent à l’imparfait.', segments: ['Chaque été, nous ', ' chez notre tante. Le matin, elle ', ' du pain au marché et nous ', ' près de la rivière jusqu’à midi.'], entries: [['loger', ['logions']], ['acheter', ['achetait']], ['jouer', ['jouions']]] },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'Quand nous vivions à Lille, je ', after: ' au bureau à pied.', answer: 'allais', distractors: ['suis allé', 'étais allé', 'irai'] },
-  { before: 'À vingt-deux heures, la neige ', after: ' encore sur la route.', answer: 'tombait', distractors: ['est tombée', 'était tombée', 'tombera'] },
-  { before: 'Tous les vendredis, vous ', after: ' le bilan ensemble.', answer: 'relisiez', distractors: ['avez relu', 'aviez relu', 'relirez'] },
-  { before: 'La vieille maison ', after: ' trois cheminées et un grand grenier.', answer: 'avait', distractors: ['a eu', 'avait eu', 'aura'] },
-  { before: 'Pendant que le médecin parlait, les étudiants ', after: ' des notes.', answer: 'prenaient', distractors: ['ont pris', 'avaient pris', 'prendront'] },
-  { before: 'Avant les travaux, cette porte ', after: ' très mal.', answer: 'fermait', distractors: ['a fermé', 'avait fermé', 'fermera'] },
-  { before: 'À cette époque, nous ne ', after: ' pas encore la réponse.', answer: 'savions', distractors: ['avons su', 'avions su', 'saurons'] },
-  { before: 'Chaque hiver, le lac ', after: ' pendant plusieurs semaines.', answer: 'gelait', distractors: ['a gelé', 'avait gelé', 'gèlera'] },
-  { before: 'Au moment de l’annonce, tu ', after: ' près de la sortie.', answer: 'attendais', distractors: ['as attendu', 'avais attendu', 'attendras'] },
-  { before: 'Le soir, les lampes du quai ', after: ' une lumière orange.', answer: 'diffusaient', distractors: ['ont diffusé', 'avaient diffusé', 'diffuseront'] },
+  { verb: 'aller', before: 'Quand nous vivions à Lille, je ', after: ' au bureau à pied.', answer: 'allais', distractors: ['suis allé', 'étais allé', 'irai'] },
+  { verb: 'tomber', before: 'À vingt-deux heures, la neige ', after: ' encore sur la route.', answer: 'tombait', distractors: ['est tombée', 'était tombée', 'tombera'] },
+  { verb: 'relire', before: 'Tous les vendredis, vous ', after: ' le bilan ensemble.', answer: 'relisiez', distractors: ['avez relu', 'aviez relu', 'relirez'] },
+  { verb: 'avoir', before: 'La vieille maison ', after: ' trois cheminées et un grand grenier.', answer: 'avait', distractors: ['a eu', 'avait eu', 'aura'] },
+  { verb: 'prendre', before: 'Pendant que le médecin parlait, les étudiants ', after: ' des notes.', answer: 'prenaient', distractors: ['ont pris', 'avaient pris', 'prendront'] },
+  { verb: 'fermer', before: 'Avant les travaux, cette porte ', after: ' très mal.', answer: 'fermait', distractors: ['a fermé', 'avait fermé', 'fermera'] },
+  { verb: 'savoir', before: 'À cette époque, nous ne ', after: ' pas encore la réponse.', answer: 'savions', distractors: ['avons su', 'avions su', 'saurons'] },
+  { verb: 'geler', before: 'Chaque hiver, le lac ', after: ' pendant plusieurs semaines.', answer: 'gelait', distractors: ['a gelé', 'avait gelé', 'gèlera'] },
+  { verb: 'attendre', before: 'Au moment de l’annonce, tu ', after: ' près de la sortie.', answer: 'attendais', distractors: ['as attendu', 'avais attendu', 'attendras'] },
+  { verb: 'diffuser', before: 'Le soir, les lampes du quai ', after: ' une lumière orange.', answer: 'diffusaient', distractors: ['ont diffusé', 'avaient diffusé', 'diffuseront'] },
 ]
 
 export const FRENCH_IMPARFAIT_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_IMPARFAIT_EDITORIAL = createFrenchEditorialPack({
   form: 'imparfait',
   focus: 'Imparfait',
   rule: 'L’imparfait installe une habitude, un état, une description ou une action en cours dans le passé.',
+  choices,
   micro,
   long,
   errors,

@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: PortugueseEditorialMicroSeed[] = [
   { title: 'A máquina sem a pane', cue: 'uma capacidade atual sob condição', segments: ['Sem essa pane, a máquina ainda ', '.'], verb: 'funcionar', answers: ['funcionaria'], distractors: ['funciona', 'funcionará', 'teria funcionado'] },
   { title: 'O plano anunciado ontem', cue: 'um futuro em relação a uma fala passada', segments: ['Ontem, o diretor afirmou que a obra ', ' em junho.'], verb: 'começar', answers: ['começaria'], distractors: ['começa', 'começará', 'teria começado'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Com uma tarde livre, eu ', ' o museu de arte moderna.'],
+  ['Você ', ' repetir o número da reserva, por favor?'],
+  ['Na semana passada, ela garantiu que ', ' antes do feriado.'],
+  ['Eu ', ' aprender a velejar neste verão.'],
+  ['Com mais dois analistas, nós ', ' a pesquisa ainda este mês.'],
+  ['O senhor ', ' confirmar meu assento?'],
+  ['Com uma varanda maior, eles ', ' este apartamento.'],
+  ['Você ', ' guardar uma cópia antes de atualizar o programa.'],
+  ['Com uma correia nova, a máquina ', ' normalmente.'],
+  ['Na assembleia, o diretor afirmou que a obra ', ' após as chuvas.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'O café ideal', instruction: 'Complete este projeto hipotético no futuro do pretérito.', segments: ['Com um espaço maior, Bia ', ' dez mesas. Ela ', ' um canto de leitura e os clientes ', ' mais tempo.'], entries: [['colocar', ['colocaria']], ['criar', ['criaria']], ['ficar', ['ficariam']]] },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Com um escritório silencioso, eu ', after: ' melhor.', answer: 'trabalharia', distractors: ['trabalho', 'trabalharei', 'teria trabalhado'] },
-  { before: 'O senhor ', after: ' repetir a pergunta, por favor?', answer: 'poderia', distractors: ['pode', 'poderá', 'teria podido'] },
-  { before: 'No seu lugar, ela ', after: ' as duas propostas.', answer: 'compararia', distractors: ['compara', 'comparará', 'teria comparado'] },
-  { before: 'Se tivéssemos um quintal, ', after: ' tomates.', answer: 'plantaríamos', distractors: ['plantamos', 'plantaremos', 'teríamos plantado'] },
-  { before: 'Sem esse barulho, as crianças ', after: ' agora.', answer: 'dormiriam', distractors: ['dormem', 'dormirão', 'teriam dormido'] },
-  { before: 'Eu ', after: ' de fazer mais uma pergunta.', answer: 'gostaria', distractors: ['gosto', 'gostarei', 'teria gostado'] },
-  { before: 'Ontem, ela disse que o modelo ', after: ' mais preciso com novos dados.', answer: 'ficaria', distractors: ['fica', 'ficará', 'teria ficado'] },
-  { before: 'Você ', after: ' consultar um especialista.', answer: 'deveria', distractors: ['deve', 'deverá', 'teria devido'] },
-  { before: 'Se o trem saísse mais tarde, eles ', after: ' após o show.', answer: 'ficariam', distractors: ['ficam', 'ficarão', 'teriam ficado'] },
-  { before: 'Na reunião passada, o diretor disse que nós ', after: ' na segunda.', answer: 'começaríamos', distractors: ['começamos', 'começaremos', 'teríamos começado'] },
+  { verb: 'trabalhar', before: 'Com um escritório silencioso, eu ', after: ' melhor.', answer: 'trabalharia', distractors: ['trabalho', 'trabalharei', 'teria trabalhado'] },
+  { verb: 'poder', before: 'O senhor ', after: ' repetir a pergunta, por favor?', answer: 'poderia', distractors: ['pode', 'poderá', 'teria podido'] },
+  { verb: 'comparar', before: 'No seu lugar, eu ', after: ' as duas propostas.', answer: 'compararia', distractors: ['comparo', 'compararei', 'teria comparado'] },
+  { verb: 'plantar', before: 'Se tivéssemos um quintal, ', after: ' tomates.', answer: 'plantaríamos', distractors: ['plantamos', 'plantaremos', 'teríamos plantado'] },
+  { verb: 'dormir', before: 'Sem esse barulho, as crianças ', after: ' agora.', answer: 'dormiriam', distractors: ['dormem', 'dormirão', 'teriam dormido'] },
+  { verb: 'gostar', before: 'Eu ', after: ' de fazer mais uma pergunta.', answer: 'gostaria', distractors: ['gosto', 'gostarei', 'teria gostado'] },
+  { verb: 'ficar', before: 'Ontem, ela disse que o modelo ', after: ' mais preciso com novos dados.', answer: 'ficaria', distractors: ['fica', 'ficará', 'teria ficado'] },
+  { verb: 'dever', before: 'Você ', after: ' consultar um especialista.', answer: 'deveria', distractors: ['deve', 'deverá', 'teria devido'] },
+  { verb: 'ficar', before: 'Se o trem saísse mais tarde, eles ', after: ' após o show.', answer: 'ficariam', distractors: ['ficam', 'ficarão', 'teriam ficado'] },
+  { verb: 'começar', before: 'Na reunião passada, o diretor disse que nós ', after: ' na segunda.', answer: 'começaríamos', distractors: ['começamos', 'começaremos', 'teríamos começado'] },
 ]
 
 export const PORTUGUESE_FUTURE_IN_PAST_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_FUTURE_IN_PAST_EDITORIAL = createPortugueseEditorialPack
   form: 'futuro-preterito',
   focus: 'Futuro do pretérito',
   rule: 'O futuro do pretérito expressa consequência hipotética, pedido atenuado ou futuro visto de um ponto passado explicitamente marcado.',
+  choices,
   micro,
   long,
   errors,

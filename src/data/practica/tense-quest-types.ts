@@ -58,6 +58,11 @@ export type TimelineSlot<FormId extends string> = {
   label: string
   hint: string
   answer: string
+  production?: {
+    tokens: string[]
+    answers: string[]
+    verb?: string
+  }
 }
 
 export type TimelineChallenge<FormId extends string> = {

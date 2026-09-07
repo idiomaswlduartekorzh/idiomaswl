@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'The Tokyo job', cue: 'a past condition with a present result', segments: ['If I had accepted that job, I ', ' in Tokyo now.'], verb: 'be', answers: ['would be'], distractors: ['would have been', 'will be', 'am'] },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'If I had taken that course, I ', after: ' the software now.', answer: 'would understand', distractors: ['would have understood', 'will understand', 'understood'] },
-  { before: 'If Maya were less cautious, she ', after: ' the offer last week.', answer: 'would have accepted', distractors: ['would accept', 'accepted', 'had accepted'] },
-  { before: 'If we had moved closer, our commute ', after: ' shorter today.', answer: 'would be', distractors: ['would have been', 'will be', 'was'] },
-  { before: 'If Leo were more organized, he ', after: ' yesterday’s deadline.', answer: 'would have met', distractors: ['would meet', 'met', 'had met'] },
-  { before: 'If they had repaired the heating, the office ', after: ' comfortable now.', answer: 'would feel', distractors: ['would have felt', 'will feel', 'felt'] },
-  { before: 'If I spoke German, I ', after: ' that role in 2025.', answer: 'would have taken', distractors: ['would take', 'took', 'had taken'] },
-  { before: 'If the city had kept the night bus, workers ', after: ' another option now.', answer: 'would have', distractors: ['would have had', 'will have', 'had'] },
-  { before: 'If Ana were more confident, she ', after: ' at last month’s conference.', answer: 'would have presented', distractors: ['would present', 'presented', 'had presented'] },
-  { before: 'If the team had tested the backup, the service ', after: ' stable today.', answer: 'would be', distractors: ['would have been', 'will be', 'was'] },
-  { before: 'If he were more patient, he ', after: ' the discussion yesterday.', answer: 'would not have ended', distractors: ['would not end', 'did not end', 'had not ended'] },
+  { verb: 'understand', before: 'If I had taken that course, I ', after: ' the software now.', answer: 'would understand', distractors: ['would have understood', 'will understand', 'understood'] },
+  { verb: 'accept', before: 'If Maya were less cautious, she ', after: ' the offer last week.', answer: 'would have accepted', distractors: ['would accept', 'accepted', 'had accepted'] },
+  { verb: 'be', before: 'If we had moved closer, our commute ', after: ' shorter today.', answer: 'would be', distractors: ['would have been', 'will be', 'was'] },
+  { verb: 'meet', before: 'If Leo were more organized, he ', after: ' yesterday’s deadline.', answer: 'would have met', distractors: ['would meet', 'met', 'had met'] },
+  { verb: 'feel', before: 'If they had repaired the heating, the office ', after: ' comfortable now.', answer: 'would feel', distractors: ['would have felt', 'will feel', 'felt'] },
+  { verb: 'take', before: 'If I spoke German, I ', after: ' that role in 2025.', answer: 'would have taken', distractors: ['would take', 'took', 'had taken'] },
+  { verb: 'have', before: 'If the city had kept the night bus, workers ', after: ' another option now.', answer: 'would have', distractors: ['would have had', 'will have', 'had'] },
+  { verb: 'present', before: 'If Ana were more confident, she ', after: ' at last month’s conference.', answer: 'would have presented', distractors: ['would present', 'presented', 'had presented'] },
+  { verb: 'be', before: 'If the team had tested the backup, the service ', after: ' stable today.', answer: 'would be', distractors: ['would have been', 'will be', 'was'] },
+  { verb: 'end', before: 'If he were more patient, he ', after: ' the discussion yesterday.', answer: 'would not have ended', distractors: ['would not end', 'did not end', 'had not ended'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a past cause with a present result', segments: ['If I had studied acoustics, I ', ' this control panel now.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a present trait affecting the past', segments: ['If Lena were more decisive, she ', ' the scholarship in April.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a past choice with a current result', segments: ['If our office had relocated downtown, the journey ', ' easier today.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a present trait affecting a past result', segments: ['If Ben were more methodical, he ', ' Monday’s filing deadline.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a past action with a present result', segments: ['If they had insulated the roof, this room ', ' warmer now.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a current ability affecting a past choice', segments: ['If I spoke Japanese, I ', ' the Osaka assignment last year.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a past policy with a present result', segments: ['If the county had preserved the ferry route, islanders ', ' another option now.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a present quality affecting a past event', segments: ['If Sara were more self-assured, she ', ' at the spring symposium.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a past preparation with a current result', segments: ['If the lab had calibrated the sensor, the readings ', ' reliable today.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a present trait affecting the past', segments: ['If he were more tolerant, he ', ' Saturday’s negotiation so abruptly.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_CONDITIONAL_MIXED_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-mixed', form: 'conditional-mixed', focus: 'Mixed conditionals', rule: 'Mixed conditionals connect a past condition to a present result, or a present trait to an unreal past result; both time planes must be explicit.', micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 1] })
+export const ENGLISH_CONDITIONAL_MIXED_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-mixed', form: 'conditional-mixed', focus: 'Mixed conditionals', rule: 'Mixed conditionals connect a past condition to a present result, or a present trait to an unreal past result; both time planes must be explicit.', choices, micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 0, 1, 2, 3, 0, 3] })

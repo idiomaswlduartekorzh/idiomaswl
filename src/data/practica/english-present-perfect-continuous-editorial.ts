@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Work since nine', cue: 'an activity continuing until now', segments: ['I ', ' on this design since nine o’clock.'], verb: 'work', answers: ['have been working'], distractors: ['am working', 'worked', 'have worked'] },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'The technicians ', after: ' the signal since early morning.', answer: 'have been monitoring', distractors: ['monitor', 'are monitoring', 'have monitored'] },
-  { before: 'Maya’s hands are covered in paint because she ', after: ' the hallway.', answer: 'has been decorating', distractors: ['has decorated', 'is decorating', 'decorated'] },
-  { before: 'I ', after: ' for your reply for nearly an hour.', answer: 'have been waiting', distractors: ['wait', 'am waiting', 'have waited'] },
-  { before: 'The children ', after: ' in the snow, so their coats are wet.', answer: 'have been playing', distractors: ['have played', 'are playing', 'played'] },
-  { before: 'Our team ', after: ' customer interviews throughout this month.', answer: 'has been conducting', distractors: ['conducts', 'is conducting', 'has conducted'] },
-  { before: 'Someone ', after: ' the side gate repeatedly tonight.', answer: 'has been opening', distractors: ['opens', 'is opening', 'has opened'] },
-  { before: 'We ', after: ' this route every weekend since May.', answer: 'have been hiking', distractors: ['hike', 'are hiking', 'have hiked'] },
-  { before: 'The dog ', after: ' at the empty cupboard, which explains the noise.', answer: 'has been scratching', distractors: ['has scratched', 'is scratching', 'scratched'] },
-  { before: 'Local groups ', after: ' money for the new library all year.', answer: 'have been raising', distractors: ['raise', 'are raising', 'have raised'] },
-  { before: 'The river ', after: ' steadily since yesterday’s storm.', answer: 'has been rising', distractors: ['rises', 'is rising', 'has risen'] },
+  { verb: 'monitor', before: 'The technicians ', after: ' the signal since early morning.', answer: 'have been monitoring', distractors: ['monitor', 'are monitoring', 'monitored'] },
+  { verb: 'decorate', before: 'Maya’s hands are covered in paint because she ', after: ' the hallway.', answer: 'has been decorating', distractors: ['decorates', 'is decorating', 'decorated'] },
+  { verb: 'wait', before: 'I ', after: ' for your reply for nearly an hour.', answer: 'have been waiting', distractors: ['wait', 'am waiting', 'waited'] },
+  { verb: 'play', before: 'The children ', after: ' in the snow, so their coats are wet.', answer: 'have been playing', distractors: ['play', 'are playing', 'played'] },
+  { verb: 'conduct', before: 'Our team ', after: ' customer interviews throughout this month.', answer: 'has been conducting', distractors: ['conducts', 'is conducting', 'conducted'] },
+  { verb: 'open', before: 'Someone ', after: ' the side gate repeatedly tonight.', answer: 'has been opening', distractors: ['opens', 'is opening', 'opened'] },
+  { verb: 'hike', before: 'We ', after: ' this route every weekend since May.', answer: 'have been hiking', distractors: ['hike', 'are hiking', 'hiked'] },
+  { verb: 'scratch', before: 'The dog ', after: ' at the empty cupboard, which explains the noise.', answer: 'has been scratching', distractors: ['scratches', 'is scratching', 'scratched'] },
+  { verb: 'raise', before: 'Local groups ', after: ' money for the new library all year.', answer: 'have been raising', distractors: ['raise', 'are raising', 'raised'] },
+  { verb: 'rise', before: 'The river ', after: ' steadily since yesterday’s storm.', answer: 'has been rising', distractors: ['rises', 'is rising', 'rose'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'an activity continuing until now', segments: ['We ', ' air quality since early June.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a recent ongoing activity with visible evidence', segments: ['Theo ', ' the stage, so his clothes are covered in paint.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'an activity continuing up to now', segments: ['I ', ' for the permit since February.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a repeated recent activity', segments: ['The twins ', ' chess online every evening this week.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'an ongoing activity in the current period', segments: ['Our department ', ' field surveys throughout this quarter.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a repeated recent activity', segments: ['Someone ', ' the storage door several times tonight.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'an activity repeated from a past starting point', segments: ['We ', ' the lakeside trail every Sunday since April.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a recent ongoing cause with present evidence', segments: ['The cat ', ' at the sofa, which explains the loose fabric.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'an effort continuing through the current period', segments: ['Community groups ', ' funds for the playground all year.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a change continuing from the recent past', segments: ['The tide ', ' steadily since early morning.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'present-perfect-continuous', form: 'present-perfect-continuous', focus: 'Present perfect continuous', rule: 'Use the present perfect continuous for duration, repetition or recent activity extending to now or explaining present evidence.', micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })
+export const ENGLISH_PRESENT_PERFECT_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'present-perfect-continuous', form: 'present-perfect-continuous', focus: 'Present perfect continuous', rule: 'Use the present perfect continuous for duration, repetition or recent activity extending to now or explaining present evidence.', choices, micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })

@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Il cuoco sta lavando le verdure', 'le sta tagliando', 'le sta mettendo in pentola'], target: 0 },
-  { events: ['Noi stiamo aprendo le scatole', 'stiamo montando i ripiani', 'stiamo sistemando i libri'], target: 1 },
-  { events: ['Marta sta leggendo la richiesta', 'sta cercando i dati', 'sta scrivendo la risposta'], target: 2 },
-  { events: ['Gli operai stanno bloccando la strada', 'stanno riparando il tubo', 'stanno riaprendo il passaggio'], target: 0 },
-  { events: ['Io sto scegliendo le fotografie', 'le sto ordinando', 'le sto caricando sul sito'], target: 1 },
-  { events: ['Il medico sta visitando Paolo', 'sta compilando il referto', 'sta spiegando la terapia'], target: 2 },
-  { events: ['Voi state raccogliendo i moduli', 'state controllando le firme', 'state archiviando i documenti'], target: 0 },
-  { events: ['La squadra sta entrando in campo', 'sta salutando il pubblico', 'sta iniziando il riscaldamento'], target: 1 },
-  { events: ['Sara sta pesando gli ingredienti', 'li sta mescolando', 'sta versando l’impasto nello stampo'], target: 2 },
-  { events: ['I tecnici stanno spegnendo il server', 'stanno sostituendo il disco', 'stanno riavviando il sistema'], target: 0 },
+  { events: ['Il cuoco sta lavando le verdure', 'le sta tagliando', 'le sta mettendo in pentola'], target: 0, production: { sentence: 'Il cuoco sta lavando le verdure', verb: 'lavare', answers: ['sta lavando'] } },
+  { events: ['Noi stiamo aprendo le scatole', 'Stiamo montando i ripiani', 'stiamo sistemando i libri'], target: 1, production: { sentence: 'Stiamo montando i ripiani', verb: 'montare', answers: ['stiamo montando'] } },
+  { events: ['Marta sta leggendo la richiesta', 'sta cercando i dati', 'Sta scrivendo la risposta'], target: 2, production: { sentence: 'Sta scrivendo la risposta', verb: 'scrivere', answers: ['sta scrivendo'] } },
+  { events: ['Gli operai stanno bloccando la strada', 'stanno riparando il tubo', 'stanno riaprendo il passaggio'], target: 0, production: { sentence: 'Gli operai stanno bloccando la strada', verb: 'bloccare', answers: ['stanno bloccando'] } },
+  { events: ['Io sto scegliendo le fotografie', 'Io sto ordinando le fotografie', 'le sto caricando sul sito'], target: 1, production: { sentence: 'Io sto ordinando le fotografie', verb: 'ordinare', answers: ['sto ordinando'] } },
+  { events: ['Il medico sta visitando Paolo', 'sta compilando il referto', 'Sta spiegando la terapia'], target: 2, production: { sentence: 'Sta spiegando la terapia', verb: 'spiegare', answers: ['sta spiegando'] } },
+  { events: ['Voi state raccogliendo i moduli', 'state controllando le firme', 'state archiviando i documenti'], target: 0, production: { sentence: 'Voi state raccogliendo i moduli', verb: 'raccogliere', answers: ['state raccogliendo'] } },
+  { events: ['La squadra sta entrando in campo', 'Sta salutando il pubblico', 'sta iniziando il riscaldamento'], target: 1, production: { sentence: 'Sta salutando il pubblico', verb: 'salutare', answers: ['sta salutando'] } },
+  { events: ['Sara sta pesando gli ingredienti', 'li sta mescolando', 'Sta versando l’impasto nello stampo'], target: 2, production: { sentence: 'Sta versando l’impasto nello stampo', verb: 'versare', answers: ['sta versando'] } },
+  { events: ['I tecnici stanno spegnendo il server', 'stanno sostituendo il disco', 'stanno riavviando il sistema'], target: 0, production: { sentence: 'I tecnici stanno spegnendo il server', verb: 'spegnere', answers: ['stanno spegnendo'] } },
 ]
 
 export const ITALIAN_PRESENT_PROGRESSIVE_EDITORIAL = createItalianEditorialPack({

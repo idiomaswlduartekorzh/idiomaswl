@@ -7,6 +7,7 @@ import type {
   TimelineChallenge,
 } from './tense-quest-types.ts'
 import type { EnglishFormId } from './english-tense-quest-config.ts'
+import { createSentenceProduction } from './sentence-production.ts'
 
 export type EnglishEditorialMicroSeed = {
   title: string
@@ -14,6 +15,13 @@ export type EnglishEditorialMicroSeed = {
   segments: [string, string]
   verb: string
   answers: [string, ...string[]]
+  distractors: [string, string, string]
+}
+
+export type EnglishEditorialChoiceSeed = {
+  cue: string
+  segments: [string, string]
+  answer: string
   distractors: [string, string, string]
 }
 
@@ -36,9 +44,11 @@ export type EnglishEditorialErrorSeed = {
 export type EnglishEditorialSequenceSeed = {
   events: [string, string, string]
   target: 0 | 1 | 2
+  productionSentence?: string
 }
 
 export type EnglishEditorialFinalSeed = {
+  verb?: string
   before: string
   after: string
   answer: string
@@ -50,6 +60,7 @@ type EnglishEditorialPackInput = {
   form: EnglishFormId
   focus: string
   rule: string
+  choices?: EnglishEditorialChoiceSeed[]
   micro: EnglishEditorialMicroSeed[]
   long: EnglishEditorialGapSeed[]
   errors: EnglishEditorialErrorSeed[]
@@ -63,12 +74,68 @@ function rotate<T>(items: readonly T[], offset: number): T[] {
   return [...items.slice(start), ...items.slice(0, start)]
 }
 
+const TIMELINE_ANSWER_POSITIONS = [1, 0, 2, 0, 2, 1, 2, 1, 0, 1] as const
+const CHOICE_ANSWER_POSITIONS = [1, 0, 3, 0, 2, 1, 3, 2, 0, 1] as const
+const CHOICE_OFFSET_TWO_FORMS = new Set([
+  'present-simple',
+  'present-continuous',
+  'present-perfect',
+  'present-perfect-continuous',
+  'past-simple',
+  'past-continuous',
+  'past-perfect',
+  'past-perfect-continuous',
+  'imperative',
+])
+
+function timelineOffset(slug: string) {
+  return [...slug].reduce((sum, character) => sum + (character.codePointAt(0) ?? 0), 0) % 3
+}
+
+function placeTimelineAnswer(events: readonly [string, string, string], target: 0 | 1 | 2, index: number, slug: string) {
+  const answer = events[target]
+  const distractors = events.filter((_, eventIndex) => eventIndex !== target)
+  const options = [...distractors]
+  const position = (TIMELINE_ANSWER_POSITIONS[index % TIMELINE_ANSWER_POSITIONS.length] + timelineOffset(slug)) % 3
+  options.splice(position, 0, answer)
+  return options
+}
+
+function findSequenceProduction(
+  input: EnglishEditorialPackInput,
+  events: readonly string[],
+  target: 0 | 1 | 2,
+) {
+  const verbCandidates = [
+    ...input.micro.map(({ verb, answers }) => ({ verb, answers })),
+    ...input.long.flatMap(({ entries }) => entries.map(([verb, answers]) => ({ verb, answers }))),
+    ...input.final
+      .filter((seed): seed is EnglishEditorialFinalSeed & { verb: string } => Boolean(seed.verb))
+      .map(({ verb, answer }) => ({ verb, answers: [answer] as [string] })),
+  ]
+  const orderedEvents = [events[target], ...events.filter((_, index) => index !== target)]
+  for (const event of orderedEvents) {
+    const candidate = verbCandidates.find(({ answers }) => answers.some((answer) => (
+      event.toLocaleLowerCase().includes(answer.toLocaleLowerCase())
+    )))
+    if (candidate) return createSentenceProduction(event, candidate.verb, candidate.answers)
+  }
+  return createSentenceProduction(events)
+}
+
 export function createEnglishEditorialPack(input: EnglishEditorialPackInput) {
   const prefix = `en-${input.slug}`
-  const choices: ChoiceChallenge<EnglishFormId>[] = input.micro.map((seed, index) => {
+  const choiceSeeds: EnglishEditorialChoiceSeed[] = input.choices ?? input.final.map((seed) => ({
+    cue: input.focus,
+    segments: [seed.before, seed.after],
+    answer: seed.answer,
+    distractors: seed.distractors,
+  }))
+  const choices: ChoiceChallenge<EnglishFormId>[] = choiceSeeds.map((seed, index) => {
     const options = [...seed.distractors]
-    const balancedPositions = input.choicePositions ?? [0, 1, 2, 3, 1, 2, 0, 1, 2, 3]
-    options.splice(balancedPositions[index % balancedPositions.length], 0, seed.answers[0])
+    const choiceOffset = CHOICE_OFFSET_TWO_FORMS.has(input.slug) ? 2 : 0
+    const balancedPositions = CHOICE_ANSWER_POSITIONS.map((position) => (position + choiceOffset) % 4)
+    options.splice(balancedPositions[index % balancedPositions.length], 0, seed.answer)
     return {
       id: `${prefix}-choice-editorial-${index + 1}`,
       tenses: [input.form],
@@ -76,7 +143,7 @@ export function createEnglishEditorialPack(input: EnglishEditorialPackInput) {
       prompt: `Choose the form that expresses ${seed.cue}.`,
       context: `${seed.segments[0]}___${seed.segments[1]}`,
       options,
-      answer: seed.answers[0],
+      answer: seed.answer,
       explanation: input.rule,
     }
   })
@@ -131,15 +198,16 @@ export function createEnglishEditorialPack(input: EnglishEditorialPackInput) {
       id: `${prefix}-sequence-editorial-${index + 1}`,
       title: `Connected sequence · ${index + 1}`,
       focus: input.focus,
-      context: `${seed.events[0]}. Then ${seed.events[1].charAt(0).toLowerCase()}${seed.events[1].slice(1)}. Finally ${seed.events[2].charAt(0).toLowerCase()}${seed.events[2].slice(1)}.`,
+      context: 'Reconstruct the sequence from preparation, action and result. The ordered narrative is intentionally hidden.',
       slots: [{
         id: `${prefix}-sequence-editorial-${index + 1}-slot`,
         tense: input.form,
         label: `Which event ${positions[seed.target]} the sequence?`,
         hint: 'Every option uses the same target form; recover meaning and order from the narrative.',
         answer,
+        production: findSequenceProduction(input, seed.productionSentence ? [seed.productionSentence, seed.productionSentence, seed.productionSentence] : seed.events, seed.target),
       }],
-      options: rotate(seed.events, index + 1),
+      options: placeTimelineAnswer(seed.events, seed.target, index, input.slug),
       explanation: `“${answer}” is identified by the sequence, not by a unique verb form among the options.`,
     }
   })
@@ -155,6 +223,24 @@ export function createEnglishEditorialPack(input: EnglishEditorialPackInput) {
     candidateCardIds: rotate([1, 2, 3, 4], index).map((candidate) => `${prefix}-final-${index + 1}-card-${candidate}`),
     standalone: { before: seed.before, after: seed.after },
   }))
+  const finalStory: GapChallenge<EnglishFormId> = {
+    id: `${prefix}-final-story`,
+    title: `Final field file · ${input.focus}`,
+    focus: input.focus,
+    instruction: 'Write all ten complete verb forms. Each note supplies its own evidence for time, aspect or function.',
+    segments: input.final.map((seed, index) => `${index === 0 ? 'The first field note reads: ' : ` Note ${index + 1}: `}${seed.before}`)
+      .concat(input.final.at(-1)?.after ?? ''),
+    gaps: input.final.map((seed, index) => ({
+      id: `${prefix}-final-story-gap-${index + 1}`,
+      tense: input.form,
+      verb: seed.verb ?? input.focus,
+      answers: [seed.answer],
+    })),
+    explanation: `${input.rule} Supply only the complete verb phrase requested by each gap.`,
+  }
+  for (let index = 0; index < input.final.length - 1; index += 1) {
+    finalStory.segments[index + 1] = `${input.final[index].after}${finalStory.segments[index + 1]}`
+  }
 
-  return { choices, micro, long, errors, timelines, finalCards, finalGaps }
+  return { choices, micro, long, errors, timelines, finalCards, finalGaps, finalStory }
 }

@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -8,17 +9,37 @@ import {
 } from './portuguese-editorial-builder.ts'
 
 const micro: PortugueseEditorialMicroSeed[] = [
-  { title: 'A carta não enviada', cue: 'um resultado passado que não aconteceu', segments: ['Com seu endereço, eu ', ' a carta ontem, mas não o tinha.'], verb: 'enviar', answers: ['teria enviado'], distractors: ['enviei', 'enviava', 'enviaria'] },
-  { title: 'A chegada impedida', cue: 'uma alternativa irreal no passado', segments: ['Sem o trânsito, eles ', ' cedo, mas ficaram presos na estrada.'], verb: 'chegar', answers: ['teriam chegado'], distractors: ['chegaram', 'chegavam', 'chegariam'] },
-  { title: 'O erro evitável', cue: 'uma consequência contrafactual passada', segments: ['Nós ', ' o erro se tivéssemos revisado os dados.'], verb: 'evitar', answers: ['teríamos evitado'], distractors: ['evitamos', 'evitávamos', 'evitaríamos'] },
-  { title: 'O ônibus perdido', cue: 'um resultado passado contrário aos fatos', segments: ['Se você tivesse saído cedo, ', ' o ônibus, mas chegou depois.'], verb: 'pegar', answers: ['teria pegado'], distractors: ['pegou', 'pegava', 'pegaria'] },
-  { title: 'A trilha interrompida', cue: 'um plano passado impossível', segments: ['Com tempo bom, nós ', ' até o topo, mas a tempestade nos parou.'], verb: 'subir', answers: ['teríamos subido'], distractors: ['subimos', 'subíamos', 'subiríamos'] },
-  { title: 'O relatório incompleto', cue: 'um resultado não concluído no passado', segments: ['Com os dados, ela ', ' o relatório ontem, mas ninguém os enviou.'], verb: 'terminar', answers: ['teria terminado'], distractors: ['terminou', 'terminava', 'terminaria'] },
-  { title: 'A saída evitada', cue: 'uma consequência passada que não ocorreu', segments: ['Sem o alarme, as crianças ', ' sozinhas, mas a porteira as segurou.'], verb: 'sair', answers: ['teriam saído'], distractors: ['saíram', 'saíam', 'sairiam'] },
-  { title: 'A revisão que faltou', cue: 'um reproche sobre um passado não realizado', segments: ['Com uma revisão, vocês ', ' a falha, mas o texto foi enviado sem controle.'], verb: 'corrigir', answers: ['teriam corrigido'], distractors: ['corrigiram', 'corrigiam', 'corrigiriam'] },
-  { title: 'A reserva inexistente', cue: 'um resultado passado condicionado', segments: ['Se eu soubesse da lotação, ', ' uma mesa, mas cheguei sem reserva.'], verb: 'reservar', answers: ['teria reservado'], distractors: ['reservei', 'reservava', 'reservaria'] },
-  { title: 'A compra recusada', cue: 'uma consequência passada impossível', segments: ['Com crédito aprovado, eles ', ' a casa, mas o banco recusou o pedido.'], verb: 'comprar', answers: ['teriam comprado'], distractors: ['compraram', 'compravam', 'comprariam'] },
+  { title: 'A carta não enviada', cue: 'um resultado passado que não aconteceu', segments: ['Com seu endereço, eu ', ' a carta ontem, mas não o tinha.'], verb: 'enviar', answers: ['teria enviado'], distractors: ['tinha enviado', 'enviava', 'enviaria'] },
+  { title: 'A chegada impedida', cue: 'uma alternativa irreal no passado', segments: ['Sem o trânsito, eles ', ' cedo, mas ficaram presos na estrada.'], verb: 'chegar', answers: ['teriam chegado'], distractors: ['tinham chegado', 'chegavam', 'chegariam'] },
+  { title: 'O erro evitável', cue: 'uma consequência contrafactual passada', segments: ['Nós ', ' o erro se tivéssemos revisado os dados.'], verb: 'evitar', answers: ['teríamos evitado'], distractors: ['tínhamos evitado', 'evitávamos', 'evitaríamos'] },
+  { title: 'O ônibus perdido', cue: 'um resultado passado contrário aos fatos', segments: ['Se você tivesse saído cedo, ', ' o ônibus, mas chegou depois.'], verb: 'pegar', answers: ['teria pegado'], distractors: ['tinha pegado', 'pegava', 'pegaria'] },
+  { title: 'A trilha interrompida', cue: 'um plano passado impossível', segments: ['Com tempo bom, nós ', ' até o topo, mas a tempestade nos parou.'], verb: 'subir', answers: ['teríamos subido'], distractors: ['tínhamos subido', 'subíamos', 'subiríamos'] },
+  { title: 'O relatório incompleto', cue: 'um resultado não concluído no passado', segments: ['Com os dados, ela ', ' o relatório ontem, mas ninguém os enviou.'], verb: 'terminar', answers: ['teria terminado'], distractors: ['tinha terminado', 'terminava', 'terminaria'] },
+  { title: 'A saída evitada', cue: 'uma consequência passada que não ocorreu', segments: ['Sem o alarme, as crianças ', ' sozinhas, mas a porteira as segurou.'], verb: 'sair', answers: ['teriam saído'], distractors: ['tinham saído', 'saíam', 'sairiam'] },
+  { title: 'A revisão que faltou', cue: 'um reproche sobre um passado não realizado', segments: ['Com uma revisão, vocês ', ' a falha, mas o texto foi enviado sem controle.'], verb: 'corrigir', answers: ['teriam corrigido'], distractors: ['tinham corrigido', 'corrigiam', 'corrigiriam'] },
+  { title: 'A reserva inexistente', cue: 'um resultado passado condicionado', segments: ['Se eu soubesse da lotação, ', ' uma mesa, mas cheguei sem reserva.'], verb: 'reservar', answers: ['teria reservado'], distractors: ['tinha reservado', 'reservava', 'reservaria'] },
+  { title: 'A compra recusada', cue: 'uma consequência passada impossível', segments: ['Com crédito aprovado, eles ', ' a casa, mas o banco recusou o pedido.'], verb: 'comprar', answers: ['teriam comprado'], distractors: ['tinham comprado', 'compravam', 'comprariam'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Com o endereço correto, eu ', ' o convite na terça, mas o cadastro estava incompleto.'],
+  ['Com uma estrada livre, eles ', ' antes do almoço, mas houve um bloqueio.'],
+  ['Nós ', ' a duplicação se tivéssemos validado a planilha.'],
+  ['Se você tivesse ouvido o despertador, ', ' o primeiro ônibus.'],
+  ['Sem a neblina, nós ', ' até o pico, mas a trilha foi fechada.'],
+  ['Se o setor tivesse enviado os números, ela ', ' o relatório na sexta.'],
+  ['Sem o portão trancado, as crianças ', ' para a calçada.'],
+  ['Com uma segunda leitura, vocês ', ' a inconsistência, mas o arquivo já tinha sido publicado.'],
+  ['Se eu tivesse visto o aviso, ', ' um quarto, mas o hotel lotou.'],
+  ['Com o financiamento liberado, eles ', ' o galpão, mas o banco negou o crédito.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'A viagem impedida', instruction: 'Complete as consequências passadas que não ocorreram.', segments: ['Sem a greve, nós ', ' na sexta. Lia ', ' o trem do meio-dia e os amigos a ', ' na estação, mas nenhum trem circulou.'], entries: [['partir', ['teríamos partido']], ['pegar', ['teria pegado']], ['esperar', ['teriam esperado']]] },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Com o código certo, eu ', after: ' o arquivo ontem.', answer: 'teria aberto', distractors: ['abri', 'abria', 'abriria'] },
-  { before: 'Sem a neblina, os aviões ', after: ' no horário, mas a pista fechou.', answer: 'teriam saído', distractors: ['saíram', 'saíam', 'sairiam'] },
-  { before: 'Se tivéssemos reservado, ', after: ' perto do palco.', answer: 'teríamos jantado', distractors: ['jantamos', 'jantávamos', 'jantaríamos'] },
-  { before: 'Com sua ajuda, ela ', after: ' antes da meia-noite.', answer: 'teria voltado', distractors: ['voltou', 'voltava', 'voltaria'] },
-  { before: 'Sem esse erro, você ', after: ' no concurso.', answer: 'teria passado', distractors: ['passou', 'passava', 'passaria'] },
-  { before: 'Com ingresso válido, vocês ', after: ' na sala, mas o acesso foi negado.', answer: 'teriam entrado', distractors: ['entraram', 'entravam', 'entrariam'] },
-  { before: 'Se o servidor tivesse respondido, nós ', after: ' o pedido ontem.', answer: 'teríamos confirmado', distractors: ['confirmamos', 'confirmávamos', 'confirmaríamos'] },
-  { before: 'Com mais combustível, o barco ', after: ' ao porto naquela noite.', answer: 'teria chegado', distractors: ['chegou', 'chegava', 'chegaria'] },
-  { before: 'Se a loja tivesse aberto, eles ', after: ' o equipamento.', answer: 'teriam comprado', distractors: ['compraram', 'compravam', 'comprariam'] },
-  { before: 'Com a revisão final, eu ', after: ' a falha antes da publicação.', answer: 'teria corrigido', distractors: ['corrigi', 'corrigia', 'corrigiria'] },
+  { verb: 'abrir', before: 'Com o código certo, eu ', after: ' o arquivo ontem.', answer: 'teria aberto', distractors: ['tinha aberto', 'abria', 'abriria'] },
+  { verb: 'sair', before: 'Sem a neblina, os aviões ', after: ' no horário, mas a pista fechou.', answer: 'teriam saído', distractors: ['tinham saído', 'saíam', 'sairiam'] },
+  { verb: 'jantar', before: 'Se tivéssemos reservado, ', after: ' perto do palco.', answer: 'teríamos jantado', distractors: ['tínhamos jantado', 'jantávamos', 'jantaríamos'] },
+  { verb: 'voltar', before: 'Com sua ajuda, ela ', after: ' antes da meia-noite.', answer: 'teria voltado', distractors: ['tinha voltado', 'voltava', 'voltaria'] },
+  { verb: 'passar', before: 'Sem esse erro, você ', after: ' no concurso.', answer: 'teria passado', distractors: ['tinha passado', 'passava', 'passaria'] },
+  { verb: 'entrar', before: 'Com ingresso válido, vocês ', after: ' na sala, mas o acesso foi negado.', answer: 'teriam entrado', distractors: ['tinham entrado', 'entravam', 'entrariam'] },
+  { verb: 'confirmar', before: 'Se o servidor tivesse respondido, nós ', after: ' o pedido ontem.', answer: 'teríamos confirmado', distractors: ['tínhamos confirmado', 'confirmávamos', 'confirmaríamos'] },
+  { verb: 'chegar', before: 'Com mais combustível, o barco ', after: ' ao porto naquela noite.', answer: 'teria chegado', distractors: ['tinha chegado', 'chegava', 'chegaria'] },
+  { verb: 'comprar', before: 'Se a loja tivesse aberto, eles ', after: ' o equipamento.', answer: 'teriam comprado', distractors: ['tinham comprado', 'compravam', 'comprariam'] },
+  { verb: 'corrigir', before: 'Com a revisão final, eu ', after: ' a falha antes da publicação.', answer: 'teria corrigido', distractors: ['tinha corrigido', 'corrigia', 'corrigiria'] },
 ]
 
 export const PORTUGUESE_PAST_CONDITIONAL_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_PAST_CONDITIONAL_EDITORIAL = createPortugueseEditorialPa
   form: 'condicional-passado',
   focus: 'Condicional passado',
   rule: 'Ter no futuro do pretérito + particípio expressa uma consequência passada não realizada e exige que a condição ou o resultado real estejam visíveis.',
+  choices,
   micro,
   long,
   errors,

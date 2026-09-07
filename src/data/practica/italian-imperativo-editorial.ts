@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Apri il documento', 'controlla i dati', 'invia il rapporto'], target: 0 },
-  { events: ['Scegliete la ricetta', 'comprate gli ingredienti', 'preparate la cena'], target: 1 },
-  { events: ['Ritiriamo le chiavi', 'portiamo i mobili', 'sistemiamo la nuova casa'], target: 2 },
-  { events: ['Spenga il server', 'sostituisca il disco', 'riavvii il sistema'], target: 0 },
-  { events: ['Leggete il regolamento', 'compilate il modulo', 'consegnate la domanda'], target: 1 },
-  { events: ['Accolga il gruppo', 'mostri la collezione', 'accompagni tutti all’uscita'], target: 2 },
-  { events: ['Controlla l’indirizzo', 'prendi la metropolitana', 'raggiungi lo studio'], target: 0 },
-  { events: ['Raccogliete le fonti', 'scrivete la relazione', 'presentate i risultati'], target: 1 },
-  { events: ['Monta lo scaffale', 'ordina i libri', 'pulisci la stanza'], target: 2 },
-  { events: ['Facciamo riscaldamento', 'proviamo gli schemi', 'entriamo in campo'], target: 0 },
+  { events: ['Apri il documento con il programma corretto', 'Controlla attentamente tutti i dati', 'Invia subito il rapporto finale'], target: 0, production: { sentence: 'Apri il documento con il programma corretto', verb: 'aprire', answers: ['Apri'] } },
+  { events: ['Scegliete una ricetta adatta agli ospiti', 'Comprate tutti gli ingredienti indicati nella ricetta', 'Preparate la cena prima del loro arrivo'], target: 1, production: { sentence: 'Comprate tutti gli ingredienti indicati nella ricetta', verb: 'comprare', answers: ['Comprate'] } },
+  { events: ['Ritiriamo le chiavi questa mattina', 'Portiamo subito i mobili nelle stanze', 'Sistemiamo insieme la nuova casa prima di sera'], target: 2, production: { sentence: 'Sistemiamo insieme la nuova casa prima di sera', verb: 'sistemare', answers: ['Sistemiamo'] } },
+  { events: ['Spenga il server prima dell’intervento tecnico', 'Sostituisca con cura il disco', 'Riavvii il sistema al termine'], target: 0, production: { sentence: 'Spenga il server prima dell’intervento tecnico', verb: 'spegnere', answers: ['Spenga'] } },
+  { events: ['Leggete attentamente il nuovo regolamento', 'Compilate il modulo con tutti i dati richiesti', 'Consegnate la domanda entro domani'], target: 1, production: { sentence: 'Compilate il modulo con tutti i dati richiesti', verb: 'compilare', answers: ['Compilate'] } },
+  { events: ['Accolga il gruppo davanti all’ingresso', 'Mostri con calma la nuova collezione', 'Accompagni poi tutti i visitatori fino all’uscita principale'], target: 2, production: { sentence: 'Accompagni poi tutti i visitatori fino all’uscita principale', verb: 'accompagnare', answers: ['Accompagni'] } },
+  { events: ['Controlla con attenzione l’indirizzo dello studio', 'Prendi la metropolitana verso il centro', 'Raggiungi lo studio prima delle nove'], target: 0, production: { sentence: 'Controlla con attenzione l’indirizzo dello studio', verb: 'controllare', answers: ['Controlla'] } },
+  { events: ['Raccogliete le fonti più affidabili', 'Scrivete insieme una relazione chiara e completa', 'Presentate i risultati durante la riunione'], target: 1, production: { sentence: 'Scrivete insieme una relazione chiara e completa', verb: 'scrivere', answers: ['Scrivete'] } },
+  { events: ['Monta lo scaffale vicino alla finestra', 'Ordina i libri per argomento', 'Pulisci con cura tutta la stanza prima di uscire'], target: 2, production: { sentence: 'Pulisci con cura tutta la stanza prima di uscire', verb: 'pulire', answers: ['Pulisci'] } },
+  { events: ['Facciamo insieme il riscaldamento prima della partita', 'Proviamo gli schemi più difficili', 'Entriamo in campo con fiducia'], target: 0, production: { sentence: 'Facciamo insieme il riscaldamento prima della partita', verb: 'fare', answers: ['Facciamo'] } },
 ]
 
 export const ITALIAN_IMPERATIVO_EDITORIAL = createItalianEditorialPack({

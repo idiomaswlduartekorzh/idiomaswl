@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: PortugueseEditorialMicroSeed[] = [
   { title: 'O cachorro e o carteiro', cue: 'um comportamento repetido no passado', segments: ['Sempre que o carteiro chegava, o cachorro ', '.'], verb: 'latir', answers: ['latia'], distractors: ['latiu', 'tinha latido', 'latirá'] },
   { title: 'O palco antes do show', cue: 'um cenário visual passado', segments: ['Antes da abertura das portas, luzes azuis ', ' o palco.'], verb: 'iluminar', answers: ['iluminavam'], distractors: ['iluminaram', 'tinham iluminado', 'iluminarão'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Durante a adolescência, eu ', ' os invernos na fazenda.'],
+  ['Naquela madrugada, a neve ', ' devagar sobre a praça.'],
+  ['Quando a luz acabou, nós ', ' no laboratório do térreo.'],
+  ['A sala da casa antiga ', ' para uma rua movimentada.'],
+  ['Depois dos ensaios, elas ', ' chá na padaria da esquina.'],
+  ['Antes da reforma, você ', ' que o museu abria aos domingos.'],
+  ['Durante o teste, o gerador ', ' sem vibração.'],
+  ['Nos anos da faculdade, vocês ', ' o ônibus das sete.'],
+  ['Toda vez que o portão abria, o cachorro ', ' para o jardim.'],
+  ['Durante a cerimônia, velas brancas ', ' o corredor.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'Os verões no interior', instruction: 'Complete esta lembrança coerente no imperfeito.', segments: ['Todo verão, nós ', ' na casa da nossa tia. De manhã, ela ', ' pão na feira e nós ', ' perto do rio até o almoço.'], entries: [['ficar', ['ficávamos']], ['comprar', ['comprava']], ['brincar', ['brincávamos']]] },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Quando morávamos em Belém, eu ', after: ' ao trabalho a pé.', answer: 'ia', distractors: ['fui', 'tinha ido', 'irei'] },
-  { before: 'Às dez da noite, a neve ainda ', after: ' na estrada.', answer: 'caía', distractors: ['caiu', 'tinha caído', 'cairá'] },
-  { before: 'Toda sexta-feira, vocês ', after: ' o balanço juntos.', answer: 'revisavam', distractors: ['revisaram', 'tinham revisado', 'revisarão'] },
-  { before: 'A casa antiga ', after: ' três chaminés e um sótão grande.', answer: 'tinha', distractors: ['teve', 'tinha tido', 'terá'] },
-  { before: 'Enquanto a médica falava, os alunos ', after: ' anotações.', answer: 'faziam', distractors: ['fizeram', 'tinham feito', 'farão'] },
-  { before: 'Antes da reforma, esta porta ', after: ' muito mal.', answer: 'fechava', distractors: ['fechou', 'tinha fechado', 'fechará'] },
-  { before: 'Naquela época, nós ainda não ', after: ' a resposta.', answer: 'sabíamos', distractors: ['soubemos', 'tínhamos sabido', 'saberemos'] },
-  { before: 'Todo inverno, o lago ', after: ' por várias semanas.', answer: 'congelava', distractors: ['congelou', 'tinha congelado', 'congelará'] },
-  { before: 'No momento do anúncio, tu ', after: ' perto da saída.', answer: 'esperavas', distractors: ['esperaste', 'tinhas esperado', 'esperarás'] },
-  { before: 'À noite, as luzes da plataforma ', after: ' um tom alaranjado.', answer: 'espalhavam', distractors: ['espalharam', 'tinham espalhado', 'espalharão'] },
+  { verb: 'ir', before: 'Quando morávamos em Belém, eu ', after: ' ao trabalho a pé.', answer: 'ia', distractors: ['fui', 'tinha ido', 'irei'] },
+  { verb: 'cair', before: 'Às dez da noite, a neve ainda ', after: ' na estrada.', answer: 'caía', distractors: ['caiu', 'tinha caído', 'cairá'] },
+  { verb: 'revisar', before: 'Toda sexta-feira, vocês ', after: ' o balanço juntos.', answer: 'revisavam', distractors: ['revisaram', 'tinham revisado', 'revisarão'] },
+  { verb: 'ter', before: 'A casa antiga ', after: ' três chaminés e um sótão grande.', answer: 'tinha', distractors: ['teve', 'tinha tido', 'terá'] },
+  { verb: 'fazer', before: 'Enquanto a médica falava, os alunos ', after: ' anotações.', answer: 'faziam', distractors: ['fizeram', 'tinham feito', 'farão'] },
+  { verb: 'fechar', before: 'Antes da reforma, esta porta ', after: ' muito mal.', answer: 'fechava', distractors: ['fechou', 'tinha fechado', 'fechará'] },
+  { verb: 'saber', before: 'Naquela época, nós ainda não ', after: ' a resposta.', answer: 'sabíamos', distractors: ['soubemos', 'tínhamos sabido', 'saberemos'] },
+  { verb: 'congelar', before: 'Todo inverno, o lago ', after: ' por várias semanas.', answer: 'congelava', distractors: ['congelou', 'tinha congelado', 'congelará'] },
+  { verb: 'esperar', before: 'No momento do anúncio, tu ', after: ' perto da saída.', answer: 'esperavas', distractors: ['esperaste', 'tinhas esperado', 'esperarás'] },
+  { verb: 'espalhar', before: 'À noite, as luzes da plataforma ', after: ' um tom alaranjado.', answer: 'espalhavam', distractors: ['espalharam', 'tinham espalhado', 'espalharão'] },
 ]
 
 export const PORTUGUESE_PRETERITE_IMPERFECT_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_PRETERITE_IMPERFECT_EDITORIAL = createPortugueseEditoria
   form: 'preterito-imperfeito',
   focus: 'Pretérito imperfeito',
   rule: 'O pretérito imperfeito apresenta hábito, estado, descrição ou ação em curso no passado.',
+  choices,
   micro,
   long,
   errors,

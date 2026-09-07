@@ -32,25 +32,26 @@ export const KOREAN_EDITORIAL_PACKS = [
 ]
 
 export const KOREAN_STRUCTURE_QUEST: TenseQuestConfig<KoreanFormId> = {
-  id:'korean-structure-quest', storageKey:'wl-korean-structure-quest-v3', forms:KOREAN_FORMS,
+  id:'korean-structure-quest', storageKey:'wl-korean-structure-quest-v4', forms:KOREAN_FORMS,
   presets:[
     { label:'시제와 높임', ids:KOREAN_FORMS.filter((form) => form.group === '시제와 높임').map((form) => form.id) },
     { label:'상', ids:KOREAN_FORMS.filter((form) => form.group === '상').map((form) => form.id) },
-    { label:'조건·의도', ids:KOREAN_FORMS.filter((form) => ['조건','의도'].includes(form.group)).map((form) => form.id) },
+    { label:'미래·조건·의도·요청', ids:KOREAN_FORMS.filter((form) => ['미래 표현','조건','의도','상대방 행동'].includes(form.group)).map((form) => form.id) },
   ],
   levels:[
     { number:'01', title:'문맥으로 고르기', short:'형태 구별', description:'시간·상·높임이 하나로 결정되는 문맥에서 고릅니다.' },
     { number:'02', title:'짧은 장면', short:'전체 표현 쓰기', description:'동사뿐 아니라 필요한 문법 구성을 끝까지 씁니다.' },
     { number:'03', title:'연결된 장면', short:'세 번 판단하기', description:'하나의 자연스러운 장면에서 세 표현을 완성합니다.' },
     { number:'04', title:'표현 수리', short:'오류 고치기', description:'시제·상·높임을 깨뜨리는 표현을 찾아 완전히 고칩니다.' },
-    { number:'05', title:'의미의 순서', short:'흐름 복원', description:'형태가 아니라 사건과 의미의 흐름으로 순서를 판단합니다.' },
-    { number:'06', title:'최종 도전', short:'독립 문맥 판단', description:'같은 동사의 네 표현 중 독립된 열 장면에 맞는 답을 고릅니다.' },
+    { number:'05', title:'문장 만들기', short:'문장 완성하기', description:'주어진 요소를 올바른 순서로 배열하여 문장 전체를 씁니다.' },
+    { number:'06', title:'최종 기록', short:'스스로 쓰기', description:'긴 기록의 열 곳에 완전한 동사 표현을 씁니다.' },
   ],
   choiceChallenges:KOREAN_EDITORIAL_PACKS.flatMap((pack) => pack.choices),
   microStories:KOREAN_EDITORIAL_PACKS.flatMap((pack) => pack.micro),
   longStories:KOREAN_EDITORIAL_PACKS.flatMap((pack) => pack.long),
   errorChallenges:KOREAN_EDITORIAL_PACKS.flatMap((pack) => pack.errors),
   timelineChallenges:KOREAN_EDITORIAL_PACKS.flatMap((pack) => pack.timelines),
+  errorIdentificationMode:'write',
   finalChallenges:Array.from({ length:10 }, (_, index) => {
     const gaps = KOREAN_EDITORIAL_PACKS.map((pack) => pack.finalGaps[index])
     const candidateIds = new Set(gaps.flatMap((gap) => gap.candidateCardIds ?? []))
@@ -59,6 +60,7 @@ export const KOREAN_STRUCTURE_QUEST: TenseQuestConfig<KoreanFormId> = {
       cards:KOREAN_EDITORIAL_PACKS.flatMap((pack) => pack.finalCards.filter((card) => candidateIds.has(card.id))),
       explanation:'각 장면만으로 시제, 높임, 진행, 결과 상태, 경험, 조건, 의도, 요청을 판단할 수 있습니다.' }
   }),
+  finalStories:KOREAN_EDITORIAL_PACKS.map((pack)=>pack.finalStory),
   copy:{
     languageName:'Coreano', languageCode:'ko', eyebrow:'Quiz de tiempo, aspecto y registro · A2–B1', title:'시간과 높임말 실험실',
     lead:'Practica diez contrastes coreanos con diez decisiones reales por nivel y expresiones completas.',

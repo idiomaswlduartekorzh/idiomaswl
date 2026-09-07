@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Ogni mattina apro il laboratorio', 'controllo gli strumenti', 'registro la temperatura'], target: 0 },
-  { events: ['Marta sceglie una ricetta', 'compra gli ingredienti', 'prepara la cena'], target: 1 },
-  { events: ['Il tecnico riceve la richiesta', 'verifica il collegamento', 'invia la soluzione'], target: 2 },
-  { events: ['Noi leggiamo le istruzioni', 'montiamo lo scaffale', 'riponiamo i libri'], target: 0 },
-  { events: ['Paolo prende il numero', 'aspetta il suo turno', 'entra nello studio'], target: 1 },
-  { events: ['Le atlete si riscaldano', 'corrono cinque chilometri', 'fanno stretching'], target: 2 },
-  { events: ['Tu accendi il computer', 'apri il programma', 'salvi il documento'], target: 0 },
-  { events: ['La guida raduna il gruppo', 'mostra la sala romana', 'accompagna tutti all’uscita'], target: 1 },
-  { events: ['I volontari dividono i materiali', 'preparano i pacchi', 'li consegnano alle famiglie'], target: 2 },
-  { events: ['Io controllo l’indirizzo', 'prendo la metropolitana', 'raggiungo l’appuntamento'], target: 0 },
+  { events: ['Ogni mattina apro il laboratorio', 'controllo gli strumenti', 'registro la temperatura'], target: 0, production: { sentence: 'Ogni mattina apro il laboratorio', verb: 'aprire', answers: ['apro'] } },
+  { events: ['Marta sceglie una ricetta', 'Compra gli ingredienti', 'prepara la cena'], target: 1, production: { sentence: 'Compra gli ingredienti', verb: 'comprare', answers: ['compra'] } },
+  { events: ['Il tecnico riceve la richiesta', 'verifica il collegamento', 'Invia la soluzione'], target: 2, production: { sentence: 'Invia la soluzione', verb: 'inviare', answers: ['invia'] } },
+  { events: ['Noi leggiamo le istruzioni', 'montiamo lo scaffale', 'riponiamo i libri'], target: 0, production: { sentence: 'Noi leggiamo le istruzioni', verb: 'leggere', answers: ['leggiamo'] } },
+  { events: ['Paolo prende il numero', 'Aspetta il suo turno', 'entra nello studio'], target: 1, production: { sentence: 'Aspetta il suo turno', verb: 'aspettare', answers: ['aspetta'] } },
+  { events: ['Le atlete si riscaldano', 'corrono cinque chilometri', 'Le atlete fanno stretching insieme'], target: 2, production: { sentence: 'Le atlete fanno stretching insieme', verb: 'fare', answers: ['fanno'] } },
+  { events: ['Tu accendi il computer', 'apri il programma', 'salvi il documento'], target: 0, production: { sentence: 'Tu accendi il computer', verb: 'accendere', answers: ['accendi'] } },
+  { events: ['La guida raduna il gruppo', 'Mostra la sala romana', 'accompagna tutti all’uscita'], target: 1, production: { sentence: 'Mostra la sala romana', verb: 'mostrare', answers: ['mostra'] } },
+  { events: ['I volontari dividono i materiali', 'preparano i pacchi', 'I volontari consegnano i pacchi alle famiglie'], target: 2, production: { sentence: 'I volontari consegnano i pacchi alle famiglie', verb: 'consegnare', answers: ['consegnano'] } },
+  { events: ['Io controllo l’indirizzo', 'prendo la metropolitana', 'raggiungo l’appuntamento'], target: 0, production: { sentence: 'Io controllo l’indirizzo', verb: 'controllare', answers: ['controllo'] } },
 ]
 
 export const ITALIAN_PRESENTE_EDITORIAL = createItalianEditorialPack({

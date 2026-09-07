@@ -111,24 +111,24 @@ distintas. Como mínimo declara:
 - variantes aceptadas solo si son normativas para el mismo significado y registro;
 - relatos coherentes escritos como unidades editoriales para el nivel 3;
 - textos coherentes con un error real para el nivel 4;
-- decisiones de orden o referencia temporal para el nivel 5;
-- cuatro candidatos del mismo lema para cada decisión del nivel 6.
-- diez escenas finales autónomas por forma en bancos intensivos, sin reutilizar literalmente el
+- diez bancos desordenados de elementos por forma para producir la frase completa en el nivel 5;
+- todos los elementos necesarios una sola vez y respuesta que incluya toda la oración en el nivel 5;
+- un relato final extenso con diez respuestas escritas por forma, sin reutilizar literalmente el
   contexto del nivel 1.
 
 La factoría deriva por objetivo:
 
 | Nivel | Mecánica | Cobertura mínima |
 |---|---|---:|
-| 1 | Opción múltiple contextual | 3 ítems |
-| 2 | Microtextos con conjugación | 3 ítems |
-| 3 | Recuperación acumulativa | 2 bloques |
-| 4 | Seleccionar error y corregir | 2 retos |
-| 5 | Clasificar función en mapa | 3 ranuras |
-| 6 | Reconstrucción con banco | 1 aparición |
+| 1 | Opción múltiple contextual | 10 ítems |
+| 2 | Microtextos con conjugación | 10 ítems |
+| 3 | Recuperación acumulativa | 10 relatos |
+| 4 | Identificar el error sin resaltarlo y corregir | 10 retos |
+| 5 | Reordenar elementos y producir la oración completa | 10 ítems |
+| 6 | Producción escrita en un relato extenso | 10 huecos |
 
-El alemán reemplaza las mecánicas genéricas de los niveles 4–6 mediante los campos opcionales
-del mismo contrato. Su especificación ejecutable y el proceso para añadir formas están en
+El alemán reemplaza la mecánica genérica del nivel 5 con clasificación de verbos separables e
+inseparables y reconstrucción de la oración completa. Su especificación ejecutable y el proceso para añadir formas están en
 [`quiz-tiempos-aleman-blueprint.md`](quiz-tiempos-aleman-blueprint.md).
 
 El nivel 3 no concatena oraciones semilla. Si el contenido es un relato, sus oraciones comparten

@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Migration by Friday', cue: 'completion before Friday', segments: ['By Friday, we ', ' the migration.'], verb: 'finish', answers: ['will have finished'], distractors: ['will finish', 'finish', 'have finished'] },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'By next Tuesday, the jury ', after: ' every submission.', answer: 'will have reviewed', distractors: ['will review', 'reviews', 'will be reviewing'] },
-  { before: 'Before you reach the station, the express train ', after: '.', answer: 'will have departed', distractors: ['will depart', 'departs', 'will be departing'] },
-  { before: 'By the end of June, we ', after: ' the entire roof.', answer: 'will have replaced', distractors: ['will replace', 'replace', 'will be replacing'] },
-  { before: 'When the audit begins, Maya ', after: ' all the invoices.', answer: 'will have organized', distractors: ['will organize', 'organizes', 'will be organizing'] },
-  { before: 'By sunset, the rescue team ', after: ' the northern trail.', answer: 'will have searched', distractors: ['will search', 'searches', 'will be searching'] },
-  { before: 'By Friday, the supplier ', after: ' the missing parts.', answer: 'will not have delivered', distractors: ['will not deliver', 'does not deliver', 'will not be delivering'] },
-  { before: 'Before the doors open, staff ', after: ' every seat.', answer: 'will have numbered', distractors: ['will number', 'number', 'will be numbering'] },
-  { before: 'At the end of the course, you ', after: ' ten recorded interviews.', answer: 'will have completed', distractors: ['will complete', 'complete', 'will be completing'] },
-  { before: 'By tomorrow morning, the snow ', after: ' from the lower road.', answer: 'will have melted', distractors: ['will melt', 'melts', 'will be melting'] },
-  { before: 'When the guests sit down, we ', after: ' every dish.', answer: 'will have served', distractors: ['will serve', 'serve', 'will be serving'] },
+  { verb: 'review', before: 'By next Tuesday, the jury ', after: ' every submission.', answer: 'will have reviewed', distractors: ['will review', 'reviews', 'will be reviewing'] },
+  { verb: 'depart', before: 'Before you reach the station, the express train ', after: '.', answer: 'will have departed', distractors: ['will depart', 'departs', 'will be departing'] },
+  { verb: 'replace', before: 'By the end of June, we ', after: ' the entire roof.', answer: 'will have replaced', distractors: ['will replace', 'replace', 'will be replacing'] },
+  { verb: 'organize', before: 'When the audit begins, Maya ', after: ' all the invoices.', answer: 'will have organized', distractors: ['will organize', 'organizes', 'will be organizing'] },
+  { verb: 'search', before: 'By sunset, the rescue team ', after: ' the northern trail.', answer: 'will have searched', distractors: ['will search', 'searches', 'will be searching'] },
+  { verb: 'deliver', before: 'By Friday, the supplier ', after: ' the missing parts.', answer: 'will not have delivered', distractors: ['will not deliver', 'does not deliver', 'will not be delivering'] },
+  { verb: 'number', before: 'Before the doors open, staff ', after: ' every seat.', answer: 'will have numbered', distractors: ['will number', 'number', 'will be numbering'] },
+  { verb: 'complete', before: 'At the end of the course, you ', after: ' ten recorded interviews.', answer: 'will have completed', distractors: ['will complete', 'complete', 'will be completing'] },
+  { verb: 'melt', before: 'By tomorrow morning, the snow ', after: ' from the lower road.', answer: 'will have melted', distractors: ['will melt', 'melts', 'will be melting'] },
+  { verb: 'serve', before: 'When the guests sit down, we ', after: ' every dish.', answer: 'will have served', distractors: ['will serve', 'serve', 'will be serving'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'completion before a future deadline', segments: ['By next Thursday, the panel ', ' every application.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'completion before another future event', segments: ['Before we reach the platform, the night train ', '.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'completion by a future endpoint', segments: ['By the middle of August, they ', ' the damaged pipeline.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'completion before a later action', segments: ['When inspection starts, Hana ', ' all the permits.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'completion by a stated future time', segments: ['By nightfall, the patrol ', ' the southern sector.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a projected incomplete result', segments: ['By Wednesday, the vendor ', ' the replacement screens.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'completion before opening', segments: ['Before visitors enter, staff ', ' every locker.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'an accumulated result by a future endpoint', segments: ['At graduation, you ', ' twelve supervised projects.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a completed change before a future time', segments: ['By early tomorrow, the ice ', ' from the upper path.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'completion before another event', segments: ['When the audience takes its seats, we ', ' every welcome drink.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_FUTURE_PERFECT_EDITORIAL = createEnglishEditorialPack({ slug: 'future-perfect', form: 'future-perfect', focus: 'Future perfect', rule: 'Use the future perfect for an action completed before an explicit future deadline or event.', micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 2, 3, 0, 1, 2, 3] })
+export const ENGLISH_FUTURE_PERFECT_EDITORIAL = createEnglishEditorialPack({ slug: 'future-perfect', form: 'future-perfect', focus: 'Future perfect', rule: 'Use the future perfect for an action completed before an explicit future deadline or event.', choices, micro, long, errors, sequences, final, choicePositions: [0, 1, 2, 3, 2, 3, 0, 1, 2, 3] })

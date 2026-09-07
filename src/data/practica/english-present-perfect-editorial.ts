@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Museum experience', cue: 'life experience with no finished time', segments: ['I ', ' that museum three times.'], verb: 'visit', answers: ['have visited'], distractors: ['visited', 'am visiting', 'had visited'] },
@@ -43,7 +43,7 @@ const sequences: EnglishEditorialSequenceSeed[] = [
   { events: ['The curator has inspected the room', 'Assistants have checked the labels', 'The museum has opened the doors'], target: 0 },
   { events: ['The team has built two prototypes', 'We have tested them', 'The director has reviewed the results'], target: 1 },
   { events: ['Leo has lost his backpack', 'He has searched the bus', 'A driver has found it'], target: 2 },
-  { events: ['Cafés have opened', 'The council has widened the sidewalk', 'Families have moved in'], target: 0 },
+  { events: ['Cafés have opened near the station', 'The council has widened the sidewalk', 'Families have moved in'], target: 0 },
   { events: ['I have answered the requests', 'Marta has solved the passwords', 'We have closed the urgent tickets'], target: 1 },
   { events: ['Nina has crossed Canada', 'She has visited both coasts', 'She has made friends there'], target: 2 },
   { events: ['Workers have repaired the roof', 'A specialist has restored the clock', 'The mayor has reopened the hall'], target: 0 },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'The laboratory ', after: ' the water samples, so the results are available now.', answer: 'has analyzed', distractors: ['analyzed', 'is analyzing', 'had analyzed'] },
-  { before: 'I ', after: ' three of her novels so far.', answer: 'have read', distractors: ['read yesterday', 'am reading', 'had read'] },
-  { before: 'The courier ', after: ' the parcel; it is on the reception desk.', answer: 'has delivered', distractors: ['delivered', 'is delivering', 'had delivered'] },
-  { before: 'We ', after: ' no power cuts this month.', answer: 'have had', distractors: ['had', 'are having', 'had had'] },
-  { before: 'Mila ', after: ' in a kayak before.', answer: 'has never traveled', distractors: ['never traveled', 'is never traveling', 'had never traveled'] },
-  { before: 'The judges ', after: ' all twelve entries, so voting can begin.', answer: 'have reviewed', distractors: ['reviewed', 'are reviewing', 'had reviewed'] },
-  { before: 'Our town ', after: ' two new cycle routes since January.', answer: 'has added', distractors: ['added', 'is adding', 'had added'] },
-  { before: 'You ', after: ' remarkable progress this term.', answer: 'have made', distractors: ['made', 'are making', 'had made'] },
-  { before: 'The snow ', after: ', and the mountain road is clear again.', answer: 'has melted', distractors: ['melted', 'is melting', 'had melted'] },
-  { before: 'I ', after: ' the support desk twice today.', answer: 'have contacted', distractors: ['contacted yesterday', 'am contacting', 'had contacted'] },
+  { verb: 'analyze', before: 'The laboratory ', after: ' the water samples, so the results are available now.', answer: 'has analyzed', distractors: ['analyzed', 'is analyzing', 'had analyzed'] },
+  { verb: 'read', before: 'I ', after: ' three of her novels so far.', answer: 'have read', distractors: ['read', 'am reading', 'had read'] },
+  { verb: 'deliver', before: 'The courier ', after: ' the parcel; it is on the reception desk.', answer: 'has delivered', distractors: ['delivered', 'is delivering', 'had delivered'] },
+  { verb: 'have', before: 'We ', after: ' no power cuts this month.', answer: 'have had', distractors: ['had', 'are having', 'had had'] },
+  { verb: 'travel', before: 'Mila ', after: ' by kayak before.', answer: 'has never traveled', distractors: ['never traveled', 'is never traveling', 'had never traveled'] },
+  { verb: 'review', before: 'The judges ', after: ' all twelve entries, so voting can begin.', answer: 'have reviewed', distractors: ['reviewed', 'are reviewing', 'had reviewed'] },
+  { verb: 'add', before: 'Our town ', after: ' two new cycle routes since January.', answer: 'has added', distractors: ['added', 'is adding', 'had added'] },
+  { verb: 'make', before: 'You ', after: ' remarkable progress this term.', answer: 'have made', distractors: ['made', 'are making', 'had made'] },
+  { verb: 'melt', before: 'The snow ', after: ', and the mountain road is clear again.', answer: 'has melted', distractors: ['melted', 'is melting', 'had melted'] },
+  { verb: 'contact', before: 'I ', after: ' the support desk twice today.', answer: 'have contacted', distractors: ['contacted', 'am contacting', 'had contacted'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a completed action with a present result', segments: ['The clinic ', ' the blood samples, so the report is ready.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'an unfinished time period', segments: ['I ', ' four chapters so far.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a completed action with present evidence', segments: ['The driver ', ' the equipment; it is beside the stage.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'an experience within the current period', segments: ['We ', ' no internet outages this week.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'life experience up to now', segments: ['Sofia ', ' alone before.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'completion with a present consequence', segments: ['The committee ', ' all nine proposals, so deliberation can start.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'change since a past starting point', segments: ['Our district ', ' three pedestrian zones since March.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'an achievement within an unfinished period', segments: ['You ', ' excellent progress this semester.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a completed change with a present result', segments: ['The frost ', ', and the garden path is safe again.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'an action repeated in an unfinished period', segments: ['I ', ' the insurance office three times today.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_PRESENT_PERFECT_EDITORIAL = createEnglishEditorialPack({ slug: 'present-perfect', form: 'present-perfect', focus: 'Present perfect', rule: 'Use the present perfect for experience, change, unfinished time and past actions whose result matters now.', micro, long, errors, sequences, final })
+export const ENGLISH_PRESENT_PERFECT_EDITORIAL = createEnglishEditorialPack({ slug: 'present-perfect', form: 'present-perfect', focus: 'Present perfect', rule: 'Use the present perfect for experience, change, unfinished time and past actions whose result matters now.', choices, micro, long, errors, sequences, final })

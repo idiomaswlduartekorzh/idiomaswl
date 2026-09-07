@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: PortugueseEditorialMicroSeed[] = [
   { title: 'As inscrições antes de segunda', cue: 'um processo encerrado antes de uma data futura', segments: ['Antes de segunda-feira, nós ', ' todas as inscrições.'], verb: 'encerrar', answers: ['teremos encerrado'], distractors: ['encerraremos', 'tínhamos encerrado', 'teríamos encerrado'] },
   { title: 'Os convidados antes da volta', cue: 'uma partida concluída antes de um futuro', segments: ['Quando voltarmos, nossos convidados já ', '.'], verb: 'ir embora', answers: ['terão ido embora'], distractors: ['irão embora', 'tinham ido embora', 'teriam ido embora'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Antes da apresentação de segunda, nós ', ' todos os gráficos.'],
+  ['Quando o porteiro fechar o edifício, Ana já ', '.'],
+  ['Antes da manutenção noturna, eles ', ' cada banco de dados.'],
+  ['Até o dia da prova final, você ', ' os oito módulos.'],
+  ['Quando o sol se puser, as caminhantes ', ' ao acampamento.'],
+  ['Antes da entrevista de amanhã, eu ', ' o regulamento completo.'],
+  ['Até a abertura do parque, a cidade ', ' a passarela histórica.'],
+  ['Quando o congresso começar, o avião ', ' em Recife.'],
+  ['Até o final do expediente, nós ', ' o período de inscrições.'],
+  ['Quando a equipe de limpeza chegar, nossos convidados já ', '.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'Até a abertura de sexta', instruction: 'Complete as tarefas concluídas antes da abertura futura.', segments: ['Até sexta de manhã, a equipe ', ' as vitrines. A gerente ', ' os preços e os técnicos ', ' a nova iluminação.'], entries: [['instalar', ['terá instalado']], ['conferir', ['terá conferido']], ['testar', ['terão testado']]] },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Até amanhã à noite, eu ', after: ' todos os formulários.', answer: 'terei preenchido', distractors: ['preencherei', 'tinha preenchido', 'teria preenchido'] },
-  { before: 'Quando você abrir a sala, as técnicas ', after: ' a instalação.', answer: 'terão terminado', distractors: ['terminarão', 'tinham terminado', 'teriam terminado'] },
-  { before: 'Até o fim do mês, nós ', after: ' toda a quantia.', answer: 'teremos pago', distractors: ['pagaremos', 'tínhamos pago', 'teríamos pago'] },
-  { before: 'Antes da próxima revisão, o motor ', after: ' mil horas.', answer: 'terá funcionado', distractors: ['funcionará', 'tinha funcionado', 'teria funcionado'] },
-  { before: 'Quando vocês chegarem ao abrigo, Lia já ', after: '.', answer: 'terá chegado', distractors: ['chegará', 'tinha chegado', 'teria chegado'] },
-  { before: 'Até 2030, a cidade ', after: ' todas essas linhas.', answer: 'terá ampliado', distractors: ['ampliará', 'tinha ampliado', 'teria ampliado'] },
-  { before: 'Antes do discurso, eles ', after: ' o texto duas vezes.', answer: 'terão relido', distractors: ['relerão', 'tinham relido', 'teriam relido'] },
-  { before: 'Às oito, você ', after: ' os últimos convidados.', answer: 'terá recebido', distractors: ['receberá', 'tinha recebido', 'teria recebido'] },
-  { before: 'Quando o sol nascer, os barcos ', after: ' o porto.', answer: 'terão deixado', distractors: ['deixarão', 'tinham deixado', 'teriam deixado'] },
-  { before: 'Até a premiação, o júri ', after: ' cada projeto.', answer: 'terá avaliado', distractors: ['avaliará', 'tinha avaliado', 'teria avaliado'] },
+  { verb: 'preencher', before: 'Até amanhã à noite, eu ', after: ' todos os formulários.', answer: 'terei preenchido', distractors: ['preencherei', 'tinha preenchido', 'teria preenchido'] },
+  { verb: 'terminar', before: 'Quando você abrir a sala, as técnicas ', after: ' a instalação.', answer: 'terão terminado', distractors: ['terminarão', 'tinham terminado', 'teriam terminado'] },
+  { verb: 'pagar', before: 'Até o fim do mês, nós ', after: ' toda a quantia.', answer: 'teremos pago', distractors: ['pagaremos', 'tínhamos pago', 'teríamos pago'] },
+  { verb: 'funcionar', before: 'Antes da próxima revisão, o motor ', after: ' mil horas.', answer: 'terá funcionado', distractors: ['funcionará', 'tinha funcionado', 'teria funcionado'] },
+  { verb: 'chegar', before: 'Quando vocês chegarem ao abrigo, Lia já ', after: '.', answer: 'terá chegado', distractors: ['chegará', 'tinha chegado', 'teria chegado'] },
+  { verb: 'ampliar', before: 'Até 2030, a cidade ', after: ' todas essas linhas.', answer: 'terá ampliado', distractors: ['ampliará', 'tinha ampliado', 'teria ampliado'] },
+  { verb: 'reler', before: 'Antes do discurso, eles ', after: ' o texto duas vezes.', answer: 'terão relido', distractors: ['relerão', 'tinham relido', 'teriam relido'] },
+  { verb: 'receber', before: 'Até as oito, você ', after: ' os últimos convidados.', answer: 'terá recebido', distractors: ['receberá', 'tinha recebido', 'teria recebido'] },
+  { verb: 'deixar', before: 'Quando o sol nascer, os barcos ', after: ' o porto.', answer: 'terão deixado', distractors: ['deixarão', 'tinham deixado', 'teriam deixado'] },
+  { verb: 'avaliar', before: 'Até a premiação, o júri ', after: ' cada projeto.', answer: 'terá avaliado', distractors: ['avaliará', 'tinha avaliado', 'teria avaliado'] },
 ]
 
 export const PORTUGUESE_FUTURE_PERFECT_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_FUTURE_PERFECT_EDITORIAL = createPortugueseEditorialPack
   form: 'futuro-composto',
   focus: 'Futuro composto',
   rule: 'Ter no futuro + particípio apresenta algo concluído antes de um prazo ou de outro momento explicitamente futuro.',
+  choices,
   micro,
   long,
   errors,

@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -8,17 +9,37 @@ import {
 } from './portuguese-editorial-builder.ts'
 
 const micro: PortugueseEditorialMicroSeed[] = [
-  { title: 'O comunicado da empresa', cue: 'um fato futuro em registro formal', segments: ['A empresa ', ' o resultado na próxima semana.'], verb: 'anunciar', answers: ['anunciará'], distractors: ['anuncia', 'vai anunciar', 'anunciaria'] },
-  { title: 'Uma promessa solene', cue: 'uma promessa futura explícita', segments: ['Prometo que ', ' amanhã cedo.'], verb: 'ligar', answers: ['ligarei'], distractors: ['ligo', 'vou ligar', 'ligaria'] },
-  { title: 'As instruções oficiais', cue: 'um procedimento futuro anunciado', segments: ['Vocês ', ' as instruções por e-mail.'], verb: 'receber', answers: ['receberão'], distractors: ['recebem', 'vão receber', 'receberiam'] },
-  { title: 'A decisão do júri', cue: 'uma decisão futura formalmente marcada', segments: ['O júri ', ' o projeto vencedor na sexta-feira.'], verb: 'escolher', answers: ['escolherá'], distractors: ['escolhe', 'vai escolher', 'escolheria'] },
-  { title: 'Nosso compromisso', cue: 'um compromisso futuro', segments: ['Não se preocupe: nós ', ' durante a mudança.'], verb: 'ajudar', answers: ['ajudaremos'], distractors: ['ajudamos', 'vamos ajudar', 'ajudaríamos'] },
-  { title: 'A projeção climática', cue: 'uma previsão formal de longo prazo', segments: ['Segundo o relatório, este verão ', ' mais seco.'], verb: 'ser', answers: ['será'], distractors: ['é', 'vai ser', 'seria'] },
-  { title: 'A agenda ministerial', cue: 'um compromisso futuro oficial', segments: ['A ministra ', ' os representantes na terça-feira.'], verb: 'receber', answers: ['receberá'], distractors: ['recebe', 'vai receber', 'receberia'] },
-  { title: 'A resposta garantida', cue: 'uma certeza sobre o futuro', segments: ['Tenho certeza de que eles ', ' até o fim do mês.'], verb: 'responder', answers: ['responderão'], distractors: ['respondem', 'vão responder', 'responderiam'] },
-  { title: 'O novo regulamento', cue: 'uma obrigação futura escrita', segments: ['A partir de janeiro, você ', ' crachá para entrar.'], verb: 'usar', answers: ['usará'], distractors: ['usa', 'vai usar', 'usaria'] },
-  { title: 'O calendário cultural', cue: 'um evento futuro em programação oficial', segments: ['A cidade ', ' o festival em outubro.'], verb: 'receber', answers: ['receberá'], distractors: ['recebe', 'vai receber', 'receberia'] },
+  { title: 'O comunicado da empresa', cue: 'um fato futuro em registro formal', segments: ['A empresa ', ' o resultado na próxima semana.'], verb: 'anunciar', answers: ['anunciará'], distractors: ['anunciou', 'anunciava', 'anunciaria'] },
+  { title: 'Uma promessa solene', cue: 'uma promessa futura explícita', segments: ['Prometo que ', ' amanhã cedo.'], verb: 'ligar', answers: ['ligarei'], distractors: ['liguei', 'ligava', 'ligaria'] },
+  { title: 'As instruções oficiais', cue: 'um procedimento futuro anunciado', segments: ['Vocês ', ' as instruções por e-mail.'], verb: 'receber', answers: ['receberão'], distractors: ['receberam', 'recebiam', 'receberiam'] },
+  { title: 'A decisão do júri', cue: 'uma decisão futura formalmente marcada', segments: ['O júri ', ' o projeto vencedor na sexta-feira.'], verb: 'escolher', answers: ['escolherá'], distractors: ['escolheu', 'escolhia', 'escolheria'] },
+  { title: 'Nosso compromisso', cue: 'um compromisso futuro', segments: ['Não se preocupe: nós ', ' durante a mudança.'], verb: 'ajudar', answers: ['ajudaremos'], distractors: ['tínhamos ajudado', 'ajudávamos', 'ajudaríamos'] },
+  { title: 'A projeção climática', cue: 'uma previsão formal de longo prazo', segments: ['Segundo o relatório, este verão ', ' mais seco.'], verb: 'ser', answers: ['será'], distractors: ['foi', 'era', 'seria'] },
+  { title: 'A agenda ministerial', cue: 'um compromisso futuro oficial', segments: ['A ministra ', ' os representantes na terça-feira.'], verb: 'receber', answers: ['receberá'], distractors: ['recebeu', 'recebia', 'receberia'] },
+  { title: 'A resposta garantida', cue: 'uma certeza sobre o futuro', segments: ['Tenho certeza de que eles ', ' até o fim do mês.'], verb: 'responder', answers: ['responderão'], distractors: ['responderam', 'respondiam', 'responderiam'] },
+  { title: 'O novo regulamento', cue: 'uma obrigação futura escrita', segments: ['A partir de janeiro, você ', ' crachá para entrar.'], verb: 'usar', answers: ['usará'], distractors: ['usou', 'usava', 'usaria'] },
+  { title: 'O calendário cultural', cue: 'um evento futuro em programação oficial', segments: ['A cidade ', ' o festival em outubro.'], verb: 'receber', answers: ['receberá'], distractors: ['recebeu', 'recebia', 'receberia'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Segundo o cronograma, a diretoria ', ' os nomes na próxima segunda-feira.'],
+  ['Assim que eu receber os exames, ', ' para você.'],
+  ['Após a inscrição, vocês ', ' um comprovante digital.'],
+  ['Ao término da avaliação, o júri ', ' dois finalistas.'],
+  ['Durante a transição, nós ', ' cada setor afetado.'],
+  ['De acordo com os meteorologistas, o próximo inverno ', ' mais úmido.'],
+  ['Na próxima quarta-feira, a ministra ', ' os governadores no palácio.'],
+  ['Depois da auditoria, eles ', ' ao comitê por escrito.'],
+  ['Quando a equipe se mudar para o novo prédio, você ', ' uma identificação visível.'],
+  ['Em novembro próximo, a cidade ', ' a feira nacional do livro.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'Programa oficial da conferência', instruction: 'Complete este programa formal no futuro do presente.', segments: ['Amanhã, a diretora ', ' a sessão às nove. Dois pesquisadores ', ' os resultados e o público ', ' perguntas ao final.'], entries: [['abrir', ['abrirá']], ['apresentar', ['apresentarão']], ['fazer', ['fará']]] },
@@ -48,7 +69,7 @@ const errors: PortugueseEditorialErrorSeed[] = [
 
 const sequences: PortugueseEditorialSequenceSeed[] = [
   { events: ['A diretora abrirá a sessão', 'Os pesquisadores apresentarão resultados', 'O público fará perguntas'], target: 0 },
-  { events: ['A cidade construirá uma escola', 'A linha a ligará ao centro', 'As famílias desfrutarão do parque'], target: 1 },
+  { events: ['A cidade construirá uma escola', 'A linha ligará o bairro ao centro', 'As famílias desfrutarão do parque'], target: 1 },
   { events: ['Nós iremos a Manaus', 'Ficaremos dois dias', 'Voltaremos no domingo'], target: 2 },
   { events: ['O clube contratará jogadoras', 'Elas treinarão com o time', 'A torcida as conhecerá'], target: 0 },
   { events: ['Nossa equipe levará o material', 'O técnico o instalará', 'Vocês receberão treinamento'], target: 1 },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'Conforme o comunicado, a empresa ', after: ' o contrato amanhã.', answer: 'enviará', distractors: ['envia', 'vai enviar', 'enviaria'] },
-  { before: 'Segundo a previsão, o rio ', after: ' o nível máximo na terça.', answer: 'atingirá', distractors: ['atinge', 'vai atingir', 'atingiria'] },
-  { before: 'No próximo ano, nós ', after: ' uma filial em Recife.', answer: 'abriremos', distractors: ['abrimos', 'vamos abrir', 'abriríamos'] },
-  { before: 'Prometo que vocês ', after: ' uma resposta até sexta.', answer: 'terão', distractors: ['têm', 'vão ter', 'teriam'] },
-  { before: 'O novo trem ', after: ' o trajeto em duas horas.', answer: 'percorrerá', distractors: ['percorre', 'vai percorrer', 'percorreria'] },
-  { before: 'A partir de setembro, os escritórios ', after: ' às seis.', answer: 'fecharão', distractors: ['fecham', 'vão fechar', 'fechariam'] },
-  { before: 'Tenho certeza de que ela ', after: ' a solução.', answer: 'entenderá', distractors: ['entende', 'vai entender', 'entenderia'] },
-  { before: 'Na próxima semana, vocês ', after: ' os novos membros.', answer: 'receberão', distractors: ['recebem', 'vão receber', 'receberiam'] },
-  { before: 'Em dez anos, esta tecnologia ', after: ' menos energia.', answer: 'consumirá', distractors: ['consome', 'vai consumir', 'consumiria'] },
-  { before: 'Depois do intervalo, eles ', after: ' os resultados ao comitê.', answer: 'apresentarão', distractors: ['apresentam', 'vão apresentar', 'apresentariam'] },
+  { verb: 'enviar', before: 'Conforme o comunicado, a empresa ', after: ' o contrato amanhã.', answer: 'enviará', distractors: ['enviou', 'enviava', 'enviaria'] },
+  { verb: 'atingir', before: 'Segundo a previsão, o rio ', after: ' o nível máximo na terça.', answer: 'atingirá', distractors: ['atingiu', 'atingia', 'atingiria'] },
+  { verb: 'abrir', before: 'No próximo ano, nós ', after: ' uma filial em Recife.', answer: 'abriremos', distractors: ['tínhamos aberto', 'abríamos', 'abriríamos'] },
+  { verb: 'ter', before: 'Prometo que vocês ', after: ' uma resposta até sexta.', answer: 'terão', distractors: ['tiveram', 'tinham', 'teriam'] },
+  { verb: 'percorrer', before: 'Quando entrar em operação no próximo ano, o novo trem ', after: ' o trajeto em duas horas.', answer: 'percorrerá', distractors: ['percorreu', 'percorria', 'percorreria'] },
+  { verb: 'fechar', before: 'A partir de setembro próximo, os escritórios ', after: ' às seis.', answer: 'fecharão', distractors: ['fecharam', 'fechavam', 'fechariam'] },
+  { verb: 'entender', before: 'Tenho certeza de que ela ', after: ' a solução.', answer: 'entenderá', distractors: ['entendeu', 'entendia', 'entenderia'] },
+  { verb: 'receber', before: 'Na próxima semana, vocês ', after: ' os novos membros.', answer: 'receberão', distractors: ['receberam', 'recebiam', 'receberiam'] },
+  { verb: 'consumir', before: 'Em dez anos, esta tecnologia ', after: ' menos energia.', answer: 'consumirá', distractors: ['consumiu', 'consumia', 'consumiria'] },
+  { verb: 'apresentar', before: 'Depois do intervalo de amanhã, eles ', after: ' os resultados ao comitê.', answer: 'apresentarão', distractors: ['apresentaram', 'apresentavam', 'apresentariam'] },
 ]
 
 export const PORTUGUESE_FORMAL_FUTURE_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_FORMAL_FUTURE_EDITORIAL = createPortugueseEditorialPack(
   form: 'futuro-presente',
   focus: 'Futuro do presente · registro formal',
   rule: 'O futuro do presente é produtivo em escrita, comunicados, promessas e previsões formais; na fala brasileira, ir + infinitivo costuma ser mais frequente.',
+  choices,
   micro,
   long,
   errors,

@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -8,7 +9,7 @@ import {
 } from './french-editorial-builder.ts'
 
 const micro: FrenchEditorialMicroSeed[] = [
-  { title: 'Les places du train', cue: 'un fait accompli avant le départ du train', segments: ['Quand le train est parti, nous ', ' nos places depuis dix minutes.'], verb: 'trouver', answers: ['avions trouvé'], distractors: ['avons trouvé', 'trouvions', 'aurons trouvé'] },
+  { title: 'Les places du train', cue: 'un fait accompli avant le départ du train', segments: ['Quand le train est parti, nous ', ' nos places dix minutes plus tôt.'], verb: 'trouver', answers: ['avions trouvé'], distractors: ['avons trouvé', 'trouvions', 'aurons trouvé'] },
   { title: 'Le séjour à Rome', cue: 'une expérience antérieure à un récit passé', segments: ['Elle connaissait déjà Rome parce qu’elle y ', ' deux ans plus tôt.'], verb: 'aller', answers: ['était allée'], distractors: ['est allée', 'allait', 'sera allée'] },
   { title: 'La porte ouverte', cue: 'une cause achevée avant une entrée passée', segments: ['Ils ont pu entrer parce que Marc ', ' la porte ouverte.'], verb: 'laisser', answers: ['avait laissé'], distractors: ['a laissé', 'laissait', 'aura laissé'] },
   { title: 'Le fichier disparu', cue: 'une suppression antérieure à la recherche', segments: ['Quand Léa a cherché le fichier, son collègue l’', ' par erreur.'], verb: 'supprimer', answers: ['avait supprimé'], distractors: ['a supprimé', 'supprimait', 'aura supprimé'] },
@@ -19,6 +20,26 @@ const micro: FrenchEditorialMicroSeed[] = [
   { title: 'La salle préparée', cue: 'une action terminée avant l’arrivée des invités', segments: ['À l’arrivée des invités, l’équipe ', ' toute la salle.'], verb: 'préparer', answers: ['avait préparé'], distractors: ['a préparé', 'préparait', 'aura préparé'] },
   { title: 'Les randonneurs revenus', cue: 'un retour antérieur au début de l’orage', segments: ['Quand l’orage a commencé, les randonneuses ', ' au refuge.'], verb: 'revenir', answers: ['étaient revenues'], distractors: ['sont revenues', 'revenaient', 'seront revenues'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Avant l’annonce du contrôleur, nous ', ' une autre correspondance.'],
+  ['Elle a reconnu le musée parce qu’elle y ', ' pendant ses études.'],
+  ['La voisine a récupéré le colis que Marc ', ' chez le gardien.'],
+  ['Quand le responsable a demandé la photo, son assistante l’', ' la veille.'],
+  ['À notre retour, les voisines ', ' pour la campagne.'],
+  ['L’appareil refusait de démarrer parce que sa batterie ', ' pendant le trajet.'],
+  ['Je comprenais les objections car j’', ' le contrat auparavant.'],
+  ['À notre arrivée au théâtre, vous ', ' les meilleures places.'],
+  ['Avant la visite officielle, l’équipe ', ' une salle de démonstration.'],
+  ['Lorsque les secours sont arrivés, les randonneuses ', ' au village.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: index === 3 ? 'avait supprimée' : seed.answers[0],
+  distractors: index === 3 ? ['a supprimée', 'supprimait', 'aura supprimée'] : seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'Avant l’ouverture du restaurant', instruction: 'Complète les trois préparatifs antérieurs au service.', segments: ['Quand les premiers clients sont arrivés, le chef ', ' le menu. Son équipe ', ' les légumes et la responsable ', ' toutes les réservations.'], entries: [['finaliser', ['avait finalisé']], ['préparer', ['avait préparé']], ['confirmer', ['avait confirmé']]] },
@@ -53,23 +74,23 @@ const sequences: FrenchEditorialSequenceSeed[] = [
   { events: ['L’ingénieure avait corrigé les plans', 'La mairie avait signé le permis', 'Les fournisseurs avaient livré les matériaux'], target: 0 },
   { events: ['Les techniciens avaient réparé le projecteur', 'La costumière avait recousu la veste', 'L’actrice avait relu son texte'], target: 1 },
   { events: ['La rivière avait inondé les rues', 'Des familles avaient quitté leurs maisons', 'La mairie avait ouvert un centre'], target: 2 },
-  { events: ['Mina avait mis son CV à jour', 'Elle avait contacté ses collègues', 'Elle avait préparé sa présentation'], target: 0 },
+  { events: ['Mina avait mis son CV à jour', 'Elle avait contacté ses collègues', 'Elle avait préparé sa présentation'], target: 0, production: { sentence: 'Mina avait mis son CV à jour', verb: 'mettre à jour', answers: ['avait mis'] } },
   { events: ['L’équipe avait remplacé le câble', 'Elle avait fait une copie', 'Elle avait bloqué les accès'], target: 1 },
   { events: ['Les gardiens avaient fermé les volets', 'Ils avaient rentré le bois', 'Les randonneurs étaient revenus'], target: 2 },
   { events: ['La conservatrice avait consulté les archives', 'Les experts avaient comparé la signature', 'Le laboratoire avait analysé les pigments'], target: 0 },
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'Quand le directeur est arrivé, nous ', after: ' le problème depuis une heure.', answer: 'avions résolu', distractors: ['avons résolu', 'résolvions', 'aurons résolu'] },
-  { before: 'Elle a reconnu la rue où elle ', after: ' dix ans plus tôt.', answer: 'avait vécu', distractors: ['a vécu', 'vivait', 'aura vécu'] },
-  { before: 'Les portes étaient ouvertes parce que le gardien les ', after: ' avant de partir.', answer: 'avait déverrouillées', distractors: ['a déverrouillées', 'déverrouillait', 'aura déverrouillées'] },
-  { before: 'Lorsque j’ai consulté ma boîte, tu m’', after: ' trois messages.', answer: 'avais envoyé', distractors: ['as envoyé', 'envoyais', 'auras envoyé'] },
-  { before: 'Au début de la réunion, les invitées ', after: ' dans la salle.', answer: 'étaient entrées', distractors: ['sont entrées', 'entraient', 'seront entrées'] },
-  { before: 'Il ne pouvait pas payer : il ', after: ' son portefeuille chez lui.', answer: 'avait oublié', distractors: ['a oublié', 'oubliait', 'aura oublié'] },
-  { before: 'À notre arrivée, vous ', after: ' tous les documents.', answer: 'aviez classé', distractors: ['avez classé', 'classiez', 'aurez classé'] },
-  { before: 'Le jardin était détrempé parce qu’il ', after: ' toute la nuit.', answer: 'avait plu', distractors: ['a plu', 'pleuvait', 'aura plu'] },
-  { before: 'Quand l’alarme a sonné, les élèves ', after: ' du bâtiment.', answer: 'étaient sortis', distractors: ['sont sortis', 'sortaient', 'seront sortis'] },
-  { before: 'Le client a accepté l’offre que nous lui ', after: ' la veille.', answer: 'avions proposée', distractors: ['avons proposée', 'proposions', 'aurons proposée'] },
+  { verb: 'résoudre', before: 'Quand le directeur est arrivé, nous ', after: ' le problème une heure plus tôt.', answer: 'avions résolu', distractors: ['avons résolu', 'résolvions', 'aurons résolu'] },
+  { verb: 'vivre', before: 'Elle a reconnu la rue où elle ', after: ' dix ans plus tôt.', answer: 'avait vécu', distractors: ['a vécu', 'vivait', 'aura vécu'] },
+  { verb: 'déverrouiller', before: 'Les portes étaient ouvertes parce que le gardien les ', after: ' avant de partir.', answer: 'avait déverrouillées', distractors: ['a déverrouillées', 'déverrouillait', 'aura déverrouillées'] },
+  { verb: 'envoyer', before: 'Lorsque j’ai consulté ma boîte, tu m’', after: ' trois messages.', answer: 'avais envoyé', distractors: ['as envoyé', 'envoyais', 'auras envoyé'] },
+  { verb: 'entrer', before: 'Au début de la réunion, les invitées ', after: ' dans la salle.', answer: 'étaient entrées', distractors: ['sont entrées', 'entraient', 'seront entrées'] },
+  { verb: 'oublier', before: 'Il ne pouvait pas payer : il ', after: ' son portefeuille chez lui.', answer: 'avait oublié', distractors: ['a oublié', 'oubliait', 'aura oublié'] },
+  { verb: 'classer', before: 'À notre arrivée, vous ', after: ' tous les documents.', answer: 'aviez classé', distractors: ['avez classé', 'classiez', 'aurez classé'] },
+  { verb: 'pleuvoir', before: 'Le jardin était détrempé parce qu’il ', after: ' toute la nuit.', answer: 'avait plu', distractors: ['a plu', 'pleuvait', 'aura plu'] },
+  { verb: 'sortir', before: 'Quand l’alarme a sonné, les élèves ', after: ' du bâtiment.', answer: 'étaient sortis', distractors: ['sont sortis', 'sortaient', 'seront sortis'] },
+  { verb: 'proposer', before: 'Le client a accepté l’offre que nous lui ', after: ' la veille.', answer: 'avions proposée', distractors: ['avons proposée', 'proposions', 'aurons proposée'] },
 ]
 
 export const FRENCH_PLUS_QUE_PARFAIT_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_PLUS_QUE_PARFAIT_EDITORIAL = createFrenchEditorialPack({
   form: 'plus-que-parfait',
   focus: 'Plus-que-parfait',
   rule: 'Le plus-que-parfait place un fait déjà accompli avant un autre repère explicitement passé.',
+  choices,
   micro,
   long,
   errors,

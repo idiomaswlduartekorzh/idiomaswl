@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: FrenchEditorialMicroSeed[] = [
   { title: 'Les clés retrouvées', cue: 'un accomplissement récent', segments: ['Enfin, elles ', ' les clés sous le canapé.'], verb: 'retrouver', answers: ['ont retrouvé'], distractors: ['retrouvaient', 'avaient retrouvé', 'retrouveront'] },
   { title: 'La montée au refuge', cue: 'un déplacement féminin pluriel achevé', segments: ['Après le déjeuner, Léa et Zoé ', ' jusqu’au refuge.'], verb: 'monter', answers: ['sont montées'], distractors: ['ont monté', 'montaient', 'étaient montées'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Après la réunion, nous ', ' le compte rendu à toute l’équipe.'],
+  ['Camille ', ' à la clinique en début d’après-midi.'],
+  ['Tu ', ' cette exposition lors de son ouverture mardi.'],
+  ['Le technicien ', ' l’imprimante juste avant la présentation.'],
+  ['Mes voisines ', ' pour Marseille à l’aube.'],
+  ['Après l’entretien, j’', ' de poursuivre la formation.'],
+  ['En déplaçant la table, vous ', ' un vase ancien.'],
+  ['Malik ', ' du laboratoire après minuit.'],
+  ['Au poste de police, elles ', ' leur sac disparu.'],
+  ['Léa et Zoé ', ' sur scène pour recevoir le prix.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'La livraison urgente', instruction: 'Complète ce récit oral cohérent au passé composé.', segments: ['Hier matin, Nora ', ' le colis à l’entrepôt. Elle ', ' le reçu au responsable, puis elle ', ' au bureau avant midi.'], entries: [['apporter', ['a apporté']], ['remettre', ['a remis']], ['retourner', ['est retournée']]] },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'Hier soir, Léa ', after: ' la porte avant de partir.', answer: 'a fermé', distractors: ['fermait', 'avait fermé', 'fermera'] },
-  { before: 'Samedi dernier, les deux sœurs ', after: ' à Bordeaux en train.', answer: 'sont allées', distractors: ['ont allé', 'allaient', 'étaient allées'] },
-  { before: 'Ce matin, nous ', after: ' la confirmation par courriel.', answer: 'avons reçu', distractors: ['recevions', 'avions reçu', 'recevrons'] },
-  { before: 'Pendant la panne, le système ', after: ' trois fois.', answer: 'a redémarré', distractors: ['redémarrait', 'avait redémarré', 'redémarrera'] },
-  { before: 'Dimanche, Paul ', after: ' chez lui avant le déjeuner.', answer: 'est rentré', distractors: ['a rentré', 'rentrait', 'était rentré'] },
-  { before: 'Cette semaine, vous ', after: ' quatre nouveaux contrats.', answer: 'avez signé', distractors: ['signiez', 'aviez signé', 'signerez'] },
-  { before: 'À la fin du concert, les musiciennes ', after: ' sur scène pour saluer.', answer: 'sont revenues', distractors: ['ont revenu', 'revenaient', 'étaient revenues'] },
-  { before: 'Hier, le laboratoire ', after: ' les résultats définitifs.', answer: 'a publié', distractors: ['publiait', 'avait publié', 'publiera'] },
-  { before: 'Après le dîner, tu ', after: ' toute la vaisselle.', answer: 'as rangé', distractors: ['rangeais', 'avais rangé', 'rangeras'] },
-  { before: 'Lundi matin, les enfants ', after: ' très tôt pour l’excursion.', answer: 'se sont levés', distractors: ['ont se levé', 'se levaient', 's’étaient levés'] },
+  { verb: 'fermer', before: 'Hier soir, Léa ', after: ' la porte avant de partir.', answer: 'a fermé', distractors: ['fermait', 'avait fermé', 'fermera'] },
+  { verb: 'aller', before: 'Samedi dernier, les deux sœurs ', after: ' à Bordeaux en train.', answer: 'sont allées', distractors: ['ont allé', 'allaient', 'étaient allées'] },
+  { verb: 'recevoir', before: 'Ce matin, nous ', after: ' la confirmation par courriel.', answer: 'avons reçu', distractors: ['recevions', 'avions reçu', 'recevrons'] },
+  { verb: 'redémarrer', before: 'Pendant la panne, le système ', after: ' trois fois.', answer: 'a redémarré', distractors: ['redémarrait', 'avait redémarré', 'redémarrera'] },
+  { verb: 'rentrer', before: 'Dimanche, Paul ', after: ' chez lui avant le déjeuner.', answer: 'est rentré', distractors: ['a rentré', 'rentrait', 'était rentré'] },
+  { verb: 'signer', before: 'Cette semaine, vous ', after: ' quatre nouveaux contrats.', answer: 'avez signé', distractors: ['signiez', 'aviez signé', 'signerez'] },
+  { verb: 'revenir', before: 'À la fin du concert, les musiciennes ', after: ' sur scène pour saluer.', answer: 'sont revenues', distractors: ['ont revenu', 'revenaient', 'étaient revenues'] },
+  { verb: 'publier', before: 'Hier, le laboratoire ', after: ' les résultats définitifs.', answer: 'a publié', distractors: ['publiait', 'avait publié', 'publiera'] },
+  { verb: 'ranger', before: 'Après le dîner, tu ', after: ' toute la vaisselle.', answer: 'as rangé', distractors: ['rangeais', 'avais rangé', 'rangeras'] },
+  { verb: 'se lever', before: 'Lundi matin, les enfants ', after: ' très tôt pour l’excursion.', answer: 'se sont levés', distractors: ['ont se levé', 'se levaient', 's’étaient levés'] },
 ]
 
 export const FRENCH_PASSE_COMPOSE_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_PASSE_COMPOSE_EDITORIAL = createFrenchEditorialPack({
   form: 'passe-compose',
   focus: 'Passé composé',
   rule: 'Le passé composé présente un événement achevé ; l’auxiliaire et l’accord du participe dépendent du verbe et de la construction.',
+  choices,
   micro,
   long,
   errors,

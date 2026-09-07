@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -10,7 +11,7 @@ import {
 const micro: FrenchEditorialMicroSeed[] = [
   { title: 'Une visite hypothétique', cue: 'une conséquence hypothétique actuelle', segments: ['Avec plus de temps, je ', ' aussi le musée.'], verb: 'visiter', answers: ['visiterais'], distractors: ['visite', 'visiterai', 'aurais visité'] },
   { title: 'Une demande au restaurant', cue: 'une demande polie', segments: ['Nous ', ' réserver une table pour quatre, s’il vous plaît.'], verb: 'vouloir', answers: ['voudrions'], distractors: ['voulons', 'voudrons', 'aurions voulu'] },
-  { title: 'Un conseil à Léa', cue: 'un conseil hypothétique', segments: ['À ta place, Léa ', ' cette offre.'], verb: 'accepter', answers: ['accepterait'], distractors: ['accepte', 'acceptera', 'aurait accepté'] },
+  { title: 'Un conseil à propos de Léa', cue: 'un conseil hypothétique', segments: ['À la place de Marc, Léa ', ' cette offre.'], verb: 'accepter', answers: ['accepterait'], distractors: ['accepte', 'acceptera', 'aurait accepté'] },
   { title: 'La maison idéale', cue: 'un souhait actuel', segments: ['J’', ' habiter près de la mer.'], verb: 'aimer', answers: ['aimerais'], distractors: ['aime', 'aimerai', 'aurais aimé'] },
   { title: 'Une équipe plus grande', cue: 'le résultat d’une condition irréelle présente', segments: ['Si l’équipe était plus grande, nous ', ' ce projet.'], verb: 'terminer', answers: ['terminerions'], distractors: ['terminons', 'terminerons', 'aurions terminé'] },
   { title: 'La question au guichet', cue: 'une question polie', segments: ['Vous ', ' m’indiquer le quai numéro six ?'], verb: 'pouvoir', answers: ['pourriez'], distractors: ['pouvez', 'pourrez', 'auriez pu'] },
@@ -19,6 +20,26 @@ const micro: FrenchEditorialMicroSeed[] = [
   { title: 'Une possibilité actuelle', cue: 'une capacité sous condition', segments: ['Sans cette panne, la machine ', ' encore.'], verb: 'fonctionner', answers: ['fonctionnerait'], distractors: ['fonctionne', 'fonctionnera', 'aurait fonctionné'] },
   { title: 'Le programme idéal', cue: 'un résultat imaginé au présent', segments: ['Si vous aviez le choix, vous ', ' par quelle activité ?'], verb: 'commencer', answers: ['commenceriez'], distractors: ['commencez', 'commencerez', 'auriez commencé'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Avec une matinée libre, je ', ' le château voisin.'],
+  ['Pour notre anniversaire, nous ', ' réserver la terrasse.'],
+  ['Avec de meilleures garanties, Léa ', ' le nouveau poste.'],
+  ['J’', ' apprendre à naviguer cet été.'],
+  ['Avec deux développeurs de plus, nous ', ' la migration cette semaine.'],
+  ['Vous ', ' vérifier mon numéro de réservation ?'],
+  ['Avec une pièce supplémentaire, ils ', ' cet appartement.'],
+  ['Tu ', ' sauvegarder le document avant de fermer.'],
+  ['Avec une courroie neuve, la machine ', ' correctement.'],
+  ['Si le matériel arrivait demain, vous ', ' par quel test ?'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'Le café idéal', instruction: 'Complète ce projet imaginaire au conditionnel présent.', segments: ['Avec un local plus grand, Mina ', ' dix tables de plus. Elle ', ' un coin lecture et ses clients ', ' plus longtemps.'], entries: [['installer', ['installerait']], ['créer', ['créerait']], ['rester', ['resteraient']]] },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'Avec un bureau plus calme, je ', after: ' mieux.', answer: 'travaillerais', distractors: ['travaille', 'travaillerai', 'aurais travaillé'] },
-  { before: 'Vous ', after: ' répéter la question, s’il vous plaît ?', answer: 'pourriez', distractors: ['pouvez', 'pourrez', 'auriez pu'] },
-  { before: 'À ta place, elle ', after: ' les deux offres.', answer: 'comparerait', distractors: ['compare', 'comparera', 'aurait comparé'] },
-  { before: 'Si nous avions un jardin, nous y ', after: ' des tomates.', answer: 'planterions', distractors: ['plantons', 'planterons', 'aurions planté'] },
-  { before: 'Sans ce bruit, les enfants ', after: ' déjà.', answer: 'dormiraient', distractors: ['dorment', 'dormiront', 'auraient dormi'] },
-  { before: 'J’', after: ' vous poser une dernière question.', answer: 'aimerais', distractors: ['aime', 'aimerai', 'aurais aimé'] },
-  { before: 'Avec davantage de données, le modèle ', after: ' plus précis.', answer: 'deviendrait', distractors: ['devient', 'deviendra', 'serait devenu'] },
-  { before: 'Tu ', after: ' consulter un spécialiste.', answer: 'devrais', distractors: ['dois', 'devras', 'aurais dû'] },
-  { before: 'Si le train passait plus tard, ils ', after: ' après le concert.', answer: 'resteraient', distractors: ['restent', 'resteront', 'seraient restés'] },
-  { before: 'Avec votre accord, nous ', after: ' lundi.', answer: 'commencerions', distractors: ['commençons', 'commencerons', 'aurions commencé'] },
+  { verb: 'travailler', before: 'Avec un bureau plus calme, je ', after: ' mieux.', answer: 'travaillerais', distractors: ['travaille', 'travaillerai', 'aurais travaillé'] },
+  { verb: 'pouvoir', before: 'Vous ', after: ' répéter la question, s’il vous plaît ?', answer: 'pourriez', distractors: ['pouvez', 'pourrez', 'auriez pu'] },
+  { verb: 'comparer', before: 'À ta place, je ', after: ' les deux offres.', answer: 'comparerais', distractors: ['compare', 'comparerai', 'aurais comparé'] },
+  { verb: 'planter', before: 'Si nous avions un jardin, nous y ', after: ' des tomates.', answer: 'planterions', distractors: ['plantons', 'planterons', 'aurions planté'] },
+  { verb: 'dormir', before: 'Sans ce bruit, les enfants ', after: ' déjà.', answer: 'dormiraient', distractors: ['dorment', 'dormiront', 'auraient dormi'] },
+  { verb: 'aimer', before: 'J’', after: ' vous poser une dernière question.', answer: 'aimerais', distractors: ['aime', 'aimerai', 'aurais aimé'] },
+  { verb: 'devenir', before: 'Avec davantage de données, le modèle ', after: ' plus précis.', answer: 'deviendrait', distractors: ['devient', 'deviendra', 'serait devenu'] },
+  { verb: 'devoir', before: 'Tu ', after: ' consulter un spécialiste.', answer: 'devrais', distractors: ['dois', 'devras', 'aurais dû'] },
+  { verb: 'rester', before: 'Si le train passait plus tard, ils ', after: ' après le concert.', answer: 'resteraient', distractors: ['restent', 'resteront', 'seraient restés'] },
+  { verb: 'commencer', before: 'Avec votre accord, nous ', after: ' lundi.', answer: 'commencerions', distractors: ['commençons', 'commencerons', 'aurions commencé'] },
 ]
 
 export const FRENCH_CONDITIONNEL_PRESENT_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_CONDITIONNEL_PRESENT_EDITORIAL = createFrenchEditorialPack({
   form: 'conditionnel-present',
   focus: 'Conditionnel présent',
   rule: 'Le conditionnel présent exprime une conséquence hypothétique actuelle, un souhait, un conseil ou une demande atténuée.',
+  choices,
   micro,
   long,
   errors,

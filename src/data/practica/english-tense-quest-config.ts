@@ -67,7 +67,7 @@ const EDITORIAL_PACKS = [
 
 export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
   id: 'english-tense-quest',
-  storageKey: 'wl-english-tense-quest-v4',
+  storageKey: 'wl-english-tense-quest-v5',
   forms: ENGLISH_FORMS,
   presets: [
     { label: 'Present', ids: ENGLISH_FORMS.filter((form) => form.group === 'Present').map((form) => form.id) },
@@ -80,14 +80,15 @@ export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
     { number: '02', title: 'Micro stories', short: 'Short production', description: 'Write the complete verb form from a precise clue.' },
     { number: '03', title: 'Cumulative retrieval', short: 'Connected narrative', description: 'Complete one coherent scene with three target forms and no options.' },
     { number: '04', title: 'Error lab', short: 'Detect and repair', description: 'Find the only form that breaks a coherent text and correct it.' },
-    { number: '05', title: 'Sequence map', short: 'Recover meaning', description: 'Order events whose options all use the same target form.' },
-    { number: '06', title: 'Aspect field file', short: 'Closed decisions', description: 'Solve ten independent scenes with four same-verb candidates each.' },
+    { number: '05', title: 'Sentence workshop', short: 'Build the full sentence', description: 'Reorder the given elements and write the complete sentence.' },
+    { number: '06', title: 'Aspect field file', short: 'Open production', description: 'Write ten complete verb forms in one extended field file.' },
   ],
   choiceChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.choices),
   microStories: EDITORIAL_PACKS.flatMap((pack) => pack.micro),
   longStories: EDITORIAL_PACKS.flatMap((pack) => pack.long),
   errorChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.errors),
   timelineChallenges: EDITORIAL_PACKS.flatMap((pack) => pack.timelines),
+  errorIdentificationMode: 'write',
   finalChallenges: Array.from({ length: 10 }, (_, index) => {
     const gaps = EDITORIAL_PACKS.map((pack) => pack.finalGaps[index])
     const candidateIds = new Set(gaps.flatMap((gap) => gap.candidateCardIds ?? []))
@@ -101,6 +102,7 @@ export const ENGLISH_TENSE_QUEST: TenseQuestConfig<EnglishFormId> = {
       explanation: 'Each scene independently supplies the time, aspect and clause evidence needed for one closed decision.',
     }
   }),
+  finalStories: EDITORIAL_PACKS.map((pack) => pack.finalStory),
   copy: {
     languageName: 'Inglés',
     languageCode: 'en',

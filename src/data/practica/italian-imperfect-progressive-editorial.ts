@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Io stavo aprendo il file', 'lo stavo correggendo', 'lo stavo inviando al cliente'], target: 0 },
-  { events: ['Gli operai stavano scaricando i materiali', 'stavano montando la struttura', 'stavano fissando il tetto'], target: 1 },
-  { events: ['Marta stava pesando la farina', 'stava impastando', 'stava formando i panini'], target: 2 },
-  { events: ['Noi stavamo scegliendo il percorso', 'stavamo comprando i biglietti', 'stavamo preparando gli zaini'], target: 0 },
-  { events: ['Il medico stava leggendo gli esami', 'stava visitando il paziente', 'stava compilando il referto'], target: 1 },
-  { events: ['Voi stavate raccogliendo le risposte', 'stavate creando il grafico', 'stavate preparando la presentazione'], target: 2 },
-  { events: ['Il custode stava spegnendo le luci', 'stava controllando le porte', 'stava attivando l’allarme'], target: 0 },
-  { events: ['Io stavo lavando le verdure', 'le stavo tagliando', 'le stavo mettendo in pentola'], target: 1 },
-  { events: ['I musicisti stavano accordando gli strumenti', 'stavano provando il brano', 'stavano salutando il pubblico'], target: 2 },
-  { events: ['Tu stavi cercando l’indirizzo', 'stavi prendendo l’autobus', 'stavi raggiungendo lo studio'], target: 0 },
+  { events: ['Io stavo aprendo il file', 'lo stavo correggendo', 'lo stavo inviando al cliente'], target: 0, production: { sentence: 'Io stavo aprendo il file', verb: 'aprire', answers: ['stavo aprendo'] } },
+  { events: ['Gli operai stavano scaricando i materiali', 'Stavano montando la struttura', 'stavano fissando il tetto'], target: 1, production: { sentence: 'Stavano montando la struttura', verb: 'montare', answers: ['stavano montando'] } },
+  { events: ['Marta stava pesando la farina', 'stava impastando', 'Stava formando i panini'], target: 2, production: { sentence: 'Stava formando i panini', verb: 'formare', answers: ['stava formando'] } },
+  { events: ['Noi stavamo scegliendo il percorso', 'stavamo comprando i biglietti', 'stavamo preparando gli zaini'], target: 0, production: { sentence: 'Noi stavamo scegliendo il percorso', verb: 'scegliere', answers: ['stavamo scegliendo'] } },
+  { events: ['Il medico stava leggendo gli esami', 'Stava visitando il paziente', 'stava compilando il referto'], target: 1, production: { sentence: 'Stava visitando il paziente', verb: 'visitare', answers: ['stava visitando'] } },
+  { events: ['Voi stavate raccogliendo le risposte', 'stavate creando il grafico', 'Stavate preparando la presentazione'], target: 2, production: { sentence: 'Stavate preparando la presentazione', verb: 'preparare', answers: ['stavate preparando'] } },
+  { events: ['Il custode stava spegnendo le luci', 'stava controllando le porte', 'stava attivando l’allarme'], target: 0, production: { sentence: 'Il custode stava spegnendo le luci', verb: 'spegnere', answers: ['stava spegnendo'] } },
+  { events: ['Io stavo lavando le verdure', 'Io stavo tagliando le verdure', 'le stavo mettendo in pentola'], target: 1, production: { sentence: 'Io stavo tagliando le verdure', verb: 'tagliare', answers: ['stavo tagliando'] } },
+  { events: ['I musicisti stavano accordando gli strumenti', 'stavano provando il brano', 'Stavano salutando il pubblico'], target: 2, production: { sentence: 'Stavano salutando il pubblico', verb: 'salutare', answers: ['stavano salutando'] } },
+  { events: ['Tu stavi cercando l’indirizzo', 'stavi prendendo l’autobus', 'stavi raggiungendo lo studio'], target: 0, production: { sentence: 'Tu stavi cercando l’indirizzo', verb: 'cercare', answers: ['stavi cercando'] } },
 ]
 
 export const ITALIAN_IMPERFECT_PROGRESSIVE_EDITORIAL = createItalianEditorialPack({

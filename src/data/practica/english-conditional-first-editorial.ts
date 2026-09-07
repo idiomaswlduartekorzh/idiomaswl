@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Rain tomorrow', cue: 'a real future result', segments: ['If it rains tomorrow, we ', ' home.'], verb: 'stay', answers: ['will stay'], distractors: ['stay', 'would stay', 'stayed'] },
@@ -28,11 +28,11 @@ const long: EnglishEditorialGapSeed[] = [
 
 const errors: EnglishEditorialErrorSeed[] = [
   { title: 'Concert plan', pieces: [['If it rains, we ', 'would move'], [' indoors. Staff will open the gym if the forecast ', 'becomes'], [' worse, and we ', 'will notify']], after: ' guests.', wrong: 0, answers: ['will move'], reason: 'a real future result takes will, not would' },
-  { title: 'Delivery plan', pieces: [['If the truck arrives, we ', 'will unload'], [' it. The warehouse will call if a box ', 'will look'], [' damaged, and we ', 'will request']], after: ' a replacement.', wrong: 1, answers: ['looks'], reason: 'the if-clause uses the present simple, not will' },
+  { title: 'Delivery plan', pieces: [['If the truck arrives, we ', 'will unload'], [' it. The warehouse will call us if a box ', 'will look'], [' damaged, and we ', 'will request']], after: ' a replacement.', wrong: 1, answers: ['looks'], reason: 'the if-clause uses the present simple, not will' },
   { title: 'Mountain plan', pieces: [['If weather stays clear, we ', 'will leave'], [' early. We will turn back if wind ', 'becomes'], [' strong, and the guide ', 'would contact']], after: ' the shelter.', wrong: 2, answers: ['will contact'], reason: 'a real future result takes will, not would' },
   { title: 'Exam backup', pieces: [['If the network fails, students ', 'would use'], [' paper. Time will extend if the outage ', 'lasts'], [', and staff ', 'will record']], after: ' interruptions.', wrong: 0, answers: ['will use'], reason: 'a real future result takes will, not would' },
   { title: 'Clinic demand', pieces: [['If appointments increase, the clinic ', 'will add'], [' a nurse. It will open room four if demand ', 'will remain'], [' high, and patients ', 'will receive']], after: ' messages.', wrong: 1, answers: ['remains'], reason: 'the if-clause uses the present simple, not will' },
-  { title: 'Garden vote', pieces: [['If residents approve, the council ', 'will prepare'], [' land. Work will begin if funding ', 'arrives'], [', and schools ', 'would organize']], after: ' workshops.', wrong: 2, answers: ['will organize'], reason: 'a real future result takes will, not would' },
+  { title: 'Garden vote', pieces: [['If residents approve the plan, the council ', 'will prepare'], [' land. Work will begin if funding ', 'arrives'], [', and schools ', 'would organize']], after: ' workshops.', wrong: 2, answers: ['will organize'], reason: 'a real future result takes will, not would' },
   { title: 'Airport plan', pieces: [['If traffic is light, we ', 'would reach'], [' the airport. Dad will call if the flight ', 'is'], [' delayed, and we ', 'will have']], after: ' breakfast.', wrong: 0, answers: ['will reach'], reason: 'a real future result takes will, not would' },
   { title: 'Release decision', pieces: [['If tests pass, we ', 'will deploy'], ['. We will postpone if an error ', 'will appear'], [', and customers ', 'will receive']], after: ' an update.', wrong: 1, answers: ['appears'], reason: 'the if-clause uses the present simple, not will' },
   { title: 'School fair', pieces: [['If families attend, we ', 'will open'], [' another hall. The band will play if weather ', 'stays'], [' dry, and volunteers ', 'would serve']], after: ' food.', wrong: 2, answers: ['will serve'], reason: 'a real future result takes will, not would' },
@@ -41,11 +41,11 @@ const errors: EnglishEditorialErrorSeed[] = [
 
 const sequences: EnglishEditorialSequenceSeed[] = [
   { events: ['If it rains, we will move indoors', 'If the forecast worsens, staff will open the gym', 'If the venue changes, we will notify guests'], target: 0 },
-  { events: ['If the truck arrives, we will unload it', 'If a box looks damaged, the warehouse will call', 'If anything is missing, we will request replacements'], target: 1 },
+  { events: ['If the truck arrives, we will unload it', 'If a box looks damaged, the warehouse will call us', 'If anything is missing, we will request replacements'], target: 1 },
   { events: ['If weather stays clear, we will leave early', 'If wind strengthens, we will turn back', 'If anyone is ill, the guide will contact the shelter'], target: 2 },
   { events: ['If the network fails, students will use paper', 'If the outage lasts, time will extend', 'If interruptions occur, staff will record them'], target: 0 },
   { events: ['If appointments increase, the clinic will add a nurse', 'If demand remains high, it will open room four', 'If schedules change, patients will receive a message'], target: 1 },
-  { events: ['If residents approve, the council will prepare the land', 'If funding arrives, work will begin', 'If schools join, they will organize workshops'], target: 2 },
+  { events: ['If residents approve the plan, the council will prepare the land', 'If funding arrives, work will begin', 'If schools join, they will organize workshops'], target: 2 },
   { events: ['If traffic is light, we will reach the airport by seven', 'If the flight is delayed, Dad will call', 'If we clear security early, we will have breakfast'], target: 0 },
   { events: ['If tests pass, we will deploy', 'If an error appears, we will postpone', 'If timing changes, customers will receive an update'], target: 1 },
   { events: ['If families attend, we will open another hall', 'If weather stays dry, the band will play outside', 'If guests stay late, volunteers will serve food'], target: 2 },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'If the forecast improves tomorrow, the ferry ', after: ' at six.', answer: 'will leave', distractors: ['leaves', 'would leave', 'left'] },
-  { before: 'We will open the terrace if the wind ', after: ' before noon.', answer: 'drops', distractors: ['will drop', 'would drop', 'dropped'] },
-  { before: 'If Maya finishes the audit early, she ', after: ' the afternoon meeting.', answer: 'will attend', distractors: ['attends', 'would attend', 'attended'] },
-  { before: 'The school will add a class if enrollment ', after: ' twenty students.', answer: 'exceeds', distractors: ['will exceed', 'would exceed', 'exceeded'] },
-  { before: 'If the replacement part arrives today, engineers ', after: ' the lift tonight.', answer: 'will repair', distractors: ['repair', 'would repair', 'repaired'] },
-  { before: 'You will lose access if you ', after: ' the renewal deadline.', answer: 'miss', distractors: ['will miss', 'would miss', 'missed'] },
-  { before: 'If enough teams register, organizers ', after: ' a second division.', answer: 'will create', distractors: ['create', 'would create', 'created'] },
-  { before: 'The clinic will call you if a slot ', after: ' available.', answer: 'becomes', distractors: ['will become', 'would become', 'became'] },
-  { before: 'If the road remains closed, buses ', after: ' through the northern district.', answer: 'will travel', distractors: ['travel', 'would travel', 'traveled'] },
-  { before: 'We will postpone the launch if the final test ', after: '.', answer: 'fails', distractors: ['will fail', 'would fail', 'failed'] },
+  { verb: 'leave', before: 'If the forecast improves tomorrow, the ferry ', after: ' at six.', answer: 'will leave', distractors: ['leaves', 'would leave', 'left'] },
+  { verb: 'drop', before: 'We will open the terrace if the wind ', after: ' before noon.', answer: 'drops', distractors: ['will drop', 'would drop', 'dropped'] },
+  { verb: 'attend', before: 'If Maya finishes the audit early, she ', after: ' the afternoon meeting.', answer: 'will attend', distractors: ['attends', 'would attend', 'attended'] },
+  { verb: 'exceed', before: 'The school will add a class if enrollment ', after: ' twenty students.', answer: 'exceeds', distractors: ['will exceed', 'would exceed', 'exceeded'] },
+  { verb: 'repair', before: 'If the replacement part arrives today, engineers ', after: ' the lift tonight.', answer: 'will repair', distractors: ['repair', 'would repair', 'repaired'] },
+  { verb: 'miss', before: 'You will lose access if you ', after: ' the renewal deadline.', answer: 'miss', distractors: ['will miss', 'would miss', 'missed'] },
+  { verb: 'create', before: 'If enough teams register, organizers ', after: ' a second division.', answer: 'will create', distractors: ['create', 'would create', 'created'] },
+  { verb: 'become', before: 'The clinic will call you if a slot ', after: ' available.', answer: 'becomes', distractors: ['will become', 'would become', 'became'] },
+  { verb: 'travel', before: 'If the road remains closed, buses ', after: ' through the northern district.', answer: 'will travel', distractors: ['travel', 'would travel', 'traveled'] },
+  { verb: 'fail', before: 'We will postpone the launch if the final test ', after: '.', answer: 'fails', distractors: ['will fail', 'would fail', 'failed'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a realistic future result', segments: ['If the harbor inspection ends on time, the last cargo boat ', ' before dusk.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a possible condition', segments: ['The outdoor rehearsal will continue if the rain ', ' by four.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a likely consequence', segments: ['If the dean approves the request, Omar ', ' the research workshop.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a condition for a decision', segments: ['The museum will extend its hours if visitor numbers ', ' the forecast.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a planned response', segments: ['If the spare cable arrives this morning, technicians ', ' the broadcast link.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a warning about a real possibility', segments: ['Your membership will expire if you ', ' the payment date.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a future consequence', segments: ['If residents approve the grant, the council ', ' a public reading room.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a present condition with a future result', segments: ['We will move the concert indoors if the weather ', ' unstable.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a likely future adjustment', segments: ['If the mountain pass stays icy, coaches ', ' along the coastal highway.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a real condition', segments: ['The system will send an alert if the backup check ', '.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_CONDITIONAL_FIRST_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-first', form: 'conditional-first', focus: 'First conditional', rule: 'Use the first conditional for a real future possibility: present simple in the condition and will plus base verb in the result.', micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })
+export const ENGLISH_CONDITIONAL_FIRST_EDITORIAL = createEnglishEditorialPack({ slug: 'conditional-first', form: 'conditional-first', focus: 'First conditional', rule: 'Use the first conditional for a real future possibility: present simple in the condition and will plus base verb in the result.', choices, micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })

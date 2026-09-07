@@ -1,14 +1,14 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Waiting before the doctor arrived', cue: 'duration continuing up to a past event', segments: ['They ', ' for an hour when the doctor arrived.'], verb: 'wait', answers: ['had been waiting'], distractors: ['waited', 'were waiting', 'have been waiting'] },
-  { title: 'Why the road was wet', cue: 'an earlier ongoing cause of past evidence', segments: ['The road was wet because it ', '.'], verb: 'rain', answers: ['had been raining'], distractors: ['rained', 'was raining', 'has been raining'] },
+  { title: 'Why the road was wet', cue: 'an earlier ongoing cause of past evidence', segments: ['The road was wet because it ', '.'], verb: 'rain', answers: ['had been raining'], distractors: ['rains', 'is raining', 'has been raining'] },
   { title: 'Years before a job change', cue: 'duration up to a past change', segments: ['I ', ' there for years before I changed jobs.'], verb: 'work', answers: ['had been working'], distractors: ['worked', 'was working', 'have worked'] },
   { title: 'Tired after the hike', cue: 'a prior extended activity explaining a past state', segments: ['Maya was exhausted because she ', ' since dawn.'], verb: 'hike', answers: ['had been hiking'], distractors: ['hiked', 'was hiking', 'has been hiking'] },
   { title: 'Practice before the audition', cue: 'repeated preparation up to a past event', segments: ['Leo ', ' daily for months before the audition.'], verb: 'practice', answers: ['had been practicing', 'had been practising'], distractors: ['practiced', 'was practicing', 'has been practicing'] },
   { title: 'Calls before the reply', cue: 'repeated attempts before a past response', segments: ['We ', ' all morning before someone answered.'], verb: 'call', answers: ['had been calling'], distractors: ['called', 'were calling', 'have been calling'] },
   { title: 'A noisy machine', cue: 'an ongoing earlier cause discovered later', segments: ['The machine failed after it ', ' strange noises for days.'], verb: 'make', answers: ['had been making'], distractors: ['made', 'was making', 'has been making'] },
-  { title: 'Training before the injury', cue: 'an activity continuing until a past interruption', segments: ['The team ', ' for two hours when the captain was injured.'], verb: 'train', answers: ['had been training'], distractors: ['trained', 'was training', 'has been training'] },
+  { title: 'Training before the injury', cue: 'an activity continuing until a past interruption', segments: ['The team ', ' for two hours when the captain was injured.'], verb: 'train', answers: ['had been training'], distractors: ['trains', 'is training', 'has been training'] },
   { title: 'No sleep before sunrise', cue: 'a negative ongoing situation up to a past point', segments: ['By sunrise, I ', ' well for several nights.'], verb: 'not sleep', answers: ['had not been sleeping', "hadn't been sleeping"], distractors: ['did not sleep', 'was not sleeping', 'have not been sleeping'] },
   { title: 'Studying before the exam', cue: 'duration of an activity before a past result', segments: ['They passed because they ', ' together since January.'], verb: 'study', answers: ['had been studying'], distractors: ['studied', 'were studying', 'have been studying'] },
 ]
@@ -40,29 +40,41 @@ const errors: EnglishEditorialErrorSeed[] = [
 ]
 
 const sequences: EnglishEditorialSequenceSeed[] = [
-  { events: ['Sailors had been removing water', 'A passenger had been waving', 'The operator had been repeating the signal'], target: 0 },
-  { events: ['Doctors had been treating patients', 'Nurses had been moving between wards', 'The lab had been processing samples'], target: 1 },
-  { events: ['Rain had been falling', 'Water had been spilling from a drain', 'The river had been rising'], target: 2 },
-  { events: ['Actors had been rehearsing', 'The director had been refining transitions', 'Designers had been adjusting costumes'], target: 0 },
-  { events: ['We had been collecting data', 'An analyst had been verifying results', 'I had been rewriting methods'], target: 1 },
-  { events: ['Volunteers had been searching', 'Police had been patrolling roads', 'A pilot had been circling the valley'], target: 2 },
-  { events: ['Users had been reporting delays', 'The database had been consuming memory', 'Engineers had been monitoring logs'], target: 0 },
-  { events: ['Players had been running daily', 'The coach had been testing formations', 'The goalkeeper had been practicing penalties'], target: 1 },
-  { events: ['Researchers had been opening boxes', 'An assistant had been moving shelves', 'Another had been sorting papers'], target: 2 },
-  { events: ['The family had been packing', 'Ana had been selling furniture', 'Her brother had been labeling boxes'], target: 0 },
+  { events: ['Sailors had been removing water', 'A passenger had been waving', 'The operator had been repeating the signal'], target: 0, productionSentence: 'Before the rescue boat arrived, sailors had been removing water for an hour' },
+  { events: ['Doctors had been treating patients', 'Nurses had been moving between wards', 'The lab had been processing samples'], target: 1, productionSentence: 'When the inspection began, nurses had been moving between wards all morning' },
+  { events: ['Rain had been falling', 'Water had been spilling from a drain', 'The river had been rising'], target: 2, productionSentence: 'Before the bridge closed, the river had been rising for several hours' },
+  { events: ['Actors had been rehearsing', 'The director had been refining transitions', 'Designers had been adjusting costumes'], target: 0, productionSentence: 'Before the premiere started, actors had been rehearsing for six weeks' },
+  { events: ['We had been collecting data', 'An analyst had been verifying results', 'I had been rewriting methods'], target: 1, productionSentence: 'When the reviewers asked for evidence, an analyst had been verifying results for days' },
+  { events: ['Volunteers had been searching', 'Police had been patrolling roads', 'A pilot had been circling the valley'], target: 2, productionSentence: 'When the dog was found, a pilot had been circling the valley since dawn' },
+  { events: ['Users had been reporting delays', 'The database had been consuming memory', 'Engineers had been monitoring logs'], target: 0, productionSentence: 'Before the server crashed, users had been reporting delays all morning' },
+  { events: ['Players had been running daily', 'The coach had been testing formations', 'The goalkeeper had been practicing penalties'], target: 1, productionSentence: 'Before the final began, the coach had been testing formations for a month' },
+  { events: ['Researchers had been opening boxes', 'An assistant had been moving shelves', 'Another had been sorting papers'], target: 2, productionSentence: 'Before the archive closed, another researcher had been sorting papers for hours' },
+  { events: ['The family had been packing', 'Ana had been selling furniture', 'Her brother had been labeling boxes'], target: 0, productionSentence: 'Before the truck arrived, the family had been packing for three days' },
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'When help arrived, the driver ', after: ' to restart the engine for twenty minutes.', answer: 'had been trying', distractors: ['tried', 'was trying', 'has been trying'] },
-  { before: 'The pavement was shiny because it ', after: ' since late afternoon.', answer: 'had been raining', distractors: ['rained', 'was raining', 'has been raining'] },
-  { before: 'Before the promotion, Maya ', after: ' on the same team for five years.', answer: 'had been working', distractors: ['worked', 'was working', 'has worked'] },
-  { before: 'The children were muddy because they ', after: ' beside the river.', answer: 'had been playing', distractors: ['played', 'were playing', 'have been playing'] },
-  { before: 'By the inspection, the machine ', after: ' oil for several days.', answer: 'had been leaking', distractors: ['leaked', 'was leaking', 'has been leaking'] },
-  { before: 'They were confident because they ', after: ' the route every weekend.', answer: 'had been practicing', distractors: ['practiced', 'were practicing', 'have been practicing'] },
-  { before: 'When the reply arrived, I ', after: ' the office all morning.', answer: 'had been calling', distractors: ['called', 'was calling', 'have been calling'] },
-  { before: 'The team looked exhausted because it ', after: ' since dawn.', answer: 'had been training', distractors: ['trained', 'was training', 'has been training'] },
-  { before: 'Before the doctor changed the treatment, the patient ', after: ' well for weeks.', answer: 'had not been sleeping', distractors: ['did not sleep', 'was not sleeping', 'has not been sleeping'] },
-  { before: 'The room smelled of paint because workers ', after: ' the ceiling all day.', answer: 'had been repainting', distractors: ['repainted', 'were repainting', 'have been repainting'] },
+  { verb: 'try', before: 'When help arrived, the driver ', after: ' to restart the engine for twenty minutes.', answer: 'had been trying', distractors: ['tries', 'is trying', 'has been trying'] },
+  { verb: 'rain', before: 'The pavement was shiny because it ', after: ' since late afternoon.', answer: 'had been raining', distractors: ['rains', 'is raining', 'has been raining'] },
+  { verb: 'work', before: 'Before the promotion, Maya ', after: ' on the same team for five years.', answer: 'had been working', distractors: ['works', 'is working', 'has been working'] },
+  { verb: 'play', before: 'The children were muddy because they ', after: ' beside the river.', answer: 'had been playing', distractors: ['play', 'are playing', 'have been playing'] },
+  { verb: 'leak', before: 'By the inspection, the machine ', after: ' oil for several days.', answer: 'had been leaking', distractors: ['leaks', 'is leaking', 'has been leaking'] },
+  { verb: 'practice', before: 'They were confident because they ', after: ' the route every weekend.', answer: 'had been practicing', distractors: ['practice', 'are practicing', 'have been practicing'] },
+  { verb: 'call', before: 'When the reply arrived, I ', after: ' the office all morning.', answer: 'had been calling', distractors: ['call', 'am calling', 'have been calling'] },
+  { verb: 'train', before: 'The team looked exhausted because it ', after: ' since dawn.', answer: 'had been training', distractors: ['trains', 'is training', 'has been training'] },
+  { verb: 'sleep', before: 'Before the doctor changed the treatment, the patient ', after: ' well for weeks.', answer: 'had not been sleeping', distractors: ['does not sleep', 'is not sleeping', 'has not been sleeping'] },
+  { verb: 'repaint', before: 'The room smelled of paint because workers ', after: ' the ceiling all day.', answer: 'had been repainting', distractors: ['repaint', 'are repainting', 'have been repainting'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'duration before a past result', segments: ['The technician ', ' to restart the pump for an hour before the backup crew arrived.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'ongoing cause before a past observation', segments: ['It ', ' since dawn, so the footpaths were flooded.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'duration before a past change', segments: ['Marta ', ' at the archive for seven years when it relocated.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'repeated activity before a past event', segments: ['The children ', ' outside before the hail began.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'ongoing cause before a past discovery', segments: ['The pipe ', ' for weeks before the stain appeared.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'duration before a past performance', segments: ['The performers ', ' their cues daily before the recital.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'repeated attempts before a past response', segments: ['I ', ' the helpline all morning before someone answered.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'ongoing preparation before a past event', segments: ['The rowing team ', ' for months before the regional race.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a negative ongoing cause before a past result', segments: ['She ', ' well for several nights, so the doctor changed her schedule.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'duration before a completed past event', segments: ['Workers ', ' the hall for days before the council visit.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_PAST_PERFECT_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'past-perfect-continuous', form: 'past-perfect-continuous', focus: 'Past perfect continuous', rule: 'Use the past perfect continuous for duration or repeated activity extending up to a past event, often explaining past evidence.', micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })
+export const ENGLISH_PAST_PERFECT_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'past-perfect-continuous', form: 'past-perfect-continuous', focus: 'Past perfect continuous', rule: 'Use the past perfect continuous for duration or repeated activity extending up to a past event, often explaining past evidence.', choices, micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })

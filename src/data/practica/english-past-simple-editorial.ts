@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Yesterday’s call', cue: 'a completed event yesterday', segments: ['Leo ', ' me yesterday afternoon.'], verb: 'call', answers: ['called'], distractors: ['has called', 'was calling', 'had called'] },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'Last Thursday the committee ', after: ' the revised proposal.', answer: 'approved', distractors: ['has approved', 'was approving', 'had approved'] },
-  { before: 'I ', after: ' that photograph during my 2021 trip.', answer: 'took', distractors: ['have taken', 'was taking', 'had taken'] },
-  { before: 'The alarm ', after: ' at 2:14 yesterday morning.', answer: 'rang', distractors: ['has rung', 'was ringing', 'had rung'] },
-  { before: 'We ', after: ' the old bridge two summers ago.', answer: 'crossed', distractors: ['have crossed', 'were crossing', 'had crossed'] },
-  { before: 'Nora ', after: ' the wrong platform and missed her train last night.', answer: 'chose', distractors: ['has chosen', 'was choosing', 'had chosen'] },
-  { before: 'The shop ', after: ' any deliveries during the holiday.', answer: 'did not receive', distractors: ['has not received', 'was not receiving', 'had not received'] },
-  { before: 'A local carpenter ', after: ' this table in 1984.', answer: 'made', distractors: ['has made', 'was making', 'had made'] },
-  { before: 'They ', after: ' the final question correctly at yesterday’s quiz.', answer: 'answered', distractors: ['have answered', 'were answering', 'had answered'] },
-  { before: 'The river ', after: ' its banks during the storm last June.', answer: 'broke', distractors: ['has broken', 'was breaking', 'had broken'] },
-  { before: 'Mila ', after: ' home just after midnight on Saturday.', answer: 'got', distractors: ['has gotten', 'was getting', 'had gotten'] },
+  { verb: 'approve', before: 'Last Thursday the committee ', after: ' the revised proposal.', answer: 'approved', distractors: ['has approved', 'was approving', 'had approved'] },
+  { verb: 'take', before: 'I ', after: ' that photograph during my 2021 trip.', answer: 'took', distractors: ['have taken', 'was taking', 'had taken'] },
+  { verb: 'ring', before: 'The alarm ', after: ' at 2:14 yesterday morning.', answer: 'rang', distractors: ['has rung', 'was ringing', 'had rung'] },
+  { verb: 'cross', before: 'We ', after: ' the old bridge two summers ago.', answer: 'crossed', distractors: ['have crossed', 'were crossing', 'had crossed'] },
+  { verb: 'choose', before: 'Nora ', after: ' the wrong platform and missed her train last night.', answer: 'chose', distractors: ['has chosen', 'was choosing', 'had chosen'] },
+  { verb: 'receive', before: 'The shop ', after: ' any deliveries during the holiday.', answer: 'did not receive', distractors: ['has not received', 'was not receiving', 'had not received'] },
+  { verb: 'make', before: 'A local carpenter ', after: ' this table in 1984.', answer: 'made', distractors: ['has made', 'was making', 'had made'] },
+  { verb: 'answer', before: 'They ', after: ' the final question correctly at yesterday’s quiz.', answer: 'answered', distractors: ['have answered', 'were answering', 'had answered'] },
+  { verb: 'break', before: 'The river ', after: ' its banks during the storm last June.', answer: 'broke', distractors: ['has broken', 'was breaking', 'had broken'] },
+  { verb: 'get', before: 'Mila ', after: ' home just after midnight on Saturday.', answer: 'got', distractors: ['has gotten', 'was getting', 'had gotten'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'a finished event at a stated past time', segments: ['The council ', ' the new park plan on Tuesday.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a completed past journey', segments: ['We ', ' the overnight coach to Bristol last weekend.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a single completed event', segments: ['The doorbell ', ' just after midnight.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a finished past action', segments: ['The hikers ', ' the suspension bridge before sunset.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'a past decision', segments: ['In 2022, Ava ', ' environmental engineering as her major.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a negative finished event', segments: ['The office ', ' our form yesterday.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'a completed past creation', segments: ['The carpenter ', ' this cabinet in 2019.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a finished past response', segments: ['Jon ', ' all three questions during the interview.'], answer: final[7].answer, distractors: ['has answered', 'was answering', 'had answered'] },
+  { cue: 'a single past accident', segments: ['A falling branch ', ' the garden fence last night.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'a completed past arrival', segments: ['We ', ' to the shelter before the storm began.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_PAST_SIMPLE_EDITORIAL = createEnglishEditorialPack({ slug: 'past-simple', form: 'past-simple', focus: 'Past simple', rule: 'Use the past simple for completed events anchored to a finished past time or advancing a finished narrative.', micro, long, errors, sequences, final })
+export const ENGLISH_PAST_SIMPLE_EDITORIAL = createEnglishEditorialPack({ slug: 'past-simple', form: 'past-simple', focus: 'Past simple', rule: 'Use the past simple for completed events anchored to a finished past time or advancing a finished narrative.', choices, micro, long, errors, sequences, final })

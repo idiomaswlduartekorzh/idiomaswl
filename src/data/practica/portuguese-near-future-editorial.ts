@@ -1,5 +1,6 @@
 import {
   createPortugueseEditorialPack,
+  type PortugueseEditorialChoiceSeed,
   type PortugueseEditorialErrorSeed,
   type PortugueseEditorialFinalSeed,
   type PortugueseEditorialGapSeed,
@@ -8,17 +9,37 @@ import {
 } from './portuguese-editorial-builder.ts'
 
 const micro: PortugueseEditorialMicroSeed[] = [
-  { title: 'As nuvens escuras', cue: 'uma previsão imediata baseada em evidência', segments: ['Olhe essas nuvens: ', '.'], verb: 'chover', answers: ['vai chover'], distractors: ['chove', 'choverá', 'choveria'] },
-  { title: 'As passagens compradas', cue: 'um plano já decidido', segments: ['Já compramos as passagens; ', ' na sexta de manhã.'], verb: 'viajar', answers: ['vamos viajar'], distractors: ['viajamos sempre', 'viajaremos', 'viajaríamos'] },
-  { title: 'O copo na beirada', cue: 'um acontecimento iminente', segments: ['Cuidado, esse copo ', '!'], verb: 'cair', answers: ['vai cair'], distractors: ['cai', 'cairá', 'cairia'] },
-  { title: 'A reunião confirmada', cue: 'uma intenção já organizada', segments: ['Confirmei o horário: ', ' a diretora às três.'], verb: 'encontrar', answers: ['vou encontrar'], distractors: ['encontro', 'encontrarei', 'encontraria'] },
-  { title: 'A bateria vermelha', cue: 'uma consequência próxima visível', segments: ['A bateria está em 1%; o celular ', '.'], verb: 'desligar', answers: ['vai desligar'], distractors: ['desliga', 'desligará', 'desligaria'] },
-  { title: 'O jantar planejado', cue: 'um plano coletivo preparado', segments: ['Compramos tudo; hoje à noite ', ' para dez pessoas.'], verb: 'cozinhar', answers: ['vamos cozinhar'], distractors: ['cozinhamos', 'cozinharemos', 'cozinharíamos'] },
-  { title: 'A mala na porta', cue: 'uma partida próxima e decidida', segments: ['A mala está pronta: Lia ', ' para Brasília.'], verb: 'partir', answers: ['vai partir'], distractors: ['parte', 'partirá', 'partiria'] },
-  { title: 'As ferramentas separadas', cue: 'uma ação imediata preparada', segments: ['As ferramentas estão na mesa; vocês ', ' a prateleira agora.'], verb: 'consertar', answers: ['vão consertar'], distractors: ['consertam', 'consertarão', 'consertariam'] },
-  { title: 'O auditório reservado', cue: 'um evento próximo já organizado', segments: ['O auditório está reservado: eles ', ' o projeto amanhã.'], verb: 'apresentar', answers: ['vão apresentar'], distractors: ['apresentam', 'apresentarão', 'apresentariam'] },
-  { title: 'O forno aquecido', cue: 'uma ação prestes a começar', segments: ['O forno já está quente; você ', ' o bolo.'], verb: 'assar', answers: ['vai assar'], distractors: ['assa', 'assará', 'assaria'] },
+  { title: 'As nuvens escuras', cue: 'uma previsão imediata baseada em evidência', segments: ['Olhe essas nuvens: ', '.'], verb: 'chover', answers: ['vai chover'], distractors: ['tinha chovido', 'chovia', 'choveria'] },
+  { title: 'As passagens compradas', cue: 'um plano já decidido', segments: ['Já compramos as passagens; ', ' na sexta de manhã.'], verb: 'viajar', answers: ['vamos viajar'], distractors: ['tínhamos viajado', 'viajávamos', 'viajaríamos'] },
+  { title: 'O copo na beirada', cue: 'um acontecimento iminente', segments: ['Cuidado, esse copo ', '!'], verb: 'cair', answers: ['vai cair'], distractors: ['tinha caído', 'caía', 'cairia'] },
+  { title: 'A reunião confirmada', cue: 'uma intenção já organizada', segments: ['Confirmei o horário: ', ' a diretora às três.'], verb: 'encontrar', answers: ['vou encontrar'], distractors: ['tinha encontrado', 'encontrava', 'encontraria'] },
+  { title: 'A bateria vermelha', cue: 'uma consequência próxima visível', segments: ['A bateria está em 1%; o celular ', '.'], verb: 'desligar', answers: ['vai desligar'], distractors: ['tinha desligado', 'desligava', 'desligaria'] },
+  { title: 'O jantar planejado', cue: 'um plano coletivo preparado', segments: ['Compramos tudo; hoje à noite ', ' para dez pessoas.'], verb: 'cozinhar', answers: ['vamos cozinhar'], distractors: ['tínhamos cozinhado', 'cozinhávamos', 'cozinharíamos'] },
+  { title: 'A mala na porta', cue: 'uma partida próxima e decidida', segments: ['A mala está pronta: Lia ', ' para Brasília.'], verb: 'partir', answers: ['vai partir'], distractors: ['tinha partido', 'partia', 'partiria'] },
+  { title: 'As ferramentas separadas', cue: 'uma ação imediata preparada', segments: ['As ferramentas estão na mesa; vocês ', ' a prateleira agora.'], verb: 'consertar', answers: ['vão consertar'], distractors: ['tinham consertado', 'consertavam', 'consertariam'] },
+  { title: 'O auditório reservado', cue: 'um evento próximo já organizado', segments: ['O auditório está reservado: eles ', ' o projeto amanhã.'], verb: 'apresentar', answers: ['vão apresentar'], distractors: ['tinham apresentado', 'apresentavam', 'apresentariam'] },
+  { title: 'O forno aquecido', cue: 'uma ação prestes a começar', segments: ['O forno já está quente; você ', ' o bolo.'], verb: 'assar', answers: ['vai assar'], distractors: ['tinha assado', 'assava', 'assaria'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['O trovão está cada vez mais perto: ', ' em poucos minutos.'],
+  ['O hotel já confirmou a reserva; ', ' na manhã de sábado.'],
+  ['A estante balançou e esse vaso ', ' se ninguém segurá-lo.'],
+  ['Meu crachá está pronto: ', ' o diretor depois do almoço.'],
+  ['A tela está piscando; o tablet ', ' por falta de carga.'],
+  ['Os convidados já estão chegando e nós ', ' assim que eles entrarem.'],
+  ['O ônibus encostou: Lia ', ' para Goiânia agora.'],
+  ['A peça nova chegou; vocês ', ' a porta antes do fechamento.'],
+  ['Os engenheiros já subiram ao palco: eles ', ' o protótipo em instantes.'],
+  ['A massa já descansou e você ', ' o pão agora.'],
+]
+
+const choices: PortugueseEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: PortugueseEditorialGapSeed[] = [
   { title: 'A saída para a trilha', instruction: 'Complete este plano imediato e coerente.', segments: ['As mochilas estão prontas. Nós ', ' de casa em cinco minutos, ', ' o ônibus das seis e ', ' a trilha antes das oito.'], entries: [['sair', ['vamos sair']], ['pegar', ['vamos pegar']], ['começar', ['vamos começar']]] },
@@ -60,16 +81,16 @@ const sequences: PortugueseEditorialSequenceSeed[] = [
 ]
 
 const final: PortugueseEditorialFinalSeed[] = [
-  { before: 'A mala está pronta: eu ', after: ' em alguns minutos.', answer: 'vou sair', distractors: ['saio', 'sairei', 'sairia'] },
-  { before: 'Olhe a fumaça: o alarme ', after: '!', answer: 'vai tocar', distractors: ['toca', 'tocará', 'tocaria'] },
-  { before: 'Reservamos o salão; ', after: ' a cerimônia amanhã.', answer: 'vamos organizar', distractors: ['organizamos sempre', 'organizaremos', 'organizaríamos'] },
-  { before: 'Os jogadores já estão no campo: a partida ', after: '.', answer: 'vai começar', distractors: ['começa', 'começará', 'começaria'] },
-  { before: 'A luz vermelha está piscando; as máquinas ', after: '.', answer: 'vão parar', distractors: ['param', 'pararão', 'parariam'] },
-  { before: 'Você já escolheu as cores; ', after: ' a parede hoje à tarde.', answer: 'vai pintar', distractors: ['pinta', 'pintará', 'pintaria'] },
-  { before: 'O contrato está assinado: ela ', after: ' na segunda-feira.', answer: 'vai começar', distractors: ['começa', 'começará', 'começaria'] },
-  { before: 'As passagens estão impressas; vocês ', after: ' às oito.', answer: 'vão embarcar', distractors: ['embarcam', 'embarcarão', 'embarcariam'] },
-  { before: 'O microfone está aberto: o prefeito ', after: ' os resultados.', answer: 'vai anunciar', distractors: ['anuncia', 'anunciará', 'anunciaria'] },
-  { before: 'Já separei os ingredientes; ', after: ' a massa agora.', answer: 'vamos preparar', distractors: ['preparamos sempre', 'prepararemos', 'prepararíamos'] },
+  { verb: 'sair', before: 'A mala está pronta: eu ', after: ' em alguns minutos.', answer: 'vou sair', distractors: ['tinha saído', 'saía', 'sairia'] },
+  { verb: 'tocar', before: 'Olhe a fumaça: o alarme ', after: '!', answer: 'vai tocar', distractors: ['tinha tocado', 'tocava', 'tocaria'] },
+  { verb: 'organizar', before: 'Reservamos o salão; ', after: ' a cerimônia amanhã.', answer: 'vamos organizar', distractors: ['tínhamos organizado', 'organizávamos', 'organizaríamos'] },
+  { verb: 'começar', before: 'Os jogadores já estão no campo: a partida ', after: '.', answer: 'vai começar', distractors: ['tinha começado', 'começava', 'começaria'] },
+  { verb: 'parar', before: 'A luz vermelha está piscando; as máquinas ', after: '.', answer: 'vão parar', distractors: ['tinham parado', 'paravam', 'parariam'] },
+  { verb: 'pintar', before: 'Você já escolheu as cores; ', after: ' a parede hoje à tarde.', answer: 'vai pintar', distractors: ['tinha pintado', 'pintava', 'pintaria'] },
+  { verb: 'começar', before: 'O contrato está assinado: ela ', after: ' na segunda-feira.', answer: 'vai começar', distractors: ['tinha começado', 'começava', 'começaria'] },
+  { verb: 'embarcar', before: 'As passagens estão impressas; vocês ', after: ' às oito.', answer: 'vão embarcar', distractors: ['tinham embarcado', 'embarcavam', 'embarcariam'] },
+  { verb: 'anunciar', before: 'O microfone está aberto: o prefeito ', after: ' os resultados.', answer: 'vai anunciar', distractors: ['tinha anunciado', 'anunciava', 'anunciaria'] },
+  { verb: 'preparar', before: 'Já separei os ingredientes; ', after: ' a massa agora.', answer: 'vamos preparar', distractors: ['tínhamos preparado', 'preparávamos', 'prepararíamos'] },
 ]
 
 export const PORTUGUESE_NEAR_FUTURE_EDITORIAL = createPortugueseEditorialPack({
@@ -77,6 +98,7 @@ export const PORTUGUESE_NEAR_FUTURE_EDITORIAL = createPortugueseEditorialPack({
   form: 'futuro-proximo',
   focus: 'Ir + infinitivo',
   rule: 'No português brasileiro, ir no presente + infinitivo é a forma corrente para plano decidido, ação iminente ou previsão baseada em evidência.',
+  choices,
   micro,
   long,
   errors,

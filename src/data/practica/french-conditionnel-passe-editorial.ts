@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: FrenchEditorialMicroSeed[] = [
   { title: 'L’erreur évitable', cue: 'un reproche sur un passé non réalisé', segments: ['Avec une relecture, vous ', ' cette erreur, mais le texte est parti sans contrôle.'], verb: 'éviter', answers: ['auriez évité'], distractors: ['évitiez', 'avez évité', 'éviteriez'] },
   { title: 'La découverte présumée', cue: 'une découverte passée rapportée avec prudence', segments: ['D’après le journal local, sans rapport public, des plongeurs ', ' l’épave mardi.'], verb: 'retrouver', answers: ['auraient retrouvé'], distractors: ['retrouvaient', 'ont retrouvé', 'retrouveraient'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Avec le bon numéro, j’', ' le formulaire lundi, mais il manquait.'],
+  ['Avec un vol direct, elles ', ' avant midi, mais il était complet.'],
+  ['Selon la radio, sans communiqué officiel, la ministre ', ' sa candidature jeudi.'],
+  ['Si le réveil avait sonné, tu ', ' le premier bus.'],
+  ['Sans le brouillard, nous ', ' au col avant la nuit.'],
+  ['Si le service avait transmis les chiffres, elle ', ' l’audit vendredi.'],
+  ['D’après son agent, le joueur ', ' un nouveau contrat en secret.'],
+  ['Sans la grille fermée, les enfants ', ' dans la rue.'],
+  ['Avec une sauvegarde récente, vous ', ' cette perte de données.'],
+  ['Selon un témoin, les plongeurs ', ' la seconde boîte noire.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'Le voyage empêché', instruction: 'Complète les conséquences passées qui ne se sont pas réalisées.', segments: ['Sans la grève, nous ', ' vendredi. Léa ', ' le train de midi et ses amis l’', ' à la gare, mais aucun train n’a circulé.'], entries: [['partir', ['serions partis', 'serions parties']], ['prendre', ['aurait pris']], ['attendre', ['auraient attendue']]] },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'Avec le bon code, j’', after: ' le document hier, mais je ne l’avais pas.', answer: 'aurais ouvert', distractors: ['ouvrais', 'ai ouvert', 'ouvrirais'] },
-  { before: 'Sans le brouillard, les avions ', after: ' à l’heure, mais la piste est restée fermée.', answer: 'seraient partis', distractors: ['partaient', 'sont partis', 'partiraient'] },
-  { before: 'Selon la presse, sans annonce officielle, le groupe ', after: ' son contrat lundi.', answer: 'aurait signé', distractors: ['signait', 'a signé', 'signerait'] },
-  { before: 'Si nous avions réservé, nous ', after: ' près de la scène, mais tout était complet.', answer: 'aurions dîné', distractors: ['dînions', 'avons dîné', 'dînerions'] },
-  { before: 'Avec votre aide, elle ', after: ' avant minuit, mais elle est restée bloquée.', answer: 'serait rentrée', distractors: ['rentrait', 'est rentrée', 'rentrerait'] },
-  { before: 'Sans cette erreur, tu ', after: ' le concours, mais le dossier a été rejeté.', answer: 'aurais réussi', distractors: ['réussissais', 'as réussi', 'réussirais'] },
-  { before: 'D’après un témoin, sans rapport public, les chercheurs ', after: ' le site mardi.', answer: 'auraient quitté', distractors: ['quittaient', 'ont quitté', 'quitteraient'] },
-  { before: 'Avec un billet valide, vous, Paul et Marc, ', after: ' dans la salle, mais l’accès vous a été refusé.', answer: 'seriez entrés', distractors: ['entriez', 'êtes entrés', 'entreriez'] },
-  { before: 'Si le serveur avait répondu, nous ', after: ' la commande hier.', answer: 'aurions confirmé', distractors: ['confirmions', 'avons confirmé', 'confirmerions'] },
-  { before: 'Selon le journal, sans preuve indépendante, la toile ', after: ' en Suisse.', answer: 'aurait reparu', distractors: ['reparaissait', 'a reparu', 'reparaîtrait'] },
+  { verb: 'ouvrir', before: 'Avec le bon code, j’', after: ' le document hier, mais ce code ne m’avait pas été fourni.', answer: 'aurais ouvert', distractors: ['ouvrais', 'ai ouvert', 'ouvrirais'] },
+  { verb: 'partir', before: 'Sans le brouillard, les avions ', after: ' à l’heure, mais la piste est restée fermée.', answer: 'seraient partis', distractors: ['partaient', 'sont partis', 'partiraient'] },
+  { verb: 'signer', before: 'Selon la presse, sans annonce officielle, le groupe ', after: ' son contrat lundi.', answer: 'aurait signé', distractors: ['signait', 'a signé', 'signerait'] },
+  { verb: 'dîner', before: 'Si nous avions réservé, nous ', after: ' près de la scène, mais tout était complet.', answer: 'aurions dîné', distractors: ['dînions', 'avons dîné', 'dînerions'] },
+  { verb: 'rentrer', before: 'Avec votre aide, elle ', after: ' avant minuit, mais elle est restée bloquée.', answer: 'serait rentrée', distractors: ['rentrait', 'est rentrée', 'rentrerait'] },
+  { verb: 'réussir', before: 'Sans cette erreur, tu ', after: ' le concours, mais le dossier a été rejeté.', answer: 'aurais réussi', distractors: ['réussissais', 'as réussi', 'réussirais'] },
+  { verb: 'quitter', before: 'D’après un témoin, sans rapport public, les chercheurs ', after: ' le site mardi.', answer: 'auraient quitté', distractors: ['quittaient', 'ont quitté', 'quitteraient'] },
+  { verb: 'entrer', before: 'Avec un billet valide, vous, Paul et Marc, ', after: ' dans la salle, mais l’accès vous a été refusé.', answer: 'seriez entrés', distractors: ['entriez', 'êtes entrés', 'entreriez'] },
+  { verb: 'confirmer', before: 'Si le serveur avait répondu, nous ', after: ' la commande hier.', answer: 'aurions confirmé', distractors: ['confirmions', 'avons confirmé', 'confirmerions'] },
+  { verb: 'reparaître', before: 'Selon le journal, sans preuve indépendante, la toile ', after: ' en Suisse.', answer: 'aurait reparu', distractors: ['reparaissait', 'a reparu', 'reparaîtrait'] },
 ]
 
 export const FRENCH_CONDITIONNEL_PASSE_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_CONDITIONNEL_PASSE_EDITORIAL = createFrenchEditorialPack({
   form: 'conditionnel-passe',
   focus: 'Conditionnel passé',
   rule: 'Le conditionnel passé exprime une conséquence passée non réalisée ou, avec une source explicitement réservée, une information passée non confirmée.',
+  choices,
   micro,
   long,
   errors,

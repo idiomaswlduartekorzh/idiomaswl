@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: FrenchEditorialMicroSeed[] = [
   { title: 'Les dimanches en famille', cue: 'une coutume régulière', segments: ['Mes cousins ', ' déjeuner chez leurs grands-parents le dimanche.'], verb: 'venir', answers: ['viennent'], distractors: ['sont venus', 'venaient', 'viendront'] },
   { title: 'Le calendrier universitaire', cue: 'une date officielle programmée', segments: ['Le semestre d’automne ', ' le 4 septembre.'], verb: 'commencer', answers: ['commence'], distractors: ['a commencé', 'commençait', 'commencera'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Selon l’horaire, le dernier autocar ', ' le dépôt à vingt-deux heures chaque soir.'],
+  ['Dans cette chaudière, l’eau ', ' dès que la température atteint 100 °C.'],
+  ['Pour ses gardes du matin, Lina ', ' à l’hôpital en métro.'],
+  ['Pendant notre mission à Nice, nous ', ' dans un petit hôtel.'],
+  ['Dans l’atelier, le règlement n’', ' aucun téléphone près des machines.'],
+  ['La navette fluviale ', ' cinq quais avant le terminus.'],
+  ['Chaque vendredi, vous ', ' le standard jusqu’à dix-huit heures.'],
+  ['Ce dispositif ', ' la chaleur en électricité.'],
+  ['Chaque Noël, mes cousins ', ' passer quelques jours chez nous.'],
+  ['Selon le calendrier annuel, la session de printemps ', ' le 12 janvier.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'L’ouverture de la boulangerie', instruction: 'Complète cette routine matinale cohérente.', segments: ['Chaque matin, Inès ', ' les volets à six heures. Son frère ', ' les fours pendant qu’elle ', ' la première livraison.'], entries: [['ouvrir', ['ouvre']], ['vérifier', ['vérifie']], ['recevoir', ['reçoit']]] },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'Chaque lundi, la responsable ', after: ' les stocks avant l’ouverture.', answer: 'compte', distractors: ['a compté', 'comptait', 'comptera'] },
-  { before: 'Le tram de l’aéroport ', after: ' toutes les quinze minutes.', answer: 'passe', distractors: ['est passé', 'passait', 'passera'] },
-  { before: 'Ce logiciel ', after: ' une copie après chaque modification.', answer: 'crée', distractors: ['a créé', 'créait', 'créera'] },
-  { before: 'Mes voisins ', after: ' leur stand au marché le samedi.', answer: 'tiennent', distractors: ['ont tenu', 'tenaient', 'tiendront'] },
-  { before: 'La Lune ', after: ' la lumière du Soleil.', answer: 'réfléchit', distractors: ['a réfléchi', 'réfléchissait', 'réfléchira'] },
-  { before: 'Cette porte ', after: ' quand le voyant devient vert.', answer: 'se déverrouille', distractors: ["s’est déverrouillée", 'se déverrouillait', 'se déverrouillera'] },
-  { before: 'Le sentier côtier ', after: ' près de l’ancien phare.', answer: 'finit', distractors: ['a fini', 'finissait', 'finira'] },
-  { before: 'Notre chorale ', after: ' dans la salle municipale le jeudi.', answer: 'répète', distractors: ['a répété', 'répétait', 'répétera'] },
-  { before: 'Deux techniciens ', after: ' le générateur une fois par mois.', answer: 'testent', distractors: ['ont testé', 'testaient', 'testeront'] },
-  { before: 'L’exposition d’hiver ', after: ' le premier lundi de décembre.', answer: 'ouvre', distractors: ['a ouvert', 'ouvrait', 'ouvrira'] },
+  { verb: 'compter', before: 'Chaque lundi, la responsable ', after: ' les stocks avant l’ouverture.', answer: 'compte', distractors: ['a compté', 'comptait', 'comptera'] },
+  { verb: 'passer', before: 'Le tram de l’aéroport ', after: ' toutes les quinze minutes.', answer: 'passe', distractors: ['est passé', 'passait', 'passera'] },
+  { verb: 'créer', before: 'Ce logiciel ', after: ' une copie après chaque modification.', answer: 'crée', distractors: ['a créé', 'créait', 'créera'] },
+  { verb: 'tenir', before: 'Mes voisins ', after: ' leur stand au marché le samedi.', answer: 'tiennent', distractors: ['ont tenu', 'tenaient', 'tiendront'] },
+  { verb: 'réfléchir', before: 'La Lune ', after: ' la lumière du Soleil.', answer: 'réfléchit', distractors: ['a réfléchi', 'réfléchissait', 'réfléchira'] },
+  { verb: 'se déverrouiller', before: 'Cette porte ', after: ' quand le voyant devient vert.', answer: 'se déverrouille', distractors: ["s’est déverrouillée", 'se déverrouillait', 'se déverrouillera'] },
+  { verb: 'finir', before: 'Le sentier côtier ', after: ' près de l’ancien phare.', answer: 'finit', distractors: ['a fini', 'finissait', 'finira'] },
+  { verb: 'répéter', before: 'Notre chorale ', after: ' dans la salle municipale le jeudi.', answer: 'répète', distractors: ['a répété', 'répétait', 'répétera'] },
+  { verb: 'tester', before: 'Deux techniciens ', after: ' le générateur une fois par mois.', answer: 'testent', distractors: ['ont testé', 'testaient', 'testeront'] },
+  { verb: 'ouvrir', before: 'Chaque année, l’exposition d’hiver ', after: ' le premier lundi de décembre.', answer: 'ouvre', distractors: ['a ouvert', 'ouvrait', 'ouvrira'] },
 ]
 
 export const FRENCH_PRESENT_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_PRESENT_EDITORIAL = createFrenchEditorialPack({
   form: 'present',
   focus: 'Présent',
   rule: 'Le présent exprime une habitude, un fait stable, une règle, une situation actuelle ou un horaire officiel.',
+  choices,
   micro,
   long,
   errors,

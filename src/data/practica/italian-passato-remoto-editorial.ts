@@ -40,16 +40,16 @@ const errors: EditorialErrorSeed[] = [
 ]
 
 const sequences: EditorialSequenceSeed[] = [
-  { events: ['Il re aprì la lettera', 'ne lesse il contenuto', 'convocò il consiglio'], target: 0 },
-  { events: ['La nave lasciò il porto', 'attraversò lo stretto', 'raggiunse l’isola'], target: 1 },
-  { events: ['Il ladro forzò la finestra', 'prese il dipinto', 'fuggì dal giardino'], target: 2 },
-  { events: ['La studiosa trovò il codice', 'lo tradusse', 'pubblicò la scoperta'], target: 0 },
-  { events: ['I soldati montarono il campo', 'accesero i fuochi', 'posero le sentinelle'], target: 1 },
-  { events: ['Il sindaco salì sul palco', 'pronunciò il discorso', 'inaugurò il ponte'], target: 2 },
-  { events: ['La ragazza udì un rumore', 'aprì la porta', 'vide lo sconosciuto'], target: 0 },
-  { events: ['Gli operai tolsero le macerie', 'liberarono il passaggio', 'riaprirono la strada'], target: 1 },
-  { events: ['Il compositore scrisse la partitura', 'la consegnò al teatro', 'diresse la prima'], target: 2 },
-  { events: ['L’esploratore osservò le stelle', 'tracciò la rotta', 'ordinò la partenza'], target: 0 },
+  { events: ['Il re aprì la lettera', 'ne lesse il contenuto', 'convocò il consiglio'], target: 0, production: { sentence: 'Il re aprì la lettera', verb: 'aprire', answers: ['aprì'] } },
+  { events: ['La nave lasciò il porto', 'Attraversò lo stretto', 'raggiunse l’isola'], target: 1, production: { sentence: 'Attraversò lo stretto', verb: 'attraversare', answers: ['attraversò'] } },
+  { events: ['Il ladro forzò la finestra', 'prese il dipinto', 'Fuggì dal giardino'], target: 2, production: { sentence: 'Fuggì dal giardino', verb: 'fuggire', answers: ['fuggì'] } },
+  { events: ['La studiosa trovò il codice', 'lo tradusse', 'pubblicò la scoperta'], target: 0, production: { sentence: 'La studiosa trovò il codice', verb: 'trovare', answers: ['trovò'] } },
+  { events: ['I soldati montarono il campo', 'Accesero i fuochi', 'posero le sentinelle'], target: 1, production: { sentence: 'Accesero i fuochi', verb: 'accendere', answers: ['accesero'] } },
+  { events: ['Il sindaco salì sul palco', 'pronunciò il discorso', 'Inaugurò il ponte'], target: 2, production: { sentence: 'Inaugurò il ponte', verb: 'inaugurare', answers: ['inaugurò'] } },
+  { events: ['La ragazza udì un rumore', 'aprì la porta', 'vide lo sconosciuto'], target: 0, production: { sentence: 'La ragazza udì un rumore', verb: 'udire', answers: ['udì'] } },
+  { events: ['Gli operai tolsero le macerie', 'Liberarono il passaggio', 'riaprirono la strada'], target: 1, production: { sentence: 'Liberarono il passaggio', verb: 'liberare', answers: ['liberarono'] } },
+  { events: ['Il compositore scrisse la partitura', 'la consegnò al teatro', 'Diresse la prima'], target: 2, production: { sentence: 'Diresse la prima', verb: 'dirigere', answers: ['diresse'] } },
+  { events: ['L’esploratore osservò le stelle', 'tracciò la rotta', 'ordinò la partenza'], target: 0, production: { sentence: 'L’esploratore osservò le stelle', verb: 'osservare', answers: ['osservò'] } },
 ]
 
 export const ITALIAN_PASSATO_REMOTO_EDITORIAL = createItalianEditorialPack({

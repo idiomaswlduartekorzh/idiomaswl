@@ -11,10 +11,21 @@ import { JAPANESE_STRUCTURE_QUEST } from '../src/data/practica/japanese-structur
 import { KOREAN_STRUCTURE_QUEST } from '../src/data/practica/korean-structure-quest-config.ts'
 import { PORTUGUESE_STRUCTURE_QUEST } from '../src/data/practica/portuguese-structure-quest-config.ts'
 import { RUSSIAN_STRUCTURE_QUEST } from '../src/data/practica/russian-structure-quest-config.ts'
+import { normalizeSentenceAnswer } from '../src/data/practica/sentence-production.ts'
+import { MIXED_LEVEL_MAXIMUM, selectMixedChallenges } from '../src/data/practica/tense-quest-selection.ts'
 import { levelOneConnector, levelOnePlacement, loadHarness } from '../scripts/lib/german-tense-harness-core.mjs'
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const germanHarness = loadHarness(repoRoot)
+
+function germanLevelFiveTopology(prompt) {
+  const value = prompt.trim()
+  if (value.endsWith('?')) return 'question'
+  if (/^(?:Wenn|Falls|Nachdem|Obwohl|Weil|Sobald|Als)\b/u.test(value)) return 'fronted-subordinate'
+  if (/\b(?:dass|weil|was)\b/u.test(value)) return 'embedded-clause'
+  if (/^(?:Am|Im|Nach|Vor|Seit|Bei|Zum|Bis|Gestern|Heute|Morgen)\b/u.test(value)) return 'fronted-adverbial'
+  return 'main-clause'
+}
 
 const CONFIGS = [
   ITALIAN_TENSE_QUEST,
@@ -26,6 +37,42 @@ const CONFIGS = [
   JAPANESE_STRUCTURE_QUEST,
   KOREAN_STRUCTURE_QUEST,
 ]
+
+test('mixed practice is balanced, interleaved and capped', () => {
+  const selected = ['present-perfect', 'past-continuous']
+  const first = selectMixedChallenges(
+    ENGLISH_TENSE_QUEST.choiceChallenges,
+    selected,
+    (challenge, tense) => challenge.tenses.includes(tense),
+    'english-tense-quest:level-1',
+  )
+  const second = selectMixedChallenges(
+    ENGLISH_TENSE_QUEST.choiceChallenges,
+    selected,
+    (challenge, tense) => challenge.tenses.includes(tense),
+    'english-tense-quest:level-1',
+  )
+  const targets = first.map((challenge) => selected.find((tense) => challenge.tenses.includes(tense)))
+
+  assert.equal(first.length, 12)
+  assert.deepEqual(first.map((challenge) => challenge.id), second.map((challenge) => challenge.id))
+  assert.equal(targets.filter((tense) => tense === selected[0]).length, 6)
+  assert.equal(targets.filter((tense) => tense === selected[1]).length, 6)
+  assert.ok(targets.some((tense, index) => index > 0 && tense !== targets[index - 1]))
+
+  const everyEnglishForm = ENGLISH_TENSE_QUEST.forms.map((form) => form.id)
+  const allForms = selectMixedChallenges(
+    ENGLISH_TENSE_QUEST.choiceChallenges,
+    everyEnglishForm,
+    (challenge, tense) => challenge.tenses.includes(tense),
+    'english-tense-quest:level-1',
+  )
+  assert.equal(allForms.length, everyEnglishForm.length)
+  assert.ok(allForms.length <= MIXED_LEVEL_MAXIMUM)
+  for (const tense of everyEnglishForm) {
+    assert.ok(allForms.some((challenge) => challenge.tenses.includes(tense)), tense)
+  }
+})
 
 test('multiple-choice answers are balanced across A, B, C and D', () => {
   for (const config of CONFIGS) {
@@ -47,15 +94,58 @@ test('error targets are balanced across every presented verb position', () => {
   }
 })
 
-test('function maps do not reveal their answer in the hint', () => {
+test('every language hides level-four targets and finishes with open written production', () => {
   for (const config of CONFIGS) {
-    for (const challenge of config.timelineChallenges) {
-      assert.ok(challenge.options.length >= 2, challenge.id)
-      for (const slot of challenge.slots) {
-        assert.notEqual(slot.hint.trim(), slot.answer.trim(), `${challenge.id}/${slot.id}`)
+    assert.equal(config.errorIdentificationMode, 'write', `${config.id}/level-4-mode`)
+    for (const form of config.forms) {
+      const stories = config.finalStories?.filter((item) => item.gaps.some((gap) => gap.tense === form.id)) ?? []
+      assert.equal(stories.length, 1, `${config.id}/${form.id}/final-story`)
+      assert.ok(stories[0].gaps.length >= 10, `${config.id}/${form.id}/final-story-gaps`)
+      assert.equal(stories[0].segments.length, stories[0].gaps.length + 1, `${config.id}/${form.id}/final-story-shape`)
+    }
+  }
+})
+
+test('adjacent pedagogical levels use independent scenes', () => {
+  const normalize = (value, locale) => value.normalize('NFKC').toLocaleLowerCase(locale).replaceAll('___', ' ').replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
+  for (const config of CONFIGS) {
+    const locale = config.copy.languageCode
+    for (const form of config.forms) {
+      const levelOne = new Set(config.choiceChallenges.filter((item) => item.tenses.includes(form.id)).map((item) => normalize(item.context, locale)))
+      const levelTwo = config.microStories.filter((item) => item.gaps.some((gap) => gap.tense === form.id)).map((item) => normalize(item.segments.join(''), locale))
+      assert.ok(levelTwo.every((scene) => !levelOne.has(scene)), `${config.id}/${form.id}/L1-L2`)
+
+      const levelThree = new Set(config.longStories.filter((item) => item.gaps.some((gap) => gap.tense === form.id)).map((item) => normalize(
+        item.segments.map((segment, index) => segment + (item.gaps[index]?.answers[0] ?? '')).join(''), locale,
+      )))
+      const levelFour = config.errorChallenges.filter((item) => item.tense === form.id).map((item) => normalize(
+        item.chunks.map((chunk) => chunk.before + (chunk.id === item.wrongId ? item.answers[0] : chunk.form)).join('') + item.after, locale,
+      ))
+      assert.ok(levelFour.every((scene) => !levelThree.has(scene)), `${config.id}/${form.id}/L3-L4`)
+    }
+  }
+})
+
+test('level five requires a complete sentence even when one form is selected', () => {
+  for (const config of CONFIGS.filter((item) => !item.separationChallenges?.length)) {
+    for (const form of config.forms) {
+      const timelines = config.timelineChallenges.filter((item) => item.slots.some((slot) => slot.tense === form.id))
+      for (const challenge of timelines) {
+        for (const slot of challenge.slots.filter((item) => item.tense === form.id)) {
+          assert.ok(slot.production, `${challenge.id}/production`)
+          assert.ok(slot.production.tokens.length >= 2, `${challenge.id}/tokens`)
+          assert.ok(slot.production.answers.length >= 1, `${challenge.id}/answers`)
+          assert.ok(slot.production.answers.every((answer) => !answer.includes('___')), `${challenge.id}/complete-answer`)
+        }
       }
     }
   }
+})
+
+test('sentence production accepts ordinary terminal punctuation and typographic quotes', () => {
+  const canonical = normalizeSentenceAnswer('The clinic has analyzed the samples', 'en')
+  assert.equal(normalizeSentenceAnswer('The clinic has analyzed the samples.', 'en'), canonical)
+  assert.equal(normalizeSentenceAnswer('“The clinic has analyzed the samples!”', 'en'), canonical)
 })
 
 test('declared normative variants survive into every written-answer level', () => {
@@ -267,11 +357,21 @@ test('German exposes ten drills per form before a long written final story', () 
     }, [])
     assert.ok(changes >= 6, `${id}/mixed-separation-order`)
     assert.ok(Math.max(...runs.map((run) => run.length)) <= 2, `${id}/separation-run`)
+    if (['perfekt-haben', 'perfekt-sein', 'futur-eins'].includes(id)) {
+      assert.ok(separation.filter((item) => /\bdass\b/u.test(item.prompt)).length <= 4, `${id}/dass-diversity`)
+      assert.ok(new Set(separation.map((item) => germanLevelFiveTopology(item.prompt))).size >= 4, `${id}/syntax-topologies`)
+    }
     for (const item of separation) {
       assert.match(item.prompt, /___/, `${item.id}/prompt`)
       assert.ok(item.answers[0].split(/\s+/).length >= 4, `${item.id}/complete-sentence`)
       if (item.separation === 'separable' && ['praesens', 'praeteritum', 'imperativ'].includes(id)) {
         assert.ok(!/\s(?:auf|an|mit|vor|teil|zurück|weg|ab|ein|aus)[.!?]$/.test(item.prompt), `${item.id}/hidden-particle`)
+      }
+      if (['wuerde-form', 'konjunktiv-vergangenheit'].includes(id)) {
+        const answerWords = item.answers[0].match(/[\p{L}-]+/gu) ?? []
+        const verbalTail = answerWords.at(-1) ?? ''
+        assert.equal(item.prompt.match(/___/g)?.length, 2, `${item.id}/hidden-verbal-unit`)
+        assert.ok(verbalTail && !item.prompt.includes(verbalTail), `${item.id}/visible-verbal-tail`)
       }
     }
     const finalStories = GERMAN_STRUCTURE_QUEST.finalStories?.filter((item) => item.gaps.some((gap) => gap.tense === id)) ?? []

@@ -1,4 +1,4 @@
-import { createEnglishEditorialPack, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
+import { createEnglishEditorialPack, type EnglishEditorialChoiceSeed, type EnglishEditorialErrorSeed, type EnglishEditorialFinalSeed, type EnglishEditorialGapSeed, type EnglishEditorialMicroSeed, type EnglishEditorialSequenceSeed } from './english-editorial-builder.ts'
 
 const micro: EnglishEditorialMicroSeed[] = [
   { title: 'Cooking at eight', cue: 'an action in progress at eight last night', segments: ['At eight last night, I ', '.'], verb: 'cook', answers: ['was cooking'], distractors: ['cooked', 'have cooked', 'had cooked'] },
@@ -53,16 +53,28 @@ const sequences: EnglishEditorialSequenceSeed[] = [
 ]
 
 const final: EnglishEditorialFinalSeed[] = [
-  { before: 'At 7:30 yesterday evening, Maya ', after: ' the final chapter.', answer: 'was reading', distractors: ['read', 'has read', 'had read'] },
-  { before: 'The children ', after: ' in the yard when the rain began.', answer: 'were playing', distractors: ['played', 'have played', 'had played'] },
-  { before: 'While I was packing, Leo ', after: ' the train times.', answer: 'was checking', distractors: ['checked', 'has checked', 'had checked'] },
-  { before: 'That winter we ', after: ' in a small apartment near the hospital.', answer: 'were living', distractors: ['lived', 'have lived', 'had lived'] },
-  { before: 'At noon the technicians ', after: ' the backup cables.', answer: 'were testing', distractors: ['tested', 'have tested', 'had tested'] },
-  { before: 'The wind ', after: ' hard when the old tree fell.', answer: 'was blowing', distractors: ['blew', 'has blown', 'had blown'] },
-  { before: 'Nora ', after: ' home when she saw the accident.', answer: 'was walking', distractors: ['walked', 'has walked', 'had walked'] },
-  { before: 'At nine, I ', after: ' the report while my colleagues prepared the slides.', answer: 'was editing', distractors: ['edited', 'have edited', 'had edited'] },
-  { before: 'The machines ', after: ' during the inspection at three.', answer: 'were not running', distractors: ['did not run', 'have not run', 'had not run'] },
-  { before: 'When the bell rang, the audience ', after: ' quietly for the doors to open.', answer: 'was waiting', distractors: ['waited', 'has waited', 'had waited'] },
+  { verb: 'read', before: 'At 7:30 yesterday evening, Maya ', after: ' the final chapter.', answer: 'was reading', distractors: ['read', 'has read', 'had read'] },
+  { verb: 'play', before: 'The children ', after: ' in the yard when the rain began.', answer: 'were playing', distractors: ['played', 'have played', 'had played'] },
+  { verb: 'check', before: 'While I was packing, Leo ', after: ' the train times.', answer: 'was checking', distractors: ['checked', 'has checked', 'had checked'] },
+  { verb: 'live', before: 'That winter we ', after: ' in a small apartment near the hospital.', answer: 'were living', distractors: ['lived', 'have lived', 'had lived'] },
+  { verb: 'test', before: 'At noon the technicians ', after: ' the backup cables.', answer: 'were testing', distractors: ['tested', 'have tested', 'had tested'] },
+  { verb: 'blow', before: 'The wind ', after: ' hard when the old tree fell.', answer: 'was blowing', distractors: ['blew', 'has blown', 'had blown'] },
+  { verb: 'walk', before: 'Nora ', after: ' home when she saw the accident.', answer: 'was walking', distractors: ['walked', 'has walked', 'had walked'] },
+  { verb: 'edit', before: 'At nine, I ', after: ' the report while my colleagues prepared the slides.', answer: 'was editing', distractors: ['edited', 'have edited', 'had edited'] },
+  { verb: 'run', before: 'The machines ', after: ' during the inspection at three.', answer: 'were not running', distractors: ['did not run', 'have not run', 'had not run'] },
+  { verb: 'wait', before: 'When the bell rang, the audience ', after: ' quietly for the doors to open.', answer: 'was waiting', distractors: ['waited', 'has waited', 'had waited'] },
+]
+const choices: EnglishEditorialChoiceSeed[] = [
+  { cue: 'an action in progress at a past time', segments: ['At 6:15 yesterday morning, Nina ', ' the overnight messages.'], answer: final[0].answer, distractors: final[0].distractors },
+  { cue: 'a background action interrupted by an event', segments: ['The cousins ', ' on the porch when the lights went out.'], answer: final[1].answer, distractors: final[1].distractors },
+  { cue: 'a simultaneous past action', segments: ['While I was cooking, Sam ', ' the bus schedule.'], answer: final[2].answer, distractors: final[2].distractors },
+  { cue: 'a temporary situation in the past', segments: ['That autumn we ', ' above a busy restaurant.'], answer: final[3].answer, distractors: final[3].distractors },
+  { cue: 'an action underway at a specific past time', segments: ['At three the mechanics ', ' the emergency brakes.'], answer: final[4].answer, distractors: final[4].distractors },
+  { cue: 'a background condition', segments: ['The wind ', ' heavily when the retaining wall collapsed.'], answer: final[5].answer, distractors: final[5].distractors },
+  { cue: 'an interrupted past action', segments: ['Lena ', ' toward the station when she heard the alarm.'], answer: final[6].answer, distractors: final[6].distractors },
+  { cue: 'a simultaneous past activity', segments: ['At eight, I ', ' the budget while my partner drafted the memo.'], answer: final[7].answer, distractors: final[7].distractors },
+  { cue: 'a temporary interruption in past operation', segments: ['The escalators ', ' during yesterday’s inspection.'], answer: final[8].answer, distractors: final[8].distractors },
+  { cue: 'an action already in progress', segments: ['When the doors opened, Karim ', ' near the ticket desk.'], answer: final[9].answer, distractors: final[9].distractors },
 ]
 
-export const ENGLISH_PAST_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'past-continuous', form: 'past-continuous', focus: 'Past continuous', rule: 'Use the past continuous for an activity in progress around a past moment, as background, or alongside another ongoing past activity.', micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })
+export const ENGLISH_PAST_CONTINUOUS_EDITORIAL = createEnglishEditorialPack({ slug: 'past-continuous', form: 'past-continuous', focus: 'Past continuous', rule: 'Use the past continuous for an activity in progress around a past moment, as background, or alongside another ongoing past activity.', choices, micro, long, errors, sequences, final, choicePositions: [0, 3, 2, 1, 0, 3, 2, 1, 0, 3] })

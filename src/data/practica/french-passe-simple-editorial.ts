@@ -1,5 +1,6 @@
 import {
   createFrenchEditorialPack,
+  type FrenchEditorialChoiceSeed,
   type FrenchEditorialErrorSeed,
   type FrenchEditorialFinalSeed,
   type FrenchEditorialGapSeed,
@@ -19,6 +20,26 @@ const micro: FrenchEditorialMicroSeed[] = [
   { title: 'Le journal du capitaine', cue: 'une décision narrative écrite', segments: ['Dans son journal, le capitaine ', ' de changer de route.'], verb: 'décider', answers: ['décida'], distractors: ['a décidé', 'décidait', 'avait décidé'] },
   { title: 'La nouvelle policière', cue: 'une révélation finale dans une nouvelle', segments: ['À la fin de la nouvelle, l’inspectrice ', ' enfin la vérité.'], verb: 'comprendre', answers: ['comprit'], distractors: ['a compris', 'comprenait', 'avait compris'] },
 ]
+
+const choiceContexts: [string, string][] = [
+  ['Au dernier chapitre, le médecin ', ' le télégramme et pâlit.'],
+  ['Au signal du roi, les grilles ', ' devant les cavaliers.'],
+  ['La voyageuse ', ' la lampe et entra dans la cave.'],
+  ['À la tombée de la nuit, les éclaireurs ', ' la rivière.'],
+  ['Soudain, une silhouette ', ' au sommet de la tour.'],
+  ['Après son retour, le savant ', ' une école en 1897.'],
+  ['En rangeant la chambre, la servante ', ' une lettre sous le lit.'],
+  ['À l’aube, les exploratrices ', ' vers le désert.'],
+  ['Face à la tempête, le capitaine ', ' de gagner le port voisin.'],
+  ['En relisant le carnet, l’inspectrice ', ' le rôle du témoin.'],
+]
+
+const choices: FrenchEditorialChoiceSeed[] = micro.map((seed, index) => ({
+  cue: seed.cue,
+  segments: choiceContexts[index]!,
+  answer: seed.answers[0],
+  distractors: seed.distractors,
+}))
 
 const long: FrenchEditorialGapSeed[] = [
   { title: 'Chapitre I · La lettre', instruction: 'Complète cet extrait littéraire au passé simple.', segments: ['Élise ', ' l’enveloppe, ', ' les quelques lignes et ', ' sans un mot dans le jardin.'], entries: [['ouvrir', ['ouvrit']], ['lire', ['lut']], ['sortir', ['sortit']]] },
@@ -60,16 +81,16 @@ const sequences: FrenchEditorialSequenceSeed[] = [
 ]
 
 const final: FrenchEditorialFinalSeed[] = [
-  { before: 'Dans le roman, Adrien ', after: ' la carte et suivit le sentier.', answer: 'déplia', distractors: ['a déplié', 'dépliait', 'avait déplié'] },
-  { before: 'Dans la chronique, les navires ', after: ' le port au lever du soleil.', answer: 'quittèrent', distractors: ['ont quitté', 'quittaient', 'avaient quitté'] },
-  { before: 'Le conte raconte que la reine ', after: ' enfin le visiteur.', answer: 'reçut', distractors: ['a reçu', 'recevait', 'avait reçu'] },
-  { before: 'Dans ce chapitre, la lampe ', after: ' brusquement.', answer: 's’éteignit', distractors: ["s’est éteinte", 's’éteignait', "s’était éteinte"] },
-  { before: 'Selon la légende, le géant ', after: ' le rocher d’une seule main.', answer: 'souleva', distractors: ['a soulevé', 'soulevait', 'avait soulevé'] },
-  { before: 'Dans sa biographie, elle ', after: ' son premier prix en 1948.', answer: 'obtint', distractors: ['a obtenu', 'obtenait', 'avait obtenu'] },
-  { before: 'Le manuscrit précise que les témoins ', after: ' la salle en silence.', answer: 'entrèrent', distractors: ['sont entrés', 'entraient', 'étaient entrés'] },
-  { before: 'Dans le récit, le capitaine ', after: ' la côte avant midi.', answer: 'aperçut', distractors: ['a aperçu', 'apercevait', 'avait aperçu'] },
-  { before: 'À la fin de la nouvelle, Nora ', after: ' la clé dans sa poche.', answer: 'trouva', distractors: ['a trouvé', 'trouvait', 'avait trouvé'] },
-  { before: 'Dans le dernier chapitre, les cloches ', after: ' et la foule se dispersa.', answer: 'sonnèrent', distractors: ['ont sonné', 'sonnaient', 'avaient sonné'] },
+  { verb: 'déplier', before: 'Dans le roman, Adrien ', after: ' la carte et suivit le sentier.', answer: 'déplia', distractors: ['a déplié', 'dépliait', 'avait déplié'] },
+  { verb: 'quitter', before: 'Dans la chronique, les navires ', after: ' le port au lever du soleil.', answer: 'quittèrent', distractors: ['ont quitté', 'quittaient', 'avaient quitté'] },
+  { verb: 'recevoir', before: 'Le conte raconte que la reine ', after: ' enfin le visiteur.', answer: 'reçut', distractors: ['a reçu', 'recevait', 'avait reçu'] },
+  { verb: 's’éteindre', before: 'Dans ce chapitre, la lampe ', after: ' brusquement.', answer: 's’éteignit', distractors: ["s’est éteinte", 's’éteignait', "s’était éteinte"] },
+  { verb: 'soulever', before: 'Selon la légende, le géant ', after: ' le rocher d’une seule main.', answer: 'souleva', distractors: ['a soulevé', 'soulevait', 'avait soulevé'] },
+  { verb: 'obtenir', before: 'Dans sa biographie, elle ', after: ' son premier prix en 1948.', answer: 'obtint', distractors: ['a obtenu', 'obtenait', 'avait obtenu'] },
+  { verb: 'entrer', before: 'Le manuscrit précise que les témoins ', after: ' la salle en silence.', answer: 'entrèrent', distractors: ['sont entrés', 'entraient', 'étaient entrés'] },
+  { verb: 'apercevoir', before: 'Dans le récit, le capitaine ', after: ' la côte avant midi.', answer: 'aperçut', distractors: ['a aperçu', 'apercevait', 'avait aperçu'] },
+  { verb: 'trouver', before: 'À la fin de la nouvelle, Nora ', after: ' la clé dans sa poche.', answer: 'trouva', distractors: ['a trouvé', 'trouvait', 'avait trouvé'] },
+  { verb: 'sonner', before: 'Dans le dernier chapitre, les cloches ', after: ' et la foule se dispersa.', answer: 'sonnèrent', distractors: ['ont sonné', 'sonnaient', 'avaient sonné'] },
 ]
 
 export const FRENCH_PASSE_SIMPLE_EDITORIAL = createFrenchEditorialPack({
@@ -77,6 +98,7 @@ export const FRENCH_PASSE_SIMPLE_EDITORIAL = createFrenchEditorialPack({
   form: 'passe-simple',
   focus: 'Passé simple · registre littéraire',
   rule: 'Le passé simple appartient surtout au récit écrit et fait avancer une narration littéraire par des événements achevés.',
+  choices,
   micro,
   long,
   errors,
