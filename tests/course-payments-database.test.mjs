@@ -1,0 +1,41 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { PGlite } from '../.local-tools/node_modules/@electric-sql/pglite/dist/index.js';
+const user='12345678-1234-4234-8234-123456789012';
+test('private ledger persists orders, deduplicates credits, rejects mismatches and preserves terminal states',async()=>{
+ const db=new PGlite();
+ try {
+ await db.exec(`create role anon; create role authenticated; create role service_role bypassrls; create schema auth; create table auth.users(id uuid primary key); insert into auth.users values('${user}');`);
+ await db.exec(await readFile(new URL('../supabase/migrations/20260907202922_course_orders_wompi.sql',import.meta.url),'utf8'));
+ await db.exec('set role service_role');
+ const create=async(key,amount=32000000)=> (await db.query('select * from public.prepare_course_order($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)',[null,'student@example.com','a'.repeat(64),key,'sandbox','offer-v1',{plan:'base'},{studentName:'Test',studentEmail:'student@example.com'},amount,4,'terms-v1'])).rows[0];
+ const o=await create(user);assert.equal(o.sessions,8);
+ assert.equal((await create(user)).id,o.id);
+ assert.notEqual((await create('22345678-1234-4234-8234-123456789012')).id,o.id);
+ await assert.rejects(create(user,1),/idempotency_conflict/);
+ const record=async(status,id='transaction-one',amount=32000000,env='sandbox',fingerprint=id+status)=>db.query('select public.record_course_payment($1,$2,$3,$4,$5,$6,$7,$8)',[o.reference,env,id,amount,'COP',status,new Date().toISOString(),fingerprint]);
+ await assert.rejects(record('APPROVED','wrong-amount',1),/payment_mismatch/);
+ await assert.rejects(record('APPROVED','wrong-env',32000000,'production'),/payment_mismatch/);
+ await record('PENDING');assert.equal((await db.query('select * from course_enrollments')).rows.length,0);
+ await record('APPROVED');await record('APPROVED');
+ await record('PENDING','transaction-one',32000000,'sandbox','late-pending');
+ assert.equal((await db.query('select status from course_payment_transactions')).rows[0].status,'APPROVED');
+ assert.equal((await db.query('select * from course_enrollments')).rows.length,1);
+ assert.equal((await db.query("select * from course_coordination_jobs where kind='schedule'")).rows.length,1);
+ assert.equal((await db.query("select * from course_coordination_jobs where kind in ('student_welcome','owner_notification')")).rows.length,2);
+ const lease='32345678-1234-4234-8234-123456789012';
+ assert.equal((await db.query('select public.claim_course_job($1,$2,$3) as claimed',[o.id,'student_welcome',lease])).rows[0].claimed,true);
+ assert.equal((await db.query('select public.claim_course_job($1,$2,$3) as claimed',[o.id,'student_welcome','42345678-1234-4234-8234-123456789012'])).rows[0].claimed,false);
+ assert.equal((await db.query('select public.finish_course_job($1,$2,$3,$4,$5) as finished',[o.id,'student_welcome',lease,true,null])).rows[0].finished,true);
+ assert.equal((await db.query("select status from course_coordination_jobs where order_id=$1 and kind='student_welcome'",[o.id])).rows[0].status,'completed');
+ await record('APPROVED','transaction-two');
+ assert.equal((await db.query('select * from course_enrollments')).rows.length,1);
+ assert.equal((await db.query("select * from course_coordination_jobs where kind='financial_review'")).rows.length,1);
+ await record('VOIDED','transaction-one');await record('APPROVED','transaction-one',32000000,'sandbox','late-approved');
+ assert.equal((await db.query("select status from course_payment_transactions where provider_id='transaction-one'")).rows[0].status,'VOIDED');
+ await assert.rejects(db.query('update course_orders set amount_in_cents=1'),/permission denied/);
+ await db.exec('set role anon');await assert.rejects(db.query('select * from course_orders'),/permission denied/);await assert.rejects(create(user),/permission denied/);
+ await db.exec('set role authenticated');await assert.rejects(db.query('select * from course_orders'),/permission denied/);
+ } finally {await db.close();}
+});

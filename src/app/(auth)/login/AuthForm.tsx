@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { safeCourseReturnPath } from '@/lib/course-pricing/payment';
 import { createClient } from '@/lib/supabase/client';
 
 type Mode = 'login' | 'register';
@@ -75,13 +76,13 @@ export default function AuthForm({ mode }: { mode: Mode }) {
     if (mode === 'login') {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
       if (error) { setError(normalizeLoginError(error.message)); setLoading(false); return; }
-      router.push('/dashboard');
+      router.push(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')));
       router.refresh();
     } else {
       const { error } = await supabase.auth.signUp({
         email,
         password,
-        options: { data: { full_name: name } },
+        options: { data: { full_name: name }, emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')))}` },
       });
       if (error) { setError(normalizeRegisterError(error.message)); setLoading(false); return; }
       setSuccess('¡Revisa tu correo para confirmar tu cuenta!');
@@ -94,7 +95,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
     if (!supabase) return;
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/auth/callback` },
+      options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')))}` },
     });
   };
 
@@ -383,13 +384,13 @@ export default function AuthForm({ mode }: { mode: Mode }) {
           <p style={{ textAlign: 'center', fontSize: 13, color: MUTED, marginTop: '1.5rem' }}>
             {mode === 'login' ? (
               <>¿No tienes cuenta?{' '}
-                <Link href="/registro" style={{ color: A, fontWeight: 700, textDecoration: 'none' }}>
+                <Link href="/registro" onClick={e => { e.preventDefault(); router.push('/registro?next=' + encodeURIComponent(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')))); }} style={{ color: A, fontWeight: 700, textDecoration: 'none' }}>
                   Registrarse
                 </Link>
               </>
             ) : (
               <>¿Ya tienes cuenta?{' '}
-                <Link href="/login" style={{ color: A, fontWeight: 700, textDecoration: 'none' }}>
+                <Link href="/login" onClick={e => { e.preventDefault(); router.push('/login?next=' + encodeURIComponent(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')))); }} style={{ color: A, fontWeight: 700, textDecoration: 'none' }}>
                   Iniciar sesión
                 </Link>
               </>

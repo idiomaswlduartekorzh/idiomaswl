@@ -1,3 +1,4 @@
+import { reconcileCoursePayment } from '@/lib/course-pricing/payments.server';
 import { persistVerifiedWompiTransaction } from '@/lib/wompi/persistence';
 import { persistVerifiedToeflReportTransaction } from '@/lib/toefl/report-payment-events.server';
 import { parseWompiWebhookEvent, verifyWompiEventChecksum } from '@/lib/wompi/security';
@@ -52,6 +53,20 @@ export async function POST(request: Request): Promise<Response> {
 
     if (event.event !== 'transaction.updated') {
       return json({ received: true, ignored: true }, 200);
+    }
+
+    const candidate = event.data.transaction as { reference?: unknown; id?: unknown } | undefined;
+    if (typeof candidate?.reference === 'string' && candidate.reference.startsWith('WC-')) {
+      // The checksum must bind the lookup ID. Other fields come from Wompi's API.
+      if (!event.signature.properties.includes('transaction.id') || typeof candidate.id !== 'string') {
+        return json({ received: false, code: 'invalid_course_signature' }, 401);
+      }
+      try {
+        await reconcileCoursePayment(candidate.id);
+        return json({ received: true }, 200);
+      } catch {
+        return json({ received: false, code: 'course_payment_not_saved' }, 503);
+      }
     }
 
     const transaction = parseAndVerifyWompiTransaction(event.data.transaction);
