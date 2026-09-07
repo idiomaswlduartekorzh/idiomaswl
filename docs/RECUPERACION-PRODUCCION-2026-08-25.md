@@ -313,3 +313,23 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `/practica/toefl/reading/formato-2026/complete-the-words`. En Speaking Set 3 se
   verificó el estado `Pause` durante reproducción y navegación a la frase 2 mientras
   el audio seguía activo.
+
+### 7 de septiembre de 2026 — plantilla visual transversal de práctica TOEFL
+
+- La unificación visual quedó `DESPLEGADA` desde `main` en
+  `35511319b2fb196524d70b69cbd8c835452e1bae`. Reading, Listening, Writing y Speaking
+  comparten marco de ruta, catálogo de sets y encabezado de sesión; cada sección
+  conserva un color propio sin cambiar la geometría ni la navegación.
+- La plantilla reutilizable vive en `src/components/exam-practice/` y su contrato de
+  extensión para futuros idiomas y exámenes quedó documentado en
+  `docs/PRACTICE-UI-TEMPLATE.md`. El guardián TOEFL exige su uso en las nueve rutas
+  activas de ejercicios.
+- Pasaron `prebuild`, catálogo protegido, TypeScript, ESLint acotado, guardián de UI,
+  14 pruebas de Listening y el build Webpack de 2.517 páginas. El intento Turbopack
+  local se detuvo sin error tras no producir progreso; Webpack completó todo el build.
+- Vercel completó el deployment `dpl_2WTDNXZTB4Thtifz6Q3oodoCo3L2` con fuente GitHub
+  `main`. El smoke productivo devolvió HTTP 200 en el hub y en una sesión de Reading,
+  Listening, Writing y Speaking; el HTML público contiene `PracticeRouteShell`,
+  `PracticeSetCatalog` y `PracticeSessionHeader` donde corresponde.
+- En Speaking Set 3 se verificaron audio en estado `Pause`, botón `Next` habilitado,
+  navegación a `Sentence 2` durante reproducción y consola del navegador sin errores.
