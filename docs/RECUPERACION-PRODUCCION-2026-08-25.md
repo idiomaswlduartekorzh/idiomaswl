@@ -333,3 +333,24 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   `PracticeSetCatalog` y `PracticeSessionHeader` donde corresponde.
 - En Speaking Set 3 se verificaron audio en estado `Pause`, botón `Next` habilitado,
   navegación a `Sentence 2` durante reproducción y consola del navegador sin errores.
+
+### 7 de septiembre de 2026 — quizzes multilingües de tiempos verbales
+
+- El sistema de práctica de tiempos verbales quedó `DESPLEGADO` desde `main` en
+  `e98ea5656556eabaaf6e61019bd4372e26695e5c`. La rama de trabajo
+  `codex/quiz-verbos-aleman-mac-mini-20260904` permanece respaldada en GitHub.
+- Los ocho idiomas y sus 92 formas comparten selección mixta intercalada y limitada,
+  etiquetas ocultas durante el ejercicio, revisión con respuestas precargadas y seis
+  niveles con escenas independientes. El nivel 5 exige producción de oración completa;
+  alemán conserva además la decisión separable/inseparable y el nivel 6 usa historias
+  extensas de producción escrita.
+- El `prebuild` completo, la línea base de producción, el catálogo de 465 temas,
+  TypeScript, 36 pruebas de datos y los harness de estructura, pedagogía y usuario
+  promedio pasaron. El build Webpack compiló y generó 2.517 páginas estáticas.
+- Vercel completó el deployment `dpl_2Pz2w2HhJV7aQJTPp7wSdgUFK9NT` con fuente GitHub
+  `main`; el alias verificado es `https://www.idiomaswl.com`.
+- El smoke productivo pasó 17/17 escenarios: recorrió la revisión precargada y los seis
+  niveles en italiano, inglés, francés, portugués, alemán, ruso, japonés y coreano;
+  auditó todas las formas del nivel 5, comprobó edición normal y verificó la mezcla de
+  dos tiempos sin revelar etiquetas. No hubo errores de página.
+- No se añadieron migraciones ni variables de entorno.
