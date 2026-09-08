@@ -10,7 +10,14 @@ export async function POST(request:Request) {
   try {
     const order=await prepareCourseOrder(input);
     return json({orderId:order.id},201,{'Set-Cookie':courseOrderCookie(order.id,input.idempotencyKey)});
-  }catch{return json({message:'No pudimos guardar la inscripción. No se ha abierto un cobro.'},503);}
+  }catch(error){
+    const code=error instanceof Error?error.message:'course_order_prepare_failed';
+    console.error('[course-orders] unable to prepare order',{code});
+    return json({
+      message:'No pudimos guardar la inscripción. No se ha abierto un cobro.',
+      ...(process.env.VERCEL_ENV==='preview'?{code}:{}),
+    },503);
+  }
 }
 export async function GET() {
   try{
