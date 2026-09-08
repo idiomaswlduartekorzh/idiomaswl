@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Exam } from '@/data/exams';
-import { hasGuidedMock } from '@/data/icfes/guided-registry';
+import { hasGuidedMock, hasGuidedWorkbook } from '@/data/icfes/guided-registry';
 
 const INITIAL_VISIBLE_MOCKS = 8;
 
@@ -24,17 +24,22 @@ export default function MockGrid({ exam }: { exam: Exam }) {
 
   const freeMocks = exam.mocks.filter(m => m.free);
   const paidMocks = exam.mocks.filter(m => !m.free);
+  const isIcfes = exam.slug === 'icfes';
+  const icfesUniqueResources = isIcfes ? exam.mocks.length + 1 : 0;
+  const icfesModes = isIcfes
+    ? icfesUniqueResources + exam.mocks.filter(mock => hasGuidedMock(mock.id) || hasGuidedWorkbook(mock.id)).length
+    : 0;
   const groups = exam.slug === 'icfes'
     ? [
         {
           id: 'practice',
-          title: 'Prácticas propias abreviadas',
+          title: 'Prácticas propias abreviadas · 23 recursos',
           description: '23 recorridos creados por WeLearn para entrenar las siete partes. Tienen 45 preguntas y no reproducen la extensión estándar 2026-2 de 55 preguntas.',
           mocks: exam.mocks.filter(mock => !mock.badge),
         },
         {
           id: 'published',
-          title: 'Cuadernillos divulgados por el ICFES',
+          title: 'Cuadernillos divulgados por el ICFES · 10 recursos',
           description: 'Material publicado por el ICFES con su extensión y clave originales. El catálogo guiado distingue Saber 11 de los recursos complementarios.',
           mocks: exam.mocks.filter(mock => Boolean(mock.badge)),
         },
@@ -82,15 +87,37 @@ export default function MockGrid({ exam }: { exam: Exam }) {
           <div>
             <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Práctica</p>
             <h2 id="exam-practice-title">
-              {exam.slug === 'icfes' ? 'Elige qué tipo de práctica necesitas' : 'Simulacros disponibles'}
+              {isIcfes ? 'Elige tu simulacro de inglés ICFES' : 'Simulacros disponibles'}
             </h2>
           </div>
           <p style={{ color: 'var(--muted)', fontSize: '0.9rem', margin: 0 }}>
-            {exam.slug === 'toefl'
+            {isIcfes
+              ? `${icfesUniqueResources} recursos únicos · ${icfesModes} modos disponibles`
+              : exam.slug === 'toefl'
               ? `${exam.mocks.length} simulacros · Reading, Listening, Writing y Speaking`
               : `${freeMocks.length} gratis · ${paidMocks.length} con suscripción`}
           </p>
         </header>
+
+        {isIcfes ? (
+          <div className="wl-mock-group">
+            <div className="wl-mock-group__heading">
+              <p className="eyebrow"><span className="ink-line" aria-hidden="true" />Punto de partida recomendado</p>
+              <h3>Simulacro guiado actual · 55 preguntas</h3>
+              <p>Entrenamiento propio de WeLearn con las siete partes, evidencia, análisis de distractores y microlecciones. No es un cuadernillo oficial ni predice tu puntaje ICFES.</p>
+              <div className="wl-mock-card__actions">
+                <Link href="/practica/icfes-saber-11/simulacro-guiado" className="wl-mock-card__cta btn btn-sm">Empezar las 55 preguntas →</Link>
+                <Link href="/practica/icfes-saber-11" className="btn btn-sm btn-ghost">Aprender las 7 partes</Link>
+              </div>
+            </div>
+          </div>
+        ) : null}
+
+        {isIcfes ? (
+          <p style={{ color: 'var(--muted)', lineHeight: 1.65, margin: '0 0 1.5rem' }}>
+            Este catálogo contiene <strong style={{ color: 'var(--ink)' }}>34 recursos distintos</strong>: 23 prácticas propias, 10 cuadernillos divulgados y el simulacro guiado de 55 preguntas. Algunas prácticas también se pueden abrir en modo examen y modo guiado; por eso existen 62 rutas o modos de uso, pero no 62 exámenes diferentes.
+          </p>
+        ) : null}
 
         {groups.map((group, groupIndex) => (
           <div key={group.id} className="wl-mock-group" data-later={groupIndex > 0 ? 'true' : 'false'}>
@@ -100,7 +127,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                 <p>{group.description}</p>
                 {group.id === 'published' && (
                   <Link href="/practica/icfes-saber-11/examenes">
-                    Ver catálogo organizado y modo guiado →
+                    Ver el catálogo de cuadernillos por audiencia →
                   </Link>
                 )}
               </div>
@@ -108,7 +135,11 @@ export default function MockGrid({ exam }: { exam: Exam }) {
             {renderCards(group.mocks.slice(0, INITIAL_VISIBLE_MOCKS))}
             {group.mocks.length > INITIAL_VISIBLE_MOCKS ? (
               <details className="wl-mock-more">
-                <summary>Ver {group.mocks.length - INITIAL_VISIBLE_MOCKS} prácticas más</summary>
+                <summary>
+                  {group.id === 'published'
+                    ? `Ver los ${group.mocks.length - INITIAL_VISIBLE_MOCKS} cuadernillos restantes`
+                    : `Ver las ${group.mocks.length - INITIAL_VISIBLE_MOCKS} prácticas propias restantes`}
+                </summary>
                 {renderCards(group.mocks.slice(INITIAL_VISIBLE_MOCKS))}
               </details>
             ) : null}

@@ -136,7 +136,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       'Qué mide el inglés del ICFES Saber 11, qué puntaje piden las universidades colombianas y el plan más corto para subir de nivel.',
     date: '2026-05-08',
-    updatedDate: '2026-08-03',
+    updatedDate: '2026-09-08',
     readTime: 7,
     category: 'ICFES',
     tags: ['ICFES', 'Saber 11', 'inglés', 'Colombia', 'universidades', 'B1'],
@@ -205,7 +205,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><strong>Simulacros ICFES oficiales</strong>: el ICFES publica cuadernillos de exámenes anteriores en su página oficial.</li>
   <li><strong>Newsela (newsela.com)</strong>: artículos de noticias reales adaptados por nivel de lectura. Ideal para construir velocidad lectora.</li>
-  <li><strong>Simulacros WeLearn</strong>: banco de preguntas estilo ICFES con retroalimentación y análisis por sección.</li>
+  <li><strong><a href="/examenes/icfes">Simulacros ICFES Inglés en WeLearn</a></strong>: 34 recursos únicos entre prácticas propias, cuadernillos divulgados y un simulacro guiado de 55 preguntas.</li>
 </ul>
 
 <h2>¿Vale la pena tomar clases de preparación ICFES inglés?</h2>
@@ -1241,6 +1241,7 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription:
       'Qué significan Pre A1, A1, A2 y B1 en el ICFES, cuántos puntos necesita cada uno y qué estudiar para subir al siguiente nivel.',
     date: '2026-05-30',
+    updatedDate: '2026-09-08',
     readTime: 8,
     category: 'ICFES',
     tags: ['ICFES inglés', 'Saber 11', 'puntaje inglés', 'B1 ICFES', 'preparación ICFES', 'Colombia'],
@@ -1322,7 +1323,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <h2>Cuánto sube el puntaje con preparación estructurada</h2>
 <p>El avance depende del punto de partida, la frecuencia de práctica y la calidad del análisis de errores. Mide el progreso con bloques comparables y ajusta el plan según la habilidad, no según una promesa comercial.</p>
 <p>Si necesitas certificar B2, debes usar un examen internacional o el instrumento que acepte la institución correspondiente; Saber 11 reporta hasta B1.</p>
-<p>Si quieres prepararte con acompañamiento de un tutor, hacer simulacros en la plataforma de WeLearn y tener un plan personalizado, puedes empezar por <a href="/preparacion-icfes">nuestra página de preparación ICFES</a> o hacer primero el <a href="/examenes/icfes">simulacro de diagnóstico gratis</a>.</p>
+<p>Si quieres prepararte con acompañamiento de un tutor y un plan personalizado, puedes empezar por <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>. Si prefieres medirte primero, abre el <a href="/examenes/icfes">catálogo de simulacros ICFES Inglés</a>: diferencia prácticas propias, cuadernillos divulgados y el recorrido guiado de 55 preguntas.</p>
 <p>Lee también: <a href="/blog/puntaje-icfes-ingles-niveles-y-como-mejorar">Puntaje ICFES inglés: niveles, puntaje mínimo y cómo mejorarlo en 3 meses</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles de inglés A1–C2: qué significa cada uno y para qué sirve</a>.</p>
     `,
   },
@@ -4824,7 +4825,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     metaDescription:
       'Plan semana a semana para subir el puntaje de inglés del Saber 11, con recursos gratuitos y las áreas donde más puntos se pierden.',
     date: '2026-05-30',
-    updatedDate: '2026-08-03',
+    updatedDate: '2026-09-08',
     readTime: 7,
     category: 'ICFES',
     tags: ['ICFES inglés en 3 meses plan de estudio', 'subir puntaje inglés ICFES Colombia', 'preparación ICFES inglés semana a semana', 'ICFES inglés recursos gratuitos', 'mejorar inglés para ICFES rápido'],
@@ -4866,6 +4867,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Recursos gratuitos para preparar el inglés ICFES</h2>
 <ul>
+  <li><strong><a href="/examenes/icfes">Catálogo de simulacros ICFES Inglés</a></strong>: 34 recursos diferenciados por procedencia y extensión, con acceso al simulacro guiado de 55 preguntas.</li>
   <li><strong>Caja de herramientas del ICFES</strong>: cuadernillos, preguntas explicadas y materiales publicados por la entidad.</li>
   <li><strong>British Council Learn English</strong> (learnenglish.britishcouncil.org): materiales gratuitos de lectura por nivel</li>
   <li><strong>Duolingo</strong> (solo para vocabulario básico A1–A2 — no es suficiente solo con esto)</li>
@@ -4882,7 +4884,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 </ol>
 
 <h2>WeLearn y la preparación ICFES inglés</h2>
-<p>En WeLearn tenemos un plan específico para el inglés ICFES de 8 a 12 semanas, con tutores que conocen el formato y los tipos de preguntas. Incluye simulacros semanales con feedback específico. La primera clase de diagnóstico es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20ingl%C3%A9s%20para%20el%20ICFES%20Saber%2011%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20plan%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>.</p>
+<p>En WeLearn tenemos un plan específico para el inglés ICFES de 8 a 12 semanas, con tutores que conocen el formato y los tipos de preguntas. Incluye práctica semanal con feedback específico. La primera clase de diagnóstico es gratuita: <a href="https://wa.me/573005004253?text=Hola%2C%20quiero%20preparar%20el%20ingl%C3%A9s%20para%20el%20ICFES%20Saber%2011%20y%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20plan%20de%20WeLearn." target="_blank" rel="noopener noreferrer">escríbenos por WhatsApp</a> o visita <a href="/preparacion-icfes">nuestra página de preparación ICFES</a>.</p>
 <p>Lee también: <a href="/blog/icfes-saber-11-niveles-ingles-guia-completa">ICFES Saber 11: guía completa de niveles de inglés</a> y <a href="/blog/niveles-de-ingles-a1-a2-b1-b2-c1-c2">Niveles A1–C2: qué significa cada nivel y para qué sirve</a>.</p>
     `,
   },
@@ -6148,6 +6150,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
     metaDescription:
       'Las 200 palabras de inglés más frecuentes en el Saber 11, agrupadas por categoría, para subir puntaje sin estudiar de todo un poco.',
     date: '2026-05-30',
+    updatedDate: '2026-09-08',
     readTime: 8,
     body: `
 <p>El inglés del ICFES Saber 11 evalúa comprensión lectora en contextos académicos y cotidianos. El vocabulario es uno de los factores más directamente entrenables — y hay patrones claros en qué palabras aparecen año tras año. Esta guía agrupa el vocabulario más frecuente para que lo puedas estudiar sistemáticamente.</p>
@@ -6218,7 +6221,7 @@ Para Superior English (8.0 en cada sección): típicamente 12–24 meses desde B
 
 <h2>Ya sabes las palabras. Ahora comprueba si te sirven</h2>
 <p>Memorizar una lista y reconocer esas mismas palabras dentro de un texto, a contrarreloj, son dos cosas distintas. La segunda es la que evalúa el examen.</p>
-<p>Tenemos <a href="/examenes/icfes"><strong>simulacros gratuitos del ICFES de inglés</strong></a> armados con cuadernillos oficiales de años anteriores y su clave de respuestas. Son gratis y no hay que registrarse. Al terminar ves tu puntaje y el nivel que te correspondería en la escala real.</p>
+<p>En el <a href="/examenes/icfes"><strong>catálogo gratuito de simulacros ICFES Inglés</strong></a> puedes distinguir 23 prácticas propias abreviadas, 10 cuadernillos divulgados por el ICFES y un simulacro guiado propio de 55 preguntas. Los resultados de práctica sirven para comparar intentos dentro de cada recurso; no predicen el puntaje oficial ni certifican un nivel.</p>
 <p>Si al hacerlo descubres que el problema no es el vocabulario sino la velocidad de lectura o los conectores, tenemos práctica específica para eso: <a href="/practica/icfes-saber-11/sinonimos-inferencia">sinónimos e inferencia</a> y <a href="/practica/icfes-saber-11/gramatica-conjunciones">conectores y conjunciones</a>, que son los dos tipos de pregunta que más se fallan en la segunda mitad de la prueba.</p>
 
 <h2>WeLearn y la preparación ICFES inglés</h2>

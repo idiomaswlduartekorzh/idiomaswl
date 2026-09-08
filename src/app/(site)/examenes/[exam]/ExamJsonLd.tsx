@@ -98,6 +98,32 @@ export default function ExamJsonLd({ exam, guide }: { exam: Exam; guide?: ExamGu
     });
   }
 
+  if (exam.slug === 'icfes') {
+    const resources = [
+      ...exam.mocks.map((mock) => ({
+        name: mock.title,
+        url: `${BASE}${mock.href ?? `/examenes/icfes/practica/${mock.id}`}`,
+      })),
+      {
+        name: 'Simulacro guiado actual de Inglés Saber 11 · 55 preguntas',
+        url: `${BASE}/practica/icfes-saber-11/simulacro-guiado`,
+      },
+    ];
+
+    graph.push({
+      '@type': 'ItemList',
+      '@id': `${url}#recursos`,
+      name: '34 recursos para practicar Inglés Saber 11',
+      numberOfItems: resources.length,
+      itemListElement: resources.map((resource, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: resource.name,
+        url: resource.url,
+      })),
+    });
+  }
+
   return (
     <script
       type="application/ld+json"

@@ -39,6 +39,9 @@ export default function ExamenesClient() {
           <div><strong style={{ display: 'block', fontSize: '1.05rem' }}>Nuevo: simulacro guiado de 55 preguntas</strong><span style={{ color: '#dbeafe', fontSize: '.84rem' }}>Las 7 partes con evidencia, distractores, microlecciones y repaso de errores.</span></div>
           <Link href="/practica/icfes-saber-11/simulacro-guiado" className="btn" style={{ background: 'var(--wl-surface-card)', color: 'var(--wl-on-panel, #172554)', whiteSpace: 'nowrap' }}>Empezar guiado →</Link>
         </div>
+        <div style={{ maxWidth: 780, margin: '0 auto 1.5rem' }}>
+          <Link href="/examenes/icfes" className="btn btn-ghost btn-sm">← Ver los 34 recursos de simulacro ICFES Inglés</Link>
+        </div>
         {/* Header */}
         <div style={{ maxWidth: 780, margin: '0 auto 2.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
@@ -83,7 +86,7 @@ export default function ExamenesClient() {
                       {audienceLabel}
                     </span>
                     <span style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--muted)', fontFamily: 'var(--mono)', padding: '0.2rem 0.55rem', borderRadius: 8, background: 'var(--bg-2)', border: '1px solid var(--line-soft)' }}>
-                      Oficial ICFES
+                      Fuente ICFES
                     </span>
                   </div>
                   <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: '0 0 0.35rem', color: 'var(--ink)', letterSpacing: '-0.01em' }}>

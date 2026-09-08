@@ -26,18 +26,29 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     'SAT Reading and Writing', 'SAT Colombia', 'preparación SAT en español',
     'puntaje SAT', 'cómo estudiar para el SAT', 'examen SAT universidades Estados Unidos',
   ];
+  const icfesKeywords = [
+    'simulacro ICFES inglés',
+    'simulacro inglés ICFES',
+    'simulacro de inglés ICFES',
+    'cuadernillos ICFES inglés',
+    'Saber 11 inglés',
+  ];
   // Cuando el examen tiene guía, el título encabeza con el examen y no con
   // "simulacros": la gente busca "examen first" o "cambridge b2", no simulacros.
   return {
     title:
-      guide?.title ??
+      slug === 'icfes'
+        ? 'Simulacro ICFES Inglés gratis: 34 recursos Saber 11'
+        : guide?.title ??
       (guide
         ? `${exam.fullName ?? exam.name}: qué es, puntajes y simulacros gratis`
         : `Simulacros de ${exam.fullName ?? exam.name}`),
     description:
-      guide?.description ??
+      slug === 'icfes'
+        ? 'Haz un simulacro de inglés ICFES gratis. Elige entre 23 prácticas propias, 10 cuadernillos divulgados por el ICFES y 1 simulacro guiado de 55 preguntas.'
+        : guide?.description ??
       `${exam.description ?? exam.tagline} Practica con ${exam.totalQuestions} preguntas en ${exam.totalTime}. Simulacros completos con retroalimentación personalizada.`,
-    ...(slug === 'sat' ? { keywords: satKeywords } : {}),
+    ...(slug === 'sat' ? { keywords: satKeywords } : slug === 'icfes' ? { keywords: icfesKeywords } : {}),
     robots: {
       index: true,
       follow: true,
@@ -50,8 +61,8 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
       },
     },
     openGraph: {
-      title: guide?.title ?? `${exam.name} — Simulacros y preparación`,
-      description: guide?.description ?? exam.tagline,
+      title: slug === 'icfes' ? 'Simulacro ICFES Inglés gratis: 34 recursos' : guide?.title ?? `${exam.name} — Simulacros y preparación`,
+      description: slug === 'icfes' ? '23 prácticas propias, 10 cuadernillos divulgados por el ICFES y un simulacro guiado de 55 preguntas.' : guide?.description ?? exam.tagline,
       url: `https://www.idiomaswl.com/examenes/${slug}`,
       type: 'website' as const,
       locale: 'es_CO',
@@ -59,8 +70,8 @@ export async function generateMetadata({ params }: { params: Promise<{ exam: str
     },
     twitter: {
       card: 'summary_large_image' as const,
-      title: guide?.title ?? `${exam.name} — Simulacros y preparación`,
-      description: guide?.description ?? exam.tagline,
+      title: slug === 'icfes' ? 'Simulacro ICFES Inglés gratis: 34 recursos' : guide?.title ?? `${exam.name} — Simulacros y preparación`,
+      description: slug === 'icfes' ? '23 prácticas propias, 10 cuadernillos divulgados por el ICFES y un simulacro guiado de 55 preguntas.' : guide?.description ?? exam.tagline,
     },
     alternates: {
       canonical: `https://www.idiomaswl.com/examenes/${slug}`,

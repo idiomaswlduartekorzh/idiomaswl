@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react';
+import Link from 'next/link';
 import type { Exam } from '@/data/exams';
 
 function SectionArc({ pct, color, size = 72 }: { pct: number; color: string; size?: number }) {
@@ -22,7 +23,7 @@ function examVocabulary(exam: Exam) {
       : isSat
         ? 'SAT digital: guía y simulacro adaptativo'
         : isIcfes
-          ? 'ICFES Saber 11: Inglés'
+          ? 'Simulacro ICFES Inglés: practica gratis para Saber 11'
           : exam.name,
     sectionLabel: isIcfes ? 'Partes' : isSat ? 'Módulos' : 'Secciones',
     questionLabel: isToefl ? 'Ítems base' : exam.slug === 'celpe-bras' ? 'Tareas' : 'Preguntas',
@@ -32,6 +33,7 @@ function examVocabulary(exam: Exam) {
 
 export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Exam; hasPodcast?: boolean }) {
   const vocabulary = examVocabulary(exam);
+  const isIcfes = exam.slug === 'icfes';
   const totalMins = exam.sections.reduce((total, section) => {
     const minutes = Number.parseInt(String(section.time), 10);
     return total + (Number.isNaN(minutes) ? 0 : minutes);
@@ -39,12 +41,19 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
   const [scoreMin = '0', scoreMaxPart = exam.scoreRange] = exam.scoreRange.split('–');
   const scoreMax = scoreMaxPart.trim().match(/^[\d.]+/)?.[0] ?? scoreMaxPart.trim();
   const levelDenominator = Math.max((exam.levels?.length ?? 1) - 1, 1);
-  const stats = [
-    { label: vocabulary.sectionLabel, value: String(exam.sections.length) },
-    { label: vocabulary.questionLabel, value: exam.slug === 'toefl' ? String(exam.totalQuestions).replace(/\s*ítems base$/i, '') : String(exam.totalQuestions) },
-    { label: vocabulary.durationLabel, value: exam.totalTime },
-    { label: 'Puntaje', value: exam.scoreRange },
-  ];
+  const stats = isIcfes
+    ? [
+        { label: 'Recursos únicos', value: '34' },
+        { label: vocabulary.sectionLabel, value: String(exam.sections.length) },
+        { label: 'Preguntas estándar', value: String(exam.totalQuestions) },
+        { label: 'Nivel máximo', value: 'B1' },
+      ]
+    : [
+        { label: vocabulary.sectionLabel, value: String(exam.sections.length) },
+        { label: vocabulary.questionLabel, value: exam.slug === 'toefl' ? String(exam.totalQuestions).replace(/\s*ítems base$/i, '') : String(exam.totalQuestions) },
+        { label: vocabulary.durationLabel, value: exam.totalTime },
+        { label: 'Puntaje', value: exam.scoreRange },
+      ];
 
   return (
     <div className="wl-exam-info-graphic">
@@ -52,11 +61,22 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
         <div className="wrap wl-hub-panel wl-hub-panel--hero">
           <p className="wl-exam-hero__eyebrow"><span aria-hidden="true">{exam.flag}</span> {exam.language}</p>
           <h1 id="exam-title" className="wl-exam-hero__title">{vocabulary.title}</h1>
-          <p className="wl-exam-hero__sub">{exam.tagline}</p>
-          <p className="wl-exam-hero__desc">{exam.description}</p>
+          <p className="wl-exam-hero__sub">{isIcfes ? '34 recursos únicos para practicar las 7 partes del componente de Inglés.' : exam.tagline}</p>
+          <p className="wl-exam-hero__desc">
+            {isIcfes
+              ? 'Empieza con un simulacro de inglés ICFES de 55 preguntas o elige entre 23 prácticas propias abreviadas y 10 cuadernillos divulgados por el ICFES. Son materiales de entrenamiento: no predicen un puntaje oficial.'
+              : exam.description}
+          </p>
 
           <div className="wl-exam-hero__actions">
-            <a href="#practica" className="btn">Ver prácticas <span aria-hidden="true">→</span></a>
+            {isIcfes ? (
+              <>
+                <Link href="/practica/icfes-saber-11/simulacro-guiado" className="btn">Empezar simulacro de 55 preguntas <span aria-hidden="true">→</span></Link>
+                <a href="#practica" className="btn btn-ghost">Ver los 34 recursos</a>
+              </>
+            ) : (
+              <a href="#practica" className="btn">Ver prácticas <span aria-hidden="true">→</span></a>
+            )}
             {hasPodcast ? <a href="#podcasts-del-examen" className="btn btn-ghost">Escuchar guía</a> : null}
           </div>
 

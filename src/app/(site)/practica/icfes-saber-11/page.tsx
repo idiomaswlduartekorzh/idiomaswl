@@ -8,12 +8,12 @@ const BASE = 'https://www.idiomaswl.com';
 const CANONICAL = `${BASE}/practica/icfes-saber-11`;
 
 export const metadata: Metadata = {
-  title: 'ICFES Inglés Saber 11: guía, 7 partes, práctica y simulacros',
-  description: 'Superhub gratuito de inglés ICFES Saber 11: las 7 partes oficiales, ejercicios guiados con corrección, vocabulario, gramática y cuadernillos.',
+  title: 'Cómo resolver las 7 partes de Inglés Saber 11',
+  description: 'Aprende el método para las 7 partes de Inglés Saber 11 con ejercicios guiados, vocabulario, gramática y retroalimentación por habilidad.',
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: 'ICFES Inglés Saber 11: aprende y practica las 7 partes',
-    description: 'Guías visuales, práctica guiada, feedback de distractores y simulacros del componente de Inglés Saber 11.',
+    title: 'Cómo resolver las 7 partes de Inglés Saber 11',
+    description: 'Centro de aprendizaje con guías visuales, práctica guiada y retroalimentación por habilidad.',
     url: CANONICAL,
     type: 'website',
   },
@@ -57,7 +57,7 @@ export default function Page() {
             <p>El componente de Inglés evalúa lectura y uso del idioma mediante siete tipos de tarea. Aquí puedes aprender el método, practicar sin registro y pasar después a cuadernillos o una ruta enfocada en tus errores.</p>
             <div className={styles.hubActions}>
               <Link href="/practica/icfes-saber-11/diagnostico" className={styles.primaryButton}>Hacer diagnóstico</Link>
-              <Link href="/practica/icfes-saber-11/examenes" className={styles.secondaryButton}>Ver cuadernillos</Link>
+              <Link href="/examenes/icfes" className={styles.secondaryButton}>Ver 34 recursos de examen</Link>
             </div>
             <div className={styles.truthStrip}>
               <span><strong>55</strong> preguntas en la aplicación estándar 2026-2</span>
@@ -85,7 +85,7 @@ export default function Page() {
           <div><p className={styles.hubKicker}>Elige el punto de entrada</p><h2 id="start-title">No todos necesitan comenzar en el mismo lugar</h2></div>
           <div className={styles.modeGrid}>
             <Link href="/practica/icfes-saber-11/diagnostico"><span>01</span><div><strong>No sé por dónde empezar</strong><p>Haz 15 preguntas y recibe una ruta inicial.</p></div></Link>
-            <Link href="/practica/icfes-saber-11/examenes"><span>02</span><div><strong>Quiero medirme</strong><p>Responde un cuadernillo y revisa tu resultado.</p></div></Link>
+            <Link href="/examenes/icfes"><span>02</span><div><strong>Quiero medirme</strong><p>Elige entre simulacros y cuadernillos en el catálogo principal.</p></div></Link>
             <Link href="/practica/icfes-saber-11/repaso-errores"><span>03</span><div><strong>Quiero corregir errores</strong><p>Vuelve a la evidencia y aplica la microlección.</p></div></Link>
             <Link href="/practica/icfes-saber-11/progreso"><span>04</span><div><strong>Quiero ver mi avance</strong><p>Consulta dominio, sesiones y errores sincronizados.</p></div></Link>
           </div>

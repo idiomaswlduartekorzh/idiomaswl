@@ -2,7 +2,7 @@ import SkillHub from '@/components/practica/SkillHub'
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Inglés B2 — Elige una habilidad',
-  description: 'Inglés B2: Use of English (Multiple Choice Cloze + Word Formation), Reading, Writing y más. Preparación FCE Cambridge y ICFES Saber 11.',
+  description: 'Inglés B2: Use of English, Reading, Writing y más para Cambridge B2 First. Saber 11 puede aprovechar estas destrezas, pero el ICFES reporta como máximo B1.',
   alternates: { canonical: 'https://www.idiomaswl.com/practica/ingles/b2' },
 };
 

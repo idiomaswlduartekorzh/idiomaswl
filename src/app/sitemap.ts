@@ -107,7 +107,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/clases-de-ruso`, changeFrequency: 'monthly', priority: 0.82 },
     { url: `${BASE}/quienes-somos`, changeFrequency: 'monthly', priority: 0.80 },
     { url: `${BASE}/clases-de-japones`, changeFrequency: 'monthly', priority: 0.82 },
-    { url: `${BASE}/preparacion-icfes`, changeFrequency: 'monthly', priority: 0.9  },
+    // La landing comercial responde a intención de tutoría. El hub de simulacros
+    // recibe la prioridad principal más abajo para no convertir ambas URLs en duplicados.
+    { url: `${BASE}/preparacion-icfes`, changeFrequency: 'monthly', priority: 0.84 },
     { url: `${BASE}/miembro-fundador`, changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${BASE}/clases-de-ingles-bucaramanga`, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE}/aprende-coreano/palabras-compuestas`, changeFrequency: 'monthly', priority: 0.82 },
@@ -116,8 +118,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/examenes`, changeFrequency: 'weekly',  priority: 0.9  },
     ...EXAM_SLUGS.map((slug) => ({
       url: `${BASE}/examenes/${slug}`,
-      changeFrequency: 'monthly' as const,
-      priority: 0.75,
+      changeFrequency: slug === 'icfes' ? 'weekly' as const : 'monthly' as const,
+      priority: slug === 'icfes' ? 0.93 : 0.75,
     })),
     // Cada episodio vive dentro de su examen y tiene contenido editorial propio.
     // El catálogo es la única fuente para el índice /podcasts, los hubs y el sitemap.
@@ -260,7 +262,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]),
 
     // ── Practice — ICFES Saber 11 ────────────────────────────────────────────
-    { url: `${BASE}/practica/icfes-saber-11`, changeFrequency: 'weekly'  as const, priority: 0.85 },
+    // Este clúster enseña habilidades; /examenes/icfes concentra la intención
+    // "simulacro ICFES inglés" y enlaza hacia estas experiencias cuando corresponde.
+    { url: `${BASE}/practica/icfes-saber-11`, changeFrequency: 'weekly'  as const, priority: 0.82 },
     { url: `${BASE}/practica/icfes-saber-11/diagnostico`, changeFrequency: 'weekly'  as const, priority: 0.82 },
     { url: `${BASE}/practica/icfes-saber-11/plan-de-estudio`, changeFrequency: 'monthly' as const, priority: 0.8  },
     { url: `${BASE}/practica/icfes-saber-11/simulacro-guiado`, changeFrequency: 'monthly' as const, priority: 0.84 },

@@ -4,6 +4,14 @@ import { GUIDED_MOCK_IDS, GUIDED_WORKBOOK_IDS, GUIDED_WORKBOOK_EXCLUSIONS } from
 
 const read = (path) => readFileSync(path, 'utf8');
 const sitemap = read('src/app/sitemap.ts');
+const robots = read('src/app/robots.ts');
+const examHubPage = read('src/app/(site)/examenes/[exam]/page.tsx');
+const examHero = read('src/app/(site)/examenes/[exam]/ExamInfoGraphic.tsx');
+const examJsonLd = read('src/app/(site)/examenes/[exam]/ExamJsonLd.tsx');
+const examGuide = read('src/data/examGuides.ts');
+const preparationPage = read('src/app/(site)/preparacion-icfes/page.tsx');
+const learningLayout = read('src/app/(site)/practica/icfes-saber-11/layout.tsx');
+const blog = read('src/data/blog.ts');
 const hub = read('src/app/(site)/practica/icfes-saber-11/page.tsx');
 const partPage = read('src/app/(site)/practica/icfes-saber-11/[partSlug]/page.tsx');
 const workbookPage = read('src/app/(site)/practica/icfes-saber-11/examenes/[examId]/page.tsx');
@@ -35,7 +43,7 @@ check('canonical-guided', 'Ambas familias guiadas declaran canonical propio', gu
 check('private-tools-noindex', 'Progreso y repaso personal no se indexan', progress.includes('index: false') && errorReview.includes('index: false'), 'high', 'Dos herramientas personales con noindex,follow', 'Excluir páginas dependientes de estado personal.');
 check('legacy-redirect', 'La antigua ruta /practica/icfes consolida autoridad', legacy.includes("permanentRedirect('/practica/icfes-saber-11')"), 'high', 'Redirección permanente al hub', 'Evitar una landing duplicada.');
 check('structured-data', 'Hub y experiencias publican datos estructurados pertinentes', hub.includes("'@type': 'CollectionPage'") && hub.includes("'@type': 'BreadcrumbList'") && guidedMockPage.includes('type="Quiz"') && guidedWorkbookPage.includes('type="Quiz"'), 'medium', 'CollectionPage + BreadcrumbList + Quiz', 'Mantener schema alineado con contenido visible.');
-const workbookMetadataStatesGuidedScope = /Cinco\s+(?:muestras\s+)?traen\s+explicación\s+guiada/i.test(workbookCatalogPage);
+const workbookMetadataStatesGuidedScope = /Cinco\s+(?:(?:muestras\s+)?traen|tienen)\s+explicación\s+guiada/i.test(workbookCatalogPage);
 const workbookOpenGraphStatesQuestionCount = /145\s+preguntas\s+explicadas\s+en\s+cinco\s+recorridos\s+guiados/i.test(workbookCatalogPage);
 check('metadata-truth', 'La portada de cuadernillos comunica alcance real', workbookMetadataStatesGuidedScope && workbookOpenGraphStatesQuestionCount && !workbookCatalogPage.includes('análisis guiado en el cuadernillo 2023'), 'high', 'Snippet: cinco muestras guiadas · Open Graph: 145 preguntas en cinco recorridos', 'Actualizar los hechos del snippet y Open Graph cuando cambie el inventario, sin exigir una redacción literal.');
 check('catalogue-cta-parity', 'Catálogos y modo examen consultan el registro único', mockGrid.includes("from '@/data/icfes/guided-registry'") && practiceClient.includes("from '@/data/icfes/guided-registry'") && workbookCatalog.includes("from '@/data/icfes/guided-registry'"), 'critical', 'Tres consumidores usan el registro ligero', 'No volver a listas locales de tres IDs.');
@@ -47,6 +55,15 @@ check('safe-animation', 'La órbita anima solo transform', /@keyframes orbit \{ 
 check('touch-actions', 'Controles táctiles evitan demora de interacción', css.includes('touch-action: manipulation'), 'medium', 'Aplicado a botones y enlaces ICFES', 'Añadir touch-action a controles interactivos.');
 check('seven-parts-linked', 'El hub enlaza las siete partes desde datos', hub.includes('ICFES_PARTS.map') && hub.includes('href={`/practica/icfes-saber-11/${part.slug}`}'), 'critical', 'Mapa y tarjetas derivados de ICFES_PARTS', 'No mantener una lista manual incompleta.');
 check('review-date', 'La revisión pública está fechada', hub.includes("dateModified: '2026-08-04'") && partPage.includes("REVIEWED_AT = '4 de agosto de 2026'"), 'medium', '4 de agosto de 2026', 'Actualizar solo al completar una revisión real.');
+check('primary-hub-intent', 'El hub de exámenes concentra la intención simulacro ICFES Inglés', examHubPage.includes('Simulacro ICFES Inglés gratis: 34 recursos Saber 11') && examHero.includes('Simulacro ICFES Inglés: practica gratis para Saber 11'), 'critical', 'Title y H1 específicos en /examenes/icfes', 'Mantener la consulta principal en el hub de exámenes.');
+check('primary-hub-cta', 'El primer CTA abre una experiencia completa', examHero.includes('href="/practica/icfes-saber-11/simulacro-guiado"') && examHero.includes('Empezar simulacro de 55 preguntas'), 'high', 'CTA directo al recorrido propio de 55 preguntas', 'No sustituirlo por una ancla o una página intermedia.');
+check('inventory-language', 'La portada diferencia recursos únicos de modos', mockGrid.includes('34 recursos distintos') && mockGrid.includes('62 rutas o modos de uso, pero no 62 exámenes diferentes') && examGuide.includes('Por qué ves 62 rutas, pero solo 34 recursos'), 'critical', '34 recursos = 23 propios + 10 divulgados + 1 guiado; 62 modos', 'No contar modos como exámenes distintos.');
+check('inventory-jsonld', 'Los datos estructurados enumeran recursos únicos', examJsonLd.includes("'@type': 'ItemList'") && examJsonLd.includes('numberOfItems: resources.length') && examJsonLd.includes("exam.mocks.map"), 'high', 'ItemList derivado del catálogo + simulacro guiado', 'Derivar siempre del catálogo y evitar cifras manuales en itemListElement.');
+check('intent-separation', 'Aprendizaje, cuadernillos y tutoría conservan intención propia', hub.includes('Cómo resolver las 7 partes de Inglés Saber 11') && workbookCatalogPage.includes('Cuadernillos ICFES Inglés divulgados: catálogo por año') && preparationPage.includes('Preparación ICFES Inglés con tutor | WeLearn'), 'high', 'Tres titles distintos de la consulta principal', 'Evitar que las páginas satélite copien el title del hub.');
+check('cluster-links-primary', 'Las páginas satélite y artículos devuelven al hub primario', learningLayout.includes("href: '/examenes/icfes'") && hub.includes('href="/examenes/icfes"') && workbookCatalog.includes('href="/examenes/icfes"') && (blog.match(/href="\/examenes\/icfes"/g) ?? []).length >= 4, 'high', 'Learning hub, catálogo, tutoría y cuatro artículos enlazan /examenes/icfes', 'Mantener enlaces descriptivos al catálogo principal.');
+check('sitemap-primary-priority', 'El sitemap prioriza el hub sobre sus satélites', sitemap.includes("priority: slug === 'icfes' ? 0.93 : 0.75") && sitemap.includes("/preparacion-icfes`, changeFrequency: 'monthly', priority: 0.84") && sitemap.includes("/practica/icfes-saber-11`, changeFrequency: 'weekly'  as const, priority: 0.82"), 'high', 'Hub 0.93 · tutoría 0.84 · aprendizaje 0.82', 'Mantener el hub como URL principal de intención transaccional.');
+check('robots-discoverability', 'Robots permite rastrear el clúster público', robots.includes("{ userAgent: '*', allow: '/', disallow: DISALLOW }") && !robots.includes("'/examenes/'") && !robots.includes("'/practica/icfes-saber-11/'"), 'high', 'Allow / y sin bloqueos del hub o clúster', 'No bloquear recursos públicos del clúster ICFES.');
+check('claims-b1-only', 'El clúster no promete B2/C1 ni incrementos fijos', examHero.includes("value: 'B1'") && preparationPage.includes('No prometemos una cantidad fija de puntos') && !preparationPage.includes('10–20 puntos') && !preparationPage.includes('replican el examen real'), 'critical', 'B1 máximo y sin promesa fija de puntos', 'No atribuir B2/C1 a Saber 11 ni publicar incrementos sin evidencia.');
 
 const failed = checks.filter((item) => !item.pass);
 const blocking = failed.filter((item) => item.severity === 'critical' || item.severity === 'high');

@@ -4,16 +4,13 @@ import s from './page.module.css';
 
 const WA = '573005004253';
 const WA_ICFES      = encodeURIComponent('Hola, quiero prepararme para el inglés del ICFES con WeLearn. ¿Cómo funciona?');
-const WA_SIMULACRO  = encodeURIComponent('Hola, acabo de hacer el simulacro de inglés ICFES en WeLearn y quiero saber cómo mejorar mi puntaje.');
-const WA_GENERAL    = encodeURIComponent('Hola, vi la página de preparación ICFES inglés en WeLearn y tengo algunas preguntas.');
 
 export const metadata: Metadata = {
-  title: 'Preparación Inglés ICFES Saber 11 — Simulacros y Clases',
+  title: 'Preparación ICFES Inglés con tutor | WeLearn',
   description:
-    'Prepárate para el inglés del ICFES Saber 11 con simulacros completos y clases 1:1. Sube tu puntaje de inglés y con él tu puntaje global.',
+    'Preparación para Inglés Saber 11 con diagnóstico, plan por habilidades y clases 1:1. Practica aparte con el catálogo gratuito de simulacros ICFES.',
   keywords: [
     'preparación inglés ICFES',
-    'simulacro ICFES inglés',
     'Saber 11 inglés',
     'mejorar puntaje ICFES inglés',
     'clases inglés ICFES Colombia',
@@ -21,12 +18,11 @@ export const metadata: Metadata = {
     'preparación Saber 11 inglés',
     'WeLearn ICFES',
     'inglés ICFES Bucaramanga',
-    'simulacro ingles saber 11 gratis',
   ],
   openGraph: {
-    title: 'Preparación Inglés ICFES Saber 11',
+    title: 'Preparación ICFES Inglés con tutor | WeLearn',
     description:
-      'Simulacros completos, análisis por sección y clases 1:1. Sube tu puntaje de inglés en el ICFES. Para estudiantes de todo Colombia.',
+      'Diagnóstico, plan por habilidades y clases 1:1 para estudiantes de toda Colombia.',
     url: 'https://www.idiomaswl.com/preparacion-icfes',
   },
   alternates: { canonical: 'https://www.idiomaswl.com/preparacion-icfes' },
@@ -44,7 +40,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: '¿En cuánto tiempo puedo mejorar mi puntaje de inglés?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Depende tu nivel de base. Con 2–3 meses de preparación constante (simulacros + análisis de errores), la mayoría de estudiantes sube 10–20 puntos. Con clases 1:1, el avance es más rápido.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Depende del nivel de partida, el tiempo disponible y los errores que muestre un diagnóstico. No prometemos una cantidad fija de puntos ni un plazo universal; el plan se ajusta con bloques comparables.' },
     },
     {
       '@type': 'Question',
@@ -70,7 +66,7 @@ const jsonLd = {
     {
       '@type': 'Course',
       name: 'Preparación Inglés ICFES Saber 11',
-      description: 'Preparación intensiva para la sección de inglés del ICFES Saber 11. Simulacros, análisis de errores y clases 1:1 con tutor.',
+      description: 'Preparación para la sección de inglés del ICFES Saber 11 con diagnóstico, análisis de errores y clases 1:1 con tutor.',
       provider: {
         '@type': 'Organization',
         name: 'Idiomas WeLearn',
@@ -84,13 +80,6 @@ const jsonLd = {
           instructor: { '@type': 'Person', name: 'José David Duarte Silva' },
         },
       ],
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'COP',
-        description: 'Simulacro de prueba gratis',
-        availability: 'https://schema.org/InStock',
-      },
     },
     {
       '@type': 'LocalBusiness',
@@ -149,7 +138,7 @@ const FAQS = [
   },
   {
     q: '¿En cuánto tiempo puedo mejorar mi puntaje de inglés?',
-    a: 'Depende tu nivel de base. Con 2–3 meses de preparación constante (simulacros + análisis de errores), la mayoría de estudiantes sube 10–20 puntos. Con clases 1:1, el avance es más rápido.',
+    a: 'Depende del nivel de partida, el tiempo disponible y los errores que muestre un diagnóstico. No prometemos una cantidad fija de puntos ni un plazo universal; el plan se ajusta con bloques comparables.',
   },
   {
     q: '¿Los simulacros de WeLearn son como el ICFES real?',
@@ -170,11 +159,11 @@ export default function PreparacionICFESPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }}
       />
       <main className={s.page}>
 
@@ -184,13 +173,12 @@ export default function PreparacionICFESPage() {
             <div className={s.heroText}>
               <p className={s.eyebrow}>ICFES Saber 11 · Inglés</p>
               <h1 className={s.h1}>
-                Sube tu puntaje<br />
-                de inglés en el <span className={s.accent}>ICFES.</span>
+                Preparación de inglés<br />
+                para el <span className={s.accent}>ICFES Saber 11.</span>
               </h1>
               <p className={s.heroSub}>
-                El inglés del Saber 11 tiene un formato predecible. Con simulacros
-                que replican el examen real y análisis de errores preciso, subir
-                10–20 puntos en 2–3 meses es completamente posible.
+                Empieza con un diagnóstico, identifica tus errores por habilidad y trabaja
+                lectura, vocabulario y uso de la lengua con un plan ajustado a tu punto de partida.
               </p>
               <div className={s.heroCtas}>
                 <Link href="/examenes/icfes" className={s.primaryBtn}>
@@ -219,12 +207,12 @@ export default function PreparacionICFESPage() {
                 <div className={s.statLabel}>nivel máximo reportado</div>
               </div>
               <div className={s.statCard}>
-                <div className={s.statNum}>10%</div>
-                <div className={s.statLabel}>del puntaje global</div>
+                <div className={s.statNum}>7</div>
+                <div className={s.statLabel}>partes del componente</div>
               </div>
               <div className={s.statCard}>
-                <div className={s.statNum}>3</div>
-                <div className={s.statLabel}>meses de preparación</div>
+                <div className={s.statNum}>1:1</div>
+                <div className={s.statLabel}>acompañamiento con tutor</div>
               </div>
             </div>
           </div>
@@ -232,7 +220,7 @@ export default function PreparacionICFESPage() {
 
         {/* ══════════════ PROOF STRIP ══════════════ */}
         <div className={s.proofStrip}>
-          <div className={s.proofItem}><strong>Simulacros</strong> en formato ICFES real</div>
+          <div className={s.proofItem}><strong>Práctica</strong> de las 7 partes</div>
           <div className={s.proofDivider} />
           <div className={s.proofItem}><strong>Análisis</strong> por sección</div>
           <div className={s.proofDivider} />
@@ -307,7 +295,7 @@ export default function PreparacionICFESPage() {
               <div className={s.planStep}>
                 <div className={s.planN}>01</div>
                 <h3 className={s.planTitle}>Simulacro de diagnóstico</h3>
-                <p className={s.planDesc}>Hacemos un simulacro completo para identificar exactamente dónde pierdes puntos: vocabulario, inferencia, gramática o velocidad de lectura.</p>
+                <p className={s.planDesc}>Usamos un diagnóstico para identificar en qué tipos de tarea aparecen tus errores: vocabulario, inferencia, gramática o velocidad de lectura.</p>
               </div>
               <div className={s.planStep}>
                 <div className={s.planN}>02</div>
@@ -344,7 +332,7 @@ export default function PreparacionICFESPage() {
                 </p>
               </div>
               <Link
-                href="/practica/icfes-saber-11"
+                href="/examenes/icfes"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#0f3d8c', color: '#fff', padding: '0.85rem 1.75rem', borderRadius: 12, fontWeight: 700, fontSize: '1rem', textDecoration: 'none', whiteSpace: 'nowrap', flexShrink: 0 }}
               >
                 Iniciar simulacro gratis →
@@ -357,7 +345,7 @@ export default function PreparacionICFESPage() {
         <div className={s.midCta}>
           <div className={s.wrap}>
             <p className={s.midCtaText}>
-              ¿Cuándo es tu ICFES? Mientras más pronto empieces, más sube el puntaje.
+              ¿Cuándo presentas el ICFES? Empieza con tiempo para medir, practicar y volver a comparar.
             </p>
             <div className={s.midCtaBtns}>
               <a
@@ -371,7 +359,7 @@ export default function PreparacionICFESPage() {
                 </svg>
                 Empezar preparación por WhatsApp
               </a>
-              <Link href="/practica/icfes-saber-11" className={s.ghostBtn}>
+              <Link href="/examenes/icfes" className={s.ghostBtn}>
                 Hacer simulacro gratis primero
               </Link>
             </div>
