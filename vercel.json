@@ -4,5 +4,11 @@
     "deploymentEnabled": {
       "codex/sat-scale-*": false
     }
-  }
+  },
+  "crons": [
+    {
+      "path": "/api/internal/course-payments/recover",
+      "schedule": "17 11 * * *"
+    }
+  ]
 }

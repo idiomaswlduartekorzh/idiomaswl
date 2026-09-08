@@ -1,6 +1,9 @@
 import 'server-only';
 
-import type { WompiServerConfig } from './validation';
+import {
+  wompiPrivateAuthorization,
+  type WompiServerConfig,
+} from './validation';
 import {
   parseAndVerifyWompiTransaction,
   type VerifiedWompiTransaction,
@@ -25,7 +28,7 @@ export async function fetchVerifiedWompiTransaction(
       {
         headers: {
           Accept: 'application/json',
-          Authorization: `Bearer ${config.publicKey}`,
+          Authorization: wompiPrivateAuthorization(config),
         },
         cache: 'no-store',
         signal: AbortSignal.timeout(10_000),

@@ -3,6 +3,7 @@ import { createHash, createHmac, timingSafeEqual } from 'node:crypto';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { createWompiIntegritySignature } from '@/lib/wompi/security';
+import { wompiPrivateAuthorization } from '@/lib/wompi/validation';
 import { parseProviderPayment, type parseOrderInput } from './payment';
 import { TERMS_VERSION, COURSE_LEGAL_SNAPSHOT } from './terms';
 import { courseSalesEnabled } from './release';
@@ -84,21 +85,78 @@ export async function checkoutForOrder(order:Record<string,unknown>,origin:strin
   url.search=new URLSearchParams({'public-key':config.publicKey,currency:'COP','amount-in-cents':String(amountInCents),reference,'signature:integrity':integrity,'expiration-time':expirationTime,'redirect-url':new URL('/inscripcion?orden='+String(order.id),origin).href}).toString();
   return {status:'ready',checkoutUrl:url.href};
 }
+
+export async function queueCoursePaymentReconciliation(reference:string,transactionId:string) {
+  if(!/^WC-[0-9a-f-]{36}$/.test(reference)||!/^[A-Za-z0-9_-]{6,120}$/.test(transactionId))return null;
+  const config=getWompiServerConfig();
+  const {data,error}=await createAdminClient().rpc('queue_course_payment_reconciliation',{
+    p_reference:reference,p_environment:config.environment,p_provider_id:transactionId,
+  }).abortSignal(AbortSignal.timeout(10000));
+  if(error)throw new Error('payment_queue_unavailable');
+  return typeof data==='string'?data:null;
+}
+
+async function finishPaymentReconciliation(transactionId:string,success:boolean,error?:unknown) {
+  const config=getWompiServerConfig();
+  const message=error instanceof Error?error.message:String(error??'failed');
+  const {error:rpcError}=await createAdminClient().rpc('finish_course_payment_reconciliation',{
+    p_environment:config.environment,p_provider_id:transactionId,p_success:success,p_error:success?null:message,
+  }).abortSignal(AbortSignal.timeout(10000));
+  if(rpcError)throw new Error('payment_queue_unavailable');
+}
+
 /** Always obtain amount, reference and status from Wompi; webhook unsigned fields are not authority. */
 export async function reconcileCoursePayment(transactionId:string,expectedOrderId?:string) {
   if(!/^[A-Za-z0-9_-]{6,120}$/.test(transactionId)) throw new Error('invalid_transaction');
   const config=getWompiServerConfig();
-  const response=await fetch(`${config.apiBaseUrl}/transactions/${encodeURIComponent(transactionId)}`,{headers:{Authorization:`Bearer ${config.publicKey}`,Accept:'application/json'},cache:'no-store',signal:AbortSignal.timeout(10000)});
-  if(!response.ok) throw new Error('provider_unavailable');
-  const raw=await response.json();
-  const payment=parseProviderPayment(raw.data);
-  if(!payment || payment.id!==transactionId) throw new Error('invalid_provider_payment');
-  if(expectedOrderId && payment.reference!=='WC-'+expectedOrderId) throw new Error('payment_order_mismatch');
-  const {data,error}=await createAdminClient().rpc('record_course_payment',{
-    p_reference:payment.reference,p_environment:config.environment,p_provider_id:payment.id,p_amount:payment.amount_in_cents,p_currency:payment.currency,p_status:payment.status,p_observed:new Date().toISOString(),
-    p_fingerprint:createHash('sha256').update(JSON.stringify([config.environment,payment])).digest('hex'),
-  }).abortSignal(AbortSignal.timeout(10000));
-  if(error||!data) throw new Error('payment_storage_unavailable');
-  await fulfillPaidCourseOrder(data as string);
-  return data as string;
+  if(expectedOrderId)await queueCoursePaymentReconciliation('WC-'+expectedOrderId,transactionId);
+  let orderId:string;
+  try {
+    const response=await fetch(`${config.apiBaseUrl}/transactions/${encodeURIComponent(transactionId)}`,{headers:{Authorization:wompiPrivateAuthorization(config),Accept:'application/json'},cache:'no-store',signal:AbortSignal.timeout(10000)});
+    if(!response.ok) throw new Error('provider_unavailable');
+    const raw=await response.json();
+    const payment=parseProviderPayment(raw.data);
+    if(!payment || payment.id!==transactionId) throw new Error('invalid_provider_payment');
+    if(expectedOrderId && payment.reference!=='WC-'+expectedOrderId) throw new Error('payment_order_mismatch');
+    const {data,error}=await createAdminClient().rpc('record_course_payment',{
+      p_reference:payment.reference,p_environment:config.environment,p_provider_id:payment.id,p_amount:payment.amount_in_cents,p_currency:payment.currency,p_status:payment.status,p_observed:new Date().toISOString(),
+      p_fingerprint:createHash('sha256').update(JSON.stringify([config.environment,payment])).digest('hex'),
+    }).abortSignal(AbortSignal.timeout(10000));
+    if(error||!data)throw new Error('payment_storage_unavailable');
+    orderId=data as string;
+    await finishPaymentReconciliation(transactionId,true);
+  } catch(error) {
+    try{await finishPaymentReconciliation(transactionId,false,error);}catch{}
+    throw error;
+  }
+  await fulfillPaidCourseOrder(orderId);
+  return orderId;
+}
+
+export async function recoverCoursePayments(limit=10) {
+  const db=createAdminClient(),now=new Date().toISOString();
+  const {data:queued,error}=await db.from('course_payment_reconciliation_queue')
+    .select('provider_id,order_id').in('status',['pending','failed']).lte('next_attempt_at',now)
+    .order('next_attempt_at',{ascending:true}).limit(limit).abortSignal(AbortSignal.timeout(10000));
+  if(error)throw new Error('payment_queue_unavailable');
+  let paymentsRecovered=0,paymentsPending=0;
+  for(const item of queued??[]){
+    try{await reconcileCoursePayment(String(item.provider_id),String(item.order_id));paymentsRecovered+=1;}
+    catch{paymentsPending+=1;}
+  }
+
+  const [retryable,stale]=await Promise.all([
+    db.from('course_coordination_jobs').select('order_id').in('kind',['student_welcome','owner_notification'])
+      .in('status',['pending','failed']).lte('next_attempt_at',now).limit(limit).abortSignal(AbortSignal.timeout(10000)),
+    db.from('course_coordination_jobs').select('order_id').in('kind',['student_welcome','owner_notification'])
+      .eq('status','processing').lt('updated_at',new Date(Date.now()-5*60*1000).toISOString()).limit(limit).abortSignal(AbortSignal.timeout(10000)),
+  ]);
+  if(retryable.error||stale.error)throw new Error('course_job_lookup_failed');
+  const orderIds=[...new Set([...(retryable.data??[]),...(stale.data??[])].map(item=>String(item.order_id)))].slice(0,limit);
+  let fulfillmentsRecovered=0,fulfillmentsPending=0;
+  for(const orderId of orderIds){
+    try{await fulfillPaidCourseOrder(orderId);fulfillmentsRecovered+=1;}
+    catch{fulfillmentsPending+=1;}
+  }
+  return {paymentsChecked:(queued??[]).length,paymentsRecovered,paymentsPending,fulfillmentsChecked:orderIds.length,fulfillmentsRecovered,fulfillmentsPending};
 }

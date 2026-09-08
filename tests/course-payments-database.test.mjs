@@ -8,9 +8,14 @@ test('private ledger persists orders, deduplicates credits, rejects mismatches a
  try {
  await db.exec(`create role anon; create role authenticated; create role service_role bypassrls; create schema auth; create table auth.users(id uuid primary key); insert into auth.users values('${user}');`);
  await db.exec(await readFile(new URL('../supabase/migrations/20260907202922_course_orders_wompi.sql',import.meta.url),'utf8'));
+ await db.exec(await readFile(new URL('../supabase/migrations/20260908173000_course_payment_recovery.sql',import.meta.url),'utf8'));
  await db.exec('set role service_role');
  const create=async(key,amount=32000000)=> (await db.query('select * from public.prepare_course_order($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)',[null,'student@example.com','a'.repeat(64),key,'sandbox','offer-v1',{plan:'base'},{studentName:'Test',studentEmail:'student@example.com'},amount,4,'terms-v1'])).rows[0];
  const o=await create(user);assert.equal(o.sessions,8);
+ const queued=await db.query('select public.queue_course_payment_reconciliation($1,$2,$3) as order_id',[o.reference,'sandbox','transaction-one']);
+ assert.equal(queued.rows[0].order_id,o.id);
+ await db.query('select public.queue_course_payment_reconciliation($1,$2,$3)',[o.reference,'sandbox','transaction-one']);
+ assert.equal((await db.query('select * from course_payment_reconciliation_queue')).rows.length,1);
  assert.equal((await create(user)).id,o.id);
  assert.notEqual((await create('22345678-1234-4234-8234-123456789012')).id,o.id);
  await assert.rejects(create(user,1),/idempotency_conflict/);
@@ -19,6 +24,8 @@ test('private ledger persists orders, deduplicates credits, rejects mismatches a
  await assert.rejects(record('APPROVED','wrong-env',32000000,'production'),/payment_mismatch/);
  await record('PENDING');assert.equal((await db.query('select * from course_enrollments')).rows.length,0);
  await record('APPROVED');await record('APPROVED');
+ assert.equal((await db.query('select public.finish_course_payment_reconciliation($1,$2,$3,$4) as finished',['sandbox','transaction-one',true,null])).rows[0].finished,true);
+ assert.equal((await db.query("select status from course_payment_reconciliation_queue where provider_id='transaction-one'")).rows[0].status,'completed');
  await record('PENDING','transaction-one',32000000,'sandbox','late-pending');
  assert.equal((await db.query('select status from course_payment_transactions')).rows[0].status,'APPROVED');
  assert.equal((await db.query('select * from course_enrollments')).rows.length,1);
@@ -35,7 +42,7 @@ test('private ledger persists orders, deduplicates credits, rejects mismatches a
  await record('VOIDED','transaction-one');await record('APPROVED','transaction-one',32000000,'sandbox','late-approved');
  assert.equal((await db.query("select status from course_payment_transactions where provider_id='transaction-one'")).rows[0].status,'VOIDED');
  await assert.rejects(db.query('update course_orders set amount_in_cents=1'),/permission denied/);
- await db.exec('set role anon');await assert.rejects(db.query('select * from course_orders'),/permission denied/);await assert.rejects(create(user),/permission denied/);
- await db.exec('set role authenticated');await assert.rejects(db.query('select * from course_orders'),/permission denied/);
+ await db.exec('set role anon');await assert.rejects(db.query('select * from course_orders'),/permission denied/);await assert.rejects(db.query('select * from course_payment_reconciliation_queue'),/permission denied/);await assert.rejects(create(user),/permission denied/);
+ await db.exec('set role authenticated');await assert.rejects(db.query('select * from course_orders'),/permission denied/);await assert.rejects(db.query('select * from course_payment_reconciliation_queue'),/permission denied/);
  } finally {await db.close();}
 });

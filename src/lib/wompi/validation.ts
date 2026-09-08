@@ -124,3 +124,8 @@ export function parseWompiConfig(input: WompiConfigInput): WompiServerConfig {
     eventsSecret: values.eventsSecret,
   });
 }
+
+/** Wompi transaction reads are authenticated server-side with the private key. */
+export function wompiPrivateAuthorization(config: WompiServerConfig): string {
+  return `Bearer ${config.privateKey}`;
+}

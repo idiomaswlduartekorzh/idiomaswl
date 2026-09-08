@@ -5,6 +5,7 @@ import {
   WompiConfigurationError,
   parseWompiConfig,
   parseWompiPublicKey,
+  wompiPrivateAuthorization,
 } from '../src/lib/wompi/validation.ts';
 
 const sandboxCredentials = {
@@ -19,6 +20,13 @@ test('acepta un juego completo de credenciales Sandbox', () => {
 
   assert.equal(config.environment, 'sandbox');
   assert.equal(config.apiBaseUrl, 'https://sandbox.wompi.co/v1');
+});
+
+test('autentica consultas del backend con la llave privada', () => {
+  const config = parseWompiConfig(sandboxCredentials);
+
+  assert.equal(wompiPrivateAuthorization(config), `Bearer ${sandboxCredentials.privateKey}`);
+  assert.notEqual(wompiPrivateAuthorization(config), `Bearer ${sandboxCredentials.publicKey}`);
 });
 
 test('reconoce la llave publica de Produccion para el cliente', () => {

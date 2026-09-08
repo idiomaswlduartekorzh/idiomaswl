@@ -1,4 +1,4 @@
-import { reconcileCoursePayment } from '@/lib/course-pricing/payments.server';
+import { queueCoursePaymentReconciliation, reconcileCoursePayment } from '@/lib/course-pricing/payments.server';
 import { persistVerifiedWompiTransaction } from '@/lib/wompi/persistence';
 import { persistVerifiedToeflReportTransaction } from '@/lib/toefl/report-payment-events.server';
 import { parseWompiWebhookEvent, verifyWompiEventChecksum } from '@/lib/wompi/security';
@@ -62,6 +62,8 @@ export async function POST(request: Request): Promise<Response> {
         return json({ received: false, code: 'invalid_course_signature' }, 401);
       }
       try {
+        const queuedOrderId=await queueCoursePaymentReconciliation(candidate.reference,candidate.id);
+        if(!queuedOrderId)return json({received:true,ignored:true},200);
         await reconcileCoursePayment(candidate.id);
         return json({ received: true }, 200);
       } catch {
