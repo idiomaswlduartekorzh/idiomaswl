@@ -7,7 +7,7 @@ import { getMock } from '@/data/mocks';
 import type { RepeatQuestion, SpeakQuestion } from '@/data/mocks/types';
 import { practiceSetNumber } from '@/data/toefl/practice-set-catalog';
 
-export const metadata: Metadata = { title: 'TOEFL Speaking Practice Sets', description: 'Choose from 20 TOEFL Speaking sets with Listen and Repeat and Take an Interview tasks.' };
+export const metadata: Metadata = { title: 'TOEFL Speaking Practice Sets', description: 'Choose from 20 TOEFL Speaking sets with Listen and Repeat and Take an Interview tasks.', alternates: { canonical: '/practica/toefl/speaking' } };
 
 const PATH = '/practica/toefl/speaking';
 

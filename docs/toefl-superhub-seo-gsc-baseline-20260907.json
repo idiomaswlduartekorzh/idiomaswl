@@ -1,0 +1,63 @@
+{
+  "artifactType": "toefl-superhub-search-console-baseline",
+  "capturedAt": "2026-09-07",
+  "property": "sc-domain:idiomaswl.com",
+  "searchType": "web",
+  "filter": {
+    "dimension": "query",
+    "operator": "contains",
+    "value": "toefl"
+  },
+  "windows": [
+    {
+      "start": "2026-08-09",
+      "end": "2026-09-05",
+      "days": 28,
+      "totals": {
+        "clicks": 0,
+        "impressions": 237,
+        "ctrPercent": 0,
+        "averagePosition": 25.1
+      },
+      "topQueries": [
+        { "query": "examen toefl simulacro", "clicks": 0, "impressions": 84, "averagePosition": 17.5 },
+        { "query": "examen toefl simulador", "clicks": 0, "impressions": 60, "averagePosition": 39.2 },
+        { "query": "simulacro toefl", "clicks": 0, "impressions": 41, "averagePosition": 11.5 },
+        { "query": "simulación toefl", "clicks": 0, "impressions": 6, "averagePosition": 29.8 },
+        { "query": "simulacros toefl", "clicks": 0, "impressions": 4, "averagePosition": 14.5 },
+        { "query": "toefl essentials vs ibt", "clicks": 0, "impressions": 3, "averagePosition": 8.0 },
+        { "query": "toefl essentials vs toefl ibt", "clicks": 0, "impressions": 3, "averagePosition": 9.7 },
+        { "query": "toefl academic", "clicks": 0, "impressions": 2, "averagePosition": 5.5 },
+        { "query": "toefl simulacro", "clicks": 0, "impressions": 2, "averagePosition": 13.0 },
+        { "query": "examen simulador toefl", "clicks": 0, "impressions": 2, "averagePosition": 19.0 }
+      ],
+      "topPages": [
+        { "url": "https://www.idiomaswl.com/examenes/toefl", "clicks": 0, "impressions": 206, "averagePosition": 23.1 },
+        { "url": "https://www.idiomaswl.com/blog/toefl-ibt-vs-toefl-essentials-cual-elegir-2026", "clicks": 0, "impressions": 11, "averagePosition": 14.3 },
+        { "url": "https://www.idiomaswl.com/practica/toefl/writing/rubrica", "clicks": 0, "impressions": 7, "averagePosition": 71.0 },
+        { "url": "https://www.idiomaswl.com/practica/toefl/writing/write-an-email", "clicks": 0, "impressions": 6, "averagePosition": 53.8 },
+        { "url": "https://www.idiomaswl.com/practica/toefl/writing/academic-discussion", "clicks": 0, "impressions": 2, "averagePosition": 5.5 }
+      ]
+    },
+    {
+      "start": "2026-08-30",
+      "end": "2026-09-05",
+      "days": 7,
+      "totals": {
+        "clicks": 0,
+        "impressions": 48,
+        "ctrPercent": 0,
+        "averagePosition": 19.9
+      },
+      "topPages": [
+        { "url": "https://www.idiomaswl.com/examenes/toefl", "clicks": 0, "impressions": 44, "averagePosition": 20.5 },
+        { "url": "https://www.idiomaswl.com/blog/toefl-ibt-vs-toefl-essentials-cual-elegir-2026", "clicks": 0, "impressions": 2, "averagePosition": 7.5 }
+      ]
+    }
+  ],
+  "notes": [
+    "Search Console can report partial totals when filters are applied.",
+    "The newest Search Console data available at capture time was 2026-09-05.",
+    "This baseline records observed performance before the SEO changes in this branch are published."
+  ]
+}

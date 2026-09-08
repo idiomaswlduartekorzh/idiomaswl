@@ -466,10 +466,10 @@ export const EXAM_GUIDES: Record<string, ExamGuide> = {
   },
 
   toefl: {
-    title: 'Simulacro TOEFL 2026: 20 exámenes de las 4 secciones',
-    description: 'Haz un simulacro TOEFL 2026 de las cuatro secciones. Tienes 20 exámenes originales de WeLearn, de formato fijo y no oficiales, para practicar en línea.',
+    title: 'Simulacro TOEFL gratis 2026: 20 exámenes de práctica',
+    description: 'Practica el TOEFL iBT 2026 con 20 simulacros gratis de Reading, Listening, Writing y Speaking. Revisa formato, tareas, puntaje y guías por sección.',
     lead:
-      'Aquí puedes hacer <strong>20 simulacros TOEFL iBT 2026 de WeLearn</strong> con Reading, Listening, Writing y Speaking. Son recorridos originales de formato fijo, alineados con las tareas publicadas por ETS: <strong>no son pruebas oficiales ni reproducen el motor adaptativo</strong>. Desde el 21 de enero de 2026, el puntaje principal del TOEFL es una banda de 1 a 6; el equivalente 0–120 se mantiene durante una transición de dos años.',
+      'Aquí puedes hacer <strong>20 simulacros TOEFL iBT 2026 gratis de WeLearn</strong> con Reading, Listening, Writing y Speaking. Son recorridos originales de formato fijo, alineados con las tareas publicadas por ETS: <strong>no son pruebas oficiales ni reproducen el motor adaptativo</strong>. Desde el 21 de enero de 2026, el puntaje principal del TOEFL es una banda de 1 a 6; el equivalente 0–120 se mantiene durante una transición de dos años.',
     sections: [
       {
         h: 'Qué cambió exactamente y qué significa para ti',

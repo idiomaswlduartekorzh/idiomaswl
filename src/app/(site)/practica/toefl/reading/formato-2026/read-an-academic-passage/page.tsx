@@ -5,7 +5,7 @@ import ToeflPracticeSetCatalog from '@/components/toefl/ToeflPracticeSetCatalog'
 import { TOEFL_READING_PRACTICE_SETS, practiceSetNumber } from '@/data/toefl/practice-set-catalog';
 
 const PATH = '/practica/toefl/reading/formato-2026/read-an-academic-passage';
-export const metadata: Metadata = { title: 'TOEFL Academic Passage Practice Library', description: 'Choose from 20 academic reading passages with five comprehension questions each.' };
+export const metadata: Metadata = { title: 'TOEFL Academic Passage Practice Library', description: 'Choose from 20 academic reading passages with five comprehension questions each.', alternates: { canonical: PATH } };
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ set?: string | string[] }> }) {
   const setNumber = practiceSetNumber((await searchParams).set);

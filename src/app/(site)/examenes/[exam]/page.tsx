@@ -9,6 +9,7 @@ import ExamCluster from './ExamCluster';
 import { EXAM_GUIDES } from '@/data/examGuides';
 import ExamPodcastShelf from '@/components/practica/ExamPodcastShelf';
 import { getExamPodcasts } from '@/data/practica/exam-podcast-catalog';
+import ToeflCluster from './ToeflCluster';
 import styles from './exam-hub.module.css';
 
 export async function generateStaticParams() {
@@ -79,6 +80,7 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
     { href: '#puntaje', label: 'Puntaje' },
     ...(podcasts.length > 0 ? [{ href: '#podcasts-del-examen', label: 'Podcast' }] : []),
     { href: '#practica', label: 'Práctica' },
+    ...(slug === 'toefl' ? [{ href: '#ruta-toefl', label: 'Ruta TOEFL' }] : []),
     ...(guide ? [{ href: '#guia', label: 'Guía' }] : []),
   ];
 
@@ -108,6 +110,8 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
       </nav>
 
       <ExamInfoGraphic exam={exam} hasPodcast={podcasts.length > 0} />
+
+      {slug === 'toefl' ? <ToeflCluster accent={exam.color} /> : null}
 
       {podcasts.length > 0 ? (
         <ExamPodcastShelf

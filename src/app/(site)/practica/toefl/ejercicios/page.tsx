@@ -6,12 +6,21 @@ import { TOEFL_EXERCISE_COUNT, TOEFL_EXERCISE_SECTIONS } from '@/data/practica/t
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'TOEFL Practice: Reading, Listening, Writing & Speaking',
-  description: 'Choose a TOEFL task family, then select one of the available practice sets.',
+  title: 'TOEFL Exercises 2026: 12 Task Types and 20 Practice Sets',
+  description: 'Choose TOEFL Reading, Listening, Writing, or Speaking exercises. Browse 12 current task families and select one of 20 free practice sets.',
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/toefl/ejercicios' },
+  openGraph: {
+    title: 'TOEFL Exercises 2026: 12 Task Types',
+    description: 'Browse current TOEFL task families and choose a free practice set.',
+    url: 'https://www.idiomaswl.com/practica/toefl/ejercicios',
+    type: 'website',
+    locale: 'en_US',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function ToeflExercisesPage() {
-  return <main className={styles.page}>
+  return <main className={styles.page} lang="en">
     <header className={styles.hero}><div className="wrap">
       <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Practice</Link><span>›</span><Link href="/practica/toefl">TOEFL</Link><span>›</span><span>Exercises</span></nav>
       <div className={styles.heroGrid}>

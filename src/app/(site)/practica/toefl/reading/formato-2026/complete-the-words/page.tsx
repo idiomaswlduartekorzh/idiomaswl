@@ -5,7 +5,7 @@ import { TOEFL_COMPLETE_WORDS_PRACTICE_SETS, practiceSetNumber } from '@/data/to
 import CompleteTheWordsPractice from './CompleteTheWordsPractice';
 
 const PATH = '/practica/toefl/reading/formato-2026/complete-the-words';
-export const metadata: Metadata = { title: 'TOEFL Complete the Words Practice Library', description: 'Choose from 20 Complete the Words exercises and practice missing letters in context.' };
+export const metadata: Metadata = { title: 'TOEFL Complete the Words Practice Library', description: 'Choose from 20 Complete the Words exercises and practice missing letters in context.', alternates: { canonical: PATH } };
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ set?: string | string[] }> }) {
   const setNumber = practiceSetNumber((await searchParams).set);

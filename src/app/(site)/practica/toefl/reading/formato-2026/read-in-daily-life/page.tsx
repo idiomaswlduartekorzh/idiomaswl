@@ -5,7 +5,7 @@ import ToeflPracticeSetCatalog from '@/components/toefl/ToeflPracticeSetCatalog'
 import { TOEFL_READING_PRACTICE_SETS, practiceSetNumber } from '@/data/toefl/practice-set-catalog';
 
 const PATH = '/practica/toefl/reading/formato-2026/read-in-daily-life';
-export const metadata: Metadata = { title: 'TOEFL Read in Daily Life Practice Library', description: 'Choose from 20 practical reading exercises with notices, messages, schedules, and instructions.' };
+export const metadata: Metadata = { title: 'TOEFL Read in Daily Life Practice Library', description: 'Choose from 20 practical reading exercises with notices, messages, schedules, and instructions.', alternates: { canonical: PATH } };
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ set?: string | string[] }> }) {
   const setNumber = practiceSetNumber((await searchParams).set);

@@ -30,6 +30,24 @@ expect(!/slug\s*===\s*['"]toefl['"]\s*\?\s*<div/.test(page), 'ExamPage no puede 
 expect(!page.includes('toefl-ios.module.css'), 'ExamPage no puede importar el tema privado de TOEFL.');
 expect(!exists('src/app/(site)/examenes/[exam]/toefl-ios.module.css'), 'El tema privado toefl-ios.module.css debe permanecer eliminado.');
 
+expectMarkers(page, 'Ruta SEO de TOEFL', [
+  "import ToeflCluster from './ToeflCluster'",
+  "href: '#ruta-toefl'",
+  "slug === 'toefl' ? <ToeflCluster",
+]);
+
+const toeflCluster = read('src/app/(site)/examenes/[exam]/ToeflCluster.tsx');
+expectMarkers(toeflCluster, 'Clúster TOEFL', [
+  'id="ruta-toefl"',
+  'Todo para preparar el TOEFL iBT 2026',
+  'TOEFL_SEO_CLUSTER_GROUPS.map',
+  'No son preguntas oficiales ni reproducen el motor adaptativo de ETS.',
+]);
+
+const toeflClusterData = read('src/data/toefl/seo-cluster.ts');
+const toeflClusterLinks = (toeflClusterData.match(/href: '\//g) ?? []).length;
+expect(toeflClusterLinks === 14, `La ruta TOEFL debe mantener 14 destinos visibles; encontró ${toeflClusterLinks}.`);
+
 const infographic = read('src/app/(site)/examenes/[exam]/ExamInfoGraphic.tsx');
 expectMarkers(infographic, 'ExamInfoGraphic', [
   'function examVocabulary',
@@ -97,7 +115,13 @@ expect(exists('src/data/practica/podcasts/goethe-zertifikat-b1-18-richtige-antwo
 expect(exists('public/audio/goethe/strategy-map/goethe-zertifikat-b1-18-richtige-antworten.mp3'), 'Falta el audio público del podcast Goethe en alemán.');
 
 const jsonLd = read('src/app/(site)/examenes/[exam]/ExamJsonLd.tsx');
-expectMarkers(jsonLd, 'SEO de hubs', ["'@type': 'BreadcrumbList'", "'@type': 'LearningResource'", 'isAccessibleForFree']);
+expectMarkers(jsonLd, 'SEO de hubs', [
+  "'@type': 'BreadcrumbList'",
+  "'@type': 'LearningResource'",
+  'isAccessibleForFree',
+  "exam.slug === 'toefl'",
+  'TOEFL_SEO_CLUSTER_LINKS.map',
+]);
 
 const examsSource = read('src/data/exams.ts');
 const publishedCount = (examsSource.match(/available:\s*true/g) ?? []).length;

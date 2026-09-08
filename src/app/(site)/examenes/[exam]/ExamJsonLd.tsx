@@ -1,6 +1,7 @@
 import type { Exam } from '@/data/exams';
 import type { ExamGuide } from '@/data/examGuides';
 import { SAT_GUIDES } from '@/data/satGuides';
+import { TOEFL_SEO_CLUSTER_LINKS } from '@/data/toefl/seo-cluster';
 
 const BASE = 'https://www.idiomaswl.com';
 
@@ -78,6 +79,21 @@ export default function ExamJsonLd({ exam, guide }: { exam: Exam; guide?: ExamGu
         position: index + 1,
         name: item.h1,
         url: `${BASE}/examenes/sat/guia/${item.slug}`,
+      })),
+    });
+  }
+
+  if (exam.slug === 'toefl') {
+    graph.push({
+      '@type': 'ItemList',
+      '@id': `${url}#ruta-toefl`,
+      name: 'Ruta de preparación TOEFL iBT 2026',
+      numberOfItems: TOEFL_SEO_CLUSTER_LINKS.length,
+      itemListElement: TOEFL_SEO_CLUSTER_LINKS.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.title,
+        url: `${BASE}${item.href}`,
       })),
     });
   }

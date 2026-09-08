@@ -25,7 +25,7 @@ function asTask(question: WriteQuestion, setNumber: number): ToeflConstructedWri
   return { id: question.id, legacyId: question.id, kind: 'academic-discussion', title: `Academic Discussion · Set ${setNumber}`, contentVersion: '2026', timeLimitSeconds: question.timeLimitSeconds ?? 600, recommendedMinimumWords: 100, stimulus: question.stimulus, prompt: question.text, rubric: RUBRIC };
 }
 
-export const metadata: Metadata = { title: 'TOEFL Academic Discussion Practice Library', description: 'Choose from 20 timed TOEFL Academic Discussion prompts and complete one exercise at a time.' };
+export const metadata: Metadata = { title: 'TOEFL Academic Discussion Practice Library', description: 'Choose from 20 timed TOEFL Academic Discussion prompts and complete one exercise at a time.', alternates: { canonical: PATH } };
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ set?: string | string[] }> }) {
   const setNumber = practiceSetNumber((await searchParams).set);

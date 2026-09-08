@@ -6,14 +6,23 @@ import { TOEFL_EXERCISE_COUNT, TOEFL_EXERCISE_SECTIONS, TOEFL_MOCK_LIBRARY_HREF 
 import styles from './ios.module.css';
 
 export const metadata: Metadata = {
-  title: 'TOEFL Practice: Exercises and 20 Full Mocks',
-  description: 'Choose a TOEFL task, a Listening set, or one of 20 complete WeLearn mock exams.',
+  title: 'Free TOEFL Practice 2026: Exercises and 20 Full Mocks',
+  description: 'Practice TOEFL Reading, Listening, Writing, and Speaking with 12 task families, 20 selectable sets, and 20 free full WeLearn mocks.',
+  alternates: { canonical: 'https://www.idiomaswl.com/practica/toefl' },
+  openGraph: {
+    title: 'Free TOEFL Practice 2026: Exercises and Full Mocks',
+    description: 'Choose a TOEFL task family, a Listening set, or one of 20 free full WeLearn mocks.',
+    url: 'https://www.idiomaswl.com/practica/toefl',
+    type: 'website',
+    locale: 'en_US',
+  },
+  robots: { index: true, follow: true },
 };
 
 const sectionIcons = { reading: BookOpenCheck, listening: Headphones, writing: PenLine, speaking: Mic2 } as const;
 
 export default function TOEFLPage() {
-  return <main className={styles.page}>
+  return <main className={styles.page} lang="en">
     <header className={styles.hero}><div className="wrap">
       <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/practica">Practice</Link><span>›</span><span>TOEFL</span></nav>
       <div className={styles.heroCopy}>

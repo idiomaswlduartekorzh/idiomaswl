@@ -5,7 +5,7 @@ import ToeflPracticeSetCatalog from '@/components/toefl/ToeflPracticeSetCatalog'
 import { TOEFL_BUILD_SENTENCE_PRACTICE_SETS, practiceSetNumber } from '@/data/toefl/practice-set-catalog';
 
 const PATH = '/practica/toefl/writing/build-a-sentence';
-export const metadata: Metadata = { title: 'TOEFL Build a Sentence Practice Library', description: 'Choose from 20 Build a Sentence exercise sets with ten questions each.' };
+export const metadata: Metadata = { title: 'TOEFL Build a Sentence Practice Library', description: 'Choose from 20 Build a Sentence exercise sets with ten questions each.', alternates: { canonical: PATH } };
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ set?: string | string[] }> }) {
   const setNumber = practiceSetNumber((await searchParams).set);
