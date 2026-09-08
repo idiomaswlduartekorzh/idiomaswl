@@ -8,6 +8,9 @@
 
 **Plantilla visual:** [PRACTICE-UI-TEMPLATE.md](./PRACTICE-UI-TEMPLATE.md)
 
+**Contratos especializados TOEFL:**
+[TOEFL-PRACTICE-FAMILY-BLUEPRINTS.md](./TOEFL-PRACTICE-FAMILY-BLUEPRINTS.md)
+
 Este blueprint convierte la unificación visual de TOEFL en un sistema reutilizable. La
 unidad de expansión es la **familia de ejercicio**: un comportamiento académico e
 interactivo estable que puede recibir nuevos sets, formar parte de otro examen o usar
@@ -396,6 +399,10 @@ La migración a esta estructura se hace cuando exista el primer producto adicion
 necesite. No se mueve código TOEFL estable solo para imitar el diagrama.
 
 ## 16. Mapa actual de TOEFL
+
+Los contratos de entrada, respuesta, navegación, audio, feedback, persistencia y
+validación de cada fila se detallan en
+[TOEFL-PRACTICE-FAMILY-BLUEPRINTS.md](./TOEFL-PRACTICE-FAMILY-BLUEPRINTS.md).
 
 | Sección | Familia pública | Motor base | Cobertura actual |
 |---|---|---|---|

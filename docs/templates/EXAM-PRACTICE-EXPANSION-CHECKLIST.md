@@ -39,6 +39,7 @@ Copiar este archivo para cada expansión. El contrato que explica cada campo est
 
 ## Contrato de familia
 
+- [ ] Blueprint especializado de referencia:
 - [ ] `familyId`:
 - [ ] `engineId`:
 - [ ] Justificación si requiere motor nuevo:
