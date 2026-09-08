@@ -4,10 +4,11 @@ import { createAdminClient } from '@/lib/supabase/admin';
 import { getWompiServerConfig } from '@/lib/wompi/server';
 import { createWompiIntegritySignature } from '@/lib/wompi/security';
 import { parseProviderPayment, type parseOrderInput } from './payment';
-import { COURSE_LEGAL_READY, TERMS_VERSION, COURSE_LEGAL_SNAPSHOT } from './terms';
+import { TERMS_VERSION, COURSE_LEGAL_SNAPSHOT } from './terms';
+import { courseSalesEnabled } from './release';
 import { fulfillPaidCourseOrder } from './fulfillment.server';
 
-export function courseSalesEnabled() { return COURSE_LEGAL_READY && process.env.COURSE_SALES_ENABLED==='true'; }
+export { courseSalesEnabled } from './release';
 export async function courseUser() {
   const { createClient } = await import('@/lib/supabase/server');
   const { data:{user},error }=await (await createClient()).auth.getUser();

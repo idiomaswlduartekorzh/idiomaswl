@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import PreciosClient from './PreciosClient';
 import CoursePricingClient from './CoursePricingClient';
 import { parseSelection, type Query } from '@/lib/course-pricing/catalog';
+import { courseSalesEnabled } from '@/lib/course-pricing/release';
 
 // Preview can show the candidate without changing the production catalog.
 const preview = process.env.COURSE_PRICING_PREVIEW === 'true' && process.env.VERCEL_ENV !== 'production';
@@ -40,7 +41,7 @@ export const metadata: Metadata = candidate ? {
 export default async function PreciosPage({ searchParams }: { searchParams: Promise<Query> }) {
   if (candidate) {
     const { selection, corrected } = parseSelection(await searchParams);
-    const salesEnabled = process.env.COURSE_SALES_ENABLED === 'true';
+    const salesEnabled = courseSalesEnabled();
     return <CoursePricingClient key={JSON.stringify(selection)} initialSelection={selection} corrected={corrected} salesEnabled={salesEnabled} />;
   }
   return (

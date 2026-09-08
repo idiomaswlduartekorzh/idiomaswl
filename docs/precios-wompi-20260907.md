@@ -1,6 +1,6 @@
 # Candidato de precios, reglamento y Wompi
 
-Worktree exclusivo `precios-wompi-20260907`, rama `codex/precios-wompi-20260907`, actualizada sobre `origin/main` y publicada en GitHub. Vercel genera una vista previa de la rama; la venta continúa cerrada mediante `COURSE_SALES_ENABLED=false`.
+Worktree exclusivo `precios-wompi-20260907`, rama `codex/precios-wompi-20260907`, integrada en `main`. La venta fue autorizada y liberada el 8 de septiembre de 2026 mediante un estado versionado en Git; `COURSE_SALES_EMERGENCY_DISABLED=true` funciona como cierre de emergencia.
 
 ## Alcance implementado
 
@@ -14,7 +14,7 @@ El webhook reconoce referencias `WC-` tras comprobar la firma y consulta Wompi p
 
 El reglamento final es visible antes del formulario. Sus reglas se presentan en tarjetas con los puntos cruciales destacados; una confirmación obligatoria desbloquea los datos del estudiante y las autorizaciones separadas. El servidor valida versiones y guarda texto/hash en la orden. La persona puede consultar después la versión aceptada en su inscripción.
 
-El texto contractual quedó versionado como `course-20260907-v1`. El servidor sigue exigiendo además `COURSE_SALES_ENABLED=true`; en Vercel permanece en `false` mientras se completa la prueba integral.
+El texto contractual quedó versionado como `course-20260907-v1`. El servidor exige que la liberación versionada esté activa y que `COURSE_SALES_EMERGENCY_DISABLED` no sea `true`.
 
 ## Verificación local
 
@@ -38,6 +38,6 @@ Prueba de base: instalar `@electric-sql/pglite@0.3.14` en `.local-tools` sin scr
 4. Completar operación: los trabajos de coordinación/revisión están registrados, pero aún no existe una bandeja para que los profesores los gestionen. Implementar reconciliación programada e inventario de transacciones que quedaron sin webhook; hoy existen procesamiento durante el webhook/retorno y reintento HTTP 503.
 5. Habilitar atención con radicado y un procedimiento de devolución probado. No existe todavía una devolución automática de estos pedidos.
 6. Verificar el procedimiento fiscal/facturación, la retención de datos y la autorización específica para menores. La casilla actual no sustituye una verificación de representación.
-7. Integrar la rama mediante revisión a `main` y activar `COURSE_SALES_ENABLED=true` solo después de las comprobaciones.
+7. Integrar la rama mediante revisión a `main` y liberar ventas solo después de las comprobaciones y la autorización expresa del propietario. Completado el 8 de septiembre de 2026.
 
-No considerar esta etapa un lanzamiento terminado: el cobro está deliberadamente cerrado por los datos pendientes, y la operación posterior al pago todavía necesita implementación y prueba.
+El lanzamiento de cobros está habilitado. La coordinación de horarios y cualquier devolución excepcional siguen requiriendo gestión manual y trazable por los prestadores.
