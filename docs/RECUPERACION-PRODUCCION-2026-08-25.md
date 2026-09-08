@@ -354,3 +354,29 @@ Estado `PENDIENTE_REVISION_HUMANA`. El nuevo contrato `toefl-sectional-hr06-leng
   auditó todas las formas del nivel 5, comprobó edición normal y verificó la mezcla de
   dos tiempos sin revelar etiquetas. No hubo errores de página.
 - No se añadieron migraciones ni variables de entorno.
+
+### 7 de septiembre de 2026 — SEO del superhub TOEFL
+
+- La auditoría de Search Console fijó una línea base de 237 impresiones, 0 clics y
+  posición media 25,1 para consultas que contienen `toefl` entre el 9 de agosto y el
+  5 de septiembre. `/examenes/toefl` concentró 206 impresiones; `simulacro toefl`
+  quedó como la oportunidad más cercana, en posición media 11,5.
+- La rama `codex/toefl-superhub-seo-audit-20260907` quedó respaldada en GitHub e
+  integrada por fast-forward en `main` como
+  `b0eae043bbcf116721744f011f9acb9f5b43bc13`.
+- El hub publica el título `Simulacro TOEFL gratis 2026: 20 exámenes de práctica`,
+  una ruta visible de 14 recursos y un `ItemList` generado desde esa misma fuente.
+  Las bibliotecas con `?set=` declaran la URL base como canonical y los dos hubs de
+  práctica en inglés publican metadata y señal `lang` coherentes.
+- Pasaron catálogo protegido, TypeScript, guardián de hubs, fragmentos SEO y el build
+  Webpack de 2.517 páginas. La revisión local y el HTML productivo comprobaron un H1,
+  14 enlaces visibles y 14 entradas estructuradas.
+- Vercel completó el deployment
+  `dpl_5pbyqWSjgvS8n3VFv8qKPkPFS2Yp`
+  (`idiomaswl-hoxn55dna-idiomaswlduartekorzhs-projects.vercel.app`) con fuente GitHub
+  `main`, estado `READY` y duración de 11 min 13 s. El preview redundante del mismo
+  commit se canceló sin afectar la rama ni producción.
+- El smoke productivo devolvió HTTP 200 en `/examenes/toefl`, `/practica/toefl` y
+  `/practica/toefl/ejercicios`. Las tres URLs sirvieron sus canonicals esperados; el
+  hub sirvió el `ItemList` 14/14 y Vercel mostró cero errores, advertencias o fallos
+  fatales en la ventana posterior al despliegue.

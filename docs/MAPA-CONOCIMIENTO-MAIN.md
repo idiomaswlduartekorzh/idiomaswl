@@ -1,7 +1,7 @@
 # Mapa de conocimiento de `main`
 
-Snapshot trazable del repositorio canónico, levantado el **26 de agosto de 2026** desde
-`origin/main@68ad57e414462b29b76d9504179f42338940f369`. Describe qué está versionado en `main`;
+Snapshot trazable del repositorio canónico, actualizado el **7 de septiembre de 2026** desde
+`origin/main@b0eae043bbcf116721744f011f9acb9f5b43bc13`. Describe qué está versionado en `main`;
 no afirma que un deployment anterior ya sirva cada commit.
 
 ```mermaid
