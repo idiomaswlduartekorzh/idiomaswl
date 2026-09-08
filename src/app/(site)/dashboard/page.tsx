@@ -20,13 +20,13 @@ export default async function DashboardPage() {
 
   const { data: profile } = await supabase
     .from('profiles')
-    .select('role')
+    .select('role, student_path')
     .eq('id', user.id)
     .single()
 
   const role = profile?.role as string | undefined
 
-  if (role === 'welearn_student') {
+  if (profile?.student_path === 'welearn' || role === 'welearn_student') {
     redirect('/dashboard/welearn')
   } else {
     redirect('/dashboard/student')

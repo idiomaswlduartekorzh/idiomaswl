@@ -9,9 +9,17 @@ export async function assignSubject(userId: string, subject: StudentSubject): Pr
   await requireAdmin()
   const admin = createAdminClient()
 
+  const isExamStudent = ['icfes', 'fce', 'ielts', 'toefl'].includes(subject)
+  const targetExam = subject === 'fce' ? 'cambridge-b2' : isExamStudent ? subject : null
   const { error } = await admin
     .from('profiles')
-    .update({ subject })
+    .update({
+      subject,
+      student_path: isExamStudent ? 'exam' : 'welearn',
+      target_exam: targetExam,
+      xpress_plan_interest: isExamStudent ? 'exam-auto' : null,
+      onboarding_completed_at: new Date().toISOString(),
+    })
     .eq('id', userId)
 
   if (error) throw new Error(error.message)

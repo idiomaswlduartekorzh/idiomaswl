@@ -33,6 +33,8 @@ export const SUBJECT_LABELS: Record<StudentSubject, string> = {
   ruso:      'Ruso',
 }
 
+const EXAM_SUBJECTS = new Set<StudentSubject>(['icfes', 'fce', 'ielts', 'toefl'])
+
 export async function inviteStudent(
   email: string,
   fullName: string,
@@ -60,6 +62,8 @@ export async function inviteStudent(
   if (inviteError) return { ok: false, error: inviteError.message }
 
   if (data?.user) {
+    const isExamStudent = EXAM_SUBJECTS.has(subject)
+    const targetExam = subject === 'fce' ? 'cambridge-b2' : isExamStudent ? subject : null
     const { error: profileError } = await admin.from('profiles').upsert({
       id:          data.user.id,
       email:       normalizedEmail,
@@ -67,6 +71,10 @@ export async function inviteStudent(
       name:        normalizedName,
       plan,
       subject,
+      student_path: isExamStudent ? 'exam' : 'welearn',
+      target_exam: targetExam,
+      xpress_plan_interest: isExamStudent ? 'exam-auto' : null,
+      onboarding_completed_at: new Date().toISOString(),
       role:        'user',
       enrolled_at: new Date().toISOString(),
     }, { onConflict: 'id' })

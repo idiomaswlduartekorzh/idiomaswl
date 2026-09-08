@@ -1,59 +1,56 @@
-# Xpress: lógica comercial y de pagos
+# Registro y membresías de exámenes
 
-## Decisión de producto
+## Registro
 
-Xpress conserva un resultado básico gratuito al terminar el examen: puntaje general y resumen por sección. El cobro empieza cuando el estudiante quiere entender sus errores, repetir exámenes sin límites o recibir guía humana.
+Al crear la cuenta, la persona elige una ruta:
 
-| Opción | Precio | Qué activa |
+1. **Estudiante WeLearn:** escoge el idioma y continúa con la inscripción de clases que ya existe.
+2. **Estudiante de examen:** escoge un examen y uno de los dos planes mensuales.
+
+En esta etapa no se vende la práctica general de idiomas como suscripción. El perfil de examen queda vinculado a una sola familia de examen por periodo.
+
+## Planes de examen
+
+| Plan | Precio por 30 días | Incluye |
 |---|---:|---|
-| Reporte completo | $12.900 una vez | Un intento: revisión pregunta por pregunta, respuestas correctas y áreas de atención |
-| Xpress mensual | $49.900 por 30 días | Todos los exámenes Xpress, todos los reportes, historial, comparación y ruta de estudio |
-| Xpress guiado | $149.900 por 30 días | Todo lo anterior y una sesión de 50 minutos con David o Zhanna |
+| Corrección automática | $49.000 | Todos los mocks del examen elegido, reportes automáticos, revisión pregunta por pregunta, historial y áreas de atención |
+| Feedback docente | $99.000 | Todo lo anterior y revisión de David o Zhanna entregada dentro de las 24 horas siguientes a cada entrega |
 
-La retroalimentación inicial sale de reglas deterministas: tipo de pregunta, sección, respuesta elegida, respuesta correcta y patrones repetidos. No necesita IA para lanzarse.
+La corrección automática usa las claves y reglas propias de cada examen. No requiere IA para puntuar preguntas objetivas. Writing, Speaking y otras respuestas abiertas solo se presentan como revisión docente cuando exista una rúbrica verificada para ese examen.
 
-## Recorrido comercial
+## Reglas de operación
 
-1. Antes de empezar se informa que el puntaje básico es gratuito y que el reporte detallado es pago.
-2. El estudiante termina el examen y recibe el puntaje general y el resumen por sección.
-3. Se muestran las tres opciones con el reporte completo como compra directa.
-4. El servidor calcula el precio. El navegador nunca decide el valor ni concede acceso.
-5. Wompi confirma el pago por webhook firmado. La redirección solo informa al estudiante.
-6. Un pago aprobado crea el derecho correspondiente de forma idempotente.
+- La membresía dura 30 días desde la aprobación del pago y cubre un examen.
+- Los mocks son ilimitados para uso personal y solo puede haber un intento activo a la vez.
+- En el plan docente solo puede haber una revisión pendiente por estudiante. Al entregar esa revisión se habilita la siguiente solicitud.
+- El plazo de 24 horas comienza cuando el mock completo y sus archivos quedan guardados correctamente.
+- Cambiar de examen se programa para el siguiente periodo.
+- Subir del plan automático al docente cuesta $50.000 y conserva la fecha final del periodo.
+- Bajar de plan se programa para el siguiente periodo.
+- El servidor calcula el precio y concede acceso únicamente después del webhook firmado de Wompi.
+- Una selección guardada durante el registro expresa intención de compra; nunca concede acceso pago.
+- Un pago anulado o revertido revoca el acceso futuro y conserva todo el historial financiero.
 
-## Reglas de cobro y acceso
+## Persistencia necesaria para el cobro
 
-- Un reporte pertenece a una entrega concreta y no vence.
-- Una membresía dura 30 días exactos desde la aprobación.
-- “Exámenes ilimitados” significa uso personal, con un solo intento activo a la vez y control de automatización abusiva.
-- Si el reporte ya está comprado o hay membresía activa, no se abre otro cobro.
-- Si alguien compra el reporte y mejora a una membresía dentro de 7 días, se descuentan los $12.900 completos.
-- Pasar de mensual a guiado durante el periodo cuesta $100.000 y conserva la misma fecha de cierre.
-- Bajar de guiado a mensual se programa para el siguiente periodo.
-- La sesión guiada dura 50 minutos, vence al terminar el periodo y no se acumula.
-- Un pago anulado o revertido revoca accesos futuros y abre revisión financiera; no borra la trazabilidad.
+- Perfil: ruta elegida, idioma, examen y plan seleccionado.
+- Pedido inmutable: persona, examen, oferta, versión, precio, moneda y aceptación de condiciones.
+- Transacción: referencia Wompi, historial de eventos y estado verificado.
+- Membresía: examen, plan, inicio, final, cambio programado y causa de revocación.
+- Revisión docente: entrega, fecha límite, estado, responsable y fecha de entrega.
+- Cola de recuperación para pagos, acceso, correos y revisiones que fallen temporalmente.
+
+La tabla heredada `subscriptions` no se reutiliza porque mezcla planes de idiomas y campos de Stripe. Las membresías de examen necesitan registros propios y trazabilidad por examen.
 
 ## Renovación
 
-La primera versión debe vender pases de 30 días con renovación manual usando el Checkout actual. Para débito automático, Wompi exige fuentes de pago tokenizadas y la activación de 3DS/3RI; esa modalidad debe habilitarse solo después de probar creación, renovación, cancelación, pago rechazado y reintento en Sandbox.
+El lanzamiento usa pases de 30 días con renovación manual mediante el Checkout actual. El débito automático se activa después de implementar fuentes de pago tokenizadas de Wompi y probar renovación, cancelación, pago rechazado y reintento en Sandbox.
 
-## Datos que deberá guardar la integración
+## Indicadores
 
-- Pedido inmutable: persona, oferta, versión, precio, moneda, entrega asociada y aceptación de condiciones.
-- Historial de eventos y proyección actual de cada transacción Wompi.
-- Derecho concedido: entrega o cuenta, fecha de inicio, fecha de cierre y causa de revocación.
-- Periodo de membresía y cambio de plan pendiente.
-- Crédito de sesión: disponible, reservado, usado o vencido.
-- Cola de recuperación y trabajos de correo, acceso y notificación.
-
-La tabla heredada `subscriptions` no se reutiliza: está acoplada a planes de idiomas y campos de Stripe. Xpress necesita registros propios para no mezclar productos ni proveedores.
-
-## Indicadores para decidir si escalar
-
-- Conversión principal: pagos aprobados / personas que vieron el resultado.
-- Uso con valor: miembros que completan al menos dos exámenes en 30 días.
-- Retención: miembros que renuevan al terminar el primer periodo.
-- Protección: pagos aprobados sin acceso después de 15 minutos; objetivo operativo 0.
-- Guardas: devoluciones, contracargos, sesiones vencidas sin agenda y correos fallidos.
-
-Los precios son hipótesis iniciales. Se revisan después de las primeras 30 ventas o cuatro semanas, lo que ocurra primero, sin cambiar beneficios ni precios a mitad de un periodo activo.
+- Pagos aprobados / personas que eligieron un plan.
+- Miembros que completan al menos dos mocks por periodo.
+- Renovaciones al terminar los primeros 30 días.
+- Pagos aprobados sin acceso después de 15 minutos; objetivo 0.
+- Revisiones docentes entregadas antes de 24 horas.
+- Devoluciones, contracargos y trabajos de correo o acceso fallidos.

@@ -5,7 +5,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { safeCourseReturnPath } from '@/lib/course-pricing/payment';
+import {
+  STUDENT_PATHS,
+  WELEARN_LANGUAGE_OPTIONS,
+  XPRESS_EXAM_OPTIONS,
+  registrationCompletionPath,
+  registrationIntentMetadata,
+  type RegistrationIntent,
+  type StudentPath,
+  type WelearnLanguage,
+  type XpressExamSlug,
+} from '@/lib/student-onboarding/catalog';
 import { createClient } from '@/lib/supabase/client';
+import { XPRESS_OFFERS, type XpressOfferId } from '@/lib/xpress-commerce/catalog';
 
 type Mode = 'login' | 'register';
 
@@ -31,10 +43,20 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   const [email, setEmail]       = useState('');
   const [password, setPassword] = useState('');
   const [name, setName]         = useState('');
+  const [studentPath, setStudentPath] = useState<StudentPath>('welearn');
+  const [language, setLanguage] = useState<WelearnLanguage>('ingles');
+  const [exam, setExam] = useState<XpressExamSlug>('ielts');
+  const [examPlan, setExamPlan] = useState<XpressOfferId>('exam-auto');
   const [loading, setLoading]   = useState(false);
   const [error, setError]       = useState('');
   const [success, setSuccess]   = useState('');
   const router = useRouter();
+
+  const registrationIntent = (): RegistrationIntent => studentPath === 'welearn'
+    ? { path: 'welearn', language }
+    : { path: 'exam', exam, plan: examPlan };
+
+  const returnPath = () => safeCourseReturnPath(new URLSearchParams(window.location.search).get('next'));
 
   // ── Auth error normalisation ──────────────────────────────────────────────
   // We deliberately avoid echoing the raw Supabase error string to the UI.
@@ -79,12 +101,22 @@ export default function AuthForm({ mode }: { mode: Mode }) {
       router.push(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')));
       router.refresh();
     } else {
-      const { error } = await supabase.auth.signUp({
+      const intent = registrationIntent();
+      const completionPath = registrationCompletionPath(intent, returnPath());
+      const { data, error } = await supabase.auth.signUp({
         email,
         password,
-        options: { data: { full_name: name }, emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')))}` },
+        options: {
+          data: { full_name: name, ...registrationIntentMetadata(intent) },
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(completionPath)}`,
+        },
       });
       if (error) { setError(normalizeRegisterError(error.message)); setLoading(false); return; }
+      if (data.session) {
+        router.push(completionPath);
+        router.refresh();
+        return;
+      }
       setSuccess('¡Revisa tu correo para confirmar tu cuenta!');
       setLoading(false);
     }
@@ -93,9 +125,12 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   const handleGoogle = async () => {
     const supabase = createClient();
     if (!supabase) return;
+    const next = mode === 'register'
+      ? registrationCompletionPath(registrationIntent(), returnPath())
+      : returnPath();
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(safeCourseReturnPath(new URLSearchParams(window.location.search).get('next')))}` },
+      options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
     });
   };
 
@@ -305,18 +340,73 @@ export default function AuthForm({ mode }: { mode: Mode }) {
           {/* Form */}
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {mode === 'register' && (
-              <Field label="Nombre completo">
-                <input
-                  type="text"
-                  value={name}
-                  onChange={e => setName(e.target.value)}
-                  placeholder="Tu nombre"
-                  required
-                  style={inputStyle}
-                  onFocus={focusIn}
-                  onBlur={focusOut}
-                />
-              </Field>
+              <>
+                <Field label="¿Qué quieres hacer?">
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
+                    {STUDENT_PATHS.map((option) => {
+                      const selected = option.id === studentPath;
+                      return (
+                        <button
+                          key={option.id}
+                          type="button"
+                          aria-pressed={selected}
+                          onClick={() => setStudentPath(option.id)}
+                          style={{
+                            padding: '0.75rem',
+                            textAlign: 'left',
+                            borderRadius: 10,
+                            border: `1.5px solid ${selected ? A : BORDER}`,
+                            background: selected ? 'color-mix(in srgb, var(--accent) 10%, var(--surface))' : CARD,
+                            color: 'var(--ink)',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          <strong style={{ display: 'block', fontSize: 13 }}>{option.label}</strong>
+                          <span style={{ display: 'block', marginTop: 3, fontSize: 11, color: MUTED }}>{option.description}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </Field>
+
+                {studentPath === 'welearn' ? (
+                  <Field label="Idioma que quieres aprender">
+                    <select value={language} onChange={(event) => setLanguage(event.target.value as WelearnLanguage)} style={inputStyle}>
+                      {WELEARN_LANGUAGE_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
+                    </select>
+                  </Field>
+                ) : (
+                  <>
+                    <Field label="Examen que quieres preparar">
+                      <select value={exam} onChange={(event) => setExam(event.target.value as XpressExamSlug)} style={inputStyle}>
+                        {XPRESS_EXAM_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
+                      </select>
+                    </Field>
+                    <Field label="Plan de exámenes">
+                      <select value={examPlan} onChange={(event) => setExamPlan(event.target.value as XpressOfferId)} style={inputStyle}>
+                        {XPRESS_OFFERS.map((offer) => (
+                          <option key={offer.id} value={offer.id}>
+                            ${(offer.amountInCents / 100).toLocaleString('es-CO')} · {offer.id === 'exam-auto' ? 'corrección automática' : 'feedback docente en 24 h'}
+                          </option>
+                        ))}
+                      </select>
+                    </Field>
+                  </>
+                )}
+
+                <Field label="Nombre completo">
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={e => setName(e.target.value)}
+                    placeholder="Tu nombre"
+                    required
+                    style={inputStyle}
+                    onFocus={focusIn}
+                    onBlur={focusOut}
+                  />
+                </Field>
+              </>
             )}
             <Field label="Correo electrónico">
               <input
