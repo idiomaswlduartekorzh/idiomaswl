@@ -251,7 +251,7 @@ const mock: MockExam = {
           part: 4,
           text: 'Choose the best word for blank (16).',
           options: ['problem', 'music', 'history', 'language'],
-          answer: 1,
+          answer: 2,
         },
         {
           type: 'mcq',

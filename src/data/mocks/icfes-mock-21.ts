@@ -194,8 +194,10 @@ const mock: MockExam = {
       sectionStyle: 'cloze-text',
       instructions:
         'Read the text below. Choose the word (A, B, C, or D) that best fits each blank (questions 16 to 23).',
+      // Facts checked against UNESCO World Heritage Centre, Taj Mahal (list 252):
+      // https://whc.unesco.org/en/list/252/
       passage:
-        "Taj Mahal, one of the greatest monuments of India, was built (16) ___ emperor Jahan to remember his wife, Mahal. Most people say Taj Mahal is an important expression of Indian art because of the beautiful way its different materials and shapes were (17) ___. Plans to build Taj Mahal started in 1623. (18) ___ that moment, its design process was the idea of architect Ahmad Lahawri, (19) ___ decided to include a lake at the entrance. More than 20,000 workers took (20) ___ years to complete the building, and it was finished by 1638. Some buildings in the area were (21) ___ completed by 1643. In total, building Taj Mahal and the other buildings took (22) ___ 22 years. (23) ___ other monuments could be more famous, Taj Mahal will always be the only one built in the name of love.",
+        "The Taj Mahal, one of India's greatest monuments, was built (16) ___ the Mughal emperor Shah Jahan in memory of his wife, Mumtaz Mahal. It is an outstanding example of Indo-Islamic architecture because of the beautiful way its different materials and shapes were (17) ___. Construction began in 1632. (18) ___ that time, the project was led by the architect Ustad Ahmad Lahori, (19) ___ was responsible for its principal design. Thousands of artisans took (20) ___ years to complete the main mausoleum, which was finished in 1648. The mosque, guest house, main gateway, outer courtyard, and cloisters were completed (21) ___, in 1653. In total, the whole complex took (22) ___ 22 years to build. (23) ___ other monuments are also famous, the Taj Mahal remains one of the world's most admired masterpieces.",
       questions: [
         {
           type: 'mcq',
@@ -365,7 +367,7 @@ const mock: MockExam = {
           part: 6,
           text: "In paragraph 2, according to the writer, what benefit can the art class provide?",
           options: ["The possibility to discover your feelings.", "A sense of respect towards variety.", "The development of individual education.", "An opportunity to become an artist."],
-          answer: 0,
+          answer: 1,
         },
         {
           type: 'mcq',

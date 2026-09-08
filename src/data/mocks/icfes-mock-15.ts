@@ -299,7 +299,7 @@ const mock: MockExam = {
           part: 4,
           text: 'Choose the best word for blank (22).',
           options: ['hour', 'week', 'daily', 'day'],
-          answer: 2,
+          answer: 3,
         },
         {
           type: 'mcq',

@@ -20,7 +20,13 @@ registerHooks({
   },
 });
 
-const { SIMULACROS, getSimulacroQuestionPart } = await import('../src/data/mocks/icfes-simulacros.ts');
+const {
+  ICFES_EDITORIAL_HOLDS,
+  SIMULACROS,
+  getIcfesPaidDetailAvailability,
+  getSimulacroForPaidDetail,
+  getSimulacroQuestionPart,
+} = await import('../src/data/mocks/icfes-simulacros.ts');
 const {
   getGuidedWorkbookQuestions,
   GUIDED_WORKBOOK_EXCLUSIONS,
@@ -85,6 +91,24 @@ const missingNoticeStimuli = official.flatMap((exam) => exam.questions
   .filter(({ type, passageId, stem }) => type === 'notice' && !passageId && !/[“"'](.+)[”"']/.test(stem))
   .map((question) => `${exam.id}-q${question.n}`));
 check('documented-missing-stimuli', 'Seis avisos incompletos quedan fuera del guiado', missingNoticeStimuli.length === 6 && missingNoticeStimuli.every((id) => Object.keys(GUIDED_WORKBOOK_EXCLUSIONS).some((examId) => id.startsWith(examId))), 'critical', missingNoticeStimuli.join(' · '), 'No inferir estímulos faltantes desde opciones o claves.');
+
+const expectedPaidDetailHolds = {
+  'icfes-2021-ex2': [4, 5, 6],
+  'icfes-2016': [1, 2, 3],
+  'icfes-tyt': [6, 7, 8, 9, 10],
+  'icfes-2012': [20],
+};
+const invalidPaidDetailHolds = Object.entries(expectedPaidDetailHolds).filter(([examId, expectedQuestions]) => {
+  const availability = getIcfesPaidDetailAvailability(examId);
+  return availability.eligible
+    || JSON.stringify(availability.questionNumbers) !== JSON.stringify(expectedQuestions)
+    || !availability.reason.includes('Detalle pago no disponible')
+    || getSimulacroForPaidDetail(examId) !== undefined;
+});
+check('paid-detail-editorial-gate', 'Los cuatro defectos oficiales bloquean el detalle pago sin inventar contenido', Object.keys(ICFES_EDITORIAL_HOLDS).length === 4 && invalidPaidDetailHolds.length === 0, 'critical', invalidPaidDetailHolds.map(([examId]) => examId).join(', ') || '4/4 bloqueos activos', 'Restaurar la compuerta editorial y sus números de pregunta exactos.');
+
+const paidEligibleWithoutHold = SIMULACROS.filter(({ id }) => !Object.hasOwn(expectedPaidDetailHolds, id)).filter(({ id }) => !getSimulacroForPaidDetail(id));
+check('paid-detail-clean-resources', 'Los recursos sin bloqueo siguen disponibles para integrar el detalle pago', paidEligibleWithoutHold.length === 0, 'critical', paidEligibleWithoutHold.map(({ id }) => id).join(', ') || '6/6 elegibles', 'No bloquear recursos ajenos al hallazgo.');
 
 check('dynamic-guided-page', 'La ruta usa extensión y partes de cada muestra', routeSource.includes('{questions.length} preguntas') && routeSource.includes('exam.partRanges.length') && !routeSource.includes('<strong>25 preguntas</strong>'), 'high', 'Extensión dinámica', 'Eliminar textos fijos del piloto 2023.');
 check('historical-disclaimer', 'La ruta explica el alcance histórico', routeSource.includes('no reproduce necesariamente la aplicación estándar 2026-2 ni predice un puntaje oficial'), 'critical', 'Descargo visible', 'No presentar una muestra histórica como formato vigente completo.');

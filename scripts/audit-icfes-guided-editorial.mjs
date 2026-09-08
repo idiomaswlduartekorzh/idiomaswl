@@ -46,6 +46,25 @@ check('unique-ids', 'Identificadores únicos entre mocks', new Set(rows.map((row
 const invalidAnswers = rows.filter(({ question }) => !Number.isInteger(question.answer) || question.answer < 0 || question.answer >= question.options.length);
 check('valid-answers', 'Claves dentro del rango de opciones', invalidAnswers.length === 0, 'critical', `${invalidAnswers.length} claves inválidas`, 'Corregir answer antes de servir la pregunta.');
 
+const criticalKeyExpectations = new Map([
+  ['mock-06:p4q2', 'water'],
+  ['mock-06:p4q3', 'water'],
+  ['mock-13:p4q1', 'history'],
+  ['mock-15:p4q7', 'day'],
+  ['mock-21:p6q3', 'A sense of respect towards variety.'],
+]);
+const criticalKeyFailures = [...criticalKeyExpectations].filter(([compoundId, expected]) => {
+  const [mockId, questionId] = compoundId.split(':');
+  const row = rows.find((candidate) => candidate.mockId === mockId && candidate.question.id === `${mockId}:${questionId}`);
+  return !row || row.question.options[row.question.answer] !== expected;
+});
+check('confirmed-critical-keys', 'Las cinco claves críticas confirmadas permanecen corregidas', criticalKeyFailures.length === 0, 'critical', criticalKeyFailures.map(([id]) => id).join(', ') || '5/5', 'Restaurar las correcciones confirmadas por doble revisión.');
+
+const tajMahal = rows.find((row) => row.mockId === 'mock-21' && row.question.id === 'mock-21:p4q1')?.passage ?? '';
+const tajRequiredFacts = [/Shah Jahan/, /Mumtaz Mahal/, /Construction began in 1632/, /finished in 1648/, /completed \(21\) ___, in 1653/, /Ustad Ahmad Lahori/];
+const tajRejectedFacts = /emperor Jahan|his wife, Mahal|started in 1623|finished by 1638|include a lake/;
+check('mock-21-taj-mahal-facts', 'El pasaje crítico del Taj Mahal conserva la cronología y los nombres contrastados', tajRequiredFacts.every((pattern) => pattern.test(tajMahal)) && !tajRejectedFacts.test(tajMahal), 'critical', tajMahal ? 'Datos UNESCO presentes; errores confirmados ausentes' : 'Pasaje ausente', 'Restaurar únicamente hechos contrastados y volver a validar las ocho claves.');
+
 const duplicateOptions = rows.filter(({ question }) => new Set(question.options.map((option) => option.trim().toLowerCase())).size !== question.options.length);
 check('unique-options', 'Opciones distintas dentro de cada pregunta', duplicateOptions.length === 0, 'high', `${duplicateOptions.length} preguntas con opciones duplicadas`, 'Eliminar opciones semántica o textualmente duplicadas.');
 

@@ -1,0 +1,456 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-09-08",
+  "status": "blocked_pending_corrections",
+  "scope": {
+    "ownMocks": { "resources": 23, "questions": 1035, "semanticReview": "complete_first_pass" },
+    "officialResources": { "resources": 10, "questions": 264, "semanticReview": "local_consistency_plus_source_spot_checks" },
+    "standaloneGuided": { "resources": 1, "questions": 55, "semanticReview": "complete_first_pass" },
+    "totalUniqueResources": 34,
+    "totalUniqueQuestions": 1354
+  },
+  "automatedChecks": {
+    "outOfRangeAnswerKeys": 0,
+    "duplicateOptionsExact": 0,
+    "duplicateQuestionIds": 0,
+    "guided55Questions": "55/55",
+    "officialGuidedParity": "145/145",
+    "note": "Passing structural checks do not prove semantic correctness."
+  },
+  "independentCriticalReview": {
+    "reviewers": 1,
+    "confirmed": 10,
+    "rejected": 0,
+    "needsSource": 0,
+    "note": "All critical runtime defects were independently confirmed. Exact restoration of affected official items still requires comparison against the corresponding official source PDFs."
+  },
+  "criticalImplementation": {
+    "implementedAt": "2026-09-08",
+    "proprietaryFindingsCorrected": 6,
+    "proprietaryQuestionsCovered": 13,
+    "officialFindingsBlockedFromPaidDetail": 4,
+    "officialQuestionsCoveredByHolds": 12,
+    "unhandledCriticalFindings": 0,
+    "officialExactRestorationsPending": 4,
+    "releaseStillBlockedBy": {
+      "highFindings": 15,
+      "mediumFindings": 11
+    },
+    "note": "The paid-detail gate is a data contract for the isolated payment implementation. Existing free routes and UI were intentionally not changed in this branch."
+  },
+  "runtimeNotes": [
+    "normalizeIcfesMock swaps legacy Parts 1 and 2 into the current taxonomy.",
+    "The 23 mocks replace their historical Part 7 with CURRENT_PART_SEVEN; findings use runtime-effective IDs.",
+    "The guided official audit compares against the same local SIMULACROS bank, so it is not independent proof against an official PDF."
+  ],
+  "findings": [
+    {
+      "resourceId": "mock-06",
+      "questionId": "p4q2",
+      "currentKey": "C: rivers",
+      "proposedKeyOrWording": "Keep key C but change option text to water.",
+      "evidence": "The keyed completion is 'mountains, forests, and coasts provide fresh rivers for millions of people'; no available option produces the intended phrase 'fresh water'.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-06",
+      "questionId": "p4q3",
+      "currentKey": "C: clean",
+      "proposedKeyOrWording": "Keep key C but change option text to water.",
+      "evidence": "The keyed completion is 'the quality of clean in the rivers'; no available option produces 'quality of water'.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-13",
+      "questionId": "p4q1",
+      "currentKey": "B: music",
+      "proposedKeyOrWording": "Change key to C: history.",
+      "evidence": "Current key produces 'rich and varied musical music'; 'musical history' is grammatical and coherent.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-15",
+      "questionId": "p4q7",
+      "currentKey": "C: daily",
+      "proposedKeyOrWording": "Change key to D: day.",
+      "evidence": "Current key produces 'several times a daily'; the required phrase is 'several times a day'.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-21",
+      "questionId": "p6q3",
+      "currentKey": "A: The possibility to discover your feelings",
+      "proposedKeyOrWording": "Change key to B, or rewrite A as 'express their feelings' and revalidate uniqueness.",
+      "evidence": "The passage says express feelings, not discover feelings. B is supported by accepting one another and differences.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-21",
+      "questionId": "p4q1-p4q8",
+      "currentKey": "Passage-level defect",
+      "proposedKeyOrWording": "Rewrite the Taj Mahal passage from authoritative facts, then revalidate all eight keys.",
+      "evidence": "The passage misnames Shah Jahan and Mumtaz Mahal, uses incorrect construction dates, and calls the reflecting pool a lake. UNESCO states construction began in 1632, the principal mausoleum was completed in 1648, and other buildings/garden followed later.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "icfes-2021-ex2",
+      "questionId": "q4-q6",
+      "currentKey": "B, B, C",
+      "proposedKeyOrWording": "Do not infer new keys. Restore the exact official notices or temporarily withdraw these items.",
+      "evidence": "Each asks where a notice can be seen, but the runtime has no passageId/stimulus and renders an empty stimulus.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "icfes-2016",
+      "questionId": "q1-q3",
+      "currentKey": "B, B, C",
+      "proposedKeyOrWording": "Do not infer new keys. Restore the exact official notices or temporarily withdraw these items.",
+      "evidence": "Notice-location questions render without the notice stimulus. The guided registry excludes them, but exam mode still publishes them.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "icfes-tyt",
+      "questionId": "q6-q10",
+      "currentKey": "B, C, A, C, A",
+      "proposedKeyOrWording": "Do not infer new keys. Restore the exact official notices or temporarily withdraw these items.",
+      "evidence": "Five generic notice-location questions have no passageId/stimulus. The existing official audit filters Saber 11 and misses this TyT defect.",
+      "severity": "critical",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "icfes-2012",
+      "questionId": "q20",
+      "currentKey": "C: largest",
+      "proposedKeyOrWording": "Verify the official PDF; likely restore a missing 'the' or an incompletely transcribed option. Do not infer the final repair.",
+      "evidence": "Runtime produces 'The Amazon is largest river system in South America'; all available completions are ungrammatical in the current transcription.",
+      "severity": "critical",
+      "confidence": "high_invalid_medium_fix",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-03",
+      "questionId": "p2q2",
+      "currentKey": "B: Clean the equipment before and after using it",
+      "proposedKeyOrWording": "Change B to 'Clean the equipment after using it'.",
+      "evidence": "The notice says WIPE EQUIPMENT AFTER USE; the key adds an unsupported before requirement.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-01",
+      "questionId": "p4q1",
+      "currentKey": "B: system",
+      "proposedKeyOrWording": "Replace service/network distractors with options that cannot complete 'main bus ___'.",
+      "evidence": "System, service, and network are all grammatical and semantically plausible.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-01",
+      "questionId": "p4q7",
+      "currentKey": "B: crowded",
+      "proposedKeyOrWording": "Replace busy with an unequivocally wrong distractor such as empty.",
+      "evidence": "Busy also completes 'During rush hours the system can become very ___'.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-02",
+      "questionId": "p4q3",
+      "currentKey": "C: families",
+      "proposedKeyOrWording": "Use non-human distractors or add context that uniquely selects families.",
+      "evidence": "Tourists and workers also fit 'Thousands of ___ and individuals take to the streets'.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-02",
+      "questionId": "p4q6",
+      "currentKey": "C: rent",
+      "proposedKeyOrWording": "Replace buy with an incompatible verb.",
+      "evidence": "Both rent and buy bicycles are possible if someone does not own one.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-04",
+      "questionId": "p4q1,p4q5,p4q6",
+      "currentKey": "students; regions; university",
+      "proposedKeyOrWording": "Replace the alternative valid distractors children; districts/zones; college, or rewrite the surrounding context.",
+      "evidence": "Each listed distractor is also grammatical and plausible in its sentence.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-11",
+      "questionId": "p4q6,p4q7",
+      "currentKey": "support; teams",
+      "proposedKeyOrWording": "For p4q6 use determination; for p4q7 replace sports/events distractors.",
+      "evidence": "Support does not express the athlete quality required by context; sports and events also fit 'follow their favourite ___'.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-02,mock-03,mock-06,mock-08,mock-10,mock-11",
+      "questionId": "mock-02:p3q4; mock-03:p3q3; mock-06:p3q3; mock-08:p3q5; mock-10:p3q3; mock-11:p3q2,p3q5",
+      "currentKey": "Configured best-response options",
+      "proposedKeyOrWording": "Preserve the intended key and replace the alternative natural reply with one that fails the speech act.",
+      "evidence": "Each item currently permits at least two fully natural conversational continuations; mock-06 p3q3 permits all three.",
+      "severity": "high",
+      "confidence": "medium_high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-15,mock-16",
+      "questionId": "mock-15:p4q1-p4q8; mock-16:p4q1-p4q8",
+      "currentKey": "Keys may be correct, but visible blank order is non-sequential",
+      "proposedKeyOrWording": "Renumber blanks monotonically 16-23 and rerun all key mappings.",
+      "evidence": "Mock 15 order is 16,17,18,21,19,22,20,23; mock 16 is 22,16,23,17,20,18,21,19.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-17",
+      "questionId": "p4q1,p7q2",
+      "currentKey": "p4q1: structures; p7q2: which birds",
+      "proposedKeyOrWording": "Remove systems from p4q1. For p7q2 rewrite the sentence or remove what birds.",
+      "evidence": "Structures/systems both fit 'main ___'; which birds/what birds are both grammatical in the runtime Part 7 context.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-18,mock-20,mock-22,mock-23",
+      "questionId": "mock-18:p4q8; mock-20:p4q8; mock-22:p4q5; mock-23:p4q1",
+      "currentKey": "results; part; everyone; during",
+      "proposedKeyOrWording": "Remove alternative valid options scores/marks/grades; corner; anyone; in, respectively.",
+      "evidence": "Every listed alternative is grammatical and plausible in the same sentence as the configured key.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-13,mock-16,mock-17,mock-19",
+      "questionId": "mock-13:p3q3; mock-16:p3q3; mock-17:p3q1; mock-19:p3q3",
+      "currentKey": "Configured best-response options",
+      "proposedKeyOrWording": "Add decisive context or replace alternative natural replies.",
+      "evidence": "The prompts support multiple natural answers: music reaction, class timing, which class, and art preference.",
+      "severity": "high",
+      "confidence": "medium_high",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "all-official",
+      "questionId": "section metadata",
+      "currentKey": null,
+      "proposedKeyOrWording": "Store sourcePart separately from canonicalSkillPart and stop claiming the local part map is the original historical map.",
+      "evidence": "Several local partRanges remap historical parts into the current skill taxonomy.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "all-official",
+      "questionId": "provenance manifest",
+      "currentKey": null,
+      "proposedKeyOrWording": "Add immutable per-item provenance: official URL, local source hash, page/item code, official key, transcription/adaptation status.",
+      "evidence": "Current automated parity derives both sides from the same local bank and cannot independently prove all 264 items against source PDFs.",
+      "severity": "high",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "all-official-monetized",
+      "questionId": "license",
+      "currentKey": null,
+      "proposedKeyOrWording": "Complete legal review; charge for original analysis, diagnostics and explanations, not access to official questions themselves until rights are documented.",
+      "evidence": "No resource-level license manifest was found; historical materials may restrict commercial use.",
+      "severity": "high",
+      "confidence": "medium",
+      "blockProduction": true
+    },
+    {
+      "resourceId": "mock-03,mock-04,mock-08,mock-12",
+      "questionId": "mock-03:p3q4,p3q5; mock-04:p3q1,p3q3; mock-08:p4q3,p4q6; mock-12:p2q4",
+      "currentKey": "mock-03:p3q4 B 'There must be many patients'; mock-03:p3q5 C 'You can take them now'; mock-04:p3q1 A 'You should tell the teacher'; mock-04:p3q3 C 'We have a free class then'; mock-08:p4q3 D 'city'; mock-08:p4q6 D 'families'; mock-12:p2q4 A 'Animals from this shop have received health treatment before being sold'",
+      "proposedKeyOrWording": "Disambiguate the replies; replace unsafe medicine advice; use city centre and their families; accurately paraphrase vaccinated and veterinarian-checked.",
+      "evidence": "Items contain context-dependent ambiguity, unsafe advice, missing determiners, or an imprecise notice paraphrase.",
+      "severity": "medium",
+      "confidence": "medium_high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-11",
+      "questionId": "p7q1",
+      "currentKey": "repair",
+      "proposedKeyOrWording": "Prefer recover in 'Muscles need time to recover'.",
+      "evidence": "Repair is possible but less idiomatic for muscles in this learner-facing context.",
+      "severity": "medium",
+      "confidence": "medium",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-13",
+      "questionId": "p2q2",
+      "currentKey": "A: The performance begins exactly on time and latecomers must wait",
+      "proposedKeyOrWording": "A: Latecomers must wait until the interval before entering.",
+      "evidence": "The notice supports the latecomer restriction but does not state that the performance begins exactly on time.",
+      "severity": "medium",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-13",
+      "questionId": "p5q4",
+      "currentKey": "B: It was named a City of Books.",
+      "proposedKeyOrWording": "B: It was named UNESCO World Book Capital for 2007.",
+      "evidence": "UNESCO's documented title for Bogota is World Book Capital 2007, not City of Books.",
+      "severity": "medium",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-13",
+      "questionId": "p6q2",
+      "currentKey": "C: They reduced crime and increased community engagement.",
+      "proposedKeyOrWording": "Remove the unsupported crime-reduction claim or add a concrete primary source and rewrite the answer to match it.",
+      "evidence": "The passage attributes crime reduction to murals without a cited source.",
+      "severity": "medium",
+      "confidence": "medium_high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-17",
+      "questionId": "p6q5",
+      "currentKey": "B: Future space missions are planned to collect samples from other planets.",
+      "proposedKeyOrWording": "B: More research, including sample-return missions, will be needed.",
+      "evidence": "The passage says missions will be required; it does not establish that they are already planned.",
+      "severity": "medium",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-19",
+      "questionId": "p2q5",
+      "currentKey": "B: The item is second-hand and sold to support a good cause",
+      "proposedKeyOrWording": "B: The item was donated and its sale supports charity.",
+      "evidence": "Donated does not necessarily mean second-hand.",
+      "severity": "medium",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-15,mock-16",
+      "questionId": "p4 blank order",
+      "currentKey": null,
+      "proposedKeyOrWording": "See high-severity numbering finding and add a monotonic-order regression test.",
+      "evidence": "Structural validators currently accept non-monotonic visible numbering.",
+      "severity": "medium",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-20",
+      "questionId": "p5q3",
+      "currentKey": "A: It is a condition of graduation",
+      "proposedKeyOrWording": "Change the prompt to 'What do some universities require students to do before graduating?' and keep A, or add a real reason to the passage.",
+      "evidence": "The current answer does not answer the question word Why; it only restates the requirement.",
+      "severity": "medium",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "mock-23",
+      "questionId": "p5q4",
+      "currentKey": "A: keep them longer.",
+      "proposedKeyOrWording": "Keep key A and repair the passage to: 'Unlike digital chats that can disappear easily, letters preserve the history of our relationships and can become more meaningful over time.'",
+      "evidence": "The current phrase 'become more important after a digital communication' is defective and does not cleanly support the answer.",
+      "severity": "medium",
+      "confidence": "high",
+      "blockProduction": false
+    },
+    {
+      "resourceId": "icfes-tyt",
+      "questionId": "q1",
+      "currentKey": "C: DVD",
+      "proposedKeyOrWording": "Restore the official wording 'You use this to watch videos.' or label the item adapted.",
+      "evidence": "Runtime adds 'or movies' to the official wording; key remains unchanged.",
+      "severity": "medium",
+      "confidence": "high",
+      "blockProduction": false
+    }
+  ],
+  "verifiedCleanAreas": [
+    "mock-05, mock-07, mock-09 and mock-14 had no material findings in this pass.",
+    "119 of 120 runtime CURRENT_PART_SEVEN items had no material key/evidence issue; mock-17 p7q2 is the exception.",
+    "The independent guided simulation passed 55/55 semantic review in this first pass.",
+    "Five official guided workbooks preserve 145/145 local options and answer indexes, but still need independent source manifests."
+  ],
+  "paywallArchitecture": {
+    "currentState": "not_secure",
+    "reason": "The browser currently receives answer keys and rationales and calculates results client-side; a visual lock would be bypassable.",
+    "freeExperience": [
+      "Immediate score and correct count",
+      "Part-level summary",
+      "One actionable weakest-part recommendation",
+      "No forced lead before showing the earned summary"
+    ],
+    "paidExperience": [
+      "Question-by-question review",
+      "Correct answer, evidence, rationale and distractor analysis",
+      "Error queue and targeted reinforcement",
+      "Access via either active subscription entitlement or one-time attempt entitlement"
+    ],
+    "requiredBoundary": [
+      "Ship a public question DTO with no answer, rationale or evidence.",
+      "Grade server-side from a private canonical bank and ignore client-supplied scores.",
+      "Persist attempts privately and return only the free summary.",
+      "Protect detail APIs server-side with a unified entitlement check.",
+      "Reuse the proven Wompi webhook and HttpOnly capability pattern from the TOEFL report pipeline.",
+      "Remove private review and guided-detail routes from sitemap and cache them private/no-store."
+    ],
+    "acceptanceTests": [
+      "No answer key or rationale appears in HTML, RSC payloads or browser bundles before entitlement.",
+      "Unauthenticated or unpaid detail requests return 403.",
+      "Client manipulation of answer, score, price, currency, environment or reference cannot unlock detail.",
+      "Only a verified APPROVED Wompi event grants one-time access; pending or declined never do.",
+      "An active subscription and a one-time purchase use the same server-side entitlement interface.",
+      "The end-to-end flow returns to the exact attempt after login or payment."
+    ]
+  },
+  "releaseGate": {
+    "decision": "do_not_launch_paid_detail_yet",
+    "minimumToProceed": [
+      "Resolve or withdraw every blockProduction finding.",
+      "Run a second independent reviewer on every changed item.",
+      "Add official per-item source manifests and legal review.",
+      "Implement server-side grading and entitlement enforcement in the isolated paywall worktree.",
+      "Pass content, authorization, payment, leakage and end-to-end regression tests."
+    ]
+  }
+}

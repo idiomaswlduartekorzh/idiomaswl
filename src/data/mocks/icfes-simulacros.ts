@@ -38,6 +38,40 @@ export interface Simulacro {
   questions: SimulacroQuestion[];
 }
 
+export interface IcfesEditorialHold {
+  questionNumbers: readonly number[];
+  reason: string;
+}
+
+export type IcfesPaidDetailAvailability =
+  | { eligible: true }
+  | { eligible: false; questionNumbers: readonly number[]; reason: string };
+
+/**
+ * Confirmed defects whose exact official wording cannot be reconstructed from the
+ * repository. Paid-detail consumers must use getIcfesPaidDetailAvailability (or
+ * getSimulacroForPaidDetail) so a missing stimulus or uncertain transcription is
+ * never presented as verified premium analysis.
+ */
+export const ICFES_EDITORIAL_HOLDS = {
+  'icfes-2021-ex2': {
+    questionNumbers: [4, 5, 6],
+    reason: 'Detalle pago no disponible: faltan los avisos originales de las preguntas 4–6 en el banco digital y no se infieren desde la clave.',
+  },
+  'icfes-2016': {
+    questionNumbers: [1, 2, 3],
+    reason: 'Detalle pago no disponible: faltan los avisos originales de las preguntas 1–3 en el banco digital y no se infieren desde la clave.',
+  },
+  'icfes-tyt': {
+    questionNumbers: [6, 7, 8, 9, 10],
+    reason: 'Detalle pago no disponible: faltan los avisos originales de las preguntas 6–10 en el banco digital y no se infieren desde la clave.',
+  },
+  'icfes-2012': {
+    questionNumbers: [20],
+    reason: 'Detalle pago no disponible para este cuadernillo: la pregunta 20 tiene una transcripción sin respuesta gramatical válida y requiere contraste con el PDF oficial.',
+  },
+} as const satisfies Record<string, IcfesEditorialHold>;
+
 // ─────────────────────────────────────────────────────────────────────────────
 // SIMULACRO 1 — ICFES Saber 11 · Inglés · Grado 11 · 2023
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1541,7 +1575,7 @@ Every week, he goes to the restaurant and [23] six burgers on Monday and eight o
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Export
+// Export and paid-detail editorial gate
 // ─────────────────────────────────────────────────────────────────────────────
 export const SIMULACROS: Simulacro[] = [
   exam2023, exam2022, exam2019ex1,
@@ -1551,6 +1585,23 @@ export const SIMULACROS: Simulacro[] = [
 
 export function getSimulacro(id: string): Simulacro | undefined {
   return SIMULACROS.find(s => s.id === id);
+}
+
+export function getIcfesEditorialHold(id: string): IcfesEditorialHold | undefined {
+  return ICFES_EDITORIAL_HOLDS[id as keyof typeof ICFES_EDITORIAL_HOLDS];
+}
+
+export function getIcfesPaidDetailAvailability(id: string): IcfesPaidDetailAvailability {
+  const hold = getIcfesEditorialHold(id);
+  return hold
+    ? { eligible: false, questionNumbers: hold.questionNumbers, reason: hold.reason }
+    : { eligible: true };
+}
+
+/** Paid-detail consumers must use this accessor instead of getSimulacro. */
+export function getSimulacroForPaidDetail(id: string): Simulacro | undefined {
+  if (!getIcfesPaidDetailAvailability(id).eligible) return undefined;
+  return getSimulacro(id);
 }
 
 export function getSimulacroQuestionPart(simulacro: Simulacro, questionNumber: number): 1 | 2 | 3 | 4 | 5 | 6 | 7 {

@@ -243,7 +243,7 @@ const mock: MockExam = {
       instructions:
         'Read the text below. Choose the word (A, B, C, or D) that best fits each blank (questions 16 to 23).',
       passage:
-        "Colombia is one of the countries in the world with the most (16) ___ resources. Its mountains, forests, and coasts provide fresh (17) ___ for millions of people. However, in many cities, the quality of (18) ___ in the rivers has fallen because of industrial and agricultural activity. As the (19) ___ grows, demand for water increases too. Experts warn that if people continue to (20) ___ water and pollute natural sources, the country could face a serious crisis. It is therefore (21) ___ that communities learn to use water wisely. Protecting the environment today means securing a better (22) ___ for the next generation. Every citizen has a responsibility to care for these natural (23) ___.",
+        "Colombia is one of the countries in the world with the most (16) ___ resources. Its mountains, forests, and coasts provide fresh (17) ___ for millions of people to drink. However, in many cities, the quality of (18) ___ in the rivers has fallen because of industrial and agricultural activity. As the (19) ___ grows, demand for water increases too. Experts warn that if people continue to (20) ___ water and pollute natural sources, the country could face a serious crisis. It is therefore (21) ___ that communities learn to use water wisely. Protecting the environment today means securing a better (22) ___ for the next generation. Every citizen has a responsibility to care for these natural (23) ___.",
       questions: [
         {
           type: 'mcq',
@@ -258,7 +258,7 @@ const mock: MockExam = {
           id: 'p4q2',
           part: 4,
           text: 'Choose the best word for blank (17).',
-          options: ['soil', 'air', 'rivers', 'food'],
+          options: ['soil', 'air', 'water', 'food'],
           answer: 2,
         },
         {
@@ -266,7 +266,7 @@ const mock: MockExam = {
           id: 'p4q3',
           part: 4,
           text: 'Choose the best word for blank (18).',
-          options: ['colour', 'taste', 'clean', 'flow'],
+          options: ['colour', 'taste', 'water', 'flow'],
           answer: 2,
         },
         {
