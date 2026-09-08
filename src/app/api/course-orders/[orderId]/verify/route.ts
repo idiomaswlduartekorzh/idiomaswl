@@ -9,5 +9,10 @@ export async function POST(request:Request,{params}:{params:Promise<{orderId:str
   try {
     if(!await accessibleCourseOrder(orderId,request))return json({message:'Inscripción no encontrada.'},404);
     await reconcileCoursePayment(id,orderId);return json({saved:true});
-  }catch{return json({message:'Tu pago está en verificación. No vuelvas a pagar; conservamos tu inscripción para revisarlo.'},503);}
+  }catch(error){
+    const code=error instanceof Error?error.message:'course_payment_verification_failed';
+    console.error('[course-orders] payment verification failed',{orderId,code});
+    if(code==='course_fulfillment_pending')return json({saved:true,fulfillmentPending:true},202);
+    return json({message:'Tu pago está en verificación. No vuelvas a pagar; conservamos tu inscripción para revisarlo.'},503);
+  }
 }
