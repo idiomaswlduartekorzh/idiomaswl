@@ -34,15 +34,18 @@ async function welcomeStudent(order:CourseOrderRecord) {
   const contact=order.contact as {studentName:string;studentEmail:string};
   let profile=await findProfile(contact.studentEmail);
   let invited=false;
+  let accountActionLink:string|null=null;
   if(!profile){
-    const {data,error}=await admin.auth.admin.inviteUserByEmail(contact.studentEmail,{
+    const options={
       data:{full_name:contact.studentName,source:'course_payment',course_order_id:order.id,course_language:(order.selection as {language:string}).language},
       redirectTo:`https://www.idiomaswl.com/auth/callback?next=${encodeURIComponent(`/inscripcion?orden=${order.id}`)}`,
-    });
-    if(error)throw new Error('student_invite_failed');
-    if(!data.user)throw new Error('student_account_not_created');
-    profile={id:data.user.id,email:contact.studentEmail};
-    invited=true;
+    };
+    let generated=await admin.auth.admin.generateLink({type:'invite',email:contact.studentEmail,options});
+    invited=!generated.error;
+    if(generated.error)generated=await admin.auth.admin.generateLink({type:'magiclink',email:contact.studentEmail,options});
+    if(generated.error||!generated.data.user||!generated.data.properties)throw new Error('student_account_link_failed');
+    profile={id:generated.data.user.id,email:contact.studentEmail};
+    accountActionLink=generated.data.properties.action_link;
   }
   const selection=order.selection as {language:string;objective:string;level:string};
   const {error:profileError}=await admin.from('profiles').upsert({
@@ -53,12 +56,14 @@ async function welcomeStudent(order:CourseOrderRecord) {
   const {error:orderError}=await admin.from('course_orders').update({user_id:profile.id}).eq('id',order.id).is('user_id',null);
   if(orderError)throw new Error('student_order_link_failed');
   const language=LANGUAGES.find(item=>item.id===selection.language)?.name??selection.language;
-  const accountMessage=invited?'También recibirás un enlace separado para activar tu nueva cuenta.':'Tu cuenta existente quedó vinculada a esta inscripción.';
+  const accountMessage=invited?'Creamos tu cuenta. Usa el botón para activarla y entrar a tu inscripción.':accountActionLink?'Tu cuenta ya existía. Usa el botón para entrar de forma segura.':'Tu cuenta existente quedó vinculada a esta inscripción.';
+  const accountHref=accountActionLink??`https://www.idiomaswl.com/login?next=${encodeURIComponent(`/inscripcion?orden=${order.id}`)}`;
+  const accountLabel=invited?'Activar mi cuenta':'Entrar a mi inscripción';
   await sendCourseEmail({
     to:contact.studentEmail,
     subject:`Bienvenido a WeLearn: tu pago de ${language} está confirmado`,
     idempotencyKey:`course-welcome/${order.id}`,
-    html:`<h1>¡Bienvenido a WeLearn, ${escapeEmailHtml(contact.studentName)}!</h1><p>Confirmamos tu inscripción a <strong>${escapeEmailHtml(language)}</strong> por ${escapeEmailHtml(formatCOP(Number(order.amount_in_cents)/100))} COP.</p><p>Referencia: <strong>${escapeEmailHtml(order.reference)}</strong>.</p><p>${escapeEmailHtml(accountMessage)}</p><p><a href="https://www.idiomaswl.com/login?next=${encodeURIComponent(`/inscripcion?orden=${order.id}`)}">Entrar a mi inscripción</a></p><p>Te contactaremos para coordinar el horario. Conserva este correo como constancia de la compra.</p>`,
+    html:`<h1>¡Bienvenido a WeLearn, ${escapeEmailHtml(contact.studentName)}!</h1><p>Confirmamos tu inscripción a <strong>${escapeEmailHtml(language)}</strong> por ${escapeEmailHtml(formatCOP(Number(order.amount_in_cents)/100))} COP.</p><p>Referencia: <strong>${escapeEmailHtml(order.reference)}</strong>.</p><p>${escapeEmailHtml(accountMessage)}</p><p><a href="${escapeEmailHtml(accountHref)}">${escapeEmailHtml(accountLabel)}</a></p><p>Te contactaremos para coordinar el horario. Conserva este correo como constancia de la compra.</p>`,
   });
 }
 
