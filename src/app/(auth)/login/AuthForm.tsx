@@ -43,20 +43,23 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   const [email, setEmail]       = useState('');
   const [password, setPassword] = useState('');
   const [name, setName]         = useState('');
-  const [studentPath, setStudentPath] = useState<StudentPath>('welearn');
-  const [language, setLanguage] = useState<WelearnLanguage>('ingles');
-  const [exam, setExam] = useState<XpressExamSlug>('ielts');
-  const [examPlan, setExamPlan] = useState<XpressOfferId>('exam-auto');
+  const [studentPath, setStudentPath] = useState<StudentPath | null>(null);
+  const [language, setLanguage] = useState<WelearnLanguage | ''>('');
+  const [exam, setExam] = useState<XpressExamSlug | ''>('');
+  const [examPlan, setExamPlan] = useState<XpressOfferId | ''>('');
   const [loading, setLoading]   = useState(false);
   const [error, setError]       = useState('');
   const [success, setSuccess]   = useState('');
   const router = useRouter();
 
-  const registrationIntent = (): RegistrationIntent => studentPath === 'welearn'
-    ? { path: 'welearn', language }
-    : { path: 'exam', exam, plan: examPlan };
+  const registrationIntent = (): RegistrationIntent | null => {
+    if (studentPath === 'welearn' && language) return { path: 'welearn', language };
+    if (studentPath === 'exam' && exam && examPlan) return { path: 'exam', exam, plan: examPlan };
+    return null;
+  };
 
   const returnPath = () => safeCourseReturnPath(new URLSearchParams(window.location.search).get('next'));
+  const registrationReady = mode === 'login' || registrationIntent() !== null;
 
   // ── Auth error normalisation ──────────────────────────────────────────────
   // We deliberately avoid echoing the raw Supabase error string to the UI.
@@ -102,6 +105,11 @@ export default function AuthForm({ mode }: { mode: Mode }) {
       router.refresh();
     } else {
       const intent = registrationIntent();
+      if (!intent) {
+        setError('Elige qué quieres hacer y completa esa selección.');
+        setLoading(false);
+        return;
+      }
       const completionPath = registrationCompletionPath(intent, returnPath());
       const { data, error } = await supabase.auth.signUp({
         email,
@@ -125,9 +133,12 @@ export default function AuthForm({ mode }: { mode: Mode }) {
   const handleGoogle = async () => {
     const supabase = createClient();
     if (!supabase) return;
-    const next = mode === 'register'
-      ? registrationCompletionPath(registrationIntent(), returnPath())
-      : returnPath();
+    const intent = mode === 'register' ? registrationIntent() : null;
+    if (mode === 'register' && !intent) {
+      setError('Elige qué quieres hacer y completa esa selección.');
+      return;
+    }
+    const next = intent ? registrationCompletionPath(intent, returnPath()) : returnPath();
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
@@ -267,6 +278,7 @@ export default function AuthForm({ mode }: { mode: Mode }) {
           <button
             onClick={handleGoogle}
             type="button"
+            disabled={!registrationReady}
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -279,7 +291,8 @@ export default function AuthForm({ mode }: { mode: Mode }) {
               background: CARD,
               fontSize: 14,
               fontWeight: 600,
-              cursor: 'pointer',
+              cursor: registrationReady ? 'pointer' : 'not-allowed',
+              opacity: registrationReady ? 1 : 0.55,
               color: 'var(--ink)',
               boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
               transition: 'box-shadow 0.15s, border-color 0.15s',
@@ -367,23 +380,30 @@ export default function AuthForm({ mode }: { mode: Mode }) {
                       );
                     })}
                   </div>
+                  {!studentPath && (
+                    <span style={{ fontSize: 12, color: MUTED }}>Debes elegir una opción para crear tu cuenta.</span>
+                  )}
                 </Field>
 
-                {studentPath === 'welearn' ? (
+                {studentPath === 'welearn' && (
                   <Field label="Idioma que quieres aprender">
                     <select value={language} onChange={(event) => setLanguage(event.target.value as WelearnLanguage)} style={inputStyle}>
+                      <option value="" disabled>Selecciona un idioma</option>
                       {WELEARN_LANGUAGE_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
                     </select>
                   </Field>
-                ) : (
+                )}
+                {studentPath === 'exam' && (
                   <>
                     <Field label="Examen que quieres preparar">
                       <select value={exam} onChange={(event) => setExam(event.target.value as XpressExamSlug)} style={inputStyle}>
+                        <option value="" disabled>Selecciona un examen</option>
                         {XPRESS_EXAM_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
                       </select>
                     </Field>
                     <Field label="Plan de exámenes">
                       <select value={examPlan} onChange={(event) => setExamPlan(event.target.value as XpressOfferId)} style={inputStyle}>
+                        <option value="" disabled>Selecciona un plan</option>
                         {XPRESS_OFFERS.map((offer) => (
                           <option key={offer.id} value={offer.id}>
                             ${(offer.amountInCents / 100).toLocaleString('es-CO')} · {offer.id === 'exam-auto' ? 'corrección automática' : 'feedback docente en 24 h'}
@@ -436,17 +456,17 @@ export default function AuthForm({ mode }: { mode: Mode }) {
 
             <button
               type="submit"
-              disabled={loading}
+              disabled={loading || !registrationReady}
               style={{
                 width: '100%',
                 padding: '0.85rem',
-                background: loading ? 'var(--muted)' : ACTION,
+                background: loading || !registrationReady ? 'var(--muted)' : ACTION,
                 color: '#fff',
                 border: 'none',
                 borderRadius: 12,
                 fontSize: 15,
                 fontWeight: 700,
-                cursor: loading ? 'not-allowed' : 'pointer',
+                cursor: loading || !registrationReady ? 'not-allowed' : 'pointer',
                 marginTop: '0.25rem',
                 transition: 'background 0.15s, transform 0.1s',
                 boxShadow: '0 4px 14px rgba(167,25,39,0.3)',

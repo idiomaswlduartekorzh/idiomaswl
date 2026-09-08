@@ -74,6 +74,7 @@ test('validates and normalizes both registration paths', () => {
     xpress_plan_interest: 'exam-teacher',
   });
   assert.equal(parseRegistrationIntent({ path: 'exam', exam: 'otro', plan: 'exam-auto' }), null);
+  assert.equal(parseRegistrationIntent({}), null);
   assert.equal(
     registrationCompletionPath(exam, '/dashboard'),
     '/registro/completar?path=exam&return=%2Fdashboard&exam=ielts&plan=exam-teacher',
