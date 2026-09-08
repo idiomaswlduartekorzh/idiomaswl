@@ -10,8 +10,10 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const stagingRoot = path.resolve(process.argv[2] ?? '');
 assert.ok(process.argv[2], 'usage: publish-ielts-audio-repairs.mjs <repair-directory>');
 const manifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/repair-manifest.json'), 'utf8'));
+const castingSha256 = sha256(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json')));
 const log = JSON.parse(readFileSync(path.join(stagingRoot, 'repair-generation-log.json'), 'utf8'));
 assert.equal(log.repairManifestSha256, manifest.repairManifestSha256, 'Repair log belongs to a stale manifest');
+assert.equal(log.castingSha256, castingSha256, 'Repair log belongs to a stale casting and assembly policy');
 
 const receipts = [];
 for (const entry of log.files ?? []) {
@@ -27,6 +29,7 @@ for (const entry of log.files ?? []) {
   assert.equal(qa.status, 'PASS', `Set ${entry.set} repair QA has not passed`);
   assert.equal(qa.audioSha256, entry.sha256, `Set ${entry.set} repair QA belongs to another audio file`);
   assert.equal(qa.repairManifestSha256, manifest.repairManifestSha256, `Set ${entry.set} repair QA belongs to another manifest`);
+  assert.equal(qa.castingSha256, castingSha256, `Set ${entry.set} repair QA belongs to another casting and assembly policy`);
   assert.equal(sha256(readFileSync(entry.path)), entry.sha256, `Set ${entry.set} repaired audio changed after QA`);
   assert.equal(human.status, 'APPROVED', `Set ${entry.set} human review has not approved the repair`);
   assert.equal(human.set, entry.set, `Set ${entry.set} human review belongs to another set`);

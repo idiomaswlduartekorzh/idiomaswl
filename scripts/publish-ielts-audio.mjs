@@ -10,10 +10,13 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const generationRoot = path.resolve(process.argv[2] ?? '');
 assert.ok(process.argv[2], 'usage: publish-ielts-audio.mjs <generation-directory>');
 const manifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-manifest.json'), 'utf8'));
+const castingSha256 = sha256(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json')));
 const log = JSON.parse(readFileSync(path.join(generationRoot, 'generation-log.json'), 'utf8'));
 const technical = JSON.parse(readFileSync(path.join(generationRoot, 'technical-qa.json'), 'utf8'));
 assert.equal(log.manifestSha256, manifest.manifestSha256, 'Generation log belongs to a stale manifest');
 assert.equal(technical.manifestSha256, manifest.manifestSha256, 'Technical QA belongs to a stale manifest');
+assert.equal(log.castingSha256, castingSha256, 'Generation log belongs to a stale casting and assembly policy');
+assert.equal(technical.castingSha256, castingSha256, 'Technical QA belongs to a stale casting and assembly policy');
 assert.equal(technical.status, 'technical_qa_passed_pending_transcript_and_owner_listening_review', 'Technical QA has not passed');
 
 const receipts = [];
@@ -31,6 +34,7 @@ for (const entry of log.files ?? []) {
   assert.equal(asr.status, 'PASS', `${entry.setId} ASR has not passed`);
   assert.equal(asr.audioSha256, entry.audioSha256, `${entry.setId} ASR belongs to another audio file`);
   assert.equal(asr.manifestSha256, manifest.manifestSha256, `${entry.setId} ASR belongs to another manifest`);
+  assert.equal(asr.castingSha256, castingSha256, `${entry.setId} ASR belongs to another casting and assembly policy`);
   assert.equal(human.status, 'APPROVED', `${entry.setId} human review has not approved the audio`);
   assert.equal(human.set, entry.set, `${entry.setId} human review belongs to another set`);
   assert.equal(human.reviewer?.kind, 'human', `${entry.setId} requires a human reviewer`);

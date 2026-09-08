@@ -4,12 +4,14 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { sha256 } from './lib/ielts-audio-production.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const stagingRoot = path.resolve(process.argv[2] ?? '');
 assert.ok(process.argv[2], 'usage: scaffold-ielts-audio-human-review.mjs <generation-or-repair-directory>');
 const productionManifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-manifest.json'), 'utf8'));
 const repairManifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/repair-manifest.json'), 'utf8'));
+const castingSha256 = sha256(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json')));
 const productionLogPath = path.join(stagingRoot, 'generation-log.json');
 const repairLogPath = path.join(stagingRoot, 'repair-generation-log.json');
 assert.ok(existsSync(productionLogPath) || existsSync(repairLogPath), 'Staging directory has no supported generation log');
@@ -18,6 +20,7 @@ const repairMode = existsSync(repairLogPath);
 const log = JSON.parse(readFileSync(repairMode ? repairLogPath : productionLogPath, 'utf8'));
 if (repairMode) assert.equal(log.repairManifestSha256, repairManifest.repairManifestSha256, 'Repair log belongs to a stale manifest');
 else assert.equal(log.manifestSha256, productionManifest.manifestSha256, 'Generation log belongs to a stale manifest');
+assert.equal(log.castingSha256, castingSha256, 'Generation log belongs to a stale casting and assembly policy');
 
 const outputs = [];
 for (const file of log.files ?? []) {
@@ -28,8 +31,13 @@ for (const file of log.files ?? []) {
   const automaticQa = JSON.parse(readFileSync(automaticQaPath, 'utf8'));
   assert.equal(automaticQa.status, 'PASS', `Set ${file.set} automatic QA has not passed`);
   assert.equal(automaticQa.audioSha256, audioSha256, `Set ${file.set} automatic QA belongs to another audio file`);
+  assert.equal(automaticQa.castingSha256, castingSha256, `Set ${file.set} automatic QA belongs to another casting and assembly policy`);
   const output = path.join(directory, `human-review-set-${file.set}.template.json`);
-  assert.ok(!existsSync(output), `Refusing to overwrite existing review template: ${output}`);
+  if (existsSync(output)) {
+    const existing = JSON.parse(readFileSync(output, 'utf8'));
+    assert.equal(existing.status, 'PENDING', `Refusing to overwrite a non-pending review template: ${output}`);
+    assert.equal(existing.listenedComplete, false, `Refusing to overwrite a completed review template: ${output}`);
+  }
   const template = {
     schemaVersion: 1,
     set: file.set,

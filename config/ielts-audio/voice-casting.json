@@ -36,6 +36,7 @@
     "integrated_loudness_tolerance_lu": 1.5,
     "normalization_true_peak_dbfs": -2.2,
     "max_true_peak_dbfs": -1.5,
+    "transition_declick_fade_ms": 10,
     "silence_between_conversation_turns_seconds": 0.35,
     "silence_between_parts_seconds": 15
   },

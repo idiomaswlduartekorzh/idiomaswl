@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { mediaBinary } from './lib/ielts-audio-timing.mjs';
 
@@ -17,6 +18,7 @@ for (const key of Object.keys(args)) assert.ok(['output-json', 'output-md', 'bas
 const readJson = file => existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : null;
 const manifest = readJson(path.join(root, 'config/ielts-audio/production-manifest.json'));
 const repairManifest = readJson(path.join(root, 'config/ielts-audio/repair-manifest.json'));
+const castingSha256 = createHash('sha256').update(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'))).digest('hex');
 const baseStatus = args['base-status'] ? readJson(path.resolve(args['base-status'])) : null;
 const baseBySet = new Map((baseStatus?.sets ?? []).map(row => [row.set, row]));
 const audioDuration = file => {
@@ -36,7 +38,7 @@ if (existsSync(productionRoot)) {
     for (const file of generation.files ?? []) {
       const technicalFile = technical.files?.find(candidate => candidate.setId === file.setId);
       const qa = readJson(path.join(path.dirname(file.path), `staged-asr-qa-set-${file.set}.json`));
-      productionBySet.set(file.set, { file, technical, technicalFile, qa });
+      productionBySet.set(file.set, { file, generation, technical, technicalFile, qa });
     }
   }
 }
@@ -47,7 +49,7 @@ if (existsSync(repairRoot)) {
   const generation = readJson(path.join(repairRoot, 'repair-generation-log.json'));
   for (const file of generation?.files ?? []) {
     const qa = readJson(path.join(path.dirname(file.path), `repair-qa-report-set-${file.set}.json`));
-    repairBySet.set(file.set, { file, qa });
+    repairBySet.set(file.set, { file, generation, qa });
   }
 }
 
@@ -58,9 +60,14 @@ const rows = manifest.rows.map(row => {
   const existingAsr = readJson(path.join(existingAsrRoot, `asr-report-set-${row.set}.json`));
   const productionPassed = produced?.technical?.status === 'technical_qa_passed_pending_transcript_and_owner_listening_review'
     && produced?.qa?.status === 'PASS'
+    && produced?.generation?.castingSha256 === castingSha256
+    && produced?.technical?.castingSha256 === castingSha256
+    && produced?.qa?.castingSha256 === castingSha256
     && produced.qa.audioSha256 === produced.file.audioSha256
     && produced.qa.manifestSha256 === manifest.manifestSha256;
   const repairPassed = repaired?.qa?.status === 'PASS'
+    && repaired?.generation?.castingSha256 === castingSha256
+    && repaired?.qa?.castingSha256 === castingSha256
     && repaired.qa.audioSha256 === repaired.file.sha256
     && repaired.qa.repairManifestSha256 === repairManifest.repairManifestSha256;
   const legacyAnswersPresent = existingAsr?.completionEvidenceFound === existingAsr?.completionEvidenceTotal;
@@ -111,6 +118,7 @@ const report = {
   generatedAt: new Date().toISOString(),
   productionManifestSha256: manifest.manifestSha256,
   repairManifestSha256: repairManifest.repairManifestSha256,
+  castingSha256,
   publicAudioChanged: false,
   humanReviewRequired: true,
   summary: {

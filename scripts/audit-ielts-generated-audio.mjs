@@ -13,11 +13,14 @@ const logPath = path.join(root, 'generation-log.json');
 assert.ok(existsSync(logPath), `missing generation log: ${logPath}`);
 const log = JSON.parse(readFileSync(logPath, 'utf8'));
 const plan = JSON.parse(readFileSync(path.resolve('config/ielts-audio/production-manifest.json'), 'utf8'));
-const casting = JSON.parse(readFileSync(path.resolve('config/ielts-audio/voice-casting.json'), 'utf8'));
+const castingBytes = readFileSync(path.resolve('config/ielts-audio/voice-casting.json'));
+const casting = JSON.parse(castingBytes);
 assert.equal(log.manifestSha256, plan.manifestSha256, 'generation log belongs to a stale manifest');
 assert.equal(log.modelId, casting.model_id, 'generation used a different model');
 
 const sha256 = value => createHash('sha256').update(value).digest('hex');
+const castingSha256 = sha256(castingBytes);
+assert.equal(log.castingSha256, castingSha256, 'generation log belongs to a stale casting and assembly policy');
 const failures = [];
 const files = [];
 for (const entry of log.files ?? []) {
@@ -72,6 +75,7 @@ for (const entry of log.files ?? []) {
 assert.ok(files.length > 0, 'generation log contains no files');
 const reportCore = {
   schemaVersion: 1, auditedAt: new Date().toISOString(), manifestSha256: plan.manifestSha256,
+  castingSha256,
   status: failures.length ? 'rejected' : 'technical_qa_passed_pending_transcript_and_owner_listening_review',
   releaseAuthorized: false, files, failures,
 };

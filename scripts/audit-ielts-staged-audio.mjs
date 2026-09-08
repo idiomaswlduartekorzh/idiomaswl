@@ -30,13 +30,18 @@ const manifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/pro
 const policy = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-policy.json'), 'utf8'));
 const variantsBytes = readFileSync(path.join(root, 'config/ielts-audio/asr-recognition-variants.json'));
 const variants = JSON.parse(variantsBytes);
+const castingBytes = readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'));
+const castingSha256 = sha256(castingBytes);
 assert.equal(generationLog.manifestSha256, manifest.manifestSha256, 'Generation log belongs to a stale manifest');
 assert.equal(technicalQa.manifestSha256, manifest.manifestSha256, 'Technical QA belongs to a stale manifest');
+assert.equal(generationLog.castingSha256, castingSha256, 'Generation log belongs to a stale casting and assembly policy');
+assert.equal(technicalQa.castingSha256, castingSha256, 'Technical QA belongs to a stale casting and assembly policy');
 
 function transcribe(audio, directory, outputName, focused = false) {
   const output = path.join(directory, `${outputName}.json`);
   if (args.force !== 'true' && existsSync(output)) return output;
-  const whisperArgs = [audio, '--model', model, '--language', 'en', '--task', 'transcribe', '--temperature', '0', '--condition-on-previous-text', 'True', '--word-timestamps', 'True'];
+  const whisperArgs = [audio, '--model', model, '--language', 'en', '--task', 'transcribe', '--temperature', '0',
+    '--condition-on-previous-text', focused ? 'False' : 'True', '--word-timestamps', 'True'];
   if (!focused) whisperArgs.push('--hallucination-silence-threshold', '2');
   whisperArgs.push('--verbose', 'False', '--output-dir', directory, '--output-name', outputName, '--output-format', 'json');
   const result = spawnSync(executable, whisperArgs, {
@@ -182,6 +187,7 @@ for (const setNumber of sets) {
     set: setNumber,
     status,
     manifestSha256: manifest.manifestSha256,
+    castingSha256,
     audioPath: entry.path,
     audioSha256: sha256(readFileSync(entry.path)),
     technicalPassed,
