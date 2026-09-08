@@ -1,7 +1,12 @@
 import type { Metadata } from 'next';
 import PreciosClient from './PreciosClient';
+import CoursePricingClient from './CoursePricingClient';
+import { parseSelection, type Query } from '@/lib/course-pricing/catalog';
 
-export const metadata: Metadata = {
+// Local review only: cannot enable the candidate in a production deployment.
+const preview = process.env.COURSE_PRICING_PREVIEW === 'true' && process.env.VERCEL_ENV !== 'production';
+
+const legacyMetadata: Metadata = {
   title: 'Planes y Precios — Inglés, Coreano, IELTS, TOEFL',
   description:
     'Planes para preparar IELTS, TOEFL, ICFES, Goethe y DELF: simulacros ilimitados, feedback por sección y clases 1:1. Empieza con 3 días gratis.',
@@ -23,7 +28,19 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.idiomaswl.com/precios' },
 };
 
-export default function PreciosPage() {
+export const metadata: Metadata = preview ? {
+  title: 'Clases de idiomas: elige tu plan | WeLearn',
+  description: 'Elige tu idioma, objetivo y ritmo. Clases de 100 minutos en ciclos de cuatro semanas, desde $320.000 COP.',
+  robots: { index: false, follow: false },
+  alternates: { canonical: 'https://www.idiomaswl.com/precios' },
+  openGraph: { title: 'Tu idioma. Tu propio ritmo.', description: 'Clases de idiomas desde $320.000 COP por cuatro semanas.' },
+} : legacyMetadata;
+
+export default async function PreciosPage({ searchParams }: { searchParams: Promise<Query> }) {
+  if (preview) {
+    const { selection, corrected } = parseSelection(await searchParams);
+    return <CoursePricingClient key={JSON.stringify(selection)} initialSelection={selection} corrected={corrected} />;
+  }
   return (
     <>
       <script

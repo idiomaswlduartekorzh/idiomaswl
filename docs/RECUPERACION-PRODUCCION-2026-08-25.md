@@ -220,3 +220,7 @@ Hasta entonces, el trabajo sigue pendiente aunque exista un commit o una preview
 - Japonés A2 llegó a 20 escenarios y 100 simulaciones en `codex/habla-japones-a2`.
   Rebasado sobre `77476a11`, pasó release guard, guardián profundo (10/24, 200/480),
   catálogo, TypeScript y build Webpack de 2.499 páginas; queda listo para fast-forward.
+
+### Continuidad de precios — 6 de septiembre de 2026
+
+`codex/precios-selector-20260906`, base `3a12afb2`, estado `EN_VALIDACION`. Worktree exclusivo; selector comercial candidato en `/precios` con gate solo de preview. Compartidos: únicamente página de precios y esta entrada documental. Sin cambios en pagos, IA, migraciones, layout o baseline. Validaciones y pendientes en `docs/precios-selector-20260906.md`. No integrado ni desplegado; siguiente bloque: revisar UI y definir alcance de verificación antes de persistencia/inscripción.
