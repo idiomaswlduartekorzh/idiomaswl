@@ -35,6 +35,8 @@ Esta tubería separa inventario, producción, auditoría y publicación. Ningún
 6. `HUMAN_AUDIO_REVIEW`: una persona escucha el archivo completo y aporta evidencia Q1–Q40.
 7. `PUBLISH_APPROVED`: copia atómica con respaldo del MP3 anterior y recibo hashado.
 
+Cada segmento se recorta, normaliza y termina con una rampa de 10 ms que lleva sus extremos a cero. Este de-click elimina empalmes abruptos sin suavizar perceptiblemente el ataque de la voz. El hash del casting incluye esta política y vuelve obsoleta cualquier evidencia generada con otro ensamblado.
+
 ## Coste y modelo
 
 La opción base es `eleven_flash_v2_5`. El manifiesto factura el texto exacto que se enviará tras convertir teléfonos, importes, porcentajes, años y letras deletreadas a formas pronunciables. Multilingual v2 queda reservado para segmentos que fallen dos intentos idénticos. El lote obligatorio se ejecuta en oleadas para respetar la reserva de créditos.

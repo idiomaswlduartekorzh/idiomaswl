@@ -23,6 +23,11 @@ const model = args.model || 'mlx-community/whisper-small-mlx';
 const input = path.resolve(args['input-dir'] || path.join(root, 'output/ielts-audio-repairs', manifest.repairManifestSha256));
 const executable = process.env.IELTS_MLX_WHISPER || path.join(root, 'output/tools/asr-venv/bin/mlx_whisper');
 assert.ok(existsSync(executable), `Missing MLX Whisper at ${executable}`);
+const castingBytes = readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'));
+const castingSha256 = sha256(castingBytes);
+const generationLog = JSON.parse(readFileSync(path.join(input, 'repair-generation-log.json'), 'utf8'));
+assert.equal(generationLog.repairManifestSha256, manifest.repairManifestSha256, 'Repair generation log belongs to a stale manifest');
+assert.equal(generationLog.castingSha256, castingSha256, 'Repair generation log belongs to a stale casting and assembly policy');
 const recognitionVariantsBytes = readFileSync(path.join(root, 'config/ielts-audio/asr-recognition-variants.json'));
 const recognitionVariants = JSON.parse(recognitionVariantsBytes);
 
@@ -92,6 +97,7 @@ for (const setNumber of sets) {
     audioPath: audio,
     audioSha256: sha256(readFileSync(audio)),
     repairManifestSha256: manifest.repairManifestSha256,
+    castingSha256,
     globalAsr: {
       reportPath,
       reportSha256: sha256(readFileSync(reportPath)),

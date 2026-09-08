@@ -17,7 +17,9 @@ const API = 'https://api.elevenlabs.io';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const manifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-manifest.json'), 'utf8'));
 const policy = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/production-policy.json'), 'utf8'));
-const casting = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'), 'utf8'));
+const castingBytes = readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'));
+const casting = JSON.parse(castingBytes);
+const castingSha256 = sha256(castingBytes);
 assert.equal(casting.manifest_sha256, manifest.manifestSha256, 'Casting belongs to a stale manifest');
 
 const args = process.argv.slice(2);
@@ -134,13 +136,14 @@ async function generationGate(rows) {
   const cap = Number(value('--max-usd'));
   assert.ok(Number.isFinite(cap) && cap > 0, '--max-usd must be positive');
   assert.ok(cap <= Number(casting.approval_scope.approved_max_usd_before_tax), 'Requested USD cap exceeds authorized ceiling');
-  assert.ok(invoice.estimatedUsdBeforeTax <= cap, `Invoice USD ${invoice.estimatedUsdBeforeTax} exceeds cap ${cap}`);
+  if (!has('--reassemble')) assert.ok(invoice.estimatedUsdBeforeTax <= cap, `Invoice USD ${invoice.estimatedUsdBeforeTax} exceeds cap ${cap}`);
   const reserve = Number(value('--min-remaining-credits'));
   assert.ok(Number.isFinite(reserve) && reserve >= Number(casting.approval_scope.minimum_remaining_credits), 'Credit reserve is below policy');
   assert.ok(commandAvailable('ffmpeg') && commandAvailable('ffprobe'), 'ffmpeg and ffprobe are required before any provider call');
   const apiKey = elevenLabsApiKey(root);
   const account = await accountSnapshot(apiKey);
-  assert.ok(invoice.estimatedCredits + reserve <= account.availableCredits, `Need ${invoice.estimatedCredits} credits plus ${reserve} reserve; only ${account.availableCredits} available`);
+  const requiredCredits = has('--reassemble') ? reserve : invoice.estimatedCredits + reserve;
+  assert.ok(requiredCredits <= account.availableCredits, `Need ${requiredCredits} credits including reserve; only ${account.availableCredits} available`);
   const voices = await apiJson('/v2/voices?page_size=100', apiKey);
   const available = new Map((voices.voices ?? []).map(voice => [voice.voice_id, voice]));
   for (const profile of new Set(rows.flatMap(row => row.profiles))) {
@@ -176,16 +179,35 @@ async function synthesize({ apiKey, row, segment, segmentIndex }) {
 }
 
 function prepareSegment(source, target) {
+  const transitionFadeSeconds = Number(casting.target.transition_declick_fade_ms) / 1000;
+  assert.ok(Number.isFinite(transitionFadeSeconds) && transitionFadeSeconds > 0 && transitionFadeSeconds <= 0.02, 'Transition de-click fade must be between 1 and 20 ms');
   const filter = [
     'silenceremove=start_periods=1:start_silence=0.03:start_threshold=-45dB',
     'areverse',
     'silenceremove=start_periods=1:start_silence=0.03:start_threshold=-45dB',
     'areverse',
     `loudnorm=I=${casting.target.integrated_loudness_lufs}:TP=${casting.target.normalization_true_peak_dbfs}:LRA=7`,
+    `afade=t=in:ss=0:d=${transitionFadeSeconds}`,
+    'areverse',
+    `afade=t=in:ss=0:d=${transitionFadeSeconds}`,
+    'areverse',
   ].join(',');
   const result = spawnSync(mediaBinary('ffmpeg'), ['-y', '-hide_banner', '-loglevel', 'error', '-i', source, '-af', filter,
     '-ar', String(casting.target.final_sample_rate_hz), '-ac', String(casting.target.final_channels), '-c:a', 'pcm_s16le', target], { encoding: 'utf8' });
   assert.equal(result.status, 0, `Segment preparation failed: ${result.stderr}`);
+}
+
+function assertCleanPcmEdges(file) {
+  const bytes = readFileSync(file);
+  const marker = bytes.indexOf(Buffer.from('data'));
+  assert.ok(marker >= 0 && marker + 8 < bytes.length, `Prepared WAV has no PCM data chunk: ${file}`);
+  const dataBytes = bytes.readUInt32LE(marker + 4);
+  const start = marker + 8;
+  const end = Math.min(start + dataBytes, bytes.length) - 2;
+  assert.ok(end >= start, `Prepared WAV has no PCM samples: ${file}`);
+  const first = Math.abs(bytes.readInt16LE(start));
+  const last = Math.abs(bytes.readInt16LE(end));
+  assert.ok(first <= 32 && last <= 32, `Prepared WAV edge is not de-clicked: ${file} (${first}/${last})`);
 }
 
 function silenceFile(directory, seconds) {
@@ -210,7 +232,8 @@ function assemble(row, segmentPaths, target, workDirectory) {
   mkdirSync(workDirectory, { recursive: true });
   const prepared = segmentPaths.map((source, index) => {
     const file = path.join(workDirectory, `prepared-${String(index + 1).padStart(3, '0')}.wav`);
-    if (!existsSync(file)) prepareSegment(source, file);
+    if (has('--reassemble') || !existsSync(file)) prepareSegment(source, file);
+    assertCleanPcmEdges(file);
     return file;
   });
   const reviewSlots = row.segments.filter(segment => segment.kind === 'announcer' && segment.pauseAfterSeconds > 0).length;
@@ -274,7 +297,7 @@ async function generate(rows) {
   let conservativeAvailableCredits = gate.account.availableCredits;
   const writeLog = status => writeFileSync(logPath, `${JSON.stringify({
     schemaVersion: 1, status, updatedAt: new Date().toISOString(), manifestSha256: manifest.manifestSha256,
-    modelId: casting.model_id, approvedMaxUsd: gate.cap, protectedCreditReserve: gate.reserve,
+    modelId: casting.model_id, castingSha256, approvedMaxUsd: gate.cap, protectedCreditReserve: gate.reserve,
     accountAtStart: gate.account, invoiceAtStart: gate.invoice, files,
   }, null, 2)}\n`);
   writeLog('in_progress');
@@ -289,13 +312,18 @@ async function generate(rows) {
         seed: stableSeed(row.mediaId, index), previous: row.segments[index - 1]?.part === segment.part ? ttsText(row.segments[index - 1].text) : null,
         next: row.segments[index + 1]?.part === segment.part ? ttsText(row.segments[index + 1].text) : null };
       const cachePath = path.join(cache, `${createHash('sha256').update(JSON.stringify(requestCore)).digest('hex')}.mp3`);
-      if (!existsSync(cachePath)) {
-        const cost = Math.ceil(requestCore.text.length * casting.credits_per_character);
-        assert.ok(conservativeAvailableCredits - cost >= gate.reserve, `Reserve reached before Set ${row.set} segment ${index + 1}`);
-        writeFileSync(cachePath, await synthesize({ apiKey: gate.apiKey, row, segment, segmentIndex: index }));
-        conservativeAvailableCredits -= cost;
-      }
       const setSegment = path.join(segmentDirectory, `segment-${String(index + 1).padStart(3, '0')}.mp3`);
+      if (!existsSync(cachePath)) {
+        if (has('--reassemble')) {
+          assert.ok(existsSync(setSegment), `Reassembly source miss for Set ${row.set} segment ${index + 1}; refusing a provider call`);
+          writeFileSync(cachePath, readFileSync(setSegment));
+        } else {
+          const cost = Math.ceil(requestCore.text.length * casting.credits_per_character);
+          assert.ok(conservativeAvailableCredits - cost >= gate.reserve, `Reserve reached before Set ${row.set} segment ${index + 1}`);
+          writeFileSync(cachePath, await synthesize({ apiKey: gate.apiKey, row, segment, segmentIndex: index }));
+          conservativeAvailableCredits -= cost;
+        }
+      }
       if (!existsSync(setSegment)) writeFileSync(setSegment, readFileSync(cachePath));
       segmentPaths.push(setSegment);
     }

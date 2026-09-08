@@ -12,7 +12,9 @@ import { elevenLabsApiKey } from './lib/elevenlabs-api-key.mjs';
 const API = 'https://api.elevenlabs.io';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const manifest = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/repair-manifest.json'), 'utf8'));
-const casting = JSON.parse(readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'), 'utf8'));
+const castingBytes = readFileSync(path.join(root, 'config/ielts-audio/voice-casting.json'));
+const casting = JSON.parse(castingBytes);
+const castingSha256 = sha256(castingBytes);
 const args = process.argv.slice(2);
 const has = flag => args.includes(flag);
 const value = flag => has(flag) ? args[args.indexOf(flag) + 1] : null;
@@ -81,13 +83,32 @@ function duration(file) {
 }
 
 function prepareSegment(source, target) {
+  const transitionFadeSeconds = Number(casting.target.transition_declick_fade_ms) / 1000;
+  assert.ok(Number.isFinite(transitionFadeSeconds) && transitionFadeSeconds > 0 && transitionFadeSeconds <= 0.02, 'Transition de-click fade must be between 1 and 20 ms');
   runFfmpeg(['-y', '-hide_banner', '-loglevel', 'error', '-i', source, '-vn', '-af', [
     'silenceremove=start_periods=1:start_silence=0.03:start_threshold=-45dB',
     'areverse',
     'silenceremove=start_periods=1:start_silence=0.03:start_threshold=-45dB',
     'areverse',
     `loudnorm=I=${casting.target.integrated_loudness_lufs}:TP=${casting.target.normalization_true_peak_dbfs}:LRA=7`,
+    `afade=t=in:ss=0:d=${transitionFadeSeconds}`,
+    'areverse',
+    `afade=t=in:ss=0:d=${transitionFadeSeconds}`,
+    'areverse',
   ].join(','), '-ar', '44100', '-ac', '1', '-c:a', 'pcm_s16le', target], 'Repair segment preparation failed');
+}
+
+function assertCleanPcmEdges(file) {
+  const bytes = readFileSync(file);
+  const marker = bytes.indexOf(Buffer.from('data'));
+  assert.ok(marker >= 0 && marker + 8 < bytes.length, `Prepared repair WAV has no PCM data chunk: ${file}`);
+  const dataBytes = bytes.readUInt32LE(marker + 4);
+  const start = marker + 8;
+  const end = Math.min(start + dataBytes, bytes.length) - 2;
+  assert.ok(end >= start, `Prepared repair WAV has no PCM samples: ${file}`);
+  const first = Math.abs(bytes.readInt16LE(start));
+  const last = Math.abs(bytes.readInt16LE(end));
+  assert.ok(first <= 32 && last <= 32, `Prepared repair WAV edge is not de-clicked: ${file} (${first}/${last})`);
 }
 
 function assembleRepair(row, prepared, directory) {
@@ -141,13 +162,15 @@ for (const row of selectedRows) assert.ok(casting.approval_scope.approved_repair
 const requestedCharacters = selectedRows.reduce((total, row) => total + row.billableCharacters, 0);
 const requestedUsd = requestedCharacters * casting.api_price_usd_per_1000_characters / 1000;
 const cap = Number(value('--max-usd'));
-assert.ok(Number.isFinite(cap) && cap >= requestedUsd && cap <= casting.approval_scope.approved_max_usd_before_tax, `Repair cost ${requestedUsd.toFixed(4)} exceeds cap or authorization`);
+assert.ok(Number.isFinite(cap) && cap > 0 && cap <= casting.approval_scope.approved_max_usd_before_tax, 'Repair cost cap is invalid or exceeds authorization');
+if (!has('--reassemble')) assert.ok(cap >= requestedUsd, `Repair cost ${requestedUsd.toFixed(4)} exceeds cap`);
 const reserve = Number(value('--min-remaining-credits'));
 assert.ok(Number.isFinite(reserve) && reserve >= casting.approval_scope.minimum_remaining_credits, 'Protected credit reserve is too low');
 const apiKey = elevenLabsApiKey(root);
 const account = await accountSnapshot(apiKey);
 const estimatedCredits = Math.ceil(requestedCharacters * casting.credits_per_character);
-assert.ok(account.availableCredits >= estimatedCredits + reserve, `Need ${estimatedCredits} credits plus ${reserve} reserve; only ${account.availableCredits} available`);
+const requiredCredits = has('--reassemble') ? reserve : estimatedCredits + reserve;
+assert.ok(account.availableCredits >= requiredCredits, `Need ${requiredCredits} credits including reserve; only ${account.availableCredits} available`);
 const availableVoices = new Map((await apiJson('/v2/voices?page_size=100', apiKey)).voices.map(voice => [voice.voice_id, voice]));
 for (const segment of selectedRows.flatMap(row => row.segments)) {
   const voice = profileVoice(segment.profile);
@@ -166,9 +189,13 @@ for (const row of selectedRows) {
   for (const [index, segment] of row.segments.entries()) {
     const requestHash = sha256(JSON.stringify({ repairManifestSha256: manifest.repairManifestSha256, set: row.set, index, voice: profileVoice(segment.profile).voice_id, model: casting.model_id, text: ttsText(segment.text), settings: casting.voice_settings, seed: seed(row.set, index) }));
     const raw = path.join(directory, `${String(index + 1).padStart(2, '0')}-${requestHash}.mp3`);
-    if (!existsSync(raw)) writeFileSync(raw, await synthesize(apiKey, row, segment, index));
+    if (!existsSync(raw)) {
+      assert.ok(!has('--reassemble'), `Reassembly cache miss for repair Set ${row.set} segment ${index + 1}; refusing a provider call`);
+      writeFileSync(raw, await synthesize(apiKey, row, segment, index));
+    }
     const wav = `${raw}.wav`;
-    if (!existsSync(wav)) prepareSegment(raw, wav);
+    if (has('--reassemble') || !existsSync(wav)) prepareSegment(raw, wav);
+    assertCleanPcmEdges(wav);
     prepared.push(wav);
   }
   const repair = assembleRepair(row, prepared, directory);
@@ -176,7 +203,7 @@ for (const row of selectedRows) {
   const timing = patchSource(row, repair, target);
   files.push({ set: row.set, path: target, sha256: sha256(readFileSync(target)), bytes: readFileSync(target).length, ...timing });
 }
-const logCore = { schemaVersion: 1, generatedAt: new Date().toISOString(), repairManifestSha256: manifest.repairManifestSha256, modelId: casting.model_id, accountAtStart: account, estimatedCredits, estimatedUsdBeforeTax: Number(requestedUsd.toFixed(4)), files, releaseAuthorized: false };
+const logCore = { schemaVersion: 1, generatedAt: new Date().toISOString(), repairManifestSha256: manifest.repairManifestSha256, modelId: casting.model_id, castingSha256, accountAtStart: account, estimatedCredits, estimatedUsdBeforeTax: Number(requestedUsd.toFixed(4)), files, releaseAuthorized: false };
 const log = { ...logCore, logSha256: sha256(JSON.stringify(logCore)) };
 writeFileSync(path.join(output, 'repair-generation-log.json'), `${JSON.stringify(log, null, 2)}\n`);
 console.log(JSON.stringify(log, null, 2));

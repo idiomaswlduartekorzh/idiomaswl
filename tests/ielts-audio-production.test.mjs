@@ -47,6 +47,11 @@ test('short assemblies distribute enough review time to enter the official durat
   assert.equal(reviewPaddingPlan(1750, 1740, 1800, 11).totalPaddingSeconds, 0);
 });
 
+test('speaker transitions use a de-click fade too short to soften speech attacks', () => {
+  assert.ok(casting.target.transition_declick_fade_ms >= 5);
+  assert.ok(casting.target.transition_declick_fade_ms <= 12);
+});
+
 test('Flash text normalization makes numbers, phones, currency and spelling explicit', () => {
   assert.equal(integerToEnglish('400,000'), 'four hundred thousand');
   assert.equal(ttsText('Call 077 3352 9041 before 9 am. Pay £29.50 by 2035; target 50%.'),
