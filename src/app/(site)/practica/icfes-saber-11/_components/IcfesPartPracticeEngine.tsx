@@ -5,13 +5,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { IcfesPracticeQuestion } from '@/data/icfes/questions';
 import { ICFES_PARTS, type IcfesPartConfig } from '@/data/icfes/parts';
 import { calculatePracticeResult } from '@/lib/icfes/scoring.mjs';
+import { trackIcfesEvent } from '@/lib/analytics/icfes';
 import styles from '../icfes-learning.module.css';
-
-declare global {
-  interface Window {
-    dataLayer?: Array<Record<string, unknown>>;
-  }
-}
 
 interface AttemptAnswer {
   questionId: string;
@@ -46,11 +41,6 @@ async function sendAuthenticatedProgress(body: Record<string, unknown>) {
   } catch {
     // Offline and anonymous practice remain fully functional in localStorage.
   }
-}
-
-function track(event: string, fields: Record<string, unknown>) {
-  window.dataLayer = window.dataLayer ?? [];
-  window.dataLayer.push({ event, exam: 'icfes-saber-11', ...fields });
 }
 
 function readProgress(part: number, scope = 'part'): LocalProgress {
@@ -152,6 +142,7 @@ export default function IcfesPartPracticeEngine({
   const feedbackRef = useRef<HTMLDivElement>(null);
   const questionRef = useRef<HTMLDivElement>(null);
   const sessionRef = useRef<{ id: string; startedAt: string } | null>(null);
+  const reportTrackedRef = useRef(false);
 
   const syncAttempts = useCallback((attemptsToSync: AttemptAnswer[], sessionId?: string) => {
     if (!attemptsToSync.length) return;
@@ -179,14 +170,25 @@ export default function IcfesPartPracticeEngine({
 
   useEffect(() => {
     const progress = readProgress(part.part, progressScope);
-    setSavedAttempts(progress.attempts.length);
     syncAttempts(progress.attempts);
+    const update = window.setTimeout(() => setSavedAttempts(progress.attempts.length), 0);
+    return () => window.clearTimeout(update);
   }, [part.part, progressScope, syncAttempts]);
 
   // Al confirmar, el foco baja a la justificación: es donde está lo que hay que leer.
   useEffect(() => {
     if (confirmed) feedbackRef.current?.focus();
   }, [confirmed]);
+
+  useEffect(() => {
+    if (!finished || reportTrackedRef.current) return;
+    reportTrackedRef.current = true;
+    trackIcfesEvent('icfes_report_view', {
+      report_type: context === 'guided-simulator' ? 'guided_session' : 'part_practice',
+      part: part.part,
+      progress_scope: progressScope,
+    });
+  }, [context, finished, part.part, progressScope]);
 
   /**
    * Al AVANZAR, en cambio, hay que volver arriba.
@@ -261,7 +263,7 @@ export default function IcfesPartPracticeEngine({
         startedAt,
       },
     });
-    track(context === 'guided-simulator' ? 'icfes_guided_simulator_start' : 'icfes_practice_start', { part: part.part, question_count: questions.length, progress_scope: progressScope });
+    trackIcfesEvent(context === 'guided-simulator' ? 'icfes_guided_simulator_start' : 'icfes_practice_start', { part: part.part, question_count: questions.length, progress_scope: progressScope });
   }
 
   function confirm() {
@@ -286,7 +288,7 @@ export default function IcfesPartPracticeEngine({
     writeProgress(updated, progressScope);
     setSavedAttempts(updated.attempts.length);
     syncAttempts([nextAnswer], sessionRef.current?.id);
-    track('icfes_question_answered', { part: question.officialPart, question_id: question.id, correct: nextAnswer.isCorrect, elapsed_seconds: elapsedSeconds, progress_scope: progressScope });
+    trackIcfesEvent('icfes_question_answered', { part: question.officialPart, question_id: question.id, correct: nextAnswer.isCorrect, elapsed_seconds: elapsedSeconds, progress_scope: progressScope });
   }
 
   function next() {
@@ -312,7 +314,7 @@ export default function IcfesPartPracticeEngine({
           },
         });
       }
-      track(context === 'guided-simulator' ? 'icfes_guided_simulator_complete' : 'icfes_practice_complete', { part: part.part, question_count: questions.length, correct_count: correctCount, accuracy, progress_scope: progressScope });
+      trackIcfesEvent(context === 'guided-simulator' ? 'icfes_guided_simulator_complete' : 'icfes_practice_complete', { part: part.part, question_count: questions.length, correct_count: correctCount, accuracy, progress_scope: progressScope });
       onComplete?.({ accuracy, correctCount, questionCount: questions.length });
       return;
     }
@@ -328,6 +330,7 @@ export default function IcfesPartPracticeEngine({
 
   function restart() {
     clearSession(part.part, progressScope);
+    reportTrackedRef.current = false;
     setResumedFrom(0);
     start();
     setCurrentIndex(0);
@@ -336,7 +339,7 @@ export default function IcfesPartPracticeEngine({
     setAnswers([]);
     setFinished(false);
     questionStartedAt.current = currentTimeMs();
-    track('icfes_practice_restart', { part: part.part });
+    trackIcfesEvent('icfes_practice_restart', { part: part.part });
   }
 
   if (!started) {

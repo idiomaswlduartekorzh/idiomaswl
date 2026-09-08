@@ -6,6 +6,7 @@ import {
   ATTRIBUTION_TTL_MS, captureSource, contactUrl, decorateContactUrl, parseIntent, publicPath,
   type ContactIntent, type ContactSource,
 } from '@/lib/whatsapp/attribution';
+import { isIcfesPath, trackIcfesEvent } from '@/lib/analytics/icfes';
 
 const SOURCE_KEY = 'wl-contact-source-v1';
 const QUEUE_KEY = 'wl-contact-pending-v1';
@@ -89,6 +90,12 @@ export default function WhatsAppAttribution() {
         window.dataLayer.push({ event: event.type === 'contextmenu' ? 'whatsapp_context_menu' : 'click_whatsapp',
           source_page: pathname, landing_page: source.landing_page, contact_ref: item.intent.reference,
           utm_source: source.utm_source, utm_medium: source.utm_medium, utm_campaign: source.utm_campaign });
+        if (isIcfesPath(pathname)) {
+          trackIcfesEvent('icfes_whatsapp_click', {
+            interaction: item.intent.interaction,
+            cta_location: anchor.classList.contains('wl-wa-float') ? 'floating_button' : 'inline_cta',
+          });
+        }
       } catch { /* Even if crypto or tracking fails, the original contact link remains usable. */ }
     };
     const events = ['pointerdown', 'keydown', 'click', 'auxclick', 'contextmenu'];

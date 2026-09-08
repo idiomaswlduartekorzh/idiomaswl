@@ -160,9 +160,9 @@ function interpretScore(slug: string, pct: number): { level: string; desc: strin
     return { level: 'Below proficiency', desc: 'Score below 60. Significant preparation recommended.' };
   }
   if (slug === 'icfes') {
-    if (pct >= 0.8) return { level: 'Nivel B2', desc: 'Desempeño superior. Comunicación fluida en contextos académicos.' };
-    if (pct >= 0.6) return { level: 'Nivel B1', desc: 'Desempeño satisfactorio. Comprensión de textos moderadamente complejos.' };
-    return { level: 'Nivel A2', desc: 'Desempeño básico. Comprensión limitada a textos simples y familiares.' };
+    if (pct >= 0.8) return { level: 'Nivel B1', desc: 'Rango superior de esta práctica. B1 es el máximo reportado por el componente de Inglés Saber 11.' };
+    if (pct >= 0.6) return { level: 'Nivel A2', desc: 'Desempeño funcional en textos breves y situaciones habituales.' };
+    return { level: 'Pre A1–A1', desc: 'Desempeño inicial; conviene reforzar vocabulario, gramática y lectura literal.' };
   }
   if (pct >= 0.8) return { level: 'Excellent', desc: 'Outstanding performance across all measured areas.' };
   if (pct >= 0.6) return { level: 'Good', desc: 'Solid performance with room to grow.' };

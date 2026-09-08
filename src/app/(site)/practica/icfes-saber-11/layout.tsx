@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import IcfesAnalyticsScope from '@/components/analytics/IcfesAnalyticsScope'
 
 /**
  * Cierra el circuito del clúster ICFES.
@@ -26,6 +27,7 @@ const LINKS = [
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <IcfesAnalyticsScope viewKind="learning-cluster" />
       {children}
       <section style={{ maxWidth: 1180, margin: '3rem auto 4rem', padding: '0 1.25rem' }}>
         <div style={{ borderTop: '1px solid var(--line-soft)', paddingTop: '2rem' }}>

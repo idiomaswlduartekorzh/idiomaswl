@@ -68,8 +68,28 @@ export default function MockGrid({ exam }: { exam: Exam }) {
             </div>
             {mock.free ? (
               <div className="wl-mock-card__actions">
-                <Link href={mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`} className="wl-mock-card__cta btn btn-sm">Modo examen →</Link>
-                {exam.slug === 'icfes' && hasGuidedMock(mock.id) ? <Link href={`/examenes/icfes/practica/${mock.id}/guiado`} className="btn btn-sm btn-ghost">Modo guiado</Link> : null}
+                <Link
+                  href={mock.href ?? `/examenes/${exam.slug}/practica/${mock.id}`}
+                  className="wl-mock-card__cta btn btn-sm"
+                  {...(isIcfes ? {
+                    'data-icfes-cta': 'catalog_resource_open',
+                    'data-icfes-mode': 'exam',
+                    'data-icfes-resource-id': mock.id,
+                    'data-icfes-resource-kind': mock.badge ? 'published' : 'own',
+                    'data-icfes-surface': 'exam-hub-catalog',
+                  } : {})}
+                >Modo examen →</Link>
+                {exam.slug === 'icfes' && hasGuidedMock(mock.id) ? (
+                  <Link
+                    href={`/examenes/icfes/practica/${mock.id}/guiado`}
+                    className="btn btn-sm btn-ghost"
+                    data-icfes-cta="catalog_resource_open"
+                    data-icfes-mode="guided"
+                    data-icfes-resource-id={mock.id}
+                    data-icfes-resource-kind="own"
+                    data-icfes-surface="exam-hub-catalog"
+                  >Modo guiado</Link>
+                ) : null}
               </div>
             ) : (
               <button type="button" className="wl-mock-card__cta btn btn-sm btn-ghost" disabled>🔒 Suscríbete para acceder</button>
@@ -106,8 +126,8 @@ export default function MockGrid({ exam }: { exam: Exam }) {
               <h3>Simulacro guiado actual · 55 preguntas</h3>
               <p>Entrenamiento propio de WeLearn con las siete partes, evidencia, análisis de distractores y microlecciones. No es un cuadernillo oficial ni predice tu puntaje ICFES.</p>
               <div className="wl-mock-card__actions">
-                <Link href="/practica/icfes-saber-11/simulacro-guiado" className="wl-mock-card__cta btn btn-sm">Empezar las 55 preguntas →</Link>
-                <Link href="/practica/icfes-saber-11" className="btn btn-sm btn-ghost">Aprender las 7 partes</Link>
+                <Link href="/practica/icfes-saber-11/simulacro-guiado" className="wl-mock-card__cta btn btn-sm" data-icfes-cta="featured_guided_55" data-icfes-mode="guided" data-icfes-resource-id="welearn-2026-2-55" data-icfes-resource-kind="own" data-icfes-surface="exam-hub-catalog">Empezar las 55 preguntas →</Link>
+                <Link href="/practica/icfes-saber-11" className="btn btn-sm btn-ghost" data-icfes-cta="learn_seven_parts" data-icfes-surface="exam-hub-catalog">Aprender las 7 partes</Link>
               </div>
             </div>
           </div>
@@ -126,7 +146,7 @@ export default function MockGrid({ exam }: { exam: Exam }) {
                 <h3>{group.title}</h3>
                 <p>{group.description}</p>
                 {group.id === 'published' && (
-                  <Link href="/practica/icfes-saber-11/examenes">
+                  <Link href="/practica/icfes-saber-11/examenes" data-icfes-cta="published_catalog" data-icfes-surface="exam-hub-catalog">
                     Ver el catálogo de cuadernillos por audiencia →
                   </Link>
                 )}

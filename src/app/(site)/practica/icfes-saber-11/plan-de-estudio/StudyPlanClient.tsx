@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { ICFES_PARTS } from '@/data/icfes/parts';
+import { trackIcfesEvent } from '@/lib/analytics/icfes';
 import styles from '../icfes-learning.module.css';
 
 const KEY = 'wl:icfes:study-plan:v1';
@@ -44,8 +45,7 @@ export default function StudyPlanClient() {
       body: JSON.stringify({ weeks, minutes }),
       keepalive: true,
     }).catch(() => { /* el plan local es la fuente de respaldo */ });
-    window.dataLayer = window.dataLayer ?? [];
-    window.dataLayer.push({ event: 'icfes_study_plan_generated', weeks, minutes_per_day: minutes });
+    trackIcfesEvent('icfes_study_plan_generated', { weeks, minutes_per_day: minutes });
   }
 
   return (

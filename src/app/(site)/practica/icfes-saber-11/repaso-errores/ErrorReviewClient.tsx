@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import type { IcfesPracticeQuestion } from '@/data/icfes/questions';
+import { trackIcfesEvent } from '@/lib/analytics/icfes';
 import styles from '../icfes-learning.module.css';
 
 interface StoredAttempt { questionId: string; selectedIndex: number; isCorrect: boolean; elapsedSeconds: number; answeredAt: string }
@@ -15,8 +16,7 @@ function readResolved(): Record<string, string> {
   try { return JSON.parse(window.localStorage.getItem(RESOLVED_KEY) ?? '{}') as Record<string, string>; } catch { return {}; }
 }
 function trackReview(questionId: string) {
-  window.dataLayer = window.dataLayer ?? [];
-  window.dataLayer.push({ event: 'icfes_error_review_complete', question_id: questionId });
+  trackIcfesEvent('icfes_error_review_complete', { question_id: questionId });
 }
 export default function ErrorReviewClient({ questions }: { questions: IcfesPracticeQuestion[] }) {
   const [queue, setQueue] = useState<QueueItem[]>([]);

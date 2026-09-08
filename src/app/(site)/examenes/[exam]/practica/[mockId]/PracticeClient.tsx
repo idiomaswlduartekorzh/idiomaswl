@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { saveExamResult } from '@/lib/actions/saveExamResult';
 import { saveLead } from '@/lib/actions/saveLead';
@@ -8,6 +8,7 @@ import { isPlausibleEmail, isPlausibleWhatsapp } from '@/lib/leads/contact';
 import type { Exam } from '@/data/exams';
 import type { MockExam, MCQQuestion, MockSection, QuestionInsight } from '@/data/mocks/types';
 import { hasGuidedMock } from '@/data/icfes/guided-registry';
+import { trackIcfesEvent } from '@/lib/analytics/icfes';
 import { SAT_DOMAIN_GUIDE_SLUG } from '@/data/mocks/sat/module-types';
 import { SAT_MARCA } from '@/data/sat-marca';
 import {
@@ -1205,17 +1206,19 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
   const routing = mock.adaptive;
   const [routedTo, setRoutedTo] = useState<RamaModulo2 | null>(null);
 
-  const servedParts = routing
-    ? (routedTo ? partesServidas(routedTo, routing) : [routing.routeAfterPart])
-    : [];
-  const navigableParts = routing ? partesNavegables(routedTo, routing) : [];
-
-  const servedMock: MockExam = routing
-    ? { ...mock, sections: mock.sections.filter(sec => servedParts.includes(sec.part)) }
-    : mock;
-  const stageMock: MockExam = routing
-    ? { ...mock, sections: mock.sections.filter(sec => navigableParts.includes(sec.part)) }
-    : mock;
+  const navigableParts = useMemo(
+    () => routing ? partesNavegables(routedTo, routing) : [],
+    [routedTo, routing],
+  );
+  const servedMock: MockExam = useMemo(() => {
+    if (!routing) return mock;
+    const servedParts = routedTo ? partesServidas(routedTo, routing) : [routing.routeAfterPart];
+    return { ...mock, sections: mock.sections.filter(sec => servedParts.includes(sec.part)) };
+  }, [mock, routedTo, routing]);
+  const stageMock: MockExam = useMemo(
+    () => routing ? { ...mock, sections: mock.sections.filter(sec => navigableParts.includes(sec.part)) } : mock,
+    [mock, navigableParts, routing],
+  );
 
   const allQuestions = getAllQuestions(servedMock) as MCQQuestion[];
   const stageQuestions = getAllQuestions(stageMock) as MCQQuestion[];
@@ -1239,8 +1242,17 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     const correct = qs.filter(q => answers[q.id] === q.answer).length;
     const score = Math.round((correct / qs.length) * 100);
     pendingResultRef.current = { correct, total: qs.length, score };
+    if (exam.slug === 'icfes') {
+      trackIcfesEvent('icfes_mock_complete', {
+        mock_id: mock.id,
+        mode: 'exam',
+        question_count: qs.length,
+        correct_count: correct,
+        accuracy: score,
+      });
+    }
     setPhase('lead');
-  }, [allQuestions, answers]);
+  }, [allQuestions, answers, exam.slug, mock.id]);
 
   // Entrega del módulo 1: se puntúa SOLO ese módulo, se decide la rama y ya no se
   // puede volver — igual que en el examen real.
@@ -1323,6 +1335,13 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     });
     if (!leadResult.ok) throw new Error(leadResult.error ?? 'No pudimos guardar tus datos. Intenta de nuevo.');
 
+    if (exam.slug === 'icfes') {
+      trackIcfesEvent('icfes_lead_submit', {
+        mock_id: mock.id,
+        lead_context: 'exam_results',
+      });
+    }
+
     await Promise.allSettled([
       saveExamResult({
         examSlug: exam.slug,
@@ -1356,6 +1375,25 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
     setRoutedTo(null);
     setPhase('intro');
   }, []);
+
+  const handleStart = useCallback(() => {
+    if (exam.slug === 'icfes') {
+      trackIcfesEvent('icfes_mock_start', {
+        mock_id: mock.id,
+        mode: 'exam',
+        question_count: getAllQuestions(mock).length,
+      });
+    }
+    setPhase('exam');
+  }, [exam.slug, mock]);
+
+  useEffect(() => {
+    if (phase !== 'results' || exam.slug !== 'icfes') return;
+    trackIcfesEvent('icfes_report_view', {
+      mock_id: mock.id,
+      report_type: 'exam_results',
+    });
+  }, [exam.slug, mock.id, phase]);
 
   if (phase === 'lead') {
     // Se promete el desglose que la pantalla de resultados va a enseñar de verdad. Con
@@ -1502,7 +1540,7 @@ export default function PracticeClient({ exam, mock }: { exam: Exam; mock: MockE
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '.7rem', flexWrap: 'wrap' }}>
-            <button onClick={() => setPhase('exam')} className="btn" style={{ fontSize: '1.1rem', padding: '0.9rem 2.5rem' }}>{exam.slug === 'icfes' ? 'Empezar modo examen →' : 'Empezar examen →'}</button>
+            <button onClick={handleStart} className="btn" style={{ fontSize: '1.1rem', padding: '0.9rem 2.5rem' }}>{exam.slug === 'icfes' ? 'Empezar modo examen →' : 'Empezar examen →'}</button>
             {exam.slug === 'sat' && (
               <p style={{ maxWidth: 560, margin: '1.4rem auto 0', fontSize: '0.76rem', lineHeight: 1.5, opacity: 0.62 }}>
                 {SAT_MARCA}

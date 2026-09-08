@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { isIcfesPath, trackIcfesEvent } from '@/lib/analytics/icfes';
 
 const WA = '573005004253';
 
@@ -56,6 +57,9 @@ export default function WhatsAppFloat() {
       event: 'click_whatsapp',
       source_page: pathname,
     });
+    if (isIcfesPath(pathname)) {
+      trackIcfesEvent('icfes_whatsapp_click', { interaction: 'click', cta_location: 'floating_button' });
+    }
   }
 
   return (

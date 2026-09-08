@@ -37,7 +37,7 @@ export default function ExamenesClient() {
       <div className="wrap">
         <div style={{ maxWidth: 780, margin: '0 auto 1.5rem', padding: '1.25rem 1.5rem', borderRadius: 16, background: 'linear-gradient(135deg, #172554, #312e81)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
           <div><strong style={{ display: 'block', fontSize: '1.05rem' }}>Nuevo: simulacro guiado de 55 preguntas</strong><span style={{ color: '#dbeafe', fontSize: '.84rem' }}>Las 7 partes con evidencia, distractores, microlecciones y repaso de errores.</span></div>
-          <Link href="/practica/icfes-saber-11/simulacro-guiado" className="btn" style={{ background: 'var(--wl-surface-card)', color: 'var(--wl-on-panel, #172554)', whiteSpace: 'nowrap' }}>Empezar guiado →</Link>
+          <Link href="/practica/icfes-saber-11/simulacro-guiado" className="btn" data-icfes-cta="workbook_catalog_guided_55" data-icfes-mode="guided" data-icfes-resource-id="welearn-2026-2-55" data-icfes-resource-kind="own" data-icfes-surface="workbook-catalog" style={{ background: 'var(--wl-surface-card)', color: 'var(--wl-on-panel, #172554)', whiteSpace: 'nowrap' }}>Empezar guiado →</Link>
         </div>
         <div style={{ maxWidth: 780, margin: '0 auto 1.5rem' }}>
           <Link href="/examenes/icfes" className="btn btn-ghost btn-sm">← Ver los 34 recursos de simulacro ICFES Inglés</Link>
@@ -100,10 +100,15 @@ export default function ExamenesClient() {
                   </p>
                 </div>
                 <div style={{ display: 'flex', gap: '0.55rem', flexWrap: 'wrap' }}>
-                  {hasGuidedMode && <Link href={`/practica/icfes-saber-11/examenes/${sim.id}/guiado`} className="btn btn-ghost" style={{ whiteSpace: 'nowrap' }}>Modo guiado</Link>}
+                  {hasGuidedMode && <Link href={`/practica/icfes-saber-11/examenes/${sim.id}/guiado`} className="btn btn-ghost" data-icfes-cta="workbook_resource_open" data-icfes-mode="guided" data-icfes-resource-id={sim.id} data-icfes-resource-kind="published" data-icfes-surface="workbook-catalog" style={{ whiteSpace: 'nowrap' }}>Modo guiado</Link>}
                   <Link
                     href={`/practica/icfes-saber-11/examenes/${sim.id}`}
                     className="btn"
+                    data-icfes-cta="workbook_resource_open"
+                    data-icfes-mode="exam"
+                    data-icfes-resource-id={sim.id}
+                    data-icfes-resource-kind="published"
+                    data-icfes-surface="workbook-catalog"
                     style={{ whiteSpace: 'nowrap', background: gradeColor, borderColor: gradeColor, color: '#fff' }}
                   >
                     Resolver cuadernillo →

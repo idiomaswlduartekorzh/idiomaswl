@@ -33,6 +33,7 @@ function ToolCard({
   description,
   stats,
   cta,
+  analyticsId,
   href,
   onClick,
 }: {
@@ -43,6 +44,7 @@ function ToolCard({
   description: string;
   stats: string[];
   cta: string;
+  analyticsId: string;
   href?: string;
   onClick?: () => void;
 }) {
@@ -107,6 +109,9 @@ function ToolCard({
       <Link
         href={href}
         className="wl-catalog-card"
+        data-icfes-cta={analyticsId}
+        data-icfes-destination={href}
+        data-icfes-surface="learning-tools"
         style={{ ...cardStyle, textDecoration: 'none', display: 'flex', flexDirection: 'column' }}
       >
         {body}
@@ -118,6 +123,8 @@ function ToolCard({
     <button
       type="button"
       onClick={onClick}
+      data-icfes-cta={analyticsId}
+      data-icfes-surface="learning-tools"
       className="wl-catalog-card"
       style={{
         ...cardStyle,
@@ -141,7 +148,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             <button type="button" className="btn btn-ghost btn-sm" onClick={() => setActiveTool('hub')} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
               <ArrowLeft size={16} /> Volver a herramientas
             </button>
-            <Link href="/practica/icfes-saber-11/examenes" className="btn btn-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: ICFES_COLOR, borderColor: ICFES_COLOR, color: '#fff' }}>
+            <Link href="/practica/icfes-saber-11/examenes" className="btn btn-sm" data-icfes-cta="quick_to_published_catalog" data-icfes-surface="learning-tools" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: ICFES_COLOR, borderColor: ICFES_COLOR, color: '#fff' }}>
               <ClipboardList size={16} /> Cuadernillos divulgados
             </Link>
           </div>
@@ -207,7 +214,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             ¿Quieres el recorrido completo? Entrena las 7 partes con 55 preguntas y explicación inmediata.
           </span>
           <div style={{ display: 'flex', gap: '.8rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <Link href="/practica/icfes-saber-11/simulacro-guiado" className="icfes-theme-accent-text" style={{ color: ICFES_COLOR, fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 800, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+            <Link href="/practica/icfes-saber-11/simulacro-guiado" className="icfes-theme-accent-text" data-icfes-cta="learning_guided_55" data-icfes-mode="guided" data-icfes-resource-id="welearn-2026-2-55" data-icfes-resource-kind="own" data-icfes-surface="learning-tools" style={{ color: ICFES_COLOR, fontSize: '0.82rem', fontFamily: 'var(--mono)', fontWeight: 800, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
               Abrir simulacro guiado <ArrowRight size={14} />
             </Link>
             <Link href="/practica/icfes-saber-11/examenes" className="icfes-theme-accent-text" style={{ color: SMART_COLOR, fontSize: '0.78rem', fontFamily: 'var(--mono)', fontWeight: 750, textDecoration: 'none' }}>Ver cuadernillos divulgados</Link>
@@ -223,6 +230,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             description="Juego adaptativo con vidas, racha y refuerzo inmediato."
             stats={['4 niveles', '3 vidas', 'feedback inmediato']}
             cta="Comenzar práctica rápida"
+            analyticsId="tool_quick_practice"
             onClick={() => setActiveTool('quick')}
           />
           <ToolCard
@@ -233,6 +241,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             description="Banco adaptativo para tiempos verbales, conectores, preposiciones y cloze con modo docente."
             stats={['56 preguntas', 'modo docente', 'refuerzo por error']}
             cta="Practicar gramática ICFES"
+            analyticsId="tool_grammar"
             href="/practica/icfes-saber-11/gramatica-conjunciones"
           />
           <ToolCard
@@ -243,6 +252,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             description="Entrena vocabulario en contexto, paráfrasis e inferencias con explicación inmediata."
             stats={['sinónimos', 'paráfrasis', 'repaso de errores']}
             cta="Practicar sinónimos"
+            analyticsId="tool_synonyms"
             href="/practica/icfes-saber-11/sinonimos-inferencia"
           />
           <ToolCard
@@ -253,6 +263,7 @@ export default function IcfesHubClient({ embedded = false }: { embedded?: boolea
             description="Entrena habilidades, sube de nivel y recibe refuerzo según tus errores."
             stats={['diagnóstico', '6 niveles', `${ICFES_SMART_BANK_SUMMARY.total} preguntas`]}
             cta="Empezar ruta inteligente"
+            analyticsId="tool_smart_route"
             onClick={() => setActiveTool('smart')}
           />
         </div>

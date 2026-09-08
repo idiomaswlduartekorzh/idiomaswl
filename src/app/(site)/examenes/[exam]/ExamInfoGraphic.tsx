@@ -71,8 +71,16 @@ export default function ExamInfoGraphic({ exam, hasPodcast = false }: { exam: Ex
           <div className="wl-exam-hero__actions">
             {isIcfes ? (
               <>
-                <Link href="/practica/icfes-saber-11/simulacro-guiado" className="btn">Empezar simulacro de 55 preguntas <span aria-hidden="true">→</span></Link>
-                <a href="#practica" className="btn btn-ghost">Ver los 34 recursos</a>
+                <Link
+                  href="/practica/icfes-saber-11/simulacro-guiado"
+                  className="btn"
+                  data-icfes-cta="hero_guided_55"
+                  data-icfes-mode="guided"
+                  data-icfes-resource-id="welearn-2026-2-55"
+                  data-icfes-resource-kind="own"
+                  data-icfes-surface="exam-hub-hero"
+                >Empezar simulacro de 55 preguntas <span aria-hidden="true">→</span></Link>
+                <a href="#practica" className="btn btn-ghost" data-icfes-cta="hero_inventory" data-icfes-surface="exam-hub-hero">Ver los 34 recursos</a>
               </>
             ) : (
               <a href="#practica" className="btn">Ver prácticas <span aria-hidden="true">→</span></a>

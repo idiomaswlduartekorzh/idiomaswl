@@ -56,8 +56,8 @@ export default function Page() {
             <h1>Entiende las 7 partes. Practica con feedback. Llega con estrategia.</h1>
             <p>El componente de Inglés evalúa lectura y uso del idioma mediante siete tipos de tarea. Aquí puedes aprender el método, practicar sin registro y pasar después a cuadernillos o una ruta enfocada en tus errores.</p>
             <div className={styles.hubActions}>
-              <Link href="/practica/icfes-saber-11/diagnostico" className={styles.primaryButton}>Hacer diagnóstico</Link>
-              <Link href="/examenes/icfes" className={styles.secondaryButton}>Ver 34 recursos de examen</Link>
+              <Link href="/practica/icfes-saber-11/diagnostico" className={styles.primaryButton} data-icfes-cta="learning_hero_diagnostic" data-icfes-surface="learning-hub-hero">Hacer diagnóstico</Link>
+              <Link href="/examenes/icfes" className={styles.secondaryButton} data-icfes-cta="learning_hero_catalog" data-icfes-surface="learning-hub-hero">Ver 34 recursos de examen</Link>
             </div>
             <div className={styles.truthStrip}>
               <span><strong>55</strong> preguntas en la aplicación estándar 2026-2</span>
@@ -84,10 +84,10 @@ export default function Page() {
         <section className={styles.startModes} aria-labelledby="start-title">
           <div><p className={styles.hubKicker}>Elige el punto de entrada</p><h2 id="start-title">No todos necesitan comenzar en el mismo lugar</h2></div>
           <div className={styles.modeGrid}>
-            <Link href="/practica/icfes-saber-11/diagnostico"><span>01</span><div><strong>No sé por dónde empezar</strong><p>Haz 15 preguntas y recibe una ruta inicial.</p></div></Link>
-            <Link href="/examenes/icfes"><span>02</span><div><strong>Quiero medirme</strong><p>Elige entre simulacros y cuadernillos en el catálogo principal.</p></div></Link>
-            <Link href="/practica/icfes-saber-11/repaso-errores"><span>03</span><div><strong>Quiero corregir errores</strong><p>Vuelve a la evidencia y aplica la microlección.</p></div></Link>
-            <Link href="/practica/icfes-saber-11/progreso"><span>04</span><div><strong>Quiero ver mi avance</strong><p>Consulta dominio, sesiones y errores sincronizados.</p></div></Link>
+            <Link href="/practica/icfes-saber-11/diagnostico" data-icfes-cta="entry_diagnostic" data-icfes-surface="learning-hub-entry"><span>01</span><div><strong>No sé por dónde empezar</strong><p>Haz 15 preguntas y recibe una ruta inicial.</p></div></Link>
+            <Link href="/examenes/icfes" data-icfes-cta="entry_catalog" data-icfes-surface="learning-hub-entry"><span>02</span><div><strong>Quiero medirme</strong><p>Elige entre simulacros y cuadernillos en el catálogo principal.</p></div></Link>
+            <Link href="/practica/icfes-saber-11/repaso-errores" data-icfes-cta="entry_error_review" data-icfes-surface="learning-hub-entry"><span>03</span><div><strong>Quiero corregir errores</strong><p>Vuelve a la evidencia y aplica la microlección.</p></div></Link>
+            <Link href="/practica/icfes-saber-11/progreso" data-icfes-cta="entry_progress" data-icfes-surface="learning-hub-entry"><span>04</span><div><strong>Quiero ver mi avance</strong><p>Consulta dominio, sesiones y errores sincronizados.</p></div></Link>
           </div>
         </section>
 

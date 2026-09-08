@@ -10,6 +10,8 @@ import { EXAM_GUIDES } from '@/data/examGuides';
 import ExamPodcastShelf from '@/components/practica/ExamPodcastShelf';
 import { getExamPodcasts } from '@/data/practica/exam-podcast-catalog';
 import ToeflCluster from './ToeflCluster';
+import IcfesAnalyticsScope from '@/components/analytics/IcfesAnalyticsScope';
+import { hasGuidedMock, hasGuidedWorkbook } from '@/data/icfes/guided-registry';
 import styles from './exam-hub.module.css';
 
 export async function generateStaticParams() {
@@ -85,6 +87,10 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   if (!exam) notFound();
   const guide = EXAM_GUIDES[slug];
   const podcasts = getExamPodcasts(slug);
+  const icfesResourceCount = slug === 'icfes' ? exam.mocks.length + 1 : 0;
+  const icfesModeCount = slug === 'icfes'
+    ? icfesResourceCount + exam.mocks.filter(mock => hasGuidedMock(mock.id) || hasGuidedWorkbook(mock.id)).length
+    : 0;
   const sectionLinks = [
     { href: '#resumen', label: 'Resumen' },
     { href: '#estructura', label: 'Estructura' },
@@ -100,6 +106,7 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
       className={styles.page}
       style={{ '--exam-accent': exam.color, '--exam-action': exam.colorDark } as React.CSSProperties}
     >
+      {slug === 'icfes' ? <IcfesAnalyticsScope viewKind="exam-hub" resourceCount={icfesResourceCount} modeCount={icfesModeCount} /> : null}
       <ExamJsonLd exam={exam} guide={guide} />
 
       {/* Breadcrumb */}
